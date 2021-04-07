@@ -12,11 +12,11 @@ description: test description
 Stack-Projections
 -----------------
 
-A z-series is generally difficult to represent as a 2-D image for publication purposes. A montage will allow the 3-D dataset to be visualized in 2-D, but results in each frame being very small. There are several ways to "flatten” the 3D stack.
+A z-series is generally difficult to represent as a 2-D image for publication purposes. A montage will allow the 3-D dataset to be visualized in 2-D, but results in each frame being very small. There are several ways to "flatten" the 3D stack.
 
 ### Maximum Intensity Z-projection
 
-Z Project is a method of analyzing a stack by applying different projection methods to the pixels within the stack. This process may be used to highlight specific data from the stack and is accessed using *"Image/Stacks/Z Project…"*
+Z Project is a method of analyzing a stack by applying different projection methods to the pixels within the stack. This process may be used to highlight specific data from the stack and is accessed using *"Image/Stacks/Z Project..."*
 
 When Z Project opens, it prompts for a start and stop slice, which will determine the range of the stack that will be included in the z projection. The default for these values is the endpoint slices of the stack.
 
@@ -40,7 +40,7 @@ Grouped Z Project applied to two halves of a stack, resulting in the two slices 
 
 ### Sobel Filter Based Focusing
 
-The Stack Focuser plugin uses a Sobel edge filter to calculate “best focus”. Try “3” for the kernel value in the first instance. The result is a "height map" showing the focused images. This plugin only works on 8- or 16-bit images. It can result in a “pixelly” image.
+The Stack Focuser plugin uses a Sobel edge filter to calculate "best focus". Try "3" for the kernel value in the first instance. The result is a "height map" showing the focused images. This plugin only works on 8- or 16-bit images. It can result in a "pixelly" image.
 
 ![](/media/Stack focuser example.png "stack_focuser_example.png")
 
@@ -50,7 +50,7 @@ Result of the Stack Focuser plugin with '3' as the kernel value.
 
 Authors: Daniel Sage, Jesse Berent, Brigitte Forster, Dimitri Van De Ville, Biomedical Imaging Group, Swiss Federal Institute of Technology Lausanne (EPFL), Switzerland, [http://bigwww.epfl.ch/demo/edf/index.html](http://bigwww.epfl.ch/demo/edf/index.html).
 
-This is a superior but slower, algorithm compared to the Sobel-filter focusing. The "*Extended Depth of Field*” plugin uses a wavelet transform (a more sophisticated transform compared to the Fourier transform) to calculate “best focus”. Run the plugin and check "Show 3D View". This plugin will work with RGB images. A more detailed description of the wavelet transform extended depth of field plugin can be found at the authors' website. A topology image is also generated. Please cite the authors' papers below if you publish work using this plugin.
+This is a superior but slower, algorithm compared to the Sobel-filter focusing. The "*Extended Depth of Field*" plugin uses a wavelet transform (a more sophisticated transform compared to the Fourier transform) to calculate "best focus". Run the plugin and check "Show 3D View". This plugin will work with RGB images. A more detailed description of the wavelet transform extended depth of field plugin can be found at the authors' website. A topology image is also generated. Please cite the authors' papers below if you publish work using this plugin.
 
 ![](/media/Extended depth of field.png "Extended_depth_of_field.png")
 
@@ -117,15 +117,15 @@ The different display modes contain many options with which you can view the ren
 
 Display modes from left to right: slice, slice & borders, max projection, projection, volume.
 
-For all display modes, the position may manually be updated by holding the ‘Shift’ key and moving the displayed image with the mouse. Orientation may also be updated by adjusting the rotation values at the bottom of Volume Viewer: these values represent the degree of rotation along each axis and may be changed to provide a more concise orientation. When using the mouse to rotate the object, these values update automatically. The XY, YZ, or XZ planes can also be viewed at any time by using the buttons at the bottom of the viewer.
+For all display modes, the position may manually be updated by holding the 'Shift' key and moving the displayed image with the mouse. Orientation may also be updated by adjusting the rotation values at the bottom of Volume Viewer: these values represent the degree of rotation along each axis and may be changed to provide a more concise orientation. When using the mouse to rotate the object, these values update automatically. The XY, YZ, or XZ planes can also be viewed at any time by using the buttons at the bottom of the viewer.
 
-Beyond the display modes, the image may also be analyzed in different ways through the selection of an interpolation method. These are of especial importance for the ‘Slice’, ‘Slice & Borders’, and ‘Volume’ modes. The methods available are ‘Nearest Neighbor’, ‘Trilinear’, ‘Tricubic Smooth’, and ‘Tricubic Sharp’.
+Beyond the display modes, the image may also be analyzed in different ways through the selection of an interpolation method. These are of especial importance for the 'Slice', 'Slice & Borders', and 'Volume' modes. The methods available are 'Nearest Neighbor', 'Trilinear', 'Tricubic Smooth', and 'Tricubic Sharp'.
 
 <figure><img src="/media/Volume viewer interpolation methods.png" title="volume_viewer_interpolation_methods.png" width="279" height="279" alt="volume_viewer_interpolation_methods.png" /><figcaption aria-hidden="true">volume_viewer_interpolation_methods.png</figcaption></figure>
 
 Interpolation methods clockwise from top left: nearest neighbor, trilinear, tricubic sharp, tricubic smooth.
 
-The z-Aspect may be used to either stretch or compress data along the Z-axis while the X and Y axes dimensions remain unchanged. The sampling value can be used to control how many samples are utilized to blend the rendering’s values. Typically, higher sampling values will result in better quality results, though the tradeoff is a slightly slower processing time.
+The z-Aspect may be used to either stretch or compress data along the Z-axis while the X and Y axes dimensions remain unchanged. The sampling value can be used to control how many samples are utilized to blend the rendering's values. Typically, higher sampling values will result in better quality results, though the tradeoff is a slightly slower processing time.
 
 3D Viewer
 ---------
@@ -144,7 +144,7 @@ The current display mode may be changed by clicking *"Edit/Display As"*. This wi
 
 Example of the type of volume seen in 3D viewer.
 
-The “Edit” menu supplies some more options to change the color and transparency of the rendering. *"Edit/Change Color"* can be used to edit the color of the rendering, including an option to apply to all time points. *"Edit/Change Transparency"* may be used for a straightforward way to edit the transparency for all types of displays. *"Edit/Change Channels"* provides the option to select or deselect any combination of the red, green, and blue channels. *"Edit/Adjust Threshold"* can be used for both the 'Volume' and the 'Surface' viewing options.
+The "Edit" menu supplies some more options to change the color and transparency of the rendering. *"Edit/Change Color"* can be used to edit the color of the rendering, including an option to apply to all time points. *"Edit/Change Transparency"* may be used for a straightforward way to edit the transparency for all types of displays. *"Edit/Change Channels"* provides the option to select or deselect any combination of the red, green, and blue channels. *"Edit/Adjust Threshold"* can be used for both the 'Volume' and the 'Surface' viewing options.
 
 *"Edit/Transformation/Set Transform"* can give more control over the placement of the rendering by specifying rotation origin and rotation axis. You can also use the 3x4 matrix in "Set Transform" to specify the x, y, and z axes of the transformed coordinate system in the first three columns and the vector from the old origin to the new origin in the fourth column.
 
@@ -179,13 +179,13 @@ NB: VolumeJ's interactive rendering option is currently not working. Other modes
 Stack Reslice
 -------------
 
-This generates a “side-view” of a stack along a user defined line. Select part of a stack to be axially sectioned using the line ROI tool from the toolbar. Select the menu item “*Image/Stacks/Reslice*" after drawing a straight line or rectangle onto an open stack.
+This generates a "side-view" of a stack along a user defined line. Select part of a stack to be axially sectioned using the line ROI tool from the toolbar. Select the menu item "*Image/Stacks/Reslice*" after drawing a straight line or rectangle onto an open stack.
 
 ![](/media/Stack reslice example.png "stack_reslice_example.png")
 
 Stack resliced along a vertical axis.
 
-From this point, you can generate a new stack by reconstructing the slices along the selection. If you drew a line, the new stack will be from the angle of this new line, as if it "cut" through the stack. You’ll also be able to specify the number of slices to include in the stack and the spacing between the slices. Since you will be specifying both values, it is up to you to determine how many slices are needed to represent the region of interest in a substack. If you drew a rectangle over the initial stack, you won’t be able to specify the number of slices, though you can still control the spacing. The application will then create a new stack depicting the region of interest chosen with the rectangle.
+From this point, you can generate a new stack by reconstructing the slices along the selection. If you drew a line, the new stack will be from the angle of this new line, as if it "cut" through the stack. You'll also be able to specify the number of slices to include in the stack and the spacing between the slices. Since you will be specifying both values, it is up to you to determine how many slices are needed to represent the region of interest in a substack. If you drew a rectangle over the initial stack, you won't be able to specify the number of slices, though you can still control the spacing. The application will then create a new stack depicting the region of interest chosen with the rectangle.
 
 The *Dynamic Reslice* plugin is used the same way as "*Image/Stacks/Reslice*". This plugin will dynamically update the slice generated as the ROI is changed on the original image.
 

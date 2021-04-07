@@ -12,7 +12,7 @@ This tool measures and marks the size of features. It annotates the length of li
 **How to use**
 --------------
 
-1\. Once image is calibrated. Use “Straight line” tool to drag a line across a feature and click “Image Annotation”. The length of line will be annotated on the image.
+1\. Once image is calibrated. Use "Straight line" tool to drag a line across a feature and click "Image Annotation". The length of line will be annotated on the image.
 
 <figure><img src="/media/EMtool 07.jpg" title="EMtool_07.jpg" width="600" alt="EMtool_07.jpg" /><figcaption aria-hidden="true">EMtool_07.jpg</figcaption></figure>
 

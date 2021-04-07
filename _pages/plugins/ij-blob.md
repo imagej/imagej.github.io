@@ -70,7 +70,7 @@ Shape Features
 -   **Thinnes Ratio**: Inverse proportional to the circularity. Furthermore it normed. It is defined as $$4\pi A/P^{2}$$
 -   **Contour Temperatur**: It has a strong relationship to the fractal dimension, defined as $$\left(log_{2}\left(\frac{2P}{P-H}\right)\right)^{-1}$$
 -   **Orientation**: The orientation of the major axis from in grad (measured counter clockwise from the positive x axis).
--   **Fractal Box Dimension**: Estimated fractal dimension by the box count algorithm. The default box-sizes are “2,3,4,6,8,12,16,32,64”.
+-   **Fractal Box Dimension**: Estimated fractal dimension by the box count algorithm. The default box-sizes are "2,3,4,6,8,12,16,32,64".
 
 Examples
 ========

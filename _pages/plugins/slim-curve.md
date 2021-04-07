@@ -345,7 +345,7 @@ For some specific applications, you might want to analyze a specific segment in 
 2.  [Train the classifier](Trainable_Weka_Segmentation#Train_classifier) using Trainable Weka Segmentation.
 3.  Create instances to train your classifier with the number of classes required.
 4.  Train classifier by clicking the "Train classifier" button.
-5.  Select “Create result” to create the segmented image (you can save the classifier to use it later).
+5.  Select "Create result" to create the segmented image (you can save the classifier to use it later).
 6.  Use the Thresholding tool to threshold the image to remove the region not needed.
 7.  Run the Create Mask and Create Selection commands to make the ROI. You can execute commands easily using the [Command Finder](/Using_the_Command_Launcher) (press {% include key content='L' %}).
 8.  Add the ROI to ROI manager by pressing {% include key content='T' %}. Use it on overlay with lifetime image and start analyzing.

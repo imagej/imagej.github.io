@@ -545,10 +545,10 @@ In case you are working with GUI tests, you may want to activate a virtual displ
 
 &lt;source lang="yml&gt;
 
-`   # virtual display variable for gui tests`  
-`       dist: xenial`  
-`       services:`  
-`         - xvfb`
+`   # virtual display variable for gui tests`  
+`       dist: xenial`  
+`       services:`  
+`         - xvfb`
 
 </source>
 

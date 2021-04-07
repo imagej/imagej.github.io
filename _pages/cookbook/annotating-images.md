@@ -16,7 +16,7 @@ All images for publications should include a scale bar. A standard size should b
 
 ### Spatial calibration
 
-An image's spatial calibration can be edited using "*Image/Properties*". Note that the units "um" will automatically change to “µm”.
+An image's spatial calibration can be edited using "*Image/Properties*". Note that the units "um" will automatically change to "µm".
 
 Some microscope models (e.g., Biorad PIC, and Zeiss LSM confocal image files) will use the zoom and objective magnification settings for internal calibration. However, it is important to keep in mind that some file formats (e.g. Perkin Elmer) are not calibrated while some "exported" image files (e.g. Zeiss zvi's exported as TIFFs) will lose their calibration information completely.
 
@@ -26,7 +26,7 @@ In the case that the files have no calibration, you can apply the calibration us
 
 Sometimes the spatial calibration may be lost after applying an image processing function. In this case, use the original file's spatial calibration (located under "*Image/Properties*") to update the "*Image/Properties*" values of the final, processed image.
 
-There are three ways to reapply spatial calibration: manually via the “*Image/Properties*” dialog; using the "Copy Pixel Size" plugin that applies pixel size of one image to a second image; or with the "Set Scale" plugin.
+There are three ways to reapply spatial calibration: manually via the "*Image/Properties*" dialog; using the "Copy Pixel Size" plugin that applies pixel size of one image to a second image; or with the "Set Scale" plugin.
 
 #### Copy-calibration
 
@@ -34,7 +34,7 @@ There are three ways to reapply spatial calibration: manually via the “*Image/
 
 1.  Open the image with the original calibration
 2.  Run the "Copy Pixel Size" plugin.
-3.  In the “*from*" drop-down box select the original image; in the “*to*" box, select the processed image. Click OK.
+3.  In the "*from*" drop-down box select the original image; in the "*to*" box, select the processed image. Click OK.
 4.  In the new dialog, enter a value by which the receiving image has been scaled.
 
 <figure><img src="/media/Copy pixel size values.png" title="copy_pixel_size_values.png" width="180" height="240" alt="copy_pixel_size_values.png" /><figcaption aria-hidden="true">copy_pixel_size_values.png</figcaption></figure>
@@ -44,21 +44,21 @@ There are three ways to reapply spatial calibration: manually via the “*Image/
 If you know the size of a feature (for example, a previously applied scale bar) you can use this command to apply a calibration.
 
 1.  Using the line selection tool, draw a line along the length of the feature or scale bar. Do not choose "*Edit/Draw*" after adding the line.
-2.  Run the menu command “*Analyze/Set scale…”*.
-3.  Enter the dimensions of the object/scale bar in the “*known distance*” box and set the units in the "*Unit of length*" box.
+2.  Run the menu command "*Analyze/Set scale..."*.
+3.  Enter the dimensions of the object/scale bar in the "*known distance*" box and set the units in the "*Unit of length*" box.
 4.  Do not check *Global* unless you want all your images to have this calibration. Click OK.
 
 ### Adding scale-bar
 
 First, use the line ROI tool to draw a line with approximately the desired location and length.
 
-Run the scale bar dialog via the "Add Scale Bar" plugin. Change the “*Width in \*\*\**” value to something sensible (5, 10, 50 etc.). “*Height*” will determine how many pixels fat your bar will be.
+Run the scale bar dialog via the "Add Scale Bar" plugin. Change the "*Width in \*\*\**" value to something sensible (5, 10, 50 etc.). "*Height*" will determine how many pixels fat your bar will be.
 
-If you’ve used the “Green” LUT, then the “white” (i.e. gray level 255) scale-bar will appear green. Convert the image from 8-bit color to RGB with “*Image/Type/RGB color*” before adding the scale bar to get a white scale-bar on a pseudocolored image.
+If you've used the "Green" LUT, then the "white" (i.e. gray level 255) scale-bar will appear green. Convert the image from 8-bit color to RGB with "*Image/Type/RGB color*" before adding the scale bar to get a white scale-bar on a pseudocolored image.
 
-Check the “*Label all slices*” box to add a scale-bar to the whole stack.
+Check the "*Label all slices*" box to add a scale-bar to the whole stack.
 
-This plugin points to the native menu command “*Analyze/Tools/Scale bar…”.*
+This plugin points to the native menu command "*Analyze/Tools/Scale bar...".*
 
 Text and lines
 --------------
@@ -69,7 +69,7 @@ Adding text to single frame images should be done in CorelDRAW or a similar appl
 
 Always save your images before adding text. Text color is set via the color picker button on the tool bar. Double-click on it to open the palette and choose a color.
 
-Pseudocolored images should be converted to RGB ("*Image/Type/RGB color"*) prior to adding text. The text is “anti-aliased”. This means that instead of being completely white in color, some pixels on the curved edges of letters are averaged with neighboring pixels. This makes these pixels gray and helps the text to appear smoother.
+Pseudocolored images should be converted to RGB ("*Image/Type/RGB color"*) prior to adding text. The text is "anti-aliased". This means that instead of being completely white in color, some pixels on the curved edges of letters are averaged with neighboring pixels. This makes these pixels gray and helps the text to appear smoother.
 
 ![](/media/Aliased text.png "aliased_text.png")
 
@@ -79,9 +79,9 @@ Since some of the pixels in anti-aliased text do not have the gray-scale value o
 
 Frame 1 counter text when used with Hot Green LUT.
 
-Another potential problem is that if you use the red or blue LUT then the text will appear red or blue even though you selected the text to be “white” via the color picker.
+Another potential problem is that if you use the red or blue LUT then the text will appear red or blue even though you selected the text to be "white" via the color picker.
 
-To avoid this, convert the pseudocolored image from its current format (i.e. *8-bit color*) to an RGB image with “*Image/Type/RGB color*” before adding the text.
+To avoid this, convert the pseudocolored image from its current format (i.e. *8-bit color*) to an RGB image with "*Image/Type/RGB color*" before adding the text.
 
 ![](/media/Corrected lut.png "corrected_lut.png")
 
@@ -89,9 +89,9 @@ Text on converted image.
 
 ### Adding Text/Line/Box
 
-Drawing lines/boxes is achieved by first using the line/rectangle ROI tool from the toolbar or defining the box via the *Specify Line* or *Specify ROI* plugins. The line/box can then be stamped in to the image through "*Edit/Draw*" or the shortcut {% include key content='Ctrl' %}+{% include key content='D' %}. If you're drawing the ROI on a stack, you'll be asked if you want to process all of the slices. Choosing 'yes' will draw the ROI on every slice while choosing 'no' will result in the ROI only being added to the current frame. The color is determined by the color picker toolbar button and the width in pixels is defined in “*Edit/Options/Line width*”. The line width must be determined before it is drawn on the image.
+Drawing lines/boxes is achieved by first using the line/rectangle ROI tool from the toolbar or defining the box via the *Specify Line* or *Specify ROI* plugins. The line/box can then be stamped in to the image through "*Edit/Draw*" or the shortcut {% include key content='Ctrl' %}+{% include key content='D' %}. If you're drawing the ROI on a stack, you'll be asked if you want to process all of the slices. Choosing 'yes' will draw the ROI on every slice while choosing 'no' will result in the ROI only being added to the current frame. The color is determined by the color picker toolbar button and the width in pixels is defined in "*Edit/Options/Line width*". The line width must be determined before it is drawn on the image.
 
-Adding text is done with the toolbar’s text button. Click the toolbar, click the image, and write the desired text. Double click on the toolbar-text button to set the font size and style. Color is determined by the color picker toolbar button. Antialiasing can be turned on/off via the menu item “*Edit/Options/Fonts*” and unchecking the "Smooth" option (although this option does not affect the Stamper plugins which have antialiasing on permanently). The text is stamped onto the image through the same methods of drawing on a box or line (*Edit/Draw* or {% include key content='Ctrl' %}+{% include key content='D' %}).
+Adding text is done with the toolbar's text button. Click the toolbar, click the image, and write the desired text. Double click on the toolbar-text button to set the font size and style. Color is determined by the color picker toolbar button. Antialiasing can be turned on/off via the menu item "*Edit/Options/Fonts*" and unchecking the "Smooth" option (although this option does not affect the Stamper plugins which have antialiasing on permanently). The text is stamped onto the image through the same methods of drawing on a box or line (*Edit/Draw* or {% include key content='Ctrl' %}+{% include key content='D' %}).
 
 It is possible to add a line, box, or text to each slice in a stack. After adding to a single slice and selecting "*Edit/Draw*", you will be asked if you want to apply the selection to every slice. Keep in mind that there is no undo option for this operation.
 
@@ -111,7 +111,7 @@ Also, bear in mind that the interval doesn't necessarily need to be "time". The 
 
 ### Adding event markers to a movie
 
-The *Event Stamper* plugin can be used to add text to a movie for a designated number of frames. Set the desired text in the “Text” box, enter the start frame and end frame and click OK. The text size and location are taken from the current ROI and can be changed once the dialog is open.
+The *Event Stamper* plugin can be used to add text to a movie for a designated number of frames. Set the desired text in the "Text" box, enter the start frame and end frame and click OK. The text size and location are taken from the current ROI and can be changed once the dialog is open.
 
 ### Series Labeler plugin
 

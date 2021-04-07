@@ -14,57 +14,57 @@ Slice shuffling/removing/Adding
 
 The slices in a stack can be manipulated in many ways. Some of these functions are described below.
 
-Deleting a single slice: “*Image/Stacks/Delete Slice*"
+Deleting a single slice: "*Image/Stacks/Delete Slice*"
 
 -   Deletes the currently displayed slice in a stack.
 
-Deleting a number of slices: “*Image/Stacks/Tools/Slice remover*”
+Deleting a number of slices: "*Image/Stacks/Tools/Slice remover*"
 
 -   Indicate the first and last slices in the range to remove, as well as the increment of slices to remove between the first and last slices.
 
-Select the slices to remove: “*Image/Stacks/Tools/Make substack*”
+Select the slices to remove: "*Image/Stacks/Tools/Make substack*"
 
 -   Indicate a range or list of slices to include in new substack; increments are possible.
 -   Option to delete the slices from the original stack.
 
-Stack to images/Images to stack: “*Image/Stacks/Stack to images” (Images to Stack…)*.
+Stack to images/Images to stack: "*Image/Stacks/Stack to images" (Images to Stack...)*.
 
--   “*Images to Stack*” requires images to be the same size. If different sized images are used, you will be presented with options to make the size uniform.
+-   "*Images to Stack*" requires images to be the same size. If different sized images are used, you will be presented with options to make the size uniform.
 -   When using "Images to Stack", the original images will close once the stack is formed.
 
-Montage: "*Image/Stack/Make Montage…*"
+Montage: "*Image/Stack/Make Montage...*"
 
 -   Many settings are self explanatory.
 -   Ideal for generating a montage of a stack for a lab book.
 -   Can do reverse operation with "*Image/Stack/Tools/Montage to Stack*", but will need to specify the number of rows and columns to ensure the correct number of slices.
 
-Reversing stack: “*Image/Stacks/Tools/Reverse*"
+Reversing stack: "*Image/Stacks/Tools/Reverse*"
 
-Concatenate: “*Image/Stacks/Tools/Concatenate*"
+Concatenate: "*Image/Stacks/Tools/Concatenate*"
 
 -   Stacks must be the same dimension and image type.
 -   "Open as a 4D Image" option interprets separate stacks as belonging to a single 4D dataset. For example, concatenating two 25-slice stacks would result in a 25-slice stack with two different time points at each slice.
 
-Stack Combine: “*Image/Stacks/Tools/Combine*”
+Stack Combine: "*Image/Stacks/Tools/Combine*"
 
 -   Can choose which stack comes first
 -   If the two stacks contain a different number of slices, the shorter will have blank slices appended to the end so they are the same length.
 
-(De)Interleave: “*Image/Stacks/Tools/DeInterleave”* and “*/Interleave*”
+(De)Interleave: "*Image/Stacks/Tools/DeInterleave"* and "*/Interleave*"
 
 -   Deinterleave will distribute slices between new stacks as indicated by the specified number of channels.
 -   Interleave is the reverse process and may be applied to two stacks at a time.
 
-Stack Inserter: “*Image/Stacks/Tools/Insert*"
+Stack Inserter: "*Image/Stacks/Tools/Insert*"
 
 -   Used with two stacks, one is the source and the other the destination.
 -   Superimpose the source by specifying the X and Y coordinates for the location of the upper left hand corner.
 -   No automatic resizing, so the smaller stack should not be used as the destination.
 
-Stack Sorter: “*Image/Stacks/Tools/Stack Sorter*”.
+Stack Sorter: "*Image/Stacks/Tools/Stack Sorter*".
 
 -   Control the position of individual slices or groups of slices.
--   Advanced “Insert” functionality.
+-   Advanced "Insert" functionality.
 
 ![](/media/Stack slice manipulations1.png "stack_slice_manipulations1.png")
 

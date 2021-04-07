@@ -20,12 +20,12 @@ and later separating the pure gray component:
 
 k = min( c, y, k )  
 if ( k == 1 )  
-  c = m = y = 0  
+  c = m = y = 0  
 else  
-  s = 1 - k  
-  c = ( c - k ) / s  
-  m = ( m - k ) / s  
-  y = ( y - k ) / s
+  s = 1 - k  
+  c = ( c - k ) / s  
+  m = ( m - k ) / s  
+  y = ( y - k ) / s
 
 That is, at least one of the CMY channels is always zero.
 

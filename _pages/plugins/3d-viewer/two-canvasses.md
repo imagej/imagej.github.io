@@ -16,28 +16,28 @@ This howto shows how to create two windows showing the same universe:
 
 &lt;source lang="java" first-line="21"; font-size: '100%';"&gt;
 
-`   // Open a hyperstack`  
-`   String path = "/home/bene/PhD/brains/template.tif";`  
-`   ImagePlus imp = IJ.openImage(path);`
+`   // Open a hyperstack`  
+`   String path = "/home/bene/PhD/brains/template.tif";`  
+`   ImagePlus imp = IJ.openImage(path);`
 
-`   // Create a universe and show it`  
-`   Image3DUniverse univ = new Image3DUniverse();`  
-`   univ.addVoltex(imp);`  
-`   univ.show();`
+`   // Create a universe and show it`  
+`   Image3DUniverse univ = new Image3DUniverse();`  
+`   univ.addVoltex(imp);`  
+`   univ.show();`
 
-`   // retrieve some info about the 1st canvas`  
-`   int w = univ.getCanvas().getWidth();`  
-`   int h = univ.getCanvas().getHeight();`
+`   // retrieve some info about the 1st canvas`  
+`   int w = univ.getCanvas().getWidth();`  
+`   int h = univ.getCanvas().getHeight();`
 
-`   // Create a new canvas and add it`  
-`   ImageCanvas3D canvas2 = new ImageCanvas3D(w, h);`  
-`   univ.getViewer().getView().addCanvas3D(canvas2);`
+`   // Create a new canvas and add it`  
+`   ImageCanvas3D canvas2 = new ImageCanvas3D(w, h);`  
+`   univ.getViewer().getView().addCanvas3D(canvas2);`
 
-`   // create a new window, add the canvas and show it`  
-`   Frame f = new Frame();`  
-`   f.add(canvas2);`  
-`   f.pack();`  
-`   f.show();`
+`   // create a new window, add the canvas and show it`  
+`   Frame f = new Frame();`  
+`   f.add(canvas2);`  
+`   f.pack();`  
+`   f.show();`
 
 </source>
 

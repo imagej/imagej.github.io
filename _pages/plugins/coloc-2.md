@@ -136,17 +136,17 @@ This list is for more random, vague, or uncertain ideas, which are not yet well 
 
 You can then refer to consecutive files using consecutive numbers in the array index, e.g.: files\[0\] and files\[1\]. Use a for loop to go through the entire list:
 
-` dir = getDirectory();`  
-` files = getFileList(dir);`  
-` for(i = 0; i < files.length - 1; i++){`  
-`    open(dir + files[i]);`  
-`    open(dir + files[i+1]);`  
-`     Split channels`  
-`     run(Coloc_2, "i-ch1, i-ch2, etc....")`  
-`     Close opened images`  
-`     Save ij.log`  
-`     Clear ij.log`  
-` }`
+` dir = getDirectory();`  
+` files = getFileList(dir);`  
+` for(i = 0; i < files.length - 1; i++){`  
+`    open(dir + files[i]);`  
+`    open(dir + files[i+1]);`  
+`     Split channels`  
+`     run(Coloc_2, "i-ch1, i-ch2, etc....")`  
+`     Close opened images`  
+`     Save ij.log`  
+`     Clear ij.log`  
+` }`
 
 "
 

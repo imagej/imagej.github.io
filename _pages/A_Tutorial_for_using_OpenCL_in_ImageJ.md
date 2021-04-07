@@ -21,7 +21,7 @@ We set up an Ubuntu based development machine for OpenCL development and testing
 
 -   Obtain an ISO for Ubuntu 10.04
 -   Install Ubuntu on the target machine.
--   Install g++ with: 
+-   Install g++ with: 
         sudo apt-get install g++
 -   Install needed development libs with:
         sudo apt-get install freeglut3-dev

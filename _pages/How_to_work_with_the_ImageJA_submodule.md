@@ -11,8 +11,8 @@ Here is how to get fiji.git's ImageJA submodule to run Fiji:
 
 First check out the submodule ImageJA in fiji/:
 
-`$ git submodule init modules/ImageJA`  
-`$ git submodule update modules/ImageJA`
+`$ git submodule init modules/ImageJA`  
+`$ git submodule update modules/ImageJA`
 
 Note: make sure that you have \_no\_ trailing slash after "modules/ImageJA". In other words, "modules/ImageJA/" will \_not\_ work.
 
@@ -20,14 +20,14 @@ Note: If the update finds a new revision to advance to, it will \_detach\_ the H
 
 Therefore, if you want to work on ImageJA's *master* branch, you need to create a local branch:
 
-`$ cd modules/ImageJA/`  
-`$ git checkout -b master origin/master`
+`$ cd modules/ImageJA/`  
+`$ git checkout -b master origin/master`
 
 This only needs to be done once. You can now work with *git pull*, *git add*, *git commit* and *git push* to your heart's content.
 
 If you update the ImageJA submodule with *git submodule update modules/ImageJA* on purpose or by accident, you will have to go back to the *master* branch before doing any work inside ImageJA:
 
-`$ cd modules/ImageJA/`  
-`$ git checkout master && git pull`
+`$ cd modules/ImageJA/`  
+`$ git checkout master && git pull`
 
 

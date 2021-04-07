@@ -30,6 +30,6 @@ A. Rizk, G. Paul, P. Incardona, M. Bugarski, M. Mansouri, A. Niemann, U. Ziegler
 
 [2] J. A. Helmuth and I. F. Sbalzarini. [Deconvolving active contours for fluorescence microscopy images](http://mosaic.mpi-cbg.de/docs/Helmuth2009a.pdf), In Proc. Intl. Symp. Visual Computing (ISVC), volume 5875 of Lecture Notes in Computer Science, pages 544–553, Las Vegas, USA, November 2009. Springer.
 
-[3] G. Paul, J. Cardinale, and I. F. Sbalzarini. [Coupling image restoration and segmentation: A generalized linear model/Bregman perspective](http://dx.doi.org/10.1007/s11263-013-0615-2), Int. J. Comput. Vis., 104(1): 69-93, 2013
+[3] G. Paul, J. Cardinale, and I. F. Sbalzarini. [Coupling image restoration and segmentation: A generalized linear model/Bregman perspective](http://dx.doi.org/10.1007/s11263-013-0615-2), Int. J. Comput. Vis., 104(1): 69-93, 2013
 
 [4] A. Rizk, G. Paul, P. Incardona, M. Bugarski, M. Mansouri, A. Niemann, U. Ziegler, P. Berger, and I. F. Sbalzarini. [Segmentation and quantification of subcellular structures in fluorescence microscopy images using Squassh](http://dx.doi.org/doi:10.1038/nprot.2014.037) Nature Protocols., 9(3): 586-596, 2014

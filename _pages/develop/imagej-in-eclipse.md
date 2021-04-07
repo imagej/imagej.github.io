@@ -57,10 +57,10 @@ Now update Eclipse's JRE to be JDK-aware:
 
 **Adjust the Eclipse font size.** Sometimes it is desirable to change the Eclipse font size. To do so, create a GTK configuration file (e.g. `~/.gtkrc-eclipse`) and place the following lines there:
 
-`style "eclipse" {`  
-`    font_name = "Sans Condensed 8"`  
+`style "eclipse" {`  
+`    font_name = "Sans Condensed 8"`  
 `}`  
-`class "GtkWidget" style "eclipse"`
+`class "GtkWidget" style "eclipse"`
 
 Then run eclipse using this command: `GTK2_RC_FILES=~/.gtkrc-eclipse eclipse` </tab> </tabs>
 

@@ -20,7 +20,7 @@ But still notably missing was the next crucial layer: a framework for *image pro
 2.  **Powerful and general.** An op should be able to consist of any number of typed input and output parameters, operating on arbitrary data structures, including images of N dimensions stored in a myriad of different ways: as files on disk, programmatically generated in memory, or in remote databases. Using the powerful [ImgLib2](/imglib2) library achieves this ambitious goal.
 3.  **Very fast.** Even though ImgLib2 is vastly more general than ImageJ 1.x's data model, that generality should not come at the expense of performance. Otherwise, users must pay a time tax to do the same things they could already do in ImageJ 1.x. The ImageJ Ops framework needs to provide a means to override *any* general-but-slow op with a faster-but-more-specific alternative, fully transparently to the user.
 
-When it comes to ease of use, generality and performance in computer programs, the usual rule of thumb is “pick two.” Yet we are happy to say that we believe Ops strikes a favorable balance between all three criteria.
+When it comes to ease of use, generality and performance in computer programs, the usual rule of thumb is "pick two." Yet we are happy to say that we believe Ops strikes a favorable balance between all three criteria.
 
 Getting started
 ---------------

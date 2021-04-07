@@ -127,7 +127,7 @@ Multi-Channel deconvolution can be achieved by running the plugin on both channe
 
 **(2)** Run the [Multi-channel bead based registration](SPIM_Bead_Registration#Multichannel_registration), it requires that the same beads are visible in all channels and will register all to each other. Now run the deconvolution individually on both channels and extract the PSF's from the image or use simulated PSFs. Now there will be the problem that the images will most likely suffer an offset to each other, you might even need to define two different bounding boxes. The good news is that we know exactly what the offset - even with different bounding boxes - is. For that you need to note down one line in the output of the deconvolution (fusion is actually the same) of the channels:
 
-`Location of pixel (0,0,0) in global coordinates is: (367.39523, 452.0, 105.90103)`
+`Location of pixel (0,0,0) in global coordinates is: (367.39523, 452.0, 105.90103)`
 
 The difference between these coordinates of the different channels can for example be applied afterwards using TransformJ -&gt; Translate.
 

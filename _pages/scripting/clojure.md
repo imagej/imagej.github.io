@@ -101,33 +101,33 @@ Then connect, at the same port address:
 
 Which gives you a jdb prompt after printing:
 
-` Set uncaught java.lang.Throwable`  
-` Set deferred uncaught java.lang.Throwable`  
-` Initializing jdb ...`  
-` >`
+` Set uncaught java.lang.Throwable`  
+` Set deferred uncaught java.lang.Throwable`  
+` Initializing jdb ...`  
+` >`
 
 Now you may query about threads:
 
-` > threads`  
-` Group system:`  
-`   (java.lang.ref.Reference$ReferenceHandler)0x72b Reference Handler cond. waiting`  
-`   (java.lang.ref.Finalizer$FinalizerThread)0x72c  Finalizer         cond. waiting`  
-`   (java.lang.Thread)0x72d                         Signal Dispatcher running`
+` > threads`  
+` Group system:`  
+`   (java.lang.ref.Reference$ReferenceHandler)0x72b Reference Handler cond. waiting`  
+`   (java.lang.ref.Finalizer$FinalizerThread)0x72c  Finalizer         cond. waiting`  
+`   (java.lang.Thread)0x72d                         Signal Dispatcher running`
 
 And suspend all to see the stack trace of each thread:
 
-` > suspend`  
-` > where 0x72d`  
-` [1] java.io.FileInputStream.read (native method)`  
-` [2] jline.Terminal.readCharacter (Terminal.java:99)`  
-` [3] jline.UnixTerminal.readVirtualKey (UnixTerminal.java:128)`  
-` [4] jline.ConsoleReader.readVirtualKey (ConsoleReader.java:1,450)`  
-` [5] jline.ConsoleReader.readBinding (ConsoleReader.java:651)`  
-` [6] jline.ConsoleReader.readLine (ConsoleReader.java:492)`  
-` [7] jline.ConsoleReader.readLine (ConsoleReader.java:446)`  
-` [8] jline.ConsoleReader.readLine (ConsoleReader.java:298)`  
-` [9] jline.ConsoleReaderInputStream$ConsoleLineInputStream.read (ConsoleReaderInputStream.java:92)`  
-` ...`
+` > suspend`  
+` > where 0x72d`  
+` [1] java.io.FileInputStream.read (native method)`  
+` [2] jline.Terminal.readCharacter (Terminal.java:99)`  
+` [3] jline.UnixTerminal.readVirtualKey (UnixTerminal.java:128)`  
+` [4] jline.ConsoleReader.readVirtualKey (ConsoleReader.java:1,450)`  
+` [5] jline.ConsoleReader.readBinding (ConsoleReader.java:651)`  
+` [6] jline.ConsoleReader.readLine (ConsoleReader.java:492)`  
+` [7] jline.ConsoleReader.readLine (ConsoleReader.java:446)`  
+` [8] jline.ConsoleReader.readLine (ConsoleReader.java:298)`  
+` [9] jline.ConsoleReaderInputStream$ConsoleLineInputStream.read (ConsoleReaderInputStream.java:92)`  
+` ...`
 
 There are perhaps more convenient setups built into Eclipse, IntelliJ, NetBeans and other IDEs that support Clojure via plugins, but the jdb gives you what you want very quickly.
 
@@ -751,8 +751,8 @@ Creating a script for ImageJ
 
 Simply write the clojure script in a text file, and follow these conventions:
 
-`1. Add an underscore "_" to its file name, and the extension ".clj": fix_leginon_images.clj`  
-`2. Save it under fiji/plugins/ folder, or a subfolder.`
+`1. Add an underscore "_" to its file name, and the extension ".clj": fix_leginon_images.clj`  
+`2. Save it under fiji/plugins/ folder, or a subfolder.`
 
 When done, just run the {% include bc content='PlugIns|Scripting|Refresh Clojure Scripts'%} plugin.
 
@@ -804,9 +804,9 @@ An example: when looping a map, we get the entry, not the key and value of each 
 
 Prints:
 
-`[:a 1]`  
-`[:b 2]`  
-`[:c 3]`  
+`[:a 1]`  
+`[:b 2]`  
+`[:c 3]`  
 `nil`
 
 Each "entry" is represented by a vector with two values.
@@ -818,9 +818,9 @@ Now to loop more conveniently, we can assign the key and value to variables, by 
 
 Prints:
 
-`:a 1`  
-`:b 2`  
-`:c 3`  
+`:a 1`  
+`:b 2`  
+`:c 3`  
 `nil`
 
 Even better, we can preserve the whole entry as well, by using the keyword ":as":
@@ -830,9 +830,9 @@ Even better, we can preserve the whole entry as well, by using the keyword ":as"
 
 Prints:
 
-`:a 1 [:a 1]`  
-`:b 2 [:b 2]`  
-`:c 3 [:c 3]`  
+`:a 1 [:a 1]`  
+`:b 2 [:b 2]`  
+`:c 3 [:c 3]`  
 `nil`
 
 Namespaces
@@ -964,17 +964,17 @@ Above, notice the function has three groups of possible arguments, denoted in br
 
 When not knowing what to search for, you may try <b><i>find-doc</i></b> instead, which takes a string or regular expression as argument:
 
-` user=> (find-doc "ns-")`  
-` -------------------------`  
-` clojure.core/ns-aliases`  
-` ([ns])`  
-`   Returns a map of the aliases for the namespace.`  
-` -------------------------`  
-` clojure.core/ns-imports`  
-` ([ns])`  
-`   Returns a map of the import mappings for the namespace.`  
-` `  
-` ... etc.`
+` user=> (find-doc "ns-")`  
+` -------------------------`  
+` clojure.core/ns-aliases`  
+` ([ns])`  
+`   Returns a map of the aliases for the namespace.`  
+` -------------------------`  
+` clojure.core/ns-imports`  
+` ([ns])`  
+`   Returns a map of the import mappings for the namespace.`  
+` `  
+` ... etc.`
 
 ### Defining documentation for your own functions
 
@@ -987,12 +987,12 @@ So where does the documentation come from? Every definition of a function or mac
 
 ... which the <i>doc</i> function prints, formatted:
 
-` user=> (doc area)                           `  
-` -------------------------`  
-` user/area`  
-` ([r])`  
-`   Computes the area of a rectangle.`  
-` nil`
+` user=> (doc area)                           `  
+` -------------------------`  
+` user/area`  
+` ([r])`  
+`   Computes the area of a rectangle.`  
+` nil`
 
 ### Defining documentation for a variable
 
@@ -1002,12 +1002,12 @@ So where does the documentation come from? Every definition of a function or mac
 
 ... which the <i>doc</i> function prints as:
 
-` user=> (doc max-con)`  
-` -------------------------`  
-` user/max-con`  
-` nil`  
-`   The maximum number of connections`  
-` nil`
+` user=> (doc max-con)`  
+` -------------------------`  
+` user/max-con`  
+` nil`  
+`   The maximum number of connections`  
+` nil`
 
 Function documentation is internally set like the above: <i>defn</i> is a macro that defines a function and puts the second argument as the doc string of the variable that points to the function body (among many other things).
 
@@ -1026,7 +1026,7 @@ We first declare the variable, and then define it with a metadata map that inclu
 
 The test results, in this case, in an exception being thrown:
 
-`java.lang.Exception: Value under 10!`
+`java.lang.Exception: Value under 10!`
 
 Otherwise, it would just return the <i>:ok</i> keyword.
 
@@ -1054,7 +1054,7 @@ Then we just <i>take</i> the first 10 elements of such lazy sequence, which are 
 
 Which outputs:
 
-`(0 1 1 2 3 5 8 13 21 34)`
+`(0 1 1 2 3 5 8 13 21 34)`
 
 ### Printing lazy sequences to the REPL
 
@@ -1076,10 +1076,10 @@ To avoid accidental printing of complete lazy-sequences, you may set <b>\*print-
 
 So now one can safely print the entire fibonnaci sequence, which will print only the first 5 elements, followeed by dots:
 
-` user=> (set! *print-length* 5)`  
-` 5`  
-` user=> fibs`  
-` (0 1 1 2 3 ...)`
+` user=> (set! *print-length* 5)`  
+` 5`  
+` user=> fibs`  
+` (0 1 1 2 3 ...)`
 
 The <b>\*print-length\*</b> applies to all sequences to be printed in the REPL, but is specially useful for very large lazy sequences.
 
@@ -1088,51 +1088,51 @@ Creating shallow and deep sequences from java arrays
 
 Many clojure functions take sequences, not native java arrays, as arguments. A java native array can be wrapped by a shallow sequence like the following:
 
-`>>> (def pixels (into-array (range 10)))`  
+`>>> (def pixels (into-array (range 10)))`  
 `#'user/pixels`  
-`>>> pixels`  
+`>>> pixels`  
 `[Ljava.lang.Integer;@f30d8e`  
-`>>> (def seq-pix (seq pixels))`  
+`>>> (def seq-pix (seq pixels))`  
 `#'user/seq-pix`  
-`>>> seq-pix`  
-`(0 1 2 3 4 5 6 7 8 9)`
+`>>> seq-pix`  
+`(0 1 2 3 4 5 6 7 8 9)`
 
 Now if we modify the native array, the sequence will reflect that change too when read:
 
-`>>> (aset pixels 3 99)`  
+`>>> (aset pixels 3 99)`  
 `99`  
-`>>> seq-pix`  
-`(0 1 2 99 4 5 6 7 8 9)`
+`>>> seq-pix`  
+`(0 1 2 99 4 5 6 7 8 9)`
 
 The array was <b>not</b> duplicated. The only new object created was the shallow sequence:
 
-`>>> (class seq-pix)`  
+`>>> (class seq-pix)`  
 `clojure.lang.ArraySeq`
 
 To create a true deep duplicate of the array, one can do:
 
-`>>> (def pixels2 (vec pixels))`  
+`>>> (def pixels2 (vec pixels))`  
 `#'user/pixels2`  
-`>>> (class pixels2)`  
+`>>> (class pixels2)`  
 `clojure.lang.LazilyPersistentVector`  
-`>>> pixels2`  
-`[0 1 2 99 4 5 6 7 8 9]`  
-`>>> (def seq-pix2 (seq pixels2))`  
+`>>> pixels2`  
+`[0 1 2 99 4 5 6 7 8 9]`  
+`>>> (def seq-pix2 (seq pixels2))`  
 `#'user/seq-pix2`  
-`>>> (class seq-pix2)`  
+`>>> (class seq-pix2)`  
 `clojure.lang.APersistentVector$Seq`
 
 Or, in short:
 
-`(def seq-pix2 (seq (vec pixels)))`  
+`(def seq-pix2 (seq (vec pixels)))`  
 `#'user/seq-pix2`
 
 So now any changes to the original <i>pixels</i> array will not affect the new sequence:
 
-`>>> (aset pixels 3 101)`  
+`>>> (aset pixels 3 101)`  
 `101`  
-`>>> seq-pix2`  
-`(0 1 2 99 4 5 6 7 8 9)`
+`>>> seq-pix2`  
+`(0 1 2 99 4 5 6 7 8 9)`
 
 <i>Thanks to Chouser and wwmorgan for examples on \#clojure at irc.freenode.net</i>
 
@@ -1157,7 +1157,7 @@ For example:
     $ mkdir classes
     $ java -cp .:../../ij.jar:../../jars/clojure.jar:./classes/:./fj/tests/process/ clojure.lang.Repl
 
-`user=> (compile 'fj.tests.process.FloatProcessorPlus)`  
+`user=> (compile 'fj.tests.process.FloatProcessorPlus)`  
 `fj.tests.process.FloatProcessorPlus`  
 `user=>`
 
@@ -1359,10 +1359,10 @@ Of course you can throw any kind of exception you want. For example, in checking
 
 Above, despite the type declaration, one can pass any value to the <i>area</i> function and it will still work, but of course our class check will cut execution:
 
-`user=> (area 10)                          `  
-`java.lang.IllegalArgumentException: Can only compute the area of a Rectangle. (NO_SOURCE_FILE:0)`  
+`user=> (area 10)                          `  
+`java.lang.IllegalArgumentException: Can only compute the area of a Rectangle. (NO_SOURCE_FILE:0)`  
   
-`user=> (area (Rectangle. 0 0 10 10))`  
+`user=> (area (Rectangle. 0 0 10 10))`  
 `100`
 
 Executing a command in a shell and capturing its output
@@ -1442,14 +1442,14 @@ Then, for any example function like the cube of x:
 
 We can now call the cubic-prime function simply like any other function:
 
-`(cubic-prime 2) `  
-`-> 12.000600010022566`  
+`(cubic-prime 2) `  
+`-> 12.000600010022566`  
   
-`(cubic-prime 3) `  
-`-> 27.00090001006572`  
-` `  
-`(cubic-prime 4) `  
-`-> 48.00120000993502`
+`(cubic-prime 3) `  
+`-> 27.00090001006572`  
+` `  
+`(cubic-prime 4) `  
+`-> 48.00120000993502`
 
 The derivative of x^3 is 3 \* x^2, which for an x of 4 equals 48. Our derivative is as precise as low is the value of the increment <i>dx</i>.
 

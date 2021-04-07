@@ -47,13 +47,13 @@ Processing Settings
 3.  <b>Native Spatial Scale</b>: Input the current image scale in pixels/microns.
 4.  <b>Image Rescaling Options</b>: If the image is larger that 1300 pixels width, it will be rescaled to speed up the processing. The rescaled image will be saved as a copy.
 5.  <b>Minimum and Maximum Cell Area</b>: Input the previously measured and selected cutoff values.
-6.  <b>Cell Roundness</b>: If “All” is selected, all thresholded cells will be counted (Circularity 0-1). If “Mostly rounded“ is selected, mostly circular cells will be counted (Circularity 0.5-1.0). If “Mostly not rounded“ is selected, mostly not circular cells will be counted (Circularity 0.0-0.5).
+6.  <b>Cell Roundness</b>: If "All" is selected, all thresholded cells will be counted (Circularity 0-1). If "Mostly rounded" is selected, mostly circular cells will be counted (Circularity 0.5-1.0). If "Mostly not rounded" is selected, mostly not circular cells will be counted (Circularity 0.0-0.5).
 7.  <b>Retina Area Selection</b>: Choose between automated ONL & INL segmentation or manual freehand selection.
 8.  <b>Threshold Sensitivity</b>: Choose between a standard and high sensitivity threshold, in case you need to detect cells with low intensity values.
 9.  <b>Channels</b>: Choose the cells of interest in either the green, red, or combined channels.
 10. <b>Help</b>: Links directly to this site.
 
-<table><tbody><tr class="odd"><td><p>style="vertical-align:top"|{% include thumbnail src='/media/RETINA Cell Counter Roundness.png' title='\'\'\'Cell Roundness\'\'\': Select the desired morphology for cells.'%}</p></td><td><p>style=“vertical-align:top"|{% include thumbnail src='/media/RETINA Cell Counter Area.png' title='\'\'\'Retina Area Selection\'\'\': Choose between automated or manual segmentation.'%}</p></td><td><p>style=“vertical-align:top"|{% include thumbnail src='/media/RETINA Cell Counter Threshold.png' title='\'\'\'Threshold Sensitivity\'\'\': Select the threshold protocol for cell counting.'%}</p></td></tr></tbody></table>
+<table><tbody><tr class="odd"><td><p>style="vertical-align:top"|{% include thumbnail src='/media/RETINA Cell Counter Roundness.png' title='\'\'\'Cell Roundness\'\'\': Select the desired morphology for cells.'%}</p></td><td><p>style="vertical-align:top"|{% include thumbnail src='/media/RETINA Cell Counter Area.png' title='\'\'\'Retina Area Selection\'\'\': Choose between automated or manual segmentation.'%}</p></td><td><p>style="vertical-align:top"|{% include thumbnail src='/media/RETINA Cell Counter Threshold.png' title='\'\'\'Threshold Sensitivity\'\'\': Select the threshold protocol for cell counting.'%}</p></td></tr></tbody></table>
 
 Results
 -------

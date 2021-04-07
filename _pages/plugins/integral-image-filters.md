@@ -48,41 +48,41 @@ $$ \text{Var}(x) = \frac{1}{n}\sum_{i=1}^n\left(x_i^2-2x_i\mu+\mu^2\right) $$
 
 $$
 
-`       = \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{1}{n}\sum_{i=1}^n2x_i\mu + \mu^2 $$`
+`       = \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{1}{n}\sum_{i=1}^n2x_i\mu + \mu^2 $$`
 
 $$
 
-`       = \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{1}{n}\sum_{i=1}^n2x_i\mu + \frac{1}{n^2}\left(\sum_{i=1}^nx_i\right)^2`
-
-$$
-
-$$
-
-`       = \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{2\mu}{n}\sum_{i=1}^nx_i + \frac{1}{n^2}\left(\sum_{i=1}^nx_i\right)^2`
+`       = \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{1}{n}\sum_{i=1}^n2x_i\mu + \frac{1}{n^2}\left(\sum_{i=1}^nx_i\right)^2`
 
 $$
 
 $$
 
-`       = \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{2}{n^2}\left(\sum_{i=1}^nx_i\right)^2 + \frac{1}{n^2}\left(\sum_{i=1}^nx_i\right)^2`
+`       = \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{2\mu}{n}\sum_{i=1}^nx_i + \frac{1}{n^2}\left(\sum_{i=1}^nx_i\right)^2`
 
 $$
 
 $$
 
-`       = \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{1}{n^2}\left(\sum_{i=1}^nx_i\right)^2`
+`       = \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{2}{n^2}\left(\sum_{i=1}^nx_i\right)^2 + \frac{1}{n^2}\left(\sum_{i=1}^nx_i\right)^2`
 
 $$
 
 $$
 
-`       = \frac{1}{n}\sum_{i=1}^nx_i^2 - \left(\frac{1}{n}\sum_{i=1}^nx_i\right)^2`
+`       = \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{1}{n^2}\left(\sum_{i=1}^nx_i\right)^2`
 
 $$
 
 $$
 
-`       = \frac{1}{n}\left(\sum_{i=1}^nx_i^2 - \frac{1}{n}\left(\sum_{i=1}^nx_i\right)^2\right)`
+`       = \frac{1}{n}\sum_{i=1}^nx_i^2 - \left(\frac{1}{n}\sum_{i=1}^nx_i\right)^2`
+
+$$
+
+$$
+
+`       = \frac{1}{n}\left(\sum_{i=1}^nx_i^2 - \frac{1}{n}\left(\sum_{i=1}^nx_i\right)^2\right)`
 
 $$
 
@@ -110,13 +110,13 @@ $$ \sum_{i=1}^n(x_i-\mu_X)(y_i-\mu_Y) = \sum_{i=1}^nx_iy_i-\sum_{i=1}^nx_i\mu_Y-
 
 $$
 
-`= \sum_{i=1}^nx_iy_i-\mu_Y\sum_{i=1}^nx_i-\mu_X\sum_{i=1}^ny_i+n\mu_X\mu_Y`
+`= \sum_{i=1}^nx_iy_i-\mu_Y\sum_{i=1}^nx_i-\mu_X\sum_{i=1}^ny_i+n\mu_X\mu_Y`
 
 $$
 
 $$
 
-`= \sum_{i=1}^nx_iy_i-\frac{1}{n}\sum_{i=1}^ny_i\sum_{i=1}^nx_i`
+`= \sum_{i=1}^nx_iy_i-\frac{1}{n}\sum_{i=1}^ny_i\sum_{i=1}^nx_i`
 
 $$
 
@@ -126,13 +126,13 @@ $$ r_{XY} = \frac{\sum_{i=1}^nx_iy_i-\frac{1}{n}\sum_{i=1}^ny_i\sum_{i=1}^nx_i}{
 
 $$
 
-`= \frac{n\sum_{i=1}^nx_iy_i-\sum_{i=1}^ny_i\sum_{i=1}^nx_i}{n\sqrt{\sum_{i=1}^n(x_i-\mu_X)^2}\sqrt{\sum_{i=1}^n(y_i-\mu_Y)^2}}`
+`= \frac{n\sum_{i=1}^nx_iy_i-\sum_{i=1}^ny_i\sum_{i=1}^nx_i}{n\sqrt{\sum_{i=1}^n(x_i-\mu_X)^2}\sqrt{\sum_{i=1}^n(y_i-\mu_Y)^2}}`
 
 $$
 
 $$
 
-`= \frac{n\sum_{i=1}^nx_iy_i-\sum_{i=1}^ny_i\sum_{i=1}^nx_i}{\sqrt{n\sum_{i=1}^n(x_i-\mu_X)^2}\sqrt{n\sum_{i=1}^n(y_i-\mu_Y)^2}}`
+`= \frac{n\sum_{i=1}^nx_iy_i-\sum_{i=1}^ny_i\sum_{i=1}^nx_i}{\sqrt{n\sum_{i=1}^n(x_i-\mu_X)^2}\sqrt{n\sum_{i=1}^n(y_i-\mu_Y)^2}}`
 
 $$
 
@@ -142,19 +142,19 @@ $$ n\sum_{i=1}^n(x_i-\mu_X)^2 = n\sum_{i=1}^n(x_i^2-2x_i\mu_X+\mu_X^2) $$
 
 $$
 
-`= n\sum_{i=1}^nx_i^2 - 2n\mu_X\sum_{i=1}^nx_i + \left(\sum_{i=1}^nx_i\right)^2`
+`= n\sum_{i=1}^nx_i^2 - 2n\mu_X\sum_{i=1}^nx_i + \left(\sum_{i=1}^nx_i\right)^2`
 
 $$
 
 $$
 
-`= n\sum_{i=1}^nx_i^2 - 2\left(\sum_{i=1}^nx_i\right)^2 + \left(\sum_{i=1}^nx_i\right)^2`
+`= n\sum_{i=1}^nx_i^2 - 2\left(\sum_{i=1}^nx_i\right)^2 + \left(\sum_{i=1}^nx_i\right)^2`
 
 $$
 
 $$
 
-`= n\sum_{i=1}^nx_i^2 - \left(\sum_{i=1}^nx_i\right)^2`
+`= n\sum_{i=1}^nx_i^2 - \left(\sum_{i=1}^nx_i\right)^2`
 
 $$
 
@@ -162,7 +162,7 @@ yielding
 
 $$
 
-`r_{XY} = \frac{n\sum_{i=1}^nx_iy_i - \sum_{i=1}^nx_i\sum_{i=1}^ny_i}{\sqrt{n\sum_{i=1}^nx_i^2 - \left(\sum_{i=1}^nx_i\right)^2}\sqrt{n\sum_{i=1}^ny_i^2 - \left(\sum_{i=1}^ny_i\right)^2}}`
+`r_{XY} = \frac{n\sum_{i=1}^nx_iy_i - \sum_{i=1}^nx_i\sum_{i=1}^ny_i}{\sqrt{n\sum_{i=1}^nx_i^2 - \left(\sum_{i=1}^nx_i\right)^2}\sqrt{n\sum_{i=1}^ny_i^2 - \left(\sum_{i=1}^ny_i\right)^2}}`
 
 $$
 

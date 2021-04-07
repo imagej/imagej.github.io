@@ -103,4 +103,4 @@ The *View changes* option is helpful to identify what downloads are pending. Onc
 Other options to check if still not resolved:
 
 -   Be sure to set your upload password for your currently logged-in wiki account. Just click [Set/change upload password](Special_ChangeUploadPassword) under the MORE TOOLS section at the bottom of any wiki page.
--   Be sure that under “Manage update sites” that your credentials are inserted for your update site. See [Uploading files to your update site](How_to_set_up_and_populate_an_update_site#Uploading_files_to_your_update_site) on the ImageJ wiki to double-check how to do this.
+-   Be sure that under "Manage update sites" that your credentials are inserted for your update site. See [Uploading files to your update site](How_to_set_up_and_populate_an_update_site#Uploading_files_to_your_update_site) on the ImageJ wiki to double-check how to do this.

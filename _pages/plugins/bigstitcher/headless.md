@@ -37,7 +37,7 @@ Calling the macro generated after clicking **Generate** will just perform the sa
 
 In the example below, the user can pass a parameter string of the form
 
-`  /path/to/data num_tiles_x num_tiles_x`
+`  /path/to/data num_tiles_x num_tiles_x`
 
 to process another dataset with a different number of tiles headlessly:
 
@@ -98,6 +98,6 @@ to process another dataset with a different number of tiles headlessly:
 
 After saving the macro, it can be run from any Terminal by starting Fiji in [Headless](Headless) mode and passing the macro as well as a parameter string.
 
-`   /path/to/fiji/ImageJ-linux64 --headless --console -macro /path/to/macro/bigStitcherBatch.ijm "/path/to/data 2 3"`
+`   /path/to/fiji/ImageJ-linux64 --headless --console -macro /path/to/macro/bigStitcherBatch.ijm "/path/to/data 2 3"`
 
 Go back to the [main page](BigStitcher#Documentation)

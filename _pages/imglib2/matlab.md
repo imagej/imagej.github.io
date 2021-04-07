@@ -85,9 +85,9 @@ What happened here? The gray levels are all messed up. Checking the class of the
 
     >> class(J)
 
-` ans =`  
-` `  
-` int8`
+` ans =`  
+` `  
+` int8`
 
 Aha! So we gave to ImgLib2 an uint8 array, but it gives us back an int8 array, with all values wrapped. This is actually something that should have been expected: There is no unsigned byte type in Java, only signed byte type. This is a language design choice we could discuss for hours, but in Java there just isn't uint8 or uint16[1].
 
@@ -123,12 +123,12 @@ A first attempt to solve this would be to try and use Java arrays in [MATLAB](MA
 
 But this would unsatisfactory as well. The `javaArray` function allows the creation of Java *objects*, but not of *primitive types*. As suggested on the [MATLAB](MATLAB) docs, and noted [here](http://stackoverflow.com/questions/5554518/can-matlab-not-read-back-a-double-array-from-java):
 
-` `[`MATLAB`](MATLAB)` can pass Java objects when calling a Java function, and modifications to `  
-` these objects are afterwards available in `[`MATLAB`](MATLAB)` - `<u>`except when the Java `  
-` object is an array of a primitive data type`</u>`. In this case automatic conversion`  
-` between `[`MATLAB`](MATLAB)` and Java kicks in, making a Java array-of-primitive-double `  
-` correspond directly to a double matrix in `[`MATLAB`](MATLAB)` - which is by `[`MATLAB`](MATLAB)` `  
-` conventions a thing "passed as value" so no return values are possible.`
+` `[`MATLAB`](MATLAB)` can pass Java objects when calling a Java function, and modifications to `  
+` these objects are afterwards available in `[`MATLAB`](MATLAB)` - `<u>`except when the Java `  
+` object is an array of a primitive data type`</u>`. In this case automatic conversion`  
+` between `[`MATLAB`](MATLAB)` and Java kicks in, making a Java array-of-primitive-double `  
+` correspond directly to a double matrix in `[`MATLAB`](MATLAB)` - which is by `[`MATLAB`](MATLAB)` `  
+` conventions a thing "passed as value" so no return values are possible.`
 
 So this means that we could create an array of `java.lang.Double[]` and use its reference, but we cannot have and manipulate a plain native `double[]` array without [MATLAB](MATLAB) shadowing any change because it operates on a copy.
 

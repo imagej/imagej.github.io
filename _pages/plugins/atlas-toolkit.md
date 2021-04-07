@@ -20,7 +20,7 @@ Installation of the plugin
 
 The plugin can be quickly installed via the project's update site. Please refer to the [ **tutorial**](/update-sites) on how to add our update site to your Fiji installation. Our update site has the following URL:
 
-` `**`http://sites.imagej.net/GrocottLab/`**
+` `**`http://sites.imagej.net/GrocottLab/`**
 
 What's in the toolkit?
 ----------------------

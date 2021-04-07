@@ -53,7 +53,7 @@ The only known limitation of this approach is shown in the presence of nested lo
 Table of results
 ----------------
 
-{% include thumbnail src='/media/AnalyzeSkeleton-Results-table.png' title='Example of AnalyzeSkeleton Results table'%} After classification, a “Results” window is displayed showing for each skeleton in the image:
+{% include thumbnail src='/media/AnalyzeSkeleton-Results-table.png' title='Example of AnalyzeSkeleton Results table'%} After classification, a "Results" window is displayed showing for each skeleton in the image:
 
 -   The number of branches (slab segments, usually connecting end-points, end-points and junctions or junctions and junctions). The special case of a circular skeleton is also contemplated here.
 -   The number of voxels of every type: end-point, slab and junction voxels.

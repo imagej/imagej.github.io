@@ -52,7 +52,7 @@ Longer version:
 
 The .config file should look something like this:
 
-`       File, "Show Prime Numbers", Primes_("")`
+`       File, "Show Prime Numbers", Primes_("")`
 
 where {% include bc content='File'%} is the menu you want to add the item to -- at the moment, the only valid choices are {% include bc content='Plugins'%}, {% include bc content='Plugins | <submenu>'%}, {% include bc content='File | Import'%}, {% include bc content='File | Save'%}, {% include bc content='Analyze | Tools'%}, {% include bc content='Help | About'%} and {% include bc content='Edit | Options'%}.
 

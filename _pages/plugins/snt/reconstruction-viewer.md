@@ -51,7 +51,7 @@ Scene Controls
 
 </div>
 
--   {% include bc content='Impose Isotropic Scale|  '%} Squares the aspect ratio of the selected dimensions, leaving the others unchanged.
+-   {% include bc content='Impose Isotropic Scale|  '%} Squares the aspect ratio of the selected dimensions, leaving the others unchanged.
 
 <div align="left">
 
@@ -79,7 +79,7 @@ This menu relates to the import, customization and management of rendered recons
 -   {% include bc content='Import File...'%} Imports and renders a single reconstruction file (".swc" or ".traces"). A color may be chosen on import or applied later using the "Customize & Adjust" sub-menu. Note that loaded files will not be listed in the Path Manager.
 -   {% include bc content='Import Directory...'%} Imports and renders all reconstruction files in a directory. A single color may be applied to all reconstructions or they may be colored uniquely. Note that loaded files will not be listed in the Path Manager.
 -   {% include bc content='Import & Compare Groups...'%} Calls the {% include bc content='Utilities|Compare Reconstructions...'%} command found in the main SNT dialog, allowing import, rendering and comparison of multiple groups of reconstructions.
--   {% include bc content='Load from Database| '%} Allows import and rendering of reconstruction files fetched from the FlyCircuit, MouseLight and NeuroMorpho remote databases.
+-   {% include bc content='Load from Database| '%} Allows import and rendering of reconstruction files fetched from the FlyCircuit, MouseLight and NeuroMorpho remote databases.
 
 ### Customize & Adjust
 
@@ -261,7 +261,7 @@ Utilities
 
 -   {% include bc content='Take Snapshot'%} {% include key content='S' %} Saves a PNG image of the current scene to disk. The default directory may be changed in the Reconstruction Viewer *Preferences*.
 -   {% include bc content='Record Rotation'%} Animates a rotation of the current scene and saves each frame to disk. The save directory, rotation degree, duration and frames per second may be adjusted in the Reconstruction Viewer *Preferences*.
--   {% include bc content='Color Legends| '%} Contains options relating to the adding and management of LUT-based color legends.
+-   {% include bc content='Color Legends| '%} Contains options relating to the adding and management of LUT-based color legends.
 -   {% include bc content='Light Controls...'%} Adjustments of light and shadows. Note these are currently experimental features, some of which are un-doable.
 
 ### Scripting
@@ -283,9 +283,9 @@ Settings
 
 A sub-menu with options for sensitivity of mouse and keyboard scene interaction. Note that a default shared sensitivity parameter can be specified for panning, zooming and rotating (using hotkeys) in the {% include bc content='Global Preferences...'%} dialog.
 
--   {% include bc content='Pan Accuracy| '%} Sets the responsiveness of panning. A lower step size is more responsive.
--   {% include bc content='Rotation Steps (Arrow Keys)| '%} Sets the number of degrees of a single rotation step. Note this preference only applies to rotations made with the Left/Right Arrow keys.
--   {% include bc content='Zoom Steps (+/-) Keys| '%} Sets the percentage of a single zoom step.
+-   {% include bc content='Pan Accuracy| '%} Sets the responsiveness of panning. A lower step size is more responsive.
+-   {% include bc content='Rotation Steps (Arrow Keys)| '%} Sets the number of degrees of a single rotation step. Note this preference only applies to rotations made with the Left/Right Arrow keys.
+-   {% include bc content='Zoom Steps (+/-) Keys| '%} Sets the percentage of a single zoom step.
 
 ### Misc. Preferences
 

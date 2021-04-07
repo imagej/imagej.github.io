@@ -206,18 +206,18 @@ We display the results using a binary image. *Note that the **BitType** only req
 
 The generic method for minima detection has some more interesting properties. The type of the source image data actually does not require to be of **Type**, it simply needs something that is comparable. The **LocalNeighborhood** will iterate n-dimensionally all pixels adjacent to a certain location, but skip the central pixel (this corresponds to an both neighbors in 1d, an 8-neighborhood in 2d, a 26-neighborhood in 3d, and so on ...). This allows to efficiently detect if a pixel is a local minima or maxima. Note that the **Cursor** that performs the iteration can have special implementations for specific dimensionalities to speed up the iteration. See below the example for a specialized three-dimensional iteration:
 
-`Acces plan for a 3d neighborhood, starting at the center position marked by (x). The initial`  
-`position is, in this example, NOT part of iteration, which means the center pixel is not iterated. `  
-`Note that every step except for the last one can be done with a very simple move command.`  
+`Acces plan for a 3d neighborhood, starting at the center position marked by (x). The initial`  
+`position is, in this example, NOT part of iteration, which means the center pixel is not iterated. `  
+`Note that every step except for the last one can be done with a very simple move command.`  
   
-`upper z plane (z-1)        center z plane (z=0)        lower z plane(z+1)`  
-`-------------          -------------           -------------`  
-`| 2 | 1 | 8 |          | 11| 10| 9 |           | 20| 19| 18|`  
-`|------------          -------------           -------------`  
-`| 3 | 0 | 7 |          | 12| x | 16|           | 21| 25| 17|`  
-`|------------          -------------           -------------`  
-`| 4 | 5 | 6 |          | 13| 14| 15|           | 22| 23| 24|`  
-`-------------          -------------           -------------`
+`upper z plane (z-1)        center z plane (z=0)        lower z plane(z+1)`  
+`-------------          -------------           -------------`  
+`| 2 | 1 | 8 |          | 11| 10| 9 |           | 20| 19| 18|`  
+`|------------          -------------           -------------`  
+`| 3 | 0 | 7 |          | 12| x | 16|           | 21| 25| 17|`  
+`|------------          -------------           -------------`  
+`| 4 | 5 | 6 |          | 13| 14| 15|           | 22| 23| 24|`  
+`-------------          -------------           -------------`
 
 Please note as well that if one would increase the radius of the **RectangleShape** to more than 1 (without at the same time changing the **View** on source that creates an inset border of exactly this one pixel), this example would fail as we would try to write image data outside of the defined boundary. **OutOfBoundsStrategies** which define how to handle such cases is discussed in example 5.
 

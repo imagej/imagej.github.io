@@ -72,11 +72,11 @@ Basic Tracing
 -   Don't quit the tracer but move onto the next set of tests...
 -   Select a single path and click "Fill Out" (note bug here: panes stop updating due to NPE)
 
-`Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException`  
-`   at tracing.SearchThread.anyNodeUnderThreshold(SearchThread.java:682)`  
-`   at tracing.SearchThread.drawProgressOnSlice(SearchThread.java:729)`  
-`   at tracing.FillerThread.drawProgressOnSlice(FillerThread.java:365)`  
-`   at tracing.TracerCanvas.drawOverlay(TracerCanvas.java:87)`
+`Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException`  
+`   at tracing.SearchThread.anyNodeUnderThreshold(SearchThread.java:682)`  
+`   at tracing.SearchThread.drawProgressOnSlice(SearchThread.java:729)`  
+`   at tracing.FillerThread.drawProgressOnSlice(FillerThread.java:365)`  
+`   at tracing.TracerCanvas.drawOverlay(TracerCanvas.java:87)`
 
 -   (FIXME: add further filling test script here.)
 -   Click "Cancel Fill"

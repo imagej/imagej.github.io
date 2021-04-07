@@ -29,11 +29,11 @@ USER GUIDE
 INTRODUCTION
 ------------
 
-FUZZY SET, the application, has evolved from developing a method to transform images as a class project into creating a “plugin” for FIJI users. We include a brief overview of the development and application for the plugin that we will refer to as just “Fuzzy Set”. For those users who might want to explore the theory behind the application, we refer to the text Digital Image Processing, by Rafael Gonzalez. Users must also refer to the FIJI website for using more advanced features of the FIJI application.
+FUZZY SET, the application, has evolved from developing a method to transform images as a class project into creating a "plugin" for FIJI users. We include a brief overview of the development and application for the plugin that we will refer to as just "Fuzzy Set". For those users who might want to explore the theory behind the application, we refer to the text Digital Image Processing, by Rafael Gonzalez. Users must also refer to the FIJI website for using more advanced features of the FIJI application.
 
-We began developing a GUI based java application separate from the FIJI platform, but soon discovered the idea of creating a “plugin” as we explored the powerful features of FIJI. We found that the ability to make changes was efficient and simple. FIJI is an open source application that encourages contributions by its users. Being a java friendly application provided an easy platform for developing and modifying the code.
+We began developing a GUI based java application separate from the FIJI platform, but soon discovered the idea of creating a "plugin" as we explored the powerful features of FIJI. We found that the ability to make changes was efficient and simple. FIJI is an open source application that encourages contributions by its users. Being a java friendly application provided an easy platform for developing and modifying the code.
 
-`   Our application employs the principle of fuzzy sets to transform pixels with the hope of enhancing an image.  The Fuzzy Set plugin inputs the pixels from an image into an array.  The user provides, through the use of an input window, numbers that correspond to values (except z0) in the following equation.`
+`   Our application employs the principle of fuzzy sets to transform pixels with the hope of enhancing an image.  The Fuzzy Set plugin inputs the pixels from an image into an array.  The user provides, through the use of an input window, numbers that correspond to values (except z0) in the following equation.`
 
 <div style="text-align: center;">
 
@@ -41,10 +41,10 @@ We began developing a GUI based java application separate from the FIJI platform
 
 </div>
 
-All images utilize the gray levels of the image; therefore, limiting the range of output values from “0-255” (“0” corresponds to totally black, likewise “255” corresponds to totally white).
+All images utilize the gray levels of the image; therefore, limiting the range of output values from "0-255" ("0" corresponds to totally black, likewise "255" corresponds to totally white).
 
-`   Once the user inputs the values, our application analyzes the output values for every pixel “z0”.  Every pixel in the image is transformed pixel by pixel.  The program displays the new modified image in its own window.  Two windows appear that display a histogram for both the original image and the modified image.  The final modified image appears illustrating the transformation as delineated by the user.  The user will be able to transform images into many possible outcomes using the features of the Fuzzy Set plugin.  Hopefully with practice, the user can adapt the application to meet their respective needs or just have fun exploring the concept of using fuzzy sets in image processing.  `  
-`   We would like to take this time to thank our professor, Dr. Nikolay Sirakov.  Dr. Sirakov encouraged us to go beyond the scope of a regular graduate course in image processing.  We cannot express our gratitude for his constant prodding, encouragement and feedback that allowed us to contribute to the outside world of image processor users.  `
+`   Once the user inputs the values, our application analyzes the output values for every pixel "z0".  Every pixel in the image is transformed pixel by pixel.  The program displays the new modified image in its own window.  Two windows appear that display a histogram for both the original image and the modified image.  The final modified image appears illustrating the transformation as delineated by the user.  The user will be able to transform images into many possible outcomes using the features of the Fuzzy Set plugin.  Hopefully with practice, the user can adapt the application to meet their respective needs or just have fun exploring the concept of using fuzzy sets in image processing.  `  
+`   We would like to take this time to thank our professor, Dr. Nikolay Sirakov.  Dr. Sirakov encouraged us to go beyond the scope of a regular graduate course in image processing.  We cannot express our gratitude for his constant prodding, encouragement and feedback that allowed us to contribute to the outside world of image processor users.  `
 
 SOFTWARE INSTALLATION
 ---------------------
@@ -61,7 +61,7 @@ To use our software to transform images, the user must install the software onto
 PLUGIN INSTALLATION
 -------------------
 
-`   Once the FIJI application has successfully installed, navigate to the help menu on the toolbar.  Select Update from the drop down menu.  A window will pop up entitled “ImageJ Updater”.  Select “Manage update sites” from the button on the lower left side.  This will list several sites to various “plugins” as well as providing the user to keep java and imageJ updated.  Navigate to the site “Fuzzy Sets”.  Select the box on the left side to obtain the “plugin” and also keep the site updated.  Choose “close”.  Finally the FIJI application must be restarted to apply the changes and/or add the plugin into the user’s FIJI application.   `
+`   Once the FIJI application has successfully installed, navigate to the help menu on the toolbar.  Select Update from the drop down menu.  A window will pop up entitled "ImageJ Updater".  Select "Manage update sites" from the button on the lower left side.  This will list several sites to various "plugins" as well as providing the user to keep java and imageJ updated.  Navigate to the site "Fuzzy Sets".  Select the box on the left side to obtain the "plugin" and also keep the site updated.  Choose "close".  Finally the FIJI application must be restarted to apply the changes and/or add the plugin into the user's FIJI application.   `
 
 OPENING AN IMAGE
 ----------------
@@ -135,7 +135,7 @@ Following is an example of the Modified Image Window (image supplied by author)
 SAVING RESULTS
 --------------
 
-`   The user of the application can save results using the save as feature under the file option.  The FIJI application provides the options to save the image with a wide choice of extensions.`
+`   The user of the application can save results using the save as feature under the file option.  The FIJI application provides the options to save the image with a wide choice of extensions.`
 
 DEMO
 ----

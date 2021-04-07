@@ -117,7 +117,7 @@ The project is not without complications, though:
 
 -   Cross-site dependencies should be handled by having hints in the XML database as to what other site is supposed to have the newest dependency.
 
-Also, the Updater cannot upgrade the Java Runtime as of now. There is little reason why it should not offer to download the installer directly from the [Sun Developer Network](http://java.sun.com/javase/downloads/index.jsp), run the installer, and install Java 3D on top.
+Also, the Updater cannot upgrade the Java Runtime as of now. There is little reason why it should not offer to download the installer directly from the [Sun Developer Network](http://java.sun.com/javase/downloads/index.jsp), run the installer, and install Java 3D on top.
 
 **Goal:** Improve the Fiji Updater.  
 **Language:** Java.  

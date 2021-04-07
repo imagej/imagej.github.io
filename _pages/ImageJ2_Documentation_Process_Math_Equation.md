@@ -58,14 +58,14 @@ When you query this equation for a loaded image it substitutes each pixel value 
 
 Equations are specified in pieces. The equation language supports:
 
-` - add / subtract / multiply / divide / mod (+ - * / %)`  
-` - raising to a power ( ^ )`  
-` - negation ( - )`  
-` - variable index references ( x in "[x,y] , 3 * x" )`  
-` - an image reference ( img )`  
-` - calls to built in functions (such as sin(v) - more listed below)`  
-` - constants ( such as E and PI  in "E * 7" or "PI / 4" )`  
-` - parentheses`
+` - add / subtract / multiply / divide / mod (+ - * / %)`  
+` - raising to a power ( ^ )`  
+` - negation ( - )`  
+` - variable index references ( x in "[x,y] , 3 * x" )`  
+` - an image reference ( img )`  
+` - calls to built in functions (such as sin(v) - more listed below)`  
+` - constants ( such as E and PI  in "E * 7" or "PI / 4" )`  
+` - parentheses`
 
 Here are some simple examples:
 

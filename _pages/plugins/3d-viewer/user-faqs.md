@@ -242,10 +242,10 @@ To apply a transformation, select an object and click on -&gt;Transformation-&gt
 
 Example:
 
-`        |  a11 a12 a13 a14 |`  
-`        |  a21 a22 a23 a24 |`  
-`        |  a31 a32 a33 a34 |`  
-`        |    0   0   0   1 |`
+`        |  a11 a12 a13 a14 |`  
+`        |  a21 a22 a23 a24 |`  
+`        |  a31 a32 a33 a34 |`  
+`        |    0   0   0   1 |`
 
 should be specified as "a11 a12 a13 a14 a21 a22 a23 a24 a31 a32 a33 a34" (without the '"').
 
@@ -259,10 +259,10 @@ To set a transformation, select an object and click on -&gt;Transformation-&gt;S
 
 Example:
 
-`        |  a11 a12 a13 a14 |`  
-`        |  a21 a22 a23 a24 |`  
-`        |  a31 a32 a33 a34 |`  
-`        |    0   0   0   1 |`
+`        |  a11 a12 a13 a14 |`  
+`        |  a21 a22 a23 a24 |`  
+`        |  a31 a32 a33 a34 |`  
+`        |    0   0   0   1 |`
 
 should be specified as "a11 a12 a13 a14 a21 a22 a23 a24 a31 a32 a33 a34" (without the '"').
 
@@ -274,10 +274,10 @@ To see the current transformation matrix of a 3D object, select that object and 
 
 Example:
 
-`        |  a11 a12 a13 a14 |`  
-`        |  a21 a22 a23 a24 |`  
-`        |  a31 a32 a33 a34 |`  
-`        |    0   0   0   1 |`
+`        |  a11 a12 a13 a14 |`  
+`        |  a21 a22 a23 a24 |`  
+`        |  a31 a32 a33 a34 |`  
+`        |    0   0   0   1 |`
 
 is shown as "a11 a12 a13 a14 a21 a22 a23 a24 a31 a32 a33 a34" (without the '"').
 

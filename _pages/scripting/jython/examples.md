@@ -61,7 +61,7 @@ The next time Fiji is run, it will setup all your scripts in the Plugins menu.
 
 If all you need is a script to run in headless mode, simply do:
 
-` fiji --headless filepath.py`
+` fiji --headless filepath.py`
 
 ### Some limitations of jython
 
@@ -262,7 +262,7 @@ Continuing from the <i>imp</i> above, that contains the now watersheded "blobs" 
 
 To print out the area measurement of each:
 
-`>>> for area in areas: print area`  
+`>>> for area in areas: print area`  
 `76.0`  
 `185.0`  
 `658.0`  
@@ -284,11 +284,11 @@ Finally read out the measured mean intensity value of each blob, along with its 
     for area, mean in zip(areas, means):
       print area, mean
 
-`6.0 191.47368421052633`  
-`185.0 179.2864864864865`  
-`658.0 205.61702127659575`  
-`434.0 217.32718894009216`  
-`477.0 212.1425576519916`  
+`6.0 191.47368421052633`  
+`185.0 179.2864864864865`  
+`658.0 205.61702127659575`  
+`434.0 217.32718894009216`  
+`477.0 212.1425576519916`  
 `...`
 
 ### Creating an image from a text file
@@ -296,8 +296,8 @@ Finally read out the measured mean intensity value of each blob, along with its 
 A data file containing rows with 4 columns:
 
 `...`  
-`399 23 30 10.12`  
-`400 23 30 12.34`  
+`399 23 30 10.12`  
+`400 23 30 12.34`  
 `...`
 
 ... where the columns are X, Y, Z and value, for every pixel in the image. We assume we know the width and height of the image. From this sort of data, we create an image, read out all lines and parse the numbers:
@@ -349,21 +349,21 @@ How ImageJ does it, internally, has to do with the [ImageStatisics](https://imag
     stats = imp.getStatistics()
     print stats.histogram
 
-`array('i',[0, 0, 0, 0, 0, 0, 0, 0, 53, 0, 0, 0, 0, 0, 0, 0, 304,`  
-`           0, 0, 0, 0, 0, 0, 0, 1209, 0, 0, 0, 0, 0, 0, 0, 3511, 0,`  
-`           0, 0, 0, 0, 0, 0, 7731, 0, 0, 0, 0, 0, 0, 0, 10396, 0, 0,`  
-`           0, 0, 0, 0, 0, 7456, 0, 0, 0, 0, 0, 0, 0, 3829, 0, 0, 0,`  
-`           0, 0, 0, 0, 1992, 0, 0, 0, 0, 0, 0, 0, 1394, 0, 0, 0, 0,`  
-`           0, 0, 0, 1158, 0, 0, 0, 0, 0, 0, 0, 1022, 0, 0, 0, 0, 0,`  
-`           0, 0, 984, 0, 0, 0, 0, 0, 0, 0, 902, 0, 0, 0, 0, 0, 0,`  
-`           0, 840, 0, 0, 0, 0, 0, 0, 0, 830, 0, 0, 0, 0, 0, 0, 0,`  
-`           926, 0, 0, 0, 0, 0, 0, 0, 835, 0, 0, 0, 0, 0, 0, 0, 901,`  
-`           0, 0, 0, 0, 0, 0, 0, 1025, 0, 0, 0, 0, 0, 0, 0, 1180, 0,`  
-`           0, 0, 0, 0, 0, 0, 1209, 0, 0, 0, 0, 0, 0, 0, 1614, 0, 0,`  
-`           0, 0, 0, 0, 0, 1609, 0, 0, 0, 0, 0, 0, 0, 2220, 0, 0, 0,`  
-`           0, 0, 0, 0, 2037, 0, 0, 0, 0, 0, 0, 0, 2373, 0, 0, 0, 0,`  
-`           0, 0, 0, 1568, 0, 0, 0, 0, 0, 0, 0, 1778, 0, 0, 0, 0, 0,`  
-`           0, 0, 774, 0, 0, 0, 0, 0, 0, 0, 1364, 0, 0, 0, 0, 0, 0, 0])`
+`array('i',[0, 0, 0, 0, 0, 0, 0, 0, 53, 0, 0, 0, 0, 0, 0, 0, 304,`  
+`           0, 0, 0, 0, 0, 0, 0, 1209, 0, 0, 0, 0, 0, 0, 0, 3511, 0,`  
+`           0, 0, 0, 0, 0, 0, 7731, 0, 0, 0, 0, 0, 0, 0, 10396, 0, 0,`  
+`           0, 0, 0, 0, 0, 7456, 0, 0, 0, 0, 0, 0, 0, 3829, 0, 0, 0,`  
+`           0, 0, 0, 0, 1992, 0, 0, 0, 0, 0, 0, 0, 1394, 0, 0, 0, 0,`  
+`           0, 0, 0, 1158, 0, 0, 0, 0, 0, 0, 0, 1022, 0, 0, 0, 0, 0,`  
+`           0, 0, 984, 0, 0, 0, 0, 0, 0, 0, 902, 0, 0, 0, 0, 0, 0,`  
+`           0, 840, 0, 0, 0, 0, 0, 0, 0, 830, 0, 0, 0, 0, 0, 0, 0,`  
+`           926, 0, 0, 0, 0, 0, 0, 0, 835, 0, 0, 0, 0, 0, 0, 0, 901,`  
+`           0, 0, 0, 0, 0, 0, 0, 1025, 0, 0, 0, 0, 0, 0, 0, 1180, 0,`  
+`           0, 0, 0, 0, 0, 0, 1209, 0, 0, 0, 0, 0, 0, 0, 1614, 0, 0,`  
+`           0, 0, 0, 0, 0, 1609, 0, 0, 0, 0, 0, 0, 0, 2220, 0, 0, 0,`  
+`           0, 0, 0, 0, 2037, 0, 0, 0, 0, 0, 0, 0, 2373, 0, 0, 0, 0,`  
+`           0, 0, 0, 1568, 0, 0, 0, 0, 0, 0, 0, 1778, 0, 0, 0, 0, 0,`  
+`           0, 0, 774, 0, 0, 0, 0, 0, 0, 0, 1364, 0, 0, 0, 0, 0, 0, 0])`
 
 The histogram, area and mean are computed by default. Other values like the median need to be specified.
 
@@ -372,7 +372,7 @@ To calculate other parameters, specify them by bitwise-or composition (see flags
     stats = imp.getStatistics(Measurements.MEAN | Measurements.MEDIAN | Measurements.AREA)
     print "mean:", stats.mean, "median:", stats.median, "area:", stats.area
 
-`mean: 103.26857775590551 median: 64.0 area: 65024.`
+`mean: 103.26857775590551 median: 64.0 area: 65024.`
 
 If we set a ROI to the image, then we are measuring only for the inside of the ROI. Here we set an oval ROI of radius 25 pixels, centered:
 
@@ -382,7 +382,7 @@ If we set a ROI to the image, then we are measuring only for the inside of the R
     stats = imp.getStatistics(Measurements.MEAN | Measurements.MEDIAN | Measurements.AREA)
     print "mean:", stats.mean, "median:", stats.median, "area:", stats.area
 
-`mean: 104.96356275303644 median: 64.0 area: 1976.0`
+`mean: 104.96356275303644 median: 64.0 area: 1976.0`
 
 To display the histogram window ourselves, we may use the [HistogramWindow](https://imagej.net/developer/api/ij/gui/HistogramWindow.html) class:
 
@@ -925,7 +925,7 @@ The script takes a directory of images and processed them all, resulting in new 
 
 After running the script, clicking on any image will result in printing a line to the log window, like:
 
-` clicked on: imp[Untitled-1 400x200x1]`
+` clicked on: imp[Untitled-1 400x200x1]`
 
 ### Add a key listener to the canvas of every open image
 
@@ -1301,7 +1301,7 @@ You can use the Python function *dir(<package>)* to see the contents of a packag
 
 **Note:** As of April 26nd, 2010, you need to start Fiji with
 
-`fiji -Dpython.cachedir.skip=false --`
+`fiji -Dpython.cachedir.skip=false --`
 
 for *dir(<package>)* to work.
 
@@ -1311,7 +1311,7 @@ When your source code contains non-ASCII characters (such as umlauts), Jython wi
 
 You can fix this issue by putting the line
 
-`# -*- coding: iso-8859-15 -*-`
+`# -*- coding: iso-8859-15 -*-`
 
 as first line into your source code (or if it starts with *\#!/usr/bin/python*, as second line), as suggested [here](http://docs.python.org/tutorial/interpreter.html#source-code-encoding). You might need to replace the string *iso-8859-15* by something like *utf-8* if your source code is encoded in UTF-8.
 
@@ -1340,8 +1340,8 @@ See complete documentation at: [jython book chapter 6](http://jythonpodcast.host
 
 Which prints:
 
-`Dividing by zero doesn't make any sense! Error: integer division or modulo by zero`  
-`This line will always print no matter what errors occurs`
+`Dividing by zero doesn't make any sense! Error: integer division or modulo by zero`  
+`This line will always print no matter what errors occurs`
 
 To catch any kind of errors, use <i>sys.exc\_info</i>:
 
@@ -1354,7 +1354,7 @@ To catch any kind of errors, use <i>sys.exc\_info</i>:
 
 Which prints:
 
-`Error:  (<type 'exceptions.NameError'>, NameError("name 'x' is not defined",), <traceback object at 0x2>)`
+`Error:  (<type 'exceptions.NameError'>, NameError("name 'x' is not defined",), <traceback object at 0x2>)`
 
 To ensure that you see the stack trace, print it to the ImageJ log window instead of stdout (whathever the latter may be):
 
@@ -1467,14 +1467,14 @@ Suppose you want to create a one-dimensional double array, the equivalent of **d
 
 Other accepted primitive array types are:
 
-`z  boolean`  
-`c  char`  
-`b  byte`  
-`h  short`  
-`i  int`  
-`l  long`  
-`f  float`  
-`d  double`
+`z  boolean`  
+`c  char`  
+`b  byte`  
+`h  short`  
+`i  int`  
+`l  long`  
+`f  float`  
+`d  double`
 
 But now suppose you want a two-dimensional double array, the equivalent of **double\[\]\[\]** in java. How to do that? Here's how:
 
@@ -1633,7 +1633,7 @@ Instead, here is the same code but using the <i>Weaver.method</i> approach, wher
 
 There are two additional, optional arguments for <i>Weaver.inline</i> and <i>Weaver.method</i>:
 
-`1. A list of classes to insert as imports, so that instead of fully qualified class names`
+`1. A list of classes to insert as imports, so that instead of fully qualified class names`
 
       ij.process.FloatProcessor ip = new ij.process.FloatProcessor(100, 100)
 
@@ -1641,7 +1641,7 @@ There are two additional, optional arguments for <i>Weaver.inline</i> and <i>Wea
 
       FloatProcessor ip = new FloatProcessor(100, 100)
 
-`2. A boolean, to show the generated java code in a tab of the Script Editor.`
+`2. A boolean, to show the generated java code in a tab of the Script Editor.`
 
 Here is a small example, using <i>Weaver.method</i>, that uses imports. The script subtracts "10" from every pixel:
 
@@ -1808,18 +1808,18 @@ Notice we place the above file under directory <i>my/</i>, packaged.
 
 To compile it:
 
-`$ javac -classpath .:ij.jar:../jars/fiji-scripting.jar:../plugins/Jython_Interpreter.jar my/Jython_Launcher.java `
+`$ javac -classpath .:ij.jar:../jars/fiji-scripting.jar:../plugins/Jython_Interpreter.jar my/Jython_Launcher.java `
 
 (check that the path to the three jars that you need is correct!)
 
 Then we define the plugins.config file:
 
-`Plugins>My Scripts, "Print to log window", my.Jython_Launcher("/scripts/printer.py")`  
-`Plugins>My Scripts, "Create image with a white circle", my.Jython_Launcher("/scripts/create_new_image.py")`
+`Plugins>My Scripts, "Print to log window", my.Jython_Launcher("/scripts/printer.py")`  
+`Plugins>My Scripts, "Create image with a white circle", my.Jython_Launcher("/scripts/create_new_image.py")`
 
 Finally, we put all files in a .jar file:
 
-`$ jar cf my_jython_scripts.jar plugins.config my/Jython_Launcher.class scripts/*py`
+`$ jar cf my_jython_scripts.jar plugins.config my/Jython_Launcher.class scripts/*py`
 
 Then, drop the jar file into fiji/plugins/ folder and run "Help - Update Menus", or restart fiji. Your scripts will appear under Plugins - My Scripts.
 

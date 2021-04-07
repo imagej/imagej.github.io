@@ -67,7 +67,7 @@ Click on *Save* and the name will appear in the edit field next to *ARFF file*.
 
 #### Experiment type
 
-The user can choose between the following three diﬀerent types
+The user can choose between the following three different types
 
 -   **Cross-validation (default)** performs stratified cross-validation with the given number of folds.
 -   **Train/Test Percentage Split (data randomized)** splits a dataset according to the given percentage into a train and a test file (one cannot specify explicit training and test files in the Experimenter), after the order of the data has been randomized and stratified:
@@ -82,11 +82,11 @@ Additionally, one can choose between *Classification* and *Regression*, dependin
 
 #### Datasets
 
-One can add dataset files either with an absolute path or with a relative one. The latter makes it often easier to run experiments on diﬀerent machines, hence one should check *Use relative paths*, before clicking on *Add new...*:
+One can add dataset files either with an absolute path or with a relative one. The latter makes it often easier to run experiments on different machines, hence one should check *Use relative paths*, before clicking on *Add new...*:
 
 ![](/media/Screenshot-AWS-tutorial-add-dataset.png "Screenshot-AWS-tutorial-add-dataset.png")
 
-In this example, we open the *albert* directory and choose the *data-compare.arﬀ* dataset.
+In this example, we open the *albert* directory and choose the *data-compare.arff* dataset.
 
 After clicking *Open* the file will be displayed in the datasets list. If one selects a directory and hits *Open*, then all ARFF files will be added recursively. Files can be deleted from the list by selecting them and then clicking on *Delete selected*.
 
@@ -116,7 +116,7 @@ For future re-use, one can save the current setup of the experiment to a file by
 
 ![](/media/Screenshot-AWS-tutorial-save-setup.png "Screenshot-AWS-tutorial-save-setup.png")
 
-By default, the format of the experiment files is the binary format that Java serialization oﬀers. The drawback of this format is the possible incompatibility between diﬀerent versions of Weka. A more robust alternative to the binary format is the XML format.
+By default, the format of the experiment files is the binary format that Java serialization offers. The drawback of this format is the possible incompatibility between different versions of Weka. A more robust alternative to the binary format is the XML format.
 
 Previously saved experiments can be loaded again via the *Open...* button.
 
@@ -142,7 +142,7 @@ Click on *Experiment* to analyse the results of the current experiment:
 
 <img src="/media/Screenshot-AWS-tutorial-Analyse-Result-Experiment.png" width="700"/>
 
-The number of result lines available (*Got 40 results*) is shown in the *Source* panel. This experiment consisted of 10 runs, for 4 schemes, for 1 dataset, for a total of 40 result lines. Results can also be loaded from an earlier experiment file by clicking *File* and loading the appropriate *.arﬀ* results file.
+The number of result lines available (*Got 40 results*) is shown in the *Source* panel. This experiment consisted of 10 runs, for 4 schemes, for 1 dataset, for a total of 40 result lines. Results can also be loaded from an earlier experiment file by clicking *File* and loading the appropriate *.arff* results file.
 
 Select the *Percent correct* attribute from the *Comparison field* and click *Perform test* to generate a comparison of the 4 schemes:
 
@@ -169,7 +169,7 @@ Clicking on the button for the *Output format* leads to a dialog that lets you c
 
 ![](/media/Screenshot-AWS-tutorial-analyse-precision-dialog.png "Screenshot-AWS-tutorial-analyse-precision-dialog.png")
 
-To give one more control, the “Advanced setup” allows one to bring up all the options that a result matrix oﬀers. This includes the options described above, plus options like the width of the row names, or whether to enumerate the columns and rows.
+To give one more control, the "Advanced setup" allows one to bring up all the options that a result matrix offers. This includes the options described above, plus options like the width of the row names, or whether to enumerate the columns and rows.
 
 ##### Saving the Results
 

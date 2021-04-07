@@ -13,7 +13,7 @@ Using plugin
 ------------
 
 Open the stack/movie to be analyzed in ImageJ. Draw a line along the area where you want to make a kymograph.  
-You can use ImageJ’s *native* **embedded** characteristics of the line/curve, like:
+You can use ImageJ's *native* **embedded** characteristics of the line/curve, like:
 
 ### Line type
 

@@ -16,10 +16,10 @@ GPU support is available for Linux and Windows machines with NVIDIA graphics car
 
 1.  Open `Edit > Options > TensorFlow...`
 2.  Choose the TensorFlow version matching your system
-3.  Wait until the library is downloaded and installed (a popup will tell you when it’s done)
+3.  Wait until the library is downloaded and installed (a popup will tell you when it's done)
 4.  Restart Fiji
 
-![Edit > Options > TensorFlow…](../media/Tensorflow-installer.png  "Edit > Options > TensorFlow…")
+![Edit > Options > TensorFlow...](../media/Tensorflow-installer.png  "Edit > Options > TensorFlow...")
 
 You can for example switch from CPU to GPU by finding the option which is already selected (in the screenshot, `TF 1.15.0 CPU`) and choose the same TensorFlow version but with GPU support (e.g. `TF 1.15.0 GPU`).
 
@@ -66,7 +66,7 @@ Here is a step-by-step example of a successful GPU support installation:
 -   Installed `CUDA 10.1` from [here](https://developer.nvidia.com/cuda-10.1-download-archive-base?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exenetwork)
 -   Downloaded `cuDNN 7.6.5 for CUDA 10.1` from [here](https://developer.nvidia.com/rdp/form/cudnn-download-survey) (you need to register / login)
 -   copied cuDNN files from the ZIP into CUDA as described [here](https://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html#installwindows)
--   add `/PATH/TO/Fiji.app/lib/win64/tensorflow_jni.dll` to your `PATH` (here’s a guide [how to set system variables](https://www.techjunkie.com/environment-variables-windows-10/))
+-   add `/PATH/TO/Fiji.app/lib/win64/tensorflow_jni.dll` to your `PATH` (here's a guide [how to set system variables](https://www.techjunkie.com/environment-variables-windows-10/))
 
 The variables you should have set are these two. Normally, CUDA does that for you when you install it.
 ![System Environment Variables](../media/Tensorflow_gpu_win_envvars.png)
@@ -125,9 +125,9 @@ If this is not sufficient for your setup. You can find out the ID (in PCI bus or
     | 23%   28C    P8     9W / 250W |      1MiB / 12189MiB |      0%      Default |
     +-------------------------------+----------------------+----------------------+
 
-and also set the environment variable `CUDA_​DEVICE_​ORDER`:
+and also set the environment variable `CUDA_DEVICE_ORDER`:
 
-    $ export CUDA_​DEVICE_​ORDER=&quot;PCI_BUS_ID&quot;
+    $ export CUDA_DEVICE_ORDER=&quot;PCI_BUS_ID&quot;
     $ export CUDA_VISIBLE_DEVICES=1
 
 See the [CUDA Programming Guide](http://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#env-vars) for more information.

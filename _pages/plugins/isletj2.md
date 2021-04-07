@@ -124,4 +124,4 @@ The current implementation is heavily inspired by the previous implementation do
 
 The method used in the plugin was developed and described in the following work:
 
--   Habart, D. *et al.* (2016) ‘Automated Analysis of Microscopic Images of Isolated Pancreatic Islets’, *Cell Transplantation*, 25(12), pp. 2145–2156. doi: 10.3727/096368916X692005.
+-   Habart, D. *et al.* (2016) 'Automated Analysis of Microscopic Images of Isolated Pancreatic Islets', *Cell Transplantation*, 25(12), pp. 2145–2156. doi: 10.3727/096368916X692005.

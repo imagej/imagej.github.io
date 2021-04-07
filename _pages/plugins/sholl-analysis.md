@@ -43,7 +43,7 @@ The Sholl technique[2] is used to describe neuronal arbors. This plugin can perf
 Installation
 ------------
 
-The plugin is distributed with Fiji. It installs several commands under {% include bc content='Analysis|Sholl| ' color='white'%}. **As part of an active effort to [modernize ImageJ](/news/2015-12-22_-_The_road_to_Java_8) you need to [ subscribe](How_to_follow_a_3rd_party_update_site#Add_update_sites) to the Java 8 update site to access the latest plugin version** (this will also allow you to access the newest [ImageJ capabilities](2015-12-22_-_The_road_to_Java_8#Components_which_have_already_migrated)). To do so, you can either:
+The plugin is distributed with Fiji. It installs several commands under {% include bc content='Analysis|Sholl| ' color='white'%}. **As part of an active effort to [modernize ImageJ](/news/2015-12-22_-_The_road_to_Java_8) you need to [ subscribe](How_to_follow_a_3rd_party_update_site#Add_update_sites) to the Java 8 update site to access the latest plugin version** (this will also allow you to access the newest [ImageJ capabilities](2015-12-22_-_The_road_to_Java_8#Components_which_have_already_migrated)). To do so, you can either:
 
 -   [Download the latest Fiji release](Downloads). Newer releases come pre-bundled with Java 8, and are already subscribed to the [Java-8 update site](/users/Java-8).
 -   If you have downloaded Fiji while ago and want to keep your existing installation, you will have to download Java 8 and make your [Fiji installation aware of it](Troubleshooting#Checking_the_Java_version). Then subscribe to the [Java-8 update site](/users/Java-8).
@@ -111,26 +111,26 @@ Analysis of Existing Profiles
 Parameters
 ----------
 
-The majority of parameters is shared by all the Analysis commands in the{% include bc content='Analysis|Sholl| ' color='white'%} submenu. However, some settings are specific to the type of data used as input: A segmented image, a tracing, or a previously obtained profile. When analyzing images, input values take into account the scale information of the image (which can be set using the {% include bc content='Analyze|Set Scale...' color='white'%} or {% include bc content='Image|Properties...' color='white'%} ({% include key content='press\|Shift\|P' %}), the type of image (2D or 3D), and its [active ROI](#Startup_ROI "wikilink").
+The majority of parameters is shared by all the Analysis commands in the{% include bc content='Analysis|Sholl| ' color='white'%} submenu. However, some settings are specific to the type of data used as input: A segmented image, a tracing, or a previously obtained profile. When analyzing images, input values take into account the scale information of the image (which can be set using the {% include bc content='Analyze|Set Scale...' color='white'%} or {% include bc content='Image|Properties...' color='white'%} ({% include key content='press\|Shift\|P' %}), the type of image (2D or 3D), and its [active ROI](#Startup_ROI "wikilink").
 
 #### Definition of Shells
 
--   <span id="StartRadius"></span>**Starting radius** <sup> </sup>The radius of the smallest sampling circle/sphere, i.e., the first distance to be sampled.
--   <span id="EndRadius"></span>**Ending radius** <sup> </sup>The radius of the largest (last) sampling circle/sphere. It is automatically calculated if a [line ROI is used](#Usage "wikilink"). Note that the specified distance may not be actually sampled, if *Radius step size* is not a divisor of *Ending radius*-*Starting radius*. In this case, the program will choose the largest possible distance smaller than the specified value.<span id="CA1CellPlot"></span>
+-   <span id="StartRadius"></span>**Starting radius** <sup> </sup>The radius of the smallest sampling circle/sphere, i.e., the first distance to be sampled.
+-   <span id="EndRadius"></span>**Ending radius** <sup> </sup>The radius of the largest (last) sampling circle/sphere. It is automatically calculated if a [line ROI is used](#Usage "wikilink"). Note that the specified distance may not be actually sampled, if *Radius step size* is not a divisor of *Ending radius*-*Starting radius*. In this case, the program will choose the largest possible distance smaller than the specified value.<span id="CA1CellPlot"></span>
 
 **N.B.** You can clear *Ending radius* or set it to *NaN* ("Not a Number") to sample the entire image. This is particularly useful when [batch processing](#Batch_Processing "wikilink") images with different dimensions.
 
--   <span id="StepSize"></span>**Radius step size** <sup> </sup>The sampling interval between radii of consecutive sampling circles/spheres. This value may be set to zero for continuous (1-voxel increment) measurements.
+-   <span id="StepSize"></span>**Radius step size** <sup> </sup>The sampling interval between radii of consecutive sampling circles/spheres. This value may be set to zero for continuous (1-voxel increment) measurements.
 
 **N.B.** For stacks with anisotropic voxel size, setting *Radius step size* to zero, sets the step length to the dimension of the matching isotropic voxel, i.e., the cube root of the product of the voxel dimensions (3D images) or the square root of the product of the pixel dimensions (2D images).
 
--   <span id="Restrict"></span>**Restrict analysis to hemicircle/hemisphere** <sup> </sup>This option is only available when an orthogonal radius has been created (by holding {% include key content='Shift' %} while using the <span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>). It can be used to limit the analysis to sub-compartments of the arbor.
+-   <span id="Restrict"></span>**Restrict analysis to hemicircle/hemisphere** <sup> </sup>This option is only available when an orthogonal radius has been created (by holding {% include key content='Shift' %} while using the <span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>). It can be used to limit the analysis to sub-compartments of the arbor.
 
 **N.B.** For horizontal lines, this option instructs the algorithm to measure intersections at sites equidistant from the center that have y-coordinates above/below the drawn line. For vertical lines, it instructs the plugin to measure intersections at sites equidistant from the center that have x-coordinates to the left/right of the drawn line. [320px\|right \|Main prompt (version 3.4.1), when input is a segmented image ({% include bc content='Analysis|Sholl|Sholl Analysis...' color='white'%})](File_BitmapSholl-Prompt_v3.png)
 
 #### Multiple Samples/Noise Reduction
 
--   **Samples per radius *(2D images only)*** <sup> </sup>Defines the number of measurements to be performed at each sampling circumference. These measurements are then combined into a single value according to the chosen [integration method](#SamplesIntegration "wikilink"). This strategy, a break from previous approaches, increases the accuracy of non-continuos profiles by diluting out the effect of processes extending tangent to the sampling circumference.
+-   **Samples per radius *(2D images only)*** <sup> </sup>Defines the number of measurements to be performed at each sampling circumference. These measurements are then combined into a single value according to the chosen [integration method](#SamplesIntegration "wikilink"). This strategy, a break from previous approaches, increases the accuracy of non-continuos profiles by diluting out the effect of processes extending tangent to the sampling circumference.
 
   
 Visually, this option can be imagined as the "thickness" of the sampling circumference: e.g., for a radius of 100 pixels and a value of 3 *Samples per radius*, the final number of intersections would integrate the measurements sampled at distances 99, 100 and 101.
@@ -140,11 +140,11 @@ Visually, this option can be imagined as the "thickness" of the sampling circumf
   
 Note that it would not make sense to increase the number of samples beyond the length (in pixels) of *Radius step size*. For this reason, this option is limited to a draconian (and arbitrary) maximum of 10 samples.
 
--   <span id="SamplesIntegration"></span>**Samples integration *(2D images only)*** <sup> </sup>The measure of central tendency used to combine intersection counts when multiple *Samples per radius* are used. Options are *Mean* (the default), *Median* or *Mode*.
+-   <span id="SamplesIntegration"></span>**Samples integration *(2D images only)*** <sup> </sup>The measure of central tendency used to combine intersection counts when multiple *Samples per radius* are used. Options are *Mean* (the default), *Median* or *Mode*.
 
 <!-- -->
 
--   **Ignore isolated (6-connected) voxels *(3D images only)*** <sup> </sup>If checked, single isolated voxels intersecting the surface of sampling spheres are not taken into account, which may allow for smoother profiles on noisy image stacks. However, it should be noted that connectivity in the stack volume may not reflect connectivity on the surface of a digitized sphere. Indeed, in certain contexts, it is possible (though unlikely) to obtain higher intersection counts when this filtering option is active.
+-   **Ignore isolated (6-connected) voxels *(3D images only)*** <sup> </sup>If checked, single isolated voxels intersecting the surface of sampling spheres are not taken into account, which may allow for smoother profiles on noisy image stacks. However, it should be noted that connectivity in the stack volume may not reflect connectivity on the surface of a digitized sphere. Indeed, in certain contexts, it is possible (though unlikely) to obtain higher intersection counts when this filtering option is active.
 
   
 Please keep in mind that this is just a refinement feature, and you should not expect it to mitigate the effects derived from poorly-segmented arbors.
@@ -160,8 +160,8 @@ Please keep in mind that this is just a refinement feature, and you should not e
 
 <!-- -->
 
--   **Fit profile and compute descriptors** <sup> </sup>If checked, data is fitted according to the chosen [method](#Choice_of_Methods "wikilink") and appropriate [metrics](#Metrics "wikilink") calculated automatically. If unchecked, only sampled data is plotted.
-    -   **Show fitting details** <sup> </sup>Choose this option to have all of the parameters of the simplex fitting printed to the Log window. The {% include wikipedia title='Coefficient of determination' text='coefficient of determination'%} (*R<sup>2</sup>*, a measure of goodness of fit) is always stored in the *Sholl Results* table even when this option is not selected.
+-   **Fit profile and compute descriptors** <sup> </sup>If checked, data is fitted according to the chosen [method](#Choice_of_Methods "wikilink") and appropriate [metrics](#Metrics "wikilink") calculated automatically. If unchecked, only sampled data is plotted.
+    -   **Show fitting details** <sup> </sup>Choose this option to have all of the parameters of the simplex fitting printed to the Log window. The {% include wikipedia title='Coefficient of determination' text='coefficient of determination'%} (*R<sup>2</sup>*, a measure of goodness of fit) is always stored in the *Sholl Results* table even when this option is not selected.
 
 {% include tip tip='[Complementary Tools](#Complementary_Tools "wikilink") describes how to extend curve fitting beyond default options.' %}
 
@@ -169,8 +169,8 @@ Please keep in mind that this is just a refinement feature, and you should not e
 
 <span id="Sholl_Methods"></span>The [type of profile(s)](#MethodsTable "wikilink") to be obtained. *Linear* (profile without normalization), or normalized profiles: *Linear-norm*, *Semi-log*, or *Log-log*.
 
--   **Polynomial** <sup> </sup> Specifies the degree of the [polynomial](#MethodsTable "wikilink") to be fitted to the *Linear* profile[4]. While the polynomial of best approximation, or "best fit", should be empirically determined for each analyzed cell type, it is possible to ask the plugin to predict the order of the fitting polynomial (or at least try) using the choice *Best fitting degree*. In this case, the plugin will loop through all the available choices of polynomials, perform each fit in the background and choose the one with the highest coefficient of determination.
--   **Most informative** <sup> </sup> Select this option when you cannot predict which type of normalized profile best describes the dataset. If chosen, the plugin will use the [Determination ratio](#Dratio "wikilink") to determine which of *Semi-log* or *Log-log* methods is more appropriate. *Linear-norm* is not performed.  
+-   **Polynomial** <sup> </sup> Specifies the degree of the [polynomial](#MethodsTable "wikilink") to be fitted to the *Linear* profile[4]. While the polynomial of best approximation, or "best fit", should be empirically determined for each analyzed cell type, it is possible to ask the plugin to predict the order of the fitting polynomial (or at least try) using the choice *Best fitting degree*. In this case, the plugin will loop through all the available choices of polynomials, perform each fit in the background and choose the one with the highest coefficient of determination.
+-   **Most informative** <sup> </sup> Select this option when you cannot predict which type of normalized profile best describes the dataset. If chosen, the plugin will use the [Determination ratio](#Dratio "wikilink") to determine which of *Semi-log* or *Log-log* methods is more appropriate. *Linear-norm* is not performed.  
     The *Best fitting degree* and *Most informative* choices are obviously more computer-intensive and can be monitored by activating the *Show fitting details* checkbox.
 -   <span id="Normalizer"></span>**Normalizer** The property of the sampling shell to be used in the normalization of *Linear-norm*, *Semi-log*, and *Log-log* profiles. It is [described below](#MethodsTable "wikilink").
 
@@ -178,10 +178,10 @@ Please keep in mind that this is just a refinement feature, and you should not e
 
 <figure><img src="/media/ShollResultAsROIs.png" title="Intersection points and sampling shells can be retrieved as ROIs using {% include bc content='Image|Overlay|To ROI Manager' color='white'%}. Intersection points are placed at edges of detected clusters of foreground pixels, not their center." width="400" alt="Intersection points and sampling shells can be retrieved as ROIs using {% include bc content='Image|Overlay|To ROI Manager' color='white'%}. Intersection points are placed at edges of detected clusters of foreground pixels, not their center." /><figcaption aria-hidden="true">Intersection points and sampling shells can be retrieved as ROIs using {% include bc content='Image|Overlay|To ROI Manager' color='white'%}. Intersection points are placed at edges of detected clusters of foreground pixels, not their center.</figcaption></figure>
 
--   **Create intersections mask** <sup> </sup>If checked, a 16/32–bit maximum intensity projection of the analyzed image is generated in which the measured arbor is painted according to its Sholl profile. The type of data (*Raw*, i.e., sampled or *Fitted*) is displayed in the image subtitle and can be specified in {% include bc content='Analysis|Sholl|Metrics & Options...' color='white'%} or using the *Options...* command in the *More»* drop-down menu.  
+-   **Create intersections mask** <sup> </sup>If checked, a 16/32–bit maximum intensity projection of the analyzed image is generated in which the measured arbor is painted according to its Sholl profile. The type of data (*Raw*, i.e., sampled or *Fitted*) is displayed in the image subtitle and can be specified in {% include bc content='Analysis|Sholl|Metrics & Options...' color='white'%} or using the *Options...* command in the *More»* drop-down menu.  
     NB: The default Lookup Table (LUT) used by the mask can be changed using {% include bc content='Image|Lookup Tables|' color='white'%}. The background color \[gray level: 0 (black) to 255 (white)\] can also be set in {% include bc content='Metrics & Options...' color='white'%}, or at any later point using {% include bc content='Image|Color|Edit Lut...' color='white'%} WYSIWYG versions (RGB images) of these masks can be otained using by pressing {% include key content='press\|Shift\|F' %} ({% include bc content='Image|Overlay|Flatten' color='white'%}) or by running {% include bc content='Analyze|Tools|Calibration Bar...' color='white'%}
--   **Overlay sampling shells and intersection points'' (2D images only)**'' <sup> </sup>If checked, two sets of ROIS are added to the image overlay: 1) concentric shells matching sampled distances (circular ROIs or composite ROIs when using hemicircles); and 2) Multipoint ROIs at intersection sites between shells and clusters of foreground pixels.
--   **Save results to** <sup> </sup> If checked, all the results (with the exception of the *[Sholl Table](#Metrics "wikilink")*) are saved to the specified directory. These include: 1) Sholl plots (saved as PNG images), 2) A table containing detailed data and 3) The Sholl mask. Files are named after the image filename and analysis method. Saving options can be specified in {% include bc content='Analysis|Sholl|Metrics & Options...' color='white'%} (*Options...* command in the *More»* drop-down menu).
+-   **Overlay sampling shells and intersection points'' (2D images only)**'' <sup> </sup>If checked, two sets of ROIS are added to the image overlay: 1) concentric shells matching sampled distances (circular ROIs or composite ROIs when using hemicircles); and 2) Multipoint ROIs at intersection sites between shells and clusters of foreground pixels.
+-   **Save results to** <sup> </sup> If checked, all the results (with the exception of the *[Sholl Table](#Metrics "wikilink")*) are saved to the specified directory. These include: 1) Sholl plots (saved as PNG images), 2) A table containing detailed data and 3) The Sholl mask. Files are named after the image filename and analysis method. Saving options can be specified in {% include bc content='Analysis|Sholl|Metrics & Options...' color='white'%} (*Options...* command in the *More»* drop-down menu).
     -   **Do not display saved files** If checked, saved files are directly saved to disk and are not displayed. Activate this option when [batch processing](#Batch_Processing "wikilink") files.
 
 {% include tip tip='In the dialog prompts of ""Sholl Analysis"", bold headings are clickable URLs pointing to the respective sections of this manual. In addition, relevant tooltips are displayed in the ImageJ status bar when specifying key options.' %}
@@ -199,26 +199,26 @@ Sholl Plots
 
 <span id="MethodsTable"></span>
 
-<table><thead><tr class="header"><th><p> </p></th><th><p>Method</p></th><th><p>Fit</p></th><th><p>Description</p></th></tr></thead><tbody><tr class="odd"><td><p><span id="eq1">(1)</span>  </p></td><td><p>Linear</p></td><td><p>   <i>N</i> = a + br + cr<sup>2</sup> + dr<sup>3</sup> + er<sup>4</sup> + fr<sup>5</sup> + ... + xr<sup>n</sup>  </p></td><td><p>   <br />
+<table><thead><tr class="header"><th><p> </p></th><th><p>Method</p></th><th><p>Fit</p></th><th><p>Description</p></th></tr></thead><tbody><tr class="odd"><td><p><span id="eq1">(1)</span>  </p></td><td><p>Linear</p></td><td><p>   <i>N</i> = a + br + cr<sup>2</sup> + dr<sup>3</sup> + er<sup>4</sup> + fr<sup>5</sup> + ... + xr<sup>n</sup>  </p></td><td><p>   <br />
 Outputs a <em>N vs Distance</em> profile. Data is fitted to a polynomial function<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. <a href="#CriticalRadius" title="wikilink">Critical radius</a>, <a href="#CriticalValue" title="wikilink">Critical value</a> and <a href="#MeanValueOfFunction" title="wikilink">Mean value of function</a> are calculated<br />
- </p></td></tr><tr class="even"><td><p><span id="eq2">(2)</span>  </p></td><td><p>Linear-norm</p></td><td><p>   <em>N/S</em> = a r<sup>b</sup></p></td><td><p> <br />
+ </p></td></tr><tr class="even"><td><p><span id="eq2">(2)</span>  </p></td><td><p>Linear-norm</p></td><td><p>   <em>N/S</em> = a r<sup>b</sup></p></td><td><p> <br />
 Outputs a <i>N/S vs Distance</i> profile. Points are fitted to a power function. It is an intermediate representation of the data that can be used to gauge the choice of <a href="#Normalizer" title="wikilink">normalizer</a>. Once plotted under a logarithmic scale the Linear-norm curve is similar to the Semi-log profile<br />
- </p></td></tr><tr class="odd"><td><p><span id="eq3">(3)</span>  </p></td><td><p>Semi-log</p></td><td><p>   log(<em>N/S</em>) = -k r + m</p></td><td><p> <br />
+ </p></td></tr><tr class="odd"><td><p><span id="eq3">(3)</span>  </p></td><td><p>Semi-log</p></td><td><p>   log(<em>N/S</em>) = -k r + m</p></td><td><p> <br />
 Outputs a <i>log(N/S) vs Distance</i> profile. A linear regression is fitted to the sampled data. The <a href="#ShollDecay" title="wikilink">Sholl regression coefficient</a> (<em>k</em>) is calculated<br />
- </p></td></tr><tr class="even"><td><p><span id="eq4">(4)</span>  </p></td><td><p>Log-log</p></td><td><p>   log(<em>N/S</em>) = -k × log(r) + m</p></td><td><p> <br />
+ </p></td></tr><tr class="even"><td><p><span id="eq4">(4)</span>  </p></td><td><p>Log-log</p></td><td><p>   log(<em>N/S</em>) = -k × log(r) + m</p></td><td><p> <br />
 Outputs a <i>log(N/S) vs log(Distance)</i> profile. Data is also fitted to a straight line. This is an alternative approach<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> of obtaining a relevant <a href="#ShollDecay" title="wikilink">regression coefficient</a>, when the Semi-log method returns a poor fit<br />
- </p></td></tr><tr class="odd"><td></td><td></td><td></td><td></td></tr></tbody></table><section class="footnotes" role="doc-endnotes"><hr /><ol><li id="fn1" role="doc-endnote"></li><li id="fn2" role="doc-endnote"></li></ol></section>
+ </p></td></tr><tr class="odd"><td></td><td></td><td></td><td></td></tr></tbody></table><section class="footnotes" role="doc-endnotes"><hr /><ol><li id="fn1" role="doc-endnote"></li><li id="fn2" role="doc-endnote"></li></ol></section>
 
 <span style="display: inline-block; width: 25px">***N***</span> For 2D images, the <u>N</u>umber of clusters of pixels (8–connected) intersecting the circumference of radius *r*  
-<span style="display: inline-block; width: 25px"> </span> For 3D images, the <u>N</u>umber of clusters of voxels (26-connected) intersecting the surface of the sphere of radius *r*
+<span style="display: inline-block; width: 25px"> </span> For 3D images, the <u>N</u>umber of clusters of voxels (26-connected) intersecting the surface of the sphere of radius *r*
 
 <span style="display: inline-block; width: 25px">***r***</span> Distance from center of analysis (<u>r</u>adius of Sholl circle/sphere)
 
 <span style="display: inline-block; width: 25px">***log***</span> Natural logarithm, the logarithm to the base *e*
 
 <span style="display: inline-block; width: 25px">***S***</span>The [chosen property ](#Choice_of_Methods "wikilink") of the sampling shell to be used in the normalization of *Linear-norm*, *Semi-log*, and *Log-log* profiles.  
-<span style="display: inline-block; width: 25px"> </span>For 2D images, the *Perimeter* of the sampling circumference (2πr) or the *Area* of the corresponding circle (πr<sup>2</sup>)  
-<span style="display: inline-block; width: 25px"> </span>For 3D images, the *Surface* of the sampling sphere (4πr<sup>2</sup>) or its respective *Volume* (4/3πr<sup>3</sup>)  
+<span style="display: inline-block; width: 25px"> </span>For 2D images, the *Perimeter* of the sampling circumference (2πr) or the *Area* of the corresponding circle (πr<sup>2</sup>)  
+<span style="display: inline-block; width: 25px"> </span>For 3D images, the *Surface* of the sampling sphere (4πr<sup>2</sup>) or its respective *Volume* (4/3πr<sup>3</sup>)  
 **N.B.** A third [normalization option](#Normalizer "wikilink") is also available when performing [non-continuous sampling](#StepSize "wikilink"): *Annulus*/*Spherical shell*. In this case, the normalization is performed against the area of the annulus formed between the circumferences at *r* ± *Radius step size*/2 (2D images), or against the volume between the two spheres at *r* ± *Radius step size*/2 (3D images).  
 
 Metrics
@@ -727,7 +727,7 @@ The plugin is designed for the analysis of a wide diversity of arbors and it is 
 <dl>
 <dd>
 
-Select the table, then choose <span style="border-bottom:1px dotted #ccc;">File▷ Save As…</span>The filename extension can be specified using the *More » Options...* command (see the [ImageJ User Guide](https://imagej.net/docs/guide/) for details). Single cells cannot be modified from within ImageJ, but custom extensions (e.g., .csv, .xls or .ods) will allow the table to be imported by other spreadsheet applications.
+Select the table, then choose <span style="border-bottom:1px dotted #ccc;">File▷ Save As...</span>The filename extension can be specified using the *More » Options...* command (see the [ImageJ User Guide](https://imagej.net/docs/guide/) for details). Single cells cannot be modified from within ImageJ, but custom extensions (e.g., .csv, .xls or .ods) will allow the table to be imported by other spreadsheet applications.
 
 </dd>
 </dl>
@@ -763,7 +763,7 @@ The Sholl mask ([see example of CA1 cell](#CA1CellMask "wikilink")) is simply an
 <dl>
 <dd>
 
-An anisotropic voxel size will have a strong impact on [step size](#StepSize "wikilink"). On the other hand, 2D and 3D images can be sampled differently depending on the [options chosen](#Parameters "wikilink"). If <span style="border-bottom:1px dotted #ccc;">Image▷ Properties…</span> ({% include key content='press\|Shift\|P' %}) reports the appropriate spatial calibration, make sure to read [Multiple Samples and Noise Reduction](#Multiple_Samples_and_Noise_Reduction "wikilink") before deciding which type of images to use.
+An anisotropic voxel size will have a strong impact on [step size](#StepSize "wikilink"). On the other hand, 2D and 3D images can be sampled differently depending on the [options chosen](#Parameters "wikilink"). If <span style="border-bottom:1px dotted #ccc;">Image▷ Properties...</span> ({% include key content='press\|Shift\|P' %}) reports the appropriate spatial calibration, make sure to read [Multiple Samples and Noise Reduction](#Multiple_Samples_and_Noise_Reduction "wikilink") before deciding which type of images to use.
 
 </dd>
 </dl>

@@ -11,16 +11,16 @@ The test machine
 
 The computer used for these tests is the following:
 
-` Mac¬Pro`  
-` mi-2010`  
-` Processor  2 x 2.66 GHz 6-Core Intel Xeon`  
-` Memory  24 GB 1333 MHz DDR3 ECC`  
-` Software  Mac OS X Lion 10.7.5 (11G63)`
+* Mac Pro
+* mi-2010
+* Processor  2 x 2.66 GHz 6-Core Intel Xeon
+* Memory  24 GB 1333 MHz DDR3 ECC
+* Software  Mac OS X Lion 10.7.5 (11G63)
 
 Time of execution.
 ------------------
 
-The tests reported here were run on an Apple MacPro, 2 x 2.66 GHz 6-Core Intel Xeon, 24 Go 1333 MHz DDR3, running Mac OS X v10.7.5, with Java 1.6. The detectors instantiated were tamed to use only 1 thread. Unless indicated, the median filter and the sub-pixel localization were not done.
+The tests reported here were run on an Apple Mac Pro, 2 x 2.66 GHz 6-Core Intel Xeon, 24 Go 1333 MHz DDR3, running Mac OS X v10.7.5, with Java 1.6. The detectors instantiated were tamed to use only 1 thread. Unless indicated, the median filter and the sub-pixel localization were not done.
 
 ### The DoG & LoG detectors.
 

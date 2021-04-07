@@ -14,4 +14,4 @@ These screenshots show the results on an example file:
 
 <references/>
 
-[1] {% include cite content='journal' author='Alejandro F. Frangi, Wiro J. Niessen, Koen L. Vinc and Max A. Viergever' title='Multiscale Vessel Enhancement Filtering' journal='Medical Image Computing and Computer-Assisted Interventation — MICCAI’98 Lecture Notes in Computer Science' year='1998' volume='1496/1998' page='130' url='http://www.tecn.upf.es/\~afrangi/articles/miccai1998.pdf' %}
+[1] {% include cite content='journal' author='Alejandro F. Frangi, Wiro J. Niessen, Koen L. Vinc and Max A. Viergever' title='Multiscale Vessel Enhancement Filtering' journal='Medical Image Computing and Computer-Assisted Interventation — MICCAI'98 Lecture Notes in Computer Science' year='1998' volume='1496/1998' page='130' url='http://www.tecn.upf.es/\~afrangi/articles/miccai1998.pdf' %}

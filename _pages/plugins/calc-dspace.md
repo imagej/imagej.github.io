@@ -12,7 +12,7 @@ This plugin can be used to quickly calculate the interplanar spacing values *(d)
 **How it works**
 ----------------
 
-Use imageJ’s circle tool (shift + oval tool) to measure the spot/ring patterns concentric to the (000) direct beam. From the area measurement, the radius (G) is found. From G = 1/d in reciprocal space, the d-spacing is calculated for each measurement made. This plugin has three different modes in which it can operate.
+Use imageJ's circle tool (shift + oval tool) to measure the spot/ring patterns concentric to the (000) direct beam. From the area measurement, the radius (G) is found. From G = 1/d in reciprocal space, the d-spacing is calculated for each measurement made. This plugin has three different modes in which it can operate.
 
 <figure><img src="/media/Modes.jpeg" title="Modes.jpeg" width="300" alt="Modes.jpeg" /><figcaption aria-hidden="true">Modes.jpeg</figcaption></figure>
 
@@ -27,9 +27,9 @@ The final mode is **Overlay & Crop**, which is more of a publication-ready mode 
 **Image Requirements**
 ----------------------
 
-You need to have a properly calibrated diffraction pattern for the calculations to work. Most TEMs use Gatan’s Digital Micrograph software for image collection. If you are using DM, then it is likely that this plugin will work right away, or will work with the help of your TEM technician.
+You need to have a properly calibrated diffraction pattern for the calculations to work. Most TEMs use Gatan's Digital Micrograph software for image collection. If you are using DM, then it is likely that this plugin will work right away, or will work with the help of your TEM technician.
 
-The preferred image is a .dm3 file (Gatan’s format) that is properly calibrated in reciprocal space (see Gatan’s documentation). The easiest way to check this is that the scale bar in your images is displayed in DM with 1/nm units.
+The preferred image is a .dm3 file (Gatan's format) that is properly calibrated in reciprocal space (see Gatan's documentation). The easiest way to check this is that the scale bar in your images is displayed in DM with 1/nm units.
 
 **Strontium Titanate Example**
 ------------------------------
@@ -41,6 +41,6 @@ The example below is from a single crystalline STO (strontium titanate) sample. 
 
 1.  If you hold down both control and shift while clicking on one of the white squares on the circle and dragging, the circle expands and contracts concentrically.
 2.  The centroid is there to display the x and y position of the center of the circles you are drawing. Use it to make sure it is at the center of the direct spot (000), and that it stays there throughout your measurements.
-3.  Another way to verify your image calibrations have been done properly is to call up the image info window in imageJ (just type the letter “i”) and look for a line like this: *root.ImageList.1.ImageData.Calibrations.Dimension.0.Units = 1/nm*. If it = nm, then it won’t work.
+3.  Another way to verify your image calibrations have been done properly is to call up the image info window in imageJ (just type the letter "i") and look for a line like this: *root.ImageList.1.ImageData.Calibrations.Dimension.0.Units = 1/nm*. If it = nm, then it won't work.
 4.  You can enable a somewhat useful text window that summarizes your results by opening up the plugin in a text editor and deleting the leading slashes on line 29.
 5.  The plugin may not work right the first time you try to use it, this would be because you do not have the area measurement enabled. Running the plugin will set the measurements it needs, so if you redo your measurements with the circle tool, it should work the second time.

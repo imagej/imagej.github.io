@@ -27,7 +27,7 @@ Add the project's update site to your Fiji installation
 
 Please refer to the [ **tutorial**](/update-sites) on how to add our update site to your Fiji installation. Our update site has the following URL:
 
-` `**`http://sites.imagej.net/Alex-krull/`**
+` `**`http://sites.imagej.net/Alex-krull/`**
 
 ![](/media/LLTT Install4.jpg "LLTT_Install4.jpg")
 
@@ -267,7 +267,7 @@ The files are created in the working directory. Each file begins with some lines
 Example Data
 ============
 
-This link contains the data used to generate this tutorial, and a two channel 3D data set to try. [Example\_Data.zip‎](/media/Example Data.zip‎)
+This link contains the data used to generate this tutorial, and a two channel 3D data set to try. [Example\_Data.zip](/media/Example Data.zip)
 
 License
 =======

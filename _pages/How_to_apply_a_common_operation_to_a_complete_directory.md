@@ -46,26 +46,26 @@ The problem now is that this macro contains the verbatim name of the file you sa
 
 The solution is to wrap the macro in a function which takes a *placeholder* for the file name. Let's call that function *action*:
 
-`function action(output, filename) {`  
-`        makeRectangle(10, 10, 300, 180);`  
-`        run("Crop");`  
-`        saveAs("Jpeg", output + filename);`  
+`function action(output, filename) {`  
+`        makeRectangle(10, 10, 300, 180);`  
+`        run("Crop");`  
+`        saveAs("Jpeg", output + filename);`  
 `}`
 
 As you can see, the full path to the file we saved which was enclosed in quotes by the Recorder (*"/home/fiji/images/clown.jpg"*) was cut down to the full path to the output directory and the file name appended with a *plus* operator (*output + filename*), which are passed as so-called *parameters* to the function.
 
 The reason is that you want ImageJ to save the processed image with a variable name. For a single image, the function would be called like this:
 
-`action("home/fiji/output-images/", "bridge.gif");`
+`action("home/fiji/output-images/", "bridge.gif");`
 
 Now, let's enhance the function so that it opens the image itself, and also closes the image after it saved the result:
 
-`function action(input, output, filename) {`  
-`        open(input + filename);`  
-`        makeRectangle(10, 10, 300, 180);`  
-`        run("Crop");`  
-`        saveAs("Jpeg", output + filename);`  
-`        close();`  
+`function action(input, output, filename) {`  
+`        open(input + filename);`  
+`        makeRectangle(10, 10, 300, 180);`  
+`        run("Crop");`  
+`        saveAs("Jpeg", output + filename);`  
+`        close();`  
 `}`
 
 The function takes three parameters now: the input and output directories and the file name. These need to be three parameters because the image should be saved into a different directory than the original came from (so that the output images will not be mistaken for input images in subsequent runs of the final macro).
@@ -75,12 +75,12 @@ Step 3: Iterating over all images in a given directory
 
 After defining the generic *action* function, you can call it on each image in an input directory:
 
-`input = "/home/fiji/input/";`  
-`output = "/home/fiji/images/";`  
+`input = "/home/fiji/input/";`  
+`output = "/home/fiji/images/";`  
   
-`list = getFileList(input);`  
-`for (i = 0; i < list.length; i++){`  
-`        action(input, output, list[i]);`  
+`list = getFileList(input);`  
+`for (i = 0; i < list.length; i++){`  
+`        action(input, output, list[i]);`  
 `}`
 
 Now, this is a little more complicated: First, a variable *input* is defined. The reason is that the input directory is not only needed to get the list of images, but also to pass to the *action* function.
@@ -95,13 +95,13 @@ The line executed in the *for* loop calls the *action* function with the *i*th f
 
 Sometimes, ImageJ can get confused when it has to open or close windows and perform operations on them, in which case it can appear as if operations are called out of order. To prevent that, enable the *batch mode*:
 
-`input = "/home/fiji/input/";`  
-`output = "/home/fiji/images/";`  
+`input = "/home/fiji/input/";`  
+`output = "/home/fiji/images/";`  
   
-`setBatchMode(true); `  
-`list = getFileList(input);`  
-`for (i = 0; i < list.length; i++){`  
-`        action(input, output, list[i]);`  
+`setBatchMode(true); `  
+`list = getFileList(input);`  
+`for (i = 0; i < list.length; i++){`  
+`        action(input, output, list[i]);`  
 `}`
 
 setBatchMode(false);
@@ -115,7 +115,7 @@ To be able to use this plugin, you need to save the macro into a file; this macr
 
 In our case, the file would simply contain these lines:
 
-`makeRectangle(10, 10, 300, 180);`  
+`makeRectangle(10, 10, 300, 180);`  
 `run("Crop");`
 
 Find the *Multiple ImageProcessor* plugin in the *Process* menu:

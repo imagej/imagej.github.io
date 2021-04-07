@@ -45,13 +45,13 @@ Please see the [headless scripting guide](/scripting/headless).
 
 To run a *macro* in headless mode, use the `-macro` command line argument along with the `--headless` option, as follows:
 
-` ImageJ --headless -macro path-to-Macro.ijm`
+` ImageJ --headless -macro path-to-Macro.ijm`
 
 If the macro resides in ImageJ's macro directory, it is possible to specify the macro name instead of the actual file path. The file extension is always very recommended but for backwards compatibility, it is not strictly required *only* when specifying the macro name instead of a path.
 
 You can even pass parameters to the macro; e.g.:
 
-` ./ImageJ-win64.exe --headless --console -macro ./RunBatch.ijm 'folder=../folder1 parameters=a.properties output=../samples/Output'`
+` ./ImageJ-win64.exe --headless --console -macro ./RunBatch.ijm 'folder=../folder1 parameters=a.properties output=../samples/Output'`
 
 In that case, the RunBatch.ijm file should be something like:
 

@@ -35,7 +35,7 @@ Using VisBio
 
 To use VisBio you must first import an Image Sequence. To do so, Select {% include bc content='File | Import | Image Sequence'%} and select the file of images you wish to use.
 
-`After you have your images imported, follow the following directions: `
+`After you have your images imported, follow the following directions: `
 
 -   Select the imported image sequence
 -   Select {% include bc content='Plugins | VisBio | Ortho Stack'%}

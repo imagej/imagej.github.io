@@ -24,7 +24,7 @@ Why do we use Maven?
 ====================
 
 -   We need something to take source code and package it into a useable format, *i.e.* jar files.
--   Maven organizes dependencies for us, declaring those dependencies… as opposed to manually tracking each individual piece-of-the-puzzle.
+-   Maven organizes dependencies for us, declaring those dependencies... as opposed to manually tracking each individual piece-of-the-puzzle.
 -   Maven is a central storage location for all developers, providing the same tools to many folks.
 -   Maven has an established concept of immutable release and development versioning – both of which are essential for reproducible science.
 
@@ -139,7 +139,7 @@ How to find a dependency's groupId/artifactId/version (GAV)?
 
 Most popular open source libraries upon which you might want to depend are stored in the [Maven Central repository](https://search.maven.org/). However, the ImageJ and Fiji JARs are not yet stored there, but in the [SciJava Maven repository](Architecture#Maven_repositories). Fortunately, you can search both at once, by visiting:
 
-` `[`https://maven.scijava.org/`](https://maven.scijava.org/)
+` `[`https://maven.scijava.org/`](https://maven.scijava.org/)
 
 For example, let's suppose you want to depend on the [snakeyaml](http://snakeyaml.org) library. Typing "snakeyaml" into the search box at [maven.scijava.org](https://maven.scijava.org) tells us to use a `groupId` of `org.yaml`, `artifactId` of `snakeyaml`, with available versions ranging from `1.4` to `1.10`. In the case of many results, you can click the "Drill down" link to view more details of that specific GAV combination. You can also click an entry to get a formatted `dependency` block for direct copy-pasting into your POM.
 
@@ -160,8 +160,8 @@ If there are no public repositories containing your dependency, you have two opt
 
 Finally, for local testing you can [install the dependency into your local Maven repository cache yourself](https://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html). The command is `mvn install:install-file`. For example, if you have a library `foo.jar` to install, you could run:
 
-` mvn install:install-file -Dfile=/path/to/foo.jar -DgroupId=org.foo \`  
-`   -DartifactId=foo -Dversion=1.0.0 -Dpackaging=jar`
+` mvn install:install-file -Dfile=/path/to/foo.jar -DgroupId=org.foo \`  
+`   -DartifactId=foo -Dversion=1.0.0 -Dpackaging=jar`
 
 For the `groupId`, it is typically best to use the reversed domain name of the library's web site. For libraries that are not explicitly versioned, you may want to use a datestamp such as "20120920" for the `version`, rather than inventing your own versioning scheme.
 

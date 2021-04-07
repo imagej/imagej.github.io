@@ -259,7 +259,7 @@ A two Image operation that uses a SelectionFunction -
 
 ImgLibProcessor also exposes a functional API for further use. Specifically the various assign() and transform() methods allows one to change an ImgLibProcessor's Image data passing functions as needed.
 
-This can all be tied together in a plugin demo. The following code works on a float image whose values  range between 0 and 1. When the plugin is run the data of the current window image is transformed. Someone who knows more of what a user would really like to do on an image can extend this as desired.
+This can all be tied together in a plugin demo. The following code works on a float image whose values  range between 0 and 1. When the plugin is run the data of the current window image is transformed. Someone who knows more of what a user would really like to do on an image can extend this as desired.
 
     import ij.IJ;
     import ij.ImagePlus;
@@ -328,134 +328,134 @@ Section 5 contains miscellaneous notes
 CHANGES ALREADY MADE to allow ImgLib data to be correctly updated by IJ1
 ------------------------------------------------------------------------
 
-  Reflects source code changes as of 12-17-10  
+  Reflects source code changes as of 12-17-10  
   
-**  Package ij:  
+**  Package ij:  
 **  
-  ImagePlus  
-     Added another image type : ImagePlus.OTHER  
-     Updated getBitDepth() to calc bits per pixel for OTHER type images  
-     Updated getBytesPerPixel() to calc number of bytes per pixel for OTHER type images  
-     Added double getActualBytesPerPixel() to support non-byte-aligned pixel types  
-     Updated setType() to allow OTHER type  
-     Updated getFileInfo() to populate self when dealing with OTHER type images  
-     Updated copy(boolean cut) to use getActualBytesPerPixel() in data byte use calculations  
-     Updated getPixel() to encode pixel data for OTHER type images  
+  ImagePlus  
+     Added another image type : ImagePlus.OTHER  
+     Updated getBitDepth() to calc bits per pixel for OTHER type images  
+     Updated getBytesPerPixel() to calc number of bytes per pixel for OTHER type images  
+     Added double getActualBytesPerPixel() to support non-byte-aligned pixel types  
+     Updated setType() to allow OTHER type  
+     Updated getFileInfo() to populate self when dealing with OTHER type images  
+     Updated copy(boolean cut) to use getActualBytesPerPixel() in data byte use calculations  
+     Updated getPixel() to encode pixel data for OTHER type images  
   
-**  Package ij.gui:  
+**  Package ij.gui:  
 **  
-  ImageCanvas  
-    Updated setDrawingColor() to have a subcase for OTHER type images  
+  ImageCanvas  
+    Updated setDrawingColor() to have a subcase for OTHER type images  
   
-  ImageWindow  
-    Updated createSubtitle() to calc bit depth and image size from ImagePlus rather than by type  
+  ImageWindow  
+    Updated createSubtitle() to calc bit depth and image size from ImagePlus rather than by type  
   
-  Wand  
-    Change code to not use primitive array access for obtaining pixel values. To do so needed to make  
-    minor changes to constructor, minor change to autoOutline(), and rewrote getPixel().  
+  Wand  
+    Change code to not use primitive array access for obtaining pixel values. To do so needed to make  
+    minor changes to constructor, minor change to autoOutline(), and rewrote getPixel().  
   
-**  Package ij.io:  
- **
+**  Package ij.io:  
+**
 
-  FileInfo  
-    Added file type GRAY64\_SIGNED  
-    Modified getBytesPerPixel() to support GRAY64\_SIGNED and GRAY12\_UNSIGNED  
-    Modified getType() to return values for GRAY64\_SIGNED and GRAY12\_UNSIGNED  
+  FileInfo  
+    Added file type GRAY64\_SIGNED  
+    Modified getBytesPerPixel() to support GRAY64\_SIGNED and GRAY12\_UNSIGNED  
+    Modified getType() to return values for GRAY64\_SIGNED and GRAY12\_UNSIGNED  
   
-  ImportDialog  
-    Added “12-bit Unsigned” to static class variable “types”.  
-    Updated getFileInfo() to identify GRAY12\_UNSIGNED type files  
+  ImportDialog  
+    Added "12-bit Unsigned" to static class variable "types".  
+    Updated getFileInfo() to identify GRAY12\_UNSIGNED type files  
   
-**  Package ij.measure:  
+**  Package ij.measure:  
 **  
-  Calibration  
-    Added a method called isSameAs(Calibration other). We rely on this for numerous tests.  
+  Calibration  
+    Added a method called isSameAs(Calibration other). We rely on this for numerous tests.  
   
-**  Package ij.plugin:  
+**  Package ij.plugin:  
 **  
-  FolderOpener  
-    Made minor change to the run() method to support OTHER type images  
-    Modified setStackInfo() to use new bytesPerPixel calculation methods  
+  FolderOpener  
+    Made minor change to the run() method to support OTHER type images  
+    Modified setStackInfo() to use new bytesPerPixel calculation methods  
   
-  ListVirtualStack  
-   Updated showDialog() to use new bytesPerPixel calculation methods  
+  ListVirtualStack  
+   Updated showDialog() to use new bytesPerPixel calculation methods  
   
-**  Package ij.plugin.filter:  
+**  Package ij.plugin.filter:  
 **  
-  ImageMath  
-    Many small edits to use setf()/getf() rather than direct float\[\] access. Also rather than instanceof  
-    FloatProcessor use ip.isFloatingType().  
-    Modify applyMacro case logic to test instanceof SomeProcessor rather than using getBitDepth()
+  ImageMath  
+    Many small edits to use setf()/getf() rather than direct float\[\] access. Also rather than instanceof  
+    FloatProcessor use ip.isFloatingType().  
+    Modify applyMacro case logic to test instanceof SomeProcessor rather than using getBitDepth()
 
-  ParticleAnalyzer  
-    Added a type called OTHER. Made many small edits to support.  
-    Moved away from direct primitive array access for pixel values and rather use getf()/etc. as needed.  
-    There some places tagged with “WAYNE PLEASE CHECK” for further review  
-    Changed setThresholdLevels() to identify images of OTHER type and also set fillColor correctly  
-    Changed getStatistics() to delegate to ip.getStatistics() rather than checking image type
+  ParticleAnalyzer  
+    Added a type called OTHER. Made many small edits to support.  
+    Moved away from direct primitive array access for pixel values and rather use getf()/etc. as needed.  
+    There some places tagged with "WAYNE PLEASE CHECK" for further review  
+    Changed setThresholdLevels() to identify images of OTHER type and also set fillColor correctly  
+    Changed getStatistics() to delegate to ip.getStatistics() rather than checking image type
 
-  PluginFilterRunner  
-    Updated checkImagePlus() to have a switch case for images of type OTHER  
+  PluginFilterRunner  
+    Updated checkImagePlus() to have a switch case for images of type OTHER  
   
-**  Package ij.plugin.frame:  
+**  Package ij.plugin.frame:  
 **  
-  ContrastAdjuster  
-    Minor edit of setupNewImage() case logic to support OTHER type images  
-    Minor edit of reset() case logic to support OTHER type images  
-    Update the calculation of decimal places to display for OTHER type images in setMinAndMax()  
-    Update the calculation of decimal places to display for OTHER type images in setWindowLevel()  
+  ContrastAdjuster  
+    Minor edit of setupNewImage() case logic to support OTHER type images  
+    Minor edit of reset() case logic to support OTHER type images  
+    Update the calculation of decimal places to display for OTHER type images in setMinAndMax()  
+    Update the calculation of decimal places to display for OTHER type images in setWindowLevel()  
   
-**  Package ij.process:  
+**  Package ij.process:  
 **  
-  ImageProcessor  
-    Changed visibility of showProgress to public. We have a ProgressTracker class in IJ2 that updates an ip's progress indicator.  
-    Changed visibility of getBilinearInterpolatedPixel() to public  
-    Changed visibility of resetPixels() to protected  
-    Changed visibility of create8BitImage() to protected  
-    Added abstract methods for all processors to support:  
-      int getBitDepth();  
-      double getBytesPerPixel();  
-      ImageStatistics getStatistics(int mOptions, Calibration cal);  
-      boolean isFloatingType();  
-      boolean isUnsignedType();  
-      double getMinimumAllowedValue();  
-      double getMaximumAllowedValue();  
-      String getTypeName();  
-      double getd(int x, int y);  
-      double getd(int index);
+  ImageProcessor  
+    Changed visibility of showProgress to public. We have a ProgressTracker class in IJ2 that updates an ip's progress indicator.  
+    Changed visibility of getBilinearInterpolatedPixel() to public  
+    Changed visibility of resetPixels() to protected  
+    Changed visibility of create8BitImage() to protected  
+    Added abstract methods for all processors to support:  
+      int getBitDepth();  
+      double getBytesPerPixel();  
+      ImageStatistics getStatistics(int mOptions, Calibration cal);  
+      boolean isFloatingType();  
+      boolean isUnsignedType();  
+      double getMinimumAllowedValue();  
+      double getMaximumAllowedValue();  
+      String getTypeName();  
+      double getd(int x, int y);  
+      double getd(int index);
 
-    Added a couple set/get methods so our new ImageProcessor type can manipulate instance variables as needed  
-      protected boolean getSnapshotCopyMode()  
-      public int getFgColor()  
-      public void setFgColor()  
-      public Color getDrawingColor()
+    Added a couple set/get methods so our new ImageProcessor type can manipulate instance variables as needed  
+      protected boolean getSnapshotCopyMode()  
+      public int getFgColor()  
+      public void setFgColor()  
+      public Color getDrawingColor()
 
-    Added a method that is only caled on processors of OTHER type by ImagePlus::getPixel()  
-      public void encodePixelInfo(int\[\] destination, int x, int y)  
+    Added a method that is only caled on processors of OTHER type by ImagePlus::getPixel()  
+      public void encodePixelInfo(int\[\] destination, int x, int y)  
   
-  ByteProcessor  
-    implementation of the new abstract methods of the ImageProcessor interface  
+  ByteProcessor  
+    implementation of the new abstract methods of the ImageProcessor interface  
   
-  ColorProcessor  
-    implementation of the new abstract methods of the ImageProcessor interface  
+  ColorProcessor  
+    implementation of the new abstract methods of the ImageProcessor interface  
   
-  FloatProcessor  
-    implementation of the new abstract methods of the ImageProcessor interface  
+  FloatProcessor  
+    implementation of the new abstract methods of the ImageProcessor interface  
   
-  ShortProcessor  
-    implementation of the new abstract methods of the ImageProcessor interface  
+  ShortProcessor  
+    implementation of the new abstract methods of the ImageProcessor interface  
   
-  ImageStatistics  
-    Made a few methods with package access into protected methods  
-       calculateStdDev(), setup(), fitEllipse(), calculateMedian()  
-    Changed getStatistics() to delegate to passed in ImageProcessor's getStatistics() method rather than  
-     switching on processor type and hatching a type appropriate ImageStatistics  
+  ImageStatistics  
+    Made a few methods with package access into protected methods  
+       calculateStdDev(), setup(), fitEllipse(), calculateMedian()  
+    Changed getStatistics() to delegate to passed in ImageProcessor's getStatistics() method rather than  
+     switching on processor type and hatching a type appropriate ImageStatistics  
   
-  TypeConverter  
-    Added support for OTHER image types with new package level access methods:  
-    ByteProcessor convertOtherToByte()  
-    ShortProcessor convertOtherToShort()  
-    FloatProcessor convertOtherToFloat().  
+  TypeConverter  
+    Added support for OTHER image types with new package level access methods:  
+    ByteProcessor convertOtherToByte()  
+    ShortProcessor convertOtherToShort()  
+    FloatProcessor convertOtherToFloat().  
   
 
 PLACES WHERE ImagePlus::getType() USES NEED UPDATING
@@ -515,7 +515,7 @@ PLACES WHERE ImagePlus::getBitDepth() USES NEED UPDATING
 -   ij.macro.Functions – setColor() needs minor case logic change for 16-bit signed data to avoid throwing an exception unneccesarily. GetHistogram(), setLut() and setMinAndMax() should test getType() and not getBitDepth(). Simple.
 -   ij.plugin.filter.FFTCustomFilter – doInverseTransform() makes some assumptions about bit depth implying certain types of processors. Needs a closer look.
 -   ij.plugin.filter.FFTFilter – filter() makes some assumptions about bit depth implying certain types of processors. Needs a closer look.
--   ij.plugin.filter.ImageMath – “div” case of run() assumes 32-bit implies Floating type data. Simple fix. ApplyMacro() and showDialog() should test versus imp.getType() rather than getBitDepth(). Simple.
+-   ij.plugin.filter.ImageMath – "div" case of run() assumes 32-bit implies Floating type data. Simple fix. ApplyMacro() and showDialog() should test versus imp.getType() rather than getBitDepth(). Simple.
 -   ij.plugin.filter.Info – getInfo() should test ip.isFloatingType() rather than imp.getBitDepth(). Simple.
 -   ij.plugin.filter.ParticleAnalyzer – setup() tests bit depth when it should test imp.getType(). Simple.
 -   ij.plugin.filter.RankFilters - run() tests bit depth when it should test imp.getType(). Simple.
@@ -560,12 +560,12 @@ PLACES WHERE ImagePlus::getBitDepth() USES NEED UPDATING
 MISCELLANEOUS NOTES
 -------------------
 
-   Additional methods desired in ImageProcessor and subclasses:
+   Additional methods desired in ImageProcessor and subclasses:
 
 -   double support: setting via setd() by (x,y) or by index
 -   long support: getting/setting via getl()/setl() by (x,y) or by index
 
-  Further changes:
+  Further changes:
 
 -   replace use of ImagePlus::getBytesPerPixel() with ImagePlus::getActualBytesPerPixel() where needed
 

@@ -22,8 +22,8 @@ Importantly, many of the [people](http://openspim.org/People) behind OpenSPIM ar
 
 The motto of OpenSPIM is best summarized by this statement crafted by Pavel Tomancak and Johannes Schindelin.
 
-`We hope that OpenSPIM in its radical openness will demonstrate`  
-`that the benefits brought to science by the Open Source approach`  
-`apply equally well to hardware.`
+`We hope that OpenSPIM in its radical openness will demonstrate`  
+`that the benefits brought to science by the Open Source approach`  
+`apply equally well to hardware.`
 
 

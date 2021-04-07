@@ -10,6 +10,6 @@ Please see [this list on the Image.sc Forum](https://forum.image.sc/t/upcoming-i
 Past events
 -----------
 
--   [Presentations](/learn/presentations) – from past conferences and workshops
--   [Conferences](/events/Conference) – past conferences focused on ImageJ
--   [Hackathons](/events/Hackathon) – past software developer gatherings
+-   [Presentations](/learn/presentations) – from past conferences and workshops
+-   [Conferences](/events/Conference) – past conferences focused on ImageJ
+-   [Hackathons](/events/Hackathon) – past software developer gatherings

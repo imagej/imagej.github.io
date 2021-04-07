@@ -9,7 +9,7 @@ description: test description
 
 ### Introduction
 
-A plugin[1] that allows the segmentation off cell wall boundaries from microscopy images and to extract cell architectures . It uses a physical “balloon inflation” algorithm for finding the cell boundaries from 8bits images. Features include:
+A plugin[1] that allows the segmentation off cell wall boundaries from microscopy images and to extract cell architectures . It uses a physical "balloon inflation" algorithm for finding the cell boundaries from 8bits images. Features include:
 
 -   Extraction of lists of individual cell shapes
 -   The determination of the cells being in contact each other
@@ -24,7 +24,7 @@ A plugin[1] that allows the segmentation off cell wall boundaries from microscop
 
 1\. Image filtering: a smooth image is very important for the algorithm to work because. Different filters can be found in Fiji. Classically, a Gaussian filter can be used to process the image
 
-2\. Background subtraction: It is often useful to reduce long-range modulations of the background intensity. This can be achieved with Fiji’s background subtraction function.
+2\. Background subtraction: It is often useful to reduce long-range modulations of the background intensity. This can be achieved with Fiji's background subtraction function.
 
 3\. Enhance contrast: it is generally useful to find the right setting for the balloon inflation to normalized the range of pixel intensity. This can be done using the enhance contrast function of Fiji.
 
@@ -36,7 +36,7 @@ A plugin[1] that allows the segmentation off cell wall boundaries from microscop
 
 a\. select the cells manually with the mouse by pressing the edit button and choosing one of the options add / move / delete points.
 
-b\. use the automatic sampling algorithm provided by the plugin. It uses the path between a of pair point to determine if they are contained within the same cell (in which case one of them is removed). This decision is based on the indicator h\*l. h is the peak of image intensity along the path and l is the distance between the points. Therefore, if the value entered is too small, more than one point will be allowed to be in the same cell. If the value is too large, some cells won’t be detected. Running the algorithm several time can improve the results and find cells that were not detected in the first instance
+b\. use the automatic sampling algorithm provided by the plugin. It uses the path between a of pair point to determine if they are contained within the same cell (in which case one of them is removed). This decision is based on the indicator h\*l. h is the peak of image intensity along the path and l is the distance between the points. Therefore, if the value entered is too small, more than one point will be allowed to be in the same cell. If the value is too large, some cells won't be detected. Running the algorithm several time can improve the results and find cells that were not detected in the first instance
 
 c\. import points from a file. The file is simply be a list of X Y values separated by a tabulation, one set of coordinate per line and saved with the .tab extension. You can download the text file of the cell center for fig. 2 here.
 

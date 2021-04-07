@@ -50,8 +50,8 @@ Variables are assigned a value by statements of the form **name** = **value** en
 
     intensity = 255;
     value = 2 * 8 + 1;
-    title = “Hello, World!”;
-    text = “title”;
+    title = "Hello, World!";
+    text = "title";
 
 ### Using variables
 

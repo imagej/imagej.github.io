@@ -43,11 +43,11 @@ You should select:
 -   **Border Image**: if your input image has highlighted object boundaries.
 -   **Object Image**: if the borders of the objects do not have higher intensity values than the rest of voxels in the image.
 
-When selecting “Object Image”, an additional set of options is enabled to choose the type of gradient and radius (in pixels) to apply to the input image before starting the morphological operations. Finally, a checkbox allows displaying the gradient image instead of the input image in the main canvas of the plugin (only after running the watershed segmentation).
+When selecting "Object Image", an additional set of options is enabled to choose the type of gradient and radius (in pixels) to apply to the input image before starting the morphological operations. Finally, a checkbox allows displaying the gradient image instead of the input image in the main canvas of the plugin (only after running the watershed segmentation).
 
 ### Watershed Segmentation panel
 
-<img src="/media/Morphological-segmentation-watershed-segmentation-panel.png" title="fig:Watershed Segmentation panel" width="250" alt="Watershed Segmentation panel" />This panel is reserved to the parameters involved in the segmentation pipeline. By default, only the tolerance can be changed. Clicking on “Advanced options” enables the rest of options.
+<img src="/media/Morphological-segmentation-watershed-segmentation-panel.png" title="fig:Watershed Segmentation panel" width="250" alt="Watershed Segmentation panel" />This panel is reserved to the parameters involved in the segmentation pipeline. By default, only the tolerance can be changed. Clicking on "Advanced options" enables the rest of options.
 
 -   **Tolerance**: dynamic of intensity for the search of regional minima (in the extended-minima transform, which is the regional minima of the H-minima transform, value of h). Increasing the tolerance value reduces the number of segments in the final result, while decreasing its value produces more object splits.
 
@@ -57,9 +57,9 @@ When selecting “Object Image”, an additional set of options is enabled to ch
 -   **Calculate dams**: un-check this option to produce segmentations without watershed lines.
 -   **Connectivity**: voxel connectivity (4-8 in 2D, and 6-26 in 3D). Selecting non-diagonal connectivity (4 or 6) usually provides more rounded objects.
 
-Finally, **click on “Run” to launch the segmentation**.
+Finally, **click on "Run" to launch the segmentation**.
 
-If your segmentation is taking too long or you want **to stop it** for any reason, you can do so by clicking on the same button (which should read “STOP” during that process).
+If your segmentation is taking too long or you want **to stop it** for any reason, you can do so by clicking on the same button (which should read "STOP" during that process).
 
 ### Results panel
 
@@ -67,9 +67,9 @@ If your segmentation is taking too long or you want **to stop it** for any reaso
 
 -   **Display**: list of options to display the segmentation results.
     -   **Overlaid basins**: colored objects overlaying the input image (with or without dams depending on the selected option in the Watershed Segmentation panel).
-    -   **Overlaid dams**: overlay the watershed dams in red on top of the input image (only works if “Calculate dams” is checked).
+    -   **Overlaid dams**: overlay the watershed dams in red on top of the input image (only works if "Calculate dams" is checked).
     -   **Catchment basins**: colored objects.
-    -   **Watershed lines**: binary image showing the watershed lines in black and the objects in white (only works if “Calculate dams” is checked).
+    -   **Watershed lines**: binary image showing the watershed lines in black and the objects in white (only works if "Calculate dams" is checked).
 -   **Show result overlay**: toggle result overlay.
 -   **Create image button**: create a new image with the results displayed in the canvas.
 
@@ -79,7 +79,7 @@ If your segmentation is taking too long or you want **to stop it** for any reaso
 
 <img src="/media/Morphological-segmentation-post-processing-panel.png" title="fig:Post-processing panel" width="250" alt="Post-processing panel" />Similarly to the Results panel, this panel only gets enabled after running the segmentation pipeline.
 
--   **Merge labels**: merge together labels selected by either the **“freehand” selection too**l (on a single slice) **or the point tool** (on single or multiple slices). The zero-value label belongs to the watershed dams, therefore it will ignored in case of being selected. The first selected label value will be assigned to the rest of selected labels, which will share its color.
+-   **Merge labels**: merge together labels selected by either the **"freehand" selection too**l (on a single slice) **or the point tool** (on single or multiple slices). The zero-value label belongs to the watershed dams, therefore it will ignored in case of being selected. The first selected label value will be assigned to the rest of selected labels, which will share its color.
 
   
 <b><span style="color:#f80000">Note</span></b>: to select labels on different slices, use the point selection tool and keep the SHIFT key pressed each time you click on a new label.

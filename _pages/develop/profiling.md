@@ -69,7 +69,7 @@ Recent versions of OProfile require that a user account *oprofile* with default 
 
 ### Start Fiji with support for profiling
 
-`fiji -agentpath:/usr/local/lib/oprofile/libjvmti_oprofile.so --`
+`fiji -agentpath:/usr/local/lib/oprofile/libjvmti_oprofile.so --`
 
 ### Stop the profiler
 

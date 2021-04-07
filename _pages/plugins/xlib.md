@@ -505,8 +505,8 @@ The results of this kind of correction is displayed in the above figure. To the 
 
 The roundness value of a connected object can be defined as the ratio of the actual size of the object and the size of the virtual sphere spanned by the largest diameter of that object.
 
-`2D: rnd = 4. * size / (diameter^2 * PI)`  
-`3D: rnd = 6. * size / (diameter^3 * PI)`
+`2D: rnd = 4. * size / (diameter^2 * PI)`  
+`3D: rnd = 6. * size / (diameter^3 * PI)`
 
 Other well-known definitions (e.g. the definition of sphericity by Wadell \[Wadell1935\]) are based on the surface area of the sphere with the same volume as the object, relative to its actual surface area. The calculation of the surface area on pixelized objects is not straight forward, whereas the calculation of the volume size is just the number of object pixels or voxels. That's the reason why we prefer the former roundness definition. Though, another useful option for pixelized objects could be the roundness definition of ISO which is based on the ratio between inscribed and circumscribed circles of an object, i.e. the minimum and maximum sizes for circles fitting inside and enclosing an object.
 

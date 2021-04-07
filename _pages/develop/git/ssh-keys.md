@@ -9,7 +9,7 @@ Often, it is inconvenient to input your password all the time when you push/pull
 
 For such case, you can set up a public/private key pair. Create them with
 
-`ssh-keygen -t dsa`
+`ssh-keygen -t dsa`
 
 Usually, it is a good idea to create a public/private key pair for specific purposes, so that a single compromised key (see [an example](http://www.debian.org/security/2008/dsa-1576) how that can happen even if you did not do anything wrong) does not affect all of your machines. So, change the default name *id\_dsa* to something like *id\_dsa.fiji* before hitting *Return*.
 
@@ -21,20 +21,20 @@ Add the public key (the single line contained in the file *id\_dsa.fiji.pub*) to
 
 For convenience, you should now add a section like this to the file *$HOME/.ssh/config* on the **local** computer, i.e. the computer with the private key:
 
-`Host fiji.sc`  
-`    User hacker`  
-`    IdentityFile /home/hacker/.ssh/id_dsa.fiji`
+`Host fiji.sc`  
+`    User hacker`  
+`    IdentityFile /home/hacker/.ssh/id_dsa.fiji`
 
 Without this section, you would have to specify both the identity file as well as the user everytime you connect. For even further convenience, you can add a nick name:
 
-`Host fiji`  
-`    HostName fiji.sc`  
-`    User hacker`  
-`    IdentityFile /home/hacker/.ssh/id_dsa.fiji`
+`Host fiji`  
+`    HostName fiji.sc`  
+`    User hacker`  
+`    IdentityFile /home/hacker/.ssh/id_dsa.fiji`
 
 With this, you can connect to the remote machine with
 
-`ssh fiji`
+`ssh fiji`
 
 See also [GitHub's documentation on SSH keys](http://help.github.com/win-set-up-git/).
 

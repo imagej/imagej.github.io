@@ -12,7 +12,7 @@ description: test description
 Installation
 ------------
 
-Image5D is distributed as part of [Fiji](/fiji), so no installation is necessary beyond that. If you do not wish to [enable the Fiji update site](/update-sites), you can download the Image5D JAR file to the plugins folder, restart ImageJ, and there will be new commands (*New Image5D*, *Open Image5D*, etc.) in the {% include bc content='Plugins|Image5D'%} submenu. Image5D requires ImageJ 1.37b or later.
+Image5D is distributed as part of [Fiji](/fiji), so no installation is necessary beyond that. If you do not wish to [enable the Fiji update site](/update-sites), you can download the Image5D JAR file to the plugins folder, restart ImageJ, and there will be new commands (*New Image5D*, *Open Image5D*, etc.) in the {% include bc content='Plugins|Image5D'%} submenu. Image5D requires ImageJ 1.37b or later.
 
 Description
 -----------

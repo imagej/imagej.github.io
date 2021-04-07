@@ -18,29 +18,29 @@ The following chart illustrates who attended, and when everyone was present:
 
 Colors =
 
-` id:c01 value:blue`  
-` id:c02 value:red`  
-` id:c03 value:green`  
-` id:c04 value:black`  
-` id:c05 value:magenta`  
-` id:c06 value:teal`  
-` id:c07 value:yelloworange`  
-` id:c08 value:skyblue`  
-` id:c09 value:claret`  
-` id:c10 value:oceanblue`  
-` id:c11 value:purple`  
-` id:c12 value:powderblue`  
-` id:c13 value:coral`  
-` id:c14 value:redorange`  
-` id:c15 value:kelleygreen`  
-` id:c16 value:orange`  
-` id:c17 value:lightpurple`  
-` id:c18 value:tan2`  
-` id:c19 value:gray(0.3)`  
-` id:gridLine value:gray(0.5)`  
-` id:canvas value:gray(0.8)`  
-` id:grid1  value:gray(0.4)`  
-` id:grid2  value:gray(0.2)`
+` id:c01 value:blue`  
+` id:c02 value:red`  
+` id:c03 value:green`  
+` id:c04 value:black`  
+` id:c05 value:magenta`  
+` id:c06 value:teal`  
+` id:c07 value:yelloworange`  
+` id:c08 value:skyblue`  
+` id:c09 value:claret`  
+` id:c10 value:oceanblue`  
+` id:c11 value:purple`  
+` id:c12 value:powderblue`  
+` id:c13 value:coral`  
+` id:c14 value:redorange`  
+` id:c15 value:kelleygreen`  
+` id:c16 value:orange`  
+` id:c17 value:lightpurple`  
+` id:c18 value:tan2`  
+` id:c19 value:gray(0.3)`  
+` id:gridLine value:gray(0.5)`  
+` id:canvas value:gray(0.8)`  
+` id:grid1  value:gray(0.4)`  
+` id:grid2  value:gray(0.2)`
 
 BackgroundColors = canvas:canvas AlignBars = justify
 
@@ -52,63 +52,63 @@ ScaleMajor = increment:1 start:28/01/2011 unit:day grid:grid1 grid:white ScaleMi
 
 PlotData =
 
-`  align:left anchor:from fontsize:M width:15 shift:(4,-6) textcolor:black`
+`  align:left anchor:from fontsize:M width:15 shift:(4,-6) textcolor:black`
 
 LineData =
 
-` at:27/01/2011 color:gridLine layer:back width:0.5`  
-` at:28/01/2011 color:gridLine layer:back width:0.5`  
-` at:29/01/2011 color:gridLine layer:back width:0.5`  
-` at:30/01/2011 color:gridLine layer:back width:0.5`  
-` at:31/01/2011 color:gridLine layer:back width:0.5`  
-` at:01/02/2011 color:gridLine layer:back width:0.5`  
-` at:02/02/2011 color:gridLine layer:back width:0.5`  
-` at:03/02/2011 color:gridLine layer:back width:0.5`  
-` at:04/02/2011 color:gridLine layer:back width:0.5`  
-` at:05/02/2011 color:gridLine layer:back width:0.5`  
-` at:06/02/2011 color:gridLine layer:back width:0.5`  
-` at:07/02/2011 color:gridLine layer:back width:0.5`  
-` at:08/02/2011 color:gridLine layer:back width:0.5`  
-` at:09/02/2011 color:gridLine layer:back width:0.5`  
-` at:10/02/2011 color:gridLine layer:back width:0.5`  
-` at:11/02/2011 color:gridLine layer:back width:0.5`  
-` at:12/02/2011 color:gridLine layer:back width:0.5`  
-` at:13/02/2011 color:gridLine layer:back width:0.5`
+` at:27/01/2011 color:gridLine layer:back width:0.5`  
+` at:28/01/2011 color:gridLine layer:back width:0.5`  
+` at:29/01/2011 color:gridLine layer:back width:0.5`  
+` at:30/01/2011 color:gridLine layer:back width:0.5`  
+` at:31/01/2011 color:gridLine layer:back width:0.5`  
+` at:01/02/2011 color:gridLine layer:back width:0.5`  
+` at:02/02/2011 color:gridLine layer:back width:0.5`  
+` at:03/02/2011 color:gridLine layer:back width:0.5`  
+` at:04/02/2011 color:gridLine layer:back width:0.5`  
+` at:05/02/2011 color:gridLine layer:back width:0.5`  
+` at:06/02/2011 color:gridLine layer:back width:0.5`  
+` at:07/02/2011 color:gridLine layer:back width:0.5`  
+` at:08/02/2011 color:gridLine layer:back width:0.5`  
+` at:09/02/2011 color:gridLine layer:back width:0.5`  
+` at:10/02/2011 color:gridLine layer:back width:0.5`  
+` at:11/02/2011 color:gridLine layer:back width:0.5`  
+` at:12/02/2011 color:gridLine layer:back width:0.5`  
+` at:13/02/2011 color:gridLine layer:back width:0.5`
 
 BarData=
 
-` barset:Hackers`
+` barset:Hackers`
 
 PlotData=
 
-` width:15`  
-` fontsize:M`  
-` textcolor:white`  
-` align:left`  
-` anchor:from`  
-` shift:(4,-4)`  
-` color:black`
+` width:15`  
+` fontsize:M`  
+` textcolor:white`  
+` align:left`  
+` anchor:from`  
+` shift:(4,-4)`  
+` color:black`
 
-` barSet:Hackers`  
-` color:c01 from:06/02/2011 till:12/02/2011 text:"Larry Lindsey"`  
-` color:c02 from:06/02/2011 till:12/02/2011 text:"Luis Ibanez"`  
-` color:c03 from:04/02/2011 till:12/02/2011 text:"Ignacio Arganda-Carreras"`  
-` color:c04 from:01/02/2011 till:10/02/2011 text:"Benjamin Schmid"`  
-` color:c05 from:31/01/2011 till:07/02/2011 text:"Tobias Pietzsch"`  
-` color:c06 from:30/01/2011 till:06/02/2011 text:"Mark Longair"`  
-` color:c07 from:30/01/2011 till:05/02/2011 text:"Erwin Frise"`  
-` color:c08 from:30/01/2011 till:04/02/2011 text:"Lee Kamentsky"`  
-` color:c09 from:30/01/2011 till:04/02/2011 text:"Adam Fraser"`  
-` color:c10 from:30/01/2011 till:04/02/2011 text:"Arthur Edelstein"`  
-` color:c11 from:29/01/2011 till:05/02/2011 text:"Pavel Tomancak"`  
-` color:c12 from:28/01/2011 till:13/02/2011 text:"Johannes Schindelin"`  
-` color:c13 from:28/01/2011 till:12/02/2011 text:"Grant Harris"`  
-` color:c14 from:28/01/2011 till:07/02/2011 text:"Stephan Saalfeld"`  
-` color:c15 from:28/01/2011 till:03/02/2011 text:"Albert Cardona"`  
-` color:c16 from:27/01/2011 till:13/02/2011 text:"Madison Locals*"`  
-` color:c17 from:27/01/2011 till:09/02/2011 text:"Stephan Preibisch"`  
-` color:c18 from:27/01/2011 till:29/01/2011 text:"Mark Rowley"`  
-` color:c19 from:27/01/2011 till:29/01/2011 text:"Paul Barber"`
+` barSet:Hackers`  
+` color:c01 from:06/02/2011 till:12/02/2011 text:"Larry Lindsey"`  
+` color:c02 from:06/02/2011 till:12/02/2011 text:"Luis Ibanez"`  
+` color:c03 from:04/02/2011 till:12/02/2011 text:"Ignacio Arganda-Carreras"`  
+` color:c04 from:01/02/2011 till:10/02/2011 text:"Benjamin Schmid"`  
+` color:c05 from:31/01/2011 till:07/02/2011 text:"Tobias Pietzsch"`  
+` color:c06 from:30/01/2011 till:06/02/2011 text:"Mark Longair"`  
+` color:c07 from:30/01/2011 till:05/02/2011 text:"Erwin Frise"`  
+` color:c08 from:30/01/2011 till:04/02/2011 text:"Lee Kamentsky"`  
+` color:c09 from:30/01/2011 till:04/02/2011 text:"Adam Fraser"`  
+` color:c10 from:30/01/2011 till:04/02/2011 text:"Arthur Edelstein"`  
+` color:c11 from:29/01/2011 till:05/02/2011 text:"Pavel Tomancak"`  
+` color:c12 from:28/01/2011 till:13/02/2011 text:"Johannes Schindelin"`  
+` color:c13 from:28/01/2011 till:12/02/2011 text:"Grant Harris"`  
+` color:c14 from:28/01/2011 till:07/02/2011 text:"Stephan Saalfeld"`  
+` color:c15 from:28/01/2011 till:03/02/2011 text:"Albert Cardona"`  
+` color:c16 from:27/01/2011 till:13/02/2011 text:"Madison Locals*"`  
+` color:c17 from:27/01/2011 till:09/02/2011 text:"Stephan Preibisch"`  
+` color:c18 from:27/01/2011 till:29/01/2011 text:"Mark Rowley"`  
+` color:c19 from:27/01/2011 till:29/01/2011 text:"Paul Barber"`
 
 </timeline>
 

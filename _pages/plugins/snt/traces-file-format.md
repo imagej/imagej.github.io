@@ -25,13 +25,13 @@ The XML DTD is included in the DOCTYPE of each file. The root element is always 
 
 There must be exactly one of these elements present, with attributes that describe the size of the image in terms of number of voxels across, up and down, e.g.:
 
-`   <imagesize width="520" height="434" depth="117"/>`
+`   <imagesize width="520" height="434" depth="117"/>`
 
 ### &lt;samplespacing&gt;
 
 There must be exactly one of these elements present, with attributes that describe the spacing of the samples in the image (voxels) in world-coordinates, e.g.:
 
-`   <samplespacing x="0.28838738962693633" y="0.28838738962693633" z="1.2" units="micrometers"/>`
+`   <samplespacing x="0.28838738962693633" y="0.28838738962693633" z="1.2" units="micrometers"/>`
 
 ### &lt;path&gt;
 

@@ -179,7 +179,7 @@ While ImageJ strives for [reproducible](/Architecture#Reproducible_builds) analy
     -   A fast way to ensure this is the {% include bc content='Edit | Options | Reset...'%} command, which resets everything to its default state.
     -   Alternately, you can check the settings in the following dialog boxes:
         -   All {% include bc content='Edit | Options'%} dialog boxes
-    -   {% include bc content='Process | Binary | Options...'%} – a very common culprit of black-vs.-white issues is the "Black background" option.
+    -   {% include bc content='Process | Binary | Options...'%} – a very common culprit of black-vs.-white issues is the "Black background" option.
     -   {% include bc content='Process | FFT | FFT Options...'%}
     -   {% include bc content='Image | Overlay | Overlay Options...'%}
     -   {% include bc content='Analyze | Gels | Gel Analyzer Options...'%}

@@ -32,7 +32,7 @@ Some image file formats are more akin to databases rather than images (e.g. Leic
 
 There are several different Bio-Formats commands for importing data into Fiji:
 
--   **Bio-Formats Remote Importer.** For this selection, the image doesn’t have to be saved onto your computer or a disk. But it is a limited feature; it is more robust to download the file and then use the regular Bio-Formats instead.
+-   **Bio-Formats Remote Importer.** For this selection, the image doesn't have to be saved onto your computer or a disk. But it is a limited feature; it is more robust to download the file and then use the regular Bio-Formats instead.
 -   **Bio-Formats Windowless Importer.** With this option, Fiji uses the settings that were previously used for Bio-Formats, so it skips all dialog boxes at the beginning.
 -   **Bio-Formats Importer.** Select this command if you need to change the settings for importing an image.
 
@@ -41,33 +41,33 @@ Zeiss LSM panel
 
 The LSM panel plugin duplicates the Zeiss LSM file import function of the LOCI Bio-Format Importer, but will also extensively catalogue the LSM metadata. The *[LSM Toolbox](/formats/lsm)* is activated by the menu command {% include bc content='File | Import | LSM.'%} Once you select LSM the panel will appear.
 
-Images are opened as 8-bit color images with the “no-palette” pseudo color from the LSM acquisition software. Each channel is imported as a separate image/stack. Lambda stacks are therefore imported as multiple images, not a single stack. They can be converted to a stack with the menu command: {% include bc content='Image | Stacks | Images to stack.'%}
+Images are opened as 8-bit color images with the "no-palette" pseudo color from the LSM acquisition software. Each channel is imported as a separate image/stack. Lambda stacks are therefore imported as multiple images, not a single stack. They can be converted to a stack with the menu command: {% include bc content='Image | Stacks | Images to stack.'%}
 
 Once opened, the file information can be accessed and the information can be irreversibly stamped into the images or exported.
 
 Multiple files from a folder
 ----------------------------
 
-Each time point of an experiment acquired with software such as Perkin Elmer’s UltraVIEW or Scion Image’s time lapse macro is saved by the acquisition software as a single TIF. The experimental sequence can be imported to Fiji via the menu command {% include bc content='File | Import | Image Sequence.'%}
+Each time point of an experiment acquired with software such as Perkin Elmer's UltraVIEW or Scion Image's time lapse macro is saved by the acquisition software as a single TIF. The experimental sequence can be imported to Fiji via the menu command {% include bc content='File | Import | Image Sequence.'%}
 
-Locate the directory, click on the first image in the sequence and OK all dialogs. (You may get a couple of error messages while Fiji tries to open any non-image files in the experimental directory.) The stack will “interleave” the multiple channels you recorded, and can be de-interleaved via {% include bc content='Plugins | Stacks - Shuffling | Deinterleave'%}
+Locate the directory, click on the first image in the sequence and OK all dialogs. (You may get a couple of error messages while Fiji tries to open any non-image files in the experimental directory.) The stack will "interleave" the multiple channels you recorded, and can be de-interleaved via {% include bc content='Plugins | Stacks - Shuffling | Deinterleave'%}
 
-Selected images that are not the same size can be imported as individual images windows using *File/Import* and select each individual image you want imported into Fiji. Then you can put those images into a stack by {% include bc content='Image | Stacks | Images to stack'%} Unlike the {% include bc content='File | Import | Image Sequence'%} function, the images don’t need to be the same dimensions. If memory is limited, stacks can be opened as Virtual-Stacks with most of the stack remaining on the disk until it is required.
+Selected images that are not the same size can be imported as individual images windows using *File/Import* and select each individual image you want imported into Fiji. Then you can put those images into a stack by {% include bc content='Image | Stacks | Images to stack'%} Unlike the {% include bc content='File | Import | Image Sequence'%} function, the images don't need to be the same dimensions. If memory is limited, stacks can be opened as Virtual-Stacks with most of the stack remaining on the disk until it is required.
 
 Multi-RAW sequence from a folder
 --------------------------------
 
 To form an image, Fiji needs to know the image dimensions, bit-depth, slice number per file and any extraneous information in the file format (offset and header size). All you really need to tell it is the image dimension in x and y. These values should be obtainable from the software in which the images were acquired. Armed with this information follow these steps:
 
-1.  File/Import/Raw…
+1.  File/Import/Raw...
 2.  Select experimental directory.
 3.  Typical values for the dialog box are:
     -   Image type = 16-bit unsigned (or 8 bit typically)
     -   Width and height as determined earlier
-    -   Offset = 0, number of image = 1, gap = 0, ‘white’ is zero = off
-    -   ‘Little-endian byte order’ = on, ‘open all files in folder’ = on to open all files in folder.
+    -   Offset = 0, number of image = 1, gap = 0, 'white' is zero = off
+    -   'Little-endian byte order' = on, 'open all files in folder' = on to open all files in folder.
 
-Non-images will also be opened and may appear as blank images and need deleting: {% include bc content='Image | Stacks | Delete slice'%}. The stack will "interleave” the multiple channels you recorded, and can be de-interleaved via {% include bc content='Plugins | Stacks - Shuffling | DeInterleave'%}.
+Non-images will also be opened and may appear as blank images and need deleting: {% include bc content='Image | Stacks | Delete slice'%}. The stack will "interleave" the multiple channels you recorded, and can be de-interleaved via {% include bc content='Plugins | Stacks - Shuffling | DeInterleave'%}.
 
 AVI and MOV files
 -----------------

@@ -17,7 +17,7 @@ There are basically two ways to do that:
 
 -   by passing the parameters to the Fiji launcher, separated by *--* from the ImageJ options. **Note**: even if you do not pass ImageJ options at all, you need to add the separator, otherwise Fiji thinks you passed it an ImageJ option. Example:
 
-`./fiji -XX:+HeapDumpOnOutOfMemoryError --`
+`./fiji -XX:+HeapDumpOnOutOfMemoryError --`
 
 -   by modifying/creating the file *jvm.cfg* in the same directory as the Fiji launcher.
 
@@ -36,17 +36,17 @@ It can be confusing to pass Fiji and Java options at the same time as command li
 
 Examples:
 
-`# pass a single Fiji option (no double-dash needed):`  
-`./fiji --memory=64m`
+`# pass a single Fiji option (no double-dash needed):`  
+`./fiji --memory=64m`
 
-`# pass a single Java option (double-dash needed):`  
-`./fiji -Xincgc --`
+`# pass a single Java option (double-dash needed):`  
+`./fiji -Xincgc --`
 
-`# pass a Java option (requiring a double-dash), a Fiji option (which must be before the double-dash now) and an option to the program`  
-`./fiji -Xincgc --ant -- --help`
+`# pass a Java option (requiring a double-dash), a Fiji option (which must be before the double-dash now) and an option to the program`  
+`./fiji -Xincgc --ant -- --help`
 
-`# pass an option to the Java program that is actually also available as Fiji option`  
-`./fiji --ant -- --help`
+`# pass an option to the Java program that is actually also available as Fiji option`  
+`./fiji --ant -- --help`
 
 *Note*: in the last example, *Ant* gets to see the option *--help*, which Fiji would have interpreted itself if it were passed before the double dash.
 
@@ -74,40 +74,40 @@ There are also some basic flags for logging runtime information:
 
 1\. Run the JVM with fixed heap size at 4 Gb, and with incremental garbage collection.
 
-`./fiji -Xms4000m -Xmx4000m -Xincgc --`
+`./fiji -Xms4000m -Xmx4000m -Xincgc --`
 
 -   The fixed heap size prevents out of memory errors because there isn't ever the need to resize it. If you define -Xms256m and -Xmx4000m, then when in need of exceeding 256m, a greater heap is allocated on the fly and the old one copied into the new one, which will fail when the sum of the sizes of the old and the new are bigger than what the computer can handle (or so I've been told, and indeed fixed heap size helps a lot to prevent incomprehensible out of memory errors.)
 -   The incremental garbage collection runs a garbage collection in a parallel thread, avoiding long pauses and avoiding heap build-up that could lead to incomprehensible out of memory errors when suddenly attempting to allocate a lot of heap.
 
 2\. Run the JVM as above, but launching a macro that opens a TrakEM2 project on startup.
 
-`./fiji -Xms4000m -Xmx4000m -Xincgc -- -eval "open('/path/to/project.xml');"`
+`./fiji -Xms4000m -Xmx4000m -Xincgc -- -eval "open('/path/to/project.xml');"`
 
 3\. Run the JVM as above, but opening a clojure prompt instead of launching fiji:
 
-`./fiji -Xms4000m -Xmx4000m -Xincgc --clojure`
+`./fiji -Xms4000m -Xmx4000m -Xincgc --clojure`
 
 Even better if you have the jline library, enhance the clojure prompt with a up/down arrow history, etc.:
 
-`./fiji -Xms4000m -Xmx4000m -Xincgc -cp /path/to/clojure-contrib.jar:/path/to/jline.jar --main-class jline.ConsoleRunner clojure.lang.Repl`
+`./fiji -Xms4000m -Xmx4000m -Xincgc -cp /path/to/clojure-contrib.jar:/path/to/jline.jar --main-class jline.ConsoleRunner clojure.lang.Repl`
 
 You may do the same with --jython and --jruby for the homonimous languages.
 
 4\. Launch the JVM with a debugging agent:
 
-`./fiji -Xincgc -server -agentlib:jdwp=transport=dt_socket,address=8010,server=y,suspend=n --`
+`./fiji -Xincgc -server -agentlib:jdwp=transport=dt_socket,address=8010,server=y,suspend=n --`
 
 To connect the debugger, launch the java debugger <i>jdb</i> at port 8010:
 
-`jdb -attach 8010`
+`jdb -attach 8010`
 
 See some examples on using the jdb to [inspect the state of threads](http://albert.rierol.net/java_tricks.html#How%20to%20debug%20a%20multithreaded%20java%20program). Very useful to suspend all or one thread, print out their current stack trace, and list their status: sleeping, waiting in a monitor (i.e. likely dead-locked), etc.
 
 I use many of the above combined into a script to launch fiji in a bash shell:
 
-`cd /home/albert/Programming/fiji`  
-`JAVA_HOME=/home/albert/Programming/fiji/java/linux/jdk1.6.0_10 ./fiji -Xincgc -server \`  
-`-agentlib:jdwp=transport=dt_socket,address=8010,server=y,suspend=n -- "$@"`
+`cd /home/albert/Programming/fiji`  
+`JAVA_HOME=/home/albert/Programming/fiji/java/linux/jdk1.6.0_10 ./fiji -Xincgc -server \`  
+`-agentlib:jdwp=transport=dt_socket,address=8010,server=y,suspend=n -- "$@"`
 
 Notice the -- "$@" to pass any script arguments as ImageJ arguments.
 

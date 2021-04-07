@@ -28,7 +28,7 @@ The implemented least-squares method automatically approximates the solution of 
 Implementation
 --------------
 
-DS4H Image Alignment has been implemented in Java as a plugin for ImageJ/Fiji. It works with “.svs” files, but also all the medical imaging formats included in the [Bio-formats](Bio-formats) library.
+DS4H Image Alignment has been implemented in Java as a plugin for ImageJ/Fiji. It works with ".svs" files, but also all the medical imaging formats included in the [Bio-formats](Bio-formats) library.
 
 Download
 --------
@@ -50,7 +50,7 @@ Reference
 
 Please, when using/referring to "DS4H Image Alignment" in a scientific work, cite:
 
-"Jenny Bulgarelli, Marcella Tazzari\*, Anna Maria Granato, Laura Ridolfi, Serena Maiocchi, Francesco De Rosa, Massimiliano Petrini, Elena Pancisi, Giorgia Gentili, Barbara Vergani, Filippo Piccinini, Antonella Carbonaro, Biagio Eugenio Leone, Giovanni Foschi, Valentina Ancarani, Massimo Framarini, Massimo Guidoboni, "Dendritic cell vaccination in metastatic melanoma turns “non-T cell inflamed” into “T-cell inflamed” tumors". 2019."
+"Jenny Bulgarelli, Marcella Tazzari\*, Anna Maria Granato, Laura Ridolfi, Serena Maiocchi, Francesco De Rosa, Massimiliano Petrini, Elena Pancisi, Giorgia Gentili, Barbara Vergani, Filippo Piccinini, Antonella Carbonaro, Biagio Eugenio Leone, Giovanni Foschi, Valentina Ancarani, Massimo Framarini, Massimo Guidoboni, "Dendritic cell vaccination in metastatic melanoma turns "non-T cell inflamed" into "T-cell inflamed" tumors". 2019."
 
 License
 -------

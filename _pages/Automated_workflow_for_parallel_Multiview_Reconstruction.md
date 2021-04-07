@@ -78,26 +78,26 @@ Supported datasets are in the following format:
 
 Using Zeiss Lightsheet Z.1 Dataset (LOCI)
 
-`   Multiple timepoints:  YES (one file per timepoint) or (all time-points in one file)`  
-`   Multiple channels:  YES (one file per channel) or (all channels in one file)`  
-`   Multiple illumination directions: YES (one file per illumination direction)`  
-`   Multiple angles: YES (one file per angle)`  
-`   `
+`   Multiple timepoints:  YES (one file per timepoint) or (all time-points in one file)`  
+`   Multiple channels:  YES (one file per channel) or (all channels in one file)`  
+`   Multiple illumination directions: YES (one file per illumination direction)`  
+`   Multiple angles: YES (one file per angle)`  
+`   `
 
 Using LOCI Bioformats opener (.tif)
 
-`   Multiple timepoints: YES (one file per timepoint) or (all time-points in one file)`  
-`   Multiple channels: YES (one file per channel) or (all channels in one file)`  
-`   Multiple illumination directions: YES (one file per illumination direction) => not tested yet`  
-`   Multiple angles: YES (one file per angle)`  
-`   `
+`   Multiple timepoints: YES (one file per timepoint) or (all time-points in one file)`  
+`   Multiple channels: YES (one file per channel) or (all channels in one file)`  
+`   Multiple illumination directions: YES (one file per illumination direction) => not tested yet`  
+`   Multiple angles: YES (one file per angle)`  
+`   `
 
 Using ImageJ Opener (.tif):
 
-`   Multiple timepoints: YES (one file per timepoint)`  
-`   Multiple channels: YES (one file per channel)`  
-`   Multiple illumination directions: YES (one file per illumination direction) => not tested yet`  
-`   Multiple angles: YES (one file per angle)`
+`   Multiple timepoints: YES (one file per timepoint)`  
+`   Multiple channels: YES (one file per channel)`  
+`   Multiple illumination directions: YES (one file per illumination direction) => not tested yet`  
+`   Multiple angles: YES (one file per angle)`
 
 Fiji for workflow
 =================
@@ -532,11 +532,11 @@ Force the execution of a rule: -R <name of rule>
 
 For DRMAA back end add: --drmaa " -q {cluster.lsf\_q} {cluster.lsf\_extra}"
 
-For Lsf backend add: --cluster "bsub -q {cluster.lsf\_q} {cluster.lsf\_extra}”
+For Lsf backend add: --cluster "bsub -q {cluster.lsf\_q} {cluster.lsf\_extra}"
 
 To specify the configuration script for the queuing system: --cluster-config ./cluster.json
 
-To save error and output files of cluster add: --drmaa " -q {cluster.lsf\_q} {cluster.lsf\_extra} -o test.out -e test.err" --cluster "bsub -q {cluster.lsf\_q} {cluster.lsf\_extra} -o test.out -e test.err“
+To save error and output files of cluster add: --drmaa " -q {cluster.lsf\_q} {cluster.lsf\_extra} -o test.out -e test.err" --cluster "bsub -q {cluster.lsf\_q} {cluster.lsf\_extra} -o test.out -e test.err"
 
 The commands to execute snakemake would then look like this:
 

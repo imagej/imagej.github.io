@@ -97,7 +97,7 @@ We get an instance of the pixel value type **UnsignedByteType** that acts as a r
 
 -   **get()** is defined in the **Sampler** interface, so you can obtain pixel references from a **Cursor** in exactly the same way.
 -   Often, the **T** obtained from **Sampler<T>.get()** is a proxy object that is re-used internally. You should assume that moving the accessor invalidates the proxy. If you want to keep a permanent reference to a pixel, use the **Sampler<T>.copy()** method. In the above example, this would return a copy of the RandomAccess refering to the same pixel.
--   The **Positionable**, **Localizable**, … interfaces are not restricted to accessors. In fact, many ImgLib2 entities are **Localizable**. For instance, the [Point](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib/Point.html) class implements **Positionable** and **Localizable**, and simply represents a n-dimensional coordinate. In your own code, whenever you have something that can provide coordinates, you should consider implementing **Localizable**.
+-   The **Positionable**, **Localizable**, ... interfaces are not restricted to accessors. In fact, many ImgLib2 entities are **Localizable**. For instance, the [Point](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib/Point.html) class implements **Positionable** and **Localizable**, and simply represents a n-dimensional coordinate. In your own code, whenever you have something that can provide coordinates, you should consider implementing **Localizable**.
 
 A Taste of Generic Algorithms
 -----------------------------
@@ -214,7 +214,7 @@ Finally, there is no need to restrict ourselves to **Img**. After all, we do not
 
 Now we are able to apply **draw()** to many ImgLib2 constructs that are not pixel **Img**s. For instance there are Views that employ on-the-fly coordinate transforms, sampled and interpolated data, etc.
 
-However, with great power comes great responsibility… Taking a general **Interval** means that we no longer can assume that the interval starts at coordinates *(0,0,…,0)*. Thus we need to make a final modification to correctly draw between *min* and *max* of the interval.
+However, with great power comes great responsibility... Taking a general **Interval** means that we no longer can assume that the interval starts at coordinates *(0,0,...,0)*. Thus we need to make a final modification to correctly draw between *min* and *max* of the interval.
 
     import java.util.Random;
 
@@ -261,7 +261,7 @@ However, with great power comes great responsibility… Taking a general **Inter
         }
     }
 
-And we used it on a 3D **ARGBType** image (which means a color image with red/green/blue/alpha values). Ta daaaaaa…
+And we used it on a 3D **ARGBType** image (which means a color image with red/green/blue/alpha values). Ta daaaaaa...
 
 ### Notes
 
@@ -424,7 +424,7 @@ Lines *028-031* show how to use **findmax** and get the maximum value and coordi
 
 -   The iteration order is subject to implementation, specialized for each memory layout to minimize access time. For example, an [ArrayImg](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/img/array/ArrayImg.html) has a different iteration order from a [CellImg](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/cell/CellImg.html). This is nicely illustrated in [ ImgLib2 Example 2b - Duplicating an Img using a different ImgFactory ](ImgLib2_Examples#Example_2b_-_Duplicating_an_Img_using_a_different_ImgFactory).
 -   Typically, there are two variants of Cursors available. One that calculates its location per each iteration and one that calculates it only per localization request. The former is more efficient when localization occurs frequently, the latter otherwise. In the *maximum-finding* example, we use the latter because localization is only required once after the maximum has been found. The former one could be obtained using **localizingCursor()** instead of **cursor()** (see [IterableInterval](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/IterableInterval.html) API doc.)
--   **copyCursor()** is a work-around to circumvent a *javac* bug with covariant return type overriding (see [bug report](http://bugs.sun.com/view_bug.do?bug_id=6656332)). In the future (with JDK7) every **Sampler** can be copied using **copy()** instead of having specialised **copyCursor()**, **copyRandomAccess()**, … methods.
+-   **copyCursor()** is a work-around to circumvent a *javac* bug with covariant return type overriding (see [bug report](http://bugs.sun.com/view_bug.do?bug_id=6656332)). In the future (with JDK7) every **Sampler** can be copied using **copy()** instead of having specialised **copyCursor()**, **copyRandomAccess()**, ... methods.
 
 Accessors for Continuous Coordinates
 ------------------------------------
@@ -510,7 +510,7 @@ Let's look at an example. The following code defines a **RealRandomAccess** whic
 
 First of all, note that we extend [RealPoint](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RealPoint.html). Instead of implementing the interface **RealRandomAccess&lt; UnsignedByteType &gt;**, we make use of this class
 
-`   which has most of the required methods implemented already.`
+`   which has most of the required methods implemented already.`
 
 Actually, all we are left with is to implement the **Sampler&lt; UnsignedByteType &gt;** interface. ImgLib2 provides several such abstract implementations to minimize development time for new accessor types. The UML diagram below shows **MandelbrotRealRandomAccess** and the derivative hierarchy of its parent classes.
 
@@ -594,4 +594,4 @@ Because we have a **RealRandomAccess** you can zoom in indefinitely (until you h
 
 -   In line *017* we used a **RealRandomAccess&lt; UnsignedByteType &gt;** variable just to emphasize again the interface implemented by **MandelbrotRealRandomAccess**. In real code, you would probably use the actual type.
 -   Sampling from a transformed **RealRandomAccess** to create a pixel image is a quite common task. ImgLib2 provides a framework for on-the-fly transformations, which will be explained later.
--   The **RealPositionable**, **RealLocalizable**, … interfaces are not restricted to accessors. For example, the [RealPoint](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib/RealPoint.html) class implements **RealPositionable** and **RealLocalizable**, and simply represents a n-dimensional coordinate.
+-   The **RealPositionable**, **RealLocalizable**, ... interfaces are not restricted to accessors. For example, the [RealPoint](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib/RealPoint.html) class implements **RealPositionable** and **RealLocalizable**, and simply represents a n-dimensional coordinate.

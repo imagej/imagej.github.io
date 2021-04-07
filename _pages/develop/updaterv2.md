@@ -19,7 +19,7 @@ The core plugins written in Java, versioned via Maven and distributed via update
 User perspective
 ----------------
 
-![`user-updater.png`](/media/User-updater.png "fig:user-updater.png")` `
+![`user-updater.png`](/media/User-updater.png "fig:user-updater.png")` `
 
 -   the user downloads packaged Fiji from website
 -   some update sites are enabled by default and will serve all core updates (see update site chapter)

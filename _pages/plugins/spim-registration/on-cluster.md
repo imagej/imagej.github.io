@@ -628,18 +628,18 @@ The output of running the Apply external transformation will look like this:
 
 Pre-concatenating model:
 
-`3d-affine: (0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0)`  
-`Applying model to: spim_TL400_Angle1.tif.registration.to_400`  
-`Applying model to: spim_TL400_Angle2.tif.registration.to_400`  
-`Applying model to: spim_TL400_Angle3.tif.registration.to_400`  
-`Applying model to: spim_TL400_Angle4.tif.registration.to_400`  
-`Applying model to: spim_TL400_Angle5.tif.registration.to_400`  
-`Applying model to: spim_TL400_Angle6.tif.registration.to_400`
+`3d-affine: (0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0)`  
+`Applying model to: spim_TL400_Angle1.tif.registration.to_400`  
+`Applying model to: spim_TL400_Angle2.tif.registration.to_400`  
+`Applying model to: spim_TL400_Angle3.tif.registration.to_400`  
+`Applying model to: spim_TL400_Angle4.tif.registration.to_400`  
+`Applying model to: spim_TL400_Angle5.tif.registration.to_400`  
+`Applying model to: spim_TL400_Angle6.tif.registration.to_400`
 
 and the registration files *spim\_TL400\_Angle1.tif.registration.to\_400* in the *registration/* directory will now end with something like this:
 
-`Previous model: (0.996656, 0.0014411004, 0.003138572, -5.4490294, -0.0019162297, 0.9955152, -8.5441023E-4, -81.664116, -5.4249633E-4, -2.910602E-4, 0.9978538, 10.278229)`  
-`Pre-concatenated model: (0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0)`
+`Previous model: (0.996656, 0.0014411004, 0.003138572, -5.4490294, -0.0019162297, 0.9955152, -8.5441023E-4, -81.664116, -5.4249633E-4, -2.910602E-4, 0.9978538, 10.278229)`  
+`Pre-concatenated model: (0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0)`
 
 Now this looks elegant, but there are several caveats. The pre-concatenation of transformation models is not reversible (or at least not easily in the current code framework) and so before applying external transformation we recommend to archive the old, unmodified registration files. For example by packaging them to a tar archive
 
@@ -4512,31 +4512,31 @@ which creates a *create-dataset.job* bash script that passes the parameters to F
 
 Since in this case it makes no sense to parallelise, it is best to launch the *create-dataset.job* in interactive mode on one of the nodes of the cluster (ideally not the headnode). On our cluster this will look like this:
 
-`[tomancak@madmax define_xml]$ `<font color=red>`./create-dataset-jobs`</font>` `  
-`/projects/tomancak_lightsheet/Valia/Valia/new_pipeline/jobs_master_beta_2.0/define_xml//create- dataset.job`  
-`[tomancak@madmax define_xml]$ `<font color=red>`bsub -q interactive -Is bash`</font>  
-`Job <484001> is submitted to queue `<interactive>`.`  
-`<<Waiting for dispatch ...>>`  
+`[tomancak@madmax define_xml]$ `<font color=red>`./create-dataset-jobs`</font>` `  
+`/projects/tomancak_lightsheet/Valia/Valia/new_pipeline/jobs_master_beta_2.0/define_xml//create- dataset.job`  
+`[tomancak@madmax define_xml]$ `<font color=red>`bsub -q interactive -Is bash`</font>  
+`Job <484001> is submitted to queue `<interactive>`.`  
+`<<Waiting for dispatch ...>>`  
 `<`<Starting on n42>`>`  
-`[tomancak@n42 define_xml]$ `<font color=red>`./create-dataset.job`</font>`  `  
-`12 cores available for multi-threading`  
-`type of dataset=Image Stacks (ImageJ Opener)`  
-`xml filename=dataset.xml`  
-`multiple_timepoints=YES (one file per time-point)`  
-`multiple_channels=NO (one channel)`  
-`multiple_illumination_directions=NO (one illumination direction)`  
-`multiple_angles=YES (one file per angle)`  
+`[tomancak@n42 define_xml]$ `<font color=red>`./create-dataset.job`</font>`  `  
+`12 cores available for multi-threading`  
+`type of dataset=Image Stacks (ImageJ Opener)`  
+`xml filename=dataset.xml`  
+`multiple_timepoints=YES (one file per time-point)`  
+`multiple_channels=NO (one channel)`  
+`multiple_illumination_directions=NO (one illumination direction)`  
+`multiple_angles=YES (one file per angle)`  
 `dir=/projects/tomancak_lightsheet/Valia/Valia/raw/`  
 `pattern_of_spim=spim_TL{t}_Angle{a}.tif`  
 `timepoint=1-715`  
 `angles=1,2,3,4,5,6`  
 `xy_resolution=1`  
 `z_resolution=3.497273`  
-`imglib_container=ArrayImg (faster)`  
+`imglib_container=ArrayImg (faster)`  
 `1`  
-`Minimal resolution in all dimensions over all views is: 1.0`  
-`(The smallest resolution in any dimension; the distance between two pixels in the output image will be  that wide)`  
-<font color=red>`Saved xml '/projects/tomancak_lightsheet/Valia/Valia/raw/dataset.xml'.`</font>
+`Minimal resolution in all dimensions over all views is: 1.0`  
+`(The smallest resolution in any dimension; the distance between two pixels in the output image will be  that wide)`  
+<font color=red>`Saved xml '/projects/tomancak_lightsheet/Valia/Valia/raw/dataset.xml'.`</font>
 
 End result should be a *dataset.xml* created in the directory where the raw data reside.
 

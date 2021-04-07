@@ -43,7 +43,7 @@ Keyboard keys
 
     {% include key content='Ctrl' %} + {% include key content='C' %}   or    {% include key content='Ctrl' %} + {% include key content='Shift' %} + {% include key content='F' %}
 
-{% include key content='Ctrl' %} + {% include key content='C' %}     /     {% include key content='Ctrl' %} + {% include key content='Shift' %} + {% include key content='F' %}
+{% include key content='Ctrl' %} + {% include key content='C' %}     /     {% include key content='Ctrl' %} + {% include key content='Shift' %} + {% include key content='F' %}
 
 Menu structure
 --------------

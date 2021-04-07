@@ -8,8 +8,8 @@ description: test description
 {% include outdated%}
  **Note**: Please make sure that you have a clean build of the plugin you try to upload. You can ensure a clean build by calling the [Fiji Build System](/Fiji_Build_System) with the *-clean* suffix before building the actual target. Example:
 
-`./Build.sh plugins/Fiji_Plugins.jar-clean`  
-`./Build.sh plugins/Fiji_Plugins.jar`
+`./Build.sh plugins/Fiji_Plugins.jar-clean`  
+`./Build.sh plugins/Fiji_Plugins.jar`
 
 The graphical way (recommended)
 -------------------------------
@@ -37,14 +37,14 @@ Using the command line
 
 If you have an ssh account on *fiji.sc* that is in the *uploaders* group, you can upload plugins. To do this, run
 
-`git pull origin master`
+`git pull origin master`
 
 If this says that a recursive merge was performed, you had local changes and should **not** upload anything, as you did not test that version!
 
 If it was a fast-forward (or if Git said "Everything up-to-date"), you are good to go:
 
 `./Build.sh`  
-`./bin/update-fiji.py `<filename>
+`./bin/update-fiji.py `<filename>
 
 It will refuse to upload a file that has locally-modified dependencies, and list them. To upload those dependencies, too, you can use the *--auto* option of *./bin/update-fiji.py*. **Use with care!**
 
@@ -69,7 +69,7 @@ The reason why *.jar* files are different is that they are really nothing more t
 
 Originally, the database was stored in the file *current.txt*, which is stored in the *update/* directory of [fiji.sc](Fiji.sc)'s web server. Its format was simply lines in the form
 
-<filename>` `<timestamp>` `<checksum>
+<filename>` `<timestamp>` `<checksum>
 
 and a file was considered updateable when its checksum disagreed with the local checksum and the timestamp of the local file was older than the timestamp in *current.txt*.
 
@@ -84,65 +84,65 @@ File organization
 
 Different file types are stored at different locations in an ImageJ/Fiji installation, where they are picked up by the updater (see the [source code](https://github.com/imagej/imagej-updater/blob/imagej-updater-0.8.1/src/main/java/net/imagej/updater/Checksummer.java#L439-L451) for technical details):
 
-` jars/`  
-` retro/`  
-` misc/`  
-`   .jar`  
-`   .class`
+` jars/`  
+` retro/`  
+` misc/`  
+`   .jar`  
+`   .class`
 
-` plugins/ (and subfolders)`  
-`   .jar`  
-`   .class`  
-`   .txt`  
-`   .ijm`  
-`   .py`  
-`   .rb`  
-`   .clj`  
-`   .js`  
-`   .bsh`  
-`   .groovy`  
-`   .gvy`
+` plugins/ (and subfolders)`  
+`   .jar`  
+`   .class`  
+`   .txt`  
+`   .ijm`  
+`   .py`  
+`   .rb`  
+`   .clj`  
+`   .js`  
+`   .bsh`  
+`   .groovy`  
+`   .gvy`
 
-` scripts/`  
-`   .py`  
-`   .rb`  
-`   .clj`  
-`   .js`  
-`   .bsh`  
-`   .m`  
-`   .groovy`  
-`   .gvy`
+` scripts/`  
+`   .py`  
+`   .rb`  
+`   .clj`  
+`   .js`  
+`   .bsh`  
+`   .m`  
+`   .groovy`  
+`   .gvy`
 
-` macros/`  
-`   .txt`  
-`   .ijm`
+` macros/`  
+`   .txt`  
+`   .ijm`
 
-` luts/`  
-`   .lut`
+` luts/`  
+`   .lut`
 
-` images/`  
-`   .png`  
-`   .tif`  
-`   .txt`
+` images/`  
+`   .png`  
+`   .tif`  
+`   .txt`
 
-` Contents/`  
-`   .icns`  
-`   .plist`
+` Contents/`  
+`   .icns`  
+`   .plist`
 
-` lib/`  
-` mm/`  
-` mmautofocus/`  
-` mmplugins/`  
-`   (all files)`
+` lib/`  
+` mm/`  
+` mmautofocus/`  
+` mmplugins/`  
+`   (all files)`
 
 The updater will only pick up files stored at the appropriate location according to their function. In addition, the `./lib/` folder contains platform-specific sub-directories to allow loading of native libraries dependent on the platform:
 
-` lib/`  
-`   linux32/`  
-`   linux64/`  
-`   macosx/`  
-`   win32/`  
-`   win64/`
+` lib/`  
+`   linux32/`  
+`   linux64/`  
+`   macosx/`  
+`   win32/`  
+`   win64/`
 
 Further information is in this [thread on fiji-devel](https://groups.google.com/forum/#!topic/fiji-devel/QbY4XnLC-wE)
 

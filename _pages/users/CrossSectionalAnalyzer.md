@@ -26,6 +26,6 @@ You can access the source files at [1](https://github.com/mattrothman/cross-sect
 
 4\. Once ImageJ opens, open an image to analyze, and calibrate the image. To run the plugin, use Plugins&gt;Filters&gt;Cross Sectional Analyzer.
 
-*Description*: This plugin takes in an image of muscle fibers, outlines and numbers all of the fibers, and outputs a table of each fiber’s area as well as an RGB Color image of the numbered fiber outlines on a black background.
+*Description*: This plugin takes in an image of muscle fibers, outlines and numbers all of the fibers, and outputs a table of each fiber's area as well as an RGB Color image of the numbered fiber outlines on a black background.
 
 <img src="/media/Fibers.png" title="fig:Input Image" width="300" alt="Input Image" /> <img src="/media/FiberOutlines.png" title="fig:Output Image" width="300" alt="Output Image" />

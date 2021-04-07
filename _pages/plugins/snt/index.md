@@ -62,7 +62,7 @@ Features
 ### Visualization
 
 -   [Reconstruction Viewer](/plugins/snt/reconstruction-viewer): Standalone hardware-accelerated 3D visualization tool for both meshes and reconstructions.
-    -   Interactive and programmatic scenes (controlled rotations, panning, zoom, scaling, animation, “dark/light mode”, etc.)
+    -   Interactive and programmatic scenes (controlled rotations, panning, zoom, scaling, animation, "dark/light mode", etc.)
     -   Customizable views: Interactive management of scene elements, controls for transparency, color interpolation, lightning, path smoothing, etc.. Ability to render both local and remote files on the same scene
     -   Built-in support for several template brains: Drosophila, zebrafish, and Allen CCF (Allen Mouse Brain Atlas)
 -   [SciView](/plugins/sciview) integration
@@ -73,13 +73,13 @@ Features
 -   Special effort was put into backwards compatibility with older Simple Neurite Tracer releases (including [TrakEM2](/plugins/trakem2) and [ITK interaction](/plugins/snt/tubular-geodesics)). Inherited functionality has been improved, namely:
     -   Extended support for sub-pixel accuracy
     -   Improved synchronization of XY, ZY, and XZ views
-    -   Improved calls to Dijkstra’s filling and Path-fitting routines
+    -   Improved calls to Dijkstra's filling and Path-fitting routines
     -   Multi-threading improvements
 
 Installation
 ------------
 
-SNT is currently distributed through the [Neuroanatomy](/plugins/neuroanatomy) [update site](/update-sites). The first time you start SNT from Fiji’s menu structure ({% include bc content='Plugins|Neuroanatomy|SNT'%}, or its backwards-compatible alias {% include bc content='Plugins|NeuroAnatomy|Legacy|Simple Neurite Tracer...'%} ) you should be prompted for automatic subscription and download of required dependencies. If not:
+SNT is currently distributed through the [Neuroanatomy](/plugins/neuroanatomy) [update site](/update-sites). The first time you start SNT from Fiji's menu structure ({% include bc content='Plugins|Neuroanatomy|SNT'%}, or its backwards-compatible alias {% include bc content='Plugins|NeuroAnatomy|Legacy|Simple Neurite Tracer...'%} ) you should be prompted for automatic subscription and download of required dependencies. If not:
 
 1.  Run the Fiji [Updater](/plugins/updater) ({% include bc content='Help|Update..'%}, the penultimate entry in the {% include bc content='Help|'%} menu)
 2.  Click *Manage update sites*

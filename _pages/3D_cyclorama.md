@@ -8,7 +8,7 @@ author: Charalambos Rossides
 
 Fiji plugin to digitally unroll deformed tubes. If you use this plugin for your research or industrial applications we kindly ask you to cite our work [1]. 
 
-[1] C. Rossides, S. Pender, and P. Schneider. “3D cyclorama: Digital unrolling of deformed tubes”. In preparation (2021).
+[1] C. Rossides, S. Pender, and P. Schneider. "3D cyclorama: Digital unrolling of deformed tubes". In preparation (2021).
 
 Download
 ---------

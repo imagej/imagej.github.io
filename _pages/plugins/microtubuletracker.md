@@ -6,11 +6,11 @@ description: test description
 
 <img src="/media/MTracker NewLogo-04.png" width="250"/> {% include component-stats content='net.imagej:MTrack' %}
 
-MTrack is a tool, which detects, tracks, and measures the behavior of fluorescently labeled microtubules imaged by TIRF (total internal reflection fluorescence) microscopy. In such an in vitro reconstitution approach, stabilized, non-dynamic microtubule seeds serve as nucleation points for dynamically growing microtubules. 
+MTrack is a tool, which detects, tracks, and measures the behavior of fluorescently labeled microtubules imaged by TIRF (total internal reflection fluorescence) microscopy. In such an in vitro reconstitution approach, stabilized, non-dynamic microtubule seeds serve as nucleation points for dynamically growing microtubules.
 
 MTrack is a bi-modular tool. The first module detects microtubule seeds, tracks the growing microtubule ends and creates trajectories. The second module uses these trajectories to fit models of dynamic behavior (polymerization and depolymerization velocities, catastrophe and rescue frequencies) and is able to compute population statistics such as length distributions.
 
- To make yourself familiar with MTrack, please go to the [Example section](#Example "wikilink"), where you are able to download an example TIRF movie and you will find detailed instruction for running it.
+To make yourself familiar with MTrack, please go to the [Example section](#Example "wikilink"), where you are able to download an example TIRF movie and you will find detailed instruction for running it.
 
 For using MTrack on movies which have very low signal to noise ratio you should create a denoised image to be used for segmentation and upload it along with the original movie. In this setting the microtubules pixels are identified from the segmentation movie while the actual measurement is always done on the original movie. To make yourself familiar with this setting please go to the [Low SNR Example section](#Low_SNR_Example "wikilink") where we detail this approach with a demo movie.
 
@@ -29,7 +29,7 @@ Usage
 
 ### Module 1 - Microtubule Detection & Tracking
 
-A typical dataset consists of a single two-dimensional (2d) image of the non-dynamic microtubule seeds followed by a 2d time-lapse of the dynamically growing microtubules. The file format can be any format readable by Fiji/Bioformats (.tif, .nd2, … ). To run the tracker select {% include bc content='Plugins|MTrack|Microtubule Detection and Tracking'%}
+A typical dataset consists of a single two-dimensional (2d) image of the non-dynamic microtubule seeds followed by a 2d time-lapse of the dynamically growing microtubules. The file format can be any format readable by Fiji/Bioformats (.tif, .nd2, ... ). To run the tracker select {% include bc content='Plugins|MTrack|Microtubule Detection and Tracking'%}
 
 The welcome panel will open.
 
@@ -61,13 +61,13 @@ The program automatically reads the metadata shown as pixel size (micrometer in 
 
 When you input any parameters, please ensure that you use decimal number formatting only.
 
-Press Next to proceed. Three screens and one panel will open. They show the original movie, the preprocessed movie, and the “active image”, which represents the seeds and is typically the first frame of the movie. Every successfully recognized seed will be marked with a red ellipse.
+Press Next to proceed. Three screens and one panel will open. They show the original movie, the preprocessed movie, and the "active image", which represents the seeds and is typically the first frame of the movie. Every successfully recognized seed will be marked with a red ellipse.
 
 #### MSER parameters
 
-The default algorithm to identify the seeds as objects is called Maximally Stable Extremal Regions (MSER)[1]. Read more about [MSER parameters](/plugins/mser-parameters). If a single seed is not recognized or two very close seeds are recognized as one, the user can change the MSER parameters using the adjustable sliders. The effect will be displayed live on the “active image”. Once most seeds are correctly recognized as objects, click “Find endpoints” to detect the ends of each seed with sub-pixel accuracy.
+The default algorithm to identify the seeds as objects is called Maximally Stable Extremal Regions (MSER)[1]. Read more about [MSER parameters](/plugins/mser-parameters). If a single seed is not recognized or two very close seeds are recognized as one, the user can change the MSER parameters using the adjustable sliders. The effect will be displayed live on the "active image". Once most seeds are correctly recognized as objects, click "Find endpoints" to detect the ends of each seed with sub-pixel accuracy.
 
-The end-points will be displayed as green circles. A “Next” button appears on the panel, which allows the user to flip to the next panel.
+The end-points will be displayed as green circles. A "Next" button appears on the panel, which allows the user to flip to the next panel.
 
 <img src="/media/MserSimple.png" width="300"/>
 
@@ -83,9 +83,9 @@ In case an end has been wrongly recognized, the user can deselect an end by left
 
 **Select time**
 
-The user can select the start and end time over which the tracking will be performed by entering the frame numbers. Click “Confirm ends and track” to perform the actual tracking, which will be performed “live” (progress bar will show).
+The user can select the start and end time over which the tracking will be performed by entering the frame numbers. Click "Confirm ends and track" to perform the actual tracking, which will be performed "live" (progress bar will show).
 
-Yellow ellipses mark seeds to be tracked, red ellipses mark seeds which won’t be tracked. Green circles mark ends to be tracked. Orange circles mark user defined ends that will be tracked. During tracking, a yellow crosshair will show the current position of the tracking on each marked microtubule. A "Success" frame will let you know about the end of the tracking. Two movies will be displayed, the “Track ID” movie, which can be used to link the trajectories to individual microtubules and an “Overlay movie”, in which the user can recapitulate the tracking. The trajectory of each end is individually saved as .txt file and numbered according to the track ID. Each trajectory will contain the following information: frame number, total microtubule length (in px and μm), track ID, x and y position (px and μm) and the length increment from the previous frame (px and µm). After successful tracking, the user has the option to save the selected ends, so that the movie can be run (again) in batch mode.
+Yellow ellipses mark seeds to be tracked, red ellipses mark seeds which won't be tracked. Green circles mark ends to be tracked. Orange circles mark user defined ends that will be tracked. During tracking, a yellow crosshair will show the current position of the tracking on each marked microtubule. A "Success" frame will let you know about the end of the tracking. Two movies will be displayed, the "Track ID" movie, which can be used to link the trajectories to individual microtubules and an "Overlay movie", in which the user can recapitulate the tracking. The trajectory of each end is individually saved as .txt file and numbered according to the track ID. Each trajectory will contain the following information: frame number, total microtubule length (in px and μm), track ID, x and y position (px and μm) and the length increment from the previous frame (px and µm). After successful tracking, the user has the option to save the selected ends, so that the movie can be run (again) in batch mode.
 
 ### Module 2 - Microtubule dynamics
 
@@ -141,7 +141,7 @@ Citation
 
 Please note that MTrack is available through Fiji, and is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
-Varun Kapoor, William G. Hirst, Christoph Hentschel, Stephan Preibisch and Simone Reber, “MTrack: Automated Detection and Tracking of Dynamic Microtubules” [2]
+Varun Kapoor, William G. Hirst, Christoph Hentschel, Stephan Preibisch and Simone Reber, "MTrack: Automated Detection and Tracking of Dynamic Microtubules" [2]
 
 References
 ----------

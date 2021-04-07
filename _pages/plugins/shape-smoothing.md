@@ -26,7 +26,7 @@ The plugin at first extracts the contours of all objects found in the input imag
 
 1.  Discrete Fourier transformation is applied to contour data (coordinates of contour points) to gain FDs
 2.  FDs are filtered according to user input – only the ones, which are close to the zero frequency (from both sides), are retained. The other ones are cut off, meaning they are set to 0+0i.
-3.  Filtered (or “kept”) FDs are inverse Fourier transformed to obtain the points of the smoothed contour.
+3.  Filtered (or "kept") FDs are inverse Fourier transformed to obtain the points of the smoothed contour.
 
 For implementing the Fourier transformations [JTransforms](https://github.com/wendykierp/JTransforms) was used.
 
@@ -37,7 +37,7 @@ Parameters
 
 <figure><img src="/media/Shape smoothing GUI.png" title="Shape-Smoothing parameters" width="320" alt="Shape-Smoothing parameters" /><figcaption aria-hidden="true">Shape-Smoothing parameters</figcaption></figure>
 
-At first users have to choose on how they want to define the smoothing: via relative or absolute number of FDs to be “kept”.
+At first users have to choose on how they want to define the smoothing: via relative or absolute number of FDs to be "kept".
 
 **Relative proportion FDs (%):** The relativ number of FDs (relativ to the number of available FDs) will be used for smoothing the contours.
 

@@ -138,7 +138,7 @@ Otherwise, after {% include bc content='Help | Refresh Menus'%}, or a Fiji resta
 
 To run the plugin from a macro, do:
 
-`IJ.run("Duplicate and Scale", "name=[scaled copy] width=500 height=700");`
+`IJ.run("Duplicate and Scale", "name=[scaled copy] width=500 height=700");`
 
 ### From a java plugin
 

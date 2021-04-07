@@ -23,38 +23,38 @@ Tutorial
 
 Let's start writing some JRuby right away - start up the interpreter by going to {% include bc content='Plugins | Scripting | JRuby Interpreter'%}. The interpreter window will pop up, but it may take a little time for the JRuby runtime to be ready. You should initially see the message:
 
-` Starting JRuby ...`
+` Starting JRuby ...`
 
 ... and when it's ready, the line:
 
-` Done.`
+` Done.`
 
 Now you can start typing Ruby expressions into that window, such as:
 
-` >>> "hello there".upcase[1..4]`  
-` ELLO`
+` >>> "hello there".upcase[1..4]`  
+` ELLO`
 
 It would be a good idea to take a quick look at the page on [Scripting Help](/scripting) for tips on using this interpreter window.l
 
 Try loading one of the ImageJ sample images by going to {% include bc content='File | Open Samples | T1 Head (2.4M, 16-bits)'%}. Once you've done that we'll examine the image using JRuby. You can get a reference to the current image with ij.IJ.getImage. Try assigning the result to a variable, like this:
 
-` >>> i = ij.IJ.getImage`  
-` imp[t1-head.tif 256x256x129]`
+` >>> i = ij.IJ.getImage`  
+` imp[t1-head.tif 256x256x129]`
 
 Now we can find out the width and the depth of the stack like this:
 
-` >>> w = i.getWidth`  
-` 256`  
-` >>> d = i.getStackSize`  
-` 129`
+` >>> w = i.getWidth`  
+` 256`  
+` >>> d = i.getStackSize`  
+` 129`
 
 Many of the operations that you might want to perform on the image are available via the ImageProcessor associate with a slice. For example, to invert the current slice do:
 
-` i.getProcessor.invert`
+` i.getProcessor.invert`
 
 That won't actually produce a visible effect on the image until you also call i.updateAndDraw on the image:
 
-` i.updateAndDraw`
+` i.updateAndDraw`
 
 If you scroll through the stack now you should find that one of the slices is inverted.
 
@@ -62,12 +62,12 @@ If you scroll through the stack now you should find that one of the slices is in
 
 You might find the use of "ij.IJ.getImage" above slightly suspicious if you're used to Java and the ImageJ API. "ij" is the Java package name, "IJ" is the class name in that package and "getImage" is a static method in that class which returns a reference to an ImagePlus object representing the current image or null if there is none. How does this work? We have set up the JRuby interpreter in ImageJ so that if a method or class name can't be found it will look for a correponding class or method name in the ij.\* packages. JRuby by default does exactly this for the java.\* classes, so for example the following works without having to explicitly include the java.util.Random class:
 
-` >>> rng = java.util.Random.new`  
-` java.util.Random@bf9a12`  
-` >>> rng.nextInt 1024`  
-` 603`  
-` >>> rng.nextInt 1024`  
-` 94`
+` >>> rng = java.util.Random.new`  
+` java.util.Random@bf9a12`  
+` >>> rng.nextInt 1024`  
+` 603`  
+` >>> rng.nextInt 1024`  
+` 94`
 
 Note that this is an example of creating an object in JRuby; you use the usual Something.new syntax of Ruby, but it creates an object of the standard Java class. Hopefully you're thinking "Excellent!" or something similar at this stage...
 
@@ -75,20 +75,20 @@ Note that this is an example of creating an object in JRuby; you use the usual S
 
 If you need to use classes that aren't in the java.\* or ij.\* hierarchy—or if you are developing JRuby scripts in the [Script Editor](/scripting/script-editor)—you will have to include them explicitly. {% include importing-classes lang='JRuby' %} For example, in the classpath of [Fiji](/fiji) there is a useful class called util.BatchOpener, that has static methods for opening files as arrays of ImagePlus objects (one per channel) without showing them. To use these methods, you would have to do:
 
-` >>> java_import 'util.BatchOpener'`  
-` util.BatchOpener`
+` >>> java_import 'util.BatchOpener'`  
+` util.BatchOpener`
 
 Then you can, for example, do the following:
 
-` >>> a = BatchOpener.open "/home/mark/confocal/test.lsm"`  
-` [Lij.ImagePlus;@b1406b`  
-` >>> a.length`  
-` 2`  
-` >>> a[0].getTitle`  
-` C1-test.lsm`  
-` >>> a[1].getTitle`  
-` C2-test.lsm`  
-` >>> a[1].show`
+` >>> a = BatchOpener.open "/home/mark/confocal/test.lsm"`  
+` [Lij.ImagePlus;@b1406b`  
+` >>> a.length`  
+` 2`  
+` >>> a[0].getTitle`  
+` C1-test.lsm`  
+` >>> a[1].getTitle`  
+` C2-test.lsm`  
+` >>> a[1].show`
 
 Example: Generating a Plasma Cloud
 ----------------------------------
@@ -190,19 +190,19 @@ This is a short example script showing how to convert a directory of LSM files i
 
 To help with porting existing ImageJ macros to JRuby, I have made a start on implementing similarly named JRuby functions to the standard ImageJ macros. These have been defined with idiomatic Ruby function names as well as the "lower camel case" style ImageJ macro names, so instead of "image = ij.IJ.getImage" as used above, you can use either:
 
-` image = getImage`
+` image = getImage`
 
 or:
 
-` image = get_image`
+` image = get_image`
 
 The "run" method may also be particularly useful for calling existing ImageJ plugins and commands. The next section has an example of the use of this. It may be instructive to compare the ["Blobs Demo" macro](https://imagej.net/macros/ConvexHull.txt) from the ImageJ distribution with {% include github repo='fiji' path='plugins/Examples/Blobs\_Demo\_in\_Ruby.rb' label='a version ported to JRuby' %}. The use of the analagous function in JRuby is not always the same - for example, if you compare the invocation of getSelectionCoordinates, you'll find that whereas the ImageJ macro version passes in the output variables:
 
-` getSelectionCoordinates(xCoordinates, yCoordinates);`
+` getSelectionCoordinates(xCoordinates, yCoordinates);`
 
 ... the JRuby version can return two arrays:
 
-` x_coordinates, y_coordinates = get_selection_coordinates`
+` x_coordinates, y_coordinates = get_selection_coordinates`
 
 A note for the interested programmer: About 15% of the macro functions have be done so far, and if anyone wanted to help out with doing the rest, that would be excellent! The source code {% include github repo='fiji' path='plugins/JRuby/imagej.rb' label='can be found here' %}.
 
@@ -221,8 +221,8 @@ This example script can be found in the Plugins/Examples/ folder of Fiji. It wil
 
 In general, the best way to figure out what these options should be is to start the macro recorder with "{% include bc content='Plugins | Macros | Record...'%}" and run the plugin. In this case, the output in the macro recorder looks like this:
 
-` run("3D Project...", "projection=[Brightest Point] axis=Y-Axis slice=1.20 initial=-2 total=4 `  
-`               rotation=4 lower=1 upper=255 opacity=0 surface=100 interior=50 interpolate");`
+` run("3D Project...", "projection=[Brightest Point] axis=Y-Axis slice=1.20 initial=-2 total=4 `  
+`               rotation=4 lower=1 upper=255 opacity=0 surface=100 interior=50 interpolate");`
 
 Hopefully it should be obvious how I derived the 'projection\_options' string in the script from that output. The next part of the script splits the hyperstack generated by that command and merges it with appropriate colours. Similarly this can be figured out with the help of the macro recorder, the only tricky bit being that one has to predict the names of the images that are output from each step. There are further helpful comments in the script itself.
 

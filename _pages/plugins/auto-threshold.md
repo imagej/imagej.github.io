@@ -76,7 +76,7 @@ This is an alternative implementation of Huang's method by J. Schindelin with an
 
 ### Intermodes
 
-This assumes a bimodal histogram. The histogram is iteratively smoothed using a running average of size 3, until there are only two local maxima: j and k. The threshold t is then computed as (j+k)/2. Images with histograms having extremely unequal peaks or a broad and ﬂat valley are unsuitable for this method. method
+This assumes a bimodal histogram. The histogram is iteratively smoothed using a running average of size 3, until there are only two local maxima: j and k. The threshold t is then computed as (j+k)/2. Images with histograms having extremely unequal peaks or a broad and flat valley are unsuitable for this method. method
 
 -   {% include citation last='Prewitt' first='JMS' last2='Mendelsohn' first2='ML' year='1966' journal='Annals of the New York Academy of Sciences' url='http://www3.interscience.wiley.com/journal/119758871/abstract?CRETRY=1&SRETRY=0' title='The analysis of cell images' volume='128' pages='1035-1053' %}
 
@@ -90,7 +90,7 @@ Iterative procedure based on the isodata algorithm of:
 
 The procedure divides the image into object and background by taking an initial threshold, then the averages of the pixels at or below the threshold and pixels above are computed. The averages of those two values are computed, the threshold is incremented and the process is repeated until the threshold is larger than the composite average. That is,
 
-`threshold = (average background + average objects)/2. `
+`threshold = (average background + average objects)/2. `
 
 Several implementations of this method exist. See the source code for further comments.
 
@@ -138,7 +138,7 @@ Ported from Antti Niemistö's [MATLAB](MATLAB) code. See [here](http://www.cs.tu
 
 Similarly to the Intermodes method, this assumes a bimodal histogram. The histogram is iteratively smoothed using a running average of size 3, until there are only two local maxima. The threshold t is such that yt−1 &gt; yt &lt;= yt+1.
 
-Images with histograms having extremely unequal peaks or a broad and ﬂat valley are unsuitable for this method.
+Images with histograms having extremely unequal peaks or a broad and flat valley are unsuitable for this method.
 
 -   {% include citation last='Prewitt' first='JMS' last2='Mendelsohn' first2='ML' year='1966' journal='Annals of the New York Academy of Sciences' url='http://www3.interscience.wiley.com/journal/119758871/abstract?CRETRY=1&SRETRY=0' title='The analysis of cell images' volume='128' pages='1035-1053' %}
 

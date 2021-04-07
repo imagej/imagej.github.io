@@ -43,20 +43,20 @@ What are plugins (in terms of menu entries)?
 
 A *plugins.config* file looks like this:
 
-`# Comments (such as title, author, etc)`  
+`# Comments (such as title, author, etc)`  
 `#`  
-`# The other lines have this format:`  
-`#  Menu, “Menu Item”, ClassName`  
-`# Example:`  
+`# The other lines have this format:`  
+`#  Menu, "Menu Item", ClassName`  
+`# Example:`  
 
-`Plugins > Analyze, “Plot”, fiji.Plot`
+`Plugins > Analyze, "Plot", fiji.Plot`
 
 A class can be reused for multiple menu entries, by passing an optional argument in the *plugins.config* file:
 
-`# Example how to reuse a Java class`  
+`# Example how to reuse a Java class`  
 
-`Help, “Bug report”, fiji.Send(“bug”)`  
-`Help, “Contact”, fiji.Send(“contact”)`
+`Help, "Bug report", fiji.Send("bug")`  
+`Help, "Contact", fiji.Send("contact")`
 
 What are plugins (in terms of Java code)?
 -----------------------------------------
@@ -146,10 +146,10 @@ The class *IJ*
 The class {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/IJ.java' label='ij.IJ' %} is a convenience class with many static functions. Two of them are particularly useful for debugging:
 
     // output into the Log window
-    IJ.log(“Hello, World!”);
+    IJ.log("Hello, World!");
 
     // Show a message window
-    IJ.showMessage(“Hello, World!”);
+    IJ.showMessage("Hello, World!");
 
 The class *ImageJ*
 ------------------
@@ -158,7 +158,7 @@ The class {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/I
 
     // check if ImageJ is used interactively
     if (IJ.getInstance() != null)
-        IJ.showMessage(“Interactive!”);
+        IJ.showMessage("Interactive!");
 
 Typically, all you do with that instance is to test whether ImageJ is used as a library (in which case the instance is *null*).
 
@@ -168,11 +168,11 @@ The class *WindowManager*
 Use the class {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/WindowManager.java' label='ij.WindowManager' %} to access the ImageJ windows / images:
 
     // how many windows / images are active?
-    IJ.log(“There are “
+    IJ.log("There are "
         + WindowManager.getNonImageWindows().length
-        + “ windows and “
+        + " windows and "
         + WindowManager.getImageCount()
-        + “ images!”);
+        + " images!");
 
 When implementing a filter plugin, you usually do not need to access *WindowManager* directly.
 
@@ -271,8 +271,8 @@ This example implements a method that shows a gradient along a given angle. You 
     int w = 512, h = 512;
     ImageStack stack = new ImageStack(w, h);
     for (int i = 0; i < 180; i++)
-        stack.addSlice(“”, gradient(i / 180f * 2 * Math.PI, w, h));
-    ImagePlus image = new ImagePlus(“stack”, stack);
+        stack.addSlice("", gradient(i / 180f * 2 * Math.PI, w, h));
+    ImagePlus image = new ImagePlus("stack", stack);
     // you do not need to show intermediate images
     image.show();
 
@@ -288,7 +288,7 @@ This code snippet shows you how to update the progress bar and the status text:
     }
 
     // show something in the status bar
-    IJ.showStatus(“Hello, world!”);
+    IJ.showStatus("Hello, world!");
 
 **Note:** Calling *IJ.showProgress(n, n);* will hide the progress bar; Therefore, it makes sense to update the progress bar at the <u>end</u> of a loop iteration, so that after the last iteration, the progress bar is hidden.
 
@@ -312,7 +312,7 @@ You can show a plot window very easily using the [Plot](http://jenkins.imagej.ne
         double[] x = new double[values.length];
         for (int i = 0; i < x.length; i++)
             x[i] = i;
-        Plot plot = new Plot(“Plot window”, “x”, “values”, x, values);
+        Plot plot = new Plot("Plot window", "x", "values", x, values);
         plot.show();
     }
 
@@ -322,7 +322,7 @@ It is almost as easy to put multiple plots into one window:
         double[] x = new double[values.length];
         for (int i = 0; i < x.length; i++)
             x[i] = i;
-        Plot plot = new Plot(“Plot window”, “x”, “values”, x, values);
+        Plot plot = new Plot("Plot window", "x", "values", x, values);
         plot.setColor(Color.RED);
         plot.draw();
         plot.addPoints(x, values2, Plot.LINE);
@@ -351,10 +351,10 @@ Whenever your plugin quantifies things in the images, you might want to output t
     }
     for (int i = 1; i <= 10; i++) {
         rt.incrementCounter();
-        rt.addValue(“i”, i);
-        rt.addValue(“log”, Math.log(i));
+        rt.addValue("i", i);
+        rt.addValue("log", Math.log(i));
     }
-    rt.show(“Results”);
+    rt.show("Results");
 
 Regions of interest
 -------------------
@@ -363,7 +363,7 @@ You can access the ROIs in the following fashion:
 
         // testing ROI type
         if (roi != null && roi.getType() == Roi.POLYGON)
-            IJ.log(“This is a polygon!”);
+            IJ.log("This is a polygon!");
         showCoordinates((PolygonRoi)roi);
 
     ...
@@ -376,7 +376,7 @@ You can access the ROIs in the following fashion:
         Rectangle bounds = polygon.getBounds();
         for (int i = 0; i < x.length; i++)
             // x, y are relative to the bounds' origin
-            IJ.log(“point ” + i + “: “ + (x[i] + bounds.x) + (y[i] + bounds.y));
+            IJ.log("point " + i + ": " + (x[i] + bounds.x) + (y[i] + bounds.y));
     }
 
 **Note:** If the image has no ROI set, then *getRoi()* will return *null*, so you <u>must</u> check whether *roi != null* before accessing fields or methods on the object.

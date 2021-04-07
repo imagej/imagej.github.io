@@ -32,7 +32,7 @@ Usage
 
 For an overview of supported options, run:
 
-`./ImageJ-xyz --help`
+`./ImageJ-xyz --help`
 
 where xyz is your platform.
 

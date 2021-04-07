@@ -5,7 +5,7 @@ description: test description
 ---
 
 
-ImageJ has been extended with thousands of {% include wikipedia title='Plug-in (computing)' text='plugins'%}: special-purpose software components that extend ImageJ’s functionality—e.g., by offering additional commands via menu entries.
+ImageJ has been extended with thousands of {% include wikipedia title='Plug-in (computing)' text='plugins'%}: special-purpose software components that extend ImageJ's functionality—e.g., by offering additional commands via menu entries.
 
 Available plugins
 -----------------
@@ -57,14 +57,14 @@ E.g.,
 
 -   on 64-bit Linux:
 
-`$IJ_DIR/ImageJ-linux64 -Dij1.plugin.dirs=$IJ_DIR/jars:$IJ_DIR/plugins:$HOME/.plugins`
+`$IJ_DIR/ImageJ-linux64 -Dij1.plugin.dirs=$IJ_DIR/jars:$IJ_DIR/plugins:$HOME/.plugins`
 
 -   On OS X:
 
-`$IJ_DIR/Contents/MacOS/ImageJ-macosx -Dij1.plugin.dirs=$IJ_DIR/jars:$IJ_DIR/plugins:$HOME/.plugins`
+`$IJ_DIR/Contents/MacOS/ImageJ-macosx -Dij1.plugin.dirs=$IJ_DIR/jars:$IJ_DIR/plugins:$HOME/.plugins`
 
 -   On 64-bit Windows:
 
-`%IJ_DIR%\ImageJ-win64 -Dij1.plugin.dirs=%IJ_DIR%\jars;%IJ_DIR%\plugins;%HOMEDRIVE%%HOMEPATH%\.plugins`
+`%IJ_DIR%\ImageJ-win64 -Dij1.plugin.dirs=%IJ_DIR%\jars;%IJ_DIR%\plugins;%HOMEDRIVE%%HOMEPATH%\.plugins`
 
 Where `$IJ_DIR` (or `%IJ_DIR%` on Windows) is the path to your ImageJ installation.

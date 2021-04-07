@@ -19,7 +19,7 @@ Execute external programs
 
 The macro language allows executing programs, and capturing their output:
 
-`output = exec("dir /w");`
+`output = exec("dir /w");`
 
 Quickly see return values
 -------------------------

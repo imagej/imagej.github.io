@@ -14,12 +14,12 @@ These tools have been developed to facilitate blind i.e., unbiased analysis of (
 Installation
 ------------
 
-To install on Fiji, check the update site called “**Blind Analysis Tools**”. To install on ImageJ 1.x, download the .jar file [here](https://github.com/ahtsaJ/Blind-Analysis-Tools/releases/tag/v1.0), save it in the Plugins folder and restart ImageJ. “Blind Analysis Tools” will appear under the Plugins menu.
+To install on Fiji, check the update site called "**Blind Analysis Tools**". To install on ImageJ 1.x, download the .jar file [here](https://github.com/ahtsaJ/Blind-Analysis-Tools/releases/tag/v1.0), save it in the Plugins folder and restart ImageJ. "Blind Analysis Tools" will appear under the Plugins menu.
 
 File Name Encrypter
 -------------------
 
-This tool copies randomly selected (image) files to a new subfolder (output folder, name: “BlindRandomFiles” + timestamp) with encrypted names. A mapping file (name: “Mappings” + timestamp) is also saved, which maps encrypted names to original names. The tool first asks to choose a directory containing files and to select file extensions of interest. Only the files with the selected extensions are considered hereafter. The number of available files (*n*) is displayed at the top. The tool offers basic and advance modes.
+This tool copies randomly selected (image) files to a new subfolder (output folder, name: "BlindRandomFiles" + timestamp) with encrypted names. A mapping file (name: "Mappings" + timestamp) is also saved, which maps encrypted names to original names. The tool first asks to choose a directory containing files and to select file extensions of interest. Only the files with the selected extensions are considered hereafter. The number of available files (*n*) is displayed at the top. The tool offers basic and advance modes.
 
 1.  In **basic mode**, only one parameter i.e., the number of files to be copied/encrypted is required.
 
@@ -29,7 +29,7 @@ This tool copies randomly selected (image) files to a new subfolder (output fold
 
 </center>
 
-1.  In **advance mode**, you can decide if files should be grouped. When grouping is set to “No”, each file is treated as an independent entity. To group files, set the option to “Yes” and provide a substring.
+1.  In **advance mode**, you can decide if files should be grouped. When grouping is set to "No", each file is treated as an independent entity. To group files, set the option to "Yes" and provide a substring.
 
 <center>
 
@@ -81,7 +81,7 @@ This tool facilitates blind image analysis by randomly opening an image and disp
 
 </center>
 
-It is possible to make a **decision** about an opened image, for example, weak/medium/strong or small/large, etc. You can simply type your own decision choices at the beginning by pressing the “Set” button. Provide your decision choices as a comma-separated list and press OK. Note that once you press the “Open First Image” button, the “Set” button and the macro text box will be disabled.
+It is possible to make a **decision** about an opened image, for example, weak/medium/strong or small/large, etc. You can simply type your own decision choices at the beginning by pressing the "Set" button. Provide your decision choices as a comma-separated list and press OK. Note that once you press the "Open First Image" button, the "Set" button and the macro text box will be disabled.
 
 <center>
 
@@ -89,7 +89,7 @@ It is possible to make a **decision** about an opened image, for example, weak/m
 
 </center>
 
-Click on the “Open First/Next Image” button to open the next image for analysis. Once you have analyzed an adequate number of files (&lt;= *n*), press done to finish the analysis. During this analysis, macro commands are recorded in the background. A decisions file (name: “BlindAnalyse&Decide\_Log” + timestamp) and a log file (name: “BlindAnalyse&Decide\_Decisions” + timestamp) will be saved in the input folder containing a detailed report of your analysis including:
+Click on the "Open First/Next Image" button to open the next image for analysis. Once you have analyzed an adequate number of files (&lt;= *n*), press done to finish the analysis. During this analysis, macro commands are recorded in the background. A decisions file (name: "BlindAnalyse&Decide\_Log" + timestamp) and a log file (name: "BlindAnalyse&Decide\_Decisions" + timestamp) will be saved in the input folder containing a detailed report of your analysis including:
 
 :\* Start and end time of the analysis
 

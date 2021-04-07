@@ -29,7 +29,7 @@ Templates vs Generics
 
 Java's generics are implemented using erasure, which means that generics help catching bugs due to compile-time checks, but the compiled classes will actually have forgotten about the generic parameters. In particular, you cannot use the generic parameter to instantiate classes, i.e. this does not work:
 
-`public`<T>` T create() { return new T(); } // does _not_ work`
+`public`<T>` T create() { return new T(); } // does _not_ work`
 
 The upside of this limitation is that you will never get as cryptic multi-page long error messages as with C++.
 
@@ -40,8 +40,8 @@ Java has no pointers
 
 In C++, you often find constructs like this:
 
-`const char *string = "Hello, World!";`  
-`some_func(string + 7);`
+`const char *string = "Hello, World!";`  
+`some_func(string + 7);`
 
 This is not possible in Java. Instead, you have to use String's substring() method.
 
@@ -70,7 +70,7 @@ Objects are not instantiated by default
 
 When declaring a variable like this:
 
-`ImagePlus image;`
+`ImagePlus image;`
 
 Java does not initialize the variable automatically. Remember, objects are passed by reference, so *image* is just an uninitialized reference to an *ImagePlus* at this stage.
 
@@ -95,23 +95,23 @@ Not taking advantage of Java's syntax
 
 Many C++ programmers think of Java as a C++ dialect, forgetting that there are convenient syntax constructs. For example, you will often find code such as
 
-`for (int i = 0; i < array.length; i++) {`  
-`        String string = array[i];`  
-`        // do something`  
+`for (int i = 0; i < array.length; i++) {`  
+`        String string = array[i];`  
+`        // do something`  
 `}`
 
 or even worse:
 
-`Iterator`<String>` iter = list.iterator();`  
-`while (iter.hasNext()) {`  
-`       String string = iter.next();`  
-`       // do something`  
+`Iterator`<String>` iter = list.iterator();`  
+`while (iter.hasNext()) {`  
+`       String string = iter.next();`  
+`       // do something`  
 `}`
 
 rather than using the Java syntax (available since Java 1.5):
 
-`for (String string : array)`  
-`        // do something`
+`for (String string : array)`  
+`        // do something`
 
 Not taking advantage of Java's standard libraries
 -------------------------------------------------

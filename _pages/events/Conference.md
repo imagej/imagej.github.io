@@ -18,7 +18,7 @@ As the community has grown, the ecosystem of imaging software tools has grown in
 
 #### I2K 2020
 
-“From Images to Knowledge with ImageJ & Friends (I2K)” was originally scheduled for September 17-18, 2020 in Madison, WI. Due to travel restrictions during this continued health crisis, this in-person meeting in Madison, WI has been postponed (see details below). However, we are pleased to announce an online I2K meeting at HHMI Janelia this **Nov 30-Dec 2, 2020**. For more information, follow [this link](https://www.janelia.org/you-janelia/conferences/from-images-to-knowledge-with-imagej-friends-virtual).
+"From Images to Knowledge with ImageJ & Friends (I2K)" was originally scheduled for September 17-18, 2020 in Madison, WI. Due to travel restrictions during this continued health crisis, this in-person meeting in Madison, WI has been postponed (see details below). However, we are pleased to announce an online I2K meeting at HHMI Janelia this **Nov 30-Dec 2, 2020**. For more information, follow [this link](https://www.janelia.org/you-janelia/conferences/from-images-to-knowledge-with-imagej-friends-virtual).
 
 This online version, similar to the past in-person meetings, is open to all and will cover the vast ecosystem of open-source imaging software tools. We are excited by the online format of I2K 2020 and anticipate it will help shape the format of I2K 2021 as well.
 

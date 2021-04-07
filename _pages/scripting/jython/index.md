@@ -76,7 +76,7 @@ The following list links to documentation of the used Python features:
 -   [Generator Expressions](https://www.python.org/dev/peps/pep-0289/)
 -   [\*\* (double star) and \* (star) parameters](http://stackoverflow.com/questions/36901/what-does-double-star-and-star-do-for-python-parameters)
 -   [Top-level script environment (\_\_main\_\_)](https://docs.python.org/2/library/%5F%5Fmain%5F%5F.html)
--   [Purpose of the single underscore “\_” variable](http://stackoverflow.com/questions/5893163/what-is-the-purpose-of-the-single-underscore-variable-in-python)
+-   [Purpose of the single underscore "\_" variable](http://stackoverflow.com/questions/5893163/what-is-the-purpose-of-the-single-underscore-variable-in-python)
 
 {% include github-embed org='imagej' repo='imagej-scripting' path='src/main/resources/script\_templates/Tutorials/Wiki\_Jython\_Tutorial\_1.py' %}
 

@@ -12,23 +12,23 @@ To accomplish that the following code need to be added to your pom:
 
 <execution>
 
-`   `<id>`kapt`</id>  
-`   `<goals>  
-`       `<goal>`kapt`</goal>  
-`   `</goals>  
-`   `<configuration>  
-`       `<sourceDirs>  
-`           `<sourceDir>`src/main/kotlin`</sourceDir>  
-`           `<sourceDir>`src/main/java`</sourceDir>  
-`       `</sourceDirs>  
-`       `<annotationProcessorPaths>  
-`           `<annotationProcessorPath>  
-`               `<groupId>`net.imagej`</groupId>  
-`               `<artifactId>`imagej`</artifactId>  
-`               `<version>`2.0.0-rc-68`</version>  
-`           `</annotationProcessorPath>  
-`       `</annotationProcessorPaths>  
-`   `</configuration>
+`   `<id>`kapt`</id>  
+`   `<goals>  
+`       `<goal>`kapt`</goal>  
+`   `</goals>  
+`   `<configuration>  
+`       `<sourceDirs>  
+`           `<sourceDir>`src/main/kotlin`</sourceDir>  
+`           `<sourceDir>`src/main/java`</sourceDir>  
+`       `</sourceDirs>  
+`       `<annotationProcessorPaths>  
+`           `<annotationProcessorPath>  
+`               `<groupId>`net.imagej`</groupId>  
+`               `<artifactId>`imagej`</artifactId>  
+`               `<version>`2.0.0-rc-68`</version>  
+`           `</annotationProcessorPath>  
+`       `</annotationProcessorPaths>  
+`   `</configuration>
 
 </execution>
 
@@ -42,13 +42,13 @@ If gradle is your built system of choice, then the following code need to be add
 
 plugins {
 
-`   id "org.jetbrains.kotlin.kapt" version "1.3.10"`
+`   id "org.jetbrains.kotlin.kapt" version "1.3.10"`
 
 }
 
 dependencies {
 
-`   kapt 'net.imagej:imagej:2.0.0-rc-68'`
+`   kapt 'net.imagej:imagej:2.0.0-rc-68'`
 
 }
 

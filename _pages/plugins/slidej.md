@@ -24,7 +24,7 @@ To install SlideJ, just put it in the Plugins folder of ImageJ. The only require
 
 *Instructions*
 
-The interface of the plugin is a dialog that resembles the one implemented in ImageJ for batch macro execution. The user is allowed to process multiple images present in a folder and store the eventual results in a different folder by setting up paths in the “Input…” and “Output…” fields, respectively. A macro selection button allows the user to choose the file containing the macro to be executed on the tiles.
+The interface of the plugin is a dialog that resembles the one implemented in ImageJ for batch macro execution. The user is allowed to process multiple images present in a folder and store the eventual results in a different folder by setting up paths in the "Input..." and "Output..." fields, respectively. A macro selection button allows the user to choose the file containing the macro to be executed on the tiles.
 
 [center](File_SlideJdialog.png)
 

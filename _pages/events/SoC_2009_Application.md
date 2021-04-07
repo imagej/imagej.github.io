@@ -64,7 +64,7 @@ We have not applied in the past, but one of our mentors has experience from serv
 What license does your project use?
 -----------------------------------
 
-`GPL (GNU Public License), version 2`
+`GPL (GNU Public License), version 2`
 
 What is the URL for your ideas page?
 ------------------------------------

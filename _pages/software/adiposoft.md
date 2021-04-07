@@ -35,14 +35,14 @@ Go to the Plugins menu in Fiji, and click on Adiposoft. This will open the main 
 
 ### Selection of Parameters
 
-On Adiposoft’s main dialogue window you can choose several parameters for the analysis. Namely:
+On Adiposoft's main dialogue window you can choose several parameters for the analysis. Namely:
 
--   Auto mode: By checking on the “Auto mode” box, you choose to run Adiposoft in completely automated mode, without any user intervention, as it is described in the “Automated analysis” section below.
--   Manual mode: If you uncheck the “Auto mode” box, you choose to have the opportunity to manually edit the results of the initial automated segmentation. This includes manually adding, deleting, splitting or merging adipocytes. The editor is activated after the initial automated analysis is done. This option is only available when the images are analyzed one by one (“One Image), and not in batch mode (“A Directory” or “A list of nested Directories – Batch Mode” ). The editing actions will be explained in the section “Manual analysis”.
--   Output units. By default, the areas and diameters of the adipocytes are calculated and reported in pixels. If the calibration of the images is known, you can select “Microns”, but be ready to introduce the number of microns that correspond to one pixel of your images in the dialogue window that will appear when you press OK.
--   How many images you want to analyze. You can choose to run Adiposoft to analyze one image at a time (“One Image”), a directory that contains all the images that you want to analyze (“A Directory”) or a directory and all directories below (“A list of nested Directories – Batch Mode”).
+-   Auto mode: By checking on the "Auto mode" box, you choose to run Adiposoft in completely automated mode, without any user intervention, as it is described in the "Automated analysis" section below.
+-   Manual mode: If you uncheck the "Auto mode" box, you choose to have the opportunity to manually edit the results of the initial automated segmentation. This includes manually adding, deleting, splitting or merging adipocytes. The editor is activated after the initial automated analysis is done. This option is only available when the images are analyzed one by one ("One Image), and not in batch mode ("A Directory" or "A list of nested Directories – Batch Mode" ). The editing actions will be explained in the section "Manual analysis".
+-   Output units. By default, the areas and diameters of the adipocytes are calculated and reported in pixels. If the calibration of the images is known, you can select "Microns", but be ready to introduce the number of microns that correspond to one pixel of your images in the dialogue window that will appear when you press OK.
+-   How many images you want to analyze. You can choose to run Adiposoft to analyze one image at a time ("One Image"), a directory that contains all the images that you want to analyze ("A Directory") or a directory and all directories below ("A list of nested Directories – Batch Mode").
 
-After pressing OK, you will be prompted to select the image that you want to analyze, the directory that contains the images -if you choose to analyze a “A Directory”- or the parent directory -if you choose to analyze “A list of nested Directories”-.
+After pressing OK, you will be prompted to select the image that you want to analyze, the directory that contains the images -if you choose to analyze a "A Directory"- or the parent directory -if you choose to analyze "A list of nested Directories"-.
 
 Next you will be prompted to choose –or create- the output directory where you want to store the results of the analysis.
 
@@ -50,7 +50,7 @@ Next you will be prompted to choose –or create- the output directory where you
 
 If you choose to run Adiposoft in Automated mode, the program analyzes the selected images, and stores the results in the output directory.
 
-If you choose to analyze “One Image”, the output directory will contain an image with the results of the segmentation overlaid on the original image and an excel file containing the complete list of adipocytes with their area and equivalent diameter. If you choose to analyze “A Directory”, the output directory will contain an excel file with the list of adipocytes of all the images, with their area and parameters, and a directory named as the original input directory containing all the segmented images and one excel file per image, containing the results of that particular image. If you choose to analyze “A list of Directories”, the output folder will contain a tree of directories replicating the input tree, but containing the results of the analysis.
+If you choose to analyze "One Image", the output directory will contain an image with the results of the segmentation overlaid on the original image and an excel file containing the complete list of adipocytes with their area and equivalent diameter. If you choose to analyze "A Directory", the output directory will contain an excel file with the list of adipocytes of all the images, with their area and parameters, and a directory named as the original input directory containing all the segmented images and one excel file per image, containing the results of that particular image. If you choose to analyze "A list of Directories", the output folder will contain a tree of directories replicating the input tree, but containing the results of the analysis.
 
 ### Manual analysis
 

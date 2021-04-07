@@ -17,7 +17,7 @@ Please note that the Stitching, as well as other plugins available through Fiji,
 Introduction
 ------------
 
-There is an increasing demand to image large biological specimen at high resolution. Typically those specimen do not fit in the field of view of the microscope. To overcome this drawback, motorized stages moving the sample are used to create a tiled scan of the whole specimen. The physical coordinates provided by the microscope stage are not precise enough to allow reconstruction (”Stitching”) of the whole image from individual image stacks.
+There is an increasing demand to image large biological specimen at high resolution. Typically those specimen do not fit in the field of view of the microscope. To overcome this drawback, motorized stages moving the sample are used to create a tiled scan of the whole specimen. The physical coordinates provided by the microscope stage are not precise enough to allow reconstruction ("Stitching") of the whole image from individual image stacks.
 
 The Stitching Plugin (2d-5d) is able to reconstruct big images/stacks from an arbitrary number of tiled input images/stacks, making use of the Fourier Shift Theorem that computes all possible translations (x, y\[, z\]) between two 2d/3d images at once, yielding the best overlap in terms of the cross correlation measure. If more than two input images/stacks are used the correct placement of all tiles is determined using a global optimization. The stitching is able to align an arbitrary amount of channels and supports timelapse registration. To remove brightness differences at the tile borders, non-linear intensity blending can be applied.
 
@@ -196,15 +196,15 @@ You might notice that the Grid/Collection Stitching does not offer any options f
 
 If you still have a known arrangement of tiles that is not covered by any of the grid methods, you can create yourself a tile configuration file which roughly describes the arrangement including the overlap. You can use this as input for the Grid/Collection stitching (option **Positions from file -&gt; Defined by TileConfiguration**) to refine it and find the correct alignment. Here is an example TileConfiguration.txt:
 
-`# Define the number of dimensions we are working on`  
-`dim = 3`  
-`# Define the image coordinates (in pixels)`  
-`img_73.tif; ; (0.0, 0.0, 0.0)`  
-`img_74.tif; ; (409.0, 0.0, 0.0)`  
-`img_75.tif; ; (0.0, 409.0, 0.0)`  
-`img_76.tif; ; (409.0, 409.0, 0.0)`  
-`img_77.tif; ; (0.0, 818.0, 0.0)`  
-`img_78.tif; ; (409.0, 818.0, 0.0)`
+`# Define the number of dimensions we are working on`  
+`dim = 3`  
+`# Define the image coordinates (in pixels)`  
+`img_73.tif; ; (0.0, 0.0, 0.0)`  
+`img_74.tif; ; (409.0, 0.0, 0.0)`  
+`img_75.tif; ; (0.0, 409.0, 0.0)`  
+`img_76.tif; ; (409.0, 409.0, 0.0)`  
+`img_77.tif; ; (0.0, 818.0, 0.0)`  
+`img_78.tif; ; (409.0, 818.0, 0.0)`
 
 ### I want to define a different overlap for X and Y using a Grid-Layout
 

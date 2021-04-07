@@ -97,41 +97,41 @@ For the purpose of testing, you can download some sample video files.
 
 NanoTrackJ settings which works well for this video:
 
-`Parameter                            Value`  
+`Parameter                            Value`  
 `-------------------------------------------------`  
-`Center estimator                     Maxima`  
-`Diffusion coefficient estimator      Covariance`  
-`Min. expected particle size          90 nm`  
-`Search radius                        13.34 px`  
-`Min. number of steps per track       20`  
-`Temperature                          22,5 °C`  
-`Pixel size                           164 nm`  
-`Frame rate                           30 FPS`  
-`Linear drift corrected               True`  
-`Walker's method used                 True`  
-`Walker's method min size             800 nm`  
-`Mean size (Maxima Dialog)            3`  
-`Tolerance (Maxima Dialog)            15`
+`Center estimator                     Maxima`  
+`Diffusion coefficient estimator      Covariance`  
+`Min. expected particle size          90 nm`  
+`Search radius                        13.34 px`  
+`Min. number of steps per track       20`  
+`Temperature                          22,5 °C`  
+`Pixel size                           164 nm`  
+`Frame rate                           30 FPS`  
+`Linear drift corrected               True`  
+`Walker's method used                 True`  
+`Walker's method min size             800 nm`  
+`Mean size (Maxima Dialog)            3`  
+`Tolerance (Maxima Dialog)            15`
 
 2\. [Video recording of freely diffusing 60 nm and 80 nm gold nanoparticles using dark field microscope](https://figshare.com/articles/Video_recording_of_freely_diffusing_60_nm_gold_nanoparticles_using_dark_field_microscopy/879664)
 
 NanoTrackJ settings which works well for this video:
 
-`Parameter                            Value`  
+`Parameter                            Value`  
 `-------------------------------------------------`  
-`Center estimator                     Maxima`  
-`Diffusion coefficient estimator      Covariance`  
-`Min. expected particle size          50 nm`  
-`Search radius                        18.03 px`  
-`Min. number of steps per track       20`  
-`Temperature                          24 °C`  
-`Pixel size                           182 nm`  
-`Frame rate                           25 FPS`  
-`Linear drift corrected               True`  
-`Walker's method used                 True`  
-`Walker's method min size             800 nm`  
-`Mean size (Maxima Dialog)            4`  
-`Tolerance (Maxima Dialog)            12`
+`Center estimator                     Maxima`  
+`Diffusion coefficient estimator      Covariance`  
+`Min. expected particle size          50 nm`  
+`Search radius                        18.03 px`  
+`Min. number of steps per track       20`  
+`Temperature                          24 °C`  
+`Pixel size                           182 nm`  
+`Frame rate                           25 FPS`  
+`Linear drift corrected               True`  
+`Walker's method used                 True`  
+`Walker's method min size             800 nm`  
+`Mean size (Maxima Dialog)            4`  
+`Tolerance (Maxima Dialog)            12`
 
 References
 ----------

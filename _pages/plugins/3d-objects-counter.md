@@ -32,7 +32,7 @@ This plugin:
     -   Centroids' map;
     -   Centres of masses' map.
 
-As ImageJ's “Analyze Particles” function, 3D-OC also has a “redirect to” option, allowing one image to be taken as a mask to quantify intensity related parameters on a second image.
+As ImageJ's "Analyze Particles" function, 3D-OC also has a "redirect to" option, allowing one image to be taken as a mask to quantify intensity related parameters on a second image.
 
 Plugin's manual
 ---------------

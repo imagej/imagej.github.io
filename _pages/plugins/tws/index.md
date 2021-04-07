@@ -220,7 +220,7 @@ The Weka button launches the Weka GUI Chooser, where we can start all the applic
 -   **KnowledgeFlow**: this environment supports essentially the same functions as the Explorer but with a drag-and-drop interface. One advantage is that it supports incremental learning.
 -   **SimpleCLI**: provides a simple command-line interface that allows direct execution of [Weka](http://www.cs.waikato.ac.nz/ml/weka/) commands for operating systems that do not provide their own command line interface.
 
-For a complete step-by-step description on how to compare classifiers for image segmentation using the [Weka](http://www.cs.waikato.ac.nz/ml/weka/) Explorer, have a look at the [Trainable Weka Segmentation - How to compare classifiers‎](Trainable_Weka_Segmentation_-_How_to_compare_classifiers‎) tutorial.
+For a complete step-by-step description on how to compare classifiers for image segmentation using the [Weka](http://www.cs.waikato.ac.nz/ml/weka/) Explorer, have a look at the [Trainable Weka Segmentation - How to compare classifiers](Trainable_Weka_Segmentation_-_How_to_compare_classifiers) tutorial.
 
 ### Macro language compatibility
 

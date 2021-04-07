@@ -16,13 +16,13 @@ Automatic particle counting can be done if the image does not have too many indi
 
 [Segmentation](/techniques/segmentation), or the ability to distinguish an object from its background, can be a difficult issue to deal with. Once this has been done, however, the object can then be analyzed.
 
-**RAW Threshold Watershed “AnalyzeParticles”** ![266\*177px](/media/Raw Threshold Watershed AnalyzeParticles2.jpg "fig:266*177px")
+**RAW Threshold Watershed "AnalyzeParticles"** ![266\*177px](/media/Raw Threshold Watershed AnalyzeParticles2.jpg "fig:266*177px")
 
 ### Setting a threshold
 
 **5.1.1.1 Manual thresholding**
 
-Automatic particle analysis requires a “binary”, black and white, image. A threshold range is set to tell the objects of interest apart from the background. All pixels in the image whose values lie under the threshold are converted to black and all pixels with values above the threshold are converted to white, or vice-versa.
+Automatic particle analysis requires a "binary", black and white, image. A threshold range is set to tell the objects of interest apart from the background. All pixels in the image whose values lie under the threshold are converted to black and all pixels with values above the threshold are converted to white, or vice-versa.
 
 <table><tbody><tr class="odd"><td style="border:none;padding:0in;"><p> {% include thumbnail src='/media/Black white threshold.png' title='left'%}</p></td><td style="border:none;padding:0in;"><p> There are several ways to set thresholds. Monochrome images are most simply thresholded via the menu command {% include bc content='Image | Adjust | Threshold'%}. The threshold can be set using the slider bars. The pixels within the threshold range are displayed in red. When you are satisfied with the threshold settings, you can then hit <em>Apply</em>. This will permanently apply the threshold settings and convert the image to binary. You have different options for setting a manual threshold. The drop-down menu set to <em>Default</em> allows you to choose between <em>Default</em> and 15 other threshold techniques. The drop-down menu set to <em>Red</em> allows you to choose between a red on white color scheme, a black on white color scheme, or an over and under color scheme. The <em>Dark Background</em> box will flip the foreground color with the background color. You can also choose to check the Stack histogram box to produce a histogram for an entire stack.</p></td></tr></tbody></table>
 

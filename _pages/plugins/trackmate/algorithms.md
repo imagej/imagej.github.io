@@ -203,13 +203,13 @@ Please note that the feature values listed in this paragraph are only properly d
 
 This feature value reports the full distance the particle traveled throughout the track. It is computed by taking the sum of the link distance (distance from the source spot to the target spot of the link, for all links).
 
-It really report how much the particle 'walked'. For instance, if a particle travels along a equilateral triangle of size 10 µm, going back to its starting point, this feature will return 30 µm. While the **Track displacement** feature described above will return 0 µm.
+It really report how much the particle 'walked'. For instance, if a particle travels along a equilateral triangle of size 10 µm, going back to its starting point, this feature will return 30 µm. While the **Track displacement** feature described above will return 0 µm.
 
 <center>
 
-` $$`  
-`   \text{ total distance travelled } = \sum_{i} d_{i,i+1}`  
-` $$`
+` $$`  
+`   \text{ total distance travelled } = \sum_{i} d_{i,i+1}`  
+` $$`
 
 </center>
 
@@ -223,9 +223,9 @@ This distance is a "straight-line" distance. In our example above with the parti
 
 <center>
 
-` $$`  
-`   \text{max distance traveled} = \text{Max}_{i,j} ( d_{ij} )`  
-` $$`
+` $$`  
+`   \text{max distance traveled} = \text{Max}_{i,j} ( d_{ij} )`  
+` $$`
 
 </center>
 
@@ -237,9 +237,9 @@ The confinement ratio tells how "efficient" was a track displacement in getting 
 
 <center>
 
-` $$`  
-`   \text{confinement ratio} = \frac{ \text{net distance} }{ \text{ total distance travelled } }`  
-` $$`
+` $$`  
+`   \text{confinement ratio} = \frac{ \text{net distance} }{ \text{ total distance travelled } }`  
+` $$`
 
 </center>
 
@@ -253,9 +253,9 @@ The mean straight line speed is the defined as the net displacement (*Track disp
 
 <center>
 
-` $$`  
-`   \text{mean straight line speed} = \frac{ \text{net distance} }{ \text{ total track time } }`  
-` $$`
+` $$`  
+`   \text{mean straight line speed} = \frac{ \text{net distance} }{ \text{ total track time } }`  
+` $$`
 
 </center>
 
@@ -267,9 +267,9 @@ This value is simply the ratio between the **mean straight line speed** and the 
 
 <center>
 
-` $$`  
-`   \text{linearity of forward progression} = \frac{ \text{mean straight line speed} }{ \text{ mean speed } }`  
-` $$`
+` $$`  
+`   \text{linearity of forward progression} = \frac{ \text{mean straight line speed} }{ \text{ mean speed } }`  
+` $$`
 
 </center>
 
@@ -281,9 +281,9 @@ This value measure the angle between two succeeding links, averaged over all the
 
 <center>
 
-` $$`  
-`   \text{ mean directional change } = \frac{1}{N} \sum \alpha_{i,i+1}`  
-` $$`
+` $$`  
+`   \text{ mean directional change } = \frac{1}{N} \sum \alpha_{i,i+1}`  
+` $$`
 
 </center>
 

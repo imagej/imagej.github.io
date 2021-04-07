@@ -30,53 +30,53 @@ Installing and running the BigDataServer
 
 BigDataServer is packaged as a single "batteries-included" jar file with all required dependencies. It is run from the command line using Java 7 or higher. Copy [bigdataserver.jar](http://fly.mpi-cbg.de/~pietzsch/bigdataserver.jar) onto your webserver (probably running Linux). Run the BigDataServer using this command:
 
-`$ java -Xmx4G -jar bigdataserver.jar PARAMETERS`
+`$ java -Xmx4G -jar bigdataserver.jar PARAMETERS`
 
 The `-Xmx4G` option gives the server 4GB of RAM. The server is built on the same caching architecture as BigDataViewer and does not require a lot of RAM to run (1GB or less should be sufficient). However, running with more RAM means that more of the data can be cached in RAM (on the server). This will improve performance, because client requests can be handled rapidly from cached data.
 
 Running the above command without parameters will print this help:
 
-`$ java -Xmx4G -jar bigdataserver.jar`  
-`usage: BigDataServer [OPTIONS] [NAME XML] ...`  
+`$ java -Xmx4G -jar bigdataserver.jar`  
+`usage: BigDataServer [OPTIONS] [NAME XML] ...`  
   
-`Serves one or more XML/HDF5 datasets for remote access over HTTP.`  
-`Provide (NAME XML) pairs on the command line or in a dataset file, where`  
-`NAME is the name under which the dataset should be made accessible and XML`  
-`is the path to the XML file of the dataset.`  
-`-d `<FILE>`           Dataset file: A plain text file specifying one dataset`  
-`                    per line. Each line is formatted as "NAME `<TAB>` XML".`  
-`-m `<SECURE_PORT>`    Manager context HTTPS port. The manager context is automatically enabled.`  
-`                    (default: 8443)`  
-`-p `<PORT>`           Listening port.`  
-`                    (default: 8080)`  
-`-s `<HOSTNAME>`       Hostname of the server.`  
-`                    (default: localhost)`  
-`-t `<DIRECTORY>`      Directory to store thumbnails. (new temporary directory`  
-`                    by default.)`
+`Serves one or more XML/HDF5 datasets for remote access over HTTP.`  
+`Provide (NAME XML) pairs on the command line or in a dataset file, where`  
+`NAME is the name under which the dataset should be made accessible and XML`  
+`is the path to the XML file of the dataset.`  
+`-d `<FILE>`           Dataset file: A plain text file specifying one dataset`  
+`                    per line. Each line is formatted as "NAME `<TAB>` XML".`  
+`-m `<SECURE_PORT>`    Manager context HTTPS port. The manager context is automatically enabled.`  
+`                    (default: 8443)`  
+`-p `<PORT>`           Listening port.`  
+`                    (default: 8080)`  
+`-s `<HOSTNAME>`       Hostname of the server.`  
+`                    (default: localhost)`  
+`-t `<DIRECTORY>`      Directory to store thumbnails. (new temporary directory`  
+`                    by default.)`
 
 A typical command to start the server will look like this:
 
-`$ java -Xmx4G -jar bigdataserver.jar -d datasets.txt -s fly.mpi-cbg.de -p 8081`  
-`2015-02-14 14:02:52.696:`[`INFO::main`](INFO__main)`: Logging initialized @421ms`  
+`$ java -Xmx4G -jar bigdataserver.jar -d datasets.txt -s fly.mpi-cbg.de -p 8081`  
+`2015-02-14 14:02:52.696:`[`INFO::main`](INFO__main)`: Logging initialized @421ms`  
 `...`  
-`2015-02-14 14:03:12.316:`[`INFO:oejs.Server:main`](INFO_oejs.Server_main)`: Started @20046ms`
+`2015-02-14 14:03:12.316:`[`INFO:oejs.Server:main`](INFO_oejs.Server_main)`: Started @20046ms`
 
 where *dataset.txt* is a TAB delimited list of names and XML paths to the locally accessible datasets (comprising the XML and HDF5 files). Optionally, users can add \[Category\], \[Description\], \[Priority\] after the XML path. For example *dataset.txt* could look like this:
 
-`drosophila_original_test   /mnt/export/hdf5_dataset.xml`  
-`drosophila_registered_test /mnt/export/registered_dataset.xml  drosophila  This experiment set is registered.  1`
+`drosophila_original_test   /mnt/export/hdf5_dataset.xml`  
+`drosophila_registered_test /mnt/export/registered_dataset.xml  drosophila  This experiment set is registered.  1`
 
 When the manager context is enabled, the keystore password and manager password should be provided. Those prompts appear when the server starts. If the server starts at the first time, it will create the keystore.jks (for HTTPS connection) and realm.properties (for accessing the manager context) containing the manager's password that the user provide. Whenever the server process starts, it will ask the keystore password to open the keystore.jks.
 
 A common way to start the server with the manager context looks like below:
 
-`$ java -Xmx4G -jar bigdataserver.jar -d datasets.txt -s fly.mpi-cbg.de -p 8081 -m 8443`  
-`2015-02-14 14:02:52.696:`[`INFO::main`](INFO__main)`: Logging initialized @421ms`  
+`$ java -Xmx4G -jar bigdataserver.jar -d datasets.txt -s fly.mpi-cbg.de -p 8081 -m 8443`  
+`2015-02-14 14:02:52.696:`[`INFO::main`](INFO__main)`: Logging initialized @421ms`  
 `...`  
-`Please, enter your keystore password:`  
-`2015-02-14 14:02:53.626:`[`INFO:bdv.server.BigDataServer.main`](INFO_bdv.server.BigDataServer.main)`(): Set handler: org.eclipse.jetty.server.handler.HandlerList`  
-`2015-02-14 15:34:53.304:`[`INFO:bdv.server.BigDataServer.main`](INFO_bdv.server.BigDataServer.main)`(): Started ServerConnector{HTTP/1.1}{fly.mpi-cbg.de:8081}`  
-`2015-02-14 15:34:53.420:`[`INFO:bdv.server.BigDataServer.main`](INFO_bdv.server.BigDataServer.main)`(): Started ServerConnector{SSL-http/1.1}{fly.mpi-cbg.de:8443}`
+`Please, enter your keystore password:`  
+`2015-02-14 14:02:53.626:`[`INFO:bdv.server.BigDataServer.main`](INFO_bdv.server.BigDataServer.main)`(): Set handler: org.eclipse.jetty.server.handler.HandlerList`  
+`2015-02-14 15:34:53.304:`[`INFO:bdv.server.BigDataServer.main`](INFO_bdv.server.BigDataServer.main)`(): Started ServerConnector{HTTP/1.1}{fly.mpi-cbg.de:8081}`  
+`2015-02-14 15:34:53.420:`[`INFO:bdv.server.BigDataServer.main`](INFO_bdv.server.BigDataServer.main)`(): Started ServerConnector{SSL-http/1.1}{fly.mpi-cbg.de:8443}`
 
 The keystore password should be provided when the server starts. Then, the /manager context enables users to handle the datasets with the web interface.
 
@@ -84,11 +84,11 @@ The web interface of /manager context looks like this: <img src="/media/BigDataS
 
 The server will keep running until you cancel it with {% include key content='press\|Ctrl\|C' %} or close the shell. To start the server in the background run it in a screen session:
 
-`$ screen`  
-`$ java -Xmx4G -jar bigdataserver.jar -d datasets.txt`  
-`2015-02-14 14:02:52.696:`[`INFO::main`](INFO__main)`: Logging initialized @421ms`  
+`$ screen`  
+`$ java -Xmx4G -jar bigdataserver.jar -d datasets.txt`  
+`2015-02-14 14:02:52.696:`[`INFO::main`](INFO__main)`: Logging initialized @421ms`  
 `...`  
-`2015-02-14 14:03:12.316:`[`INFO:oejs.Server:main`](INFO_oejs.Server_main)`: Started @20046ms`
+`2015-02-14 14:03:12.316:`[`INFO:oejs.Server:main`](INFO_oejs.Server_main)`: Started @20046ms`
 
 and detach the screen with {% include key content='press\|Ctrl\|A' %} {% include key content='press\|D' %}.
 

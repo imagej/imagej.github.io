@@ -70,8 +70,8 @@ During this example, you can look at the different step with the [3DViewer](http
 
 1.  Download the meshes of a mitochondria in the shape of a donut divided in 4 parts [MitoDonut Meshes.zip](/media/MitoDonut Meshes.zip)
 2.  Launch the plugin, and give the directory containing the .obj file
-3.  X shift : 192    Y shift : 214    Z shift : 500
-4.  Width : 600    Height : 600    Depth : 600
+3.  X shift : 192    Y shift : 214    Z shift : 500
+4.  Width : 600    Height : 600    Depth : 600
 5.  Click on the Shift button to shift the meshes.
 6.  Now merge the meshes with the Automatic merging button, or two by two with the manual merging.
 7.  Look at the result

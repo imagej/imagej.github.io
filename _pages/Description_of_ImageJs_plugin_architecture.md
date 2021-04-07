@@ -26,11 +26,11 @@ The contract is that the name of the file contains an underscore. If the file is
 
 The *.class* file discovery in *.jar* files is <u>not</u> performed if the *.jar* file contains a file called *plugins.config*. If that file exists, it is parsed to obtain the labels of the menu items and the corresponding Java classes instead. A *plugins.config* file looks like this:
 
-`# This is a comment (empty lines are also ignored)`  
+`# This is a comment (empty lines are also ignored)`  
   
-`# This line will add "Blob" to the "New" submenu of the "File" menu.`  
-`# Clicking on "Blob" will call the plugin class "my.test.Test"`  
-`File>New, "Blob", my.test.Test`
+`# This line will add "Blob" to the "New" submenu of the "File" menu.`  
+`# Clicking on "Blob" will call the plugin class "my.test.Test"`  
+`File>New, "Blob", my.test.Test`
 
 *Technical note:* the plugins are loaded via an instance of *ij.io.PluginClassLoader*, which is available by calling *ij.IJ.getClassLoader()*.
 

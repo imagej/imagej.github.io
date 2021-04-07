@@ -7,7 +7,7 @@ description: test description
 
  {% include info-box software='ImageJ' name='Watershed Algorithm' author='Christopher Mei' filename=' [Watershed\_Algorithm.jar](https://imagej.net/plugins/download/jars/Watershed_Algorithm.jar)' source='included in .jar' released='15 December 2003' latest-version='' status='unknown' category='[Segmentation](Category_Segmentation)' website='https://imagej.net/plugins/watershed.html' %}
 
-`   This algorithm is an implementation of the watershed immersion algorithm written by Vincent and Soille (1991).`
+`   This algorithm is an implementation of the watershed immersion algorithm written by Vincent and Soille (1991).`
 
 -   {% include citation last='Vincent' first='Lee' last2='Soille' first2='Pierre' date='' date='' year='1991' title='Watersheds in digital spaces: An efficient algorithm based on immersion simulations' periodical='IEEE PAMI' series='' place='' place='' publisher='' volume='13' issue='6' pages='583-598' url='' issn='' doi='' oclc='' accessdate='' %}
 

@@ -22,8 +22,8 @@ When displaying a `Content` as orthoslices, the corresponding `ContentNode` of t
 
 for(int i = 0; i &lt; 10; i++) {
 
-`   ortho.increase(AxisConstants.Z_AXIS);`  
-`   sleep(1);`
+`   ortho.increase(AxisConstants.Z_AXIS);`  
+`   sleep(1);`
 
 }
 

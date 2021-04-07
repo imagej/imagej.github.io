@@ -161,8 +161,8 @@ Then the images are montaged layer-wise, and blended together (the borders of th
 
 Notice that, for this script to work for you, you will have to edit two lines:
 
-` 1. The source `<i><b>`folder`</b></i>` where images are to be found.`  
-` 2. The `<i><b>`pattern`</b></i>` to match, which dictates which image goes to which layer.`
+` 1. The source `<i><b>`folder`</b></i>` where images are to be found.`  
+` 2. The `<i><b>`pattern`</b></i>` to match, which dictates which image goes to which layer.`
 
 Be sure as well to create as many layers as you need. If you don't know, use the <i>getLayer</i> method on the <i>layerset</i> variable, which has the ability to create a new layer when asked to get one for a Z for which a layer doesn't exist yet.
 
@@ -605,21 +605,21 @@ How to compute the Z coordinate of a [Layer](https://fiji.sc/javadoc/ini/trakem2
 
 Then you have to compute the thickness of a section relative to X axis coordinates. To do so:
 
-`layer thickness = (Z calibrated thickness) / (X calibrated thickness)`
+`layer thickness = (Z calibrated thickness) / (X calibrated thickness)`
 
 In our example of 4x4x50 nm/px:
 
-`layer thickness = 50 / 4 = 12.5`
+`layer thickness = 50 / 4 = 12.5`
 
 Then we must set this thickness to every section. This consists of the following steps to be done on the <i>Layer Tree</i> This is the tree that lists the layers in the TrakEM2 window):
 
 1\. Right-click on the "Top Level \[Layer Set\]" node of the <i>Layer Tree</i>.
 
-`   Then choose "Reset layer Z and thickness".`
+`   Then choose "Reset layer Z and thickness".`
 
 2\. Click on the first layer node, then {% include key content='Shift' %}+{% include key content='click' %} on the last layer node.
 
-`   All nodes will be selected.`
+`   All nodes will be selected.`
 
 3\. Right-click on the selected nodes and choose "Scale...". 4. In the dialog, type in "12.5"--the value we computed above.
 

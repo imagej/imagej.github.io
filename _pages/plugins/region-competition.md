@@ -30,4 +30,4 @@ J. A. Helmuth, C. J. Burckhardt, U. F. Greber, and I. F. Sbalzarini. Shape recon
 
 [2] J. A. Helmuth and I. F. Sbalzarini. [Deconvolving active contours for fluorescence microscopy images](http://mosaic.mpi-cbg.de/docs/Helmuth2009a.pdf), In Proc. Intl. Symp. Visual Computing (ISVC), volume 5875 of Lecture Notes in Computer Science, pages 544–553, Las Vegas, USA, November 2009. Springer.
 
-[3] J. Cardinale, G. Paul, and I. F. Sbalzarini. [Discrete region competition for unknown numbers of connected regions](http://dx.doi.org/10.1109/TIP.2012.2192129), IEEE Trans. Image Process., 21(8): 3531–3545, 2012
+[3] J. Cardinale, G. Paul, and I. F. Sbalzarini. [Discrete region competition for unknown numbers of connected regions](http://dx.doi.org/10.1109/TIP.2012.2192129), IEEE Trans. Image Process., 21(8): 3531–3545, 2012

@@ -44,7 +44,7 @@ It is the most widely adopted format for encoding neuronal reconstructions, in w
 
 ### In which format should I save my tracings: TRACES or SWC?
 
-When tracing 4D or 5D images, `TRACES` is preferable because the channel and/or time frame associated with the data are stored. With simpler 2/3D images `TRACES` is also preferable to preserve [Path Manager tags](SNT:_Overview#Tag "wikilink") across restarts. Note that the {% include bc content='[Scripts](SNT:_Overview#Scripts "wikilink")| '%} menu provides a [batch converter](#convert "wikilink") for `TRACES` → `SWC` conversion. The following table summarizes the differences between the two formats:
+When tracing 4D or 5D images, `TRACES` is preferable because the channel and/or time frame associated with the data are stored. With simpler 2/3D images `TRACES` is also preferable to preserve [Path Manager tags](SNT:_Overview#Tag "wikilink") across restarts. Note that the {% include bc content='[Scripts](SNT:_Overview#Scripts "wikilink")| '%} menu provides a [batch converter](#convert "wikilink") for `TRACES` → `SWC` conversion. The following table summarizes the differences between the two formats:
 
 |                                                   | SWC                                                                                                                                  | TRACES                                                                               |
 | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |

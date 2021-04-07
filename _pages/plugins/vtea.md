@@ -22,7 +22,7 @@ Volumetric Tissue Exploration and Analysis
 
 **Easy to use.** We designed VTEA to organize the most common workflow in 3DTC inclusive of image processing (to manage imaging artifacts), segmentation (extensible to bring in edge deep learning approaches into a common framework of analysis) and exploration and analysis with flow cytometry like plots, gating, mapping to image with ROI gating and tools for high dimensionality data.
 
-**Mesoscale 3D analysis.** We built segmentation to handle massive datasets and to operate seamlessly on an embedded database to enable analysis of 100’s of thousands of cells and will incorporate tools for clustering and dimensionality reduction.
+**Mesoscale 3D analysis.** We built segmentation to handle massive datasets and to operate seamlessly on an embedded database to enable analysis of 100's of thousands of cells and will incorporate tools for clustering and dimensionality reduction.
 
 **Original image referencing.** The power of 3DTC in VTEA enables the localization of identified cells in the analysis space in the original image, *in situ*, and in 3D with [ClearVolume](/plugins/clearvolume).
 
@@ -37,8 +37,8 @@ Importantly, our solution is in its infancy. In fact, the tools are relatively s
 Installing
 ----------
 
-`   To install the VTEA plugin use, `[`How`` ``to`` ``follow`` ``a`` ``3rd`` ``party`` ``update`` ``site`](/update-sites/following)` and check the update site:`  
-`   "Volumetric Tissue Exploration and Analysis" `**`OR`**` follow the following four steps:`
+`   To install the VTEA plugin use, `[`How`` ``to`` ``follow`` ``a`` ``3rd`` ``party`` ``update`` ``site`](/update-sites/following)` and check the update site:`  
+`   "Volumetric Tissue Exploration and Analysis" `**`OR`**` follow the following four steps:`
 
 ### 1. Start updater
 
@@ -69,19 +69,19 @@ Tutorials
 
 ### Image Processing
 
-`      Coming soon!`
+`      Coming soon!`
 
 ### Segmentation
 
-`      Coming soon!`
+`      Coming soon!`
 
 ### Analysis
 
-`      Coming soon!`
+`      Coming soon!`
 
 ### Visualization
 
-`      Coming soon!`
+`      Coming soon!`
 
 VTEA reference
 --------------

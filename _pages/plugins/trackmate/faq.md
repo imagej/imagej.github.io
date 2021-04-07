@@ -8,7 +8,7 @@ This list of frequently asked questions is compiled from several questions we ha
 
 ### Only the first time-point of the track is displayed after loading.
 
-*I have an issue after loading a TrackNate file. I can retrieve my TrackScheme with the tracks I was working on, however my stack doesn’t go from one time frame to the next and only the first point of the track is displayed. Do you have any idea of what is happening. I don’t think there was any update between the time I saved the file and now. There is no error message. I can’t add more points to the TrackScheme…*
+*I have an issue after loading a TrackNate file. I can retrieve my TrackScheme with the tracks I was working on, however my stack doesn't go from one time frame to the next and only the first point of the track is displayed. Do you have any idea of what is happening. I don't think there was any update between the time I saved the file and now. There is no error message. I can't add more points to the TrackScheme...*
 
 This looks like a classical dimensionality problem. Is your image a Z-stack (1 time-point many Z slices) after loading? Check the image properties of the image.
 

@@ -58,7 +58,7 @@ However, this is relatively slow since it uses Subversion to check out every rev
                 branches = branches/*:refs/remotes/*
                 tags = tags/*:refs/remotes/tags/*
 3.  `git fetch`
-4.  `git svn fetch`  (this step takes some time...)
+4.  `git svn fetch`  (this step takes some time...)
 5.  `git checkout -b master -t trunk`
 
 Explanation: rather than letting `git svn` do its job from the get go, we first initialize the *origin* remote (steps 1 to 3). It is initialized such that the Subversion branches -- which our Git repository exposes in the *svn/\** namespace -- are fetched into the place where `git svn` will pick them up rather than going through the tedious multi-hour process of any bootstrap `git svn` import.

@@ -43,7 +43,7 @@ Settings
 -   Rolling ball radius: The background is removed by rolling a ball with this radius over the surface (intensity interpreded as hight) of the image. It should be at least as large as the largest object in image which does not belongs to the background.
 -   Min. OTB intensity difference: Objects which have an object-to-background (OTB) intensity difference in the noise-reduced and background subtracted image lower than this threshold are considered as artefacts and are removed.
 -   Use watershed for irregular structures: If selected, the mode for irregular structures is used.
--   Irregular watershed convexity threshold: The threshold determines, when splitted agglomerated is counted as “primary particle”. If the convexity of particle is greater than this threshold, the splitting is stopped for this object. If the convexity is smaller than this value, then the ParticleSizer tries to split the particle again
+-   Irregular watershed convexity threshold: The threshold determines, when splitted agglomerated is counted as "primary particle". If the convexity of particle is greater than this threshold, the splitting is stopped for this object. If the convexity is smaller than this value, then the ParticleSizer tries to split the particle again
 -   Use single particle mode: If selected, the single particle mode is used.
 -   Use ellipse fitting mode: If selected, the ellipse fitting mode is used.
 

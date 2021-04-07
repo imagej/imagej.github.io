@@ -150,13 +150,13 @@ The parameters are:
 
 -   **Type**: to specify how to combine the results for each oriented filter
 -   **Operation**: the operation to apply using each oriented structuring element
--   **Line Length**: the approximated length of the structuring element.
--   **Direction Number**: the number of oriented structuring elements to consider. To be increased if the length of line is large.
+-   **Line Length**: the approximated length of the structuring element.
+-   **Direction Number**: the number of oriented structuring elements to consider. To be increased if the length of line is large.
 
 Connected components operators
 ------------------------------
 
-The “classical” morphological filters presented in the previous section transform an input image by using the values of pixels or voxels located in a close neighborhood, defined by the structuring element. Such filters can be seen as “local”, as the result in a given position does not depend on image values located at a sufficient distance.
+The "classical" morphological filters presented in the previous section transform an input image by using the values of pixels or voxels located in a close neighborhood, defined by the structuring element. Such filters can be seen as "local", as the result in a given position does not depend on image values located at a sufficient distance.
 
 Connected components operators are more general as they propagate information within the image based on connectivity between pixels or voxels. More details can be found in the review of Breen *et al.* (1996)[5]. Connected components operators encompass powerful operators, such as **morphological reconstruction** that allows to reconstruct a marker image by constraining it to a mask. An extension of morphological reconstruction is the detection of **extended minima and maxima**, that can be useful as marker detection for segmentation. Finally, **attribute opening and filtering** algorithms can filter images based on size or range properties, with better preservation of edges than classical filtering.
 
@@ -182,15 +182,15 @@ Geodesic reconstructions can be applied to grey level images. By manually choosi
 
 The geodesic reconstruction algorithm is often used within other operators. In MorphoLibJ, it is however provided as a plugin to allow its inclusion in user-designed macros or plugins:
 
--   **Geodesic Reconstruction**: compute the geodesic reconstruction by erosion or dilation using a marker image and a mask image, and a specified connectivity.
--   **Interactive Geodesic Reconstruction**: compute the geodesic reconstruction by erosion or dilation taking the current 2D image as mask image, creating the marker image out of user-defined ROIs (for example with the point selection tool).and using a specified connectivity. The plugin allows previewing the result.
--   **Geodesic Reconstruction 3D**: compute the geodesic reconstruction by erosion or dilation on a 3D image.
--   **Interactive Geodesic Reconstruction 3D**: compute the geodesic reconstruction by erosion or dilation on using the current 3D image as mask and creating the marker image from the user-defined point selections.
+-   **Geodesic Reconstruction**: compute the geodesic reconstruction by erosion or dilation using a marker image and a mask image, and a specified connectivity.
+-   **Interactive Geodesic Reconstruction**: compute the geodesic reconstruction by erosion or dilation taking the current 2D image as mask image, creating the marker image out of user-defined ROIs (for example with the point selection tool).and using a specified connectivity. The plugin allows previewing the result.
+-   **Geodesic Reconstruction 3D**: compute the geodesic reconstruction by erosion or dilation on a 3D image.
+-   **Interactive Geodesic Reconstruction 3D**: compute the geodesic reconstruction by erosion or dilation on using the current 3D image as mask and creating the marker image from the user-defined point selections.
 
 The kill borders and fill holes operations are also provided as plugins. Both work for 2D and 3D images of 8, 16 or 32 bits.
 
--   **Kill Borders**: remove the particles touching the border of a binary or grayscale image.
--   **Fill Holes** remove holes inside particles in binary images, or remove dark regions surrounded by bright crests in grayscale images.
+-   **Kill Borders**: remove the particles touching the border of a binary or grayscale image.
+-   **Fill Holes** remove holes inside particles in binary images, or remove dark regions surrounded by bright crests in grayscale images.
 
 ### Regional and extended extrema
 
@@ -229,11 +229,11 @@ As for classical morphological filters, grayscale attribute closing or tophat ca
 
 So far, the following attribute filtering plugins are available within MorphoLibJ (under {% include bc content='Plugins | MorphoLibJ'%}):
 
--   **Gray Scale Attribute Filtering**: opens a dialog to perform between attribute opening, closing, and black or white top-hat on a planar (2D) grayscale image. Two size criteria can be used: the area (number of pixels), or the diameter (length of the diagonal of the bounding box).
+-   **Gray Scale Attribute Filtering**: opens a dialog to perform between attribute opening, closing, and black or white top-hat on a planar (2D) grayscale image. Two size criteria can be used: the area (number of pixels), or the diameter (length of the diagonal of the bounding box).
 
 <!-- -->
 
--   **Gray Scale Attribute Filtering 3D**: opens a dialog to perform between attribute opening, closing, and black or white top-hat on a 3D grayscale image. The size criterion is the number of voxels.
+-   **Gray Scale Attribute Filtering 3D**: opens a dialog to perform between attribute opening, closing, and black or white top-hat on a 3D grayscale image. The size criterion is the number of voxels.
 
 Watershed segmentation
 ----------------------
@@ -249,7 +249,7 @@ Watershed segmentation
 Measurements
 ------------
 
-[MorphoLibJ](/plugins/morpholibj) contains several tools for quantifying the size, the shape, or the spatial organization, from **binary or label** 2D and 3D images. The aim is to facilitate the management of label images, contrary to the built-in “Analyze Particles...” function that operates directly on a grayscale image.
+[MorphoLibJ](/plugins/morpholibj) contains several tools for quantifying the size, the shape, or the spatial organization, from **binary or label** 2D and 3D images. The aim is to facilitate the management of label images, contrary to the built-in "Analyze Particles..." function that operates directly on a grayscale image.
 
 ### Region analysis
 
@@ -265,7 +265,7 @@ For 3D particles, intrinsic volumes correspond to the volume, the surface area, 
 
 In image analysis, the **estimation of area** of 2D particles and of **volume of 3D particles** simply consists in counting the number of pixels or voxels that constitute it, weighted by the area of an individual pixel or the volume of an individual voxel.
 
-The implemented method for **perimeter measurement** aims at providing a better estimate of the perimeter than traditional boundary pixel count. The principle is to consider a set of lines with various orientations, and to count the number of intersections with the region(s) of interest (see figure on the right). The number of intersections is proportional to the perimeter (Serra, 1982&lt;ref name="Serra1982&gt;</ref>; Legland *et al.*, 2007[7]; Ohser *et al.*, 2009&lt;ref name="Osher2009&gt;</ref>). By averaging over all possible directions, the estimate is unbiased.
+The implemented method for **perimeter measurement** aims at providing a better estimate of the perimeter than traditional boundary pixel count. The principle is to consider a set of lines with various orientations, and to count the number of intersections with the region(s) of interest (see figure on the right). The number of intersections is proportional to the perimeter (Serra, 1982&lt;ref name="Serra1982&gt;</ref>; Legland *et al.*, 2007[7]; Ohser *et al.*, 2009&lt;ref name="Osher2009&gt;</ref>). By averaging over all possible directions, the estimate is unbiased.
 
 Perimeter can be estimated using either two directions (horizontal and vertical), or four directions (by adding the diagonals). Restricting the number of directions introduces an estimation bias, with known theoretical bounds (Moran, 1966[8]; Legland *et al.*, 2007[9]), that is usually better than boundary pixel count (Lehmann *et al.*, 2012[10]).
 
@@ -337,12 +337,12 @@ This plugin computes for each label the largest disk that can be enclosed within
 This plugin computes several geodesic measures for each particle in a label image. The result of the plugin comprises the following features:
 
 -   **Label**: the label of the particle measured on the current line.
--   **Geod. Diam.**: the value of the geodesic diameter.
+-   **Geod. Diam.**: the value of the geodesic diameter.
 -   **Radius**: the radius of the largest inscribed circle, which is computed during the algorithm.
--   **Geod. Elong.**: the ratio of geodesic diameter over the diameter of the largest inscribed circle. The values range from 1 for nearly round particles and increases for elongated particles.
--   **xi, yi**: coordinates of the largest inscribed circle.
--   **x1, y1**: coordinates of one of the geodesic extremities of the particle.
--   **x2, y2**: coordinates of another geodesic extremity of the particle.
+-   **Geod. Elong.**: the ratio of geodesic diameter over the diameter of the largest inscribed circle. The values range from 1 for nearly round particles and increases for elongated particles.
+-   **xi, yi**: coordinates of the largest inscribed circle.
+-   **x1, y1**: coordinates of one of the geodesic extremities of the particle.
+-   **x2, y2**: coordinates of another geodesic extremity of the particle.
 
 ##### Analyze Regions 3D
 
@@ -458,7 +458,7 @@ In some cases it may be useful to restrict the propagation of distances to a spe
 {% include thumbnail src='/media/MorphoLibJ-geodesic-distance-example.png' title='Computation of the geodesic distance map on a binary image from the DRIVE database (Staal \'\'et al.\'\', 2004[15]). Left: original image with marker superimposed in red. Right: result of geodesic distance map, hot colors correspond to large distances, cold colors correspond to small distances.'%}
 
 -   **Geodesic Distance Map** computes the geodesic distance between each foreground pixel of a binary mask image to the closest pixel of a marker image, while staying within the particle represented by the mask image.
--   **Interactive Geodesic Distance Map** computes the geodesic distance between each foreground pixel of a the currently selected image (considered the mask image) to the closest pixel of a marker image defined by the user ROIs, while staying within the particle represented by the mask image.
+-   **Interactive Geodesic Distance Map** computes the geodesic distance between each foreground pixel of a the currently selected image (considered the mask image) to the closest pixel of a marker image defined by the user ROIs, while staying within the particle represented by the mask image.
 
 ### Label images
 
@@ -504,7 +504,7 @@ Algorithms work for both 2D or 3D images. Default connectivity 4 (resp. 6) is us
 -   **Remove Border Labels** is similar to "kill borders" function, but operates faster as no morphological reconstruction is required.
 -   **Select Label(s)** enters a set of labels, and creates a new label image containing only the selected labels.
 -   **Crop Label** creates a new binary image containing only the label specified by the user. The size of the new image is fitted to the region.
--   **Replace/Remove Label(s)** replaces the value of a region by another value. Can be used to “clear” a label, by replacing its value by 0, or to merge to adjacent regions.
+-   **Replace/Remove Label(s)** replaces the value of a region by another value. Can be used to "clear" a label, by replacing its value by 0, or to merge to adjacent regions.
 -   **Label Boundaries** creates a new binary image containing value 255 for pixels/voxels having a neighbour with a different value.
 -   **Keep / Remove Largest Label** identifies the largest label, and keeps it or removes it.
 -   **Label Size Opening** computes the size (area in 2D, volume in 3D) of each region, and removes all labels whose size is below the value specified by the user.
@@ -517,7 +517,7 @@ Algorithms work for both 2D or 3D images. Default connectivity 4 (resp. 6) is us
 -   Apply morphological erosion, dilation, opening and closing with a square/cube of radius 1 as structuring element.
 -   Remove labels by area or volume (size opening operation), largest size, manual selection or border location.
 
-All operations are performed “in place”, i.e., the input image gets directly modified. However, the initial status of the label image can be recovered by clicking on “Reset”.
+All operations are performed "in place", i.e., the input image gets directly modified. However, the initial status of the label image can be recovered by clicking on "Reset".
 
 Library interoperability
 ------------------------

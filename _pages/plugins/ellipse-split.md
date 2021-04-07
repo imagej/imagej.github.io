@@ -19,20 +19,20 @@ Purpose
 
 The ellipse splitting plugin splits binary objects which could approximated by an ellipse. The used ellipse fitting algorithm was proposed in
 
-*A. Fitzgibbon, M. Pilu, and R. B. Fisher, “Direct least square fitting of ellipses,” IEEE Trans. Pattern Anal. Mach. Intell., vol. 21, no. 5, pp. 476–480, May 1999.*
+*A. Fitzgibbon, M. Pilu, and R. B. Fisher, "Direct least square fitting of ellipses," IEEE Trans. Pattern Anal. Mach. Intell., vol. 21, no. 5, pp. 476–480, May 1999.*
 
 Here we used the implementation of [BoneJ](https://fiji.sc/BoneJ).
 
 The generall approach of the ellipse fitting plugin is as follows:
 
-`1. Given the binary input image I`  
-`2. Then image W is the split using ImageJ's watershed approach`  
-`3. XOR I and W to get all watershed lines L`  
-`4. Extract all contours in W using ijblob`  
-`5. Remove those parts of the contours which are neighbor of L`  
-`6. Fit an ellipse to each remaining contour part`  
-`7. Merge ellipses if possible`  
-`8. Filter ellipses by geometric features`
+`1. Given the binary input image I`  
+`2. Then image W is the split using ImageJ's watershed approach`  
+`3. XOR I and W to get all watershed lines L`  
+`4. Extract all contours in W using ijblob`  
+`5. Remove those parts of the contours which are neighbor of L`  
+`6. Fit an ellipse to each remaining contour part`  
+`7. Merge ellipses if possible`  
+`8. Filter ellipses by geometric features`
 
 Examples
 --------

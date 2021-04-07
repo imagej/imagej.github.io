@@ -247,7 +247,7 @@ Since there is no publication associated with this plugin, it is hard tracking w
 
 <!-- -->
 
--   SENSINI, A. , CRISTOFOLINI, L. , FOCARETE, M. , BELCARI, J. , ZUCCHELLI, A. , KAO, A. and TOZZI, G. (2018), High‐resolution x‐ray tomographic morphological characterisation of electrospun nanofibrous bundles for tendon and ligament regeneration and replacement. Journal of Microscopy. <doi:10.1111/jmi.12720>
+-   SENSINI, A. , CRISTOFOLINI, L. , FOCARETE, M. , BELCARI, J. , ZUCCHELLI, A. , KAO, A. and TOZZI, G. (2018), High-resolution x-ray tomographic morphological characterisation of electrospun nanofibrous bundles for tendon and ligament regeneration and replacement. Journal of Microscopy. <doi:10.1111/jmi.12720>
 
 If you use it, please tell me so that I can add to this list.
 

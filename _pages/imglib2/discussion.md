@@ -19,11 +19,11 @@ Summary is that `View`<T> would be an interface that can return its target `T`, 
         public T getTarget();
     }
 
-A `View` is an `[…]Accessible` that provides possibly transformed access to a subset of this target data.
+A `View` is an `[...]Accessible` that provides possibly transformed access to a subset of this target data.
 
 Since we could not see any reasonable application for the bare *View* interface, we will not implement it but use it in informal speech about virtualized access. We will also use *Target* to refer to the underlying data.
 
-Examples are `IterableIntervalSubset`, arbitrary Neighborhoods, `RandomAccessibleView` (formerly called View), `RealRandomAccessibleView`, `TransformedRandomAccessibleView`, `StructuredElement`, `HyperShpere`, `SuperInterval`…
+Examples are `IterableIntervalSubset`, arbitrary Neighborhoods, `RandomAccessibleView` (formerly called View), `RealRandomAccessibleView`, `TransformedRandomAccessibleView`, `StructuredElement`, `HyperShpere`, `SuperInterval`...
 
 ### We discussed the View concept (again) and Transforms:
 
@@ -105,28 +105,28 @@ Coincidentally, I was playing around with an idea for ROIs that might be applica
 
 Here's the interface that I was planning on implementing:
 
-`package mpicbg.imglib.transform;`  
+`package mpicbg.imglib.transform;`  
 `/**`  
-` * @author leek`  
-` *`  
-` * A class is transformable if it can produce a copy of`  
-` * itself in the transformed space using the supplied transform.`  
-` * `  
-` * Note that a class may require either a Transform or an InvertibleTransform`  
-` * depending on whether the strategy is to transform coordinates in the`  
-` * source space into the destination space or to generate the object in`  
-` * the destination space by sampling invert-transformed points in the`  
-` * source space.`  
-` * `  
-` */`  
-`public interface Transformable<O,T extends Transform> {`  
-`   /**`  
-`    * Generate a copy of the object in the transformed space.`  
-`    * @param t the transform that maps points in the source space to those`  
-`    *          in the destination space.`  
-`    * @return a copy built to operate similarly in the transformed space.`  
-`    */`  
-`   public O transform(final T t);`  
+` * @author leek`  
+` *`  
+` * A class is transformable if it can produce a copy of`  
+` * itself in the transformed space using the supplied transform.`  
+` * `  
+` * Note that a class may require either a Transform or an InvertibleTransform`  
+` * depending on whether the strategy is to transform coordinates in the`  
+` * source space into the destination space or to generate the object in`  
+` * the destination space by sampling invert-transformed points in the`  
+` * source space.`  
+` * `  
+` */`  
+`public interface Transformable<O,T extends Transform> {`  
+`   /**`  
+`    * Generate a copy of the object in the transformed space.`  
+`    * @param t the transform that maps points in the source space to those`  
+`    *          in the destination space.`  
+`    * @return a copy built to operate similarly in the transformed space.`  
+`    */`  
+`   public O transform(final T t);`  
 `}`
 
 You'd only want to implement Transformable in cases where the object has internal state which allows the transformed object to operate more efficiently than transformation of the object's inputs, followed by application of the object's function. For ROIs, the savings are clear - cost to transform a handful of vertices in a polygon versus cost of back-transforming millions of coordinates into the original space.
@@ -151,23 +151,23 @@ In imglib2, out-of-bounds access is handled by [`ExtendedRandomAccessibleInterva
 
 The original `img` looks like this:
 
-![](/media/Imglib2views img.png‎ "Imglib2views_img.png‎")
+![](/media/Imglib2views img.png "Imglib2views_img.png")
 
 This is extended to infinity (using mirroring strategy) resulting in the unbounded `RandomAccessible view1`. A crop of `view1` looks like this:
 
-![](/media/Imglib2views ext1.png‎ "Imglib2views_ext1.png‎")
+![](/media/Imglib2views ext1.png "Imglib2views_ext1.png")
 
 Then we take a subview `view2` (which is again a bounded interval)
 
-![](/media/Imglib2views extsub1.png‎ "Imglib2views_extsub1.png‎")
+![](/media/Imglib2views extsub1.png "Imglib2views_extsub1.png")
 
 We extend that to get `view3` and take a subview `view4` which looks like this:
 
-![](/media/Imglib2views extsub1extsub2.png‎ "Imglib2views_extsub1extsub2.png‎")
+![](/media/Imglib2views extsub1extsub2.png "Imglib2views_extsub1extsub2.png")
 
 Now assume that we want `RandomAccess` into `view4`. If we know in advance interval in which we will use the access, `view4` can possibly provide more efficient access. Consider this:
 
-![](/media/Imglib2views extsub1extsub2regions.png‎ "Imglib2views_extsub1extsub2regions.png‎")
+![](/media/Imglib2views extsub1extsub2regions.png "Imglib2views_extsub1extsub2regions.png")
 
 If we want to access only the green region, the `RandomAccess` can fall through all the way to the original `img` without needing out-of-bounds values. We simply wrap a `RandomAccess` on `img` with a coordinate translation to the top-left corner of `view4`
 
@@ -244,23 +244,23 @@ getPosition calls: ImgLib will always iterate over the dimensionality of the Cur
 
 setPosition calls: ImgLib will always iterate over the dimensionality of the array that indicates the new location, i.e. one can pass an array or Localizable with a lower dimensionality and it will only set the new position in those lower dimensions.
 
-`For example 2d/3d:`  
+`For example 2d/3d:`  
   
-`Localizable2d.localize( array[3] ) - OK`  
-`Localizable3d.localize( array[2] ) - NOT OK`  
+`Localizable2d.localize( array[3] ) - OK`  
+`Localizable3d.localize( array[2] ) - NOT OK`  
   
-`Positionable2d.setPostion( array[3] ) - NOT OK`  
-`Positionable3d.setPostion( array[2] ) - OK`
+`Positionable2d.setPostion( array[3] ) - NOT OK`  
+`Positionable3d.setPostion( array[2] ) - OK`
 
 We discussed this topic again and found that it is always bad practice to actually work with dimension vectors of different sizes. Instead, one should use views that map into a common *n*-space by either adding or removing a set of dimensions in one or both of the RandomAccessibles. Still, the behavior needs to be specified strictly. With an eye on efficiency and consistency, we revert our previous opinion to
 
-`Localizable2d.localize( array[3] ) - OK`  
-`Localizable3d.localize( array[2] ) - NOT OK`  
+`Localizable2d.localize( array[3] ) - OK`  
+`Localizable3d.localize( array[2] ) - NOT OK`  
   
-`Positionable2d.setPostion( array[3] ) - OK`  
-`Positionable3d.setPostion( array[2] ) - NOT OK`  
-`Positionable2d.setPostion( Localizable3d ) - OK`  
-`Positionable3d.setPostion( Localizable2d ) - NOT OK`
+`Positionable2d.setPostion( array[3] ) - OK`  
+`Positionable3d.setPostion( array[2] ) - NOT OK`  
+`Positionable2d.setPostion( Localizable3d ) - OK`  
+`Positionable3d.setPostion( Localizable2d ) - NOT OK`
 
 for the reason that in the latter case, the loop would require Localizable.numDimensions() to be called otherwise. There will be many situations where this cannot be inlined and thus be slower than using a temporary *n* in the executing class.
 

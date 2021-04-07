@@ -16,7 +16,7 @@ Plugin for wavelet-based denoising/filtering image data
 
 <img src="/media/Wavelet Denoise Pics ImageJ SyncWins.jpg" width="800"/>
 
-When starting the plugin, pictures and <i>Sync Wins</i> dialog appear, like in the picture above, together with the plugin dialog. The first picture is the input image, the second one is the filtered picture (“Filtered-” prefix), the third one contains the wavelet coefficients (“WT-“ prefix), that are converted to 8-bit and are intensity scaled for good visualization, the fourth picture (“WT-NoStretch-” prefix) contains float values of the wavelet coefficients without intensity scaling. The third and fourth pictures appear only after checking corresponding boxes in the main dialog. <i>Applying Synchronize All</i> in the <i>Sync Wins</i> dialog is helpful when navigating through image stacks.
+When starting the plugin, pictures and <i>Sync Wins</i> dialog appear, like in the picture above, together with the plugin dialog. The first picture is the input image, the second one is the filtered picture ("Filtered-" prefix), the third one contains the wavelet coefficients ("WT-" prefix), that are converted to 8-bit and are intensity scaled for good visualization, the fourth picture ("WT-NoStretch-" prefix) contains float values of the wavelet coefficients without intensity scaling. The third and fourth pictures appear only after checking corresponding boxes in the main dialog. <i>Applying Synchronize All</i> in the <i>Sync Wins</i> dialog is helpful when navigating through image stacks.
 
 We should mention here that sizes of input image matrices must be of power of 2, common sizes are: 64, 128, 256, 512, 1024, 2048 etc., otherwise the plugin will not start and a warning message appears again. This is due to the proper computation of levels of wavelet decomposition of images, see below.
 
@@ -41,23 +41,23 @@ Description of functionality of items in the plugin window
 
 • <i>Hard Thresholding</i> – hard VisuShrink thresholding: These two tools demonstrate another use of wavelet transform for image denoising/filtering. It is accomplished using VisuShrink thresholding method and the user defines the threshold by selecting the level of denoising (that equals Sigma value of the Universal threshold; Sigma takes values 1-128) in the dialog. It can also be selected to do either Soft Thresholding or Hard Thresholding \[1-2\]. Soft thresholding generally gives a smoother image.
 
-• <i>Suppress Approx. Coeffs. (AC) – applied with “Suppress DC”</i>;
+• <i>Suppress Approx. Coeffs. (AC) – applied with "Suppress DC"</i>;
 
-• <i>Suppress Detail. Coeffs. (DC) – applied with “Suppress AC”</i>: Here the plugin suppresses coefficients separately, i.e. only Approximation Coefficients can be suppressed (0-100%) or only Detailed Coefficients (0-100%). However, it is possible to combine settings of both coefficients together, i.e. to set, e.g., AC to 5% and DC to 50% and both suppressions will be applied to the image simultaneously.
+• <i>Suppress Detail. Coeffs. (DC) – applied with "Suppress AC"</i>: Here the plugin suppresses coefficients separately, i.e. only Approximation Coefficients can be suppressed (0-100%) or only Detailed Coefficients (0-100%). However, it is possible to combine settings of both coefficients together, i.e. to set, e.g., AC to 5% and DC to 50% and both suppressions will be applied to the image simultaneously.
 
 Explanation of details of the wavelet transform and parameters mentioned can be found in the text below \[2\].
 
 **Show WT Coefficients**
 
-If user wants to inspect values of wavelet coefficients, checking this checkbox shows a picture depicting the coefficients that are converted to 8-bit and are intensity scaled for good visualization (the image with the “WT-” prefix).
+If user wants to inspect values of wavelet coefficients, checking this checkbox shows a picture depicting the coefficients that are converted to 8-bit and are intensity scaled for good visualization (the image with the "WT-" prefix).
 
 **Show Float WT Coefficients (For Experts)**
 
-If user wants to see real values of wavelet coefficients, checking this checkbox shows another picture depicting the coefficients in float precision (the image with the “WT-NoStretch-” prefix). That can be used, e.g., for analysis in Matlab.
+If user wants to see real values of wavelet coefficients, checking this checkbox shows another picture depicting the coefficients in float precision (the image with the "WT-NoStretch-" prefix). That can be used, e.g., for analysis in Matlab.
 
-**Enable 1 Slice Preview – Use “Synchronize All Windows”**
+**Enable 1 Slice Preview – Use "Synchronize All Windows"**
 
-In a standard way, when changing any parameter or method in the dialog, “Filtered” images, and also “WT” and “WT-NoStretch-” pictures if these are opened, are **recomputed instantly**. This may become time-consuming when filtering big stacks with large image matrices. Then checking this box stops immediate recomputation of the stacks and <i>Preview 1 Slice</i> button is enabled. Now, after changing a parameter and/or a method these are applied to the data only after pressing this button. But only a slice that is active in the original stack is updated.
+In a standard way, when changing any parameter or method in the dialog, "Filtered" images, and also "WT" and "WT-NoStretch-" pictures if these are opened, are **recomputed instantly**. This may become time-consuming when filtering big stacks with large image matrices. Then checking this box stops immediate recomputation of the stacks and <i>Preview 1 Slice</i> button is enabled. Now, after changing a parameter and/or a method these are applied to the data only after pressing this button. But only a slice that is active in the original stack is updated.
 
 After pressing <i>Preview 1 Slice</i> another <i>Recomputing All Data Required</i> button becomes active as well. After pressing this button parameters that were previously applied to one slice only are used for updating the whole stack of images. This button is active only if parameters set were not applied to the whole stack. It is highly useful here to apply <i>Synchronize All</i> in the <i>Sync Wins</i> dialog when going through the stack to see corresponding slices in all image stack windows.
 
@@ -93,13 +93,13 @@ Step-by-step manuals
 
 4\. Run {% include bc content='Window | Tile'%}.
 
-5\. Press <i>Synchronize All</i> in <i>Synchronize Windows</i> dialog. Or select the input image and its “WT-“ and “Filtered-“ versions for syncing if more images are opened in Fiji/Imagej.
+5\. Press <i>Synchronize All</i> in <i>Synchronize Windows</i> dialog. Or select the input image and its "WT-" and "Filtered-" versions for syncing if more images are opened in Fiji/Imagej.
 
 6\. Find a slice of interest in a stack image with multiple slices (if such is opened).
 
 7\. By CTRL+SHIFT+C and pressing <i>Auto</i> adjust contrast in all images if it is useful. Do not press <i>Apply</i>.
 
-8\. Apply denoising/filtration of your data. If any method or parameter is changed, “Filtered-“ (and “WT-“ and “WT-NoStretch-” if these are opened) image windows are **immediately recomputed**.
+8\. Apply denoising/filtration of your data. If any method or parameter is changed, "Filtered-" (and "WT-" and "WT-NoStretch-" if these are opened) image windows are **immediately recomputed**.
 
 9\. Play iteratively with parameters until you are satisfied with the result of denoising/filtration. It is possible to return back to default values of the dialog by pressing <i>Refresh</i>.
 
@@ -117,7 +117,7 @@ Step-by-step manuals
 
 4\. Run {% include bc content='Window | Tile'%}.
 
-5\. Press <i>Synchronize All</i> in <i>Synchronize Windows</i> dialog. Or select the input image and its “WT-“ and “Filtered-“ versions for syncing if more images are opened in Fiji/Imagej.
+5\. Press <i>Synchronize All</i> in <i>Synchronize Windows</i> dialog. Or select the input image and its "WT-" and "Filtered-" versions for syncing if more images are opened in Fiji/Imagej.
 
 6\. Find a slice of interest in a stack image with multiple slices (if such is opened).
 

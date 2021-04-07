@@ -61,7 +61,7 @@ We discussed opportunities to improvement for the Bdv design:
 -   Use property pattern for settings like active source ...
 -   Actively add/remove views
 -   Update views (force cache-dropping) - for BDV add/remove views
--   Access to color settings, overlap rendering, …
+-   Access to color settings, overlap rendering, ...
 -   Allow Grouping of views (externally is ok)
 -   Consider Accumulator / Composite that works with type other than ARGBType
 -   Make it easy to disable or replace Dialogs

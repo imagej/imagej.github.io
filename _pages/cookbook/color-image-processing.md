@@ -16,11 +16,11 @@ Images with color come in three different forms: pseudo-color, 24-bit RGB image,
 
 ### Pseudo-color
 
-A pseudo-colored image has a single channel, (i.e. grey) image that has color ascribed to it via a “Look Up Table” or LUT (a.k.a. palette, color table). This is a table of grey values (zero to 256 or 4095 whether 8-bit or 12-bit grey) with accompanying red, green and blue values. Instead of displaying grey, the image displays a pixel with a defined amount of each color. Differences in color in the pseudo-colored image reflect differences in intensity of the object rather than differences in color of the specimen that has been imaged. For pseudo-color functions see later.
+A pseudo-colored image has a single channel, (i.e. grey) image that has color ascribed to it via a "Look Up Table" or LUT (a.k.a. palette, color table). This is a table of grey values (zero to 256 or 4095 whether 8-bit or 12-bit grey) with accompanying red, green and blue values. Instead of displaying grey, the image displays a pixel with a defined amount of each color. Differences in color in the pseudo-colored image reflect differences in intensity of the object rather than differences in color of the specimen that has been imaged. For pseudo-color functions see later.
 
 ### 24-bit RGB images
 
-The colors in RGB images (24-bit with 8-bits for each of the red, green and blue channels) are used to show multi-channel images. The colors are designed to reflect genuine colors (i.e. the green in an RGB image reflects green color in the specimen). There are several RGB functions in Fiji. Native functions can be found in “Image/Color”.
+The colors in RGB images (24-bit with 8-bits for each of the red, green and blue channels) are used to show multi-channel images. The colors are designed to reflect genuine colors (i.e. the green in an RGB image reflects green color in the specimen). There are several RGB functions in Fiji. Native functions can be found in "Image/Color".
 
 ![](/media/24bit rgb images.jpg "24bit_rgb_images.jpg")
 
@@ -42,7 +42,7 @@ Merging multi-channel images
 
 ### Interleaved multi-channel experiments
 
-Multi-channel experiments acquired on some systems are imported with the different channels interleaved, i.e. Slice 1 is Timepoint1-channel1 and Slice 2 is Timepoint1-channel2. The stack needs to be “De-interleaved” before it can be RGB-merged. This can be done with “*Image/Stacks/Tools/Deinterleave*” and entering the number of channels in the dialog (typically “2”). You can also choose to check a box for whether or not the source stacks should be kept. The two stacks can then be merged via: “*Image/Color/RGB merge*”.
+Multi-channel experiments acquired on some systems are imported with the different channels interleaved, i.e. Slice 1 is Timepoint1-channel1 and Slice 2 is Timepoint1-channel2. The stack needs to be "De-interleaved" before it can be RGB-merged. This can be done with "*Image/Stacks/Tools/Deinterleave*" and entering the number of channels in the dialog (typically "2"). You can also choose to check a box for whether or not the source stacks should be kept. The two stacks can then be merged via: "*Image/Color/RGB merge*".
 
 ![](/media/ deinterleaver.jpg "_deinterleaver.jpg")
 
@@ -54,14 +54,14 @@ This reduces 16-bit images to 8-bits (based on the current Brightness and Contra
 
 An alternative to the normal Red-Green merge is to merge the images based on Cyan and Magenta, or Cyan-Yellow or any other color combination.
 
-This can aid visualization of colocalization due to our poor perception of red and green colors. The Colour\_merge plugin gives the user the option of using the ‘difference’ arithmetic processing on the image stacks you select. This is not strictly a merge (when cyan and magenta merge they produce white, not yellow) but facilitates visualization of the separate channels (See Demandolx and Davoust, J. Microscopy, 1997 v185. p21). You can perform a true merge if you turn off the “Difference” option.
+This can aid visualization of colocalization due to our poor perception of red and green colors. The Colour\_merge plugin gives the user the option of using the 'difference' arithmetic processing on the image stacks you select. This is not strictly a merge (when cyan and magenta merge they produce white, not yellow) but facilitates visualization of the separate channels (See Demandolx and Davoust, J. Microscopy, 1997 v185. p21). You can perform a true merge if you turn off the "Difference" option.
 
-Run the plugin and select the two images to be merged. Select the desired colors from the drop-down options. <Current> uses the LUT that the image currently has (this is often the desired LUT). The “Difference” option performs a “difference” arithmetic operation rather than an “addition”. If the “Pre-sub 2 from 1” option is checked the second image is subtracted from the first prior to merging.
+Run the plugin and select the two images to be merged. Select the desired colors from the drop-down options. <Current> uses the LUT that the image currently has (this is often the desired LUT). The "Difference" option performs a "difference" arithmetic operation rather than an "addition". If the "Pre-sub 2 from 1" option is checked the second image is subtracted from the first prior to merging.
 
 Merging transmitted light and fluorescence images
 -------------------------------------------------
 
-Fluorescence and transmitted light brightfield images can be merged with the “*Image/Color/Merge Channels...*”. This instruction lets you than choose the C4 (gray) option. This can prevent a 'washed out' look to the fluorescence.
+Fluorescence and transmitted light brightfield images can be merged with the "*Image/Color/Merge Channels...*". This instruction lets you than choose the C4 (gray) option. This can prevent a 'washed out' look to the fluorescence.
 
 This also reduces 16-bit images to 8-bits (based on the current Brightness and Contrast values) then generates a 24-bit RGB image.
 
@@ -92,11 +92,11 @@ Pseudo-color
 
 Judicious use of LUTs can be very useful in highlighting the desired features of an image. The human eye can perceive relatively few shades in one image. Pseudo-coloring images can make data more visible
 
-Traditional “Green” LUT
+Traditional "Green" LUT
 
 ![](/media/ traditional green lut.jpg "_traditional_green_lut.jpg")
 
-Enhanced “Green Hot” LUT
+Enhanced "Green Hot" LUT
 
 ![](/media/ enhanced green hot lut.jpg "_enhanced_green_hot_lut.jpg")
 
@@ -106,9 +106,9 @@ Have a play and see which LUT helps illustrates the features in your image.
 
 ![](/media/ list of luts.jpg "_list_of_luts.jpg")
 
-Montage compiled from a stack generated using the menu commands “*Image/Color/Display LUTs*".
+Montage compiled from a stack generated using the menu commands "*Image/Color/Display LUTs*".
 
-Different LUTs are available via the menu commands “*Image/Lookup Tables*”.
+Different LUTs are available via the menu commands "*Image/Lookup Tables*".
 
 When using a non-standard LUT it may be useful to add a greyscale ramp so the user can judge which color represents which grey-scale value. A ramp can be added with the native function "*Analyze/Tools/Calibration Bar...*". If there is no space for the ramp, try enlarging the image canvas with the menu command "*Image/Adjust/Canvas Size...*".
 

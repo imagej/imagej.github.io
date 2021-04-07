@@ -15,7 +15,7 @@ HPC Workflow Manager is developed at IT4Innovations, Ostrava, Czech Republic.
 
 ### Why use HPC Workflow Manager
 
-*"Today, parallel processing solves some of our biggest problems in much the same way that settlers of the Old West solved their biggest problems using parallel oxen. If they were using an ox to move a tree and the ox was not big enough or strong enough, they certainly didn’t try to grow a bigger ox—they used two oxen. If our computer isn’t fast enough or powerful enough, instead of trying to develop a faster, more powerful computer, why not simply use multiple computers?"* -Essentials of Computer Organization and Architecture, 5th Edition by Null
+*"Today, parallel processing solves some of our biggest problems in much the same way that settlers of the Old West solved their biggest problems using parallel oxen. If they were using an ox to move a tree and the ox was not big enough or strong enough, they certainly didn't try to grow a bigger ox—they used two oxen. If our computer isn't fast enough or powerful enough, instead of trying to develop a faster, more powerful computer, why not simply use multiple computers?"* -Essentials of Computer Organization and Architecture, 5th Edition by Null
 
 The end of major serial execution performance gains due to limitations in Moore's law means that it is no longer possible to solve problems with big datasets and/or computational requirements just by getting a newer processor and hopping that the existing serial programs will perform better. Instead, more processors in parallel must be used. Personal computers have been moving in this direction for many years by adding multiple cores, accelerating performance through the use of GPUs, bringing memory closer to the CPU, etc. Still, there are massive datasets that require even more performance. Such performance can only be found today in supercomputers.
 
@@ -59,15 +59,15 @@ Right-click in the empty table or an empty row of the table to display the conte
 
 <figure><img src="/media/Hpc workflow manager context menu.png" title=" Figure 3: Context menu press right click on an empty row or empty table to display." width="200" alt=" Figure 3: Context menu press right click on an empty row or empty table to display." /><figcaption aria-hidden="true"> Figure 3: Context menu press right click on an empty row or empty table to display.</figcaption></figure>
 
-Select the first option “Create a new job”. The “Create job” window will appear. From the “Workflow Type” section, select the “Macro Execution” option.
+Select the first option "Create a new job". The "Create job" window will appear. From the "Workflow Type" section, select the "Macro Execution" option.
 
-In the input data location, you must provide a directory that contains your Macro script (the script must be named “user.ijm”). If this is the first time you are using the HPC Workflow plugin with Macro support, you can use the example found [here](https://github.com/MKrumnikl/Ij1MPIWrapper/tree/master/src/main/resources/ExampleScripts/HelloWorld).
+In the input data location, you must provide a directory that contains your Macro script (the script must be named "user.ijm"). If this is the first time you are using the HPC Workflow plugin with Macro support, you can use the example found [here](https://github.com/MKrumnikl/Ij1MPIWrapper/tree/master/src/main/resources/ExampleScripts/HelloWorld).
 
 In the node configuration, select four nodes (4) by pressing the up arrow in the spinner four times.
 
-In the “Output data location” section leave the default option, “Job subdirectory”, selected.
+In the "Output data location" section leave the default option, "Job subdirectory", selected.
 
-Now, the filled-in form should look like Figure 4. If you are using Linux save the “HelloWorld” example script in your home directory (“\~/HelloWorld/user.ijm”) and use that path instead of “C:/Documents/HelloWorld”. When you are sure that the form is filled-in correctly press the “Create” button.
+Now, the filled-in form should look like Figure 4. If you are using Linux save the "HelloWorld" example script in your home directory ("\~/HelloWorld/user.ijm") and use that path instead of "C:/Documents/HelloWorld". When you are sure that the form is filled-in correctly press the "Create" button.
 
 <figure><img src="/media/Hpc-workflow-manager-create-job.png" title=" Figure 4: Example of a new Macro job configuration." width="300" alt=" Figure 4: Example of a new Macro job configuration." /><figcaption aria-hidden="true"> Figure 4: Example of a new Macro job configuration.</figcaption></figure>
 
@@ -77,11 +77,11 @@ If you have created a new job, the main window should look roughly like Figure 5
 
 <figure><img src="/media/Hpc-workflow-manager-created-job.png" title=" Figure 5: A new Macro job has been created." width="300" alt=" Figure 5: A new Macro job has been created." /><figcaption aria-hidden="true"> Figure 5: A new Macro job has been created.</figcaption></figure>
 
-Before you can start the job, you need to upload your script (“user.ijm”). To do this you must select the “Upload data” item from the context menu. If your script also needs data, they should also be located in the same directory that the user's script is in. The data will be uploaded along with the Macro script file.
+Before you can start the job, you need to upload your script ("user.ijm"). To do this you must select the "Upload data" item from the context menu. If your script also needs data, they should also be located in the same directory that the user's script is in. The data will be uploaded along with the Macro script file.
 
-A timer will appear in the download column. When it has completed uploading the data and user's script the cell that corresponds to the job should indicate that it is “Done” (Figure 6).
+A timer will appear in the download column. When it has completed uploading the data and user's script the cell that corresponds to the job should indicate that it is "Done" (Figure 6).
 
-<figure><img src="/media/Hpc-workflow-manager-upload-job.png" title=" Figure 6: Uploading files (in this case just the user’s script) is done." width="300" alt=" Figure 6: Uploading files (in this case just the user’s script) is done." /><figcaption aria-hidden="true"> Figure 6: Uploading files (in this case just the user’s script) is done.</figcaption></figure>
+<figure><img src="/media/Hpc-workflow-manager-upload-job.png" title=" Figure 6: Uploading files (in this case just the user's script) is done." width="300" alt=" Figure 6: Uploading files (in this case just the user's script) is done." /><figcaption aria-hidden="true"> Figure 6: Uploading files (in this case just the user's script) is done.</figcaption></figure>
 
 Now that the script file is uploaded the job can be started.
 
@@ -89,48 +89,48 @@ Now that the script file is uploaded the job can be started.
 
 Let's inspect figure 6 closer. In the figure you can see the following columns:
 
--   “Job ID” - Job’s identification number;
--   “Status” – The job’s current status which can be:
-    -   “Unknown” – the state of the job is not known;
-    -   “Configuring” – the job is being configured;
-    -   “Queued” – the job is in a queue and when there are available nodes it will be executed;
-    -   “Running” – the job was executed and it is currently running;
-    -   “Finished” – the job has stopped running successfully, completing its tasks;
-    -   “Failed” – the job has stopped running unsuccessfully, it did not complete its tasks;
-    -   “Canceled” – the job was stopped by the user; and
+-   "Job ID" - Job's identification number;
+-   "Status" – The job's current status which can be:
+    -   "Unknown" – the state of the job is not known;
+    -   "Configuring" – the job is being configured;
+    -   "Queued" – the job is in a queue and when there are available nodes it will be executed;
+    -   "Running" – the job was executed and it is currently running;
+    -   "Finished" – the job has stopped running successfully, completing its tasks;
+    -   "Failed" – the job has stopped running unsuccessfully, it did not complete its tasks;
+    -   "Canceled" – the job was stopped by the user; and
     -   Disposed – the job was disposed.
--   “Creation time” – the time when the job was created.
--   “Start time” – the time when the job was last started.
--   “End time” – the time when the job last ended.
--   “Upload” – whether the job was uploaded.
--   “Download” – whether the job was downloaded.
--   “Workflow Type”- whether it is SPIM or Macro workflow type.
+-   "Creation time" – the time when the job was created.
+-   "Start time" – the time when the job was last started.
+-   "End time" – the time when the job last ended.
+-   "Upload" – whether the job was uploaded.
+-   "Download" – whether the job was downloaded.
+-   "Workflow Type"- whether it is SPIM or Macro workflow type.
 
 Right-click on the new job to display the context menu (of Figure 3). You will notice that there are new enabled items.
 
-Right-click the row of the job and select “Start Job” from the context menu.
+Right-click the row of the job and select "Start Job" from the context menu.
 
-To make the source code of the user cleaner and easier to understand the special functions that make parallelism available to the user are appended to the user script on upload and a new file is created called “parallelMacroWrappedScript.ijm” which is the file that will be executed on the cluster.
+To make the source code of the user cleaner and easier to understand the special functions that make parallelism available to the user are appended to the user script on upload and a new file is created called "parallelMacroWrappedScript.ijm" which is the file that will be executed on the cluster.
 
-To inspect the submitted file (for example for debugging) you can right-click the job and select “Open Macro in editor” where you can see the contents of the user script along with the appended function definitions that provide parallelism.
+To inspect the submitted file (for example for debugging) you can right-click the job and select "Open Macro in editor" where you can see the contents of the user script along with the appended function definitions that provide parallelism.
 
-Finally, to start the job, right-click on the job and select the “Start job” item from the context menu.
+Finally, to start the job, right-click on the job and select the "Start job" item from the context menu.
 
 ### Inspecting progress
 
 There are two ways to inspect the progress of a job.
 
-The first one is by looking at the “Status” of a job. This way you can see whether a job is running on the HPC Cluster or not. In the case of Figure 7, the job is “Queued”.
+The first one is by looking at the "Status" of a job. This way you can see whether a job is running on the HPC Cluster or not. In the case of Figure 7, the job is "Queued".
 
 <figure><img src="/media/Hpc-workflow-manager-queued-job.png" title=" Figure 7: Job is queued." width="300" alt=" Figure 7: Job is queued." /><figcaption aria-hidden="true"> Figure 7: Job is queued.</figcaption></figure>
 
-However, this is a very coarse-grained way to see the progress of the job and when it starts running it does not provide any useful information until it has ended (“Finished”, “Failed” etc.).
+However, this is a very coarse-grained way to see the progress of the job and when it starts running it does not provide any useful information until it has ended ("Finished", "Failed" etc.).
 
-The second way is to open the “Job dashboard” for the desired job by either double-clicking the job’s row or right-click and select the “Job dashboard” context menu item. Note that the job must be in the state “Running” for this functionality to work, you may open the window earlier and it will start displaying the progress when the state changes automatically.
+The second way is to open the "Job dashboard" for the desired job by either double-clicking the job's row or right-click and select the "Job dashboard" context menu item. Note that the job must be in the state "Running" for this functionality to work, you may open the window earlier and it will start displaying the progress when the state changes automatically.
 
-Select the tab “Macro Progress” and ignore the rest of the tabs for now (see section Job dashboard for descriptions of the rest of the tabs).
+Select the tab "Macro Progress" and ignore the rest of the tabs for now (see section Job dashboard for descriptions of the rest of the tabs).
 
-To view the progress, click on the “Macro Progress” if it is not already selected (it should be selected by default). Please be patient while the progress is loading. There is a status bar on the lower right corner of the window where you can monitor the process of getting the progress from the HPC Cluster (the progress is stored in a separate progress file for each compute-node of the HPC Cluster it is run on).
+To view the progress, click on the "Macro Progress" if it is not already selected (it should be selected by default). Please be patient while the progress is loading. There is a status bar on the lower right corner of the window where you can monitor the process of getting the progress from the HPC Cluster (the progress is stored in a separate progress file for each compute-node of the HPC Cluster it is run on).
 
 You can see a snapshot of the progress of the tasks of the running job of the example in figure 8.
 
@@ -140,19 +140,19 @@ Each line represents a different task, each column represents a different comput
 
 ### Job dashboard
 
-In the “Job dashboard” there are the following five tabs:
+In the "Job dashboard" there are the following five tabs:
 
--   “Macro Progress” – this tab is described in the previous section Inspecting progress (click [here](https://imagej.net/File:Hpc-workflow-manager-macro-progress.png) );
--   “Error output” - the error output and warnings that are redirected live from the HPC Cluster (click [here](https://imagej.net/File:Hpc-workflow-manager-error-output.png) );
--   “Other output”- the live redirected standard output from the cluster in the tab (click [here](https://imagej.net/File:Hpc-workflow-manager-other-output.png) );
--   “Job directories” – contains a listing of the job directories (Input, Output and Working) (click [here](https://imagej.net/File:Hpc-workflow-manager-job-directories.png) ); and
--   “Data upload” – contains a listing of the files that were uploaded (click [here](https://imagej.net/File:Hpc-workflow-manager-data-upload.png) );
+-   "Macro Progress" – this tab is described in the previous section Inspecting progress (click [here](https://imagej.net/File:Hpc-workflow-manager-macro-progress.png) );
+-   "Error output" - the error output and warnings that are redirected live from the HPC Cluster (click [here](https://imagej.net/File:Hpc-workflow-manager-error-output.png) );
+-   "Other output"- the live redirected standard output from the cluster in the tab (click [here](https://imagej.net/File:Hpc-workflow-manager-other-output.png) );
+-   "Job directories" – contains a listing of the job directories (Input, Output and Working) (click [here](https://imagej.net/File:Hpc-workflow-manager-job-directories.png) ); and
+-   "Data upload" – contains a listing of the files that were uploaded (click [here](https://imagej.net/File:Hpc-workflow-manager-data-upload.png) );
 
 ### How to download the results
 
-Once the job has finished you can right-click and select the item “Download result” which will now have become available.
+Once the job has finished you can right-click and select the item "Download result" which will now have become available.
 
-When the timer in the “Download” column has finished and the state is “Done” the files will have been transferred. You can see the downloaded files by right-clicking the job and selecting the item “Open job sub-directory”.
+When the timer in the "Download" column has finished and the state is "Done" the files will have been transferred. You can see the downloaded files by right-clicking the job and selecting the item "Open job sub-directory".
 
 How to write a parallel Macro
 -----------------------------
@@ -171,7 +171,7 @@ Writing a small parallel script will make you familiar with the parallelization 
 
 #### Simple greeting example
 
-Let's write a simple “greeting” Macro script where each node will greet the rest with a print message and wait for the rest to greet it as well. Then it will announce its departure and end. No node should finish before all of them have introduced themselves. Let’s start:
+Let's write a simple "greeting" Macro script where each node will greet the rest with a print message and wait for the rest to greet it as well. Then it will announce its departure and end. No node should finish before all of them have introduced themselves. Let's start:
 
 First, we can write a serial version:
 
@@ -179,7 +179,7 @@ First, we can write a serial version:
     print("Hello I am a single node.");
     print("Bye, from the only node.");
 
-Now let’s parallelize this by adding a call to `parInit()` at the beginning in order to start the parallel execution of the program. We must also add a call to `parFinalize()` at the end of our program to stop the parallelization. The code should now look like this:
+Now let's parallelize this by adding a call to `parInit()` at the beginning in order to start the parallel execution of the program. We must also add a call to `parFinalize()` at the end of our program to stop the parallelization. The code should now look like this:
 
     parInit();
       print("The greeting program.");
@@ -206,7 +206,7 @@ Notice that we also nested the first `print()` in an `if` statement comparing th
 
 You may choose any rank of the available nodes, it is not necessary to use the first one although it is the convention. You may run the script with a different amount of nodes in the future and the only rank that is guaranteed to exist is zero (0), this is because there will always be at least one node executing the script and it will have rank zero (0) assigned to it. Thus, the code surrounded in the `if` statement with rank zero will always be executed and executed by only one node.
 
-To greet all of the nodes let’s add the total number of nodes used to run the script (size) as well by calling get size `parGetSize()`. Add the following line after getting the rank to get the size:
+To greet all of the nodes let's add the total number of nodes used to run the script (size) as well by calling get size `parGetSize()`. Add the following line after getting the rank to get the size:
 
       size = parGetSize();
 
@@ -216,9 +216,9 @@ And modify the first print to read:
 
 Very well, our program is now parallelized. Unfortunately, it is incorrect.
 
-If you run it enough times you will notice that sometimes a node will “depart” before all of them give their greetings. This is because some nodes may execute their code faster or slower, there is no guaranty that each line will execute at the same time, or which one will execute first between nodes.
+If you run it enough times you will notice that sometimes a node will "depart" before all of them give their greetings. This is because some nodes may execute their code faster or slower, there is no guaranty that each line will execute at the same time, or which one will execute first between nodes.
 
-For example, if there are two (2) nodes the redirected output in the “Other output” tab could look like this:
+For example, if there are two (2) nodes the redirected output in the "Other output" tab could look like this:
 
     The greeting program.
     Hello I am node number: 1
@@ -228,7 +228,7 @@ For example, if there are two (2) nodes the redirected output in the “Other ou
 
 To correct this we will put a barrier to the flow of the execution of the code.
 
-`Any node that calls this function will stop until every node has also called this function.`
+`Any node that calls this function will stop until every node has also called this function.`
 
 Do this by adding calling `parBarrier()` bellow the greeting and above the announcement of the departure of the node.
 
@@ -253,11 +253,11 @@ Which is correct. Now let us imagine that node number one (1) and only node numb
 
 Add the above snippet anywhere in the parallel region (that is between `parInit()` and `parFinalize()`) and before calling `parBarrier()`.
 
-Great, now since node one brought the cake it would like to share it with the rest of the nodes. Let’s imagine that the cake is an array made out of numbers. Like the following one:
+Great, now since node one brought the cake it would like to share it with the rest of the nodes. Let's imagine that the cake is an array made out of numbers. Like the following one:
 
       cake = newArray(1, 2, 3, 4);
 
-There are four pieces of cake. Add the above line inside the `if` statement’s body. Above the `if` statement add the following:
+There are four pieces of cake. Add the above line inside the `if` statement's body. Above the `if` statement add the following:
 
       cake = newArray(0);
 
@@ -265,7 +265,7 @@ Which means that the rest of the nodes do not have a cake. You will understand w
 
 Node number one wants to divide them equally. This is why `parScatterEqually()` must be used.
 
-`parScatterEqually()` will at the same time send and receive the cake piece or pieces (array items). It needs three arguments, the array to split as well as send (scatter), the length of the sent array, and which node is to spit the array and send it. Thus, in this case, you must add the bellow line after the `if` statement’s body:
+`parScatterEqually()` will at the same time send and receive the cake piece or pieces (array items). It needs three arguments, the array to split as well as send (scatter), the length of the sent array, and which node is to spit the array and send it. Thus, in this case, you must add the bellow line after the `if` statement's body:
 
       receivedPieces = parScatterEqually(cake, 4, 1); // Do NOT use lengthOf(cake);
 
@@ -301,7 +301,7 @@ The first step is to add all tasks by using the `parAddTasks()` function. Simply
 
 You may store the id of the task added in a variable for easier handling later on.
 
-The second step is to call the `parReportTasks()` function which will output to each node’s progress log a listing of the task id along with the task’s description.
+The second step is to call the `parReportTasks()` function which will output to each node's progress log a listing of the task id along with the task's description.
 
 Notice that the task ids may differ between nodes as a task may be added only in one node if so desired by the user.
 
@@ -407,8 +407,8 @@ Parallelization functions
 
 | Function name     | Input                                         | Output               | Description                                                                                            |
 |-------------------|-----------------------------------------------|----------------------|--------------------------------------------------------------------------------------------------------|
-| parReportProgress | Task id (ex 8), progress percentage (ex 85 %) | None                 | Outputs progress in percentage for a specified task in the node’s progress log.                        |
-| parReportText     | Text                                          | None                 | Outputs given text to the node’s log.                                                                  |
+| parReportProgress | Task id (ex 8), progress percentage (ex 85 %) | None                 | Outputs progress in percentage for a specified task in the node's progress log.                        |
+| parReportText     | Text                                          | None                 | Outputs given text to the node's log.                                                                  |
 | parAddTask        | Description                                   | Index of added task. | Creates a new task with the description provided.                                                      |
 | parReportTasks    | None                                          | None                 | Outputs all task ids with their descriptions.                                                          |
 | parEnableTiming   | None                                          | None                 | Enables timing each task in the progress logs. It measures time passed to reach 100% from 0% progress. |

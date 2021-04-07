@@ -46,7 +46,7 @@ Adjust the detector so that only a small amount of red can be seen in the frame 
 
 -   Note: The normal range for the detector is 300-500. You should not go above 620.
 
- 
+ 
 
 <li>
 
@@ -54,7 +54,7 @@ Stop scan
 
 </li>
 
- 
+ 
 
 <li>
 
@@ -62,7 +62,7 @@ Define the start position in your metadata by selecting "manual update" then "se
 
 </li>
 
- 
+ 
 
 <li>
 
@@ -113,7 +113,7 @@ Once Wiscan has run, your output will be a series of images that can be stitched
 
 </li>
 
--   NOTE- If an noticeable amount of overlay can be seen in your images, there is a pixel to micron error within the microscope's initial setup. To fix this, recalibrate the microscope's objectives. 
+-   NOTE- If an noticeable amount of overlay can be seen in your images, there is a pixel to micron error within the microscope's initial setup. To fix this, recalibrate the microscope's objectives. 
 
 Generate the grid
 -----------------

@@ -57,7 +57,7 @@ FAQ
 
 If in the same window, it also says:
 
-`java.lang.NullPointerException:Canvas3D: null GraphicsConfiguration`
+`java.lang.NullPointerException:Canvas3D: null GraphicsConfiguration`
 
 the reason is most likely that your graphics setup does not have any hardware 3D acceleration. This can happen e.g. when you run ImageJ via a remote X11 connection (3D acceleration works only when the graphics are displayed on the same machine as the program runs).
 

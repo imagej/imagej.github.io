@@ -143,8 +143,8 @@ There is no rsync daemon to support for anonymous synchronization. If you want t
 
 The rough idea is to have a cronjob to run rsync on ssh. Since this needs authentication, we use a ssh key with no passphrase. We also create a system user to do all of this and limit this ssh key for this function.
 
-`$ sudo adduser --system fiji_mirror_sync`  
-`$ sudo fiji_mirror_sync ssh-keygen -t rsa -b 4096 -C "Your institution"`
+`$ sudo adduser --system fiji_mirror_sync`  
+`$ sudo fiji_mirror_sync ssh-keygen -t rsa -b 4096 -C "Your institution"`
 
 These instructions are valid for Ubuntu 14.04. Other distributions may handle system users differently and may not even create a home directory for them. In such case, the ssh key can be placed in {% include path content='/etc/ssh' %}, and the config options used with 'ssh -o' .
 
@@ -162,8 +162,8 @@ These instructions are valid for Ubuntu 14.04. Other distributions may handle sy
 
 To prepare the known hosts files:
 
-`$ ssh-keyscan -t rsa code.imagej.net | sudo -u fiji_mirror_sync tee -a /home/fiji_mirror_sync/.ssh/known_hosts`  
-`$ sudo -u fiji_mirror_sync ssh imagej ssh-keyscan -t rsa fiji.sc | sudo -u fiji_mirror_sync tee -a /home/fiji_mirror_sync/.ssh/known_hosts`
+`$ ssh-keyscan -t rsa code.imagej.net | sudo -u fiji_mirror_sync tee -a /home/fiji_mirror_sync/.ssh/known_hosts`  
+`$ sudo -u fiji_mirror_sync ssh imagej ssh-keyscan -t rsa fiji.sc | sudo -u fiji_mirror_sync tee -a /home/fiji_mirror_sync/.ssh/known_hosts`
 
 Finally set up the cronjob with 'sudo crontab -u fiji\_mirror\_sync -e'
 
@@ -176,8 +176,8 @@ Finally set up the cronjob with 'sudo crontab -u fiji\_mirror\_sync -e'
 
 Once the mirrors get populated, you can start using them on your ImageJ installations. Editing the URL of the existing ImageJ and Fiji update sites is not a good idea because any changes to them will be undone once the system gets internet access (it reads the original URLs from the Fiji wiki). There is a command line option to remove update-sites but it will not work for the ImageJ update site. Since there is no command-line option to disable an update site, ImageJ must be started with root permissions to do that. URLs for the new mirrors can be added with:
 
-`$ ImageJ-linux64 --update add-update-site Fiji_mirror url_for_your_fiji_mirror`  
-`$ ImageJ-linux64 --update add-update-site ImageJ_mirror url_for_your_imagej_mirror`
+`$ ImageJ-linux64 --update add-update-site Fiji_mirror url_for_your_fiji_mirror`  
+`$ ImageJ-linux64 --update add-update-site ImageJ_mirror url_for_your_imagej_mirror`
 
 History
 -------

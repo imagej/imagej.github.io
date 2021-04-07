@@ -20,7 +20,7 @@ Adjust the brightness and contrast with {% include bc content='Image | Adjust | 
 
 Press the *Auto* button to apply an intelligent contrast stretch to the *the image display*. Brightness and contrast is adjusted by taking into account the image's histogram. If pressed repeatedly, the button increases the percentage of saturated pixels.
 
-The *Reset* button makes the "maximum" 0 and the "minimum" 255 in 8-bit images and the "maximum" and "minimum" equal to the smallest and largest pixel values in the image’s histogram for 16-bit images.
+The *Reset* button makes the "maximum" 0 and the "minimum" 255 in 8-bit images and the "maximum" and "minimum" equal to the smallest and largest pixel values in the image's histogram for 16-bit images.
 
 If the *Auto* button does not produce a desirable result, use the region-of-interest (ROI) tool to select part of the cell and some background, then hit the *Auto* button again. The stretch will then be based on the intensities of the ROI.
 
@@ -45,7 +45,7 @@ The plugin *Plot Z Axis Profile* (this is the *Z Profiler* from Kevin (Gali) Bal
 Getting intensity values from multiple ROIs
 -------------------------------------------
 
-You can analyze multiple ROIs at once with Bob Dougherty’s *Multi Measure* plugin. The native "ROI manager" function does a similar job except doesn't generate the results in sorted columns. Check [Bob’s website](http://www.optinav.com/imagej.html) for updates.
+You can analyze multiple ROIs at once with Bob Dougherty's *Multi Measure* plugin. The native "ROI manager" function does a similar job except doesn't generate the results in sorted columns. Check [Bob's website](http://www.optinav.com/imagej.html) for updates.
 
 The Multi Measure plugin that comes with the installation is v3.2.
 
@@ -54,7 +54,7 @@ The Multi Measure plugin that comes with the installation is v3.2.
 3.  Rename this image something memorable.
 4.  Open the *ROI Manager* plugin ({% include bc content='Analyze | Tools | Roi Manager'%} or toolbar icon).
 5.  Select ROIs and "*Add*" to the ROI manager. Click the "*Show All*" button to help avoid analyzing the same cell twice.
-6.  After selecting ROIs to be analyzed in the reference image, you can draw them to the reference image by clicking the "*More&gt;&gt;*" button and selecting *Draw*. Save the reference image to the experiment’s data folder and then click on the stack to be analyzed.
+6.  After selecting ROIs to be analyzed in the reference image, you can draw them to the reference image by clicking the "*More&gt;&gt;*" button and selecting *Draw*. Save the reference image to the experiment's data folder and then click on the stack to be analyzed.
 7.  Click the "*More&gt;&gt;*" button in the ROI manager and select the *Multi Measure* button to measure all the ROIs. Click *Ok*. This will put values from each slice in to a single row with multiple columns per slice. Clicking on "*Measure all 50 slices*" will put all values from all slices and each ROI in a single column.
 8.  Go to the *Results* window and select the menu item {% include bc content='Edit | Select All...'%}. Then *Edit/Copy*.
 9.  Go to Excel and paste in the data. Check that everything was pasted in correctly
@@ -142,7 +142,7 @@ Non-linear contrast stretching
 
 ### Equalization
 
-<table><tbody><tr class="odd"><td style="border:none;padding:0in;"><p> You can have more control over brightness and contrast adjustments with the {% include bc content='Process | Enhance contrast'%} menu command. With a stack, it analyzes the each slice’s histogram to make the adjustment.</p><p>The <em>Equalize contrast</em> command applies a non-linear stretch of the histogram based on the square root of its intensity.</p></td></tr></tbody></table>
+<table><tbody><tr class="odd"><td style="border:none;padding:0in;"><p> You can have more control over brightness and contrast adjustments with the {% include bc content='Process | Enhance contrast'%} menu command. With a stack, it analyzes the each slice's histogram to make the adjustment.</p><p>The <em>Equalize contrast</em> command applies a non-linear stretch of the histogram based on the square root of its intensity.</p></td></tr></tbody></table>
 
 ![](/media/Equalize histrogram.jpg "equalize_histrogram.jpg")
 
@@ -226,7 +226,7 @@ This can also be done using the {% include bc content='Process | Image Calculato
 
 <table><tbody><tr class="odd"><td style="border:none;padding:0in;"><figure><img src="/media/PseudoCorrectionImage.gif" title="pseudoCorrectionImage.gif" alt="pseudoCorrectionImage.gif" /><figcaption aria-hidden="true">pseudoCorrectionImage.gif</figcaption></figure><p>Sometimes it is not possible to obtain a flat-field reference image. It is still possible to correct for illumination intensity, though not small defects like dust, by making a "pseudo-flat field" image by performing a large-kernel filter on the image to be corrected. For those working with DIC images, this is particularly useful because they generally have an intrinsic, and distracting, gradient in illumination.</p><p>This can be accomplished simply by subtracting the Gaussian-blurred image version of the image.</p><p>This can also be used with stacks for brightfield time-courses that vary in intensity with time. Doing this with stacks can be time consuming.</p></td></tr><tr class="even"><td><p> <img src="/media/PseudoCorrRawCorrected.gif" title="fig:pseudoCorrRawCorrected.gif" alt="pseudoCorrRawCorrected.gif" /></p></td></tr></tbody></table>
 
-### FFT background correction
+### FFT background correction
 
 You can correct for uneven illumination and horizontal "scan lines" in transmitted light images acquired using confocal microscopes by using the native FFT bandpass function ({% include bc content='Process | FFT | Bandpass Filter...).'%}
 
@@ -245,7 +245,7 @@ Use one of the ROI tools to draw around the area of interest and then select: {%
 
 More sophisticated masking can be done by *thresholding* the image and subtracting the new binary image from the original image.
 
-1.  Duplicate the image, or, if it’s a stack, generate an *average projection* of a few frames.
+1.  Duplicate the image, or, if it's a stack, generate an *average projection* of a few frames.
 2.  Threshold this image with the menu command {% include bc content='Image | Adjust | Threshold'%}.
 3.  Hit the Auto button and adjust the sliders until all the cells are highlighted red.
 4.  Click *Apply*. Check the following box: *black foreground, white background*. You should now have a white and black image with your cells black and background white. If you have white cells and black background, invert the image with {% include bc content='Edit | Invert'%}.

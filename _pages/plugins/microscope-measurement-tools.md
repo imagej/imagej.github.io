@@ -90,7 +90,7 @@ Unfortunately, changes to the settings file may not be automatically picked up b
 
 8\. Quit Fiji.
 
-9\. Delete the "*py.class*" file in the plugin’s folder:
+9\. Delete the "*py.class*" file in the plugin's folder:
 
   
 *Fiji.app / plugins / Scripts / Analyze / Microscope Measurement Tools /*

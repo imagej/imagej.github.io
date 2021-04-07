@@ -471,9 +471,9 @@ Even though no code changes, sometimes debugging affects code execution. The Exe
 **Steps for the exercise**
 
 -   Run E9 with no breakpoint. Note that it works fine
--   Now set a breakpoint in the “getName” method of either the Even or Odd LonelyRunnable
--   Set the breakpoints property to “Suspend thread”
--   Debug E9. After hitting the breakpoint, wait for a few seconds. Eventually you should see that a different thread is paused and “Expecting Exception”.
+-   Now set a breakpoint in the "getName" method of either the Even or Odd LonelyRunnable
+-   Set the breakpoints property to "Suspend thread"
+-   Debug E9. After hitting the breakpoint, wait for a few seconds. Eventually you should see that a different thread is paused and "Expecting Exception".
 -   resume the threads and see the stack trace.
 -   Now modify the breakpoint and tell it to suspend VM instead of just the thread.
 -   Debug again. When you hit a breakpoint, make sure you resume the VM and not just the thread.

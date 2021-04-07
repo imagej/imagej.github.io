@@ -52,7 +52,7 @@ Numerical approaches were implemented using differential operators in one dimens
 
 $$
 
-`I_{\phi,t+1} = I_{\phi,t} + \lambda.\overrightarrow{\nabla} \Big[ D_q. \overrightarrow{\nabla} I_{\phi,t}^{2 - q} \Big]`
+`I_{\phi,t+1} = I_{\phi,t} + \lambda.\overrightarrow{\nabla} \Big[ D_q. \overrightarrow{\nabla} I_{\phi,t}^{2 - q} \Big]`
 
 $$
 

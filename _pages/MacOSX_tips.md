@@ -32,7 +32,7 @@ Running Fiji in 32-bit mode
 
 Alternately, you can execute the following code from the Terminal:
 
-`arch -i386 /Applications/Fiji.app/Contents/MacOS/ImageJ-macosx`
+`arch -i386 /Applications/Fiji.app/Contents/MacOS/ImageJ-macosx`
 
 Either way, you will need to make sure your maximum memory limit is set below \~1800 MB. If your maximum memory is set higher than the 32-bit limit, Fiji will not be able to start up successfully in 32-bit mode.
 

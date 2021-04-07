@@ -302,7 +302,7 @@ Support in ImageJ
 
 Native libraries located in:
 
-`  `**<ImageJ-directory>`/lib/`<platform>`/`**
+`  `**<ImageJ-directory>`/lib/`<platform>`/`**
 
 will automatically be added to the **`java.library.path`**, exposing them in Java land - where they still need to be loaded. One option for loading is to create a `Service` that loads the native library in its `initialize()` method. For example, see the [ITK compatibility layer](https://github.com/imagej/imagej-itk/blob/imagej-itk-0.1.0/src/main/java/net/imagej/itk/DefaultImageJItkService.java#L84-L91).
 

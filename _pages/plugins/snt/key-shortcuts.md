@@ -141,7 +141,7 @@ These shortcuts become available in *Edit Mode*, activated through the contextua
 -   {% include key content='Shift\|' %}+Scroll - Zoom
 -   {% include key content='W' %} {% include key content='A' %} {% include key content='S' %} {% include key content='D' %} - Move around (hold {% include key content='Shift' %} for slow movement)
 
-See [SciView](/plugins/sciview)'s {% include bc content='Help| '%}menu for a full list of shortcuts.
+See [SciView](/plugins/sciview)'s {% include bc content='Help| '%}menu for a full list of shortcuts.
 
 #### Legacy 3D Viewer
 

@@ -134,7 +134,7 @@ Dataset fitting and results preview
 
 When all settings are properly configured. Click on **Fit Dataset** button on the **Settings** panel to start dataset fitting. A "pending" progress indicator will appear on top of the **Fit Dataset** button.
 
-After the “pending” state ends, new options will be available as "Show" options in the **Preview** panel. Click on the options to view the fit results:
+After the "pending" state ends, new options will be available as "Show" options in the **Preview** panel. Click on the options to view the fit results:
 
 <figure><img src="/media/FLIMJ fit dataset preview results show.png" title="Viewing the $$tau$$ (lifetime) parameter of the fitted dataset." width="220" alt="Viewing the $$tau$$ (lifetime) parameter of the fitted dataset." /><figcaption aria-hidden="true">Viewing the $$tau$$ (lifetime) parameter of the fitted dataset.</figcaption></figure>
 

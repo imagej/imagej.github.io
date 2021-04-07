@@ -202,7 +202,7 @@ References
 
 [24] N. Chenouard et al. [Objective comparison of particle tracking methods](http://dx.doi.org/doi:10.1038/nMeth.2808), Nature Methods, 11(3):281-289, 2014
 
-[25] G. Paul, J. Cardinale, and I. F. Sbalzarini. [Coupling image restoration and segmentation: A generalized linear model/Bregman perspective](http://dx.doi.org/10.1007/s11263-013-0615-2), Int. J. Comput. Vis., 104(1): 69-93, 2013
+[25] G. Paul, J. Cardinale, and I. F. Sbalzarini. [Coupling image restoration and segmentation: A generalized linear model/Bregman perspective](http://dx.doi.org/10.1007/s11263-013-0615-2), Int. J. Comput. Vis., 104(1): 69-93, 2013
 
 [26] J. A. Helmuth, C. J. Burckhardt, U. F. Greber, and I. F. Sbalzarini. [Shape reconstruction of subcellular structures from live cell fluorescence microscopy images](http://dx.doi.org/10.1016/j.jsb.2009.03.017), Journal of Structural Biology, 167:1–10, 2009
 
@@ -210,7 +210,7 @@ References
 
 [28] A. Rizk, G. Paul, P. Incardona, M. Bugarski, M. Mansouri, A. Niemann, U. Ziegler, P. Berger, and I. F. Sbalzarini. [Segmentation and quantification of subcellular structures in fluorescence microscopy images using Squassh](http://dx.doi.org/doi:10.1038/nprot.2014.037) Nature Protocols., 9(3): 586-596, 2014
 
-[29] J. Cardinale, G. Paul, and I. F. Sbalzarini. [Discrete region competition for unknown numbers of connected regions](http://dx.doi.org/10.1109/TIP.2012.2192129), IEEE Trans. Image Process., 21(8): 3531–3545, 2012
+[29] J. Cardinale, G. Paul, and I. F. Sbalzarini. [Discrete region competition for unknown numbers of connected regions](http://dx.doi.org/10.1109/TIP.2012.2192129), IEEE Trans. Image Process., 21(8): 3531–3545, 2012
 
 [30] J. A. Helmuth, C. J. Burckhardt, U. F. Greber, and I. F. Sbalzarini. [Shape reconstruction of subcellular structures from live cell fluorescence microscopy images](http://dx.doi.org/10.1016/j.jsb.2009.03.017), Journal of Structural Biology, 167:1–10, 2009
 
