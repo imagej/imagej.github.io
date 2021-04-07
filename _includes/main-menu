@@ -70,6 +70,7 @@
     {% include menu-item title="Zeiss LSM" link="/formats/lsm" %}
     {% include menu-item title="Olympus VSI" link="/formats/olympus" %}
     {% include menu-item title="Opera Flex" link="/formats/lurawave" %}
+    {% include menu-item title="FIB-SEM" link="/formats/fib-sem" %}
   {% include menu-section-end %} <!-- Learn/File Formats -->
 
   {% include menu-section title="Cookbook" link="/cookbook" %}
