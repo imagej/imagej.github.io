@@ -7,3 +7,15 @@
 .text-danger {
     color: #dc3545!important;
 }
+.text-center {
+    text-align: center!important;
+}
+.text-center h1 {
+  font-size: 2.5rem;
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.fa-5x {
+    font-size: 5em;
+}
