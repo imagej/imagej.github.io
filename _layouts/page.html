@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-    <head>
+	<head>
 		<title>{{page.title}}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="/assets/css/main.css" />
 		<link rel="stylesheet" href="/assets/css/menus.css" />
-    <link rel="stylesheet" href="/assets/css/infoboxes.css" />
+		<link rel="stylesheet" href="/assets/css/infoboxes.css" />
 		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
 		<link rel="stylesheet" href="/assets/css/lightbox.min.css" />
 		<link rel="stylesheet" href="/assets/css/debo.css" />
@@ -20,22 +20,24 @@
 		<!-- Page-info -->
 		{% include page-info %}
 
-    <!-- Main menu -->
-    {% include main-menu %}
-    <div class="toc menu">
-      <h3>Table of contents</h3>
-      <hr>
-      <ul data-toc="#content" data-toc-headings="h1,h2,h3,h4,h5,h6"></ul>
-    </div>
-        <section id="page" class="main style1">
-            <div class="container">
-                <header class="major special">
+		<!-- Main menu -->
+		{% include main-menu %}
+
+		<!-- Table of contents -->
+		<div class="toc menu">
+			<h3>Table of contents</h3>
+			<hr>
+			<ul data-toc="#content" data-toc-headings="h1,h2,h3,h4,h5,h6"></ul>
+		</div>
+
+		<!-- Main content -->
+		<section id="page" class="main style1">
+			<div class="container">
+				<header class="major special">
 					<h1><strong>{{page.title}}</strong></h1>
 				</header>
 				<div class="box alt"></div>
-				<!-- Page content -->
 				<div id="content" class="page-content">
-
 					{{content}}
 				</div>
 			</div>
@@ -43,8 +45,9 @@
 
 		<!-- Footer -->
 		{% include footer %}
+
 		<!-- Scripts -->
 		{% include base-scripts %}
 
-  </body>
+	</body>
 </html>
