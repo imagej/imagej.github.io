@@ -1,8 +1,3 @@
-<div class="sidebar-left">
-<div class="menu">
-<ul>
-<h3>ImageJ Documentation</h3>
-<hr>
 {% include menu-section title="About" link="/about" %}
   {% include menu-item title="Usage" link="/about/usage" %}
   {% include menu-item title="Contributors" link="/about/contributors" %}
@@ -217,7 +212,3 @@
     {% include menu-item title="Update site FAQ" link="/update-sites/faq" %}
   {% include menu-section-end %} <!-- Help/Update Sites -->
 {% include menu-section-end %} <!-- Help -->
-
-</ul>
-</div>
-</div>

@@ -1420,6 +1420,9 @@ input, select, textarea {
 			transform: rotate(45deg) translate(-8px, -8px);
 		}
 
+		#nav-page {
+			display:none;
+		}
 
 	}
 
