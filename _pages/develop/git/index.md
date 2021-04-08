@@ -11,7 +11,7 @@ description: test description
 -   [Learn Git Branching interactive tutorial](http://pcottle.github.io/learnGitBranching/)
 -   "Git for dummies" tutorial below
 
-If you are passingly familiar with Git, but wish it wasn't so arcane, check out:
+If you are passingly familiar with Git, but wish it was less arcane, check out:
 
 -   [Think Like (a) Git - A Guide for the Perplexed](http://think-like-a-git.net/)' %}
 
