@@ -228,6 +228,7 @@
 2019-01-17_-_Fiji_Hackathon_-_Parallelization_and_HPC :: news/2019-01-17_-_Fiji_Hackathon_-_Parallelization_and_HPC
 2019-01-17_-_Fiji_Hackathon_–_Parallelization_and_HPC :: 2019-01-17_-_Fiji_Hackathon_-_Parallelization_and_HPC
 2019-06_-_DAIS_learnathon :: Learnathon_2019
+2D_Histogram :: plugins/2d-histogram
 2D_Stitching :: Stitching_2D_3D
 3D :: Visualization#Visualization_of_Volumetric_Image_Data
 3D_Binary_Filters :: plugins/3d-binary-filters
@@ -291,6 +292,7 @@ Anaglyph_for_Red_Cyan_glasses :: plugins/anaglyph-for-red-cyan-glasses
 Analyse_Particles :: QuickPALM
 Analyse_Skeleton :: BoneJ2#Analyse_skeleton
 AnalyzeSkeleton :: plugins/analyze-skeleton
+Analyze_FRAP_movies_with_a_Jython_script :: tutorials/analyze-frap-movies
 Analyze_Skeleton_2D_3D :: AnalyzeSkeleton
 Analyze_Skeleton_2D_time_series :: plugins/analyze-skeleton/2d-time-series
 Analyze_Stripes :: plugins/analyze-stripes
@@ -317,6 +319,7 @@ Auto_Crop :: plugins/auto-crop
 Auto_Crop_guess_background_color :: Auto_Crop
 Auto_Local_Threshold :: plugins/auto-local-threshold
 Auto_Threshold :: plugins/auto-threshold
+Automated_workflow_for_parallel_Multiview_Reconstruction :: plugins/automated-workflow-for-parallel-multiview-reconstruction
 Automatic_Update_Site_Uploads :: update-sites/automatic-uploads
 Automatic_detection_of_neuronal_labeling_in_histological_image_series :: plugins/automatic-detection-of-neuronal-labeling-in-histological-image-series
 Automatic_optimal_filament_segmentation :: plugins/automatic-optimal-filament-segmentation
@@ -445,6 +448,7 @@ Changes_from_ImgLib1_to_ImgLib2 :: imglib2/changes-from-imglib1
 Chat :: about/chat
 Check_Voxel_Depth :: BoneJ2#Check_voxel_depth_.28WIP.29
 Chess :: scripting/chess
+Chromatic_shift_origins_measurement_and_correction :: techniques/chromatic-shift
 Citations :: Citing
 Cite :: Publications
 Citing :: licensing/citing
@@ -833,6 +837,8 @@ Image_Annotation :: plugins/image-annotation
 Image_Expression_Parser :: plugins/image-expression-parser
 Image_Intensity_Processing :: cookbook/image-intensity-processing
 Image_Processing_Principles :: Principles
+Image_Processing_School_Pilsen_2009 :: events/Image_Processing_School_Pilsen_2009
+Image_Processing_School_Pilsen_2009_-_Segmentation :: events/Image_Processing_School_Pilsen_2009_-_Segmentation
 Image_Stabilizer :: plugins/image-stabilizer
 Image_Stitching :: plugins/image-stitching
 Image_Synthesizer :: plugins/image-synthesizer
@@ -909,7 +915,8 @@ JavaScript_Scripting :: scripting/javascript
 Java_3D :: plugins/java-3d
 Java_8 :: 2016-05-10_-_ImageJ_HOWTO_-_Java_8,_Java_6,_Java_3D
 Java_Scripting :: Introduction_into_Developing_Plugins
-Javadocs :: Javadoc
+Javadoc :: develop/source#javadocs
+Javadocs :: develop/source#javadocs
 Javascript_Interpreter :: Javascript_Scripting
 Javassist :: develop/javassist
 JeanYvesTinevez :: User_JeanYvesTinevez
@@ -958,7 +965,8 @@ Licensing :: licensing
 Lifecycle :: Development_Lifecycle
 LimeSeg :: plugins/limeseg
 LimeSeg_ :: LimeSeg
-LinearDistance :: plugins/lineardistance
+Line_detection :: plugins/ridge-detection
+LinearDistance :: plugins/linear-distance
 Linear_Distance :: plugins/linear-distance
 Linear_Kuwahara :: plugins/linear-kuwahara
 Linear_Stack_Alignment_with_SIFT :: plugins/linear-stack-alignment-with-sift
@@ -1039,6 +1047,7 @@ Microscope_Focus_Quality :: plugins/microscope-focus-quality
 Microscope_Image_Quality :: Microscope_Focus_Quality
 Microscope_Measurement_Tools :: plugins/microscope-measurement-tools
 MicrotubuleTracker :: plugins/mtrack
+Microtubule_polarity_and_+_end_vs._-_end_tracking :: plugins/mtrack/microtubule-polarity
 Miji :: plugins/miji
 MiniMaven :: develop/minimaven
 Miniature_Faking :: plugins/miniature-faking

@@ -52,10 +52,14 @@ Advanced instructions for building, or modifying, the source code are available 
 Javadocs
 --------
 
-{% include javadocsection%}
+Javadoc for all ImageJ-related projects can be found online:
 
+{% include big-link url='https://javadoc.scijava.org/' %}
+
+You can also search the javadocs at
+[https://search.imagej.net/](https://search.imagej.net/)
+using the Javadoc button.
 
 ### Running ImageJ1 unit tests
-
 
 We have written a substantial number of unit tests to exercise [ImageJ 1.x](/software/imagej1) functionality. See the [Unit tests for ImageJ1](/develop/ij1-unit-tests) page for more information.
