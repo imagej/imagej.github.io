@@ -7,7 +7,7 @@ description: test description
 3D Mathematical Morphology
 --------------------------
 
-Various algorithms for 3D Mathematical Morphology, as part of the [3D ImageJ Suite](3D_ImageJ_Suite).
+Various algorithms for 3D Mathematical Morphology, as part of the [3D ImageJ Suite](/plugins/3d-imagej-suite).
 
 Author
 ------
@@ -17,7 +17,7 @@ Author
 Description
 -----------
 
-3D mathematical **operations** (erosion, dilation, ...) are available in [3D Filters](3D_Filters) using minimum and maximum filters.
+3D mathematical **operations** (erosion, dilation, ...) are available in [3D Filters](/plugins/3d-imagej-suite/filters) using minimum and maximum filters.
 
 A 3D **Fill Holes** is available, works the same way as in 2D but will not fill holes if it is not closed in the Z dimension.
 
@@ -40,7 +40,7 @@ Nuclear regions ((c) J. Ollion, MNHN) : raw image, segmented labelled image, clo
 Download
 --------
 
-For details go to the [3D ImageJ Suite](3D_ImageJ_Suite).
+For details go to the [3D ImageJ Suite](/plugins/3d-imagej-suite).
 
 Citation
 --------

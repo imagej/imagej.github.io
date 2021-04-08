@@ -51,7 +51,7 @@ ImageJ2 provides a wealth of new features and capabilities:
     -   Typed inputs and outputs with no dependence on AWT user interface.
     -   Mix and match ImageJ 1.x and ImageJ2 data structures.
     -   Plugins appear in the menu automatically without plugins.config files.
-    -   Reusable in many contexts: [KNIME](/software/knime), [CellProfiler](/software/cellprofiler), [OMERO](/software/omero), [headless](Headless)...
+    -   Reusable in many contexts: [KNIME](/software/knime), [CellProfiler](/software/cellprofiler), [OMERO](/software/omero), [headless](/learn/headless)...
 
 ### Integrated search bar
 
@@ -79,7 +79,7 @@ The following software component libraries form the core of ImageJ2:
 -   [ImageJ Ops](/develop/imagej-ops) - An extensible framework for reusable image processing algorithms.
 -   [ImageJ Updater](/plugins/updater) - A mechanism to update individual plugins and libraries within ImageJ.
 -   [ImageJ Legacy](/Compatibility) - Provides complete backwards compatibility with ImageJ 1.x.
--   [SciJava Common](SciJava_Common) - The core frameworks for plugins, modules and the application itself.
+-   [SciJava Common](/software/scijava-common) - The core frameworks for plugins, modules and the application itself.
 
 See the [Architecture](/develop/architecture) page for further details.
 

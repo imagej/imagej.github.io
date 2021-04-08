@@ -5,7 +5,7 @@ categories: Fiji,News
 description: test description
 ---
 
-The Google Accelerated Science team has published an ImageJ plugin, [Microscope Focus Quality](Microscope_Focus_Quality), for assessing the focus quality of microscope images using a pretrained [TensorFlow](/software/tensorflow) model.
+The Google Accelerated Science team has published an ImageJ plugin, [Microscope Focus Quality](/plugins/microscope-focus-quality), for assessing the focus quality of microscope images using a pretrained [TensorFlow](/software/tensorflow) model.
 
 {% include thumbnail src='/media/Mifqc.png' title=' 400px \| The Microscope Focus Quality plugin classifies image tiles into 11 classes (hue) with varying confidence (brightness).'%}
 

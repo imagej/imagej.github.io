@@ -30,7 +30,7 @@ After opening a XML file the main windows will appear in the **Stitching Mode**.
 
 ### The BigDataViewer window
 
-If the dataset is in a format suitable for quick visualization by [BigDataViewer](BigDataViewer) (e.g. multiresolution HDF5 or virtually loading), a BigDataViewer window in which selected Views can be visualized will open along with the BigStitcher main window. For other datasets, you can open BigDataViewer manually via the menu.
+If the dataset is in a format suitable for quick visualization by [BigDataViewer](/plugins/bdv) (e.g. multiresolution HDF5 or virtually loading), a BigDataViewer window in which selected Views can be visualized will open along with the BigStitcher main window. For other datasets, you can open BigDataViewer manually via the menu.
 
 <img src="/media/BigStitcher Overview 2.png" width="1000"/>
 

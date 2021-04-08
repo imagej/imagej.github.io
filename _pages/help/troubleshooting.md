@@ -156,7 +156,7 @@ Alternately, to disable autoscaling during initial import, you can use the [Bio-
 Further reading:
 
 -   [Image Intensity Processing](/cookbook/image-intensity-processing)
--   [Image Processing Principles](Principles)
+-   [Image Processing Principles](/techniques/principles)
 
 Whenever I open a file in ImageJ, the file size increases by a ridiculous amount!
 ---------------------------------------------------------------------------------
@@ -184,7 +184,7 @@ While ImageJ strives for [reproducible](/Architecture#Reproducible_builds) analy
     -   {% include bc content='Image | Overlay | Overlay Options...'%}
     -   {% include bc content='Analyze | Gels | Gel Analyzer Options...'%}
     -   Press L for the [Command Finder](/Using_the_Command_Launcher) and type "options" and double check any other options you think might be relevant.
--   If you are running your analysis [headless](Headless), there might be a bug in the headless support.
+-   If you are running your analysis [headless](/learn/headless), there might be a bug in the headless support.
     -   Try the analysis *headless* on both machines and see if the results match.
     -   Try the analysis *headless* vs. through the GUI on a single machine, and see if the results match.
     -   If the results differ due to headlessness, it is a bug—please [report it](/help/report-a-bug)!

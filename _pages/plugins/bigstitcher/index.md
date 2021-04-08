@@ -23,7 +23,7 @@ Introduction & Overview
 
 The BigStitcher is a software package that allows simple and efficient alignment of multi-tile and multi-angle image datasets, for example acquired by lightsheet, widefield or confocal microscopes. The software supports images of almost arbitrary size ranging from very small images up to volumes in the range of many terabytes, which are for example produced when acquiring cleared tissue samples with lightsheet microscopy.
 
-As its predecessor, the [Image Stitching](/plugins/image-stitching), the BigStitcher can run in fully automatically mode but is additionally able to guide the user through the alignment process by interactively showing intermediate results with the option for user interaction, which includes interactive setup of approximate tile locations. The BigStitcher is fully integrated with the [BigDataViewer](BigDataViewer) and is thus able to interactively display and process the input images independent of their size. An improved global optimization is now able to efficiently align sparsely connected datasets, where image content is separated by large areas of almost constant background.
+As its predecessor, the [Image Stitching](/plugins/image-stitching), the BigStitcher can run in fully automatically mode but is additionally able to guide the user through the alignment process by interactively showing intermediate results with the option for user interaction, which includes interactive setup of approximate tile locations. The BigStitcher is fully integrated with the [BigDataViewer](/plugins/bdv) and is thus able to interactively display and process the input images independent of their size. An improved global optimization is now able to efficiently align sparsely connected datasets, where image content is separated by large areas of almost constant background.
 
 **In addition to the documentation here there is a growing set of tutorial videos on this [YouTube Channel](https://www.youtube.com/playlist?list=PLNZz8lLDpAeVOeAmQWMrKGOeB3vv28yJE)**
 
@@ -51,7 +51,7 @@ Documentation
 
 ### Opening / Importing an Image Dataset
 
-Since image data is produced in a variety of formats, the first step is to assemble all images into a dataset and load the necessary metadata or manually define it if it is missing. The BigStitcher is integrated with the [BigDataViewer](BigDataViewer) and thus shares the same data representation, which is stored as a XML file on disk.
+Since image data is produced in a variety of formats, the first step is to assemble all images into a dataset and load the necessary metadata or manually define it if it is missing. The BigStitcher is integrated with the [BigDataViewer](/plugins/bdv) and thus shares the same data representation, which is stored as a XML file on disk.
 
 -   [Defining a new dataset](/plugins/bigstitcher/define-new-dataset)
 

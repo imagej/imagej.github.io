@@ -278,7 +278,7 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 <!-- -->
 
--   The [Find Connected Regions](Find_Connected_Regions) plugin was updated, thanks to Mark Longair.
+-   The [Find Connected Regions](/plugins/find-connected-regions) plugin was updated, thanks to Mark Longair.
 
 <!-- -->
 
@@ -363,7 +363,7 @@ Developer-visible changes
 
 <!-- -->
 
--   The [WEKA library](Using_Weka) is now part of Fiji; the {% include github org='fiji' repo='fiji-compat' source='fiji/FijiClassLoader.java' label='FijiClassLoader' %} is now an instance of URLClassLoader just because of that (thanks for Verena Kaynig, Albert Cardona and Ignacio Arganda-Carreras for the prodding).
+-   The [WEKA library](/develop/using-weka) is now part of Fiji; the {% include github org='fiji' repo='fiji-compat' source='fiji/FijiClassLoader.java' label='FijiClassLoader' %} is now an instance of URLClassLoader just because of that (thanks for Verena Kaynig, Albert Cardona and Ignacio Arganda-Carreras for the prodding).
 
 <!-- -->
 

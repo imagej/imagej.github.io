@@ -8,7 +8,7 @@ def processfile(path):
         line_changed = False
         for old, new in redirects.items():
             for i in range(len(lines)):
-                l = lines[i].replace(f'"{old}"', f'"/{new}"') # HTML, no slash
+                l = lines[i].replace(f'="{old}"', f'="/{new}"') # HTML, no slash
                 l = l.replace(f']({old})', f'](/{new})') # Markdown, no slash
                 l = l.replace(f'"/{old}"', f'"/{new}"') # HTML, with slash
                 l = l.replace(f'](/{old})', f'](/{new})') # Markdown, with slash

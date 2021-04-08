@@ -27,6 +27,6 @@ Some log output shows the resaving process.
 View with BigDataViewer
 -----------------------
 
-Finally you can use [BigDataViewer](BigDataViewer) to view your data set.
+Finally you can use [BigDataViewer](/plugins/bdv) to view your data set.
 
 ![](/media/MVR resave3.png "MVR_resave3.png")

@@ -95,7 +95,7 @@ Whenever you open an image, be it via {% include bc content='File | Open'%}, Dra
 
 The window has the file name as title, and it display some useful information above the image: the real resolution (in this case in square centimeters), the pixel resolution, the image type and the memory required by the image.
 
-If your image does not have meta-data about the real resolution, you can set the resolution explicitely with {% include bc content='Image | Properties...'%} or by following the [tutorial on spatial calibration](/Spatial_Calibration).
+If your image does not have meta-data about the real resolution, you can set the resolution explicitely with {% include bc content='Image | Properties...'%} or by following the [tutorial on spatial calibration](/techniques/spatial-calibration).
 
 Image Types
 -----------

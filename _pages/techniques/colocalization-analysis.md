@@ -121,7 +121,7 @@ There are several plugins available for performing colocalization analysis. In a
 
 Coloc 2 implements and performs the pixel intensity correlation over space methods of {% include wikipedia title='Pearson product-moment correlation coefficient' text='Pearson'%}, [Manders](/media/Manders.pdf), [Costes](/media/Costes etalColoc.pdf), [Li](/media/LietAlColoc.pdf) and more, for scatterplots, analysis, automatic thresholding and statistical significance testing.
 
-None of this gives sensible results unless you have your imaging hardware set up appropriately and have acquired images properly, and have performed appropriate controls for bleed-through and chromatic shift etc. See [here for hardware set up guidelines](Colocalization_-_hardware_setup_and_image_acquisition).
+None of this gives sensible results unless you have your imaging hardware set up appropriately and have acquired images properly, and have performed appropriate controls for bleed-through and chromatic shift etc. See [here for hardware set up guidelines](/techniques/colocalization-image-acquisition).
 
 This plugin supersedes the [Colocalization Threshold](/plugins/colocalization-threshold) and [Colocalization Test](/plugins/colocalization-test) plugins, which unfortunately were buggy and hard to maintain. So we started from scratch with a carefully planned and designed new plugin. While the old plugins are described below as well, we recommend that you use Coloc 2 instead.
 
@@ -193,7 +193,7 @@ To begin with, we should check the images for problems that might make the coloc
 
 1.  Significant noise (uncertainty in the pixel values - usually from detection of too few photons) means the methods we will use will significantly underestimate the true colocalization, or even completely fail to give the true result.
 2.  Lossy compression messes up the intensity information of the pixels, causing the colocalization result to be more or less wrong.
-3.  Intensity clipping/saturation is bad news. Pixel intensity correlation measurements rely on the pixel intensities being true and not clipped to 255 when they were really higher! See the [Detect Information Loss](Detect_Information_Loss) tutorial for details on how to detect such problems.
+3.  Intensity clipping/saturation is bad news. Pixel intensity correlation measurements rely on the pixel intensities being true and not clipped to 255 when they were really higher! See the [Detect Information Loss](/techniques/detect-information-loss) tutorial for details on how to detect such problems.
 4.  We should look for wrong offset / high background (since this confuses the auto threshold method, since zero signal is not zero pixel intensity but some larger number)
 5.  Spatial resolution:
 
@@ -201,7 +201,7 @@ The spatial resolution of the images, by definition, determines the spatial reso
 
 The spatial resolution of the light microscope is limited by the wavelength of the light (and the NA of the objective lens) according to Ernst Abbe's work. Molecules / proteins are an order of magnitude smaller than the wavelength of visible light, so they could be many nm apart, but still appear in the same image pixel. Is that true colocalization? Maybe, but it depends how you define it!
 
-Are the images spatially calibrated? If not then we need to calibrate them so we know the spatial sampling rate (think pixel or voxel size) in x, y and z. See the [SpatialCalibration](/Spatial_Calibration) tutorial for how to do that. We need the images to be spatially calibrated in order for the Costes statistical significance test (below) method to work properly.
+Are the images spatially calibrated? If not then we need to calibrate them so we know the spatial sampling rate (think pixel or voxel size) in x, y and z. See the [SpatialCalibration](/techniques/spatial-calibration) tutorial for how to do that. We need the images to be spatially calibrated in order for the Costes statistical significance test (below) method to work properly.
 
 We need to think carefully about the correct or adequate spatial resolution in x, y and probably z. This depends on the {% include wikipedia title='Numerical aperture' text='Numerical Aperture'%} of the objective lens. You can calculate the correct pixel or voxel sizes for the objective lens you are using, to get the maximum resolution that that objective lens can really see: [Nyquist Calculator](http://support.svi.nl/wiki/NyquistCalculator)\]. Essentially the pixels / voxels should be about 3 times smaller than the resolution of the lens. On the other hand, if you are only interested in larger objects, and not the smallest details the objective can see, it makes sense to have larger pixels or voxels. Again, these should be about 3 times smaller than the smallest feature you want to resolve.
 

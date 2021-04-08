@@ -21,7 +21,7 @@ description: test description
 Description
 -----------
 
-BigDataServer is a minimalistic HTTP server that serves XML/HDF5 datasets to the [BigDataViewer](BigDataViewer) Fiji plugin for visualisation.
+BigDataServer is a minimalistic HTTP server that serves XML/HDF5 datasets to the [BigDataViewer](/plugins/bdv) Fiji plugin for visualisation.
 
 The BigDataServer is running on a remote machine which hosts the XML/HDF5 datasets. A client running Fiji connects to the server, chooses the dataset that the server offers and then the data are efficiently delivered to the BigDataViewer. In this way, it is possible to seamlessly navigate very large datasets that reside in a remote location.
 

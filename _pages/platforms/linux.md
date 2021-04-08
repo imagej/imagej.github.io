@@ -16,7 +16,7 @@ description: test description
 Installation
 ============
 
-Some flavors of Linux make [ImageJ 1.x](/software/imagej1) available as a package. Do not install ImageJ this way—you will not receive [ImageJ2](/software/imagej2), and you will have problems installing additional plugins. For the time being, it is recommended to [download the Linux 64-bit distribution of Fiji](Fiji_Downloads).
+Some flavors of Linux make [ImageJ 1.x](/software/imagej1) available as a package. Do not install ImageJ this way—you will not receive [ImageJ2](/software/imagej2), and you will have problems installing additional plugins. For the time being, it is recommended to [download the Linux 64-bit distribution of Fiji](/fiji/downloads).
 
 HiDPI displays
 ==============

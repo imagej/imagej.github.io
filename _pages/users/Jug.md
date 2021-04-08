@@ -6,4 +6,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Florian Jug' title='Grand Poobah' affiliation=' [MPI-CBG Dresden](https://www.mpi-cbg.de/)' forum='fjug' github='fjug' osrc='fjug' scholar='vYInKgwAAAAJ' website='https://www.mpi-cbg.de/jug' %}Florian Jug is a group leader at MPI-CBG. With {% include person content='Tomancak' %}, he leads the [Dresden Analysis-of-Images Suite (DAIS)](DAIS) project. He is also the one to blame for the [ClearVolume plugin for Fiji](/plugins/clearvolume).
+{% include user-box name='Florian Jug' title='Grand Poobah' affiliation=' [MPI-CBG Dresden](https://www.mpi-cbg.de/)' forum='fjug' github='fjug' osrc='fjug' scholar='vYInKgwAAAAJ' website='https://www.mpi-cbg.de/jug' %}Florian Jug is a group leader at MPI-CBG. With {% include person content='Tomancak' %}, he leads the [Dresden Analysis-of-Images Suite (DAIS)](/orgs/dais) project. He is also the one to blame for the [ClearVolume plugin for Fiji](/plugins/clearvolume).

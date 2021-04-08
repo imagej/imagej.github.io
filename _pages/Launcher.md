@@ -39,7 +39,7 @@ where xyz is your platform.
 The launcher can do all kinds of things, like:
 
 -   Launch ImageJ with a different amount of memory (`--mem` option)
--   Run [macros and scripts in headless mode](Headless)
+-   Run [macros and scripts in headless mode](/learn/headless)
 -   Control the [Updater](/plugins/updater) from the command line
 -   Open images: **./ImageJ-<platform> example.jpg**
 -   Call Jython scripts: **./ImageJ-<platform> example.py** (also works for JRuby scripts when they have an **.rb** extension, for Beanshell scripts with **.bsh** extension, **.clj** for Clojure and **.js** for Javascript)

@@ -33,7 +33,7 @@ Thomas Boudier
 Features
 --------
 
-Basically we will propose modules from the [3D\_ImageJ\_Suite](3D_ImageJ_Suite), ImageJ/Fiji, along with other modules.
+Basically we will propose modules from the [3D\_ImageJ\_Suite](/plugins/3d-imagej-suite), ImageJ/Fiji, along with other modules.
 
 As for stable version 0.5 the following modules are available :
 
@@ -53,7 +53,7 @@ Installation
 
 <!-- -->
 
--   Install [3D\_ImageJ\_Suite](3D_ImageJ_Suite). It is also available as a update site in Fiji. **ImageScience** should be installed too, either from [here](http://www.imagescience.org/meijering/software/featurej/) or via the update site in Fiji.
+-   Install [3D\_ImageJ\_Suite](/plugins/3d-imagej-suite). It is also available as a update site in Fiji. **ImageScience** should be installed too, either from [here](http://www.imagescience.org/meijering/software/featurej/) or via the update site in Fiji.
 
 <!-- -->
 

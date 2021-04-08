@@ -103,7 +103,7 @@ The project is not without complications, though:
 
 <!-- -->
 
--   With a new site, you need to be able to [upload plugins](Uploading_plugins) to that site, too. There needs to be a very good way to prevent confusion, lest the plugin is uploaded to the <u>wrong</u> site.
+-   With a new site, you need to be able to [upload plugins](/develop/uploading-plugins) to that site, too. There needs to be a very good way to prevent confusion, lest the plugin is uploaded to the <u>wrong</u> site.
 
 <!-- -->
 

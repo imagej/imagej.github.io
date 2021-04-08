@@ -30,7 +30,7 @@ Depending on whether you specify to import the track values or not, the TrackMat
 Running the exporter from the command line.
 -------------------------------------------
 
-After installation, a Jython script called `CsvToTrackMate.py` will be addede to the `scripts` folder of your Fiji installation. It is meant to be called in [headless mode](Headless) to directly convert a CSV file and an image file into a TrackMate file.
+After installation, a Jython script called `CsvToTrackMate.py` will be addede to the `scripts` folder of your Fiji installation. It is meant to be called in [headless mode](/learn/headless) to directly convert a CSV file and an image file into a TrackMate file.
 
 You can use Fiji in headless mode, to call the Jython script `CsvToTrackMate.py` that will parse arguments and configure the importer properly. Here is an example:
 

@@ -48,7 +48,7 @@ Follow these steps to segment an image:
 Basic Navigation
 ----------------
 
-Labkit is based on Big Data Viewer. Navigation the image works as in Big Data Viewer, and many short cuts work too. Click [here](BigDataViewer) for a description of the short cuts.
+Labkit is based on Big Data Viewer. Navigation the image works as in Big Data Viewer, and many short cuts work too. Click [here](/plugins/bdv) for a description of the short cuts.
 
 -   {% include key content='press\|Ctrl\|Shift\|mouse-wheel' %} to zoom in and out
 -   {% include key content='press\|right-click\|drag' %} to move the image

@@ -13,7 +13,7 @@ It seems that many projects associated with [Fiji](/fiji) attach a "2" to their 
 
 In addition, there is a very good, technical reason to go "Fiji2". From the get-go, Fiji set out to make work with ImageJ easier—both for developers and users. For developers in particular, we wanted to have a good infrastructure that helps developing better plugins faster. As part of that, we explored not only new development techniques such as using a [source code management tool](Git), but we also worked toward a more flexible core.
 
-As an example, we provided a way to run some plugins [without a graphical desktop](Headless). Due to the design of [ImageJ 1.x](/software/imagej1), this "headless" mode can work only to a subset to plugins, though. Fiji also started to address other issues with ImageJ 1.x such as the lack of an [updater](/plugins/updater), a powerful [editor for macros and scripts](/scripting/script-editor), or extension points e.g. to add new tools (ImageJ 1.46d added a limited version of Fiji's `AbstractTool` framework).
+As an example, we provided a way to run some plugins [without a graphical desktop](/learn/headless). Due to the design of [ImageJ 1.x](/software/imagej1), this "headless" mode can work only to a subset to plugins, though. Fiji also started to address other issues with ImageJ 1.x such as the lack of an [updater](/plugins/updater), a powerful [editor for macros and scripts](/scripting/script-editor), or extension points e.g. to add new tools (ImageJ 1.46d added a limited version of Fiji's `AbstractTool` framework).
 
 Happily, these and other design limitations are addressed in the next-generation ImageJ!
 

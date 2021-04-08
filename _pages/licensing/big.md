@@ -34,7 +34,7 @@ The following components are expressly or implicitly licensed this way:
 | **[Differentials](/plugins/differentials)**                     | http://bigwww.epfl.ch/thevenaz/differentials/#LegalBlurb |
 | **[Extended Depth of Field](/plugins/extended-depth-of-field)** | http://bigwww.epfl.ch/demo/edf/                          |
 | **[imageware](Imageware)**                             | Implicit                                                   |
-| **[MIJ](/Miji)**                                         | http://bigwww.epfl.ch/sage/soft/mij/#term                |
+| **[MIJ](/plugins/miji)**                                         | http://bigwww.epfl.ch/sage/soft/mij/#term                |
 | **[MosaicJ](/plugins/mosaicj)**                                 | http://bigwww.epfl.ch/thevenaz/mosaicj/#LegalBlurb       |
 | **[PointPicker](/plugins/pointpicker)**                         | Implicit                                                   |
 | '''[Shepp-Logan Phantom](/plugins/shepp-logan-phantom)          | http://bigwww.epfl.ch/thevenaz/shepplogan/#LegalBlurb    |

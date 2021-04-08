@@ -21,7 +21,7 @@ The ImageJ2 project focuses on robustness—particularly important if you want t
 
 While we obviously spend a lot of effort to support existing ImageJ 1.x users (for the same reason we try to keep ImageJ2's look and feel close to ImageJ 1.x's: continuity), ImageJ2 is not neglected! For activity statistics, see the [ImageJ2 page on Ohloh](https://www.ohloh.net/p/imagej2). All of our source code is [developed openly and collaboratively](https://github.com/imagej), using the great open source resource GitHub.
 
-In addition to supporting users on the ImageJ mailing list, a lot of developer support has been happening, too, resulting in powerful new plugins such as [TrackMate](/plugins/trackmate)—an extensible tracking framework—and the [BigDataViewer](BigDataViewer)—a multi-dimensional viewer for huge datasets.
+In addition to supporting users on the ImageJ mailing list, a lot of developer support has been happening, too, resulting in powerful new plugins such as [TrackMate](/plugins/trackmate)—an extensible tracking framework—and the [BigDataViewer](/plugins/bdv)—a multi-dimensional viewer for huge datasets.
 
 Both are based on [ImgLib2](/imglib2), the data processing library serving as the core of ImageJ2. You see, whenever we found that a component we use in ImageJ2 would be useful to other projects, too, we put in that extra effort to make it so. You can use ImgLib2 without using ImageJ.
 
@@ -33,6 +33,6 @@ While our main focus with Fiji is to support life scientists to the point of ena
 
 Our focus on a flexible and powerful infrastructure pays off in a particularly nice way with the [OpenSPIM](http://openspim.org/) project: while the hardware had to be designed from scratch, the software is based on Fiji in form of Stephan Preibisch's [multi-angle reconstruction plugins](/plugins/spim-registration), and on [Micro-Manager](http://www.micro-manager.org/), served from—you guessed it—an update site. The OpenSPIM-specific extensions also benefit tremendously from ImgLib2, which facilitates the data processing necessary for the efficient operation of an OpenSPIM setup.
 
-Looking forward, 2014 will be a big year for ImageJ2: we are targeting a stable release of the ImageJ2 core this summer, with a focus on continued compatibility and synergy with ImageJ 1.x development. We will continue to post updates on this site as well as on the [Mailing Lists](Mailing_Lists) keeping the community apprised of developments in ImageJ2 and Fiji.
+Looking forward, 2014 will be a big year for ImageJ2: we are targeting a stable release of the ImageJ2 core this summer, with a focus on continued compatibility and synergy with ImageJ 1.x development. We will continue to post updates on this site as well as on the [Mailing Lists](/about/mailing-lists) keeping the community apprised of developments in ImageJ2 and Fiji.
 
  

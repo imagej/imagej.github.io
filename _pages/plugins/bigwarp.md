@@ -5,7 +5,7 @@ categories: Plugins,Visualization,Transform,Registration,Citable
 description: test description
 ---
 
-{% include component-stats content='sc.fiji:bigwarp\_fiji' %}Bigwarp is a tool for manual, interactive, landmark-based deformable image alignment. It uses the [BigDataViewer](BigDataViewer) for visualization and navigation, and uses a {% include wikipedia title='Thin\_plate\_spline' text='Thin Plate Spline'%} implemented {% include github org='saalfeldlab' repo='bigwarp' label='in Java' %} to build a deformation from point correspondences.
+{% include component-stats content='sc.fiji:bigwarp\_fiji' %}Bigwarp is a tool for manual, interactive, landmark-based deformable image alignment. It uses the [BigDataViewer](/plugins/bdv) for visualization and navigation, and uses a {% include wikipedia title='Thin\_plate\_spline' text='Thin Plate Spline'%} implemented {% include github org='saalfeldlab' repo='bigwarp' label='in Java' %} to build a deformation from point correspondences.
 
 The interface enables landmark pair placement and displays the effects of the warp on-the-fly.
 
@@ -74,7 +74,7 @@ Press {% include key content='press\|F8' %} to bring up a transformation type se
 
 ### Navigation and Visualization
 
-Bigwarp inherits many image [navigation](BigDataViewer#Basic_Navigation), [visualization](BigDataViewer#Adjusting_Brightness_and_Color), and [grouping](BigDataViewer#Grouping_Sources) features with BigDataViewer, the details of which can be found on the [BigDataViewer](BigDataViewer) page or on the help page. BigWarp specific features are documented below.
+Bigwarp inherits many image [navigation](BigDataViewer#Basic_Navigation), [visualization](BigDataViewer#Adjusting_Brightness_and_Color), and [grouping](BigDataViewer#Grouping_Sources) features with BigDataViewer, the details of which can be found on the [BigDataViewer](/plugins/bdv) page or on the help page. BigWarp specific features are documented below.
 
 The following table shows the available navigation commands using the mouse:
 

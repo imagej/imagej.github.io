@@ -35,7 +35,7 @@ Related projects
 Image Processing and Ethics
 ---------------------------
 
-See the [Principles](Principles) page.
+See the [Principles](/techniques/principles) page.
 
 Input/Output
 ------------
@@ -49,7 +49,7 @@ See the [Video](/formats/video) page.
 Image Processing
 ----------------
 
-See the [Principles](Principles) page.
+See the [Principles](/techniques/principles) page.
 
 [A pixel is not a little square](http://alvyray.com/Memos/CG/Microsoft/6_pixel.pdf). Really. It is not. Pixels may be spaced on a regular grid. But that does not make them square. Even thinking about them as squares will harm your analysis, since it is simply wrong.
 

@@ -413,7 +413,7 @@ Links
 -----
 
 -   [Jython Scripting Examples](/scripting/jython/examples)
--   [ImageJ2 Python Scripts](ImageJ2_Python_Scripts)
+-   [ImageJ2 Python Scripts](/scripting/examples/imagej2-python)
 -   [A Fiji Scripting Tutorial by Albert Cardona](https://www.ini.uzh.ch/~acardona/fiji-tutorial/)
 -   [Jython scripting cookbook](http://wiki.cmci.info/documents/120206pyip_cooking/python_imagej_cookbook)
 -   [ImageJ tutorials repository](https://github.com/imagej/tutorials/tree/master/howtos/src/main/java/howto)

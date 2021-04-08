@@ -15,7 +15,7 @@ Please note that the SPIM registration plugin available through Fiji, is based o
 Important Note
 --------------
 
-<span style="color:#A52A2A"> ***For details about the SPIM registration, fusion & deconvolution please have a look at the [Multiview Reconstruction Plugin](/plugins/multiview-reconstruction). It is much more powerful, flexible and completely integrated with the [BigDataViewer](BigDataViewer). Documentation on the outdated [SPIM Registration](/plugins/spim-registration) is still available.*** </span>
+<span style="color:#A52A2A"> ***For details about the SPIM registration, fusion & deconvolution please have a look at the [Multiview Reconstruction Plugin](/plugins/multiview-reconstruction). It is much more powerful, flexible and completely integrated with the [BigDataViewer](/plugins/bdv). Documentation on the outdated [SPIM Registration](/plugins/spim-registration) is still available.*** </span>
 
 Introduction
 ------------

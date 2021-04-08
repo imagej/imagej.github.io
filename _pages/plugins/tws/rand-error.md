@@ -49,7 +49,7 @@ The [Rand error](/plugins/rand-error) metric is implemented in the [Trainable We
 See also
 --------
 
--   [Topology preserving warping error](Topology_preserving_warping_error).
+-   [Topology preserving warping error](/plugins/tws/topology-preserving-warping-error).
 
 References
 ----------

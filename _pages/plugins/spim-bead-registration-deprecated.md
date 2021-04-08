@@ -10,7 +10,7 @@ description: test description
 Important Note
 --------------
 
-<span style="color:#A52A2A"> ***Please Note: This version of the software is outdated. It will be part of Fiji for the time being, but I highly recommend using the new [Multiview Reconstruction Plugin](/plugins/multiview-reconstruction). It is much more powerful, flexible and completely integrated with the [BigDataViewer](BigDataViewer).*** </span>
+<span style="color:#A52A2A"> ***Please Note: This version of the software is outdated. It will be part of Fiji for the time being, but I highly recommend using the new [Multiview Reconstruction Plugin](/plugins/multiview-reconstruction). It is much more powerful, flexible and completely integrated with the [BigDataViewer](/plugins/bdv).*** </span>
 
 Citation
 --------

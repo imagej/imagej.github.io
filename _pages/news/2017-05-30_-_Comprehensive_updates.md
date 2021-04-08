@@ -28,7 +28,7 @@ New Fiji Life-Line versions
 
 To guard against regressions which might result from such a big update, we updated the [Life-Line downloads of Fiji](Fiji_Downloads#Life-Line_Fiji_versions) with two new versions dated today: one for Java 8, and another for Java 6.
 
-The Java 6 version in particular is notable because it provides a version of Fiji with the latest Java-6-compatible versions of all components. If you need to stick with Java 6 for some reason—e.g., you want to use Fiji with [BoneJ](BoneJ), and/or with the [3D Viewer](/plugins/3d-viewer) + [Java 3D](/plugins/java-3d) 1.5—then you can use this download as a starting point for your needs.
+The Java 6 version in particular is notable because it provides a version of Fiji with the latest Java-6-compatible versions of all components. If you need to stick with Java 6 for some reason—e.g., you want to use Fiji with [BoneJ](/plugins/bonej), and/or with the [3D Viewer](/plugins/3d-viewer) + [Java 3D](/plugins/java-3d) 1.5—then you can use this download as a starting point for your needs.
 
 Legacy Fiji components moved to their own update site
 -----------------------------------------------------

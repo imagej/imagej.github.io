@@ -39,7 +39,7 @@ Here is the list of participants together with their primary affiliation:
 | Benjamin Schmid        | [Fiji](/fiji)/[3D Viewer](/plugins/3d-viewer)     |
 | Pavel Tomancak         | [Fiji](/fiji)                                       |
 | Daniel James White     | [Fiji](/fiji)/[Coloc 2](/plugins/coloc-2)/SPIM    |
-| Michael Doube          | [Fiji](/fiji)/[BoneJ](BoneJ)             |
+| Michael Doube          | [Fiji](/fiji)/[BoneJ](/plugins/bonej)             |
 | Tobias Pietzsch        | [Fiji](/fiji)/[ImgLib](ImgLib)           |
 | Peter Pitrone          | SPIM                                                          |
 | Fernando Carrillo      | [Fiji](/fiji)                                       |

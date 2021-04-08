@@ -17,6 +17,6 @@ description: test description
 -   [NanoTrackJ](/plugins/nanotrackj)
 -   [Find\_maxima\_(Trackmate\_module)](Find_maxima_(Trackmate_module) "wikilink")
 -   [ParticleSizer](/plugins/particlesizer)
--   [TraJClassifier](TraJClassifier)
+-   [TraJClassifier](/plugins/trajclassifier)
 
 You could contact me by thorsten dot wagner at mpi dash dortmund dot mpg dot de

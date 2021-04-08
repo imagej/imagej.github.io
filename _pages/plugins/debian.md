@@ -4,6 +4,6 @@ title: Debian
 description: test description
 ---
 
-The [Fiji](/fiji) project used to offer Debian packages. Unfortunately, for a variety of reasons, we are withdrawing support for these packages until such time as someone is able to maintain them properly, so please switch to using the Linux downloads on the [ImageJ Downloads](Downloads) and [Fiji Downloads](Fiji_Downloads) pages instead.
+The [Fiji](/fiji) project used to offer Debian packages. Unfortunately, for a variety of reasons, we are withdrawing support for these packages until such time as someone is able to maintain them properly, so please switch to using the Linux downloads on the [ImageJ Downloads](Downloads) and [Fiji Downloads](/fiji/downloads) pages instead.
 
-If you are a Debian packaging expert who would like to address this situation, we would love to have your help—please join us in [chat](Chat) or on the [forum](http://forum.imagej.net/c/development).
+If you are a Debian packaging expert who would like to address this situation, we would love to have your help—please join us in [chat](/about/chat) or on the [forum](http://forum.imagej.net/c/development).

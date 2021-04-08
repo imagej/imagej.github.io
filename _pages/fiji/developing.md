@@ -66,15 +66,15 @@ If you have an account on this Wiki, you can easily create new tutorials with th
 Further reading for developers
 ------------------------------
 
--   [Overview of Fiji's source code](Overview_of_Fijis_source_code)
--   [Description of ImageJ's plugin architecture](Description_of_ImageJs_plugin_architecture)
+-   [Overview of Fiji's source code](/fiji/source)
+-   [Description of ImageJ's plugin architecture](/develop/plugin-architecture)
 -   [Tips for developers](/develop/tips)
 -   [ImageJ1 Javadoc ZIP](http://jenkins.imagej.net/job/ImageJ1-javadoc/lastStableBuild/artifact/target/site/apidocs/) (for offline usage)
 -   [ImageJ2 Javadoc ZIP](http://jenkins.imagej.net/job/ImageJ-daily/lastStableBuild/artifact/target/site/apidocs/) (for offline usage)
 -   [Developers HowTo](Developers_HowTo)
 -   [ImageJ plugin writing tutorial](http://www.imagingbook.com/index.php?id=102)
 -   [ImageJ programming tutorials](http://albert.rierol.net/imagej_programming_tutorials.html)
--   [Uploading plugins](Uploading_plugins)
+-   [Uploading plugins](/develop/uploading-plugins)
 -   [Developing Fiji in Eclipse](/develop/imagej-in-eclipse)
 -   [Git](Git)
 -   [Project ideas](Project_ideas)

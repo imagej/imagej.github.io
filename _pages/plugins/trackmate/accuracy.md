@@ -188,7 +188,7 @@ The parameters and strategy used for this accuracy assessment are pretty basic a
 
 #### What was in the challenge that TrackMate did not exploit.
 
-We saw that at low SNR, the detection step dominates and its inability to robustly detect faint particles is the cause for low scores. Here I did not try to improve the detection results via pre-processing. One could have denoised the image, or averaged succeeding frames to improve the SNR. Or a better detector could have dealt with low SNR in a better way (the [Low Light Tracking Tool](Low_Light_Tracking_Tool) maybe).
+We saw that at low SNR, the detection step dominates and its inability to robustly detect faint particles is the cause for low scores. Here I did not try to improve the detection results via pre-processing. One could have denoised the image, or averaged succeeding frames to improve the SNR. Or a better detector could have dealt with low SNR in a better way (the [Low Light Tracking Tool](/plugins/low-light-tracking-tool) maybe).
 
 #### What is in TrackMate that we could not exploit for the challenge.
 

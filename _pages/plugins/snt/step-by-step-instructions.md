@@ -165,7 +165,7 @@ The image stack you would get from the image used in this example might look som
 Generating *Filtered Images*
 ============================
 
-This section describes how to generate [Filtered Images](SNT__Overview#Tracing_on_Filtered_Image) outside SNT. Note that the filtering used in this walk-through (*[Frangi](Frangi) Vesselness*) is already supported directly by SNT. This tutorial will assume you need to perform the filtering with adjusted parameters.
+This section describes how to generate [Filtered Images](SNT__Overview#Tracing_on_Filtered_Image) outside SNT. Note that the filtering used in this walk-through (*[Frangi](/plugins/frangi) Vesselness*) is already supported directly by SNT. This tutorial will assume you need to perform the filtering with adjusted parameters.
 
 #### A Single Image
 

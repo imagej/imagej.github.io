@@ -14,7 +14,7 @@ Please note that the automated workflow for processing SPIM data on a cluster is
 
 -   C. Schmied, P. Steinbach, T. Pietzsch, S. Preibisch, P. Tomancak (2015) "An automated workflow for parallel processing of large multiview SPIM recordings." *Bioinformatics*, Dec 1; doi: 10.1093/bioinformatics/btv706 [Webpage](http://bioinformatics.oxfordjournals.org/content/early/2015/12/30/bioinformatics.btv706.long)
 
-The automated workflow is based on the Fiji plugins **[Multiview Reconstruction](/plugins/multiview-reconstruction)** and **[BigDataViewer](BigDataViewer)**. Please refer to and cite the following publications:
+The automated workflow is based on the Fiji plugins **[Multiview Reconstruction](/plugins/multiview-reconstruction)** and **[BigDataViewer](/plugins/bdv)**. Please refer to and cite the following publications:
 
 -   S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", *Nature Methods*, **7**(6):418-419.[Webpage](http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html)
 -   S. Preibisch, F. Amat, E. Stamataki, M. Sarov, R.H. Singer, E. Myers and P. Tomancak (2014) "Efficient Bayesian-based Multiview Deconvolution", *Nature Methods*, **11**(6):645-648. [Webpage](http://www.nature.com/nmeth/journal/v11/n6/full/nmeth.2929.html)
@@ -30,7 +30,7 @@ Stephan Preibisch solved that problem by allowing to write one XML file per job 
 In practice it means the following steps need to be executed:
 
 -   Define XML dataset - creates one XML for the entire timelapse
--   Re-save data as HDF5 - converts data into HDF5 container optimised for fast access in **[BigDataViewer](BigDataViewer)**
+-   Re-save data as HDF5 - converts data into HDF5 container optimised for fast access in **[BigDataViewer](/plugins/bdv)**
 -   Run per time-point registrations - creates as many XMLs as there are timepoints
 -   Merge XMLs - consolidates the per-timepoint XMLs back into a single XML
 

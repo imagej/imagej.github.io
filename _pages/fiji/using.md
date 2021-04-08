@@ -9,7 +9,7 @@ description: test description
 
 Useful information about using Fiji can be found here:
 
--   [What you need to know about scientific image processing](/Principles)
+-   [What you need to know about scientific image processing](/techniques/principles)
 -   [Installing Fiji](/Fiji_Downloads#Installation)
 -   [Getting started with Fiji](Getting_started)
 -   [Tutorials](Category_Tutorials) (also [external ones](/Category_Tutorials))

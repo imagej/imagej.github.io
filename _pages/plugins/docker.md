@@ -33,7 +33,7 @@ The following sections cover [headless](#Running_headless "wikilink") and [graph
 Running headless
 ================
 
-Running ImageJ headlessly in Docker is not much different than normal headless operation - see the [headless guide](Headless) for general information. To start a headless ImageJ invocation from Docker, use:
+Running ImageJ headlessly in Docker is not much different than normal headless operation - see the [headless guide](/learn/headless) for general information. To start a headless ImageJ invocation from Docker, use:
 
 ` docker run -it --rm fiji/fiji fiji-linux64 --headless`
 
@@ -177,4 +177,4 @@ Troubleshooting
 If you run into any problems or have questions about ImageJ + Docker, please use:
 
 -   [GitHub](https://github.com/fiji/dockerfiles/issues)
--   The [mailing lists](Mailing_Lists)
+-   The [mailing lists](/about/mailing-lists)

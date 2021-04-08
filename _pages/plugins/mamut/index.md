@@ -31,11 +31,11 @@ Publication.
 Presentation.
 -------------
 
-MaMuT is an end user plugin that combines the [BigDataViewer](BigDataViewer) and [TrackMate](/plugins/trackmate) to provide an application that allow browsing, annotating and curating annotations for large image data.
+MaMuT is an end user plugin that combines the [BigDataViewer](/plugins/bdv) and [TrackMate](/plugins/trackmate) to provide an application that allow browsing, annotating and curating annotations for large image data.
 
 <figure><img src="/media/MaMuT presentation.png" title="MaMuT_presentation.png" width="600" alt="MaMuT_presentation.png" /><figcaption aria-hidden="true">MaMuT_presentation.png</figcaption></figure>
 
-The main window resembles the display panel of [TrackMate](/plugins/trackmate). It controls how the annotations are displayed. Using the *MaMuT Viewer* button, several views of the data can be launched. They will all be in sync. Each of them is an instance of the [BigDataViewer](BigDataViewer).
+The main window resembles the display panel of [TrackMate](/plugins/trackmate). It controls how the annotations are displayed. Using the *MaMuT Viewer* button, several views of the data can be launched. They will all be in sync. Each of them is an instance of the [BigDataViewer](/plugins/bdv).
 
 ![](/media/MaMuT WindowsInSync.png "MaMuT_WindowsInSync.png")
 
@@ -52,11 +52,11 @@ User documentation.
 
 The following pages are tutorials that will guide you through MaMuT and walk you though its features.
 
--   [Getting started with MaMuT](Getting_started_with_MaMuT) is an introduction tutorial. It will show you how to prepare a dataset for MaMuT and make your first annotations with it.
+-   [Getting started with MaMuT](/plugins/mamut/getting-started) is an introduction tutorial. It will show you how to prepare a dataset for MaMuT and make your first annotations with it.
 
 <!-- -->
 
--   [Example mamut.properties file](Example_mamut.properties_file) contains an example of a `mamut.properties` file, that is used to customize the key-bindings in the MaMuT viewer.
+-   [Example mamut.properties file](/plugins/mamut/example-properties-file) contains an example of a `mamut.properties` file, that is used to customize the key-bindings in the MaMuT viewer.
 
 Developer documentation.
 ------------------------

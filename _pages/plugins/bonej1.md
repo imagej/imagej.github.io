@@ -19,10 +19,10 @@ description: test description
 {% endcapture %}
 {% include info-box name='BoneJ 1.x' software='ImageJ' logo='<img src="/media/Bonej-icon.png" width="96"/>' author=author maintainer=maintainer source=source status='Legacy' website='http://bonej.org/legacy' %}BoneJ is a plugin for bone image analysis in [ImageJ](/about). It provides free, open source tools for trabecular geometry and whole bone shape analysis.
 
-Current release ([BoneJ2](/BoneJ))
+Current release ([BoneJ2](/plugins/bonej))
 ---------------------------------------------
 
-There's a new modernized version of BoneJ available through the ImageJ [updater](https://imagej.net/Updater). Read more about [BoneJ2](/BoneJ).
+There's a new modernized version of BoneJ available through the ImageJ [updater](https://imagej.net/Updater). Read more about [BoneJ2](/plugins/bonej).
 
 Legacy (BoneJ v1.x) Installation
 --------------------------------

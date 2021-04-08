@@ -40,7 +40,7 @@ In order to add Travis CI support to a repository, the SciJava credentials are n
 Testing things which cannot run headless
 ----------------------------------------
 
-If your tests require a display (i.e.: they do not pass when run [headless](Headless)), you can use [Xvfb](/Headless#Xvfb) as follows:
+If your tests require a display (i.e.: they do not pass when run [headless](/learn/headless)), you can use [Xvfb](/Headless#Xvfb) as follows:
 
     before_script:
       - "export DISPLAY=:99.0"

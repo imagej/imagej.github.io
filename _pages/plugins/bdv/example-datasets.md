@@ -5,7 +5,7 @@ categories: Example Data
 description: test description
 ---
 
-This page links to example datasets for the [BigDataViewer](BigDataViewer) Fiji plugin. See the [BigDataViewer](BigDataViewer) user guide.
+This page links to example datasets for the [BigDataViewer](/plugins/bdv) Fiji plugin. See the [BigDataViewer](/plugins/bdv) user guide.
 
 ### Minimal SPIM example
 
@@ -17,7 +17,7 @@ Based on Stephan Preibisch's example dataset ([available here](http://fly.mpi-cb
 
 ### Remote HDF5
 
-This dataset is served by our [BigDataServer](BigDataServer) (still in beta). It comprises 250 timepoints of a large 6-angle time-lapse *Drosophila* embryogenesis acquired on Zeiss Lightsheet Z.1. The dataset is stored as a 500GB XML/HDF5 file on the server. For remote viewing, only an XML file is required. Download [remote.xml](http://fly.mpi-cbg.de/~pietzsch/bdv-examples/remote.xml) and open it with {% include bc content='Plugins | BigDataViewer | Open XML/HDF5'%} from the Fiji menu.
+This dataset is served by our [BigDataServer](/plugins/bdv/server) (still in beta). It comprises 250 timepoints of a large 6-angle time-lapse *Drosophila* embryogenesis acquired on Zeiss Lightsheet Z.1. The dataset is stored as a 500GB XML/HDF5 file on the server. For remote viewing, only an XML file is required. Download [remote.xml](http://fly.mpi-cbg.de/~pietzsch/bdv-examples/remote.xml) and open it with {% include bc content='Plugins | BigDataViewer | Open XML/HDF5'%} from the Fiji menu.
 
 Alternatively, choose {% include bc content='Plugins | BigDataViewer | Browse BigDataServer'%} from the Fiji menu, browse the server http://tomancak-srv1.mpi-cbg.de:8081 and open the *Drosophila* dataset.
 

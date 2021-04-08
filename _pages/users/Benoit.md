@@ -39,4 +39,4 @@ Other project described on imagej wiki
 --------------------------------------
 
 -   [MS-ECS-2D](/plugins/ms-ecs-2d-update-site) update site. [A collaboration](https://scholar.google.de/scholar?cluster=14136988997245303669&hl=fr&as_sdt=0,5) with Vastenhouw lab and Myers lab at MPI-CBG
--   [CElegansBeadsAnalysis plugin](CElegansBeadsAnalysis_plugin). [A collaboration](https://scholar.google.de/scholar?cluster=14574708122410072857&hl=fr&as_sdt=0,5) with the Kurzchalia lab at MPI-CBG (my first IJ script/plugin ;-)
+-   [CElegansBeadsAnalysis plugin](/plugins/c-elegans-beads-analysis). [A collaboration](https://scholar.google.de/scholar?cluster=14574708122410072857&hl=fr&as_sdt=0,5) with the Kurzchalia lab at MPI-CBG (my first IJ script/plugin ;-)

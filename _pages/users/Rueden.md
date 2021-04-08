@@ -35,12 +35,12 @@ I am fully committed to all of the above projects. They are driven by me, making
 
 I am also coordinating and/or leading and/or advising and/or helping with, but not sole implementer for, the following additional projects:
 
-1.  (with {% include person content='Xanthorapedia' %}) **[FLIMJ](FLIMJ).**
+1.  (with {% include person content='Xanthorapedia' %}) **[FLIMJ](/plugins/flimj).**
 2.  (with {% include person content='gselzer' %}) **SciJava Ops** ([scijava/scijava-ops](https://github.com/scijava/scijava-ops)) and **[ImageJ Ops](/develop/imagej-ops).**
 3.  (with {% include person content='elevans' %}) New ImageJ web site. ([imagej/imagej.github.io](https://github.com/imagej/imagej.github.io/tree/jekyll-prototype))
 4.  (with {% include person content='etarena' %}) **[Coloc 2](/plugins/coloc-2)** algorithms in [ImageJ Ops](/develop/imagej-ops).
 5.  (with {% include person content='Kharrington' %} and {% include person content='skalarproduktraum' %}) **ImageJ in 3D.** Unification of ImageJ 3D visualization efforts around [SciView](/plugins/sciview).
-6.  (with {% include person content='Pietzsch' %}) **Visualization of big data.** Unification of visualization in general around the [BigDataViewer](BigDataViewer). ([imagej/imagej-common\#66](https://github.com/imagej/imagej-common/issues/66))
+6.  (with {% include person content='Pietzsch' %}) **Visualization of big data.** Unification of visualization in general around the [BigDataViewer](/plugins/bdv). ([imagej/imagej-common\#66](https://github.com/imagej/imagej-common/issues/66))
 
 ### Constant priorities
 

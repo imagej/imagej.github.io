@@ -37,7 +37,7 @@ The Updater has two modes, the *Easy Mode* and the *Advanced Mode*. In the easy 
 
 ![](/media/Updater-easy-mode.png "Updater-easy-mode.png")
 
-For technical reasons, a restart of ImageJ is required before the changes take effect. You can read about technical details [here](Uploading_plugins).
+For technical reasons, a restart of ImageJ is required before the changes take effect. You can read about technical details [here](/develop/uploading-plugins).
 
 ### Resolve dependencies
 

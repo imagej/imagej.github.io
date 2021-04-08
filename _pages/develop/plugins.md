@@ -34,7 +34,7 @@ What is a "plugin"?
 
 Conceptually, a **plugin** is a new piece of functionality added to ImageJ. Nearly all aspects of ImageJ are *pluggable*, meaning plugins can be provided *ad hoc* to perform specified functions. The ImageJ core needs only know what general operations are available; then when the program is running, the options for how to complete a requested operation will be determined by which plugins are available at that time.
 
-Technically, ImageJ is built on the [SciJava Common](SciJava_Common) plugin framework. Within this framework, a plugin is a Java class [annotated](https://docs.oracle.com/javase/tutorial/java/annotations/index.html) with the {% include github org='scijava' repo='scijava-common' tag='scijava-common-2.47.0' source='org/scijava/plugin/Plugin.java' label='@Plugin' %} annotation. Classes annotated in this way are then automatically discovered and indexed at {% include wikipedia title='Run\_time\_(program\_lifecycle\_phase)' text='\'\'runtime\'\''%}, when the application is launched by a user (as opposed to {% include wikipedia title='Compile\_time' text='\'\'compile-time\'\''%}).
+Technically, ImageJ is built on the [SciJava Common](/software/scijava-common) plugin framework. Within this framework, a plugin is a Java class [annotated](https://docs.oracle.com/javase/tutorial/java/annotations/index.html) with the {% include github org='scijava' repo='scijava-common' tag='scijava-common-2.47.0' source='org/scijava/plugin/Plugin.java' label='@Plugin' %} annotation. Classes annotated in this way are then automatically discovered and indexed at {% include wikipedia title='Run\_time\_(program\_lifecycle\_phase)' text='\'\'runtime\'\''%}, when the application is launched by a user (as opposed to {% include wikipedia title='Compile\_time' text='\'\'compile-time\'\''%}).
 
 ### Plugin types
 
@@ -141,7 +141,7 @@ Whereas [Services](#Services "wikilink") provide internal functionality, `Comman
 
 When writing `Commands` you will often declare {% include github org='scijava' repo='scijava-common' tag='scijava-common-2.47.0' source='org/scijava/plugin/Parameter.java' label='@Parameters' %} on fields that **can not** be resolved automatically by the `Context`—for example, numeric values or file paths. Instead of being instantiated at `Context` startup as a `Service` would be, `Commands` are created and executed on demand.
 
-When a `Command` is executed, it goes through a series of pre-processing steps to populate its `@Parameters` using its associated [Context](#The_Context "wikilink"). If any parameters are left unresolved and a UI is available, the framework will automatically build and display an appropriate dialog to get user input. In this way, input harvesting is decoupled from functional operation—allowing developers to focus on what's really important without repetition of code. This also means that Commands can typically run [headlessly](Headless) without any extra development effort.
+When a `Command` is executed, it goes through a series of pre-processing steps to populate its `@Parameters` using its associated [Context](#The_Context "wikilink"). If any parameters are left unresolved and a UI is available, the framework will automatically build and display an appropriate dialog to get user input. In this way, input harvesting is decoupled from functional operation—allowing developers to focus on what's really important without repetition of code. This also means that Commands can typically run [headlessly](/learn/headless) without any extra development effort.
 
 A common pattern in `Command` development is to wrap `Service` functionality. For example, opening an image from a path is a fundamental operation in ImageJ. To this end, developers can directly use the {% include github org='scifio' repo='scifio' tag='scifio-0.25.0' source='io/scif/services/DatasetIOService.java' label='DatasetIOService' %}. Users then get this same functionality from the menus via the {% include github org='imagej' repo='imagej-plugins-commands' tag='imagej-plugins-commands-0.6.0' source='net/imagej/plugins/commands/io/OpenDataset.java' label='OpenDataset command' %}—which itself simply calls into the `DatasetIOService`.
 
@@ -183,7 +183,7 @@ There are always other options for saving or restoring your work—[stashing](ht
 -   Building a project results in a `jar` output in the `$PROJECT/target/` directory.
 -   For a more "real-world" experience, you can drop the `jar` you built into the `ImageJ.app/jars/` directory of an [ImageJ installation](Downloads) to try out any of the example plugins.
 -   If you're not sure how to find your plugin within ImageJ, use the [Command Finder](/Using_the_Command_Launcher)!
--   You can also import each project into [Eclipse](/develop/imagej-in-eclipse)/[NetBeans](/Developing_ImageJ_in_NetBeans)/[IntelliJ IDEA](/Developing_ImageJ_in_IntelliJ_IDEA) as a [maven project](https://books.sonatype.com/m2eclipse-book/reference/creating-sect-importing-projects.html).
+-   You can also import each project into [Eclipse](/develop/imagej-in-eclipse)/[NetBeans](/develop/netbeans)/[IntelliJ IDEA](/develop/intellij) as a [maven project](https://books.sonatype.com/m2eclipse-book/reference/creating-sect-importing-projects.html).
 
 ### First steps
 

@@ -27,7 +27,7 @@ Got to {% include bc content='Help | Update...'%} and click on the **Manage upda
 Data preparation.
 -----------------
 
-MaMuT relies on and exploits the file format of the [**BigDataViewer**](BigDataViewer). You need to prepare your images so that they can be opened in the BigDataViewer and there is no way around it. Actually, MaMuT was written specifically as an annotation platform for the BigDataViewer, specializing in cell lineaging.
+MaMuT relies on and exploits the file format of the [**BigDataViewer**](/plugins/bdv). You need to prepare your images so that they can be opened in the BigDataViewer and there is no way around it. Actually, MaMuT was written specifically as an annotation platform for the BigDataViewer, specializing in cell lineaging.
 
 If you already have such a file, skip to the next section. Otherwise, we lazily rely on the excellent BigDataViewer documentation and point directly to the BigDataViewer instructions to prepare your images, depending on whether
 
@@ -591,7 +591,7 @@ The key-bindings used in the MaMuT viewer can be customized through a text file,
 
 It follows the syntax `key=command`, one per line. Modifier keys such as {% include key content='press\|Control' %} and {% include key content='press\|Shift' %} are specified by prepending the key with their name, separated by a space escaped with a backslash '\\'. Spaces in commands do not need to be escaped. The dash \# character at the beginning of a line is used to insert comments.
 
-An example of such a file can be found [**here**](Example_mamut.properties_file).
+An example of such a file can be found [**here**](/plugins/mamut/example-properties-file).
 
 ### Available commands.
 

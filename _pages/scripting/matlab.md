@@ -140,7 +140,7 @@ Running ImageJ within MATLAB
 
 {% include info-box content='MATLAB versions prior to R2017b need to be [tweaked to use Java 8](http://www.mathworks.com/matlabcentral/answers/130359-how-do-i-change-the-java-virtual-machine-jvm-that-matlab-is-using-on-windows) instead of Java 7.' %}
 
-The ImageJ update site provides an `ImageJ.m` script that will start up an ImageJ instance inside a running [MATLAB](MATLAB) application. Launching the script is the same as for [Miji](Miji):
+The ImageJ update site provides an `ImageJ.m` script that will start up an ImageJ instance inside a running [MATLAB](MATLAB) application. Launching the script is the same as for [Miji](/plugins/miji):
 
     addpath '/Applications/Fiji.app/scripts' % Update for your ImageJ installation as appropriate
     ImageJ;
@@ -379,4 +379,4 @@ See also
 -   [Using TrackMate from MATLAB](/plugins/trackmate/using-from-matlab)
 -   [Analyzing TrackMate results with MATLAB](/plugins/trackmate/analyzing-results-with-matlab)
 -   [Comparison of Matlab functions and Ops](Comparison_of_Matlab_functions_and_Ops)
--   [Miji](Miji) (legacy)
+-   [Miji](/plugins/miji) (legacy)

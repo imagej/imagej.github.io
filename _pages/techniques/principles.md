@@ -94,7 +94,7 @@ While most digital cameras save in JPEG format by default, it is very likely tha
 
 Once an image has been saved as compressed JPEG there is no way of reverting to the original, therefore an old JPEG-compressed image saved again as TIFF or PNG still contains all the original JPEG compression artifacts.
 
-Below is an ImageJ macro which demonstrates the issue. It requires the [Glasbey](Glasbey) LUT, part of the [Fiji](/fiji) distribution of ImageJ.
+Below is an ImageJ macro which demonstrates the issue. It requires the [Glasbey](/plugins/glasbey) LUT, part of the [Fiji](/fiji) distribution of ImageJ.
 
     // load Boats
     run("Boats (356K)");

@@ -75,7 +75,7 @@ Note: This list is only irregularly updated.
 -   {% include person content='Schindelin' %}[47] (former, founder)
 -   See also [graph of Fiji contributors](https://github.com/fiji/fiji/graphs/contributors)
 
-### [BigDataViewer](BigDataViewer)
+### [BigDataViewer](/plugins/bdv)
 
 -   {% include person content='Pietzsch' %}[48] (lead)
 -   {% include person content='StephanP' %}[49][50]

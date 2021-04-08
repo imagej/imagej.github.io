@@ -11,7 +11,7 @@ Executive summary
 -----------------
 
 -   SCIFIO is headed in a great direction:
-    -   Will integrate it better into modern, powerful software tools including ImgLib2 and [BigDataViewer](BigDataViewer).
+    -   Will integrate it better into modern, powerful software tools including ImgLib2 and [BigDataViewer](/plugins/bdv).
     -   Big step toward breaking the limitations of [ImageJ1](/software/imagej1), in particular the 2GPix plane barrier and limited image types.
     -   Will make possible things like more transparent and rapid ability to work with multi-position and multi-angle datasets (mosaics, light sheet, etc.).
 -   Stability of [ImageJ](/about) and Fiji—and other applications built on [SciJava](SciJava) components—is now easier to validate.

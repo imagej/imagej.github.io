@@ -36,7 +36,7 @@ See especially the [Using Bio-Formats](https://docs.openmicroscopy.org/latest/bi
 
 ### Bio-Formats Importer
 
-The **Bio-Formats Importer** is a plugin for reading data into Fiji. It can open many dozens of proprietary life sciences formats, and standardize their acquisition metadata into a common [OME data model](https://docs.openmicroscopy.org/latest/ome-model/developers/model-overview.html). It will also extract and set basic metadata values such as [spatial calibration](/Spatial_Calibration) if they are available in the file.
+The **Bio-Formats Importer** is a plugin for reading data into Fiji. It can open many dozens of proprietary life sciences formats, and standardize their acquisition metadata into a common [OME data model](https://docs.openmicroscopy.org/latest/ome-model/developers/model-overview.html). It will also extract and set basic metadata values such as [spatial calibration](/techniques/spatial-calibration) if they are available in the file.
 
 Often, you will not need to worry about this plugin to import your data, because Bio-Formats is largely integrated with the File/Open command of Fiji. However, for certain file formats, you may wish to explicitly activate the Bio-Formats Importer to override the default behavior of Fiji. For example, by default Fiji uses some built-in logic to open TIFF files, but this logic may fail with certain TIFFs. The Bio-Formats Importer plugin may be able to import such TIFFs successfully.
 

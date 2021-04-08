@@ -10,7 +10,7 @@ Currently available options
 ---------------------------
 
 -   Existing [3D Viewer](/plugins/3d-viewer)
--   [BigDataViewer](BigDataViewer)
+-   [BigDataViewer](/plugins/bdv)
 -   [ClearVolume](/plugins/clearvolume)
 -   [Volume Viewer](/plugins/volume-viewer)
 -   [Vaa3D](Vaa3D)

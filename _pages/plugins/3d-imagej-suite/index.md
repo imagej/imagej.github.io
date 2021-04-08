@@ -39,9 +39,9 @@ Features
 
 This *suite* is composed of :
 
--   [3D Filters](3D_Filters) (mean, median, max, min, tophat, max local, ...) and [Edge and symmetry filter](/plugins/edge-and-symmetry-filter)
--   [3D Segmentation](3D_Segmentation) (iterative thresholding, spots segmentation, watershed, ...)
--   [3D Mathematical Morphology](3D_Mathematical_Morphology) tools (fill holes, binary closing, distance map, ...)
+-   [3D Filters](/plugins/3d-imagej-suite/filters) (mean, median, max, min, tophat, max local, ...) and [Edge and symmetry filter](/plugins/edge-and-symmetry-filter)
+-   [3D Segmentation](/plugins/3d-segmentation) (iterative thresholding, spots segmentation, watershed, ...)
+-   [3D Mathematical Morphology](/plugins/3d-imagej-suite/mathematical-morphology) tools (fill holes, binary closing, distance map, ...)
 -   [3D RoiManager](https://imagejdocu.list.lu/plugin/stacks/3d_roi_manager/start) (3D display and analysis of 3D objects)
 -   [3D Analysis](https://imagejdocu.list.lu/plugin/analysis/3d_analysis/start) (Geometrical measurements, Mesh measurements, Convex hull, ...)
 -   [3D MereoTopology](https://imagejdocu.list.lu/plugin/analysis/3d_mereotopology/start) (Relationship between objects)
@@ -97,7 +97,7 @@ The 3D suite would like to thanks P. Andrey, J.-F. Gilles and the developers of 
 Links
 -----
 
--   [BoneJ2](/BoneJ)
+-   [BoneJ2](/plugins/bonej)
 -   [3D Shapes](https://sites.google.com/site/learnimagej/plugins/3d-shape)
 -   [3D Annotation Tool](https://imagejdocu.list.lu/plugin/utilities/annotation_roi_3d/start)
 -   [3D Viewer](/plugins/3d-viewer)

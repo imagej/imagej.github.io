@@ -10,7 +10,7 @@ description: test description
 Download
 --------
 
-The integration of the **Multiview Reconstruction** and the [BigDataViewer](BigDataViewer) is available through the Fiji Updater. Simply update Fiji and the Multiview-Reconstruction pipeline will be available under '{% include bc content='Plugins | Multiview Reconstruction | Multiview Reconstruction Application'%}'. The source code is available {% include github org='bigdataviewer' repo='SPIM\_Registration' %}, please also report feature requests & bugs there.
+The integration of the **Multiview Reconstruction** and the [BigDataViewer](/plugins/bdv) is available through the Fiji Updater. Simply update Fiji and the Multiview-Reconstruction pipeline will be available under '{% include bc content='Plugins | Multiview Reconstruction | Multiview Reconstruction Application'%}'. The source code is available {% include github org='bigdataviewer' repo='SPIM\_Registration' %}, please also report feature requests & bugs there.
 
 To enable GPU hardware accelerated processing, you might want to download the **native CUDA code** for:
 
@@ -32,7 +32,7 @@ Introduction & Overview
 
 The **Multiview Reconstruction** software package enables users to *register, fuse, deconvolve and view* multiview microscopy images (first box). The software is designed for lightsheet fluorescence microscopy (LSFM, second box), but is applicable to any form of three or higher dimensional imaging modalities like confocal timeseries or multicolor stacks.
 
-Interactive viewing and annotation of the data is provided by integration with Tobias Pietzsch's [BigDataViewer](BigDataViewer). Both projects share a common XML data model to describe multiview datasets.
+Interactive viewing and annotation of the data is provided by integration with Tobias Pietzsch's [BigDataViewer](/plugins/bdv). Both projects share a common XML data model to describe multiview datasets.
 
 ### History
 
@@ -65,7 +65,7 @@ Using this software package consists of several steps. Please note that this sof
 <!-- -->
 
 -   **[Resave the dataset as HDF5/TIFF](/plugins/mvr-resavedataset)**
-    -   Once the dataset is defined, you might want to resave all the image data as HDF5 (to be able to view it using the [BigDataViewer](BigDataViewer)) or simply as TIFF to enable fast loading of the image data. Also note that those two formats are the only ones that allow to extend the dataset/XML with newly fused data.
+    -   Once the dataset is defined, you might want to resave all the image data as HDF5 (to be able to view it using the [BigDataViewer](/plugins/bdv)) or simply as TIFF to enable fast loading of the image data. Also note that those two formats are the only ones that allow to extend the dataset/XML with newly fused data.
 
 <!-- -->
 
@@ -93,7 +93,7 @@ Using this software package consists of several steps. Please note that this sof
 
 -   **[Fusion/Deconvolution](/plugins/mvr-fusiondeconvolution)**
     -   Once the dataset is entirely aligned it can be fused or deconvolved into a single image per timepoint and channel. Deconvolution requires the knowledge of point spread functions (PSF's), which can be extracted from matched beads directly or can be provided by the user.
-    -   Alternatively, there is no need to fuse the data and you can interactively look at the data using the [BigDataViewer](BigDataViewer) if you resaved it as HDF5. You can still do that now after the registration is complete.
+    -   Alternatively, there is no need to fuse the data and you can interactively look at the data using the [BigDataViewer](/plugins/bdv) if you resaved it as HDF5. You can still do that now after the registration is complete.
 
 ### Tools
 

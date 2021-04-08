@@ -5,7 +5,7 @@ categories: Matlab,Scripting,Tracking
 description: test description
 ---
 
-This page shows how to use and control TrackMate directly from *within [MATLAB](MATLAB)*. This is great and made possible thanks to the great [Miji](Miji) tool, that make the Fiji classes visible from [MATLAB](MATLAB). Check this page first if you have not already. Note however that as 2016, Mark Hinerm and friends built a stronger replacement from Miji, [ImageJ-MATLAB](/scripting/matlab). This page still clings to using Miji, but moving to ImageJ-MATLAB should be painless.
+This page shows how to use and control TrackMate directly from *within [MATLAB](MATLAB)*. This is great and made possible thanks to the great [Miji](/plugins/miji) tool, that make the Fiji classes visible from [MATLAB](MATLAB). Check this page first if you have not already. Note however that as 2016, Mark Hinerm and friends built a stronger replacement from Miji, [ImageJ-MATLAB](/scripting/matlab). This page still clings to using Miji, but moving to ImageJ-MATLAB should be painless.
 
 All the following examples assume you have launched [MATLAB](MATLAB), and properly initiated Miji, using for instance
 

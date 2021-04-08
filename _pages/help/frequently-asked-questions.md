@@ -23,7 +23,7 @@ There is a 2 gigapixel limit when opening and displaying image planes using the 
 
 Furthermore, the [SCIFIO](/software/scifio) library (what ImageJ2 uses for data I/O) supports opening such images on-demand as "cell images" such that blocks are read from disk as you iterate over the image. This is similar to (but more powerful than) ImageJ 1.x's virtual stacks feature. In this way, you can write code to process these large images without displaying them.
 
-The [Fiji](/fiji) project also includes the [BigDataViewer](BigDataViewer) (BDV) plugin, which currently functions as an alternative viewer, to display arbitrarily large images backed by ImgLib2. In the future we hope to integrate BDV-driven UI technology more completely into ImageJ core. But there are a couple of limitations right now:
+The [Fiji](/fiji) project also includes the [BigDataViewer](/plugins/bdv) (BDV) plugin, which currently functions as an alternative viewer, to display arbitrarily large images backed by ImgLib2. In the future we hope to integrate BDV-driven UI technology more completely into ImageJ core. But there are a couple of limitations right now:
 
 1.  BDV was originally designed for large SPIM data; opening large image files more generally currently requires some coding. But we want to change this.
 2.  Many ImageJ 1.x plugins assume the data is stored in an ImageJ 1.x data structure, which is not what BDV uses. So ["mixing and matching" IJ1 and IJ2 functionality](/Compatibility) is tricky here. But we are working to lift these restrictions as time goes on.
@@ -106,7 +106,7 @@ You will then see two icons in the dock, the one of the launcher app and the one
 What is this *headless* mode and what do I need it for?
 -------------------------------------------------------
 
-The term *headless* refers to running ImageJ without a graphical desktop, e.g. on a cluster. See the [Headless](Headless) page for more information.
+The term *headless* refers to running ImageJ without a graphical desktop, e.g. on a cluster. See the [Headless](/learn/headless) page for more information.
 
 Installing/Updating
 ===================
@@ -201,12 +201,12 @@ Thanks to the {% include github org='imagej' repo='imagej-legacy' label='ImageJ 
 
 The ImageJ1 macro language has been extremely useful to many users. However, it has a substantial limitation: its functions are separate from those available from Java and the other scripting languages.
 
-In ImageJ2, the goal is to provide one unified set of functions, which is fully accessible from Java and all scripting languages. Hence, ImageJ2 plugins and scripts are more flexible than [ImageJ1](/software/imagej1) [plugins](/fiji/plugins) and [macros](/scripting/macro). They can run [headless](Headless) on a server, and are accessible from various applications such as CellProfiler, [KNIME](/software/knime), OMERO, and headless from the command line. We would encourage newly developed scripts and plugins to use the ImageJ2 API since it offers these advantages, but the ImageJ1 API will remain accessible, too.
+In ImageJ2, the goal is to provide one unified set of functions, which is fully accessible from Java and all scripting languages. Hence, ImageJ2 plugins and scripts are more flexible than [ImageJ1](/software/imagej1) [plugins](/fiji/plugins) and [macros](/scripting/macro). They can run [headless](/learn/headless) on a server, and are accessible from various applications such as CellProfiler, [KNIME](/software/knime), OMERO, and headless from the command line. We would encourage newly developed scripts and plugins to use the ImageJ2 API since it offers these advantages, but the ImageJ1 API will remain accessible, too.
 
 Can I call ImageJ1 API from an ImageJ2 command?
 -----------------------------------------------
 
-Yes, although it is not recommended. You will lose most of the advantages of ImageJ2 if you embed calls to ImageJ1 within your command. ImageJ1 is rather tightly coupled to AWT and hence does not work well headless. For details, see the [Headless](Headless) page.
+Yes, although it is not recommended. You will lose most of the advantages of ImageJ2 if you embed calls to ImageJ1 within your command. ImageJ1 is rather tightly coupled to AWT and hence does not work well headless. For details, see the [Headless](/learn/headless) page.
 
 Can I call ImageJ2 API from an ImageJ1 plugin?
 ----------------------------------------------
@@ -313,7 +313,7 @@ Please refer to our page on [Maven](/develop/maven).
 How do I upload a new release of an ImageJ plugin?
 --------------------------------------------------
 
-Please refer to the [Uploading plugins](Uploading_plugins) tutorial.
+Please refer to the [Uploading plugins](/develop/uploading-plugins) tutorial.
 
 How do I upload a new release of a core ImageJ library such as ImgLib?
 ----------------------------------------------------------------------

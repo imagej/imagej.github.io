@@ -42,14 +42,14 @@ Developing ImgLib2 with IDEA
 
 IntelliJ IDEA comes with built-in support for Maven.
 
-See [Developing ImageJ in IntelliJ IDEA](Developing_ImageJ_in_IntelliJ_IDEA).
+See [Developing ImageJ in IntelliJ IDEA](/develop/intellij).
 
 Developing ImgLib2 with NetBeans
 --------------------------------
 
 NetBeans comes with built-in support for Maven.
 
-See [Developing ImageJ in NetBeans](Developing_ImageJ_in_NetBeans).
+See [Developing ImageJ in NetBeans](/develop/netbeans).
 
 Developing ImgLib2 with command line tools
 ------------------------------------------

@@ -6,4 +6,4 @@ categories:
 description: test description
 ---
 
-{% include user-box name='Michael Doube' gravatar='0f0ebf95574504aa4bbd4c4ad1326c63' forum='mdoube' github='mdoube' osrc='mdoube' %}Michael is the project lead for the [BoneJ](BoneJ) and [BoneJ2](/BoneJ) plugins for [ImageJ](/about).
+{% include user-box name='Michael Doube' gravatar='0f0ebf95574504aa4bbd4c4ad1326c63' forum='mdoube' github='mdoube' osrc='mdoube' %}Michael is the project lead for the [BoneJ](/plugins/bonej) and [BoneJ2](/plugins/bonej) plugins for [ImageJ](/about).

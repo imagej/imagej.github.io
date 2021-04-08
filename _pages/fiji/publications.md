@@ -103,7 +103,7 @@ Publications using or enhancing Fiji
 
 <!-- -->
 
--   [Low Light Tracking Tool](Low_Light_Tracking_Tool)[22] by Alex Krull from Iva Tolic lab was published in Optics Express.
+-   [Low Light Tracking Tool](/plugins/low-light-tracking-tool)[22] by Alex Krull from Iva Tolic lab was published in Optics Express.
 
 <!-- -->
 

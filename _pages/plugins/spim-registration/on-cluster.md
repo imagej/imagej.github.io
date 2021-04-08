@@ -4391,7 +4391,7 @@ Stephan Preibisch solved that problem by allowing to write one XML file per job 
 In practice it means the following steps need to be executed:
 
 -   Define XML dataset - creates one XML for the entire timelapse
--   Re-save data as HDF5 - converts data into HDF5 container optimised for fast access in [BigDataViewer](BigDataViewer)
+-   Re-save data as HDF5 - converts data into HDF5 container optimised for fast access in [BigDataViewer](/plugins/bdv)
 -   Run per time-point registrations - creates as many XMLs as there are timepoints
 -   Merge XMLs - consolidates the per-timepoint XMLs back into a single XML
 
@@ -4698,7 +4698,7 @@ and generate in the raw data directory a series of *.h5* files. Each file contai
 
 and new *hdf5\_dataset.xml*.
 
-From now on, the data are in the HDF5 container (unregistered) and can be viewed in [BigDataViewer](BigDataViewer). In the next step we register the data by running the registration pipeline and updating the XML.
+From now on, the data are in the HDF5 container (unregistered) and can be viewed in [BigDataViewer](/plugins/bdv). In the next step we register the data by running the registration pipeline and updating the XML.
 
 Multiview registration
 ----------------------
@@ -5018,7 +5018,7 @@ creates *merge.job* that will execute *merge\_xml.bsh* on the cluster node using
 
 *merge.job* should be executed on the cluster in interactive mode (see [SPIM\_Registration\_on\_cluster\#Define\_XML](SPIM_Registration_on_cluster#Define_XML)).
 
-The result of the merge is *registration\_dataset,xml*. This is the final product of the registration pipeline. The results of registration can be viewed using [BigDataViewer](BigDataViewer)
+The result of the merge is *registration\_dataset,xml*. This is the final product of the registration pipeline. The results of registration can be viewed using [BigDataViewer](/plugins/bdv)
 
 Tips and tricks
 

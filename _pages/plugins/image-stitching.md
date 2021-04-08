@@ -167,7 +167,7 @@ Finally, you can choose whether to display the result or write the fused image t
 
 ### Grid Collection/Stitching plugin
 
-Please see the [Grid/Collection Stitching Plugin](Grid_Collection_Stitching_Plugin) page for a complete set of instruction on how to use Grid/Collection stitching in Fiji.
+Please see the [Grid/Collection Stitching Plugin](/plugins/grid-collection-stitching) page for a complete set of instruction on how to use Grid/Collection stitching in Fiji.
 
 Problems, known issues and solutions
 ------------------------------------

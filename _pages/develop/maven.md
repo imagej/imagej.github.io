@@ -35,7 +35,7 @@ Maven is a powerful tool to build Java projects and to manage their dependencies
 
 Example: let's assume that you want to build a new plugin for [ImageJ 1.x](/software/imagej1) that builds on, say, the [3D Viewer](/plugins/3d-viewer) and commons-math. You do not want to rebuild them from scratch unless you need to debug issues that are suspect bugs in said components. This is where Maven comes in: you tell it that the dependencies are ImageJ 1.x, 3D Viewer and commons-math and what version(s) you require. It is Maven's job to find and get them, no matter whether you just built them locally or not.
 
-Many convenient [IDEs](/develop/ides) (integrated development environments) including [Eclipse](/develop/imagej-in-eclipse), [NetBeans](/Developing_ImageJ_in_NetBeans) and [IntelliJ](/Developing_ImageJ_in_IntelliJ_IDEA) support Maven projects; therefore, using Maven is an excellent choice when trying to let every developer choose their preferred development environment.
+Many convenient [IDEs](/develop/ides) (integrated development environments) including [Eclipse](/develop/imagej-in-eclipse), [NetBeans](/develop/netbeans) and [IntelliJ](/develop/intellij) support Maven projects; therefore, using Maven is an excellent choice when trying to let every developer choose their preferred development environment.
 
 What does it take to make a new Maven project?
 ==============================================
@@ -156,7 +156,7 @@ If there are no public repositories containing your dependency, you have two opt
 
 <!-- -->
 
--   If the dependency is narrower in scope, you could [contact the ImageJ & Fiji maintainers](Mailing_Lists) to get your needed dependency added to the SciJava Maven repository. Note that you will then be responsible for distributing the dependency with your code—so ensure it is [licensed appropriately](/licensing).
+-   If the dependency is narrower in scope, you could [contact the ImageJ & Fiji maintainers](/about/mailing-lists) to get your needed dependency added to the SciJava Maven repository. Note that you will then be responsible for distributing the dependency with your code—so ensure it is [licensed appropriately](/licensing).
 
 Finally, for local testing you can [install the dependency into your local Maven repository cache yourself](https://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html). The command is `mvn install:install-file`. For example, if you have a library `foo.jar` to install, you could run:
 
