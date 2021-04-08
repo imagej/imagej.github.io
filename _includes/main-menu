@@ -151,7 +151,7 @@
     {% include menu-item title="Development lifecycle" link="/develop/development-lifecycle" %}
     {% include menu-item title="Building a POM" link="/develop/building-a-pom" %}
     {% include menu-divider %}
-    {% include menu-item title="Developing with Eclipse" link="/develop/imagej-in-eclipse" %}
+    {% include menu-item title="Developing with Eclipse" link="/develop/eclipse" %}
     {% include menu-item title="Hands-on debugging" link="/develop/debugging-exercises" %}
     {% include menu-item title="Adding new ops" link="/develop/adding-ops" %}
     {% include menu-item title="Adding new formats" link="/develop/formats" %}

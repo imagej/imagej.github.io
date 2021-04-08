@@ -564,7 +564,7 @@ Detrendr :: plugins/detrendr
 Develop :: Development
 Developing_Fiji :: fiji/developing
 Developing_Fiji_in_Eclipse :: Developing_ImageJ_in_Eclipse
-Developing_ImageJ_in_Eclipse :: develop/imagej-in-eclipse
+Developing_ImageJ_in_Eclipse :: develop/eclipse
 Developing_ImageJ_in_IntelliJ_IDEA :: develop/intellij
 Developing_ImageJ_in_NetBeans :: develop/netbeans
 Developing_ImageJ_on_the_command_line :: develop/command-line

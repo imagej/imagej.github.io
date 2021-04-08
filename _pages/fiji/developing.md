@@ -21,7 +21,7 @@ The purpose of this tutorial is to get you started hacking on [Fiji's source cod
 -   [Introduction into Developing Plugins](/develop/ij1-plugins) tutorial
 -   [Developing ImageJ 1.x plugins with NetBeans](https://www.youtube.com/watch?v=Ac-6gJ2eRb0) screencast
 
-See also [Developing Fiji in Eclipse](/develop/imagej-in-eclipse) for a tutorial specific to the Eclipse IDE.
+See also [Developing Fiji in Eclipse](/develop/eclipse) for a tutorial specific to the Eclipse IDE.
 
 Getting started
 ---------------
@@ -75,7 +75,7 @@ Further reading for developers
 -   [ImageJ plugin writing tutorial](http://www.imagingbook.com/index.php?id=102)
 -   [ImageJ programming tutorials](http://albert.rierol.net/imagej_programming_tutorials.html)
 -   [Uploading plugins](/develop/uploading-plugins)
--   [Developing Fiji in Eclipse](/develop/imagej-in-eclipse)
+-   [Developing Fiji in Eclipse](/develop/eclipse)
 -   [Git](Git)
 -   [Project ideas](Project_ideas)
 -   [Code Coverage in Fiji](Code_Coverage_in_Fiji)

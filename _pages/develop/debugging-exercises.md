@@ -21,7 +21,7 @@ As ImageJ is built using the [SciJava principles of project management](/develop
 
 Additionally, you should:
 
--   Install an IDE - this guide is written with [Eclipse](/develop/imagej-in-eclipse) in mind.
+-   Install an IDE - this guide is written with [Eclipse](/develop/eclipse) in mind.
 -   If using Eclipse, install the [memory analyzer plugin](https://eclipse.org/mat/).
 -   Clone the [imagej-troubleshooting](https://github.com/imagej/imagej-troubleshooting) companion repository, which this guide is designed around, and import it as a Maven project into your IDE.
 -   Install the [jvisualvm](https://visualvm.java.net/) tool.

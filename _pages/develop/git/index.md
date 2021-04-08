@@ -82,7 +82,7 @@ The only negative to Git is the activation barrier of learning it. Once you beco
 
 If you feel comfortable in using the commandline but you are still not familiar with Git the **[Git workshop](/develop/git/workshop)** page might be a perfect entry point for you.
 
-If the commandline is not your favorite playground you can have a look at the Git integration **[EGit](/develop/git/eclipse)** in the **[Eclipse](/develop/imagej-in-eclipse)** IDE.
+If the commandline is not your favorite playground you can have a look at the Git integration **[EGit](/develop/git/eclipse)** in the **[Eclipse](/develop/eclipse)** IDE.
 
 Essential Git commands
 ======================

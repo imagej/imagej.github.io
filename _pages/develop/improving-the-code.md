@@ -71,7 +71,7 @@ Now we develop our code to include our changes in the library.
 
 Most of the ImageJ plugins and support libraries are developed as [Maven](/develop/maven) projects. Developers typically prefer one of the supported [Integrated Development Environments](/develop/ides) to build and run the code.
 
-The most popular IDE is undoubtedly Eclipse, and you can follow [this tutorial](/develop/imagej-in-eclipse) to build the plugin or library (you only need to change the URL from the ImageJ repository to the appropriate plugin or library repository URL).
+The most popular IDE is undoubtedly Eclipse, and you can follow [this tutorial](/develop/eclipse) to build the plugin or library (you only need to change the URL from the ImageJ repository to the appropriate plugin or library repository URL).
 
 ### Commit early, commit often!
 

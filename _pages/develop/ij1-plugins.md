@@ -128,7 +128,7 @@ Basic workflow
 
 All plugin development tends to follow a consistent "Design - Build - Test" workflow. Practically, this looks like:
 
--   Make changes to the source code (e.g. in [Eclipse](/develop/imagej-in-eclipse))
+-   Make changes to the source code (e.g. in [Eclipse](/develop/eclipse))
 -   Build your plugin's .jar from the source code (e.g. with [Maven](/develop/maven))
 -   Move the plugin to the [plugins directory](Plugin#Installing_plugins_manually) of an existing ImageJ installation
 -   (Re)start ImageJ and run the plugin to test the behavior

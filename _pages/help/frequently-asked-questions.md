@@ -241,7 +241,7 @@ Or if you are running [ImageJ1](/software/imagej1), you can bootstrap the update
 How do I develop Fiji in Eclipse?
 ---------------------------------
 
-Please refer to the page *[Developing Fiji in Eclipse](/develop/imagej-in-eclipse)*.
+Please refer to the page *[Developing Fiji in Eclipse](/develop/eclipse)*.
 
 How can I build Fiji from the command-line?
 -------------------------------------------

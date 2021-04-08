@@ -183,7 +183,7 @@ There are always other options for saving or restoring your work—[stashing](ht
 -   Building a project results in a `jar` output in the `$PROJECT/target/` directory.
 -   For a more "real-world" experience, you can drop the `jar` you built into the `ImageJ.app/jars/` directory of an [ImageJ installation](Downloads) to try out any of the example plugins.
 -   If you're not sure how to find your plugin within ImageJ, use the [Command Finder](/Using_the_Command_Launcher)!
--   You can also import each project into [Eclipse](/develop/imagej-in-eclipse)/[NetBeans](/develop/netbeans)/[IntelliJ IDEA](/develop/intellij) as a [maven project](https://books.sonatype.com/m2eclipse-book/reference/creating-sect-importing-projects.html).
+-   You can also import each project into [Eclipse](/develop/eclipse)/[NetBeans](/develop/netbeans)/[IntelliJ IDEA](/develop/intellij) as a [maven project](https://books.sonatype.com/m2eclipse-book/reference/creating-sect-importing-projects.html).
 
 ### First steps
 
@@ -247,7 +247,7 @@ When you're just getting started with tools like [Git](Git) and [Maven](/develop
 
 The [example projects](#Example_projects "wikilink") are designed precisely to serve as such starting points for new projects. Once you have a solid idea of what kind of plugin you want to write, pick the project that discusses your area of choice and simply copy it to your own GitHub repo. From there, you can make changes as needed.
 
-At this point, if you haven't already, we **STRONGLY RECOMMEND** importing your project into an [IDE](/develop/ides) like [Eclipse](/develop/imagej-in-eclipse). This will make [development](/develop/imagej-in-eclipse) and [refactoring](http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fref-menu-refactor.htm) much easier. Modern IDEs also have excellent [Git](Git) and [Maven](/develop/maven) integration, which will allow you to take advantage of the fact that the example projects are already set up as Mavenized Git repositories.
+At this point, if you haven't already, we **STRONGLY RECOMMEND** importing your project into an [IDE](/develop/ides) like [Eclipse](/develop/eclipse). This will make [development](/develop/eclipse) and [refactoring](http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fref-menu-refactor.htm) much easier. Modern IDEs also have excellent [Git](Git) and [Maven](/develop/maven) integration, which will allow you to take advantage of the fact that the example projects are already set up as Mavenized Git repositories.
 
 In addition to modifying and developing the source code itself, there are several things you should do to properly identify and configure your project:
 

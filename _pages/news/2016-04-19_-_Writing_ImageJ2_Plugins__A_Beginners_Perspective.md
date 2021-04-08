@@ -41,7 +41,7 @@ Configure your environment
 You will need:
 
 -   Java
--   [IDE](/develop/ides) (for example: [Eclipse](/develop/imagej-in-eclipse), [NetBeans](/develop/netbeans) or [IntelliJ\_IDEA](/develop/intellij)) is highly recommended
+-   [IDE](/develop/ides) (for example: [Eclipse](/develop/eclipse), [NetBeans](/develop/netbeans) or [IntelliJ\_IDEA](/develop/intellij)) is highly recommended
 -   [Git](Git)
 -   [Apache Maven](/develop/maven)
 -   [ImageJ2 source code](/develop/source) is an optional help

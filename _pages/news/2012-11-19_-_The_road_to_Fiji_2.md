@@ -37,7 +37,7 @@ It is obvious that many of the depicted components share their dependencies with
 
 But in Fiji, we have the [updater](/plugins/updater), which makes it easy both for developers and users to manage many dependencies effortlessly.
 
-On the road to Fiji2, we also adopted ImageJ2's use of [Maven](/develop/maven)—it is basically an updater for developers, as it makes it easy to keep track of dependencies' different versions and to inspect their source code. It is also superior to the previous approach (the [Fiji Build System](/Fiji_Build_System)) that did not allow integration into the many available developer tools (e.g. [Eclipse](/develop/imagej-in-eclipse)).
+On the road to Fiji2, we also adopted ImageJ2's use of [Maven](/develop/maven)—it is basically an updater for developers, as it makes it easy to keep track of dependencies' different versions and to inspect their source code. It is also superior to the previous approach (the [Fiji Build System](/Fiji_Build_System)) that did not allow integration into the many available developer tools (e.g. [Eclipse](/develop/eclipse)).
 
 This modular architecture allows us to integrate many third-party components without hassle, for example machine-learning libraries, database libraries, libraries to read/write PDF files, the powerful [Bio-Formats](/formats/bio-formats) and [SCIFIO](/software/scifio) libraries, etc.
 

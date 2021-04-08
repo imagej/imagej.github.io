@@ -11,7 +11,7 @@ description: test description
 <center>
 
 If you are new to programming, and wondering which IDE to try first:  
-many [ImageJ](/about) and [Fiji](/fiji) developers use [Eclipse](/develop/imagej-in-eclipse) and the [command line](Command_line).
+many [ImageJ](/about) and [Fiji](/fiji) developers use [Eclipse](/develop/eclipse) and the [command line](Command_line).
 
 </center>
 
