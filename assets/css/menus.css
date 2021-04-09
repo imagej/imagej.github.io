@@ -101,17 +101,17 @@
  */
 @media screen and (max-width: 780px) {
 
-#menuToggle
-{
-  display: block;
-  position: absolute;
-  top: 50px;
-  left: 50px;
-
+#menuToggle {
+	padding-left: 0.7em;
+	padding-top: .7em;
+	padding-bottom: .7em;
   z-index: 1;
 
   -webkit-user-select: none;
   user-select: none;
+
+	background-color: #3f454b;
+	overflow: hidden;
 }
 
 #menuToggle a
@@ -134,8 +134,8 @@
   width: 40px;
   height: 32px;
   position: absolute;
-  top: -7px;
-  left: -5px;
+	top: -7px;
+	left: -5px;
 
   cursor: pointer;
 
@@ -151,9 +151,9 @@
 #menuToggle span
 {
   display: block;
-  width: 33px;
+  width: 36px;
   height: 4px;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   position: relative;
 
   background: #cdcdcd;

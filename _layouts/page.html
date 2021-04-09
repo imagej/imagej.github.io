@@ -15,25 +15,11 @@
 	<body class="is-preload">
 
 		<!-- Navigation bar-->
-    <section id="nav-page">
-		    {% include nav-bar %}
-    </section>
+		<section id="nav-page">
+		{% include nav-bar %}
+		</section>
 
-		<!-- Page-info -->
-		{% include page-info %}
-
-		<!-- Main menu -->
-    <div class="sidebar-left">
-    <div class="menu">
-    <ul>
-    <h3>ImageJ Documentation</h3>
-    <hr>
-		{% include main-menu %}
-    </ul>
-    </div>
-    </div>
-
-    <!-- Hamburger menu -->
+		<!-- Hamburger menu -->
     <nav role="navigation">
       <div id="menuToggle">
         <input type="checkbox" />
@@ -45,6 +31,20 @@
         </ul>
       </div>
     </nav>
+
+		<!-- Page-info -->
+		{% include page-info %}
+
+		<!-- Main menu -->
+  <div class="sidebar-left">
+  	<div class="menu">
+    	<ul>
+    	<h3>ImageJ Documentation</h3>
+    	<hr>
+			{% include main-menu %}
+    	</ul>
+    </div>
+  </div>
 
 		<!-- Table of contents -->
 		<div class="toc menu">
