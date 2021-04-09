@@ -27,19 +27,19 @@
 	color: black;
 }
 
-.menu ul li {
+.menu, #menuToggle ul li {
 	margin-bottom: 0px;
 }
 
-.menu li {
+.menu, #menuToggle li {
 	margin: 10px 0;
 }
 
-.menu summary {
+.menu, #menuToggle summary {
 	outline:none;
 }
 
-.menu summary.li {
+.menu, #menuToggle summary.li {
 	padding-left: 1.4em;
 }
 
@@ -48,16 +48,16 @@
 	margin: 0.5em 0 10px 0;
 }
 
-.menu details>summary {
+.menu, #menuToggle details>summary {
 
 	list-style: none;
 }
 
-.menu summary::-webkit-details-marker {
+.menu, #menuToggle summary::-webkit-details-marker {
 	display: none
 }
 
-.menu details > summary:after {
+.menu, details > summary:after {
 	content: "▶";
 	font-size: 12px;
 	position: absolute;
@@ -229,6 +229,7 @@
 }
 
 #menu-ham li {
+	list-style-type: none;
   padding: 10px 0;
   font-size: 22px;
 }
@@ -236,11 +237,24 @@
 /*
  * And let's slide it in from the left
  */
-#menuToggle input:checked ~ ul
-{
+#menuToggle input:checked ~ ul {
   transform: none;
+	}
 }
+
+#menuToggle details > summary:after {
+	content: "▶";
+	font-size: 16px;
+	position: absolute;
+	left: 230px;
 }
+
+#menuToggle details[open] > summary:after {
+	content: "▼";
+	font-size: 18px;
+	left: 228px;
+}
+
 @media screen and (min-width: 780px) {
 
 	#menuToggle {
