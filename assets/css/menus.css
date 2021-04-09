@@ -27,19 +27,19 @@
 	color: black;
 }
 
-.menu, #menuToggle ul li {
+.menu ul li {
 	margin-bottom: 0px;
 }
 
-.menu, #menuToggle li {
+.menu li {
 	margin: 10px 0;
 }
 
-.menu, #menuToggle summary {
+.menu summary {
 	outline:none;
 }
 
-.menu, #menuToggle summary.li {
+.menu summary.li {
 	padding-left: 1.4em;
 }
 
@@ -48,16 +48,16 @@
 	margin: 0.5em 0 10px 0;
 }
 
-.menu, #menuToggle details>summary {
+.menu details>summary {
 
 	list-style: none;
 }
 
-.menu, #menuToggle summary::-webkit-details-marker {
+.menu summary::-webkit-details-marker {
 	display: none
 }
 
-.menu, details > summary:after {
+.menu details > summary:after {
 	content: "▶";
 	font-size: 12px;
 	position: absolute;
@@ -254,7 +254,14 @@
 	font-size: 18px;
 	left: 228px;
 }
+#menuToggle details>summary {
 
+	list-style: none;
+}
+
+#menuToggle summary::-webkit-details-marker {
+	display: none
+}
 @media screen and (min-width: 780px) {
 
 	#menuToggle {
