@@ -532,9 +532,9 @@ Cutting_releases :: Releases#cutting-a-new-release
 DAIS :: orgs/dais
 DAIS_Learnathon_2018 :: events/DAIS_Learnathon_2018
 DHM_Utilities :: plugins/dhm-utilities
-DHM_Utilities_Multi-Image_Landmark_Correspondences :: plugins/dhm-utilities-multi-image-landmark-correspondences
-DHM_Utilities_Phase_Unwrapping :: plugins/dhm-utilities-phase-unwrapping
-DHM_Utilities_Reconstruction :: plugins/dhm-utilities-reconstruction
+DHM_Utilities_Multi-Image_Landmark_Correspondences :: plugins/dhm-utilities/multi-image-landmark-correspondences
+DHM_Utilities_Phase_Unwrapping :: plugins/dhm-utilities/phase-unwrapping
+DHM_Utilities_Reconstruction :: plugins/dhm-utilities/reconstruction
 DICOM :: formats/dicom
 DICOM_open :: plugins/dicom-open
 DS4H :: DS4H_Image_Alignment
@@ -543,7 +543,7 @@ Daltonize :: Simulate_Color_Blindness
 Dan_White :: User_White
 Data_Browser :: Bio-Formats
 De-Interleave :: Stack_Manipulation
-Debian :: plugins/debian
+Debian :: about/debian
 Debug :: develop/debugging
 Debugging :: develop/debugging
 Debugging_Exercises :: develop/debugging-exercises
@@ -912,7 +912,7 @@ Java :: Writing_plugins
 Java3D :: Java_3D
 JavaOptions :: Java_Options
 JavaScript_Scripting :: scripting/javascript
-Java_3D :: plugins/java-3d
+Java_3D :: about/java-3d
 Java_8 :: 2016-05-10_-_ImageJ_HOWTO_-_Java_8,_Java_6,_Java_3D
 Java_Scripting :: Introduction_into_Developing_Plugins
 Javadoc :: develop/source#javadocs
@@ -935,7 +935,7 @@ Kotlin :: develop/kotlin
 Kuwahara_Filter :: plugins/kuwahara-filter
 KymoResliceWide :: plugins/kymoreslicewide
 KymographBuilder :: KymographBuilder___Yet_Another_Kymograph_Fiji_plugin
-KymographBuilder___Yet_Another_Kymograph_Fiji_plugin :: plugins/kymographbuilder---yet-another-kymograph-fiji-plugin
+KymographBuilder___Yet_Another_Kymograph_Fiji_plugin :: plugins/kymograph-builder
 LGPL :: licensing/lgpl
 LGPLv2 :: LGPL
 LGPLv3 :: LGPL
@@ -1092,8 +1092,8 @@ NanoTrackJ :: plugins/nanotrackj
 Native :: Developing_using_native_libraries
 NetBeans :: Developing_ImageJ_in_NetBeans
 Neuroanatomy :: plugins/neuroanatomy
-Neuroanatomy_External_Resources :: plugins/neuroanatomy-external-resources
-NeuronDetector_ :: plugins/neurondetector-
+Neuroanatomy_External_Resources :: plugins/neuroanatomy/external-resources
+NeuronDetector_ :: plugins/neuron-detector
 NeuronJ :: plugins/neuronj
 New_Fiji_Tutorial :: Tutorial_Maker
 News :: news
@@ -1151,7 +1151,7 @@ PlugIn_Design_Guidelines :: develop/plugin-design-guidelines
 Plugin :: Plugins
 Plugins :: plugins
 Plugins_Menu :: Fijis_Menu
-PointPicker :: plugins/pointpicker
+PointPicker :: plugins/point-picker
 Point_Analysis :: plugins/point-analysis
 Point_Picker :: plugins/point-picker
 Prepare_Cover_Maker_Database :: Cover_Maker#prepare-covermaker-database
@@ -1173,7 +1173,7 @@ QuickTime :: formats/quicktime
 Quiver_Plot :: plugins/quiver-plot
 R :: Renjin_Scripting
 RATS :: RATS__Robust_Automatic_Threshold_Selection
-RATS__Robust_Automatic_Threshold_Selection :: plugins/rats--robust-automatic-threshold-selection
+RATS__Robust_Automatic_Threshold_Selection :: plugins/rats
 RERO :: Philosophy#release-early-release-often
 RETINA_Analysis_Toolkit :: plugins/retina-analysis-toolkit
 RGB-Gray_Merge :: plugins/rgb-gray-merge
@@ -1234,7 +1234,7 @@ SEM_JOEL_Scale :: plugins/sem-joel-scale
 SIFT :: Feature_Extraction
 SIMcheck :: plugins/simcheck
 SIOX :: SIOX__Simple_Interactive_Object_Extraction
-SIOX__Simple_Interactive_Object_Extraction :: plugins/siox--simple-interactive-object-extraction
+SIOX__Simple_Interactive_Object_Extraction :: plugins/siox
 SLIM_Curve :: plugins/slim-curve
 SME :: SME_Projection
 SME_Projection :: plugins/sme-projection
@@ -1270,7 +1270,7 @@ Saim :: plugins/saim
 Same_Slice_in_Multiple_Images :: plugins/same-slice-in-multiple-images
 SampEn2D :: plugins/sampen2d
 Samples :: plugins/samples
-Sandbox_Test :: plugins/sandbox-test
+Sandbox_Test :: <DELETED>
 Save_Particles_.tif_file_-_fast :: QuickPALM
 Save_as_animated_gif :: formats/animated-gif
 Saving_and_Exporting :: cookbook/saving-and-exporting
@@ -1281,7 +1281,7 @@ SciJava_Jupyter_Kernel :: software/scijava-jupyter-kernel
 SciJava_Maven_repository :: Project_management#maven
 SciView :: plugins/sciview
 Scijava-parallel :: software/scijava-parallel
-Screenshots :: plugins/screenshots
+Screenshots :: <DELETED>
 Script :: Using_the_Script_Editor
 Script_Editor :: Using_the_Script_Editor
 Script_Editor_Auto_Import :: scripting/auto-imports
@@ -1385,7 +1385,7 @@ Spots_colocalization_ComDet :: plugins/spots-colocalization-comdet
 Sprout_Morphology :: plugins/sprout-morphology
 Squassh :: plugins/squassh
 Stack-slice_Manipulations :: cookbook/stack-slice-manipulations
-StackObjectCombiner :: plugins/stackobjectcombiner
+StackObjectCombiner :: plugins/stack-object-combiner
 StackReg :: plugins/stackreg
 Stack_Colorizer :: Bio-Formats
 Stack_Combiner :: Stack_Manipulation
@@ -1418,7 +1418,7 @@ Stochastic_Denoising :: plugins/stochastic-denoise
 Stop_Analyse_Particles_kills_the_threads :: QuickPALM
 Strahler :: Strahler_Analysis
 Strahler_Analysis :: plugins/strahler-analysis
-Straighten... :: plugins/straighten...
+Straighten... :: plugins/straighten
 Sub-pixel_localization_parameter_selection :: plugins/mtrack/sub-pixel-localization-parameter-selection
 Substack_Maker :: Stack_Manipulation
 Super_Sloppy_Surface_Reconstruction :: scripting/examples/super-sloppy-surface-reconstruction
@@ -1432,7 +1432,7 @@ Sync_Windows :: plugins/sync-windows
 T-functions :: cookbook/t-functions
 TAPAS :: plugins/tapas
 TEM_suite :: plugins/tem-suite
-TIA_.ser_folder_export :: plugins/tia-.ser-folder-export
+TIA_.ser_folder_export :: formats/tia-ser-folder-export
 TIFF :: formats/tiff
 TUNEL_Cell_Counter :: RETINA_Analysis_Toolkit
 TWS :: Trainable_Weka_Segmentation
@@ -1805,8 +1805,8 @@ VIB :: VIB_Protocol
 VIB-lib :: software/vib-lib
 VIB_Protocol :: plugins/vib-protocol
 VTEA :: plugins/vtea
-Vaa3d_Reader :: plugins/vaa3d-reader
-Vaa3d_Writer :: plugins/vaa3d-writer
+Vaa3d_Reader :: formats/vaa3d-reader
+Vaa3d_Writer :: formats/vaa3d-writer
 Version :: Architecture#versioning
 Versioning :: develop/versioning
 Versions :: Architecture#versioning
@@ -1828,7 +1828,7 @@ WCIF_ImageJ :: MBF_Plugin_Collection
 Watershed_Algorithm_ImageJ_plugin :: plugins/watershed-algorithm
 Watershed_followed_by_MSER :: plugins/mtrack/watershed-mser
 Watershedding_and_Hough_transform_parameters :: plugins/mtrack/watershed-hough-parameters
-Wavefront_.OBJ_... :: plugins/wavefront-.obj-...
+Wavefront_.OBJ_... :: formats/wavefront-obj
 Wavelet_Denoise :: plugins/wavelet-denoise
 Wayne_Rasband :: users/rasband
 Why :: Philosophy
