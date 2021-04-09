@@ -1,4 +1,4 @@
-<section id="nav">
+
     <div class="topnav">
         <a href="/">Home</a>
         <a href="/search" class="icon solid fa-search">Search</a>
@@ -25,4 +25,3 @@
             </div>
         </div>
     </div>
-</section>
