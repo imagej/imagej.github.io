@@ -24,7 +24,7 @@ You can change the color and line width via {% include bc content='Edit | Option
 
 The user can drag the arrow head, base or he whole arrow by clicking and dragging near respectively its head, base or body.
 
-If the shift key is pressed while dragging the head, only direction multiple of 45º will be allowed.
+If the shift key is pressed while dragging the head, only direction multiple of 45° will be allowed.
 
 ![](/media/Arrow example3.png "fig:Arrow_example3.png") To customize the arrow shape and type, double click the arrow tool. A dialog is displayed that allow to select the line thickness, the arrow head length and the arrow type. Changes made to the configuration panel are reflected to the arrow immediately.
 

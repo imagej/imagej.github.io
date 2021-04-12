@@ -33,7 +33,7 @@ Usage
 Open a stack and draw a line roi on it (any line roi will do it: straight line, poly-line, freehand line). When you call the plugin you are asked for two parameters.
 
 -   *Flip vertically* will cause the source slices to be processed from bottom to top.
--   *Rotate 90º* will cause the result display to be rotated by 90º.
+-   *Rotate 90°* will cause the result display to be rotated by 90°.
 
 The reslice window is drawn. Now change the roi shape or move it with the mouse. The result window refreshes automatically. Is is possible to change roi type on the fly.
 

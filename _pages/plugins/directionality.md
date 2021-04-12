@@ -14,14 +14,14 @@ Usage
 
 This plugin is used to infer the preferred orientation of structures present in the input image. It computes a histogram indicating the amount of structures in a given direction. Images with completely isotropic content are expected to give a flat histogram, whereas images in which there is a preferred orientation are expected to give a histogram with a peak at that orientation.
 
-For instance, in the pine tree branch pictured above, the needle shaped leaves exist in 2 populations, one with a preferred orientation at about 45º, and another one with preferred orientation around -45º. This is well detected by the plugin, which reports two main peaks at 60º and -60º. On top of that, a minor peak can be seen around 0º, reporting the main branch orientation.
+For instance, in the pine tree branch pictured above, the needle shaped leaves exist in 2 populations, one with a preferred orientation at about 45°, and another one with preferred orientation around -45°. This is well detected by the plugin, which reports two main peaks at 60° and -60°. On top of that, a minor peak can be seen around 0°, reporting the main branch orientation.
 
-Angles are reported in their common mathematical sense. That is: 0º is the East direction, and the orientation is counterclockwise.
+Angles are reported in their common mathematical sense. That is: 0° is the East direction, and the orientation is counterclockwise.
 
 The user interface allows to specify:
 
--   The number of bins (default: 90), that will partition the 180º.
--   The starting angle (default:-90º) for analysis. Angles will run from this value to 180º plus the starting value. This option was added to avoid having peaks at +90º split at the borders of the histogram.
+-   The number of bins (default: 90), that will partition the 180°.
+-   The starting angle (default:-90°) for analysis. Angles will run from this value to 180° plus the starting value. This option was added to avoid having peaks at +90° split at the borders of the histogram.
 -   The debug flag, if set, will cause angular filters and power spectrum to be displayed.
 -   The result table flag will generate a table containing all result value to be displayed. This table can be exported as a CSV file thereafter; see below.
 -   The orientation map flag will cause the orientation map to be generated; see below.
@@ -32,12 +32,12 @@ Statistics generated
 On top of the histogram, the plugin tries to generate statistics on the highest peak found.
 
 -   The highest peak is fitted by a Gaussian function, taking into account the periodic nature of the histogram.
--   The 'Direction (º)' column reports the center of the gaussian.
--   The 'Dispersion (º)' column reports the standard deviation of the gaussian.
+-   The 'Direction (°)' column reports the center of the gaussian.
+-   The 'Dispersion (°)' column reports the standard deviation of the gaussian.
 -   The 'Amount' column is the sum of the histogram from center-std to center+std, divided by the total sum of the histogram. The real histogram values are used for the summation, not the gaussian fit.
 -   The 'Goodness' column reports the goodness of the fit; 1 is good, 0 is bad.
 
-A study made on artificial images reveal that the 'Amount' value as calculated here **underestimates** the real proportion of structures with the preferred orientation. So for the pine image up there, one can conclude that the proportion of needle leaves oriented around +60º is at least 25% (however, the image is not completely uniform, which cripples the meaning of this amount value).
+A study made on artificial images reveal that the 'Amount' value as calculated here **underestimates** the real proportion of structures with the preferred orientation. So for the pine image up there, one can conclude that the proportion of needle leaves oriented around +60° is at least 25% (however, the image is not completely uniform, which cripples the meaning of this amount value).
 
 Results data export
 -------------------
@@ -53,7 +53,7 @@ Different solutions have been thought about, and two of them are currently imple
 
 ### Fourier components analysis
 
-This method is based on Fourier spectrum analysis. For a square image, structures with a preferred orientation generate a periodic pattern at +90º orientation in the Fourier transform of the image, compared to the direction of the objects in the input image.
+This method is based on Fourier spectrum analysis. For a square image, structures with a preferred orientation generate a periodic pattern at +90° orientation in the Fourier transform of the image, compared to the direction of the objects in the input image.
 
 This plugin chops the image into square pieces, and computes their Fourier power spectra. The later are analyzed in polar coordinates, and the power is measured for each angle using the spatial filters proposed in \[1\].
 
@@ -84,9 +84,9 @@ Here is two images stack made to test the plugin accuracy:
 -   [VaryingDirection.tif, 2.5MB](https://fiji.sc/tinevez/directionality/VaryingDirection.tif)
 -   [VaryingAmount.tif, 2.5MB](https://fiji.sc/tinevez/directionality/VaryingAmount.tif)
 
-`VaryingDirection.tif` is a 5 slices 16-bit stack made of artificial structures. Each slice is 512x512 pixels, and contains 2000 rods of length 100 pixels in average. 1000 of these rods have a random orientation, the others 1000 have an orientation varying from -60º to 60º from the first slice to the last one. The image is blurred by a gaussian of std 1, and corrupted by Poisson noise. You can use it to determine the accuracy of angle detection. The amount should be close and below 50%.
+`VaryingDirection.tif` is a 5 slices 16-bit stack made of artificial structures. Each slice is 512x512 pixels, and contains 2000 rods of length 100 pixels in average. 1000 of these rods have a random orientation, the others 1000 have an orientation varying from -60° to 60° from the first slice to the last one. The image is blurred by a gaussian of std 1, and corrupted by Poisson noise. You can use it to determine the accuracy of angle detection. The amount should be close and below 50%.
 
-`VaryingAmount.tif` has the same parameters than the previous stack, but has a varying amount of orientated rods (from 20% to 100% of the 2000 rods) and a fixed direction of -60º for the orientated ones. You can use it to test the "Amount" score.
+`VaryingAmount.tif` has the same parameters than the previous stack, but has a varying amount of orientated rods (from 20% to 100% of the 2000 rods) and a fixed direction of -60° for the orientated ones. You can use it to test the "Amount" score.
 
 Code structure
 --------------
