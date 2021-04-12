@@ -611,6 +611,7 @@ Dynamic_Reslice :: plugins/dynamic-reslice
 EGit :: develop/git/eclipse
 Eclipse :: Developing_ImageJ_in_Eclipse
 Eclipse_Debugging :: develop/debugging#debugging-plugins-in-an-ide-netbeans-intellij-eclipse-etc
+Eclipse_code_style_profiles_and_IntelliJ :: develop/intellij#code-style-profiles
 Edge_and_symmetry_filter :: plugins/edge-and-symmetry-filter
 Editing_the_Wiki :: help/editing
 Elastic_Alignment_and_Montage :: plugins/elastic-alignment-and-montage
