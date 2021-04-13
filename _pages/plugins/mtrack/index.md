@@ -17,12 +17,12 @@ For using MTrack on movies which have very low signal to noise ratio you should 
 Installation
 ------------
 
-1.  Click *Help ▶ Update....*
+1.  Click {% include bc path="Help | Update..." %}.
 2.  Click the *Manage update sites* button.
 3.  Select the *MTrack* update site in the list.
 4.  Click *Close* and then click *Apply changes*.
 5.  Restart Fiji.
-6.  Launch the plugin with *Plugins ▶ MTrack*.
+6.  Launch the plugin with {% include bc path="Plugins | MTrack" %}.
 
 Usage
 -----
@@ -108,7 +108,7 @@ An example movie with several dynamic microtubules is available for download [he
 
 1.  Put the demo movie **MTrack\_Demo.tif** into an empty directory, the results will also be stored here.
 2.  To run the MicroTubule Tracker:
-3.  Select **Plugins** ▶ **MTrack** ▶ **Microtubule Detection and Tracking**,
+3.  Select {% include bc path="Plugins | MTrack | Microtubule Detection and Tracking" %},
 4.  Select **Simple Mode**, **Concatenated Seed Image followed by time-lapse images**, choose the file, the microscope parameters will be automatically loaded, finally click **Next&gt;** to continue.
 5.  Using the default MSER parameters *7 microtubule seeds will be identified*, click **Find Endpoints** to continue.
 6.  The correct endpoints of 6 microtubule seeds will be identified (one is too short and can be added manually), click **Next&gt;** to continue.
@@ -127,7 +127,7 @@ An example movie with a single simulated microtubule at low SNR and the same mic
 
 1.  Put the demo movies **LowSNRMTrack\_Demo.tif** and **DenoisedMTrack\_Demo.tif** into an empty directory, the results will also be stored here.
 2.  To run the MicroTubule Tracker:
-3.  Select **Plugins** ▶ **MTrack** ▶ **Microtubule Detection and Tracking**,
+3.  Select {% include bc path="Plugins | MTrack | Microtubule Detection and Tracking" %},
 4.  Select **Advanced Mode**, **Concatenated Seed Image followed by time-lapse images**, choose the LowSNR movie , the microscope parameters will be automatically loaded, finally click **Next&gt;** to continue.
 5.  In the second panel load the denoised movie and click on **Load preprocessed movie and go next**
 6.  In the panel labelled **Object recognition methods** select MSER from the drop down menu. The microtubule would be correctly identified, click *' next*' to go to the second panel where MSER parameters are displayed. Now click **Find Endpoints** to continue.

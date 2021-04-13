@@ -28,7 +28,7 @@ Presentation
 Usage:
 
 -   Open your image in Fiji.
--   Start the plugin with `Plugins ► Utilities ► Visualize OME Metadata`.
+-   Start the plugin with {% include bc path="Plugins | Utilities | Visualize OME Metadata" %}.
 -   A window should open with the metadata in it.
 
 Please note that :

@@ -63,7 +63,7 @@ In this mode (bitmap analysis), the plugin requires a [binary image or a segment
 3.  Press *More » [Cf. Segmentation](#Cf._Segmentation "wikilink")* to visually inspect the two thresholded phases: *arbor* and *background*.
 4.  Problems? Read the [FAQs](#FAQ "wikilink").
 
-{% include tip id='Paper' tip='This program is described in [Nature methods](http://www.nature.com/nmeth/journal/v11/n10/full/nmeth.3125.html) . The manuscript uses ""Sholl Analysis"" to describe and classify morphologically challenging cells and is accompanied by a [Supplementary Note](http://www.nature.com/nmeth/journal/v11/n10/extref/nmeth.3125-S1.pdf) that presents the software in greater detail. Please [cite it](#faq:citing "wikilink") when acknowledging the plugin in your published research.' %}
+{% include tip id='Paper' tip='This program is described in [Nature methods](http://www.nature.com/nmeth/journal/v11/n10/full/nmeth.3125.html) . The manuscript uses *Sholl Analysis* to describe and classify morphologically challenging cells and is accompanied by a [Supplementary Note](http://www.nature.com/nmeth/journal/v11/n10/extref/nmeth.3125-S1.pdf) that presents the software in greater detail. Please [cite it](#faq:citing "wikilink") when acknowledging the plugin in your published research.' %}
 
 ### Startup ROI
 
@@ -77,11 +77,14 @@ Multi-point selection:A Multi-point selection (multi-point counter) in which the
 
 ### Cf. Segmentation
 
-Press *More» Cf. Segmentation* to visually confirm which phase of the segmented image will be sampled. This command highlights foreground from background pixels and is particularly useful when analyzing black and white (binary) images or when using the *B&W* lookup table in the Threshold Widget (<span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷ Threshold...</span> {% include key content='press\|Shift\|T' %}). *Cf. Segmentation* allows you to ensure that you are measuring neuronal processes and not the interstitial spaces between them. Here is an example using an axonal arbor of a Drosophila olfactory neuron from the [DIADEM](http://diademchallenge.org) dataset[3]:
+Press *More» Cf. Segmentation* to visually confirm which phase of the segmented image will be sampled. This command highlights foreground from background pixels and is particularly useful when analyzing black and white (binary) images or when using the *B&W* lookup table in the Threshold Widget ({% include bc path="Image | Adjust | Threshold..." %} {% include key content='press\|Shift\|T' %}). *Cf. Segmentation* allows you to ensure that you are measuring neuronal processes and not the interstitial spaces between them. Here is an example using an axonal arbor of a Drosophila olfactory neuron from the [DIADEM](http://diademchallenge.org) dataset[3]:
 
 <table><tbody><tr class="odd"><td><center><p><span style="display:inline-block;text-align:center;width:230px">Segmented image</span> <span style="display:inline-block;text-align:center;width:230px"><em>Cf. Segmentation output</em></span> <span style="display:inline-block;text-align:center;width:230px"><em>Intersections mask</em></span></p></center></td></tr><tr class="even"><td><center><figure><img src="/media/CfSegmentation.png" width="700" /></figure></center></td></tr><tr class="odd"><td><center><p><strong>Top row:</strong> Image properly segmented: Arbor is sampled. <strong>Bottom row:</strong> Aberrant segmentation (inverted image): Background is sampled.</p></center><p>Note the reversal of <em><a href="#Cf._Segmentation" title="wikilink">Cf. Segmentation</a> output</em> and how the <em><a href="#Output_Options" title="wikilink">intersections mask</a></em> no longer decorates the axonal processes but the interstitial spaces between them. The consequences of the phase inversion are twofold: 1) the program oversamples (cf. hue ramps on upper left of <em>Intersections mask</em>) and 2) the program detects artifacts induced by the edges of the image (cf. top-right and bottom-right corners of mask where intersections are sampled in the absence of real axons at those locations). Also, note that the initial black and white image would <em>look the same</em> under an inverted lookup table ({% include bc path='Image|Lookup Tables|Invert LUT' color='white'%}).</p></td></tr></tbody></table>
 
-{% include tip tip='With binary images, ""Sholl Analysis"" treats zero intensities as the background, independently of the image lookup table or the state of the ""Black background option"" in <span style="border-bottom:1px dotted #ccc;">Process▷ Binary▷ Options...</span> As with any other [ImageJ routine](https://imagej.net/docs/guide/146-29.html#infobox:blackBackground) , confusing background with foreground pixels will lead to aberrant results, including: 1) overestimation of branches and 2) artifacts at distances intersecting the boundaries of the image canvas.' %} <span id="Traces"></span>
+{%- capture binary-tip -%}
+With binary images, *Sholl Analysis* treats zero intensities as the background, independently of the image lookup table or the state of the *Black background option* in {% include bc path="Process | Binary | Options..." %}. As with any other [ImageJ routine](https://imagej.net/docs/guide/146-29.html#infobox:blackBackground) , confusing background with foreground pixels will lead to aberrant results, including: 1) overestimation of branches and 2) artifacts at distances intersecting the boundaries of the image canvas.
+{%- endcapture -%}
+{% include tip tip=binary-tip %} <span id="Traces"></span>
 
 Analysis of Traced Cells
 ------------------------
@@ -184,7 +187,7 @@ Please keep in mind that this is just a refinement feature, and you should not e
 -   **Save results to** <sup> </sup> If checked, all the results (with the exception of the *[Sholl Table](#Metrics "wikilink")*) are saved to the specified directory. These include: 1) Sholl plots (saved as PNG images), 2) A table containing detailed data and 3) The Sholl mask. Files are named after the image filename and analysis method. Saving options can be specified in {% include bc path='Analysis|Sholl|Metrics & Options...' color='white'%} (*Options...* command in the *More»* drop-down menu).
     -   **Do not display saved files** If checked, saved files are directly saved to disk and are not displayed. Activate this option when [batch processing](#Batch_Processing "wikilink") files.
 
-{% include tip tip='In the dialog prompts of ""Sholl Analysis"", bold headings are clickable URLs pointing to the respective sections of this manual. In addition, relevant tooltips are displayed in the ImageJ status bar when specifying key options.' %}
+{% include tip tip='In the dialog prompts of *Sholl Analysis*, bold headings are clickable URLs pointing to the respective sections of this manual. In addition, relevant tooltips are displayed in the ImageJ status bar when specifying key options.' %}
 
 Sholl Plots
 -----------
@@ -273,7 +276,7 @@ The maximum value of sampled intersections, i.e., the maximum in a linear \[*N* 
 
 See also [Critical value](#CriticalValue "wikilink")
 
-{% include tip tip='**""Max inters.**"": By default only the absolute maximum is noted. However, it is possible to apply peak detection techniques to the profile to retrieve other sites of high density branching. See [Complementary Tools](#Complementary_Tools "wikilink") for more details.' %}
+{% include tip tip='***Max inters.***: By default only the absolute maximum is noted. However, it is possible to apply peak detection techniques to the profile to retrieve other sites of high density branching. See [Complementary Tools](#Complementary_Tools "wikilink") for more details.' %}
 
 <span id="MaxIntersRadius"></span>Radius of highest count of intersections (*Max inters. radius*)  
 The distance at which the *Highest count of intersections* occurred, reflecting sites of highest branch density. Note that if the same maximum occurs multiple times, only the first distance is considered.
@@ -336,7 +339,7 @@ The distance at which *Critical value* occurs. By default (see [Advanced Usage](
 
 See also [Max inters. radius](#MaxIntersRadius "wikilink")
 
-{% include tip id='Nomenclature' tip='**Nomenclature**: [Previous authors](#References "wikilink") have used different terms to describe the largest value taken by the Sholl profile, including ""Dendrite maximum"". Since the Sholl technique is not restricted to dendritic arbors and can be applied to any tree-like structure such as axonal arbors, mammary ducts or blood vessels (cf. [List of citations](#Citations "wikilink")), ""Sholl Analysis"" introduces the term [Critical radius](#CriticalRadius "wikilink"), renaming ""Dendrite maximum"" (""N<sub>m</sub>"") to [Critical value](#CriticalValue "wikilink").' %}
+{% include tip id='Nomenclature' tip='**Nomenclature**: [Previous authors](#References "wikilink") have used different terms to describe the largest value taken by the Sholl profile, including *Dendrite maximum*. Since the Sholl technique is not restricted to dendritic arbors and can be applied to any tree-like structure such as axonal arbors, mammary ducts or blood vessels (cf. [List of citations](#Citations "wikilink")), *Sholl Analysis* introduces the term [Critical radius](#CriticalRadius "wikilink"), renaming *Dendrite maximum* (*N<sub>m</sub>*) to [Critical value](#CriticalValue "wikilink").' %}
 
 <span id="MeanValueOfFunction"></span>Mean value  
 The mean value[7] of the fitted polynomial function [(1)](#eq1 "wikilink"), representing the average of intersections over the whole area occupied by the arbor. Abbreviation *N<sub>av</sub>*.
@@ -368,7 +371,7 @@ The coefficient of determination of the polynomial fit described in [(1)](#eq1 "
 Complementary Tools
 -------------------
 
-<span id="Extended_Fitting"></span>[frame\|Sampled data from the ddaC cell (<span style="border-bottom:1px dotted #ccc;">File▷ Open Samples▷ ddaC Neuron</span>) being fitted to polynomials of varying degree using a complementary [BAR](/plugins/bar) script.](File:AnimatedPolyFit.gif "wikilink")
+<span id="Extended_Fitting"></span>[frame\|Sampled data from the ddaC cell ({% include bc path="File | Open Samples | ddaC Neuron" %}) being fitted to polynomials of varying degree using a complementary [BAR](/plugins/bar) script.](File:AnimatedPolyFit.gif "wikilink")
 
 *Sholl Analysis* tries to be as flexible as possible by providing several options for normalization and curve fitting. However, it cannot offer exhaustive curve fitting options as determining *best fit models* requires reasonable choices that are not amenable to full automation. For this reason, complementary tools for curve fitting can be installed as needed using [BAR](/plugins/bar) by subscribing to its [update site](BAR#Installation). Several [BAR](/plugins/bar) commands complement *Sholl Analysis*. These include:
 
@@ -394,19 +397,19 @@ This section discusses some aspects that should be taken into account when segme
 Noise  
 Noise can be mitigated through the usage of processing filters, specially edge-preserving ones. Examples:
 
--   [Rolling Ball](/plugins/rolling-ball-background-subtraction) or "Top hat" filters, e.g., <span style="border-bottom:1px dotted #ccc;">Process▷ Subtract Background...</span>
--   Median Filtering (2D/3D), e.g., <span style="border-bottom:1px dotted #ccc;">Process▷ Filters▷</span>, <span style="border-bottom:1px dotted #ccc;">Plugins▷ 3D▷</span>
--   [Anisotropic Diffusion](/plugins/anisotropic-diffusion-2d), <span style="border-bottom:1px dotted #ccc;">Plugins▷ Process▷ Anisotropic Diffusion 2D</span>
--   Sobel Edge Detection, e.g., <span style="border-bottom:1px dotted #ccc;">Process▷ Find Edges</span>
--   Shen-Castan Edge Detector ([BAR](/plugins/bar) {% include list-of-update-sites content='update site' %}), <span style="border-bottom:1px dotted #ccc;">BAR▷ Segmentation▷</span>
--   Frequency filters, e.g., <span style="border-bottom:1px dotted #ccc;">Process▷ FFT▷ Bandpass Filter...</span>
+-   [Rolling Ball](/plugins/rolling-ball-background-subtraction) or "Top hat" filters, e.g., {% include bc path="Process | Subtract Background..." %}
+-   Median Filtering (2D/3D), e.g., {% include bc path="Process | Filters |" %}, {% include bc path="Plugins | 3D |" %}
+-   [Anisotropic Diffusion](/plugins/anisotropic-diffusion-2d), {% include bc path="Plugins | Process | Anisotropic Diffusion 2D" %}
+-   Sobel Edge Detection, e.g., {% include bc path="Process | Find Edges" %}
+-   Shen-Castan Edge Detector ([BAR](/plugins/bar) {% include list-of-update-sites content='update site' %}), {% include bc path="BAR | Segmentation |" %}
+-   Frequency filters, e.g., {% include bc path="Process | FFT | Bandpass Filter..." %}
 
 <span id="Uneven_Illumination"></span>
 
 Uneven Illumination  
 Uneven illumination problems, typically associated with [wide field microscopy](http://imagejdocu.tudor.lu/doku.php?id=howto:working:how_to_correct_background_illumination_in_brightfield_microscopy), do occur in confocal microscopy when signal from deep layers of the tissue is not captured as bright as with superficial layers. This signal attenuation along the Z-axis will generate a shaded gradient across the stack that [histogram-based segmentation](#Automated_Segmentation "wikilink") will need to take into account. While these problems are better tackled during acquisition (e.g., using laser ramping), it is possible to mitigate this effect using histogram-normalization techniques. Examples:
 
--   [Bleach Correction](/plugins/bleach-correction), <span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷</span>
+-   [Bleach Correction](/plugins/bleach-correction), {% include bc path="Image | Adjust |" %}
 -   [Attenuation correction](http://imagejdocu.tudor.lu/doku.php?id=plugin:stacks:attenuation_correction:start)
 
 <span id="Automated_Segmentation"></span>
@@ -414,19 +417,19 @@ Uneven illumination problems, typically associated with [wide field microscopy](
 Automated Segmentation  
 It is possible to adopt more sophisticated [segmentation algorithms](Category_Segmentation) when [global thresholding methods](/plugins/auto-threshold) do not yield satisfactory results. Examples:
 
--   [Local Threshold](/plugins/auto-local-threshold), <span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷</span>
--   [Robust Automatic Threshold Selection](/plugins/rats--robust-automatic-threshold-selection), <span style="border-bottom:1px dotted #ccc;">Plugins▷ Segmentation▷</span>
--   [Level Sets](/plugins/level-sets), <span style="border-bottom:1px dotted #ccc;">Plugins▷ Segmentation▷</span>
--   [Morphological Segmentation](/plugins/morphological-segmentation) (IJPB-plugins {% include list-of-update-sites content='update site' %}), <span style="border-bottom:1px dotted #ccc;">Plugins▷ Segmentation▷</span>
--   [Squassh](/plugins/squassh), split-Bregman Image Segmentation (Segmentation and Quantification of Sub-cellular Shapes, MOSAIC ToolSuite {% include list-of-update-sites content='update site' %}), , <span style="border-bottom:1px dotted #ccc;">Plugins▷ Mosaic▷ Segmentation▷</span>
+-   [Local Threshold](/plugins/auto-local-threshold), {% include bc path="Image | Adjust |" %}
+-   [Robust Automatic Threshold Selection](/plugins/rats--robust-automatic-threshold-selection), {% include bc path="Plugins | Segmentation |" %}
+-   [Level Sets](/plugins/level-sets), {% include bc path="Plugins | Segmentation |" %}
+-   [Morphological Segmentation](/plugins/morphological-segmentation) (IJPB-plugins {% include list-of-update-sites content='update site' %}), {% include bc path="Plugins | Segmentation |" %}
+-   [Squassh](/plugins/squassh), split-Bregman Image Segmentation (Segmentation and Quantification of Sub-cellular Shapes, MOSAIC ToolSuite {% include list-of-update-sites content='update site' %}), , {% include bc path="Plugins | Mosaic | Segmentation |" %}
 
 <span id="Semi-Automated_Segmentation"></span>
 
 Semi-Automated Segmentation  
 Object detection and image segmentation in images with poor signal-to-noise will likely require decisions taken by a human operator. This is frequently done using hand-crafted workflows using either ImageJ's built-in tools or external add ons. Examples:
 
--   [Blow/Lasso Tool](/plugins/lasso-and-blow-tool), <span style="border-bottom:1px dotted #ccc;">Plugins▷ Segmentation▷</span>
--   Scripts from the [BAR](/plugins/bar) {% include list-of-update-sites content='update site' %}, <span style="border-bottom:1px dotted #ccc;">BAR▷ [Segmentation](BAR#Segmentation)▷</span>
+-   [Blow/Lasso Tool](/plugins/lasso-and-blow-tool), {% include bc path="Plugins | Segmentation |" %}
+-   Scripts from the [BAR](/plugins/bar) {% include list-of-update-sites content='update site' %}, {% include bc path="BAR | [Segmentation](BAR#Segmentation) |" %}
 
 
 {% capture tip%}
@@ -444,19 +447,22 @@ It is fairly simple to [automate](/scripting) the analysis of multiple images us
 Any macro or script must allow the Sholl Analysis plugin to access the ROI marking the center of analysis. One could instruct ImageJ to read the coordinates of pre-existing ROIs from a text file, store a list of line selections in the ROI Manager, or write a morphology-based routine that detects the center of the arbor. However, marking the center of analysis is probably something that you will want to do manually. Here is a workflow:
 
 1.  Place all the .tif images to be processed in a single folder.
-2.  Select the <span style="border-bottom:1px dotted #ccc;">Point Selection Tool</span> in the main ImageJ window. With 3D images, make sure *Set stack positions* is active in the <span style="border-bottom:1px dotted #ccc;">Image▷ Overlay▷ Overlay Options...</span> prompt.
-3.  Open the first image and press {% include key content='press\|Shift\|T' %} to activate the Threshold widget (<span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷ Threshold...</span>).
+2.  Select the <span style="border-bottom:1px dotted #ccc;">Point Selection Tool</span> in the main ImageJ window. With 3D images, make sure *Set stack positions* is active in the {% include bc path="Image | Overlay | Overlay Options..." %} prompt.
+3.  Open the first image and press {% include key content='press\|Shift\|T' %} to activate the Threshold widget ({% include bc path="Image | Adjust | Threshold..." %}).
 4.  Adjust threshold levels. Press the *Apply* button of the Threshold widget to create a binary image.
-5.  Select the z-slice containing the center of analysis. Click over the center with the <span style="border-bottom:1px dotted #ccc;">Point Selection Tool</span> and press {% include key content='press\|B' %} (shortcut for <span style="border-bottom:1px dotted #ccc;">Image▷ Overlay▷ Add Selection...</span>). This will add the point ROI to the image overlay. Save the image as .TIFF by pressing {% include key content='press\|S' %} (<span style="border-bottom:1px dotted #ccc;">File▷ Save As...▷ Tiff...</span>).
-6.  Repeat the last 2 steps until all images are marked, using {% include key content='press\|Shift\|O' %} (shortcut for <span style="border-bottom:1px dotted #ccc;">File▷ Open Next</span>) to iterate through all the images.
+5.  Select the z-slice containing the center of analysis. Click over the center with the <span style="border-bottom:1px dotted #ccc;">Point Selection Tool</span> and press {% include key content='press\|B' %} (shortcut for {% include bc path="Image | Overlay | Add Selection..." %}). This will add the point ROI to the image overlay. Save the image as .TIFF by pressing {% include key content='press\|S' %} ({% include bc path="File | Save As... | Tiff..." %}).
+6.  Repeat the last 2 steps until all images are marked, using {% include key content='press\|Shift\|O' %} (shortcut for {% include bc path="File | Open Next" %}) to iterate through all the images.
 
-{% include tip id='FileFormats' tip='When working with ROIs, it is critical that you work with .tif files because only this format keeps track of image overlays. The <span style="border-bottom:1px dotted #ccc;">Process▷ Batch▷ Convert...</span> command allows bulk conversion between image formats.' %} Now that all the images are marked, we just need to ask ImageJ to generate some lines of code. We will open the Macro Recorder (<span style="border-bottom:1px dotted #ccc;">Plugins▷ Macros▷ Record...</span>) and run *Sholl Analysis* on one of the images to find out how to call the plugin with suitable parameters. In this example, we will use the ImageJ macro language. The single line of code that appears in the recorder window will look something like this:
+{%- capture roi-tiff-tip -%}
+When working with ROIs, it is critical that you work with .tif files because only this format keeps track of image overlays. The {% include bc path="Process | Batch | Convert..." %} command allows bulk conversion between image formats.
+{%- endcapture -%}
+{% include tip id='FileFormats' tip=roi-tiff-tip %} Now that all the images are marked, we just need to ask ImageJ to generate some lines of code. We will open the Macro Recorder ({% include bc path="Plugins | Macros | Record..." %}) and run *Sholl Analysis* on one of the images to find out how to call the plugin with suitable parameters. In this example, we will use the ImageJ macro language. The single line of code that appears in the recorder window will look something like this:
 
     // Recording Sholl Analysis version 3.4.3
     // Visit https://imagej.net/Sholl_Analysis#Batch_Processing for scripting examples
     run("Sholl Analysis...", "starting=10 ending=400 radius_step=0 infer fit linear polynomial=[8th degree] semi-log normalizer=Volume create save do");
 
-Now, we just need to assemble a working macro to be pasted in the <span style="border-bottom:1px dotted #ccc;">Process▷ Batch▷ Macro...</span> prompt:
+Now, we just need to assemble a working macro to be pasted in the {% include bc path="Process | Batch | Macro..." %} prompt:
 
     // Get the number of ROIs of the image overlay
     nROIs = Overlay.size;
@@ -486,7 +492,7 @@ Of course you can also automate any preceding steps. However, do not forget to e
     // Run the plugin
     run("Sholl Analysis...", "starting=10 ending=NaN radius_step=0 infer fit linear polynomial=[8th degree] semi-log normalizer=Volume create save do");
 
-That's it. Use the Macro Recorder to generate the customizations you will need before parsing the entire folder of images with <span style="border-bottom:1px dotted #ccc;">Process▷ Batch▷ Macro...</span> {% include tip tip='As you may have noticed, ImageJ plugins are controlled by a single lowercase sentence in which arguments are separated by a space. Input fields and choice lists appear as ""keyword=value"" pairs, active checkboxes by a single keyword. Options that are not needed can be omitted. This makes it easier to generate customizable macros:
+That's it. Use the Macro Recorder to generate the customizations you will need before parsing the entire folder of images with {% include bc path="Process | Batch | Macro..." %} {% include tip tip='As you may have noticed, ImageJ plugins are controlled by a single lowercase sentence in which arguments are separated by a space. Input fields and choice lists appear as *keyword=value* pairs, active checkboxes by a single keyword. Options that are not needed can be omitted. This makes it easier to generate customizable macros:
 
 <div style="width:98%;">
 
@@ -635,7 +641,7 @@ As mentioned several times, the quality of the analysis relies on how the arbor 
 </dl>
 <li>
 
-<span id="faq:updates"></span>**My version is not the latest after running <span style="border-bottom:1px dotted #ccc;">Help▷ Update Fiji...</span> Why?**
+<span id="faq:updates"></span>**My version is not the latest after running {% include bc path="Help | Update Fiji..." %} Why?**
 
 </li>
 <dl>
@@ -727,7 +733,7 @@ The plugin is designed for the analysis of a wide diversity of arbors and it is 
 <dl>
 <dd>
 
-Select the table, then choose <span style="border-bottom:1px dotted #ccc;">File▷ Save As...</span>The filename extension can be specified using the *More » Options...* command (see the [ImageJ User Guide](https://imagej.net/docs/guide/) for details). Single cells cannot be modified from within ImageJ, but custom extensions (e.g., .csv, .xls or .ods) will allow the table to be imported by other spreadsheet applications.
+Select the table, then choose {% include bc path="File | Save As..." %}The filename extension can be specified using the *More » Options...* command (see the [ImageJ User Guide](https://imagej.net/docs/guide/) for details). Single cells cannot be modified from within ImageJ, but custom extensions (e.g., .csv, .xls or .ods) will allow the table to be imported by other spreadsheet applications.
 
 </dd>
 </dl>
@@ -763,7 +769,7 @@ The Sholl mask ([see example of CA1 cell](#CA1CellMask "wikilink")) is simply an
 <dl>
 <dd>
 
-An anisotropic voxel size will have a strong impact on [step size](#StepSize "wikilink"). On the other hand, 2D and 3D images can be sampled differently depending on the [options chosen](#Parameters "wikilink"). If <span style="border-bottom:1px dotted #ccc;">Image▷ Properties...</span> ({% include key content='press\|Shift\|P' %}) reports the appropriate spatial calibration, make sure to read [Multiple Samples and Noise Reduction](#Multiple_Samples_and_Noise_Reduction "wikilink") before deciding which type of images to use.
+An anisotropic voxel size will have a strong impact on [step size](#StepSize "wikilink"). On the other hand, 2D and 3D images can be sampled differently depending on the [options chosen](#Parameters "wikilink"). If {% include bc path="Image | Properties..." %} ({% include key content='press\|Shift\|P' %}) reports the appropriate spatial calibration, make sure to read [Multiple Samples and Noise Reduction](#Multiple_Samples_and_Noise_Reduction "wikilink") before deciding which type of images to use.
 
 </dd>
 </dl>

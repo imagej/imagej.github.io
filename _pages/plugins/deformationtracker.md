@@ -11,12 +11,12 @@ For using ETrack you have to provide a superpixel segmentation map of your cells
 Installation
 ------------
 
-1.  Click *Help ▶ Update....*
+1.  Click {% include bc path="Help | Update..." %}.
 2.  Click the *Manage update sites* button.
 3.  Select the *ETrack* update site in the list.
 4.  Click *Close* and then click *Apply changes*.
 5.  Restart Fiji.
-6.  Launch the plugin with *Plugins ▶ ETrack*.
+6.  Launch the plugin with {% include bc path="Plugins | ETrack" %}.
 
 Usage
 -----

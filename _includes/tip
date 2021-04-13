@@ -4,7 +4,7 @@
 </div>
 {% endcapture %}
 
-<div id="wrap">
+<div class="tip">
     <table class="table-tip-info tip-notice">
         <tbody>
             <tr>

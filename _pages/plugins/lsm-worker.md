@@ -177,15 +177,15 @@ After the improvement 2D segmentation could be evaluated by pressing the "MorfSe
 
 This plugin can process images with cell walls (Border Image) and images with cell nuclei (Object Image). During the work with the plugin Morphological\_Segmentation one should specify the parameter Tolerance, which indicates the intensity of local minimum. This parameter requires an individual manual calibration depending on the image.
 
-<figure><img src="/media/English manual uz html m3fb0e365.png" title="English_manual_uz_html_m3fb0e365.png" width="1000" alt="English_manual_uz_html_m3fb0e365.png" /><figcaption aria-hidden="true">English_manual_uz_html_m3fb0e365.png</figcaption></figure>
+<figure><img src="/media/English manual uz html m3fb0e365.png" title="English_manual_uz_html_m3fb0e365.png" width="1000" alt="English_manual_uz_html_m3fb0e365.png" /><figcaption aria-hidden="true">English\_manual\_uz\_html\_m3fb0e365.png</figcaption></figure>
 
 Fig. 6 Screenshot of the window for the plugin Morphological\_Segmentation
 
 After pressing the button "Run" one should waiting for the segmentation processing. If it is necessary, you also could change the Tolerance value and repeat segmentation. Then import the result image carrying out the following steps:
 
-1.  Choose result image display type as "Catchment basins" (Results › Display).
+1.  Choose result image display type as "Catchment basins" ({% include bc path="Results | Display" %}).
 2.  Create the window with segmented image (press "Create Image")
-3.  Close the main window of Morphological_Segmentation plugin and return
+3.  Close the main window of Morphological\_Segmentation plugin and return
     back to the window of LSM-W2 plugin.
 4.  The button "MorfSegmentation" will change to the button "Get result".
     The button "Get result" opens the window with segmented image.
