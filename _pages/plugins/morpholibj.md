@@ -94,11 +94,11 @@ Similar results may be obtained for enhancing dark curvilinear structures, by us
 
 ### Plugin Usage
 
-<img src="/media/MorphoLibJ-mosaic-filters.png" title="fig:MorphoLibJ filter examples: DAPI stained nuclei image and the result of applying different morphological filters with an octagon of radius 5 as structuring element." width="550" alt="MorphoLibJ filter examples: DAPI stained nuclei image and the result of applying different morphological filters with an octagon of radius 5 as structuring element." /> The collection of morphological filters is available in the {% include bc content='Plugins | MorphoLibJ'%} menu. Filters are **implemented both for 2D and 3D images**, and work for binary, gray level or color (RGB) images.
+<img src="/media/MorphoLibJ-mosaic-filters.png" title="fig:MorphoLibJ filter examples: DAPI stained nuclei image and the result of applying different morphological filters with an octagon of radius 5 as structuring element." width="550" alt="MorphoLibJ filter examples: DAPI stained nuclei image and the result of applying different morphological filters with an octagon of radius 5 as structuring element." /> The collection of morphological filters is available in the {% include bc path='Plugins | MorphoLibJ'%} menu. Filters are **implemented both for 2D and 3D images**, and work for binary, gray level or color (RGB) images.
 
 #### Planar images
 
-Morphological filters for planar images are available {% include bc content='Plugins | MorphoLibJ | Morphological filters'%}. The dialog let the user choose the structuring element shape, radius, and eventually preview the result. The following list of operations can be chosen:
+Morphological filters for planar images are available {% include bc path='Plugins | MorphoLibJ | Morphological filters'%}. The dialog let the user choose the structuring element shape, radius, and eventually preview the result. The following list of operations can be chosen:
 
 -   **erosion** keeps the minimum value within the neighborhood defined by the structuring element.
 
@@ -140,11 +140,11 @@ The following structuring elements can be used for 2D images:
 
 #### 3D images
 
-Morphological filters for 3D images are available under {% include bc content='Plugins | MorphoLibJ | Morphological filters (3D)'%}. The dialog let the user choose the structuring element shape and radius. The same list of operations as for planar images is provided. Planar structuring elements can be used (the operation is simply repeated on each slice), as well as a cubic or spherical structuring element. For most structuring elements, the size can be chosen for each direction.
+Morphological filters for 3D images are available under {% include bc path='Plugins | MorphoLibJ | Morphological filters (3D)'%}. The dialog let the user choose the structuring element shape and radius. The same list of operations as for planar images is provided. Planar structuring elements can be used (the operation is simply repeated on each slice), as well as a cubic or spherical structuring element. For most structuring elements, the size can be chosen for each direction.
 
 #### Directional Filters
 
-Directional filtering is available from {% include bc content='Plugins | MorphoLibJ | Directional Filtering'%}. It requires a planar image.
+Directional filtering is available from {% include bc path='Plugins | MorphoLibJ | Directional Filtering'%}. It requires a planar image.
 
 The parameters are:
 
@@ -200,7 +200,7 @@ One problem arising with regional minima or maxima is that they are very sensiti
 
 Both extended maxima and minima are computed using the geodesic reconstruction algorithm. More details can be found in the book of Soille (2003). {% include thumbnail src='/media/MorphoLibJ-grains-regional-and-extended-maxima.png' title='Regional and extended maxima on a grey-level image. Left: original image. Middle: result of regional maxima. Right: result of extended maxima.'%}
 
-The following operations are available in the {% include bc content='Plugins | MorphoLibJ'%} menu:
+The following operations are available in the {% include bc path='Plugins | MorphoLibJ'%} menu:
 
 -   **Regional Min / Max**: compute regional minima or extrema in grey level or binary image, with specified connectivity.
 -   **Regional Min / Max 3D**: compute regional minima or extrema in 3D grey level or binary image, with specified connectivity.
@@ -227,7 +227,7 @@ As for classical morphological filters, grayscale attribute closing or tophat ca
 
 #### Usage
 
-So far, the following attribute filtering plugins are available within MorphoLibJ (under {% include bc content='Plugins | MorphoLibJ'%}):
+So far, the following attribute filtering plugins are available within MorphoLibJ (under {% include bc path='Plugins | MorphoLibJ'%}):
 
 -   **Gray Scale Attribute Filtering**: opens a dialog to perform between attribute opening, closing, and black or white top-hat on a planar (2D) grayscale image. Two size criteria can be used: the area (number of pixels), or the diameter (length of the diagonal of the bounding box).
 
@@ -309,11 +309,11 @@ A binary particle may be described mathematically by its moments which correspon
 
 #### Plugins
 
-Most MorphoLibJ plugins consider the current image as input, that must be either binary (only one region is considered), or label (typically the result of a connected components labeling, see [Utilities for binary images](MorphoLibJ#Utilities_for_binary_images)). The output is a results table (ImageJ [Results table](https://imagej.nih.gov/ij/docs/guide/146-22.html)) containing one row for each label actually present within the image. The spatial calibration of the image is taken into account in all measurements. All plugins can be found under the {% include bc content='Plugins | MorphoLibJ | Analyze'%} menu.
+Most MorphoLibJ plugins consider the current image as input, that must be either binary (only one region is considered), or label (typically the result of a connected components labeling, see [Utilities for binary images](MorphoLibJ#Utilities_for_binary_images)). The output is a results table (ImageJ [Results table](https://imagej.nih.gov/ij/docs/guide/146-22.html)) containing one row for each label actually present within the image. The spatial calibration of the image is taken into account in all measurements. All plugins can be found under the {% include bc path='Plugins | MorphoLibJ | Analyze'%} menu.
 
 ##### Global geometry
 
-The **global geometry** of particles in 2D images can be characterized with the Analyze Regions plugin (under {% include bc content='Plugins | MorphoLibJ | Analyze | Analyze Regions'%}). For 2D particles, the area, the perimeter and derived features are implemented. The columns of the results table are:
+The **global geometry** of particles in 2D images can be characterized with the Analyze Regions plugin (under {% include bc path='Plugins | MorphoLibJ | Analyze | Analyze Regions'%}). For 2D particles, the area, the perimeter and derived features are implemented. The columns of the results table are:
 
 -   **Label**: the label of the particle measured on the current line (it can be different from the row number if some labels do no exist in original image).
 -   **Area**: the number of pixels within each region, multiplied by the area of each pixel.
@@ -346,7 +346,7 @@ This plugin computes several geodesic measures for each particle in a label imag
 
 ##### Analyze Regions 3D
 
-The plugin calculating these measurements is found under {% include bc content='Plugins | MorphoLibJ | Analyze | Analyze Regions 3D'%}. The results are provided in an ImageJ Results table, whose name contains the name of the original image.
+The plugin calculating these measurements is found under {% include bc path='Plugins | MorphoLibJ | Analyze | Analyze Regions 3D'%}. The results are provided in an ImageJ Results table, whose name contains the name of the original image.
 
 -   **Label**: the label of the particle measured on the current line (it can be different from the row number if some labels do no exist in original image).
 -   **Bounding box**: the minimal and maximal coordinates in each direction for each label.
@@ -357,13 +357,13 @@ The plugin calculating these measurements is found under {% include bc content='
 
 ### Intensity measurements
 
-Other measurements are provided for pairs of grayscale and label 2D or 3D images ({% include bc content='Plugins | MorphoLibJ | Analyze | Intensity Measurements 2D/3D'%}). The label image can correspond to a segmented particle, or to a more generic region of interest.
+Other measurements are provided for pairs of grayscale and label 2D or 3D images ({% include bc path='Plugins | MorphoLibJ | Analyze | Intensity Measurements 2D/3D'%}). The label image can correspond to a segmented particle, or to a more generic region of interest.
 
 The plugin calculates the **mean**, **standard deviation**, **maximum**, **minimum**, **median**, **mode**, **skewness** and **kurtosis** of the intensity value distribution of each labeled region in the grayscale image. The results are displayed as well in an ImageJ *ResultsTable*.
 
 ### Label Overlap Measures
 
-Given two label images, there are different measures that allow us to evaluate the overlap agreement (or error) between the labels. Following Tustison & Gee (2009)&lt;ref name="Tustison2009&gt;{% include cite content='journal' title='Introducing Dice, Jaccard, and other label overlap measures to ITK' author='Tustison, NJ and Gee, JC' journal='The Insight Journal' pages='1-4' issue='July-December' year='2009' doi='10.1007/BF01189221' %}</ref>, and given a source image $$S$$ and a target image $$T$$, this plugin (under {% include bc content='Plugins | MorphoLibJ | Analyze | Label Overlap Measures'%}) provides the following overlap measurements in two different result tables (one with the total values for all labels and one with values for individual labels):
+Given two label images, there are different measures that allow us to evaluate the overlap agreement (or error) between the labels. Following Tustison & Gee (2009)&lt;ref name="Tustison2009&gt;{% include cite content='journal' title='Introducing Dice, Jaccard, and other label overlap measures to ITK' author='Tustison, NJ and Gee, JC' journal='The Insight Journal' pages='1-4' issue='July-December' year='2009' doi='10.1007/BF01189221' %}</ref>, and given a source image $$S$$ and a target image $$T$$, this plugin (under {% include bc path='Plugins | MorphoLibJ | Analyze | Label Overlap Measures'%}) provides the following overlap measurements in two different result tables (one with the total values for all labels and one with values for individual labels):
 
 -   Target Overlap for each individual labeled region $$r$$:
 
@@ -431,12 +431,12 @@ The region adjacency graph plugin gives access to the neighborhood relationship 
 
 {% include thumbnail src='/media/MorphoLibJ-region-adjacency-graph.png' title='Computation of the Region Adjacency Graph on a microscopy image of plant tissue. Left: original image. Middle: result of watershed segmentation. Right: overlay of edges representing adjacent regions.'%}
 
-The plugin (under {% include bc content='Plugins | MorphoLibJ | Analyze | Region Adjacency Graph'%}) works for both 2D and 3D images, and requires a label image as input. A typical input is the result of a watershed segmentation (see [Watershed Segmentation](MorphoLibJ#Watershed_segmentation)), eventually followed by [manual edition of the labels](MorphoLibJ#Label_Edition_plugin). The output of the plugin is a results table with as many rows as the number of pairs of adjacent regions, containing the labels of the two adjacent regions.
+The plugin (under {% include bc path='Plugins | MorphoLibJ | Analyze | Region Adjacency Graph'%}) works for both 2D and 3D images, and requires a label image as input. A typical input is the result of a watershed segmentation (see [Watershed Segmentation](MorphoLibJ#Watershed_segmentation)), eventually followed by [manual edition of the labels](MorphoLibJ#Label_Edition_plugin). The output of the plugin is a results table with as many rows as the number of pairs of adjacent regions, containing the labels of the two adjacent regions.
 
 Binary and label image utilities
 --------------------------------
 
-The MorphoLibJ library provides several utility functions for the processing and the management of binary and label images. All methods of this section are available as plugins under {% include bc content='Plugins | MorphoLibJ | Binary Images'%} or {% include bc content='Plugins | MorphoLibJ | Label Images'%}.
+The MorphoLibJ library provides several utility functions for the processing and the management of binary and label images. All methods of this section are available as plugins under {% include bc path='Plugins | MorphoLibJ | Binary Images'%} or {% include bc path='Plugins | MorphoLibJ | Label Images'%}.
 
 ### Distances for binary images
 
@@ -511,7 +511,7 @@ Algorithms work for both 2D or 3D images. Default connectivity 4 (resp. 6) is us
 
 ### Label Edition plugin
 
-{% include thumbnail src='/media/Label-Edition-plugin.png' title='Label Edition plugin overview.'%}To ease the processing of label images, [MorphoLibJ](/plugins/morpholibj) provides the Label Edition plugin (available under {% include bc content='Plugins | MorphoLibJ | Labels | Label Edition'%}). This plugin contains a graphical user interface (GUI) where the users can perform the following set of editing tasks:
+{% include thumbnail src='/media/Label-Edition-plugin.png' title='Label Edition plugin overview.'%}To ease the processing of label images, [MorphoLibJ](/plugins/morpholibj) provides the Label Edition plugin (available under {% include bc path='Plugins | MorphoLibJ | Labels | Label Edition'%}). This plugin contains a graphical user interface (GUI) where the users can perform the following set of editing tasks:
 
 -   Manually merge labels after their selection using the point selection tool (in 2D and 3D).
 -   Apply morphological erosion, dilation, opening and closing with a square/cube of radius 1 as structuring element.
@@ -712,7 +712,7 @@ Installation
 
 -   In [ImageJ 1.x](/software/imagej1), download the [latest released jar](https://github.com/ijpb/MorphoLibJ/releases) into the *plugins* folder.
 -   In [ImageJ2](/software/imagej2) (including [Fiji](/fiji)), you just need to [ add](How_to_follow_a_3rd_party_update_site#Add_update_sites) the IJPB-plugins site to your list of update sites:
-    1.  Select {% include bc content='Help | Update...'%} from the menu to start the [updater](/plugins/updater).
+    1.  Select {% include bc path='Help | Update...'%} from the menu to start the [updater](/plugins/updater).
     2.  Click on *Manage update sites*. This brings up a dialog where you can activate additional update sites.
     3.  Activate the IJPB-plugins update site and close the dialog. Now you should see an additional jar file for download.
     4.  Click *Apply changes* and restart ImageJ.

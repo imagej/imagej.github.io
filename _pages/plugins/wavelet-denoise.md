@@ -76,7 +76,7 @@ Additional remarks
 
 • When you close any image window joined with the dialog (Input, WT, Filtered, WT-NoStretch) during running, the dialog will not continue and a warning message appears.
 
-• If you do not see data in image windows well, use {% include bc content='Image | Adjust-Brightness/Contrast | Auto'%}. Do not press <i>Apply</i> for pixel intensity value recomputation.
+• If you do not see data in image windows well, use {% include bc path='Image | Adjust-Brightness/Contrast | Auto'%}. Do not press <i>Apply</i> for pixel intensity value recomputation.
 
 Step-by-step manuals
 --------------------
@@ -87,11 +87,11 @@ Step-by-step manuals
 
 1\. Open an image/stack.
 
-2\. Run {% include bc content='Plugins | Wavelet\_Denoise'%}.
+2\. Run {% include bc path='Plugins | Wavelet\_Denoise'%}.
 
 3\. Arrange positions of <i>Wavelet\_Denoise</i> main window and <i>Synchronize Windows</i> dialog in the screen.
 
-4\. Run {% include bc content='Window | Tile'%}.
+4\. Run {% include bc path='Window | Tile'%}.
 
 5\. Press <i>Synchronize All</i> in <i>Synchronize Windows</i> dialog. Or select the input image and its "WT-" and "Filtered-" versions for syncing if more images are opened in Fiji/Imagej.
 
@@ -111,11 +111,11 @@ Step-by-step manuals
 
 1\. Open an image/stack.
 
-2\. Run {% include bc content='Plugins | Wavelet\_Denoise'%}.
+2\. Run {% include bc path='Plugins | Wavelet\_Denoise'%}.
 
 3\. Arrange positions of <i>Wavelet\_Denoise</i> main window and <i>Synchronize Windows</i> dialog in the screen.
 
-4\. Run {% include bc content='Window | Tile'%}.
+4\. Run {% include bc path='Window | Tile'%}.
 
 5\. Press <i>Synchronize All</i> in <i>Synchronize Windows</i> dialog. Or select the input image and its "WT-" and "Filtered-" versions for syncing if more images are opened in Fiji/Imagej.
 

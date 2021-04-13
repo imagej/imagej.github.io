@@ -24,7 +24,7 @@ See also:
 Using Clojure inside Fiji
 -------------------------
 
-Go to {% include bc content='Plugins|Scripting|Clojure Interpreter'%}. The prompt accepts any clojure code. See also Fiji's [Script Editor](/scripting/script-editor).
+Go to {% include bc path='Plugins|Scripting|Clojure Interpreter'%}. The prompt accepts any clojure code. See also Fiji's [Script Editor](/scripting/script-editor).
 
 See [Scripting Help](/scripting) for details on keybindings and how to use the interpreter. {% include key content='Ctrl' %}+{% include key content=')' %} will add all necessary ending parenthesis.
 
@@ -34,7 +34,7 @@ A minimal, complete clojure example:
     (def gold (IJ/openImage "https://imagej.net/images/AuPbSn40.jpg"))
     (.show gold)
 
-To create scripts, just save them as .clj text files (with an underscore in the name) in any folder or subfolder of Fiji's plugins folder, and run {% include bc content='Plugins|Scripting|Refresh Clojure Scripts'%} to update the menus (it's done automatically at start up as well).
+To create scripts, just save them as .clj text files (with an underscore in the name) in any folder or subfolder of Fiji's plugins folder, and run {% include bc path='Plugins|Scripting|Refresh Clojure Scripts'%} to update the menus (it's done automatically at start up as well).
 
 To edit a script, just edit and save it with your favorite text editor.
 
@@ -754,7 +754,7 @@ Simply write the clojure script in a text file, and follow these conventions:
 `1. Add an underscore "_" to its file name, and the extension ".clj": fix_leginon_images.clj`  
 `2. Save it under fiji/plugins/ folder, or a subfolder.`
 
-When done, just run the {% include bc content='PlugIns|Scripting|Refresh Clojure Scripts'%} plugin.
+When done, just run the {% include bc path='PlugIns|Scripting|Refresh Clojure Scripts'%} plugin.
 
 Once saved and in the menus, you need <b>not</b> call refresh scripts ever again for that script. Just edit and save it's text file, and run it again from the menus. Next time Fiji opens, the script will automatically appear in the menus.
 

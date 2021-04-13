@@ -5,7 +5,7 @@ categories: Plugins,Color processing
 description: test description
 ---
 
-{% include component-stats content='sc.fiji:Colour\_Deconvolution' %}Similarly to the command {% include bc content='Image | Color | RGB split'%}, this plugin unmixes an RGB image produced by subtractive mixing (inks, histological dyes) into separate channels corresponding to up to 3 determined colors. This is useful e.g. to do pigment separation.
+{% include component-stats content='sc.fiji:Colour\_Deconvolution' %}Similarly to the command {% include bc path='Image | Color | RGB split'%}, this plugin unmixes an RGB image produced by subtractive mixing (inks, histological dyes) into separate channels corresponding to up to 3 determined colors. This is useful e.g. to do pigment separation.
 
 Documentation
 -------------
@@ -38,6 +38,6 @@ Version history
 Menu path
 ---------
 
-{% include bc content='Image | Color | Colour Deconvolution'%}
+{% include bc path='Image | Color | Colour Deconvolution'%}
 
  

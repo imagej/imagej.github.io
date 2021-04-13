@@ -21,7 +21,7 @@ If you have any questions or suggestions about JRuby scripting in ImageJ, please
 Tutorial
 --------
 
-Let's start writing some JRuby right away - start up the interpreter by going to {% include bc content='Plugins | Scripting | JRuby Interpreter'%}. The interpreter window will pop up, but it may take a little time for the JRuby runtime to be ready. You should initially see the message:
+Let's start writing some JRuby right away - start up the interpreter by going to {% include bc path='Plugins | Scripting | JRuby Interpreter'%}. The interpreter window will pop up, but it may take a little time for the JRuby runtime to be ready. You should initially see the message:
 
 ` Starting JRuby ...`
 
@@ -36,7 +36,7 @@ Now you can start typing Ruby expressions into that window, such as:
 
 It would be a good idea to take a quick look at the page on [Scripting Help](/scripting) for tips on using this interpreter window.l
 
-Try loading one of the ImageJ sample images by going to {% include bc content='File | Open Samples | T1 Head (2.4M, 16-bits)'%}. Once you've done that we'll examine the image using JRuby. You can get a reference to the current image with ij.IJ.getImage. Try assigning the result to a variable, like this:
+Try loading one of the ImageJ sample images by going to {% include bc path='File | Open Samples | T1 Head (2.4M, 16-bits)'%}. Once you've done that we'll examine the image using JRuby. You can get a reference to the current image with ij.IJ.getImage. Try assigning the result to a variable, like this:
 
 ` >>> i = ij.IJ.getImage`  
 ` imp[t1-head.tif 256x256x129]`
@@ -219,7 +219,7 @@ This example script can be found in the Plugins/Examples/ folder of Fiji. It wil
 
     run "3D Project...", projection_options
 
-In general, the best way to figure out what these options should be is to start the macro recorder with "{% include bc content='Plugins | Macros | Record...'%}" and run the plugin. In this case, the output in the macro recorder looks like this:
+In general, the best way to figure out what these options should be is to start the macro recorder with "{% include bc path='Plugins | Macros | Record...'%}" and run the plugin. In this case, the output in the macro recorder looks like this:
 
 ` run("3D Project...", "projection=[Brightest Point] axis=Y-Axis slice=1.20 initial=-2 total=4 `  
 `               rotation=4 lower=1 upper=255 opacity=0 surface=100 interior=50 interpolate");`

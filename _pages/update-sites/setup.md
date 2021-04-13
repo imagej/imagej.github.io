@@ -32,7 +32,7 @@ First of all, create a wiki account on https://imagej.net.
 
 Please note, that the password for the corresponding update site is NOT the one for your wiki account. In order to set your update site password, use the link at the bottom of the wiki or click [here](Special_ChangeUploadPassword).
 
-start the updater with {% include bc content='Help | Update'%} and click on the *Manage update sites* button:
+start the updater with {% include bc path='Help | Update'%} and click on the *Manage update sites* button:
 
 <img src="/media/Mamed-3.jpg" width="770"/>
 
@@ -62,7 +62,7 @@ To create such an update site, post on the [Image.sc Forum](https://forum.image.
 Adding an update site on your own server
 ----------------------------------------
 
-If you have an own server or web space with WebDAV, SFTP or SSH access, you can create a directory in that web space and initialize it as an update site, too. Just call the updater with {% include bc content='Help | Update'%} and click the *Manage update sites* button:
+If you have an own server or web space with WebDAV, SFTP or SSH access, you can create a directory in that web space and initialize it as an update site, too. Just call the updater with {% include bc path='Help | Update'%} and click the *Manage update sites* button:
 
 <img src="/media/Mamed-3.jpg" width="770"/>
 

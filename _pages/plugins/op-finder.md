@@ -13,7 +13,7 @@ Getting started
 There are two ways to start up the Op Finder:
 
 1.  Using the shortcut: {% include key content='Shift\|\|L' %}
-2.  Using the menu path: {% include bc content='Plugins|Utilities|Find Ops...'%}
+2.  Using the menu path: {% include bc path='Plugins|Utilities|Find Ops...'%}
 
 Parts of the Op Finder
 ======================
@@ -147,7 +147,7 @@ All of the parameters with a {% include key content='?' %} are **optional**. For
     out = ops.run("filter.convolve", input, kernel)
 
 
-**Note:** the types we copied and pasted (`Img` and `RandomAccessibleInterval`) represent a *minimum class requirement*. Open images can always be requested as `Datasets`, which have a type hierarchy including {% include bc content='ImgPlus|Img|RandomAccessibleInterval'%}. `Dataset` is thus a good starting point as it can satisfy any of these parameters. If you want to have multiple input image parameters, you **must** use `@Dataset`.
+**Note:** the types we copied and pasted (`Img` and `RandomAccessibleInterval`) represent a *minimum class requirement*. Open images can always be requested as `Datasets`, which have a type hierarchy including {% include bc path='ImgPlus|Img|RandomAccessibleInterval'%}. `Dataset` is thus a good starting point as it can satisfy any of these parameters. If you want to have multiple input image parameters, you **must** use `@Dataset`.
 
 6\. Our script is done! If we open a base image and kernel in ImageJ we can run our script. The `OpService` is populated automatically by the ImageJ framework, and an input window is automatically created to select the images:
 

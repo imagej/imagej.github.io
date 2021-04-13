@@ -4,9 +4,9 @@ title: BigStitcher Pairwise shift
 description: test description
 ---
 
-The first step in stitching a tiled dataset is determining the pairwise shifts between the views. In the **Stitching Mode** select the views for the pairwise shift calculation. Then right-click and select {% include bc content='Stitching Wizard|Stitch dataset...'%}. The **Stitching wizard** will guide you through the three steps of pairwise shift determination, link verification and global optimization.
+The first step in stitching a tiled dataset is determining the pairwise shifts between the views. In the **Stitching Mode** select the views for the pairwise shift calculation. Then right-click and select {% include bc path='Stitching Wizard|Stitch dataset...'%}. The **Stitching wizard** will guide you through the three steps of pairwise shift determination, link verification and global optimization.
 
--   If you just want to determine pairwise shifts and skip the other steps, you can use {% include bc content='Step-by-step Stitching|Calculate Pairwise Shifts...|Phase Correlation'%}
+-   If you just want to determine pairwise shifts and skip the other steps, you can use {% include bc path='Step-by-step Stitching|Calculate Pairwise Shifts...|Phase Correlation'%}
 
 <!-- -->
 

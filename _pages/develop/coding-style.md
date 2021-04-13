@@ -60,7 +60,7 @@ Eclipse code style profiles
 
 We provide [Eclipse configuration files in the source repository](https://github.com/imagej/imagej/tree/master/config) that define our rules for code structure and formatting. **NB** when downloading an `.epf` file from the repository, don't click *Save link as...*, rather create a file `my-file-name.epf`, and then copy-paste the contents of the file. To do this, click on `eclipse-preferences.epf` and then the *Raw* button.
 
-You can import them to your system using {% include bc content='File | Import | Preferences'%} and selecting the `eclipse-preferences.epf` file. Then, in Eclipse preferences, navigate to {% include bc content='Java | Code Style | Clean Up'%} and select "/about" for the active profile. You can then format your source code by right-clicking your source file(s) and choosing {% include bc content='Source | Clean Up'%} from the context menu. As of this writing, these rules are not automatically applied by CI, but we make an effort to apply them to the codebase occasionally by hand.
+You can import them to your system using {% include bc path='File | Import | Preferences'%} and selecting the `eclipse-preferences.epf` file. Then, in Eclipse preferences, navigate to {% include bc path='Java | Code Style | Clean Up'%} and select "/about" for the active profile. You can then format your source code by right-clicking your source file(s) and choosing {% include bc path='Source | Clean Up'%} from the context menu. As of this writing, these rules are not automatically applied by CI, but we make an effort to apply them to the codebase occasionally by hand.
 
 Ordering of code blocks
 -----------------------

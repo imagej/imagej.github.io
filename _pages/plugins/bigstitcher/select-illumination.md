@@ -4,7 +4,7 @@ title: BigStitcher Select illumination
 description: test description
 ---
 
-When views have more than one illumination, you can select the best one by selecting the views you wish to process and clicing {% include bc content='Preprocessing|Select Best Illuminations'%} in the **right-click menu**.
+When views have more than one illumination, you can select the best one by selecting the views you wish to process and clicing {% include bc path='Preprocessing|Select Best Illuminations'%} in the **right-click menu**.
 
 ![](/media/BigStitcher Illu 1.png "BigStitcher_Illu_1.png")
 

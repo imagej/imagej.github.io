@@ -8,7 +8,7 @@ description: test description
 {% include outdated%}
 
 
-Unfortunately, there was a bug in the [ImageJ updater](/plugins/updater) that affected the update of the updater itself. The easiest way to get back a functional updater is to import [this URL](https://github.com/fiji/fiji/raw/master/plugins/Scripts/Plugins/Utilities/Fix_Updater.js) via {% include bc content='File | Import | URL...'%}.
+Unfortunately, there was a bug in the [ImageJ updater](/plugins/updater) that affected the update of the updater itself. The easiest way to get back a functional updater is to import [this URL](https://github.com/fiji/fiji/raw/master/plugins/Scripts/Plugins/Utilities/Fix_Updater.js) via {% include bc path='File | Import | URL...'%}.
 
 If that does not work, please delete the files *ij-ui-swing-updater-2.0.0-SNAPSHOT.jar*, *ij-updater-core-2.0.0-SNAPSHOT.jar* and *ij-core-2.0.0-SNAPSHOT.jar* from the *Fiji.app/jars/* directory (MacOSX users, {% include key content='Ctrl' %}+{% include key content='click' %} on the Fiji icon and select *Open Package Contents* and open the *jars/* directory you see there). After that, the Updater should magically repair itself.
 

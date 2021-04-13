@@ -43,7 +43,7 @@ The Sholl technique[2] is used to describe neuronal arbors. This plugin can perf
 Installation
 ------------
 
-The plugin is distributed with Fiji. It installs several commands under {% include bc content='Analysis|Sholl| ' color='white'%}. **As part of an active effort to [modernize ImageJ](/news/2015-12-22_-_The_road_to_Java_8) you need to [ subscribe](How_to_follow_a_3rd_party_update_site#Add_update_sites) to the Java 8 update site to access the latest plugin version** (this will also allow you to access the newest [ImageJ capabilities](2015-12-22_-_The_road_to_Java_8#Components_which_have_already_migrated)). To do so, you can either:
+The plugin is distributed with Fiji. It installs several commands under {% include bc path='Analysis|Sholl| ' color='white'%}. **As part of an active effort to [modernize ImageJ](/news/2015-12-22_-_The_road_to_Java_8) you need to [ subscribe](How_to_follow_a_3rd_party_update_site#Add_update_sites) to the Java 8 update site to access the latest plugin version** (this will also allow you to access the newest [ImageJ capabilities](2015-12-22_-_The_road_to_Java_8#Components_which_have_already_migrated)). To do so, you can either:
 
 -   [Download the latest Fiji release](Downloads). Newer releases come pre-bundled with Java 8, and are already subscribed to the [Java-8 update site](/users/Java-8).
 -   If you have downloaded Fiji while ago and want to keep your existing installation, you will have to download Java 8 and make your [Fiji installation aware of it](Troubleshooting#Checking_the_Java_version). Then subscribe to the [Java-8 update site](/users/Java-8).
@@ -53,13 +53,13 @@ Direct Analysis of Images
 
 In this mode (bitmap analysis), the plugin requires a [binary image or a segmented](#faq:threshold "wikilink") [grayscale image](#faq:image-types "wikilink") (2D or 3D) containing a single neuron.
 
-1.  Segment the neuronal arbor using {% include bc content='Image|Adjust|Threshold...' color='white'%} (shortcut: <span style="display:inline-block;">{% include key content='press\|Shift\|T' %} </span>).
+1.  Segment the neuronal arbor using {% include bc path='Image|Adjust|Threshold...' color='white'%} (shortcut: <span style="display:inline-block;">{% include key content='press\|Shift\|T' %} </span>).
 
   
-:N.B.: When using multichannel images, you will have to set the its display mode to *Grayscale* using {% include bc content='Image|Color|Channels Tool...' color='white'%} ({% include key content='press\|Shift\|Z' %}), because images displayed as *Composites* cannot be thresholded.
+:N.B.: When using multichannel images, you will have to set the its display mode to *Grayscale* using {% include bc path='Image|Color|Channels Tool...' color='white'%} ({% include key content='press\|Shift\|Z' %}), because images displayed as *Composites* cannot be thresholded.
 
 1.  Define the center of analysis using a valid [startup ROI](#Startup_ROI "wikilink").
-2.  Run {% include bc content='Analysis|Sholl|Sholl Analysis...' color='white'%}, adjusting the default [Parameters](#Parameters "wikilink") in the dialog prompt.
+2.  Run {% include bc path='Analysis|Sholl|Sholl Analysis...' color='white'%}, adjusting the default [Parameters](#Parameters "wikilink") in the dialog prompt.
 3.  Press *More » [Cf. Segmentation](#Cf._Segmentation "wikilink")* to visually inspect the two thresholded phases: *arbor* and *background*.
 4.  Problems? Read the [FAQs](#FAQ "wikilink").
 
@@ -79,30 +79,30 @@ Multi-point selection:A Multi-point selection (multi-point counter) in which the
 
 Press *More» Cf. Segmentation* to visually confirm which phase of the segmented image will be sampled. This command highlights foreground from background pixels and is particularly useful when analyzing black and white (binary) images or when using the *B&W* lookup table in the Threshold Widget (<span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷ Threshold...</span> {% include key content='press\|Shift\|T' %}). *Cf. Segmentation* allows you to ensure that you are measuring neuronal processes and not the interstitial spaces between them. Here is an example using an axonal arbor of a Drosophila olfactory neuron from the [DIADEM](http://diademchallenge.org) dataset[3]:
 
-<table><tbody><tr class="odd"><td><center><p><span style="display:inline-block;text-align:center;width:230px">Segmented image</span> <span style="display:inline-block;text-align:center;width:230px"><em>Cf. Segmentation output</em></span> <span style="display:inline-block;text-align:center;width:230px"><em>Intersections mask</em></span></p></center></td></tr><tr class="even"><td><center><figure><img src="/media/CfSegmentation.png" width="700" /></figure></center></td></tr><tr class="odd"><td><center><p><strong>Top row:</strong> Image properly segmented: Arbor is sampled. <strong>Bottom row:</strong> Aberrant segmentation (inverted image): Background is sampled.</p></center><p>Note the reversal of <em><a href="#Cf._Segmentation" title="wikilink">Cf. Segmentation</a> output</em> and how the <em><a href="#Output_Options" title="wikilink">intersections mask</a></em> no longer decorates the axonal processes but the interstitial spaces between them. The consequences of the phase inversion are twofold: 1) the program oversamples (cf. hue ramps on upper left of <em>Intersections mask</em>) and 2) the program detects artifacts induced by the edges of the image (cf. top-right and bottom-right corners of mask where intersections are sampled in the absence of real axons at those locations). Also, note that the initial black and white image would <em>look the same</em> under an inverted lookup table ({% include bc content='Image|Lookup Tables|Invert LUT' color='white'%}).</p></td></tr></tbody></table>
+<table><tbody><tr class="odd"><td><center><p><span style="display:inline-block;text-align:center;width:230px">Segmented image</span> <span style="display:inline-block;text-align:center;width:230px"><em>Cf. Segmentation output</em></span> <span style="display:inline-block;text-align:center;width:230px"><em>Intersections mask</em></span></p></center></td></tr><tr class="even"><td><center><figure><img src="/media/CfSegmentation.png" width="700" /></figure></center></td></tr><tr class="odd"><td><center><p><strong>Top row:</strong> Image properly segmented: Arbor is sampled. <strong>Bottom row:</strong> Aberrant segmentation (inverted image): Background is sampled.</p></center><p>Note the reversal of <em><a href="#Cf._Segmentation" title="wikilink">Cf. Segmentation</a> output</em> and how the <em><a href="#Output_Options" title="wikilink">intersections mask</a></em> no longer decorates the axonal processes but the interstitial spaces between them. The consequences of the phase inversion are twofold: 1) the program oversamples (cf. hue ramps on upper left of <em>Intersections mask</em>) and 2) the program detects artifacts induced by the edges of the image (cf. top-right and bottom-right corners of mask where intersections are sampled in the absence of real axons at those locations). Also, note that the initial black and white image would <em>look the same</em> under an inverted lookup table ({% include bc path='Image|Lookup Tables|Invert LUT' color='white'%}).</p></td></tr></tbody></table>
 
 {% include tip tip='With binary images, ""Sholl Analysis"" treats zero intensities as the background, independently of the image lookup table or the state of the ""Black background option"" in <span style="border-bottom:1px dotted #ccc;">Process▷ Binary▷ Options...</span> As with any other [ImageJ routine](https://imagej.net/docs/guide/146-29.html#infobox:blackBackground) , confusing background with foreground pixels will lead to aberrant results, including: 1) overestimation of branches and 2) artifacts at distances intersecting the boundaries of the image canvas.' %} <span id="Traces"></span>
 
 Analysis of Traced Cells
 ------------------------
 
-[400px\|right \|Main prompt (version 3.6.8), when input is traced data ({% include bc content='Analysis|Sholl|Sholl Analysis (Tracings)...' color='white'%})In](File_ShollTracingsPrompt.png) this mode, the plugin analyzes reconstructed arbors. This is particularly relevant for stainings that do not allow single-cell resolution. The plugin is macro recordable and [batch processing](#Batch_Processing "wikilink") is also possible.
+[400px\|right \|Main prompt (version 3.6.8), when input is traced data ({% include bc path='Analysis|Sholl|Sholl Analysis (Tracings)...' color='white'%})In](File_ShollTracingsPrompt.png) this mode, the plugin analyzes reconstructed arbors. This is particularly relevant for stainings that do not allow single-cell resolution. The plugin is macro recordable and [batch processing](#Batch_Processing "wikilink") is also possible.
 
-1.  Run {% include bc content='Analysis|Sholl|Sholl Analysis (Tracings)...' color='white'%} and specify a tracing file (a `.swc`, a `.eswc` or a [Simple Neurite Tracer](/plugins/snt) `.traces` file). If you want, you can also specify the image associated with the reconstruction. This will allow the plugin to use the image's metadata to determine spatial units and x,y,z spacing.
+1.  Run {% include bc path='Analysis|Sholl|Sholl Analysis (Tracings)...' color='white'%} and specify a tracing file (a `.swc`, a `.eswc` or a [Simple Neurite Tracer](/plugins/snt) `.traces` file). If you want, you can also specify the image associated with the reconstruction. This will allow the plugin to use the image's metadata to determine spatial units and x,y,z spacing.
 2.  Choose the center of analysis using the drop down menu in the main prompt listing SWC tags (*axon*, *dendrite*, *soma*, etc.). Note that if your tracings are not tagged you can do so in [Simple Neurite Tracer](/plugins/snt)
 3.  Adjust the default [Parameters](#Parameters "wikilink")
 4.  Problems? Read the [FAQs](#FAQ "wikilink")
 
 
 {% capture tip%}
-You can use {% include bc content='Sholl Analysis (Tracings)...' color='white'%} to analyze reconstructed data from any software capable of [SWC](http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html) export such as [Py3DN](https://sourceforge.net/projects/py3dn/) , [Neuromantic](http://www.reading.ac.uk/neuromantic/) , [NeuronStudio](http://research.mssm.edu/cnic/tools-ns.html) , [neuTube](http://www.neutracing.com) , or [Vaa3D](http://www.vaa3d.org/) ), not just [Simple Neurite Tracer](/plugins/snt). In addition, [L-Measure](http://cng.gmu.edu:8080/Lm/) , [NLMorphologyConverter](http://neuronland.org/NL.html) or [Neuron](http://www.neuron.yale.edu/neuron/) can also be used to convert several file formats (including proprietary formats from closed-source commercial software such as Neurolucida®, MicroBrightField, Inc.) into SWC.
+You can use {% include bc path='Sholl Analysis (Tracings)...' color='white'%} to analyze reconstructed data from any software capable of [SWC](http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html) export such as [Py3DN](https://sourceforge.net/projects/py3dn/) , [Neuromantic](http://www.reading.ac.uk/neuromantic/) , [NeuronStudio](http://research.mssm.edu/cnic/tools-ns.html) , [neuTube](http://www.neutracing.com) , or [Vaa3D](http://www.vaa3d.org/) ), not just [Simple Neurite Tracer](/plugins/snt). In addition, [L-Measure](http://cng.gmu.edu:8080/Lm/) , [NLMorphologyConverter](http://neuronland.org/NL.html) or [Neuron](http://www.neuron.yale.edu/neuron/) can also be used to convert several file formats (including proprietary formats from closed-source commercial software such as Neurolucida®, MicroBrightField, Inc.) into SWC.
 {% endcapture %}
 {% include tip id='external-traces' tip=tip %} <span id="Importing"></span>
 
 Analysis of Existing Profiles
 -----------------------------
 
-![Linear plot for CA1 cell [described above](/media/#CA1CellMask "wikilink"). Using the soma as center, image was sampled twice using the [Restrict analysis to hemicircle/hemisphere](#Restrict "wikilink") option in order to segregate apical from basal dendrites. For convenience, distances for basal branches were assigned negative values. For clarity, the binary image of the arbor was rotated, scaled and overlaid (in green) over the plot canvas. Note that it is also possible to restrict [curve fitting](#MethodsTable "wikilink") to a sub-range of distances once [data is collected](#Importing "wikilink").](BitmapSholl-CA1Compartment.png "fig:Linear plot for CA1 cell described above. Using the soma as center, image was sampled twice using the Restrict analysis to hemicircle/hemisphere option in order to segregate apical from basal dendrites. For convenience, distances for basal branches were assigned negative values. For clarity, the binary image of the arbor was rotated, scaled and overlaid (in green) over the plot canvas. Note that it is also possible to restrict curve fitting to a sub-range of distances once data is collected.") This feature is processed by {% include bc content='Analysis|Sholl|Sholl Analysis (Existing Profile)...' color='white'%}. This command can be used to re-analyze data (replot, modify fitting options, etc.) without having to access the initial image or tracing data. [Batch processing](#Batch_Analysis_of_Tabular_Data "wikilink") is also possible. Noteworthy:
+![Linear plot for CA1 cell [described above](/media/#CA1CellMask "wikilink"). Using the soma as center, image was sampled twice using the [Restrict analysis to hemicircle/hemisphere](#Restrict "wikilink") option in order to segregate apical from basal dendrites. For convenience, distances for basal branches were assigned negative values. For clarity, the binary image of the arbor was rotated, scaled and overlaid (in green) over the plot canvas. Note that it is also possible to restrict [curve fitting](#MethodsTable "wikilink") to a sub-range of distances once [data is collected](#Importing "wikilink").](BitmapSholl-CA1Compartment.png "fig:Linear plot for CA1 cell described above. Using the soma as center, image was sampled twice using the Restrict analysis to hemicircle/hemisphere option in order to segregate apical from basal dendrites. For convenience, distances for basal branches were assigned negative values. For clarity, the binary image of the arbor was rotated, scaled and overlaid (in green) over the plot canvas. Note that it is also possible to restrict curve fitting to a sub-range of distances once data is collected.") This feature is processed by {% include bc path='Analysis|Sholl|Sholl Analysis (Existing Profile)...' color='white'%}. This command can be used to re-analyze data (replot, modify fitting options, etc.) without having to access the initial image or tracing data. [Batch processing](#Batch_Analysis_of_Tabular_Data "wikilink") is also possible. Noteworthy:
 
 -   **Input data**: Any tab or comma delimited text file (.csv, .txt, .xls, .ods) can be used. You can drag & drop these files into the main ImageJ window, import data from the clipboard, or use data from any other table already opened by ImageJ.
 -   **Restricting input data**: To restrict measurements to a range of distances ([see related example](#CA1CellPlot "wikilink")), select the range of distances you want analyze. You can click the first row in the range, and then drag the mouse to the last row, or by holding down {% include key content='press\|Shift' %} while selecting the last row in the range. Then, in the prompt, activate the *Restrict analysis to selected rows only* checkbox.
@@ -111,7 +111,7 @@ Analysis of Existing Profiles
 Parameters
 ----------
 
-The majority of parameters is shared by all the Analysis commands in the{% include bc content='Analysis|Sholl| ' color='white'%} submenu. However, some settings are specific to the type of data used as input: A segmented image, a tracing, or a previously obtained profile. When analyzing images, input values take into account the scale information of the image (which can be set using the {% include bc content='Analyze|Set Scale...' color='white'%} or {% include bc content='Image|Properties...' color='white'%} ({% include key content='press\|Shift\|P' %}), the type of image (2D or 3D), and its [active ROI](#Startup_ROI "wikilink").
+The majority of parameters is shared by all the Analysis commands in the{% include bc path='Analysis|Sholl| ' color='white'%} submenu. However, some settings are specific to the type of data used as input: A segmented image, a tracing, or a previously obtained profile. When analyzing images, input values take into account the scale information of the image (which can be set using the {% include bc path='Analyze|Set Scale...' color='white'%} or {% include bc path='Image|Properties...' color='white'%} ({% include key content='press\|Shift\|P' %}), the type of image (2D or 3D), and its [active ROI](#Startup_ROI "wikilink").
 
 #### Definition of Shells
 
@@ -126,7 +126,7 @@ The majority of parameters is shared by all the Analysis commands in the{% inclu
 
 -   <span id="Restrict"></span>**Restrict analysis to hemicircle/hemisphere** <sup> </sup>This option is only available when an orthogonal radius has been created (by holding {% include key content='Shift' %} while using the <span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>). It can be used to limit the analysis to sub-compartments of the arbor.
 
-**N.B.** For horizontal lines, this option instructs the algorithm to measure intersections at sites equidistant from the center that have y-coordinates above/below the drawn line. For vertical lines, it instructs the plugin to measure intersections at sites equidistant from the center that have x-coordinates to the left/right of the drawn line. [320px\|right \|Main prompt (version 3.4.1), when input is a segmented image ({% include bc content='Analysis|Sholl|Sholl Analysis...' color='white'%})](File_BitmapSholl-Prompt_v3.png)
+**N.B.** For horizontal lines, this option instructs the algorithm to measure intersections at sites equidistant from the center that have y-coordinates above/below the drawn line. For vertical lines, it instructs the plugin to measure intersections at sites equidistant from the center that have x-coordinates to the left/right of the drawn line. [320px\|right \|Main prompt (version 3.4.1), when input is a segmented image ({% include bc path='Analysis|Sholl|Sholl Analysis...' color='white'%})](File_BitmapSholl-Prompt_v3.png)
 
 #### Multiple Samples/Noise Reduction
 
@@ -135,7 +135,7 @@ The majority of parameters is shared by all the Analysis commands in the{% inclu
   
 Visually, this option can be imagined as the "thickness" of the sampling circumference: e.g., for a radius of 100 pixels and a value of 3 *Samples per radius*, the final number of intersections would integrate the measurements sampled at distances 99, 100 and 101.
 
-[320px\|right \|Main prompt (version 3.4.3), when input is tabular data ({% include bc content='Analysis|Sholl|Sholl Analysis (Existing Profile)...' color='white'%})](File_BitmapSholl-TabularPrompt.png)
+[320px\|right \|Main prompt (version 3.4.3), when input is tabular data ({% include bc path='Analysis|Sholl|Sholl Analysis (Existing Profile)...' color='white'%})](File_BitmapSholl-TabularPrompt.png)
 
   
 Note that it would not make sense to increase the number of samples beyond the length (in pixels) of *Radius step size*. For this reason, this option is limited to a draconian (and arbitrary) maximum of 10 samples.
@@ -176,12 +176,12 @@ Please keep in mind that this is just a refinement feature, and you should not e
 
 #### Output Options
 
-<figure><img src="/media/ShollResultAsROIs.png" title="Intersection points and sampling shells can be retrieved as ROIs using {% include bc content='Image|Overlay|To ROI Manager' color='white'%}. Intersection points are placed at edges of detected clusters of foreground pixels, not their center." width="400" alt="Intersection points and sampling shells can be retrieved as ROIs using {% include bc content='Image|Overlay|To ROI Manager' color='white'%}. Intersection points are placed at edges of detected clusters of foreground pixels, not their center." /><figcaption aria-hidden="true">Intersection points and sampling shells can be retrieved as ROIs using {% include bc content='Image|Overlay|To ROI Manager' color='white'%}. Intersection points are placed at edges of detected clusters of foreground pixels, not their center.</figcaption></figure>
+<figure><img src="/media/ShollResultAsROIs.png" title="Intersection points and sampling shells can be retrieved as ROIs using {% include bc path='Image|Overlay|To ROI Manager' color='white'%}. Intersection points are placed at edges of detected clusters of foreground pixels, not their center." width="400" alt="Intersection points and sampling shells can be retrieved as ROIs using {% include bc path='Image|Overlay|To ROI Manager' color='white'%}. Intersection points are placed at edges of detected clusters of foreground pixels, not their center." /><figcaption aria-hidden="true">Intersection points and sampling shells can be retrieved as ROIs using {% include bc path='Image|Overlay|To ROI Manager' color='white'%}. Intersection points are placed at edges of detected clusters of foreground pixels, not their center.</figcaption></figure>
 
--   **Create intersections mask** <sup> </sup>If checked, a 16/32–bit maximum intensity projection of the analyzed image is generated in which the measured arbor is painted according to its Sholl profile. The type of data (*Raw*, i.e., sampled or *Fitted*) is displayed in the image subtitle and can be specified in {% include bc content='Analysis|Sholl|Metrics & Options...' color='white'%} or using the *Options...* command in the *More»* drop-down menu.  
-    NB: The default Lookup Table (LUT) used by the mask can be changed using {% include bc content='Image|Lookup Tables|' color='white'%}. The background color \[gray level: 0 (black) to 255 (white)\] can also be set in {% include bc content='Metrics & Options...' color='white'%}, or at any later point using {% include bc content='Image|Color|Edit Lut...' color='white'%} WYSIWYG versions (RGB images) of these masks can be otained using by pressing {% include key content='press\|Shift\|F' %} ({% include bc content='Image|Overlay|Flatten' color='white'%}) or by running {% include bc content='Analyze|Tools|Calibration Bar...' color='white'%}
+-   **Create intersections mask** <sup> </sup>If checked, a 16/32–bit maximum intensity projection of the analyzed image is generated in which the measured arbor is painted according to its Sholl profile. The type of data (*Raw*, i.e., sampled or *Fitted*) is displayed in the image subtitle and can be specified in {% include bc path='Analysis|Sholl|Metrics & Options...' color='white'%} or using the *Options...* command in the *More»* drop-down menu.  
+    NB: The default Lookup Table (LUT) used by the mask can be changed using {% include bc path='Image|Lookup Tables|' color='white'%}. The background color \[gray level: 0 (black) to 255 (white)\] can also be set in {% include bc path='Metrics & Options...' color='white'%}, or at any later point using {% include bc path='Image|Color|Edit Lut...' color='white'%} WYSIWYG versions (RGB images) of these masks can be otained using by pressing {% include key content='press\|Shift\|F' %} ({% include bc path='Image|Overlay|Flatten' color='white'%}) or by running {% include bc path='Analyze|Tools|Calibration Bar...' color='white'%}
 -   **Overlay sampling shells and intersection points'' (2D images only)**'' <sup> </sup>If checked, two sets of ROIS are added to the image overlay: 1) concentric shells matching sampled distances (circular ROIs or composite ROIs when using hemicircles); and 2) Multipoint ROIs at intersection sites between shells and clusters of foreground pixels.
--   **Save results to** <sup> </sup> If checked, all the results (with the exception of the *[Sholl Table](#Metrics "wikilink")*) are saved to the specified directory. These include: 1) Sholl plots (saved as PNG images), 2) A table containing detailed data and 3) The Sholl mask. Files are named after the image filename and analysis method. Saving options can be specified in {% include bc content='Analysis|Sholl|Metrics & Options...' color='white'%} (*Options...* command in the *More»* drop-down menu).
+-   **Save results to** <sup> </sup> If checked, all the results (with the exception of the *[Sholl Table](#Metrics "wikilink")*) are saved to the specified directory. These include: 1) Sholl plots (saved as PNG images), 2) A table containing detailed data and 3) The Sholl mask. Files are named after the image filename and analysis method. Saving options can be specified in {% include bc path='Analysis|Sholl|Metrics & Options...' color='white'%} (*Options...* command in the *More»* drop-down menu).
     -   **Do not display saved files** If checked, saved files are directly saved to disk and are not displayed. Activate this option when [batch processing](#Batch_Processing "wikilink") files.
 
 {% include tip tip='In the dialog prompts of ""Sholl Analysis"", bold headings are clickable URLs pointing to the respective sections of this manual. In addition, relevant tooltips are displayed in the ImageJ status bar when specifying key options.' %}
@@ -195,7 +195,7 @@ Sholl Plots
 
 </center>
 
-***Linear*, *Linear-norm*, *Semi-log* and *Log-log* profiles for the ddaC cell ({% include bc content='File|Open Samples|ddaC Neuron' color='white'%}), version 3.0**. Most of the retrieved [metrics](#Metrics_based_on_fitted_data "wikilink") are automatically highlighted by the plugin. *Linear profile*: [Mean value](#MeanValueOfFunction "wikilink") (horizontal grid line) and [Centroid](#Centroid "wikilink") (colored mark). Logarithmic profiles: The [Sholl regression coefficient](#ShollDecay "wikilink") (also known as Sholl decay) can be retrieved by linear regression using either the full range of data (blue line) or data within percentiles 10–90 (red line). For this particular cell type, the Semi-log method is more [informative](#Dratio "wikilink") when compared to the Log-log method.
+***Linear*, *Linear-norm*, *Semi-log* and *Log-log* profiles for the ddaC cell ({% include bc path='File|Open Samples|ddaC Neuron' color='white'%}), version 3.0**. Most of the retrieved [metrics](#Metrics_based_on_fitted_data "wikilink") are automatically highlighted by the plugin. *Linear profile*: [Mean value](#MeanValueOfFunction "wikilink") (horizontal grid line) and [Centroid](#Centroid "wikilink") (colored mark). Logarithmic profiles: The [Sholl regression coefficient](#ShollDecay "wikilink") (also known as Sholl decay) can be retrieved by linear regression using either the full range of data (blue line) or data within percentiles 10–90 (red line). For this particular cell type, the Semi-log method is more [informative](#Dratio "wikilink") when compared to the Log-log method.
 
 <span id="MethodsTable"></span>
 
@@ -224,7 +224,7 @@ Outputs a <i>log(N/S) vs log(Distance)</i> profile. Data is also fitted to a str
 Metrics
 -------
 
-Morphometric descriptors and other properties of the arbor are printed to a dedicated table named *Sholl Results*. Output is fully customizable using {% include bc content='Analysis|Sholl|Metrics & Options...' color='white'%} or using the *Options...* command in the *More»* drop-down menu. The first columns log analysis parameters: *Image Directory*, *filename* and *voxel unit*, *Channel*, *Lower* and *Upper Threshold levels*, *X,Y* (in pixels) and *Z* (slice number) coordinates of center of analysis, *Starting* and *Ending radius*, *Radius step*, *Number of Samples per Radius*, etc. Other parameters are described below.
+Morphometric descriptors and other properties of the arbor are printed to a dedicated table named *Sholl Results*. Output is fully customizable using {% include bc path='Analysis|Sholl|Metrics & Options...' color='white'%} or using the *Options...* command in the *More»* drop-down menu. The first columns log analysis parameters: *Image Directory*, *filename* and *voxel unit*, *Channel*, *Lower* and *Upper Threshold levels*, *X,Y* (in pixels) and *Z* (slice number) coordinates of center of analysis, *Starting* and *Ending radius*, *Radius step*, *Number of Samples per Radius*, etc. Other parameters are described below.
 
 ![100%\|center\|Descriptors and metrics are listed in the Sholl Table (v2.4)](/media/BitmapSholl-Table.png "100%|center|Descriptors and metrics are listed in the Sholl Table (v2.4)")
 
@@ -382,7 +382,7 @@ Data analysis tools:
 
 **{% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#fit-polynomial' label='Fit Polynomial' %}:** Fits a polynomial of any degree to sampled data. Features an heuristic algorithm for guessing a polynomial "best fit". Expands the built-in repertoire of polynomial fits up to 50<sup>th</sup> order functions.
 
-**{% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#create-boxplot' label='Create Boxplot' %}:** Allows direct comparison of metrics between groups or sets of data (specially useful when tagging images with the *Comment* field in {% include bc content='Analysis|Sholl|Metrics & Options...' color='white'%})
+**{% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#create-boxplot' label='Create Boxplot' %}:** Allows direct comparison of metrics between groups or sets of data (specially useful when tagging images with the *Comment* field in {% include bc path='Analysis|Sholl|Metrics & Options...' color='white'%})
 
 **{% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#interactive-plotting' label='Interactive Plotting' %}:** Whole-purpose routine that plots data from imported spreadsheets.
 
@@ -504,7 +504,7 @@ That's it. Use the Macro Recorder to generate the customizations you will need b
 
 ### Batch Analysis of Tabular Data
 
-If you already have [obtained profiles](#Importing "wikilink") (either from previous runs or from [traced cells](#Analysis_of_Traced_Cells "wikilink")) and would like to extract new [metrics](#Metrics "wikilink") from such data, you can use the {% include bc content='Analysis|Sholl|Sholl Analysis (Existing Profile)...' color='white'%}. Here is an example macro that runs the plugin over a folder of .csv files containing Sholl profiles produced by [Simple Neurite Tracer](/plugins/simple-neurite-tracer/sholl-analysis):
+If you already have [obtained profiles](#Importing "wikilink") (either from previous runs or from [traced cells](#Analysis_of_Traced_Cells "wikilink")) and would like to extract new [metrics](#Metrics "wikilink") from such data, you can use the {% include bc path='Analysis|Sholl|Sholl Analysis (Existing Profile)...' color='white'%}. Here is an example macro that runs the plugin over a folder of .csv files containing Sholl profiles produced by [Simple Neurite Tracer](/plugins/simple-neurite-tracer/sholl-analysis):
 
     distanceCol = "Radius";     // Column in .csv file listing distances
     intersecCol = "Inters.";    // Column in .csv file listing intersections
@@ -541,16 +541,16 @@ Note that the IJM built-in [call("class.method")](http://imagej.nih.gov/ij/devel
 Auxiliary Commands
 ------------------
 
-{% include bc content='Analyze|Sholl|Combine Sholl Profiles...' color='white'%}<img src="/media/CombineShollProfiles.png" title="fig:Screenshot of 15 files being processed by {% include bc content='Analyze|Sholl|Combine Sholl Profiles...' color='white'%} (v3.6.12)" width="400" alt="Screenshot of 15 files being processed by {% include bc content='Analyze|Sholl|Combine Sholl Profiles...' color='white'%} (v3.6.12)" />  
+{% include bc path='Analyze|Sholl|Combine Sholl Profiles...' color='white'%}<img src="/media/CombineShollProfiles.png" title="fig:Screenshot of 15 files being processed by {% include bc path='Analyze|Sholl|Combine Sholl Profiles...' color='white'%} (v3.6.12)" width="400" alt="Screenshot of 15 files being processed by {% include bc path='Analyze|Sholl|Combine Sholl Profiles...' color='white'%} (v3.6.12)" />  
 
 Analysis tool that 1) Merges individual Sholl profiles into a single table and 2) Obtains the average profile (with standard deviation) of a group of cells.
 
-{% include bc content='File|Open Samples|ddaC Neuron' color='white'%}  
-Opens a sample image of a Drosophila class IV ddaC sensory neuron in which dendrites have been previously segmented (2D arbor). Use it to get acquainted with the plugin. Run {% include bc content='Image|Show Info...' color='white'%} (shortcut: {% include key content='press\|I' %} ) to know more about this cell type.
+{% include bc path='File|Open Samples|ddaC Neuron' color='white'%}  
+Opens a sample image of a Drosophila class IV ddaC sensory neuron in which dendrites have been previously segmented (2D arbor). Use it to get acquainted with the plugin. Run {% include bc path='Image|Show Info...' color='white'%} (shortcut: {% include key content='press\|I' %} ) to know more about this cell type.
 
 <!-- -->
 
-{% include bc content='Help|About Plugins|About Sholl Analysis...' color='white'%}  
+{% include bc path='Help|About Plugins|About Sholl Analysis...' color='white'%}  
 Retrieves information about the plugin version and provides links to several resources including its source code {% include github org='tferr' repo='ASA' label='repository' %} and its [API documentation](http://tferr.github.io/ASA/apidocs/). It is also accessible through the *More »* dropdown menu.
 
 FAQ
@@ -666,7 +666,7 @@ Around 20 seconds. This is the time it will take you to [create an account](Help
 <dl>
 <dd>
 
-The plugin does not parse RGB images, but will process any grayscale image (8/16-bit), including multi-channel (composite) images. This is intentional: RGB images are inflexible and images of fluorescence-labeled cells are typically non-RGB images. As explained in the [ImageJ User Guide](https://imagej.net/docs/guide/), RGB images can be converted using {% include bc content='Image|Color|Channels Tool...' color='white'%} or {% include bc content='Image|Type|' color='white'%} commands.
+The plugin does not parse RGB images, but will process any grayscale image (8/16-bit), including multi-channel (composite) images. This is intentional: RGB images are inflexible and images of fluorescence-labeled cells are typically non-RGB images. As explained in the [ImageJ User Guide](https://imagej.net/docs/guide/), RGB images can be converted using {% include bc path='Image|Color|Channels Tool...' color='white'%} or {% include bc path='Image|Type|' color='white'%} commands.
 
 </dd>
 </dl>
@@ -739,7 +739,7 @@ Select the table, then choose <span style="border-bottom:1px dotted #ccc;">File�
 <dl>
 <dd>
 
-Mostly, using {% include bc content='Analysis|Sholl|Metrics & Options' color='white'%} (also listed in the *More » Options...* shortcut), including the number of decimal places reported by the *Sholl Results* table or the usage of scientific notation. To resize plots, use the *More »* dropdown menu in the *Options* dialog.
+Mostly, using {% include bc path='Analysis|Sholl|Metrics & Options' color='white'%} (also listed in the *More » Options...* shortcut), including the number of decimal places reported by the *Sholl Results* table or the usage of scientific notation. To resize plots, use the *More »* dropdown menu in the *Options* dialog.
 
 </dd>
 </dl>

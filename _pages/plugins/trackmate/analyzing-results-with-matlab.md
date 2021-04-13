@@ -30,7 +30,7 @@ These tools take the form of several, hopefully well documented [MATLAB](MATLAB)
 
 If you did not do it already, there is a configuration step to take in [MATLAB](MATLAB), so as to make [MATLAB](MATLAB) aware of these files. You need to add the *scripts* folder to the [MATLAB](MATLAB) path:
 
-In [MATLAB](MATLAB), select in the menu {% include bc content='File | Set Path...'%} and add the *scripts* folder there (on Mac, the file chooser doesn't let you choose directories within .app packages, so you have to use the [MATLAB](MATLAB) command `addpath('/Applications/Fiji.app/scripts')` or whatever folder works for you) .
+In [MATLAB](MATLAB), select in the menu {% include bc path='File | Set Path...'%} and add the *scripts* folder there (on Mac, the file chooser doesn't let you choose directories within .app packages, so you have to use the [MATLAB](MATLAB) command `addpath('/Applications/Fiji.app/scripts')` or whatever folder works for you) .
 
 Importing track files
 ---------------------

@@ -392,7 +392,7 @@ To compile it, simply run
 
     sh Build.sh plugins/JNI_Example.jar
 
-That will result in the two files *plugins/JNI\_Example.jar* and *lib/<platform>/JNI\_Example.<extension>* and a new menu item {% include bc content='Plugins | JNI | JNI Example'%}.
+That will result in the two files *plugins/JNI\_Example.jar* and *lib/<platform>/JNI\_Example.<extension>* and a new menu item {% include bc path='Plugins | JNI | JNI Example'%}.
 
 It does not do terribly useful things as its primary purpose is to show how things are done in a straight-forward manner.
 

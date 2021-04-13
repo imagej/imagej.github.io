@@ -21,7 +21,7 @@ The test image: Development of a *C.elegans* embryo
 
 Download the target image here: [Celegans-5pc-17timepoints.tif (94 MB)](http://samples.fiji.sc/Celegans-5pc-17timepoints.tif).
 
-Open it in Fiji. You will get a stack, made of 41 Z-slices over 17 time-points, each image being 240 x 295. As you can see in {% include bc content='Image | Properties'%} ({% include key content='Ctrl' %}+{% include key content='Shift' %}+{% include key content='P' %}), it has a spatial and temporal calibration.
+Open it in Fiji. You will get a stack, made of 41 Z-slices over 17 time-points, each image being 240 x 295. As you can see in {% include bc path='Image | Properties'%} ({% include key content='Ctrl' %}+{% include key content='Shift' %}+{% include key content='P' %}), it has a spatial and temporal calibration.
 
 The context if the following: We used a *C.elegans* strain named [AZ212](http://www.wormbase.org/db/gene/strain?name=AZ212;class=Strain) that has its histone H2B coupled to the eGFP. The nuclei can therefore be seen in the 488 nm excitation fluorescence channel. The movie started just after the first cell division, so you can see on the first frame two blob-like spots in the center of the egg. On the top-right part of the egg, there is also two smaller spots that are the polar bodies. One will remain at a fixed place, the other one will be pushed around as the cells divide. The movie has 17 time-points that span the first 34 minutes of the *C.elegans* embryo development.
 
@@ -36,7 +36,7 @@ Doing a fast but very bad segmentation
 
 ![](/media/TrackMate DownsampledLogSegmenter.png "TrackMate_DownsampledLogSegmenter.png")
 
-Launch TrackMate ({% include bc content='Plugins | Tracking | TrackMate'%}) and select the *C.elegans* stack as a target. Check on the first panel that all the spatial calibration is OK. The pixel size is about 200 nm in XY, 1 μm in Z, and each frame is separated by 2 minutes.
+Launch TrackMate ({% include bc path='Plugins | Tracking | TrackMate'%}) and select the *C.elegans* stack as a target. Check on the first panel that all the spatial calibration is OK. The pixel size is about 200 nm in XY, 1 μm in Z, and each frame is separated by 2 minutes.
 
 Select the **Downsampled LoG detector**. This choice actually makes sense: the nuclei are about 8 μm in diameter, and with a sampling of 200 nm, that makes 40 pixels wide nuclei. It is already advantageous to use the down-sampled version of the LoG segmenter above 20 pixels: segmenting 3D data over time takes already quite some time. Having to track large objects allow to downsample them, making the data to iterate over smaller, which speed up the process.
 

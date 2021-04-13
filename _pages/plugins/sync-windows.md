@@ -10,14 +10,14 @@ description: test description
 Installation
 ------------
 
-**ImageJ**: Copy the Sync\_Win.jar file from https://imagej.net/plugins/download/jars/Sync_Win.jar into the ImageJ/Plugins folder and either restart ImageJ or run the {% include bc content='Help | Update Menus'%} command. After this two new commands should appear in {% include bc content='Analyze | Tools'%}: **Sync Windows** and **Sync Measure 3D**.
+**ImageJ**: Copy the Sync\_Win.jar file from https://imagej.net/plugins/download/jars/Sync_Win.jar into the ImageJ/Plugins folder and either restart ImageJ or run the {% include bc path='Help | Update Menus'%} command. After this two new commands should appear in {% include bc path='Analyze | Tools'%}: **Sync Windows** and **Sync Measure 3D**.
 
 **Fiji**: this plugin is part of the Fiji distribution, there is no need to download it.
 
 Use
 ---
 
-The command {% include bc content='Analyze | Tools | Sync Windows'%} opens a dialog that allows to choose what features should be synchronized:
+The command {% include bc path='Analyze | Tools | Sync Windows'%} opens a dialog that allows to choose what features should be synchronized:
 
 -   Sync Cursor
 -   Sync Channels

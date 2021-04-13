@@ -12,9 +12,9 @@ Setting up
 
 ![](/media/TrackMate ManualTrackingEntryPoint.png)
 
-There is not much to do. We will use the same, simple dataset that for [Getting started with TrackMate](/plugins/trackmate/getting-started). You can find it in {% include bc content='File | Open Samples | Tracks for TrackMate (807K)'%}.
+There is not much to do. We will use the same, simple dataset that for [Getting started with TrackMate](/plugins/trackmate/getting-started). You can find it in {% include bc path='File | Open Samples | Tracks for TrackMate (807K)'%}.
 
-As for the TrackMate plugin, you could start it up normally, selecting {% include bc content='Plugins | Tracking | TrackMate'%} in the menu, and then when offered to select a detector and a tracker, always pick the manual one. That would work well, but we offered another entry point that has a simpler GUI dedicated to manual tracking. Pick the {% include bc content='Plugins | Tracking | Manual tracking with TrackMate'%} menu item.
+As for the TrackMate plugin, you could start it up normally, selecting {% include bc path='Plugins | Tracking | TrackMate'%} in the menu, and then when offered to select a detector and a tracker, always pick the manual one. That would work well, but we offered another entry point that has a simpler GUI dedicated to manual tracking. Pick the {% include bc path='Plugins | Tracking | Manual tracking with TrackMate'%} menu item.
 
 You should should get the layout pictured on the right. Notice that we are already displaying the *Display options* panel of the classic GUI, and that the *previous* button is disabled at the bottom. Notice also that the color scales for both spot and track features display a dummy range.
 

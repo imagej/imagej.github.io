@@ -27,7 +27,7 @@ description: test description
 
 To install them, enable the ImageScience update site:
 
--   [{% include bc content='Help|Update...'%}](/update-sites)
+-   [{% include bc path='Help|Update...'%}](/update-sites)
 -   Click *Manage update sites*
 -   Check *ImageScience*
 -   Click *Close*

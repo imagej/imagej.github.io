@@ -10,7 +10,7 @@ description: test description
 
 #### Starting the PlugIn
 
-When starting the plugin from the {% include bc content='Plugins|Segmentation|Simple Neurite Tracer'%} menu option, you should be presented with a dialog like this (outdated snapshot): ![](/media/Snt-initial-dialog.png "fig:Snt-initial-dialog.png")
+When starting the plugin from the {% include bc path='Plugins|Segmentation|Simple Neurite Tracer'%} menu option, you should be presented with a dialog like this (outdated snapshot): ![](/media/Snt-initial-dialog.png "fig:Snt-initial-dialog.png")
 
 The three pane view gives you views of the image stack through XZ and ZY planes as well as the standard XY view. First time users may find the three pane view confusing. However, it makes it much easier to pick out points in the stack in the Z direction.
 

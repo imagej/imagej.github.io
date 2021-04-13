@@ -16,7 +16,7 @@ This plugin is based on a reimplementation of Kolmogorov's [maxflow v3.01](http:
 
 Yuri Boykov and Vladimir Kolmogorov, <b>An Experimental Comparison of Min-Cut/Max-Flow Algorithms for Energy Minimization in Computer Vision.</b>, In IEEE Transactions on Pattern Analysis and Machine Intelligence, September 2004.
 
-The plugin can be found under {% include bc content='Plugins|Segmentation|Graph Cut'%}.
+The plugin can be found under {% include bc path='Plugins|Segmentation|Graph Cut'%}.
 
 Settings
 --------

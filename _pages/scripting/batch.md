@@ -24,17 +24,17 @@ General workflow
     -   These images do not need to be open in ImageJ already—they will be read in as part of the batch process.
     -   See below for details.
 
-Option 1 - {% include bc content='Process | Batch | Macro...'%}
+Option 1 - {% include bc path='Process | Batch | Macro...'%}
 ==================================================================
 
-The fastest way to start batch conversion is via the [{% include bc content='Process | Batch | Macro...'%}](https://imagej.net/docs/guide/146-29.html#toc-Subsubsection-29.12.3) command. This will open a dialog (below) that will allow you to specify an input and output directory. You can select an output file format, and then use the `Add Macro Code` drop-down to generate a macro with the desired functionality.
+The fastest way to start batch conversion is via the [{% include bc path='Process | Batch | Macro...'%}](https://imagej.net/docs/guide/146-29.html#toc-Subsubsection-29.12.3) command. This will open a dialog (below) that will allow you to specify an input and output directory. You can select an output file format, and then use the `Add Macro Code` drop-down to generate a macro with the desired functionality.
 
 ![](/media/BatchProcess.png "BatchProcess.png")
 
 Option 2 - Script Template
 ==========================
 
-Open the [script editor](/scripting/script-editor), select {% include bc content='Templates | ImageJ 1.x | Batch | Process Folder (IJ1 Macro)'%}. This will generate the following boilerplate:
+Open the [script editor](/scripting/script-editor), select {% include bc path='Templates | ImageJ 1.x | Batch | Process Folder (IJ1 Macro)'%}. This will generate the following boilerplate:
 
 <img src="/media/Process folder ij1.png" width="762"/>
 
@@ -48,7 +48,7 @@ Option 3 - Batch Processing with Script Parameters
 See also
 ========
 
--   [{% include bc content='Process | Batch'%}](https://imagej.net/docs/guide/146-29.html#toc-Subsection-29.12) submenu.
+-   [{% include bc path='Process | Batch'%}](https://imagej.net/docs/guide/146-29.html#toc-Subsection-29.12) submenu.
 -   [Scripting](/scripting) documentation and tutorials.
 -   [How to apply a common operation to a complete directory](How_to_apply_a_common_operation_to_a_complete_directory)
 -   [Assign your own keyboard shortcuts](Keyboard_shortcuts#Creating_your_own_keyboard_shortcuts)

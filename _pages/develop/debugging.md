@@ -319,7 +319,7 @@ There are a couple of ways to test for such EDT violations, see [this blog post 
 Debugging Java3D issues
 =======================
 
-When Java3D does not work, the first order of business is to use {% include bc content='Plugins | Utilities | Debugging | Test Java3D'%}. If this shows a rotating cube, but the [3D Viewer](/plugins/3d-viewer) does not work, please click on {% include bc content='Help | Java3D Properties...'%} in the [3D Viewer](/plugins/3d-viewer)'s menu bar.
+When Java3D does not work, the first order of business is to use {% include bc path='Plugins | Utilities | Debugging | Test Java3D'%}. If this shows a rotating cube, but the [3D Viewer](/plugins/3d-viewer) does not work, please click on {% include bc path='Help | Java3D Properties...'%} in the [3D Viewer](/plugins/3d-viewer)'s menu bar.
 
 Command line debugging
 ----------------------
@@ -358,7 +358,7 @@ Windows-specific stuff
 
 On Windows, you can choose between OpenGL and Direct3D by passing *-Dj3d.rend=ogl* or *-Dj3d.rend=d3d*, respectively.
 
-Further, some setups require enough RAM to be reserved, so you might need to pass an option like *--mem=1200m* (make sure that you have enough RAM free before starting ImageJ that way, though!). If it turns out that memory was the issue, you can make the setting permanent by clicking ImageJ's {% include bc content='Edit | Options | Memory & Threads...'%} menu entry.
+Further, some setups require enough RAM to be reserved, so you might need to pass an option like *--mem=1200m* (make sure that you have enough RAM free before starting ImageJ that way, though!). If it turns out that memory was the issue, you can make the setting permanent by clicking ImageJ's {% include bc path='Edit | Options | Memory & Threads...'%} menu entry.
 
 More Java 3D properties
 -----------------------

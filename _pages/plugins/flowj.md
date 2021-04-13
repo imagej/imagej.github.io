@@ -23,6 +23,6 @@ Since FlowJ is maintained inside Fiji, the following changes have been made:
 Menu path
 ---------
 
-{% include bc content='Analyze | Optic Flow | FlowJ'%}
+{% include bc path='Analyze | Optic Flow | FlowJ'%}
 
  

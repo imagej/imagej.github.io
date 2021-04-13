@@ -13,9 +13,9 @@ description: test description
 
 **Make Screencast** is a [Beanshell](Beanshell_Scripting) script to record a screencast in {% include wikipedia title='Ogg' text='Ogg'%} or {% include wikipedia title='QuickTime File Format' text='Quicktime'%} video formats.
 
-Access it via {% include bc content='File | Make Screencast'%}.
+Access it via {% include bc path='File | Make Screencast'%}.
 
-Stop recording the screencast via {% include bc content='File | Stop Screencast'%}.
+Stop recording the screencast via {% include bc path='File | Stop Screencast'%}.
 
 **Note**: This script requires the open source video player [VLC](http://www.videolan.org/vlc/index.html) to be installed. When started, it tries to autodetect VLC on your system, and asks to install it if it fails to detect it.
 

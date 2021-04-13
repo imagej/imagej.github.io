@@ -11,7 +11,7 @@ description: test description
 Usage
 -----
 
-The plugin is located in {% include bc content='Process | Image Expression Parser'%}.
+The plugin is located in {% include bc path='Process | Image Expression Parser'%}.
 
 This plugin parses arbitrary mathematical expressions and compute results using images as variables. For instance:
 

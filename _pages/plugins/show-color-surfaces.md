@@ -22,6 +22,6 @@ The *Show Color Surfaces* command calculates surfaces embedded into the [3D View
 Menu path
 ---------
 
-{% include bc content='Plugins | Process | Show Color Surfaces'%}
+{% include bc path='Plugins | Process | Show Color Surfaces'%}
 
 

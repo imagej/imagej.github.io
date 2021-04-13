@@ -43,11 +43,11 @@ If the data is a 3D stack, then collapse the data to 2D space using a maximum, s
 
 ### Step 1: Find Edges
 
-If the circular objects are solid rather than hollow, take the derivative of the image by running: {% include bc content='Process | Find Edges'%}. This will preserve just the perimeter of each object.
+If the circular objects are solid rather than hollow, take the derivative of the image by running: {% include bc path='Process | Find Edges'%}. This will preserve just the perimeter of each object.
 
 ### Step 2: Threshold
 
-The algorithm does not weight the transform based on the intensity of the pixels, as this would result in bright, non-circular objects getting a very high score. Therefore, any pixel with an intensity &gt; 0 is given one vote per transform. This means that any pixel you do not want to be part of the transform needs to be set to zero, which is best done by thresholding the image and creating a mask by running: {% include bc content='Image | Adjust | Threshold'%}. After choosing the right threshold for the data press "Apply" to create a mask with an inverting LUT (0 is white, 255 is black). The LUT can be changed back to a normal gray-scale by going to {% include bc content='Image | Lookup Tables | Grays'%}.
+The algorithm does not weight the transform based on the intensity of the pixels, as this would result in bright, non-circular objects getting a very high score. Therefore, any pixel with an intensity &gt; 0 is given one vote per transform. This means that any pixel you do not want to be part of the transform needs to be set to zero, which is best done by thresholding the image and creating a mask by running: {% include bc path='Image | Adjust | Threshold'%}. After choosing the right threshold for the data press "Apply" to create a mask with an inverting LUT (0 is white, 255 is black). The LUT can be changed back to a normal gray-scale by going to {% include bc path='Image | Lookup Tables | Grays'%}.
 
 ### Step 3: Run the Hough Transform
 
@@ -74,7 +74,7 @@ The GUI has two available modes, "Easy" and "Advanced."
 
 #### *Easy Mode*
 
-This mode uses the minimal number of user input values necessary to run the transform. The remaining parameters are all defaulted to the most conservative values, such that all circles matching the criteria are found. To retrieve the default values, run the GUI in easy mode with the recorder turned on: {% include bc content='Plugins | Macros | Record...'%} This will return the value for every argument used in the search.
+This mode uses the minimal number of user input values necessary to run the transform. The remaining parameters are all defaulted to the most conservative values, such that all circles matching the criteria are found. To retrieve the default values, run the GUI in easy mode with the recorder turned on: {% include bc path='Plugins | Macros | Record...'%} This will return the value for every argument used in the search.
 
 #### *Advanced Mode*
 
@@ -228,7 +228,7 @@ Installing the Plugin
 
 The Hough Circle Transform plugin is part of the [UCB Vision Sciences](UCB_Vision_Sciences) library. To install it, you just need to [ add](How_to_follow_a_3rd_party_update_site#Add_update_sites) the UCB Vision Sciences update site:
 
-1\) Select {% include bc content='Help | Update...'%} from the Fiji menu to start the updater.
+1\) Select {% include bc path='Help | Update...'%} from the Fiji menu to start the updater.
 
 2\) Click on *Manage update sites*. This brings up a dialog where you can activate additional update sites.
 
@@ -236,7 +236,7 @@ The Hough Circle Transform plugin is part of the [UCB Vision Sciences](UCB_Visio
 
 4\) Click *Apply changes* and restart Fiji.
 
-You should now find the plugin under the sub-menu {% include bc content='Plugins | UCB Vision Sciences | Hough Circle Transform'%}.
+You should now find the plugin under the sub-menu {% include bc path='Plugins | UCB Vision Sciences | Hough Circle Transform'%}.
 
 NOTE: Hough Circle Transform is only one of the plugins included in the [UCB Vision Sciences](UCB_Vision_Sciences) suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
 

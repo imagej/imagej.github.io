@@ -11,7 +11,7 @@ In BigStitcher we offer deconvolution using a multi-view variant of the iterativ
 
 **TODO: nice deconvolved image**
 
-The deconvolution can be started by selecting the views you wish to deconvolve and selecting {% include bc content='Processing|(MultiView) Deconvolution'%} in the main menu in **MultiView mode**.
+The deconvolution can be started by selecting the views you wish to deconvolve and selecting {% include bc path='Processing|(MultiView) Deconvolution'%} in the main menu in **MultiView mode**.
 
 Usage
 -----

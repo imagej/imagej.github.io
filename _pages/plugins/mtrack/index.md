@@ -29,7 +29,7 @@ Usage
 
 ### Module 1 - Microtubule Detection & Tracking
 
-A typical dataset consists of a single two-dimensional (2d) image of the non-dynamic microtubule seeds followed by a 2d time-lapse of the dynamically growing microtubules. The file format can be any format readable by Fiji/Bioformats (.tif, .nd2, ... ). To run the tracker select {% include bc content='Plugins|MTrack|Microtubule Detection and Tracking'%}
+A typical dataset consists of a single two-dimensional (2d) image of the non-dynamic microtubule seeds followed by a 2d time-lapse of the dynamically growing microtubules. The file format can be any format readable by Fiji/Bioformats (.tif, .nd2, ... ). To run the tracker select {% include bc path='Plugins|MTrack|Microtubule Detection and Tracking'%}
 
 The welcome panel will open.
 
@@ -91,7 +91,7 @@ Yellow ellipses mark seeds to be tracked, red ellipses mark seeds which won't be
 
 Microtubules show a dynamic behavior known as dynamic instability, which is characterized by four parameters (1) polymerization velocity (vp, nm/sec), (2) depolymerization velocity (vd, nm/sec), (3) catastrophe frequency (fcat, sec-1), and (4) rescue frequency (fres, sec-1). Module 2 derives these dynamic parameters by fitting models using RANSAC. (Read more on [MTrack-RANSAC models](/plugins/mtrack-ransac-models)).
 
-If not forwarded by Module 1, Module 2 can be selected by {% include bc content='Plugins|MTrack|Microtubule Dynamics Analyzer'%}
+If not forwarded by Module 1, Module 2 can be selected by {% include bc path='Plugins|MTrack|Microtubule Dynamics Analyzer'%}
 
 The panel that opens will allow the user to select individual files containing trajectories, which were generated in the first module. The trajectory will be displayed as length versus time plot, on which RANSAC fits a model of microtubule dynamics using the default parameters. Read more about the [MTrack-RANSAC parameters](/plugins/mtrack-ransac-parameters).
 

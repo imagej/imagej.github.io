@@ -12,7 +12,7 @@ description: test description
 General Description
 -------------------
 
-{% include thumbnail src='/media/Tagging example.png' title='Example of voxel classification'%} This plugin tags all pixel/voxels in a skeleton image and then counts all its junctions, triple and quadruple points and branches, and measures their average and maximum length. The tags are shown in a new window displaying every tag in a different color. You can find it under {% include bc content='Analyze | Skeleton | Analyze Skeleton (2D/3D)'%}. See [Skeletonize3D](/plugins/skeletonize3d) for an example of how to produce skeleton images.
+{% include thumbnail src='/media/Tagging example.png' title='Example of voxel classification'%} This plugin tags all pixel/voxels in a skeleton image and then counts all its junctions, triple and quadruple points and branches, and measures their average and maximum length. The tags are shown in a new window displaying every tag in a different color. You can find it under {% include bc path='Analyze | Skeleton | Analyze Skeleton (2D/3D)'%}. See [Skeletonize3D](/plugins/skeletonize3d) for an example of how to produce skeleton images.
 
 The voxels are classified into three different categories depending on their 26 neighbors:
 

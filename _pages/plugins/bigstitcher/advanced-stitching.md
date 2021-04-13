@@ -11,7 +11,7 @@ In addition to the default Phase Correlation-based pairwise shift determination,
 
 <img src="/media/BigStitcher stitch 0.png" width="600"/>
 
-If you want to proceed straight to the next steps after calculating the shifts, we offer the same options under {% include bc content='Stitching Wizard|Stitch dataset (expert) ...'%}
+If you want to proceed straight to the next steps after calculating the shifts, we offer the same options under {% include bc path='Stitching Wizard|Stitch dataset (expert) ...'%}
 
 Advanced pairwise shift calculation
 ===================================

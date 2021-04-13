@@ -39,7 +39,7 @@ Non-image formats
 Bio-Formats
 -----------
 
-Files may also be exported to many file types using {% include bc content='Plugins|Bio-Formats|Bio-Formats Exporter'%}. As of this writing, the supported file types are:
+Files may also be exported to many file types using {% include bc path='Plugins|Bio-Formats|Bio-Formats Exporter'%}. As of this writing, the supported file types are:
 
 -   Animated PNG
 -   AVI

@@ -23,7 +23,7 @@ description: test description
 Getting Started
 ---------------
 
-Start it via {% include bc content='Plugins|Scripting|Script Interpreter'%} or by typing {% include key content='Shift' %}-{% include key content='\[' %}.
+Start it via {% include bc path='Plugins|Scripting|Script Interpreter'%} or by typing {% include key content='Shift' %}-{% include key content='\[' %}.
 
 ![](/media/Script Interpreter.png"Script_Interpreter.png")
 

@@ -48,7 +48,7 @@ No title bar in file chooser dialogs
 
 On macOS 10.11 "El Capitan" and later, the operating system no longer includes a title bar for file chooser dialogs. See e.g. [this JDK bug](https://bugs.openjdk.java.net/browse/JDK-8136427) discussing the issue.
 
-As a workaround, you can check "Use JFileChooser to open/save" in the {% include bc content='Edit | Options | Input/Output...'%} dialog.
+As a workaround, you can check "Use JFileChooser to open/save" in the {% include bc path='Edit | Options | Input/Output...'%} dialog.
 
 Frequently Asked Questions
 ==========================

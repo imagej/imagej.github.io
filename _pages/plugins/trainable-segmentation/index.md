@@ -30,7 +30,7 @@ User Manual
 
 This manual shows you how to use the **deprecated** Trainable Segmentation plugin. Trainable means that you have to draw some examples of at least 2 different things you want to differentiate in the image and then a classifier is trained by your examples and segments the rest of the image. Afterwards you can also apply the trained classifier to other images or stacks.
 
-The plugin can be found in the Fiji menu under {% include bc content='Plugins | Segmentation | deprecated | Trainable Segmentation'%}.
+The plugin can be found in the Fiji menu under {% include bc path='Plugins | Segmentation | deprecated | Trainable Segmentation'%}.
 
 ### Chose training image
 
@@ -38,7 +38,7 @@ First, you have to choose the image you want to train on.
 
 ![](/media/TrainingImage.jpg "trainingImage.jpg")
 
-Now open the plugin ({% include bc content='Plugins | Segmentation | deprecated | Trainable Segmentation'%}). It opens a training window that contains the training image.
+Now open the plugin ({% include bc path='Plugins | Segmentation | deprecated | Trainable Segmentation'%}). It opens a training window that contains the training image.
 
 ![](/media/Playground.jpg "Playground.jpg")
 
@@ -93,7 +93,7 @@ Troubleshooting
 
 Common problems and solutions:
 
--   *' I don't find the plugin in my Fiji menus!*': Don't worry, depending on your Fiji release, the updater may not offer you this plugin automatically. Just go to {% include bc content='Help | Update Fiji'%}, then click on "Advanced mode", and on the "View Options" box, select "View uninstalled plugins only". Then the Trainable Segmentation plugin should appear and you should be able to install it.
+-   *' I don't find the plugin in my Fiji menus!*': Don't worry, depending on your Fiji release, the updater may not offer you this plugin automatically. Just go to {% include bc path='Help | Update Fiji'%}, then click on "Advanced mode", and on the "View Options" box, select "View uninstalled plugins only". Then the Trainable Segmentation plugin should appear and you should be able to install it.
 
 See Also
 --------

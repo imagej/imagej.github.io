@@ -19,7 +19,7 @@ Install and configure IDEA
 Import the ImageJ source
 ------------------------
 
-1.  From the IDEA menu, choose {% include bc content='Version Control|Checkout from Version Control|Git'%}
+1.  From the IDEA menu, choose {% include bc path='Version Control|Checkout from Version Control|Git'%}
 2.  For the Git Repository URL, enter: [`git://github.com/imagej/imagej`](Git___github.com_imagej_imagej)
 3.  Specify a Parent Directory, click Clone, and wait
 4.  When prompted, click Yes to create an IntelliJ IDEA project from the sources
@@ -32,13 +32,13 @@ On some platforms, the first time you perform this procedure, you may be prompte
 Launch the program
 ------------------
 
-1.  Choose {% include bc content='Run|Edit Configurations'%} from the menu
+1.  Choose {% include bc path='Run|Edit Configurations'%} from the menu
 2.  Click the Plus icon and choose Application
 3.  In the Name field, type "/about"
 4.  Type "net.imagej.Main" for the Main class
 5.  For "Use classpath and JDK of module" select "imagej" from the list
 6.  Click OK
-7.  Choose {% include bc content='Run|Run "/about"'%} from the menu
+7.  Choose {% include bc path='Run|Run "/about"'%} from the menu
 
 The project automatically builds before launching, so it may take a little while the first time.
 

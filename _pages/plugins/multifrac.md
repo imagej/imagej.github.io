@@ -22,7 +22,7 @@ Please when using the plugin, cite:
 Installation
 ------------
 
-Run {% include bc content='Help|Update...'%} and choose *Manage update sites*. Activate the *Multifrac* checkbox in the alphabetically-sorted list of update sites. Press *OK*, then *Apply changes*. Restart ImageJ. That's it. Enjoy Multifrac!
+Run {% include bc path='Help|Update...'%} and choose *Manage update sites*. Activate the *Multifrac* checkbox in the alphabetically-sorted list of update sites. Press *OK*, then *Apply changes*. Restart ImageJ. That's it. Enjoy Multifrac!
 
 Description
 -----------

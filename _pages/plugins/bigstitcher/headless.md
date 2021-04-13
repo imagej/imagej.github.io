@@ -7,18 +7,18 @@ description: test description
 Overview
 --------
 
-In addition to the main application available in the Fiji menu via {% include bc content='Plugins|BigStitcher|BigStitcher'%}, we offer macro-recordable versions of most processing steps under the {% include bc content='Plugins|BigStitcher|Batch Processing'%} menu.
+In addition to the main application available in the Fiji menu via {% include bc path='Plugins|BigStitcher|BigStitcher'%}, we offer macro-recordable versions of most processing steps under the {% include bc path='Plugins|BigStitcher|Batch Processing'%} menu.
 
 <img src="/media/BigStitcher Headless Menu.png" width="600"/>
 
 The operation of the Batch versions of the processing steps is essentially the same as in the main application, though with a more rudimentary UI that just asks for parameters before performing the processing step.
 
-Macro-scriptable versions of the Multiview Reconstruction steps can be found in the Fiji menu under: {% include bc content='Plugins|Multiview Reconstruction|Batch Processing'%}
+Macro-scriptable versions of the Multiview Reconstruction steps can be found in the Fiji menu under: {% include bc path='Plugins|Multiview Reconstruction|Batch Processing'%}
 
 Example: Recording processing steps
 -----------------------------------
 
-Clicking {% include bc content='Plugins|Macros|Record...'%} in the Fiji will bring up the macro recorder that compiles most actions performed in Fiji as a executable script.
+Clicking {% include bc path='Plugins|Macros|Record...'%} in the Fiji will bring up the macro recorder that compiles most actions performed in Fiji as a executable script.
 
 In the following example, we performed the following macro-recordable steps of BigStitcher:
 

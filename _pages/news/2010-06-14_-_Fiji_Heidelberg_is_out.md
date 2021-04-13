@@ -40,7 +40,7 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 <!-- -->
 
--   Context Help: If you click on {% include bc content='Help | Help on Menu Item'%}, the next click on a menu item will open the corresponding page (if there is one) on the Fiji Wiki.
+-   Context Help: If you click on {% include bc path='Help | Help on Menu Item'%}, the next click on a menu item will open the corresponding page (if there is one) on the Fiji Wiki.
 
 <!-- -->
 
@@ -138,7 +138,7 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 <!-- -->
 
--   {% include bc content='Plugins | Macros | About Startup Macros'%} works again (thanks Gabriel Landini).
+-   {% include bc path='Plugins | Macros | About Startup Macros'%} works again (thanks Gabriel Landini).
 
 <!-- -->
 
@@ -158,7 +158,7 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 <!-- -->
 
--   The [Tutorial Maker](/plugins/tutorial-maker) was renamed to {% include bc content='Plugins | Utilities | Fiji | New Fiji Tutorial'%}, and you can choose to upload to another Wiki than the Fiji Wiki (provided that it is powered by MediaWiki). It also uses the [Script Editor](/scripting/script-editor) for better usability now.
+-   The [Tutorial Maker](/plugins/tutorial-maker) was renamed to {% include bc path='Plugins | Utilities | Fiji | New Fiji Tutorial'%}, and you can choose to upload to another Wiki than the Fiji Wiki (provided that it is powered by MediaWiki). It also uses the [Script Editor](/scripting/script-editor) for better usability now.
 
 <!-- -->
 
@@ -166,7 +166,7 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 <!-- -->
 
--   There is an {% include bc content='Image | Adjust | Auto Crop'%} plugin (cropping the maximal border that matches the background color), and an {% include bc content='Image | Adjust | Auto Crop (guess background color)'%} plugin (estimating the most likely background color from the border).
+-   There is an {% include bc path='Image | Adjust | Auto Crop'%} plugin (cropping the maximal border that matches the background color), and an {% include bc path='Image | Adjust | Auto Crop (guess background color)'%} plugin (estimating the most likely background color from the border).
 
 <!-- -->
 
@@ -230,7 +230,7 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 <!-- -->
 
--   In Fiji, the menu entry is called {% include bc content='Help | Refresh Menus'%} instead of {% include bc content='Help | Update Menus'%}, to clarify what the function is about.
+-   In Fiji, the menu entry is called {% include bc path='Help | Refresh Menus'%} instead of {% include bc path='Help | Update Menus'%}, to clarify what the function is about.
 
 <!-- -->
 
@@ -359,7 +359,7 @@ Developer-visible changes
 
 <!-- -->
 
--   You can ask the [Script Editor](/scripting/script-editor) to open the [JavaDoc](https://fiji.sc/javadoc/) for a given class using {% include bc content='Tools | Open Help on Class...'%}
+-   You can ask the [Script Editor](/scripting/script-editor) to open the [JavaDoc](https://fiji.sc/javadoc/) for a given class using {% include bc path='Tools | Open Help on Class...'%}
 
 <!-- -->
 
@@ -367,7 +367,7 @@ Developer-visible changes
 
 <!-- -->
 
--   There is an easy way to add a screenshot to be shown on the front page of the Fiji Wiki: {% include bc content='Plugins | Utilities | Fiji | New Fiji Wiki Screenshot'%}.
+-   There is an easy way to add a screenshot to be shown on the front page of the Fiji Wiki: {% include bc path='Plugins | Utilities | Fiji | New Fiji Wiki Screenshot'%}.
 
 <!-- -->
 
@@ -383,11 +383,11 @@ Developer-visible changes
 
 <!-- -->
 
--   The [Script Editor](/scripting/script-editor) learnt quite a number of functions that are useful when developing plugins written in Java (e.g. opening the sources for a menu item, or opening the directory of the current file upon {% include bc content='File | Open'%}/, or offering to search for the sources of a class).
+-   The [Script Editor](/scripting/script-editor) learnt quite a number of functions that are useful when developing plugins written in Java (e.g. opening the sources for a menu item, or opening the directory of the current file upon {% include bc path='File | Open'%}/, or offering to search for the sources of a class).
 
 <!-- -->
 
--   If you have an account on the Fiji Wiki, you can easily add News entries using the {% include bc content='Plugins | Utilities | Fiji | New Fiji News'%} menu item.
+-   If you have an account on the Fiji Wiki, you can easily add News entries using the {% include bc path='Plugins | Utilities | Fiji | New Fiji News'%} menu item.
 
 <!-- -->
 

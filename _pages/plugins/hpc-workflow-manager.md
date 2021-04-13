@@ -427,7 +427,7 @@ HPC Workflow Manager client is available to install through its update site.
 ### Instructions
 
 -   [Download](https://imagej.net/Fiji/Downloads) install and launch Fiji;
--   go to {% include bc content='Help | Update... | Manage update sites'%};
+-   go to {% include bc path='Help | Update... | Manage update sites'%};
 -   tick "P2E-IT4Innovations";
 -   close the window;
 -   click "Apply changes"; and

@@ -49,7 +49,7 @@ ImageJA was originally [launched in 2005](https://list.nih.gov/cgi-bin/wa.exe?A2
 -   When run as an applet, ImageJA is embedded.
 -   The internal structure of ImageJA's recorder allows command listeners to get much more fine-grained information.
 -   When launching a text editor, in many cases ImageJA will now choose Fiji's Script Editor, if available, instead of the old AWT based ImageJ editor.
--   ImageJA has an easy Plugin installer via {% include bc content='Plugins | Install PlugIn...'%} (ImageJ only has that drag-n-drop thingie).
+-   ImageJA has an easy Plugin installer via {% include bc path='Plugins | Install PlugIn...'%} (ImageJ only has that drag-n-drop thingie).
 -   The instance listener is RMI-based with ImageJA, so there is no security issue with it.
 -   ImageJA's Command Launcher has fuzzy matching, too.
 -   A couple of bug fixes:

@@ -14,7 +14,7 @@ Installation.
 
 This plugin lives on a separate {% include list-of-update-sites content='update site' %}. If you want to use it, you first need to subscribe to the update site named `TrackMateCSVImporter`, as explained [here](/update-sites/following).
 
-The importer can be found in the {% include bc content='Plugins | Tracking | TrackMate CSV importer'%} menu.
+The importer can be found in the {% include bc path='Plugins | Tracking | TrackMate CSV importer'%} menu.
 
 Using the GUI.
 --------------

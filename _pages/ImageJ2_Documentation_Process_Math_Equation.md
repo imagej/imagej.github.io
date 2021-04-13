@@ -4,9 +4,9 @@ title: ImageJ2/Documentation/Process/Math/Equation
 description: test description
 ---
 
-This page documents that language that can be used to specify equations via the {% include bc content='Process | Math | Equation'%} command.
+This page documents that language that can be used to specify equations via the {% include bc path='Process | Math | Equation'%} command.
 
-The {% include bc content='Process | Math | Equation'%} dialog supports a powerful language for defining equations that can be used to fill images with data.
+The {% include bc path='Process | Math | Equation'%} dialog supports a powerful language for defining equations that can be used to fill images with data.
 
 An equation is defined by a list of index variable declarations and a formula definition. If the formula does not refer to any index variables they can be omitted from the definition. (Index variables are discussed a bit later)
 
@@ -291,4 +291,4 @@ There are numerous built in functions that can appear in an equation. For refere
 
 -   Returns the the positive distance between the input floating-point value and the floating point value next larger in magnitude.
 
-We can compare this language to the ImageJ 1.x {% include bc content='Process | Math | Macro'%} language. In ImageJ 1.x the default macro for the command is defined as "v = v + 50\*sin(d/10)". Note that this exact string is not legal syntax in the new equation language. But it can now be specified as "img+50\*sin(dctr/10)".
+We can compare this language to the ImageJ 1.x {% include bc path='Process | Math | Macro'%} language. In ImageJ 1.x the default macro for the command is defined as "v = v + 50\*sin(d/10)". Note that this exact string is not legal syntax in the new equation language. But it can now be specified as "img+50\*sin(dctr/10)".

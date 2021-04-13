@@ -20,7 +20,7 @@ Installation
 ------------
 
 -   [Enable](/update-sites/following) the Server [update site](Update_site).
--   Start the server via the {% include bc content='Plugins | Utilities | Start Server'%} command.
+-   Start the server via the {% include bc path='Plugins | Utilities | Start Server'%} command.
 -   Or launch ImageJ in server mode using the `--server` flag.
 
 Documentation

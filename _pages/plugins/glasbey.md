@@ -6,7 +6,7 @@ description: test description
 
 {% include info-box name='Glasbey' software='Discontinuous color table' maintainer='Gabriel Landini' source='https://github.com/fiji/fiji/blob/master/luts/glasbey.lut and https://github.com/fiji/fiji/blob/master/luts/glasbey_inverted.lut' category='[:Category:Color\_processing](Category_Color_processing)' %}![](/media/Glasbey.png "fig:Glasbey.png")The Glasbey lookup table (LUT) is a color table structured in a maximally discontinuous manner. That is, adjacent color bins are chosen to be as distinct from one another as possible.
 
-Like other LUTs, it is available from the {% include bc content='Image | Lookup Tables'%} menu.
+Like other LUTs, it is available from the {% include bc path='Image | Lookup Tables'%} menu.
 
 The LUT called "glasbey" uses white at the first index, whereas "glasbey inverted" starts with black.
 

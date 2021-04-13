@@ -20,8 +20,8 @@ If you wish to run the unit tests manually, you can do so from the command line:
 
 Or from Eclipse:
 
-1.  Import the `ij1-tests` project using {% include bc content='File | Import Existing Maven Projects'%} and choosing the `ij1-tests/pom.xml` file.
-2.  Right-click the `ij1-tests` project, {% include bc content='Run As | JUnit Test'%}.
+1.  Import the `ij1-tests` project using {% include bc path='File | Import Existing Maven Projects'%} and choosing the `ij1-tests/pom.xml` file.
+2.  Right-click the `ij1-tests` project, {% include bc path='Run As | JUnit Test'%}.
 
 ### Using a different version of ImageJ1
 

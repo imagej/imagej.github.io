@@ -9,7 +9,7 @@ Overview
 
 Many processing steps of BigStitcher and [Multiview-Reconstruction](/plugins/multiview-reconstruction) rely on the detection of **Interest Points**, i.e. bright or dark spots, in the images. The classical example is the alignment of multi-angle views by matching corresponding interest points in two images and aligning the points, and thus the images, to each other.
 
-In **Multiview Mode**, interest point detection can be started by selecting the desired views, right-clicking and selecting the {% include bc content='Processing|Detect Interest Points...'%} option in the main menu.
+In **Multiview Mode**, interest point detection can be started by selecting the desired views, right-clicking and selecting the {% include bc path='Processing|Detect Interest Points...'%} option in the main menu.
 
 Other uses of interest points are:
 

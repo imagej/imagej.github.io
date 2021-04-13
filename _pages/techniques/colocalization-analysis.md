@@ -26,7 +26,7 @@ When considering colocalization, too often composite images of red and green cha
 
 {% include image-center name="SpiralsRGY.png" image-path="/media/SpiralsRGY.png" %}
 
-Most people might think that the image contains 4 distinct colours: 2 sets of thin spirals are in dark red and dark green, and 2 thick prominent spirals of yellow-green and yellow. However, the yellow and yellow-green actually have <b>exactly the same color!</b> You can verify this yourself by calling {% include bc content='File | Open Samples | [Spirals (Macro)](Spirals_Macro "wikilink")'%} in Fiji.
+Most people might think that the image contains 4 distinct colours: 2 sets of thin spirals are in dark red and dark green, and 2 thick prominent spirals of yellow-green and yellow. However, the yellow and yellow-green actually have <b>exactly the same color!</b> You can verify this yourself by calling {% include bc path='File | Open Samples | [Spirals (Macro)](Spirals_Macro "wikilink")'%} in Fiji.
 
 So... now, how do you feel about determining colocalization by looking for yellow blobs? Doesn't make much sense does it? We notice that the shades and hues of colours look different according to what other colours they are next to! So, you need to measure something from the pixel values, not simply subjectively "look at" a red/green colour merge image.
 
@@ -243,7 +243,7 @@ The plugin finally sends a bunch of statistics and results to the results window
 
 {% include info-box content="Note: this plugin is no longer under active development and support. Use [Coloc 2](/plugins/coloc-2) instead, which does the same thing, only more correctly, and as described in the original publication by Costes, instead of making a nasty assumption and shortcut." %}
 
-The [Colocalization Test](/plugins/colocalization-test) plugin performs the Costes test for statistical significance (which you should ALWAYS do after calculating the thresholded Manders coefficients and the scatterplot). It is in the menus at {% include bc content='Analyze | Colocalization | Colocalization Test'%}
+The [Colocalization Test](/plugins/colocalization-test) plugin performs the Costes test for statistical significance (which you should ALWAYS do after calculating the thresholded Manders coefficients and the scatterplot). It is in the menus at {% include bc path='Analyze | Colocalization | Colocalization Test'%}
 
 Choose the correct Channel 1 and Channel 2 images stacks from the drop down lists. Make sure "Current Slice Only" is off, and "Keep Example Randomized Image" and Show All R values" are on. Then click "OK"
 

@@ -12,7 +12,7 @@ For **local** thresholding rather than global, see the [Auto Local Threshold](/p
 Installation
 ------------
 
-**ImageJ**: requires v1.42m or newer. Download [Auto\_Threshold-X.Y.Z.jar](http://maven.imagej.net/service/local/artifact/maven/redirect?r=releases&g=sc.fiji&a=Auto_Threshold&v=RELEASE&e=jar) and copy it into the ImageJ/plugins folder and either restart ImageJ or run the '{% include bc content='Help | Update Menus'%}' command. After this a new command should appear in '{% include bc content='Image | Adjust | Auto Threshold'%}'.
+**ImageJ**: requires v1.42m or newer. Download [Auto\_Threshold-X.Y.Z.jar](http://maven.imagej.net/service/local/artifact/maven/redirect?r=releases&g=sc.fiji&a=Auto_Threshold&v=RELEASE&e=jar) and copy it into the ImageJ/plugins folder and either restart ImageJ or run the '{% include bc path='Help | Update Menus'%}' command. After this a new command should appear in '{% include bc path='Image | Adjust | Auto Threshold'%}'.
 
 **Fiji**: this plugin is part of the Fiji distribution, there is no need to download it.
 
@@ -31,7 +31,7 @@ It you are processing a stack, two additional options are available: **Stack** c
 
 **Important notes:**
 
-**1.** This plugin is accessed through the {% include bc content='Image | Auto Threshold'%} menu entry, however the thresholding methods were also partially implemented in ImageJ's thresholder applet accessible through the {% include bc content='Image | Adjust | Threshold...'%} menu entry. While the Auto Threshold plugin can use or ignore the extremes of the image histogram (Ignore black, Ignore white) the applet cannot: the 'default' method ignores the histogram extremes but the others methods do not. This means that applying the two commands to the same image can produce apparently different results. In essence, the Auto Threshold plugin, with the correct settings, can reproduce the results of the applet, but not the way round.
+**1.** This plugin is accessed through the {% include bc path='Image | Auto Threshold'%} menu entry, however the thresholding methods were also partially implemented in ImageJ's thresholder applet accessible through the {% include bc path='Image | Adjust | Threshold...'%} menu entry. While the Auto Threshold plugin can use or ignore the extremes of the image histogram (Ignore black, Ignore white) the applet cannot: the 'default' method ignores the histogram extremes but the others methods do not. This means that applying the two commands to the same image can produce apparently different results. In essence, the Auto Threshold plugin, with the correct settings, can reproduce the results of the applet, but not the way round.
 
 **2.** From version 1.12 the plugin supports thresholding of 16-bit images. Since the Auto Threshold plugin processes the full greyscale space, it can be slow when dealing with 16-bit images. Note that the ImageJ thresholder applet also processes 16-bit images, but in reality ImageJ first computes a histogram with 256 bins. Therefore, there might be differences in the results obtained on 16-bit images when using the applet and the true 16-bit results obtained with this plugin. Note that for speeding up, the histogram is bracketed to include only the range of bins that contain data (and avoid processing empty histogram bins at both extremes).
 
@@ -60,7 +60,7 @@ When processing stacks with many slices, the montages can become very large (\~1
 
 ### Default
 
-This is the original method of auto thresholding available in ImageJ, which is a variation of the IsoData algorithm (described below). The **Default** option should return the same values as the '{% include bc content='Image | Adjust | Threshold | Auto'%}', when selecting **Ignore black** and **Ignore white**. To indicate segmentation of the desired phase, use the **White objects on black background** option. The IsoData method is also known as *iterative intermeans*.
+This is the original method of auto thresholding available in ImageJ, which is a variation of the IsoData algorithm (described below). The **Default** option should return the same values as the '{% include bc path='Image | Adjust | Threshold | Auto'%}', when selecting **Ignore black** and **Ignore white**. To indicate segmentation of the desired phase, use the **White objects on black background** option. The IsoData method is also known as *iterative intermeans*.
 
 ### Huang
 

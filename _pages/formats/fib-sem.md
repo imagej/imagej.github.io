@@ -18,7 +18,7 @@ Overview
 The FIBSEM importer is able to read the image files produced by the FIB-SEM machine at Janelia Farm. It can be used via:
 
 -   Drag & Drop
--   {% include bc content='File | Import | FIB-SEM ...'%}
+-   {% include bc path='File | Import | FIB-SEM ...'%}
 
 It will be opened as unsigned 16-bit data ranging from 0 to 65535, where 0 corresponds to a detector voltage of -10 volts and 65535 to a voltage of +10 volts. It will automatically set the pixel resolution in the image calibration.
 
@@ -31,8 +31,8 @@ Special options
 
 It might make sense to open the image as float and not convert it into an unsigned short. To do so, one can set a switch in the FIBSEM importer using the **script editor**:
 
--   {% include bc content='File | New | Script'%}
--   {% include bc content='Language | Beanshell'%}
+-   {% include bc path='File | New | Script'%}
+-   {% include bc path='Language | Beanshell'%}
 -   type the following lines
 
 <!-- -->

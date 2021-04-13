@@ -26,8 +26,8 @@ To learn more about Stitching, please read the [Stitching](/plugins/image-stitch
 How to use the Grid/Collection Stitching plugin
 ===============================================
 
--   Launch the stitching plugin from the menu item {% include bc content='Plugins | Stitching | Grid/Collection stitching'%}
-    -   Launch the stitching plugin from the menu item {% include bc content='Plugins | Stitching | Grid/Collection stitching'%}
+-   Launch the stitching plugin from the menu item {% include bc path='Plugins | Stitching | Grid/Collection stitching'%}
+    -   Launch the stitching plugin from the menu item {% include bc path='Plugins | Stitching | Grid/Collection stitching'%}
 -   In the plugin's graphical user interface (GUI), choose the position type as Positions from file from the first dropbox menu. Then choose the order as Defined by image metadata. With this choice, the images within your file do not need to be in any particular order. Click ok.
 -   When a second GUI appears, select a file from your dataset.
     -   If Prairie was used for data collection, ensure that the file selected is a .xml or .cfg
@@ -55,13 +55,13 @@ Speed
 
 If "use virtual memory" has been selected but the stitching plugin is still taking a considerable amount of time, try allocating more memory to the process.
 
--   Open Memory from the menu item {% include bc content='Edit | Options | Memory & Threads'%}
+-   Open Memory from the menu item {% include bc path='Edit | Options | Memory & Threads'%}
 -   Enter the amount of memory you would like to be allocated to the Fiji application in megabytes
     -   Check the amount of installed RAM on your computer to ensure you do not try to allocate more memory than exists.
 
 ### Image Dimensions
 
-Another speed reduction will occur if the tiles used have varying z coordinates. This will cause the stitching program to include tiles of black space wherever a tile has a z coordinate less than the maximum z coordinate within the file. To check if this could be a problem with your dataset, use the menu title to access {% include bc content='Plugins | Stitching | Visualize Tiles'%}. If the computed image does NOT show up as one large square with a patchwork of squares, your data set has varying z-values. To alleviate the slower speeds, select "ignore Z position" within the second GUI.
+Another speed reduction will occur if the tiles used have varying z coordinates. This will cause the stitching program to include tiles of black space wherever a tile has a z coordinate less than the maximum z coordinate within the file. To check if this could be a problem with your dataset, use the menu title to access {% include bc path='Plugins | Stitching | Visualize Tiles'%}. If the computed image does NOT show up as one large square with a patchwork of squares, your data set has varying z-values. To alleviate the slower speeds, select "ignore Z position" within the second GUI.
 
 {% include thumbnail src='/media/Out of memory.png' title='Out of memory error message.'%}
 

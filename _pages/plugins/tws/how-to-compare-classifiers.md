@@ -13,7 +13,7 @@ Most of the information contained here has been extracted from the [WEKA manual 
 
 ### Starting the plugin
 
-To get started, open the 2D image or stack you want to work on and launch the [Trainable Weka Segmentation](/plugins/tws) plugin (under {% include bc content='Plugins | Segmentation | Trainable Weka Segmentation'%}):
+To get started, open the 2D image or stack you want to work on and launch the [Trainable Weka Segmentation](/plugins/tws) plugin (under {% include bc path='Plugins | Segmentation | Trainable Weka Segmentation'%}):
 
 <img src="/media/Screenshot-open-AWS.png" width="700"/>
 

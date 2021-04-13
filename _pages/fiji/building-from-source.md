@@ -28,7 +28,7 @@ To develop a plugin, the developer first needs to find out in which file it is c
 
 Each individual component is maintained in its own repository in the [*fiji* org on GitHub](https://github.com/fiji/). The name of the repository corresponding to a given *.jar* file is essentially identical with the file name, except that trailing underscores are stripped. Example: *Stitching\_.jar* is maintained in the repository at https://github.com/fiji/Stitching>, *Time\_Lapse.jar* in the repository at <https://github.com/fiji/Time_Lapse.
 
-If in doubt about the location of the repository, just call {% include bc content='Plugins | Debug | System Information'%} and find the section corresponding to the file in question.
+If in doubt about the location of the repository, just call {% include bc path='Plugins | Debug | System Information'%} and find the section corresponding to the file in question.
 
 Once the developer has identified which plugin or library she wants to modify or develop further, it is very easy to build and contribute by following [this tutorial](/develop/improving-the-code).
 

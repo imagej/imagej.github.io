@@ -74,7 +74,7 @@ Actually running a [MATLAB](MATLAB) script from ImageJ is effectively like calli
 >
 > For more details, see documetation for `sprintf` and learn about Special Characters.
 
-Options for controlling the startup of [MATLAB](MATLAB), or killing existing [MATLAB](MATLAB) processes (e.g. if hidden) can be accessed via: {% include bc content='Edit | Options | MATLAB...'%}
+Options for controlling the startup of [MATLAB](MATLAB), or killing existing [MATLAB](MATLAB) processes (e.g. if hidden) can be accessed via: {% include bc path='Edit | Options | MATLAB...'%}
 
 ![](/media/MATLAB options.png "MATLAB_options.png")
 

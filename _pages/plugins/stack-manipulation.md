@@ -10,7 +10,7 @@ description: test description
 Content and purpose
 -------------------
 
-This package regroups various "small" plugins dedicated to the manipulation of stacks, allowing to sort them, combine them, etc... As they are more of a utility package, they all can be found in the {% include bc content='Image | Stacks | Tools'%} menu, next to the ones provided by bare ImageJ.
+This package regroups various "small" plugins dedicated to the manipulation of stacks, allowing to sort them, combine them, etc... As they are more of a utility package, they all can be found in the {% include bc path='Image | Stacks | Tools'%} menu, next to the ones provided by bare ImageJ.
 
 What they do is pretty much summarized by the following diagram, taken from the [MBF ImageJ](/software/mbf-imagej) webpage.
 
@@ -56,7 +56,7 @@ By Tony Collins.
 
 ### Slice Remover
 
-This command lets you remove multiple slices in one go. You can specify a start slice, and end slice and an increment (i.e. start=1, end=5, increment=2 will remove the slices 1, 3 and 5). Warning: The Slice Remover treats hyperstacks as if they were converted via {% include bc content='Image | Hyperstacks | Hyperstack to Stack'%} first.
+This command lets you remove multiple slices in one go. You can specify a start slice, and end slice and an increment (i.e. start=1, end=5, increment=2 will remove the slices 1, 3 and 5). Warning: The Slice Remover treats hyperstacks as if they were converted via {% include bc path='Image | Hyperstacks | Hyperstack to Stack'%} first.
 
 Original code by {% include person content='Rasband' %}.
 

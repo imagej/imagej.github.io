@@ -54,7 +54,7 @@ How do I launch ImageJ with a different version of Java?
 
 ### On Windows
 
-Install Java 8, and delete or rename the `ImageJ.app\java` and/or `ImageJ.app\jre` folders, if they exist. If this does not result in ImageJ using the expected Java version, check the Environment Variables ({% include bc content='Control Panel | System and Security | System | Advanced Settings | Advanced | Environment Variables'%}) for the variable "JAVA\_HOME". Update or create this variable as needed; its value should be the desired JDK or JRE that you would like to use for ImageJ (for instance: "C:\\Program Files\\Java\\jdk1.8.0\_172"). See also [Java environment variable setup](http://stackoverflow.com/questions/1672281/environment-variables-for-java-installation).
+Install Java 8, and delete or rename the `ImageJ.app\java` and/or `ImageJ.app\jre` folders, if they exist. If this does not result in ImageJ using the expected Java version, check the Environment Variables ({% include bc path='Control Panel | System and Security | System | Advanced Settings | Advanced | Environment Variables'%}) for the variable "JAVA\_HOME". Update or create this variable as needed; its value should be the desired JDK or JRE that you would like to use for ImageJ (for instance: "C:\\Program Files\\Java\\jdk1.8.0\_172"). See also [Java environment variable setup](http://stackoverflow.com/questions/1672281/environment-variables-for-java-installation).
 
 ### On OS X
 
@@ -116,20 +116,20 @@ How can I verify that my ImageJ is really 100% up to date?
 
 ImageJ will report itself as "up to date" as long as all files installed in your ImageJ match the latest versions from the remote update sites. However, there are cases where your ImageJ may report itself as "up to date" but still be missing critical files, or have mismatching versions (e.g., the dreaded [`NoSuchMethodError`](Troubleshooting#NoSuchMethodError_or_NoClassDefFoundError)).
 
-To be certain, run {% include bc content='Help | Update...'%}, and click the "Advanced mode" button. Then verify the following View Options:
+To be certain, run {% include bc path='Help | Update...'%}, and click the "Advanced mode" button. Then verify the following View Options:
 
 -   **View uninstalled files only:** Shows files that are available from remote ImageJ update sites, but *not* installed in your ImageJ. Consider changing the "Status/Action" to "/Downloads" for these items, especially any .jar files that are flagged with "Not installed" status.
 -   **View locally modified files only:** Shows files that have been edited locally (i.e., do not match any version from the remote update sites). Consider changing the "Status/Action" to "Update" for these items, especially any .jar files that you did not intentionally modify.
 -   **View local-only files:** Shows files that are not known at all to the remote update sites. These files were likely added manually (e.g., if you installed additional plugins manually; see "How do I install additional plugins" below). Consider deleting these files if you do not need them, especially any .jar files of unknown origin or conflicting file names.
 
-If you flag any changes to be made, press the "Apply changes" to update your ImageJ. And after restarting ImageJ, you might want to run {% include bc content='Help | Update...'%} again to make sure everything looks the way you expect!
+If you flag any changes to be made, press the "Apply changes" to update your ImageJ. And after restarting ImageJ, you might want to run {% include bc path='Help | Update...'%} again to make sure everything looks the way you expect!
 
 How do I install additional plugins?
 ------------------------------------
 
-If the plugin is published on an [ImageJ update site](/update-sites), you can run {% include bc content='Help | Update'%} then click the *Manage update sites* button to enable it. Not only does this install the plugins for you automatically, but you will also be notified of any updates whenever they are released.
+If the plugin is published on an [ImageJ update site](/update-sites), you can run {% include bc path='Help | Update'%} then click the *Manage update sites* button to enable it. Not only does this install the plugins for you automatically, but you will also be notified of any updates whenever they are released.
 
-Otherwise, you can drag 'n drop the .jar files onto the ImageJ window, or use {% include bc content='Plugins | Install Plugin...'%} with .jar, .class and .java files, or copy the plugins to *ImageJ.app/plugins/* and restart ImageJ. See the [walk-through with screenshots](Installing_3rd_party_plugins).
+Otherwise, you can drag 'n drop the .jar files onto the ImageJ window, or use {% include bc path='Plugins | Install Plugin...'%} with .jar, .class and .java files, or copy the plugins to *ImageJ.app/plugins/* and restart ImageJ. See the [walk-through with screenshots](Installing_3rd_party_plugins).
 
 How do I downgrade ImageJ?
 --------------------------
@@ -138,7 +138,7 @@ Downgrading is generally not recommended as a long-term solution, but can be han
 
 *If you need to downgrade to avoid a critical bug, please [report that bug](/help/report-a-bug) to the developers so that it can be fixed in a future version!*
 
--   You can change the version of [ImageJ 1.x](/software/imagej1) used via the {% include bc content='Help | Update ImageJ...'%} menu item. This *only* changes the version of ImageJ 1.x—not all ImageJ components, [plugins](/fiji/plugins), etc.
+-   You can change the version of [ImageJ 1.x](/software/imagej1) used via the {% include bc path='Help | Update ImageJ...'%} menu item. This *only* changes the version of ImageJ 1.x—not all ImageJ components, [plugins](/fiji/plugins), etc.
 -   You can [switch to a different version of Java](#How_do_I_launch_ImageJ_with_a_different_version_of_Java? "wikilink").
 -   You can [download a Fiji Life-Line version](Downloads#Fiji).
 
@@ -149,14 +149,14 @@ My plugin runs fine in the [Script Editor](/scripting/script-editor), but it doe
 
 To be picked up as a plugin, the *.jar*'s file name must contain an underscore, and it either needs to contain an appropriate *plugins.config* file or the class name needs to contain an underscore, too.
 
-The safest way to ensure these conventions is to use the {% include bc content='File | Export as .jar file'%} menu item.
+The safest way to ensure these conventions is to use the {% include bc path='File | Export as .jar file'%} menu item.
 
-I tried to update ImageJ via {% include bc content='Help | Update'%}, but it throws an exception instead?
+I tried to update ImageJ via {% include bc path='Help | Update'%}, but it throws an exception instead?
 -----------------------------------------------------------------------------------------------------------
 
 Please download a fresh copy from [here](Downloads).
 
-I updated ImageJ via {% include bc content='Help | Update'%}, and now it does not start anymore!
+I updated ImageJ via {% include bc path='Help | Update'%}, and now it does not start anymore!
 --------------------------------------------------------------------------------------------------
 
 See [If ImageJ does not start up](Troubleshooting#If_ImageJ_does_not_start_up) on the Troubleshooting page.
@@ -166,7 +166,7 @@ The Updater always says *Connection refused*. Maybe it does not use the proxy?
 
 Indeed, an earlier version of the Updater does not use your system-wide network proxy settings. You can [download a new ImageJ](Downloads) to receive the fix. Or you can update the Updater manually like this:
 
--   open the [Script Editor](/scripting/script-editor) with {% include bc content='File | New | Script'%}
+-   open the [Script Editor](/scripting/script-editor) with {% include bc path='File | New | Script'%}
 -   set the language to *BeanShell* in the *Language* menu of the editor
 -   paste the following code (and adjust it to match your settings):
 
@@ -234,7 +234,7 @@ The installation of Fiji is described on specific pages for [MacOSX](/Fiji_Downl
 How do I turn my ImageJ installation into a Fiji one?
 -----------------------------------------------------
 
-Fiji is just ImageJ. If you are running [ImageJ2](/software/imagej2), simply run {% include bc content='Help | Update'%}, click *Manage update sites*, and enable the *Fiji* update site.
+Fiji is just ImageJ. If you are running [ImageJ2](/software/imagej2), simply run {% include bc path='Help | Update'%}, click *Manage update sites*, and enable the *Fiji* update site.
 
 Or if you are running [ImageJ1](/software/imagej1), you can bootstrap the updater by drag 'n dropping [this link](http://update.imagej.net/bootstrap.js) onto your running ImageJ and run the Javascript that was opened in a text window. After that, you can run Fiji/ImageJ using the [ImageJ launcher](Launcher) that was installed into the ImageJ directory.
 
@@ -372,10 +372,10 @@ Here are several ways to do so:
     -   You should end up with a hit like: https://github.com/imagej/ImageJA/blob/master/src/main/java/ij/plugin/Thresholder.java.
     -   This method requires that you know in which repository the code lives. However, you can combine it with **search.imagej.net** method above to figure out which repository, then load the code on GitHub, if desired.
 4.  **Using the "Open Source for Menu Item" command:**
-    -   Run {% include bc content='Plugins | Scripting | Open Source for Menu Item'%}.
+    -   Run {% include bc path='Plugins | Scripting | Open Source for Menu Item'%}.
         -   Unfortunately, you must select this from the menu, not using the Command Finder.
     -   Run the command whose source you want to see.
-        -   E.g., {% include bc content='Process | Binary | Make Binary'%}.
+        -   E.g., {% include bc path='Process | Binary | Make Binary'%}.
         -   Again, select it from the menu directly, not using the Command Finder.
     -   This will open the source using the [fiji.sc gitweb interface](https://fiji.sc/git).
 
@@ -483,7 +483,7 @@ If you have an issue that is not mentioned here, you might want to [ask on one o
 How to report issues?
 ---------------------
 
-Use the {% include bc content='Help | [Report a Bug](/help/report-a-bug)'%} command, which adds a ticket report to the [Fiji bug tracker](https://fiji.sc/bugzilla/). While private mail might seem more desirable sometimes, but it is almost always inferior to the open process we established in ImageJ. For starters, bug reporters are unlikely to know who would be the best person to address the issue.
+Use the {% include bc path='Help | [Report a Bug](/help/report-a-bug)'%} command, which adds a ticket report to the [Fiji bug tracker](https://fiji.sc/bugzilla/). While private mail might seem more desirable sometimes, but it is almost always inferior to the open process we established in ImageJ. For starters, bug reporters are unlikely to know who would be the best person to address the issue.
 
 I reported an issue, but it is still not fixed! Why not?
 --------------------------------------------------------

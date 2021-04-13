@@ -13,7 +13,7 @@ In Fiji, we have a plugin whose only purpose is to write tutorials to be publish
 First step: call the Tutorial Maker
 -----------------------------------
 
-After clicking on {% include bc content='Plugins | Utilities | Fiji | New Fiji Tutorial'%}, you will be asked for the title of your tutorial:
+After clicking on {% include bc path='Plugins | Utilities | Fiji | New Fiji Tutorial'%}, you will be asked for the title of your tutorial:
 
 ![](/media/How to make a new tutorial-PageTitle.jpg "How_to_make_a_new_tutorial-PageTitle.jpg")
 
@@ -37,7 +37,7 @@ In any of the two modes, the snapshot window will hide itself before taking the 
 
 <img src="/media/How to make a new tutorial-MakeSnapshots.jpg" width="640"/>
 
-After taking some or all of the snapshots you want to include in your tutorial, you have to crop them. Just select the appropriate rectangle, and then click on ImageJ's {% include bc content='Edit | Crop'%} or hit {% include key content='Ctrl' %}+{% include key content='Shift' %}+{% include key content='X' %}:
+After taking some or all of the snapshots you want to include in your tutorial, you have to crop them. Just select the appropriate rectangle, and then click on ImageJ's {% include bc path='Edit | Crop'%} or hit {% include key content='Ctrl' %}+{% include key content='Shift' %}+{% include key content='X' %}:
 
 ![](/media/How to make a new tutorial-CropSnapshot.jpg "How_to_make_a_new_tutorial-CropSnapshot.jpg")
 
@@ -53,7 +53,7 @@ This will pop up another dialog which lets you change the name of the image:
 
 ![](/media/How to make a new tutorial-Rename2.jpg "How_to_make_a_new_tutorial-Rename2.jpg")
 
-The other method is to select the image and click on ImageJ's {% include bc content='Image | Rename...'%} menu item.
+The other method is to select the image and click on ImageJ's {% include bc path='Image | Rename...'%} menu item.
 
 In both cases, the image references in the text will be adjusted automatically.
 

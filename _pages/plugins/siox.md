@@ -29,7 +29,7 @@ Quick Start
 **Premises:**  
 In order to call the plugin, you need to have at least one **RGB color image** open.
 
-After clicking on {% include bc content='Plugins | Segmentation | SIOX: Simple Interactive Object Extraction'%}, the image will be embedded into the plugin GUI.
+After clicking on {% include bc path='Plugins | Segmentation | SIOX: Simple Interactive Object Extraction'%}, the image will be embedded into the plugin GUI.
 
 **Step 1:** Initial Segmentation.  
 Paint the regions of interest (ROIs) corresponding to the foreground and background. Select any of the ROI tools and mark the areas you consider foreground and background. To segment multiple objects, select "Allow multiple foreground components"
@@ -42,14 +42,14 @@ Select new ROIs to be added or subtracted from the current segmentation. Press "
 <!-- -->
 
 **Step 3:** Reset or Create mask.  
-Click the "Reset" button to restart the process or click on the "Create mask" button to create a binary image. Please, note that the binary image polarity will follow the option set in {% include bc content='Process | Binary | Options'%}.
+Click the "Reset" button to restart the process or click on the "Create mask" button to create a binary image. Please, note that the binary image polarity will follow the option set in {% include bc path='Process | Binary | Options'%}.
 
 <table><tbody><tr class="odd"><td><p>style="vertical-align:top"|{% include thumbnail src='/media/Screenshot-SIOX Segmentation.png' title='SIOX segmentation Graphical User Interface applied to Leaf sample'%}</p></td><td><p>style="vertical-align:top"|{% include thumbnail src='/media/SIOX-Mask.png' title='Resulting mask of Leaf sample after SIOX segmentation'%}</p></td></tr></tbody></table>
 
 User Manual
 -----------
 
-[SIOX](/plugins/siox--simple-interactive-object-extraction) is a plugin designed to segment 2D color images. If the image is not RGB color, it can be converted to RGB using the command {% include bc content='Image | Type | RGB Color'%}. However, the [SIOX](/plugins/siox--simple-interactive-object-extraction) algorithm makes uses color information, so it is expected to work better on real RGB images.
+[SIOX](/plugins/siox--simple-interactive-object-extraction) is a plugin designed to segment 2D color images. If the image is not RGB color, it can be converted to RGB using the command {% include bc path='Image | Type | RGB Color'%}. However, the [SIOX](/plugins/siox--simple-interactive-object-extraction) algorithm makes uses color information, so it is expected to work better on real RGB images.
 
 When calling the plugin, the image will be embedded into the [SIOX](/plugins/siox--simple-interactive-object-extraction) graphical user interface (GUI). This GUI has 3 section (panels): Initial Segmentation, Detail Refinement Brush and the Mask/Reset buttons.
 
@@ -153,11 +153,11 @@ Resets the image including the internal status of the confidence matrix (foregro
 <!-- -->
 
   
-Creates a binary (0-255) image based on the current state of the segmentation process. The background color (black or white) is defined in {% include bc content='Process | Binary | Options...'%} This button can be pressed during any of the previous steps.
+Creates a binary (0-255) image based on the current state of the segmentation process. The background color (black or white) is defined in {% include bc path='Process | Binary | Options...'%} This button can be pressed during any of the previous steps.
 
 ### Save segmentator
 
-You can save the segmentation information into a file by clicking on the "Save segmentator" button. This can be used later to a different image or stack of images by clicking on {% include bc content='Plugins | Segmentation | Apply SIOX segmentator'%} (see next section).
+You can save the segmentation information into a file by clicking on the "Save segmentator" button. This can be used later to a different image or stack of images by clicking on {% include bc path='Plugins | Segmentation | Apply SIOX segmentator'%} (see next section).
 
 ### Apply SIOX segmentator
 
@@ -165,7 +165,7 @@ You can apply a previously saved SIOX segmentator to any open image or set of im
 
 **Step 1**: Click on the image or stack to segment.
 
-**Step 2**: Click on {% include bc content='Plugins | Segmentation | Apply SIOX segmentator'%}, and the following dialog will pop up:
+**Step 2**: Click on {% include bc path='Plugins | Segmentation | Apply SIOX segmentator'%}, and the following dialog will pop up:
 
 ![ left \| thumb \| 600 px \| Apply SIOX segmentator input dialog](/media/Screenshot-Load-SIOX-segmentator.png " left | thumb | 600 px | Apply SIOX segmentator input dialog")
 

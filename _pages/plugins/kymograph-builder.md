@@ -34,7 +34,7 @@ Features are :
 How to use :
 
 -   Draw a line: it can be a polyline and you can also set the thickness that will be taken into account by the plugin.
--   Launch KymographBuilder : {% include bc content='Plugins|Kymograph|KymographBuilder'%}
+-   Launch KymographBuilder : {% include bc path='Plugins|Kymograph|KymographBuilder'%}
 -   You're done.
 
 <figure><img src="/media/Kymograph Construction.png" width="600" /></figure>

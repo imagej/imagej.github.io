@@ -7,7 +7,7 @@ description: test description
 
 {% include component-stats content='sc.fiji:Lasso\_and\_Blow\_Tool' %}\[this is under construction\]
 
-This selection tool is run from {% include bc content='Plugins | Segmentation | Lasso'%}. Running the plugin adds a new button to the toolbar.
+This selection tool is run from {% include bc path='Plugins | Segmentation | Lasso'%}. Running the plugin adds a new button to the toolbar.
 
 There are 2 modes of operation: **lasso** and **blow** which can be selected by double clicking on the lasso button.
 

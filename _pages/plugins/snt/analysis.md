@@ -13,7 +13,7 @@ description: test description
 Sholl Analysis
 ==============
 
-There are two [Sholl Analysis](https://imagej.net/Sholl_Analysis) commands available in SNT's *Analysis* menu. The {% include bc content='Analysis|Shuoll Analysis...'%} option provides a set of pre-defined focal points the user can choose from. Note for the morphology-based focal points (e.g., *Soma*, *Root node(s): Primary apical dendrite(s)*) , the relevant morphology tag(s) must be assigned to the set of paths considered by the analysis. To select a focal point manually, see the following section.
+There are two [Sholl Analysis](https://imagej.net/Sholl_Analysis) commands available in SNT's *Analysis* menu. The {% include bc path='Analysis|Shuoll Analysis...'%} option provides a set of pre-defined focal points the user can choose from. Note for the morphology-based focal points (e.g., *Soma*, *Root node(s): Primary apical dendrite(s)*) , the relevant morphology tag(s) must be assigned to the set of paths considered by the analysis. To select a focal point manually, see the following section.
 
 Sholl Analysis (by Focal Point)
 -------------------------------
@@ -35,7 +35,7 @@ Alternatively, for precise positioning of the center of analysis:
 </div>
 
 {% include clear%}
- The Sholl dialog created by this approach differs slightly from the dialog created by running the {% include bc content='Analyze|Sholl|Sholl Analysis (From Tracings)...'%} plugin in the main Fiji menu. First, the center of analysis is automatically taken from the nearest (or exact) node where the user clicks. In addition to morphology and custom tag filters, the *Path filtering* drop-down menu provides an additional option to restrict the analysis to the subset of paths selected in the Path Manager. Another advantage is that the display canvas allows the radius step size to be previewed visually. To do this, toggle on the *Preview* checkbox under the *Sampling* section and experiment with different step sizes.
+ The Sholl dialog created by this approach differs slightly from the dialog created by running the {% include bc path='Analyze|Sholl|Sholl Analysis (From Tracings)...'%} plugin in the main Fiji menu. First, the center of analysis is automatically taken from the nearest (or exact) node where the user clicks. In addition to morphology and custom tag filters, the *Path filtering* drop-down menu provides an additional option to restrict the analysis to the subset of paths selected in the Path Manager. Another advantage is that the display canvas allows the radius step size to be previewed visually. To do this, toggle on the *Preview* checkbox under the *Sampling* section and experiment with different step sizes.
 
 <div align="center">
 
@@ -58,7 +58,7 @@ In addition to the Sholl Profile plot and table, the output of the analysis can 
 Strahler Analysis
 =================
 
-To conduct [Strahler Analysis](https://imagej.net/Strahler_Analysis) on the current contents of the Path Manager, choose the {% include bc content='Utilities|Strahler Analysis'%} command in the main SNT dialog. This command will output the results of the analysis as a table and plot. These figures contain morphometric statistics on the group of paths associated with each Horton-Strahler Number. Note that this feature analyzes traced reconstructions. To run Strahler analysis on images, use the {% include bc content='Analyze|Skeleton|Strahler Analysis...'%} plugin in the main Fiji dialog.
+To conduct [Strahler Analysis](https://imagej.net/Strahler_Analysis) on the current contents of the Path Manager, choose the {% include bc path='Utilities|Strahler Analysis'%} command in the main SNT dialog. This command will output the results of the analysis as a table and plot. These figures contain morphometric statistics on the group of paths associated with each Horton-Strahler Number. Note that this feature analyzes traced reconstructions. To run Strahler analysis on images, use the {% include bc path='Analyze|Skeleton|Strahler Analysis...'%} plugin in the main Fiji dialog.
 
 <div align="left">
 
@@ -70,7 +70,7 @@ To conduct [Strahler Analysis](https://imagej.net/Strahler_Analysis) on the curr
 Path Order Analysis
 ===================
 
-Found at {% include bc content='Analysis|Path Order Analysis'%} in the main SNT dialog, this option analyzes the Paths in the Path Manager based on [Branch Order](https://www.mbfbioscience.com/help/nx11/Content/Branch%20order/Branch_Order.htm). Produces a table of results and a plot similar to the *Strahler Analysis* option, with morphometric statistics on the group of paths associated with each Branch Order.
+Found at {% include bc path='Analysis|Path Order Analysis'%} in the main SNT dialog, this option analyzes the Paths in the Path Manager based on [Branch Order](https://www.mbfbioscience.com/help/nx11/Content/Branch%20order/Branch_Order.htm). Produces a table of results and a plot similar to the *Strahler Analysis* option, with morphometric statistics on the group of paths associated with each Branch Order.
 
 <div align="left">
 
@@ -82,11 +82,11 @@ Found at {% include bc content='Analysis|Path Order Analysis'%} in the main SNT 
 Measurements
 ============
 
-<img src="/media/Snt-Measurements-List.png" title="fig:Measure... dialog" width="120" alt="Measure... dialog" /> SNT provides several ways to measure reconstructions. A comprehensive selection of measurements can be found by going to {% include bc content='Analysis|Measure...'%}. in the main SNT dialog. Note that for this option, if multiple rooted tree structures exist in the Path Manger, you will be prompted to choose one for analysis.
+<img src="/media/Snt-Measurements-List.png" title="fig:Measure... dialog" width="120" alt="Measure... dialog" /> SNT provides several ways to measure reconstructions. A comprehensive selection of measurements can be found by going to {% include bc path='Analysis|Measure...'%}. in the main SNT dialog. Note that for this option, if multiple rooted tree structures exist in the Path Manger, you will be prompted to choose one for analysis.
 
-To quickly measure all existing paths with a common set of statistics, choose {% include bc content='Analysis|Quick Measurements'%}. In both cases the results of the measurements are displayed in a table.
+To quickly measure all existing paths with a common set of statistics, choose {% include bc path='Analysis|Quick Measurements'%}. In both cases the results of the measurements are displayed in a table.
 
-To get measurements only on a select group of Paths, first select or filter for the Paths you want to measure in the Path Manager, then choose either command from the {% include bc content='Analyze'%} menu in the Path Manager.
+To get measurements only on a select group of Paths, first select or filter for the Paths you want to measure in the Path Manager, then choose either command from the {% include bc path='Analyze'%} menu in the Path Manager.
 
 Batch measurements of reconstructions can be accomplished via scripting. See *Measure\_Multiple\_Files.py* in the SNT [Script Templates](https://imagej.net/SNT:_Scripting#Script_Templates) for a basic example. \[\[Image:Snt-Measure-Results-Table.png\|none\|thumb\|1000px\|*Measure...*
 
@@ -98,7 +98,7 @@ Batch measurements of reconstructions can be accomplished via scripting. See *Me
 Dendrogram Viewer
 =================
 
-<img src="/media/Snt-Dendrogram-Shortcuts.png" title="fig:Dendrogram Viewer shortcuts" width="140" alt="Dendrogram Viewer shortcuts" /> Found at {% include bc content='Utilities|Create Dendrogram'%}, this option generates a [Dendrogram](https://en.wikipedia.org/wiki/Dendrogram) from one connected component (i.e., a single rooted tree structure) in the Path Manager, providing a high-level overview of neurite branching topology. Note that if multiple rooted trees exist in the Path Manager, you will be prompted to choose one of them.
+<img src="/media/Snt-Dendrogram-Shortcuts.png" title="fig:Dendrogram Viewer shortcuts" width="140" alt="Dendrogram Viewer shortcuts" /> Found at {% include bc path='Utilities|Create Dendrogram'%}, this option generates a [Dendrogram](https://en.wikipedia.org/wiki/Dendrogram) from one connected component (i.e., a single rooted tree structure) in the Path Manager, providing a high-level overview of neurite branching topology. Note that if multiple rooted trees exist in the Path Manager, you will be prompted to choose one of them.
 
 The viewer provides controls for orientation, zoom level, panning, vertex editing and traversal as well as options to display vertex labels and edge weights (which by default are the euclidean distances between adjacent vertices). To see the available key shortcuts, right click on the viewer and choose *Available Shortcuts...*. The plot may be exported in several file formats, including HTML, PNG and SVG.
 
@@ -107,7 +107,7 @@ Fine-grained programmatic control over SNT's Graph objects is achieved using the
 Comparing Reconstructions
 =========================
 
-The {% include bc content='Utilities|Compare Reconstructions...'%} command will bring up a prompt which gives the user the option to compare two single reconstruction files against multiple metrics, or multiple groups of reconstruction files against a single metric.
+The {% include bc path='Utilities|Compare Reconstructions...'%} command will bring up a prompt which gives the user the option to compare two single reconstruction files against multiple metrics, or multiple groups of reconstruction files against a single metric.
 
 <figure><img src="/media/Snt-Compare-Reconstructions-Single-Or-Group-Choice.png" width="200" /></figure>
 

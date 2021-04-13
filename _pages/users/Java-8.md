@@ -13,7 +13,7 @@ This update site ***requires Java 8***. Be sure to [check your Java version](Tro
 
 To activate it in your Fiji setup:
 
--   [{% include bc content='Help|Update...'%}](/update-sites)
+-   [{% include bc path='Help|Update...'%}](/update-sites)
 -   Click *Manage update sites*
 -   Check *Java-8*
 -   Click *Close*

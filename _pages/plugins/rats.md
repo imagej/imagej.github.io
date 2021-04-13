@@ -37,7 +37,7 @@ Plugin Usage
 
 ![](/media/RATS gui.jpg "RATS_gui.jpg")
 
-Load an single channel image (8-bit, 16-bit or 32-bit). Note that the plugin expects bright objects on dark background, so you might want to call {% include bc content='Edit | Invert'%} if your input image has dark objects. Select the RATS plugin from the Plugins menu. The following dialog will appear:
+Load an single channel image (8-bit, 16-bit or 32-bit). Note that the plugin expects bright objects on dark background, so you might want to call {% include bc path='Edit | Invert'%} if your input image has dark objects. Select the RATS plugin from the Plugins menu. The following dialog will appear:
 
 1\. NOISE THRESHOLD: An estimate of the noise. Estimate the noise by selecting a "background" portion of the image and using ImageJ to determine the standard deviation of gray values. Oddly, lower values yield smaller particles in general. (see reference, defaults to 25).
 

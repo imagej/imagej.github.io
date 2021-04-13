@@ -25,7 +25,7 @@ This package contains tools for Stractec pQCT soft-tissue and bone images. It's 
 Installation
 ------------
 
-1\) {% include bc content='Help | Update...'%}
+1\) {% include bc path='Help | Update...'%}
 
 2\) Manage update sites
 
@@ -44,7 +44,7 @@ Installation
 Distribution analysis
 ---------------------
 
-{% include bc content='Plugins | pQCT | Distribution Analysis'%}
+{% include bc path='Plugins | pQCT | Distribution Analysis'%}
 
 The main tool for pQCT image analysis. You must open an image first before running this tool.
 
@@ -349,23 +349,23 @@ Endo- and pericortical radii are given as the distance from the centroid of the 
 Export Stratec Header
 ---------------------
 
-{% include bc content='Plugins | pQCT | Export Stratec Header'%}
+{% include bc path='Plugins | pQCT | Export Stratec Header'%}
 
 Displays the metadata saved in the pQCT image currently open.
 
 Strip Stracted Header
 ---------------------
 
-{% include bc content='Plugins | pQCT | Export Stratec Header'%}
+{% include bc path='Plugins | pQCT | Export Stratec Header'%}
 
 Can be used to save a new version of the given image file, where selected metadata fields have been stripped.
 
 Read Stratec File
 -----------------
 
-{% include bc content='Plugins | pQCT | Export Stratec Header'%}
+{% include bc path='Plugins | pQCT | Export Stratec Header'%}
 
-Use this plug-in to open Stratec pQCT images. NB {% include bc content='File | Open'%} or dragging the file doesn't work.
+Use this plug-in to open Stratec pQCT images. NB {% include bc path='File | Open'%} or dragging the file doesn't work.
 
 Test images
 -----------
@@ -379,7 +379,7 @@ To easily run the test, use the provided [macro](http://bonej.org/images/Synthet
     2.  Change the paths on line 2 and 3 to ones that match your computer, e.g.: line 2: sourceDir = C:/your/path/to/synthetic/images/. line 3: visualDir = C:/your/path/to/visual/results/. Remember the trailing "/" characters. N.B. The paths need to exist prior to executing the macro. In addition, windows operating system does not seem to work if the path contains spaces. If you are working with windows and do have spaces in your path, replace the / with \\\\.
     3.  Save the .ijm file
 2.  Open Fiji / ImageJ
-3.  {% include bc content='Plugins | Macros | Run'%}
+3.  {% include bc path='Plugins | Macros | Run'%}
 4.  Find your .ijm file
 5.  When the macro has finished, you should see the Results table
 6.  Open the resulting file with excel or open office or some other suitable program and the results should match the ones within the Synthetic data provided above.

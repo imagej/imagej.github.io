@@ -12,7 +12,7 @@ Quickstart
 ==========
 
 -   Press {% include key content='\[' %} to bring up the [Script Editor](/scripting/script-editor).
--   Select an example Groovy script from the {% include bc content='Templates | \[by language\] | Groovy'%} menu.
+-   Select an example Groovy script from the {% include bc path='Templates | \[by language\] | Groovy'%} menu.
 -   Press {% include key content='Ctrl\|R' %} to run the script!
 
 See also

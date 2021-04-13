@@ -37,7 +37,7 @@ Installation
 
 The SLIM Curve plugin is available from the "SLIM Curve" [update site](Update_site).
 
-Once you have installed the SLIM Curve plugin it becomes available on the menu under {% include bc content='Analyze | Lifetime | SLIM Curve'%}.
+Once you have installed the SLIM Curve plugin it becomes available on the menu under {% include bc path='Analyze | Lifetime | SLIM Curve'%}.
 
 Usage
 -----

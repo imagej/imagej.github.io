@@ -21,11 +21,11 @@ Installation
 
 ### ImageJ
 
-Download the jar file [Dynamic\_Reslice.jar](https://fiji.sc/tinevez/Dynamic_Reslice.jar) and drop it into the *plugins* menu. The plugin will appear in the {% include bc content='Plugins | Dynamic\_Reslice'%} menu.
+Download the jar file [Dynamic\_Reslice.jar](https://fiji.sc/tinevez/Dynamic_Reslice.jar) and drop it into the *plugins* menu. The plugin will appear in the {% include bc path='Plugins | Dynamic\_Reslice'%} menu.
 
 ### Fiji
 
-The plugin is part of the Fiji distribution, as a member of the [Fiji\_Plugins](/plugins/fiji-plugins) package. You can find it in the {% include bc content='Image | Stacks'%} menu.
+The plugin is part of the Fiji distribution, as a member of the [Fiji\_Plugins](/plugins/fiji-plugins) package. You can find it in the {% include bc path='Image | Stacks'%} menu.
 
 Usage
 -----

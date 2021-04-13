@@ -210,8 +210,8 @@ If you still have a known arrangement of tiles that is not covered by any of the
 
 This option exists, but is disabled by default as it is likely only required in non-standard scenarios. You can enable it as follows using the **script editor**:
 
--   {% include bc content='File | New | Script'%}
--   {% include bc content='Language | Beanshell'%}
+-   {% include bc path='File | New | Script'%}
+-   {% include bc path='Language | Beanshell'%}
 -   type the following line (without the 001)
 
 <!-- -->
@@ -226,8 +226,8 @@ From now on, there will be a second slider for the overlap in Y on the **current
 
 You can change the fraction of the area that is blended using the scripting language. By default it is set to 0.2 (20%), but you can change it to anything between 0 and 1. You can do so using the **script editor**:
 
--   {% include bc content='File | New | Script'%}
--   {% include bc content='Language | Beanshell'%}
+-   {% include bc path='File | New | Script'%}
+-   {% include bc path='Language | Beanshell'%}
 -   type the following line (without the 001) to change it to e.g. 10%
 
 <!-- -->
@@ -244,8 +244,8 @@ Sometimes people only want to stitch in x and y, but not in z. There is an ad-ho
 
 You can activate the option using the **script editor**:
 
--   {% include bc content='File | New | Script'%}
--   {% include bc content='Language | Beanshell'%}
+-   {% include bc path='File | New | Script'%}
+-   {% include bc path='Language | Beanshell'%}
 -   type the following line (without the 001):
 
 <!-- -->

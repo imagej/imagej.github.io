@@ -18,7 +18,7 @@ We support *virtual* splitting of datasets into smaller blocks in BigStitcher. T
 Usage
 -----
 
-The splitting functionality in **not included in the BigStitcher UI**. To split a dataset, you have to select {% include bc content='Plugins|BigStitcher|Tools|Split Images'%} in the **Fiji Main Menu**.
+The splitting functionality in **not included in the BigStitcher UI**. To split a dataset, you have to select {% include bc path='Plugins|BigStitcher|Tools|Split Images'%} in the **Fiji Main Menu**.
 
 First, you will be asked for the **dataset (XML project file) to split**. Select one as you would when [opening an existing dataset](/plugins/bigstitcher/open-existing).
 

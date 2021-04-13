@@ -73,7 +73,7 @@ Notes
 -   Peaks with flat tops are retrieved at their centers
 -   Peak coordinates are logged according to the following layout: \[*X0,Y0*\]: Original data; \[*X1,Y1*\]: Maxima; \[*X2,Y2*\]: Minima
 -   *Min. peak distance* can be used for peak width filtering
--   Use *Scientific notation* and *Decimal places* in {% include bc content='Analyze|Set Measurements...'%} to improve the representation of values that are too big or too small to be displayed in the decimal form
+-   Use *Scientific notation* and *Decimal places* in {% include bc path='Analyze|Set Measurements...'%} to improve the representation of values that are too big or too small to be displayed in the decimal form
 -   Find Peaks was initially though as a [complementary tool](Sholl_Analysis#Complementary_Tools) for [Sholl Analysis](/plugins/sholl-analysis) but it that can be applied to any dataset. For this reason, it is now part of [BAR](/plugins/bar)
 
 Related Resources

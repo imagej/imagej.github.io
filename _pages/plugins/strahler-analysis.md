@@ -107,12 +107,12 @@ Results
 The plugin produces three types of outputs:
 
 Strahler Image  
-A heat-map image, in which branches are color-coded by their Horton-Strahler numbers. By default, a calibration ramp ({% include bc content='Analyze|Tools|Calibration Bar...'%}) is added as an overlay. WYSIWYG versions (RGB images) of this *Strahler Color Map* image can be obtained by pressing {% include key content='press\|Shift\|F' %} (shortcut for {% include bc content='Image|Overlay|Flatten'%}).
+A heat-map image, in which branches are color-coded by their Horton-Strahler numbers. By default, a calibration ramp ({% include bc path='Analyze|Tools|Calibration Bar...'%}) is added as an overlay. WYSIWYG versions (RGB images) of this *Strahler Color Map* image can be obtained by pressing {% include key content='press\|Shift\|F' %} (shortcut for {% include bc path='Image|Overlay|Flatten'%}).
 
 <!-- -->
 
 Strahler table  
-Table listing Horton-Strahler counts. The extension and format of this *Strahler Table* can be specified in {% include bc content='Edit|Options|Input/Output...'%}. It contains the following data:
+Table listing Horton-Strahler counts. The extension and format of this *Strahler Table* can be specified in {% include bc path='Edit|Options|Input/Output...'%}. It contains the following data:
 
 \# End-point Branches  
 The number of branches for each Horton-Strahler order.

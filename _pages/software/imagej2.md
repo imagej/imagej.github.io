@@ -44,8 +44,8 @@ ImageJ2 provides a wealth of new features and capabilities:
 -   New and enhanced file format support via the [SCIFIO](/software/scifio) library ([see below](#Improved_image_I.2FO_with_the_SCIFIO_library "wikilink")).
 -   More powerful [Script Editor](/scripting/script-editor) with support for several scripting languages.
 -   New commands:
-    -   {% include bc content='Plugins | Debug | Dump Stack'%} for debugging when things {% include wikipedia title='Hang (computing)' text='hang'%}.
-    -   {% include bc content='Plugins | Debug | System Information'%} for reporting on versions of installed plugins and libraries.
+    -   {% include bc path='Plugins | Debug | Dump Stack'%} for debugging when things {% include wikipedia title='Hang (computing)' text='hang'%}.
+    -   {% include bc path='Plugins | Debug | System Information'%} for reporting on versions of installed plugins and libraries.
 -   Use ImageJ2's N-dimensional [ImgLib2](/imglib2)-based data structures (still in beta).
 -   Write parameterized commands and scripts:
     -   Typed inputs and outputs with no dependence on AWT user interface.
@@ -65,7 +65,7 @@ Developers can extend the capabilities of the search bar by writing [Searcher](h
 
 ### Improved image I/O with the SCIFIO library
 
-ImageJ2 uses the [SCIFIO](/software/scifio) library (SCientific Image Format Input and Output) by default for most image input tasks. You can change this behavior at any time by running {% include bc content='Edit | Options | ImageJ2'%} and modifying the *Use SCIFIO when opening files* option.
+ImageJ2 uses the [SCIFIO](/software/scifio) library (SCientific Image Format Input and Output) by default for most image input tasks. You can change this behavior at any time by running {% include bc path='Edit | Options | ImageJ2'%} and modifying the *Use SCIFIO when opening files* option.
 
 For further details, see the [SCIFIO](/software/scifio) page.
 

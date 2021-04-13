@@ -12,7 +12,7 @@ If you have any comments or suggestions relating to this page, please email <em>
 Olfactory Project Neurons
 -------------------------
 
-This data set [is described here](http://www.diademchallenge.org/olfactory_projection_fibers_readme.html). I will go through loading the example "OP\_1". Each image stack in this data set is distributed as a directory of TIFF files, one per slice. To load such a stack, go to {% include bc content='File | Import | Image Sequence'%} and select the file "1.tif". You should be shown a dialog like this:
+This data set [is described here](http://www.diademchallenge.org/olfactory_projection_fibers_readme.html). I will go through loading the example "OP\_1". Each image stack in this data set is distributed as a directory of TIFF files, one per slice. To load such a stack, go to {% include bc path='File | Import | Image Sequence'%} and select the file "1.tif". You should be shown a dialog like this:
 
 ![](/media/Diadem Challenge Data-1.png "Diadem_Challenge_Data-1.png")
 
@@ -20,13 +20,13 @@ These default options should be fine - as you can see from the dialog it will ha
 
 ![](/media/Diadem Challenge Data-2.png "Diadem_Challenge_Data-2.png")
 
-Unfortunately these TIFF files do not have the separation of these slices encoded correctly, so you should correct this manually. If you go to {% include bc content='Image | Properties'%} you will see that the pixel width, pixel height and voxel depth are all set to the same value (0.3296485). The [page with information about the data set](http://www.diademchallenge.org/olfactory_projection_fibers_readme.html) tells us that the z-separation should be three times the x and y separation, so correct the voxel depth to 3 times 0.3296485, like this:
+Unfortunately these TIFF files do not have the separation of these slices encoded correctly, so you should correct this manually. If you go to {% include bc path='Image | Properties'%} you will see that the pixel width, pixel height and voxel depth are all set to the same value (0.3296485). The [page with information about the data set](http://www.diademchallenge.org/olfactory_projection_fibers_readme.html) tells us that the z-separation should be three times the x and y separation, so correct the voxel depth to 3 times 0.3296485, like this:
 
 ![](/media/Diadem Challenge Data-4.png "Diadem_Challenge_Data-4.png")
 
-... and then press "OK". To save yourself from having to re-enter this calibration information, and to be able to open the stack from the "Recent Files" menu, etc. I think it's helpful to now save this stack as a single TIFF. So, I would go to "{% include bc content='File | Save As | Tiff ...'%}" and save this as OP\_1.tif in the directory above the one with individual slices.
+... and then press "OK". To save yourself from having to re-enter this calibration information, and to be able to open the stack from the "Recent Files" menu, etc. I think it's helpful to now save this stack as a single TIFF. So, I would go to "{% include bc path='File | Save As | Tiff ...'%}" and save this as OP\_1.tif in the directory above the one with individual slices.
 
-Now start the tracing plugin by going to {% include bc content='Plugins | Segmentation | Simple Neurite Tracer'%}. If you keep the default options, you should see a display like this:
+Now start the tracing plugin by going to {% include bc path='Plugins | Segmentation | Simple Neurite Tracer'%}. If you keep the default options, you should see a display like this:
 
 <img src="/media/Diadem Challenge Data-6.png" width="750"/>
 
@@ -47,7 +47,7 @@ Diadem Neocortical Layer 6 Axons
 
 [The Neocortical Layer 6 Axons](http://www.diademchallenge.org/neocortical_layer_6_axons_readme.html) data set is based on a set of image stacks that need to be stitched together. The key point here is that you must use the offsets supplied by the Diadem challenge rather than allowing Fiji to stitch the automatically - the stitching will be subtly different.
 
-Firstly, however, it will help to load each image sequence and save out the stack to a single TIFF image stack file. For each of the 6 directories, do the following: go to {% include bc content='File | Import | Image sequence'%} and select the first file in the directory (01.tif). After opening with the default options, save this out into the parent directory with the following names:
+Firstly, however, it will help to load each image sequence and save out the stack to a single TIFF image stack file. For each of the 6 directories, do the following: go to {% include bc path='File | Import | Image sequence'%} and select the first file in the directory (01.tif). After opening with the default options, save this out into the parent directory with the following names:
 
 `  directory 01 -> Tile_01_02.tif`  
 `  directory 02 -> Tile_02_02.tif`  
@@ -71,7 +71,7 @@ Now create a text file in the same directory called TileConfiguration.txt with t
 
 These offset values are taken from [the official page describing the data set](http://www.diademchallenge.org/neocortical_layer_6_axons_readme.html).
 
-Now you can stitch together the images using these offsets by going to {% include bc content='Plugins | Stitching | Stitch Collection of Images'%}, browsing to the TileConfiguration.txt file you've just created and making sure you uncheck the box "compute overlap". It should look something like this:
+Now you can stitch together the images using these offsets by going to {% include bc path='Plugins | Stitching | Stitch Collection of Images'%}, browsing to the TileConfiguration.txt file you've just created and making sure you uncheck the box "compute overlap". It should look something like this:
 
 ![](/media/Diadem Neocortical Layer 6 Axons-1.png "Diadem_Neocortical_Layer_6_Axons-1.png")
 
@@ -79,13 +79,13 @@ After clicking OK, this should stitch together all those stacks into one huge st
 
 <img src="/media/Diadem Neocortical Layer 6 Axons-2.png" width="750"/>
 
-Next, you should correct the Z-calibration of the stitched stack. The data set page tells us that the z separation is 3.03 pixels, so open up {% include bc content='Image | Properties'%} and set the Voxel Depth to 3.03 times the Pixel Width:
+Next, you should correct the Z-calibration of the stitched stack. The data set page tells us that the z separation is 3.03 pixels, so open up {% include bc path='Image | Properties'%} and set the Voxel Depth to 3.03 times the Pixel Width:
 
 ![](/media/Diadem Neocortical Layer 6 Axons-3.png "Diadem_Neocortical_Layer_6_Axons-3.png")
 
-Now you should save the stitched stack, and work from that from now on. (Since the stitched stack isn't very large (156MB) one wonders why this wasn't distributed already stitched.) Save the stack with "{% include bc content='File | Save As | Tiff...'%}".
+Now you should save the stitched stack, and work from that from now on. (Since the stitched stack isn't very large (156MB) one wonders why this wasn't distributed already stitched.) Save the stack with "{% include bc path='File | Save As | Tiff...'%}".
 
-To load the SWC files, start up the tracer with {% include bc content='Plugins | Segmentation | Simple Neurite Tracer'%}. You should see something like this after it has started, with the stack rendered in the 3D Viewer:
+To load the SWC files, start up the tracer with {% include bc path='Plugins | Segmentation | Simple Neurite Tracer'%}. You should see something like this after it has started, with the stack rendered in the 3D Viewer:
 
 <img src="/media/Diadem Neocortical Layer 6 Axons-4.png" width="750"/>
 
@@ -102,7 +102,7 @@ Cerebellar Climbing Fibers
 
 We will go through loading in the CF\_1 image stack from the [Cerebellar Climbing Fibers](http://www.diademchallenge.org/cerebellar_climbing_fibers_readme.html) data set. The raw data for this image is stored in RGB and about 3.4GB in size, so for convenience you may wish to load this as a virtual stack (i.e. one where the slices are loaded from disk as required), convert it to 8-bit and resave the file first. In any case, I would recommend using a machine with 2GB of RAM (at the very least) to deal with these files.
 
-To load the files as a virtual stack, go to "{% include bc content='File | Import | Image Sequence ...'%}" and select the first file in the sequence, "01.tif". You will be presented with the import dialog, in which you should make sure that "Use virtual stack" is selected.
+To load the files as a virtual stack, go to "{% include bc path='File | Import | Image Sequence ...'%}" and select the first file in the sequence, "01.tif". You will be presented with the import dialog, in which you should make sure that "Use virtual stack" is selected.
 
 ![](/media/Diadem Cerebellar-1.png "Diadem_Cerebellar-1.png")
 
@@ -110,27 +110,27 @@ To load the files as a virtual stack, go to "{% include bc content='File | Impor
 
 <img src="/media/Diadem Cerebellar-2.png" width="750"/>
 
-After loading this you need to convert this to 8-bit. You can do this in any number of ways, and if you're actively working on a tracing task with this data you will probably want to do this in such a way that picks out the brown coloured neuronal processes. However, a simple way just for viewing purposes is to use the {% include bc content='Image | Color | RGB to Luminance'%} option. (Another option is to use {% include bc content='Image | Type | 8-bit'%}.) This will produce results like this:
+After loading this you need to convert this to 8-bit. You can do this in any number of ways, and if you're actively working on a tracing task with this data you will probably want to do this in such a way that picks out the brown coloured neuronal processes. However, a simple way just for viewing purposes is to use the {% include bc path='Image | Color | RGB to Luminance'%} option. (Another option is to use {% include bc path='Image | Type | 8-bit'%}.) This will produce results like this:
 
 <img src="/media/Diadem Cerebellar-3.png" width="750"/>
 
 You can close the original virtual stack now.
 
-It is a good idea to invert this image, since the 3D Viewer will make the low values of the image more transparent, and Simple Neurite Tracer assumes that neurons are brighter than their background. So, go to {% include bc content='Edit | Invert'%} and select "Yes" in response to the question about whether to process all 34 images. The results should look like this:
+It is a good idea to invert this image, since the 3D Viewer will make the low values of the image more transparent, and Simple Neurite Tracer assumes that neurons are brighter than their background. So, go to {% include bc path='Edit | Invert'%} and select "Yes" in response to the question about whether to process all 34 images. The results should look like this:
 
 <img src="/media/Diadem Cerebellar-4.png" width="750"/>
 
-Before saving this out as a single 862MB stack, it is a good idea to correct the calibration of the image. The [data set web page](http://www.diademchallenge.org/cerebellar_climbing_fibers_readme.html) tells us that the separation between slices is 8.08 pixels. So, if you bring up the {% include bc content='Image | Properties'%} dialog, then you can correct the voxel depth to be 8.08 times the pixel width:
+Before saving this out as a single 862MB stack, it is a good idea to correct the calibration of the image. The [data set web page](http://www.diademchallenge.org/cerebellar_climbing_fibers_readme.html) tells us that the separation between slices is 8.08 pixels. So, if you bring up the {% include bc path='Image | Properties'%} dialog, then you can correct the voxel depth to be 8.08 times the pixel width:
 
 ![](/media/Diadem Cerebellar-5.png "Diadem_Cerebellar-5.png")
 
-Now save this as a single TIFF stack called CF\_1.tif by going to "{% include bc content='File | Save As | Tiff ...'%}", saving it in the directory above the one with the slices, to avoid confusion.
+Now save this as a single TIFF stack called CF\_1.tif by going to "{% include bc path='File | Save As | Tiff ...'%}", saving it in the directory above the one with the slices, to avoid confusion.
 
-You can now start the tracer with {% include bc content='Plugins | Segmentation | Simple Neurite Tracer'%}. This may take some time, since there is a lot of data to load in to the 3D viewer. The result should look like this:
+You can now start the tracer with {% include bc path='Plugins | Segmentation | Simple Neurite Tracer'%}. This may take some time, since there is a lot of data to load in to the 3D viewer. The result should look like this:
 
 <img src="/media/Diadem Cerebellar-6.png" width="750"/>
 
-You may wish to adjust the transparency in the 3D viewer by selecting the image volume (left click on the image in the 3D viewer) and then going to "{% include bc content='Edit | Attributes | Change Transparency...'%}":
+You may wish to adjust the transparency in the 3D viewer by selecting the image volume (left click on the image in the 3D viewer) and then going to "{% include bc path='Edit | Attributes | Change Transparency...'%}":
 
 ![](/media/Diadem Cerebellar-7.png "Diadem_Cerebellar-7.png")
 
@@ -147,7 +147,7 @@ Hippocampal CA3 Interneuron
 
 The [Hippocampal CA3 Interneuron](http://www.diademchallenge.org/hippocampal_ca3_Interneuron_readme.html) data set is difficult to deal with, since even after converting the stack to 8-bit values, it is still nearly 2GB in size.
 
-As with the other stacks, you should load the image stack using {% include bc content='Import | Image Sequence'%} and selecting the "Use virtual stack" option:
+As with the other stacks, you should load the image stack using {% include bc path='Import | Image Sequence'%} and selecting the "Use virtual stack" option:
 
 ![](/media/Diadem Hippocampal CA3 Interneuron-2.png "Diadem_Hippocampal_CA3_Interneuron-2.png")
 
@@ -155,11 +155,11 @@ That should load in the image data:
 
 <img src="/media/Diadem Hippocampal CA3 Interneuron-3.png" width="750"/>
 
-Now convert it to 8-bit with {% include bc content='Image | Type | 8-bit'%}. (The same comments as above regarding converting to 8-bit apply here as well.)
+Now convert it to 8-bit with {% include bc path='Image | Type | 8-bit'%}. (The same comments as above regarding converting to 8-bit apply here as well.)
 
 <img src="/media/Diadem Hippocampal CA3 Interneuron-4.png" width="750"/>
 
-... and invert the image with {% include bc content='Edit | Invert'%}, saying "Yes" to the question about whether to process all 110 slices:
+... and invert the image with {% include bc path='Edit | Invert'%}, saying "Yes" to the question about whether to process all 110 slices:
 
 <img src="/media/Diadem Hippocampal CA3 Interneuron-5.png" width="750"/>
 
@@ -167,9 +167,9 @@ Now set the voxel depth to 1.52 times the voxel width, as specified on the [data
 
 ![](/media/Diadem Hippocampal CA3 Interneuron-6.png "Diadem_Hippocampal_CA3_Interneuron-6.png")
 
-And then I would save this file as a TIFF stack (with {% include bc content='Save As | Tiff...'%}) so that you don't have to go through these steps again. That will need about 2GB of disk space, and will only work if your filesystem supports single files of that size.
+And then I would save this file as a TIFF stack (with {% include bc path='Save As | Tiff...'%}) so that you don't have to go through these steps again. That will need about 2GB of disk space, and will only work if your filesystem supports single files of that size.
 
-If you now start {% include bc content='Plugins | Segmentation | Simple Neurite Tracer'%} with its default options you should (eventually!) see something like the following:
+If you now start {% include bc path='Plugins | Segmentation | Simple Neurite Tracer'%} with its default options you should (eventually!) see something like the following:
 
 <img src="/media/Diadem Hippocampal CA3 Interneuron-7.png" width="750"/>
 
@@ -192,7 +192,7 @@ These 152 image stacks are in total so large that stitching them together and de
 -   Correct the calibration so that the voxel depth is 3.04 times the pixel width
 -   Write out each stack as a single TIFF stack (e.g. as well as the directory "000" you will also have "000.tif"
 
-Finally, the script will output a TileConfiguration.txt file in the same directory. Supposing one had vast amounts of RAM, this file could be used unaltered with {% include bc content='Plugins | Stitching | Stitch Collection of Images'%}, as above. However, the file is still useful even with modest amounts of RAM, since you can copy this file to a new name and edit out all but a few of the images that are listed there. For example, here are image stacks 000 to 007 stitched together:
+Finally, the script will output a TileConfiguration.txt file in the same directory. Supposing one had vast amounts of RAM, this file could be used unaltered with {% include bc path='Plugins | Stitching | Stitch Collection of Images'%}, as above. However, the file is still useful even with modest amounts of RAM, since you can copy this file to a new name and edit out all but a few of the images that are listed there. For example, here are image stacks 000 to 007 stitched together:
 
 <img src="/media/Neuromuscular-0-7-stitched.png" width="750"/>
 

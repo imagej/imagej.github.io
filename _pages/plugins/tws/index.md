@@ -41,7 +41,7 @@ The main goal of this plugin is to work as a **bridge between the Machine Learni
 The Graphical User Interface
 ----------------------------
 
-{% include thumbnail src='/media/Trainable-Weka-Segmentation-GUI.png' title='Example of the first look of the plugin window when using it on a TEM image'%} [Trainable Weka Segmentation](/plugins/tws) runs on any 2D or 3D image (grayscale or color). To use 2D features, you need to select the menu command {% include bc content='Plugins | Segmentation | Trainable Weka Segmentation'%}. For 3D features, call the plugin under {% include bc content='Plugins | Segmentation | Trainable Weka Segmentation 3D'%}. Both commands will use the same GUI but offer different feature options in their settings.
+{% include thumbnail src='/media/Trainable-Weka-Segmentation-GUI.png' title='Example of the first look of the plugin window when using it on a TEM image'%} [Trainable Weka Segmentation](/plugins/tws) runs on any 2D or 3D image (grayscale or color). To use 2D features, you need to select the menu command {% include bc path='Plugins | Segmentation | Trainable Weka Segmentation'%}. For 3D features, call the plugin under {% include bc path='Plugins | Segmentation | Trainable Weka Segmentation 3D'%}. Both commands will use the same GUI but offer different feature options in their settings.
 
 By default, the plugin starts with two classes, i.e. it will produce **binary pixel classification**. The user can add traces to both classes using the whole set of [tools for ROI](https://imagej.net/docs/guide/userguide-19b.html#toc-Section-19) (region of interest) drawing available in Fiji. That includes rectangular, round rectangular, oval, elliptical, brush polygon and freehand selections. By default, the freehand selection tool (of 1 pixel width) is automatically selected.
 
@@ -169,7 +169,7 @@ The detailed implementation of these 2D filters can be found in the [source code
 
 ##### Training features (3D)
 
-{% include thumbnail src='/media/TWS-3D-Settings-dialog.png' title='Settings dialog for the Trainable Weka Segmentation 3D plugin.'%}When calling the plugin from the menu command {% include bc content='Plugins | Segmentation | Trainable Weka Segmentation 3D'%} the set of available image features will be as follows:
+{% include thumbnail src='/media/TWS-3D-Settings-dialog.png' title='Settings dialog for the Trainable Weka Segmentation 3D plugin.'%}When calling the plugin from the menu command {% include bc path='Plugins | Segmentation | Trainable Weka Segmentation 3D'%} the set of available image features will be as follows:
 
 -   **Gaussian blur**: performs $$n$$ individual 3D convolutions with Gaussian kernels with the normal $$n$$ variations of $$\sigma$$. The larger the radius the more blurred the image becomes until the pixels are homogeneous.
 -   **Hessian**: using [FeatureJ](/plugins/featurej) it computes for each image element (voxel) the eigenvalues of the Hessian, which can be used for example to discriminate locally between plate-like, line-like, and blob-like image structures. More specifically, it calculates the magnitude of the largest, middle and smallest eigenvalue of the Hessian tensor. It requires enabling the [ImageScience](/plugins/imagescience) update site in the updater. It uses smoothing scale $$\sigma$$.
@@ -193,7 +193,7 @@ The detailed implementation of these 2D filters can be found in the [source code
 
 {% include thumbnail src='/media/AWS-Classifier-selection.png' title='Classifier selection in the Trainable Weka Segmentation [Settings dialog](Advanced_Weka_Segmentation#Settings).'%} The default classifier is [FastRandomForest](https://code.google.com/p/fast-random-forest/), a **multi-threaded** version of {% include wikipedia title='Random forest' text='random forest'%} by [Fran Supek](https://scholar.google.com/citations?user=Rz3rPeUAAAAJ), initialized with 200 trees and 2 random features per node. However the user can select any available classifier in the [Weka](http://www.cs.waikato.ac.nz/ml/weka/) by clicking on "Choose" button. By left-clicking on the classifier text we can also edit the classifier options.
 
-**If you do not find the classifier you want**, you might have to install the Weka package that includes it. For that, you need to launch the Weka GUI Chooser (by clicking on the Weka button of the left panel of the plugin GUI) and use the [ Weka Package Manager](/plugins/tws/how-to-install-new-classifiers) (under {% include bc content='Tools | Package manager'%}). For a step-by-step description on how to install new packages, have a look at this [tutorial](/plugins/tws/how-to-install-new-classifiers).
+**If you do not find the classifier you want**, you might have to install the Weka package that includes it. For that, you need to launch the Weka GUI Chooser (by clicking on the Weka button of the left panel of the plugin GUI) and use the [ Weka Package Manager](/plugins/tws/how-to-install-new-classifiers) (under {% include bc path='Tools | Package manager'%}). For a step-by-step description on how to install new packages, have a look at this [tutorial](/plugins/tws/how-to-install-new-classifiers).
 
 ##### Class names
 

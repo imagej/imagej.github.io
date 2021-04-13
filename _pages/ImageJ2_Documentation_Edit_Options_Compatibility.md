@@ -5,7 +5,7 @@ categories: software
 description: test description
 ---
 
-This page documents the {% include bc content='Edit | Options | Compatibility'%} command dialog.
+This page documents the {% include bc path='Edit | Options | Compatibility'%} command dialog.
 
 Some commands have an associated ImageJ 1.x compatibility mode flag. The flag setting affects how some commands behave in ImageJ. The authors of ImageJ2 want to provide a mechanism whereby ImageJ 1.x behavior can be overridden when it makes sense. This allows breaks to be made with the past if necessary. Setting the mode to "Modern" will override some ImageJ 1.x behavior while setting it to "/Compatibility" will maintain ImageJ 1.x behavior as much as possible.
 

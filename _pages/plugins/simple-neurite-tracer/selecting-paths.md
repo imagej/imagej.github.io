@@ -30,4 +30,4 @@ There are various ways to select a path in the 3D viewer, from easiest to most d
 
 <!-- -->
 
--   Alternatively, you can click on the path in the 3D view. Note that you will probably have the problem that clicks in the 3D view only select the <i>volume</i> rather than the paths - you can get around this by selecting the volume and then unticking {% include bc content='Edit | Hide/Show | Show content'%} to hide the volume rendering. Then clicking on the paths will be easy.
+-   Alternatively, you can click on the path in the 3D view. Note that you will probably have the problem that clicks in the 3D view only select the <i>volume</i> rather than the paths - you can get around this by selecting the volume and then unticking {% include bc path='Edit | Hide/Show | Show content'%} to hide the volume rendering. Then clicking on the paths will be easy.

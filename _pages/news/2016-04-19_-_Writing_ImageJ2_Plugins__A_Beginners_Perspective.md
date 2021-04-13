@@ -84,9 +84,9 @@ If you download Fiji via [Fiji/Downloads](/fiji/downloads) then take care to sel
 
 In any case you need to open a new project, assign the project name, its directory location and add the JAR files as libraries.
 
--   {% include bc content='File|New Project'%}: Java Application (Project Name, Project Location)
--   Right click on the Project in the tree view {% include bc content='window|Properties'%}
--   {% include bc content='Libraries|Add JAR/Folder'%}: point to the JAR files you downloaded for ImageJ/Fiji.
+-   {% include bc path='File|New Project'%}: Java Application (Project Name, Project Location)
+-   Right click on the Project in the tree view {% include bc path='window|Properties'%}
+-   {% include bc path='Libraries|Add JAR/Folder'%}: point to the JAR files you downloaded for ImageJ/Fiji.
 
 A somewhat outdated but rather detailed description how to work with an older version of NetBeans (version 6.7) including bit of customization of the `build.xml` file can be found [here](http://www.dent.med.uni-muenchen.de/~kkunzelm/htdocs/6_software-netbeans.html).
 
@@ -106,7 +106,7 @@ The following was adapted from the [Developing ImageJ in NetBeans](/develop/netb
 Import and build the project:
 
 -   Run NetBeans
--   Choose {% include bc content='Team|Git|Clone...'%} from the NetBeans menu
+-   Choose {% include bc path='Team|Git|Clone...'%} from the NetBeans menu
 -   For the Repository URL, enter: [`https://github.com/fiji/fiji`](https://github.com/fiji/fiji) or alternatively enter [`https://github.com/imagej/imagej`](https://github.com/imagej/imagej)
 -   Click Next, check the `master*` branch, then Next again, then Finish
 -   When prompted, click Open Project... in case of Error Messages click on "Resolve".
@@ -142,7 +142,7 @@ Build the ImageJ Tutorial Plugin with IntelliJ IDEA, Git and Maven
 **Import and build the project:**
 
 -   Run IntelliJ IDEA
--   Choose {% include bc content='File|New|Project from Version Control|Git'%} from the main menu
+-   Choose {% include bc path='File|New|Project from Version Control|Git'%} from the main menu
 
 *ImageJ 1.x Plugin*
 
@@ -182,7 +182,7 @@ Start from an existing plugin as a template:
 
 Import it as a sample project into your IDE and modify this project according to your needs:
 
--   NetBeans: {% include bc content='File|Open Project'%}
+-   NetBeans: {% include bc path='File|Open Project'%}
 
 The following lines are copied/cited from the `README.md` file of the `minimal-ij1-plugin`:
 
@@ -304,13 +304,13 @@ On Linux several java version can be installed. Select the preferred version in 
 
 Note: It might be necessary to use `sudo`.
 
-If necessary, tell NetBeans to use JDK 1.8 as the default JRE for new projects (i. e. on Debian Linux: {% include bc content='Project Properties|Build|Compile...'%} `/usr/lib/jvm/java-1.8.0-openjdk-amd64`) or alternatively set the `netbeans_jdkhome` property in your NetBeans config file. It should be in the local NetBeans directory, for example `./netbeans-8.0/netbeans.conf`.
+If necessary, tell NetBeans to use JDK 1.8 as the default JRE for new projects (i. e. on Debian Linux: {% include bc path='Project Properties|Build|Compile...'%} `/usr/lib/jvm/java-1.8.0-openjdk-amd64`) or alternatively set the `netbeans_jdkhome` property in your NetBeans config file. It should be in the local NetBeans directory, for example `./netbeans-8.0/netbeans.conf`.
 
 Where can I find example plugins?
 ---------------------------------
 
 -   [ImageJ Tutorials](https://github.com/imagej/tutorials/)
-    -   In NetBeans: {% include bc content='Team|Git|Clone'%}
+    -   In NetBeans: {% include bc path='Team|Git|Clone'%}
     -   Repository URL: https://github.com/imagej/tutorials
     -   Edit "destination" directory
     -   Next
@@ -435,12 +435,12 @@ Adapted from [StackOverflow \#7548008](http://stackoverflow.com/q/7548008):
 
 **In IntelliJ IDEA**
 
--   Create a new Maven Project with {% include bc content='File|New Project'%}
+-   Create a new Maven Project with {% include bc path='File|New Project'%}
 -   Select Maven on the left and click *Next*
 -   Choose your custom GroupID (eg. com.yourwebsite) and an ArtifactID as single identifier for this project (eg. project\_name)
 -   Note that for ImageJ 1.x Plugins a "\_" in the project name/ identifier is required for ImageJ 1.x Plugins
 -   The project structure required by Maven will be created for you
--   For Git support (recommended): {% include bc content='VCS|Import into Version Control|Git'%}
+-   For Git support (recommended): {% include bc path='VCS|Import into Version Control|Git'%}
 -   Copy all `.java` files into *\[project\_name\]/src/main/java*
 -   Copy your `plugins.config` file into *\[project\_name\]/src/main/resources*
 -   In the main project directory *\[project\_name\]/* you can find a `pom.xml` which has to be edited like the example shown in the previous chapter

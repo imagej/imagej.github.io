@@ -22,7 +22,7 @@ Requirements:
 
 {% include tip id='bioformat' tip='Saving ""bioformats\_package.jar"" in .\\ImageJ.app\\plugins\\ seems to be the best way to use the macro in stable conditions.' %} Use the ImageJ Updater and see the instructions [How to follow a 3rd party update site](https://imagej.net/How_to_follow_a_3rd_party_update_site) select FAST (http://sites.imagej.net/FAST) from the available site list.
 
-New commands should then appear in ImageJ '{% include bc content='Plugins | FAST'%}' menu.
+New commands should then appear in ImageJ '{% include bc path='Plugins | FAST'%}' menu.
 
 Image Processing
 ----------------

@@ -11,7 +11,7 @@ ImageJ has a lot of keyboard shortcuts.
 Listing all keyboard shortcuts
 ------------------------------
 
-For a verbose list of keyboard shortcuts, call {% include bc content='Plugins | Shortcuts | List Shortcuts'%}.
+For a verbose list of keyboard shortcuts, call {% include bc path='Plugins | Shortcuts | List Shortcuts'%}.
 
 The Command Launcher
 --------------------
@@ -68,10 +68,10 @@ The key defined in square bracket is case sensitive ! If a capital letter is use
 ### Option 2: Save the macro(s) as a toolset
 
 The shortcut should be defined in square bracket like for option 1, but instead of editing the existing StartupMacros file, the macros(s) can be saved as a separate MyShortcut.ijm or .txt file in the ImageJ/Fiji subfolder `macros/toolsets`.  
-Then restart ImageJ/Fiji and click the {% include bc content='&gt;&gt;'%} at the rightmost side of the fiji toolbar and click the entry MyShortcut. This will install your macros and thus activate the associated shortcuts.  
+Then restart ImageJ/Fiji and click the {% include bc path='&gt;&gt;'%} at the rightmost side of the fiji toolbar and click the entry MyShortcut. This will install your macros and thus activate the associated shortcuts.  
 This option is more convenient to distribute macros with keyboard shortcuts to colleagues or via an update site.
 
 ### Option 3: Associate shortcut to a plugin menu entry
 
 The second possibility consist in saving the macro code as a small script file into the `./Fiji.app/scripts/Plugins/` folder, so that it appears in the menu upon restart.  
-Then you can register a shortcut using {% include bc content='Plugins|Shortcuts|Add Shortcut...'%}
+Then you can register a shortcut using {% include bc path='Plugins|Shortcuts|Add Shortcut...'%}

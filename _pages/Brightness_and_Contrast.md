@@ -12,7 +12,7 @@ This tool may be used to adjust the brightness and contrast of an active image.
 Usage
 -----
 
-The Brightness and Contrast tool may be accessed through {% include bc content='Image | Adjust | Brightness/Contrast'%} or {% include key content='Ctrl\|Shift\|C' %}.
+The Brightness and Contrast tool may be accessed through {% include bc path='Image | Adjust | Brightness/Contrast'%} or {% include key content='Ctrl\|Shift\|C' %}.
 
 <figure><img src="/media/Brightness Contrast Window.png" title="Brightness_Contrast_Window.png" width="266" height="177" alt="Brightness_Contrast_Window.png" /><figcaption aria-hidden="true">Brightness_Contrast_Window.png</figcaption></figure>
 
@@ -20,7 +20,7 @@ The upper and lower limits of the display range can be adjusted by modifying the
 
 Selecting 'OK' will make the specified changes to the display and close the Brightness/Contrast window. All channels in an image will be simultaneously updated automatically.
 
-ImageJ may provide intelligent thresholding based on the image's histogram through {% include bc content='Image | Adjust | Auto-Contrast'%} or {% include key content='Ctrl\|Alt\|Shift\|L' %}. Repeated usage of this process will allow more pixel values to become saturated.
+ImageJ may provide intelligent thresholding based on the image's histogram through {% include bc path='Image | Adjust | Auto-Contrast'%} or {% include key content='Ctrl\|Alt\|Shift\|L' %}. Repeated usage of this process will allow more pixel values to become saturated.
 
 Example
 -------

@@ -12,8 +12,8 @@ description: test description
 How to read DICOM files into ImageJ?
 ------------------------------------
 
--   ImageJ has built-in support for reading some kinds of DICOM files. Try {% include bc content='File | Open'%} and see how it goes.
--   The [Bio-Formats](/formats/bio-formats) plugin supports some kinds of DICOM files, too. Bio-Formats is available in the [Fiji](/fiji) distribution of ImageJ. Try {% include bc content='File | Import | Bio-Formats'%}.
+-   ImageJ has built-in support for reading some kinds of DICOM files. Try {% include bc path='File | Open'%} and see how it goes.
+-   The [Bio-Formats](/formats/bio-formats) plugin supports some kinds of DICOM files, too. Bio-Formats is available in the [Fiji](/fiji) distribution of ImageJ. Try {% include bc path='File | Import | Bio-Formats'%}.
 -   The [Tudor Dicom Tools](http://santec.tudor.lu/project/dicom) plugin suite can read and write many kinds of DICOM, and provide some support for working with DICOM metadata structures.
 
 How to save DICOM files from ImageJ?

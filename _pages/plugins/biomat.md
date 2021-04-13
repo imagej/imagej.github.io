@@ -20,9 +20,9 @@ Plugins for 3D image preprocessing.
 
 Preprocessing example: [Image of capillaries in brain](https://imagej.net/_images/2/2e/Capillaries_brain.zip)
 
--   {% include bc content='Plugins | Biomat | Stack Linear Contrast'%} with parameters (multiplyers) "first"= 1.0 and "last"= 3.0
--   {% include bc content='Process | Filters | Gaussian blur 3D'%} with "sigma"= 1 pixel
--   {% include bc content='Plugins | Biomat | Lipschitz 3D Filter'%} with parameter "slope"= 2 / pixel
+-   {% include bc path='Plugins | Biomat | Stack Linear Contrast'%} with parameters (multiplyers) "first"= 1.0 and "last"= 3.0
+-   {% include bc path='Process | Filters | Gaussian blur 3D'%} with "sigma"= 1 pixel
+-   {% include bc path='Plugins | Biomat | Lipschitz 3D Filter'%} with parameter "slope"= 2 / pixel
 
 Plugins for detection of fibres in 3D image.
 --------------------------------------------
@@ -31,15 +31,15 @@ Plugins for detection of fibres in 3D image.
 
 Example: [Image of capillaries in adipose tissue](https://imagej.net/_images/e/e8/Capillaries_adipose.zip).
 
--   {% include bc content='Plugins | Biomat | Tensor Line 3D Filter'%} with "sigma" set to 3 pixels
--   {% include bc content='Image | Adjust | Brightness/Contrast'%}
--   {% include bc content='Process | Filters | Gaussian blur 3D'%} with "sigma"= 1 pixel
+-   {% include bc path='Plugins | Biomat | Tensor Line 3D Filter'%} with "sigma" set to 3 pixels
+-   {% include bc path='Image | Adjust | Brightness/Contrast'%}
+-   {% include bc path='Process | Filters | Gaussian blur 3D'%} with "sigma"= 1 pixel
 
 **Vector Line 3D Filter** - enhances white fibers of varying thickness. Crossection of the fibers need not be circular. Parameter "sigma" in pixels corresponds to the largest diameter.
 
 Example: [Image of capillaries in embryonic heart](https://imagej.net/_images/e/e9/Capillaries_heart.zip).
 
--   {% include bc content='Plugins | Biomat | Vector Line 3D Filter'%} with parameters "sigma"= 4 pixels, "scale number"= 2
+-   {% include bc path='Plugins | Biomat | Vector Line 3D Filter'%} with parameters "sigma"= 4 pixels, "scale number"= 2
 
 Plugins for evaluation of 2D images using heat equation.
 --------------------------------------------------------

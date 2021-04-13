@@ -8,7 +8,7 @@ description: test description
 For users
 ---------
 
--   If the plugin is published on an [ImageJ update site](/update-sites), you can run {% include bc content='Help | Update'%} then click the *Manage update sites* button to enable it. Not only does this install the plugins for you automatically, but you will also be notified of any updates whenever they are released.
+-   If the plugin is published on an [ImageJ update site](/update-sites), you can run {% include bc path='Help | Update'%} then click the *Manage update sites* button to enable it. Not only does this install the plugins for you automatically, but you will also be notified of any updates whenever they are released.
 
 <!-- -->
 
@@ -22,7 +22,7 @@ For users
 
 This will ask you for the <u>destination</u> of the plugin, just hitting *Save* is safe.
 
--   Alternatively, use {% include bc content='Plugins | Install Plugin...'%}:
+-   Alternatively, use {% include bc path='Plugins | Install Plugin...'%}:
 
 
 <img src="/media/Install-Plugin.png" width="550"/>
@@ -32,7 +32,7 @@ This will ask you for the <u>destination</u> of the plugin, just hitting *Save* 
 
 It will ask you for the file name of the plugin, and install the given file.
 
--   You can also copy the *.jar*, *.class* or *.java* files (or a script in any language Fiji supports) to *Fiji.app/plugins/*, followed by calling {% include bc content='Help | Refresh Menus'%}.
+-   You can also copy the *.jar*, *.class* or *.java* files (or a script in any language Fiji supports) to *Fiji.app/plugins/*, followed by calling {% include bc path='Help | Refresh Menus'%}.
 
 
 **Note:** On MacOSX, you need to {% include key content='Ctrl' %}+{% include key content='click' %} on the *Fiji* icon in the Finder and select *Show package contents* to see the *plugins/* folder.
@@ -54,7 +54,7 @@ The .config file should look something like this:
 
 `       File, "Show Prime Numbers", Primes_("")`
 
-where {% include bc content='File'%} is the menu you want to add the item to -- at the moment, the only valid choices are {% include bc content='Plugins'%}, {% include bc content='Plugins | <submenu>'%}, {% include bc content='File | Import'%}, {% include bc content='File | Save'%}, {% include bc content='Analyze | Tools'%}, {% include bc content='Help | About'%} and {% include bc content='Edit | Options'%}.
+where {% include bc path='File'%} is the menu you want to add the item to -- at the moment, the only valid choices are {% include bc path='Plugins'%}, {% include bc path='Plugins | <submenu>'%}, {% include bc path='File | Import'%}, {% include bc path='File | Save'%}, {% include bc path='Analyze | Tools'%}, {% include bc path='Help | About'%} and {% include bc path='Edit | Options'%}.
 
 Next comes the title of the menu item, and lastly the class name of the plugin with a parameter that will be passed to the run() method of that class. It must a fully qualified java name (e.g. com.sun.java.something) if the plugin belongs to a java package.
 

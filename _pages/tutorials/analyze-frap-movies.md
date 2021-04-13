@@ -13,7 +13,7 @@ Once the user has loaded a good FRAP movie, [well aligned with no drift](/tutori
 -   Draw a ROI for the FRAP zone, and store it as the **first** ROI in the ROI manager (by pressing the {% include key content='T' %} key)
 -   Do the same for a control zone, out of the FRAP zone
 
-Then load this script in the [Script Editor](/scripting/script-editor), choose {% include bc content='Language | Python'%}, and run it. It will measure the FRAP intensity for all frames, try to find the FRAP frame (by finding the one with the minimal FRAP ROI intensity), and fit the FRAP curve by an increasing exponential. The parameters of the fit can be then read in the log window, and the FRAP curve and its fit are plotted. Careful:the background is taken as the intensity in the FRAP region just after the FRAP pulse.
+Then load this script in the [Script Editor](/scripting/script-editor), choose {% include bc path='Language | Python'%}, and run it. It will measure the FRAP intensity for all frames, try to find the FRAP frame (by finding the one with the minimal FRAP ROI intensity), and fit the FRAP curve by an increasing exponential. The parameters of the fit can be then read in the log window, and the FRAP curve and its fit are plotted. Careful:the background is taken as the intensity in the FRAP region just after the FRAP pulse.
 
 This script uses only ImageJ functions for everything, but could be tuned to use more fancy Fiji-included plotting library, such as JFreeChart.
 

@@ -50,11 +50,11 @@ The Retinex plugin was added by Francisco Jiménez Hernández and Gabriel Landin
 
 There is now a plugin calculating the *Shape Index Map*, a per-pixel value describing the shape of the height-field corresponding to the image.
 
-It is now possible to turn a binary image of points into a point selection, by starting {% include bc content='Edit | Selection | Points from Mask'%}.
+It is now possible to turn a binary image of points into a point selection, by starting {% include bc path='Edit | Selection | Points from Mask'%}.
 
 There is now a plugin that saves the current image in EPS (Encapsulated PostScript) format. Thanks to Wilhelm Burger.
 
-Use {% include bc content='Plugins | Transform | Panorama equirectangular view'%} to look at 360° panorama photographs and pan around. Thanks to Stephan Saalfeld.
+Use {% include bc path='Plugins | Transform | Panorama equirectangular view'%} to look at 360° panorama photographs and pan around. Thanks to Stephan Saalfeld.
 
 User-visible changes
 ====================
@@ -87,7 +87,7 @@ Fiji will be able to use native libraries put into Fiji.app/lib/<platform>/.
 
 Calling **fiji-<platform> --updater** calls a command-line version of the Fiji Updater; this is useful in headless setups.
 
-Any script or macro can now live in any menu, by putting it into Fiji.app/plugins/Scripts/. For example, if you want to have a macro in {% include bc content='File | Import'%}, you might save it to Fiji.app/plugins/Scripts/File/Import/.
+Any script or macro can now live in any menu, by putting it into Fiji.app/plugins/Scripts/. For example, if you want to have a macro in {% include bc path='File | Import'%}, you might save it to Fiji.app/plugins/Scripts/File/Import/.
 
 As always, Fiji was synchronized frequently with ImageJ, and a few bug fixes were contributed to ImageJ through Fiji. Thanks to {% include person content='Rasband' %}.
 
@@ -95,9 +95,9 @@ Fiji's bundled Java Runtime Environment is now at version 1.6u24 (to update, run
 
 Too many bug fixes and improvements to count in the TrakEM2 components. Thanks Albert Cardona and Stephan Saalfeld.
 
-Add the {% include bc content='Plugins | Examples | Extended Profile Plot'%} script to get profile plots of closed polygons.
+Add the {% include bc path='Plugins | Examples | Extended Profile Plot'%} script to get profile plots of closed polygons.
 
-Add *Scale to DPI* function to {% include bc content='Image | Adjust'%} menu, thanks to Curtis Rueden.
+Add *Scale to DPI* function to {% include bc path='Image | Adjust'%} menu, thanks to Curtis Rueden.
 
 Lots of bug fixes and improvements in the 3D Viewer. To name just a few: orthoslice changes are now recordable, the animation axis can be specified, the rotation step is adjustable, import/export for .stl files was added (for 3D printers), the bounding box now has ticks, the transfer function is adjustable, single objects are auto-selected, the current image is added by default, ImageJ is no longer allowed to intercept key presses, multiple 3D Viewers can be synchronized, there is now a "Take snapshot" menu item, fullscreen mode, colorize meshes from given images, load/save landmarks for all timepoints, make color of landmarks adjustable, etc. Thanks to Benjamin Schmid.
 
@@ -117,7 +117,7 @@ Some errors were fixed in the Colocalisation\_Analysis plugins, thanks to Daniel
 
 Macro recording of the Directionality plugin was fixed, thanks to Jan Eglinger.
 
-Fiji's handling of {% include bc content='Help | Refresh Menus'%} has seen a number of bug fixes, as well as Fiji's headless mode (which will stop being a clever hack with ImageJ2, but instead be a proper solution).
+Fiji's handling of {% include bc path='Help | Refresh Menus'%} has seen a number of bug fixes, as well as Fiji's headless mode (which will stop being a clever hack with ImageJ2, but instead be a proper solution).
 
 For teachers' and instructors' convenience, Fiji can cache sample images locally, avoiding huge network traffic during courses.
 
@@ -163,11 +163,11 @@ When the Script Editor is asked to open images, it lets ImageJ open them rather 
 
 The Script Editor is now usable even if the user updated ImageJ to the daily version. Thanks to {% include person content='Rasband' %}.
 
-The Script Editor offers to {% include bc content='File | Open Recent'%}. Thanks to Albert Cardona.
+The Script Editor offers to {% include bc path='File | Open Recent'%}. Thanks to Albert Cardona.
 
 The startup time of the Script Editor was reduced dramatically.
 
-In the Script Editor, {% include bc content='File | Open'%} will no longer offer to open .class or .jar files.
+In the Script Editor, {% include bc path='File | Open'%} will no longer offer to open .class or .jar files.
 
 For interoperability, the Script Editor now enforces UTF-8 encoding for both reading and writing files.
 
@@ -248,7 +248,7 @@ Update JNA to version 3.2.7.
 
 Fiji contains a base class fiji.tool.AbstractTool which makes it easy to add tools to the toolbar that are not backed by polling macros, but by a proper event-driven Java class.
 
-To generate tool icons from 16x16 pictures, use {% include bc content='Plugins | Examples | Image To Tool Icon'%}.
+To generate tool icons from 16x16 pictures, use {% include bc path='Plugins | Examples | Image To Tool Icon'%}.
 
 The Auto Threshold plugin has an API usable by developers of other plugins now.
 
@@ -256,7 +256,7 @@ The Fiji Build system handles rules involving Jython or Beanshell more efficient
 
 There is an easy way for developers to run external programs now: fiji.SimpleExecuter. This class offers a number of convenience functions to execute programs with specified parameters in a given working directory, and it offers several modes how the output should be handled: print to ImageJ's Log window, print to a stream, or save into Strings.
 
-For Fiji Developer, adding documentation to the Fiji Wiki has been made even more convenient with enhancements to {% include bc content='Plugins | Utilities | Fiji | New Fiji Tutorial'%} and New Fiji Wiki Screenshot in the same menu.
+For Fiji Developer, adding documentation to the Fiji Wiki has been made even more convenient with enhancements to {% include bc path='Plugins | Utilities | Fiji | New Fiji Tutorial'%} and New Fiji Wiki Screenshot in the same menu.
 
 The file and directory fields in the GenericDialogPlus class have been improved, and the methods addImageChoice() and getNextImage() have been added.
 

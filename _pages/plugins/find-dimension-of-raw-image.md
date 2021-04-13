@@ -13,7 +13,7 @@ This script serves two purposes:
 -   to demonstrate that an AWT Listener can be written in Jython, and
 -   to find the width of an image you know is uncompressed, but do not know the dimensions.
 
-To use it, open the raw image with {% include bc content='File | Import | Raw...'%} choosing a width and height that should roughly be the correct one. Then start this script, which will open a dialog box with a slider, with which you can interactively test new widths -- the pixels in the image window will be updated accordingly.
+To use it, open the raw image with {% include bc path='File | Import | Raw...'%} choosing a width and height that should roughly be the correct one. Then start this script, which will open a dialog box with a slider, with which you can interactively test new widths -- the pixels in the image window will be updated accordingly.
 
 The script is maintained by {% include person content='Schindelin' %}.
 
@@ -27,7 +27,7 @@ Code
     # - to find the width of an image you know is uncompressed, but do not know
     #   the dimensions.
     #
-    # To use it, open the raw image with {% include bc content='File | Import | Raw...'%} choosing a width and
+    # To use it, open the raw image with {% include bc path='File | Import | Raw...'%} choosing a width and
     # height that should roughly be the correct one.  Then start this script,
     # which will open a dialog box with a slider, with which you can interactively
     # test new widths -- the pixels in the image window will be updated accordingly.

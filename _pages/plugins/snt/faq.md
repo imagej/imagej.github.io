@@ -44,7 +44,7 @@ It is the most widely adopted format for encoding neuronal reconstructions, in w
 
 ### In which format should I save my tracings: TRACES or SWC?
 
-When tracing 4D or 5D images, `TRACES` is preferable because the channel and/or time frame associated with the data are stored. With simpler 2/3D images `TRACES` is also preferable to preserve [Path Manager tags](SNT:_Overview#Tag "wikilink") across restarts. Note that the {% include bc content='[Scripts](SNT:_Overview#Scripts "wikilink")| '%} menu provides a [batch converter](#convert "wikilink") for `TRACES` → `SWC` conversion. The following table summarizes the differences between the two formats:
+When tracing 4D or 5D images, `TRACES` is preferable because the channel and/or time frame associated with the data are stored. With simpler 2/3D images `TRACES` is also preferable to preserve [Path Manager tags](SNT:_Overview#Tag "wikilink") across restarts. Note that the {% include bc path='[Scripts](SNT:_Overview#Scripts "wikilink")| '%} menu provides a [batch converter](#convert "wikilink") for `TRACES` → `SWC` conversion. The following table summarizes the differences between the two formats:
 
 |                                                   | SWC                                                                                                                                  | TRACES                                                                               |
 | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
@@ -56,7 +56,7 @@ When tracing 4D or 5D images, `TRACES` is preferable because the channel and/or 
 
 ### How do I (batch) convert TRACES to SWC?
 
-In the [Script Editor](Script_Editor "wikilink") ({% include bc content='File|New|Script...'%}) look for {% include bc content='Templates|Neuroanatomy|Batch|Convert Traces to SWC'%} and run it. Note that all of SNT scripts are also listed in the main as regular GUI commands in the main [interface](SNT:_Scripting#Script_Templates "wikilink"). Don't see the scripts? Please ensure SNT is properly [installed](SNT#Installation "wikilink").
+In the [Script Editor](Script_Editor "wikilink") ({% include bc path='File|New|Script...'%}) look for {% include bc path='Templates|Neuroanatomy|Batch|Convert Traces to SWC'%} and run it. Note that all of SNT scripts are also listed in the main as regular GUI commands in the main [interface](SNT:_Scripting#Script_Templates "wikilink"). Don't see the scripts? Please ensure SNT is properly [installed](SNT#Installation "wikilink").
 
 ### How can I improve SNT documentation?
 
@@ -78,7 +78,7 @@ Yes. Have a look at these [detailed instructions](https://forum.image.sc/t/simpl
 
 ### How can I import an image sequence into SNT?
 
-Loading of images that require input options is handled by ImageJ directly. To load a directory of images (e.g., one file per Z-slice), run {% include bc content='File| Import|Image Sequence' color='white'%} and select the first file in the sequence, adjusting any needed parameters in the subsequent dialog prompt. Once the sequence is imported adjust voxel dimensions using {% include bc content='Image|Properties...' color='white'%}. To save yourself from having to go through these steps again, you should save the imported stack as a single TIFF file using {% include bc content='File|Save As|Tiff...' color='white'%}
+Loading of images that require input options is handled by ImageJ directly. To load a directory of images (e.g., one file per Z-slice), run {% include bc path='File| Import|Image Sequence' color='white'%} and select the first file in the sequence, adjusting any needed parameters in the subsequent dialog prompt. Once the sequence is imported adjust voxel dimensions using {% include bc path='Image|Properties...' color='white'%}. To save yourself from having to go through these steps again, you should save the imported stack as a single TIFF file using {% include bc path='File|Save As|Tiff...' color='white'%}
 
 {% include sntnavbar%}
 

@@ -42,8 +42,8 @@ Use Wordpad to edit the `eclipse.ini` file in your Eclipse installation (e.g., *
 Now update Eclipse's JRE to be JDK-aware:
 
 -   Launch Eclipse
--   From the menu choose {% include bc content='Window | Preferences'%}
--   Select {% include bc content='Java | Installed JREs'%}
+-   From the menu choose {% include bc path='Window | Preferences'%}
+-   Select {% include bc path='Java | Installed JREs'%}
 -   Click Search..., navigate to your JDK installation folder (e.g., **`C:\Program Files\Java\jdk1.8.0_11`**) and click OK
 -   Check the box next to the JRE that appears and click OK
 
@@ -77,7 +77,7 @@ Using your [Git client of choice](http://git-scm.com/downloads/guis), clone the 
 Import the source code
 ----------------------
 
-1.  Choose {% include bc content='File | Import'%} from the Eclipse menu
+1.  Choose {% include bc path='File | Import'%} from the Eclipse menu
 2.  Select "Existing Maven Projects" and click Next
 3.  Browse to the folder where you cloned the project source code
 4.  Click Finish
@@ -177,7 +177,7 @@ All mavenized ImageJ projects have built-in support for installing directly into
 
 Steps are as follows:
 
-1.  Right-click your project in Eclipse and select {% include bc content='Run As|Run Configurations...'%}
+1.  Right-click your project in Eclipse and select {% include bc path='Run As|Run Configurations...'%}
 2.  Scroll down to Maven Build. If you've built this project with Maven via Eclipse before there will already be a configuration for it. Otherwise you can double-click "Maven Build" to create a new run configuration.
 3.  Add a parameter: `imagej.app.directory` with value: `<path/to/ImageJ.app>` (e.g. `/home/hinerm/Fiji.app`)
 4.  Add a parameter: `imagej.deleteOtherVersions` with value: `always`
@@ -196,7 +196,7 @@ Most importantly, you will need to adjust the `artifactId` and the `dependencies
 
 Next, you will put your Java sources into `src/main/java/` and adjust `src/main/resources/plugins.config`.
 
-After that, ask Eclipse to import it: {% include bc content='File | Import | Maven | Import Existing Maven Project'%}.
+After that, ask Eclipse to import it: {% include bc path='File | Import | Maven | Import Existing Maven Project'%}.
 
 Viewing Dependency Source
 -------------------------

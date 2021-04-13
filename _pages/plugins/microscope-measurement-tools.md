@@ -63,7 +63,7 @@ Basic instructions are as follows.
 
 3\. Draw a line along the feature of known length.
 
-4\. Select the {% include bc content='Analyze | Set Scale'%} menu item.
+4\. Select the {% include bc path='Analyze | Set Scale'%} menu item.
 
 5\. Type in the known length in "*Known Distance*" and record the "**Scale**" value for this calibration.
 
@@ -107,7 +107,7 @@ You should only have to do this calibration once, when you do your initial calib
 
 ### Applying a pre-configured scale to your image
 
-11\. Run {% include bc content='Analyze | Microscope Measurement Tools | Choose Microscope Calibration'%} - the pop-up window shows the new names and calibration values you set in your user-settings file.
+11\. Run {% include bc path='Analyze | Microscope Measurement Tools | Choose Microscope Calibration'%} - the pop-up window shows the new names and calibration values you set in your user-settings file.
 
 ### Annotating your image with a length measurement
 
@@ -115,7 +115,7 @@ To draw a measurement annotation,
 
 1\. Draw a "Straight Line" along the feature you want to measure (the length is displayed in the Fiji status bar)
 
-2\. Select {% include bc content='Analyze | Microscope Measurement Tools | Draw Annotation - Line'%}.
+2\. Select {% include bc path='Analyze | Microscope Measurement Tools | Draw Annotation - Line'%}.
 
   
 The annotation will be drawn directly onto the image.

@@ -109,7 +109,7 @@ Compiling the plugin
 
 ### Using the Script Editor
 
-The easiest way to compile and run the plugin is to use the [Script Editor](/scripting/script-editor): Call {% include bc content='File | New | Script'%}, select *Java* in the *Language* menu, and paste the source. Then, compile and run the plugin by calling *Run* in the '"Run'' menu.
+The easiest way to compile and run the plugin is to use the [Script Editor](/scripting/script-editor): Call {% include bc path='File | New | Script'%}, select *Java* in the *Language* menu, and paste the source. Then, compile and run the plugin by calling *Run* in the '"Run'' menu.
 
 ### The hard way
 
@@ -117,22 +117,22 @@ You can save the java code in a java file with the same name of the class. For t
 
 To compile the plugin, you have several options:
 
--   If you saved the java file into the *plugins/* directory inside the Fiji directory, after {% include bc content='Help | Refresh Menus'%}, it will appear in the *Plugins* menu.
--   Call {% include bc content='Plugins | Compile and Run'%} and specify the where you saved the file.
+-   If you saved the java file into the *plugins/* directory inside the Fiji directory, after {% include bc path='Help | Refresh Menus'%}, it will appear in the *Plugins* menu.
+-   Call {% include bc path='Plugins | Compile and Run'%} and specify the where you saved the file.
 -   Compile it from a terminal with
 
 <!-- -->
 
     ./fiji --javac plugins/Duplicate_and_Scale.java
 
-For this to work, you have to save the java file into the *plugins/* directory, or you have to copy the class files into said directory after compilation. For the plugin to appear in the *Plugins* menu, you have to call {% include bc content='Help | Refresh Menus'%}, or to restart Fiji.
+For this to work, you have to save the java file into the *plugins/* directory, or you have to copy the class files into said directory after compilation. For the plugin to appear in the *Plugins* menu, you have to call {% include bc path='Help | Refresh Menus'%}, or to restart Fiji.
 
 Running the plugin
 ------------------
 
 If you pasted the source into the [Script Editor](/scripting/script-editor), you can run the plugin using the *Run&gt;Run* menu entry.
 
-Otherwise, after {% include bc content='Help | Refresh Menus'%}, or a Fiji restart, there will be a menu item called *Duplicate and Scale* in the *Plugins* menu.
+Otherwise, after {% include bc path='Help | Refresh Menus'%}, or a Fiji restart, there will be a menu item called *Duplicate and Scale* in the *Plugins* menu.
 
 ### From a macro
 

@@ -45,7 +45,7 @@ Valid levels include: `none`, `error`, `warn`, `info`, `debug` and `trace`. See 
 The other debug mode
 --------------------
 
-There is another debug mode, which can be enabled in the {% include bc content='Edit | Options | Misc...'%} menu, by checking *Debug mode*. This might reveal different information than using the techniques described above. For maximum debugitude, turn on both!
+There is another debug mode, which can be enabled in the {% include bc path='Edit | Options | Misc...'%} menu, by checking *Debug mode*. This might reveal different information than using the techniques described above. For maximum debugitude, turn on both!
 
 If ImageJ freezes or hangs
 --------------------------
@@ -72,7 +72,7 @@ If the first method does not work, and you can reproduce the hang:
         3.  Right click and select "Copy" to copy it to the clipboard.
     -   <img src="/media/Win.png" height="20"/> On Windows:
         1.  Press {% include key content='Ctrl\|Pause' %} in the Command Prompt window to print the stack trace. (**Note:** this shortcut actually uses the [Break key](Wikipedia_Break_key))
-        2.  Click the Command Prompt icon in the upper left corner of the window, and choose {% include bc content='Edit|Mark'%}.
+        2.  Click the Command Prompt icon in the upper left corner of the window, and choose {% include bc path='Edit|Mark'%}.
         3.  Select the stack trace by dragging with the left mouse button.
         4.  Press {% include key content='Enter' %} to copy it to the clipboard.
 
@@ -111,7 +111,7 @@ You can replace the `512m` with however many megabytes of memory you wish to giv
 
 ### After running the updater
 
-If the ImageJ window never appears after launching the program, the installation may be corrupted. While the developers of ImageJ make a serious effort to prevent this problem from happening, it is still possible after running the {% include bc content='Help | Update...'%} command, due to bugs in the [Updater](/plugins/updater).
+If the ImageJ window never appears after launching the program, the installation may be corrupted. While the developers of ImageJ make a serious effort to prevent this problem from happening, it is still possible after running the {% include bc path='Help | Update...'%} command, due to bugs in the [Updater](/plugins/updater).
 
 The easiest workaround is to [download](/Downloads) a fresh copy of the software.
 
@@ -130,7 +130,7 @@ The image I loaded is displayed all black! But it is not black!
 
 This problem can arise when 12-bit, 14-bit or 16-bit images are loaded into ImageJ without autoscaling. In that case, the display is scaled to the full 16-bit range (0 - 65535 intensity values), even though the actual data values typically span a much smaller range. For example, on a 12-bit camera, the largest possible intensity value is 4095—but with 0 mapped to black and 65535 mapped to white, 4095 ends up (linearly) mapped to a very very dark gray, nearly invisible to the human eye.
 
-You can fix this by clicking on {% include bc content='Image | Adjust | Brightness/Contrast...'%} and hitting the *Auto* button.
+You can fix this by clicking on {% include bc path='Image | Adjust | Brightness/Contrast...'%} and hitting the *Auto* button.
 
 You can verify whether the actual data is there by moving the mouse over the image, and looking at the pixel probe output in the [status bar area of the main ImageJ window](Getting_Started#The_status_bar).
 
@@ -143,11 +143,11 @@ You can override the autoscaling using the [Brightness/Contrast](https://imagej.
 
 It is important to understand that [your image is a collection of samples, each of which has a numerical intensity value](Principles#What_are_pixel_values.3F). The unit of these values is rather arbitrary and unspecified, depending on the type and calibration of your detector. Your file is stored with a certain [bit depth](https://imagej.net/docs/guide/146-7.html#toc-Section-7), meaning these intensities can range from 0 (no light detected) to a particular maximum value (the most light the detector is capable of detecting). For example, 8-bit images have a maximum value of 255, whereas 16-bit images have a maximum of 65535. In practice though, especially with higher bit depths, your detector will not typically record sample intensities across that entire range of values (and if it does record a significant number of values at the maximum, you probably oversaturated your detector, which will skew your analysis!).
 
-Because the full range of values is typically much less than the maximum—e.g., in the case of a 12-bit detector the actual maximum range is 0-4095, and often even smaller in practice—ImageJ performs **autoscaling** to show you a meaningful or "pretty good" image by default, which is not just a black square (see previous question). That is: it maps the darkest actual intensity in your data to black, and the brightest actual intensity in your data to white. You can override this mapping using the [Brightness/Contrast](https://imagej.net/docs/guide/146-28.html#sub:Adjust) dialog under the {% include bc content='Image | Adjust'%} menu (shortcut: {% include key content='shift' %}+{% include key content='C' %}).
+Because the full range of values is typically much less than the maximum—e.g., in the case of a 12-bit detector the actual maximum range is 0-4095, and often even smaller in practice—ImageJ performs **autoscaling** to show you a meaningful or "pretty good" image by default, which is not just a black square (see previous question). That is: it maps the darkest actual intensity in your data to black, and the brightest actual intensity in your data to white. You can override this mapping using the [Brightness/Contrast](https://imagej.net/docs/guide/146-28.html#sub:Adjust) dialog under the {% include bc path='Image | Adjust'%} menu (shortcut: {% include key content='shift' %}+{% include key content='C' %}).
 
 Alternately, to disable autoscaling during initial import, you can use the [Bio-Formats](/formats/bio-formats) plugin to import your data with the "Autoscale" option turned off:
 
--   {% include bc content='File | Import | Bio-Formats'%}
+-   {% include bc path='File | Import | Bio-Formats'%}
 -   Choose your file
 -   Uncheck the "Autoscale" box
 -   Click OK
@@ -176,13 +176,13 @@ While ImageJ strives for [reproducible](/Architecture#Reproducible_builds) analy
     -   See also [How can I verify that my ImageJ is really 100% up to date?](Frequently_Asked_Questions#How_can_I_verify_that_my_ImageJ_is_really_100%_up_to_date?).
     -   If the two versions of ImageJ match but produce different numerical results, it is a bug—please [report it](/help/report-a-bug)!
 -   Ensure that the *options* of ImageJ match between the machines.
-    -   A fast way to ensure this is the {% include bc content='Edit | Options | Reset...'%} command, which resets everything to its default state.
+    -   A fast way to ensure this is the {% include bc path='Edit | Options | Reset...'%} command, which resets everything to its default state.
     -   Alternately, you can check the settings in the following dialog boxes:
-        -   All {% include bc content='Edit | Options'%} dialog boxes
-    -   {% include bc content='Process | Binary | Options...'%} – a very common culprit of black-vs.-white issues is the "Black background" option.
-    -   {% include bc content='Process | FFT | FFT Options...'%}
-    -   {% include bc content='Image | Overlay | Overlay Options...'%}
-    -   {% include bc content='Analyze | Gels | Gel Analyzer Options...'%}
+        -   All {% include bc path='Edit | Options'%} dialog boxes
+    -   {% include bc path='Process | Binary | Options...'%} – a very common culprit of black-vs.-white issues is the "Black background" option.
+    -   {% include bc path='Process | FFT | FFT Options...'%}
+    -   {% include bc path='Image | Overlay | Overlay Options...'%}
+    -   {% include bc path='Analyze | Gels | Gel Analyzer Options...'%}
     -   Press L for the [Command Finder](/Using_the_Command_Launcher) and type "options" and double check any other options you think might be relevant.
 -   If you are running your analysis [headless](/learn/headless), there might be a bug in the headless support.
     -   Try the analysis *headless* on both machines and see if the results match.
@@ -199,7 +199,7 @@ OutOfMemoryError
 
 The first thing to do is make sure that ImageJ has a large enough "maximum heap" size:
 
--   {% include bc content='Edit | Options | Memory & Threads'%}
+-   {% include bc path='Edit | Options | Memory & Threads'%}
 -   Change "Maximum Memory" to something larger (at most, 1000 MB less than your computer's total RAM).
 -   Restart ImageJ for the new memory settings to take effect.
 

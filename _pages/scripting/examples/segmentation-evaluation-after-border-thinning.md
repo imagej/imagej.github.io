@@ -22,7 +22,7 @@ Further details about the metrics can be found in the [challenge publication](ht
 Use
 ===
 
-Just copy/paste it in the [Script Editor](/scripting/script-editor) or save it into a .bsh file and run it ({% include bc content='File | Open'%}):
+Just copy/paste it in the [Script Editor](/scripting/script-editor) or save it into a .bsh file and run it ({% include bc path='File | Open'%}):
 
     /**
      * Script to calculate the segmentation error between some 2D 

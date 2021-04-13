@@ -19,7 +19,7 @@ Steps to use:
 1.  [Download ImageJ 1.x](https://imagej.net/download.html) and unpack it
 2.  [Download the MBF Plugins Collection](https://imagej.net/plugins/mbf/)
 3.  Merge the MBF plugins into your ImageJ 1.x folder
-4.  Use {% include bc content='File | Open...'%} to convert your .flex files to OME-TIFF using [Bio-Formats](/formats/bio-formats)
+4.  Use {% include bc path='File | Open...'%} to convert your .flex files to OME-TIFF using [Bio-Formats](/formats/bio-formats)
 
 Unfortunately, for legal reasons, we cannot elaborate on the technical details of how the MBF collection provides this functionality, nor can we legally make this feature available within [ImageJ2](/software/imagej2) or [Fiji](/fiji).
 

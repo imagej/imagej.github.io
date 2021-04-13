@@ -11,7 +11,7 @@ It is a great pleasure to announce [a new Fiji version](Downloads) nick-named Pl
 
 <!-- -->
 
--   the [Script Editor](/scripting/script-editor). Just call {% include bc content='File | New | Script'%}, select a language and start writing a script. The editor has syntax highlighting and you can run the script without even saving it.
+-   the [Script Editor](/scripting/script-editor). Just call {% include bc path='File | New | Script'%}, select a language and start writing a script. The editor has syntax highlighting and you can run the script without even saving it.
 
 For an introduction to the power of scripting, see e.g. [our page on Javascript](https://fiji.sc/wiki/index.php/Javascript_Scripting).
 
@@ -35,7 +35,7 @@ Other changes include:
 -   Bio-Formats was updated to include the new AmiraMesh reader (thanks to Gregory Jefferis)
 -   changes in the bUnwarpJ plugin (amongst other enhancements) allow tighter integration with the Register Virtual Stack plugin (thanks Ignacio)
 -   the Level Sets plugin is now available inside TrakEM2, too
--   if you have problems with a particular file format, you can send it to us using {% include bc content='Help | Upload Sample Image'%}
+-   if you have problems with a particular file format, you can send it to us using {% include bc path='Help | Upload Sample Image'%}
 -   on MacOSX/PowerPC64, Fiji does not try to launch a 64-bit Java (because Apple does not provide any 64-bit Java for PowerPC)
 -   scripts are sorted alphabetically before they are added to menus (for consistency between different computers)
 -   loading compressed NRRD images via network is much faster now (thanks Greg!)
@@ -46,10 +46,10 @@ Other changes include:
 -   when launched on MacOSX by double-clicking the icon (or by running from the Dock), the current directory is set to Fiji's application directory (thanks Greg and Christophe)
 -   upgraded the LSM Toolbox/Reader to version 0.4f (thanks Mark Longair, Greg, Patrick Pirotte and Jerôme Mutterer)
 -   on MacOSX, the Lookup Tables from the luts/ directory are finally visible.
--   {% include bc content='Help | Update Menus'%} handles not only .jar and .class plugins, but plugin scripts, too
--   we have {% include bc content='File | New | Fiji Tutorial'%}, which makes it a breeze to write tutorials with screen shots for the Fiji Wiki
+-   {% include bc path='Help | Update Menus'%} handles not only .jar and .class plugins, but plugin scripts, too
+-   we have {% include bc path='File | New | Fiji Tutorial'%}, which makes it a breeze to write tutorials with screen shots for the Fiji Wiki
 -   on MacOSX, the default Java extensions were not available by mistake
--   sample images can be stored in the samples/ subdirectory, allowing for completely off-line {% include bc content='File | Open Sample | ?'%}
+-   sample images can be stored in the samples/ subdirectory, allowing for completely off-line {% include bc path='File | Open Sample | ?'%}
 -   the Stitching plugin now has a file and directory chooser (thanks to Stephan Preibisch)
 -   .lei and .dv files are opened with Bio-Formats now
 -   .rec and .st files are opened using our MRC reader, too
@@ -60,7 +60,7 @@ Other changes include:
 -   Fiji is built with Java5 every night to ensure that it continues to work on 32-bit MacOSX prior to 10.6.
 -   the Macro Interpreter outputs the help correctly again (thanks Gabriel)
 -   added two lookup tables, "thermal" and "glasbey" (thanks to Michael Doube and Gabriel)
--   the {% include bc content='Help | Report a Bug'%} plugin is much more user-friendly now (thanks Mark)
+-   the {% include bc path='Help | Report a Bug'%} plugin is much more user-friendly now (thanks Mark)
 -   updated View5D, fixed interaction with Bio-Formats (thanks to Simon Kidd)
 -   when JAVA\_HOME is set to a bogus location Fiji ignores it now (thanks Albert)
 -   avoid mistaking .jar files inside .rsrc/ directories for real .jar files, working around a MacOSX quirk (thanks to Maté Biro)
@@ -68,7 +68,7 @@ Other changes include:
 -   the Command Launcher ({% include key content='Ctrl' %}+{% include key content='L' %} in the Fiji window) was converted to Swing, and sports a fuzzy matching, and an option to show more information such as which .jar file that plugin is contained in, for a much-improved user-experience (thanks Mark)
 -   ImageJ now opens websites in the preferred browser on Linux
 -   cropping an image marks it as modified now
--   {% include bc content='Plugins | Install Plugin...'%} can install .jar files now (provided you have permission to write to Fiji's plugins/ directory)
+-   {% include bc path='Plugins | Install Plugin...'%} can install .jar files now (provided you have permission to write to Fiji's plugins/ directory)
 
 The list is so long because we did not get the opportunity to meet and get a new release done in July, as we all hoped.
 

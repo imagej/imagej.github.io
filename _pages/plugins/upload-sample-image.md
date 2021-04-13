@@ -11,7 +11,7 @@ description: test description
 {% endcapture %}
 {% include info-box software='ImageJ' name='Upload Sample Image' maintainer='Johannes Schindelin' author='Johannes Schindelin' source=source released='2009-06-11' latest-version='2014-07-01' status='stable' category='[:Category:Plugins](Category_Plugins)' website='' %}== Upload Sample Image ==
 
-Use the {% include bc content='Help | Upload Sample Image'%} command to upload a file (not just images) meant for the ImageJ developers. You might need to do this e.g. when the file is too large for email attachments, or when you want to accompany a [bug report](/help/report-a-bug) with a large image.
+Use the {% include bc path='Help | Upload Sample Image'%} command to upload a file (not just images) meant for the ImageJ developers. You might need to do this e.g. when the file is too large for email attachments, or when you want to accompany a [bug report](/help/report-a-bug) with a large image.
 
 To prevent abuse of this facility, access to the uploaded images is restricted to trusted admins of [this Wiki](Special_Incoming).
 

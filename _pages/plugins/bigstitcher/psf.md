@@ -11,7 +11,7 @@ For deconvolution, it is necessary to have a **Point spread function (PSF)** for
 
 PSFs can be be calculated theoretically, but this requires exact modeling of your microscope, so it is more common to use images of sub-diffraction fluorescent beads to estimate the PSF. Since it is common to use fluorescent beads for multi-view registration, you might already have a source of PSFs in you data.
 
-Functions for assigning PSFs to images and managing PSFs can be found in **MultiView mode** in the right-click menu under {% include bc content='Processing|Point Spread Functions'%}.
+Functions for assigning PSFs to images and managing PSFs can be found in **MultiView mode** in the right-click menu under {% include bc path='Processing|Point Spread Functions'%}.
 
 <img src="/media/BigStitcher psf menu.png" width="500"/>
 

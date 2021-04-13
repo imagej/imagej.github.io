@@ -11,7 +11,7 @@ The default stitching pipeline of BigStitcher will calculate a **translational a
 Simple refinement
 -----------------
 
-The ICP refinement can be found in the main (right-click) menu of the Stiching mode under {% include bc content='Registration Refinement (optional)|Refine with ICP'%}:
+The ICP refinement can be found in the main (right-click) menu of the Stiching mode under {% include bc path='Registration Refinement (optional)|Refine with ICP'%}:
 
 <img src="/media/BigStitcher icp 01.png" width="700"/>
 

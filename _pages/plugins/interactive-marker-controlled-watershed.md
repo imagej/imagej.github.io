@@ -76,7 +76,7 @@ Installation
 
 The Marker-controlled Watershed plugin is part of the [MorphoLibJ](/plugins/morpholibj) library. To install it, you just need to [ add](How_to_follow_a_3rd_party_update_site#Add_update_sites) the IJPB-plugins update site:
 
-1\) Select {% include bc content='Help | Update...'%} from the Fiji menu to start the updater.
+1\) Select {% include bc path='Help | Update...'%} from the Fiji menu to start the updater.
 
 2\) Click on *Manage update sites*. This brings up a dialog where you can activate additional update sites.
 
@@ -84,7 +84,7 @@ The Marker-controlled Watershed plugin is part of the [MorphoLibJ](/plugins/morp
 
 4\) Click *Apply changes* and restart Fiji.
 
-You should now find the plugin under the sub-menu {% include bc content='Plugins | MorphoLibJ | Segmentation'%}.
+You should now find the plugin under the sub-menu {% include bc path='Plugins | MorphoLibJ | Segmentation'%}.
 
 **Note**: Marker-controlled Watershed is only one of the plugins included in the [MorphoLibJ](/plugins/morpholibj) suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
 

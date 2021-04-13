@@ -221,7 +221,7 @@ To set up OpenCL support on Glassfish for deploying the ImageJ/Fiji Java based E
     sudo wget http://jogamp.org/deployment/webstart/gluegen.jar
     sudo wget http://jogamp.org/deployment/webstart/jocl.jar
 
-The only other thing needed to get glassfish setup to support JOCL is to login to the admin console, under {% include bc content='Common Tasks | Configuration | JVM Settings | Path Settings'%}.
+The only other thing needed to get glassfish setup to support JOCL is to login to the admin console, under {% include bc path='Common Tasks | Configuration | JVM Settings | Path Settings'%}.
 
 Native Library Path Prefix: `/opt/glassfishv3/glassfish/lib`
 

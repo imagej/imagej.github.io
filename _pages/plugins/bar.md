@@ -33,7 +33,7 @@ The collection contains [Macros](/scripting/macro), [Scripts](/scripting) and [P
 Installation
 ------------
 
-Run {% include bc content='Help|Update...'%} and choose *Manage update sites*. Activate the *BAR* checkbox in the alphabetically-sorted list of update sites. Press *OK*, then *Apply changes*. Restart ImageJ. That's it. Enjoy BAR!
+Run {% include bc path='Help|Update...'%} and choose *Manage update sites*. Activate the *BAR* checkbox in the alphabetically-sorted list of update sites. Press *OK*, then *Apply changes*. Restart ImageJ. That's it. Enjoy BAR!
 
 Description
 -----------
@@ -113,7 +113,7 @@ It may be wise to allow ImageJ enough time to register all scripts before trigge
 
 ### Commander
 
-<img src="/media/CommanderOverview.png" title="fig:Commander overview (BAR 1.1.2)." width="400" alt="Commander overview (BAR 1.1.2)." /> Since the majority of BARs are scripts stored in dedicated files, BAR features Commander ({% include bc content='BAR|BAR Commander...'%}), a keyboard-based file browser that produces filtered lists of directory contents.
+<img src="/media/CommanderOverview.png" title="fig:Commander overview (BAR 1.1.2)." width="400" alt="Commander overview (BAR 1.1.2)." /> Since the majority of BARs are scripts stored in dedicated files, BAR features Commander ({% include bc path='BAR|BAR Commander...'%}), a keyboard-based file browser that produces filtered lists of directory contents.
 
 It is a productivity tool that applies the principles of [Command Launcher](Using_the_Command_Launcher) to file browsing, providing instant access to files just by typing abbreviations of filenames. It serves two purposes: 1) to expedite the opening of files and 2) to produce filtered lists of directory contents. Features include: drag-and-drop support, interaction with native file manager, regex filtering, and a built-in console for common operations.
 
@@ -121,11 +121,11 @@ It is a productivity tool that applies the principles of [Command Launcher](Usin
 
 To access ImageJ's LUT folder:Type {% include key content='!\|L\|U\|T\|Enter' %}  
 To access all JavaScript [lib files](#lib "wikilink"):Type {% include key content='!\|L\|I\|B\|Enter' %}, then {% include key content='.\|J\|S' %}  
-To reveal the directory of active image:Type {% include key content='!\|I\|M\|P\|Enter' %}, then choose {% include bc content='Reveal Path'%}.  
+To reveal the directory of active image:Type {% include key content='!\|I\|M\|P\|Enter' %}, then choose {% include bc path='Reveal Path'%}.  
 To access Commander's built-in help:Type {% include key content='!\|H\|E\|L\|P\|Enter' %}  
 To extract the paths of all TIFF images in a directory:Drag and drop the desired folder into the Commander list  
 Type {% include key content='T\|I\|F\|Enter' %}  
-Choose {% include bc content='Print Current List'%} in the Options Menu or press {% include key content='Control\|P' %} ({% include key content='Command\|P' %} in Mac OS).  
+Choose {% include bc path='Print Current List'%} in the Options Menu or press {% include key content='Control\|P' %} ({% include key content='Command\|P' %} in Mac OS).  
 
 ### Keyboard Shortcuts
 
@@ -147,7 +147,7 @@ You can use BARs as a starting point for your own workflows. Whether you are jus
 
 ### Snippets
 
-<img src="/media/SnippetCreator.png" title="fig:{% include bc content='BAR|Snippets|NewSnippet...'%} (BAR 1.1.0)" width="350" alt="{% include bc content='BAR|Snippets|NewSnippet...'%} (BAR 1.1.0)" /> BAR contains a directory, *plugins/Scripts/BAR/Snippets/*, containing multi-language [examples](https://github.com/tferr/Scripts/tree/master/Snippets) that you can customize and recycle in your own scripts. You can, of course, also retrieve code and inspiration from the more complete BARs in the remaining *plugins/Scripts/BAR/* subdirectories. Any script or macro file stored in the *Snippets/*, folder with an underscore "\_" in the filename will be listed in <span style="border-bottom:1px dotted #ccc;">BAR▷ Snippets▷</span>. The <span style="border-bottom:1px dotted #ccc;">Snippets▷</span> menu contains some utilities to help you manage your scripts:
+<img src="/media/SnippetCreator.png" title="fig:{% include bc path='BAR|Snippets|NewSnippet...'%} (BAR 1.1.0)" width="350" alt="{% include bc path='BAR|Snippets|NewSnippet...'%} (BAR 1.1.0)" /> BAR contains a directory, *plugins/Scripts/BAR/Snippets/*, containing multi-language [examples](https://github.com/tferr/Scripts/tree/master/Snippets) that you can customize and recycle in your own scripts. You can, of course, also retrieve code and inspiration from the more complete BARs in the remaining *plugins/Scripts/BAR/* subdirectories. Any script or macro file stored in the *Snippets/*, folder with an underscore "\_" in the filename will be listed in <span style="border-bottom:1px dotted #ccc;">BAR▷ Snippets▷</span>. The <span style="border-bottom:1px dotted #ccc;">Snippets▷</span> menu contains some utilities to help you manage your scripts:
 
 List Snippets:Prints a table listing all scripts in *plugins/Scripts/BAR/Snippets/*. Files can then be opened in the [Script Editor](/scripting/script-editor) by double-clicking on their filename.  
 New Snippet: A java plugin that speeds up the creation of new scripts, pre-configured to use [BAR lib](#lib "wikilink").  
@@ -156,7 +156,7 @@ Search BAR: Searches the contents of BAR files.
 
 
 {% capture tip%}
-BAR provides several utility methods that simplify the creation of \_\_\_SHADOW3\_\_\_ and \_\_\_SHADOW4\_\_\_ usage. These are documented in the [BAR API](http://tferr.github.io/Scripts/apidocs/) , that can be accessed using {% include bc content='BAR|About BAR...'%}. {% include bc content='About BAR...'%} also provides links to several online resources including the [ImageJ Search Portal](http://search.imagej.net) , [ImageJ Javadocs](http://javadoc.imagej.net) , and the [GitHub documentation](https://github.com/tferr/Scripts#ij-bar) of BAR.
+BAR provides several utility methods that simplify the creation of \_\_\_SHADOW3\_\_\_ and \_\_\_SHADOW4\_\_\_ usage. These are documented in the [BAR API](http://tferr.github.io/Scripts/apidocs/) , that can be accessed using {% include bc path='BAR|About BAR...'%}. {% include bc path='About BAR...'%} also provides links to several online resources including the [ImageJ Search Portal](http://search.imagej.net) , [ImageJ Javadocs](http://javadoc.imagej.net) , and the [GitHub documentation](https://github.com/tferr/Scripts#ij-bar) of BAR.
 {% endcapture %}
 {% include tip id='API' tip=tip %} <span id="lib"></span>
 
@@ -177,7 +177,7 @@ The idea is quite simple: Reusable functions and methods are written to a lib fi
     lib = new BARlib();
     lib.confirmLoading();
 
-Run it in the [Script Editor](/scripting/script-editor) ({% include bc content='File|New|Script...'%}), and you should be greeted by a *"BAR lib successfully loaded"* message. Further details are provided on the {% include github org='tferr' repo='Scripts' path='/lib\#lib' label='GitHub lib page' %} and on the documentation of the [bar.Utils](http://tferr.github.io/Scripts/apidocs/index.html?bar/Utils.html) class.
+Run it in the [Script Editor](/scripting/script-editor) ({% include bc path='File|New|Script...'%}), and you should be greeted by a *"BAR lib successfully loaded"* message. Further details are provided on the {% include github org='tferr' repo='Scripts' path='/lib\#lib' label='GitHub lib page' %} and on the documentation of the [bar.Utils](http://tferr.github.io/Scripts/apidocs/index.html?bar/Utils.html) class.
 
 ### Batch Processors
 
@@ -390,12 +390,12 @@ In a case of premature termination BARs tend to exit rather silently. The best w
 <!-- -->
 
 <span id="faq:ImageJ1"></span>Does BAR work outside Fiji/ImageJ2?  
-Yes, but with limitations. ImageJ1 (see [ImageJ Flavors](ImageJ#Flavors) if you have doubts about existing ImageJ distributions) will only register scripts saved in the *plugins/* folder or on one of its immediate subfolders. For this reason, some of the {% include bc content='BAR|'%} submenus will appear as empty, and it may not be possible to navigate the *BAR/* directory using menu commands ([Commander](#Commander "wikilink") could still be used, nevertheless). Another important aspect is that, without access to the [built-in updater](/plugins/updater), you will have to manually update BAR (by monitoring its {% include github org='tferr' repo='Scripts/releases' label='rpository' %}), and to manually install (and update) the dependencies (i.e., third-party plugins and third-party libraries) used by BAR).
+Yes, but with limitations. ImageJ1 (see [ImageJ Flavors](ImageJ#Flavors) if you have doubts about existing ImageJ distributions) will only register scripts saved in the *plugins/* folder or on one of its immediate subfolders. For this reason, some of the {% include bc path='BAR|'%} submenus will appear as empty, and it may not be possible to navigate the *BAR/* directory using menu commands ([Commander](#Commander "wikilink") could still be used, nevertheless). Another important aspect is that, without access to the [built-in updater](/plugins/updater), you will have to manually update BAR (by monitoring its {% include github org='tferr' repo='Scripts/releases' label='rpository' %}), and to manually install (and update) the dependencies (i.e., third-party plugins and third-party libraries) used by BAR).
 
 <!-- -->
 
 How do I uninstall BAR?  
-Run the [Updater](/plugins/updater) ({% include bc content='Help|Update...'%}). Choose *Advance Mode* then *Manage update sites*. Deactivate the *BAR* checkbox in the alphabetically-sorted list of update sites. Press *OK*, then *Apply changes*. All BAR files will be deleted. Note that you can install and uninstall BAR as you see fit. See [How to follow a 3rd party update site](/update-sites/following) for more details.
+Run the [Updater](/plugins/updater) ({% include bc path='Help|Update...'%}). Choose *Advance Mode* then *Manage update sites*. Deactivate the *BAR* checkbox in the alphabetically-sorted list of update sites. Press *OK*, then *Apply changes*. All BAR files will be deleted. Note that you can install and uninstall BAR as you see fit. See [How to follow a 3rd party update site](/update-sites/following) for more details.
 
 <!-- -->
 

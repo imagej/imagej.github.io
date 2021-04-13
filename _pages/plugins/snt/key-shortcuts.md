@@ -85,7 +85,7 @@ These shortcuts are always available:
 
 <!-- -->
 
--   {% include key content='&gt;' %} / {% include key content='&lt;' %} - Previous/Next Z-slice, or Previous/Next channel, depending on the *Reverse CZT oder of "&gt;" and "&lt;"* choice set in IJ's {% include bc content='Edit|Options|Misc..'%} prompt (IJ default).
+-   {% include key content='&gt;' %} / {% include key content='&lt;' %} - Previous/Next Z-slice, or Previous/Next channel, depending on the *Reverse CZT oder of "&gt;" and "&lt;"* choice set in IJ's {% include bc path='Edit|Options|Misc..'%} prompt (IJ default).
 
 <!-- -->
 
@@ -141,7 +141,7 @@ These shortcuts become available in *Edit Mode*, activated through the contextua
 -   {% include key content='Shift\|' %}+Scroll - Zoom
 -   {% include key content='W' %} {% include key content='A' %} {% include key content='S' %} {% include key content='D' %} - Move around (hold {% include key content='Shift' %} for slow movement)
 
-See [SciView](/plugins/sciview)'s {% include bc content='Help| '%}menu for a full list of shortcuts.
+See [SciView](/plugins/sciview)'s {% include bc path='Help| '%}menu for a full list of shortcuts.
 
 #### Legacy 3D Viewer
 
@@ -157,7 +157,7 @@ There are other key and mouse combinations used in e.g., [Sholl Analysis (by Foc
 
 
 {% capture tip%}
-SNT was designed so that its shortcuts do not collide with those of ImageJ. SNT hotkeys do not require holding down {% include key content='Control' %} ({% include key content='Cmd' %} on MacOS). When such a modifier key is pressed, the hotkey will no longer be intercepted by SNT. E.g., During a tracing session pressing {% include key content='S' %} will toggle cursor snapping while Pressing {% include key content='Control\|S' %} ({% include key content='Cmd\|S' %}on MacOS) will allow you to save the traced image using IJ"s built-in command {% include bc content='File|Save'%}.
+SNT was designed so that its shortcuts do not collide with those of ImageJ. SNT hotkeys do not require holding down {% include key content='Control' %} ({% include key content='Cmd' %} on MacOS). When such a modifier key is pressed, the hotkey will no longer be intercepted by SNT. E.g., During a tracing session pressing {% include key content='S' %} will toggle cursor snapping while Pressing {% include key content='Control\|S' %} ({% include key content='Cmd\|S' %}on MacOS) will allow you to save the traced image using IJ"s built-in command {% include bc path='File|Save'%}.
 {% endcapture %}
 {% include tip tip=tip %}
 

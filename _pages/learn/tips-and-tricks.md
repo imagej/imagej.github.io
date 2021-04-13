@@ -35,7 +35,7 @@ Find out in which menu (or .jar file) a certain command is
 
 Hit {% include key content='Ctrl\|L' %} to start the [Command Finder](/Using_the_Command_Launcher). Type (part of) the name of the entry, then click on *Show full information*.
 
-If *{% include bc content='Edit | Options | Misc...'%}&gt;Require command key for shortcuts* is *un*checked, typing {% include key content='L' %} is sufficient.
+If *{% include bc path='Edit | Options | Misc...'%}&gt;Require command key for shortcuts* is *un*checked, typing {% include key content='L' %} is sufficient.
 
 Put the main window to the foreground
 -------------------------------------
@@ -45,19 +45,19 @@ Pressing the {% include key content='Return' %} key on any image will bring the 
 Close all images (without being asked whether to save them)
 -----------------------------------------------------------
 
-{% include bc content='Plugins | Utilities | Close All Without Saving'%}
+{% include bc path='Plugins | Utilities | Close All Without Saving'%}
 
 Set the foreground color
 ------------------------
 
-Double-click on the pipette, or hit {% include key content='Ctrl\|Shift\|K' %} (on Macs, it is {% include key content='Cmd\|Shift\|K' %}), or select the menu item ''{% include bc content='Image | Color | Color Picker...'%}
+Double-click on the pipette, or hit {% include key content='Ctrl\|Shift\|K' %} (on Macs, it is {% include key content='Cmd\|Shift\|K' %}), or select the menu item ''{% include bc path='Image | Color | Color Picker...'%}
 
 Set the line width
 ------------------
 
-Line selections can have a width larger than one, which also has an effect on line profiles. You can set it by double clicking on the line selection tool, or by calling {% include bc content='Edit | Options | Line Width...'%}
+Line selections can have a width larger than one, which also has an effect on line profiles. You can set it by double clicking on the line selection tool, or by calling {% include bc path='Edit | Options | Line Width...'%}
 
 Quickly copy a ROI from one image to another
 --------------------------------------------
 
-Simply activate the image with the desired ROI, then the image you want to put that ROI into, and hit {% include key content='Ctrl\|Shift\|E' %}. This triggers the {% include bc content='Edit | Selection | Restore Selection'%} which "restores" the selection.
+Simply activate the image with the desired ROI, then the image you want to put that ROI into, and hit {% include key content='Ctrl\|Shift\|E' %}. This triggers the {% include bc path='Edit | Selection | Restore Selection'%} which "restores" the selection.

@@ -17,7 +17,7 @@ description: test description
 {% capture maintainer%}
 {% include person content='BioVoxxel' %}
 {% endcapture %}
-{% include info-box software='ImageJ / Fiji' name='BioVoxxel Toolbox' update-site='BioVoxxel' author=author maintainer=maintainer website=' [www.biovoxxel.de](http://www.biovoxxel.de/index.html)' maintainer=maintainer released='2014' latest-version='12. February 2020' status='stable (active maintainance)' source=' [GitHub](https://github.com/biovoxxel/BioVoxxel-Toolbox)' category='[Particle analysis](Category_Particle_analysis), [Binary](Category_Binary), [Filtering](Category_Filtering)' %}You can setup an automatic update for the BioVoxxel Toolbox. Just run the [Updater](/plugins/updater) ({% include bc content='Help | Update...'%}) and switch in the main window to 'Advanced mode'. Then click on 'Manage update sites'. Here you simply need to activate the "BioVoxxel". See here how to follow an update site [follow an update site](https://imagej.net/Following_an_update_site)
+{% include info-box software='ImageJ / Fiji' name='BioVoxxel Toolbox' update-site='BioVoxxel' author=author maintainer=maintainer website=' [www.biovoxxel.de](http://www.biovoxxel.de/index.html)' maintainer=maintainer released='2014' latest-version='12. February 2020' status='stable (active maintainance)' source=' [GitHub](https://github.com/biovoxxel/BioVoxxel-Toolbox)' category='[Particle analysis](Category_Particle_analysis), [Binary](Category_Binary), [Filtering](Category_Filtering)' %}You can setup an automatic update for the BioVoxxel Toolbox. Just run the [Updater](/plugins/updater) ({% include bc path='Help | Update...'%}) and switch in the main window to 'Advanced mode'. Then click on 'Manage update sites'. Here you simply need to activate the "BioVoxxel". See here how to follow an update site [follow an update site](https://imagej.net/Following_an_update_site)
 
 You will find all functions of the BioVoxxel Toolbox under the icon of the green BioVoxxel cube after selecting BioVoxxel Toolbox from the More Tools Icon (last Icon in the ImageJ/Fiji Icon list with the double arrow).
 
@@ -26,7 +26,7 @@ You will find all functions of the BioVoxxel Toolbox under the icon of the green
 Extended Particle Analyzer
 ==========================
 
-Purpose: The "Extended Particle Analyzer" is based on the ImageJ "Analyze Particles..." command. It enables the user to further restrict the analysis on particles according to many more parameter spezifications of shape descriptors and angle orientations. Thus, setting minimal and maximal exclusion ranges of different parameters enables to extract particles from a binary image. The output types are the same as for the {% include bc content='Analyze | Analyze Particles'%}.
+Purpose: The "Extended Particle Analyzer" is based on the ImageJ "Analyze Particles..." command. It enables the user to further restrict the analysis on particles according to many more parameter spezifications of shape descriptors and angle orientations. Thus, setting minimal and maximal exclusion ranges of different parameters enables to extract particles from a binary image. The output types are the same as for the {% include bc path='Analyze | Analyze Particles'%}.
 
 Example: If you want to extract/analyze only particles with a certain Feret's Angle or exclude elongated structures using the aspect ratio (AR) or circilarity you can specify so in the initial dialog box.
 
@@ -258,7 +258,7 @@ Purpose: The macro enables to "subtract" background due to inequal lighting from
 
 How to: You need either choose the two images in the "Flat-field" version or specify a gaussian blurring radius for the "Pseudo flat-field correction" in a way to eliminate specific feature appearance but to keep the difference in shading/lighting. Therefore, rather big radii (sigma) are needed (potentially between 40-150, but this depends on image and feature size).
 
-Remark: The pseudo flat field correction menu command links to the plugin with the same name under {% include bc content='Plugins | BioVoxxel'%} (necessary to additionally download from the BioVoxxel update site together with the Toolbox).
+Remark: The pseudo flat field correction menu command links to the plugin with the same name under {% include bc path='Plugins | BioVoxxel'%} (necessary to additionally download from the BioVoxxel update site together with the Toolbox).
 
 Advantage of the Pseudo flat field correction: This is now recordable and works with stacks. Thus, time-lapse movies e.g. from a brightfield microscope can be completely corrected for unequal lighting according to the individual differences in each frame. The blurring is visualized on the currently active frame to be able to sufficiently eliminate structural information.
 
@@ -294,7 +294,7 @@ Future: suggestions are welcome!
 Scaled Intensity Plot
 =====================
 
-Purpose: The tool creates a intensity plot along any kind of lines as well as from rectangular selections (as does {% include bc content='Analyze | Plot Profile'%}) but with the initial possibility to influence the displayed intensity scale. This enables to create plots which can be overlayed by choosing "add to existing plot". In the case of a rectangular selection it can be chosen if the plotting direction should be horizontal or vertical. The intensities along the other direction are then averaged. Additionally, the color and look of the plot line can be chosen. This should enable to better compare intensity plots from different images or selections which is only possible if they have the same scaling. The latter is done in unscaled units (pixels). If a new plot line is added to an existing plot the choice "Draw grid lines" is either ignored or forced depending on how the destination plot was created using the same tool.
+Purpose: The tool creates a intensity plot along any kind of lines as well as from rectangular selections (as does {% include bc path='Analyze | Plot Profile'%}) but with the initial possibility to influence the displayed intensity scale. This enables to create plots which can be overlayed by choosing "add to existing plot". In the case of a rectangular selection it can be chosen if the plotting direction should be horizontal or vertical. The intensities along the other direction are then averaged. Additionally, the color and look of the plot line can be chosen. This should enable to better compare intensity plots from different images or selections which is only possible if they have the same scaling. The latter is done in unscaled units (pixels). If a new plot line is added to an existing plot the choice "Draw grid lines" is either ignored or forced depending on how the destination plot was created using the same tool.
 
 <img src="/media/ScaledIntensityPlots.png" width="750"/>
 
@@ -322,7 +322,7 @@ Status: deprecated
 Adaptive Filter
 ===============
 
-(separate plugin under {% include bc content='Plugins | BioVoxxel'%})
+(separate plugin under {% include bc path='Plugins | BioVoxxel'%})
 
 Purpose/How to: This filter allows the choice between two basic filter modes (*median* and *mean*). The filter *Radius* defines the size of a square kernel (so actually not really a radius but to keep the entries intuitively similar to other filters in Fiji this label was chosen).
 
@@ -338,7 +338,7 @@ Output: The filter will be applied directly on the input image. It is undoable (
 
 Limitation: So far, the filter is only applicable on 8-bit and 16-bit single images.
 
-Installation: Part of the BioVoxxel update site in Fiji and can be found under {% include bc content='Plugins | BioVoxxel'%}
+Installation: Part of the BioVoxxel update site in Fiji and can be found under {% include bc path='Plugins | BioVoxxel'%}
 
 Form: plugin, recording still not fully functional!!!
 
@@ -512,7 +512,7 @@ Future: Suggestions are welcome!
 Gaussian weighted Median filter
 ===============================
 
-(separate plugin under {% include bc content='Plugins | BioVoxxel'%})
+(separate plugin under {% include bc path='Plugins | BioVoxxel'%})
 
 Purpose/How to: This filter is basically a normal median filter (as in ImageJ/Fiji) but with a weighted filter matrix. The radius is given in pixels. The weight is determined automatically by a 2D gaussian function (approximated to integer values) over the size of the filter grid. Thus, pixel closer to the filter center get a higher weight compared to more distant ones. This reduces the intensity homogenizing effect from a normal median filter but increases the edge-perservation of features.
 
@@ -520,7 +520,7 @@ Output: The filter will be applied directly on the input image. It is undoable (
 
 Limitation: So far, the filter is only applicable on 8-bit and 16-bit single images.
 
-Installation: Part of the BioVoxxel update site in Fiji and can be found under {% include bc content='Plugins | BioVoxxel'%}
+Installation: Part of the BioVoxxel update site in Fiji and can be found under {% include bc path='Plugins | BioVoxxel'%}
 
 Form: plugin, recordable
 
@@ -533,7 +533,7 @@ Future: Will be adjusted für 32-bit float-type images as well as RGB images and
 Enhance True Color Contrast
 ===========================
 
-(separate plugin under {% include bc content='Plugins | BioVoxxel'%})
+(separate plugin under {% include bc path='Plugins | BioVoxxel'%})
 
 Purpose: This image filter enhances the contrast of true color images similar to the method Enhance Contrast in Fiji. If the latter would be applied to true color images this leads to a change in color values and saturation. This unwanted effects are eliminated by the recordable "Enhance True Color Contrast" plugin. It preserves color tone and saturation while enhancing the contrast in the brightness channel of the HSB color space. This is done using high precision float value calculation and not by a simple conversion o fthe image to HSB color space as available in ImageJ/Fiji. The latter would lead to a loss in quality since due to conversion and back-conversion to RGB.
 
@@ -550,7 +550,7 @@ Status: maintenance active
 Mode and Differential Limited Mean Binarization
 ===============================================
 
-(separate plugin under {% include bc content='Plugins | BioVoxxel'%})
+(separate plugin under {% include bc path='Plugins | BioVoxxel'%})
 
 Purpose: The mode-limited mean (MoLiM) and the differential-limited mean (DiLiM) are two binarization algorithms which initially limit the image histogram according to its mode value (MoLiM) or its mode, an initial mean or the median (DiLiM). A more detailed description can be found under:
 
@@ -558,7 +558,7 @@ Purpose: The mode-limited mean (MoLiM) and the differential-limited mean (DiLiM)
 
 How To: the user can choose to use the differential threshold determination or the forced mode-limited method if "differential limitation" is off. The algorithm assumes that the features occupy less than 50% of the images space independent if they are bright on a dark background or vice versa. For the opposite case one would need to invert the final output image. The limitation step eliminates all intensity information in the histogram up to the limit (mode, mean or median) and calculates a new mean value which is taken as final threshold. "Force to smaller partition" anables to extract the pixels which occupy rather the smaller histogram partition besides the limit.
 
-Download: Part of the BioVoxxel update site in Fiji and can be found under {% include bc content='Plugins | BioVoxxel'%}
+Download: Part of the BioVoxxel update site in Fiji and can be found under {% include bc path='Plugins | BioVoxxel'%}
 
 Form: plugin, recordable
 

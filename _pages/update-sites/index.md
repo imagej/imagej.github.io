@@ -18,7 +18,7 @@ Following an update site
 
 </div>
 
-Out of the box, ImageJ has only the core *ImageJ* update site enabled. To enable additional features, choose {% include bc content='Help|Update...'%}, then click the "Manage update sites" button.
+Out of the box, ImageJ has only the core *ImageJ* update site enabled. To enable additional features, choose {% include bc path='Help|Update...'%}, then click the "Manage update sites" button.
 
 For further details, see [How to follow a 3rd party update site](/update-sites/following).
 

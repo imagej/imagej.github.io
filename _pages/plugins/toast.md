@@ -12,17 +12,17 @@ ToAST is a Fiji plugin performing tracking and analysis of motile fluorescent ob
 Usage
 -----
 
-The input for ToAST is a binary image, to create one please go to {% include bc content='Image | Adjust | Threshold'%}, select the level, press "apply". You might need to invert the image to make the background value 255, the object – 0. Use of automated thresolding plugins is also possible.
+The input for ToAST is a binary image, to create one please go to {% include bc path='Image | Adjust | Threshold'%}, select the level, press "apply". You might need to invert the image to make the background value 255, the object – 0. Use of automated thresolding plugins is also possible.
 
 <img src="/media/TOast 1.jpg" width="500"/>
 
-Run {% include bc content='Plugins | Tracking | ToAST'%}. In the dialog window please select the parameters of image acquisition.
+Run {% include bc path='Plugins | Tracking | ToAST'%}. In the dialog window please select the parameters of image acquisition.
 
 <img src="/media/TOast 2.jpg" width="200"/>
 
 The first 4 parameters are used to distinguish your objects of interest from dirt, overlapping objects and objects that are not quite in focus; it helps to assemble the tracks more reliably. Sliding average half size will serve as a size of the time window (in frames) at which the classification will be performed. All the points that have the speed below 0.5 micrometers per second will be assigned to non-moving; next, all the data points having the rotational speed over 45\*translational speed will be assigned to Wavers (high angular velocity and not too high translational); other will be divided into clockwise and counter-clockwise movers.
 
-After pressing OK button the plugin runs creating a log-file where it stores the coordinates, shape factors and motility parameters of the processed movie. It may be imported to any spreadsheet program (such as Excel) by {% include bc content='File | Open'%} and then import as space-delimited. First part of the file contains the parameters for every object, every frame.
+After pressing OK button the plugin runs creating a log-file where it stores the coordinates, shape factors and motility parameters of the processed movie. It may be imported to any spreadsheet program (such as Excel) by {% include bc path='File | Open'%} and then import as space-delimited. First part of the file contains the parameters for every object, every frame.
 
 <img src="/media/TOast 3.jpg" width="600"/>
 
@@ -31,7 +31,7 @@ Below you can find all the data again but sorted according to the types of motil
 Example
 -------
 
-There is an example for ToAST in Fiji: {% include bc content='File | Open Samples | Malaria Sporozoites (9.2MB)'%}
+There is an example for ToAST in Fiji: {% include bc path='File | Open Samples | Malaria Sporozoites (9.2MB)'%}
 
 Citation
 --------

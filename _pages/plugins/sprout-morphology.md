@@ -26,7 +26,7 @@ To install the plugin, activate the **Angiogenesis** [update site](/update-sites
 Usage
 -----
 
-Open a maximum intensity projection of the multi-channel image to be analyzed, then start the plugin via {% include bc content='Analyze|Sprout Morphology'%}. The process consists of up to six dialogs:
+Open a maximum intensity projection of the multi-channel image to be analyzed, then start the plugin via {% include bc path='Analyze|Sprout Morphology'%}. The process consists of up to six dialogs:
 
 ### General configuration
 

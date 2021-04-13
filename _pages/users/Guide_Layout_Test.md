@@ -48,9 +48,9 @@ Keyboard keys
 Menu structure
 --------------
 
-    {% include bc content='Image | Color | Split Channels'%}
+    {% include bc path='Image | Color | Split Channels'%}
 
-{% include bc content='Image | Color | Split Channels'%}
+{% include bc path='Image | Color | Split Channels'%}
 
 Boxes
 -----

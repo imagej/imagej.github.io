@@ -58,7 +58,7 @@ To use these tools you need to know some parameters of your microscope setup and
 2D Example
 ----------
 
-After opening the image to deconvolve and the image of the PSF, start {% include bc content='Plugins | Deconvolution | 2D Spectral Deconvolution...'%}
+After opening the image to deconvolve and the image of the PSF, start {% include bc path='Plugins | Deconvolution | 2D Spectral Deconvolution...'%}
 
 <figure><img src="/media/ParallelSpectralDeconvolution2DExample.jpg" title="ParallelSpectralDeconvolution2DExample.jpg" width="800" alt="ParallelSpectralDeconvolution2DExample.jpg" /><figcaption aria-hidden="true">ParallelSpectralDeconvolution2DExample.jpg</figcaption></figure>
 
@@ -69,7 +69,7 @@ Clicking on the Deconvolve button results in this:
 3D Example
 ----------
 
-After opening the image to deconvolve and the image of the PSF, start {% include bc content='Plugins | Deconvolution | 3D Spectral Deconvolution...'%}
+After opening the image to deconvolve and the image of the PSF, start {% include bc path='Plugins | Deconvolution | 3D Spectral Deconvolution...'%}
 
 <figure><img src="/media/ParallelSpectralDeconvolution3DExample.jpg" title="ParallelSpectralDeconvolution3DExample.jpg" width="800" alt="ParallelSpectralDeconvolution3DExample.jpg" /><figcaption aria-hidden="true">ParallelSpectralDeconvolution3DExample.jpg</figcaption></figure>
 

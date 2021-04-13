@@ -40,7 +40,7 @@ Specifically intended for lightsheet acquisitions of cleared samples (e.g. by CL
 Download
 --------
 
-A **beta**-Version of BigStitcher is available via the Fiji Updater. Just go to {% include bc content='Help | Update...'%}, click `Manage update sites` and select `BigStitcher` in the list. After applying the changes and restarting Fiji, BigStitcher will be available under {% include bc content='Plugins | BigStitcher | BigStitcher'%}.
+A **beta**-Version of BigStitcher is available via the Fiji Updater. Just go to {% include bc path='Help | Update...'%}, click `Manage update sites` and select `BigStitcher` in the list. After applying the changes and restarting Fiji, BigStitcher will be available under {% include bc path='Plugins | BigStitcher | BigStitcher'%}.
 
 The source code is available {% include github org='PreibischLab' repo='BigStitcher' %}, please also report feature requests & bugs there.
 

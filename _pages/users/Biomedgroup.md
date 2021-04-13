@@ -9,7 +9,7 @@ This account is used to manage the [Biomedgroup update site](http://sites.imagej
 
 To activate it:
 
--   [{% include bc content='Help|Update...'%}](/update-sites)
+-   [{% include bc path='Help|Update...'%}](/update-sites)
 -   Click *Manage update sites*
 -   Check *Biomedgroup*
 -   Click *Close*

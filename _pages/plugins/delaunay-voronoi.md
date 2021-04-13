@@ -37,7 +37,7 @@ This plugin operates on a point selection consisting of multiple points.
 1.  Select the Point tool (the 7th tool from the left in the main window).
 2.  Select the first point by clicking into the image.
 3.  Select subsequent points by holding down the Shift key while clicking into the image.
-4.  Run {% include bc content='Plugins | Analyze | Delaunay Voronoi'%} to generate the triangulation between points.
+4.  Run {% include bc path='Plugins | Analyze | Delaunay Voronoi'%} to generate the triangulation between points.
 5.  If you check the "interactive" box you can also add additional points (while still holding Shift) which will automatically become part of the triangulation.
 
 The plugin shows this dialog when it is called:

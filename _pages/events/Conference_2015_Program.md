@@ -221,7 +221,7 @@ The [scripting](/scripting) capabilities of [ImageJ](/about) play a pivotal role
 1.  An updated installation of Fiji
 2.  An internet connection, required for download of sample images and browsing of http://javadoc.imagej.net
 
-NB: If you subscribe to the ImageJ-dev update site, ensure that your Image1 version is at least 1.50a (the ImageJ-dev update site may bundle an outdated version of ImageJ1). To do so, use the ImageJ1 command {% include bc content='Help |Update ImageJ...'%}  
+NB: If you subscribe to the ImageJ-dev update site, ensure that your Image1 version is at least 1.50a (the ImageJ-dev update site may bundle an outdated version of ImageJ1). To do so, use the ImageJ1 command {% include bc path='Help |Update ImageJ...'%}  
 
 \[ [Presentation video](https://vimeo.com/140099767/) \]
 

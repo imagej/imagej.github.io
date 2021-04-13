@@ -20,7 +20,7 @@ Furthermore, we apply a few tweaks to improve the results:
 Simple Mode
 ===========
 
-The **simple mode** of global optimization requires only selection of an optimization strategy and no explicit setting of the threshold parameters. The simple global optimization is run automatically if you click through the **Stitching wizard** (in no-expert mode) or can be accessed from the main menu under {% include bc content='Optimize Globally And Apply Shift|Simple Mode'%}.
+The **simple mode** of global optimization requires only selection of an optimization strategy and no explicit setting of the threshold parameters. The simple global optimization is run automatically if you click through the **Stitching wizard** (in no-expert mode) or can be accessed from the main menu under {% include bc path='Optimize Globally And Apply Shift|Simple Mode'%}.
 
 <img src="/media/BigStitcher optimize simple1.png" width="600"/>
 
@@ -31,14 +31,14 @@ The options available here are:
 -   **Identify wrong links and handle unconnected Tiles:** first, run optimization with wrong link identification (with threshold presets STRICT and RELAXED) and then use shifts from metadata to align connected components relative to each other (while keeping the results from the first round within a component).
 -   **Show full options dialog:** Allow for the manual setting of thresholds in the next step.
 
-This will immediately update the tile locations in the BigDataViewer, if it is open. If you want to un-do this step, you can click {% include bc content='Remove Transformation|Latest/Newest Transformation'%} in the main menu.
+This will immediately update the tile locations in the BigDataViewer, if it is open. If you want to un-do this step, you can click {% include bc path='Remove Transformation|Latest/Newest Transformation'%} in the main menu.
 
 {% include info-box content='We will not save the results to the project XML file automatically, click the **Save** button in the main window to do that.' %}
 
 Expert Mode
 ===========
 
-If you click on {% include bc content='Optimize Globally And Apply Shift|Expert Mode'%} or proceed to the global optimization from the **Stitching wizard** in **expert mode**, you will be asked for a few extra parameters before the your views are aligned.
+If you click on {% include bc path='Optimize Globally And Apply Shift|Expert Mode'%} or proceed to the global optimization from the **Stitching wizard** in **expert mode**, you will be asked for a few extra parameters before the your views are aligned.
 
 Optimization strategy and convergence criteria
 ----------------------------------------------

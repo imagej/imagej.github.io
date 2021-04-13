@@ -12,7 +12,7 @@ Usage
 
 Reconstruct projects consist of a folder containing a series file, a set of section files, and a set of image files. A series file will have a *.ser* extension, while a section file will have a numeric extension, like Project.1, Project.2, ... , Project.100, and so forth.
 
-To translate a Reconstruct project into a TrakEM2 project, you may either open it through Fiji's {% include bc content='File | Open...'%} dialog, or through the {% include bc content='File | Import | Reconstruct Project...'%} dialog. Either one will prompt you to open a series file.
+To translate a Reconstruct project into a TrakEM2 project, you may either open it through Fiji's {% include bc path='File | Open...'%} dialog, or through the {% include bc path='File | Import | Reconstruct Project...'%} dialog. Either one will prompt you to open a series file.
 
 The log output will show That the Reconstruct Translator has been created, and that translation has begun. Translation often takes only a handful of seconds, but generating mipmaps will often take quite some time.
 

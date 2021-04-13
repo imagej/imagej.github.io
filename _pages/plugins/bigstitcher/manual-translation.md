@@ -7,7 +7,7 @@ description: test description
 Manual View Arrangement
 -----------------------
 
-In the **right-click menu** you can find various functions for manually arranging the views in your dataset under {% include bc content='Preprocessing|Arrange Views'%}.
+In the **right-click menu** you can find various functions for manually arranging the views in your dataset under {% include bc path='Preprocessing|Arrange Views'%}.
 
 <img src="/media/BigStitcher Arrange Views001.png" width="600"/>
 

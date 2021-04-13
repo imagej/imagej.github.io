@@ -83,7 +83,7 @@ Installation
 
 ### Fiji
 
-The plugin is part of the Fiji distribution. You can find it in the {% include bc content='Plugins | Optic Flow'%} menu.
+The plugin is part of the Fiji distribution. You can find it in the {% include bc path='Plugins | Optic Flow'%} menu.
 
 Usage
 -----

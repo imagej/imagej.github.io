@@ -16,7 +16,7 @@ Brightness and Contrast
 
 Contrast is the separation of the lightest and darkest parts of an image. An increase in contrast will darken shadows and lighten highlights. Increasing contrast is generally used to make objects in an image more distinguishable.
 
-Adjust the brightness and contrast with {% include bc content='Image | Adjust | Brightness/Contrast...'%} to make visualization of the image easier.
+Adjust the brightness and contrast with {% include bc path='Image | Adjust | Brightness/Contrast...'%} to make visualization of the image easier.
 
 Press the *Auto* button to apply an intelligent contrast stretch to the *the image display*. Brightness and contrast is adjusted by taking into account the image's histogram. If pressed repeatedly, the button increases the percentage of saturated pixels.
 
@@ -26,21 +26,21 @@ If the *Auto* button does not produce a desirable result, use the region-of-inte
 
 Pressing the *Apply* button permanently changes the *actual* grey values of the image. If just analyzing image intensity do not press this button.
 
-If you prefer the image to be displayed as "black on white" rather than "white on black", then use the "inverted" command: {% include bc content='Image | Lookup Tables | Invert LUT'%}. The command {% include bc content='Edit | Invert'%} inverts the pixel *values themselves* permanently.
+If you prefer the image to be displayed as "black on white" rather than "white on black", then use the "inverted" command: {% include bc path='Image | Lookup Tables | Invert LUT'%}. The command {% include bc path='Edit | Invert'%} inverts the pixel *values themselves* permanently.
 
 Getting intensity values from single ROI
 ----------------------------------------
 
-If working with a stack, the ROI selected can be analyzed with the command: {% include bc content='Image | Stacks | Plot Z Axis Profile'%}. This generates a single column of numbers - one slice intensity per row.
+If working with a stack, the ROI selected can be analyzed with the command: {% include bc path='Image | Stacks | Plot Z Axis Profile'%}. This generates a single column of numbers - one slice intensity per row.
 
-The top 6 rows of the column are details of the ROI. This makes sure the same ROI is not analyzed twice and allows you to save any interesting ROIs. The details are comprised of area, x-coordinate, y-coordinate, AR, roundness, and solidity of the ROI. If the ROI is a polyline&gt;freehand ROI rather than a square&gt;oval, it acts as if the ROI is an oval&gt;square. The (oval) ROI can be restored by entering the details prompted by the {% include bc content='Edit | Selection | Restore Selection'%} (hotkey: {% include key content='Ctrl' %}+{% include key content='Shift' %}+{% include key content='E' %}) command.
+The top 6 rows of the column are details of the ROI. This makes sure the same ROI is not analyzed twice and allows you to save any interesting ROIs. The details are comprised of area, x-coordinate, y-coordinate, AR, roundness, and solidity of the ROI. If the ROI is a polyline&gt;freehand ROI rather than a square&gt;oval, it acts as if the ROI is an oval&gt;square. The (oval) ROI can be restored by entering the details prompted by the {% include bc path='Edit | Selection | Restore Selection'%} (hotkey: {% include key content='Ctrl' %}+{% include key content='Shift' %}+{% include key content='E' %}) command.
 
-The results are displayed in a plot-window with the ROI details in the plot window title. The plot contains the buttons *List, Save, Copy.* The *Copy* button puts the data in the clipboard so it can be pasted into an Excel sheet. The settings for the copy button can be found under {% include bc content='Edit | Options | Profile Plot Options'%}. Recommended settings include: ''Do not save x-values ''(prevents slice number data being pasted into Excel) and *Autoclose* so that you don't have to close the analyzed plot each time.
+The results are displayed in a plot-window with the ROI details in the plot window title. The plot contains the buttons *List, Save, Copy.* The *Copy* button puts the data in the clipboard so it can be pasted into an Excel sheet. The settings for the copy button can be found under {% include bc path='Edit | Options | Profile Plot Options'%}. Recommended settings include: ''Do not save x-values ''(prevents slice number data being pasted into Excel) and *Autoclose* so that you don't have to close the analyzed plot each time.
 
 Dynamic intensity vs Time analysis
 ----------------------------------
 
-The plugin *Plot Z Axis Profile* (this is the *Z Profiler* from Kevin (Gali) Baler (gliblr at yahoo.com) and {% include person content='Rasband' %} simply renamed) will monitor the intensity of a moving ROI using a particle tracking tool. This tool can be either manual or automatic. Use the {% include bc content='Image | Stacks | Plot Z Axis Profile'%} command.
+The plugin *Plot Z Axis Profile* (this is the *Z Profiler* from Kevin (Gali) Baler (gliblr at yahoo.com) and {% include person content='Rasband' %} simply renamed) will monitor the intensity of a moving ROI using a particle tracking tool. This tool can be either manual or automatic. Use the {% include bc path='Image | Stacks | Plot Z Axis Profile'%} command.
 
 Getting intensity values from multiple ROIs
 -------------------------------------------
@@ -50,13 +50,13 @@ You can analyze multiple ROIs at once with Bob Dougherty's *Multi Measure* plugi
 The Multi Measure plugin that comes with the installation is v3.2.
 
 1.  Open confocal-series and remove the background (See Background correction)
-2.  Generate a reference stack for the addition of ROIs. Use the {% include bc content='Image | Stacks | Z-project'%} function and select the *Average*.
+2.  Generate a reference stack for the addition of ROIs. Use the {% include bc path='Image | Stacks | Z-project'%} function and select the *Average*.
 3.  Rename this image something memorable.
-4.  Open the *ROI Manager* plugin ({% include bc content='Analyze | Tools | Roi Manager'%} or toolbar icon).
+4.  Open the *ROI Manager* plugin ({% include bc path='Analyze | Tools | Roi Manager'%} or toolbar icon).
 5.  Select ROIs and "*Add*" to the ROI manager. Click the "*Show All*" button to help avoid analyzing the same cell twice.
 6.  After selecting ROIs to be analyzed in the reference image, you can draw them to the reference image by clicking the "*More&gt;&gt;*" button and selecting *Draw*. Save the reference image to the experiment's data folder and then click on the stack to be analyzed.
 7.  Click the "*More&gt;&gt;*" button in the ROI manager and select the *Multi Measure* button to measure all the ROIs. Click *Ok*. This will put values from each slice in to a single row with multiple columns per slice. Clicking on "*Measure all 50 slices*" will put all values from all slices and each ROI in a single column.
-8.  Go to the *Results* window and select the menu item {% include bc content='Edit | Select All...'%}. Then *Edit/Copy*.
+8.  Go to the *Results* window and select the menu item {% include bc path='Edit | Select All...'%}. Then *Edit/Copy*.
 9.  Go to Excel and paste in the data. Check that everything was pasted in correctly
 
 ![](/media/ roi select all.jpg "_roi_select_all.jpg")
@@ -65,28 +65,28 @@ The Multi Measure plugin that comes with the installation is v3.2.
 
 14\. In Excel, click the empty cell above the first data column and paste in the ROI coordinates. Save the ROIs with the Multi Measure button *Save*. Put them in the experimental data folder. The ROIs can be opened later either individually with the button *Open* or all at once with the button *Open All*.
 
-Oval and rectangular ROIs can be restored individually from x, y, l, h values with the {% include bc content='Plugins | ROI | Specify ROI...'%} command.
+Oval and rectangular ROIs can be restored individually from x, y, l, h values with the {% include bc path='Plugins | ROI | Specify ROI...'%} command.
 
 Ratio Analysis
 --------------
 
 ![](/media/Intensity ratio analysis.jpg "fig:intensity_ratio_analysis.jpg") Ratiometric imaging compares the recordings of two different signals to see if there are any similarities between them. It is done by dividing one channel by another channel to produce a third ratiometric channel. This technique is useful because it corrects for dye leakage, unequal dye loading, and photo-bleaching. An example application would be measuring intracellular ion, pH, and voltage dynamics in real time.
 
-Background subtraction is needed before analysis of dual-channel ratio images. See also the [background correction](#Background_correction "wikilink") section. The *Ratio\_Profiler* plugin will perform ratiometric analysis of a single ROI on a dual-channel interleaved stack. The odd-slices are channel 1 images and the even slices are channel 2 images. If your two channels are opened as separate stacks, such as Zeiss, the two channels can be interleaved (mixed together by alternating between them) with the menu command {% include bc content='Plugins | Stacks - Shuffling | Stack Interleaver'%}.
+Background subtraction is needed before analysis of dual-channel ratio images. See also the [background correction](#Background_correction "wikilink") section. The *Ratio\_Profiler* plugin will perform ratiometric analysis of a single ROI on a dual-channel interleaved stack. The odd-slices are channel 1 images and the even slices are channel 2 images. If your two channels are opened as separate stacks, such as Zeiss, the two channels can be interleaved (mixed together by alternating between them) with the menu command {% include bc path='Plugins | Stacks - Shuffling | Stack Interleaver'%}.
 
 The plugin will generate a green-plot of the ratio values. Ch1÷Ch2 is the default and you can get Ch2÷Ch1 if the plugin is run with the {% include key content='Alt' %} key down. It will also generate a second plot of the intensities of the individual channels, Ch1 and Ch2, as well as a results table.
 
 The first row of the results table contains values for the x, y, width and height of the ROI.
 
-From the second row downward, the first column is the time (slice number), the second column is the Ch1 mean intensity, and the third channel is the Ch2 mean intensity and the ratio value. The stack must have its frame interval calibrated in order for the "Time" value to be in seconds. Otherwise, it is "Slices". The frame interval can be set for the stack via the menu command ''{% include bc content='Image | Properties'%}.
+From the second row downward, the first column is the time (slice number), the second column is the Ch1 mean intensity, and the third channel is the Ch2 mean intensity and the ratio value. The stack must have its frame interval calibrated in order for the "Time" value to be in seconds. Otherwise, it is "Slices". The frame interval can be set for the stack via the menu command ''{% include bc path='Image | Properties'%}.
 
-This table can be copied to the clipboard and pasted elsewhere with the "{% include bc content='Edit | Copy All'%}" menu command.
+This table can be copied to the clipboard and pasted elsewhere with the "{% include bc path='Edit | Copy All'%}" menu command.
 
 ***Ratio Analysis Using ROI manager***
 
 1.Subtract the background from the image.
 
-2\. Open *ROI manager* ({% include bc content='Analyze | Tools | ROI manager...'%}) and click the "Show All" button.
+2\. Open *ROI manager* ({% include bc path='Analyze | Tools | ROI manager...'%}) and click the "Show All" button.
 
 3\. Select the cells to be analyzed and add them to the ROI manager ("Add" button or keyboard {% include key content='T' %} key).
 
@@ -96,7 +96,7 @@ The results window contains the mean of ch1 and ch2 and their ratio. Each row is
 
 To generate a reference image:
 
-1.  Flatten the stack with the menu command ({% include bc content='Image | Stacks | Z-project'%} with "Projection type: Maximum"),
+1.  Flatten the stack with the menu command ({% include bc path='Image | Stacks | Z-project'%} with "Projection type: Maximum"),
 2.  Adjust the brightness and contrast if necessary.
 3.  Select the new image and click the "More" button in the ROI manager. After that select "Label".
 
@@ -107,11 +107,11 @@ Obtaining timestamp data
 
 The [LSM Toolbox](/formats/lsm) is a project aiming at the integration of common useful functions around the Zeiss LSM file format, that should enhance usability of confocal LSM files kept in their native format, thus preserving all available metadata.
 
-In Fiji, corresponding commands are: "{% include bc content='File | Import | Show LSMToolbox'%}" which displays the toolbox, from which all commands can be called and "{% include bc content='Help | About Plugins | LSMToolbox...'%}" which displays information about the plugin.
+In Fiji, corresponding commands are: "{% include bc path='File | Import | Show LSMToolbox'%}" which displays the toolbox, from which all commands can be called and "{% include bc path='Help | About Plugins | LSMToolbox...'%}" which displays information about the plugin.
 
 ### Biorad
 
-This reading can be found by using the menu command {% include bc content='Image | Show Info...'%}. Scroll down to get the time each slice was acquired. Select this time, copy it into Excel, and find the time number obtained by using the Excel menu command {% include bc content='Edit | Replace'%}. This will leave only the time data. The "elapsed" time can then be calculated by subtracting row 1 from all subsequent rows.
+This reading can be found by using the menu command {% include bc path='Image | Show Info...'%}. Scroll down to get the time each slice was acquired. Select this time, copy it into Excel, and find the time number obtained by using the Excel menu command {% include bc path='Edit | Replace'%}. This will leave only the time data. The "elapsed" time can then be calculated by subtracting row 1 from all subsequent rows.
 
 Pseudo-linescan
 ---------------
@@ -120,7 +120,7 @@ Linescanning involves acquiring a single line, one pixel in width, from a common
 
 A pseudo-linescan generation of a 3-D (*x, y, t*) image. It is useful for displaying 3-D data in 2 dimensions.
 
-A line of interest is drawn followed by the command: {% include bc content='Image | Stacks | Reslice'%} or with the keyboard button {% include key content='/' %}. It will ask you for the line width that you wish to be averaged. It will generate a pseudo-linescan "stack" with each slice representing the pseudo-linescan of a single-pixel wide line along the line of interest. Average the pseudo-linescan "stack" by selecting {% include bc content='Image | Stacks | Z-Project...'%} and use the *Average* command. A poly-line can be utilized, but this will only generate a single pixel slice.
+A line of interest is drawn followed by the command: {% include bc path='Image | Stacks | Reslice'%} or with the keyboard button {% include key content='/' %}. It will ask you for the line width that you wish to be averaged. It will generate a pseudo-linescan "stack" with each slice representing the pseudo-linescan of a single-pixel wide line along the line of interest. Average the pseudo-linescan "stack" by selecting {% include bc path='Image | Stacks | Z-Project...'%} and use the *Average* command. A poly-line can be utilized, but this will only generate a single pixel slice.
 
 Fiji's default settings assume that stacks are *z*-series rather than *t*-series. This means that many functions related to the third-dimension of an image stack are referred to with a *z-*. Just keep this in mind.
 
@@ -142,7 +142,7 @@ Non-linear contrast stretching
 
 ### Equalization
 
-<table><tbody><tr class="odd"><td style="border:none;padding:0in;"><p> You can have more control over brightness and contrast adjustments with the {% include bc content='Process | Enhance contrast'%} menu command. With a stack, it analyzes the each slice's histogram to make the adjustment.</p><p>The <em>Equalize contrast</em> command applies a non-linear stretch of the histogram based on the square root of its intensity.</p></td></tr></tbody></table>
+<table><tbody><tr class="odd"><td style="border:none;padding:0in;"><p> You can have more control over brightness and contrast adjustments with the {% include bc path='Process | Enhance contrast'%} menu command. With a stack, it analyzes the each slice's histogram to make the adjustment.</p><p>The <em>Equalize contrast</em> command applies a non-linear stretch of the histogram based on the square root of its intensity.</p></td></tr></tbody></table>
 
 ![](/media/Equalize histrogram.jpg "equalize_histrogram.jpg")
 
@@ -152,7 +152,7 @@ Gamma performs a non-linear histogram adjustment. Faint objects become more inte
 
 For 8 bit images; New intensity = 255 × *\[(old intensity÷255) gamma*\]
 
-Gamma can be adjusted via the {% include bc content='Process | Math | Gamma'%} command. It will allow you to adjust the gamma with the scroll bar. Click on *Ok* when you are finished. You can use the Scroll-bar to determine the desired gamma value on one slice of your stack. There is also an option to preview the results.
+Gamma can be adjusted via the {% include bc path='Process | Math | Gamma'%} command. It will allow you to adjust the gamma with the scroll bar. Click on *Ok* when you are finished. You can use the Scroll-bar to determine the desired gamma value on one slice of your stack. There is also an option to preview the results.
 
 ![](/media/Gamma pic.jpg "gamma_pic.jpg")
 
@@ -161,13 +161,13 @@ Filtering
 
 See the [online reference](http://homepages.inf.ed.ac.uk/rbf/HIPR2/filtops.htm) for an explanation of digital filters and how they work.
 
-Filters can be found using the menu command {% include bc content='Process | Filters...'%}.
+Filters can be found using the menu command {% include bc path='Process | Filters...'%}.
 
-*Mean filter*: the pixel is replaced with the average of itself and its neighbors within the specified radius. The menu item {% include bc content='Process | Smooth'%} is a 3×3 mean filter.
+*Mean filter*: the pixel is replaced with the average of itself and its neighbors within the specified radius. The menu item {% include bc path='Process | Smooth'%} is a 3×3 mean filter.
 
 *Gaussian filter*: This is similar to a smoothing filter but instead replaces the pixel value with a value proportional to a normal distribution of its neighbors.
 
-*Median filter*: The pixel value is replaced with the median of itself and its adjacent neighbors. This removes noise and *preserves boundaries* better than simple average filtering. The menu item {% include bc content='Process | Noise | Despeckle'%} is a 3×3 median filter.
+*Median filter*: The pixel value is replaced with the median of itself and its adjacent neighbors. This removes noise and *preserves boundaries* better than simple average filtering. The menu item {% include bc path='Process | Noise | Despeckle'%} is a 3×3 median filter.
 
 "Convolve filter": This allows two arrays of numbers to be multiplied together. The arrays can be different sizes but must be of the same dimension. In image analysis this process is generally used to produce an output image where the pixel values are linear combinations of certain input values.
 
@@ -180,15 +180,15 @@ Filters can be found using the menu command {% include bc content='Process | Fil
 Background correction
 ---------------------
 
-Background correction can be done in multiple ways. A simple method is to use the {% include bc content='Image | Lookup Tables | HiLo'%} LUT to display zero values as blue and white values (pixel value 255) as red.
+Background correction can be done in multiple ways. A simple method is to use the {% include bc path='Image | Lookup Tables | HiLo'%} LUT to display zero values as blue and white values (pixel value 255) as red.
 
 With a background that is relatively even across the image, remove it with the *Brightness/Contrast* command by slowly raising the *Minimum* value until most of the background is displayed blue. Press the ''Apply ''button to make a permanent change.
 
 ### Rolling-Ball background correction
 
-To fix an uneven background use the menu command {% include bc content='Process | Subtract background'%}. This will use a *rolling ball* algorithm on the uneven background. The radius should be set to at least the size of the largest object that is *not* part of the background. It can also be used to remove background from gels where the background is white. Running the command several times may produce better results. The user can choose whether or not to have a light background, create a background with no subtraction, have a sliding paraboloid, disable smoothing, or preview the results. The default value for the rolling ball radius is 50 pixels.
+To fix an uneven background use the menu command {% include bc path='Process | Subtract background'%}. This will use a *rolling ball* algorithm on the uneven background. The radius should be set to at least the size of the largest object that is *not* part of the background. It can also be used to remove background from gels where the background is white. Running the command several times may produce better results. The user can choose whether or not to have a light background, create a background with no subtraction, have a sliding paraboloid, disable smoothing, or preview the results. The default value for the rolling ball radius is 50 pixels.
 
-<table><tbody><tr class="odd"><td style="border:none;padding:0.0194in;"><p> <em>RAW</em></p></td><td style="border:none;padding:0.0194in;"></td><td style="border:none;padding:0.0194in;"><p> {% include bc content='Process | Subtract Background...'%}</p></td></tr><tr class="even"><td style="border:none;padding:0.0194in;"><p> <img src="/media/Raw rolling ball back corr.jpg" title="fig:raw_rolling_ball_back_corr.jpg" alt="raw_rolling_ball_back_corr.jpg" /></p></td><td style="border:none;padding:0.0194in;"><p> <img src="/media/Rolling ball back corr.jpg" title="fig:rolling_ball_back_corr.jpg" alt="rolling_ball_back_corr.jpg" /></p></td><td style="border:none;padding:0.0194in;"><p> <img src="/media/Processed rolling ball back corr.jpg" title="fig:processed_rolling_ball_back_corr.jpg" alt="processed_rolling_ball_back_corr.jpg" /></p></td></tr></tbody></table>
+<table><tbody><tr class="odd"><td style="border:none;padding:0.0194in;"><p> <em>RAW</em></p></td><td style="border:none;padding:0.0194in;"></td><td style="border:none;padding:0.0194in;"><p> {% include bc path='Process | Subtract Background...'%}</p></td></tr><tr class="even"><td style="border:none;padding:0.0194in;"><p> <img src="/media/Raw rolling ball back corr.jpg" title="fig:raw_rolling_ball_back_corr.jpg" alt="raw_rolling_ball_back_corr.jpg" /></p></td><td style="border:none;padding:0.0194in;"><p> <img src="/media/Rolling ball back corr.jpg" title="fig:rolling_ball_back_corr.jpg" alt="rolling_ball_back_corr.jpg" /></p></td><td style="border:none;padding:0.0194in;"><p> <img src="/media/Processed rolling ball back corr.jpg" title="fig:processed_rolling_ball_back_corr.jpg" alt="processed_rolling_ball_back_corr.jpg" /></p></td></tr></tbody></table>
 
 Once the background has been evened, final adjustments can be made with the *Brightness/Contrast* control.
 
@@ -198,7 +198,7 @@ Once the background has been evened, final adjustments can be made with the *Bri
 
 ### ROI background correction
 
-The rolling-ball algorithm takes a lot of time. To speed up the process with an image that has a more even background, select a region of interest from the background and subtract the mean value of this area for each slice from each slice. Use the selection tools to select an area of background and run the menu command {% include bc content='Process | Subtract Background'%}. This macro will subtract the mean of the ROI from the image plus an additional value equal to the standard deviation of the ROI multiplied by the scaling factor you enter. The default for this is 3.
+The rolling-ball algorithm takes a lot of time. To speed up the process with an image that has a more even background, select a region of interest from the background and subtract the mean value of this area for each slice from each slice. Use the selection tools to select an area of background and run the menu command {% include bc path='Process | Subtract Background'%}. This macro will subtract the mean of the ROI from the image plus an additional value equal to the standard deviation of the ROI multiplied by the scaling factor you enter. The default for this is 3.
 
 This macro, because it also works with stacks, can be used on time-courses with varying backgrounds.
 
@@ -215,10 +215,10 @@ Use this technique on brightfield images. You can correct uneven illumination or
 
 1.  Open both the experimental image and the flat-field image.
 2.  Click the *Select all* button on the flat-field image and measure the average intensity. This value, the k1 value, will appear in the results window.
-3.  Use the *Image Calculator plus* plugin ({% include bc content='Analyze | Tools | Calculator plus'%}).
+3.  Use the *Image Calculator plus* plugin ({% include bc path='Analyze | Tools | Calculator plus'%}).
 4.  i1 = experimental image; i2 = flat-field image; k1 = mean flat-field intensity; k2 = 0. Select the "*Divide"* operation.
 
-This can also be done using the {% include bc content='Process | Image Calculator'%}function with the *32-bit Result* option checked. Then adjust the brightness and contrast and convert the image to 8-bit.
+This can also be done using the {% include bc path='Process | Image Calculator'%}function with the *32-bit Result* option checked. Then adjust the brightness and contrast and convert the image to 8-bit.
 
 ![](/media/Calculator plus flat field.jpg "calculator_plus_flat_field.jpg")
 
@@ -228,7 +228,7 @@ This can also be done using the {% include bc content='Process | Image Calculato
 
 ### FFT background correction
 
-You can correct for uneven illumination and horizontal "scan lines" in transmitted light images acquired using confocal microscopes by using the native FFT bandpass function ({% include bc content='Process | FFT | Bandpass Filter...).'%}
+You can correct for uneven illumination and horizontal "scan lines" in transmitted light images acquired using confocal microscopes by using the native FFT bandpass function ({% include bc path='Process | FFT | Bandpass Filter...).'%}
 
 You can experiment with the settings to optimize the filtering and also choose to filter structures down to a certain number of pixels. The default value is 40 pixels. You can filter small structures up to a certain value. The default value is 3 pixels. The user can choose from a drop down menu whether to suppress stripes with None, Horizontal, or Vertical. The tolerance of direction can be chosen. The default is 5%. Finally, the user can choose whether to allow autoscale after filtering, saturation of the image when autoscaling, whether or not to display the filter, and whether or not to process an entire stack.
 
@@ -239,17 +239,17 @@ Masking unwanted regions
 
 ### Simple masking
 
-Use one of the ROI tools to draw around the area of interest and then select: {% include bc content='Edit | Clear outside'%}. This will change the area outside the selected region to the background value.
+Use one of the ROI tools to draw around the area of interest and then select: {% include bc path='Edit | Clear outside'%}. This will change the area outside the selected region to the background value.
 
 ### Complex masking
 
 More sophisticated masking can be done by *thresholding* the image and subtracting the new binary image from the original image.
 
 1.  Duplicate the image, or, if it's a stack, generate an *average projection* of a few frames.
-2.  Threshold this image with the menu command {% include bc content='Image | Adjust | Threshold'%}.
+2.  Threshold this image with the menu command {% include bc path='Image | Adjust | Threshold'%}.
 3.  Hit the Auto button and adjust the sliders until all the cells are highlighted red.
-4.  Click *Apply*. Check the following box: *black foreground, white background*. You should now have a white and black image with your cells black and background white. If you have white cells and black background, invert the image with {% include bc content='Edit | Invert'%}.
-5.  This can be smoothed with the command {% include bc content='Process | Smooth'%} and the black area enlarged slightly with {% include bc content='Process | Binary | Dilate'%} to give a better mask.
-6.  Using the regular Image calculator {% include bc content='Process | Image calculator'%} subtract this black and white "mask" image from your original image or stack.
+4.  Click *Apply*. Check the following box: *black foreground, white background*. You should now have a white and black image with your cells black and background white. If you have white cells and black background, invert the image with {% include bc path='Edit | Invert'%}.
+5.  This can be smoothed with the command {% include bc path='Process | Smooth'%} and the black area enlarged slightly with {% include bc path='Process | Binary | Dilate'%} to give a better mask.
+6.  Using the regular Image calculator {% include bc path='Process | Image calculator'%} subtract this black and white "mask" image from your original image or stack.
 
  

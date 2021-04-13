@@ -13,7 +13,7 @@ Quickstart
 ----------
 
 -   Press {% include key content='\[' %} to bring up the [Script Editor](/scripting/script-editor).
--   Select an example Jython script from the {% include bc content='Templates | \[by language\] | Python'%} menu.
+-   Select an example Jython script from the {% include bc path='Templates | \[by language\] | Python'%} menu.
 -   Press {% include key content='Ctrl\|R' %} to run the script!
 
 The Jython interpreter plugin
@@ -21,11 +21,11 @@ The Jython interpreter plugin
 
 The interpreter provides a screen and a prompt. Type any jython code on the prompt to interact with ImageJ.
 
-Launch it from {% include bc content='Plugins | Scripting | Jython Interpreter'%}. See [Scripting Help](/scripting) for all keybindings, and also [Scripting comparisons](/scripting/comparisons).
+Launch it from {% include bc path='Plugins | Scripting | Jython Interpreter'%}. See [Scripting Help](/scripting) for all keybindings, and also [Scripting comparisons](/scripting/comparisons).
 
 
 {% capture  content %}
-Note that ImageJ also ships a unified Script Interpreter plugin, accessible from {% include bc content='Plugins | Scripting | Script Interpreter'%}. But it is currently beta quality, and the Python language does not work properly due to bugs. Once this issue is fixed, the unified Script Interpreter will replace the language-specific interpreters such as the Jython Interpreter.
+Note that ImageJ also ships a unified Script Interpreter plugin, accessible from {% include bc path='Plugins | Scripting | Script Interpreter'%}. But it is currently beta quality, and the Python language does not work properly due to bugs. Once this issue is fixed, the unified Script Interpreter will replace the language-specific interpreters such as the Jython Interpreter.
 {% endcapture %}
 {% include warning-box content=content %}
 
@@ -54,8 +54,8 @@ Where `java.io.File` is the class to be imported. See also section [Importing ot
 To create a script for the GUI, the recommended setup is the following:
 
 -   Edit and save a file in your favorite text editor. If you want ImageJ1 to insert it into the Menu structure, the file must be saved somewhere under ImageJ plugins folder, have an underscore on the name, and a .py extension.
--   Run {% include bc content='Plugins | Scripting | Refresh Jython scripts'%} <b>only</b> the very first time after newly creating the file under any folder or subfolder of ImageJ's plugins folder. A menu item will appear with its name, from which it can be run.
--   Keep editing (and saving) the file from your editor. Just select the menu item to execute it over and over. Or use the {% include bc content='Plugins | Utilities | Find Commands...'%} window to launch it easily (keybinding 'l').
+-   Run {% include bc path='Plugins | Scripting | Refresh Jython scripts'%} <b>only</b> the very first time after newly creating the file under any folder or subfolder of ImageJ's plugins folder. A menu item will appear with its name, from which it can be run.
+-   Keep editing (and saving) the file from your editor. Just select the menu item to execute it over and over. Or use the {% include bc path='Plugins | Utilities | Find Commands...'%} window to launch it easily (keybinding 'l').
 
 The next time Fiji is run, it will setup all your scripts in the Plugins menu.
 
@@ -1761,9 +1761,9 @@ Jython for plugins
 
 ### Using a jython script as a plugin
 
-The simplest way is to place the jython script file into fiji/plugins/ folder or a subfolder, and it will appear in the menus after running "'{% include bc content='Plugins | Scripting | Refresh Jython Scripts'%}'" or "'{% include bc content='Help | Refresh Menus'%}'", or on restarting Fiji.
+The simplest way is to place the jython script file into fiji/plugins/ folder or a subfolder, and it will appear in the menus after running "'{% include bc path='Plugins | Scripting | Refresh Jython Scripts'%}'" or "'{% include bc path='Help | Refresh Menus'%}'", or on restarting Fiji.
 
-If you want to have the Jython script show up in a place outside the Plugins menu, just put the file into an appropriate subdirectory of fiji/plugins/Scripts/; for example, if you put a Jython script called Animation\_.py into fiji/plugins/Scripts/File/New/, it will be available as {% include bc content='File | New | Animation'%}.
+If you want to have the Jython script show up in a place outside the Plugins menu, just put the file into an appropriate subdirectory of fiji/plugins/Scripts/; for example, if you put a Jython script called Animation\_.py into fiji/plugins/Scripts/File/New/, it will be available as {% include bc path='File | New | Animation'%}.
 
 To populate an update site, the updater let the possibility to directly upload jython scripts as .py (or $py.class for the one that resides in the `Jars/Lib` folder). Alternatively if you want to bundle multiple scripts you can pack them into a jar archive as described below.
 

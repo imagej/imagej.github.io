@@ -64,13 +64,13 @@ Installation
 ------------
 
 -   [Enable](/update-sites/following) the TensorFlow [update site](Update_site).
--   The command is in {% include bc content='Plugins | Classification | Microscope Image Focus Quality'%}.
+-   The command is in {% include bc path='Plugins | Classification | Microscope Image Focus Quality'%}.
 
 Usage
 -----
 
 -   Open an image to analyze (see [sample images](https://storage.googleapis.com/microscope-image-quality/static/fiji_plugin_test_images.zip)).
--   Run {% include bc content='Plugins | Classification | Microscope Image Focus Quality'%}.
+-   Run {% include bc path='Plugins | Classification | Microscope Image Focus Quality'%}.
 -   A dialog will appear allowing you to configure the output visualization. The following options are available:
     -   **Generate probability image** - When checked, a multi-channel image will be created with one channel per focus level, and each value corresponding to the probability of that sample being at that focus level.
     -   **Overlay probability patches** - When checked, each classified region of the image will be overlaid with a color whose hue denotes the most likely focus level and whose brightness denotes the confidence (i.e., probability) of the region being at that level.
@@ -81,7 +81,7 @@ The screenshot above uses the "Overlay probability patches" option with a thickn
 
 If you wish to access the results of the classification quantitatively (e.g., as part of an automated workflow via [scripting](/scripting)), use the "Generate probability image" option.
 
-You can can remove the probability patches overlay via the {% include bc content='Image | Overlay | Remove Overlay'%} command.
+You can can remove the probability patches overlay via the {% include bc path='Image | Overlay | Remove Overlay'%} command.
 
 Limitations
 -----------

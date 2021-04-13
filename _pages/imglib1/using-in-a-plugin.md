@@ -32,7 +32,7 @@ A plugin skeleton looks like this:
 
 If you work from within the [Script Editor](/scripting/script-editor), you can save it anywhere and Compile & Run it with *Run&gt;Compile & Run*.
 
-Otherwise you have to save this in a file named `Pixel_Summation.java` in the Fiji plugins folder. You can either {% include bc content='Help | Update Menus'%} and find the new plugin in the *Plugins* menu, or compile it from the command line with:
+Otherwise you have to save this in a file named `Pixel_Summation.java` in the Fiji plugins folder. You can either {% include bc path='Help | Update Menus'%} and find the new plugin in the *Plugins* menu, or compile it from the command line with:
 
     ./fiji --javac plugins/Pixel_Summation.java
 

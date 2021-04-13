@@ -59,7 +59,7 @@ Adjusting Threshold
 Ideally you want to use one of the auto-threshold methods, rather than manually tweaking, so that your result is reproducible later on the same data, and on multiple other datasets.
 
 -   Open your image
--   Select {% include bc content='Image | Adjust | Threshold...'%}
+-   Select {% include bc path='Image | Adjust | Threshold...'%}
 -   Specify whether or not the background should be dark or light
 -   Adjust the minimum and maximum sliders until you are satisfied with the saturation level of your image
     -   \[https://imagej.net/docs/guide/146-28.html#sub:Threshold...%5BT%5D More information\]
@@ -69,7 +69,7 @@ Creating Masks
 
 <figure><img src="/media/Eroded tree.png" title="Over-saturated mask is eroded around the center tree ring" width="300" alt="Over-saturated mask is eroded around the center tree ring" /><figcaption aria-hidden="true">Over-saturated mask is eroded around the center tree ring</figcaption></figure>
 
--   Select {% include bc content='Edit | Selection | Create Mask'%}
+-   Select {% include bc path='Edit | Selection | Create Mask'%}
 -   Based on the image and set threshold, some portions of the image may be over/under saturated
     -   Select the portion of the image that needs to be adjusted
     -   Select [Dilate](https://imagej.net/docs/guide/146-29.html#sub:Dilate) to grow the included pixels to further saturate this portion of the image or [Erode](https://imagej.net/docs/guide/146-29.html#sub:Erode) to remove saturation
@@ -83,7 +83,7 @@ Selections
 
 ### Creating Selections
 
--   Select {% include bc content='Edit | Selection | Create Selection'%} to select the objects within the mask
+-   Select {% include bc path='Edit | Selection | Create Selection'%} to select the objects within the mask
 -   To deselect a portion of the image, select {% include key content='Shift' %}+{% include key content='click' %}
     -   [More information](https://imagej.net/docs/guide/146-27.html#sub:Create-Selection)
 

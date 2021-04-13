@@ -15,7 +15,7 @@ The [TrackMate](/plugins/trackmate) plugin provides a way to semi-automatically 
 The test image
 --------------
 
-The test image we will use for this tutorial has now a link in Fiji. You can find it in {% include bc content='File | Open Samples | Tracks for TrackMate (807K)'%}, at the bottom of the list.
+The test image we will use for this tutorial has now a link in Fiji. You can find it in {% include bc path='File | Open Samples | Tracks for TrackMate (807K)'%}, at the bottom of the list.
 
 ![](/media/TrackMate FakeTracks.png)
 
@@ -31,13 +31,13 @@ Starting TrackMate
 
 ![](/media/TrackMate MainButtons.png)
 
-With this image selected, launch TrackMate from the menu {% include bc content='Plugins | Tracking | TrackMate'%} or from the [Command launcher](Using_the_Command_Launcher). The TrackMate GUI appears next to the image, displaying the starting dialog panel.
+With this image selected, launch TrackMate from the menu {% include bc path='Plugins | Tracking | TrackMate'%} or from the [Command launcher](Using_the_Command_Launcher). The TrackMate GUI appears next to the image, displaying the starting dialog panel.
 
 But first, just a few words about its look. The user interface is a single frame - that can be resized - divided in a main panel, that displays context-dependent dialogs, and a permanent bottom panel containing the four main buttons depicted on the right.
 
 The **Next** button allows to step through the tracking process. It might be disabled depending on the current panel content. For instance, if you do not select a valid image in the first panel, it will be disabled. The **Previous** button steps back in the process, without executing actions. For instance, if you go back on the segmentation panel, segmentation will not be re-executed.
 
-The **Save** button creates a XML file that contains all of the data you generated at the moment you click it. Since you can save at any time, the resulting file might miss tracks, spots, etc... You can load the saved file using the menu item {% include bc content='Plugins | Tracking | Load a TrackMate file'%}. It will restore the session just where you saved it.
+The **Save** button creates a XML file that contains all of the data you generated at the moment you click it. Since you can save at any time, the resulting file might miss tracks, spots, etc... You can load the saved file using the menu item {% include bc path='Plugins | Tracking | Load a TrackMate file'%}. It will restore the session just where you saved it.
 
 Now is a good time to speak strategy when it comes to saving/restoring. You can save at anytime in TrackMate. If you save just before the tracking process, you will be taken there with the data you generated so far upon loading. TrackMate saves a <u>link to the image file</u> (as an absolute file path) but not the image itself. When loading a TrackMate file, it tries first to retrieve and open this file in ImageJ. So it is a good idea to pre-process, crop, edit metadata and massage the target image first in Fiji, then save it as a .tif, then launch TrackMate. Particularly if you deal with a multi-series file, such as Leica .lif files.
 
@@ -55,7 +55,7 @@ This first panel allows you to check the spatial and temporal calibration of you
 
 What is critical is also to check the dimensionality of the image. In our case, we have a 2D time-lapse of 50 frames. If metadata are not present or cannot be read, ImageJ tends to assume that stack always are Z-stack on a single time-point.
 
-If the calibration or dimensionality of your data is not right, I recommend changing it in the image metadata itself, using {% include bc content='Image | Properties'%} ({% include key content='Ctrl' %}+{% include key content='Shift' %}+{% include key content='P' %}). The press the 'Refresh source' button on the TrackMate start panel to grab changes.
+If the calibration or dimensionality of your data is not right, I recommend changing it in the image metadata itself, using {% include bc path='Image | Properties'%} ({% include key content='Ctrl' %}+{% include key content='Shift' %}+{% include key content='P' %}). The press the 'Refresh source' button on the TrackMate start panel to grab changes.
 
 You can also define a sub-region for processing: if you are only interested in finding spots in a defined region of the image, you can use any of the ROI tools of ImageJ to draw a closed area on the image. Once you are happy with it, press the **Refresh source** button on the panel to pass it to TrackMate. You should see that the **X** **Y** start and end values change to reflect the bounding box of the ROI you defined. The ROI needs not to be a square. It can be any closed shape.
 

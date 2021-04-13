@@ -35,7 +35,7 @@ Installation
 
 The FLIMJ plugin is available from the "FLIMJ" [update site](Update_site).
 
-Once you have installed the FLIMJ plugin, it becomes available on the menu under {% include bc content='Analyze | Lifetime | FLIMJ'%}.
+Once you have installed the FLIMJ plugin, it becomes available on the menu under {% include bc path='Analyze | Lifetime | FLIMJ'%}.
 
 Usage
 -----
@@ -46,7 +46,7 @@ Open a dataset (such as {% include github org='flimlib' repo='flimj-ops' path='t
 
 <figure><img src="/media/FLIMJ usage open dataset.png" title="FLIMJ_usage_open_dataset.png" width="300" alt="FLIMJ_usage_open_dataset.png" /><figcaption aria-hidden="true">FLIMJ_usage_open_dataset.png</figcaption></figure>
 
-With the desired dataset window active, launch FLIMJ from the menu under {% include bc content='Analyze | Lifetime | FLIMJ'%} or search for "FLIMJ" in the search box:
+With the desired dataset window active, launch FLIMJ from the menu under {% include bc path='Analyze | Lifetime | FLIMJ'%} or search for "FLIMJ" in the search box:
 
 <figure><img src="/media/FLIMJ first launch.png" title="FLIMJ_first_launch.png" width="600" alt="FLIMJ_first_launch.png" /><figcaption aria-hidden="true">FLIMJ_first_launch.png</figcaption></figure>
 

@@ -23,7 +23,7 @@ Usage
 
 ### Automated Curvature Measurement
 
-A typical dataset consists of a single two-dimensional (2d) image of the cells whose surface is oscillating over time. The file format can be any format readable by Fiji/Bioformats (.tif, .nd2, ... ). To run the tracker select {% include bc content='Plugins|ETrack|Automated angle and curvature measurement'%}
+A typical dataset consists of a single two-dimensional (2d) image of the cells whose surface is oscillating over time. The file format can be any format readable by Fiji/Bioformats (.tif, .nd2, ... ). To run the tracker select {% include bc path='Plugins|ETrack|Automated angle and curvature measurement'%}
 
 The welcome panel will open.
 

@@ -9,7 +9,7 @@ Overview
 
 Even after correcting for fixed-pattern noise (see [here](/plugins/bigstitcher/flatfield-correction)), differences in brightness and contrast between images, e.g. due to bleaching, might persist and be visible in the fused images. To correct for this, we estimate optimal linear transforms of pixel intensities in adjacent images to achieve uniform brightness and contrast in the whole dataset. We minimize the intensity difference of all pixels in the overlapping volume of two images according to the current registrations via a linear transform for each image: *I′*(x) = *I*(x) \* *α* + *β*
 
-The brightness and contrast adjustment is available in **Multiview mode** under {% include bc content='Processing|Intensity Adjustment'%}.
+The brightness and contrast adjustment is available in **Multiview mode** under {% include bc path='Processing|Intensity Adjustment'%}.
 
 <img src="/media/BigStitcher Intensity Adjustment menu.png" width="500"/>
 

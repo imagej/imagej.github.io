@@ -20,7 +20,7 @@ Launch the plugin from the menu. A tool appear in ImageJ toolbar: If there is no
 
 Select the arrow tool and start drawing it in an image. To burn in its outline, select "Draw" (shortcut: d); to fill it, select "Fill" (shortcut "f") as for any other roi tool.
 
-You can change the color and line width via {% include bc content='Edit | Options | Line Width'%} and {% include bc content='Edit | Options | Colors'%}. The *Foreground* option in the latter will change the color of the arrow.
+You can change the color and line width via {% include bc path='Edit | Options | Line Width'%} and {% include bc path='Edit | Options | Colors'%}. The *Foreground* option in the latter will change the color of the arrow.
 
 The user can drag the arrow head, base or he whole arrow by clicking and dragging near respectively its head, base or body.
 

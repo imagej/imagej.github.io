@@ -71,7 +71,7 @@ Installation in Fiji
 
 Add update site PhotoBend to install the plugins automatically.
 
--   [{% include bc content='Help|Update...'%}](/update-sites)
+-   [{% include bc path='Help|Update...'%}](/update-sites)
 -   Click *Manage update sites*
 -   Add and check new update site: Name=*PhotoBend*, URL="http://sites.imagej.net/Anotherche/"
 -   Click *Close*

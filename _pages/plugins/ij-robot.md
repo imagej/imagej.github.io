@@ -30,7 +30,7 @@ To emulate the \[enter\] key, type the exclamation mark '!'. Other characters ar
 
 **GetPixel**: reports to the Log window the r,g,b values of the pixel at the specified postion (requires x, y coordinates). It will also return the Width and Height of the screen, as well as the coordinates of the pixel.
 
-**CaptureScreen**: this is similar to the IJ function {% include bc content='Plugins | Utilities | Capture Screen'%}.
+**CaptureScreen**: this is similar to the IJ function {% include bc path='Plugins | Utilities | Capture Screen'%}.
 
 A handy way to find the target coordinates is to first grab the screen (which opens as an image in IJ) and check the coordinates with the mouse in IJ (reported in the status bar).
 
@@ -48,6 +48,6 @@ The included demo, seems to work fine in various platforms. Make sure that there
 Menu Path
 ---------
 
-{% include bc content='Plugins | Utilities (2nd on the list!) | IJ Robot'%}
+{% include bc path='Plugins | Utilities (2nd on the list!) | IJ Robot'%}
 
 

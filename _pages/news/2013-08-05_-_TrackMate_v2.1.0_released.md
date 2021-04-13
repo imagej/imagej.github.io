@@ -31,8 +31,8 @@ We are grateful to Jan Brocher and Masanari Takamiya for comments and bug report
 {% include youtube url='https://www.youtube.com/embed/fAOpKTenSaU'%}
 
 -   Re-design of TrackScheme. TrackScheme is now about 40 times faster to launch, even on large dataset. By default it uses the 'simple' style, and the update of the small thumbnails can be switched on/off.
--   The 'Load' button was removed from the GUI. TrackMate files can be loaded from the {% include bc content='Plugins | Tracking | Load a TrackMate file'%} menu item.
--   There is a new {% include bc content='Plugins | Tracking | Manual tracking with TrackMate'%} menu item, that launched another GUI stripped down for manual editing.
+-   The 'Load' button was removed from the GUI. TrackMate files can be loaded from the {% include bc path='Plugins | Tracking | Load a TrackMate file'%} menu item.
+-   There is a new {% include bc path='Plugins | Tracking | Manual tracking with TrackMate'%} menu item, that launched another GUI stripped down for manual editing.
 
 #### Backward incompatible changes
 

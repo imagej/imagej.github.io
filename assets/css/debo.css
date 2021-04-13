@@ -54,6 +54,9 @@
 .bc {
     font-style: italic;
 }
+.bc span {
+  border-bottom: 1px dotted #ccc;
+}
 
 #info-box {
   position: relative;

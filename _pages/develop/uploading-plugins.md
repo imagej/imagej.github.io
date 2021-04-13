@@ -14,7 +14,7 @@ description: test description
 The graphical way (recommended)
 -------------------------------
 
-You can use the [Fiji Updater](/plugins/updater) to upload new plugins (or new versions thereof). First start {% include bc content='Help | Update Fiji'%}. It will tell you that there are *locally modified files*:
+You can use the [Fiji Updater](/plugins/updater) to upload new plugins (or new versions thereof). First start {% include bc path='Help | Update Fiji'%}. It will tell you that there are *locally modified files*:
 
 <figure><img src="/media/Updater-locally-modified.png" title="Updater-locally-modified.png" width="600" alt="Updater-locally-modified.png" /><figcaption aria-hidden="true">Updater-locally-modified.png</figcaption></figure>
 

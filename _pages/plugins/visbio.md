@@ -24,7 +24,7 @@ Updating the VisBio Plugin
 
 The VisBio Plugin is located within the LOCI updates. To learn more on how to update plugins, visit the update fiji page. To update the VisBio Plugin:
 
--   Select {% include bc content='Help | Update Fiji'%}
+-   Select {% include bc path='Help | Update Fiji'%}
 -   Once the ImageJ Updater is presented, select "Manage Update sites"
 -   Select the "/orgs/loci" site to update all LOCI plugins, including VisBio
 -   Close "Manage Update Sites" and select "Apply changes"
@@ -33,12 +33,12 @@ The VisBio Plugin is located within the LOCI updates. To learn more on how to up
 Using VisBio
 ------------
 
-To use VisBio you must first import an Image Sequence. To do so, Select {% include bc content='File | Import | Image Sequence'%} and select the file of images you wish to use.
+To use VisBio you must first import an Image Sequence. To do so, Select {% include bc path='File | Import | Image Sequence'%} and select the file of images you wish to use.
 
 `After you have your images imported, follow the following directions: `
 
 -   Select the imported image sequence
--   Select {% include bc content='Plugins | VisBio | Ortho Stack'%}
+-   Select {% include bc path='Plugins | VisBio | Ortho Stack'%}
 -   To display every individual image within the view, unselect "Parallel projection"
 -   To compact the images, decrease the amount of stretch within the stack
 

@@ -18,7 +18,7 @@ The most up-to-date SNT API can be found at [https://morphonets.github.io/SNT](h
 Script Templates
 ----------------
 
-<img src="/media/Snt-Scripts-Menu-Full-List.png" title="fig:SNT Scripts Menu" width="300" alt="SNT Scripts Menu" /> SNT comes packaged with script templates demonstrating various analysis, tracing, image processing and batch processing routines. These templates can be found both in the *Scripts* menu of the SNT dialog and in the {% include bc content='Templates|Neuroanatomy'%} menu of Fiji's Script Editor. Scripts can be written in any language supported by Fiji's Script Editor.
+<img src="/media/Snt-Scripts-Menu-Full-List.png" title="fig:SNT Scripts Menu" width="300" alt="SNT Scripts Menu" /> SNT comes packaged with script templates demonstrating various analysis, tracing, image processing and batch processing routines. These templates can be found both in the *Scripts* menu of the SNT dialog and in the {% include bc path='Templates|Neuroanatomy'%} menu of Fiji's Script Editor. Scripts can be written in any language supported by Fiji's Script Editor.
 
 ### Analysis
 
@@ -127,7 +127,7 @@ Now you can access all the attributes and methods these classes offer. Let's get
 Adding Scripts to SNT
 ---------------------
 
-There are two ways to have your own scripts appear in SNT's *Scripts* menu. The easiest way is to go to {% include bc content='Scripts|New...'%} from the SNT dialog. This command will open an instance of Fiji's Script Editor with pre-loaded boilerplate code in the scripting language of your choice. If you save the script and then choose {% include bc content='Scripts|Reload...'%}, your new script will appear in the full list of scripts found at {% include bc content='Scripts|Full List...'%}.
+There are two ways to have your own scripts appear in SNT's *Scripts* menu. The easiest way is to go to {% include bc path='Scripts|New...'%} from the SNT dialog. This command will open an instance of Fiji's Script Editor with pre-loaded boilerplate code in the scripting language of your choice. If you save the script and then choose {% include bc path='Scripts|Reload...'%}, your new script will appear in the full list of scripts found at {% include bc path='Scripts|Full List...'%}.
 
 Alternatively, you can save scripts into the "scripts" sub-directory under the main Fiji directory while including *SNT* in the filename (e.g., `C:\Users\user\Desktop\Fiji.app\scripts\My_SNT_Script.py` or `/home/user/Fiji.app/scripts/My_SNT_Script.py`).
 
@@ -138,7 +138,7 @@ Examples
 
 ### Scripting Reconstruction Viewer
 
-Programmatic control over an open instance of [Reconstruction Viewer](/plugins/snt/reconstruction-viewer) (either called from within SNT or as a standalone application) can be achieved by selecting the {% include bc content='Tools & Utilities|Script This Viewer...'%} [command](SNT__Reconstruction_Viewer#Utilities). It will then open an instance of Fiji's script editor with a boilerplate template containing the most essential imports and [script parameters](/scripting/parameters). The default programming language for this template can be chosen from the drop-down menu of the *Preferred Language* [option](SNT__Reconstruction_Viewer#Settings).
+Programmatic control over an open instance of [Reconstruction Viewer](/plugins/snt/reconstruction-viewer) (either called from within SNT or as a standalone application) can be achieved by selecting the {% include bc path='Tools & Utilities|Script This Viewer...'%} [command](SNT__Reconstruction_Viewer#Utilities). It will then open an instance of Fiji's script editor with a boilerplate template containing the most essential imports and [script parameters](/scripting/parameters). The default programming language for this template can be chosen from the drop-down menu of the *Preferred Language* [option](SNT__Reconstruction_Viewer#Settings).
 
 The following script exemplifies how to extend the boilerplate template to control the Viewer in real-time.
 

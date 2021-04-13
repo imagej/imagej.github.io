@@ -99,7 +99,7 @@ Note that the server port needs to be open.
 Connecting to a running BigDataServer from Fiji
 -----------------------------------------------
 
-In order to connect to a BigDataServer from Fiji and view the data go to {% include bc content='Plugins | BigDataViewer | Browse BigDataServer'%}. You will be presented with the following dialog box:
+In order to connect to a BigDataServer from Fiji and view the data go to {% include bc path='Plugins | BigDataViewer | Browse BigDataServer'%}. You will be presented with the following dialog box:
 
 <img src="/media/Bdv-browse-bigdataserver-1.png" width="500"/>
 

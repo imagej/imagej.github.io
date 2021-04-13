@@ -34,7 +34,7 @@ The easiest way to use the flight recorder to profile a certain code path, say, 
 
 (Of course you want to avoid copying this blindly and adjust in particular the **duration** and the **filename** parameters.)
 
-After the JUnit test finishes, call *Java Mission Control* via the `jmc` executable (it lives in the JDK's *bin/* directory), {% include bc content='File | Open File'%} the *.jfr* file, click on the *Code* button in the center of the Mission Control window, select the *Hot Methods* tab of the big panel (confusingly, the tabs are at the bottom) and inspect the stack traces.
+After the JUnit test finishes, call *Java Mission Control* via the `jmc` executable (it lives in the JDK's *bin/* directory), {% include bc path='File | Open File'%} the *.jfr* file, click on the *Code* button in the center of the Mission Control window, select the *Hot Methods* tab of the big panel (confusingly, the tabs are at the bottom) and inspect the stack traces.
 
 VisualVM
 --------

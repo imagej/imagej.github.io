@@ -4,7 +4,7 @@ title: BigStitcher Define new dataset
 description: test description
 ---
 
-When clicking {% include bc content='Plugins|BigStitcher| BigStitcher'%} in the the Fiji menu, it will open a macro-scriptable dialog that looks as following:
+When clicking {% include bc path='Plugins|BigStitcher| BigStitcher'%} in the the Fiji menu, it will open a macro-scriptable dialog that looks as following:
 
 ![](/media/BigStitcher import exisitng 0.png "BigStitcher_import_exisitng_0.png")
 

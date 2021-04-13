@@ -1,4 +1,14 @@
-{% if include.color %}{% if include.color == "black" %}{% assign bc = include.content | replace: "|", " ▶ " %}<span class="bc">{{bc}}</span>{% endif %}
-{% if include.color == "white" %}{% assign bc = include.content | replace: "|", " ▷ " %}<span class="bc">{{bc}}</span>{% endif %}
-{% if include.color == "none" %}{% assign bc = include.content | replace: "|", " › " %}<span class="bc">{{bc}}</span>{% endif %}
-{% else %}{% assign bc = include.content | replace: "|", " › " %}<span class="bc">{{bc}}</span>{% endif %}
+{%- case include.style -%}
+  {%- when "filled" -%}
+    {%- assign sep = ' ▶ ' -%}
+  {%- when "hollow" -%}
+    {%- assign sep = ' ▷ ' -%}
+  {%- else -%}
+    {%- assign sep = ' › ' -%}
+{%- endcase -%}
+{%- assign tokens = include.path | split: "|" -%}
+<span class="bc"><span>{{tokens[0] | strip}}</span>
+{%- for token in tokens offset:1 -%}
+{{sep}}<span>{{token | strip}}</span>
+{%- endfor -%}
+</span>

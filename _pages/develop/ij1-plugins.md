@@ -32,7 +32,7 @@ What are plugins (in terms of files)?
 Updating plugins
 ----------------
 
--   After storing the *.jar* file(s) into the *plugins/* (or *jars/*) directory, call {% include bc content='Help | Refresh Menus'%} or restart Fiji
+-   After storing the *.jar* file(s) into the *plugins/* (or *jars/*) directory, call {% include bc path='Help | Refresh Menus'%} or restart Fiji
 -   If the respective plugin is in-use, you might get funny results when refreshing the menus, due to limitations in Sun Java's handling of *.jar* files.
 
 What are plugins (in terms of menu entries)?
@@ -91,7 +91,7 @@ Limitations
 -----------
 
 -   Plugins can only implement menu entries (in particular, they cannot provide tools in the toolbar)
--   Some functions which are easy to call via macros are not available via the public Java API (e.g. {% include bc content='Image | Stacks | Plot Z-axis profile...'%})
+-   Some functions which are easy to call via macros are not available via the public Java API (e.g. {% include bc path='Image | Stacks | Plot Z-axis profile...'%})
 -   It is often quicker to write macros
 
 Rapid prototyping with the [Script Editor](/scripting/script-editor)
@@ -114,7 +114,7 @@ If you would like to use the script editor, see the sections for the [other supp
 Quick Start
 -----------
 
-<s>To plunge into writing plugins, make sure that there is an active image (e.g. a sample image), start the [Script Editor](/scripting/script-editor) ({% include bc content='File | New | Script'%}), and select the *Process Pixels* menu item from the {% include bc content='Templates | Java'%} menu. Then, run the plugin with *Run&gt;Run*.</s>
+<s>To plunge into writing plugins, make sure that there is an active image (e.g. a sample image), start the [Script Editor](/scripting/script-editor) ({% include bc path='File | New | Script'%}), and select the *Process Pixels* menu item from the {% include bc path='Templates | Java'%} menu. Then, run the plugin with *Run&gt;Run*.</s>
 
 Getting started with Maven
 ==========================

@@ -5,7 +5,7 @@ categories: Help
 description: test description
 ---
 
-The convenient command {% include bc content='Help | Help on Menu Item'%} allows you to open pages on specific menu items:
+The convenient command {% include bc path='Help | Help on Menu Item'%} allows you to open pages on specific menu items:
 
 ![](/media/Help-On-Menu-Item.png "Help-On-Menu-Item.png")
 

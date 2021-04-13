@@ -240,7 +240,7 @@ This small IJmacro scriptlet loops over the roi in the Roi Manager, selecting on
 The recorder
 ============
 
-Typically, macros are not written from scratch, but recorded using the Macro Recorder: Just click on {% include bc content='Plugins | Macros | Record...'%} and perform some actions. These actions will be recorded in the recorder window, and you can hit the *Create* button to open the recorded instructions in an editor:
+Typically, macros are not written from scratch, but recorded using the Macro Recorder: Just click on {% include bc path='Plugins | Macros | Record...'%} and perform some actions. These actions will be recorded in the recorder window, and you can hit the *Create* button to open the recorded instructions in an editor:
 
 ![](/media/Macro recorder.png "Macro_recorder.png")
 
@@ -300,7 +300,7 @@ Tool icons
 By choosing a macro name that ends in *Action Tool*, you can install new tools into the toolbar:
 
     // A click on the empty rectangle will have the same
-    // effect as {% include bc content='File | Save As | Jpeg...'%}
+    // effect as {% include bc path='File | Save As | Jpeg...'%}
 
     macro "Save As JPEG Action Tool - C000R11ee" {
         saveAs("Jpeg");
@@ -324,7 +324,7 @@ Example macros
 
 This section contains a number of macros which you can use as starting points to write your own macros.
 
-If you're interested in performing a certain procedure for all files in a given folder, you might want to have a look a the tutorial *[How to apply a common operation to a complete directory](How_to_apply_a_common_operation_to_a_complete_directory)* or at the macro template that you can open in the [Script Editor](/scripting/script-editor) via {% include bc content='Templates | Macros | Process Folder'%}.
+If you're interested in performing a certain procedure for all files in a given folder, you might want to have a look a the tutorial *[How to apply a common operation to a complete directory](How_to_apply_a_common_operation_to_a_complete_directory)* or at the macro template that you can open in the [Script Editor](/scripting/script-editor) via {% include bc path='Templates | Macros | Process Folder'%}.
 
 Resizing to a given width of the selection bounds
 -------------------------------------------------

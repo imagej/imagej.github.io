@@ -12,7 +12,7 @@ Purpose
 
 From the MacBiophotonics webpage:
 
-"The plugin {% include bc content='Plugins | Colour Function | RGB to Montage'%} works with single slice RGB images. A new RGB stack is created, channel1 being the red channel; 2 the green and 3 the blue. The fourth slice is the merged slice. If a channel is empty (e.g. a red-green merged image will have no blue) then the slice is omitted. The then plugin prompts you for the layout of the montage. You have the option to alter the width of the white border between the image panels."
+"The plugin {% include bc path='Plugins | Colour Function | RGB to Montage'%} works with single slice RGB images. A new RGB stack is created, channel1 being the red channel; 2 the green and 3 the blue. The fourth slice is the merged slice. If a channel is empty (e.g. a red-green merged image will have no blue) then the slice is omitted. The then plugin prompts you for the layout of the montage. You have the option to alter the width of the white border between the image panels."
 
 See also [Color Image Processing\#\#Splitting\_multi-channel\_Images](Color_Image_Processing##Splitting_multi-channel_Images).
 

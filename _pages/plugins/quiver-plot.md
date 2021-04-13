@@ -46,7 +46,7 @@ Installing the Quiver Plot Plugin
 
 The Quiver Plot plugin is part of the [UCB Vision Sciences](UCB_Vision_Sciences) library. To install it, you just need to [ add](How_to_follow_a_3rd_party_update_site#Add_update_sites) the UCB Vision Sciences update site:
 
-1\) Select {% include bc content='Help | Update...'%} from the Fiji menu to start the updater.
+1\) Select {% include bc path='Help | Update...'%} from the Fiji menu to start the updater.
 
 2\) Click on *Manage update sites*. This brings up a dialog where you can activate additional update sites.
 
@@ -54,7 +54,7 @@ The Quiver Plot plugin is part of the [UCB Vision Sciences](UCB_Vision_Sciences)
 
 4\) Click *Apply changes* and restart Fiji.
 
-You should now find the plugin under the sub-menu {% include bc content='Plugins |UCB Vision Sciences | Quiver Plot'%}.
+You should now find the plugin under the sub-menu {% include bc path='Plugins |UCB Vision Sciences | Quiver Plot'%}.
 
 **Note**: Quiver Plot is only one of the plugins included in the [UCB Vision Sciences](UCB_Vision_Sciences) suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
 
