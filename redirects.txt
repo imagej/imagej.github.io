@@ -1622,9 +1622,9 @@ User_Grislis :: users/Grislis
 User_GrocottLab :: users/GrocottLab
 User_Gtcwildfire :: users/Gtcwildfire
 User_Guide :: User_Guides
-User_Guide_Getting_Started :: users/Guide_Getting_Started
-User_Guide_Layout_Test :: users/Guide_Layout_Test
-User_Guide_Working_with_ImageJ :: users/Guide_Working_with_ImageJ
+User_Guide_Getting_Started :: guide/getting-started
+User_Guide_Layout_Test :: guide/layout-test
+User_Guide_Working_with_ImageJ :: guide/working-with-imagej
 User_Guides :: learn/user-guides
 User_Hadim :: users/Hadim
 User_Haesleinhuepf :: users/Haesleinhuepf
