@@ -613,6 +613,7 @@ Eclipse :: Developing_ImageJ_in_Eclipse
 Eclipse_Debugging :: develop/debugging#debugging-plugins-in-an-ide-netbeans-intellij-eclipse-etc
 Eclipse_code_style_profiles_and_IntelliJ :: develop/intellij#code-style-profiles
 Edge_and_symmetry_filter :: plugins/edge-and-symmetry-filter
+Edit_LUT_As_Text :: tutorials/edit-lut-as-text
 Editing_the_Wiki :: help/editing
 Elastic_Alignment_and_Montage :: plugins/elastic-alignment-and-montage
 Elastix :: plugins/elastix
@@ -745,6 +746,7 @@ Git_workshop :: develop/git/workshop
 Glasbey :: plugins/glasbey
 Gnu_Plot :: plugins/gnu-plot
 Governance :: about/governance
+Gradle :: develop/gradle
 Granulometric_Filtering :: plugins/granulometric-filtering
 Graph_Cut :: plugins/graph-cut
 Graphical_user_interface :: User_input
@@ -1169,6 +1171,7 @@ Public_Domain :: licensing/public-domain
 Public_data_sets :: plugins/public-data-sets
 Publications :: Fiji_Publications
 Purify :: plugins/bonej#purify-wip
+Python :: scripting/python
 Quantile_Based_Normalization :: plugins/quantile-based-normalization
 QuickPALM :: plugins/quickpalm
 QuickTime :: formats/quicktime
@@ -1409,9 +1412,10 @@ Stitch_Collection_of_Images :: Stitching_2D_3D
 Stitch_Directory_with_Images_unknown_configuration :: Stitching_2D_3D
 Stitch_Grid_of_Images :: Stitching_2D_3D
 Stitch_Multiple_Series_or_Tile_Scan_File :: Stitching_2D_3D#stitch-multiple-series-or-tile-scan-file
-Stitch_and_Align_sequence_of_grid_images_Tutorial :: Stitch_and_Align_a_sequence_of_grid_images_Tutorial
-Stitch_and_Register_grid_sequence_tutorial :: Stitch_and_Register_sequence_of_grid_images_Tutorial
-Stitch_and_Register_sequence_of_grid_images_Tutorial :: Stitch_and_Align_sequence_of_grid_images_Tutorial
+Stitch_and_Align_a_sequence_of_grid_images_Tutorial :: tutorials/stitch-and-align-grid-images
+Stitch_and_Align_sequence_of_grid_images_Tutorial :: tutorials/stitch-and-align-grid-images
+Stitch_and_Register_grid_sequence_tutorial :: tutorials/stitch-and-align-grid-images
+Stitch_and_Register_sequence_of_grid_images_Tutorial :: tutorials/stitch-and-align-grid-images
 Stitching :: Image_Stitching
 Stitching_2D_3D :: plugins/stitching-2d-3d
 Stitching_data_acquisition :: plugins/stitching-data-acquisition
