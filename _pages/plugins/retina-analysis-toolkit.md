@@ -94,7 +94,7 @@ Yes, we know there is a lot to improve!
 References
 ----------
 
-1.  Maidana DE, Tsoka P, Tian B, Dib B, Matsumoto H, Kataoka K, Lin H, Miller JW, Vavvas DG. A Novel ImageJ Macro for Automated Cell Death Quantitation in the Retina.<i> Invest Ophthalmol Vis Sci</i>. 2015;56:6701–6708. <DOI:10.1167/> iovs.15-17599.''
+1.  Maidana DE, Tsoka P, Tian B, Dib B, Matsumoto H, Kataoka K, Lin H, Miller JW, Vavvas DG. A Novel ImageJ Macro for Automated Cell Death Quantitation in the Retina.<i> Invest Ophthalmol Vis Sci</i>. 2015;56:6701–6708. <DOI:10.1167/> iovs.15-17599.
 
 ------------------------------------------------------------------------
 

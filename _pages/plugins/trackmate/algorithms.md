@@ -311,7 +311,7 @@ Particle-linking happens in two step: track segments creation from frame-to-fram
 
 In the first step, two consecutive frames are inspected for linking. Each spot of the first frame is offered to link to any other spot in the next frame, or not to link. This takes the shape of a (*n*+*m*) x (*n*+*m*) matrix (n is the number of spots in the frame t, m is the number of spots in the frame t+1), that can be divided in 4 quadrants.
 
--   The top-left quadrant (size *n* x *m*) contains the costs for linking a spot *i* in the frame *t* to any spot *j* in the frame 't+1''.
+-   The top-left quadrant (size *n* x *m*) contains the costs for linking a spot *i* in the frame *t* to any spot *j* in the frame *t+1*.
 
 <!-- -->
 

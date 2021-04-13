@@ -30,6 +30,6 @@ A single-purpose loader to import CZI-files produced by the **Zeiss Lightsheet Z
 
 A single-purpose loader to import **diSPIM** datasets produced by MicroManager.
 
-''Note: Only one xml per directory is supported right now, even if they have a different filename. ''
+*Note: Only one xml per directory is supported right now, even if they have a different filename.*
 
 Go back to the [main page](BigStitcher#Documentation)

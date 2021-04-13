@@ -13,7 +13,7 @@ description: test description
 A short story about Fiji
 ========================
 
-This story is not about {% include wikipedia title='Fiji' text='the island called \'\'Fiji\'\''%}. This story is how [Fiji Is Just ImageJ](https://fiji.sc) became born.
+This story is not about {% include wikipedia title='Fiji' text='the island called "Fiji"' %}. This story is how [Fiji Is Just ImageJ](https://fiji.sc) became born.
 
 The beginning
 -------------

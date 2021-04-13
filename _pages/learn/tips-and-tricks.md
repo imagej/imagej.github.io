@@ -50,7 +50,7 @@ Close all images (without being asked whether to save them)
 Set the foreground color
 ------------------------
 
-Double-click on the pipette, or hit {% include key content='Ctrl\|Shift\|K' %} (on Macs, it is {% include key content='Cmd\|Shift\|K' %}), or select the menu item ''{% include bc path='Image | Color | Color Picker...'%}
+Double-click on the pipette, or hit {% include key content='Ctrl\|Shift\|K' %} (on Macs, it is {% include key content='Cmd\|Shift\|K' %}), or select the menu item {% include bc path='Image | Color | Color Picker...' %}.
 
 Set the line width
 ------------------

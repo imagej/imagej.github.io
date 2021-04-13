@@ -67,7 +67,7 @@ Quantifies for each found object the following parameters:
 Description
 -----------
 
-'' Note that when the mouse arrow passes on the items of the plugin, an explanation of each parameter is given''.
+*Note that when the mouse arrow passes on the items of the plugin, an explanation of each parameter is given.*
 
 Open at least two images. This plugin does not support RGB and 32-bits images.
 
@@ -148,7 +148,7 @@ Download and copy the following jar in your plugins folder [Diana\_1.48.jar](htt
 
 You have also to manually download and copy into your plugins directory the [3D ImageJ Suite](/plugins/3d-imagej-suite).
 
-''Note that this version works only with 3D ImageJ library [mcib3d-core3.94.jar](https://drive.google.com/open?id=1a83KAeDEcCk0Lio3xXebd7Fxk83cTjy-) and upper!"
+*Note that this version works only with 3D ImageJ library [mcib3d-core3.94.jar](https://drive.google.com/open?id=1a83KAeDEcCk0Lio3xXebd7Fxk83cTjy-) and upper!*
 
 Citation
 --------

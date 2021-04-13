@@ -41,55 +41,104 @@ If the first slice of every frame has a Short Label that can be split by the reg
 
 There are also static methods provided, with the same names, albeit, all lower case, with two syntaxis: `method(ImagePlus,slices,frames)`, `method(ImagePlus)`, `save fit(..., int), fit(..., String)`.
 
-  
-`TreeMap<String,Double> getVars(ImagePlus imp, int f)`  
-Extract variable/value pairs from frame's slice label.  
-`TreeMap<String,TreeMap<Double,Double>> getVars(ImagePlus imp)`  
-Extract variable/values from all frames' slice labels.  
-`LinkedHashMap<String,String> overRepeats(ImagePlus imp, String var)`  
-Determine the subsets (keys) that exist and the associated comma separated frames (values), where var is the repeater.  
-see 'repeats var'  
-`TreeMap<Double,String> sortFramesByLabel(ImagePlus imp)`  
-returns comma separated list of frames for each unique label.  
-`void removeVarFromLabels(ImagePlus imp, String var)`  
-Remove superfluous variable var from all slice labels  
-`void replaceVarValWithInLabel(ImagePlus imp, String var, String val)`  
-Replace all the values for var with val in all the slice labels.  
-`int findVarInLabel(ImagePlus imp, String var)`  
-Determines position of var in the slice label variables. -1 not found or error.  
-`TreeMap<Double,String> sortFramesByLabel(ImagePlus imp, String var)`  
-Determine frames (values - comma separated) that corrosponds to each var values (keys).  
-`ImagePlus extractFramesByVar(ImagePlus imp, String var, double val)`  
-Extract all frames that have the variable / value pair var/val.  
-`TreeMap<Double,ImagePlus> extractFramesByVar(ImagePlus imp, String var)`  
-Extract the frames (as an ImagePlus) that corresponds to each value (key) for slice label  
-`ImagePlus sortFramesByVar(ImagePlus imp, String var)`  
-Rearrange frame order to that of increasing var values.  
-`double center(double[] a)`  
-weighted mean weighted to the median  
-`double[] theilsen(double[] ... _x)`  
-theilsen regressor for linear.  
-can be called as x\[\],y\[\] or xy\[\]\[\] but only the first pair computed  
-`double[] theilsen2(double[] ... _x)`  
-theilsen regressor for quadradic.  
-can be called as x\[\],y\[\] or xy\[\]\[\] but only the first pair computed  
-`double[] linreg(double[] x, double[] y)`  
-linear least squares regressor  
-can be called as x\[\],y\[\] or xy\[\]\[\] but only the first pair computed  
-`double centroid(double[] x, double[] y)`  
-Centroid  
-  
-`public interface Compute {`  
-`public double[] compute(double[] x, double[] y);`  
-`   return (x == null) ? new double[NV] : process(x,y);`  
-`   }`  
-`ImagePlus compute(ImagePlus imp, Compute fp)`  
-`ImagePlus compute(ImagePlus imp, String slices, String frames, Compute fp)`  
-`ImagePlus compute(ImagePlus imp, Compute fp, ImagePlus mask)`  
-`ImagePlus compute(ImagePlus imp, String slices, String frames, Compute fp, ImagePlus mask)`
+```
+TreeMap<String,Double> getVars(ImagePlus imp, int f)
+```
+Extract variable/value pairs from frame's slice label.
 
-  
-`ImagePlus[] split(ImagePlus imp)`  
+```
+TreeMap<String,TreeMap<Double,Double>> getVars(ImagePlus imp)
+```
+Extract variable/values from all frames' slice labels.
+
+```
+LinkedHashMap<String,String> overRepeats(ImagePlus imp, String var)
+```
+Determine the subsets (keys) that exist and the associated comma separated frames (values), where var is the repeater.  
+see 'repeats var'
+
+```
+TreeMap<Double,String> sortFramesByLabel(ImagePlus imp)
+```
+returns comma separated list of frames for each unique label.
+
+```
+void removeVarFromLabels(ImagePlus imp, String var)
+```
+Remove superfluous variable var from all slice labels
+
+```
+void replaceVarValWithInLabel(ImagePlus imp, String var, String val)
+```
+Replace all the values for var with val in all the slice labels.
+
+```
+int findVarInLabel(ImagePlus imp, String var)
+```
+Determines position of var in the slice label variables. -1 not found or error.
+
+```
+TreeMap<Double,String> sortFramesByLabel(ImagePlus imp, String var)
+```
+Determine frames (values - comma separated) that corrosponds to each var values (keys).
+
+```
+ImagePlus extractFramesByVar(ImagePlus imp, String var, double val)
+```
+Extract all frames that have the variable / value pair var/val.
+
+```
+TreeMap<Double,ImagePlus> extractFramesByVar(ImagePlus imp, String var)
+```
+Extract the frames (as an ImagePlus) that corresponds to each value (key) for slice label
+
+```
+ImagePlus sortFramesByVar(ImagePlus imp, String var)
+```
+Rearrange frame order to that of increasing var values.
+
+```
+double center(double[] a)
+```
+weighted mean weighted to the median
+
+```
+double[] theilsen(double[] ... _x)
+```
+theilsen regressor for linear.  
+can be called as x\[\],y\[\] or xy\[\]\[\] but only the first pair computed
+
+```
+double[] theilsen2(double[] ... _x)
+```
+theilsen regressor for quadradic.  
+can be called as x\[\],y\[\] or xy\[\]\[\] but only the first pair computed
+
+```
+double[] linreg(double[] x, double[] y)
+```
+linear least squares regressor  
+can be called as x\[\],y\[\] or xy\[\]\[\] but only the first pair computed
+
+```
+double centroid(double[] x, double[] y)
+```
+Centroid
+
+```
+public interface Compute {
+public double[] compute(double[] x, double[] y);
+   return (x == null) ? new double[NV] : process(x,y);
+   }
+ImagePlus compute(ImagePlus imp, Compute fp)
+ImagePlus compute(ImagePlus imp, String slices, String frames, Compute fp)
+ImagePlus compute(ImagePlus imp, Compute fp, ImagePlus mask)
+ImagePlus compute(ImagePlus imp, String slices, String frames, Compute fp, ImagePlus mask)
+```
+
+```
+ImagePlus[] split(ImagePlus imp)
+```
 fit and compute have `ImagePlus[] method(..., ImagePlus[] imps);`  
 `imps` is syntactic sugar. **Nota bene**: Works even when there is only one slice in the Z direction.
 
@@ -97,36 +146,44 @@ fit and compute have `ImagePlus[] method(..., ImagePlus[] imps);`
 
 #### ASL - MRI
 
-`ImagePlus aslAcquired = . . .`  
-`ImagePlus tag = F_Project.mean(aslAcquired,"all","1-100-2");`  
-`ImagePlus ctl = F_Project.mean(aslAcquired,"all","2-100-2");`  
-`ImagePlus asl = ctl.duplicate();`  
-`(new ImageCaculator()).run("Subtract 32-bit stack", asl, tag);`  
-`(new ImageCaculator()).run("Divide 32-bit stack", asl, ctl);`
+```
+ImagePlus aslAcquired = . . .
+ImagePlus tag = F_Project.mean(aslAcquired,"all","1-100-2");
+ImagePlus ctl = F_Project.mean(aslAcquired,"all","2-100-2");
+ImagePlus asl = ctl.duplicate();
+(new ImageCaculator()).run("Subtract 32-bit stack", asl, tag);
+(new ImageCaculator()).run("Divide 32-bit stack", asl, ctl);
+```
 
 #### ADC - MRI
 
-`/* Assuming many b-values (slicelabels = "b=%f") */`  
-`ImagePlus dwiAcquired = . . .`  
-`ImagePlus dwi = dwiAcquired.duplicate();`  
-`ImagePlus dwib0 = SubHyperstackMaker.makeSubhyperstack(dwi,"1-"+dwi.getNSlices(),"1",dwiAcquired);`  
-`for(int f=0; f<dwiAcquired.getNFrames(); f++)`  
-`   (new ImageCalculator()).run("Divide 32-bit stack", dwi, dwib0);`  
-`ImagePlus adc_etal = F_Project.fit(dwi,"Exponential");''`  
+```
+/* Assuming many b-values (slicelabels = "b=%f") */
+ImagePlus dwiAcquired = . . .
+ImagePlus dwi = dwiAcquired.duplicate();
+ImagePlus dwib0 = SubHyperstackMaker.makeSubhyperstack(dwi,"1-"+dwi.getNSlices(),"1",dwiAcquired);
+for(int f=0; f<dwiAcquired.getNFrames(); f++)
+   (new ImageCalculator()).run("Divide 32-bit stack", dwi, dwib0);
+ImagePlus adc_etal = F_Project.fit(dwi,"Exponential");
+```
 OR with more resilience to outliers . . .  
-`IJ.run(dwi, "Log", "");`  
-`ImagePlus adc_etal = F_Project.theilsen(dwi);`
+```
+IJ.run(dwi, "Log", "");
+ImagePlus adc_etal = F_Project.theilsen(dwi);
+```
 
 #### Arbitrary proccessing
 
-`IJ.run(mask,"Convert to Mask", "method=Huang background=Default calculate");`  
-`ImagePlus[] pimp = F_Project.compute(imp, new F_Project.Compute() {`  
-`   @Override`  
-`   public double[] compute(double[] x, double[] y) {`  
-`      if (x == null) return new double[10]`  
-`      return nonlinearFit(x,y);`  
-`      }`  
-`   }, mask, new ImagePlus[0]);`
+```
+IJ.run(mask,"Convert to Mask", "method=Huang background=Default calculate");
+ImagePlus[] pimp = F_Project.compute(imp, new F_Project.Compute() {
+   @Override
+   public double[] compute(double[] x, double[] y) {
+      if (x == null) return new double[10]
+      return nonlinearFit(x,y);
+      }
+   }, mask, new ImagePlus[0]);
+```
 
 F\_Profilier
 ------------
@@ -148,7 +205,5 @@ Unzip [Frames.zip](https://imagej.net/_images/3/3d/Frames.zip) into ImageJ1 plug
 ChangeLog
 ---------
 
-` * 1 April 2018 - Initial Version.`  
-` * 1 April 2019 - Updated.`
-
- 
+* 1 April 2018 - Initial Version.
+* 1 April 2019 - Updated.

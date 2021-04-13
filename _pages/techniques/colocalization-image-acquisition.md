@@ -143,13 +143,9 @@ Dye choice is critical here. Avoid DAPI and GFP, since DAPI emission is very bro
 
 ### Poor Spatial Sampling
 
-*`Definition:`*` The pixel size does not allow`  
-`for a highly spatially resolved colocalisation`  
-`analysis. `
+*Definition:* The pixel size does not allow for a highly spatially resolved colocalisation analysis.
 
-`''Definition 2: ''Pixels are too big. Close but`  
-`separate objects which do not colocalise, appear`  
-`to colocalise. `
+*Definition 2:* Pixels are too big. Close but separate objects which do not colocalise, appear to colocalise.
 
 As a general rule, you should have each object you image sampled over many pixels. When this is not the case, a colocalization statement cannot be reliable made, as the assumptions of the method no longer hold. 
 

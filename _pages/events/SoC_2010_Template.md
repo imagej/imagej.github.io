@@ -25,7 +25,7 @@ Describe your project in more detail.
 
 What are your future plans regarding image processing?
 
-''The most successful Open Source projects were started because somebody had a real need, and tried to make a tool/library/plugin to address that need. Tell us what you want to achieve in the field of image processing, and how your project will help you in that respect.'
+*The most successful Open Source projects were started because somebody had a real need, and tried to make a tool/library/plugin to address that need. Tell us what you want to achieve in the field of image processing, and how your project will help you in that respect.*
 
 Interfaces
 ----------

@@ -19,7 +19,7 @@ Purpose
 
 This plugin is an implementation of the concavity-based clump splitting algorithms described in:
 
-''Kumar, S., Ong, S.-H., Ranganath, S., Ong, T., und Cheq, F. (2005). A rule based Approach for robust clump splitting. Pattern Recognition, 39(6), pp.1088–1098. ''
+*Kumar, S., Ong, S.-H., Ranganath, S., Ong, T., und Cheq, F. (2005). A rule based Approach for robust clump splitting. Pattern Recognition, 39(6), pp.1088–1098.*
 
 *Farhan, M., Yli-Harja, O., und Niemistö, A. (2013). A novel method for splitting clumps of convex objects incorporating image intensity and using rectangular window-based concavity point-pair search. Pattern Recognition, 46(3), pp.741–751.*
 

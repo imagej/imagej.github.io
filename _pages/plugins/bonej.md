@@ -810,7 +810,7 @@ Note that some of the plug-ins (marked with *WIP*) still use a ImageJ1 style res
 Usage reporting
 ---------------
 
-Menu path '' Edit &gt; Options &gt; BoneJ Usage (Modern \| Legacy)''
+Menu path {% include bc path="Edit | Options | BoneJ Usage" %}
 
 #### What is collected?
 
@@ -838,9 +838,9 @@ In addition, development resources are limited so it is useful to see which feat
 
 #### That is noble but my work is top secret
 
-If you are uncomfortable with this level of data collection then please opt out, at the dialog which is prompted on first run, or by running '' Edit &gt; Options &gt; BoneJ Usage (Modern \| Legacy) ''. Hitting Cancel (Legacy) or unchecking the box (Modern) will prevent any report from being gathered or sent and will also clear any values that were previously saved.
+If you are uncomfortable with this level of data collection then please opt out, at the dialog which is prompted on first run, or by running {% include bc path="Edit | Options | BoneJ Usage" %}. Hitting Cancel (Legacy) or unchecking the box (Modern) will prevent any report from being gathered or sent and will also clear any values that were previously saved.
 
-You can opt back in by running '' Edit &gt; Options &gt; BoneJ Usage (Modern \| Legacy)'', checking the box (Modern only) and hitting OK.
+You can opt back in by running {% include bc path="Edit | Options | BoneJ Usage" %}, checking the box (Modern only) and hitting OK.
 
 #### Can I see the report?
 
@@ -848,7 +848,7 @@ At the moment the report is kept private. If there is a strong will from the use
 
 #### How is it implemented?
 
-You can read the code on Github and in every copy of BoneJ. If you turn on ImageJ's debug mode (in '' Edit &gt; Options &gt; Misc. '' for Legacy and *Edit &gt; Options &gt; ImageJ2... &gt; Scijava log level DEBUG* for Modern) the URL and the GIF response will be logged to ImageJ's log window.
+You can read the code on Github and in every copy of BoneJ. If you turn on ImageJ's debug mode (in {% include bc path="Edit | Options | Misc." %} for Legacy, or {% include bc jpath="Edit | Options | ImageJ2..." %} *SciJava log level DEBUG* for Modern) the URL and the GIF response will be logged to ImageJ's log window.
 
 Where is my favourite plug-in?
 ------------------------------

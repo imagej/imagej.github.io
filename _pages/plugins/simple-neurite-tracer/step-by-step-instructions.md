@@ -41,7 +41,7 @@ If you completed that path it will be shown in magenta: ![](/media/Snt-cropped-c
 Branching: Start a path on an existing path
 -------------------------------------------
 
-Before you pick a start point for your first path, the tracer will look like this: (We''ve zoomed in on the region of interest) ![](/media/Snt-sb-before-selecting.png "fig:Snt-sb-before-selecting.png")
+Before you pick a start point for your first path, the tracer will look like this: (We've zoomed in on the region of interest) ![](/media/Snt-sb-before-selecting.png "fig:Snt-sb-before-selecting.png")
 
 ### 1. Select the path to branch off
 

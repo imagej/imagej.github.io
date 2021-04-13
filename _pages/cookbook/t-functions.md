@@ -107,11 +107,11 @@ Select the image to be rendered with the "*Source image(s)*" drop down box.
 
 The options with three text-entry boxes along side represent x, y and z values.
 
-"*Rotate(°):*" value of -20 in the first (*x*-axis) box gives a good 3D effect. Play with this.
+"*Rotate(°)*": value of -20 in the first (*x*-axis) box gives a good 3D effect. Play with this.
 
-"*Scale*". Set to 0.5 to render more quickly when adjusting the settings and set to 2 or more for the final surface plotting.
+"*Scale*": Set to 0.5 to render more quickly when adjusting the settings and set to 2 or more for the final surface plotting.
 
-"''Aspect ''/:" Surface plot can be stretched in "height" by increasing the z-axis aspect (i.e. the third) box. A value of 1 is usually OK if you've stretched the contrast properly. This will not affect the pseudocolor of the peaks which is determined by the pixel intensity.
+"*Aspect*": Surface plot can be stretched in "height" by increasing the z-axis aspect (i.e. the third) box. A value of 1 is usually OK if you've stretched the contrast properly. This will not affect the pseudocolor of the peaks which is determined by the pixel intensity.
 
 "*Index LUT*": by default the plot will have the "spectrum" LUT. Change this drop-down box to "*Load custom*" and you'll be prompted to locate a desired LUT when you start the surface-plot.
 

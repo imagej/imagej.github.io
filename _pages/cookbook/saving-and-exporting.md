@@ -16,7 +16,7 @@ Image formats
 
 *Animated GIF...* Choosing this option from the "*Save as*" menu saves a stack as an animated GIF. It is only compatible on RGB or 8 bit images. A more suitable option would be saving as *GIF*, where the only limitation is that any RGB color stacks must be converted to 8 bit color.
 
-Uncompressed AVI files are exported via "''File/Save as.../AVI..." ''. The frame rate and compression option of the exported AVI movie is selected in the resulting window. Frame rate can be between 0.1 and 100 frames per second (fps). The compression may be in JPEG, PNG, or uncompressed. Though uncompressed files are large, they should be playable on any PC/Mac without decoder issues.
+Uncompressed AVI files are exported via {% include bc path="File|Save as...|AVI..." %}. The frame rate and compression option of the exported AVI movie is selected in the resulting window. Frame rate can be between 0.1 and 100 frames per second (fps). The compression may be in JPEG, PNG, or uncompressed. Though uncompressed files are large, they should be playable on any PC/Mac without decoder issues.
 
 Flash MX will import uncompressed AVI files. The frame-rate will then be determined by Flash, not the AVI movie file.
 

@@ -109,7 +109,7 @@ Compiling the plugin
 
 ### Using the Script Editor
 
-The easiest way to compile and run the plugin is to use the [Script Editor](/scripting/script-editor): Call {% include bc path='File | New | Script'%}, select *Java* in the *Language* menu, and paste the source. Then, compile and run the plugin by calling *Run* in the '"Run'' menu.
+The easiest way to compile and run the plugin is to use the [Script Editor](/scripting/script-editor): Call {% include bc path='File | New | Script'%}, select *Java* in the *Language* menu, and paste the source. Then, compile and run the plugin by calling *Run* in the {% include bc path="Run" %} menu.
 
 ### The hard way
 

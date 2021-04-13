@@ -277,7 +277,7 @@ Note: if you wanted, you could force him to use an **OutOfBoundsStrategy** direc
 
 This example shows howto apply an algorithm to a lower dimensionality as the image data you are working on. Therefore we use **Views** to create HyperSlices which have *n-1* dimensions. We simply apply the algorithm in-place on those **Views** which will automatically update the image data in the higher-dimensional data.
 
-Specifically, we apply 1-dimensional Gaussian convolution in 30-pixel wide stripes using a sigma of 16. ''Note that whenever you request an *HyperSlice* for a certain dimension, you will get back a **View** that contains all dimensions <span style="color:#FF0000">but</span> this one.''
+Specifically, we apply 1-dimensional Gaussian convolution in 30-pixel wide stripes using a sigma of 16. *Note that whenever you request an **HyperSlice** for a certain dimension, you will get back a **View** that contains all dimensions <span style="color:#FF0000">but</span> this one.*
 
 {% include github-embed org='imglib' repo='imglib-tutorials' source='Example6a4.java' %}
 

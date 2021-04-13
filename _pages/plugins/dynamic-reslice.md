@@ -42,58 +42,60 @@ Scripting
 
 It is possible to call and control this plugin from other plugin or scripts. Here is a script example for use with [Fiji](/fiji).
 
-    '''
-    This jython script intends at demonstrating how to script the 
-    Dynamic_Reslice plugin. It will open the t1-head sample stack
-    in Fiji, draw a ROI on it, and animate it while updating the 
-    Reslice image.
+```python
+'''
+This jython script intends at demonstrating how to script the 
+Dynamic_Reslice plugin. It will open the t1-head sample stack
+in Fiji, draw a ROI on it, and animate it while updating the 
+Reslice image.
 
-    Created on Apr 23, 2009
+Created on Apr 23, 2009
 
-    @author: Jean-Yves Tinevez
-    '''
+@author: Jean-Yves Tinevez
+'''
 
-    import fiji
-    import time
+import fiji
+import time
 
-    xstart = 40
-    ystart = 50
+xstart = 40
+ystart = 50
 
 
-    # Fetch the t1-head stack from URL
-    source_imp = IJ.openImage('https://imagej.net/images/t1-head.zip')
-    source_imp.show()
+# Fetch the t1-head stack from URL
+source_imp = IJ.openImage('https://imagej.net/images/t1-head.zip')
+source_imp.show()
 
-    # Select middle slice (does not matter)
-    source_imp.setSlice(60)
+# Select middle slice (does not matter)
+source_imp.setSlice(60)
 
-    # Instantiate the Dynamic_Reslice plugin
-    dr = fiji.stacks.Dynamic_Reslice(source_imp)
+# Instantiate the Dynamic_Reslice plugin
+dr = fiji.stacks.Dynamic_Reslice(source_imp)
 
-    # Set up the plugin so that it will rotate the resulting image, and will 
-    # parse slices from bottom to top
-    dr.setRotate(True)
-    dr.setFlip(True)
+# Set up the plugin so that it will rotate the resulting image, and will 
+# parse slices from bottom to top
+dr.setRotate(True)
+dr.setFlip(True)
 
-    # Get the destination ImagePlus
-    dest_imp = dr.getImagePlus()
+# Get the destination ImagePlus
+dest_imp = dr.getImagePlus()
 
-    # Now move the roi and update the image
-    for dx in range(170):
-        
-        IJ.showStatus('Moving the Roi by '+str(dx))
-        
-        # Draw a line ROI on the source imp
-        roi = Line(xstart+dx, ystart, xstart+dx, ystart+170)
-        source_imp.setRoi(roi)
-        
-        # Update the reslice. We have to call it manually in the script.
-        dr.update();
-        
-        # Wait a bit so that we can see what is happening
-        time.sleep(0.03)
-        
-    IJ.showStatus('Done')
+# Now move the roi and update the image
+for dx in range(170):
+    
+    IJ.showStatus('Moving the Roi by '+str(dx))
+    
+    # Draw a line ROI on the source imp
+    roi = Line(xstart+dx, ystart, xstart+dx, ystart+170)
+    source_imp.setRoi(roi)
+    
+    # Update the reslice. We have to call it manually in the script.
+    dr.update();
+    
+    # Wait a bit so that we can see what is happening
+    time.sleep(0.03)
+    
+IJ.showStatus('Done')
+```
 
 Example
 -------

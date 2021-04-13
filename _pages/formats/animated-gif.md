@@ -14,7 +14,7 @@ description: test description
 
 1.  Go to menu {% include bc path='Images | Stacks | Tools | Animation options...'%}
 2.  In the dialog, set the desired frames per second, or "Speed".
-3.  Select the stack to save, and go to menu ''{% include bc path='File | Save As | Animated Gif ...'%}"
+3.  Select the stack to save, and go to menu {% include bc path='File | Save As | Animated Gif ...'%}
 
 Done!
 

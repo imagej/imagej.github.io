@@ -5,11 +5,14 @@ categories: Development
 description: test description
 ---
 
-{% include outdated%}
- **Note**: Please make sure that you have a clean build of the plugin you try to upload. You can ensure a clean build by calling the [Fiji Build System](/Fiji_Build_System) with the *-clean* suffix before building the actual target. Example:
+{% include outdated %}
 
-`./Build.sh plugins/Fiji_Plugins.jar-clean`  
-`./Build.sh plugins/Fiji_Plugins.jar`
+**Note**: Please make sure that you have a clean build of the plugin you try to upload. You can ensure a clean build by calling the [Fiji Build System](/Fiji_Build_System) with the *-clean* suffix before building the actual target. Example:
+
+```
+./Build.sh plugins/Fiji_Plugins.jar-clean
+./Build.sh plugins/Fiji_Plugins.jar
+```
 
 The graphical way (recommended)
 -------------------------------
@@ -37,14 +40,18 @@ Using the command line
 
 If you have an ssh account on *fiji.sc* that is in the *uploaders* group, you can upload plugins. To do this, run
 
-`git pull origin master`
+```
+git pull origin master
+```
 
 If this says that a recursive merge was performed, you had local changes and should **not** upload anything, as you did not test that version!
 
 If it was a fast-forward (or if Git said "Everything up-to-date"), you are good to go:
 
-`./Build.sh`  
-`./bin/update-fiji.py `<filename>
+```
+./Build.sh
+./bin/update-fiji.py <filename>
+```
 
 It will refuse to upload a file that has locally-modified dependencies, and list them. To upload those dependencies, too, you can use the *--auto* option of *./bin/update-fiji.py*. **Use with care!**
 
@@ -63,86 +70,92 @@ File versions are identified by a cryptographic hash of the file contents, and p
 
 Two different methods are applied: one for *.jar* files and one for all the other files. For regular files, the file name (without trailing NUL nor line feed character) and the exact file contents are piped into the SHA-1 algorithm. For *.jar* files, the file names of the <u>entries</u> and the exact contents of those files are pushed through the SHA-1 algorithm, one after another.
 
-The reason why *.jar* files are different is that they are really nothing more than glorified *.zip* files, and as such contain timestamps. If those timestamps differ, the *.zip* files differ. So if developer Anne Berlin compiles some plugin in Chicago and developer Dario Espana compiles the same plugin on Fiji, chances are that the timestamps are different, and therefore the *.jar* files, even if they contain the same ''.class' files!
+The reason why *.jar* files are different is that they are really nothing more than glorified *.zip* files, and as such contain timestamps. If those timestamps differ, the *.zip* files differ. So if developer Anne Berlin compiles some plugin in Chicago and developer Dario Espana compiles the same plugin on Fiji, chances are that the timestamps are different, and therefore the `.jar` files, even if they contain the same `*.class` files!
 
 ### The database
 
-Originally, the database was stored in the file *current.txt*, which is stored in the *update/* directory of [fiji.sc](Fiji.sc)'s web server. Its format was simply lines in the form
+Originally, the database was stored in the file `current.txt`, which is stored in the `update/` directory of [fiji.sc](Fiji.sc)'s web server. Its format was simply lines in the form
 
-<filename>` `<timestamp>` `<checksum>
+```
+<filename> <timestamp> <checksum>
+```
 
-and a file was considered updateable when its checksum disagreed with the local checksum and the timestamp of the local file was older than the timestamp in *current.txt*.
+and a file was considered updateable when its checksum disagreed with the local checksum and the timestamp of the local file was older than the timestamp in `current.txt`.
 
-The old updater was never meant for anything else than the Fiji launchers, *ij.jar* and *.jar* files in the directories *plugins/*, *misc/*, *retro/* and *jars/*, so it would not even pick up on the fact that it installed a, say, *.py* file, and happily offer it for update <u>again</u>. Therefore, *current.txt* <u>must not</u> contain anything else than files matching said expectations.
+The old updater was never meant for anything else than the Fiji launchers, `ij.jar` and *.jar* files in the directories `plugins/`, `misc/`, `retro/` and `jars/`, so it would not even pick up on the fact that it installed a, say, *.py* file, and happily offer it for update <u>again</u>. Therefore, `current.txt` <u>must not</u> contain anything else than files matching said expectations.
 
-The new database is stored in the file *db.xml.gz*, which again is a static file. But -- as the name suggests -- it obeys an extensible XML schema.
+The new database is stored in the file `db.xml.gz`, which again is a static file. But -- as the name suggests -- it obeys an extensible XML schema.
 
-This database not only stores the same information as *current.txt*, it can contain arbitrary file names (even including spaces, which is not possible with the former database), store descriptions of the files, have information about the platform, categories and most importantly, it has the checksums of all known previous versions so that we can finally decide whether it is safe to update files or whether they are locally modified and the user should state **explicitely** that it is safe to update.
+This database not only stores the same information as `current.txt`, it can contain arbitrary file names (even including spaces, which is not possible with the former database), store descriptions of the files, have information about the platform, categories and most importantly, it has the checksums of all known previous versions so that we can finally decide whether it is safe to update files or whether they are locally modified and the user should state **explicitly** that it is safe to update.
 
 File organization
 -----------------
 
 Different file types are stored at different locations in an ImageJ/Fiji installation, where they are picked up by the updater (see the [source code](https://github.com/imagej/imagej-updater/blob/imagej-updater-0.8.1/src/main/java/net/imagej/updater/Checksummer.java#L439-L451) for technical details):
 
-` jars/`  
-` retro/`  
-` misc/`  
-`   .jar`  
-`   .class`
+```
+ jars/
+ retro/
+ misc/
+   .jar
+   .class
 
-` plugins/ (and subfolders)`  
-`   .jar`  
-`   .class`  
-`   .txt`  
-`   .ijm`  
-`   .py`  
-`   .rb`  
-`   .clj`  
-`   .js`  
-`   .bsh`  
-`   .groovy`  
-`   .gvy`
+ plugins/ (and subfolders)
+   .jar
+   .class
+   .txt
+   .ijm
+   .py
+   .rb
+   .clj
+   .js
+   .bsh
+   .groovy
+   .gvy
 
-` scripts/`  
-`   .py`  
-`   .rb`  
-`   .clj`  
-`   .js`  
-`   .bsh`  
-`   .m`  
-`   .groovy`  
-`   .gvy`
+ scripts/
+   .py
+   .rb
+   .clj
+   .js
+   .bsh
+   .m
+   .groovy
+   .gvy
 
-` macros/`  
-`   .txt`  
-`   .ijm`
+ macros/
+   .txt
+   .ijm
 
-` luts/`  
-`   .lut`
+ luts/
+   .lut
 
-` images/`  
-`   .png`  
-`   .tif`  
-`   .txt`
+ images/
+   .png
+   .tif
+   .txt
 
-` Contents/`  
-`   .icns`  
-`   .plist`
+ Contents/
+   .icns
+   .plist
 
-` lib/`  
-` mm/`  
-` mmautofocus/`  
-` mmplugins/`  
-`   (all files)`
+ lib/
+ mm/
+ mmautofocus/
+ mmplugins/
+   (all files)
+```
 
 The updater will only pick up files stored at the appropriate location according to their function. In addition, the `./lib/` folder contains platform-specific sub-directories to allow loading of native libraries dependent on the platform:
 
-` lib/`  
-`   linux32/`  
-`   linux64/`  
-`   macosx/`  
-`   win32/`  
-`   win64/`
+```
+ lib/
+   linux32/
+   linux64/
+   macosx/
+   win32/
+   win64/
+```
 
 Further information is in this [thread on fiji-devel](https://groups.google.com/forum/#!topic/fiji-devel/QbY4XnLC-wE)
 
@@ -151,8 +164,10 @@ The actual files
 
 The files corresponding to the database entries are also stored as flat files of the form
 
-<relative path>`-`<timestamp>
+```
+<relative path>-<timestamp>
+```
 
-in the same directory as the databases. The *relative path* refers to the path inside the Fiji directory, e.g. *plugins/Fiji\_Updater.jar*.
+in the same directory as the databases. The *relative path* refers to the path inside the Fiji directory, e.g. `plugins/Fiji\_Updater.jar`.
 
 

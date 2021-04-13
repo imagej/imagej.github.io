@@ -273,7 +273,7 @@ Lets create that script in the current directory
     /* shutdown */
     runtime.exit(0);
 
-''Note: The t\_begin=1000 t\_end=1000 are parameters passed to Bioformats Opener. This is a hack. The .czi files think that they are part of a long time-lapse despite the fact that they were saved as single, per angle .czi. In order to trick bioformats into opening just the timepoint which contains actual data we set the time coordinate way beyond the actual length of the time-course (in this case 240). This results in Bioformats importing the "last" timepoint in the series which contains the data. This will change!
+*Note: The t\_begin=1000 t\_end=1000 are parameters passed to Bioformats Opener. This is a hack. The .czi files think that they are part of a long time-lapse despite the fact that they were saved as single, per angle .czi. In order to trick bioformats into opening just the timepoint which contains actual data we set the time coordinate way beyond the actual length of the time-course (in this case 240). This results in Bioformats importing the "last" timepoint in the series which contains the data. This will change!*
 
 Now we need to create yet another bash script (last one) called **submit-jobs**
 
@@ -748,7 +748,7 @@ Stuff that matters here are the following parameters:
 -   **compute=\[in 512x512x512 blocks\]** most likely we will have to compute in blocks unless we have really a lot of memory available.
 -   **fiji.plugin.Multi\_View\_Deconvolution.psfSize = 31;** this parameter should be considered advanced for now, it specifies the size of the area used to extract the Point Spread Function (PSF) from the beads in the image. Default is 19.
 
-otherwise the parameters are similar to content based fusion or constants.''
+otherwise the parameters are similar to content based fusion or constants.
 
 on a cluster node when submitted by **submit-jobs**
 
@@ -4418,7 +4418,7 @@ First step in [**Multiview Reconstruction**](/plugins/multiview-reconstruction) 
     define_xml=${job_directory}"define_xml/define_xml.bsh"          # script
     merge_xml=${job_directory}"merge_xml.bsh"                       # script
 
-and describes a multi timepoint time-lapse with single channel, one illumination direction and multiple angles. (''Note that the timepoints and angles are defined elsewhere in the general part of the master file).
+and describes a multi timepoint time-lapse with single channel, one illumination direction and multiple angles. (*Note that the timepoints and angles are defined elsewhere in the general part of the master file*).
 
 The parameters in the *master* file are sourced by a *create-dataset-jobs* bash script
 
@@ -4807,7 +4807,7 @@ The parameters are read from *master* through the *create-registration-jobs*
         chmod a+x "$job"
     done
 
-which generates ''registration\_<number>.job" bash scripts that launches *registration.bsh* in Fiji on the cluster
+which generates `registration\_<number>.job` bash scripts that launches `registration.bsh` in Fiji on the cluster
 
     import ij.IJ;
     import ij.ImagePlus;

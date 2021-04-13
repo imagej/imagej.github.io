@@ -35,7 +35,7 @@ If working with a stack, the ROI selected can be analyzed with the command: {% i
 
 The top 6 rows of the column are details of the ROI. This makes sure the same ROI is not analyzed twice and allows you to save any interesting ROIs. The details are comprised of area, x-coordinate, y-coordinate, AR, roundness, and solidity of the ROI. If the ROI is a polyline&gt;freehand ROI rather than a square&gt;oval, it acts as if the ROI is an oval&gt;square. The (oval) ROI can be restored by entering the details prompted by the {% include bc path='Edit | Selection | Restore Selection'%} (hotkey: {% include key content='Ctrl' %}+{% include key content='Shift' %}+{% include key content='E' %}) command.
 
-The results are displayed in a plot-window with the ROI details in the plot window title. The plot contains the buttons *List, Save, Copy.* The *Copy* button puts the data in the clipboard so it can be pasted into an Excel sheet. The settings for the copy button can be found under {% include bc path='Edit | Options | Profile Plot Options'%}. Recommended settings include: ''Do not save x-values ''(prevents slice number data being pasted into Excel) and *Autoclose* so that you don't have to close the analyzed plot each time.
+The results are displayed in a plot-window with the ROI details in the plot window title. The plot contains the buttons *List, Save, Copy.* The *Copy* button puts the data in the clipboard so it can be pasted into an Excel sheet. The settings for the copy button can be found under {% include bc path='Edit | Options | Profile Plot Options'%}. Recommended settings include: *Do not save x-values* (prevents slice number data being pasted into Excel) and *Autoclose* so that you don't have to close the analyzed plot each time.
 
 Dynamic intensity vs Time analysis
 ----------------------------------
@@ -78,7 +78,7 @@ The plugin will generate a green-plot of the ratio values. Ch1÷Ch2 is the defau
 
 The first row of the results table contains values for the x, y, width and height of the ROI.
 
-From the second row downward, the first column is the time (slice number), the second column is the Ch1 mean intensity, and the third channel is the Ch2 mean intensity and the ratio value. The stack must have its frame interval calibrated in order for the "Time" value to be in seconds. Otherwise, it is "Slices". The frame interval can be set for the stack via the menu command ''{% include bc path='Image | Properties'%}.
+From the second row downward, the first column is the time (slice number), the second column is the Ch1 mean intensity, and the third channel is the Ch2 mean intensity and the ratio value. The stack must have its frame interval calibrated in order for the "Time" value to be in seconds. Otherwise, it is "Slices". The frame interval can be set for the stack via the menu command {% include bc path='Image | Properties' %}.
 
 This table can be copied to the clipboard and pasted elsewhere with the "{% include bc path='Edit | Copy All'%}" menu command.
 
@@ -182,7 +182,7 @@ Background correction
 
 Background correction can be done in multiple ways. A simple method is to use the {% include bc path='Image | Lookup Tables | HiLo'%} LUT to display zero values as blue and white values (pixel value 255) as red.
 
-With a background that is relatively even across the image, remove it with the *Brightness/Contrast* command by slowly raising the *Minimum* value until most of the background is displayed blue. Press the ''Apply ''button to make a permanent change.
+With a background that is relatively even across the image, remove it with the *Brightness/Contrast* command by slowly raising the *Minimum* value until most of the background is displayed blue. Press the *Apply* button to make a permanent change.
 
 ### Rolling-Ball background correction
 

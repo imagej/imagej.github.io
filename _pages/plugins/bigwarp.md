@@ -121,7 +121,8 @@ The default parameters will result in the exported image having the same dimensi
 -   Field of view
     -   Target: *The output will have the same field of view as the target image*
     -   Moving: *The output field of view will be the smallest bounding box that contains the warped moving images (approximated)*
-    -   Specified (pixel): '' The output field of view will be that given by the Offset and Field of View parameter fields where both are in units of pixels''\*\* \*\* Specified (physical): '' The output field of view will be that given by the Offset and Field of View parameter fields where both are in the physical units of the moving and target images''
+    -   Specified (pixel): *The output field of view will be that given by the Offset and Field of View parameter fields where both are in units of pixels*
+    -   Specified (physical): *The output field of view will be that given by the Offset and Field of View parameter fields where both are in the physical units of the moving and target images*
 
 The warped moving image can be exported as an in-memory or [virtual](https://imagej.net/docs/guide/146-8.html) ImagePlus. A virtual ImagePlus is generally faster to generate but slower to browse, whereas an in-memory ImagePlus will be slower to generate but faster to browse.
 
