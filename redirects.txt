@@ -1013,8 +1013,9 @@ MVR-ResaveDataset :: plugins/mvr-resavedataset
 M_I_P :: plugins/m-i-p
 MaMuT :: plugins/mamut
 MacOS :: platforms/macos
-MacOSX :: MacOS
-Mac_OS_X :: MacOS
+MacOSX :: platforms/macos
+MacOSX_tips :: platforms/macos
+Mac_OS_X :: platforms/macos
 Macro :: Introduction_into_Macro_Programming
 Macro_Interpreter :: Introduction_into_Macro_Programming
 Macro_Scripting :: Scripting_Help
@@ -1108,8 +1109,8 @@ Nucleus_Counter :: plugins/nucleus-counter
 OME :: OMERO
 OMERO :: software/omero
 OMEVisual :: plugins/omevisual
-OSX :: MacOS
-OS_X :: MacOS
+OSX :: platforms/macos
+OS_X :: platforms/macos
 Object_Counter3D :: 3D_Objects_Counter
 OlympusImageJPlugin :: formats/olympus
 Op_Finder :: plugins/op-finder
