@@ -15,11 +15,11 @@ The plugin is located in {% include bc path='Process | Image Expression Parser'%
 
 This plugin parses arbitrary mathematical expressions and compute results using images as variables. For instance:
 
-    ■ 2*A
-    ■ A*(B+30)
-    ■ sqrt(A^2+B^2)*cos(C)
-    ■ A > B
-    ■ gauss(A, 0.8)
+- `2*A`
+- `A*(B+30)`
+- `sqrt(A^2+B^2)*cos(C)`
+- `A > B`
+- `gauss(A, 0.8)`
 
 where A,B and C are opened images of the same dimensions.
 

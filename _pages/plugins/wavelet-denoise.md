@@ -33,17 +33,17 @@ Description of functionality of items in the plugin window
 
 **Filtration Method:**
 
-• <i>Nothing</i> – no filtration applied.
+* <i>Nothing</i> – no filtration applied.
 
-• <i>Suppress Approx. & Detail. Coeffs. (AC & DC)</i> – suppresses some amount of the smallest coefficients, i.e. coefficients are ranked according to absolute value of their amplitude. User can set the level of suppression that equals the percentage of the coefficients to be removed (i.e., 0% means no values are suppressed, 100% means all the values are suppressed). Here, both Approximation and Detailed Coefficients are taken together as a one set when doing suppression.
+* <i>Suppress Approx. & Detail. Coeffs. (AC & DC)</i> – suppresses some amount of the smallest coefficients, i.e. coefficients are ranked according to absolute value of their amplitude. User can set the level of suppression that equals the percentage of the coefficients to be removed (i.e., 0% means no values are suppressed, 100% means all the values are suppressed). Here, both Approximation and Detailed Coefficients are taken together as a one set when doing suppression.
 
-• <i>Soft Thresholding</i> – soft VisuShrink thresholding;
+* <i>Soft Thresholding</i> – soft VisuShrink thresholding;
 
-• <i>Hard Thresholding</i> – hard VisuShrink thresholding: These two tools demonstrate another use of wavelet transform for image denoising/filtering. It is accomplished using VisuShrink thresholding method and the user defines the threshold by selecting the level of denoising (that equals Sigma value of the Universal threshold; Sigma takes values 1-128) in the dialog. It can also be selected to do either Soft Thresholding or Hard Thresholding \[1-2\]. Soft thresholding generally gives a smoother image.
+* <i>Hard Thresholding</i> – hard VisuShrink thresholding: These two tools demonstrate another use of wavelet transform for image denoising/filtering. It is accomplished using VisuShrink thresholding method and the user defines the threshold by selecting the level of denoising (that equals Sigma value of the Universal threshold; Sigma takes values 1-128) in the dialog. It can also be selected to do either Soft Thresholding or Hard Thresholding \[1-2\]. Soft thresholding generally gives a smoother image.
 
-• <i>Suppress Approx. Coeffs. (AC) – applied with "Suppress DC"</i>;
+* <i>Suppress Approx. Coeffs. (AC) – applied with "Suppress DC"</i>;
 
-• <i>Suppress Detail. Coeffs. (DC) – applied with "Suppress AC"</i>: Here the plugin suppresses coefficients separately, i.e. only Approximation Coefficients can be suppressed (0-100%) or only Detailed Coefficients (0-100%). However, it is possible to combine settings of both coefficients together, i.e. to set, e.g., AC to 5% and DC to 50% and both suppressions will be applied to the image simultaneously.
+* <i>Suppress Detail. Coeffs. (DC) – applied with "Suppress AC"</i>: Here the plugin suppresses coefficients separately, i.e. only Approximation Coefficients can be suppressed (0-100%) or only Detailed Coefficients (0-100%). However, it is possible to combine settings of both coefficients together, i.e. to set, e.g., AC to 5% and DC to 50% and both suppressions will be applied to the image simultaneously.
 
 Explanation of details of the wavelet transform and parameters mentioned can be found in the text below \[2\].
 
@@ -72,11 +72,11 @@ Below the buttons (<i>Preview 1 Slice</i>, <i>Recomputing All Data Required</i>)
 Additional remarks
 ------------------
 
-• Plugin dialog is modeless. It is possible to process the input image prior applying any wavelet denoising/filtration, e.g., by smoothing, sharpening, contrast. In such cases the <i>Refresh</i> button can be useful. However, the size of the input image matrix, number of slices and the bit depth cannot be changed.
+* Plugin dialog is modeless. It is possible to process the input image prior applying any wavelet denoising/filtration, e.g., by smoothing, sharpening, contrast. In such cases the <i>Refresh</i> button can be useful. However, the size of the input image matrix, number of slices and the bit depth cannot be changed.
 
-• When you close any image window joined with the dialog (Input, WT, Filtered, WT-NoStretch) during running, the dialog will not continue and a warning message appears.
+* When you close any image window joined with the dialog (Input, WT, Filtered, WT-NoStretch) during running, the dialog will not continue and a warning message appears.
 
-• If you do not see data in image windows well, use {% include bc path='Image | Adjust-Brightness/Contrast | Auto'%}. Do not press <i>Apply</i> for pixel intensity value recomputation.
+* If you do not see data in image windows well, use {% include bc path='Image | Adjust-Brightness/Contrast | Auto'%}. Do not press <i>Apply</i> for pixel intensity value recomputation.
 
 Step-by-step manuals
 --------------------

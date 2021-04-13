@@ -230,216 +230,208 @@ The complete list of commands is as follows:
 
 -   Start the plugin:
 
-<!-- -->
-
-     
+    ```
     run("Trainable Weka Segmentation"); 
+    ```
 
 -   Add traces (current ROI) to a class:
 
   
 Format: `addTrace( class index, slice number )`
 
-<!-- -->
-
-  
 For example, to add the selected ROI of the first slice to the first class, we type:
 
-<!-- -->
-
+    ```
     call("trainableSegmentation.Weka_Segmentation.addTrace", "0", "1");
+    ```
 
 -   Train classifier:
 
-<!-- -->
-
+    ```
     call("trainableSegmentation.Weka_Segmentation.trainClassifier");
+    ```
 
 -   Toggle overlay:
 
-<!-- -->
-
+    ```
     call("trainableSegmentation.Weka_Segmentation.toggleOverlay");
+    ```
 
 -   Get the result label image:
 
-<!-- -->
-
+    ```
     call("trainableSegmentation.Weka_Segmentation.getResult");
+    ```
 
 -   Get probability maps:
 
-<!-- -->
-
+    ```
     call("trainableSegmentation.Weka_Segmentation.getProbability");
+    ```
 
 -   Plot the model performance curves:
 
-<!-- -->
-
+    ```
     call("trainableSegmentation.Weka_Segmentation.plotResultGraphs");
+    ```
 
 -   Apply the current classifier to an image or stack:
 
-  
 Format: `applyClassifier( input directory, input image or stack, show results flag, store results flag, probability maps flag, store folder)`
 
-<!-- -->
-
-  
 Example:
 
-<!-- -->
-
+    ```
     call("trainableSegmentation.Weka_Segmentation.applyClassifier",
     "/home/iarganda/data/", "input-image.tif", "showResults=true", 
     "storeResults=false", "probabilityMaps=false", "");
+    ```
 
 -   Load a classifier from file:
 
-<!-- -->
-
+    ```
     call("trainableSegmentation.Weka_Segmentation.loadClassifier",
      "/home/iarganda/classifier.model");
+    ```
 
--   • Save the current classifier into a file:
+-   Save the current classifier into a file:
 
-<!-- -->
-
+    ```
     call("trainableSegmentation.Weka_Segmentation.saveClassifier",
      "/home/iarganda/classifier.model");
+    ```
 
--   • Load previously saved trace data from an ARFF file:
+-   Load previously saved trace data from an ARFF file:
 
-<!-- -->
-
+    ```
     call("trainableSegmentation.Weka_Segmentation.loadData", "/home/iarganda/data.arff");
+    ```
 
--   • Save current trace data (feature vectors of traces and classes) into a file:
+-   Save current trace data (feature vectors of traces and classes) into a file:
 
-<!-- -->
 
+    ```
     call("trainableSegmentation.Weka_Segmentation.saveData", "/home/iarganda/data.arff");
+    ```
 
 -   Create new class:
 
-<!-- -->
-
+    ```
     call("trainableSegmentation.Weka_Segmentation.createNewClass", "new-class-name");
+    ```
 
 -   Launch Weka:
 
-<!-- -->
-
+    ```
     call("trainableSegmentation.Weka_Segmentation.launchWeka");
+    ```
 
 -   Enable/disable a specific feature:
-
   
 Format: `setFeature( "feature name=true or false" )`
 
 Example (enable Variance filters):
 
-<!-- -->
-
+    ```
     call("trainableSegmentation.Weka_Segmentation.setFeature", "Variance=true");
+    ```
 
 -   Change a class name:
-
   
 Format: `changeClassName( class index, class new name )`
 
 Example (change first class name to "background"):
 
-<!-- -->
-
+    ```
     call("trainableSegmentation.Weka_Segmentation.changeClassName", "0", "background");
+    ```
 
 -   Set option to balance the class distributions:
 
-<!-- -->
-
+    ```
     call("trainableSegmentation.Weka_Segmentation.setClassBalance", "true");
+    ```
 
 -   Set membrane thickness (in pixels):
 
-<!-- -->
-
+    ```
     call("trainableSegmentation.Weka_Segmentation.setMembraneThickness", "2");
+    ```
 
 -   Set the membrane patch size (in pixels, NxN):
 
-<!-- -->
-
+    ```
     call("trainableSegmentation.Weka_Segmentation.setMembranePatchSize", "16");
+    ```
 
 -   Set the minimum kernel radius (in pixels):
 
-<!-- -->
-
+    ```
     call("trainableSegmentation.Weka_Segmentation.setMinimumSigma", "2.0");
+    ```
 
 -   Set the maximum kernel radius (in pixels):
 
-<!-- -->
-
+    ```
     call("trainableSegmentation.Weka_Segmentation.setMaximumSigma", "8.0");
+    ```
 
 -   Set a new classifier:
 
-  
 Format: `setClassifier( classifier class, classifier options )`
 
 Example (change classifier to NaiveBayes):
 
-<!-- -->
-
+    ```
     call("trainableSegmentation.Weka_Segmentation.setClassifier",
     "weka.classifiers.bayes.NaiveBayes", "");
+    ```
 
 -   Set the result overlay opacity:
 
-<!-- -->
-
+    ```
     call("trainableSegmentation.Weka_Segmentation.setOpacity", "50");
+    ```
 
-=====Complete macro <example:=====>
+#### Complete macro example
 
-    // Open Leaf sample
-    run("Leaf (36K)");
+```javascript
+// Open Leaf sample
+run("Leaf (36K)");
 
-    // start plugin
-    run("Trainable Weka Segmentation");
+// start plugin
+run("Trainable Weka Segmentation");
 
-    // wait for the plugin to load
-    wait(3000);
-    selectWindow("Trainable Weka Segmentation v3.2.33");
+// wait for the plugin to load
+wait(3000);
+selectWindow("Trainable Weka Segmentation v3.2.33");
 
-    // add one region of interest to each class
-    makeRectangle(367, 0, 26, 94);
-    call("trainableSegmentation.Weka_Segmentation.addTrace", "0", "1");
-    makeRectangle(186, 132, 23, 166);
-    call("trainableSegmentation.Weka_Segmentation.addTrace", "1", "1");
+// add one region of interest to each class
+makeRectangle(367, 0, 26, 94);
+call("trainableSegmentation.Weka_Segmentation.addTrace", "0", "1");
+makeRectangle(186, 132, 23, 166);
+call("trainableSegmentation.Weka_Segmentation.addTrace", "1", "1");
 
-    // enable some extra features
-    call("trainableSegmentation.Weka_Segmentation.setFeature", "Variance=true");
-    call("trainableSegmentation.Weka_Segmentation.setFeature", "Mean=true");
-    call("trainableSegmentation.Weka_Segmentation.setFeature", "Minimum=true");
-    call("trainableSegmentation.Weka_Segmentation.setFeature", "Maximum=true");
-    call("trainableSegmentation.Weka_Segmentation.setFeature", "Median=true");
+// enable some extra features
+call("trainableSegmentation.Weka_Segmentation.setFeature", "Variance=true");
+call("trainableSegmentation.Weka_Segmentation.setFeature", "Mean=true");
+call("trainableSegmentation.Weka_Segmentation.setFeature", "Minimum=true");
+call("trainableSegmentation.Weka_Segmentation.setFeature", "Maximum=true");
+call("trainableSegmentation.Weka_Segmentation.setFeature", "Median=true");
 
-    // change class names
-    call("trainableSegmentation.Weka_Segmentation.changeClassName", "0", "background");
-    call("trainableSegmentation.Weka_Segmentation.changeClassName", "1", "leaf");
+// change class names
+call("trainableSegmentation.Weka_Segmentation.changeClassName", "0", "background");
+call("trainableSegmentation.Weka_Segmentation.changeClassName", "1", "leaf");
 
-    // balance class distributions
-    call("trainableSegmentation.Weka_Segmentation.setClassBalance", "true");
+// balance class distributions
+call("trainableSegmentation.Weka_Segmentation.setClassBalance", "true");
 
-    // train current classifier
-    call("trainableSegmentation.Weka_Segmentation.trainClassifier");
+// train current classifier
+call("trainableSegmentation.Weka_Segmentation.trainClassifier");
 
-    // display probability maps
-    call("trainableSegmentation.Weka_Segmentation.getProbability");
+// display probability maps
+call("trainableSegmentation.Weka_Segmentation.getProbability");
+```
 
 Library use
 -----------
