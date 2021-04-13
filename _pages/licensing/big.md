@@ -28,18 +28,17 @@ List of BIG components
 
 The following components are expressly or implicitly licensed this way:
 
-|                                                                   |                                                            |
-|-------------------------------------------------------------------|------------------------------------------------------------|
-| **Project**                                                       | **License text**                                           |
+| **Project**                                                     | **License text**                                         |
+|-----------------------------------------------------------------|----------------------------------------------------------|
 | **[Differentials](/plugins/differentials)**                     | http://bigwww.epfl.ch/thevenaz/differentials/#LegalBlurb |
 | **[Extended Depth of Field](/plugins/extended-depth-of-field)** | http://bigwww.epfl.ch/demo/edf/                          |
-| **[imageware](Imageware)**                             | Implicit                                                   |
-| **[MIJ](/plugins/miji)**                                         | http://bigwww.epfl.ch/sage/soft/mij/#term                |
+| **[imageware](Imageware)**                                      | Implicit                                                 |
+| **[MIJ](/plugins/miji)**                                        | http://bigwww.epfl.ch/sage/soft/mij/#term                |
 | **[MosaicJ](/plugins/mosaicj)**                                 | http://bigwww.epfl.ch/thevenaz/mosaicj/#LegalBlurb       |
-| **[PointPicker](/plugins/pointpicker)**                         | Implicit                                                   |
-| '''[Shepp-Logan Phantom](/plugins/shepp-logan-phantom)          | http://bigwww.epfl.ch/thevenaz/shepplogan/#LegalBlurb    |
+| **[PointPicker](/plugins/pointpicker)**                         | Implicit                                                 |
+| **[Shepp-Logan Phantom](/plugins/shepp-logan-phantom)**         | http://bigwww.epfl.ch/thevenaz/shepplogan/#LegalBlurb    |
 | **[Snakuscule](/plugins/snakuscule)**                           | http://bigwww.epfl.ch/thevenaz/snakuscule/#LegalBlurb    |
 | **[StackReg](/plugins/stackreg)**                               | http://bigwww.epfl.ch/thevenaz/stackreg/#LegalBlurb      |
 | **[TurboReg](/plugins/turboreg)**                               | http://bigwww.epfl.ch/thevenaz/turboreg/#LegalBlurb      |
 | **[UnwarpJ](/plugins/unwarpj)**                                 | http://bigwww.epfl.ch/thevenaz/UnwarpJ/#LegalBlurb       |
-| **[wavelets](Wavelets)**                               | Implicit                                                   |
+| **[wavelets](Wavelets)**                                        | Implicit                                                 |

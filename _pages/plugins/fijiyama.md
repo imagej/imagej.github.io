@@ -79,8 +79,8 @@ In order to register your data, Fijiyama needs properly formatted dataset:
   
 Before starting registration, check your images calibration:
 
--   '''Intensities: ''' verify there is a proper contrast between your object of interest and the background when opened in Fiji/ImageJ. If needed, use Image &gt; Adjust &gt; Brightness / Contrast, and set the min and max values, then close the Brightness / Contrast window.
--   '''Voxel sizes: ''' using ImageJ, check the image properties (Image &gt; Properties...) and correct the 4 central values, if needed. Unit of length '''should have another value than "pixel" ''' (it can be "mm", "cm", "µm" for example). Check coherence of pixel width / height / depth according to your unit of length. If needed, open the "info" menu (Image &gt; Show info...), to get dicom parameters, or any other parameters. To visualize if the voxel depth is coherent with the pixel size, along X and Y axis, you can render your object as a 3D volume using the 3D viewer (plugins &gt; 3D viewer).
+-   **Intensities: ** verify there is a proper contrast between your object of interest and the background when opened in Fiji/ImageJ. If needed, use Image &gt; Adjust &gt; Brightness / Contrast, and set the min and max values, then close the Brightness / Contrast window.
+-   **Voxel sizes: ** using ImageJ, check the image properties (Image &gt; Properties...) and correct the 4 central values, if needed. Unit of length **should have another value than "pixel" ** (it can be "mm", "cm", "µm" for example). Check coherence of pixel width / height / depth according to your unit of length. If needed, open the "info" menu (Image &gt; Show info...), to get dicom parameters, or any other parameters. To visualize if the voxel depth is coherent with the pixel size, along X and Y axis, you can render your object as a 3D volume using the 3D viewer (plugins &gt; 3D viewer).
 
 Once signal intensity and voxel sizes have been checked, save your modified images. Then run Fijiyama, and select the **two images registration** mode or the **series registration** mode.
 
@@ -108,13 +108,13 @@ Tutorial 1 : Two images registration
 
 In order to achieve an efficient registration of two 3D images, we recommend the following procedure:
 
--   '''Step 1 : ''' Prepare your data or download the example set: [case study 1, two-images registration](https://imagej.net/_images/f/fd/Test_dataset_01_vine_crops.zip)
--   '''Step 2 : ''' Select **'Manual registration**' in the first menu and run it. Superimpose roughly the two volumes manually (centers should be roughly aligned, with angle &lt; 15 degrees). Press on **'Position ok**' (green button) when ready. This first step will help Fijiyama finding the correct orientation.
--   '''Step 3 : ''' Select **'Automatic registration**' with default parameters (Block matching). If you want to monitor the registration during the run, select the **'Display automatic registration**' in the "Manual registration viewer" menu. Before starting this action, notice the *estimated time* required to complete the action (calculated from your computer settings).
--   '''Step 3-bis '''(optional, depending on the data) : Select **'Automatic registration**' with default parameters (Block matching), and select "Vector field" in the "Transformation to estimate" menu.
--   '''Step 4 : ''' Select **'Align both images with XYZ**' with default parameters. Turn the scene to improve its orientation, if needed for a more convenient representation of your data (production of figures or analyses). In the example dataset, we choose to align the red cylinder with the white lines (Z axis), and align the wounding point (a hole in the surface) with the axis X or Y.
--   '''Step 5 : ''' Save the final transformation using the **'Save current state**' button.
--   '''Step 6 : ''' Export the registered 3D images in the "output/Exported\_data" directory previously selected, using the **'Export results**' button.
+-   **Step 1 : ** Prepare your data or download the example set: [case study 1, two-images registration](https://imagej.net/_images/f/fd/Test_dataset_01_vine_crops.zip)
+-   **Step 2 : ** Select **'Manual registration**' in the first menu and run it. Superimpose roughly the two volumes manually (centers should be roughly aligned, with angle &lt; 15 degrees). Press on **'Position ok**' (green button) when ready. This first step will help Fijiyama finding the correct orientation.
+-   **Step 3 : ** Select **'Automatic registration**' with default parameters (Block matching). If you want to monitor the registration during the run, select the **'Display automatic registration**' in the "Manual registration viewer" menu. Before starting this action, notice the *estimated time* required to complete the action (calculated from your computer settings).
+-   **Step 3-bis **(optional, depending on the data) : Select **'Automatic registration**' with default parameters (Block matching), and select "Vector field" in the "Transformation to estimate" menu.
+-   **Step 4 : ** Select **'Align both images with XYZ**' with default parameters. Turn the scene to improve its orientation, if needed for a more convenient representation of your data (production of figures or analyses). In the example dataset, we choose to align the red cylinder with the white lines (Z axis), and align the wounding point (a hole in the surface) with the axis X or Y.
+-   **Step 5 : ** Save the final transformation using the **'Save current state**' button.
+-   **Step 6 : ** Export the registered 3D images in the "output/Exported\_data" directory previously selected, using the **'Export results**' button.
 
 Tutorial 2 : Multimodal time-series registration
 ------------------------------------------------
@@ -123,14 +123,14 @@ Once comfortable with the "two images registration" module, try a "series regist
 
 {% include youtube url='https://www.youtube.com/embed/DVr3LBH5ayY'%}
 
--   '''Step 1 : ''' Prepare your data or download the example data set : [case study 4, times series registration](https://imagej.net/_images/c/c8/Test_dataset_04_time_series.zip)
+-   **Step 1 : ** Prepare your data or download the example data set : [case study 4, times series registration](https://imagej.net/_images/c/c8/Test_dataset_04_time_series.zip)
 
 Data names should respect a generic form, for example : img\_t{Time}\_mod{ModalityName}.tif , where {Time} represents the successive values for each time point, and {ModalityName} represents the name of each modality. In the example dataset, this is already done, since the image names are : MRI\_D0.tif , MRI\_D1.tif , MRI\_D2.tif , MRI\_D3.tif, which corresponds to a monomodal series with the generic expression MRI\_D{Time}.tif .
 
--   '''Step 2 : ''' Use the "Two images" training module to identify the best pipeline of actions for registering your images, from a modality to another, or from an observation time to another.
--   '''Step 3 : ''' Start the module **'Series registration**', and follow the instructions. The manager will ask the pipeline for inter-time registration, then for inter-modalities registration. Once done, it will compose these steps into a full pipeline and process. You can repeatedly press on **'start this action**', and execute all the steps.
--   '''Step 4 : ''' Once all actions needing human intervention are performed, use the **'Chain run**' button to ask Fijiyama to execute successively all the steps automatically.
--   '''Step 5 : ''' Run the last actions. The manual alignment step will set the reference geometry in the image axis, and the save and export steps will stores the actions and the results. The results are saved in the *output/Exported\_data* directory.
+-   **Step 2 : ** Use the "Two images" training module to identify the best pipeline of actions for registering your images, from a modality to another, or from an observation time to another.
+-   **Step 3 : ** Start the module **'Series registration**', and follow the instructions. The manager will ask the pipeline for inter-time registration, then for inter-modalities registration. Once done, it will compose these steps into a full pipeline and process. You can repeatedly press on **'start this action**', and execute all the steps.
+-   **Step 4 : ** Once all actions needing human intervention are performed, use the **'Chain run**' button to ask Fijiyama to execute successively all the steps automatically.
+-   **Step 5 : ** Run the last actions. The manual alignment step will set the reference geometry in the image axis, and the save and export steps will stores the actions and the results. The results are saved in the *output/Exported\_data* directory.
 
 Complementary features
 ----------------------
@@ -187,13 +187,13 @@ Major updates are symbolized with a change in the plugin version name. For minor
 Possible issues and recommendations
 -----------------------------------
 
--   '''Dealing with large datasets : ''' biological images are sometimes very large. In the field of time-lapse microscopy, [BigStitcher](/plugins/bigstitcher) plugin handles such data, using BigDataViewer, as its registration algorithm, perfect for monomodal data of lightsheet microscopy, is well fitted to this task.
+-   **Dealing with large datasets : ** biological images are sometimes very large. In the field of time-lapse microscopy, [BigStitcher](/plugins/bigstitcher) plugin handles such data, using BigDataViewer, as its registration algorithm, perfect for monomodal data of lightsheet microscopy, is well fitted to this task.
 
 Fijiyama is based on the Blockmatching registration algorithm, robust for inter-modality. This algorithm is memory consuming and computation intensive. When starting Fijiyama, the plugin analyzes your computer settings and might propose to subsample your dataset to fasten the registration process. This will not impact the appearance of the final results since the exportation procedure is performed using the initial images, at the chosen resolution.
 
--   '''Translation in 3D under Windows : '''under Windows, translation mode in the [3D\_Viewer](https://imagej.net/3D_Viewer) using SHIFT+drag can be hazardous. To address this, we associated surnumerous controls to the numerical keypad. Using "4" and "6" keys, you can translate the selected volume along the X axis. Using "8" and "2" along the Y axis. Using "5" and "0", along the Z axis. Rotations can be handled with "7" and "9" (X axis), "1" and "3" (Y axis), and characters "p" and "o" for the Z axis.
--   '''3D view disappears : '''depending on the sequence of translations / rotations applied to the scene, the 3D viewer of Fiji/ImageJ sometimes "freezes". To solve this problem, turn the objects to a 90 degrees' angle, and the viewer should come back.
--   '''Other issues ? '''please tell us ! Try to "repeat" your bug from the beginning, identify the context producing the bug, then send an email to corresponding author, including :
+-   **Translation in 3D under Windows : **under Windows, translation mode in the [3D\_Viewer](https://imagej.net/3D_Viewer) using SHIFT+drag can be hazardous. To address this, we associated surnumerous controls to the numerical keypad. Using "4" and "6" keys, you can translate the selected volume along the X axis. Using "8" and "2" along the Y axis. Using "5" and "0", along the Z axis. Rotations can be handled with "7" and "9" (X axis), "1" and "3" (Y axis), and characters "p" and "o" for the Z axis.
+-   **3D view disappears : **depending on the sequence of translations / rotations applied to the scene, the 3D viewer of Fiji/ImageJ sometimes "freezes". To solve this problem, turn the objects to a 90 degrees' angle, and the viewer should come back.
+-   **Other issues ? **please tell us ! Try to "repeat" your bug from the beginning, identify the context producing the bug, then send an email to corresponding author, including :
 
 \- a compressed copy of your output directory - the copy of the content of the ImageJ log window (probably a hundred lines of sentences in red telling where Exceptions were encountered) - Any useful commentary - if possible, the content of the black log window - if possible, a link to the dataset used
 

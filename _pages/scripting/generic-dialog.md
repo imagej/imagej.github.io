@@ -216,7 +216,7 @@ For more complicated cases, one could also create different event-handling class
 
 
     class ButtonClic(ActionListener):
-        '''Class which unique function is to handle the button clics'''
+        **Class which unique function is to handle the button clics**
 
         def actionPerformed(self, event): # self (or this in Java) to state that the method will be associated to the class instances
             

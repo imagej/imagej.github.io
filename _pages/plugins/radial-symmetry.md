@@ -38,7 +38,7 @@ The basic setup looks as following:
 
 \- Run the program in the manual mode (or even in the batch mode using ImageJ macro) to process the data.
 
-''' Fixing Image Anisotropy '''
+** Fixing Image Anisotropy **
 
 Since the resolution in z-axis might be much worse than the resolution in x- and y-axis we should perform the correction for that. To do that one will use the beads images acquired with the same microscope under the same conditions as the normal (data) images.
 
@@ -68,11 +68,11 @@ Important:
 
 It is fine to skip this step if you do not have beads images. The plugin will be able to do decent job even with the default value of the anisotropy coefficient.
 
-''' Localizing Spots '''
+** Localizing Spots **
 
 There are 2 different modes of processing images: interactive and manual. The Interactive mode is used to adjust the the parameters for further dataset processing. It also provides the visual feedback necessary to adjust the parameters for the automated processing on huge datasets.
 
-''' Interactive mode: '''
+** Interactive mode: **
 
 Open the image and navigate to the 'Plugins' menu under 'Radial Symmetry Localization' &gt; 'Radial Symmetry'.
 
@@ -136,7 +136,7 @@ Besides that you will get 2 images: one of them showing the overlay of the initi
 
 <File:Inliers-ransac.png%7CRANSAC> Support Regions <File:Multiple-dots-detections.png%7CDetected> Spots
 
-''' Manual mode: '''
+** Manual mode: **
 
 In the manual mode you can skip all the hassle of the parameters adjustment and jump directly to the computations on the dataset.
 

@@ -203,7 +203,7 @@ References.
 
 {% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez)) 03:49, 25 January 2015 (CST)
 
-[1] [Chenouard *et al.*, "Objective comparison of particle tracking methods", '''Nature Methods, 2014 '''](http://www.nature.com/nmeth/journal/v11/n3/full/nmeth.2808.html)
+[1] [Chenouard *et al.*, "Objective comparison of particle tracking methods", **Nature Methods, 2014 **](http://www.nature.com/nmeth/journal/v11/n3/full/nmeth.2808.html)
 
 [2] [Jaqaman *et al.*, "Robust single-particle tracking in live-cell time-lapse sequences", **Nature Methods, 2008**](http://www.nature.com/nmeth/journal/v5/n8/full/nmeth.1237.html)
 

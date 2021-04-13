@@ -16,19 +16,19 @@ Features
 
 The process of generating a colorized overlay is best, but not required, done in three stages.
 
-***First...**''  
-**Background*' identifies the background image. If unspecified the background color is used. If the specified ImageWindow contains an Roi, the image is cropped to the bounding box and cleared outside the Roi, i.e., set to background color.  
-**Foreground''' identifies the foreground image that is colorized. If the ImageWindow contains an Roi then only the contents of the Roi will be overlayed.  
+***First...***  
+**Background** identifies the background image. If unspecified the background color is used. If the specified ImageWindow contains an Roi, the image is cropped to the bounding box and cleared outside the Roi, i.e., set to background color.  
+**Foreground** identifies the foreground image that is colorized. If the ImageWindow contains an Roi then only the contents of the Roi will be overlayed.  
 **Range** is the colorization range that will be used. Defaults to the display range of the foreground source image. If **Query** is on, then the range will be requeried and set every time a foreground image is selected.
 
-***then...**''  
-**Scale*' identifies the rescaling of the images that is done before any annotation is performed. *W* and *H* are the scaling factor, 1 and 100% are the same. The *w* and *h* are columns and rows of voxels added to the resulting image before annotation.  
-**Interpolation''' identifies the means by which the image will be scaled.  
+***then...***  
+**Scale** identifies the rescaling of the images that is done before any annotation is performed. *W* and *H* are the scaling factor, 1 and 100% are the same. The *w* and *h* are columns and rows of voxels added to the resulting image before annotation.  
+**Interpolation** identifies the means by which the image will be scaled.  
 **Boarder** identifies the location of the source image in the resultant image, i.e., opposite of where to stick the boarder voxels.
 
-***then...**''  
-**ColorBar*' identifies if and where a colorbar should be placed.  
-**Size''' identifies the size and boarder of the colorbar. *W* and *H* identify the axial and longitudinal dimension of the colorbar; \# is in voxels and \#% is a fraction of the rescaled image. *in* and *out* specify the number of voxels added to the attachment proximal and distal side of the colorbar.  
+***then...***  
+**ColorBar** identifies if and where a colorbar should be placed.  
+**Size** identifies the size and boarder of the colorbar. *W* and *H* identify the axial and longitudinal dimension of the colorbar; \# is in voxels and \#% is a fraction of the rescaled image. *in* and *out* specify the number of voxels added to the attachment proximal and distal side of the colorbar.  
 **Label** is the string to be inserted at the top left of the image.  
 **Multiplier** scales the colorized range before annotating the colorbar. If the voxel values are in meters and the annotation is in mm, then set to 1000.  
 **Format** is the Java format string used to produce the colorbar annotations.  

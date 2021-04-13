@@ -39,7 +39,7 @@ Schneider, C. A.; Rasband, W. S. & Eliceiri, K. W. (2012), "NIH Image to ImageJ:
 
 Schindelin, J.; Arganda-Carreras, I. & Frise, E. et al. (2012), "Fiji: an open-source platform for biological-image analysis", Nature methods 9(7): 676-682, PMID 22743772, <doi:10.1038/nmeth.2019>
 
-'''Uses the following plugins: '''
+**Uses the following plugins: **
 
 bioformats (https://www.openmicroscopy.org/bio-formats/)
 

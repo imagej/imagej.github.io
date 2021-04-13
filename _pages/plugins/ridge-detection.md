@@ -32,7 +32,7 @@ This example shows the application of the plugin on images of carbon nanotubes (
 Parameter Selection
 ===================
 
-There are three parameters which '''have to ''' be specified. These are the mandatory parameters. The optional parameters can be used to estimate the mandatory parameters <img src="/media/Ridge Detection Parameters.png" title="fig:Ridge_Detection_Parameters.png" width="200" alt="Ridge_Detection_Parameters.png" />
+There are three parameters which **have to ** be specified. These are the mandatory parameters. The optional parameters can be used to estimate the mandatory parameters <img src="/media/Ridge Detection Parameters.png" title="fig:Ridge_Detection_Parameters.png" width="200" alt="Ridge_Detection_Parameters.png" />
 
 Mandatory Parameters
 --------------------

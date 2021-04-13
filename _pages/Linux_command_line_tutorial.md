@@ -33,7 +33,7 @@ Moving around
 `[tomancak@madmax ~]$ pwd`  
 `/home/tomancak`
 
-''' cd ''' - *change directory*
+** cd ** - *change directory*
 
 `[tomancak@madmax ~]$ cd /projects`  
 `[tomancak@madmax projects]$ pwd`  
@@ -62,7 +62,7 @@ This tells the interpreter to look for the file executable\_script in the curren
 `[tomancak@madmax projects]$ cd ..`  
 `[tomancak@madmax /]`
 
-''' pressing tab ''' - auto-completion, we don't need to type long names of directories, start typing the name and press **tab** and the linux system will either auto-complete or show you the options you have
+** pressing tab ** - auto-completion, we don't need to type long names of directories, start typing the name and press **tab** and the linux system will either auto-complete or show you the options you have
 
 `[tomancak@madmax ~]$ cd /projects/toman + press tab`  
 `[tomancak@madmax ~]$ cd /projects/tomancak_lightsheet`  

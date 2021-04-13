@@ -351,7 +351,7 @@ ImageJ is open source; as such, it is possible to inspect the source code for an
 
 Here are several ways to do so:
 
-1.  '''Using [search.imagej.net](http://search.imagej.net)
+1.  **Using [search.imagej.net](http://search.imagej.net):**
     -   Go to http://search.imagej.net/
     -   Type in your search
     -   Click the GitHub button!

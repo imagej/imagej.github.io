@@ -728,7 +728,7 @@ Please find below a complete description of the "edit" menu :
 
 **Remove all text** : removes all text fields from the current figure (can be used to clean figure for talks).
 
-'''Remove all scale bars ''': removes all scale bars (can be used to clean figure for talks).
+**Remove all scale bars **: removes all scale bars (can be used to clean figure for talks).
 
 **Remove all ROIs** : removes all ROIs and floating text from the current figure (can be used to clean figure for talks).
 
@@ -1295,7 +1295,7 @@ Change the number of rows to 3 (upper arrow) and the number of columns to 2 (low
 
 **Add selection to new Figure** : Adds dragged objects to a new figure (<span style="color:#ce181e;">Free mode</span> only).
 
-'''Add selection as a new Row at the end of the drop target Figure : '''Adds dragged objects as a new row in the drop target figure (<span style="color:#ce181e;">Free mode</span> only).
+**Add selection as a new Row at the end of the drop target Figure : **Adds dragged objects as a new row in the drop target figure (<span style="color:#ce181e;">Free mode</span> only).
 
 **Add selection as new Rows at the end of the drop target Figure** : Adds dragged objects as new rows in the drop target figure (<span style="color:#ce181e;">Free mode</span> only).
 

@@ -50,7 +50,7 @@ Detailed tutorials
 
 SPIM registration is particularly useful for processing of data acquired on [**OpenSPIM**](http://openspim.org). Detailed step-by-step tutorials are available on the [**OpenSPIM wiki**](http://openspim.org/Operation#Data_processing).
 
--   We start by defining [**System requirements**](http://openspim.org/Pre-requisites) and downloading ['''sample OpenSPIM data](http://openspim.org/Raw_data),
+-   We start by defining [**System requirements**](http://openspim.org/Pre-requisites) and downloading [sample OpenSPIM data](http://openspim.org/Raw_data),
 -   followed by optional [**pre-processing steps**](http://openspim.org/Pre-processing).
 -   [**Multi-view registration**](http://openspim.org/Registration) is at the heart of SPIMage processing pipeline.
 -   [**Multi-view Fusion**](http://openspim.org/Fusion) section discusses how to combine several view into one output image

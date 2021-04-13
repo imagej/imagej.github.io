@@ -19,7 +19,7 @@ description: test description
 {% endcapture %}
 {% include info-box software='Fiji' name='MaMuT' logo='<img src="/media/MaMuT logo-256x256.png" title="fig:MaMuT_logo-256x256.png" width="160" alt="MaMuT_logo-256x256.png" />' maintainer=maintainer author=author source=source status='v0.27.0, active' released='06/01/2015' category='[Segmentation](Category_Segmentation), [Tracking](Category_Tracking), [:Category:Plugins](Category_Plugins)' %}
 
-'''A Fiji plugin for the annotation of massive, multi-view data. '''
+**A Fiji plugin for the annotation of massive, multi-view data. **
 
 Enable the [MaMuT update site](http://sites.imagej.net/MaMuT/) to get it.
 

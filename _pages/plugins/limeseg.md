@@ -17,7 +17,7 @@ description: test description
 {% endcapture %}
 {% include info-box software='Fiji' name='LimeSeg' update-site='LimeSeg' logo='' maintainer=maintainer author=author source=source status='' released='01/2018' category='[Segmentation](Category_Segmentation), [:Category:Plugins](Category_Plugins)' %}
 
-'''A Fiji plugin for the segmentation of 3D objects. '''
+**A Fiji plugin for the segmentation of 3D objects. **
 
 [`Enable`` ``the`` ``LimeSeg`` ``update`` ``site`](https://imagej.net/Following_an_update_site)` to get it.`
 
@@ -104,10 +104,10 @@ Other outputs are provided as an ImageJ table: <img src="/media/LimeSeg Results 
 -   **Mesh?** : indicates where a mesh has been reconstructed from the object surfels
 -   *' Euler characteristic*' : [Euler characteristic](https://en.wikipedia.org/wiki/Euler_characteristic) of the reconstructed mesh. This value needs to be 2 for a simply closed surface, 0 for a torus, etc. If its value is not in accordance with your expectations, the surface and volume values will be wrong.
 -   *' Free edges*' : Number of free edges of the 3D reconstructed mesh. Should be equal to zero to trust the given surface and volume.
--   ''' Surface ''' : Surface of the object in (XY\_pixels)^2 units
--   ''' Volume ''' : Surface of the object in (XY\_pixels)^3 units
--   ''' Real Surface ''' : Physical surface of the object
--   ''' Real Volume ''' : Physical volume of the object
+-   ** Surface ** : Surface of the object in (XY\_pixels)^2 units
+-   ** Volume ** : Surface of the object in (XY\_pixels)^3 units
+-   ** Real Surface ** : Physical surface of the object
+-   ** Real Volume ** : Physical volume of the object
 
 **Troubleshooting**
 
@@ -129,7 +129,7 @@ The shape is now more precise, as you can see in the 2D view and in 3D:
 
 If the object you want to segment is tortuous or big, starting with a single spherical may not give good results. Here are two alternative ways to segment a single object.
 
-''' Starting with multiple spherical seeds '''
+** Starting with multiple spherical seeds **
 
 The sample image accessible here: https://raw.githubusercontent.com/NicoKiaru/TestImages/master/ER/ER-FIB-SEM-Small.tif (use **File&gt;Import&gt;URL**) is a piece of endoplasmic reticulum and is pretty tortuous. While you may get a correct result with one circular ROI as a seed and with the **Sphere Seg** command (D\_0 = 2 and F\_pressure=0.02 gives good results), one can also store several circular ROI in the ROI manager at different places in the piece of ER. Lauching the **Sphere Seg** command and checking the **same Cell** checkbox will lead to a faster segmentation. When the different seeds meet, they will merge into a single surface.
 
@@ -356,7 +356,7 @@ We now suppose that you already have created 3D objects that you want to optimiz
 
 If you download and unzip the sample file https://raw.githubusercontent.com/NicoKiaru/TestImages/master/LimeSegOutput/DubSeg.zip, you will see that the folder contains an xml file which contains the last segmentation parameters (LimeSegParams.xml) and one folder per Cell object. In each folder, named according to the Cell id object, a CellParams.xml file contains the parameters specific to the Cell object, and CellT objects (Cell at a specific timepoint), consists of files T\_x.ply where x is the timepoint number and where ply is the standard 3D format used. [PLY](https://en.wikipedia.org/wiki/PLY_(file_format)) file format is standard and can be used in many other 3D software.
 
-To save the current objects of LimeSeg, choose an EMPTY folder in LimeSeg GUI I/O Tab (**Plugins&gt;LimeSeg&gt; Show GUI**), with the button **WriteTo:**, then click on the '''saveStateToXmlPly ''' button.
+To save the current objects of LimeSeg, choose an EMPTY folder in LimeSeg GUI I/O Tab (**Plugins&gt;LimeSeg&gt; Show GUI**), with the button **WriteTo:**, then click on the **saveStateToXmlPly ** button.
 
 To open previously saved data, select the folder with the LoadFrom: button then click loadStateFromXmlPly button. This erases all previous data contained in LimeSeg.
 

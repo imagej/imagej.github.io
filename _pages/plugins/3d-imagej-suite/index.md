@@ -65,7 +65,7 @@ ImageJ 1.47 or later is required. Java3D is also required, check that [3D\_Viewe
 
 **NEW** From version 3.83 and later, for ImageJ users the new version 4.0.1 of 3D\_Viewer is required (please remove the 3D\_Viewer plugin provided by ImageJ and replace it by [3d\_viewer-mcib.zip](/media/3d viewer-mcib.zip), just unzip the file in the plugins directory).
 
-Java 1.8 or later is required. '''The [imagescience](http://www.imagescience.org/meijering/software/featurej/) library is required ''' : [download here](http://www.imagescience.org/meijering/software/download/imagescience.jar).
+Java 1.8 or later is required. **The [imagescience](http://www.imagescience.org/meijering/software/featurej/) library is required ** : [download here](http://www.imagescience.org/meijering/software/download/imagescience.jar).
 
 **Bundle** : [Mcib3d-suite3.96.3.zip](/media/Mcib3d-suite3.96.3.zip)
 
