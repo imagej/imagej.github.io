@@ -45,7 +45,7 @@
 
 .menu hr {
 	border-bottom: solid 1px gray;
-	margin: 0.5em 0 10px 0;
+	margin: 0.5em .5rem 10px .5rem;
 }
 
 .menu details>summary {
@@ -79,8 +79,8 @@
 
 .toc hr {
 	border-bottom: solid 1px gray;
-	margin: 0.5em 0 -20px 0;
-	padding-left: 50px;
+	margin: 0.5em auto -20px auto;
+	width: 60%;
 }
 
 @media screen and (max-width: 780px) {
