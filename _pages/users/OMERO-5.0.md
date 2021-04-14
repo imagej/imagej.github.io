@@ -11,7 +11,7 @@ This account is used to manage the [OMERO 5.0 update site](http://sites.imagej.n
 
 To activate it:
 
--   [*Help&gt;Update*](/update-sites)
+-   [{% include bc path="Help|Update" %}](/update-sites)
 -   Click *Manage update sites*
 -   Check *OMERO 5.0*
 -   Click *Close*
@@ -23,6 +23,6 @@ Some files should appear on the list with *Status/Action* of *Install it*.
 
 Your ImageJ should now possess the following commands:
 
--   *File &gt; Import &gt; OMERO*
--   *File &gt; Export &gt; OMERO*
--   *Help&gt;About Plugins&gt;OMERO...*
+-   {% include bc path="File | Import | OMERO" %}
+-   {% include bc path="File | Export | OMERO" %}
+-   {% include bc path="Help|About Plugins|OMERO..." %}

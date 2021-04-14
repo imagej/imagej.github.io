@@ -11,7 +11,7 @@ This account is used to manage the [Cookbook update site](http://sites.imagej.ne
 
 To activate it:
 
--   [*Help&gt;Update*](/update-sites)
+-   [{% include bc path="Help|Update" %}](/update-sites)
 -   Click *Manage update sites*
 -   Check *Cookbook*
 -   Click *Close*

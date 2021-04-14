@@ -51,7 +51,7 @@ The methods cause parallel execution of specified command for parameters. A size
 Fiji users
 ----------
 
-Scijava-parallel offers plugin that provides management of paradigms and profiles. It is accessible from menu *Plugins &gt; Scijava parallel &gt; Paradigm Profiles Manager*. The plugin shows the following form:
+Scijava-parallel offers plugin that provides management of paradigms and profiles. It is accessible from menu {% include bc path="Plugins | Scijava parallel | Paradigm Profiles Manager" %}. The plugin shows the following form:
 
 ![](/media/ParadigmProfilesManager.png "ParadigmProfilesManager.png")
 

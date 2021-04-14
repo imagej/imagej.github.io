@@ -128,7 +128,7 @@ Since we are only interested in the `processElementAtIndex` method when a proble
 
 At this point, we know there is a problem accessing the `99999th` element of the list, but the variables window doesn't tell us exactly what the problem is. We can manually expand and explore the `list` variable - but given its size that could be cumbersome.
 
-Instead, let's use expressions. If it's not already visible, open the *Window &gt; Show View &gt; Expressions* view.
+Instead, let's use expressions. If it's not already visible, open the {% include bc path="Window | Show View | Expressions" %} view.
 
 In this view, we can add any number of Java expressions to evaluate. We can call methods from, and on, any variables and classes visible from the current scope.
 

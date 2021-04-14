@@ -17,9 +17,9 @@ description: test description
 {% endcapture %}
 {% include info-box software='Fiji' name='LimeSeg' update-site='LimeSeg' logo='' maintainer=maintainer author=author source=source status='' released='01/2018' category='[Segmentation](Category_Segmentation), [:Category:Plugins](Category_Plugins)' %}
 
-**A Fiji plugin for the segmentation of 3D objects. **
+**A Fiji plugin for the segmentation of 3D objects.**
 
-[`Enable`` ``the`` ``LimeSeg`` ``update`` ``site`](https://imagej.net/Following_an_update_site)` to get it.`
+[Enable the LimeSeg update site](https://imagej.net/Following_an_update_site) to get it.
 
 Publication.
 ------------
@@ -48,7 +48,7 @@ Test LimeSeg is a modular 3D segmentation plugin. It is a particle-based active 
 
 ![](/media/Dub-scaled0.5XY-Tp19.png "Dub-scaled0.5XY-Tp19.png")
 
-LimeSeg can be used with simple commands provided by the plugin (under Plugins&gt;LimeSeg in ImageJ menu), or on a more advanced manner with scripting capabilities of ImageJ (macro commands of ImageJ1 or preferentially with [groovy scripts](/scripting/groovy)).
+LimeSeg can be used with simple commands provided by the plugin (under {% include bc path="Plugins|LimeSeg" %} in ImageJ menu), or on a more advanced manner with scripting capabilities of ImageJ (macro commands of ImageJ1 or preferentially with [groovy scripts](/scripting/groovy)).
 
 Commands : basic usage
 ======================
@@ -58,15 +58,15 @@ Single object segmentation
 
 ### Sphere Seg command
 
-The command Sphere Seg (**Plugins&gt;LimeSeg&gt;Sphere Seg**) is the easiest way to use LimeSeg. It allows to segment a 3D object starting from a spherical seed. Here's an example to show how to use it:
+The command Sphere Seg ({% include bc path="Plugins|LimeSeg|Sphere Seg" %}) is the easiest way to use LimeSeg. It allows to segment a 3D object starting from a spherical seed. Here's an example to show how to use it:
 
-1\. Open a sample vesicle image. To do this, do **File&gt;Import&gt;URL..** and enter the address https://raw.githubusercontent.com/NicoKiaru/TestImages/master/Vesicles/Vesicles.tif
+1\. Open a sample vesicle image. To do this, do {% include bc path="File|Import|URL.." %} and enter the address https://raw.githubusercontent.com/NicoKiaru/TestImages/master/Vesicles/Vesicles.tif
 
-2\. Draw a circular ROI that is contained within the vesicle And save it in the ROI manager with the t key or with Edit&gt;Selection&gt;Add To Manager (only this ROI should be contained in the ROI manager).
+2\. Draw a circular ROI that is contained within the vesicle And save it in the ROI manager with the t key or with {% include bc path="Edit|Selection|Add To Manager" %} (only this ROI should be contained in the ROI manager).
 
 ![](/media/LimeSeg Seed Vesicle.png "LimeSeg_Seed_Vesicle.png")
 
-3\. Execute the Sphere Seg command : **Plugins&gt;LimeSeg&gt;Sphere Seg**
+3\. Execute the Sphere Seg command : {% include bc path="Plugins|LimeSeg|Sphere Seg" %}
 
 4\. You need to provide the four most important parameters:
 
@@ -111,15 +111,15 @@ Other outputs are provided as an ImageJ table: <img src="/media/LimeSeg Results 
 
 **Troubleshooting**
 
--   If the circle ROI is too small, the sphere will disappear immediately -&gt; make a bigger circular ROI.
--   If the circle ROI is too big or not fully contained into the vesicle, the surface could leak outside -&gt; recenter the ROI.
--   "the segmentation goes crazy and I'd like to stop it". You can either execute the command **Plugins&gt;LimeSeg&gt;Stop Optimisation**, or you can set a value different from -1 in the number of optimisation steps parameter (10000 steps is enough for this demo case).
+-   If the circle ROI is too small, the sphere will disappear immediately &rarr; make a bigger circular ROI.
+-   If the circle ROI is too big or not fully contained into the vesicle, the surface could leak outside &rarr; recenter the ROI.
+-   "the segmentation goes crazy and I'd like to stop it". You can either execute the command {% include bc path="Plugins|LimeSeg|Stop Optimisation" %}, or you can set a value different from -1 in the number of optimisation steps parameter (10000 steps is enough for this demo case).
 
 ### Refining a segmentation result
 
-It is possible to refine a segmentation by decreasing D\_0 after a first roughly defined shape is found. Doing a first segmentation at a high D\_0 and then decreasing it by refinement is usually faster than starting the segmentation at a low D\_0 value. This can be done after a first segmentation by using the **Plugins&gt;LimeSeg&gt;Coarsen/Refine** command.
+It is possible to refine a segmentation by decreasing D\_0 after a first roughly defined shape is found. Doing a first segmentation at a high D\_0 and then decreasing it by refinement is usually faster than starting the segmentation at a low D\_0 value. This can be done after a first segmentation by using the {% include bc path="Plugins|LimeSeg|Coarsen/Refine" %} command.
 
-For instance, in the vesicle example: 1 - Right after the convergence is reached for D\_0 = 4, launch the "Plugins&gt;LimeSeg&gt;Coarsen/Refine" command with these parameters: Choose the following parameters: D\_0\_ini = 4; D\_0\_end = 2; range\_in\_D\_O\_units=2. 2 - After the command is finished, you need to resume the segmentation until convergence is newly reached. To do this, execute the command **Plugins&gt;LimeSeg&gt;Resume Seg**. You can keep F\_pressure to zero, since no bias is required anymore, and set the real size of the pixel as before (0.133).
+For instance, in the vesicle example: 1 - Right after the convergence is reached for D\_0 = 4, launch the {% include bc path="Plugins|LimeSeg|Coarsen/Refine" %} command with these parameters: Choose the following parameters: D\_0\_ini = 4; D\_0\_end = 2; range\_in\_D\_O\_units=2. 2 - After the command is finished, you need to resume the segmentation until convergence is newly reached. To do this, execute the command {% include bc path="Plugins|LimeSeg|Resume Seg" %}. You can keep F\_pressure to zero, since no bias is required anymore, and set the real size of the pixel as before (0.133).
 
 The shape is now more precise, as you can see in the 2D view and in 3D:
 
@@ -131,7 +131,7 @@ If the object you want to segment is tortuous or big, starting with a single sph
 
 ** Starting with multiple spherical seeds **
 
-The sample image accessible here: https://raw.githubusercontent.com/NicoKiaru/TestImages/master/ER/ER-FIB-SEM-Small.tif (use **File&gt;Import&gt;URL**) is a piece of endoplasmic reticulum and is pretty tortuous. While you may get a correct result with one circular ROI as a seed and with the **Sphere Seg** command (D\_0 = 2 and F\_pressure=0.02 gives good results), one can also store several circular ROI in the ROI manager at different places in the piece of ER. Lauching the **Sphere Seg** command and checking the **same Cell** checkbox will lead to a faster segmentation. When the different seeds meet, they will merge into a single surface.
+The sample image accessible here: https://raw.githubusercontent.com/NicoKiaru/TestImages/master/ER/ER-FIB-SEM-Small.tif (use {% include bc path="File|Import|URL" %}) is a piece of endoplasmic reticulum and is pretty tortuous. While you may get a correct result with one circular ROI as a seed and with the **Sphere Seg** command (D\_0 = 2 and F\_pressure=0.02 gives good results), one can also store several circular ROI in the ROI manager at different places in the piece of ER. Lauching the **Sphere Seg** command and checking the **same Cell** checkbox will lead to a faster segmentation. When the different seeds meet, they will merge into a single surface.
 
 For instance for three spherical seeds:
 
@@ -145,7 +145,7 @@ Final result:
 
 It is possible to define more precisely the seeds used to segment images. This can be useful for instance to predefine the structure you want to segment. Let's show how this works through an example, like the segmentation of the contour of the CElegans embryo:
 
-1\. Download a 3D C. Elegans embry image (**File&gt;Import&gt;URL..**) from here: https://raw.githubusercontent.com/NicoKiaru/TestImages/master/CElegans/dub19-half.tif which is a timepoint extracted from the full dataset (https://loci.wisc.edu/software/sample-data).
+1\. Download a 3D C. Elegans embry image ({% include bc path="File|Import|URL.." %}) from here: https://raw.githubusercontent.com/NicoKiaru/TestImages/master/CElegans/dub19-half.tif which is a timepoint extracted from the full dataset (https://loci.wisc.edu/software/sample-data).
 
 2\. Using a few ROIs approximately define the contour of the embryo at certains slices, like in the image shown above:
 
@@ -153,14 +153,14 @@ It is possible to define more precisely the seeds used to segment images. This c
 
 You need to begin and end with a single point ROI, otherwise the shape will not be closed. Also, the ROIs need to be drawn clockwise and should starts always at the same angle (start on top for instance).
 
-3\. Launch the **Plugins&gt;LimeSeg&gt;Skeleton Seg** command, without anything else in the ROI manager. Using the parameters D\_0=10, F\_pressure = 0, range\_in \_d0\_units=2 and Z\_scale=3.5 should give correct results, like shown below:
+3\. Launch the {% include bc path="Plugins|LimeSeg|Skeleton Seg" %} command, without anything else in the ROI manager. Using the parameters D\_0=10, F\_pressure = 0, range\_in \_d0\_units=2 and Z\_scale=3.5 should give correct results, like shown below:
 
 ![](/media/LimeSeg CElegans Global.png "LimeSeg_CElegans_Global.png")
 
 Multiple objects segmentation
 -----------------------------
 
-It is possible to segment multiple non overlapping objects with LimeSeg. The most basic way to do this is through the Sphere Seg command. In order too to an example, you can open the test image fo C Elegans with File&gt;Import&gt;URL.. This is a timepoint extracted from this dataset:
+It is possible to segment multiple non overlapping objects with LimeSeg. The most basic way to do this is through the Sphere Seg command. In order too to an example, you can open the test image of *c.elegans* with {% include bc path="File|Import|URL" %}. This is a timepoint extracted from this dataset:
 
 https://raw.githubusercontent.com/NicoKiaru/TestImages/master/CElegans/dub19-half.tif
 
@@ -179,7 +179,7 @@ You can define multiple seeds (one per cell) simply by storing multiple circular
 
 Of course the seeds can be located at different planes.
 
-You can then launch the **Plugins&gt;LimeSeg&gt;Sphere Seg** command with the previously defined parameters, but **be sure to uncheck the sameCell checkbox** (otherwise surfaces will merge):
+You can then launch the {% include bc path="Plugins|LimeSeg|Sphere Seg" %} command with the previously defined parameters, but **be sure to uncheck the sameCell checkbox** (otherwise surfaces will merge):
 
 ![](/media/LimeSeg-MultiSeeds-Param.png "LimeSeg-MultiSeeds-Param.png")
 
@@ -204,19 +204,19 @@ Others commands
 
 ### Cancelling a segmentation result
 
-To cancel the last launched segmentation command, you can launch the command : **Plugins &gt; LimeSeg &gt; Cancel Last Optimisation**
+To cancel the last launched segmentation command, you can launch the command : {% include bc path="Plugins | LimeSeg | Cancel Last Optimisation" %}
 
 The segmentation needs to be stopped before applying this command.
 
 ### Clearing all segmented objects
 
--   launch the command : **Plugins &gt; LimeSeg &gt; Clear all**
+-   launch the command : {% include bc path="Plugins | LimeSeg | Clear all" %}
 
 Should be used cautiously : this erases all objects segmented by LimeSeg so far.
 
 ### Stopping a segmentation in progress
 
--   Command **Plugins&gt;LimeSeg&gt;Stop optimization**
+-   Command {% include bc path="Plugins|LimeSeg|Stop optimization" %}
 
 LimeSeg 3D Viewer (basic)
 -------------------------
@@ -229,11 +229,11 @@ Advanced usage
 Graphical user interface
 ------------------------
 
-The command **Plugins&gt;LimeSeg&gt; Show GUI** displays LimeSeg GUI. This graphical interface allows to do almost everything in LimeSeg. Each action (meaning button you click) is recordable if you have opened the plugins&gt;macro&gt;Record recorder.
+The command {% include bc path="Plugins|LimeSeg|Show GUI" %} displays LimeSeg GUI. This graphical interface allows to do almost everything in LimeSeg. Each action (meaning button you click) is recordable if you have opened the {% include bc path="Plugins|Macro|Record" %} recorder.
 
-To execute the script in ImageJ1 macro language, just add **run("Show GUI");** as the first line of your script.
+To execute the script in ImageJ1 macro language, just add `run("Show GUI");` as the first line of your script.
 
-To execute the script in Groovy, replace **Ext.** by **LimeSeg.**, and put **import eu.kiaru.limeseg.LimeSeg;** at the beginning of the script.
+To execute the script in Groovy, replace **Ext.** by **LimeSeg.**, and put `import eu.kiaru.limeseg.LimeSeg;` at the beginning of the script.
 
 LimeSeg structure
 -----------------
@@ -248,7 +248,7 @@ LimeSeg is composed of multiple parts. It can:
 
 To help understand how LimeSeg does this, please download this sample dataset output (unzip file https://raw.githubusercontent.com/NicoKiaru/TestImages/master/LimeSegOutput/DubSeg.zip).
 
-Open Fiji, then launch LimeSeg GUI (**Plugins&gt;LimeSeg&gt;Show GUI**). LimeSeg graphical user interface pops up (click ok on the warning message). The GUI consists of an upper panel that can apply different actions on LimeSeg. Tabs separate the different kinds of objects where actions can be applied. The lower part contains information about LimeSeg state.
+Open Fiji, then launch LimeSeg GUI ({% include bc path="Plugins|LimeSeg|Show GUI" %}). LimeSeg graphical user interface pops up (click ok on the warning message). The GUI consists of an upper panel that can apply different actions on LimeSeg. Tabs separate the different kinds of objects where actions can be applied. The lower part contains information about LimeSeg state.
 
 ![](/media/LimeSegGUI.png "LimeSegGUI.png")
 
@@ -304,7 +304,7 @@ To put the sphere into the current Cell, go to the Current CellT tab, and click 
 
 Set properly the active Cell (see above how to select the active cell) and the active timepoint (STATE &gt; setCurrentFrame).
 
-Click **Current CellT &gt; clearDotsFromCellT**
+Click {% include bc path="Current CellT | clearDotsFromCellT" %}
 
 #### Deleting a Cell
 
@@ -356,7 +356,7 @@ We now suppose that you already have created 3D objects that you want to optimiz
 
 If you download and unzip the sample file https://raw.githubusercontent.com/NicoKiaru/TestImages/master/LimeSegOutput/DubSeg.zip, you will see that the folder contains an xml file which contains the last segmentation parameters (LimeSegParams.xml) and one folder per Cell object. In each folder, named according to the Cell id object, a CellParams.xml file contains the parameters specific to the Cell object, and CellT objects (Cell at a specific timepoint), consists of files T\_x.ply where x is the timepoint number and where ply is the standard 3D format used. [PLY](https://en.wikipedia.org/wiki/PLY_(file_format)) file format is standard and can be used in many other 3D software.
 
-To save the current objects of LimeSeg, choose an EMPTY folder in LimeSeg GUI I/O Tab (**Plugins&gt;LimeSeg&gt; Show GUI**), with the button **WriteTo:**, then click on the **saveStateToXmlPly ** button.
+To save the current objects of LimeSeg, choose an EMPTY folder in LimeSeg GUI I/O Tab ({% include bc path="Plugins|LimeSeg|Show GUI" %}), with the button **WriteTo:**, then click on the **saveStateToXmlPly ** button.
 
 To open previously saved data, select the folder with the LoadFrom: button then click loadStateFromXmlPly button. This erases all previous data contained in LimeSeg.
 

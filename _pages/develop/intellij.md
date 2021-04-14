@@ -51,7 +51,7 @@ This section is a short guide on how to start using the Eclipse code style profi
 
 The first step is to install the Eclipse code formatter (ECF) plugin to your IntelliJ:
 
-1.  Open *File &gt; Settings*
+1.  Open {% include bc path="File | Settings" %}
 2.  Select *Plugins* from the left-hand pane
 3.  Click *Browse repositories...*
 4.  Type *Eclipse code formatter* to the search field
@@ -66,12 +66,12 @@ After installing the ECF plugin you need to set it to use the Eclipse code style
 
 1.  Download [eclipse-preferences.epf](https://github.com/imagej/imagej/blob/master/config/eclipse-preferences.epf)
 2.  Open Eclipse and follow [these](http://help.eclipse.org/luna/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Ftasks%2Ftimpandexp.htm) steps to import an `.epf` file
-3.  Open *Window &gt; Preferences &gt; Java &gt; Code Style &gt; Formatter*
+3.  Open {% include bc path="Window | Preferences | Java | Code Style | Formatter" %}
 4.  Set *Active Profile* to *ImageJ*
 5.  Click *Export All...* and save the XML file
 6.  Open IntelliJ
 7.  Open your project
-8.  Open *File &gt; Settings &gt; Eclipse Code Formatter*
+8.  Open {% include bc path="File | Settings | Eclipse Code Formatter" %}
 9.  Check the *Use the Eclipse code formatter* radio button
 10. Set *Eclipse Java Formatter config file* to the XML file you just created
 11. Set *Java formatter profile* to *ImageJ*
