@@ -1,0 +1,54 @@
+BigDataServer: INFO__ are linkish? An issue with automatic reformatting?
+wikipedia: links won't work -- in e.g. Downloads -- need include instead
+Lots of dead links to defunct pages e.g. Irc__
+
+[:Category:...] links won't work.
+[File:...] won't work.
+[Special:...] won't work.
+User: won't work.
+
+DokuWiki_Migration needs updating to cover GitHub Pages instead of MediaWiki.
+
+SWF files can't be played, and are not easy to get converted now.
+- Need someone with an old system that plays them? Ugh.
+
+There are some captures in _includes that might be unnecessary.
+E.g. macos captures include.content into info_content, then recapitulates it below.
+Is this to make markdown=1 work as desired? Further testing needed.
+
+id="infobox" or id="info-box" instead of class="info-box". Are these boxes unique to the page? If not, shouldn't be ids.
+And lots of infoboxes. Need to consolidate them, remove unnecessary ones, and so forth.
+
+News page needs to liquid loop over all news articles, and show them in a grid like before.
+And consider showing blurbs for the last couple of articles with "read more" or some such.
+
+"OS X" should be changed to "macOS" everywhere now.
+
+Unify the top nav bar and main menu. (Wait for Sam?)
+
+Unify search.imagej.net with imagej.net's search function.
+All mentions of search.imagej.net should instead link to the new unified mechanism.
+
+Remove pre-introductory-paragraph headings from all pages.
+
+Consider shifting main menu and TOC upward a bit.
+
+Add disambig notice for mtrack / mtrack2 / mtrackj
+
+Continue massaging out unwanted characters:
+git grep -P -n "[^\x00-\x7F αβλχΔΠπτΨ∑σµμ ©® ° ⁰¹²³⁵⁶⁷₁₂≥≈≠≤≥±−×÷√≪≫∗★ ←→↓↑↩︎ †§ ÄÈÁÉÍÓÚČŠàèáćéíóúýãñäëïöüůêôčěňřšžßç 😁 ⌥⌘⏎ –—─│┌┐└┘├█″′«»]"
+
+Convert plain menu paths using &gt; or '/' to bc template:
+git grep '\(File\|Edit\|Image\|Process\|Analyze\|Plugins\|Window\|Help\) *\(&gt;\|\/\) *[A-Za-z \.]*\(\(&gt;\|\/\)[A-Za-z \.]*\)*'
+
+Unify all keyboard things (e.g. <span class="Keystroke">) to use key template.
+
+Decide what to do about dashes: - – — ─
+
+Double check all <span> elements in _pages. Are they necessary?
+
+Fix links hardcoding imagej.net.
+
+Fix all citations to use an include.
+
+Fix ad hoc "*Note: asdf*" blurbs to use an include.
