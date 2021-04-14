@@ -7,9 +7,6 @@ description: test description
 
 {% include sntnavbar%}
 
-
-<div class="toclimit-3">
-
 SNT's Reconstruction Viewer is a powerful OpenGL 3D visualization tool for both surface meshes and reconstructions
 
 -   It can be used as a standalone program or from withing SNT

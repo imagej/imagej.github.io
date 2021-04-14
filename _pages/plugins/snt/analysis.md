@@ -8,8 +8,6 @@ description: test description
 {% include sntnavbar%}
 
 
-<div class="toclimit-3">
-
 Sholl Analysis
 ==============
 
@@ -144,6 +142,3 @@ Custom Analyses
 It is possible to script your own analysis routines. See [SNT:\_Scripting](https://imagej.net/SNT:_Scripting) for the link to SNT's API as well as script templates demonstrating a range of analysis possibilities.
 
 {% include sntnavbar%}
-
-
- 

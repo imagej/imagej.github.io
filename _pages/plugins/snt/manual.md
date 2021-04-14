@@ -8,7 +8,7 @@ description: test description
 {% include sntnavbar%}
 
 
-<div class="toclimit-2">
+
 
 SNT Commands
 ============

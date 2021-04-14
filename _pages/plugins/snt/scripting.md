@@ -8,15 +8,13 @@ description: test description
 {% include sntnavbar%}
 
 
-<div class="toclimit-3">
+### SNT API
 
-SNT API
--------
 
 The most up-to-date SNT API can be found at [https://morphonets.github.io/SNT](https://morphonets.github.io/SNT).
 
-Script Templates
-----------------
+### Script Templates
+
 
 <img src="/media/Snt-Scripts-Menu-Full-List.png" title="fig:SNT Scripts Menu" width="300" alt="SNT Scripts Menu" /> SNT comes packaged with script templates demonstrating various analysis, tracing, image processing and batch processing routines. These templates can be found both in the *Scripts* menu of the SNT dialog and in the {% include bc path='Templates|Neuroanatomy'%} menu of Fiji's Script Editor. Scripts can be written in any language supported by Fiji's Script Editor.
 

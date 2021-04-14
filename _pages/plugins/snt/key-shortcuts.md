@@ -13,7 +13,7 @@ Most SNT features are triggered by keyboard shortcuts. Shortcuts are typically s
 {% endcapture %}
 {% include ambox text=text %}
 
-#### Interactive Prompt
+### Interactive Prompt
 
 These shortcuts are always available:
 
@@ -35,7 +35,7 @@ These shortcuts are always available:
 
 -   {% include key content='Esc' %} - Aborts current operation / Exits current mode
 
-#### Tracing
+### Tracing
 
 These shortcuts are available when running SNT in *Tracing Mode*:
 
@@ -57,7 +57,7 @@ These shortcuts are available when running SNT in *Tracing Mode*:
 
 -   {% include key content='Alt\|Shift' %}-click - Selects a point along the active path to be used as forking point (See [step-by-step instructions](SNT__Step-By-Step_Instructions#Branching__Start_A_Path_On_An_Existing_Path) for more details on joining and branching).
 
-#### Navigation and Zoom
+### Navigation and Zoom
 
 These shortcuts are always available:
 
@@ -91,7 +91,7 @@ These shortcuts are always available:
 
 -   {% include key content='enter' %} - Shuttles the window focus between the tracing image and the SNT window.
 
-#### Path Handling
+### Path Handling
 
 These shortcuts are always available:
 
@@ -109,7 +109,7 @@ These shortcuts are always available:
 
 -   {% include key content='G' %} - Selects the nearest path to the mouse cursor. Holding {% include key content='Shift\|G' %} adds the path nearest to the mouse cursor to the current list of selected paths. *Mnemonic: <u>G</u>roup paths around cursor.* Note that Paths can only be edited one at a time, and thus {% include key content='Shift\|G' %} is disabled in *Edit Mode*.
 
-#### Path Editing
+### Path Editing
 
 These shortcuts become available in *Edit Mode*, activated through the contextual menu (displayed when right-clicking on a tracing canvas):
 
@@ -118,7 +118,7 @@ These shortcuts become available in *Edit Mode*, activated through the contextua
 -   {% include key content='M' %} - <u>M</u>oves active node to cursor position.
 -   {% include key content='B' %} - <u>B</u>rings active node to current Z-plane.
 
-#### Reconstruction Viewer
+### Reconstruction Viewer
 
 -   {% include key content='left' %} {% include key content='right' %} {% include key content='up' %} {% include key content='down' %} - Rotate (with mouse: Left-click & drag)
 -   {% include key content='shift' %} + {% include key content='left' %} {% include key content='right' %} {% include key content='up' %} {% include key content='down' %} - Pan (with mouse: Right-click & drag)
@@ -132,7 +132,7 @@ These shortcuts become available in *Edit Mode*, activated through the contextua
 -   {% include key content='S' %} - Save <u>S</u>creenshot
 -   {% include key content='H' %} - <u>H</u>elp (as Notification) ({% include key content='F1' %} shows Help on a dedicated window)
 
-#### SciView
+### SciView
 
 -   Drag - Move around
 -   {% include key content='Shift\|' %}+Drag - Rotate around selected node
@@ -143,7 +143,7 @@ These shortcuts become available in *Edit Mode*, activated through the contextua
 
 See [SciView](/plugins/sciview)'s {% include bc path='Help| '%}menu for a full list of shortcuts.
 
-#### Legacy 3D Viewer
+### Legacy 3D Viewer
 
 All shortcuts that are not specific to tracing canvases (XY, ZY and XZ views) *should* be recognized by the [Legacy 3D viewer](SNT__Step-By-Step_Instructions#Legacy_3D_Viewer). In addition the following are also implemented:
 
@@ -151,7 +151,7 @@ All shortcuts that are not specific to tracing canvases (XY, ZY and XZ views) *s
 -   {% include key content='W' %} - Selects the <u>W</u>and (selection) tool.
 -   {% include key content='Esc' %} - Shuttles between the Hand and Wand tool after both have been selected at least once.
 
-#### Other
+### Other
 
 There are other key and mouse combinations used in e.g., [Sholl Analysis (by Focal Point)](SNT__Analysis#Sholl_Analysis), and [Branching and Joining Paths](SNT__Step-By-Step_Instructions#Branching__Start_A_Path_On_An_Existing_Path), that are listed in the contextual menu, displayed when righ-clicking a tracing canvas.
 
@@ -162,4 +162,3 @@ SNT was designed so that its shortcuts do not collide with those of ImageJ. SNT 
 {% include tip tip=tip %}
 
 {% include sntnavbar%}
-

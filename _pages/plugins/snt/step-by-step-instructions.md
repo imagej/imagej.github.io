@@ -8,8 +8,6 @@ description: test description
 {% include sntnavbar%}
 
 
-<div class="toclimit-3">
-
 Tracing
 =======
 
