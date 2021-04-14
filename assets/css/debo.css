@@ -66,10 +66,6 @@
 }
 
 
-.page-content h1, h2 {
-    clear: left;
-}
-
 .include {
     border: 2px solid red;
     padding: 5px;
