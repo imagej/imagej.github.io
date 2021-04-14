@@ -46,7 +46,7 @@ Learning to use debugging tools is, understandably, a burden: it's "one more thi
 Using this guide
 ================
 
-The goal of these exercises is not to *solve* the problems, but to build up your toolbox of troubleshooting techniques and develop your intuition for *when* to apply each technique. To keep exercises simple and focused, most do not explicitly use ImageJ. But once you learn how to [debug an external Java application](#Exercise_4:_ImageJ_plugins "wikilink"), you will have the knowledge to apply any of these techniques to a rich, and complex, application like [ImageJ](/about).
+The goal of these exercises is not to *solve* the problems, but to build up your toolbox of troubleshooting techniques and develop your intuition for *when* to apply each technique. To keep exercises simple and focused, most do not explicitly use ImageJ. But once you learn how to [debug an external Java application](#Exercise_4:_ImageJ_plugins), you will have the knowledge to apply any of these techniques to a rich, and complex, application like [ImageJ](/about).
 
 Because this project is intended to help new developers practice troubleshooting skills, you may find these examples contrived - indeed, they are. Exercises are kept simple and focused to allow practice of targeted techniques. If you have complete knowledge and understanding of the code there isn't really a need for troubleshooting: it is trivial to see why something is behaving incorrectly. Thus the source of these exercises is divided into `hidden` and `visible` packages. Users are strongly recommended to only inspect and set breakpoints from the `visible` classes. From a development point of view, consider the `hidden` package a 3rd-party library that you may not have control over, or access to the source code.
 
@@ -75,7 +75,7 @@ To get started in this exercise, open up the source file - `E1BasicBreakpoints` 
 
 ![](/media/E1StackTrace.png "E1StackTrace.png")
 
-[Stack traces](Wikipedia_Stack_trace) are a common starting point for debugging, as they are typically automatically produced when something goes wrong that the program was not prepared to handle. Java programs are executed in [Last In, First Out](Wikipedia_Stack_(abstract_data_type) "wikilink") order; that is, starting with the `main` method, as methods are called they are added to the top of the *stack*, the method at the top is what's currently running, and when a method completes it is removed from the stack, returning the program to the next method in line. When an exception occurs, a *stack trace* is printed, showing the order that methods have been queued, with the top of the stack being the location of the exception (and thus a likely place to start looking for problems!).
+[Stack traces](Wikipedia_Stack_trace) are a common starting point for debugging, as they are typically automatically produced when something goes wrong that the program was not prepared to handle. Java programs are executed in [Last In, First Out](Wikipedia_Stack_(abstract_data_type)) order; that is, starting with the `main` method, as methods are called they are added to the top of the *stack*, the method at the top is what's currently running, and when a method completes it is removed from the stack, returning the program to the next method in line. When an exception occurs, a *stack trace* is printed, showing the order that methods have been queued, with the top of the stack being the location of the exception (and thus a likely place to start looking for problems!).
 
 So looking back at the stack trace we got, we can see *what* went wrong (tried to use a `null` object) and *where* it happened (the line number at the top of the stack), but we don't know *why* the object was `null` at that point - which would be the actual root cause of the exception.
 
@@ -160,7 +160,7 @@ Start by opening the `E3ConditionalCrisis` source and running it. This time our 
 
 ![](/media/E3StackTrace.png "E3StackTrace.png")
 
-In addition to the exception stack trace, the program itself appears to have found an invalid object, causing the processing to go unfinished. Although we could set a breakpoint on the exception, as we did in [exercise 2](#Exercise_2:_Expressions "wikilink"), the exception is actually happening *after* the more interesting part of the program - the loop. As we learned in exercise 2, breakpoints in code that is called repeatedly are annoying, so let's see what we can find by attaching conditions to our breakpoint.
+In addition to the exception stack trace, the program itself appears to have found an invalid object, causing the processing to go unfinished. Although we could set a breakpoint on the exception, as we did in [exercise 2](#Exercise_2:_Expressions), the exception is actually happening *after* the more interesting part of the program - the loop. As we learned in exercise 2, breakpoints in code that is called repeatedly are annoying, so let's see what we can find by attaching conditions to our breakpoint.
 
 First set a breakpoint on the line *after* the `everythingIsOK` assignment:
 
@@ -327,7 +327,7 @@ Exercise 6: Print stack trace
 
 When debugging we're trying to identify why a program isn't behaving as expected. Often this starts in response to an unhandled Java exception, which comes with a helpful stack trace to point us in the right direction. Unfortunately, there are also times when no information as given - such as when the [JVM hangs (gets stuck)](Debugging#Debugging_JVM_hangs) or [crashes without warning](Debugging#Debugging_hard_JVM_crashes). In this exercise we'll look at another way to extract information from our application: by forcing a stack trace to be printed.
 
-As we did [in exercise 4](#Exercise_4:_ImageJ_plugins "wikilink"), the first thing to do is build the `imagej-troubleshooting .jar` and install it in your `ImageJ.app/jars` directory. Then you can start up ImageJ and run the command for this exercise:
+As we did [in exercise 4](#Exercise_4:_ImageJ_plugins), the first thing to do is build the `imagej-troubleshooting .jar` and install it in your `ImageJ.app/jars` directory. Then you can start up ImageJ and run the command for this exercise:
 
     Plugins > Troubleshooting > E6 - Start Looping
 
@@ -392,7 +392,7 @@ Looking at a snippet of the code:
        System.out.println(ObjectMaker.getDoubleArray(size));
     }
 
-We see that objects are being created, but we aren't storing any references to them. They should just be printed and discarded. So presumably one of these methods is doing something nasty, and it's up to us to figure out which by analyzing the heap space. In particular, we want to analyze the heap space *at the time of the error*. `jvisualvm` is used to attach to running Java programs; so we will need to set a breakpoint on the `OutOfMemoryError` itself - similar to what we did in [Exercise 2: Expressions](#Exercise_2:_Expressions "wikilink") - and debug the `E7` program.
+We see that objects are being created, but we aren't storing any references to them. They should just be printed and discarded. So presumably one of these methods is doing something nasty, and it's up to us to figure out which by analyzing the heap space. In particular, we want to analyze the heap space *at the time of the error*. `jvisualvm` is used to attach to running Java programs; so we will need to set a breakpoint on the `OutOfMemoryError` itself - similar to what we did in [Exercise 2: Expressions](#Exercise_2:_Expressions) - and debug the `E7` program.
 
 Once the `OutOfMemoryError` is encountered our breakpoint will trigger. To acquire the heap dump:
 

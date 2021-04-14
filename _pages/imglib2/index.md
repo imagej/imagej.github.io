@@ -44,7 +44,7 @@ There is also a continuous integration system that builds ImgLib2 [every time th
 ImgLib2 vs. ImgLib1
 -------------------
 
-[ImgLib1](ImgLib1_(deprecated) "wikilink") is the previous incarnation of the library. We encourage developers to use ImgLib2 instead, and [migrate existing ImgLib1 programs to ImgLib2](/imglib2/migrate-from-imglib1) whenever possible.
+[ImgLib1](ImgLib1_(deprecated)) is the previous incarnation of the library. We encourage developers to use ImgLib2 instead, and [migrate existing ImgLib1 programs to ImgLib2](/imglib2/migrate-from-imglib1) whenever possible.
 
 For an explanation of how ImgLib2 has changed from ImgLib1, see the [Changes from ImgLib1 to ImgLib2](/imglib2/changes-from-imglib1) page.
 

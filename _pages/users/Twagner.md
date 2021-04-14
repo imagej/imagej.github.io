@@ -15,7 +15,7 @@ description: test description
 -   [IJ Blob](/plugins/ij-blob)
 -   [Ellipse split](/plugins/ellipse-split)
 -   [NanoTrackJ](/plugins/nanotrackj)
--   [Find\_maxima\_(Trackmate\_module)](Find_maxima_(Trackmate_module) "wikilink")
+-   [Find\_maxima\_(Trackmate\_module)](Find_maxima_(Trackmate_module))
 -   [ParticleSizer](/plugins/particlesizer)
 -   [TraJClassifier](/plugins/trajclassifier)
 

@@ -98,7 +98,7 @@ Rapid prototyping with the [Script Editor](/scripting/script-editor)
 ====================================================================
 
 {% include warning-box content='Using the Script Editor for Java development is not currently recommended.  
-For Java development, proceed to the [Getting Started with Maven](#Getting_started_with_Maven "wikilink") section.  
+For Java development, proceed to the [Getting Started with Maven](#Getting_started_with_Maven) section.  
 If you would like to use the script editor, see the sections for the [other supported languages](Scripting#Supported_languages).' %}
 
 <s>There a few good reasons why you should try the [Script Editor](/scripting/script-editor) for rapid prototyping of your plugins or scripts:

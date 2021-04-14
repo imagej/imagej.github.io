@@ -13,7 +13,7 @@ Repositories
 
 You can find the dotfiles in the following repositories:
 
-<table><tbody><tr class="odd"><td style="text-align: center; vertical-align: bottom"><p> <a href="User:Rueden" title="wikilink"><img src="http://gravatar.com/avatar/63df759e2779af56fd050a968ff98d09" width=48 height=48></a><br />
+<table><tbody><tr class="odd"><td style="text-align: center; vertical-align: bottom"><p> <a href="User:Rueden"><img src="http://gravatar.com/avatar/63df759e2779af56fd050a968ff98d09" width=48 height=48></a><br />
 {% include github org='ctrueden' repo='dotfiles' label='ctrueden/dotfiles' %}</p></td><td style="text-align: center; vertical-align: bottom"><p> <a href="SciJava"><img src="/media/Scijava-icon.png" width="48px"/></a><br />
 {% include github org='scijava' repo='dotfiles' label='scijava/dotfiles' %}</p></td><td style="text-align: center; vertical-align: bottom"><p> <a href="/about"><img src="/media/Imagej2-icon.png" width="48px"/></a><br />
 {% include github org='imagej' repo='dotfiles' label='imagej/dotfiles' %}</p></td><td style="text-align: center; vertical-align: bottom"><p> <a href="/orgs/loci"><img src="/media/Loci-logo.png" width="48px"/></a><br />

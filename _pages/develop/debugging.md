@@ -56,7 +56,7 @@ If you require more control over the ImageJ side -- such as picking a semi-rando
 Attach ImageJ to a waiting Eclipse
 ----------------------------------
 
-Instead of making ImageJ [the debugging server](#Attaching_to_ImageJ_instances "wikilink"), when debugging startup events and headless operations it is easier to make ImageJ the client and Eclipse (or equivalent) the server.
+Instead of making ImageJ [the debugging server](#Attaching_to_ImageJ_instances), when debugging startup events and headless operations it is easier to make ImageJ the client and Eclipse (or equivalent) the server.
 
 In this case you start the debugging session first, e.g. in Eclipse debug configurations you specify "Standard (Socket Listen)" as the connection type. Then, simply start ImageJ without the "server=y" flag to connect and debug:
 
@@ -127,7 +127,7 @@ Debugging memory leaks
 
 Sometimes, memory is not released properly, leading to OutOfMemoryExceptions.
 
-One way to find out what is happening is to use `jvisualvm` (see [\#Debugging JVM hangs](#Debugging_JVM_hangs "wikilink")) to connect to the ImageJ process, click on *Heap Dump* in the *Monitor* tab, in said tab select the sub-tab *Classes* and sort by size. Double-clicking on the top user should get you to a detailed list of *Instances* where you can expand the tree of references to find out what is holding a reference still.
+One way to find out what is happening is to use `jvisualvm` (see [\#Debugging JVM hangs](#Debugging_JVM_hangs)) to connect to the ImageJ process, click on *Heap Dump* in the *Monitor* tab, in said tab select the sub-tab *Classes* and sort by size. Double-clicking on the top user should get you to a detailed list of *Instances* where you can expand the tree of references to find out what is holding a reference still.
 
 Debugging hard JVM crashes
 ==========================

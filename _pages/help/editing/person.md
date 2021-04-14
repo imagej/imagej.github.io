@@ -9,7 +9,7 @@ description: this page demonstrates how to use the person include tag.
 ## Usage
 
 Specify a person using either their ImageJ wiki username, or
-[GitHub](GitHub "wikilink") username.
+[GitHub](GitHub) username.
 
 ## Examples
 

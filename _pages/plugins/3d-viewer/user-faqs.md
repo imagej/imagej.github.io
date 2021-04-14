@@ -21,7 +21,7 @@ After you have started the 3D viewer, click on '-&gt;File-&gt;Add content'. A di
 -   **Resampling factor:** Large images require downsampling before displaying, to be rendered interactively. A value of 2 means here that the image is downsampled by a factor of 2 in x-, y- and z-direction.
 -   **Channels:** If displaying color images, this specifies the color channels which are to be displayed.
 
-After clicking OK, the 3D object appears in the viewer window. [Top](#top "wikilink")
+After clicking OK, the 3D object appears in the viewer window. [Top](#top)
 
 ### How to interact with the viewer (rotate, shift, zoom)
 
@@ -35,7 +35,7 @@ The user can rotate, translate and zoom in the 3D space: Two sorts of transforma
 
 #### 2. Transformation of objects:
 
-Individual objects can be transformed with the same key/mouse combinations. To transform a specific object, that object needs to be selected. An object is selected by a single left mouse click. Selection is indicated by a red bounding box. [Top](#top "wikilink")
+Individual objects can be transformed with the same key/mouse combinations. To transform a specific object, that object needs to be selected. An object is selected by a single left mouse click. Selection is indicated by a red bounding box. [Top](#top)
 
 ### How to change the color, transparency... of a 3D object
 
@@ -51,7 +51,7 @@ The attributes can be changed by
 1.  Select the corresponding object by clicking on it
 2.  Click on -&gt; Edit -&gt; Attributes and select the attribute you want to change.
 
-[Top](#top "wikilink")
+[Top](#top)
 
 ### How to make animations and movie recordings
 
@@ -59,13 +59,13 @@ To animate the view, click on -&gt;View-&gt;Start animation. The view begins imm
 
 If you want to include the recording in a presentation, save it via ImageJ's 'Save as AVI' function. You can incorporate the resulting movie file in powerpoint presentations.
 
-To stop an animation, click on -&gt;View-&gt;Stop animation. [Top](#top "wikilink")
+To stop an animation, click on -&gt;View-&gt;Stop animation. [Top](#top)
 
 ### How to reset the view
 
 You can reset the 3D universe to its initial view by clicking on -&gt;View-&gt;Reset View. This resets the view.
 
-Note however, that this does not change the transformation of individual 3D objects. To reset them, too, select each object and click on -&gt;Transformation-&gt;Reset transformation. [Top](#top "wikilink")
+Note however, that this does not change the transformation of individual 3D objects. To reset them, too, select each object and click on -&gt;Transformation-&gt;Reset transformation. [Top](#top)
 
 ### How to hide the coordinate system
 
@@ -75,49 +75,49 @@ For hiding the global coordinate system, have a look at "How to general view set
 
 For hiding the local coordinate system, select the object and click on -&gt;Edit-&gt;Hide/Show and disable 'Show coordinate system'.
 
-See [\#How to general view settings](#How_to_general_view_settings "wikilink") for how you can avoid to show local coordinate systems in general. [Top](#top "wikilink")
+See [\#How to general view settings](#How_to_general_view_settings) for how you can avoid to show local coordinate systems in general. [Top](#top)
 
 ### How to change the background color
 
 To change the background color of the 3D world, click on -&gt;View-&gt;Change background color. A dialog opens, which lets you interactively adjust the background color.
 
-To use the current background color by default, see [\#How to change general view settings](#How_to_change_general_view_settings "wikilink"). [Top](#top "wikilink")
+To use the current background color by default, see [\#How to change general view settings](#How_to_change_general_view_settings). [Top](#top)
 
 Surfaces
 --------
 
 ### What is the idea of a surface
 
-Intuitively, the surface of an object is understood as the border between the object and the background. One common way to find a surface is to choose a threshold which divides object and background: Values above the threshold are assumed to belong to the object, values below are assumed to belong to the background. To construct a surface, an algorithm like the marching cubes algorithm can be utilized. [Top](#top "wikilink")
+Intuitively, the surface of an object is understood as the border between the object and the background. One common way to find a surface is to choose a threshold which divides object and background: Values above the threshold are assumed to belong to the object, values below are assumed to belong to the background. To construct a surface, an algorithm like the marching cubes algorithm can be utilized. [Top](#top)
 
 ### How to change the color, transparency... of a surface
 
-See [\#How to change the color, transparency... of a 3D object](#How_to_change_the_color,_transparency..._of_a_3D_object "wikilink")
+See [\#How to change the color, transparency... of a 3D object](#How_to_change_the_color,_transparency..._of_a_3D_object)
 
 ### How to change the isovalue of a surface
 
-See [\#How to change the color, transparency... of a 3D object](#How_to_change_the_color,_transparency..._of_a_3D_object "wikilink")
+See [\#How to change the color, transparency... of a 3D object](#How_to_change_the_color,_transparency..._of_a_3D_object)
 
 ### How to smooth a surface
 
 In order to smooth the surface of a 3D object, select the object and click on -&gt;Edit-&gt;Smooth surface.
 
-You can also smooth all displayed surfaces by clicking on -&gt;Edit-&gt;Smooth all surfaces [Top](#top "wikilink")
+You can also smooth all displayed surfaces by clicking on -&gt;Edit-&gt;Smooth all surfaces [Top](#top)
 
 ### How to export surfaces
 
-The displayed surfaces can be exported to files in different surface file formats. Currently supported is Wavefront (.obj) and Drawing Interchange Format (.dxf). [Top](#top "wikilink")
+The displayed surfaces can be exported to files in different surface file formats. Currently supported is Wavefront (.obj) and Drawing Interchange Format (.dxf). [Top](#top)
 
 Volumes
 -------
 
 ### What are volumes/volume renderings
 
-A volume rendering generates the 3D effect by putting the slices of a stack one behind another, separated by a certain distance. To each pixel in each slice a transparency value is assigned, which depends on the pixel's brightness. [Top](#top "wikilink")
+A volume rendering generates the 3D effect by putting the slices of a stack one behind another, separated by a certain distance. To each pixel in each slice a transparency value is assigned, which depends on the pixel's brightness. [Top](#top)
 
 ### How to change the color, transparency, ... of a volume
 
-See [\#How to change the color, transparency... of a 3D object](#How_to_change_the_color,_transparency..._of_a_3D_object "wikilink")
+See [\#How to change the color, transparency... of a 3D object](#How_to_change_the_color,_transparency..._of_a_3D_object)
 
 ### How to edit volumes
 
@@ -127,18 +127,18 @@ The 3D viewer offers the possibility to edit volumes. To crop volumes,
 2.  Use one of ImageJ's selection tools to draw a region of interest (ROI).
 3.  Click on -&gt;Edit-&gt;Fill selection to erase the volume which is covered by the ROI. (Erasing means actually filling it with black).
 
-[Top](#top "wikilink")
+[Top](#top)
 
 Orthoslices:
 ------------
 
 ### What are orthoslices
 
-Orthoslices are three orthogonal slices through the volume. The three slices show one xy-plane, one xz-plane and one yz-plane. [Top](#top "wikilink")
+Orthoslices are three orthogonal slices through the volume. The three slices show one xy-plane, one xz-plane and one yz-plane. [Top](#top)
 
 ### How to change the color, transparency, ... of orthoslices
 
-See [\#How to change the color, transparency... of a 3D object](#How_to_change_the_color,_transparency..._of_a_3D_object "wikilink")
+See [\#How to change the color, transparency... of a 3D object](#How_to_change_the_color,_transparency..._of_a_3D_object)
 
 ### How to change the displayed slice
 
@@ -146,11 +146,11 @@ The position of the three slices can be changed. To do so, click on -&gt; Edit -
 
 There exist also keyboard shortcuts to adjust the slices: hold one of the x, y, and z key pressed and use either the arrow keys or mouse scrolling to adjust the slices.
 
-To hide a slice, hold one of the x, y or z key pressed and hit the 'space' bar. [Top](#top "wikilink")
+To hide a slice, hold one of the x, y or z key pressed and hit the 'space' bar. [Top](#top)
 
 ### How to hide a slice
 
-See [\#How to change the displayed slice](#How_to_change_the_displayed_slice "wikilink")
+See [\#How to change the displayed slice](#How_to_change_the_displayed_slice)
 
 2D Surface Plots
 ----------------
@@ -159,34 +159,34 @@ See [\#How to change the displayed slice](#How_to_change_the_displayed_slice "wi
 
 A surface plot displays a 2D slice as a 3D plot: The x- and y-coordinate correspond to the x- and y-coordinate in the 2D slice, the z-coordinate is the pixel value at (x, y).
 
-A 3D surface plot always shows one slice a time. When a 3D surface plot is opened in the viewer, the currently selected slice is displayed. When changing the slice of the original image stack, the view is automatically updated. [Top](#top "wikilink")
+A 3D surface plot always shows one slice a time. When a 3D surface plot is opened in the viewer, the currently selected slice is displayed. When changing the slice of the original image stack, the view is automatically updated. [Top](#top)
 
 ### How to change the color, transparency, ... of surface plots
 
-See [\#How to change the color, transparency... of a 3D object](#How_to_change_the_color,_transparency..._of_a_3D_object "wikilink")
+See [\#How to change the color, transparency... of a 3D object](#How_to_change_the_color,_transparency..._of_a_3D_object)
 
 ### How to interactively change the displayed slice
 
-A 3D surface plot always shows one slice a time. When a 3D surface plot is opened in the viewer, the currently selected slice is displayed. When changing the slice of the original image stack, the view is automatically updated. [Top](#top "wikilink")
+A 3D surface plot always shows one slice a time. When a 3D surface plot is opened in the viewer, the currently selected slice is displayed. When changing the slice of the original image stack, the view is automatically updated. [Top](#top)
 
 View Settings
 -------------
 
 ### How to reset the view
 
-See [\#How to reset the view](#How_to_reset_the_view "wikilink")
+See [\#How to reset the view](#How_to_reset_the_view)
 
 ### How to center a 3D object in the view
 
-In case you have several 3D objects in the 3D window, it is desirable to center the view on one specific object. This is possible by selecting an object (by clicking on it) and click on -&gt;View -&gt; Center selected. [Top](#top "wikilink")
+In case you have several 3D objects in the 3D window, it is desirable to center the view on one specific object. This is possible by selecting an object (by clicking on it) and click on -&gt;View -&gt; Center selected. [Top](#top)
 
 ### How to hide the coordinate system
 
-There are two types of coordinate systems, one global and one locally for each individual 3D object. To hide the local coordinate system of one specific 3D object, see [\#How to hide the coordinate system](#How_to_hide_the_coordinate_system "wikilink"). To hide the global coordinate system, see [\#How to change general view settings](#How_to_change_general_view_settings "wikilink"). [Top](#top "wikilink")
+There are two types of coordinate systems, one global and one locally for each individual 3D object. To hide the local coordinate system of one specific 3D object, see [\#How to hide the coordinate system](#How_to_hide_the_coordinate_system). To hide the global coordinate system, see [\#How to change general view settings](#How_to_change_general_view_settings). [Top](#top)
 
 ### How to change the background color
 
-see [\#How to change the background color](#How_to_change_the_background_color "wikilink")
+see [\#How to change the background color](#How_to_change_the_background_color)
 
 ### How to show a scalebar
 
@@ -199,11 +199,11 @@ To show or edit a scalebar to the 3D view, click on -&gt;View-&gt;Edit scalebar.
 -   **Color:** The color of the scalebar.
 -   **show:** Check/Uncheck this box to show/hide the scalebar.
 
-Clicking OK applies the changes. [Top](#top "wikilink")
+Clicking OK applies the changes. [Top](#top)
 
 ### How to change the center of rotation of global rotations
 
-See [\#How to change general view settings](#How_to_change_general_view_settings "wikilink")
+See [\#How to change general view settings](#How_to_change_general_view_settings)
 
 ### How to change general view settings
 
@@ -213,15 +213,15 @@ Some general view settings can be changed and made permanent by clicking on -&gt
     -   **Width and Height** The window dimensions of the 3D viewer.
     -   **Show global coordinate system** Show a coordinate system which indicates the origin of the 3D world.
     -   **Use current color as default background** Activate this option to reload the current background color at each start of the viewer.
-    -   **Show scalebar** Activate this option to show the scalebar by default. (See also [\#How to show a scalebar](#How_to_show_a_scalebar "wikilink").
+    -   **Show scalebar** Activate this option to show the scalebar by default. (See also [\#How to show a scalebar](#How_to_show_a_scalebar).
     -   **Apply changes now** If activated, the changes in the settings above are immediately applied, otherwise, they are first applied at the next application start.
 2.  Immediately applied options:
     -   **Show local coordinate system by default** If activated, the local coordinate system of 3D objects is shown when new objects are loaded in the 3D viewer. If inactivated, the coordinate system is omitted. Note: This only affects newly added 3D objects. Already displayed objects are not affected.
-    -   **Global rotation around Center/Origin** Global rotations (see [\#How to interact with the viewer (rotate, shift, zoom)](#How_to_interact_with_the_viewer_(rotate,_shift,_zoom) "wikilink")) can have two possible centers:
+    -   **Global rotation around Center/Origin** Global rotations (see [\#How to interact with the viewer (rotate, shift, zoom)](#How_to_interact_with_the_viewer_(rotate,_shift,_zoom))) can have two possible centers:
         -   **Origin:** The origin of the virtual world. This is in most cases the lower left corner of 3D objects. You can make the origin visible by showing the global coordinate system (see above).
         -   **Center:** The center of the virtual world. The center is automatically calculated from the displayed 3D objects.
 
-[Top](#top "wikilink")
+[Top](#top)
 
 Transformations
 ---------------
@@ -230,9 +230,9 @@ Transformations
 
 There are two types of transformations in the 3D viewer: Global transformations and local transformations. Global transformations refer to transformations of the whole view, no individual objects are transformed, but the whole 3D world together. Local transformations refer to transformations of individual objects.
 
-Transformations can be made interactively with the mouse. See [\#How to interact with the viewer (rotate, shift, zoom)](#How_to_interact_with_the_viewer_(rotate,_shift,_zoom) "wikilink") for more information.
+Transformations can be made interactively with the mouse. See [\#How to interact with the viewer (rotate, shift, zoom)](#How_to_interact_with_the_viewer_(rotate,_shift,_zoom)) for more information.
 
-Alternatively, transformations of individual objects can be altered more exactly, by specifying transformations matrices. Transformations can be set for 3D objects, or applied (concatenated with the current transformation) to 3D objects. Transformations can be saved and reloaded. And finally, it is possible to export a transformed object to a stack image. [Top](#top "wikilink")
+Alternatively, transformations of individual objects can be altered more exactly, by specifying transformations matrices. Transformations can be set for 3D objects, or applied (concatenated with the current transformation) to 3D objects. Transformations can be saved and reloaded. And finally, it is possible to export a transformed object to a stack image. [Top](#top)
 
 ### How to apply a specific transformation to a 3D object
 
@@ -249,11 +249,11 @@ Example:
 
 should be specified as "a11 a12 a13 a14 a21 a22 a23 a24 a31 a32 a33 a34" (without the '"').
 
-The window also allows you to load a transformation from a file. [Top](#top "wikilink")
+The window also allows you to load a transformation from a file. [Top](#top)
 
 ### How to set a specific transformation for a 3D object
 
-Setting a transformation of a 3D object does not concatenate transformations. See [\#How to apply a specific transformation to a 3D object](#How_to_apply_a_specific_transformation_to_a_3D_object "wikilink") to concatenate transformations.
+Setting a transformation of a 3D object does not concatenate transformations. See [\#How to apply a specific transformation to a 3D object](#How_to_apply_a_specific_transformation_to_a_3D_object) to concatenate transformations.
 
 To set a transformation, select an object and click on -&gt;Transformation-&gt;Set transform. A window opens, which asks you for a transformation matrix. The matrix is supposed to be given as a (3x4) matrix, row by row. All the individual values should be separated by a space character.
 
@@ -266,7 +266,7 @@ Example:
 
 should be specified as "a11 a12 a13 a14 a21 a22 a23 a24 a31 a32 a33 a34" (without the '"').
 
-The window also allows you to load a transformation from a file. [Top](#top "wikilink")
+The window also allows you to load a transformation from a file. [Top](#top)
 
 ### How can I see the current transformation of a 3D object
 
@@ -281,30 +281,30 @@ Example:
 
 is shown as "a11 a12 a13 a14 a21 a22 a23 a24 a31 a32 a33 a34" (without the '"').
 
-Click 'Cancel' if you don't want to change the transformation. [Top](#top "wikilink")
+Click 'Cancel' if you don't want to change the transformation. [Top](#top)
 
 ### Can I save/reload the current transformation of a 3D object
 
 To save the current transformation of a 3D object, select that object and click on -&gt;Transformation-&gt;Save transform. You can specify a file to which the current transformation is stored.
 
-To load a transformation, click on -&gt;Transformation-&gt;Set transform. In the opening window, you can choose a previously stored transformation file. [Top](#top "wikilink")
+To load a transformation, click on -&gt;Transformation-&gt;Set transform. In the opening window, you can choose a previously stored transformation file. [Top](#top)
 
 ### How to save a transformed object
 
 The 3D viewer allows to load an image stack and display it as a 3D object. This object can be transformed. See e.g.
 
--   [\#How to interact with the viewer (rotate, shift, zoom)](#How_to_interact_with_the_viewer_(rotate,_shift,_zoom) "wikilink")
--   [\#How to apply a specific transformation to a 3D object](#How_to_apply_a_specific_transformation_to_a_3D_object "wikilink")
--   [\#How to set a specific transformation for a 3D object](#How_to_set_a_specific_transformation_for_a_3D_object "wikilink")
+-   [\#How to interact with the viewer (rotate, shift, zoom)](#How_to_interact_with_the_viewer_(rotate,_shift,_zoom))
+-   [\#How to apply a specific transformation to a 3D object](#How_to_apply_a_specific_transformation_to_a_3D_object)
+-   [\#How to set a specific transformation for a 3D object](#How_to_set_a_specific_transformation_for_a_3D_object)
 
-Now such a transformed object can be exported to a stack image again. To do so, click on -&gt;Transformation-&gt;Export transformed image. The resulting stack image can of course also be saved via ImageJ's 'Save as' commands. [Top](#top "wikilink")
+Now such a transformed object can be exported to a stack image again. To do so, click on -&gt;Transformation-&gt;Export transformed image. The resulting stack image can of course also be saved via ImageJ's 'Save as' commands. [Top](#top)
 
 Point Lists
 -----------
 
 ### What is meant by 'point list' and why can they be useful
 
-Point lists represent a list of named points. They can be used for marking regions in/on 3D objects, for example. One particular usage of point lists is the landmark based registration. (See [\#How can two 3D objects be registered](#How_can_two_3D_objects_be_registered "wikilink")). Each 3D object owns a point list. This list is not shown by default, however. [Top](#top "wikilink")
+Point lists represent a list of named points. They can be used for marking regions in/on 3D objects, for example. One particular usage of point lists is the landmark based registration. (See [\#How can two 3D objects be registered](#How_can_two_3D_objects_be_registered)). Each 3D object owns a point list. This list is not shown by default, however. [Top](#top)
 
 ### How to show the point list of an object
 
@@ -313,7 +313,7 @@ There are two ways to show the point list of a 3D object:
 -   Click on -&gt;Edit-&gt;Point list-&gt;Show Point list or
 -   Select ImageJ's point tool and click on a selected object.
 
-In both cases, a window opens which shows a list of named points for the selected object. [Top](#top "wikilink")
+In both cases, a window opens which shows a list of named points for the selected object. [Top](#top)
 
 ### How to add/remove points
 
@@ -330,34 +330,34 @@ To remove a point, either
 -   Press shift and click on the point you want to remove. ImageJ's 'POINT' tool has to be selected for that operation or
 -   Right-click on the point in the point list window and click on 'Remove'.
 
-The point disappears. [Top](#top "wikilink")
+The point disappears. [Top](#top)
 
 ### How to change the position of a point
 
-You can interactively drag the point of interest. ImageJ's 'POINT' tool has to be selected. Click with the left mouse button on the point and drag it to the desired position. [Top](#top "wikilink")
+You can interactively drag the point of interest. ImageJ's 'POINT' tool has to be selected. Click with the left mouse button on the point and drag it to the desired position. [Top](#top)
 
 ### How to save a point list to file and how to reload it
 
-Point lists can be stored to file and be reloaded. To do so, select an object and click on -&gt; Edit -&gt; Point list -&gt; Save Point list or on -&gt;Edit-&gt;Point list-&gt;Load Point list respectively. Choose the file containing the point lists. [Top](#top "wikilink")
+Point lists can be stored to file and be reloaded. To do so, select an object and click on -&gt; Edit -&gt; Point list -&gt; Save Point list or on -&gt;Edit-&gt;Point list-&gt;Load Point list respectively. Choose the file containing the point lists. [Top](#top)
 
 ### How to highlight a point from the list in the 3D view
 
-Sometimes, one wishes to know where a particular point from the point list window is located in the 3D world. To highlight a point from the point list window, just left-click on it. It gets animated then. [Top](#top "wikilink")
+Sometimes, one wishes to know where a particular point from the point list window is located in the 3D world. To highlight a point from the point list window, just left-click on it. It gets animated then. [Top](#top)
 
 ### How to hide the points
 
-To hide the points, click on -&gt;Edit-&gt;Point List-&gt;Hide Point list. The point list window is closed automatically. [Top](#top "wikilink")
+To hide the points, click on -&gt;Edit-&gt;Point List-&gt;Hide Point list. The point list window is closed automatically. [Top](#top)
 
 ### How to close the list window
 
-To hide the points, click on -&gt;Edit-&gt;Point List-&gt;Hide Point list. The point list window is closed automatically. [Top](#top "wikilink")
+To hide the points, click on -&gt;Edit-&gt;Point List-&gt;Hide Point list. The point list window is closed automatically. [Top](#top)
 
 Registration
 ------------
 
 ### Which kinds of registration is supported
 
-At the moment, only rigid landmark-based registration is supported. [Top](#top "wikilink")
+At the moment, only rigid landmark-based registration is supported. [Top](#top)
 
 ### How can two 3D objects be registered
 
@@ -365,10 +365,10 @@ To initiate registration, load at least two objects into the viewer and click on
 
 You are now guided step by step through landmark selection of model and reference image and through the registration process.
 
-Please note that the images are locked after registration, to prevent unintended user interaction. To be able to transform the objects again, select each of them and inactivate -&gt;Transformation-&gt;Lock [Top](#top "wikilink")
+Please note that the images are locked after registration, to prevent unintended user interaction. To be able to transform the objects again, select each of them and inactivate -&gt;Transformation-&gt;Lock [Top](#top)
 
 ### How can the results be saved
 
-See [\#How to save a transformed object](#How_to_save_a_transformed_object "wikilink")
+See [\#How to save a transformed object](#How_to_save_a_transformed_object)
 
-[Top](#top "wikilink")
+[Top](#top)

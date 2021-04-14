@@ -28,14 +28,14 @@ Example:
 Replace Red with Magenta (system clipboard)
 -------------------------------------------
 
-Frequently all you [want](#Why.3F "wikilink") to do is to replace red by magenta in some images in a text document or a presentation. With this function, you only need to copy the image into the system clipboard in the other program, call this plugin in Fiji, and then you can paste the corrected image in the other program.
+Frequently all you [want](#Why.3F) to do is to replace red by magenta in some images in a text document or a presentation. With this function, you only need to copy the image into the system clipboard in the other program, call this plugin in Fiji, and then you can paste the corrected image in the other program.
 
 Why?
 ----
 
 8% of the male population is red-green blind. If given the task to find two colors maximizing the number of people who cannot see the difference, red and green are a wise choice. Yet, still way too many figures in scientific publications show red/green merges.
 
-At least magenta/green images help this situation. However, [the only thing human eyes can quantify are numbers](Spirals_(Macro) "wikilink").
+At least magenta/green images help this situation. However, [the only thing human eyes can quantify are numbers](Spirals_(Macro)).
 
 As a demonstration, call Fiji's {% include bc path='File | Open Samples | Spirals'%} and if you see a bright green and a bright yellow in the dominant spirals, you should look closer.
 

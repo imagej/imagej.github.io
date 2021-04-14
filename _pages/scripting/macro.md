@@ -16,7 +16,7 @@ Macros can be used to
 -   add tools to the toolbar
 -   add keyboard shortcuts
 
-{% include info-box message='Please be aware that there are several other available [scripting](/scripting) languages that are more powerful than macros, too! See the sidebar on the right, as well as the [Overcoming limitations](#Overcoming_limitations "wikilink") section below.' %}
+{% include info-box message='Please be aware that there are several other available [scripting](/scripting) languages that are more powerful than macros, too! See the sidebar on the right, as well as the [Overcoming limitations](#Overcoming_limitations) section below.' %}
 
 Variables
 =========
@@ -120,7 +120,7 @@ For recurring tasks, you can define your own functions:
             close();
     }
 
-Note that the *title* is just another [variable](#Variables "wikilink"), which is implicitly assigned when the function is called. In other words, this call will execute the code in above definition, with the variable *title* set to *My pretty new image*:
+Note that the *title* is just another [variable](#Variables), which is implicitly assigned when the function is called. In other words, this call will execute the code in above definition, with the variable *title* set to *My pretty new image*:
 
     closeImageByTitle("My pretty new image");
 
@@ -255,7 +255,7 @@ The parameters passed to *Merge Channels...* depend very much on the current ima
     run("Merge Channels...",
          "red=[Edges of " + title + "] green=" + title + " blue=" + title + " gray=*None*");
 
-Note that we need to use string concatenation in order to insert the current image's name in place of *boats.gif*, as described in [above](#Using_variables "wikilink").
+Note that we need to use string concatenation in order to insert the current image's name in place of *boats.gif*, as described in [above](#Using_variables).
 
 In order to allow spaces in the name, you might also want to add extra *\[...\]* around the title:
 

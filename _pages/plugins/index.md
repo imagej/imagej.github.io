@@ -25,7 +25,7 @@ There are four tiers of plugins:
 Installing plugins
 ------------------
 
-The ImageJ [Updater](/plugins/updater) is the best way to install and update plugins. Simply [add the update site](/update-sites) containing your plugins of interest, and they will be installed automatically for you. If the plugin is not available via update site, but packaged as *.jar* file, or as unpackaged directory with *.class* files, see [Installing plugins manually](#Installing_plugins_manually "wikilink") below.
+The ImageJ [Updater](/plugins/updater) is the best way to install and update plugins. Simply [add the update site](/update-sites) containing your plugins of interest, and they will be installed automatically for you. If the plugin is not available via update site, but packaged as *.jar* file, or as unpackaged directory with *.class* files, see [Installing plugins manually](#Installing_plugins_manually) below.
 
 Advanced topics
 ---------------

@@ -28,7 +28,7 @@ Several [tags](https://registry.hub.docker.com/u/fiji/fiji/tags/manage/) are pro
 
 ` No GUI detected.  Falling back to headless mode.`
 
-The following sections cover [headless](#Running_headless "wikilink") and [graphical](#Running_the_UI "wikilink") uses.
+The following sections cover [headless](#Running_headless) and [graphical](#Running_the_UI) uses.
 
 Running headless
 ================

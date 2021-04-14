@@ -47,7 +47,7 @@ Aplim T1/T2/M0 maps importer
 
 This plugin compute M0, T1 and T2 maps pixelwise from a given set of spin-echo sequences, acquired with different repetition times and/or different echo times.
 
-First a 3d registration is computed to align precisely the successive images, using libraries of the \[Fijiyama\] plugin. Then the rice noise level is estimated, and the M0, T1 and T2 parameters are estimated, fitting mono or bi-exponential curves, corrected with the measured rice noise (reference : [https://onlinelibrary.wiley.com/doi/full/10.1002/mrm.22178 \[Raya et al., 2010](https://onlinelibrary.wiley.com/doi/full/10.1002/mrm.22178_[Raya_et_al.,_2010 "wikilink")\].
+First a 3d registration is computed to align precisely the successive images, using libraries of the \[Fijiyama\] plugin. Then the rice noise level is estimated, and the M0, T1 and T2 parameters are estimated, fitting mono or bi-exponential curves, corrected with the measured rice noise (reference : [https://onlinelibrary.wiley.com/doi/full/10.1002/mrm.22178 \[Raya et al., 2010](https://onlinelibrary.wiley.com/doi/full/10.1002/mrm.22178_[Raya_et_al.,_2010)\].
 
 ### Preparing your data
 

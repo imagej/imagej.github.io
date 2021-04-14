@@ -33,7 +33,7 @@ The Stitching package comes with 4 different plugins:
 -   **[ Stitch Grid of Images](Stitching_2D_3D#Stitch_Grid_of_Images)**: Stitch an arbitrary number of 2D or 3D images which are arranged in a regular grid (e.g. 4 x 3 images with roughly 10% overlap)
 -   **[ Stitch Image Grid Sequence](Stitching_2D_3D#Stitch_Image_Grid_Sequence)**: Stitch a sequence of 2D or 3D regular grids of images.
 -   **[ Stitch Collection of Images](Stitching_2D_3D#Stitch_Collection_of_Images)**: Stitch an arbitrary number of 2D or 3D images which do not have to be in a regular grid. The rough initial configuration (which image is overlapping another one) is given in tile configuration file.
--   **[ Stitch Directory with Images (unknown configuration)](Stitching_2D_3D#Stitch_Directory_with_Images_(unknown_configuration) "wikilink")**: Stitch all images that are located in a given directory without any knowledge of the tile configuration.
+-   **[ Stitch Directory with Images (unknown configuration)](Stitching_2D_3D#Stitch_Directory_with_Images_(unknown_configuration))**: Stitch all images that are located in a given directory without any knowledge of the tile configuration.
 
 2D Stitching and 3D Stitching
 -----------------------------

@@ -73,7 +73,7 @@ Validate with the **Unpair** button.
 To saved tree information, two possible formats :
 
 -   **.treeV** home made format, compatible as input of TreeJ. Contains tree and tag information
--   **.nwk** [http://evolution.genetics.washington.edu/phylip/newicktree.html newick tree](http://evolution.genetics.washington.edu/phylip/newicktree.html_newick_tree "wikilink"), compatible as input of TreeJ, but contains only the tree information
+-   **.nwk** [http://evolution.genetics.washington.edu/phylip/newicktree.html newick tree](http://evolution.genetics.washington.edu/phylip/newicktree.html_newick_tree), compatible as input of TreeJ, but contains only the tree information
 
 The drawing tree can be exported to a PDF file (named with the input image name) with the **Export to PDF** button.
 

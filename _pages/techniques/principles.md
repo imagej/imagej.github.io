@@ -168,7 +168,7 @@ Their limitations notwithstanding, the **advantages of automatic binarization me
 
 1.  they are fully [reproducible](/Architecture#Reproducible_builds) (on the same image they will always lead to the same binarization result)
 2.  they introduce no user bias during thresholding (this is not related to bias associated with the choice of specific automatic algorithm, which does exist)
-3.  they use objectively determined cut-off values to minimize some variability in images being compared (e.g., algorithms that react to each image's histogram often extract features deemed superior to features extracted using fixed values; but again, see the [above note](#trainingbias "wikilink") on a priori training of segmentation methods)
+3.  they use objectively determined cut-off values to minimize some variability in images being compared (e.g., algorithms that react to each image's histogram often extract features deemed superior to features extracted using fixed values; but again, see the [above note](#trainingbias) on a priori training of segmentation methods)
 4.  they reduce preprocessing because they are easy applied to image stacks with variability between individual image histograms or in the complete stack histogram
 5.  they are fast (no fiddling) and can be automated (e.g., in macros, plugins, batch jobs, etc.)
 

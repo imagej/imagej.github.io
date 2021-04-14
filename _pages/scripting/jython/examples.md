@@ -47,7 +47,7 @@ Within the interpreter, all ImageJ, java.lang.\* and TrakEM2 classes are automat
 
     from java.io import File
 
-Where `java.io.File` is the class to be imported. See also section [Importing other *.py* scripts (modules)](#Importing_other_.py_scripts_.28modules.29 "wikilink") for importing user python modules.
+Where `java.io.File` is the class to be imported. See also section [Importing other *.py* scripts (modules)](#Importing_other_.py_scripts_.28modules.29) for importing user python modules.
 
 ### Workflow for creating Jython scripts
 

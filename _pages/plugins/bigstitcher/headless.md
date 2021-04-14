@@ -22,7 +22,7 @@ Clicking {% include bc path='Plugins|Macros|Record...'%} in the Fiji will bring 
 
 In the following example, we performed the following macro-recordable steps of BigStitcher:
 
--   Import a dataset (available [here](BigStitcher#3D_multi-tile_dataset_(123_MB) "wikilink")), arange the tiles into a regular grid and re-save the data as HDF5.
+-   Import a dataset (available [here](BigStitcher#3D_multi-tile_dataset_(123_MB))), arange the tiles into a regular grid and re-save the data as HDF5.
 -   Perform pairwise shift calculation via Phase correlation, filter the links by thresholding on the correlation coefficient and globally optimize the alignment.
 -   Fuse the Tiles and save the results as TIFF
 

@@ -507,7 +507,7 @@ Orientation
 
 Menu path: {% include bc path="Plugins | BoneJ | Orientation" %}
 
-Sets the direction in a 2D image, without rotating the image or changing it in any way. [*Slice Geometry*](#Slice_geometry "wikilink") optionally uses *Orientation* to calculate diameter, second moments of area and section moduli around anatomic axes set by the user. To apply the selected orientation to a *Slice Geometry* analysis, run *Orientation*, select axes and direction, leave the *Orientation* window open, run *Slice Geometry*, and select *Use Orientation*.
+Sets the direction in a 2D image, without rotating the image or changing it in any way. [*Slice Geometry*](#Slice_geometry) optionally uses *Orientation* to calculate diameter, second moments of area and section moduli around anatomic axes set by the user. To apply the selected orientation to a *Slice Geometry* analysis, run *Orientation*, select axes and direction, leave the *Orientation* window open, run *Slice Geometry*, and select *Use Orientation*.
 
 The option to use *Orientation* will be greyed out in *Slice Geometry* if there is no active *Orientation* window. Also, in the Results table you will see a list of results that relate to the particular axis pair you have chosen. *Orientation* can handle multiple open images and will handle different images' orientation independently.
 
@@ -692,7 +692,7 @@ A 2D or 3D binary image.
 -   **3D Annotation**: Display the stack, principal axes and centroids in the 3D viewer
 -   **Process Stack**: Calculate parameters for all slices in the stack
 -   **Clear Results**: Remove all data in the results table without saving, prior to calculating parameters
--   **Use Orientation**: Also calculate parameters based on directions defined in [Orientation](#Orientation "wikilink")
+-   **Use Orientation**: Also calculate parameters based on directions defined in [Orientation](#Orientation)
 -   **HU Calibrated**: Allows you to enter your thresholds in Hounsfield units (HU) or uncalibrated units
 -   **Bone Min**: minimum pixel value to use in calculations
 -   **Bone Max**: maximum pixel value to use in calculations
@@ -873,4 +873,4 @@ We recommend you cite the specific [release](https://github.com/bonej-org/BoneJ2
 Funding
 -------
 
-The redesign and porting effort to create BoneJ2 was supported by a [Wellcome Trust Biomedical Resource and Technology Development Grant](https://wellcome.ac.uk/grant-funding/people-and-projects/grants-awarded/bonej2-fullfeatured-nextgeneration-bonej-standardised). Interaction with [SciView](/plugins/sciview) was assisted by a [Royal Society International Exchange grant](https://royalsociety.org/grants-schemes-awards/grants/international-exchanges/). [*Ellipsoid Factor*](#Ellipsoid_factor "wikilink") validation and improvements were funded by the UK [BBSRC](https://bbsrc.ukri.org/research/grants-search/AwardDetails/?FundingReference=BB%2fP006167%2f1).
+The redesign and porting effort to create BoneJ2 was supported by a [Wellcome Trust Biomedical Resource and Technology Development Grant](https://wellcome.ac.uk/grant-funding/people-and-projects/grants-awarded/bonej2-fullfeatured-nextgeneration-bonej-standardised). Interaction with [SciView](/plugins/sciview) was assisted by a [Royal Society International Exchange grant](https://royalsociety.org/grants-schemes-awards/grants/international-exchanges/). [*Ellipsoid Factor*](#Ellipsoid_factor) validation and improvements were funded by the UK [BBSRC](https://bbsrc.ukri.org/research/grants-search/AwardDetails/?FundingReference=BB%2fP006167%2f1).

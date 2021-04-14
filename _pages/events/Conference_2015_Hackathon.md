@@ -150,7 +150,7 @@ We had a group lunch on Wednesday, September 9 from noon - 1pm. (There was singl
 
 ### Saturday, September 12 - Tuesday, September 15
 
-Room 224 [Animal Sciences](http://ansci.wisc.edu/), 1675 Observatory Dr. [http://maps.google.com/maps?q=1675+Observatory+Drive,+Madison,+WI See map](http://maps.google.com/maps?q=1675+Observatory+Drive,+Madison,+WI_See_map "wikilink")
+Room 224 [Animal Sciences](http://ansci.wisc.edu/), 1675 Observatory Dr. [http://maps.google.com/maps?q=1675+Observatory+Drive,+Madison,+WI See map](http://maps.google.com/maps?q=1675+Observatory+Drive,+Madison,+WI_See_map)
 
 The hackathon formally concluded on September 15 at 3:30pm.
 

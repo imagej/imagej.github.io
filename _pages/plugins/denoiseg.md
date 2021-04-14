@@ -82,7 +82,7 @@ Please note: You may not use this training data to segment your images. You need
     -   <b>`Patch shape`</b> The length of X, Y (and Z) of one training patch (needs to be a multiple of 16)
     -   <b>`Neighborhood radius`</b> N2V specific parameter describing the distance of the neighbor pixel replacing the center pixel
 3.  Click `Ok`
-4.  Look below at the [What happens during and after training](#What_happens_during_and_after_training "wikilink") section for what happens next
+4.  Look below at the [What happens during and after training](#What_happens_during_and_after_training) section for what happens next
 
 ### Train & predict plugin (one-click solution)
 
@@ -93,9 +93,9 @@ Please note: You may not use this training data to segment your images. You need
 3.  Click on `Plugins > CSBDeep > DenoiSeg > DenoiSeg train & predict` and adjust the following parameters:
     -   <b>`Raw prediction input image`</b> Choose the image which should be denoised and segmented after training
     -   <b>`Axes of prediction input`</b> This parameter helps to figure out how your input data is organized. It's a string with one letter per dimension of the input image. For 2D images, this should be `XY`. If your data has another axis which should be batch processed, set this parameter to `XYB`
-    -   Regarding the other parameters please have a look at the descriptions in [Train plugin](#Train_plugin "wikilink")
+    -   Regarding the other parameters please have a look at the descriptions in [Train plugin](#Train_plugin)
 4.  Click `Ok`
-5.  Look below at the [What happens during and after training](#What_happens_during_and_after_training "wikilink") section for what happens next
+5.  Look below at the [What happens during and after training](#What_happens_during_and_after_training) section for what happens next
 
 What happens during and after training
 --------------------------------------
@@ -153,7 +153,7 @@ It's possible to train a DenoiSeg neural network using Python. The required code
 
 1.  In Python, run this at the end of your training: `mode.export_TF()`.
 2.  Locate the exported model file
-3.  Proceed as described in [Prediction](#Prediction "wikilink")
+3.  Proceed as described in [Prediction](#Prediction)
 
 Creating labelings for the training
 ===================================

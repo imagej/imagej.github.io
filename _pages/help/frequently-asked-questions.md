@@ -139,7 +139,7 @@ Downgrading is generally not recommended as a long-term solution, but can be han
 *If you need to downgrade to avoid a critical bug, please [report that bug](/help/report-a-bug) to the developers so that it can be fixed in a future version!*
 
 -   You can change the version of [ImageJ 1.x](/software/imagej1) used via the {% include bc path='Help | Update ImageJ...'%} menu item. This *only* changes the version of ImageJ 1.x—not all ImageJ components, [plugins](/fiji/plugins), etc.
--   You can [switch to a different version of Java](#How_do_I_launch_ImageJ_with_a_different_version_of_Java? "wikilink").
+-   You can [switch to a different version of Java](#How_do_I_launch_ImageJ_with_a_different_version_of_Java?).
 -   You can [download a Fiji Life-Line version](Downloads#Fiji).
 
 Lastly, if you have not yet upgraded, and have a currently working configuration, you can make a backup copy of your ImageJ folder before upgrading. Then if the upgrade has undesirable consequences, switch back to the old copy.
@@ -527,7 +527,7 @@ Yes. Java is one of the [most popular programming languages](http://langpop.com/
 Why does ImageJ still target Java 6?
 ------------------------------------
 
-As of June 2014, around 19% of macOS systems still run version 10.6 Snow Leopard or older [http://www.netmarketshare.com/ 1](http://www.netmarketshare.com/_1 "wikilink"). (In December 2013, it was around 25%.) Unfortunately, Apple and the OpenJDK developer community decided to target OS X 10.7 Lion and above for Java 7 and 8. For the time being, to avoid abandoning older machines which cannot be upgraded from Snow Leopard, ImageJ continues to target Java 6.
+As of June 2014, around 19% of macOS systems still run version 10.6 Snow Leopard or older [http://www.netmarketshare.com/ 1](http://www.netmarketshare.com/_1). (In December 2013, it was around 25%.) Unfortunately, Apple and the OpenJDK developer community decided to target OS X 10.7 Lion and above for Java 7 and 8. For the time being, to avoid abandoning older machines which cannot be upgraded from Snow Leopard, ImageJ continues to target Java 6.
 
 Furthermore, updating the required version to a newer version of Java would necessitate improvements to the ImageJ [Updater](/plugins/updater) such that it could also update the bundled version of Java, which would be a substantial undertaking. Otherwise, most existing installations of ImageJ would stop working, and those users would need to download ImageJ from scratch again.
 

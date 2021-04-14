@@ -27,7 +27,7 @@ As ImageJ is built using the [SciJava principles of project management](/develop
 
 Additionally, at a minimum, you should clone the {% include github org='imagej' repo='tutorials' label='imagej/tutorials repository' %}. This will give you a local copy of the tutorials discussed in this guide, as well as templates for use in your own development.
 
-For the complete "developer experience", you can go through the [GitHub Bootcamp](https://help.github.com/categories/bootcamp/). At the least, once you've [created your own repository](https://help.github.com/articles/create-a-repo/) and cloned a local copy, you will have a home ready for when your [very own plugin](#Starting_your_own_plugin "wikilink") arrives!
+For the complete "developer experience", you can go through the [GitHub Bootcamp](https://help.github.com/categories/bootcamp/). At the least, once you've [created your own repository](https://help.github.com/articles/create-a-repo/) and cloned a local copy, you will have a home ready for when your [very own plugin](#Starting_your_own_plugin) arrives!
 
 What is a "plugin"?
 -------------------
@@ -80,7 +80,7 @@ References to all the `@Plugin`-annotated classes that are discovered are contai
 
 In ImageJ, a `Context` is automatically created when {% include github org='imagej' repo='imagej' tag='imagej-2.0.0-rc-39' source='net/imagej/ImageJ.java' label='the application starts up' %}, so plugin developers do not need to create their own. In fact, creating your own `Context` typically causes problems, as it will be a different container than ImageJ is using. Instead, plugin instances within a common `Context` are provided automatically by the framework—you just have to ask.
 
-Typically, ImageJ plugin developers will be writing [Service](#Services "wikilink") and/or [Command](#Commands "wikilink") plugins. If you need to use another plugin - for example the {% include github org='scijava' repo='scijava-common' tag='scijava-common-2.47.0' source='org/scijava/log/LogService.java' label='LogService' %} - you **should not** manually create it as this effectively disconnects you from your `Context` (Your [Service](#Services "wikilink") and/or [Command](#Commands "wikilink") plugins are created by the application container and managed by the plugin framework automatically). Instead, you should ask your `Context` for an instance by adding a field of the desired type and annotating it with the {% include github org='scijava' repo='scijava-common' tag='scijava-common-2.47.0' source='org/scijava/plugin/Parameter.java' label='@Parameter annotation' %}. For example:
+Typically, ImageJ plugin developers will be writing [Service](#Services) and/or [Command](#Commands) plugins. If you need to use another plugin - for example the {% include github org='scijava' repo='scijava-common' tag='scijava-common-2.47.0' source='org/scijava/log/LogService.java' label='LogService' %} - you **should not** manually create it as this effectively disconnects you from your `Context` (Your [Service](#Services) and/or [Command](#Commands) plugins are created by the application container and managed by the plugin framework automatically). Instead, you should ask your `Context` for an instance by adding a field of the desired type and annotating it with the {% include github org='scijava' repo='scijava-common' tag='scijava-common-2.47.0' source='org/scijava/plugin/Parameter.java' label='@Parameter annotation' %}. For example:
 
     @Plugin
     public class MyPlugin {
@@ -137,11 +137,11 @@ Services often build on or reuse functionality defined in each other. For exampl
 
 ### Commands
 
-Whereas [Services](#Services "wikilink") provide internal functionality, `Commands` are plugins designed to be executed as one-offs, typically interacting with users to achieve some desired outcome. When opening the ImageJ GUI, Commands are what populate your menu structure: exposing functionality and algorithms in a way that can be consumed by non-developers.
+Whereas [Services](#Services) provide internal functionality, `Commands` are plugins designed to be executed as one-offs, typically interacting with users to achieve some desired outcome. When opening the ImageJ GUI, Commands are what populate your menu structure: exposing functionality and algorithms in a way that can be consumed by non-developers.
 
 When writing `Commands` you will often declare {% include github org='scijava' repo='scijava-common' tag='scijava-common-2.47.0' source='org/scijava/plugin/Parameter.java' label='@Parameters' %} on fields that **can not** be resolved automatically by the `Context`—for example, numeric values or file paths. Instead of being instantiated at `Context` startup as a `Service` would be, `Commands` are created and executed on demand.
 
-When a `Command` is executed, it goes through a series of pre-processing steps to populate its `@Parameters` using its associated [Context](#The_Context "wikilink"). If any parameters are left unresolved and a UI is available, the framework will automatically build and display an appropriate dialog to get user input. In this way, input harvesting is decoupled from functional operation—allowing developers to focus on what's really important without repetition of code. This also means that Commands can typically run [headlessly](/learn/headless) without any extra development effort.
+When a `Command` is executed, it goes through a series of pre-processing steps to populate its `@Parameters` using its associated [Context](#The_Context). If any parameters are left unresolved and a UI is available, the framework will automatically build and display an appropriate dialog to get user input. In this way, input harvesting is decoupled from functional operation—allowing developers to focus on what's really important without repetition of code. This also means that Commands can typically run [headlessly](/learn/headless) without any extra development effort.
 
 A common pattern in `Command` development is to wrap `Service` functionality. For example, opening an image from a path is a fundamental operation in ImageJ. To this end, developers can directly use the {% include github org='scifio' repo='scifio' tag='scifio-0.25.0' source='io/scif/services/DatasetIOService.java' label='DatasetIOService' %}. Users then get this same functionality from the menus via the {% include github org='imagej' repo='imagej-plugins-commands' tag='imagej-plugins-commands-0.6.0' source='net/imagej/plugins/commands/io/OpenDataset.java' label='OpenDataset command' %}—which itself simply calls into the `DatasetIOService`.
 
@@ -162,7 +162,7 @@ If you know the function you want to modify but can't determine its location in 
 Example projects
 ----------------
 
-Remember the {% include github org='imagej' repo='tutorials' label='imagej/tutorials repository' %} we [said you should clone](#Requirements "wikilink")? Now's the time to put it to use!
+Remember the {% include github org='imagej' repo='tutorials' label='imagej/tutorials repository' %} we [said you should clone](#Requirements)? Now's the time to put it to use!
 
 Because the ImageJ API is designed to be maximally flexible and extensible, if you're just getting started with development it can be overwhelming to figure out exactly which part of the code base you should be working on. The `imagej/tutorials` repository contains a selection of minimal projects illustrating how your own project(s) could be structured to perform common tasks. Most of these projects also have extensive documentation via comments in the code, to highlight particular functions and use cases.
 
@@ -195,7 +195,7 @@ These projects provide minimal examples with thorough online documentation.
 
 -   [example-imagej-command](https://github.com/imagej/example-imagej-command) - A minimal template for an ImageJ command plugin
 -   Look at some [simple commands](https://github.com/imagej/tutorials/tree/master/maven-projects/simple-commands/src/main/java) and see how they interact with users
--   [Getting started with modules](https://github.com/imagej/tutorials/tree/master/maven-projects/working-with-modules/src/main/java)—the foundation of many user-facing plugin types, including [commands](#Commands "wikilink")
+-   [Getting started with modules](https://github.com/imagej/tutorials/tree/master/maven-projects/working-with-modules/src/main/java)—the foundation of many user-facing plugin types, including [commands](#Commands)
 
 ### Targeted tasks
 
@@ -241,11 +241,11 @@ If you are **implementing** an existing plugin type...
 
 ### Adopt an existing project
 
-You already [created your own GitHub repository](#Requirements "wikilink"), right??
+You already [created your own GitHub repository](#Requirements), right??
 
 When you're just getting started with tools like [Git](Git) and [Maven](/develop/maven), it's not easy to comprehend the nuances of how new projects should be set up and configured. It's much easier to copy a working project to use as a starting point and go from there.
 
-The [example projects](#Example_projects "wikilink") are designed precisely to serve as such starting points for new projects. Once you have a solid idea of what kind of plugin you want to write, pick the project that discusses your area of choice and simply copy it to your own GitHub repo. From there, you can make changes as needed.
+The [example projects](#Example_projects) are designed precisely to serve as such starting points for new projects. Once you have a solid idea of what kind of plugin you want to write, pick the project that discusses your area of choice and simply copy it to your own GitHub repo. From there, you can make changes as needed.
 
 At this point, if you haven't already, we **STRONGLY RECOMMEND** importing your project into an [IDE](/develop/ides) like [Eclipse](/develop/eclipse). This will make [development](/develop/eclipse) and [refactoring](http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fref-menu-refactor.htm) much easier. Modern IDEs also have excellent [Git](Git) and [Maven](/develop/maven) integration, which will allow you to take advantage of the fact that the example projects are already set up as Mavenized Git repositories.
 

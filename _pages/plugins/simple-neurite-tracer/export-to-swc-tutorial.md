@@ -8,7 +8,7 @@ description: test description
 {% include sntdeprecation%}
 
 
-This short tutorial shows you how to export a connected set of paths in the [Simple Neurite Tracer](/plugins/snt) plugin to an SWC file. This may be useful for analyzing a structure in other tools (e.g. [L-measure](http://cng.gmu.edu:8080/Lm/)) or uploading to a database like [NeuroMorpho.org](http://neuromorpho.org/). (n.b. for use in L-measure you will have to set the SWC type for each path - see [\#Setting\_the\_SWC\_point\_types](#Setting_the_SWC_point_types "wikilink"))
+This short tutorial shows you how to export a connected set of paths in the [Simple Neurite Tracer](/plugins/snt) plugin to an SWC file. This may be useful for analyzing a structure in other tools (e.g. [L-measure](http://cng.gmu.edu:8080/Lm/)) or uploading to a database like [NeuroMorpho.org](http://neuromorpho.org/). (n.b. for use in L-measure you will have to set the SWC type for each path - see [\#Setting\_the\_SWC\_point\_types](#Setting_the_SWC_point_types))
 
 Export all connected path sets as SWC files
 -------------------------------------------

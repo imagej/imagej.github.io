@@ -48,7 +48,7 @@ If the file is not hosted by any other active update site you need to tell the u
 1.  Delete the file locally
 2.  Start the [updater](/plugins/updater) and click the *Advanced mode* button.
 3.  Select the *View files of the '\[your site name here\]*' option.
-4.  The updater will see the file is missing and automatically flag it "**Install it**". You need to right-click the file and change it to "**Keep as-is**". See [Why don't I have an upload option?](#Why_don't_I_have_an_upload_option? "wikilink") below for an explanation.
+4.  The updater will see the file is missing and automatically flag it "**Install it**". You need to right-click the file and change it to "**Keep as-is**". See [Why don't I have an upload option?](#Why_don't_I_have_an_upload_option?) below for an explanation.
 5.  Right-click the deleted file again and choose "**Mark obsolete**".
 6.  Click "**Apply changes (upload)**" to finalize the deletion.
 

@@ -21,15 +21,15 @@ Each node of this cluster runs CentOS 6.3 Linux distribution. The queuing system
 
 The SPIM registration is a piece of software that undergoes ongoing development. The original version gathered under plugins *SPIM registration* has been replaced in 2014 by new set of plugins gathered under *Multiview reconstruction*. Moreover, the cluster pipeline has been changed to use a centralised Linux style master file. In 2015 this pipeline was reimplemented as **[automated workflow](Automated_workflow_for_parallel_Multiview_Reconstruction)** using the workflow manager **\[https://bitbucket.org/johanneskoester/snakemake/wiki/Home. Snakemake\]**. Which allows to map and dispatch the workflow logic automatically either on a single maschine or on a HPC cluster. Therefore there are 4 versions available. We highly recommend using the latest version:
 
--   [Original SPIM registration pipeline](#Original_SPIM_registration_pipeline "wikilink") - contains the most detailed description of the cluster pipeline using *SPIM registration* plugins. If you do not have much HPC/Linux experience start here.
+-   [Original SPIM registration pipeline](#Original_SPIM_registration_pipeline) - contains the most detailed description of the cluster pipeline using *SPIM registration* plugins. If you do not have much HPC/Linux experience start here.
 
 <!-- -->
 
--   [NEW PIPELINE](#NEW_PIPELINE "wikilink") - also uses *SPIM registration* plugins and introduces the master file, less verbose requiring some experience with command line and HPC.
+-   [NEW PIPELINE](#NEW_PIPELINE) - also uses *SPIM registration* plugins and introduces the master file, less verbose requiring some experience with command line and HPC.
 
 <!-- -->
 
--   [New Multiview Reconstruction pipeline](#New_Multiview_Reconstruction_pipeline "wikilink") - builds on *Multiview Reconstruction* plugins, uses master file, written for experts
+-   [New Multiview Reconstruction pipeline](#New_Multiview_Reconstruction_pipeline) - builds on *Multiview Reconstruction* plugins, uses master file, written for experts
 
 <!-- -->
 

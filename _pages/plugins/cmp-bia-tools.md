@@ -19,7 +19,7 @@ All source codes are publicly available as Maven project (see the {% include git
 
 Note, all included methods are mainly related to medical imaging but it can be also used in the fields.
 
-Please note that these plugins available through Fiji, is based on publications. If you use it successfully for your research please be so kind to cite our related work in [References](#References "wikilink").
+Please note that these plugins available through Fiji, is based on publications. If you use it successfully for your research please be so kind to cite our related work in [References](#References).
 
 **Center for Machine Perception** ([CMP](http://cmp.felk.cvut.cz)) is a university research center performing fundamental and applied research in computer vision, robotics, machine learning, pattern recognition, and mathematics. **Biomedical Imaging Algorithms** group ([BIA](http://www.fel.cvut.cz/vv/tymy/mip.html)) headed by *[Jan Kybic](http://cmp.felk.cvut.cz/~kybic/)* develops new algorithms for biomedical image processing.
 
@@ -28,7 +28,7 @@ Plugins
 
 The package currently contains a few plugins:
 
--   ***[jSLIC superpixels](#jSLIC_-_superpixels "wikilink")*** - is segmentation method for clustering similar regions - superpixels - in given image which are usually used for other segmentation techniques. The only two parameters are average (initial) size of each superpixel and rigidity parameter in range *&lt;0,1&gt;*.
+-   ***[jSLIC superpixels](#jSLIC_-_superpixels)*** - is segmentation method for clustering similar regions - superpixels - in given image which are usually used for other segmentation techniques. The only two parameters are average (initial) size of each superpixel and rigidity parameter in range *&lt;0,1&gt;*.
 
 jSLIC - superpixels
 -------------------

@@ -41,7 +41,7 @@ Tips
     -   Use Process&gt;Image Calculator with 'Operation=Average' to combine the input image and the shaded image.
     -   Typically, you will then want to enhance the colors a bit, using Image&gt;Adjust&gt;Color Balance.
     -   The image at the right shows an example, based on Space Shuttle Radar Topography Mission data of the area around Austria's highest mountain, the Großglockner.
--   Such a superimposed map can be also loaded as 'Texture' when using the [Interactive 3D surface plot](http://rsb.info.nih.gov/ij/plugins/surface-plot-3d.html "wikilink") plugin.
+-   Such a superimposed map can be also loaded as 'Texture' when using the [Interactive 3D surface plot](http://rsb.info.nih.gov/ij/plugins/surface-plot-3d.html) plugin.
 
 Version History
 ---------------

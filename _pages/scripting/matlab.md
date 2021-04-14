@@ -80,7 +80,7 @@ Options for controlling the startup of [MATLAB](MATLAB), or killing existing [MA
 
 > NB: because the script is being passed from ImageJ to a remote [MATLAB](MATLAB), [MATLAB](MATLAB) will not have access to ImageJ's classpath. Objects can be passed as variables to [MATLAB](MATLAB) (e.g. by using @ annotation) but only if they are valid [MATLAB](MATLAB) classes or specially handled classes.
 >
-> Scripts requiring ImageJ classes without auto-conversion support should [ launch ImageJ from within MATLAB](#Running_ImageJ_within_MATLAB "wikilink").
+> Scripts requiring ImageJ classes without auto-conversion support should [ launch ImageJ from within MATLAB](#Running_ImageJ_within_MATLAB).
 >
 > eg. a script using [`ij.IJ`](https://javadoc.scijava.org/ImageJ1/ij/IJ.html) commands needs to be run from within MATLAB (or you'll need to add Java class paths to MATLAB search path before calling `ij.IJ` commands).
 
@@ -110,11 +110,11 @@ MATLAB retains state (e.g. declared variables) as commands are executed, and Ima
 
 ### Passing Objects
 
-The caveat to [global state](#Global_state "wikilink") is that, when running ImageJ externally, ImageJ and MATLAB run in separate [JVMs](http://docs.oracle.com/javase/7/docs/technotes/guides/vm/). As a result, most objects can not be passed between the two. This makes Datasets (and arrays) the currency that is passed between these applications.
+The caveat to [global state](#Global_state) is that, when running ImageJ externally, ImageJ and MATLAB run in separate [JVMs](http://docs.oracle.com/javase/7/docs/technotes/guides/vm/). As a result, most objects can not be passed between the two. This makes Datasets (and arrays) the currency that is passed between these applications.
 
 ### Return values
 
-Most of the ImageJ scripting languages have implicit return values. As mentioned above, ImageJ will only execute true scripts, which do not have return values (in the MATLAB functional sense). There is a similar concept in the `ans` variable, which automatically gets the return value of executed statements if they are not explicitly assigned. However, due to the [global nature](#Global_state "wikilink") of the ImageJ-MATLAB script language, it is not necessarily clear if `ans` was set by the script or a pre-existing command. Thus the decision was made that ImageJ-MATLAB scripts will **never** implicitly return a value. Instead, [the @OUTPUT annotation](Script_parameters) should always be used - even for `ans`, as shown here:
+Most of the ImageJ scripting languages have implicit return values. As mentioned above, ImageJ will only execute true scripts, which do not have return values (in the MATLAB functional sense). There is a similar concept in the `ans` variable, which automatically gets the return value of executed statements if they are not explicitly assigned. However, due to the [global nature](#Global_state) of the ImageJ-MATLAB script language, it is not necessarily clear if `ans` was set by the script or a pre-existing command. Thus the decision was made that ImageJ-MATLAB scripts will **never** implicitly return a value. Instead, [the @OUTPUT annotation](Script_parameters) should always be used - even for `ans`, as shown here:
 
     % @OUTPUT double[] ans
 
@@ -133,7 +133,7 @@ Most of the ImageJ scripting languages have implicit return values. As mentioned
 
 {% include importing-classes lang='MATLAB' %} When running ImageJ externally, [MATLAB](MATLAB) will not have ImageJ classes in its classpath - so they can not simply be imported. Although [MATLAB](MATLAB) does support [editing its classpath](http://www.mathworks.com/help/matlab/matlab_external/bringing-java-classes-and-methods-into-matlab-workspace.html) this is NOT recommended, as the classes loaded by [MATLAB](MATLAB) will not be the same as those loaded in ImageJ.
 
-Instead, you can [launch ImageJ inside MATLAB](#Running_ImageJ_within_MATLAB "wikilink") and have it take care of managing the class loading for you. [MATLAB](MATLAB) then supports the use of import statements to [simplify class names](http://www.mathworks.com/help/matlab/matlab_external/bringing-java-classes-and-methods-into-matlab-workspace.html#f46341).
+Instead, you can [launch ImageJ inside MATLAB](#Running_ImageJ_within_MATLAB) and have it take care of managing the class loading for you. [MATLAB](MATLAB) then supports the use of import statements to [simplify class names](http://www.mathworks.com/help/matlab/matlab_external/bringing-java-classes-and-methods-into-matlab-workspace.html#f46341).
 
 Running ImageJ within MATLAB
 ----------------------------
@@ -191,7 +191,7 @@ In the MATLAB command window, you'll see something like this:
     Status> ImageJ is running.
     --------------------------------------------------------------
 
-The startup process automatically injects the ImageJ classpath into the [MATLAB](MATLAB) classpath, merging the two. At this point, you'll have a working ImageJ and can now [run MATLAB scripts as normal](#Creating_MATLAB_scripts_inside_ImageJ "wikilink") with access to the full unified classpath.
+The startup process automatically injects the ImageJ classpath into the [MATLAB](MATLAB) classpath, merging the two. At this point, you'll have a working ImageJ and can now [run MATLAB scripts as normal](#Creating_MATLAB_scripts_inside_ImageJ) with access to the full unified classpath.
 
 ### Useful Commands
 
@@ -312,7 +312,7 @@ If you wish to show an image with ImageJ from within a MATLAB function, you can 
 
 Additionally, the {% include github org='scijava' repo='scripting-matlab' label='Scripting-MATLAB' %} library also includes an extensible [MATLAB](MATLAB) command framework. This allows for the creation of utility classes that will be automatically populated into [MATLAB](MATLAB) variables for easy access. For example, you could use ImageJ to open a dataset and perform thresholding (or any other processing steps), then in [MATLAB](MATLAB) use the `IJM.getDatasetAs(name)` command to set the active dataset as a [MATLAB](MATLAB) matrix variable with a specified name, for further analysis.
 
-For example, instead of using a script as [described above](#Creating_MATLAB_scripts_inside_ImageJ "wikilink"), we could achieve the same result by executing the following commands in the MATLAB prompt:
+For example, instead of using a script as [described above](#Creating_MATLAB_scripts_inside_ImageJ), we could achieve the same result by executing the following commands in the MATLAB prompt:
 
     IJM.getDatasetAs('data') % import the image as a MATLAB matrix
     rval = uint8(data); % convert to uint8

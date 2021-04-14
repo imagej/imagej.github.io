@@ -69,7 +69,7 @@ Note that your username will always start with an upper case letter. It should l
 
 <img src="/media/Update site fiji creds.png" width="770"/>
 
-You can now close the *Manage update sites* window and go on to [ Uploading your resources](#Uploading_your_resources "wikilink").
+You can now close the *Manage update sites* window and go on to [ Uploading your resources](#Uploading_your_resources).
 
 Configuring the ImageJ update site
 ----------------------------------
@@ -85,7 +85,7 @@ It should look like this:
 
 <img src="/media/Update site ij2 creds.png" width="770"/>
 
-You can now close the *Manage update sites* window and go on to [ Uploading your resources](#Uploading_your_resources "wikilink").
+You can now close the *Manage update sites* window and go on to [ Uploading your resources](#Uploading_your_resources).
 
 Uploading your resources
 ------------------------

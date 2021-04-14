@@ -15,11 +15,11 @@ The .traces files that are saved by [SNT](/plugins/snt) are gzipped compressed X
 
 The XML DTD is included in the DOCTYPE of each file. The root element is always &lt;tracings&gt;, and this can contain the following elements:
 
--   [&lt;imagesize&gt;](#.3Cimagesize.3E "wikilink")
--   [&lt;samplespacing&gt;](#.3Csamplespacing.3E "wikilink")
--   [&lt;path&gt;](#.3Cpath.3E "wikilink")
--   [&lt;fill&gt;](#.3Cfill.3E "wikilink")
--   [&lt;node&gt;](#.3Cnode.3E "wikilink")
+-   [&lt;imagesize&gt;](#.3Cimagesize.3E)
+-   [&lt;samplespacing&gt;](#.3Csamplespacing.3E)
+-   [&lt;path&gt;](#.3Cpath.3E)
+-   [&lt;fill&gt;](#.3Cfill.3E)
+-   [&lt;node&gt;](#.3Cnode.3E)
 
 ### &lt;imagesize&gt;
 

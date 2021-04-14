@@ -238,7 +238,7 @@ A freshly downlodaed Fiji `db.xml` file additionally contains entries for the up
     <update-site name="/fiji" url="http://update.fiji.sc/" timestamp="20171213124524"/>
     <update-site name="Java-8" url="http://sites.imagej.net/Java-8/" timestamp="20181204081238"/>
 
-Once the user opens the list of update sites, the updater is accessing the official list of update sites (see the [update site chapter](#list-of-update-sites "wikilink")) and adding entries for the disabled but available update sites to the database.
+Once the user opens the list of update sites, the updater is accessing the official list of update sites (see the [update site chapter](#list-of-update-sites)) and adding entries for the disabled but available update sites to the database.
 
 The database also contains entries for all the files that are managed by update sites. Each file is represented by a `plugin` tag. The tag contains information about the update site that is associated with this file and its previous versions from that update site.
 

@@ -9,9 +9,9 @@ description: test description
 
 The answer to this question depends on how you use ImageJ.
 
--   Do you want the open an image using the graphical user interface? ([\#From the GUI](#From_the_GUI "wikilink"))
--   Are you writing a script? ([\#From a Script](#From_a_Script "wikilink"))
--   Are you using Java, to develop an ImageJ2 plug-in or do write your one program using ImgLib2 and ImageJ libraries? ([\#From Java](#From_Java "wikilink"))
+-   Do you want the open an image using the graphical user interface? ([\#From the GUI](#From_the_GUI))
+-   Are you writing a script? ([\#From a Script](#From_a_Script))
+-   Are you using Java, to develop an ImageJ2 plug-in or do write your one program using ImgLib2 and ImageJ libraries? ([\#From Java](#From_Java))
 
 From the GUI
 ------------

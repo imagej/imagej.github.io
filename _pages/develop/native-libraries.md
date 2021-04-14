@@ -314,7 +314,7 @@ Finally, the *fiji.JNI* class in *fiji-lib.jar* provides convenience methods to 
             JNI.loadLibrary("hello-world");
     }
 
-See also the [JNI Example](#JNI_Example "wikilink") below.
+See also the [JNI Example](#JNI_Example) below.
 
 Using the Java Native Interface from C
 --------------------------------------

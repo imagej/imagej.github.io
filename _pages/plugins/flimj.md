@@ -69,7 +69,7 @@ In the screenshots above,
 -   **Orange dots** denote the photon counts in each time bin in Fit plot and denote the residual ($$y_{data}-y_{fit}$$) in Res plot.
 -   **Photon Count** displays the total number of photons collected between the start and end cursor.
 -   $$z, A, \tau$$ (or $$z_1, A_1, A_2, \tau_1, \tau_2$$ in two-component fit) are the background, initial intensity and lifetime parameters of the model.
--   $$\chi^2$$ shows the chi-squared measure of the fit (see [Noise models](#Noise_models "wikilink")).
+-   $$\chi^2$$ shows the chi-squared measure of the fit (see [Noise models](#Noise_models)).
 
 ### Fit settings
 
@@ -92,7 +92,7 @@ Sometimes you may want to fine-tune the fitting configurations. The **Settings**
 
 <!-- -->
 
--   **Noise Model**: The noise model used for fitting (see [Noise models](#Noise_models "wikilink")).
+-   **Noise Model**: The noise model used for fitting (see [Noise models](#Noise_models)).
 
 <!-- -->
 
@@ -104,7 +104,7 @@ Sometimes you may want to fine-tune the fitting configurations. The **Settings**
 
 <!-- -->
 
--   **Instrument Response**: The dataset that contains the instrument response. (see [Instrument response function (IRF/prompt)](#Instrument_response_function_(IRF/prompt) "wikilink")).
+-   **Instrument Response**: The dataset that contains the instrument response. (see [Instrument response function (IRF/prompt)](#Instrument_response_function_(IRF/prompt))).
 
 <!-- -->
 
@@ -120,7 +120,7 @@ Sometimes you may want to fine-tune the fitting configurations. The **Settings**
 
 #### Instrument response function (IRF/prompt)
 
-FLIMJ plugin currently only supports the selection of IRF from a single pixel in an [acceptable dataset](#Startup "wikilink") that is taken during a standard IRF measurement procedure (such as {% include github org='flimlib' repo='flimj-ui' path='test\_files/urea.sdt' label='this one using urea crystals' %}). The steps are as follows:
+FLIMJ plugin currently only supports the selection of IRF from a single pixel in an [acceptable dataset](#Startup) that is taken during a standard IRF measurement procedure (such as {% include github org='flimlib' repo='flimj-ui' path='test\_files/urea.sdt' label='this one using urea crystals' %}). The steps are as follows:
 
 1.  Click on the drop-down menu, select *From file*; select the dataset file that contains the IRF.
 2.  In **Preview** panel, select *IRF Intensity* for the "Show" option (you may also select *Grayscale* for the "as" option to deactivate pseudocoloring):<img src="/media/FLIMJ irf show irf.png" title="fig:Choose IRF Intensity to enter IRF picking mode." width="200" alt="Choose IRF Intensity to enter IRF picking mode." />

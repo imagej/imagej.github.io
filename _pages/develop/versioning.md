@@ -45,7 +45,7 @@ The following are practical examples of what is not part of the SciJava "public 
 
 <!-- -->
 
--   **External dependencies.** See [Is SemVer transitive?](#Is_SemVer_transitive.3F "wikilink") below.
+-   **External dependencies.** See [Is SemVer transitive?](#Is_SemVer_transitive.3F) below.
 
 <!-- -->
 

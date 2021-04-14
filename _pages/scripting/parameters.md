@@ -114,7 +114,7 @@ Default values are also supported as parameter properties:
 
 ### Persistence
 
-Per default, variable values are persisted between runs of a script. This means that parameter values from a previous run are used as starting value. Please note that a persisted value will overwrite a defined [default value](#Default_value "wikilink").
+Per default, variable values are persisted between runs of a script. This means that parameter values from a previous run are used as starting value. Please note that a persisted value will overwrite a defined [default value](#Default_value).
 
     #@ Integer (label="An integer!", value=15, persist=false) someInt
 

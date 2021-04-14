@@ -26,7 +26,7 @@ When considering colocalization, too often composite images of red and green cha
 
 {% include image-center name="SpiralsRGY.png" image-path="/media/SpiralsRGY.png" %}
 
-Most people might think that the image contains 4 distinct colours: 2 sets of thin spirals are in dark red and dark green, and 2 thick prominent spirals of yellow-green and yellow. However, the yellow and yellow-green actually have <b>exactly the same color!</b> You can verify this yourself by calling {% include bc path='File | Open Samples | [Spirals (Macro)](Spirals_Macro "wikilink")'%} in Fiji.
+Most people might think that the image contains 4 distinct colours: 2 sets of thin spirals are in dark red and dark green, and 2 thick prominent spirals of yellow-green and yellow. However, the yellow and yellow-green actually have <b>exactly the same color!</b> You can verify this yourself by calling {% include bc path='File | Open Samples | [Spirals (Macro)](Spirals_Macro)'%} in Fiji.
 
 So... now, how do you feel about determining colocalization by looking for yellow blobs? Doesn't make much sense does it? We notice that the shades and hues of colours look different according to what other colours they are next to! So, you need to measure something from the pixel values, not simply subjectively "look at" a red/green colour merge image.
 
@@ -217,7 +217,7 @@ We need to think carefully about the correct or adequate spatial resolution in x
 
 {% include info-box content="Note: this plugin is no longer under active development and support. Use [Coloc 2](/plugins/coloc-2) instead, which does the same thing, only better." %}
 
-The [Colocalization Threshold](/plugins/colocalization-threshold) plugin performs several functions for you in one go. With the "green" and "red" stacks of the [colocsample1bRGB\_BG.tif](https://fiji.sc/samples/colocsample1bRGB_BG.tif) dataset open and the channels split (see above) choose the menu item "Analyze-Colocalization-Colocalization Threshold". Next select the right stacks for the analysis in Channel1 and Channel2. You can use a region of interest (ROI) if you like, which should be defined before you run the plugin. Check on "Show Colocalized Pixels" and "Show Scatter Plot" (see also [Why scatter plots?](#Why_scatter_plots.3F "wikilink")), and others off. You can explore the options in Set options. Turn ALL the options on the first time you use it, so you see what it can do.
+The [Colocalization Threshold](/plugins/colocalization-threshold) plugin performs several functions for you in one go. With the "green" and "red" stacks of the [colocsample1bRGB\_BG.tif](https://fiji.sc/samples/colocsample1bRGB_BG.tif) dataset open and the channels split (see above) choose the menu item "Analyze-Colocalization-Colocalization Threshold". Next select the right stacks for the analysis in Channel1 and Channel2. You can use a region of interest (ROI) if you like, which should be defined before you run the plugin. Check on "Show Colocalized Pixels" and "Show Scatter Plot" (see also [Why scatter plots?](#Why_scatter_plots.3F)), and others off. You can explore the options in Set options. Turn ALL the options on the first time you use it, so you see what it can do.
 
 {% include gallery content=
 "

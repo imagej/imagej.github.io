@@ -12,10 +12,10 @@ Schedule (tentative):
 
 | **Time**                 | Wednesday, September 9th                                                                                                 | Thursday, September 10th                                 | Friday, September 11th                                                         | Saturday, September 12th                 |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|--------------------------------------------------------------------------------|------------------------------------------|
-| Session 1: 9:30 - 11:00  | [Welcome](#Welcome_and_Introduction "wikilink") and [Installing Fiji](#Overview_of_installing_and_using_Fiji "wikilink") | [Quantitative Imaging](#Quantitative_Imaging "wikilink") | [Segmentation](#Segmentation "wikilink")                                       | [Registration](#Registration "wikilink") |
-| Session 2: 11:30 - 12:30 | [Image Processing Fundamentals](#Image_Processing_fundamentals "wikilink")                                               | [Colocalization](#Colocalization "wikilink")             | [Beyond 3D](#Beyond_3D "wikilink")                                             |                                          |
-| Session 3: 14:00 - 15:30 | [Fiji scripting: Python](#Fiji_scripting:_Python "wikilink")                                                             | [TrakEM2](#TrakEM2 "wikilink")                           | [Fiji scripting: advanced Python](#Fiji_scripting:_advanced_Python "wikilink") |                                          |
-| Session 4: 16:00 - 17:30 | [Show your images!](#Work_sessions "wikilink")                                                                           | [Work session](#Work_sessions "wikilink")                | [Work session](#Work_sessions "wikilink")                                      |                                          |
+| Session 1: 9:30 - 11:00  | [Welcome](#Welcome_and_Introduction) and [Installing Fiji](#Overview_of_installing_and_using_Fiji) | [Quantitative Imaging](#Quantitative_Imaging) | [Segmentation](#Segmentation)                                       | [Registration](#Registration) |
+| Session 2: 11:30 - 12:30 | [Image Processing Fundamentals](#Image_Processing_fundamentals)                                               | [Colocalization](#Colocalization)             | [Beyond 3D](#Beyond_3D)                                             |                                          |
+| Session 3: 14:00 - 15:30 | [Fiji scripting: Python](#Fiji_scripting:_Python)                                                             | [TrakEM2](#TrakEM2)                           | [Fiji scripting: advanced Python](#Fiji_scripting:_advanced_Python) |                                          |
+| Session 4: 16:00 - 17:30 | [Show your images!](#Work_sessions)                                                                           | [Work session](#Work_sessions)                | [Work session](#Work_sessions)                                      |                                          |
 
 Wednesday
 ---------
@@ -95,7 +95,7 @@ Lead instructors: {% include person content='JeanYvesTinevez' %}
 
 ### Writing Fiji plugins in Java
 
-Introduction to Fiji programming in Java (this will be an add-on to the [advanced scripting](#Fiji_scripting:_advanced_Python "wikilink")).
+Introduction to Fiji programming in Java (this will be an add-on to the [advanced scripting](#Fiji_scripting:_advanced_Python)).
 
 Lead instructor: [Johannes Schindelin](Johannes_Schindelin)
 

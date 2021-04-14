@@ -63,7 +63,7 @@ There are two ways to create such a snapshot, known as a "thread dump" or "stack
 
 If the first method does not work, and you can reproduce the hang:
 
-1.  Launch ImageJ again, this time [from the console](#Launching_ImageJ_from_the_console "wikilink") as described above.
+1.  Launch ImageJ again, this time [from the console](#Launching_ImageJ_from_the_console) as described above.
     -   <img src="/media/Win.png" height="20"/> On Windows, you will need to download and run [this batch file](https://raw.githubusercontent.com/imagej/imagej/master/bin/ImageJ.bat), which launches ImageJ with an attached Command Prompt window.
 2.  Generate and copy the stack trace:
     -   <img src="/media/Osx.png" height="20"/> <img src="/media/Tux.png" height="20"/> On non-Windows platforms:
@@ -83,7 +83,7 @@ If ImageJ crashes
 
 If ImageJ {% include wikipedia title='Crash (computing)' text='crashes'%}—i.e., the program suddenly terminates, with or without an error message—it is very helpful to identify the steps which can reliably reproduce the crash:
 
--   Launch ImageJ [from the console](#Launching_ImageJ_from_the_console "wikilink") as described above.
+-   Launch ImageJ [from the console](#Launching_ImageJ_from_the_console) as described above.
 -   Perform the same actions which previously resulted in the crash.
 -   Take note of any error messages in the console window, which you can copy and paste it into a [bug report](/help/report-a-bug).
 
@@ -115,7 +115,7 @@ If the ImageJ window never appears after launching the program, the installation
 
 The easiest workaround is to [download](/Downloads) a fresh copy of the software.
 
-If you are feeling investigative, you can try [launching ImageJ from the console](#Launching_ImageJ_from_the_console "wikilink") to get more information about why it is failing to start up. After doing that, you will probably see some information printed to the console, which you can paste online to somewhere like [Pastebin.com](http://pastebin.com/), and write to the [Community](/help) to ask for help deciphering it.
+If you are feeling investigative, you can try [launching ImageJ from the console](#Launching_ImageJ_from_the_console) to get more information about why it is failing to start up. After doing that, you will probably see some information printed to the console, which you can paste online to somewhere like [Pastebin.com](http://pastebin.com/), and write to the [Community](/help) to ask for help deciphering it.
 
 Advanced debugging techniques
 -----------------------------
@@ -231,7 +231,7 @@ UnsupportedClassVersionError
 
 Usually, this error takes the form of "Unsupported major.minor version 52.0" or similar, and indicates you are attempting to use a plugin which requires a newer version of Java than you are running. For example, you may have enabled an [update site](Update_site) that requires Java 7, but your ImageJ is using Java 6.
 
-Check which version of Java is being used by ImageJ; see [Checking the Java version](#Checking_the_Java_version "wikilink") above.
+Check which version of Java is being used by ImageJ; see [Checking the Java version](#Checking_the_Java_version) above.
 
 The number given in the `UnsupportedClassVersionError` error messages is an internal code, which translates to Java versions as follows:
 

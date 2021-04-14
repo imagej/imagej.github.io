@@ -30,9 +30,9 @@ Technical discussions
 Progress this week
 ------------------
 
--   Curtis wrote a "melting pot" script for testing component changes in the context of a larger application (e.g.: "Would this change to TrakEM2 break Fiji?") [https://github.com/scijava/scijava-scripts/commit/d611704204d607dc94654a6810d00a1ab0e9280e 1](https://github.com/scijava/scijava-scripts/commit/d611704204d607dc94654a6810d00a1ab0e9280e_1 "wikilink").
+-   Curtis wrote a "melting pot" script for testing component changes in the context of a larger application (e.g.: "Would this change to TrakEM2 break Fiji?") [https://github.com/scijava/scijava-scripts/commit/d611704204d607dc94654a6810d00a1ab0e9280e 1](https://github.com/scijava/scijava-scripts/commit/d611704204d607dc94654a6810d00a1ab0e9280e_1).
 -   Curtis made some ImageJ improvements in response to feedback from Burkhard \[[2](https://github.com/imagej/imagej-plugins-commands/commit/6fafbc9c3444e3fe70420244699d02acfb72abfd), [3](https://github.com/imagej/imagej-plugins-commands/commit/ea9596b2d905eff9f7a9b2177dca5fe44b65ae6e)\].
--   Mark fixed bugs in SCIFIO cell caching in preparation for unification [https://github.com/imglib/imglib2-ij/pull/5 4](https://github.com/imglib/imglib2-ij/pull/5_4 "wikilink").
+-   Mark fixed bugs in SCIFIO cell caching in preparation for unification [https://github.com/imglib/imglib2-ij/pull/5 4](https://github.com/imglib/imglib2-ij/pull/5_4).
 -   Mark and Curtis planned out the new SCIFIO API for "blockization".
 -   Mark began work on ImageJ data model changes for SCIFIO "blockization" \[[5](https://github.com/imagej/imagej-common/compare/calibrated-interval), [6](https://github.com/scifio/scifio/compare/blocks-are-so-plane)\].
 

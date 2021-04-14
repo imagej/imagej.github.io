@@ -12,7 +12,7 @@ ImageJ is an open source Java image processing program inspired by [NIH Image](/
 Flavors
 -------
 
-There are a few different flavors of ImageJ with very similar names, and some confusion is inevitable. Below is a table which should help to clarify the purpose of each. For the historical context of these projects, see [History](#History "wikilink") below.
+There are a few different flavors of ImageJ with very similar names, and some confusion is inevitable. Below is a table which should help to clarify the purpose of each. For the historical context of these projects, see [History](#History) below.
 
 <table>
   <tbody>
@@ -26,33 +26,33 @@ There are a few different flavors of ImageJ with very similar names, and some co
     </tr>
     <tr class="even">
       <td><img src="/media/Fiji-icon.png" width="64"/></td>
-      <td><a href="/fiji" title="wikilink">Fiji</a></td>
-      <td><a href="/about/contributors" title="wikilink">Fiji contributors</a></td>
+      <td><a href="/fiji">Fiji</a></td>
+      <td><a href="/about/contributors">Fiji contributors</a></td>
       <td><strong>F</strong>iji <strong>i</strong>s <strong>J</strong>ust
         <strong>I</strong>mageJ, with extras. It is a distribution of ImageJ with
         many plugins useful for scientific image analysis in fields such as life
         sciences. It is actively maintained, with updates released
         often.<br><br>We recommend Fiji as the preferred version of ImageJ.</td>
-      <td><a href="User:Schindelin#A_short_story_about_Fiji" title="wikilink">Dec. 2007</a></td>
+      <td><a href="User:Schindelin#A_short_story_about_Fiji">Dec. 2007</a></td>
       <td>Active</td>
     </tr>
     <tr class="odd">
       <td><img src="/media/Imagej2-icon.png" width="64"/></td>
-      <td><a href="/software/imagej2" title="wikilink">ImageJ2</a></td>
-      <td><a href="/about/contributors" title="wikilink">ImageJ developers</a></td>
+      <td><a href="/software/imagej2">ImageJ2</a></td>
+      <td><a href="/about/contributors">ImageJ developers</a></td>
       <td>A new version of ImageJ targeting scientific multidimensional image
         data. It is a complete rewrite of ImageJ, but includes <a
-        href="/software/imagej1" title="wikilink">ImageJ1</a> with a compatibility layer,
+        href="/software/imagej1">ImageJ1</a> with a compatibility layer,
         so that old-style plugins and macros can run the same as always.
         ImageJ2 provides several significant new features, such as an automatic
-        <a href="updater" title="wikilink">updater</a>, and improved <a
-        href="scripting" title="wikilink">scripting</a> capabilities.</td>
+        <a href="updater">updater</a>, and improved <a
+        href="scripting">scripting</a> capabilities.</td>
       <td>Dec. 2009</td>
       <td>Active</td>
     </tr>
     <tr class="even">
       <td><img src="/media/Imagej1-icon.png" width="64"/></td>
-      <td><a href="/software/imagej1" title="wikilink">ImageJ1</a></td>
+      <td><a href="/software/imagej1">ImageJ1</a></td>
       <td>{% include person content='Rasband' %}</td>
       <td>A stable version of ImageJ which has been in development since 1997.
         It has a strong, established user base, with thousands of plugins and
@@ -62,8 +62,8 @@ There are a few different flavors of ImageJ with very similar names, and some co
     </tr>
     <tr class="odd">
       <td><img src="/media/Imagej1-icon.png" width="64"/></td>
-      <td><a href="/software/imageja" title="wikilink">ImageJA</a></td>
-      <td><a href="/about/contributors" title="wikilink">ImageJ developers</a></td>
+      <td><a href="/software/imageja">ImageJA</a></td>
+      <td><a href="/about/contributors">ImageJ developers</a></td>
       <td>ImageJA is a project that provides a clean <a href="Git">Git</a>
         history of ImageJ1, with a proper 'pom.xml' file so that it can be used
         with Maven without hassles.<br><br>It is what ImageJ2's legacy support
@@ -73,7 +73,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
     </tr>
     <tr class="even">
       <td></td>
-      <td><a href="/software/imagejfx" title="wikilink">ImageJFX</a></td>
+      <td><a href="/software/imagejfx">ImageJFX</a></td>
       <td>{% include person content='cmongis' %}</td>
       <td>ImageJFX is a new user interface for ImageJ, built using
         {% include wikipedia title='JavaFX' text='JavaFX' %}.</td>
@@ -82,7 +82,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
     </tr>
     <tr class="odd">
       <td><img src="/media/Imagesxm-icon.png" width="64"/></td>
-      <td><a href="/software/imagesxm" title="wikilink">ImageSXM</a></td>
+      <td><a href="/software/imagesxm">ImageSXM</a></td>
       <td>Steve Barrett</td>
       <td>Image SXM is a version of NIH Image that has been extended to handle
         the loading, display and analysis of scanning microscope images.</td>
@@ -124,7 +124,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
     </tr>
     <tr class="odd">
       <td></td>
-      <td><a href="/software/mbf-imagej" title="wikilink">MBF ImageJ</a></td>
+      <td><a href="/software/mbf-imagej">MBF ImageJ</a></td>
       <td>Tony Collins</td>
       <td>The MBF "ImageJ for Microscopy" bundle (formerly
         <a href="http://www.uhnres.utoronto.ca/facilities/wcif/imagej/">WCIF
@@ -134,16 +134,16 @@ There are a few different flavors of ImageJ with very similar names, and some co
         with light microscopy image data. It was a great resource by
         microscopists, for microscopists. Unfortunately, the manual went
         offline in late 2012. In response, the software team at
-        <a href="/orgs/loci" title="wikilink">LOCI</a> created the
-        <a href="/cookbook" title="wikilink">Cookbook</a> user guide and
-        <a href="update_site" title="wikilink">update site</a>, which
+        <a href="/orgs/loci">LOCI</a> created the
+        <a href="/cookbook">Cookbook</a> user guide and
+        <a href="update_site">update site</a>, which
         includes most of the same plugins.</td>
       <td>2005</td>
       <td>Defunct<br>(Last update:<br>Dec. 2009)</td>
     </tr>
     <tr class="even">
       <td></td>
-      <td><a href="/software/imagejx" title="wikilink">ImageJX</a></td>
+      <td><a href="/software/imagejx">ImageJX</a></td>
       <td>{% include person content='Harris' %}</td>
       <td>ImageJX was created as a means to discuss and explore
         improvements to ImageJ. There was an
@@ -160,7 +160,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
     </tr>
     <tr class="odd">
       <td><img src="/media/nih-image-logo.png"/></td>
-      <td><a href="/software/nih-image" title="wikilink">NIH Image</a></td>
+      <td><a href="/software/nih-image">NIH Image</a></td>
       <td>{% include person content='Rasband' %}</td>
       <td>NIH Image is a public domain image processing and analysis
         program for the Macintosh. It is the direct predecessor of ImageJ,

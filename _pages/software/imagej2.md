@@ -41,7 +41,7 @@ Features of ImageJ2
 ImageJ2 provides a wealth of new features and capabilities:
 
 -   The [ImageJ Updater](/plugins/updater) makes it simple to keep your ImageJ up to date, and to add new plugins by enabling additional [Update Sites](/update-sites).
--   New and enhanced file format support via the [SCIFIO](/software/scifio) library ([see below](#Improved_image_I.2FO_with_the_SCIFIO_library "wikilink")).
+-   New and enhanced file format support via the [SCIFIO](/software/scifio) library ([see below](#Improved_image_I.2FO_with_the_SCIFIO_library)).
 -   More powerful [Script Editor](/scripting/script-editor) with support for several scripting languages.
 -   New commands:
     -   {% include bc path='Plugins | Debug | Dump Stack'%} for debugging when things {% include wikipedia title='Hang (computing)' text='hang'%}.

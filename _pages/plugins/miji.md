@@ -61,7 +61,7 @@ Note: in [MATLAB](MATLAB), it is not strictly necessary to end the *MIJ.run()* s
 Opening images
 --------------
 
-Normally, the best way to use MIJ is to [use ImageJ's macro recorder](#Running_ImageJ_commands "wikilink"). However, this procedure does not work when opening images because ImageJ records simply: **open("/path/to/image.png");**
+Normally, the best way to use MIJ is to [use ImageJ's macro recorder](#Running_ImageJ_commands). However, this procedure does not work when opening images because ImageJ records simply: **open("/path/to/image.png");**
 
 Instead, one needs to keep in mind how *run()* statements are constructed and imitate it for the *Open...* command:
 

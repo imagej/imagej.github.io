@@ -34,7 +34,7 @@ In practice it means the following steps need to be executed:
 -   Run per time-point registrations - creates as many XMLs as there are timepoints
 -   Merge XMLs - consolidates the per-timepoint XMLs back into a single XML
 
-Some new parameters are introduced and some old parameters change names. Therefore, use the ***[config.yaml](#config.yaml "wikilink")*** described in this chapter to process with the MVR pipeline.
+Some new parameters are introduced and some old parameters change names. Therefore, use the ***[config.yaml](#config.yaml)*** described in this chapter to process with the MVR pipeline.
 
 Outdated versions of the cluster processing scripts on which this workflow is based on you can find [here](/SPIM_Registration_on_cluster_(deprecated))
 

@@ -40,7 +40,7 @@ Description
 
 BAR files are accessible through a dedicated top-level menu subdivided in task-oriented categories. All routines should be documented on {% include github org='tferr' repo='Scripts' path='README.md\#ij-bar' label='GitHub' %}.
 
-Some of the scripts have a dedicated documentation page, others feature built-in help, while a handful were deemed too simple to require dedicated instructions. Nevertheless, all files contain useful commentary at the top of the source code file. **Remember:** You can open all the scripts using the [Shift key](#OpeningBAR "wikilink").
+Some of the scripts have a dedicated documentation page, others feature built-in help, while a handful were deemed too simple to require dedicated instructions. Nevertheless, all files contain useful commentary at the top of the source code file. **Remember:** You can open all the scripts using the [Shift key](#OpeningBAR).
 
 ### List of BARs
 
@@ -67,7 +67,7 @@ Some of the scripts have a dedicated documentation page, others feature built-in
 <!-- -->
 
 {% include github org='tferr' repo='Scripts' path='README.md\#snippets' label='Snippets' %}, {% include github org='tferr' repo='Scripts' path='/lib\#lib' label='BAR lib' %}<span id="SnippetsList"> and {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/tutorials/' label='Tutorials' %}</span>  
-Described in [Scripting BARs](#Scripting_BARs "wikilink")
+Described in [Scripting BARs](#Scripting_BARs)
 
 <!-- -->
 
@@ -77,12 +77,12 @@ Described in [Scripting BARs](#Scripting_BARs "wikilink")
 <!-- -->
 
 {% include github org='tferr' repo='Scripts' path='README.md\#utilities' label='Utilities' %}<span id="Utilities"></span>  
-[Commander](#Commander "wikilink")
+[Commander](#Commander)
 
 Accessing BARs
 --------------
 
-As with all ImageJ commands, BAR scripts can be accessed in multiple ways: 1) through the {% include bc path="BAR |" %} menu, 2) the [Context Menu](#Context_Menu "wikilink"), 3) [Keyboard Shortcuts](#Keyboard_Shortcuts "wikilink"), 3) the *Shortcuts Menu Tool* ({% include bc path="BAR | Tool Installers | Install Shortcuts Menu" %}), that registers frequently used commands in the ImageJ toolbar, 4) by [pressing](#ExpediteAccess "wikilink") {% include key content='press\|[L](#ExpediteAccess "wikilink")' %}, or 5) from other [scripts, macros and plugins](#Scripting_BARs "wikilink"). 
+As with all ImageJ commands, BAR scripts can be accessed in multiple ways: 1) through the {% include bc path="BAR |" %} menu, 2) the [Context Menu](#Context_Menu), 3) [Keyboard Shortcuts](#Keyboard_Shortcuts), 3) the *Shortcuts Menu Tool* ({% include bc path="BAR | Tool Installers | Install Shortcuts Menu" %}), that registers frequently used commands in the ImageJ toolbar, 4) by [pressing](#ExpediteAccess) {% include key content='press\|[L](#ExpediteAccess)' %}, or 5) from other [scripts, macros and plugins](#Scripting_BARs). 
 {% capture tip%}
 You can open any BAR script by holding {% include key content='press\|Shift' %} while selecting its name from the {% include bc path="BAR |" %} menu. For pre-compiled java plugins, the source code is available through the <span style="border-bottom:1px dotted #ccc;">About BAR...</span> command.
 {% endcapture %}
@@ -120,7 +120,7 @@ It is a productivity tool that applies the principles of [Command Launcher](Usin
 <i>Console mode</i> is triggered by typing {% include key content='!' %}, which evokes a list of searchable commands so that all file navigation can be done exclusively with the keyboard. Some of these (`cd`, `ls`, `pwd`, etc.) are reminiscent of commands found in most command-line interfaces. Here are some examples:
 
 To access ImageJ's LUT folder:Type {% include key content='!\|L\|U\|T\|Enter' %}  
-To access all JavaScript [lib files](#lib "wikilink"):Type {% include key content='!\|L\|I\|B\|Enter' %}, then {% include key content='.\|J\|S' %}  
+To access all JavaScript [lib files](#lib):Type {% include key content='!\|L\|I\|B\|Enter' %}, then {% include key content='.\|J\|S' %}  
 To reveal the directory of active image:Type {% include key content='!\|I\|M\|P\|Enter' %}, then choose {% include bc path='Reveal Path'%}.  
 To access Commander's built-in help:Type {% include key content='!\|H\|E\|L\|P\|Enter' %}  
 To extract the paths of all TIFF images in a directory:Drag and drop the desired folder into the Commander list  
@@ -137,7 +137,7 @@ Alternatively, keyboard shortcuts can be defined in macros that call BAR command
         run("Wipe Background", "size=100 circ.=0.75-1.00"); // Runs Wipe_Background.ijm with the specified parameters
     }
 
-As [mentioned](#Context_Menu "wikilink"), such macros can then be pasted into the text area of {% include bc path="Edit | Options | Startup..." %} so that they can be executed when ImageJ starts up. 
+As [mentioned](#Context_Menu), such macros can then be pasted into the text area of {% include bc path="Edit | Options | Startup..." %} so that they can be executed when ImageJ starts up. 
 {% capture tip%}
 Two other expedite ways of retrieving commands include: 1) Pressing {% include key content='press\|L' %}, the shortcut for the \_\_\_SHADOW3\_\_\_ and 2) Pressing {% include key content='press\|9' %}, the default shortcut for the ""Recent Commands"" list.
 {% endcapture %}
@@ -150,7 +150,7 @@ You can use BARs as a starting point for your own workflows. Whether you are jus
 <img src="/media/SnippetCreator.png" title="fig:{% include bc path='BAR|Snippets|NewSnippet...'%} (BAR 1.1.0)" width="350" alt="{% include bc path='BAR|Snippets|NewSnippet...'%} (BAR 1.1.0)" /> BAR contains a directory, *plugins/Scripts/BAR/Snippets/*, containing multi-language [examples](https://github.com/tferr/Scripts/tree/master/Snippets) that you can customize and recycle in your own scripts. You can, of course, also retrieve code and inspiration from the more complete BARs in the remaining *plugins/Scripts/BAR/* subdirectories. Any script or macro file stored in the *Snippets/*, folder with an underscore "\_" in the filename will be listed in {% include bc path="BAR | Snippets |" %}. The {% include bc path="BAR | Snippets |" %} menu contains some utilities to help you manage your scripts:
 
 List Snippets:Prints a table listing all scripts in *plugins/Scripts/BAR/Snippets/*. Files can then be opened in the [Script Editor](/scripting/script-editor) by double-clicking on their filename.  
-New Snippet: A java plugin that speeds up the creation of new scripts, pre-configured to use [BAR lib](#lib "wikilink").  
+New Snippet: A java plugin that speeds up the creation of new scripts, pre-configured to use [BAR lib](#lib).  
 Reveal Snippets:Opens *plugins/Scripts/BAR/Snippets/* in the file browser of the operating system.  
 Search BAR: Searches the contents of BAR files.  
 
@@ -162,7 +162,7 @@ BAR provides several utility methods that simplify the creation of \_\_\_SHADOW3
 
 ### BAR lib
 
-{% include github org='tferr' repo='Scripts' path='/lib/README.md\#lib' label='BAR libs' %} (stored in the */BAR/lib/* directory) are centralized libraries ([BeanShell](/scripting/beanshell), [IJM](/scripting/macro) and [Python](/scripting/jython), etc.) that can be shared across files. These libraries serve as scripting additions to [Snippets](#Snippets "wikilink") and other routines.
+{% include github org='tferr' repo='Scripts' path='/lib/README.md\#lib' label='BAR libs' %} (stored in the */BAR/lib/* directory) are centralized libraries ([BeanShell](/scripting/beanshell), [IJM](/scripting/macro) and [Python](/scripting/jython), etc.) that can be shared across files. These libraries serve as scripting additions to [Snippets](#Snippets) and other routines.
 
 Do you find yourself copy and pasting functions from one file to the other? Do you keep on writing the same lines of code? Do you have some key code written across different languages? Would you like to make side-by-side comparisons of scripting languages? Then, BAR lib is for you.
 
@@ -191,9 +191,9 @@ Typically each of these tasks is handled by separated functions so only the func
 
 #### Processing Functions
 
-The file-processing function can include your own code, code generated by the Macro Recorder ({% include bc path="Plugins | Macros | Record..." %}), pre-existing snippets or methods/functions defined in a common [BAR lib](#lib "wikilink") file.
+The file-processing function can include your own code, code generated by the Macro Recorder ({% include bc path="Plugins | Macros | Record..." %}), pre-existing snippets or methods/functions defined in a common [BAR lib](#lib) file.
 
-IJM example, running a macro and a python script in the *Snippets/* (another [example below](#IJMlib "wikilink") exemplifies how to call a macro function from {% include github org='tferr' repo='Scripts' path='lib/BARlib.ijm' label='BARlib.ijm' %}):
+IJM example, running a macro and a python script in the *Snippets/* (another [example below](#IJMlib) exemplifies how to call a macro function from {% include github org='tferr' repo='Scripts' path='lib/BARlib.ijm' label='BARlib.ijm' %}):
 
     function myRoutines() {
         snippetsPath = call("bar.Utils.getSnippetsDir");
@@ -201,7 +201,7 @@ IJM example, running a macro and a python script in the *Snippets/* (another [ex
         eval("python", File.openAsString(snippetsPath + "Median_Filter.py"));
     }
 
-Jython example, demonstrating how to 1) load [BAR lib](#lib "wikilink") (in this case {% include github org='tferr' repo='Scripts' path='lib/BARlib.py' label='BARlib.py' %}, using code generated by {% include bc path="Bar | Snippets | New Snippet..." %}) and 2) how to run a Snippet (in this case {% include github org='tferr' repo='Scripts' path='Snippets/Median\_Filter.py' label='Median\_Filter.py' %}):
+Jython example, demonstrating how to 1) load [BAR lib](#lib) (in this case {% include github org='tferr' repo='Scripts' path='lib/BARlib.py' label='BARlib.py' %}, using code generated by {% include bc path="Bar | Snippets | New Snippet..." %}) and 2) how to run a Snippet (in this case {% include github org='tferr' repo='Scripts' path='Snippets/Median\_Filter.py' label='Median\_Filter.py' %}):
 
     def myRoutines():
         import sys, ij, bar
@@ -240,7 +240,7 @@ In this case, you only need to paste the contents of your `myRoutines()` functio
 
 In more detail: Pass the active image - an [ImagePlus](http://javadoc.imagej.net/ImageJ1/ij/ImagePlus.htm) object - to `myRoutines()`. Retrieve a random {% include wikipedia title='Universally unique identifier' text='UUID'%} (e.g., `f7dfd6a9-f745-42c2-8874-0af67380c3f5`), convert it to a string, then use that string to rename the image using the \[http://javadoc.imagej.net/ImageJ1/ij/ImagePlus.html#setTitle(java.lang.String) setTitle()\] method in `ij.ImagePlus`.
 
-But because [BAR libs](#lib "wikilink") already contain such a function, we can just call the `randomString()` function in {% include github org='tferr' repo='Scripts' path='lib/BARlib.py' label='BARlib.py' %}, after loading the file:
+But because [BAR libs](#lib) already contain such a function, we can just call the `randomString()` function in {% include github org='tferr' repo='Scripts' path='lib/BARlib.py' label='BARlib.py' %}, after loading the file:
 
     def myRoutines(image):
         import sys, bar
@@ -248,7 +248,7 @@ But because [BAR libs](#lib "wikilink") already contain such a function, we can 
         import BARlib as lib
         image.setTitle( lib.randomString() )
 
-To log filename changes, we could use the same strategy used for the [IJM implementation](#IJ_Macro_Language "wikilink"). The simplest way to generate a CSV list would be to use ImageJ's Log window:
+To log filename changes, we could use the same strategy used for the [IJM implementation](#IJ_Macro_Language). The simplest way to generate a CSV list would be to use ImageJ's Log window:
 
     def myRoutines(image):
         import uuid
@@ -286,7 +286,7 @@ Visit the {% include github org='tferr' repo='Scripts' label='BAR repository' %}
 
 #### IJ Macro Language
 
-In an ImageJ macro (IJM) we will need to define first a function that produces a random filename. The IJM language does not feature an equivalent to the UUID module used previously in the [Python implementation](#Python "wikilink"). So, we are left with two approaches: 1) call [java.util. randomUUID](http://javadoc.imagej.net/Java8/java/util/UUID.html#randomUUID--) directly, or 2) write an ad-hoc function.
+In an ImageJ macro (IJM) we will need to define first a function that produces a random filename. The IJM language does not feature an equivalent to the UUID module used previously in the [Python implementation](#Python). So, we are left with two approaches: 1) call [java.util. randomUUID](http://javadoc.imagej.net/Java8/java/util/UUID.html#randomUUID--) directly, or 2) write an ad-hoc function.
 
 For the former, we take advantage of the IJM language built-in [call()](http://imagej.nih.gov/ij/developer/macro/functions.html#call) function, that calls public static methods in any Java class that ImageJ is aware of:
 
@@ -334,7 +334,7 @@ This would create e.g., `NHH6KG30C9`. However, a lengthier filename may be requi
         return string;
     }
 
-As such, calling `randomString(50, true)` would produce e.g., `E_ZXTQO_8E9XM_45WG7_8S39`. As with the [Python](#Python "wikilink") implementation, we could also use [BAR lib](#lib "wikilink") (in this case {% include github org='tferr' repo='Scripts' path='lib/BARlib.ijm' label='BARlib.ijm' %}). First, we need to load the file [before running our macro](#faq:ijm-lib "wikilink"), using the code generated by {% include bc path="Bar | Snippets | New Snippet" %}:<span id="IJMlib"></span>
+As such, calling `randomString(50, true)` would produce e.g., `E_ZXTQO_8E9XM_45WG7_8S39`. As with the [Python](#Python) implementation, we could also use [BAR lib](#lib) (in this case {% include github org='tferr' repo='Scripts' path='lib/BARlib.ijm' label='BARlib.ijm' %}). First, we need to load the file [before running our macro](#faq:ijm-lib), using the code generated by {% include bc path="Bar | Snippets | New Snippet" %}:<span id="IJMlib"></span>
 
     libPath = call('bar.Utils.getLibDir') + 'BARlib.ijm';
     libContents = File.openAsString(libPath);
@@ -374,7 +374,7 @@ The motivation behind bar is quite simple: To collect snippets of code that can 
 <!-- -->
 
 Will I find BAR useful?  
-{% include github org='tferr' repo='Scripts' path='README.md\#citations' label='Probably' %}. But it is likely that you will need to delve a bit into the [BAR philosophy](#Scripting_BARs "wikilink").
+{% include github org='tferr' repo='Scripts' path='README.md\#citations' label='Probably' %}. But it is likely that you will need to delve a bit into the [BAR philosophy](#Scripting_BARs).
 
 <!-- -->
 
@@ -389,7 +389,7 @@ In a case of premature termination BARs tend to exit rather silently. The best w
 <!-- -->
 
 <span id="faq:ImageJ1"></span>Does BAR work outside Fiji/ImageJ2?  
-Yes, but with limitations. ImageJ1 (see [ImageJ Flavors](ImageJ#Flavors) if you have doubts about existing ImageJ distributions) will only register scripts saved in the *plugins/* folder or on one of its immediate subfolders. For this reason, some of the {% include bc path='BAR|'%} submenus will appear as empty, and it may not be possible to navigate the *BAR/* directory using menu commands ([Commander](#Commander "wikilink") could still be used, nevertheless). Another important aspect is that, without access to the [built-in updater](/plugins/updater), you will have to manually update BAR (by monitoring its {% include github org='tferr' repo='Scripts/releases' label='rpository' %}), and to manually install (and update) the dependencies (i.e., third-party plugins and third-party libraries) used by BAR).
+Yes, but with limitations. ImageJ1 (see [ImageJ Flavors](ImageJ#Flavors) if you have doubts about existing ImageJ distributions) will only register scripts saved in the *plugins/* folder or on one of its immediate subfolders. For this reason, some of the {% include bc path='BAR|'%} submenus will appear as empty, and it may not be possible to navigate the *BAR/* directory using menu commands ([Commander](#Commander) could still be used, nevertheless). Another important aspect is that, without access to the [built-in updater](/plugins/updater), you will have to manually update BAR (by monitoring its {% include github org='tferr' repo='Scripts/releases' label='rpository' %}), and to manually install (and update) the dependencies (i.e., third-party plugins and third-party libraries) used by BAR).
 
 <!-- -->
 
@@ -399,7 +399,7 @@ Run the [Updater](/plugins/updater) ({% include bc path='Help|Update...'%}). Cho
 <!-- -->
 
 <span id="faq:ijm-lib"></span>I get an error when I try to load BAR lib (IJM). Why?  
-Macro functions from a IJ macro [lib](#lib "wikilink") may only be available once a new instance of the macro interpreter is initiated (this is not the case for other scripting languages). This means you have to call `ij.macro.Interpreter.setAdditionalFunctions` <u>before</u> running your macro. You can test this by running the default macro generated by {% include bc path="BAR | Snippets | New Snippet..." %}:
+Macro functions from a IJ macro [lib](#lib) may only be available once a new instance of the macro interpreter is initiated (this is not the case for other scripting languages). This means you have to call `ij.macro.Interpreter.setAdditionalFunctions` <u>before</u> running your macro. You can test this by running the default macro generated by {% include bc path="BAR | Snippets | New Snippet..." %}:
 
 <!-- -->
 

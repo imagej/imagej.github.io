@@ -7,7 +7,7 @@ description: test description
 
 {% include component-stats content='net.imagej:imagej-updater' %}The purpose of the ImageJ Updater is to keep you up-to-date with all components of ImageJ (or Fiji), i.e. the macros, scripts, plugins and the core components (libraries) needed by the plugins.
 
-As of 2011, the ImageJ Updater can handle [3rd-party update sites](#Adding_update_sites "wikilink"), i.e. anybody can set up their own update site which users can follow.
+As of 2011, the ImageJ Updater can handle [3rd-party update sites](#Adding_update_sites), i.e. anybody can set up their own update site which users can follow.
 
 Automatic Update
 ----------------

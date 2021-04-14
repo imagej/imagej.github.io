@@ -10,9 +10,9 @@ MTrack is a tool, which detects, tracks, and measures the behavior of fluorescen
 
 MTrack is a bi-modular tool. The first module detects microtubule seeds, tracks the growing microtubule ends and creates trajectories. The second module uses these trajectories to fit models of dynamic behavior (polymerization and depolymerization velocities, catastrophe and rescue frequencies) and is able to compute population statistics such as length distributions.
 
-To make yourself familiar with MTrack, please go to the [Example section](#Example "wikilink"), where you are able to download an example TIRF movie and you will find detailed instruction for running it.
+To make yourself familiar with MTrack, please go to the [Example section](#Example), where you are able to download an example TIRF movie and you will find detailed instruction for running it.
 
-For using MTrack on movies which have very low signal to noise ratio you should create a denoised image to be used for segmentation and upload it along with the original movie. In this setting the microtubules pixels are identified from the segmentation movie while the actual measurement is always done on the original movie. To make yourself familiar with this setting please go to the [Low SNR Example section](#Low_SNR_Example "wikilink") where we detail this approach with a demo movie.
+For using MTrack on movies which have very low signal to noise ratio you should create a denoised image to be used for segmentation and upload it along with the original movie. In this setting the microtubules pixels are identified from the segmentation movie while the actual measurement is always done on the original movie. To make yourself familiar with this setting please go to the [Low SNR Example section](#Low_SNR_Example) where we detail this approach with a demo movie.
 
 Installation
 ------------
@@ -37,7 +37,7 @@ The welcome panel will open.
 
 #### Choose Mode
 
-For a first analysis of your data, we suggest using the simple mode, in which we have pre-selected a number of parameters. In case you are unsatisfied with the outcome of the tracking, you can use the [advanced mode(MTrack)](Advanced_mode(MTrack) "wikilink") to fine-tune settings. When analyzing more than one movie, you can select [batch mode(MTrack)](Batch_mode(MTrack) "wikilink") and run many movies simultaneously. However, before running the program in batch mode, you have to at least run the program once in simple or advanced mode to select and save the required parameters.
+For a first analysis of your data, we suggest using the simple mode, in which we have pre-selected a number of parameters. In case you are unsatisfied with the outcome of the tracking, you can use the [advanced mode(MTrack)](Advanced_mode(MTrack)) to fine-tune settings. When analyzing more than one movie, you can select [batch mode(MTrack)](Batch_mode(MTrack)) and run many movies simultaneously. However, before running the program in batch mode, you have to at least run the program once in simple or advanced mode to select and save the required parameters.
 
 The following intro is on simple mode.
 
@@ -45,7 +45,7 @@ The following intro is on simple mode.
 
 Next, the user selects the movie. The movie to be uploaded is the original movie coming out of the microscope. In simple mode, the program will do a pseudo flat-field correction by default. This preprocessed movie will only be used for object recognition of seeds, not for end-point detection. End point detection will always be performed on the original image.
 
-In the advanced mode, the user has the option to either perform a flat-field correction and apply a median filter of a chosen radius. Alternatively, the user can upload their own preprocessed movie. (Read more about [Preprocessing(MTrack)](Preprocessing(MTrack) "wikilink")).
+In the advanced mode, the user has the option to either perform a flat-field correction and apply a median filter of a chosen radius. Alternatively, the user can upload their own preprocessed movie. (Read more about [Preprocessing(MTrack)](Preprocessing(MTrack))).
 
 For the movie type, choose one of the three supported options:
 
@@ -79,7 +79,7 @@ Before starting the actual tracking of the dynamically growing microtubules, the
 
 **Deselect and select ends**
 
-In case an end has been wrongly recognized, the user can deselect an end by left clicking on it in the image. The program will remember and allow to re-select this end by clicking Shift + left click (pink circle will mark the end). In case an end has not been recognized, use Shift + Alt + left click to select a user defined end (orange circle will mark the end). Read more on [microtubule polarity and (+) end vs. (-) end tracking](Microtubule_polarity_and_(+)_end_vs._(-)_end_tracking "wikilink").
+In case an end has been wrongly recognized, the user can deselect an end by left clicking on it in the image. The program will remember and allow to re-select this end by clicking Shift + left click (pink circle will mark the end). In case an end has not been recognized, use Shift + Alt + left click to select a user defined end (orange circle will mark the end). Read more on [microtubule polarity and (+) end vs. (-) end tracking](Microtubule_polarity_and_(+)_end_vs._(-)_end_tracking).
 
 **Select time**
 
