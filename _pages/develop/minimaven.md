@@ -26,13 +26,17 @@ Command-line options
 
 MiniMaven can be called via the main class *org.scijava.minimaven.MiniMaven*. Just like real *Maven*, you can start it directly in the directory:
 
-    ImageJ-<platform> --mini-maven <command>
+```
+ImageJ-<platform> --mini-maven <command>
+```
 
 To get a list of supported commands, use the command `help`.
 
 By default, MiniMaven will build the project specified by the *pom.xml* file in the current directory, recursing if it is an aggregate project. However, you can ask MiniMaven to look for a specific artifactId in an aggregate project's tree:
 
-    ImageJ-<platform> --mini-maven -DartifactId=<artifactId> <command>
+```
+ImageJ-<platform> --mini-maven -DartifactId=<artifactId> <command>
+```
 
 MiniMaven also heeds these properties:
 
