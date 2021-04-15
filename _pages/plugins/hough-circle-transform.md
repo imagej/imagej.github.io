@@ -35,7 +35,7 @@ Image Processing Workflow
 
 The Hough circle transform finds circles based on the rotational symmetry of the perimeter. Therefore, the data needs to be converted to this format for the transform to work.
 
-{% include thumbnail src='/media/Data Setup.png' title='\'\'\'Data processing steps to perform a Hough circle transform on an XYZ stack.\'\'\' \'\'Panel 1:\'\' Create an average intensity projection of the XYZ stack to generate a 2D projection. \'\'Panel 2:\'\' Use the "Find Edges" tool to preserve just the perimeter of each object. \'\'Panel 3:\'\' Threshold the image from panel 2 and create a binary mask. \'\'Panel 4:\'\' Run the Hough circle transform.'%}
+{% include thumbnail src='/media/Data Setup.png' title='**Data processing steps to perform a Hough circle transform on an XYZ stack.** *Panel 1:* Create an average intensity projection of the XYZ stack to generate a 2D projection. *Panel 2:* Use the "Find Edges" tool to preserve just the perimeter of each object. *Panel 3:* Threshold the image from panel 2 and create a binary mask. *Panel 4:* Run the Hough circle transform.'%}
 
 ### Step 0: Convert XYZ(T) data to XY(T) data
 
@@ -66,7 +66,7 @@ The plugin has two separate algorithms available:
 
 **Local Hough Transform: ** This algorithm is designed for high-speed tracking of circles in a time-lapse series. The algorithm performs the full Hough circle transform on the first frame to find the initial radius and position of each circle. In subsequent frames, the algorithm then only performs a Hough transform near the centroid of each circle in subsequent frames. If the number of found circles drops below the minimum number of specified circles, the algorithm performs a full Hough circle transform on the next frame to try and find any circles missed in the local search.
 
-{% include thumbnail src='/media/Hough GUI2.png' title='\'\'\'Hough Circle Transform GUI configurations\'\'\' \'\'Panel 1:\'\' Hough Circle transform - Easy Mode \'\'Panel 2:\'\' Hough Circle transform - Advanced Mode \'\'Panel 3:\'\' Local Hough Circle transform - Easy Mode \'\'Panel 4:\'\' Local Hough Circle transform - Advanced Mode'%}
+{% include thumbnail src='/media/Hough GUI2.png' title='**Hough Circle Transform GUI configurations** *Panel 1:* Hough Circle transform - Easy Mode *Panel 2:* Hough Circle transform - Advanced Mode *Panel 3:* Local Hough Circle transform - Easy Mode *Panel 4:* Local Hough Circle transform - Advanced Mode'%}
 
 ### GUI Mode
 

@@ -203,7 +203,7 @@ You should now find the plugin under the sub-menu {% include bc path='Plugins | 
 Examples
 --------
 
-<table><tbody><tr class="odd"><td><p>style="vertical-align:top" |{% include thumbnail src='/media/Arabidopsis-embryo-3d-animation.gif' title='3d reconstruction of an \'\'Arabidopsis thaliana\'\' embryo using the Morphological Segmentation plugin. Image courtesy of Jean-Christophe Palauqui (INRA-Versailles)'%}</p></td></tr></tbody></table>
+<table><tbody><tr class="odd"><td><p>style="vertical-align:top" |{% include thumbnail src='/media/Arabidopsis-embryo-3d-animation.gif' title='3d reconstruction of an *Arabidopsis thaliana* embryo using the Morphological Segmentation plugin. Image courtesy of Jean-Christophe Palauqui (INRA-Versailles)'%}</p></td></tr></tbody></table>
 
 Citation
 --------

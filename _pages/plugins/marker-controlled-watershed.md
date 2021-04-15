@@ -47,7 +47,7 @@ Output:
 
 -   Labeled image containing the catchment basins and (optionally) watershed lines (dams).
 
-{% include thumbnail src='/media/Arabidopsis-nucleus-segmentation.png' title='Example of marker-controlled watershed segmentation on nucleus of \'\'Arabidopsis thaliana\'\' (image courtesy of Kaori Sakai and Javier Arpon, INRA-Versailles)'%}
+{% include thumbnail src='/media/Arabidopsis-nucleus-segmentation.png' title='Example of marker-controlled watershed segmentation on nucleus of *Arabidopsis thaliana* (image courtesy of Kaori Sakai and Javier Arpon, INRA-Versailles)'%}
 
 Installation
 ------------

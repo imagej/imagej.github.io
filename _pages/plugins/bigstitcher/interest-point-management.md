@@ -31,7 +31,7 @@ You can right-click on a line in the list and click **Delete** to delete the int
 
 {% include thumbnail src='/media/BigStitcher ips explorer bdv all.png' title='all interest points as an overlay in BigDataViewer'%}
 
-{% include thumbnail src='/media/BigStitcher ips explorer bdv corresponding.png' title='\'\'\'corresponding\'\'\' interest points as an overlay in BigDataViewer'%}
+{% include thumbnail src='/media/BigStitcher ips explorer bdv corresponding.png' title='**corresponding** interest points as an overlay in BigDataViewer'%}
 
 <img src="/media/BigStitcher ips explorer panel.png" width="600"/>
 
