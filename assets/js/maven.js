@@ -95,7 +95,6 @@ function catalogRoles(team, id, name, url, roles) {
     var role = roles[i];
     if (!(role in team)) team[role] = [];
     team[role].push({'id': id, 'name': name, 'url': url});
-    console.log(`${role} -> ${JSON.stringify(team[role])}`);
   }
 }
 
@@ -104,7 +103,7 @@ function populateFromPOM(pom) {
   var a = value(pom, ['artifactId']);
   var v = value(pom, ['version']) || value(pom, ['parent', 'version']);
 
-  fill('component-name', value(pom, ['name']));
+  fill('statbox-name', value(pom, ['name']));
   var sourceURL = value(pom, ['scm', 'url']);
   var sourceLabel = 'online';
   if (sourceURL.startsWith('https://github.com/')) sourceLabel = 'on GitHub';
