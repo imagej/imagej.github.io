@@ -4,9 +4,22 @@ title: User ›Hinerm
 layout: page
 categories: 
 description: test description
+
+name: Mark Hiner
+title: Champion of ImageJ
+gravatar: 02dba515add5d5c4991f6b93520d502c
+affiliation:
+  - Eliceiri Lab / LOCI | /orgs/loci
+  - University of Wisconsin-Madison | https://wisc.edu/
+forum: hinerm
+github: hinerm
+stackoverflow: 1027800/hinerm
+openhub: hinerm
+osrc: hinerm
+linkedin: pub/mark-hiner/63/984/8b2
 ---
 
-{% include user-box name='Mark Hiner' title='Champion of ImageJ' gravatar='02dba515add5d5c4991f6b93520d502c' affiliation='UW-Madison [LOCI](/orgs/loci)' loci='mark-hiner' forum='hinerm' github='hinerm' stackoverflow='1027800/hinerm' openhub='hinerm' osrc='hinerm' linkedin='pub/mark-hiner/63/984/8b2' %}Mark was a member of the core [ImageJ2](/software/imagej2) development team at [LOCI](/orgs/loci) from 2011-2016, earning the title of Champion of ImageJ for his tireless enthusiasm and dedication to the community. He is co-founder of the [SCIFIO](/software/scifio) project, a robust and extensible library for reading and writing scientific image file formats, and accessible foundation for image format processing. He also developed the [ImageJ-MATLAB](ImageJ-MATLAB) project for [ImageJ](/about)/[MATLAB](MATLAB) interoperability. Mark rejoined the ImageJ team in 2020.
+Mark was a member of the core [ImageJ2](/software/imagej2) development team at [LOCI](/orgs/loci) from 2011-2016, earning the title of Champion of ImageJ for his tireless enthusiasm and dedication to the community. He is co-founder of the [SCIFIO](/software/scifio) project, a robust and extensible library for reading and writing scientific image file formats, and accessible foundation for image format processing. He also developed the [ImageJ-MATLAB](ImageJ-MATLAB) project for [ImageJ](/about)/[MATLAB](MATLAB) interoperability. Mark rejoined the ImageJ team in 2020.
 
 My work at LOCI
 ---------------

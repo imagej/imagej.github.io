@@ -4,6 +4,11 @@ title: User ›Khildebrand
 layout: page
 categories: 
 description: test description
----
 
-{% include user-box name='Katie Hildebrand' affiliation='UW-Madison [LOCI](/orgs/loci) (former)' %}
+name: Katie Hildebrand
+affiliation:
+  - Eliceiri Lab / LOCI (former) | /orgs/loci
+  - University of Wisconsin-Madison | https://wisc.edu/
+---
+{% include stub %}
+

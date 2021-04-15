@@ -4,9 +4,12 @@ title: User ›ImagingBook
 layout: page
 categories: 
 description: test description
+
+name: Wilhelm Burger
+github: imagingbook
 ---
 
-{% include user-box name='Wilhelm Burger' github='imagingbook' %}This account is used to manage the [ImagingBook update site](http://sites.imagej.net/ImagingBook/). See also {% include list-of-update-sites%}
+This account is used to manage the [ImagingBook update site](http://sites.imagej.net/ImagingBook/). See also {% include list-of-update-sites%}
 .
 
 To activate it:

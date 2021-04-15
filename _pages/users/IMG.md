@@ -5,4 +5,5 @@ layout: page
 categories: 
 description: test description
 ---
+{% include stub %}
 

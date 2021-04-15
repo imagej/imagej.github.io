@@ -4,10 +4,15 @@ title: User ›Maarzt
 layout: page
 categories: 
 description: test description
+
+name: Matthias Arzt | MPI-CBG/CSBD
+affiliation-url: /orgs/csbd
+forum: maarzt
+github: maarzt
 ---
 
 Matthias Arzt is a software developer at the Max Planck Institute of Molecular Cell Biology and Genetics.
 
 Main developer of the [Labkit](/plugins/labkit) plugin.
 
-{% include user-box name='Matthias Arzt' affiliation=' [MPI-CBG](https://www.mpi-cbg.de/)' forum='maarzt' github='maarzt' %}
+

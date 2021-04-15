@@ -4,6 +4,11 @@ title: User ›Leon
 layout: page
 categories: 
 description: test description
+
+name: Leon Yang | UW-Madison LOCI (former)
+affiliation-url: /orgs/loci
+forum: lyang
+github: lnyng
 ---
 
-{% include user-box name='Leon Yang' affiliation='UW-Madison [LOCI](/orgs/loci) (former)' loci='leon-yang' forum='lyang' github='lnyng' %}Leon is a former [LOCI](/orgs/loci) student programmer. He developed the first fully functional version of the [ImageJ Server](/plugins/server). He also worked on making the [ImageJ Ops](/develop/imagej-ops) project even more awesome.
+Leon is a former [LOCI](/orgs/loci) student programmer. He developed the first fully functional version of the [ImageJ Server](/plugins/server). He also worked on making the [ImageJ Ops](/develop/imagej-ops) project even more awesome.

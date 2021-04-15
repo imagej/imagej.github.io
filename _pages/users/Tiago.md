@@ -4,9 +4,19 @@ title: User ›Tiago
 layout: page
 categories: 
 description: test description
+
+name: Tiago Ferreira | HHMI - Janelia Research Campus
+affiliation-url: https://www.janelia.org/
+orcid: 0000-0001-6866-1540
+scholar: MOnW5FEAAAAJ
+researchgate: Tiago\_Ferreira51
+forum: tferr
+github: tferr
+osrc: tferr
+loop: 141716
 ---
 
-{% include user-box name='Tiago Ferreira' affiliation=' [HHMI - Janelia Research Campus](https://www.janelia.org/)' orcid='0000-0001-6866-1540' scholar='MOnW5FEAAAAJ' researchgate='Tiago\_Ferreira51' forum='tferr' github='tferr' osrc='tferr' loop='141716' %}Tiago Ferreira is the author of:
+Tiago Ferreira is the author of:
 
 -   [SNT](/plugins/snt) ({% include github org='morphonets' repo='SNT' label='GitHub' %})
 -   [Sholl Analysis](/plugins/sholl-analysis) ({% include github org='tferr' repo='ASA' label='GitHub' %})

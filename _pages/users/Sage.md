@@ -4,6 +4,13 @@ title: User ›Sage
 layout: page
 categories: 
 description: test description
+
+name: Daniel Sage
+affiliation:
+  - BIG | http://bigwww.epfl.ch/
+  - EPFL | http://epfl.ch/
+github: dasv74
+website: http://bigwww.epfl.ch/sage/
 ---
 
-{% include user-box name='Daniel Sage' affiliation=' [BIG](http://bigwww.epfl.ch/) at [EPFL](http://epfl.ch/)' github='dasv74' website='http://bigwww.epfl.ch/sage/' %}Daniel Sage has written many ImageJ plugins—e.g., [MIJ](/plugins/miji).
+Daniel Sage has written many ImageJ plugins—e.g., [MIJ](/plugins/miji).

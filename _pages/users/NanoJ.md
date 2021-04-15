@@ -4,6 +4,12 @@ title: User ›NanoJ
 layout: page
 categories: 
 description: test description
+
+name: Ricardo Henriques
+affiliation:
+  - LMCB | http://www.ucl.ac.uk/lmcb/
+  - UCL | http://www.ucl.ac.uk/
+website: http://www.ucl.ac.uk/lmcb/users/ricardo-henriques
 ---
 
-{% include user-box name='Ricardo Henriques' affiliation=' [LMCB](http://www.ucl.ac.uk/lmcb/) at [UCL](http://www.ucl.ac.uk/)' website='http://www.ucl.ac.uk/lmcb/users/ricardo-henriques' %}Dr. Henriques is the author of the [QuickPALM](/plugins/quickpalm) plugin.
+Dr. Henriques is the author of the [QuickPALM](/plugins/quickpalm) plugin.

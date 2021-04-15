@@ -4,6 +4,10 @@ title: User ›Frise
 layout: page
 categories: 
 description: test description
----
 
-{% include user-box name='Erwin Frise' affiliation=' [Lawrence Berkeley National Laboratory](http://www.lbl.gov/)' github='frederikfly' %}
+name: Erwin Frise
+affiliation: Lawrence Berkeley National Laboratory | http://www.lbl.gov/
+github: frederikfly
+---
+{% include stub %}
+

@@ -4,9 +4,16 @@ title: User ›White
 layout: page
 categories: 
 description: test description
+
+name: Daniel James White
+title: Ambassador of Fiji
+affiliation: GE Healthcare (Applied Precision, Inc.)
+forum: chalkie666
+github: chalkie666
+linkedin: pub/daniel-james-white/8/8b4/8a1
 ---
 
-{% include user-box name='Daniel James White' title='Ambassador of Fiji' affiliation='GE Healthcare (Applied Precision, Inc.)' forum='chalkie666' github='chalkie666' linkedin='pub/daniel-james-white/8/8b4/8a1' %}Hi there,
+Hi there,
 
 I have been nicknamed *Ambassador of Fiji* by the [Mother of Fiji](/users/Schindelin).
 

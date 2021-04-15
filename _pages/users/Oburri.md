@@ -4,9 +4,11 @@ title: User ›Oburri
 layout: page
 categories: 
 description: test description
----
 
-{% include user-box name='Olivier Burri' affiliation='EPFL' github='lacan' %}
+name: Olivier Burri
+affiliation: EPFL
+github: lacan
+---
 
 Olivier Burri
 =============

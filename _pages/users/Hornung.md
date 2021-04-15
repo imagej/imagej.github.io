@@ -4,6 +4,12 @@ title: User ›Hornung
 layout: page
 categories: 
 description: test description
----
 
-{% include user-box name='Daniel Hornung' affiliation=' [Biomedical Physics Group](http://www.bmp.ds.mpg.de/) , [MPIDS](http://www.ds.mpg.de/en)' website='http://www.bmp.ds.mpg.de/daniel\_hornung.html' %}
+name: Daniel Hornung
+affiliation:
+  - Biomedical Physics Group | http://www.bmp.ds.mpg.de/
+  - MPIDS | http://www.ds.mpg.de/en
+website: http://www.bmp.ds.mpg.de/daniel\_hornung.html
+---
+{% include stub %}
+

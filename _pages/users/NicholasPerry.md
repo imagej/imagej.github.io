@@ -4,9 +4,12 @@ title: User ›NicholasPerry
 layout: page
 categories: 
 description: test description
+
+name: Nick Perry
+github: nickp
 ---
 
-{% include user-box name='Nick Perry' github='nickp' %}== Contact ==
+== Contact ==
 
 You can contact me by [courier pigeon](mailto:nicholas.m.perry_at_gmail.com).
 

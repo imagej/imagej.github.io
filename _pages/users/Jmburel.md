@@ -4,7 +4,15 @@ title: User ›Jmburel
 layout: page
 categories: 
 description: test description
+
+name: Jean-Marie Burel
+gravatar: e1f7a610652e5e71eda0b0b8381c3f98
+affiliation:
+  - Swedlow Lab | https://www.openmicroscopy.org/teams/index.html#swedlow-lab
+  - University of Dundee
+  - Glencoe Software | https://www.glencoesoftware.com/about/team/
+forum: j.burel
+github: jburel
 ---
 
-{% include user-box name='Jean-Marie Burel' gravatar='e1f7a610652e5e71eda0b0b8381c3f98' affiliation=' [Swedlow Lab, University of Dundee](https://www.openmicroscopy.org/teams/index.html#swedlow-lab)  
-[Glencoe Software](https://www.glencoesoftware.com/about/team/)' forum='j.burel' github='jburel' %}Jean-Marie Burel is a senior software architect for the [Open Microscopy Environment](/software/omero).
+Jean-Marie Burel is a senior software architect for the [Open Microscopy Environment](/software/omero).

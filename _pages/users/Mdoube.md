@@ -4,6 +4,12 @@ title: User ›Mdoube
 layout: page
 categories: 
 description: test description
+
+name: Michael Doube
+gravatar: 0f0ebf95574504aa4bbd4c4ad1326c63
+forum: mdoube
+github: mdoube
+osrc: mdoube
 ---
 
-{% include user-box name='Michael Doube' gravatar='0f0ebf95574504aa4bbd4c4ad1326c63' forum='mdoube' github='mdoube' osrc='mdoube' %}Michael is the project lead for the [BoneJ](/plugins/bonej) and [BoneJ2](/plugins/bonej) plugins for [ImageJ](/about).
+Michael is the project lead for the [BoneJ](/plugins/bonej) and [BoneJ2](/plugins/bonej) plugins for [ImageJ](/about).

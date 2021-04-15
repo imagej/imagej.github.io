@@ -4,9 +4,16 @@ title: User ›JeanYvesTinevez
 layout: page
 categories: 
 description: test description
+
+name: Jean-Yves Tinevez
+gravatar: 8393457e2502f0dd9acfaa88483dcb03
+affiliation: Institut Pasteur
+forum: tinevez
+github: tinevez
+osrc: tinevez
 ---
 
-{% include user-box name='Jean-Yves Tinevez' gravatar='8393457e2502f0dd9acfaa88483dcb03' affiliation='Institut Pasteur' forum='tinevez' github='tinevez' osrc='tinevez' %}Hi,
+Hi,
 
 My name is Jean-Yves Tinevez. I used to work at the [Max-Planck Institute of Cell Biology and Genetics](http://mpi-cbg.de), in Dresden, and currently work at the Institut Pasteur, in the [imaging platform](http://www.pasteur.fr/ip/easysite/go/03b-000011-04a/recherche/plates-formes-technologiques/technopole-de-l-institut-pasteur/imagopole).
 

@@ -4,6 +4,11 @@ title: User ›Scrivello
 layout: page
 categories: 
 description: test description
+
+name: Karl-Heinz Kunzelmann | Klinikum der Universität München
+affiliation-url: https://www.klinikum.uni-muenchen.de/de/
+forum: Scrivello
+website: http://www.kunzelmann.de/
 ---
 
-{% include user-box name='Karl-Heinz Kunzelmann' affiliation=' [Klinikum der Universität München](https://www.klinikum.uni-muenchen.de/de/)' forum='Scrivello' website='http://www.kunzelmann.de/' %}This profile is brand new. I just started to experiment with the wiki. Please come back later. I will add more information as I get more familiar with the tools.
+This profile is brand new. I just started to experiment with the wiki. Please come back later. I will add more information as I get more familiar with the tools.

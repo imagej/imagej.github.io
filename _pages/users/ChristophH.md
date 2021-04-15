@@ -4,6 +4,9 @@ title: User ›ChristophH
 layout: page
 categories: 
 description: test description
----
 
-{% include user-box name='Christoph Hentschel' affiliation=' [Humboldt-Universität zu Berlin](https://www.thereberlab.com)' %}
+name: Christoph Hentschel
+affiliation: Humboldt-Universität zu Berlin | https://www.thereberlab.com
+---
+{% include stub %}
+

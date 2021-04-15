@@ -4,6 +4,10 @@ title: User ›M-entrup
 layout: page
 categories: 
 description: test description
----
 
-{% include user-box name='Michael Entrup' forum='m-entrup' github='m-entrup' %}
+name: Michael Entrup
+forum: m-entrup
+github: m-entrup
+---
+{% include stub %}
+

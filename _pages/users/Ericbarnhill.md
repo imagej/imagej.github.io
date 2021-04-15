@@ -4,6 +4,9 @@ title: User ›Ericbarnhill
 layout: page
 categories: 
 description: test description
----
 
-{% include user-box name='Eric Barnhill' github='ericbarnhill' %}
+name: Eric Barnhill
+github: ericbarnhill
+---
+{% include stub %}
+

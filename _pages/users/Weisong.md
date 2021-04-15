@@ -4,8 +4,13 @@ title: User ›Weisong
 layout: page
 categories: 
 description: test description
+
+name: Weisong Zhao | Harbin Institute of Technology
+affiliation-url: http://ise.hit.edu.cn/
+forum: WeisongZhao
+github: WeisongZhao
 ---
 
-{% include user-box name='Weisong Zhao' affiliation=' [Harbin Institute of Technology](http://ise.hit.edu.cn/)' forum='WeisongZhao' github='WeisongZhao' %} Weisong Zao is a Ph.D. student at the Harbin Institute of Technology and has contributed and is maintaining serveral plugins:
+Weisong Zao is a Ph.D. student at the Harbin Institute of Technology and has contributed and is maintaining serveral plugins:
 
 -   [Adaptive Median Filter](/plugins/adaptive-median-filter)

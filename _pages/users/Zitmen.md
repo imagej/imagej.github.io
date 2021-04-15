@@ -4,8 +4,9 @@ title: User ›Zitmen
 layout: page
 categories: 
 description: test description
----
 
-{% include user-box name='Martin Ovesný' github='zitmen' %}
+name: Martin Ovesný
+github: zitmen
+---
 
 -   [ThunderSTORM](https://github.com/zitmen/thunderstorm)

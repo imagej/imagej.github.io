@@ -4,6 +4,13 @@ title: User ›Etarena
 layout: page
 categories: 
 description: test description
----
 
-{% include user-box name='Ellen TA Dobson' affiliation='UW-Madison [LOCI](/orgs/loci)' loci='ellen-t-arena' forum='etadobson' github='etadobson' %}
+name: Ellen TA Dobson
+affiliation:
+  - Eliceiri Lab / LOCI | /orgs/loci
+  - University of Wisconsin-Madison | https://wisc.edu/
+forum: etadobson
+github: etadobson
+---
+{% include stub %}
+

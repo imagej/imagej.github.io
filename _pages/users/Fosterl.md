@@ -4,6 +4,10 @@ title: User ›Fosterl
 layout: page
 categories: 
 description: test description
----
 
-{% include user-box name='Les Foster' affiliation=' [Janelia Research Campus](https://www.janelia.org/)' github='lesfoster' %}
+name: Les Foster
+affiliation: Janelia Research Campus | https://www.janelia.org/
+github: lesfoster
+---
+{% include stub %}
+

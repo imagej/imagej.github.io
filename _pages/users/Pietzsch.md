@@ -4,6 +4,13 @@ title: User ›Pietzsch
 layout: page
 categories: 
 description: test description
+
+name: Tobias Pietzsch
+gravatar: 3669ee165fa6ef4954240a053b3d573a
+affiliation: MPI-CBG Dresden
+forum: tpietzsch
+github: tpietzsch
+osrc: tpietzsch
 ---
 
-{% include user-box name='Tobias Pietzsch' gravatar='3669ee165fa6ef4954240a053b3d573a' affiliation='MPI-CBG Dresden' forum='tpietzsch' github='tpietzsch' osrc='tpietzsch' %}Tobias Pietzsch develops the [BigDataViewer](/plugins/bdv), and is primary co-lead of the [ImgLib2](/imglib2) project.
+Tobias Pietzsch develops the [BigDataViewer](/plugins/bdv), and is primary co-lead of the [ImgLib2](/imglib2) project.

@@ -4,9 +4,30 @@ title: User ›Rueden
 layout: page
 categories: 
 description: test description
+
+name: Curtis Rueden
+website: https://restlesscoder.net/
+gravatar: 63df759e2779af56fd050a968ff98d09
+affiliation:
+  - Eliceiri Lab / LOCI | /orgs/loci
+  - University of Wisconsin-Madison | https://wisc.edu/
+forum: ctrueden
+github: ctrueden
+stackoverflow: 1207769/ctrueden
+openhub: ctrueden
+twitter: ctrueden
+linkedin: pub/curtis-rueden/15/372/52a
+researchgate: Curtis\_Rueden
+orcid: 0000-0001-7055-6707
+arxiv: rueden\_c\_1
+scholar: VqKfxYcAAAAJ
 ---
 
-{% include user-box name='Curtis Rueden' gravatar='63df759e2779af56fd050a968ff98d09' affiliation='UW-Madison [LOCI](/orgs/loci)' loci='curtis-rueden' forum='ctrueden' github='ctrueden' stackoverflow='1207769/ctrueden' openhub='ctrueden' osrc='ctrueden' linkedin='pub/curtis-rueden/15/372/52a' researchgate='Curtis\_Rueden' scholar='VqKfxYcAAAAJ' orcid='0000-0001-7055-6707' arxiv='rueden\_c\_1' website='https://restlesscoder.net/' %}Curtis Rueden directs the [software development efforts](https://loci.wisc.edu/software/home) of [LOCI](/orgs/loci). He is the principal architect of [ImageJ2](/software/imagej2), and the current maintainer of the [Fiji](/fiji) distribution of ImageJ.
+Curtis Rueden directs the
+[software development efforts](https://loci.wisc.edu/software/home)
+of [LOCI](/orgs/loci).
+He is the principal architect of [ImageJ2](/software/imagej2),
+and the current maintainer of the [Fiji](/fiji) distribution of ImageJ.
 
 What is Curtis working on?
 --------------------------

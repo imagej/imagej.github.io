@@ -4,7 +4,18 @@ title: User ›Joshmoore
 layout: page
 categories: 
 description: test description
+
+name: Josh Moore
+website: https://joshmoore.github.io/
+gravatar: 30943d213aaf3ad8fff5e354bc400f06
+affiliation:
+  - Swedlow Lab | https://www.openmicroscopy.org/teams/index.html#swedlow-lab
+  - University of Dundee
+  - Glencoe Software | https://www.glencoesoftware.com/about/team/
+forum: joshmoore
+github: joshmoore
+linkedin: in/joshuaallenmoore
+orcid: 0000-0003-4028-811X
 ---
 
-{% include user-box name='Josh Moore' gravatar='30943d213aaf3ad8fff5e354bc400f06' affiliation=' [Swedlow Lab, University of Dundee](https://www.openmicroscopy.org/teams/index.html#swedlow-lab)  
-[Glencoe Software](https://www.glencoesoftware.com/about/team/)' forum='joshmoore' github='joshmoore' linkedin='in/joshuaallenmoore' orcid='0000-0003-4028-811X' website='https://joshmoore.github.io/' %}Josh Moore is a senior software architect for the [Open Microscopy Environment](/software/omero).
+Josh Moore is a senior software architect for the [Open Microscopy Environment](/software/omero).

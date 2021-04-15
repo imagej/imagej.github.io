@@ -4,6 +4,9 @@ title: User ›Yul.liuyu
 layout: page
 categories: 
 description: test description
+
+github: ohliumliu
+name: Yu Liu
 ---
 
-{% include user-box github='ohliumliu' name='Yu Liu' %}Yu Liu is the maintainer of the ImageJ Latex [update site](Update_site).
+Yu Liu is the maintainer of the ImageJ Latex [update site](Update_site).

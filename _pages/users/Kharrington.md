@@ -4,8 +4,14 @@ title: User ›Kharrington
 layout: page
 categories: 
 description: test description
+
+name: Kyle Harrington
+affiliation: University of Idaho, Moscow
+github: kephale
+gravatar: 9e4ed4484fd425f3f178bfeed4777b31
+website: http://kyleharrington.com/
 ---
 
-{% include user-box name='Kyle Harrington' affiliation='University of Idaho, Moscow' github='kephale' gravatar='9e4ed4484fd425f3f178bfeed4777b31' website='http://kyleharrington.com/' %}Kyle Harrington developed the [FunImageJ](FunImageJ) plugin to facilitate concise [Clojure](/scripting/clojure) code, which is also an easy way to write standalone [ImageJ](/about)/[ImgLib2](/imglib2)-based programs in Clojure.
+Kyle Harrington developed the [FunImageJ](FunImageJ) plugin to facilitate concise [Clojure](/scripting/clojure) code, which is also an easy way to write standalone [ImageJ](/about)/[ImgLib2](/imglib2)-based programs in Clojure.
 
 Kyle is also a developer on the [SciView](/plugins/sciview) project for development of a replacement 3D visualization tool for [ImageJ](/about) and [KNIME](/software/knime).

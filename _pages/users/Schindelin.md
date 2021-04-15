@@ -4,9 +4,20 @@ title: User ›Schindelin
 layout: page
 categories: 
 description: test description
+
+name: Johannes Schindelin
+gravatar: c2938f05cefad961fec000e7734c73ac
+title: Mother of Fiji
+affiliation:
+  - MPI-CBG Dresden (former) | /orgs/mpi-cbg
+  - Eliceiri Lab / LOCI (former) | /orgs/loci
+  - University of Wisconsin-Madison | https://wisc.edu/
+github: dscho
+openhub: gitte
+osrc: dscho
 ---
 
-{% include user-box name='Johannes Schindelin' gravatar='c2938f05cefad961fec000e7734c73ac' title='Mother of Fiji' affiliation='MPI-CBG Dresden (former), LOCI (former)' loci='johannes-schindelin' github='dscho' openhub='gitte' osrc='dscho' %}= [Johannes Schindelin](http://loci.wisc.edu/people/johannes-schindelin) =
+= [Johannes Schindelin](http://loci.wisc.edu/people/johannes-schindelin) =
 
 ... was involved in the [Fiji](/fiji) and [ImageJ2](/software/imagej2) projects helping with programming, algorithms, educating scientists about the fine points of scientific image analysis, planning experiments, and generally cheering up people.
 

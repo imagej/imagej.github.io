@@ -4,6 +4,11 @@ title: User ›Skalarproduktraum
 layout: page
 categories: 
 description: test description
----
 
-{% include user-box name='Ulrik Günther' affiliation='MPI-CBG Dresden' forum='skalarproduktraum' github='skalarproduktraum' %}
+name: Ulrik Günther
+affiliation: MPI-CBG Dresden
+forum: skalarproduktraum
+github: skalarproduktraum
+---
+{% include stub %}
+

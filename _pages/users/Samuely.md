@@ -4,6 +4,14 @@ title: User ›Samuely
 layout: page
 categories: 
 description: test description
----
 
-{% include user-box name='Samuel Yang' affiliation='Google' github='samueljyang' linkedin='in/samueljyang0' researchgate='Samuel\_J\_Yang' scholar='93Pw8u8AAAAJ' website='http://samueljyang.xyz/' %}
+name: Samuel Yang
+affiliation: Google
+github: samueljyang
+linkedin: in/samueljyang0
+researchgate: Samuel\_J\_Yang
+scholar: 93Pw8u8AAAAJ
+website: http://samueljyang.xyz/
+---
+{% include stub %}
+

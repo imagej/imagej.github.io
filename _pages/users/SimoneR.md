@@ -4,6 +4,10 @@ title: User ›SimoneR
 layout: page
 categories: 
 description: test description
----
 
-{% include user-box name='Simone Reber' affiliation=' [IRI Life Sciences, Humboldt-Universitaet zu Berlin](https://www.iri-ls.hu-berlin.de/en)' website='http://www.thereberlab.com/' %}
+name: Simone Reber | IRI Life Sciences, Humboldt-Universitaet zu Berlin
+affiliation-url: https://www.iri-ls.hu-berlin.de/en
+website: http://www.thereberlab.com/
+---
+{% include stub %}
+

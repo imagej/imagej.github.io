@@ -4,6 +4,16 @@ title: User ›StephanP
 layout: page
 categories: 
 description: test description
----
 
-{% include user-box name='Stephan Preibisch' gravatar='f8be1a180210cf23ccf9b870f51f43d0' affiliation=' [Berlin Institute of Medical Systems Biology (BIMSB)](https://www.mdc-berlin.de/13800178/en/bimsb) of the [Max Delbrück Center (MDC)](https://www.mdc-berlin.de/en)' forum='StephanPreibisch' github='StephanPreibisch' osrc='StephanPreibisch' website='http://www.preibisch.net/' %}
+name: Stephan Preibisch
+gravatar: f8be1a180210cf23ccf9b870f51f43d0
+affiliation:
+  - Berlin Institute of Medical Systems Biology | https://www.mdc-berlin.de/13800178/en/bimsb
+  - Max Delbrück Center (MDC) | https://www.mdc-berlin.de/en
+forum: StephanPreibisch
+github: StephanPreibisch
+osrc: StephanPreibisch
+website: http://www.preibisch.net/
+---
+{% include stub %}
+

@@ -4,6 +4,11 @@ title: User ›VarunKapoor
 layout: page
 categories: 
 description: test description
----
 
-{% include user-box name='Varun Kapoor' gravatar='fa99446001a750a28e3cac0cd0dcffcf' affiliation=' [Institut Curie, Paris](https://science.curie.fr/members/varun-kapoor/)' github='kapoorlab' %}
+name: Varun Kapoor
+gravatar: fa99446001a750a28e3cac0cd0dcffcf | Institut Curie, Paris
+affiliation-url: https://science.curie.fr/members/varun-kapoor/
+github: kapoorlab
+---
+{% include stub %}
+

@@ -4,6 +4,13 @@ title: User ›Frauzufall
 layout: page
 categories: 
 description: test description
+
+name: Deborah Schmidt
+title: Software Developer
+affiliation: MPI-CBG Dresden | /orgs/mpi-cbg
+forum: frauzufall
+github: frauzufall
+website: http://frauzufall.de
 ---
 
-{% include user-box name='Deborah Schmidt' title='Software Developer' affiliation=' [MPI-CBG Dresden](https://www.mpi-cbg.de/)' forum='frauzufall' github='frauzufall' website='http://frauzufall.de' %}Deborah Schmidt aka frauzufall works as a software developer in the {% include person content='Jug' %} Lab at [CSBD](/orgs/csbd) / [MPI-CBG](/orgs/mpi-cbg).
+Deborah Schmidt aka frauzufall works as a software developer in the {% include person content='Jug' %} Lab at [CSBD](/orgs/csbd) / [MPI-CBG](/orgs/mpi-cbg).

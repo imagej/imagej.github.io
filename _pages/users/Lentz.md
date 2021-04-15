@@ -4,6 +4,9 @@ title: User ›Lentz
 layout: page
 categories: 
 description: test description
----
 
-{% include user-box name='Rick Lentz' affiliation='UW-Madison [LOCI](/orgs/loci) (former)' loci='rick-lentz' %}
+name: Rick Lentz | UW-Madison LOCI (former)
+affiliation-url: /orgs/loci
+---
+{% include stub %}
+

@@ -4,6 +4,9 @@ title: User ›William Hirst
 layout: page
 categories: 
 description: test description
----
 
-{% include user-box name='William Hirst' affiliation=' [Humboldt-Universität zu Berlin](https://www.thereberlab.com)' %}
+name: William Hirst | Humboldt-Universität zu Berlin
+affiliation-url: https://www.thereberlab.com
+---
+{% include stub %}
+

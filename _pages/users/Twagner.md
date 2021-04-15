@@ -4,9 +4,14 @@ title: User ›Twagner
 layout: page
 categories: 
 description: test description
+
+name: Thorsten Wagner | Max Planck Institute for Molecular Physiology
+affiliation-url: http://www.mpi-dortmund.de
+forum: twagner
+github: thorstenwagner
 ---
 
-{% include user-box name='Thorsten Wagner' affiliation=' [Max Planck Institute for Molecular Physiology](http://www.mpi-dortmund.de)' forum='twagner' github='thorstenwagner' %}Thorsten Wagner is a postdoc at the max planck institute of molecular physiology and has contributed and is maintaining serveral plugins:
+Thorsten Wagner is a postdoc at the max planck institute of molecular physiology and has contributed and is maintaining serveral plugins:
 
 -   [Ridge Detection](/plugins/ridge-detection)
 -   [Shape Filter](/plugins/shape-filter)

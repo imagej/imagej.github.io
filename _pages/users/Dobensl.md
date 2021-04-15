@@ -4,10 +4,15 @@ title: User ›Dobensl
 layout: page
 categories: 
 description: test description
----
 
+name: name 
+affiliation:
+  - Dobens Lab | http://sbs.umkc.edu/dobens/
+  - School of Biological Sciences | http://sbs.umkc.edu/
+  - University of Missouri-Kansas City | http://www.umkc.edu/
+---
 
 {% capture name%}
 {% include person content='Dobensl' %}
 {% endcapture %}
-{% include user-box name=name affiliation=' [School of Biological Sciences](http://sbs.umkc.edu/) , [University of Missouri-Kansas City](http://www.umkc.edu/)' website=' [Dobens Lab](http://sbs.umkc.edu/dobens/)' %}{% include person content='Dobensl' %} is the maintainer of the [FijiWings](/plugins/fijiwings) distribution.
+{% include person content='Dobensl' %} is the maintainer of the [FijiWings](/plugins/fijiwings) distribution.

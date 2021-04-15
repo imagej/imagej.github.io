@@ -4,9 +4,11 @@ title: User ›Lthomas
 layout: page
 categories: 
 description: test description
----
 
-{% include user-box name='Laurent Thomas' forum='LThomas' github='LauLauThom' %}
+name: Laurent Thomas
+forum: LThomas
+github: LauLauThom
+---
 
 PhD student @ACQUIFER working on image-processing for screening microscopy.
 

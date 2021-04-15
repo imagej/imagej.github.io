@@ -4,6 +4,9 @@ title: User ›M farna
 layout: page
 categories: 
 description: test description
----
 
-{% include user-box name='([Mai Elfarnawany](mailto:mai.elfarnawany@gmail.com))' affiliation='Postdoctoral Fellow, Biomedical Engineering, Western University, Canada' %}
+name: ([Mai Elfarnawany](mailto:mai.elfarnawany@gmail.com))
+affiliation: Postdoctoral Fellow, Biomedical Engineering, Western University, Canada
+---
+{% include stub %}
+

@@ -4,6 +4,11 @@ title: User ›Gtcwildfire
 layout: page
 categories: 
 description: test description
----
 
-{% include user-box name='Gabby Campagnola' affiliation='UW-Madison [LOCI](/orgs/loci) (former)' %}
+name: Gabby Campagnola
+affiliation:
+  - Eliceiri Lab / LOCI (former) | /orgs/loci
+  - University of Wisconsin-Madison | https://wisc.edu/
+---
+{% include stub %}
+

@@ -4,6 +4,12 @@ title: User ›Mark
 layout: page
 categories: 
 description: test description
----
 
-{% include user-box name='Mark Longair' gravatar='2dd7df6f56512a3c3fd764825d3d6d4d' github='mhl' osrc='mhl' website='http://longair.net/mark/' %}
+name: Mark Longair
+gravatar: 2dd7df6f56512a3c3fd764825d3d6d4d
+github: mhl
+osrc: mhl
+website: http://longair.net/mark/
+---
+{% include stub %}
+

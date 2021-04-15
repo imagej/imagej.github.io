@@ -4,8 +4,11 @@ title: User ›Vcaldas
 layout: page
 categories: 
 description: test description
----
 
-{% include user-box name='Victor Caldas' affiliation='Vrije Universiteit Amsterdam' github='vcaldas' website='http://victorcaldas.com' %}
+name: Victor Caldas
+affiliation: Vrije Universiteit Amsterdam
+github: vcaldas
+website: http://victorcaldas.com
+---
 
 [Link to Victor Caldas' personal homepage](http://victorcaldas.com)

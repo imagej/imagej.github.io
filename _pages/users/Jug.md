@@ -4,6 +4,17 @@ title: User ›Jug
 layout: page
 categories: 
 description: test description
+
+name: Florian Jug
+title: Grand Poobah
+affiliation:
+  - CSB Dresden (CSBD) | /orgs/csbd
+  - MPI-CBG Dresden | /orgs/mpi-cbg
+forum: fjug
+github: fjug
+osrc: fjug
+scholar: vYInKgwAAAAJ
+website: https://www.mpi-cbg.de/jug
 ---
 
-{% include user-box name='Florian Jug' title='Grand Poobah' affiliation=' [MPI-CBG Dresden](https://www.mpi-cbg.de/)' forum='fjug' github='fjug' osrc='fjug' scholar='vYInKgwAAAAJ' website='https://www.mpi-cbg.de/jug' %}Florian Jug is a group leader at MPI-CBG. With {% include person content='Tomancak' %}, he leads the [Dresden Analysis-of-Images Suite (DAIS)](/orgs/dais) project. He is also the one to blame for the [ClearVolume plugin for Fiji](/plugins/clearvolume).
+Florian Jug is a group leader at MPI-CBG. With {% include person content='Tomancak' %}, he leads the [Dresden Analysis-of-Images Suite (DAIS)](/orgs/dais) project. He is also the one to blame for the [ClearVolume plugin for Fiji](/plugins/clearvolume).

@@ -4,6 +4,10 @@ title: User ›Dimiterpp
 layout: page
 categories: 
 description: test description
----
 
-{% include user-box name='Dimiter Prodanov' forum='dimiterpp' github='dprodanov' %}
+name: Dimiter Prodanov
+forum: dimiterpp
+github: dprodanov
+---
+{% include stub %}
+

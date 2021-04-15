@@ -41,3 +41,8 @@
 #statbox #statbox-header {
 	text-align: center;
 }
+
+#statbox #statbox-affiliation {
+	clear: left;
+	line-height: 1.2em;
+}

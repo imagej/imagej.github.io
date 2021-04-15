@@ -4,6 +4,10 @@ title: User ›Davidhoerl
 layout: page
 categories: 
 description: test description
----
 
-{% include user-box name='David Hörl' affiliation=' [LMU](https://www.en.uni-muenchen.de/) , [MDC Berlin](https://www.mdc-berlin.de/)' github='hoerldavid' %}
+name: David Hörl
+affiliation: LMU , [MDC Berlin](https://www.mdc-berlin.de/) | https://www.en.uni-muenchen.de/
+github: hoerldavid
+---
+{% include stub %}
+

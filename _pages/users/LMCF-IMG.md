@@ -4,8 +4,14 @@ title: User ›LMCF-IMG
 layout: page
 categories: 
 description: test description
----
 
-{% include user-box name='[Martin Čapek](mailto:martin.capek_at_img.cas.cz)' affiliation=' [Light Microscopy Core Facility, Institute of Molecular Genetics of the CAS, Prague, Czech Republic](https://www.img.cas.cz/core-facilities/light-microscopy/)' github='LMCF-IMG' %}
+name: Martin Čapek
+email: martin.capek\_at\_img.cas.cz
+affiliation:
+  - Light Microscopy Core Facility | https://www.img.cas.cz/core-facilities/light-microscopy/
+  - Institute of Molecular Genetics of the CAS
+  - Prague, Czech Republic
+github: LMCF-IMG
+---
 
 [Wavelet Denoise](/plugins/wavelet-denoise) - plugin for wavelet-based denoising/filtering image data

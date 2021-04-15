@@ -4,6 +4,9 @@ title: User ›Stuyvenberg
 layout: page
 categories: 
 description: test description
----
 
-{% include user-box name='Luke Stuyvenberg' github='stuyvenberg' loci='luke-stuyvenberg' %}
+name: Luke Stuyvenberg
+github: stuyvenberg
+---
+{% include stub %}
+

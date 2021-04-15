@@ -4,6 +4,11 @@ title: User ›Nico
 layout: page
 categories: 
 description: test description
+
+name: Nico Stuurman
+affiliation: UCSF/HHMI
+github: nicost
+website: http://valelab.ucsf.edu/\~nico
 ---
 
-{% include user-box name='Nico Stuurman' affiliation='UCSF/HHMI' github='nicost' website='http://valelab.ucsf.edu/\~nico' %}Nico is a research specialist in the lab of Ron Vale at UCSF. He used to lead development of [Micro-Manager](http://micro-manager.org), a software package for microscope image acquisition based on ImageJ. Micro-Manager is now maintained by [Open Imaging](http://open-imaging.com)
+Nico is a research specialist in the lab of Ron Vale at UCSF. He used to lead development of [Micro-Manager](http://micro-manager.org), a software package for microscope image acquisition based on ImageJ. Micro-Manager is now maintained by [Open Imaging](http://open-imaging.com)

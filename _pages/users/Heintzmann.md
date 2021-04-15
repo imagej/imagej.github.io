@@ -4,6 +4,14 @@ title: User ›Heintzmann
 layout: page
 categories: 
 description: test description
----
 
-{% include user-box name='Rainer Heintzmann' affiliation=' [Institute of Physical Chemistry](https://www.ipc.uni-jena.de/Institute.htm) , [Jena University](http://www.uni-jena.de/en/start.html)' website='http://www.ipc.uni-jena.de/members.php?lang=en&id=133' %}
+name: Rainer Heintzmann
+affiliation: Institute of Physical Chemistry
+  - [Jena University](http://www.uni-jena.de/en/start.html)
+affiliation-url: https://www.ipc.uni-jena.de/Institute.htm
+website: 'http://www.ipc.uni-jena.de/members.php?
+lang: en&
+id: 133'
+---
+{% include stub %}
+

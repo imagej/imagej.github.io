@@ -4,6 +4,10 @@ title: User ›ClaudiaCarabanaGarcia
 layout: page
 categories: 
 description: test description
----
 
-{% include user-box name='Claudia Carabana Garcia' affiliation=' [Institut Curie, Paris](https://science.curie.fr/members/claudia-carabana/)' github='claudiacarabana' %}
+name: Claudia Carabana Garcia
+affiliation: Institut Curie, Paris | https://science.curie.fr/members/claudia-carabana/
+github: claudiacarabana
+---
+{% include stub %}
+

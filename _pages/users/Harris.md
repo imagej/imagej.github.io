@@ -4,6 +4,10 @@ title: User ›Harris
 layout: page
 categories: 
 description: test description
----
 
-{% include user-box name='Grant Harris' loci='grant-harris' github='tnargsirrah' osrc='tnargsirrah' %}
+name: Grant Harris
+github: tnargsirrah
+osrc: tnargsirrah
+---
+{% include stub %}
+

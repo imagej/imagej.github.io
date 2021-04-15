@@ -4,6 +4,9 @@ title: User ›Sorzano
 layout: page
 categories: 
 description: test description
----
 
-{% include user-box name='Carlos Óscar Sánchez Sorzano' website='http://biocomp.cnb.csic.es/\~coss/' %}
+name: Carlos Óscar Sánchez Sorzano
+website: http://biocomp.cnb.csic.es/\~coss/
+---
+{% include stub %}
+

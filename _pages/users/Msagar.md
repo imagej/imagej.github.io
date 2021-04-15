@@ -4,6 +4,11 @@ title: User ›Msagar
 layout: page
 categories: 
 description: test description
+
+name: Md Abdul Kader Sagar | UW-Madison LOCI
+affiliation-url: /orgs/loci
+github: aksagar
+osrc: aksagar
 ---
 
-{% include user-box name='Md Abdul Kader Sagar' affiliation='UW-Madison [LOCI](/orgs/loci)' loci='md-abdul-kader-sagar' github='aksagar' osrc='aksagar' %}Sagar develops and maintains the [SLIM Curve](/plugins/slim-curve) plugin for time-resolved lifetime image analysis.
+Sagar develops and maintains the [SLIM Curve](/plugins/slim-curve) plugin for time-resolved lifetime image analysis.

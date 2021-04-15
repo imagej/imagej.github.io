@@ -4,6 +4,10 @@ title: User ›Zjpetersen
 layout: page
 categories: 
 description: test description
----
 
-{% include user-box name='Zach Petersen' affiliation='UW-Madison [LOCI](/orgs/loci)' loci='zach-petersen' github='zjpetersen' %}
+name: Zach Petersen | UW-Madison LOCI
+affiliation-url: /orgs/loci
+github: zjpetersen
+---
+{% include stub %}
+

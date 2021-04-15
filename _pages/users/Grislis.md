@@ -4,6 +4,13 @@ title: User ›Grislis
 layout: page
 categories: 
 description: test description
----
 
-{% include user-box name='Aivar Grislis' affiliation='UW-Madison [LOCI](/orgs/loci) (former)' loci='aivar-grislis' github='grislis' osrc='grislis' %}
+name: Aivar Grislis
+affiliation:
+  - Eliceiri Lab / LOCI (former) | /orgs/loci
+  - University of Wisconsin-Madison | https://wisc.edu/
+github: grislis
+osrc: grislis
+---
+{% include stub %}
+

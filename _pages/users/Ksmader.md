@@ -4,6 +4,10 @@ title: User ›Ksmader
 layout: page
 categories: 
 description: test description
----
 
-{% include user-box name='Kevin Mader' github='kmader' linkedin='in/kevinmader' %}
+name: Kevin Mader
+github: kmader
+linkedin: in/kevinmader
+---
+{% include stub %}
+
