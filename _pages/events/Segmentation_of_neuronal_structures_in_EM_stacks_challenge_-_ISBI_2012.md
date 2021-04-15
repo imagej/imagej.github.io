@@ -90,7 +90,7 @@ References
 
 Publications about the data:
 
--   {% include cite content='journal' author='Albert Cardona, Stephan Saalfeld, Stephan Preibisch, Benjamin Schmid, Anchi Cheng, Jim Pulokas, Pavel Tomancak and Volker Hartenstein' title='An Integrated Micro- and Macroarchitectural Analysis of the ""Drosophila"" Brain by Computer-Assisted Serial Section Electron Microscopy' journal='PLoS Biol' year='2010' volume='8' pages='e1000502' number='10' month='10,' doi='10.1371/journal.pbio.1000502' publisher='Public Library of Science' url='http://dx.doi.org/10.1371%2Fjournal.pbio.1000502' %}
+-   {% include cite content='journal' author='Albert Cardona, Stephan Saalfeld, Stephan Preibisch, Benjamin Schmid, Anchi Cheng, Jim Pulokas, Pavel Tomancak and Volker Hartenstein' title='An Integrated Micro- and Macroarchitectural Analysis of the *Drosophila* Brain by Computer-Assisted Serial Section Electron Microscopy' journal='PLoS Biol' year='2010' volume='8' pages='e1000502' number='10' month='10,' doi='10.1371/journal.pbio.1000502' publisher='Public Library of Science' url='http://dx.doi.org/10.1371%2Fjournal.pbio.1000502' %}
 
 Publications about the metrics:
 

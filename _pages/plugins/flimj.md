@@ -13,8 +13,8 @@ description: test description
 {% include github org='slim-curve' repo='slim-plugin' %}
 {% endcapture %}
 {% include info-box software='ImageJ' name='FLIMJ plugin' logo='<img src="/media/Slim-curve-icon.png" width="64"/>' author=' [CRUK/MRC at University of Oxford](http://www.rob.ox.ac.uk/)  
-[UW-Madison LOCI](http://loci.wisc.edu/)' maintainer=maintainer filename='flimlib.jar, flimlib-""arch""-""ver"".jar,  
-flimj-ops-""ver"".jar' source=source latest-version='1.0.0' website='https://flimlib.github.io/' category='[:Category:Analysis](Category_Analysis)' %}
+[UW-Madison LOCI](http://loci.wisc.edu/)' maintainer=maintainer filename='flimlib.jar, flimlib-*arch*-*ver*.jar,  
+flimj-ops-*ver*.jar' source=source latest-version='1.0.0' website='https://flimlib.github.io/' category='[:Category:Analysis](Category_Analysis)' %}
 
 Introduction
 ------------

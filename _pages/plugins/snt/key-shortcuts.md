@@ -9,7 +9,7 @@ description: test description
 
 
 {% capture text%}
-Most SNT features are triggered by keyboard shortcuts. Shortcuts are typically single keystrokes and do not require other modifier keys to be pressed. Most are highlighted in the user interface. E.g., to toggle the ""<u>H</u>essian analysis"" checkbox, one only needs to press its highlighted letter, i.e., {% include key content='H' %}.
+Most SNT features are triggered by keyboard shortcuts. Shortcuts are typically single keystrokes and do not require other modifier keys to be pressed. Most are highlighted in the user interface. E.g., to toggle the *<u>H</u>essian analysis* checkbox, one only needs to press its highlighted letter, i.e., {% include key content='H' %}.
 {% endcapture %}
 {% include ambox text=text %}
 

@@ -5,7 +5,7 @@ categories: Registration|Registration, plugins
 description: test description
 ---
 
-{% include warning-box content='**""Please Note: This version of the software is outdated. We highly recommend using the new [automated workflow](Automated_workflow_for_parallel_Multiview_Reconstruction). It is much more user friendly, efficient and versatile using full automation of the processing**""' %}
+{% include warning-box content='Please Note: This version of the software is outdated. We highly recommend using the new [automated workflow](Automated_workflow_for_parallel_Multiview_Reconstruction). It is much more user friendly, efficient and versatile using full automation of the processing.' %}
 
 {% include info-box name='Selective Plane Illumination Microscopy Registration on a cluster' software='Fiji' author='Stephan Saalfeld, Christopher Schmied, Pavel Tomancak' maintainer='Pavel Tomancak' filename='n.a.' released='May 2013' latest-version='May 2013' category='[Registration](Category_Registration)' website=' [Pavel Tomancak"s homepage](http://www.mpi-cbg.de/research/research-groups/pavel-tomancak.html)' %}= Introduction =
 

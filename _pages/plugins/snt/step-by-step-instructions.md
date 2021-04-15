@@ -24,7 +24,7 @@ Starting A Path
 
 <img src="/media/Snt-cropped-after-starting-2.png" title="fig:First point of a path selected" width="400" alt="First point of a path selected" /> <img src="/media/Snt-cropped-mid-tracing-2.png" title="fig:A* search animated progress" width="400" alt="A* search animated progress" /> A small circle should appear, highlighting the start of the path. Move through the stack to find a subsequent point further along the same structure to be traced (neuron, blood vessel, etc.), and click there.
 
-If a path between the two points cannot be found immediately, you may see the animated progress of the search. You can scroll through the stack while such a search progresses: If it appears to not be making good progress, it's probably best to press the "Cancel/Esc" button (shortcut: {% include key content='C' %}/{% include key content='Esc' %}) and pick a point closer to the start point. {% include tip id='external-traces' tip='Increase""Z"" in the ""Cursor Auto-snapping"" panel for automated Z-navigation on signal mouseover.' %}
+If a path between the two points cannot be found immediately, you may see the animated progress of the search. You can scroll through the stack while such a search progresses: If it appears to not be making good progress, it's probably best to press the "Cancel/Esc" button (shortcut: {% include key content='C' %}/{% include key content='Esc' %}) and pick a point closer to the start point. {% include tip id='external-traces' tip='Increase *Z* in the *Cursor Auto-snapping* panel for automated Z-navigation on signal mouseover.' %}
 
 ### III. Confirm The Temporary Segment
 
@@ -180,7 +180,7 @@ To get the spatial calibration for your image, go to {% include bc path='Image|P
 
 </div>
 
-To display the image in a separate window, from the SNT dialog use {% include bc path='Show Cached Image'%} from the *gear* menu or {% include bc path='View | Show Cached ""Secondary Image""'%}. <img src="/media/Display-filtered-image.png" title="fig:Secondary Image MIP" width="400" alt="Secondary Image MIP" />
+To display the image in a separate window, from the SNT dialog use {% include bc path='Show Cached Image'%} from the *gear* menu or {% include bc path='View | Show Cached *Secondary Image*'%}. <img src="/media/Display-filtered-image.png" title="fig:Secondary Image MIP" width="400" alt="Secondary Image MIP" />
 
 #### Multiple Images
 

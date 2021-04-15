@@ -46,7 +46,7 @@ The Fiji Build system
 
 Fiji used to have its home-brewn build system. We switched to using [Maven](/develop/maven) in 2012, though.
 
-For convenience, there is a {% include github org='scijava' repo='minimaven' label='""Mini Maven""' %} project that allows building Fiji without a full-blown Maven; however, for serious development, real Maven, or even better, Eclipse or Netbeans is recommended.
+For convenience, there is a {% include github org='scijava' repo='minimaven' label='*Mini Maven*' %} project that allows building Fiji without a full-blown Maven; however, for serious development, real Maven, or even better, Eclipse or Netbeans is recommended.
 
 For backwards-compatibility, *Mini Maven* can be called via **./Build.sh** in the top-level directory of a *fiji.git* checkout. Despite the name, it does not really build anything, but only draws in all Fiji components as [Maven](/develop/maven) dependencies.
 

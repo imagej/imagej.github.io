@@ -6,10 +6,10 @@ categories: Development
 description: test description
 ---
 
-{% include info-box content='This page describes the ""social"" structure of [SciJava](SciJava) projects.
+{% include info-box content='This page describes the *social* structure of [SciJava](SciJava) projects.
 
--   For information on the ""technical"" structure, see [Architecture](/develop/architecture).
--   For information on the ""legal"" structure, see [Licensing](/licensing).' %}
+-   For information on the *technical* structure, see [Architecture](/develop/architecture).
+-   For information on the *legal* structure, see [Licensing](/licensing).' %}
 
 
 The [ImageJ](/about) project, and related projects in the [SciJava](SciJava) software ecosystem, are governed as [open source](Open_source) software projects. Everybody is welcome to [contribute](/licensing/contributing) with [plugins](/fiji/plugins), patches, [bug reports](/help/report-a-bug), [tutorials](/Category_Tutorials), [documentation](/learn), and artwork.

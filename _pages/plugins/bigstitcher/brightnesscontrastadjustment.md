@@ -7,11 +7,11 @@ description: test description
 Overview
 --------
 
-Even after correcting for fixed-pattern noise (see [here](/plugins/bigstitcher/flatfield-correction)), differences in brightness and contrast between images, e.g. due to bleaching, might persist and be visible in the fused images. To correct for this, we estimate optimal linear transforms of pixel intensities in adjacent images to achieve uniform brightness and contrast in the whole dataset. We minimize the intensity difference of all pixels in the overlapping volume of two images according to the current registrations via a linear transform for each image: *I′*(x) = *I*(x) \* *α* + *β*
+Even after correcting for fixed-pattern noise (see [here](/plugins/bigstitcher/flatfield-correction)), differences in brightness and contrast between images, e.g. due to bleaching, might persist and be visible in the fused images. To correct for this, we estimate optimal linear transforms of pixel intensities in adjacent images to achieve uniform brightness and contrast in the whole dataset. We minimize the intensity difference of all pixels in the overlapping volume of two images according to the current registrations via a linear transform for each image: $$I'(x) = I(x) * \alpha + \beta$$
 
 The brightness and contrast adjustment is available in **Multiview mode** under {% include bc path='Processing|Intensity Adjustment'%}.
 
-<img src="/media/BigStitcher Intensity Adjustment menu.png" width="500"/>
+<img src="/media/BigStitcher_Intensity_Adjustment_menu.png" width="500"/>
 
 {% include info-box content='Calculating the intensity adjustment requires the images to be aligned, therefore use it as a last step after registration before fusing the dataset.' %}
 
@@ -27,17 +27,17 @@ First, since the adjustment is calculates for pixel intensities in overlapping a
 -   **Downsampling** By how much to downsample the images for the calculation. Since in this step we are only interested in larger-scale intensity variations, we recommend to downsample a lot.
 -   **Max inliers** How much pixels to consider at most for each image pair.
 
-Below, you can set various regularization parameters for the intensity adjustment function that is fitted to the data. In detail, we will fit a weighted average of the original image intensity *I*(x) and a weighted average of a linear transformation *I*(x) \* α + β1 and an additive offset *I*(x) + β2 with weights λ1 and λ2:
+Below, you can set various regularization parameters for the intensity adjustment function that is fitted to the data. In detail, we will fit a weighted average of the original image intensity $$I(x)$$ and a weighted average of a linear transformation $$I(x) * \alpha + \beta1$$ and an additive offset $$I(x) + \beta2$$ with weights $$\lambda1$$ and $$\lambda2$$:
 
-λ2 \* *I*(x) + (1-λ2) \* (λ1 \* (*I*(x) + β2) + (1 - λ1) \* (*I*(x) \* α + β1) )
+$$\lambda2 * I(x) + (1-\lambda2) * (\lambda1 * (I(x) + \beta2) + (1 - \lambda1) * (I(x) * \alpha + \beta1) )$$
 
-The options at the bottom of the dialog set the values for λ1 and λ2:
+The options at the bottom of the dialog set the values for \lambda1 and \lambda2:
 
 -   **Affine intensity mapping (Scale & Offset)** enables a linear transform of the intensities instead of just an additive offset.
--   **Offset only intensity regularization** corresponds to λ1. Higher values give more weight to an offset-correction vs. a scale and offset correction. Note that if **Affine intensity mapping** is deselected, λ1 =1 automatically, so only an offset transform will be calculated.
--   **Unmodified intensity regularization** corresponds to λ2. Higher values give more weight to an identiy transformation, i.e. leaving the corrected intensity values as close to the original as possible.
+-   **Offset only intensity regularization** corresponds to $$\lambda1$$. Higher values give more weight to an offset-correction vs. a scale and offset correction. Note that if **Affine intensity mapping** is deselected, $$\lambda1 = 1$$ automatically, so only an offset transform will be calculated.
+-   **Unmodified intensity regularization** corresponds to $$\lambda2$$. Higher values give more weight to an identiy transformation, i.e. leaving the corrected intensity values as close to the original as possible.
 
-{% include info-box content='If λ1 and λ2 are both set to 0, the fitted transformation might converge to ""I""(x) \* 0 + β1, i.e. setting all intensities equal. To prevent this, please always use values ≥ 0 for at least one of the regularization parameters.' %}
+{% include info-box content='If $$\lambda1$$ and $$\lambda2$$ are both set to 0, the fitted transformation might converge to $$I(x) * 0 + \beta1$$, i.e. setting all intensities equal. To prevent this, please always use values $$\ge 0$$ for at least one of the regularization parameters.' %}
 
 #### Displaying
 

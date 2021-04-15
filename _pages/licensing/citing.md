@@ -5,11 +5,11 @@ section: About
 description: test description
 ---
 
-{% include info-box content='This page describes how to ""cite"" [SciJava](SciJava) projects.
+{% include info-box content='This page describes how to *cite* [SciJava](SciJava) projects.
 
--   For information on who ""contributes"" to these projects, see [Contributors](/about/contributors).
--   For information on who ""maintains"" these projects, see [Governance](/about/governance).
--   For information on how ImageJ projects are ""funded"", see [Funding](/licensing/funding).' %}
+-   For information on who *contributes* to these projects, see [Contributors](/about/contributors).
+-   For information on who *maintains* these projects, see [Governance](/about/governance).
+-   For information on how ImageJ projects are *funded*, see [Funding](/licensing/funding).' %}
 
 
 == Guidelines ==

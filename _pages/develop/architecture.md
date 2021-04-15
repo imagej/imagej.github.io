@@ -6,10 +6,10 @@ categories: Development
 description: test description
 ---
 
-{% include info-box content='This page describes the ""technical"" structure of [SciJava](SciJava) and [ImageJ](/about) projects.
+{% include info-box content='This page describes the *technical* structure of [SciJava](SciJava) and [ImageJ](/about) projects.
 
--   For information on the ""social"" structure, see [Governance](/about/governance).
--   For information on the ""legal"" structure, see [Licensing](/licensing).' %}
+-   For information on the *social* structure, see [Governance](/about/governance).
+-   For information on the *legal* structure, see [Licensing](/licensing).' %}
 
 
 This page describes the technical structure of [SciJava](SciJava) and [ImageJ](/about) projects. For maximum benefit, we suggest readers familiarize themselves with [Maven](/develop/maven), [Git](Git) and [GitHub](/develop/github) before reading the sections here.

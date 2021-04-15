@@ -7,8 +7,8 @@ description: test description
 ---
 
 
- {% include info-box content='This page has approaches for ""software developers"" to use for debugging ImageJ.  
-If you are a ""user"" looking to troubleshoot issues, see the [Troubleshooting](/help/troubleshooting) page.' %}
+ {% include info-box content='This page has approaches for *software developers* to use for debugging ImageJ.  
+If you are a *user* looking to troubleshoot issues, see the [Troubleshooting](/help/troubleshooting) page.' %}
 
 Launching ImageJ in debug mode
 ==============================

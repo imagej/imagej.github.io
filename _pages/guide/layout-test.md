@@ -123,30 +123,30 @@ Specific Icons
 Operating systems
 -----------------
 {% raw %}
-{% include linux content='Everyone agrees: Linux is the ""best"" operating system!' %}
+{% include linux content='Everyone agrees: Linux is the *best* operating system!' %}
 {% endraw %}
 
-{% include linux content='Everyone agrees: Linux is the ""best"" operating system!' %}  
+{% include linux content='Everyone agrees: Linux is the *best* operating system!' %}  
 
 
 
 
 
 {% raw %}
-{% include windows content='Everyone agrees: Windows is the ""best"" operating system!' %}
+{% include windows content='Everyone agrees: Windows is the *best* operating system!' %}
 {% endraw %}
 
-{% include windows content='Everyone agrees: Windows is the ""best"" operating system!' %}  
+{% include windows content='Everyone agrees: Windows is the *best* operating system!' %}  
 
 
 
 
 
 {% raw %}
-{% include macos content='Everyone agrees: macOS is the ""best"" operating system!' %}
+{% include macos content='Everyone agrees: macOS is the *best* operating system!' %}
 {% endraw %}
 
-{% include macos content='Everyone agrees: macOS is the ""best"" operating system!' %}  
+{% include macos content='Everyone agrees: macOS is the *best* operating system!' %}  
 
 
 

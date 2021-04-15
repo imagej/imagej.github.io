@@ -14,7 +14,7 @@ Following an update site
 
 <div style="clear: right; float: right">
 
-{% include fiji content='The [Fiji](/fiji) distribution of ImageJ ships with both the ""/about"" and ""/fiji"" sites enabled. You can transform your ImageJ installation into a Fiji one simply by enabling the ""/fiji"" update site.' %}
+{% include fiji content='The [Fiji](/fiji) distribution of ImageJ ships with both the `/about` and `/fiji` sites enabled. You can transform your ImageJ installation into a Fiji one simply by enabling the `/fiji` update site.' %}
 
 </div>
 

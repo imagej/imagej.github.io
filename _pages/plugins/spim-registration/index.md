@@ -11,7 +11,7 @@ artifact: sc.fiji:SPIM\_Registration
 Important Note
 --------------
 
-{% include warning-box content='**""Please Note: This version of the software is outdated. It will be part of Fiji for the time being, but I highly recommend using the new [Multiview Reconstruction Plugin](/plugins/multiview-reconstruction). It is much more powerful, flexible and completely integrated with the [BigDataViewer](/plugins/bdv).**""' %}
+{% include warning-box content='Please Note: This version of the software is outdated. It will be part of Fiji for the time being, but I highly recommend using the new [Multiview Reconstruction Plugin](/plugins/multiview-reconstruction). It is much more powerful, flexible and completely integrated with the [BigDataViewer](/plugins/bdv).' %}
 
 Citation
 --------

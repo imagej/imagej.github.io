@@ -5,10 +5,10 @@ section: About:Licensing
 description: test description
 ---
 
-{% include info-box content='This page describes the ""legal"" structure of [SciJava](SciJava) projects.
+{% include info-box content='This page describes the *legal* structure of [SciJava](SciJava) projects.
 
--   For information on their ""technical"" structure, see [Architecture](/develop/architecture).
--   For information on their ""social"" structure, see [Governance](/about/governance).' %}
+-   For information on their *technical* structure, see [Architecture](/develop/architecture).
+-   For information on their *social* structure, see [Governance](/about/governance).' %}
 
 
 The [ImageJ](/about) project, and related projects in the [SciJava](SciJava) component collection, are licensed as [open source](Open_source) software (OSS) projects.

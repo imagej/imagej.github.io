@@ -6,8 +6,8 @@ categories: tutorials
 description: test description
 ---
 
- {% include info-box content='This page presents exercises for ""software developers"" to use for debugging ImageJ.  
-If you are a ""user"" looking to troubleshoot issues, see the [Troubleshooting](/help/troubleshooting) page.' %}
+ {% include info-box content='This page presents exercises for *software developers* to use for debugging ImageJ.  
+If you are a *user* looking to troubleshoot issues, see the [Troubleshooting](/help/troubleshooting) page.' %}
 
 [Debugging](/develop/debugging) is the art of determining the cause and/or location of a problem. The purpose of this guide is to provide developers practical, hands-on experience using a variety of debugging techniques to identify problems in code.
 
@@ -89,7 +89,7 @@ To investigate further, try to complete the following debugging steps:
 6.  In the *Variables* window, look at the value of the Object variable
 7.  'resume' execution until the program completes
 
-{% include expanding-box content='Now that you"ve walked through the program, do you know ""why"" we got a `NullPointerException`? \| &gt; Although `makeAThing` does create an new Object, that Object isn"t actually returned by the method.' %}
+{% include expanding-box content='Now that you"ve walked through the program, do you know *why* we got a `NullPointerException`? \| &gt; Although `makeAThing` does create an new Object, that Object isn"t actually returned by the method.' %}
 
 **Takeaway**
 
@@ -114,7 +114,7 @@ Try setting a breakpoint on the conditional line:
 
     if (index < 0 || index >= list.size()) {
 
-{% include expanding-box content='Try debugging now, using ""Resume"" any time a breakpoint is encountered. How many times do you hit a breakpoint? \| &gt;Three times. This is because we"re debugging inside a method that is used multiple times in our program.' %}
+{% include expanding-box content='Try debugging now, using *Resume* any time a breakpoint is encountered. How many times do you hit a breakpoint? \| &gt;Three times. This is because we"re debugging inside a method that is used multiple times in our program.' %}
 
 Since we are only interested in the `processElementAtIndex` method when a problem actually occurs, let's try something different:
 
@@ -364,7 +364,7 @@ With this knowledge:
 
 Hint: raw stack dumps like this are not the easiest to read. Stack traces for all the threads in the JVM are printed, as well as additional information we're not interested in. Look for the the sections of stack traces sorted by thread, like you would see in an exception message, and find the `E6SleuthingSilence` class. Whatever follows that entry is at the top of the stack, and thus what was being processed on that thread when you took the stack trace.
 
-{% include expanding-box content='What method did you identify as being last executed before the crash? \|&gt;`net.imagej.trouble.hidden.NotALoop.dontLoopForever` is what you should find. Note that there is some hand-waving in this exercise: it"s possible that this method could have returned and a subsequent method caused the actual crash! But we at least have gained information, in that we know the `dontLoopForever` method ""was"" executed.' %}
+{% include expanding-box content='What method did you identify as being last executed before the crash? \|&gt;`net.imagej.trouble.hidden.NotALoop.dontLoopForever` is what you should find. Note that there is some hand-waving in this exercise: it"s possible that this method could have returned and a subsequent method caused the actual crash! But we at least have gained information, in that we know the `dontLoopForever` method *was* executed.' %}
 
 **Takeaways**
 
@@ -447,7 +447,7 @@ Exercise 8 in pretty straightforward with the main function calling two function
 
 <figure><img src="/media/E8ProfilingResults.PNG" title="Profiling Results" width="400" alt="Profiling Results" /><figcaption aria-hidden="true">Profiling Results</figcaption></figure>
 
-{% include expanding-box content='Which method takes more time? ""doStuff"" or ""doMoreStuff""? \|Answer - **doStuff**. Exact timing will vary per computer, but in our case ""doStuff"" took 954 ms while ""doMoreStuff"" took 710 ms.' %}
+{% include expanding-box content='Which method takes more time? `doStuff` or `doMoreStuff`? \|Answer - **doStuff**. Exact timing will vary per computer, but in our case `doStuff` took 954 ms while `doMoreStuff` took 710 ms.' %}
 
 {% include expanding-box content='Are the number of invocations/function calls of both functions same ? \|Yes. This number will change based on the length of profiling, but in this case we see both methods were called 83,573,448 times - so the difference in timing is truly due to length of method execution.' %}
 

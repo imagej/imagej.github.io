@@ -139,7 +139,7 @@ Alternatively, keyboard shortcuts can be defined in macros that call BAR command
 
 As [mentioned](#Context_Menu), such macros can then be pasted into the text area of {% include bc path="Edit | Options | Startup..." %} so that they can be executed when ImageJ starts up. 
 {% capture tip%}
-Two other expedite ways of retrieving commands include: 1) Pressing {% include key content='press\|L' %}, the shortcut for the \_\_\_SHADOW3\_\_\_ and 2) Pressing {% include key content='press\|9' %}, the default shortcut for the ""Recent Commands"" list.
+Two other expedite ways of retrieving commands include: 1) Pressing {% include key content='press\|L' %}, the shortcut for the \_\_\_SHADOW3\_\_\_ and 2) Pressing {% include key content='press\|9' %}, the default shortcut for the *Recent Commands* list.
 {% endcapture %}
 {% include tip id='ExpediteAccess' tip=tip %}== Scripting BARs == Although BARs can be used as standalone commands, the scripts and plugins in BAR become more useful when incorporated into other routines.
 
@@ -223,7 +223,7 @@ Jython example, demonstrating how to 1) load [BAR lib](#lib) (in this case {% in
 {% capture tip%}
 Note also that there is an \_\_\_SHADOW3\_\_\_ (but less flexible) way to \_\_\_SHADOW4\_\_\_ a folder: The built-in {% include bc path="Process | Batch | Macro..." %} \_\_\_SHADOW5\_\_\_.
 
-In this case, you only need to paste the contents of your `myRoutines()` function into the text area of the command. However, by default, {% include bc path="Process | Batch | Macro..." %} assumes you want to process ""all"" the files in a directory. If that is not the case, i.e., you want to restrict the processing to certain file types, you will have to use {% include wikipedia title='Regular expression' text='regex'%} to instruct the built-in command on the file extensions to be considered (see \_\_\_SHADOW6\_\_\_"s built-in help for several regex examples). E.g., typing the following in the ""File name contains"" field of {% include bc path="Process | Batch | Macro..." %}, would restrict processing to `.tif`, `.stk` and `.oib` files (the default extensions specified in the `validExtension()` function of {% include github org='tferr' repo='Scripts' path='Snippets/Process\_Folder\_IJM.ijm' label='Process\_Folder\_IJM.ijm' %}):
+In this case, you only need to paste the contents of your `myRoutines()` function into the text area of the command. However, by default, {% include bc path="Process | Batch | Macro..." %} assumes you want to process *all* the files in a directory. If that is not the case, i.e., you want to restrict the processing to certain file types, you will have to use {% include wikipedia title='Regular expression' text='regex'%} to instruct the built-in command on the file extensions to be considered (see \_\_\_SHADOW6\_\_\_"s built-in help for several regex examples). E.g., typing the following in the *File name contains* field of {% include bc path="Process | Batch | Macro..." %}, would restrict processing to `.tif`, `.stk` and `.oib` files (the default extensions specified in the `validExtension()` function of {% include github org='tferr' repo='Scripts' path='Snippets/Process\_Folder\_IJM.ijm' label='Process\_Folder\_IJM.ijm' %}):
 
     (.*(\.(?i)(tif
 {% endcapture %}

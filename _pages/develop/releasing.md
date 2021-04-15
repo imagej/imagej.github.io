@@ -6,10 +6,10 @@ categories: Development,Tutorials
 description: test description
 ---
 
-{% include info-box content='This page describes the core [SciJava](SciJava) ""software release process"".
+{% include info-box content='This page describes the core [SciJava](SciJava) *software release process*.
 
--   For an overview of ""distribution methods"", see [Distribution](/develop/distributing).
--   To ""download"" software releases, see [Downloads](Downloads).' %}
+-   For an overview of *distribution methods*, see [Distribution](/develop/distributing).
+-   To *download* software releases, see [Downloads](Downloads).' %}
 
 The SciJava [philosophy](/develop/philosophy) is to [release early, release often](Philosophy#Release_early.2C_release_often). At the same time, we always want to preserve [scientific reproducibility](/Architecture#Reproducible_builds). To make this possible we lean on several [project management](/develop/project-management) tools. The purpose of this guide is to take you through the process of using these tools with the goal of releasing new versions of your software, and then providing those releases to users.
 
