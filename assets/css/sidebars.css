@@ -63,8 +63,16 @@
 }
 
 #sidebar-right {
+	margin-top: -70px;
 	float: right;
 	width: 240px;
 	padding-left: 1em;
 	padding-right: 0.5em;
+}
+
+@media screen and (max-width: 780px) {
+	#sidebar-right {
+		width: 100%;
+		margin-top: 0;
+	}
 }
