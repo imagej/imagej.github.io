@@ -56,3 +56,11 @@ Fix ad hoc "*Note: asdf*" blurbs to use an include.
 Rename plugins/stitching-2d-3d to plugins/stitching
 
 SNT has custom styling. Ideal would be to generalize it.
+
+bc now has dotted underlines, but tooltip does also. Differentiate them.
+
+No template should use "content=" -- be more specific.
+
+Add a refresh button next to the statbox, if it's in javascript mode.
+
+Combine plugins/spirals + plugins/spirals-macro
