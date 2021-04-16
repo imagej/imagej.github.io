@@ -606,7 +606,8 @@ Docker :: plugins/docker
 Docs :: develop
 Documentation :: learn
 Dotfiles :: develop/dotfiles
-Download :: Downloads
+Download :: downloads
+Downloads :: downloads
 Downloading_and_Building_Fiji_From_Source :: fiji/building-from-source
 Downsample :: scripting/examples/downsample
 Dynamic_Kymograph :: plugins/dynamic-kymograph
@@ -885,7 +886,7 @@ Imglib__iterating_through_pixel_data :: imglib1/iterating-through-pixel-data
 Importing_Image_Files :: plugins/importing-image-files
 Impressum :: Imprint
 Insight_Toolkit :: software/itk
-Install :: Downloads
+Install :: downloads
 Install_Fiji_on_Linux :: fiji/downloads#installation
 Install_Fiji_on_MacOSX :: fiji/downloads#installation
 Install_Fiji_on_Windows :: fiji/downloads#installation
