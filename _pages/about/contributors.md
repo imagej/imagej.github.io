@@ -9,8 +9,8 @@ description: test description
 {% include info-box content='This page describes who *contributes* to [SciJava](SciJava) projects.
 
 -   For information on who *maintains* these projects, see [Governance](/about/governance).
--   For information on how ImageJ projects are *funded*, see [Funding](/licensing/funding).
--   For information on *citing* these projects, see [Citing](/licensing/citing).' %}
+-   For information on how ImageJ projects are *funded*, see [Funding](/about/funding).
+-   For information on *citing* these projects, see [Citing](/about/citing).' %}
 
 
 # Who we are

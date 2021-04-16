@@ -574,7 +574,7 @@ The authoritative reference for *Sholl Analysis* is:
 
 -   Ferreira T, Blackman A, Oyrer J, Jayabal A, Chung A, Watt A, Sjöström J, van Meyel D. (**2014**), [Neuronal morphometry directly from bitmap images](http://www.nature.com/nmeth/journal/v11/n10/full/nmeth.3125.html), *Nature Methods* 11(10): 982–984.
 
-The [authoritative reference](/licensing/citing) for Fiji:
+The [authoritative reference](/about/citing) for Fiji:
 
 -   Schindelin J, Arganda-Carreras I, Frise E, Kaynig V, Longair M, Pietzsch T, Preibisch S, Rueden C, Saalfeld S, Schmid B, Tinevez JY, White DJ, Hartenstein V, Eliceiri K, Tomancak P, Cardona A. (**2012**) [Fiji: an open-source platform for biological-image analysis](http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2019.html), *Nature Methods* 9(7): 676-682.
 

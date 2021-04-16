@@ -1,0 +1,4 @@
+---
+title: Techniques
+---
+{% include stub %}

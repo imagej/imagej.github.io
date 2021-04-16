@@ -9,7 +9,7 @@ description: test description
 
 -   For information on who *contributes* to these projects, see [Contributors](/about/contributors).
 -   For information on who *maintains* these projects, see [Governance](/about/governance).
--   For information on *citing* these projects, see [Citing](/licensing/citing).' %}
+-   For information on *citing* these projects, see [Citing](/about/citing).' %}
 
 
 == ImageJ 1.x ==

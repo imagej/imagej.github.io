@@ -8,7 +8,7 @@ description: test description
 
 {% include info-box content='This page lists publications relating to the [Fiji](/fiji) project.
 
--   For general instructions on citing [ImageJ](/about) and [Fiji](/fiji), see [Citing](/licensing/citing).
+-   For general instructions on citing [ImageJ](/about) and [Fiji](/fiji), see [Citing](/about/citing).
 -   For an index of citable software, see [:Category:Citable](Category_Citable).' %}
 
 

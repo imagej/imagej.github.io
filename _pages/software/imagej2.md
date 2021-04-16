@@ -100,7 +100,7 @@ For more details, see the [presentation from the 2010 ImageJ Conference](http://
 Funding
 -------
 
-ImageJ2 is funded from a variety of sources. See the [Funding](/licensing/funding) page for details.
+ImageJ2 is funded from a variety of sources. See the [Funding](/about/funding) page for details.
 
 Publications
 ------------

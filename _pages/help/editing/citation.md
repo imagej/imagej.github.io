@@ -9,7 +9,7 @@ description: This page demonstrates how to add a citation to your page.
 
 There are currently two options to include citations on your page:
 `include citation`: allows you to create a single-use citation
-`include publication`: pulls a pre-formatted citation from a [list of frequently cited publications](/licensing/citing).
+`include publication`: pulls a pre-formatted citation from a [list of frequently cited publications](/about/citing).
 
 ## Include Citations
 
@@ -43,9 +43,9 @@ doi='10.1371/journal.pone.0038011' %}
 ## Include Publication
 
 ### Usage
-This include is primarily used to reference ImageJ/Fiji related plugins, and pulls from a list of already created citations. The list can be found [here](/licensing/citing).
+This include is primarily used to reference ImageJ/Fiji related plugins, and pulls from a list of already created citations. The list can be found [here](/about/citing).
 This include uses the following field:<br><br>
-**content** the input for this field must match the plugin/tool/package name listed on the [Citations page](/licensing/citing).
+**content** the input for this field must match the plugin/tool/package name listed on the [Citations page](/about/citing).
 
 ### Example
 *The following liquid code:*

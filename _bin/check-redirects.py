@@ -51,12 +51,13 @@ for line in lines:
             print(f'[ERROR] {before} -> {working[before]} AND {after}!')
             sys.exit(1)
         working[before] = after
+        print(f'{before} :: {after}')
     else:
         broken.append((before, after))
 
 for before, after in broken:
     resolved = resolve(working, broken, after)
     if resolved:
-        print(f'{before} -> {after} -> {resolved}')
+        print(f'{before} :: {resolved}')
     else:
         print(f'[DEAD END] {before} -> {after}')

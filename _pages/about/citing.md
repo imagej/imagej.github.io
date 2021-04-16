@@ -9,7 +9,7 @@ description: test description
 
 -   For information on who *contributes* to these projects, see [Contributors](/about/contributors).
 -   For information on who *maintains* these projects, see [Governance](/about/governance).
--   For information on how ImageJ projects are *funded*, see [Funding](/licensing/funding).' %}
+-   For information on how ImageJ projects are *funded*, see [Funding](/about/funding).' %}
 
 
 == Guidelines ==
