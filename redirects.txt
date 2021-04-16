@@ -289,8 +289,8 @@ Align_Image_by_line_ROI :: plugins/align-image-by-line-roi
 Align_RGB_planes :: plugins/align-rgb-planes
 Align_by_ROI :: Align_Image_by_line_ROI
 Anaglyph_for_Red_Cyan_glasses :: plugins/anaglyph-for-red-cyan-glasses
-Analyse_Particles :: QuickPALM
 Analyse-Skeleton :: plugins/bonej#analyse-skeleton
+Analyse_Particles :: QuickPALM
 AnalyzeSkeleton :: plugins/analyze-skeleton
 Analyze_FRAP_movies_with_a_Jython_script :: tutorials/analyze-frap-movies
 Analyze_Skeleton_2D_3D :: AnalyzeSkeleton
