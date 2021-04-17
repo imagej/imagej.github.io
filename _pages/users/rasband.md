@@ -1,6 +1,5 @@
 ---
 title: Wayne Rasband
-layout: page
 categories: community
 description: test description
 

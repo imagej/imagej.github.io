@@ -29,10 +29,9 @@ Click `Add file` then  `Create new file` from the drop-down.
 The *front matter* precedes the content of your page, and sets several parameters that help setup your page within the repository. Without the front matter, your page will not render correctly.
 
 **title:** The title of your page.\
-**layout:** This sets the page's layout. Always use setting `page`.\
 **description:** A short description of your page. Also used for the site's search engine.
 
-Find below the front matter for this page. You can copy and paste this code into the editor of a new page from lines 1-6. Replace the settings in the `title` and `description` fields with details from the new page. **Do not change the `layout: page` setting.**
+Find below the front matter for this page. You can copy and paste this code into the editor of a new page from lines 1-6. Replace the settings in the `title` and `description` fields with details from the new page.
 
 ```
 ---
