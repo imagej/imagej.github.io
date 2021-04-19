@@ -3,34 +3,34 @@
         <tbody>
             <tr>
                 <td style="background:#EEF3E2 !important">
-                        <a href="/index"><strong>Home</strong></a>
+                    <a href="/plugins/snt"><strong>Home</strong></a>
                 </td>
                 <td>
-                    <a href="/SNT__Manual">Manual</a>
+                    <a href="/plugins/snt/manual">Manual</a>
                 </td>
                 <td>
-                    <a href="/SNT__Step-By-Step_Instructions">Walk-throughs</a>
+                    <a href="/plugins/snt/step-by-step-instructions">Walk-throughs</a>
                 </td>
                 <td>
-                    <a href="/SNT__Screencasts">Screencasts</a>
+                    <a href="/plugins/snt/screencasts">Screencasts</a>
                 </td>
                 <td>
-                    <a href="/SNT__Key_Shortcuts">Shortcuts</a>
+                    <a href="/plugins/snt/key-shortcuts">Shortcuts</a>
                 </td>
                 <td>
-                    <a href="/SNT__Reconstruction_Viewer">Rec. Viewer</a>
+                    <a href="/plugins/snt/reconstruction-viewer">Rec. Viewer</a>
                 </td>
                 <td>
-                    <a href="/SNT__Analysis">Analysis</a>
+                    <a href="/plugins/snt/analysis">Analysis</a>
                 </td>
                 <td>
-                    <a href="/SNT__Scripting">Scripting</a>
+                    <a href="/plugins/snt/scripting">Scripting</a>
                 </td>
                 <td>
-                    <a href="/SNT__Modeling">Modeling</a>
+                    <a href="/plugins/snt/modeling">Modeling</a>
                 </td>
                 <td>
-                    <a href="/SNT__FAQ">FAQ</a>
+                    <a href="/plugins/snt/faq">FAQ</a>
                 </td>
             </tr>
         </tbody>

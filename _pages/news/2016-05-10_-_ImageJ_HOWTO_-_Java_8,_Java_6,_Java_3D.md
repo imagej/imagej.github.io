@@ -24,7 +24,7 @@ Current recommendations and possibilities
 </th>
 <th style="width: 30%"> Updates
 </th>
-<th style="width: 30%"> <a href="/plugins/java-3d" title="Java 3D">Java 3D</a>
+<th style="width: 30%"> <a href="/libs/java-3d" title="Java 3D">Java 3D</a>
 </th></tr>
 <tr>
 <th rowspan="3"> <a href="/fiji" title="/fiji"><img alt="/fiji" src="/images/logos/Fiji-icon.png" width="64" height="64" /></a>
@@ -43,7 +43,7 @@ Current recommendations and possibilities
 </td>
 <td> Run <a href="/plugins/updater" title="/plugins/updater"><span><em><span style="border-bottom:1px dotted #ccc;">Help</span>&#160;&#8250; <span style="border-bottom:1px dotted #ccc;">Update...</span></em></span></a> to update to the latest version of ImageJ core and Fiji components.
 </td>
-<td> This version of Fiji comes bundled with <a href="/plugins/java-3d" title="Java 3D">Java 3D</a> 1.6. The <a href="/plugins/3d-viewer" title="3D Viewer">3D Viewer</a> works out of the box, though there are <a rel="nofollow" class="external text" href="https://github.com/search?q=label%3Ajava-3d+is%3Aopen+user%3Afiji+user%3Aimagej&amp;type=Issues">still some bugs</a>.
+<td> This version of Fiji comes bundled with <a href="/libs/java-3d" title="Java 3D">Java 3D</a> 1.6. The <a href="/plugins/3d-viewer" title="3D Viewer">3D Viewer</a> works out of the box, though there are <a rel="nofollow" class="external text" href="https://github.com/search?q=label%3Ajava-3d+is%3Aopen+user%3Afiji+user%3Aimagej&amp;type=Issues">still some bugs</a>.
 </td></tr>
 <tr>
 <th rowspan="2"> Java 6
@@ -57,7 +57,7 @@ Current recommendations and possibilities
 </td>
 <td rowspan="2"> Run <a href="/plugins/updater" title="/plugins/updater"><span><em><span style="border-bottom:1px dotted #ccc;">Help</span>&#160;&#8250; <span style="border-bottom:1px dotted #ccc;">Update...</span></em></span></a> to update to the latest Java-6-compatible version. Your Fiji will become outdated over time, stuck on the final Java-6-compatible plugin versions.
 </td>
-<td rowspan="2"> Run <a href="/plugins/3d-viewer" title="3D Viewer"><span><em><span style="border-bottom:1px dotted #ccc;">Plugins</span>&#160;&#8250; <span style="border-bottom:1px dotted #ccc;">3D Viewer</span></em></span></a> to trigger installation of <a href="/plugins/java-3d" title="Java 3D">Java 3D</a> 1.5 if you need 3D viz.
+<td rowspan="2"> Run <a href="/plugins/3d-viewer" title="3D Viewer"><span><em><span style="border-bottom:1px dotted #ccc;">Plugins</span>&#160;&#8250; <span style="border-bottom:1px dotted #ccc;">3D Viewer</span></em></span></a> to trigger installation of <a href="/libs/java-3d" title="Java 3D">Java 3D</a> 1.5 if you need 3D viz.
 </td></tr>
 <tr>
 <th> <a href="/media/Osx.png" class="image"><img alt="macOS" src="/images/logos/Osx.png" width="26" height="32" /></a>
@@ -149,10 +149,10 @@ But later this year, we will migrate the latest Java-8 components back to the co
 About Java 3D
 -------------
 
--   [Java 3D](/plugins/java-3d) 1.6 requires Java 7 or newer. Hence, we ship it **on the Java-8 update site only**.
--   [Java 3D](/plugins/java-3d) 1.5 works with Java 6, but:
+-   [Java 3D](/libs/java-3d) 1.6 requires Java 7 or newer. Hence, we ship it **on the Java-8 update site only**.
+-   [Java 3D](/libs/java-3d) 1.5 works with Java 6, but:
     -   It has a restrictive license.
     -   It does not work with Java 7 or 8 on macOS.
     -   It does not work with Java 8 (or 7?) on some Windows systems.
 
-Please be aware that [Java 3D](/plugins/java-3d) is essentially a dead technology. The future of 3D visualization in ImageJ is the [ClearVolume](/plugins/clearvolume) and [SciView](/plugins/sciview) plugins. But it will be a lot of work to rewrite all [3D Viewer](/plugins/3d-viewer) functionality, so the ImageJ and Fiji teams are still exploring the best ways to proceed here.
+Please be aware that [Java 3D](/libs/java-3d) is essentially a dead technology. The future of 3D visualization in ImageJ is the [ClearVolume](/plugins/clearvolume) and [SciView](/plugins/sciview) plugins. But it will be a lot of work to rewrite all [3D Viewer](/plugins/3d-viewer) functionality, so the ImageJ and Fiji teams are still exploring the best ways to proceed here.

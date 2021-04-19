@@ -5,7 +5,7 @@ categories: News,Fiji
 description: test description
 ---
 
-From Tuesday, December 6, 2016 through Friday, December 16, 2016, the [Max Planck Institute of Molecular Cell Biology and Genetics](https://mpi-cbg.de/) hosted \~20 developers at their facility in Dresden, Germany for a [hackathon](/events/Hackathon) to develop [ImageJ2](/software/imagej2) and [Fiji](/fiji) core infrastructure and [plugins](/fiji/plugins).
+From Tuesday, December 6, 2016 through Friday, December 16, 2016, the [Max Planck Institute of Molecular Cell Biology and Genetics](https://mpi-cbg.de/) hosted \~20 developers at their facility in Dresden, Germany for a [hackathon](/events/Hackathon) to develop [ImageJ2](/software/imagej2) and [Fiji](/fiji) core infrastructure and [plugins](/plugins).
 
 Timeline
 --------
@@ -132,7 +132,7 @@ Hackathon progress
 ### Tim-Oliver Buchholz
 
 -   Participated in technical discussions about ThreeDViewer, BigDataViewer and the next generation of viewers used in [KNIME Image Processing](/software/knime).
--   Participated in discussions about [ImageJ Ops](/develop/imagej-ops) based feature extraction.
+-   Participated in discussions about [ImageJ Ops](/libs/imagej-ops) based feature extraction.
 -   Worked on the integration of the BigDataViewer as new standard viewer in [KNIME Image Processing](/software/knime).
 
 ### Ulrik Günther
@@ -147,7 +147,7 @@ Hackathon progress
 
 ### Robert Haase
 
--   Participated in discussions about [Fiji](/fiji) release cycle and [ImageJ Ops](/develop/imagej-ops) based feature extraction
+-   Participated in discussions about [Fiji](/fiji) release cycle and [ImageJ Ops](/libs/imagej-ops) based feature extraction
 -   Bugfixed a tool for visualising Meshes in the good old [3D Viewer](/plugins/3d-viewer) which were derived from ArrayList&lt;RandomAccessibleInterval<BoolType>&gt;s as an intermediate solution until the [ThreeDViewer](/plugins/sciview) is ready.
 -   Built an ImageJ-Ops based particle analyser, which will in the future allow processing 3D images in a way like 2D images were processed using the good old [Particle Analysis](/cookbook/particle-analysis) tool
 -   With {% include person content='maarzt' %}, {% include person content='Jug' %}, and {% include person content='Rueden' %} we launched the work on a `PlotService` for ImageJ2.
@@ -161,7 +161,7 @@ Hackathon progress
 
 ### Florian Jug
 
--   With {% include person content='Rueden' %}, overhauled the [SciJava Common](/software/scijava-common) [logging](/develop/logging) mechanism ({% include github org='scijava' repo='scijava-common' pr='253' label='scijava/scijava-common\#253' %}).
+-   With {% include person content='Rueden' %}, overhauled the [SciJava Common](/libs/scijava-common) [logging](/develop/logging) mechanism ({% include github org='scijava' repo='scijava-common' pr='253' label='scijava/scijava-common\#253' %}).
 -   With {% include person content='Rueden' %},{% include person content='Haesleinhuepf' %},{% include person content='Pietzsch' %}, and {% include person content='Saalfeld' %} split up the necessary work in order to cut stable releases of Fiji (biannually). This 'earned' me the status of 'Grand Poobah'. ;)
 -   Worked on an 'indago' parent POM for DAIS related projects and started using it for the new tracker 'Tr2d'.
 -   Worked on the new tracker 'Tr2d'. New features: improved leveraged editing; tracklet export; improved BDV overlays.
@@ -171,8 +171,8 @@ Hackathon progress
 ### Curtis Rueden
 
 -   With {% include person content='Alecneevel' %} and {% include person content='Saalfeld' %}, completed update of ImageJ web resources to support HTTPS (see [separate news post](/news/2016-12-29_-_ImageJ_web_resources_now_support_HTTPS)).
--   With {% include person content='Jug' %}, overhauled the [SciJava Common](/software/scijava-common) [logging](/develop/logging) mechanism ({% include github org='scijava' repo='scijava-common' pr='253' label='scijava/scijava-common\#253' %}).
--   With {% include person content='Rdom' %}, improved [SciJava Common](/software/scijava-common) context injection to be recursive, to fix bugs with service population of commands ({% include github org='scijava' repo='scijava-common' commit='b0c981b24fc8ec845656574d95f9eddbc285728e' label='scijava/scijava-common@b0c981b2' %}, {% include github org='imagej' repo='imagej-ops' commit='4f78eca5b061881865c2a2c1702a98e634248aa5' label='imagej/imagej-ops@4f78eca5' %}).
+-   With {% include person content='Jug' %}, overhauled the [SciJava Common](/libs/scijava-common) [logging](/develop/logging) mechanism ({% include github org='scijava' repo='scijava-common' pr='253' label='scijava/scijava-common\#253' %}).
+-   With {% include person content='Rdom' %}, improved [SciJava Common](/libs/scijava-common) context injection to be recursive, to fix bugs with service population of commands ({% include github org='scijava' repo='scijava-common' commit='b0c981b24fc8ec845656574d95f9eddbc285728e' label='scijava/scijava-common@b0c981b2' %}, {% include github org='imagej' repo='imagej-ops' commit='4f78eca5b061881865c2a2c1702a98e634248aa5' label='imagej/imagej-ops@4f78eca5' %}).
 -   With {% include person content='Rdom' %}, add a validater callback for parameter validation ({% include github org='scijava' repo='scijava-common' commit='66ed844ee76a264ca83629f0fef50c9b726c8897' label='scijava/scijava-common@66ed844e' %}, {% include github org='scijava' repo='scijava-common' commit='70c50f48cc20cec0a747a000778f013c7380155d' label='scijava/scijava-common@70c50f48' %}).
 -   With {% include person content='maarzt' %}, began work on a `PlotService` for ImageJ2 (\[https://github.com/imagej/imagej-ui-swing/compare/plot-service...maarzt:plot-service maarzt/imagej-ui-swing@plot-service\]).
 -   Participated in technical discussions with various people, including a "big-picture" status update for ImageJ2 covering my [primary priorities](User_Rueden#Primary_projects); see [Technical discussions](#Technical_discussions) section below.

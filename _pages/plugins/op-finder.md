@@ -28,7 +28,7 @@ Parts of the Op Finder
 2.  Toggle button to change between a [user](#For_Users) and [developer](#For_Developers) view.
 3.  Play button for [running the selected Op](#Running_Ops).
 4.  Copy button to copy the selected cell contents.
-5.  Help button to open up the [Wiki reference](/develop/imagej-ops) page in your browser.
+5.  Help button to open up the [Wiki reference](/libs/imagej-ops) page in your browser.
 6.  Status area showing success/failure notifications e.g., for copying or running Ops.
 7.  Namespaces and Op types: these can be expanded to explore the tree-based organization of Ops.
 8.  Op implementation: the leaves of this tree tell us what parameter options are available for each Op type. We interpret this particular example as "There is an Add Op in the Math namespace, that operates on an image and a numeric value".

@@ -30,7 +30,7 @@ The main reasons for the switch are:
 How does this affect users?
 ---------------------------
 
-If you are using these plugins in your own workflows ([scripts](/scripting), [macros](/scripting/macro), [plugins](/fiji/plugins), etc.), then you will need to [enable the ImageScience update site](/update-sites/following) for those workflows to remain functional.
+If you are using these plugins in your own workflows ([scripts](/scripting), [macros](/scripting/macro), [plugins](/plugins), etc.), then you will need to [enable the ImageScience update site](/update-sites/following) for those workflows to remain functional.
 
 We will leave the current versions of the ImageScience plugins on the Fiji update site for a few more weeks, to give people time to transition to the update site. We anticipate a "spring cleaning" announcement in a couple of months, announcing the removal of several plugins, including the ImageScience ones.
 

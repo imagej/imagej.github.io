@@ -119,7 +119,7 @@ Roadmap links
 Citable code
 ------------
 
-Many of these tools are employed to facilitate [reproducibility](/Architecture#Reproducible_builds) from a technical perspective. From a social perspective, we are writing software for science - in which [scholarly citations](/about/citing) provide another currency for reproducibility.
+Many of these tools are employed to facilitate [reproducibility](/develop/architecture#reproducible-builds) from a technical perspective. From a social perspective, we are writing software for science - in which [scholarly citations](/about/citing) provide another currency for reproducibility.
 
 To this end, developers can now use [digital archives like Zenodo](https://guides.github.com/activities/citable-code/) to provide consistent methods for citation.
 

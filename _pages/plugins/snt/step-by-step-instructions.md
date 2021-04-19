@@ -206,7 +206,7 @@ The easiest way to preprocess multiple images is to record a macro for processin
         }
     }
 
-The same process can be accomplished more completely in a script using [ImageJ Ops](/develop/imagej-ops). For example, in Jython:
+The same process can be accomplished more completely in a script using [ImageJ Ops](/libs/imagej-ops). For example, in Jython:
 
     # @ImageJ ij
     # @String(value="<HTML>This script applies the Frangi Vesselness filter to all TIFF images in a directory.<br>Only 2D or 3D grayscale images are supported. Processing log is shown in Console.", visibility="MESSAGE") msg

@@ -10,7 +10,7 @@ Overview
 
 </h1>
 
-MiNA is a simplified workflow for analyzing mitochondrial morphology using fluorescence images or 3D stacks in Fiji. The workflow makes use of [ ImageJ Ops](/develop/imagej-ops), [ 3D Viewer](/plugins/3d-viewer), [ Skeletonize (2D/3D)](/plugins/skeletonize3d), [ Analyze Skeleton](/plugins/analyze-skeleton)[1], and [ Ridge Detection](/plugins/ridge-detection)[2][3]. In short, the tool estimates mitochondrial footprint (or volume) from a binarized copy of the image as well as the lengths of mitochondrial structures using a topological skeleton. The values are reported in a table and overlays (or a 3D rendering) are generated to assess the accuracy of the analysis.
+MiNA is a simplified workflow for analyzing mitochondrial morphology using fluorescence images or 3D stacks in Fiji. The workflow makes use of [ ImageJ Ops](/libs/imagej-ops), [ 3D Viewer](/plugins/3d-viewer), [ Skeletonize (2D/3D)](/plugins/skeletonize3d), [ Analyze Skeleton](/plugins/analyze-skeleton)[1], and [ Ridge Detection](/plugins/ridge-detection)[2][3]. In short, the tool estimates mitochondrial footprint (or volume) from a binarized copy of the image as well as the lengths of mitochondrial structures using a topological skeleton. The values are reported in a table and overlays (or a 3D rendering) are generated to assess the accuracy of the analysis.
 
 <h1>
 

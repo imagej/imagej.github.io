@@ -10,7 +10,7 @@ The [Eliceiri](/users/Eliceiri) lab, also known as the [Laboratory for Optical a
 
 LOCI plays a very active role in the ImageJ community:
 
--   LOCI launched the [ImageJ2](/software/imagej2), [SCIFIO](/software/scifio) and [SciJava Common](/software/scijava-common) projects, and continues to drive their development.
+-   LOCI launched the [ImageJ2](/software/imagej2), [SCIFIO](/software/scifio) and [SciJava Common](/libs/scijava-common) projects, and continues to drive their development.
 -   Together with [CSBD](/orgs/csbd)/[MPI-CBG](/orgs/mpi-cbg), LOCI maintains the [Fiji](/fiji) project.
 -   LOCI founded the [Bio-Formats](/formats/bio-formats) project, and led the project's development for several years.
 -   LOCI regularly funds and hosts [hackathons](/events/Hackathon) intended to foster community development of [open source](Open_source) biological software projects.
@@ -28,7 +28,7 @@ Developers
 -   {% include person content='Hinerm' %} (developer, Sep 2010-Jun 2016, Jun 2020-current)
 -   {% include person content='Etarena' %} (developer)
 -   {% include person content='elevans' %} (developer)
--   {% include person content='gselzer' %} (developer, [ImageJ Ops](/develop/imagej-ops))
+-   {% include person content='gselzer' %} (developer, [ImageJ Ops](/libs/imagej-ops))
 -   {% include person content='Xanthorapedia' %} (developer, [FLIMJ](/plugins/flimj))
 
 Alumni

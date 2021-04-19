@@ -5,7 +5,7 @@ section: Development:Guides
 description: test description
 ---
 
-If you create a useful extension of ImageJ—e.g., a [plugin](/fiji/plugins), [script](/scripting/script-editor) or [macro](/scripting/macro)—the next step is to *distribute* it to others, including:
+If you create a useful extension of ImageJ—e.g., a [plugin](/plugins), [script](/scripting/script-editor) or [macro](/scripting/macro)—the next step is to *distribute* it to others, including:
 
 -   **Distribute** the extension itself to users
 -   Share the extension's **source code**

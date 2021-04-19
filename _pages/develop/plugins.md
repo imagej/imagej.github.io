@@ -5,7 +5,7 @@ section: Development:Guides
 description: test description
 ---
 
-{% include info-box content='This guide provides a technical overview of [plugins](/fiji/plugins), including how to **create new plugins**.  
+{% include info-box content='This guide provides a technical overview of [plugins](/plugins), including how to **create new plugins**.  
 \* If you are interested in developing an **existing** plugin instead, see [Contributing to a plugin](/develop/improving-the-code).  
 \* If you have completed a plugin that you would like to **share with the community**, see [Distributing your plugins](/develop/distributing).
 
@@ -33,7 +33,7 @@ What is a "plugin"?
 
 Conceptually, a **plugin** is a new piece of functionality added to ImageJ. Nearly all aspects of ImageJ are *pluggable*, meaning plugins can be provided *ad hoc* to perform specified functions. The ImageJ core needs only know what general operations are available; then when the program is running, the options for how to complete a requested operation will be determined by which plugins are available at that time.
 
-Technically, ImageJ is built on the [SciJava Common](/software/scijava-common) plugin framework. Within this framework, a plugin is a Java class [annotated](https://docs.oracle.com/javase/tutorial/java/annotations/index.html) with the {% include github org='scijava' repo='scijava-common' tag='scijava-common-2.47.0' source='org/scijava/plugin/Plugin.java' label='@Plugin' %} annotation. Classes annotated in this way are then automatically discovered and indexed at {% include wikipedia title='Run\_time\_(program\_lifecycle\_phase)' text='"runtime"' %}, when the application is launched by a user (as opposed to {% include wikipedia title='Compile\_time' text='"compile-time"' %}).
+Technically, ImageJ is built on the [SciJava Common](/libs/scijava-common) plugin framework. Within this framework, a plugin is a Java class [annotated](https://docs.oracle.com/javase/tutorial/java/annotations/index.html) with the {% include github org='scijava' repo='scijava-common' tag='scijava-common-2.47.0' source='org/scijava/plugin/Plugin.java' label='@Plugin' %} annotation. Classes annotated in this way are then automatically discovered and indexed at {% include wikipedia title='Run\_time\_(program\_lifecycle\_phase)' text='"runtime"' %}, when the application is launched by a user (as opposed to {% include wikipedia title='Compile\_time' text='"compile-time"' %}).
 
 ### Plugin types
 

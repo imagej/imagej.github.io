@@ -10,7 +10,7 @@ description: test description
 -   For an overview of *distribution methods*, see [Distribution](/develop/distributing).
 -   To *download* software releases, see [Downloads](Downloads).' %}
 
-The SciJava [philosophy](/develop/philosophy) is to [release early, release often](Philosophy#Release_early.2C_release_often). At the same time, we always want to preserve [scientific reproducibility](/Architecture#Reproducible_builds). To make this possible we lean on several [project management](/develop/project-management) tools. The purpose of this guide is to take you through the process of using these tools with the goal of releasing new versions of your software, and then providing those releases to users.
+The SciJava [philosophy](/develop/philosophy) is to [release early, release often](/develop/philosophy#release-early-release-often). At the same time, we always want to preserve [scientific reproducibility](/develop/architecture#reproducible-builds). To make this possible we lean on several [project management](/develop/project-management) tools. The purpose of this guide is to take you through the process of using these tools with the goal of releasing new versions of your software, and then providing those releases to users.
 
 Phases of development
 =====================
@@ -77,7 +77,7 @@ Conversely, some situations to push directly to master:
 -   **Unstable.** Changes to unstable or experimental components still in their "incubation" period of development (i.e., versioned at 0.x), since there is no promise of backwards compatibility.
 -   **Unsupported.** Changes to "unsupported" components which make no guarantee of backwards compatibility.
 
-Lastly, keep in mind that SciJava favors the [release early, release often](/Philosophy#Release_early.2C_release_often) style of development, to maximize iterations of community feedback. Just because a change makes it to the master branch, does not mean it is set in stone: if a problem is later found, the change can be amended or reverted as quickly as it was added—easy come, easy go.' %}
+Lastly, keep in mind that SciJava favors the [release early, release often](/develop/philosophy#release-early-release-often) style of development, to maximize iterations of community feedback. Just because a change makes it to the master branch, does not mean it is set in stone: if a problem is later found, the change can be amended or reverted as quickly as it was added—easy come, easy go.' %}
 
 Phase 1: In development
 -----------------------
@@ -104,7 +104,7 @@ Once a feature or fix is complete it can move to the `master` branch of the repo
 Phase 3: Released
 -----------------
 
-Once the `master` branch of a component has your desired new functionality, the next step is to cut a *release* version of the component. Normally, the Maven version (in the [pom.xml](https://maven.apache.org/pom.html#Introduction)) on master is a [*SNAPSHOT* version](http://stackoverflow.com/q/5901378), meaning it is [unstable](/Architecture#Reproducible_builds) and not yet released. However, a [stable](/Architecture#Reproducible_builds) *release* artifact can be deployed to the appropriate remote Maven repository.
+Once the `master` branch of a component has your desired new functionality, the next step is to cut a *release* version of the component. Normally, the Maven version (in the [pom.xml](https://maven.apache.org/pom.html#Introduction)) on master is a [*SNAPSHOT* version](http://stackoverflow.com/q/5901378), meaning it is [unstable](/develop/architecture#reproducible-builds) and not yet released. However, a [stable](/develop/architecture#reproducible-builds) *release* artifact can be deployed to the appropriate remote Maven repository.
 
 The [release-version.sh](https://github.com/scijava/scijava-scripts/blob/master/release-version.sh) script automates the steps to performing a release. It relies on the [Maven Release plugin](http://maven.apache.org/maven-release/maven-release-plugin/) to do most of the heavy lifting, but also does some extra work (e.g., to ensure releases are deployed to the correct repository).
 

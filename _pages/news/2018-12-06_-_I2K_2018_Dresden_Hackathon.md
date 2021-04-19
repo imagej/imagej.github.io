@@ -4,7 +4,7 @@ title: 2018-12-06 - I2K 2018 Dresden Hackathon
 description: test description
 ---
 
-From Monday, December 3, 2018 through Friday, December 7, 2018, the [Max Planck Institute of Molecular Cell Biology and Genetics](https://mpi-cbg.de/) hosts \~10 developers at the [Center for Systems Biology](http://www.csbdresden.de/) in Dresden, Germany for a [hackathon](/events/Hackathon) to develop KNIME Image Processing and [ImageJ2](/software/imagej2)/[Fiji](/fiji) core infrastructure and [plugins](/fiji/plugins).
+From Monday, December 3, 2018 through Friday, December 7, 2018, the [Max Planck Institute of Molecular Cell Biology and Genetics](https://mpi-cbg.de/) hosts \~10 developers at the [Center for Systems Biology](http://www.csbdresden.de/) in Dresden, Germany for a [hackathon](/events/Hackathon) to develop KNIME Image Processing and [ImageJ2](/software/imagej2)/[Fiji](/fiji) core infrastructure and [plugins](/plugins).
 
 Gitter channel: https://gitter.im/juglab/Hack1812
 

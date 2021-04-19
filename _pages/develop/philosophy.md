@@ -29,21 +29,21 @@ We are always looking for more ways to improve the software to meet this goal of
 Extensibility
 -------------
 
-[Extensibility](/Architecture#Extensibility) is [ImageJ](/about)'s greatest strength. ImageJ is not just a software application—it is an extensible *platform* for the development of image [visualization](Category_Visualization), [segmentation](/techniques/segmentation), [registration](Category_Registration), and [analysis](Category_Analysis) routines.
+[Extensibility](/develop/architecture#extensibility) is [ImageJ](/about)'s greatest strength. ImageJ is not just a software application—it is an extensible *platform* for the development of image [visualization](Category_Visualization), [segmentation](/techniques/segmentation), [registration](Category_Registration), and [analysis](Category_Analysis) routines.
 
-Isaac Newton attributed his success to {% include wikipedia title='Standing on the shoulders of giants' text='standing on the shoulders of giants'%}. The [SciJava component collection](/develop/architecture)'s powerful [plugin](/fiji/plugins) mechanism and [open source](Open_source) software process codify that metaphor into the software itself. Not only are there many different types of plugins, but it is also possible to extend the system with your own new types of plugins. See the [Extensibility](/Architecture#Extensibility) page for details.
+Isaac Newton attributed his success to {% include wikipedia title='Standing on the shoulders of giants' text='standing on the shoulders of giants'%}. The [SciJava component collection](/develop/architecture)'s powerful [plugin](/plugins) mechanism and [open source](Open_source) software process codify that metaphor into the software itself. Not only are there many different types of plugins, but it is also possible to extend the system with your own new types of plugins. See the [Extensibility](/develop/architecture#extensibility) page for details.
 
 Interoperability
 ----------------
 
-One of the central goals of the [SciJava component collection](/develop/architecture) is to extend Java's mantra of "write once, run anywhere" in new directions: [ImageJ Ops](/develop/imagej-ops) for image processing algorithms, and [SCIFIO](/software/scifio) for scientific image I/O.
+One of the central goals of the [SciJava component collection](/develop/architecture) is to extend Java's mantra of "write once, run anywhere" in new directions: [ImageJ Ops](/libs/imagej-ops) for image processing algorithms, and [SCIFIO](/software/scifio) for scientific image I/O.
 
 [ImageJ2](/software/imagej2) commands work not only in the [ImageJ](/about) user interface, but also from many [other applications](Category_Related_Software) in the [SciJava ecosystem](SciJava), including [CellProfiler](/software/cellprofiler), [OMERO](/software/omero), [KNIME](/software/knime) and [Alida](/software/alida).
 
 Compatibility
 -------------
 
-Backward compatibility is one of ImageJ's most important goals. It must remain possible to use existing [plugins](/fiji/plugins) and [macros](/scripting/macro) with new versions of ImageJ. See the [Compatibility](Compatibility) page for details.
+Backward compatibility is one of ImageJ's most important goals. It must remain possible to use existing [plugins](/plugins) and [macros](/scripting/macro) with new versions of ImageJ. See the [Compatibility](Compatibility) page for details.
 
 Release early, release often
 ----------------------------

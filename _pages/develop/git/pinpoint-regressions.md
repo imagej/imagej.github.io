@@ -14,7 +14,7 @@ How to bisect with Git
 How to find which commit introduced a regression
 ------------------------------------------------
 
-So you found a regression? I.e. you know that the version worked perfectly that you had yesterday of, say, the [ImageJ Ops](/develop/imagej-ops) library, but today it crashes?
+So you found a regression? I.e. you know that the version worked perfectly that you had yesterday of, say, the [ImageJ Ops](/libs/imagej-ops) library, but today it crashes?
 
 Git-bisect to the rescue!
 

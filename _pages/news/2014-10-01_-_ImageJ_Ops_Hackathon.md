@@ -7,7 +7,7 @@ description: test description
 
 <figure><img src="/media/2014-ops-hackathon.png" title="A graph of progress during the hackathon." width="304" alt="A graph of progress during the hackathon." /><figcaption aria-hidden="true">A graph of progress during the hackathon.</figcaption></figure>
 
-From Sunday, September 14, 2014 through Friday, September 19, 2014, LOCI in Madison hosted Christian Dietz and Brian Northan, two developers of [ImageJ Ops](/develop/imagej-ops), for an exciting hackathon. [Christian Dietz](http://www.informatik.uni-konstanz.de/en/berthold/members/christian-dietz/) is a PhD student in computer science at the University of Konstanz and the lead developer of the [KNIME Image Processing](http://knime.imagej.net/) project; [Brian Northan](https://www.linkedin.com/pub/brian-northan/6/860/3a7) is a freelance contract research and development engineer specializing in scientific image and signal processing.
+From Sunday, September 14, 2014 through Friday, September 19, 2014, LOCI in Madison hosted Christian Dietz and Brian Northan, two developers of [ImageJ Ops](/libs/imagej-ops), for an exciting hackathon. [Christian Dietz](http://www.informatik.uni-konstanz.de/en/berthold/members/christian-dietz/) is a PhD student in computer science at the University of Konstanz and the lead developer of the [KNIME Image Processing](http://knime.imagej.net/) project; [Brian Northan](https://www.linkedin.com/pub/brian-northan/6/860/3a7) is a freelance contract research and development engineer specializing in scientific image and signal processing.
 
 Overview
 --------
@@ -19,7 +19,7 @@ ImageJ Ops is an extensible Java framework for algorithms, particularly image pr
 Accomplishments
 ---------------
 
-This hackathon focused on the [ImageJ Ops](/develop/imagej-ops) library, adding support for key image processing operations, as well as improving the framework itself. Achievements from the hackathon include:
+This hackathon focused on the [ImageJ Ops](/libs/imagej-ops) library, adding support for key image processing operations, as well as improving the framework itself. Achievements from the hackathon include:
 
 -   Vastly improved thresholding code ([\#52](https://github.com/imagej/imagej-ops/pull/52))
 -   Improvements to the code generation mechanism ([\#42](https://github.com/imagej/imagej-ops/pull/42))

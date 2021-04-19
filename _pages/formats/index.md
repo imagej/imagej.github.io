@@ -7,7 +7,7 @@ description: test description
 ---
 
 
-Thanks to ImageJ's [extensibility](/Architecture#Extensibility) via [plugins](/fiji/plugins), it supports a lot of image formats!
+Thanks to ImageJ's [extensibility](/develop/architecture#extensibility) via [plugins](/plugins), it supports a lot of image formats!
 
 Life sciences
 -------------

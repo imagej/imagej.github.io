@@ -5,7 +5,7 @@ categories: News,ImageJ2,Fiji
 description: test description
 ---
 
-From Wednesday, September 20, 2017 through Friday, September 28, 2017, {% include person content='Dietzc' %} of [KNIME](https://www.knime.org) hosted \~20 developers at the [KNIME Konstanz Regional Office](https://www.knime.com/contact) for a [hackathon](/events/Hackathon) to develop the KNIME Image Processing extensions along with the underlying [ImageJ Ops](/develop/imagej-ops) library, as well as other related and/or supporting technologies such as [Ilastik](http://ilastik.org/), [ImgLib2](/imglib2) and [BigDataViewer](/plugins/bdv).
+From Wednesday, September 20, 2017 through Friday, September 28, 2017, {% include person content='Dietzc' %} of [KNIME](https://www.knime.org) hosted \~20 developers at the [KNIME Konstanz Regional Office](https://www.knime.com/contact) for a [hackathon](/events/Hackathon) to develop the KNIME Image Processing extensions along with the underlying [ImageJ Ops](/libs/imagej-ops) library, as well as other related and/or supporting technologies such as [Ilastik](http://ilastik.org/), [ImgLib2](/imglib2) and [BigDataViewer](/plugins/bdv).
 
 There was a big focus this time on machine learning, particularly deep learning networks applied to biological data.
 

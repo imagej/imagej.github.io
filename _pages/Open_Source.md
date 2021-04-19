@@ -7,14 +7,14 @@ description: test description
 
 ![ 64px \| left \| link=https://opensource.org/](/media/Osi symbol.png "fig: 64px | left | link=https://opensource.org/") The [ImageJ](/about) project, and related projects in the [SciJava](SciJava) software ecosystem, are open source software projects. See the [Licensing](/licensing) page for details.
 
-Everybody is welcome to [contribute](/licensing/contributing) with [plugins](/fiji/plugins), patches, [bug reports](/help/report-a-bug), [tutorials](/Category_Tutorials), [documentation](/learn), and artwork.
+Everybody is welcome to [contribute](/licensing/contributing) with [plugins](/plugins), patches, [bug reports](/help/report-a-bug), [tutorials](/Category_Tutorials), [documentation](/learn), and artwork.
 
 The [SciJava](SciJava) ecosystem is strongly committed to open-source software development. This software is not an open source software *product*—it is an open-source software *project* following an open-source development *process*. There are public [source code repositories](Source_Code), public [communication](Communication) channels, public [project management](/develop/project-management) resources, and of course, this [community editable website](Help_Contents). See the [Philosophy](/develop/philosophy) page for more information.
 
 Why open source?
 ----------------
 
-One core principle of the {% include wikipedia title='Scientific method' text='scientific method'%} is repeatability: the ability to continually retest and refine hypotheses. As computer software plays an increasingly large role in science, it is vital that that software be fully transparent and available to researchers: software is simply too complex to be easily [reproduced](/Architecture#Reproducible_builds) from scratch by every research group. In contrast, closed source software presents a barrier to {% include wikipedia title='Open research computation\#Reproducibility\_and\_open\_research\_computing' text='open research'%}, because the implementation details of algorithms cannot be freely modified or even necessarily verified.
+One core principle of the {% include wikipedia title='Scientific method' text='scientific method'%} is repeatability: the ability to continually retest and refine hypotheses. As computer software plays an increasingly large role in science, it is vital that that software be fully transparent and available to researchers: software is simply too complex to be easily [reproduced](/develop/architecture#reproducible-builds) from scratch by every research group. In contrast, closed source software presents a barrier to {% include wikipedia title='Open research computation\#Reproducibility\_and\_open\_research\_computing' text='open research'%}, because the implementation details of algorithms cannot be freely modified or even necessarily verified.
 
 The [Science Code Manifesto](http://sciencecodemanifesto.org/discussion) provides a clear and succinct list of five principles surrounding scientific software. There have also been a number of publications in recent years discussing these issues and ideas:
 

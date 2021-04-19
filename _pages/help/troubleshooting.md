@@ -167,7 +167,7 @@ Note that [lossy compression is not suitable for quantitative image analysis](Pr
 The same plugin gives different results on different machines!
 --------------------------------------------------------------
 
-While ImageJ strives for [reproducible](/Architecture#Reproducible_builds) analysis, there are many reasons results can differ. Check the following:
+While ImageJ strives for [reproducible](/develop/architecture#reproducible-builds) analysis, there are many reasons results can differ. Check the following:
 
 -   Ensure that the version of [ImageJ](/about) is exactly the same on both machines.
     -   Click the [status bar](/Getting_started#The_status_bar) and you will see something like "ImageJ 2.0.0-rc-26/1.49p".

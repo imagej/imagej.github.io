@@ -26,7 +26,7 @@ Local thresholding techniques adapt the threshold value on each pixel to the loc
 ImageJ Ops
 ----------
 
-The [ImageJ Ops](/develop/imagej-ops) project provides algorithms for both global and local thresholding.
+The [ImageJ Ops](/libs/imagej-ops) project provides algorithms for both global and local thresholding.
 
 FAQ
 ---

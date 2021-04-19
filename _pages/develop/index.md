@@ -6,7 +6,7 @@ description: test description
 ---
 
 {% include info-box content='If your goal is to automate the behavior of ImageJ, consider writing a [script](/scripting/script-editor) using ImageJ"s [Script Editor](/scripting/script-editor)—it is often much simpler than a plugin in Java.' %} 
-This page provides an overview of ImageJ from the perspective of software development: how to use it from your programs, as well as how to modify or extend its capabilities via [plugins](/fiji/plugins).
+This page provides an overview of ImageJ from the perspective of software development: how to use it from your programs, as well as how to modify or extend its capabilities via [plugins](/plugins).
 
 Quick start
 -----------
@@ -29,7 +29,7 @@ Project structure
 
 ImageJ is divided into three parts:
 
-<table><thead><tr class="header"><th style="font-size: 56px; width: 350px"><p> {% include logo content='ImageJ' size='72px' %}<a href="/about">ImageJ</a></p></th><th></th></tr></thead><tbody><tr class="odd"><td><p><span style="font-size: large"><strong>Image-specific components</strong></span></p></td><td><ul><li><a href="/plugins/imagej-common">ImageJ Common</a></li><li><a href="/develop/imagej-ops">ImageJ Ops</a></li><li><a href="/plugins/updater">ImageJ Updater</a></li><li><a href="/Compatibility">ImageJ Legacy</a></li><li><a href="/software/scifio">SCIFIO</a></li></ul></td></tr><tr class="even"><td style="font-size: 56px; bold"><p> {% include logo content='ImgLib2' size='72px' %}<a href="/imglib2">ImgLib2</a></p></td><td style="width: 350px;"><p> <a href="SciJava"><img src="/media/Scijava-logo.png" height="72px"/></a></p></td></tr><tr class="odd"><td style="text-align: center; vertical-align: top"><p> <span style="font-size: large"><strong>Core image data model</strong></span><br />
+<table><thead><tr class="header"><th style="font-size: 56px; width: 350px"><p> {% include logo content='ImageJ' size='72px' %}<a href="/about">ImageJ</a></p></th><th></th></tr></thead><tbody><tr class="odd"><td><p><span style="font-size: large"><strong>Image-specific components</strong></span></p></td><td><ul><li><a href="/plugins/imagej-common">ImageJ Common</a></li><li><a href="/libs/imagej-ops">ImageJ Ops</a></li><li><a href="/plugins/updater">ImageJ Updater</a></li><li><a href="/Compatibility">ImageJ Legacy</a></li><li><a href="/software/scifio">SCIFIO</a></li></ul></td></tr><tr class="even"><td style="font-size: 56px; bold"><p> {% include logo content='ImgLib2' size='72px' %}<a href="/imglib2">ImgLib2</a></p></td><td style="width: 350px;"><p> <a href="SciJava"><img src="/media/Scijava-logo.png" height="72px"/></a></p></td></tr><tr class="odd"><td style="text-align: center; vertical-align: top"><p> <span style="font-size: large"><strong>Core image data model</strong></span><br />
 </p><ul><li>Extensible pixel types – not just uint8, uint16, float32</li><li>Extensible data sources – not just files on disk</li><li>Extensible sample organizations – not just arrays</li><li>Extensible dimensionality – not just X, Y, Z and time</li><li>Interface-driven design</li></ul></td><td style="text-align: center; vertical-align: top"><p> <span style="font-size: large"><strong>More general than images</strong></span><br />
 </p><ul><li>Application container</li><li>Plugin framework</li><li>Module framework</li><li>Display and UI frameworks</li><li>Scripting framework and plugins</li></ul></td></tr></tbody></table>
 

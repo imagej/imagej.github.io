@@ -13,7 +13,7 @@ Topic
 There were two primary topics for this hackathon:
 
 1.  **Learnathon.** For the first half, we covered the current ImageJ2 and SciJava APIs with informal presentations and workshops. We spent some time beefing up and updating the tutorials.
-2.  **Ops.** The second half focused on development of the [ImageJ Ops](/develop/imagej-ops) component for "write once, run anywhere" image processing. We added more algorithms and routines to the core library, and continued polishing the Ops framework itself, as well as the [ImageJ2 data model](/plugins/imagej-common).
+2.  **Ops.** The second half focused on development of the [ImageJ Ops](/libs/imagej-ops) component for "write once, run anywhere" image processing. We added more algorithms and routines to the core library, and continued polishing the Ops framework itself, as well as the [ImageJ2 data model](/plugins/imagej-common).
 
 ### Side projects
 

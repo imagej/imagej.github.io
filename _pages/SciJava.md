@@ -16,7 +16,7 @@ The SciJava component collection
 
 The following component layers are part of the **[SciJava component collection](/develop/architecture)**:
 
--   **SciJava** - foundational layer unspecific to image processing, including the [SciJava Common](/software/scijava-common) shared library with powerful plugin framework and application container, and plugins built on it.
+-   **SciJava** - foundational layer unspecific to image processing, including the [SciJava Common](/libs/scijava-common) shared library with powerful plugin framework and application container, and plugins built on it.
 -   [ImgLib2](/imglib2) - core libraries for N-dimensional image processing.
 -   [SCIFIO](/software/scifio) - core libraries for N-dimensional image I/O.
 -   [ImageJ2](/software/imagej2) - core libraries and application for N-dimensional image processing.

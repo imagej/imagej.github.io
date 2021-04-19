@@ -22,7 +22,7 @@ In the coming months we have several projects of interest. In approximate order 
 -   [SCIFIO blockization](https://github.com/scifio/scifio/tree/blocks-are-so-plane) - better-integrating the [ImgLib2](/imglib2) data model and moving from Planes to a general block-based API
 -   [Rich images](https://github.com/imagej/imagej-common/tree/rich-image) - a polishing pass at the ImageJ data model
 -   [Robust-IO](https://github.com/scifio/scifio/tree/location-robust-io) - generalizing image I/O sources
--   Increasing the sophistication of [ImageJ Ops](/develop/imagej-ops)
+-   Increasing the sophistication of [ImageJ Ops](/libs/imagej-ops)
 -   [SciJava-Common 3.x](https://github.com/scijava/scijava-common/milestones/3.0.0)
 -   Increased collaboration with KNIME ([LOCI](/orgs/loci) is pleased to have {% include person content='gab1one' %} on loan from Konstanz!)
 -   Improved {% include github org='imagej' repo='imagej-legacy' issue='86' label='ImageJ1-ImageJ2 synchronization' %}

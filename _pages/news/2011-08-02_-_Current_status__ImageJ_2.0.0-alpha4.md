@@ -19,7 +19,7 @@ We have also expanded support for ROIs and overlays. Rather than allowing only a
 
 ### ImageJ2 plugins
 
-<img src="/media/Math-plugins.png" title="fig:Math plugins: ImageJ2 math plugins." width="326" alt="Math plugins: ImageJ2 math plugins." /> We have reimplemented many ImageJ1 plugins within the ImageJ2 [extensibility framework](/Architecture#Extensibility). These plugins illustrate some of the features of ImageJ2, and serve as examples for how to bring legacy plugins up to date.
+<img src="/media/Math-plugins.png" title="fig:Math plugins: ImageJ2 math plugins." width="326" alt="Math plugins: ImageJ2 math plugins." /> We have reimplemented many ImageJ1 plugins within the ImageJ2 [extensibility framework](/develop/architecture#extensibility). These plugins illustrate some of the features of ImageJ2, and serve as examples for how to bring legacy plugins up to date.
 
 ImageJ2 supports several types of plugins depending on what you are trying to do. The most straightforward is the `ImageJPlugin`, which is as simple to implement as IJ1's `Plugin` interface—there is a single method, `run()`, that executes the plugin command. The difference is that the plugin's inputs and outputs are explicitly declared using instance fields annotated with `@Parameter`. This eliminates the need to write UI-centric `GenericDialog` code as was needed in IJ1, and provides automatic scripting capabilities for all such plugins.
 

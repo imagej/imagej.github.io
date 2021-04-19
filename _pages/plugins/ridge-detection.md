@@ -5,7 +5,7 @@ description: test description
 ---
 
 {% include unmaintained%}
- {% include biginfo-box content='As this plugin is no longer maintained... you can check out [ImageJ Ops](/develop/imagej-ops) for Ridge Detection algorithms.' %}
+ {% include biginfo-box content='As this plugin is no longer maintained... you can check out [ImageJ Ops](/libs/imagej-ops) for Ridge Detection algorithms.' %}
 
 
 {% capture author%}

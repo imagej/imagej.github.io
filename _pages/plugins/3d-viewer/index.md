@@ -6,7 +6,7 @@ description: test description
 artifact: sc.fiji:3D\_Viewer
 ---
 
-This plugin offers hardware-accelerated visualization possibilities for image stacks, using the [Java 3D](/plugins/java-3d) library. Stacks can be displayed as texture-based volume renderings, surfaces or orthoslices.
+This plugin offers hardware-accelerated visualization possibilities for image stacks, using the [Java 3D](/libs/java-3d) library. Stacks can be displayed as texture-based volume renderings, surfaces or orthoslices.
 
 ![](/media/3D Viewer overview.png "3D_Viewer_overview.png")
 

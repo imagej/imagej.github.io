@@ -18,8 +18,8 @@ Definitions
 
 Throughout this article, and elsewhere on this wiki, we use the following terms:
 
--   A software **component** is a program, such as a [plugin](/fiji/plugins), or a {% include wikipedia title='Library (computing)' text='library'%} of reusable functions. Components are typically designed to work together, and combined to form a {% include wikipedia title='Application software' text='software application'%} such as [ImageJ](/about). In [Maven](/develop/maven) terms, a component is a single *artifact*, typically a [JAR file](https://en.wikipedia.org/wiki/JAR_(file_format)).
--   A software **project** is a more general term referring to either a single component or a *collection* of related components. For example, the phrase "ImageJ project" refers to several components including [ImageJ Common](/plugins/imagej-common), [ImageJ Ops](/develop/imagej-ops), [ImageJ Legacy](/Compatibility) and the [ImageJ Updater](/plugins/updater).
+-   A software **component** is a program, such as a [plugin](/plugins), or a {% include wikipedia title='Library (computing)' text='library'%} of reusable functions. Components are typically designed to work together, and combined to form a {% include wikipedia title='Application software' text='software application'%} such as [ImageJ](/about). In [Maven](/develop/maven) terms, a component is a single *artifact*, typically a [JAR file](https://en.wikipedia.org/wiki/JAR_(file_format)).
+-   A software **project** is a more general term referring to either a single component or a *collection* of related components. For example, the phrase "ImageJ project" refers to several components including [ImageJ Common](/plugins/imagej-common), [ImageJ Ops](/libs/imagej-ops), [ImageJ Legacy](/Compatibility) and the [ImageJ Updater](/plugins/updater).
 -   The **SciJava component collection** is the set of all components managed by the `pom-scijava` Bill of Materials. Such **SciJava components** reside across several different architectural layers. See "Bill of Materials" below for details.
 -   **SciJava core components** are SciJava components of the SciJava component layer itself. See "Organizational structure" below.
 -   The **ImageJ software stack** is the set of components upon which [ImageJ](/about) is built. It includes components from the [SciJava](SciJava), [ImgLib2](/imglib2), [ImageJ](/about) and [SCIFIO](/software/scifio) foundational layers; see "Organizational structure" and "Core libraries" below for details.
@@ -27,7 +27,7 @@ Throughout this article, and elsewhere on this wiki, we use the following terms:
 SciJava project structure
 =========================
 
-The [ImageJ](/about) project, and related projects in the [SciJava](SciJava) software ecosystem, are carefully structured to foster [extensibility](/Architecture#Extensibility).
+The [ImageJ](/about) project, and related projects in the [SciJava](SciJava) software ecosystem, are carefully structured to foster [extensibility](#extensibility).
 
 Organizational structure
 ------------------------
@@ -70,7 +70,7 @@ With [Maven](/develop/maven) it is possible to create a [multi-module reactor](h
 
 While many SciJava components used to be structured this way, we found that lumping multiple components into a single Git repository with a multi-module build has disadvantages compared to separate Git repositories with single-module builds:
 
--   Typically, components of a multi-module project are all versioned together, but we have opted for individual [versioning](/develop/versioning) of components, for reasons of [rapid iteration](Philosophy#Release_early.2C_release_often), [extensibility](/Architecture#Extensibility) and [modularity](Architecture#Modularity).
+-   Typically, components of a multi-module project are all versioned together, but we have opted for individual [versioning](/develop/versioning) of components, for reasons of [rapid iteration](/develop/philosophy#release-early-release-often), [extensibility](#extensibility) and [modularity](#modularity).
 -   Individual repositories make it easier for developers to cherry-pick only those components of interest, without building the rest of the code, since dependencies are fetched on demand from remote [Maven](/develop/maven) repositories.
 -   Concerns are better separated, with each component encapsulating its own codebase, issues, pull requests and technical documentation.
 -   Since every component follows a consistent structure, the supporting tools (e.g., [these scripts](https://github.com/scijava/scijava-scripts)) are simpler to develop and maintain.
@@ -81,7 +81,7 @@ Of course, there are downsides, too:
 -   Issues relevant to multiple components must be filed separately in each issue tracker and cross-referenced.
 -   It can be more difficult to locate code of interest, since the codebase is spread across so many repositories.
 
-As a rule of thumb, we find that multi-module [Maven](/develop/maven) projects stored within a single Git repository are a natural fit for "big bang" software which is versioned in lockstep and carefully tested before each [release](/develop/releasing), whereas single-module projects stored in separate Git repositories work well for the [RERO](Philosophy#Release_early.2C_release_often)-style [release](/develop/releasing) paradigm.
+As a rule of thumb, we find that multi-module [Maven](/develop/maven) projects stored within a single Git repository are a natural fit for "big bang" software which is versioned in lockstep and carefully tested before each [release](/develop/releasing), whereas single-module projects stored in separate Git repositories work well for the [RERO](/develop/philosophy#release-early-release-often)-style [release](/develop/releasing) paradigm.
 
 Maven component structure
 -------------------------
@@ -116,10 +116,10 @@ Core libraries
 
 The ImageJ software stack is composed of the following core libraries:
 
--   [SciJava Common](/software/scijava-common) - The [SciJava](SciJava) application container and plugin framework.
+-   [SciJava Common](/libs/scijava-common) - The [SciJava](SciJava) application container and plugin framework.
 -   [ImgLib2](/imglib2) - The N-dimensional image data model.
 -   [ImageJ Common](/plugins/imagej-common) - Metadata-rich image data structures and SciJava extensions.
--   [ImageJ Ops](/develop/imagej-ops) - The framework for reusable image processing operations.
+-   [ImageJ Ops](/libs/imagej-ops) - The framework for reusable image processing operations.
 -   [SCIFIO](/software/scifio) - The framework for N-dimensional image I/O.
 
 These libraries form the basis of ImageJ-based software.
@@ -136,7 +136,7 @@ Along those lines, the libraries take great pains to be **UI agnostic**, with no
 
 Extensibility is [ImageJ](/about)'s greatest strength. ImageJ provides many different types of plugins, and it is possible to extend the system with your own new types of plugins. See the [create-a-new-plugin-type tutorial](https://github.com/imagej/tutorials/tree/master/maven-projects/create-a-new-plugin-type) for an illustration.
 
-The [SciJava Common](/software/scijava-common) (SJC) library provides a plugin framework with {% include wikipedia title='Strong and weak typing' text='strong typing'%}, and makes extensive use of plugins itself, to allow core functionality to be [customized easily](http://c2.com/cgi/wiki?SoftwareSeam). SJC has an powerful plugin discovery mechanism that finds all plugins available on the Java classpath, without knowing in advance what they are or where they are located. It works by indexing the plugins at compile time via an {% include wikipedia title='Java annotation\#Processing' text='annotation processor'%} (inspired by the [SezPoz](https://github.com/jglick/sezpoz) project) which writes the plugin metadata inside the JAR file (in `META-INF/json/org.scijava.plugin.Plugin`). Reading this index allows the system to discover plugin metadata at runtime very quickly *without* loading the plugin classes in advance.
+The [SciJava Common](/libs/scijava-common) (SJC) library provides a plugin framework with {% include wikipedia title='Strong and weak typing' text='strong typing'%}, and makes extensive use of plugins itself, to allow core functionality to be [customized easily](http://c2.com/cgi/wiki?SoftwareSeam). SJC has an powerful plugin discovery mechanism that finds all plugins available on the Java classpath, without knowing in advance what they are or where they are located. It works by indexing the plugins at compile time via an {% include wikipedia title='Java annotation\#Processing' text='annotation processor'%} (inspired by the [SezPoz](https://github.com/jglick/sezpoz) project) which writes the plugin metadata inside the JAR file (in `META-INF/json/org.scijava.plugin.Plugin`). Reading this index allows the system to discover plugin metadata at runtime very quickly *without* loading the plugin classes in advance.
 
 Reproducible builds
 ===================
@@ -195,7 +195,7 @@ In the case of Eclipse, you may need to "Update Maven project" in order to see t
 
 {% include warning-box content='**Current versions of the Eclipse Maven integration (tested with Eclipse Mars) fail to correctly resolve the `LATEST` version tag to `SNAPSHOT`s. Use the command-line client instead.**' %}
 
-Either way, ***be sure to work on a topic branch while developing code in this fashion.*** You will need to clean up your Git history afterwards before merging things to the `master` branch, in order to achieve [reproducible builds](/Architecture#Reproducible_builds).
+Either way, ***be sure to work on a topic branch while developing code in this fashion.*** You will need to clean up your Git history afterwards before merging things to the `master` branch, in order to achieve [reproducible builds](#reproducible-builds).
 
 Versioning
 ==========

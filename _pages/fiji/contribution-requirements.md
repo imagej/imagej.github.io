@@ -87,7 +87,7 @@ In general, if the rest of the Fiji distribution upgrades to a new major version
 
 Many plugins in Fiji contain explicit version constants. Without [Maven](/develop/maven), in-code constants may make sense as a way to track compatibility. But by Mavenizing for contribution to Fiji, the pom.xml provides a standard mechanism for versioning, allowing migration away from constants in the source code.
 
-Versioning through the pom.xml has several advantages to facilitate [reproducible builds](/Architecture#Reproducible_builds), including:
+Versioning through the pom.xml has several advantages to facilitate [reproducible builds](/develop/architecture#reproducible-builds), including:
 
 -   Standardized scripts to increment versions appropriately.
 -   No risk of accidentally double-releasing a given version.
@@ -142,7 +142,7 @@ In particular when fixing a bug, it is a good idea to write a regression test *f
 Separation of concerns
 ----------------------
 
-New features should be put into the appropriate component. E.g., when adding a general purpose utility, consider contributing to [SciJava Common](/software/scijava-common) or [ImageJ Common](/plugins/imagej-common) instead of bundling it with your specific extension.
+New features should be put into the appropriate component. E.g., when adding a general purpose utility, consider contributing to [SciJava Common](/libs/scijava-common) or [ImageJ Common](/plugins/imagej-common) instead of bundling it with your specific extension.
 
 Examples
 ========

@@ -20,7 +20,7 @@ Writing ImageJ2 Plugins: A Beginner's Perspective
 Preamble
 --------
 
-Before you consider to write your own [plugin](/fiji/plugins) for [ImageJ](/about), please note that writing a [script](/scripting/script-editor) has a much lower barrier to entry than Java plugin development.
+Before you consider to write your own [plugin](/plugins) for [ImageJ](/about), please note that writing a [script](/scripting/script-editor) has a much lower barrier to entry than Java plugin development.
 
 Also you may want to have a look at [Introduction\_into\_Macro\_Programming](/scripting/macro) as an easy way to automate repetitive tasks with existing tools and plugins.
 
@@ -97,7 +97,7 @@ Using JAR works for local development, but it will cause you various problems la
 Build ImageJ with NetBeans, Git and Maven
 -----------------------------------------
 
-Using Maven to develop your plugins is a much better approach. You will not have to commit any JAR files to source control. You can pin your code to fixed, known versions of its dependencies that will provide [reproducible builds](/Architecture#Reproducible_builds) for many years to come.
+Using Maven to develop your plugins is a much better approach. You will not have to commit any JAR files to source control. You can pin your code to fixed, known versions of its dependencies that will provide [reproducible builds](/develop/architecture#reproducible-builds) for many years to come.
 
 Getting the ImageJ sources in NetBeans should be as simple as importing the source from the Git repository.
 
@@ -170,7 +170,7 @@ Tutorials
 -   For ImageJ2: [Writing plugins](/develop/plugins) (Note: The instruction "Update your parent POM" in [Writing plugins\#Update\_your\_POM](Writing_plugins#Update_your_POM) just means that the version number should be adjusted to reflect the latest available version of the parent POM file on GitHub.)
 -   [ImgLib2 Examples](/imglib2/examples)
 -   [Developing ImgLib2](/imglib2/developing)
--   [ImageJ Ops](/develop/imagej-ops)
+-   [ImageJ Ops](/libs/imagej-ops)
 
 Getting Started
 ---------------

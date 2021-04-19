@@ -28,7 +28,7 @@ description: test description
 
  **BAR**: A collection of **B**roadly **A**pplicable **R**outines.
 
-The collection contains [Macros](/scripting/macro), [Scripts](/scripting) and [Plugins](/fiji/plugins) focused on Data Analysis, Image Annotation and Image Segmentation. It is curated using {% include github org='tferr' repo='Scripts\#ij-bar' label='GitHub' %} and distributed as an optional {% include list-of-update-sites content='update site' %}.
+The collection contains [Macros](/scripting/macro), [Scripts](/scripting) and [Plugins](/plugins) focused on Data Analysis, Image Annotation and Image Segmentation. It is curated using {% include github org='tferr' repo='Scripts\#ij-bar' label='GitHub' %} and distributed as an optional {% include list-of-update-sites content='update site' %}.
 
 Installation
 ------------

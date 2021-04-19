@@ -138,7 +138,7 @@ Downgrading is generally not recommended as a long-term solution, but can be han
 
 *If you need to downgrade to avoid a critical bug, please [report that bug](/help/report-a-bug) to the developers so that it can be fixed in a future version!*
 
--   You can change the version of [ImageJ 1.x](/software/imagej1) used via the {% include bc path='Help | Update ImageJ...'%} menu item. This *only* changes the version of ImageJ 1.x—not all ImageJ components, [plugins](/fiji/plugins), etc.
+-   You can change the version of [ImageJ 1.x](/software/imagej1) used via the {% include bc path='Help | Update ImageJ...'%} menu item. This *only* changes the version of ImageJ 1.x—not all ImageJ components, [plugins](/plugins), etc.
 -   You can [switch to a different version of Java](#How_do_I_launch_ImageJ_with_a_different_version_of_Java?).
 -   You can [download a Fiji Life-Line version](Downloads#Fiji).
 
@@ -201,7 +201,7 @@ Thanks to the {% include github org='imagej' repo='imagej-legacy' label='ImageJ 
 
 The ImageJ1 macro language has been extremely useful to many users. However, it has a substantial limitation: its functions are separate from those available from Java and the other scripting languages.
 
-In ImageJ2, the goal is to provide one unified set of functions, which is fully accessible from Java and all scripting languages. Hence, ImageJ2 plugins and scripts are more flexible than [ImageJ1](/software/imagej1) [plugins](/fiji/plugins) and [macros](/scripting/macro). They can run [headless](/learn/headless) on a server, and are accessible from various applications such as CellProfiler, [KNIME](/software/knime), OMERO, and headless from the command line. We would encourage newly developed scripts and plugins to use the ImageJ2 API since it offers these advantages, but the ImageJ1 API will remain accessible, too.
+In ImageJ2, the goal is to provide one unified set of functions, which is fully accessible from Java and all scripting languages. Hence, ImageJ2 plugins and scripts are more flexible than [ImageJ1](/software/imagej1) [plugins](/plugins) and [macros](/scripting/macro). They can run [headless](/learn/headless) on a server, and are accessible from various applications such as CellProfiler, [KNIME](/software/knime), OMERO, and headless from the command line. We would encourage newly developed scripts and plugins to use the ImageJ2 API since it offers these advantages, but the ImageJ1 API will remain accessible, too.
 
 Can I call ImageJ1 API from an ImageJ2 command?
 -----------------------------------------------
