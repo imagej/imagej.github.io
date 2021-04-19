@@ -1,0 +1,4 @@
+---
+title: Widgets
+---
+{% include stub %}

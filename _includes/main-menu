@@ -45,7 +45,7 @@
 {% include menu-section title="Learn" link="/learn" %}
   {% include menu-item title="Getting Started" link="/learn/getting-started" %}
   {% include menu-item title="User Guides" link="/learn/user-guides" %}
-  {% include menu-item title="Tutorials" link="/learn/tutorials" %}
+  {% include menu-item title="Tutorials" link="/tutorials" %}
   {% include menu-item title="Tips and Tricks" link="/learn/tips-and-tricks" %}
   {% include menu-item title="Presentations" link="/learn/presentations" %}
 
@@ -87,7 +87,6 @@
     {% include menu-item title="Deconvolution" link="/techniques/deconvolution" %}
     {% include menu-item title="Registration" link="/techniques/registration" %}
     {% include menu-item title="Segmentation" link="/techniques/segmentation" %}
-    {% include menu-item title="Stitching" link="/techniques/stitching" %}
     {% include menu-item title="Tracking" link="/techniques/tracking" %}
     {% include menu-item title="Visualization" link="/techniques/visualization" %}
   {% include menu-section-end %} <!-- Learn/Techniques -->
@@ -143,15 +142,15 @@
 
   {% include menu-section title="Guides" %}
     {% include menu-item title="Writing plugins" link="/develop/plugins" %}
-    {% include menu-item title="ImageJ Ops" link="/develop/imagej-ops" %}
+    {% include menu-item title="ImageJ Ops" link="/libs/imagej-ops" %}
     {% include menu-item title="Contributing to a plugin" link="/develop/improving-the-code" %}
     {% include menu-item title="Distributing your plugins" link="/develop/distributing" %}
-    {% include menu-item title="Development lifecycle" link="/develop/development-lifecycle" %}
+    {% include menu-item title="Development lifecycle" link="/develop/releasing" %}
     {% include menu-item title="Building a POM" link="/develop/building-a-pom" %}
     {% include menu-divider %}
     {% include menu-item title="Developing with Eclipse" link="/develop/eclipse" %}
     {% include menu-item title="Hands-on debugging" link="/develop/debugging-exercises" %}
-    {% include menu-item title="Adding new ops" link="/develop/adding-ops" %}
+    {% include menu-item title="Adding new ops" link="/develop/writing-ops" %}
     {% include menu-item title="Adding new formats" link="/develop/formats" %}
     {% include menu-item title="Using native libraries" link="/develop/native-libraries" %}
     {% include menu-item title="Tips for developers" link="/develop/tips" %}
@@ -178,7 +177,6 @@
 
   {% include menu-section title="ImgLib2" link="/imglib2" %}
     {% include menu-item title="ImgLib2 Benchmarks" link="/imglib2/benchmarks" %}
-    {% include menu-item title="Architecture" link="/imglib2/architecture" %}
     {% include menu-item title="FAQ" link="/imglib2/faq" %}
 
     {% include menu-section title="Tutorials" %}
@@ -188,7 +186,7 @@
       {% include menu-item title="Examples" link="/imglib2/examples" %}
       {% include menu-item title="Introductory Workshop" link="/imglib2/workshop-introductory" %}
       {% include menu-item title="Advanced Programming Workshop" link="/imglib2/workshop-advanced" %}
-      {% include menu-item title="Into ImgLib - Generic Image Processing in Java" link="/imglib2/workshop-imglib1" %}
+      {% include menu-item title="Into ImgLib - Generic Image Processing in Java" link="/imglib1/workshop" %}
       {% include menu-item title="Creating Imglib2 images in MATLAB" link="/imglib2/matlab" %}
     {% include menu-section-end %} <!-- Development/ImgLib2/Tutorials -->
 
@@ -200,11 +198,11 @@
 {% include menu-section-end %} <!-- Development -->
 
 {% include menu-section title="Help" link="/help" %}
-  {% include menu-item title="FAQ" link="/faq" %}
+  {% include menu-item title="FAQ" link="/help/faq" %}
   {% include menu-item title="Troubleshooting" link="/help/troubleshooting" %}
   {% include menu-item title="How to write bug reports" link="/help/bug-reporting-best-practices" %}
   {% include menu-item title="Report an issue" link="/help/report-a-bug" %}
-  {% include menu-item title="Editing the ImageJ Wiki" link="/help/editing-the-wiki" %}
+  {% include menu-item title="Editing the ImageJ Wiki" link="/help/editing" %}
   {% include menu-section title="Update Sites" link="/update-sites"  %}
     {% include menu-item title="Following an update site" link="/update-sites/following" %}
     {% include menu-item title="Creating your own update site" link="/update-sites/setup" %}

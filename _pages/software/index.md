@@ -1,0 +1,4 @@
+---
+title: Software
+---
+{% include stub %}
