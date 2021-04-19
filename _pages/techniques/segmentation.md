@@ -110,7 +110,7 @@ See also
 ========
 
 -   The [Introduction to Image Segmentation using ImageJ/Fiji](/media/Arganda-Carreras-Segmentation-Bioimage-course-MDC-Berlin-2016.pdf) workshop.
--   The [Segmentation with Fiji workshop slides](http://imagej.github.io/presentations/fiji-segmentation/).
+-   The [Segmentation with Fiji workshop slides](/presentations/fiji-segmentation/).
 -   [:Category:Segmentation](Category_Segmentation), a list of pages about image segmentation.
 
  

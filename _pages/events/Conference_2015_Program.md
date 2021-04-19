@@ -24,7 +24,7 @@ There were four 45-minute keynote presentations.
 
 ### Curtis Rueden - ImageJ2 and Fiji: the ImageJ2 platform, and the Fiji distribution of ImageJ
 
-\[ [Presentation slides](http://imagej.github.io/presentations/2015-09-03-imagej2-and-fiji/#/) \] \[ [Presentation video](https://vimeo.com/140929687/) \]
+\[ [Presentation slides](/presentations/2015-09-03-imagej2-and-fiji/#/) \] \[ [Presentation video](https://vimeo.com/140929687/) \]
 
 ### Mark Tsuchida - Microscope control and image acquisition with Micro-Manager
 
@@ -96,7 +96,7 @@ ImageJ and MATLAB both provide powerful scientific development paradigms. To low
 
 For further details and code links, see [MATLAB Scripting](/scripting/matlab).
 
-\[ [Presentation slides](http://imagej.github.io/presentations/2015-09-03-imagej-matlab/) \] \[ [Presentation video](https://vimeo.com/140929686/) \]
+\[ [Presentation slides](/presentations/2015-09-03-imagej-matlab/) \] \[ [Presentation video](https://vimeo.com/140929686/) \]
 
 ### Irene Landrum - SWAMP – a no-cost, open, high-performance computing platform for continuous software assurance
 
@@ -135,7 +135,7 @@ Most imaging studies in the biological sciences rely on analyses that are relati
 
 This lightning talk will describe the implementation of deconvolution into the [ImageJ2](/software/imagej2) platform. We will go over the basics of [deconvolution](/cookbook/deconvolution) and introduce concepts such as noise handling, edge handling, algorithm acceleration and point spread functions. We will review strengths and weaknesses of existing ImageJ deconvolution plugins. We will then describe the design of reusable and extensible deconvolution components, that have been implemented within the [ImageJ Ops](/libs/imagej-ops) framework. Where possible previous open source components have been reused and/or reimplemented. We consider the potential need for a native library bridge in order to reuse existing C and GPU based libraries. Preliminary results will be presented that have been generated using the Richardson-Lucy Algorithm with total variation regularization, non-circulant edge handling, and vector extrapolation acceleration. All code is [open source](Open_source) and has been placed in publicly available git repositories.
 
-\[ [Presentation slides](http://imagej.github.io/presentations/2015-09-04-imagej2-deconvolution/) \] \[ [Presentation video](https://vimeo.com/140098821/) \]
+\[ [Presentation slides](/presentations/2015-09-04-imagej2-deconvolution/) \] \[ [Presentation video](https://vimeo.com/140098821/) \]
 
 ### Stephan Saalfeld - Seamless stitching without blending
 
@@ -258,7 +258,7 @@ To quantitatively compare the contents of two images, they must be spatially ali
 
 The [ImageJ2](/software/imagej2) project updates ImageJ with powerful new features. Two especially useful improvements are: 1) the [ImageJ Ops](/libs/imagej-ops) library, which provides a powerful, unified, extensible and performant collection of image processing routines; and 2) [parameterized scripts](Scripting_parameters) and macros, which may now declare typed input and output parameters. This mechanism allows scripts to be prototyped more quickly and succinctly, and makes them compatible with other tools beyond ImageJ, including the [KNIME](/software/knime) data mining platform, [CellProfiler](/software/cellprofiler) image analysis tool, and [OMERO](/software/omero) image database. This workshop will walk users through how to write parameterized macros and scripts using ImageJ's [Script Editor](/scripting/script-editor), which leverage image processing routines from ImageJ Ops. It will demonstrate how to execute them [headlessly](/learn/headless) from the command line, and briefly illustrate how these scripts can be used from other tools in the [SciJava](SciJava) software ecosystem.
 
-\[ [Workshop slides](http://imagej.github.io/presentations/2015-09-04-imagej2-scripting/) \]
+\[ [Workshop slides](/presentations/2015-09-04-imagej2-scripting/) \]
 
 **Workshop requirements:** An up-to-date installation of [Fiji](/fiji)
 

@@ -102,14 +102,14 @@ The output image is a 4D MR hyperimage. The "channels" slicer helps you to explo
 
   
 Unit for the channels 2 and 3 are milliseconds, what mean you can use it like it, without any additional conversion.  
-For time-lapse experiments, one can compute such a 4D MR hyperimage at successive timepoints, and register and combine them in a 5D MR hyperimage (the same, with an additional slicer to walk through time). Registration and data combining can be done using the series registration mode of the [Fijiyama](https://imagej.github.io/Fijiyama) plugin.
+For time-lapse experiments, one can compute such a 4D MR hyperimage at successive timepoints, and register and combine them in a 5D MR hyperimage (the same, with an additional slicer to walk through time). Registration and data combining can be done using the series registration mode of the [Fijiyama](/plugins/fijiyama) plugin.
 
   
 **The science behind**
 --
 This plugin compute M0, T1 and T2 maps pixelwise from a given set of spin-echo sequences, acquired with different repetition times and/or different echo times.
 
-First a 3d registration is computed to align precisely the successive images, using libraries of the [Fijiyama](https://imagej.github.io/Fijiyama)  plugin. Then the rice noise level is estimated, and the M0, T1 and T2 parameters are estimated, fitting mono or bi-exponential curves, corrected with the measured rice noise. For more information, see the paper in next section.
+First a 3d registration is computed to align precisely the successive images, using libraries of the [Fijiyama](/plugins/fijiyama)  plugin. Then the rice noise level is estimated, and the M0, T1 and T2 parameters are estimated, fitting mono or bi-exponential curves, corrected with the measured rice noise. For more information, see the paper in next section.
 
 **Citing this work**
 --

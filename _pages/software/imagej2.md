@@ -24,7 +24,7 @@ ImageJ2"s Mission
 -   **Unify** online resources to a central location for the ImageJ community.
 -   **Lead** ImageJ development with a clear vision.
 
-See also [these presentation slides about ImageJ](https://imagej.github.io/presentations/2015-09-03-imagej2-and-fiji/#/4) .' %}
+See also [these presentation slides about ImageJ](/presentations/2015-09-03-imagej2-and-fiji/#/4) .' %}
 
 </div>
 
@@ -113,8 +113,8 @@ For the moment, we suggest using "The ImageJ ecosystem" paper for citations. But
 Presentations
 -------------
 
--   2017-Feb-16 "What's New in ImageJ2?" \[ [slides](http://imagej.github.io/presentations/2017-02-16-imagej2-neubias/) \]
--   2015-Sep-03 "The ImageJ2 platform, and the Fiji distribution of ImageJ" \[ [video](https://vimeo.com/140929687), [slides](https://imagej.github.io/presentations/2015-09-03-imagej2-and-fiji/) \]
+-   2017-Feb-16 "What's New in ImageJ2?" \[ [slides](/presentations/2017-02-16-imagej2-neubias/) \]
+-   2015-Sep-03 "The ImageJ2 platform, and the Fiji distribution of ImageJ" \[ [video](https://vimeo.com/140929687), [slides](/presentations/2015-09-03-imagej2-and-fiji/) \]
 -   2012-Oct-24 "ImageJ2: Current Status and Future Directions" \[ [slides](http://conference.imagej.net/2012/curtis-rueden/2012-10-24-imagej-conference.odp) \]
 -   2010-Oct-27 "ImageJDev: Next Generation ImageJ" \[ [slides](http://conference.imagej.net/2010/curtis-rueden/2010-10-27-ImageJDev.pdf) \]
 

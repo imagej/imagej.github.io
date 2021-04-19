@@ -12,7 +12,7 @@ ImageJ in Jupyter notebooks
 
 The most exciting news is that, as [announced on the ImageJ forum](http://forum.imagej.net/t/jupyter-notebook-for-imagej/5421), there is now a {% include github org='hadim' repo='scijava-jupyter-kernel' label='SciJava Jupyter Kernel' %} enabling ImageJ to be used with [Jupyter Notebook](https://jupyter.org/) in all of the [supported scripting languages](Scripting#Supported_languages).
 
-Please peruse the [ImageJ Tutorial notebooks](https://imagej.github.io/tutorials/) for examples of this kernel in action!
+Please peruse the [ImageJ Tutorial notebooks](/tutorials) for examples of this kernel in action!
 
 Sweeping component updates
 --------------------------

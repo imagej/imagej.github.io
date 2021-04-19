@@ -14,7 +14,7 @@ You can use ImageJ from [Python](https://python.org/):
 
 <!-- -->
 
--   If you want to embed an ImageJ inside of your Python code, such as within a [Jupyter notebook](https://jupyter.org/) using the Python kernel, check out the [pyimagej](https://pypi.org/project/pyimagej/) Python package. It allows you to create an ImageJ with full access to its API from Python. See the [ImageJ tutorial notebooks](https://imagej.github.io/tutorials/) for an introduction.
+-   If you want to embed an ImageJ inside of your Python code, such as within a [Jupyter notebook](https://jupyter.org/) using the Python kernel, check out the [pyimagej](https://pypi.org/project/pyimagej/) Python package. It allows you to create an ImageJ with full access to its API from Python. See the [ImageJ tutorial notebooks](/tutorials) for an introduction.
     -   **Advantage:** It is possible to combine ImageJ with other image analysis libraries like [scikit-image](Scikit-image), [ITK](/software/itk), [OpenCV](/software/opencv) and more in a single Python program.
     -   **Disadvantage:** Wrapping ImageJ in Python has some limitations and bugs, particularly surrounding use of [ImageJ1](/software/imagej1) features, compared to using ImageJ from Java-based kernels such as [BeakerX](https://beakerx.com/).
 

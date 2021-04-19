@@ -25,7 +25,7 @@ We have designed initial versions of several aspects of the ImageJ2 architecture
 
 #### ImageJ2 user interface
 
-Though our eventual goal is to create a [rich ImageJ client application](/Architecture#Modularity) using the NetBeans RCP, for the time being we have created a barebones, proof-of-concept user interface to test the feasibility of the current architecture.
+Though our eventual goal is to create a [rich ImageJ client application](/develop/architecture#modularity) using the NetBeans RCP, for the time being we have created a barebones, proof-of-concept user interface to test the feasibility of the current architecture.
 
 ### Spectral lifetime visualization
 

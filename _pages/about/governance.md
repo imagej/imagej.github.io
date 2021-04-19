@@ -49,7 +49,7 @@ Individuals often fill more than one role.
 Component status
 ----------------
 
-This web site documents lots of software [components](/Architecture#Definitions)—and in particular, many ImageJ [plugins](/plugins). Components in the ecosystem each have a distinct development path, with varying levels of maturity and activity, which is ultimately determined by the people who participate in developing it.
+This web site documents lots of software [components](/develop/architecture#definitions)—and in particular, many ImageJ [plugins](/plugins). Components in the ecosystem each have a distinct development path, with varying levels of maturity and activity, which is ultimately determined by the people who participate in developing it.
 
 Each component's page features an informational sidebar with a status report derived from the component's declared *team*. This sidebar is intended to help users understand what level to expect when seeking help, reporting issues, and submitting feature requests.
 
@@ -88,7 +88,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
 {% include person content='Rueden' %}<br />
 {% include person content='StephanP' %}<br />
 {% include person content='Saalfeld' %}</p></td><td><p><a href="https://github.com/orgs/imglib/people">List on GitHub</a></p></td><td><p>See <a href="/about/contributors">Contributors</a></p></td></tr><tr class="even"><td><p> {% include logo content='ImageJ1' %}</p></td><td><p><strong><a href="/software/imagej1">ImageJ1</a></strong></p></td><td><p> {% include person content='Rasband' %}</p></td><td><p> {% include person content='Rasband' %}</p></td><td><p> {% include person content='Rasband' %}<br />
-{% include person content='Rueden' %}</p></td><td><p> {% include person content='Rasband' %}</p></td><td><p>See <a href="/notes.html">release notes</a></p></td></tr><tr class="odd"><td><p> {% include logo content='ImageJ2' %}</p></td><td><p><strong><a href="/software/imagej2">ImageJ2</a></strong></p></td><td><p> {% include person content='Rueden' %}<br />
+{% include person content='Rueden' %}</p></td><td><p> {% include person content='Rasband' %}</p></td><td><p>See <a href="/ij/notes.html">release notes</a></p></td></tr><tr class="odd"><td><p> {% include logo content='ImageJ2' %}</p></td><td><p><strong><a href="/software/imagej2">ImageJ2</a></strong></p></td><td><p> {% include person content='Rueden' %}<br />
 {% include person content='Eliceiri' %}</p></td><td><p> {% include person content='Rueden' %}</p></td><td><p> {% include person content='Rueden' %}</p></td><td><p><a href="https://github.com/orgs/imagej/people">List on GitHub</a></p></td><td><p>See <a href="/about/contributors">Contributors</a></p></td></tr><tr class="even"><td><p> {% include logo content='SCIFIO' %}</p></td><td><p><strong><a href="/software/scifio">SCIFIO</a></strong></p></td><td><p> {% include person content='Rueden' %}<br />
 {% include person content='Eliceiri' %}<br />
 {% include person content='Hinerm' %}</p></td><td><p> {% include person content='Rueden' %}</p></td><td><p> {% include person content='Rueden' %}</p></td><td><p><a href="https://github.com/orgs/scijava/people">List on GitHub</a></p></td><td><p>See <a href="/about/contributors">Contributors</a></p></td></tr><tr class="odd"><td rowspan=3 style="vertical-align: middle"><p> {% include logo content='Fiji' %}</p></td><td><p><strong><a href="/fiji">Fiji</a></strong></p></td><td><p> {% include person content='Schindelin' %}<br />

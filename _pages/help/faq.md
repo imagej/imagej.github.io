@@ -255,7 +255,7 @@ Doing this is not recommended:
 
 -   Fiji plugin authors test their plugins in Fiji, not vanilla [ImageJ 1.x](/software/imagej1).
 -   An increasing number of plugins use features of [ImageJ2](/software/imagej2), which are not available in [ImageJ 1.x](/software/imagej1).
--   If you install multiple plugins with complex dependency chains in this manner, you may have dependency [version](/Architecture#Versioning) conflicts. For things to work, you will need to ensure that all the library versions are compatible. The [ Fiji maintainers](/about/governance) have already solved this problem for the [Fiji](/fiji) distribution.
+-   If you install multiple plugins with complex dependency chains in this manner, you may have dependency [version](/develop/architecture#versioning) conflicts. For things to work, you will need to ensure that all the library versions are compatible. The [ Fiji maintainers](/about/governance) have already solved this problem for the [Fiji](/fiji) distribution.
 
 So you could save yourself a lot of pain by using Fiji instead.
 

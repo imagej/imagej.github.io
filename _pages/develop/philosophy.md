@@ -68,7 +68,7 @@ To ensure releases can happen quickly, each SciJava component is independently r
 Convention over configuration
 -----------------------------
 
-With increased [modularity](/Architecture#Modularity) often comes increased complexity. One key way of addressing this issue is to provide sensible defaults (e.g., the [big green Xerox button](http://athinkingperson.com/2010/06/02/where-the-big-green-copier-button-came-from/)) as a way of dealing with complex software programs. We embrace the philosophy of {% include wikipedia title='Convention over configuration' text='convention over configuration'%} utilized by many large software projects in recent years. For this reason, SciJava projects use the [Maven](/develop/maven) build tool for [project management](/develop/project-management).
+With increased [modularity](/develop/architecture#modularity) often comes increased complexity. One key way of addressing this issue is to provide sensible defaults (e.g., the [big green Xerox button](http://athinkingperson.com/2010/06/02/where-the-big-green-copier-button-came-from/)) as a way of dealing with complex software programs. We embrace the philosophy of {% include wikipedia title='Convention over configuration' text='convention over configuration'%} utilized by many large software projects in recent years. For this reason, SciJava projects use the [Maven](/develop/maven) build tool for [project management](/develop/project-management).
 
 Why Java?
 ---------

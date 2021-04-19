@@ -67,12 +67,12 @@ Tuesday
 
 -   Search for stuff in our ecosystem: [https://search.imagej.net](https://search.imagej.net)
 -   [SciJava and ImageJ Ops Jupyter notebook / slides](https://github.com/fiji/learnathon-2018/blob/master/SciJava%20and%20ImageJ%20Ops.ipynb)
--   [Slides from last year's Learnathon about SciJava community](http://imagej.github.io/presentations/2017-06-19-dais-learnathon/)
+-   [Slides from last year's Learnathon about SciJava community](/presentations/2017-06-19-dais-learnathon/)
 -   [Developing ImageJ in Eclipse](/develop/eclipse)
 
 ### ImageJ2 Ops
 
--   [http://imagej.github.io/tutorials ImageJ Tutorial Notebooks](http://imagej.github.io/tutorials)
+-   [ImageJ Tutorial Notebooks](/tutorials)
 
 ### ImageJ Legacy
 
@@ -117,7 +117,7 @@ Wednesday
 -   Clone https://github.com/imagej/tutorials (but you already have it, right?)
 -   Import `maven-projects/create-a-new-op` in Eclipse.
 -   See also the [Adding new ops](/develop/writing-ops) guide
--   See also the "Extending ImageJ: Ops" notebook linked from [here](http://imagej.github.io/tutorials)
+-   See also the "Extending ImageJ: Ops" notebook linked from [here](/tutorials)
 
 ### ImageJ Server
 

@@ -11,7 +11,7 @@ This page provides an overview of ImageJ from the perspective of software develo
 Quick start
 -----------
 
--   **Learn to write [ImageJ scripts](/scripting)** from the [ImageJ tutorial notebooks](https://imagej.github.io/tutorials).
+-   **Learn to write [ImageJ scripts](/scripting)** from the [ImageJ tutorial notebooks](/tutorials).
 -   **Learn to use ImageJ from Java** with the [ImageJ tutorial Maven projects](https://github.com/imagej/tutorials/tree/master/maven-projects).
 
 What is ImageJ?
@@ -55,6 +55,6 @@ See the [source code](/develop/source) page for further details.
 Tutorials
 ---------
 
-Start with the [ImageJ tutorial notebooks](https://imagej.github.io/tutorials)!
+Start with the [ImageJ tutorial notebooks](/tutorials)!
 
 <table><tbody><tr class="odd"><td style="vertical-align: top"><p><strong>Learning the ImageJ API</strong></p></td><td><p><strong>ImageJ plugins</strong></p></td><td><p><strong>The Fiji distribution of ImageJ</strong></p></td></tr><tr class="even"><td><ul><li><a href="https://github.com/imagej/tutorials">ImageJ tutorials</a></li><li><a href="/imglib2/examples">ImgLib2 Examples</a></li><li><a href="ImageJ1-ImageJ2_cheat_sheet">ImageJ1-ImageJ2 cheat sheet</a></li></ul></td><td style="vertical-align: top"><ul><li><a href="/develop/plugins">Writing ImageJ2 plugins</a></li><li><a href="/develop/improving-the-code">Contributing to an existing plugin</a></li><li><a href="/develop/distributing">Distributing your plugin</a></li><li><a href="/develop/ij1-plugins">Writing ImageJ 1.x plugins</a></li></ul></td><td><ul><li><a href="/fiji/developing">Developing Fiji</a></li><li><a href="/develop/eclipse"> Fiji + Eclipse</a></li><li><a href="Fiji_contribution_requirements">Fiji contribution requirements</a></li><li><a href="/develop/supported-compilers">Supported Compilers</a></li></ul></td></tr></tbody></table>

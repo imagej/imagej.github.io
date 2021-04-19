@@ -11,8 +11,8 @@ ImageJ allows you to write scripts in several different languages.
 Getting started
 ===============
 
--   Read the [ImageJ tutorial notebooks](https://imagej.github.io/tutorials) to learn how to write ImageJ scripts.
--   Press the {% include key content='\[' %} key to open the [Script Editor](/scripting/script-editor) (or {% include key content='Shift' %}-{% include key content='\[' %} to open the [Script Interpreter](Script_Interpreter)).
+-   Read the [ImageJ tutorial notebooks](/tutorials) to learn how to write ImageJ scripts.
+-   Press the {% include key content='\[' %} key to open the [Script Editor](/scripting/script-editor) (or {% include key content='Shift' %}-{% include key content='\[' %} to open the [Script Interpreter](/scripting/interpreter)).
 -   Optionally, choose a template from the *Templates* menu to get you started.
 -   Otherwise, choose your language from the *Language* menu.
 -   Grab code snippets for common tasks from the [Scripting toolbox](/scripting/toolbox).

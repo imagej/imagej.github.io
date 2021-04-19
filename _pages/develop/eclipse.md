@@ -5,7 +5,7 @@ section: Development:Guides
 description: test description
 ---
 
-This article explains how to install, configure and use Eclipse to develop [ImageJ](/about) [components](/Architecture#Definitions) and [plugins](/plugins). Directions correspond to Eclipse 4.4 Luna, and may need adjustment for other versions.
+This article explains how to install, configure and use Eclipse to develop [ImageJ](/about) [components](/develop/architecture#definitions) and [plugins](/plugins). Directions correspond to Eclipse 4.4 Luna, and may need adjustment for other versions.
 
 Initial setup
 =============

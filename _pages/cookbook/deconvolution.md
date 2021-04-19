@@ -54,7 +54,7 @@ Video presentations
 
 <div style="float: left; padding-right: 1em">
 
-TODO VIMEO WIDGET by {% include person content='Bnorthan' %}, ([slides](https://imagej.github.io/presentations/2015-09-04-imagej2-deconvolution/))
+TODO VIMEO WIDGET by {% include person content='Bnorthan' %}, ([slides](/presentations/2015-09-04-imagej2-deconvolution/))
 
 </div>
 <div style="float: left">

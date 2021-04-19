@@ -64,7 +64,7 @@ Class perspective
 The official list of update sites
 ---------------------------------
 
-You can access the list of official update sites here: https://imagej.github.io/list-of-update-sites/. Anything on this list can be installed from Fiji by opening the updater, clicking `Manage update sites` and clicking the check mark of the list entry.
+You can access the list of official update sites [here](/list-of-update-sites). Anything on this list can be installed from Fiji by opening the updater, clicking `Manage update sites` and clicking the check mark of the list entry.
 
 Anyone who wants to add or change this list needs to create a pull request on https://github.com/imagej/list-of-update-sites.
 

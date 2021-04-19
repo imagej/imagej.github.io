@@ -58,7 +58,7 @@ Git repos to clone:
 
 Slides online:
 
--   [`https://imagej.github.io/presentations/2017-06-19-dais-learnathon/`](https://imagej.github.io/presentations/2017-06-19-dais-learnathon/)
+-   [`/presentations/2017-06-19-dais-learnathon/`](/presentations/2017-06-19-dais-learnathon/)
 
 ### Ops practical
 
