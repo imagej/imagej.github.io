@@ -4,6 +4,8 @@ title: Finer Grained Debian Packages
 description: test description
 ---
 
+{% include outdated %}
+
 **This page is only of interest for people who are interested in how the scripts under the debian subdirectory work - this is probably no one, so this page is largely here as a reminder to myself.**
 
 FIXME: add information about the weekly build script to this page
@@ -23,12 +25,10 @@ The improved system is described below.
 
 The relevant lines for /etc/apt/sources.list, if you don't mind trying the experimental versions of these packages, are:
 
-<code>
-
-`   deb `[`https://fiji.sc/downloads/apt-experimental/`](https://fiji.sc/downloads/apt-experimental/)` ./`  
-`   deb-src `[`https://fiji.sc/downloads/apt-experimental/`](https://fiji.sc/downloads/apt-experimental/)` ./`
-
-</code>
+```
+deb https://downloads.imagej.net/fiji/apt-experimental/ ./
+deb-src https://downloads.imagej.net/fiji/apt-experimental/ ./
+```
 
 The packages are targetting Ubuntu 10.04 (Lucid Lynx) and Debian testing (squeeze) later than August 2010.
 
@@ -51,21 +51,25 @@ Longer Version
 
 Clone the respository afresh with:
 
-`   git clone `[`git://fiji.sc/fiji.git`](Git___fiji.sc_fiji.git)
+```
+git clone https://github.com/fiji/fiji
+```
 
 ... and then initialize and update the following submodules:
 
-`   git submodule update --init modules/AutoComplete \`  
-`           modules/ImageJA \`  
-`           modules/RSyntaxTextArea \`  
-`           modules/TrakEM2 \`  
-`           modules/bio-formats \`  
-`           modules/commons-math \`  
-`           modules/ij-plugins \`  
-`           modules/imglib \`  
-`           modules/mpicbg \`  
-`           modules/tcljava \`  
-`           modules/weka`
+```
+git submodule update --init modules/AutoComplete \
+                            modules/ImageJA \
+                            modules/RSyntaxTextArea \
+                            modules/TrakEM2 \
+                            modules/bio-formats \
+                            modules/commons-math \
+                            modules/ij-plugins \
+                            modules/imglib \
+                            modules/mpicbg \
+                            modules/tcljava \
+                            modules/weka
+```
 
 ### What debian/complete-build calls
 
@@ -73,13 +77,17 @@ Clone the respository afresh with:
 
 This shouldn't be necessary if you've just cloned a new copy, as above, but in other situations it might be useful:
 
-` debian/update-debian.py --check-git-clean`
+```
+debian/update-debian.py --check-git-clean
+```
 
 #### Remove non-free and unneeded components
 
 Run the following command:
 
-`  debian/update-debian.py  --clean`
+```
+debian/update-debian.py  --clean
+```
 
 This should remove the non-free and unnecessary components, and rewrite the Fakefile to remove references to these components.
 
@@ -87,13 +95,17 @@ This should remove the non-free and unnecessary components, and rewrite the Fake
 
 The build-command script, which will actually be used to build Fiji, needs to be generated from the Fakefile. You do this with:
 
-`  debian/update-debian.py --generate-build-command`
+```
+debian/update-debian.py --generate-build-command
+```
 
 #### Build the source tree (to generate the control file from)
 
 Unfortunately, in order to accurately generate the Debian package-based dependencies from the file-based dependencies in [1](http://update.fiji.sc/db.xml.gz) we need to build the complete tree in order to find all the generated files which need to be assigned to packages. So, build Fiji with the command that debian/rules will use with:
 
-` debian/build-command`
+```
+debian/build-command
+```
 
 (We need to use a modified build command since we need to override some of the CLASSPATHs defined in Fakefile which refer to bundled jars which are now in dependent packages.)
 
@@ -101,7 +113,9 @@ Unfortunately, in order to accurately generate the Debian package-based dependen
 
 Create a debian/control file with the right dependencies and package definitions:
 
-` debian/update-debian.py --generate-complete-control`
+```
+debian/update-debian.py --generate-complete-control
+```
 
 This is based on the generated files and db.xml.gz.
 
@@ -109,15 +123,19 @@ This is based on the generated files and db.xml.gz.
 
 Before building the tree for the final packaging, we need to clean it so that only source files are included in the source archive:
 
-` debian/update-debian.py --clean`
+```
+debian/update-debian.py --clean
+```
 
 #### Build the debian packages
 
-`  dpkg-buildpackage -rfakeroot `
+```
+dpkg-buildpackage -rfakeroot
+```
 
-If you're not able to sign the packages, add the parameters "-us -uc". If you don't want to generate the source package (because dpkg-source takes \*ages\* to run with dpkg-dev prior to 1.15.5) add "-b".
+If you're not able to sign the packages, add the parameters `-us -uc`. If you don't want to generate the source package (because dpkg-source takes \*ages\* to run with dpkg-dev prior to 1.15.5) add `-b`.
 
-The debian/rules Makefile which is called by that command will call debian/update-debian.py --install to copy parts of the built tree to the right locations.
+The `debian/rules` Makefile which is called by that command will call `debian/update-debian.py --install` to copy parts of the built tree to the right locations.
 
 ### Building the i386 version and Uploading
 

@@ -49,7 +49,7 @@ When deblurring an image, certain regularity conditions have to be enforced on t
 
 There are several ImageJ plugins for generating a theoretical point spread function:
 
--   [PSF Tool for ImageJ](http://www.mosaic.ethz.ch/Downloads/psftool) by the ETH Computationnal Biophysics Lab
+-   [PSF Tool for ImageJ](http://www.mosaic.ethz.ch/downloads/psftool) by the ETH Computationnal Biophysics Lab
 -   [Diffraction PSF 3D](/plugins/diffraction-psf-3d) by Robert Dougherty
 -   [Deconvolution3D](http://bigwww.epfl.ch/demo/deconvolution3D/) by Pierre Besson.
 

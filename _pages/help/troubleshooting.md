@@ -14,7 +14,7 @@ How to troubleshoot problems
 Checking the Java version
 -------------------------
 
-You can tell which Java version ImageJ is using by clicking the ImageJ [status bar](/Getting_started#The_status_bar) and looking for the part that says e.g. "Java 1.8.0\_45 \[64-bit\]". The relevant number is the one after "Java 1."—so e.g. "Java 1.8.0\_45" or similar indicates Java 8, while "Java 1.7.0\_79" or similar indicates Java 7.
+You can tell which Java version ImageJ is using by clicking the ImageJ [status bar](/learn/getting-started#the-status-bar) and looking for the part that says e.g. "Java 1.8.0\_45 \[64-bit\]". The relevant number is the one after "Java 1."—so e.g. "Java 1.8.0\_45" or similar indicates Java 8, while "Java 1.7.0\_79" or similar indicates Java 7.
 
 On OS X, you can use [this script](https://raw.githubusercontent.com/ctrueden/ctr-scripts/master/java-info) to diagnose which versions of Java are installed on your system.
 
@@ -112,7 +112,7 @@ You can replace the `512m` with however many megabytes of memory you wish to giv
 
 If the ImageJ window never appears after launching the program, the installation may be corrupted. While the developers of ImageJ make a serious effort to prevent this problem from happening, it is still possible after running the {% include bc path='Help | Update...'%} command, due to bugs in the [Updater](/plugins/updater).
 
-The easiest workaround is to [download](/Downloads) a fresh copy of the software.
+The easiest workaround is to [download](/downloads) a fresh copy of the software.
 
 If you are feeling investigative, you can try [launching ImageJ from the console](#Launching_ImageJ_from_the_console) to get more information about why it is failing to start up. After doing that, you will probably see some information printed to the console, which you can paste online to somewhere like [Pastebin.com](http://pastebin.com/), and write to the [Community](/help) to ask for help deciphering it.
 
@@ -170,7 +170,7 @@ The same plugin gives different results on different machines!
 While ImageJ strives for [reproducible](/develop/architecture#reproducible-builds) analysis, there are many reasons results can differ. Check the following:
 
 -   Ensure that the version of [ImageJ](/about) is exactly the same on both machines.
-    -   Click the [status bar](/Getting_started#The_status_bar) and you will see something like "ImageJ 2.0.0-rc-26/1.49p".
+    -   Click the [status bar](/learn/getting-started#the-status-bar) and you will see something like "ImageJ 2.0.0-rc-26/1.49p".
     -   If these two values differ between your machines, the versions are not the same.
     -   See also [How can I verify that my ImageJ is really 100% up to date?](Frequently_Asked_Questions#How_can_I_verify_that_my_ImageJ_is_really_100%_up_to_date?).
     -   If the two versions of ImageJ match but produce different numerical results, it is a bug—please [report it](/help/report-a-bug)!
@@ -204,7 +204,7 @@ The first thing to do is make sure that ImageJ has a large enough "maximum heap"
 
 Note that in most cases, the [ImageJ launcher](Launcher) will make an initial guess at a reasonable value: \~75% of physical RAM.
 
-You can confirm how much memory is actually available by clicking on the [status bar](/Getting_started#The_status_bar). You will see a "\[used\] of \[max\]" memory message, as pictured here:
+You can confirm how much memory is actually available by clicking on the [status bar](/learn/getting-started#the-status-bar). You will see a "\[used\] of \[max\]" memory message, as pictured here:
 
 ![](/media/MemoryStatus.png "MemoryStatus.png")
 
@@ -212,7 +212,7 @@ If you are already at the limits of your computer's physical memory, the next st
 
 **If setting this value somehow has no effect:** Check for an [environment variable](http://www.computerhope.com/issues/ch000549.htm) called `_JAVA_OPTIONS` or similar, which is overriding the value. If the variable exists, change the memory value there, or remove the variable completely.
 
-**About Java garbage collection:** Java always automatically calls the garbage collector when the heap is getting full [\[1](http://stackoverflow.com/questions/8719071)\]. While it is possible to manually invoke the garbage collector by clicking ImageJ's [status bar](/Getting_started#The_status_bar)—or programmatically by calling `run("Collect Garbage")` in a macro or `System.gc()` in a plugin—it will not solve the fundamental problem of Java actually not having a sufficient amount of memory. (The only exception to this is a rare case where Java decides that garbage collection is happening too slowly, in which case you should see the message "GC overhead limit exceeded" [\[2](http://www.petefreitag.com/item/746.cfm)\]).
+**About Java garbage collection:** Java always automatically calls the garbage collector when the heap is getting full [\[1](http://stackoverflow.com/questions/8719071)\]. While it is possible to manually invoke the garbage collector by clicking ImageJ's [status bar](/learn/getting-started#the-status-bar)—or programmatically by calling `run("Collect Garbage")` in a macro or `System.gc()` in a plugin—it will not solve the fundamental problem of Java actually not having a sufficient amount of memory. (The only exception to this is a rare case where Java decides that garbage collection is happening too slowly, in which case you should see the message "GC overhead limit exceeded" [\[2](http://www.petefreitag.com/item/746.cfm)\]).
 
 NegativeArraySizeException
 --------------------------

@@ -36,7 +36,7 @@ In practice it means the following steps need to be executed:
 
 Some new parameters are introduced and some old parameters change names. Therefore, use the ***[config.yaml](#config.yaml)*** described in this chapter to process with the MVR pipeline.
 
-Outdated versions of the cluster processing scripts on which this workflow is based on you can find [here](/SPIM_Registration_on_cluster_(deprecated))
+Outdated versions of the cluster processing scripts on which this workflow is based on you can find [here](/plugins/spim-registration/on-cluster)
 
 Logic of workflow
 =================

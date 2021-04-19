@@ -12,7 +12,7 @@ description: test description
 -   For information on the *legal* structure, see [Licensing](/licensing).' %}
 
 
-The [ImageJ](/about) project, and related projects in the [SciJava](SciJava) software ecosystem, are governed as [open source](Open_source) software projects. Everybody is welcome to [contribute](/about/contributing) with [plugins](/plugins), patches, [bug reports](/help/report-a-bug), [tutorials](/Category_Tutorials), [documentation](/learn), and artwork.
+The [ImageJ](/about) project, and related projects in the [SciJava](SciJava) software ecosystem, are governed as [open source](Open_source) software projects. Everybody is welcome to [contribute](/about/contributing) with [plugins](/plugins), patches, [bug reports](/help/report-a-bug), [tutorials](/tutorials), [documentation](/learn), and artwork.
 
 That said, every project needs leaders: the ones who participate in *governance* of the project, {% include wikipedia title='Software maintenance' text='maintaining'%} the software and making key decisions.
 

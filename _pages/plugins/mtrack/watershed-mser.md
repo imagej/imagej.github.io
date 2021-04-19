@@ -21,7 +21,7 @@ After making suitable parameter selection the user can then go over the tracking
 
 <img src="/media/ModelChoice.png" width="800"/>
 
-Read more about [sub-pixel localization parameter selection](/plugins/sub-pixel-localization-parameter-selection).
+Read more about [sub-pixel localization parameter selection](/plugins/mtrack/sub-pixel-localization-parameter-selection).
 
 -   Start tracking
 

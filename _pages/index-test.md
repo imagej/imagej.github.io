@@ -18,7 +18,7 @@ layout: home
             <li><a href="/search" class="button icon solid fa-search">Search</a></li>
         </ul>
         <ul class = "actions special">
-            <li><a href="https://imagej.net/Downloads" class="button icon solid fa-download">Download</a></li>
+            <li><a href="https://imagej.net/downloads" class="button icon solid fa-download">Download</a></li>
             </ul>
         </div>
     </section>

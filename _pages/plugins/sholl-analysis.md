@@ -46,7 +46,7 @@ Installation
 
 The plugin is distributed with Fiji. It installs several commands under {% include bc path='Analysis|Sholl| ' color='white'%}. **As part of an active effort to [modernize ImageJ](/news/2015-12-22_-_The_road_to_Java_8) you need to [ subscribe](How_to_follow_a_3rd_party_update_site#Add_update_sites) to the Java 8 update site to access the latest plugin version** (this will also allow you to access the newest [ImageJ capabilities](2015-12-22_-_The_road_to_Java_8#Components_which_have_already_migrated)). To do so, you can either:
 
--   [Download the latest Fiji release](Downloads). Newer releases come pre-bundled with Java 8, and are already subscribed to the [Java-8 update site](/users/Java-8).
+-   [Download the latest Fiji release](/downloads). Newer releases come pre-bundled with Java 8, and are already subscribed to the [Java-8 update site](/users/Java-8).
 -   If you have downloaded Fiji while ago and want to keep your existing installation, you will have to download Java 8 and make your [Fiji installation aware of it](Troubleshooting#Checking_the_Java_version). Then subscribe to the [Java-8 update site](/users/Java-8).
 
 Direct Analysis of Images
@@ -419,7 +419,7 @@ Automated Segmentation
 It is possible to adopt more sophisticated [segmentation algorithms](Category_Segmentation) when [global thresholding methods](/plugins/auto-threshold) do not yield satisfactory results. Examples:
 
 -   [Local Threshold](/plugins/auto-local-threshold), {% include bc path="Image | Adjust |" %}
--   [Robust Automatic Threshold Selection](/plugins/rats--robust-automatic-threshold-selection), {% include bc path="Plugins | Segmentation |" %}
+-   [Robust Automatic Threshold Selection](/plugins/rats), {% include bc path="Plugins | Segmentation |" %}
 -   [Level Sets](/plugins/level-sets), {% include bc path="Plugins | Segmentation |" %}
 -   [Morphological Segmentation](/plugins/morphological-segmentation) (IJPB-plugins {% include list-of-update-sites content='update site' %}), {% include bc path="Plugins | Segmentation |" %}
 -   [Squassh](/plugins/squassh), split-Bregman Image Segmentation (Segmentation and Quantification of Sub-cellular Shapes, MOSAIC ToolSuite {% include list-of-update-sites content='update site' %}), , {% include bc path="Plugins | Mosaic | Segmentation |" %}

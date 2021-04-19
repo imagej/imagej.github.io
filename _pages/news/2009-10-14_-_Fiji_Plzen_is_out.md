@@ -5,7 +5,7 @@ categories: News
 description: test description
 ---
 
-It is a great pleasure to announce [a new Fiji version](Downloads) nick-named Plzen. It was named after the city in which we had a very successful image processing school, where we tested a few of the shiny new components which are the goodies of this release. The two most prominent new features are
+It is a great pleasure to announce [a new Fiji version](/downloads) nick-named Plzen. It was named after the city in which we had a very successful image processing school, where we tested a few of the shiny new components which are the goodies of this release. The two most prominent new features are
 
 -   the new and shiny [Fiji Updater](/plugins/updater). The updater knows whether your files are up-to-date, obsolete or locally modified. It will check at startup whether there are updates available, and if so, offer you to run the updater. You can also choose to be reminded later, or not ever again.
 

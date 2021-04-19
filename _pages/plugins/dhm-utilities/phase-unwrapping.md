@@ -18,7 +18,7 @@ support: David Cohoe ([1](mailto:dcohoe@pdx.edu))
 maintainers: David Cohoe ([1](mailto:dcohoe@pdx.edu))
 ---
 
-Phase Unwrapping is a plugin to perform phase unwrapping on a phase image, with a focus on unwrapping images produced by DHM (possibly created using [DHM Utilities/Reconstruction](/plugins/dhm-utilities-reconstruction)). It currently has support for two different algorithms. The first is a quality-guided unwrapping method, and the second is a double-wavelength unwrapping method.
+Phase Unwrapping is a plugin to perform phase unwrapping on a phase image, with a focus on unwrapping images produced by DHM (possibly created using [DHM Utilities/Reconstruction](/plugins/dhm-utilities/reconstruction)). It currently has support for two different algorithms. The first is a quality-guided unwrapping method, and the second is a double-wavelength unwrapping method.
 
 Quality-Based Unwrapping
 ------------------------

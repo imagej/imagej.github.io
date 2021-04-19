@@ -15,7 +15,7 @@ In my case, I simply want to find nearest neighbors in two clouds of 3D points.
 
 ### Setting up Weka
 
-As of commit [df44aab1](https://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=commitdiff;h=df44aab197dcff1c0de228b0ac08b7ef8966b75e;hb=refs/heads/master) (December 16th, 2009), Fiji's *master* branch comes with Weka.
+As of commit {% include github org=fiji repo=fiji commit=df44aab197dcff1c0de228b0ac08b7ef8966b75e %} (December 16th, 2009), Fiji's *master* branch comes with Weka.
 
 ### Using the Weka datastructures
 

@@ -83,7 +83,7 @@ Additional macOS Tips
 Running Fiji in 32-bit mode
 ---------------------------
 
-{% include warning-box content='It may no longer be possible to start Fiji in 32-bit on recent versions of OS X. See [this bug report](https://fiji.sc/bugzilla/show_bug.cgi?id=1018) for details.' %} Fiji on Intel Macs runs on Java 1.6 in 64-bit mode. If you need to run it in 32-bit mode, you can do so as follows:
+{% include warning-box content='It may no longer be possible to start Fiji in 32-bit on recent versions of OS X. See [this bug report](https://fiji.sc/bug/1018) for details.' %} Fiji on Intel Macs runs on Java 1.6 in 64-bit mode. If you need to run it in 32-bit mode, you can do so as follows:
 
 1.  Launch Fiji normally, and choose {% include bc path='Edit | Options | Memory & Threads'%}.
 2.  Reduce your Maximum Memory setting to \~1800 MB or less.
@@ -103,7 +103,7 @@ Either way, you will need to make sure your maximum memory limit is set below \~
 Limited PowerPC (G4/G5) Mac support
 -----------------------------------
 
-We offer [a special intermediate release of Fiji specific to PowerPC Macs (G4/G5)](https://fiji.sc/downloads/Heidelberg/fiji-macosx-ppc-20100802.dmg).
+We offer [a special intermediate release of Fiji specific to PowerPC Macs (G4/G5)](https://downloads.imagej.net/fiji/Heidelberg/fiji-macosx-ppc-20100802.dmg).
 
 **Note:** There is no Java 1.6 for PowerPC from Apple, meaning that Java comes at a considerable performance penalty on this platform. In addition, we will not be able to support Java versions prior to Java 1.6 at some stage, since that version offers a few features we want to rely on, such as [a versatile scripting framework](http://java.sun.com/developer/technicalArticles/J2SE/Desktop/scripting/).
 

@@ -33,7 +33,7 @@ Finding information
 -   [Fiji](/fiji) is available at: {% include github org='fiji' repo='fiji' label='fiji/fiji' %}
 -   For additional help, use the [ImageJ Forum](/help).
 
-The search engines will point you to both [https://imagej.net/>](https://imagej.net/) and [<http://developer.imagej.net/>](http://developer.imagej.net/). Avoid using [<http://developer.imagej.net/](http://developer.imagej.net/) for anything these days. It is a legacy site, in the process of being totally phased out. If you are looking for downloads, see the [Downloads](Downloads) page.
+The search engines will point you to both [https://imagej.net/>](https://imagej.net/) and [<http://developer.imagej.net/>](http://developer.imagej.net/). Avoid using [<http://developer.imagej.net/](http://developer.imagej.net/) for anything these days. It is a legacy site, in the process of being totally phased out. If you are looking for downloads, see the [/downloads](/downloads) page.
 
 Configure your environment
 --------------------------
@@ -80,7 +80,7 @@ Download the current JAR files, e.g. [imagej-2.0.0-SNAPSHOT-all.jar](http://jenk
 
 You could also use the JAR file to compile your own plugins, which are distributed in the `Fiji.app/plugins` directory.
 
-If you download Fiji via [Fiji/Downloads](/fiji/downloads) then take care to select the right version of Fiji. The most prominent download option on top of the page is compiled with JDK 1.8, while you can download so-called "life-line" versions at the bottom of the page which are compiled with JDK 1.6 to ensure compatibility with older plugins not supported by the ImageJ2 Team. For details [look here](/news/2015-12-22_-_The_road_to_Java_8).
+When you [download Fiji](/fiji/downloads), take care to select the right version of Fiji. The most prominent download option on top of the page is compiled with JDK 1.8, while you can download so-called "life-line" versions at the bottom of the page which are compiled with JDK 1.6 to ensure compatibility with older plugins not supported by the ImageJ2 Team. For details [look here](/news/2015-12-22_-_The_road_to_Java_8).
 
 In any case you need to open a new project, assign the project name, its directory location and add the JAR files as libraries.
 
@@ -471,9 +471,9 @@ From [ImageJ Forum Thread 1151](http://forum.imagej.net/t/java3d-issue-bonej-wit
 
 The current situation with respect to Java 6 vs. Java 8, as well as the ramifications there regarding Java 3D, is basically:
 
--   If you download "vanilla" [ImageJ2](/software/imagej2) (author's note: in the context of software "vanilla" means software used as originally distributed without any customizations or updates applied to them) from the [Downloads](Downloads) page, you get a "Java 8" version from February 2016.
+-   If you download "vanilla" [ImageJ2](/software/imagej2) (author's note: in the context of software "vanilla" means software used as originally distributed without any customizations or updates applied to them) from the [/downloads](/downloads) page, you get a "Java 8" version from February 2016.
 -   If you [download the latest Fiji](/fiji/downloads) you get the newest "Java 8" version—i.e., with Java-8 update site. This includes the Java 3D 1.6 (SciJava fork) along with all Fiji plugins (except for [TrakEM2](/plugins/trakem2)) updated to work with it.
--   If you [download a Life-Line version of Fiji](Fiji_Downloads#Life-Line_Fiji_versions) and fully update it, you'll have the newest (probably the final) "Java 6" version including the latest Java-6-compatible plugin versions. No Java 3D until you run the [3D Viewer](/plugins/3d-viewer) for the first time and it gets auto-installed. Those plugin versions are frozen: the ImageJ/Fiji developers are in the process of migrating everything to Java 8, and are only uploading new versions of everything to the Java-8 update site now, to avoid breaking the stable Java-6 versions of everything.
+-   If you [download a Life-Line version of Fiji](/fiji/downloads#life-line-fiji-versions) and fully update it, you'll have the newest (probably the final) "Java 6" version including the latest Java-6-compatible plugin versions. No Java 3D until you run the [3D Viewer](/plugins/3d-viewer) for the first time and it gets auto-installed. Those plugin versions are frozen: the ImageJ/Fiji developers are in the process of migrating everything to Java 8, and are only uploading new versions of everything to the Java-8 update site now, to avoid breaking the stable Java-6 versions of everything.
 
 Ultimately, the ImageJ/Fiji developers will push all the Java-8 stuff back to the core ImageJ and Fiji sites. But not until the ImageJ/Fiji developers add a launch check that verifies your version of Java is new enough—and if not, tells you how to upgrade it. Ihe ImageJ/Fiji developers will definitely archive the final Java-6-compatible versions of ImageJ and Fiji when they complete that transition.
 

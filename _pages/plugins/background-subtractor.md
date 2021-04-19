@@ -13,6 +13,6 @@ description: test description
 
 **Background Subtractor** is a tool for removing uneven background from fluorescence microscopy images. It implements a robust histogram-based rolling-ball algorithm and is part of the [MosaicSuite](http://mosaic.mpi-cbg.de/?q=downloads/imageJ), which also offers 3D particle tracking, image segmentation, interaction analysis, and much more. The best way to install it is via the MOSAIC Fiji Update site, as described on the [MOSAIC web page](http://mosaic.mpi-cbg.de).
 
-Documentation is available as [pdf](http://mosaic.mpi-cbg.de/Downloads/BGS_manual.pdf)
+Documentation is available as [pdf](http://mosaic.mpi-cbg.de/downloads/BGS_manual.pdf)
 
  

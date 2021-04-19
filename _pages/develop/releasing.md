@@ -8,7 +8,7 @@ description: test description
 {% include info-box content='This page describes the core [SciJava](SciJava) *software release process*.
 
 -   For an overview of *distribution methods*, see [Distribution](/develop/distributing).
--   To *download* software releases, see [Downloads](Downloads).' %}
+-   To *download* software releases, see [/downloads](/downloads).' %}
 
 The SciJava [philosophy](/develop/philosophy) is to [release early, release often](/develop/philosophy#release-early-release-often). At the same time, we always want to preserve [scientific reproducibility](/develop/architecture#reproducible-builds). To make this possible we lean on several [project management](/develop/project-management) tools. The purpose of this guide is to take you through the process of using these tools with the goal of releasing new versions of your software, and then providing those releases to users.
 
@@ -153,7 +153,7 @@ Phase 5: Uploaded
 
 ### External update sites
 
-An update site can be hosted anywhere, though the ImageJ web server at http://sites.imagej.net/ offers a [personal update site](/How_to_set_up_and_populate_an_update_site#Add_your_personal_update_site) service.
+An update site can be hosted anywhere, though the ImageJ web server at http://sites.imagej.net/ offers a [personal update site](/update-sites/setup#add-your-personal-update-site) service.
 
 See the **[distribution](/develop/distributing)** page for a discussion of pros and cons of distributing your plugin on a core versus a personal update site.
 

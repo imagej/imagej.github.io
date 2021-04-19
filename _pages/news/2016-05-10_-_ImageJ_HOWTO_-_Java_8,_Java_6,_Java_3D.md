@@ -38,7 +38,7 @@ Current recommendations and possibilities
 </p>
 </th>
 <td> <b>Recommended.</b>
-<p><a href="Fiji/Downloads" title="Fiji/Downloads">Download the newest Fiji</a> for your platform. It comes bundled with Java 8, with the Java-8 update site enabled.
+<p><a href="/fiji/downloads" title="Fiji Downloads">Download the newest Fiji</a> for your platform. It comes bundled with Java 8, with the Java-8 update site enabled.
 </p>
 </td>
 <td> Run <a href="/plugins/updater" title="/plugins/updater"><span><em><span style="border-bottom:1px dotted #ccc;">Help</span>&#160;&#8250; <span style="border-bottom:1px dotted #ccc;">Update...</span></em></span></a> to update to the latest version of ImageJ core and Fiji components.
@@ -53,7 +53,7 @@ Current recommendations and possibilities
 <br /><a href="/media/Tux.png" class="image"><img alt="/platforms/linux" src="/media/Tux.png" width="32" height="32" /></a>
 </p>
 </th>
-<td> Download the final (2017-May-30) <a href="Fiji/Downloads#Java_6" title="Fiji/Downloads">Java-6 version of Fiji</a>. It comes bundled with Java 6 and all platform launchers.
+<td> Download the final (2017-May-30) <a href="/fiji/downloads#java-6" title="Fiji Downloads">Java-6 version of Fiji</a>. It comes bundled with Java 6 and all platform launchers.
 </td>
 <td rowspan="2"> Run <a href="/plugins/updater" title="/plugins/updater"><span><em><span style="border-bottom:1px dotted #ccc;">Help</span>&#160;&#8250; <span style="border-bottom:1px dotted #ccc;">Update...</span></em></span></a> to update to the latest Java-6-compatible version. Your Fiji will become outdated over time, stuck on the final Java-6-compatible plugin versions.
 </td>
@@ -62,7 +62,7 @@ Current recommendations and possibilities
 <tr>
 <th> <a href="/media/Osx.png" class="image"><img alt="macOS" src="/images/logos/Osx.png" width="26" height="32" /></a>
 </th>
-<td> Download the final (2017-May-30) <a href="Fiji/Downloads#Java_6" title="Fiji/Downloads">Java-6 version of Fiji</a>. It is distributed <i>without</i> Java, so you must <a href="Frequently_Asked_Questions#How_do_I_set_up_Java_6_on_OS_X.3F" title="Frequently Asked Questions">install Apple Java 6</a> on your system.
+<td> Download the final (2017-May-30) <a href="/fiji/downloads#java-6" title="Fiji Downloads">Java-6 version of Fiji</a>. It is distributed <i>without</i> Java, so you must <a href="Frequently_Asked_Questions#How_do_I_set_up_Java_6_on_OS_X.3F" title="Frequently Asked Questions">install Apple Java 6</a> on your system.
 <ul><li> If you have Java 7 and/or Java 8 installed, uninstall them—or else ImageJ will not use your Java 6 installation.</li>
 <li> Afterwards, <a href="Troubleshooting#Checking_the_Java_version" title="/help/troubleshooting">verify that Fiji is using Java 6</a>.</li></ul>
 </td></tr>
@@ -81,7 +81,7 @@ Current recommendations and possibilities
 </p>
 </th>
 <td>
-<p><a href="Downloads" title="Downloads">Download the newest ImageJ</a> for your platform. It comes bundled <i>without</i> Java, and <i>without</i> the Java-8 update site enabled.
+<p><a href="/downloads" title="/downloads">Download the newest ImageJ</a> for your platform. It comes bundled <i>without</i> Java, and <i>without</i> the Java-8 update site enabled.
 </p>
 <ul><li> If you have not already done so: install Java 8 from <a rel="nofollow" class="external text" href="http://java.com/">java.com</a>.</li>
 <li> Do <b>not</b> enable the Java-8 update site, because (at the moment) it contains a mixture of core ImageJ and Fiji components.</li></ul>

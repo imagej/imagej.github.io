@@ -5,7 +5,7 @@ categories: News
 description: test description
 ---
 
-There is a [new version of Fiji](Downloads)!
+There is a [new version of Fiji](/downloads)!
 
 In our beloved tradition, the current version is named after the location of a big [hackathon](/events/Hackathon): Madison. It was not strictly a Fiji hackathon, but the first ImageJ2 hackathon, made possible by Kevin Eliceiri and Curtis Rueden. Nevertheless, quite some work on Fiji and its plugins got done, so here goes *Fiji Madison*.
 

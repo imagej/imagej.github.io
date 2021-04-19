@@ -35,7 +35,7 @@ This will open the Weka Package Manager window:
 
 Once the package manager is open, we can select any "package" from the displayed list to install it or to remove it from our working Weka toolbox.
 
-In this tutorial we show how to install a new classifier, in particular the *ClassificationViaClustering* classifier. For that reason, we scroll down until we find the packaged called "classificationViaClustering" and click on "/Downloads":
+In this tutorial we show how to install a new classifier, in particular the *ClassificationViaClustering* classifier. For that reason, we scroll down until we find the packaged called "classificationViaClustering" and click on "/downloads":
 
 <img src="/media/Weka-package-manager-classificationViaClustering.png" width="700"/>
 

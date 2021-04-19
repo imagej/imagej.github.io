@@ -65,7 +65,7 @@ Change to a directory where you have sufficient privileges to install software.
 
     cd /sw/users/tomancak/packages
 
-Download Fiji nightly build from [Fiji's download page](https://fiji.sc/Downloads).
+Download Fiji nightly build from [Fiji's download page](/fiji/downloads).
 
     wget http://jenkins.imagej.net/job/Stable-Fiji/lastSuccessfulBuild/artifact/fiji-linux64.tar.gz
 
@@ -78,7 +78,7 @@ In all likelihood you will need the Linux (64 bit) version (unless you are of co
     gunzip fiji-linux64.tar.gz
     tar -xvf fiji-linux64.tar
 
-Change to the newly created Fiji-app directory and [update](https://fiji.sc/Update_Fiji#Command-line_usage) Fiji from the command line
+Change to the newly created Fiji-app directory and [update](/Update_Fiji#Command-line_usage) Fiji from the command line
 
     ./ImageJ-linux64 --update update
 
@@ -432,7 +432,7 @@ Some tips and tricks
 
 ### Time-lapse registration
 
-Once the per-time-point registration is finished it is necessary to register all the time-points in the time-series to a reference time-point (to remove potential sample drift during imaging). The parameters for time series registration are described [here](https://fiji.sc/SPIM_Bead_Registration#How_timelapse_registration_works).
+Once the per-time-point registration is finished it is necessary to register all the time-points in the time-series to a reference time-point (to remove potential sample drift during imaging). The parameters for time series registration are described [here](/SPIM_Bead_Registration#How_timelapse_registration_works).
 
 The time-series registration is not really a cluster type of task as it is run on a single processor in a linear fashion. But since until now we have everything on the cluster filesystem it is useful to execute it here. *Note: I do not mean that timelapse registration cannot be parallelized, we just have not implemented it because it runs fairly fast in the current, linear fashion.*
 
@@ -515,7 +515,7 @@ In multi-view SPIM imaging fusion means combination of registered views into a s
 
 ### Content based multiview fusion
 
-After registration we need to combine the views into a single output image. The content based fusion algorithm in Fiji solves that problem by evaluating local image entropy and weighing differentially the information in areas where several views overlap. For details see [here](https://fiji.sc/Multi-View_Fusion).
+After registration we need to combine the views into a single output image. The content based fusion algorithm in Fiji solves that problem by evaluating local image entropy and weighing differentially the information in areas where several views overlap. For details see [here](/Multi-View_Fusion).
 
 As before we create a directory jobs/fusion and in there bash script **create-fusion-jobs**
 
@@ -607,7 +607,7 @@ Tips and tricks:
 
 ### Multiview deconvolution
 
-Another, more advanced, way to fuse the registered data is multiview deconvolution which is described [here](https://fiji.sc/Multi-View_Deconvolution).
+Another, more advanced, way to fuse the registered data is multiview deconvolution which is described [here](/Multi-View_Deconvolution).
 
 The deconvolution can be executed either on the CPU (Central Processing Unit - i.e. the main processor of the computer) or on GPU (Graphical Processing Unit - i.e. the graphics card). The pre-requisite for the GPU processing is to have one or more graphics cards capable of [CUDA](http://www.nvidia.de/object/cuda_home_new.html) such as NVIDIA Tesla or Quadro or GeForce. Since the GPU accelerated multi-view deconvolution is not yet published and the necessary C code has to be obtained from Stephan Preibisch by request we will focus for now on deconvolution using CPU.
 

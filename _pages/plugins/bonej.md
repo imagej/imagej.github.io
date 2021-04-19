@@ -32,7 +32,7 @@ Installation
 ------------
 ![Install BoneJ](/media/Install-bonej.png)
 
-1.  [Download](/Downloads) the latest version of Fiji for your operating system
+1.  [Download](/downloads) the latest version of Fiji for your operating system
 2.  Launch Fiji
 3.  Select in the menu {% include bc path="Help | Update..." %}
 4.  Click *Manage update sites*

@@ -145,7 +145,7 @@ The list of command are as follows
 <!-- -->
 
      
-    call("loci.slim.SLIMProcessor.startSLIMCurve", "true", "/Users/msagar/Downloads/", "/4t1_740_60xW_zoom4_256_1mg_1_140218_copy.sdt");
+    call("loci.slim.SLIMProcessor.startSLIMCurve", "true", "/Users/msagar/downloads/", "/4t1_740_60xW_zoom4_256_1mg_1_140218_copy.sdt");
     run("SLIM Curve");
 
 -   Change the algorithm:
@@ -269,7 +269,7 @@ When "Export Histogram to Text" or/and "Export Pixels to Text" is selected for e
 Complete macro example with exporting histograms and pixel information to CSV file
 
      
-    call("loci.slim.SLIMProcessor.startSLIMCurve", "true", "/Users/msagar/Downloads/", "/4t1_740_60xW_zoom4_256_1mg_1_140218_copy.sdt");
+    call("loci.slim.SLIMProcessor.startSLIMCurve", "true", "/Users/msagar/downloads/", "/4t1_740_60xW_zoom4_256_1mg_1_140218_copy.sdt");
     run("SLIM Curve");
     call("loci.slim.SLIMProcessor.setFunctionType", "Double Exponential");
     call("loci.slim.SLIMProcessor.loadDefaultExcitation", "true");

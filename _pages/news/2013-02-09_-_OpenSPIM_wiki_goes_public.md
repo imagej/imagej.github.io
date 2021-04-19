@@ -13,7 +13,7 @@ OpenSPIM is an Open Access platform for applying and enhancing **Selective Plane
 
 OpenSPIM has very close ties to Fiji:
 
--   The microscope is driven from the [OpenSPIM plugin](http://openspim.org/Downloads) inside [µManager](http://valelab.ucsf.edu/~MM/MMwiki/) running inside Fiji.
+-   The microscope is driven from the [OpenSPIM plugin](http://openspim.org/downloads) inside [µManager](http://valelab.ucsf.edu/~MM/MMwiki/) running inside Fiji.
 -   Many of the complex image processing pipelines required for dealing with the massive multi-view SPIM time-lapse data like [registration](/plugins/spim-registration), [fusion](/plugins/multi-view-fusion), deconvolution (coming soon) and visualization (also coming soon) are available in Fiji.
 
 Fiji and OpenSPIM merge the ideas of Open Source software and Open Access hardware into one integrated platform ready for application and further technological innovation.

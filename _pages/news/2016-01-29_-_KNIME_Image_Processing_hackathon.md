@@ -127,7 +127,7 @@ Hackathon progress
 -   Wrote a guide for developers ([Automatic Update Site Uploads](/update-sites/automatic-uploads)) on how to automatically upload to their update site via Travis
 -   Proof-of-concept'd restoring the Add Imports functionality to the script editor ({% include github org='imagej' repo='imagej-ui-swing' pr='67' label='imagej/imagej-ui-swing\#67' %})
 -   Added Renjin-flavored R scripting to ImageJ ({% include github org='scijava' repo='scripting-renjin' label='scijava/scripting-renjin' %})
--   Got the Fiji downloads migrated to Java 8 bundles (see [Downloads](Downloads))
+-   Got the Fiji downloads migrated to Java 8 bundles (see [/downloads](/downloads))
 -   Furthered development of the Ops Browser ({% include github org='imagej' repo='imagej-ui-swing' issue='60' label='imagej/imagej-ui-swing\#60' %}), including:
     -   Tailored User/Developer views
     -   Fuzzy filtering for Ops
@@ -141,7 +141,7 @@ Hackathon progress
     -   Improved the help op to support filtering by more criteria ({% include github org='imagej' repo='imagej-ops' commit='456acc7d8725578c2ac2a8c421645023a477fd7e' label='special-help' %})
     -   Improved ImageJ tutorials to facilitate community members learning ImageJ2 (\[https://github.com/imagej/tutorials/compare/88c124b504f3f1e603fe106bbb34ff5423012f47%5E...54de6c20a6db7b69514cd7279c98683e850ce657 1\])
     -   Improved structure of [Script Editor](/scripting/script-editor) Templates menu, thanks to discussions with {% include person content='kephale' %} ({% include github org='imagej' repo='imagej-ui-swing' commit='27342e0b4e05ddc7d21bff6530a588554eea87e2' label='templates-menu' %})
-    -   Marked [ImageJ Legacy](/Compatibility) as optional, thanks to feedback from {% include person content='kmader' %} and others ({% include github org='imagej' repo='imagej' commit='e8fbfeee858960f4a46aed8e0eb03175385d62fa' label='imagej/imagej@e8fbfeee' %})
+    -   Marked [ImageJ Legacy](/libs/imagej-legacy) as optional, thanks to feedback from {% include person content='kmader' %} and others ({% include github org='imagej' repo='imagej' commit='e8fbfeee858960f4a46aed8e0eb03175385d62fa' label='imagej/imagej@e8fbfeee' %})
     -   Added a main class to Fiji, for easier launching from an IDE, thanks to a discussion with {% include person content='fjug' %} (\[https://github.com/fiji/fiji/compare/bc128e3d7ab8c9e1269d88b7e534f7025e6f41cd%5E...f45204e32105873f4cddb132740d17deeda49879 1\])
     -   Added a View marker interface to ImgLib2, to facilitate "lightweight" ops ({% include github org='imglib' repo='imglib2' pr='116' label='view-marker' %})
     -   Helped clean up {% include person content='tibuch' %}'s Ops Views PR ({% include github org='imagej' repo='imagej-ops' pr='168' label='views' %})

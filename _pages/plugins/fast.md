@@ -17,7 +17,7 @@ Installation
 
 Requirements:
 
--   [ImageJ](https://imagej.net/Downloads) v1.49o or newer.
+-   [ImageJ](https://imagej.net/downloads) v1.49o or newer.
 -   [Bio-Formats 5.x](https://www.openmicroscopy.org/bio-formats/downloads/) or newer.
 
 {% include tip id='bioformat' tip='Saving `bioformats\_package.jar` in .\\ImageJ.app\\plugins\\ seems to be the best way to use the macro in stable conditions.' %} Use the ImageJ Updater and see the instructions [How to follow a 3rd party update site](https://imagej.net/How_to_follow_a_3rd_party_update_site) select FAST (http://sites.imagej.net/FAST) from the available site list.

@@ -126,7 +126,7 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 <!-- -->
 
--   The [RATS](/plugins/rats--robust-automatic-threshold-selection) plugin was added, providing a very powerful automatic local thresholding technique (thanks Ben Tupper).
+-   The [RATS](/plugins/rats) plugin was added, providing a very powerful automatic local thresholding technique (thanks Ben Tupper).
 
 <!-- -->
 

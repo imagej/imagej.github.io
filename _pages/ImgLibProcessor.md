@@ -5,7 +5,7 @@ categories: ImageJ2,Development
 description: test description
 ---
 
-{% include warning-box content='The following article describes a method of ImageJ1/ImageJ2 integration we explored in 2010, revolving around an `ij.process.ImageProcessor` extension called `ImgLibProcessor` which would enable additional transparent usage of [ImgLib2](/imglib2) from within ImageJ1, thus greatly expanding the available pixel types and storage strategies. However, after discussion with [Wayne Rasband](/users/rasband), we settled on a different method of backwards compatibility known as [ImageJ Legacy](/Compatibility). The text below is preserved only for historical reasons.' %} 
+{% include warning-box content='The following article describes a method of ImageJ1/ImageJ2 integration we explored in 2010, revolving around an `ij.process.ImageProcessor` extension called `ImgLibProcessor` which would enable additional transparent usage of [ImgLib2](/imglib2) from within ImageJ1, thus greatly expanding the available pixel types and storage strategies. However, after discussion with [Wayne Rasband](/users/rasband), we settled on a different method of backwards compatibility known as [ImageJ Legacy](/libs/imagej-legacy). The text below is preserved only for historical reasons.' %} 
 
 
 Design

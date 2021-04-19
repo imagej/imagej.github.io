@@ -13,7 +13,7 @@ description: test description
 
 **Squassh** is a tool for 2D and 3D segmentation and quantification of subcellular shapes in fluorescence microscopy images. It provides globally optimal detection and segmentation of objects with constant internal intensity distribution, followed by object-based colocalization analysis. The segmentation computed by Region Competition can optionally correct for the PSF of the microscope, hence providing optimally deconvolved segmentations as described in Helmuth et al. (2009[1]) and in Helmuth and Sbalzarini (2009[2]). The tool was specifically developed to analyze image-based high-content screening data as described in the Squassh protocol. It is part of the [MosaicSuite](http://mosaic.mpi-cbg.de/?q=downloads/imageJ), which also offers 3D particle tracking, image segmentation, interaction analysis, and much more. The best way to install it is via the MOSAIC Fiji Update site, as described on the [MOSAIC web page](http://mosaic.mpi-cbg.de/?q=downloads/imageJ). The algorithm is described in Paul, Cardinale, and Sbalzarini (2013[3]). The Squassh protocol and the use of the plugin are described in Rizk et al. (2014[4]).
 
-Documentation is available as [pdf](http://mosaic.mpi-cbg.de/Downloads/SplitBregmanSeg.pdf).
+Documentation is available as [pdf](http://mosaic.mpi-cbg.de/downloads/SplitBregmanSeg.pdf).
 
 References
 ----------

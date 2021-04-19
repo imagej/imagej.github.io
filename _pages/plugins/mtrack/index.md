@@ -90,7 +90,7 @@ Yellow ellipses mark seeds to be tracked, red ellipses mark seeds which won't be
 
 ### Module 2 - Microtubule dynamics
 
-Microtubules show a dynamic behavior known as dynamic instability, which is characterized by four parameters (1) polymerization velocity (vp, nm/sec), (2) depolymerization velocity (vd, nm/sec), (3) catastrophe frequency (fcat, sec-1), and (4) rescue frequency (fres, sec-1). Module 2 derives these dynamic parameters by fitting models using RANSAC. (Read more on [MTrack-RANSAC models](/plugins/mtrack-ransac-models)).
+Microtubules show a dynamic behavior known as dynamic instability, which is characterized by four parameters (1) polymerization velocity (vp, nm/sec), (2) depolymerization velocity (vd, nm/sec), (3) catastrophe frequency (fcat, sec-1), and (4) rescue frequency (fres, sec-1). Module 2 derives these dynamic parameters by fitting models using RANSAC. (Read more on [MTrack-RANSAC models](/plugins/mtrack/ransac-models)).
 
 If not forwarded by Module 1, Module 2 can be selected by {% include bc path='Plugins|MTrack|Microtubule Dynamics Analyzer'%}
 

@@ -5,7 +5,7 @@ categories: News
 description: test description
 ---
 
-A new release of Fiji is around the corner. If you want to test-drive it, please check out the [Release candidate](Downloads#Release_candidate).
+A new release of Fiji is around the corner. If you want to test-drive it, please check out the [Release candidate](/downloads#Release_candidate).
 
 In our tradition to name releases after a city where we worked on the release, this release will be called *Fiji {% include wikipedia title='Plzeň' text='Plzeň'%}*.
 

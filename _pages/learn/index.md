@@ -9,7 +9,7 @@ description: test description
 
 ## What is ImageJ?
 
- <a href="/about"><img src="/media/Imagej2-icon.png" height="48px"/></a> [ImageJ](/about) is an [open source](Open_source) [image processing](/Category_Techniques) program for multidimensional image data with a focus on scientific imaging.
+ <a href="/about"><img src="/media/Imagej2-icon.png" height="48px"/></a> [ImageJ](/about) is an [open source](Open_source) [image processing](/techniques) program for multidimensional image data with a focus on scientific imaging.
 
 ## What is Fiji?
 
@@ -21,7 +21,7 @@ description: test description
 |                                                                                                       |                                                                                                                                                                                                                                                                                                                                                   |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Application](/Getting_started) | A user interface with functions to load, display, and save images.                                                                                                                                                                                                                                                                                |
-| [Techniques](/Category_Techniques)   | [Image processing](https://imagej.net/docs/guide/146-29.html#toc-Section-29), [colocalization](/techniques/colocalization-analysis), [deconvolution](/cookbook/deconvolution), [registration](/techniques/registration), [segmentation](/techniques/segmentation), [tracking](/techniques/tracking), [visualization](/techniques/visualization) and much more. |
+| [Techniques](/techniques)   | [Image processing](https://imagej.net/docs/guide/146-29.html#toc-Section-29), [colocalization](/techniques/colocalization-analysis), [deconvolution](/cookbook/deconvolution), [registration](/techniques/registration), [segmentation](/techniques/segmentation), [tracking](/techniques/tracking), [visualization](/techniques/visualization) and much more. |
 | [Plugins](/plugins)         | A powerful mechanism for extending ImageJ in all kinds of useful ways.                                                                                                                                                                                                                                                                            |
 | [Scripting](/scripting)     | Automated, reproducible workflows via [scripts](/scripting) and [macros](/scripting/macro), including [headless on a remote server or cluster](/scripting/headless).                                                                                                                                                         |
 | [Forum](http://forum.imagej.net/)     | A vibrant, diverse, and helpful user [community](/help) that gives rise to insightful scientific exchanges.                                                                                                                                                                                                                        |
@@ -31,6 +31,6 @@ ImageJ's [extensibility](/develop/architecture#extensibility) is the root of its
 How do I get started?
 ---------------------
 
--   Get ImageJ from the [Downloads](Downloads) page
+-   Get ImageJ from the [/downloads](/downloads) page
 -   Read the [Getting started](Getting_started) tutorial.
--   Then peruse the [User Guides](/learn/user-guides), additional [tutorials](/Category_Tutorials), and [presentations](/learn/presentations).
+-   Then peruse the [User Guides](/learn/user-guides), additional [tutorials](/tutorials), and [presentations](/learn/presentations).

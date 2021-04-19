@@ -445,7 +445,7 @@ Writing out movie files with JavaCV
     // if you have not installed JavaCV into your jars/ directory:
     import java.io.File;
     binDir = new File(System.getProperty("user.home")
-        + "/Downloads/javacv-bin/");
+        + "/downloads/javacv-bin/");
     if (binDir.isDirectory()) {
         jars = binDir.list();
         for (String jar : jars) {

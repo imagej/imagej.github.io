@@ -21,7 +21,7 @@ However, at this point in time, there are an increasing number problems relating
 -   Users experience hard crashes with Fiji's bundled version of Java 6 (1.6.0\_24), which are avoided by using Java 7 or Java 8.
 -   More and more libraries used by ImageJ are updating their version requirement to Java 7 in newer releases. E.g., Jython 1.7.0 now requires Java 7—as such, ImageJ is stuck with Jython 1.5.3 as long as it continues to run using Java 6.
 
-It seems inevitable that ImageJ will need to switch to Java 8 very soon. At minimum, the ImageJ2 and Fiji downloads offered on the [Downloads](Downloads) page will be updated to ship with Java 8 instead of Java 6. And we are strongly considering updating the core ImageJ2 components to simply require Java 8. The ImageJ [Updater](/plugins/updater) will need to be updated to support these changes.
+It seems inevitable that ImageJ will need to switch to Java 8 very soon. At minimum, the ImageJ2 and Fiji downloads offered on the [/downloads](/downloads) page will be updated to ship with Java 8 instead of Java 6. And we are strongly considering updating the core ImageJ2 components to simply require Java 8. The ImageJ [Updater](/plugins/updater) will need to be updated to support these changes.
 
 Java on OS X
 ------------
@@ -38,7 +38,7 @@ The ImageJ project currently maintains the ImageJ [Launcher](Launcher) component
 Standalone stable downloads of ImageJ2
 --------------------------------------
 
-There are currently no stable downloads for the ImageJ2 project itself—only for the Fiji distribution. We want to change that: the flagship download on the [Downloads](Downloads) page should be vanilla ImageJ2, with the Fiji downloads offered on their own page. The following downloads need to be offered:
+There are currently no stable downloads for the ImageJ2 project itself—only for the Fiji distribution. We want to change that: the flagship download on the [/downloads](/downloads) page should be vanilla ImageJ2, with the Fiji downloads offered on their own page. The following downloads need to be offered:
 
 -   Application installers and bundles *including* Java runtime—for Windows, OS X and Linux.
 -   Application installers and bundles *without* the Java runtime—for Windows, OS X and Linux.

@@ -22,7 +22,7 @@ description: test description
 
 ImageJ was originally developed in 1997 as a cross-platform version of [NIH Image](/software/nih-image). ImageJ grew organically over time as {% include person content='Rasband' %} continued to add features according to user requests. Now there are many hundreds, probably thousands, of plugins written by members of a diverse community.
 
-The current version of ImageJ is often referred to as [ImageJ2](/software/imagej2), to differentiate it from ImageJ 1.x. The ImageJ2 distribution actually includes the latest version of ImageJ1 as well, along with a [legacy layer](/Compatibility) for backwards compatibility, which transparently converts between IJ1 and IJ2 data structures as needed.
+The current version of ImageJ is often referred to as [ImageJ2](/software/imagej2), to differentiate it from ImageJ 1.x. The ImageJ2 distribution actually includes the latest version of ImageJ1 as well, along with a [legacy layer](/libs/imagej-legacy) for backwards compatibility, which transparently converts between IJ1 and IJ2 data structures as needed.
 
 See also
 --------

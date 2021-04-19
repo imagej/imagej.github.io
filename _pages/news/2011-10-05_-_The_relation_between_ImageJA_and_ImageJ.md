@@ -23,7 +23,7 @@ The real first script is a notifier which scrapes the [News section of the Image
 3.  `upload-imageja.sh`
     This script builds the current commit, determines which ImageJ version it is based on, adds an appropriate tag and uploads -src and signed release jar to ImageJA's sourceforge download site, to ImageJA's website, to Fiji's ImageJA site, and then pushes the 'master' and 'imagej' branches as well as the new tag to all kinds of remote repositories, including repo.or.cz, fiji.sc and dev.loci.wisc.edu.
 
-These scripts have gone through a long history ([I](/users/Schindelin) started the stuff in October 2005, when I tried to get ahold of as many as possible previous source packages and committed them as history of ImageJ to document as much as possible how things developed).
+These scripts have gone through a long history ([I](/users/dscho) started the stuff in October 2005, when I tried to get ahold of as many as possible previous source packages and committed them as history of ImageJ to document as much as possible how things developed).
 
 Typically, the merge step ends in a merge conflict since we have quite some changes in ImageJA vs ImageJ which did not make it to the upstream for one reason or other.
 
@@ -38,6 +38,6 @@ The changes fall into three categories, with different strategies how to "make t
 
 Some cases are hybrids, where the code will be moved outside ij.jar and be available as a plugin, but I'll use javassist to make it available from the appropriate places within IJ1.
 
-In general, this should clean up a lot of unnecessary modifications in IJ1 and let us (read: [me](/users/Schindelin)) concentrate much more on IJ2.
+In general, this should clean up a lot of unnecessary modifications in IJ1 and let us (read: [me](/users/dscho)) concentrate much more on IJ2.
 
   

@@ -59,7 +59,7 @@ The University of Edinburgh also has the rather complete [CVonline](http://homep
 
 A scientific image [is not a photograph](http://www.4p8.com/eric.brasseur/gamma.html)!
 
-[External tutorials](/Category_Tutorials).
+[External tutorials](/tutorials).
 
 Programming in science
 ----------------------

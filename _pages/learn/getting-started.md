@@ -12,7 +12,7 @@ description: test description
 Installation
 ============
 
-First, you should to [install](/Downloads) ImageJ!
+First, you should to [install](/downloads) ImageJ!
 
 The main window
 ===============

@@ -20,7 +20,7 @@ This software is a tool for the tracking of low-light sub-resolution objects in 
 Installation of the plugin
 ==========================
 
-The plugin can be quickly installed via the projects update site. This is unfortunately may not possible if you are using a Fiji version installed via package management system. If you encounter this problem, please use the Fiji version obtainable [ here](Downloads).
+The plugin can be quickly installed via the projects update site. This is unfortunately may not possible if you are using a Fiji version installed via package management system. If you encounter this problem, please use the Fiji version obtainable [ here](/downloads).
 
 Add the project's update site to your Fiji installation
 -------------------------------------------------------

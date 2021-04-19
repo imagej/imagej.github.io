@@ -36,7 +36,7 @@ Example in Jython.
 Creating your own update site
 -----------------------------
 
-Anyone can share their extensions ([plugins](/plugins), [scripts](/scripting), etc.) by [creating their own update site](/update-sites/setup). You can use ImageJ's [personal update site](/How_to_set_up_and_populate_an_update_site#Add_your_personal_update_site) service (hosted on the [ImageJ web server](http://sites.imagej.net/)), or host it on your own server.
+Anyone can share their extensions ([plugins](/plugins), [scripts](/scripting), etc.) by [creating their own update site](/update-sites/setup). You can use ImageJ's [personal update site](/update-sites/setup#add-your-personal-update-site) service (hosted on the [ImageJ web server](http://sites.imagej.net/)), or host it on your own server.
 
 Frequently asked questions
 --------------------------

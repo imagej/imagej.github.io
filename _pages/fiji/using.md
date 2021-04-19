@@ -10,9 +10,9 @@ description: test description
 Useful information about using Fiji can be found here:
 
 -   [What you need to know about scientific image processing](/techniques/principles)
--   [Installing Fiji](/Fiji_Downloads#Installation)
+-   [Installing Fiji](/fiji/downloads#installation)
 -   [Getting started with Fiji](Getting_started)
--   [Tutorials](Category_Tutorials) (also [external ones](/Category_Tutorials))
+-   [Tutorials](Category_Tutorials) (also [external ones](/tutorials))
 -   [Introduction into Macro Programming](/scripting/macro)
 -   Example images you'll find in the {% include bc path='File | Open Samples'%} menu or in [public data sets](/plugins/public-data-sets)
 -   Some [ImageJ tricks](/learn/tips-and-tricks)

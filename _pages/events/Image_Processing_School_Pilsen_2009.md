@@ -51,7 +51,7 @@ Quantitative image acquisition and analysis: Spectroscopy not photography, simpl
 
 The presentation is available online (PDF) [here!](https://info.med.tu-dresden.de/MTZimaging/images/1/1e/QuantitativeColocAnalysis0709small.pdf)
 
-Lead instructor: [Dan White](/users/White)
+Lead instructor: [Dan White](/users/chalkie666)
 
 ### Colocalization
 
@@ -59,7 +59,7 @@ Quantitative Image analysis: What you need to know about Colocalization Analysis
 
 The presentation is available online (PDF) [here!](https://info.med.tu-dresden.de/MTZimaging/images/1/1e/QuantitativeColocAnalysis0709small.pdf)
 
-Lead instructor: [Dan White](/users/White)
+Lead instructor: [Dan White](/users/chalkie666)
 
 ### TrakEM2
 

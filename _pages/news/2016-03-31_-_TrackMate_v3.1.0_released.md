@@ -51,6 +51,6 @@ Changes.
 
 -   Also, to keep the 3D Viewer tidy, it is not kept in sync with the manual edits made on the model. It just shows a snapshot of the model at the time when it was launched. It was not working properly before anyway, so we officially disable this feature.
 
-[JeanYvesTinevez](/users/JeanYvesTinevez) ([talk](User_talk_JeanYvesTinevez)) 06:46, 31 March 2016 (CDT)
+[JeanYvesTinevez](/users/tinevez) ([talk](User_talk_JeanYvesTinevez)) 06:46, 31 March 2016 (CDT)
 
 

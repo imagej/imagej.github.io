@@ -53,7 +53,7 @@ This procedure helps us ensure that bugs, once fixed, do not rear their ugly hea
 Recurrent tasks
 ---------------
 
-Using ImageJ2's Jenkins has further benefits: apart from building the complete Fiji and running automatic regression tests, Jenkins can run all kinds of repeating jobs. One of those jobs keeps an up-to-date Fiji version and packages it into what we call [continuous releases](Downloads).
+Using ImageJ2's Jenkins has further benefits: apart from building the complete Fiji and running automatic regression tests, Jenkins can run all kinds of repeating jobs. One of those jobs keeps an up-to-date Fiji version and packages it into what we call [continuous releases](/downloads).
 
 <figure><img src="/media/Fiji-continuous-releases.jpg" title="Continuous Fiji releases" width="665" alt="Continuous Fiji releases" /><figcaption aria-hidden="true">Continuous Fiji releases</figcaption></figure>
 

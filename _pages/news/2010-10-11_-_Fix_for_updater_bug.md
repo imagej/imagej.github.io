@@ -5,6 +5,6 @@ categories: News
 description: test description
 ---
 
-For a short time today, there was an issue with our updater system. If you happen to have been bitten by that bug (Fiji won't launch after updating anymore), please download and execute [this .jar file](https://fiji.sc/downloads/Heidelberg/Updater_Fix.jar) (or follow these [detailed instructions](/Fix_non-functional_ImageJ_after_Update)).
+For a short time today, there was an issue with our updater system. If you happen to have been bitten by that bug (Fiji won't launch after updating anymore), please download and execute [this .jar file](https://downloads.imagej.net/fiji/Heidelberg/Updater_Fix.jar) (or follow these [detailed instructions](/Fix_non-functional_ImageJ_after_Update)).
 
 

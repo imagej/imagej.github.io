@@ -32,7 +32,7 @@ Advanced topics
 
 ### Installing plugins manually
 
-If the plugin you want is not distributed via an ImageJ update site, please encourage the plugin's maintainer to do so! Anyone can create a [personal update site](/How_to_set_up_and_populate_an_update_site#Add_your_personal_update_site) as well as additional dedicated update sites (for a particular plugin) hosted on [sites.imagej.net](http://sites.imagej.net/), to easily share and maintain updated plugins.
+If the plugin you want is not distributed via an ImageJ update site, please encourage the plugin's maintainer to do so! Anyone can create a [personal update site](/update-sites/setup#add-your-personal-update-site) as well as additional dedicated update sites (for a particular plugin) hosted on [sites.imagej.net](http://sites.imagej.net/), to easily share and maintain updated plugins.
 
 In the meantime, to install a plugin manually, follow the plugin's installation instructions, if any. The plugin will consist of one or more files which must be downloaded and (typically) placed in ImageJ's `plugins` folder:
 

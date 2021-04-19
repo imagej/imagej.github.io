@@ -48,7 +48,7 @@ Training data
 
 The corresponding binary labels are provided in an in-out fashion, i.e. white for the pixels of segmented objects and black for the rest of pixels (which correspond mostly to membranes).
 
-**To get the training data, please, register in the [challenge server](http://brainiac2.mit.edu/isbi_challenge/), log in and go to the "Downloads" section**.
+**To get the training data, please, register in the [challenge server](http://brainiac2.mit.edu/isbi_challenge/), log in and go to the "/downloads" section**.
 
 This is the only data that participants are allowed to use to train their algorithms.
 

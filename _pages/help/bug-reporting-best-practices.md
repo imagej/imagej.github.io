@@ -141,6 +141,6 @@ Note: if the "erroneous behavior" is [catastrophic](#Catastrophic_failure) to th
 Catastrophic failure
 --------------------
 
-We maintain lifeline ImageJ distributions on the [Downloads page](Downloads). You can use these until any outstanding issues are resolved.
+We maintain lifeline ImageJ distributions on the [/downloads page](/downloads). You can use these until any outstanding issues are resolved.
 
 

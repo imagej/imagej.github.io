@@ -13,7 +13,7 @@ description: test description
 
 **Interaction Analysis** is a tool to analyze the spatial distribution of objects in images. It estimates from an observed particle or object distribution what hypothetical interaction between the objects is most likely to have created this distribution. Detection of the objects (particles) can also be directly done in the plugin. It is part of the [MOSAICsuite](http://mosaic.mpi-cbg.de/?q=downloads/imageJ), which also offers 3D particle tracking, image segmentation, colocalization analysis, and much more. The best way to install it is via the MOSAIC Fiji Update site, as described on the [MOSAIC web page](http://mosaic.mpi-cbg.de/?q=downloads/imageJ). The algorithm is described in Helmuth, Paul, and Sbalzarini (2010[1]). The tool and its use are described in Shivanandan, Radenovic, and Sbalzarini (2013[2]).
 
-Documentation is available as [pdf](http://mosaic.mpi-cbg.de/Downloads/IAPManual.pdf)
+Documentation is available as [pdf](http://mosaic.mpi-cbg.de/downloads/IAPManual.pdf)
 
 References
 ----------

@@ -101,4 +101,4 @@ This kind of error is caused when a Java class is missing in your installation. 
 
 -   [Update](/plugins/updater) Fiji.
 -   Check if you have the [Jave8](/news/2015-12-22_-_The_road_to_Java_8) update site in the Fiji [Updater](/plugins/updater)
--   Finally, if nothing works, rather than digging in your Fiji installation in details, just install Java 8 and [re-download](Downloads) a fresh Fiji application.
+-   Finally, if nothing works, rather than digging in your Fiji installation in details, just install Java 8 and [re-download](/downloads) a fresh Fiji application.

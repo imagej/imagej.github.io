@@ -14,7 +14,7 @@ In the past, Fiji used to be built from one monolithic source code repository, w
 Download Fiji
 =============
 
-The first step is the same for developers as it is for users: [Download](Downloads) Fiji, and unpack it. The Desktop is the recommended location.
+The first step is the same for developers as it is for users: [Download](/downloads) Fiji, and unpack it. The Desktop is the recommended location.
 
 Install Java
 ============

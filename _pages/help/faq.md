@@ -26,7 +26,7 @@ Furthermore, the [SCIFIO](/software/scifio) library (what ImageJ2 uses for data 
 The [Fiji](/fiji) project also includes the [BigDataViewer](/plugins/bdv) (BDV) plugin, which currently functions as an alternative viewer, to display arbitrarily large images backed by ImgLib2. In the future we hope to integrate BDV-driven UI technology more completely into ImageJ core. But there are a couple of limitations right now:
 
 1.  BDV was originally designed for large SPIM data; opening large image files more generally currently requires some coding. But we want to change this.
-2.  Many ImageJ 1.x plugins assume the data is stored in an ImageJ 1.x data structure, which is not what BDV uses. So ["mixing and matching" IJ1 and IJ2 functionality](/Compatibility) is tricky here. But we are working to lift these restrictions as time goes on.
+2.  Many ImageJ 1.x plugins assume the data is stored in an ImageJ 1.x data structure, which is not what BDV uses. So ["mixing and matching" IJ1 and IJ2 functionality](/libs/imagej-legacy) is tricky here. But we are working to lift these restrictions as time goes on.
 
 Mac OS X
 ========
@@ -118,7 +118,7 @@ ImageJ will report itself as "up to date" as long as all files installed in your
 
 To be certain, run {% include bc path='Help | Update...'%}, and click the "Advanced mode" button. Then verify the following View Options:
 
--   **View uninstalled files only:** Shows files that are available from remote ImageJ update sites, but *not* installed in your ImageJ. Consider changing the "Status/Action" to "/Downloads" for these items, especially any .jar files that are flagged with "Not installed" status.
+-   **View uninstalled files only:** Shows files that are available from remote ImageJ update sites, but *not* installed in your ImageJ. Consider changing the "Status/Action" to "/downloads" for these items, especially any .jar files that are flagged with "Not installed" status.
 -   **View locally modified files only:** Shows files that have been edited locally (i.e., do not match any version from the remote update sites). Consider changing the "Status/Action" to "Update" for these items, especially any .jar files that you did not intentionally modify.
 -   **View local-only files:** Shows files that are not known at all to the remote update sites. These files were likely added manually (e.g., if you installed additional plugins manually; see "How do I install additional plugins" below). Consider deleting these files if you do not need them, especially any .jar files of unknown origin or conflicting file names.
 
@@ -140,7 +140,7 @@ Downgrading is generally not recommended as a long-term solution, but can be han
 
 -   You can change the version of [ImageJ 1.x](/software/imagej1) used via the {% include bc path='Help | Update ImageJ...'%} menu item. This *only* changes the version of ImageJ 1.x—not all ImageJ components, [plugins](/plugins), etc.
 -   You can [switch to a different version of Java](#How_do_I_launch_ImageJ_with_a_different_version_of_Java?).
--   You can [download a Fiji Life-Line version](Downloads#Fiji).
+-   You can [download a Fiji Life-Line version](/downloads#Fiji).
 
 Lastly, if you have not yet upgraded, and have a currently working configuration, you can make a backup copy of your ImageJ folder before upgrading. Then if the upgrade has undesirable consequences, switch back to the old copy.
 
@@ -154,7 +154,7 @@ The safest way to ensure these conventions is to use the {% include bc path='Fil
 I tried to update ImageJ via {% include bc path='Help | Update'%}, but it throws an exception instead?
 -----------------------------------------------------------------------------------------------------------
 
-Please download a fresh copy from [here](Downloads).
+Please download a fresh copy from [here](/downloads).
 
 I updated ImageJ via {% include bc path='Help | Update'%}, and now it does not start anymore!
 --------------------------------------------------------------------------------------------------
@@ -164,7 +164,7 @@ See [If ImageJ does not start up](Troubleshooting#If_ImageJ_does_not_start_up) o
 The Updater always says *Connection refused*. Maybe it does not use the proxy?
 ------------------------------------------------------------------------------
 
-Indeed, an earlier version of the Updater does not use your system-wide network proxy settings. You can [download a new ImageJ](Downloads) to receive the fix. Or you can update the Updater manually like this:
+Indeed, an earlier version of the Updater does not use your system-wide network proxy settings. You can [download a new ImageJ](/downloads) to receive the fix. Or you can update the Updater manually like this:
 
 -   open the [Script Editor](/scripting/script-editor) with {% include bc path='File | New | Script'%}
 -   set the language to *BeanShell* in the *Language* menu of the editor
@@ -229,7 +229,7 @@ Fiji is a *distribution* of ImageJ: it bundles the core ImageJ application with 
 How do I install Fiji?
 ----------------------
 
-The installation of Fiji is described on specific pages for [MacOSX](/Fiji_Downloads#Installation), [Windows](/Fiji_Downloads#Installation) and [Linux](/Fiji_Downloads#Installation).
+The installation of Fiji is described on specific pages for [MacOSX](/fiji/downloads#installation), [Windows](/fiji/downloads#installation) and [Linux](/fiji/downloads#installation).
 
 How do I turn my ImageJ installation into a Fiji one?
 -----------------------------------------------------
