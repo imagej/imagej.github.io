@@ -23,6 +23,11 @@ After starting ImageJ, you will see the main window:
 
 On Mac OS X, the menu bar will appear on the top of the screen (as with all OS X applications).
 
+The search bar
+--------------
+
+{% include stub %}
+
 The menu bar
 ------------
 

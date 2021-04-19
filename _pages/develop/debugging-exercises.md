@@ -220,7 +220,7 @@ Note that the menu path of the plugin is specified in the class's annotation:
 
     @Plugin(type = Command.class,menuPath = "Plugins>Troubleshooting>E4 - Print ConsoleService")
 
-So, you can now run the `E4 - Print ConsoleService` command either via the menus or [command finder](/Using_the_Command_Launcher). You should get an exception:
+So, you can now run the `E4 - Print ConsoleService` command either via the menus or the [search bar](/learn/getting-started#the-search-bar). You should get an exception:
 
 ![](/media/E4StackTrace.png "E4StackTrace.png")
 

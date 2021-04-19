@@ -33,7 +33,7 @@ How to use Coloc 2
         1.  where the mask image is white (255 pixel value for an 8 bit greyscale image) colocalization will be analyzed for those pixels only. Where it is black (zero pixel value), the pixels will be ignored: not included in the analysis.
         2.  you can use a z stack as a 3D mask... it's up to you how you make that mask image, manually or by some automated method.
 4.  Launch the Coloc 2 plugin from the menu item: Analyze - Colocalization Analysis - Coloc 2
-    1.  or use the command finder: press L then start typing Coloc, then choose the plugin with the arrow keys and hit enter, or double mouse click it to launch the plugin.
+    1.  or use the search bar: press L then start typing Coloc, then choose the plugin with the arrow keys and hit enter, or double mouse click it to launch the plugin.
 5.  In the plugin's graphical user interface (GUI) choose the 2 images you want to analyze in the first 2 drop down lists.
     1.  Select the images according to which you want to be channel 1 and which to be channel 2.
     2.  In the third drop down list selection, select the image/channel you want to use that has the correct ROI or mask image
@@ -95,7 +95,7 @@ Please see the [Colocalization Analysis](/techniques/colocalization-analysis) pa
 Release Notes, Newly Added Features and Squashed Bugs
 -----------------------------------------------------
 
-The definitive list of new features and fixes is the source code history as shown by the GIT history here: https://github.com/fiji/Colocalisation_Analysis/commits/master> This is just an easy way to check, a casual list for users, and might not be up to date. These might not yet all be in the version of the Coloc\_2 plugin released into the imageJ/Fiji updater; you can see that version listed in the command finder in the file column. Latest released into Fiji updater versions are tagged as releases on GITHUB, eg. <https://github.com/fiji/Colocalisation_Analysis/releases
+The definitive list of new features and fixes is the source code history as shown by the GIT history here: https://github.com/fiji/Colocalisation_Analysis/commits/master> This is just an easy way to check, a casual list for users, and might not be up to date. These might not yet all be in the version of the Coloc\_2 plugin released into the imageJ/Fiji updater; you can see that version listed in the search bar details pane. Latest released into Fiji updater versions are tagged as releases on GITHUB, eg. &lt;https://github.com/fiji/Colocalisation_Analysis/releases&gt;
 
 1.  Version 2.0.2 in Fiji updater - 26.Feb.2015
     1.  27-Jan-2015 commit 863fdbeaf7785759ed1c8e9357b7dd67f6d79996 Implement implement code to make sure autothreshold results are the same regardless of image channel order. A slightly earlier commit also added a unit test for this: CommutativityTest.java

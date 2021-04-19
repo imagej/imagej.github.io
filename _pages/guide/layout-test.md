@@ -76,7 +76,7 @@ Press the {% include key content='L' %} key to access ImageJ"s most useful featu
 
 
 {% capture tip%}
-Press the {% include key content='L' %} key to access ImageJ"s most useful feature: the [Command Finder](/Using_the_Command_Launcher).
+Press the {% include key content='L' %} key to access ImageJ"s most useful feature: the [search bar](/learn/getting-started#the-search-bar).
 {% endcapture %}
 {% include tip tip=tip %}
 

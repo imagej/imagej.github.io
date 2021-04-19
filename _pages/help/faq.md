@@ -355,15 +355,15 @@ Here are several ways to do so:
     -   Go to http://search.imagej.net/
     -   Type in your search
     -   Click the GitHub button!
-2.  **Using the Command Finder:**
-    -   Press {% include key content='L' %} for the Command Finder.
+2.  **Using the search bar:**
+    -   Press {% include key content='L' %} to focus the search bar.
     -   Type the name of the command.
     -   Press {% include key content='Down' %} to select it.
     -   Click the Source button.
     -   This will open the source from the [ImageJ web site online source](https://imagej.net/source/).
     -   Note: this method is very convenient, but only works for core [ImageJ 1.x](/software/imagej1) sources (e.g., not [ImageJ2](/software/imagej2) code, not [Fiji](/fiji) code, etc.).
 3.  **Using GitHub:**
-    -   Using the Command Finder, locate your command, taking note of the Class column's value.
+    -   Using the search bar, locate your command, taking note of the Class column's value.
         -   E.g., if we type "make binary" we see that the class is `ij.plugin.Thresholder`.
     -   Open the relevant project in GitHub:
         -   E.g., for "ij." classes, go to: https://github.com/imagej/ImageJA
@@ -373,11 +373,11 @@ Here are several ways to do so:
     -   This method requires that you know in which repository the code lives. However, you can combine it with **search.imagej.net** method above to figure out which repository, then load the code on GitHub, if desired.
 4.  **Using the "Open Source for Menu Item" command:**
     -   Run {% include bc path='Plugins | Scripting | Open Source for Menu Item'%}.
-        -   Unfortunately, you must select this from the menu, not using the Command Finder.
+        -   Unfortunately, you must select this from the menu, not using the search bar.
     -   Run the command whose source you want to see.
         -   E.g., {% include bc path='Process | Binary | Make Binary'%}.
-        -   Again, select it from the menu directly, not using the Command Finder.
-    -   This will open the source using the [fiji.sc gitweb interface](https://fiji.sc/git).
+        -   Again, select it from the menu directly, not using the search bar.
+    -   This will open the source in your web browser.
 
 In the future, we plan to make this easier by having one single easy command for viewing the source code.
 
@@ -462,7 +462,7 @@ The first place to check is this wiki. The [Fiji's Menu](/plugins/fiji-menu) pag
 
 If documentation is missing for the command you're interested in, you can always view the source directly:
 
-1.  Open the [Command Finder](/Using_the_Command_Launcher) (Shortcut: {% include key content='L' %})
+1.  Jump to the [search bar](/learn/getting-started#the-search-bar) (Shortcut: {% include key content='L' %})
 2.  Filter to the command you're interested in.
 3.  The \`File\` column will tell you the plugin where the desired command is contained.
 4.  You can then use this information to find the source code on GitHub - for core [ImageJ](https://github.com/imagej) or [Fiji](https://github.com/fiji) plugins.
@@ -471,7 +471,7 @@ If documentation is missing for the command you're interested in, you can always
 
 As a complete example, if you were interested in the [2D Histogram](2D_Histogram) command:
 
--   The [Command Finder](/Using_the_Command_Launcher) indicates it's located in VIB.jar
+-   The [search bar](/learn/getting-started#the-search-bar) indicates it's located in VIB.jar
 -   VIB is a Fiji plugin, so we go to [the VIB repository](https://github.com/fiji/VIB).
 -   On GitHub, press {% include key content='T' %}, search for "Histogram", and find [the Histogram 2D](https://github.com/fiji/VIB/blob/master/src/main/java/util/Histogram_2D.java) source.
 

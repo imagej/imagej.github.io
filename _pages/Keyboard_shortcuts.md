@@ -13,10 +13,10 @@ Listing all keyboard shortcuts
 
 For a verbose list of keyboard shortcuts, call {% include bc path='Plugins | Shortcuts | List Shortcuts'%}.
 
-The Command Launcher
---------------------
+The Search Bar
+--------------
 
-Use {% include key content='Ctrl' %}+{% include key content='L' %} (on Mac, {% include key content='Command' %}+{% include key content='L' %}) to open the [Command Launcher](Using_the_Command_Launcher), to call menu entries by name.
+Use {% include key content='Ctrl' %}+{% include key content='L' %} (on Mac, {% include key content='Command' %}+{% include key content='L' %}) to jump to the [search bar](/learn/getting-started#the-search-bar), to call menu entries by name.
 
 Recent Commands
 ---------------
