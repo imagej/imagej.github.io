@@ -7,8 +7,8 @@ description: test description
 
 TODO FLASH WIDGET
 
-This video tutorial was made and edited by {% include person content='Iarganda' %} using [Wink 2.0 for Windows](http://www.debugmode.com/wink/).
+This video tutorial was made by Javier Cabrera-Chaves and edited by {% include person content='Iarganda' %} using [Wink 1.5 for linux](http://www.debugmode.com/wink/). It has since been recorded via the screen capture below, as Adobe Flash is now defunct.
+
+{% include youtube url="https://www.youtube.com/embed/_EnLX5uJb1M" %}
 
 The sample image used in the tutorial can be found here: [1](http://neuromorpho.org/neuroMorpho/neuron_info.jsp?neuron_name=LAB4Lskeleton)
-
-  

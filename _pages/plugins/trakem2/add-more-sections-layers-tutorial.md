@@ -5,10 +5,8 @@ categories: TrakEM2,Tutorials
 description: test description
 ---
 
-This video tutorial was made by Javier Cabrera-Chaves and edited by {% include person content='Iarganda' %} using [Wink 1.5 for linux](http://www.debugmode.com/wink/). To navigate, use the green arrows to go forward and backward in the slide-show.
+This video tutorial was made by Javier Cabrera-Chaves and edited by {% include person content='Iarganda' %} using [Wink 1.5 for linux](http://www.debugmode.com/wink/). It has since been recorded via the screen capture below, as Adobe Flash is now defunct.
+
+{% include youtube url="https://www.youtube.com/embed/1K661d2xkLI" %}
 
 (here's the [Wish list](/licensing/wish-list) link that is displayed at the end of the movie)
-
-TODO FLASH WIDGET
-
- 
