@@ -1,7 +1,6 @@
 ---
 title: Demo citations
 author:
-categories: help
 description: This page demonstrates how to add a citation to your page.
 ---
 

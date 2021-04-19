@@ -1,7 +1,6 @@
 ---
 title: Demo about-menu
 author:
-categories: help
 description: This page demonstrates how to insert an about-menu.
 ---
 

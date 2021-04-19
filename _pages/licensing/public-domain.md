@@ -1,7 +1,6 @@
 ---
 title: Public Domain
 section: About:Licensing:Open Source
-categories: development
 description: test description
 ---
 

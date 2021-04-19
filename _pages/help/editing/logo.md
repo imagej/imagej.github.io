@@ -1,7 +1,6 @@
 ---
 title: Demo logos
 author:
-categories: help
 description: this page demonstrates how to use the logo include tag
 ---
 

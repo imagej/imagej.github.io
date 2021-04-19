@@ -1,7 +1,6 @@
 ---
 title: LGPL
 section: About:Licensing:Open Source
-categories: development
 description: test description
 ---
 

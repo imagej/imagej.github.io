@@ -1,7 +1,6 @@
 ---
 title: MIT
 section: About:Licensing:Open Source
-categories: community
 description: test description
 ---
 

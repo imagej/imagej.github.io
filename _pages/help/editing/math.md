@@ -1,7 +1,6 @@
 ---
 title: Demo math
 author:
-categories: help
 description: This page demonstrates how to use math equations.
 ---
 

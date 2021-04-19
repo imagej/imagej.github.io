@@ -1,7 +1,6 @@
 ---
 title: Demo additonal info boxes
 author:
-categories: help
 description: This page demonstrates how to add various stylized blurbs to your page.
 ---
 ## Big Info Box
