@@ -27,7 +27,7 @@ The current version of ImageJ is often referred to as [ImageJ2](/software/imagej
 See also
 --------
 
--   [ImageJ 1.x documentation](https://imagej.net/index.html)
+-   [ImageJ 1.x documentation](/ij/index.html)
 
 Publication
 -----------

@@ -7,7 +7,7 @@ description: test description
 Upgrading the ImageJ / Fiji updater
 ===================================
 
-There is a [wiki page](https://imagej.net/Updater) documenting the Updater from user perspective, this page is setting a stage for the changes that will be made to the updater.
+There is a [wiki page](/Updater) documenting the Updater from user perspective, this page is setting a stage for the changes that will be made to the updater.
 
 Basics
 ------

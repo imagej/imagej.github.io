@@ -125,7 +125,7 @@ The default parameters will result in the exported image having the same dimensi
     -   Specified (pixel): *The output field of view will be that given by the Offset and Field of View parameter fields where both are in units of pixels*
     -   Specified (physical): *The output field of view will be that given by the Offset and Field of View parameter fields where both are in the physical units of the moving and target images*
 
-The warped moving image can be exported as an in-memory or [virtual](https://imagej.net/docs/guide/146-8.html) ImagePlus. A virtual ImagePlus is generally faster to generate but slower to browse, whereas an in-memory ImagePlus will be slower to generate but faster to browse.
+The warped moving image can be exported as an in-memory or [virtual](/ij/docs/guide/146-8.html) ImagePlus. A virtual ImagePlus is generally faster to generate but slower to browse, whereas an in-memory ImagePlus will be slower to generate but faster to browse.
 
 <img src="/media/BigwarpLandmarkCenteredExport.png" width="600"/>
 
@@ -207,7 +207,7 @@ Working with large images
 
 The "normal" BigWarp plugin accessible through *Plugins {% include arrow%}
  Big Data Viewer {% include arrow%}
- BigWarp* works well for small- and medium-sized images but not for very large volumes (that do not fit into memory). For very large volumes, we recommend first [converting the volume to bigdataviewer's xml/hdf5 format](https://imagej.net/BigDataViewer#Exporting_Datasets_for_the_BigDataViewer), then using [this script](https://raw.githubusercontent.com/saalfeldlab/bigwarp/master/scripts/BigWarp_ImagePlus_or_Xml.groovy) to run BigWarp using the xml/h5 file(s). See also [this forum post.](https://forum.image.sc/t/issue-with-big-warp/31472)
+ BigWarp* works well for small- and medium-sized images but not for very large volumes (that do not fit into memory). For very large volumes, we recommend first [converting the volume to bigdataviewer's xml/hdf5 format](https://imagej.net/plugins/bdv#Exporting_Datasets_for_the_BigDataViewer), then using [this script](https://raw.githubusercontent.com/saalfeldlab/bigwarp/master/scripts/BigWarp_ImagePlus_or_Xml.groovy) to run BigWarp using the xml/h5 file(s). See also [this forum post.](https://forum.image.sc/t/issue-with-big-warp/31472)
 
 [This script](https://raw.githubusercontent.com/saalfeldlab/bigwarp/master/scripts/BigWarp_N5.groovy) enables you to run BigWarp using images stored using [N5](https://github.com/saalfeldlab/n5).
 

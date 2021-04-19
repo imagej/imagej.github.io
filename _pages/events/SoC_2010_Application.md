@@ -9,7 +9,7 @@ The application for Fiji (*Fiji Is Just ImageJ*)
 Description
 -----------
 
-Fiji stands for "Fiji is Just ImageJ". [ImageJ](https://imagej.net) is a public domain scientific image processing application sponsored by the National Institute of Health. ImageJ runs on the Java Virtual Machine and thus has direct access to numerous and diverse public java libraries.
+Fiji stands for "Fiji is Just ImageJ". [ImageJ](/) is a public domain scientific image processing application sponsored by the National Institute of Health. ImageJ runs on the Java Virtual Machine and thus has direct access to numerous and diverse public java libraries.
 
 Thanks to one of last year's Google Summer of Code projects, the individual components of Fiji are kept up-to-date with the Fiji Updater.
 

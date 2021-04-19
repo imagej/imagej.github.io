@@ -45,7 +45,7 @@ You can create a link between two cells in TrackScheme simply by enabling the li
 
 This is pictured below, where the first cell of the top track is attached to the track number 2, as it should. For visibility, I brought on this screenshot the target cell closer to the lane of the track 2. You can normally find it either on its own lane or on the far right of the panel.
 
-<figure><img src="/media/TrackMate CreateLinksInTrackScheme annotated.png" title="TrackMate_CreateLinksInTrackScheme_annotated.png" width="700" alt="TrackMate_CreateLinksInTrackScheme_annotated.png" /><figcaption aria-hidden="true">TrackMate_CreateLinksInTrackScheme_annotated.png</figcaption></figure>
+<figure><img src="/media/plugins/trackmate CreateLinksInTrackScheme annotated.png" title="TrackMate_CreateLinksInTrackScheme_annotated.png" width="700" alt="TrackMate_CreateLinksInTrackScheme_annotated.png" /><figcaption aria-hidden="true">TrackMate_CreateLinksInTrackScheme_annotated.png</figcaption></figure>
 
 Press the **Redo layout** button to see the arranged result. The first spot is now incorporated in the right track.
 
@@ -72,7 +72,7 @@ The newly created link is displayed in magenta. Note that the track arrangement 
 
 This can be used to create branching links, as picture below:
 
-![](/media/TrackMate BranchingTrack.png "TrackMate_BranchingTrack.png")
+![](/media/plugins/trackmate BranchingTrack.png "TrackMate_BranchingTrack.png")
 
 ### Creating several links at once
 

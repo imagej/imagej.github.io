@@ -136,7 +136,7 @@ For images that have more than one channel, there will also be a checkbox to *Di
 
 ### Macro language support
 
-All the operations in SLIM Plugin operation are completely compatible with the popular [ImageJ macro language](https://imagej.net/developer/macro/macros.html). Each of the button, selection, choice of algorithm, binning, noise model, default excitation selection with custom start-end time is completely macro record-able. Below is a typical macro recording for a typical usage where the user sets the algorithm, noise model, changes transient time, loads default excitation, sets the chi2 target, fixes A value for fitting and then starts fitting. {% include thumbnail src='/media/Screenshot slim final.png' title='Example of macro recording SLIM Curve'%}
+All the operations in SLIM Plugin operation are completely compatible with the popular [ImageJ macro language](/ij/developer/macro/macros.html). Each of the button, selection, choice of algorithm, binning, noise model, default excitation selection with custom start-end time is completely macro record-able. Below is a typical macro recording for a typical usage where the user sets the algorithm, noise model, changes transient time, loads default excitation, sets the chi2 target, fixes A value for fitting and then starts fitting. {% include thumbnail src='/media/Screenshot slim final.png' title='Example of macro recording SLIM Curve'%}
 
 The list of command are as follows
 

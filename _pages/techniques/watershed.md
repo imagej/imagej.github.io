@@ -48,7 +48,7 @@ Watershed Separation of touching DAPI stained nuclei images -Tutorial
 
 ### Watershed algorithm - separate touching objects
 
--   To run the built in [ImageJ watershed method](https://imagej.net/docs/menus/process.html#watershed) choose menu item: Process - Binary - Watershed. This method finds the centre of each object (using a morphological erode operation), then calculates a distance map from the object centre points to the edges of the objects, then fills that "topological map" with imaginary water. Where 2 "Watersheds" meet, it builds a dam to separate them! One could do all these steps manually, but the watershed function automates that for you, which is nice. Your watershed image should look like this:
+-   To run the built in [ImageJ watershed method](/ij/docs/menus/process.html#watershed) choose menu item: Process - Binary - Watershed. This method finds the centre of each object (using a morphological erode operation), then calculates a distance map from the object centre points to the edges of the objects, then fills that "topological map" with imaginary water. Where 2 "Watersheds" meet, it builds a dam to separate them! One could do all these steps manually, but the watershed function automates that for you, which is nice. Your watershed image should look like this:
 
 ![ 250 px](/media/NucleiDAPIconfocalWatershed.png " 250 px")
 

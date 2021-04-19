@@ -30,7 +30,7 @@ Assuming you are using [Maven](/develop/maven) to build the subproject:
         vi pom.xml
         git commit -m 'Add SCM location' pom.xml
 2.  Replace the old *<parent>* with a new one, such as [pom-scijava](https://github.com/scijava/pom-scijava), [pom-imagej](https://github.com/imagej/pom-imagej) or [pom-fiji](https://github.com/fiji/pom-fiji) (see [example](https://github.com/scijava/jep/commit/336c0a46fad855508aaa905a9f82e5d88136df91))—or remove the *<parent>* altogether.
-3.  Add a *<developers>* section to the *pom.xml* to indicate the project developers (see [example](https://github.com/fiji/TrackMate/commit/f0c2cf6cca3e198ba5b9283a71fc564f41c642d5)). You can also add *<contributors>* if desired and relevant.
+3.  Add a *<developers>* section to the *pom.xml* to indicate the project developers (see [example](https://github.com/fiji/plugins/trackmate/commit/f0c2cf6cca3e198ba5b9283a71fc564f41c642d5)). You can also add *<contributors>* if desired and relevant.
 4.  Make sure the project still builds:
         mvn clean package
 5.  Add (or adjust) the *.gitignore* file (see [example](https://github.com/fiji/spimreconstruction/commit/cf95dcc06b31c0044b58213c12f886027a5eb3ba)).

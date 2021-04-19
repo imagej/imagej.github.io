@@ -81,7 +81,7 @@ So if your image as `microns` as physical units for the pixel size, and `seconds
 
 ### Track branching analyzer.
 
-[code on github](https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/track/TrackBranchingAnalyzer.java)
+[code on github](https://github.com/fiji/plugins/trackmate/blob/master/src/main/java/fiji/plugin/trackmate/features/track/TrackBranchingAnalyzer.java)
 
 This analyzer focuses on the structure of tracks. It yields the following feature, that are all unitless.
 
@@ -111,7 +111,7 @@ Complex events are the rest: When a spot link to more than one spot in the previ
 
 ### Track duration analyzer.
 
-[code on github](https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/track/TrackDurationAnalyzer.java)
+[code on github](https://github.com/fiji/plugins/trackmate/blob/master/src/main/java/fiji/plugin/trackmate/features/track/TrackDurationAnalyzer.java)
 
 This feature analyzer focuses on the track "location" in time and it's displacement.
 
@@ -135,7 +135,7 @@ Careful: This is different from the track excursion. The value reported here sim
 
 ### Track index.
 
-[code on github](https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/track/TrackIndexAnalyzer.java)
+[code on github](https://github.com/fiji/plugins/trackmate/blob/master/src/main/java/fiji/plugin/trackmate/features/track/TrackIndexAnalyzer.java)
 
 This analyzer simply assign an integer number to tracks. It can be the track ID or the track index.
 
@@ -149,7 +149,7 @@ The track ID is an integer number that does not necessarily start from 0. It is 
 
 ### Track location.
 
-[code on github](https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/track/TrackLocationAnalyzer.java)
+[code on github](https://github.com/fiji/plugins/trackmate/blob/master/src/main/java/fiji/plugin/trackmate/features/track/TrackLocationAnalyzer.java)
 
 This analyzer yields feature values about the spatial location of tracks. This location is in physical units, and is defined by taking the mean of the location of spots that compose the track,
 
@@ -167,7 +167,7 @@ Guess what?
 
 ### Track Velocity.
 
-[code on github](https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/track/TrackSpeedStatisticsAnalyzer.java)
+[code on github](https://github.com/fiji/plugins/trackmate/blob/master/src/main/java/fiji/plugin/trackmate/features/track/TrackSpeedStatisticsAnalyzer.java)
 
 Feature values related to velocity. Normally velocity values given by this analyzer are calculated using the **link velocity**. The link velocity (or velocity) is defined for a single link between two spots (distance between the two spots divided by the time difference). The feature values are built upon this link feature, and is also referred in TrackMate (somewhat incorrectly) as the instantaneous velocity.
 
@@ -181,13 +181,13 @@ Same thing, but taking the max, min, median and standard deviation respectively.
 
 ### Track spot quality.
 
-[code on github](https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/track/TrackSpotQualityFeatureAnalyzer.java)
+[code on github](https://github.com/fiji/plugins/trackmate/blob/master/src/main/java/fiji/plugin/trackmate/features/track/TrackSpotQualityFeatureAnalyzer.java)
 
 This feature analyzer simply takes the mean, max, min, median and standard deviation of the distribution of the **Quality** values of all the spots in a track. In this respect, it is similar to the previous analyzer (Track velocity) that does the same for link velocity.
 
 ### Linear track analysis.
 
-[code on github](https://github.com/tinevez/TrackMate-TrackAnalysis/blob/master/src/main/java/fiji/plugin/trackmate/features/track/LinearTrackDescriptor.java)
+[code on github](https://github.com/tinevez/plugins/trackmate-TrackAnalysis/blob/master/src/main/java/fiji/plugin/trackmate/features/track/LinearTrackDescriptor.java)
 
 This feature analyzer comes from a TrackMate extra. It is available as a jar that you should download separately and drop into the jars folder of you Fiji installation. Check [TrackMate\#Extensions](TrackMate#Extensions) to get it.
 
@@ -197,7 +197,7 @@ It was written to add track descriptor that would help characterize the track mo
 
 Please note that the feature values listed in this paragraph are only properly defined bor **linear tracks**, that is tracks with no fusion nor split events.
 
-![](/media/TrackMate track features.png "TrackMate_track_features.png")
+![](/media/plugins/trackmate track features.png "TrackMate_track_features.png")
 
 #### Total distance traveled.
 
@@ -417,7 +417,7 @@ Each track initiated from a pair of spots is used to create an instance of a Kal
 
 Then, all the predicted positions are linked against the actual spot positions in the frame, using again the Jaqaman LAP framework, with the square distance as costs. The user can set how far can be an actual position from a predicted position for linking with the <b>Search radius</b> setting.
 
-<figure><img src="/media/TrackMate KalmanTrackerPrinciple.png" title="TrackMate_KalmanTrackerPrinciple.png" width="600" alt="TrackMate_KalmanTrackerPrinciple.png" /><figcaption aria-hidden="true">TrackMate_KalmanTrackerPrinciple.png</figcaption></figure>
+<figure><img src="/media/plugins/trackmate KalmanTrackerPrinciple.png" title="TrackMate_KalmanTrackerPrinciple.png" width="600" alt="TrackMate_KalmanTrackerPrinciple.png" /><figcaption aria-hidden="true">TrackMate_KalmanTrackerPrinciple.png</figcaption></figure>
 
 Now of course, after linking, some Kalman filters might not get linked to a found spot. This event is called an occlusion: the predicted position did not correspond to an actual measurement (spot). The good thing with Kalman filters is that they are fine with this, and are still able to make a prediction for the next frame even with a missing detection. If the number of successive occlusions is too large, the track is considered terminated. The user can set the maximal number of successive occlusions allowed before a track is terminated with the <b>Max frame gap</b> setting.
 

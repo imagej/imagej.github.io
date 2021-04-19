@@ -165,7 +165,7 @@ State-of-the-art multi-view (MV) fusion algorithms simultaneously fuse and decon
 
 Nanoparticle tracking analysis is a widely known method to determine the hydrodynamic diameter of nanoparticles (NP) in liquids. Commercial systems have been built for convenient measurements and ease of use. However, they rely on a multitude of analysis algorithms and statistical calculations which are not disclosed to the user. To give a better understanding of what is calculated, making the method applicable for other experimental setups and additionally extending the method for exploiting color information we developed a free plugin for [ImageJ](/about) called [NanoTrackJ](http://sourceforge.net/projects/nanotrackj/). It is an [open-source](/Open_Source) software where all algorithms are documented and freely accessible. The talk will give an overview of the functionalities of NanoTrackJ by presenting analysis of different video sequences from various devices.
 
-\[ [NanoTrackJ](http://sourceforge.net/projects/nanotrackj/), [source code](https://github.com/thorstenwagner/TrackMate), [Presentation slides](https://dl.dropboxusercontent.com/u/560426/imagej/conference2015/slides.pdf) \] \[ [Presentation Video](https://vimeo.com/140098848/) \]
+\[ [NanoTrackJ](http://sourceforge.net/projects/nanotrackj/), [source code](https://github.com/thorstenwagner/plugins/trackmate), [Presentation slides](https://dl.dropboxusercontent.com/u/560426/imagej/conference2015/slides.pdf) \] \[ [Presentation Video](https://vimeo.com/140098848/) \]
 
 ### Petr Walczysko - The Open Microscopy Environment (OME)
 

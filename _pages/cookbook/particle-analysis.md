@@ -11,7 +11,7 @@ description: test description
 Automatic Particle counting
 ---------------------------
 
-Automatic particle counting can be done if the image does not have too many individual particles touching. Manual particle counting can be done using the [Multi-point Tool](https://imagej.net/docs/guide/146-19.html#sec:Multi-point-Tool).
+Automatic particle counting can be done if the image does not have too many individual particles touching. Manual particle counting can be done using the [Multi-point Tool](/ij/docs/guide/146-19.html#sec:Multi-point-Tool).
 
 [Segmentation](/techniques/segmentation), or the ability to distinguish an object from its background, can be a difficult issue to deal with. Once this has been done, however, the object can then be analyzed.
 
@@ -72,7 +72,7 @@ The count, area, and average size are returned as a text window and the outlined
 Manual Counting
 ---------------
 
-You can use the built-in [Multi-point Tool](https://imagej.net/docs/guide/146-19.html#sec:Multi-point-Tool) to manually count particles.
+You can use the built-in [Multi-point Tool](/ij/docs/guide/146-19.html#sec:Multi-point-Tool) to manually count particles.
 
 Particle tracking
 -----------------

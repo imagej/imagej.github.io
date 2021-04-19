@@ -18,7 +18,7 @@ Plugins for 3D image preprocessing.
 
 **Lipschitz 3D** Filter - top hat - subtracts slowly varying background calculated as lower Lipschitz envelope from the image.
 
-Preprocessing example: [Image of capillaries in brain](https://imagej.net/_images/2/2e/Capillaries_brain.zip)
+Preprocessing example: [Image of capillaries in brain](/media/Capillaries_brain.zip)
 
 -   {% include bc path='Plugins | Biomat | Stack Linear Contrast'%} with parameters (multiplyers) "first"= 1.0 and "last"= 3.0
 -   {% include bc path='Process | Filters | Gaussian blur 3D'%} with "sigma"= 1 pixel
@@ -29,7 +29,7 @@ Plugins for detection of fibres in 3D image.
 
 **Tensor Line 3D Filter** - enhances white fibers of uniform width sparsely distributed on dark background.
 
-Example: [Image of capillaries in adipose tissue](https://imagej.net/_images/e/e8/Capillaries_adipose.zip).
+Example: [Image of capillaries in adipose tissue](/media/Capillaries_adipose.zip).
 
 -   {% include bc path='Plugins | Biomat | Tensor Line 3D Filter'%} with "sigma" set to 3 pixels
 -   {% include bc path='Image | Adjust | Brightness/Contrast'%}
@@ -37,7 +37,7 @@ Example: [Image of capillaries in adipose tissue](https://imagej.net/_images/e/e
 
 **Vector Line 3D Filter** - enhances white fibers of varying thickness. Crossection of the fibers need not be circular. Parameter "sigma" in pixels corresponds to the largest diameter.
 
-Example: [Image of capillaries in embryonic heart](https://imagej.net/_images/e/e9/Capillaries_heart.zip).
+Example: [Image of capillaries in embryonic heart](/media/Capillaries_heart.zip).
 
 -   {% include bc path='Plugins | Biomat | Vector Line 3D Filter'%} with parameters "sigma"= 4 pixels, "scale number"= 2
 

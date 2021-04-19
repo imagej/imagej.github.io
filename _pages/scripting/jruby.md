@@ -196,7 +196,7 @@ or:
 
 ` image = get_image`
 
-The "run" method may also be particularly useful for calling existing ImageJ plugins and commands. The next section has an example of the use of this. It may be instructive to compare the ["Blobs Demo" macro](https://imagej.net/macros/ConvexHull.txt) from the ImageJ distribution with {% include github repo='fiji' path='plugins/Examples/Blobs\_Demo\_in\_Ruby.rb' label='a version ported to JRuby' %}. The use of the analagous function in JRuby is not always the same - for example, if you compare the invocation of getSelectionCoordinates, you'll find that whereas the ImageJ macro version passes in the output variables:
+The "run" method may also be particularly useful for calling existing ImageJ plugins and commands. The next section has an example of the use of this. It may be instructive to compare the ["Blobs Demo" macro](/ij/macros/ConvexHull.txt) from the ImageJ distribution with {% include github repo='fiji' path='plugins/Examples/Blobs\_Demo\_in\_Ruby.rb' label='a version ported to JRuby' %}. The use of the analagous function in JRuby is not always the same - for example, if you compare the invocation of getSelectionCoordinates, you'll find that whereas the ImageJ macro version passes in the output variables:
 
 ` getSelectionCoordinates(xCoordinates, yCoordinates);`
 

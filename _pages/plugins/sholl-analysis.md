@@ -83,7 +83,7 @@ Press *More» Cf. Segmentation* to visually confirm which phase of the segmented
 <table><tbody><tr class="odd"><td><center><p><span style="display:inline-block;text-align:center;width:230px">Segmented image</span> <span style="display:inline-block;text-align:center;width:230px"><em>Cf. Segmentation output</em></span> <span style="display:inline-block;text-align:center;width:230px"><em>Intersections mask</em></span></p></center></td></tr><tr class="even"><td><center><figure><img src="/media/CfSegmentation.png" width="700" /></figure></center></td></tr><tr class="odd"><td><center><p><strong>Top row:</strong> Image properly segmented: Arbor is sampled. <strong>Bottom row:</strong> Aberrant segmentation (inverted image): Background is sampled.</p></center><p>Note the reversal of <em><a href="#Cf._Segmentation">Cf. Segmentation</a> output</em> and how the <em><a href="#Output_Options">intersections mask</a></em> no longer decorates the axonal processes but the interstitial spaces between them. The consequences of the phase inversion are twofold: 1) the program oversamples (cf. hue ramps on upper left of <em>Intersections mask</em>) and 2) the program detects artifacts induced by the edges of the image (cf. top-right and bottom-right corners of mask where intersections are sampled in the absence of real axons at those locations). Also, note that the initial black and white image would <em>look the same</em> under an inverted lookup table ({% include bc path='Image|Lookup Tables|Invert LUT' color='white'%}).</p></td></tr></tbody></table>
 
 {%- capture binary-tip -%}
-With binary images, *Sholl Analysis* treats zero intensities as the background, independently of the image lookup table or the state of the *Black background option* in {% include bc path="Process | Binary | Options..." %}. As with any other [ImageJ routine](https://imagej.net/docs/guide/146-29.html#infobox:blackBackground) , confusing background with foreground pixels will lead to aberrant results, including: 1) overestimation of branches and 2) artifacts at distances intersecting the boundaries of the image canvas.
+With binary images, *Sholl Analysis* treats zero intensities as the background, independently of the image lookup table or the state of the *Black background option* in {% include bc path="Process | Binary | Options..." %}. As with any other [ImageJ routine](/ij/docs/guide/146-29.html#infobox:blackBackground) , confusing background with foreground pixels will lead to aberrant results, including: 1) overestimation of branches and 2) artifacts at distances intersecting the boundaries of the image canvas.
 {%- endcapture -%}
 {% include tip tip=binary-tip %} <span id="Traces"></span>
 
@@ -434,7 +434,7 @@ Object detection and image segmentation in images with poor signal-to-noise will
 
 
 {% capture tip%}
-For additional image processing tools have a look at the growing list of {% include list-of-update-sites content='update sites' %}. For more information on image processing have a look at \_\_\_SHADOW2\_\_\_, \_\_\_SHADOW3\_\_\_ and the [ImageJ User Guide](https://imagej.net/docs/guide/) .
+For additional image processing tools have a look at the growing list of {% include list-of-update-sites content='update sites' %}. For more information on image processing have a look at \_\_\_SHADOW2\_\_\_, \_\_\_SHADOW3\_\_\_ and the [ImageJ User Guide](/ij/docs/guide/) .
 {% endcapture %}
 {% include tip tip=tip %}
 
@@ -673,7 +673,7 @@ Around 20 seconds. This is the time it will take you to [create an account](Help
 <dl>
 <dd>
 
-The plugin does not parse RGB images, but will process any grayscale image (8/16-bit), including multi-channel (composite) images. This is intentional: RGB images are inflexible and images of fluorescence-labeled cells are typically non-RGB images. As explained in the [ImageJ User Guide](https://imagej.net/docs/guide/), RGB images can be converted using {% include bc path='Image|Color|Channels Tool...' color='white'%} or {% include bc path='Image|Type|' color='white'%} commands.
+The plugin does not parse RGB images, but will process any grayscale image (8/16-bit), including multi-channel (composite) images. This is intentional: RGB images are inflexible and images of fluorescence-labeled cells are typically non-RGB images. As explained in the [ImageJ User Guide](/ij/docs/guide/), RGB images can be converted using {% include bc path='Image|Color|Channels Tool...' color='white'%} or {% include bc path='Image|Type|' color='white'%} commands.
 
 </dd>
 </dl>
@@ -685,7 +685,7 @@ The plugin does not parse RGB images, but will process any grayscale image (8/16
 <dl>
 <dd>
 
-This option is only available if an orthogonal line has been created by holding {% include key content='press\|Shift' %} when using the <span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>. See the [ImageJ User Guide](https://imagej.net/docs/guide/) for the full list of key modifiers that can be used while creating straight line ROIs.
+This option is only available if an orthogonal line has been created by holding {% include key content='press\|Shift' %} when using the <span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>. See the [ImageJ User Guide](/ij/docs/guide/) for the full list of key modifiers that can be used while creating straight line ROIs.
 
 </dd>
 </dl>
@@ -734,7 +734,7 @@ The plugin is designed for the analysis of a wide diversity of arbors and it is 
 <dl>
 <dd>
 
-Select the table, then choose {% include bc path="File | Save As..." %}The filename extension can be specified using the *More » Options...* command (see the [ImageJ User Guide](https://imagej.net/docs/guide/) for details). Single cells cannot be modified from within ImageJ, but custom extensions (e.g., .csv, .xls or .ods) will allow the table to be imported by other spreadsheet applications.
+Select the table, then choose {% include bc path="File | Save As..." %}The filename extension can be specified using the *More » Options...* command (see the [ImageJ User Guide](/ij/docs/guide/) for details). Single cells cannot be modified from within ImageJ, but custom extensions (e.g., .csv, .xls or .ods) will allow the table to be imported by other spreadsheet applications.
 
 </dd>
 </dl>

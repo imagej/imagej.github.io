@@ -9,4 +9,4 @@ This video tutorial was made by Javier Cabrera-Chaves and edited by {% include p
 
 {% include youtube url="https://www.youtube.com/embed/1K661d2xkLI" %}
 
-(here's the [Wish list](/licensing/wish-list) link that is displayed at the end of the movie)
+(here's the [Wish list](/develop/wish-list) link that is displayed at the end of the movie)

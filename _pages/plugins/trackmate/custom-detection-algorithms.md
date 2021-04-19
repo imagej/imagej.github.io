@@ -70,7 +70,7 @@ This is the type of the image data we are to operate on.
 
 #### The constructor.
 
-Since the https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/detection/SpotDetector.java SpotDetector\] interface gives little constraint on inputs, all of them must be provided at construction time in the constructor. Keep in mind that we have one instance per frame, so we must know what frame we are to process.
+Since the https://github.com/fiji/plugins/trackmate/blob/master/src/main/java/fiji/plugin/trackmate/detection/SpotDetector.java SpotDetector\] interface gives little constraint on inputs, all of them must be provided at construction time in the constructor. Keep in mind that we have one instance per frame, so we must know what frame we are to process.
 
 Normal detectors would be fed with a reference to the image data *for this very single frame*. Here we do not care for image content, so it is not there. But we will speak of this more when discussing the factory.
 
@@ -531,7 +531,7 @@ Ouf! That was a lot of information and a lot of coding for a single piece of fun
 
 Here is what our dummy example looks. To maximize your user experience, I let it run on a 512 x 512 x 200 frames image, and tracked them.
 
-![](/media/TrackMateCustomDetector 01.gif "TrackMateCustomDetector_01.gif")
+![](/media/plugins/trackmateCustomDetector 01.gif "TrackMateCustomDetector_01.gif")
 
 {% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez)) 08:28, 3 April 2014 (CDT)
 

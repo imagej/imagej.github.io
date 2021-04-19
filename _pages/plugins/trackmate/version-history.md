@@ -4,7 +4,7 @@ title: TrackMate version history
 description: test description
 ---
 
-<b>This page is deprecated!</b> Starting v5.1.0, please look at the gihub page for TrackMate releases: https://github.com/fiji/TrackMate/releases
+<b>This page is deprecated!</b> Starting v5.1.0, please look at the gihub page for TrackMate releases: https://github.com/fiji/plugins/trackmate/releases
 
 This page contains the version history for the [TrackMate](/plugins/trackmate) plugin. Bug fixes are not mentioned here, and do not get their own release number.
 
@@ -322,8 +322,8 @@ Changes:
 Only a subset of TrackMate features can be used, though. Right now, only the LoG detector and the Simple LAP tracker are used. But for instance, you can call TrackMate with the following syntax:
 
     run('TrackMate', "use_gui=false "
-                            + "save_to=[/Users/tinevez/Desktop/TrackMateSaveTest.xml] "
-                            + "export_to=[/Users/tinevez/Desktop/TrackMateExportTest.xml] "
+                            + "save_to=[/Users/tinevez/Desktop/plugins/trackmateSaveTest.xml] "
+                            + "export_to=[/Users/tinevez/Desktop/plugins/trackmateExportTest.xml] "
                             + "display_results=true "
                             + "radius=2.5 "
                             + "threshold=50.1 "

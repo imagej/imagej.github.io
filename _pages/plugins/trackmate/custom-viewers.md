@@ -24,8 +24,8 @@ A custom TrackMate view.
 
 Like for the [spot feature analyzers](/plugins/trackmate/custom-spot-feature-analyzer-algorithms), a TrackMate view is separated in two parts, that each extends a different interface:
 
--   The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/visualization/TrackMateModelView.java' label='TrackMateModelView' %}, that is the actual view of the model. All the hard work is done here.
--   The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/visualization/ViewFactory.java' label='ViewFactory' %} that is a factory in charge of instantiating the view and of the integration in TrackMate. This interface extends the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/TrackMateModule.java' label='TrackMateModule' %} interface, so we expect to find there some of the methods we discussed earlier, and the [SciJava](SciJava) annotation.
+-   The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/visualization/plugins/trackmateModelView.java' label='TrackMateModelView' %}, that is the actual view of the model. All the hard work is done here.
+-   The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/visualization/ViewFactory.java' label='ViewFactory' %} that is a factory in charge of instantiating the view and of the integration in TrackMate. This interface extends the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/plugins/trackmateModule.java' label='TrackMateModule' %} interface, so we expect to find there some of the methods we discussed earlier, and the [SciJava](SciJava) annotation.
 
 In this tutorial, we will build something simple. We will limit ourselves to develop a view that simple messages the user every time something happens in TrackMate. For instance, when the spots are detected, how many there are; if he selects spots and edges, how many of them; etc. And we will just reuse the Fiji log window for this, which will save us from the full development of a graphical view of the model.
 
@@ -45,7 +45,7 @@ You can see that we can possibly pass 3 parameters to the constructor of the vie
 
 The selection model is also offered, and the instance passed is the common one used in the GUI, so that a selection made by the user can be shared amongst all views.
 
-The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/visualization/TrackMateModelView.java' label='TrackMateModelView' %} interface.
+The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/visualization/plugins/trackmateModelView.java' label='TrackMateModelView' %} interface.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### Methods.
@@ -88,7 +88,7 @@ It should be possible to configure the look and feel of your view, or even to se
 
 Display settings are passed using a pair of key (as String) / value (as Object, that should be cast upon the right class).
 
-The TrackMate GUI allows the user to edit a limited series of display settings that ought to be common to all views. These are the settings you can tune on the antepenultimate panel of the GUI (spot visible or not, color by feature, etc...). If you feel like it, your view can just ignore them. Otherwise, their keys and desired classes are defined in the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/visualization/TrackMateModelView.java' label='TrackMateModelView' %} interface. Check the static fields there.
+The TrackMate GUI allows the user to edit a limited series of display settings that ought to be common to all views. These are the settings you can tune on the antepenultimate panel of the GUI (spot visible or not, color by feature, etc...). If you feel like it, your view can just ignore them. Otherwise, their keys and desired classes are defined in the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/visualization/plugins/trackmateModelView.java' label='TrackMateModelView' %} interface. Check the static fields there.
 
 Everytime the user changes a setting in the GUI, the new setting value is passed with the `setDisplaySettings()` method, then the `refresh()` method is called as well.
 
@@ -194,7 +194,7 @@ As for the factory, nothing fancy:
 
     }
 
-<figure><img src="/media/TrackMate CustomView 2.png" title="TrackMate_CustomView_2.png" width="200" alt="TrackMate_CustomView_2.png" /><figcaption aria-hidden="true">TrackMate_CustomView_2.png</figcaption></figure>
+<figure><img src="/media/plugins/trackmate CustomView 2.png" title="TrackMate_CustomView_2.png" width="200" alt="TrackMate_CustomView_2.png" /><figcaption aria-hidden="true">TrackMate_CustomView_2.png</figcaption></figure>
 
 Just note that the [SciJava](SciJava) annotation mention the `ViewFactory` class. This is enough to have the view selectable in the GUI menu:
 
@@ -202,7 +202,7 @@ Note that this time, TrackMate good use of the `getName()` and `getInfoText()` m
 
 And here is what you get after a few manipulations:
 
-<figure><img src="/media/TrackMate CustomView 1.png" title="TrackMate_CustomView_1.png" width="500" alt="TrackMate_CustomView_1.png" /><figcaption aria-hidden="true">TrackMate_CustomView_1.png</figcaption></figure>
+<figure><img src="/media/plugins/trackmate CustomView 1.png" title="TrackMate_CustomView_1.png" width="500" alt="TrackMate_CustomView_1.png" /><figcaption aria-hidden="true">TrackMate_CustomView_1.png</figcaption></figure>
 
 Controlling the visibility of your view with the SciJava `visible` parameter.
 -----------------------------------------------------------------------------

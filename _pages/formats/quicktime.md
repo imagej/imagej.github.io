@@ -33,11 +33,11 @@ Apple has also deprecated several old codecs (e.g., `mjpb`), with its QuickTime 
 
 ### Enabling QuickTime for Java on OS X
 
-OS X 10.10 (Yosemite) and 10.11 (El Capitan) do not include key files required for running commands like {% include bc path='File | Import | Using QuickTime'%} and {% include bc path='File | Save As | QuickTime Movie'%} that use QuickTime for Java. You can work around this problem by copying the files `QTJava.zip` and `libQTJNative.jnilib`, [available here](https://imagej.net/download/qt/), into `~/Library/Java/Extensions`, where `~` is your home directory. Yosemite hides the `Library` folder by default, so you will need to open your home folder and check "Show Library Folder" in the {% include bc path='View | Show View Options'%} dialog. Before copying the files, you will need to create the `~/Library/Java` and `~/Library/Java/Extensions` folders.
+OS X 10.10 (Yosemite) and 10.11 (El Capitan) do not include key files required for running commands like {% include bc path='File | Import | Using QuickTime'%} and {% include bc path='File | Save As | QuickTime Movie'%} that use QuickTime for Java. You can work around this problem by copying the files `QTJava.zip` and `libQTJNative.jnilib`, [available here](/ij/download/qt/), into `~/Library/Java/Extensions`, where `~` is your home directory. Yosemite hides the `Library` folder by default, so you will need to open your home folder and check "Show Library Folder" in the {% include bc path='View | Show View Options'%} dialog. Before copying the files, you will need to create the `~/Library/Java` and `~/Library/Java/Extensions` folders.
 
 You can accomplish all of the above by pasting the following command into a running Terminal:
 
-    mkdir -p $HOME/Library/Java/Extensions && for f in QTJava.zip libQTJNative.jnilib; do curl -fsSL https://imagej.net/download/qt/$f -o $HOME/Library/Java/Extensions/$f; done
+    mkdir -p $HOME/Library/Java/Extensions && for f in QTJava.zip libQTJNative.jnilib; do curl -fsSL /ij/download/qt/$f -o $HOME/Library/Java/Extensions/$f; done
 
 FFMPEG
 ------

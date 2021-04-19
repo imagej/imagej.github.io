@@ -106,7 +106,7 @@ Description of all ImageJ related projects at [ImageDev](http://imagejdev.org/fa
 </div>
 <div class="Description">
 
-<span class="Description-entry">**[TrakEM]( )2**</span> [TrakEM2](http://www.ini.uzh.ch/~acardona/trakem2.html) is a program for morphological [↓data](#index-Data-mining) mining, three-dimensional [↓modeling](#index-Modeling) and image stitching, registration, editing and annotation <span class="bibcites">[<span class="bib-index">7</span>]([#biblio-57)\]</span>. [↓](#index-TrakEM2)[↓TrakEM](#index-Fiji)2 is [distributed with Fiji](https://fiji.sc/wiki/index.php/TrakEM2) and [capable of](http://www.ini.uzh.ch/~acardona/trakem2_manual.html):
+<span class="Description-entry">**[TrakEM]( )2**</span> [TrakEM2](http://www.ini.uzh.ch/~acardona/trakem2.html) is a program for morphological [↓data](#index-Data-mining) mining, three-dimensional [↓modeling](#index-Modeling) and image stitching, registration, editing and annotation <span class="bibcites">[<span class="bib-index">7</span>]([#biblio-57)\]</span>. [↓](#index-TrakEM2)[↓TrakEM](#index-Fiji)2 is [distributed with Fiji](https://fiji.sc/wiki/index.php/plugins/trakem2) and [capable of](http://www.ini.uzh.ch/~acardona/trakem2_manual.html):
 
 <div class="vspace" style="height: -8pt;">
 </div>

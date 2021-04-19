@@ -202,7 +202,7 @@ All the above can be summarized like the following:
 ### Running a watershed plugin on an image
 
     # 1 - Obtain an image
-    blobs = IJ.openImage("https://imagej.net/images/blobs.gif")
+    blobs = IJ.openImage("/ij/images/blobs.gif")
     # Make a copy with the same properties as blobs image:
     imp = blobs.createImagePlus()
     ip = blobs.getProcessor().duplicate()
@@ -243,7 +243,7 @@ Continuing from the <i>imp</i> above, that contains the now watersheded "blobs" 
     roim = RoiManager(True)
     # Create a ParticleAnalyzer, with arguments:
     # 1. options (could be SHOW_ROI_MASKS, SHOW_OUTLINES, SHOW_MASKS, SHOW_NONE, ADD_TO_MANAGER, and others; combined with bitwise-or)
-    # 2. measurement options (see [https://imagej.net/developer/api/ij/measure/Measurements.html Measurements])
+    # 2. measurement options (see [/ij/developer/api/ij/measure/Measurements.html Measurements])
     # 3. a ResultsTable to store the measurements
     # 4. The minimum size of a particle to consider for measurement
     # 5. The maximum size (idem)
@@ -341,10 +341,10 @@ A data file containing rows with 4 columns:
 
 The easiest way is to grab an image and call an ImageJ command to show its histogram:
 
-    imp = IJ.openImage("https://imagej.net/images/blobs.gif")
+    imp = IJ.openImage("/ij/images/blobs.gif")
     IJ.run(imp, "Histogram", "")
 
-How ImageJ does it, internally, has to do with the [ImageStatisics](https://imagej.net/developer/api/ij/process/ImageStatistics.html) class:
+How ImageJ does it, internally, has to do with the [ImageStatisics](/ij/developer/api/ij/process/ImageStatistics.html) class:
 
     stats = imp.getStatistics()
     print stats.histogram
@@ -367,7 +367,7 @@ How ImageJ does it, internally, has to do with the [ImageStatisics](https://imag
 
 The histogram, area and mean are computed by default. Other values like the median need to be specified.
 
-To calculate other parameters, specify them by bitwise-or composition (see flags in [Measurements](https://imagej.net/developer/api/ij/measure/Measurements.html)):
+To calculate other parameters, specify them by bitwise-or composition (see flags in [Measurements](/ij/developer/api/ij/measure/Measurements.html)):
 
     stats = imp.getStatistics(Measurements.MEAN | Measurements.MEDIAN | Measurements.AREA)
     print "mean:", stats.mean, "median:", stats.median, "area:", stats.area
@@ -384,7 +384,7 @@ If we set a ROI to the image, then we are measuring only for the inside of the R
 
 `mean: 104.96356275303644 median: 64.0 area: 1976.0`
 
-To display the histogram window ourselves, we may use the [HistogramWindow](https://imagej.net/developer/api/ij/gui/HistogramWindow.html) class:
+To display the histogram window ourselves, we may use the [HistogramWindow](/ij/developer/api/ij/gui/HistogramWindow.html) class:
 
     hwin = HistogramWindow(imp)
 
@@ -1033,7 +1033,7 @@ After running the script, clicking on any image will result in printing a line t
 
 ### Apply a binary mask to every slice in an image stack
 
-Will work with regular stacks and with any kind of complex stack like a composite image or a 4d volume. Keep in mind that all stack types in ImageJ consists of a sequence of 2d images, each editable with an [ImageProcessor](https://imagej.net/developer/api/ij/process/ImageProcessor.html) obtained from the [ImageStack](https://imagej.net/developer/api/ij/ImageStack.html) that one can get from the [ImagePlus](https://imagej.net/developer/api/ij/ImagePlus.html). (The [ImagePlus](https://imagej.net/developer/api/ij/ImagePlus.html) being what the opener or the [WindowManager](https://imagej.net/developer/api/ij/WindowManager.html) provides.)
+Will work with regular stacks and with any kind of complex stack like a composite image or a 4d volume. Keep in mind that all stack types in ImageJ consists of a sequence of 2d images, each editable with an [ImageProcessor](/ij/developer/api/ij/process/ImageProcessor.html) obtained from the [ImageStack](/ij/developer/api/ij/ImageStack.html) that one can get from the [ImagePlus](/ij/developer/api/ij/ImagePlus.html). (The [ImagePlus](/ij/developer/api/ij/ImagePlus.html) being what the opener or the [WindowManager](/ij/developer/api/ij/WindowManager.html) provides.)
 
     # Albert Cardona 2012-10-05 for Sara Abrahamsson
     #
@@ -1572,7 +1572,7 @@ A better example that exploits the capabilities of the <i>Weaver.inline</i> is t
     from fiji.scripting import Weaver
 
     # The currently open image, an 8-bit stack
-    imp = IJ.openImage("https://imagej.net/images/bat-cochlea-volume.zip")
+    imp = IJ.openImage("/ij/images/bat-cochlea-volume.zip")
 
     slices = [None, None]
 
@@ -1609,7 +1609,7 @@ Instead, here is the same code but using the <i>Weaver.method</i> approach, wher
     from fiji.scripting import Weaver
 
     # The currently open image, an 8-bit stack
-    imp = IJ.openImage("https://imagej.net/images/bat-cochlea-volume.zip")
+    imp = IJ.openImage("/ij/images/bat-cochlea-volume.zip")
 
     w = Weaver.method(
       """
@@ -1861,10 +1861,10 @@ Jython examples in Fiji
 
 <!-- -->
 
--   {% include github repo='fiji' path='plugins/Examples/TrakEM2\_Example\_Scripts/extract\_stack\_under\_arealist.py' label='Extract stack under AreaList' %} in TrakEM2.
--   {% include github repo='fiji' path='plugins/Examples/TrakEM2\_Example\_Scripts/T2\_set\_all\_transforms\_to\_identity.py' label='Set all transforms to identity' %} for TrakEM2 objects.
--   {% include github repo='fiji' path='plugins/Examples/TrakEM2\_Example\_Scripts/T2\_Select\_All.py' label='Select All' %} objects in TrakEM2.
--   {% include github repo='fiji' path='plugins/Examples/TrakEM2\_Example\_Scripts/Measure\_AreaLists.py' label='Measure AreaList' %} in TrakEM2.
+-   {% include github repo='fiji' path='plugins/Examples/plugins/trakem2\_Example\_Scripts/extract\_stack\_under\_arealist.py' label='Extract stack under AreaList' %} in TrakEM2.
+-   {% include github repo='fiji' path='plugins/Examples/plugins/trakem2\_Example\_Scripts/T2\_set\_all\_transforms\_to\_identity.py' label='Set all transforms to identity' %} for TrakEM2 objects.
+-   {% include github repo='fiji' path='plugins/Examples/plugins/trakem2\_Example\_Scripts/T2\_Select\_All.py' label='Select All' %} objects in TrakEM2.
+-   {% include github repo='fiji' path='plugins/Examples/plugins/trakem2\_Example\_Scripts/Measure\_AreaLists.py' label='Measure AreaList' %} in TrakEM2.
 
 See also
 ========

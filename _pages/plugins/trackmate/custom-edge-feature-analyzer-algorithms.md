@@ -30,7 +30,7 @@ TrackMate is extended by writing *modules*. Modules are just the basic algorithm
 -   visualization tools
 -   post-processing actions (exporting, data massaging, etc...)
 
-All of these modules implement an interface, specific to the module class. For instance, an edge analyzer algorithm will implement the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/edges/EdgeAnalyzer.java' label='EdgeAnalyzer' %} interface. There is therefore 7 interfaces. They do have in common that they all extend the mother module interface called {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/TrackMateModule.java' label='TrackMateModule' %}.
+All of these modules implement an interface, specific to the module class. For instance, an edge analyzer algorithm will implement the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/edges/EdgeAnalyzer.java' label='EdgeAnalyzer' %} interface. There is therefore 7 interfaces. They do have in common that they all extend the mother module interface called {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/plugins/trackmateModule.java' label='TrackMateModule' %}.
 
 TrackMateModule is used for two basic purpose:
 
@@ -345,7 +345,7 @@ Just the line `@Plugin( type = EdgeAnalyzer.class )` is enough. There are also m
 
 Right now, just compile your project, and drop the resulting jar in the Fiji plugins folder. Here is what you get:
 
-![](/media/TrackMate DevelopEdgeAnalyzer.png "TrackMate_DevelopEdgeAnalyzer.png")
+![](/media/plugins/trackmate DevelopEdgeAnalyzer.png "TrackMate_DevelopEdgeAnalyzer.png")
 
 Wrapping up
 -----------

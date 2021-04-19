@@ -23,7 +23,7 @@ Track analyzers
 All the track feature analyzers must implement {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/track/TrackAnalyzer.java' label='TrackAnalyzer interface' %}. Like for the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/edges/EdgeAnalyzer.java' label='EdgeAnalyzer' %} interface, it extends both
 
 -   {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/FeatureAnalyzer.java' label='FeatureAnalyzer' %} that helps you declaring what you compute,
--   and {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/TrackMateModule.java' label='TrackMateModule' %}, that is in charge of the integration in TrackMate.
+-   and {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/plugins/trackmateModule.java' label='TrackMateModule' %}, that is in charge of the integration in TrackMate.
 
 The only changes for us are two methods specific to tracks:
 
@@ -204,7 +204,7 @@ Wrapping up
 
 Et ca marche !
 
-<figure><img src="/media/TrackMate TrackAnalyzerExample.png" title="TrackMate_TrackAnalyzerExample.png" width="600" alt="TrackMate_TrackAnalyzerExample.png" /><figcaption aria-hidden="true">TrackMate_TrackAnalyzerExample.png</figcaption></figure>
+<figure><img src="/media/plugins/trackmate TrackAnalyzerExample.png" title="TrackMate_TrackAnalyzerExample.png" width="600" alt="TrackMate_TrackAnalyzerExample.png" /><figcaption aria-hidden="true">TrackMate_TrackAnalyzerExample.png</figcaption></figure>
 
 In the next article we will build a spot analyzer and complicate things a bit, by introducing the notion of *priority*. But before this, a short word on how to disable a module.
 

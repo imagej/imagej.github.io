@@ -21,7 +21,7 @@ To start, try a high level API approach via a GUI...
 
 ### Using a GUI
 
-If importing your images via [Bio-Formats Importer](https://imagej.net/Bio-Formats#Bio-Formats_Importer) (which we suggest you do), you can either:
+If importing your images via [Bio-Formats Importer](/formats/bio-formats#bio-formats-importer) (which we suggest you do), you can either:
 
 -   In **Stack Viewing**, View stack with: "Metadata only"
 

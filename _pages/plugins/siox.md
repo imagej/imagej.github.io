@@ -204,9 +204,9 @@ Still Image Approach:
 ImageJ version
 --------------
 
-Thanks to {% include person content='Rasband' %}, there is an [ImageJ](https://imagej.net/plugins/siox/index.html) version of this plugin without Fiji dependencies:
+Thanks to {% include person content='Rasband' %}, there is an [ImageJ](/ij/plugins/siox/index.html) version of this plugin without Fiji dependencies:
 
-[https://imagej.net/plugins/siox/index.html](https://imagej.net/plugins/siox/index.html)
+[/ij/plugins/siox/index.html](/ij/plugins/siox/index.html)
 
 Licenses
 --------

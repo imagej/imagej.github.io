@@ -15,7 +15,7 @@ Global thresholding works by choosing a value cutoff, such that every pixel less
 
 [ImageJ](/about) provides several built-in methods for automatically computing a global threshold. For details, see:
 
--   Documentation for the \[https://imagej.net/docs/guide/146-28.html#sub:Threshold...%5BT%5D Threshold...\] command.
+-   Documentation for the \[/ij/docs/guide/146-28.html#sub:Threshold...%5BT%5D Threshold...\] command.
 -   The [Auto Threshold](/plugins/auto-threshold) plugin page
 
 Local thresholding

@@ -23,7 +23,7 @@ Rueden, C., Schindelin, J., Hiner, M. & Eliceiri, K. (2016). SciJava Common [Sof
 Hiner, M.C.; Rueden, C.T. & Eliceiri, K.W. (2016 Dec 7), "<a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-1383-0">SCIFIO: an extensible framework to support scientific image formats.</a>", *BMC Bioinformatics* **17(1)**: 521, PMID 27927161, doi:<a href="http://dx.doi.org/10.1186%2Fs12859-016-1383-0">10.1186/s12859-016-1383-0</a> (<a href="http://scholar.google.com/scholar?cluster=12695867462379525116">on Google Scholar</a>).
 {% endif %}
 {% if include.content == "ImageJ Ops" %}
-Rueden, C., Dietz, C., Horn, M., Schindelin, J., Northan, B., Berthold, M. & Eliceiri, K. (2016). ImageJ Ops [Software]. <a href="https://imagej.net/Ops">https://imagej.net/Ops</a>.
+Rueden, C., Dietz, C., Horn, M., Schindelin, J., Northan, B., Berthold, M. & Eliceiri, K. (2016). ImageJ Ops [Software]. https://imagej.net/libs/imagej-ops.
 {% endif %}
 {% if include.content == "3D Viewer" %}
 Schmid, B.; Schindelin, J. & Cardona, A. et al. (2010), "<a href="http://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-274">A high-level 3D visualization API for Java and ImageJ</a>", *BMC Bioinformatics* **11(1)**: 1, PMID 20492697, doi:<a href="http://dx.doi.org/10.1038%2Fnmeth.3392">10.1038/nmeth.3392</a> (<a href="http://scholar.google.com/scholar?cluster=5464881898236181205">on Google Scholar</a>).

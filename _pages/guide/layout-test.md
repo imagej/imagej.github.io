@@ -8,7 +8,7 @@ This page should be used internally to discuss the new IJ user guide layout. Onc
 
 The syntax is always shown in the gray boxes and the actual look you will see directly below each syntax specification.
 
-If you want to add other templates, here you can find the ones existing on imagej.net: [Template pages](https://imagej.net/index.php?title=Special%3AAllPages&from=&to=&namespace=10)
+If you want to add other templates, here you can find the existing ones [here](https://github.com/imagej/imagej.github.io/tree/main/_includes).
 
 Different headline levels
 -------------------------

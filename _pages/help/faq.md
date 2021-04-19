@@ -360,8 +360,7 @@ Here are several ways to do so:
     -   Type the name of the command.
     -   Press {% include key content='Down' %} to select it.
     -   Click the Source button.
-    -   This will open the source from the [ImageJ web site online source](https://imagej.net/source/).
-    -   Note: this method is very convenient, but only works for core [ImageJ 1.x](/software/imagej1) sources (e.g., not [ImageJ2](/software/imagej2) code, not [Fiji](/fiji) code, etc.).
+    -   This will open the source in a browser window.
 3.  **Using GitHub:**
     -   Using the search bar, locate your command, taking note of the Class column's value.
         -   E.g., if we type "make binary" we see that the class is `ij.plugin.Thresholder`.
@@ -440,7 +439,7 @@ Would it make sense to merge the ImageJ2 and Fiji projects?
 
 [Fiji](/fiji) and [ImageJ2](/software/imagej2) are fundamentally the same software, using the same [launcher](Launcher). So from the standpoint of development effort, the ImageJ2 and Fiji projects have indeed merged. ImageJ2 is the core software, and several pieces of infrastructure originally developed for Fiji have now migrated to ImageJ2 (e.g., the [Updater](/plugins/updater), [Launcher](Launcher) and [Script Editor](/scripting/script-editor) components). At heart, Fiji is just a big collection of life sciences plugins (though "Fijabcolsp" doesn't have quite the same ring to it). In other words, Fiji is just an ImageJ update site ("Fijaius")—and as such, you can obtain a working Fiji installation by downloading ImageJ2, running the updater, and enabling the Fiji update site.
 
-All of that said, we do not want to get rid of the two distinct project names, since people are familiar with both. But we are integrating resources when feasible: e.g., the [ImageJ wiki](https://imagej.net/) and the [Fiji wiki](https://fiji.sc/) are really both the same wiki with different skins, to make cross-linking more seamless. But we want to ensure it is clear that ImageJ is not a life-sciences-specific project, whereas Fiji is. Historically, because Fiji has a life sciences focus, there have been some users who refused to switch from vanilla [ImageJ1](/software/imagej1) to Fiji even though Fiji makes users' lives easier in lots of ways. With ImageJ2, we want to avoid such misconceptions.
+All of that said, we do not want to get rid of the two distinct project names, since people are familiar with both. But we are integrating resources when feasible: e.g., the [ImageJ wiki](/) serves all ImageJ content including Fiji-specific content (which is marked with the Fiji logo). But we want to ensure it is clear that ImageJ is not a life-sciences-specific project, whereas Fiji is. Historically, because Fiji has a life sciences focus, there have been some users who refused to switch from vanilla [ImageJ1](/software/imagej1) to Fiji even though Fiji makes users' lives easier in lots of ways. With ImageJ2, we want to avoid such misconceptions.
 
 More effort is still needed to clarify web resources, to explain concisely and clearly where people should go in different circumstances. We also have plans to make bug reporting simpler and easier across the projects.
 

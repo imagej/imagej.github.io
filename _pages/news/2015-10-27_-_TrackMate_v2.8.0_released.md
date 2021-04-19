@@ -37,11 +37,11 @@ The source code is found on [his github page](https://github.com/chicoronny/Ronn
 
 ### Thorsten Wagner Find maxima detector.
 
-Thorsten Wagner is working on a detector that emulates the Find maxima tool of ImageJ. The module is not totally ready, but you can find a working fork of TrackMate [here](https://github.com/thorstenwagner/TrackMate) that ships the functionality.
+Thorsten Wagner is working on a detector that emulates the Find maxima tool of ImageJ. The module is not totally ready, but you can find a working fork of TrackMate [here](https://github.com/thorstenwagner/plugins/trackmate) that ships the functionality.
 
 ### Benoit Lombardo analyzers.
 
-Benoit Lombardo wrote a spot analyzer that compute mean intensities in all the channels of an image, when you have a multi-channel image. You can find it on the [TrackMate extras](https://github.com/tinevez/TrackMate-extras) page.
+Benoit Lombardo wrote a spot analyzer that compute mean intensities in all the channels of an image, when you have a multi-channel image. You can find it on the [TrackMate extras](https://github.com/tinevez/plugins/trackmate-extras) page.
 
 Improvements.
 -------------
@@ -64,7 +64,7 @@ TrackMate initial design always favored speed over memory consumption. This can 
 
 To deal with this TrackMate now ships a **Block LoG detector**. It is identical to the LoG detector, except that it splits the image in smaller XY blocks and processes them independently. If you process each of this block sequentially, you can drastically reduce memory usage.
 
-<figure><img src="/media/TrackMate BlockLogDetector.png" title="TrackMate_BlockLogDetector.png" width="600" alt="TrackMate_BlockLogDetector.png" /><figcaption aria-hidden="true">TrackMate_BlockLogDetector.png</figcaption></figure>
+<figure><img src="/media/plugins/trackmate BlockLogDetector.png" title="TrackMate_BlockLogDetector.png" width="600" alt="TrackMate_BlockLogDetector.png" /><figcaption aria-hidden="true">TrackMate_BlockLogDetector.png</figcaption></figure>
 
 Of course there is a price to pay: Spots that are present exactly on the block borders might be detected twice on two different blocks. This will have a very detrimental effect on the subsequent tracking step. To temper this problem, this detector prunes spots that are found inside other spots.
 

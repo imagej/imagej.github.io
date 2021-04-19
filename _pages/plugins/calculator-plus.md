@@ -5,4 +5,4 @@ description: test description
 artifact: sc.fiji:Calculator\_Plus
 ---
 
-See https://imagej.net/plugins/calculator-plus.html for documentation.
+See /ij/plugins/calculator-plus.html for documentation.

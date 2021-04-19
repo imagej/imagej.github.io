@@ -62,7 +62,7 @@ ystart = 50
 
 
 # Fetch the t1-head stack from URL
-source_imp = IJ.openImage('https://imagej.net/images/t1-head.zip')
+source_imp = IJ.openImage('/ij/images/t1-head.zip')
 source_imp.show()
 
 # Select middle slice (does not matter)

@@ -72,8 +72,8 @@ Preparing your data
 
 In order to register your data, Fijiyama needs properly formatted dataset:
 
--   For two images pairwise registration : **Two 3D stacks/images** of the same object. Use your own data or the provided example datasets here: [case study 1, two-images registration](https://imagej.net/_images/f/fd/Test_dataset_01_vine_crops.zip)
--   For series registration : **N 3D stacks/images** of the same object. Use your own data or the provided example datasets here: [case study 4, times series registration](https://imagej.net/_images/c/c8/Test_dataset_04_time_series.zip).
+-   For two images pairwise registration : **Two 3D stacks/images** of the same object. Use your own data or the provided example datasets here: [case study 1, two-images registration](/media/Test_dataset_01_vine_crops.zip)
+-   For series registration : **N 3D stacks/images** of the same object. Use your own data or the provided example datasets here: [case study 4, times series registration](/media/Test_dataset_04_time_series.zip).
 -   **An empty "Output" directory**, that will be used to store the Fijiyama configuration file, the intermediate results (transformations) and the final results (transformations and resulting 3D images). The configuration file (\*.fjm) keep a full track of your work. When saving the current registration experiment, Fijiyama stores the successive registration steps and the associated computed files. When restarting later from this point, you can review the whole process, and "undo" one or more steps.
 
   
@@ -108,7 +108,7 @@ Tutorial 1 : Two images registration
 
 In order to achieve an efficient registration of two 3D images, we recommend the following procedure:
 
--   **Step 1 : ** Prepare your data or download the example set: [case study 1, two-images registration](https://imagej.net/_images/f/fd/Test_dataset_01_vine_crops.zip)
+-   **Step 1 : ** Prepare your data or download the example set: [case study 1, two-images registration](/media/Test_dataset_01_vine_crops.zip)
 -   **Step 2 : ** Select **'Manual registration**' in the first menu and run it. Superimpose roughly the two volumes manually (centers should be roughly aligned, with angle &lt; 15 degrees). Press on **'Position ok**' (green button) when ready. This first step will help Fijiyama finding the correct orientation.
 -   **Step 3 : ** Select **'Automatic registration**' with default parameters (Block matching). If you want to monitor the registration during the run, select the **'Display automatic registration**' in the "Manual registration viewer" menu. Before starting this action, notice the *estimated time* required to complete the action (calculated from your computer settings).
 -   **Step 3-bis **(optional, depending on the data) : Select **'Automatic registration**' with default parameters (Block matching), and select "Vector field" in the "Transformation to estimate" menu.
@@ -123,7 +123,7 @@ Once comfortable with the "two images registration" module, try a "series regist
 
 {% include youtube url='https://www.youtube.com/embed/DVr3LBH5ayY'%}
 
--   **Step 1 : ** Prepare your data or download the example data set : [case study 4, times series registration](https://imagej.net/_images/c/c8/Test_dataset_04_time_series.zip)
+-   **Step 1 : ** Prepare your data or download the example data set : [case study 4, times series registration](/media/Test_dataset_04_time_series.zip)
 
 Data names should respect a generic form, for example : img\_t{Time}\_mod{ModalityName}.tif , where {Time} represents the successive values for each time point, and {ModalityName} represents the name of each modality. In the example dataset, this is already done, since the image names are : MRI\_D0.tif , MRI\_D1.tif , MRI\_D2.tif , MRI\_D3.tif, which corresponds to a monomodal series with the generic expression MRI\_D{Time}.tif .
 

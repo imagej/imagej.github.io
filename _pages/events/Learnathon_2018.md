@@ -68,7 +68,7 @@ Tuesday
 -   Search for stuff in our ecosystem: [https://search.imagej.net](https://search.imagej.net)
 -   [SciJava and ImageJ Ops Jupyter notebook / slides](https://github.com/fiji/learnathon-2018/blob/master/SciJava%20and%20ImageJ%20Ops.ipynb)
 -   [Slides from last year's Learnathon about SciJava community](http://imagej.github.io/presentations/2017-06-19-dais-learnathon/)
--   [Developing ImageJ in Eclipse](https://imagej.net/Developing_ImageJ_in_Eclipse)
+-   [Developing ImageJ in Eclipse](/develop/eclipse)
 
 ### ImageJ2 Ops
 

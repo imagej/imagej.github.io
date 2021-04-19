@@ -18,7 +18,7 @@ layout: home
             <li><a href="/search" class="button icon solid fa-search">Search</a></li>
         </ul>
         <ul class = "actions special">
-            <li><a href="https://imagej.net/downloads" class="button icon solid fa-download">Download</a></li>
+            <li><a href="/downloads" class="button icon solid fa-download">Download</a></li>
             </ul>
         </div>
     </section>
@@ -48,7 +48,7 @@ layout: home
     <div class=" fa-5x text-danger"><span class="fas fa-heart"></span></div>
     <h2>Free &amp; Open Source</h2>
     <p>
-    ImageJ is an <a href="https://imagej.net/Open_Source">open source</a> project hosted on <a href="https://github.com/imagej">GitHub</a>, developed and written by the community.
+    ImageJ is an <a href="/Open_Source">open source</a> project hosted on <a href="https://github.com/imagej">GitHub</a>, developed and written by the community.
     </p>
     </div>
   </div>

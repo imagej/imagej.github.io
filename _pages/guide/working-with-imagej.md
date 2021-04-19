@@ -269,7 +269,7 @@ ImageJ appends a '(V)' to the window title of virtual stacks and hyperstacks (*s
 
 <div class="See">
 
-<span class="small">[LOCI Bio-Formats](http://www.loci.wisc.edu/ome/formats.html) and [RegisterVirtualStackSlices](https://fiji.sc/wiki/index.php/Register_Virtual_Stack_Slices) plugins, [Process Virtual Stack](http://imagej.nih.gov/ij/macros/Process_Virtual_Stack.txt) and [VirtualStackFromList](http://imagej.nih.gov/ij/macros/VirtualStackFromList.txt) macros </span>
+<span class="small">[LOCI Bio-Formats](http://www.loci.wisc.edu/ome/formats.html) and [RegisterVirtualStackSlices](https://fiji.sc/wiki/index.php/plugins/register-virtual-stack-slices) plugins, [Process Virtual Stack](http://imagej.nih.gov/ij/macros/Process_Virtual_Stack.txt) and [VirtualStackFromList](http://imagej.nih.gov/ij/macros/VirtualStackFromList.txt) macros </span>
 
 </div>
 <div class="float">

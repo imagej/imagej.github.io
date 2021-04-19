@@ -48,7 +48,7 @@ Using ImageJ
             <developer>
                 <id>[MY-GITHUB-ID]</id>
                 <name>[MY-FULL-NAME]</name>
-                <url>https://imagej.net/User:[MY-IMAGEJ-WIKI-ACCOUNT]</url>
+                <url>https://imagej.net/users/[MY-GITHUB-ID]</url>
                 <roles>
                     <!-- see https://imagej.net/Team -->
                     <role>founder</role>

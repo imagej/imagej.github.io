@@ -72,7 +72,7 @@ Using Dialog (the 2nd option), a single input window will show up with all param
     Dialog.addCheckbox("Ramp", true);
 
     // One can add a Help button that opens a webpage
-    Dialog.addHelp("https://imagej.net/macros/DialogDemo.txt");
+    Dialog.addHelp("https://imagej.net/ij/macros/DialogDemo.txt");
 
     // Finally show the GUI, once all parameters have been added
     Dialog.show();
@@ -91,7 +91,7 @@ Using Dialog (the 2nd option), a single input window will show up with all param
     print("Choice:", inChoice);
     print("Do something (1=True, 0=False):", inBoolean);
 
-See the section "/scripting/generic-dialog" of the [Macro functions reference](https://imagej.net/developer/macro/functions.html) for more details.
+See the section "/scripting/generic-dialog" of the [Macro functions reference](/ij/developer/macro/functions.html) for more details.
 
 Image and file inputs
 ---------------------

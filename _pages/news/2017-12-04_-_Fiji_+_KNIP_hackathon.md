@@ -94,7 +94,7 @@ Hackathon Progress
     -   played around with [Constantin Pape's C++/Python N5](https://github.com/constantinpape/z5) reader as available format on the [ilastik server](https://github.com/ilastik/ilastik/tree/apistar-add-n5)
     -   noticed that the only thing needed to serve a N5 dataset on the web is to serve the directory contents. Philipp wrote a [N5 REST reader](https://github.com/hanslovsky/n5-rest) for BigCAT to talk to the ilastik server that way
 -   worked on some caching problems in the *ilastik server*
--   discussed possible interfaces between Matthias Arzt's LabKit and ilastik-backend for interactive segmentation in ImageJ/BigDataViewer with an ilastik classifier backend
+-   discussed possible interfaces between Matthias Arzt's LabKit and ilastik-backend for interactive segmentation in ImageJ/plugins/bdv with an ilastik classifier backend
 
 ### SciView - (Kyle Harrington, Ulrik Günther, Curtis Rueden)
 

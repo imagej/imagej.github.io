@@ -83,7 +83,7 @@ Step-by-step manuals
 
 **<u>How to use the plugin for denoising/filtering small data:</u>**
 
-([SIM\_Lamina\_32bit\_488\_Honeycomb\_StrongBckg\_Scale-0\_25.tif - 7 MB](https://imagej.net/_images/c/ce/SIM_Lamina_32bit_488_Honeycomb_StrongBckg_Scale-0_25.zip))
+([SIM\_Lamina\_32bit\_488\_Honeycomb\_StrongBckg\_Scale-0\_25.tif - 7 MB](/media/SIM_Lamina_32bit_488_Honeycomb_StrongBckg_Scale-0_25.zip))
 
 1\. Open an image/stack.
 
@@ -107,7 +107,7 @@ Step-by-step manuals
 
 **<u>How to use the plugin for denoising/filtering big data:</u>**
 
-([SIM\_Lamina\_32bit\_488\_Honeycomb\_StrongBckg.tif - 73 MB](https://imagej.net/_images/e/e8/SIM_Lamina_32bit_488_Honeycomb_StrongBckg.zip))
+([SIM\_Lamina\_32bit\_488\_Honeycomb\_StrongBckg.tif - 73 MB](/media/SIM_Lamina_32bit_488_Honeycomb_StrongBckg.zip))
 
 1\. Open an image/stack.
 
@@ -151,6 +151,6 @@ References
 
 2\. https://dsp.stackexchange.com/questions/15464/wavelet-thresholding
 
-3\. Čapek, M., Efenberková, M., Novotný, I., Horváth, O. [The wavelet-based denoising of images in Fiji/ImageJ, with example applications in structured illumination microscopy.](https://imagej.net/_images/5/5f/2019_AinDM_Capek_et_al_Wavelet_Denoising_Fiji.pdf) In: Advances in Disease Models, Edited by Petr Bartůněk, Institute of Molecular Genetics AS CR, 2019, 1th publication, ISBN 978-80-88011-06-4 Publisher: OPTIO CZ.
+3\. Čapek, M., Efenberková, M., Novotný, I., Horváth, O. [The wavelet-based denoising of images in Fiji/ImageJ, with example applications in structured illumination microscopy.](/media/2019_AinDM_Capek_et_al_Wavelet_Denoising_Fiji.pdf) In: Advances in Disease Models, Edited by Petr Bartůněk, Institute of Molecular Genetics AS CR, 2019, 1th publication, ISBN 978-80-88011-06-4 Publisher: OPTIO CZ.
 
  

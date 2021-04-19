@@ -44,7 +44,7 @@ The Graphical User Interface
 
 {% include thumbnail src='/media/Trainable-Weka-Segmentation-GUI.png' title='Example of the first look of the plugin window when using it on a TEM image'%} [Trainable Weka Segmentation](/plugins/tws) runs on any 2D or 3D image (grayscale or color). To use 2D features, you need to select the menu command {% include bc path='Plugins | Segmentation | Trainable Weka Segmentation'%}. For 3D features, call the plugin under {% include bc path='Plugins | Segmentation | Trainable Weka Segmentation 3D'%}. Both commands will use the same GUI but offer different feature options in their settings.
 
-By default, the plugin starts with two classes, i.e. it will produce **binary pixel classification**. The user can add traces to both classes using the whole set of [tools for ROI](https://imagej.net/docs/guide/userguide-19b.html#toc-Section-19) (region of interest) drawing available in Fiji. That includes rectangular, round rectangular, oval, elliptical, brush polygon and freehand selections. By default, the freehand selection tool (of 1 pixel width) is automatically selected.
+By default, the plugin starts with two classes, i.e. it will produce **binary pixel classification**. The user can add traces to both classes using the whole set of [tools for ROI](/ij/docs/guide/userguide-19b.html#toc-Section-19) (region of interest) drawing available in Fiji. That includes rectangular, round rectangular, oval, elliptical, brush polygon and freehand selections. By default, the freehand selection tool (of 1 pixel width) is automatically selected.
 
 The user can pan, zoom in and out, or scroll between slices (if the input image is a stack) in the main canvas as if it were any other Fiji window. On the left side of the canvas there are two panels of buttons, one for the training and one for the general options. On the right side of the image canvas we have a panel with the list of traces for each class and a button to add the current ROI to that specific class. All buttons contain a short explanation of their functionality that is displayed when the cursor lingers over the buttons.
 
@@ -104,7 +104,7 @@ Here we can load the data (in [Weka](http://www.cs.waikato.ac.nz/ml/weka/) forma
 
 #### Save data
 
-With this button we can save the current trace information into a data file that we can handle later with the plugin or the Weka Explorer itself. The plugin will save the feature vectors derived from the pixels belonging to each trace into an [ARFF](http://weka.wikispaces.com/ARFF+%28stable+version%29) file at a location chosen by the user. Notice the traces (regions of interests selected by the user) are not saved but only their corresponding feature vectors. To save the ROIs, you can simply use the \[https://imagej.net/ij/docs/guide/146-30.html#sub:ROI-Manager... ROI Manager\].
+With this button we can save the current trace information into a data file that we can handle later with the plugin or the Weka Explorer itself. The plugin will save the feature vectors derived from the pixels belonging to each trace into an [ARFF](http://weka.wikispaces.com/ARFF+%28stable+version%29) file at a location chosen by the user. Notice the traces (regions of interests selected by the user) are not saved but only their corresponding feature vectors. To save the ROIs, you can simply use the \[/ij/ij/docs/guide/146-30.html#sub:ROI-Manager... ROI Manager\].
 
 #### Create new class
 
@@ -225,7 +225,7 @@ For a complete step-by-step description on how to compare classifiers for image 
 
 ### Macro language compatibility
 
-[Trainable Weka Segmentation](/plugins/tws) is completely compatible with the popular [ImageJ macro language](https://imagej.net/developer/macro/macros.html). Each of the buttons in the GUI are macro-recordable and their commands can be reproduced later from a simple macro file. {% include thumbnail src='/media/AWS-macro-recording.png' title='Example of macro recording of the Trainable Weka Segmentation tools.'%}
+[Trainable Weka Segmentation](/plugins/tws) is completely compatible with the popular [ImageJ macro language](/ij/developer/macro/macros.html). Each of the buttons in the GUI are macro-recordable and their commands can be reproduced later from a simple macro file. {% include thumbnail src='/media/AWS-macro-recording.png' title='Example of macro recording of the Trainable Weka Segmentation tools.'%}
 
 The complete list of commands is as follows:
 

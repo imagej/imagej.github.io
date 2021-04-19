@@ -188,11 +188,11 @@ The project would consist of
 Other Resources
 ===============
 
-`* `[`SoC2009Application`](/events/SoC_2009_Application)
+* [SoC2009Application](/events/SoC_2009_Application)
 
 Other links
 ===========
 
-`* `[`ImageJ's`` ``homepage`](https://imagej.net)  
-`* `[`Fiji's`` ``developer`` ``mailing`` ``list`](http://groups.google.com/group/fiji-devel)  
-`* `[`#fiji-devel`` ``channel`](/Chat#IRC)` on irc.freenode.net`
+* [ImageJ's homepage](/)  
+* [Fiji's developer mailing list](http://groups.google.com/group/fiji-devel)  
+* [#fiji-devel channel](/about/chat#irc) on irc.freenode.net

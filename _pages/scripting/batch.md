@@ -27,7 +27,7 @@ General workflow
 Option 1 - {% include bc path='Process | Batch | Macro...'%}
 ==================================================================
 
-The fastest way to start batch conversion is via the [{% include bc path='Process | Batch | Macro...'%}](https://imagej.net/docs/guide/146-29.html#toc-Subsubsection-29.12.3) command. This will open a dialog (below) that will allow you to specify an input and output directory. You can select an output file format, and then use the `Add Macro Code` drop-down to generate a macro with the desired functionality.
+The fastest way to start batch conversion is via the [{% include bc path='Process | Batch | Macro...'%}](/ij/docs/guide/146-29.html#toc-Subsubsection-29.12.3) command. This will open a dialog (below) that will allow you to specify an input and output directory. You can select an output file format, and then use the `Add Macro Code` drop-down to generate a macro with the desired functionality.
 
 ![](/media/BatchProcess.png "BatchProcess.png")
 
@@ -48,7 +48,7 @@ Option 3 - Batch Processing with Script Parameters
 See also
 ========
 
--   [{% include bc path='Process | Batch'%}](https://imagej.net/docs/guide/146-29.html#toc-Subsection-29.12) submenu.
+-   [{% include bc path='Process | Batch'%}](/ij/docs/guide/146-29.html#toc-Subsection-29.12) submenu.
 -   [Scripting](/scripting) documentation and tutorials.
 -   [How to apply a common operation to a complete directory](How_to_apply_a_common_operation_to_a_complete_directory)
 -   [Assign your own keyboard shortcuts](Keyboard_shortcuts#Creating_your_own_keyboard_shortcuts)

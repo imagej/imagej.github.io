@@ -5,7 +5,7 @@ categories: News,ImageJ2
 description: test description
 ---
 
-As [mentioned on the mailing list](https://imagej.net/pipermail/imagej-devel/2011-November/000544.html), we have updated our web resources to be more unified under the **imagej.net** domain name:
+As [mentioned on the mailing list](/ij/pipermail/imagej-devel/2011-November/000544.html), we have updated our web resources to be more unified under the **imagej.net** domain name:
 
 -   **imagejdev.org** is now **developer.imagej.net**
 -   **dev.imagejdev.org** is now **code.imagej.net**

@@ -40,7 +40,7 @@ It will ask you for the file name of the plugin, and install the given file.
 For developers
 --------------
 
-{% include warning-box content='This section is out of date, potentially misleading or invalid. Be careful with any instructions here. When in doubt,  [ask for help from the community](https://imagej.net/Help).' %}
+{% include warning-box content='This section is out of date, potentially misleading or invalid. Be careful with any instructions here. When in doubt,  [ask for help from the community](/help).' %}
 
 Please try to avoid closed-source plugins.
 

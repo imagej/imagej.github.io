@@ -179,7 +179,7 @@ Hackathon progress
 
 ### Tobias Pietzsch
 
--   With {% include person content='JeanYvesTinevez' %}, worked on Mastodon/TrackMate3, in particular the unified handling of adapter views onto the main tracking model.
+-   With {% include person content='JeanYvesTinevez' %}, worked on Mastodon/plugins/trackmate3, in particular the unified handling of adapter views onto the main tracking model.
 -   With {% include person content='Saalfeld' %}, worked towards integration of caching mechanisms into unified scijava/imglib2 cache; generalization of BigDataViewer cache.
 -   Added support in [ui-behaviour](https://github.com/scijava/ui-behaviour) for triggering multiple behaviours in parallel.
 -   Documented [ui-behaviour](https://github.com/scijava/ui-behaviour) configuration [syntax](https://github.com/scijava/ui-behaviour/wiki/InputTrigger-syntax)
@@ -195,7 +195,7 @@ Hackathon progress
 
 ### JeanYvesTinevez
 
--   With {% include person content='Pietzsch' %}, worked on Mastodon/TrackMate3, in particular view colouring by numerical features calculated on a model.
+-   With {% include person content='Pietzsch' %}, worked on Mastodon/plugins/trackmate3, in particular view colouring by numerical features calculated on a model.
 -   With {% include person content='Pietzsch' %},extended the [MaMuT](/plugins/mamut) so that it can be used for 2D over time properly.
 
 ### Christian Dietz

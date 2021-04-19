@@ -41,9 +41,9 @@ How to work with DICOM headers from a macro?
 
 See these [macro](/scripting/macro) functions:
 
--   [getImageInfo()](https://imagej.net/developer/macro/functions.html#getImageInfo)
--   [getInfo(DICOM\_TAG)](https://imagej.net/developer/macro/functions.html#getInfo)
--   [getMetadata("Info")](https://imagej.net/developer/macro/functions.html#getMetadata)
+-   [getImageInfo()](/ij/developer/macro/functions.html#getImageInfo)
+-   [getInfo(DICOM\_TAG)](/ij/developer/macro/functions.html#getInfo)
+-   [getMetadata("Info")](/ij/developer/macro/functions.html#getMetadata)
 
 An example using `getInfo()`:
 

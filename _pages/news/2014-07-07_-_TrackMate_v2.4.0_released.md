@@ -12,7 +12,7 @@ Improvements
 
 -   TrackScheme now has an outline panel, useful to navigate in large models.
 
-<figure><img src="/media/TrackMate TrackSchemeOutline.png" title="TrackMate_TrackSchemeOutline.png" width="600" alt="TrackMate_TrackSchemeOutline.png" /><figcaption aria-hidden="true">TrackMate_TrackSchemeOutline.png</figcaption></figure>
+<figure><img src="/media/plugins/trackmate TrackSchemeOutline.png" title="TrackMate_TrackSchemeOutline.png" width="600" alt="TrackMate_TrackSchemeOutline.png" /><figcaption aria-hidden="true">TrackMate_TrackSchemeOutline.png</figcaption></figure>
 
 -   TrackScheme has a better layout for tracks that have merge and split events.
 
@@ -24,7 +24,7 @@ Improvements
 
 -   TrackMate has new logos and icons, made by Agnieszka Kawska @ [IlluScientia](http://www.illuscientia.com/).
 
-<figure><img src="/media/TrackMate-Logo85x50-color-300p.png" title="TrackMate-Logo85x50-color-300p.png" width="600" alt="TrackMate-Logo85x50-color-300p.png" /><figcaption aria-hidden="true">TrackMate-Logo85x50-color-300p.png</figcaption></figure>
+<figure><img src="/media/plugins/trackmate-Logo85x50-color-300p.png" title="TrackMate-Logo85x50-color-300p.png" width="600" alt="TrackMate-Logo85x50-color-300p.png" /><figcaption aria-hidden="true">TrackMate-Logo85x50-color-300p.png</figcaption></figure>
 
 Bugfixes
 --------

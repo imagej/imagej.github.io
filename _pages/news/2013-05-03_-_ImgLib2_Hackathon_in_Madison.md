@@ -99,6 +99,6 @@ These changes don't immediately allow for opening large single planes in IJ2—j
 Tobias Pietzsch
 ---------------
 
-See the [thread on imagej-devel](https://imagej.net/pipermail/imagej-devel/2013-May/001488.html).
+See the [thread on imagej-devel](/ij/pipermail/imagej-devel/2013-May/001488.html).
 
   

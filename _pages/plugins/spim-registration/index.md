@@ -62,7 +62,7 @@ The pipeline is relatively linear as described above, we highlight the steps whe
 How do I view fused, saved output image(s)
 ------------------------------------------
 
-The fused images will be saved in the *output* directory of the dataset as a collection of two-dimensional planes. The created output images can be viewed for example with Plugins-&gt;Image5D-&gt;[Virtual Image 5D Opener](https://imagej.net/plugins/image5d.html) or via the Plugins-&gt;LOCI-&gt;[Bio-Formats Importer](http://www.loci.wisc.edu/software/bio-formats) (check the option *Group files with similar names*).
+The fused images will be saved in the *output* directory of the dataset as a collection of two-dimensional planes. The created output images can be viewed for example with Plugins-&gt;Image5D-&gt;[Virtual Image 5D Opener](/ij/plugins/image5d.html) or via the Plugins-&gt;LOCI-&gt;[Bio-Formats Importer](http://www.loci.wisc.edu/software/bio-formats) (check the option *Group files with similar names*).
 
 Downloading example dataset
 ---------------------------

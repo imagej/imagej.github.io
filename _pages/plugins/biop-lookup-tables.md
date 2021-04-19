@@ -63,7 +63,7 @@ Macro Language
 Install
 -------
 
-You can either use our PTBIOP update site or [download biop-luts.zip](https://imagej.net/_images/b/b0/Biop-luts.zip) and extract to the \\luts folder.
+You can either use our PTBIOP update site or [download biop-luts.zip](/media/Biop-luts.zip) and extract to the \\luts folder.
 
 Notes
 -----

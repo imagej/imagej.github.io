@@ -30,19 +30,19 @@ However, to work with a submodule you must clone that repository. See the [Submo
 The usual sequence of commands when working inside a submodule:
 
     ~/fiji$ cd TrakEM2
-    ~/fiji/TrakEM2$ git status
+    ~/fiji/plugins/trakem2$ git status
 
 Say you observe some unstaged changes. Just add and commit them:
 
-    ~/fiji/TrakEM2$ git add path/to/some_file.java
-    ~/fiji/TrakEM2$ git commit
+    ~/fiji/plugins/trakem2$ git add path/to/some_file.java
+    ~/fiji/plugins/trakem2$ git commit
 
 You can work as much as you like inside the submodule, and if you have something you want to commit to Fiji, the superproject, first make sure you pushed the changes of the submodule!
 
 Then move up and add the current revision of the submodule inside fiji.
 
-    ~/fiji/TrakEM2$ git push
-    ~/fiji/TrakEM2$ cd ..
+    ~/fiji/plugins/trakem2$ git push
+    ~/fiji/plugins/trakem2$ cd ..
     ~/fiji$ git add TrakEM2
     ~/fiji$ git commit
 
@@ -53,8 +53,8 @@ After the above, fiji has been updated to track the latest TrakEM2 commit.
 When happy with the arrangement, push the changes to the shared repository for others to see them. Remember to push both separately: the submodule and fiji's repository itself! If you push <b>only</b> fiji, then whoever pulls fiji will not see the new HEAD of the submodule branch, which will result in an error.
 
     ~/fiji$ cd TrakEM2/
-    ~/fiji/TrakEM2$ git push
-    ~/fiji/TrakEM2$ cd ..
+    ~/fiji/plugins/trakem2$ git push
+    ~/fiji/plugins/trakem2$ cd ..
     ~/fiji$ git push
 
 Resolving Submodule Conflicts

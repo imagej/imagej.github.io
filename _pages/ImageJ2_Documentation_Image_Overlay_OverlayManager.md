@@ -5,7 +5,7 @@ categories: software
 description: test description
 ---
 
-ImageJ2's Overlay Manager is fairly similar to the ImageJ 1.x ROI Manager. See the [ImageJ 1.x documentation of its ROI Manager](https://imagej.net/docs/menus/analyze.html#manager).
+ImageJ2's Overlay Manager is fairly similar to the ImageJ 1.x ROI Manager. See the [ImageJ 1.x documentation of its ROI Manager](/ij/docs/menus/analyze.html#manager).
 
 However there are some major differences between them. For instance:
 

@@ -53,7 +53,7 @@ Calculates two Gaussian blur images from the original image and subtracts one fr
 
 ### Membrane projections
 
-The initial kernel for this operation is hardcoded as a 19x19 zero matrix with the middle column entries set to 1. Multiple kernels are created by rotating the original kernel by 15 degrees up to a total rotation of 180 degrees, giving 12 kernels. Each kernel is convolved with the image and then the set of 12 images are [Z-projected](https://imagej.net/docs/menus/image.html#stacks) into a single image via 6 methods:
+The initial kernel for this operation is hardcoded as a 19x19 zero matrix with the middle column entries set to 1. Multiple kernels are created by rotating the original kernel by 15 degrees up to a total rotation of 180 degrees, giving 12 kernels. Each kernel is convolved with the image and then the set of 12 images are [Z-projected](/ij/docs/menus/image.html#stacks) into a single image via 6 methods:
 
 -   sum of the pixels in each image
 -   mean of the pixels in each image

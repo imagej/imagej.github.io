@@ -12,7 +12,7 @@ description: test description
 The File / Import submenu
 -------------------------
 
-Most of the commands listed, particularly Fiji extensions, are also available (via ImageJ's [HandleExtraFileTypes](https://imagej.net/plugins/file-handler.html) feature) simply by using the File / Open... menu item.
+Most of the commands listed, particularly Fiji extensions, are also available (via ImageJ's [HandleExtraFileTypes](/ij/plugins/file-handler.html) feature) simply by using the File / Open... menu item.
 
 Built-in formats
 ----------------

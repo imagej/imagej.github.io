@@ -10,7 +10,7 @@ artifact: sc.fiji:Volume\_Viewer
 
 Non-hardware accelerated volume rendering in different modalities.
 
-Documentation: https://imagej.net/plugins/volume-viewer.html
+Documentation: /ij/plugins/volume-viewer.html
 
 See also
 --------

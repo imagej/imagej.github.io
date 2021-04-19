@@ -7,8 +7,8 @@ description: test description
 
 -   [ImageJ's Google+ page](https://plus.google.com/u/0/112060674582400644206/)
 -   [Fiji's Google+ page](https://plus.google.com/u/0/111207545597136714163/)
--   [ImageJ 1.x documentation](https://imagej.net/index.html)
--   [ImageJ User Manual](https://imagej.net/docs/user-guide.pdf)
+-   [ImageJ 1.x documentation](/ij/index.html)
+-   [ImageJ User Manual](/ij/docs/user-guide.pdf)
 -   [Fluorescence image analysis introduction](http://blogs.qub.ac.uk/ccbg/fluorescence-image-analysis-intro/)
 -   [ImageJ Documentation Wiki](http://imagejdocu.tudor.lu/doku.php)
 -   [About the relationship between ImageJ2 and Fiji](http://imagej-dev.org/2010/04/07/recent-fiji-imagej2-presentations)
@@ -22,7 +22,7 @@ Links to the contributors' personal pages can be found [here](/about/contributor
 More ImageJ plugins
 -------------------
 
--   Plugins on the [ImageJ website](https://imagej.net/plugins/index.html), specifically [links to external websites](https://imagej.net/plugins/index.html#more)
+-   Plugins on the [ImageJ website](/ij/plugins/index.html), specifically [links to external websites](/ij/plugins/index.html#more)
 -   Plugins on the [ImageJ Documentation Wiki](http://imagejdocu.tudor.lu/doku.php?id=plugin:start)
 -   The Biomedical Imaging Group in Lausanne has [many interesting plugins](http://bigwww.epfl.ch/algorithms.html).
 -   Christian Henden has some interesting plugins (mainly in the Public Domain), including 3D threshold methods: http://www.pvv.org/~perchrh/imagej/
@@ -95,7 +95,7 @@ Java
 Miscellaneous
 -------------
 
--   An [explanation](https://imagej.net/docs/install/osx.html#icon) where ImageJ's icon's [microscope](http://www.arsmachina.com/s-hart1209.htm) comes from.
+-   An [explanation](/ij/docs/install/osx.html#icon) where ImageJ's icon's [microscope](http://www.arsmachina.com/s-hart1209.htm) comes from.
 
 Imaging Networks and Facilities
 -------------------------------

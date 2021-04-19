@@ -31,7 +31,7 @@ To open new images, type {% include key content='Ctrl' %}+{% include key content
 Creating your own keyboard shortcuts
 ------------------------------------
 
-You can also [assign your own keyboard shortcuts](https://imagej.net/docs/guide/146-31.html#toc-Subsection-31.2)!
+You can also [assign your own keyboard shortcuts](/ij/docs/guide/146-31.html#toc-Subsection-31.2)!
 
 Assign a shortcut to a macro
 ----------------------------

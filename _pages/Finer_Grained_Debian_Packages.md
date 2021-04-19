@@ -61,7 +61,7 @@ git clone https://github.com/fiji/fiji
 git submodule update --init modules/AutoComplete \
                             modules/ImageJA \
                             modules/RSyntaxTextArea \
-                            modules/TrakEM2 \
+                            modules/plugins/trakem2 \
                             modules/bio-formats \
                             modules/commons-math \
                             modules/ij-plugins \

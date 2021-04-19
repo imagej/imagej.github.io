@@ -4,15 +4,15 @@ title: DokuWiki Migration
 description: test description
 ---
 
-The ImageJ Documentation Wiki will no longer be available at location https://imagejdocu.tudor.lu>, as the CRP Henri Tudor has merged to become the Luxembourg Institute of Science and Technology five years ago and the old domain will be discontinued. We want to take this as an opportunity to merge the resources on <https://imagejdocu.tudor.lu> with those here at <https://imagej.net.
+The ImageJ Documentation Wiki will no longer be available at location &lt;https://imagejdocu.tudor.lu&gt;, as the CRP Henri Tudor has merged to become the Luxembourg Institute of Science and Technology five years ago and the old domain will be discontinued. We want to take this as an opportunity to merge the resources on &lt;https://imagejdocu.tudor.lu&gt; with those here at &lt;https://imagej.net&gt;.
 
-This guide covers the process of migrating a page from the ImageJ Documentation Wiki ([DocuWiki](https://www.dokuwiki.org/dokuwiki)) to this ImageJ wiki ([MediaWiki](https://www.mediawiki.org/wiki/MediaWiki)).
+This guide covers the process of migrating a page from the ImageJ Documentation Wiki ([DocuWiki](https://www.dokuwiki.org/dokuwiki)) to this ImageJ wiki ([GitHub Pages with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll)).
 
 1.  <b>Create an ImageJ wiki account</b> if you do not already have one, by visiting the [Special:CreateAccount](Special_CreateAccount) page.
 2.  <b>Identify the ImageJ Documentation Wiki page you are migrating.</b> For this walkthrough, we'll choose the [Colocalization Finder](https://imagejdocu.list.lu/plugin/analysis/colocalizationfinder/start) page.
 3.  <b>Grab the path to the page</b> by selecting it in the address bar and copying it to the clipboard. Here, this is `plugin/analysis/colocalizationfinder/start`.
 4.  <b>Grab the converted MediaWiki markup.</b> We have done a preliminary conversion of the wiki markup from DocuWiki format to MediaWiki format, and placed it online for you. Find your converted page at `https://raw.githubusercontent.com/imagej/imagejdocu/master/[your-page].wiki`, replacing `[your-page]` with the snippet from the previous step. For Colocalization Finder, the URL will be [`https://raw.githubusercontent.com/imagej/imagejdocu/master/plugin/analysis/colocalizationfinder/start.wiki`](https://raw.githubusercontent.com/imagej/imagejdocu/master/plugin/analysis/colocalizationfinder/start.wiki). Copy the entire markup code to your clipboard.
-5.  <b>Navigate to the destination ImageJ wiki page.</b> On the ImageJ wiki, page names are capitalized with underscores. (Underscores become spaces in the page title.) For our migrated Colocalization Finder page, we'll use [`https://imagej.net/Colocalization_Finder`](https://imagej.net/Colocalization_Finder). You should see a message like this:  
+5.  <b>Navigate to the destination ImageJ wiki page.</b> On the ImageJ wiki, page names are capitalized with underscores. (Underscores become spaces in the page title.) For our migrated Colocalization Finder page, we'll use [`https://imagej.net/plugins/colocalization-finder`](/plugins/colocalization-finder). You should see a message like this:  
     <a href=""><img src="/media/Creating-a-new-page.png" width="500px"/></a>  
     Click "edit this page" to continue.
 6.  <b>Paste the converted wiki markup into the empty text area:</b>  

@@ -5,7 +5,7 @@ categories: Image annotation,Plugins
 description: test description
 ---
 
-{% include info-box software='ImageJ1' name='Colorizer\_Overlay' author='Fred Damen' filename='Colorizer\_Overlay.jar' source=' [Colorizer\_Overlay.zip](https://imagej.net/_images/4/46/Colorizer_Overlay.zip)' released='1 April 2020' status='stable' category='[Image annotation](Category_Image_annotation)' website='' %}
+{% include info-box software='ImageJ1' name='Colorizer\_Overlay' author='Fred Damen' filename='Colorizer\_Overlay.jar' source=' [Colorizer\_Overlay.zip](/media/Colorizer_Overlay.zip)' released='1 April 2020' status='stable' category='[Image annotation](Category_Image_annotation)' website='' %}
 
 The Colorizer\_Overlay plugin provides the ability to apply a LUT, colorbar, and annotation to a map, i.e., quantified image, and overlay this upon a background image. The impetus for this plugin was my inability to remember how to perform all the necessary steps and the laborious task of doing this again and again whenever my whim for the best representation of my data kicked in, usually right before an abstract deadline.
 
@@ -67,7 +67,7 @@ How to not do string overlays; there are more direct ways I discovered after bec
 Install
 -------
 
-Unzip [Colorizer\_Overlay.zip](https://imagej.net/_images/4/46/Colorizer_Overlay.zip) into ImageJ1 plugins (File&gt;Show Folder&gt;Plugins) or plugins/jars directories. Source code in jar file.  
+Unzip [Colorizer\_Overlay.zip](/media/Colorizer_Overlay.zip) into ImageJ1 plugins (File&gt;Show Folder&gt;Plugins) or plugins/jars directories. Source code in jar file.  
 **Plugins&gt;Annotation&gt;Colarizer\_Overlay...**
 
 Licence

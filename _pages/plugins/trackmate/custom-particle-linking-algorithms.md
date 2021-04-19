@@ -66,7 +66,7 @@ Particle-linking algorithms in TrackMate.
 
 We used the term *tracker* since the beginning of this series, but the correct term for what we will build now is particle linking algorithm. Our particles are the visible spots resulting from the detection step, and the links will be the edges of the graph. A tracker could be defined as the full application that combines a particle detection algorithm with a particle linking algorithm.
 
-In TrackMate, particle linking algorithms implements the [SpotTracker](https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/tracking/SpotTracker.java) interface. It is very simple. As explained in the docs, a SpotTracker algorithm is simply expected to create a new [SimpleWeightedGraph](http://jgrapht.org/javadoc/index.html?org/jgrapht/graph/SimpleWeightedGraph.html) from the SpotCollection given (using of course only the *visible* spots). We use a simple weighted graph:
+In TrackMate, particle linking algorithms implements the [SpotTracker](https://github.com/fiji/plugins/trackmate/blob/master/src/main/java/fiji/plugin/trackmate/tracking/SpotTracker.java) interface. It is very simple. As explained in the docs, a SpotTracker algorithm is simply expected to create a new [SimpleWeightedGraph](http://jgrapht.org/javadoc/index.html?org/jgrapht/graph/SimpleWeightedGraph.html) from the SpotCollection given (using of course only the *visible* spots). We use a simple weighted graph:
 
 -   Though the weights themselves are not used for subsequent steps, it is suggested to use edge weight to report the cost of a link.
 -   The graph is undirected, however, some link direction can be retrieved later on using the Spot.FRAME feature. The SpotTracker implementation does not have to deal with this; only undirected edges are created.
@@ -79,7 +79,7 @@ There is also an extra method to pass a instance of [Logger](https://fiji.sc/jav
 A dummy example: drunken cell divisions.
 ----------------------------------------
 
-There is already an example online that does [random link creation](https://github.com/fiji/TrackMate-examples/blob/master/src/main/java/plugin/trackmate/examples/tracker/RandomLinkingTracker.java). Let's do something else, and build a tracker that links a spot to any two spots in the next frame (if they exist) as if it would go cell division as fast as it can.
+There is already an example online that does [random link creation](https://github.com/fiji/plugins/trackmate-examples/blob/master/src/main/java/plugin/trackmate/examples/tracker/RandomLinkingTracker.java). Let's do something else, and build a tracker that links a spot to any two spots in the next frame (if they exist) as if it would go cell division as fast as it can.
 
 Creating the class yields the following skeleton:
 
@@ -238,7 +238,7 @@ So it's not really complicated. Which is good, because the complicated part, com
 The factory class.
 ------------------
 
-Now that we have the clever part of the code (the one that does the actual linking), we need to deal with TrackMate integration. Like for the detection modules, this is done <i>via</i> a factory class, named [SpotTrackerFactory](https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/tracking/SpotTrackerFactory.java). It is completely equivalent to the SpotDetectorFactory we saw in the [previous tutorial](/plugins/trackmate/custom-detection-algorithms), so I won't detail the common methods again.
+Now that we have the clever part of the code (the one that does the actual linking), we need to deal with TrackMate integration. Like for the detection modules, this is done <i>via</i> a factory class, named [SpotTrackerFactory](https://github.com/fiji/plugins/trackmate/blob/master/src/main/java/fiji/plugin/trackmate/tracking/SpotTrackerFactory.java). It is completely equivalent to the SpotDetectorFactory we saw in the [previous tutorial](/plugins/trackmate/custom-detection-algorithms), so I won't detail the common methods again.
 
 The methods specific to the tracker are:
 
@@ -269,7 +269,7 @@ TrackMate recognize there were two tracks. You did not have to worry about that.
 Wrapping up
 -----------
 
-The full code, as well as the code for another tracker example can be found on [github](https://github.com/fiji/TrackMate-examples/tree/master/src/main/java/plugin/trackmate/examples/tracker). And this concludes flatly our series of tutorials on how to extend TrackMate. Go forth now, and bend it to your needs; it is *your* tool.
+The full code, as well as the code for another tracker example can be found on [github](https://github.com/fiji/plugins/trackmate-examples/tree/master/src/main/java/plugin/trackmate/examples/tracker). And this concludes flatly our series of tutorials on how to extend TrackMate. Go forth now, and bend it to your needs; it is *your* tool.
 
 {% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez)) 09:26, 5 September 2014 (CDT)
 

@@ -14,7 +14,7 @@ ImageJ 1.x support
 
 [ImageJ 1.x](/software/imagej1) (and therefore [ImageJ2](/software/imagej2) in its default legacy mode) has built-in support for TIFF files via the {% include bc path='File | Open...'%} command.
 
-You can also import TIFFs as [virtual stacks](https://imagej.net/docs/guide/146-8.html#sub:Virtual-Stacks) via the {% include bc path='File | Import | TIFF Virtual Stack...'%} command.
+You can also import TIFFs as [virtual stacks](/ij/docs/guide/146-8.html#sub:Virtual-Stacks) via the {% include bc path='File | Import | TIFF Virtual Stack...'%} command.
 
 -   **Pro:** The ImageJ 1.x TIFF reader is very fast.
 -   **Con:** The ImageJ 1.x TIFF support is incomplete. Some valid baseline TIFF files will not open properly. In particular, TIFF files with out-of-order planes cannot be opened.

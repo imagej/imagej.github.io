@@ -11,4 +11,4 @@ Being a wiki, edited by volunteers, the ImageJ Wiki contents express the opinion
 Copyright
 ---------
 
-The layout, graphics employed and any other contents on https://imagej.net/ are protected by copyright law. © the respective article editors. User contributions are licensed under a [Creative Commons Zero (public domain) license](https://creativecommons.org/publicdomain/zero/1.0/).
+The layout, graphics employed and any other contents on imagej.net are protected by copyright law. © the respective article editors. User contributions are licensed under a [Creative Commons Zero (public domain) license](https://creativecommons.org/publicdomain/zero/1.0/).

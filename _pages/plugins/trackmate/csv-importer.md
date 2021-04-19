@@ -21,7 +21,7 @@ Using the GUI.
 
 The example below shows a capture of the GUI when re-importing a CSV file created by TrackMate itself (from the `Analysis` button).
 
-<figure><img src="/media/TrackMateCSVImporter 01.png" title="TrackMateCSVImporter_01.png" width="800" alt="TrackMateCSVImporter_01.png" /><figcaption aria-hidden="true">TrackMateCSVImporter_01.png</figcaption></figure>
+<figure><img src="/media/plugins/trackmateCSVImporter 01.png" title="TrackMateCSVImporter_01.png" width="800" alt="TrackMateCSVImporter_01.png" /><figcaption aria-hidden="true">TrackMateCSVImporter_01.png</figcaption></figure>
 
 Open the target image in Fiji, and browse to the CSV file from the GUI. It will be parsed and the parameter lists will be populated with the headers of the CSV file. Some columns are mandatory (X, Y, frame). If you uncheck `Compute all features?` box, only a minimal set of features will be declared and computed.
 
@@ -42,6 +42,6 @@ You can use Fiji in headless mode, to call the Jython script `CsvToTrackMate.py`
          --yCol=2 
          --zCol=3 
          --frameCol=0
-         --targetFilePath="/path/to/TrackMateFile.xml"
+         --targetFilePath="/path/to/plugins/trackmateFile.xml"
 
-This will create a new TrackMate file `/path/to/TrackMateFile.xml` with detections created from the CSV file `/path/to/MyCsvFile.csv` and reading the image metadata from image file `/path/to/MyImage.tif`.
+This will create a new TrackMate file `/path/to/plugins/trackmateFile.xml` with detections created from the CSV file `/path/to/MyCsvFile.csv` and reading the image metadata from image file `/path/to/MyImage.tif`.

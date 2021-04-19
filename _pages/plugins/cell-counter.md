@@ -8,7 +8,7 @@ artifact: sc.fiji:Cell\_Counter
 
 This plugin will open a new cell counter GUI. On the left are the counter types and counters, on the right the action buttons.
 
-{% include info-box content='Please consider using the built-in [Multi-Point Tool](https://imagej.net/docs/guide/146-19.html#sec:Multi-point-Tool) in ImageJ, as this tool now replicates most of the functionality of Cell Counter.' %}
+{% include info-box content='Please consider using the built-in [Multi-Point Tool](/ij/docs/guide/146-19.html#sec:Multi-point-Tool) in ImageJ, as this tool now replicates most of the functionality of Cell Counter.' %}
 
 Bugs
 ----
@@ -57,7 +57,7 @@ History
 -   <u>2006/02/14</u>: Added "Save Markers" and "Load Markers" buttons
 -   <u>2006/03/06</u>: Added "Export Image" and "Measure" buttons
 -   <u>2006/03/12</u>: Add "Show Numbers" checkbox
--   <u>2008/02/29</u>: Updated to work with [Grid](https://imagej.net/plugins/grid.html) plugin
+-   <u>2008/02/29</u>: Updated to work with [Grid](/ij/plugins/grid.html) plugin
 -   <u>2008/08/27</u>: Added "Show All" checkbox; works with hyperstacks and composite color images
 -   <u>2008/09/02</u>: Added setType() method to support macros
 -   <u>2008/09/22</u>: Out of focus markers displayed as outlines

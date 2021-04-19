@@ -29,7 +29,7 @@ In the two previous articles we dealt with [edge](/plugins/trackmate/custom-edge
 
 For spot analyzer, the two are separated.
 
-You must first create a {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/spot/SpotAnalyzerFactory.java' label='SpotAnalyzerFactory' %}. This factory will be in charge of the TrackMate integration. The interface extends both the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/TrackMateModule.java' label='TrackMateModule' %} and the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/FeatureAnalyzer.java' label='FeatureAnalyzer' %} interfaces. It is the class you will need to annotate with a [SciJava](SciJava) annotation for automatic discovery.
+You must first create a {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/spot/SpotAnalyzerFactory.java' label='SpotAnalyzerFactory' %}. This factory will be in charge of the TrackMate integration. The interface extends both the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/plugins/trackmateModule.java' label='TrackMateModule' %} and the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/FeatureAnalyzer.java' label='FeatureAnalyzer' %} interfaces. It is the class you will need to annotate with a [SciJava](SciJava) annotation for automatic discovery.
 
 But it is also in charge of instantiating {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/spot/SpotAnalyzer.java' label='SpotAnalyzer' %}s. As you can see, this interface just extends ImgLib2 {% include github repo='imglib' path='algorithms/core/src/main/java/net/imglib2/algorithm/Algorithm.java' label='Algorithm' %}, so all parameters will have to be passed in the constructor, which can be what you want thanks to the factory. We do not need a return value method, because results are stored directly inside the spot objects. But we will see this later.
 
@@ -154,7 +154,7 @@ Wrapping up
 
 Apart from the discussion on the priority and execution order, there is not much to say. It works!
 
-<figure><img src="/media/TrackMate CustomSpotAnalyzer 01.png" title="TrackMate_CustomSpotAnalyzer_01.png" width="600" alt="TrackMate_CustomSpotAnalyzer_01.png" /><figcaption aria-hidden="true">TrackMate_CustomSpotAnalyzer_01.png</figcaption></figure>
+<figure><img src="/media/plugins/trackmate CustomSpotAnalyzer 01.png" title="TrackMate_CustomSpotAnalyzer_01.png" width="600" alt="TrackMate_CustomSpotAnalyzer_01.png" /><figcaption aria-hidden="true">TrackMate_CustomSpotAnalyzer_01.png</figcaption></figure>
 
 {% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez)) 07:32, 11 March 2014 (CDT)
 

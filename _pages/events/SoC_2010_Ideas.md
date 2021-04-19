@@ -333,6 +333,6 @@ Other links
 
 -   [Fiji's developer mailing list](http://groups.google.com/group/fiji-devel)
 -   [Weka project](http://www.cs.waikato.ac.nz/ml/weka/)
--   [\#fiji-devel channel](/Chat#IRC) on irc.freenode.net
+-   [\#fiji-devel channel](/about/chat#irc) on irc.freenode.net
 -   Other [Project ideas](Project_ideas)
 -   [more links](/fiji/links)

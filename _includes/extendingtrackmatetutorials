@@ -1,4 +1,4 @@
-<a href="TrackMate">TrackMate</a> can be extended with new modules covering about everything it does, thanks to several nice features of <a href="https://imagej.net/SciJava">SciJava</a>. These tutorials explain how to do so. They are best read in order.
+<a href="TrackMate">TrackMate</a> can be extended with new modules covering about everything it does, thanks to several nice features of <a href="/SciJava">SciJava</a>. These tutorials explain how to do so. They are best read in order.
 
 <table class="infobox" cellspacing="5" style="width: 22em; font-size: 90%; text-align: left; float: right; border: 1px dashed #a0a0a0;">
 <tbody><tr>

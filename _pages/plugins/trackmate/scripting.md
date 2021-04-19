@@ -20,7 +20,7 @@ Since we are calling the internals of TrackMate, we must get to know a bit of it
 
 <!-- -->
 
--   TrackMate (\[https://fiji.sc/javadoc/fiji/plugin/trackmate/TrackMate.html>`fiji.plugin.trackmate.TrackMate`\]) is the guy that does the actual work. In scripts, we use it to actually <u>perform the analysis tasks</u, such as generating spots from images, linking them into track, etc... It reads configuration information in the Settings object mentioned above and put the resulting data in the model.
+-   TrackMate (\[https://fiji.sc/javadoc/fiji/plugin/trackmate/plugins/trackmate.html>`fiji.plugin.trackmate.TrackMate`\]) is the guy that does the actual work. In scripts, we use it to actually <u>perform the analysis tasks</u, such as generating spots from images, linking them into track, etc... It reads configuration information in the Settings object mentioned above and put the resulting data in the model.
 
 So getting a working script is all about configuring a proper `Settings` object and calling `exec*` methods on a `TrackMate` object. Then we read the results in the `Model` object.
 
@@ -299,12 +299,12 @@ TrackMate computes and stores three kind of numerical features:
 
 By default, TrackMate only computes a very limited number of features. The GUI forces TrackMate to compute them all, but if you do scripting, you will have to explicitly configures TrackMate to compute the features you desire. This is done by adding feature analyzers to the settings object.
 
-There are some gotchas: some feature analyzers require other numerical features to be already calculated. If something does not work, it is a good idea to directly check the preamble in the source code of the analyzers ([TrackMate feature logic](https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/)).
+There are some gotchas: some feature analyzers require other numerical features to be already calculated. If something does not work, it is a good idea to directly check the preamble in the source code of the analyzers ([TrackMate feature logic](https://github.com/fiji/plugins/trackmate/blob/master/src/main/java/fiji/plugin/trackmate/features/)).
 
 Finally, depending on their type, numerical features are not stored at the same place:
 
 -   Spot features are simply conveyed by the spot object, and you can access them through `spot.getFeature('FEATURE_NAME')`
--   Edge and track features are stored in a sub-component of the model object called the FeatureModel ({% include github repo='fiji' path='src-plugins/TrackMate\_/src/main/java/fiji/plugin/trackmate/FeatureModel.java' label='FeatureModel.java' %}).
+-   Edge and track features are stored in a sub-component of the model object called the FeatureModel ({% include github repo='fiji' path='src-plugins/plugins/trackmate\_/src/main/java/fiji/plugin/trackmate/FeatureModel.java' label='FeatureModel.java' %}).
 
 Check the script below to see a working example.
 
@@ -474,7 +474,7 @@ This script just shows you how to use this construct to build and populate a mod
 
 Spot quality and link cost are typically useful to quantify automatic spot detection and linking. We typically use negative values for these two numbers when doing manual edits.
 
-The script below does this: ![](/media/TrackMate AnimatedName.gif "fig:TrackMate_AnimatedName.gif")
+The script below does this: ![](/media/plugins/trackmate AnimatedName.gif "fig:TrackMate_AnimatedName.gif")
 
     import ij.gui.NewImage as NewImage
     import fiji.plugin.trackmate.Settings as Settings
@@ -997,7 +997,7 @@ You have to start from a 2D+T image (nothing else) and a results table that cont
 
 So an ideal starting situation would like this:
 
-<img src="/media/TrackMateScriptBeforeCapture.png" width="600"/>
+<img src="/media/plugins/trackmateScriptBeforeCapture.png" width="600"/>
 
 this script will generate the following tracks:
 

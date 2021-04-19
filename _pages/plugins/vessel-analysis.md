@@ -30,7 +30,7 @@ Download the [Vessel Analysis.zip](https://imagej.net/File:Vessel_Analysis.zip) 
 
 Before using the plugin, make sure your version of Fiji comes pre-downloaded with the Auto Threshold and Geometry to Distance plugins. They should be listed under: o Image &gt; Adjust &gt; Auto Threshold o Analyze &gt; Local Thickness &gt; Geometry to Distance Map
 
-Also make sure you install [Mexican Hat Filter](https://imagej.net/plugins/mexican-hat/index.html) plugin
+Also make sure you install [Mexican Hat Filter](/ij/plugins/mexican-hat/index.html) plugin
 
 **Usage:**
 ----------

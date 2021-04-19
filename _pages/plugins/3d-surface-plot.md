@@ -6,7 +6,7 @@ description: test description
 artifact: sc.fiji:Interactive\_3D\_Surface\_Plot
 ---
 
- Documentation: https://imagej.net/plugins/surface-plot-3d.html
+ Documentation: /ij/plugins/surface-plot-3d.html
 
 Not hardware accelerated.
 

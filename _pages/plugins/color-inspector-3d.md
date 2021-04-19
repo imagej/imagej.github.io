@@ -6,7 +6,7 @@ description: test description
 artifact: sc.fiji:Color\_Inspector\_3D
 ---
 
-Documentation: https://imagej.net/plugins/color-inspector.html
+Documentation: /ij/plugins/color-inspector.html
 
 Not hardware accelerated.
 

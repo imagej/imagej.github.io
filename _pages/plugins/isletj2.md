@@ -85,7 +85,7 @@ Demo
 
 The following steps show basic interaction with the plugin.
 
-1.  Download a demo [dataset](https://imagej.net/_images/5/59/Isletj-demo.zip) and extract the archive. Directory `isletj-demo` will be created containing one image and its ground truth segmentation.
+1.  Download a demo [dataset](/media/Isletj-demo.zip) and extract the archive. Directory `isletj-demo` will be created containing one image and its ground truth segmentation.
 2.  Start ImageJ and open the dialog for training (`Plugins` – `IsletJ` – `Train`).
 3.  Select the extracted directory, set the prefixes of examples and GTs to `img_` and `gt_`, respectively, and click `Load` to load the dataset. Images (only a single one in this case) from the dataset will be displayed, and respective segmentations will be applied to the images resulting in green bordered regions.
 4.  Ensure that the segmentations were loaded correctly and click `Ok`.
@@ -109,7 +109,7 @@ Should you use the plugin very frequently, it would be perhaps useful to access 
 
 A new keyboard shortcut can be defined using `Plugins` – `Shortcuts` – `Add Shortcut...` in the top menu. In the displayed window, pick a shortcut of your choice (e.g., `F12`) and select `Analyze` or `Train` as the command.
 
-See [ImageJ docs](https://imagej.net/docs/guide/146-31.html#toc-Subsection-31.2.2) for more information on how to manage keyboard shortcuts in ImageJ.
+See [ImageJ docs](/ij/docs/guide/146-31.html#toc-Subsection-31.2.2) for more information on how to manage keyboard shortcuts in ImageJ.
 
 ### Determining the pixel size
 

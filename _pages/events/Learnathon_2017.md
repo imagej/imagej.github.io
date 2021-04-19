@@ -189,7 +189,7 @@ Awesome stuff that happened too:
     -   The problem of missing funding...
     -   Stable releases (coming in December).
     -   A system to track what a workflow should cite...
--   Headless with Fiji (https://imagej.net/Batch) (ignoring legacy problems)
+-   [Headless with Fiji](/scripting/headless) (ignoring legacy problems)
 -   ImgLib2 ROIs (https://github.com/imglib/imglib2-roi/tree/shape-rois), a preview to what will/might come soon!
 
 Saturday

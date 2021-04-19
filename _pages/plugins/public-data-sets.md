@@ -24,7 +24,7 @@ All the data and further information is available in the {% include github org='
 
 -   [Segmented ssTEM stack of neural tissue](http://www.ini.uzh.ch/~acardona/data.html), thanks to Albert Cardona.
 
-![](/media/TrakEM2-tree-datastructure.png "fig:TrakEM2-tree-datastructure.png") ![](/media/TrakEM2-display-s.jpg "fig:TrakEM2-display-s.jpg")
+![](/media/plugins/trakem2-tree-datastructure.png "fig:TrakEM2-tree-datastructure.png") ![](/media/plugins/trakem2-display-s.jpg "fig:TrakEM2-display-s.jpg")
 
 
 30 sections from a serial section Transmission Electron Microscopy (ssTEM) data set of the Drosophila first instar larva ventral nerve cord (VNC). The microcube measures 2 x 2 x 1.5 microns approx., with a resolution of 4x4x50 nm/pixel.

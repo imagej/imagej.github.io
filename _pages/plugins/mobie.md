@@ -23,7 +23,7 @@ description: test description
 Overview
 --------
 
-MoBIE (Multimodal Big Image Data Exploration) is a framework for sharing and interactive browsing of multimodal big image data. The MoBIE Fiji viewer is based on [BigDataViewer](https://imagej.net/BigDataViewer) and enables browsing of MoBIE datasets. For more information please visit the GitHub [README](https://github.com/mobie-org/mobie).
+MoBIE (Multimodal Big Image Data Exploration) is a framework for sharing and interactive browsing of multimodal big image data. The MoBIE Fiji viewer is based on [BigDataViewer](https://imagej.net/plugins/bdv) and enables browsing of MoBIE datasets. For more information please visit the GitHub [README](https://github.com/mobie-org/mobie).
 
 Installation
 ------------

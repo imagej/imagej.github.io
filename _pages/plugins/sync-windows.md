@@ -11,7 +11,7 @@ The Sync Windows plugin synchronizes mouse motion and input between multiple win
 Installation
 ------------
 
-**ImageJ**: Copy the Sync\_Win.jar file from https://imagej.net/plugins/download/jars/Sync_Win.jar into the ImageJ/Plugins folder and either restart ImageJ or run the {% include bc path='Help | Update Menus'%} command. After this two new commands should appear in {% include bc path='Analyze | Tools'%}: **Sync Windows** and **Sync Measure 3D**.
+**ImageJ**: Copy the Sync\_Win.jar file from /ij/plugins/download/jars/Sync_Win.jar into the ImageJ/Plugins folder and either restart ImageJ or run the {% include bc path='Help | Update Menus'%} command. After this two new commands should appear in {% include bc path='Analyze | Tools'%}: **Sync Windows** and **Sync Measure 3D**.
 
 **Fiji**: this plugin is part of the Fiji distribution, there is no need to download it.
 
