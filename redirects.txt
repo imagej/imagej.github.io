@@ -628,10 +628,10 @@ Development :: develop
 Development_Lifecycle :: develop/releasing
 Development_lifecycle :: develop/releasing
 Development_status :: about/governance#development-status
-Diadem_Cerebellar :: Diadem_Challenge_Data
+Diadem_Cerebellar :: TODO (Diadem_Challenge_Data)
 Diadem_Challenge_Data :: TODO
-Diadem_Hippocampal_CA3_Interneuron :: Diadem_Challenge_Data
-Diadem_Neocortical_Layer_6_Axons :: Diadem_Challenge_Data
+Diadem_Hippocampal_CA3_Interneuron :: TODO (Diadem_Challenge_Data)
+Diadem_Neocortical_Layer_6_Axons :: TODO (Diadem_Challenge_Data)
 Dialog :: scripting/generic-dialog
 DiameterJ :: plugins/diameterj
 Diameterj :: plugins/diameterj
@@ -746,7 +746,7 @@ Fiji_Contributors :: about/contributors
 Fiji_Developer :: plugins/fiji-developer
 Fiji_Download :: fiji/downloads
 Fiji_Downloads :: fiji/downloads
-Fiji_Launcher :: Launcher
+Fiji_Launcher :: TODO (Launcher)
 Fiji_Logo_3D :: plugins/fiji-logo-3d
 Fiji_Menu :: plugins/fiji-menu
 Fiji_Package_Maker :: plugins/make-fiji-package
@@ -777,8 +777,8 @@ Finer_Grained_Debian_Packages :: TODO
 First-instar_brain_(6.3MB) :: TODO
 Fit_Sphere :: plugins/bonej#fit-sphere-wip
 Fit_ellipsoid :: plugins/bonej#fit-ellipsoid
-Fix_non-functional_Fiji_after_Update :: Fix_non-functional_ImageJ_after_Update
-Fix_non-functional_Fiji_after_Update_on_MacOSX :: Fix_non-functional_ImageJ_after_Update
+Fix_non-functional_Fiji_after_Update :: help/troubleshooting
+Fix_non-functional_Fiji_after_Update_on_MacOSX :: help/troubleshooting
 Fix_non-functional_ImageJ_after_Update :: help/troubleshooting
 Flavors :: about#flavors
 FlowJ :: plugins/flowj
@@ -907,7 +907,7 @@ ITK :: software/itk
 I_O :: formats
 Icy :: software/icy
 Image.sc_Forum :: help
-Image1_Image2_cheat_sheet :: ImageJ1-ImageJ2_cheat_sheet
+Image1_Image2_cheat_sheet :: TODO
 Image5D :: plugins/image5d
 ImageJ :: about
 ImageJ-MATLAB :: scripting/matlab
@@ -921,7 +921,7 @@ ImageJ2/Documentation/Edit/Options/Misc :: TODO
 ImageJ2/Documentation/Image/Overlay/OverlayManager :: TODO
 ImageJ2/Documentation/PointSetDemo :: TODO
 ImageJ2/Documentation/Process/Math/Equation :: TODO
-ImageJ2_Documentation_Edit_Options_Misc :: ImageJ2_Documentation_Edit_Options_Compatibility
+ImageJ2_Documentation_Edit_Options_Misc :: TODO
 ImageJ2_Python_Scripts :: scripting/examples/imagej2-python
 ImageJ2_development_releases :: TODO
 ImageJ2_grant_proposal :: TODO
@@ -934,7 +934,7 @@ ImageJ_Common :: plugins/imagej-common
 ImageJ_Forum :: help
 ImageJ_Jenkins :: develop/jenkins
 ImageJ_Launcher :: TODO (Launcher)
-ImageJ_Legacy :: Compatibility
+ImageJ_Legacy :: libs/imagej-legacy
 ImageJ_Maven_repository :: develop/project-management#maven
 ImageJ_OPS :: libs/imagej-ops
 ImageJ_Ops :: libs/imagej-ops
@@ -984,14 +984,14 @@ Imglib_FAQ :: imglib2/faq
 Imglib__accessing_pixel_data :: imglib1/iterating-through-pixel-data
 Imglib__iterating_through_pixel_data :: imglib1/iterating-through-pixel-data
 Importing_Image_Files :: plugins/importing-image-files
-Impressum :: Imprint
+Impressum :: TODO (Imprint)
 Imprint :: TODO
 Insight_Toolkit :: software/itk
 Install :: downloads
 Install_Fiji_on_Linux :: fiji/downloads#installation
 Install_Fiji_on_MacOSX :: fiji/downloads#installation
 Install_Fiji_on_Windows :: fiji/downloads#installation
-Install_JARs :: Installing_3rd_party_plugins
+Install_JARs :: TODO (Installing_3rd_party_plugins)
 Installation :: fiji/downloads#installation
 Installing_3rd_party_plugins :: TODO
 Integral_Image_Filters :: plugins/integral-image-filters
@@ -1032,7 +1032,7 @@ JRuby_Scripting :: scripting/jruby
 JaCoP :: plugins/jacop
 Java :: develop/plugins
 Java3D :: about/java-3d
-JavaOptions :: Java_Options
+JavaOptions :: TODO (Java_Options)
 JavaScript :: scripting/javascript
 JavaScript_Scripting :: scripting/javascript
 Java_3D :: about/java-3d
@@ -1088,7 +1088,7 @@ Learnathon :: events/Learnathon_2019
 Learnathon_2017 :: events/Learnathon_2017
 Learnathon_2018 :: events/Learnathon_2018
 Learnathon_2019 :: events/Learnathon_2019
-Legacy :: Compatibility
+Legacy :: libs/imagej-legacy
 Lens_correction :: plugins/distortion-correction
 Level_Sets :: plugins/level-sets
 Level_sets :: plugins/level-sets
@@ -1270,7 +1270,7 @@ Open_Source :: TODO
 Open_an_image :: TODO
 Open_source :: TODO (Open_Source)
 Ops :: libs/imagej-ops
-OpsDeconvolution :: Ops_Deconvolution
+OpsDeconvolution :: libs/imagej-ops/deconvolution
 Ops_Browser :: plugins/op-finder
 Ops_Deconvolution :: libs/imagej-ops/deconvolution
 Orientation :: plugins/bonej#orientation
@@ -1732,7 +1732,7 @@ Usage_Yearly :: about/usage
 Usage_ever :: about/usage
 Usage_monthly :: about/usage
 Usage_weekly :: about/usage
-Useful_keyboard_shortcuts :: Keyboard_shortcuts
+Useful_keyboard_shortcuts :: TODO (Keyboard_shortcuts)
 User:3Dcyclorama :: users/3Dcyclorama
 User:A._Karperien :: users/A._Karperien
 User:Abastien :: users/alexandrebastien
@@ -2007,7 +2007,7 @@ Using_Maven_with_Eclipse :: develop/maven-and-eclipse
 Using_TrackMate_from_MATLAB :: plugins/trackmate/using-from-matlab
 Using_TrackMate_with_MATLAB :: plugins/trackmate/analyzing-results-with-matlab
 Using_Weka :: develop/using-weka
-Using_the_Command_Launcher :: learn/getting-started
+Using_the_Command_Launcher :: learn/getting-started#the-search-bar
 Using_the_Script_Editor :: scripting/script-editor
 VCell :: software/virtual-cell
 VIB :: plugins/vib-protocol
