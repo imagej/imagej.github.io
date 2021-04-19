@@ -285,6 +285,7 @@ Adding_new_formats :: develop/formats
 Adding_new_ops :: develop/writing-ops
 Adelson's_Squares :: plugins/adelsons-squares
 Adelson's_Squares_(Macro) :: plugins/adelsons-squares
+Adelsons_Squares :: plugins/adelsons-squares
 Adiposoft :: software/adiposoft
 Advanced_Fiji_Usage :: fiji
 Advanced_Registration :: plugins/spim-registration
@@ -305,6 +306,7 @@ Analyse_Skeleton :: plugins/bonej#analyse-skeleton
 AnalyzeSkeleton :: plugins/analyze-skeleton
 Analyze_FRAP_movies_with_a_Jython_script :: tutorials/analyze-frap-movies
 Analyze_Skeleton_(2D/3D) :: plugins/analyze-skeleton
+Analyze_Skeleton_2D_3D :: plugins/analyze-skeleton
 Analyze_Skeleton_2D_time_series :: plugins/analyze-skeleton/2d-time-series
 Analyze_Stripes :: plugins/analyze-stripes
 Analyzing_TrackMate_results_with_MATLAB :: plugins/trackmate/analyzing-results-with-matlab
@@ -605,7 +607,7 @@ Delete_Slice_Range :: plugins/bonej#delete-slice-range-wip
 DenoiSeg :: plugins/denoiseg
 Description_of_ImageJ's_plugin_architecture :: ???
 Description_of_ImageJs_plugin_architecture :: develop/plugin-architecture
-Descriptor-based_registration_(2d_3d) :: plugins/descriptor-based-registration-2d-3d
+Descriptor-based_registration_(2d/3d) :: plugins/descriptor-based-registration-2d-3d
 Descriptor_based_registration :: plugins/descriptor-based-registration
 DetectInformationLoss :: techniques/detect-information-loss
 Detect_Information_Loss :: techniques/detect-information-loss
@@ -759,6 +761,7 @@ Fiji_Usage_weekly :: about/usage
 Fiji_Wiki :: about/contributing#this-web-site
 Fiji_YouTube_Channel :: fiji/youtube-channel
 Fiji_Z-Spacing_Correction :: plugins/fiji-z-spacing-correction
+Fiji_contribution_requirements :: fiji/contribution-requirements
 Fiji_scripting_tutorial :: fiji/scripting-tutorial
 Fijis_Menu :: plugins/fiji-menu
 Fijiyama :: plugins/fijiyama
@@ -1068,7 +1071,7 @@ LGPLv2 :: licensing/lgpl
 LGPLv3 :: licensing/lgpl
 LIBAV_Plugins :: formats/video
 LOCI :: orgs/loci
-LOCI_Plugins...  :: ???
+LOCI_Plugins... :: ???
 LOCI_Plugins_Configuration :: formats/bio-formats#bio-formats-plugins-configuration
 LOCI_Plugins_Shortcut_Window :: formats/bio-formats#bio-formats-plugins-shortcut-window
 LSM_Toolbox :: formats/lsm
