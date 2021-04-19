@@ -49,7 +49,7 @@ At some point, you might want to debug whatever you wrote. There's a small [Debu
 Discussing code
 ---------------
 
-When you want to propose and/or discuss changes to some source code, the preferred way is to [submit a PR on GitHub](/licensing/contributing).
+When you want to propose and/or discuss changes to some source code, the preferred way is to [submit a PR on GitHub](/about/contributing).
 
 Contributing
 ------------

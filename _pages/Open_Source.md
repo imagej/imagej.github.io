@@ -7,7 +7,7 @@ description: test description
 
 ![ 64px \| left \| link=https://opensource.org/](/media/Osi symbol.png "fig: 64px | left | link=https://opensource.org/") The [ImageJ](/about) project, and related projects in the [SciJava](SciJava) software ecosystem, are open source software projects. See the [Licensing](/licensing) page for details.
 
-Everybody is welcome to [contribute](/licensing/contributing) with [plugins](/plugins), patches, [bug reports](/help/report-a-bug), [tutorials](/Category_Tutorials), [documentation](/learn), and artwork.
+Everybody is welcome to [contribute](/about/contributing) with [plugins](/plugins), patches, [bug reports](/help/report-a-bug), [tutorials](/Category_Tutorials), [documentation](/learn), and artwork.
 
 The [SciJava](SciJava) ecosystem is strongly committed to open-source software development. This software is not an open source software *product*—it is an open-source software *project* following an open-source development *process*. There are public [source code repositories](Source_Code), public [communication](Communication) channels, public [project management](/develop/project-management) resources, and of course, this [community editable website](Help_Contents). See the [Philosophy](/develop/philosophy) page for more information.
 
@@ -27,11 +27,11 @@ The [Science Code Manifesto](http://sciencecodemanifesto.org/discussion) provide
 Further, we strive for ImageJ to be a community driven project. It is not merely an {% include wikipedia title='Open source' text='open source'%} *product*, but an open source *process*. ImageJ follows open development practices, and provides open development tools online:
 
 -   Public [source code](/develop/source) repositories including complete development history.
--   Public [issue trackers](/Project_management#Issue_tracking).
+-   Public [issue trackers](//develop/project-management#issue-tracking).
 -   Public [communication channels](Communication) for open discussion.
 -   Public [wiki](https://imagej.net/) for community contributed content.
 -   [Travis CI](/develop/travis), ImageJ's public {% include wikipedia title='Continuous integration' text='continuous integration'%} system.
--   Public [Maven repository](/Project_management#Maven) for ImageJ binaries.
+-   Public [Maven repository](//develop/project-management#maven) for ImageJ binaries.
 
 Using these resources, you can always observe the latest progress of the project, get an idea of where the project is heading, contribute code to the project yourself using GitHub, or write documentation, tutorials and other information on the wiki.
 

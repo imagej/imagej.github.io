@@ -5,7 +5,7 @@ categories: News,ImageJ2,Fiji
 description: test description
 ---
 
-[ImageJA](/software/imageja) started out as a two-pronged project:
+[ImageJA](/libs/imageja) started out as a two-pronged project:
 
 1.  We wanted to have a source code management system so that we could contribute and update patches to [ImageJ](/about).
     Originally, this was CVS, now it is [Git](Git), and in the meantime [Wayne Rasband](/users/rasband), the author of ImageJ, also adopted a routine involving Git. So basically, this goal was reached.

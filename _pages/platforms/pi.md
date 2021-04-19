@@ -70,7 +70,7 @@ See the [Troubleshooting](/help/troubleshooting) page.
 Frequently Asked Questions
 ==========================
 
-See the [Frequently Asked Questions](/help/frequently-asked-questions) page.
+See the [Frequently Asked Questions](/help/faq) page.
 
 See also
 ========

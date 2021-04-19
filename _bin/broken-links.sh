@@ -12,7 +12,13 @@ do
   file=${line%%:*}
   file=${file##*/_site/}
   link=${line#*:}
-  target="$root$link"
+  page=${link%#*}
+  test "$page" = "$link" && anchor="" || anchor=${link#*#}
+  target="$root$page"
   test -f "$target" -o -f "$target.html" -o -f "$target/index.html" ||
-    { echo "$link"; }
+    { echo "$link"; continue; }
+  test -z "$anchor" ||
+    grep -q "id=\"$anchor\"" "$target.html" 2>/dev/null ||
+    grep -q "id=\"$anchor\"" "$target/index.html" 2>/dev/null ||
+    echo "$link [NO ANCHOR]"
 done

@@ -17,7 +17,7 @@ description: test description
 {% endcapture %}
 {% include minibox logo='Maven-icon.png' size='51px' blurb=blurb %}[ImageJ](/about), [Fiji](/fiji) and other [SciJava](SciJava) projects use [Maven](https://maven.apache.org/) for their project infrastructure.
 
-Maven artifacts are published to the [SciJava Maven repository](/Project_management#Maven).
+Maven artifacts are published to the [SciJava Maven repository](//develop/project-management#maven).
 
 Why do we use Maven?
 ====================
@@ -99,9 +99,9 @@ Repositories
 
 Once your dependencies are declared, Maven will download them on demand from the Internet. However, for Maven to find the dependencies, it has to know where to look.
 
-Out of the box, Maven will look in the so-called [Maven Central repository](https://search.maven.org/). Some ImageJ and SciJava components are deployed there, including the [pom-scijava parent POM](Architecture#Maven_component_structure) which declares important metadata, such as the [Bill of Materials](/Architecture#Bill_of_Materials): current artifact versions intended to work together.
+Out of the box, Maven will look in the so-called [Maven Central repository](https://search.maven.org/). Some ImageJ and SciJava components are deployed there, including the [pom-scijava parent POM](Architecture#Maven_component_structure) which declares important metadata, such as the [Bill of Materials](//develop/architecture#bill-of-materials): current artifact versions intended to work together.
 
-However, many other SciJava and ImageJ components are not yet deployed to Maven Central, but instead to the [SciJava Maven repository](/Project_management#Maven). To gain access to this repository from your project, add the following configuration block to your *pom.xml*:
+However, many other SciJava and ImageJ components are not yet deployed to Maven Central, but instead to the [SciJava Maven repository](//develop/project-management#maven). To gain access to this repository from your project, add the following configuration block to your *pom.xml*:
 
     <repositories>
       <repository>

@@ -48,7 +48,7 @@ The following are practical examples of what is not part of the SciJava "public 
 
 <!-- -->
 
--   **SPI** ({% include wikipedia title='Service provider interface' text='**S**ervice **P**rovider **I**nterface'%}) [compatibility](Compatibility)—the set of classes and interfaces that are *extended* and *implemented* by downstream *implementors*. For example, if your code provides its own implementation of the {% include javadoc package='org/scijava/module' class='ModuleService' %} interface, updating to a new version of `scijava-common` may break your code due to the addition of new method signatures which your class does not implement.
+-   **SPI** ({% include wikipedia title='Service provider interface' text='**S**ervice **P**rovider **I**nterface'%}) [compatibility](/libs/imagej-legacy)—the set of classes and interfaces that are *extended* and *implemented* by downstream *implementors*. For example, if your code provides its own implementation of the {% include javadoc package='org/scijava/module' class='ModuleService' %} interface, updating to a new version of `scijava-common` may break your code due to the addition of new method signatures which your class does not implement.
 
 Note that these many of these limitations can be mitigated in practice. For example, developers can make a best effort to limit SPI breakages, submit upstream patches instead of working around software, and consume a BOM to ensure cross-library compatibility.
 
@@ -76,6 +76,6 @@ It may feel strange to add a new dependency without bumping the major or minor v
 
 Essentially, dependency convergence is a separate issue to versioning, and is not be tracked with SemVer.
 
-**Bill of Materials projects.** For a [Bill of Materials](/Architecture#Bill_of_Materials) project, the "public API" is the union of all managed dependencies. Therefore if one or more components managed in a BOM are updated to an increased major or minor version, the BOM itself must take the most significant change in its next release.
+**Bill of Materials projects.** For a [Bill of Materials](//develop/architecture#bill-of-materials) project, the "public API" is the union of all managed dependencies. Therefore if one or more components managed in a BOM are updated to an increased major or minor version, the BOM itself must take the most significant change in its next release.
 
 For example, if a BOM is at version 5.4.3, and updates its managed dependencies X from 1.0.3 &gt; 1.1.0 and Y from 2.4.1 &gt; 3.0.0, the next release of the BOM will be 6.0.0.

@@ -19,7 +19,7 @@ For example, while you develop your plugin, you might use the version `1.0.0-SNA
 How are dependency versions determined?
 =======================================
 
-In many `pom.xml` files which extend `pom-scijava`, you can see that the dependency versions are omitted. The versions are defined (or "managed") by the pom-scijava parent configuration as part of its [Bill of Materials](/Architecture#Bill_of_Materials)—e.g., {% include github org='scijava' repo='pom-scijava' tag='pom-scijava-14.0.0' path='pom.xml\#L218-L219' label='here' %} is where the ImageJ 1.x version is defined.
+In many `pom.xml` files which extend `pom-scijava`, you can see that the dependency versions are omitted. The versions are defined (or "managed") by the pom-scijava parent configuration as part of its [Bill of Materials](//develop/architecture#bill-of-materials)—e.g., {% include github org='scijava' repo='pom-scijava' tag='pom-scijava-14.0.0' path='pom.xml\#L218-L219' label='here' %} is where the ImageJ 1.x version is defined.
 
 -   Browse the latest `pom-scijava` {% include github org='scijava' repo='pom-scijava' path='pom.xml' label='here' %}.
 -   Browse the available versions of ImageJ 1.x [here](http://maven.imagej.net/content/groups/public/net/imagej/ij/).

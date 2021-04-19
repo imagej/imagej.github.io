@@ -43,7 +43,7 @@ One of the central goals of the [SciJava component collection](/develop/architec
 Compatibility
 -------------
 
-Backward compatibility is one of ImageJ's most important goals. It must remain possible to use existing [plugins](/plugins) and [macros](/scripting/macro) with new versions of ImageJ. See the [Compatibility](Compatibility) page for details.
+Backward compatibility is one of ImageJ's most important goals. It must remain possible to use existing [plugins](/plugins) and [macros](/scripting/macro) with new versions of ImageJ. See the [Compatibility](/libs/imagej-legacy) page for details.
 
 Release early, release often
 ----------------------------
@@ -57,7 +57,7 @@ For example, the [OME](/software/omero) project (which includes [OMERO](/softwar
 | *Versioning* | BOM | Monoversioned |
 |-|-|-|
 | *Releases* | RERO | Big bang |
-| *Version compatibility* | Compatible components are declared in a [Bill of Materials](/Architecture#Bill_of_Materials) (BOM) | Compatible components have the same version number |
+| *Version compatibility* | Compatible components are declared in a [Bill of Materials](//develop/architecture#bill-of-materials) (BOM) | Compatible components have the same version number |
 | *Frequency of releases* | Faster | Slower |
 | *Stability* | Less | More |
 

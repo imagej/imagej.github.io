@@ -39,7 +39,7 @@ description: test description
 -   Manual (via [TrakEM2](http://www.ini.uzh.ch/~acardona/trakem2.html))
 -   [Level Sets](/plugins/level-sets)
 -   [Trainable Segmentation](/plugins/tws)
--   [SIOX: Simple Interactive Object Extraction](/plugins/siox--simple-interactive-object-extraction)
+-   [SIOX: Simple Interactive Object Extraction](/plugins/siox)
 
 [Tracking](Category_Tracking)  
 

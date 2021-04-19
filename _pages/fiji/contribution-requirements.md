@@ -54,7 +54,7 @@ The following criteria apply to projects hosted in the [fiji organization](https
     -   Extending the [pom-scijava parent POM](Architecture#Maven_component_structure)
 -   Components use the groupId `sc.fiji`.
 -   Components are [versioned according to SemVer](/develop/versioning).
--   The project uses [GitHub Issues](/Project_management#Issue_tracking) for issue tracking.
+-   The project uses [GitHub Issues](//develop/project-management#issue-tracking) for issue tracking.
 -   The project has a dedicated page here on the ImageJ wiki.
 -   The [Fiji maintainers](/about/governance) may make commits and [release new versions](/develop/releasing) of the component as needed, so that Fiji as a whole continues to work as intended.
 -   The `master` branch is considered *release ready* at all times, meaning it compiles with passing tests, and is ready for downstream consumption.
@@ -106,7 +106,7 @@ Maven artifacts
 -   The minimum requirement for core Fiji projects is to use a build system (e.g., [Maven](/develop/maven) or Gradle) that automatically deploys required artifacts to the [ImageJ Maven repository](http://maven.imagej.net/), such that they can be consumed by downstream code, including other Fiji projects. Required artifacts to deploy include the main JAR and POM files, `-tests` JAR, `-sources` JAR and `-javadoc` JAR.
 -   To facilitate this, most Fiji projects inherit a common Maven configuration from the [pom-fiji](https://github.com/fiji/pom-fiji) parent project. This configuration ensures that not only the compiled *.jar* files are deployed, but also the Javadocs and the sources. Therefore, it is strongly encouraged to extend this parent; see the [Maven component structure](Architecture#Maven_component_structure) section for details.
 -   All of Fiji's components are deployed by [Travis CI](/develop/travis) to the [ImageJ Maven repository](Architecture#Maven_repositories) or to [OSS Sonatype](http://oss.sonatype.org/). That way, all Fiji components can be added easily as dependencies to downstream projects.
--   All Fiji components are declared in the toplevel [fiji](https://github.com/fiji/fiji) project's POM as dependencies, and declared in the [pom-fiji](https://github.com/fiji/pom-fiji) parent as *managed dependencies*, as part of Fiji's [Bill of Materials](Architecture#Bill_of_Materials).
+-   All Fiji components are declared in the toplevel [fiji](https://github.com/fiji/fiji) project's POM as dependencies, and declared in the [pom-fiji](https://github.com/fiji/pom-fiji) parent as *managed dependencies*, as part of Fiji's [Bill of Materials](/develop/architecture#bill-of-materials).
 
 Guidelines
 ==========

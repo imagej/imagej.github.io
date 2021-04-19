@@ -23,7 +23,7 @@ Here is a quick summary of the most recommended options:
     -   Make your project **[open source](Open_source)**.
     -   Host it on **[GitHub](/develop/github)**.
     -   Use **[Maven](/develop/maven)** to build and SemVer for **[versioning](/develop/versioning)**.
-    -   Use **[Travis](/develop/travis)** for continuous integration and artifact deployment to the [SciJava Maven repository](/Project_management#Maven).
+    -   Use **[Travis](/develop/travis)** for continuous integration and artifact deployment to the [SciJava Maven repository](//develop/project-management#maven).
 -   **Documentation.**
     -   Create a page here on the **[ImageJ Wiki](https://imagej.net/)**.
 

@@ -59,6 +59,6 @@ ImageJA was originally [launched in 2005](https://list.nih.gov/cgi-bin/wa.exe?A2
     -   A little bug fix in StackWindow: if you have a 2D time lapse, ImageJ will still use the zSelector (rather than the tSelector).
     -   ImageJA can handle https:// URLs, too.
 
-However, these days, needed changes to ImageJ 1.x are instead patched at runtime; see the [Compatibility](Compatibility) page for details.
+However, these days, needed changes to ImageJ 1.x are instead patched at runtime; see the [Compatibility](/libs/imagej-legacy) page for details.
 
 

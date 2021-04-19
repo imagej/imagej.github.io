@@ -107,7 +107,7 @@ Note that the relationship between milestones and software releases can be one-t
 Patch submissions
 -----------------
 
-The preferred mechanism to contribute improvements to [ImageJ](/about) and other [SciJava](SciJava) components is using [GitHub pull requests](https://help.github.com/articles/using-pull-requests/)! See the [Contributing](/licensing/contributing) page for details.
+The preferred mechanism to contribute improvements to [ImageJ](/about) and other [SciJava](SciJava) components is using [GitHub pull requests](https://help.github.com/articles/using-pull-requests/)! See the [Contributing](/about/contributing) page for details.
 
 Roadmap links
 -------------

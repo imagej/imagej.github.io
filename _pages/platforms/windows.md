@@ -38,6 +38,6 @@ If text and other UI elements appear tiny on your {% include wikipedia title='Hi
 Frequently Asked Questions
 ==========================
 
-See the [Frequently Asked Questions](/help/frequently-asked-questions) page.
+See the [Frequently Asked Questions](/help/faq) page.
 
 

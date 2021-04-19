@@ -98,7 +98,7 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 :\* several bug-fixes
 
--   A plugin was added that performs the [SIOX](/plugins/siox--simple-interactive-object-extraction) algorithm (color segmentation by example, thanks Ignacio Arganda-Carreras).
+-   A plugin was added that performs the [SIOX](/plugins/siox) algorithm (color segmentation by example, thanks Ignacio Arganda-Carreras).
 
 <!-- -->
 

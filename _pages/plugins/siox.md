@@ -22,7 +22,7 @@ artifact: sc.fiji:Siox\_Segmentation
 
 {% include clear content='left' %}
 
-This is a Fiji plugin based on the [SIOX project](http://www.siox.org) **to segment color images**. [SIOX](/plugins/siox--simple-interactive-object-extraction) stands for *Simple Interactive Object Extraction*, a method for **extracting foreground from still images** with very little user interaction. [SIOX](/plugins/siox--simple-interactive-object-extraction) is fast, noise robust and can therefore also be used for the segmentation of videos. It avoids many of the drawbacks of graph-based segmentation methods but performs about equally well on different benchmarks. [SIOX](/plugins/siox--simple-interactive-object-extraction) is open and free (Apache License) and the authors have intentionally not patented any part of the technology. As a result, it has been integrated into several open-source image manipulation programs over the past years. [SIOX](/plugins/siox--simple-interactive-object-extraction) is the underlying algorithm of the foreground extraction tool in the GNU Image Manipulation Program ([GIMP](http://www.gimp.org/)) and is part of the tracer tool in [Inkscape](http://www.inkscape.org/). [SIOX](/plugins/siox--simple-interactive-object-extraction) originates from [E-Chalk](http://www.echalk.de/) where an instructor standing in front of an electronic chalkboard is segmented. Variants of [SIOX](/plugins/siox--simple-interactive-object-extraction) are being used for robotic vision and for improving 3D time-of-flight camera segmentation.
+This is a Fiji plugin based on the [SIOX project](http://www.siox.org) **to segment color images**. [SIOX](/plugins/siox) stands for *Simple Interactive Object Extraction*, a method for **extracting foreground from still images** with very little user interaction. [SIOX](/plugins/siox) is fast, noise robust and can therefore also be used for the segmentation of videos. It avoids many of the drawbacks of graph-based segmentation methods but performs about equally well on different benchmarks. [SIOX](/plugins/siox) is open and free (Apache License) and the authors have intentionally not patented any part of the technology. As a result, it has been integrated into several open-source image manipulation programs over the past years. [SIOX](/plugins/siox) is the underlying algorithm of the foreground extraction tool in the GNU Image Manipulation Program ([GIMP](http://www.gimp.org/)) and is part of the tracer tool in [Inkscape](http://www.inkscape.org/). [SIOX](/plugins/siox) originates from [E-Chalk](http://www.echalk.de/) where an instructor standing in front of an electronic chalkboard is segmented. Variants of [SIOX](/plugins/siox) are being used for robotic vision and for improving 3D time-of-flight camera segmentation.
 
 Quick Start
 -----------
@@ -50,9 +50,9 @@ Click the "Reset" button to restart the process or click on the "Create mask" bu
 User Manual
 -----------
 
-[SIOX](/plugins/siox--simple-interactive-object-extraction) is a plugin designed to segment 2D color images. If the image is not RGB color, it can be converted to RGB using the command {% include bc path='Image | Type | RGB Color'%}. However, the [SIOX](/plugins/siox--simple-interactive-object-extraction) algorithm makes uses color information, so it is expected to work better on real RGB images.
+[SIOX](/plugins/siox) is a plugin designed to segment 2D color images. If the image is not RGB color, it can be converted to RGB using the command {% include bc path='Image | Type | RGB Color'%}. However, the [SIOX](/plugins/siox) algorithm makes uses color information, so it is expected to work better on real RGB images.
 
-When calling the plugin, the image will be embedded into the [SIOX](/plugins/siox--simple-interactive-object-extraction) graphical user interface (GUI). This GUI has 3 section (panels): Initial Segmentation, Detail Refinement Brush and the Mask/Reset buttons.
+When calling the plugin, the image will be embedded into the [SIOX](/plugins/siox) graphical user interface (GUI). This GUI has 3 section (panels): Initial Segmentation, Detail Refinement Brush and the Mask/Reset buttons.
 
 ### Initial Segmentation
 
@@ -87,7 +87,7 @@ The ROIs can be defined with any of the Selection Tools:
 <!-- -->
 
   
-For segmenting **multiple objects**, check *Allow multiple foreground components*. This option tells [SIOX](/plugins/siox--simple-interactive-object-extraction) to look for several objects in the image. If you introduce multiple foreground ROIs, this option will be then assumed.
+For segmenting **multiple objects**, check *Allow multiple foreground components*. This option tells [SIOX](/plugins/siox) to look for several objects in the image. If you introduce multiple foreground ROIs, this option will be then assumed.
 
 <!-- -->
 
@@ -110,7 +110,7 @@ In order to proceed with the initial segmentation, click on *Segment*.
 <!-- -->
 
   
-Remember that [SIOX](/plugins/siox--simple-interactive-object-extraction) needs at least one foreground component (ROI) to produce the segmentation, the background ROI is optional.
+Remember that [SIOX](/plugins/siox) needs at least one foreground component (ROI) to produce the segmentation, the background ROI is optional.
 
 <!-- -->
 
@@ -124,7 +124,7 @@ Following this, the initial segmentation panel is disabled. If the results are n
 
 ### Detail Refinement Brush
 
-{% include thumbnail src='/media/SIOX-Detail-Refinement-Brush.png' title='SIOX detail refinement brush panel'%} This is the **second step** in the [SIOX](/plugins/siox--simple-interactive-object-extraction) segmentation process.
+{% include thumbnail src='/media/SIOX-Detail-Refinement-Brush.png' title='SIOX detail refinement brush panel'%} This is the **second step** in the [SIOX](/plugins/siox) segmentation process.
 
 At this point, the method can be called again to refine the results obtained so far to subtract or add new areas to the background or foreground components **as many times needed**.
 

@@ -12,7 +12,7 @@ description: test description
 -   For information on the *legal* structure, see [Licensing](/licensing).' %}
 
 
-The [ImageJ](/about) project, and related projects in the [SciJava](SciJava) software ecosystem, are governed as [open source](Open_source) software projects. Everybody is welcome to [contribute](/licensing/contributing) with [plugins](/plugins), patches, [bug reports](/help/report-a-bug), [tutorials](/Category_Tutorials), [documentation](/learn), and artwork.
+The [ImageJ](/about) project, and related projects in the [SciJava](SciJava) software ecosystem, are governed as [open source](Open_source) software projects. Everybody is welcome to [contribute](/about/contributing) with [plugins](/plugins), patches, [bug reports](/help/report-a-bug), [tutorials](/Category_Tutorials), [documentation](/learn), and artwork.
 
 That said, every project needs leaders: the ones who participate in *governance* of the project, {% include wikipedia title='Software maintenance' text='maintaining'%} the software and making key decisions.
 
@@ -38,10 +38,10 @@ Projects in the [SciJava component collection](/develop/architecture) define eac
 | Founder     | Created the project. Does not imply any current participation or responsibility.                                                   |
 | Lead        | Has decision-making authority: timing of [releases](/develop/releasing), inclusion of features, etc.                              |
 | Developer   | Adds new features or enhancements. Can be assigned to address feature requests.                                                    |
-| Debugger    | Fixes [bugs](/Project_management#Issue_tracking). Can be assigned open [issues](/Project_management#Issue_tracking) to solve.                                        |
-| Reviewer    | Reviews [patch submissions](/licensing/contributing).                                                                              |
-| Support     | Responds to [community questions](/help) and [issue reports](/Project_management#Issue_tracking). Keeps the issue tracker organized. |
-| Maintainer  | Merges [patch submissions](/licensing/contributing). Cuts releases.                                                                |
+| Debugger    | Fixes [bugs](//develop/project-management#issue-tracking). Can be assigned open [issues](//develop/project-management#issue-tracking) to solve.                                        |
+| Reviewer    | Reviews [patch submissions](/about/contributing).                                                                              |
+| Support     | Responds to [community questions](/help) and [issue reports](//develop/project-management#issue-tracking). Keeps the issue tracker organized. |
+| Maintainer  | Merges [patch submissions](/about/contributing). Cuts releases.                                                                |
 | Contributor | Contributed code to the project. Does not imply any current participation or responsibility.                                       |
 
 Individuals often fill more than one role.

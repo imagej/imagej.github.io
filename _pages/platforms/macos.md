@@ -52,7 +52,7 @@ As a workaround, you can check "Use JFileChooser to open/save" in the {% include
 Frequently Asked Questions
 ==========================
 
-See also the [Frequently Asked Questions](/help/frequently-asked-questions) page.
+See also the [Frequently Asked Questions](/help/faq) page.
 
 How do I run ImageJ with Java 6?
 --------------------------------

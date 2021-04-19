@@ -33,7 +33,7 @@ Artifacts are files, most commonly a **{% include wikipedia title='JAR\_%28file\
 1.  **In development.** The source code is modified to add new features, fix bugs, etc... these modifications are expressed as *commits* by [Git](Git), whether on your local filesystem, a topic branch, or a repository fork.
 2.  **On master.** When you have a set of one or more *commits* that you are happy with (i.e. the feature is complete, or the bug is fixed) they are moved to the `master` branch of the project's repository on GitHub. This ensures the `master` branch is always *release ready*.
 3.  **Released.** When there is a need to make the current `master` branch public (i.e. it has a critical bug fix or cool new feature that users have requested) [Maven](/develop/maven) is used to *cut a release*, which is then *deployed as an artifact* to the [SciJava Maven repository](https://maven.scijava.org/). Developers can now use the new version in their own projects.
-4.  **Managed.** The new release artifact must be verified to work in the combined runtime environment with other SciJava components. Once it has been tested to work, the version listed in the SciJava component collection [Bill of Materials (BOM)](/Architecture#Bill_of_Materials) can be updated accordingly.
+4.  **Managed.** The new release artifact must be verified to work in the combined runtime environment with other SciJava components. Once it has been tested to work, the version listed in the SciJava component collection [Bill of Materials (BOM)](//develop/architecture#bill-of-materials) can be updated accordingly.
 5.  **Uploaded.** Finally, the new release artifact can be uploaded to its associated ImageJ [update site](Update_site), making it available to end users.
 
 The following sections will discuss these phases, and their associated tools and workflows, in more depth.
@@ -58,7 +58,7 @@ Phases in-depth
 Topic branches are great for isolating potentially disruptive and/or unfinished changes from the master branch, so that it always remains release ready. However, pushing directly to master has a huge time savings over filing a PR and awaiting review for days, weeks or months. Getting changes onto master quickly has many advantages:
 
 -   **Fewer conflicts.** It avoids conflicts between multiple long-running topic branches.
--   **SNAPSHOT builds.** [Travis](/develop/travis) builds the change into the latest SNAPSHOT build, making it available from the [SciJava Maven repository](/Project_management#Maven).
+-   **SNAPSHOT builds.** [Travis](/develop/travis) builds the change into the latest SNAPSHOT build, making it available from the [SciJava Maven repository](//develop/project-management#maven).
 -   **Faster support.** Supporting the community is less convoluted, with changes released to users more rapidly. Yes, you can link to changes on a topic branch. And yes, you can upload binary builds from that branch. But each extra manual step costs time—better to link directly to the latest SNAPSHOT build. There are even ImageJ [update sites](Update_sites) which serve the latest builds from master, to make it easier for non-technical users to test changes.
 -   **Less complex.** The more topic branches you have—and in particular, the more integration branches you have—the more complex the system becomes, the more supporting tooling, CI jobs, etc. are needed. And the more developer time is needed to maintain the tooling, sort through topic branches, keep track of open PRs... leaving less time for developing new features and fixing bugs.
 
@@ -136,7 +136,7 @@ The script will verify that your master branch is ready to go, then create and p
 Phase 4: Managed
 ----------------
 
-For core projects, there is an intermediate layer tying User-facing and Developer-facing components together: the [Bill of Materials](/Architecture#Bill_of_Materials) (BOM). To ensure users and developers see the same functionality, components should only be uploaded to the core update sites when their version is also updated in the {% include github org='scijava' repo='pom-scijava' label='pom-scijava' %} BOM.
+For core projects, there is an intermediate layer tying User-facing and Developer-facing components together: the [Bill of Materials](//develop/architecture#bill-of-materials) (BOM). To ensure users and developers see the same functionality, components should only be uploaded to the core update sites when their version is also updated in the {% include github org='scijava' repo='pom-scijava' label='pom-scijava' %} BOM.
 
 To update the version of your component listed in the {% include github org='scijava' repo='pom-scijava' label='pom-scijava' %} BOM, you should follow the [External developer](#Phase_1:_In_development) instructions for contributing to {% include github org='scijava' repo='pom-scijava' label='pom-scijava' %}. By [submitting a pull request](https://help.github.com/articles/using-pull-requests/) that simply modifies the managed version of your component, you will signal to the core SciJava developers that your project is ready for upload. For example, {% include github org='scijava' repo='pom-scijava' pr='40' label='this PR' %} updates the managed version of [Bio-Formats](/formats/bio-formats) to 5.5.0.
 

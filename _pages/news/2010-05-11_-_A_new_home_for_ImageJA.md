@@ -5,6 +5,6 @@ categories: News
 description: test description
 ---
 
-The heart of [Fiji](/fiji) is a slightly modified version of [ImageJ](/about): ImageJA. Today, ImageJA's home page moved from [SourceForge](http://sourceforge.net/) to [this Wiki](/software/imageja). This will help us maintain more up-to-date information about ImageJA.
+The heart of [Fiji](/fiji) is a slightly modified version of [ImageJ](/about): ImageJA. Today, ImageJA's home page moved from [SourceForge](http://sourceforge.net/) to [this Wiki](/libs/imageja). This will help us maintain more up-to-date information about ImageJA.
 
 

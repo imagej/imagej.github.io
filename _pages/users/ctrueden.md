@@ -69,7 +69,7 @@ Finally, I have the following continuous priorities:
 2.  Coordinating programming efforts at [LOCI](/orgs/loci)
 3.  User support – questions on the [Image.sc Forum](/help), [bug reports](/help/report-a-bug), [pull requests](https://github.com/search?q=is%3Apr+is%3Aopen+user%3Afiji+user%3Aimagej+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve&type=Issues), email
 4.  Server maintenance and troubleshooting
-5.  Project management tasks (e.g., managing [issues](/Project_management#Issue_tracking))
+5.  Project management tasks (e.g., managing [issues](//develop/project-management#issue-tracking))
 
 On average, I spend \~0-2 hours per day on my primary projects above. The rest is spent on these constant priorities.
 

@@ -502,14 +502,14 @@ If you want to increase the chances of your issue being worked on, you can:
 -   Provide a [minimal, complete, verifiable example](http://stackoverflow.com/help/mcve).
 -   [Describe what you already tried](http://whathaveyoutried.com/).
 -   [Put as much effort into your question](http://stackoverflow.com/help/how-to-ask) as you expect to be put into its response.
--   Consider [debugging](/develop/debugging) the issue yourself and [submitting a fix](/licensing/contributing) as a [pull request](https://help.github.com/articles/using-pull-requests).
+-   Consider [debugging](/develop/debugging) the issue yourself and [submitting a fix](/about/contributing) as a [pull request](https://help.github.com/articles/using-pull-requests).
 
 See the [bug reporting best practices](/help/bug-reporting-best-practices) article for details.
 
 How do I contribute a bug fix or patch, or propose an idea for a change?
 ------------------------------------------------------------------------
 
-See the [Contributing](/licensing/contributing) page!
+See the [Contributing](/about/contributing) page!
 
 Miscellaneous
 =============

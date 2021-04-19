@@ -29,7 +29,7 @@ The `--headless` mode
 
 
 {% capture text%}
-Headless support was originally a branch in [ImageJA](/software/imageja); it worked by putting rewritten versions of three core ImageJ classes into a file called *headless.jar*, which was put into the class path *before* `ij.jar` so they would override ImageJ"s versions.
+Headless support was originally a branch in [ImageJA](/libs/imageja); it worked by putting rewritten versions of three core ImageJ classes into a file called *headless.jar*, which was put into the class path *before* `ij.jar` so they would override ImageJ"s versions.
 
 Nowadays, we use [Javassist](/develop/javassist) for run-time patching, through the {% include github org='imagej' repo='ij1-patcher' label='ImageJ 1.x patcher' %} project. <span style="color: red">You do not need to do anything special to take advantage of this feature, except pass the `--headless` flag when launching ImageJ from the command line.</span>
 {% endcapture %}
