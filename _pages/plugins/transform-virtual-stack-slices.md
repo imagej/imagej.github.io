@@ -7,11 +7,11 @@ description: test description
 
 
 {% capture author%}
-{% include person content='Iarganda' %}, Albert Cardona and Stephan Saalfeld
+{%- include person id='iarganda' -%}, Albert Cardona and Stephan Saalfeld
 {% endcapture %}
 
 {% capture maintainer%}
-{% include person content='Iarganda' %}
+{%- include person id='iarganda' -%}
 {% endcapture %}
 
 {% capture filename%}

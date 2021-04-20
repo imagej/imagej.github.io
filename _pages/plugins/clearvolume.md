@@ -7,11 +7,11 @@ description: test description
 
 
 {% capture author%}
-{% include person content='Jug' %}, {% include person content='royerloic' %}, Martin Weigert, {% include person content='skalarproduktraum' %}
+{%- include person id='fjug' -%}, {%- include person id='royerloic' -%}, Martin Weigert, {%- include person id='skalarproduktraum' -%}
 {% endcapture %}
 
 {% capture maintainer%}
-{% include person content='Jug' %}
+{%- include person id='fjug' -%}
 {% endcapture %}
 
 {% capture source%}

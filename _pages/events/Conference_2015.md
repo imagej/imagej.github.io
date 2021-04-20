@@ -99,10 +99,10 @@ Organization
 Organizers
 ----------
 
--   {% include person content='Eliceiri' %}, [Laboratory for Optical and Computational Instrumentation](/orgs/loci) (LOCI) at [UW-Madison](http://wisc.edu/)
+-   {%- include person id='eliceiri' -%}, [Laboratory for Optical and Computational Instrumentation](/orgs/loci) (LOCI) at [UW-Madison](http://wisc.edu/)
 -   Kristy Wendt, [Laboratory for Optical and Computational Instrumentation](/orgs/loci) (LOCI) at [UW-Madison](http://wisc.edu/)
--   {% include person content='Rueden' %}, [Laboratory for Optical and Computational Instrumentation](/orgs/loci) (LOCI) at [UW-Madison](http://wisc.edu/)
--   {% include person content='Hinerm' %}, [Laboratory for Optical and Computational Instrumentation](/orgs/loci) (LOCI) at [UW-Madison](http://wisc.edu/)
+-   {%- include person id='ctrueden' -%}, [Laboratory for Optical and Computational Instrumentation](/orgs/loci) (LOCI) at [UW-Madison](http://wisc.edu/)
+-   {%- include person id='hinerm' -%}, [Laboratory for Optical and Computational Instrumentation](/orgs/loci) (LOCI) at [UW-Madison](http://wisc.edu/)
 -   Andreas Jahnen, [Luxembourg Institute of Science and Technology](http://www.list.lu/)
 
 Advisory committee
@@ -116,7 +116,7 @@ Abstract submissions were reviewed by the conference advisory committee:
 -   Gabriel Landini, [University of Birmingham](http://www.birmingham.ac.uk/)
 -   Brian Northan, [True North Intelligent Algorithms LLC](http://www.truenorth-ia.com/)
 -   Tobias Pietzsch, [Max Planck Institute of Molecular Cell Biology and Genetics](http://mpi-cbg.de/) (MPI-CBG) at Dresden
--   {% include person content='Rasband' %}, [National Institutes of Health](http://www.nih.gov/)
+-   {%- include person id='rasband' -%}, [National Institutes of Health](http://www.nih.gov/)
 -   Pavel Tomancak, [Max Planck Institute of Molecular Cell Biology and Genetics](http://mpi-cbg.de/) (MPI-CBG) at Dresden
 
 Sponsors and partners

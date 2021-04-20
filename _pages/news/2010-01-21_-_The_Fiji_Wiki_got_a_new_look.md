@@ -5,7 +5,7 @@ categories: News
 description: test description
 ---
 
-Thanks to Alexander Wende and Tim Cross, the Fiji Wiki has a new look and feel (named {% include wikipedia title='Viti Levu' text='"Viti Levu"'%}). {% include person content='Iarganda' %} also had a big hand in debugging and enhancing it.
+Thanks to Alexander Wende and Tim Cross, the Fiji Wiki has a new look and feel (named {% include wikipedia title='Viti Levu' text='"Viti Levu"'%}). {%- include person id='iarganda' -%} also had a big hand in debugging and enhancing it.
 
 In the same run, it must be mentioned that [Benjamin Schmid](http://www.neurofly.de/) put in a <u>lot</u> of work to make the nice new snapshots happen, by accomodating the new {% include github repo='fiji' path='bin/prepare-wiki-screenshot.py' label='generator script' %} with the 3D viewer's API.
 

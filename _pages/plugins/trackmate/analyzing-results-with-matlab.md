@@ -67,4 +67,4 @@ Application examples and links
 
 There are some specialized tools in [MATLAB](MATLAB) that can exploit TrackMate results. For instance, here is a [MATLAB](MATLAB) class that performs [mean-square displacement analysis](http://www.mathworks.com/matlabcentral/fileexchange/40692-mean-square-displacement-analysis-of-particles-trajectories). It is hopefully well documented in this [[MATLAB](MATLAB) tutorial](http://www.mathworks.com/matlabcentral/fileexchange/40692-mean-square-displacement-analysis-of-particles-trajectories/content/msdanalyzer/MSDTuto.html).
 
-{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez)) 10:35, 8 August 2013 (CDT)
+{%- include person id='tinevez' -%} ([talk](User_talk_JeanYvesTinevez)) 10:35, 8 August 2013 (CDT)

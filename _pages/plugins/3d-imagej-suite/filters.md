@@ -12,7 +12,7 @@ description: test description
 Author
 ------
 
-{% include person content='Tboudier' %}
+{%- include person id='mcib3d' -%}
 
 Matthias Labschütz contributed a fast version for isotropic kernels (for min, max and mean filtering)
 

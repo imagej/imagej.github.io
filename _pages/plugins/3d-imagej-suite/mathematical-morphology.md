@@ -12,7 +12,7 @@ Various algorithms for 3D Mathematical Morphology, as part of the [3D ImageJ Sui
 Author
 ------
 
-{% include person content='Tboudier' %}
+{%- include person id='mcib3d' -%}
 
 Description
 -----------

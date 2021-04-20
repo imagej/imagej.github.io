@@ -15,4 +15,4 @@ scholar: vYInKgwAAAAJ
 website: https://www.mpi-cbg.de/jug
 ---
 
-Florian Jug is a group leader at MPI-CBG. With {% include person content='Tomancak' %}, he leads the [Dresden Analysis-of-Images Suite (DAIS)](/orgs/dais) project. He is also the one to blame for the [ClearVolume plugin for Fiji](/plugins/clearvolume).
+Florian Jug is a group leader at MPI-CBG. With {%- include person id='tomancak' -%}, he leads the [Dresden Analysis-of-Images Suite (DAIS)](/orgs/dais) project. He is also the one to blame for the [ClearVolume plugin for Fiji](/plugins/clearvolume).

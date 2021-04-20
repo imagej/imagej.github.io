@@ -7,7 +7,7 @@ description: test description
 
 
 {% capture maintainer%}
-{% include person content='GrocottLab' %}
+{%- include person id='GrocottLab' -%}
 {% endcapture %}
 
 {% capture source%}

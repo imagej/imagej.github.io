@@ -5,7 +5,7 @@ categories: News,Fiji,ImageScience
 description: test description
 ---
 
-Resulting from [a discussion](https://github.com/imagescience/ImageScience/pull/1) with {% include person content='ImageScience' %}, the [ImageScience](/plugins/imagescience) plugins have moved to their own dedicated [update site](Update_site), and will no longer be distributed as part of core [Fiji](/fiji).
+Resulting from [a discussion](https://github.com/imagescience/ImageScience/pull/1) with {%- include person id='emeijering' -%}, the [ImageScience](/plugins/imagescience) plugins have moved to their own dedicated [update site](Update_site), and will no longer be distributed as part of core [Fiji](/fiji).
 
 What moved?
 -----------

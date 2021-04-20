@@ -918,7 +918,7 @@ As any other module it can be used in a script, provided the jar file is in the 
 Making TrackMate macro recordable with a 64-line script
 -------------------------------------------------------
 
-Contributed by {% include person content='Eglinger' %} during a NEUBIAS course. Quoting from Jan:
+Contributed by {%- include person id='imagejan' -%} during a NEUBIAS course. Quoting from Jan:
 
 > "The macro language is too limited to work with such awesome things as TrackMate, but that you can do everything with a more powerful scripting language. So when using a 64-line script to call it, it actually is macro recordable."
 

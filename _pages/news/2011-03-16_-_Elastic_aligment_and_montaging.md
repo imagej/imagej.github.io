@@ -13,6 +13,6 @@ Find the (still experimental) plugins for series alignment and montaging in an u
 
 [Elastic Alignment and Montage](/plugins/elastic-alignment-and-montage) was developed by [Stephan Saalfeld](http://fly.mpi-cbg.de/saalfeld/).
 
-Many thanks to {% include person content='Albertcardona' %} and {% include person content='Iarganda' %} for pushing and helping.
+Many thanks to {%- include person id='acardona' -%} and {%- include person id='iarganda' -%} for pushing and helping.
 
   

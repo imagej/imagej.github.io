@@ -7,7 +7,7 @@ description: test description
 
 
 {% capture  content %}
-The following is a blog post from {% include person content='Rueden' %} originally published on the ImageJDev web site.
+The following is a blog post from {%- include person id='ctrueden' -%} originally published on the ImageJDev web site.
 {% endcapture %}
 {% include info-box content=content %}
 

@@ -53,7 +53,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
     <tr class="even">
       <td><img src="/media/Imagej1-icon.png" width="64"/></td>
       <td><a href="/software/imagej1">ImageJ1</a></td>
-      <td>{% include person content='Rasband' %}</td>
+      <td>{%- include person id='rasband' -%}</td>
       <td>A stable version of ImageJ which has been in development since 1997.
         It has a strong, established user base, with thousands of plugins and
         macros for performing a wide variety of tasks.</td>
@@ -74,7 +74,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
     <tr class="even">
       <td></td>
       <td><a href="/software/imagejfx">ImageJFX</a></td>
-      <td>{% include person content='cmongis' %}</td>
+      <td>{%- include person id='cmongis' -%}</td>
       <td>ImageJFX is a new user interface for ImageJ, built using
         {% include wikipedia title='JavaFX' text='JavaFX' %}.</td>
       <td>2015</td>
@@ -144,7 +144,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
     <tr class="even">
       <td></td>
       <td><a href="/software/imagejx">ImageJX</a></td>
-      <td>{% include person content='Harris' %}</td>
+      <td>{%- include person id='tnargsirrah' -%}</td>
       <td>ImageJX was created as a means to discuss and explore
         improvements to ImageJ. There was an
         <a href="http://groups.google.com/group/imagejx">ImageJX mailing
@@ -161,7 +161,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
     <tr class="odd">
       <td><img src="/media/nih-image-logo.png"/></td>
       <td><a href="/software/nih-image">NIH Image</a></td>
-      <td>{% include person content='Rasband' %}</td>
+      <td>{%- include person id='rasband' -%}</td>
       <td>NIH Image is a public domain image processing and analysis
         program for the Macintosh. It is the direct predecessor of ImageJ,
         and is no longer under active development (though see ImageSXM
@@ -175,7 +175,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
 History
 -------
 
-The first imaging program that {% include person content='Rasband' %} developed, starting in the late 70s, was called simply "Image". It was written in Pascal, ran on PDP-11 minicomputers and ran in only 64KB of memory! Rasband started work on the second, [NIH Image](/software/nih-image), in 1987 when the Mac II became available. Rasband was a Mac enthusiast, and the Mac II had card slots just like the PDP-11. Rasband started work on ImageJ in 1997, when Java was becoming popular. Rasband was intrigued by the idea of creating a version of NIH Image that would "run anywhere", including as an applet in Web browsers.
+The first imaging program that {%- include person id='rasband' -%} developed, starting in the late 70s, was called simply "Image". It was written in Pascal, ran on PDP-11 minicomputers and ran in only 64KB of memory! Rasband started work on the second, [NIH Image](/software/nih-image), in 1987 when the Mac II became available. Rasband was a Mac enthusiast, and the Mac II had card slots just like the PDP-11. Rasband started work on ImageJ in 1997, when Java was becoming popular. Rasband was intrigued by the idea of creating a version of NIH Image that would "run anywhere", including as an applet in Web browsers.
 
 Timeline
 --------

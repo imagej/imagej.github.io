@@ -5,7 +5,7 @@ categories: News,ImageJ2,SCIFIO,Hackathons
 description: test description
 ---
 
-From Sunday, July 27, 2015 through Friday, July 31, 2015, {% include person content='Saalfeld' %} at HHMI Janelia in Ashburn, Virginia hosted [LOCI](/orgs/loci)'s {% include person content='Rueden' %} and {% include person content='Hinerm' %} for a hackathon to unify [SCIFIO](/software/scifio)/[ImgLib2](/imglib2) development efforts (with MPI-CBG's {% include person content='Pietzsch' %}), improve support for the [Janelia KLB format](https://bitbucket.org/fernandoamat/keller-lab-block-filetype) (with Janelia's Burkhard Hoeckendorf), and improve the development tools available for [Fiji](/fiji) developers.
+From Sunday, July 27, 2015 through Friday, July 31, 2015, {%- include person id='axtimwalde' -%} at HHMI Janelia in Ashburn, Virginia hosted [LOCI](/orgs/loci)'s {%- include person id='ctrueden' -%} and {%- include person id='hinerm' -%} for a hackathon to unify [SCIFIO](/software/scifio)/[ImgLib2](/imglib2) development efforts (with MPI-CBG's {%- include person id='tpietzsch' -%}), improve support for the [Janelia KLB format](https://bitbucket.org/fernandoamat/keller-lab-block-filetype) (with Janelia's Burkhard Hoeckendorf), and improve the development tools available for [Fiji](/fiji) developers.
 
 Executive summary
 -----------------

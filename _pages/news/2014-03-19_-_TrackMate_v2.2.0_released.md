@@ -110,6 +110,6 @@ Version 2.2.0 focuses mainly on extendability, tracking performance and detectio
 
 -   Fix several issues with zooming and decorations in TrackScheme. Fix a bug that caused the sliders to disappear for the simple style and with some zoom levels. Zooming should be now more efficient, and offers more zoom levels.
 
-{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez)) 05:32, 19 March 2014 (CDT)
+{%- include person id='tinevez' -%} ([talk](User_talk_JeanYvesTinevez)) 05:32, 19 March 2014 (CDT)
 
 

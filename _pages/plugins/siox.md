@@ -204,7 +204,7 @@ Still Image Approach:
 ImageJ version
 --------------
 
-Thanks to {% include person content='Rasband' %}, there is an [ImageJ](/ij/plugins/siox/index.html) version of this plugin without Fiji dependencies:
+Thanks to {%- include person id='rasband' -%}, there is an [ImageJ](/ij/plugins/siox/index.html) version of this plugin without Fiji dependencies:
 
 [/ij/plugins/siox/index.html](/ij/plugins/siox/index.html)
 
@@ -213,7 +213,7 @@ Licenses
 
 The [SIOX Java library](https://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Siox_Segmentation/org;h=902e7e0379b36f7f03b512552fb899861d866fa9;hb=d451306e290fb55a31052cbfc5426eaa70df17d6) developed by [Gerald Friedland](http://www.gerald-friedland.org/), [Kristian Jantz](http://www.inf.fu-berlin.de/~jantz) and [Lars Knipping](http://www.inf.fu-berlin.de/~knipping) is licensed under the **Apache License**, Version 2.0 (the "/licensing"): [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0). Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
-The Fiji plugin GUI, developed by {% include person content='Iarganda' %}, [Stephan Saalfeld](http://fly.mpi-cbg.de/~saalfeld/) and {% include person content='Schindelin' %} is free software; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt](http://www.gnu.org/licenses/gpl.txt)).
+The Fiji plugin GUI, developed by {%- include person id='iarganda' -%}, [Stephan Saalfeld](http://fly.mpi-cbg.de/~saalfeld/) and {%- include person id='dscho' -%} is free software; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt](http://www.gnu.org/licenses/gpl.txt)).
 
 See also
 --------

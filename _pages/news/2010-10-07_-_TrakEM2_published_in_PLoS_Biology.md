@@ -9,7 +9,7 @@ Big day for Fiji. [TrakEM2](/plugins/trakem2) which is a BIG part of Fiji played
 
 "An Integrated Micro- and Macroarchitectural Analysis of the Drosophila Brain by Computer-Assisted Serial Section Electron Microscopy."
 
-It is a culmination of a long-term collaboration between researchers from the Institute of Neuroinformatics ETH Zurich ({% include person content='Albertcardona' %}), the Department of Molecular Cell and Developmental Biology UCLA ([Volker Hartenstein](http://www.mcdb.ucla.edu/Research/Hartenstein)) and the MPI-CBG (particularly [Stephan Saalfeld](http://fly.mpi-cbg.de/~saalfeld/) who wrote the algorithms behind TrakEM2 registration published separately in [Bioinformatics](http://bioinformatics.oxfordjournals.org/content/26/12/i57.full?sid=8ff2b8c5-158d-461e-ab2e-b2fc5bdca5df)).
+It is a culmination of a long-term collaboration between researchers from the Institute of Neuroinformatics ETH Zurich ({%- include person id='acardona' -%}), the Department of Molecular Cell and Developmental Biology UCLA ([Volker Hartenstein](http://www.mcdb.ucla.edu/Research/Hartenstein)) and the MPI-CBG (particularly [Stephan Saalfeld](http://fly.mpi-cbg.de/~saalfeld/) who wrote the algorithms behind TrakEM2 registration published separately in [Bioinformatics](http://bioinformatics.oxfordjournals.org/content/26/12/i57.full?sid=8ff2b8c5-158d-461e-ab2e-b2fc5bdca5df)).
 
 All papers, software and data are Open Access showing the way of how science should be done in the 21st century.
 

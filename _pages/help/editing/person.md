@@ -7,47 +7,46 @@ description: this page demonstrates how to use the person include tag.
 
 ## Usage
 
-Specify a person using either their ImageJ wiki username, or
-[GitHub](GitHub) username.
+Specify a person using their [GitHub](GitHub) username, or a plain/unlinked name.
 
 ## Examples
 
 {% raw %}
 ```
-{% include person content='Rasband' %}
+{%- include person id='rasband' -%}
 ```
 {% endraw %}
 
-{% include person content='Rasband' %}
+{%- include person id='rasband' -%}
 
 {% raw %}
 ```
-{% include person content='Rueden' %}
+{%- include person id='ctrueden' -%}
 ```
 {% endraw %}
 
-{% include person content='Rueden' %}
+{%- include person id='ctrueden' -%}
 
 {% raw %}
 ```
-{% include person content='Dietzc' %}
+{%- include person id='dietzc' -%}
 ```
 {% endraw %}
 
-{% include person content='Dietzc' %}
+{%- include person id='dietzc' -%}
 
 {% raw %}
 ```
-{% include person content='marktsuchida' %}
+{%- include person id='marktsuchida' -%}
 ```
 {% endraw %}
 
-{% include person content='marktsuchida' %}
+{%- include person id='marktsuchida' -%}
 
 {% raw %}
 ```
-{% include person content='Jane Doe' %}
+{%- include person name='Jane Doe' -%}
 ```
 {% endraw %}
 
-{% include person content='Jane Doe' %}
+{%- include person name='Jane Doe' -%}

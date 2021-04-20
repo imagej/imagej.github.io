@@ -288,14 +288,14 @@ Although the Stitching depends on quite some Fiji-specific libraries, there is a
 Additionally to the Stitching plugins, it contains the following libraries. I want to thank all the authors for their support and help:
 
 -   *edu\_mines\_jtk.jar*: Efficient 1-dimensional FFT implementation by [Dave Hale](http://inside.mines.edu/~dhale/jtk/).
--   *mpicbg.jar*: Transformation package by {% include person content='Saalfeld' %}
--   *[imglib](/imglib1)*: N-dimensional image processing library for Java by {% include person content='Pietzsch' %}, {% include person content='StephanP' %} & {% include person content='Saalfeld' %}
--   *fiji-lib.jar & Fiji\_Plugins.jar*: Fiji libraries by {% include person content='Schindelin' %}
--   *loci\_tools.jar*: [Bio-Formats](/formats/bio-formats) Java library for reading and writing life sciences image file formats. I want to especially thank {% include person content='Rueden' %} and {% include person content='Linkert' %}
+-   *mpicbg.jar*: Transformation package by {%- include person id='axtimwalde' -%}
+-   *[imglib](/imglib1)*: N-dimensional image processing library for Java by {%- include person id='tpietzsch' -%}, {%- include person id='StephanPreibisch' -%} & {%- include person id='axtimwalde' -%}
+-   *fiji-lib.jar & Fiji\_Plugins.jar*: Fiji libraries by {%- include person id='dscho' -%}
+-   *loci\_tools.jar*: [Bio-Formats](/formats/bio-formats) Java library for reading and writing life sciences image file formats. I want to especially thank {%- include person id='ctrueden' -%} and {%- include person id='melissalinkert' -%}
 
 Additionally, I want to thank the following people for discussions, providing images and pushing me to develop and continuously improve the Stitching plugins:
 
-Danielle Bower, {% include person content='Albertcardona' %}, Nicolas Gompel, Wieland Huttner, {% include person content='Jefferis' %}, Arnim Jenett, {% include person content='tomka' %}, David Koos, Jan Peychl, {% include person content='Tomancak' %}, James Truman, Nicholas Weiler and {% include person content='White' %}
+Danielle Bower, {%- include person id='acardona' -%}, Nicolas Gompel, Wieland Huttner, {%- include person id='jefferis' -%}, Arnim Jenett, {%- include person id='tomka' -%}, David Koos, Jan Peychl, {%- include person id='tomancak' -%}, James Truman, Nicholas Weiler and {%- include person id='chalkie666' -%}
 
 See Also
 --------

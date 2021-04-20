@@ -134,13 +134,13 @@ During the [EMBO Practical Course on Lightsheet Microscopy](http://openspim.org/
 
 {% include youtube url='https://www.youtube.com/embed/IupXS\_On2rg'%}
 
-This 30-minute talk by {% include person content='StephanP' %} covers the theory behind registration of multiview lightsheet microscopy data and it also quickly addresses the problem of multiview fusion & deconvolution.
+This 30-minute talk by {%- include person id='StephanPreibisch' -%} covers the theory behind registration of multiview lightsheet microscopy data and it also quickly addresses the problem of multiview fusion & deconvolution.
 
 ### Tutorial: Fiji Multiview Lightsheet Reconstruction Software
 
 {% include youtube url='https://www.youtube.com/embed/0IkaSwfPYw0'%}
 
-This one hour tutorial by {% include person content='StephanP' %} covers the basic usage of this multiview reconstruction software for Fiji. Documentation, source code, bug reports and feature requests can be found [on SourceForge](https://sourceforge.net/projects/multiviewreconstruction/).
+This one hour tutorial by {%- include person id='StephanPreibisch' -%} covers the basic usage of this multiview reconstruction software for Fiji. Documentation, source code, bug reports and feature requests can be found [on SourceForge](https://sourceforge.net/projects/multiviewreconstruction/).
 
 Comments, Bugs & Feature Requests
 ---------------------------------

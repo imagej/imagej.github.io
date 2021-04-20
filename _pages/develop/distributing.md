@@ -172,7 +172,7 @@ Useful extensions deserve corresponding documentation explaining how to use them
 <td><p><strong>Steps</strong></p></td>
 </tr>
 <tr class="odd">
-<td><ul><li>Prepare an HTML page modeled after the <a href="/ij/plugins/index.html">list of ImageJ 1.x plugins</a>.</li><li>Email it to {% include person content='Rasband' %}, the developer of ImageJ 1.x, and sole maintainer of the <a href="/ij/index.html">ImageJ 1.x website</a>.</li></ul></td>
+<td><ul><li>Prepare an HTML page modeled after the <a href="/ij/plugins/index.html">list of ImageJ 1.x plugins</a>.</li><li>Email it to {%- include person id='rasband' -%}, the developer of ImageJ 1.x, and sole maintainer of the <a href="/ij/index.html">ImageJ 1.x website</a>.</li></ul></td>
 </tr>
 <tr class="even">
 <td style="vertical-align: top"></td>

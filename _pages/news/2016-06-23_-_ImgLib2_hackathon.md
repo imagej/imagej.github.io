@@ -5,7 +5,7 @@ categories: News,Hackathons,ImageJ2
 description: test description
 ---
 
-<img src="/media/Janelia-2016-hackathon.jpg" title="fig:ImgLib2 hackers, from left to right: {% include person content='Saalfeld' %}, {% include person content='Dietzc' %}, {% include person content='Rueden' %}, {% include person content='Pietzsch' %}." width="450" alt="ImgLib2 hackers, from left to right: {% include person content='Saalfeld' %}, {% include person content='Dietzc' %}, {% include person content='Rueden' %}, {% include person content='Pietzsch' %}." /> From Sunday, June 19, 2016 through Tuesday, June 28, 2016, {% include person content='Saalfeld' %} at HHMI Janelia in Ashburn, Virginia hosted {% include person content='Pietzsch' %}, {% include person content='Rueden' %} and {% include person content='Dietzc' %} for a [hackathon](/events/Hackathon) to improve the core [ImageJ2](/software/imagej2) data model.
+<img src="/media/Janelia-2016-hackathon.jpg" title="fig:ImgLib2 hackers, from left to right: {%- include person id='axtimwalde' -%}, {%- include person id='dietzc' -%}, {%- include person id='ctrueden' -%}, {%- include person id='tpietzsch' -%}." width="450" alt="ImgLib2 hackers, from left to right: {%- include person id='axtimwalde' -%}, {%- include person id='dietzc' -%}, {%- include person id='ctrueden' -%}, {%- include person id='tpietzsch' -%}." /> From Sunday, June 19, 2016 through Tuesday, June 28, 2016, {%- include person id='axtimwalde' -%} at HHMI Janelia in Ashburn, Virginia hosted {%- include person id='tpietzsch' -%}, {%- include person id='ctrueden' -%} and {%- include person id='dietzc' -%} for a [hackathon](/events/Hackathon) to improve the core [ImageJ2](/software/imagej2) data model.
 
 Timeline
 --------
@@ -67,7 +67,7 @@ PlotData=
 
 </timeline>
 
-And {% include person content='Kharrington' %} stopped by on the afternoon of the 23rd to discuss some issues for a bit.
+And {%- include person id='kephale' -%} stopped by on the afternoon of the 23rd to discuss some issues for a bit.
 
 Discussions and progress
 ------------------------

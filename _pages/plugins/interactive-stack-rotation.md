@@ -7,11 +7,11 @@ description: test description
 
 
 {% capture author%}
-{% include person content='Saalfeld' %} ([1](mailto:saalfeld@mpi-cbg.de))
+{%- include person id='axtimwalde' -%} ([1](mailto:saalfeld@mpi-cbg.de))
 {% endcapture %}
 
 {% capture maintainer%}
-{% include person content='Saalfeld' %}
+{%- include person id='axtimwalde' -%}
 {% endcapture %}
 
 {% capture source%}

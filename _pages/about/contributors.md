@@ -24,91 +24,91 @@ Note: This list is only irregularly updated.
 
 ### Principal investigators
 
--   {% include person content='Eliceiri' %}[1] (ImageJ, Fiji)
--   {% include person content='Tomancak' %}[2] (Fiji)
--   {% include person content='Jug' %}[3] (Fiji)
+-   {%- include person id='eliceiri' -%}[1] (ImageJ, Fiji)
+-   {%- include person id='tomancak' -%}[2] (Fiji)
+-   {%- include person id='fjug' -%}[3] (Fiji)
 -   [Anne Carpenter](http://www.broadinstitute.org/~anne/)[4] (CellProfiler)
 -   [Michael Berthold](http://www.informatik.uni-konstanz.de/berthold/mitglieder/prof-dr-michael-berthold/)[5][6] (KNIME)
 -   [Jason Swedlow](http://www.lifesci.dundee.ac.uk/people/jason-swedlow)[7][8] (OME)
 
 ### {% include logo content='ImageJ' size='32px' %}[ImageJ](/about)
 
--   {% include person content='Rasband' %}[9] (lead, [ImageJ 1.x](/software/imagej1))
--   {% include person content='Rueden' %}[10] (lead, [ImageJ2](/software/imagej2))
--   {% include person content='Dietzc' %}[11][12]
--   {% include person content='Bnorthan' %}[13]
--   {% include person content='Hinerm' %}[14] (Sep 2010-Jun 2016)
--   {% include person content='Leek' %}[15] (Jan 2010-Apr 2016)
--   {% include person content='Schindelin' %}[16] (Sep 2011-Nov 2014)
--   {% include person content='Grislis' %}[17] (Jan 2010-Dec 2013)
--   {% include person content='Bdezonia' %}[18] (Jan 2010-Nov 2013)
--   {% include person content='Harris' %}[19] (Nov 2009-Jan 2012)
+-   {%- include person id='rasband' -%}[9] (lead, [ImageJ 1.x](/software/imagej1))
+-   {%- include person id='ctrueden' -%}[10] (lead, [ImageJ2](/software/imagej2))
+-   {%- include person id='dietzc' -%}[11][12]
+-   {%- include person id='bnorthan' -%}[13]
+-   {%- include person id='hinerm' -%}[14] (Sep 2010-Jun 2016)
+-   {%- include person id='LeeKamentsky' -%}[15] (Jan 2010-Apr 2016)
+-   {%- include person id='dscho' -%}[16] (Sep 2011-Nov 2014)
+-   {%- include person id='grislis' -%}[17] (Jan 2010-Dec 2013)
+-   {%- include person id='bdezonia' -%}[18] (Jan 2010-Nov 2013)
+-   {%- include person id='tnargsirrah' -%}[19] (Nov 2009-Jan 2012)
 -   Adam Fraser[20] (Nov 2009-Aug 2011)
--   {% include person content='Lentz' %}[21] (Nov 2009-Feb 2011)
+-   {%- include person id='Lentz' -%}[21] (Nov 2009-Feb 2011)
 -   See also [ImageJ forum heroes](http://forum.imagej.net/users)
 
 ### {% include logo content='ImgLib2' size='32px' %}[ImgLib2](/imglib2)
 
--   {% include person content='Pietzsch' %}[22] (lead)
--   {% include person content='StephanP' %}[23][24]
--   {% include person content='Saalfeld' %}[25][26]
+-   {%- include person id='tpietzsch' -%}[22] (lead)
+-   {%- include person id='StephanPreibisch' -%}[23][24]
+-   {%- include person id='axtimwalde' -%}[25][26]
 
 
 
 ### {% include logo content='Fiji' size='32px' %}[Fiji](/fiji)
 
--   {% include person content='Rueden' %}[27] (lead)
--   {% include person content='JeanYvesTinevez' %}[28]
--   {% include person content='Iarganda' %}[29]
--   {% include person content='StephanP' %}[30][31]
--   {% include person content='Saalfeld' %}[32][33]
--   {% include person content='Pietzsch' %}[34]
--   {% include person content='Eglinger' %}[35]
--   {% include person content='Tiago' %}[36][37]
--   {% include person content='Hadim' %}[38]
--   {% include person content='White' %}[39]
--   {% include person content='Landini' %}[40]
--   {% include person content='Kharrington' %}[41][42]
--   {% include person content='Twagner' %}[43]
--   {% include person content='Hinerm' %}[44] (former)
--   {% include person content='Albertcardona' %}[45][46] (founder)
--   {% include person content='Schindelin' %}[47] (former, founder)
+-   {%- include person id='ctrueden' -%}[27] (lead)
+-   {%- include person id='tinevez' -%}[28]
+-   {%- include person id='iarganda' -%}[29]
+-   {%- include person id='StephanPreibisch' -%}[30][31]
+-   {%- include person id='axtimwalde' -%}[32][33]
+-   {%- include person id='tpietzsch' -%}[34]
+-   {%- include person id='imagejan' -%}[35]
+-   {%- include person id='tferr' -%}[36][37]
+-   {%- include person id='hadim' -%}[38]
+-   {%- include person id='chalkie666' -%}[39]
+-   {%- include person id='landinig' -%}[40]
+-   {%- include person id='kephale' -%}[41][42]
+-   {%- include person id='thorstenwagner' -%}[43]
+-   {%- include person id='hinerm' -%}[44] (former)
+-   {%- include person id='acardona' -%}[45][46] (founder)
+-   {%- include person id='dscho' -%}[47] (former, founder)
 -   See also [graph of Fiji contributors](https://github.com/fiji/fiji/graphs/contributors)
 
 ### [BigDataViewer](/plugins/bdv)
 
--   {% include person content='Pietzsch' %}[48] (lead)
--   {% include person content='StephanP' %}[49][50]
+-   {%- include person id='tpietzsch' -%}[48] (lead)
+-   {%- include person id='StephanPreibisch' -%}[49][50]
 
 ### [TrakEM2](/plugins/trakem2)
 
--   {% include person content='Albertcardona' %}[51][52] (lead)
--   {% include person content='Saalfeld' %}[53][54]
+-   {%- include person id='acardona' -%}[51][52] (lead)
+-   {%- include person id='axtimwalde' -%}[53][54]
 
 
 
 ### {% include logo content='SCIFIO' size='32px' %}[SCIFIO](/software/scifio)
 
--   {% include person content='Rueden' %}[55] (lead)
--   {% include person content='Hinerm' %}[56] (former, founder)
+-   {%- include person id='ctrueden' -%}[55] (lead)
+-   {%- include person id='hinerm' -%}[56] (former, founder)
 
 ### {% include logo content='CellProfiler' size='32px' %}[CellProfiler](/software/cellprofiler)
 
--   {% include person content='0x00B1' %}[57] (lead)
--   {% include person content='Leek' %}[58] (former)
+-   {%- include person id='0x00b1' -%}[57] (lead)
+-   {%- include person id='LeeKamentsky' -%}[58] (former)
 
 ### {% include logo content='KNIME' size='32px' %}[KNIME Image Processing](/software/knime)
 
--   {% include person content='Dietzc' %}[59][60] (lead)
--   {% include person content='hornm' %}[61]
--   {% include person content='tibuch' %}[62][63]
--   {% include person content='Squareys' %}[64][65]
--   {% include person content='Gab1one' %}[66][67]
+-   {%- include person id='dietzc' -%}[59][60] (lead)
+-   {%- include person id='hornm' -%}[61]
+-   {%- include person id='tibuch' -%}[62][63]
+-   {%- include person id='Squareys' -%}[64][65]
+-   {%- include person id='gab1one' -%}[66][67]
 
 ### {% include logo content='OME' size='32px' %}[OME](/software/omero)
 
--   {% include person content='Moore' %}[68][69] (co-lead)
--   {% include person content='jburel' %}[70] (co-lead)
+-   {%- include person id='joshmoore' -%}[68][69] (co-lead)
+-   {%- include person id='jburel' -%}[70] (co-lead)
 -   See also [OME Teams](http://openmicroscopy.org/site/about/who-ome)
 
 
@@ -123,7 +123,7 @@ The specific plugin maintainers can be found at the [ maintainer page](Maintaine
 
 ### Special thanks
 
-Our deep thanks to {% include person content='Rasband' %}, author of [ImageJ1](/software/imagej1), for all his support and patience!
+Our deep thanks to {%- include person id='rasband' -%}, author of [ImageJ1](/software/imagej1), for all his support and patience!
 
 
 

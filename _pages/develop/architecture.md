@@ -52,9 +52,9 @@ Furthermore, many groups maintain their own GitHub organizations with components
 -   [LOCI](/orgs/loci) – [uw-loci](https://github.com/uw-loci)
 -   [FLIMJ](/plugins/flimj) – [flimlib](https://github.com/flimlib)
 -   [DAIS](/orgs/dais) – [TrnDy](https://github.com/TrnDy)
--   {% include person content='Jug' %} – [juglab](https://github.com/juglab)
--   {% include person content='Saalfeld' %} – [saalfeldlab](https://github.com/saalfeldlab)
--   {% include person content='StephanPreibisch' %} – [PreibischLab](https://github.com/PreibischLab)
+-   {%- include person id='fjug' -%} – [juglab](https://github.com/juglab)
+-   {%- include person id='axtimwalde' -%} – [saalfeldlab](https://github.com/saalfeldlab)
+-   {%- include person id='StephanPreibisch' -%} – [PreibischLab](https://github.com/PreibischLab)
 -   &lt;your organization here!&gt;
 
 The diagram on the right shows organizational relationships between SciJava software components.

@@ -22,24 +22,24 @@ LOCI is a founding member of the [SciJava](SciJava) collaboration, and a partner
 Developers
 ----------
 
--   {% include person content='Eliceiri' %} (PI)
--   {% include person content='Rueden' %} (lead)
--   {% include person content='marktsuchida' %} (Micro-Manager lead)
--   {% include person content='Hinerm' %} (developer, Sep 2010-Jun 2016, Jun 2020-current)
--   {% include person content='Etarena' %} (developer)
--   {% include person content='elevans' %} (developer)
--   {% include person content='gselzer' %} (developer, [ImageJ Ops](/libs/imagej-ops))
--   {% include person content='Xanthorapedia' %} (developer, [FLIMJ](/plugins/flimj))
+-   {%- include person id='eliceiri' -%} (PI)
+-   {%- include person id='ctrueden' -%} (lead)
+-   {%- include person id='marktsuchida' -%} (Micro-Manager lead)
+-   {%- include person id='hinerm' -%} (developer, Sep 2010-Jun 2016, Jun 2020-current)
+-   {%- include person id='etadobson' -%} (developer)
+-   {%- include person id='elevans' -%} (developer)
+-   {%- include person id='gselzer' -%} (developer, [ImageJ Ops](/libs/imagej-ops))
+-   {%- include person id='Xanthorapedia' -%} (developer, [FLIMJ](/plugins/flimj))
 
 Alumni
 ------
 
--   {% include person content='Awalter2' %} (Sep 2014-May 2018)
--   {% include person content='Leon' %} (Sep 2015-May 2017)
--   {% include person content='Alecneevel' %} (Jul 2015-Jan 2017)
--   {% include person content='Schindelin' %} (Sep 2011-Nov 2014)
--   {% include person content='Grislis' %} (Jan 2010-Dec 2013)
--   {% include person content='Bdezonia' %} (Jan 2010-Nov 2013)
+-   {%- include person id='awalter17' -%} (Sep 2014-May 2018)
+-   {%- include person id='lnyng' -%} (Sep 2015-May 2017)
+-   {%- include person id='aneevel' -%} (Jul 2015-Jan 2017)
+-   {%- include person id='dscho' -%} (Sep 2011-Nov 2014)
+-   {%- include person id='grislis' -%} (Jan 2010-Dec 2013)
+-   {%- include person id='bdezonia' -%} (Jan 2010-Nov 2013)
 
 See also
 --------

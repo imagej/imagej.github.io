@@ -17,7 +17,7 @@ A large [review](http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2084.html)
 
 The focus contains perspectives on two other open source platforms for bioimage analysis, [Icy](http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2075.html) and [BioImageXD](http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2047.html) (both of which attended our [latest hackathon](/news/2011-12-14_-_Fiji_Hackathon_in_Dresden)) as well as an excellent [commentary](http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2073.html) on interoperability which remains the challenge for the community.
 
-The history of ImageJ is [discussed](http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2089.html) by who else but {% include person content='Rasband' %} and Kevin Eliceiri. Gene Myers [explains](http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2024.html) how the bioimage informatics field resembles early days in bioinformatics which is indeed confirmation for everyone involved that we are doing the right thing.
+The history of ImageJ is [discussed](http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2089.html) by who else but {%- include person id='rasband' -%} and Kevin Eliceiri. Gene Myers [explains](http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2024.html) how the bioimage informatics field resembles early days in bioinformatics which is indeed confirmation for everyone involved that we are doing the right thing.
 
 Finally, there is a great diversity of scientific papers describing image analysis tools including Stephan Saalfeld's spectacular EM registration [paper](http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2072.html).
 

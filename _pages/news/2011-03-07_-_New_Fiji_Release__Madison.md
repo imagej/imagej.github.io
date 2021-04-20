@@ -89,7 +89,7 @@ Calling **fiji-<platform> --updater** calls a command-line version of the Fiji U
 
 Any script or macro can now live in any menu, by putting it into Fiji.app/plugins/Scripts/. For example, if you want to have a macro in {% include bc path='File | Import'%}, you might save it to Fiji.app/plugins/Scripts/File/Import/.
 
-As always, Fiji was synchronized frequently with ImageJ, and a few bug fixes were contributed to ImageJ through Fiji. Thanks to {% include person content='Rasband' %}.
+As always, Fiji was synchronized frequently with ImageJ, and a few bug fixes were contributed to ImageJ through Fiji. Thanks to {%- include person id='rasband' -%}.
 
 Fiji's bundled Java Runtime Environment is now at version 1.6u24 (to update, run *Update Java* from Fiji Updater's *Advanced mode*).
 
@@ -161,7 +161,7 @@ The output of multiple scripts in the Script Editor is now separate; you will se
 
 When the Script Editor is asked to open images, it lets ImageJ open them rather than opening gibberish in a new tab. Thanks to Thomas Julou.
 
-The Script Editor is now usable even if the user updated ImageJ to the daily version. Thanks to {% include person content='Rasband' %}.
+The Script Editor is now usable even if the user updated ImageJ to the daily version. Thanks to {%- include person id='rasband' -%}.
 
 The Script Editor offers to {% include bc path='File | Open Recent'%}. Thanks to Albert Cardona.
 

@@ -18,6 +18,6 @@ The update includes:
 
 See [all news here.](http://t2.ini.uzh.ch/trakem2.html)
 
-Thanks to Javier Cabrera Chaves, Christian Niedworok and {% include person content='Saalfeld' %} for testing, bug reports, features and fixes.
+Thanks to Javier Cabrera Chaves, Christian Niedworok and {%- include person id='axtimwalde' -%} for testing, bug reports, features and fixes.
 
 

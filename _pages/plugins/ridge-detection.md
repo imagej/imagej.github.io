@@ -9,7 +9,7 @@ description: test description
 
 
 {% capture author%}
-{% include person content='Twagner' %}, {% include person content='Hinerm' %}
+{%- include person id='thorstenwagner' -%}, {%- include person id='hinerm' -%}
 {% endcapture %}
 {% include info-box software='Fiji' name='Ridge (Line) Detection Plugin' author=author maintainer='Unmaintained' filename='Ridge\_Detect.jar [\[1](https://github.com/thorstenwagner/ij-ridgedetection/releases/latest) \]' source='Github [\[2](https://github.com/thorstenwagner/ij-ridgedetection) \]' latest-version='v1.4.0 (20 Aug 2017)' status='Unmaintained' %}
 

@@ -6,7 +6,7 @@ description: test description
 
 
 {% capture author%}
-{% include person content='Kharrington' %}
+{%- include person id='kephale' -%}
 {% endcapture %}
 {% include info-box name='FunImageJ' software='ImageJ' author=author filename='' source=' [FunImageJ](https://github.com/kephale/fun.imagej)' released='in development' latest-version='in development' status='alpha' category='[Lisp](Category_Lisp)' website='https://github.com/kephale/fun.imagej' %}== Purpose ==
 

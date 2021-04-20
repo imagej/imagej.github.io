@@ -7,11 +7,11 @@ description: test description
 
 
 {% capture author%}
-{% include person content='Iarganda' %}, David Legland
+{%- include person id='iarganda' -%}, David Legland
 {% endcapture %}
 
 {% capture maintainer%}
-{% include person content='Iarganda' %}
+{%- include person id='iarganda' -%}
 {% endcapture %}
 
 {% capture source%}

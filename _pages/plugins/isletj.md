@@ -6,11 +6,11 @@ description: test description
 
 
 {% capture author%}
-Jan Švihlík and {% include person content='Schier' %}
+Jan Švihlík and {%- include person id='Schier' -%}
 {% endcapture %}
 
 {% capture maintainer%}
-{% include person content='Schier' %}
+{%- include person id='Schier' -%}
 {% endcapture %}
 {% include info-box name='IsletJ' software='ImageJ' author=author maintainer=maintainer status='Active' %}IsletJ is a plugin for analysis of microscopy images of Langerhans islets in [ImageJ](/about). It provides free, open source tool for analysis of islets diameter and number and for estimation of sample purity (ratio of endocrine/exocrine tissue area).
 

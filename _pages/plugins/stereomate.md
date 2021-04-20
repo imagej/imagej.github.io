@@ -7,11 +7,11 @@ description: test description
 
 
 {% capture author%}
-{% include person content='stevenjwest' %}
+{%- include person id='stevenjwest' -%}
 {% endcapture %}
 
 {% capture maintainer%}
-{% include person content='stevenjwest' %}
+{%- include person id='stevenjwest' -%}
 {% endcapture %}
 {% include info-box software='FIJI' name='StereoMate' author=author maintainer=maintainer filename='Stereo\_Mate.jar' source='https://github.com/stevenjwest/StereoMate' released='August 2019' status='stable' website='/ij/plugins/stereomate.html' %}
 

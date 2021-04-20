@@ -80,10 +80,10 @@ We understand that segmentation evaluation is an ongoing and sensitive research 
 Organizers
 ----------
 
--   {% include person content='Iarganda' %} (Howard Hughes Medical Institute, Department of Brain and Cognitive Sciences, Massachusetts Institute of Technology, Cambridge, MA, USA)
+-   {%- include person id='iarganda' -%} (Howard Hughes Medical Institute, Department of Brain and Cognitive Sciences, Massachusetts Institute of Technology, Cambridge, MA, USA)
 -   [Sebastian Seung](http://hebb.mit.edu/people/seung/) (Howard Hughes Medical Institute, Department of Brain and Cognitive Sciences, Massachusetts Institute of Technology, Cambridge, MA, USA)
--   {% include person content='Albertcardona' %} (Institute of Neuroinformatics, Uni/ETH Zurich, Switzerland)
--   {% include person content='Schindelin' %} (University of Wisconsin-Madison, WI, USA)
+-   {%- include person id='acardona' -%} (Institute of Neuroinformatics, Uni/ETH Zurich, Switzerland)
+-   {%- include person id='dscho' -%} (University of Wisconsin-Madison, WI, USA)
 
 References
 ----------

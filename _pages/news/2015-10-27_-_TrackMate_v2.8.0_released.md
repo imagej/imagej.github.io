@@ -131,6 +131,6 @@ This bug was first reported by Anna Gilles though many may have feel the pain.
 
 Now fixed. Bug reported by Jan Eglinger.
 
-{% include person content='JeanYvesTinevez' %} [CCCT](User_CCCT) ([talk](User_talk_CCCT)) 10:53, 27 October 2015 (CDT)
+{%- include person id='tinevez' -%} [CCCT](User_CCCT) ([talk](User_talk_CCCT)) 10:53, 27 October 2015 (CDT)
 
 

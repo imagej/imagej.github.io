@@ -10,4 +10,4 @@ github: frauzufall
 website: http://frauzufall.de
 ---
 
-Deborah Schmidt aka frauzufall works as a software developer in the {% include person content='Jug' %} Lab at [CSBD](/orgs/csbd) / [MPI-CBG](/orgs/mpi-cbg).
+Deborah Schmidt aka frauzufall works as a software developer in the {%- include person id='fjug' -%} Lab at [CSBD](/orgs/csbd) / [MPI-CBG](/orgs/mpi-cbg).

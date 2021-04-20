@@ -6,11 +6,11 @@ description: test description
 
 
 {% capture author%}
-{% include person content='Maarzt' %}
+{%- include person id='maarzt' -%}
 {% endcapture %}
 
 {% capture maintainer%}
-{% include person content='Maarzt' %}
+{%- include person id='maarzt' -%}
 {% endcapture %}
 
 {% capture source%}

@@ -8,11 +8,11 @@ description: test description
 
 
 {% capture author%}
-{% include person content='Saalfeld' %}, {% include person content='Pietzsch' %}, {% include person content='StephanP' %}, {% include person content='Rueden' %}, {% include person content='Leek' %}, {% include person content='Bdezonia' %}, {% include person content='Schindelin' %}, {% include person content='Dietzc' %}, {% include person content='hornm' %}, {% include person content='Albertcardona' %}, {% include person content='Harris' %}, {% include person content='Lindsey' %}
+{%- include person id='axtimwalde' -%}, {%- include person id='tpietzsch' -%}, {%- include person id='StephanPreibisch' -%}, {%- include person id='ctrueden' -%}, {%- include person id='LeeKamentsky' -%}, {%- include person id='bdezonia' -%}, {%- include person id='dscho' -%}, {%- include person id='dietzc' -%}, {%- include person id='hornm' -%}, {%- include person id='acardona' -%}, {%- include person id='tnargsirrah' -%}, {%- include person id='larrylindsey' -%}
 {% endcapture %}
 
 {% capture maintainer%}
-{% include person content='Pietzsch' %}, {% include person content='Rueden' %}
+{%- include person id='tpietzsch' -%}, {%- include person id='ctrueden' -%}
 {% endcapture %}
 
 {% capture source%}

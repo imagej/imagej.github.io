@@ -7,7 +7,7 @@ description: test description
 
 {% include project content='ImageJ1' %}
 {% capture author%}
-{% include person content='Rasband' %}, {% include person content='Schindelin' %}, {% include person content='Albertcardona' %}, et al
+{%- include person id='rasband' -%}, {%- include person id='dscho' -%}, {%- include person id='acardona' -%}, et al
 {% endcapture %}
 
 {% capture source%}
@@ -19,7 +19,7 @@ Older versions [in ImageJ Maven repository](http://maven.imagej.net/content/repo
 Why ImageJA?
 ------------
 
-The [ImageJ1](/software/imagej1) project, developed by {% include person content='Rasband' %}, lives in the {% include github org='imagej' repo='imagej1' label='imagej/imagej1 repository' %} on [GitHub](/develop/github). The `imagej1` repository uses the Ant build system. Changes are pushed (at most) once per day, with a corresponding datestamp. This scheme has some drawbacks:
+The [ImageJ1](/software/imagej1) project, developed by {%- include person id='rasband' -%}, lives in the {% include github org='imagej' repo='imagej1' label='imagej/imagej1 repository' %} on [GitHub](/develop/github). The `imagej1` repository uses the Ant build system. Changes are pushed (at most) once per day, with a corresponding datestamp. This scheme has some drawbacks:
 
 -   ImageJ1 artifacts cannot be published easily to public repositories for use as a dependency downstream.
 -   The `imagej1` repository's source code does not precisely correspond to ImageJ 1.x's actual releases. Hence, that repository does not have any [Git](Git) release tags.

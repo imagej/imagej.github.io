@@ -7,11 +7,11 @@ description: test description
 
 
 {% capture author%}
- [David Legland](https://github.com/dlegland) , {% include person content='Iarganda' %}
+ [David Legland](https://github.com/dlegland) , {%- include person id='iarganda' -%}
 {% endcapture %}
 
 {% capture maintainer%}
- [David Legland](https://github.com/dlegland) , {% include person content='Iarganda' %}
+ [David Legland](https://github.com/dlegland) , {%- include person id='iarganda' -%}
 {% endcapture %}
 
 {% capture source%}

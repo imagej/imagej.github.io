@@ -271,6 +271,6 @@ Wrapping up
 
 The full code, as well as the code for another tracker example can be found on [github](https://github.com/fiji/plugins/trackmate-examples/tree/master/src/main/java/plugin/trackmate/examples/tracker). And this concludes flatly our series of tutorials on how to extend TrackMate. Go forth now, and bend it to your needs; it is *your* tool.
 
-{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez)) 09:26, 5 September 2014 (CDT)
+{%- include person id='tinevez' -%} ([talk](User_talk_JeanYvesTinevez)) 09:26, 5 September 2014 (CDT)
 
 

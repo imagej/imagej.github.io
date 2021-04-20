@@ -1875,6 +1875,7 @@ User:Landini :: users/landinig
 User:Leek :: users/LeeKamentsky
 User:Lentz :: users/Lentz
 User:Leon :: users/lnyng
+User:LeonYang5114 :: users/lnyng
 User:Lhilbert :: users/lhilbert
 User:Lindsey :: users/larrylindsey
 User:Linkert :: users/melissalinkert
@@ -1928,6 +1929,7 @@ User:Pietzsch :: users/tpietzsch
 User:PillarTracker :: users/PillarTracker
 User:PluginListBot :: users/PluginListBot
 User:Pmoravec :: users/fiji-hpc
+User:Rasband :: users/rasband
 User:Rdom :: users/rimadoma
 User:Rerger :: users/Rerger
 User:ResultsToExcel :: plugins/read-and-write-excel

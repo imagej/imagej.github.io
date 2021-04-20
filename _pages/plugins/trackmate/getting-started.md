@@ -328,7 +328,7 @@ That is the end of this introductory tutorial. As you can see, it is quite long.
 
 Now that you know how the plugin works, you should be able to reach the end result in less than 30 seconds...
 
-{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez)) 04:18, 1 August 2013 (CDT)
+{%- include person id='tinevez' -%} ([talk](User_talk_JeanYvesTinevez)) 04:18, 1 August 2013 (CDT)
 
 References
 ----------

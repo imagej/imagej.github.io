@@ -32,7 +32,7 @@ Known Bugs and Issues
 Contact
 -------
 
-The author of this plugin is {% include person content='Lindsey' %}
+The author of this plugin is {%- include person id='larrylindsey' -%}
 
 ------------------------------------------------------------------------
 

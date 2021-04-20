@@ -17,7 +17,7 @@ The [Imglib](/imglib1) provides a cell container, where each cell is an arbitrar
 
 **Goal:** create a 3-way viewer for a 3d instance of an [Imglib](/imglib1)'s cell container.  
 **Language:** any supported by Fiji, preferably java.  
-**Contact:** {% include person content='Albertcardona' %}
+**Contact:** {%- include person id='acardona' -%}
 
 Plugin for Mixed-File-Format MultiVirtualHyperStack viewing window
 ------------------------------------------------------------------
@@ -73,7 +73,7 @@ You are welcome to use any scientifically-relevant dataset of your choice, but w
 
 **Goal:** Implement a number of segmentation algorithms based on machine learning.  
 **Language:** Java.  
-**Mentor:** {% include person content='Iarganda' %}, {% include person content='Albertcardona' %}  
+**Mentor:** {%- include person id='iarganda' -%}, {%- include person id='acardona' -%}  
 
 Implementing algorithms for Imglib
 ----------------------------------
@@ -88,7 +88,7 @@ The new imglib supports dimension-, storage- and data type independent image pro
 
 **Goal:** Implement generic algorithms for image processing.  
 **Language:** Java.  
-**Mentor:** [Stephan Preibisch](http://fly.mpi-cbg.de/preibisch), [Stephan Saalfeld](http://fly.mpi-cbg.de/saalfeld)\], [Tobias Pietzsch](http://www.wv.inf.tu-dresden.de/People/Pietzsch.html), {% include person content='Albertcardona' %}  
+**Mentor:** [Stephan Preibisch](http://fly.mpi-cbg.de/preibisch), [Stephan Saalfeld](http://fly.mpi-cbg.de/saalfeld)\], [Tobias Pietzsch](http://www.wv.inf.tu-dresden.de/People/Pietzsch.html), {%- include person id='acardona' -%}  
 
 Colorizing algorithms
 ---------------------
@@ -388,7 +388,7 @@ A unique/common segmentation interface
 
 I have collected near 15 new histogram segmentation methods that would be better put under a single interface together with others already available.
 
-Note: this is more or less implemented in the Auto\_Threshold and Auto\_Local\_Threshold plugins.--{% include person content='Landini' %} 14:47, 29 November 2009 (CET)
+Note: this is more or less implemented in the Auto\_Threshold and Auto\_Local\_Threshold plugins.--{%- include person id='landinig' -%} 14:47, 29 November 2009 (CET)
 
 Virtual microscope-like image viewer
 ------------------------------------

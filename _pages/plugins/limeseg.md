@@ -6,10 +6,10 @@ description: test description
 
 
 {% capture maintainer%}
-{% include person content='NicoKiaru' %}
+{%- include person id='NicoKiaru' -%}
 {% endcapture %}
 {% capture author%}
-{% include person content='NicoKiaru' %}, {% include person content='Sarah Machado' %}
+{%- include person id='NicoKiaru' -%}, {%- include person name='Sarah Machado' -%}
 {% endcapture %}
 
 {% capture source%}

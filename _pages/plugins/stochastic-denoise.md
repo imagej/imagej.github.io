@@ -8,7 +8,7 @@ description: test description
 {% include unreleased%}
 
 {% capture maintainer%}
-{% include person content='Funke' %}
+{%- include person id='funkey' -%}
 {% endcapture %}
 
 {% capture source%}

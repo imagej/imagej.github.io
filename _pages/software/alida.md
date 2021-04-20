@@ -7,11 +7,11 @@ description: test description
 
 
 {% capture maintainer%}
-Stefan Posch, {% include person content='MiToBo' %}
+Stefan Posch, {%- include person id='bimoelle' -%}
 {% endcapture %}
 
 {% capture author%}
-Stefan Posch, {% include person content='MiToBo' %}
+Stefan Posch, {%- include person id='bimoelle' -%}
 {% endcapture %}
 
 {% capture source%}

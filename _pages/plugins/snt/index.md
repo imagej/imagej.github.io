@@ -8,11 +8,11 @@ description: test description
 <seo metak="snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroanatomy" metad="snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroanatomy" /> {% include sntnavbar%}
  
 {% capture author%}
-{% include person content='Tiago' %}, {% include person content='Kharrington' %}, {% include person content='Carshadi' %}
+{%- include person id='tferr' -%}, {%- include person id='kephale' -%}, {%- include person id='carshadi' -%}
 {% endcapture %}
 
 {% capture maintainer%}
-{% include person content='Tiago' %}
+{%- include person id='tferr' -%}
 {% endcapture %}
 
 {% capture source%}

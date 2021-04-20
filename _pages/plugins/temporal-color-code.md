@@ -9,7 +9,7 @@ description: test description
 
 
 {% capture author%}
- [Kota Miura](http://cmci.embl.de) , {% include person content='Schindelin' %}
+ [Kota Miura](http://cmci.embl.de) , {%- include person id='dscho' -%}
 {% endcapture %}
 
 {% capture source%}

@@ -17,6 +17,6 @@ The update includes:
 -   Now {% include key content='Ctrl' %}+{% include key content='A' %} ({% include key content='Command' %}+{% include key content='A' %} in macosx) selects all but sensitive to object visibility and the presence of a ROI.
 -   Now one must {% include key content='Shift' %}+{% include key content='click' %} the first point to get the Profile to close, or {% include key content='Shift' %}+{% include key content='C' %} any time to toggle the closed state.
 
-Thanks to [German Koestinger](http://www.ini.uzh.ch/people/german) and {% include person content='Saalfeld' %} for testing and bug reports.
+Thanks to [German Koestinger](http://www.ini.uzh.ch/people/german) and {%- include person id='axtimwalde' -%} for testing and bug reports.
 
 

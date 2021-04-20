@@ -9,11 +9,11 @@ description: test description
 
 
 {% capture author%}
-{% include person content='Xu Xiaochun' %}, {% include person content='Felix Martin Margadant' %}
+{%- include person name='Xu Xiaochun' -%}, {%- include person name='Felix Martin Margadant' -%}
 {% endcapture %}
 
 {% capture maintainer%}
-{% include person content='Xu Xiaochun' %}
+{%- include person name='Xu Xiaochun' -%}
 {% endcapture %}
 
 {% capture source%}

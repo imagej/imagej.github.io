@@ -7,7 +7,7 @@ description: test description
 
 
 {% capture  content %}
-The following article was written by {% include person content='Scrivello' %} as he researched how to write plugins for [ImageJ2](/software/imagej2). It is reproduced here as a [News](/news) post in the hope that it may help others, particularly during 2016 while the information continues to be most accurate and relevant.
+The following article was written by {%- include person id='Scrivello' -%} as he researched how to write plugins for [ImageJ2](/software/imagej2). It is reproduced here as a [News](/news) post in the hope that it may help others, particularly during 2016 while the information continues to be most accurate and relevant.
 {% endcapture %}
 {% include info-box content=content %}
 

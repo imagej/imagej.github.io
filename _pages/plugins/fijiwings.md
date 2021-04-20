@@ -8,11 +8,11 @@ description: test description
 <img src="/media/File.png" title="fig:File.png" width="500" alt="File.png" />{% include clear%}
 
 {% capture author%}
-Alex Dobens, {% include person content='Dobensl' %}
+Alex Dobens, {%- include person id='Dobensl' -%}
 {% endcapture %}
 
 {% capture maintainer%}
-{% include person content='Dobensl' %}
+{%- include person id='Dobensl' -%}
 {% endcapture %}
 {% include info-box content='Plugin' software='Fiji/ImageJ' name='FijiWings' author=author maintainer=maintainer filename='fiji-macosx.zip' source='https://sourceforge.net/projects/fijiwings/' status='stable' %}=== Introduction ===
 

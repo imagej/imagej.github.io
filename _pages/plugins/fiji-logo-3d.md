@@ -10,7 +10,7 @@ Purpose
 
 This [javascript](Javascript_Scripting) code displays the Fiji logo in 3D, within the [3D Viewer](/plugins/3d-viewer), and illustrate how to create and display 3D objects from a script, using Fiji facilities.
 
-The script is maintained by {% include person content='Schindelin' %}.
+The script is maintained by {%- include person id='dscho' -%}.
 
 Code
 ----

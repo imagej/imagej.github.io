@@ -7,11 +7,11 @@ description: test description
 
 <seo metak="Fourier analysis, autocorrelation" metad="Fourier analysis, autocorrelation" /> 
 {% capture maintainer%}
-{% include person content='Gcardone' %}
+{%- include person id='giocard' -%}
 {% endcapture %}
 
 {% capture author%}
-{% include person content='Gcardone' %} and Maria Spletter
+{%- include person id='giocard' -%} and Maria Spletter
 {% endcapture %}
 
 {% capture source%}

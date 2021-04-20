@@ -36,13 +36,13 @@ The Cookbook pages themselves were adapted from the defunct [MBF "ImageJ for mic
 
 The Cookbook technical writer team includes:
 
--   {% include person content='Rueden' %} (technical oversight and maintenance)
--   {% include person content='Apal4' %} (January 2014 - May 2015)
--   {% include person content='Schindelin' %} (June 2013 - November 2014)
--   {% include person content='Khildebrand' %} (June 2013 - December 2013)
--   {% include person content='Amacall' %} (June 2013 - December 2013)
--   {% include person content='Ruizhi' %} (November 2013 - December 2013)
--   {% include person content='Gtcwildfire' %} (June 2013 - August 2013)
+-   {%- include person id='ctrueden' -%} (technical oversight and maintenance)
+-   {%- include person id='apal4' -%} (January 2014 - May 2015)
+-   {%- include person id='dscho' -%} (June 2013 - November 2014)
+-   {%- include person id='Khildebrand' -%} (June 2013 - December 2013)
+-   {%- include person id='Amacall' -%} (June 2013 - December 2013)
+-   {%- include person id='Ruizhi' -%} (November 2013 - December 2013)
+-   {%- include person id='Gtcwildfire' -%} (June 2013 - August 2013)
 
 The plugins featured in the Cookbook were collated from various sources and have various authors and licenses.
 

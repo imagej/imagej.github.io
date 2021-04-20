@@ -271,7 +271,7 @@ References and links.
 
 <references/>
 
-{% include person content='JeanYvesTinevez' %} ([talk](User_talk_JeanYvesTinevez)) 09:33, 5 December 2014 (CST)
+{%- include person id='tinevez' -%} ([talk](User_talk_JeanYvesTinevez)) 09:33, 5 December 2014 (CST)
 
 [1] These are the 35 words added by the Oxford Online Dictionary during summer 2012. And another one.
 

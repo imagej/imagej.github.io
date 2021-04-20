@@ -7,7 +7,7 @@ description: test description
 
 <seo metak="local maxima,local minima,extrema,inflection point, signal processing, spectral analysis" metad="local maxima,local minima,extrema,inflection point, signal processing, spectral analysis" /> 
 {% capture author%}
-{% include person content='Tiago' %}
+{%- include person id='tferr' -%}
 {% endcapture %}
 
 {% capture filename%}

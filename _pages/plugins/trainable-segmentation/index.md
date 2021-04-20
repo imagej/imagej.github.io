@@ -13,11 +13,11 @@ description: test description
 
 
 {% capture author%}
-Verena Kaynig, {% include person content='Iarganda' %}, Albert Cardona
+Verena Kaynig, {%- include person id='iarganda' -%}, Albert Cardona
 {% endcapture %}
 
 {% capture maintainer%}
- [Verena Kaynig](http://www.kaynig.de) and {% include person content='Iarganda' %}
+ [Verena Kaynig](http://www.kaynig.de) and {%- include person id='iarganda' -%}
 {% endcapture %}
 
 {% capture source%}

@@ -7,7 +7,7 @@ description: test description
 
 
 {% capture author%}
-{% include person content='Rasband' %}
+{%- include person id='rasband' -%}
 {% endcapture %}
 {% include info-box software='ImageJ' name='Grid' author=author filename=' [Grid\_.class](/ij/plugins/download/Grid_.class) (5,575 Bytes)' source=' [Grid\_.java](/ij/plugins/download/Grid_.java) (5,123 Bytes)' released='25 April 2001' latest-version='02 July 2007' status='active' category='[Image annotation](Category_Image_annotation)' website='/ij/plugins/grid.html' %}
 
