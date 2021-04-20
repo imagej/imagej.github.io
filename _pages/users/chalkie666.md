@@ -4,7 +4,7 @@ title: User ›White
 description: test description
 
 name: Daniel James White
-title: Ambassador of Fiji
+honorific: Ambassador of Fiji
 affiliation: GE Healthcare (Applied Precision, Inc.)
 forum: chalkie666
 github: chalkie666

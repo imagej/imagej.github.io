@@ -4,7 +4,7 @@ title: User ›Axtimwalde
 description: test description
 
 name: Stephan Saalfeld
-title: Architect of ImgLib2
+honorific: Architect of ImgLib2
 gravatar: a711a96ffa29c82f5614224ed6592c8b
 affiliation: HHMI Janelia
 forum: axtimwalde

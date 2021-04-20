@@ -4,7 +4,6 @@ title: User ›Frauzufall
 description: test description
 
 name: Deborah Schmidt
-title: Software Developer
 affiliation: MPI-CBG Dresden | /orgs/mpi-cbg
 forum: frauzufall
 github: frauzufall

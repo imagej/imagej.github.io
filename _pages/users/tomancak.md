@@ -4,7 +4,7 @@ title: User ›Tomancak
 description: test description
 
 name: Pavel Tomancak
-title: Godfather of Fiji
+honorific: Godfather of Fiji
 website: http://www.mpi-cbg.de/research/research-groups/pavel-tomancak/
 affiliation: MPI-CBG Dresden | /orgs/mpi-cbg
 github: tomancak

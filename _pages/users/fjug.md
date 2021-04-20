@@ -4,7 +4,7 @@ title: User ›Jug
 description: test description
 
 name: Florian Jug
-title: Grand Poobah
+honorific: Grand Poobah
 affiliation:
   - CSB Dresden (CSBD) | /orgs/csbd
   - MPI-CBG Dresden | /orgs/mpi-cbg

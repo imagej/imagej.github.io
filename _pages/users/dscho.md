@@ -5,7 +5,7 @@ description: test description
 
 name: Johannes Schindelin
 gravatar: c2938f05cefad961fec000e7734c73ac
-title: Mother of Fiji
+honorific: Mother of Fiji
 affiliation:
   - MPI-CBG Dresden (former) | /orgs/mpi-cbg
   - Eliceiri Lab / LOCI (former) | /orgs/loci

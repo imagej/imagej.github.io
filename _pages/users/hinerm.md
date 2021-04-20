@@ -4,7 +4,7 @@ title: User ›Hinerm
 description: test description
 
 name: Mark Hiner
-title: Champion of ImageJ
+honorific: Champion of ImageJ
 gravatar: 02dba515add5d5c4991f6b93520d502c
 affiliation:
   - Eliceiri Lab / LOCI | /orgs/loci
