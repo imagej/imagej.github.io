@@ -9,7 +9,7 @@ As announced in the forum [here](https://forum.image.sc/t/getting-bigdataviewer-
 Installation
 ------------
 
-Enable the [bigdataviewer playground update site](https://imagej.net/Following_an_update_site) (https://biop.epfl.ch/Fiji-Bdv-Playground/).
+Enable the [bigdataviewer playground update site](/Following_an_update_site) (https://biop.epfl.ch/Fiji-Bdv-Playground/).
 
 What bigdataviewer-playground brings
 -----

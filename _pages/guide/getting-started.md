@@ -11,7 +11,7 @@ This part provides basic information on ImageJ installation, troubleshooting and
 Introduction
 ------------
 
-ImageJ is a [public domain](http://rsb.info.nih.gov/ij/disclaimer.html) Java image processing and analysis program inspired by [NIH Image](http://rsb.info.nih.gov/nih-image/) for the Macintosh. It runs, either as an online applet or as a downloadable application, on any computer with a Java 1.5 or later virtual machine. [Downloadable distributions](http://imagej.nih.gov/ij/download.html) are available for Windows, Mac OS X and Linux. It can display, edit, analyze, process, save and print 8--bit, 16--bit and 32--bit images. It can read many image formats including TIFF, GIF, JPEG, BMP, DICOM, FITS and 'raw'. It supports 'stacks' (and hyperstacks), a series of images that share a single window. It is multithreaded, so time-consuming operations such as image file reading can be performed in parallel with other operations<span class="FootOuter"><span class="SupFootMarker"> \[A\] </span><span class="HoverFoot"><span class="SupFootMarker"> \[A\] </span>A somehow outdated list of ImageJ's features is available at http://imagej.nih.gov/ij/features.html></span></span.
+ImageJ is a [public domain](/ij/disclaimer.html) Java image processing and analysis program inspired by [NIH Image](/software/nih-image/) for the Macintosh. It runs, either as an online applet or as a downloadable application, on any computer with a Java 1.5 or later virtual machine. [Downloadable distributions](/ij/download.html) are available for Windows, Mac OS X and Linux. It can display, edit, analyze, process, save and print 8--bit, 16--bit and 32--bit images. It can read many image formats including TIFF, GIF, JPEG, BMP, DICOM, FITS and 'raw'. It supports 'stacks' (and hyperstacks), a series of images that share a single window. It is multithreaded, so time-consuming operations such as image file reading can be performed in parallel with other operations<span class="FootOuter"><span class="SupFootMarker"> \[A\] </span><span class="HoverFoot"><span class="SupFootMarker"> \[A\] </span>A somehow outdated list of ImageJ's features is available at https://imagej.net/ij/features.html></span></span.
 
 It can calculate area and pixel value statistics of user-defined selections. It can measure distances and angles. It can create density histograms and line profile plots. It supports standard image processing functions such as contrast manipulation, sharpening, smoothing, edge detection and median filtering.
 
@@ -23,7 +23,7 @@ ImageJ was designed with an open architecture that provides extensibility via Ja
 
 Being public domain open source software, an ImageJ user has the [four essential freedoms](http://wikieducator.org/The_right_license/The_essential_freedoms) defined by the Richard Stallman in 1986: 1) The freedom to run the program, for any purpose; 2) The freedom to study how the program works, and change it to make it do what you wish; 3) The freedom to redistribute copies so you can help your neighbor; 4) The freedom to improve the program, and release your improvements to the public, so that the whole community benefits.
 
-ImageJ is being developed on Mac OS X using its built in editor and Java compiler, plus the *BBEdit* editor and the *Ant* build tool. The source code is freely [available](http://imagej.nih.gov/ij/developer/source/index.html). The author, Wayne Rasband (<wsr@nih.gov>), is a Special Volunteer at the National Institute of Mental Health, Bethesda, Maryland, USA.
+ImageJ is being developed on Mac OS X using its built in editor and Java compiler, plus the *BBEdit* editor and the *Ant* build tool. The source code is freely [available](/ij/developer/source/index.html). The author, Wayne Rasband (<wsr@nih.gov>), is a Special Volunteer at the National Institute of Mental Health, Bethesda, Maryland, USA.
 
 <div class="See">
 
@@ -34,15 +34,15 @@ ImageJ is being developed on Mac OS X using its built in editor and Java compi
 Installing and Maintaining ImageJ
 ---------------------------------
 
-ImageJ can be downloaded from http://imagej.nih.gov/ij/download.html>. Details on how to install ImageJ on [↓](#index-Linux)[Linux](http://imagej.nih.gov/ij/docs/install/linux.html), [Mac OS 9](http://imagej.nih.gov/ij/docs/install/mac.html), [↓](#index-Mac-OS-X)[Mac OS X](http://imagej.nih.gov/ij/docs/install/osx.html) and [↓](#index-Windows-(OS))[Windows](http://imagej.nih.gov/ij/docs/install/windows.html) <span class="bibcites">[1]([#biblio-1)\]</span> are available at <http://imagej.nih.gov/ij/docs/install/> ({% include bc path="Help | [Installation...↓](#sub:Installation...)" %} command). Specially useful are the platform-specific *Troubleshooting* and *Known Problems* sections. [↓](#index-Fiji)[Fiji↓](#sub:Fiji-intro) installation is described at <https://fiji.sc/wiki/index.php/downloads.
+ImageJ can be downloaded from [here](/ij/download.html). Details on how to install ImageJ on [↓](#index-Linux)[Linux](/ij/docs/install/linux.html), [Mac OS 9](/ij/docs/install/mac.html), [↓](#index-Mac-OS-X)[Mac OS X](/ij/docs/install/osx.html) and [↓](#index-Windows-(OS))[Windows](/ij/docs/install/windows.html) <span class="bibcites">[1]([#biblio-1)\]</span> are available [here](/ij/docs/install/) ({% include bc path="Help | [Installation...↓](#sub:Installation...)" %} command). Specially useful are the platform-specific *Troubleshooting* and *Known Problems* sections. [↓](#index-Fiji)[Fiji↓](#sub:Fiji-intro) installation is described at <https://fiji.sc/wiki/index.php/downloads.
 
-The downloaded package may not contain the latest bug fixes so it is recommended to upgrade ImageJ right after a first installation. [↓Updating](#index-Updates) IJ[↓](#nom-ij) consists only of running {% include bc path="Help | [Update ImageJ...↓](#sub:Update-ImageJ...)" %}, which will install the latest <span class="Filename">[ij.jar](http://imagej.nih.gov/ij/upgrade/)</span> in the ImageJ folder (on Linux and Windows) or inside the ImageJ.app (on Mac OS X).
+The downloaded package may not contain the latest bug fixes so it is recommended to upgrade ImageJ right after a first installation. [↓Updating](#index-Updates) IJ[↓](#nom-ij) consists only of running {% include bc path="Help | [Update ImageJ...↓](#sub:Update-ImageJ...)" %}, which will install the latest <span class="Filename">[ij.jar](/ij/upgrade/)</span> in the ImageJ folder (on Linux and Windows) or inside the ImageJ.app (on Mac OS X).
 
-{% include bc path="Help | [Update ImageJ...↓](#sub:Update-ImageJ...)" %} can be used to upgrade (or downgrade) the <span class="Filename">ij.jar</span> file to *release updates* or *daily builds*. Release updates are announced frequently on the [IJ news website](http://imagej.nih.gov/ij/notes.html) and are labelled alphabetically (e.g., v. 1.43m). Typically, these releases contain several new features and bug fixes, described in detail on the [ImageJ News page](http://imagej.nih.gov/ij/notes.html). *Daily builds,* on the other hand, are labelled with numeric sub-indexes (e.g., v. 1.43n4) and are often released without documentation. Nevertheless, if available, release notes for daily builds can be found at http://imagej.nih.gov/ij/source/release-notes.html>. When a release cycle ends (v. 1.42 ended with 1.42q, v. 1.43 with 1.43u, etc.) an *installation package* is created, downloadable from <http://imagej.nih.gov/ij/download.html. Typically, this package is bundled with a small list of add-ons ([Macros↓](#sub:Macros-ExtendingIJ), [Scripts↓](#sub:Scripts) and [Plugins↓](#sub:Plugins)).
+{% include bc path="Help | [Update ImageJ...↓](#sub:Update-ImageJ...)" %} can be used to upgrade (or downgrade) the <span class="Filename">ij.jar</span> file to *release updates* or *daily builds*. Release updates are announced frequently on the [IJ news website](/ij/notes.html) and are labelled alphabetically (e.g., v. 1.43m). Typically, these releases contain several new features and bug fixes, described in detail on the [ImageJ News page](/ij/notes.html). *Daily builds,* on the other hand, are labelled with numeric sub-indexes (e.g., v. 1.43n4) and are often released without documentation. Nevertheless, if available, release notes for daily builds can be found [here](/ij/source/release-notes.html). When a release cycle ends (v. 1.42 ended with 1.42q, v. 1.43 with 1.43u, etc.) an *installation package* is created, downloadable from [here](/ij/download.html). Typically, this package is bundled with a small list of add-ons ([Macros↓](#sub:Macros-ExtendingIJ), [Scripts↓](#sub:Scripts) and [Plugins↓](#sub:Plugins)).
 
 <div class="See">
 
-[Luts, Macros and Tools Updater](http://imagej.nih.gov/ij/macros/toolsets/Luts%20Macros%20and%20Tools%20Updater.txt), a macro toolset that performs live-updating of [macros](http://imagej.nih.gov/ij/macros/) listed on the ImageJ web site
+[Luts, Macros and Tools Updater](/ij/macros/toolsets/Luts%20Macros%20and%20Tools%20Updater.txt), a macro toolset that performs live-updating of [macros](/ij/macros/) listed on the ImageJ web site
 
 </div>
 
@@ -50,7 +50,7 @@ The downloaded package may not contain the latest bug fixes so it is recommended
 
 ImageJ alone is not that powerful: it's real strength is the vast repertoire of [Plugins↓](#sub:Plugins) that extend ImageJ's functionality beyond its basic core. The many hundreds, probably thousands, freely available plugins from contributors around the world play a pivotal role in ImageJ's success <span class="bibcites">[<span class="bib-index">112</span>]([#biblio-162)\]</span>. Running {% include bc path="Help | [Update ImageJ...↓](#sub:Update-ImageJ...)" %}, however, will not update any of the plugins you may have installed<span class="FootOuter"><span class="SupFootMarker"> \[B\] </span><span class="HoverFoot"><span class="SupFootMarker"> \[B\] </span>Certain plugins, however, provide self-updating mechanisms (e.g., [ObjectJ](http://simon.bio.uva.nl/objectj/) and the [↓](#index-Bio-Formats)[OME Bio-Formats](http://loci.wisc.edu/software/bio-formats)).</span></span>.
 
-ImageJ add-ons ([Plugins↓](#sub:Plugins), [Scripts↓](#sub:Scripts) and [Macros↓](#sub:Macros-ExtendingIJ)) are available from several sources ([ImageJ's plugins page](http://imagej.nih.gov/ij/plugins/) \[{% include bc path="Help | [Plugins...↓](#sub:Plugins...)" %}\], [ImageJ Information and Documentation Portal](http://imagejdocu.tudor.lu/doku.php?id=plugin:start) and [Fiji's webpage](https://fiji.sc/wiki/index.php/Category:Plugins), among others) making manual updates of a daunting task. This reason alone, makes it extremely convenient the use of [ImageJDistributions↑](#sec:ImageJ-Distributions) bundled with a pre-organized collection of add-ons.
+ImageJ add-ons ([Plugins↓](#sub:Plugins), [Scripts↓](#sub:Scripts) and [Macros↓](#sub:Macros-ExtendingIJ)) are available from several sources ([ImageJ's plugins page](/ij/plugins/) \[{% include bc path="Help | [Plugins...↓](#sub:Plugins...)" %}\], [ImageJ Information and Documentation Portal](http://imagejdocu.tudor.lu/doku.php?id=plugin:start) and [Fiji's webpage](https://fiji.sc/wiki/index.php/Category:Plugins), among others) making manual updates of a daunting task. This reason alone, makes it extremely convenient the use of [ImageJDistributions↑](#sec:ImageJ-Distributions) bundled with a pre-organized collection of add-ons.
 
 Below is a list of the most relevant projects that address the seeming difficult task of organizing and maintaining ImageJ beyond its basics. If you are a life scientist and have doubts about which distribution to choose you should opt for [Fiji↓](#sub:Fiji-intro). It is heavily maintained, offers an automatic updater, improved scripting capabilities and ships with powerful plugins. More specialized adaptations of ImageJ are discussed in [Software Packages Built on Top of ImageJ↓](#sub:Other-Software-Packages).
 
@@ -170,7 +170,7 @@ Several packages exist that allow ImageJ to [↓interact](#index-Interoperabilit
 </div>
 <div class="See">
 
-[ImageJ related links](http://imagej.nih.gov/ij/links.html), list of [related imaging software](http://developer.imagej.net/category/web-links/related-imaging-software) on the [ImageJ2↓](#sub:ImageJ2intro) website
+[ImageJ related links](/ij/links.html), list of [related imaging software](http://developer.imagej.net/category/web-links/related-imaging-software) on the [ImageJ2↓](#sub:ImageJ2intro) website
 
 </div>
 
@@ -191,7 +191,7 @@ Getting Help
 
 ### Help on Image Analysis
 
-[↓](#index-Ethics)[↓Below](#index-Acceptable-manipulation) is a list of online resources (in no particular order) related to image processing and scientific image analysis, complementing the list of [external resources on the IJ web site](http://imagej.nih.gov/ij/links.html).
+[↓](#index-Ethics)[↓Below](#index-Acceptable-manipulation) is a list of online resources (in no particular order) related to image processing and scientific image analysis, complementing the list of [external resources on the IJ web site](/ij/links.html).
 
 #### Ethics in Scientific Image Processing
 
@@ -237,7 +237,7 @@ ImageJ Related Publications on page [1↓](#sec:IJ-related-pub)
 
 Below is a list of the ImageJ [↓help](#index-Help-resources) resources that complement this guide (*see* [$↓](#sec:Guide-Formats)). Specific documentation on advanced uses of ImageJ (macro programming, plugin development, etc.) is discussed in [Extending ImageJ↓](#sec:Extending-ImageJ).
 
-1.  The ImageJ [online documentation pages](http://imagej.nih.gov/ij/docs/)  
+1.  The ImageJ [online documentation pages](/ij/docs/)  
     Can be accessed via the {% include bc path="Help | [Documentation...↓](#sub:Documentation...)" %} command.
 2.  The [↓](#index-Fiji)[Fiji↑](#sub:Fiji-intro) webpage:  
     https://fiji.sc/
@@ -247,10 +247,10 @@ Below is a list of the ImageJ [↓help](#index-Help-resources) resources that co
     http://imagejdocu.tudor.lu/doku.php?id=video:start&s%5B%5D=video> and <http://www.youtube.com/user/fijichannel. New ImageJ users will probably profit from [Christine Labno's video tutorial](http://imagejdocu.tudor.lu/doku.php?id=video:beginner_help:imagej_beginner_s_tutorial).
 5.  The [↓ImageJ](#index-MBF-ImageJ) for Microscopy manual  
     http://www.macbiophotonics.ca/imagej/
-6.  Several online documents, most of them listed at:  
-    http://imagej.nih.gov/ij/links.html> and <http://imagej.nih.gov/ij/docs/examples/
+6.  Several online documents, most of them listed
+    [here](/ij/links.html) and [here](/ij/docs/examples/).
 7.  Mailing lists:[↓](#index-Mailing-lists)
-    1.  **ImageJ** — http://imagej.nih.gov/ij/list.html  
+    1.  [**ImageJ**](/ij/list.html)  
         General user and developer discussion about ImageJ. Can be accessed via the {% include bc path="Help | [Mailing List...↓](#sub:List-Archives...)" %} command. This list is also mirrored at [Nabble](http://imagej.1557.n6.nabble.com/) and [Gmane](http://dir.gmane.org/gmane.comp.java.imagej). You may find it easier to search and browse the list archives on these mirrors. Specially useful are the [RSS feeds](Feed___rss.gmane.org_topics_excerpts_gmane.comp.java.imagej) and the *[frames and threads](http://news.gmane.org/gmane.comp.java.imagej)* view provided by Gmane.
     2.  **Fiji users** --- http://groups.google.com/group/fiji-users  
         For user discussion specific to [Fiji↑](#sub:Fiji-intro) (rather than core ImageJ).
@@ -267,7 +267,7 @@ If you are having problems with ImageJ, you should inquiry about them in the app
 
 1.  Read the documentation files (described earlier in this section) before posting. Because there will always be a natural lag between the implementation of key features and their documentation it may be wise to check briefly the ImageJ news website ({% include bc path="Help | [ImageJ News...↓](#sub:ImageJ-News...)" %}).
 2.  Look up the mailing list archives ({% include bc path="Help | [Mailing List...↓](#sub:List-Archives...)" %}). Most of your questions may have already been answered.
-3.  If you think you are facing a [↓bug](#index-Bug-(reporting)) try to upgrade to the latest version of ImageJ ({% include bc path="Help | [Update ImageJ...↓](#sub:Update-ImageJ...)" %}). You should also check if you are running the latest version of the Java Virtual Machine for your operating system. Detailed instructions on how to submit a bug report are found at http://imagej.nih.gov/ij/docs/faqs.html#bug.
+3.  If you think you are facing a [↓bug](#index-Bug-(reporting)) try to upgrade to the latest version of ImageJ ({% include bc path="Help | [Update ImageJ...↓](#sub:Update-ImageJ...)" %}). You should also check if you are running the latest version of the Java Virtual Machine for your operating system. Detailed instructions on how to submit a bug report are found [here](/ij/docs/faqs.html#bug).
 4.  Remember that in most cases you can find answers within your own ImageJ installation without even connecting to the internet since the heuristics for finding commands or writing macros have been significantly improved in later versions (*see* [Finding Commands↓](#sec:Finding-Commands) and [Extending ImageJ↓](#sec:Extending-ImageJ)).
 5.  As with any other mailing list, you should always follow basic [netiquette](http://en.wikipedia.org/wiki/Netiquette), namely:
     1.  Use descriptive subject lines — *Re: Problem with Image&gt;Set Scale command* is much more effective than a general *Re: Problem.*

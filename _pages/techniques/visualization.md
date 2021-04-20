@@ -27,7 +27,33 @@ When analyzing quantitative data in an image, a false-color LUT (in this case al
 
 Here's a list of recommended options to choose a LUT:
 
-<table><tbody><tr class="odd"><td><p><strong>LUT Name</strong></p></td><td><p><strong>Properties</strong></p></td><td><p><strong>Common Usage</strong></p></td><td><p><strong>Histogram</strong></p></td></tr><tr class="even"><td><p><strong>mpl-viridis</strong></p></td><td><ul><li><em>Perceptually uniform</em><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li><li>Dark-to-Bright mapping</li></ul></td><td><p>Quantitative display of positive values on a continuous scale</p></td><td><figure><img src="/media/M51-Histogram-mplViridis.png" title="Histogram of the M51 Galaxy sample image with the mpl-viridis LUT applied" width="300" alt="Histogram of the M51 Galaxy sample image with the mpl-viridis LUT applied" /><figcaption aria-hidden="true">Histogram of the M51 Galaxy sample image with the <em>mpl-viridis</em> LUT applied</figcaption></figure></td></tr><tr class="odd"><td><p><strong>HiLo</strong></p></td><td><ul><li>Minimum of display range is blue</li><li>Maximum of display range is red</li><li>Normal gray-scale LUT for all other values</li></ul></td><td><p>Assessment of over-/under-exposure in an image</p></td><td><figure><img src="/media/M51-Histogram-HiLo.png" title="Histogram of the M51 Galaxy sample image with the displayed range adjusted and the HiLo LUT applied" width="300" alt="Histogram of the M51 Galaxy sample image with the displayed range adjusted and the HiLo LUT applied" /><figcaption aria-hidden="true">Histogram of the M51 Galaxy sample image with the displayed range adjusted and the <em>HiLo</em> LUT applied</figcaption></figure></td></tr><tr class="even"><td><p><strong>phase</strong></p></td><td><ul><li><em>Diverging</em> color map</li><li>Bright center, dark min and max</li></ul></td><td></td><td><figure><img src="/media/Randomized-Image-Histogram-phase.png" title="Histogram of a randomized calibrated 8-bit image with the phase LUT applied" width="300" alt="Histogram of a randomized calibrated 8-bit image with the phase LUT applied" /><figcaption aria-hidden="true">Histogram of a randomized calibrated 8-bit image with the <em>phase</em> LUT applied</figcaption></figure></td></tr></tbody></table><section class="footnotes" role="doc-endnotes"><hr /><ol><li id="fn1" role="doc-endnote"><a href="https://bids.github.io/colormap/">https://bids.github.io/colormap/</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></li></ol></section>
+<table><tbody>
+<tr class="odd">
+<th>LUT Name</th>
+<th>Properties</th>
+<th>Common Usage</th>
+<th>Histogram</th>
+</tr>
+<tr class="even">
+<th>mpl-viridis</th>
+<td><ul><li><em>Perceptually uniform</em><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li><li>Dark-to-Bright mapping</li></ul></td>
+<td>Quantitative display of positive values on a continuous scale</td>
+<td><figure><img src="/media/M51-Histogram-mplViridis.png" title="Histogram of the M51 Galaxy sample image with the mpl-viridis LUT applied" width="300" alt="Histogram of the M51 Galaxy sample image with the mpl-viridis LUT applied" /><figcaption aria-hidden="true">Histogram of the M51 Galaxy sample image with the <em>mpl-viridis</em> LUT applied</figcaption></figure></td>
+</tr>
+<tr class="odd">
+<th>HiLo</th>
+<td><ul><li>Minimum of display range is blue</li><li>Maximum of display range is red</li><li>Normal gray-scale LUT for all other values</li></ul></td>
+<td>Assessment of over-/under-exposure in an image</td>
+<td><figure><img src="/media/M51-Histogram-HiLo.png" title="Histogram of the M51 Galaxy sample image with the displayed range adjusted and the HiLo LUT applied" width="300" alt="Histogram of the M51 Galaxy sample image with the displayed range adjusted and the HiLo LUT applied" /><figcaption aria-hidden="true">Histogram of the M51 Galaxy sample image with the displayed range adjusted and the <em>HiLo</em> LUT applied</figcaption></figure></td>
+</tr>
+<tr class="even">
+<th>phase</th>
+<td><ul><li><em>Diverging</em> color map</li><li>Bright center, dark min and max</li></ul></td>
+<td></td>
+<td><figure><img src="/media/Randomized-Image-Histogram-phase.png" title="Histogram of a randomized calibrated 8-bit image with the phase LUT applied" width="300" alt="Histogram of a randomized calibrated 8-bit image with the phase LUT applied" /><figcaption aria-hidden="true">Histogram of a randomized calibrated 8-bit image with the <em>phase</em> LUT applied</figcaption></figure></td>
+</tr>
+</tbody></table>
+<section class="footnotes" role="doc-endnotes"><hr /><ol><li id="fn1" role="doc-endnote"><a href="https://bids.github.io/colormap/">https://bids.github.io/colormap/</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></li></ol></section>
 
 For further reading about color maps, see [1] and [2]
 
@@ -39,24 +65,55 @@ The [Adjust submenu](/ij/docs/guide/146-28.html#toc-Subsection-28.2) contains co
 
 Here we summarize some of the 3D visualization plugins in ImageJ.
 
-<table><tbody><tr class="odd"><td><p><strong>Plugin Name</strong></p></td><td><p><strong>Short Description</strong></p></td><td><p><strong>Highlights</strong></p></td><td><p><strong>Plugin Snapshot</strong></p></td></tr><tr class="even"><td><p><a href="/plugins/3d-viewer">3D Viewer</a></p></td><td><p>A tool for hardware-accelerated visualization possibilities for image stacks, using the <a href="/libs/java-3d">Java 3D</a> library.</p></td><td><ul><li>Stacks can be displayed as texture-based volume renderings, surfaces, or orthoslices</li><li>Macro-recordable functions</li><li>Adjust the transfer functions, edit volumes, point lists, landmark-based registration, transformations, 3D Content in PDFs</li></ul></td><td><figure><img src="/media/3D Viewer overview.png" title="3D_Viewer_overview.png" alt="3D_Viewer_overview.png" /><figcaption aria-hidden="true">3D_Viewer_overview.png</figcaption></figure></td></tr><tr class="odd"><td><p><a href="/plugins/clearvolume">ClearVolume</a></p></td><td><p>A tool for live rendering volumetric multi-channel data.</p></td><td><ul><li>Create instant multiview and multicolor renderings</li><li>Instant rewind and replay of time-lapse recordings</li><li>Provides real-time GPU-based image processing capabilities, such as image sharpness estimation and sample drift tracking</li><li>Enables live streaming of 3D data in real time over the internet</li></ul></td><td><p><img src="/media/ClearVolumeInFiji.png" width="500"/></p></td></tr><tr class="even"><td><p><a href="/plugins/volume-viewer">Volume Viewer</a></p></td><td><p>A tool for 3D reslicing and threshold-enabled 3D visualization.</p></td><td><ul><li>Non-hardware accelerated volume rendering in different modalities.</li><li><a href="/plugins/volume-viewer.html">Documentation</a></li></ul></td><td><p><img src="/media/Volviewer.png" width="500"/></p></td></tr><tr class="odd"><td><p><a href="/plugins/sciview">SciView</a></p></td><td><p>A tool for 3D visualization capabilities for images and meshes.</p></td><td><ul><li>Uses the <a href="https://github.com/ClearVolume/scenery">Scenery</a> and <a href="/plugins/clearvolume">ClearVolume</a> infrastructure</li><li>Integrates <a href="/software/imagej2">ImageJ2</a> functionality, including <a href="/libs/imagej-ops">ImageJ Ops</a></li><li>Aims to serve as a modern replacement to <a href="/plugins/3d-viewer">3D Viewer</a></li></ul></td><td><p><img src="/media/Sciview-gameoflife.gif" width="500"/></p></td></tr></tbody></table>
+<table><tbody>
+<tr class="odd">
+<th>Plugin Name</th>
+<th>Short Description</th>
+<th>Highlights</th>
+<th>Plugin Snapshot</th>
+</tr>
+<tr class="even">
+<td><a href="/plugins/3d-viewer">3D Viewer</a></td>
+<td>A tool for hardware-accelerated visualization possibilities for image stacks, using the <a href="/libs/java-3d">Java 3D</a> library.</td>
+<td><ul><li>Stacks can be displayed as texture-based volume renderings, surfaces, or orthoslices</li><li>Macro-recordable functions</li><li>Adjust the transfer functions, edit volumes, point lists, landmark-based registration, transformations, 3D Content in PDFs</li></ul></td>
+<td><figure><img src="/media/3D Viewer overview.png" title="3D_Viewer_overview.png" alt="3D_Viewer_overview.png" /><figcaption aria-hidden="true">3D_Viewer_overview.png</figcaption></figure></td>
+</tr>
+<tr class="odd">
+<td><a href="/plugins/clearvolume">ClearVolume</a></td>
+<td>A tool for live rendering volumetric multi-channel data.</td>
+<td><ul><li>Create instant multiview and multicolor renderings</li><li>Instant rewind and replay of time-lapse recordings</li><li>Provides real-time GPU-based image processing capabilities, such as image sharpness estimation and sample drift tracking</li><li>Enables live streaming of 3D data in real time over the internet</li></ul></td>
+<td><img src="/media/ClearVolumeInFiji.png" width="500"/></td>
+</tr>
+<tr class="even">
+<td><a href="/plugins/volume-viewer">Volume Viewer</a></td>
+<td>A tool for 3D reslicing and threshold-enabled 3D visualization.</td>
+<td><ul><li>Non-hardware accelerated volume rendering in different modalities.</li><li><a href="/plugins/volume-viewer.html">Documentation</a></li></ul></td>
+<td><img src="/media/Volviewer.png" width="500"/></td>
+</tr>
+<tr class="odd">
+<td><a href="/plugins/sciview">SciView</a></td>
+<td>A tool for 3D visualization capabilities for images and meshes.</td>
+<td><ul><li>Uses the <a href="https://github.com/ClearVolume/scenery">Scenery</a> and <a href="/plugins/clearvolume">ClearVolume</a> infrastructure</li><li>Integrates <a href="/software/imagej2">ImageJ2</a> functionality, including <a href="/libs/imagej-ops">ImageJ Ops</a></li><li>Aims to serve as a modern replacement to <a href="/plugins/3d-viewer">3D Viewer</a></li></ul></td>
+<td><img src="/media/Sciview-gameoflife.gif" width="500"/></td>
+</tr>
+</tbody></table>
 
 Making Plots in ImageJ
 ----------------------
 
 ### The Basics: ImageJ v1.x Plot Tools
 
-1.  [Plot Profile](https://imagej.nih.gov/ij/docs/guide/146-30.html#sub:Plot-Profile-%5Bk%5D)
-2.  \[https://imagej.nih.gov/ij/docs/guide/146-28.html#sub:Plot-Z-axis-Profile... Plot Z-axis Profile\]
-3.  \[https://imagej.nih.gov/ij/docs/guide/146-30.html#sub:Surface-Plot... Surface Plot\]
+1.  [Plot Profile](/ij/docs/guide/146-30.html#sub:Plot-Profile-%5Bk%5D)
+2.  [Plot Z-axis Profile](/ij/docs/guide/146-28.html#sub:Plot-Z-axis-Profile...)
+3.  [Surface Plot](/ij/docs/guide/146-30.html#sub:Surface-Plot...)
 
 ### Available Plugins for Making Plots in ImageJ
 
-1.  [Quiver Plot](/Quiver_Plot)
+1.  [Quiver Plot](/plugins/quiver-plot)
 
 ### Plotting tools available via scripting...
 
-1.  JFreeChart (used by [Directionality](/Directionality))
+1.  JFreeChart (used by [Directionality](/plugins/directionality))
 2.  [Matplotlib](http://matplotlib.org/)
 
 Making Figures in ImageJ
@@ -74,14 +131,52 @@ Recommended ImageJ Plugins for 'Big Data' Visualization
 
 Here we summarize some of the 'big data' visualization plugins in ImageJ.
 
-<table><tbody><tr class="odd"><td><p><strong>Plugin Name</strong></p></td><td><p><strong>Short Description</strong></p></td><td><p><strong>Highlights</strong></p></td><td><p><strong>Plugin Snapshot</strong></p></td></tr><tr class="even"><td><p><a href="/plugins/bdv">BigDataViewer</a></p></td><td><p>A tool for interactive browsing of arbitrarily large image datasets.</p></td><td><ul><li>Arbitrary slicing, zooming, etc.</li><li>For multi-angle, multi-channel, time-series, etc.</li><li>Adding overlays, annotations, etc.</li><li>Reusable software components</li><li>Used as data backend and/or visualization frontend by <a href="/plugins/multiview-reconstruction">MultiView Reconstruction</a>, <a href="/MaMuT">MaMuT</a>, <a href="/BigWarp">BigWarp</a>, etc.</li></ul></td><td><p><img src="/media/Bdv.png" width="500"/></p></td></tr><tr class="odd"><td><p><a href="/plugins/multiview-reconstruction">MultiView Reconstruction</a></p></td><td><p>A tool for registration, fusion, deconvolution, and visualization of multiview microscopy images.</p></td><td><ul><li>Designed for lightsheet fluorescence microscopy</li><li>Applicable to any form of three or higher dimensional imaging modalities</li><li>Interactive viewing and annotation of the data</li></ul></td><td><p><img src="/media/Spim application.png" width="500"/></p></td></tr></tbody></table>
+<table><tbody>
+<tr class="odd">
+<th>Plugin Name</th>
+<th>Short Description</th>
+<th>Highlights</th>
+<th>Plugin Snapshot</th>
+</tr>
+<tr class="even">
+<td><a href="/plugins/bdv">BigDataViewer</a></td>
+<td>A tool for interactive browsing of arbitrarily large image datasets.</td>
+<td><ul><li>Arbitrary slicing, zooming, etc.</li><li>For multi-angle, multi-channel, time-series, etc.</li><li>Adding overlays, annotations, etc.</li><li>Reusable software components</li><li>Used as data backend and/or visualization frontend by <a href="/plugins/multiview-reconstruction">MultiView Reconstruction</a>, <a href="/plugins/mamut">MaMuT</a>, <a href="/plugins/bigwarp">BigWarp</a>, etc.</li></ul></td>
+<td><img src="/media/Bdv.png" width="500"/></td>
+</tr>
+<tr class="odd">
+<td><a href="/plugins/multiview-reconstruction">MultiView Reconstruction</a></td>
+<td>A tool for registration, fusion, deconvolution, and visualization of multiview microscopy images.</td>
+<td><ul><li>Designed for lightsheet fluorescence microscopy</li><li>Applicable to any form of three or higher dimensional imaging modalities</li><li>Interactive viewing and annotation of the data</li></ul></td>
+<td><img src="/media/Spim application.png" width="500"/></td>
+</tr>
+</tbody></table>
 
 Interactive Analysis Plugins based on 'Big Data' Visualization Tools
 --------------------------------------------------------------------
 
 Here we summarize the more advanced analysis plugins in ImageJ using the above 'big data' visualization tools.
 
-<table><tbody><tr class="odd"><td><p><strong>Plugin Name</strong></p></td><td><p><strong>Short Description</strong></p></td><td><p><strong>More Details...</strong></p></td><td><p><strong>Plugin Snapshot</strong></p></td></tr><tr class="even"><td><p><a href="/MaMuT">MaMuT</a> (<strong>Ma</strong>ssive <strong>Mu</strong>lti-view <strong>T</strong>racker)</p></td><td><p>A tool for manual and semi-automatic tracking in multiple views.</p></td><td><ul><li>Allows browsing, annotating, and curating annotations for large image data</li><li>Combines <a href="/plugins/bdv">BigDataViewer</a> and <a href="/plugins/trackmate">TrackMate</a></li><li>Ships <a href="/TrackScheme">TrackScheme</a>, the lineage browser taken from <a href="/plugins/trackmate">TrackMate</a></li></ul></td><td><p><img src="/media/MaMuT.png" width="500"/></p></td></tr><tr class="odd"><td><p><a href="/BigWarp">BigWarp</a></p></td><td><p>A tool for manual, interactive, landmark-based deformable image alignment.</p></td><td><ul><li>Uses <a href="/plugins/bdv">BigDataViewer</a> for visualization and navigation</li><li>Uses a {% include wikipedia title='Thin_plate_spline' text='Thin Plate Spline'%} implemented {% include github org='saalfeldlab' repo='bigwarp' label='in Java' %} to build a deformation from point correspondences</li><li>Enables landmark pair placement and displays the effects of the warp on-the-fly</li></ul></td><td><p><img src="/media/BigWarp.png" width="400"/></p></td></tr></tbody></table>
+<table><tbody>
+<tr class="odd">
+<th>Plugin Name</th>
+<th>Short Description</th>
+<th>More Details...</th>
+<th>Plugin Snapshot</th>
+</tr>
+<tr class="even">
+<td><a href="/plugins/mamut">MaMuT</a> (<strong>Ma</strong>ssive <strong>Mu</strong>lti-view <strong>T</strong>racker)</td>
+<td>A tool for manual and semi-automatic tracking in multiple views.</td>
+<td><ul><li>Allows browsing, annotating, and curating annotations for large image data</li><li>Combines <a href="/plugins/bdv">BigDataViewer</a> and <a href="/plugins/trackmate">TrackMate</a></li><li>Ships <a href="/plugins/trackscheme">TrackScheme</a>, the lineage browser taken from <a href="/plugins/trackmate">TrackMate</a></li></ul></td>
+<td><img src="/media/MaMuT.png" width="500"/></td>
+</tr>
+<tr class="odd">
+<td><a href="/plugins/bigwarp">BigWarp</a></td>
+<td>A tool for manual, interactive, landmark-based deformable image alignment.</td>
+<td><ul><li>Uses <a href="/plugins/bdv">BigDataViewer</a> for visualization and navigation</li><li>Uses a {% include wikipedia title='Thin_plate_spline' text='Thin Plate Spline'%} implemented {% include github org='saalfeldlab' repo='bigwarp' label='in Java' %} to build a deformation from point correspondences</li><li>Enables landmark pair placement and displays the effects of the warp on-the-fly</li></ul></td>
+<td><img src="/media/BigWarp.png" width="400"/></td>
+</tr>
+</tbody></table>
 
 [1] http://peterkovesi.com/projects/colourmaps/
 

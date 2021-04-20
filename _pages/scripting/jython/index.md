@@ -27,7 +27,7 @@ The following list will help you to decide if Jython is the right choice to crea
 ### Explanation
 
 The Java implementation of Python is limited to the [standard library](https://docs.python.org/2/library/index.html) of Python 2.  
-It is not possible to use external python modules (like Numpy...) however, [any Java class residing in the Fiji installation can be used](https://imagej.net/index.php?title=Jython_Scripting#Importing_Java_module_and_classes).  
+It is not possible to use external python modules (like Numpy...) however, [any Java class residing in the Fiji installation can be used](/index.php?title=Jython_Scripting#Importing_Java_module_and_classes).  
 Even with the given limitations, Jython is a powerful language for ImageJ scripting. Hopefully the examples on this page can convince you of that.
 
 Jython basics for ImageJ
@@ -138,7 +138,7 @@ Doing this allows you to access the `IJ` *class* which resides in the `ij` *pack
 4.  depth (int)
 5.  bitdepth (int)
 
-and it returns an `ImagePlus` object. `ImagePlus` objects are very important in ImageJ, and you will the documentation for them [here](https://imagej.nih.gov/ij/developer/api/ij/ImagePlus.html). Below is an example of how to import and use the static methods on the `IJ` class to create an image.
+and it returns an `ImagePlus` object. `ImagePlus` objects are very important in ImageJ, and you will the documentation for them [here](/ij/developer/api/ij/ImagePlus.html). Below is an example of how to import and use the static methods on the `IJ` class to create an image.
 
     from ij import IJ # read this as: "from the ij package import the IJ class"
     test_img = IJ.createImage("Test image", 512, 512, 1, 8)
@@ -169,7 +169,7 @@ Here is another example where we use the ImageJ package and the [RoiManager](htt
 
 ### Using openCV in Jython
 
-It is even possible to use most of opencv functionalities within Jython/Fiji. There are several options (see the [wiki page about opencv](https://imagej.net/OpenCV)), yet the most straight forward is probably IJ-OpenCV which is available via the update sites. It will automatically download the necessary packages and dependencies in your Fiji installation.
+It is even possible to use most of opencv functionalities within Jython/Fiji. There are several options (see the [wiki page about opencv](/OpenCV)), yet the most straight forward is probably IJ-OpenCV which is available via the update sites. It will automatically download the necessary packages and dependencies in your Fiji installation.
 
 A manual installation is also possible by putting the jar packages in the jar folder of imageJ. They are avalaible on the [IJopenCV github](https://github.com/joheras/IJ-OpenCV), which even provides a maven option.
 
@@ -423,4 +423,4 @@ References
 
 <references />
 
-[1] [Wikipedia entry on Jython](http://rsb.info.nih.gov/ij/plugins/index.html). Accessed: 2016-08-30
+[1] [Wikipedia entry on Jython](/ij/plugins/index.html). Accessed: 2016-08-30

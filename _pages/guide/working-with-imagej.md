@@ -97,7 +97,7 @@ In addition, ImageJ features a find function that locates macros, scripts and pl
 </div>
 <div class="See">
 
-\[\[\#sub:Control-Panel...\|Control Panel... \[U\]↓\]\], [Keyboard Shortcuts↓](#sec:Keyboard-Shortcuts) and <span class="Filename">[SourceCodeRetriever](http://imagej.nih.gov/ij/macros/SourceCodeRetriever.txt)</span>, a macro that searches for a menu entry and retrieves the source file of the respective command
+\[\[\#sub:Control-Panel...\|Control Panel... \[U\]↓\]\], [Keyboard Shortcuts↓](#sec:Keyboard-Shortcuts) and <span class="Filename">[SourceCodeRetriever](/ij/macros/SourceCodeRetriever.txt)</span>, a macro that searches for a menu entry and retrieves the source file of the respective command
 
 </div>
 
@@ -156,7 +156,7 @@ Tiff tags and information needed to import the file (number of images, offset to
 
 **DICOM** (Digital Imaging and Communications in Medicine) is a standard popular in the medical imaging community. Support in ImageJ is limited to uncompressed [↓DICOM](#index-DICOM) files. DICOM files containing multiple images open as [Stacks↓](#sub:Stacks-Intro).  
 Use {% include bc path="Image | [Show-Info...](#sub:Show-Info...)" %}
-↓ to display the DICOM header information. A DICOM sequence can be opened using {% include bc path="File | Import | [Image Sequence...↓](#sub:Image-Sequence...)" %} or by dragging and dropping the folder on the 'ImageJ' window. Imported sequences are sorted by image number instead of filename and the tags are preserved when DICOM images are saved in TIFF format. ImageJ supports custom DICOM dictionaries, such as the one at http://imagej.nih.gov/ij/download/docs/DICOM\_Dictionary.txt. More information can be found at the [Center for Advanced Brain Imaging](http://www.cabiatl.com/mricro/dicom/index.html).
+↓ to display the DICOM header information. A DICOM sequence can be opened using {% include bc path="File | Import | [Image Sequence...↓](#sub:Image-Sequence...)" %} or by dragging and dropping the folder on the 'ImageJ' window. Imported sequences are sorted by image number instead of filename and the tags are preserved when DICOM images are saved in TIFF format. ImageJ supports custom DICOM dictionaries, such as the one [here](/ij/download/docs/DICOM\_Dictionary.txt). More information can be found at the [Center for Advanced Brain Imaging](http://www.cabiatl.com/mricro/dicom/index.html).
 
 </div>
 <div class="Labeling">
@@ -183,7 +183,7 @@ Use {% include bc path="Image | [Show-Info...](#sub:Show-Info...)" %}
 
 ### Non--native Formats
 
-When opening a file, ImageJ first checks whether it can natively handle the format. [↓If](#index-Image-formats-Non-native) ImageJ does not recognize the type of file it calls for the appropriate reader plugin using [HandleExtraFileTypes](http://imagej.nih.gov/ij/plugins/file-handler.html), a plugin bundled with ImageJ. If that fails, it tries to open the file using the [↓](#index-OME-Bio-Formats)[↓](#index-LOCI-Bio-Formats)[↓](#index-Bio-formats)[OME Bio-Formats library](http://loci.wisc.edu/software/bio-formats) (if present), a remarkable plugin that supports more than [one hundred of the most common](http://loci.wisc.edu/bio-formats/formats) file formats used in microscopy. If nevertheless the file cannot be opened, an error message is displayed.
+When opening a file, ImageJ first checks whether it can natively handle the format. [↓If](#index-Image-formats-Non-native) ImageJ does not recognize the type of file it calls for the appropriate reader plugin using [HandleExtraFileTypes](/ij/plugins/file-handler.html), a plugin bundled with ImageJ. If that fails, it tries to open the file using the [↓](#index-OME-Bio-Formats)[↓](#index-LOCI-Bio-Formats)[↓](#index-Bio-formats)[OME Bio-Formats library](http://loci.wisc.edu/software/bio-formats) (if present), a remarkable plugin that supports more than [one hundred of the most common](http://loci.wisc.edu/bio-formats/formats) file formats used in microscopy. If nevertheless the file cannot be opened, an error message is displayed.
 
 Because both these plugins are under active development, it is important that you keep them updated. The OME Bio-Formats library can be updated using its self-updating plugin ({% include bc path="Plugins | LOCI | Update LOCI Plugin..." %}) or Fiji↑'s built-in updater ({% include bc path="Help | Update Fiji..." %}). The following websites provide more information on the OME Bio-Formats:
 
@@ -191,11 +191,11 @@ Because both these plugins are under active development, it is important that yo
 -   https://fiji.sc/Bio-Formats
 -   http://loci.wisc.edu/bio-formats/using-bio-formats
 
-In addition, the ImageJ web site lists [more than sixty plugins](http://imagej.nih.gov/ij/plugins/#io) that recognize more 'exotic' file formats. The ImageJ Documentation Portal also maintains a (somewhat outdated) [list of file formats](http://imagejdocu.tudor.lu/doku.php?id=faq:general:which_file_formats_are_supported_by_imagej) that are supported by ImageJ.
+In addition, the ImageJ web site lists [more than sixty plugins](/ij/plugins/#io) that recognize more 'exotic' file formats. The ImageJ Documentation Portal also maintains a (somewhat outdated) [list of file formats](http://imagejdocu.tudor.lu/doku.php?id=faq:general:which_file_formats_are_supported_by_imagej) that are supported by ImageJ.
 
 <div class="See">
 
-[Native Formats↑](#sub:Native-Formats), {% include bc path="File | [Import↓](#sub:Import) |" %}, [3↓](#infobox:Formats) [Image Types: Lossy Compression and Metadata↓](#infobox:Formats), [11↓](#infobox:JpegAlert) [Warning on JPEG Compression↓](#infobox:JpegAlert), [Acquisition plugins](http://imagej.nih.gov/ij/plugins/#acq), [Input/Output plugins](http://imagej.nih.gov/ij/plugins/#io)
+[Native Formats↑](#sub:Native-Formats), {% include bc path="File | [Import↓](#sub:Import) |" %}, [3↓](#infobox:Formats) [Image Types: Lossy Compression and Metadata↓](#infobox:Formats), [11↓](#infobox:JpegAlert) [Warning on JPEG Compression↓](#infobox:JpegAlert), [Acquisition plugins](/ij/plugins/#acq), [Input/Output plugins](/ij/plugins/#io)
 
 </div>
 <div class="float">
@@ -252,7 +252,7 @@ Figure 2 **Stacks and Hyperstacks in ImageJ:** {% include bc path="File | Open
 </div>
 <div class="See">
 
-<span class="small">[Stacks Menu↓](#sub:StacksMenu), [Stack Manipulations](https://fiji.sc/wiki/index.php/Stack_Manipulation) on Fiji website, [Image5D](http://imagej.nih.gov/ij/plugins/image5d.html)</span>
+<span class="small">[Stacks Menu↓](#sub:StacksMenu), [Stack Manipulations](https://fiji.sc/wiki/index.php/Stack_Manipulation) on Fiji website, [Image5D](/ij/plugins/image5d.html)</span>
 
 </div>
 
@@ -260,16 +260,16 @@ Figure 2 **Stacks and Hyperstacks in ImageJ:** {% include bc path="File | Open
 
 [↓](#index-Stacks-Virtual)[↓Virtual](#index-Virtual-stacks) stacks are disk resident (as opposed to RAM[↓](#nom-ram) resident) and are the only way to load image sequences that do not fit in RAM. There are several things to keep in mind when working with virtual stacks:
 
--   Virtual stacks are read-only, so changes made to the pixel data are not saved when you switch to a different slice. You can work around this by using macros (e.g., <span class="small">[Process Virtual Stack](http://imagej.nih.gov/ij/macros/Process_Virtual_Stack.txt)</span>) or the {% include bc path="Process | Batch | [Virtual Stack...↓](#sub:Virtual-Stack...)" %} command
+-   Virtual stacks are read-only, so changes made to the pixel data are not saved when you switch to a different slice. You can work around this by using macros (e.g., <span class="small">[Process Virtual Stack](/ij/macros/Process_Virtual_Stack.txt)</span>) or the {% include bc path="Process | Batch | [Virtual Stack...↓](#sub:Virtual-Stack...)" %} command
 -   You can easily run out of memory using commands like {% include bc path="Image | [Crop-%5BX%5D](#sub:Crop-%5BX%5D)" %}
     ↓ because any stack generated from commands that do not generate virtual stacks will be RAM resident.
 -   TIFF virtual stacks can usually be accessed faster than [↓JPEG](#index-JPEG) virtual stacks. A JPEG sequence can be converted to TIFF by opening the JPEG images as a virtual stack and using {% include bc path="File | Save As | [Image Sequence...↓](#sub:SaveAs%3EImage-Seq...)" %} to save in TIFF format.
 
-ImageJ appends a '(V)' to the window title of virtual stacks and hyperstacks (*see* [Hyperstacks↓](#sub:Hyperstacks-Intro)). Several built-in ImageJ commands in the {% include bc path="File | [Import↓](#sub:Import) |" %} submenu have the ability to open virtual stacks, namely: <span class="menuitem">[TIFF Virtual Stack...↓](#sub:Import%3ETIFF-Virtual-Stack)</span>, <span class="menuitem">[Image Sequence...↓](#sub:Image-Sequence...)</span>, <span class="menuitem">[Raw...↓](#sub:Import%3ERaw)</span>, <span class="menuitem">[Stack From List...↓](#sub:Stack-From-List...)</span>, <span class="menuitem">[AVI...↓](#sub:Import%3EAVI...)</span> (cf. [Virtual Stack Opener](http://imagej.nih.gov/ij/plugins/virtual-opener.html)). In addition, TIFF stacks can be open as virtual stacks by drag and drop (cf. [4↓](#infobox:VirtualTiff) [Opening Virtual Stacks by Drag & Drop↓](#infobox:VirtualTiff)).
+ImageJ appends a '(V)' to the window title of virtual stacks and hyperstacks (*see* [Hyperstacks↓](#sub:Hyperstacks-Intro)). Several built-in ImageJ commands in the {% include bc path="File | [Import↓](#sub:Import) |" %} submenu have the ability to open virtual stacks, namely: <span class="menuitem">[TIFF Virtual Stack...↓](#sub:Import%3ETIFF-Virtual-Stack)</span>, <span class="menuitem">[Image Sequence...↓](#sub:Image-Sequence...)</span>, <span class="menuitem">[Raw...↓](#sub:Import%3ERaw)</span>, <span class="menuitem">[Stack From List...↓](#sub:Stack-From-List...)</span>, <span class="menuitem">[AVI...↓](#sub:Import%3EAVI...)</span> (cf. [Virtual Stack Opener](/ij/plugins/virtual-opener.html)). In addition, TIFF stacks can be open as virtual stacks by drag and drop (cf. [4↓](#infobox:VirtualTiff) [Opening Virtual Stacks by Drag & Drop↓](#infobox:VirtualTiff)).
 
 <div class="See">
 
-<span class="small">[LOCI Bio-Formats](http://www.loci.wisc.edu/ome/formats.html) and [RegisterVirtualStackSlices](https://fiji.sc/wiki/index.php/plugins/register-virtual-stack-slices) plugins, [Process Virtual Stack](http://imagej.nih.gov/ij/macros/Process_Virtual_Stack.txt) and [VirtualStackFromList](http://imagej.nih.gov/ij/macros/VirtualStackFromList.txt) macros </span>
+<span class="small">[LOCI Bio-Formats](http://www.loci.wisc.edu/ome/formats.html) and [RegisterVirtualStackSlices](https://fiji.sc/wiki/index.php/plugins/register-virtual-stack-slices) plugins, [Process Virtual Stack](/ij/macros/Process_Virtual_Stack.txt) and [VirtualStackFromList](/ij/macros/VirtualStackFromList.txt) macros </span>
 
 </div>
 <div class="float">
@@ -350,7 +350,7 @@ Figure 3 **Representation of an eight pixel color image in the RGB and HSB col
 
 RGB (Red, Green, Blue) is the most commonly-used color space. However, other alternatives such as HSB (Hue, Saturation, Brightness) provide significant advantages when processing color information. In the HSB color space, *Hue* describes the attribute of pure color, and therefore distinguishes between colors. *Saturation* (sometimes called "purity" or "vibrancy") characterizes the shade of color, i.e., how much white is added to the pure color. *Brightness* (also know as *Value* — HSV system) describes the overall brightness of the color (*see* e.g., the color palette of [Color Picker window↓](#fig:CPtool)). In terms of digital imaging processing, using the HSB system over the traditional RGB is often advantageous: e.g., since the Brightness component of an HSB image corresponds to the grayscale version of that image, processing only the brightness channel in routines that require grayscale images is a significant computational gain<span class="FootOuter"><span class="SupFootMarker"> \[E\] </span><span class="HoverFoot"><span class="SupFootMarker"> \[E\] </span>*See* Wootton R, Springall DR, Polak JM. Image Analysis in Histology: Conventional and Confocal Microscopy. *Cambridge University Press*, 1995*,* ISBN 0521434823</span></span>. You can read more about the HSB color model [here](http://en.wikipedia.org/wiki/HSB_color_space).
 
-In ImageJ, conversions between image types are performed using the {% include bc path="Image | [Type↓](#sub:Type) |" %} submenu. Segmentation on the HSB, RGB, CIE Lab and YUV color spaces can be performed by the {% include bc path="Image | Adjust | [Color Threshold...↓](#sub:Color-Threshold...)" %} command <span class="bibcites">[20]([#biblio-20)\]</span>. Segregation of color components (specially useful for quantification of [↓](#index-Color-Deconvolution)[↓](#index-Color-Separation)[↓histochemical](#index-Immunohistochemistry) staining) is also possible using Gabriel Landini's [Colour Deconvolution](http://www.dentistry.bham.ac.uk/landinig/software/cdeconv/cdeconv.html) plugin. In addition, several other plugins related to color processing can be obtained from the [ImageJ website](http://imagej.nih.gov/ij/plugins/index.html#color).
+In ImageJ, conversions between image types are performed using the {% include bc path="Image | [Type↓](#sub:Type) |" %} submenu. Segmentation on the HSB, RGB, CIE Lab and YUV color spaces can be performed by the {% include bc path="Image | Adjust | [Color Threshold...↓](#sub:Color-Threshold...)" %} command <span class="bibcites">[20]([#biblio-20)\]</span>. Segregation of color components (specially useful for quantification of [↓](#index-Color-Deconvolution)[↓](#index-Color-Separation)[↓histochemical](#index-Immunohistochemistry) staining) is also possible using Gabriel Landini's [Colour Deconvolution](http://www.dentistry.bham.ac.uk/landinig/software/cdeconv/cdeconv.html) plugin. In addition, several other plugins related to color processing can be obtained from the [ImageJ website](/ij/plugins/index.html#color).
 
 #### Conveying Color Information<span class="FootOuter"><span class="SupFootMarker"> \[F\] </span><span class="HoverFoot"><span class="SupFootMarker"> \[F\] </span>This section is partially extracted from Masataka Okabe and Kei Ito, *Color Universal Design (CUD) — How to make figures and presentations that are friendly to Colorblind people*, http://jfly.iam.u-tokyo.ac.jp/color/>, accessed 2009.01.15</span></span
 
@@ -565,7 +565,7 @@ Since ImageJ 1.46, selections can be defined with [subpixel accuracy](http://en.
 
 <div class="caption">
 
-Figure 7 **Interpolated selections.** ROIs drawn with (left) or without (middle) sub-pixel accuracy. For line selections (*see* [Line Selection Tools↓](#sec:Line-Selection-Tools)), this option can be enabled in {% include bc path="Edit | Options | [Profile Plot Options...↓](#sub:Profile-Plot-Options...)" %} by activating the *Sub-pixel resolution* checkbox. Pixel coordinates of area selections (*see* [Area Selection Tools↓](#sec:Area-selection-tools)), can be interpolated using {% include bc path="Edit | Selection | [Interpolate↓](#sub:Interpolate)" %}. The image on the right is the output of <span class="Filename">[SubPixelSelections.js](http://imagej.nih.gov/ij/macros/js/SubPixelSelections.js)</span>, a script that demonstrates how to create selections at sub-pixel resolution without the need of setting any option in ImageJ.
+Figure 7 **Interpolated selections.** ROIs drawn with (left) or without (middle) sub-pixel accuracy. For line selections (*see* [Line Selection Tools↓](#sec:Line-Selection-Tools)), this option can be enabled in {% include bc path="Edit | Options | [Profile Plot Options...↓](#sub:Profile-Plot-Options...)" %} by activating the *Sub-pixel resolution* checkbox. Pixel coordinates of area selections (*see* [Area Selection Tools↓](#sec:Area-selection-tools)), can be interpolated using {% include bc path="Edit | Selection | [Interpolate↓](#sub:Interpolate)" %}. The image on the right is the output of <span class="Filename">[SubPixelSelections.js](/ij/macros/js/SubPixelSelections.js)</span>, a script that demonstrates how to create selections at sub-pixel resolution without the need of setting any option in ImageJ.
 
 </div>
 </div>
@@ -591,7 +591,7 @@ Overlays[]( )<span class="unknown">\\improvement</span>Improved handling of Over
 
 <div class="caption">
 
-Figure 8 **Non-destructive operations using the image overlay.** Overlays can be used to annotate images, store ROIs and blend images (ImageROIs) at multiple opacity levels. Refer to the {% include bc path="Image | [Overlay↓](#sub:Overlay) |" %}documentation for further [examples↓](#fig:image-overlays). You can [download the frontmost](http://imagej.nih.gov/ij/docs/guide/images/ImageWithOverlay.tif) image to practice overlay editing.
+Figure 8 **Non-destructive operations using the image overlay.** Overlays can be used to annotate images, store ROIs and blend images (ImageROIs) at multiple opacity levels. Refer to the {% include bc path="Image | [Overlay↓](#sub:Overlay) |" %}documentation for further [examples↓](#fig:image-overlays). You can [download the frontmost](/ij/docs/guide/images/ImageWithOverlay.tif) image to practice overlay editing.
 
 </div>
 </div>
@@ -696,7 +696,7 @@ Sometimes, it may be useful to override (or restore) certain settings that may h
 
 </div>
 
-The `setOption()` [macro function](http://imagej.nih.gov/ij/developer/macro/functions.html#setOption) can be used to set this and several other ImageJ options. Calling this function from the [↓](#index-StartupMacros)[↓](#index-AutoRun)"AutoRun" macro in the <span class="Filename">StartupMacros.txt</span> file ensures preferences are set each time ImageJ starts. The macro [(13↑)](#lis:setOption) [Settings and Preferences↑](#lis:setOption) exemplifies this approach ensuring that the following settings are enforced at startup:
+The `setOption()` [macro function](/ij/developer/macro/functions.html#setOption) can be used to set this and several other ImageJ options. Calling this function from the [↓](#index-StartupMacros)[↓](#index-AutoRun)"AutoRun" macro in the <span class="Filename">StartupMacros.txt</span> file ensures preferences are set each time ImageJ starts. The macro [(13↑)](#lis:setOption) [Settings and Preferences↑](#lis:setOption) exemplifies this approach ensuring that the following settings are enforced at startup:
 
 1.  TIFF tag values are displayed by ImageJ (*Debug Mode* in {% include bc path="Edit | Options | [Misc...↓](#sub:Misc...)" %})
 2.  Bicubic interpolation is preferred over bilinear (e.g., {% include bc path="Edit | Selection | [Straighten...↓](#sub:Straighten...)" %})

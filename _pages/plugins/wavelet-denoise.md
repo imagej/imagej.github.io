@@ -9,7 +9,7 @@ description: test description
 {% capture source%}
 {% include github org='LMCF-IMG' repo='Wavelet\_Denoise' %}
 {% endcapture %}
-{% include info-box software='ImageJ/Fiji' name='Wavelet\_Denoise' author=' [Martin Čapek](https://imagej.net/User:LMCF-IMG)' maintainer='Martin Čapek' source=source released='04/09/2020' latest-version='05/21/2020' %}
+{% include info-box software='ImageJ/Fiji' name='Wavelet\_Denoise' author=' [Martin Čapek](/User:LMCF-IMG)' maintainer='Martin Čapek' source=source released='04/09/2020' latest-version='05/21/2020' %}
 
 Plugin for wavelet-based denoising/filtering image data
 -------------------------------------------------------
@@ -140,7 +140,7 @@ Installation
 
 Two possibilities, how to do it:
 
-1\. Use LMCF-IMG update site in Fiji. More about installing Fiji plugins using update sites can be found [here](https://imagej.net/Following_an_update_site).
+1\. Use LMCF-IMG update site in Fiji. More about installing Fiji plugins using update sites can be found [here](/Following_an_update_site).
 
 2\. Download Wavelet\_Denoise.jar file from [GitHub](https://github.com/LMCF-IMG/Wavelet_Denoise) and put it into plugins in ImageJ/Fiji folder.
 

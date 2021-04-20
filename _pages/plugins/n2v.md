@@ -33,7 +33,7 @@ Installation
 3.  Click on `Manage update sites`
 4.  Select the <b>`CSBDeep`</b> update site
 5.  Click on `Apply changes`
-6.  (optional) read [this page](https://imagej.net/TensorFlow-GPU) for GPU support
+6.  (optional) read [this page](/TensorFlow-GPU) for GPU support
 7.  Restart ImageJ / Fiji
 
 You should now have access to these plugins:
@@ -46,7 +46,7 @@ Usage
 Training
 --------
 
-Training without GPU support is possible, but will take ages. Please read the notes on [this page](https://imagej.net/TensorFlow-GPU) for how to run the tools on the GPU.
+Training without GPU support is possible, but will take ages. Please read the notes on [this page](/TensorFlow-GPU) for how to run the tools on the GPU.
 
 ### Training on a single image
 

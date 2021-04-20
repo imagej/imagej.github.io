@@ -52,7 +52,7 @@ A 2D/3D [spatial statistics](https://imagejdocu.list.lu/plugin/analysis/spatial_
 Installation
 ------------
 
-From version 2.7, **3D ImageJ Suite** is available in Fiji as an [Fiji update site](http://fiji.sc/List_of_update_sites). The **Java8** and **ImageScience** update sites must be activated in Fiji, see instructions [here](https://imagej.net/Following_an_update_site)\].
+From version 2.7, **3D ImageJ Suite** is available in Fiji as an [Fiji update site](http://fiji.sc/List_of_update_sites). The **Java8** and **ImageScience** update sites must be activated in Fiji, see instructions [here](/Following_an_update_site)\].
 
 You can also install **3D ImageJ Suite** manually (see download section) and unzip it in your plugins folder. The various plugins will appear in the menu **3D** of the plugins list.
 
@@ -90,7 +90,7 @@ The 3D suite would like to thanks P. Andrey, J.-F. Gilles and the developers of 
 
 -   [Imagescience](http://www.imagescience.org/meijering/software/featurej/)
 -   [LocalThickness](http://www.optinav.com/Local_Thickness.htm)
--   [ConvexHull3D](http://rsbweb.nih.gov/ij/plugins/3d-convex-hull/index.html)
+-   [ConvexHull3D](/ij/plugins/3d-convex-hull/index.html)
 -   [3D Object Counter](https://imagejdocu.list.lu/plugin/analysis/3d_object_counter/start)
 -   [Droplet Counter](https://imagejdocu.list.lu/plugin/analysis/droplet_counter/start)
 

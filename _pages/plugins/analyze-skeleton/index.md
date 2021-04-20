@@ -335,7 +335,7 @@ The shortest path calculation and its applications have been published as:
 
 -   G. Polder, H.L.E Hovens and A.J Zweers, Measuring shoot length of submerged aquatic plants using graph analysis (2010), In: Proceedings of the ImageJ User and Developer Conference, Centre de Recherche Public Henri Tudor, Luxembourg, 27-29 October, pp 172-177.
 
-[AnalyzeSkeleton](/plugins/analyze-skeleton) makes also part of [BoneJ](http://bonej.org/), a plugin for bone image analysis in [ImageJ](https://imagej.net/):
+[AnalyzeSkeleton](/plugins/analyze-skeleton) makes also part of [BoneJ](http://bonej.org/), a plugin for bone image analysis in [ImageJ](/):
 
 -   Michael Doube, Michal M. Klosowski, Ignacio Arganda-Carreras, Fabrice P. Cordelieres, Robert P. Dougherty, Jonathan S. Jackson, Benjamin Schmid, John R. Hutchinson, Sandra J. Shefelbine, [BoneJ: Free and extensible bone image analysis in ImageJ](http://dx.doi.org/10.1016/j.bone.2010.08.023), Bone, Volume 47, Issue 6, December 2010, Pages 1076-1079.
 

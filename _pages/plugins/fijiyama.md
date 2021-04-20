@@ -191,7 +191,7 @@ Possible issues and recommendations
 
 Fijiyama is based on the Blockmatching registration algorithm, robust for inter-modality. This algorithm is memory consuming and computation intensive. When starting Fijiyama, the plugin analyzes your computer settings and might propose to subsample your dataset to fasten the registration process. This will not impact the appearance of the final results since the exportation procedure is performed using the initial images, at the chosen resolution.
 
--   **Translation in 3D under Windows : **under Windows, translation mode in the [3D\_Viewer](https://imagej.net/3D_Viewer) using SHIFT+drag can be hazardous. To address this, we associated surnumerous controls to the numerical keypad. Using "4" and "6" keys, you can translate the selected volume along the X axis. Using "8" and "2" along the Y axis. Using "5" and "0", along the Z axis. Rotations can be handled with "7" and "9" (X axis), "1" and "3" (Y axis), and characters "p" and "o" for the Z axis.
+-   **Translation in 3D under Windows : **under Windows, translation mode in the [3D\_Viewer](/3D_Viewer) using SHIFT+drag can be hazardous. To address this, we associated surnumerous controls to the numerical keypad. Using "4" and "6" keys, you can translate the selected volume along the X axis. Using "8" and "2" along the Y axis. Using "5" and "0", along the Z axis. Rotations can be handled with "7" and "9" (X axis), "1" and "3" (Y axis), and characters "p" and "o" for the Z axis.
 -   **3D view disappears : **depending on the sequence of translations / rotations applied to the scene, the 3D viewer of Fiji/ImageJ sometimes "freezes". To solve this problem, turn the objects to a 90 degrees' angle, and the viewer should come back.
 -   **Other issues ? **please tell us ! Try to "repeat" your bug from the beginning, identify the context producing the bug, then send an email to corresponding author, including :
 
@@ -206,8 +206,8 @@ Registration of two images is achieved estimating a geometrical transformation t
 
 Fijiyama handles the following transformation families :
 
--   Rigid transformations (translation + rotation), estimated using [VIB-lib](https://imagej.net/VIB-lib)
--   Similarities (rigid + isotropic homothetic factor) estimated using [VIB-lib](https://imagej.net/VIB-lib)
+-   Rigid transformations (translation + rotation), estimated using [VIB-lib](/VIB-lib)
+-   Similarities (rigid + isotropic homothetic factor) estimated using [VIB-lib](/VIB-lib)
 -   Dense vector field (a generic representation of a non-linear transformation), estimated using Gaussian interpolation
 
 For more details about transformation, check the supplementary data of the official publication (see section "Cite this work" below)
@@ -290,9 +290,9 @@ References
 Software dependencies acknowledgements
 --------------------------------------
 
--   Johannes Schindelin et al for [Fiji](https://imagej.net/Fiji) (Schindelin et al., 2012)
--   Johannes Schindelin et al. for the [VIB-lib](https://imagej.net/VIB-lib)
--   Benjamin Schmid et al for the [3D Viewer](https://imagej.net/3D_Viewer) (Schmid et al., 2010)
+-   Johannes Schindelin et al for [Fiji](/Fiji) (Schindelin et al., 2012)
+-   Johannes Schindelin et al. for the [VIB-lib](/VIB-lib)
+-   Benjamin Schmid et al for the [3D Viewer](/3D_Viewer) (Schmid et al., 2010)
 -   The [ITK](https://itk.org/about/) and [SimpleITK](http://www.simpleitk.org/) teams (Yoo et al., 2002; Lowekamp et al., 2013)
 
 License

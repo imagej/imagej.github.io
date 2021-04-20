@@ -19,7 +19,7 @@ Open the image to be analyzed in ImageJ. In general, the plugin works in two mod
 -   particles detection (whole image or ROI)
 -   particles detection and colocalization analysis (whole image or ROI).
 
-For **colocalization** you need a [color composite image](https://imagej.net/Color_Image_Processing#Color_Composite_Images) containing **multiple color channels (two or more)**. Plugin auto-detects the number of channels and if it is more than one then the plugin will automatically switch to the second mode (see below).
+For **colocalization** you need a [color composite image](/Color_Image_Processing#Color_Composite_Images) containing **multiple color channels (two or more)**. Plugin auto-detects the number of channels and if it is more than one then the plugin will automatically switch to the second mode (see below).
 
 The plugin works with time/z-stacks.
 
@@ -42,7 +42,7 @@ By default, plugin looks only for particles of specified size. If you check "*In
 
 If "*Segment larger particles (slow)?*" box is checked, plugin will try to further split large particles into a smaller dots, if it is possible. As its name suggests, this procedure requires computational power and can be slow, especially on big images.
 
-If you choose *Add to ROI Manager* option ("All particles"), plugin will add detected rectangular ROIs around particles to \[https://imagej.nih.gov/ij/docs/guide/146-30.html#sub:ROI-Manager... ROI Manager\]. ROIs will have names in the format of ind(detection\# in Results table)\_ch(\#channel)\_sl(\#slice)\_fr(\#frame).
+If you choose *Add to ROI Manager* option ("All particles"), plugin will add detected rectangular ROIs around particles to [ROI Manager](/ij/docs/guide/146-30.html#sub:ROI-Manager...). ROIs will have names in the format of ind(detection\# in Results table)\_ch(\#channel)\_sl(\#slice)\_fr(\#frame).
 
 After pressing OK plugin runs and add ovals/rectangles in overlay on top of detected particles.
 

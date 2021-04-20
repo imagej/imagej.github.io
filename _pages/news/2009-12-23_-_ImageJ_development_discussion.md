@@ -10,7 +10,7 @@ Recently there has been a large amount of discussion about ImageJ development. T
 -   ImageJ for discussion in which non-programmers have expressed substantial interest
 -   ImageJX for highly technical discussion regarding software engineering (technologies, source code, etc.)
 
-The threads we are sending to the [ImageJ users list](http://rsb.info.nih.gov/ij/list.html) are:
+The threads we are sending to the [ImageJ users list](/ij/list.html) are:
 
 1.  [**Backwards compatibility**](http://n2.nabble.com/Backwards-compatibility-td4211240.html) – What does "near 100% backwards compatibility" mean? And is it a reasonable, warranted goal?
 2.  [**ImageJ project structure**](http://n2.nabble.com/ImageJ-project-structure-td4211244.html) – What are ImageJ, Fiji, ImageJX and ImageJDev, and how are they related? What about project forks? How can people contribute?

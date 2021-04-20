@@ -19,7 +19,7 @@ description: test description
 
 **A Fiji plugin for the segmentation of 3D objects.**
 
-[Enable the LimeSeg update site](https://imagej.net/Following_an_update_site) to get it.
+[Enable the LimeSeg update site](/Following_an_update_site) to get it.
 
 Publication.
 ------------

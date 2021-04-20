@@ -4,4 +4,4 @@ title: PillarTracker GUI
 description: test description
 ---
 
-**PillarTracker GUI** is the graphical user interface(GUI) of [PillarTracker](https://imagej.net/PillarTracker)
+**PillarTracker GUI** is the graphical user interface(GUI) of [PillarTracker](/PillarTracker)

@@ -56,8 +56,8 @@ Configuring Fiji update site
 
 The Fiji update site uses {% include wikipedia title='WebDAV' text='webDAV'%} authentication. To upload something, you will need to:
 
--   [Create a wiki account](https://imagej.net/index.php?title=Special:UserLogin&type=signup)
--   Ask an administrator has to add you to the [*uploaders* group](https://imagej.net/Special:ListUsers?group=uploaders)
+-   [Create a wiki account](/index.php?title=Special:UserLogin&type=signup)
+-   Ask an administrator has to add you to the [*uploaders* group](/Special:ListUsers?group=uploaders)
 -   Once you have been added, [initialize your upload password for "Fiji's main update site"](Special_ChangeUploadPassword).
 
 In the *Manage update sites* dialog, on the Fiji update site line, add the following information:

@@ -44,7 +44,7 @@ The most up-to-date SNT API can be found at [https://morphonets.github.io/SNT](h
 
 <!-- -->
 
--   **SciView\_Demo.groovy** Exemplifies how bridge SNT with [SciView](https://imagej.net/SciView).
+-   **SciView\_Demo.groovy** Exemplifies how bridge SNT with [SciView](/SciView).
 
 <!-- -->
 

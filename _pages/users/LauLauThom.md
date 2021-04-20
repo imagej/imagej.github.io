@@ -14,6 +14,6 @@ Advanced user of Fiji, Knime, Python.
 
 Author of :
 
-\- [Multi-Template Matching](https://imagej.net/Multi-Template_Matching)
+\- [Multi-Template Matching](/Multi-Template_Matching)
 
-\- [ROI 1-click Tools](https://imagej.net/Roi_1-click_tools)
+\- [ROI 1-click Tools](/Roi_1-click_tools)

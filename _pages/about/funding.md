@@ -14,7 +14,7 @@ description: test description
 
 == ImageJ 1.x ==
 
-Historically, [ImageJ 1.x](/software/imagej1) was funded internally by the [Research Services](http://rsbweb.nih.gov/) branch of the [National Institutes of Health](http://nih.gov/). It is developed by {% include person content='Rasband' %}, who is now retired, and continues his work on ImageJ1 as an NIH special volunteer.
+Historically, [ImageJ 1.x](/software/imagej1) was funded internally by the Research Services branch of the [National Institutes of Health](https://nih.gov/). It is developed by {% include person content='Rasband' %}, who is now retired, and continues his work on ImageJ1 as an NIH special volunteer.
 
 ImageJ2
 -------

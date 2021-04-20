@@ -309,7 +309,7 @@ A binary particle may be described mathematically by its moments which correspon
 
 #### Plugins
 
-Most MorphoLibJ plugins consider the current image as input, that must be either binary (only one region is considered), or label (typically the result of a connected components labeling, see [Utilities for binary images](MorphoLibJ#Utilities_for_binary_images)). The output is a results table (ImageJ [Results table](https://imagej.nih.gov/ij/docs/guide/146-22.html)) containing one row for each label actually present within the image. The spatial calibration of the image is taken into account in all measurements. All plugins can be found under the {% include bc path='Plugins | MorphoLibJ | Analyze'%} menu.
+Most MorphoLibJ plugins consider the current image as input, that must be either binary (only one region is considered), or label (typically the result of a connected components labeling, see [Utilities for binary images](MorphoLibJ#Utilities_for_binary_images)). The output is a results table (ImageJ [Results table](/ij/docs/guide/146-22.html)) containing one row for each label actually present within the image. The spatial calibration of the image is taken into account in all measurements. All plugins can be found under the {% include bc path='Plugins | MorphoLibJ | Analyze'%} menu.
 
 ##### Global geometry
 

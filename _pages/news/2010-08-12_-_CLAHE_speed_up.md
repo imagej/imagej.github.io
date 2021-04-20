@@ -13,6 +13,6 @@ You will notice, that the result is not exactly the same as in the exact per-pix
 
 [Update Fiji](/plugins/updater) to get the new version immediately.
 
-There is also a [standalone plugin](http://fly.mpi-cbg.de/saalfeld/download/clahe_.jar) for [ImageJ](https://imagej.net/) available.
+There is also a [standalone plugin](http://fly.mpi-cbg.de/saalfeld/download/clahe_.jar) for [ImageJ](/) available.
 
 

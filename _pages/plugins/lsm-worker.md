@@ -12,7 +12,7 @@ LSM-W2 extracts Leaf Surface Morphology from Laser Scanning Microscopy images.
 
 ## Installation
 
- You can [follow an update site](https://imagej.net/Following_an_update_site) with URL http://sites.imagej.net/Bionet.nsc/ (LSM-W2 in the [Optional Update Sites](https://imagej.net/List_of_update_sites#Available_update_sites)).
+ You can [follow an update site](/Following_an_update_site) with URL http://sites.imagej.net/Bionet.nsc/ (LSM-W2 in the [Optional Update Sites](/List_of_update_sites#Available_update_sites)).
 
 **Description:** The plugin can work with multi-channel multi-frame 3D images in \*.lsm format obtained from a laser scanning microscope. The main functionality of the plugin includes:
 
@@ -85,7 +85,7 @@ Functions of the buttons:
     "Diffusion"
     button allows one to apply an anisotropic diffusion filter layer by
     layer for all slices of the selected channel. This button calls the
-    plugin [Anisotropic diffusion 2D](https://imagej.nih.gov/ij/plugins/anisotropic-diffusion-2d.html).
+    plugin [Anisotropic diffusion 2D](/ij/plugins/anisotropic-diffusion-2d.html).
 
 -   The "MorfSegmentation"
     button starts the plugin "Morphological Segmentation"
@@ -173,7 +173,7 @@ After the improvement 2D segmentation could be evaluated by pressing the "MorfSe
 
 ### The segmentation module by the marked watershed segmentation algorithm
 
-[Morphological Segmentation](https://imagej.net/Morphological_Segmentation) integrated into LSM-W2 implements the segmentation of the image. The plugin Morphological Segmentation combines morphological operations, such as extended minima and morphological gradient, with watershed flooding algorithms to segment grayscale images. The main plugin's window is shown in Figure 6.
+[Morphological Segmentation](/Morphological_Segmentation) integrated into LSM-W2 implements the segmentation of the image. The plugin Morphological Segmentation combines morphological operations, such as extended minima and morphological gradient, with watershed flooding algorithms to segment grayscale images. The main plugin's window is shown in Figure 6.
 
 This plugin can process images with cell walls (Border Image) and images with cell nuclei (Object Image). During the work with the plugin Morphological\_Segmentation one should specify the parameter Tolerance, which indicates the intensity of local minimum. This parameter requires an individual manual calibration depending on the image.
 

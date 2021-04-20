@@ -86,7 +86,7 @@ SNT is currently distributed through the [Neuroanatomy](/plugins/neuroanatomy) [
 3.  Select the *Neuroanatomy* checkbox
 4.  Click *Apply changes* and restart Fiji.
 
-**Optional**: For [SciView](https://imagej.net/SciView) and [Cx3D](/plugins/snt/modeling) functionality, you need to subscribe to the *SciView-Unstable* update site. Note that there is nothing inherently *unstable* with this procedure: this nomenclature is adopted from the [Debian release cycle](https://www.debian.org/releases/). The minor annoyance here is that this *Bleeding Edge* site is not included in the official list (this may change in the future), so you'll have to specify its location to the updater:
+**Optional**: For [SciView](/SciView) and [Cx3D](/plugins/snt/modeling) functionality, you need to subscribe to the *SciView-Unstable* update site. Note that there is nothing inherently *unstable* with this procedure: this nomenclature is adopted from the [Debian release cycle](https://www.debian.org/releases/). The minor annoyance here is that this *Bleeding Edge* site is not included in the official list (this may change in the future), so you'll have to specify its location to the updater:
 
 1.  Re-run the updater and click on *Manage update sites*
 2.  If you are currently subscribing to the *SciView* *regular* channel, please unselect its checkbox to minimize version conflicts

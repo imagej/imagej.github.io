@@ -11,7 +11,7 @@ description: test description
 Introduction
 ============
 
-ImageJ and Fiji are able to run scripts written in [different languages](https://imagej.net/Scripting#Supported_languages). Besides all the differences the approach on how to use the [API of ImageJ](http://javadoc.imagej.net/) is similar for all of them. This article will introduce the basic concepts and is valid for all scripting languages.
+ImageJ and Fiji are able to run scripts written in [different languages](/Scripting#Supported_languages). Besides all the differences the approach on how to use the [API of ImageJ](http://javadoc.imagej.net/) is similar for all of them. This article will introduce the basic concepts and is valid for all scripting languages.
 
 {% include info-box content='The examples are written in Groovy, but they are easy to adapt for any other scripting language ImageJ supports. For the ImageJ1 macro language, refer to the dedicated section in Languages.' %}
 
@@ -259,5 +259,5 @@ In Jython this looks like:
 Links
 =====
 
--   [ImageJ API examples](https://imagej.net/Developing_Plugins_for_ImageJ_1.x#ImageJ.27s_API)
+-   [ImageJ API examples](/Developing_Plugins_for_ImageJ_1.x#ImageJ.27s_API)
 -   [ImageJ tutorials repository](https://github.com/imagej/tutorials/tree/master/howtos/src/main/java/howto)

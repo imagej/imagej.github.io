@@ -7,7 +7,7 @@ description: test description
 General
 -------
 
-IsletJ2 is a tool implemented as an ImageJ plugin that segments and reports properties of the Langerhans islets. The plugin was available already in 2018 under name [IsletJ](https://imagej.net/IsletJ). However, many changes have been implemented since then. The original version can be found [here](https://imagej.net/IsletJ).
+IsletJ2 is a tool implemented as an ImageJ plugin that segments and reports properties of the Langerhans islets. The plugin was available already in 2018 under name [IsletJ](/IsletJ). However, many changes have been implemented since then. The original version can be found [here](/IsletJ).
 
 Perhaps the most noticable change is the new graphical user interface (GUI). We made the GUI simpler and hopefully, more comfortable to use.
 

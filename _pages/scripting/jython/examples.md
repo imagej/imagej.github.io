@@ -1840,7 +1840,7 @@ First make sure that you have installed Maven and a java jdk and add the path to
 Then download a zip of this [Github repository](https://github.com/m-entrup/imagej-jython-package). And follow the guidelines :
 
 -   place your script in a subfolder of `Ressources`
--   eventually modify the pom file according to your dependencies (see [Building a POM](https://imagej.net/Building_a_POM)
+-   eventually modify the pom file according to your dependencies (see [Building a POM](/Building_a_POM)
 -   then open a command line in the folder and type `mvn package`.
 
 Eventually you can also type `mvn -Dimagej.app.directory=/path/to/your/Fiji.app -Dimagej.deleteOtherVersions=older` to have the dependencies automatically coped to an ImageJ installation : handy to test your package on a fresh installation.

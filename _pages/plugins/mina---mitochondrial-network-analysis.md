@@ -177,7 +177,7 @@ This tool incorporates the techniques and general ideas described by various pub
 
 [4] L.K. Huang and M.J.J. Wang. Image thresholding by minimizing the measures of fuzziness. Pattern recognition, 28(1):41–51, 1995. [https://doi.org/10.1016/0031-3203(94)E0043-K](https://doi.org/10.1016/0031-3203(94)E0043-K)
 
-[5] Auto Threshold: Default [https://imagej.net/Auto_Threshold#Default](https://imagej.net/Auto_Threshold#Default)
+[5] Auto Threshold: Default [https://imagej.net/Auto_Threshold#Default](/Auto_Threshold#Default)
 
 [6] Prewitt, JMS & Mendelsohn, ML (1966), "The analysis of cell images", Annals of the New York Academy of Sciences 128: 1035-1053, [https://doi.org/10.1111/j.1749-6632.1965.tb11715.x](https://doi.org/10.1111/j.1749-6632.1965.tb11715.x)
 

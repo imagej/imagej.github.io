@@ -207,7 +207,7 @@ Working with large images
 
 The "normal" BigWarp plugin accessible through *Plugins {% include arrow%}
  Big Data Viewer {% include arrow%}
- BigWarp* works well for small- and medium-sized images but not for very large volumes (that do not fit into memory). For very large volumes, we recommend first [converting the volume to bigdataviewer's xml/hdf5 format](https://imagej.net/plugins/bdv#Exporting_Datasets_for_the_BigDataViewer), then using [this script](https://raw.githubusercontent.com/saalfeldlab/bigwarp/master/scripts/BigWarp_ImagePlus_or_Xml.groovy) to run BigWarp using the xml/h5 file(s). See also [this forum post.](https://forum.image.sc/t/issue-with-big-warp/31472)
+ BigWarp* works well for small- and medium-sized images but not for very large volumes (that do not fit into memory). For very large volumes, we recommend first [converting the volume to bigdataviewer's xml/hdf5 format](/plugins/bdv#Exporting_Datasets_for_the_BigDataViewer), then using [this script](https://raw.githubusercontent.com/saalfeldlab/bigwarp/master/scripts/BigWarp_ImagePlus_or_Xml.groovy) to run BigWarp using the xml/h5 file(s). See also [this forum post.](https://forum.image.sc/t/issue-with-big-warp/31472)
 
 [This script](https://raw.githubusercontent.com/saalfeldlab/bigwarp/master/scripts/BigWarp_N5.groovy) enables you to run BigWarp using images stored using [N5](https://github.com/saalfeldlab/n5).
 

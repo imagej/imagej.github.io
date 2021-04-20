@@ -75,7 +75,7 @@ It's important to note that algorithm is stochastic and does not guarantee exact
 
 In the first step the algorithm draws parallel lines over the input image in direction $$\mathbf{v}$$. The direction is chosen randomly. Each line segment in the image stack is sampled to find points where it changes from background to foreground, i.e. where the line enters an object. The points are called *phase changes*, in the adjacent figure they're marked with red dots. After the sampling is complete, the algorithm forms a *MIL vector*, whose length is the total length of the line segments divided by the total number of phase changes found. The MIL vector has the same direction as $$\mathbf{v}$$. Drawing and sampling the lines is repeated for $$n$$ directions, and the method creates $$n$$ MIL vectors.
 
-After the MIL vectors have been calculated, they are added to a point cloud (a collection of points) around the origin. Then the method tries solve the equation of an ellipsoid that would fit the cloud. There may be no solution, especially if there are few points. That is, the fitting may fail at which point the plug-in stops. The radii of this ellipsoid determine the degree of anisotropy (see [results](https://imagej.net/index.php?title=BoneJ_experimental&action=submit#Results)).
+After the MIL vectors have been calculated, they are added to a point cloud (a collection of points) around the origin. Then the method tries solve the equation of an ellipsoid that would fit the cloud. There may be no solution, especially if there are few points. That is, the fitting may fail at which point the plug-in stops. The radii of this ellipsoid determine the degree of anisotropy (see [results](/index.php?title=BoneJ_experimental&action=submit#Results)).
 
 ![Projecting lines from a plane](/media/MilCube.png "Projecting lines from a plane")
 
@@ -853,7 +853,7 @@ You can read the code on Github and in every copy of BoneJ. If you turn on Image
 Where is my favourite plug-in?
 ------------------------------
 
-We have removed some plug-ins from BoneJ. *Neck shaft angle*, *Plateness* and *Structure model index* have been discontinued. *Interpolate ROIs*, [*Dilate 3D* and *Erode 3D*](https://imagej.net/3D_Binary_Filters) come pre-packaged with ImageJ, so they are no longer included in BoneJ2.
+We have removed some plug-ins from BoneJ. *Neck shaft angle*, *Plateness* and *Structure model index* have been discontinued. *Interpolate ROIs*, [*Dilate 3D* and *Erode 3D*](/3D_Binary_Filters) come pre-packaged with ImageJ, so they are no longer included in BoneJ2.
 
 Support for *Kontron IMG*, *Scanco ISQ* and *Stratec pQCT* file formats has been moved to [SCIFIO](/software/scifio). Just run {% include bc path="Edit | Options | ImageJ2" %}, and check *Use SCIFIO when opening files*. When the option is enabled, these kinds of files can be opened from {% include bc path="File | Open" %} or dragging & dropping them like any other format.
 

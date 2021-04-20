@@ -42,9 +42,9 @@ Authors
 License
 -------
 
-This project is licensed under the [GNU General Public License](https://imagej.net/GPL).
+This project is licensed under the [GNU General Public License](/GPL).
 
 Acknowledgements
 ----------------
 
-Some code used from [Multiple Kymograph Plugin](https://imagej.net/Multi_Kymograph) by Jens Reitdorf, Arne Seitz, and Johannes Schindelin.
+Some code used from [Multiple Kymograph Plugin](/Multi_Kymograph) by Jens Reitdorf, Arne Seitz, and Johannes Schindelin.

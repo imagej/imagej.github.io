@@ -21,6 +21,6 @@ The **blow** mode grows a region by adding contiguous points having the same "co
 See also
 --------
 
--   [ImageJ 1.x version](https://imagej.net/plugins/lasso-tool/) of this tool
+-   [ImageJ 1.x version](/plugins/lasso-tool/) of this tool
 
  

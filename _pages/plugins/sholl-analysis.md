@@ -543,7 +543,7 @@ Reduce the number of discretization steps involved in the calculation of [Nav](#
 
     call("sholl.Sholl_Analysis.setPrecision", "100"); // Default is 1000, ie, 1/1000 of radius step size
 
-Note that the IJM built-in [call("class.method")](http://imagej.nih.gov/ij/developer/macro/functions.html#call) function can only pass strings to Java methods. For this reason, you have to quote the passed argument. `Sholl_Analysis` will then parse the string argument and interpreter its value. Note that calls made by the IJM language need to be set before running the plugin and remain in effect while ImageJ is running.
+Note that the IJM built-in [call("class.method")](/ij/developer/macro/functions.html#call) function can only pass strings to Java methods. For this reason, you have to quote the passed argument. `Sholl_Analysis` will then parse the string argument and interpreter its value. Note that calls made by the IJM language need to be set before running the plugin and remain in effect while ImageJ is running.
 
 Auxiliary Commands
 ------------------

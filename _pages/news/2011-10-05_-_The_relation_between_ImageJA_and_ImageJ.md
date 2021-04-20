@@ -14,7 +14,7 @@ description: test description
 
 To stay up-to-date, ImageJA is synchronized with ImageJ. There are three (actually four) scripts involved in this synchronization.
 
-The real first script is a notifier which scrapes the [News section of the ImageJ 1.x site](http://imagej.nih.gov/ij/notes.html) every hour or so and sends me an email when it changed. Whenever I get such a mail I run three scripts in succession, which are all stored in the 'tools' branch of ImageJA.git:
+The real first script is a notifier which scrapes the [News section of the ImageJ 1.x site](/ij/notes.html) every hour or so and sends me an email when it changed. Whenever I get such a mail I run three scripts in succession, which are all stored in the 'tools' branch of ImageJA.git:
 
 1.  `commit-new-version.sh`
     This script downloads the News section, detects the current version, downloads the -src package, changes line endings to standard (Unix) line endings, deletes Mac-specific files (e.g. Finder-related files which have nothing to do with Java source files) and finally commits that as new state in the 'imagej' branch.

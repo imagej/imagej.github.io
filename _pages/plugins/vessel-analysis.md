@@ -12,7 +12,7 @@ Nivetha Govindaraju, {% include person content='M farna' %}
 {% capture maintainer%}
 {% include person content='M farna' %} (<mai.elfarnawany@gmail.com>)
 {% endcapture %}
-{% include info-box name='Vessel Analysis' software='Fiji' author=author maintainer=maintainer filename=' [Vessel Analysis.zip](https://imagej.net/File:Vessel_Analysis.zip)' released='June 14<sup>th</sup>, 2016' latest-version='1.1' status='stable' category='[Plugins](Category_Plugins), [Analysis](Category_Analysis)' %}
+{% include info-box name='Vessel Analysis' software='Fiji' author=author maintainer=maintainer filename=' [Vessel Analysis.zip](/File:Vessel_Analysis.zip)' released='June 14<sup>th</sup>, 2016' latest-version='1.1' status='stable' category='[Plugins](Category_Plugins), [Analysis](Category_Analysis)' %}
 
 **Description:**
 ----------------
@@ -26,7 +26,7 @@ as well as making diameter measurements for multiple vessels in RGB images of va
 
 Vessel Analysis can be added to Fiji (version 1.47g or higher required).
 
-Download the [Vessel Analysis.zip](https://imagej.net/File:Vessel_Analysis.zip) package and save an unzipped copy in Fiji's Plugins folder. Open a new session in Fiji and you should now see Vessel Analysis listed near the bottom of the Plugins drop down menu.
+Download the [Vessel Analysis.zip](/File:Vessel_Analysis.zip) package and save an unzipped copy in Fiji's Plugins folder. Open a new session in Fiji and you should now see Vessel Analysis listed near the bottom of the Plugins drop down menu.
 
 Before using the plugin, make sure your version of Fiji comes pre-downloaded with the Auto Threshold and Geometry to Distance plugins. They should be listed under: o Image &gt; Adjust &gt; Auto Threshold o Analyze &gt; Local Thickness &gt; Geometry to Distance Map
 
@@ -35,7 +35,7 @@ Also make sure you install [Mexican Hat Filter](/ij/plugins/mexican-hat/index.ht
 **Usage:**
 ----------
 
-Detailed Instructions [HERE](https://imagej.net/File:Vessel_Analysis_User_Manual.pdf)
+Detailed Instructions [HERE](/File:Vessel_Analysis_User_Manual.pdf)
 
 Open a multi-channel image in Fiji and execute the Vessel Analysis plugin via Plugins &gt; Vessel Analysis &gt; Vessel Analysis (complete). The "complete" program will guide you through preprocessing steps to prepare the image for vascular density and diameter measurements.
 

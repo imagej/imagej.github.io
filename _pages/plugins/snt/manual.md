@@ -66,13 +66,13 @@ Lists commands for I/O operations. Most are self-explanatory. Noteworthy: <img s
 
 ### Analysis
 
--   {% include bc path='Path Order Analysis'%} Produces a table and plot from morphometric statistics on the group of paths associated with each Branch Order. See [1](https://imagej.net/SNT:_Analysis#Path_Order_Analysis) for details.
--   {% include bc path='Sholl Analysis...'%} Brings up the [Sholl Analysis](https://imagej.net/Sholl_Analysis) dialog with a pre-defined set of focal points the user can choose from. See [2](https://imagej.net/SNT:_Analysis#Sholl_Analysis) for details.
--   {% include bc path='Sholl Analysis (by Focal Point)...'%} Allows precise positioning of the focal point used by Sholl Analysis. See [3](https://imagej.net/SNT:_Analysis#Sholl_Analysis_.28by_Focal_Point.29) for details.
--   {% include bc path='Strahler Analysis'%} Conducts [Strahler Analysis](https://imagej.net/Strahler_Analysis) on existing paths, producing a table of analysis results and a Strahler plot. See [4](https://imagej.net/SNT:_Analysis#Strahler_Analysis) for details.
+-   {% include bc path='Path Order Analysis'%} Produces a table and plot from morphometric statistics on the group of paths associated with each Branch Order. See [1](/SNT:_Analysis#Path_Order_Analysis) for details.
+-   {% include bc path='Sholl Analysis...'%} Brings up the [Sholl Analysis](/Sholl_Analysis) dialog with a pre-defined set of focal points the user can choose from. See [2](/SNT:_Analysis#Sholl_Analysis) for details.
+-   {% include bc path='Sholl Analysis (by Focal Point)...'%} Allows precise positioning of the focal point used by Sholl Analysis. See [3](/SNT:_Analysis#Sholl_Analysis_.28by_Focal_Point.29) for details.
+-   {% include bc path='Strahler Analysis'%} Conducts [Strahler Analysis](/Strahler_Analysis) on existing paths, producing a table of analysis results and a Strahler plot. See [4](/SNT:_Analysis#Strahler_Analysis) for details.
 -   {% include bc path='Export CSV Properties...'%} Allows export of information regarding individual Paths, including (but not limited to) morphometrics, neurite compartments, linkage relationships to other Paths and start and end coordinates.
--   {% include bc path='Measure...'%} Provides a comprehensive selection of measurements to apply to one connected component (i.e., rooted tree structure) from the Path Manager. See [5](https://imagej.net/SNT:_Analysis#Measurements) for details.
--   {% include bc path='Quick Measurements|'%} Shows a table with summary statistics for all existing paths. To measure only selected paths, use {% include bc path='Analyze|Measure'%} in the Path Manager. See [6](https://imagej.net/SNT:_Analysis#Measurements) for details.
+-   {% include bc path='Measure...'%} Provides a comprehensive selection of measurements to apply to one connected component (i.e., rooted tree structure) from the Path Manager. See [5](/SNT:_Analysis#Measurements) for details.
+-   {% include bc path='Quick Measurements|'%} Shows a table with summary statistics for all existing paths. To measure only selected paths, use {% include bc path='Analyze|Measure'%} in the Path Manager. See [6](/SNT:_Analysis#Measurements) for details.
 
 ### Utilities
 
@@ -86,16 +86,16 @@ Lists commands for I/O operations. Most are self-explanatory. Noteworthy: <img s
 
 </div>
 
--   {% include bc path='Compare Reconstructions...'%} Allows morphometric conparison of two single reconstruction files or multiple groups of reconstruction files. See [Comparing Reconstructions](https://imagej.net/SNT:_Analysis#Comparing_Reconstructions) for details.
--   {% include bc path='Create Dendrogram'%} Generates a Dendrogram plot of a connected component (i.e, one rooted tree structure in the Path Manager). See [Dendrogram Viewer](https://imagej.net/SNT:_Analysis#Dendrogram_Viewer) for details.
--   {% include bc path='Batch Scripts| '%} A collection of batch processing scripts related to image processing, reconstruction analysis and data curation. See [Script Templates: Batch](https://imagej.net/SNT:_Scripting#Batch) for details.
+-   {% include bc path='Compare Reconstructions...'%} Allows morphometric conparison of two single reconstruction files or multiple groups of reconstruction files. See [Comparing Reconstructions](/SNT:_Analysis#Comparing_Reconstructions) for details.
+-   {% include bc path='Create Dendrogram'%} Generates a Dendrogram plot of a connected component (i.e, one rooted tree structure in the Path Manager). See [Dendrogram Viewer](/SNT:_Analysis#Dendrogram_Viewer) for details.
+-   {% include bc path='Batch Scripts| '%} A collection of batch processing scripts related to image processing, reconstruction analysis and data curation. See [Script Templates: Batch](/SNT:_Scripting#Batch) for details.
 
 {% include clear%}
 
 
 ### Scripts
 
-See [SNT: Scripting](https://imagej.net/SNT:_Scripting).
+See [SNT: Scripting](/SNT:_Scripting).
 
 ### View
 
@@ -294,11 +294,11 @@ This tab aggregated widgets for advanced settings.
 
 ### Reconstruction Viewer
 
-The [Reconstruction Viewer](https://imagej.net/SNT:_Reconstruction_Viewer) is an advanced, fully scriptable OpenGL viewer enabling 3D visualization and interaction with reconstructions, OBJ meshes (including multiple model organism neuropil annotations and reference brains), computed surfaces (convex hulls) and other shape annotations. For performance reasons, some Path Manager changes may need to be synchronized manually from the RV controls. To open Reconstruction Viewer with the current contents of the Path Manager, press *Open Reconstruction Viewer*. To instead open the viewer as a standalone application, go to {% include bc path='Plugins|NeuroAnatomy|Reconstruction Viewer...'%} in the main Fiji dialog.
+The [Reconstruction Viewer](/SNT:_Reconstruction_Viewer) is an advanced, fully scriptable OpenGL viewer enabling 3D visualization and interaction with reconstructions, OBJ meshes (including multiple model organism neuropil annotations and reference brains), computed surfaces (convex hulls) and other shape annotations. For performance reasons, some Path Manager changes may need to be synchronized manually from the RV controls. To open Reconstruction Viewer with the current contents of the Path Manager, press *Open Reconstruction Viewer*. To instead open the viewer as a standalone application, go to {% include bc path='Plugins|NeuroAnatomy|Reconstruction Viewer...'%} in the main Fiji dialog.
 
 ### SciView
 
-[SciView](/plugins/sciview) is IJ2's modern replacement for the Legacy 3D Viewer, providing sophisticated 3D visualization and virtual reality capabilities for arbitrarily large image volumes and meshes. Since it is fully integrated with SNT, SciView can enhance tracing, analysis and visualization routines by providing a deeper, more contextualized view of the imagery at hand. Additionally, native integration with [Cx3D](https://github.com/morphonets/cx3d) enables simulation of neurodevelopmental processes, including neuronal growth and formation of cortical circuits. See [SNT: Modeling](https://imagej.net/SNT:_Modeling) for details.
+[SciView](/plugins/sciview) is IJ2's modern replacement for the Legacy 3D Viewer, providing sophisticated 3D visualization and virtual reality capabilities for arbitrarily large image volumes and meshes. Since it is fully integrated with SNT, SciView can enhance tracing, analysis and visualization routines by providing a deeper, more contextualized view of the imagery at hand. Additionally, native integration with [Cx3D](https://github.com/morphonets/cx3d) enables simulation of neurodevelopmental processes, including neuronal growth and formation of cortical circuits. See [SNT: Modeling](/SNT:_Modeling) for details.
 
 ### Legacy 3D Viewer
 
@@ -435,7 +435,7 @@ This menu contains several options which provide quick ways to analyze and visua
 <img src="/media/SNT-Path-Manager-Measurements.png" title="fig:Measurements table for OP_1" width="1000" alt="Measurements table for OP_1" /> {% include clear%}
 
 
--   {% include bc path='Convert to ROIs...'%} Allows conversion of Path(s) to ImageJ [ROIs](https://imagej.nih.gov/ij/docs/guide/146-10.html#sec:Selections-Intro) (Regions of Interest). Creates an instance of the [ROI Manager](https://imagej.nih.gov/ij/docs/guide/146-30.html#fig:The-ROI-Manager)
+-   {% include bc path='Convert to ROIs...'%} Allows conversion of Path(s) to ImageJ [ROIs](/ij/docs/guide/146-10.html#sec:Selections-Intro) (Regions of Interest). Creates an instance of the [ROI Manager](/ij/docs/guide/146-30.html#fig:The-ROI-Manager)
     -   *Convert* Drop-down menu specifying the compartment to convert.
     -   *View* Drop-down menu specifying which view to overlay the ROIs.
     -   *Impose SWC colors*

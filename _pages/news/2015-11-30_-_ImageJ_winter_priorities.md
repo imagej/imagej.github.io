@@ -42,6 +42,6 @@ While not directly tied to any one issue or reportable task, [LOCI](/orgs/loci) 
 
 -   The ImageJ community—especially with the success of the new [forum](http://forum.imagej.net/)
 -   [LOCI](http://loci.wisc.edu/) scientific collaborations
--   Technical training, via continued [presentations, workshops](https://imagej.net/Presentations#Workshops) and wiki guides.
+-   Technical training, via continued [presentations, workshops](/Presentations#Workshops) and wiki guides.
 
  

@@ -17,10 +17,10 @@ Installation
 
 Requirements:
 
--   [ImageJ](https://imagej.net/downloads) v1.49o or newer.
+-   [ImageJ](/downloads) v1.49o or newer.
 -   [Bio-Formats 5.x](https://www.openmicroscopy.org/bio-formats/downloads/) or newer.
 
-{% include tip id='bioformat' tip='Saving `bioformats\_package.jar` in .\\ImageJ.app\\plugins\\ seems to be the best way to use the macro in stable conditions.' %} Use the ImageJ Updater and see the instructions [How to follow a 3rd party update site](https://imagej.net/How_to_follow_a_3rd_party_update_site) select FAST (http://sites.imagej.net/FAST) from the available site list.
+{% include tip id='bioformat' tip='Saving `bioformats\_package.jar` in .\\ImageJ.app\\plugins\\ seems to be the best way to use the macro in stable conditions.' %} Use the ImageJ Updater and see the instructions [How to follow a 3rd party update site](/How_to_follow_a_3rd_party_update_site) select FAST (http://sites.imagej.net/FAST) from the available site list.
 
 New commands should then appear in ImageJ '{% include bc path='Plugins | FAST'%}' menu.
 
@@ -89,7 +89,7 @@ This table is automatically saved as a *csv* file in the work directory selected
 Related Resources
 -----------------
 
-This program is free software; you can redistribute it and/or modify it under the terms of the [GNU General Public License](http://www.gnu.org/licenses/gpl.html) as published by the Free Software Foundation. [Comments or improvements are welcome](https://imagej.net/User:C.TURI%C3%88S). It is distributed in the hope that it will be useful, but **"AS IS" without warranty of any kind**. See the [GNU General Public License](http://www.gnu.org/licenses/gpl.html) for more details.
+This program is free software; you can redistribute it and/or modify it under the terms of the [GNU General Public License](http://www.gnu.org/licenses/gpl.html) as published by the Free Software Foundation. [Comments or improvements are welcome](/User:C.TURI%C3%88S). It is distributed in the hope that it will be useful, but **"AS IS" without warranty of any kind**. See the [GNU General Public License](http://www.gnu.org/licenses/gpl.html) for more details.
 
 This program has been developed within the framework of the [OECD Work plan for the Test Guidelines Programme (TGP)](http://www.oecd.org/chemicalsafety/testing/oecd-guidelines-testing-chemicals-related-documents.htm) - Project 2.46: New Test Guideline for the Detection of Endocrine Active Substances, acting through estrogen receptors using transgenic cyp 19a1b-GFP Zebrafish Embryos (EASZY assay).
 

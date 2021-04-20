@@ -11,12 +11,12 @@ description: test description
 Sholl Analysis
 ==============
 
-There are two [Sholl Analysis](https://imagej.net/Sholl_Analysis) commands available in SNT's *Analysis* menu. The {% include bc path='Analysis|Shuoll Analysis...'%} option provides a set of pre-defined focal points the user can choose from. Note for the morphology-based focal points (e.g., *Soma*, *Root node(s): Primary apical dendrite(s)*) , the relevant morphology tag(s) must be assigned to the set of paths considered by the analysis. To select a focal point manually, see the following section.
+There are two [Sholl Analysis](/Sholl_Analysis) commands available in SNT's *Analysis* menu. The {% include bc path='Analysis|Shuoll Analysis...'%} option provides a set of pre-defined focal points the user can choose from. Note for the morphology-based focal points (e.g., *Soma*, *Root node(s): Primary apical dendrite(s)*) , the relevant morphology tag(s) must be assigned to the set of paths considered by the analysis. To select a focal point manually, see the following section.
 
 Sholl Analysis (by Focal Point)
 -------------------------------
 
-<img src="/media/Snt-Sholl-Coarse-Intructions.png" title="fig:Initiating Sholl Analysis: coarse method" width="200" alt="Initiating Sholl Analysis: coarse method" /> It is also possible to initiate [Sholl Analysis](https://imagej.net/Sholl_Analysis) on a tracing in the canvas by manually selecting a focal point. You can do it coarsely by right-clicking near a node and choosing *Sholl Analysis at Nearest Node* from the contextual menu (Shortcut: {% include key content='Alt' %} + {% include key content='Shift' %} + {% include key content='A' %}.
+<img src="/media/Snt-Sholl-Coarse-Intructions.png" title="fig:Initiating Sholl Analysis: coarse method" width="200" alt="Initiating Sholl Analysis: coarse method" /> It is also possible to initiate [Sholl Analysis](/Sholl_Analysis) on a tracing in the canvas by manually selecting a focal point. You can do it coarsely by right-clicking near a node and choosing *Sholl Analysis at Nearest Node* from the contextual menu (Shortcut: {% include key content='Alt' %} + {% include key content='Shift' %} + {% include key content='A' %}.
 
 Alternatively, for precise positioning of the center of analysis:
 
@@ -42,7 +42,7 @@ Alternatively, for precise positioning of the center of analysis:
 
 </div>
 
-In addition to the Sholl Profile plot and table, the output of the analysis can be visualized as a color mapping of the reconstruction and as a [Sholl Image](https://imagej.net/Simple_Neurite_Tracer:_Sholl_analysis#Sholl_Image). To color code the tracing, choose *Color coded paths* from the *Annotations* drop-down menu and select a Lut from the *Annotations Lut* drop-down menu before pressing *Run Analysis*. To output the Sholl Image, choose *3D viewer labels image* from the *Annotations* drop-down menu and select the desired Lut before running the analysis.
+In addition to the Sholl Profile plot and table, the output of the analysis can be visualized as a color mapping of the reconstruction and as a [Sholl Image](/Simple_Neurite_Tracer:_Sholl_analysis#Sholl_Image). To color code the tracing, choose *Color coded paths* from the *Annotations* drop-down menu and select a Lut from the *Annotations Lut* drop-down menu before pressing *Run Analysis*. To output the Sholl Image, choose *3D viewer labels image* from the *Annotations* drop-down menu and select the desired Lut before running the analysis.
 
 <div align="center">
 
@@ -56,7 +56,7 @@ In addition to the Sholl Profile plot and table, the output of the analysis can 
 Strahler Analysis
 =================
 
-To conduct [Strahler Analysis](https://imagej.net/Strahler_Analysis) on the current contents of the Path Manager, choose the {% include bc path='Utilities|Strahler Analysis'%} command in the main SNT dialog. This command will output the results of the analysis as a table and plot. These figures contain morphometric statistics on the group of paths associated with each Horton-Strahler Number. Note that this feature analyzes traced reconstructions. To run Strahler analysis on images, use the {% include bc path='Analyze|Skeleton|Strahler Analysis...'%} plugin in the main Fiji dialog.
+To conduct [Strahler Analysis](/Strahler_Analysis) on the current contents of the Path Manager, choose the {% include bc path='Utilities|Strahler Analysis'%} command in the main SNT dialog. This command will output the results of the analysis as a table and plot. These figures contain morphometric statistics on the group of paths associated with each Horton-Strahler Number. Note that this feature analyzes traced reconstructions. To run Strahler analysis on images, use the {% include bc path='Analyze|Skeleton|Strahler Analysis...'%} plugin in the main Fiji dialog.
 
 <div align="left">
 
@@ -86,7 +86,7 @@ To quickly measure all existing paths with a common set of statistics, choose {%
 
 To get measurements only on a select group of Paths, first select or filter for the Paths you want to measure in the Path Manager, then choose either command from the {% include bc path='Analyze'%} menu in the Path Manager.
 
-Batch measurements of reconstructions can be accomplished via scripting. See *Measure\_Multiple\_Files.py* in the SNT [Script Templates](https://imagej.net/SNT:_Scripting#Script_Templates) for a basic example. \[\[Image:Snt-Measure-Results-Table.png\|none\|thumb\|1000px\|*Measure...*
+Batch measurements of reconstructions can be accomplished via scripting. See *Measure\_Multiple\_Files.py* in the SNT [Script Templates](/SNT:_Scripting#Script_Templates) for a basic example. \[\[Image:Snt-Measure-Results-Table.png\|none\|thumb\|1000px\|*Measure...*
 
 `results]]`
 
@@ -100,7 +100,7 @@ Dendrogram Viewer
 
 The viewer provides controls for orientation, zoom level, panning, vertex editing and traversal as well as options to display vertex labels and edge weights (which by default are the euclidean distances between adjacent vertices). To see the available key shortcuts, right click on the viewer and choose *Available Shortcuts...*. The plot may be exported in several file formats, including HTML, PNG and SVG.
 
-Fine-grained programmatic control over SNT's Graph objects is achieved using the [JGraphT API](https://jgrapht.org/javadoc/) in a script. Also relevant is the [sc.fiji.snt.analysis.graph](http://fiji.github.io/SNT/sc/fiji/snt/analysis/graph/package-frame.html) package which provides high-level tools for Graph creation and conversion. See *Graph\_Analysis.py* in the SNT [Script Templates](https://imagej.net/SNT:_Scripting#Script_Templates) for a basic example. <img src="/media/Snt-Dendrogram-Viewer.png" title="fig:Dendrogram Viewer" width="300" alt="Dendrogram Viewer" />
+Fine-grained programmatic control over SNT's Graph objects is achieved using the [JGraphT API](https://jgrapht.org/javadoc/) in a script. Also relevant is the [sc.fiji.snt.analysis.graph](http://fiji.github.io/SNT/sc/fiji/snt/analysis/graph/package-frame.html) package which provides high-level tools for Graph creation and conversion. See *Graph\_Analysis.py* in the SNT [Script Templates](/SNT:_Scripting#Script_Templates) for a basic example. <img src="/media/Snt-Dendrogram-Viewer.png" title="fig:Dendrogram Viewer" width="300" alt="Dendrogram Viewer" />
 
 Comparing Reconstructions
 =========================
@@ -139,6 +139,6 @@ The file selection prompt for this option allows selection of up to four directo
 Custom Analyses
 ===============
 
-It is possible to script your own analysis routines. See [SNT:\_Scripting](https://imagej.net/SNT:_Scripting) for the link to SNT's API as well as script templates demonstrating a range of analysis possibilities.
+It is possible to script your own analysis routines. See [SNT:\_Scripting](/SNT:_Scripting) for the link to SNT's API as well as script templates demonstrating a range of analysis possibilities.
 
 {% include sntnavbar%}
