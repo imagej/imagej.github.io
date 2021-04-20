@@ -41,7 +41,7 @@ Outdated versions of the cluster processing scripts on which this workflow is ba
 Logic of workflow
 =================
 
-We map and dispatch the workflow logic either on a single maschine or on a HPC cluster using the automated workflow engine **\[https://bitbucket.org/johanneskoester/snakemake/wiki/Home. Snakemake\]**. Within the *Snakefile* the workflow with the processing steps and the input and output rules is defined. Each of these steps call a Fiji *beanshell* script. These scripts in turn drive the processing via Fiji.
+We map and dispatch the workflow logic either on a single maschine or on a HPC cluster using the automated workflow engine **[Snakemake](https://bitbucket.org/johanneskoester/snakemake/wiki/Home.)**. Within the *Snakefile* the workflow with the processing steps and the input and output rules is defined. Each of these steps call a Fiji *beanshell* script. These scripts in turn drive the processing via Fiji.
 
 The current workflow consists of the following steps. It covers the prinicipal processing for timelapse multiview SPIM processing:
 

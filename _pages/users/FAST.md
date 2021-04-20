@@ -11,4 +11,4 @@ Description
 
 This ImageJ macro automates tasks (open, set threshold, save Region Of Interest, measure) to process a set of fluorescence images.
 
-[http://imagej.net/FAST](http://imagej.net/FAST)
+[FAST](/plugins/fast)

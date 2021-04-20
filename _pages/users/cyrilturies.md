@@ -11,4 +11,4 @@ orcid: 0000-0002-6238-4885
 scopus: 49762235000
 ---
 
-Maintainer of [Fluorescence image AnalysiS Tool: FAST](http://imagej.net/FAST) 
+Maintainer of [Fluorescence image AnalysiS Tool: FAST](/plugins/fast) 

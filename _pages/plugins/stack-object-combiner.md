@@ -79,7 +79,7 @@ During this example, you can look at the different step with the [3DViewer](http
 Reference
 ---------
 
-This plugin haven't been published yet, but if you want to cite you can always refer to it as T. Boissonnet,"Stack Object Combiner plugin for ImageJ", https://imagej.net/StackObjectCombiner, October 2015
+This plugin haven't been published yet, but if you want to cite you can always refer to it as T. Boissonnet,"Stack Object Combiner plugin for ImageJ", https://imagej.net/plugins/stackobjectcombiner, October 2015
 
 Contact
 -------

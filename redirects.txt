@@ -1185,7 +1185,7 @@ Maximum_Entropy_Threshold :: plugins/maximum-entropy-threshold
 Median_(3D) :: plugins/minimum-maximum-median
 Merge_Conflicts :: develop/git/conflicts
 Metadata :: TODO
-MiNA_-_Mitochondrial_Network_Analysis :: plugins/mina---mitochondrial-network-analysis
+MiNA_-_Mitochondrial_Network_Analysis :: plugins/mina
 MiToBo :: plugins/mitobo
 Micro-Manager :: software/micro-manager
 Microscope_Focus_Quality :: plugins/microscope-focus-quality

@@ -458,7 +458,7 @@ Weka will automatically load plugins installed in `~/wekafiles`. If you already 
 Weka core version
 -----------------
 
-Since the [3.2.0 release](https://github.com/fiji/Trainable_Segmentation/releases/tag/v3.2.0), [Trainable Weka Segmentation](/plugins/tws) uses Weka 3.9.0+ - development version. If you have problems loading models from previous versions of the plugin/library, most likely you need to recreate the models using the new version (see \[http://forums.pentaho.com/showthread.php?204301-New-Weka-3-6-14-3-8-0-and-3-9-0-releases! note 1 of the Weka official release\]).
+Since the [3.2.0 release](https://github.com/fiji/Trainable_Segmentation/releases/tag/v3.2.0), [Trainable Weka Segmentation](/plugins/tws) uses Weka 3.9.0+ - development version. If you have problems loading models from previous versions of the plugin/library, most likely you need to recreate the models using the new version (see [note 1 of the Weka official release](http://forums.pentaho.com/showthread.php?204301-New-Weka-3-6-14-3-8-0-and-3-9-0-releases!)).
 
 If you absolutely need to reuse an old model, you can transform it to the new version thanks to a [model migrator tool](http://www.cs.waikato.ac.nz/ml/weka/downloading.html) provided by the Weka developers. For more information, check this [post in the ImageJ forum](http://forum.imagej.net/t/weka-segmentation-error-after-update-29-09-16/2898/24?u=iarganda).
 

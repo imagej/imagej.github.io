@@ -12,4 +12,4 @@ University of Southampton, L.Wollatz@soton.ac.uk
 Contributions
 -------------
 
--   LungJ: [1](http://imagej.net/LungJ)
+-   LungJ: [1](/plugins/lungj)

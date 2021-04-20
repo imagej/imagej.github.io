@@ -19,7 +19,7 @@ Each node of this cluster runs CentOS 6.3 Linux distribution. The queuing system
 
 **Note on versions**
 
-The SPIM registration is a piece of software that undergoes ongoing development. The original version gathered under plugins *SPIM registration* has been replaced in 2014 by new set of plugins gathered under *Multiview reconstruction*. Moreover, the cluster pipeline has been changed to use a centralised Linux style master file. In 2015 this pipeline was reimplemented as **[automated workflow](Automated_workflow_for_parallel_Multiview_Reconstruction)** using the workflow manager **\[https://bitbucket.org/johanneskoester/snakemake/wiki/Home. Snakemake\]**. Which allows to map and dispatch the workflow logic automatically either on a single maschine or on a HPC cluster. Therefore there are 4 versions available. We highly recommend using the latest version:
+The SPIM registration is a piece of software that undergoes ongoing development. The original version gathered under plugins *SPIM registration* has been replaced in 2014 by new set of plugins gathered under *Multiview reconstruction*. Moreover, the cluster pipeline has been changed to use a centralised Linux style master file. In 2015 this pipeline was reimplemented as **[automated workflow](Automated_workflow_for_parallel_Multiview_Reconstruction)** using the workflow manager **[Snakemake](https://bitbucket.org/johanneskoester/snakemake/wiki/Home.)**. Which allows to map and dispatch the workflow logic automatically either on a single maschine or on a HPC cluster. Therefore there are 4 versions available. We highly recommend using the latest version:
 
 -   [Original SPIM registration pipeline](#Original_SPIM_registration_pipeline) - contains the most detailed description of the cluster pipeline using *SPIM registration* plugins. If you do not have much HPC/Linux experience start here.
 
@@ -33,7 +33,7 @@ The SPIM registration is a piece of software that undergoes ongoing development.
 
 <!-- -->
 
--   **[Automated workflow for parallel Multiview Reconstruction](Automated_workflow_for_parallel_Multiview_Reconstruction)** - automated workflow using the workflow manager **\[https://bitbucket.org/johanneskoester/snakemake/wiki/Home. Snakemake\]**
+-   **[Automated workflow for parallel Multiview Reconstruction](Automated_workflow_for_parallel_Multiview_Reconstruction)** - automated workflow using the workflow manager **[Snakemake](https://bitbucket.org/johanneskoester/snakemake/wiki/Home.)**
 
 So, if you are new read a bit of the chapter 1 (original pipeline) to get familiar and then skip to chapter 3 (Multiview reconstruction pipeline) which is more up-to-date. To understand how the master file works refer to chapter 2 (NEW PIPELINE).
 

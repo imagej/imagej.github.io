@@ -12,7 +12,7 @@ Over the past many months, we have been incrementally working toward support for
 -   https://javadoc.imagej.net/
 -   https://jenkins.imagej.net/
 -   https://maven.imagej.net/
--   /ij/
+-   https://mirror.imagej.net/
 -   https://search.imagej.net/
 -   https://sites.imagej.net/
 -   https://status.imagej.net/

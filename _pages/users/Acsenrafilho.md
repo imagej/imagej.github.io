@@ -17,7 +17,7 @@ Please, visit our research group [website](http://dcm.ffclrp.usp.br/csim) to fin
 
 I created some PlugIn or PlugInFilters for ImageJ, based on some of my research methods or even only create simple tools for image research. See the list below and be free to enter in contact with me to do suggestions or participate for PlugIn implementations in GitHub respository.
 
--   [Anomalous Diffusion Filter](http://imagej.net/AnomalousDiffusionFilters)
--   [Perfusion in MRI technique](http://imagej.net/MRIPerfusion)
--   [Noise Generator tool](http://imagej.net/NoiseGenerator)
--   [Sample Entropy for images](http://imagej.net/SampEn2D)
+-   [Anomalous Diffusion Filter](/plugins/anomalous-diffusion-filters)
+-   [Perfusion in MRI technique](/plugins/mri-perfusion)
+-   [Noise Generator tool](/plugins/noise-generator)
+-   [Sample Entropy for images](/plugins/sampen2d)

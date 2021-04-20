@@ -168,7 +168,7 @@ The following script exemplifies how to extend the boilerplate template to contr
     from sc.fiji.snt.util import (BoundingBox, PointInImage, SNTColor, SWCPoint)
     from sc.fiji.snt.viewer import (Annotation3D, OBJMesh, MultiViewer2D, Viewer2D, Viewer3D)
 
-    # Documentation Resources: https://imagej.net/SNT:_Scripting
+    # Documentation Resources: https://imagej.net/plugins/snt/scripting
     # SNT API: https://morphonets.github.io/SNT
     # Rec. Viewer's API: https://morphonets.github.io/SNT/index.html?sc/fiji/snt/viewer/Viewer3D.html
     # Tip: Programmatic control of the Viewer's scene can be set using the Console info

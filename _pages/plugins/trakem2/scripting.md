@@ -65,7 +65,7 @@ The most interesting data members of a [Display](http://www.ini.uzh.ch/~acardona
 
 ### Obtain a collection of selected images
 
-The [Selection](http://www.ini.uzh.ch/~acardona/api/ini/trakem2/display/Selection.html) object of a [Display](http://www.ini.uzh.ch/~acardona/api/ini/trakem2/display/Display.html) can return a number of collections with any selected objects in it, for example of type [Patch](http://www.ini.uzh.ch/~acardona/api/ini/trakem2/display/Patch.html) (those that wrap an image). All you need to do is to call <i>\[http://www.ini.uzh.ch/~acardona/api/ini/trakem2/display/Selection.html#getSelected(java.lang.Class>) getSelected\]</i with the name of the class to filter for:
+The [Selection](http://www.ini.uzh.ch/~acardona/api/ini/trakem2/display/Selection.html) object of a [Display](http://www.ini.uzh.ch/~acardona/api/ini/trakem2/display/Display.html) can return a number of collections with any selected objects in it, for example of type [Patch](http://www.ini.uzh.ch/~acardona/api/ini/trakem2/display/Patch.html) (those that wrap an image). All you need to do is to call <i>[getSelected](http://www.ini.uzh.ch/~acardona/api/ini/trakem2/display/Selection.html#getSelected(java.lang.Class>))</i with the name of the class to filter for:
 
     for d in Display.getSelected(Patch):
       print d.title
@@ -142,7 +142,7 @@ The affine transform cannot be set, because it's a final member. But itself the 
 
 Be careful: java's AffineTranform does concatenations and not pre-concatenations (order matters in matrix multiplication).
 
-In most occasions, what you want can be accomplished with <i>\[http://www.ini.uzh.ch/~acardona/api/ini/trakem2/display/Displayable.html#preTransform(java.awt.geom.AffineTransform,%20boolean>) preTransform\]</i, such as translating an image:
+In most occasions, what you want can be accomplished with <i>[preTransform](http://www.ini.uzh.ch/~acardona/api/ini/trakem2/display/Displayable.html#preTransform(java.awt.geom.AffineTransform,%20boolean>))</i, such as translating an image:
 
     >>> from java.awt.geom import AffineTransform
     >>> aff = AffineTransform()
@@ -166,7 +166,7 @@ Notice that, for this script to work for you, you will have to edit two lines:
 
 Be sure as well to create as many layers as you need. If you don't know, use the <i>getLayer</i> method on the <i>layerset</i> variable, which has the ability to create a new layer when asked to get one for a Z for which a layer doesn't exist yet.
 
-Documentation you may want to look at: \[https://fiji.sc/javadoc/ini/trakem2/Project.html#newFSProject(java.lang.String,%20ini.trakem2.tree.TemplateThing,%20java.lang.String>) Project.newFSProject\], \[<https://fiji.sc/javadoc/ini/trakem2/display/Patch.html#createPatch(ini.trakem2.Project,%20java.lang.String>) Patch.createPatch\], \[<https://fiji.sc/javadoc/ini/trakem2/display/Layer.html#add(ini.trakem2.display.Displayable) Layer.add\], [Align](https://fiji.sc/javadoc/mpicbg/trakem2/align/Align.html), [AlignTask](https://fiji.sc/javadoc/mpicbg/trakem2/align/AlignTask.html),
+Documentation you may want to look at: [Project.newFSProject](https://fiji.sc/javadoc/ini/trakem2/Project.html#newFSProject(java.lang.String,%20ini.trakem2.tree.TemplateThing,%20java.lang.String>)), \[<https://fiji.sc/javadoc/ini/trakem2/display/Patch.html#createPatch(ini.trakem2.Project,%20java.lang.String>) Patch.createPatch\], \[<https://fiji.sc/javadoc/ini/trakem2/display/Layer.html#add(ini.trakem2.display.Displayable) Layer.add\], [Align](https://fiji.sc/javadoc/mpicbg/trakem2/align/Align.html), [AlignTask](https://fiji.sc/javadoc/mpicbg/trakem2/align/AlignTask.html),
 
     # Albert Cardona 2011-06-05
     # Script for Colenso Speer
@@ -668,10 +668,10 @@ Each [Node](https://fiji.sc/javadoc/ini/trakem2/display/Node.html) has:
 2.  A reference to a layer (get it with nd.getLayer()). The [Layer](https://fiji.sc/javadoc/ini/trakem2/display/Layer.html) has a getZ() method to get the Z coordinate (in pixels).
 3.  A data field, which can be a radius or a java.awt.geom.Area (see below).
 
-Each [Node](https://fiji.sc/javadoc/ini/trakem2/display/Node.html) contains a \[https://fiji.sc/javadoc/ini/trakem2/display/Node.html#getData() getData()\] public method to acquire whatever it is that it has:
+Each [Node](https://fiji.sc/javadoc/ini/trakem2/display/Node.html) contains a [getData()](https://fiji.sc/javadoc/ini/trakem2/display/Node.html#getData()) public method to acquire whatever it is that it has:
 
--   Treeline and Connector: its nodes \[https://fiji.sc/javadoc/ini/trakem2/display/Node.html#getData() getData()\] return a radius. The default value is zero.
--   AreaTree: its nodes \[https://fiji.sc/javadoc/ini/trakem2/display/Node.html#getData() getData()\] return a [java.awt.geom.Area](https://fiji.sc/javadoc/java/awt/geom/Area.html) instance, or null if none yet assigned to it.
+-   Treeline and Connector: its nodes [getData()](https://fiji.sc/javadoc/ini/trakem2/display/Node.html#getData()) return a radius. The default value is zero.
+-   AreaTree: its nodes [getData()](https://fiji.sc/javadoc/ini/trakem2/display/Node.html#getData()) return a [java.awt.geom.Area](https://fiji.sc/javadoc/java/awt/geom/Area.html) instance, or null if none yet assigned to it.
 
 Obtaining the X,Y,Z coordinates of all nodes in a Tree
 ------------------------------------------------------
@@ -749,7 +749,7 @@ The centrality is the measure of how important is a node in tree, according to h
 
 The method we use is [Ulrik Brande](http://www.informatik.uni-konstanz.de/~brandes/)'s fast algorithm for computing betweenness centrality (see the [paper](http://www.google.com/url?sa=t&source=web&cd=1&ved=0CBcQFjAA&url=http%3A%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fdownload%3Fdoi%3D10.1.1.11.2024%26rep%3Drep1%26type%3Dpdf&ei=krO5TPKvNMXN4AbS4OHdDQ&usg=AFQjCNELHtt9Gb5KHMzRCeTsqI1uDoqxew)).
 
-The method \[https://fiji.sc/javadoc/ini/trakem2/display/Tree.html#computeCentrality() computeCentrality()\] of class [Tree](https://fiji.sc/javadoc/ini/trakem2/display/Tree.html) returns as a [Map](https://fiji.sc/javadoc/java/util/Map.html) of [Node](https://fiji.sc/javadoc/ini/trakem2/display/Node.html) instance vs. its centrality value:
+The method [computeCentrality()](https://fiji.sc/javadoc/ini/trakem2/display/Tree.html#computeCentrality()) of class [Tree](https://fiji.sc/javadoc/ini/trakem2/display/Tree.html) returns as a [Map](https://fiji.sc/javadoc/java/util/Map.html) of [Node](https://fiji.sc/javadoc/ini/trakem2/display/Node.html) instance vs. its centrality value:
 
     from ini.trakem2.display import Display
 
@@ -926,7 +926,7 @@ The idea here is to iterate all nodes of a tree, and determine, for each node, w
     for node, targets in outgoing.iteritems():
       print node, " connects to", len(targets)
 
-Similarly, we could compute the incomming connections. There is a convenience method \[https://fiji.sc/javadoc/ini/trakem2/display/Tree.html#findConnectors() findConnectors()\] in class [Tree](https://fiji.sc/javadoc/ini/trakem2/display/Tree.html) to return two lists: that of the outgoing and that of the incomming Connector instances. From these, one can easily get the connectivity graph, which you may also get by right-clicking on a Display and going for "Export - Connectivity graph...".
+Similarly, we could compute the incomming connections. There is a convenience method [findConnectors()](https://fiji.sc/javadoc/ini/trakem2/display/Tree.html#findConnectors()) in class [Tree](https://fiji.sc/javadoc/ini/trakem2/display/Tree.html) to return two lists: that of the outgoing and that of the incomming Connector instances. From these, one can easily get the connectivity graph, which you may also get by right-clicking on a Display and going for "Export - Connectivity graph...".
 
 How to find out the network of all arbors, related via Connector instances
 --------------------------------------------------------------------------
@@ -1109,7 +1109,7 @@ Export all Ball objects as a CSV file
 Generate 3D meshes
 ==================
 
-In TrakEM2, 3D meshes are generated as a list of [Point3f](http://javadoc.imagej.net/Java3D/index.html?org/scijava/vecmath/Point3f.html) for each object. Then the list is wrapped into any of the subclasses of [CustomMesh](https://fiji.sc/javadoc/customnode/CustomMesh.html) of the 3D Viewer library, such as a [CustomTriangleMesh](https://fiji.sc/javadoc/customnode/CustomTriangleMesh.html) or a [CustomLineMesh](https://fiji.sc/javadoc/customnode/CustomLineMesh.html). Then these mesh objects are encapsulated into a [Content](https://fiji.sc/javadoc/ij3d/Content.html) object and added to an instance of the [Image3DUniverse](https://fiji.sc/javadoc/ij3d/Image3DUniverse.html), which is the main window of the 3D Viewer.
+In TrakEM2, 3D meshes are generated as a list of [Point3f](http://javadoc.imagej.net/Java3D/index.html?org/scijava/vecmath/Point3f.html) for each object. Then the list is wrapped into any of the subclasses of [CustomMesh](https://fiji.sc/javadoc/customnode/CustomMesh.html) of the 3D Viewer library, such as a [CustomTriangleMesh](https://fiji.sc/javadoc/customnode/CustomTriangleMesh.html) or a [CustomLineMesh](https://fiji.sc/javadoc/customnode/CustomLineMesh.html). Then these mesh objects are encapsulated into a [Content](https://javadoc.scijava.org/ImageJ1/ij3d/Content.html) object and added to an instance of the [Image3DUniverse](https://javadoc.scijava.org/ImageJ1/ij3d/Image3DUniverse.html), which is the main window of the 3D Viewer.
 
 Of course, via scripting many of these steps may be skipped. Below are several examples on how to generate meshes programmatically and save them in [Wavefront](http://www.martinreddy.net/gfx/3d/OBJ.spec) format.
 
@@ -1222,7 +1222,7 @@ Create a snapshot in 8-bit, 16-bit, 32-bit or RGB
 
 From the right-click menu, one may choose "Export - Make flat image", which opens a dialog that lets one choose between 8-bit and RGB. These snapshots are created from the mipmaps, which are all 8-bit or RGB images.
 
-On occasions, one wants to create a flattened montage of images in their original bit depth, such as 16-bit or 32-bit. For this purpose, the static function \[https://fiji.sc/javadoc/ini/trakem2/display/Patch.html#makeFlatImage(int,%20ini.trakem2.display.Layer,%20java.awt.Rectangle,%20double,%20java.util.Collection,%20java.awt.Color,%20boolean) Patch.makeFlatImage\] exists.
+On occasions, one wants to create a flattened montage of images in their original bit depth, such as 16-bit or 32-bit. For this purpose, the static function [Patch.makeFlatImage](https://fiji.sc/javadoc/ini/trakem2/display/Patch.html#makeFlatImage(int,%20ini.trakem2.display.Layer,%20java.awt.Rectangle,%20double,%20java.util.Collection,%20java.awt.Color,%20boolean)) exists.
 
 Here is an example that, for a given Layer and set of selected Patch instances (image tiles) in it, it makes a 16-bit flat montage image and returns it as an ImageJ's ImageProcessor, at 50% the original scale.
 
@@ -1253,7 +1253,7 @@ Here is an example that, for a given Layer and set of selected Patch instances (
     imp = ImagePlus("Flat montage", ip)
     imp.show()
 
-For other output types, use ImagePlus.GRAY8, .GRAY16, GRAY32 or .COLOR\_RGB, as listed in the documentation for the [ImagePlus](https://fiji.sc/javadoc/ij/ImagePlus.html) class.
+For other output types, use ImagePlus.GRAY8, .GRAY16, GRAY32 or .COLOR\_RGB, as listed in the documentation for the [ImagePlus](https://javadoc.scijava.org/ImageJ1/ij/ImagePlus.html) class.
 
 Enrich the GUI of TrakEM
 ========================

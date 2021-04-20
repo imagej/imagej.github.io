@@ -6,4 +6,4 @@ description: test description
 
 {% include info-box name='Nathan Hotaling' website=' [NIST](http://www.nist.gov/mml/bbd/biomaterials/nathan-hotaling.cfm)' maintainer='[Nathan Hotaling](mailto:Nathan.Hotaling@gmail.com)' filename='Creator of DiameterJ' %}
 
-Please see the [plugin page](http://imagej.net/DiameterJ) for more information about DiameterJ
+Please see the [plugin page](/plugins/diameterj) for more information about DiameterJ

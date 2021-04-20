@@ -509,7 +509,7 @@ Notice we used:
 
 Suppose you have a 4D multicolor image, and want to obtain a stack of slices corresponding to a specific color channel and time frame.
 
-The [CompositeImage](https://fiji.sc/javadoc/ij/CompositeImage.html) is a stack whose slices are interpreted as belonging to specific color channels, Z slices and time frames. To find out which slice corresponds to what, use the <i>getStackIndex</i> method of the [ImagePlus](https://fiji.sc/javadoc/ij/ImagePlus.html), which translates between color channels, z slices and time frames to the slice index in the underlying [ImageStack](https://fiji.sc/javadoc/ij/ImageStack.html).
+The [CompositeImage](https://javadoc.scijava.org/ImageJ1/ij/CompositeImage.html) is a stack whose slices are interpreted as belonging to specific color channels, Z slices and time frames. To find out which slice corresponds to what, use the <i>getStackIndex</i> method of the [ImagePlus](https://javadoc.scijava.org/ImageJ1/ij/ImagePlus.html), which translates between color channels, z slices and time frames to the slice index in the underlying [ImageStack](https://javadoc.scijava.org/ImageJ1/ij/ImageStack.html).
 
     from ij import IJ, ImagePlus, ImageStack
 

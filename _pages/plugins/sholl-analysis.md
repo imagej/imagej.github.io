@@ -460,7 +460,7 @@ When working with ROIs, it is critical that you work with .tif files because onl
 {% include tip id='FileFormats' tip=roi-tiff-tip %} Now that all the images are marked, we just need to ask ImageJ to generate some lines of code. We will open the Macro Recorder ({% include bc path="Plugins | Macros | Record..." %}) and run *Sholl Analysis* on one of the images to find out how to call the plugin with suitable parameters. In this example, we will use the ImageJ macro language. The single line of code that appears in the recorder window will look something like this:
 
     // Recording Sholl Analysis version 3.4.3
-    // Visit https://imagej.net/Sholl_Analysis#Batch_Processing for scripting examples
+    // Visit https://imagej.net/plugins/sholl-analysis#batch-processing for scripting examples
     run("Sholl Analysis...", "starting=10 ending=400 radius_step=0 infer fit linear polynomial=[8th degree] semi-log normalizer=Volume create save do");
 
 Now, we just need to assemble a working macro to be pasted in the {% include bc path="Process | Batch | Macro..." %} prompt:

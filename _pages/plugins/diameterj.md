@@ -34,7 +34,7 @@ description: test description
 
         \- Fibers must be less than 512px in diameter to be analyzed
 
-If you would like to cite DiameterJ in your work, citation information can be found \[http://www. here\] or use the below:
+If you would like to cite DiameterJ in your work, citation information can be found [here](http://www.) or use the below:
 
 #### Citation/Reference Information
 

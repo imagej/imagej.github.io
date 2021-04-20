@@ -119,9 +119,9 @@ You might need to adjust the bounding box if the second plot does not match the 
 Duplicate, or convert between, *ImageProcessor* types
 -----------------------------------------------------
 
-The `ImageProcessor` class has several useful methods: \[https://fiji.sc/javadoc/ij/process/ImageProcessor.html#duplicate>() duplicate()\], [convertToByte()](https://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToByte(boolean)), \[<https://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToFloat>() convertToFloat()\], \[<https://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToRGB() convertToRGB()\], and [convertToShort()](https://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToShort(boolean)).
+The `ImageProcessor` class has several useful methods: [duplicate()](https://javadoc.scijava.org/ImageJ1/ij/process/ImageProcessor.html#duplicate>()), [convertToByte()](https://javadoc.scijava.org/ImageJ1/ij/process/ImageProcessor.html#convertToByte(boolean)), \[<https://javadoc.scijava.org/ImageJ1/ij/process/ImageProcessor.html#convertToFloat>() convertToFloat()\], \[<https://javadoc.scijava.org/ImageJ1/ij/process/ImageProcessor.html#convertToRGB() convertToRGB()\], and [convertToShort()](https://javadoc.scijava.org/ImageJ1/ij/process/ImageProcessor.html#convertToShort(boolean)).
 
-This [class](https://fiji.sc/javadoc/ij/process/ImageProcessor.html) also has some other goodies, such as methods for convolution.
+This [class](https://javadoc.scijava.org/ImageJ1/ij/process/ImageProcessor.html) also has some other goodies, such as methods for convolution.
 
 How to store settings persistently
 ----------------------------------

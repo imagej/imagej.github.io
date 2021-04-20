@@ -42,7 +42,7 @@ For technical details about ImageJ and Fiji using Java 6 vs. Java 8, see the [Ja
 BoneJ and pQCT
 --------------
 
-BoneJ and pQCT plug-ins are in the process of separation. The latter have their own \[https://imagej.net/PQCT\| update site\], and they don't need BoneJ to work. However, if you download `BoneJ_.jar` from [bonej.org](http://bonej.org/legacy) it still includes older versions of the pQCT tools.
+BoneJ and pQCT plug-ins are in the process of separation. The latter have their own [update site](/plugins/pqct), and they don't need BoneJ to work. However, if you download `BoneJ_.jar` from [bonej.org](http://bonej.org/legacy) it still includes older versions of the pQCT tools.
 
 Publication
 -----------

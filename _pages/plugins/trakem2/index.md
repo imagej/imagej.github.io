@@ -88,7 +88,7 @@ A. Use the built-in commands from the right-click menu, such as:
 -   "Adjust images - Enhance contrast layer-wise"
 -   "Adjust images - Set min and max layer-wise"
 
-B. Create a preprocessor script and set it to all images. For example, a [beanshell](Beanshell_Scripting) script to run [CLAHE](/plugins/enhance-local-contrast-clahe) on each image. In the script, the <i>patch</i> and <i>imp</i> variables exist automatically, and represent the [Patch](https://fiji.sc/javadoc/ini/trakem2/display/Patch.html) instance and the [ImagePlus](https://fiji.sc/javadoc/ij/ImagePlus.html) instance that the Patch wraps, respectively.
+B. Create a preprocessor script and set it to all images. For example, a [beanshell](Beanshell_Scripting) script to run [CLAHE](/plugins/enhance-local-contrast-clahe) on each image. In the script, the <i>patch</i> and <i>imp</i> variables exist automatically, and represent the [Patch](https://fiji.sc/javadoc/ini/trakem2/display/Patch.html) instance and the [ImagePlus](https://javadoc.scijava.org/ImageJ1/ij/ImagePlus.html) instance that the Patch wraps, respectively.
 
     import ij.IJ;
     IJ.run(imp, "Enhance Local Contrast (CLAHE)", "blocksize=127"

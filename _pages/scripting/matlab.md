@@ -173,7 +173,7 @@ In the MATLAB command window, you'll see something like this:
     See the individual sections below for a list of available commands.
 
     For more information and examples see:
-        https://imagej.net/MATLAB-Scripting
+        https://imagej.net/scripting/matlab
 
     --- MATLAB Command Plugins ---
 

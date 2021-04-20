@@ -238,7 +238,7 @@ In this case, you only need to paste the contents of your `myRoutines()` functio
         import uuid
         image.setTitle( str(uuid.uuid4()) )
 
-In more detail: Pass the active image - an [ImagePlus](http://javadoc.imagej.net/ImageJ1/ij/ImagePlus.htm) object - to `myRoutines()`. Retrieve a random {% include wikipedia title='Universally unique identifier' text='UUID'%} (e.g., `f7dfd6a9-f745-42c2-8874-0af67380c3f5`), convert it to a string, then use that string to rename the image using the \[http://javadoc.imagej.net/ImageJ1/ij/ImagePlus.html#setTitle(java.lang.String) setTitle()\] method in `ij.ImagePlus`.
+In more detail: Pass the active image - an [ImagePlus](http://javadoc.imagej.net/ImageJ1/ij/ImagePlus.htm) object - to `myRoutines()`. Retrieve a random {% include wikipedia title='Universally unique identifier' text='UUID'%} (e.g., `f7dfd6a9-f745-42c2-8874-0af67380c3f5`), convert it to a string, then use that string to rename the image using the [setTitle()](http://javadoc.imagej.net/ImageJ1/ij/ImagePlus.html#setTitle(java.lang.String)) method in `ij.ImagePlus`.
 
 But because [BAR libs](#lib) already contain such a function, we can just call the `randomString()` function in {% include github org='tferr' repo='Scripts' path='lib/BARlib.py' label='BARlib.py' %}, after loading the file:
 
