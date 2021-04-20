@@ -62,7 +62,7 @@ Current recommendations and possibilities
 <tr>
 <th> <a href="/media/Osx.png" class="image"><img alt="macOS" src="/images/logos/Osx.png" width="26" height="32" /></a>
 </th>
-<td> Download the final (2017-May-30) <a href="/fiji/downloads#java-6" title="Fiji Downloads">Java-6 version of Fiji</a>. It is distributed <i>without</i> Java, so you must <a href="Frequently_Asked_Questions#How_do_I_set_up_Java_6_on_OS_X.3F" title="Frequently Asked Questions">install Apple Java 6</a> on your system.
+<td> Download the final (2017-May-30) <a href="/fiji/downloads#java-6" title="Fiji Downloads">Java-6 version of Fiji</a>. It is distributed <i>without</i> Java, so you must <a href="/help/faq#how-do-i-set-up-java-6-on-os-x" title="Frequently Asked Questions">install Apple Java 6</a> on your system.
 <ul><li> If you have Java 7 and/or Java 8 installed, uninstall them—or else ImageJ will not use your Java 6 installation.</li>
 <li> Afterwards, <a href="Troubleshooting#Checking_the_Java_version" title="/help/troubleshooting">verify that Fiji is using Java 6</a>.</li></ul>
 </td></tr>

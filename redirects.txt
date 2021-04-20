@@ -792,6 +792,10 @@ Fractal_dimension :: plugins/bonej#fractal-dimension
 Frames :: plugins/frames
 Frangi :: plugins/frangi
 Frequently_Asked_Questions :: help/faq
+Frequently_Asked_Questions#How_do_I_set_up_Java_6_on_OS_X.3F :: help/faq#how-do-i-set-up-java-6-on-os-x
+Frequently_Asked_Questions#How_do_I_launch_ImageJ_with_a_different_version_of_Java.3F :: help/faq#how-do-i-launch-imagej-with-a-different-version-of-java
+Frequently_Asked_Questions#How_can_I_verify_that_my_ImageJ_is_really_100%_up_to_date? :: help/faq#how-can-i-verify-that-my-imagej-is-really-100-up-to-date
+Frequently_Asked_Questions#Installing.2FUpdating :: help/faq#installingupdating
 FunImageJ :: TODO
 Funding :: about/funding
 GDSC-SMLM2 :: plugins/gdsc-smlm2

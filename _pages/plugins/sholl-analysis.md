@@ -648,7 +648,7 @@ As mentioned several times, the quality of the analysis relies on how the arbor 
 <dl>
 <dd>
 
-Please note that from version 3.4.6 onwards, updates are available through the [Java-8 update site](##Fiji_Users). If you have manually installed/modified *Sholl\_Analysis.jar* ([Development build](#Release_Notes_and_Pre-releases)?). Run the [Updater](/plugins/updater), choose *Advanced Mode* then *View locally modified files* under *View Options*. Type "/plugins/sholl-analysis" in the *Search* field, selecting *Sholl\_Analysis.jar* from the list of files. If the *Details pane* indicates an available update, click on *Locally modified* under *Status/Action* and choose *Install/Update*. The latest release version will be available once you press *Apply changes*. See [Installation FAQs](Frequently_Asked_Questions#Installing.2FUpdating) for more details.
+Please note that from version 3.4.6 onwards, updates are available through the [Java-8 update site](##Fiji_Users). If you have manually installed/modified *Sholl\_Analysis.jar* ([Development build](#Release_Notes_and_Pre-releases)?). Run the [Updater](/plugins/updater), choose *Advanced Mode* then *View locally modified files* under *View Options*. Type "/plugins/sholl-analysis" in the *Search* field, selecting *Sholl\_Analysis.jar* from the list of files. If the *Details pane* indicates an available update, click on *Locally modified* under *Status/Action* and choose *Install/Update*. The latest release version will be available once you press *Apply changes*. See [Installation FAQs](/help/faq#installingupdating) for more details.
 
 </dd>
 </dl>

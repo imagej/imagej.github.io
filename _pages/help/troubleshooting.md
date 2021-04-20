@@ -18,7 +18,7 @@ You can tell which Java version ImageJ is using by clicking the ImageJ [status b
 
 On OS X, you can use [this script](https://raw.githubusercontent.com/ctrueden/ctr-scripts/master/java-info) to diagnose which versions of Java are installed on your system.
 
-See also [How do I launch ImageJ with a different version of Java?](Frequently_Asked_Questions#How_do_I_launch_ImageJ_with_a_different_version_of_Java.3F).
+See also [How do I launch ImageJ with a different version of Java?](/help/faq#how-do-i-launch-imagej-with-a-different-version-of-java).
 
 Launching ImageJ from the console
 ---------------------------------
@@ -172,7 +172,7 @@ While ImageJ strives for [reproducible](/develop/architecture#reproducible-build
 -   Ensure that the version of [ImageJ](/about) is exactly the same on both machines.
     -   Click the [status bar](/learn/getting-started#the-status-bar) and you will see something like "ImageJ 2.0.0-rc-26/1.49p".
     -   If these two values differ between your machines, the versions are not the same.
-    -   See also [How can I verify that my ImageJ is really 100% up to date?](Frequently_Asked_Questions#How_can_I_verify_that_my_ImageJ_is_really_100%_up_to_date?).
+    -   See also [How can I verify that my ImageJ is really 100% up to date?](/help/faq#how-can-i-verify-that-my-imagej-is-really-100-up-to-date).
     -   If the two versions of ImageJ match but produce different numerical results, it is a bug—please [report it](/help/report-a-bug)!
 -   Ensure that the *options* of ImageJ match between the machines.
     -   A fast way to ensure this is the {% include bc path='Edit | Options | Reset...'%} command, which resets everything to its default state.
@@ -247,7 +247,7 @@ The number given in the `UnsupportedClassVersionError` error messages is an inte
 
 See {% include wikipedia title='Java version history' text='Java version history'%} for more information about these different versions.
 
-To control the version of Java that ImageJ uses, see [How do I launch ImageJ with a different version of Java](Frequently_Asked_Questions#How_do_I_launch_ImageJ_with_a_different_version_of_Java.3F).
+To control the version of Java that ImageJ uses, see [How do I launch ImageJ with a different version of Java](/help/faq#how-do-i-launch-imagej-with-a-different-version-of-java).
 
 NoSuchMethodError or NoClassDefFoundError
 -----------------------------------------
