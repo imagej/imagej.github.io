@@ -2623,7 +2623,7 @@ input, select, textarea {
 /* tooltips */
 
 .tooltip {
-	border-bottom: 1px dotted black;
+	border-bottom: 1px dashed black;
 }
 
 .tooltip .tooltiptext {
