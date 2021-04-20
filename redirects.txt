@@ -1788,7 +1788,7 @@ User:CrossSectionalAnalyzer :: users/CrossSectionalAnalyzer
 User:Ctrueden :: users/ctrueden
 User:DS4H :: plugins/ds4h-image-alignment
 User:Damienrj :: users/Damienrj
-User:Daniel_E._Maidana :: users/Daniel_E._Maidana
+User:Daniel_E._Maidana :: users/DanielMaidana
 User:Davidhoerl :: users/hoerldavid
 User:Dcolam :: users/Dcolam
 User:Demis :: users/Demis
@@ -1910,6 +1910,7 @@ User:Neuroanatomy :: users/Neuroanatomy
 User:NicholasPerry :: users/nickp
 User:Nico :: users/nicost
 User:Nmjmorph :: users/Nmjmorph
+User:Nstifani :: users/nstifani
 User:OMERO-5.0 :: users/OMERO-5.0
 User:OMERO-5.1 :: users/OMERO-5.1
 User:Oburri :: users/lacan
