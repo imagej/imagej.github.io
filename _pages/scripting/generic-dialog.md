@@ -33,7 +33,7 @@ Here is an example in Jython.
     gui.addNumericField("Some integer", 10, 0) # 0 for no decimal part
 
     # Add a Help button in addition to the default OK/Cancel
-    gui.addHelp(r"https://imagej.net/Generic_dialog") # clicking the help button will open the provided URL in the default browser
+    gui.addHelp(r"https://imagej.net/scripting/generic-dialog") # clicking the help button will open the provided URL in the default browser
 
     # Show dialog, the rest of the code is not executed before OK or Cancel is clicked
     gui.showDialog() # dont forget to actually display the dialog at some point

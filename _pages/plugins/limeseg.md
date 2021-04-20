@@ -390,4 +390,4 @@ Example scripts (ImageJ1 and groovy) are available here:
 
 https://github.com/NicoKiaru/LimeSeg/tree/master/src/main/resources/script-templates/LimeSeg
 
-They are also accessible as templates in the [ImageJ script editor](https://imagej.net/scripting/script-editor), if the LimeSeg update site is enabled.
+They are also accessible as templates in the [ImageJ script editor](/scripting/script-editor), if the LimeSeg update site is enabled.

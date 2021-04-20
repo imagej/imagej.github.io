@@ -33,7 +33,7 @@ Finding information
 -   [Fiji](/fiji) is available at: {% include github org='fiji' repo='fiji' label='fiji/fiji' %}
 -   For additional help, use the [ImageJ Forum](/help).
 
-The search engines will point you to both [https://imagej.net/>](/) and [<http://developer.imagej.net/>](http://developer.imagej.net/). Avoid using [<http://developer.imagej.net/](http://developer.imagej.net/) for anything these days. It is a legacy site, in the process of being totally phased out. If you are looking for downloads, see the [/downloads](/downloads) page.
+The search engines will point you to both `imagej.net` and `developer.imagej.net`. Avoid using `developer.imagej.net` for anything these days. It is a legacy site, in the process of being totally phased out. If you are looking for downloads, see the [/downloads](/downloads) page.
 
 Configure your environment
 --------------------------
