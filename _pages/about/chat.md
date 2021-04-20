@@ -29,10 +29,10 @@ IRC
 
 Some community members frequent {% include wikipedia title='Internet Relay Chat' text='IRC'%} on [irc.freenode.net](http://freenode.net/), in chat rooms:
 
-| Channel                                           | Description                                                          | Chat logs                                                     |
-|---------------------------------------------------|----------------------------------------------------------------------|---------------------------------------------------------------|
-| [\#imagejdev](Irc___irc.freenode.net_imagejdev)   | Core ImageJ development discussion.                                  | [imagejdev logs](http://code.imagej.net/chatlogs/imagejdev)   |
-| [\#fiji-devel](Irc___irc.freenode.net_fiji-devel) | [Fiji](/fiji) user and developer discussion and questions. | [fiji-devel logs](http://code.imagej.net/chatlogs/fiji-devel) |
+| Channel                                           | Description                                                | Chat logs                                                     |
+|---------------------------------------------------|------------------------------------------------------------|---------------------------------------------------------------|
+| `#imagejdev`                                      | Core ImageJ development discussion.                        | [imagejdev logs](http://code.imagej.net/chatlogs/imagejdev)   |
+| `#fiji-devel`                                     | [Fiji](/fiji) user and developer discussion and questions. | [fiji-devel logs](http://code.imagej.net/chatlogs/fiji-devel) |
 
 Advantages of IRC include anonymity, and maximum compatibility with a huge variety of existing chat clients.
 

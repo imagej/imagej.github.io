@@ -57,7 +57,8 @@ ImageJ will run on any system that has a Java 8 (or later) runtime installed. Th
 # Installation
 
 {% include avoidprogramfiles%}
- ImageJ is distributed as a [portable application](wikipedia:Portable_application). That means that you do not have to run an installer; just download, unpack and start it.
+ImageJ is distributed as a {% include wikipedia title='Portable application' text='portable application' %}.
+That means that you do not have to run an installer; just download, unpack and start it.
 
 # Troubleshooting
 

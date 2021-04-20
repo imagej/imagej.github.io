@@ -23,11 +23,11 @@ ImageJ was designed with an open architecture that provides extensibility via Ja
 
 Being public domain open source software, an ImageJ user has the [four essential freedoms](http://wikieducator.org/The_right_license/The_essential_freedoms) defined by the Richard Stallman in 1986: 1) The freedom to run the program, for any purpose; 2) The freedom to study how the program works, and change it to make it do what you wish; 3) The freedom to redistribute copies so you can help your neighbor; 4) The freedom to improve the program, and release your improvements to the public, so that the whole community benefits.
 
-ImageJ is being developed on Mac OS X using its built in editor and Java compiler, plus the *BBEdit* editor and the *Ant* build tool. The source code is freely [available](/ij/developer/source/index.html). The author, Wayne Rasband (<wsr@nih.gov>), is a Special Volunteer at the National Institute of Mental Health, Bethesda, Maryland, USA.
+ImageJ is being developed on Mac OS X using its built in editor and Java compiler, plus the *BBEdit* editor and the *Ant* build tool. The source code is freely [available](/ij/developer/source/index.html). The author, Wayne Rasband (&lt;wsr@nih.gov&gt;), is a Special Volunteer at the National Institute of Mental Health, Bethesda, Maryland, USA.
 
 <div class="See">
 
-[History of ImageJ at imagejdev.org](http://imagejdev.org/history)
+[History of ImageJ](/about#history)
 
 </div>
 
@@ -66,7 +66,7 @@ Note that you can add plugins from MBF ImageJ to Fiji, combining the best of bot
 
 <div class="See">
 
-Description of all ImageJ related projects at [ImageDev](http://imagejdev.org/faq#n141)
+[Description of all ImageJ-related projects](/about)
 
 </div>
 
@@ -176,7 +176,7 @@ Several packages exist that allow ImageJ to [↓interact](#index-Interoperabilit
 
 ### ImageJ2
 
-[ImageJDev](http://imagejdev.org/) is a [federally funded](http://imagejdev.org/funding), [multi-institution](http://imagejdev.org/collaborators) project dedicated to the development of the next-generation version of ImageJ: "[↓ImageJ](#index-ImageJ2)2". [↓](#index-ImageJ2)[↓ImageJ](#index-ImageDev)2 is a complete rewrite of ImageJ, that includes the current, stable version ImageJ ("ImageJ1") with a compatibility layer so that old-style plugins and macros can run the same as they currently do in ImageJ1. Below is a [summary](http://imagejdev.org/aims) of the [ImageJDev](http://imagejdev.org/) project aims:
+[ImageJ2](/software/imagej2) is a [federally funded](/about/funding), [multi-institution](/about/contributors) project dedicated to the development of the next-generation version of ImageJ: "[↓ImageJ](#index-ImageJ2)2". [↓](#index-ImageJ2)[↓ImageJ](#index-ImageDev)2 is a complete rewrite of ImageJ, that includes the current, stable version ImageJ ("ImageJ1") with a compatibility layer so that old-style plugins and macros can run the same as they currently do in ImageJ1. Below is a [summary](/ImageJ2_grant_proposal) of the original ImageJ2 project aims:
 
 -   To create the next generation version of ImageJ and improve its core architecture based on the needs of the community.
 -   To ensure ImageJ remains useful and relevant to the broadest possible community, maintaining backwards compatibility with ImageJ1 as close to 100% as possible.
@@ -184,7 +184,7 @@ Several packages exist that allow ImageJ to [↓interact](#index-Interoperabilit
 -   To lead ImageJ development with a clear vision, avoiding duplication of efforts
 -   To provide a central online resource for ImageJ: program downloads, a plugin repository, developer resources and more.
 
-Be sure to follow the ImageJ2 [project news](http://imagejdev.org/recent_changes) and the [ImageDev blog](http://imagejdev.org/blog) for updates on this exciting project.
+You can follow the ImageJ2 [project news](/news) for updates on the project.
 
 Getting Help
 ------------
@@ -249,17 +249,11 @@ Below is a list of the ImageJ [↓help](#index-Help-resources) resources that co
     http://www.macbiophotonics.ca/imagej/
 6.  Several online documents, most of them listed
     [here](/ij/links.html) and [here](/ij/docs/examples/).
-7.  Mailing lists:[↓](#index-Mailing-lists)
+7.  Mailing lists and forums:[↓](#index-Mailing-lists)
     1.  [**ImageJ**](/ij/list.html)  
         General user and developer discussion about ImageJ. Can be accessed via the {% include bc path="Help | [Mailing List...↓](#sub:List-Archives...)" %} command. This list is also mirrored at [Nabble](http://imagej.1557.n6.nabble.com/) and [Gmane](http://dir.gmane.org/gmane.comp.java.imagej). You may find it easier to search and browse the list archives on these mirrors. Specially useful are the [RSS feeds](Feed___rss.gmane.org_topics_excerpts_gmane.comp.java.imagej) and the *[frames and threads](http://news.gmane.org/gmane.comp.java.imagej)* view provided by Gmane.
-    2.  **Fiji users** --- http://groups.google.com/group/fiji-users  
-        For user discussion specific to [Fiji↑](#sub:Fiji-intro) (rather than core ImageJ).
-    3.  **Fiji-devel** — http://groups.google.com/group/fiji-devel  
-        For developer discussion specific to Fiji.
-    4.  **ImageJ-devel** — http://imagejdev.org/mailman/listinfo/imagej-devel  
-        For communication and coordination of the ImageJDev project.
-    5.  **Dedicated mailing lists** for ImageJ related projects  
-        Described at http://imagejdev.org/mailing-lists .
+    2.  [**Image.sc Forum**](https://forum.image.sc/tag/imagej)
+        Scientific Community Image Forum, the official forum of many scientific imaging software projects including ImageJ.
 
 #### Using Mailing-lists
 
