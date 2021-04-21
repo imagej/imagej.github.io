@@ -446,8 +446,7 @@ More effort is still needed to clarify web resources, to explain concisely and c
 This is a Wiki but I cannot edit it! Why?
 -----------------------------------------
 
-If you \[{% include server%}
-/wiki/index.php?title=Special:Userlogin&type=signup create an account\], you will be able to make edits while logged in.
+To make changes, you need [a GitHub account](https://github.com/join). Then you can click the "Edit this page" link at the top right corner of any page.
 
 The Wiki is lacking documentation about X, Y and Z
 --------------------------------------------------

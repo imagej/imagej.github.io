@@ -56,13 +56,11 @@ Configuring Fiji update site
 
 The Fiji update site uses {% include wikipedia title='WebDAV' text='webDAV'%} authentication. To upload something, you will need to:
 
--   [Create a wiki account](/index.php?title=Special:UserLogin&type=signup)
--   Ask an administrator has to add you to the [*uploaders* group](/Special:ListUsers?group=uploaders)
--   Once you have been added, [initialize your upload password for "Fiji's main update site"](Special_ChangeUploadPassword).
+-   Ask an administrator to create a WebDAV account for you, and grant permission for uploading to update.fiji.sc.
 
 In the *Manage update sites* dialog, on the Fiji update site line, add the following information:
 
--   Host = **webdav:YourFijiWikiLogin**
+-   Host = **webdav:YourWebDAVLogin**
 -   Directory on host = **./**
 
 Note that your username will always start with an upper case letter. It should look like this:

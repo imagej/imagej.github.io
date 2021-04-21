@@ -136,7 +136,7 @@ In the context of [SciJava](SciJava), you will most likely never write a *pom.xm
 How to find a dependency's groupId/artifactId/version (GAV)?
 ============================================================
 
-Most popular open source libraries upon which you might want to depend are stored in the [Maven Central repository](https://search.maven.org/). However, the ImageJ and Fiji JARs are not yet stored there, but in the [SciJava Maven repository](/develop/architecture#maven-repositories). Fortunately, you can search both at once, by visiting:
+Most popular open source libraries upon which you might want to depend are stored in the [Maven Central repository](https://search.maven.org/). However, the ImageJ and Fiji JARs are not yet stored there, but in the [SciJava Maven repository](/develop/project-management#maven). Fortunately, you can search both at once, by visiting:
 
 ` `[`https://maven.scijava.org/`](https://maven.scijava.org/)
 

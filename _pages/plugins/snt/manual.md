@@ -104,7 +104,7 @@ Contains commands for organizing tracing views on screen, plus commands for disp
 -   {% include bc path='Arrange Views'%} Resets the view pane on-screen positions to their default.
 -   {% include bc path='Hide Tracing Canvas| '%} Allows toggling of the visibility of the three orthogonal view panes as well as the Legacy 3D View window.
 -   {% include bc path='Show Cached Filtered Image'%} Displays the cached filtered image in a separate window. Note a filtered image must be loaded in order to use this feature. The process of loading a filtered image is detailed in [Generating Filtered Images](/plugins/snt/step-by-step-instructions#generating-filtered-images).
--   {% include bc path='Show Cached Hessian Tubeness Image'%} Displays the cached *Hessian (Tubeness) image* in a separate window. Note there are two ways to enable this feature. Either 1) enable *Hessian-based analysis* then run the *Cache All Hessian Computations* command from the "Auto-tracing" gear drop-down menu or 2) use the *Load Precomputed "/plugins/tubeness" Image* option in the same gear menu. These features are detailed in the "Auto-tracing" section of the [Main Dialog](/plugins/snt/overview#main-dialog) overview guide.
+-   {% include bc path='Show Cached Hessian Tubeness Image'%} Displays the cached *Hessian (Tubeness) image* in a separate window. Note there are two ways to enable this feature. Either 1) enable *Hessian-based analysis* then run the *Cache All Hessian Computations* command from the "Auto-tracing" gear drop-down menu or 2) use the *Load Precomputed "/plugins/tubeness" Image* option in the same gear menu. These features are detailed in the "Auto-tracing" section of the [Main Dialog](/plugins/snt/manual#main-dialog) overview guide.
 
 Main Tab
 --------
@@ -313,8 +313,8 @@ Right-clicking on any of the image views will bring up a menu with various editi
 -   **Select Nearest Path** {% include key content='G' %} or {% include key content='Shift' %}+{% include key content='G' %} Will select the path closest to the mouse cursor.
 -   **Fork at Nearest Node** {% include key content='Shift' %}+{% include key content='Alt' %}+{% include key content='Left Click' %} Creates a fork point at the node closest to the mouse cursor. Once a fork point is made, the branch may be extended as described in [Step-By-Step Instructions](/plugins/snt/step-by-step-instructions#branching-start-a-path-on-an-existing-path).
 -   **Continue Extending Path** Allows continued tracing of previously finished paths. Note only one path may be extended at a time. To extend a path: first select it, choose this option, then place additional nodes as shown in [Step-By-Step Instructions](/plugins/snt/step-by-step-instructions#ii-pick-a-subsequent-point).
--   **Pause SNT** Waives all keyboard and mouse inputs to ImageJ, allowing you to interleave image processing routines with tracing operations. Note that if the image contents change while SNT is paused, the image should be reloaded so that SNT is aware of the changes. Tracing views are annotated with the *SNT Paused* [label](/plugins/snt/overview#ui-interaction) to indicate this state.
--   **Pause Tracing** Disables tracing functions until this option is deselected. Tracing views are annotated with the *Tracing Paused* [label](/plugins/snt/overview#ui-interaction) to indicate this state.
+-   **Pause SNT** Waives all keyboard and mouse inputs to ImageJ, allowing you to interleave image processing routines with tracing operations. Note that if the image contents change while SNT is paused, the image should be reloaded so that SNT is aware of the changes. Tracing views are annotated with the *SNT Paused* [label](/plugins/snt/manual#ui-interaction) to indicate this state.
+-   **Pause Tracing** Disables tracing functions until this option is deselected. Tracing views are annotated with the *Tracing Paused* [label](/plugins/snt/manual#ui-interaction) to indicate this state.
 -   **Sholl Analysis at Nearest Node** {% include key content='Shift' %}+{% include key content='Alt' %}+{% include key content='A' %} Runs the [Sholl Analysis](/plugins/sholl-analysis) plugin found in {% include bc path='Analyze|Sholl|Sholl Analysis (From Tracings)'%}. Note the *Center* parameter, which sets the center point of the analysis, is left out as this value is given by the selected node.
 
 ### Editing Paths
@@ -505,7 +505,7 @@ Filter Toolbar
     -   *Length...* Filters for Paths of length within the inputted range. Example queries: `10-20`: selects all Paths with lengths between 10 and 20μm; `max-max`: selects the longest path(s).
     -   *Mean Radius...* Filters for Paths of mean radius within the inputted range.
     -   *No. of Nodes...* Filters for Paths with node count within the inputted range.
-    -   *SWC Type...* Filters for Paths with the selected SWC type tags. Note that the Paths of interest must have been [tagged](/plugins/snt/overview#tag) using the{% include bc path='Tag|Type| '%} menu.
+    -   *SWC Type...* Filters for Paths with the selected SWC type tags. Note that the Paths of interest must have been [tagged](/plugins/snt/manual#tag) using the{% include bc path='Tag|Type| '%} menu.
 
 Fill Manager
 ============

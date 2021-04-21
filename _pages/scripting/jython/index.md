@@ -27,7 +27,7 @@ The following list will help you to decide if Jython is the right choice to crea
 ### Explanation
 
 The Java implementation of Python is limited to the [standard library](https://docs.python.org/2/library/index.html) of Python 2.  
-It is not possible to use external python modules (like Numpy...) however, [any Java class residing in the Fiji installation can be used](/index.php?title=Jython_Scripting#importing-java-module-and-classes).  
+It is not possible to use external python modules (like Numpy...) however, [any Java class residing in the Fiji installation can be used](/scripting/jython#importing-java-module-and-classes).  
 Even with the given limitations, Jython is a powerful language for ImageJ scripting. Hopefully the examples on this page can convince you of that.
 
 Jython basics for ImageJ

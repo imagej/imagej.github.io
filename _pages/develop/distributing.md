@@ -148,7 +148,7 @@ Useful extensions deserve corresponding documentation explaining how to use them
 <td><p> <strong>Steps</strong></p></td>
 </tr>
 <tr class="odd">
-<td style="background: #dfd; vertical-align: top"><ul><li><strong><a href="https://imagej.net/index.php?title=Special:UserLogin&amp;returnto=Welcome&amp;type=signup">Create an account</a></strong>.</li><li><strong><a href="https://www.mediawiki.org/wiki/Help:Starting_a_new_page">Create a page</a></strong> for your extension.</li></ul></td>
+<td style="background: #dfd; vertical-align: top"><ul><li><strong><a href="https://github.com/join">Create a GitHub account</a></strong>.</li><li><strong><a href="/help/editing">Create a page</a></strong> for your extension.</li></ul></td>
 </tr>
 <tr class="even">
 <td style="vertical-align: top"></td>

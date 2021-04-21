@@ -15,6 +15,7 @@ mbf
 presentations
 tickets
 workshops
+images
 "
 
 allowed() {

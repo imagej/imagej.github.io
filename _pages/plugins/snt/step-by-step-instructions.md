@@ -11,14 +11,14 @@ description: test description
 Tracing
 =======
 
-These instructions assume that you have read the [Overview](/plugins/snt/manual) page, including starting up the plugin, enabling [Cursor Auto-snapping](/plugins/snt/overview#auto-snapping), and [Auto-tracing](/plugins/snt/overview#auto-tracing) options. This section is also documented in a [Screencast](/plugins/snt/screencasts#introduction-to-tracing).
+These instructions assume that you have read the [Overview](/plugins/snt/manual) page, including starting up the plugin, enabling [Cursor Auto-snapping](/plugins/snt/manual#auto-snapping), and [Auto-tracing](/plugins/snt/manual#auto-tracing) options. This section is also documented in a [Screencast](/plugins/snt/screencasts#introduction-to-tracing).
 
 Starting A Path
 ---------------
 
 ### I. Pick The Starting Point
 
-<img src="/media/Snt-cropped-before-starting-2.png" title="fig:Choosing a starting point" width="400" alt="Choosing a starting point" /> You may notice that, by default, the cursor [snaps](/plugins/snt/overview#auto-snapping) to the brightest pixel in its vicinity. If you prefer to manually control the placement of nodes, feel free to toggle feature by pressing {% include key content='S' %}. Now, to begin tracing, move through the image stack to find the start point of a path then click there with the left mouse button.
+<img src="/media/Snt-cropped-before-starting-2.png" title="fig:Choosing a starting point" width="400" alt="Choosing a starting point" /> You may notice that, by default, the cursor [snaps](/plugins/snt/manual#auto-snapping) to the brightest pixel in its vicinity. If you prefer to manually control the placement of nodes, feel free to toggle feature by pressing {% include key content='S' %}. Now, to begin tracing, move through the image stack to find the start point of a path then click there with the left mouse button.
 
 ### II. Pick A Subsequent Point
 
@@ -71,7 +71,7 @@ Merging/Joining Paths
 
 Two paths can be merged or joined in *Edit Mode*. To do so:
 
-1.  Select a path and enter *Edit Mode* (by right-clicking on the image canvas to access its [Contextual menu](/plugins/snt/overview#contextual-menu))
+1.  Select a path and enter *Edit Mode* (by right-clicking on the image canvas to access its [Contextual menu](/plugins/snt/manual#contextual-menu))
 2.  Activate the node to be merged by hovering over it
 3.  Select the second path by using the {% include key content='G' %} [shortcut](/plugins/snt/key-shortcuts) and activate the second merging node by hovering over it
 4.  Open the contextual menu and select the initial path from the *Connect To (Start Join)* / *Connect To (End Join)* menu.
@@ -163,7 +163,7 @@ The image stack you would get from the image used in this example might look som
 Generating *Filtered Images*
 ============================
 
-This section describes how to generate [Filtered Images](/plugins/snt/overview#tracing-on-filtered-image) outside SNT. Note that the filtering used in this walk-through (*[Frangi](/plugins/frangi) Vesselness*) is already supported directly by SNT. This tutorial will assume you need to perform the filtering with adjusted parameters.
+This section describes how to generate [Filtered Images](/plugins/snt/manual#tracing-on-filtered-image) outside SNT. Note that the filtering used in this walk-through (*[Frangi](/plugins/frangi) Vesselness*) is already supported directly by SNT. This tutorial will assume you need to perform the filtering with adjusted parameters.
 
 #### A Single Image
 

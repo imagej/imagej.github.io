@@ -48,7 +48,7 @@ The left image shows a noisy (sigma=25) image of lena and right image the denois
 Installation
 ============
 
-You could simply use our update site "[biomedgroup](https://fiji.sc/List_of_update_sites)" to install the non local means plugin or copy the jar file into your plugins folder.
+You could simply use our update site "[biomedgroup](/list-of-update-sites)" to install the non local means plugin or copy the jar file into your plugins folder.
 
 How to cite
 ===========
