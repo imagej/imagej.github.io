@@ -23,7 +23,7 @@ description: test description
 Overview
 --------
 
-SNT is ImageJ's framework for semi-automated tracing, visualization, quantitative analyses and modeling of neuronal morphology. For tracing, SNT supports modern multi-dimensional microscopy data, and highly-customizable routines. For data analysis, SNT features advanced visualization tools, access to all major morphology databases, and support for whole-brain circuitry data. It supersedes the original [Simple Neurite Tracer](SNT__FAQ#snt) plug-in.
+SNT is ImageJ's framework for semi-automated tracing, visualization, quantitative analyses and modeling of neuronal morphology. For tracing, SNT supports modern multi-dimensional microscopy data, and highly-customizable routines. For data analysis, SNT features advanced visualization tools, access to all major morphology databases, and support for whole-brain circuitry data. It supersedes the original [Simple Neurite Tracer](/plugins/snt/faq#snt) plug-in.
 
 SNT's documentation is extensive. Please use the navigation bar on too of the page to access the different sections. The major sections are organized as follows:
 
@@ -56,7 +56,7 @@ Features
 -   Direct access to public databases, including [MouseLight](https://ml-neuronbrowser.janelia.org/), [FlyCircuit](http://www.flycircuit.tw) and [NeuroMorpho](http://neuromorpho.org/)
 -   Built-in commands for *immediate* retrieval of summary statistics, comparison plots and histograms
 -   Image processing: Reconstructions can be skeletonized, converted to masks or ROIs, and voxel intensities profiled
--   [Sholl](SNT__Analysis#sholl-analysis) and [Horton-Strahler](SNT__Analysis#strahler-analysis) analyses. [Graph theory](https://en.wikipedia.org/wiki/Graph_theory) and [Persistent homology](https://en.wikipedia.org/wiki/Persistent_homology) -based analyses
+-   [Sholl](/plugins/snt/analysis#sholl-analysis) and [Horton-Strahler](/plugins/snt/analysis#strahler-analysis) analyses. [Graph theory](https://en.wikipedia.org/wiki/Graph_theory) and [Persistent homology](https://en.wikipedia.org/wiki/Persistent_homology) -based analyses
 -   Modeling: access to the [Cx3D simulation engine](/plugins/snt/modeling)
 
 ### Visualization

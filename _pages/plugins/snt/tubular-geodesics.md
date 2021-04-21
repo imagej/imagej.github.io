@@ -8,12 +8,12 @@ description: test description
 {% include sntnavbar%}
 
 
-The Tubular Geodesics plugins were developed several years ago[1] for [Simple Neurite Tracer](SNT__FAQ#snt) but remain functional in modern [SNT](/plugins/snt). They can be installed manually as an SNT add-on. Once installed, they allow you to trace on a filtered-version of your image in which neuronal processes (or other tubular structures) are significantly enhanced using [ITK](/software/itk) segmentation. More details on the following pages:
+The Tubular Geodesics plugins were developed several years ago[1] for [Simple Neurite Tracer](/plugins/snt/faq#snt) but remain functional in modern [SNT](/plugins/snt). They can be installed manually as an SNT add-on. Once installed, they allow you to trace on a filtered-version of your image in which neuronal processes (or other tubular structures) are significantly enhanced using [ITK](/software/itk) segmentation. More details on the following pages:
 
 -   [Tubular Geodesics homepage](https://www.epfl.ch/labs/cvlab/software/biomedical/delin-fiji/)
--   [Tracing on Filtered Images](SNT__Manual#main-dialog#tracing-on-secondary-image)
--   [Secondary Image Screencast](SNT__Screencasts#secondary-images)
--   [Generating Filtered Images](SNT__Step-By-Step_Instructions#generating-filtered-images)
+-   [Tracing on Filtered Images](/plugins/snt/manual#main-dialog#tracing-on-secondary-image)
+-   [Secondary Image Screencast](/plugins/snt/screencasts#secondary-images)
+-   [Generating Filtered Images](/plugins/snt/step-by-step-instructions#generating-filtered-images)
 
 References
 ----------

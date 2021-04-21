@@ -5,7 +5,7 @@ categories: Tutorials
 description: test description
 ---
 
-{% include ambox text='This is an old tutorial on how to call the [Sholl Analysis](/plugins/sholl-analysis) plugin from [Simple Neurite Tracer](/plugins/snt). **It is rather outdated. More up-to-date information is provided in [SNT: Analysis](SNT__Analysis#sholl-analysis).** For an overview of the technique refer to the [Sholl Analysis](/plugins/sholl-analysis) documentation page.' %}
+{% include ambox text='This is an old tutorial on how to call the [Sholl Analysis](/plugins/sholl-analysis) plugin from [Simple Neurite Tracer](/plugins/snt). **It is rather outdated. More up-to-date information is provided in [SNT: Analysis](/plugins/snt/analysis#sholl-analysis).** For an overview of the technique refer to the [Sholl Analysis](/plugins/sholl-analysis) documentation page.' %}
 
 Introduction
 ============

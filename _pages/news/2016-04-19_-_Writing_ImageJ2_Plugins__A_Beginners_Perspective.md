@@ -266,7 +266,7 @@ Further readings
 ----------------
 
 -   [README.md](https://github.com/imagej/minimal-ij1-plugin/blob/master/README.md) of the [Minimal Maven based ImageJ 1.x plugin](https://github.com/imagej/minimal-ij1-plugin)
--   Learn more about [ImageJ/SciJava dependencies](/develop/maven#how-to-find-a-dependencys-groupidrtifactidversion-gav)
+-   Learn more about [ImageJ/SciJava dependencies](/develop/maven#how-to-find-a-dependencys-groupidartifactidversion-gav)
 -   [ImageJ Maven FAQ](/develop/maven-faq)
 
 Other References
