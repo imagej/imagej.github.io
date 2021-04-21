@@ -71,7 +71,7 @@ Clone the source code
 Using your [Git client of choice](http://git-scm.com/downloads/guis), clone the source code which interests you:
 
 -   If you want to work on an existing project, see the [list of sources](/develop/source).
--   If you are creating your own project, see the [building a pom](Building_a_pom) guide.
+-   If you are creating your own project, see the [building a pom](/develop/building-a-pom) guide.
 
 Import the source code
 ----------------------
@@ -138,7 +138,7 @@ One major problem when debugging [ImageJ 1.x](/software/imagej1) plugins is that
         Debug.run("My shiny new plugin", "plugin parameters");
     }
 
-The format of `plugin parameters` can be determined by using the [macro recorder](Macro_recorder), or just pass `null` if your plugin opens a dialog. For more complex plugins that are not macro recordable, you can pass empty strings to the `run` method—it will still launch an ImageJ instance with your plugin on the classpath.
+The format of `plugin parameters` can be determined by using the [macro recorder](/scripting/macro#the-recorder), or just pass `null` if your plugin opens a dialog. For more complex plugins that are not macro recordable, you can pass empty strings to the `run` method—it will still launch an ImageJ instance with your plugin on the classpath.
 
 If your plugin does not depend on `fiji-lib` by default, you can add it using [maven](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html). Just paste the following block into your `pom.xml` dependencies:
 

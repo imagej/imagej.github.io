@@ -50,5 +50,5 @@ See also
 
 -   [{% include bc path='Process | Batch'%}](/ij/docs/guide/146-29.html#toc-Subsection-29.12) submenu.
 -   [Scripting](/scripting) documentation and tutorials.
--   [How to apply a common operation to a complete directory](How_to_apply_a_common_operation_to_a_complete_directory)
+-   [How to apply a common operation to a complete directory](/tutorials/apply-operation-to-a-complete-directory)
 -   [Assign your own keyboard shortcuts](Keyboard_shortcuts#Creating_your_own_keyboard_shortcuts)

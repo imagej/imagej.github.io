@@ -42,9 +42,9 @@ Authors
 License
 -------
 
-This project is licensed under the [GNU General Public License](/GPL).
+This project is licensed under the [GNU General Public License](/licensing/gpl).
 
 Acknowledgements
 ----------------
 
-Some code used from [Multiple Kymograph Plugin](/Multi_Kymograph) by Jens Reitdorf, Arne Seitz, and Johannes Schindelin.
+Some code used from [Multiple Kymograph Plugin](/plugins/multi-kymograph) by Jens Reitdorf, Arne Seitz, and Johannes Schindelin.

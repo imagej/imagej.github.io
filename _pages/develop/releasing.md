@@ -30,18 +30,18 @@ Artifacts are files, most commonly a **{% include wikipedia title='JAR\_%28file\
 {% endcapture %}
 {% include box title='What are Maven artifacts?' width='30%' float='right' text=text %}
 
-1.  **In development.** The source code is modified to add new features, fix bugs, etc... these modifications are expressed as *commits* by [Git](Git), whether on your local filesystem, a topic branch, or a repository fork.
+1.  **In development.** The source code is modified to add new features, fix bugs, etc... these modifications are expressed as *commits* by [Git](/develop/git), whether on your local filesystem, a topic branch, or a repository fork.
 2.  **On master.** When you have a set of one or more *commits* that you are happy with (i.e. the feature is complete, or the bug is fixed) they are moved to the `master` branch of the project's repository on GitHub. This ensures the `master` branch is always *release ready*.
 3.  **Released.** When there is a need to make the current `master` branch public (i.e. it has a critical bug fix or cool new feature that users have requested) [Maven](/develop/maven) is used to *cut a release*, which is then *deployed as an artifact* to the [SciJava Maven repository](https://maven.scijava.org/). Developers can now use the new version in their own projects.
 4.  **Managed.** The new release artifact must be verified to work in the combined runtime environment with other SciJava components. Once it has been tested to work, the version listed in the SciJava component collection [Bill of Materials (BOM)](//develop/architecture#bill-of-materials) can be updated accordingly.
-5.  **Uploaded.** Finally, the new release artifact can be uploaded to its associated ImageJ [update site](Update_site), making it available to end users.
+5.  **Uploaded.** Finally, the new release artifact can be uploaded to its associated ImageJ [update site](/update-sites), making it available to end users.
 
 The following sections will discuss these phases, and their associated tools and workflows, in more depth.
 
 Relationship with Maven SNAPSHOTs
 =================================
 
-Another way of thinking about the development cycle is through the Maven version number given associated with the code. The idea behind reproducible builds is that from a given version of a plugin, the state of the code producing that version can be determined unambiguously. Typically, that state is determined by a unique [Git](Git) commit. However, it would be impractical and unrealistic to change the Maven version with every single Git commit.
+Another way of thinking about the development cycle is through the Maven version number given associated with the code. The idea behind reproducible builds is that from a given version of a plugin, the state of the code producing that version can be determined unambiguously. Typically, that state is determined by a unique [Git](/develop/git) commit. However, it would be impractical and unrealistic to change the Maven version with every single Git commit.
 
 This is why [SNAPSHOT](https://docs.oracle.com/middleware/1212/core/MAVEN/maven_version.htm#MAVEN401) versions are used while "in development" (phases 1 and 2 - "SNAPSHOT coupling"). Using a SNAPSHOT version is saying "no guarantees are made as to the reproducibility of this artifact." For this reason, to best facilitate reproducible science, SNAPSHOT versions of code are not provided to users (except potentially for testing).
 
@@ -59,12 +59,12 @@ Topic branches are great for isolating potentially disruptive and/or unfinished 
 
 -   **Fewer conflicts.** It avoids conflicts between multiple long-running topic branches.
 -   **SNAPSHOT builds.** [Travis](/develop/travis) builds the change into the latest SNAPSHOT build, making it available from the [SciJava Maven repository](//develop/project-management#maven).
--   **Faster support.** Supporting the community is less convoluted, with changes released to users more rapidly. Yes, you can link to changes on a topic branch. And yes, you can upload binary builds from that branch. But each extra manual step costs time—better to link directly to the latest SNAPSHOT build. There are even ImageJ [update sites](Update_sites) which serve the latest builds from master, to make it easier for non-technical users to test changes.
+-   **Faster support.** Supporting the community is less convoluted, with changes released to users more rapidly. Yes, you can link to changes on a topic branch. And yes, you can upload binary builds from that branch. But each extra manual step costs time—better to link directly to the latest SNAPSHOT build. There are even ImageJ [update sites](/update-sites) which serve the latest builds from master, to make it easier for non-technical users to test changes.
 -   **Less complex.** The more topic branches you have—and in particular, the more integration branches you have—the more complex the system becomes, the more supporting tooling, CI jobs, etc. are needed. And the more developer time is needed to maintain the tooling, sort through topic branches, keep track of open PRs... leaving less time for developing new features and fixing bugs.
 
 Hence, when exactly to use a topic branch is a judgment call, but some good times to use a topic branch are:
 
--   **Breaking.** The changes break [backwards compatibility](Backwards_compatibility).
+-   **Breaking.** The changes break [backwards compatibility](/libs/imagej-legacy).
 -   **New API.** The changes introduce significant new API which will need to remain backwards compatible in the future, and review is desired before committing to that API.
 -   **Unfinished.** The changes are unfinished.
 -   **Regressing.** The changes leave the codebase in a "worse" state somehow.
@@ -84,7 +84,7 @@ Phase 1: In development
 
 Repositories on GitHub are referred to as **remotes**; when you *[clone](https://help.github.com/articles/cloning-a-repository/)*, or *check out*, a remote you get a local copy of the repository. Development progresses by making changes to your local copy and pushing them back to the remote. GitHub provides tools for controlling [user permission levels](https://help.github.com/articles/permission-levels-for-a-user-account-repository/) for each remote repository, therefore how you develop a project depends on whether you are able to *push* (write) to that project's remote repository or not.
 
--   **Collaborating developer.** If you have permission to push directly to the project's remote repository, then you can simply use [Git](Git) and [GitHub](/develop/github) to [clone the repository](https://help.github.com/articles/cloning-a-repository/) and make your changes. For non-trivial changes, you will typically [create a topic branch](/develop/git/topic-branches) to develop and test the changes. This also provides a forum for discussion and review with your fellow developers.
+-   **Collaborating developer.** If you have permission to push directly to the project's remote repository, then you can simply use [Git](/develop/git) and [GitHub](/develop/github) to [clone the repository](https://help.github.com/articles/cloning-a-repository/) and make your changes. For non-trivial changes, you will typically [create a topic branch](/develop/git/topic-branches) to develop and test the changes. This also provides a forum for discussion and review with your fellow developers.
 
 <!-- -->
 
@@ -143,7 +143,7 @@ To update the version of your component listed in the {% include github org='sci
 Phase 5: Uploaded
 -----------------
 
-{% include box title='What are ImageJ update sites?' width='30%' float='right' text='ImageJ [update sites](Update_sites) are what ImageJ actually queries to download updates. These update sites are versioned, but do not rely on other tools (e.g., [Git](Git) or [Maven](/develop/maven)) in order to function. Rather, component developers upload new versions of their component(s) using the [ImageJ Updater](/plugins/updater), which makes them available to end users. Typically, update sites are available as web sites via HTTP, with uploads functioning via [WebDAV](https://github.com/imagej/imagej-plugins-uploader-webdav) or [SSH/SFTP/SCP](https://github.com/imagej/imagej-plugins-uploader-ssh) .' %} Deploying to the Maven repository creates a stable release artifact of a software component usable by other developers. But for ImageJ-related components, that alone does not put it into the hands of users. To do that, the component must then be *uploaded* to an ImageJ [update site](Update_site).
+{% include box title='What are ImageJ update sites?' width='30%' float='right' text='ImageJ [update sites](/update-sites) are what ImageJ actually queries to download updates. These update sites are versioned, but do not rely on other tools (e.g., [Git](/develop/git) or [Maven](/develop/maven)) in order to function. Rather, component developers upload new versions of their component(s) using the [ImageJ Updater](/plugins/updater), which makes them available to end users. Typically, update sites are available as web sites via HTTP, with uploads functioning via [WebDAV](https://github.com/imagej/imagej-plugins-uploader-webdav) or [SSH/SFTP/SCP](https://github.com/imagej/imagej-plugins-uploader-ssh) .' %} Deploying to the Maven repository creates a stable release artifact of a software component usable by other developers. But for ImageJ-related components, that alone does not put it into the hands of users. To do that, the component must then be *uploaded* to an ImageJ [update site](/update-sites).
 
 ### ImageJ and Fiji update sites
 

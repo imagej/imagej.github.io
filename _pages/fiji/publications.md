@@ -71,7 +71,7 @@ Publications using or enhancing Fiji
 
 <!-- -->
 
--   The [Trainable Segmentation Plugin](/Trainable_Segmentation_Plugin_(deprecated)) is inspired by a CVPR publication on segmentation of neuronal membranes in TEM images. [14]
+-   The [Trainable Segmentation Plugin](/plugins/trainable-segmentation) is inspired by a CVPR publication on segmentation of neuronal membranes in TEM images. [14]
 
 <!-- -->
 

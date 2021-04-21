@@ -120,7 +120,7 @@ Getting started with Maven
 
 The {% include github org='imagej' repo='example-legacy-plugin' label='example-legacy-plugin project' %} provides a working example, and documentation, illustrating how an ImageJ plugin should be structured from a "best practices in Maven" point of view.
 
-Using this project requires a basic understanding of [Git](Git) and [Maven](/develop/maven); thus if you are already familiar with the ImageJ 1.x API, this is a reasonable starting point to learn the [project management](/develop/project-management) tools used in [ImageJ2 development](/develop/plugins).
+Using this project requires a basic understanding of [Git](/develop/git) and [Maven](/develop/maven); thus if you are already familiar with the ImageJ 1.x API, this is a reasonable starting point to learn the [project management](/develop/project-management) tools used in [ImageJ2 development](/develop/plugins).
 
 Basic workflow
 ==============
@@ -208,7 +208,7 @@ In ImageJ, you can represent more than 3 dimensions in an image: *X, Y, Z, chann
     int index = image.getStackIndex(channel, slice, frame);
     ImageProcessor ip = stack.getProcessor(index);
 
-**Note:** for historical reasons, slice indices (and channel and frame indices as well) start at <u>1</u>. This is in contrast, e.g. to the x, y coordinates, which start at <u>0</u> (as one might be used to from other computer languages except BASIC, Pascal and [MATLAB](MATLAB)).
+**Note:** for historical reasons, slice indices (and channel and frame indices as well) start at <u>1</u>. This is in contrast, e.g. to the x, y coordinates, which start at <u>0</u> (as one might be used to from other computer languages except BASIC, Pascal and [MATLAB](/scripting/matlab)).
 
 Working with the pixels' values
 -------------------------------

@@ -441,7 +441,7 @@ For additional image processing tools have a look at the growing list of {% incl
 Batch Processing
 ----------------
 
-It is fairly simple to [automate](/scripting) the analysis of multiple images using any of the scripting languages supported by ImageJ and Fiji ([ImageJ Macro Language](/scripting/macro), [Beanshell](Beanshell_Scripting), [Javascript](Javascript_Scripting), [JRuby](/scripting/jruby), [Jython](/scripting/jython), [Clojure](/scripting/clojure), ...). This section provides some examples.
+It is fairly simple to [automate](/scripting) the analysis of multiple images using any of the scripting languages supported by ImageJ and Fiji ([ImageJ Macro Language](/scripting/macro), [Beanshell](/scripting/beanshell), [Javascript](/scripting/javascript), [JRuby](/scripting/jruby), [Jython](/scripting/jython), [Clojure](/scripting/clojure), ...). This section provides some examples.
 
 ### Batch Analysis of Images
 

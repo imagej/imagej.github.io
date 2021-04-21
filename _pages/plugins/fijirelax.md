@@ -119,7 +119,7 @@ First a 3d registration is computed to align precisely the successive images, us
 
 **Software dependencies acknowledgements**
 --
-- Johannes Schindelin et al for [Fiji](/Fiji) (Schindelin et al., 2012)
+- Johannes Schindelin et al for [Fiji](/fiji) (Schindelin et al., 2012)
 - Karl Schmidt and Curtis Rueden for MRI Analysis Calculator and CurveFitters
 
   

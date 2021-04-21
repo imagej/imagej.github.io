@@ -32,7 +32,7 @@ The HPC Workflow Manager Client supports two workflow types:
 
 This guide will only explain how to use the newly added Macro workflow type.
 
-If you are interested in the SPIM workflow type visit [this](/SPIM_Workflow_Manager_For_HPC) page.
+If you are interested in the SPIM workflow type visit [this](/plugins/spim-workflow-manager-for-hpc) page.
 
 How to use
 ----------

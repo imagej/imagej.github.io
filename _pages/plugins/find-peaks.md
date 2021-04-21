@@ -19,7 +19,7 @@ description: test description
 {% endcapture %}
 {% include info-box software='ImageJ/Fiji' name='Find Peaks' maintainer='[ BAR update site](/plugins/bar)' author=author filename=filename source=source released='February 2014' category='[Analysis](Category_Analysis), [Scripting](Category_Scripting), [Plugins](Category_Plugins)' %}
 
-A [BAR](/plugins/bar) script (written in [BeanShell](Beanshell_Scripting)) that retrieves local maxima and minima from an ImageJ plot. The easiest way to install *Find Peaks* is by [subscribing](BAR#Installation) to the BAR {% include list-of-update-sites content='update site' %}.
+A [BAR](/plugins/bar) script (written in [BeanShell](/scripting/beanshell)) that retrieves local maxima and minima from an ImageJ plot. The easiest way to install *Find Peaks* is by [subscribing](BAR#Installation) to the BAR {% include list-of-update-sites content='update site' %}.
 
 Options
 -------

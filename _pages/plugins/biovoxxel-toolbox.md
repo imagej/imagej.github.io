@@ -17,7 +17,7 @@ description: test description
 {% capture maintainer%}
 {%- include person id='biovoxxel' -%}
 {% endcapture %}
-{% include info-box software='ImageJ / Fiji' name='BioVoxxel Toolbox' update-site='BioVoxxel' author=author maintainer=maintainer website=' [www.biovoxxel.de](http://www.biovoxxel.de/index.html)' maintainer=maintainer released='2014' latest-version='12. February 2020' status='stable (active maintainance)' source=' [GitHub](https://github.com/biovoxxel/BioVoxxel-Toolbox)' category='[Particle analysis](Category_Particle_analysis), [Binary](Category_Binary), [Filtering](Category_Filtering)' %}You can setup an automatic update for the BioVoxxel Toolbox. Just run the [Updater](/plugins/updater) ({% include bc path='Help | Update...'%}) and switch in the main window to 'Advanced mode'. Then click on 'Manage update sites'. Here you simply need to activate the "BioVoxxel". See here how to follow an update site [follow an update site](/Following_an_update_site)
+{% include info-box software='ImageJ / Fiji' name='BioVoxxel Toolbox' update-site='BioVoxxel' author=author maintainer=maintainer website=' [www.biovoxxel.de](http://www.biovoxxel.de/index.html)' maintainer=maintainer released='2014' latest-version='12. February 2020' status='stable (active maintainance)' source=' [GitHub](https://github.com/biovoxxel/BioVoxxel-Toolbox)' category='[Particle analysis](Category_Particle_analysis), [Binary](Category_Binary), [Filtering](Category_Filtering)' %}You can setup an automatic update for the BioVoxxel Toolbox. Just run the [Updater](/plugins/updater) ({% include bc path='Help | Update...'%}) and switch in the main window to 'Advanced mode'. Then click on 'Manage update sites'. Here you simply need to activate the "BioVoxxel". See here how to follow an update site [follow an update site](/update-sites/following)
 
 You will find all functions of the BioVoxxel Toolbox under the icon of the green BioVoxxel cube after selecting BioVoxxel Toolbox from the More Tools Icon (last Icon in the ImageJ/Fiji Icon list with the double arrow).
 
@@ -486,7 +486,7 @@ Skeleton Length (corrected)
 
 Status: deprecated due to incorrect calculation
 
-Please rather use the [Analyze Skeleton 2D/3D](/AnalyzeSkeleton) which is shipped with Fiji
+Please rather use the [Analyze Skeleton 2D/3D](/plugins/analyze-skeleton) which is shipped with Fiji
 
 ------------------------------------------------------------------------
 

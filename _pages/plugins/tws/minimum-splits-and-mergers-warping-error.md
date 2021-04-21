@@ -16,7 +16,7 @@ In the classic [ warping error](/plugins/tws/topology-preserving-warping-error),
 2D implementation in Fiji
 -------------------------
 
-The minimum splits and mergers warping error metric is implemented for 2D images in the [Trainable Weka Segmentation](/plugins/tws) library. Here is an example of how to use it in [Beanshell script](Beanshell_Scripting):
+The minimum splits and mergers warping error metric is implemented for 2D images in the [Trainable Weka Segmentation](/plugins/tws) library. Here is an example of how to use it in [Beanshell script](/scripting/beanshell):
 
     import trainableSegmentation.metrics.WarpingError;
 

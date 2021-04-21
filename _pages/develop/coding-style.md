@@ -103,6 +103,6 @@ All of that said, there are times when use of the `protected` modifier is approp
 See also
 --------
 
-[Eclipse code style profiles and IntelliJ](Eclipse_code_style_profiles_and_IntelliJ)
+[Eclipse code style profiles and IntelliJ](/develop/intellij#code-style-profiles)
 
 

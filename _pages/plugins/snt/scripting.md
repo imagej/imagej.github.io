@@ -44,7 +44,7 @@ The most up-to-date SNT API can be found at [https://morphonets.github.io/SNT](h
 
 <!-- -->
 
--   **SciView\_Demo.groovy** Exemplifies how bridge SNT with [SciView](/SciView).
+-   **SciView\_Demo.groovy** Exemplifies how bridge SNT with [SciView](/plugins/sciview).
 
 <!-- -->
 
@@ -52,7 +52,7 @@ The most up-to-date SNT API can be found at [https://morphonets.github.io/SNT](h
 
 ### Boilerplate
 
-This menu hosts script templates containing extensible boilerplate code in several programming languages, namely [BeanShell](BeanShell), [Groovy](/scripting/groovy) and [Jython](/scripting/jython). The most essential imports and [script parameters](/scripting/parameters) are included to facilitate rapid development.
+This menu hosts script templates containing extensible boilerplate code in several programming languages, namely [BeanShell](/scripting/beanshell), [Groovy](/scripting/groovy) and [Jython](/scripting/jython). The most essential imports and [script parameters](/scripting/parameters) are included to facilitate rapid development.
 
 ### Tracing
 
@@ -250,6 +250,6 @@ The following script exemplifies how to extend the boilerplate template to contr
 
 ### Script Interpreter
 
-Some of SNT's functionality is accessible in the [Script Interpreter](Script_Interpreter). Here is an example: <img src="/media/SNT-ScriptInterpreter.png" title="fig:SNT-ScriptInterpreter.png" width="650" alt="SNT-ScriptInterpreter.png" />
+Some of SNT's functionality is accessible in the [Script Interpreter](/scripting/interpreter). Here is an example: <img src="/media/SNT-ScriptInterpreter.png" title="fig:SNT-ScriptInterpreter.png" width="650" alt="SNT-ScriptInterpreter.png" />
 
 {% include sntnavbar%}

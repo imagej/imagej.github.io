@@ -64,7 +64,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
       <td><img src="/media/Imagej1-icon.png" width="64"/></td>
       <td><a href="/libs/imageja">ImageJA</a></td>
       <td><a href="/about/contributors">ImageJ developers</a></td>
-      <td>ImageJA is a project that provides a clean <a href="Git">Git</a>
+      <td>ImageJA is a project that provides a clean <a href="/develop/git">Git</a>
         history of ImageJ1, with a proper 'pom.xml' file so that it can be used
         with Maven without hassles.<br><br>It is what ImageJ2's legacy support
         uses at its core.</td>

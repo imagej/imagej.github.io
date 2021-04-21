@@ -7,7 +7,7 @@ description: this page demonstrates how to use the person include tag.
 
 ## Usage
 
-Specify a person using their [GitHub](GitHub) username, or a plain/unlinked name.
+Specify a person using their [GitHub](/develop/github) username, or a plain/unlinked name.
 
 ## Examples
 

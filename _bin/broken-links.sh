@@ -7,6 +7,22 @@ test -d "$root" || {
   exit 1
 }
 
+prefixes="
+ij
+conference
+list-of-update-sites
+presentations
+workshops
+"
+
+allowed() {
+  for prefix in $prefixes
+  do
+    echo "$1" | grep -q "^/$prefix" && return 0
+  done
+  return 1
+}
+
 grep -IRo 'href="\/[^"]*' "$root" | sed 's/:href="/:/' | while read line
 do
   file=${line%%:*}
@@ -15,9 +31,9 @@ do
   page=${link%#*}
   test "$page" = "$link" && anchor="" || anchor=${link#*#}
   target="$root$page"
-  test -f "$target" -o -f "$target.html" -o -f "$target/index.html" ||
-    { echo "$link"; continue; }
-  test -z "$anchor" ||
+  test -f "$target" -o -f "$target.html" -o -f "$target/index.html" || allowed "$link" ||
+   { echo "$link"; continue; }
+  test -z "$anchor" || allowed "$link" ||
     grep -q "id=\"$anchor\"" "$target.html" 2>/dev/null ||
     grep -q "id=\"$anchor\"" "$target/index.html" 2>/dev/null ||
     echo "$link [NO ANCHOR]"

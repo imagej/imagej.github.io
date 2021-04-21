@@ -16,7 +16,7 @@ Services
 -   Perform builds of SciJava projects. Travis deploys `SNAPSHOT` builds to the [SciJava Maven repository](https://maven.scijava.org/) in response to pushes to each code repository's `master` branch. So any downstream projects depending on a version of `LATEST` for a given component will match the last successful Travis build—i.e., the latest code on `master`.
 -   Run each project's associated {% include wikipedia title='Unit testing' text='unit tests'%}. Travis is instrumental in early detection of new bugs introduced to the codebase.
 -   Perform [releases](/develop/releasing) of [SciJava](SciJava) projects. Travis deploys release builds to the appropriate Maven repository—typically either the SciJava Maven repository or [OSS Sonatype](https://oss.sonatype.org/).
--   Keep the [javadoc](Javadoc) site updated.
+-   Keep the [javadoc](/develop/source#javadocs) site updated.
 -   Keep other web resources updated.
 
 Automatic Deployment of Maven Artifacts

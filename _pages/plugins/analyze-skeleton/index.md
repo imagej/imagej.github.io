@@ -148,7 +148,7 @@ Here's an example in Javascript:
 
 ### Pruning branches by length
 
-The following [Beanshell](Beanshell) script prunes the branches of an input skeleton if they are under a certain length:
+The following [Beanshell](/scripting/beanshell) script prunes the branches of an input skeleton if they are under a certain length:
 
     // @ImagePlus(label="Skeleton image", description="Binary image skeletonized with Skeletonize3D") image
     // @double(label="Length threshold", description="Minimum branch length to keep") threshold
@@ -208,7 +208,7 @@ Be aware that small branches might be created due to the elimination of end-poin
 
 ### Visualizing the skeleton in the 3D viewer
 
-The following [Beanshell](Beanshell) script shows the voxel classification of the skeleton in the 3D viewer:
+The following [Beanshell](/scripting/beanshell) script shows the voxel classification of the skeleton in the 3D viewer:
 
     // @ImagePlus(label="Skeleton image", description="Binary image skeletonized with Skeletonize3D") image
      

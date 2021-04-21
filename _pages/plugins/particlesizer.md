@@ -22,7 +22,7 @@ The ParticleSizer script was developed to automatically measures the distributio
 Installation
 ============
 
-The ParticleSizer script combines a number of different plugins. The most easy way (and at the moment the only way) is to [follow](/How_to_follow_a_3rd_party_update_site) Biomedgroup & ParticleSizer [update site](/Update_Sites).
+The ParticleSizer script combines a number of different plugins. The most easy way (and at the moment the only way) is to [follow](/update-sites/following) Biomedgroup & ParticleSizer [update site](/update-sites).
 
 It is recommended to install R to get better plots. When this point is skipped, a stripped-down plot will be shown:
 

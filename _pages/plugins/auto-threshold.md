@@ -81,7 +81,7 @@ This assumes a bimodal histogram. The histogram is iteratively smoothed using a 
 
 -   {% include citation last='Prewitt' first='JMS' last2='Mendelsohn' first2='ML' year='1966' journal='Annals of the New York Academy of Sciences' url='http://www3.interscience.wiley.com/journal/119758871/abstract?CRETRY=1&SRETRY=0' title='The analysis of cell images' volume='128' pages='1035-1053' %}
 
-Ported from Antti Niemistö's [MATLAB](MATLAB) code. See [here](https://github.com/carandraug/histthresh) for an excellent slide presentation and his original [MATLAB](MATLAB) code.
+Ported from Antti Niemistö's [MATLAB](/scripting/matlab) code. See [here](https://github.com/carandraug/histthresh) for an excellent slide presentation and his original [MATLAB](/scripting/matlab) code.
 
 ### IsoData
 
@@ -133,7 +133,7 @@ This implementation seems to converge more often than the original. Nevertheless
 
 -   {% include citation last='Kittler' first='J' last2='Illingworth' first2='J' year='1986' journal='Pattern Recognition' title='Minimum error thresholding' volume='19' pages='41-47' %}
 
-Ported from Antti Niemistö's [MATLAB](MATLAB) code. See [here](http://www.cs.tut.fi/~ant/histthresh/) for an excellent slide presentation and the original [MATLAB](MATLAB) code.
+Ported from Antti Niemistö's [MATLAB](/scripting/matlab) code. See [here](http://www.cs.tut.fi/~ant/histthresh/) for an excellent slide presentation and the original [MATLAB](/scripting/matlab) code.
 
 ### Minimum
 
@@ -143,7 +143,7 @@ Images with histograms having extremely unequal peaks or a broad and flat valley
 
 -   {% include citation last='Prewitt' first='JMS' last2='Mendelsohn' first2='ML' year='1966' journal='Annals of the New York Academy of Sciences' url='http://www3.interscience.wiley.com/journal/119758871/abstract?CRETRY=1&SRETRY=0' title='The analysis of cell images' volume='128' pages='1035-1053' %}
 
-Ported from Antti Niemistö's [MATLAB](MATLAB) code. See [here](http://www.cs.tut.fi/~ant/histthresh/) for an excellent slide presentation and the original [MATLAB](MATLAB) code.
+Ported from Antti Niemistö's [MATLAB](/scripting/matlab) code. See [here](http://www.cs.tut.fi/~ant/histthresh/) for an excellent slide presentation and the original [MATLAB](/scripting/matlab) code.
 
 ### Moments
 
@@ -169,7 +169,7 @@ Assumes the fraction of foreground pixels to be 0.5.
 
 -   {% include citation last='Doyle' first='W' year='1962' journal='Journal of the Association for Computing Machinery' url='http://portal.acm.org/citation.cfm?id=321119.321123' title='Operation useful for similarity-invariant pattern recognition' volume='9' pages='259-267' doi='10.1145/321119.321123' %}
 
-Ported from Antti Niemistö's [MATLAB](MATLAB) code. See [here](http://www.cs.tut.fi/~ant/histthresh/) for an excellent slide presentation and the original [MATLAB](MATLAB) code.
+Ported from Antti Niemistö's [MATLAB](/scripting/matlab) code. See [here](http://www.cs.tut.fi/~ant/histthresh/) for an excellent slide presentation and the original [MATLAB](/scripting/matlab) code.
 
 ### RenyiEntropy
 

@@ -14,7 +14,7 @@ description: test description
 {% include github org='imagej' repo='ImageJA' label='Git repository' %}
 {% endcapture %}
 {% include info-box software='ImageJA' name='ImageJA' author=author maintainer='[Travis CI](/develop/travis)' filename='Newer versions [on Maven Central](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22net.imagej%22%20AND%20a%3A%22ij%22)  
-Older versions [in ImageJ Maven repository](http://maven.imagej.net/content/repositories/releases/net/imagej/ij/)' source=source released='17/03/2007' latest-version='auto-updated' status='auto-maintained' %}ImageJA is a project that provides a clean [Git](Git) history of the [ImageJ 1.x](/software/imagej1) project, with a proper 'pom.xml' file so that it can be used with [Maven](/develop/maven) without hassles.
+Older versions [in ImageJ Maven repository](http://maven.imagej.net/content/repositories/releases/net/imagej/ij/)' source=source released='17/03/2007' latest-version='auto-updated' status='auto-maintained' %}ImageJA is a project that provides a clean [Git](/develop/git) history of the [ImageJ 1.x](/software/imagej1) project, with a proper 'pom.xml' file so that it can be used with [Maven](/develop/maven) without hassles.
 
 Why ImageJA?
 ------------
@@ -22,7 +22,7 @@ Why ImageJA?
 The [ImageJ1](/software/imagej1) project, developed by {%- include person id='rasband' -%}, lives in the {% include github org='imagej' repo='imagej1' label='imagej/imagej1 repository' %} on [GitHub](/develop/github). The `imagej1` repository uses the Ant build system. Changes are pushed (at most) once per day, with a corresponding datestamp. This scheme has some drawbacks:
 
 -   ImageJ1 artifacts cannot be published easily to public repositories for use as a dependency downstream.
--   The `imagej1` repository's source code does not precisely correspond to ImageJ 1.x's actual releases. Hence, that repository does not have any [Git](Git) release tags.
+-   The `imagej1` repository's source code does not precisely correspond to ImageJ 1.x's actual releases. Hence, that repository does not have any [Git](/develop/git) release tags.
 -   Developing ImageJ1 in an [IDE](/develop/ides) would be more convenient if it were structured as a Maven project.
 
 The ImageJA project is an adjusted version of ImageJ1 which addresses the above limitations.

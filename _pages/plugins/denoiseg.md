@@ -30,14 +30,14 @@ Microscopy image analysis often requires the segmentation of objects, but traini
 Installation
 ============
 
-The DenoiSeg FIJI Plugin is part of the CSBDeep update site. Look [here](/Following_an_update_site), for detailed instructions on how to install an update site. Or just follow these steps:
+The DenoiSeg FIJI Plugin is part of the CSBDeep update site. Look [here](/update-sites/following), for detailed instructions on how to install an update site. Or just follow these steps:
 
 1.  Start ImageJ / Fiji
 2.  Open the updater via `Help > Update...`
 3.  Click on `Manage update sites`
 4.  Select the <b>`CSBDeep`</b> update site
 5.  Click on `Apply changes`
-6.  (optional) read [this page](/TensorFlow-GPU) for GPU support
+6.  (optional) read [this page](/develop/tensorflow) for GPU support
 7.  Restart ImageJ / Fiji
 
 You should now have access to these plugins:
@@ -50,7 +50,7 @@ Usage
 Training
 --------
 
-Read [this page](/TensorFlow-GPU) for how to get GPU support. With out a GPU the training will take ages.
+Read [this page](/develop/tensorflow) for how to get GPU support. With out a GPU the training will take ages.
 
 ### Prepare your data
 

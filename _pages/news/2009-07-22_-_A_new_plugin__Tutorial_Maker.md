@@ -5,7 +5,7 @@ categories: News
 description: test description
 ---
 
-A new plugin entered this world: [Tutorial Maker](/plugins/tutorial-maker). This plugin is meant to [make writing tutorials on the Wiki real fun](How_to_make_a_new_tutorial).
+A new plugin entered this world: [Tutorial Maker](/plugins/tutorial-maker). This plugin is meant to [make writing tutorials on the Wiki real fun](/tutorials/make-a-new-tutorial).
 
 Up until now, writing a [tutorial](Category_Tutorials) was a hassle, mainly due to having to make snapshots in ImageJ, sometimes using the [Delayed Snapshot](/plugins/delayed-snapshot) script, saving all of them, uploading them one by one, starting a new page, repeating the image names all over again when referencing them, and then finally editing the page, touching it up previewing frequently.
 

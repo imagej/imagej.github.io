@@ -20,7 +20,7 @@ This site, imagej.net, is a wiki (similar to the {% include wikipedia title='Wik
 
 If you are an ImageJ user, contributing documentation is an easy way to give back to the community without needing to learn software development skills.
 
-If you are a plugin author, please consider [documenting your plugin on this site](Distribution#Documenting_your_extension). You can have a look at the page [How\_to\_make\_a\_new\_tutorial](How_to_make_a_new_tutorial).
+If you are a plugin author, please consider [documenting your plugin on this site](Distribution#Documenting_your_extension). You can have a look at the page [How\_to\_make\_a\_new\_tutorial](/tutorials/make-a-new-tutorial).
 
 When in doubt, discuss your ideas publicly on the Image.sc [Forum](/help)!
 

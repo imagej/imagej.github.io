@@ -73,7 +73,7 @@ Note:
 -   The Java type *String* is mapped to *const char \** in the C layer. The same happens for other primitive Java types.
 -   Since the parameters need to be mapped prior to calling the native function, and mapped back after it returns, and all this mapping is done using reflection, JNA is relatively slow compared to JNI (except when the amount of time spent copying data is outweighed by the processing time spent within the native library).
 -   There is no guarantee by the compiler that the interface is correct. In fact, you can declare the functions incorrectly very easily, which results in hard crashes of the Java virtual machine.
--   Note: to define this interface in [Beanshell](Beanshell_Scripting), you need to use the syntax `interface C implements Library` instead of employing the keyword `extends`.
+-   Note: to define this interface in [Beanshell](/scripting/beanshell), you need to use the syntax `interface C implements Library` instead of employing the keyword `extends`.
 
 Use the library in this way:
 
@@ -212,7 +212,7 @@ Example:
 Scripting JNA
 -------------
 
-In [Beanshell](Beanshell_Scripting), it is not possible to extend interfaces, so it is not possible to imitate the plain Java way to use JNA. Other scripting languages have similar problems as far as JNA is concerned.
+In [Beanshell](/scripting/beanshell), it is not possible to extend interfaces, so it is not possible to imitate the plain Java way to use JNA. Other scripting languages have similar problems as far as JNA is concerned.
 
 But you can use the *getFunction(String)* method of *NativeLibrary* to get a function object, whose methods *invokeInt(Object\[\])*, *invokePointer(Object\[\])* and friends will allow you to call the function.
 

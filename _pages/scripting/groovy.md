@@ -6,7 +6,7 @@ categories: Scripting
 description: test description
 ---
 
-[Groovy](http://groovy-lang.org/) is an agile and dynamic language for the Java Virtual Machine. It builds upon the strengths of [Java](/develop/plugins) but has additional power features inspired by languages like [Python](Python), [Ruby](/scripting/jruby) and Smalltalk.
+[Groovy](http://groovy-lang.org/) is an agile and dynamic language for the Java Virtual Machine. It builds upon the strengths of [Java](/develop/plugins) but has additional power features inspired by languages like [Python](/scripting/python), [Ruby](/scripting/jruby) and Smalltalk.
 
 Quickstart
 ==========

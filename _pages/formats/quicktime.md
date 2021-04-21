@@ -42,7 +42,7 @@ You can accomplish all of the above by pasting the following command into a runn
 FFMPEG
 ------
 
-There is an [update site](Update_site) called FFMPEG which enables support for opening movie files via the {% include wikipedia title='FFMPEG' text='FFMPEG library'%}. This update site ships native libraries, which should work on Windows, OS X and Linux platforms, but not other platforms (AIX, Solaris, etc.).
+There is an [update site](/update-sites) called FFMPEG which enables support for opening movie files via the {% include wikipedia title='FFMPEG' text='FFMPEG library'%}. This update site ships native libraries, which should work on Windows, OS X and Linux platforms, but not other platforms (AIX, Solaris, etc.).
 
 See the [FFMPEG supported codecs](https://www.ffmpeg.org/general.html#Video-Codecs) page for a list of supported codecs.
 

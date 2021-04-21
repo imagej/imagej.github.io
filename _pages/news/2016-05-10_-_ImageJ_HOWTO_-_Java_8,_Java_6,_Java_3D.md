@@ -119,7 +119,7 @@ Current recommendations and possibilities
 <ul><li> If you <b>still need Java 6, do nothing.</b>
 <ul><li> For now, you will keep receiving updates of <a href="/software/imagej1" class="mw-redirect" title="ImageJ 1.x">ImageJ 1.x</a>.</li>
 <li> But you will no longer receive updates for most ImageJ2 or Fiji components—they have all migrated to Java 8.</li></ul></li>
-<li> If you <b>want the latest updates</b>, <a href="FAQ#How_do_I_launch_ImageJ_with_a_different_version_of_Java.3F" class="mw-redirect" title="FAQ">update your ImageJ installation to use Java 8</a> and then <a href="/update-sites/following" class="mw-redirect" title="How to follow a 3rd party update site">enable the Java-8 update site</a>.
+<li> If you <b>want the latest updates</b>, <a href="FAQ#How_do_I_launch_ImageJ_with_a_different_version_of_Java.3F" class="mw-redirect" title="/help/faq">update your ImageJ installation to use Java 8</a> and then <a href="/update-sites/following" class="mw-redirect" title="How to follow a 3rd party update site">enable the Java-8 update site</a>.
 <ul><li> <b>Make sure you switch your ImageJ over to Java 8 <i>before</i> enabling the Java-8 update site!</b></li></ul></li></ul>
 
 Upgrading an old installation

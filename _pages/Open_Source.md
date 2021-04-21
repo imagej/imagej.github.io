@@ -9,7 +9,7 @@ description: test description
 
 Everybody is welcome to [contribute](/about/contributing) with [plugins](/plugins), patches, [bug reports](/help/report-a-bug), [tutorials](/tutorials), [documentation](/learn), and artwork.
 
-The [SciJava](SciJava) ecosystem is strongly committed to open-source software development. This software is not an open source software *product*—it is an open-source software *project* following an open-source development *process*. There are public [source code repositories](Source_Code), public [communication](Communication) channels, public [project management](/develop/project-management) resources, and of course, this [community editable website](Help_Contents). See the [Philosophy](/develop/philosophy) page for more information.
+The [SciJava](SciJava) ecosystem is strongly committed to open-source software development. This software is not an open source software *product*—it is an open-source software *project* following an open-source development *process*. There are public [source code repositories](/develop/source), public [communication](Communication) channels, public [project management](/develop/project-management) resources, and of course, this [community editable website](Help_Contents). See the [Philosophy](/develop/philosophy) page for more information.
 
 Why open source?
 ----------------

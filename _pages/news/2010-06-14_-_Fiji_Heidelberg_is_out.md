@@ -22,7 +22,7 @@ While it is developed actively, it is already quite powerful and easily usable b
 -   Fixed a critical bug in the [Fiji Updater](/plugins/updater) that affected MacOSX. Symptom:
 
   
-Fiji no longer starts after an update). If you have not updated between April 8, 2010 and June 3rd, 2010, this bug affects you and you have to follow [these instructions](/Fix_non-functional_ImageJ_after_Update).
+Fiji no longer starts after an update). If you have not updated between April 8, 2010 and June 3rd, 2010, this bug affects you and you have to follow [these instructions](/help/troubleshooting).
 
 -   Unfortunately, we had to drop support for MacOSX PPC. If you need Fiji on such a system, please contact [the Fiji developer mailing list](http://groups.google.com/group/fiji-devel), and we will try to provide a special edition.
 
@@ -64,7 +64,7 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 <!-- -->
 
--   implemented [CLAHE](Enhance_Local_Contrast_(CLAHE)), a filter for adaptive local contrast enhancement (thanks to Stephan Saalfeld).
+-   implemented [CLAHE](/plugins/enhance-local-contrast-clahe), a filter for adaptive local contrast enhancement (thanks to Stephan Saalfeld).
 
 <!-- -->
 
@@ -331,7 +331,7 @@ Developer-visible changes
 
 <!-- -->
 
--   Many improvements in the [build system](/Fiji_Build_System) (less unnecessary rebuilds, separate output directory, excluding files from a .jar target, etc). Thanks to Jacques Pecreaux, Mark Longair and Curtis Rueden.
+-   Many improvements in the [build system](/develop) (less unnecessary rebuilds, separate output directory, excluding files from a .jar target, etc). Thanks to Jacques Pecreaux, Mark Longair and Curtis Rueden.
 
 <!-- -->
 
@@ -431,11 +431,11 @@ Developer-visible changes
 
 <!-- -->
 
--   [Fiji Build](/Fiji_Build_System) allows falling back to the [updater](/plugins/updater) if there is no *precompiled/* file for a not-checked-out submodule.
+-   [Fiji Build](/develop) allows falling back to the [updater](/plugins/updater) if there is no *precompiled/* file for a not-checked-out submodule.
 
 <!-- -->
 
--   The [Fiji Build](/Fiji_Build_System) is more easily called via a public API now.
+-   The [Fiji Build](/develop) is more easily called via a public API now.
 
 <!-- -->
 

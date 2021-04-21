@@ -18,7 +18,7 @@ Thorsten Wagner is a postdoc at the max planck institute of molecular physiology
 -   [IJ Blob](/plugins/ij-blob)
 -   [Ellipse split](/plugins/ellipse-split)
 -   [NanoTrackJ](/plugins/nanotrackj)
--   [Find\_maxima\_(Trackmate\_module)](Find_maxima_(Trackmate_module))
+-   [Find\_maxima\_(Trackmate\_module)](/plugins/trackmate/find-maxima-detector)
 -   [ParticleSizer](/plugins/particlesizer)
 -   [TraJClassifier](/plugins/trajclassifier)
 

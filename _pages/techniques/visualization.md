@@ -19,7 +19,7 @@ The [LUT Menu](/ij/docs/guide/146-19.html#sub:LUTMenu) of ImageJ contains a larg
 
 Note: in the ImageJ 1.x user interface, LUTs are always 8-bit. When working with an image of higher bit depth, its intensity values are binned into 256 levels between minimum and maximum (see section Brightness/Contrast), and the LUT is applied onto these binned levels.
 
-More information on this topic can be found on the [Color Image Processing](/Color_Image_Processing) page.
+More information on this topic can be found on the [Color Image Processing](/cookbook/color-image-processing) page.
 
 Fluorescence images are usually acquired without color information (i.e. by monochrome cameras or with photomultipliers): each channel contains just intensity values. To display a multi-channel fluorescence image in composite mode (i.e. an overlay of all channels), each channel can be assigned a **monochrome false-color LUT**, e.g. 'Red', 'Green', 'Blue', 'Cyan', 'Magenta', 'Yellow', etc.
 

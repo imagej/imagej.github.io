@@ -59,7 +59,7 @@ ImageJ2 provides a wealth of new features and capabilities:
 
 The search bar finds commands, and can search the ImageJ wiki as well as the [ImageJ Forum](http://forum.imagej.net/) if you check those respective checkboxes.
 
-For power users and developers, the search bar supports execution of "code snippets"—single lines of code for performing tasks—by starting the query with `!`. Any code that works in the [Script Interpreter](Script_Interpreter) should be usable as a code snippet.
+For power users and developers, the search bar supports execution of "code snippets"—single lines of code for performing tasks—by starting the query with `!`. Any code that works in the [Script Interpreter](/scripting/interpreter) should be usable as a code snippet.
 
 Developers can extend the capabilities of the search bar by writing [Searcher](https://github.com/scijava/scijava-search/blob/scijava-search-0.3.1/src/main/java/org/scijava/search/Searcher.java#L36-L46) plugins.
 

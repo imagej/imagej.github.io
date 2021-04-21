@@ -76,7 +76,7 @@ Further reading for developers
 -   [ImageJ programming tutorials](http://albert.rierol.net/imagej_programming_tutorials.html)
 -   [Uploading plugins](/develop/uploading-plugins)
 -   [Developing Fiji in Eclipse](/develop/eclipse)
--   [Git](Git)
+-   [Git](/develop/git)
 -   [Project ideas](Project_ideas)
 -   [Code Coverage in Fiji](Code_Coverage_in_Fiji)
 -   [Introduction to debugging](/develop/debugging)

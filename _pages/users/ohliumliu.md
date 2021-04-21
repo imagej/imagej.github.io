@@ -7,4 +7,4 @@ github: ohliumliu
 name: Yu Liu
 ---
 
-Yu Liu is the maintainer of the ImageJ Latex [update site](Update_site).
+Yu Liu is the maintainer of the ImageJ Latex [update site](/update-sites).

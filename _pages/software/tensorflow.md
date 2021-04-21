@@ -26,7 +26,7 @@ See also
 --------
 
 -   {% include github org='imagej' repo='imagej-tensorflow' label='ImageJ-TensorFlow on GitHub' %}.
--   The TensorFlow [update site](Update_site) to make TensorFlow features available in ImageJ.
+-   The TensorFlow [update site](/update-sites) to make TensorFlow features available in ImageJ.
 -   [Microscope Focus Quality](/plugins/microscope-focus-quality), an ImageJ plugin which uses TensorFlow.
 
   

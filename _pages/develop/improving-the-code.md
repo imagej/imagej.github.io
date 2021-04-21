@@ -16,7 +16,7 @@ description: test description
 
 In many cases, the plugin or library will **have its own source code repository** online somewhere. For instance, in the [Fiji](/fiji) project, plugin code lives in the [Fiji GitHub organization](https://github.com/fiji); e.g., the **VIB-lib** library's repository is {% include github org='fiji' repo='VIB-lib' label='VIB-lib' %}. This structure allows for easy, independent development of each individual component.
 
-This tutorial assumes you are familiar with [Git](Git). If this is not the case, please go ahead and read the existing [documentation](Git).
+This tutorial assumes you are familiar with [Git](/develop/git). If this is not the case, please go ahead and read the existing [documentation](/develop/git).
 
 In this example, we want to fix some bugs and add some functionality to the VIB-lib library. Let's see step by step how to do it:
 

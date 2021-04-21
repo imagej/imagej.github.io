@@ -132,15 +132,15 @@ Scripting
 Add JMathLib (MATLAB clone) support
 -----------------------------------
 
-Quite a few algorithms are available as proof-of-concept [MATLAB](MATLAB) scripts. While it is [wrong to think of pixels as little squares](Ftp___ftp.alvyray.com_Acrobat_6_Pixel.pdf), and literally all [MATLAB](MATLAB) scripts to perform image processing are suffering from that assumption, it would be very nice nevertheless to be able to run the scripts without having to buy [MATLAB](MATLAB) licenses just for that purpose.
+Quite a few algorithms are available as proof-of-concept [MATLAB](/scripting/matlab) scripts. While it is [wrong to think of pixels as little squares](Ftp___ftp.alvyray.com_Acrobat_6_Pixel.pdf), and literally all [MATLAB](/scripting/matlab) scripts to perform image processing are suffering from that assumption, it would be very nice nevertheless to be able to run the scripts without having to buy [MATLAB](/scripting/matlab) licenses just for that purpose.
 
-MATLAB bundles a Java runtime (and in fact, all of [MATLAB](MATLAB)'s GUI is implemented in Java!) and allows the user to instantiate Java classes and call methods on them:
+MATLAB bundles a Java runtime (and in fact, all of [MATLAB](/scripting/matlab)'s GUI is implemented in Java!) and allows the user to instantiate Java classes and call methods on them:
 
     import java.io.File;
     f = File('/usr/local/Fiji.app/');
     f.exists()
 
-Happily, there is a [MATLAB](MATLAB) clone written in Java: [JMathLib](http://www.jmathlib.de/). While it is apparently not a speed demon, it should be useful to add JMathLib as a new scripting language to ImageJ, and integrate it into Fiji so that [MATLAB](MATLAB) scripts can be executed just like all other ImageJ scripts, too.
+Happily, there is a [MATLAB](/scripting/matlab) clone written in Java: [JMathLib](http://www.jmathlib.de/). While it is apparently not a speed demon, it should be useful to add JMathLib as a new scripting language to ImageJ, and integrate it into Fiji so that [MATLAB](/scripting/matlab) scripts can be executed just like all other ImageJ scripts, too.
 
 So far, we have [a branch which adds rudimentary JMathLib bindings to Fiji's scripting interface](https://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=shortlog;h=refs/heads/jmathlib) and [a Git-SVN mirror of the JMathLib source code repository](https://fiji.sc/JMathLib/.git) with a special *fiji* branch. The idea is to work on this branch to adjust JMathLib in certain ways to support this project, and once that is done, contribute the changes back to the JMathLib project.
 
@@ -160,11 +160,11 @@ The following issues need to be tackled in the JMathLib source code:
 
 <!-- -->
 
--   JMathLib supports Java via a [non-standard mechanism](https://fiji.sc/cgi-bin/gitweb.cgi?p=JMathLib/.git;a=blob;f=src/jmathlib/plugins/dynjava/JavaPlugin.java;hb=refs/heads/fiji) based on [DynamicJava](http://old.koalateam.com/djava/). This is incompatible with [MATLAB](MATLAB), so there needs to be native support using [reflection](http://download-llnw.oracle.com/javase/1.5.0/docs/api/java/lang/reflect/package-summary.html) to support the method to instantiate Java objects mentioned above.
+-   JMathLib supports Java via a [non-standard mechanism](https://fiji.sc/cgi-bin/gitweb.cgi?p=JMathLib/.git;a=blob;f=src/jmathlib/plugins/dynjava/JavaPlugin.java;hb=refs/heads/fiji) based on [DynamicJava](http://old.koalateam.com/djava/). This is incompatible with [MATLAB](/scripting/matlab), so there needs to be native support using [reflection](http://download-llnw.oracle.com/javase/1.5.0/docs/api/java/lang/reflect/package-summary.html) to support the method to instantiate Java objects mentioned above.
 
 This issue needs to be tackled in Fiji's source code:
 
--   JMathLib's image toolbox does not contain much. Even the most basic functions are missing. And even if there were functions, we would have to override them, because the functions need to be done in a way so that they can use and interact with ImageJ. The best approach may be to start by implementing the functions mentioned in [[MATLAB](MATLAB)'s image processing toolbox'](http://www.mathworks.com/help/toolbox/images/index.html) *Getting Started* section, by implementing *.m* files that call directly into ImagePlus (using the above-mentioned technique).
+-   JMathLib's image toolbox does not contain much. Even the most basic functions are missing. And even if there were functions, we would have to override them, because the functions need to be done in a way so that they can use and interact with ImageJ. The best approach may be to start by implementing the functions mentioned in [[MATLAB](/scripting/matlab)'s image processing toolbox'](http://www.mathworks.com/help/toolbox/images/index.html) *Getting Started* section, by implementing *.m* files that call directly into ImagePlus (using the above-mentioned technique).
 
 **Goal:** Integrate JMathLib as a new scripting language.  
 **Language:** Java.  
@@ -246,7 +246,7 @@ To overcome the typical problem of loading native libraries via System.loadLibra
     }
     Rengine re = new Rengine();
 
-Teach the Fiji Updater to accept other sites in addition to [fiji.sc](Fiji.sc)
+Teach the Fiji Updater to accept other sites in addition to [fiji.sc](/about/funding)
 -----------------------------------------------------------------------------------------
 
 The Fiji Updater always looks for a static file containing an XML database of Fiji plugins (both current and past versions) on our website. To put new versions or new plugins there (to *upload into the updater*), you have to be a Fiji developer with write permission for that particular directory on our server.
@@ -280,7 +280,7 @@ The project is not without complications, though:
 Integrate [JGit](http://www.jgit.org) into Fiji
 -----------------------------------------------
 
-An important part of Fiji's success is the ease with which developers can collaborate through the use of [Git](Git).
+An important part of Fiji's success is the ease with which developers can collaborate through the use of [Git](/develop/git).
 
 There exists a pure Java implementation of Git called [JGit](http://www.jgit.org), which already provides a large part of Git's functionality.
 

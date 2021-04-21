@@ -267,7 +267,7 @@ That said, you can install a Fiji plugin in a vanilla ImageJ 1.x installation, a
 
 Then copy `target/dependency/*.jar` into your ImageJ installation.
 
-You will need [Git](Git) and [Maven](/develop/maven) installed for this to work.
+You will need [Git](/develop/git) and [Maven](/develop/maven) installed for this to work.
 
 Interoperability
 ================
@@ -275,7 +275,7 @@ Interoperability
 How can I call ImageJ from MATLAB, or vice versa?
 -------------------------------------------------
 
-Use the ImageJ-MATLAB [update site](Update_site). See the [MATLAB](MATLAB) page for details.
+Use the ImageJ-MATLAB [update site](/update-sites). See the [MATLAB](/scripting/matlab) page for details.
 
 Development
 ===========
@@ -468,7 +468,7 @@ If documentation is missing for the command you're interested in, you can always
 5.  From the appropriate project on GitHub, you can find the repository corresponding to the desired plugin.
 6.  Finally, you can search for the actual file for the command of interest (Shortcut: {% include key content='T' %}).
 
-As a complete example, if you were interested in the [2D Histogram](2D_Histogram) command:
+As a complete example, if you were interested in the [2D Histogram](/plugins/2d-histogram) command:
 
 -   The [search bar](/learn/getting-started#the-search-bar) indicates it's located in VIB.jar
 -   VIB is a Fiji plugin, so we go to [the VIB repository](https://github.com/fiji/VIB).

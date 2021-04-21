@@ -5,7 +5,7 @@ categories: Registration|Registration, plugins
 description: test description
 ---
 
-{% include warning-box content='Please Note: This version of the software is outdated. We highly recommend using the new [automated workflow](Automated_workflow_for_parallel_Multiview_Reconstruction). It is much more user friendly, efficient and versatile using full automation of the processing.' %}
+{% include warning-box content='Please Note: This version of the software is outdated. We highly recommend using the new [automated workflow](/plugins/automated-workflow-for-parallel-multiview-reconstruction). It is much more user friendly, efficient and versatile using full automation of the processing.' %}
 
 {% include info-box name='Selective Plane Illumination Microscopy Registration on a cluster' software='Fiji' author='Stephan Saalfeld, Christopher Schmied, Pavel Tomancak' maintainer='Pavel Tomancak' filename='n.a.' released='May 2013' latest-version='May 2013' category='[Registration](Category_Registration)' website=' [Pavel Tomancak"s homepage](http://www.mpi-cbg.de/research/research-groups/pavel-tomancak.html)' %}= Introduction =
 
@@ -19,7 +19,7 @@ Each node of this cluster runs CentOS 6.3 Linux distribution. The queuing system
 
 **Note on versions**
 
-The SPIM registration is a piece of software that undergoes ongoing development. The original version gathered under plugins *SPIM registration* has been replaced in 2014 by new set of plugins gathered under *Multiview reconstruction*. Moreover, the cluster pipeline has been changed to use a centralised Linux style master file. In 2015 this pipeline was reimplemented as **[automated workflow](Automated_workflow_for_parallel_Multiview_Reconstruction)** using the workflow manager **[Snakemake](https://bitbucket.org/johanneskoester/snakemake/wiki/Home.)**. Which allows to map and dispatch the workflow logic automatically either on a single maschine or on a HPC cluster. Therefore there are 4 versions available. We highly recommend using the latest version:
+The SPIM registration is a piece of software that undergoes ongoing development. The original version gathered under plugins *SPIM registration* has been replaced in 2014 by new set of plugins gathered under *Multiview reconstruction*. Moreover, the cluster pipeline has been changed to use a centralised Linux style master file. In 2015 this pipeline was reimplemented as **[automated workflow](/plugins/automated-workflow-for-parallel-multiview-reconstruction)** using the workflow manager **[Snakemake](https://bitbucket.org/johanneskoester/snakemake/wiki/Home.)**. Which allows to map and dispatch the workflow logic automatically either on a single maschine or on a HPC cluster. Therefore there are 4 versions available. We highly recommend using the latest version:
 
 -   [Original SPIM registration pipeline](#Original_SPIM_registration_pipeline) - contains the most detailed description of the cluster pipeline using *SPIM registration* plugins. If you do not have much HPC/Linux experience start here.
 
@@ -33,7 +33,7 @@ The SPIM registration is a piece of software that undergoes ongoing development.
 
 <!-- -->
 
--   **[Automated workflow for parallel Multiview Reconstruction](Automated_workflow_for_parallel_Multiview_Reconstruction)** - automated workflow using the workflow manager **[Snakemake](https://bitbucket.org/johanneskoester/snakemake/wiki/Home.)**
+-   **[Automated workflow for parallel Multiview Reconstruction](/plugins/automated-workflow-for-parallel-multiview-reconstruction)** - automated workflow using the workflow manager **[Snakemake](https://bitbucket.org/johanneskoester/snakemake/wiki/Home.)**
 
 So, if you are new read a bit of the chapter 1 (original pipeline) to get familiar and then skip to chapter 3 (Multiview reconstruction pipeline) which is more up-to-date. To understand how the master file works refer to chapter 2 (NEW PIPELINE).
 
@@ -515,7 +515,7 @@ In multi-view SPIM imaging fusion means combination of registered views into a s
 
 ### Content based multiview fusion
 
-After registration we need to combine the views into a single output image. The content based fusion algorithm in Fiji solves that problem by evaluating local image entropy and weighing differentially the information in areas where several views overlap. For details see [here](/Multi-View_Fusion).
+After registration we need to combine the views into a single output image. The content based fusion algorithm in Fiji solves that problem by evaluating local image entropy and weighing differentially the information in areas where several views overlap. For details see [here](/plugins/multi-view-fusion).
 
 As before we create a directory jobs/fusion and in there bash script **create-fusion-jobs**
 
@@ -607,7 +607,7 @@ Tips and tricks:
 
 ### Multiview deconvolution
 
-Another, more advanced, way to fuse the registered data is multiview deconvolution which is described [here](/Multi-View_Deconvolution).
+Another, more advanced, way to fuse the registered data is multiview deconvolution which is described [here](/plugins/multi-view-deconvolution).
 
 The deconvolution can be executed either on the CPU (Central Processing Unit - i.e. the main processor of the computer) or on GPU (Graphical Processing Unit - i.e. the graphics card). The pre-requisite for the GPU processing is to have one or more graphics cards capable of [CUDA](http://www.nvidia.de/object/cuda_home_new.html) such as NVIDIA Tesla or Quadro or GeForce. Since the GPU accelerated multi-view deconvolution is not yet published and the necessary C code has to be obtained from Stephan Preibisch by request we will focus for now on deconvolution using CPU.
 

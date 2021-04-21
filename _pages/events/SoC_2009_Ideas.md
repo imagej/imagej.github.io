@@ -101,7 +101,7 @@ The idea is to extend the simple Python script in tests/record.py to make it eas
 Add word expansion to the scripting interpreters
 ------------------------------------------------
 
-Fiji offers scripting in 5 different languages, all running on the JVM: [Javascript](Javascript_Scripting), [Jython](/scripting/jython), [JRuby](/scripting/jruby), [Clojure](/scripting/clojure), Beanshell and the ImageJ Macro Language. Through the reflection API and the numerous language hooks that each scripting engine provides, it is possible to complete method names or names of member variables, as well as class names.
+Fiji offers scripting in 5 different languages, all running on the JVM: [Javascript](/scripting/javascript), [Jython](/scripting/jython), [JRuby](/scripting/jruby), [Clojure](/scripting/clojure), Beanshell and the ImageJ Macro Language. Through the reflection API and the numerous language hooks that each scripting engine provides, it is possible to complete method names or names of member variables, as well as class names.
 
 **Goal:** Provide word-expansion capabilities to the scripting interpreters (see [Scripting Help](/scripting)).  
 **Language:** A combination of Java plus the scripting language, in this order of preference: Javascript, Jython, JRuby, Clojure and Beanshell. If you can do them all, we'll erect you a monument.  
@@ -161,9 +161,9 @@ To that end, Fiji already supports "headless" mode, i.e. operation without the n
 Add JMathLib (MATLAB clone) support
 -----------------------------------
 
-Quite a few algorithms are available as proof-of-concept [MATLAB](MATLAB) scripts. While it is [wrong to think of pixels as little squares](Ftp___ftp.alvyray.com_Acrobat_6_Pixel.pdf), and literally all [MATLAB](MATLAB) scripts to perform image processing are suffering from that shortcoming, it would be very nice nevertheless to be able to run the scripts without having to buy [MATLAB](MATLAB) licenses just for that purpose.
+Quite a few algorithms are available as proof-of-concept [MATLAB](/scripting/matlab) scripts. While it is [wrong to think of pixels as little squares](Ftp___ftp.alvyray.com_Acrobat_6_Pixel.pdf), and literally all [MATLAB](/scripting/matlab) scripts to perform image processing are suffering from that shortcoming, it would be very nice nevertheless to be able to run the scripts without having to buy [MATLAB](/scripting/matlab) licenses just for that purpose.
 
-Happily, there is a [MATLAB](MATLAB) clone written in Java: [JMathLib](http://www.jmathlib.de/). While it is apparently not a speed demon, it should be useful to add JMathLib as a new scripting language to ImageJ, and integrate it into Fiji so that [MATLAB](MATLAB) scripts can be executed just like all other ImageJ scripts, too.
+Happily, there is a [MATLAB](/scripting/matlab) clone written in Java: [JMathLib](http://www.jmathlib.de/). While it is apparently not a speed demon, it should be useful to add JMathLib as a new scripting language to ImageJ, and integrate it into Fiji so that [MATLAB](/scripting/matlab) scripts can be executed just like all other ImageJ scripts, too.
 
 The project would consist of
 

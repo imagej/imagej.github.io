@@ -185,7 +185,7 @@ History
 
 The original updater was written in a frantic week in October 2008 in preparation for the first public [Fiji](/fiji) release, to be able to keep Fiji up-to-date.
 
-In the course of one of two successful Google Summer of Code projects, the updater was rewritten from scratch (but in a [backwards-compatible manner](Backwards_Compatibility)) by Yap Chin Kiet under the mentorship of Mark Longair and Johannes Schindelin in 2009.
+In the course of one of two successful Google Summer of Code projects, the updater was rewritten from scratch (but in a [backwards-compatible manner](/libs/imagej-legacy)) by Yap Chin Kiet under the mentorship of Mark Longair and Johannes Schindelin in 2009.
 
 Johannes Schindelin got stuck with the maintainership and introduced third-party update sites (a feature that many claimed to desire, though no pinky was harmed by contributing any code) in the course of a very successful [hackathon](Hackathon#ImageJ_hackathons) at the Lawrence Berkeley National Laboratory in October 2010 and another one in February 2011 hosted by [LOCI](/orgs/loci).
 

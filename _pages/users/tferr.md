@@ -28,4 +28,4 @@ Tiago Ferreira is the author of:
 
 You can reach him [here](mailto:tiago_dot_tferr_at_gmail_dot_com) (obviously, replacing *\_dot\_* with a de facto `.`)
 
-† Legacy website, yet to be migrated to [imagej.net](/Welcome)
+† Legacy website, yet to be migrated to [imagej.net](//)

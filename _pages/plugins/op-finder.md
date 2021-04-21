@@ -138,7 +138,7 @@ All of the parameters with a {% include key content='?' %} are **optional**. For
 
     out = ops.run("filter.convolve", Img, RandomAccessibleInterval)
 
-5\. At this stage, we can not actually run our code yet. The pasted snippet serves as a guideline for what types of parameters are needed and produced. The next step is to ask the framework for instances of these parameters by adding [@Parameters](Script_parameters) to our script:
+5\. At this stage, we can not actually run our code yet. The pasted snippet serves as a guideline for what types of parameters are needed and produced. The next step is to ask the framework for instances of these parameters by adding [@Parameters](/scripting/parameters) to our script:
 
     # @OpService ops
     # @Dataset input
@@ -159,7 +159,7 @@ Running Ops
 
 Although you can run selected Ops through the Op Finder, this method **lacks reproducibility** and should not be used as a substitute for a proper script or plugin when using Ops in a scientific workflow. This functionality *is* intended to allow a rapid preview of what effect an Op will have on a dataset.
 
-The [play button](#Parts_of_the_Op_Finder) essentially automates the process of turning an Op [into a script](#Code_Snippets): optional parameters are discarded and required parameters are [annotated](Script_parameters). Because of this, Ops with arcane or unusual parameters may fail to run because the framework does not know how to provide them.
+The [play button](#Parts_of_the_Op_Finder) essentially automates the process of turning an Op [into a script](#Code_Snippets): optional parameters are discarded and required parameters are [annotated](/scripting/parameters). Because of this, Ops with arcane or unusual parameters may fail to run because the framework does not know how to provide them.
 
 Thus it is recommended to run Ops primarily from the [User view](#For_Users), as these Ops focus on images and numbers, which can automatically be provided by the framework (via open images and input panels, respectively).
 

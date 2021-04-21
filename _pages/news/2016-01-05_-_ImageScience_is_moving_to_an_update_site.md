@@ -5,7 +5,7 @@ categories: News,Fiji,ImageScience
 description: test description
 ---
 
-Resulting from [a discussion](https://github.com/imagescience/ImageScience/pull/1) with {%- include person id='emeijering' -%}, the [ImageScience](/plugins/imagescience) plugins have moved to their own dedicated [update site](Update_site), and will no longer be distributed as part of core [Fiji](/fiji).
+Resulting from [a discussion](https://github.com/imagescience/ImageScience/pull/1) with {%- include person id='emeijering' -%}, the [ImageScience](/plugins/imagescience) plugins have moved to their own dedicated [update site](/update-sites), and will no longer be distributed as part of core [Fiji](/fiji).
 
 What moved?
 -----------
@@ -24,7 +24,7 @@ Why?
 
 The main reasons for the switch are:
 
--   To give Erik more control over the [development lifecycle](Development_lifecycle) ([versioning](/develop/versioning), [releases](/develop/releasing), etc.).
+-   To give Erik more control over the [development lifecycle](/develop/releasing) ([versioning](/develop/versioning), [releases](/develop/releasing), etc.).
 -   To avoid a licensing conflict between Fiji's [GPL](/licensing/gpl) license and [ImageScience's proprietary one](http://www.imagescience.org/meijering/software/imagescience/).
 
 How does this affect users?

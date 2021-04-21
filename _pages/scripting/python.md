@@ -8,7 +8,7 @@ description: test description
 You can use ImageJ from [Python](https://python.org/):
 
 -   If you want to write ImageJ [scripts](/scripting) in the Python language, which run from inside ImageJ similar to other scripts, check out the [Jython Scripting](/scripting/jython) page.
-    -   **Advantage:** Such scripts are able to take advantage of SciJava [script parameters](Script_parameters) and run within several tools that support [SciJava](SciJava).
+    -   **Advantage:** Such scripts are able to take advantage of SciJava [script parameters](/scripting/parameters) and run within several tools that support [SciJava](SciJava).
     -   **Disadvantage:** You will not be able to use many of the Python modules requiring native code such as numpy or scipy.
     -   **Disadvantage:** As of this writing, Jython implements only Python 2, not Python 3.
 

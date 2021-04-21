@@ -13,7 +13,7 @@ Install and configure command line tools
 
 <tabs> <tab name="/platforms/windows"> ![ x32px](/media/Win.png "fig: x32px") **Windows**
 
-Install [Git](Git), [Maven](/develop/maven), and Java SE using [Chocolatey](https://chocolatey.org/):
+Install [Git](/develop/git), [Maven](/develop/maven), and Java SE using [Chocolatey](https://chocolatey.org/):
 
     choco install -y git maven jdk8
 
@@ -23,7 +23,7 @@ We also heartily recommend installing [Cygwin](https://www.cygwin.com/):
 
 </tab> <tab name="OS X"> ![ x32px](/media/Osx.png "fig: x32px") **OS X**
 
-Install [Git](Git) and [Maven](/develop/maven) using [Homebrew](http://brew.sh/):
+Install [Git](/develop/git) and [Maven](/develop/maven) using [Homebrew](http://brew.sh/):
 
     brew install git maven bash-completion
 
@@ -40,7 +40,7 @@ Download the source
 
     git clone git://github.com/imagej/imagej
 
-See the [Source Code](Source_Code) page for further details.
+See the [Source Code](/develop/source) page for further details.
 
 Build the source
 ----------------

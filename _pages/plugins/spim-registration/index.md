@@ -44,7 +44,7 @@ We developed several algorithms for the registration and fusion of multi-angle S
     \* [Multi-view fusion](/plugins/multi-view-fusion): Performs a weighted average fusion of the dataset, which includes blending and/or content-based weightening. The plugin can be found in Plugins-&gt;SPIM Registration-&gt;Multi-view fusion.
     -   [Multi-view deconvolution](/plugins/multi-view-deconvolution): Performs a multi-view deconvolution of the dataset which requires an estimation of the point spread function.
 
-***Please note:*** *the SPIM registration has been rewritten and now replaces the "old" plugin collection (Registration, Advanced Registration, MultiChannel Registration) which has been moved to the deprecated folder. For information regarding these outdated plugins please refer to this [page](SPIM_Bead_Registration_(deprecated)).*
+***Please note:*** *the SPIM registration has been rewritten and now replaces the "old" plugin collection (Registration, Advanced Registration, MultiChannel Registration) which has been moved to the deprecated folder. For information regarding these outdated plugins please refer to this [page](/plugins/spim-bead-registration-deprecated).*
 
 Detailed tutorials
 ------------------
@@ -77,6 +77,6 @@ Multi-view SPIM datasets are typically rather large, therefore it is recommended
 Cluster processing
 ------------------
 
-See the dedicated [page](Automated_workflow_for_parallel_Multiview_Reconstruction) describing an automated workflow for processing SPIM data from Lighsheet.Z1 and OpenSPIM on the MPI-CBG cluster.
+See the dedicated [page](/plugins/automated-workflow-for-parallel-multiview-reconstruction) describing an automated workflow for processing SPIM data from Lighsheet.Z1 and OpenSPIM on the MPI-CBG cluster.
 
  

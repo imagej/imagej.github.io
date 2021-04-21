@@ -47,7 +47,7 @@ We kept chatting about that over a couple of weeks, if not months. At some stage
 
 Eventually, one dark December day in 2007 (and in Scotland, December <u>is</u> as dark as it gets) I gave in.
 
-Out of frustration with my job, I had just started a distribution of [Git](Git) for [Windows](https://git-for-windows.github.io/) which included making an installer, so I thought I could put together an installer pretty quickly.
+Out of frustration with my job, I had just started a distribution of [Git](/develop/git) for [Windows](https://git-for-windows.github.io/) which included making an installer, so I thought I could put together an installer pretty quickly.
 
 The first step was to get a version of ImageJ and TrakEM2 and Java (we were 100% sure that we needed to ship Java with the installer, otherwise users would get into problems with their Java 1.1.8 not being able to run Java 5 classes, let alone run at a decent speed) to run on the main platforms: Windows, MacOSX and Linux. You might not consider Linux a major platform, but it was and still is the platform Albert and me are using.
 
@@ -76,7 +76,7 @@ After some weeks I was reasonably comfortable with Fiji and thought about wrappi
 
 Little did I know just how many people Albert told about this project. I thought it was really focused on TrakEM2, but as Albert's motto is (or at least back then, was) *The sky is the limit*, he had told a few people at the Max-Planck Institute of Molecular Cell Biology and Genetics in Dresden. Sorry for the lengthy title, earlier I always referred to it as "the Max-Planck in Dresden", but there are three. The MPI-CBG just happens to be the biggest one in Dresden. And probably also one of the most important Max-Planck Institutes on this planet. But sorry, I digress.
 
-At one point Albert told me. Apparently the good people in Dresden were not only interested in our little software project, but were actually enthusiastic. Enthusiastic enough that they provided us with a nice, beefy [server](/Fiji.sc), and offered to organize a [hackathon](/events/Hackathon) to kick-start Fiji as a much bigger project!
+At one point Albert told me. Apparently the good people in Dresden were not only interested in our little software project, but were actually enthusiastic. Enthusiastic enough that they provided us with a nice, beefy [server](/about/funding), and offered to organize a [hackathon](/events/Hackathon) to kick-start Fiji as a much bigger project!
 
 Fiji won't quit
 ---------------

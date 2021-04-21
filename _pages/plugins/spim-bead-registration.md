@@ -25,7 +25,7 @@ The developed bead-based registration framework is able to reconstruct long-term
 Overview of the SPIM bead-based registration plugin
 ---------------------------------------------------
 
-***Please note:*** *the bead-based registration has been rewritten and now replaces the "old" plugin collection (Registration, Advanced Registration, MultiChannel Registration) which has been moved to the deprecated folder. For information regarding these outdated plugins please refer to this [page](SPIM_Bead_Registration_(deprecated)).*
+***Please note:*** *the bead-based registration has been rewritten and now replaces the "old" plugin collection (Registration, Advanced Registration, MultiChannel Registration) which has been moved to the deprecated folder. For information regarding these outdated plugins please refer to this [page](/plugins/spim-bead-registration-deprecated).*
 
 The bead-registration plugins offers two registration options:
 

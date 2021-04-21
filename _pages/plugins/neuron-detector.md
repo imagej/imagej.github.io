@@ -26,7 +26,7 @@ Please cite:
 Example
 -------
 
-Example video obtained with GCampf6 marker \| Processed video \| Object map obtained with [3D Objects Counter](/3D_Objects_Counter)
+Example video obtained with GCampf6 marker \| Processed video \| Object map obtained with [3D Objects Counter](/plugins/3d-objects-counter)
 
 ![](/media/Example neuron activation 300.gif "fig:Example_neuron_activation_300.gif") ![](/media/Example neurons activation postprocessed 300.gif "fig:example_neurons_activation_postprocessed_300.gif") ![](/media/Example neurons activation objects map 300.gif "fig:example_neurons_activation_objects_map_300.gif")
 

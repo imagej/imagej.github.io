@@ -64,7 +64,7 @@ Version 2.2.0 focuses mainly on extendability, tracking performance and detectio
 
 <!-- -->
 
--   Ship a [MATLAB](MATLAB) function to import in [MATLAB](MATLAB) the tracks exported by TrackMate. Check [this](/plugins/trackmate/analyzing-results-with-matlab).
+-   Ship a [MATLAB](/scripting/matlab) function to import in [MATLAB](/scripting/matlab) the tracks exported by TrackMate. Check [this](/plugins/trackmate/analyzing-results-with-matlab).
 
 <!-- -->
 

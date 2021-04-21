@@ -10,7 +10,7 @@ Introduction
 
 Subversion is a decent version control program that does not require much thought to operate. Unfortunately, if you want to avoid clunky, unreviewable monster commits ([a known worst practice](http://www.crealytics.de/blog/2010/07/09/5-reasons-keeping-git-commits-small-mluedtke/)), you will need third-party programs to prepare any non-trivial set of patches.
 
-One such third-party program is called [Git](Git)... While Git is usually meant to be used as a standalone version control system (and we have hints [here](/develop/git/notes) and links [here](Git) how to use it), its [`git rebase -i`](/develop/git/topic-branches) functionality lends itself to a patch series based workflow.
+One such third-party program is called [Git](/develop/git)... While Git is usually meant to be used as a standalone version control system (and we have hints [here](/develop/git/notes) and links [here](/develop/git) how to use it), its [`git rebase -i`](/develop/git/topic-branches) functionality lends itself to a patch series based workflow.
 
 The `git svn` workflow
 ----------------------

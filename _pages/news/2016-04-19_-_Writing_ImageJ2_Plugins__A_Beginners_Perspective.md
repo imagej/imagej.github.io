@@ -27,7 +27,7 @@ Also you may want to have a look at [Introduction\_into\_Macro\_Programming](/sc
 Finding information
 -------------------
 
--   The top-level source of information is [the ImageJ wiki](Welcome).
+-   The top-level source of information is [the ImageJ wiki](//).
 -   The [Development](/develop) page is the best portal for aspiring ImageJ developers.
 -   [ImageJ2](/software/imagej2) is available at: {% include github org='imagej' repo='imagej' label='imagej/imagej' %}
 -   [Fiji](/fiji) is available at: {% include github org='fiji' repo='fiji' label='fiji/fiji' %}
@@ -42,7 +42,7 @@ You will need:
 
 -   Java
 -   [IDE](/develop/ides) (for example: [Eclipse](/develop/eclipse), [NetBeans](/develop/netbeans) or [IntelliJ\_IDEA](/develop/intellij)) is highly recommended
--   [Git](Git)
+-   [Git](/develop/git)
 -   [Apache Maven](/develop/maven)
 -   [ImageJ2 source code](/develop/source) is an optional help
 
@@ -54,7 +54,7 @@ Environments used for testing this guide:
 -   Git 2.x
 -   Apache Maven 3.x
 
-[Git](Git) is a source-code-management system with revision control.
+[Git](/develop/git) is a source-code-management system with revision control.
 
 [Maven](/develop/maven) is a build automation tool used primarily for Java projects.
 

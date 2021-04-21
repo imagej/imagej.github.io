@@ -26,7 +26,7 @@ $$ RE = 1 - RI$$
 Implementation in Fiji
 ----------------------
 
-The [Rand error](/plugins/tws/rand-error) metric is implemented in the [Trainable Weka Segmentation](/plugins/tws) library. Here is an example of how to use it in a [Beanshell script](Beanshell_Scripting):
+The [Rand error](/plugins/tws/rand-error) metric is implemented in the [Trainable Weka Segmentation](/plugins/tws) library. Here is an example of how to use it in a [Beanshell script](/scripting/beanshell):
 
     import trainableSegmentation.metrics.RandError;
     import ij.IJ;

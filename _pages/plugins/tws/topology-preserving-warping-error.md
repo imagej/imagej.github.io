@@ -100,7 +100,7 @@ The **warping error** can be distinguished from the [Rand error](/plugins/tws/ra
 2D implementation in Fiji
 -------------------------
 
-The warping error metric is implemented for 2D images in the [Trainable Weka Segmentation](/plugins/tws) library. Here is an example of how to use it in a [Beanshell script](Beanshell_Scripting):
+The warping error metric is implemented for 2D images in the [Trainable Weka Segmentation](/plugins/tws) library. Here is an example of how to use it in a [Beanshell script](/scripting/beanshell):
 
     import trainableSegmentation.metrics.WarpingError;
     import ij.IJ;

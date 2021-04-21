@@ -1676,7 +1676,7 @@ Here is a small example, using <i>Weaver.method</i>, that uses imports. The scri
 
     imp.updateAndDraw()
 
-Of course the Weaver is a java library, and may be used from any scripting language such as [Javascript](Javascript_Scripting), [JRuby](/scripting/jruby), and [others](Category_Scripting).
+Of course the Weaver is a java library, and may be used from any scripting language such as [Javascript](/scripting/javascript), [JRuby](/scripting/jruby), and [others](Category_Scripting).
 
 All the above is inspired by the [Scientific Python Weaver, or scipy Weaver](http://www.scipy.org/Cookbook/Weave), which inlines C code inside a python file.
 
@@ -1840,7 +1840,7 @@ First make sure that you have installed Maven and a java jdk and add the path to
 Then download a zip of this [Github repository](https://github.com/m-entrup/imagej-jython-package). And follow the guidelines :
 
 -   place your script in a subfolder of `Ressources`
--   eventually modify the pom file according to your dependencies (see [Building a POM](/Building_a_POM)
+-   eventually modify the pom file according to your dependencies (see [Building a POM](/develop/building-a-pom)
 -   then open a command line in the folder and type `mvn package`.
 
 Eventually you can also type `mvn -Dimagej.app.directory=/path/to/your/Fiji.app -Dimagej.deleteOtherVersions=older` to have the dependencies automatically coped to an ImageJ installation : handy to test your package on a fresh installation.

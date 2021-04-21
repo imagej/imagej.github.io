@@ -35,7 +35,7 @@ Why?
 
 8% of the male population is red-green blind. If given the task to find two colors maximizing the number of people who cannot see the difference, red and green are a wise choice. Yet, still way too many figures in scientific publications show red/green merges.
 
-At least magenta/green images help this situation. However, [the only thing human eyes can quantify are numbers](Spirals_(Macro)).
+At least magenta/green images help this situation. However, [the only thing human eyes can quantify are numbers](/plugins/spirals).
 
 As a demonstration, call Fiji's {% include bc path='File | Open Samples | Spirals'%} and if you see a bright green and a bright yellow in the dominant spirals, you should look closer.
 

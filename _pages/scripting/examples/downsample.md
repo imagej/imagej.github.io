@@ -150,7 +150,7 @@ Code
 See also
 --------
 
--   [Javascript Scripting](Javascript_Scripting)
+-   [Javascript Scripting](/scripting/javascript)
 -   [Scripting Help](/scripting)
 -   [Scripting\_comparisons](/scripting/comparisons)
 

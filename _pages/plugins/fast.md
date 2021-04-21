@@ -20,7 +20,7 @@ Requirements:
 -   [ImageJ](/downloads) v1.49o or newer.
 -   [Bio-Formats 5.x](https://www.openmicroscopy.org/bio-formats/downloads/) or newer.
 
-{% include tip id='bioformat' tip='Saving `bioformats\_package.jar` in .\\ImageJ.app\\plugins\\ seems to be the best way to use the macro in stable conditions.' %} Use the ImageJ Updater and see the instructions [How to follow a 3rd party update site](/How_to_follow_a_3rd_party_update_site) select FAST (http://sites.imagej.net/FAST) from the available site list.
+{% include tip id='bioformat' tip='Saving `bioformats\_package.jar` in .\\ImageJ.app\\plugins\\ seems to be the best way to use the macro in stable conditions.' %} Use the ImageJ Updater and see the instructions [How to follow a 3rd party update site](/update-sites/following) select FAST (http://sites.imagej.net/FAST) from the available site list.
 
 New commands should then appear in ImageJ '{% include bc path='Plugins | FAST'%}' menu.
 

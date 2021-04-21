@@ -164,7 +164,7 @@ The problem with "saturated pixels" occurs mainly when we use pixel-based coloca
 
 If the microscope has poor quality or non chromatically corrected objective lenses and / or has other alignment problems, then images of the same object in different colour channels will appear in different places. Even expensive lenses have a little residual chromatic shift. This is very bad, as it means that, especially for smaller objects, you miss some of the real colocalisation. The microscope should be checked with multi colour 1 or 0.5 micron bead samples before imaging to see if there is a significant problem. Images can be corrected for x y and z chromatic shift if a bead image has been taken under identical conditions.
 
-For more details and possible chromatic shift measurement and correction strategies see [Chromatic\_shift\_origins\_measurement\_and\_correction](Chromatic_shift_origins_measurement_and_correction)
+For more details and possible chromatic shift measurement and correction strategies see [Chromatic\_shift\_origins\_measurement\_and\_correction](/techniques/chromatic-shift)
 
 ### Conclusion
 

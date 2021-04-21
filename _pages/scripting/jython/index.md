@@ -84,7 +84,7 @@ The following list links to documentation of the used Python features:
 
 The second example is inspired by atomic resolution images recorded with an Transmission Electron Microscope (TEM). Such images show a regular structure (a crystal), but the images are noisy because of the low signal. By using a Fourier filter the contrast can be enhanced.
 
-The script will create a periodic structure and add some random noise. The user can control the parameters of the created image. This is realized using [Script parameters](Script_parameters). The Fourier filtering has been created by using the [Recorder](Introduction_into_Macro_Programming#The_recorder). Finally a simple image calculator is used to show that functions can be passed as parameters.
+The script will create a periodic structure and add some random noise. The user can control the parameters of the created image. This is realized using [Script parameters](/scripting/parameters). The Fourier filtering has been created by using the [Recorder](Introduction_into_Macro_Programming#The_recorder). Finally a simple image calculator is used to show that functions can be passed as parameters.
 
 This list links to the documentation of Python features that are introduced with this example:
 
@@ -169,7 +169,7 @@ Here is another example where we use the ImageJ package and the [RoiManager](htt
 
 ### Using openCV in Jython
 
-It is even possible to use most of opencv functionalities within Jython/Fiji. There are several options (see the [wiki page about opencv](/OpenCV)), yet the most straight forward is probably IJ-OpenCV which is available via the update sites. It will automatically download the necessary packages and dependencies in your Fiji installation.
+It is even possible to use most of opencv functionalities within Jython/Fiji. There are several options (see the [wiki page about opencv](/software/opencv)), yet the most straight forward is probably IJ-OpenCV which is available via the update sites. It will automatically download the necessary packages and dependencies in your Fiji installation.
 
 A manual installation is also possible by putting the jar packages in the jar folder of imageJ. They are avalaible on the [IJopenCV github](https://github.com/joheras/IJ-OpenCV), which even provides a maven option.
 

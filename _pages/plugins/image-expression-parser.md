@@ -452,7 +452,7 @@ It is possible to call the plugin from another class or in a scripting language.
     result_imp.resetDisplayRange()
     result_imp.updateAndDraw()
 
-Here is another example in [Javascript](Javascript) contributed by Jeff Hanson:
+Here is another example in [Javascript](/scripting/javascript) contributed by Jeff Hanson:
 
     // This script was created as an javascript equivalent of the Python example here:
     //   https://fiji.sc/Image_Expression_Parser#Calling_the_plugin_from_elsewhere

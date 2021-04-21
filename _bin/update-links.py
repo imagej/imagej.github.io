@@ -7,6 +7,7 @@ def processfile(path):
     while True:
         line_changed = False
         for old, new in redirects.items():
+            if new.startswith('TODO') or new == '<UNCHANGED>' or new == '???': continue
             for i in range(len(lines)):
                 l = lines[i].replace(f'="{old}"', f'="/{new}"') # HTML, no slash
                 l = l.replace(f']({old})', f'](/{new})') # Markdown, no slash

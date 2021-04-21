@@ -324,7 +324,7 @@ Example macros
 
 This section contains a number of macros which you can use as starting points to write your own macros.
 
-If you're interested in performing a certain procedure for all files in a given folder, you might want to have a look a the tutorial *[How to apply a common operation to a complete directory](How_to_apply_a_common_operation_to_a_complete_directory)* or at the macro template that you can open in the [Script Editor](/scripting/script-editor) via {% include bc path='Templates | Macros | Process Folder'%}.
+If you're interested in performing a certain procedure for all files in a given folder, you might want to have a look a the tutorial *[How to apply a common operation to a complete directory](/tutorials/apply-operation-to-a-complete-directory)* or at the macro template that you can open in the [Script Editor](/scripting/script-editor) via {% include bc path='Templates | Macros | Process Folder'%}.
 
 Resizing to a given width of the selection bounds
 -------------------------------------------------
@@ -640,7 +640,7 @@ The [`call` function](/ij/developer/macro/functions.html#call) can invoke Java m
 The eval function
 -----------------
 
-The [`eval` function](/ij/developer/macro/functions.html#eval) can execute [JavaScript](JavaScript) (or [BeanShell](BeanShell) or [Python](Python)) code directly. This is a powerful and flexible approach which can invoke nearly any Java API without needing to write external Java code.
+The [`eval` function](/ij/developer/macro/functions.html#eval) can execute [JavaScript](/scripting/javascript) (or [BeanShell](/scripting/beanshell) or [Python](/scripting/python)) code directly. This is a powerful and flexible approach which can invoke nearly any Java API without needing to write external Java code.
 
 Here is an example which sets the position of a [3D Viewer](/plugins/3d-viewer) window:
 

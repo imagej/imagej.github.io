@@ -769,7 +769,7 @@ Open the plugins/Examples/ folder in Fiji installation directory. You'll find th
 -   {% include github repo='fiji' path='plugins/Examples/blend\_two\_images.clj' label='blend\_two\_images.clj' %}: illustrates how to open two images from an URL, and blend the gray image into each channel of the color image.
 -   {% include github repo='fiji' path='plugins/Examples/celsius\_to\_fahrenheit.clj' label='celsius\_to\_fahrenheit.clj' %}: illustrates the usage of a Swing GUI, and how to instantiate anonymous classes from an interface (via [proxy](http://clojure.org/java_interop#toc20) Clojure function). This example is taken from the [Clojure website](http://clojure.org/jvm_hosted).
 -   {% include github repo='fiji' path='plugins/Examples/random\_noise\_example.clj' label='random\_noise\_example.clj' %}: illustrates how to declare a function inside a closure (for private access to, in this case, a unique instance of a random number generator), and then fill all pixels of a ByteProcessor image with a random byte value.
--   {% include github repo='fiji' path='plugins/Examples/Command\_Launchers/Command\_Launcher\_Clojure.clj' label='Command\_Launcher\_Clojure.clj' %}: illustrates how to create a GUI with a KeyListener, so that the typed text changes color from red to black when it matches the name of an ImageJ command. This example is also under the [Scripting comparisons](/scripting/comparisons), along equivalent versions written in Java, [Jython](/scripting/jython), [Javascript](Javascript_Scripting) and [JRuby](/scripting/jruby).
+-   {% include github repo='fiji' path='plugins/Examples/Command\_Launchers/Command\_Launcher\_Clojure.clj' label='Command\_Launcher\_Clojure.clj' %}: illustrates how to create a GUI with a KeyListener, so that the typed text changes color from red to black when it matches the name of an ImageJ command. This example is also under the [Scripting comparisons](/scripting/comparisons), along equivalent versions written in Java, [Jython](/scripting/jython), [Javascript](/scripting/javascript) and [JRuby](/scripting/jruby).
 -   {% include github repo='fiji' path='plugins/Analyze/Dynamic\_ROI\_Profiler.clj' label='Dynamic ROI Profiler' %}: illustrates how to add a MouseMotionListener and a WindowListener to an ImageWindow of an open image. Reads out the ROI (Region Of Interest), and if it's a line, polyline or rectangle, plots the profile of pixel intensity along the line. As the mouse moves or edits the ROI on the image, the profile is updated.
 
 <h1>
@@ -1139,7 +1139,7 @@ So now any changes to the original <i>pixels</i> array will not affect the new s
 Generating java classes in .class files from clojure code
 ---------------------------------------------------------
 
-Using ahead of time (AOT) compilation with [gen-class](http://clojure.org/compilation), any clojure code can be compiled to a java class. Such class can then be used from java code, or from any scripting language like [jython](/scripting/jython), [jruby](/scripting/jruby), [javascript](Javascript_Scripting), and [any other](Category_Scripting).
+Using ahead of time (AOT) compilation with [gen-class](http://clojure.org/compilation), any clojure code can be compiled to a java class. Such class can then be used from java code, or from any scripting language like [jython](/scripting/jython), [jruby](/scripting/jruby), [javascript](/scripting/javascript), and [any other](Category_Scripting).
 
 One way to do so is to place a [gen-class](http://clojure.org/compilation) declaration in a namespace block.
 

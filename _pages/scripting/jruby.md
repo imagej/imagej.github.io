@@ -14,7 +14,7 @@ JRuby scripting in ImageJ is a nice alternative to scripting using ImageJ's macr
 -   You're not limited to using the functionality exposed by the macro language: you can use any class in ImageJ, one of its plugins or standard Java classes
 -   Developing JRuby scripts is very fast compared to developing plugins in Java
 
-*(These advantages, of course, are shared by the [Jython Scripting](/scripting/jython), [Clojure Scripting](/scripting/clojure), Beanscript and [Javascript Scripting](Javascript_Scripting) bundled in Fiji.)*
+*(These advantages, of course, are shared by the [Jython Scripting](/scripting/jython), [Clojure Scripting](/scripting/clojure), Beanscript and [Javascript Scripting](/scripting/javascript) bundled in Fiji.)*
 
 If you have any questions or suggestions about JRuby scripting in ImageJ, please contact the [ImageJ forum](https://forum.imagej.net). Have fun!
 

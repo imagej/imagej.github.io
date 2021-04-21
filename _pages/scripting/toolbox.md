@@ -149,7 +149,7 @@ Opening, processing, and saving a sequence of files in a folder
         close();
     }
 
-See also the tutorial *[How to apply a common operation to a complete directory](How_to_apply_a_common_operation_to_a_complete_directory)*.
+See also the tutorial *[How to apply a common operation to a complete directory](/tutorials/apply-operation-to-a-complete-directory)*.
 
 #### Python
 

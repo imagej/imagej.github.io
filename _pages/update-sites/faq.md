@@ -55,7 +55,7 @@ If the file is not hosted by any other active update site you need to tell the u
 
 Deleting a file from the history is strongly not recommended, but if you *must* do so (e.g., for legal or privacy reasons):
 
--   If you using a [personal update site](Personal_Update_Sites), then [contact an ImageJ administrator](/help) to have the offending file(s) removed.
+-   If you using a [personal update site](/update-sites/setup#add-your-personal-update-site), then [contact an ImageJ administrator](/help) to have the offending file(s) removed.
 -   If you are hosting your own update site, then you must delete all versions of the file from the file system, *and* edit the *db.xml.gz* file to remove the *<plugin>* entry as well as any *<dependency>* elements in other entries which reference it.
 
 What are the Terms of Service for personal update sites?
@@ -68,7 +68,7 @@ How do I set a password for my personal update site?
 
 Use [this page](Special_ChangeUploadPassword) to set a password for *uploading* content.
 
-If you want to restrict which users can *access* your update site, please note that the [Personal Update Sites](Personal_Update_Sites) service is only intended for freely available plugins. To restrict user access, you will need to host the update site yourself, sharing the URL only with your customers. Implementing an authentication scheme on top of an ImageJ update site is outside the scope of ImageJ—consider using something like [OAuth](http://oauth.net/).
+If you want to restrict which users can *access* your update site, please note that the [Personal Update Sites](/update-sites/setup#add-your-personal-update-site) service is only intended for freely available plugins. To restrict user access, you will need to host the update site yourself, sharing the URL only with your customers. Implementing an authentication scheme on top of an ImageJ update site is outside the scope of ImageJ—consider using something like [OAuth](http://oauth.net/).
 
 How do I delete my personal update site?
 ----------------------------------------

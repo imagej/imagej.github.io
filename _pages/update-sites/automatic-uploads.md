@@ -62,7 +62,7 @@ and this script `.travis-deploy.sh` :
 
     # Define some variables
     export USER="Username"
-    export UPDATE_SITE="Update_Site"
+    export UPDATE_SITE="/update-sites"
 
     export IJ_PATH="$HOME/Fiji.app"
     export URL="http://sites.imagej.net/$UPDATE_SITE/"
@@ -88,7 +88,7 @@ and this script `.travis-deploy.sh` :
 Don't forget to replace
 
     export USER="Username"
-    export UPDATE_SITE="Update_Site"
+    export UPDATE_SITE="/update-sites"
 
 by your informations.
 

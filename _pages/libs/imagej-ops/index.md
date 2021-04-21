@@ -28,7 +28,7 @@ Start by reading these Jupyter notebooks:
 -   [Using ImageJ Ops](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/1-Using-ImageJ/2-ImageJ-Ops.ipynb) - to call ops from your scripts.
 -   [Writing Op plugins](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/2-Extending-ImageJ/4-Ops.ipynb) - to write your own ops.
 
-Ops are a special type of ImageJ plugin, so a basic understanding of the [SciJava plugin framework](Writing_Plugins) is strongly recommended.
+Ops are a special type of ImageJ plugin, so a basic understanding of the [SciJava plugin framework](/develop/plugins) is strongly recommended.
 
 In addition to cloning the [imagej-ops](https://github.com/imagej/imagej-ops) itself, the following components have useful Ops examples:
 

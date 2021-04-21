@@ -26,7 +26,7 @@ For detailed information please see:
 Installation
 ------------
 
-Simply turn on the [TraJClassifier update site](/How_to_follow_a_3rd_party_update_site).
+Simply turn on the [TraJClassifier update site](/update-sites/following).
 
 Introduction
 ------------

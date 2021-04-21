@@ -49,7 +49,7 @@ See the [CSBDeep Wiki Page](https://github.com/CSBDeep/CSBDeep_website/wiki/Your
 GPU support
 -----------
 
-Please read [this page](/TensorFlow-GPU) for GPU support.
+Please read [this page](/develop/tensorflow) for GPU support.
 
 License
 -------

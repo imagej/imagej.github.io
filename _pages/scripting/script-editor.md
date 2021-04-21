@@ -29,7 +29,7 @@ Programming
 
 -   Syntax highlighting
 -   Output console
--   Git integration (file being edited must be part of a [Git](Git) repository)
+-   Git integration (file being edited must be part of a [Git](/develop/git) repository)
 -   Language specific [templates](/scripting/templates)
 -   Find and replace using regex patterns
 -   Automatic brace highlighting

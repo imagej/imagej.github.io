@@ -166,7 +166,7 @@ When using grayscale images, the input image will be also included as a feature.
 
 The detailed implementation of these 2D filters can be found in the [source code](https://github.com/fiji/Trainable_Segmentation/blob/master/src/main/java/trainableSegmentation/FeatureStack.java).
 
-**<span style="color:#f80000">NOTE**: The features named *Derivatives*, *Laplacian* and *Structure* belong to the [ImageScience](/plugins/imagescience) suite and need to be activated [by enabling the ImageScience update site in the updater](/How_to_follow_a_3rd_party_update_site).
+**<span style="color:#f80000">NOTE**: The features named *Derivatives*, *Laplacian* and *Structure* belong to the [ImageScience](/plugins/imagescience) suite and need to be activated [by enabling the ImageScience update site in the updater](/update-sites/following).
 
 ##### Training features (3D)
 

@@ -67,9 +67,9 @@ Lists commands for I/O operations. Most are self-explanatory. Noteworthy: <img s
 ### Analysis
 
 -   {% include bc path='Path Order Analysis'%} Produces a table and plot from morphometric statistics on the group of paths associated with each Branch Order. See [1](/SNT:_Analysis#Path_Order_Analysis) for details.
--   {% include bc path='Sholl Analysis...'%} Brings up the [Sholl Analysis](/Sholl_Analysis) dialog with a pre-defined set of focal points the user can choose from. See [2](/SNT:_Analysis#Sholl_Analysis) for details.
+-   {% include bc path='Sholl Analysis...'%} Brings up the [Sholl Analysis](/plugins/sholl-analysis) dialog with a pre-defined set of focal points the user can choose from. See [2](/SNT:_Analysis#Sholl_Analysis) for details.
 -   {% include bc path='Sholl Analysis (by Focal Point)...'%} Allows precise positioning of the focal point used by Sholl Analysis. See [3](/SNT:_Analysis#Sholl_Analysis_.28by_Focal_Point.29) for details.
--   {% include bc path='Strahler Analysis'%} Conducts [Strahler Analysis](/Strahler_Analysis) on existing paths, producing a table of analysis results and a Strahler plot. See [4](/SNT:_Analysis#Strahler_Analysis) for details.
+-   {% include bc path='Strahler Analysis'%} Conducts [Strahler Analysis](/plugins/strahler-analysis) on existing paths, producing a table of analysis results and a Strahler plot. See [4](/SNT:_Analysis#Strahler_Analysis) for details.
 -   {% include bc path='Export CSV Properties...'%} Allows export of information regarding individual Paths, including (but not limited to) morphometrics, neurite compartments, linkage relationships to other Paths and start and end coordinates.
 -   {% include bc path='Measure...'%} Provides a comprehensive selection of measurements to apply to one connected component (i.e., rooted tree structure) from the Path Manager. See [5](/SNT:_Analysis#Measurements) for details.
 -   {% include bc path='Quick Measurements|'%} Shows a table with summary statistics for all existing paths. To measure only selected paths, use {% include bc path='Analyze|Measure'%} in the Path Manager. See [6](/SNT:_Analysis#Measurements) for details.
@@ -95,7 +95,7 @@ Lists commands for I/O operations. Most are self-explanatory. Noteworthy: <img s
 
 ### Scripts
 
-See [SNT: Scripting](/SNT:_Scripting).
+See [SNT: Scripting](/plugins/snt/scripting).
 
 ### View
 
@@ -294,11 +294,11 @@ This tab aggregated widgets for advanced settings.
 
 ### Reconstruction Viewer
 
-The [Reconstruction Viewer](/SNT:_Reconstruction_Viewer) is an advanced, fully scriptable OpenGL viewer enabling 3D visualization and interaction with reconstructions, OBJ meshes (including multiple model organism neuropil annotations and reference brains), computed surfaces (convex hulls) and other shape annotations. For performance reasons, some Path Manager changes may need to be synchronized manually from the RV controls. To open Reconstruction Viewer with the current contents of the Path Manager, press *Open Reconstruction Viewer*. To instead open the viewer as a standalone application, go to {% include bc path='Plugins|NeuroAnatomy|Reconstruction Viewer...'%} in the main Fiji dialog.
+The [Reconstruction Viewer](/plugins/snt/reconstruction-viewer) is an advanced, fully scriptable OpenGL viewer enabling 3D visualization and interaction with reconstructions, OBJ meshes (including multiple model organism neuropil annotations and reference brains), computed surfaces (convex hulls) and other shape annotations. For performance reasons, some Path Manager changes may need to be synchronized manually from the RV controls. To open Reconstruction Viewer with the current contents of the Path Manager, press *Open Reconstruction Viewer*. To instead open the viewer as a standalone application, go to {% include bc path='Plugins|NeuroAnatomy|Reconstruction Viewer...'%} in the main Fiji dialog.
 
 ### SciView
 
-[SciView](/plugins/sciview) is IJ2's modern replacement for the Legacy 3D Viewer, providing sophisticated 3D visualization and virtual reality capabilities for arbitrarily large image volumes and meshes. Since it is fully integrated with SNT, SciView can enhance tracing, analysis and visualization routines by providing a deeper, more contextualized view of the imagery at hand. Additionally, native integration with [Cx3D](https://github.com/morphonets/cx3d) enables simulation of neurodevelopmental processes, including neuronal growth and formation of cortical circuits. See [SNT: Modeling](/SNT:_Modeling) for details.
+[SciView](/plugins/sciview) is IJ2's modern replacement for the Legacy 3D Viewer, providing sophisticated 3D visualization and virtual reality capabilities for arbitrarily large image volumes and meshes. Since it is fully integrated with SNT, SciView can enhance tracing, analysis and visualization routines by providing a deeper, more contextualized view of the imagery at hand. Additionally, native integration with [Cx3D](https://github.com/morphonets/cx3d) enables simulation of neurodevelopmental processes, including neuronal growth and formation of cortical circuits. See [SNT: Modeling](/plugins/snt/modeling) for details.
 
 ### Legacy 3D Viewer
 

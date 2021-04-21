@@ -23,7 +23,7 @@ What's on the update site?
 
 SimpleITK 0.90 is distributed with this update. After update all SimpleITK classes can be called from the script editor.
 
-When using `@itkImage` [parameters](Script_parameters) in scripts, ImageJ `Dataset` objects will be automatically converted to SimpleITK `Image` objects.
+When using `@itkImage` [parameters](/scripting/parameters) in scripts, ImageJ `Dataset` objects will be automatically converted to SimpleITK `Image` objects.
 
 There are several templates in the [Script Editor](/scripting/script-editor) demonstrating ITK use. The following example shows how to perform Otsu multilevel threshold using SimpleITK.
 

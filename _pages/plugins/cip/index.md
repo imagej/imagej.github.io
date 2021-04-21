@@ -39,7 +39,7 @@ Getting started
 Installation
 ------------
 
-If you want to use CIP in ImageJ script editor, simply add the CIP update site to your imageJ installation ([instruction to follow an update site](/Following_an_update_site)) restart imagej, open the script editor and you are good to go. For inspiration, one can look at one of the [example scripts](CIP#Script_example).
+If you want to use CIP in ImageJ script editor, simply add the CIP update site to your imageJ installation ([instruction to follow an update site](/update-sites/following)) restart imagej, open the script editor and you are good to go. For inspiration, one can look at one of the [example scripts](CIP#Script_example).
 
 If one would like to contribute or simply toy with the source code of the library, its source code and the instruction for the project set up in an IDE can be found on the [project repository](https://github.com/benoalo/CIP).
 

@@ -21,8 +21,8 @@ As ImageJ is built using the [SciJava principles of project management](/develop
 
 |                                                                                                              |                                                                                                                  |
 |--------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| <a href="Git"><img src="/media/Git-icon.png" width="64px"/></a> | <a href="/develop/maven"><img src="/media/Maven-icon.png" width="64px"/></a> |
-| [Git](Git)                                    | [Maven](/develop/maven)                                    |
+| <a href="/develop/git"><img src="/media/Git-icon.png" width="64px"/></a> | <a href="/develop/maven"><img src="/media/Maven-icon.png" width="64px"/></a> |
+| [Git](/develop/git)                                    | [Maven](/develop/maven)                                    |
 
 Additionally, at a minimum, you should clone the {% include github org='imagej' repo='tutorials' label='imagej/tutorials repository' %}. This will give you a local copy of the tutorials discussed in this guide, as well as templates for use in your own development.
 
@@ -146,11 +146,11 @@ A common pattern in `Command` development is to wrap `Service` functionality. Fo
 
 ### Other plugins
 
-Because virtually everything is a plugin in ImageJ, there are too many to explicitly enumerate, let alone cover in a tutorial. To get ideas for functionality that can be added, a good starting point is to look for services in the [javadoc](Javadoc), or the [ImageJ search portal](http://search.imagej.net/). Many service types have supplemental plugins for easy functional extension. In particular, the {% include github org='imagej' repo='imagej-common' label='imagej-common' %} and {% include github org='scijava' repo='scijava-common' label='scijava-common' %} repositories will contain plugin definitions for many essential operations.
+Because virtually everything is a plugin in ImageJ, there are too many to explicitly enumerate, let alone cover in a tutorial. To get ideas for functionality that can be added, a good starting point is to look for services in the [javadoc](/develop/source#javadocs), or the [ImageJ search portal](http://search.imagej.net/). Many service types have supplemental plugins for easy functional extension. In particular, the {% include github org='imagej' repo='imagej-common' label='imagej-common' %} and {% include github org='scijava' repo='scijava-common' label='scijava-common' %} repositories will contain plugin definitions for many essential operations.
 
 A brief list of some of the more useful plugin types to extend:
 
--   [Ops](Ops) provide a reusable set of image processing algorithms.
+-   [Ops](/libs/imagej-ops) provide a reusable set of image processing algorithms.
 -   [Image formats](/develop/formats) allow new types of images to be opened in ImageJ.
 -   {% include github org='scijava' repo='scijava-common' tag='scijava-common-2.47.0' source='org/scijava/convert/Converter.java' label='Converters' %} allow the framework to interchange types, outside of normal Java class hierarchy restrictions.
 -   {% include github org='scijava' repo='scijava-common' tag='scijava-common-2.47.0' source='org/scijava/module/process/PreprocessorPlugin.java' label='Input Preprocessors' %} give you control over the population of `@Parameters`.
@@ -167,7 +167,7 @@ Because the ImageJ API is designed to be maximally flexible and extensible, if y
 
 You do not need to understand every project in this repository, nor must you go through them in a particular order! Instead, you should read through the following topics and focus on the projects that look particularly interesting and relevant to your goals. Your target for learning should be to understand the code in these selected projects, and how changes to that code will be reflected in the experiences of users and other developers.
 
-Because these tutorials use [Git](Git) for source control, you have complete freedom to modify and play with the code. Worst-case scenario, you always have a big reset button via the command:
+Because these tutorials use [Git](/develop/git) for source control, you have complete freedom to modify and play with the code. Worst-case scenario, you always have a big reset button via the command:
 
     git reset --hard origin/master
 
@@ -242,11 +242,11 @@ If you are **implementing** an existing plugin type...
 
 You already [created your own GitHub repository](#Requirements), right??
 
-When you're just getting started with tools like [Git](Git) and [Maven](/develop/maven), it's not easy to comprehend the nuances of how new projects should be set up and configured. It's much easier to copy a working project to use as a starting point and go from there.
+When you're just getting started with tools like [Git](/develop/git) and [Maven](/develop/maven), it's not easy to comprehend the nuances of how new projects should be set up and configured. It's much easier to copy a working project to use as a starting point and go from there.
 
 The [example projects](#Example_projects) are designed precisely to serve as such starting points for new projects. Once you have a solid idea of what kind of plugin you want to write, pick the project that discusses your area of choice and simply copy it to your own GitHub repo. From there, you can make changes as needed.
 
-At this point, if you haven't already, we **STRONGLY RECOMMEND** importing your project into an [IDE](/develop/ides) like [Eclipse](/develop/eclipse). This will make [development](/develop/eclipse) and [refactoring](http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fref-menu-refactor.htm) much easier. Modern IDEs also have excellent [Git](Git) and [Maven](/develop/maven) integration, which will allow you to take advantage of the fact that the example projects are already set up as Mavenized Git repositories.
+At this point, if you haven't already, we **STRONGLY RECOMMEND** importing your project into an [IDE](/develop/ides) like [Eclipse](/develop/eclipse). This will make [development](/develop/eclipse) and [refactoring](http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fref-menu-refactor.htm) much easier. Modern IDEs also have excellent [Git](/develop/git) and [Maven](/develop/maven) integration, which will allow you to take advantage of the fact that the example projects are already set up as Mavenized Git repositories.
 
 In addition to modifying and developing the source code itself, there are several things you should do to properly identify and configure your project:
 
@@ -280,7 +280,7 @@ Once you have completed plugins and want to get them out to users, you can famil
 
 -   [Plugin distribution](/develop/distributing)
 -   [The development lifecycle](/develop/releasing)
--   [Core contribution requirements](Fiji_contribution_requirements)
+-   [Core contribution requirements](/fiji/contribution-requirements)
 
 As always, if you ever need assistance, [just ask](/help)!
 

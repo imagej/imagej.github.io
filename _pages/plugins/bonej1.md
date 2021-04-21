@@ -22,7 +22,7 @@ description: test description
 Current release ([BoneJ2](/plugins/bonej))
 ---------------------------------------------
 
-There's a new modernized version of BoneJ available through the ImageJ [updater](/Updater). Read more about [BoneJ2](/plugins/bonej).
+There's a new modernized version of BoneJ available through the ImageJ [updater](/plugins/updater). Read more about [BoneJ2](/plugins/bonej).
 
 Legacy (BoneJ v1.x) Installation
 --------------------------------

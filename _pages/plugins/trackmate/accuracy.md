@@ -76,7 +76,7 @@ For each scenario and condition, the method returns numerous values that charact
 
 -   The <b>RMSE of detection positions</b> that quantifies how precise is the location of the detected particles. The smaller the better.
 
-I fully relied on [Icy](/software/icy) to compute these values. TrackMate ships an action that exports tracking results to the XML format imposed by the ISBI challenge, and that can be found [here](https://github.com/fiji/plugins/trackmate/blob/master/src/main/java/fiji/plugin/trackmate/action/ISBIChallengeExporter.java). I generated these files for all the conditions of a scenario, and used the [Icy ISBI challenge scoring plugin](http://icy.bioimageanalysis.org/plugin/ISBI_Tracking_Challenge_Batch_Scoring) to yield metrics. I then used [MATLAB](MATLAB) to plot them.
+I fully relied on [Icy](/software/icy) to compute these values. TrackMate ships an action that exports tracking results to the XML format imposed by the ISBI challenge, and that can be found [here](https://github.com/fiji/plugins/trackmate/blob/master/src/main/java/fiji/plugin/trackmate/action/ISBIChallengeExporter.java). I generated these files for all the conditions of a scenario, and used the [Icy ISBI challenge scoring plugin](http://icy.bioimageanalysis.org/plugin/ISBI_Tracking_Challenge_Batch_Scoring) to yield metrics. I then used [MATLAB](/scripting/matlab) to plot them.
 
 ### Parameter used.
 

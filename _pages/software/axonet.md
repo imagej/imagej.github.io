@@ -24,6 +24,6 @@ See also
 --------
 
 -   {% include github org='ethier-lab' repo='axonet-fiji' label='AxoNet on GitHub' %}.
--   The AxoNet [update site](Update_site) to make AxoNet available in ImageJ.
+-   The AxoNet [update site](/update-sites) to make AxoNet available in ImageJ.
 
   

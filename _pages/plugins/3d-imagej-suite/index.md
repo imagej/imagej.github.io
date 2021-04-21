@@ -52,7 +52,7 @@ A 2D/3D [spatial statistics](https://imagejdocu.list.lu/plugin/analysis/spatial_
 Installation
 ------------
 
-From version 2.7, **3D ImageJ Suite** is available in Fiji as an [Fiji update site](http://fiji.sc/List_of_update_sites). The **Java8** and **ImageScience** update sites must be activated in Fiji, see instructions [here](/Following_an_update_site)\].
+From version 2.7, **3D ImageJ Suite** is available in Fiji as an [Fiji update site](http://fiji.sc/List_of_update_sites). The **Java8** and **ImageScience** update sites must be activated in Fiji, see instructions [here](/update-sites/following)\].
 
 You can also install **3D ImageJ Suite** manually (see download section) and unzip it in your plugins folder. The various plugins will appear in the menu **3D** of the plugins list.
 

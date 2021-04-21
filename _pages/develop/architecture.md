@@ -11,7 +11,7 @@ description: test description
 -   For information on the *legal* structure, see [Licensing](/licensing).' %}
 
 
-This page describes the technical structure of [SciJava](SciJava) and [ImageJ](/about) projects. For maximum benefit, we suggest readers familiarize themselves with [Maven](/develop/maven), [Git](Git) and [GitHub](/develop/github) before reading the sections here.
+This page describes the technical structure of [SciJava](SciJava) and [ImageJ](/about) projects. For maximum benefit, we suggest readers familiarize themselves with [Maven](/develop/maven), [Git](/develop/git) and [GitHub](/develop/github) before reading the sections here.
 
 Definitions
 ===========
@@ -62,7 +62,7 @@ The diagram on the right shows organizational relationships between SciJava soft
 Git repositories
 ----------------
 
-Each component is contained in its own [Git](Git) repository, so that interested developers can cherry-pick only those parts of interest. Version control is an indispensable tool to ensure *scientific reproducibility* (see below) by tracking known-working states of the source code, and maintain a written record of how and why the code has changed over time. For technical details, see the [Git](Git) section.
+Each component is contained in its own [Git](/develop/git) repository, so that interested developers can cherry-pick only those parts of interest. Version control is an indispensable tool to ensure *scientific reproducibility* (see below) by tracking known-working states of the source code, and maintain a written record of how and why the code has changed over time. For technical details, see the [Git](/develop/git) section.
 
 ### Why separate Git repositories?
 
@@ -86,14 +86,14 @@ As a rule of thumb, we find that multi-module [Maven](/develop/maven) projects s
 Maven component structure
 -------------------------
 
-All components in these organizations use [Maven](/develop/maven) for [project management](Project_Management). Each organization has its own Maven [groupId](http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-more-coordinates). Each component extends the {% include github org='scijava' repo='pom-scijava' label='pom-scijava' %} [parent POM](http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-project-inheritance), which provides sensible build defaults and compatible dependency versions (see "Bill of Materials" below).
+All components in these organizations use [Maven](/develop/maven) for [project management](/develop/project-management). Each organization has its own Maven [groupId](http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-more-coordinates). Each component extends the {% include github org='scijava' repo='pom-scijava' label='pom-scijava' %} [parent POM](http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-project-inheritance), which provides sensible build defaults and compatible dependency versions (see "Bill of Materials" below).
 
 <table><tbody><tr class="odd"><td><p><strong>Logo</strong></p></td><td><p><strong>Project</strong></p></td><td><p><strong>Organization</strong></p></td><td><p><strong>groupId</strong></p></td></tr><tr class="even"><td><p> {% include logo content='SciJava' %}</p></td><td><p><a href="SciJava">SciJava</a></p></td><td><p><a href="https://github.com/scijava">scijava</a></p></td><td><p><a href="https://maven.scijava.org/index.html#nexus-search;gav~org.scijava">org.scijava</a></p></td></tr><tr class="odd"><td><p> {% include logo content='ImageJ2' %}</p></td><td><p><a href="/about">ImageJ</a></p></td><td><p><a href="https://github.com/imagej">imagej</a></p></td><td><p><a href="https://maven.scijava.org/index.html#nexus-search;gav~net.imagej">net.imagej</a></p></td></tr><tr class="even"><td><p> {% include logo content='ImgLib2' %}</p></td><td><p><a href="/imglib2">ImgLib2</a></p></td><td><p><a href="https://github.com/imglib">imglib</a></p></td><td><p><a href="https://maven.scijava.org/index.html#nexus-search;gav~net.imglib2">net.imglib2</a></p></td></tr><tr class="odd"><td><p> {% include logo content='SCIFIO' %}</p></td><td><p><a href="/software/scifio">SCIFIO</a></p></td><td><p><a href="https://github.com/scifio">scifio</a></p></td><td><p><a href="https://maven.scijava.org/index.html#nexus-search;gav~io.scif">io.scif</a></p></td></tr><tr class="even"><td rowspan=3 style="vertical-align: middle"><p> {% include logo content='Fiji' %}</p></td><td><p><a href="/fiji">Fiji</a></p></td><td><p><a href="https://github.com/fiji">fiji</a></p></td><td><p><a href="https://maven.scijava.org/index.html#nexus-search;gav~sc.fiji">sc.fiji</a></p></td></tr><tr class="odd"><td><p><a href="/plugins/bdv">BigDataViewer</a></p></td><td><p><a href="https://github.com/bigdataviewer">bigdataviewer</a></p></td><td><p><a href="https://maven.scijava.org/index.html#nexus-search;gav~sc.fiji">sc.fiji</a></p></td><td></td></tr><tr class="even"><td><p><a href="/plugins/trakem2">TrakEM2</a></p></td><td><p><a href="https://github.com/trakem2">trakem2</a></p></td><td><p><a href="https://maven.scijava.org/index.html#nexus-search;gav~sc.fiji">sc.fiji</a></p></td><td></td></tr></tbody></table>
 
 Bill of Materials
 -----------------
 
-The `pom-scijava` parent includes a [Bill of Materials](http://howtodoinjava.com/maven/maven-bom-bill-of-materials-dependency/) (BOM) which declares compatible versions of all components of the **SciJava component collection** in its [dependencyManagement section](http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Dependency_Management). These versions are intended to be used together in downstream projects, preventing version skew (symptoms of which include `ClassNotFoundException` and `NoSuchMethodError`, as well as erroneous behavior in general). This BOM is especially important while some components are still in beta, since they may sometimes break [backwards compatibility](Backwards_compatibility).
+The `pom-scijava` parent includes a [Bill of Materials](http://howtodoinjava.com/maven/maven-bom-bill-of-materials-dependency/) (BOM) which declares compatible versions of all components of the **SciJava component collection** in its [dependencyManagement section](http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Dependency_Management). These versions are intended to be used together in downstream projects, preventing version skew (symptoms of which include `ClassNotFoundException` and `NoSuchMethodError`, as well as erroneous behavior in general). This BOM is especially important while some components are still in beta, since they may sometimes break [backwards compatibility](/libs/imagej-legacy).
 
 Core libraries
 --------------
@@ -200,7 +200,7 @@ Either way, ***be sure to work on a topic branch while developing code in this f
 Versioning
 ==========
 
-SciJava components use the [Semantic Versioning](Semantic_Versioning) system. This scheme communicates information about the [backwards compatibility](Backwards_compatibility) (or lack thereof) between versions of each individual software component. In a nutshell:
+SciJava components use the [Semantic Versioning](/develop/versioning) system. This scheme communicates information about the [backwards compatibility](/libs/imagej-legacy) (or lack thereof) between versions of each individual software component. In a nutshell:
 
 > Given a version number MAJOR.MINOR.PATCH, increment the:
 >

@@ -38,7 +38,7 @@ The welcome panel will open.
 
 #### Choose Mode
 
-For a first analysis of your data, we suggest using the simple mode, in which we have pre-selected a number of parameters. In case you are unsatisfied with the outcome of the tracking, you can use the [advanced mode(MTrack)](Advanced_mode(MTrack)) to fine-tune settings. When analyzing more than one movie, you can select [batch mode(MTrack)](Batch_mode(MTrack)) and run many movies simultaneously. However, before running the program in batch mode, you have to at least run the program once in simple or advanced mode to select and save the required parameters.
+For a first analysis of your data, we suggest using the simple mode, in which we have pre-selected a number of parameters. In case you are unsatisfied with the outcome of the tracking, you can use the [advanced mode(MTrack)](/plugins/mtrack/advanced-mode) to fine-tune settings. When analyzing more than one movie, you can select [batch mode(MTrack)](/plugins/mtrack/batch-mode) and run many movies simultaneously. However, before running the program in batch mode, you have to at least run the program once in simple or advanced mode to select and save the required parameters.
 
 The following intro is on simple mode.
 
@@ -46,7 +46,7 @@ The following intro is on simple mode.
 
 Next, the user selects the movie. The movie to be uploaded is the original movie coming out of the microscope. In simple mode, the program will do a pseudo flat-field correction by default. This preprocessed movie will only be used for object recognition of seeds, not for end-point detection. End point detection will always be performed on the original image.
 
-In the advanced mode, the user has the option to either perform a flat-field correction and apply a median filter of a chosen radius. Alternatively, the user can upload their own preprocessed movie. (Read more about [Preprocessing(MTrack)](Preprocessing(MTrack))).
+In the advanced mode, the user has the option to either perform a flat-field correction and apply a median filter of a chosen radius. Alternatively, the user can upload their own preprocessed movie. (Read more about [Preprocessing(MTrack)](/plugins/mtrack/preprocessing)).
 
 For the movie type, choose one of the three supported options:
 
@@ -80,7 +80,7 @@ Before starting the actual tracking of the dynamically growing microtubules, the
 
 **Deselect and select ends**
 
-In case an end has been wrongly recognized, the user can deselect an end by left clicking on it in the image. The program will remember and allow to re-select this end by clicking Shift + left click (pink circle will mark the end). In case an end has not been recognized, use Shift + Alt + left click to select a user defined end (orange circle will mark the end). Read more on [microtubule polarity and (+) end vs. (-) end tracking](Microtubule_polarity_and_(+)_end_vs._(-)_end_tracking).
+In case an end has been wrongly recognized, the user can deselect an end by left clicking on it in the image. The program will remember and allow to re-select this end by clicking Shift + left click (pink circle will mark the end). In case an end has not been recognized, use Shift + Alt + left click to select a user defined end (orange circle will mark the end). Read more on [microtubule polarity and (+) end vs. (-) end tracking](/plugins/mtrack/microtubule-polarity).
 
 **Select time**
 

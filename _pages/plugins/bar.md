@@ -181,7 +181,7 @@ Run it in the [Script Editor](/scripting/script-editor) ({% include bc path='Fil
 
 ### Batch Processors
 
-Some of the scripts included in */BAR/Snippets/* are scripts that apply a [common operation to a directory](How_to_apply_a_common_operation_to_a_complete_directory). These [batch processors](/scripting/batch) are implemented in different languages and perform the following operations:
+Some of the scripts included in */BAR/Snippets/* are scripts that apply a [common operation to a directory](/tutorials/apply-operation-to-a-complete-directory). These [batch processors](/scripting/batch) are implemented in different languages and perform the following operations:
 
 1.  Take an input folder specified by the user
 2.  Apply a series of operations to individual files of matched extension(s)

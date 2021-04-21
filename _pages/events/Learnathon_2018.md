@@ -97,7 +97,7 @@ The ImageJ Legacy Course covered the topics: images, tables, regions of interest
 
 ### Git
 
--   See the [Git](Git) page!
+-   See the [Git](/develop/git) page!
 
 Wednesday
 ---------

@@ -15,7 +15,7 @@ Requirements
 
 As ImageJ is built using the [SciJava principles of project management](/develop/project-management), this guide assumes a basic familiarity with these topics and tools, especially:
 
--   [Git](Git)
+-   [Git](/develop/git)
 -   [Maven](/develop/maven)
 
 Additionally, you should:

@@ -157,7 +157,7 @@ Code
 See also
 --------
 
--   [Beanshell Scripting](Beanshell_Scripting)
+-   [Beanshell Scripting](/scripting/beanshell)
 -   [Scripting Help](/scripting)
 -   [Scripting comparisons](/scripting/comparisons)
 

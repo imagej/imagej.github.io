@@ -20,7 +20,7 @@ The plugin predicts an absolute measure of image focus on a single image in isol
 Installation
 ------------
 
--   [Enable](/update-sites/following) the TensorFlow [update site](Update_site).
+-   [Enable](/update-sites/following) the TensorFlow [update site](/update-sites).
 -   The command is in {% include bc path='Plugins | Classification | Microscope Image Focus Quality'%}.
 
 Usage

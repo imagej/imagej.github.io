@@ -22,9 +22,9 @@ SNT is based on multiple publications. To cite SNT:
 
 To reference specific modules/plugins that enhance SNT:
 
-  - **[Sholl Analysis](Sholl_Analysis)**: Ferreira T, Blackman A, Oyrer J, Jayabal A, Chung A, Watt A, Sjöström J, van Meyel D. (**2014**), [Neuronal morphometry directly from bitmap images](https://doi.org/10.1038/nmeth.3125), *Nature Methods* 11(10): 982–984
-  - **[Tubular Geodesics](SNT:_Tubular_Geodesics)**: Türetken E, Benmansour F, Fua P. [Automated Reconstruction of Tree Structures using Path Classifiers and Mixed Integer Programming](https://infoscience.epfl.ch/record/176222/files/turetken_et_al_2012.pdf?version=1). <i>IEEE Conference on Computer Vision and Pattern Recognition</i>, Providence, Rhode Island, 2012.
-  - **[Cx3D](SNT:_Modeling)**: Zubler, F. & Douglas, R. [A framework for modeling the growth and development of neurons and networks](https://doi.org/10.3389/neuro.10.025.2009). Front. Comput. Neurosci. 3, 25 (2009)\].
+  - **[Sholl Analysis](/plugins/sholl-analysis)**: Ferreira T, Blackman A, Oyrer J, Jayabal A, Chung A, Watt A, Sjöström J, van Meyel D. (**2014**), [Neuronal morphometry directly from bitmap images](https://doi.org/10.1038/nmeth.3125), *Nature Methods* 11(10): 982–984
+  - **[Tubular Geodesics](/plugins/snt/tubular-geodesics)**: Türetken E, Benmansour F, Fua P. [Automated Reconstruction of Tree Structures using Path Classifiers and Mixed Integer Programming](https://infoscience.epfl.ch/record/176222/files/turetken_et_al_2012.pdf?version=1). <i>IEEE Conference on Computer Vision and Pattern Recognition</i>, Providence, Rhode Island, 2012.
+  - **[Cx3D](/plugins/snt/modeling)**: Zubler, F. & Douglas, R. [A framework for modeling the growth and development of neurons and networks](https://doi.org/10.3389/neuro.10.025.2009). Front. Comput. Neurosci. 3, 25 (2009)\].
 
 The original [Simple Neurite Tracer](#snt) publication is:
 
@@ -32,7 +32,7 @@ The original [Simple Neurite Tracer](#snt) publication is:
 
 ### What is the difference between SNT and Simple Neurite Tracer?
 
-Simple Neurite Tracer was the first Fiji plugin dedicated to visualization and reconstruction of neurons, developed by [Mark Longair](User:Mark) and [published in 2011](#citing), to become the single most cited open-source software for semi-automated 3D reconstructions. In the wake of ImageJ2 development, a new team of developers lead by [Tiago Ferreira](User:Tiago) took on the effort of modernizing its code base. The project quickly snowballed beyond the re-write of the software, and focused on establishing a complete framework for reconstruction, visualization, quantification and modelling of neuronal morphology. Several name changes were proposed for this "next-gen" Simple Neurite Tracer (*Not so Simple Neurite Tracer*, *Smart Neurite Tracer*, *Super Neurite Tracer* to name a few), but in the end it was decided to adopt the acronym of the original software, as an homage to Mark's outstanding work. You can follow the entire history of the plugin on GitHub: Simple Neurite Tracer's {% include github org='fiji ' repo='Simple\_Neurite\_Tracer ' label='historic ' %} and SNT's {% include github org='morphonets ' repo='SNT ' label='current ' %} repositories.
+Simple Neurite Tracer was the first Fiji plugin dedicated to visualization and reconstruction of neurons, developed by [Mark Longair](/users/mhl) and [published in 2011](#citing), to become the single most cited open-source software for semi-automated 3D reconstructions. In the wake of ImageJ2 development, a new team of developers lead by [Tiago Ferreira](/users/tferr) took on the effort of modernizing its code base. The project quickly snowballed beyond the re-write of the software, and focused on establishing a complete framework for reconstruction, visualization, quantification and modelling of neuronal morphology. Several name changes were proposed for this "next-gen" Simple Neurite Tracer (*Not so Simple Neurite Tracer*, *Smart Neurite Tracer*, *Super Neurite Tracer* to name a few), but in the end it was decided to adopt the acronym of the original software, as an homage to Mark's outstanding work. You can follow the entire history of the plugin on GitHub: Simple Neurite Tracer's {% include github org='fiji ' repo='Simple\_Neurite\_Tracer ' label='historic ' %} and SNT's {% include github org='morphonets ' repo='SNT ' label='current ' %} repositories.
 
 ### How accurate is SNT?
 
@@ -52,11 +52,11 @@ When tracing 4D or 5D images, `TRACES` is preferable because the channel and/or 
 | Image metadata                                    | Formally none. SNT stores the spatial calibration of the image in the header                                                         | Rich. Including channel and frame of the traced structure.                           |
 | [Path Manager tags](SNT:_Overview#Tag) | Not stored                                                                                                                           | Stored                                                                               |
 | Format                                            | Plain text                                                                                                                           | XML or compressed XML (as per [preferences](SNT:_Overview#Misc))          |
-| Presence                                          | Ubiquitous among reconstruction software. The *de facto* standard in data sharing                                                    | Exlusive to SNT. But [open and easily parsable](SNT:_.traces_File_Format) |
+| Presence                                          | Ubiquitous among reconstruction software. The *de facto* standard in data sharing                                                    | Exlusive to SNT. But [open and easily parsable](/plugins/snt/traces-file-format) |
 
 ### How do I (batch) convert TRACES to SWC?
 
-In the [Script Editor](Script_Editor) ({% include bc path='File|New|Script...'%}) look for {% include bc path='Templates|Neuroanatomy|Batch|Convert Traces to SWC'%} and run it. Note that all of SNT scripts are also listed in the main as regular GUI commands in the main [interface](SNT:_Scripting#Script_Templates). Don't see the scripts? Please ensure SNT is properly [installed](SNT#Installation).
+In the [Script Editor](/scripting/script-editor) ({% include bc path='File|New|Script...'%}) look for {% include bc path='Templates|Neuroanatomy|Batch|Convert Traces to SWC'%} and run it. Note that all of SNT scripts are also listed in the main as regular GUI commands in the main [interface](SNT:_Scripting#Script_Templates). Don't see the scripts? Please ensure SNT is properly [installed](SNT#Installation).
 
 ### How can I improve SNT documentation?
 

@@ -18,7 +18,7 @@ Here is a quick summary of the most recommended options:
 
 -   **Distribution.**
     -   A\) **[create your own update site](/update-sites/setup)**; or
-    -   B\) **[bundle your plugin with Fiji](Fiji_contribution_requirements)**.
+    -   B\) **[bundle your plugin with Fiji](/fiji/contribution-requirements)**.
 -   **Source code.**
     -   Make your project **[open source](Open_source)**.
     -   Host it on **[GitHub](/develop/github)**.
@@ -83,19 +83,19 @@ If you want to facilitate good science, please [share your source code](Open_Sou
 <td><p> <strong>Steps</strong></p></td>
 </tr>
 <tr class="odd">
-<td style="background: #dfd; vertical-align: top"><ul><li>Create an account on <strong><a href="https://github.com">GitHub</a></strong>.</li><li><strong><a href="https://help.github.com/articles/create-a-repo">Create a new repository</a></strong> for your project.</li><li><strong><a href="https://help.github.com/articles/pushing-to-a-remote">Push your code</a></strong> there.</li><li><strong><a href="Git">Learn Git</a></strong> to manage your code effectively.</li></ul></td>
+<td style="background: #dfd; vertical-align: top"><ul><li>Create an account on <strong><a href="https://github.com">GitHub</a></strong>.</li><li><strong><a href="https://help.github.com/articles/create-a-repo">Create a new repository</a></strong> for your project.</li><li><strong><a href="https://help.github.com/articles/pushing-to-a-remote">Push your code</a></strong> there.</li><li><strong><a href="/develop/git">Learn Git</a></strong> to manage your code effectively.</li></ul></td>
 </tr>
 <tr class="even">
 <td style="background: #dfd"></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Host on GitHub in the Fiji organization (for <a href="Fiji_contribution_requirements">extensions distributed with Fiji</a>)</strong></p></td>
+<td><p><strong>Host on GitHub in the Fiji organization (for <a href="/fiji/contribution-requirements">extensions distributed with Fiji</a>)</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Steps</strong></p></td>
 </tr>
 <tr class="odd">
-<td style="background: #dfd; vertical-align: top"><ul><li>Request a <strong><a href="/about/governance">Fiji maintainer</a></strong> create a repository for you and add you as a contributor.</li><li>Meet the <strong><a href="Fiji_contribution_requirements">Fiji contribution requirements</a></strong>.</li></ul></td>
+<td style="background: #dfd; vertical-align: top"><ul><li>Request a <strong><a href="/about/governance">Fiji maintainer</a></strong> create a repository for you and add you as a contributor.</li><li>Meet the <strong><a href="/fiji/contribution-requirements">Fiji contribution requirements</a></strong>.</li></ul></td>
 </tr>
 <tr class="even">
 <td style="vertical-align: top"></td>

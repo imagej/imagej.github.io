@@ -151,7 +151,7 @@ If you need to depend on a library that is not present in either Maven Central o
 
 If there are no public repositories containing your dependency, you have two options:
 
--   If the dependency is itself an ImageJ plugin, consider [contributing it to Fiji](Fiji_contribution_requirements). Plugins distributed with Fiji are [made available as Maven artifacts](Fiji_contribution_requirements#Maven_artifacts), and thus will benefit both users and developers.
+-   If the dependency is itself an ImageJ plugin, consider [contributing it to Fiji](/fiji/contribution-requirements). Plugins distributed with Fiji are [made available as Maven artifacts](Fiji_contribution_requirements#Maven_artifacts), and thus will benefit both users and developers.
 
 <!-- -->
 

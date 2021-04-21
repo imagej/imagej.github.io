@@ -188,7 +188,7 @@ A second version, lispier, rewritten from the above by Clojure's author [Rich Hi
 In Javascript
 -------------
 
-See also the [Javascript Scripting](Javascript_Scripting) documentation page.
+See also the [Javascript Scripting](/scripting/javascript) documentation page.
 
     // All ImageJ and java.lang.* classes have been automatically imported
     // using importPackage(Package.ij) etc. directives.
@@ -264,7 +264,7 @@ For some tutorial material on using JRuby to script ImageJ, please see [JRuby Sc
 In BeanShell
 ------------
 
-See also the [Beanshell Scripting](Beanshell_Scripting) documentation page.
+See also the [Beanshell Scripting](/scripting/beanshell) documentation page.
 
 For some tutorial material on using BeanShell, see [BeanShell's Quickstart](http://www.beanshell.org/manual/quickstart.html#Java_Statements_and_Expressions).
 

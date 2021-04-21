@@ -6,7 +6,7 @@ categories: Fiji
 description: test description
 ---
 
-{% include info-box content='There is another good way to distribute your extension: your own [update site](Update_site). See the [Distribution](/develop/distributing) page for details.' %} 
+{% include info-box content='There is another good way to distribute your extension: your own [update site](/update-sites). See the [Distribution](/develop/distributing) page for details.' %} 
 Distributing your software component as part of [Fiji](/fiji) is an effective way to immediately and easily put it into the hands of many users, as well as to actively participate in the community of ImageJ software development. However, doing so comes with a few corresponding rules.
 
 The following document describes these requirements, as well as associated best practices, for shipping your component as part of the [Fiji](/fiji) update site.
@@ -101,7 +101,7 @@ Furthermore, for backwards-compatibility a version can be automatically deduced:
 Maven artifacts
 ---------------
 
-[Fiji](/fiji) and related [SciJava](SciJava) software uses [Maven](/develop/maven), an industry standard to declare metadata about a project, to build projects using said metadata, and to *deploy* the resulting artifacts to a [Maven repository](Architecture#Maven_repositories). Such repositories are essentially for developers what [update sites](Update_sites) are for users.
+[Fiji](/fiji) and related [SciJava](SciJava) software uses [Maven](/develop/maven), an industry standard to declare metadata about a project, to build projects using said metadata, and to *deploy* the resulting artifacts to a [Maven repository](Architecture#Maven_repositories). Such repositories are essentially for developers what [update sites](/update-sites) are for users.
 
 -   The minimum requirement for core Fiji projects is to use a build system (e.g., [Maven](/develop/maven) or Gradle) that automatically deploys required artifacts to the [ImageJ Maven repository](http://maven.imagej.net/), such that they can be consumed by downstream code, including other Fiji projects. Required artifacts to deploy include the main JAR and POM files, `-tests` JAR, `-sources` JAR and `-javadoc` JAR.
 -   To facilitate this, most Fiji projects inherit a common Maven configuration from the [pom-fiji](https://github.com/fiji/pom-fiji) parent project. This configuration ensures that not only the compiled *.jar* files are deployed, but also the Javadocs and the sources. Therefore, it is strongly encouraged to extend this parent; see the [Maven component structure](Architecture#Maven_component_structure) section for details.

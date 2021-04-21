@@ -19,7 +19,7 @@ There are four tiers of plugins:
 
 1.  Core ImageJ plugins, bundled with the base ImageJ distribution. (more than 1000 as of this writing)
 2.  Core Fiji plugins, bundled with the [Fiji](/fiji) distribution of ImageJ. (nearly 1000 additional plugins as of this writing)
-3.  Plugins installable from an ImageJ [update site](Update_site).
+3.  Plugins installable from an ImageJ [update site](/update-sites).
 4.  Additional plugins available from various online sources, which must be manually installed.
 
 Installing plugins

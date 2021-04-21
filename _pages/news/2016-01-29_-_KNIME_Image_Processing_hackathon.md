@@ -225,6 +225,6 @@ Technical discussions
 Future directions
 -----------------
 
--   {%- include person id='kephale' -%} - Explore updating the [3D Viewer](/plugins/3d-viewer) to use [Ops](Ops) and [ClearVolume](/plugins/clearvolume) under the hood.
+-   {%- include person id='kephale' -%} - Explore updating the [3D Viewer](/plugins/3d-viewer) to use [Ops](/libs/imagej-ops) and [ClearVolume](/plugins/clearvolume) under the hood.
 
    

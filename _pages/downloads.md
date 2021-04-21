@@ -62,7 +62,7 @@ That means that you do not have to run an installer; just download, unpack and s
 
 # Troubleshooting
 
-  - Many common questions are answered on the [FAQ](FAQ) and [Troubleshooting](/help/troubleshooting) pages.
+  - Many common questions are answered on the [FAQ](/help/faq) and [Troubleshooting](/help/troubleshooting) pages.
   - If you encounter bugs, please see the [Getting Help](/help) page.
 
 # Source code

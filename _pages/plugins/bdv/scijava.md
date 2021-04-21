@@ -9,7 +9,7 @@ As announced in the forum [here](https://forum.image.sc/t/getting-bigdataviewer-
 Installation
 ------------
 
-Enable the [update site](/Following_an_update_site) (https://biop.epfl.ch/Fiji-Update-Bdv/) to activate bigdataviewer\_scijava commands. All commands from this update site are present in the github repository [bigdataviewer\_scijava](https://github.com/BIOP/bigdataviewer_scijava). A [list of all commands](https://github.com/BIOP/bigdataviewer_scijava#list-of-all-commands-of-the-repository) can be found in the repository.
+Enable the [update site](/update-sites/following) (https://biop.epfl.ch/Fiji-Update-Bdv/) to activate bigdataviewer\_scijava commands. All commands from this update site are present in the github repository [bigdataviewer\_scijava](https://github.com/BIOP/bigdataviewer_scijava). A [list of all commands](https://github.com/BIOP/bigdataviewer_scijava#list-of-all-commands-of-the-repository) can be found in the repository.
 
 Goals
 -----
@@ -20,7 +20,7 @@ Goals
 What you can do with this update site
 -------------------------------------
 
-By using Scijava framework to store BigDataViewer windows through its `BdvHandle` interface, it is possible to communicate bdv instances between scripts and commands (see [script parameter page](/Script_Parameters)). This also facilitates the use of FIJI GUI because the commands of this repository can be chained easily. Any script or Command which declares a `BdvHandle` parameter can retrieve or provide reference to existing BigDataViewer instances.
+By using Scijava framework to store BigDataViewer windows through its `BdvHandle` interface, it is possible to communicate bdv instances between scripts and commands (see [script parameter page](/scripting/parameters)). This also facilitates the use of FIJI GUI because the commands of this repository can be chained easily. Any script or Command which declares a `BdvHandle` parameter can retrieve or provide reference to existing BigDataViewer instances.
 
 In practice, Bdv windows created via the commands from this update site are put by default in the `ObjectService`. To get a reference to these windows:
 

@@ -19,7 +19,7 @@ description: test description
 -   [Interactive Stack Rotation](/plugins/interactive-stack-rotation)
 -   [Landmark based transformation and deformation](/plugins/landmark-correspondences)
 -   [Panorama Viewer](http://fly.mpi-cbg.de/saalfeld/Projects/panorama.html)
--   [Distortion correction](Distortion_correction): correct lens deformation induced by the microscope (optical and electron microscopy). See the [Distortion Correction plugin manual](http://www.kaynig.de/downloads/DistortionCorrectionPlugin_Manual.pdf).
+-   [Distortion correction](/plugins/distortion-correction): correct lens deformation induced by the microscope (optical and electron microscopy). See the [Distortion Correction plugin manual](http://www.kaynig.de/downloads/DistortionCorrectionPlugin_Manual.pdf).
 
 [Image registration](Plugins_Menu#Plugins_.3E_Registration)  
 

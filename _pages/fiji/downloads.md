@@ -9,7 +9,7 @@ description: test description
 
 {% include project content='Fiji' %}
 
-<span id="/fiji"></span> [Fiji](/fiji) is a distribution of ImageJ which includes many useful plugins [contributed by the community](Fiji_contribution_requirements).
+<span id="/fiji"></span> [Fiji](/fiji) is a distribution of ImageJ which includes many useful plugins [contributed by the community](/fiji/contribution-requirements).
 
 {% include downloadfiji%}
 
@@ -40,7 +40,7 @@ If you are a Debian packaging expert who would like to address this situation, w
 Troubleshooting
 ===============
 
--   Many common questions are answered on the [FAQ](FAQ).
+-   Many common questions are answered on the [FAQ](/help/faq).
 -   If you encounter bugs, please see the [Getting Help](/help) page.
 
 Source code

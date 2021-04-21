@@ -29,7 +29,7 @@ Here is a list of the available methods for ImageJ. If you want use any of these
 
 ### Anomalous Filters
 
-A PlugInFilter for the two different methods for image filtering: Anisotropic Anomalous Diffusion and Isotropic Anomalous Diffusion. Both methods description can be found in the Physics in Medicine and Biology [journal article](http://doi.org/10.1088/0031-9155/60/6/2355), which is also referenced in [wiki page](/AnomalousDiffusionFilters). In summary, both image filter are discrete solution of generalized diffusion heat equation (also know as a porous media equation).
+A PlugInFilter for the two different methods for image filtering: Anisotropic Anomalous Diffusion and Isotropic Anomalous Diffusion. Both methods description can be found in the Physics in Medicine and Biology [journal article](http://doi.org/10.1088/0031-9155/60/6/2355), which is also referenced in [wiki page](/plugins/anomalous-diffusion-filters). In summary, both image filter are discrete solution of generalized diffusion heat equation (also know as a porous media equation).
 
 Please, see our reference articles to find out more details about the parameters necessary to run properly the anomalous diffusion filters.
 
@@ -37,19 +37,19 @@ Please, see our reference articles to find out more details about the parameters
 
 In this specific PlugInFilter we offer a tool to measure the main parameters involved in Dynamic Perfusion MRI images such as: Time to peak, Peak, CBV and CBF values. It could be useful in medical studies where are used contrast dynamic enhanced perfusion images. Here we only create a simple implementation for these metrics and more detailed approach should be implemented in a near future.
 
-Please see the [Perfusion MRI wiki page](/MRIPerfusion) for this specific method.
+Please see the [Perfusion MRI wiki page](/plugins/mri-perfusion) for this specific method.
 
 ### Noise Generator
 
 In this specific PlugIn we offer a tool to add different noise on a image with several different probability distributions, where could be useful in some biological and medical studies. Some noise probability examples are the Uniform, Gaussian, Rayleigh and Colored noises (Brown, Pink, Blue and other $$1/f^\beta$$ noises).
 
-See the [Noise Generator wiki page](/NoiseGenerator) to find out more information about this PlugIn.
+See the [Noise Generator wiki page](/plugins/noise-generator) to find out more information about this PlugIn.
 
 ### Sample Entropy 2D (SampEn2D)
 
 In this PlugIn we offer a tool to calculate the two-dimensional sample entropy (SampEn2D) on digital image.
 
-See the [SampEn2D wiki page](/SampEn2D) to find out more information about this PlugIn.
+See the [SampEn2D wiki page](/plugins/sampen2d) to find out more information about this PlugIn.
 
 Source code
 -----------
