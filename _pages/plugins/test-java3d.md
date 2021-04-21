@@ -23,6 +23,6 @@ This plugin uses very basic Java3D features, and thereby provides a way to check
 
 ![](/media/Test Java3D.png "Test_Java3D.png")
 
-If you encounter problems, you might want to consult the [Java 3D Application Development page](http://wiki.java.net/bin/view/Javadesktop/Java3DApplicationDevelopment). In particular, you might want to restart Fiji with [specific Java 3D properties set](http://wiki.java.net/bin/view/Javadesktop/Java3DApplicationDevelopment#Java_3D_System_Properties).
+If you encounter problems, you might want to consult the [Java 3D Application Development page](http://wiki.java.net/bin/view/Javadesktop/Java3DApplicationDevelopment). In particular, you might want to restart Fiji with [specific Java 3D properties set](http://wiki.java.net/bin/view/Javadesktop/Java3DApplicationDevelopment#java-3d-system-properties).
 
 

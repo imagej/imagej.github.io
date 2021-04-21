@@ -45,7 +45,7 @@ How to use the plugin
 
 The multi-view deconvolution consists like the multi-view fusion of two consecutive dialogs. The first dialog queries the information necessary to analyze the dataset, i.e. locate the image files, the registration information and the location of the corresponding beads if applicable. Please note that all the parameters will be transferred from the [Multi-view fusion](/plugins/multi-view-fusion) dialog that you used before to set the bounding box (cropping area).
 
-We omit a detailed explanation of the parameters here as it is identical to the explanation provided [Multi-view fusion dialog](Multi-View_Fusion#How_to_use_the_plugin).
+We omit a detailed explanation of the parameters here as it is identical to the explanation provided [Multi-view fusion dialog](/plugins/multi-view-fusion#how-to-use-the-plugin).
 
 After providing the data the plugin will check which kind of registrations are available (\*.registration and \*.registration\_.to{tt}). Typically, the individual registration is available, and maybe also several time-series registrations to various reference timepoints. If no registration files could be found, the plugin will quit.
 
@@ -125,7 +125,7 @@ Multi-Channel deconvolution can be achieved by running the plugin on both channe
 
 **(1)** Run the [Bead-based registration](/plugins/spim-bead-registration) on just one channel and duplicate and rename the \*.dim, \*.beads.txt and \*.registration files for the other channels. Now when you run the deconvolution on the channel that contained the beads choose to export the PSF's in original calibration. For the other channels run the deconvolution with loaded PSFs. Alternatively use simulated PSFs. Simply merge the result of all channels.
 
-**(2)** Run the [Multi-channel bead based registration](SPIM_Bead_Registration#Multichannel_registration), it requires that the same beads are visible in all channels and will register all to each other. Now run the deconvolution individually on both channels and extract the PSF's from the image or use simulated PSFs. Now there will be the problem that the images will most likely suffer an offset to each other, you might even need to define two different bounding boxes. The good news is that we know exactly what the offset - even with different bounding boxes - is. For that you need to note down one line in the output of the deconvolution (fusion is actually the same) of the channels:
+**(2)** Run the [Multi-channel bead based registration](/plugins/spim-bead-registration#multichannel-registration), it requires that the same beads are visible in all channels and will register all to each other. Now run the deconvolution individually on both channels and extract the PSF's from the image or use simulated PSFs. Now there will be the problem that the images will most likely suffer an offset to each other, you might even need to define two different bounding boxes. The good news is that we know exactly what the offset - even with different bounding boxes - is. For that you need to note down one line in the output of the deconvolution (fusion is actually the same) of the channels:
 
 `Location of pixel (0,0,0) in global coordinates is: (367.39523, 452.0, 105.90103)`
 
@@ -166,7 +166,7 @@ This for example subtracts a value of 100 from each pixel before starting, also 
 
 ### How do I choose an efficient block size for the CPU
 
-This is pretty tricky right now. You want to use as few blocks as possible given a certain size. If you choose a block size of let's say 512x512x512px you end up with an **effective block size** of maybe 475x489x432px, it depends on the size of the transformed PSF. It is computed as blocksize - kernelsize + 1. So you cannot really predict it before running a deconvolution once. It also different for each view (see [next section](Multi-View_Deconvolution#How_do_I_make_all_PSF.27s_the_same_size)). However, the **effective block size** relative to your bounding box size defines how many blocks you will require to cover your bounding box. How many blocks and **effective block size** is written to the standard out. In the future I plan to make this easier.
+This is pretty tricky right now. You want to use as few blocks as possible given a certain size. If you choose a block size of let's say 512x512x512px you end up with an **effective block size** of maybe 475x489x432px, it depends on the size of the transformed PSF. It is computed as blocksize - kernelsize + 1. So you cannot really predict it before running a deconvolution once. It also different for each view (see [next section](/plugins/multi-view-deconvolution#how-do-i-make-all-psfs-the-same-size)). However, the **effective block size** relative to your bounding box size defines how many blocks you will require to cover your bounding box. How many blocks and **effective block size** is written to the standard out. In the future I plan to make this easier.
 
 ### How do I make all PSF's the same size
 

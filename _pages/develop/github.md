@@ -44,7 +44,7 @@ Sometimes, a commit will mix whitespace changes with other changes, making the f
 Editing files
 =============
 
-If you want to modify some file's contents and you are certain that the changes do not need to be tested locally, you can hit the `Edit` button on the upper right corner after navigating to the file in question (in case you don't have *Push* permission on the repository in question, this will *fork* the project at the same time). This will let you edit the file online and commit the changes after providing a commit message (you should still try to write a [meaningful commit message](Coding_style#SCM_history), of course).
+If you want to modify some file's contents and you are certain that the changes do not need to be tested locally, you can hit the `Edit` button on the upper right corner after navigating to the file in question (in case you don't have *Push* permission on the repository in question, this will *fork* the project at the same time). This will let you edit the file online and commit the changes after providing a commit message (you should still try to write a [meaningful commit message](/develop/coding-style#scm-history), of course).
 
 Working with Pull Requests
 ==========================

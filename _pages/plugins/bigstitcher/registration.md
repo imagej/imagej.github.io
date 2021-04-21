@@ -172,4 +172,4 @@ The options for **Interest point grouping** are:
 
 Furthermore, you can specify the **interest point merge distance**. If you choose to **group interest points**, points from multiple images that lie within this distance to each other will be replaced by their center.
 
-Go back to the [main page](BigStitcher#Documentation)
+Go back to the [main page](/plugins/bigstitcher#documentation)

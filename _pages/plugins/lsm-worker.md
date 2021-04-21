@@ -12,7 +12,7 @@ LSM-W2 extracts Leaf Surface Morphology from Laser Scanning Microscopy images.
 
 ## Installation
 
- You can [follow an update site](/update-sites/following) with URL http://sites.imagej.net/Bionet.nsc/ (LSM-W2 in the [Optional Update Sites](/List_of_update_sites#Available_update_sites)).
+ You can [follow an update site](/update-sites/following) with URL http://sites.imagej.net/Bionet.nsc/ (LSM-W2 in the [Optional Update Sites](/List_of_update_sites#available-update-sites)).
 
 **Description:** The plugin can work with multi-channel multi-frame 3D images in \*.lsm format obtained from a laser scanning microscope. The main functionality of the plugin includes:
 

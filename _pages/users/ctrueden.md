@@ -83,5 +83,5 @@ So you want to be an effective software developer? Use tools!
 See also:
 
 -   The [Dotfiles](/develop/dotfiles) setup guide
--   [Key developer tools](Development#Key_developer_tools) on this wiki
+-   [Key developer tools](/develop#key-developer-tools) on this wiki
 -   [LOCI developer getting started guide](https://loci.wisc.edu/software/developing-loci-software)

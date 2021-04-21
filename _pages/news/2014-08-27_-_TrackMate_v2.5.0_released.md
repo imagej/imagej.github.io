@@ -7,7 +7,7 @@ description: test description
 
 We are happy to announce [TrackMate](/plugins/trackmate) version 2.5.0, but aren't we each time?
 
-This version brings mainly a complete rewrite of the [LAP tracker](TrackMate_algorithms#LAP_trackers), that brings major improvement in speed performance and memory usage, as well as several enhancement in the UI of [TrackScheme](/plugins/trackmate/trackscheme).
+This version brings mainly a complete rewrite of the [LAP tracker](/plugins/trackmate/algorithms#lap-trackers), that brings major improvement in speed performance and memory usage, as well as several enhancement in the UI of [TrackScheme](/plugins/trackmate/trackscheme).
 
 The new LAP tracker
 -------------------

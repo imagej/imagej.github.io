@@ -47,4 +47,4 @@ Clicking **List all** in the intensity adjustment sub-menu will list the current
 
 Clicking **Remove** in the sub-menu will remove the intensity adjustment from the currently selected image(s).
 
-Go back to the [main page](BigStitcher#Documentation)
+Go back to the [main page](/plugins/bigstitcher#documentation)

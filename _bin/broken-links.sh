@@ -11,7 +11,9 @@ prefixes="
 ij
 conference
 list-of-update-sites
+mbf
 presentations
+tickets
 workshops
 "
 

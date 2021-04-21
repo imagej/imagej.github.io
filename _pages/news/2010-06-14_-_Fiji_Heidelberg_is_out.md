@@ -319,7 +319,7 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 Developer-visible changes
 -------------------------
 
--   There are two nightly builds, one including all the submodules, and the other to make sure that Fiji builds using Java 5 (which we are stuck to, because [there will not be any Java 6 for MacOSX 10.4, or for 32-bit MacOSX 10.5](MacOSX_tips#Running_Fiji_on_Java_1.5_.2832-bit.29)).
+-   There are two nightly builds, one including all the submodules, and the other to make sure that Fiji builds using Java 5 (which we are stuck to, because [there will not be any Java 6 for MacOSX 10.4, or for 32-bit MacOSX 10.5](/platforms/macos#running-fiji-on-java-1--bit)).
 
 <!-- -->
 

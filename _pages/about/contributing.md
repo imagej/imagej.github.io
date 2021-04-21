@@ -9,7 +9,7 @@ description: test description
 
 The community encourages discussion about proposed changes on ImageJ's [communication](Communication) channels. Submit your ideas!
 
-Start on the [forum](/help), searching for discussions related to your contribution to get some context & background. It can also be helpful to [search](/Help#Searching_ImageJ_resources) for applicable issues and plans across the spectrum of ImageJ resources. The ImageJ community believes that [public discussion is important](Philosophy#Open_source) so that ideas are exposed to healthy alternate points of view rather than lost.
+Start on the [forum](/help), searching for discussions related to your contribution to get some context & background. It can also be helpful to [search](/help#searching-imagej-resources) for applicable issues and plans across the spectrum of ImageJ resources. The ImageJ community believes that [public discussion is important](/develop/philosophy#open-source) so that ideas are exposed to healthy alternate points of view rather than lost.
 
 If you are interested in helping to tackle open issues, see the [wish list](/develop/wish-list) page.
 
@@ -20,7 +20,7 @@ This site, imagej.net, is a wiki (similar to the {% include wikipedia title='Wik
 
 If you are an ImageJ user, contributing documentation is an easy way to give back to the community without needing to learn software development skills.
 
-If you are a plugin author, please consider [documenting your plugin on this site](Distribution#Documenting_your_extension). You can have a look at the page [How\_to\_make\_a\_new\_tutorial](/tutorials/make-a-new-tutorial).
+If you are a plugin author, please consider [documenting your plugin on this site](/develop/distributing#documenting-your-extension). You can have a look at the page [How\_to\_make\_a\_new\_tutorial](/tutorials/make-a-new-tutorial).
 
 When in doubt, discuss your ideas publicly on the Image.sc [Forum](/help)!
 

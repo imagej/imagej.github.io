@@ -82,7 +82,7 @@ Bake BDV manual transform
 
 The BigDataViewer offers its own functionality for transforming views or view groups. Clicking {% include key content='t' %} in the BigDataViewer window will start the transformation. Now, you can transform the views via clicking and dragging the mouse. Click {% include key content='t' %} again to apply the transformation or {% include key content='Esc' %} to cancel the transformation.
 
-The transformation will affect the **current view (group)**. Views or groups can be selected in the **visibility and grouping** window (press {% include key content='F6' %} in BigDataViewer or open it via the menu). For details on view transformation in BigDataViewer, please refer to the corresponding [documentation](BigDataViewer#Usage).
+The transformation will affect the **current view (group)**. Views or groups can be selected in the **visibility and grouping** window (press {% include key content='F6' %} in BigDataViewer or open it via the menu). For details on view transformation in BigDataViewer, please refer to the corresponding [documentation](/plugins/bdv#usage).
 
 Normally, the manual transformations from BDV are not propagated to BigStitcher/Multiview Reconstruction and thus will be lost once you close the BigDataViewer.
 
@@ -106,4 +106,4 @@ You can choose to **Ignore scaling factor from BigDataViewer** - this way, we wi
 
 Note that the identity transformation corresponds to an xy-View of the data in BDV. To avoid confusion, we advise to reset the view (by clicking {% include key content='Shift\|Z' %} in the BDV window) before you start the interactive reorientation.
 
-Go back to the [main page](BigStitcher#Documentation)
+Go back to the [main page](/plugins/bigstitcher#documentation)

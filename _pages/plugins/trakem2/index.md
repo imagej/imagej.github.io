@@ -96,7 +96,7 @@ B. Create a preprocessor script and set it to all images. For example, a [beansh
 
 To set the script to all images, save the above to a file named "whatever.bsh" (notice the filename extension ".bsh") and then right-click on the TrakEM2 canvas and choose "Script - Set preprocessor script layer-wise", and choose the whole range of layers. This will set the script to every image of every layer, and trigger mipmap regeneration for every image. When TrakEM2 loads the image, the script will run on the image before TrakEM2 ever sees its contents.
 
-The preprocessor script gives you maximum power: do whatever you want with the image. For example, [ normalize the image](Jython_Scripting_Examples#Correct_illumination_in_a_stack__apply_the_illumination_of_one_slice_to_all_others) relative to a known good mean and standard deviation for your data set.
+The preprocessor script gives you maximum power: do whatever you want with the image. For example, [ normalize the image](/scripting/jython/examples#correct-illumination-in-a-stack-apply-the-illumination-of-one-slice-to-all-others) relative to a known good mean and standard deviation for your data set.
 
 ### For regenerating mipmaps the fastest possible
 

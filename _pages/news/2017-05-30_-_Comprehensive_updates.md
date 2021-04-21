@@ -10,14 +10,14 @@ Today, a lot of work on [ImageJ](/about), [Fiji](/fiji) and [SciJava](SciJava) c
 ImageJ in Jupyter notebooks
 ---------------------------
 
-The most exciting news is that, as [announced on the ImageJ forum](http://forum.imagej.net/t/jupyter-notebook-for-imagej/5421), there is now a {% include github org='hadim' repo='scijava-jupyter-kernel' label='SciJava Jupyter Kernel' %} enabling ImageJ to be used with [Jupyter Notebook](https://jupyter.org/) in all of the [supported scripting languages](Scripting#Supported_languages).
+The most exciting news is that, as [announced on the ImageJ forum](http://forum.imagej.net/t/jupyter-notebook-for-imagej/5421), there is now a {% include github org='hadim' repo='scijava-jupyter-kernel' label='SciJava Jupyter Kernel' %} enabling ImageJ to be used with [Jupyter Notebook](https://jupyter.org/) in all of the [supported scripting languages](/scripting#supported-languages).
 
 Please peruse the [ImageJ Tutorial notebooks](/tutorials) for examples of this kernel in action!
 
 Sweeping component updates
 --------------------------
 
-Nearly all components of the [ImageJ software stack](Architecture#Definitions), as well nearly all [Fiji](/fiji) plugins, saw new releases [unifying and updating metadata](http://forum.imagej.net/t/split-boms-from-parent-configuration/2563) to better document [who is responsible for maintaining each component of the software](/Governance#SciJava_team_roles). This metadata update has been in the works for more than 18 months; the next step will be to [autogenerate the sidebars of component wiki pages](https://github.com/scijava/mediawiki-maven-info) so that plugin authors no longer need to manually keep wiki pages in sync. For technical details, see {% include github org='fiji' repo='fiji' issue='121' label='fiji/fiji\#121' %}.
+Nearly all components of the [ImageJ software stack](/develop/architecture#definitions), as well nearly all [Fiji](/fiji) plugins, saw new releases [unifying and updating metadata](http://forum.imagej.net/t/split-boms-from-parent-configuration/2563) to better document [who is responsible for maintaining each component of the software](/about/governance#scijava-team-roles). This metadata update has been in the works for more than 18 months; the next step will be to [autogenerate the sidebars of component wiki pages](https://github.com/scijava/mediawiki-maven-info) so that plugin authors no longer need to manually keep wiki pages in sync. For technical details, see {% include github org='fiji' repo='fiji' issue='121' label='fiji/fiji\#121' %}.
 
 This update also brings Fiji much closer to complete synchronization with the {% include github org='fiji' repo='fiji' label='fiji/fiji' %} source repository. Historically, there have been differences between the exact versions of components specified in the Fiji sources, versus those actually present on the Fiji update site at any given time. But we have been working very hard to reconcile those differences, such that the Fiji update site can ultimately be driven directly by what the source code specifies. For technical details, see {% include github org='fiji' repo='fiji' issue='37' label='fiji/fiji\#37' %}, {% include github org='fiji' repo='fiji' issue='38' label='fiji/fiji\#38' %} and {% include github org='fiji' repo='fiji' issue='39' label='fiji/fiji\#39' %}.
 

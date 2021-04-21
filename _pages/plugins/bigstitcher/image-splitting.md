@@ -40,4 +40,4 @@ Here, you can set
 
 You can the open the split dataset (XML) as you would any other dataset and reconstruct it in BigStitcher.
 
-Go back to the [main page](BigStitcher#Documentation)
+Go back to the [main page](/plugins/bigstitcher#documentation)

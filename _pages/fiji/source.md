@@ -5,7 +5,7 @@ categories: Development
 description: test description
 ---
 
-This page will give you an idea how Fiji's source code is organized. Every directory referred to is relative to the Fiji root, i.e. the directory into which you [cloned fiji.git](Git_mini_howto#Cloning).
+This page will give you an idea how Fiji's source code is organized. Every directory referred to is relative to the Fiji root, i.e. the directory into which you [cloned fiji.git](/develop/git/mini-howto#cloning).
 
 The Fiji launcher
 -----------------

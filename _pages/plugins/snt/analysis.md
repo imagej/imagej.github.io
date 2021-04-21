@@ -42,7 +42,7 @@ Alternatively, for precise positioning of the center of analysis:
 
 </div>
 
-In addition to the Sholl Profile plot and table, the output of the analysis can be visualized as a color mapping of the reconstruction and as a [Sholl Image](/Simple_Neurite_Tracer:_Sholl_analysis#Sholl_Image). To color code the tracing, choose *Color coded paths* from the *Annotations* drop-down menu and select a Lut from the *Annotations Lut* drop-down menu before pressing *Run Analysis*. To output the Sholl Image, choose *3D viewer labels image* from the *Annotations* drop-down menu and select the desired Lut before running the analysis.
+In addition to the Sholl Profile plot and table, the output of the analysis can be visualized as a color mapping of the reconstruction and as a [Sholl Image](/plugins/simple-neurite-tracer/sholl-analysis#sholl-image). To color code the tracing, choose *Color coded paths* from the *Annotations* drop-down menu and select a Lut from the *Annotations Lut* drop-down menu before pressing *Run Analysis*. To output the Sholl Image, choose *3D viewer labels image* from the *Annotations* drop-down menu and select the desired Lut before running the analysis.
 
 <div align="center">
 
@@ -86,7 +86,7 @@ To quickly measure all existing paths with a common set of statistics, choose {%
 
 To get measurements only on a select group of Paths, first select or filter for the Paths you want to measure in the Path Manager, then choose either command from the {% include bc path='Analyze'%} menu in the Path Manager.
 
-Batch measurements of reconstructions can be accomplished via scripting. See *Measure\_Multiple\_Files.py* in the SNT [Script Templates](/SNT:_Scripting#Script_Templates) for a basic example. \[\[Image:Snt-Measure-Results-Table.png\|none\|thumb\|1000px\|*Measure...*
+Batch measurements of reconstructions can be accomplished via scripting. See *Measure\_Multiple\_Files.py* in the SNT [Script Templates](/plugins/snt/scripting#script-templates) for a basic example. \[\[Image:Snt-Measure-Results-Table.png\|none\|thumb\|1000px\|*Measure...*
 
 `results]]`
 
@@ -100,7 +100,7 @@ Dendrogram Viewer
 
 The viewer provides controls for orientation, zoom level, panning, vertex editing and traversal as well as options to display vertex labels and edge weights (which by default are the euclidean distances between adjacent vertices). To see the available key shortcuts, right click on the viewer and choose *Available Shortcuts...*. The plot may be exported in several file formats, including HTML, PNG and SVG.
 
-Fine-grained programmatic control over SNT's Graph objects is achieved using the [JGraphT API](https://jgrapht.org/javadoc/) in a script. Also relevant is the [sc.fiji.snt.analysis.graph](http://fiji.github.io/SNT/sc/fiji/snt/analysis/graph/package-frame.html) package which provides high-level tools for Graph creation and conversion. See *Graph\_Analysis.py* in the SNT [Script Templates](/SNT:_Scripting#Script_Templates) for a basic example. <img src="/media/Snt-Dendrogram-Viewer.png" title="fig:Dendrogram Viewer" width="300" alt="Dendrogram Viewer" />
+Fine-grained programmatic control over SNT's Graph objects is achieved using the [JGraphT API](https://jgrapht.org/javadoc/) in a script. Also relevant is the [sc.fiji.snt.analysis.graph](http://fiji.github.io/SNT/sc/fiji/snt/analysis/graph/package-frame.html) package which provides high-level tools for Graph creation and conversion. See *Graph\_Analysis.py* in the SNT [Script Templates](/plugins/snt/scripting#script-templates) for a basic example. <img src="/media/Snt-Dendrogram-Viewer.png" title="fig:Dendrogram Viewer" width="300" alt="Dendrogram Viewer" />
 
 Comparing Reconstructions
 =========================

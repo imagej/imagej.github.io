@@ -72,4 +72,4 @@ Usage of Previous version
 
 As this usage guide is still work in progress, please refer to [Multi-View\_Deconvolution](/plugins/multi-view-deconvolution) for now.
 
-Go back to the [main page](BigStitcher#Documentation)
+Go back to the [main page](/plugins/bigstitcher#documentation)

@@ -33,11 +33,11 @@ How to use the Grid/Collection Stitching plugin
     -   If Prairie was used for data collection, ensure that the file selected is a .xml or .cfg
 -   Select a fusion method.
     -   Linear blending will obscure the seams between tiles, but will take a longer amount of time. Without it, tile lines will be clearly seen if the image is to be blown up. To save time, only use linear blending for presentation pieces.
-        -   To learn about other fusion methods, please visit the [Stitching](Image_Stitching#Pairwise_Stitching) page.
+        -   To learn about other fusion methods, please visit the [Stitching](/plugins/image-stitching#pairwise-stitching) page.
 -   if Prairie or Wiscan are used, uncheck "compute overlap." Both softwares calculate fairly accurate coordinates beforehand.
 -   Reduce "Increase overlap" to 0 and uncheck subpixel accuracy
 -   If the data computed is too large for computer memory, check "use virtual memory." This will be considerably slower, but will save RAM
-    -   Alternatively, [more memory can be allocated](Grid_Collection_Stitching_Plugin#Memory_Allocation) to the Fiji operation
+    -   Alternatively, [more memory can be allocated](Grid_Collection_Stitching_Plugin#memory-allocation) to the Fiji operation
 -   Click ok and the images will begin to be stitched together.
 
 Troubleshooting with the Grid/Collection Stitching plugin

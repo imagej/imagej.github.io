@@ -19,51 +19,51 @@ Since the research focus of our group is on 3D imaging, all of our plugins are a
 
 Each one of the new plugins includes a help button where basic remarks about the functionality and a description of the parameters is provided. This feature does not correspond with the ImageJ philosophy assuming the help documentation to be available on the internet only. However, we consider the help button as a handy feature.
 
-The user might be surprised to realize that some of the tools are apparently already existing in other plugins of ImageJ or Fiji. Those tools are for instance ["FFT 2D 3D"](#FFT_2D_3D), ["Image Calculator"](#Image_Calculator), ["Distance Transform"](#Distance_Transform), ["Transform 2D 3D"](#Transform_2D_3D) and others. The reason for this apparent redundancy is that the original tools incorporate major restrictions which are elimintated in the new plugins. Each one of the available tools and its advantage is shortly being presented below.
+The user might be surprised to realize that some of the tools are apparently already existing in other plugins of ImageJ or Fiji. Those tools are for instance ["FFT 2D 3D"](#fft-2d-3d), ["Image Calculator"](#image-calculator), ["Distance Transform"](#distance-transform), ["Transform 2D 3D"](#transform-2d-3d) and others. The reason for this apparent redundancy is that the original tools incorporate major restrictions which are elimintated in the new plugins. Each one of the available tools and its advantage is shortly being presented below.
 
 The following plugins are included:
 
 **Data Analysis:**
 
--   ["Closest Cluster"](#Closest_Cluster): Engine for finding the closest candidate to a list of chemical substances
--   ["Import DMP"](#Import_DMP): Import elementary image data from ".dmp" files (e.g. originating from [MATLAB](/scripting/matlab))
+-   ["Closest Cluster"](#closest-cluster): Engine for finding the closest candidate to a list of chemical substances
+-   ["Import DMP"](#import-dmp): Import elementary image data from ".dmp" files (e.g. originating from [MATLAB](/scripting/matlab))
 
 **Filtering:**
 
--   ["Anisotropic Diffusion"](#Anisotropic_Diffusion): Anisotropic diffusion
--   ["Canny Edge"](#Canny_Edge): Canny edge detection
--   ["Cluster Image"](#Cluster_Image): Clustering of images
--   ["Disconnect Particles"](#Disconnect_Particles): Particle disconnection
--   ["Distance Transform"](#Distance_Transform): Distance transform
--   ["FFT 2D 3D"](#FFT_2D_3D): Fast Fourier transform of arbitrary sized images
--   ["Image Calculator"](#Image_Calculator): Utterly generalized image calculator
--   ["Labeling 2D 3D"](#Labeling_2D_3D): Labeling of disconnected binary mask objects
--   ["Median 2D 3D"](#Median_2D_3D): Conventional and multidimensional median filtering
--   ["Remove Background"](#Remove_Background): Remove background from image by polynomial approximation
--   ["Roundness 2D 3D"](#Roundness_2D_3D): Roundness filter
--   ["Skeletonization 2D 3D"](#Skeletonization_2D_3D): Skeletonization of binary masks
--   ["Stripe Filter"](#Stripe_Filter): Removal of horizontal and vertical stripes
--   ["Transform 2D 3D"](#Transform_2D_3D): Generalized image transforms
--   ["Wavelets 2D"](#Wavelets_2D): Wavelet decomposition and reconstruction
+-   ["Anisotropic Diffusion"](#anisotropic-diffusion): Anisotropic diffusion
+-   ["Canny Edge"](#canny-edge): Canny edge detection
+-   ["Cluster Image"](#cluster-image): Clustering of images
+-   ["Disconnect Particles"](#disconnect-particles): Particle disconnection
+-   ["Distance Transform"](#distance-transform): Distance transform
+-   ["FFT 2D 3D"](#fft-2d-3d): Fast Fourier transform of arbitrary sized images
+-   ["Image Calculator"](#image-calculator): Utterly generalized image calculator
+-   ["Labeling 2D 3D"](#labeling-2d-3d): Labeling of disconnected binary mask objects
+-   ["Median 2D 3D"](#median-2d-3d): Conventional and multidimensional median filtering
+-   ["Remove Background"](#remove-background): Remove background from image by polynomial approximation
+-   ["Roundness 2D 3D"](#roundness-2d-3d): Roundness filter
+-   ["Skeletonization 2D 3D"](#skeletonization-2d-3d): Skeletonization of binary masks
+-   ["Stripe Filter"](#stripe-filter): Removal of horizontal and vertical stripes
+-   ["Transform 2D 3D"](#transform-2d-3d): Generalized image transforms
+-   ["Wavelets 2D"](#wavelets-2d): Wavelet decomposition and reconstruction
 
 **Reconstruction:**
 
--   ["Filtered Backprojection"](#Filtered_Backprojection): Filtered backprojection of projections
--   ["Projections Sinograms"](#Projections_Sinograms): Conversion of sets of projections into sinograms and vice versa
--   ["Reconstruct 3D from 2D"](#Reconstruct_3D_from_2D): Reconstruct virtual 3D structures from given 2D structures
+-   ["Filtered Backprojection"](#filtered-backprojection): Filtered backprojection of projections
+-   ["Projections Sinograms"](#projections-sinograms): Conversion of sets of projections into sinograms and vice versa
+-   ["Reconstruct 3D from 2D"](#reconstruct-3d-from-2d): Reconstruct virtual 3D structures from given 2D structures
 
 **Evaluation:**
 
--   ["Particle Size Distribution"](#Particle_Size_Distribution): Calculate particle size distribution of binary particle structures
--   ["Phase Image Evaluation"](#Phase_Image_Evaluation): Evaluate images consisting of a number of homogeneous phases
--   ["Pore Size Distribution"](#Pore_Size_Distribution): Calculate pore size distribution of binary pore structures
+-   ["Particle Size Distribution"](#particle-size-distribution): Calculate particle size distribution of binary particle structures
+-   ["Phase Image Evaluation"](#phase-image-evaluation): Evaluate images consisting of a number of homogeneous phases
+-   ["Pore Size Distribution"](#pore-size-distribution): Calculate pore size distribution of binary pore structures
 
 **Editors and Viewers:**
 
--   ["Display Volume"](#Display_Volume): Interactively visualize 3D volume by an orthogonal slicer
--   ["Edit Label Region"](#Edit_Label_Region): Engine for interactive editing of labeled binary 2D or 3D particle structures
--   ["Segment Phases 3D"](#Segment_Phases_3D): Engine for basic interactive segmentation of images and volumes
--   ["View 3D Mask"](#View_3D_Mask): Rendering of 3D image masks
+-   ["Display Volume"](#display-volume): Interactively visualize 3D volume by an orthogonal slicer
+-   ["Edit Label Region"](#edit-label-region): Engine for interactive editing of labeled binary 2D or 3D particle structures
+-   ["Segment Phases 3D"](#segment-phases-3d): Engine for basic interactive segmentation of images and volumes
+-   ["View 3D Mask"](#view-3d-mask): Rendering of 3D image masks
 
 Data Analysis
 -------------
@@ -76,7 +76,7 @@ This plugin provides an engine for finding the most probable chemical compositio
 
 A step by step tutorial for the clustering and phase identification of EDS maps is provided in the manual entitled ["Instructions for the Phase Clustering and Identification Using the Plugins for ImageJ"](/media/xClusteringPhaseIdentification.pdf).
 
-The program can be used in combination with the ["Cluster Image"](#Cluster_Image) plugin. Thereby for a resulting set of cluster centers, the program provides the most probable cluster membership.
+The program can be used in combination with the ["Cluster Image"](#cluster-image) plugin. Thereby for a resulting set of cluster centers, the program provides the most probable cluster membership.
 
 -   {% include citation last='Münch' first='B' last2='Martin' first2='L' last3='Leemann' first3='A' title='Segmentation of Elemental EDS Maps by Means of Multiple Clustering Combined with Phase Identification' journal='Journal of Microscopy' volume='260(3)' pages='411-426' year='2015' %}
 
@@ -155,7 +155,7 @@ Fuzzy c-means clustering \[Bezdek1984\] allows a data point to be assigned to mo
 
 Expectation-maximization (EM) clustering \[Dempster1977\] iteratively finds the maximum likelyhood estimation of a Gaussian distribution fit of the original N-dimensional distribution of pixel values. The EM iteration alternates between performing an expectation (E) step, which creates a function for the expectation of the log-likelihood evaluated using the current estimate for the parameters, and a maximization (M) step, which computes parameters maximizing the expected log-likelihood found on the E step.
 
-The plugin also allows clustering by using ![here\|30px](/media/XFig6 3 3.jpg "fig:here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) (Environment for Developing KDD-Applications Supported by Index-Structures, developed by the ![here\|30px](/media/XFig6 3 3.jpg "fig:here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) team http://elki.dbs.ifi.lmu.de/wiki/Team). ![here\|30px](/media/XFig6 3 3.jpg "fig:here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) is an open source data mining software written in Java. In addition to multiple features, ![here\|30px](/media/XFig6 3 3.jpg "fig:here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) offers various ways for clustering. A ![here\|30px](/media/XFig6 3 3.jpg "fig:here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) wrapper for the clustering of images is included into the ["Image Clustering"](#Image_Clustering) plugin. As soon as the respective elki.jar bundle is copied to the "plugins" directory of the current ImageJ version, image clustering with ![here\|30px](/media/XFig6 3 3.jpg "fig:here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) is possible. The required specification parameters for the ![here\|30px](/media/XFig6 3 3.jpg "fig:here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) clustering algorithm together with its parameters (details see ![here\|30px](/media/XFig6 3 3.jpg "fig:here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) documentation) can be defined by the user.
+The plugin also allows clustering by using ![here\|30px](/media/XFig6 3 3.jpg "fig:here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) (Environment for Developing KDD-Applications Supported by Index-Structures, developed by the ![here\|30px](/media/XFig6 3 3.jpg "fig:here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) team http://elki.dbs.ifi.lmu.de/wiki/Team). ![here\|30px](/media/XFig6 3 3.jpg "fig:here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) is an open source data mining software written in Java. In addition to multiple features, ![here\|30px](/media/XFig6 3 3.jpg "fig:here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) offers various ways for clustering. A ![here\|30px](/media/XFig6 3 3.jpg "fig:here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) wrapper for the clustering of images is included into the ["Image Clustering"](#image-clustering) plugin. As soon as the respective elki.jar bundle is copied to the "plugins" directory of the current ImageJ version, image clustering with ![here\|30px](/media/XFig6 3 3.jpg "fig:here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) is possible. The required specification parameters for the ![here\|30px](/media/XFig6 3 3.jpg "fig:here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) clustering algorithm together with its parameters (details see ![here\|30px](/media/XFig6 3 3.jpg "fig:here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) documentation) can be defined by the user.
 
 As an example, ESEM images of a natural cement analogue (Maqarin, Jordania) is provided in the figure to the upper right. A backscatter electron microscope (BSE) image (top left) and image maps acquired from energy-dispersive X-ray spectroscopy (EDX) at the same location forked into 14 different elements (see figure above) are used as the basis for clustering. Thus together with the BSE image, the clustering is achieved from a 15-dimensional vector space. In the figure below, some results from different clustering algorithms and parameter settings are displayed. The first row shows results from the k-means, the second one from the mean shift, and the third one from fuzzy c-means clustering. K-means clustering (1st row) requires the number of clusters as an input parameter. The results for 2 (left), 3, 5 and 16 (right) clusters are provided. Slightly different results provides mean shift clustering (2nd row) which requires the size of the seeking perimeter as input parameter. It is determined at 100 (left), 70, 60 and at 50 (right). Fuzzy c-means clustering (3rd row) requires the number of clusters and the fuzziness as input parameters. The results are displayed for 5 clusters at fuzziness 1.1 (left) and 4.0, for 16 clusters at fuzziness 2.0, as well as an image showing its fuzziness membership to the cluster with the highest respective ranking at each location (right).
 
@@ -473,7 +473,7 @@ Particle analysis requires labeling of the previously determined particle mask w
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <figure><img src="/media/XFig6 8.jpg" title="Particle image (left) and its labeling (right)" width="400" alt="Particle image (left) and its labeling (right)" /><figcaption aria-hidden="true">Particle image (left) and its labeling (right)</figcaption></figure> |
 
-An example of labeling is given in the center and right images in the ["Disconnect Particles"](#Disconnect_Particles) section, where the center image shows the particle mask before the disconnection procedure and before labeling. The disconnection procedure separates the single particles. After this step, the object mask is still binary and labeling is applied to colorize the particles in order to be able to distinguish them by their object values.
+An example of labeling is given in the center and right images in the ["Disconnect Particles"](#disconnect-particles) section, where the center image shows the particle mask before the disconnection procedure and before labeling. The disconnection procedure separates the single particles. After this step, the object mask is still binary and labeling is applied to colorize the particles in order to be able to distinguish them by their object values.
 
 ### Median 2D 3D
 
@@ -626,7 +626,7 @@ An example of a 2D particle image, of its mask and some particle evaluations is 
 
 ### Phase Image Evaluation
 
-This plugins provides an evaluation of phase images \[Leemann2006, Leemann2010\] containing labeled phases. For instance, labeled images might be created interactively with the help of the plugin ["Segment Phases 3D"](#Segment_Phases_3D), or even automatically with the plugin ["Cluster Image"](#Cluster_Image).
+This plugins provides an evaluation of phase images \[Leemann2006, Leemann2010\] containing labeled phases. For instance, labeled images might be created interactively with the help of the plugin ["Segment Phases 3D"](#segment-phases-3d), or even automatically with the plugin ["Cluster Image"](#cluster-image).
 
 The phase image evaluation calculates some parameters of all phases, including the percental phase contents and the phase areas. Additionally, mean image values for each phase can be provided, if one or more gray value images associated to the current phase image are provided.
 
@@ -673,17 +673,17 @@ As the plugin is activated, the orthogonal slicer acts like a common image stack
 
 Tip: if you add a shortcut for the "Display Volume" plugin, it is easily possible to switch back and forth from a conventional image stack to an orthogonal slicer and vice verca.
 
-<table><tbody><tr class="odd"><td><p>style="vertical-align:top" |{% include thumbnail src='/media/XFig9 1.jpg' title='Orthogonal slicer view of the nanotomographic 3D volume from cement paste as displayed in the section for the <a href="#Pore_Size_Distribution">"Pore Size Distribution"</a> plugin (top).'%}</p></td></tr></tbody></table>
+<table><tbody><tr class="odd"><td><p>style="vertical-align:top" |{% include thumbnail src='/media/XFig9 1.jpg' title='Orthogonal slicer view of the nanotomographic 3D volume from cement paste as displayed in the section for the <a href="#pore-size-distribution">"Pore Size Distribution"</a> plugin (top).'%}</p></td></tr></tbody></table>
 
-As an example, the above figure displays the view of the orthogonal slicer applied to the 3D volume displayed in the ["Pore Size Distribution"](#Pore_Size_Distribution) section (top). The red cross-lines of the slicer show the current 3D cursor position which allows interactively focusing any point in the 3D space. The position vector and the associated image value are plotted to the ImageJ window (top).
+As an example, the above figure displays the view of the orthogonal slicer applied to the 3D volume displayed in the ["Pore Size Distribution"](#pore-size-distribution) section (top). The red cross-lines of the slicer show the current 3D cursor position which allows interactively focusing any point in the 3D space. The position vector and the associated image value are plotted to the ImageJ window (top).
 
 <figure><img src="/media/XFig9 2.jpg" width="180" /></figure>
 
 ### Edit Label Region
 
-This plugin provides an engine for interactive editing of label images or label volumes (i.e. stacks of images). Label images are images holding a set of regions at one specific gray level or color per region (example see figure in ["Disconnect Particles"](#Disconnect_Particles), right). Operations such as deleting, joining, eroding, dilating, opening, or closing of manually selected 3D objects are supported. There is also an operation for deleting objects smaller than a certain size. For stacks of images, all operations can be performed either in slice-wise 2D, or truly volumetrically in 3D. The interface of the engine is visualized in the figure to the right.
+This plugin provides an engine for interactive editing of label images or label volumes (i.e. stacks of images). Label images are images holding a set of regions at one specific gray level or color per region (example see figure in ["Disconnect Particles"](#disconnect-particles), right). Operations such as deleting, joining, eroding, dilating, opening, or closing of manually selected 3D objects are supported. There is also an operation for deleting objects smaller than a certain size. For stacks of images, all operations can be performed either in slice-wise 2D, or truly volumetrically in 3D. The interface of the engine is visualized in the figure to the right.
 
-{% include thumbnail src='/media/XFig9 3.jpg' title='Engine for 3D segmentation (top right) which is currently operating on two gray level images (left). The image at the bottom right is the interactively segmented phase image which is currently containing four different phases (see top left figure for the plugin ["Phase Image Evaluation"](#Phase_Image_Evaluation)).'%}
+{% include thumbnail src='/media/XFig9 3.jpg' title='Engine for 3D segmentation (top right) which is currently operating on two gray level images (left). The image at the bottom right is the interactively segmented phase image which is currently containing four different phases (see top left figure for the plugin ["Phase Image Evaluation"](#phase-image-evaluation)).'%}
 
 ### Segment Phases 3D
 
@@ -717,13 +717,13 @@ For understanding the basic principle of working, consider the following example
 -   Due to additional event listeners, an open "Segment Phases 3D" instance raises the time that is needed when browsing through the slices of an image stack. This blocking effect might be annoying. In order to bypass the listeners and thus to enhance the speed, the check box "Disconnect" might be temporarily checked (and unchecked, if "Segment Phases 3D" is being used again).
 -   By checking the check box "Record Script", a text editor is opened and each performed action recorded. The created text file can later be adjusted, stored to file, reloaded and be run by pressing the button "Run Script".
 
-The segmentation engine is visualized in the figure to the right while operating on two SEM images of cement paste (OPC CEM 1) acquired at the same location but at different microscope settings. The color image to the bottom right shows the currently constructed phase image consisting of 4 different overlapping phases. The same image in non-overlapping mode is displayed in the section for the ["Phase Image Evaluation"](#Phase_Image_Evaluation) plugin, top left. Currently, the phase named "Grain" is active and overlayed to the top left gray level image in transparent blue. Like this, any current operation would now be achieved to the "Grain" phase. The rectangle and heart shapes were drawn manually with the selection tools.
+The segmentation engine is visualized in the figure to the right while operating on two SEM images of cement paste (OPC CEM 1) acquired at the same location but at different microscope settings. The color image to the bottom right shows the currently constructed phase image consisting of 4 different overlapping phases. The same image in non-overlapping mode is displayed in the section for the ["Phase Image Evaluation"](#phase-image-evaluation) plugin, top left. Currently, the phase named "Grain" is active and overlayed to the top left gray level image in transparent blue. Like this, any current operation would now be achieved to the "Grain" phase. The rectangle and heart shapes were drawn manually with the selection tools.
 
-{% include thumbnail src='/media/XFig9 4.jpg' title='Triangulated and shaded visualization of the 3D volume in the plugin for ["Pore Size Distribution"](#Pore_Size_Distribution) and ["Display Volume"](#Display_Volume).'%}
+{% include thumbnail src='/media/XFig9 4.jpg' title='Triangulated and shaded visualization of the 3D volume in the plugin for ["Pore Size Distribution"](#pore-size-distribution) and ["Display Volume"](#display-volume).'%}
 
 ### View 3D Mask
 
-This plugin provides a 3D viewer of image and skeleton masks. The original data base should be a stack of images. An image mask may contain the mask of arbitrary objects, while skeleton masks should contain objects which are previously skeletonized in 3D. 3D skeletonization can be performed by previously calling the ["Skeletonization 2D 3D"](#Skeletonization_2D_3D) plugin.
+This plugin provides a 3D viewer of image and skeleton masks. The original data base should be a stack of images. An image mask may contain the mask of arbitrary objects, while skeleton masks should contain objects which are previously skeletonized in 3D. 3D skeletonization can be performed by previously calling the ["Skeletonization 2D 3D"](#skeletonization-2d-3d) plugin.
 
 For 3D shading, the image masks can be either triangulated or voxelized. The triangulation is performed by using the well-known marching cubes algorithm \[Lorensen1987\], while voxelization is performed by a technique of Artzy et al (see reference below).
 
@@ -733,7 +733,7 @@ The current transform matrix is always stored to a text file located in the fold
 
 The 3D viewer also contains a button to the bottom called "save canvas as JPEG". By pressing it, the current view can be stored to JPG image. The resolution of this image corresponds to the current resolution of the 3D window, i.e. to its window size.
 
-As an example, a triangulated view of the segmented 3D volume is presented in the image to the right (see nanotomographic 3D sample from cement paste, image of plugins ["Pore Size Distribution"](#Pore_Size_Distribution) (top image) and of ["Display Volume"](#Display_Volume)). Other examples were given in the plugin description for ["Reconstruct 3D from 2D"](#Reconstruct_3D_from_2D) and for ["Skeletonization 2D 3D"](#Skeletonization_2D_3D) showing the original 3D scene, its skeleton and its skeleton after resizing its elements to their size determined by the distance transform values (see ["Distance Transform"](#Distance_Transform) plugin).
+As an example, a triangulated view of the segmented 3D volume is presented in the image to the right (see nanotomographic 3D sample from cement paste, image of plugins ["Pore Size Distribution"](#pore-size-distribution) (top image) and of ["Display Volume"](#display-volume)). Other examples were given in the plugin description for ["Reconstruct 3D from 2D"](#reconstruct-3d-from-2d) and for ["Skeletonization 2D 3D"](#skeletonization-2d-3d) showing the original 3D scene, its skeleton and its skeleton after resizing its elements to their size determined by the distance transform values (see ["Distance Transform"](#distance-transform) plugin).
 
 -   {% include citation last='Lorensen' first='W E' last2='Cline' first2='H E' title='Marching Cubes: a High Resolution 3D Surface Construction Algorithm' journal='Computer Graphics' volume='21(4)' pages='163-169' year='1987' %}
 

@@ -114,7 +114,7 @@ Installing/Updating
 How can I verify that my ImageJ is really 100% up to date?
 ----------------------------------------------------------
 
-ImageJ will report itself as "up to date" as long as all files installed in your ImageJ match the latest versions from the remote update sites. However, there are cases where your ImageJ may report itself as "up to date" but still be missing critical files, or have mismatching versions (e.g., the dreaded [`NoSuchMethodError`](Troubleshooting#NoSuchMethodError_or_NoClassDefFoundError)).
+ImageJ will report itself as "up to date" as long as all files installed in your ImageJ match the latest versions from the remote update sites. However, there are cases where your ImageJ may report itself as "up to date" but still be missing critical files, or have mismatching versions (e.g., the dreaded [`NoSuchMethodError`](/help/troubleshooting#nosuchmethoderror-or-noclassdeffounderror)).
 
 To be certain, run {% include bc path='Help | Update...'%}, and click the "Advanced mode" button. Then verify the following View Options:
 
@@ -139,8 +139,8 @@ Downgrading is generally not recommended as a long-term solution, but can be han
 *If you need to downgrade to avoid a critical bug, please [report that bug](/help/report-a-bug) to the developers so that it can be fixed in a future version!*
 
 -   You can change the version of [ImageJ 1.x](/software/imagej1) used via the {% include bc path='Help | Update ImageJ...'%} menu item. This *only* changes the version of ImageJ 1.x—not all ImageJ components, [plugins](/plugins), etc.
--   You can [switch to a different version of Java](#How_do_I_launch_ImageJ_with_a_different_version_of_Java?).
--   You can [download a Fiji Life-Line version](/downloads#Fiji).
+-   You can [switch to a different version of Java](#how-do-i-launch-imagej-with-a-different-version-of-java).
+-   You can [download a Fiji Life-Line version](/downloads#fiji).
 
 Lastly, if you have not yet upgraded, and have a currently working configuration, you can make a backup copy of your ImageJ folder before upgrading. Then if the upgrade has undesirable consequences, switch back to the old copy.
 
@@ -159,7 +159,7 @@ Please download a fresh copy from [here](/downloads).
 I updated ImageJ via {% include bc path='Help | Update'%}, and now it does not start anymore!
 --------------------------------------------------------------------------------------------------
 
-See [If ImageJ does not start up](Troubleshooting#If_ImageJ_does_not_start_up) on the Troubleshooting page.
+See [If ImageJ does not start up](/help/troubleshooting#if-imagej-does-not-start-up) on the Troubleshooting page.
 
 The Updater always says *Connection refused*. Maybe it does not use the proxy?
 ------------------------------------------------------------------------------
@@ -408,7 +408,7 @@ In some cases, use of this JAR file is appropriate and convenient; for example, 
 Does ImageJ work on mobile devices such as Android?
 ---------------------------------------------------
 
-Not yet as an end-user application. But since Android is a Java-based platform, there is hope. One of the [ImageJ2](/software/imagej2) project's central design goals was a better {% include wikipedia title='Separation of concerns' text='separation of concerns'%}, which could make things like an Android version of ImageJ possible. In particular, the [core components of ImageJ2](ImageJ2#ImageJ2_is_more_than_just_an_application) are militant in their avoidance of certain Java SE packages not present in the Android version of Java (which is based on Java ME), such as {% include wikipedia title='Abstract Window Toolkit' text='Java AWT'%}.
+Not yet as an end-user application. But since Android is a Java-based platform, there is hope. One of the [ImageJ2](/software/imagej2) project's central design goals was a better {% include wikipedia title='Separation of concerns' text='separation of concerns'%}, which could make things like an Android version of ImageJ possible. In particular, the [core components of ImageJ2](/software/imagej2#imagej2-is-more-than-just-an-application) are militant in their avoidance of certain Java SE packages not present in the Android version of Java (which is based on Java ME), such as {% include wikipedia title='Abstract Window Toolkit' text='Java AWT'%}.
 
 That said, ImageJ2 has not even been compile-tested yet using an Android SDK, so there are surely many problems which would need to be resolved. In the future, the ImageJ development team hopes to set up some continuous integration surrounding Android. If you are interested in helping drive this effort forward, please see the *Android* tag on the [ImageJ forum](http://forum.imagej.net/tags/android)!
 
@@ -420,7 +420,7 @@ Community
 Why is there Fiji when there is already ImageJ? And what is this ImageJ2 about?
 -------------------------------------------------------------------------------
 
-The [ImageJ](/about), [Fiji](/fiji) and [ImageJ2](/software/imagej2) projects are very closely related. See [ImageJ\#Flavors](ImageJ#Flavors) for a thorough breakdown of the differences.
+The [ImageJ](/about), [Fiji](/fiji) and [ImageJ2](/software/imagej2) projects are very closely related. See [ImageJ\#Flavors](/about#flavors) for a thorough breakdown of the differences.
 
 See also:
 
@@ -516,7 +516,7 @@ Miscellaneous
 Why do you program in Java? Is C++ not much faster?
 ---------------------------------------------------
 
-See the [Philosophy](Philosophy#Why_Java.3F) page!
+See the [Philosophy](/develop/philosophy#why-java) page!
 
 With Oracle buying Sun and Apple deprecating Java, does Java have a future?
 ---------------------------------------------------------------------------
@@ -535,7 +535,7 @@ See [this mailing list thread](https://list.nih.gov/cgi-bin/wa.exe?A2=IMAGEJ;296
 How are you addressing the fact that with increased modularity comes increased complexity?
 ------------------------------------------------------------------------------------------
 
-See the [Philosophy](Philosophy#Convention_over_configuration) page!
+See the [Philosophy](/develop/philosophy#convention-over-configuration) page!
 
 How about a version of ImageJ for the web browser, mobile devices, etc.?
 ------------------------------------------------------------------------

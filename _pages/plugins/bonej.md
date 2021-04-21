@@ -75,7 +75,7 @@ It's important to note that algorithm is stochastic and does not guarantee exact
 
 In the first step the algorithm draws parallel lines over the input image in direction $$\mathbf{v}$$. The direction is chosen randomly. Each line segment in the image stack is sampled to find points where it changes from background to foreground, i.e. where the line enters an object. The points are called *phase changes*, in the adjacent figure they're marked with red dots. After the sampling is complete, the algorithm forms a *MIL vector*, whose length is the total length of the line segments divided by the total number of phase changes found. The MIL vector has the same direction as $$\mathbf{v}$$. Drawing and sampling the lines is repeated for $$n$$ directions, and the method creates $$n$$ MIL vectors.
 
-After the MIL vectors have been calculated, they are added to a point cloud (a collection of points) around the origin. Then the method tries solve the equation of an ellipsoid that would fit the cloud. There may be no solution, especially if there are few points. That is, the fitting may fail at which point the plug-in stops. The radii of this ellipsoid determine the degree of anisotropy (see [results](/index.php?title=BoneJ_experimental&action=submit#Results)).
+After the MIL vectors have been calculated, they are added to a point cloud (a collection of points) around the origin. Then the method tries solve the equation of an ellipsoid that would fit the cloud. There may be no solution, especially if there are few points. That is, the fitting may fail at which point the plug-in stops. The radii of this ellipsoid determine the degree of anisotropy (see [results](/plugins/bonej#results)).
 
 ![Projecting lines from a plane](/media/MilCube.png "Projecting lines from a plane")
 
@@ -112,7 +112,7 @@ It is helpful to run a convergence analysis to determine settings that lead to a
      for (nDirs = 16; nDirs <= nDirsMax; nDirs *= 2){
         for (nLines = 1; nLines <= nLinesMax; nLines *= 2){
         startTime = getTime();
-        run("/BoneJ2#Anisotropy", "inputimage=net.imagej.ImgPlus@73956688 directions="+nDirs+" lines="+nLines+" samplingincrement=1.73 recommendedmin=true printradii=true printeigens=true displaymilvectors=false instruction=\"\"");
+        run("Anisotropy", "inputimage=net.imagej.ImgPlus@73956688 directions="+nDirs+" lines="+nLines+" samplingincrement=1.73 recommendedmin=true printradii=true printeigens=true displaymilvectors=false instruction=\"\"");
             endTime = getTime();
             duration = endTime - startTime;
             setResult("nDirs", row, nDirs);
@@ -507,7 +507,7 @@ Orientation
 
 Menu path: {% include bc path="Plugins | BoneJ | Orientation" %}
 
-Sets the direction in a 2D image, without rotating the image or changing it in any way. [*Slice Geometry*](#Slice_geometry) optionally uses *Orientation* to calculate diameter, second moments of area and section moduli around anatomic axes set by the user. To apply the selected orientation to a *Slice Geometry* analysis, run *Orientation*, select axes and direction, leave the *Orientation* window open, run *Slice Geometry*, and select *Use Orientation*.
+Sets the direction in a 2D image, without rotating the image or changing it in any way. [*Slice Geometry*](#slice-geometry) optionally uses *Orientation* to calculate diameter, second moments of area and section moduli around anatomic axes set by the user. To apply the selected orientation to a *Slice Geometry* analysis, run *Orientation*, select axes and direction, leave the *Orientation* window open, run *Slice Geometry*, and select *Use Orientation*.
 
 The option to use *Orientation* will be greyed out in *Slice Geometry* if there is no active *Orientation* window. Also, in the Results table you will see a list of results that relate to the particular axis pair you have chosen. *Orientation* can handle multiple open images and will handle different images' orientation independently.
 
@@ -873,4 +873,4 @@ We recommend you cite the specific [release](https://github.com/bonej-org/BoneJ2
 Funding
 -------
 
-The redesign and porting effort to create BoneJ2 was supported by a [Wellcome Trust Biomedical Resource and Technology Development Grant](https://wellcome.ac.uk/grant-funding/people-and-projects/grants-awarded/bonej2-fullfeatured-nextgeneration-bonej-standardised). Interaction with [SciView](/plugins/sciview) was assisted by a [Royal Society International Exchange grant](https://royalsociety.org/grants-schemes-awards/grants/international-exchanges/). [*Ellipsoid Factor*](#Ellipsoid_factor) validation and improvements were funded by the UK [BBSRC](https://bbsrc.ukri.org/research/grants-search/AwardDetails/?FundingReference=BB%2fP006167%2f1).
+The redesign and porting effort to create BoneJ2 was supported by a [Wellcome Trust Biomedical Resource and Technology Development Grant](https://wellcome.ac.uk/grant-funding/people-and-projects/grants-awarded/bonej2-fullfeatured-nextgeneration-bonej-standardised). Interaction with [SciView](/plugins/sciview) was assisted by a [Royal Society International Exchange grant](https://royalsociety.org/grants-schemes-awards/grants/international-exchanges/). [*Ellipsoid Factor*](#ellipsoid-factor) validation and improvements were funded by the UK [BBSRC](https://bbsrc.ukri.org/research/grants-search/AwardDetails/?FundingReference=BB%2fP006167%2f1).

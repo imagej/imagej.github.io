@@ -164,6 +164,6 @@ See the [documentation on update sites](/update-sites) for further instructions.
 Further reading
 ===============
 
--   The SciJava [versioning guidelines](Architecture#Versioning) will help you choose appropriate version numbers for your software when performing Maven releases.
+-   The SciJava [versioning guidelines](/develop/architecture#versioning) will help you choose appropriate version numbers for your software when performing Maven releases.
 
  

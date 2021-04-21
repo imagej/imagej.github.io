@@ -31,8 +31,8 @@ MaMuT relies on and exploits the file format of the [**BigDataViewer**](/plugins
 
 If you already have such a file, skip to the next section. Otherwise, we lazily rely on the excellent BigDataViewer documentation and point directly to the BigDataViewer instructions to prepare your images, depending on whether
 
--   they are [**opened as an ImageJ stack**](BigDataViewer#Exporting_from_ImageJ_Stacks), or
--   they come from a [**SPIM processing pipeline**](BigDataViewer#Integration_with_Fiji.27s_SPIMage_Processing_Tools).
+-   they are [**opened as an ImageJ stack**](/plugins/bdv#exporting-from-imagej-stacks), or
+-   they come from a [**SPIM processing pipeline**](/plugins/bdv#integration-with-fijis-spimage-processing-tools).
 -   they come from a new [**Multiview-Reconstruction**](/plugins/multiview-reconstruction) datasets that are automatically in BigDataViewer format.
 
 Once you have prepared your images for opening in the BigDataViewer, you should have a `.xml` file and a possibly very large `.h5` file on your computer. The `.xml` file must be the output of the BigDataViewer data preparation. It should start with the following lines:
@@ -112,7 +112,7 @@ The MaMuT viewer is really a BigDataViewer window, so if you are familiar with t
 
 A little word on the BigDataViewer: The BigDataViewer was made to deal with very large images of a sample possibly acquired from several different orientations (e.g. rotating the sample in a SPIM). These different orientations (or views, but here we use this word for another notion) of the data amount to a new dimension. This dimension if more complex to handle than e.g. multiple channels, because changing the acquisition orientation generates a data block which is not aligned with the other blocks (rotated, translated, and if you change the magnification, scaled), and does not have necessary the same size. As of today, only a limited numbers of image viewers can deal with multiple orientations, and the BigDataViewer is one of them.
 
-Each of these orientations generate a data block, that we call *source* here. A source is monochromatic: if several fluorescence channels are captured under a single orientation, they each generate a source. The image data is not fully loaded in memory. It is cached efficiently following the caching strategy of the BigDataViewer (detailed [**here**](BigDataViewer#About_the_BigDataViewer_data_format)).
+Each of these orientations generate a data block, that we call *source* here. A source is monochromatic: if several fluorescence channels are captured under a single orientation, they each generate a source. The image data is not fully loaded in memory. It is cached efficiently following the caching strategy of the BigDataViewer (detailed [**here**](/plugins/bdv#about-the-bigdataviewer-data-format)).
 
 ### The tutorial dataset.
 

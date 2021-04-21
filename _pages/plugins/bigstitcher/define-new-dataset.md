@@ -32,4 +32,4 @@ A single-purpose loader to import **diSPIM** datasets produced by MicroManager.
 
 *Note: Only one xml per directory is supported right now, even if they have a different filename.*
 
-Go back to the [main page](BigStitcher#Documentation)
+Go back to the [main page](/plugins/bigstitcher#documentation)

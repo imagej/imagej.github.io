@@ -48,7 +48,7 @@ See the [Project management](/develop/project-management) page for further detai
 Source code
 -----------
 
-[ImageJ](/about) and related [SciJava](SciJava) software projects are [open source](Open_source). The code is organized into [well-separated](Architecture#Modularity) projects.
+[ImageJ](/about) and related [SciJava](SciJava) software projects are [open source](Open_source). The code is organized into [well-separated](/develop/architecture#modularity) projects.
 
 See the [source code](/develop/source) page for further details.
 

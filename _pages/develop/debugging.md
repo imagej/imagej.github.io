@@ -12,7 +12,7 @@ If you are a *user* looking to troubleshoot issues, see the [Troubleshooting](/h
 Launching ImageJ in debug mode
 ==============================
 
-To debug problems with ImageJ, it is often helpful to launch it in debug mode. See the [Troubleshooting](Troubleshooting#Launching_ImageJ_from_the_console) page for instructions.
+To debug problems with ImageJ, it is often helpful to launch it in debug mode. See the [Troubleshooting](/help/troubleshooting#launching-imagej-from-the-console) page for instructions.
 
 Debugging plugins in an IDE (Netbeans, IntelliJ, Eclipse, etc)
 ==============================================================
@@ -55,7 +55,7 @@ If you require more control over the ImageJ side -- such as picking a semi-rando
 Attach ImageJ to a waiting Eclipse
 ----------------------------------
 
-Instead of making ImageJ [the debugging server](#Attaching_to_ImageJ_instances), when debugging startup events and headless operations it is easier to make ImageJ the client and Eclipse (or equivalent) the server.
+Instead of making ImageJ [the debugging server](#attaching-to-imagej-instances), when debugging startup events and headless operations it is easier to make ImageJ the client and Eclipse (or equivalent) the server.
 
 In this case you start the debugging session first, e.g. in Eclipse debug configurations you specify "Standard (Socket Listen)" as the connection type. Then, simply start ImageJ without the "server=y" flag to connect and debug:
 
@@ -108,7 +108,7 @@ Often, dynamic library issues are connected to a dependent .dll file missing. Do
 Debugging JVM hangs
 ===================
 
-When the Java VM hangs, the reason might be a dead-lock. Try taking a [stack trace](Troubleshooting#If_ImageJ_freezes_or_hangs). If you have trouble, you can try one of the following advanced techniques:
+When the Java VM hangs, the reason might be a dead-lock. Try taking a [stack trace](/help/troubleshooting#if-imagej-freezes-or-hangs). If you have trouble, you can try one of the following advanced techniques:
 
 1.  You can use the `jstack` command (you don't need to run ImageJ from the command line in this case). This requires that you first find the PID (process ID) of ImageJ. You can do so by running:
         jps
@@ -126,7 +126,7 @@ Debugging memory leaks
 
 Sometimes, memory is not released properly, leading to OutOfMemoryExceptions.
 
-One way to find out what is happening is to use `jvisualvm` (see [\#Debugging JVM hangs](#Debugging_JVM_hangs)) to connect to the ImageJ process, click on *Heap Dump* in the *Monitor* tab, in said tab select the sub-tab *Classes* and sort by size. Double-clicking on the top user should get you to a detailed list of *Instances* where you can expand the tree of references to find out what is holding a reference still.
+One way to find out what is happening is to use `jvisualvm` (see [\#Debugging JVM hangs](#debugging-jvm-hangs)) to connect to the ImageJ process, click on *Heap Dump* in the *Monitor* tab, in said tab select the sub-tab *Classes* and sort by size. Double-clicking on the top user should get you to a detailed list of *Instances* where you can expand the tree of references to find out what is holding a reference still.
 
 Debugging hard JVM crashes
 ==========================

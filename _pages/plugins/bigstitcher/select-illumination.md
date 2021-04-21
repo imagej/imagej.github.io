@@ -30,4 +30,4 @@ After selecting the best illumination, only the chosen illumination will be used
 
 <img src="/media/BigStitcher Illu 3.png" width="800"/>
 
-Go back to the [main page](BigStitcher#Documentation)
+Go back to the [main page](/plugins/bigstitcher#documentation)

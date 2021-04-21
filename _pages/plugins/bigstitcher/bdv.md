@@ -9,7 +9,7 @@ Displaying selected views in BigDataViewer
 
 If your dataset is in a format suitable for quick visualization by [BigDataViewer](/plugins/bdv) (e.g. multiresolution HDF5 or virtually loading), a BigDataViewer window in which selected Views can be visualized will open along with the BigStitcher main window. For other datasets, you can open BigDataViewer manually via the **right-click menu** by clicking {% include bc path='Displaying|Display in BigDataViewer(on/off)'%}. If a BigDataViewer window is currently open, clicking this will close it.
 
-For help on using BigDataViewer, you can either click {% include bc path='Help|Show Help'%} in the BigDataViewer window or consult the BigDataViewer [documentation](BigDataViewer#Usage) on this Wiki.
+For help on using BigDataViewer, you can either click {% include bc path='Help|Show Help'%} in the BigDataViewer window or consult the BigDataViewer [documentation](/plugins/bdv#usage) on this Wiki.
 
 {% include thumbnail src='/media/BigStitcher BDV Colormode.png' title='Toggle per-view and per-channel coloring by pressing **c** in the main window.'%}
 
@@ -26,4 +26,4 @@ In addition to toggling the BigDataViewer, you can also display selected views o
 
 -   Using {% include bc path='Displaying|Max-Projection'%}, you can generate maximum-intensity projections of the selected view stacks and display them as ImageJ images.
 
-Go back to the [main page](BigStitcher#Documentation)
+Go back to the [main page](/plugins/bigstitcher#Documentation)

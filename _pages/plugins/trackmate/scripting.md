@@ -909,7 +909,7 @@ The script below does this: ![](/media/plugins/trackmate AnimatedName.gif "fig:T
 Calling TrackMate with multi-channel analyzer
 ---------------------------------------------
 
-TrackMate allows for the addition of jar files that contain extra TrackMate modules. The [multi-channel spot mean intensity analyzer](TrackMate#Downloadable_jars) is such a module.
+TrackMate allows for the addition of jar files that contain extra TrackMate modules. The [multi-channel spot mean intensity analyzer](/plugins/trackmate#downloadable-jars) is such a module.
 
 As any other module it can be used in a script, provided the jar file is in the plugins or jars folder of Fiji:
 

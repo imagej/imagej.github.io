@@ -32,7 +32,7 @@ Java's generics are implemented using erasure, which means that generics help ca
 
 The upside of this limitation is that you will never get as cryptic multi-page long error messages as with C++.
 
-A downside is that the Java compiler just cannot optimize generics as much as C++ can do with templates, also due to the fact that Java does not recompile the base classes of the generics -- in contrast to what C++ does with templates. However, due to the [compile time](#Compile_time) being fuzzy, Java can optimize a lot in the Just-In-Time compiler, especially when you use the *final* keyword wisely; a method marked as final cannot be overridden in subclasses, and is therefore a prime candidate for Just-In-Time optimization.
+A downside is that the Java compiler just cannot optimize generics as much as C++ can do with templates, also due to the fact that Java does not recompile the base classes of the generics -- in contrast to what C++ does with templates. However, due to the [compile time](#compile-time) being fuzzy, Java can optimize a lot in the Just-In-Time compiler, especially when you use the *final* keyword wisely; a method marked as final cannot be overridden in subclasses, and is therefore a prime candidate for Just-In-Time optimization.
 
 Java has no pointers
 --------------------

@@ -44,23 +44,23 @@ It is the most widely adopted format for encoding neuronal reconstructions, in w
 
 ### In which format should I save my tracings: TRACES or SWC?
 
-When tracing 4D or 5D images, `TRACES` is preferable because the channel and/or time frame associated with the data are stored. With simpler 2/3D images `TRACES` is also preferable to preserve [Path Manager tags](SNT:_Overview#Tag) across restarts. Note that the {% include bc path='[Scripts](SNT:_Overview#Scripts)| '%} menu provides a [batch converter](#convert) for `TRACES` → `SWC` conversion. The following table summarizes the differences between the two formats:
+When tracing 4D or 5D images, `TRACES` is preferable because the channel and/or time frame associated with the data are stored. With simpler 2/3D images `TRACES` is also preferable to preserve [Path Manager tags](/plugins/snt/manual#tag) across restarts. Note that the {% include bc path='[Scripts](/plugins/snt/manual#scripts)| '%} menu provides a [batch converter](#convert) for `TRACES` → `SWC` conversion. The following table summarizes the differences between the two formats:
 
 |                                                   | SWC                                                                                                                                  | TRACES                                                                               |
 | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
 | No. reconstructions / file                        | Formally only one. When multiple reconstructions exits, SNT splits them across multiple files appending unique suffixes to filenames | Multiple reconstructions per file allowed                                            |
 | Image metadata                                    | Formally none. SNT stores the spatial calibration of the image in the header                                                         | Rich. Including channel and frame of the traced structure.                           |
-| [Path Manager tags](SNT:_Overview#Tag) | Not stored                                                                                                                           | Stored                                                                               |
-| Format                                            | Plain text                                                                                                                           | XML or compressed XML (as per [preferences](SNT:_Overview#Misc))          |
+| [Path Manager tags](/plugins/snt/manual#tag) | Not stored                                                                                                                           | Stored                                                                               |
+| Format                                            | Plain text                                                                                                                           | XML or compressed XML (as per [preferences](/plugins/snt/manual#misc))          |
 | Presence                                          | Ubiquitous among reconstruction software. The *de facto* standard in data sharing                                                    | Exlusive to SNT. But [open and easily parsable](/plugins/snt/traces-file-format) |
 
 ### How do I (batch) convert TRACES to SWC?
 
-In the [Script Editor](/scripting/script-editor) ({% include bc path='File|New|Script...'%}) look for {% include bc path='Templates|Neuroanatomy|Batch|Convert Traces to SWC'%} and run it. Note that all of SNT scripts are also listed in the main as regular GUI commands in the main [interface](SNT:_Scripting#Script_Templates). Don't see the scripts? Please ensure SNT is properly [installed](SNT#Installation).
+In the [Script Editor](/scripting/script-editor) ({% include bc path='File|New|Script...'%}) look for {% include bc path='Templates|Neuroanatomy|Batch|Convert Traces to SWC'%} and run it. Note that all of SNT scripts are also listed in the main as regular GUI commands in the main [interface](/plugins/snt/scripting#script-templates). Don't see the scripts? Please ensure SNT is properly [installed](/plugins/snt#installation).
 
 ### How can I improve SNT documentation?
 
-[Create an account](Help:Contents#New_accounts) on this wiki. Once you have created one, you can edit contents at will. Don't be shy. All changes are undoable\!
+[Create an account](/help/editing#new-accounts) on this wiki. Once you have created one, you can edit contents at will. Don't be shy. All changes are undoable\!
 
 ## Tracing
 

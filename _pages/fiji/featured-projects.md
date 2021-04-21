@@ -21,7 +21,7 @@ description: test description
 -   [Panorama Viewer](http://fly.mpi-cbg.de/saalfeld/Projects/panorama.html)
 -   [Distortion correction](/plugins/distortion-correction): correct lens deformation induced by the microscope (optical and electron microscopy). See the [Distortion Correction plugin manual](http://www.kaynig.de/downloads/DistortionCorrectionPlugin_Manual.pdf).
 
-[Image registration](Plugins_Menu#Plugins_.3E_Registration)  
+[Image registration](/plugins/fiji-menu#plugins--registration)  
 
 -   [Elastic Alignment and Montage](/plugins/elastic-alignment-and-montage)
 -   [SPIM Registration](/plugins/spim-registration) Registration and fusion of Selective Plane Illumination Microscopy data.
@@ -32,7 +32,7 @@ description: test description
 -   Image montage (via [TrakEM2](http://www.ini.uzh.ch/~acardona/trakem2.html)) with global optimization (in 2D and across sections)
 -   [VIB Protocol](/plugins/vib-protocol) Label-based 3D alignment of image stacks.
 
-[Segmentation](Plugins_Menu#Plugins_.3E_Segmentation)  
+[Segmentation](/plugins/fiji-menu#plugins--segmentation)  
 
 -   [Simple Neurite Tracer](/plugins/snt) (SNT)
 -   [Segmentation Editor](http://132.187.25.13/home/?category=Download&page=SegmentationEditor)

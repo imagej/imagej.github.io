@@ -42,13 +42,13 @@ Multi-view SPIM datasets are typically rather large, therefore it is recommended
 
 There are three plugins which take those input parameters in different formats:
 
--   **[ SPIM Registration](SPIM_Registration#SPIM_Registration)**: Allows the registration of SPIM data with a subset of necessary options presented in the graphical user interface
--   **[ Multi-Channel SPIM Registration](SPIM_Registration#Multi-Channel_SPIM_Registration)**: Extends the [ SPIM Registration](SPIM_Registration#SPIM_Registration) to multiple channels and allows to override the z-stretching saved in the input files.
--   **[ Advanced SPIM Registration](SPIM_Registration#Advanced_SPIM_Registration)**: Registration of SPIM data using all possible options via loading a configuration file
+-   **[ SPIM Registration](/plugins/spim-registration#spim-registration)**: Allows the registration of SPIM data with a subset of necessary options presented in the graphical user interface
+-   **[ Multi-Channel SPIM Registration](/plugins/spim-registration#multi-channel-spim-registration)**: Extends the [ SPIM Registration](/plugins/spim-registration#spim-registration) to multiple channels and allows to override the z-stretching saved in the input files.
+-   **[ Advanced SPIM Registration](/plugins/spim-registration#advanced-spim-registration)**: Registration of SPIM data using all possible options via loading a configuration file
 
 ### Processing a Time Lapse Acqusition
 
-Processing a time lapse acquisition requires two steps. In the first step the registration for each individual timepoint has to be computed and will be automatically stored. Therefore, in the first pass, input the timepoints that should be processed in **Time Points to process** (e.g. 1-100), check **Register only (no fusion)** and uncheck **Timelapse processing**. After the registration is performed one timepoint has to be selected as reference timepoint, typically one with a low registration error. This timepoint should be fused to determine the **[ correct cropping area ](SPIM_Registration#Creating_a_cropped_output_image)** which will afterwards be applied to all other timepoints.
+Processing a time lapse acquisition requires two steps. In the first step the registration for each individual timepoint has to be computed and will be automatically stored. Therefore, in the first pass, input the timepoints that should be processed in **Time Points to process** (e.g. 1-100), check **Register only (no fusion)** and uncheck **Timelapse processing**. After the registration is performed one timepoint has to be selected as reference timepoint, typically one with a low registration error. This timepoint should be fused to determine the **[ correct cropping area ](/plugins/spim-registration#creating-a-cropped-output-image)** which will afterwards be applied to all other timepoints.
 
 After all individual timepoints are registered and the cropping area is defined the plugin has to be called again. This time check **Timelapse Registration**, insert the **Reference Timepoint**, uncheck **Register only (no fusion)** and insert the coordinates of the cropping area of the reference timepoint. The created output images can be viewed for example with Plugins-&gt;Image5D-&gt;Virtual Image 5D Opener [1](/ij/plugins/image5d.html).
 

@@ -5,12 +5,12 @@ categories: Tutorials
 description: test description
 ---
 
-{% include ambox text='This is an old tutorial on how to call the [Sholl Analysis](/plugins/sholl-analysis) plugin from [Simple Neurite Tracer](/plugins/snt). **It is rather outdated. More up-to-date information is provided in [SNT: Analysis](SNT__Analysis#Sholl_Analysis).** For an overview of the technique refer to the [Sholl Analysis](/plugins/sholl-analysis) documentation page.' %}
+{% include ambox text='This is an old tutorial on how to call the [Sholl Analysis](/plugins/sholl-analysis) plugin from [Simple Neurite Tracer](/plugins/snt). **It is rather outdated. More up-to-date information is provided in [SNT: Analysis](SNT__Analysis#sholl-analysis).** For an overview of the technique refer to the [Sholl Analysis](/plugins/sholl-analysis) documentation page.' %}
 
 Introduction
 ============
 
-This tutorial assumes that you've already traced an image with Simple Neurite Tracer (SNT) and that you are familiar with the [variants of Sholl methods](Sholl_Analysis#MethodsTable) and the [Sholl Analysis](/plugins/sholl-analysis) plugin. This tutorial will use an olfactory projection fibre image, freely available from the [Diadem challenge data set](http://www.diademchallenge.org/olfactory_projection_fibers_readme.html).
+This tutorial assumes that you've already traced an image with Simple Neurite Tracer (SNT) and that you are familiar with the [variants of Sholl methods](/plugins/sholl-analysis#methodstable) and the [Sholl Analysis](/plugins/sholl-analysis) plugin. This tutorial will use an olfactory projection fibre image, freely available from the [Diadem challenge data set](http://www.diademchallenge.org/olfactory_projection_fibers_readme.html).
 
 Retrieving Profiles
 ===================
@@ -25,14 +25,14 @@ Now hold down {% include key content='Ctrl' %}+{% include key content='Shift' %}
 
 Consider the first two options: you should probably select the top option *Use all N paths in analysis?* unless you're only wanting to include a subset of the paths, for example if your image stack contains multiple separate neurons. Next you can click on *Plot Profile* so that you can visualize how the intersections with concentric spheres vary with distance from your centre point: <img src="/media/Simple Neurite Tracer- Sholl analysis-6.jpg" title="fig:" width="500" />
 
-This graph shows exactly how many times a sphere of a particular radius will intersect with paths (i.e., *continuos sampling*). To consider spheres of evenly spaced radii (see definition of [Step size](Sholl_Analysis#StepSize)), you have to enter a value into the *Radius step size* box. E.g., <img src="/media/Simple Neurite Tracer- Sholl analysis-7.jpg" title="fig:" width="500" />
+This graph shows exactly how many times a sphere of a particular radius will intersect with paths (i.e., *continuos sampling*). To consider spheres of evenly spaced radii (see definition of [Step size](/plugins/sholl-analysis#stepsize)), you have to enter a value into the *Radius step size* box. E.g., <img src="/media/Simple Neurite Tracer- Sholl analysis-7.jpg" title="fig:" width="500" />
 
 Data Normalization
 ==================
 
-If you need to preview the effect of [normalizing](Sholl_Analysis#MethodsTable) the number of intersections by the volume (or area) enclosed by the sphere (or circle) - you can do that by selecting the *Normalize for volume enclosed by circle* option: <img src="/media/Simple Neurite Tracer- Sholl analysis-8.jpg" title="fig:" width="500" />
+If you need to preview the effect of [normalizing](/plugins/sholl-analysis#methodstable) the number of intersections by the volume (or area) enclosed by the sphere (or circle) - you can do that by selecting the *Normalize for volume enclosed by circle* option: <img src="/media/Simple Neurite Tracer- Sholl analysis-8.jpg" title="fig:" width="500" />
 
-The *Use standard axes* / *Use semi-log axes* / *Use log-log axes* controls whether the analysis is based on the log of normalized intersections and distance (*log-log*), the log of normalized intersections (*semi-log*) or unmodified values (linear axes) (see [Sholl Plots](Sholl_Analysis#Sholl_Plots) for details. Note that the [Regression coefficient](Sholl_Analysis#ShollDecay) is always calculated in real time even if no normalization options are chosen.
+The *Use standard axes* / *Use semi-log axes* / *Use log-log axes* controls whether the analysis is based on the log of normalized intersections and distance (*log-log*), the log of normalized intersections (*semi-log*) or unmodified values (linear axes) (see [Sholl Plots](/plugins/sholl-analysis#sholl-plots) for details. Note that the [Regression coefficient](/plugins/sholl-analysis#sholldecay) is always calculated in real time even if no normalization options are chosen.
 
 Exporting Profiles
 ==================
@@ -51,12 +51,12 @@ You can export profiles by clicking on "Save Profile" which will prompt for a CS
 Analyzing Profiles
 ==================
 
-Press *Analyze Profile* to run the [Sholl Analysis](/plugins/sholl-analysis) plugin. Once [Parameters](Sholl_Analysis#Parameters) have been specified, the plugin will [automatically calculate](Sholl_Analysis#Dratio) the normalization method thought to be the most informative. Metrics will be displayed in a [detailed table](Sholl_Analysis#Metrics). {% include tip tip='You can perform batch analysis using [\_\_\_SHADOW1\_\_\_](Sholl_Analysis#Analysis_of_Existing_Profiles) or [\_\_\_SHADOW2\_\_\_](Sholl_Analysis#Analysis_of_Traced_Cells)' %}
+Press *Analyze Profile* to run the [Sholl Analysis](/plugins/sholl-analysis) plugin. Once [Parameters](/plugins/sholl-analysis#parameters) have been specified, the plugin will [automatically calculate](/plugins/sholl-analysis#dratio) the normalization method thought to be the most informative. Metrics will be displayed in a [detailed table](/plugins/sholl-analysis#metrics). {% include tip tip='You can perform batch analysis using [\_\_\_SHADOW1\_\_\_](/plugins/sholl-analysis#analysis-of-existing-profiles) or [\_\_\_SHADOW2\_\_\_](/plugins/sholl-analysis#analysis-of-traced-cells)' %}
 
 Sholl Image
 ===========
 
-Another option that might be useful is *Make Sholl image*, equivalent to the [Intersections mask](Sholl#Output_Options) created by the [Sholl Analysis](/plugins/sholl-analysis) plugin when parsing images directly. This will produce a stack which shows the number of intersections at each distance from the centre point on a colour scale. You can see the exact number of intersections corresponding to a colour by mousing over that region and looking in the status bar. For example, this shows you that the orange colour corresponds to 2 intersections ("value=2"): <img src="/media/Simple Neurite Tracer- Sholl analysis-12.jpg" title="fig:" width="500" />
+Another option that might be useful is *Make Sholl image*, equivalent to the [Intersections mask](/plugins/sholl-analysis#output-options) created by the [Sholl Analysis](/plugins/sholl-analysis) plugin when parsing images directly. This will produce a stack which shows the number of intersections at each distance from the centre point on a colour scale. You can see the exact number of intersections corresponding to a colour by mousing over that region and looking in the status bar. For example, this shows you that the orange colour corresponds to 2 intersections ("value=2"): <img src="/media/Simple Neurite Tracer- Sholl analysis-12.jpg" title="fig:" width="500" />
 
 If you go back to the main tracer interface, keeping that *Sholl image stack* open, you can visualize those colours on the traces by switching the *Use colors / labels from* option to *Sholl analysis of all paths* (volume of original image made transparent for clarity): <img src="/media/Simple Neurite Tracer- Sholl analysis-13.jpg" title="fig:" width="500" />
 

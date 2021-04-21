@@ -211,7 +211,7 @@ The next panel let you choose amongst available particle-linking algorithms, or 
 
 The apparent profusion of choices should not disorient you, for it just that: an appearance. We chose to focus on the Linear Assignment Problem (LAP) in the framework first developed by Jaqaman *et al.*[2].
 
-The first two LAP trackers are based on LAP, with important differences from the original paper described [here](TrackMate_algorithms#Main_differences_with_the_Jaqaman_paper.5B1.5D) . We focused on this method for it gave us a lot of flexibility and it can be configured easily to handle most cases. You can tune it to allow *splitting events*, where a track splits in two, for instance following a cell that encounters mitosis. *Merging events* are handled too in the same way, though my small culture prevents me from quoting a relevant biological case obvious as the previous one. More importantly are *gap-closing* events, where a spot disappear for one frame (because it moves out of focus, because segmentation fails, ...) but the track manages to recuperates and connect with reappearing spots later.
+The first two LAP trackers are based on LAP, with important differences from the original paper described [here](/plugins/trackmate/algorithms#main-differences-with-the-jaqaman-paper) . We focused on this method for it gave us a lot of flexibility and it can be configured easily to handle most cases. You can tune it to allow *splitting events*, where a track splits in two, for instance following a cell that encounters mitosis. *Merging events* are handled too in the same way, though my small culture prevents me from quoting a relevant biological case obvious as the previous one. More importantly are *gap-closing* events, where a spot disappear for one frame (because it moves out of focus, because segmentation fails, ...) but the track manages to recuperates and connect with reappearing spots later.
 
 These LAP algorithm exists in TrackMate in two flavors: a simple one and a not simple one. There are again the same, but the simple ones propose fewer configuration options and a thus more concise configuration panel. In short:
 
@@ -341,7 +341,7 @@ References
 
 [2] [Jaqaman et al., "Robust single-particle tracking in live-cell time-lapse sequences", Nat Methods. 2008 Aug;5(8):695-702.](http://www.nature.com/nmeth/journal/v5/n8/full/nmeth.1237.html)
 
-[3] There is some theoretical grounds for that, if you are investigating Brownian motion. See the [page](TrackMate_algorithms#Cost_calculation_.26_Brownian_motion) that details the segmenters and trackers for information.
+[3] There is some theoretical grounds for that, if you are investigating Brownian motion. See the [page](/plugins/trackmate/algorithms#cost-calculation--brownian-motion) that details the segmenters and trackers for information.
 
 [4] 
 

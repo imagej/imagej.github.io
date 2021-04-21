@@ -774,7 +774,7 @@ Simplified:
 
 What the code above did: to look for an interface that could take a method with no arguments, represented by the function, and instantiate an anonymous class that implements such interface with the function mapped to its method.
 
-See also an [example plugin](Scripting_comparisons#In_Javascript) for ImageJ written in javascript.
+See also an [example plugin](/scripting/comparisons#in-javascript) for ImageJ written in javascript.
 
 Multithreaded Image Processing in Javascript
 --------------------------------------------

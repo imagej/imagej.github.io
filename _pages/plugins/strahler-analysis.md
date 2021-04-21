@@ -34,7 +34,7 @@ Description
 
 <span id="StrahlerAnimation"></span><img src="/media/StrahlerAnimation.gif" title="fig:Strahler Analysis by iterative elimination of end-point branches" width="300" alt="Strahler Analysis by iterative elimination of end-point branches" /> The analysis occurs through progressive pruning of terminal branches, *iterative tree simplification*, a method that requires detecting all terminal branches (i.e., branches that contain an end-point) and all the degree-one paths leading to them.
 
-*Strahler Analysis* takes a <u>binary</u> or <u>8-bit grayscale</u> image (2D or 3D) containing a <u>single arbor</u>, and calls [AnalyzeSkeleton](/plugins/analyze-skeleton) iteratively to retrieve [Horton-Strahler numbers](#References) from the [skeletonized centerlines](/plugins/skeletonize3d) of the input image. Each iteration includes three operations: 1) a (re)-skeletonization step to ensure that arbor remains represented by its centerlines, 2) an elimination step in which terminal-branches are pruned from the image and 3) an analysis step in which pruned branches are counted and measured. The iteration ceases as soon as all branches have been eliminated or a unresolved [closed loop](#Elimination_of_Skeleton_Loops) has been detected in the pruned arbor.
+*Strahler Analysis* takes a <u>binary</u> or <u>8-bit grayscale</u> image (2D or 3D) containing a <u>single arbor</u>, and calls [AnalyzeSkeleton](/plugins/analyze-skeleton) iteratively to retrieve [Horton-Strahler numbers](#References) from the [skeletonized centerlines](/plugins/skeletonize3d) of the input image. Each iteration includes three operations: 1) a (re)-skeletonization step to ensure that arbor remains represented by its centerlines, 2) an elimination step in which terminal-branches are pruned from the image and 3) an analysis step in which pruned branches are counted and measured. The iteration ceases as soon as all branches have been eliminated or a unresolved [closed loop](#elimination-of-skeleton-loops) has been detected in the pruned arbor.
 
 Parameters
 ----------
@@ -43,7 +43,7 @@ Tree Classification:
 
 :;Infer root end-points from rectangular ROI
 
-::This option is only available when a rectangular ROI is present. It is described in [Non-radial arbors](#Non-radial_arbors).
+::This option is only available when a rectangular ROI is present. It is described in [Non-radial arbors](#non-radial-arbors).
 
 :;Ignore single-point arbors (Isolated pixels)
 
@@ -57,13 +57,13 @@ Elimination of Skeleton Loops:
 
 :;Method
 
-::*Strahler Analysis* cannot process skeletons containing closed loops and will output a warning message when such structures have been detected. The available methods in this drop-down menu define how closed loops should be resolved by and are described in the [AnalyzeSkeleton documentation page](AnalyzeSkeleton#Loop_detection_and_pruning).
+::*Strahler Analysis* cannot process skeletons containing closed loops and will output a warning message when such structures have been detected. The available methods in this drop-down menu define how closed loops should be resolved by and are described in the [AnalyzeSkeleton documentation page](/plugins/analyze-skeleton#loop-detection-and-pruning).
 
 :;Unsegmented image
 
   
   
-The initial non-thinned image to be used by [AnalyzeSkeleton](/plugins/analyze-skeleton) for [intensity-based](AnalyzeSkeleton#Loop_detection_and_pruning) elimination of closed loops. This option is only used if either *Lowest intensity voxel* or *Lowest intensity branch* is chosen as *Method*. Note that if an intensity-based method is selected but the chosen image is a binary one, closed loops will not be resolved.
+The initial non-thinned image to be used by [AnalyzeSkeleton](/plugins/analyze-skeleton) for [intensity-based](/plugins/analyze-skeleton#loop-detection-and-pruning) elimination of closed loops. This option is only used if either *Lowest intensity voxel* or *Lowest intensity branch* is chosen as *Method*. Note that if an intensity-based method is selected but the chosen image is a binary one, closed loops will not be resolved.
 
 <!-- -->
 
@@ -126,7 +126,7 @@ Ramification or {% include wikipedia title='Strahler number\#Bifurcation\_ratio'
 <!-- -->
 
 Iteration log  
-If *Show detailed information* is checked, *Average branch length*, *N. of trees*, *N. of branches*, *N. of junctions*, *N. of triple points*, *N. of quadruple points* are also retrieved for each iteration. These are described in the AnalyzeSkeleton's [documentation page](AnalyzeSkeleton#Table_of_results).
+If *Show detailed information* is checked, *Average branch length*, *N. of trees*, *N. of branches*, *N. of junctions*, *N. of triple points*, *N. of quadruple points* are also retrieved for each iteration. These are described in the AnalyzeSkeleton's [documentation page](/plugins/analyze-skeleton#table-of-results).
 
 Installation
 ------------

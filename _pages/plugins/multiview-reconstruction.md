@@ -78,7 +78,7 @@ Using this software package consists of several steps. Please note that this sof
 -   **[Interest Point Registration](MVR-InterestPointRegistration)**
     -   Once interest points are detected, they can be used to register/align multiple views over time. To find corresponding detection the registration module supports the following modules:
         -   *Rotation-invariant matching* using fluorescent beads (no prior transformation knowledge necessary)
-        -   *Translation-invariant matching* using any kind of detections (an approximate knowledge of the rotation is required, e.g. 45 degrees around the x-axis. Check the [Tools-Section](Multiview-Reconstruction#Tools) for how to provide approximate transformations.)
+        -   *Translation-invariant matching* using any kind of detections (an approximate knowledge of the rotation is required, e.g. 45 degrees around the x-axis. Check the [Tools-Section](/plugins/multiview-reconstruction#tools) for how to provide approximate transformations.)
         -   *Precise matching* using the Iterative-Closest Point (ICP) algorithm (the dataset needs to be aligned using for example any of the above methods).
     -   The different views (or timepoints) can be aligned using *Translation*, *Rigid* or *Affine* transformation models. We also support *regularized transformation models* developed by Stephan Saafeld.
     -   Alignment over time can be performed in different ways

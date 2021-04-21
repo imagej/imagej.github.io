@@ -342,7 +342,7 @@ Note that you can't start out in batch mode, you need to fit a single image firs
 For some specific applications, you might want to analyze a specific segment in the lifetime image. In particular, Fiji's [Trainable Weka Segmentation](/plugins/tws) plugin is very useful for machine learning based segmentation. We can train the classifier with one image with certain training instances, then use that classifier to segment additional images. With segmented data, we can create a mask and using the ROI manager we can overlay the ROI to analyze different part of the image. The steps for segmentation using classification are:
 
 1.  Open a lifetime image using the SLIM Curve plugin.
-2.  [Train the classifier](Trainable_Weka_Segmentation#Train_classifier) using Trainable Weka Segmentation.
+2.  [Train the classifier](/plugins/tws#train-classifier) using Trainable Weka Segmentation.
 3.  Create instances to train your classifier with the number of classes required.
 4.  Train classifier by clicking the "Train classifier" button.
 5.  Select "Create result" to create the segmented image (you can save the classifier to use it later).

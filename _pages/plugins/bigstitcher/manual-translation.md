@@ -64,4 +64,4 @@ Clicking **Move Tiles To Regular Grid ...** will bring up a new window that allo
 
 <img src="/media/BigStitcher Arrange Views004.png" width="800"/>
 
-Go back to the [main page](BigStitcher#Documentation)
+Go back to the [main page](/plugins/bigstitcher#documentation)

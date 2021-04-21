@@ -40,7 +40,7 @@ Usage
 
 ### Existing Archipelago Plugins
 
-The following plugins are available by [ adding](How_to_follow_a_3rd_party_update_site#Add_update_sites) the Archipelago update site.
+The following plugins are available by [ adding](/update-sites/following#add-update-sites) the Archipelago update site.
 
 #### TrakEM2 Archipelago
 

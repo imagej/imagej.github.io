@@ -18,7 +18,7 @@ General workflow
 ================
 
 1.  Create a basic macro/script which operates on the active image or on a single file.
-    -   The [macro recorder](Introduction_into_Macro_Programming#The_recorder) is an excellent way to generate macro code.
+    -   The [macro recorder](/scripting/macro#the-recorder) is an excellent way to generate macro code.
     -   The [Introduction into Macro Programming](/scripting/macro) explains the principles of macro writing.
 2.  Apply your macro to a group of images.
     -   These images do not need to be open in ImageJ already—they will be read in as part of the batch process.
@@ -51,4 +51,4 @@ See also
 -   [{% include bc path='Process | Batch'%}](/ij/docs/guide/146-29.html#toc-Subsection-29.12) submenu.
 -   [Scripting](/scripting) documentation and tutorials.
 -   [How to apply a common operation to a complete directory](/tutorials/apply-operation-to-a-complete-directory)
--   [Assign your own keyboard shortcuts](Keyboard_shortcuts#Creating_your_own_keyboard_shortcuts)
+-   [Assign your own keyboard shortcuts](Keyboard_shortcuts#creating-your-own-keyboard-shortcuts)

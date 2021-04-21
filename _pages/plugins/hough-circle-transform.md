@@ -226,7 +226,7 @@ If no circles were found in a frame, than that frame is excluded from the result
 Installing the Plugin
 ---------------------
 
-The Hough Circle Transform plugin is part of the [UCB Vision Sciences](UCB_Vision_Sciences) library. To install it, you just need to [ add](How_to_follow_a_3rd_party_update_site#Add_update_sites) the UCB Vision Sciences update site:
+The Hough Circle Transform plugin is part of the [UCB Vision Sciences](UCB_Vision_Sciences) library. To install it, you just need to [ add](/update-sites/following#add-update-sites) the UCB Vision Sciences update site:
 
 1\) Select {% include bc path='Help | Update...'%} from the Fiji menu to start the updater.
 

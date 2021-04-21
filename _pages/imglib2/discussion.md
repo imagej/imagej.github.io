@@ -273,7 +273,7 @@ Tobias and Preibisch discussed today that the name ExtendedRandomAccessibleInter
 
 It is irritating as it is actually NOT an Interval. Instead one could name it for example OutOfBoundsView, which is also much shorter. It is only used for this purpose and the name is self-explanatory.
 
-We also added some convenience methods in the Views class to construct them very easily, see here: [ How does ImgLib2 handle OutOfBounds?](Changes_from_ImgLib1_to_ImgLib2#How_does_ImgLib2_handle_OutOfBounds?)
+We also added some convenience methods in the Views class to construct them very easily, see here: [ How does ImgLib2 handle OutOfBounds?](/imglib2/changes-from-imglib1#how-does-imglib2-handle-outofbounds)
 
 ### Should Iterator (and so Cursor) have a bck() call?
 
@@ -375,7 +375,7 @@ A RealView would implement (in analogy to the integer views)
         public RealTransform getTransformToSource();    
     }
 
-Note, that `RealTransform` implementations do not yet exist. However the ideas are in place, see [Transformation Hierarchies](https://fiji.sc/wiki/index.php/ImgLib2_Discussion#Transformation_Hierarchies) above. The interfaces to be implemented can be found in packages `net.imglib2.concatenate` and `net.imglib2.transform`.
+Note, that `RealTransform` implementations do not yet exist. However the ideas are in place, see [Transformation Hierarchies](https://fiji.sc/wiki/index.php/ImgLib2_Discussion#transformation-hierarchies) above. The interfaces to be implemented can be found in packages `net.imglib2.concatenate` and `net.imglib2.transform`.
 
 Examples of implementation of the integer version of these interfaces can be found in `net.imglib2.transform.integer` (These are the ones I did for views).
 

@@ -88,6 +88,6 @@ Finally, click **OK** to start the fusion process.
 
 If you chose to save the result as a new project, you will be asked where to save the .xml project file and the TIFF/HDF5 files for the fused views in a new dialog.
 
-Furthermore, if you chose to save to the current or a new project as HDF5, you will be asked for [options on how to save to HDF5](BigStitcher_AutoLoader#Options_for_re-saving_as_HDF5).
+Furthermore, if you chose to save to the current or a new project as HDF5, you will be asked for [options on how to save to HDF5](/plugins/bigstitcher/autoloader#options-for-re-saving-as-hdf5).
 
-Go back to the [main page](BigStitcher#Documentation)
+Go back to the [main page](/plugins/bigstitcher#documentation)

@@ -111,7 +111,7 @@ and then using code like this:
 How do I make my modified project available to a depending project using Maven?
 ===============================================================================
 
-See [Using snapshot couplings during development](Architecture#Using_snapshot_couplings_during_development).
+See [Using snapshot couplings during development](/develop/architecture#using-snapshot-couplings-during-development).
 
 How can I run individual tests with Maven?
 ==========================================

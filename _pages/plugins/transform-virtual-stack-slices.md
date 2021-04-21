@@ -25,7 +25,7 @@ description: test description
 
 This plugin takes a sequence of image slices stored in a folder, and delivers a list of transformed image slices (with enlarged canvas) applying a list of transforms stored as **.XML** files in another folder.
 
-This is a **complementary plugin** of [Register Virtual Stack Slices](/plugins/register-virtual-stack-slices). It allows reproducing the results of [Register Virtual Stack Slices](/plugins/register-virtual-stack-slices) by loading the corresponding transform files (saved by checking the option [ "Save transforms"](Register_Virtual_Stack_Slices#Save_Transforms) in the main dialog).
+This is a **complementary plugin** of [Register Virtual Stack Slices](/plugins/register-virtual-stack-slices). It allows reproducing the results of [Register Virtual Stack Slices](/plugins/register-virtual-stack-slices) by loading the corresponding transform files (saved by checking the option [ "Save transforms"](/plugins/register-virtual-stack-slices#save-transforms) in the main dialog).
 
 User Manual
 -----------

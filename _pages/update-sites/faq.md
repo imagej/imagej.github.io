@@ -47,7 +47,7 @@ If the file is not hosted by any other active update site you need to tell the u
 1.  Delete the file locally
 2.  Start the [updater](/plugins/updater) and click the *Advanced mode* button.
 3.  Select the *View files of the '\[your site name here\]*' option.
-4.  The updater will see the file is missing and automatically flag it "**Install it**". You need to right-click the file and change it to "**Keep as-is**". See [Why don't I have an upload option?](#Why_don't_I_have_an_upload_option?) below for an explanation.
+4.  The updater will see the file is missing and automatically flag it "**Install it**". You need to right-click the file and change it to "**Keep as-is**". See [Why don't I have an upload option?](#why-don't_I_have_an_upload_option?) below for an explanation.
 5.  Right-click the deleted file again and choose "**Mark obsolete**".
 6.  Click "**Apply changes (upload)**" to finalize the deletion.
 
@@ -102,4 +102,4 @@ The *View changes* option is helpful to identify what downloads are pending. Onc
 Other options to check if still not resolved:
 
 -   Be sure to set your upload password for your currently logged-in wiki account. Just click [Set/change upload password](Special_ChangeUploadPassword) under the MORE TOOLS section at the bottom of any wiki page.
--   Be sure that under "Manage update sites" that your credentials are inserted for your update site. See [Uploading files to your update site](How_to_set_up_and_populate_an_update_site#Uploading_files_to_your_update_site) on the ImageJ wiki to double-check how to do this.
+-   Be sure that under "Manage update sites" that your credentials are inserted for your update site. See [Uploading files to your update site](/update-sites/setup#uploading-files-to-your-update-site) on the ImageJ wiki to double-check how to do this.

@@ -13,7 +13,7 @@ Getting Started with Simple Visualization Options in ImageJ
 
 ### Pseudocolor Image Look-Up Tables (LUTs)
 
-A [pseudocolor image](/Color_Image_Processing#Pseudo-color) is a single channel gray image (8, 16 or 32-bit) that has color assigned to it via a lookup table, i.e. a [LUT](https://en.wikipedia.org/wiki/Lookup_table#Lookup_tables_in_image_processing). A LUT is a predefined table of gray values with matching red, green, and blue values so that shadows of gray are displayed as colorized pixels. Thus, differences in color in the pseudo-colored image reflect differences in intensity of the object rather than differences in color of the specimen that has been imaged.
+A [pseudocolor image](/cookbook/color-image-processing#pseudo-color) is a single channel gray image (8, 16 or 32-bit) that has color assigned to it via a lookup table, i.e. a [LUT](https://en.wikipedia.org/wiki/Lookup_table#lookup-tables-in-image-processing). A LUT is a predefined table of gray values with matching red, green, and blue values so that shadows of gray are displayed as colorized pixels. Thus, differences in color in the pseudo-colored image reflect differences in intensity of the object rather than differences in color of the specimen that has been imaged.
 
 The [LUT Menu](/ij/docs/guide/146-19.html#sub:LUTMenu) of ImageJ contains a large collection of lookup tables that can be applied to a pseudocolor image.
 

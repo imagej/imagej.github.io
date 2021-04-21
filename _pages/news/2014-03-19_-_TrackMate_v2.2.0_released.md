@@ -30,7 +30,7 @@ Version 2.2.0 focuses mainly on extendability, tracking performance and detectio
 
 (This benchmark was done with the ISBI challenge datasets). You can find more benchmarks [here](/plugins/trackmate/performance).
 
--   Complete rewrite of the way we handle modules in TrackMate. TrackMate now uses [SciJava](http://www.scijava.org/) and exploit its automatic discovery mechanism for modules. Practically, **it is now very easy to extend TrackMate**, and you do not depend on us anymore at all for anything. We could completely disappear and you would still be able to extend TrackMate so that it suits your need, without requiring any of our help. Several [tutorials](TrackMate#For_developers_2) describe how to do this. This is made possible thanks to the enormous efforts of the SciJava team. Thanks to them!
+-   Complete rewrite of the way we handle modules in TrackMate. TrackMate now uses [SciJava](http://www.scijava.org/) and exploit its automatic discovery mechanism for modules. Practically, **it is now very easy to extend TrackMate**, and you do not depend on us anymore at all for anything. We could completely disappear and you would still be able to extend TrackMate so that it suits your need, without requiring any of our help. Several [tutorials](/plugins/trackmate#for-developers-2) describe how to do this. This is made possible thanks to the enormous efforts of the SciJava team. Thanks to them!
 
 #### Improvements
 

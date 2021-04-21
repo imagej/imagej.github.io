@@ -100,7 +100,7 @@ Calling Bio-Formats from the command line
 
 You can invoke Bio-Formats from the command line using the [ImageJ Launcher](Launcher):
 
-1.  Use the [Macro Recorder](Introduction_into_Macro_Programming#The_recorder) to record the line of macro code that runs Bio-Formats that way you want.
+1.  Use the [Macro Recorder](/scripting/macro#the-recorder) to record the line of macro code that runs Bio-Formats that way you want.
 2.  Click "Create" to pop up the [Script Editor](/scripting/script-editor), edit as desired, then save the macro as a `.ijm` macro file.
 3.  Run the macro from the command line; e.g.:
 
@@ -110,11 +110,11 @@ You can invoke Bio-Formats from the command line using the [ImageJ Launcher](Lau
 
 Leave off the `-batch` flag if you want ImageJ to remain open afterward.
 
-Note that you cannot use the [--headless option](Headless#Running_macros_in_headless_mode) because Bio-Formats does not work in headless mode, even when running as a macro. (You will see `VerifyError` on the console if you try.)
+Note that you cannot use the [--headless option](/learn/headless#running-macros-in-headless-mode) because Bio-Formats does not work in headless mode, even when running as a macro. (You will see `VerifyError` on the console if you try.)
 
 Here is an example macro created in such a fashion:
 
-    run("/formats/bio-formats", "open=/Users/jdoe/data.ome.tif " +
+    run("Bio-Formats Importer", "open=/Users/jdoe/data.ome.tif " +
       "autoscale color_mode=Default view=Hyperstack stack_order=XYCZT");
     saveAs("Tiff", "/Users/jdoe/Desktop/result.tif");
 

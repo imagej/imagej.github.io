@@ -39,7 +39,7 @@ This challenge was part of a [workshop](http://www.biomedicalimaging.org/2012/in
 
 Each team received statistics regarding their results. **After the workshop, an overview article will be compiled by the organizers of the challenge, with up to three members per participating team as co-authors**.
 
-If you have any doubt regarding the challenge, please, do not hesitate to contact the [organizers](Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012#Organizers). There is also an **open discussion group** that you can join [here](http://groups.google.com/group/EM-segmentation-challenge-ISBI-2012).
+If you have any doubt regarding the challenge, please, do not hesitate to contact the [organizers](/events/Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012#Organizers). There is also an **open discussion group** that you can join [here](http://groups.google.com/group/EM-segmentation-challenge-ISBI-2012).
 
 Training data
 -------------
@@ -75,7 +75,7 @@ The metrics are:
 
 If you want to apply these metrics yourself to your own results, you can do it within Fiji using this [script](/scripting/examples/segmentation-evaluation-metrics).
 
-We understand that segmentation evaluation is an ongoing and sensitive research topic, therefore we open the metrics to discussion. Please, do not hesitate to contact the [organizers](Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012#Organizers) to discuss about the metric selection.
+We understand that segmentation evaluation is an ongoing and sensitive research topic, therefore we open the metrics to discussion. Please, do not hesitate to contact the [organizers](/events/Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012#Organizers) to discuss about the metric selection.
 
 Organizers
 ----------

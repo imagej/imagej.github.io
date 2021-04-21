@@ -62,7 +62,7 @@ There are two ways to create such a snapshot, known as a "thread dump" or "stack
 
 If the first method does not work, and you can reproduce the hang:
 
-1.  Launch ImageJ again, this time [from the console](#Launching_ImageJ_from_the_console) as described above.
+1.  Launch ImageJ again, this time [from the console](#launching-imagej-from-the-console) as described above.
     -   <img src="/media/Win.png" height="20"/> On Windows, you will need to download and run [this batch file](https://raw.githubusercontent.com/imagej/imagej/master/bin/ImageJ.bat), which launches ImageJ with an attached Command Prompt window.
 2.  Generate and copy the stack trace:
     -   <img src="/media/Osx.png" height="20"/> <img src="/media/Tux.png" height="20"/> On non-Windows platforms:
@@ -82,7 +82,7 @@ If ImageJ crashes
 
 If ImageJ {% include wikipedia title='Crash (computing)' text='crashes'%}—i.e., the program suddenly terminates, with or without an error message—it is very helpful to identify the steps which can reliably reproduce the crash:
 
--   Launch ImageJ [from the console](#Launching_ImageJ_from_the_console) as described above.
+-   Launch ImageJ [from the console](#launching-imagej-from-the-console) as described above.
 -   Perform the same actions which previously resulted in the crash.
 -   Take note of any error messages in the console window, which you can copy and paste it into a [bug report](/help/report-a-bug).
 
@@ -114,7 +114,7 @@ If the ImageJ window never appears after launching the program, the installation
 
 The easiest workaround is to [download](/downloads) a fresh copy of the software.
 
-If you are feeling investigative, you can try [launching ImageJ from the console](#Launching_ImageJ_from_the_console) to get more information about why it is failing to start up. After doing that, you will probably see some information printed to the console, which you can paste online to somewhere like [Pastebin.com](http://pastebin.com/), and write to the [Community](/help) to ask for help deciphering it.
+If you are feeling investigative, you can try [launching ImageJ from the console](#launching-imagej-from-the-console) to get more information about why it is failing to start up. After doing that, you will probably see some information printed to the console, which you can paste online to somewhere like [Pastebin.com](http://pastebin.com/), and write to the [Community](/help) to ask for help deciphering it.
 
 Advanced debugging techniques
 -----------------------------
@@ -131,7 +131,7 @@ This problem can arise when 12-bit, 14-bit or 16-bit images are loaded into Imag
 
 You can fix this by clicking on {% include bc path='Image | Adjust | Brightness/Contrast...'%} and hitting the *Auto* button.
 
-You can verify whether the actual data is there by moving the mouse over the image, and looking at the pixel probe output in the [status bar area of the main ImageJ window](Getting_Started#The_status_bar).
+You can verify whether the actual data is there by moving the mouse over the image, and looking at the pixel probe output in the [status bar area of the main ImageJ window](/learn/getting-started#the-status-bar).
 
 The image colors do not match what I see in other programs! ImageJ is wrong!
 ----------------------------------------------------------------------------
@@ -140,7 +140,7 @@ In many cases, ImageJ performs autoscaling by default, to improve the contrast o
 
 You can override the autoscaling using the [Brightness/Contrast](/ij/docs/guide/146-28.html#sub:Adjust) dialog.
 
-It is important to understand that [your image is a collection of samples, each of which has a numerical intensity value](Principles#What_are_pixel_values.3F). The unit of these values is rather arbitrary and unspecified, depending on the type and calibration of your detector. Your file is stored with a certain [bit depth](/ij/docs/guide/146-7.html#toc-Section-7), meaning these intensities can range from 0 (no light detected) to a particular maximum value (the most light the detector is capable of detecting). For example, 8-bit images have a maximum value of 255, whereas 16-bit images have a maximum of 65535. In practice though, especially with higher bit depths, your detector will not typically record sample intensities across that entire range of values (and if it does record a significant number of values at the maximum, you probably oversaturated your detector, which will skew your analysis!).
+It is important to understand that [your image is a collection of samples, each of which has a numerical intensity value](/techniques/principles#what-are-pixel-values). The unit of these values is rather arbitrary and unspecified, depending on the type and calibration of your detector. Your file is stored with a certain [bit depth](/ij/docs/guide/146-7.html#toc-Section-7), meaning these intensities can range from 0 (no light detected) to a particular maximum value (the most light the detector is capable of detecting). For example, 8-bit images have a maximum value of 255, whereas 16-bit images have a maximum of 65535. In practice though, especially with higher bit depths, your detector will not typically record sample intensities across that entire range of values (and if it does record a significant number of values at the maximum, you probably oversaturated your detector, which will skew your analysis!).
 
 Because the full range of values is typically much less than the maximum—e.g., in the case of a 12-bit detector the actual maximum range is 0-4095, and often even smaller in practice—ImageJ performs **autoscaling** to show you a meaningful or "pretty good" image by default, which is not just a black square (see previous question). That is: it maps the darkest actual intensity in your data to black, and the brightest actual intensity in your data to white. You can override this mapping using the [Brightness/Contrast](/ij/docs/guide/146-28.html#sub:Adjust) dialog under the {% include bc path='Image | Adjust'%} menu (shortcut: {% include key content='shift' %}+{% include key content='C' %}).
 
@@ -162,7 +162,7 @@ Whenever I open a file in ImageJ, the file size increases by a ridiculous amount
 
 Are you using a [compressed format](/ij/docs/guide/146-7.html#sub:Native-Formats) such as JPEG, PNG or ZIP? The file size on disk is smaller than the size of the pixels in memory. ImageJ reports this true (uncompressed) size of the image in the subtitle bar of the image window. For example: an uncompressed image of 16000 pixels x 16000 pixels x 32 bit (RGBA) will occupy 976 MB in memory.
 
-Note that [lossy compression is not suitable for quantitative image analysis](Principles#Why_.28lossy.29_JPEGs_should_not_be_used_in_imaging).
+Note that [lossy compression is not suitable for quantitative image analysis](/techniques/principles#why-lossy-jpegs-should-not-be-used-in-imaging).
 
 The same plugin gives different results on different machines!
 --------------------------------------------------------------
@@ -230,7 +230,7 @@ UnsupportedClassVersionError
 
 Usually, this error takes the form of "Unsupported major.minor version 52.0" or similar, and indicates you are attempting to use a plugin which requires a newer version of Java than you are running. For example, you may have enabled an [update site](/update-sites) that requires Java 7, but your ImageJ is using Java 6.
 
-Check which version of Java is being used by ImageJ; see [Checking the Java version](#Checking_the_Java_version) above.
+Check which version of Java is being used by ImageJ; see [Checking the Java version](#checking-the-java-version) above.
 
 The number given in the `UnsupportedClassVersionError` error messages is an internal code, which translates to Java versions as follows:
 

@@ -115,7 +115,7 @@ Initial release
 -   Major **improvement for tracking performance**: The LAP trackers are now based on the [Jonker-Volgenant](http://link.springer.com/article/10.1007%2FBF02278710) solver, which performs better than the Munkres-Kuhn we were using until then. Our initial tests report that this new version runs 2x to 4x faster.
 -   A **major problem was found in the LoG detector**: Because of a severe rounding error, the LoG detector was not behaving as a true LoG detector, which strongly hindered its accuracy and potence. The problem is now fixed and **the accuracy of the detector has vastly improved**. You should now observe much better results when using this detector: less spurious spots, better spot size sensitivity, better sensitivity to faint spots. On its side, the DoG detector now handles spots that lie on the border of the images better. Of course, the results will be different when comparing to v2.1.1.
 -   We also took the chance to rewrite all the detectors from scratch, using the latest development in [ImgLib2](/imglib2). This prompted **major performance improvement for the detection process**.
--   Complete rewrite of the way we handle modules in TrackMate. TrackMate now uses [SciJava](http://www.scijava.org/) and exploit its automatic discovery mechanism for modules. Practically, **it is now very easy to extend TrackMate**, and you do not depend on us anymore at all for anything. We could completely disappear and you would still be able to extend TrackMate so that it suits your need, without requiring any of our help. Several [tutorials](TrackMate#For_developers_2) describe how to do this. This is made possible thanks to the enormous efforts of the SciJava team. Thanks to them!
+-   Complete rewrite of the way we handle modules in TrackMate. TrackMate now uses [SciJava](http://www.scijava.org/) and exploit its automatic discovery mechanism for modules. Practically, **it is now very easy to extend TrackMate**, and you do not depend on us anymore at all for anything. We could completely disappear and you would still be able to extend TrackMate so that it suits your need, without requiring any of our help. Several [tutorials](/plugins/trackmate#for-developers-2) describe how to do this. This is made possible thanks to the enormous efforts of the SciJava team. Thanks to them!
 -   In [TrackScheme](/plugins/trackmate/trackscheme), the tracks can be navigated through using the keyboard:
     -   UP: previous spot in time.
     -   DOWN: next spot in time.
@@ -231,7 +231,7 @@ TrackMate version bumped by several increments, prompted by the [big update](/ne
 26-01-2015 - v2.7.1
 -------------------
 
--   Add a new tracking algorithm: [the linear motion LAP tracker](TrackMate_algorithms#Linear_motion_tracker).
+-   Add a new tracking algorithm: [the linear motion LAP tracker](/plugins/trackmate/algorithms#linear-motion-tracker).
 
 26-01-2015 - v2.7.2
 -------------------

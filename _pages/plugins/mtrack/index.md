@@ -13,7 +13,7 @@ MTrack is a bi-modular tool. The first module detects microtubule seeds, tracks 
 
 To make yourself familiar with MTrack, please go to the [Example section](#Example), where you are able to download an example TIRF movie and you will find detailed instruction for running it.
 
-For using MTrack on movies which have very low signal to noise ratio you should create a denoised image to be used for segmentation and upload it along with the original movie. In this setting the microtubules pixels are identified from the segmentation movie while the actual measurement is always done on the original movie. To make yourself familiar with this setting please go to the [Low SNR Example section](#Low_SNR_Example) where we detail this approach with a demo movie.
+For using MTrack on movies which have very low signal to noise ratio you should create a denoised image to be used for segmentation and upload it along with the original movie. In this setting the microtubules pixels are identified from the segmentation movie while the actual measurement is always done on the original movie. To make yourself familiar with this setting please go to the [Low SNR Example section](#low-snr-example) where we detail this approach with a demo movie.
 
 Installation
 ------------

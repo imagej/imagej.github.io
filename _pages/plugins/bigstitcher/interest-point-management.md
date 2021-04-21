@@ -96,4 +96,4 @@ Clicking **OK** will produce an interest point rendering *for each selected view
 
 <img src="/media/BigStitcher ips vis dialog.png" width="600"/>
 
-Go back to the [main page](BigStitcher#Documentation)
+Go back to the [main page](/plugins/bigstitcher#documentation)

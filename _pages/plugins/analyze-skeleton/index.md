@@ -32,7 +32,7 @@ Main options
 
 -   **Prune the possible loops** in the skeleton (by choosing one of the pruning cycle methods).
 -   **Prune any branch that ends in an end-point** (by checking "Prune ends"), as implemented by [Michael Doube](http://doube.org/) in [BoneJ](http://bonej.org/).
-    -   In this case, if a ROI was selected in the input image, another option is enabled: *Exclude ROI from pruning*. If selected, pruning will not be applied to end-points contained by the ROI. An application of this feature is described in [Strahler Analysis](Strahler#Root_Detection).
+    -   In this case, if a ROI was selected in the input image, another option is enabled: *Exclude ROI from pruning*. If selected, pruning will not be applied to end-points contained by the ROI. An application of this feature is described in [Strahler Analysis](/plugins/strahler-analysis#root-detection).
 -   **Calculate the largest shortest path** of each skeleton using the {% include wikipedia title='Floyd-Warshall algorithm' text='APSP (all pairs shortest path)'%}. In this case, the shortest path will be displayed in a new window containing the skeleton in white and the shortest path in **magenta**. Implemented by Huub Hovens.
 -   **Show detailed info** about the branches of each skeleton in the image.
 -   **Display labeled skeletons**. An extra output image will be displayed containing each skeleton labeled with its corresponding skeleton ID.

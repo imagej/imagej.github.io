@@ -5,7 +5,7 @@ section: Learn:Scripting
 description: test description
 ---
 
-Even though one could use any Java library to present a graphical user interface (GUI) for a script or plugin, there are mostly 2 recommended ways to collect input from the user in ImageJ. Both methods can be used with all [available scripting languages](Scripting#Supported_languages), including the [ImageJ macro language](/scripting/macro).
+Even though one could use any Java library to present a graphical user interface (GUI) for a script or plugin, there are mostly 2 recommended ways to collect input from the user in ImageJ. Both methods can be used with all [available scripting languages](/scripting#supported-languages), including the [ImageJ macro language](/scripting/macro).
 
 Script Parameters
 -----------------

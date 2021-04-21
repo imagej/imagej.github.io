@@ -97,8 +97,8 @@ Rapid prototyping with the [Script Editor](/scripting/script-editor)
 ====================================================================
 
 {% include warning-box content='Using the Script Editor for Java development is not currently recommended.  
-For Java development, proceed to the [Getting Started with Maven](#Getting_started_with_Maven) section.  
-If you would like to use the script editor, see the sections for the [other supported languages](Scripting#Supported_languages).' %}
+For Java development, proceed to the [Getting Started with Maven](#getting-started-with-maven) section.  
+If you would like to use the script editor, see the sections for the [other supported languages](/scripting#supported-languages).' %}
 
 <s>There a few good reasons why you should try the [Script Editor](/scripting/script-editor) for rapid prototyping of your plugins or scripts:
 
@@ -129,7 +129,7 @@ All plugin development tends to follow a consistent "Design - Build - Test" work
 
 -   Make changes to the source code (e.g. in [Eclipse](/develop/eclipse))
 -   Build your plugin's .jar from the source code (e.g. with [Maven](/develop/maven))
--   Move the plugin to the [plugins directory](Plugin#Installing_plugins_manually) of an existing ImageJ installation
+-   Move the plugin to the [plugins directory](/plugins#installing-plugins-manually) of an existing ImageJ installation
 -   (Re)start ImageJ and run the plugin to test the behavior
 
 ... and repeat until your plugin is working as intended.
@@ -402,14 +402,14 @@ See the {% include github org='imagej' repo='tutorials' path='maven-projects/cal
 Further tips
 ------------
 
-Please see also the developers tips how to [use ImageJ's API effectively](Tips_for_developers#Using_ImageJ_effectively).
+Please see also the developers tips how to [use ImageJ's API effectively](/develop/tips#using-imagej-effectively).
 
 Next steps
 ==========
 
 See guides on:
 
--   [Developing in Eclipse](Developing_Fiji_in_Eclipse#Create_the_Eclipse_Projects)
+-   [Developing in Eclipse](/develop/eclipse#create-the-eclipse-projects)
 -   [Plugin distribution](/develop/distributing)
 -   [Development lifecycle](/develop/releasing)
 -   [Debugging practice](/develop/debugging-exercises)

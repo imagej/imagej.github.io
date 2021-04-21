@@ -6,7 +6,7 @@ description: test description
 ---
 
 
-The source code of ImageJ is very modular; i.e., it is organized into [well-separated](Architecture#Modularity) projects. This separation offers many advantages for efficient software development and it is well worth investing a little bit of time to understand.
+The source code of ImageJ is very modular; i.e., it is organized into [well-separated](/develop/architecture#modularity) projects. This separation offers many advantages for efficient software development and it is well worth investing a little bit of time to understand.
 
 Where is the code?
 ------------------

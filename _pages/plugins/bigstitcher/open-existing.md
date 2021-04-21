@@ -20,4 +20,4 @@ If the XML file was successfully recognized, the dialog will change and show a q
 
 If there was an error parsing the XML file or the XML file doesn't exist the dialog will show respective warnings and errors. Finally just click **OK** and the BigStitcher window will appear.
 
-Go back to the [main page](BigStitcher#Documentation)
+Go back to the [main page](/plugins/bigstitcher#documentation)

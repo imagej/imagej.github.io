@@ -80,7 +80,7 @@ If you finished a topic, and want to bring the changes to the branch *master*, j
 `$ git checkout master`  
 `$ git merge topic234`
 
-Just like cherry-pick, a merge can fail with conflicts. See [Resolving conflicts](Git_topic_branches#Resolving_conflicts) for details.
+Just like cherry-pick, a merge can fail with conflicts. See [Resolving conflicts](/develop/git/topic-branches#resolving-conflicts) for details.
 
 Instead of merging, you might want to rebase your topic branch on top of the current master. To see what the difference between a merge and a rebase is, consider this history (left is older than right):
 

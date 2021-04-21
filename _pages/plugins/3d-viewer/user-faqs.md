@@ -75,13 +75,13 @@ For hiding the global coordinate system, have a look at "How to general view set
 
 For hiding the local coordinate system, select the object and click on -&gt;Edit-&gt;Hide/Show and disable 'Show coordinate system'.
 
-See [\#How to general view settings](#How_to_general_view_settings) for how you can avoid to show local coordinate systems in general. [Top](#top)
+See [\#How to general view settings](#how-to-general-view-settings) for how you can avoid to show local coordinate systems in general. [Top](#top)
 
 ### How to change the background color
 
 To change the background color of the 3D world, click on -&gt;View-&gt;Change background color. A dialog opens, which lets you interactively adjust the background color.
 
-To use the current background color by default, see [\#How to change general view settings](#How_to_change_general_view_settings). [Top](#top)
+To use the current background color by default, see [\#How to change general view settings](#how-to-change-general-view-settings). [Top](#top)
 
 Surfaces
 --------
@@ -92,11 +92,11 @@ Intuitively, the surface of an object is understood as the border between the ob
 
 ### How to change the color, transparency... of a surface
 
-See [\#How to change the color, transparency... of a 3D object](#How_to_change_the_color,_transparency..._of_a_3D_object)
+See [\#How to change the color, transparency... of a 3D object](#how-to-change-the-color-transparency-of-a-3d-object)
 
 ### How to change the isovalue of a surface
 
-See [\#How to change the color, transparency... of a 3D object](#How_to_change_the_color,_transparency..._of_a_3D_object)
+See [\#How to change the color, transparency... of a 3D object](#how-to-change-the-color-transparency-of-a-3d-object)
 
 ### How to smooth a surface
 
@@ -117,7 +117,7 @@ A volume rendering generates the 3D effect by putting the slices of a stack one 
 
 ### How to change the color, transparency, ... of a volume
 
-See [\#How to change the color, transparency... of a 3D object](#How_to_change_the_color,_transparency..._of_a_3D_object)
+See [\#How to change the color, transparency... of a 3D object](#how-to-change-the-color-transparency-of-a-3d-object)
 
 ### How to edit volumes
 
@@ -138,7 +138,7 @@ Orthoslices are three orthogonal slices through the volume. The three slices sho
 
 ### How to change the color, transparency, ... of orthoslices
 
-See [\#How to change the color, transparency... of a 3D object](#How_to_change_the_color,_transparency..._of_a_3D_object)
+See [\#How to change the color, transparency... of a 3D object](#how-to-change-the-color-transparency-of-a-3d-object)
 
 ### How to change the displayed slice
 
@@ -150,7 +150,7 @@ To hide a slice, hold one of the x, y or z key pressed and hit the 'space' bar. 
 
 ### How to hide a slice
 
-See [\#How to change the displayed slice](#How_to_change_the_displayed_slice)
+See [\#How to change the displayed slice](#how-to-change-the-displayed-slice)
 
 2D Surface Plots
 ----------------
@@ -163,7 +163,7 @@ A 3D surface plot always shows one slice a time. When a 3D surface plot is opene
 
 ### How to change the color, transparency, ... of surface plots
 
-See [\#How to change the color, transparency... of a 3D object](#How_to_change_the_color,_transparency..._of_a_3D_object)
+See [\#How to change the color, transparency... of a 3D object](#how-to-change-the-color-transparency-of-a-3d-object)
 
 ### How to interactively change the displayed slice
 
@@ -174,7 +174,7 @@ View Settings
 
 ### How to reset the view
 
-See [\#How to reset the view](#How_to_reset_the_view)
+See [\#How to reset the view](#how-to-reset-the-view)
 
 ### How to center a 3D object in the view
 
@@ -182,11 +182,11 @@ In case you have several 3D objects in the 3D window, it is desirable to center 
 
 ### How to hide the coordinate system
 
-There are two types of coordinate systems, one global and one locally for each individual 3D object. To hide the local coordinate system of one specific 3D object, see [\#How to hide the coordinate system](#How_to_hide_the_coordinate_system). To hide the global coordinate system, see [\#How to change general view settings](#How_to_change_general_view_settings). [Top](#top)
+There are two types of coordinate systems, one global and one locally for each individual 3D object. To hide the local coordinate system of one specific 3D object, see [\#How to hide the coordinate system](#how-to-hide-the-coordinate-system). To hide the global coordinate system, see [\#How to change general view settings](#how-to-change-general-view-settings). [Top](#top)
 
 ### How to change the background color
 
-see [\#How to change the background color](#How_to_change_the_background_color)
+see [\#How to change the background color](#how-to-change-the-background-color)
 
 ### How to show a scalebar
 
@@ -203,7 +203,7 @@ Clicking OK applies the changes. [Top](#top)
 
 ### How to change the center of rotation of global rotations
 
-See [\#How to change general view settings](#How_to_change_general_view_settings)
+See [\#How to change general view settings](#how-to-change-general-view-settings)
 
 ### How to change general view settings
 
@@ -213,11 +213,11 @@ Some general view settings can be changed and made permanent by clicking on -&gt
     -   **Width and Height** The window dimensions of the 3D viewer.
     -   **Show global coordinate system** Show a coordinate system which indicates the origin of the 3D world.
     -   **Use current color as default background** Activate this option to reload the current background color at each start of the viewer.
-    -   **Show scalebar** Activate this option to show the scalebar by default. (See also [\#How to show a scalebar](#How_to_show_a_scalebar).
+    -   **Show scalebar** Activate this option to show the scalebar by default. (See also [\#How to show a scalebar](#how-to-show-a-scalebar).
     -   **Apply changes now** If activated, the changes in the settings above are immediately applied, otherwise, they are first applied at the next application start.
 2.  Immediately applied options:
     -   **Show local coordinate system by default** If activated, the local coordinate system of 3D objects is shown when new objects are loaded in the 3D viewer. If inactivated, the coordinate system is omitted. Note: This only affects newly added 3D objects. Already displayed objects are not affected.
-    -   **Global rotation around Center/Origin** Global rotations (see [\#How to interact with the viewer (rotate, shift, zoom)](#How_to_interact_with_the_viewer_(rotate,_shift,_zoom))) can have two possible centers:
+    -   **Global rotation around Center/Origin** Global rotations (see [\#How to interact with the viewer (rotate, shift, zoom)](#how-to-interact-with-the-viewer-rotate-shift-zoom))) can have two possible centers:
         -   **Origin:** The origin of the virtual world. This is in most cases the lower left corner of 3D objects. You can make the origin visible by showing the global coordinate system (see above).
         -   **Center:** The center of the virtual world. The center is automatically calculated from the displayed 3D objects.
 
@@ -230,7 +230,7 @@ Transformations
 
 There are two types of transformations in the 3D viewer: Global transformations and local transformations. Global transformations refer to transformations of the whole view, no individual objects are transformed, but the whole 3D world together. Local transformations refer to transformations of individual objects.
 
-Transformations can be made interactively with the mouse. See [\#How to interact with the viewer (rotate, shift, zoom)](#How_to_interact_with_the_viewer_(rotate,_shift,_zoom)) for more information.
+Transformations can be made interactively with the mouse. See [\#How to interact with the viewer (rotate, shift, zoom)](#how-to-interact-with-the-viewer-rotate-shift-zoom)) for more information.
 
 Alternatively, transformations of individual objects can be altered more exactly, by specifying transformations matrices. Transformations can be set for 3D objects, or applied (concatenated with the current transformation) to 3D objects. Transformations can be saved and reloaded. And finally, it is possible to export a transformed object to a stack image. [Top](#top)
 
@@ -253,7 +253,7 @@ The window also allows you to load a transformation from a file. [Top](#top)
 
 ### How to set a specific transformation for a 3D object
 
-Setting a transformation of a 3D object does not concatenate transformations. See [\#How to apply a specific transformation to a 3D object](#How_to_apply_a_specific_transformation_to_a_3D_object) to concatenate transformations.
+Setting a transformation of a 3D object does not concatenate transformations. See [\#How to apply a specific transformation to a 3D object](#how-to-apply-a-specific-transformation-to-a-3d-object) to concatenate transformations.
 
 To set a transformation, select an object and click on -&gt;Transformation-&gt;Set transform. A window opens, which asks you for a transformation matrix. The matrix is supposed to be given as a (3x4) matrix, row by row. All the individual values should be separated by a space character.
 
@@ -293,9 +293,9 @@ To load a transformation, click on -&gt;Transformation-&gt;Set transform. In the
 
 The 3D viewer allows to load an image stack and display it as a 3D object. This object can be transformed. See e.g.
 
--   [\#How to interact with the viewer (rotate, shift, zoom)](#How_to_interact_with_the_viewer_(rotate,_shift,_zoom))
--   [\#How to apply a specific transformation to a 3D object](#How_to_apply_a_specific_transformation_to_a_3D_object)
--   [\#How to set a specific transformation for a 3D object](#How_to_set_a_specific_transformation_for_a_3D_object)
+-   [\#How to interact with the viewer (rotate, shift, zoom)](#how-to-interact-with-the-viewer-rotate-shift-zoom))
+-   [\#How to apply a specific transformation to a 3D object](#how-to-apply-a-specific-transformation-to-a-3d-object)
+-   [\#How to set a specific transformation for a 3D object](#how-to-set-a-specific-transformation-for-a-3d-object)
 
 Now such a transformed object can be exported to a stack image again. To do so, click on -&gt;Transformation-&gt;Export transformed image. The resulting stack image can of course also be saved via ImageJ's 'Save as' commands. [Top](#top)
 
@@ -304,7 +304,7 @@ Point Lists
 
 ### What is meant by 'point list' and why can they be useful
 
-Point lists represent a list of named points. They can be used for marking regions in/on 3D objects, for example. One particular usage of point lists is the landmark based registration. (See [\#How can two 3D objects be registered](#How_can_two_3D_objects_be_registered)). Each 3D object owns a point list. This list is not shown by default, however. [Top](#top)
+Point lists represent a list of named points. They can be used for marking regions in/on 3D objects, for example. One particular usage of point lists is the landmark based registration. (See [\#How can two 3D objects be registered](#how-can-two-3d-objects-be-registered)). Each 3D object owns a point list. This list is not shown by default, however. [Top](#top)
 
 ### How to show the point list of an object
 
@@ -369,6 +369,6 @@ Please note that the images are locked after registration, to prevent unintended
 
 ### How can the results be saved
 
-See [\#How to save a transformed object](#How_to_save_a_transformed_object)
+See [\#How to save a transformed object](#how-to-save-a-transformed-object)
 
 [Top](#top)

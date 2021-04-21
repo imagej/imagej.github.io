@@ -68,4 +68,4 @@ Once you click **OK**, your dataset should be displayed in the [BigStitcher main
 
 Go back to the [dataset definition overview](/plugins/bigstitcher/define-new-dataset)
 
-Go back to the [main page](BigStitcher#Documentation)
+Go back to the [main page](/plugins/bigstitcher#documentation)

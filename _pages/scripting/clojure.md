@@ -875,7 +875,7 @@ To forget all variables from the user namespace, do:
     (map #(ns-unmap 'user %)
          (keys (ns-interns 'user)))
 
-The above maps the function <i>ns-unmap</i> to each variable name declared in the <i>user</i> namespace (using \# to create a [lambda function](Clojure_Scripting#Lambda_functions)), which is the same as the prompt namespace. To get the names of the variables, we use <i>ns-interns</i> to retrieve the map of variable names versus the variable contents, and extract the keys from it into a list.
+The above maps the function <i>ns-unmap</i> to each variable name declared in the <i>user</i> namespace (using \# to create a [lambda function](/scripting/clojure#lambda-functions)), which is the same as the prompt namespace. To get the names of the variables, we use <i>ns-interns</i> to retrieve the map of variable names versus the variable contents, and extract the keys from it into a list.
 
 <i>Thanks to AWizzArd from \#clojure at irc.freenode.net for the tip.</i>
 

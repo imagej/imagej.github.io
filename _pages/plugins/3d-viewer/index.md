@@ -70,11 +70,11 @@ There is a known problem with older Windows drivers for some Intel graphics card
 
 ### The 3D Viewer simply crashes
 
-Unfortunately, there are quite a large number of possible reasons. Please help us by [debugging the issues](Debugging_intro#Debugging_Java3D_issues) and [contacting us](/help) with the information. You can also [report a bug](/help/report-a-bug), which will provide a lot of additional, potentially useful information.
+Unfortunately, there are quite a large number of possible reasons. Please help us by [debugging the issues](/develop/debugging#debugging-java3d-issues) and [contacting us](/help) with the information. You can also [report a bug](/help/report-a-bug), which will provide a lot of additional, potentially useful information.
 
 ### Only a gray rectangle is shown by the 3D Viewer
 
-As with 3D Viewer crashes, there are quite a large number of possible reasons. Please help us by [debugging the issues](Debugging_intro#Debugging_Java3D_issues) and [contacting us](/help) with the information. You can also [report a bug](/help/report-a-bug), which will provide a lot of addidtional, potentially useful information.
+As with 3D Viewer crashes, there are quite a large number of possible reasons. Please help us by [debugging the issues](/develop/debugging#debugging-java3d-issues) and [contacting us](/help) with the information. You can also [report a bug](/help/report-a-bug), which will provide a lot of addidtional, potentially useful information.
 
 Publication
 -----------

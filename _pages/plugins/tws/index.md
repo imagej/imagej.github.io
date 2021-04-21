@@ -62,7 +62,7 @@ If the training ends correctly, then the displayed image will be completely segm
 
 #### Toggle overlay
 
-{% include thumbnail src='/media/AWS-Probability-maps.png' title='Example of resulting probability map displayed as a hyperstack'%} This button activates and deactivates the overlay of the result image. The transparency of the overlay image can be adjusted in the [Settings dialog](Advanced_Weka_Segmentation#Settings).
+{% include thumbnail src='/media/AWS-Probability-maps.png' title='Example of resulting probability map displayed as a hyperstack'%} This button activates and deactivates the overlay of the result image. The transparency of the overlay image can be adjusted in the [Settings dialog](/plugins/tws#settings).
 
 #### Create result
 
@@ -108,7 +108,7 @@ With this button we can save the current trace information into a data file that
 
 #### Create new class
 
-The default number of classes of the plugin is two, but through this button we can increase up to an arbitrary number. The name of the new classes can be changed on the [Settings dialog](Trainable_Weka_Segmentation#Settings).
+The default number of classes of the plugin is two, but through this button we can increase up to an arbitrary number. The name of the new classes can be changed on the [Settings dialog](/plugins/tws#settings).
 
 #### Settings
 
@@ -192,7 +192,7 @@ The detailed implementation of these 2D filters can be found in the [source code
 
 ##### Classifier options
 
-{% include thumbnail src='/media/AWS-Classifier-selection.png' title='Classifier selection in the Trainable Weka Segmentation [Settings dialog](Advanced_Weka_Segmentation#Settings).'%} The default classifier is [FastRandomForest](https://code.google.com/p/fast-random-forest/), a **multi-threaded** version of {% include wikipedia title='Random forest' text='random forest'%} by [Fran Supek](https://scholar.google.com/citations?user=Rz3rPeUAAAAJ), initialized with 200 trees and 2 random features per node. However the user can select any available classifier in the [Weka](http://www.cs.waikato.ac.nz/ml/weka/) by clicking on "Choose" button. By left-clicking on the classifier text we can also edit the classifier options.
+{% include thumbnail src='/media/AWS-Classifier-selection.png' title='Classifier selection in the Trainable Weka Segmentation [Settings dialog](/plugins/tws#settings).'%} The default classifier is [FastRandomForest](https://code.google.com/p/fast-random-forest/), a **multi-threaded** version of {% include wikipedia title='Random forest' text='random forest'%} by [Fran Supek](https://scholar.google.com/citations?user=Rz3rPeUAAAAJ), initialized with 200 trees and 2 random features per node. However the user can select any available classifier in the [Weka](http://www.cs.waikato.ac.nz/ml/weka/) by clicking on "Choose" button. By left-clicking on the classifier text we can also edit the classifier options.
 
 **If you do not find the classifier you want**, you might have to install the Weka package that includes it. For that, you need to launch the Weka GUI Chooser (by clicking on the Weka button of the left panel of the plugin GUI) and use the [ Weka Package Manager](/plugins/tws/how-to-install-new-classifiers) (under {% include bc path='Tools | Package manager'%}). For a step-by-step description on how to install new packages, have a look at this [tutorial](/plugins/tws/how-to-install-new-classifiers).
 

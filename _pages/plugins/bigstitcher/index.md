@@ -177,7 +177,7 @@ After assigning PSFs to all the views you want to process, you can proceed with 
 
 ### Headless Operation
 
-We provide a macro-scriptable version of most processing steps in BigStitcher. They can be recorded using the [Macro Recorder](Macro#The_recorder) and the resulting script can be adapted, e.g. for batch processing.
+We provide a macro-scriptable version of most processing steps in BigStitcher. They can be recorded using the [Macro Recorder](/scripting/macro#the-recorder) and the resulting script can be adapted, e.g. for batch processing.
 
 -   [Headless operation of BigStitcher](/plugins/bigstitcher/headless)
 

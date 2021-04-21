@@ -54,7 +54,7 @@ References
 Installation
 ------------
 
-The easiest way to install *MyofibrilJ* is by [adding](Following_an_update_site#Add_update_sites) its update site. Specifically:
+The easiest way to install *MyofibrilJ* is by [adding](/update-sites/following#add-update-sites) its update site. Specifically:
 
 -   launch Fiji and go to the menu *Help/Update...*
 -   once the dialog window *ImageJ Updater* is opened, click on the *Manage update sites* button

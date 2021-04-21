@@ -19,7 +19,7 @@ Open the image to be analyzed in ImageJ. In general, the plugin works in two mod
 -   particles detection (whole image or ROI)
 -   particles detection and colocalization analysis (whole image or ROI).
 
-For **colocalization** you need a [color composite image](/Color_Image_Processing#Color_Composite_Images) containing **multiple color channels (two or more)**. Plugin auto-detects the number of channels and if it is more than one then the plugin will automatically switch to the second mode (see below).
+For **colocalization** you need a [color composite image](/cookbook/color-image-processing#color-composite-images) containing **multiple color channels (two or more)**. Plugin auto-detects the number of channels and if it is more than one then the plugin will automatically switch to the second mode (see below).
 
 The plugin works with time/z-stacks.
 

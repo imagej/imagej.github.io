@@ -40,4 +40,4 @@ If you click **OK**, the correction will be applied to you images. Note that if 
 
 {% include info-box content='Since we calculate the correction on-the-fly, it will slow subsequent processing steps. If you plan on doing flatfield correction, we advise to first load the data virtually, apply the correction and then, if you are content with the results, re-save as HDF5 to "burn-in" the correction.' %}
 
-Go back to the [main page](BigStitcher#Documentation)
+Go back to the [main page](/plugins/bigstitcher#documentation)

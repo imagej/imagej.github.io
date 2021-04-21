@@ -189,7 +189,7 @@ This feature analyzer simply takes the mean, max, min, median and standard devia
 
 [code on github](https://github.com/tinevez/plugins/trackmate-TrackAnalysis/blob/master/src/main/java/fiji/plugin/trackmate/features/track/LinearTrackDescriptor.java)
 
-This feature analyzer comes from a TrackMate extra. It is available as a jar that you should download separately and drop into the jars folder of you Fiji installation. Check [TrackMate\#Extensions](TrackMate#Extensions) to get it.
+This feature analyzer comes from a TrackMate extra. It is available as a jar that you should download separately and drop into the jars folder of you Fiji installation. Check [TrackMate\#Extensions](/plugins/trackmate#extensions) to get it.
 
 It was written to add track descriptor that would help characterize the track motility type. The features calculated there will help you determine whether a tracked object moves 'efficiently' or has an apparently random motion, etc. I simply took some of the feature described in the following paper:
 
@@ -338,7 +338,7 @@ In calculating costs, we deviate slightly from the original paper from Jaqaman *
 The user is asked for a maximal allowed linking distance (entered in physical units), and for a series of spot features, alongside with penalty weights. These parameters are used to tune the cost matrices. For two spots that may link, the linking cost is calculated as follow:
 
 1.  The distance between the two spots D is calculated
-2.  If the spots are separated by more than the max allowed distance, the link is forbidden, and the cost is set to [infinity](http://docs.oracle.com/javase/6/docs/api/java/lang/Double.html#POSITIVE_INFINITY) (*i.e* the blocking value). If not,
+2.  If the spots are separated by more than the max allowed distance, the link is forbidden, and the cost is set to [infinity](http://docs.oracle.com/javase/6/docs/api/java/lang/Double.html#positive-infinity) (*i.e* the blocking value). If not,
 3.  For each feature in the map, a penalty p is calculated as  
     $$ p = 3 \times W \times \frac{ | f_1-f_2|}{f_1+f_2} $$  
     where W is the factor associated to the feature in the map. This expression is such that:

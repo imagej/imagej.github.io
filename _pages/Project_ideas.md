@@ -41,7 +41,7 @@ The project would consist of
 **Goal:** Plugin for Mixed-File-Format MultiVirtualHyperStack viewing window.  
 **Language:** Java.  
 **Contact:** Bill Mohler (wmohler@neuron.uchc.edu)  
-**Plugin:** [ python script for multi-stack composite image](Jython_Scripting#Visualize_any_number_of_TIFF_stacks_in_a_single_composite_multi-color_image_stack)
+**Plugin:** [ python script for multi-stack composite image](/scripting/jython#visualize-any-number-of-tiff-stacks-in-a-single-composite-multi-color-image-stack)
 
 Interactively adjustable intensity/LUT curves
 ---------------------------------------------

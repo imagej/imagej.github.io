@@ -49,7 +49,7 @@ We developed several algorithms for the registration and fusion of multi-angle S
 Detailed tutorials
 ------------------
 
-SPIM registration is particularly useful for processing of data acquired on [**OpenSPIM**](http://openspim.org). Detailed step-by-step tutorials are available on the [**OpenSPIM wiki**](http://openspim.org/Operation#Data_processing).
+SPIM registration is particularly useful for processing of data acquired on [**OpenSPIM**](http://openspim.org). Detailed step-by-step tutorials are available on the [**OpenSPIM wiki**](http://openspim.org/Operation#data-processing).
 
 -   We start by defining [**System requirements**](http://openspim.org/Pre-requisites) and downloading [sample OpenSPIM data](http://openspim.org/Raw_data),
 -   followed by optional [**pre-processing steps**](http://openspim.org/Pre-processing).
@@ -57,7 +57,7 @@ SPIM registration is particularly useful for processing of data acquired on [**O
 -   [**Multi-view Fusion**](http://openspim.org/Fusion) section discusses how to combine several view into one output image
 -   [**Time series registration**](http://openspim.org/Timelapse_Registration) removes the sample drift across long-term timelapse.
 
-The pipeline is relatively linear as described above, we highlight the steps where [**alternative routes exist**](http://openspim.org/Registration#Cross-road_in_SPIM_plugins).
+The pipeline is relatively linear as described above, we highlight the steps where [**alternative routes exist**](http://openspim.org/Registration#cross-road-in-spim-plugins).
 
 How do I view fused, saved output image(s)
 ------------------------------------------

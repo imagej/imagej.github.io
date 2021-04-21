@@ -35,4 +35,4 @@ FAQ
 
 In short, you can't. It will always be, to some extent, in the eye of the user/observer/scientist and will also be impacted by empirically collected knowledge. The basic problem of deciding if a threshold (or in general an extraction method) is "good" needs a "ground truth". But such a ground truth is not naturally existing and is always created in one or the other way by a human. So, describing which method you use—and/or showing a comparison with other methods—is probably the best you can do to enable a statement on the quality of the extraction.
 
-For more detailed information on thresholding and image segmentation basics and some quality evaluation see the [Principles](/Principles#Considerations_during_image_segmentation_.28binarization.29) page.
+For more detailed information on thresholding and image segmentation basics and some quality evaluation see the [Principles](/techniques/principles#considerations-during-image-segmentation-inarization) page.

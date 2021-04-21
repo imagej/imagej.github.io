@@ -5,4 +5,4 @@ categories: Scripting
 description: test description
 ---
 
-This is an example JRuby script, which is described in the page on [JRuby Scripting](JRuby_Scripting#Example__Generating_a_Plasma_Cloud).
+This is an example JRuby script, which is described in the page on [JRuby Scripting](/scripting/jruby#example-generating-a-plasma-cloud).

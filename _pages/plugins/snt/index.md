@@ -56,7 +56,7 @@ Features
 -   Direct access to public databases, including [MouseLight](https://ml-neuronbrowser.janelia.org/), [FlyCircuit](http://www.flycircuit.tw) and [NeuroMorpho](http://neuromorpho.org/)
 -   Built-in commands for *immediate* retrieval of summary statistics, comparison plots and histograms
 -   Image processing: Reconstructions can be skeletonized, converted to masks or ROIs, and voxel intensities profiled
--   [Sholl](SNT__Analysis#Sholl_Analysis) and [Horton-Strahler](SNT__Analysis#Strahler_Analysis) analyses. [Graph theory](https://en.wikipedia.org/wiki/Graph_theory) and [Persistent homology](https://en.wikipedia.org/wiki/Persistent_homology) -based analyses
+-   [Sholl](SNT__Analysis#sholl-analysis) and [Horton-Strahler](SNT__Analysis#strahler-analysis) analyses. [Graph theory](https://en.wikipedia.org/wiki/Graph_theory) and [Persistent homology](https://en.wikipedia.org/wiki/Persistent_homology) -based analyses
 -   Modeling: access to the [Cx3D simulation engine](/plugins/snt/modeling)
 
 ### Visualization

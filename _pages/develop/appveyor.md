@@ -5,7 +5,7 @@ section: Development:Tools
 description: test description
 ---
 
-[AppVeyor](https://ci.appveyor.com/) is a tool for [continuous integration](Project_management#Continuous_integration) on [Windows](/platforms/windows) platforms. It is very useful for automating builds, deployment and other tasks.
+[AppVeyor](https://ci.appveyor.com/) is a tool for [continuous integration](/develop/project-management#continuous-integration) on [Windows](/platforms/windows) platforms. It is very useful for automating builds, deployment and other tasks.
 
 
 Services

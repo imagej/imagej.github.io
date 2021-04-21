@@ -96,4 +96,4 @@ Normally, the best idea is to select one view group to fix, using it as a starti
 
 <img src="/media/BigStitcher stitch 9.png" width="400"/>
 
-Go back to the [main page](BigStitcher#Documentation)
+Go back to the [main page](/plugins/bigstitcher#documentation)

@@ -38,7 +38,7 @@ For details, please see [Downloading and Building Fiji From Source](/fiji/buildi
 Testing
 -------
 
-It is strongly recommended to write regression tests (also known as *unit tests*). It is [easy](Fiji_contribution_requirements#Regression_tests).
+It is strongly recommended to write regression tests (also known as *unit tests*). It is [easy](/fiji/contribution-requirements#regression-tests).
 
 Furthermore, it is highly recommended to write and run unit tests in an [Integrated Development Environment](/develop/ides) for efficient debugging.
 

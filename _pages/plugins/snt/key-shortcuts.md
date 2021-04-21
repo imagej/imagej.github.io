@@ -51,11 +51,11 @@ These shortcuts are available when running SNT in *Tracing Mode*:
 
 <!-- -->
 
--   {% include key content='S' %} - Toggles cursor <u>S</u>napping: If enabled, the plugin will automatically move the cursor to the brightest voxel within the specified x,y,z snapping window<sup>1</sup>. This facilitates accurate [positioning of path points](/SNT__Step-By-Step_Instructions#Accurate_Point_Placement) and it is described in more detail in this [issue](https://github.com/fiji/Simple_Neurite_Tracer/issues/1).
+-   {% include key content='S' %} - Toggles cursor <u>S</u>napping: If enabled, the plugin will automatically move the cursor to the brightest voxel within the specified x,y,z snapping window<sup>1</sup>. This facilitates accurate [positioning of path points](/SNT__Step-By-Step_Instructions#accurate-point-placement) and it is described in more detail in this [issue](https://github.com/fiji/Simple_Neurite_Tracer/issues/1).
 
 <!-- -->
 
--   {% include key content='Alt\|Shift' %}-click - Selects a point along the active path to be used as forking point (See [step-by-step instructions](SNT__Step-By-Step_Instructions#Branching__Start_A_Path_On_An_Existing_Path) for more details on joining and branching).
+-   {% include key content='Alt\|Shift' %}-click - Selects a point along the active path to be used as forking point (See [step-by-step instructions](SNT__Step-By-Step_Instructions#branching-start-a-path-on-an-existing-path) for more details on joining and branching).
 
 ### Navigation and Zoom
 
@@ -145,7 +145,7 @@ See [SciView](/plugins/sciview)'s {% include bc path='Help| '%}menu for a full l
 
 ### Legacy 3D Viewer
 
-All shortcuts that are not specific to tracing canvases (XY, ZY and XZ views) *should* be recognized by the [Legacy 3D viewer](SNT__Step-By-Step_Instructions#Legacy_3D_Viewer). In addition the following are also implemented:
+All shortcuts that are not specific to tracing canvases (XY, ZY and XZ views) *should* be recognized by the [Legacy 3D viewer](SNT__Step-By-Step_Instructions#legacy-3d-viewer). In addition the following are also implemented:
 
 -   {% include key content='H' %} - Selects the <u>H</u>and (rotation) tool.
 -   {% include key content='W' %} - Selects the <u>W</u>and (selection) tool.
@@ -153,7 +153,7 @@ All shortcuts that are not specific to tracing canvases (XY, ZY and XZ views) *s
 
 ### Other
 
-There are other key and mouse combinations used in e.g., [Sholl Analysis (by Focal Point)](SNT__Analysis#Sholl_Analysis), and [Branching and Joining Paths](SNT__Step-By-Step_Instructions#Branching__Start_A_Path_On_An_Existing_Path), that are listed in the contextual menu, displayed when righ-clicking a tracing canvas.
+There are other key and mouse combinations used in e.g., [Sholl Analysis (by Focal Point)](SNT__Analysis#sholl-analysis), and [Branching and Joining Paths](SNT__Step-By-Step_Instructions#branching-start-a-path-on-an-existing-path), that are listed in the contextual menu, displayed when righ-clicking a tracing canvas.
 
 
 {% capture tip%}

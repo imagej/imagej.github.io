@@ -266,7 +266,7 @@ In BeanShell
 
 See also the [Beanshell Scripting](/scripting/beanshell) documentation page.
 
-For some tutorial material on using BeanShell, see [BeanShell's Quickstart](http://www.beanshell.org/manual/quickstart.html#Java_Statements_and_Expressions).
+For some tutorial material on using BeanShell, see [BeanShell's Quickstart](http://www.beanshell.org/manual/quickstart.html#java-statements-and-expressions).
 
 If this looks awfully like the Java example to you, you are absolutely correct: BeanShell has the same syntax as Java, although it is not strongly typed (you do not need to declare variables if you do not want to), and it is interpreted.
 

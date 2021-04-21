@@ -37,7 +37,7 @@ Take note of where the Java installation ended up; we will use "C:\\Program File
 
 Also take note of the path to your Eclipse installation; we will use "C:\\Users\\you\\Programs\\eclipse" though your path is likely to be different.
 
-Open the file "C:\\Users\\you\\Programs\\eclipse\\eclipse.ini" in a text editor, and follow [these instructions](http://wiki.eclipse.org/Eclipse.ini#Specifying_the_JVM) to specify the JVM using the "-vm" flag. Be careful to follow the instructions exactly.
+Open the file "C:\\Users\\you\\Programs\\eclipse\\eclipse.ini" in a text editor, and follow [these instructions](http://wiki.eclipse.org/Eclipse.ini#specifying-the-jvm) to specify the JVM using the "-vm" flag. Be careful to follow the instructions exactly.
 
 Now update Eclipse's JRE to be JDK-aware:
 

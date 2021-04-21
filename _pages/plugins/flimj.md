@@ -69,7 +69,7 @@ In the screenshots above,
 -   **Orange dots** denote the photon counts in each time bin in Fit plot and denote the residual ($$y_{data}-y_{fit}$$) in Res plot.
 -   **Photon Count** displays the total number of photons collected between the start and end cursor.
 -   $$z, A, \tau$$ (or $$z_1, A_1, A_2, \tau_1, \tau_2$$ in two-component fit) are the background, initial intensity and lifetime parameters of the model.
--   $$\chi^2$$ shows the chi-squared measure of the fit (see [Noise models](#Noise_models)).
+-   $$\chi^2$$ shows the chi-squared measure of the fit (see [Noise models](#noise-models)).
 
 ### Fit settings
 
@@ -92,7 +92,7 @@ Sometimes you may want to fine-tune the fitting configurations. The **Settings**
 
 <!-- -->
 
--   **Noise Model**: The noise model used for fitting (see [Noise models](#Noise_models)).
+-   **Noise Model**: The noise model used for fitting (see [Noise models](#noise-models)).
 
 <!-- -->
 
@@ -104,7 +104,7 @@ Sometimes you may want to fine-tune the fitting configurations. The **Settings**
 
 <!-- -->
 
--   **Instrument Response**: The dataset that contains the instrument response. (see [Instrument response function (IRF/prompt)](#Instrument_response_function_(IRF/prompt))).
+-   **Instrument Response**: The dataset that contains the instrument response. (see [Instrument response function (IRF/prompt)](prompt/prompt))).
 
 <!-- -->
 

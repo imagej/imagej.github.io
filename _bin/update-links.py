@@ -10,9 +10,13 @@ def processfile(path):
             if new.startswith('TODO') or new == '<UNCHANGED>' or new == '???': continue
             for i in range(len(lines)):
                 l = lines[i].replace(f'="{old}"', f'="/{new}"') # HTML, no slash
+                l = l.replace(f'="{old}#', f'="/{new}#') # HTML, no slash, with anchor
                 l = l.replace(f']({old})', f'](/{new})') # Markdown, no slash
+                l = l.replace(f']({old}#', f'](/{new}#') # Markdown, no slash, with anchor
                 l = l.replace(f'"/{old}"', f'"/{new}"') # HTML, with slash
+                l = l.replace(f'"/{old}#', f'"/{new}#') # HTML, with slash, with anchor
                 l = l.replace(f'](/{old})', f'](/{new})') # Markdown, with slash
+                l = l.replace(f'](/{old}#', f'](/{new}#') # Markdown, with slash, with anchor
                 if lines[i] != l:
                     file_changed = line_changed = True
                     lines[i] = l

@@ -136,7 +136,7 @@ If it is not clear which update sites or external plugins are causing problems i
 
 With this method you will continue to reduce your list of potentially bad candidates by 1/2, until you find the culprit(s).
 
-Note: if the "erroneous behavior" is [catastrophic](#Catastrophic_failure) to the point you can not start ImageJ, you can instead start from a clean build and re-introduce update sites and local plugins as detailed above until the problem is identified.
+Note: if the "erroneous behavior" is [catastrophic](#catastrophic-failure) to the point you can not start ImageJ, you can instead start from a clean build and re-introduce update sites and local plugins as detailed above until the problem is identified.
 
 Catastrophic failure
 --------------------

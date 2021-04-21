@@ -11,7 +11,7 @@ description: test description
 Introduction
 ------------
 
-Jython is an implementation of the Python programming language designed to run on the Java platform. [1] In ImageJ Jython is one of several [supported languages](Scripting#Supported_languages).
+Jython is an implementation of the Python programming language designed to run on the Java platform. [1] In ImageJ Jython is one of several [supported languages](/scripting#supported-languages).
 
 When to use Jython
 ------------------
@@ -20,14 +20,14 @@ All scripting language supported by ImageJ can be used to access the [ImageJ API
 
 The following list will help you to decide if Jython is the right choice to create scripts for ImageJ:
 
--   If you have experience with Python you can easily use Jython for ImageJ scripting. But you have to keep in mind that tools commonly used in many Python projects (e.g. Numpy) are not available in Jython. By building your [own modules](Jython_Scripting#Self_written_Jython_modules_for_ImageJ) you can create complex scripts that otherwise are only possible by writing ImageJ plugins in Java.
+-   If you have experience with Python you can easily use Jython for ImageJ scripting. But you have to keep in mind that tools commonly used in many Python projects (e.g. Numpy) are not available in Jython. By building your [own modules](/scripting/jython#self-written-jython-modules-for-imagej) you can create complex scripts that otherwise are only possible by writing ImageJ plugins in Java.
 -   If don't have any experience in programming, the Python language is a good choice to start with. If your only aim is to write scripts for ImageJ, there are other languages you should try first (e.g. [Groovy](/scripting/groovy)).
 -   In Python many problems can be solved with less code than in other languages. Still the code is easy to read. Have a look at the examples on this page and decide if you want to start using Python for ImageJ scripting.
 
 ### Explanation
 
 The Java implementation of Python is limited to the [standard library](https://docs.python.org/2/library/index.html) of Python 2.  
-It is not possible to use external python modules (like Numpy...) however, [any Java class residing in the Fiji installation can be used](/index.php?title=Jython_Scripting#Importing_Java_module_and_classes).  
+It is not possible to use external python modules (like Numpy...) however, [any Java class residing in the Fiji installation can be used](/index.php?title=Jython_Scripting#importing-java-module-and-classes).  
 Even with the given limitations, Jython is a powerful language for ImageJ scripting. Hopefully the examples on this page can convince you of that.
 
 Jython basics for ImageJ
@@ -84,7 +84,7 @@ The following list links to documentation of the used Python features:
 
 The second example is inspired by atomic resolution images recorded with an Transmission Electron Microscope (TEM). Such images show a regular structure (a crystal), but the images are noisy because of the low signal. By using a Fourier filter the contrast can be enhanced.
 
-The script will create a periodic structure and add some random noise. The user can control the parameters of the created image. This is realized using [Script parameters](/scripting/parameters). The Fourier filtering has been created by using the [Recorder](Introduction_into_Macro_Programming#The_recorder). Finally a simple image calculator is used to show that functions can be passed as parameters.
+The script will create a periodic structure and add some random noise. The user can control the parameters of the created image. This is realized using [Script parameters](/scripting/parameters). The Fourier filtering has been created by using the [Recorder](/scripting/macro#the-recorder). Finally a simple image calculator is used to show that functions can be passed as parameters.
 
 This list links to the documentation of Python features that are introduced with this example:
 

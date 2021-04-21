@@ -167,7 +167,7 @@ Tutorials
 ---------
 
 -   For ImageJ 1.x: [Introduction into Developing Plugins](/develop/ij1-plugins) and [Example Legacy Plugin](https://github.com/imagej/example-legacy-plugin)
--   For ImageJ2: [Writing plugins](/develop/plugins) (Note: The instruction "Update your parent POM" in [Writing plugins\#Update\_your\_POM](Writing_plugins#Update_your_POM) just means that the version number should be adjusted to reflect the latest available version of the parent POM file on GitHub.)
+-   For ImageJ2: [Writing plugins](/develop/plugins) (Note: The instruction "Update your parent POM" in [Writing plugins\#Update\_your\_POM](/develop/plugins#update-your-pom) just means that the version number should be adjusted to reflect the latest available version of the parent POM file on GitHub.)
 -   [ImgLib2 Examples](/imglib2/examples)
 -   [Developing ImgLib2](/imglib2/developing)
 -   [ImageJ Ops](/libs/imagej-ops)
@@ -210,7 +210,7 @@ The imagej/tutorials are structured as individual projects. The files can live i
 "One file to bind them all": parent `pom.xml` files
 ---------------------------------------------------
 
-As the projects get more complex, read about the [Maven component structure of ImageJ/SciJava](Architecture#Maven_component_structure) and something which is called "[Bill of Materials](//develop/architecture#bill-of-materials)" or just BOM. A "//develop/architecture#bill-of-materials" is a list of dependencies at particular versions which are believed to be mutually compatible. The complexity of ImageJ/SciJava's dependencies is a tribute to the different organizations which are contributing with their independent projects to ImageJ/SciJava. There are several "parent" pom.xml files which are independently maintained for example by the ImageJ, [ImgLib2](/imglib2) or [SCIFIO](/software/scifio) organizations. Each of these organizations has developed source code components which depend on components within the other two organizations. This complicated network of dependencies is managed with the help of the parent `pom.xml` files, i.e. `pom-imagej`, `pom-fiji`, `pom-imglib2` etc. (see a list of all on the [ImageJ Architecture page](Architecture#Maven_component_structure)).
+As the projects get more complex, read about the [Maven component structure of ImageJ/SciJava](/develop/architecture#maven-component-structure) and something which is called "[Bill of Materials](//develop/architecture#bill-of-materials)" or just BOM. A "//develop/architecture#bill-of-materials" is a list of dependencies at particular versions which are believed to be mutually compatible. The complexity of ImageJ/SciJava's dependencies is a tribute to the different organizations which are contributing with their independent projects to ImageJ/SciJava. There are several "parent" pom.xml files which are independently maintained for example by the ImageJ, [ImgLib2](/imglib2) or [SCIFIO](/software/scifio) organizations. Each of these organizations has developed source code components which depend on components within the other two organizations. This complicated network of dependencies is managed with the help of the parent `pom.xml` files, i.e. `pom-imagej`, `pom-fiji`, `pom-imglib2` etc. (see a list of all on the [ImageJ Architecture page](/develop/architecture#maven-component-structure)).
 
 Initially I could not figure out where to put one of these `pom-xxx` files to use it as parent POM. I erroneously thought it should be downloaded from GitHub and copied somewhere in my ImageJ projects folders. However, one does not have to take care of the parent POM file at all! You just have to refer to it in the local `pom.xml` file of your intended plugin project in the section <parent>.
 
@@ -266,7 +266,7 @@ Further readings
 ----------------
 
 -   [README.md](https://github.com/imagej/minimal-ij1-plugin/blob/master/README.md) of the [Minimal Maven based ImageJ 1.x plugin](https://github.com/imagej/minimal-ij1-plugin)
--   Learn more about [ImageJ/SciJava dependencies](Maven#How_to_find_a_dependency.27s_groupId.2FartifactId.2Fversion_.28GAV.29.3F)
+-   Learn more about [ImageJ/SciJava dependencies](/develop/maven#how-to-find-a-dependencys-groupidrtifactidversion-gav)
 -   [ImageJ Maven FAQ](/develop/maven-faq)
 
 Other References
@@ -477,7 +477,7 @@ The current situation with respect to Java 6 vs. Java 8, as well as the ramifica
 
 Ultimately, the ImageJ/Fiji developers will push all the Java-8 stuff back to the core ImageJ and Fiji sites. But not until the ImageJ/Fiji developers add a launch check that verifies your version of Java is new enough—and if not, tells you how to upgrade it. Ihe ImageJ/Fiji developers will definitely archive the final Java-6-compatible versions of ImageJ and Fiji when they complete that transition.
 
-Note: You can check the Java version as [described here](Troubleshooting#Checking_the_Java_version).
+Note: You can check the Java version as [described here](/help/troubleshooting#checking-the-java-version).
 
 More information can be read here: [2015-12-22 - The road to Java 8](/news/2015-12-22_-_The_road_to_Java_8)
 

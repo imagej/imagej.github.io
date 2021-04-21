@@ -11,7 +11,7 @@ This release was a central goal of the recent [hackathon](/events/Hackathon) at 
 
 The ImgLib2 core library is now [available on Maven Central](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22net.imglib2%22), and the [source code](/develop/source) for all ImgLib2 projects is [accessible on GitHub](https://github.com/imglib).
 
-Like the [SciJava](SciJava) and [ImageJ2](/software/imagej2) projects, ImgLib2 releases now follow the [semantic versioning](/develop/versioning) scheme. Also, the project and [git](/develop/git) repository structure has changed. The main imglib repository has been [split into multiple repositories](Architecture#Git_repositories), named consistently with the artifact names and java package prefixes. Projects are now coupled using non-SNAPSHOT versions, in order to achieve [reproducible builds](/develop/architecture#reproducible-builds).
+Like the [SciJava](SciJava) and [ImageJ2](/software/imagej2) projects, ImgLib2 releases now follow the [semantic versioning](/develop/versioning) scheme. Also, the project and [git](/develop/git) repository structure has changed. The main imglib repository has been [split into multiple repositories](/develop/architecture#git-repositories), named consistently with the artifact names and java package prefixes. Projects are now coupled using non-SNAPSHOT versions, in order to achieve [reproducible builds](/develop/architecture#reproducible-builds).
 
 For further technical details on project structure, see the [Architecture](/develop/architecture) page.
 

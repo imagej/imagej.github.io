@@ -75,7 +75,7 @@ If you are using an EMCCD camera you should specify the mean **EMCCD gain** that
 Electrons per A/D count  
 Finally you have to provide the ratio at which the analog digital unit in your camera converts photo electrons into A/D counts.
 
-Please consult you camera's specs sheet to obtain this information. The **EMCCD gain** and **Electrons per A/D count** are required for tracking with the [ EMCCD-GaussianML method](Low_Light_Tracking_Tool#EMCCD-GaussianML). The [ GaussianML method](Low_Light_Tracking_Tool#GaussianML) uses these values to correct the measured flux of the object and background.
+Please consult you camera's specs sheet to obtain this information. The **EMCCD gain** and **Electrons per A/D count** are required for tracking with the [ EMCCD-GaussianML method](/plugins/low-light-tracking-tool#emccd-gaussianml). The [ GaussianML method](/plugins/low-light-tracking-tool#gaussianml) uses these values to correct the measured flux of the object and background.
 
 The User Interface
 ==================
@@ -87,9 +87,9 @@ When the plugin starts on a 2D image stack you have three windows and the contro
 
 ![](/media/Opendatasmall.png "fig:Opendatasmall.png") ![](/media/Controlwindownew.png "fig:Controlwindownew.png")
 
-If you would like the windows to become larger or smaller, change the size of the main data window and then select **Arrange Windows**, from the **View** menu. Alternatively you can use the [ hot-key](Low_Light_Tracking_Tool#Hot-Keys) {% include key content='Ctrl' %}+{% include key content='W' %} (when the focus is on the control panel) or {% include key content='W' %} (when the focus is on one of the other windows). This will also organize the windows if they have become scattered.
+If you would like the windows to become larger or smaller, change the size of the main data window and then select **Arrange Windows**, from the **View** menu. Alternatively you can use the [ hot-key](/plugins/low-light-tracking-tool#hot-keys) {% include key content='Ctrl' %}+{% include key content='W' %} (when the focus is on the control panel) or {% include key content='W' %} (when the focus is on one of the other windows). This will also organize the windows if they have become scattered.
 
-If you close some of the windows you can bring them back using the **Windows** menu in the control panel. If you close the control panel, this will terminate the program. Don't forget to [ **Save**](Low_Light_Tracking_Tool#Saving_and_Loading) your results before.
+If you close some of the windows you can bring them back using the **Windows** menu in the control panel. If you close the control panel, this will terminate the program. Don't forget to [ **Save**](/plugins/low-light-tracking-tool#saving-and-loading) your results before.
 
 Navigation
 ----------
@@ -173,7 +173,7 @@ The table now contains more information, with the first frame of the trace, and 
 Saving and loading
 ------------------
 
-The tracking results are already saved automatically by default. You can turn that off by un-checking the **Auto Save** box. The results can than be saved using the **Save** button. They are by default stored in the directory of the image stack you are working on. The file format is described [ below](Low_Light_Tracking_Tool#File_format). When you start the plugin again with the same data file your results will be automatically loaded. You can also reload previously tracked data and undo any unsaved changes by pressing the reload button. If you want to open data which is stored in a different location you can load it by clicking on the address bar and navigating to the data's location. You can then re-track, or examine the data.
+The tracking results are already saved automatically by default. You can turn that off by un-checking the **Auto Save** box. The results can than be saved using the **Save** button. They are by default stored in the directory of the image stack you are working on. The file format is described [ below](/plugins/low-light-tracking-tool#file-format). When you start the plugin again with the same data file your results will be automatically loaded. You can also reload previously tracked data and undo any unsaved changes by pressing the reload button. If you want to open data which is stored in a different location you can load it by clicking on the address bar and navigating to the data's location. You can then re-track, or examine the data.
 
 Deleting and manipulating traces and sessions
 ---------------------------------------------

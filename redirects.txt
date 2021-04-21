@@ -1452,7 +1452,7 @@ Saving_and_Exporting :: cookbook/saving-and-exporting
 Scala :: scripting/scala
 Scala_Scripting :: scripting/scala
 SciJava :: TODO
-SciJava_Common :: software/scijava-common
+SciJava_Common :: libs/scijava-common
 SciJava_Jupyter_Kernel :: software/scijava-jupyter-kernel
 SciJava_Maven_repository :: develop/project-management#maven
 SciView :: plugins/sciview

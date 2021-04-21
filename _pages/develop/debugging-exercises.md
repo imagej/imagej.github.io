@@ -204,7 +204,7 @@ Exercise 4: ImageJ plugins
 
 -   Start a debugging session in Eclipse that connects to a running ImageJ instance
 
-Exercises 1-3 are abstract, self-contained programs. The `E4RemoteResearch` class, on the other hand, is an actual ImageJ [plugin](Writing_plugins#What_is_a_.22plugin.22.3F). Although plugin developers typically set up tests to run their plugin within ImageJ, it is impossible to test all possible runtime environments: users could have a variety of [update sites](/update-sites) enabled, custom plugins installed, etc... and each modification is an opportunity for dependency skew and clashes with your plugin. When problems do arise, it is invaluable to have the ability to debug a running copy of ImageJ itself.
+Exercises 1-3 are abstract, self-contained programs. The `E4RemoteResearch` class, on the other hand, is an actual ImageJ [plugin](/develop/plugins#what-is-a-plugin). Although plugin developers typically set up tests to run their plugin within ImageJ, it is impossible to test all possible runtime environments: users could have a variety of [update sites](/update-sites) enabled, custom plugins installed, etc... and each modification is an opportunity for dependency skew and clashes with your plugin. When problems do arise, it is invaluable to have the ability to debug a running copy of ImageJ itself.
 
 `E4RemoteResearch` does still have a `main` method to demonstrate the expected output for this plugin - in this case, simply printing the concrete implementation of the `ConsoleService`. Run the class in Eclipse and you should see some simple output in the console:
 
@@ -224,7 +224,7 @@ So, you can now run the `E4 - Print ConsoleService` command either via the menus
 
 ![](/media/E4StackTrace.png "E4StackTrace.png")
 
-In order to connect Eclipse to ImageJ, we need to close our running instance and [launch ImageJ from the command line](Troubleshooting#Launching_ImageJ_from_the_console), which allows us to set the [debug flag](Debugging#Attaching_to_ImageJ_instances), e.g.:
+In order to connect Eclipse to ImageJ, we need to close our running instance and [launch ImageJ from the command line](/help/troubleshooting#launching-imagej-from-the-console), which allows us to set the [debug flag](/develop/debugging#attaching-to-imagej-instances), e.g.:
 
     ImageJ.app/ImageJ-linux64 --debugger=8000
 
@@ -283,7 +283,7 @@ To find what tags are available, on the command line we can run:
     git tag -l
     e5-good-maths
 
-The purpose of the `bisect` tool is to search our commit history to find the breaking commit. Although you could search one by one through the commit history, this would take [linear time](https://en.wikipedia.org/wiki/Time_complexity#Linear_time) in proportion to the number of commits to search. Bisecting performs a [binary search](https://en.wikipedia.org/wiki/Binary_search_algorithm#Performance), speeding up the process significantly. It also allows much of the process to be automated.
+The purpose of the `bisect` tool is to search our commit history to find the breaking commit. Although you could search one by one through the commit history, this would take [linear time](https://en.wikipedia.org/wiki/Time_complexity#linear-time) in proportion to the number of commits to search. Bisecting performs a [binary search](https://en.wikipedia.org/wiki/Binary_search_algorithm#Performance), speeding up the process significantly. It also allows much of the process to be automated.
 
 To use the bisect tool we just need to know two commits: one where the test worked, and one where the test failed. In this case, we know the `e5-good-maths` tag worked, and our current state is broken, so we can start the bisect:
 
@@ -324,7 +324,7 @@ Exercise 6: Print stack trace
 
 -   Identify problematic code when no feedback is given
 
-When debugging we're trying to identify why a program isn't behaving as expected. Often this starts in response to an unhandled Java exception, which comes with a helpful stack trace to point us in the right direction. Unfortunately, there are also times when no information as given - such as when the [JVM hangs (gets stuck)](Debugging#Debugging_JVM_hangs) or [crashes without warning](Debugging#Debugging_hard_JVM_crashes). In this exercise we'll look at another way to extract information from our application: by forcing a stack trace to be printed.
+When debugging we're trying to identify why a program isn't behaving as expected. Often this starts in response to an unhandled Java exception, which comes with a helpful stack trace to point us in the right direction. Unfortunately, there are also times when no information as given - such as when the [JVM hangs (gets stuck)](/develop/debugging#debugging-jvm-hangs) or [crashes without warning](/develop/debugging#debugging-hard-jvm-crashes). In this exercise we'll look at another way to extract information from our application: by forcing a stack trace to be printed.
 
 As we did [in exercise 4](#Exercise_4:_ImageJ_plugins), the first thing to do is build the `imagej-troubleshooting .jar` and install it in your `ImageJ.app/jars` directory. Then you can start up ImageJ and run the command for this exercise:
 
@@ -352,7 +352,7 @@ We actually don't need any extra flags this time, as this technique isn't specif
 
 In this state, we can still send signals to the running application (for example - {% include key content='ctrl\|c' %} to [kill the app](http://www.howtogeek.com/howto/ubuntu/keyboard-shortcuts-for-bash-command-shell-for-ubuntu-debian-suse-redhat-linux-etc/)).
 
-When running a Java application, we can use {% include key content='ctrl\|\\' %} to print a stack trace. **Note:** this shortcut may vary based on your OS and keyboard: see the [print stack trace instructions](Troubleshooting#If_ImageJ_freezes_or_hangs) for more information.
+When running a Java application, we can use {% include key content='ctrl\|\\' %} to print a stack trace. **Note:** this shortcut may vary based on your OS and keyboard: see the [print stack trace instructions](/help/troubleshooting#if-imagej-freezes-or-hangs) for more information.
 
 With this knowledge:
 
@@ -433,7 +433,7 @@ Exercise 8: Profiling
 
 In the other debugging exercises, we look at programs failing due to errors. Another common concern is program *performance* - does your program run in a reasonable time frame? This often can not be deduced by simply looking at the code. So the first step in fixing performance is identifying the location of the slowdown.
 
-Exercise 8 in pretty straightforward with the main function calling two functions - `doStuff()` and `doMoreStuff()`. Both functions are called one after the other for two minutes. Our goal is to find which function is slower than the other. One solution a programmer may think of is to keep track of time taken by comparing values returned by [System.currentTimeMillis](http://docs.oracle.com/javase/7/docs/api/java/lang/System.html#currentTimeMillis%28%29), but this method does not scale up for large program and requires modifications to the code. It is much more efficient and useful to use a profiler to monitor time spent in methods - which is part of the [jvisualvm](Debugging_Exercises#Requirements) troubleshooting tool.
+Exercise 8 in pretty straightforward with the main function calling two functions - `doStuff()` and `doMoreStuff()`. Both functions are called one after the other for two minutes. Our goal is to find which function is slower than the other. One solution a programmer may think of is to keep track of time taken by comparing values returned by [System.currentTimeMillis](http://docs.oracle.com/javase/7/docs/api/java/lang/System.html#currentTimeMillis%28%29), but this method does not scale up for large program and requires modifications to the code. It is much more efficient and useful to use a profiler to monitor time spent in methods - which is part of the [jvisualvm](/develop/debugging-exercises#requirements) troubleshooting tool.
 
 **Steps for exercise**
 

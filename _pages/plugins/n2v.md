@@ -65,7 +65,7 @@ Training without GPU support is possible, but will take ages. Please read the no
     -   <b>`Patch shape`</b> The length of X, Y (and Z) of one training patch (needs to be a multiple of 16)
     -   <b>`Neighborhood radius`</b> n2V specific parameter describing the distance of the neighbor pixel replacing the center pixel
 5.  Click `Ok`
-6.  Look below at the [What happens during and after training](#What_happens_during_and_after_training) section for what happens next
+6.  Look below at the [What happens during and after training](#what-happens-during-and-after-training) section for what happens next
 
 ### Training and prediction on single images (one-click solution)
 
@@ -78,9 +78,9 @@ Training without GPU support is possible, but will take ages. Please read the no
     -   <b>`Image used for training`</b> Choose the image which will be used for training
     -   <b>`Image to denoise after training`</b> Choose the image which will be used for prediction
     -   <b>`Axes of prediction input`</b> This parameter helps to figure out how your input data is organized. It's a string with one letter per dimension of the input image. For 2D images, this should be `XY`. If your data has another axis which should be batch processed, set this parameter to `XYB`
-    -   Regarding the other parameters please have a look at the descriptions in [Training on a single image](#Training_on_a_single_image)
+    -   Regarding the other parameters please have a look at the descriptions in [Training on a single image](#training-on-a-single-image)
 5.  Click `Ok`
-6.  Look below at the [What happens during and after training](#What_happens_during_and_after_training) section for what happens next
+6.  Look below at the [What happens during and after training](#what-happens-during-and-after-training) section for what happens next
 
 ### Training on multiple images
 
@@ -90,9 +90,9 @@ Training without GPU support is possible, but will take ages. Please read the no
 2.  Click on `Plugins > CSBDeep > N2V > N2V train on folder` and adjust the following parameters:
     -   <b>`Folder containing images used for training`</b> Choose the folder containing images which should be used for training
     -   <b>`Folder containing images used for validation`</b> Choose the folder containing images which should be used for validation (can be same as training folder, in this case 10% of the generated tiles will be used for validation and 90% for training)
-    -   Regarding the other parameters please have a look at the descriptions in [Training on a single image](#Training_on_a_single_image)
+    -   Regarding the other parameters please have a look at the descriptions in [Training on a single image](#training-on-a-single-image)
 3.  Click `Ok`
-4.  Look below at the [What happens during and after training](#What_happens_during_and_after_training) section for what happens next
+4.  Look below at the [What happens during and after training](#what-happens-during-and-after-training) section for what happens next
 
 What happens during and after training
 --------------------------------------

@@ -15,7 +15,7 @@ description: test description
 
 **When?** Our current timeline is to make the transition in a few months. The forums may be offline for several hours on the actual day of transition. We will post any updates to the timeline here.
 
-**What?** The forum's focus will be on discussion of software-oriented aspects of scientific imaging, particularly (but not limited to) image analysis, processing, acquisition, storage, and management of digital scientific images. Our objective will be to [foster independent learning](/Philosophy#Independent_learning).
+**What?** The forum's focus will be on discussion of software-oriented aspects of scientific imaging, particularly (but not limited to) image analysis, processing, acquisition, storage, and management of digital scientific images. Our objective will be to [foster independent learning](/develop/philosophy#independent-learning).
 
 **How?** All existing ImageJ and CellProfiler forum data will merge. Redirects from the old URLs will be installed, so that existing links will continue to work. All existing ImageJ topics will be tagged with \#imagej, and all existing CellProfiler topics will be tagged with \#cellprofiler.
 
@@ -24,7 +24,7 @@ description: test description
 -   **What if the traffic is too much?** Discourse has an excellent tagging system, so that topics can be organized non-hierarchically. E.g., if you ask a question about calling ImageJ from CellProfiler, you can add the \`imagej\` and \`cellprofiler\` tags. This will help people to narrow the scope of their attention as needed based on their time and interest. The front page will include a toplevel link to the tag feed of each partnered software project.
 -   **What about hardware questions?** While the primary focus is on software, sometimes discussion needs to touch on both, and the line between them is not always well-defined. So the current plan is to create a category for relevant hardware discussion as well.
 -   **What about commercial software?** Discussion of how to solve scientific problems with commercial software is very welcome, as long as it encourages independent learning. Here is an excerpt from the current ImageJ Guidelines explaining their philosophy about this:
-    -   *Our community is structured to foster not only scientific independent thinking, but just as importantly, independent learning. The [open source process](/Philosophy#Open_source) enables this sort of learning thanks to its accessibility, transparency, and reproducibility.*
+    -   *Our community is structured to foster not only scientific independent thinking, but just as importantly, independent learning. The [open source process](/develop/philosophy#open-source) enables this sort of learning thanks to its accessibility, transparency, and reproducibility.*
     -   *Posts highlighting solutions besides ImageJ, both commercial and non-commercial, are very welcome here. This forum is a place to expand community knowledge and expertise. However, it is critical that these responses:*
         -   *Offer concrete details on how the software helps users achieve the workflows being discussed.*
         -   *Encourage knowledge and understanding of the scientific analysis process, including its principles, applications and pitfalls.*

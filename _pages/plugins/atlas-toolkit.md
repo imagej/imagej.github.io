@@ -27,7 +27,7 @@ What's in the toolkit?
 
 Atlas Toolkit includes a number of different tools to help building atlases. Many of these will be of limited use/interest.
 
-For those interested in 3D image registration, the most important tools will be [Label Registration 3D](#Label_Registration_3D) and [Apply Label Registration](#Apply_Label_Registration).
+For those interested in 3D image registration, the most important tools will be [Label Registration 3D](#label-registration-3d) and [Apply Label Registration](#apply-label-registration).
 
 The complete list of tools is as follows:
 
@@ -39,11 +39,11 @@ The complete list of tools is as follows:
 
 <!-- -->
 
--   [Label Registration 3D](#Label_Registration_3D)
+-   [Label Registration 3D](#label-registration-3d)
 
 <!-- -->
 
--   [Apply Label Registration](#Apply_Label_Registration)
+-   [Apply Label Registration](#apply-label-registration)
 
 <!-- -->
 

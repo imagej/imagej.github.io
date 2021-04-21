@@ -309,7 +309,7 @@ A binary particle may be described mathematically by its moments which correspon
 
 #### Plugins
 
-Most MorphoLibJ plugins consider the current image as input, that must be either binary (only one region is considered), or label (typically the result of a connected components labeling, see [Utilities for binary images](MorphoLibJ#Utilities_for_binary_images)). The output is a results table (ImageJ [Results table](/ij/docs/guide/146-22.html)) containing one row for each label actually present within the image. The spatial calibration of the image is taken into account in all measurements. All plugins can be found under the {% include bc path='Plugins | MorphoLibJ | Analyze'%} menu.
+Most MorphoLibJ plugins consider the current image as input, that must be either binary (only one region is considered), or label (typically the result of a connected components labeling, see [Utilities for binary images](/plugins/morpholibj#utilities-for-binary-images)). The output is a results table (ImageJ [Results table](/ij/docs/guide/146-22.html)) containing one row for each label actually present within the image. The spatial calibration of the image is taken into account in all measurements. All plugins can be found under the {% include bc path='Plugins | MorphoLibJ | Analyze'%} menu.
 
 ##### Global geometry
 
@@ -431,7 +431,7 @@ The region adjacency graph plugin gives access to the neighborhood relationship 
 
 {% include thumbnail src='/media/MorphoLibJ-region-adjacency-graph.png' title='Computation of the Region Adjacency Graph on a microscopy image of plant tissue. Left: original image. Middle: result of watershed segmentation. Right: overlay of edges representing adjacent regions.'%}
 
-The plugin (under {% include bc path='Plugins | MorphoLibJ | Analyze | Region Adjacency Graph'%}) works for both 2D and 3D images, and requires a label image as input. A typical input is the result of a watershed segmentation (see [Watershed Segmentation](MorphoLibJ#Watershed_segmentation)), eventually followed by [manual edition of the labels](MorphoLibJ#Label_Edition_plugin). The output of the plugin is a results table with as many rows as the number of pairs of adjacent regions, containing the labels of the two adjacent regions.
+The plugin (under {% include bc path='Plugins | MorphoLibJ | Analyze | Region Adjacency Graph'%}) works for both 2D and 3D images, and requires a label image as input. A typical input is the result of a watershed segmentation (see [Watershed Segmentation](/plugins/morpholibj#watershed-segmentation)), eventually followed by [manual edition of the labels](/plugins/morpholibj#label-edition-plugin). The output of the plugin is a results table with as many rows as the number of pairs of adjacent regions, containing the labels of the two adjacent regions.
 
 Binary and label image utilities
 --------------------------------
@@ -578,7 +578,7 @@ Let's see an example in a complete [Beanshell script](/scripting/beanshell) that
     #@ ImagePlus(label="Input image",description="Image to segment") imp
     #@ Integer(label="Gradient radius",description="Radius of the morphological gradient",value=2) radius
     #@ Integer(label="Tolerance",description="Local extrema dynamic",value=3) tolerance
-    #@ String(label="/BoneJ2#Connectivity",description="Local connectivity", choices={"6","26"}) strConn
+    #@ String(label="Connectivity",description="Local connectivity", choices={"6","26"}) strConn
     #@ Boolean(label="Calculate dams",description="Flag to use dams in watershed",value=true) dams
     #@OUTPUT ImagePlus resultImage
       
@@ -711,7 +711,7 @@ Installation
 ------------
 
 -   In [ImageJ 1.x](/software/imagej1), download the [latest released jar](https://github.com/ijpb/MorphoLibJ/releases) into the *plugins* folder.
--   In [ImageJ2](/software/imagej2) (including [Fiji](/fiji)), you just need to [ add](How_to_follow_a_3rd_party_update_site#Add_update_sites) the IJPB-plugins site to your list of update sites:
+-   In [ImageJ2](/software/imagej2) (including [Fiji](/fiji)), you just need to [ add](/update-sites/following#add-update-sites) the IJPB-plugins site to your list of update sites:
     1.  Select {% include bc path='Help | Update...'%} from the menu to start the [updater](/plugins/updater).
     2.  Click on *Manage update sites*. This brings up a dialog where you can activate additional update sites.
     3.  Activate the IJPB-plugins update site and close the dialog. Now you should see an additional jar file for download.

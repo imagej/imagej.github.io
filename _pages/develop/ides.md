@@ -35,7 +35,7 @@ There are many advantages of using an IDE for software development:
 3.  Compile errors are listed in a concise list; double-clicking on a line in that list will move the cursor to the problem.
 4.  You can [debug your program interactively](/develop/debugging-exercises): just open the main class (i.e. a class having a `public static void main(String[] args)` method) and launch it in debug mode. E.g., in Eclipse: go to {% include bc path='Run|Debug As|Java Application'%}). This will switch to a different window layout (the *Debug perspective*) which offers you a range of views that are useful for debugging such as: local variables, thread stack traces, etc. You can interrupt the program at any time by clicking on the *pause* symbol and inspect the current state, single-step through the code and even to a limited amount replace code on-the-fly.
 5.  The most important version control systems can be accessed easily through the IDE's GUI.
-6.  There are many awesome keyboard shortcuts, especially effective to quickly explore large projects. (see e.g. [keyboard shortcuts for Eclipse](Eclipse#Keyboard_shortcuts)).
+6.  There are many awesome keyboard shortcuts, especially effective to quickly explore large projects. (see e.g. [keyboard shortcuts for Eclipse](/develop/eclipse#keyboard-shortcuts)).
 7.  They can be enhanced with plugins. E.g., for Eclipse, the [Vrapper plugin](http://vrapper.sourceforge.net/) adds a vim-like input scheme.
 
 The main disadvantage of modern IDEs is that they are quite large and require a lot of resources—RAM and screen size in particular.

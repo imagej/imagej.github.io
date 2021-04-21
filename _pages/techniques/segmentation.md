@@ -35,11 +35,11 @@ Flexible workflow
 
 One good workflow for segmentation in ImageJ is as follows:
 
-1.  [ Preprocess](Segmentation#Preprocessing) the given images
-2.  Apply an [ Auto Threshold](Segmentation#Adjusting_Threshold)
-3.  Create and manipulate a [ mask](Segmentation#Creating_Masks)
-4.  [ Create and transfer](Segmentation#Selections#Creating_Selections) a selection from a mask to your original image
-5.  [ Analyze](Segmentation#Analysis) the resulting data
+1.  [Preprocess](/techniques/segmentationpPreprocessing) the given images
+2.  Apply an [Auto Threshold](/techniques/segmentation#adjusting-threshold)
+3.  Create and manipulate a [mask](/techniques/segmentation#creating-masks)
+4.  [Create and transfer](/techniques/segmentation#selections#creating-selections) a selection from a mask to your original image
+5.  [Analyze](/techniques/segmentation#analysis) the resulting data
 
 Preprocessing
 -------------

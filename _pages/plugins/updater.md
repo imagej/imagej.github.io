@@ -8,7 +8,7 @@ artifact: net.imagej:imagej-updater
 
 The purpose of the ImageJ Updater is to keep you up-to-date with all components of ImageJ (or Fiji), i.e. the macros, scripts, plugins and the core components (libraries) needed by the plugins.
 
-As of 2011, the ImageJ Updater can handle [3rd-party update sites](#Adding_update_sites), i.e. anybody can set up their own update site which users can follow.
+As of 2011, the ImageJ Updater can handle [3rd-party update sites](#adding-update-sites), i.e. anybody can set up their own update site which users can follow.
 
 Automatic Update
 ----------------
@@ -187,6 +187,6 @@ The original updater was written in a frantic week in October 2008 in preparatio
 
 In the course of one of two successful Google Summer of Code projects, the updater was rewritten from scratch (but in a [backwards-compatible manner](/libs/imagej-legacy)) by Yap Chin Kiet under the mentorship of Mark Longair and Johannes Schindelin in 2009.
 
-Johannes Schindelin got stuck with the maintainership and introduced third-party update sites (a feature that many claimed to desire, though no pinky was harmed by contributing any code) in the course of a very successful [hackathon](Hackathon#ImageJ_hackathons) at the Lawrence Berkeley National Laboratory in October 2010 and another one in February 2011 hosted by [LOCI](/orgs/loci).
+Johannes Schindelin got stuck with the maintainership and introduced third-party update sites (a feature that many claimed to desire, though no pinky was harmed by contributing any code) in the course of a very successful [hackathon](/events/Hackathon#imagej-hackathons) at the Lawrence Berkeley National Laboratory in October 2010 and another one in February 2011 hosted by [LOCI](/orgs/loci).
 
 As of September 2012, the Fiji Updater has moved to [ImageJ2](/software/imagej2). Details can be found in the announcement: [2012-09-14 - The Updater moved](/news/2012-09-14_-_The_Updater_moved).

@@ -42,4 +42,4 @@ The Interactive Link Explorer allows you to to preview the pairwise links of a v
 
 <img src="/media/BigStitcher stitch 4 1.png" width="1000"/>
 
-Go back to the [main page](BigStitcher#Documentation)
+Go back to the [main page](/plugins/bigstitcher#documentation)

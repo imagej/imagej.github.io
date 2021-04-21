@@ -44,4 +44,4 @@ The following two parameters essentially control the sampling of quality estimat
 
 After clicking **OK**, quality images will be generated and displayed or saved.
 
-Go back to the [main page](BigStitcher#Documentation)
+Go back to the [main page](/plugins/bigstitcher#documentation)

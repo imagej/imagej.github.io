@@ -41,8 +41,8 @@ Overview of the Stitching Plugins
 
 The Image Stitching package comes with 2 different plugins:
 
--   **[ Pairwise Stitching](Image_Stitching#Pairwise_Stitching)**: Stitch two 2d-5d images, rectangular ROIs can be used to limit the area to search in.
--   **[ Grid/Collection Stitching](Image_Stitching#Grid_Collection_Stitching)**: Stitch an arbitrary amount of 2d-5d input images. It supports cases where the approximate alignment is known (grid, stored in file, metadata) as well as completely unguided alignment.
+-   **[ Pairwise Stitching](/plugins/image-stitching#pairwise-stitching)**: Stitch two 2d-5d images, rectangular ROIs can be used to limit the area to search in.
+-   **[ Grid/Collection Stitching](/plugins/image-stitching#grid-collection-stitching)**: Stitch an arbitrary amount of 2d-5d input images. It supports cases where the approximate alignment is known (grid, stored in file, metadata) as well as completely unguided alignment.
 
 Although both plugins make use of layered context-dependent Generic Dialogs, they are completely macro-scriptable.
 
@@ -115,7 +115,7 @@ The first dialog queries the type image collection or image grid that you want t
 -   **Filename defined positions**: The approximate positions of each tile are encoded in the filename.
 -   **Unknown positions**: The positions of each tile are unknown and the Stitching will try to determine them.
 -   **Positions from file**: The approximate position of each tile is defined in an extra file or by the metadata.
-    -   *Defined by TileConfiguration*: The next dialog will query for a tile configuration file that specifies the filenames as well as the approximate position of each tile in pixel coordinates. This is especially useful if the tiles are arranged in a way that is not covered by any of the other grid/snake options - or maybe also in z! You will find an example tile configuration file [ below](Image_Stitching#Problems,_known_issues_and_solutions). If you want to manually or automatically create such a file I suggest creating one using grid stitching (even if you do not have any image data) and changing it accordingly.
+    -   *Defined by TileConfiguration*: The next dialog will query for a tile configuration file that specifies the filenames as well as the approximate position of each tile in pixel coordinates. This is especially useful if the tiles are arranged in a way that is not covered by any of the other grid/snake options - or maybe also in z! You will find an example tile configuration file [ below](/plugins/image-stitching#problems-known-issues-and-solutions). If you want to manually or automatically create such a file I suggest creating one using grid stitching (even if you do not have any image data) and changing it accordingly.
     -   *Defined by meta data*: Use this option if all tiles are stored in one big file that also contains the approximate stage positions in its meta data. When importing you will have the chance to further increase the overlap and define if the stage coordinates are calibrated or in pixel coordinates.
 
 <img src="/media/GridStitching1013.png" title="fig:Shows the main dialog for the grid stitching." width="400" alt="Shows the main dialog for the grid stitching." /> Once you selected your type of acquisition a second dialog will pop up that is slightly different depending up on your first selection. Here, I will explain the dialog that is used for any grid as this is the most complex one.
@@ -138,7 +138,7 @@ it would translate to the following pattern: **tile\_x{xx}\_y{yy}.lsm**.
 
 The *Output textfile name* defines the text files that will contain the initial approximate grid layout and the final positions of each tile after registration.
 
-The *fusion methods* are almost the same as the ones for the [ Pairwise Stitching](Image_Stitching#Pairwise_Stitching), please check them out above.
+The *fusion methods* are almost the same as the ones for the [ Pairwise Stitching](/plugins/image-stitching#pairwise-stitching), please check them out above.
 
 The next three entries describe the behaviour of the global optimization:
 

@@ -99,7 +99,7 @@ Repositories
 
 Once your dependencies are declared, Maven will download them on demand from the Internet. However, for Maven to find the dependencies, it has to know where to look.
 
-Out of the box, Maven will look in the so-called [Maven Central repository](https://search.maven.org/). Some ImageJ and SciJava components are deployed there, including the [pom-scijava parent POM](Architecture#Maven_component_structure) which declares important metadata, such as the [Bill of Materials](//develop/architecture#bill-of-materials): current artifact versions intended to work together.
+Out of the box, Maven will look in the so-called [Maven Central repository](https://search.maven.org/). Some ImageJ and SciJava components are deployed there, including the [pom-scijava parent POM](/develop/architecture#maven-component-structure) which declares important metadata, such as the [Bill of Materials](//develop/architecture#bill-of-materials): current artifact versions intended to work together.
 
 However, many other SciJava and ImageJ components are not yet deployed to Maven Central, but instead to the [SciJava Maven repository](//develop/project-management#maven). To gain access to this repository from your project, add the following configuration block to your *pom.xml*:
 
@@ -136,7 +136,7 @@ In the context of [SciJava](SciJava), you will most likely never write a *pom.xm
 How to find a dependency's groupId/artifactId/version (GAV)?
 ============================================================
 
-Most popular open source libraries upon which you might want to depend are stored in the [Maven Central repository](https://search.maven.org/). However, the ImageJ and Fiji JARs are not yet stored there, but in the [SciJava Maven repository](Architecture#Maven_repositories). Fortunately, you can search both at once, by visiting:
+Most popular open source libraries upon which you might want to depend are stored in the [Maven Central repository](https://search.maven.org/). However, the ImageJ and Fiji JARs are not yet stored there, but in the [SciJava Maven repository](/develop/architecture#maven-repositories). Fortunately, you can search both at once, by visiting:
 
 ` `[`https://maven.scijava.org/`](https://maven.scijava.org/)
 
@@ -151,7 +151,7 @@ If you need to depend on a library that is not present in either Maven Central o
 
 If there are no public repositories containing your dependency, you have two options:
 
--   If the dependency is itself an ImageJ plugin, consider [contributing it to Fiji](/fiji/contribution-requirements). Plugins distributed with Fiji are [made available as Maven artifacts](Fiji_contribution_requirements#Maven_artifacts), and thus will benefit both users and developers.
+-   If the dependency is itself an ImageJ plugin, consider [contributing it to Fiji](/fiji/contribution-requirements). Plugins distributed with Fiji are [made available as Maven artifacts](/fiji/contribution-requirements#maven-artifacts), and thus will benefit both users and developers.
 
 <!-- -->
 

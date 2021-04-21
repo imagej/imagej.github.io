@@ -44,4 +44,4 @@ MicroManager diSPIM Dataset
 
 Go back to the [dataset definition overview](/plugins/bigstitcher/define-new-dataset)
 
-Go back to the [main page](BigStitcher#Documentation)
+Go back to the [main page](/plugins/bigstitcher#documentation)

@@ -129,7 +129,7 @@ In the last release, the plugin presents the following Input/Output options:
 -   **Save Landmarks As**: it allows saving the image landmarks into a file.
 -   **Show Landmarks**: it forces the landmarks to be displayed in a separate table.
 -   **Load Elastic Transformation**: it loads an elastic transformation from a file and applies it to the so-called source image. The transformation file must be in the format of the plugin B-spline transformations, i.e. the same format as the files created with the "Save Transformation" option.
--   **Load Raw Transformation**: it loads a raw transformation from a file and applies it to the so-called source image. The transformation file must be in "raw" format, i.e. the same format as the files created with the "Convert Transformation To Raw" option. See the [ raw transformation example](BUnwarpJ#What_is_the_format_of_the_raw_transformation_file.3F) for a format description.
+-   **Load Raw Transformation**: it loads a raw transformation from a file and applies it to the so-called source image. The transformation file must be in "raw" format, i.e. the same format as the files created with the "Convert Transformation To Raw" option. See the [ raw transformation example](/plugins/bunwarpj#what-is-the-format-of-the-raw-transformation-file) for a format description.
 -   **Compare Opposite Elastic Transformations**: it calculates the warping index of two elastic transformations, i.e. the average of the geometrical distance between every pixel and its version after applying both transformations (direct and inverse). This value is given as a result. The transformation files must be in the format of the plugin B-spline transformations (same format as the files created with the "Save Transformation" option).
 -   **Compare Elastic/Raw Transformations**: it calculates the warping index of an elastic and a raw transformation (same direction). The second transformation file must be in "raw" format, i.e. the same format as the files created with the "Convert Transformation To Raw" option.
 -   **Compare Raw Transformations**: it calculates the warping index of two raw transformations (same direction). The transformation file must be in "raw" format, i.e. the same format as the files created with the "Convert Transformation To Raw" option.
@@ -150,7 +150,7 @@ You can also test bUnwarpJ with [Spline Deformation Generator](/plugins/spline-d
 
 ### Macro call
 
-[bUnwarpJ](/plugins/bunwarpj) is completely compatible with the [ImageJ macro language](/ij/developer/macro/macros.html). When in doubt, use the [Macro Recorder](Introduction_into_Macro_Programming#The_recorder) to identify which commands need to be used.
+[bUnwarpJ](/plugins/bunwarpj) is completely compatible with the [ImageJ macro language](/ij/developer/macro/macros.html). When in doubt, use the [Macro Recorder](/scripting/macro#the-recorder) to identify which commands need to be used.
 
 #### Main dialog
 
@@ -168,7 +168,7 @@ Notice the path to the transformation files are only needed if the "save\_transf
 
 #### I/O methods
 
-To use the main Input/Output options from a macro, there is a corresponding static method defined in the main class (bUnwarpJ\_). Again, the [Macro Recorder](Introduction_into_Macro_Programming#The_recorder) will provide with the right macro command for each of them. For example:
+To use the main Input/Output options from a macro, there is a corresponding static method defined in the main class (bUnwarpJ\_). Again, the [Macro Recorder](/scripting/macro#the-recorder) will provide with the right macro command for each of them. For example:
 
 -   Load elastic transformation to source image:
 
@@ -238,7 +238,7 @@ One important advantage of [bUnwarpJ](/plugins/bunwarpj) over the previous metho
 
 {% include thumbnail src='/media/plugins/bunwarpj-lena-SIFT-landmarks-example.png' title='bUnwarpJ: example of SIFT correspondences converted to registration landmarks.'%}The last release of bUnwarpJ has compatibility with Stephan Saalfeld's plugin for automatic [ feature extraction](/plugins/feature-extraction) (implementations of SIFT and MOPS algorithms).
 
-An explanation of the parameters is [ here](Feature_Extraction#Parameters). This plugin is also integrated in Fiji.
+An explanation of the parameters is [ here](/plugins/feature-extraction#parameters). This plugin is also integrated in Fiji.
 
 After applying SIFT or MOPS methods, you will get two sets of corresponding points in both images. If you call then [bUnwarpJ](/plugins/bunwarpj), the corresponding points will appear as source and target landmarks.
 
@@ -304,14 +304,14 @@ Unfortunately, **no**. If you call [bUnwarpJ](/plugins/bunwarpj) with two stacks
 
 ### How do I cite bUnwarpJ?
 
-The corresponding paper citation is on the [References](BUnwarpJ#References).
+The corresponding paper citation is on the [References](/plugins/bunwarpj#references).
 
 ### Can I run bUnwarpJ without the graphical interface?
 
 **Yes**, you can. You have different possibilities:
 
--   You could call the program from the command line as explained in the [user manual](BUnwarpJ#User_Manual),
--   or you can make a [macro call](BUnwarpJ#Macro_call) in batch mode,
+-   You could call the program from the command line as explained in the [user manual](/plugins/bunwarpj#user-manual),
+-   or you can make a [macro call](/plugins/bunwarpj#macro-call) in batch mode,
 -   or you could as well create a script and use any of the methods called \[http://javadoc.imagej.net/Fiji/bunwarpj/bUnwarpJ_.html#alignImagesBatch(ij.ImagePlus,%20ij.ImagePlus,%20ij.process.ImageProcessor,%20ij.process.ImageProcessor,%20int,%20int,%20int,%20int,%20double,%20double,%20double,%20double,%20double,%20double) bUnwarpJ\_.alignImagesBatch\].
 
 ### My result images are 32-bit although my input images are 8-bit, is that a bug?

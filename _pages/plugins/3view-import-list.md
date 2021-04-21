@@ -19,7 +19,7 @@ This plugin will read all Gatan's files (.dm3) inside the folders and create a f
 Installation instructions
 -------------------------
 
-The [Jython plugin installation rules](https://fiji.sc/Jython_Scripting#Using_a_jython_script_as_a_plugin) apply. You must [download](https://dl.dropboxusercontent.com/u/5200940/3view_import_list.zip) and copy 3view\_import\_list.py and MakeImportList4TrakEM2.py together in the same directory. The third file, TrakEM2\_import\_list.py is optional (see point 3 below). If you want to call the script from your own code, only the second file is necessary. As a suggestion only, you can follow these steps:
+The [Jython plugin installation rules](https://fiji.sc/Jython_Scripting#using-a-jython-script-as-a-plugin) apply. You must [download](https://dl.dropboxusercontent.com/u/5200940/3view_import_list.zip) and copy 3view\_import\_list.py and MakeImportList4TrakEM2.py together in the same directory. The third file, TrakEM2\_import\_list.py is optional (see point 3 below). If you want to call the script from your own code, only the second file is necessary. As a suggestion only, you can follow these steps:
 
 1.  Copy 3view\_import\_list.py and MakeImportList4TrakEM2.py into Fiji directory \\Fiji.app\\plugins\\Scripts\\Plugins\\Utilities.
 2.  To make the plugin appear in the menu, you have the option of selecting {% include bc path='Plugins | Scripting | Refresh Jython Scripts'%}, {% include bc path='Help | Refresh Menus'%} or restarting Fiji. Then the menu entry '3View import list' will appear under {% include bc path='Plugins | Utilities'%} (the first Utilities folder...)

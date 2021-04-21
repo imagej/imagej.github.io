@@ -33,7 +33,7 @@ the does the actual feature calculation for the specified tracks, and
 
     public boolean isLocal();
 
-that specified whether the calculation of the features for one track affects only this track or all the tracks. For the discussion on local *vs* non-local feature analyzers, I report you to the [previous article item](How_to_write_your_own_edge_feature_analyzer_algorithm_for_TrackMate#isLocal.28.29).
+that specified whether the calculation of the features for one track affects only this track or all the tracks. For the discussion on local *vs* non-local feature analyzers, I report you to the [previous article item](/plugins/trackmate/custom-edge-feature-analyzer-algorithms#isLocal.28.29).
 
 Track feature analyzer header
 -----------------------------

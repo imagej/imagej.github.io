@@ -51,7 +51,7 @@ The following criteria apply to projects hosted in the [fiji organization](https
 -   Components use [Maven](/develop/maven) to build:
     -   As single-module projects
     -   With the standard Maven directory layout
-    -   Extending the [pom-scijava parent POM](Architecture#Maven_component_structure)
+    -   Extending the [pom-scijava parent POM](/develop/architecture#maven-component-structure)
 -   Components use the groupId `sc.fiji`.
 -   Components are [versioned according to SemVer](/develop/versioning).
 -   The project uses [GitHub Issues](//develop/project-management#issue-tracking) for issue tracking.
@@ -66,7 +66,7 @@ Projects that reside outside the [fiji organization](https://github.com/fiji) ar
 Continuous integration: Travis CI
 ---------------------------------
 
-To verify that the Fiji components build without problems, and that all regression tests pass, every Fiji project's source code repository is connected to a [Travis CI](/develop/travis) job that builds and tests the source code, and deploys the [Maven artifacts](#Maven_artifacts), whenever a new revision is made available.
+To verify that the Fiji components build without problems, and that all regression tests pass, every Fiji project's source code repository is connected to a [Travis CI](/develop/travis) job that builds and tests the source code, and deploys the [Maven artifacts](#maven-artifacts), whenever a new revision is made available.
 
 Have a look at the [Travis](/develop/travis) page for instructions on setting it up.
 
@@ -101,11 +101,11 @@ Furthermore, for backwards-compatibility a version can be automatically deduced:
 Maven artifacts
 ---------------
 
-[Fiji](/fiji) and related [SciJava](SciJava) software uses [Maven](/develop/maven), an industry standard to declare metadata about a project, to build projects using said metadata, and to *deploy* the resulting artifacts to a [Maven repository](Architecture#Maven_repositories). Such repositories are essentially for developers what [update sites](/update-sites) are for users.
+[Fiji](/fiji) and related [SciJava](SciJava) software uses [Maven](/develop/maven), an industry standard to declare metadata about a project, to build projects using said metadata, and to *deploy* the resulting artifacts to a [Maven repository](/develop/architecture#maven-repositories). Such repositories are essentially for developers what [update sites](/update-sites) are for users.
 
 -   The minimum requirement for core Fiji projects is to use a build system (e.g., [Maven](/develop/maven) or Gradle) that automatically deploys required artifacts to the [ImageJ Maven repository](http://maven.imagej.net/), such that they can be consumed by downstream code, including other Fiji projects. Required artifacts to deploy include the main JAR and POM files, `-tests` JAR, `-sources` JAR and `-javadoc` JAR.
--   To facilitate this, most Fiji projects inherit a common Maven configuration from the [pom-fiji](https://github.com/fiji/pom-fiji) parent project. This configuration ensures that not only the compiled *.jar* files are deployed, but also the Javadocs and the sources. Therefore, it is strongly encouraged to extend this parent; see the [Maven component structure](Architecture#Maven_component_structure) section for details.
--   All of Fiji's components are deployed by [Travis CI](/develop/travis) to the [ImageJ Maven repository](Architecture#Maven_repositories) or to [OSS Sonatype](http://oss.sonatype.org/). That way, all Fiji components can be added easily as dependencies to downstream projects.
+-   To facilitate this, most Fiji projects inherit a common Maven configuration from the [pom-fiji](https://github.com/fiji/pom-fiji) parent project. This configuration ensures that not only the compiled *.jar* files are deployed, but also the Javadocs and the sources. Therefore, it is strongly encouraged to extend this parent; see the [Maven component structure](/develop/architecture#maven-component-structure) section for details.
+-   All of Fiji's components are deployed by [Travis CI](/develop/travis) to the [ImageJ Maven repository](/develop/architecture#maven-repositories) or to [OSS Sonatype](http://oss.sonatype.org/). That way, all Fiji components can be added easily as dependencies to downstream projects.
 -   All Fiji components are declared in the toplevel [fiji](https://github.com/fiji/fiji) project's POM as dependencies, and declared in the [pom-fiji](https://github.com/fiji/pom-fiji) parent as *managed dependencies*, as part of Fiji's [Bill of Materials](/develop/architecture#bill-of-materials).
 
 Guidelines
@@ -158,7 +158,7 @@ The following table provides a few examples of how various Fiji components are s
 </p></td><td style="text-align: center"><p><a href="http://update.fiji.sc/">Fiji</a></p></td><td><p><a href="/licensing/gpl">GPLv2</a></p></td><td><p><a href="https://github.com/openmicroscopy">openmicroscopy</a></p></td><td><p> {% include github org='openmicroscopy' repo='bioformats' label='bioformats' %}</p></td><td><p><code>ome</code></p></td><td></td></tr><tr class="odd"><td><p><strong>Subproject</strong></p></td><td><p><a href="/plugins/bdv">BigDataViewer</a></p></td><td><p> {% include yes%}
 </p></td><td style="text-align: center"><p><a href="http://update.fiji.sc/">Fiji</a></p></td><td><p><a href="/licensing/gpl">GPLv3</a></p></td><td><p><a href="https://github.com/bigdataviewer">bigdataviewer</a></p></td><td><p> {% include github org='bigdataviewer' repo='bigdataviewer_fiji' label='bigdataviewer_fiji' %}</p></td><td><p><code>sc.fiji</code></p></td></tr><tr class="even"><td><p><a href="/plugins/trakem2">TrakEM2</a></p></td><td><p> {% include yes%}
 </p></td><td style="text-align: center"><p><a href="http://update.fiji.sc/">Fiji</a></p></td><td><p><a href="/licensing/gpl">GPLv3</a></p></td><td><p><a href="https://github.com/trakem2">trakem2</a></p></td><td><p> {% include github org='trakem2' repo='TrakEM2' label='TrakEM2' %}</p></td><td><p><code>sc.fiji</code></p></td><td></td></tr><tr class="odd"><td><p><strong>Third party</strong></p></td><td><p><a href="/cookbook">Cookbook</a></p></td><td><p> {% include no%}
-</p></td><td style="text-align: center"><p><a href="http://sites.imagej.net/Cookbook/">Cookbook</a></p></td><td><p><a href="Cookbook#Credits">Various</a></p></td><td><p><a href="https://github.com/fiji">fiji</a></p></td><td><p> {% include github org='fiji' repo='cookbook' label='cookbook' %}</p></td><td><p><code>sc.fiji</code></p></td></tr><tr class="even"><td><p><a href="/plugins/mamut">MaMuT</a></p></td><td><p> {% include no%}
+</p></td><td style="text-align: center"><p><a href="http://sites.imagej.net/Cookbook/">Cookbook</a></p></td><td><p><a href="/cookbook#credits">Various</a></p></td><td><p><a href="https://github.com/fiji">fiji</a></p></td><td><p> {% include github org='fiji' repo='cookbook' label='cookbook' %}</p></td><td><p><code>sc.fiji</code></p></td></tr><tr class="even"><td><p><a href="/plugins/mamut">MaMuT</a></p></td><td><p> {% include no%}
 </p></td><td style="text-align: center"><p><a href="http://sites.imagej.net/MaMuT/">MaMuT</a></p></td><td><p><a href="/licensing/gpl">GPLv3</a></p></td><td><p><a href="https://github.com/fiji">fiji</a></p></td><td><p> {% include github org='fiji' repo='MaMuT' label='MaMuT' %}</p></td><td><p><code>sc.fiji</code></p></td><td></td></tr><tr class="odd"><td><p><a href="/plugins/slim-curve">SLIM Curve</a></p></td><td><p> {% include no%}
 </p></td><td><p><a href="http://sites.imagej.net/SLIM-Curve/">SLIM-Curve</a></p></td><td><p><a href="/licensing/gpl">GPLv3</a></p></td><td><p><a href="https://github.com/slim-curve">slim-curve</a></p></td><td><p> {% include github org='slim-curve' repo='slim-plugin' label='slim-plugin' %}</p></td><td><p><code>slim-curve</code></p></td><td></td></tr></tbody></table>
 

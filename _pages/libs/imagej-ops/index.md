@@ -72,7 +72,7 @@ in groovy will give a list of every Op signature. The `help` op can also provide
 
 ### Are there any Ops for image processing?
 
-Yes, there are. Take a look at the existing ops using the [ Ops Browser](#Is_there_a_list_of_Ops_somewhere_with_brief_descriptions_of_their_functionalities?) or the `net.imagej.ops.*` packages in the [ImageJ javadocs](http://javadoc.imagej.net/ImageJ/).
+Yes, there are. Take a look at the existing ops using the [ Ops Browser](#is-there-a-list-of-ops-somewhere-with-brief-descriptions-of-their-functionalities) or the `net.imagej.ops.*` packages in the [ImageJ javadocs](http://javadoc.imagej.net/ImageJ/).
 
 ### What are the Ops that need to be developed in the future?
 

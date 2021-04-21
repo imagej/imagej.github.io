@@ -85,7 +85,7 @@ Image:Blobs-blur.png\|Gaussian-blurred blobs image used as input (radius = 3). I
 Installation
 ------------
 
-The Classic Watershed plugin is part of the [MorphoLibJ](/plugins/morpholibj) library. To install it, you just need to [ add](How_to_follow_a_3rd_party_update_site#Add_update_sites) the IJPB-plugins update site:
+The Classic Watershed plugin is part of the [MorphoLibJ](/plugins/morpholibj) library. To install it, you just need to [ add](/update-sites/following#add-update-sites) the IJPB-plugins update site:
 
 1\) Select {% include bc path='Help | Update...'%} from the Fiji menu to start the updater.
 

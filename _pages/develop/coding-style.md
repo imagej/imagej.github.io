@@ -16,7 +16,7 @@ ImageJ uses an [interface-driven design](https://msdn.microsoft.com/en-us/librar
 Versioning
 ----------
 
-ImageJ uses [Semantic Versioning](http://semver.org/). As of this writing, the project is still in beta, so the API is not finalized yet. But once we make the final 2.0.0 release, future versions will be fully compliant. See the [Architecture](Architecture#Versioning) page for further details.
+ImageJ uses [Semantic Versioning](http://semver.org/). As of this writing, the project is still in beta, so the API is not finalized yet. But once we make the final 2.0.0 release, future versions will be fully compliant. See the [Architecture](/develop/architecture#versioning) page for further details.
 
 Naming
 ------

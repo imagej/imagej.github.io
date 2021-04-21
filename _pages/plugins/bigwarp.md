@@ -75,7 +75,7 @@ Press {% include key content='press\|F8' %} to bring up a transformation type se
 
 ### Navigation and Visualization
 
-Bigwarp inherits many image [navigation](BigDataViewer#Basic_Navigation), [visualization](BigDataViewer#Adjusting_Brightness_and_Color), and [grouping](BigDataViewer#Grouping_Sources) features with BigDataViewer, the details of which can be found on the [BigDataViewer](/plugins/bdv) page or on the help page. BigWarp specific features are documented below.
+Bigwarp inherits many image [navigation](/plugins/bdv#basic-navigation), [visualization](/plugins/bdv#adjusting-brightness-and-color), and [grouping](/plugins/bdv#grouping-sources) features with BigDataViewer, the details of which can be found on the [BigDataViewer](/plugins/bdv) page or on the help page. BigWarp specific features are documented below.
 
 The following table shows the available navigation commands using the mouse:
 
@@ -83,10 +83,10 @@ The following table shows the available navigation commands using the mouse:
 
 ### Commands shared with BigDataViewer
 
--   [Displaying multiple stacks ("sources")](BigDataViewer#Displaying_Multiple_Sources)
--   [Grouping sources](BigDataViewer#Grouping_Sources)
--   [Adjusting brightness and color](BigDataViewer#Adjusting_Brightness_and_Color)
--   [Bookmarking views (locations and orientations)](BigDataViewer#Bookmarking_Locations_and_Orientations)
+-   [Displaying multiple stacks ("sources")](/plugins/bdv#displaying-multiple-sources)
+-   [Grouping sources](/plugins/bdv#grouping-sources)
+-   [Adjusting brightness and color](/plugins/bdv#adjusting-brightness-and-color)
+-   [Bookmarking views (locations and orientations)](/plugins/bdv#bookmarking-locations-and-orientations)
 
 #### Mouse navigation
 
@@ -207,7 +207,7 @@ Working with large images
 
 The "normal" BigWarp plugin accessible through *Plugins {% include arrow%}
  Big Data Viewer {% include arrow%}
- BigWarp* works well for small- and medium-sized images but not for very large volumes (that do not fit into memory). For very large volumes, we recommend first [converting the volume to bigdataviewer's xml/hdf5 format](/plugins/bdv#Exporting_Datasets_for_the_BigDataViewer), then using [this script](https://raw.githubusercontent.com/saalfeldlab/bigwarp/master/scripts/BigWarp_ImagePlus_or_Xml.groovy) to run BigWarp using the xml/h5 file(s). See also [this forum post.](https://forum.image.sc/t/issue-with-big-warp/31472)
+ BigWarp* works well for small- and medium-sized images but not for very large volumes (that do not fit into memory). For very large volumes, we recommend first [converting the volume to bigdataviewer's xml/hdf5 format](/plugins/bdv#exporting-datasets-for-the-bigdataviewer), then using [this script](https://raw.githubusercontent.com/saalfeldlab/bigwarp/master/scripts/BigWarp_ImagePlus_or_Xml.groovy) to run BigWarp using the xml/h5 file(s). See also [this forum post.](https://forum.image.sc/t/issue-with-big-warp/31472)
 
 [This script](https://raw.githubusercontent.com/saalfeldlab/bigwarp/master/scripts/BigWarp_N5.groovy) enables you to run BigWarp using images stored using [N5](https://github.com/saalfeldlab/n5).
 

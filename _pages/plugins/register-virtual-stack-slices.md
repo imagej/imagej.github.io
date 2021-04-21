@@ -42,7 +42,7 @@ Images may have different dimensions and be of different type.
 -   **Select the output folder** where resulting registered slices are automatically stored as TIFF files.
 -   **Feature extraction model**. The expected transformation model finding inliers (i.e. correspondences or landmarks between images) in the feature extraction: translation, rigid, similarity or affine.
 -   **Registration model**. The image transformation model: translation, rigid, similarity, affine, elastic or moving least squares.
--   **Advanced setup**. The advanced checkbox: whether to see the [ feature extraction parameters](Feature_Extraction#Parameters) setup dialog, and if elastic, the [ bUnwarpJ](/plugins/bunwarpj) dialog. Otherwise the plugin operates on reasonable, default parameters.
+-   **Advanced setup**. The advanced checkbox: whether to see the [ feature extraction parameters](/plugins/feature-extraction#parameters) setup dialog, and if elastic, the [ bUnwarpJ](/plugins/bunwarpj) dialog. Otherwise the plugin operates on reasonable, default parameters.
 -   **Shrinkage constrain**. Option to regularize the registration in order to avoid section shrinking.
 -   **Save transforms**. Option to save the resulting transforms into files, that can be loaded using [Transform Virtual Stack Slices](/plugins/transform-virtual-stack-slices).
 
@@ -70,7 +70,7 @@ For the registration models "translation" and "rigid", no regularization is need
 
 **TODO**: the "elastic" and "moving least squares" registration models do not have a proper shrinkage regularization implementation yet.
 
-In the case of the "elastic" model, only a rigid registration will be performed. If you need to regularize the elastic transformation between the sections, you better do it through the bUnwarpJ paramters (see [ Notes](Register_Virtual_Stack_Slices#Notes) below).
+In the case of the "elastic" model, only a rigid registration will be performed. If you need to regularize the elastic transformation between the sections, you better do it through the bUnwarpJ paramters (see [ Notes](/plugins/register-virtual-stack-slices#notes) below).
 
 For the "moving least squares" model, the maximal warping will still take place with no regularization.
 

@@ -8,7 +8,7 @@ description: test description
 Purpose
 -------
 
-This is an example JRuby script, which is described in the page on [JRuby Scripting](JRuby_Scripting#Example__Generating_Red.2FCyan_Anaglyphs).
+This is an example JRuby script, which is described in the page on [JRuby Scripting](/scripting/jruby#example-generating-redyan-anaglyphs).
 
 Code
 ----

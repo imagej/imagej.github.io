@@ -50,7 +50,7 @@ There are also several advanced expert functions for the individual steps in the
 -   **Registration Refinement (5)** shows functions for refining the alignment via ICP ([details](/plugins/bigstitcher/icp-refinement))
 -   **Fusion (6)** shows functions for the fusion of views (or parts thereof) into single output images ([details](/plugins/bigstitcher/fuse)).
 -   **Calibration/Transformations (7)** shows functions for removing transformations from the dataset.
--   **Modifications (8)** shows functions for resaving the dataset, e.g. as multiresolution HDF5 ([details](BigStitcher_AutoLoader#Options_for_re-saving_as_HDF5)).
+-   **Modifications (8)** shows functions for resaving the dataset, e.g. as multiresolution HDF5 ([details](/plugins/bigstitcher/autoloader#options-for-re-saving-as-hdf5)).
 -   **Help (9)** contains a link to this documentation.
 
-Go back to the [main page](BigStitcher#Documentation)
+Go back to the [main page](/plugins/bigstitcher#documentation)

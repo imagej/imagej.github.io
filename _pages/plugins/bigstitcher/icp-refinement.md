@@ -56,4 +56,4 @@ If you opted for **Regularization** of the transform in the previous dialog, you
 
 <img src="/media/BigStitcher regularize model.png" width="400"/>
 
-Go back to the [main page](BigStitcher#Documentation)
+Go back to the [main page](/plugins/bigstitcher#documentation)

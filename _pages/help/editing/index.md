@@ -8,7 +8,7 @@ description: This page explains how to write and edit pages.
 
 Creating or editing a page on GitHub pages is super easy! Pages can be created or modified online via GitHub's online file editor (clicking "Edit page" on the top right of this page will bring you to this specific page's source) or, for advanced users, via a local installation of jekyll and the imagej.github.io site. (See our advanced user guide for jekyll set-up instructions)
 
-If you do not need to create a new page and would like to make changes to an existing page, skip to [adding and editing page content](Editing_the_Wiki#adding-and-editing-page-content).
+If you do not need to create a new page and would like to make changes to an existing page, skip to [adding and editing page content](/help/editing#adding-and-editing-page-content).
 
 ## Creating a new page
 <br>
@@ -46,7 +46,7 @@ Pages on `imagej.github.io` are optimized to be written in git markdown, but wil
 Markdown is plain-text syntax formatting, allowing a user to easily and cleanly modify text with italics, bold, ordered or bulleted lists, etc. As a GitHub pages hosted website, imagej.github.io uses the `git` flavor of markdown. [A basic Git markdown guide can be found here.](https://guides.github.com/features/mastering-markdown/)
 
 #### Using includes
-Includes provide more robust formatting options and are unique to this site (think of this as: "I would like to *include* an image," etc). With includes, you can insert menus, images, tables, sideboxes, figures, math, warnings, etc with pre-formatted settings into a page. For a full list of includes with utilization instructions, [see below](Editing_the_Wiki#available-includes).
+Includes provide more robust formatting options and are unique to this site (think of this as: "I would like to *include* an image," etc). With includes, you can insert menus, images, tables, sideboxes, figures, math, warnings, etc with pre-formatted settings into a page. For a full list of includes with utilization instructions, [see below](/help/editing#available-includes).
 
 #### Available "includes"
 
@@ -134,7 +134,7 @@ NOTE: filenames should be lowercase, omit spaces, and use extension `.md`.
 
 We recommend using a [text editor](https://hackernoon.com/5-best-text-editors-for-programmers-3f54ef51d5ae) to add content and make changes to a page when working locally. A text editor makes navigating between files, searching for text within your page, and making multiple edits more efficient and provides a more user-friendly interface.
 
-From here, the [front matter](Editing_the_Wiki#add-the-pages-front-matter) and content of the new page can be populated with a text editor of your choosing.
+From here, the [front matter](/help/editing#add-the-pages-front-matter) and content of the new page can be populated with a text editor of your choosing.
 
 * Images and other media should be stored in `/path/to/imagej.github.io/media`.
 

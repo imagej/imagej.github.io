@@ -50,7 +50,7 @@ These are old [Simple Neurite Tracer](SNT__FAQ#snt) screencasts that are likely 
 {% include youtube url='https://www.youtube.com/embed/pXpMRb1AC4I'%}  
 
 
-## Using The [Legacy 3D Viewer](SNT__Step-By-Step_Instructions#Tracing_in_the_Legacy_3D_Viewer)
+## Using The [Legacy 3D Viewer](SNT__Step-By-Step_Instructions#tracing-in-the-legacy-3d-viewer)
 
 
 {% include youtube url='https://www.youtube.com/embed/SrPeSwu31Zs'%}  

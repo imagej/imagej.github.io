@@ -13,7 +13,7 @@ The ISBI 2012 single particle challenge.
 
 In 2011-2012, an ISBI Grand Challenge was organized for the [Single-Particle Tracking algorithms](http://bioimageanalysis.org/track/). Though TrackMate does not offer a completely new algorithm, product of an original Research work, we took the chance and participated in the challenge. The results and the methodology to compute the accuracy of a tracking algorithms were published[1] thereafter.
 
-Unsurprisingly, we did not score amongst the best. At the time, TrackMate was in version 1.1, and ship a stripped down version of the better performing Jaqaman *et al.* LAP framework[2]. See the [LAP trackers section](TrackMate_algorithms#LAP_trackers) for algorithm details. Plus, TrackMate was was young at the time, and some bugs did not help.
+Unsurprisingly, we did not score amongst the best. At the time, TrackMate was in version 1.1, and ship a stripped down version of the better performing Jaqaman *et al.* LAP framework[2]. See the [LAP trackers section](/plugins/trackmate/algorithms#lap-trackers) for algorithm details. Plus, TrackMate was was young at the time, and some bugs did not help.
 
 TrackMate v2.7.x series accuracy against the ISBI dataset.
 ----------------------------------------------------------
@@ -30,7 +30,7 @@ The figures below shows the comparison of accuracy for the 3 classes of tracking
 
 It's best to directly read the paper[5] to know what is behind these measures, but here is a brief survey of how they are done. The ISBI dataset covers four scenarios:
 
-<table><thead><tr class="header"><th><p>Scenario name</p></th><th><p>Particle shape</p></th><th><p>Motion type</p></th></tr></thead><tbody><tr class="odd"><td><p><a href="#Microtubule_scenario.">MICROTUBULE</a></p></td><td><p>Slightly elongated shape to mimic MT tip staining.</p></td><td><p>Roughly constant velocity motion.</p></td></tr><tr class="even"><td><p><a href="#Receptor_scenario.">RECEPTOR</a></p></td><td><p>Spherical.</p></td><td><p> {% include wikipedia title='Tethered particle motion' text='Tethered motion'%}: switch between Brownian and directed motion with random orientation for the later.</p></td></tr><tr class="odd"><td><p><a href="#Vesicle_scenario.">VESICLE</a></p></td><td><p> {% include wikipedia title='Brownian motion' text='Brownian motion'%}.</p></td><td></td></tr><tr class="even"><td><p><a href="#Virus_scenario.">VIRUS</a></p></td><td><p>Switch between Brownian and directed motion with fixed orientation for the later.</p></td><td></td></tr></tbody></table>
+<table><thead><tr class="header"><th><p>Scenario name</p></th><th><p>Particle shape</p></th><th><p>Motion type</p></th></tr></thead><tbody><tr class="odd"><td><p><a href="#microtubule-scenario">MICROTUBULE</a></p></td><td><p>Slightly elongated shape to mimic MT tip staining.</p></td><td><p>Roughly constant velocity motion.</p></td></tr><tr class="even"><td><p><a href="#receptor-scenario">RECEPTOR</a></p></td><td><p>Spherical.</p></td><td><p> {% include wikipedia title='Tethered particle motion' text='Tethered motion'%}: switch between Brownian and directed motion with random orientation for the later.</p></td></tr><tr class="odd"><td><p><a href="#vesicle-scenario">VESICLE</a></p></td><td><p> {% include wikipedia title='Brownian motion' text='Brownian motion'%}.</p></td><td></td></tr><tr class="even"><td><p><a href="#virus-scenario">VIRUS</a></p></td><td><p>Switch between Brownian and directed motion with fixed orientation for the later.</p></td><td></td></tr></tbody></table>
 
 For each scenario, images covers several particle density:
 
@@ -66,11 +66,11 @@ Contrast stretched to the 0-50 8-bit range.
 
 For each scenario and condition, the method returns numerous values that characterizes the accuracy of a tracking algorithm. They are detailed on [this technical paper](http://bioimageanalysis.org/track/PerformanceMeasures.pdf). We plot below only three of them:
 
--   The <b>Jaccard similarity between tracks</b>, that quantifies how well the tracks returned by the algorithm match the ground truth. This value assesses the accuracy of the [spot tracker](TrackMate_algorithms#Spot_trackers) you pick in TrackMate. It ranges from 0 (terrible) to 1 (found tracks = ground truth).
+-   The <b>Jaccard similarity between tracks</b>, that quantifies how well the tracks returned by the algorithm match the ground truth. This value assesses the accuracy of the [spot tracker](/plugins/trackmate/algorithms#spot-trackers) you pick in TrackMate. It ranges from 0 (terrible) to 1 (found tracks = ground truth).
 
 <!-- -->
 
--   The <b>Jaccard similarity between detections</b>, that quantifies how well the particle detected by the detection algorithm match the ground truth. It depends strongly on the [spot detector](TrackMate_algorithms#Spot_detectors) you pick in TrackMate, and ranges from 0 to 1 like the above quantity.
+-   The <b>Jaccard similarity between detections</b>, that quantifies how well the particle detected by the detection algorithm match the ground truth. It depends strongly on the [spot detector](/plugins/trackmate/algorithms#spot-detectors) you pick in TrackMate, and ranges from 0 to 1 like the above quantity.
 
 <!-- -->
 
@@ -98,7 +98,7 @@ The three spot trackers were configured as indicated in the table below. It's no
 <th> Value
 </th></tr>
 <tr>
-<td rowspan="3"> <a href="TrackMate_algorithms#Linear_motion_tracker." class="mw-redirect" title="TrackMate algorithms">Linear motion tracker</a>
+<td rowspan="3"> <a href="/plugins/trackmate/algorithms#linear-motion-tracker" class="mw-redirect" title="TrackMate algorithms">Linear motion tracker</a>
 </td>
 <td> Initial search radius
 </td>
@@ -115,7 +115,7 @@ The three spot trackers were configured as indicated in the table below. It's no
 <td> 3
 </td></tr>
 <tr>
-<td rowspan="3"> <a href="TrackMate_algorithms#LAP_trackers" class="mw-redirect" title="TrackMate algorithms">LAP Brownian motion</a>
+<td rowspan="3"> <a href="/plugins/trackmate/algorithms#lap-trackers" class="mw-redirect" title="TrackMate algorithms">LAP Brownian motion</a>
 </td>
 <td> Max linking distance
 </td>

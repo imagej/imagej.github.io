@@ -13,7 +13,7 @@ In **Multiview Mode**, interest point detection can be started by selecting the 
 
 Other uses of interest points are:
 
--   Expert-mode stitching via Interest Points (click [here](BigStitcher_Advanced_stitching#Interest_point-based_shift_calculation) for details)
+-   Expert-mode stitching via Interest Points (click [here](/plugins/bigstitcher/advanced-stitching#interest-point-based-shift-calculation) for details)
 -   Affine Refinement of Tile registrations and Chromatic aberration correction via ICP (click [here](/plugins/bigstitcher/icp-refinement) for details)
 
 Furthermore, detecting sub-diffraction-sized beads is the default way of extracting a [Point Spread Function (PSF)](/plugins/bigstitcher/psf) for [(MultiView) Deconvolution](/plugins/bigstitcher/deconvolution).
@@ -56,7 +56,7 @@ If you chose to **Limit amount of detections** in the previous dialog, you will 
 -   **Weakest (above threshold)**: keep only the "weakest" detections that were not excluded via the threshold (lowest maxima or highest minima)
 -   **Around median (of those above threshold)**: keep only the detections closest to the median absolute intensity (of the detections above the threshold)
 
-Finally, when doing Difference-of-Gaussian detection, you can choose whether to compute the necessary convolution operations on the CPU or a GPU under **"Compute on"**. GPU-accelerated detection requires a CUDA-capable NVIDA graphics card. You also have to compile the [required libraries](Multiview-Reconstruction#Download) for your system first (see the corresponding GitHib pages for details). There is an *approximate* and an *accurate* version of the GPU-accelerated convolutions - the *approximate* version is slightly faster but might produce some artifacts around the edges of your images.
+Finally, when doing Difference-of-Gaussian detection, you can choose whether to compute the necessary convolution operations on the CPU or a GPU under **"Compute on"**. GPU-accelerated detection requires a CUDA-capable NVIDA graphics card. You also have to compile the [required libraries](/plugins/multiview-reconstruction#download) for your system first (see the corresponding GitHib pages for details). There is an *approximate* and an *accurate* version of the GPU-accelerated convolutions - the *approximate* version is slightly faster but might produce some artifacts around the edges of your images.
 
 <img src="/media/BigStitcher Register 2.png" width="600"/>
 
@@ -94,4 +94,4 @@ Click **OK** once more to start the interest point detection.
 
 ![](/media/BigStitcher interestpoint gpu-3.png "BigStitcher_interestpoint_gpu-3.png")
 
-Go back to the [main page](BigStitcher#Documentation)
+Go back to the [main page](/plugins/bigstitcher#documentation)

@@ -11,7 +11,7 @@ description: test description
 Introduction
 ============
 
-ImageJ and Fiji are able to run scripts written in [different languages](/Scripting#Supported_languages). Besides all the differences the approach on how to use the [API of ImageJ](http://javadoc.imagej.net/) is similar for all of them. This article will introduce the basic concepts and is valid for all scripting languages.
+ImageJ and Fiji are able to run scripts written in [different languages](/scripting#supported-languages). Besides all the differences the approach on how to use the [API of ImageJ](http://javadoc.imagej.net/) is similar for all of them. This article will introduce the basic concepts and is valid for all scripting languages.
 
 {% include info-box content='The examples are written in Groovy, but they are easy to adapt for any other scripting language ImageJ supports. For the ImageJ1 macro language, refer to the dedicated section in Languages.' %}
 
@@ -45,7 +45,7 @@ First we want to learn different ways to select an image and perform an action o
 
 Script Parameters are placed at the beginning of the script file. If only one `@ImagePlus` is used, the front most image is selected. A second Script Parameter is used to get the radius of the gaussion filter. By using `print(imp)` we verify, that an ImagePlus object is assigned to the variable.
 
-To perform an operation on the selected image, we use `IJ.run()`. Therefore we have to import the [class IJ](http://javadoc.imagej.net/ImageJ1/ij/IJ.html). There are three different versions of the [run() method](http://javadoc.imagej.net/ImageJ1/ij/IJ.html#run(java.lang.String)) of these we need the one with three parameters. The first parameter is the image to perform the action on, the second parameters defines the action (called **command**) and the last parameter is used to configure the action (here we set the filter radius). The easiest way to find a command is to use the [Recorder](Introduction_into_Macro_Programming#The_recorder).
+To perform an operation on the selected image, we use `IJ.run()`. Therefore we have to import the [class IJ](http://javadoc.imagej.net/ImageJ1/ij/IJ.html). There are three different versions of the [run() method](http://javadoc.imagej.net/ImageJ1/ij/IJ.html#run(java.lang.String)) of these we need the one with three parameters. The first parameter is the image to perform the action on, the second parameters defines the action (called **command**) and the last parameter is used to configure the action (here we set the filter radius). The easiest way to find a command is to use the [Recorder](/scripting/macro#the-recorder).
 
 The second approach is similar to how to perform this operation using the [macro language](/scripting/macro):
 
@@ -259,5 +259,5 @@ In Jython this looks like:
 Links
 =====
 
--   [ImageJ API examples](/Developing_Plugins_for_ImageJ_1.x#ImageJ.27s_API)
+-   [ImageJ API examples](/develop/ij1-plugins#imagejs-api)
 -   [ImageJ tutorials repository](https://github.com/imagej/tutorials/tree/master/howtos/src/main/java/howto)

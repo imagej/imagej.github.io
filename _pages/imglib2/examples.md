@@ -85,7 +85,7 @@ Example 2 - How to use Cursor, RandomAccess and Type
 
 The following examples illustrate how to access pixels using **Cursor** and **RandomAccess**, their basic properties, and how to modify pixel values using **Type**.
 
-Accessing pixels using a **Cursor** means to iterate all pixels in a way similar to iterating Java collections. However, a **Cursor** only ensures to visit each pixel exactly once, the order of iteration is not fixed in order to optimize the speed of iteration. This implies that that the order of iteration on two different **Img** is not necessarily the same, see [ example 2b](ImgLib2_Examples#Example_2b_-_Duplicating_an_Img_using_a_different_ImgFactory)! **Cursors** can be created by any object that implements **IterableInterval**, such as an **Img**. **Views** that are not infinite can be made iterable (see example 2c). *Note that in general a **Cursor** has significantly higher performance than a **RandomAccess** and should therefore be given preference if possible*.
+Accessing pixels using a **Cursor** means to iterate all pixels in a way similar to iterating Java collections. However, a **Cursor** only ensures to visit each pixel exactly once, the order of iteration is not fixed in order to optimize the speed of iteration. This implies that that the order of iteration on two different **Img** is not necessarily the same, see [ example 2b](/imglib2/examples#example-2b---duplicating-an-img-using-a-different-imgfactory)! **Cursors** can be created by any object that implements **IterableInterval**, such as an **Img**. **Views** that are not infinite can be made iterable (see example 2c). *Note that in general a **Cursor** has significantly higher performance than a **RandomAccess** and should therefore be given preference if possible*.
 
 In contrast to iterating image data, a **RandomAccess** can be placed at arbitrary locations. It is possible to set them to a specific n-dimensional coordinate or move them relative to their current position. Note that relative movements are usually more performant. A **RandomAccess** can be created by any object that implements **RandomAccessible**, like an **Img** or a **View**.
 
@@ -139,7 +139,7 @@ As the *target* needs to be an **IterableInterval**, it is more confined. This, 
 Example 3 - Writing generic algorithms
 --------------------------------------
 
-Examples 1 and 2 tried to introduce important tools you need in order to implement algorithms with ImgLib2. This example will show three generic implementations of algorithms computing the [ min/max](ImgLib2_Examples#Example_3a_-_Min_Max_search), average as well as the center of mass.
+Examples 1 and 2 tried to introduce important tools you need in order to implement algorithms with ImgLib2. This example will show three generic implementations of algorithms computing the [ min/max](/imglib2/examples#example-3a---min-max-search), average as well as the center of mass.
 
 The core idea is to implement algorithms as generic as possible in order to maximize code-reusability. In general, a good way to start is to think: *What are the minimal requirements in order to implement algorithm X?* This applies to all of the following three concepts:
 
@@ -154,7 +154,7 @@ Following those ideas, your newly implemented algorithm will be applicable to an
 
 Searching for the minimal and maximal value in a dataset is a very nice example to illustrate generic algorithms. In order to find min/max values, **Types** only need to be able to compare themselves. Therefore we do not need any numeric values, we only require them to implement the (Java) interface **Comparable**. Additionally, no random access to the data is required, we simply need to iterate all pixels, also their location is irrelevant. The image data we need only needs to be **Iterable**.
 
-Below we show **three** small variations of the min/max search. [ First](ImgLib2_Examples#Example_3a_-_Variation_1) we show the implementation as described above. [ Second](ImgLib2_Examples#Example_3a_-_Variation_2) we illustrate that this also works on a standard Java **ArrayList**. [ Third](ImgLib2_Examples#Example_3a_-_Variation_3) we show how the implementation changes if we do not only want the min/max value, but also their location. This requires to use **IterableInterval** instead, as **Cursor** can return their location.
+Below we show **three** small variations of the min/max search. [ First](/imglib2/examples#example-3a---variation-1) we show the implementation as described above. [ Second](/imglib2/examples#example-3a---variation-2) we illustrate that this also works on a standard Java **ArrayList**. [ Third](/imglib2/examples#example-3a---variation-3) we show how the implementation changes if we do not only want the min/max value, but also their location. This requires to use **IterableInterval** instead, as **Cursor** can return their location.
 
 #### Example 3a - Variation 1
 

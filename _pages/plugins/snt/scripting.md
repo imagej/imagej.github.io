@@ -136,7 +136,7 @@ Examples
 
 ### Scripting Reconstruction Viewer
 
-Programmatic control over an open instance of [Reconstruction Viewer](/plugins/snt/reconstruction-viewer) (either called from within SNT or as a standalone application) can be achieved by selecting the {% include bc path='Tools & Utilities|Script This Viewer...'%} [command](SNT__Reconstruction_Viewer#Utilities). It will then open an instance of Fiji's script editor with a boilerplate template containing the most essential imports and [script parameters](/scripting/parameters). The default programming language for this template can be chosen from the drop-down menu of the *Preferred Language* [option](SNT__Reconstruction_Viewer#Settings).
+Programmatic control over an open instance of [Reconstruction Viewer](/plugins/snt/reconstruction-viewer) (either called from within SNT or as a standalone application) can be achieved by selecting the {% include bc path='Tools & Utilities|Script This Viewer...'%} [command](/plugins/snt/reconstruction-viewer#utilities). It will then open an instance of Fiji's script editor with a boilerplate template containing the most essential imports and [script parameters](/scripting/parameters). The default programming language for this template can be chosen from the drop-down menu of the *Preferred Language* [option](/plugins/snt/reconstruction-viewer#settings).
 
 The following script exemplifies how to extend the boilerplate template to control the Viewer in real-time.
 

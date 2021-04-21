@@ -4,7 +4,7 @@ title: SSH public keys
 description: test description
 ---
 
-Often, it is inconvenient to input your password all the time when you push/pull via ssh (not using the [contrib user](Git#contrib)).
+Often, it is inconvenient to input your password all the time when you push/pull via ssh (not using the [contrib user](/develop/git#contrib)).
 
 For such case, you can set up a public/private key pair. Create them with
 

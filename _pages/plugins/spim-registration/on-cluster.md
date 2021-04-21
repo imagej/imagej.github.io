@@ -21,15 +21,15 @@ Each node of this cluster runs CentOS 6.3 Linux distribution. The queuing system
 
 The SPIM registration is a piece of software that undergoes ongoing development. The original version gathered under plugins *SPIM registration* has been replaced in 2014 by new set of plugins gathered under *Multiview reconstruction*. Moreover, the cluster pipeline has been changed to use a centralised Linux style master file. In 2015 this pipeline was reimplemented as **[automated workflow](/plugins/automated-workflow-for-parallel-multiview-reconstruction)** using the workflow manager **[Snakemake](https://bitbucket.org/johanneskoester/snakemake/wiki/Home.)**. Which allows to map and dispatch the workflow logic automatically either on a single maschine or on a HPC cluster. Therefore there are 4 versions available. We highly recommend using the latest version:
 
--   [Original SPIM registration pipeline](#Original_SPIM_registration_pipeline) - contains the most detailed description of the cluster pipeline using *SPIM registration* plugins. If you do not have much HPC/Linux experience start here.
+-   [Original SPIM registration pipeline](#original-spim-registration-pipeline) - contains the most detailed description of the cluster pipeline using *SPIM registration* plugins. If you do not have much HPC/Linux experience start here.
 
 <!-- -->
 
--   [NEW PIPELINE](#NEW_PIPELINE) - also uses *SPIM registration* plugins and introduces the master file, less verbose requiring some experience with command line and HPC.
+-   [NEW PIPELINE](#new-pipeline) - also uses *SPIM registration* plugins and introduces the master file, less verbose requiring some experience with command line and HPC.
 
 <!-- -->
 
--   [New Multiview Reconstruction pipeline](#New_Multiview_Reconstruction_pipeline) - builds on *Multiview Reconstruction* plugins, uses master file, written for experts
+-   [New Multiview Reconstruction pipeline](#new-multiview-reconstruction-pipeline) - builds on *Multiview Reconstruction* plugins, uses master file, written for experts
 
 <!-- -->
 
@@ -78,7 +78,7 @@ In all likelihood you will need the Linux (64 bit) version (unless you are of co
     gunzip fiji-linux64.tar.gz
     tar -xvf fiji-linux64.tar
 
-Change to the newly created Fiji-app directory and [update](/Update_Fiji#Command-line_usage) Fiji from the command line
+Change to the newly created Fiji-app directory and [update](/plugins/updater#command-line-usage) Fiji from the command line
 
     ./ImageJ-linux64 --update update
 
@@ -353,7 +353,7 @@ SPIM registration consists of **within time-point** registration of the views fo
 
 The first real step in the SPIMage processing pipeline, after re-saving as .tif, is to register the views within each timepoint. We will use for that the bead based registration plug-in in Fiji. The principle of the plug-in are described [here](/plugins/spim-registration/method) while the parameters are discussed [here](/plugins/spim-bead-registration).
 
-This description focuses on cluster processing and is less verbose, for details see section on [resaving](SPIM_Registration_on_cluster#Saving_data_as_tif) as the principles are the same.
+This description focuses on cluster processing and is less verbose, for details see section on [resaving](/plugins/spim-registration/on-cluster#saving-data-as-tif) as the principles are the same.
 
 In a directory jobs/registration create bash script **create-registration-jobs**
 
@@ -432,7 +432,7 @@ Some tips and tricks
 
 ### Time-lapse registration
 
-Once the per-time-point registration is finished it is necessary to register all the time-points in the time-series to a reference time-point (to remove potential sample drift during imaging). The parameters for time series registration are described [here](/SPIM_Bead_Registration#How_timelapse_registration_works).
+Once the per-time-point registration is finished it is necessary to register all the time-points in the time-series to a reference time-point (to remove potential sample drift during imaging). The parameters for time series registration are described [here](/plugins/spim-bead-registration#how-timelapse-registration-works).
 
 The time-series registration is not really a cluster type of task as it is run on a single processor in a linear fashion. But since until now we have everything on the cluster filesystem it is useful to execute it here. *Note: I do not mean that timelapse registration cannot be parallelized, we just have not implemented it because it runs fairly fast in the current, linear fashion.*
 
@@ -1825,7 +1825,7 @@ We will discuss each section of this file with the associated processing step.
 
     ####--------------------------------- hdf5 export ---------------------------------
 
-    ##Fiji_tobias
+    ##fiji-tobias
     Fiji_export="/sw/users/pietzsch/packages/Fiji.app/ImageJ-linux64"
 
     ##Working directory
@@ -1936,7 +1936,7 @@ Upon using the master file the first time please change the links for Fiji, the 
 
     ####--------------------------------- hdf5 export ---------------------------------
 
-    ##Fiji_tobias
+    ##fiji-tobias
     Fiji_export="/sw/users/pietzsch/packages/Fiji.app/ImageJ-linux64"
 
     ##Working directory
@@ -5016,7 +5016,7 @@ creates *merge.job* that will execute *merge\_xml.bsh* on the cluster node using
     /* shutdown */
     runtime.exit(0);
 
-*merge.job* should be executed on the cluster in interactive mode (see [SPIM\_Registration\_on\_cluster\#Define\_XML](SPIM_Registration_on_cluster#Define_XML)).
+*merge.job* should be executed on the cluster in interactive mode (see [SPIM\_Registration\_on\_cluster\#Define\_XML](/plugins/spim-registration/on-cluster#define-xml)).
 
 The result of the merge is *registration\_dataset,xml*. This is the final product of the registration pipeline. The results of registration can be viewed using [BigDataViewer](/plugins/bdv)
 

@@ -27,7 +27,7 @@ The typical workflow is:
 Responsibility of uploaders
 ---------------------------
 
-To facilitate [reproducibility](Architecture#Reproducible_builds) and present a unified application to both users and developers, uploaders should strive to keep each core update site synchronized with its corresponding source code.
+To facilitate [reproducibility](/develop/architecture#reproducible-builds) and present a unified application to both users and developers, uploaders should strive to keep each core update site synchronized with its corresponding source code.
 
 Because releases are tied to the source code (and the update site contents are not explicitly versioned), the order of update should always be:
 
@@ -69,7 +69,7 @@ Note that your username will always start with an upper case letter. It should l
 
 <img src="/media/Update site fiji creds.png" width="770"/>
 
-You can now close the *Manage update sites* window and go on to [ Uploading your resources](#Uploading_your_resources).
+You can now close the *Manage update sites* window and go on to [ Uploading your resources](#uploading-your-resources).
 
 Configuring the ImageJ update site
 ----------------------------------
@@ -85,9 +85,9 @@ It should look like this:
 
 <img src="/media/Update site ij2 creds.png" width="770"/>
 
-You can now close the *Manage update sites* window and go on to [ Uploading your resources](#Uploading_your_resources).
+You can now close the *Manage update sites* window and go on to [ Uploading your resources](#uploading-your-resources).
 
 Uploading your resources
 ------------------------
 
-See the [ Uploading files to your update site](How_to_set_up_and_populate_an_update_site#Uploading_files_to_your_update_site) section of the set up and populate tutorial.
+See the [ Uploading files to your update site](/update-sites/setup#uploading-files-to-your-update-site) section of the set up and populate tutorial.

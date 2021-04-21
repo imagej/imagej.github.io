@@ -57,7 +57,7 @@ Some of the scripts have a dedicated documentation page, others feature built-in
 <!-- -->
 
 {% include github org='tferr' repo='Scripts' path='README.md\#data-analysis' label='Data Analysis' %}<span id="Data_Analysis"></span>  
-{% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#create-boxplot' label='Create Boxplot' %}, {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#create-polar-plot' label='Create Polar Plot' %}, {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#distribution-plotter' label='Distribution Plotter' %}, [Find Peaks](/plugins/find-peaks), [Fit Polynomial](Sholl_Analysis#Complementary_Tools), {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#interactive-plotting' label='Interactive Plotting' %}
+{% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#create-boxplot' label='Create Boxplot' %}, {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#create-polar-plot' label='Create Polar Plot' %}, {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#distribution-plotter' label='Distribution Plotter' %}, [Find Peaks](/plugins/find-peaks), [Fit Polynomial](/plugins/sholl-analysis#complementary-tools), {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#interactive-plotting' label='Interactive Plotting' %}
 
 <!-- -->
 
@@ -67,7 +67,7 @@ Some of the scripts have a dedicated documentation page, others feature built-in
 <!-- -->
 
 {% include github org='tferr' repo='Scripts' path='README.md\#snippets' label='Snippets' %}, {% include github org='tferr' repo='Scripts' path='/lib\#lib' label='BAR lib' %}<span id="SnippetsList"> and {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/tutorials/' label='Tutorials' %}</span>  
-Described in [Scripting BARs](#Scripting_BARs)
+Described in [Scripting BARs](#scripting-bars)
 
 <!-- -->
 
@@ -82,7 +82,7 @@ Described in [Scripting BARs](#Scripting_BARs)
 Accessing BARs
 --------------
 
-As with all ImageJ commands, BAR scripts can be accessed in multiple ways: 1) through the {% include bc path="BAR |" %} menu, 2) the [Context Menu](#Context_Menu), 3) [Keyboard Shortcuts](#Keyboard_Shortcuts), 3) the *Shortcuts Menu Tool* ({% include bc path="BAR | Tool Installers | Install Shortcuts Menu" %}), that registers frequently used commands in the ImageJ toolbar, 4) by [pressing](#ExpediteAccess) {% include key content='press\|[L](#ExpediteAccess)' %}, or 5) from other [scripts, macros and plugins](#Scripting_BARs). 
+As with all ImageJ commands, BAR scripts can be accessed in multiple ways: 1) through the {% include bc path="BAR |" %} menu, 2) the [Context Menu](#context-menu), 3) [Keyboard Shortcuts](#keyboard-shortcuts), 3) the *Shortcuts Menu Tool* ({% include bc path="BAR | Tool Installers | Install Shortcuts Menu" %}), that registers frequently used commands in the ImageJ toolbar, 4) by [pressing](#ExpediteAccess) {% include key content='press\|[L](#ExpediteAccess)' %}, or 5) from other [scripts, macros and plugins](#scripting-bars). 
 {% capture tip%}
 You can open any BAR script by holding {% include key content='press\|Shift' %} while selecting its name from the {% include bc path="BAR |" %} menu. For pre-compiled java plugins, the source code is available through the <span style="border-bottom:1px dotted #ccc;">About BAR...</span> command.
 {% endcapture %}
@@ -131,13 +131,13 @@ Choose {% include bc path='Print Current List'%} in the Options Menu or press {%
 
 You can use {% include bc path="Plugins | Shortcuts | Create Shortcut..." %} to assign hotkeys (e.g., keyboard key that you do not use frequently such as {% include key content='press\|0' %} or {% include key content='press\|F7' %}) to any script registered in the {% include bc path="BAR |" %} menu. These shortcuts will be listed in {% include bc path="Plugins | Shortcuts |" %} and are remembered across restarts.
 
-Alternatively, keyboard shortcuts can be defined in macros that call BAR commands by placing the [shortcut key within square brackets](Introduction_into_Macro_Programming#Keyboard_shortcuts) at the end of the macro name. Such macros can pass specific options to BAR commands, allowing scripts to run without prompt. Example:
+Alternatively, keyboard shortcuts can be defined in macros that call BAR commands by placing the [shortcut key within square brackets](/scripting/macro#keyboard-shortcuts) at the end of the macro name. Such macros can pass specific options to BAR commands, allowing scripts to run without prompt. Example:
 
     macro "Remove Round Structures [0]" {
         run("Wipe Background", "size=100 circ.=0.75-1.00"); // Runs Wipe_Background.ijm with the specified parameters
     }
 
-As [mentioned](#Context_Menu), such macros can then be pasted into the text area of {% include bc path="Edit | Options | Startup..." %} so that they can be executed when ImageJ starts up. 
+As [mentioned](#context-menu), such macros can then be pasted into the text area of {% include bc path="Edit | Options | Startup..." %} so that they can be executed when ImageJ starts up. 
 {% capture tip%}
 Two other expedite ways of retrieving commands include: 1) Pressing {% include key content='press\|L' %}, the shortcut for the \_\_\_SHADOW3\_\_\_ and 2) Pressing {% include key content='press\|9' %}, the default shortcut for the *Recent Commands* list.
 {% endcapture %}
@@ -248,7 +248,7 @@ But because [BAR libs](#lib) already contain such a function, we can just call t
         import BARlib as lib
         image.setTitle( lib.randomString() )
 
-To log filename changes, we could use the same strategy used for the [IJM implementation](#IJ_Macro_Language). The simplest way to generate a CSV list would be to use ImageJ's Log window:
+To log filename changes, we could use the same strategy used for the [IJM implementation](#ij-macro-language). The simplest way to generate a CSV list would be to use ImageJ's Log window:
 
     def myRoutines(image):
         import uuid
@@ -374,7 +374,7 @@ The motivation behind bar is quite simple: To collect snippets of code that can 
 <!-- -->
 
 Will I find BAR useful?  
-{% include github org='tferr' repo='Scripts' path='README.md\#citations' label='Probably' %}. But it is likely that you will need to delve a bit into the [BAR philosophy](#Scripting_BARs).
+{% include github org='tferr' repo='Scripts' path='README.md\#citations' label='Probably' %}. But it is likely that you will need to delve a bit into the [BAR philosophy](#scripting-bars).
 
 <!-- -->
 
@@ -389,7 +389,7 @@ In a case of premature termination BARs tend to exit rather silently. The best w
 <!-- -->
 
 <span id="faq:ImageJ1"></span>Does BAR work outside Fiji/ImageJ2?  
-Yes, but with limitations. ImageJ1 (see [ImageJ Flavors](ImageJ#Flavors) if you have doubts about existing ImageJ distributions) will only register scripts saved in the *plugins/* folder or on one of its immediate subfolders. For this reason, some of the {% include bc path='BAR|'%} submenus will appear as empty, and it may not be possible to navigate the *BAR/* directory using menu commands ([Commander](#Commander) could still be used, nevertheless). Another important aspect is that, without access to the [built-in updater](/plugins/updater), you will have to manually update BAR (by monitoring its {% include github org='tferr' repo='Scripts/releases' label='rpository' %}), and to manually install (and update) the dependencies (i.e., third-party plugins and third-party libraries) used by BAR).
+Yes, but with limitations. ImageJ1 (see [ImageJ Flavors](/about#flavors) if you have doubts about existing ImageJ distributions) will only register scripts saved in the *plugins/* folder or on one of its immediate subfolders. For this reason, some of the {% include bc path='BAR|'%} submenus will appear as empty, and it may not be possible to navigate the *BAR/* directory using menu commands ([Commander](#Commander) could still be used, nevertheless). Another important aspect is that, without access to the [built-in updater](/plugins/updater), you will have to manually update BAR (by monitoring its {% include github org='tferr' repo='Scripts/releases' label='rpository' %}), and to manually install (and update) the dependencies (i.e., third-party plugins and third-party libraries) used by BAR).
 
 <!-- -->
 

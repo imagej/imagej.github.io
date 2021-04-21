@@ -84,7 +84,7 @@ As it is usual in ImageJ, no preview is provided here since we are dealing with 
 Installation
 ------------
 
-The Distance Transform Watershed plugins (2D and 3D) are part of the [MorphoLibJ](/plugins/morpholibj) library. To install them, you just need to [ add](How_to_follow_a_3rd_party_update_site#Add_update_sites) the IJPB-plugins update site:
+The Distance Transform Watershed plugins (2D and 3D) are part of the [MorphoLibJ](/plugins/morpholibj) library. To install them, you just need to [ add](/update-sites/following#add-update-sites) the IJPB-plugins update site:
 
 1\) Select {% include bc path='Help | Update...'%} from the Fiji menu to start the updater.
 

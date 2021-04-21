@@ -19,7 +19,7 @@ description: test description
 {% endcapture %}
 {% include info-box software='ImageJ/Fiji' name='Find Peaks' maintainer='[ BAR update site](/plugins/bar)' author=author filename=filename source=source released='February 2014' category='[Analysis](Category_Analysis), [Scripting](Category_Scripting), [Plugins](Category_Plugins)' %}
 
-A [BAR](/plugins/bar) script (written in [BeanShell](/scripting/beanshell)) that retrieves local maxima and minima from an ImageJ plot. The easiest way to install *Find Peaks* is by [subscribing](BAR#Installation) to the BAR {% include list-of-update-sites content='update site' %}.
+A [BAR](/plugins/bar) script (written in [BeanShell](/scripting/beanshell)) that retrieves local maxima and minima from an ImageJ plot. The easiest way to install *Find Peaks* is by [subscribing](/plugins/bar#installation) to the BAR {% include list-of-update-sites content='update site' %}.
 
 Options
 -------
@@ -77,7 +77,7 @@ Notes
 -   Peak coordinates are logged according to the following layout: \[*X0,Y0*\]: Original data; \[*X1,Y1*\]: Maxima; \[*X2,Y2*\]: Minima
 -   *Min. peak distance* can be used for peak width filtering
 -   Use *Scientific notation* and *Decimal places* in {% include bc path='Analyze|Set Measurements...'%} to improve the representation of values that are too big or too small to be displayed in the decimal form
--   Find Peaks was initially though as a [complementary tool](Sholl_Analysis#Complementary_Tools) for [Sholl Analysis](/plugins/sholl-analysis) but it that can be applied to any dataset. For this reason, it is now part of [BAR](/plugins/bar)
+-   Find Peaks was initially though as a [complementary tool](/plugins/sholl-analysis#complementary-tools) for [Sholl Analysis](/plugins/sholl-analysis) but it that can be applied to any dataset. For this reason, it is now part of [BAR](/plugins/bar)
 
 Related Resources
 -----------------
@@ -91,7 +91,7 @@ Analysis of 1D-signals was discussed in March 2014 on the [ImageJ mailing list](
 Installation
 ------------
 
-The easiest way to install *Find Peaks* is by [subscribing to the BAR update site](BAR#Installation).
+The easiest way to install *Find Peaks* is by [subscribing to the BAR update site](/plugins/bar#installation).
 
 License
 -------

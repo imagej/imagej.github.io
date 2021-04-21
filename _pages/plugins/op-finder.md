@@ -25,8 +25,8 @@ Parts of the Op Finder
 **Labeled components**
 
 1.  Search bar for [filtering](#Filtering) the list of Ops.
-2.  Toggle button to change between a [user](#For_Users) and [developer](#For_Developers) view.
-3.  Play button for [running the selected Op](#Running_Ops).
+2.  Toggle button to change between a [user](#for-users) and [developer](#for-developers) view.
+3.  Play button for [running the selected Op](#running-ops).
 4.  Copy button to copy the selected cell contents.
 5.  Help button to open up the [Wiki reference](/libs/imagej-ops) page in your browser.
 6.  Status area showing success/failure notifications e.g., for copying or running Ops.
@@ -64,7 +64,7 @@ Ops in this view are focused on answering the question "What can I do *right now
 For Developers
 --------------
 
-This view provides a comprehensive list of available Ops implementations. For example, contrasting with the [User view](#For_Users), we see there are actually four concrete implementations of the `Convolve` Op, with a plethora of optional parameters.
+This view provides a comprehensive list of available Ops implementations. For example, contrasting with the [User view](#for-users), we see there are actually four concrete implementations of the `Convolve` Op, with a plethora of optional parameters.
 
 
 <img src="/media/DevOpFinder.png" title="fig:DevOpFinder.png" width="800" alt="DevOpFinder.png" />
@@ -84,17 +84,17 @@ Filtering
 The Op Finder includes [fuzzy filtering](Wikipedia_Approximate_string_matching) to find Ops of interest. When filtering:
 
 -   Namespaces are hidden
--   In [User view](#For_Users), the complete simplified Op entry is filtered.
--   In [Developer view](#For_Developers), the Op namespaces + class name are filtered.
+-   In [User view](#for-users), the complete simplified Op entry is filtered.
+-   In [Developer view](#for-developers), the Op namespaces + class name are filtered.
 
 <figure><img src="/media/Filter-op-finder.png" title="Filter-op-finder.png" width="600" alt="Filter-op-finder.png" /><figcaption aria-hidden="true">Filter-op-finder.png</figcaption></figure>
 
 Code Snippets
 -------------
 
-Code snippets are available in the [Developer view](#For_Developers). These are intended to help you rapidly build up scripts around the available Ops. The following is a step-by-step guide to take you through the process of finding an Op of interest to using it in a functional script.
+Code snippets are available in the [Developer view](#for-developers). These are intended to help you rapidly build up scripts around the available Ops. The following is a step-by-step guide to take you through the process of finding an Op of interest to using it in a functional script.
 
-1\. The first thing to do is find an Op of interest. In this case, we start from the [User view](#For_Users) and see that there is a Convolve Op we want to try:
+1\. The first thing to do is find an Op of interest. In this case, we start from the [User view](#for-users) and see that there is a Convolve Op we want to try:
 
 
 ![](/media/1-select-op.png "fig:1-select-op.png")
@@ -106,7 +106,7 @@ Code snippets are available in the [Developer view](#For_Developers). These are 
 
 **Note:** this guide is written in [Python](/scripting/jython) but any scripting language will work
 
-3\. Now we need the code call for our Convolve Op, so we switch to the [Developer view](#For_Developers). The code is long, but remember we can [copy](#Parts_of_the_Op_Finder):
+3\. Now we need the code call for our Convolve Op, so we switch to the [Developer view](#for-developers). The code is long, but remember we can [copy](#parts-of-the-op-finder):
 
 
 <img src="/media/2-op-snippet.png" title="fig:2-op-snippet.png" width="1200" alt="2-op-snippet.png" />
@@ -159,9 +159,9 @@ Running Ops
 
 Although you can run selected Ops through the Op Finder, this method **lacks reproducibility** and should not be used as a substitute for a proper script or plugin when using Ops in a scientific workflow. This functionality *is* intended to allow a rapid preview of what effect an Op will have on a dataset.
 
-The [play button](#Parts_of_the_Op_Finder) essentially automates the process of turning an Op [into a script](#Code_Snippets): optional parameters are discarded and required parameters are [annotated](/scripting/parameters). Because of this, Ops with arcane or unusual parameters may fail to run because the framework does not know how to provide them.
+The [play button](#parts-of-the-op-finder) essentially automates the process of turning an Op [into a script](#code-snippets): optional parameters are discarded and required parameters are [annotated](/scripting/parameters). Because of this, Ops with arcane or unusual parameters may fail to run because the framework does not know how to provide them.
 
-Thus it is recommended to run Ops primarily from the [User view](#For_Users), as these Ops focus on images and numbers, which can automatically be provided by the framework (via open images and input panels, respectively).
+Thus it is recommended to run Ops primarily from the [User view](#for-users), as these Ops focus on images and numbers, which can automatically be provided by the framework (via open images and input panels, respectively).
 
 Further Reading
 ===============

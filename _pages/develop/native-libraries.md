@@ -33,7 +33,7 @@ It is one of Java's greatest strengths that you do not need to compile for every
 
 -   By using native libraries, it is much easier to produce fatal errors that tear down the complete Java virtual machine. Consequently, debugging can be really hard when using native libraries.
 
-For further arguments to use Java instead of native libraries, see also our [rationale for using Java](/Philosophy#Why_Java.3F).
+For further arguments to use Java instead of native libraries, see also our [rationale for using Java](/develop/philosophy#why-java).
 
 JNA vs JNI
 ----------
@@ -313,7 +313,7 @@ Finally, the *fiji.JNI* class in *fiji-lib.jar* provides convenience methods to 
             JNI.loadLibrary("hello-world");
     }
 
-See also the [JNI Example](#JNI_Example) below.
+See also the [JNI Example](#jni-example) below.
 
 Using the Java Native Interface from C
 --------------------------------------

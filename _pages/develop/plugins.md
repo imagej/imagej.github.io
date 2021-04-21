@@ -26,7 +26,7 @@ As ImageJ is built using the [SciJava principles of project management](/develop
 
 Additionally, at a minimum, you should clone the {% include github org='imagej' repo='tutorials' label='imagej/tutorials repository' %}. This will give you a local copy of the tutorials discussed in this guide, as well as templates for use in your own development.
 
-For the complete "developer experience", you can go through the [GitHub Bootcamp](https://help.github.com/categories/bootcamp/). At the least, once you've [created your own repository](https://help.github.com/articles/create-a-repo/) and cloned a local copy, you will have a home ready for when your [very own plugin](#Starting_your_own_plugin) arrives!
+For the complete "developer experience", you can go through the [GitHub Bootcamp](https://help.github.com/categories/bootcamp/). At the least, once you've [created your own repository](https://help.github.com/articles/create-a-repo/) and cloned a local copy, you will have a home ready for when your [very own plugin](#starting-your-own-plugin) arrives!
 
 What is a "plugin"?
 -------------------
@@ -47,13 +47,13 @@ For example, given the following plugins:
     @Plugin(type=SpecialService.class)
     public class SpecialService implements Service { }
 
-{% include expanding-box content='Which of these plugins would we expect back if asking the [Context](Writing_plugins#The_Context) for plugins of type `Service` plugin? \| &gt; It would give back both the `MyService` and `SpecialService` plugins, since `SpecialService` is a subclass of `Service`.' %}
+{% include expanding-box content='Which of these plugins would we expect back if asking the [Context](/develop/plugins#the-context) for plugins of type `Service` plugin? \| &gt; It would give back both the `MyService` and `SpecialService` plugins, since `SpecialService` is a subclass of `Service`.' %}
 
 {% include expanding-box content='What if we asked for plugins of type `SpecialService`? \| &gt; It would just return the `SpecialService` plugin, since `MyService` is **not** a `SpecialService`.' %}
 
 ### Plugin priority
 
-When plugins are retrieved from a [Context](Writing_plugins#The_Context) it's possible to get more than one match. In these cases, the plugin classes are returned in order of the **priority** of the class's [@Plugin annotation](https://github.com/scijava/scijava-common/blob/scijava-common-2.47.0/src/main/java/org/scijava/plugin/Plugin.java#L108-L129). Priorities are simply double values; as a starting point, priority constants can be used from the {% include github org='scijava' repo='scijava-common' tag='scijava-common-2.47.0' source='org/scijava/Priority.java' label='Priority' %} class.
+When plugins are retrieved from a [Context](/develop/plugins#the-context) it's possible to get more than one match. In these cases, the plugin classes are returned in order of the **priority** of the class's [@Plugin annotation](https://github.com/scijava/scijava-common/blob/scijava-common-2.47.0/src/main/java/org/scijava/plugin/Plugin.java#L108-L129). Priorities are simply double values; as a starting point, priority constants can be used from the {% include github org='scijava' repo='scijava-common' tag='scijava-common-2.47.0' source='org/scijava/Priority.java' label='Priority' %} class.
 
 For example, given the following plugins:
 
@@ -140,7 +140,7 @@ Whereas [Services](#Services) provide internal functionality, `Commands` are plu
 
 When writing `Commands` you will often declare {% include github org='scijava' repo='scijava-common' tag='scijava-common-2.47.0' source='org/scijava/plugin/Parameter.java' label='@Parameters' %} on fields that **can not** be resolved automatically by the `Context`—for example, numeric values or file paths. Instead of being instantiated at `Context` startup as a `Service` would be, `Commands` are created and executed on demand.
 
-When a `Command` is executed, it goes through a series of pre-processing steps to populate its `@Parameters` using its associated [Context](#The_Context). If any parameters are left unresolved and a UI is available, the framework will automatically build and display an appropriate dialog to get user input. In this way, input harvesting is decoupled from functional operation—allowing developers to focus on what's really important without repetition of code. This also means that Commands can typically run [headlessly](/learn/headless) without any extra development effort.
+When a `Command` is executed, it goes through a series of pre-processing steps to populate its `@Parameters` using its associated [Context](#the-context). If any parameters are left unresolved and a UI is available, the framework will automatically build and display an appropriate dialog to get user input. In this way, input harvesting is decoupled from functional operation—allowing developers to focus on what's really important without repetition of code. This also means that Commands can typically run [headlessly](/learn/headless) without any extra development effort.
 
 A common pattern in `Command` development is to wrap `Service` functionality. For example, opening an image from a path is a fundamental operation in ImageJ. To this end, developers can directly use the {% include github org='scifio' repo='scifio' tag='scifio-0.25.0' source='io/scif/services/DatasetIOService.java' label='DatasetIOService' %}. Users then get this same functionality from the menus via the {% include github org='imagej' repo='imagej-plugins-commands' tag='imagej-plugins-commands-0.6.0' source='net/imagej/plugins/commands/io/OpenDataset.java' label='OpenDataset command' %}—which itself simply calls into the `DatasetIOService`.
 
@@ -226,7 +226,7 @@ Starting your own plugin
 
 ### General guidelines
 
-ImageJ adheres to [interface-driven design](Coding_style#Interface-driven_design). From a practical point of view, this means:
+ImageJ adheres to [interface-driven design](/develop/coding-style#interface-driven-design). From a practical point of view, this means:
 
 If you are **creating** a new plugin type...
 
@@ -244,7 +244,7 @@ You already [created your own GitHub repository](#Requirements), right??
 
 When you're just getting started with tools like [Git](/develop/git) and [Maven](/develop/maven), it's not easy to comprehend the nuances of how new projects should be set up and configured. It's much easier to copy a working project to use as a starting point and go from there.
 
-The [example projects](#Example_projects) are designed precisely to serve as such starting points for new projects. Once you have a solid idea of what kind of plugin you want to write, pick the project that discusses your area of choice and simply copy it to your own GitHub repo. From there, you can make changes as needed.
+The [example projects](#example-projects) are designed precisely to serve as such starting points for new projects. Once you have a solid idea of what kind of plugin you want to write, pick the project that discusses your area of choice and simply copy it to your own GitHub repo. From there, you can make changes as needed.
 
 At this point, if you haven't already, we **STRONGLY RECOMMEND** importing your project into an [IDE](/develop/ides) like [Eclipse](/develop/eclipse). This will make [development](/develop/eclipse) and [refactoring](http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fref-menu-refactor.htm) much easier. Modern IDEs also have excellent [Git](/develop/git) and [Maven](/develop/maven) integration, which will allow you to take advantage of the fact that the example projects are already set up as Mavenized Git repositories.
 
@@ -252,9 +252,9 @@ In addition to modifying and developing the source code itself, there are severa
 
 #### Update your POM
 
--   For your [parent pom](https://maven.apache.org/pom.html#Inheritance), we recommend that you extend [`pom-scijava`](https://github.com/scijava/pom-scijava). This will provide [dependency management](https://maven.apache.org/pom.html#Dependency_Management) of a lot of common useful dependencies, including the entire [ImageJ software stack](Architecture#Definitions) and all [Fiji](/fiji) components. Try to use the newest available version of `pom-scijava`.
--   Update your [groupId](https://maven.apache.org/pom.html#Maven_Coordinates). ImageJ projects use a `net.imagej` groupId, while Fiji projects use `sc.fiji`—or you may use your own if you do not plan to distribute your plugin with the core ImageJ or Fiji projects.
--   Update your [artifactId](https://maven.apache.org/pom.html#Maven_Coordinates) to something appropriate based on the intended use of your project.
+-   For your [parent pom](https://maven.apache.org/pom.html#inheritance), we recommend that you extend [`pom-scijava`](https://github.com/scijava/pom-scijava). This will provide [dependency management](https://maven.apache.org/pom.html#dependency-management) of a lot of common useful dependencies, including the entire [ImageJ software stack](/develop/architecture#definitions) and all [Fiji](/fiji) components. Try to use the newest available version of `pom-scijava`.
+-   Update your [groupId](https://maven.apache.org/pom.html#maven-coordinates). ImageJ projects use a `net.imagej` groupId, while Fiji projects use `sc.fiji`—or you may use your own if you do not plan to distribute your plugin with the core ImageJ or Fiji projects.
+-   Update your [artifactId](https://maven.apache.org/pom.html#maven-coordinates) to something appropriate based on the intended use of your project.
 -   Update your <name> and <description> to something appropriate for your new artifactId.
 -   Add a <developer> block to your pom, to identify yourself (see [this example](https://github.com/scijava/pom-scijava/blob/pom-scijava-16.1.0/pom.xml#L32-L47) for formatting).
 

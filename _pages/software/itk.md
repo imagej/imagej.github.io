@@ -53,6 +53,6 @@ To cite ITK, please use the following publication:
 
 See also:
 
--   [How do I cite the use of ITK in a publication?](https://itk.org/Wiki/ITK/FAQ#How_do_I_cite_the_use_of_ITK_in_a_publication.3F)
+-   [How do I cite the use of ITK in a publication?](https://itk.org/Wiki/ITK/FAQ#how-do-i-cite-the-use-of-itk-in-a-publication)
 
  

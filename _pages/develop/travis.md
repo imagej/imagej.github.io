@@ -5,7 +5,7 @@ section: Development:Tools
 description: test description
 ---
 
-{% include minibox logo='Travis.png' blurb='**Travis CI:** Build your code in the cloud!' %}[Travis CI](https://travis-ci.org/) is a tool for [continuous integration](Project_management#Continuous_integration). It has excellent integration with [GitHub](/develop/github), and is very useful for automating builds, deployment and other tasks. 
+{% include minibox logo='Travis.png' blurb='**Travis CI:** Build your code in the cloud!' %}[Travis CI](https://travis-ci.org/) is a tool for [continuous integration](/develop/project-management#continuous-integration). It has excellent integration with [GitHub](/develop/github), and is very useful for automating builds, deployment and other tasks. 
 
 
 Services
@@ -29,7 +29,7 @@ Requirements
 
 -   Host your [open-source](/Open_Source) project on [GitHub](/develop/github).
 -   Log in to [Travis CI](https://travis-ci.com/auth) with your corresponding GitHub account and enable your repository.
--   Contact an ImageJ admin in [Gitter](Chat#Gitter) or [the Image.sc Forum](http://forum.image.sc/) and request that they file a PR which adds Travis support to your repository.
+-   Contact an ImageJ admin in [Gitter](/about/chat#gitter) or [the Image.sc Forum](http://forum.image.sc/) and request that they file a PR which adds Travis support to your repository.
 
 Instructions
 ------------
@@ -39,7 +39,7 @@ In order to add Travis CI support to a repository, the SciJava credentials are n
 Testing things which cannot run headless
 ----------------------------------------
 
-If your tests require a display (i.e.: they do not pass when run [headless](/learn/headless)), you can use [Xvfb](/Headless#Xvfb) as follows:
+If your tests require a display (i.e.: they do not pass when run [headless](/learn/headless)), you can use [Xvfb](/learn/headless#xvfb) as follows:
 
     before_script:
       - "export DISPLAY=:99.0"

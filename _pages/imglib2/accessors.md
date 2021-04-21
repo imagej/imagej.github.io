@@ -67,7 +67,7 @@ RandomAccess
         }
     }
 
-In lines *013-015* we create a 8-bit gray-level image, in line *029* we show the result (like in the [ previous example](ImgLib2_-_Getting_Started#Opening_And_Displaying_Image_Files)).
+In lines *013-015* we create a 8-bit gray-level image, in line *029* we show the result (like in the [ previous example](/imglib2/getting-started#opening-and-displaying-image-files)).
 
 In line *017* we create a **RandomAccess** to the image. **Img** implements the [RandomAccessible](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccessible.html) interface, thus we can use **randomAccess()** to obtain one. The **RandomAccess** has the same generic type, **UnsignedByteType**, as the image.
 
@@ -422,7 +422,7 @@ Lines *028-031* show how to use **findmax** and get the maximum value and coordi
 
 ### Notes
 
--   The iteration order is subject to implementation, specialized for each memory layout to minimize access time. For example, an [ArrayImg](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/img/array/ArrayImg.html) has a different iteration order from a [CellImg](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/cell/CellImg.html). This is nicely illustrated in [ ImgLib2 Example 2b - Duplicating an Img using a different ImgFactory ](ImgLib2_Examples#Example_2b_-_Duplicating_an_Img_using_a_different_ImgFactory).
+-   The iteration order is subject to implementation, specialized for each memory layout to minimize access time. For example, an [ArrayImg](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/img/array/ArrayImg.html) has a different iteration order from a [CellImg](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/cell/CellImg.html). This is nicely illustrated in [ ImgLib2 Example 2b - Duplicating an Img using a different ImgFactory ](/imglib2/examples#example-2b---duplicating-an-img-using-a-different-imgfactory).
 -   Typically, there are two variants of Cursors available. One that calculates its location per each iteration and one that calculates it only per localization request. The former is more efficient when localization occurs frequently, the latter otherwise. In the *maximum-finding* example, we use the latter because localization is only required once after the maximum has been found. The former one could be obtained using **localizingCursor()** instead of **cursor()** (see [IterableInterval](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/IterableInterval.html) API doc.)
 -   **copyCursor()** is a work-around to circumvent a *javac* bug with covariant return type overriding (see [bug report](http://bugs.sun.com/view_bug.do?bug_id=6656332)). In the future (with JDK7) every **Sampler** can be copied using **copy()** instead of having specialised **copyCursor()**, **copyRandomAccess()**, ... methods.
 
@@ -435,7 +435,7 @@ ImgLib2 is not restricted to rasterized images and integer coordinates It also s
 -   a procedurally generated image, where a value can be computed at any real coordinate (continuous, unbounded, non-iterable).
 -   collections of samples taken at arbitrary real coordinates (discrete, bounded, iterable).
 
-The following image shows the UML diagram for the ImgLib2 accessor interface hierarchy. The real-coordinate counterparts that were missing in the simplified version [ above](ImgLib2_-_Accessors#Introduction) are highlighted.
+The following image shows the UML diagram for the ImgLib2 accessor interface hierarchy. The real-coordinate counterparts that were missing in the simplified version [ above](/imglib2/accessors#introduction) are highlighted.
 
 ![UML for ImgLib2 accessor interfaces](/media/Imglib2-accessors-real.png "UML for ImgLib2 accessor interfaces")
 
