@@ -14,7 +14,7 @@ description: test description
 {% include github org='imagej' repo='ImageJA' label='Git repository' %}
 {% endcapture %}
 {% include info-box software='ImageJA' name='ImageJA' author=author maintainer='[Travis CI](/develop/travis)' filename='Newer versions [on Maven Central](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22net.imagej%22%20AND%20a%3A%22ij%22)  
-Older versions [in ImageJ Maven repository](http://maven.imagej.net/content/repositories/releases/net/imagej/ij/)' source=source released='17/03/2007' latest-version='auto-updated' status='auto-maintained' %}ImageJA is a project that provides a clean [Git](/develop/git) history of the [ImageJ 1.x](/software/imagej1) project, with a proper 'pom.xml' file so that it can be used with [Maven](/develop/maven) without hassles.
+Older versions [in SciJava Maven repository](http://maven.scijava.org/content/repositories/releases/net/imagej/ij/)' source=source released='17/03/2007' latest-version='auto-updated' status='auto-maintained' %}ImageJA is a project that provides a clean [Git](/develop/git) history of the [ImageJ 1.x](/software/imagej1) project, with a proper 'pom.xml' file so that it can be used with [Maven](/develop/maven) without hassles.
 
 Why ImageJA?
 ------------

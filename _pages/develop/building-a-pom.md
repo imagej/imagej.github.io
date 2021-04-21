@@ -97,8 +97,8 @@ Using ImageJ
 
         <repositories>
             <repository>
-                <id>imagej.public</id>
-                <url>http://maven.imagej.net/content/groups/public</url>
+                <id>scijava.public</id>
+                <url>https://maven.scijava.org/content/groups/public</url>
             </repository>
         </repositories>
 

@@ -28,4 +28,4 @@ You can change which version of ImageJ1 is tested by overriding the `imagej1.ver
 
     mvn -Dimagej1.version=1.48a clean test
 
-Or whichever version you wish to use (of [those listed here](http://maven.imagej.net/content/groups/public/net/imagej/ij/)). The unit tests were created circa 1.44, and do not compile correctly with earlier versions of ImageJ.
+Or whichever version you wish to use (of [those listed here](https://maven.scijava.org/content/groups/public/net/imagej/ij/)). The unit tests were created circa 1.44, and do not compile correctly with earlier versions of ImageJ.

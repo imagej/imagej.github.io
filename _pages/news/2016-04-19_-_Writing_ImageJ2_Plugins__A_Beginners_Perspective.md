@@ -289,7 +289,7 @@ Appendix
 How do I find dependencies?
 ---------------------------
 
-You can search by class for Maven artifacts. For example, [search for `ij.plugin.PlugIn`](http://maven.imagej.net/#nexus-search;classname~ij.plugin.PlugIn). There is also a "Find Jar For Class" helper script in Fiji which does a similar thing for JAR files currently on ImageJ's classpath.
+You can search by class for Maven artifacts. For example, [search for `ij.plugin.PlugIn`](https://maven.scijava.org/#nexus-search;classname~ij.plugin.PlugIn). There is also a "Find Jar For Class" helper script in Fiji which does a similar thing for JAR files currently on ImageJ's classpath.
 
 If you are comfortable with command-line tools, you can also use the [Maven Dependency Plugin](https://maven.apache.org/plugins/maven-dependency-plugin/) which enables you to do things like download local copies of the dependency jars for inspection.
 

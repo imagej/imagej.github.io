@@ -191,7 +191,7 @@ The easiest method is to start with a [minimal project](https://github.com/image
 
 The format of such a `pom.xml` is described briefly on the [Maven](/develop/maven) page.
 
-Most importantly, you will need to adjust the `artifactId` and the `dependencies` section. Should you require a dependency that is not used in Fiji yet, you might want to search for the appropriate `groupId` and `version` in the [ImageJ Maven repository](http://maven.imagej.net/).
+Most importantly, you will need to adjust the `artifactId` and the `dependencies` section. Should you require a dependency that is not used in Fiji yet, you might want to search for the appropriate `groupId` and `version` in the [SciJava Maven repository](/develop/project-management#maven).
 
 Next, you will put your Java sources into `src/main/java/` and adjust `src/main/resources/plugins.config`.
 

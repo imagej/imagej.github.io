@@ -17,7 +17,7 @@ description: test description
 {% endcapture %}
 {% include minibox logo='Maven-icon.png' size='51px' blurb=blurb %}[ImageJ](/about), [Fiji](/fiji) and other [SciJava](SciJava) projects use [Maven](https://maven.apache.org/) for their project infrastructure.
 
-Maven artifacts are published to the [SciJava Maven repository](//develop/project-management#maven).
+Maven artifacts are published to the [SciJava Maven repository](/develop/project-management#maven).
 
 Why do we use Maven?
 ====================

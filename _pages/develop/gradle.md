@@ -28,7 +28,7 @@ Contributed<sup>[1](https://github.com/imagej/tutorials/issues/24)</sup> by {%- 
     repositories {
         jcenter()
         maven {
-              url "http://maven.imagej.net/content/groups/public/"
+              url "https://maven.scijava.org/content/groups/public/"
         }
     }
     dependencyManagement {

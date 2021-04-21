@@ -13,7 +13,7 @@ For **local** thresholding rather than global, see the [Auto Local Threshold](/p
 Installation
 ------------
 
-**ImageJ**: requires v1.42m or newer. Download [Auto\_Threshold-X.Y.Z.jar](http://maven.imagej.net/service/local/artifact/maven/redirect?r=releases&g=sc.fiji&a=Auto_Threshold&v=RELEASE&e=jar) and copy it into the ImageJ/plugins folder and either restart ImageJ or run the '{% include bc path='Help | Update Menus'%}' command. After this a new command should appear in '{% include bc path='Image | Adjust | Auto Threshold'%}'.
+**ImageJ**: requires v1.42m or newer. Download [Auto\_Threshold-X.Y.Z.jar](https://maven.scijava.org/service/local/artifact/maven/redirect?r=releases&g=sc.fiji&a=Auto_Threshold&v=RELEASE&e=jar) and copy it into the ImageJ/plugins folder and either restart ImageJ or run the '{% include bc path='Help | Update Menus'%}' command. After this a new command should appear in '{% include bc path='Image | Adjust | Auto Threshold'%}'.
 
 **Fiji**: this plugin is part of the Fiji distribution, there is no need to download it.
 

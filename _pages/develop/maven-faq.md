@@ -22,7 +22,7 @@ How are dependency versions determined?
 In many `pom.xml` files which extend `pom-scijava`, you can see that the dependency versions are omitted. The versions are defined (or "managed") by the pom-scijava parent configuration as part of its [Bill of Materials](//develop/architecture#bill-of-materials)—e.g., {% include github org='scijava' repo='pom-scijava' tag='pom-scijava-14.0.0' path='pom.xml\#L218-L219' label='here' %} is where the ImageJ 1.x version is defined.
 
 -   Browse the latest `pom-scijava` {% include github org='scijava' repo='pom-scijava' path='pom.xml' label='here' %}.
--   Browse the available versions of ImageJ 1.x [here](http://maven.imagej.net/content/groups/public/net/imagej/ij/).
+-   Browse the available versions of ImageJ 1.x [here](https://maven.scijava.org/content/groups/public/net/imagej/ij/).
 
 How do I determine which Maven projects (i.e., dependencies) I actually need?
 =============================================================================
@@ -79,7 +79,7 @@ The dependencies specified in *pom.xml* are only used to compile your .jar file.
 My software depends on a *.jar* file that is not available via Maven!
 =====================================================================
 
-Write to the [ImageJ Forum](http://forum.imagej.net/) seeking assistance. The best solution is to get your dependency deployed to the [ImageJ Maven repository](https://maven.imagej.net/).
+Write to the [Image.sc Forum](http://forum.image.sc/) seeking assistance. The best solution is to get your dependency deployed to the [SciJava Maven repository](/develop/project-management#maven).
 
 See [Playing Tradeoffs with Maven](https://www.cloudbees.com/blog/playing-trade-offs-maven) for an in-depth discussion of various solutions to this issue.
 

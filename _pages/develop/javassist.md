@@ -83,7 +83,7 @@ For security reasons, HotSpot does not allow any malformed bytecode to execute. 
 
 Unfortunately, the error messages of said verifier are not exactly stellar.
 
-If you want to avoid being misled by the error message (the method mentioned in the *VerifyError* is most likely to be <u>not</u> the offending one), and moreover want to know where in the bytecode the error happened, probably the easiest way to go forward is to use [BCEL](http://commons.apache.org/bcel/) (you can get it directly from the [Maven repository](http://maven.imagej.net/index.html#nexus-search;gav%7E%7Ebcel%7E%7E%7E)), Apache's *Byte Code Engineering Library*. For that, you have to write out .class files first:
+If you want to avoid being misled by the error message (the method mentioned in the *VerifyError* is most likely to be <u>not</u> the offending one), and moreover want to know where in the bytecode the error happened, probably the easiest way to go forward is to use [BCEL](http://commons.apache.org/bcel/) (you can get it directly from the [Maven repository](https://maven.scijava.org/index.html#nexus-search;gav%7E%7Ebcel%7E%7E%7E)), Apache's *Byte Code Engineering Library*. For that, you have to write out .class files first:
 
     CtClass clazz = ...;
     ...;
