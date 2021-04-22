@@ -68,7 +68,7 @@ Lists commands for I/O operations. Most are self-explanatory. Noteworthy: <img s
 
 -   {% include bc path='Path Order Analysis'%} Produces a table and plot from morphometric statistics on the group of paths associated with each Branch Order. See [1](/plugins/snt/analysis#path-order-analysis) for details.
 -   {% include bc path='Sholl Analysis...'%} Brings up the [Sholl Analysis](/plugins/sholl-analysis) dialog with a pre-defined set of focal points the user can choose from. See [2](/plugins/snt/analysis#sholl-analysis) for details.
--   {% include bc path='Sholl Analysis (by Focal Point)...'%} Allows precise positioning of the focal point used by Sholl Analysis. See [3](/plugins/snt/analysis#sholl-analysis_.28by_Focal_Point.29) for details.
+-   {% include bc path='Sholl Analysis (by Focal Point)...'%} Allows precise positioning of the focal point used by Sholl Analysis. See [3](/plugins/snt/analysis#sholl-analysis-by-focal-point) for details.
 -   {% include bc path='Strahler Analysis'%} Conducts [Strahler Analysis](/plugins/strahler-analysis) on existing paths, producing a table of analysis results and a Strahler plot. See [4](/plugins/snt/analysis#strahler-analysis) for details.
 -   {% include bc path='Export CSV Properties...'%} Allows export of information regarding individual Paths, including (but not limited to) morphometrics, neurite compartments, linkage relationships to other Paths and start and end coordinates.
 -   {% include bc path='Measure...'%} Provides a comprehensive selection of measurements to apply to one connected component (i.e., rooted tree structure) from the Path Manager. See [5](/plugins/snt/analysis#measurements) for details.

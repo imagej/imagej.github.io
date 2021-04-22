@@ -58,7 +58,7 @@ Please choose an output file directory. The trajectory files will be written as 
 
 #### Microscope Parameters
 
-The program automatically reads the metadata shown as pixel size (micrometer in x and y) and frame rate (in seconds). If the metadata can not be read properly, the user can manually add the values. In addition, the user is asked to enter the Sigma (X) and Sigma (Y) of the Point-Spread-Function (PSF) of the microscope in pixel units (see here for [more explanation](/plugins/more-explanation)). For your convenience, our software comes with an inbuilt PSF analyzer tool, which can optionally determine the PSF of your microscope from bead images by fitting a Gaussian function.
+The program automatically reads the metadata shown as pixel size (micrometer in x and y) and frame rate (in seconds). If the metadata can not be read properly, the user can manually add the values. In addition, the user is asked to enter the Sigma (X) and Sigma (Y) of the Point-Spread-Function (PSF) of the microscope in pixel units (see here for [more explanation](/plugins/mtrack/psf)). For your convenience, our software comes with an inbuilt PSF analyzer tool, which can optionally determine the PSF of your microscope from bead images by fitting a Gaussian function.
 
 When you input any parameters, please ensure that you use decimal number formatting only.
 
@@ -94,13 +94,13 @@ Microtubules show a dynamic behavior known as dynamic instability, which is char
 
 If not forwarded by Module 1, Module 2 can be selected by {% include bc path='Plugins|MTrack|Microtubule Dynamics Analyzer'%}
 
-The panel that opens will allow the user to select individual files containing trajectories, which were generated in the first module. The trajectory will be displayed as length versus time plot, on which RANSAC fits a model of microtubule dynamics using the default parameters. Read more about the [MTrack-RANSAC parameters](/plugins/mtrack-ransac-parameters).
+The panel that opens will allow the user to select individual files containing trajectories, which were generated in the first module. The trajectory will be displayed as length versus time plot, on which RANSAC fits a model of microtubule dynamics using the default parameters. Read more about the [MTrack-RANSAC parameters](/plugins/mtrack/ransac-parameters).
 
 Clicking "Auto Compute Velocity and Frequencies" auto computes the polymerization/depolymerization velocities and catastrophe and rescue frequency for all the files. If a file is empty, a warning message will show up with a blank plot.
 
 In addition, the user can obtain microtubule length distribution for a certain time point or a time-averaged distribution. In the length distribution plot, the mean length, and the standard deviation will be displayed after fitting an exponential decay curve to the obtained distribution.
 
-<img src="/media/RansacPanel.png" width="600"/> Click here to see some examples of the [MTrack-Ransac fits](/plugins/mtrack-ransac-fits).
+<img src="/media/RansacPanel.png" width="600"/> Click here to see some examples of the [MTrack-Ransac fits](/plugins/mtrack/ransac-fits).
 
 Example
 -------

@@ -35,7 +35,7 @@ The following components are expressly or implicitly licensed this way:
 | **[imageware](Imageware)**                                      | Implicit                                                 |
 | **[MIJ](/plugins/miji)**                                        | http://bigwww.epfl.ch/sage/soft/mij/#term                |
 | **[MosaicJ](/plugins/mosaicj)**                                 | http://bigwww.epfl.ch/thevenaz/mosaicj/#LegalBlurb       |
-| **[PointPicker](/plugins/pointpicker)**                         | Implicit                                                 |
+| **[PointPicker](/plugins/point-picker)**                        | Implicit                                                 |
 | **[Shepp-Logan Phantom](/plugins/shepp-logan-phantom)**         | http://bigwww.epfl.ch/thevenaz/shepplogan/#LegalBlurb    |
 | **[Snakuscule](/plugins/snakuscule)**                           | http://bigwww.epfl.ch/thevenaz/snakuscule/#LegalBlurb    |
 | **[StackReg](/plugins/stackreg)**                               | http://bigwww.epfl.ch/thevenaz/stackreg/#LegalBlurb      |
