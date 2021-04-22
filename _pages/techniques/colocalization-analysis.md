@@ -85,7 +85,7 @@ The first, and best known, temporal cross-correlation technique is [fluorescence
 
 ### Object-based colocalization
 
-In object-based colocalization analyses, the image is first [segmented](/techniques/segmentation) to separate the objects of interest from the background for both channels. Colocalization is then evaluated using these binary images, generally by comparing the area/volume of the intersection of the two images to the area/volume of: a) the union of the binary images, b) the difference of the binary images, c) one of the binary images unaltered, or d) a combination of these three. What you compare the intersection against will depend on the exact question being asked. Being able to tailor the analysis to your specific circumstances is one of the biggest advantages to object based-analysis. Additionally, basic object-based analyses can be performed easily without use of a plugin (though some are available to streamline the process): Following [segmentation](/techniques/segmentation) of both images, the Image Calculator (Process > Image Calculator...) can be used to generate the intersection (AND operator), difference (difference or subtract operator), and the union (OR or add operator). Once these have be created, they can be analyzed using [particle analysis](/cookbook/particle-analysis) to determine the area/volume, or analysis can be redirected to the original intensity data (Analyze > Set Measurements...) to evaluate the original pixel density within the particles. This type of object-based colocalization does require that there is overlap between your objects of interest from each channel. However, plugins have been developed that will perform distance analysis on the original binary images, removing the requirement for overlap between the two channels. 
+In object-based colocalization analyses, the image is first [segmented](/techniques/segmentation) to separate the objects of interest from the background for both channels. Colocalization is then evaluated using these binary images, generally by comparing the area/volume of the intersection of the two images to the area/volume of: a) the union of the binary images, b) the difference of the binary images, c) one of the binary images unaltered, or d) a combination of these three. What you compare the intersection against will depend on the exact question being asked. Being able to tailor the analysis to your specific circumstances is one of the biggest advantages to object based-analysis. Additionally, basic object-based analyses can be performed easily without use of a plugin (though some are available to streamline the process) by doing the following: After [segmentation](/techniques/segmentation) of both images, the Image Calculator (Process > Image Calculator...) can be used to generate the intersection (AND operator), difference (difference or subtract operator), and the union (add or OR operator). Once these have been created, they can be analyzed using [particle analysis](/cookbook/particle-analysis) to determine the area/volume, or analysis can be redirected to the original intensity data (Analyze > Set Measurements...) to evaluate the original pixel density within the particles. Generally, this type of object-based colocalization does require that there is overlap between your objects of interest from each channel. However, plugins have been developed that will perform distance analysis on the original binary images, removing the requirement for overlap between the two channels. 
 
 ### SMLM colocalization
 
@@ -162,7 +162,7 @@ This first sample data set that has very good colocalization because the 2 subun
 
 [colocsample1bRGB\_BG.tif](https://fiji.sc/samples/colocsample1bRGB_BG.tif): Use the "Image > Color > Split Channels" menu command to get a separate z stack for the 2 dyes (you can throw the blue one away!).
 
-In addition to this dataset, Fiji comes pre-loaded with many sample images found under the "File > Open Samples" menu. Of these, there are a few multi-channel images that can be used as inputs in Colocalization plugins (though they don't  necessarily have any spatial correlation between the channels):
+In addition to this dataset, Fiji comes pre-loaded with many sample images found under the "File > Open Samples" menu. Of these, there are a few multi-channel images that can be used as inputs in Colocalization plugins (though they don't necessarily have any spatial correlation between the channels):
 
 - Confocal series
 - Fluorescent Cells
@@ -209,6 +209,7 @@ We need to think carefully about the correct or adequate spatial resolution in x
 
 ## Further reading
 
+-   [Image co-localization – co-occurrence versus correlation](https://journals.biologists.com/jcs/article/131/3/jcs211847/77151/Image-co-localization-co-occurrence-versus).
 -   [A practical guide to evaluating colocalization in biological microscopy](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3074624/?report=printable).
 
 ## Older colocalization plugins
