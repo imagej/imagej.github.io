@@ -4,7 +4,7 @@ author:
 description: This page demonstrates how to add a details box to your page.
 ---
 ## Uploading an Image
-If the image that you are seeking to add to your page has not yet been utilized on the site, it will need to be uploaded to a repository within the site. You can do so by uploading your image file within the [media folder](https://github.com/imagej/imagej.github.io/tree/master/media) of the [repository](https://github.com/imagej/imagej.github.io).
+If the image that you are seeking to add to your page has not yet been utilized on the site, it will need to be uploaded to a repository within the site. You can do so by uploading your image file within the [media folder](https://github.com/imagej/imagej.github.io/tree/main/media) of the [repository](https://github.com/imagej/imagej.github.io).
 
 Once your image has been uploaded, you can follow the usage instructions below to add it to your page.
 

@@ -17,7 +17,7 @@ If you do not need to create a new page and would like to make changes to an exi
 
 <br>
 
-1. Navigate to the [_pages section](https://github.com/imagej/imagej.github.io/tree/master/_pages) of the `imagej.github.io` repository.
+1. Navigate to the [pages section](https://github.com/imagej/imagej.github.io/tree/main/_pages) of the `imagej.github.io` repository.
 Click `Add file` then  `Create new file` from the drop-down.
 
 2. Add a name for your file. **Note: this is not the page title;** the page title will be applied in the next section, front matter. File names should be lowercase, avoid symbols, and contain no spaces (use underscores or dashes instead, `_` `-`).
@@ -138,7 +138,7 @@ From here, the [front matter](/help/editing#add-the-pages-front-matter) and cont
 
 * Images and other media should be stored in `/path/to/imagej.github.io/media`.
 
-* Regularly save your progress with commits. The process of commiting your changes pushes your edits to the master branch of the repository hosted on `GitHub`. The process of commiting is described below.
+* Regularly save your progress with commits. The process of commiting your changes pushes your edits to the main branch of the repository hosted on `GitHub`. The process of commiting is described below.
 
 ## Pushing, pulling, and commiting with Git
 
@@ -146,6 +146,6 @@ Once you are ready to publish your your new page you will need to add, commit, a
 
 1. `git add path/to/your-page-name.md` This step stages your changes to be commited
 2. `git commit path/to/your-page-name.md` Note: you will not be prompted to enter a commit message. Our usership uses imperative tense, i.e. "Add new page xzy"
-3. `git push` Your new page or edits will not be pushed to the master branch of the repository.
+3. `git push` Your new page or edits will not be pushed to the main branch of the repository.
 
-[This guide](https://rogerdudler.github.io/git-guide/) provides further explanations on the above steps, as well as how to keep your local repository up-to-date with the master with `git pull`.
+[This guide](https://rogerdudler.github.io/git-guide/) provides further explanations on the above steps, as well as how to keep your local repository up-to-date with the remote with `git pull`.
