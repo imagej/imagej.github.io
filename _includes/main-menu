@@ -1,218 +1,217 @@
 <div class="menu">
 <h3>ImageJ Documentation</h3>
 <ul>
-{% include menu-section title="About" link="/about" %}
-  {% include menu-item title="Usage" link="/about/usage" %}
-  {% include menu-item title="Contributors" link="/about/contributors" %}
-  {% include menu-item title="Governance" link="/about/governance" %}
+{%- include menu-section title="About" link="/about" -%}
+  {%- include menu-item title="Usage" link="/about/usage" -%}
+  {%- include menu-item title="Contributors" link="/about/contributors" -%}
+  {%- include menu-item title="Governance" link="/about/governance" -%}
 
-  {% include menu-section title="Licensing" link="/licensing" %}
-    {% include menu-section title="Open Source" %}
-      {% include menu-item title="Apache" link="/licensing/apache" %}
-      {% include menu-item title="BSD" link="/licensing/bsd" %}
-      {% include menu-item title="GPL" link="/licensing/gpl" %}
-      {% include menu-item title="LGPL" link="/licensing/lgpl" %}
-      {% include menu-item title="MIT" link="/licensing/mit" %}
-      {% include menu-item title="Public domain" link="/licensing/public-domain" %}
-    {% include menu-section-end %} <!-- About/Licensing/Open Source -->
+  {%- include menu-section title="Licensing" link="/licensing" -%}
+    {%- include menu-section title="Open Source" -%}
+      {%- include menu-item title="Apache" link="/licensing/apache" -%}
+      {%- include menu-item title="BSD" link="/licensing/bsd" -%}
+      {%- include menu-item title="GPL" link="/licensing/gpl" -%}
+      {%- include menu-item title="LGPL" link="/licensing/lgpl" -%}
+      {%- include menu-item title="MIT" link="/licensing/mit" -%}
+      {%- include menu-item title="Public domain" link="/licensing/public-domain" -%}
+    {%- include menu-section-end -%} <!-- About/Licensing/Open Source -->
 
-    {% include menu-section title="Proprietary" %}
-      {% include menu-item title="BIG" link="/licensing/big" %}
-    {% include menu-section-end %} <!-- About/Licensing/Proprietary -->
-  {% include menu-section-end %} <!-- About/Licensing -->
+    {%- include menu-section title="Proprietary" -%}
+      {%- include menu-item title="BIG" link="/licensing/big" -%}
+    {%- include menu-section-end -%} <!-- About/Licensing/Proprietary -->
+  {%- include menu-section-end -%} <!-- About/Licensing -->
 
-  {% include menu-item title="Funding" link="/about/funding" %}
-  {% include menu-item title="Citing" link="/about/citing" %}
-  {% include menu-item title="Contributing" link="/about/contributing" %}
+  {%- include menu-item title="Funding" link="/about/funding" -%}
+  {%- include menu-item title="Citing" link="/about/citing" -%}
+  {%- include menu-item title="Contributing" link="/about/contributing" -%}
 
-  {% include menu-section title="Fiji" link="/fiji" %}
-    {% include menu-item title="Using Fiji" link="/fiji/using" %}
-    {% include menu-item title="Featured Fiji Projects" link="/fiji/featured-projects" %}
-    {% include menu-item title="Publications" link="/fiji/publications" %}
-    {% include menu-item title="Links" link="/fiji/links" %}
+  {%- include menu-section title="Fiji" link="/fiji" -%}
+    {%- include menu-item title="Using Fiji" link="/fiji/using" -%}
+    {%- include menu-item title="Featured Fiji Projects" link="/fiji/featured-projects" -%}
+    {%- include menu-item title="Publications" link="/fiji/publications" -%}
+    {%- include menu-item title="Links" link="/fiji/links" -%}
 
-    {% include menu-section title="Developing Fiji" link="/fiji/developing" %}
-      {% include menu-item title="Building Fiji from source" link="/fiji/building-from-source" %}
-      {% include menu-item title="Contribution requirements" link="/fiji/contribution-requirements" %}
-    {% include menu-section-end %} <!-- About/Fiji/Developing Fiji -->
-  {% include menu-section-end %} <!-- About/Fiji -->
-{% include menu-section-end %} <!-- About -->
+    {%- include menu-section title="Developing Fiji" link="/fiji/developing" -%}
+      {%- include menu-item title="Building Fiji from source" link="/fiji/building-from-source" -%}
+      {%- include menu-item title="Contribution requirements" link="/fiji/contribution-requirements" -%}
+    {%- include menu-section-end -%} <!-- About/Fiji/Developing Fiji -->
+  {%- include menu-section-end -%} <!-- About/Fiji -->
+{%- include menu-section-end -%} <!-- About -->
 
-{% include menu-section title="Plugins" link="/plugins" %}
-  {% include menu-item title="Plugin Grid" link="/plugin_grid" %}
-{% include menu-section-end %} <!-- Plugins -->
+{%- include menu-section title="Plugins" link="/plugins" -%}
+  {%- include menu-item title="Plugin Grid" link="/plugin_grid" -%}
+{%- include menu-section-end -%} <!-- Plugins -->
 
-{% include menu-section title="Learn" link="/learn" %}
-  {% include menu-item title="Getting Started" link="/learn/getting-started" %}
-  {% include menu-item title="User Guides" link="/learn/user-guides" %}
-  {% include menu-item title="Tutorials" link="/tutorials" %}
-  {% include menu-item title="Tips and Tricks" link="/learn/tips-and-tricks" %}
-  {% include menu-item title="Presentations" link="/learn/presentations" %}
+{%- include menu-section title="Learn" link="/learn" -%}
+  {%- include menu-item title="Getting Started" link="/learn/getting-started" -%}
+  {%- include menu-item title="User Guides" link="/learn/user-guides" -%}
+  {%- include menu-item title="Tutorials" link="/tutorials" -%}
+  {%- include menu-item title="Tips and Tricks" link="/learn/tips-and-tricks" -%}
+  {%- include menu-item title="Presentations" link="/learn/presentations" -%}
 
-  {% include menu-section title="Supported Platforms" link="/platforms" %}
-    {% include menu-item title="Windows" link="/platforms/windows" %}
-    {% include menu-item title="MacOS" link="/platforms/macos" %}
-    {% include menu-item title="Linux" link="/platforms/linux" %}
-    {% include menu-item title="Raspberry Pi" link="/platforms/pi" %}
-    {% include menu-item title="Android" link="/platforms/android" %}
-  {% include menu-section-end %} <!-- Learn/Supported Platforms -->
+  {%- include menu-section title="Supported Platforms" link="/platforms" -%}
+    {%- include menu-item title="Windows" link="/platforms/windows" -%}
+    {%- include menu-item title="MacOS" link="/platforms/macos" -%}
+    {%- include menu-item title="Linux" link="/platforms/linux" -%}
+    {%- include menu-item title="Raspberry Pi" link="/platforms/pi" -%}
+    {%- include menu-item title="Android" link="/platforms/android" -%}
+  {%- include menu-section-end -%} <!-- Learn/Supported Platforms -->
 
-  {% include menu-section title="File Formats" link="/formats" %}
-    {% include menu-item title="Bio-Formats" link="/formats/bio-formats" %}
-    {% include menu-item title="Video formats" link="/formats/video" %}
-    {% include menu-item title="QuickTime" link="/formats/quicktime" %}
-    {% include menu-item title="TIFF" link="/formats/tiff" %}
-    {% include menu-item title="PDF" link="/formats/pdf" %}
-    {% include menu-item title="DICOM" link="/formats/dicom" %}
-    {% include menu-item title="Zeiss LSM" link="/formats/lsm" %}
-    {% include menu-item title="Olympus VSI" link="/formats/olympus" %}
-    {% include menu-item title="Opera Flex" link="/formats/lurawave" %}
-    {% include menu-item title="FIB-SEM" link="/formats/fib-sem" %}
-  {% include menu-section-end %} <!-- Learn/File Formats -->
+  {%- include menu-section title="File Formats" link="/formats" -%}
+    {%- include menu-item title="Bio-Formats" link="/formats/bio-formats" -%}
+    {%- include menu-item title="Video formats" link="/formats/video" -%}
+    {%- include menu-item title="QuickTime" link="/formats/quicktime" -%}
+    {%- include menu-item title="TIFF" link="/formats/tiff" -%}
+    {%- include menu-item title="PDF" link="/formats/pdf" -%}
+    {%- include menu-item title="DICOM" link="/formats/dicom" -%}
+    {%- include menu-item title="Zeiss LSM" link="/formats/lsm" -%}
+    {%- include menu-item title="Olympus VSI" link="/formats/olympus" -%}
+    {%- include menu-item title="Opera Flex" link="/formats/lurawave" -%}
+    {%- include menu-item title="FIB-SEM" link="/formats/fib-sem" -%}
+  {%- include menu-section-end -%} <!-- Learn/File Formats -->
 
-  {% include menu-section title="Cookbook" link="/cookbook" %}
-    {% include menu-item title="Annotating Images" link="/cookbook/annotating-images" %}
-    {% include menu-item title="Color Image Processing" link="/cookbook/color-image-processing" %}
-    {% include menu-item title="Deconvolution" link="/cookbook/deconvolution" %}
-    {% include menu-item title="Image Intensity Processing" link="/cookbook/image-intensity-processing" %}
-    {% include menu-item title="Particle Analysis" link="/cookbook/particle-analysis" %}
-    {% include menu-item title="Saving and Exporting" link="/cookbook/saving-and-exporting" %}
-    {% include menu-item title="Stack-slice Manipulations" link="/cookbook/stack-slice-manipulations" %}
-    {% include menu-item title="T-functions" link="/cookbook/t-functions" %}
-    {% include menu-item title="Z-functions" link="/cookbook/z-functions" %}
-  {% include menu-section-end %} <!-- Learn/Cookbook -->
+  {%- include menu-section title="Cookbook" link="/cookbook" -%}
+    {%- include menu-item title="Annotating Images" link="/cookbook/annotating-images" -%}
+    {%- include menu-item title="Color Image Processing" link="/cookbook/color-image-processing" -%}
+    {%- include menu-item title="Deconvolution" link="/cookbook/deconvolution" -%}
+    {%- include menu-item title="Image Intensity Processing" link="/cookbook/image-intensity-processing" -%}
+    {%- include menu-item title="Particle Analysis" link="/cookbook/particle-analysis" -%}
+    {%- include menu-item title="Saving and Exporting" link="/cookbook/saving-and-exporting" -%}
+    {%- include menu-item title="Stack-slice Manipulations" link="/cookbook/stack-slice-manipulations" -%}
+    {%- include menu-item title="T-functions" link="/cookbook/t-functions" -%}
+    {%- include menu-item title="Z-functions" link="/cookbook/z-functions" -%}
+  {%- include menu-section-end -%} <!-- Learn/Cookbook -->
 
-  {% include menu-section title="Techniques" link="/techniques" %}
-    {% include menu-item title="Colocalization" link="/techniques/colocalization-analysis" %}
-    {% include menu-item title="Deconvolution" link="/techniques/deconvolution" %}
-    {% include menu-item title="Registration" link="/techniques/registration" %}
-    {% include menu-item title="Segmentation" link="/techniques/segmentation" %}
-    {% include menu-item title="Tracking" link="/techniques/tracking" %}
-    {% include menu-item title="Visualization" link="/techniques/visualization" %}
-  {% include menu-section-end %} <!-- Learn/Techniques -->
+  {%- include menu-section title="Techniques" link="/techniques" -%}
+    {%- include menu-item title="Colocalization" link="/techniques/colocalization-analysis" -%}
+    {%- include menu-item title="Deconvolution" link="/techniques/deconvolution" -%}
+    {%- include menu-item title="Registration" link="/techniques/registration" -%}
+    {%- include menu-item title="Segmentation" link="/techniques/segmentation" -%}
+    {%- include menu-item title="Tracking" link="/techniques/tracking" -%}
+    {%- include menu-item title="Visualization" link="/techniques/visualization" -%}
+  {%- include menu-section-end -%} <!-- Learn/Techniques -->
 
-  {% include menu-section title="Scripting" link="/scripting" %}
-    {% include menu-item title="User Input" link="/scripting/user-input" %}
-    {% include menu-item title="Scripting Basics" link="/scripting/basics" %}
-    {% include menu-item title="Using Javadocs" link="/scripting/how-to-use-the-javadoc" %}
-    {% include menu-item title="Batch Processing" link="/scripting/batch" %}
-    {% include menu-item title="Script Editor" link="/scripting/script-editor" %}
-    {% include menu-item title="Auto Import" link="/scripting/auto-imports" %}
-    {% include menu-item title="Templates" link="/scripting/templates" %}
-    {% include menu-item title="Running Headlessly" link="/scripting/headless" %}
-    {% include menu-item title="Scripting Comparisons" link="/scripting/comparisons" %}
-    {% include menu-item title="Toolbox" link="/scripting/toolbox" %}
-    {% include menu-item title="Multithreading with Clojure" link="/scripting/multithreaded-image-processing-in-clojure" %}
-    {% include menu-item title="Multithreading in Javascript" link="/scripting/multithreaded-image-processing-in-javascript" %}
-    {% include menu-item title="Chess in Jython" link="/scripting/chess" %}
-  {% include menu-section-end %} <!-- Learn/Scripting -->
+  {%- include menu-section title="Scripting" link="/scripting" -%}
+    {%- include menu-item title="User Input" link="/scripting/user-input" -%}
+    {%- include menu-item title="Scripting Basics" link="/scripting/basics" -%}
+    {%- include menu-item title="Using Javadocs" link="/scripting/how-to-use-the-javadoc" -%}
+    {%- include menu-item title="Batch Processing" link="/scripting/batch" -%}
+    {%- include menu-item title="Script Editor" link="/scripting/script-editor" -%}
+    {%- include menu-item title="Auto Import" link="/scripting/auto-imports" -%}
+    {%- include menu-item title="Templates" link="/scripting/templates" -%}
+    {%- include menu-item title="Running Headlessly" link="/scripting/headless" -%}
+    {%- include menu-item title="Scripting Comparisons" link="/scripting/comparisons" -%}
+    {%- include menu-item title="Toolbox" link="/scripting/toolbox" -%}
+    {%- include menu-item title="Multithreading with Clojure" link="/scripting/multithreaded-image-processing-in-clojure" -%}
+    {%- include menu-item title="Multithreading in Javascript" link="/scripting/multithreaded-image-processing-in-javascript" -%}
+    {%- include menu-item title="Chess in Jython" link="/scripting/chess" -%}
+  {%- include menu-section-end -%} <!-- Learn/Scripting -->
 
-  {% include menu-section title="Languages" %}
-    {% include menu-item title="BeanShell Scripting" link="/scripting/beanshell" %}
-    {% include menu-item title="Groovy Scripting" link="/scripting/groovy" %}
-    {% include menu-item title="ImageJ Macro" link="/scripting/macro" %}
-    {% include menu-item title="JavaScript" link="/scripting/javascript" %}
-    {% include menu-item title="Batch Processing" link="/scripting/batch" %}
-    {% include menu-item title="Lisp (Clojure)" link="/scripting/clojure" %}
-    {% include menu-item title="MATLAB" link="/scripting/matlab" %}
-    {% include menu-item title="Python (Jython)" link="/scripting/jython" %}
-    {% include menu-item title="R (Renjin)" link="/scripting/renjin" %}
-    {% include menu-item title="Ruby (JRuby)" link="/scripting/jruby" %}
-    {% include menu-item title="Scala Scripting" link="/scripting/scala" %}
-  {% include menu-section-end %} <!-- Learn/Languages -->
-{% include menu-section-end %} <!-- Learn -->
+  {%- include menu-section title="Languages" -%}
+    {%- include menu-item title="BeanShell Scripting" link="/scripting/beanshell" -%}
+    {%- include menu-item title="Groovy Scripting" link="/scripting/groovy" -%}
+    {%- include menu-item title="ImageJ Macro" link="/scripting/macro" -%}
+    {%- include menu-item title="JavaScript" link="/scripting/javascript" -%}
+    {%- include menu-item title="Batch Processing" link="/scripting/batch" -%}
+    {%- include menu-item title="Lisp (Clojure)" link="/scripting/clojure" -%}
+    {%- include menu-item title="MATLAB" link="/scripting/matlab" -%}
+    {%- include menu-item title="Python (Jython)" link="/scripting/jython" -%}
+    {%- include menu-item title="R (Renjin)" link="/scripting/renjin" -%}
+    {%- include menu-item title="Ruby (JRuby)" link="/scripting/jruby" -%}
+    {%- include menu-item title="Scala Scripting" link="/scripting/scala" -%}
+  {%- include menu-section-end -%} <!-- Learn/Languages -->
+{%- include menu-section-end -%} <!-- Learn -->
 
-{% include menu-section title="Development" link="/develop" %}
-  {% include menu-item title="Philosophy" link="/develop/philosophy" %}
-  {% include menu-item title="Architecture" link="/develop/architecture" %}
-  {% include menu-item title="Source code" link="/develop/source" %}
-  {% include menu-item title="Project management" link="/develop/project-management" %}
-  {% include menu-item title="Coding style" link="/develop/coding-style" %}
-  {% include menu-item title="Debugging" link="/develop/debugging" %}
-  {% include menu-item title="Wish list" link="/develop/wish-list" %}
+{%- include menu-section title="Development" link="/develop" -%}
+  {%- include menu-item title="Philosophy" link="/develop/philosophy" -%}
+  {%- include menu-item title="Architecture" link="/develop/architecture" -%}
+  {%- include menu-item title="Source code" link="/develop/source" -%}
+  {%- include menu-item title="Project management" link="/develop/project-management" -%}
+  {%- include menu-item title="Coding style" link="/develop/coding-style" -%}
+  {%- include menu-item title="Debugging" link="/develop/debugging" -%}
+  {%- include menu-item title="Wish list" link="/develop/wish-list" -%}
 
-  {% include menu-section title="Tools" %}
-    {% include menu-item title="GitHub" link="/develop/github" %}
-    {% include menu-item title="Maven" link="/develop/maven" %}
-    {% include menu-item title="IDEs" link="/develop/ides" %}
-    {% include menu-item title="Travis" link="/develop/travis" %}
-    {% include menu-item title="AppVeyor" link="/develop/appveyor" %}
-    {% include menu-item title="Dotfiles" link="/develop/dotfiles" %}
-  {% include menu-section-end %} <!-- Development/Tools -->
+  {%- include menu-section title="Tools" -%}
+    {%- include menu-item title="GitHub" link="/develop/github" -%}
+    {%- include menu-item title="Maven" link="/develop/maven" -%}
+    {%- include menu-item title="IDEs" link="/develop/ides" -%}
+    {%- include menu-item title="Travis" link="/develop/travis" -%}
+    {%- include menu-item title="AppVeyor" link="/develop/appveyor" -%}
+    {%- include menu-item title="Dotfiles" link="/develop/dotfiles" -%}
+  {%- include menu-section-end -%} <!-- Development/Tools -->
 
-  {% include menu-section title="Guides" %}
-    {% include menu-item title="Writing plugins" link="/develop/plugins" %}
-    {% include menu-item title="ImageJ Ops" link="/libs/imagej-ops" %}
-    {% include menu-item title="Contributing to a plugin" link="/develop/improving-the-code" %}
-    {% include menu-item title="Distributing your plugins" link="/develop/distributing" %}
-    {% include menu-item title="Development lifecycle" link="/develop/releasing" %}
-    {% include menu-item title="Building a POM" link="/develop/building-a-pom" %}
-    {% include menu-divider %}
-    {% include menu-item title="Developing with Eclipse" link="/develop/eclipse" %}
-    {% include menu-item title="Hands-on debugging" link="/develop/debugging-exercises" %}
-    {% include menu-item title="Adding new ops" link="/develop/writing-ops" %}
-    {% include menu-item title="Adding new formats" link="/develop/formats" %}
-    {% include menu-item title="Using native libraries" link="/develop/native-libraries" %}
-    {% include menu-item title="Tips for developers" link="/develop/tips" %}
-    {% include menu-item title="Tips for C++ developers" link="/develop/cpp-tips" %}
-    {% include menu-item title="ImageJ 1.x plugins" link="/develop/ij1-plugins" %}
-    {% include menu-item title="Versioning" link="/develop/versioning" %}
-    {% include menu-item title="Logging" link="/develop/logging" %}
-    {% include menu-item title="Uber-JARs" link="/develop/uber-jars" %}
-  {% include menu-section-end %} <!-- Development/Guides -->
+  {%- include menu-section title="Guides" -%}
+    {%- include menu-item title="Writing plugins" link="/develop/plugins" -%}
+    {%- include menu-item title="ImageJ Ops" link="/libs/imagej-ops" -%}
+    {%- include menu-item title="Contributing to a plugin" link="/develop/improving-the-code" -%}
+    {%- include menu-item title="Distributing your plugins" link="/develop/distributing" -%}
+    {%- include menu-item title="Development lifecycle" link="/develop/releasing" -%}
+    {%- include menu-item title="Building a POM" link="/develop/building-a-pom" -%}
+    {%- include menu-divider -%}
+    {%- include menu-item title="Developing with Eclipse" link="/develop/eclipse" -%}
+    {%- include menu-item title="Hands-on debugging" link="/develop/debugging-exercises" -%}
+    {%- include menu-item title="Adding new ops" link="/develop/writing-ops" -%}
+    {%- include menu-item title="Adding new formats" link="/develop/formats" -%}
+    {%- include menu-item title="Using native libraries" link="/develop/native-libraries" -%}
+    {%- include menu-item title="Tips for developers" link="/develop/tips" -%}
+    {%- include menu-item title="Tips for C++ developers" link="/develop/cpp-tips" -%}
+    {%- include menu-item title="ImageJ 1.x plugins" link="/develop/ij1-plugins" -%}
+    {%- include menu-item title="Versioning" link="/develop/versioning" -%}
+    {%- include menu-item title="Logging" link="/develop/logging" -%}
+    {%- include menu-item title="Uber-JARs" link="/develop/uber-jars" -%}
+  {%- include menu-section-end -%} <!-- Development/Guides -->
 
-  {% include menu-section title="Git" link="/develop/git" %}
-    {% include menu-item title="Git in Eclipse (EGit)" link="/develop/git/eclipse" %}
-    {% include menu-item title="Git mini howto" link="/develop/git/mini-howto" %}
-    {% include menu-item title="Git workshop" link="/develop/git/workshop" %}
-    {% include menu-item title="Git conflicts" link="/develop/git/conflicts" %}
-    {% include menu-item title="Git topic branches" link="/develop/git/topic-branches" %}
-    {% include menu-item title="Git notes" link="/develop/git/notes" %}
-    {% include menu-item title="Git reflogs" link="/develop/git/reflogs" %}
-    {% include menu-item title="Git submodules" link="/develop/git/submodules" %}
-    {% include menu-item title="How to pinpoint regressions" link="/develop/git/pinpoint-regressions" %}
-    {% include menu-item title="How to publish a git repository" link="/develop/git/publish-a-repository" %}
-    {% include menu-item title="How to extract a subproject" link="extract-a-subproject" %}
-  {% include menu-section-end %} <!-- Development/Git -->
+  {%- include menu-section title="Git" link="/develop/git" -%}
+    {%- include menu-item title="Git in Eclipse (EGit)" link="/develop/git/eclipse" -%}
+    {%- include menu-item title="Git mini howto" link="/develop/git/mini-howto" -%}
+    {%- include menu-item title="Git workshop" link="/develop/git/workshop" -%}
+    {%- include menu-item title="Git conflicts" link="/develop/git/conflicts" -%}
+    {%- include menu-item title="Git topic branches" link="/develop/git/topic-branches" -%}
+    {%- include menu-item title="Git notes" link="/develop/git/notes" -%}
+    {%- include menu-item title="Git reflogs" link="/develop/git/reflogs" -%}
+    {%- include menu-item title="Git submodules" link="/develop/git/submodules" -%}
+    {%- include menu-item title="How to pinpoint regressions" link="/develop/git/pinpoint-regressions" -%}
+    {%- include menu-item title="How to publish a git repository" link="/develop/git/publish-a-repository" -%}
+    {%- include menu-item title="How to extract a subproject" link="extract-a-subproject" -%}
+  {%- include menu-section-end -%} <!-- Development/Git -->
 
-  {% include menu-section title="ImgLib2" link="/imglib2" %}
-    {% include menu-item title="ImgLib2 Benchmarks" link="/imglib2/benchmarks" %}
-    {% include menu-item title="FAQ" link="/imglib2/faq" %}
+  {%- include menu-section title="ImgLib2" link="/imglib2" -%}
+    {%- include menu-item title="ImgLib2 Benchmarks" link="/imglib2/benchmarks" -%}
+    {%- include menu-item title="FAQ" link="/imglib2/faq" -%}
 
-    {% include menu-section title="Tutorials" %}
-      {% include menu-item title="Getting Started" link="/imglib2/getting-started" %}
-      {% include menu-item title="Accessors" link="/imglib2/accessors" %}
-      {% include menu-item title="Accessibles" link="/imglib2/accessibles" %}
-      {% include menu-item title="Examples" link="/imglib2/examples" %}
-      {% include menu-item title="Introductory Workshop" link="/imglib2/workshop-introductory" %}
-      {% include menu-item title="Advanced Programming Workshop" link="/imglib2/workshop-advanced" %}
-      {% include menu-item title="Into ImgLib - Generic Image Processing in Java" link="/imglib1/workshop" %}
-      {% include menu-item title="Creating Imglib2 images in MATLAB" link="/imglib2/matlab" %}
-    {% include menu-section-end %} <!-- Development/ImgLib2/Tutorials -->
+    {%- include menu-section title="Tutorials" -%}
+      {%- include menu-item title="Getting Started" link="/imglib2/getting-started" -%}
+      {%- include menu-item title="Accessors" link="/imglib2/accessors" -%}
+      {%- include menu-item title="Accessibles" link="/imglib2/accessibles" -%}
+      {%- include menu-item title="Examples" link="/imglib2/examples" -%}
+      {%- include menu-item title="Introductory Workshop" link="/imglib2/workshop-introductory" -%}
+      {%- include menu-item title="Advanced Programming Workshop" link="/imglib2/workshop-advanced" -%}
+      {%- include menu-item title="Into ImgLib - Generic Image Processing in Java" link="/imglib1/workshop" -%}
+      {%- include menu-item title="Creating Imglib2 images in MATLAB" link="/imglib2/matlab" -%}
+    {%- include menu-section-end -%} <!-- Development/ImgLib2/Tutorials -->
 
-    {% include menu-section title="Development" %}
-      {% include menu-item title="Developing ImgLib2" link="/imglib2/developing" %}
-      {% include menu-item title="ImgLib2 Discussion" link="/imglib2/discussion" %}
-    {% include menu-section-end %} <!-- Development/ImgLib2/Development -->
-  {% include menu-section-end %} <!-- Development/ImgLib2 -->
-{% include menu-section-end %} <!-- Development -->
+    {%- include menu-section title="Development" -%}
+      {%- include menu-item title="Developing ImgLib2" link="/imglib2/developing" -%}
+      {%- include menu-item title="ImgLib2 Discussion" link="/imglib2/discussion" -%}
+    {%- include menu-section-end -%} <!-- Development/ImgLib2/Development -->
+  {%- include menu-section-end -%} <!-- Development/ImgLib2 -->
+{%- include menu-section-end -%} <!-- Development -->
 
-{% include menu-section title="Help" link="/help" %}
-  {% include menu-item title="FAQ" link="/help/faq" %}
-  {% include menu-item title="Troubleshooting" link="/help/troubleshooting" %}
-  {% include menu-item title="How to write bug reports" link="/help/bug-reporting-best-practices" %}
-  {% include menu-item title="Report an issue" link="/help/report-a-bug" %}
-  {% include menu-item title="Editing the ImageJ Wiki" link="/help/editing" %}
-  {% include menu-section title="Update Sites" link="/update-sites"  %}
-    {% include menu-item title="Following an update site" link="/update-sites/following" %}
-    {% include menu-item title="Creating your own update site" link="/update-sites/setup" %}
-    {% include menu-item title="ToS for personal update sites" link="/update-sites/tos" %}
-    {% include menu-item title="Automatically upload your site" link="/update-sites/automatic-uploads" %}
-    {% include menu-item title="Uploading to core update sites" link="/update-sites/core-uploads" %}
-    {% include menu-item title="List of update sites" link="/list-of-update-sites" %}
-    {% include menu-item title="Update site FAQ" link="/update-sites/faq" %}
-  {% include menu-section-end %} <!-- Help/Update Sites -->
-{% include menu-section-end %} <!-- Help -->
-
+{%- include menu-section title="Help" link="/help" -%}
+  {%- include menu-item title="FAQ" link="/help/faq" -%}
+  {%- include menu-item title="Troubleshooting" link="/help/troubleshooting" -%}
+  {%- include menu-item title="How to write bug reports" link="/help/bug-reporting-best-practices" -%}
+  {%- include menu-item title="Report an issue" link="/help/report-a-bug" -%}
+  {%- include menu-item title="Editing the ImageJ Wiki" link="/help/editing" -%}
+  {%- include menu-section title="Update Sites" link="/update-sites"  -%}
+    {%- include menu-item title="Following an update site" link="/update-sites/following" -%}
+    {%- include menu-item title="Creating your own update site" link="/update-sites/setup" -%}
+    {%- include menu-item title="ToS for personal update sites" link="/update-sites/tos" -%}
+    {%- include menu-item title="Automatically upload your site" link="/update-sites/automatic-uploads" -%}
+    {%- include menu-item title="Uploading to core update sites" link="/update-sites/core-uploads" -%}
+    {%- include menu-item title="List of update sites" link="/list-of-update-sites" -%}
+    {%- include menu-item title="Update site FAQ" link="/update-sites/faq" -%}
+  {%- include menu-section-end -%} <!-- Help/Update Sites -->
+{%- include menu-section-end -%} <!-- Help -->
 </ul>
 </div>
