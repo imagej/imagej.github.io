@@ -27,12 +27,9 @@ layout: home
                 <div class="col-12 col-12-medium">
                     <header class="major">
                         <ul class = "actions special">
+                            <li><a href="/downloads" class="button icon solid fa-download">Download</a></li>
                             <li><a href="/learn" class="button icon solid fa-cogs">Use</a></li>
                             <li><a href="/develop" class="button icon solid fa-wrench">Extend</a></li>
-                            <li><a href="/search" class="button icon solid fa-search">Search</a></li>
-                        </ul>
-                        <ul class = "actions special">
-                            <li><a href="/downloads" class="button icon solid fa-download">Download</a></li>
                         </ul>
                         <h2>Why use ImageJ/FIJI?</h2>
                         <div class="col-6 col-12-medium imp-medium">

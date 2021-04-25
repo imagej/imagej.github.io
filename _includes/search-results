@@ -1,0 +1,4 @@
+<div id="search-results">
+  <div id="search-hits"></div>
+  <div id="pagination"></div>
+</div>

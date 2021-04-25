@@ -4,6 +4,7 @@
 		<title>{{page.title}}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="shortcut icon" href="./favicon.png">
 		<link rel="stylesheet" href="/assets/css/main.css" />
 		<link rel="stylesheet" href="/assets/css/menus.css" />
 		<link rel="stylesheet" href="/assets/css/infoboxes.css" />
@@ -13,13 +14,14 @@
 		<link rel="stylesheet" href="/assets/css/lightbox.min.css" />
 		<link rel="stylesheet" href="/assets/css/debo.css" />
 		<link rel="stylesheet" href="/assets/css/plugin-grid.css"/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7/themes/algolia-min.css"/>
+		<link rel="stylesheet" href="/assets/css/top-bar.css"/>
+		<link rel="stylesheet" href="/assets/css/search.css"/>
 	</head>
 	<body class="is-preload">
 
-		<!-- Navigation bar-->
-		<section id="nav-page">
-			{% include nav-bar %}
-		</section>
+		<!-- Top bar -->
+		{% include top-bar %}
 
 		<!-- Page-info -->
 		{% include page-info %}
@@ -73,8 +75,10 @@
 		<!-- Footer -->
 		{% include footer %}
 
+		<!-- Search results -->
+		{% include search-results %}
+
 		<!-- Scripts -->
 		{% include base-scripts %}
-
 	</body>
 </html>
