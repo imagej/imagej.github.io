@@ -26,9 +26,9 @@ def connect():
 
     return typesense.Client({
       'nodes': [{
-        'host': 'localhost',
+        'host': 'search.imagej.net',
         'port': '8108',
-        'protocol': 'http'
+        'protocol': 'https'
       }],
       'api_key': api_key,
       'connection_timeout_seconds': 2,
