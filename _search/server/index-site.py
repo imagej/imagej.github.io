@@ -15,13 +15,15 @@ def error(s):
     sys.stderr.write(f'[ERROR] {s}\n')
 
 
-def remove_markup(s):
+def first_sentence(lines):
+    s = ''.join(l for l in lines if not l.startswith('#')) # strip headers
     s = re.sub('<[^>]*>', '', s) # strip HTML
     s = re.sub('{%[^%]*%}', '', s) # strip Liquid tags
     s = re.sub('\[([^]]*)\]\([^\)]*\)', '\\1', s) # strip Markdown links
     s = re.sub('\*+\\s*([^\*]*)\\s*\*+', '\\1', s) # strip emphasis
     # TODO: strip or adjust more types of Markdown syntax
-    return s
+    m = re.match('[^\.]*\.\\s', s)
+    return m.group(0).strip() if m else s
 
 
 def connect():
@@ -128,10 +130,7 @@ def parse_document(docroot, path):
     doc['content'] = ''.join(content)
 
     if not 'description' in doc:
-        # synthesize a description from first sentence of content
-        s = remove_markup(''.join(content))
-        m = re.match('[^\.]*\.\\s', s)
-        description = m.group(0).strip() if m else s
+        description = first_sentence(content)
         debug(f'--> Inferred description: {description}')
         doc['description'] = description
 
