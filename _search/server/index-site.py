@@ -144,8 +144,14 @@ def update_index(client, documents):
     client.collections['imagej-wiki'].documents.import_(documents, {'action': 'upsert'})
 
 
+pathname = os.path.dirname(sys.argv[0])
+docroot = os.path.join(pathname, '..', '..', '_pages')
+if not os.path.isdir(docroot):
+    error('Cannot find the _pages directory!')
+    sys.exit(1)
+
 info('Loading content...')
-documents = load_jekyll_site('/home/curtis/code/imagej/imagej.github.io/_pages')
+documents = load_jekyll_site(docroot)
 info(f'Loaded {len(documents)} documents')
 
 client = connect()
