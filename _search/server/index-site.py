@@ -1,6 +1,6 @@
 #!/bin/env python
 
-import os, sys, traceback
+import os, re, sys, traceback
 import typesense
 import yaml
 
@@ -13,6 +13,15 @@ def info(s):
 
 def error(s):
     sys.stderr.write(f'[ERROR] {s}\n')
+
+
+def remove_markup(s):
+    s = re.sub('<[^>]*>', '', s) # strip HTML
+    s = re.sub('{%[^%]*%}', '', s) # strip Liquid tags
+    s = re.sub('\[([^]]*)\]\([^\)]*\)', '\\1', s) # strip Markdown links
+    s = re.sub('\*+\\s*([^\*]*)\\s*\*+', '\\1', s) # strip emphasis
+    # TODO: strip or adjust more types of Markdown syntax
+    return s
 
 
 def connect():
@@ -105,7 +114,7 @@ def parse_document(docroot, path):
     content = lines[i+1:]
     debug(f'--> Content is {len(content)} lines')
     front_matter = lines[1:i]
-    doc = yaml.safe_load('\n'.join(front_matter))
+    doc = yaml.safe_load(''.join(front_matter))
     debug(f'--> Front matter is {len(doc)} items')
 
     # Coerce YAML content to strings only. Sad but necessary.
@@ -116,7 +125,16 @@ def parse_document(docroot, path):
     doc['id'] = path[len(docroot):path.rindex('.')]
     doc['score'] = 100 # a constant value, at least for now
     if not 'title' in doc: doc['title'] = doc['id']
-    doc['content'] = '\n'.join(content)
+    doc['content'] = ''.join(content)
+
+    if not 'description' in doc:
+        # synthesize a description from first sentence of content
+        s = remove_markup(''.join(content))
+        m = re.match('[^\.]*\.\\s', s)
+        description = m.group(0).strip() if m else s
+        debug(f'--> Inferred description: {description}')
+        doc['description'] = description
+
     return doc
 
 
@@ -158,7 +176,6 @@ client = connect()
 info('Connected to typesense')
 created = create(client, documents, force=True)
 info('Created new collection' if created else 'Updating existing collection')
-print(documents[0])
-info('Indexing documents...')
+info(f'Indexing {len(documents)} documents...')
 update_index(client, documents)
 info('Done!')
