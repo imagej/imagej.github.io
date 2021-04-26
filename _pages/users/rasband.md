@@ -1,7 +1,6 @@
 ---
 title: Wayne Rasband
 categories: community
-description: test description
 
 name: Wayne Rasband
 affiliation: NIH special volunteer

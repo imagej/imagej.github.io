@@ -1,7 +1,6 @@
 ---
 title: BSD
 section: About:Licensing:Open Source
-description: test description
 ---
 
 {% include info-box content='For a summary of [SciJava](SciJava) licensing, see the [Licensing](/licensing) page.' %} 

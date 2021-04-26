@@ -1,7 +1,6 @@
 ---
 title: NIH Image
 categories: Software,Citable
-description: test description
 ---
 
 {% include image-left name="nih-image" image-path="/media/nih-image-logo.png" %}
