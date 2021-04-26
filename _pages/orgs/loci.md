@@ -18,8 +18,7 @@ LOCI plays a very active role in the ImageJ community:
 
 LOCI is a founding member of the [SciJava](SciJava) collaboration, and a partner of the [Open Microscopy Environment consortium](http://openmicroscopy.org/).
 
-Developers
-----------
+## Developers
 
 -   {%- include person id='eliceiri' -%} (PI)
 -   {%- include person id='ctrueden' -%} (lead)
@@ -30,8 +29,7 @@ Developers
 -   {%- include person id='gselzer' -%} (developer, [ImageJ Ops](/libs/imagej-ops))
 -   {%- include person id='Xanthorapedia' -%} (developer, [FLIMJ](/plugins/flimj))
 
-Alumni
-------
+## Alumni
 
 -   {%- include person id='awalter17' -%} (Sep 2014-May 2018)
 -   {%- include person id='lnyng' -%} (Sep 2015-May 2017)
@@ -40,8 +38,7 @@ Alumni
 -   {%- include person id='grislis' -%} (Jan 2010-Dec 2013)
 -   {%- include person id='bdezonia' -%} (Jan 2010-Nov 2013)
 
-See also
---------
+## See also
 
 -   The [LOCI update site](/users/LOCI)
 

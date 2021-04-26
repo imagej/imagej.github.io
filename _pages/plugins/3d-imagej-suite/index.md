@@ -13,8 +13,7 @@ title: 3D ImageJ Suite
 {% endcapture %}
 {% include info-box name='3D ImageJ Suite' software='3DSuite' update-site='3D ImageJ Suite' author=author maintainer=' [Thomas Boudier](https://github.com/mcib3d)' source=source released='25/09/2012, V2.0' latest-version='30/10/2019, V3.96' status='stable, active' category='[3D](Category_3D), [Analysis](Category_Analysis), [Filtering](Category_Filtering), [Segmentation](Category_Segmentation), [Mathematical morphology](Category_Mathematical_morphology)' %}
 
-3D ImageJ Suite
----------------
+## 3D ImageJ Suite
 
 This *suite* provides plugins to enhance 3D capabilities of ImageJ.
 
@@ -26,15 +25,13 @@ The associated video is available on [YouTube](https://www.youtube.com/watch?v=O
 
 The associated project for automation is available in [TAPAS](/plugins/tapas).
 
-Author
-------
+## Author
 
 {%- include person id='mcib3d' -%} ![](/media/EmailBoudier.png "fig:EmailBoudier.png"), [Sorbonne University](https://www.sorbonne-universite.fr/en), Paris, France.
 
 With many contributions from J. Ollion, Laboratoire Jean Perrin, Paris, France.
 
-Features
---------
+## Features
 
 This *suite* is composed of :
 
@@ -48,8 +45,7 @@ This *suite* is composed of :
 
 A 2D/3D [spatial statistics](https://imagejdocu.list.lu/plugin/analysis/spatial_statistics_2d_3d/start) plugin is also available.
 
-Installation
-------------
+## Installation
 
 From version 2.7, **3D ImageJ Suite** is available in Fiji as an [update site](/update-sites). The **Java8** and **ImageScience** update sites must be activated in Fiji, see instructions [here](/update-sites/following)\].
 
@@ -57,8 +53,7 @@ You can also install **3D ImageJ Suite** manually (see download section) and unz
 
 You have also to manually download and copy into your plugins directory the **imagescience.jar** library from [here](http://www.imagescience.org/meijering/software/featurej/).
 
-Download
---------
+## Download
 
 ImageJ 1.47 or later is required. Java3D is also required, check that [3D\_Viewer](/plugins/3d-viewer) is working.
 
@@ -70,20 +65,17 @@ Java 1.8 or later is required. **The [imagescience](http://www.imagescience.org/
 
 Sources are available on [GitHub](https://github.com/) for [core](https://github.com/mcib3d/mcib3d-core) and [plugins](https://github.com/mcib3d/mcib3d-plugins).
 
-Citation
---------
+## Citation
 
 If you use the 3D suite for your publication please cite :
 
 J. Ollion, J. Cochennec, F. Loll, C. Escudé, T. Boudier. (**2013**) TANGO: A Generic Tool for High-throughput 3D Image Analysis for Studying Nuclear Organization. *Bioinformatics* 2013 Jul 15;29(14):1840-1. [doi](http://dx.doi.org/10.1093/bioinformatics/btt276)
 
-License
--------
+## License
 
 GPL distribution (see [license](https://cecill.info/index.en.html)). Sources available on Github (see Download)
 
-Acknowledgements
-----------------
+## Acknowledgements
 
 The 3D suite would like to thanks P. Andrey, J.-F. Gilles and the developers of the following plugins :
 
@@ -93,8 +85,7 @@ The 3D suite would like to thanks P. Andrey, J.-F. Gilles and the developers of 
 -   [3D Object Counter](https://imagejdocu.list.lu/plugin/analysis/3d_object_counter/start)
 -   [Droplet Counter](https://imagejdocu.list.lu/plugin/analysis/droplet_counter/start)
 
-Links
------
+## Links
 
 -   [BoneJ2](/plugins/bonej)
 -   [3D Shapes](https://sites.google.com/site/learnimagej/plugins/3d-shape)
@@ -102,8 +93,7 @@ Links
 -   [3D Viewer](/plugins/3d-viewer)
 -   [MorphoLibJ](/plugins/morpholibj)
 
-Change Log
-----------
+## Change Log
 
 -   30/10/2019 V3.96: Bug fixes and improvements. New plugins distances and interactions.
 -   15/01/2019 V3.94: Bug fixes and improvements. 3D Manager interface improved.

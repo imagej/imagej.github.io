@@ -4,13 +4,11 @@ title: Colocalization - hardware setup and image acquisition
 categories: Colocalization,Tutorials,Color processing
 ---
 
-Foreword
---------
+## Foreword
 
 These notes primarily concern the **pixel intensity correlation based** colocalization methods, where one looks for intensity correlation in different colour channels of individual pixels. Sometimes it is more useful to look for **object-based** colocalization, where objects are segmented out of images, then objects in different colour channels are tested for spatial overlap: colocalization. In the **object-based** case, one attempts to acquire images suitable for segmentation. The following principles apply in the case of pixel-based colocalization, but most of the precautions underlined here are general.
 
-Introduction
-------------
+## Introduction
 
 How can we properly define colocalization? One could suggest:
 
@@ -41,8 +39,7 @@ What we need are objective quantitative methods to estimate/measure colocalisati
   
 But... in order to do quantitative analysis on images, they muse be acquired in the correct way, such that they contain the information that you are tring to measure! You must also understand the limitations of your microscope and the digital imaging process. 
 
-Precautions during image analysis
----------------------------------
+## Precautions during image analysis
 
 There are various problems that need to be understood and overcome while collecting images at the microscope. No clever analysis can save crappy images (aka. The "crap in - crap out" principle). If you lose or don't collect information that the microscope could have seen during imaging, it is lost forever. We list here a few of these dangers. Being modest, we should make it clear that some of the difficulties are actually unavoidable and must be lived with, but understood all the same. 
 

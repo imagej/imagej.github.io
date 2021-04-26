@@ -7,8 +7,7 @@ section: Learn:Cookbook
 
 
 
-Automatic Particle counting
----------------------------
+## Automatic Particle counting
 
 Automatic particle counting can be done if the image does not have too many individual particles touching. Manual particle counting can be done using the [Multi-point Tool](/ij/docs/guide/146-19.html#sec:Multi-point-Tool).
 
@@ -68,13 +67,11 @@ The count, area, and average size are returned as a text window and the outlined
 
 ![](/media/Nucleus counter 2.jpg "nucleus_counter_2.jpg")
 
-Manual Counting
----------------
+## Manual Counting
 
 You can use the built-in [Multi-point Tool](/ij/docs/guide/146-19.html#sec:Multi-point-Tool) to manually count particles.
 
-Particle tracking
------------------
+## Particle tracking
 
 **Particle Tracker** Particle Tracker is a 2D feature point-tracking plugin for the automated detection and analysis of particle trajectories as recorded by video imaging in cell biology. The algorithm is decsribed in Sbalzarini and Koumoutsakos (2005\[1\]).
 

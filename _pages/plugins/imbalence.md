@@ -27,8 +27,7 @@ Click the links below to find more about each tool.
 **Installation**
 ================
 
-Installation via FIJI updater
------------------------------
+## Installation via FIJI updater
 
 1\. [FIJI](https://fiji.sc) (Fiji Is Just ImageJ) should be installed on your computer.
 
@@ -50,8 +49,7 @@ Installation via FIJI updater
 
 7\. Once update is completed, restart FIJI. You should be able to see the plugins "EM tool" installed in the top toolbar.
 
-Manual Installation
--------------------
+## Manual Installation
 
 If you only want to use one of the plugins you can follow these steps:
 

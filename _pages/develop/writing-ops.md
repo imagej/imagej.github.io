@@ -14,8 +14,7 @@ At the most fundamental level, an Op is a SciJava [Plugin](https://github.com/sc
 
 At a minimum, creating an Op requires two pieces - an interface, and an implementation
 
-Create your Interface
----------------------
+## Create your Interface
 
     package bar;
 
@@ -32,8 +31,7 @@ Create your Interface
       String ALIASES = "gcf";
     }
 
-Implement your Op
------------------
+## Implement your Op
 
     package bar;
 
@@ -77,8 +75,7 @@ Implement your Op
 
 [On GitHub](https://github.com/tferr/Scripts/blob/master/BAR/src/main/java/bar/DefaultGCD.java)
 
-Use your Op
------------
+## Use your Op
 
 With these two components, you can start using your Op - for example, in the [script editor](/scripting):
 
@@ -108,8 +105,7 @@ Group your Ops in a Namespace
 
 Calling our Ops by name is not type-safe, and importing each interface is tedious. If you are going to provide a collection of Ops, a useful way to package them is within a custom [Namespace](http://javadoc.scijava.org/ImageJ/net/imagej/ops/Namespace.html).
 
-Create your Interface(s)
-------------------------
+## Create your Interface(s)
 
     package bar;
 
@@ -164,8 +160,7 @@ Create your Interface(s)
 
 [On GitHub](https://github.com/tferr/Scripts/blob/master/BAR/src/main/java/bar/BAR.java)
 
-Implement your Op(s)
---------------------
+## Implement your Op(s)
 
 The implementation is essentially the same as with single Ops, although we do have to update our class references.
 
@@ -206,8 +201,7 @@ Since the implementations are not accessed directly typically, whether they are 
       }
     }
 
-Use your Op(s)
---------------
+## Use your Op(s)
 
 We can still use our Op through the OpService:
 
@@ -234,8 +228,7 @@ Namespaces also present an easy way for users to find information about availabl
 Potential next steps
 ====================
 
-Create a helper service for your Namespace
-------------------------------------------
+## Create a helper service for your Namespace
 
 SciJava [Services](https://github.com/scijava/scijava-common/blob/scijava-common-2.47.0/src/main/java/org/scijava/service/Service.java) are a general workhorse in a given SciJava context. There is a single instance of each Service created per context, so they are a common container for static utility style methods.
 
@@ -279,8 +272,7 @@ Now we can drop package prefixes when using our Namespace in scripts:
     # Print usage for all ops in the BAR namespace
     print(ops.help(bar))
 
-Distribute scripts demonstrating how your Ops should be used
-------------------------------------------------------------
+## Distribute scripts demonstrating how your Ops should be used
 
 The ImageJ [script editor](/scripting) automatically collects scripts located in `src/main/resources/script_templates`. For example, if we create a file:
 

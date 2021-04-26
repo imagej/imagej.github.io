@@ -7,8 +7,7 @@ title: Gradle
 
 The ImageJ core artifacts are built with Maven, but can also be consumed in a Gradle build script.
 
-Sample ImageJ build.gradle
---------------------------
+## Sample ImageJ build.gradle
 
 Contributed<sup>[1](https://github.com/imagej/tutorials/issues/24)</sup> by {%- include person id='reckbo' -%}
 

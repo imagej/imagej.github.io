@@ -18,13 +18,11 @@ categories: Plugins,Citable
 {% endcapture %}
 {% include info-box name='BoneJ 1.x' software='ImageJ' logo='<img src="/media/Bonej-icon.png" width="96"/>' author=author maintainer=maintainer source=source status='Legacy' website='http://bonej.org/legacy' %}BoneJ is a plugin for bone image analysis in [ImageJ](/about). It provides free, open source tools for trabecular geometry and whole bone shape analysis.
 
-Current release ([BoneJ2](/plugins/bonej))
----------------------------------------------
+## Current release ([BoneJ2](/plugins/bonej))
 
 There's a new modernized version of BoneJ available through the ImageJ [updater](/plugins/updater). Read more about [BoneJ2](/plugins/bonej).
 
-Legacy (BoneJ v1.x) Installation
---------------------------------
+## Legacy (BoneJ v1.x) Installation
 
 {% include logo content='ImageJ1' size='24px' %} BoneJ was originally designed to work with plain [ImageJ 1.x](/software/imagej1).
 
@@ -38,13 +36,11 @@ Legacy (BoneJ v1.x) Installation
 
 For technical details about ImageJ and Fiji using Java 6 vs. Java 8, see the [Java 8](/news/2016-05-10_-_ImageJ_HOWTO_-_Java_8,_Java_6,_Java_3D) page.
 
-BoneJ and pQCT
---------------
+## BoneJ and pQCT
 
 BoneJ and pQCT plug-ins are in the process of separation. The latter have their own [update site](/plugins/pqct), and they don't need BoneJ to work. However, if you download `BoneJ_.jar` from [bonej.org](http://bonej.org/legacy) it still includes older versions of the pQCT tools.
 
-Publication
------------
+## Publication
 
 -   {% include publication content='BoneJ' %}
 

@@ -23,20 +23,17 @@ Automatic Deployment of Maven Artifacts
 
 Deploying your library to a [Maven](/develop/maven) repository makes it available for other developers. It is also a [contribution requirement for the Fiji project](/fiji/contribution-requirements).
 
-Requirements
-------------
+## Requirements
 
 -   Host your [open-source](/Open_Source) project on [GitHub](/develop/github).
 -   Log in to [Travis CI](https://travis-ci.com/auth) with your corresponding GitHub account and enable your repository.
 -   Contact an ImageJ admin in [Gitter](/about/chat#gitter) or [the Image.sc Forum](http://forum.image.sc/) and request that they file a PR which adds Travis support to your repository.
 
-Instructions
-------------
+## Instructions
 
 In order to add Travis CI support to a repository, the SciJava credentials are needed: A) for deploying to Maven repositories; and B) in the case of deploying to OSS Sonatype, for GPG signing of artifacts. If you have a copy of these credentials, and admin access to the relevant repository on GitHub, you can use the [travisify.sh script](https://github.com/scijava/scijava-scripts/blob/master/travisify.sh) to perform the needed operations. This script requires the [travis command line client](https://github.com/travis-ci/travis.rb) to be installed, and you may need to run `travis login` to authenticate first. If you need help, please ask [on the Image.sc Forum](https://forum.image.sc/) in the Development category, or in the [scijava-common channel](https://gitter.im/scijava/scijava-common) on Gitter.
 
-Testing things which cannot run headless
-----------------------------------------
+## Testing things which cannot run headless
 
 If your tests require a display (i.e.: they do not pass when run [headless](/learn/headless)), you can use [Xvfb](/learn/headless#xvfb) as follows:
 

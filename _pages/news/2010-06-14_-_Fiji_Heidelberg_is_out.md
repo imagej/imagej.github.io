@@ -10,8 +10,7 @@ In our cherished tradition, the current version is named after the location of a
 
 There have been 524190 lines added and 245463 removed since the previous release, with the help of (in alphabetical order): Albert Cardona, Andreas Wiese, Benjamin Schmid, Ben Tupper, Chris Elliott, Curtis Rueden, Daniel Hornung, Daniel James White, Davi Bock, Gabriel Landini, Gregory Jefferis, Ignacio Arganda-Carreras, Jacques Pecreaux, Jan Eglinger, Jean-Yves Tinevez, Johannes Schindelin, Larry Lindsey, Mark Longair, Nick Weiler, pixelhead, pogo, Ricardo Henriques, Stephan Preibisch, Stephan Saalfeld, Tom Kazimiers and Verena Kaynig, and many other helpers.
 
-Changes since Fiji Plzeň
-------------------------
+## Changes since Fiji Plzeň
 
 -   There is a new plugin called [Trainable Segmentation](/plugins/tws). This plugin offers advanced machine learning techniques to train a model that segments your images into different classes.
 
@@ -315,8 +314,7 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 -   Loads of bugfixes
 
-Developer-visible changes
--------------------------
+## Developer-visible changes
 
 -   There are two nightly builds, one including all the submodules, and the other to make sure that Fiji builds using Java 5 (which we are stuck to, because there will not be any Java 6 for MacOSX 10.4, or for 32-bit MacOSX 10.5).
 

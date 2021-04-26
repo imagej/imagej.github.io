@@ -7,8 +7,7 @@ artifact: sc.fiji:RATS\_
 
 Robust Automatic Threshold Selection (RATS) computes a threshold map for a 2d image based upon the value of pixels and their gradients.
 
-Background
-----------
+## Background
 
 The RATS algorithm is applied across regions of the image making it suitable for thresholding noisy images with variable background. The plugin is based upon the description in
 
@@ -32,8 +31,7 @@ Occasionally, the regional threshold fails if the sum of the weights (the denomi
 
 The user also controls the size of the smallest quadtree region (aka leaflet). As with the noise estimate and scaling factor, determining the appropriate minimum quadtree leaflet size is best done with experiment. However, a good guide is to match the size of the smallest leaflet to something just larger than the size of the smallest object expected. There is little performance loss by decreasing the size of the smallest leaflet.
 
-Plugin Usage
-------------
+## Plugin Usage
 
 ![](/media/RATS gui.jpg "RATS_gui.jpg")
 
@@ -51,8 +49,7 @@ That's it! A bilevel image is produced with the name "-mask" appended to the ori
 
 ![](/media/RATS-Output.png "RATS-Output.png")
 
-Macro Usage
------------
+## Macro Usage
 
 The plugin is recordable and can be called from a macro ....
 

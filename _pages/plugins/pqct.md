@@ -11,8 +11,7 @@ categories: Plugins,Citable
 {% include info-box name='pQCT' author='Timo Rantalainen' software='ImageJ/Fiji' source=source released='Feb 9<sup>th</sup>, 2018' latest-version='3.0.0, Jun 8<sup>th</sup>, 2018' status='stable' %}
 
 
-Summary
--------
+## Summary
 
 This package contains tools for Stractec pQCT soft-tissue and bone images. It's designed for the following analyses:
 
@@ -21,8 +20,7 @@ This package contains tools for Stractec pQCT soft-tissue and bone images. It's 
 -   Bone marrow analysis for a tubular bone<sup>2</sup>
 -   Conventional soft tissue analyses (e.g. subcutaneous fat cross-sectional area, muscle cross-sectional area)<sup>2</sup>
 
-Installation
-------------
+## Installation
 
 1\) {% include bc path='Help | Update...'%}
 
@@ -40,8 +38,7 @@ Installation
 
 8\) The update system will now inform you when a new version of the pQCT is available
 
-Distribution analysis
----------------------
+## Distribution analysis
 
 {% include bc path='Plugins | pQCT | Distribution Analysis'%}
 
@@ -191,8 +188,7 @@ The main tool for pQCT image analysis. You must open an image first before runni
 
 -   **Image save path**: If the above check box is ticked, the path given in this text box is used as the path into which the visual result images are saved to, i.e. c:/path/to/save/to/. remember to add the trailing /. Either / or \\ may be used in the path.
 
-Distribution analysis results
------------------------------
+## Distribution analysis results
 
 ### Alignment
 
@@ -345,29 +341,25 @@ The mean of the thirty six 10° sectors within a given anatomical ring is report
 ![](/media/Radii.png "fig:radii.png")  
 Endo- and pericortical radii are given as the distance from the centroid of the marrow cavity to the endo- and pericortical border, respectively. The radii are calculated prior to peeling off the layers of pixels from endosteal and periosteal border.
 
-Export Stratec Header
----------------------
+## Export Stratec Header
 
 {% include bc path='Plugins | pQCT | Export Stratec Header'%}
 
 Displays the metadata saved in the pQCT image currently open.
 
-Strip Stracted Header
----------------------
+## Strip Stracted Header
 
 {% include bc path='Plugins | pQCT | Export Stratec Header'%}
 
 Can be used to save a new version of the given image file, where selected metadata fields have been stripped.
 
-Read Stratec File
------------------
+## Read Stratec File
 
 {% include bc path='Plugins | pQCT | Export Stratec Header'%}
 
 Use this plug-in to open Stratec pQCT images. NB {% include bc path='File | Open'%} or dragging the file doesn't work.
 
-Test images
------------
+## Test images
 
 You can download the [package](http://bonej.org/images/SyntheticData.zip) that contains test images for the analyses. The source to produce the synthetic data and the expected results are also included.
 
@@ -383,21 +375,18 @@ To easily run the test, use the provided [macro](http://bonej.org/images/Synthet
 5.  When the macro has finished, you should see the Results table
 6.  Open the resulting file with excel or open office or some other suitable program and the results should match the ones within the Synthetic data provided above.
 
-BoneJ and pQCT
---------------
+## BoneJ and pQCT
 
 [BoneJ](http://bonej.org) and pQCT are separating. If you install pQCT from the update site as described above, you won't need BoneJ. The former is still included in JAR available at bonej.org, but they will become completely independent. In the meanwhile, please don't install both pQCT from the update site, and the BoneJ JAR.
 
-Citation
---------
+## Citation
 
 If you use this program, or the Stratec pQCT file format reader in your work, please cite the pertinent papers.
 
 1.  Rantalainen T, Nikander R, Heinonen A, Daly RM, Sievanen H, *An open source approach for regional cortical bone mineral density analysis*, [J. Musculoskelet. Neuronal Interact, 2011 Sep 11(3), 243-8](http://www.ismni.org/jmni/pdf/45/04RANTALAINEN.pdf).
 2.  Rantalainen T, Nikander R, Heinonen A, Cervinka T, Sievanen H, Daly RM, *Differential Effects of Exercise on Tibial shaft Marrow Density in Young Female Athletes*, J. Clin. Endocrinol. Metab.
 
-Acknowledgements
-----------------
+## Acknowledgements
 
 [Stratec Medizintechnik GmbH](http://www.galileo-training.com/) (Pforzheim, Germany) for providing the file specification and calibration files used in their XCT pQCT-devices.
 

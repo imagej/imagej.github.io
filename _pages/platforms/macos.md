@@ -24,8 +24,7 @@ Troubleshooting
 
 See also the [Troubleshooting](/help/troubleshooting) page.
 
-ImageJ becomes very slow after running for a while
---------------------------------------------------
+## ImageJ becomes very slow after running for a while
 
 There are several reasons ImageJ can run slowly on macOS.
 
@@ -41,8 +40,7 @@ There is a bug in Java 8 on MacOS which causes the application to drastically sl
 
 On recent versions of OS X—10.9 "Mavericks" and later—there is an "App Nap" feature which dramatically slows down applications that are not in the foreground. Leave ImageJ in the foreground while it is processing to avoid this issue. (There are also [various](http://osxdaily.com/2014/05/13/disable-app-nap-mac-os-x/) [ways](http://www.cultofmac.com/274396/disable-app-nap-specific-apps-os-x-tips/) to disable App Nap on your machine, but we have not had much success with them. If you find a solution that works, allowing ImageJ to run fast in the background, please [tell us on the forum](http://forum.imagej.net/)!)
 
-No title bar in file chooser dialogs
-------------------------------------
+## No title bar in file chooser dialogs
 
 On macOS 10.11 "El Capitan" and later, the operating system no longer includes a title bar for file chooser dialogs. See e.g. [this JDK bug](https://bugs.openjdk.java.net/browse/JDK-8136427) discussing the issue.
 
@@ -53,20 +51,17 @@ Frequently Asked Questions
 
 See also the [Frequently Asked Questions](/help/faq) page.
 
-How do I run ImageJ with Java 6?
---------------------------------
+## How do I run ImageJ with Java 6?
 
 It is unfortunately no longer feasible to install Apple Java 6 on current versions of macOS. However, ImageJ should work OK with Java 8. If you have difficulties, please post on the [Image.sc Forum](https://forum.image.sc/).
 
 At any time, you can verify which Javas are installed on your system using {% include github org='ctrueden' repo='ctr-scripts' path='java-info' label='this script' %}.
 
-How do I run ImageJ on Yosemite?
---------------------------------
+## How do I run ImageJ on Yosemite?
 
 Install the [Java 8 JRE](http://java.com/) or [Java SE 8](http://www.oracle.com/technetwork/java/javase/downloads/).
 
-How do I run ImageJ on El Capitan?
-----------------------------------
+## How do I run ImageJ on El Capitan?
 
 Unfortunately, El Capitan has some new java-related issues. If you upgraded to El Capitan and your Java 8 installation is not being detected properly:
 
@@ -79,8 +74,7 @@ Additional macOS Tips
 
 {% include outdated %}
 
-Running Fiji in 32-bit mode
----------------------------
+## Running Fiji in 32-bit mode
 
 {% include warning-box content='It may no longer be possible to start Fiji in 32-bit on recent versions of OS X. See [this bug report](https://fiji.sc/bug/1018) for details.' %} Fiji on Intel Macs runs on Java 1.6 in 64-bit mode. If you need to run it in 32-bit mode, you can do so as follows:
 
@@ -99,8 +93,7 @@ Alternately, you can execute the following code from the Terminal:
 
 Either way, you will need to make sure your maximum memory limit is set below \~1800 MB. If your maximum memory is set higher than the 32-bit limit, Fiji will not be able to start up successfully in 32-bit mode.
 
-Limited PowerPC (G4/G5) Mac support
------------------------------------
+## Limited PowerPC (G4/G5) Mac support
 
 We offer [a special intermediate release of Fiji specific to PowerPC Macs (G4/G5)](https://downloads.imagej.net/fiji/Heidelberg/fiji-macosx-ppc-20100802.dmg).
 
@@ -114,20 +107,17 @@ Execute **sudo port install openjdk6** on your Terminal. You can also install th
 
 Check more info at [landonf.bikemonkey.org/static/soylatte/](http://landonf.bikemonkey.org/static/soylatte/)
 
-Accessing the plugins and macros folders
-----------------------------------------
+## Accessing the plugins and macros folders
 
 To access the plugins or macros folders, set the Finder window to either icons or lists mode, <b>not</b> in column mode, and double-click them.
 
 Alternatively, right-click (or {% include key content='Ctrl' %}+{% include key content='click' %}) the Fiji.app and select "Show package contents", to open the folder where the actual plugins and macros folders are.
 
-Adding new plugins and macros
------------------------------
+## Adding new plugins and macros
 
 For plugins, please follow the instructions about [Installing 3rd party plugins](Installing_3rd_party_plugins). Otherwise, access the plugins folder as explained above and just drag and drop any plugin into the plugins folder, like you would do for ImageJ. Same for macros.
 
-Installing OpenJDK for MacOSX
------------------------------
+## Installing OpenJDK for MacOSX
 
 Oracle now supports MacOSX JavaSE 7 [officially](http://www.h-online.com/open/news/item/Java-SE-7-Update-6-hands-OS-X-support-to-Oracle-1667714.html).
 
@@ -139,8 +129,7 @@ As of mid-April 2011, OpenJDK for MacOSX has basic working support for Aqua, whi
 
 Since the development of OpenJDK for MacOSX is driven exclusively by Apple employees, the minimal MacOSX version required to run OpenJDK/Aqua is 10.6. If you require Fiji to run on earlier versions of MacOSX, you will have to go back to [SoyLatte](http://landonf.bikemonkey.org/static/soylatte/), where you will also find an X11-only OpenJDK version that runs on MacOSX 10.5/PowerPC (MacOSX 10.6+ does not support PowerPC). In the alternative, you can put in a considerable effort to "backport" OpenJDK :-).
 
-Running Fiji in the command line
---------------------------------
+## Running Fiji in the command line
 
 Often it is necessary to run Fiji in the command line, e.g. to pass some command-line options. To do so, start a Terminal (in the Finder, *Go&gt;Utilities*), and switch to the correct directory using the *cd* command. Note that the application itself is actually a directory called *Fiji.app*. For example, if you installed Fiji into */Applications* as recommended, do this:
 
@@ -162,7 +151,6 @@ Now you can pass, say, [Java Options](Java_Options):
 
 **Note**: to distinguish between options intended for Java and options intended for ImageJ, you need to separate the former from the latter with a double-dash: **--**. Since the default is to accept ImageJ options, you have to pass a trailing double-dash if you want to pass only Java options.
 
-MacOSX keyboard shortcuts
--------------------------
+## MacOSX keyboard shortcuts
 
 It is often helpful to use keyboard shortcuts when using Fiji. There are also operating system specific shortcuts which can be quite helpful. For example, pressing {% include key content='Command' %}+{% include key content='Tab' %} and releasing first only the {% include key content='Tab' %} key will allow you to cycle through the running applications, while {% include key content='Command' %}+{% include key content='\`' %} will do the same for the windows opened by the current application. [Dave Polaschek](http://davespicks.com/) has [a comprehensive list](http://davespicks.com/writing/programming/mackeys.html).

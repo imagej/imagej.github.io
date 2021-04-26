@@ -9,13 +9,11 @@ This page supersedes the [original Image5D page](/ij/plugins/image5d.html) from 
 
 {% include info-box content='Please consider using the built-in [hyperstacks](/ij/docs/guide/146-8.html) functionality in ImageJ, since it is newer and more well-integrated than this old Image5D plugin.' %}
 
-Installation
-------------
+## Installation
 
 Image5D is distributed as part of [Fiji](/fiji), so no installation is necessary beyond that. If you do not wish to [enable the Fiji update site](/update-sites), you can download the Image5D JAR file to the plugins folder, restart ImageJ, and there will be new commands (*New Image5D*, *Open Image5D*, etc.) in the {% include bc path='Plugins|Image5D'%} submenu. Image5D requires ImageJ 1.37b or later.
 
-Description
------------
+## Description
 
 <img src="/media/Image5D-color.jpg" title="fig:Image5D-color.jpg" width="374" alt="Image5D-color.jpg" /> <img src="/media/Image5D-gray.jpg" title="fig:Image5D-gray.jpg" width="374" alt="Image5D-gray.jpg" /> <img src="/media/Image5D-overlay.jpg" title="fig:Image5D-overlay.jpg" width="374" alt="Image5D-overlay.jpg" />
 
@@ -44,15 +42,13 @@ A sample 5D data set [is available](/ij/images/Spindly-GFP.zip). In consists of 
 
 A sample [16-bit RGB data set](/ij/macros/images/MyoblastCells.zip) of triple labeled cloned myoblast cells is also available. To view it with Image5D, open it using *File/Open* or drag and drop, then convert it to an Image5D using {% include bc path='Plugins|Image5D|Stack to Image5D'%}. This image is courtasy of Dr. Angelica Keller and Juliette Peltzer, Faculte des Sciences et Technologies, Universite Paris 12 Val de Marne, France.
 
-See also
---------
+## See also
 
 -   [Sync Windows](/plugins/sync-windows)
 -   [Spectral Unmixing Plugins](/ij/plugins/spectral-unmixing.html)
 -   [TransformJ](http://www.imagescience.org/meijering/software/transformj/), [FeatureJ](http://www.imagescience.org/meijering/software/featurej/), [RandomJ](http://www.imagescience.org/meijering/software/randomj/) and [MTrackJ](http://www.imagescience.org/meijering/software/mtrackj/)
 
-History
--------
+## History
 
 See the {% include github org='imagej' repo='image5d' path='doc/Image5D-changes.txt' label='release notes' %} for details on changes.
 

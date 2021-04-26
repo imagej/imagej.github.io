@@ -6,8 +6,7 @@ categories: Scripting
 
 {% include info-box software='ImageJ' name='The Hue Game' maintainer='Johannes Schindelin' author='Johannes Schindelin' source=' [in GitWeb](https://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/The_Hue_Game.bsh;hb=refs/heads/master)' released='16/04/2012' latest-version='16/04/2012' status='stable' category='[:Category:Scripting](Category_Scripting)' website='http://www.xrite.com/custom\_page.aspx?PageID=77&Lang=en' %}
 
-The Hue Game
-------------
+## The Hue Game
 
 This game is based on an online demonstration of [xrite.com](http://www.xrite.com/custom_page.aspx?PageID=77&Lang=en) and is included in Fiji to demonstrate a couple of things:
 

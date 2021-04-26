@@ -10,8 +10,7 @@ section: Development:Git
 Git's reflogs
 =============
 
-What is a "ref"?
-----------------
+## What is a "ref"?
 
 In Git, a "ref" is a pointer into the commit graph (to visualize the commit graph, use the wonderful tool *gitk*.
 
@@ -37,8 +36,7 @@ There are a few special refs, which are upper-case by default:
 
 And then, there are reflogs.
 
-Reflogs
--------
+## Reflogs
 
 As mentioned, commits contain the whole history leading to that commit by inference.
 

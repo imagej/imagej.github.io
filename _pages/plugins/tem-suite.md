@@ -10,8 +10,7 @@ This is a suite of useful imageJ plugins that are designed for analysis of image
 3.  [pub Montage](/plugins/pub-montage) is a high quality montaging plugin designed for figure submission to a peer review journal.
 4.  [get Meta](/plugins/get-meta) extracts the metadata from all the DM3 files in the directory and saves them to a text file within that directory.
 
-Getting Started
----------------
+## Getting Started
 
 The following are ways of installing this suite of plugins. The first way is the easiest and fastest method, but the second way offers more freedom.
 

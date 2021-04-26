@@ -4,8 +4,7 @@ title: Linux command line tutorial
 categories: tutorials
 ---
 
-Connecting to the cluster
--------------------------
+## Connecting to the cluster
 
 We will use SSH (secure shell) to connect to the cluster. On Mac OSX we need to simply open a terminal window (under Applications-&gt;Utilities), on PC we may need to download an ssh client such as [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/).
 
@@ -24,8 +23,7 @@ Now you are on the cluster
 `Welcome to the MPI-CBG cluster masternode.`  
 `[tomancak@madmax ~]$`
 
-Moving around
--------------
+## Moving around
 
 **pwd** - *print working directory*
 
@@ -67,8 +65,7 @@ This tells the interpreter to look for the file executable\_script in the curren
 `[tomancak@madmax ~]$ cd /projects/tomancak_lightsheet`  
 `[tomancak@madmax tomancak_lightsheet]$`
 
-Manipulating files
-------------------
+## Manipulating files
 
 **ls**
 
@@ -94,8 +91,7 @@ Manipulating files
 
 **tar**
 
-Permissions
------------
+## Permissions
 
 **chmod**
 
@@ -103,8 +99,7 @@ Permissions
 
 **sudo**
 
-Pipes and redirects
--------------------
+## Pipes and redirects
 
 **\|**
 
@@ -112,8 +107,7 @@ Pipes and redirects
 
 **wc**
 
-Misc
-----
+## Misc
 
 **which**
 
@@ -129,8 +123,7 @@ Misc
 
 **man**
 
-Using it on the cluster
------------------------
+## Using it on the cluster
 
 Here we put all of that goodness to work to make our life on a cluster easier.
 

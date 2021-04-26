@@ -16,19 +16,16 @@ If you are passingly familiar with Git, but wish it was less arcane, check out:
 
 Development of ImageJ and related software relies heavily on [Git](http://git-scm.com/). See the [source code](/develop/source) page for information on where the Git repositories reside.
 
-Why do we use Git?
-------------------
+## Why do we use Git?
 
 -   Git is a first-class {% include wikipedia title='Distributed version control' text='distributed'%} {% include wikipedia title='Version control' text='version control'%} system, so we use it to keep a record of changes to avoid loss-of-work and to appropriately explain/document changes as projects develop.
 -   Git history, which is composed of "snapshots" of the source code, can be used to go back at any point in time, which leads to reproducible science.
 
-Git tutorials
--------------
+## Git tutorials
 
 This web site has lots of tutorials on Git; see the left sidebar.
 
-Rewriting history
------------------
+## Rewriting history
 
 One of the most powerful things Git can do is rewrite a series of patches after the fact. This is a powerful technique worth learning. There are many guides available here and elsewhere:
 
@@ -39,8 +36,7 @@ One of the most powerful things Git can do is rewrite a series of patches after 
 *   [About Git rebase](https://help.github.com/articles/about-git-rebase/) article from GitHub
 *   [Using Git rebase](https://help.github.com/articles/using-git-rebase/) article from GitHub
 
-Git for dummies
----------------
+## Git for dummies
 
 What is Git?
 ============

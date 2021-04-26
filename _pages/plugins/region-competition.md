@@ -14,8 +14,7 @@ categories: Plugins,Segmentation,Deconvolution
 
 Documentation is available as [html](http://mosaic.mpi-cbg.de/MosaicToolboxSuite/Region_Competition.html).
 
-References
-----------
+## References
 
 J. Cardinale, G. Paul, and I. F. Sbalzarini. Discrete region competition for unknown numbers of connected regions. IEEE Trans. Image Process., 21(8):3531–3545, 2012.
 

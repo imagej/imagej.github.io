@@ -22,13 +22,11 @@ categories: Plugins,Citable
 
 Enable the [MaMuT update site](http://sites.imagej.net/MaMuT/) to get it.
 
-Publication.
-------------
+## Publication.
 
 -   {% include publication content='MaMuT' %}
 
-Presentation.
--------------
+## Presentation.
 
 MaMuT is an end user plugin that combines the [BigDataViewer](/plugins/bdv) and [TrackMate](/plugins/trackmate) to provide an application that allow browsing, annotating and curating annotations for large image data.
 
@@ -46,8 +44,7 @@ However, MaMuT itself does not ship any fully-automated or tracking algorithm. I
 
 ![](/media/MaMuT LargeAnnotationsQuickly.png "MaMuT_LargeAnnotationsQuickly.png")
 
-User documentation.
--------------------
+## User documentation.
 
 The following pages are tutorials that will guide you through MaMuT and walk you though its features.
 
@@ -57,7 +54,6 @@ The following pages are tutorials that will guide you through MaMuT and walk you
 
 -   [Example mamut.properties file](/plugins/mamut/example-properties-file) contains an example of a `mamut.properties` file, that is used to customize the key-bindings in the MaMuT viewer.
 
-Developer documentation.
-------------------------
+## Developer documentation.
 
  

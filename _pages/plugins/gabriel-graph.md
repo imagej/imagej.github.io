@@ -10,15 +10,13 @@ categories: Plugins
 {% endcapture %}
 {% include info-box name='Gabriel Graph' software='Fiji' author='Olivier Burri' maintainer='Olivier Burri' filename='Gabriel\_Graph-1.0.0.jar' released='August 2015' latest-version='July 2017' source=source status='stable' website=' [BIOP Staff Page](http://biop.epfl.ch/INFO_Facility.html#staff)' %}
 
-Purpose
--------
+## Purpose
 
 Gabriel Graph Implementation for ImageJ/Fiji See https://en.wikipedia.org/wiki/Gabriel_graph for implementation
 
 <figure><img src="/media/Gabriel Graph Dialog.png" title="Gabriel_Graph_Dialog.png" width="200" alt="Gabriel_Graph_Dialog.png" /><figcaption aria-hidden="true">Gabriel_Graph_Dialog.png</figcaption></figure>
 
-Details
--------
+## Details
 
 The algorithm goes through each pair of points and looks for the shortest distance between two points that does not contain any other point within the circle whose diameter is defined by the two points being queried. It is built to run in parallel as per the implementation of [Albert Cardona's ImageJ Tutorials](http://albert.rierol.net/imagej_programming_tutorials.html)
 
@@ -34,15 +32,13 @@ If selected, it will overlay the Gabriel Graph onto the image.
 
 <figure><img src="/media/Gabriel Graph Processing Example.png" title="Result of Plugin on image" width="400" alt="Result of Plugin on image" /><figcaption aria-hidden="true">Result of Plugin on image</figcaption></figure>
 
-Macro Recordable
-----------------
+## Macro Recordable
 
 Making use of the GenericDialog class, the plugin is macro-recordable.
 
     run("Gabriel Graph...", "results overlay parallel");
 
-Running from a Plugin
----------------------
+## Running from a Plugin
 
 What you need to run this in a plugin is
 
@@ -52,8 +48,7 @@ And then call the static method
 
     ResultsTable results = GabrielGraph.getGabrielGraph(final ImagePlus imp, final boolean is_show_overlay, final boolean is_parallel);
 
-Notes
------
+## Notes
 
 It makes little sense not to use parallel processing, the only issue might be that the order of the points will be different on multiple runs, as this will depend on how Java will manage the threads.
 

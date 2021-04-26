@@ -16,8 +16,7 @@ If you are running the **Stitching Wizard**, you will be taken to **Interactive 
 -   **Filter Links by Parameters ...** offers the same functionality as the Interactive Link explorer in a simple dialog without any live preview.
 -   **Remove Links** allows you to remove the calculated shifts, either for the currently selected views or for all views.
 
-Interactive Link Explorer
--------------------------
+## Interactive Link Explorer
 
 The Interactive Link Explorer allows you to to preview the pairwise links of a view. If you select a view in the main window, its pairwise links will be displayed in the Interactive Link Explorer window.
 

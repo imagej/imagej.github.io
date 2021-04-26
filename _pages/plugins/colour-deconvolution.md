@@ -7,8 +7,7 @@ artifact: sc.fiji:Colour\_Deconvolution
 
 Similarly to the command {% include bc path='Image | Color | RGB split'%}, this plugin unmixes an RGB image produced by subtractive mixing (inks, histological dyes) into separate channels corresponding to up to 3 determined colors. This is useful e.g. to do pigment separation.
 
-Documentation
--------------
+## Documentation
 
 See [Gabriel Landini webpage](https://blog.bham.ac.uk/intellimic/g-landini-software/colour-deconvolution-2/) for an updated version of the plugin.
 You can install an updated version in Fiji via the Colour Deconvolutio2 update site.
@@ -17,8 +16,7 @@ This plugin implements the method described in the following paper:
 
 {% include citation last='Ruifrok' first='A.C.' last2='Johnston' first2='D.A.' title='Quantification of histochemical staining by color deconvolution' journal='Anal. Quant. Cytol. Histol.' volume='23' pages='291-299' year='2001' PMID='11531144' %}
 
-Version history
----------------
+## Version history
 
 -   30/Mar/2004 released - based on macro code from A.C. Ruifrok.
 -   03/Apr/2004 resolved ROI exiting
@@ -35,8 +33,7 @@ Version history
 -   03/Aug/2011 v1.7 added progress bar (thanks to Oskari Jaaskelainen), added warning about immunostains.
 -   17/Oct/2015 v 1.8 B. Pavie refactorized the code into multiple classes and made some public method to generate the result ImageStacks without displaying them so it can be called from scripts.
 
-Menu path
----------
+## Menu path
 
 {% include bc path='Image | Color | Colour Deconvolution'%}
 

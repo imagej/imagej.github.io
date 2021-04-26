@@ -8,8 +8,7 @@ categories: Image annotation,Plugins
 
 The Colorizer\_Overlay plugin provides the ability to apply a LUT, colorbar, and annotation to a map, i.e., quantified image, and overlay this upon a background image. The impetus for this plugin was my inability to remember how to perform all the necessary steps and the laborious task of doing this again and again whenever my whim for the best representation of my data kicked in, usually right before an abstract deadline.
 
-Features
---------
+## Features
 
 <img src="/media/Colorizer Overlay.jpg" width="600"/>
 
@@ -37,8 +36,7 @@ The process of generating a colorized overlay is best, but not required, done in
 **Background** in the overlayed annotation background. None is a transparent overlay.  
 **Size** is the font size.
 
-Methods
--------
+## Methods
 
 `public static ImagePlus doOverlay(ImagePlus bgimp, Roi bgroi, ImagePlus fgimp, Roi fgroi, double wmin, double wmax, String lut)`  
 Apply LUT to Roi'ed DisplayRange'd forground image, overlay on Roi'ed background image and crop to bounding box. Roi(s) need to explicitly identified; image(s) will not be queried for Roi(s).
@@ -58,29 +56,24 @@ Overlay colorbar and label.
 `public static ImagePlus doOverlayScaleLabelColorBar(ImagePlus bgimp, Roi bgroi, ImagePlus fgimp, Roi fgroi,` `String label, double fgll, double fgul, double multiplier, String lut,` `String newSize, String interpolationType, String boarderType,` `String cbwhere, String cbsize, String format, Font font, Color fgc, Color gc)`  
 Scale then overlay colorbar and label.
 
-Coding Goodies
---------------
+## Coding Goodies
 
 How to not do string overlays; there are more direct ways I discovered after becoming happy with the plugin.
 
-Install
--------
+## Install
 
 Unzip [Colorizer\_Overlay.zip](/media/Colorizer_Overlay.zip) into ImageJ1 plugins (File&gt;Show Folder&gt;Plugins) or plugins/jars directories. Source code in jar file.  
 **Plugins&gt;Annotation&gt;Colarizer\_Overlay...**
 
-Licence
--------
+## Licence
 
 GPL distribution licence.
 
-ChangeLog
----------
+## ChangeLog
 
 1 April 2020 Initial version.
 
-Known Bugs
-----------
+## Known Bugs
 
 Let me know.
 

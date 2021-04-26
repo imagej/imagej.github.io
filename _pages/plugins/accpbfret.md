@@ -16,20 +16,16 @@ title: AccPbFRET
 
 **An ImageJ plugin for analysis of acceptor photobleaching FRET images**
 
-Introduction
-------------
+## Introduction
 
-Installation
-------------
+## Installation
 
-Citation
---------
+## Citation
 
 This software is based on a publication. If you use it in your work, please cite:
 
 -   Roszik J, Szöllosi J, Vereb G. [AccPbFRET: an ImageJ plugin for semi-automatic, fully corrected analysis of acceptor photobleaching FRET images](https://bmcbioinformatics.biomedcentral.com/track/pdf/10.1186/1471-2105-9-346). *BMC Bioinformatics*. 2008;9:346. Published 2008 Aug 19. <doi:10.1186/1471-2105-9-346>
 
-See also
---------
+## See also
 
 For time lapse and 3D imaging, we recommend our other FRET plugin [RiFRET](/plugins/rifret).

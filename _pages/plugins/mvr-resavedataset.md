@@ -23,8 +23,7 @@ Some log output shows the resaving process.
     .
     (Thu Aug 21 13:38:15 CEST 2014): Saved xml '/Users/janosch/no_backup/HisYFP/dataset-hdf5.xml'.
 
-View with BigDataViewer
------------------------
+## View with BigDataViewer
 
 Finally you can use [BigDataViewer](/plugins/bdv) to view your data set.
 

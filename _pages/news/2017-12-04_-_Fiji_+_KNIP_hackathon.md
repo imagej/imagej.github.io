@@ -8,23 +8,19 @@ From Monday, December 4, 2017 through Friday, December 15, 2017, the [Max Planck
 
 https://gitter.im/fiji/hackathon_dd_2017
 
-Voluntary hackathon calendar
-----------------------------
+## Voluntary hackathon calendar
 
 https://tinyurl.com/ybjcq9qw
 
-Hackathon google doc
---------------------
+## Hackathon google doc
 
 https://docs.google.com/document/d/1h4uCt4PAEdeGQQwwVZC73o_Anq6-AI2KZiSzxY8kWng/edit
 
-Hackathon on Twitter (\#hackdd17)
----------------------------------
+## Hackathon on Twitter (\#hackdd17)
 
 https://twitter.com/hashtag/hackdd17?vertical=default&src=hash
 
-Technical Discussions
----------------------
+## Technical Discussions
 
 ### N5, not HDF5
 
@@ -82,8 +78,7 @@ We discussed opportunities to improvement for the Bdv design:
 -   from the system architecture point of view, the design can be inspired by the search bar feature implementation
 -   started use case definition
 
-Hackathon Progress
-------------------
+## Hackathon Progress
 
 ### ilastik - (Dominik Kutra, Carsten Haubold)
 

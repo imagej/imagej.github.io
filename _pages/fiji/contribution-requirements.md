@@ -18,8 +18,7 @@ A "core" [Fiji](/fiji) project is one distributed on the [Fiji update site](http
 Requirements
 ============
 
-Freely accessible source code
------------------------------
+## Freely accessible source code
 
 A key principle of the Fiji project is:
 
@@ -32,8 +31,7 @@ There are many corollaries to this wisdom, the most prominent: if you write soft
 
 As such, components distributed with Fiji must be licensed in a way [compatible with the GNU General Public License](https://www.gnu.org/licenses/license-list.html).
 
-Source hosted on GitHub
------------------------
+## Source hosted on GitHub
 
 Core Fiji development takes place on [GitHub](/develop/github). This ensures continuity and visibility, and facilitates collaboration.
 
@@ -62,15 +60,13 @@ The following criteria apply to projects hosted in the [fiji organization](https
 
 Projects that reside outside the [fiji organization](https://github.com/fiji) are not subject to the requirements above. But it is then the project maintainer's responsibility to ensure the project continues to function properly in up-to-date installations of Fiji. This might entail code changes as ImageJ and Fiji evolve.
 
-Continuous integration: Travis CI
----------------------------------
+## Continuous integration: Travis CI
 
 To verify that the Fiji components build without problems, and that all regression tests pass, every Fiji project's source code repository is connected to a [Travis CI](/develop/travis) job that builds and tests the source code, and deploys the [Maven artifacts](#maven-artifacts), whenever a new revision is made available.
 
 Have a look at the [Travis](/develop/travis) page for instructions on setting it up.
 
-Versioning and dependency convergence
--------------------------------------
+## Versioning and dependency convergence
 
 Most Fiji projects use the [SemVer versioning scheme](/develop/versioning): a standard to encourage API consistency without obstructing API improvements.
 
@@ -97,8 +93,7 @@ Furthermore, for backwards-compatibility a version can be automatically deduced:
 -   From the POM. This is the most reliable option. For convenience, [scijava-common](https://github.com/scijava/scijava-common) provides a utility class to assist in version retrieval: [VersionUtils](https://github.com/scijava/scijava-common/blob/scijava-common-2.39.0/src/main/java/org/scijava/util/VersionUtils.java#L51).
 -   Alternatively, the [specification](http://docs.oracle.com/javase/7/docs/api/java/lang/Package.html#getSpecificationVersion%28%29) or [implementation](http://docs.oracle.com/javase/7/docs/api/java/lang/Package.html#getImplementationVersion%28%29) version can be used - for example, as in the [LSMReader](https://github.com/fiji/LSM_Reader/commit/a6b26290ad71667efd75d77f3eef95d445d6eaff). Core Fiji libraries follow a convention of setting these versions to match the pom version, and they are set at the manifest level to ensure they are they same for all packages in a given component. **However**, the two versions are allowed to differ - each package is allowed its own specification and implementation version! Furthermore, classes in a default package will not be able to retrieve either version. So these functions can not be relied on as a general solution.
 
-Maven artifacts
----------------
+## Maven artifacts
 
 [Fiji](/fiji) and related [SciJava](SciJava) software uses [Maven](/develop/maven), an industry standard to declare metadata about a project, to build projects using said metadata, and to *deploy* the resulting artifacts to a [Maven repository](/develop/project-management#maven). Such repositories are essentially for developers what [update sites](/update-sites) are for users.
 
@@ -112,34 +107,29 @@ Guidelines
 
 The following guidelines are less technical and more philosophical, but represent best practice for core Fiji components.
 
-Open development process
-------------------------
+## Open development process
 
 Developers of Fiji components should invite others to contribute. That entails welcoming developers, acknowledging and working on pull requests, encouraging improvements, working together, enhancing upon each others' work, share insights, etc.
 
 To leverage the power of [open source](Open_source), the default for discussions should be to use [public channels](Communication). In other words, the question to ask should be "Is there any good reason why this conversation should be private?" instead of the opposite.
 
-Active bug management
----------------------
+## Active bug management
 
 Bug reports need to be acknowledged, participation in resolving bugs should be encouraged whenever possible, bugs should not go uncommented for months (we all have times when we are busy e.g. writing a paper; a little message helps the involved people understand), explanations are due when bugs go unresolved for years, etc
 
-Reusability and reliability
----------------------------
+## Reusability and reliability
 
 Whenever possible, source code should be reused. If necessary, improve the existing source code. Only rewrite from scratch when absolutely necessary.
 
 Make code reusable, i.e. define APIs to use the functionality. This requires a little bit of discipline so that third parties can rely on the interfaces.
 
-Regression tests
-----------------
+## Regression tests
 
 Writing regression tests is [easy](https://github.com/junit-team/junit/wiki/Getting-started): create a class in the *src/test/java/* directory structure and annotate methods with *@Test*, testing for various [assertions](https://github.com/junit-team/junit/wiki/Assertions) (the most common ones are *assertEquals()*, *assertTrue()* and *assertNotNull()*).
 
 In particular when fixing a bug, it is a good idea to write a regression test *first*, making sure that it actually fails. After that, one should develop the fix, getting a cozy and warm feeling once the regression test passes.
 
-Separation of concerns
-----------------------
+## Separation of concerns
 
 New features should be put into the appropriate component. E.g., when adding a general purpose utility, consider contributing to [SciJava Common](/libs/scijava-common) or [ImageJ Common](/plugins/imagej-common) instead of bundling it with your specific extension.
 

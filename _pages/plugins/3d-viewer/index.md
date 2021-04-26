@@ -9,8 +9,7 @@ This plugin offers hardware-accelerated visualization possibilities for image st
 
 ![](/media/3D Viewer overview.png "3D_Viewer_overview.png")
 
-Screencasts
------------
+## Screencasts
 
 Here you are a demo screencast separated into two different videos (\~15 min in total) showing many of the features of the 3D viewer:
 
@@ -27,13 +26,11 @@ Beyond this, a lot more screencasts can be found [here](/plugins/3d-viewer/scree
 -   Transformations
 -   3D Content in PDFs
 
-For users
----------
+## For users
 
 Comprehensive usage guidelines in form of FAQs and tutorials can be found [here](/plugins/3d-viewer/user-faqs).
 
-For developers
---------------
+## For developers
 
 A lot of functions of the 3D Viewer are macro-recordable. However, if that is not enough (or if the function is not recorded properly), it is better to [write a plugin](/develop/ij1-plugins). In the latter case no macros should be called from Java, as that would limit the code to work with the currently active 3D Viewer (even if the user clicked somewhere else).
 
@@ -74,8 +71,7 @@ Unfortunately, there are quite a large number of possible reasons. Please help u
 
 As with 3D Viewer crashes, there are quite a large number of possible reasons. Please help us by [debugging the issues](/develop/debugging#debugging-java3d-issues) and [contacting us](/help) with the information. You can also [report a bug](/help/report-a-bug), which will provide a lot of addidtional, potentially useful information.
 
-Publication
------------
+## Publication
 
 -   {% include publication content='3D Viewer' %}
 

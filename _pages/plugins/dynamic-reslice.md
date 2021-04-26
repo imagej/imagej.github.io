@@ -10,13 +10,11 @@ categories: Plugins
 {% endcapture %}
 {% include info-box name='Dynamic Reslice' software='[Fiji\_Plugins](/plugins/fiji-plugins)' author='Jean-Yves Tinevez & Albert Cardona from an ImageJ class' maintainer='Jean-Yves Tinevez (<tinevez_at_mpi-cbg_dot_de>)' filename=' [Dynamic\_Reslice.jar](https://fiji.sc/tinevez/Dynamic_Reslice.jar)' source=source released='22 April 2009' latest-version='v1.2 (23 April 2009)' status='active' %}
 
-Purpose
--------
+## Purpose
 
 This plugin is simply a dynamic version of the Reslice command as it is in ImageJ version 1.42l, by Patrick Kelly, Harvey Karten, {%- include person id='rasband' -%}, Julian Cooper and Adrian Deerr. It draws an orthogonal slice through the volume represented by the stack it is applied on along its ROI, and update dynamically this slice as the ROI is displaced or deformed.
 
-Installation
-------------
+## Installation
 
 ### ImageJ
 
@@ -26,8 +24,7 @@ Download the jar file [Dynamic\_Reslice.jar](https://fiji.sc/tinevez/Dynamic_Res
 
 The plugin is part of the Fiji distribution, as a member of the [Fiji\_Plugins](/plugins/fiji-plugins) package. You can find it in the {% include bc path='Image | Stacks'%} menu.
 
-Usage
------
+## Usage
 
 Open a stack and draw a line roi on it (any line roi will do it: straight line, poly-line, freehand line). When you call the plugin you are asked for two parameters.
 
@@ -36,8 +33,7 @@ Open a stack and draw a line roi on it (any line roi will do it: straight line, 
 
 The reslice window is drawn. Now change the roi shape or move it with the mouse. The result window refreshes automatically. Is is possible to change roi type on the fly.
 
-Scripting
----------
+## Scripting
 
 It is possible to call and control this plugin from other plugin or scripts. Here is a script example for use with [Fiji](/fiji).
 
@@ -96,13 +92,11 @@ for dx in range(170):
 IJ.showStatus('Done')
 ```
 
-Example
--------
+## Example
 
 ![](/media/DynamicresliceROI.gif "fig:DynamicresliceROI.gif") ![](/media/Dynamicreslice.gif "fig:Dynamicreslice.gif")
 
-Version history
----------------
+## Version history
 
 -   1.0 - 22 April 2009 - First working version.
 -   1.1 - 22 April 2009 - Albert Cardona added the separate thread for updating
@@ -111,8 +105,7 @@ Version history
     -   Can now be called and managed from scripts
     -   Major refactoring
 
-License: GPL
-------------
+## License: GPL
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License 2 as published by the Free Software Foundation.
 

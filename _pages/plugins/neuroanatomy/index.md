@@ -30,8 +30,7 @@ The requirements to run the Neuroanatomy suite of plugins are twofold: i) [Fiji]
 )
 4.  Click *Apply changes* and Restart ImageJ
 
-Notes
------
+## Notes
 
 SNT has its own [documentation](/plugins/snt). The list of *Image Processing for NeuroAnatomy and Tree-like Structures* ({% include github org='tferr' repo='hIPNAT' label='source' %}) is as follows:
 

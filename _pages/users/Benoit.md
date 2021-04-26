@@ -15,8 +15,7 @@ I am doing Image analysis consulting at Scionics GmbH and the Max Planck Institu
 
 <figure><img src="/media/CIP basic concept.PNG" title="CIP: simple script for simple analysis" width="266" alt="CIP: simple script for simple analysis" /><figcaption aria-hidden="true">CIP: simple script for simple analysis</figcaption></figure>
 
-Image analysis tools I developped
----------------------------------
+## Image analysis tools I developped
 
 -   [Manual drift correction plugin](/plugins/manual-drift-correction) : A simple script for doing manual sequence registration with minimal user input. sparsely annotate a reference point and its trajectory will be interpolated in between.
 
@@ -34,8 +33,7 @@ Image analysis tools I developped
 
 ------------------------------------------------------------------------
 
-Other project described on imagej wiki
---------------------------------------
+## Other project described on imagej wiki
 
 -   [MS-ECS-2D](/plugins/ms-ecs-2d-update-site) update site. [A collaboration](https://scholar.google.de/scholar?cluster=14136988997245303669&hl=fr&as_sdt=0,5) with Vastenhouw lab and Myers lab at MPI-CBG
 -   [CElegansBeadsAnalysis plugin](/plugins/c-elegans-beads-analysis). [A collaboration](https://scholar.google.de/scholar?cluster=14574708122410072857&hl=fr&as_sdt=0,5) with the Kurzchalia lab at MPI-CBG (my first IJ script/plugin ;-)

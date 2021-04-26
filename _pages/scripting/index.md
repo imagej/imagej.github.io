@@ -37,15 +37,13 @@ Using an interpreter
 
 All scripting languages use the same basic interpreter, with the following common features.
 
-General key bindings
---------------------
+## General key bindings
 
 -   {% include key content='up' %}: bring the previously typed command.
 -   {% include key content='down' %}: bring the next typed command.
 -   {% include key content='enter' %} or {% include key content='return' %}: execute the contents of the prompt.
 
-Multiline editing and keybindings
----------------------------------
+## Multiline editing and keybindings
 
 You can enlarge the prompt by dragging the middle bar.
 
@@ -53,8 +51,7 @@ You can enlarge the prompt by dragging the middle bar.
 -   {% include key content='Shift\|\|Up' %}: move to the line above within the prompt.
 -   {% include key content='Shift\|Down' %}: move to the line below within the prompt.
 
-Selecting and executing text from the screen
---------------------------------------------
+## Selecting and executing text from the screen
 
 On selecting text, a popup offers to:
 
@@ -95,8 +92,7 @@ If you aren't able to find your script, you can always use the [search bar](/lea
 
 Commands added to the menu in the described way can be called from other scripts. Use the [macro recorder](/scripting/macro#the-recorder) to get the required code for doing so.
 
-Adding JAR-packaged scripts to the menu
----------------------------------------
+## Adding JAR-packaged scripts to the menu
 
 Scripts can be packaged in a JAR file for easier distribution to your colleagues and via \[Update Sites\]. For this purpose, [example-script-collection](https://github.com/imagej/example-script-collection) can be used as the template Maven project.
 

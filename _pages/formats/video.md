@@ -8,8 +8,7 @@ categories: Import-Export
 
 Out of the box, ImageJ has limited support for some video formats such as AVI and [QuickTime](/formats/quicktime).
 
-Plugins
--------
+## Plugins
 
 There are several ways to enable support for more video formats:
 
@@ -23,15 +22,13 @@ There are several ways to enable support for more video formats:
 
 -   For exporting video, you could try the [Save As Movie](https://sites.google.com/site/qingzongtseng/save-as-movie) plugin. Unfortunately, there is no update site for it; you must perform a complex installation procedure manually.
 
-Transcoding
------------
+## Transcoding
 
 Another strategy is to transcode your video to an uncompressed format using a tool such as QuickTime Pro, VirtualDub or FFmpeg on the command line. The uncompressed video stream can then easily be opened in ImageJ without the need for additional plugins. Similarly, for saving video, you can write to an uncompressed format, then compress it afterward using an external tool.
 
 For files larger than 4GB, you may run into trouble with otherwise excellent transcoders like FFmpeg. For cases like that, check out [media player](https://www.videolan.org/vlc/VLC) and the [k-lite codec pack](https://www.codecguide.com/download_kl.htm).
 
-Future directions
------------------
+## Future directions
 
 The {% include github org='scifio' repo='scifio-javacv' label='SCIFIO-JavaCV' %} project will offer out-of-the-box support for video formats supported by [OpenCV](/software/opencv) including those supported by FFmpeg. At the moment, the SCIFIO-JavaCV project is inactive due to lack of development resources.
 

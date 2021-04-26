@@ -672,8 +672,7 @@ Each [Node](https://fiji.sc/javadoc/ini/trakem2/display/Node.html) contains a [g
 -   Treeline and Connector: its nodes [getData()](https://fiji.sc/javadoc/ini/trakem2/display/Node.html#getData()) return a radius. The default value is zero.
 -   AreaTree: its nodes [getData()](https://fiji.sc/javadoc/ini/trakem2/display/Node.html#getData()) return a [java.awt.geom.Area](https://fiji.sc/javadoc/java/awt/geom/Area.html) instance, or null if none yet assigned to it.
 
-Obtaining the X,Y,Z coordinates of all nodes in a Tree
-------------------------------------------------------
+## Obtaining the X,Y,Z coordinates of all nodes in a Tree
 
 Here is how to iterate over all the node's X,Y,Z positions, in world coordinates:
 
@@ -708,8 +707,7 @@ Here is how to iterate over all the node's X,Y,Z positions, in world coordinates
       x, y, z = coord
       print "Coords for node", node, " : ", x, y, z
 
-Sorting nodes by their tags
----------------------------
+## Sorting nodes by their tags
 
     from ini.trakem2.display import Display
      
@@ -741,8 +739,7 @@ Sorting nodes by their tags
     for tag, tagged in sortNodesByTags(tree).iteritems():
       print "Nodes for tag '" + str(tag) + "':", len(tagged)
 
-Compute the betweenness centrality of every node
-------------------------------------------------
+## Compute the betweenness centrality of every node
 
 The centrality is the measure of how important is a node in tree, according to how many times any possible pair of nodes is linked by a path that passes through that node.
 
@@ -793,8 +790,7 @@ We may then use the centrality to colorize the tree with a heat map: the higher 
     # Show the tree in the 3D Viewer
     Display3D.show(tree.getProject().findProjectThing(tree))
 
-Compute the degree of every node
---------------------------------
+## Compute the degree of every node
 
 The degree of a node is the number of parent nodes that separate it from the root node. It's a built-in function in [Tree](https://fiji.sc/javadoc/ini/trakem2/display/Tree.html) (and also in [Node](https://fiji.sc/javadoc/ini/trakem2/display/Tree.html)):
 
@@ -829,8 +825,7 @@ In the following example, we colorize the tree based on the degree of the node: 
     # Show the tree in the 3D Viewer
     Display3D.show(tree.getProject().findProjectThing(tree))
 
-Find branch nodes or end nodes
-------------------------------
+## Find branch nodes or end nodes
 
 The [Tree](https://fiji.sc/javadoc/ini/trakem2/display/Tree.html) class offers methods to obtain the list of all branch points, end points, or both:
 
@@ -883,8 +878,7 @@ If you want to sort out all nodes in one pass, query the number of children that
 
 Keep in mind that the <i>root</i> node will be listed among the nodes above, so it's not counted as an end node (unless it doesn't have any children, e.g. when the tree consists of only the root node).
 
-Find out at which nodes the tree is connected to other trees, via Connector
----------------------------------------------------------------------------
+## Find out at which nodes the tree is connected to other trees, via Connector
 
 The idea here is to iterate all nodes of a tree, and determine, for each node, whether it is enclosed by the origin point of a Connector instance. Then, we query that connector for its target objects. In the end, we obtain a table of nodes vs. lists of objects that node is connected to:
 
@@ -927,8 +921,7 @@ The idea here is to iterate all nodes of a tree, and determine, for each node, w
 
 Similarly, we could compute the incomming connections. There is a convenience method [findConnectors()](https://fiji.sc/javadoc/ini/trakem2/display/Tree.html#findConnectors()) in class [Tree](https://fiji.sc/javadoc/ini/trakem2/display/Tree.html) to return two lists: that of the outgoing and that of the incomming Connector instances. From these, one can easily get the connectivity graph, which you may also get by right-clicking on a Display and going for "Export - Connectivity graph...".
 
-How to find out the network of all arbors, related via Connector instances
---------------------------------------------------------------------------
+## How to find out the network of all arbors, related via Connector instances
 
 The easiest way is to iterate all connectors and find out which objects they are relating. A [Connector](https://fiji.sc/javadoc/ini/trakem2/display/Connector.html) object has an origin (the root node) and any number of targets (all children nodes of the root node). Each node has a radius; any other object in the TrakEM2 project that intersects with the world coordinates of that radius will be considered associated as an origin or a target.
 
@@ -962,8 +955,7 @@ Notice how about we called <i>getOrigins(Tree)</i> and <i>getTargets(Tree)</i>, 
 
 **NOTE**: you may also want to use the "Export - NeuroML" menu command, in the right-click popup menu.
 
-Measure all spine necks in a neuronal arbor
--------------------------------------------
+## Measure all spine necks in a neuronal arbor
 
 **UPDATE**: as of version 0.8n, this functionality is included in TrakEM2. Right-click on a selected treeline or areatree and choose "Measure - Shortest distances between all pairs of nodes tagged as..."
 
@@ -1048,8 +1040,7 @@ Then, we iterate all nodes of the arbor looking for nodes that have the "neck st
 Interact with a Ball object
 ===========================
 
-Set the radius of all balls of all Ball objects in a project
-------------------------------------------------------------
+## Set the radius of all balls of all Ball objects in a project
 
     ##############
     # Set a specific radius to all individual spheres
@@ -1071,8 +1062,7 @@ Set the radius of all balls of all Ball objects in a project
       ballOb.repaint(True, None)
     ##############
 
-Export all Ball objects as a CSV file
--------------------------------------
+## Export all Ball objects as a CSV file
 
     # Open a text window containing all Ball objects as a CSV file,
     # in calibrated coordinates.
@@ -1294,21 +1284,18 @@ Notice that Jython lets you define the methods of event listeners as additional 
 See also
 ========
 
-TrakEM2 tutorials
------------------
+## TrakEM2 tutorials
 
 -   TrakEM2 [how to](http://www.ini.uzh.ch/~acardona/howto.html), with java code examples.
 -   TrakEM2 [video tutorials](/plugins/trakem2/tutorials).
 
-Jython scripting
-----------------
+## Jython scripting
 
 -   [Jython Scripting](/scripting/jython) in fiji.
 -   [Jython webpage](http://www.jython.org).
 -   [Fiji scripting tutorial](http://www.ini.uzh.ch/~acardona/fiji-tutorial) in Jython.
 
-Jython scripts for TrakEM2
---------------------------
+## Jython scripts for TrakEM2
 
 All the following are included in Fiji's plugins/Examples/plugins/trakem2\_Example\_Scripts/ folder:
 

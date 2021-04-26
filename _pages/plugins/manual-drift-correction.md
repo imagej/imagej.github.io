@@ -6,13 +6,11 @@ categories: Plugins,Registration
 
 {% include info-box software='Fiji' name='Manual drift correction' author='[Benoit Lombardot](/users/Benoit)' maintainer='[Benoit Lombardot](/users/Benoit)' released='22 March 2016' filename='![](/media/Manual Drift Correction-1.0.0.jar.zip "fig:Manual_Drift_Correction-1.0.0.jar.zip")' source=' [github](https://github.com/mpicbg-scicomp/Manual_drift_correction)' category='[Plugins](Category_Plugins), [Registration](Category_Registration)' %}
 
-Goal of the plugin
-------------------
+## Goal of the plugin
 
 Manual Drift Correction plugin allows to correct drift in an image sequence by using a few landmarks (Rois) gathered in the Roi Manager. The main interest of the plugin is that it avoid tedious annotation of the image by interpolating between key landmarks. Thus rather than providing input for each image of the sequence, the user only need to provide landmark when significant changes occure.
 
-Usage
------
+## Usage
 
 ### Installation
 
@@ -40,8 +38,7 @@ The plugin also expects Landmarks to be provided to the Roi Manager in chronolog
 
 Currently the plugin corrects drift only with 2D translation (but that could be updated in the future to 3D and other kind of global transformation)
 
-Processing description
-----------------------
+## Processing description
 
 The plugin is relying on the [mpicbg library](http://javadoc.imagej.net/MPI-CBG/) that is part of Fiji distribution. This library is used for creating transformation from the landmarks and performing the actual transformation of the image.
 
@@ -55,8 +52,7 @@ The processing is successively:
     -   The image is then transformed to the reference image
 -   Finally the registered sequence is displayed in Fiji UI.
 
-Development plan
-----------------
+## Development plan
 
 This implementation could be improved. Here are a few feature that could be added:
 

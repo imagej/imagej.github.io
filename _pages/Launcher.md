@@ -5,8 +5,7 @@ title: Launcher
 
 The ImageJ launcher is a native application for launching ImageJ.
 
-Introduction
-------------
+## Introduction
 
 The launcher supports the following flavors of ImageJ:
 
@@ -16,18 +15,15 @@ The launcher supports the following flavors of ImageJ:
 
 The launcher is a native executable whose purpose is to start up a Java Virtual Machine and run ImageJ 1.x, Fiji or ImageJ2 in it. It is used in the [Fiji](/fiji) distribution as well as in [ImageJ2](/software/imagej2).
 
-Source
-------
+## Source
 
 The ImageJ launcher source code lives on {% include github org='imagej' repo='imagej-launcher' label='GitHub' %}.
 
-Purpose
--------
+## Purpose
 
 The launcher provides a platform-specific entry point into the ImageJ Java application. Its most major function is to facilitate the ImageJ Updater feature by taking care of pending updates when ImageJ is first launched.
 
-Usage
------
+## Usage
 
 For an overview of supported options, run:
 
@@ -52,8 +48,7 @@ The launcher can do all kinds of things, like:
 -   Link Fiji into the PATH: **ln -s $(pwd)/ImageJ-<platform> $HOME/bin/fiji && fiji**
 -   Start Fiji and run a menu entry directly: **./ImageJ-<platform> --run System\_Clipboard** (the underscore was used in place of a space to avoid having to quote the argument)
 
-Download
---------
+## Download
 
 The launcher comes with ImageJ1, ImageJ2 and Fiji.
 

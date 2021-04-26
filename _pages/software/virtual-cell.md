@@ -12,8 +12,7 @@ categories: Software,SciJava,Citable
 
 A VCell plugin for ImageJ is currently in the works! Stay tuned!
 
-Publication
------------
+## Publication
 
 -   {% include publication content='VCell' %}
 

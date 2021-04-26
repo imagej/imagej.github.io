@@ -4,15 +4,13 @@ title: Fiji Logo 3D
 categories: Plugins,Scripting
 ---
 
-Purpose
--------
+## Purpose
 
 This [javascript](/scripting/javascript) code displays the Fiji logo in 3D, within the [3D Viewer](/plugins/3d-viewer), and illustrate how to create and display 3D objects from a script, using Fiji facilities.
 
 The script is maintained by {%- include person id='dscho' -%}.
 
-Code
-----
+## Code
 
     importClass(Packages.ij3d.Image3DUniverse);
 
@@ -93,8 +91,7 @@ Code
     universe.addMesh(mesh, blue, "/fiji", 0);
     universe.show();
 
-See also
---------
+## See also
 
 -   [Javascript Scripting](/scripting/javascript)
 -   [3D Viewer](/plugins/3d-viewer)

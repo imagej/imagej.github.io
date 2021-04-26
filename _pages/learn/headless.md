@@ -23,8 +23,7 @@ On MacOSX, there is no problem: Aqua provides GUI-independent text rendering (ma
 Possible solutions
 ==================
 
-The `--headless` mode
----------------------
+## The `--headless` mode
 
 
 {% capture text%}
@@ -65,8 +64,7 @@ the `getArgument()` is used to grab the parameter string itself, and it is then 
 
 {% include warning-box content='Please note that you will not be able to use [script parameters](/scripting/parameters) with `-macro`. Follow instructions in [Scripting Headless](/scripting/headless) instead.' %}
 
-Xvfb
-----
+## Xvfb
 
 Another method is to have a virtual desktop, e.g. {% include wikipedia title='Xvfb' text='Xvfb'%}. This will allow ImageJ to start with a virtualised graphical desktop.
 
@@ -112,7 +110,6 @@ A more complex shell script that wraps a macro for use with Xvfb (thanks to Nest
 
 See also [this post on the ImageJ mailing list](https://list.nih.gov/cgi-bin/wa.exe?A2=IMAGEJ;5ace1ed0.1508).
 
-Rewriting as scripts or plugins
--------------------------------
+## Rewriting as scripts or plugins
 
 The most robust method is to rewrite macros as scripts that do not require interaction with the GUI to begin with. Unfortunately, this is the most involved solution, too, since it usually takes some time to convert macros.

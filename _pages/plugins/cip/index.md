@@ -35,15 +35,13 @@ Classic Image Processing (CIP) is an image procesing toolbox which provides func
 Getting started
 ===============
 
-Installation
-------------
+## Installation
 
 If you want to use CIP in ImageJ script editor, simply add the CIP update site to your imageJ installation ([instruction to follow an update site](/update-sites/following)) restart imagej, open the script editor and you are good to go. For inspiration, one can look at one of the [example scripts](/plugins/cip#script-example).
 
 If one would like to contribute or simply toy with the source code of the library, its source code and the instruction for the project set up in an IDE can be found on the [project repository](https://github.com/benoalo/CIP).
 
-Documentation organisation
---------------------------
+## Documentation organisation
 
 To build a script with CIP, follow one of the examples below or try one of the [repository](https://github.com/benoalo/CIP/tree/master/scripts%7Cproject) examples.
 

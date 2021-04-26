@@ -6,8 +6,7 @@ categories: News,Hackathons,ImageJ2,KNIME
 
 From Monday, January 11, 2016 through Friday, January 22, 2016, {%- include person id='dietzc' -%} of the [University of Konstanz](http://www.uni-konstanz.de/en/welcome/) hosted \~30 developers at the [KNIME Konstanz Regional Office](https://www.knime.org/contact) for a [hackathon](/events/Hackathon) to develop the [KNIME](/software/knime) Image Processing extensions along with the underlying [ImageJ Ops](/libs/imagej-ops) library, as well as other supporting technologies such as [ImgLib2](/imglib2) and [ClearVolume](/plugins/clearvolume).
 
-Timeline
---------
+## Timeline
 
 The following chart illustrates when everyone was present:
 
@@ -118,8 +117,7 @@ PlotData=
 
 </timeline>
 
-Hackathon progress
-------------------
+## Hackathon progress
 
 ### Mark Hiner
 
@@ -215,14 +213,12 @@ Hackathon progress
     -   {% include github org='imglib' repo='imglib2-algorithm' pr='16' label='integralimg-of-squares' %}
     -   {% include github org='imagej' repo='imagej-ops' pr='335' label='localthreshold-on-rai' %}
 
-Technical discussions
----------------------
+## Technical discussions
 
 -   The future of 3D in ImageJ ([1](http://forum.imagej.net/t/future-directions-of-3d-in-imagej/669))
 -   How to handle "lazy" ops ({% include github org='imagej' repo='imagej-ops' issue='173' label='imagej/imagej-ops\#173' %})
 
-Future directions
------------------
+## Future directions
 
 -   {%- include person id='kephale' -%} - Explore updating the [3D Viewer](/plugins/3d-viewer) to use [Ops](/libs/imagej-ops) and [ClearVolume](/plugins/clearvolume) under the hood.
 

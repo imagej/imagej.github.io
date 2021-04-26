@@ -14,15 +14,13 @@ categories: Plugins,Registration,Citable
 {% endcapture %}
 {% include info-box software='Fiji' name='Atlas Toolkit' author=' [Grocott Lab](http://www.grocottlab.com)' maintainer=maintainer filename='Atlas\_Toolkit\_1.0-SNAPSHOT.jar' source=source released='November 16<sup>th</sup>, 2015' latest-version='1.0, May 6<sup>th</sup>, 2015' status='stable, active' category='[Registration](Category_Registration)' website=' [www.grocottlab.com](http://www.grocottlab.com/software)' %}The Atlas Toolkit plugin is a collection of tools developed to achieve group-wise elastic registration of 3D objects by decomposing the alignment problem into a sequence of orthogonal 2D elastic registrations, for which each object is registered to every other. These 2D elastic registrations are powered by the [BUnwarpJ](/plugins/bunwarpj) plugin, and registration is guided by the gross morphology of the corresponding 3D objects, which can be defined using the [Segmentation Editor](/plugins/segmentation-editor) plugin.
 
-Installation of the plugin
---------------------------
+## Installation of the plugin
 
 The plugin can be quickly installed via the project's update site. Please refer to the [ **tutorial**](/update-sites) on how to add our update site to your Fiji installation. Our update site has the following URL:
 
 ` `**`http://sites.imagej.net/GrocottLab/`**
 
-What's in the toolkit?
-----------------------
+## What's in the toolkit?
 
 Atlas Toolkit includes a number of different tools to help building atlases. Many of these will be of limited use/interest.
 
@@ -56,8 +54,7 @@ The complete list of tools is as follows:
 
 -   Cluster Viewer
 
-Label Registration 3D
----------------------
+## Label Registration 3D
 
 ### Video demonstration
 
@@ -67,15 +64,13 @@ The following screencast demonstrates Label Registration 3D in use.
 
 ===Before'%}
 
-Reference
----------
+## Reference
 
 Please cite the following original research article in which the Atlas Toolkit is described:
 
 -   {% include publication content='Atlas Toolkit' %}
 
-License
--------
+## License
 
 This program is **free software**; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt](http://www.gnu.org/licenses/gpl.txt)).
 

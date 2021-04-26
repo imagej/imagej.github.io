@@ -20,7 +20,6 @@ To create a new projection:
     1.  If an anaglyph projection is attempted on a colored image stack, a prompt to convert the image stack to grayscale will appear. Color is incompatible with the lookup tables used in the anaglyph projection, and so the stack must be converted to grayscale to continue.
 5.  Select "Ok!"
 
-About
------
+## About
 
 The Stereoscopic 3D Projection plugin was created by Joe Napoli for [Visikol, Inc](https://visikol.com) as an aid for visualizing image stacks.

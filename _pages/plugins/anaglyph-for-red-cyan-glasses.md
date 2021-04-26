@@ -4,13 +4,11 @@ title: Anaglyph for Red Cyan glasses
 categories: Plugins,Scripting,Unmaintained
 ---
 
-Purpose
--------
+## Purpose
 
 This is an example JRuby script, which is described in the page on [JRuby Scripting](/scripting/jruby#example-generating-redyan-anaglyphs).
 
-Code
-----
+## Code
 
     # The excessive comments are because this is supposed to be a helpful
     # example :)
@@ -74,8 +72,7 @@ Code
 
     run "RGB Merge...", merge_options
 
-See also
---------
+## See also
 
 [JRuby Scripting](/scripting/jruby)
 

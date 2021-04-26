@@ -31,8 +31,7 @@ Startup Prompt
 Main Dialog
 ===========
 
-Menu Commands
--------------
+## Menu Commands
 
 ### File
 
@@ -105,8 +104,7 @@ Contains commands for organizing tracing views on screen, plus commands for disp
 -   {% include bc path='Show Cached Filtered Image'%} Displays the cached filtered image in a separate window. Note a filtered image must be loaded in order to use this feature. The process of loading a filtered image is detailed in [Generating Filtered Images](/plugins/snt/step-by-step-instructions#generating-filtered-images).
 -   {% include bc path='Show Cached Hessian Tubeness Image'%} Displays the cached *Hessian (Tubeness) image* in a separate window. Note there are two ways to enable this feature. Either 1) enable *Hessian-based analysis* then run the *Cache All Hessian Computations* command from the "Auto-tracing" gear drop-down menu or 2) use the *Load Precomputed "/plugins/tubeness" Image* option in the same gear menu. These features are detailed in the "Auto-tracing" section of the [Main Dialog](/plugins/snt/manual#main-dialog) overview guide.
 
-Main Tab
---------
+## Main Tab
 
 This home tab aggregated widgets for tracing and frequent operations.
 
@@ -219,8 +217,7 @@ The \_\_\_SHADOW3\_\_\_ offers several ways to colorize Paths: 1) Using {% inclu
 {% endcapture %}
 {% include tip id='coloring-paths' tip=tip %}
 
-Options Tab
------------
+## Options Tab
 
 This tab aggregated widgets for advanced settings.
 
@@ -286,8 +283,7 @@ This tab aggregated widgets for advanced settings.
     -   The max number of parallel threads to be used by SNT, as specified in ImageJ's {% include bc path='Edit|Options|Memory & Threads...'%}
     -   *Reset All Preferences...* Resets all options to their default values. A restart of SNT may be required for changes to take effect.
 
-3D Tab
-------
+## 3D Tab
 
 <img src="/media/SNT-3D-Tab.png" title="fig:&quot;3D&quot; menu tab" width="300" alt="&quot;3D&quot; menu tab" /> This tab aggregates widgets related to 3D interaction.
 
@@ -332,8 +328,7 @@ Path Manager
 
 ![Path Manager](/media/SNT-Path-Manager.png "fig:Path Manager") The Path Manager dialog displays all existing paths in a hierarchical structure (tree), where one path is "primary" (path 0) and all other paths (paths 1...N) are children of the primary path. The dialog also contains several menus with various editing, tagging, refinement/fitting, filling and analysis options. Paths can be searched by name and/or tags in the text filter, with more sophisticated search capabilities in the Advanced Filtering Menu.
 
-Menu Commands
--------------
+## Menu Commands
 
 ### Edit
 
@@ -493,8 +488,7 @@ This menu contains several options which provide quick ways to analyze and visua
 {% include clear%}
 
 
-Filter Toolbar
---------------
+## Filter Toolbar
 
 ![](/media/SNT-Path-Manager-Text-Filter.png "fig:") The filter toolbar allows paths to be searched and filtered quickly using tags (colors, annotations, SWC-type, etc.) or morphometric properties. The text field is used for text-based searches (recent searches can be recovered through its drop-down menu). The {% include key content='down' %} and {% include key content='up' %} arrow keys find the next/previous occurrence of the entered phrase, while the ![](/media/SNT-Text-Filter-Balloon-Button.png "fig:SNT-Text-Filter-Balloon-Button.png") button highlights all occurrences of the entered phrase. Settings for advance text-based filtering can be accessed through the ![](/media/SNT-Text-Filter-Menu-Button.png "fig:SNT-Text-Filter-Menu-Button.png") button, including wildcard support, case sensitive matching, and replace-by-pattern. In addition, the ![](/media/SNT-Text-Filter-Advanced-Button.png "fig:SNT-Text-Filter-Advanced-Button.png") button restricts filtering to the selected subset of Path(s). Other means of filtering Paths include: !["Color Filters" menu](SNT-Path-Manager-Text-Filter-Color-Filters.png "fig:"Color Filters" menu")
 

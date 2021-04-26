@@ -19,22 +19,19 @@ If you are certain that you want to write a plugin in Java, keep on reading!
 Plugins
 =======
 
-What are plugins (in terms of files)?
--------------------------------------
+## What are plugins (in terms of files)?
 
 -   Plugins are a dedicated mechanism for extending ImageJ/Fiji
 -   A plugin consists of one or more Java classes living inside a *.jar* file in *plugins/* (exception: a single *.class* file)
 -   All plugin *.jar* (or *.class*) files must contain an underscore in their name
 -   Plugins can use 3rd party libraries; in Fiji, store them in the *jars/* directory (in ImageJ you have to put them into the *plugins/* directory, and to avoid funny menu entries in the Plugins menu, you should rename them if their name contains an underscore)
 
-Updating plugins
-----------------
+## Updating plugins
 
 -   After storing the *.jar* file(s) into the *plugins/* (or *jars/*) directory, call {% include bc path='Help | Refresh Menus'%} or restart Fiji
 -   If the respective plugin is in-use, you might get funny results when refreshing the menus, due to limitations in Sun Java's handling of *.jar* files.
 
-What are plugins (in terms of menu entries)?
---------------------------------------------
+## What are plugins (in terms of menu entries)?
 
 -   If the *.jar* file contains a file called *plugins.config*, it determines what menu items are provided by the plugin
 -   If the *.jar* file does not contain a file called *plugins.config*, all contained classes containing an underscore in their name are added to the *Plugins* menu
@@ -56,8 +53,7 @@ A class can be reused for multiple menu entries, by passing an optional argument
 `Help, "Bug report", fiji.Send("bug")`  
 `Help, "Contact", fiji.Send("contact")`
 
-What are plugins (in terms of Java code)?
------------------------------------------
+## What are plugins (in terms of Java code)?
 
 There are two different types of plugins:
 
@@ -85,8 +81,7 @@ A general plugin looks like this:
 
 **Note:** it is of course possible to implement a filter plugin using the *PlugIn* interface, but ImageJ will perform more convenience functions if you use the *PlugInFilter* interface, such as verifying that there is an image and that it is of the correct type, and error handling.
 
-Limitations
------------
+## Limitations
 
 -   Plugins can only implement menu entries (in particular, they cannot provide tools in the toolbar)
 -   Some functions which are easy to call via macros are not available via the public Java API (e.g. {% include bc path='Image | Stacks | Plot Z-axis profile...'%})
@@ -109,8 +104,7 @@ If you would like to use the script editor, see the sections for the [other supp
 -   Provides code templates
 -   Convenience functions, (add import, open JavaDoc, for given class, etc)</s>
 
-Quick Start
------------
+## Quick Start
 
 <s>To plunge into writing plugins, make sure that there is an active image (e.g. a sample image), start the [Script Editor](/scripting/script-editor) ({% include bc path='File | New | Script'%}), and select the *Process Pixels* menu item from the {% include bc path='Templates | Java'%} menu. Then, run the plugin with *Run&gt;Run*.</s>
 
@@ -138,8 +132,7 @@ ImageJ's API
 
 The source of the various Fiji-related projects is spread over several source code repositories, and so is their API documentation. An overview of all the javadoc resources can be found on [this page with javadoc links](http://javadoc.imagej.net/).
 
-The class *IJ*
---------------
+## The class *IJ*
 
 The class {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/IJ.java' label='ij.IJ' %} is a convenience class with many static functions. Two of them are particularly useful for debugging:
 
@@ -149,8 +142,7 @@ The class {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/I
     // Show a message window
     IJ.showMessage("Hello, World!");
 
-The class *ImageJ*
-------------------
+## The class *ImageJ*
 
 The class {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/ImageJ.java' label='ij.ImageJ' %} implements the main window of ImageJ / Fiji, and you can access it via *ij.IJ*'s static method *getInstance()*:
 
@@ -160,8 +152,7 @@ The class {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/I
 
 Typically, all you do with that instance is to test whether ImageJ is used as a library (in which case the instance is *null*).
 
-The class *WindowManager*
--------------------------
+## The class *WindowManager*
 
 Use the class {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/WindowManager.java' label='ij.WindowManager' %} to access the ImageJ windows / images:
 
@@ -174,8 +165,7 @@ Use the class {% include github org='imagej' repo='ImageJA' path='src/main/java/
 
 When implementing a filter plugin, you usually do not need to access *WindowManager* directly.
 
-The hierarchy of the classes representing an image
---------------------------------------------------
+## The hierarchy of the classes representing an image
 
 All images are represented as instances of {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/ImagePlus.java' label='ij.ImagePlus' %}. This class wraps an {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/ImageStack.java' label='ij.ImageStack' %} of slices. Slices are data-type dependent instances of {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/process/ImageProcessor.java' label='ij.process.ImageProcessor' %}: {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/process/ByteProcessor.java' label='ij.process.ByteProcessor' %}, {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/process/ShortProcessor.java' label='ij.process.ShortProcessor' %}, {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/process/FloatProcessor.java' label='ij.process.FloatProcessor' %}, and {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/process/ColorProcessor.java' label='ij.process.ColorProcessor' %}. Or graphically:
 
@@ -192,8 +182,7 @@ Example usage:
     // duplicate the slice
     ImageProcessor ip2 = ip.duplicate();
 
-Beyond 3D: Hyperstacks
-----------------------
+## Beyond 3D: Hyperstacks
 
 In ImageJ, you can represent more than 3 dimensions in an image: *X, Y, Z, channels, frames (time)*. Internally, these 5-dimensional images are still represented as stacks of images (essentially, a one-dimensional array of *ImageProcessor* instances). The *ImagePlus* class knows how to transform *(channel, z-slice, frame)* triplets into the corresponding index in the *ImageStack*, though:
 
@@ -209,8 +198,7 @@ In ImageJ, you can represent more than 3 dimensions in an image: *X, Y, Z, chann
 
 **Note:** for historical reasons, slice indices (and channel and frame indices as well) start at <u>1</u>. This is in contrast, e.g. to the x, y coordinates, which start at <u>0</u> (as one might be used to from other computer languages except BASIC, Pascal and [MATLAB](/scripting/matlab)).
 
-Working with the pixels' values
--------------------------------
+## Working with the pixels' values
 
 The subclasses of the *ImageProcessor* class implement 2-dimensional images for specific data types (8-bit, 16-bit, 32-bit floating point, and RGB color). Let's start with the grayscale ones:
 
@@ -248,8 +236,7 @@ Accessing the pixels' values gets trickier when it comes to RGB images. These us
             int blue = (value >> 16) & 0xff;
     }
 
-Making new images
------------------
+## Making new images
 
 To make a new image - be it 2, 3, 4 or 5 dimensional - you have to create instances of *ImageProcessor* first. Example:
 
@@ -274,8 +261,7 @@ This example implements a method that shows a gradient along a given angle. You 
     // you do not need to show intermediate images
     image.show();
 
-Informing the user about the progress
--------------------------------------
+## Informing the user about the progress
 
 This code snippet shows you how to update the progress bar and the status text:
 
@@ -290,8 +276,7 @@ This code snippet shows you how to update the progress bar and the status text:
 
 **Note:** Calling *IJ.showProgress(n, n);* will hide the progress bar; Therefore, it makes sense to update the progress bar at the <u>end</u> of a loop iteration, so that after the last iteration, the progress bar is hidden.
 
-Frequently used operators
--------------------------
+## Frequently used operators
 
 The [ImageProcessor](http://jenkins.imagej.net/job/ImageJ1-javadoc/javadoc/ij/process/ImageProcessor.html) class has a few methods such as *smooth()*, *sharpen()*, *findEdges()*, etc
 
@@ -301,8 +286,7 @@ The [ImageProcessor](http://jenkins.imagej.net/job/ImageJ1-javadoc/javadoc/ij/pr
 -   *Open .java file for class...* (requires the respective source files to be present in the Fiji directory, such as after [Downloading and Building Fiji From Source](/fiji/building-from-source), or
 -   *Open .java file for menu item...* (also needs the source files).
 
-Plots
------
+## Plots
 
 You can show a plot window very easily using the [Plot](http://jenkins.imagej.net/job/ImageJ1-javadoc/javadoc/ij/gui/Plot.html) class:
 
@@ -337,8 +321,7 @@ To update the contents of a plot window, remember the return value of *plot.show
         plotWindow.drawPlot(plot);
     }
 
-The results table
------------------
+## The results table
 
 Whenever your plugin quantifies things in the images, you might want to output the values in a results table:
 
@@ -354,8 +337,7 @@ Whenever your plugin quantifies things in the images, you might want to output t
     }
     rt.show("Results");
 
-Regions of interest
--------------------
+## Regions of interest
 
 You can access the ROIs in the following fashion:
 
@@ -389,8 +371,7 @@ Of course, you can also set ROIs programmatically:
     Roi roi = new OvalRoi(10, 10, 90, 90);
     image.setRoi(roi);
 
-Calling ImageJ2 from ImageJ 1.x
--------------------------------
+## Calling ImageJ2 from ImageJ 1.x
 
 You can use ImageJ2-specific functionality from within an ImageJ 1.x plugin. For example, ImageJ2 provides a spreadsheet-like results table that supports string cells. You can write an ImageJ 1.x plugin that produces such a spreadsheet, displaying it onscreen.
 
@@ -398,8 +379,7 @@ See the {% include github org='imagej' repo='tutorials' path='maven-projects/cal
 
 > {% include github org='imagej' repo='tutorials' path='maven-projects/call-modern-from-legacy/src/main/java/DisplayATable.java' label='DisplayATable.java' %}
 
-Further tips
-------------
+## Further tips
 
 Please see also the developers tips how to [use ImageJ's API effectively](/develop/tips#using-imagej-effectively).
 

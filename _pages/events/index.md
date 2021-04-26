@@ -6,8 +6,7 @@ categories: community
 
 Please see [this list on the Image.sc Forum](https://forum.image.sc/t/upcoming-image-analysis-events/19912) of upcoming conferences, courses, and other events in the scientific imaging community.
 
-Past events
------------
+## Past events
 
 -   [Presentations](/learn/presentations) – from past conferences and workshops
 -   [Conferences](/events/Conference) – past conferences focused on ImageJ

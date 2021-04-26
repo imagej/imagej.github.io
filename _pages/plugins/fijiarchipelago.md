@@ -7,8 +7,7 @@ artifact: sc.fiji:Fiji\_Archipelago
 
 Fiji Archipelago is a plugin that brings Cluster functionality to Fiji
 
-Overview
---------
+## Overview
 
 Fiji Archipelago is a tool designed to make it easy for programmers to export Fiji/ImageJ functionality over a network to several other computers.
 
@@ -16,8 +15,7 @@ For the purposes of this article, the root node is the computer from which the c
 
 Client nodes either may be started by the root node, or else the root node may be configured to accept connections from client nodes that have been started manually. By default, communication is done by standard IO over ssh when possible, but may optionally be done via insecure sockets instead.
 
-Requirements
-------------
+## Requirements
 
 -   Root and client nodes should all have the same version of Fiji installed.
 -   Fiji Archipelago makes use of ssh and ssh key pair authentication, so the server must have a private key file that matches a public key in authorized\_hosts on the client.
@@ -25,8 +23,7 @@ Requirements
 
 So far, this has been extensively tested only on Linux machines, but it should be platform-independent.
 
-Features
---------
+## Features
 
 -   On-the-fly addition of new cluster nodes
 -   Volunteer cluster nodes. A node may be started manually (this has security implications).
@@ -34,8 +31,7 @@ Features
 -   Security - root/client communication is done over ssh standard IO by default.
 -   Easy API - submit Callables to an ExecutorService.
 
-Usage
------
+## Usage
 
 ### Existing Archipelago Plugins
 
@@ -170,8 +166,7 @@ Clicking the Show Node Statistics button will open a dialog that displays usage 
 
 Select this checkbox if you would like to display debug output on your command line. This is potentially verbose, but should include useful information if your cluster behaves erroneously.
 
-Programmers
------------
+## Programmers
 
 The Cluster class provides [ExecutorServices](http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ExecutorService.html) through Cluster.getService(n). The argument n may be either an int or a float. If an int, any processes submitted to the ExecutorService are assumed to require n number of cores. If a float, processes are assumed to require a fraction n of the available resources of any given computer. For most usage cases, Cluster.getCluster().getService(1) will return the desired service.
 

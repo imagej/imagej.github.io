@@ -29,8 +29,7 @@ The package currently contains a few plugins:
 
 -   ***[jSLIC superpixels](#jSLIC_-_superpixels)*** - is segmentation method for clustering similar regions - superpixels - in given image which are usually used for other segmentation techniques. The only two parameters are average (initial) size of each superpixel and rigidity parameter in range *&lt;0,1&gt;*.
 
-jSLIC - superpixels
--------------------
+## jSLIC - superpixels
 
 Recently, SLIC (Simple Linear Iterative Clustering) was introduced for general images and presented as a powerful intermediate phase for further image segmentation, classification and registration. SLIC is an adaptation of the k-means algorithm for superpixel generation with two important distinctions: (a) the weighted distance measure combines colour (using the CIELAB colour space, which is widely considered as perceptually uniform for small colour distances) and spatial proximity and (b) the search space is reduced by limiting to a region 2Sx2S, proportional to the superpixel size S. The search space reduction has a great impact on the speed of whole algorithm.
 

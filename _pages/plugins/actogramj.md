@@ -20,8 +20,7 @@ categories: Plugins,Visualization,Citable
 
 **ActogramJ** - Visualizing and analyzing activity diagrams in behavioral experiments
 
-Publication
------------
+## Publication
 
 -   {% include publication content='ActogramJ' %}
 

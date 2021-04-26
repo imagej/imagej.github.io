@@ -11,8 +11,7 @@ The [Imglib](/imglib1) library makes extensive use of {% include wikipedia title
 
 This short page does not aim at being an introduction on generics, but rather is a quick and dirty introduction on how to tune your java files to use Imglib. The deep meaning of semantics is skipped, and we will try to provide a quick template to start with. However, we will attempt to be quite pedestrian when ImageJ itself is involved, and try to display the code and the commands needed to generate a plugin from scratch.
 
-Importing `imglib`
-------------------
+## Importing `imglib`
 
 We will work on a dummy plugin that takes an image and sum the pixel value over all pixels. As an exercise, we choose to use imglib classes internally. It will turn out to be quite convenient, even for a dummy plugin.
 
@@ -63,8 +62,7 @@ Now, there is already quite a few things we can stumble on:
 
 But anyway, let us move on.
 
-Converting from `ImagePlus` to Imglib
--------------------------------------
+## Converting from `ImagePlus` to Imglib
 
 As we use this plugin from within Fiji, we will receive images in form of an `ImagePlus`. Since we want to use Imglib internally, we need to convert it. This is done using the class <b>`ImagePlusAdapter`</b> that has various static utilities to do so.
 
@@ -103,8 +101,7 @@ This is like saying: "this plugin operates on `T`", whatever `T` is. In our spec
 
 Here, we want to access the *real* pixel value (note that *complex* values are more general, so if you implement an algorithm on *complex* types, it will work on *real* ones, too, but not vice versa), so we will use `RealType`. It defines an interesting method `getReal()` that will allow us to retrieve a `float` representation of the pixel value.
 
-Making something out of it
---------------------------
+## Making something out of it
 
 Now that we vanquished the semantics, we would like to wrap up this tutorial by doing something with the plugin. In Imglib, we iterate over the data within an image using <b>Cursors</b>. They are the subject of [another tutorial](/imglib1/iterating-through-pixel-data), we will not present them thoroughly. But briefly:
 

@@ -6,8 +6,7 @@ categories: News,ImageJ2,SCIFIO,Hackathons
 
 From Sunday, July 27, 2015 through Friday, July 31, 2015, {%- include person id='axtimwalde' -%} at HHMI Janelia in Ashburn, Virginia hosted [LOCI](/orgs/loci)'s {%- include person id='ctrueden' -%} and {%- include person id='hinerm' -%} for a hackathon to unify [SCIFIO](/software/scifio)/[ImgLib2](/imglib2) development efforts (with MPI-CBG's {%- include person id='tpietzsch' -%}), improve support for the [Janelia KLB format](https://bitbucket.org/fernandoamat/keller-lab-block-filetype) (with Janelia's Burkhard Hoeckendorf), and improve the development tools available for [Fiji](/fiji) developers.
 
-Executive summary
------------------
+## Executive summary
 
 -   SCIFIO is headed in a great direction:
     -   Will integrate it better into modern, powerful software tools including ImgLib2 and [BigDataViewer](/plugins/bdv).
@@ -15,8 +14,7 @@ Executive summary
     -   Will make possible things like more transparent and rapid ability to work with multi-position and multi-angle datasets (mosaics, light sheet, etc.).
 -   Stability of [ImageJ](/about) and Fiji—and other applications built on [SciJava](SciJava) components—is now easier to validate.
 
-Technical discussions
----------------------
+## Technical discussions
 
 -   Unify BigDataViewer and SCIFIO/SciJava cell caches, and caching in general
 -   Unify SCIFIO and ImgLib2 metadata data structures
@@ -26,8 +24,7 @@ Technical discussions
     -   Consider pure Java implementation of KLB to avoid native lib issues.
     -   Enable multithreaded I/O in SCIFIO as painlessly as possible.
 
-Progress this week
-------------------
+## Progress this week
 
 -   Curtis wrote a "melting pot" script for testing component changes in the context of a larger application (e.g.: "Would this change to TrakEM2 break Fiji?") [https://github.com/scijava/scijava-scripts/commit/d611704204d607dc94654a6810d00a1ab0e9280e 1](https://github.com/scijava/scijava-scripts/commit/d611704204d607dc94654a6810d00a1ab0e9280e_1).
 -   Curtis made some ImageJ improvements in response to feedback from Burkhard \[[2](https://github.com/imagej/imagej-plugins-commands/commit/6fafbc9c3444e3fe70420244699d02acfb72abfd), [3](https://github.com/imagej/imagej-plugins-commands/commit/ea9596b2d905eff9f7a9b2177dca5fe44b65ae6e)\].
@@ -35,8 +32,7 @@ Progress this week
 -   Mark and Curtis planned out the new SCIFIO API for "blockization".
 -   Mark began work on ImageJ data model changes for SCIFIO "blockization" \[[5](https://github.com/imagej/imagej-common/compare/calibrated-interval), [6](https://github.com/scifio/scifio/compare/blocks-are-so-plane)\].
 
-Future directions
------------------
+## Future directions
 
 -   Jenkins automation of melting-pot for Fiji testing.
 -   Wiki documentation on how to use the melting-pot for testing your components.

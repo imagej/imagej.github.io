@@ -7,8 +7,7 @@ section: Development:ImgLib2:Tutorials
 
 
 
-Introduction
-------------
+## Introduction
 
 In ImgLib2, images are manipulated using *Accessors*. For pixel images, you can think of an accessor as a movable reference to a pixel.
 
@@ -29,8 +28,7 @@ Both, **RandomAccess** and **Cursor** implement the [Sampler](http://jenkins.ima
 
 Note, that [Sampler](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Sampler.html), [RandomAccess](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccess.html), and [Cursor](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Cursor.html) have a type paramer **<T>** that refers to the value type of the underlying image.
 
-RandomAccess
-------------
+## RandomAccess
 
 [RandomAccess](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccess.html) provides n-dimensional random access through the [Positionable](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Positionable.html) interface. It can be used to access pixels at arbitrary integer coordinates. The following code uses a **RandomAccess** to draw some white pixels into an image.
 
@@ -98,8 +96,7 @@ We get an instance of the pixel value type **UnsignedByteType** that acts as a r
 -   Often, the **T** obtained from **Sampler<T>.get()** is a proxy object that is re-used internally. You should assume that moving the accessor invalidates the proxy. If you want to keep a permanent reference to a pixel, use the **Sampler<T>.copy()** method. In the above example, this would return a copy of the RandomAccess refering to the same pixel.
 -   The **Positionable**, **Localizable**, ... interfaces are not restricted to accessors. In fact, many ImgLib2 entities are **Localizable**. For instance, the [Point](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib/Point.html) class implements **Positionable** and **Localizable**, and simply represents a n-dimensional coordinate. In your own code, whenever you have something that can provide coordinates, you should consider implementing **Localizable**.
 
-A Taste of Generic Algorithms
------------------------------
+## A Taste of Generic Algorithms
 
 Before we move on to the "other" accessor, *Cursor*, let's consider a generalization of the previous example. Let's say we like setting random pixels, and because we plan to do this a lot in the future, we extract this functionality into a method.
 
@@ -270,8 +267,7 @@ And we used it on a 3D **ARGBType** image (which means a color image with red/gr
 -   we use the generic parameter **&lt; T extends Type&lt; T &gt; &gt;** instead of **&lt; Type &gt;** throughout ImgLib2 since that allows us to be more type-safe. Imagine implementing an **add(a, b)** method for a certain type: using the simpler generic parameter would not allow us to enforce both parameters to have the same subclass of **Type**!
 -   we create as many variables as possible outside of the loop (in particular, objects) since creating objects costs a bit of execution time and can easily dominate the performance of the algorithm if one is not careful about it.
 
-Cursor
-------
+## Cursor
 
 A [Cursor](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Cursor.html) can be used to visit all pixels of an image once. However, the **Cursor** concept is not limited to pixel images. A **Cursor** can be used to iterate every collection of **Localizable** samples.
 
@@ -425,8 +421,7 @@ Lines *028-031* show how to use **findmax** and get the maximum value and coordi
 -   Typically, there are two variants of Cursors available. One that calculates its location per each iteration and one that calculates it only per localization request. The former is more efficient when localization occurs frequently, the latter otherwise. In the *maximum-finding* example, we use the latter because localization is only required once after the maximum has been found. The former one could be obtained using **localizingCursor()** instead of **cursor()** (see [IterableInterval](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/IterableInterval.html) API doc.)
 -   **copyCursor()** is a work-around to circumvent a *javac* bug with covariant return type overriding (see [bug report](http://bugs.sun.com/view_bug.do?bug_id=6656332)). In the future (with JDK7) every **Sampler** can be copied using **copy()** instead of having specialised **copyCursor()**, **copyRandomAccess()**, ... methods.
 
-Accessors for Continuous Coordinates
-------------------------------------
+## Accessors for Continuous Coordinates
 
 ImgLib2 is not restricted to rasterized images and integer coordinates It also supports continuous images and real-valued coordinates. Examples where this is appropriate are
 

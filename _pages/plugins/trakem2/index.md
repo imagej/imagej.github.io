@@ -9,8 +9,7 @@ TrakEM2 is an ImageJ plugin for morphological data mining, three-dimensional mod
 
 See [TrakEM2 snapshots](http://www.ini.uzh.ch/~acardona/snapshots.html) for an overview. 
 
-Features
---------
+## Features
 
 -   **Segmentation:** manually draw areas across stacks, and sketch structures with balls and pipes. Skeletonize entire neuronal arborizations and represent synapses with relational connector objects.
 -   **Measurements:** volumes, surfaces, lengths, and also measurements via ImageJ ROIs.
@@ -21,14 +20,12 @@ Features
 
 TrakEM2 interacts with the [3D Viewer](/plugins/3d-viewer) for visualization of image volumes and 3D meshes.
 
-TrakEM2 in Fiji
----------------
+## TrakEM2 in Fiji
 
 -   Create new projects from "File - New - TrakEM2 (blank)"
 -   Open an existing project by dragging its .xml file onto the toolbar, or via "File - Open".
 
-Documentation
--------------
+## Documentation
 
 -   [How to](http://www.ini.uzh.ch/~acardona/howto.html)
 -   [Manual](http://www.ini.uzh.ch/~acardona/trakem2_manual.html)
@@ -36,8 +33,7 @@ Documentation
 -   Examples of [scripting in TrakEM2](/plugins/trakem2/scripting).
 -   Writing [plugins for TrakEM2](/plugins/trakem2/tplugin).
 
-Running fiji for heavy-duty, memory-intensive, high-performance TrakEM2 tasks
------------------------------------------------------------------------------
+## Running fiji for heavy-duty, memory-intensive, high-performance TrakEM2 tasks
 
 The following configuration has been tested in a machine with 8 CPU cores and 16 Gb of RAM, running Ubuntu 8.04 "Hardy", with a 1.6.0\_16 or newer JVM:
 
@@ -60,8 +56,7 @@ What the JVM flags mean:
 
 With the above settings, we have succesfully registered 33,000 image tiles corresponding to 459 serial sections, using the "Align multi-layer mosaic" TrakEM2 command.
 
-Preparing TrakEM2 for best performance
---------------------------------------
+## Preparing TrakEM2 for best performance
 
 ### For fastest browsing through layers
 
@@ -139,8 +134,7 @@ Setting the bucket size to a large value will reduce XML loading time <b>a lot</
 
 To set the bucket size, right-click and choose "Display - Properties ..." and write in the bucket size value.
 
-How much RAM should I allocate to the JVM for Fiji to run TrakEM2?
-------------------------------------------------------------------
+## How much RAM should I allocate to the JVM for Fiji to run TrakEM2?
 
 Use a computer that follows this rule of thumb: take the largest single 2D image in your dataset, then multiply its size by 10, and make sure that every core of your CPU has at least that much RAM available to it.
 
@@ -148,13 +142,11 @@ For example, for a 4096x4096 16-bit image you will need at least 335 Mb per core
 
 As for a graphics card buy the largest you can afford, both in computing power and in internal memory.
 
-Examples
---------
+## Examples
 
 {% include thumbnail src='/media/Trakem2-snap.jpg' title='TrakEM2: 359 montages of 13x13 tiles of 2048x2048 pixels each.'%} <img src="/media/plugins/trakem2 Display.png" title="fig:TrakEM2 Display showing 9 images in a layer, where 2 images and one floating text label (set to 30% transparency) are selected (pink and white frames; white is the active one – note the corresponding pink and blue coloration of the object panels on the left). The Navigator (bottom left) paints a red frame to indicate the area currently displayed in the canvas (right)." width="232" alt="TrakEM2 Display showing 9 images in a layer, where 2 images and one floating text label (set to 30% transparency) are selected (pink and white frames; white is the active one – note the corresponding pink and blue coloration of the object panels on the left). The Navigator (bottom left) paints a red frame to indicate the area currently displayed in the canvas (right)." /> {% include thumbnail src='/media/3D-Viewer.jpg' title='3D Viewer: hardware-accelerated 3D visualization of image stacks as volumes, orthoslices and meshes. Above, secondary lineages of <i>Drosophila</i> third instar larval brain segmented in TrakEM2.'%} {% include thumbnail src='/media/plugins/trakem2-trees.png' title='The three TrakEM2 trees, as an interface for editing and visualizing the three internal TrakEM2 data structures.'%} {% include thumbnail src='/media/Clahe-live-filter.jpg' title='Effect of the [CLAHE](/plugins/enhance-local-contrast-clahe) live filter in TrakEM2. Data with high dynamic range is displayed with perceptually boosted local contrast. [CLAHE parameters](/plugins/enhance-local-contrast-clahe) are relative to display pixels and, therefore, will not result in an effective bandpass when zooming out largely on statically pre-processed images.'%} {% include thumbnail src='/media/Neuronal-arbors-1.png' title='Neuronal arbors reconstructed with TrakEM2 using the [treeline](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#trees) segmentation type.'%} {% include thumbnail src='/media/plugins/trakem2-arealists.png' title='Neuronal arbors from serial section electron microscopy reconstructed with TrakEM2 using the [manually segmentated data set](http://www.ini.uzh.ch/~acardona/data.html).'%} {% include thumbnail src='/media/plugins/trakem2-display-2.png' title='[TrakEM2](/plugins/trakem2) showing one section of a serial section transmission electron microscopy (ssTEM) data set, with numerous neuronal arbors reconstructed using [treelines](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#trees) and [connectors](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#connectors) (for synapses).'%} {% include thumbnail src='/media/plugins/trakem2 Display segmentations.png' title='Example TrakEM2 segmentations, including Ball, Pipe, Profile, AreaList and floating text labels.'%} {% include clear content='left' %}
 
-Publication
------------
+## Publication
 
 -   {% include publication content='TrakEM2' %}
 

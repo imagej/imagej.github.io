@@ -8,8 +8,7 @@ artifact: sc.fiji:Image\_Expression\_Parser
  
 
 
-Usage
------
+## Usage
 
 The plugin is located in {% include bc path='Process | Image Expression Parser'%}.
 
@@ -29,8 +28,7 @@ The parsing ability is provided by the JEP library: Java Expression Parser v.jep
 
 Internally, images are handled by copying them to a new float type image, so as to avoid clipping effect. The result image returned is of float type as well.
 
-User interface
---------------
+## User interface
 
 The interactive version (launched from ImageJ) uses a GUI.
 
@@ -46,8 +44,7 @@ When the images are RGB images, they are processed in a special way:
 
 This GUI was built in part using Jigloo GUI builder http://www.cloudgarden.com/jigloo/.
 
-Supported functions
--------------------
+## Supported functions
 
 Here is a list for supported functions and algorithms, as of version 2.1.
 
@@ -383,8 +380,7 @@ Boolean operators
 </td>
 </table>
 
-Extending the parser
---------------------
+## Extending the parser
 
 It is relatively easy to extends the parser with new functions.
 
@@ -417,8 +413,7 @@ The same things, but for two arguments. There is more methods to implement, beca
 
 See *ImgLibGaussConv* for an example. In this example, you will also see how errors or invalid arguments are handled.
 
-Calling the plugin from elsewhere
----------------------------------
+## Calling the plugin from elsewhere
 
 It is possible to call the plugin from another class or in a scripting language. For instance in Python:
 
@@ -477,8 +472,7 @@ Here is another example in [Javascript](/scripting/javascript) contributed by Je
     IJ.run(resultImp, "Enhance Contrast", "saturated=0.35");
     resultImp.show();
 
-Version history
----------------
+## Version history
 
 -   v1.0 - Feb 2010 - First working version.
 -   v1.1 - Apr 2010 - Expression field now has a history.
@@ -489,8 +483,7 @@ Version history
 -   v2.1 - June 2010 - The GUI now generate a new separate thread for processing, freeing resources for the redraw of the GUI panel itself (thanks to Albert Cardona and the Fijiers input).
 -   v2.2 - June 2010 - First version released publicly. RGB images are processed in a special way by the GUI: each of their channel is processed separately and put back together in a composite image.
 
-Wish list for this plugin
--------------------------
+## Wish list for this plugin
 
 We are interested into knowing how we should extend this plugin so that it suits your need. Tell us in the [discussion page](Talk_Image_Expression_Parser).
 

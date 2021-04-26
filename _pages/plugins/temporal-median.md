@@ -12,8 +12,7 @@ categories: Plugins,Tracking,Filtering
 
 **Temporal Median** can be used to find moving foreground features, which can be be a powerful way to suppress false background detections in subsequent tracking steps.
 
-References
-----------
+## References
 
 <references />
 

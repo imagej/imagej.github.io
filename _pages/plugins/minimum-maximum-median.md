@@ -5,13 +5,11 @@ title: Minimum/Maximum/Median
 
 {% include info-box name='Minimum/Maximum/Median' software='ImageJ' author='Benjamin Schmid' maintainer='Benjamin Schmid' filename='VIB\_.jar' source='VIB\_.jar' status='beta' %}
 
-Purpose
--------
+## Purpose
 
 A 3D version of the minimum, maximum and median filter.
 
-Description
------------
+## Description
 
 Each voxel is set to the minimum, maximum or median value of its neighborhood.
 

@@ -13,8 +13,7 @@ section: Development:Guides
  
 
 
-Requirements
-------------
+## Requirements
 
 As ImageJ is built using the [SciJava principles of project management](/develop/project-management), this guide assumes a basic familiarity with these topics and tools, especially:
 
@@ -27,8 +26,7 @@ Additionally, at a minimum, you should clone the {% include github org='imagej' 
 
 For the complete "developer experience", you can go through the [GitHub Bootcamp](https://help.github.com/categories/bootcamp/). At the least, once you've [created your own repository](https://help.github.com/articles/create-a-repo/) and cloned a local copy, you will have a home ready for when your [very own plugin](#starting-your-own-plugin) arrives!
 
-What is a "plugin"?
--------------------
+## What is a "plugin"?
 
 Conceptually, a **plugin** is a new piece of functionality added to ImageJ. Nearly all aspects of ImageJ are *pluggable*, meaning plugins can be provided *ad hoc* to perform specified functions. The ImageJ core needs only know what general operations are available; then when the program is running, the options for how to complete a requested operation will be determined by which plugins are available at that time.
 
@@ -69,8 +67,7 @@ We can also use *relative priorities* when referring to particular priority cons
     @Plugin(priority=Priority.HIGH_PRIORITY+124)
     public class SpecialService implements Service { }
 
-What makes up the SciJava plugin framework?
--------------------------------------------
+## What makes up the SciJava plugin framework?
 
 ### The Context
 
@@ -157,8 +154,7 @@ A brief list of some of the more useful plugin types to extend:
 
 If you know the function you want to modify but can't determine its location in the code, please [ask other developers.](/help) You're part of the community now!
 
-Example projects
-----------------
+## Example projects
 
 Remember the {% include github org='imagej' repo='tutorials' label='imagej/tutorials repository' %} we [said you should clone](#Requirements)? Now's the time to put it to use!
 
@@ -220,8 +216,7 @@ These projects are examples of specific *use cases* within the ImageJ API.
 -   [Create a new plugin type](https://github.com/imagej/tutorials/tree/master/maven-projects/create-a-new-plugin-type/src/main/java)
 -   [Create a new preprocessor](https://github.com/imagej/tutorials/tree/master/maven-projects/custom-preprocessor-plugin/src/main/java)
 
-Starting your own plugin
-------------------------
+## Starting your own plugin
 
 ### General guidelines
 
@@ -267,8 +262,7 @@ In addition to modifying and developing the source code itself, there are severa
 -   If your copied `pom.xml` has a [main method specification](https://github.com/imagej/tutorials/blob/249c699dbdb9308f8a5539f0f39cf84d2612b273/simple-commands/pom.xml#L22-L24) you will likely need to remove or update it as appropriate.
 -   If you want to add non-Java files to your plugin, such as sample images or [demo scripts](/scripting), refer to the [standard maven layout](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html).
 
-Next Steps
-----------
+## Next Steps
 
 There are further guides available dedicated to developing particular types of plugins:
 

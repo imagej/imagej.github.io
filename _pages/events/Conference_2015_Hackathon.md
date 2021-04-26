@@ -6,8 +6,7 @@ categories: Hackathons
 
 There was a [hackathon](/events/Hackathon) in Madison following the ImageJ [Conference 2015](/events/Conference_2015).
 
-Topic
------
+## Topic
 
 There were two primary topics for this hackathon:
 
@@ -26,8 +25,7 @@ As always, there were lots of other exciting collaborations going on, too!
 -   {% include github org='fiji' repo='colocalisation\_analysis' label='Coloc2' %} bugs? (Ellen)
 -   KNIME paper (Mark + Christian)
 
-Participants
-------------
+## Participants
 
 <timeline> Preset = TimeHorizontal\_AutoPlaceBars\_UnitYear
 
@@ -128,8 +126,7 @@ PlotData=
 
 Some people were not present at the hackathon on weekends.
 
-Locations
----------
+## Locations
 
 ### Thursday, September 3 - Friday, September 4
 

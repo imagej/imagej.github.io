@@ -46,8 +46,7 @@ You should now have access to these plugins:
 Usage
 =====
 
-Training
---------
+## Training
 
 Read [this page](/develop/tensorflow) for how to get GPU support. With out a GPU the training will take ages.
 
@@ -96,8 +95,7 @@ Please note: You may not use this training data to segment your images. You need
 4.  Click `Ok`
 5.  Look below at the [What happens during and after training](#what-happens-during-and-after-training) section for what happens next
 
-What happens during and after training
---------------------------------------
+## What happens during and after training
 
 {% include thumbnail src='/media/Denoiseg-train-progress.png' title='DenoiSeg training progress window'%} {% include thumbnail src='/media/Denoiseg-train-preview.png' title='N2V training preview window'%} During training, you will see two windows:
 
@@ -117,8 +115,7 @@ They are stored to a temporary location which you can see in the Overview sectio
 
 <b>Copy the model from there to another permanent destination on your disk if you want to keep this trained model.</b>
 
-Prediction
-----------
+## Prediction
 
 There are two ways to predict from a trained model. For both cases, the resulting image will consist of four channels:
 

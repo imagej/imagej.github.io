@@ -7,8 +7,7 @@ categories: Tutorials
 {% include extendingtrackmatetutorials%}
 
 
-Introduction.
--------------
+## Introduction.
 
 Actions were my crude solution to the problem of adding random features to [TrackMate](/plugins/trackmate) without having to change the GUI too much. Adding buttons or dialogs or extra panels is cumbersome and I thought it would complexify the GUI, which is meant to be simple. A TrackMate action is a lazy workaround for this problem. You must keep in mind that is a placeholder for random feature ideas, and provided a quick and dirty way to test them.
 
@@ -16,8 +15,7 @@ A TrackMate action takes the shape of an item in a drop-down list in the last pa
 
 In this tutorial, we will use it to launch the event logger we created in the [previous tutorial](/plugins/trackmate/custom-viewers) of this series. If you remember, we saw in the last paragraph how to use the `visible = false` parameter the [SciJava](SciJava) annotation to hide it from the view menu. Hereby preventing the user to access it. No problem, we will now build an action that will launch it as a supplementary view.
 
-The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/action/plugins/trackmateActionFactory.java' label='TrackMateActionFactory' %} interface.
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/action/plugins/trackmateActionFactory.java' label='TrackMateActionFactory' %} interface.
 
 Again, the action behavior and its integration in TrackMate are split in two classes. The behavior is described by the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/action/plugins/trackmateAction.java' label='TrackMateAction' %} interface. The integration mechanism is controlled by the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/action/plugins/trackmateActionFactory.java' label='TrackMateActionFactory' %} interface, which extends the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/plugins/trackmateModule.java' label='TrackMateModule' %} interface.
 
@@ -106,8 +104,7 @@ So you can pretty well mess stuff with the controller, but it gives us access to
 
 Nothing complicated.
 
-The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/action/plugins/trackmateAction.java' label='TrackMateAction' %} interface.
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/action/plugins/trackmateAction.java' label='TrackMateAction' %} interface.
 
 This interface is just made of two methods:
 
@@ -161,8 +158,7 @@ Here is how this translates simply in a simple launcher:
         }
     }
 
-Wrapping up
------------
+## Wrapping up
 
 And here are the results:
 

@@ -15,8 +15,7 @@ The [Morphonets](http://morphonets.org) distribution of Cx3D was modified by {%-
 
 Currently, an [IDE](/develop/ides) is the most effective way to implement custom models, using the [minimal-cx3d-example-project](https://github.com/morphonets/minimal-cx3d-example-project) as a template. For more information refer to the [GitHub project page](https://github.com/morphonets/cx3d).
 
-References
-----------
+## References
 
 <references >
 

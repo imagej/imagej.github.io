@@ -21,8 +21,7 @@ Installation of the plugin
 
 The plugin can be quickly installed via the projects update site. This is unfortunately may not possible if you are using a Fiji version installed via package management system. If you encounter this problem, please use the Fiji version obtainable [ here](/downloads).
 
-Add the project's update site to your Fiji installation
--------------------------------------------------------
+## Add the project's update site to your Fiji installation
 
 Please refer to the [ **tutorial**](/update-sites) on how to add our update site to your Fiji installation. Our update site has the following URL:
 
@@ -30,8 +29,7 @@ Please refer to the [ **tutorial**](/update-sites) on how to add our update site
 
 ![](/media/LLTT Install4.jpg "LLTT_Install4.jpg")
 
-Install the required files
---------------------------
+## Install the required files
 
 ![](/media/LLTT Install5.jpg "LLTT_Install5.jpg")
 
@@ -40,15 +38,13 @@ Install or update all 6 items shown above by hitting **Apply changes**. Please r
 Startup
 =======
 
-Load the data
--------------
+## Load the data
 
 ![](/media/OpenData.png "OpenData.png")
 
 To begin use Fiji to load the data to be used for tracking. Use whichever method you prefer in Fiji. The LLTT-plugin will work with 8-bit, 16-bit and 32-bit-float stacks. Moreover you can use 3D and multichannel hyperstacks. If you want to try the LLTT-plugin but do not have the right data at hand, you can download a file with sample data here: ![](/media/LLTT BeadsExampleData.zip "fig:LLTT_BeadsExampleData.zip").
 
-Start the LLTT-plugin
----------------------
+## Start the LLTT-plugin
 
 After the data is loaded, start the plugin by clicking:
 
@@ -56,8 +52,7 @@ After the data is loaded, start the plugin by clicking:
 
 ![](/media/LLTT Start1.jpg "LLTT_Start1.jpg")
 
-Set global options
-------------------
+## Set global options
 
 Upon startup of the plugin you will be asked to enter three values.
 
@@ -79,8 +74,7 @@ Please consult you camera's specs sheet to obtain this information. The **EMCCD 
 The User Interface
 ==================
 
-The different windows
----------------------
+## The different windows
 
 When the plugin starts on a 2D image stack you have three windows and the control panel. The main data window lets you move through the slices like normal. On the sides you see the two kymographs, which makes it easier to see movement over time. The control window will help you to organize your tracking activity.
 
@@ -90,8 +84,7 @@ If you would like the windows to become larger or smaller, change the size of th
 
 If you close some of the windows you can bring them back using the **Windows** menu in the control panel. If you close the control panel, this will terminate the program. Don't forget to [ **Save**](/plugins/low-light-tracking-tool#saving-and-loading) your results before.
 
-Navigation
-----------
+## Navigation
 
 The yellow lines in the kymographs indicate what frame you are currently working on. If you work with 3D data yellow lines in the side projections indicate what slice you are looking at. There are three ways of navigating through your stack or hyper stack:
 
@@ -102,15 +95,13 @@ The yellow lines in the kymographs indicate what frame you are currently working
 Basic tracking
 ==============
 
-Create session
---------------
+## Create session
 
 ![](/media/LLTT ChooseSession.jpg "LLTT_ChooseSession.jpg")
 
 Click on the **New Session** button or select from the menu. The **New session** window opens. Here you can pick a name for the session as well as the channel you want to track on. Finally you can choose your tracking method.
 
-Choose a tracking method
-------------------------
+## Choose a tracking method
 
 There are currently two tracking algorithms available:
 
@@ -122,8 +113,7 @@ This algorithm implements the {% include wikipedia title='Maximum likelihood est
 
 This algorithm implements the maximum likelihood estimator based on a more sophisticated model which in addition includes the stochastic amplification process in an {% include wikipedia title='Electron-multiplying CCD' text='EMCCD'%} camera. We have shown, that it yields more accurate results in situations with low light levels. In our publication this algorithm is referred to as the **Nested Maximum Likelihood Algorithm**.
 
-Pick session options
---------------------
+## Pick session options
 
 ![](/media/SessionOptions.png "SessionOptions.png")
 
@@ -133,8 +123,7 @@ You also can set your quality threshold. Smaller numbers are higher quality, whi
 
 Fixed **σ** can be more stable and also faster, this is more so for 3D data. All settings can later be altered by clicking on **Session Options**, under **Edit**.
 
-Adding objects to track
------------------------
+## Adding objects to track
 
 To add an object in order to track it, make sure the cross hair icon in the Fiji toolbar is selected and then double click roughly on the object you would like to track in the main window. This new object is represented as a circle. An accordant entry will appear in the table in the control panel representing the objects trace. You can select objects by clicking on them in the control panel or directly in the main window. You can then move them around, using drag and drop or edit them. Multiple objects can be selected by holding {% include key content='Shift' %} when selecting.
 
@@ -142,8 +131,7 @@ To add an object in order to track it, make sure the cross hair icon in the Fiji
 
 You can change a trace's label by clicking on the text in the label field or change the color by clicking on the colored area.
 
-Edit individual objects
------------------------
+## Edit individual objects
 
 The default settings made in the session options dialog will only effect new traces. If at this point you find that the parameters you picked were less ideal you can change the parameters with the **Edit Object** selection from the **Edit** menu.
 
@@ -151,8 +139,7 @@ The default settings made in the session options dialog will only effect new tra
 
 The settings you make here will effect the selected object in the very frame you are looking at.
 
-Start tracking
---------------
+## Start tracking
 
 Only the highlighted objects will be tracked. So in the example above both are highlighted and will be tracked at the same time. To start tracking select at least one trace and click on the **Start tracking** button or hit the hot-key **G**. The software will start at the frame you are currently looking at and continue with the following frames until the end of the movie or until you hit **G** again or click on **Stop tracking**
 
@@ -169,13 +156,11 @@ You can watch the trace fill in the kymograph line as the tracking is in progres
 
 The table now contains more information, with the first frame of the trace, and the last frame. Double clicking on the ID\# of the object will jump the frame number to the beginning and end of the trace.
 
-Saving and loading
-------------------
+## Saving and loading
 
 The tracking results are already saved automatically by default. You can turn that off by un-checking the **Auto Save** box. The results can than be saved using the **Save** button. They are by default stored in the directory of the image stack you are working on. The file format is described [ below](/plugins/low-light-tracking-tool#file-format). When you start the plugin again with the same data file your results will be automatically loaded. You can also reload previously tracked data and undo any unsaved changes by pressing the reload button. If you want to open data which is stored in a different location you can load it by clicking on the address bar and navigating to the data's location. You can then re-track, or examine the data.
 
-Deleting and manipulating traces and sessions
----------------------------------------------
+## Deleting and manipulating traces and sessions
 
 Using the **Merge**, **Split**, **Trim** and **Delete** buttons allows you to edit your traces by combining or deleting them. Sessions can be deleted using the **'Delete Session**' button.
 
@@ -196,8 +181,7 @@ Changes done by **Merge**, **Split** and **Trim** can also be undone in this way
 Advanced features
 =================
 
-3D data
--------
+## 3D data
 
 The plugin can be used to track objects in 3D volumes as well. When working with 3D data you will be asked upon startup to provide the **ΔZ ratio** in addition to the **Intensity Offset**, **EMCCD gain** and **Electrons per A/D count**.
 
@@ -211,8 +195,7 @@ Otherwise, tracking function is the same. It is best to optimize the σ-value fo
 
 ![](/media/NewWithDot.jpg "NewWithDot.jpg")
 
-Using multiscale tracking for fast moving objects
--------------------------------------------------
+## Using multiscale tracking for fast moving objects
 
 If you are trying to track fast moving objects that move over a big distance between two frames, the software might loose the target at some point. To avoid this you can use multiscale tracking, which uses iterative smoothing and down-sampling to find the target in each frame. To start tracking in multiscale mode hit the **Multiscale**.
 
@@ -275,8 +258,7 @@ This program is free software; you can redistribute it and/or modify it under th
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-Colt library
-------------
+## Colt library
 
 We redistribute packages from the [colt](http://acs.lbl.gov/software/colt/) library. They have the following licenses:
 

@@ -7,8 +7,7 @@ section: Learn:Supported Platforms
 
 Android is a mobile operating system developed by Google, which commonly runs on Android phones and tablets.
 
-Status of ImageJ on Android
----------------------------
+## Status of ImageJ on Android
 
 The Android operating system uses a modified version of the Java virtual machine. So in principle, running ImageJ on Android devices is feasible. However, running ImageJ on Android does not currently work, because:
 

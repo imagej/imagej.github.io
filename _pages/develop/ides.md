@@ -24,8 +24,7 @@ many [ImageJ](/about) and [Fiji](/fiji) developers use [Eclipse](/develop/eclips
 
 </center>
 
-Why use an IDE?
----------------
+## Why use an IDE?
 
 There are many advantages of using an IDE for software development:
 

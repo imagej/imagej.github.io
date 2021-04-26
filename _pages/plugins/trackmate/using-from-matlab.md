@@ -18,8 +18,7 @@ if you want the Fiji window to be visible.
 
 Apart from that, the collections of examples that follow just look like several scripts. Which is actually the case: We use the [MATLAB](/scripting/matlab) interpreter as a scripting interface for TrackMate, as we did in the [Scripting TrackMate](/plugins/trackmate/scripting) page. We separated this page to highlight [MATLAB](/scripting/matlab) specificities and to exploit its capabilities better.
 
-A simple tracking example
--------------------------
+## A simple tracking example
 
 Here we open an image though Fiji (not though [MATLAB](/scripting/matlab)) and track its content. The results are displayed in a Fiji window as well. [MATLAB](/scripting/matlab) is used here only to control TrackMate and does not really plays a role in the process. This example is actually the same that in the first [Scripting TrackMate](/plugins/trackmate/scripting) example.
 
@@ -116,8 +115,7 @@ Note that we used the fully qualified name for TrackMate classes, *e.g.* `fiji.p
     % Echo results
     display(model.toString())
 
-Using imports in MATLAB
------------------------
+## Using imports in MATLAB
 
 MATLAB lets you import java names into its workspace, using the `import` command. Check [this](http://www.mathworks.fr/fr/help/matlab/matlab_external/bringing-java-classes-and-methods-into-matlab-workspace.html#f46341). So we could rewrite the above script as follow:
 
@@ -230,8 +228,7 @@ MATLAB lets you import java names into its workspace, using the `import` command
     % Echo results
     display(model.toString())
 
-Why is this greater than it seems?
-----------------------------------
+## Why is this greater than it seems?
 
 Because your just ran a [MATLAB](/scripting/matlab) script that uses and benefits from multithreading without relying on any toolbox! Here is how to tune the number of threads used by TrackMate:
 

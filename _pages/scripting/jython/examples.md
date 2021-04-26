@@ -8,15 +8,13 @@ categories: Scripting,Jython
 
 [Jython](http://www.jython.org/) is an implementation of the [Python programming language](https://www.python.org/) designed to run on the Java platform.
 
-Quickstart
-----------
+## Quickstart
 
 -   Press {% include key content='\[' %} to bring up the [Script Editor](/scripting/script-editor).
 -   Select an example Jython script from the {% include bc path='Templates | \[by language\] | Python'%} menu.
 -   Press {% include key content='Ctrl\|R' %} to run the script!
 
-The Jython interpreter plugin
------------------------------
+## The Jython interpreter plugin
 
 The interpreter provides a screen and a prompt. Type any jython code on the prompt to interact with ImageJ.
 
@@ -108,8 +106,7 @@ But see these java numerical libraries: http://math.nist.gov/javanumerics/#libra
   
 The latest Jython stable release (as of May 2015) is 2.7.0. Fiji (as of December 2015) distributes Jython 2.5.3. Any recent Python syntax such as `except ExceptionType as e:` or `with open(filepath, 'r') as f:` will fail.
 
-Jython tutorials for ImageJ
----------------------------
+## Jython tutorials for ImageJ
 
 ### Defining variables: obtaining the current image
 
@@ -1288,8 +1285,7 @@ See also the Java source code for the {% include github repo='fiji' tag='8164ae6
     else:
         print "The detector could not process the data."
 
-Tips and Tricks
----------------
+## Tips and Tricks
 
 ### Getting a list of all members in one package
 
@@ -1755,8 +1751,7 @@ The JysonCodec.class is the toplevel class, so to import this library include th
 
     import com.xhaus.jyson.JysonCodec as jyson
 
-Jython for plugins
-------------------
+## Jython for plugins
 
 ### Using a jython script as a plugin
 

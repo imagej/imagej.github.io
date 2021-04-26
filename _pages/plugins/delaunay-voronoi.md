@@ -10,13 +10,11 @@ categories: Plugins
 {% endcapture %}
 {% include info-box software='ImageJ' name='Delaunay/Voronoi' author='Johannes Schindelin, L. Paul Chew' maintainer='Johannes Schindelin' source=source released='14 August 2006' latest-version='11 December 2008' status='stable' category='[Image annotation](Category_Image_annotation)' %}
 
-Purpose
--------
+## Purpose
 
 Plugin to perform Delaunay Triangulation, or draw the Voronoi Diagram for a given point ROI.
 
-Definitions
------------
+## Definitions
 
 The Delaunay Triangulation for a set of points gives you triangles connecting all the points such that for each triangle, there are no other points in the circumference of that triangle than the three corner points.
 
@@ -28,8 +26,7 @@ A picture says more than thousand words:
 
 ![The points are little yellow squares, the Delaunay Triangulation is drawn red, and the Voronoi Diagram is black](/media/Delaunay-voronoi.png "The points are little yellow squares, the Delaunay Triangulation is drawn red, and the Voronoi Diagram is black")
 
-Usage
------
+## Usage
 
 This plugin operates on a point selection consisting of multiple points.
 
@@ -51,8 +48,7 @@ Options include:
 -   After the Particle Analyzer was run, you can *infer the selection from the particles*.
 -   Lastly, you can *export* the lines of the Delaunay Triangulation *into the Results window*.
 
-Version history
----------------
+## Version history
 
 -   2006/08/14: First public version
 -   2006/08/19: Fix zooming; draw diagram in zoom indicator

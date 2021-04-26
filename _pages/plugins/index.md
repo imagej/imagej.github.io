@@ -6,13 +6,11 @@ title: Plugins
 
 ImageJ has been extended with thousands of {% include wikipedia title='Plug-in (computing)' text='plugins'%}: special-purpose software components that extend ImageJ's functionality—e.g., by offering additional commands via menu entries.
 
-Available plugins
------------------
+## Available plugins
 
 {% include biginfo-box content='You can browse the [list of available plugins](plugin-list).' %}
 
-Tiers of plugins
-----------------
+## Tiers of plugins
 
 There are four tiers of plugins:
 
@@ -21,13 +19,11 @@ There are four tiers of plugins:
 3.  Plugins installable from an ImageJ [update site](/update-sites).
 4.  Additional plugins available from various online sources, which must be manually installed.
 
-Installing plugins
-------------------
+## Installing plugins
 
 The ImageJ [Updater](/plugins/updater) is the best way to install and update plugins. Simply [add the update site](/update-sites) containing your plugins of interest, and they will be installed automatically for you. If the plugin is not available via update site, but packaged as *.jar* file, or as unpackaged directory with *.class* files, see [Installing plugins manually](#installing-plugins-manually) below.
 
-Advanced topics
----------------
+## Advanced topics
 
 ### Installing plugins manually
 

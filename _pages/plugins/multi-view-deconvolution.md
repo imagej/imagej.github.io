@@ -9,15 +9,13 @@ title: Multi-View Deconvolution
 {% endcapture %}
 {% include info-box name='Multi-view deconvolution plugin' software='ImageJ' author='Stephan Preibisch, Fernando Amat, Eugene Myers, Pavel Tomancak' maintainer='Stephan Preibisch' source=source filename='SPIM\_Registration.jar' released='February 2013' latest-version='June 2013' category='[SPIM Registration](Category_Registration)' website=' [Stephan Preibisch"s homepage](http://fly.mpi-cbg.de/~preibisch)' %}
 
-Citation
---------
+## Citation
 
 Please note that the SPIM registration plugin available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
 -   S. Preibisch, F. Amat, E. Stamataki, M. Sarov, R.H. Singer, E. Myers and P. Tomancak (2014) "Efficient Bayesian-based Multiview Deconvolution", *Nature Methods*, **11**(6):645-648. [Webpage](http://www.nature.com/nmeth/journal/v11/n6/full/nmeth.2929.html)
 
-Overview of the multi-view deconvolution plugin
------------------------------------------------
+## Overview of the multi-view deconvolution plugin
 
 The multi-view deconvolution plugin is an image fusion plugin that computes one single image from several three-dimensional (3d) acquisitions (views) of the same specimen, taken in different orientations. The deconvolution tries to estimate the most probable image that best explains all views, given the individual point spread function (PSF) of each view. It can be computed for single timepoints or an entire timeseries.
 
@@ -37,8 +35,7 @@ It is highly recommended that before starting the multi-view deconvolution, to u
 
 <span style="color:#A52A2A"> *Note: Do not set the bounding box too close to the imaged sample as it might result in artifacts. A distance of around 30-50 pixels between sample and the bounding box is suggested for the multi-view deconvolution.* </span>
 
-How to use the plugin
----------------------
+## How to use the plugin
 
 {% include thumbnail src='/media/Spim multiview dialog1.jpg' title='Shows the first dialog that queries the location of the multi-view files'%}
 
@@ -117,8 +114,7 @@ The available options are:
 
 -   **Fused image output:** You can choose to display the result, save it the output directory as slices or create a different directory for each timepoint that is processed.
 
-Multi-Channel Multi-View Deconvolution
---------------------------------------
+## Multi-Channel Multi-View Deconvolution
 
 Multi-Channel deconvolution can be achieved by running the plugin on both channels individually. First, you have to make sure that both channels are aligned to each other. You have two choices:
 
@@ -130,8 +126,7 @@ Multi-Channel deconvolution can be achieved by running the plugin on both channe
 
 The difference between these coordinates of the different channels can for example be applied afterwards using TransformJ -&gt; Translate.
 
-How do I ... Problems, known issues and solutions
--------------------------------------------------
+## How do I ... Problems, known issues and solutions
 
 Some tips and tricks in the next few paragraphs require to change a static variable in the source code that changes the behavior of the plugin. This is done using the **script editor** and works as follows:
 

@@ -8,8 +8,7 @@ categories: Cookbook, tutorials
 
 This tool may be used to adjust the brightness and contrast of an active image.
 
-Usage
------
+## Usage
 
 The Brightness and Contrast tool may be accessed through {% include bc path='Image | Adjust | Brightness/Contrast'%} or {% include key content='Ctrl\|Shift\|C' %}.
 
@@ -21,8 +20,7 @@ Selecting 'OK' will make the specified changes to the display and close the Brig
 
 ImageJ may provide intelligent thresholding based on the image's histogram through {% include bc path='Image | Adjust | Auto-Contrast'%} or {% include key content='Ctrl\|Alt\|Shift\|L' %}. Repeated usage of this process will allow more pixel values to become saturated.
 
-Example
--------
+## Example
 
 The below images show the effects of adjusting brightness and contrast settings.
 

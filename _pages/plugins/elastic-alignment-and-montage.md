@@ -18,8 +18,7 @@ S. Saalfeld, R. Fetter, A. Cardona and P. Tomancak (2012) "Elastic volume recons
 
 Supplementary videos demonstrating the performance of the method are available [here](http://fly.mpi-cbg.de/elastic).
 
-Introduction
-------------
+## Introduction
 
 
 {% capture title%}
@@ -42,8 +41,7 @@ incorporates both elastic montaging and elastic series alignment through the ali
 
 Images are warped such that corresponding regions overlap optimally. The warp for each single image is calculated such that each image in the whole global montage or series will be deformed minimally. That way, arbitrarily large series of images can be aligned without accumulating artificial warps.
 
-Elastic Deformation with Spring Meshes
---------------------------------------
+## Elastic Deformation with Spring Meshes
 
 {% include thumbnail src='/media/Mesh.png' title='Fig. 1: Triangular section mesh with a resolution of 5 vertices per each long row.'%} We achieve this globally minimized deformation by simulating the alignment as an elastic system of spring connected vertices. Zero-length springs connect corresponding locations between two overlapping images and warp the images towards perfect overlap. Non-zero length springs within the image preserve each images shape at locally rigid transformation. That way, the system penalizes arbitrary warp and distributes the deformation evenly among all images.
 
@@ -51,13 +49,11 @@ Each image is tessellated into a mesh of regular triangles with each vertex bein
 
 For those vertices of a source image overlapping a target image, we identify its corresponding location in the target image. The vertex is then connected into the target mesh by a zero-length spring with its target end being located at an arbitrary place in a triangle of the target mesh. This \`passive' end does not contribute to the deformation of the target mesh. During simulation, it moves according to the affine transformation defined by the target triangle. Vice versa, vertices of the target image are connected to their corresponding location in the source image with their \`passive' ends being moved by the respective affine transformation of a source triangle.
 
-Linear Initialization
----------------------
+## Linear Initialization
 
 Both relaxing the system of meshes and identifying corresponding locations between images require good initialization. The former because the meshes will fold otherwise, the latter to narrow the matching space with the benefit of both, increased speed and better reliability. We initialize the system with a linear-per-image optimal pre-alignment based on [local image features](/plugins/feature-extraction).[1]
 
-Block Matching
---------------
+## Block Matching
 
 
 {% capture title%}
@@ -78,8 +74,7 @@ if the second best *r(x,y)* is very similar to the best, the match is rejected f
 
 See also [Test Block Matching Parameters](/plugins/test-block-matching-parameters) plugin
 
-Parameter Discussion
---------------------
+## Parameter Discussion
 
 All parameters that specify a distance in pixels refer to the original scale of the image.
 
@@ -125,13 +120,11 @@ Optimization
 
 For *series alignment*, springs across sections have a spring constant of 1.0/distance with distance being the absolute index difference in the series. For *montage*, all springs between overlapping images have a spring constant of 1.0. The constant of springs in the mesh is specified through **stiffness**. Larger values will result in less deformed, less perfectly aligned results. Very small values may result in unevenly distributed deformation due to premature \`relaxation' of the simulation. You can specify the maximal stretch of springs after which they will disrupt. We have not experimented with this extensively yet.
 
-Future Work
------------
+## Future Work
 
 We will further investigate in automatic selection of appropriate parameters depending on available meta-information of the data sets (resolution, section thickness, deformation priors,...). We will investigate appropriate identification strategies for discontinuities in the transformation fields such as section ruptures or folds and cut springs at such places. We will investigate strategies to solve the alignment through hierarchical stages of accuracy for gaining better local accuracy and improved speed.
 
-References
-----------
+## References
 
 <references />
 

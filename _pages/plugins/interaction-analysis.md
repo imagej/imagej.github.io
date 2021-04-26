@@ -14,8 +14,7 @@ categories: Plugins,Particle analysis,Colocalization
 
 Documentation is available as [pdf](http://mosaic.mpi-cbg.de/downloads/IAPManual.pdf)
 
-References
-----------
+## References
 
 J. A. Helmuth, G. Paul, and I. F. Sbalzarini. Beyond co-localization: inferring spatial interactions between sub-cellular structures from microscopy images. BMC Bioinformatics, 11:372, 2010.
 

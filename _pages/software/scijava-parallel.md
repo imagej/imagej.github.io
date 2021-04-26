@@ -8,8 +8,7 @@ categories: Software
 
 Scijava-parallel is a framework that provides an access point for using computational resources such as remote computers or HPC clusters. It hides details about configuration and initialization of such resources.
 
-Types of users
---------------
+## Types of users
 
 Scijava-parallel is designed to be used by three types of users and we call them: *developers*, *Fiji users* and *parallelization paradigm providers*.
 
@@ -19,8 +18,7 @@ A Fiji user provides configurations for parallelization paradigm implementations
 
 A parallelization paradigm provider offers new parallelization paradigm implementations or new types of parallelization paradigm.
 
-Developers
-----------
+## Developers
 
 Developers obtain parallelization paradigm implementation that is in selected profile by method getParadigmOfType. Desired parallelization paradigm is specified when the method is called. If the parallelization paradigm implementation does not exist, *null* value type is returned. ![](/media/ParallelService.png "fig:ParallelService.png")
 
@@ -47,8 +45,7 @@ The methods cause parallel execution of specified command for parameters. A size
 
 -   *ImageJServerParadigm* in the module [scijava-parallel-imagej-server](https://github.com/fiji-hpc/scijava-parallel-imagej-server) also executes commands in different instances of running Fiji. The paradigm uses ability of [imagej-server](https://github.com/imagej/imagej-server/) to execute commands through its provided REST API.
 
-Fiji users
-----------
+## Fiji users
 
 Scijava-parallel offers plugin that provides management of paradigms and profiles. It is accessible from menu {% include bc path="Plugins | Scijava parallel | Paradigm Profiles Manager" %}. The plugin shows the following form:
 
@@ -79,8 +76,7 @@ This action marks a paradigm profile as selected. An instance of the paradigm as
 
 The manager enables the user to perform basic management of the parallelization paradigm implementation in the selected profile. The user can initialize and close the profile by the check box *Paradigm Active*. The paradigm manager *FSTRPC on HPC* offers a possibility to leave a Fiji, that is started in a job on a remote HPC, running while is an associated parallelization paradigm implementation closed. This property is specified by the user during
 
-Parallelization paradigm providers
-----------------------------------
+## Parallelization paradigm providers
 
 A Parallelization paradigm implementation requires only to implement one or more parallelization paradigms and to annotate this class as plugin:
 
@@ -99,7 +95,6 @@ A developer makes a non-abstract child of the class ParadigmManagerUsingRunner. 
 
 ![](/media/Paradigm-manager-using-runner.jpg "paradigm-manager-using-runner.jpg")
 
-Installation
-------------
+## Installation
 
 Scijava-parallel can be installed directly into Fiji from its update site [https://sites.imagej.net/Scijava-parallel/>](https://sites.imagej.net/Scijava-parallel/). We also provide a modified version of [Labkit](/plugins/labkit) that has support for scijava-parallel. This version of Labkit has its own update site [<https://sites.imagej.net/Imglib2-labkit-cluster/](https://sites.imagej.net/Imglib2-labkit-cluster/). It only demonstrates scijava-parallel and it is not meant as production software.

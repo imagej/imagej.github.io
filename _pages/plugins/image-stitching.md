@@ -7,15 +7,13 @@ artifact: sc.fiji:Stitching\_
 
  
 
-Citation
---------
+## Citation
 
 Please note that the Stitching, as well as other plugins available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
 -   S. Preibisch, S. Saalfeld, P. Tomancak (2009) "Globally optimal stitching of tiled 3D microscopic image acquisitions", *Bioinformatics*, **25**(11):1463-1465. [Webpage](http://bioinformatics.oxfordjournals.org/cgi/content/abstract/btp184) [PDF](http://bioinformatics.oxfordjournals.org/cgi/reprint/25/11/1463.pdf)
 
-Introduction
-------------
+## Introduction
 
 There is an increasing demand to image large biological specimen at high resolution. Typically those specimen do not fit in the field of view of the microscope. To overcome this drawback, motorized stages moving the sample are used to create a tiled scan of the whole specimen. The physical coordinates provided by the microscope stage are not precise enough to allow reconstruction ("Stitching") of the whole image from individual image stacks.
 
@@ -35,8 +33,7 @@ Plase note: this is the new implementation of the Stitching plugin which is fina
 
 The documentation of the **old** Stitching plugin collection can be found here: [Stitching 2D/3D](/plugins/stitching-2d-3d).
 
-Overview of the Stitching Plugins
----------------------------------
+## Overview of the Stitching Plugins
 
 The Image Stitching package comes with 2 different plugins:
 
@@ -45,8 +42,7 @@ The Image Stitching package comes with 2 different plugins:
 
 Although both plugins make use of layered context-dependent Generic Dialogs, they are completely macro-scriptable.
 
-Pairwise Stitching
-------------------
+## Pairwise Stitching
 
 {% include thumbnail src='/media/PairwiseStitching1.png' title='Shows the selection of input images.'%} The Pairwise Stitching first queries for two input images that you intend to stitch. They can contain rectangular ROIs which limit the search to those areas, however, the full images will be stitched together. Once you selected the input images it will show the actual dialog for the Pairwise Stitching. The dialog will depend on the dimensionality of the input images. Please note that RGB input images will be converted into 8-Bit composite images.
 
@@ -82,8 +78,7 @@ If a global optimization is necessary for time-point registration another dialog
 -   **Max/avg displacement threshold**: After the overlap between all individual tiles has been computed the global optimization computes an optimal arrangement of all tiles. After that, some image pairs will be placed different to each other compared to the individual alignment, which we call displacement. If there are no major alignment errors the average and maximal displacement will be below or around 1 pixel. If one of the individual alignment between two images was wrong, this pair will be displaced a lot in the global optimization as all other connecting tiles pull it towards the correct global position. If the maximal displacement is much higher than the average one it means that this individual alignment is most likely wrong and will be removed. Note: An image will just be removed if there is no link to another image any more.
 -   **Absolute displacement threshold**: Removes links between images if the absolute displacement is higher than this value.
 
-Grid/Collection Stitching
--------------------------
+## Grid/Collection Stitching
 
 This plugin is able to stitch an arbitrary collection or grid of images, it does not matter if it is 2d, 3d, 4d or 5d images as long as all images are of the same type. In contrast to the Pairwise Stitching of two images, this plugins will load (and potentially save) the images from/to harddisc.
 
@@ -169,8 +164,7 @@ Finally, you can choose whether to display the result or write the fused image t
 
 Please see the [Grid/Collection Stitching Plugin](/plugins/grid-collection-stitching) page for a complete set of instruction on how to use Grid/Collection stitching in Fiji.
 
-Problems, known issues and solutions
-------------------------------------
+## Problems, known issues and solutions
 
 ### If the output is not correct
 
@@ -256,8 +250,7 @@ You can activate the option using the **script editor**:
 
 From now on, any shift in z will be ignored for 3d acquisitions. This change is only valid for the **currently running Fiji instance**.
 
-Results & Computation time
---------------------------
+## Results & Computation time
 
 <img src="/media/ResultsStitching.jpg" title="fig:Example of Stitching of 3D confocal stacks." width="780" alt="Example of Stitching of 3D confocal stacks." />  
 The figure shows stitched images of 3D confocal tiles. (A) shows a Drosophila melanogaster pupae expressing a GFP reporter under the regulation of the yellow gene, imaged few hours before eclosion using a 4× dry lens on an Optiphot confocal microscope (Nikon). It was stitched from three image stacks arranged in a 1 × 3 grid (Table 1 first row). The maximum intensity projection is shown. (B) shows the Drosophila larval nervous system stained with three dyes, stitched from a grid of 2 × 3 RGB images (see table 1 second row), the maximum intensity projection is shown. (C) shows a zone in the dorsal telencephalon of human embryonic tissue from week 17 post conception, incubated for 24 hours at 37°C in DiI. It was imaged using a 63×/1.4 objective on Zeiss LSM 510 equipped with a motorized stage. The final image was created from 24 image stacks arranged in a 4 × 6 grid (see table 1 third row), slice 18 is shown. Special thanks to Nicolas Gompel, James W. Truman, Simone Fietz and Wieland B. Huttner for providing the images.
@@ -274,13 +267,11 @@ The figure shows stitched images of 3D confocal tiles. (A) shows a Drosophila me
 
 The Table shows examples of stitched data computed on an Intel® Quad-Core CPU machine with 2.67GHz and 24GB of RAM. The global alignments of all stitchings have an average error below 1 px, the displacements in row 1 are zero because the two alignments are independent of each other. Note that the computation time scales roughly linearly with the output image size.
 
-Contact
--------
+## Contact
 
 For any type of comment, questions or input please write to preibischs@janelia.hhmi.org or visit my [homepage](http://fly.mpi-cbg.de/preibisch).
 
-Download for ImageJ & Acknowledgements
---------------------------------------
+## Download for ImageJ & Acknowledgements
 
 Although the Stitching depends on quite some Fiji-specific libraries, there is a download for ImageJ available on my webpage in the [software section](http://fly.mpi-cbg.de/~preibisch/software.html).
 
@@ -296,8 +287,7 @@ Additionally, I want to thank the following people for discussions, providing im
 
 Danielle Bower, {%- include person id='acardona' -%}, Nicolas Gompel, Wieland Huttner, {%- include person id='jefferis' -%}, Arnim Jenett, {%- include person id='tomka' -%}, David Koos, Jan Peychl, {%- include person id='tomancak' -%}, James Truman, Nicholas Weiler and {%- include person id='chalkie666' -%}
 
-See Also
---------
+## See Also
 
 -   [The Publication on the Stitching Plugin](http://bioinformatics.oxfordjournals.org/cgi/content/abstract/btp184), S. Preibisch, S. Saalfeld, P. Tomancak (2009) Globally optimal stitching of tiled 3D microscopic image acquisitions", *Bioinformatics*, **25**(11):1463-1465. [PDF](http://bioinformatics.oxfordjournals.org/cgi/reprint/25/11/1463.pdf)
 -   [TrakEM2](/plugins/trakem2) for non-destructive stitching with floating, adjustable images.

@@ -20,8 +20,7 @@ The plugin can perform*' 6 types of image registration techniques*':
 
 All models are aided by automatically extracted [ SIFT features](/plugins/feature-extraction).
 
-User Manual
------------
+## User Manual
 
 <b>Premises</b>:  
 
@@ -111,8 +110,7 @@ For a complete description of the elastic parameters, please visit the [FAQ of t
 
 </ol>
 
-Examples
---------
+## Examples
 
 Example of registration results using the shrinking constraint:
 
@@ -174,15 +172,13 @@ Even this sequence of rather noisy transmission electron microscopy images, with
 </tr>
 </table>
 
-API documentation
------------------
+## API documentation
 
 The latest documentation of the package can be found here:
 
 [https://fiji.sc/javadoc/register_virtual_stack/package-summary.html](https://fiji.sc/javadoc/register_virtual_stack/package-summary.html)
 
-Scripting / PlugIn
-------------------
+## Scripting / PlugIn
 
 You can call the plugin in a non-interactive fashion from a jython script:
 
@@ -208,23 +204,20 @@ You can call the plugin in a non-interactive fashion from a jython script:
     Register_Virtual_Stack_MT.exec(source_dir, target_dir, transf_dir, 
     reference_name, p, use_shrinking_constraint)
 
-See also
---------
+## See also
 
 -   [Transform Virtual Stack Slices](/plugins/transform-virtual-stack-slices), to see how to load the saved transforms.
 -   [FloatArray2DSIFT.java](https://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=mpicbg/imagefeatures/FloatArray2DSIFT.java;hb=HEAD) which contains the subclass Param which is the 'sift' member of the Register\_Virtual\_Stack\_Slices.Param subclass.
 -   {% include github org='fiji' repo='register\_virtual\_stack\_slices' source='register\_virtual\_stack/Register\_Virtual\_Stack\_MT.java' label='Register\_Virtual\_Stack\_MT.java' %}, including the Param subclass.
 -   [Elastic Alignment and Montage plugin](/plugins/elastic-alignment-and-montage), for elastic registration/montage of large datasets using spring meshes (local deformations).
 
-References
-----------
+## References
 
 The algorithm implemented for elastic registration ([bUnwarpJ](/plugins/bunwarpj)) and its technical explanations are detailed on the paper:
 
 -   I. Arganda-Carreras, C. O. S. Sorzano, R. Marabini, J.-M. Carazo, C. Ortiz-de Solorzano, and J. Kybic, ["Consistent and Elastic Registration of Histological Sections using Vector-Spline Regularization,"](http://biocomp.cnb.uam.es/~iarganda/bUnwarpJ/downloads/arganda_carreras_CVAMIA06.pdf) Lecture Notes in Computer Science, Springer Berlin / Heidelberg, volume 4241/2006, CVAMIA: Computer Vision Approaches to Medical Image Analysis, pages 85-95, 2006.
 
-License
--------
+## License
 
 This program is **free software**; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt](http://www.gnu.org/licenses/gpl.txt)).
 

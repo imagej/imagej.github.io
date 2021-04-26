@@ -7,8 +7,7 @@ section: Learn:Techniques
 {% include biginfo-box content='See [:Category:Deconvolution](Category_Deconvolution) for pages about deconvolution.' %} 
 {% include wikipedia title='Deconvolution' text='Deconvolution'%} corrects the systematic error of blur (loss of contrast in smaller features) in optical systems such as fluorescence microscopy images.
 
-The problem, and the solution
------------------------------
+## The problem, and the solution
 
 Any optical image forming system, such as a microscope objective lens, has the nasty property of killing more and more contrast of smaller and smaller features, up to the resolution (diffraction) limit, after which there is no contrast (and thus no resolution). Large features are bright, but small features appear less contrasted and dimmer than they should. This is a systematic error, characterized by the Point Spread Function (PSF) of the optical system, which makes the image intensity information non-quantitative. If we can measure the PSF, or guess it, we can correct the raw image for it. Since it's possible to correct such a systematic error, we should!
 
@@ -16,8 +15,7 @@ Image contrast restoration by deconvolution is a way to correct the systematic e
 
 Image contrast restoration by deconvolution is an important systematic error correction step for quantitative measurement of image pixel intensities in analysis workflows. If we don't correct this systematic error, the results of the image intensity analysis could be very much more wrong than if we correct the images before analysis. It's the same as zeroing a scale before weighing something.
 
-Introduction to the practical method
-------------------------------------
+## Introduction to the practical method
 
 Two plugins from Bob Dougherty can be used together to perform this systematic error correction in a 2D or 3D image. Other plugins are also available. The Diffraction-PSF-3D plugin generates a z-stack of the theoretical point-spread function (PSF). Alternatively, an empirical, measured PSF could be used. The Iterative Deconvolution 3D plugin uses a PSF image z-stack to correct the image contrast vs. feature size in your sample image z-stack. The image below is a single slice taken from a stack before and after deconvolution using these plugins.
 
@@ -25,8 +23,7 @@ Two plugins from Bob Dougherty can be used together to perform this systematic e
 
 *See the plugins' homepages for more details:* [Diffraction PSF 3D](http://www.optinav.info/Diffraction-PSF-3D.htm) & [Iterative Deconvolution 3D](http://www.optinav.info/Iterative-Deconvolve-3D.htm)
 
-Generating a PSF image stack
-----------------------------
+## Generating a PSF image stack
 
 The Diffraction PSF 3D plugin can be used to generate theoretical PSFs assuming they arise only from diffraction. These PSFs may be used with other deconvolution plugins later.
 
@@ -34,8 +31,7 @@ To use, run the "Diffraction PSF 3D" plugin. A dialog will appear; most of the f
 
 <figure><img src="/media/Diffraction psf window1.png" title="diffraction_psf_window1.png" width="377" height="317" alt="diffraction_psf_window1.png" /><figcaption aria-hidden="true">diffraction_psf_window1.png</figcaption></figure>
 
-Constrained Iterative Deconvolution
------------------------------------
+## Constrained Iterative Deconvolution
 
 Non negative constrained (non linear), iterative deconvolution algorithms greatly outperform simple inverse filters and Wiener filters on noisy real life fluorescence microscopy (and other) image data.
 
@@ -43,13 +39,11 @@ Run the Iterative Deconvolve 3D plugin, then select the image and PSF. For a 2D 
 
 <figure><img src="/media/Iterative deconvolve window.png" title="iterative_deconvolve_window.png" width="411" height="272" alt="iterative_deconvolve_window.png" /><figcaption aria-hidden="true">iterative_deconvolve_window.png</figcaption></figure>
 
-An interactive Convolution / Deconvolution / Contrast Restoration demo in ImageJ
---------------------------------------------------------------------------------
+## An interactive Convolution / Deconvolution / Contrast Restoration demo in ImageJ
 
 For an educational interactive ImageJ javascript demo of convolution, inverse filtering and image contrast restoration by iterative constrained deconvolution (using the above plugins), see this [Convolution / Deconvolution / Contrast Restoration demo script](https://github.com/chalkie666/imagejMacros/blob/master/DeconvolutionDemos/Convolution_Deconvolution_Demo.js)
 
-Video presentations
--------------------
+## Video presentations
 
 <div style="float: left; padding-right: 1em">
 

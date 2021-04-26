@@ -7,13 +7,11 @@ artifact: sc.fiji:SPIM\_Registration
 
  
 
-Important Note
---------------
+## Important Note
 
 {% include warning-box content='Please Note: This version of the software is outdated. It will be part of Fiji for the time being, but I highly recommend using the new [Multiview Reconstruction Plugin](/plugins/multiview-reconstruction). It is much more powerful, flexible and completely integrated with the [BigDataViewer](/plugins/bdv).' %}
 
-Citation
---------
+## Citation
 
 Please note that the SPIM registration plugin available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
@@ -22,8 +20,7 @@ Please note that the SPIM registration plugin available through Fiji, is based o
 
 For technical details about the registration method and SPIM imaging see also [SPIM Registration Method](/plugins/spim-registration/method).
 
-Introduction & Overview
------------------------
+## Introduction & Overview
 
 Selective Plane Illumination Microscopy (SPIM, [*Science*, **305**(5686):1007-9](http://www.sciencemag.org/content/305/5686/1007)) allows *in toto* imaging of large specimens by acquiring image stacks from multiple angles. However, to realize the full potential of these acquisitions the data needs to be reconstructed:
 
@@ -45,8 +42,7 @@ We developed several algorithms for the registration and fusion of multi-angle S
 
 ***Please note:*** *the SPIM registration has been rewritten and now replaces the "old" plugin collection (Registration, Advanced Registration, MultiChannel Registration) which has been moved to the deprecated folder. For information regarding these outdated plugins please refer to this [page](/plugins/spim-bead-registration-deprecated).*
 
-Detailed tutorials
-------------------
+## Detailed tutorials
 
 SPIM registration is particularly useful for processing of data acquired on [**OpenSPIM**](http://openspim.org). Detailed step-by-step tutorials are available on the [**OpenSPIM wiki**](http://openspim.org/Operation#data-processing).
 
@@ -58,23 +54,19 @@ SPIM registration is particularly useful for processing of data acquired on [**O
 
 The pipeline is relatively linear as described above, we highlight the steps where [**alternative routes exist**](http://openspim.org/Registration#cross-road-in-spim-plugins).
 
-How do I view fused, saved output image(s)
-------------------------------------------
+## How do I view fused, saved output image(s)
 
 The fused images will be saved in the *output* directory of the dataset as a collection of two-dimensional planes. The created output images can be viewed for example with Plugins-&gt;Image5D-&gt;[Virtual Image 5D Opener](/ij/plugins/image5d.html) or via the Plugins-&gt;LOCI-&gt;[Bio-Formats Importer](http://www.loci.wisc.edu/software/bio-formats) (check the option *Group files with similar names*).
 
-Downloading example dataset
----------------------------
+## Downloading example dataset
 
 There is a 7-angle SPIM dataset of *Drosophila* available [here](http://fly.mpi-cbg.de/preibisch/nm/HisYFP-SPIM.zip). The cropping parameters pre-set in the plugin fit this dataset, only the appropriate folder has to be defined.
 
-System requirements
--------------------
+## System requirements
 
 Multi-view SPIM datasets are typically rather large, therefore it is recommended to use the registration plugin on a computer with a lot of RAM. The minimal requirement for the example dataset is **at least 4Gb** of memory however we recommend an **16Gb+** system. You may need to increase the Fiji memory limit by going to Edit-&gt;Options-&gt;Memory & Threads.
 
-Cluster processing
-------------------
+## Cluster processing
 
 See the dedicated [page](/plugins/automated-workflow-for-parallel-multiview-reconstruction) describing an automated workflow for processing SPIM data from Lighsheet.Z1 and OpenSPIM on the MPI-CBG cluster.
 

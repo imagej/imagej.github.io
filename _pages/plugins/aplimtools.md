@@ -20,8 +20,7 @@ AplimTools is a set of image processing tools for plants magnetic resonance anal
   
   
 
-Installation
-------------
+## Installation
 
 In order to install AplimTools on your computer, please follow these simple steps:
 
@@ -39,8 +38,7 @@ In order to install AplimTools on your computer, please follow these simple step
 
   
 
-Aplim T1/T2/M0 maps importer
-----------------------------
+## Aplim T1/T2/M0 maps importer
 
 ### The science behind
 
@@ -87,8 +85,7 @@ For time-lapse experiments, one can compute such a 4D MR hyperimage at successiv
 
   
 
-Aplim T1/T2/M0 curves explorer
-------------------------------
+## Aplim T1/T2/M0 curves explorer
 
 ### Exploring relaxation curves
 
@@ -112,23 +109,20 @@ A window appear, that let you explore your data clicking on your images. Control
 
   
 
-References
-----------
+## References
 
 -   José G. Raya, Olaf Dietrich, Annie Horng, Jürgen Weber, Maximilian F. Reiser, Christian Glaser, 2010. « T2 measurement in articular cartilage: Impact of the fitting method on accuracy and precision at low SNR ». Magnetic Resonance in Medicine 63:181–193 (2010)
 
   
 
-Software dependencies acknowledgements
---------------------------------------
+## Software dependencies acknowledgements
 
 -   Johannes Schindelin et al for [Fiji](/fiji) (Schindelin et al., 2012)
 -   Karl Schmidt and Curtis Rueden for tips seen in the MRI Analysis Calculator and in the CurveFitters
 
   
 
-License
--------
+## License
 
 This program is an open-source **free software**: it can be redistributed and/or modified under the terms of the **GNU General Public License** as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt](http://www.gnu.org/licenses/gpl.txt)).
 

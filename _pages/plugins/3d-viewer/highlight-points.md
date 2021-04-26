@@ -6,8 +6,7 @@ title: 3D Viewer › Highlight Points
 (Return to the [Developer Documentation](/plugins/3d-viewer/developer-documentation) page)  
 (Return to the main [3D\_Viewer](/plugins/3d-viewer) page)
 
-How to highlight named points of a Content
-------------------------------------------
+## How to highlight named points of a Content
 
 You can download example source code for this HowTo [here](/plugins/3d-viewer/example-code).
 

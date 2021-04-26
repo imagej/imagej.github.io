@@ -87,8 +87,7 @@ This menu hosts scripts that process files in bulk. Namely:
 
 -   **Render\_Cell\_Collection\_(MultiPanel\_Figure).groovy** Exemplifies how to generate a publication-quality multi-panel figure in which multiple reconstructions are sorted and color-coded by a specified morphometric trait (e.g., cable length).
 
-Python Notebooks
-----------------
+## Python Notebooks
 
 Direct access to the SNT API from the [Python](https://www.python.org/) programming language is made possible through the [pyimagej](https://pypi.org/project/pyimagej/) module. This enables full integration between SNT and any library in the Python ecosystem (numpy, scipy, etc.). The [Notebooks](https://github.com/morphonets/SNT/tree/master/notebooks) directory in the SNT repository contains several examples at different complexity levels.
 
@@ -121,8 +120,7 @@ Now you can access all the attributes and methods these classes offer. Let's get
         s_stats.getHistogram(metric).show()
         print("The average inter-node distance is %d" % summary_stats.getMean())
 
-Adding Scripts to SNT
----------------------
+## Adding Scripts to SNT
 
 There are two ways to have your own scripts appear in SNT's *Scripts* menu. The easiest way is to go to {% include bc path='Scripts|New...'%} from the SNT dialog. This command will open an instance of Fiji's Script Editor with pre-loaded boilerplate code in the scripting language of your choice. If you save the script and then choose {% include bc path='Scripts|Reload...'%}, your new script will appear in the full list of scripts found at {% include bc path='Scripts|Full List...'%}.
 
@@ -130,8 +128,7 @@ Alternatively, you can save scripts into the "scripts" sub-directory under the m
 
 Did you write a useful script? Please submit a [pull request](https://github.com/morphonets/SNT/pulls) on GitHub so that it can be distributed with Fiji!
 
-Examples
---------
+## Examples
 
 ### Scripting Reconstruction Viewer
 

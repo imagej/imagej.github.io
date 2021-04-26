@@ -5,15 +5,13 @@ title: Getting started with MaMuT
 
 This page contains a tutorial for the [MaMuT](/plugins/mamut) plugin. It describes and document all its features using a publication related dataset.
 
-Publication.
-------------
+## Publication.
 
 If you find MaMuT useful for your research, please cite it:
 
 {% include publication content='MaMuT' %}
 
-Installation.
--------------
+## Installation.
 
 MaMuT is a Fiji plugin that depends on its components to run. Download Fiji from [its website](https://fiji.sc/#download) if you do not have it already.
 
@@ -23,8 +21,7 @@ Got to {% include bc path='Help | Update...'%} and click on the **Manage update 
 
 ![](/media/Bdv-MaMuT UpdateSite.png "bdv-MaMuT_UpdateSite.png")
 
-Data preparation.
------------------
+## Data preparation.
 
 MaMuT relies on and exploits the file format of the [**BigDataViewer**](/plugins/bdv). You need to prepare your images so that they can be opened in the BigDataViewer and there is no way around it. Actually, MaMuT was written specifically as an annotation platform for the BigDataViewer, specializing in cell lineaging.
 
@@ -46,8 +43,7 @@ Once you have prepared your images for opening in the BigDataViewer, you should 
 
 Instead of preparing your own dataset, you can also download an example dataset for this tutorial [here](http://bds.mpi-cbg.de/mamut-example). In the following, we assume that you are using this data.
 
-Opening and and saving in MaMuT.
---------------------------------
+## Opening and and saving in MaMuT.
 
 ### Starting a new annotation.
 
@@ -92,8 +88,7 @@ From now on, we will only be interacting with the MaMuT file in MaMuT, but these
 
 To reload a MaMuT file, go to the {% include bc path='Plugins | MaMuT | Load MaMuT file'%} Fiji menu item, and browse to the MaMuT XML file. This will load the annotation and the image data. Careful, do not mix the MaMuT XML file with the BigDataViewer XML file when opening the later.
 
-The MaMuT Viewer.
------------------
+## The MaMuT Viewer.
 
 MaMuT offers three kind of views:
 
@@ -172,8 +167,7 @@ The MaMuT viewer also overlays some useful information:
 
 The MaMuT viewer only displays a slice of the current source(s). It fetches the pixel values it needs to generate a single slice through the data. By default, pixel values are interpolated using the nearest neighbor, which might generate a pixelated look for high level of zoom. By pressing {% include key content='press\|I' %} you can toggle between nearest-neighbor interpolation, and tri-linear interpolation, which smoothes the display.
 
-Annotating cells.
------------------
+## Annotating cells.
 
 ### Creating spots.
 
@@ -219,8 +213,7 @@ By default, the range of the color scale is taken from the minimal to the maxima
 
 ![](/media/Bdv-MaMuT ConfigureFeatureRange.png "bdv-MaMuT_ConfigureFeatureRange.png")
 
-Linking cells across time.
---------------------------
+## Linking cells across time.
 
 ### The data structure behind MaMuT.
 
@@ -303,8 +296,7 @@ Tracks extend in time, and they are displayed as lines over the image data. By d
 
 The **Limit drawing depth** field is used to restrict the Z neighborhood in which tracks are drawn. If activated, only part of the tracks that are close to the current Z plane of the view will be drawn. The extend of this Z section is set by the numerical value in the field.
 
-TrackScheme.
-------------
+## TrackScheme.
 
 TrackScheme is the second view offered in MaMuT. It can be seen as a lineage visualizer or editor. In TrackScheme, the image data as well as the spatial location of spots are completely discarded in favor of a hierarchical layout that highlights how cells divide in time.
 
@@ -402,8 +394,7 @@ To generate the plot, click the **Plot features** button. A graph should appear 
 
 <img src="/media/Bdv-MaMuT TrackSchemeSideBar.png" width="800"/>
 
-Editing annotations with TrackScheme.
--------------------------------------
+## Editing annotations with TrackScheme.
 
 The main application of TrackScheme is to edit annotations in conjunction with creating and moving spots on another view. Let's do this now.
 
@@ -461,8 +452,7 @@ Spot names are also used to decide in what order to lay out track branches. For 
 
 <img src="/media/Bdv-MaMuT TrackSchemeSpotNames.png" width="500"/>
 
-Semi-automated tracking in MaMuT.
----------------------------------
+## Semi-automated tracking in MaMuT.
 
 MaMuT does not ship fully automatic detection and particle-linking algorithms. It was build as a tool for the manual annotation and inspection of large movies. Typically, you would use MaMuT just after the acquisition and image registration process, to check whether the data you acquired is usable, and quickly generate an annotation that will fuel your first scientific conclusions. Nonetheless, manual annotation can be very cumbersome. The semi-automatic tracking can alleviate this a bit.
 
@@ -490,8 +480,7 @@ In our case, the error made at the time-point 7 was because there was a very bri
 
 As we just saw, the semi-automatic tracking is very local and does not use nor derive any prior information on cell movements. It simple tries to find the best successor of a single cell, neglecting all the other cells. As such, it must be considered as a strongly suboptimal tracking method, whose goal is strictly to assist manual annotation. Alternating between semi-automatic tracking and manual annotation (e.g. using the auto-linking mode) when the semi-automatic tracking fails can generate deep lineages quickly.
 
-Exporting images and reslicing data.
-------------------------------------
+## Exporting images and reslicing data.
 
 ### Exporting the MaMuT viewer display.
 
@@ -519,8 +508,7 @@ The dialog that pops let you choose first the source that will be resliced, in t
 
 This command really reads into the raw data, and therefore generate ImageJ stacks that have the same data representation (8-bit, 16-bit, etc) that of the raw data. This can be very useful for subsequent analysis.
 
-Numerical features.
--------------------
+## Numerical features.
 
 We already skimed over numerical features when we discussed the display settings for spots and tracks. Numerical features are scalar values associated to a spot, a link or a track that measures some useful value. For instance, the X position of a spot, the displacement across a link, and the number of split events in a track. The MaMuT feature system is direcly imported from [TrackMate](/plugins/trackmate), but only contains a subset of feature definitions from TrackMate and a few ones related to cell lineaging.
 
@@ -570,8 +558,7 @@ The next paragraphs list and document the current features in MaMuT.
 | `Mean cell division time` & `Std cell division time` | The mean and standard deviation values of the `Cell division time` spot feature described above, averaged across track branches, and excluding undefined branch values.                                                                 |
 |                                                                                  |                                                                                                                                                                                                                                                                     |
 
-Customizing MaMuT viewer key-bindings.
---------------------------------------
+## Customizing MaMuT viewer key-bindings.
 
 ### The `mamut.properties` file.
 
@@ -604,8 +591,7 @@ Here we recapitulate the default key-bindings for the MaMuT viewer. This image i
 
 ![](/media/Bdv-MaMuTKeyboardLayout.png "bdv-MaMuTKeyboardLayout.png")
 
-TrackScheme key-bindings.
--------------------------
+## TrackScheme key-bindings.
 
 TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list them here.
 

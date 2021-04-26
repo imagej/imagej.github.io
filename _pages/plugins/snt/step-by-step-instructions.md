@@ -12,8 +12,7 @@ Tracing
 
 These instructions assume that you have read the [Overview](/plugins/snt/manual) page, including starting up the plugin, enabling [Cursor Auto-snapping](/plugins/snt/manual#auto-snapping), and [Auto-tracing](/plugins/snt/manual#auto-tracing) options. This section is also documented in a [Screencast](/plugins/snt/screencasts#introduction-to-tracing).
 
-Starting A Path
----------------
+## Starting A Path
 
 ### I. Pick The Starting Point
 
@@ -37,8 +36,7 @@ Once the search has reached the target point, the path is shown in cyan (to indi
 
 </div>
 
-Branching: Start A Path On An Existing Path
--------------------------------------------
+## Branching: Start A Path On An Existing Path
 
 ### I. Select The Path To Branch Off
 
@@ -60,13 +58,11 @@ From this point on, you can carry on adding nodes to the branched path as [above
 
 </div>
 
-Joining: End A Path On An Existing Path
----------------------------------------
+## Joining: End A Path On An Existing Path
 
 <table><tbody><tr class="odd"><td><p>Supposing you want the end of a path that you're tracing to join onto an existing path, you just use the same modifier key when selecting the end point of the last part of the path. To go into that in more detail, if you're halfway through tracing a path like [1]:</p></td><td><figure><img src="/media/Snt-ej-cropped-half-finished-2.png" title="[1] Unfinished join segment, in red - disconnected" width="350" alt="[1] Unfinished join segment, in red - disconnected" /><figcaption aria-hidden="true"><span style="text-align:center;font-size:90%">[1] Unfinished join segment, in red - disconnected</span></figcaption></figure></td></tr><tr class="even"><td><p>... and you want the final part of that path to join up with the existing path running from the top-left to top-right of the image. First, select that path in the path list (or using the {% include key content='G' %} shortcut) as in [2]:</p></td><td><figure><img src="/media/Snt-ej-cropped-selected-destination-path-2.png" title="[2] Selected path to join to, in green" width="350" alt="[2] Selected path to join to, in green" /><figcaption aria-hidden="true"><span style="text-align:center;font-size:90%">[2] Selected path to join to, in green</span></figcaption></figure></td></tr><tr class="odd"><td><p>Now hold down {% include key content='Alt|Shift' %} to restrict the endpoint to be a "join" on that existing path. Click (while still holding down the modifier keys) to start the search for that endpoint and make it join the existing path. If the search can find a path to the end point, the result should look like [3]:</p></td><td><figure><img src="/media/Snt-ej-cropped-end-join-created-2.png" title="[3] Connected path to join, unconfirmed" width="350" alt="[3] Connected path to join, unconfirmed" /><figcaption aria-hidden="true"><span style="text-align:center;font-size:90%">[3] Connected path to join, unconfirmed</span></figcaption></figure></td></tr><tr class="even"><td><p>If you're happy with the result, confirming the temporary path will automatically complete the whole path, since if you're creating an end join there cannot be any more to the path. Note that the path list indicates that this new <em>Path (1)</em> ends on the existing <em>Path (0)</em>. The result will look like [4]:</p></td><td><figure><img src="/media/Snt-ej-cropped-path-completed-2.png" title="[4] Confirmed join" width="350" alt="[4] Confirmed join" /><figcaption aria-hidden="true"><span style="text-align:center;font-size:90%">[4] Confirmed join</span></figcaption></figure></td></tr></tbody></table>
 
-Merging/Joining Paths
----------------------
+## Merging/Joining Paths
 
 Two paths can be merged or joined in *Edit Mode*. To do so:
 
@@ -87,8 +83,7 @@ If both nodes are terminal, the paths are merged together. Otherwise, one path w
 
 </div>
 
-Tracing in the Legacy 3D Viewer
--------------------------------
+## Tracing in the Legacy 3D Viewer
 
 It remains possible to trace in the legacy 3D Viewer. ![](/media/SNT-3D-Dialog.png "fig:")
 

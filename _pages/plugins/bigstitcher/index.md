@@ -17,8 +17,7 @@ title: BigStitcher
 {% endcapture %}
 {% include info-box content='Plugin' software='BigStitcher' name='BigStitcher' author=author maintainer=maintainer source=source status='beta' %}
 
-Introduction & Overview
------------------------
+## Introduction & Overview
 
 The BigStitcher is a software package that allows simple and efficient alignment of multi-tile and multi-angle image datasets, for example acquired by lightsheet, widefield or confocal microscopes. The software supports images of almost arbitrary size ranging from very small images up to volumes in the range of many terabytes, which are for example produced when acquiring cleared tissue samples with lightsheet microscopy.
 
@@ -36,15 +35,13 @@ Specifically intended for lightsheet acquisitions of cleared samples (e.g. by CL
 
 <figure><img src="/media/BigStitcherTitle-1.jpg" title="Illustrates an example of an interactive view of a single-view multi-tile dataset with irregular tiling acquired by lightsheet microscopy. Each tile of size 1920x1920x1000 pixels is depicted in a random color." width="1000" alt="Illustrates an example of an interactive view of a single-view multi-tile dataset with irregular tiling acquired by lightsheet microscopy. Each tile of size 1920x1920x1000 pixels is depicted in a random color." /><figcaption aria-hidden="true">Illustrates an example of an interactive view of a single-view multi-tile dataset with irregular tiling acquired by lightsheet microscopy. Each tile of size 1920x1920x1000 pixels is depicted in a random color.</figcaption></figure>
 
-Download
---------
+## Download
 
 A **beta**-Version of BigStitcher is available via the Fiji Updater. Just go to {% include bc path='Help | Update...'%}, click `Manage update sites` and select `BigStitcher` in the list. After applying the changes and restarting Fiji, BigStitcher will be available under {% include bc path='Plugins | BigStitcher | BigStitcher'%}.
 
 The source code is available {% include github org='PreibischLab' repo='BigStitcher' %}, please also report feature requests & bugs there.
 
-Documentation
--------------
+## Documentation
 
 **The workflow of the BigStitcher consists of multiple steps covering import, visualisation, processing, and output that are explained in full detail under the respective pages linked below:**
 
@@ -180,8 +177,7 @@ We provide a macro-scriptable version of most processing steps in BigStitcher. T
 
 -   [Headless operation of BigStitcher](/plugins/bigstitcher/headless)
 
-Example Datasets
-----------------
+## Example Datasets
 
 We prepared a 2D and 3D version of a tiled dataset for testing the BigStitcher on a small example. We suggest to run BigStitcher on these first before applying it to your dataset. This allows you to quickly test features in an environment where you can easily ask for advice on GitHub or the ImageJ Forum. We will add a larger, multi-view, dataset as a showcase item in the future.
 

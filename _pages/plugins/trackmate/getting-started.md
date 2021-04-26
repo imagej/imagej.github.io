@@ -4,15 +4,13 @@ title: Getting started with TrackMate
 categories: Tutorials
 ---
 
-Introduction
-------------
+## Introduction
 
 This tutorial is the starting point for [TrackMate](/plugins/trackmate) users. It explains how it works by walking you through a simple case, using an easy image.
 
 The [TrackMate](/plugins/trackmate) plugin provides a way to semi-automatically segment spots or roughly spherical objects from a 2D or 3D image, and track them over time. It follows the classical scheme, where the segmentation step and the particle-linking steps are separated. Therefore each step is handled in the user interface by a specific panel, and you will go back in forth through them. Also, TrackMate has a fishing net with small holes: it will find as much spots as it can, even the ones you are not interested. So there is a step to filter them out before tracking. In these views, TrackMate resembles a bit to the Spot Segmentation Wizard of [Imaris™](http://www.bitplane.com/go/products/imaris).
 
-The test image
---------------
+## The test image
 
 The test image we will use for this tutorial has now a link in Fiji. You can find it in {% include bc path='File | Open Samples | Tracks for TrackMate (807K)'%}, at the bottom of the list.
 
@@ -25,8 +23,7 @@ Also, if you look carefully, you will see that there are two splitting events - 
 {% include clear%}
 
 
-Starting TrackMate
-------------------
+## Starting TrackMate
 
 ![](/media/plugins/trackmate MainButtons.png)
 
@@ -45,8 +42,7 @@ The advantage of this approach is that you load in TrackMate, and everything you
 {% include clear%}
 
 
-The start panel
----------------
+## The start panel
 
 ![](/media/plugins/trackmate StartPanel.png)
 
@@ -65,8 +61,7 @@ Defining a smaller area to analyze can be very beneficial to test and inspect fo
 {% include clear%}
 
 
-Choosing a detector
--------------------
+## Choosing a detector
 
 ![](/media/plugins/trackmate SegmenterChoice.png)
 
@@ -83,8 +78,7 @@ In our case, let us just use the **Dog detector**.
 {% include clear%}
 
 
-The detector configuration panel
---------------------------------
+## The detector configuration panel
 
 ![](/media/plugins/trackmate SegmenterConfig.png)
 
@@ -105,8 +99,7 @@ In our case, the spots we want to track are about 5 pixels in diameter, so this 
 {% include clear%}
 
 
-The detection process
----------------------
+## The detection process
 
 ![](/media/plugins/trackmate Segmenting.png)
 
@@ -121,8 +114,7 @@ On our dummy image, this is clearly something we need to worry about, and the se
 {% include clear%}
 
 
-Initial spot filtering
-----------------------
+## Initial spot filtering
 
 ![](/media/plugins/trackmate InitThresholding.png)
 
@@ -141,8 +133,7 @@ In our case, we see from the histogram that we could make sense of this step. Th
 {% include clear%}
 
 
-Selecting a view
-----------------
+## Selecting a view
 
 ![](/media/plugins/trackmate DisplayerChoice.png)
 
@@ -160,8 +151,7 @@ So nothing much. Let's carry on.
 {% include clear%}
 
 
-Spot filtering
---------------
+## Spot filtering
 
 ![](/media/plugins/trackmate FilterSpots 1.png)
 
@@ -201,8 +191,7 @@ Press **Next** when you are ready to build tracks with these spots.
 {% include clear%}
 
 
-Selecting a simple tracker
---------------------------
+## Selecting a simple tracker
 
 ![](/media/plugins/trackmate TrackerChoice.png)
 
@@ -226,8 +215,7 @@ Then of course, there is the option to skip the automated tracking using **Manua
 
 Right now, in our first trial, let us pick the **Simple fast LAP tracker**.
 
-Configuring the simple LAP tracker
-----------------------------------
+## Configuring the simple LAP tracker
 
 ![TrackMate TrackerConfiguration 1.png](/media/plugins/trackmate TrackerConfiguration 1.png "TrackMate TrackerConfiguration 1.png")
 
@@ -245,8 +233,7 @@ As promised, there is only three configuration fields.
 
 Press **Next** to start the tracking computation.
 
-Our first tracking results
---------------------------
+## Our first tracking results
 
 You are now shown the log panel, where the tracking process is logged. Since our dataset is very small, it should complete very quickly. Press **Next** again to see the results. They should look like this:
 
@@ -258,8 +245,7 @@ The track colors are yet meaningless; there are just used to facilitate separati
 
 Now, we would like the shape of these tracks to change. We see that the yellow track is actually branching from the blue one at frame 10. The same goes for the orange track, which branches from the green one at frame 17, and merges to the blue one at frame 27. To deal with that, we need to change of tracker. So go two steps back using the **Previous** button and go back to the tracker choice panel. There, select the **LAP tracker** and move to its configuration panel.
 
-Configuring a not so simple tracker
------------------------------------
+## Configuring a not so simple tracker
 
 ![](/media/plugins/trackmate TrackerConfiguration 2.png "TrackMate_TrackerConfiguration_2.png")
 
@@ -291,8 +277,7 @@ As an exercise, try to find the parameters the will fuse the central track segme
 
 ![](/media/plugins/trackmate TrackingResults 2.png "TrackMate_TrackingResults_2.png")
 
-Filtering tracks
-----------------
+## Filtering tracks
 
 The next panel is just the equivalent of the spot filtering step we met before, but this time we use track features,. The filter principles are the same: you simply add filters, choosing a target feature, until you are happy with the remaining tracks. As for the spots, the tracks are not really deleted; they are just hidden and you can retrieve them by switching back to this panel and delete the filters.
 
@@ -300,8 +285,7 @@ The next panel is just the equivalent of the spot filtering step we met before, 
 
 Here, we have a total of 4 tracks. The two immobile spots of the bottom left contribute one track each, that we can barely see because they do not move much. Let us say that we want to get rid of them. There are several ways to do that, but the simple is simply to add a filter on track displacement, as picture above.
 
-The end or so
--------------
+## The end or so
 
 ![](/media/plugins/trackmate DisplayPanel.png "TrackMate_DisplayPanel.png")
 
@@ -315,8 +299,7 @@ The last panel is the Action chooser panel, that allows you to execute simple ac
 
 If you are happy with the results, you can save them now. Loading the resulting file again in TrackMate will bring you to this panel, where you can inspect those results conveniently
 
-Wrapping up
------------
+## Wrapping up
 
 That is the end of this introductory tutorial. As you can see, it is quite long. Hopefully that does not mean that TrackMate itself is complicated. We detailed what you could do for the tracking part (the analysis and editing part is still to be seen), but if you recapitulate what we changed from the default, that was pretty simple:
 
@@ -329,8 +312,7 @@ Now that you know how the plugin works, you should be able to reach the end resu
 
 {%- include person id='tinevez' -%} ([talk](User_talk_JeanYvesTinevez)) 04:18, 1 August 2013 (CDT)
 
-References
-----------
+## References
 
 <references/>
 

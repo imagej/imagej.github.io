@@ -5,13 +5,11 @@ title: BIOP Lookup Tables
 
 {% include info-box name='BIOP luts' software='Fiji' author='Romain Guiet, Olivier Burri' maintainer='Romain Guiet' filename='biop-\*.lut' released='October 2016' latest-version='October 2016' source='PTBIOP update site' status='stable' website=' [BIOP Staff Page](http://biop.epfl.ch/INFO_Facility.html#staff)' %}
 
-Purpose
--------
+## Purpose
 
 Having LUTs to handle display of images with more than 3 channels. Visit [Color Image Processing](/cookbook/color-image-processing) page to know more about LUTs.
 
-Details
--------
+## Details
 
 Classical color space are RGB and CMY. Expressed as RGB value, CMY are equal combination of 2 components of RGB, ie Cyan is obtained by combining Green and Blue in equal proportion.
 
@@ -21,8 +19,7 @@ Here, we propose to use 6 LUTs, which are obtained by combining Red Green and Bl
 
 [400px ](File_BIOP6Luts_hex.png)
 
-On 3 channels image
--------------------
+## On 3 channels image
 
 <figure><img src="/media/3chs Grays cell.jpg" title="3 channels, each in Grays levels. " width="600" alt="3 channels, each in Grays levels. " /><figcaption aria-hidden="true">3 channels, each in Grays levels. </figcaption></figure>
 
@@ -34,8 +31,7 @@ On 3 channels image
 
 <figure><img src="/media/3chs CMY cell.jpg" title="3 channels image, in Red Green Blue and Merge. " width="800" alt="3 channels image, in Red Green Blue and Merge. " /><figcaption aria-hidden="true">3 channels image, in Red Green Blue and Merge. </figcaption></figure>
 
-On 4 (to 6) channels image
---------------------------
+## On 4 (to 6) channels image
 
 <figure><img src="/media/4chs Grays cell.jpg" title="4 channels image, each in Grays levels. " width="800" alt="4 channels image, each in Grays levels. " /><figcaption aria-hidden="true">4 channels image, each in Grays levels. </figcaption></figure>
 
@@ -49,8 +45,7 @@ On 4 (to 6) channels image
 
 Here, channels 2 and 3 are tubular structure and it's difficult to distinguish them if both are greenish.
 
-Macro Language
---------------
+## Macro Language
 
     run("biop-Amber");
     run("biop-Azure");
@@ -59,10 +54,8 @@ Macro Language
     run("biop-ElectricIndigo");
     run("biop-SpringGreen");
 
-Install
--------
+## Install
 
 You can either use our PTBIOP update site or [download biop-luts.zip](/media/Biop-luts.zip) and extract to the \\luts folder.
 
-Notes
------
+## Notes

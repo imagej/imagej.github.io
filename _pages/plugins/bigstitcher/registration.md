@@ -10,8 +10,7 @@ The interest point-based registration consists of two steps:
 -   1\) **Pairwise Matching** of **corresponding** interest points in two views/view groups. For this step, we offer a variety of algorithms (see below).
 -   2\) Iterative **Global Optimization** of the registration (estimation of consensus transformations when one view is linked to multiple others).
 
-Basic Registration Options
---------------------------
+## Basic Registration Options
 
 In the first dialog, you will be asked for some **basic parameters** for the registration.
 
@@ -27,8 +26,7 @@ In the first dialog, you will be asked for some **basic parameters** for the reg
 
 <img src="/media/BigStitcher Register basic.png" width="800"/>
 
-Specific Registration Options
------------------------------
+## Specific Registration Options
 
 Depending on the choices you made in the previous dialog, you will be asked for some more specific parameters in the following dialog. The options here are grouped into 3 parts:
 

@@ -78,8 +78,7 @@ Conversely, some situations to push directly to master:
 
 Lastly, keep in mind that SciJava favors the [release early, release often](/develop/philosophy#release-early-release-often) style of development, to maximize iterations of community feedback. Just because a change makes it to the master branch, does not mean it is set in stone: if a problem is later found, the change can be amended or reverted as quickly as it was added—easy come, easy go.' %}
 
-Phase 1: In development
------------------------
+## Phase 1: In development
 
 Repositories on GitHub are referred to as **remotes**; when you *[clone](https://help.github.com/articles/cloning-a-repository/)*, or *check out*, a remote you get a local copy of the repository. Development progresses by making changes to your local copy and pushing them back to the remote. GitHub provides tools for controlling [user permission levels](https://help.github.com/articles/permission-levels-for-a-user-account-repository/) for each remote repository, therefore how you develop a project depends on whether you are able to *push* (write) to that project's remote repository or not.
 
@@ -89,8 +88,7 @@ Repositories on GitHub are referred to as **remotes**; when you *[clone](https:/
 
 -   **External developer.** If you do not have push rights, then you need to go through an additional step called **[Forking the repository](http://www.dataschool.io/simple-guide-to-forks-in-github-and-git/)**. This will create a remote copy of the repository, to which you have push rights. Your remote fork is referred to as *downstream* of the original remote repository (which is *upstream* of your fork). Your development will then take place on your fork, with an additional step later to reconcile with the upstream repository.
 
-Phase 2: On master
-------------------
+## Phase 2: On master
 
 Once a feature or fix is complete it can move to the `master` branch of the repository. How you accomplish this depends on how the changes were developed in Phase 1.
 
@@ -100,8 +98,7 @@ Once a feature or fix is complete it can move to the `master` branch of the repo
 
 -   **External developer.** First push your changes back to a branch of your forked repository (it doesn't necessarily have to be `master`). Then you can file a [pull request](https://help.github.com/articles/using-pull-requests/) (PR) on [GitHub](/develop/github) to merge your branch back to the official repository. This invites code review from other interested developers. Reviewers might ask for changes to the code to address any issues. After any needed revisions have been made, a [project maintainer](/about/governance) will accept your changes and then merge to the official `master` branch.
 
-Phase 3: Released
------------------
+## Phase 3: Released
 
 Once the `master` branch of a component has your desired new functionality, the next step is to cut a *release* version of the component. Normally, the Maven version (in the [pom.xml](https://maven.apache.org/pom.html#Introduction)) on master is a [*SNAPSHOT* version](http://stackoverflow.com/q/5901378), meaning it is [unstable](/develop/architecture#reproducible-builds) and not yet released. However, a [stable](/develop/architecture#reproducible-builds) *release* artifact can be deployed to the appropriate remote Maven repository.
 
@@ -132,15 +129,13 @@ The script will verify that your master branch is ready to go, then create and p
 
 {% include info-box content='If your project is a [multi-module build](https://maven.apache.org/guides/mini/guide-multiple-modules.html), first make a commit commenting out any modules that should not be released. Then run the script from the aggregator pom directory.' %}
 
-Phase 4: Managed
-----------------
+## Phase 4: Managed
 
 For core projects, there is an intermediate layer tying User-facing and Developer-facing components together: the [Bill of Materials](//develop/architecture#bill-of-materials) (BOM). To ensure users and developers see the same functionality, components should only be uploaded to the core update sites when their version is also updated in the {% include github org='scijava' repo='pom-scijava' label='pom-scijava' %} BOM.
 
 To update the version of your component listed in the {% include github org='scijava' repo='pom-scijava' label='pom-scijava' %} BOM, you should follow the [External developer](#Phase_1:_In_development) instructions for contributing to {% include github org='scijava' repo='pom-scijava' label='pom-scijava' %}. By [submitting a pull request](https://help.github.com/articles/using-pull-requests/) that simply modifies the managed version of your component, you will signal to the core SciJava developers that your project is ready for upload. For example, {% include github org='scijava' repo='pom-scijava' pr='40' label='this PR' %} updates the managed version of [Bio-Formats](/formats/bio-formats) to 5.5.0.
 
-Phase 5: Uploaded
------------------
+## Phase 5: Uploaded
 
 {% include box title='What are ImageJ update sites?' width='30%' float='right' text='ImageJ [update sites](/update-sites) are what ImageJ actually queries to download updates. These update sites are versioned, but do not rely on other tools (e.g., [Git](/develop/git) or [Maven](/develop/maven)) in order to function. Rather, component developers upload new versions of their component(s) using the [ImageJ Updater](/plugins/updater), which makes them available to end users. Typically, update sites are available as web sites via HTTP, with uploads functioning via [WebDAV](https://github.com/imagej/imagej-plugins-uploader-webdav) or [SSH/SFTP/SCP](https://github.com/imagej/imagej-plugins-uploader-ssh) .' %} Deploying to the Maven repository creates a stable release artifact of a software component usable by other developers. But for ImageJ-related components, that alone does not put it into the hands of users. To do that, the component must then be *uploaded* to an ImageJ [update site](/update-sites).
 

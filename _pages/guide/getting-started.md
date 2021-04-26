@@ -7,8 +7,7 @@ title: User Guide/Getting Started
 
 This part provides basic information on ImageJ installation, troubleshooting and update strategies. It discusses [Fiji↓](#sub:Fiji-intro)[↓](#nom-fiji) and [ImageJ2↓](#sub:ImageJ2intro) as well as third-party software related to ImageJ. Being impossible to document all the capabilities of ImageJ without exploring technical aspects of image processing, external resources allowing willing readers to know more about digital signal processing are also provided.
 
-Introduction
-------------
+## Introduction
 
 ImageJ is a [public domain](/ij/disclaimer.html) Java image processing and analysis program inspired by [NIH Image](/software/nih-image) for the Macintosh. It runs, either as an online applet or as a downloadable application, on any computer with a Java 1.5 or later virtual machine. [Downloadable distributions](/ij/download.html) are available for Windows, Mac OS X and Linux. It can display, edit, analyze, process, save and print 8--bit, 16--bit and 32--bit images. It can read many image formats including TIFF, GIF, JPEG, BMP, DICOM, FITS and 'raw'. It supports 'stacks' (and hyperstacks), a series of images that share a single window. It is multithreaded, so time-consuming operations such as image file reading can be performed in parallel with other operations<span class="FootOuter"><span class="SupFootMarker"> \[A\] </span><span class="HoverFoot"><span class="SupFootMarker"> \[A\] </span>A somehow outdated list of ImageJ's features is available [here](/ij/features.html)</span></span.
 
@@ -30,8 +29,7 @@ ImageJ is being developed on Mac OS X using its built in editor and Java compi
 
 </div>
 
-Installing and Maintaining ImageJ
----------------------------------
+## Installing and Maintaining ImageJ
 
 ImageJ can be downloaded from [here](/ij/download.html). Details on how to install ImageJ on [↓](#index-Linux)[Linux](/ij/docs/install/linux.html), [Mac OS 9](/ij/docs/install/mac.html), [↓](#index-Mac-OS-X)[Mac OS X](/ij/docs/install/osx.html) and [↓](#index-Windows-(OS))[Windows](/ij/docs/install/windows.html) <span class="bibcites">[1]([#biblio-1)\]</span> are available [here](/ij/docs/install/) ({% include bc path="Help | [Installation...↓](#sub:Installation...)" %} command). Specially useful are the platform-specific *Troubleshooting* and *Known Problems* sections. [↓](#index-Fiji)[Fiji↓](#sub:Fiji-intro) installation is described at <https://fiji.sc/wiki/index.php/downloads.
 
@@ -185,8 +183,7 @@ Several packages exist that allow ImageJ to [↓interact](#index-Interoperabilit
 
 You can follow the ImageJ2 [project news](/news) for updates on the project.
 
-Getting Help
-------------
+## Getting Help
 
 ### Help on Image Analysis
 

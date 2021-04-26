@@ -12,8 +12,7 @@ Start on the [forum](/help), searching for discussions related to your contribut
 
 If you are interested in helping to tackle open issues, see the [wish list](/develop/wish-list) page.
 
-This web site
--------------
+## This web site
 
 This site, imagej.net, is a wiki (similar to the {% include wikipedia title='Wikipedia' text='Wikipedia'%} project). This site is built by the ImageJ community, and anyone can contribute!
 
@@ -23,15 +22,13 @@ If you are a plugin author, please consider [documenting your plugin on this sit
 
 When in doubt, discuss your ideas publicly on the Image.sc [Forum](/help)!
 
-ImageJ2
--------
+## ImageJ2
 
 Submit patches to [ImageJ2](/software/imagej2) via [pull requests](https://help.github.com/articles/using-pull-requests/) against [ImageJ2's source on GitHub](https://github.com/imagej).
 
 Note that since ImageJ2 has a modular [architecture](/develop/architecture), it is possible that your change would be more applicable to one of the supporting technologies such as [ImgLib2](https://github.com/imglib), [SCIFIO](https://github.com/scifio) or [SciJava](https://github.com/scijava).
 
-ImageJ1
--------
+## ImageJ1
 
 Changes to [ImageJ1](/software/imagej1) are made by {%- include person id='rasband' -%}, who is the sole [ImageJ1](/software/imagej1) developer. He takes patch submissions and then reworks them to fit within the project's development model and style before merging them. Attribution for the changes is noted in the release notes (see [ImageJ1's Release Notes/News](/ij/notes.html)).
 

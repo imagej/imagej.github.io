@@ -11,19 +11,16 @@ artifact: sc.fiji:microscope-image-quality
 
 This plugin assesses the focus quality of microscope images, classifying the image in tiles.
 
-Summary
--------
+## Summary
 
 The plugin predicts an absolute measure of image focus on a single image in isolation, without any user-specified parameters. It uses a pre-trained deep neural network, operating at the image-patch level, and also outputs a measure of prediction certainty, enabling interpretable predictions.
 
-Installation
-------------
+## Installation
 
 -   [Enable](/update-sites/following) the TensorFlow [update site](/update-sites).
 -   The command is in {% include bc path='Plugins | Classification | Microscope Image Focus Quality'%}.
 
-Usage
------
+## Usage
 
 -   Open an image to analyze (see [sample images](https://storage.googleapis.com/microscope-image-quality/static/fiji_plugin_test_images.zip)).
 -   Run {% include bc path='Plugins | Classification | Microscope Image Focus Quality'%}.
@@ -39,18 +36,15 @@ If you wish to access the results of the classification quantitatively (e.g., as
 
 You can can remove the probability patches overlay via the {% include bc path='Image | Overlay | Remove Overlay'%} command.
 
-Limitations
------------
+## Limitations
 
 The plugin is currently limited to single (i.e., 2D) images of 16-bit integer data only. The model was trained with images in the intensity range of `[0, ~10000]`; your mileage may vary if the input image intensities diverge from that too greatly.
 
-Publication
------------
+## Publication
 
 -   {% include publication content='Microscope Image Quality' %}
 
-See also
---------
+## See also
 
 -   [TensorFlow](/software/tensorflow), the machine learning library this plugin uses.
 -   [Using Deep Learning to Facilitate Scientific Image Analysis](https://research.googleblog.com/2018/03/using-deep-learning-to-facilitate.html) post on Google Research Blog

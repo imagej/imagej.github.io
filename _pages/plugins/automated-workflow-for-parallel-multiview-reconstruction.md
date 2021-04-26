@@ -121,8 +121,7 @@ Clone the repository for the workflow from **[github](https://github.com/mpicbg-
 
 The repository contains the example configuration scripts for single and dual channel datasets, the Snakefile which defines the workflow, the beanshell scripts which drive the processing via Fiji and a cluster.json file which contains information for the cluster queuing system.
 
-timelapse directory
--------------------
+## timelapse directory
 
     /path/to/repository/spim_registration/timelapse/
     ├── README.md
@@ -148,8 +147,7 @@ timelapse directory
 -   *cluster.json* contains the resource information (processing time, number of cores and memory) for the queuing system.
 -   *\*.bsh* scripts contain the instructions for Fiji to run the processing.
 
-tools directory
----------------
+## tools directory
 
 The tool directory contains scripts for common file format pre-processing. Some datasets are currently only usable when resaving them into *.tif*:
 
@@ -170,16 +168,14 @@ The *master\_preprocessing.sh* file is the configuration script that contains th
         └── submit-jobs
     └──  master_preprocessing.sh
 
-cluster\_tools directory
-------------------------
+## cluster\_tools directory
 
 The cluster tools directory contains the libraries for GPU deconvolution and the virtual frame buffer (xvfb) for running Fiji headless.
 
     libFourierConvolutionCUDALib.so
     xvfb-run
 
-sysconfcpus
------------
+## sysconfcpus
 
 We use **[Libsysconfcpus](http://www.kev.pulo.com.au/libsysconfcpus/)** to restrict how many cores Fiji is using on the cluster.
 
@@ -258,15 +254,13 @@ Now the dataset directory has a symlink for the config.yaml:
     ├── exampleSingleChannel(4).czi
     └── config.yaml         # copied/symlinked from this repo
 
-*config.yaml*
--------------
+## *config.yaml*
 
 The entire processing is controlled via the yaml file.
 
 he key parameters for the processing are found in the first (common) part of the yaml file. These parameters are usually dataset and user dependent. The second part contains the advanced and manual overrides for each processing step. These steps correspond to the rules in the snakefile.
 
-Setting up the *config.yaml* file for processing
-------------------------------------------------
+## Setting up the *config.yaml* file for processing
 
 ### Processing switches
 
@@ -459,8 +453,7 @@ Here the resource restrictions for Fiji with the number of cores and memory are 
 
 In the advanced settings are more options for further refining the processing. These settings should only be changed when necessary.
 
-*cluster.json*
---------------
+## *cluster.json*
 
 The *cluster.json* contains the resource information for the queuing system. It should match the Fiji resource settings.
 
@@ -514,8 +507,7 @@ The *cluster.json* contains the resource information for the queuing system. It 
         }
     }
 
-Submitting Jobs
----------------
+## Submitting Jobs
 
 We recommend to execute Snakemake within **[screen](https://www.gnu.org/software/screen/manual/screen.html)**. To execute Snakemake you need to call Snakemake, specify the number of jobs, the location of the data and to dispatch jobs to a cluster with the information for the queuing system. Here is a list of commands and flags that are used for the Snakemake workflow:
 
@@ -559,8 +551,7 @@ LSF
 
 Note: the error and output of the cluster of all jobs are written into these files.
 
-Log files and supervision of the pipeline
------------------------------------------
+## Log files and supervision of the pipeline
 
 The log files are written into a new directory in the data directory called "logs". The log files are ordered according to their position in the workflow. Multiple or alternative steps in the pipeline are indicated by numbers.
 

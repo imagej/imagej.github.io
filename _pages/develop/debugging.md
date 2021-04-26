@@ -30,8 +30,7 @@ You need to replace the first argument by a valid path to a sample image and the
 
 If your plugin is not a filter plugin, i.e. if it does not require an image to run, simply use the *Debug.run(plugin, parameters)* method.
 
-Attaching to ImageJ instances
------------------------------
+## Attaching to ImageJ instances
 
 Sometimes, we need to debug things directly in ImageJ, for example because there might be issues with the plugin discovery (ImageJ wants to find the plugins in *<ImageJ>/plugins/*, and often we want to bundle them as *.jar* files, both of which are incompatible with Eclipse debugging). JDWP (*Java Debug Wire Protocol*) to the rescue!
 
@@ -51,8 +50,7 @@ If you require more control over the ImageJ side -- such as picking a semi-rando
 
 **Note**: calling *imagej -agentlib:jdwp=help --* will print nice usage information with documentation of other JDWP options.
 
-Attach ImageJ to a waiting Eclipse
-----------------------------------
+## Attach ImageJ to a waiting Eclipse
 
 Instead of making ImageJ [the debugging server](#attaching-to-imagej-instances), when debugging startup events and headless operations it is easier to make ImageJ the client and Eclipse (or equivalent) the server.
 
@@ -63,44 +61,38 @@ In this case you start the debugging session first, e.g. in Eclipse debug config
 Monitoring system calls
 =======================
 
-Linux
------
+## Linux
 
 On Linux, you should call ImageJ using the [strace command](http://www.linuxmanpages.com/man1/strace.1.php):
 
     strace -Ffo syscall.log ./imagej <args>
 
-MacOSX
-------
+## MacOSX
 
 Use the *dtruss* wrapper around [dtrace](http://developer.apple.com/documentation/Darwin/Reference/ManPages/man1/dtrace.1.html) to monitor system calls:
 
     dtruss ./imagej <args>
 
-Windows
--------
+## Windows
 
 To monitor all kinds of aspects of processes on Windows, use [Sysinternal's Process Monitor](http://technet.microsoft.com/en-us/sysinternals/bb896645.aspx).
 
 Debugging shared (dynamic) library issues
 =========================================
 
-Linux
------
+## Linux
 
 Set the *LD\_DEBUG* environment variable before launching ImageJ:
 
     LD_DEBUG=1 ./imagej <args>
 
-MacOSX
-------
+## MacOSX
 
 Set the *DYLD\_PRINT\_APIS* environment variable before launching ImageJ:
 
     DYLD_PRINT_APIS=1 ./imagej <args>
 
-Windows
--------
+## Windows
 
 Often, dynamic library issues are connected to a dependent .dll file missing. Download [depends.exe](http://www.dependencywalker.com/) and load the .dll file you suspect is missing a dependency.
 
@@ -132,8 +124,7 @@ Debugging hard JVM crashes
 
 When you have found an issue that crashes the JVM, and you can repeat that crash reliably, there are a number of options to find out what is going on.
 
-Using gdb
----------
+## Using gdb
 
 Typically when you debug a program that crashes, you start it in a debugger, to inspect the stack trace and the variables at the time of the crash. However, there are substantial problems with gdb when starting the Java VM; either gdb gets confused by segmentation faults (used by the JVM to handle NullPointerExceptions in an efficient manner), or it gets confused by the threading system -- unless you compile gdb yourself.
 
@@ -141,13 +132,11 @@ But there is a very easy method to use gdb to inspect serious errors such as seg
 
     ./imagej -XX:OnError="gdb - %p" --
 
-Using lldb
-----------
+## Using lldb
 
 On newer OS X versions, gdb has been replaced with lldb. For those familiar with gdb already, there is an [LLDB to GDB Command Map](http://lldb.llvm.org/lldb-gdb.html) cheat sheet which may be useful.
 
-Using the *hs\_err\_pid<pid>.log* files
----------------------------------------
+## Using the *hs\_err\_pid<pid>.log* files
 
 The Java virtual machine (JVM) frequently leaves files of the format *hs\_err\_pid<number>.log* in the current working directory after a crash. Such a file starts with a preamble similar to this:
 
@@ -171,8 +160,7 @@ followed by thread dumps and other useful information including the command-line
 
 The most important part is the line after the line *\# Problematic frame:* because it usually gives you an idea in which component the crash was triggered.
 
-Out of memory error
--------------------
+## Out of memory error
 
 If the specific exception you're receiving (or you suspect) is an OutOfMemoryError, there are JVM flags that can be enabled when running ImageJ to help pinpoint the problem:
 
@@ -195,8 +183,7 @@ After acquiring a heap dump, you can analyze it yourself, e.g. with a [memory an
 Debugging Java code with jdb
 ============================
 
-How to attach the Java debugger jdb to a running ImageJ process
----------------------------------------------------------------
+## How to attach the Java debugger jdb to a running ImageJ process
 
 This requires two separate processes, ImageJ itself and the debugger. You can do this either in one shell, backgrounding the first process or in two shells, this is recommended. In the two shells do the following:
 
@@ -217,8 +204,7 @@ In the second shell, tell jdb to attach to that port:
 
     jdb -attach 8000
 
-This is an ultra quick start to jdb, the default Java debugger
---------------------------------------------------------------
+## This is an ultra quick start to jdb, the default Java debugger
 
 Hopefully you are a little familiar with gdb, since jdb resembles it lightly.
 
@@ -319,8 +305,7 @@ Debugging Java3D issues
 
 When Java3D does not work, the first order of business is to use {% include bc path='Plugins | Utilities | Debugging | Test Java3D'%}. If this shows a rotating cube, but the [3D Viewer](/plugins/3d-viewer) does not work, please click on {% include bc path='Help | Java3D Properties...'%} in the [3D Viewer](/plugins/3d-viewer)'s menu bar.
 
-Command line debugging
-----------------------
+## Command line debugging
 
 If this information is not enough to solve the trouble, or if *Test Java3D* did not work, then you need to call ImageJ from the command line to find out more.
 
@@ -342,8 +327,7 @@ On MacOSX, you need to remember that any application is just a directory with a 
     cp ImageJ-macosx debug
     ./debug
 
-Show Java3D debug messages
---------------------------
+## Show Java3D debug messages
 
     ./imagej -Dj3d.debug=true --
 
@@ -351,15 +335,13 @@ Show Java3D debug messages
 
 **Note:** do not forget the trailing *--*; without them, ImageJ mistakes the first option for an ImageJ option rather than a Java one. **Note, too:** on Windows, you <u>must not</u> forget to pass the *--console* option (this can be anywhere on the command line).
 
-Windows-specific stuff
-----------------------
+## Windows-specific stuff
 
 On Windows, you can choose between OpenGL and Direct3D by passing *-Dj3d.rend=ogl* or *-Dj3d.rend=d3d*, respectively.
 
 Further, some setups require enough RAM to be reserved, so you might need to pass an option like *--mem=1200m* (make sure that you have enough RAM free before starting ImageJ that way, though!). If it turns out that memory was the issue, you can make the setting permanent by clicking ImageJ's {% include bc path='Edit | Options | Memory & Threads...'%} menu entry.
 
-More Java 3D properties
------------------------
+## More Java 3D properties
 
 You can control quite a few things in Java 3D through setting Java properties. Remember, you can set properties using a command line like this:
 

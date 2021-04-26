@@ -8,13 +8,11 @@ categories: tutorials
 
 This tutorial is meant to help you leverage OpenCL from Java for use with ImageJ.
 
-Background
-----------
+## Background
 
 To use OpenCL from Java in ImageJ we rely on [JOCL](http://jogamp.org/deployment/webstart/). JOCL is written on top of a low level JNI API to make using OpenCL a bit easier. The OpenCL code you write can also leverage JOCL to accelerate execution of ImageJ plugins from Java. We have created an [OpenCL deconvolution](https://github.com/uw-loci/opencl-decon) example to demonstrate compute acceleration using OpenCL (both locally and remotely as a binary web service).
 
-Setting up the Development Machine
-----------------------------------
+## Setting up the Development Machine
 
 We set up an Ubuntu based development machine for OpenCL development and testing. OSX 10.6, Windows 64/32, and Linux 64/32 pass the tests and are supported by this package. Here are the steps for setting up Ubuntu:
 
@@ -27,8 +25,7 @@ We set up an Ubuntu based development machine for OpenCL development and testing
         sudo apt-get install libxi-dev
         sudo apt-get install libxmu-dev
 
-Setting up OpenCL
------------------
+## Setting up OpenCL
 
 You will need to install OpenCL for your OpenCL enabled hardware if it does not come installed as part of the OS.
 
@@ -112,8 +109,7 @@ to run the OpenCL Bandwidth sample using:
 
     ./oclBandwidthTest
 
-Setting up Eclipse and needed plugins on Ubuntu
------------------------------------------------
+## Setting up Eclipse and needed plugins on Ubuntu
 
 To configure the development environment, we started by installing the JRE with:
 
@@ -129,8 +125,7 @@ We added the SVN plugin to Eclipse by clicking on Help-&gt; Install New Software
 
     http://subclipse.tigris.org/update_1.6.x
 
-Downloading and running the ImageJ OpenCL examples
---------------------------------------------------
+## Downloading and running the ImageJ OpenCL examples
 
 The ImageJ OpenCL examples can be imported as an Eclipse project by right clicking in the Package Explorer window and choose Import. Select Git project and add the site:
 
@@ -146,8 +141,7 @@ The folder structure of the source consists of the following:
 
 We have included the necessary JOCL native libraries for Windows 32/64, Apple, and Linux 32/64 platforms inside this directory. To use OpenCL from Java in ImageJ we leverage JOCL. JOCL uses JNI to make calls into the OpenCL API. The OpenCL code you write can also leverage JOCL to accelerate execution of ImageJ plugins from Java. Since each OS has different native JOCL native libraries, the runtime environment must be configured such that the Java code can load the needed native libraries.
 
-Understanding platform-specific JOCL native libraries
------------------------------------------------------
+## Understanding platform-specific JOCL native libraries
 
 For these samples, three native libraries are needed: gluegen-rt, jocl, and JOCL-'platform'-'arch'. If you look in the lib folder, you will find -natives-xyz.jar files containing the respective libraries. You need to unzip each of the three jar files and copy the dynamic files (.so, .dylib, or .dll) into the parent directory if they are not already present. Notice the below example where the `libgluegen-rt.dylib`, `libJOCL-apple-x86_64.dylib`, and `libjocl.dylib` files are in the platform specific directory.
 
@@ -163,18 +157,15 @@ Finally, ensure that the platform specific files are exported:
 
 Start exploring the examples by viewing the developer comments in the file `src/publication/SobelFilterExample.java`. Notice the `Main()` method calls `run()` which use an `awt.Image` type as an input parameter. Modify and run the `Main()` method as a Java application and adjust the VM Arguments (E.g. `-Xmx1024m`) if needed.
 
-SobelFilter example
--------------------
+## SobelFilter example
 
 Without modification, `SobelFilterExample.java` loads an image from a web server, process it locally using OpenCL, and displays the results. There is nothing novel about this example. It simply allows runtime testing of several system configuration steps to ensure working configuration of JOCL and OpenCL native libraries. Modify this example to suite your needs, but please ensure proper JOCL and OpenCL configuration before proceeding.
 
-Understanding ImageJ + OpenCL
------------------------------
+## Understanding ImageJ + OpenCL
 
 Working within ImageJ: If developing an ImageJ plugin using OpenCL realize that programmatic control is passed to your plugin inside the `PlugIn` (or `PluginFilter`) `run()` method. An example of this can be found in `src.demos.OpenCL_SobelFilter.java`. For this plugin to run within ImageJ, the JOCL jars and native libraries respective to the target platform will need to be available by the ImageJ class loader. The supporting JOCL native libraries can be copied into the plug-in directory within ImageJ to allow plugin implementations using OpenCL to reference the native libraries provided by the OpenCL installation.
 
-ImageJ OpenCL: An incremental approach to applying OpenCL
----------------------------------------------------------
+## ImageJ OpenCL: An incremental approach to applying OpenCL
 
 Now that you have demonstrated use of OpenCL from Java and within ImageJ, you may wish to see a compute intensive example demonstrating modification of an existing Java implementation that delegates a portion of its implementation to OpenCL. Take a look at the developer comments in the `FHT3D_3D_Deconvolution.java` example to see what steps are used for brokering data between Java and OpenCL between steps within an algorithm's implementation.
 
@@ -186,15 +177,13 @@ The approach used to start delegating to OpenCL from an existing Java implementa
 4.  Test to ensure the new OpenCL code generates the same results using the test data
 5.  Add conditional delegation logic to handle runtime compute capabilities
 
-OpenCL ImageJ plugins following enterprise java patterns
---------------------------------------------------------
+## OpenCL ImageJ plugins following enterprise java patterns
 
 Finally, some users and academic labs are building "[GPU Supercomputers](http://fastra2.ua.ac.be/)" to expose compute resources to a wide range of applications running locally. In this case, you wish to leverage to look at the `FHTEJBService` and `Iterative_Deconvolve_3D_WS` classes for an example on how to remotely serve up the your GPU accelerated resources using open source J2EE technologies.
 
 In this example, Hessian Binary Web Services are used to broker data between the Java consumer and the Hessian Servlet. This approach is only recommended for those labs having sufficient throughput between the client application and the OpenCL/GPU servlet host.
 
-Hosting OpenCL-accelerated algorithms using Oracle's GlassfishV3
-----------------------------------------------------------------
+## Hosting OpenCL-accelerated algorithms using Oracle's GlassfishV3
 
 Start out with the installation instructions available [here](http://www.oracle.com/technetwork/java/javaee/community/index-jsp-139692.html).
 
@@ -231,8 +220,7 @@ GPU Based Processing Techniques and the ImageJ Architecture
 
 {% include warning-box content='The following article describes our first effort at GPU computing with ImageJ using OpenCL, in early 2010. The tutorial above is more recent and more complete; the text below is preserved only for historical reasons.' %}
 
-Introduction
-------------
+## Introduction
 
 The primary focus of this paper is to provide an introduction to and evaluation of two common GPU technologies (CUDA and OpenCL) as they could be used within ImageJ. The intent is to provide a light introduction to the software libraries used to perform two basic image processing tasks and present performance metrics that may be useful for deciding future efforts in this area.
 
@@ -240,8 +228,7 @@ Many of the algorithms within ImageJ and ImageJ plug-ins can be implemented to t
 
 Note: The use of 'device' refers to GPU based hardware devices and 'host' refers to GPU based devices.
 
-Background on the use of ImgLib
--------------------------------
+## Background on the use of ImgLib
 
 The future release of ImageJ will adopt the [ImgLib](http://imglib2.net/) generic processing library. A very minor change has been introduced into the ImgLib codebase that allows data to be stored in Java.NIO arrays. The NIO backed arrays are allocated outside of the Java Virtual Machine and allow for a single copy of data to be shared with the native code.
 
@@ -254,8 +241,7 @@ To address these issues, helper methods can be used to dynamically assess a give
 
 When considering how to access GPU resources from Java, several open-source APIs were considered. For the purposes of this evaluation, Olivier Chafik's [JavaCL](http://code.google.com/p/javacl/) was chosen due to its Lesser General Public License.
 
-Introduction to GPU processing pipeline
----------------------------------------
+## Introduction to GPU processing pipeline
 
 The processing pipeline when using GPUs as compute device in ImageJ involves several steps:
 
@@ -264,8 +250,7 @@ The processing pipeline when using GPUs as compute device in ImageJ involves sev
 3.  Launch the kernel
 4.  Return the results to a compatible Imglib object
 
-Metric/Method
--------------
+## Metric/Method
 
 Sobel filter is a common image processing routine that is used for edge detection. It is ideally suited for this evaluation due to implementation simplicity as well as the GPU code's similarity to the existing open source implementation.
 
@@ -273,8 +258,7 @@ For purposes of timing processing, the 8-bit test image will be loaded into an I
 
 Note: It is almost certainly possible to optimize any of the following implementations, however the primary goal of this assessment is not performance.
 
-Implementation
---------------
+## Implementation
 
 The following code demonstrates a partial implementation of sobel filter within ImageJ:
 

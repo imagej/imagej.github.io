@@ -9,13 +9,11 @@ This is the official plugin repository of hte department of molecular physiology
 
 Currently, this repository contains a plugin called 'LRoi', which helps you creating sets of equally sized ROIs.
 
-Installation
-------------
+## Installation
 
 You can install LRoi (and all future plugins) by simply adding the following update site to the ImageJ updater: http://sites.imagej.net/CIPMM-MolPhys/%5Bhttp://sites.imagej.net/CIPMM-MolPhys/\].
 
-Usage
------
+## Usage
 
 The main purpose of LRoi is to create equally sized regions of interest (ROIs) along a seeding line (hence LRoi). To create a number of ROIs, simply select the line drawing tool of ImageJ and draw a line on an opened image or image stack.
 
@@ -33,8 +31,7 @@ This line is then subdivided into the number of ROIs you want to create with you
 
 In this example, we have created 25 ROIs, each having an area of 700 µm².
 
-Advanced usage
---------------
+## Advanced usage
 
 Besides creating equally sized ROIs along a seeding line, LRoi also allows to create ROIs perpendicular to that line, cross-shaped, as a regular grid or custom sized grid.
 

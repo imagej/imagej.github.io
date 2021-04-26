@@ -18,8 +18,7 @@ categories: Software,Citable
 {% endcapture %}
 {% include info-box content='Plugin' software='ImagePy' name='ImagePy' logo='<img src="/media/ImagePy-logo.png" width="96"/>' author=author maintainer=maintainer source=source status='active' website='https://www.imagepy.org/' %}ImagePy is a [Python](/scripting/python)-based extensible image processing framework, inspired by and modeled after the [ImageJ](/about) user experience. It is built on libraries of the PyData software stack, including NumPy, SciPy, scikit-image, pandas and others.
 
-Publication
------------
+## Publication
 
 -   {% include publication content='ImagePy' %}
 

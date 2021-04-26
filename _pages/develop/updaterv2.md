@@ -8,15 +8,13 @@ Upgrading the ImageJ / Fiji updater
 
 There is a [wiki page](/plugins/updater) documenting the Updater from user perspective, this page is setting a stage for the changes that will be made to the updater.
 
-Basics
-------
+## Basics
 
 Fiji is an image processing software melting ImageJ1 with novel ImageJ2 functionalities based on scijava and imglib2.
 
 The core plugins written in Java, versioned via Maven and distributed via update sites. But update sites can be used to distribute any type of files (e.g. scripts or binaries).
 
-User perspective
-----------------
+## User perspective
 
 ![`user-updater.png`](/media/User-updater.png "fig:user-updater.png")` `
 
@@ -31,8 +29,7 @@ User perspective
 
 Updates will be downloaded to `Fiji.app/updates`. The launcher is moving the updates to their final destination on the next reboot (?).
 
-Update site maintainer perspective
-----------------------------------
+## Update site maintainer perspective
 
 -   the maintainer has Fiji installed
 -   the maintainer adds new or updated plugins to the installation
@@ -40,14 +37,12 @@ Update site maintainer perspective
     -   .. by installing them via maven
 -   the maintainer uses the updater to select the changed / new files and upload them to the update site
 
-Fiji release maintainer perspective
------------------------------------
+## Fiji release maintainer perspective
 
 -   ?
 -   melting pot? other scripts?
 
-Class perspective
------------------
+## Class perspective
 
 -   on Startup, the command `net.imagej.updater.CheckForUpdates` is called.
 -   `CheckForUpdates` calls `net.imagej.updater.UpToDate`
@@ -60,8 +55,7 @@ Class perspective
 
 -   In case there are updates, `UpToDate` will tell the `UpdateService` which can be used to open the ImageJUpdater directly or just trigger a notification indicator in the UI
 
-The official list of update sites
----------------------------------
+## The official list of update sites
 
 You can access the list of official update sites [here](/list-of-update-sites). Anything on this list can be installed from Fiji by opening the updater, clicking `Manage update sites` and clicking the check mark of the list entry.
 
@@ -75,8 +69,7 @@ These are the update sites enabled by default:
 
 There are historical reasons for the existence of multiple default update sites, e.g. old Fiji installations running on Java 6 will not receive updates served via the Java 8 update site.
 
-`db.xml`: The database structure of the updater
------------------------------------------------
+## `db.xml`: The database structure of the updater
 
 The updater uses its own XML structure to handle versioning of update site uploads. The structure is used on the update sites to log which files were uploaded but also locally for ones Fiji installation to cache the content of the activated update sites.
 
@@ -389,8 +382,7 @@ For more details check out this example of a the `db.xml` of a local Fiji instal
         </plugin>
     </pluginRecords>
 
-Future plans
-------------
+## Future plans
 
 Vision: Make people looking forward to getting updates, because they get to know about improvements and have full control to handle situation or revert changes in case things go south.
 

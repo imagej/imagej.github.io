@@ -11,8 +11,7 @@ An example [Javascript](/scripting/javascript) ImageJ script illustrating how to
 
 The example illustrates as well the use of functions with variable arguments.
 
-Code
-----
+## Code
 
     // Albert Cardona 20081109
     // This code is released under the public domain
@@ -171,8 +170,7 @@ Code
     imp.getProcessor().setMinAndMax(0, 1); // random values between 0 and 1
     imp.show();
 
-See also
---------
+## See also
 
 -   [Javascript Scripting](/scripting/javascript)
 -   [Multithreaded Image Processing in Clojure](/scripting/multithreaded-image-processing-in-clojure)

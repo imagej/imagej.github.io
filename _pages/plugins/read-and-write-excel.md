@@ -4,8 +4,7 @@ title: Read and Write Excel
 categories: Plugins
 ---
 
-Introduction
-------------
+## Introduction
 
 
 {% capture source%}
@@ -33,8 +32,7 @@ class="nowrap" \| Release version dates
 
 
 
-Usage
------
+## Usage
 
 <span style="float:right; margin-left:10px;"> **Youtube tutorial:**  
 {% include youtube url='https://www.youtube.com/embed/dLkoB25MTIY'%} </span> This plugin can be called from a macro using:
@@ -128,8 +126,7 @@ Example large data macro workflow:
 
 Also see https://github.com/bkromhout/Read_and_Write_Excel_Modified for examples. **(However please note: whilst Brenden did an amazing job updating the plugin for the version 1.1 release, the most up-to-date version is currently not represented on his github repo)**
 
-Disclaimers and Licencing stuff
--------------------------------
+## Disclaimers and Licencing stuff
 
 I am aware that another Excel\_Writer plugin exists but it did not work very well for me (hence me creating this). I did not consult their source code but did find out about Apache POI(\*) from them.
 
@@ -137,8 +134,7 @@ Since Brenden modified the plugin, the code is now a lot neater. Feel free to co
 
 (\*)This plugin uses the Apache POI api, which is distributed under the terms of the Apache Licence (available from https://poi.apache.org/legal.html). I believe this software to be free and open source.
 
-Plugin technical details
-------------------------
+## Plugin technical details
 
 <div class="mw-collapsible mw-collapsed">
 <div>
@@ -209,8 +205,7 @@ Version 1.1.6 changes:
 
 http://sites.imagej.net/ResultsToExcel
 
-Installation
-------------
+## Installation
 
 -   With ImageJ open, navigate to 'Help'
 -   In the presented drop down menu, then select 'Update...'

@@ -6,8 +6,7 @@ section: Development:Guides
 
 [SciJava](SciJava) components use the [Semantic Versioning](http://semver.org/) (SemVer) system. This scheme communicates information about the [backwards compatibility](/libs/imagej-legacy) (or lack thereof) between versions of each individual software component. {% include clear content='left' %}
 
-Summary
--------
+## Summary
 
 In a nutshell, Semantic Versioning works as follows:
 
@@ -26,8 +25,7 @@ Each SciJava component falls into one of these categories:
 
 SemVer is very useful for indicating how software has changed from one version to another in a programmatic way, but it can be unintuitive for humans, especially for non-developers. It is important to understand that a "major" version increase does not necessarily indicate a shiny new version of the software with lots of new features—but rather more likely to have removed deprecated classes and methods, and/or moved functionality from one place to another in a backwards-incompatible manner. Conversely, a "minor" version increase might indicate the addition of a single new method somewhere, or many significant new features—and SemVer does not specify a mechanism for quantifying which scenario it is in each case.
 
-Scope of SemVer
----------------
+## Scope of SemVer
 
 SemVer provides a means for reasoning about changes in public API. However, it is up to developers to define exactly what is covered by "public API" in their software. For SciJava, this definition is as follows:
 
@@ -55,15 +53,13 @@ Furthermore, SciJava projects typically accompany interfaces with a correspondin
 
 <table><tbody><tr class="odd"><td><p><strong>Interface of interest</strong></p></td><td><p><strong>Base class to extend</strong></p></td></tr><tr class="even"><td><p> {% include javadoc package='org/scijava/plugin' class='RichPlugin' %}</p></td><td><p> {% include javadoc package='org/scijava/plugin' class='AbstractRichPlugin' %}</p></td></tr><tr class="odd"><td><p> {% include javadoc package='org/scijava/command' class='Command' %}</p></td><td><p> {% include javadoc package='org/scijava/command' class='ContextCommand' %}</p></td></tr><tr class="even"><td><p> {% include javadoc package='org/scijava/tool' class='Tool' %}</p></td><td><p> {% include javadoc package='org/scijava/tool' class='AbstractTool' %}</p></td></tr><tr class="odd"><td><p> {% include javadoc package='org/scijava/service' class='Service' %}</p></td><td><p> {% include javadoc package='org/scijava/service' class='AbstractService' %}</p></td></tr><tr class="even"><td><p> {% include javadoc project='SCIFIO' package='io/scif' class='Format' %}</p></td><td><p> {% include javadoc project='SCIFIO' package='io/scif' class='AbstractFormat' %}</p></td></tr></tbody></table>
 
-Melting pot
------------
+## Melting pot
 
 Because there are limitations in what SemVer can be used to reason about, applications may also wish to provide a "melting pot" for a high-level assessment of compatibility.
 
 The [SciJava component collection](/develop/architecture) uses a [melting pot script](https://github.com/scijava/scijava-scripts/blob/d892adc0092c220ee1e597b9fb5a1fb067e4509b/melting-pot.sh) to test components from its lowest-level libraries (e.g., [SciJava Common](/libs/scijava-common) and [ImgLib2](/imglib2)) to its topmost applications (e.g., [ImageJ](/about) and [Fiji](/fiji)).
 
-Is SemVer transitive?
----------------------
+## Is SemVer transitive?
 
 The rules of SemVer are easy to follow within the scope of a single project, but what to do with version numbers as dependencies are upgraded, added or removed is not explicitly defined. Thus the SciJava developers have agreed on a standard convention, based on the type of project.
 

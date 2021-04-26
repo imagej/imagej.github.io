@@ -11,7 +11,6 @@ IJ-OpenCV has been built on top of [SciJava Common](/libs/scijava-common) using 
 
 Several ImageJ plugins have been developed using this library and can be easily downloaded and installed using the [ImageJ Update site](http://sites.imagej.net/IJ-OpenCV/).
 
-Publication
------------
+## Publication
 
 -   {% include publication content='IJ-OpenCV' %}

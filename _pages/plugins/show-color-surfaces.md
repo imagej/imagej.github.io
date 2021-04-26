@@ -18,8 +18,7 @@ The *Show Color Surfaces* command calculates surfaces embedded into the [3D View
 
 ![](/media/Show-color-surfaces-reduced.png "Show-color-surfaces-reduced.png")
 
-Menu path
----------
+## Menu path
 
 {% include bc path='Plugins | Process | Show Color Surfaces'%}
 

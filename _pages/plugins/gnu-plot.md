@@ -8,8 +8,7 @@ categories: Plotting,Plugins
 
 The Gnu\_Plot plugin provides the glue between ImageJ and Gnuplot. The main impetus for developing this plugin was that ImageJ is great at interrogating imaging data, Gnuplot is excellent at generating publishable plots, and I'm lazy. The trouble was in having to extract the plottable data, either from a ResultsTable or through a Java plugin, and then pasting into a ascii editor, save, run gnuplot from a terminal, display output image, and repeat. I prefer to just click a button after finding better plottable data or mucking with the Gnuplot script.
 
-Features
---------
+## Features
 
 <figure><img src="/media/Gnu Plot.jpg" title="&quot;Gnu_Plot GUI&quot;" width="400" alt="&quot;Gnu_Plot GUI&quot;" /><figcaption aria-hidden="true">"Gnu_Plot GUI"</figcaption></figure>
 
@@ -50,8 +49,7 @@ Let's say you want to see the histogram of a phase image in polar format.
 5) Select *Histogram of ...* for **$data0**  
 6) Click on **Generate Plot**
 
-Methods
--------
+## Methods
 
 `public static String gnuplot()`  
 `public static String gnuplot(String gp)`  
@@ -69,32 +67,27 @@ Generate complete plot script. Each `arrs` pass(ed) in will generate a separate 
 `public static ImagePlus plot(String title, String code, float[][]... arrs)`  
 Generate ImagePlus. Each `arrs` pass(ed) in will generate a separate *here-document* data block.
 
-Coding Goodies
---------------
+## Coding Goodies
 
 Generating data, running it through another executable, and using the output.
 
 Dynamically updating Choice(s).
 
-Install
--------
+## Install
 
 Unzip [Gnu\_Plot.zip](/media/Gnu_Plot.zip) into ImageJ1 plugins (File&gt;Show Folder&gt;Plugins) or plugins/jars directories. Source code is in jar file.  
 **Edit&gt;Options&gt;Gnu\_Plot...** Configure location of gnuplot executable.  
 **Anaylze&gt;Tools&gt;Gnu\_Plot...** Runs Gnu\_Plot.
 
-Licence
--------
+## Licence
 
 GPL distribution licence.
 
-ChangeLog
----------
+## ChangeLog
 
 1 April 2020 Initial version.
 
-Known Bugs
-----------
+## Known Bugs
 
 Let me know.
 

@@ -22,13 +22,11 @@ After starting ImageJ, you will see the main window:
 
 On Mac OS X, the menu bar will appear on the top of the screen (as with all OS X applications).
 
-The search bar
---------------
+## The search bar
 
 {% include stub %}
 
-The menu bar
-------------
+## The menu bar
 
 In the menu bar, you will find most of the functionality, such as loading/saving files, processing them, and plugins will be installed into the menus, too.
 
@@ -58,8 +56,7 @@ Windows
 Help  
 Help & Links
 
-The tool bar
-------------
+## The tool bar
 
 The toolbar mostly contains selection tools: the rectangle, ellipse, polygon, freehand and straight line selection tool. By clicking on the icon, you activate the tool.
 
@@ -71,8 +68,7 @@ If there is a small red arrow in the lower right corner of the tool icon, you ca
 
 ![](/media/Alternative Tools.png "Alternative_Tools.png")
 
-The status bar
---------------
+## The status bar
 
 The status bar displays useful information at startup, and when running plugins. It also shows a progress bar on the right side for long-running processes:
 
@@ -82,8 +78,7 @@ A single mouse click on the status bar will show the information about ImageJ an
 
 ![](/media/Default-status-message.png "Default-status-message.png")
 
-Drag & Drop
------------
+## Drag & Drop
 
 You can drag files from your favorite file manager and drop them on the main window; ImageJ will load the corresponding files.
 
@@ -100,8 +95,7 @@ The window has the file name as title, and it display some useful information ab
 
 If your image does not have meta-data about the real resolution, you can set the resolution explicitely with {% include bc path='Image | Properties...'%} or by following the [tutorial on spatial calibration](/techniques/spatial-calibration).
 
-Image Types
------------
+## Image Types
 
 You can change the image *type*:
 

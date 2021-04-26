@@ -15,8 +15,7 @@ artifact: sc.fiji:Trainable\_Segmentation
 
 <b><span style="color:#f80000"> NOTE: </span></b> If you were looking for the Advanced Weka Segmentation plugin, you are in the right place. Advanced Weka Segmentation was renamed as **Trainable Weka Segmentation** and keeps complete backwards compatibility.
 
-Introduction
-------------
+## Introduction
 
 The [Trainable Weka Segmentation](/plugins/tws) is a Fiji plugin that combines a collection of machine learning algorithms with a set of selected image features to produce pixel-based segmentations. [Weka](http://www.cs.waikato.ac.nz/ml/weka/) (Waikato Environment for Knowledge Analysis) can itself be called from the plugin. It contains a collection of visualization tools and algorithms for data analysis and predictive modeling, together with graphical user interfaces for easy access to this functionality. As described on their wikipedia site, the advantages of [Weka](http://www.cs.waikato.ac.nz/ml/weka/) include:
 
@@ -38,8 +37,7 @@ The [Trainable Weka Segmentation](/plugins/tws) is a Fiji plugin that combines a
 
 The main goal of this plugin is to work as a **bridge between the Machine Learning and the Image Processing** fields. It provides the framework to use and, more important, **compare** any available classifier to perform image segmentation based on pixel classification.
 
-The Graphical User Interface
-----------------------------
+## The Graphical User Interface
 
 {% include thumbnail src='/media/Trainable-Weka-Segmentation-GUI.png' title='Example of the first look of the plugin window when using it on a TEM image'%} [Trainable Weka Segmentation](/plugins/tws) runs on any 2D or 3D image (grayscale or color). To use 2D features, you need to select the menu command {% include bc path='Plugins | Segmentation | Trainable Weka Segmentation'%}. For 3D features, call the plugin under {% include bc path='Plugins | Segmentation | Trainable Weka Segmentation 3D'%}. Both commands will use the same GUI but offer different feature options in their settings.
 
@@ -433,8 +431,7 @@ call("trainableSegmentation.Weka_Segmentation.trainClassifier");
 call("trainableSegmentation.Weka_Segmentation.getProbability");
 ```
 
-Library use
------------
+## Library use
 
 The plugin GUI is independent from the plugin methods. The methods are implemented in a separate file in a library-style fashion, so they can be called from any other Fiji plugin without having to interact with the GUI. This facilitates its integration with other plugins and allows easy scripting.
 
@@ -442,32 +439,27 @@ For examples on how to use the plugin methods from scripts, have a look at the [
 
 The **[API](http://javadoc.scijava.org/Fiji/?trainableSegmentation/package-summary.html) of the WekaSegmentation** library is available [here](http://javadoc.scijava.org/Fiji/?trainableSegmentation/package-tree.html).
 
-Versatility
------------
+## Versatility
 
 {% include thumbnail src='/media/TWS-application-examples.png' title='**Examples of application of Trainable Weka Segmentation**. From left to right and from top to bottom: original image of the [Berkeley Segmentation Dataset (Test Image \#42049 (color)](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/BSDS300/html/dataset/images/color/42049.html)), probability of boundaries after training, semantic segmentation into 3 classes (sky, tree, eagle), and detected object using the probability maps of the semantic segmentation and some post-processing ([Level Sets](/plugins/level-sets) from maximum and bounding box selection).'%} As a **pixel classifier**, the Trainable Weka Segmentation presents a wide range of applications such as [boundary detection](https://en.wikipedia.org/wiki/Edge_detection), semantic segmentation, or [object detection](https://en.wikipedia.org/wiki/Object_detection) and localization. All of them at the distance of a few clicks on the plugin GUI and sometimes in combination with other Fiji tools or plugins.
 
 To see **who is using Trainable Weka Segmentation** and its multiple applications, you can have a look at [these publications](https://scholar.google.es/scholar?q=%22Trainable+Weka+Segmentation%22+OR+%22Advanced+Weka+Segmentation%22&btnG=&hl=es&as_sdt=0%2C5).
 
-Usage with existing installation of Weka
-----------------------------------------
+## Usage with existing installation of Weka
 
 Weka will automatically load plugins installed in `~/wekafiles`. If you already have an existing installation of weka using Java 1.7 and are seeing an error about `"java.lang.UnsupportedClassVersionError: weka/filters/unsupervised/attribute/IndependentComponents: Unsupported major.minor version 51.0"`, then you should remove/rename the `~/wekafiles` folder before running Fiji.
 
-Weka core version
------------------
+## Weka core version
 
 Since the [3.2.0 release](https://github.com/fiji/Trainable_Segmentation/releases/tag/v3.2.0), [Trainable Weka Segmentation](/plugins/tws) uses Weka 3.9.0+ - development version. If you have problems loading models from previous versions of the plugin/library, most likely you need to recreate the models using the new version (see [note 1 of the Weka official release](http://forums.pentaho.com/showthread.php?204301-New-Weka-3-6-14-3-8-0-and-3-9-0-releases!)).
 
 If you absolutely need to reuse an old model, you can transform it to the new version thanks to a [model migrator tool](http://www.cs.waikato.ac.nz/ml/weka/downloading.html) provided by the Weka developers. For more information, check this [post in the ImageJ forum](http://forum.imagej.net/t/weka-segmentation-error-after-update-29-09-16/2898/24?u=iarganda).
 
-Troubleshooting
----------------
+## Troubleshooting
 
 For all **questions, suggestions, bug reports and problems** related to the Trainable Weka Segmentation plugin or library, please use the [ImageJ forum](http://forum.imagej.net) and make sure to [check previous posts](http://forum.imagej.net/search?q=weka) that might have been done covering the same topic.
 
-Citation
---------
+## Citation
 
 Please note that [Trainable Weka Segmentation](/plugins/tws) is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
@@ -475,8 +467,7 @@ Please note that [Trainable Weka Segmentation](/plugins/tws) is based on a publi
 
 The [Trainable Weka Segmentation](/plugins/tws) code has its own citable [DOI](http://dx.doi.org/10.5281/zenodo.59290).
 
-License
--------
+## License
 
 This program is **free software**; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt](http://www.gnu.org/licenses/gpl.txt)).
 

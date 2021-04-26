@@ -9,16 +9,14 @@ The syntax is always shown in the gray boxes and the actual look you will see di
 
 If you want to add other templates, here you can find the existing ones [here](https://github.com/imagej/imagej.github.io/tree/main/_includes).
 
-Different headline levels
--------------------------
+## Different headline levels
 
     == 1 Main Menu Items ==     
     === 1.1 Submenus/Direct commands ===
     ==== 1.1.1 Sub-submenu ====
     ===== 1.1.1.1 Sub-submenu =====
 
-1 Main Menu Items
------------------
+## 1 Main Menu Items
 
 ### 1.1 Submenus/Direct commands
 
@@ -28,29 +26,25 @@ Different headline levels
 
 
 
-Plugin parameters
------------------
+## Plugin parameters
 
 Plugin parameters such as number fields, text fields, checkboxes, or radio buttons will be shown **bold**
 
 dropdown choices will be indeícated ***bold/italic***
 
-Keyboard keys
--------------
+## Keyboard keys
 
     {% include key content='Ctrl' %} + {% include key content='C' %}   or    {% include key content='Ctrl' %} + {% include key content='Shift' %} + {% include key content='F' %}
 
 {% include key content='Ctrl' %} + {% include key content='C' %}     /     {% include key content='Ctrl' %} + {% include key content='Shift' %} + {% include key content='F' %}
 
-Menu structure
---------------
+## Menu structure
 
     {% include bc path='Image | Color | Split Channels'%}
 
 {% include bc path='Image | Color | Split Channels'%}
 
-Boxes
------
+## Boxes
 
     {% include box width='30%' %}
 
@@ -108,8 +102,7 @@ Press the {% include key content='L' %} key to access ImageJ"s most useful featu
 {% include yes%}
 
 
-Specific Icons
---------------
+## Specific Icons
 
     {% include no%}
 
@@ -117,8 +110,7 @@ Specific Icons
 {% include no%}
 
 
-Operating systems
------------------
+## Operating systems
 {% raw %}
 {% include linux content='Everyone agrees: Linux is the *best* operating system!' %}
 {% endraw %}

@@ -18,13 +18,11 @@ categories: Plugins,Segmentation,Mathematical_morphology
 {% endcapture %}
 {% include info-box name='Interactive Marker-controlled Watershed' software='IJPB-plugins' author=author maintainer=maintainer source=source released='September 9<sup>th</sup>, 2017' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](/plugins/morpholibj) v1.4.1)' status='stable, active' category='[Segmentation](Category_Segmentation), [Mathematical morphology](Category_Mathematical_morphology)' %}
 
-Introduction
-------------
+## Introduction
 
 <img src="/media/Interactive-Marker-controlled-Watershed-plugin-overview.png" width="400"/> Similar to the [Marker-controlled Watershed](/plugins/marker-controlled-watershed) plugin, this ImageJ/Fiji plugin segments grayscale images of any type (8, 16 and 32-bit) in 2D and 3D using the marker-controlled watershed algorithm by Meyer and Beucher (1990) and it floods the image from specific seed points, **but this time the points are introduced interactively by the user**.
 
-Usage
------
+## Usage
 
 Interactive Marker-controlled Watershed runs on any open grayscale image, single 2D image or (3D) stack. If no image is open when calling the plugin, an Open dialog will pop up.
 
@@ -70,8 +68,7 @@ In this plugin the markers are introduced interactively by the user using any of
 
 -   **Shuffle colors**: randomly re-assign colors to the labels. This is a very handy option whenever two adjacent labels present a similar color.
 
-Installation
-------------
+## Installation
 
 The Marker-controlled Watershed plugin is part of the [MorphoLibJ](/plugins/morpholibj) library. To install it, you just need to [ add](/update-sites/following#add-update-sites) the IJPB-plugins update site:
 
@@ -87,23 +84,20 @@ You should now find the plugin under the sub-menu {% include bc path='Plugins | 
 
 **Note**: Marker-controlled Watershed is only one of the plugins included in the [MorphoLibJ](/plugins/morpholibj) suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
 
-References
-----------
+## References
 
 1.  Fernand Meyer and Serge Beucher. "Morphological segmentation." Journal of visual communication and image representation 1.1 (1990): 21-46.
 2.  Soille, P., "Morphological Image Analysis: Principles and Applications", Springer-Verlag, 1999, pp. 170-171.
 3.  David Legland, Ignacio Arganda-Carreras, Philippe Andrey; [MorphoLibJ: integrated library and plugins for mathematical morphology with ImageJ](http://bioinformatics.oxfordjournals.org/content/early/2016/07/19/bioinformatics.btw413). Bioinformatics 2016; 32 (22): 3532-3534. doi: 10.1093/bioinformatics/btw413
 
-See also
---------
+## See also
 
 -   [Morphological Segmentation](/plugins/morphological-segmentation), a plugin with a graphical user interface to segment 2D/3D images based on morphological operations and the watershed algorithm.
 -   [Classic Watershed](/plugins/classic-watershed), plugin implementing the original watershed algorithm to segment 2D/3D grayscale images.
 -   [Serge Beucher's site](http://cmm.ensmp.fr/~beucher/wtshed.html), with graphic descriptions and animations of the watershed algorithms.
 -   [G. Bertrand's Topological Watershed site](http://www.esiee.fr/~info/tw/index.html), with papers, lecture slides and source code.
 
-License
--------
+## License
 
 This program is **free software**; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt](http://www.gnu.org/licenses/gpl.txt)).
 

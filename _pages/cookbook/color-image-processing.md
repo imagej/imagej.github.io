@@ -7,8 +7,7 @@ section: Learn:Cookbook
 
 
 
-Types of color images
----------------------
+## Types of color images
 
 Images with color come in three different forms: pseudo-color, 24-bit RGB image, or color composite image.
 
@@ -35,8 +34,7 @@ Color composite images can be converted to 24-bit RGB via the 'Channels Tool' di
 
 The disadvantage of the Composite image type is that this relatively recent Fiji development is not supported by all existing plugins. Sometime the composite can revert to a multi-slice stack. To convert it back to a composite you can use the menu command "Image/Color/Make Composite".
 
-Merging multi-channel images
-----------------------------
+## Merging multi-channel images
 
 ### Interleaved multi-channel experiments
 
@@ -56,8 +54,7 @@ This can aid visualization of colocalization due to our poor perception of red a
 
 Run the plugin and select the two images to be merged. Select the desired colors from the drop-down options. <Current> uses the LUT that the image currently has (this is often the desired LUT). The "Difference" option performs a "difference" arithmetic operation rather than an "addition". If the "Pre-sub 2 from 1" option is checked the second image is subtracted from the first prior to merging.
 
-Merging transmitted light and fluorescence images
--------------------------------------------------
+## Merging transmitted light and fluorescence images
 
 Fluorescence and transmitted light brightfield images can be merged with the "*Image/Color/Merge Channels...*". This instruction lets you than choose the C4 (gray) option. This can prevent a 'washed out' look to the fluorescence.
 
@@ -69,8 +66,7 @@ The menu command "*Image/Color/Merge Channels...*" opens a dialog to merge grey,
 
 ![](/media/ merge channels.jpg "_merge_channels.jpg")
 
-Splitting multi-channel Images
-------------------------------
+## Splitting multi-channel Images
 
 An RGB image or stack can be split to the respective red, green and blue image components using the menu command "*Image/Color/Split Channels*".
 
@@ -80,13 +76,11 @@ It works with single slice RGB images. A new RGB stack is created, channel 1 bei
 
 ![](/media/ splitting multichannel pics.jpg "_splitting_multichannel_pics.jpg")
 
-Color Composite
----------------
+## Color Composite
 
 The composite can be reverted to a greyscale stack via the menu command "*Image/Hyperstacks/Hyperstack to Stack*". The channels can be subsequently split to individual images via the menu command "*Image/Stacks/Stack to Images*".
 
-Pseudo-color
-------------
+## Pseudo-color
 
 Judicious use of LUTs can be very useful in highlighting the desired features of an image. The human eye can perceive relatively few shades in one image. Pseudo-coloring images can make data more visible
 

@@ -14,8 +14,7 @@ The Tubular Geodesics plugins were developed several years ago[1] for [Simple Ne
 -   [Secondary Image Screencast](/plugins/snt/screencasts#secondary-images)
 -   [Generating Filtered Images](/plugins/snt/step-by-step-instructions#generating-filtered-images)
 
-References
-----------
+## References
 
 <references >
 

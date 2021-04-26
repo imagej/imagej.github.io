@@ -11,8 +11,7 @@ title: Fpbioimage
 Marcus Fantham' Maintainer='Marcus Fantham' source=source %}FPBioimage is an interactive tool for viewing volumetric data in the web browser. To quickly share 3D data with your collaborators using FPBioimage, we provide this useful plugin for ImageJ and FIJI. 
 
 
-Installation
-------------
+## Installation
 
 Add FPBioimage to your 'Update' sites:
 
@@ -27,8 +26,7 @@ Add FPBioimage to your 'Update' sites:
 
 If you want to install FPBioimage manually, copy the [.jar release](https://github.com/fpBioImage/FPBioimageHelper-FIJI/releases%7Clatest) to the Fiji/plugins folder.
 
-Usage
------
+## Usage
 
 FPBioimage Helper will appear under the **Plugins** menu of ImageJ. Open an image stack, then click it to run the plugin!
 
@@ -36,8 +34,7 @@ Note that, to ensure color appears correctly in the web app, images must be of t
 
 FPBioimage Helper will set the XYZ voxel ratio from the image properties (Image &gt; Properties...), although you can overwrite this data in the plugin in case it is incorrect.
 
-One-click Macro
----------------
+## One-click Macro
 
 Copy the following macro to the bottom of the Fiji/macros/StartupMacros.fiji.ijm file to add a macro button for one-click uploading to FPBioimage.
 
@@ -57,14 +54,12 @@ Copy the following macro to the bottom of the Fiji/macros/StartupMacros.fiji.ijm
         run("FPBioimage Helper", "unique=" + t + " x-voxel=" +vW + " y-voxel=" + vH + " z-voxel=" + vD + " x-resolution=" + rW + " y-resolution=" + rH + " upload");
     }
 
-Source code
------------
+## Source code
 
 The source code for the FPBioimage FIJI plugin is {% include github org='fpbioimage' repo='FPBioimageHelper-FIJI' %}.
 
 The source code for the FPBioimage web app can also be accessed {% include github org='fpbioimage' repo='unity' %}.
 
-Publication
------------
+## Publication
 
 -   Fantham, M. and Kaminski, C.F. (2017). [A new online tool for visualization of volumetric data](https://www.nature.com/articles/nphoton.2016.273). Nature photonics, 11(2), 69.

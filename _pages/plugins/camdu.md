@@ -7,8 +7,7 @@ CAMDU ([http://www.warwick.ac.uk/camdu](http://www.warwick.ac.uk/camdu)) is a "v
 
 Currently, our Fiji update site offers the plugin autoQC for automating tasks related to microscope quality control.
 
-AutoQC
-------
+## AutoQC
 
 Usage Instructions:
 

@@ -9,23 +9,19 @@ This plugin is inspired by the [Time Stamper](/plugins/time-stamper) plugins fro
 
 It aims to combine the functionality of these plugins and refine and enhance the functionality for instance by adding the preview functionality suggested by Michael Weber. Series Labeler is not a drop in replacement for Time Stamper, or Label... since it does not work with hyperstacks or allow macro recording.
 
-Screen Shot of features
------------------------
+## Screen Shot of features
 
 ![](/media/Series Labeler Screen shot.png "Series_Labeler_Screen_shot.png")
 
-What it works with
-------------------
+## What it works with
 
 Series Labeler handles any kind of stack: time (t), z (3rd spatial dimension) or channel (c, eg. spectral series). It does not work with hyperstacks, see below.
 
-It reads in image metadata for default settings
------------------------------------------------
+## It reads in image metadata for default settings
 
 When meta data is available in the image, ie. for calibration of time interval, z spacing, etc. it is read into the GUI as default values, so you have a better chance of getting the values and units correct!
 
-How to use Series Labeler
--------------------------
+## How to use Series Labeler
 
 Generally speaking, just work your way down the GUI, with preview on if you like.
 
@@ -50,8 +46,7 @@ Make sure its the active image by clicking on it, then....
 -   With preview on, you can move the slider in the image to be labeled, and get a preview of what the label/stamp will look like through the stamp. Changes you make in the Series Labeler GUI should be sent to the preview you you can see what you are going to get.
 -   Click OK to burn the labels/stamps into the image stack (maybe work on a duplicate stack - there is no undo!). The cancel button removes the label preview and gives you back the original stack, and closes the Series Labeler. The help button sends you here.
 
-It doesn't work with hyperstacks or macros...
----------------------------------------------
+## It doesn't work with hyperstacks or macros...
 
 Hyperstacks and macro recording are not supported yet.
 

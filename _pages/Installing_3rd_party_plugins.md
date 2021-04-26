@@ -4,8 +4,7 @@ title: Installing 3rd party plugins
 categories: Tutorials
 ---
 
-For users
----------
+## For users
 
 -   If the plugin is published on an [ImageJ update site](/update-sites), you can run {% include bc path='Help | Update'%} then click the *Manage update sites* button to enable it. Not only does this install the plugins for you automatically, but you will also be notified of any updates whenever they are released.
 
@@ -36,8 +35,7 @@ It will ask you for the file name of the plugin, and install the given file.
 
 **Note:** On MacOSX, you need to {% include key content='Ctrl' %}+{% include key content='click' %} on the *Fiji* icon in the Finder and select *Show package contents* to see the *plugins/* folder.
 
-For developers
---------------
+## For developers
 
 {% include warning-box content='This section is out of date, potentially misleading or invalid. Be careful with any instructions here. When in doubt,  [ask for help from the community](/help).' %}
 

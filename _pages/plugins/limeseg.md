@@ -20,15 +20,13 @@ title: LimeSeg
 
 [Enable the LimeSeg update site](/update-sites/following) to get it.
 
-Publication.
-------------
+## Publication.
 
 LimeSeg: a coarse-grained lipid membrane simulation for 3D image segmentation
 
 BMC Bioinformatics doi: [http://dx.doi.org/10.1186/s12859-018-2471-0](https://doi.org/10.1186/s12859-018-2471-0)
 
-Video tutorials
----------------
+## Video tutorials
 
 Probably the fastest to learn how to use LimeSeg at a basic level. You can find [here a playlist containing all the tutorials](https://www.youtube.com/playlist?list=PLrEbS8VRQh9qhFYH-9YnVwzMDQBGfCKVj). This playlist contains tutorials for:
 
@@ -40,8 +38,7 @@ Probably the fastest to learn how to use LimeSeg at a basic level. You can find 
 -   [Single object segmentation with a pre-defined shape](https://www.youtube.com/watch?v=Ta911ULSWUI)
 -   [Computing and displaying surface curvature](https://www.youtube.com/watch?v=i9OC8H6gFA4)
 
-Presentation.
--------------
+## Presentation.
 
 Test LimeSeg is a modular 3D segmentation plugin. It is a particle-based active contour method. It can segment objects from 3D images where 3D objects are labelled on their outline, like cells labeled on their membrane, as shown in the image below (source of the image : https://loci.wisc.edu/sample-data/dub).
 
@@ -52,8 +49,7 @@ LimeSeg can be used with simple commands provided by the plugin (under {% includ
 Commands : basic usage
 ======================
 
-Single object segmentation
---------------------------
+## Single object segmentation
 
 ### Sphere Seg command
 
@@ -156,8 +152,7 @@ You need to begin and end with a single point ROI, otherwise the shape will not 
 
 ![](/media/LimeSeg CElegans Global.png "LimeSeg_CElegans_Global.png")
 
-Multiple objects segmentation
------------------------------
+## Multiple objects segmentation
 
 It is possible to segment multiple non overlapping objects with LimeSeg. The most basic way to do this is through the Sphere Seg command. In order too to an example, you can open the test image of *c.elegans* with {% include bc path="File|Import|URL" %}. This is a timepoint extracted from this dataset:
 
@@ -198,8 +193,7 @@ The colors are chosen randomly and you should be able to vizualize the result bo
 
 The output table also displays the surface and volume of the segmented cells.
 
-Others commands
----------------
+## Others commands
 
 ### Cancelling a segmentation result
 
@@ -217,16 +211,14 @@ Should be used cautiously : this erases all objects segmented by LimeSeg so far.
 
 -   Command {% include bc path="Plugins|LimeSeg|Stop optimization" %}
 
-LimeSeg 3D Viewer (basic)
--------------------------
+## LimeSeg 3D Viewer (basic)
 
 So far LimeSeg provides its own 3D vizualizer. The 3D viewer looks at a specific point in 3D. Arrows keyboard allow to move this central point. Mouse dragging allows to rotate around this point. Zoom/zoom out can be done with the mouse wheel.
 
 Advanced usage
 ==============
 
-Graphical user interface
-------------------------
+## Graphical user interface
 
 The command {% include bc path="Plugins|LimeSeg|Show GUI" %} displays LimeSeg GUI. This graphical interface allows to do almost everything in LimeSeg. Each action (meaning button you click) is recordable if you have opened the {% include bc path="Plugins|Macro|Record" %} recorder.
 
@@ -234,8 +226,7 @@ To execute the script in ImageJ1 macro language, just add `run("Show GUI");` as 
 
 To execute the script in Groovy, replace **Ext.** by **LimeSeg.**, and put `import eu.kiaru.limeseg.LimeSeg;` at the beginning of the script.
 
-LimeSeg structure
------------------
+## LimeSeg structure
 
 LimeSeg is composed of multiple parts. It can:
 
@@ -359,8 +350,7 @@ To save the current objects of LimeSeg, choose an EMPTY folder in LimeSeg GUI I/
 
 To open previously saved data, select the folder with the LoadFrom: button then click loadStateFromXmlPly button. This erases all previous data contained in LimeSeg.
 
-LimeSeg 3D Viewer (advanced)
-----------------------------
+## LimeSeg 3D Viewer (advanced)
 
 -   Image synchronization
 

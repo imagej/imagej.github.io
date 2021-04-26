@@ -7,8 +7,7 @@ artifact: sc.fiji:Anisotropic\_Diffusion\_2D
 
 This plugin implement the anisotropic diffusion filter in 2D. Anisotropic filters are a class of filter that reduces noise in an image while trying to preserve sharp edges. See also [this page of the ImageJ 1.x web site](/ij/plugins/anisotropic-diffusion-2d.html).
 
-Documentation
--------------
+## Documentation
 
 **Parameters:**
 
@@ -23,8 +22,7 @@ Documentation
 -   *Show time stats* - Display elapsed times.
 -   *Add labels* - Add labels to output stack. Double click on the eye dropper tool to set the label color.
 
-Citation
---------
+## Citation
 
 The algorithm used by this plugin is an implementation of Anisotropic Diffusion from:
 

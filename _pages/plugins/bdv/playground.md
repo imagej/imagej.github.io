@@ -6,19 +6,16 @@ description: Bigdataviewer entry point
 
 As announced in the forum [here](https://forum.image.sc/t/getting-bigdataviewer-instance-in-an-imagej-command/21110/8) and [here](https://forum.image.sc/t/fiji-commands-for-bigdataviewer/25601), bigdataviewer playground aims at a better integration of BigDataViewer into Fiji by using the [SciJava Framework](/SciJava).
 
-Installation
-------------
+## Installation
 
 Enable the [bigdataviewer playground update site](/update-sites/following) (https://biop.epfl.ch/Fiji-Bdv-Playground/).
 
-What bigdataviewer-playground brings
------
+## What bigdataviewer-playground brings
 -   **Modularity for bigdataviewer!** Bigdataviewer playground creates a way to access existing BDV instances when scripting or writing java code. Being able to combine scripts or code for display and processing is doable easily via scripting (Groovy, ImageJ macro, etc.)
 -   **Provide a set of macro recordable commands for bigdataviewer**. Makes it possible to script basic actions on BigDataViewer with the ImageJ macro recorder.
 -   **Direct and lazy opening of multiresolution files, supported by bioformats**. It is possible to open and visualize large files in bigdataviewer without resaving files. This is particularly convenient for large 2D images (à la QuPath). 
 
-How to open images in bigdataviewer-playground ?
------
+## How to open images in bigdataviewer-playground ?
 
 Several options are available. Note that there's a difference between opening and visualising an image. Images opened in bigdataviewer-playground are not visualized directly, but are sorted into a hierarchical tree displayed into an extra window. From this tree, images can be displayed using the right click contextual menu (see next section).
 
@@ -37,8 +34,7 @@ Such datasets can be opened in bigdataviewer playground either via the command *
 
 Similar to the command **[Plugins>BigDataViewer>Open Current Image]**, it is possible to import the current ImageJ image as an image in the bigdataviewer playground hierarchical tree via the command **[Plugins>BigDataViewer>Sources>Import>Get Sources From ImagePlus]**
 
-How to visualize images in bigdataviewer-playground ?
------
+## How to visualize images in bigdataviewer-playground ?
 
 After one or several images have been opened in bigdataviewer playground, a window shows up which sorts the accessible images into a tree view:
 

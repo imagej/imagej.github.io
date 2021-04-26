@@ -24,8 +24,7 @@ Note: The options listed in *jvm.cfg* will be passed to the virtual machine befo
 
 Which method is appropriate for you depends on what you want to do: if you want to change Fiji's default, use the *jvm.cfg* method.
 
-The double-dash (or: how to separate Java options and Fiji options from command line options)
----------------------------------------------------------------------------------------------
+## The double-dash (or: how to separate Java options and Fiji options from command line options)
 
 It can be confusing to pass Fiji and Java options at the same time as command line options to ImageJ (or other programs). So here are a few simple rules:
 
@@ -54,8 +53,7 @@ Useful Java options
 
 These examples are gleaned from [Headius' blog](http://blog.headius.com/2009/01/my-favorite-hotspot-jvm-flags.html):
 
-The Basics
-----------
+## The Basics
 
 Most runs will want to tweak a few simple flags:
 
@@ -110,8 +108,7 @@ I use many of the above combined into a script to launch fiji in a bash shell:
 
 Notice the -- "$@" to pass any script arguments as ImageJ arguments.
 
-Deeper Magic
-------------
+## Deeper Magic
 
 Eventually you may want to tweak deeper details of the JVM:
 
@@ -126,8 +123,7 @@ And there are a few more advanced logging and profiling options as well:
 -   *-XX:+PrintGCDetails* includes the data from -verbose:gc but also adds information about the size of the new generation and more accurate timings.
 -   *-XX:+TraceClassLoading* and *-XX:+TraceClassUnloading* print information class loads and unloads. Useful for investigating if you have a class leak or if old classes are getting collected or not.
 
-Into The Belly
---------------
+## Into The Belly
 
 Finally here's a list of the deepest options we use to investigate performance. Some of these require a debug build of the JVM, which you can download from java.net.
 

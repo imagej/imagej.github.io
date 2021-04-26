@@ -13,8 +13,7 @@ title: IJ Blob
 {% endcapture %}
 {% include info-box software='ImageJ/Fiji' name='IJBlob' author=author maintainer=maintainer filename='ij-blob.jar [\[1](https://github.com/thorstenwagner/ij-blob/releases/latest) \]' source='Github [\[2](https://github.com/thorstenwagner/ij-blob) \]' latest-version='v1.4.9 (4 July 2016)' status='active' %}
 
-Purpose
--------
+## Purpose
 
 The IJBlob library indentifying connected components in binary images. The algorithm used for connected component labeling is:
 
@@ -38,8 +37,7 @@ If you are using IJBlob in a scientific publication, please cite:
 
 The [Shape Filter](/plugins/shape-filter) plugin uses the ij-blob library to characterize and filter objects in binary scenes by its shape. Therefore, several features are calculated as shown below.
 
-Features of IJBlob
-------------------
+## Features of IJBlob
 
 -   Filter Framework
 -   Extract the outer contour of each blob.
@@ -47,8 +45,7 @@ Features of IJBlob
 -   Detects nested objects (blob in blob).
 -   Many shape features
 
-Shape Features
---------------
+## Shape Features
 
 -   **Area** ($$A$$): The area enclosed by the outer contour of an object.
 -   **Area Convex Hull** ($$C$$): The area enclosed by the convex hull of the outer contour of an object.
@@ -74,8 +71,7 @@ Shape Features
 Examples
 ========
 
-Example 1: Extract the connected components of an image and read the perimeter of a blob
-----------------------------------------------------------------------------------------
+## Example 1: Extract the connected components of an image and read the perimeter of a blob
 
     import ij.blob.*;
     ...
@@ -88,8 +84,7 @@ Example 1: Extract the connected components of an image and read the perimeter o
         allBlobs.get(0).getPerimeter(); // Read the perimeter of a Blob
     }
 
-Example 2: Example 2: Filter blobs by blob features
----------------------------------------------------
+## Example 2: Example 2: Filter blobs by blob features
 
 In IJBlob 1.1 a filter framework was introduced. Each build-in blob feature has a static identifier (in this example "GETENCLOSEDAREA") which contains the method name.
 
@@ -109,8 +104,7 @@ In IJBlob 1.1 a filter framework was introduced. Each build-in blob feature has 
         Blob.GETENCLOSEDAREA);
     }
 
-Example 3: Add your own features
---------------------------------
+## Example 3: Add your own features
 
 IJBlob 1.1 is easily expandable by your own features. First you have to derive a feature class from the "CustomBlobFeature" class. The feature class can also contain multiple features. With the "getBlob()" method you get the reference to the Blob and have full access to the contour data and the other features. **Please note: If your feature method have primitive data types (int/float/double) as parameters you have to use the wrapper classes (Integer/Float/Double).**
 
@@ -126,8 +120,7 @@ IJBlob 1.1 is easily expandable by your own features. First you have to derive a
         }
     }
 
-Example 4: Add detected blobs to the ROI manager
-------------------------------------------------
+## Example 4: Add detected blobs to the ROI manager
 
 Find all blobs:
 

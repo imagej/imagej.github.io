@@ -13,13 +13,11 @@ categories: Techniques,Plugins
 ImageJ/Fiji plugin to to analyze Scanning Angle Interference Microscope Data.
 =============================================================================
 
-Installation
-------------
+## Installation
 
 To install this plugin check the "ValelabUtils" update site in the Fiji updater.
 
-Description
------------
+## Description
 
 SAIM (Scanning Angle Interference Microscopy) is a technique to measure the distance of fluorescent dyes to the surface at nm resolution. To use it, one needs to place the sample on a silicon chip (that acts as a mirror) with a solicon oxide (glass) spacer). The reflection of coherent excitation light will interfere with the incoming beam and set up a standing wave pattern, resulting in fluorescence intensity that varies with distance to the surface. By varying the angle of incidence, the standing wave pattern changes in predictable ways, and a series of images at different angles can be used to deduce the height of fluorescence molecules, independent of their intensity. This technique is very well described by [Paszek et al.](http://www.nature.com/nmeth/journal/v9/n8/abs/nmeth.2077.html), and this plugin uses the equations from the Paszek et al. paper with a few [SAIM Math.pdf](/media/SAIM Math.pdf) extensions. A thorough description can be found in [our manuscript](http://www.nature.com/nmeth/journal/v13/n11/full/nmeth.4030.html) or in [the preprint version on BiorXiv](http://biorxiv.org/content/early/2016/04/26/050468). . If you use this plugin, please do cite that paper.
 
@@ -35,15 +33,13 @@ Saim Fit will fit each pixel in the input stack and output a stack with 4 images
 
 ![](/media/SaimFit.png "fig:SaimFit.png") ![](/media/SaimFitOutput.jpg "fig:SaimFitOutput.jpg")
 
-Usage in a macro
-----------------
+## Usage in a macro
 
 To call the Saim analysis code in a macro, use the "Fit\_Macro" plugin. Macros can look like:
 
 run("Fit\_Macro", "wavelength=488 sample=1.32 oxide=1900 first=-42 step=1 a=3 heights=28.0 ");
 
-Example Data
-------------
+## Example Data
 
 These datasets were obtained by imaging a phospho-lipid bilayer stained with DiO (488), DiI(561), and DiD(640nm) (data acquired by Kate Carbone). The parameters shown below were used for analysis.
 
@@ -59,8 +55,7 @@ Some of the single pixels fits we obtained look as follows:
 
 <figure><img src="/media/Example single pixel fits.png" title="Example_single_pixel_fits.png" width="799" alt="Example_single_pixel_fits.png" /><figcaption aria-hidden="true">Example_single_pixel_fits.png</figcaption></figure>
 
-History
--------
+## History
 
 -   1.0.8 (2016-09-28): Added Fit\_Macro, a blocking version of the Fit plugin that can be called from a macro
 -   1.0.7 (2016-04-22): Fixed bug that caused most pixels not to be fit

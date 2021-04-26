@@ -17,8 +17,7 @@ title: Noise Generator
 {% endcapture %}
 {% include info-box name='Noise Generator PlugIn' software='Fiji' author=author maintainer=maintainer source=source released='February 08<sup>th</sup>, 2015' latest-version='February 08<sup>th</sup>, 2015' status='experimental, active' category='[Plugins](Category_Plugins), [Image](Category_Noise)' %}
 
-Noise Generator
----------------
+## Noise Generator
 
 It is well know that in every image acquisition process exist a noise level always present by different sources. Each noise has its particular characteristics and the behavior on image acquisition plays an importanto role to quantify the reliability on further image manipulations such as registration and tissue segmentation.
 
@@ -26,11 +25,9 @@ It is well know that in every image acquisition process exist a noise level alwa
 
 -   *Feb-08-2015*: Available to produce additive noise on 2D images with some specific noise probability distributions. It is produced in the majority the MRI and complex noise distributions.
 
-Noise Distributions
--------------------
+## Noise Distributions
 
-How to use
-----------
+## How to use
 
 We try to implement a simple PlugIn in order to produce additive noise on a set of different noise probability distributions. In this case, only click on the PlugIn ImageJ menu and hit the Noise Generator PlugIn.
 

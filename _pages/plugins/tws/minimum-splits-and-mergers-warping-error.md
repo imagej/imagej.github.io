@@ -12,8 +12,7 @@ Given a set of original (binary) labels and its corresponding proposed (grayscal
 
 In the classic [ warping error](/plugins/tws/topology-preserving-warping-error), all pixels belonging to a topological error add to the final metric value. To make the result more intuitive, one can filter those pixels and select only the ones in which we are interested on, in our case, splits and mergers. This way, the metric value will correspond to the number of pixels of each split and merger divided by the total number of pixels. In other words, the metric represents the number of pixels that are needed to correct the segmentation.
 
-2D implementation in Fiji
--------------------------
+## 2D implementation in Fiji
 
 The minimum splits and mergers warping error metric is implemented for 2D images in the [Trainable Weka Segmentation](/plugins/tws) library. Here is an example of how to use it in [Beanshell script](/scripting/beanshell):
 
@@ -37,8 +36,7 @@ The minimum splits and mergers warping error metric is implemented for 2D images
     IJ.log("  Warping error = " + warpingError);
     IJ.log("  # errors (splits + mergers pixels) = " + Math.round(warpingError * originalLabels.getWidth() * originalLabels.getHeight() * originalLabels.getImageStackSize() ) );
 
-References
-----------
+## References
 
 <references />
 

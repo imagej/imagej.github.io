@@ -10,8 +10,7 @@ categories: development
 {% endcapture %}
 {% include info-box name='SciJava' software='SciJava' logo='<img src="/media/Scijava-logo.png" width="128"/>' author=' [SciJava consortium](https://scijava.org/)' maintainer=maintainer source=' [on GitHub](https://github.com/scijava)' status='Active' website='https://scijava.org/' %}SciJava is a collaboration of projects providing software for scientific computing—an effort to cooperate and reuse code when feasible.
 
-The SciJava component collection
---------------------------------
+## The SciJava component collection
 
 The following component layers are part of the **[SciJava component collection](/develop/architecture)**:
 
@@ -26,8 +25,7 @@ The following component layers are part of the **[SciJava component collection](
 
 All components in this collection are managed by SciJava's [Bill of Materials](//develop/architecture#bill-of-materials) to make it easier for downstream components to use them without version conflicts.
 
-The SciJava pledge
-------------------
+## The SciJava pledge
 
 The following projects are part of the **[SciJava pledge](Category_SciJava)** to work together, reuse code and synergize wherever possible:
 

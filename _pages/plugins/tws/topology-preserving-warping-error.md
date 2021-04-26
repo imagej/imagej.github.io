@@ -8,15 +8,13 @@ categories: Segmentation
 
 In other words, instead of focusing on the geometric differences (pixel disagreement) between two segmentations, the **warping error** focuses on the objects and measures the topological error between them.
 
-Pixel error
------------
+## Pixel error
 
 {% include thumbnail src='/media/Pixel-error-description.png' title='Pixel error between two different segmentations labels (A and B) with respect to the original labels (\*, ground truth).'%} The simplest way of evaluating a segmentation is by measuring the pixel error between the original labels and the segmented ones. Let $$l_i$$ denote the value of the boundary labeling *L* at image location *i*. The pixel error of *L* with respect to another binary labeling *L*<sup>\*</sup> is the number of pixel locations at which the two labelings disagree. This can also be written as the squared {% include wikipedia title='Euclidean distance' text='Euclidean distance'%} $$\parallel L - L^*\parallel^2$$, which is equivalent to the {% include wikipedia title='Hamming distance' text='Hamming distance'%} since the labels are binary-valued.
 
 The pixel error is appealing because of its simplicity, but suffers from a serious defect. It is **overly sensitive to minor displacements in the location of a boundary** that are ubiquitous even when comparing one human boundary labeling to another. These disagreements cause no qualitative differences in the interpretation of the image, but can lead to large quantitative differences in pixel error.
 
-Digital topology and the warping error
---------------------------------------
+## Digital topology and the warping error
 
 Jain *et al.* [2] introduced the **warping error**, another metric for comparing boundary labelings based on concepts from the field of {% include wikipedia title='Digital topology' text='digital topology'%}.
 
@@ -96,8 +94,7 @@ The [Rand error](/plugins/tws/rand-error) can be used to compare segmentations i
 
 The **warping error** can be distinguished from the [Rand error](/plugins/tws/rand-error) in other respects. The **warping error** can penalize all kinds of topological errors, including the presence of holes and handles, but the [Rand error](/plugins/tws/rand-error) penalizes only connectivity errors. In certain medical imaging situations, control of such aspects of topology is especially important. The [Rand error](/plugins/tws/rand-error) mildly penalizes shifts in boundary location, while the **warping error** ignores them altogether. The **warping error** weights a topological error by the number of pixels involved in the error itself, while the [Rand error](/plugins/tws/rand-error) weights a split or merger by the number of pixels in the objects associated with the errors.
 
-2D implementation in Fiji
--------------------------
+## 2D implementation in Fiji
 
 The warping error metric is implemented for 2D images in the [Trainable Weka Segmentation](/plugins/tws) library. Here is an example of how to use it in a [Beanshell script](/scripting/beanshell):
 
@@ -123,13 +120,11 @@ The warping error metric is implemented for 2D images in the [Trainable Weka Seg
     IJ.log("Warping error between source image " + originalLabels.getTitle() + " and target image " 
     + proposedLabels.getTitle() + " = " + warpingError);
 
-See also
---------
+## See also
 
 -   [Rand error](/plugins/tws/rand-error).
 
-References
-----------
+## References
 
 <references />
 

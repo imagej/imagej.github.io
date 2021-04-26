@@ -7,8 +7,7 @@ If you want to fuse or deconvolve a sub-volume of your dataset (other than *all 
 
 The Bounding Box Definition can be started by clicking **Define Bounding Box...** in the main menu, located under `Fusion` (Stitching mode) or `Displaying` (MultiView mode).
 
-Bounding Box Definition
------------------------
+## Bounding Box Definition
 
 In the first dialog, you can specify how to define you bounding box in the **Bounding Box** drop-down menu. The available options are explained in detail below. In addition, you can give your Bounding box a name under **Bounding Box Name**.
 

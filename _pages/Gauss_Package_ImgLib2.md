@@ -7,15 +7,13 @@ title: Gauss Package ImgLib2
 
 ### Gauss Package for ImgLib2
 
-Purpose
--------
+## Purpose
 
 The gauss package for ImgLib2 is an generic, optimized implementation of the traditional Gaussian convolution. It can perform anisotropic, n-dimensional convolution on any image or any interval on an image, if required even in-place.
 
 The computation is performed multi-threaded and accesses each pixel of the input and output containers only once to guarantee high performance, even on paged cell containers. The precision of the computation can be of any ImgLib2 NumericType, however, there are more efficient implementations for convolution with float and double precision. Any precision of gaussian convolution can be computed on any type of real valued input data, it will be internally wrapped to either float or double. For other conversions (e.g. perform a gaussian convolution on complex float data with complex double precision) respective converters need to be provided. However, any NumericType can always be convolved with its own precision. Warning: this might reduce the accuracy of the computation significantly if the Type itself is an integer type.
 
-Documentation
--------------
+## Documentation
 
 The Gauss package for ImgLib2 consists of several classes which abstract the convolution operations to n dimensions. **The developer/user should use the static methods provided in the Gauss.java class.** It will determine itself which class should be used with which parameters in order to provide the best performance possible.
 
@@ -122,8 +120,7 @@ An example on how to call the most generic version of the Gaussian convolution c
 
 Another nice example of the generality of the gaussian convolution is the **Game of Death 2** which uses Gaussian convolution to simulate diffusion of different species of viruses. It redefines the add() operator of our new NumericType called **LifeForm** which can then be used to start the simulation. The **Game of Death 2** is included in the imglib repository.
 
-Implementation
---------------
+## Implementation
 
 The first (obvious) core idea of the implementation is to break down the convolution into one-dimensional convolutions along each dimension. In order to properly convolve all input data, a continuously decreasing area has to be convolved when going along each dimension (see figure). This is necessary as the input for dimension d+1 has to be convolved in dimension d in order to produce the correct result.
 

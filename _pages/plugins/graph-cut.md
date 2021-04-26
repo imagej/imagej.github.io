@@ -9,8 +9,7 @@ artifact: sc.fiji:Graph\_Cut
 
 The Graph Cut plugin provides a way to obtain a globally smooth binary segmentation. As input, you have to provide a gray-scale image that represents the pixel affinities for belonging to the foreground. Via a single parameter you can adjust the smoothness of the segmentation.
 
-Publication
------------
+## Publication
 
 This plugin is based on a reimplementation of Kolmogorov's [maxflow v3.01](http://pub.ist.ac.at/~vnk/software.html#maxflow) library, which was written in C++. If you intend to use it for a publication, please cite:
 
@@ -18,13 +17,11 @@ Yuri Boykov and Vladimir Kolmogorov, <b>An Experimental Comparison of Min-Cut/Ma
 
 The plugin can be found under {% include bc path='Plugins|Segmentation|Graph Cut'%}.
 
-Settings
---------
+## Settings
 
 The only available setting so far is the "smoothness" value. Use it to adjust the penalty for label changes in the segmentation. The higher this value, the less label changes you will have, thus the segmentation gets smoother. A value of zero corresponds to thresholding the input image.
 
-Tutorial
---------
+## Tutorial
 
 Assume we want to segment the following image into foreground/background, such that the foreground is the mitochondria and the background everything else:
 

@@ -50,8 +50,7 @@ If you want to learn more about how to create an info box, view the source of th
 	<img src="/images/readme/info-box.png">
 </p>
 
-Credit:
-------------------
+## Credit:
 
 Photon by HTML5 UP
 html5up.net | @ajlkn

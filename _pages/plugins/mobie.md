@@ -19,20 +19,17 @@ title: MoBIE
 
 
 
-Overview
---------
+## Overview
 
 MoBIE (Multimodal Big Image Data Exploration) is a framework for sharing and interactive browsing of multimodal big image data. The MoBIE Fiji viewer is based on [BigDataViewer](/plugins/bdv) and enables browsing of MoBIE datasets. For more information please visit the GitHub [README](https://github.com/mobie-org/mobie).
 
-Installation
-------------
+## Installation
 
 Please install the Update Site: http://sites.imagej.net/MoBIE/. For details on how to install an update site click [here](/update-sites/following).
 
 To run it, please select Plugins &gt; MoBIE from the main menu.
 
-Publication
------------
+## Publication
 
 MoBIE was used in the following publications:
 

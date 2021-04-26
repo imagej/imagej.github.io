@@ -8,13 +8,11 @@ categories: Import-Export
 
 Thanks to ImageJ's [extensibility](/develop/architecture#extensibility) via [plugins](/plugins), it supports a lot of image formats!
 
-Life sciences
--------------
+## Life sciences
 
 The [OME Bio-Formats](/formats/bio-formats) plugins provide support for over 130 file formats in microscopy, medical imaging, and related life science formats. Bio-Formats is included with the [Fiji](/fiji) distribution of ImageJ. See also the Bio-Formats [list of supported formats](https://www.openmicroscopy.org/site/support/bio-formats/supported-formats.html).
 
-DICOM
------
+## DICOM
 
 ImageJ has some built-in support for the DICOM format, and there are also plugins for working with DICOM files. See the [DICOM](/formats/dicom) page for full details.
 
@@ -22,13 +20,11 @@ ImageJ has some built-in support for the DICOM format, and there are also plugin
 
 The HDF5 [update site](/update-sites) enables support for reading and writing [HDF5](https://en.wikipedia.org/wiki/Hierarchical_Data_Format) image data. Note that HDF5 is a very broad specification; the HDF5 plugin will not support all manner of HDF files, but only those written according to its constraints.
 
-Video
------
+## Video
 
 Out of the box, ImageJ has limited support for some video formats such as AVI and [QuickTime](/formats/quicktime), and there are also plugins which extend ImageJ's support for videos. See the [Video](/formats/video) page for details.
 
-See also
---------
+## See also
 
 -   The ImageJ Documentation Wiki page [FAQ: Which file formats are supported by ImageJ](http://imagejdocu.tudor.lu/doku.php?id=faq:general:which_file_formats_are_supported_by_imagej) (though it is outdated).
 

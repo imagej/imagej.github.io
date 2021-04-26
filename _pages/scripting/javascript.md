@@ -15,8 +15,7 @@ ImageJ supports JavaScript via Java's built-in {% include wikipedia title='Nasho
 JavaScript tutorial for ImageJ
 ==============================
 
-Language basics
----------------
+## Language basics
 
 ### Importing classes
 
@@ -578,8 +577,7 @@ The following code demonstrates how to use the library, if it's saved as *Simple
     var obj = new SimpleObject(10, 10, 100);
     obj.print();
 
-ImageJ interaction
-------------------
+## ImageJ interaction
 
 ### Opening and creating ImageJ images
 
@@ -741,8 +739,7 @@ If you add the script after ImageJ was started, just call "Help - Update menus" 
 
 You can continue modifying and saving the script file. Every time you run it from the menu, it will be read from the file system.
 
-Interfaces and anonymous classes
---------------------------------
+## Interfaces and anonymous classes
 
 To create an ImageListener without declaring a new class that implements such java interface, simply use a function that will be mapped to all its methods (as long as they have the same signature, which they do in this case):
 
@@ -775,8 +772,7 @@ What the code above did: to look for an interface that could take a method with 
 
 See also an [example plugin](/scripting/comparisons#in-javascript) for ImageJ written in javascript.
 
-Multithreaded Image Processing in Javascript
---------------------------------------------
+## Multithreaded Image Processing in Javascript
 
 The following example shows how to create a generic function, named <i>multithreader</i>, that accepts another function as argument and executes it in parallel a number of times. As a very simple example, a <i>printer</i> function is passed to the <i>multithreader</i>, and a list of numbers is printed without repeating anyone, and not preserving the order of course.
 

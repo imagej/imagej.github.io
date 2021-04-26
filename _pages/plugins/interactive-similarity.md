@@ -16,8 +16,7 @@ This plugin allows to apply a **similarity transformation** (rotation, translati
 2.  Drag and drop the points to interactively transform the image with a **similarity model** (rotation, translation and isotropic scaling).
 3.  If you are satisfied with the result, press ENTER, otherwise, press ESC.
 
-License
--------
+## License
 
 This program is **free software**; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt](http://www.gnu.org/licenses/gpl.txt)).
 

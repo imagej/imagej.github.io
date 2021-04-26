@@ -4,13 +4,11 @@ title: Same Slice in Multiple Images
 categories: Plugins,Scripting,Unmaintained
 ---
 
-Purpose
--------
+## Purpose
 
 An example JRuby script, which needs to be customized to be useful to you - the source code is {% include github repo='fiji' path='plugins/Examples/Same\_Slice\_in\_Multiple\_Images.rb' label='here' %}.
 
-Code
-----
+## Code
 
     # This is an example that find all the image.bin.gz files from channel
     # 01 under a directory and makes an image stack of all the slices
@@ -84,8 +82,7 @@ Code
     result = ImagePlus.new "All slices numbered #{slice_to_get}", stack
     result.show
 
-See also
---------
+## See also
 
 [JRuby Scripting](/scripting/jruby)
 

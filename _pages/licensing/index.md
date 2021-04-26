@@ -16,13 +16,11 @@ For an introduction to OSS licensing, see [http://choosealicense.com/](http://ch
 
 The table below summarizes the dominant license of each project's components.
 
-Exceptions
-----------
+## Exceptions
 
 Since each project consists of many components, some may be licensed differently. You can always find the license of each project in a `LICENSE.txt` or similar file of the relevant repository on [GitHub](/develop/github). That said, in general, the table below is accurate with very few exceptions. When there *is* an exception, it is often licensed more permissively than the rest of the project—for example, the core of [Bio-Formats](/formats/bio-formats) is licensed under [BSD-2](/licensing/bsd) ([1](https://github.com/openmicroscopy/bioformats/blob/develop/components/formats-bsd/LICENSE.txt)), and the [ImageJ](/about) and [SCIFIO](/software/scifio) tutorials are licensed under [CC0](/licensing/public-domain) ([1](https://github.com/imagej/tutorials/blob/master/README.md), [2](https://github.com/scifio/scifio-tutorials/blob/master/README.md)), waiving all copyright interest as allowed by law.
 
-Project summary
----------------
+## Project summary
 
 <table><tbody><tr class="odd"><td style="background-color: white"><p><strong>Basics</strong></p></td><td></td><td></td><td></td><td><p><strong>Required*</strong></p></td><td></td><td></td><td><p><strong>Permitted*</strong></p></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr class="even"><td><p> <strong>Logo</strong></p></td><td style="background-color: white"><p> <strong>Project</strong></p></td><td style="background-color: white"><p> <strong>License</strong></p></td><td style="background-color: white"><p> <strong>Type</strong></p></td><td style="vertical-align: middle"><p><a href="|alt=Disclose source"><img src="/media/Licensing-disclose-source.png" width="10px"/></a></p></td><td><p><a href="|alt=License and copyright notice"><img src="/media/Licensing-license-and-copyright-notice.png" width="22px"/></a></p></td><td><p><a href="|alt=State changes"><img src="/media/Licensing-state-changes.png" width="10px"/></a></p></td><td><p><a href="|alt=Commercial use"><img src="/media/Licensing-commercial-use.png" width="10px"/></a></p></td><td><p><a href="|alt=Distribution"><img src="/media/Licensing-distribution.png" width="10px"/></a></p></td><td><p><a href="|alt=Modification"><img src="/media/Licensing-modification.png" width="10px"/></a></p></td><td><p><a href="|alt=Patent grant"><img src="/media/Licensing-patent-grant.png" width="10px"/></a></p></td><td><p><a href="|alt=Private use"><img src="/media/Licensing-private-use.png" width="10px"/></a></p></td><td><p><a href="|alt=Hold liable"><img src="/media/Licensing-hold-liable.png" width="10px"/></a></p></td><td><p><a href="|alt=Sublicensing"><img src="/media/Licensing-sublicensing.png" width="10px"/></a></p></td></tr><tr class="odd"><td><p><a href="/software/imagej1">ImageJ 1.x</a></p></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr class="even"><td><p><img src="/media/Imagej1-icon.png" width="48"/></p></td><td><p><strong><a href="/software/imagej1">ImageJ1</a></strong></p></td><td><p><a href="/ij/disclaimer.html">Disclaimer</a></p></td><td><p> <a href="/licensing/public-domain">Public</a><br />
 <a href="/licensing/public-domain">Domain</a><sup>†</sup></p></td><td><p> &#10060;
@@ -77,13 +75,11 @@ Project summary
 <span>\*</span> See [choosealicense.com](http://choosealicense.com/) for details.  
 <sup>†</sup> See note below for details.
 
-A note about ImageJ1
---------------------
+## A note about ImageJ1
 
 The [ImageJ 1.x](/software/imagej1) project is developed at the National Institutes of Health, a United States government organization. Hence, pursuant to [U.S. copyright law Title 17, Section 105](http://www.copyright.gov/title17/92chap1.html#105), no copyright applies. However, that waiver of copyright applies only to U.S. law, and does not apply to other countries. Furthermore, the ImageJ1 project includes substantial effort and code from individuals who are not U.S. government employees, making the legal status of ImageJ1 as a whole decidedly unclear. For further reading, see the {% include wikipedia title='Copyright status of work by the U.S. government' text='Wikipedia article "Copyright status of work by the U.S. government"'%}.
 
-Developers: How to use this page
---------------------------------
+## Developers: How to use this page
 
 If you will be creating and/or consuming open source code, you should familiarize yourself with the options for [managing copyright information](http://softwarefreedom.org/resources/2012/ManagingCopyrightInformation.html). There are numerous tools for assisting in license management; in ImageJ projects, for example, the [license-maven-plugin](https://www.mojohaus.org/license-maven-plugin/) is used to maintain file-scope copyright notices.
 

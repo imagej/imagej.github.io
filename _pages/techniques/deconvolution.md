@@ -4,8 +4,7 @@ title: Deconvolution tips
 categories: tutorials
 ---
 
-A page for deconvolution tips and how-tos
------------------------------------------
+## A page for deconvolution tips and how-tos
 
 Compiled by E. Crowell and D. J. White
 

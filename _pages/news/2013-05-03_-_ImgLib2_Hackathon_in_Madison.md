@@ -16,22 +16,19 @@ From Saturday, April 27, 2013 through Friday, May 3, 2013, LOCI in Madison hoste
 
 And here is a rough summary of what we worked on:
 
-Stephan Preibisch
------------------
+## Stephan Preibisch
 
 -   Together with Johannes we removed imglib1 from the imglib git repository, it now lives in [legacy-imglib1](https://github.com/fiji/legacy-imglib1). It could not go into SPIM\_Registration directly due to circular dependencies with the 3d-viewer.
 -   I implemented wrappers from imglib1 &lt;-&gt; imglib2 that allow efficient, non-copying wrapping of array and cell images between both libraries. To achieve that imglib1 now depends on imglib2. This allows a gradual modification of source code which should ultimately result in the removal of imglib1. Additionally, new implementations in imglib1-based projects can now be implemented in imglib2.
 -   We have been working on a new Type hierarchy that reflects the opposed read and write capabilities for integer/floating point based Types. The repository [lives on GitHub](https://github.com/StephanPreibisch/funwithtypes). Until now it does not work though as it seems very hard to express it using Java generics. I hope that is not true ...
 
-Curtis Rueden
--------------
+## Curtis Rueden
 
 I developed a new component to manage extra metadata about N-dimensional images. In particular, it provides a class hierarchy for attaching per-dimension metadata as extensions of the Axis interface. The AnnotatedSpace interface provides a EuclideanSpace extension that manages the Axis list.
 
 Work was done on a branch called `img-metadata`, culminating in [d3f8e64](https://github.com/imglib/imglib/commit/d3f8e640fec2b91bba761930b46d13170486b9f5). The branch then sat for several months before being [merged to master](https://github.com/imglib/imglib/commit/e4e26aa05e0f42ff1a90e8c6d67235431471de44) on August 12, 2013.
 
-Johannes Schindelin
--------------------
+## Johannes Schindelin
 
 There were a couple of things I worked on (apart from the inevitable Fiji side tracks, in this case mostly the SezPoz class loader issue preventing the uploading part of the uploader to work):
 
@@ -43,8 +40,7 @@ There were a couple of things I worked on (apart from the inevitable Fiji side t
 -   As a consequence of the findings regarding performance, I came up with a simple proof-of-concept that things could be made fast by using Javassist, a library for bytecode manipulation. We use this library extensively in ImageJ2 and Fiji already for just-in-time patching of, say, ImageJ1. It was a natural choice to turn to Javassist for trying to optimize ImgLib, too. Mind you, the example I made was very simple: it constructed a class working on ArrayImgs of FloatType directly, without even inspecting any code to know what to do, but instead hard-coding the "+" op. But it showed the way to how we could do things in the future: inspect what the, say, Expression is supposed to do and rewrite it in optimized bytecode. The speed improvement was—as I expected—impressive.
 -   A lot of discussion went into the question: "where should that optimization take place?". The major problem is—as so often—that you cannot completely rely on good design to get good performance. You have to have a place where the good design can be overridden by something potentially performant. So something has to give. But what? The way out, as far as I am concerned, is to leverage the scijava-common infrastructure and add an OpService. This will be a lot of work, of course, but it was invaluable to have the discussions and hands-on experiments together with the other guys. When you have such a concentration of programming talent in one room, good things happen!
 
-Barry DeZonia
--------------
+## Barry DeZonia
 
 The discussions I participated in included:
 
@@ -69,8 +65,7 @@ Now that the hackathon is complete there are additional related tasks to follow 
 -   Leveraging the new histogram classes throughout Imglib2
 -   Updating IJ2 (and perhaps OPS' functions) to use new Expressions approach in OPS if it stands up to scrutiny
 
-Mark Hiner
-----------
+## Mark Hiner
 
 Over the hackathon and this past week I've been working on extending Tobias's CellImg structures with a SCIFIO backing. The goal here is to get ImageJ2 using SCIFIO for its image IO operations, with the Cell's facilitating caching for huge datasets as needed. This will replace the need for specifying a virtual stack, as the SCIFIO cells will automatically determine optimal tile sizes and load the tiles when requested.
 
@@ -95,8 +90,7 @@ This has required work on all three projects:
 
 These changes don't immediately allow for opening large single planes in IJ2—just large numbers of planes—as each whole plane is always loaded in IJ2. However, I think cells will lay the foundation for supporting large single planes in future IJ2 betas.
 
-Tobias Pietzsch
----------------
+## Tobias Pietzsch
 
 See the [thread on imagej-devel](/ij/pipermail/imagej-devel/2013-May/001488.html).
 

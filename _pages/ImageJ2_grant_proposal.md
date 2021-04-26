@@ -5,8 +5,7 @@ title: ImageJ2 grant proposal
 
 The following is the original text of the [ImageJDev](/software/imagej2) grant proposal circa mid-2009. {% include warning-box message='Please note that [ImageJ2](/software/imagej2)"s project directions evolved substantially as it developed, so the text below is dated, but in many ways, this document continues to represent the project"s conceptual core.' %}
 
-Summary
--------
+## Summary
 
 **Purpose: Refine ImageJ's core design to accommodate a broader range of needs in the scientific community.**
 
@@ -32,8 +31,7 @@ ImageJ has a strong, established user base, with thousands of plugins and macros
 
 Together, these improvements will enhance the functionality and interoperability of ImageJ, solidifying and expanding the efforts of the community of researchers who rely on it for important research across all areas of biomedicine.
 
-Approach
---------
+## Approach
 
 ### Aim I – Improve the ImageJ core architecture
 
@@ -161,8 +159,7 @@ To facilitate widespread adoption of this resource, we will implement an "extens
 
 **Integrated help system.** Lastly, another built-in system we will add to ImageJ is an online help feature for documenting program features and extensions. Each extension will be able to provide rich text explaining its use, and all will be searchable from within the main ImageJ interface. As we develop the extensions framework itself (Aim 1b), we will look for ways to provide a more granular help mechanism, such that individual input and output parameters can be documented as well.
 
-Timeline and Milestones
------------------------
+## Timeline and Milestones
 
 *Year 1, Quarter 1:*  
 (Aim 3) Establish ImageJ source code repository.  
@@ -205,8 +202,7 @@ Timeline and Milestones
 (Aim 2) Investigate use of new extensions mechanism within OMERO and FARSIGHT analysis workflow frameworks.  
 (Aim 3) Create a graphical extension manager for downloading, installing, configuring and removing extensions.
 
-Measurable Outcomes
--------------------
+## Measurable Outcomes
 
 At the end of the of the two year development period we expect the following outcomes and deliverables:
 
@@ -214,8 +210,7 @@ At the end of the of the two year development period we expect the following out
 2.  An ImageJ development site that uses professional practices for code development and engineering.
 3.  A CellProfiler and VisBio application that is fully interfaced with ImageJ and in regular use.
 
-Additional Deliverables
------------------------
+## Additional Deliverables
 
 Examples of new applications facilitated by this grant's technical aims:
 
@@ -224,8 +219,7 @@ Examples of new applications facilitated by this grant's technical aims:
 3.  Real-time remote browsing of images, such as an OMERO database (aim 1c): Data source abstraction is critical for this type of feature.
 4.  Easy, flexible analysis workflow engine (aim 1b): Extensions with compatible inputs and outputs can be linked together.
 
-References
-----------
+## References
 
 1.  Collins, T.J., *ImageJ for microscopy*. Biotechniques, 2007. **43**(1 Suppl): p. 25-30.
 2.  Pool, M., et al., *NeuriteTracer: a novel ImageJ plugin for automated quantification of neurite outgrowth*. J Neurosci Methods, 2008. **168**(1): p. 134-9.
@@ -249,7 +243,6 @@ References
 20. Abramoff, M., P. Magalhaes, and S. Ram, *Image processing with ImageJ*. Biophotonics International, 2004. **LAURIN Publishing**.
 21. Yan, L., et al., *Applications of combined spectral lifetime microscopy for biology*. Biotechniques, 2006. **41**(3): p. 249, 251, 253 passim.
 
-See also
---------
+## See also
 
 -   [ImageJX_Mar09.pdf](/media/ImageJX_Mar09.pdf), the ImageJX whitepaper from 2008

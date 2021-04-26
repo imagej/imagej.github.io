@@ -7,8 +7,7 @@ section: Learn:Cookbook
 
 
 
-Stack-Projections
------------------
+## Stack-Projections
 
 A z-series is generally difficult to represent as a 2-D image for publication purposes. A montage will allow the 3-D dataset to be visualized in 2-D, but results in each frame being very small. There are several ways to "flatten" the 3D stack.
 
@@ -58,8 +57,7 @@ B. Forster, D. Van De Ville, J. Berent, D. Sage, M. Unser , "[Extended Depth-of-
 
 J. Berent, B. Forster, D. Van De Ville, D. Sage, M. Unser, "[Extended Depth-of-Focus for Color Images in Bright-Field microscopy](http://bigwww.epfl.ch/publications/berent0301.html)" Proceedings from the Autumn Meeting of the Swiss Society of Pharmacology and Toxicology, October 27-28, 2003, Basel, Switzerland.
 
-Depth Coding
-------------
+## Depth Coding
 
 One method of preserving some z-information in a 2D image is to 'depth-encode' the stack. A monochrome 3D image can be colored so that the color represents the z-depth. Any subsequent projection will retain this z-encoding. An 8-bit stack can be depth encoded with the menu command "*Image/Hyperstacks/Temporal-Color Code*". From there you will be able to choose a LUT as well as the start and end slices from the stack.
 
@@ -77,8 +75,7 @@ Maximum Intensity Projections of each:
 
 ![](/media/Depth code max.png "depth_code_max.png")
 
-3D Project
-----------
+## 3D Project
 
 3D project (*"Image/Stacks/3D Project"*) creates a 3D rendering from a stack and rotates the resulting object through a range of angles. When using this plugin, you will be prompted for a variety of initial specifications. Based on these values, the program will generate a stack depicting a 360 degree rotation of the 3D projection. There are three projection methods available: nearest point, brightest point, and mean value.
 
@@ -104,8 +101,7 @@ Try these initial settings:
 2.  Slice Spacing: This determines your aspect ratio of the stack. Biorad stacks are internally calibrated and this value should be correct unless you set the wrong objective in the Biorad software during acquisition.
 3.  Interpolate: Used when slice spacing &gt; 0. Check this option although it will slow down the renderer. For a large data set, it may be worthwhile having this "off" initially while you're selecting the settings.
 
-Volume Viewer
--------------
+## Volume Viewer
 
 The Volume Viewer (in the plugins menu) provides 3D rendering of a stack as well as slices of the XY, YZ, and XZ planes. Volume Viewer also offers more detailed interpolation and viewing methods than some of the other 3D rendering techniques.
 
@@ -125,8 +121,7 @@ Interpolation methods clockwise from top left: nearest neighbor, trilinear, tric
 
 The z-Aspect may be used to either stretch or compress data along the Z-axis while the X and Y axes dimensions remain unchanged. The sampling value can be used to control how many samples are utilized to blend the rendering's values. Typically, higher sampling values will result in better quality results, though the tradeoff is a slightly slower processing time.
 
-3D Viewer
----------
+## 3D Viewer
 
 This plugin is found in the plugins folder. The 3D Viewer uses a stack of images to visualize it in 3D space as a volume, a surface, or orthoslices. When the plugin is run, you will have the option to choose a name for the new image as well as the display method: volume, orthoslice, surface, surface plot 2D, or multiorthoslices. Color, threshold, sampling factor, channels, and starting time point may also be selected. The starting time point is used when inserting the rendering into a movie: the rendering will be present starting at the time point specified. At this time point, modification of the image is possible within the viewer. Many of these variables may be updated in the viewer once the rendering is generated.
 
@@ -146,13 +141,11 @@ The "Edit" menu supplies some more options to change the color and transparency 
 
 *"Edit/Transformation/Set Transform"* can give more control over the placement of the rendering by specifying rotation origin and rotation axis. You can also use the 3x4 matrix in "Set Transform" to specify the x, y, and z axes of the transformed coordinate system in the first three columns and the vector from the old origin to the new origin in the fourth column.
 
-Other Volume Rendering Methods
-------------------------------
+## Other Volume Rendering Methods
 
 3D reconstruction methods where the object will appear semitransparent include *360° 3D-project* and *Rocking 3D-project*. *360° 3D-project* produces a stack with a 360° rotation of the z-transform. The results will look similar to those generated with the *Grouped Z Projector* plugin. If you want the stack to just rock back and forth, use the *Rocking 3D-project* macro.
 
-Surface Render
---------------
+## Surface Render
 
 VolumeJ is a 3D reconstruction method where the object surface will appear opaque, giving a more "solid" look to the object.
 
@@ -174,8 +167,7 @@ NB: VolumeJ's interactive rendering option is currently not working. Other modes
 8.  Click on the *"Render"* button to start rendering.
 9.  Click on *"Stop renderer"* if you've made a mistake.
 
-Stack Reslice
--------------
+## Stack Reslice
 
 This generates a "side-view" of a stack along a user defined line. Select part of a stack to be axially sectioned using the line ROI tool from the toolbar. Select the menu item "*Image/Stacks/Reslice*" after drawing a straight line or rectangle onto an open stack.
 
@@ -187,8 +179,7 @@ From this point, you can generate a new stack by reconstructing the slices along
 
 The *Dynamic Reslice* plugin is used the same way as "*Image/Stacks/Reslice*". This plugin will dynamically update the slice generated as the ROI is changed on the original image.
 
-Orthogonal Views
-----------------
+## Orthogonal Views
 
 A straightforward method to visualize 3D renderings is through orthogonal views, accessed via "*Image/Stacks/Orthogonal Views*". This method may be used with a stack to display the XZ and YZ planes at a given point in the 3D image. When Orthogonal Views is opened, windows containing the two planes will dock alongside the original stack, with the intersection of the yellow lines on the stack indicating the point in the stack that is being analyzed. The views in the XZ and YZ planes will update automatically, either as the stack is set to a different slice or the lines are manually adjusted on any of the three windows.
 
@@ -202,8 +193,7 @@ This plugin is an alternative to the orthogonal views option. After making a poi
 
 When running the plugin, it is possible to adjust the aspect ratio of the three axes. The stack is initially assumed to contain cubic voxels, or, a 1:1:1 ratio. These numbers may be modified to change dimensions of the XZ and YZ plane images. The gap between the Z planes may also be updated from its initial value of 1 pixel.
 
-Stereo Pairs and Anaglyphs
---------------------------
+## Stereo Pairs and Anaglyphs
 
 To create an anaglyph of two images, you can use the Two Shot Anaglyph plugin. This plugin may be used with two RGB Color images of the same dimensions to make a stereo image.
 

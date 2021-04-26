@@ -20,8 +20,7 @@ Getting help with ImageJ
 {% include recommendedcontact%}
 
 
-Ways to get help
-----------------
+## Ways to get help
 
 There are several popular communication channels: {% include communication%}
 

@@ -8,8 +8,7 @@ This page has a few war stories about having to fight with developing software w
 
 **Note:** there are places for closed-source. Research, however, is only impeded by closed-source.
 
-QuickTime for Java
-------------------
+## QuickTime for Java
 
 QuickTime for Java is a small component on top of the QuickTime SDK (software development kit). In theory, it should make it easy to create movies in QuickTime format. In practice, it is a hassle:
 
@@ -21,8 +20,7 @@ All in all, QuickTime is just a nuisance, and were it not for Apple shipping it 
 
 If QuickTime for Java was [open source](Open_source), we could do something about the problems, at least.
 
-TransformJ
-----------
+## TransformJ
 
 For a long time, the [TransformJ](/plugins/transformj) plugin suite was closed-source. As it is used for science, we asked the author whether we could look at the source. Scientific process must be transparent so that other scientists can understand and question it. The skepticism in science arises not so much of distrust, but more of the knowledge that we are all human, and humans err.
 
@@ -30,8 +28,7 @@ Happily, the author of TransformJ—Erik Meijering—agreed to let us redistribu
 
 Therefore, TransformJ is not so much an example why closed-source is wrong, but why [open source](Open_source) is right!
 
-Java Media Framework
---------------------
+## Java Media Framework
 
 Sun was never really open, except when it had to.
 
@@ -41,8 +38,7 @@ It will take a few years, probably, until the Java Media Framework is licensed i
 
 Due to these limitations, it must have been obvious to everybody from the beginning, that the API was doomed. If you have to depend on the whims of a company that can retract the basis of your software if it pleases them, you will not even start writing that software.
 
-SUSAN
------
+## SUSAN
 
 Did you ever hear of the SUSAN edge detector? If you have, you are one of a few lucky. Why? This is a sad story how to utterly destroy the value of your research, once and for all.
 

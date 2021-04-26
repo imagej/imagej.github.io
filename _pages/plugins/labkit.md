@@ -24,15 +24,13 @@ Labkit is a plugin for:
 
 The automatic image segmentation functionality is comparable to Trainable Weka Segmenation, but it's better suited for large 3d images. And it has a nice Big Data Viewer based editor.
 
-Installation
-------------
+## Installation
 
 Labkit can be installed from the ImageJ update site: http://sites.imagej.net/Labkit/ (For details on how to install an update site click [here](/update-sites/following).)
 
 To start Labkit in ImageJ, first open the image you want to work with, and then select Plugins &gt; Segmentation &gt; Labkit from the main menu.
 
-Quick Start
------------
+## Quick Start
 
 Follow these steps to segment an image:
 
@@ -44,8 +42,7 @@ Follow these steps to segment an image:
 6.  In the side bar of Labkit, under the heading "/techniques/segmentation" you will find an entry "Classifier \#1". And next to it there is a play button (black triangle). Click it, to train the Classifier. After a moment you will see the automatic segmentation of your image.
 7.  From Labkit's main menu select "Segmentation -&gt; Show Segmentation Result in ImageJ", to export your segmentation into ImageJ.
 
-Basic Navigation
-----------------
+## Basic Navigation
 
 Labkit is based on Big Data Viewer. Navigation the image works as in Big Data Viewer, and many short cuts work too. Click [here](/plugins/bdv) for a description of the short cuts.
 
@@ -54,8 +51,7 @@ Labkit is based on Big Data Viewer. Navigation the image works as in Big Data Vi
 -   {% include key content='press\|left-click\|drag' %} to rotate a 3d image
 -   {% include key content='press\|mouse-wheel' %} to scroll through the z-slices of a 3d image
 
-Tips & Tricks
--------------
+## Tips & Tricks
 
 -   If there's a black window, where the image should be? You might need to change the contrast settings: Click on the image, and then press {% include key content='press\|S' %} on the keyboard. A dialog shows up. Use it to adjust the contrast.
 -   There can be more than two labels, just click on the "Add label" button...
@@ -63,8 +59,7 @@ Tips & Tricks
 -   To change the label color, just click on the colored rectangle left of the labels name.
 -   {% include key content='press\|D\|mouse-wheel' %} to change the size of the brush tool.
 
-Drawing Tool Shortcuts
-----------------------
+## Drawing Tool Shortcuts
 
 -   {% include key content='press\|D\|left-click' %} to draw with the pencil tool.
 -   {% include key content='press\|E\|left-click' %} to erase with the pencil tool.
@@ -72,8 +67,7 @@ Drawing Tool Shortcuts
 -   {% include key content='press\|R\|left-click' %} to remove a connected component.
 -   {% include key content='press\|N' %} - switch to next label
 
-Open & Save - Import & Export
------------------------------
+## Open & Save - Import & Export
 
 -   Things you can save, open, import or export:
     -   Labeling - As \*.tif or \*.labeling

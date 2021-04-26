@@ -8,8 +8,7 @@ It is our please to announce the release of the version 2.8.0 of [TrackMate](/pl
 
 This version ships mainly small utilities, improvement and bugfixes. But more importantly, I would like to highlight several contributed [TrackMate modules](/plugins/trackmate/custom-edge-feature-analyzer-algorithms) since the last release.
 
-Contributed modules.
---------------------
+## Contributed modules.
 
 Pardon the informal tone this developer announcement will take but Ah! the joy this part causes me! All of us that wrote documentation for an academic open-source project know this pain and doubt very well: Is spending an excruciating time redacting tutorials for others to use an API worth anything? Is there any good that will come of it? Will this ever reach anyone? I am doing this for naught?
 
@@ -42,8 +41,7 @@ Thorsten Wagner is working on a detector that emulates the Find maxima tool of I
 
 Benoit Lombardo wrote a spot analyzer that compute mean intensities in all the channels of an image, when you have a multi-channel image. You can find it on the [TrackMate extras](https://github.com/tinevez/plugins/trackmate-extras) page.
 
-Improvements.
--------------
+## Improvements.
 
 ### Faster track rendering.
 
@@ -109,8 +107,7 @@ has the right size).
 
 retrieve the same quality value value than before scaling. However, I (JYT) could not derive the exact formula if the image is scaled differently across X, Y and Z.
 
-Bugfixes.
----------
+## Bugfixes.
 
 ### Fix the accuracy problem in sub-pixel localization.
 

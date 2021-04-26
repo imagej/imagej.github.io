@@ -19,15 +19,13 @@ Concrete implementations of geometric ROIs (i.e. ellipsoids, polylines, etc.) ca
     final double radius = 0.5;
     final Sphere sphere = GeomMasks.closedWritableSphere( center, radius );
 
-Naming
-------
+## Naming
 
 All n-dimensional geometric ROIs should be named with the name of their 3D counterpart. For example, an n-dimensional hyper-ellipsoid would just be named 'ellipsoid'. If a ROI implementation is not n-dimensional, its dimensionality should be stated in the name. For example, **Polygon2D** which is a 2D polygon.
 
 Additionally, ROIs prefixed with "Writable" are mutable. ROIs without this prefix are assumed to be immutable.
 
-BoundaryType
-------------
+## BoundaryType
 
 The boundary behavior of a ROI is given by its **BoundaryType** enum which has three values.
 
@@ -35,8 +33,7 @@ The boundary behavior of a ROI is given by its **BoundaryType** enum which has t
 -   **OPEN** - all points on the boundary are considered outside
 -   **UNSPECIFIED** - some points on the boundary may be inside while others are outside
 
-KnownConstant
--------------
+## KnownConstant
 
 The **KnownConstant** enum is used for determining if a ROI returns `false` for all locations, or `true` for all locations. This is useful for determining if the result of an operation between ROIs results in "empty" space or "all" space.
 
@@ -71,8 +68,7 @@ The resulting composite ROI has the resulting "tree":
 
 Note that the same ROI can be used in multiple operations within the same composite.
 
-BoundaryType of Composites
---------------------------
+## BoundaryType of Composites
 
 The boundary behavior of a ROI may change as a result of the operation. The below outlines the composite BoundaryType logic, used when composite ROIs are formed.
 
@@ -101,8 +97,7 @@ The boundary behavior of a ROI may change as a result of the operation. The belo
 | closed               | unspecified          |
 | unspecified          | unspecified          |
 
-Bounds of Composites
---------------------
+## Bounds of Composites
 
 The composite logic tries very hard to preserve the bounds of ROIs whenever possible. Additionally, the bounds will update when the composite's leaves are updated.
 

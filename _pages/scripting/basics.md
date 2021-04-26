@@ -175,8 +175,7 @@ Calling a script from another script
 There are different ways to call a script from another script.  
 Generally, the called script is executed in the same thread than the calling script, which means that the calling script will wait that the called script terminates before going on with the rest of the execution.
 
-Using ImageJ1 commands
-----------------------
+## Using ImageJ1 commands
 
 ImageJ offers the possibility to call a plugin, macro or script within another one.  
 If the plugin is already part of the Menu, the simple command `run(PluginName, string Arguments)` (or `IJ.run` for other scripting languages) as returned by the macro-recorder will work.
@@ -212,8 +211,7 @@ To call a script written in another scripting languages, one should use the `run
 This 1st option is however limited to ImageJ1 code style, meaning that one cannot use script parameters, or call any service in subScript.  
 Luckily ImageJ2 also have is own way to call a script within a script.
 
-Using ImageJ2 command
----------------------
+## Using ImageJ2 command
 
 One can use the ScriptService from scijava to run a script within a script.  
 Here the example of a mainScript calling a subScript both in Jython.

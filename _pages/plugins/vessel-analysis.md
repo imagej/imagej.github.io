@@ -13,15 +13,13 @@ Nivetha Govindaraju, {%- include person id='mfarna' -%}
 {% endcapture %}
 {% include info-box name='Vessel Analysis' software='Fiji' author=author maintainer=maintainer filename=' [Vessel Analysis.zip](/File:Vessel_Analysis.zip)' released='June 14<sup>th</sup>, 2016' latest-version='1.1' status='stable' category='[Plugins](Category_Plugins), [Analysis](Category_Analysis)' %}
 
-**Description:**
-----------------
+## **Description:**
 
 Vessel Analysis is a plugin to automatically calculate vascular density metrics: - vascular density = vessel area/total area \* 100% - vascular length density = skeletonized vessel area/total area \* 100%)
 
 as well as making diameter measurements for multiple vessels in RGB images of vascular networks. It can also be used on any images of branching structures.
 
-**Installation:**
------------------
+## **Installation:**
 
 Vessel Analysis can be added to Fiji (version 1.47g or higher required).
 
@@ -31,8 +29,7 @@ Before using the plugin, make sure your version of Fiji comes pre-downloaded wit
 
 Also make sure you install [Mexican Hat Filter](/ij/plugins/mexican-hat/index.html) plugin
 
-**Usage:**
-----------
+## **Usage:**
 
 Detailed Instructions [HERE](/File:Vessel_Analysis_User_Manual.pdf)
 
@@ -52,13 +49,11 @@ You will now be prompted to perform either vascular density or diameter measurem
 
 ![](/media/Vessel Analysis RGB.png "fig:Vessel_Analysis_RGB.png") ![](/media/Vessel Analysis Binary.png "fig:Vessel_Analysis_Binary.png") ![](/media/Vessel Analysis DiameterM.png "fig:Vessel_Analysis_DiameterM.png")
 
-**Recommended Citation:**
--------------------------
+## **Recommended Citation:**
 
 Elfarnawany, Mai H., "Signal Processing Methods for Quantitative Power Doppler Microvascular Angiography" (2015). Electronic Thesis and Dissertation Repository. 3106.
 
-**Other Studies Used and Cited Vessel Analysis:**
--------------------------------------------------
+## **Other Studies Used and Cited Vessel Analysis:**
 
 Teplyi V, Grebchenko K, Evaluation of the scars' vascularization using computer processing of the digital images., Skin Res Technol. 2019 Mar;25(2):194-199.
 

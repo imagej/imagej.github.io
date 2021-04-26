@@ -14,8 +14,7 @@ categories: Plugins
 {% endcapture %}
 {% include info-box software='ImageJ' name='Shape Index Map' maintainer=maintainer author='Johannes Schindelin' source=source released='18/08/2010' latest-version='18/08/2010' status='' category='[:Category:Plugins](Category_Plugins)' website='' %}
 
-Explanation
------------
+## Explanation
 
 The [shape index](http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=6820324) describes the surface topology of the image interpreted as a [height field](/plugins/3d-surface-plot):
 
@@ -25,8 +24,7 @@ The [shape index](http://journals.cambridge.org/action/displayAbstract?fromPage=
 
 The shape index is calculated from the principal curvatures of the Hessian, which is very susceptible to noise. Therefore the plugin asks you to specify a radius for Gaussian blurring as a preprocessing step.
 
-Example
--------
+## Example
 
 ![](/media/Shape Index-orig.jpg "Shape_Index-orig.jpg")
 

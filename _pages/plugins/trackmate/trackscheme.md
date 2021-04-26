@@ -8,8 +8,7 @@ TrackScheme displays a kind of "track map", where a track is laid on pane, arran
 
 <figure><img src="/media/TrackScheme Start.png" title="TrackScheme_Start.png" width="700" alt="TrackScheme_Start.png" /><figcaption aria-hidden="true">TrackScheme_Start.png</figcaption></figure>
 
-TrackScheme in a nutshell
--------------------------
+## TrackScheme in a nutshell
 
 You can do quite some things using TrackScheme, notably track analysis. This is not the focus of this tutorial, we will simply be focusing on the track editing features. However, here is a brief description of what the toolbar buttons do.
 
@@ -33,8 +32,7 @@ We will be mainly using the **Redo layout** and button.
 
 Press the **Redo layout** button when you are done. There should be four tracks remaining. Notice that their color changed as you deleted some of them. Their default color-map goes from blue to red and is re-adjusted every time the track number changes.
 
-Editing tracks: creating links
-------------------------------
+## Editing tracks: creating links
 
 Now we want to connect the lonesome spots to the track they belong to. This is all about creating links, and there are two ways to do that.
 
@@ -79,8 +77,7 @@ Using {% include key content='Shift' %}+{% include key content='click' %}, we ca
 
 Bring the right-click menu of TrackScheme, and select **Link X spots**. Links are created for cells that are consecutive in time, regardless of the frame interval between two consecutive cells. If creating these links generate a novel track, you should see that the track colors have changed in the displayer. No links are created between two cells if they are already linked, or if they belong to the same frame.
 
-Editing tracks: deleting links
-------------------------------
+## Editing tracks: deleting links
 
 In TrackScheme, links are selectable, therefore deletable. Select the target link by clicking on it; it gets highlighted in the displayer as well. Press the {% include key content='Delete' %} key to remove it.
 

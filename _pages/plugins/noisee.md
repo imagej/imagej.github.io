@@ -36,8 +36,7 @@ NoiSee consists of two independent macros, one for each type of analysis:
 
 -   The **Fluorescein Method** for an acquisition of a fluorescent solution and a dark field (i.e. "*laser off*") image, both single frame (no Z-stack, no time-lapse).
 
-Bead Method
------------
+## Bead Method
 
 Type "*NoiSee*" in the quick search bar, select "*Bead Analysis*" and click "*Run*". Otherwise, you can also locate the NoiSee macros in the Plugins &gt; NoiSee menu.
 
@@ -60,8 +59,7 @@ First, the parameters dialog will appear with the following input fields / optio
 -   Press "*OK*" and wait for NoiSee to finish its calculations.
 -   A summary of all NoiSee results is automatically saved as a txt-file.
 
-Fluorescein Method
-------------------
+## Fluorescein Method
 
 Start NoiSee as above but select the "*Fluorescein Analysis*" method.
 
@@ -79,8 +77,7 @@ Example
 
 We provide a small set of [sample data](https://sites.imagej.net/NoiSee/samples/) to demonstrate the usage of the macros and to give you an idea how the input data is supposed to look like.
 
-Bead Method Example Results
----------------------------
+## Bead Method Example Results
 
 -   [Fluorescent Beads Sample Image](https://sites.imagej.net/NoiSee/samples/beads.ome.tif) (1.3 Mb)
 
@@ -88,8 +85,7 @@ Running the beads macro on the above sample data will give the following results
 
 <File:Noisee-Beads-Original-Data.png%7CBeads> Input Data <File:Noisee-Beads-SNR.png%7CSNR> <File:Noisee-Beads-Kymographs.png%7CKymographs> <File:Noisee-Beads-Plots.png%7CSNR> Plots
 
-Fluorescein Method Example Results
-----------------------------------
+## Fluorescein Method Example Results
 
 -   [Fluorescein Sample Image](https://sites.imagej.net/NoiSee/samples/fluorescein.ome.tif) (300 Kb)
 -   [Dark Field Sample Image](https://sites.imagej.net/NoiSee/samples/darkfield.ome.tif) (55 Kb)

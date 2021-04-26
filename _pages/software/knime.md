@@ -18,13 +18,11 @@ The [**KN**IME **I**mage **P**rocessing](http://tech.knime.org/community/image-p
 
 As part of the KNIP extension, there is an [ImageJ extension for KNIME](http://tech.knime.org/community/imagej) consisting of two basic parts: the support for [ImageJ1](/software/imagej1) macro execution and the integration of [ImageJ2](/software/imagej2) plugins as KNIME nodes. Both approaches are available as KNIME plugin (currently beta status).
 
-See also
---------
+## See also
 
 -   The [ImageJ Ops](/libs/imagej-ops) framework for image-processing algorithms, which is developed as a collaboration between the [ImageJ](/about) and KNIME teams.
 
-Publications
-------------
+## Publications
 
 -   {% include publication content='KNIME-Bioimage' %}
 -   {% include publication content='KNIP' %}

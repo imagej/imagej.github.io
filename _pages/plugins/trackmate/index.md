@@ -6,15 +6,13 @@ logo: /media/plugins/trackmate-Logo85x50-color-300p.png
 artifact: sc.fiji:TrackMate\_
 ---
 
-Citation
---------
+## Citation
 
 Please note that TrackMate is available through Fiji, and is based on a publication. If you use it successfully for your research **please be so kind to cite our work**:
 
 {% include publication content='TrackMate' %}
 
-Presentation
-------------
+## Presentation
 
 *TrackMate is your buddy for your everyday tracking .*
 
@@ -91,8 +89,7 @@ Do you want to make your new algorithms usable by the reviewers of your submitte
 
 TrackMate was developed to serve as a tool for Life-Science image analysis community, so that new tracking tools can be developed more easily and quickly, and so that end-users can use them to perform their own research. We will support you if need help to reuse it.
 
-Documentation and tutorials
----------------------------
+## Documentation and tutorials
 
 The [TrackMate paper](http://www.sciencedirect.com/science/article/pii/S1046202316303346) contains a polished, pdf version of the documentation below. But we host it here:
 
@@ -141,13 +138,11 @@ The following tutorials show how to integrate a module of each kind in TrackMate
 -   [How to write your own detection algorithm for TrackMate](/plugins/trackmate/custom-detection-algorithms)
 -   [How to write your own particle-linking algorithm for TrackMate](/plugins/trackmate/custom-particle-linking-algorithms)
 
-Known problems
---------------
+## Known problems
 
 TrackMate LoG detector will crash if you have the {% include list-of-update-sites content='Mosaic suite update site' %} activated. Apparently they ship something that interferes with the FFT code used by the LoG detector. The bug report can be read [on BugZilla](https://fiji.sc/bugzilla/show_bug.cgi?id=806).
 
-Extensions
-----------
+## Extensions
 
 Please tell us if you have one that you want to advertise here!
 
@@ -191,13 +186,11 @@ Principle:
 
 -   [Find maxima detector](/plugins/trackmate/find-maxima-detector) from Thorsten Wagner.
 
-Who uses TrackMate
-------------------
+## Who uses TrackMate
 
 It turns out that TrackMate has a decent user base, as exemplified by a crude search on [Google Scholar](https://scholar.google.fr/scholar?q=trackmate+fiji). These citations accumulated before the TrackMate paper was out.
 
-TrackMate components
---------------------
+## TrackMate components
 
 TrackMate actually depends on many other Fiji plugins or libraries. The [Fiji Build System](/develop) system and the [Fiji Updater](/plugins/updater) ensures that these dependencies will not bother you. We list them here, with their author when they are not obviously linked:
 
@@ -212,8 +205,7 @@ TrackMate actually depends on many other Fiji plugins or libraries. The [Fiji Bu
 -   The TrackMate file format is plain XML, and is generated or loaded using the [JDom](http://www.jdom.org/) library.
 -   For the icons, as almost every ImageJ plugin with a GUI, we used the [silk icon set](http://www.famfamfam.com/lab/icons/silk/), by Mark James. But we are also very lucky to have icons and logos designed specifically for TrackMate by [IlluScienta](http://www.illuscientia.com/).
 
-Acknowledgements
-----------------
+## Acknowledgements
 
 We are extremely thankful for the support of [Khuloud Jaqaman](http://www.utsouthwestern.edu/labs/jaqaman/) while we were implementing in Java a stripped down version of her work on robust LAP tracker, following her seminal paper published in the Danuser group[1].
 

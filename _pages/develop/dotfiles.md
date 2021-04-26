@@ -6,8 +6,7 @@ section: Development:Tools
 
 There are several [dotfiles](https://dotfiles.github.io/) repositories filled with command line configuration goodness for the different [layers](/develop/architecture) of the [SciJava](SciJava) component collection.
 
-Repositories
-------------
+## Repositories
 
 You can find the dotfiles in the following repositories:
 
@@ -21,8 +20,7 @@ You can find the dotfiles in the following repositories:
 {% include github org='fiji' repo='dotfiles' label='fiji/dotfiles' %}</p></td><td style="text-align: center; vertical-align: bottom"><p> <a href="SLIM Curve"><img src="/media/Slim-curve-icon.png" width="48px"/></a><br />
 {% include github org='slim-curve' repo='dotfiles' label='slim-curve/dotfiles' %}</p></td></tr></tbody></table>
 
-What's included?
-----------------
+## What's included?
 
 There are several tools for which configuration and customization is provided:
 
@@ -35,8 +33,7 @@ Where possible, configuration is driven by plugin managers:
 -   [zgen](https://github.com/tarjoilija/zgen) and [Oh-My-Zsh](http://ohmyz.sh/) for zsh
 -   [Vundle](https://github.com/VundleVim/Vundle.vim) for vim
 
-How to get started?
--------------------
+## How to get started?
 
 Bootstrap:
 

@@ -7,15 +7,13 @@ section: Development
 
 [ImageJ](/about), and the [SciJava](SciJava) component collection in general, is developed according to certain biases, which we describe here. This philosophy has evolved over a very long development history, reflecting many lessons learned over a course of decades.
 
-Open source
------------
+## Open source
 
 The SciJava ecosystem is strongly committed to [open source](Open_source) software development. But this software is not an [open source](Open_source) software *product*—it is an [open source](Open_source) software *project* following an [open source](Open_source) development *process*.
 
 ImageJ is funded by taxpayer money, so the project strives to be as transparent as possible. There are public [source code repositories](/develop/source), public [communication](Communication) channels, public [project management](/develop/project-management) resources, and of course, this [community editable website](Help_Contents). As you can see, we love [doing it in public](http://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/)!
 
-Independent learning
---------------------
+## Independent learning
 
 > Tell me and I forget. Teach me and I remember. Involve me and I learn. —{% include wikipedia title='Xun Kuang' text='Xunzi'%}
 
@@ -25,27 +23,23 @@ As such, responses to questions on [ImageJ public channels](Communication) will 
 
 We are always looking for more ways to improve the software to meet this goal of encouraging independent learning. Write to the [ImageJ forum](/help) with your ideas!
 
-Extensibility
--------------
+## Extensibility
 
 [Extensibility](/develop/architecture#extensibility) is [ImageJ](/about)'s greatest strength. ImageJ is not just a software application—it is an extensible *platform* for the development of image [visualization](Category_Visualization), [segmentation](/techniques/segmentation), [registration](Category_Registration), and [analysis](Category_Analysis) routines.
 
 Isaac Newton attributed his success to {% include wikipedia title='Standing on the shoulders of giants' text='standing on the shoulders of giants'%}. The [SciJava component collection](/develop/architecture)'s powerful [plugin](/plugins) mechanism and [open source](Open_source) software process codify that metaphor into the software itself. Not only are there many different types of plugins, but it is also possible to extend the system with your own new types of plugins. See the [Extensibility](/develop/architecture#extensibility) page for details.
 
-Interoperability
-----------------
+## Interoperability
 
 One of the central goals of the [SciJava component collection](/develop/architecture) is to extend Java's mantra of "write once, run anywhere" in new directions: [ImageJ Ops](/libs/imagej-ops) for image processing algorithms, and [SCIFIO](/software/scifio) for scientific image I/O.
 
 [ImageJ2](/software/imagej2) commands work not only in the [ImageJ](/about) user interface, but also from many [other applications](Category_Related_Software) in the [SciJava ecosystem](SciJava), including [CellProfiler](/software/cellprofiler), [OMERO](/software/omero), [KNIME](/software/knime) and [Alida](/software/alida).
 
-Compatibility
--------------
+## Compatibility
 
 Backward compatibility is one of ImageJ's most important goals. It must remain possible to use existing [plugins](/plugins) and [macros](/scripting/macro) with new versions of ImageJ. See the [Compatibility](/libs/imagej-legacy) page for details.
 
-Release early, release often
-----------------------------
+## Release early, release often
 
 {% include box title="**What's the alternative?**" width='50%' float='right' text='Some projects opt to release their entire software stack with a single monolithic version number. This has one extremely nice ramification: it clearly communicates which versions of which software components are intended to be compatible with one another.
 
@@ -64,13 +58,11 @@ For example, the [OME](/software/omero) project (which includes [OMERO](/softwar
 
 To ensure releases can happen quickly, each SciJava component is independently released and versioned, using [reproducible builds](/develop/architecture#reproducible-builds) with a "release ready" `master` branch. This allows individual SciJava components to be released with the [push of a button](/develop/travis), in a *timespan less than five minutes*. This puts bug-fixes into the hands of users as quickly as possible.
 
-Convention over configuration
------------------------------
+## Convention over configuration
 
 With increased [modularity](/develop/architecture#modularity) often comes increased complexity. One key way of addressing this issue is to provide sensible defaults (e.g., the [big green Xerox button](http://athinkingperson.com/2010/06/02/where-the-big-green-copier-button-came-from/)) as a way of dealing with complex software programs. We embrace the philosophy of {% include wikipedia title='Convention over configuration' text='convention over configuration'%} utilized by many large software projects in recent years. For this reason, SciJava projects use the [Maven](/develop/maven) build tool for [project management](/develop/project-management).
 
-Why Java?
----------
+## Why Java?
 
 While it was once true that Java is always slower than the equivalent in C++, this is no longer the case. [There have been](http://paulbuchheit.blogspot.com/2007/06/java-is-faster-than-c.html) quite [a few benchmarks](http://vanillajava.blogspot.com/2011/08/java-can-be-significantly-faster-than-c.html) comparing Java vs C++ performance, [this one](http://keithlea.com/javabench/) probably being the grandfather of all.
 

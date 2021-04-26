@@ -7,8 +7,7 @@ The default stitching pipeline of BigStitcher will calculate a **translational a
 
 {% include info-box content='The ICP algorithm assumes that the images are already roughly aligned. You should therefore use it as a **last step** after stitching your dataset.' %}
 
-Simple refinement
------------------
+## Simple refinement
 
 The ICP refinement can be found in the main (right-click) menu of the Stiching mode under {% include bc path='Registration Refinement (optional)|Refine with ICP'%}:
 
@@ -32,8 +31,7 @@ Finally, you can start the refinement by clicking:
 
 {% include info-box content='For **chromatic aberration correction**, it is necessary to detect the same interest points in all channels, so only use that if your sample has autofluorescent structures visible in all channels or you added fiducial beads that fluoresce in all channels' %}
 
-Expert refinement
------------------
+## Expert refinement
 
 Click **Expert...** in the **Refine with ICP** menu to bring up advanced options.
 

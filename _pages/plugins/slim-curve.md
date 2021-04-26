@@ -17,8 +17,7 @@ categories: Plugins
 {% include info-box software='ImageJ' name='SLIM Curve plugin' logo='<img src="/media/Slim-curve-icon.png" width="64"/>' author=' [CRUK/MRC at University of Oxford](http://www.rob.ox.ac.uk/)  
 [UW-Madison LOCI](http://loci.wisc.edu/)' maintainer=maintainer filename='slim\_plugin-2.0.0-SNAPSHOT.jar' source=source latest-version='2.0.0-SNAPSHOT' status='discontinued in favor of [FLIMJ](/plugins/flimj)' website='https://slim-curve.github.io/' category='[:Category:Analysis](Category_Analysis)' %}
 
-Introduction
-------------
+## Introduction
 
 <figure><img src="/media/SLIM-screenshot.png" title="SLIM-screenshot.png" width="357" alt="SLIM-screenshot.png" /><figcaption aria-hidden="true">SLIM-screenshot.png</figcaption></figure>
 
@@ -31,15 +30,13 @@ There are two algorithms used for curve fitting within SLIM Curve:
 
 The SLIM Curve library code is written in C89 compatible C and is thread-safe for fitting multiple pixels concurrently. Several files are provided as wrappers to call the library from Java code: *EcfWrapper.c* and *.h* provide a subset of function calls used by the SLIM Curve plugin for ImageJ, these may be invoked directly from Java using JNA. In addition there is a Java CurveFitter project that provides a wrapper to the SLIM Curve code. This invokes the C code using JNI, with loci\_curvefitter\_*SLIMCurveFitter.c* and *.h*.
 
-Installation
-------------
+## Installation
 
 The SLIM Curve plugin is available from the "SLIM Curve" [update site](/update-sites).
 
 Once you have installed the SLIM Curve plugin it becomes available on the menu under {% include bc path='Analyze | Lifetime | SLIM Curve'%}.
 
-Usage
------
+## Usage
 
 When you run the plugin you will first be prompted to load a lifetime data file. (This should have a .sdt or .ics suffix.) Once the file loads a grayscale version of the lifetime image pops up, produced by summing the photon counts for all time bins for each pixel:
 
@@ -363,8 +360,7 @@ The result of the SLIM Curve plugin compares reasonably with standard lifetime a
 | 207 | 202 | 2464              | 2487            | -0.92         |
 | 219 | 49  | 2470              | 2493            | -0.922        |
 
-Getting help
-------------
+## Getting help
 
 If you have questions, please ask on the [Image.sc Forum](https://forum.image.sc/) with the [`slim-curve` tag](https://forum.image.sc/tags/slim-curve).
 

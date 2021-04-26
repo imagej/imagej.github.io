@@ -38,8 +38,7 @@ The library implements several functionalities that were missing in ImageJ, and 
 
 -   **Binary / label images utilities** for removing or keeping largest connected component, perform size opening, fill holes, kill borders...
 
-Morphological filters
----------------------
+## Morphological filters
 
 Morphological filters are very common filters that can be combined together to provide a large variety of solutions. They are local filters, in the sense that they consider the neighborhood of each pixel/voxel.
 
@@ -152,8 +151,7 @@ The parameters are:
 -   **Line Length**: the approximated length of the structuring element.
 -   **Direction Number**: the number of oriented structuring elements to consider. To be increased if the length of line is large.
 
-Connected components operators
-------------------------------
+## Connected components operators
 
 The "classical" morphological filters presented in the previous section transform an input image by using the values of pixels or voxels located in a close neighborhood, defined by the structuring element. Such filters can be seen as "local", as the result in a given position does not depend on image values located at a sufficient distance.
 
@@ -234,8 +232,7 @@ So far, the following attribute filtering plugins are available within MorphoLib
 
 -   **Gray Scale Attribute Filtering 3D**: opens a dialog to perform between attribute opening, closing, and black or white top-hat on a 3D grayscale image. The size criterion is the number of voxels.
 
-Watershed segmentation
-----------------------
+## Watershed segmentation
 
 {% include thumbnail src='/media/Classic-Watershed-lines-blur-blobs.png' title='Overlay of watershed lines on blurred blobs.'%} The watershed algorithm assimilates the grey level image to a digital elevation model, and aims at detecting the different catchment basins. In the grey-level image, the catchment basins correspond to dark regions surrounded by bright structures (the "crests"). It is a very popular technique specially used to segment touching objects. The MorphoLibJ suite contains several implementations of the algorithm and plugins that make use of it:
 
@@ -245,8 +242,7 @@ Watershed segmentation
 -   [Morphological Segmentation](/plugins/morphological-segmentation), a plugin with a graphical user interface to segment 2D/3D images based on morphological operations and the watershed algorithm.
 -   [Distance Transform Watershed](/plugins/distance-transform-watershed), two plugins (2D and 3D) that work on binary images and allow to separate touching objects by combining the distance transform and watershed methods.
 
-Measurements
-------------
+## Measurements
 
 [MorphoLibJ](/plugins/morpholibj) contains several tools for quantifying the size, the shape, or the spatial organization, from **binary or label** 2D and 3D images. The aim is to facilitate the management of label images, contrary to the built-in "Analyze Particles..." function that operates directly on a grayscale image.
 
@@ -432,8 +428,7 @@ The region adjacency graph plugin gives access to the neighborhood relationship 
 
 The plugin (under {% include bc path='Plugins | MorphoLibJ | Analyze | Region Adjacency Graph'%}) works for both 2D and 3D images, and requires a label image as input. A typical input is the result of a watershed segmentation (see [Watershed Segmentation](/plugins/morpholibj#watershed-segmentation)), eventually followed by [manual edition of the labels](/plugins/morpholibj#label-edition-plugin). The output of the plugin is a results table with as many rows as the number of pairs of adjacent regions, containing the labels of the two adjacent regions.
 
-Binary and label image utilities
---------------------------------
+## Binary and label image utilities
 
 The MorphoLibJ library provides several utility functions for the processing and the management of binary and label images. All methods of this section are available as plugins under {% include bc path='Plugins | MorphoLibJ | Binary Images'%} or {% include bc path='Plugins | MorphoLibJ | Label Images'%}.
 
@@ -518,8 +513,7 @@ Algorithms work for both 2D or 3D images. Default connectivity 4 (resp. 6) is us
 
 All operations are performed "in place", i.e., the input image gets directly modified. However, the initial status of the label image can be recovered by clicking on "Reset".
 
-Library interoperability
-------------------------
+## Library interoperability
 
 A key design concept of MorphoLibJ was the modularity of the implementation to facilitate its reusability. Three layers with different programming abstraction can be identified:
 
@@ -697,8 +691,7 @@ Making use of MorphoLibJ's label methods and the [ImageJ 3D Viewer](/plugins/3d-
 
 At the end of the script a dialog is shown to smooth the surfaces at will. Each label is added to the 3D scene independently with the nanme "label-X" where X is its label value. {% include thumbnail src='/media/MorphoLibJ-visualize-labels-in-3d-viewer.png' title='From left to right: input label image, script output, smoothed label surfaces and example of individually translated surfaces in the 3D viewer.'%}
 
-Documentation
--------------
+## Documentation
 
 Each [released version of MorphoLibJ](https://github.com/ijpb/MorphoLibJ/releases) comes with a [User Manual in PDF format](https://github.com/ijpb/MorphoLibJ/releases/download/v1.4.0/MorphoLibJ-manual-v1.4.0.pdf).
 
@@ -706,8 +699,7 @@ The main source code directory is on GitHub under [src/main/java/inra/ijpb](http
 
 You can browse the [javadoc](http://ijpb.github.io/MorphoLibJ/javadoc/) for more information about its API.
 
-Installation
-------------
+## Installation
 
 -   In [ImageJ 1.x](/software/imagej1), download the [latest released jar](https://github.com/ijpb/MorphoLibJ/releases) into the *plugins* folder.
 -   In [ImageJ2](/software/imagej2) (including [Fiji](/fiji)), you just need to [ add](/update-sites/following#add-update-sites) the IJPB-plugins site to your list of update sites:
@@ -716,8 +708,7 @@ Installation
     3.  Activate the IJPB-plugins update site and close the dialog. Now you should see an additional jar file for download.
     4.  Click *Apply changes* and restart ImageJ.
 
-Citation
---------
+## Citation
 
 Please note that [MorphoLibJ](/plugins/morpholibj) is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
@@ -725,13 +716,11 @@ Please note that [MorphoLibJ](/plugins/morpholibj) is based on a publication. If
 
 [MorphoLibJ](/plugins/morpholibj)'s code repository has its own [DOI](https://zenodo.org/badge/latestdoi/21349/ijpb/MorphoLibJ).
 
-References
-----------
+## References
 
 <references />
 
-License
--------
+## License
 
 This program is **free software**; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt](http://www.gnu.org/licenses/gpl.txt)).
 

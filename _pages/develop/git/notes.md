@@ -7,8 +7,7 @@ section: Development:Git
 
  Here are some common git operations for which we often find ourselves searching.
 
-Workflow
---------
+## Workflow
 
 ### Checkout a remote branch 'develop' and keep it linked to the origin
 
@@ -68,8 +67,7 @@ Where `2` is the number of commits to undo.
 
     git checkout HEAD@{1} -- file
 
-Branches
---------
+## Branches
 
 ### Branch master to a new local branch "new\_branch"
 
@@ -116,8 +114,7 @@ For more on branching, see [Git topic branches](/develop/git/topic-branches).
 
     git branch -m <new branch name>
 
-Git + SVN
----------
+## Git + SVN
 
 ### Clone an SVN repository to a local Git repository
 
@@ -131,8 +128,7 @@ Git + SVN
 
     git stash git svn rebase git stash pop
 
-Searching
----------
+## Searching
 
 ### Recursively search for HelloWorld.file (and display the most recent commit modifying it)
 
@@ -146,8 +142,7 @@ Searching
 
     git grep 'import HelloWorld' $(git rev-list --all --no-walk)
 
-History
--------
+## History
 
 ### Display a log with colored word diffs
 
@@ -191,8 +186,7 @@ The second:
 
 will display a simple list of the different commits, one per line, with commit message and hash.
 
-Scripts
--------
+## Scripts
 
 There are some Git-related scripts available in the [scijava-scripts](https://github.com/scijava/scijava-scripts) project.
 
@@ -200,8 +194,7 @@ There are some Git-related scripts available in the [scijava-scripts](https://gi
 
     $SCIJAVA/bin/remote-branch-info.sh
 
-Advanced and/or dangerous
--------------------------
+## Advanced and/or dangerous
 
 ### Create a repository with g+w permissions
 
@@ -232,8 +225,7 @@ Or for a bare repository:
     git reset --hard git for-each-ref --format="%(refname)" refs/original/ | \
       xargs -n 1 git update-ref -d git reflog expire --expire=now --all git gc --aggressive --prune=now
 
-Rewriting history
------------------
+## Rewriting history
 
 ### Split a subdirectory into a separate git repository
 
@@ -270,8 +262,7 @@ See these posts on Stack Overflow:
 -   [Combining multiple git repositories](http://stackoverflow.com/questions/277029/combining-multiple-git-repositories)
 -   [git: Retroactively introduce several merges](http://stackoverflow.com/questions/4039682/git-retroactively-introduce-several-merges)
 
-Tutorials
----------
+## Tutorials
 
 ### Creating a shared remote repository
 

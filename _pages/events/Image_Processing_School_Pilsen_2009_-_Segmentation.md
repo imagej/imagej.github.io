@@ -4,13 +4,11 @@ title: Image Processing School Pilsen 2009 - Segmentation
 categories: Tutorials
 ---
 
-Introduction
-------------
+## Introduction
 
 This tutorial is designed to give you a first impression of the segmentation tools available in Fiji. It covers basic thresholding and morphology operations (erode, dilate, open, close), [Level Sets](/plugins/level-sets), the [Simple Neurite Tracer](/plugins/snt) and the [Segmentation Editor](/plugins/segmentation-editor).
 
-Thresholding and Morphology
----------------------------
+## Thresholding and Morphology
 
 Thresholding is a very simple segmentation method. You just specify a gray value and all pixels in the image are classified according to their value being larger or smaller than the threshold.
 
@@ -45,8 +43,7 @@ If you want to read more about morphology, I these pages might be useful: http:/
 
 As you have seen, thresholding is a fairly simple method. Let's move on to something more sophisticated.
 
-Level Set Plugin
-----------------
+## Level Set Plugin
 
 The Fiji plugin provides two PDE based methods, the more basic fast marching and the advanced active contour algorithm.
 
@@ -101,15 +98,13 @@ Now take the same image and add some noise (Process - Noise - Add noise)
 
 If you want to know more about the plugin, you can look at the [documentation](/plugins/level-sets).
 
-Simple Neurite Tracer
----------------------
+## Simple Neurite Tracer
 
 This is a very nice plugin for semi automatic segmentation of thin elongated structures. It is designed to work with fluorecent images of neurons, but I am sure you can find other applications for it too! Fortunately Mark has already written a very nice documentation about the plugin. So there is little use in me writing everything again. You can find an example data set at: [c061AG-small-section.tif](https://fiji.sc/cgi-bin/gitweb.cgi?p=VIB.git;a=blob;f=test-images/c061AG-small-section.tif); So please have a look at the [documentation](http://homepages.inf.ed.ac.uk/s9808248/imagej/tracer/instructions.html) I especially like the [step-by-step guide](http://homepages.inf.ed.ac.uk/s9808248/imagej/tracer/step-by-step/)
 
 In order to try the plugin yourself you can use the sample data provided or try one of the channels of the Neuron example image, that is linked in the File - Open Samples menu.
 
-Segmentation Editor
--------------------
+## Segmentation Editor
 
 A nice all purpose 3d manual segmentation plugin is the segmentation editor. It even is able to interpolate over sections where you did not provide manual tracks. You can find it under Plugins - Segmentation. Also for this plugin there already exists very good [documentation](http://132.187.25.13/home/?category=Download&page=SegmentationEditor)
 

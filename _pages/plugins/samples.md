@@ -7,8 +7,7 @@ artifact: sc.fiji:Samples\_
 
 This component provides hooks which register the [Fiji sample images](https://samples.fiji.sc/) into the {% include bc path='File | Open Samples'%} submenu.
 
-Image samples available online
-------------------------------
+## Image samples available online
 
 If you are looking for additional sample images, check out these resources:
 

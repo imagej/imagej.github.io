@@ -16,8 +16,7 @@ categories: Tutorials,Plugins
 
 This plugin implements the algorithms described in [1] to deform an image given a set of landmarks.
 
-Tutorial
---------
+## Tutorial
 
 Load the original and choose the landmarks:
 
@@ -39,8 +38,7 @@ And you get the result:
 
 ![](/media/MLS-new2.jpg "MLS-new2.jpg")
 
-References
-----------
+## References
 
 <references />
 

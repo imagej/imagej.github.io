@@ -5,15 +5,13 @@ title: Multi-View Fusion
 
 {% include info-box name='Multi-view fusion plugin' software='ImageJ' author='Stephan Preibisch, Stephan Saalfeld, Johannes Schindelin, Pavel Tomancak' maintainer='Stephan Preibisch' filename='SPIM\_Registration.jar' released='February 2010' latest-version='October 2011' category='[SPIM Registration](Category_Registration)' website=' [Stephan Preibisch"s homepage](http://fly.mpi-cbg.de/~preibisch)' %}
 
-Citation
---------
+## Citation
 
 Please note that the multi-view fusion plugin available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
 -   S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", *Nature Methods*, **7**(6):418-419. [Webpage](http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html) [PDF](/media/Nmeth0610-418.pdf) [Supplement](/media/Nmeth0610-418-S1.pdf)
 
-Overview of the multi-view fusion plugin
-----------------------------------------
+## Overview of the multi-view fusion plugin
 
 The multi-view fusion plugin is able to combine several 3d acquistions of the same specimen taken from different viewpoints (this includes different tiles) into one single output image. This can be done for single timepoints or an entire timeseries. Prerequisite for the fusion is an aligned dataset, an overview of the complete registration and fusion process can be found [here](/plugins/spim-registration). The registration can be achieved using one the following plugins:
 
@@ -27,25 +25,21 @@ The multi-view fusion plugins offers two registration options:
 
 Note, that in order to fuse a multi-channel acquisition, a single-channel registration can be sufficient as the registration of one channel can be applied to other channels of the same timepoint. Both options work in the same way and have very similar options. The additional options of multi-channel registration are explained in the last section.
 
-Creating a cropped output image
--------------------------------
+## Creating a cropped output image
 
 The output images are typically very large, as the plugin by default fuses the complete bounding box around all registered views. Therefore, it is recommended to define a cropping area in the output image that contains only the sample.
 
 If you do not have enough memory to create an uncropped output image, there is an option to first create a down-sampled version of the output image in which you can identify the cropping area. In a second run, you can create the fused image with full resolution only for the cropped area that contains the specimen. Note that when you define the cropping area in a downsampled image, you need to adjust the the values to the original scale. That is, if you downsample 2-fold, you have to multiply all coordinates by 2.
 
-What do I have to consider when I want to fuse a timeseries?
-------------------------------------------------------------
+## What do I have to consider when I want to fuse a timeseries?
 
 If you want to process a timeseries you should first run the fusion only for the reference timepoint in order to determine the correct cropping parameters. In a second run you can fuse the complete timeseries using these cropping parameters.
 
-How do I view fused, saved output image(s)
-------------------------------------------
+## How do I view fused, saved output image(s)
 
 The fused images will be saved in the *output* directory of the dataset as a collection of two-dimensional planes. The created output images can be viewed for example with Plugins-&gt;Image5D-&gt;[Virtual Image 5D Opener](/ij/plugins/image5d.html) or via the Plugins-&gt;LOCI-&gt;[Bio-Formats Importer](http://www.loci.wisc.edu/software/bio-formats) (check the option *Group files with similar names*).
 
-How to use the plugin
----------------------
+## How to use the plugin
 
 {% include thumbnail src='/media/Spim multiview dialog1.jpg' title='Shows the first dialog that queries the location of the multi-view files'%}
 

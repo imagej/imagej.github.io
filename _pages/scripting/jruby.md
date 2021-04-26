@@ -17,8 +17,7 @@ JRuby scripting in ImageJ is a nice alternative to scripting using ImageJ's macr
 
 If you have any questions or suggestions about JRuby scripting in ImageJ, please contact the [ImageJ forum](https://forum.imagej.net). Have fun!
 
-Tutorial
---------
+## Tutorial
 
 Let's start writing some JRuby right away - start up the interpreter by going to {% include bc path='Plugins | Scripting | JRuby Interpreter'%}. The interpreter window will pop up, but it may take a little time for the JRuby runtime to be ready. You should initially see the message:
 
@@ -89,8 +88,7 @@ Then you can, for example, do the following:
 ` C2-test.lsm`  
 ` >>> a[1].show`
 
-Example: Generating a Plasma Cloud
-----------------------------------
+## Example: Generating a Plasma Cloud
 
 In this first example, we'll just create a small script to create a fractal "plasma cloud" image. We'll start of experimenting in the interpreter to make sure we've got the code to create images correctly. To create the RGB image in the first place, we create a ColorProcessor and then an ImagePlus from that:
 
@@ -133,8 +131,7 @@ You would probably proceed at this stage by switching to a text editor and creat
 
 ![Example "Plasma Cloud" image](Plasma-cloud.png "Example "Plasma Cloud" image")
 
-Example: Batch Converting File Formats
---------------------------------------
+## Example: Batch Converting File Formats
 
 This is a short example script showing how to convert a directory of LSM files into BioRad .PIC format using JRuby and the util.BatchOpener methods that I mentioned above. This just hard-codes the paths in the filesystem, so you would need to edit it if you want to do something similar. Nonetheless, hopefully this is instructive: filtering filenames, and so on, is typically much more convenient using JRuby than the ImageJ macro language:
 
@@ -205,8 +202,7 @@ The "run" method may also be particularly useful for calling existing ImageJ plu
 
 A note for the interested programmer: About 15% of the macro functions have be done so far, and if anyone wanted to help out with doing the rest, that would be excellent! The source code {% include github repo='fiji' path='plugins/JRuby/imagej.rb' label='can be found here' %}.
 
-Example: Generating Red/Cyan Anaglyphs
---------------------------------------
+## Example: Generating Red/Cyan Anaglyphs
 
 This example script can be found in the Plugins/Examples/ folder of Fiji. It will take an image stack and generate from it an image that should appear in 3D when viewed through red and cyan glasses. All that this does is to do two maximum intensity projections from two slightly different angles and merges them together. It's a nice example because all the work is done by existing ImageJ commands. If you look at the script, you'll see that the first step is to run the "3D Project..." plugin with some slightly convoluted options:
 
@@ -229,20 +225,17 @@ Some example output:
 
 ![Example anaglyph image](/media/Anaglyph.png "Example anaglyph image")
 
-Script Parameters
------------------
+## Script Parameters
 
 When using [Script Parameters](/scripting/parameters), e.g., in the [Script Editor](/scripting/script-editor), you need to use a `$` before `@ variables`, due to a limitation in the scoping, as in this example from [Script Templates](/scripting/templates):
 
 {% include github-embed org='scijava' repo='scripting-jruby' path='src/main/resources/script\_templates/Intro/Greeting.rb' label='Greeting.rb' %}
 
-Library
--------
+## Library
 
 There is a library called {% include github repo='fiji' path='plugins/JRuby/imagej.rb' label='imagej.rb' %} for convenience. It contains a number of useful functions related to ImageJ. It is loaded by default when creating a new JRuby script in the [Script Editor](/scripting/script-editor).
 
-What next?
-----------
+## What next?
 
 You may want to first have a quick look at the [Scripting Help](/scripting) page for generic instructions in using the interpreter and script interfaces, and the [Scripting comparisons](/scripting/comparisons) page for an example written in several of the different scripting languages available. The JRuby example shows how to implement a Java interface in JRuby.
 

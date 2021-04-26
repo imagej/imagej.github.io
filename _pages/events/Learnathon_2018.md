@@ -7,13 +7,11 @@ categories: news
 The second DAIS Learnathon took place from June 3 until June 9 2018.  
 [This page](learnathon-2017) is the Learnathon Wiki page of last year's event!
 
-Schedule
---------
+## Schedule
 
 See [this page](https://indico.mpi-cbg.de/event/50/other-view?view=standard)!
 
-Setting up your system
-----------------------
+## Setting up your system
 
 Check if you have this set up:
 
@@ -23,8 +21,7 @@ Check if you have this set up:
 -   Maven
 -   Gitter
 
-Monday
-------
+## Monday
 
 ### Intro session...
 
@@ -59,8 +56,7 @@ Git repos to clone:
 
 ([Slides](https://github.com/imglib/imglib2-introductory-workshop/blob/master/Introduction-ImgLib2.pdf) are contained in the repository.)
 
-Tuesday
--------
+## Tuesday
 
 ### ImageJ2 and SciJava
 
@@ -98,8 +94,7 @@ The ImageJ Legacy Course covered the topics: images, tables, regions of interest
 
 -   See the [Git](/develop/git) page!
 
-Wednesday
----------
+## Wednesday
 
 ### KNIME Usage
 
@@ -125,8 +120,7 @@ Wednesday
 -   [Example Jupyter notebook using imagej-server](https://github.com/CellProfiler/notebooks/blob/master/cellprofiler_with_imagej_server.ipynb)
 -   [Remote HPC cluster parallelization support in SciJava plugins](http://forum.imagej.net/t/remote-hpc-cluster-parallelization-support-in-scijava-plugins/10755)
 
-Thursday
---------
+## Thursday
 
 ### ClearVolume and BDV VisTools
 
@@ -150,8 +144,7 @@ Thursday
 -   Course: [`https://github.com/knime-ip/knip-course`](https://github.com/knime-ip/knip-course) (Take a look at the README.md)
 -   KNIP ImageJ2 repo: [`https://github.com/knime-ip/knip-imagej2`](https://github.com/knime-ip/knip-imagej2)
 
-Friday
-------
+## Friday
 
 ### Imglib2 Algorithm
 

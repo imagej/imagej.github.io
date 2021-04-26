@@ -5,8 +5,7 @@ title: User ›Ilan
 name: Ilan Tal
 ---
 
-Installation
-------------
+## Installation
 
 After installing Fiji, go to "/help" =&gt; "Update..." =&gt; "Manage update site" =&gt; select "PET-CT" =&gt; apply change.
 

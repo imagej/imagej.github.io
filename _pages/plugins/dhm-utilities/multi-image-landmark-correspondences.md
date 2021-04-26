@@ -20,8 +20,7 @@ maintainers: David Cohoe ([1](mailto:dcohoe@pdx.edu))
 
 Multi-Image Landmark Correspondences is a plugin that extends mpicbg's [Landmark Correspondences](/plugins/landmark-correspondences) plugin to multiple images. It takes in any number of images that have point ROIs and aligns them all. It is included with DHM Utilities because we have used it to deal with some of the effects of chromatic aberration.
 
-Usage
------
+## Usage
 
 To run the plugin, run the command "Plugins &gt; Transform &gt; Multi-Image Landmark Correspondences". A dialog will pop up with the following options:
 

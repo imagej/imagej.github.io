@@ -10,13 +10,11 @@ categories: Tutorials,Plugins
 {% endcapture %}
 {% include info-box software='ImageJ' name='Retinex' maintainer='[Francisco Jiménez Hernández](mailto:jimenezf_at_fi.uaemex.mx)' author='Francisco Jiménez Hernández' source=source released='02/08/2010' latest-version='02/08/2010' status='' category='[:Category:Plugins](Category_Plugins)' website='' %}
 
-Retinex
--------
+## Retinex
 
 Retinex filtering is based on Land's theory of image perception, proposed to explain the perceived colour constancy of objects under varying illumination conditions. Several approaches exist to implement the retinex principles, among these the multiscale retinex with colour restoration algorithm (MSRCR) combines colour constancy with local contrast enhancement so images are rendered similarly to how human vision is believed to operate.
 
-Usage
------
+## Usage
 
 **Level**  
 specifies distribution of the Gaussian blurring kernel sizes for Scale division values &gt; 2:
@@ -45,15 +43,13 @@ specifies the number of iterations of the multiscale filter. Values larger than 
 **Dynamic**  
 adjusts the colour of the result. Large values produce less saturated images..
 
-Example
--------
+## Example
 
 Original: ![](/media/Photo1.jpg "fig:Photo1.jpg")
 
 After Retinex (default parameters): ![](/media/Photo1-Retinex.jpg "fig:Photo1-Retinex.jpg")
 
-Homepage
---------
+## Homepage
 
 Please find the original page for the Retinex plugin [here](http://www.mecourse.com/landinig/software/retinex/retinex.html).
 

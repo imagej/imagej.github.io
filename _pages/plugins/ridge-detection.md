@@ -12,8 +12,7 @@ title: Ridge Detection
 {% endcapture %}
 {% include info-box software='Fiji' name='Ridge (Line) Detection Plugin' author=author maintainer='Unmaintained' filename='Ridge\_Detect.jar [\[1](https://github.com/thorstenwagner/ij-ridgedetection/releases/latest) \]' source='Github [\[2](https://github.com/thorstenwagner/ij-ridgedetection) \]' latest-version='v1.4.0 (20 Aug 2017)' status='Unmaintained' %}
 
-Purpose
--------
+## Purpose
 
 This plugin implements **and extends** the ridge / line detection algorithm described in:
 
@@ -21,8 +20,7 @@ This plugin implements **and extends** the ridge / line detection algorithm desc
 
 It works with stacks, is parallelized, has a preview mode and is able to resolve overlapping lines. It depends on the [apache-commons-lang 3](http://commons.apache.org/proper/commons-lang/) library. For ImageJ, please copy it into plugins/jars.
 
-Examples
---------
+## Examples
 
 ![](/media/CNT Ridge Detection Original.png "fig:CNT_Ridge_Detection_Original.png") ![](/media/CNT Ridge Detection Example.png "fig:CNT_Ridge_Detection_Example.png")
 
@@ -33,8 +31,7 @@ Parameter Selection
 
 There are three parameters which **have to ** be specified. These are the mandatory parameters. The optional parameters can be used to estimate the mandatory parameters <img src="/media/Ridge Detection Parameters.png" title="fig:Ridge_Detection_Parameters.png" width="200" alt="Ridge_Detection_Parameters.png" />
 
-Mandatory Parameters
---------------------
+## Mandatory Parameters
 
 **Sigma:** Determines the sigma for the derivatives. It depends on the line width.
 
@@ -44,8 +41,7 @@ Mandatory Parameters
 
 **Darkline:** (true/false) This parameter determines whether dark or bright lines are extracted.
 
-Optional parameters
--------------------
+## Optional parameters
 
 The following optional parameters are used to estimate the mandatory parameters:
 
@@ -61,8 +57,7 @@ $$T_{U}=\left\lfloor 0.17\cdot\frac{2\cdot b_{upper}\cdot\frac{w}{2}}{\sqrt{2\pi
 
 $$T_{L}=\left\lfloor 0.17\cdot\frac{2\cdot b_{low}\cdot\frac{w}{2}}{\sqrt{2\pi}\sigma^{3}}e^{-\frac{\left(\frac{w}{2}\right)^{2}}{2\sigma^{2}}}\right\rfloor $$
 
-Further options (true/false)
-----------------------------
+## Further options (true/false)
 
 <img src="/media/RidgeDetectionWidth.png" title="fig:Output if &quot;Estimated width&quot; is selected" width="140" alt="Output if &quot;Estimated width&quot; is selected" /> **Correct position:** Correct the line position if it has different contrast on each side of it.
 
@@ -78,8 +73,7 @@ Further options (true/false)
 
 **Add to Manager:** All lines and junctions points will be added to the roi manager.
 
-Overlap resolution
-------------------
+## Overlap resolution
 
 You can select a method to attempt automatic overlap resolution. The accuracy of this method will depend on the structure of your data.
 

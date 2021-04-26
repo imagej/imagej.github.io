@@ -8,8 +8,7 @@ categories: News,Fiji,ImageJ2
 
 However, at the moment, it is still possible to run a (slightly outdated now) version of [Fiji](/fiji) with Java 6.
 
-Current recommendations and possibilities
------------------------------------------
+## Current recommendations and possibilities
 
 <table class="w3-table w3-bordered">
 <tr>
@@ -121,8 +120,7 @@ Current recommendations and possibilities
 <li> If you <b>want the latest updates</b>, <a href="/help/faq#how-do-i-launch-imagej-with-a-different-version-of-java" class="mw-redirect" title="/help/faq">update your ImageJ installation to use Java 8</a> and then <a href="/update-sites/following" class="mw-redirect" title="How to follow a 3rd party update site">enable the Java-8 update site</a>.
 <ul><li> <b>Make sure you switch your ImageJ over to Java 8 <i>before</i> enabling the Java-8 update site!</b></li></ul></li></ul>
 
-Upgrading an old installation
------------------------------
+## Upgrading an old installation
 
 If you have downloaded Fiji or ImageJ2 quite some time ago (before 2016), you probably have the Java 6 version ([how do I find out?](/help/troubleshooting#checking-the-java-version)). So when you update, you will not receive the latest plugin releases anymore, as described above.
 
@@ -138,15 +136,13 @@ Alternately, you can simply download a new Fiji as described above.
 <br>
 
 
-About the Java-8 update site
-----------------------------
+## About the Java-8 update site
 
 Right now, the `Java-8` update site includes the latest Java-8 versions of all core ImageJ **and** Fiji components. So unfortunately, at the moment, there is no way to get a "latest and greatest plain ImageJ2" built on Java 8, but without Fiji components.
 
 But later this year, we will migrate the latest Java-8 components back to the core `ImageJ` and `Fiji` update sites, respectively, so that users can choose between "plain" ImageJ2 (lighter weight without "plugin bloat") and Fiji (with "more parts on the table"). We only want to proceed with this migration once there is a mechanism in place to notify users that Java 8 is now required, without breaking existing installations.
 
-About Java 3D
--------------
+## About Java 3D
 
 -   [Java 3D](/libs/java-3d) 1.6 requires Java 7 or newer. Hence, we ship it **on the Java-8 update site only**.
 -   [Java 3D](/libs/java-3d) 1.5 works with Java 6, but:

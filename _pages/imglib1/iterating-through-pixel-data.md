@@ -11,8 +11,7 @@ The architecture of [Imglib](/imglib1) aims at completely separating the image -
 
 This in turn imposes a certain gymnastic when accessing the underlying data is involved. Here, we will make a brief introduction on how to do this with Imglib. We assume you want to use Imglib in a Java plugin, and that you are already familiar with Java itself.
 
-The `Image` objects
--------------------
+## The `Image` objects
 
 Let us suppose we want to access the data in an arbitrary image `img`. The *a priori* data type is unknown, which translates in declaring the variable `img` using generics:
 
@@ -26,8 +25,7 @@ Imglib is built such that it is possible to have different ways to store the sam
 
 The responsibility of retrieving, iterating over and modifying the data is implemented in a separate object hierarchy, all inheriting from the <u>`mpicbg.imglib.cursor.Cursor`</u> interface. As for data storage, multiple strategies are implemented for iterating. The goal of this page is to play with some of them and demonstrate their capabilities.
 
-The `Cursor` model
-------------------
+## The `Cursor` model
 
 ### Creating a plain cursor
 
@@ -103,8 +101,7 @@ In the preceding example, we know that every pixel has been traversed by the cur
 
 So with a plain cursor iterating, you don't know how it is made, but you are sure that it is the best way.
 
-The localizable cursor
-----------------------
+## The localizable cursor
 
 Another limitation of the plain cursor exemplified above, is that it does not report where it is at a given iteration step. If you need this information, you must create another cursor type from the image, called a `LocalizableCursor`. This is made through the call:
 
@@ -179,8 +176,7 @@ It does not allow to specify the position, it just reports its current position,
 
 Even for a dummy plugin, this is far from perfect. Indeed, it reports the position of the *first* maximum, in case there is multiple pixels that have the same maximal value. Since in the general case we do not know in which order the data is traversed, this might be of importance.
 
-Imposing the iteration order
-----------------------------
+## Imposing the iteration order
 
 Now of course, you would want to determine the way in which the data is traversed. There, a third kind of cursor comes at help, which extends the preceding ones. It is the `LocalizableByDimCursor` cursor. Is is created as before:
 
@@ -279,13 +275,10 @@ We can use them to create a very basic Z maximal projection plugin, that will cr
         }
     }
 
-Moving outside of images - Outside Strategies
----------------------------------------------
+## Moving outside of images - Outside Strategies
 
-Comparing performances
-----------------------
+## Comparing performances
 
-Advanced dimension independent iterating
-----------------------------------------
+## Advanced dimension independent iterating
 
   

@@ -14,13 +14,11 @@ categories: Binary
 {% endcapture %}
 {% include info-box name='Minimum/Maximum/Median' software='ImageJ' author='Benjamin Schmid' maintainer='Benjamin Schmid' filename=filename source=source latest-version='3.0.0, December 17<sup>th</sup>, 2015' status='beta' %}
 
-Purpose
--------
+## Purpose
 
 A 3D version of binary filters like erode and dilate.
 
-Description
------------
+## Description
 
 These plugins require an 8-bit image and apply the corresponding filter to the specified iso-value.
 

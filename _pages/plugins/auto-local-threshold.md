@@ -9,8 +9,7 @@ This plugin binarises 8-bit images using various **local** thresholding methods.
 
 For **global** thresholding rather than local, see the [Auto Threshold](/plugins/auto-threshold) plugin.
 
-Installation
-------------
+## Installation
 
 **ImageJ**: requires v1.42m or newer. Download [Auto\_Threshold-X.Y.Z.jar](https://maven.scijava.org/service/local/artifact/maven/redirect?r=releases&g=sc.fiji&a=Auto_Threshold&v=RELEASE&e=jar) and copy it into the ImageJ/plugins folder and either restart ImageJ or run the '{% include bc path='Help | Update Menus'%}' command. After this a new command should appear in '{% include bc path='Image | Adjust | Auto Local Threshold'%}'.
 
@@ -28,8 +27,7 @@ The **radius** sets the radius of the local domain over which the threshold will
 
 It you are processing a stack, one additional option is available: **Stack** can be used to process all the slices.
 
-Available methods
------------------
+## Available methods
 
 ### Try all
 

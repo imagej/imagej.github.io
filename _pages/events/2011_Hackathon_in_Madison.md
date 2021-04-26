@@ -6,8 +6,7 @@ categories: Hackathons
 
 The 2011 Madison [Fiji](/fiji)/ImageJDev [hackathon](/events/Hackathon) took place from Friday, January 28 until Friday, February 11. The topic was "Multidimensional Visualization and Analysis in Fiji."
 
-Participants
-------------
+## Participants
 
 There were 25 people participating at various times, though only a few stayed for the entire duration.
 
@@ -125,8 +124,7 @@ Some locals were not present at the hackathon on weekends.
 
 ![ link=<File:2011-madison-hackathon.jpg> \| frame \| Thanks to all participants!](/media/2011-madison-hackathon-small.jpg " link=File:2011-madison-hackathon.jpg | frame | Thanks to all participants!")
 
-Locations
----------
+## Locations
 
 Our initial meeting place from Friday, January 28 through Sunday, January 30 was the Laboratory for Optical and Computational Instrumentation ([LOCI](/orgs/loci)), located at Room 271 Animal Sciences, 1675 Observatory Dr. [http://maps.google.com/maps?q=1675+Observatory+Drive,+Madison,+WI See map](http://maps.google.com/maps?q=1675+Observatory+Drive,+Madison,+WI_See_map)
 
@@ -136,8 +134,7 @@ Those from out of town stayed at the [Best Western InnTowner](http://www.inntown
 
 You can [see a map of all three locations relative to each other](http://maps.google.com/maps?saddr=2424+University+Avenue,+Madison,+WI&daddr=43.0724142,-89.4243605+to:1675+Observatory+Dr,+Madison,+WI+to:330+N+Orchard+Street,+Madison,+WI&dirflg=w).
 
-Results
--------
+## Results
 
 Here is a summary of the hackathon results, written by Johannes Schindelin, Stephan Saalfeld and Curtis Rueden. Note that there was simply too much activity to fully describe everything everyone worked on, but we have tried to summarize the most major items. Thanks to all who participated!
 

@@ -5,8 +5,7 @@ title: TensorFlow-GPU
 
 <b>The notes on this page are relevant for any tool shipping the `imagej-tensorflow` library (e.g. the update sites `imagej-tensorflow` and `CSBDeep`).</b>
 
-How to install TensorFlow GPU native libraries
-----------------------------------------------
+## How to install TensorFlow GPU native libraries
 
 GPU support is available for Linux and Windows machines with NVIDIA graphics cards. Please be warned that the TensorFlow Java native bindings are considered experimental and while some hardware / OS setups easily gained GPU support with the tools described on this page, on other machines we were not successful.
 
@@ -130,7 +129,6 @@ and also set the environment variable `CUDA_DEVICE_ORDER`:
 
 See the [CUDA Programming Guide](http://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#env-vars) for more information.
 
-HELP
-----
+## HELP
 
 Is something not working? Please post your question [in the forum](https://forum.image.sc)!

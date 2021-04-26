@@ -4,8 +4,7 @@ title: Hippocampal CA3 Interneuron
 categories: Tutorials
 ---
 
-Hippocampal CA3 Interneuron
----------------------------
+## Hippocampal CA3 Interneuron
 
 (from the previous tutorial:
 

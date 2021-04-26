@@ -11,8 +11,7 @@ This version replaces the old `Arrow_.class` tool that was present in Fiji befor
 
 Warning: Since `ImageJ version 1.43n`, a similar tool, made by {%- include person id='rasband' -%}, does a similar thing from the ImageJ core, see {% include github org='imagej' repo='ImageJA' path='ij/gui/Arrow.java' label='here' %}.
 
-Usage
------
+## Usage
 
 ![](/media/Arrow example2.png "Arrow_example2.png")
 
@@ -37,8 +36,7 @@ It is possible to change the arrow shape using the mouse wheel. To change its th
 -   Thin
 -   Circle
 
-Legacy mode
------------
+## Legacy mode
 
 To be compatible with the previous Arrow\_ tool, this plugin has a legacy mode that behaves as previous version. To use it:
 
@@ -46,8 +44,7 @@ To be compatible with the previous Arrow\_ tool, this plugin has a legacy mode t
 -   Launch the Arrow\_ plugin
 -   The Arrow\_ tool does not appear in the toolbar, but an arrow is burned in the image from the line selection.
 
-Further developments
---------------------
+## Further developments
 
 If you need this tool to do something more, do not hesitate to mail the maintainer. He will be pleased to implement it.
 

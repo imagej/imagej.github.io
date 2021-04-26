@@ -12,8 +12,7 @@ Note, that the SIFT-algorithm is protected by U.S. Patent 6,711,293: *Method and
 
 See also [JavaSIFT](http://fly.mpi-cbg.de/~saalfeld/Projects/javasift.html) (the original version of this Fiji plugin).
 
-References
-----------
+## References
 
 <references />
 

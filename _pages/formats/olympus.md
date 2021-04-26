@@ -11,8 +11,7 @@ categories: Plugins,Import-Export
 
 
 
-Installation
-------------
+## Installation
 
 Please see also [installation manual](http://www.olympus-lifescience.com/OlympusImageJPlugin/HowToInstallOlympusViewerPlugin).
 
@@ -33,8 +32,7 @@ Mac
 3.  If you agree to our end user license agreement, extract it.
 4.  Copy "OlympusViewer-Ver2.3.1" folder to the plugins folder of your ImageJ directory. If ImageJ plugin folder already has OlympusViewer folder, delete the folder before copying.
 
-How to use
-----------
+## How to use
 
 File Open
 
@@ -62,8 +60,7 @@ Use Macro function (ver2.3.1-)
 3.  Select image file.
 4.  You can see that Macro command was registered.
 
-Macro sample code
------------------
+## Macro sample code
 
 ### Use GUI commands
 
@@ -142,8 +139,7 @@ You can use programming interface by using *OVMacro* command.
     Ext.getLevelCount(path, groupNum-1, levelNum); // Get total count of levels
     Ext.openFile(path, groupNum-1, levelNum-1); // Open last level of the last group
 
-See Also
---------
+## See Also
 
 This plugin uses jai-imageio.
 

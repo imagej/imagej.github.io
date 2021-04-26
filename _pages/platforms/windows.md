@@ -25,8 +25,7 @@ Troubleshooting
 
 See also the [Troubleshooting](/help/troubleshooting) page.
 
-HiDPI displays
---------------
+## HiDPI displays
 
 If text and other UI elements appear tiny on your {% include wikipedia title='HiDPI' text='HiDPI'%} display, then check the following:
 

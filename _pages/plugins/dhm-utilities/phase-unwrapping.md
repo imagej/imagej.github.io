@@ -19,8 +19,7 @@ maintainers: David Cohoe ([1](mailto:dcohoe@pdx.edu))
 
 Phase Unwrapping is a plugin to perform phase unwrapping on a phase image, with a focus on unwrapping images produced by DHM (possibly created using [DHM Utilities/Reconstruction](/plugins/dhm-utilities/reconstruction)). It currently has support for two different algorithms. The first is a quality-guided unwrapping method, and the second is a double-wavelength unwrapping method.
 
-Quality-Based Unwrapping
-------------------------
+## Quality-Based Unwrapping
 
 The quality-based unwrapping algorithm works on the principle that some pixels should be considered "better" than others when it comes to how well they represent the true phase value of the image. To determine these values, the algorithm uses a "quality" mapping which assigns a quality value to every pixel in the image. Several quality types come built in to the plugin, and it is possible to create your own in your own plugins.
 
@@ -63,8 +62,7 @@ The `Quality` interface includes several default methods that you may want to ov
 
 `Quality` uses our custom [Dynamic Parameters](https://github.com/sudgy/dynamic-parameters) to process inputs, because some of the parameters may change. If you do not require any extra inputs in your quality type, you do not need to worry about using this. However, if you do require extra inputs, you must override `param()` with your dynamic parameter. If you require multiple parameters, you should use a `HoldingParameter` that has all of your parameters.
 
-Double Wavelength Unwrapping
-----------------------------
+## Double Wavelength Unwrapping
 
 The double wavelength unwrapping algorithm is based off of the double wavelength algorithm described in many places in the literature. Given two images of the same thing in different wavelengths, the two images are subtracted, than anything less than zero is increased by one wavelength. This result is called the coarse map. This, in effect, changes the phase image into a phase image of a longer "beat frequency". The idea is that sometimes the shortness of the wavelengths is an issue when it comes to unwrapping, and by producing a phase image of a longer wavelength, those issues can be avoided. The algorithm is also much faster than other unwrapping algorithms.
 

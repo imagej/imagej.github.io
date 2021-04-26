@@ -8,8 +8,7 @@ section: Help:Update Sites
 
 
 
-Introduction
-------------
+## Introduction
 
 This tutorial explains how to upload changes to core [ImageJ](/about) and [Fiji](/fiji) libraries.
 
@@ -23,8 +22,7 @@ The typical workflow is:
 
 {% include warning-box content='There is a known issue where **bio-formats\_plugins.jar** is placed in `/jars/bio-formats` by this maven job. It should be manually moved to `/plugins/`' %}
 
-Responsibility of uploaders
----------------------------
+## Responsibility of uploaders
 
 To facilitate [reproducibility](/develop/architecture#reproducible-builds) and present a unified application to both users and developers, uploaders should strive to keep each core update site synchronized with its corresponding source code.
 
@@ -41,8 +39,7 @@ Source repository for each core update site:
 | ImageJ          | *master* branch of [ImageJ.git](https://github.com/imagej/imagej) |
 | Fiji            | *master* branch of [Fiji.git](https://github.com/fiji/fiji)       |
 
-Getting started
----------------
+## Getting started
 
 First of all, start the [updater](/plugins/updater) with {% include bc path='Help | Update'%} and click on the *Manage update sites* button:
 
@@ -50,8 +47,7 @@ First of all, start the [updater](/plugins/updater) with {% include bc path='Hel
 
 From this dialog, you can edit the desired update site(s) to add your authentication information.
 
-Configuring Fiji update site
-----------------------------
+## Configuring Fiji update site
 
 The Fiji update site uses {% include wikipedia title='WebDAV' text='webDAV'%} authentication. To upload something, you will need to:
 
@@ -68,8 +64,7 @@ Note that your username will always start with an upper case letter. It should l
 
 You can now close the *Manage update sites* window and go on to [ Uploading your resources](#uploading-your-resources).
 
-Configuring the ImageJ update site
-----------------------------------
+## Configuring the ImageJ update site
 
 The ImageJ update site uses {% include wikipedia title='Secure Shell' text='ssh'%} authentication. You will need a login with [the imageJ update site](http://update.imagej.net) that some administrator will have to add to the *ij-update* group.
 
@@ -84,7 +79,6 @@ It should look like this:
 
 You can now close the *Manage update sites* window and go on to [ Uploading your resources](#uploading-your-resources).
 
-Uploading your resources
-------------------------
+## Uploading your resources
 
 See the [ Uploading files to your update site](/update-sites/setup#uploading-files-to-your-update-site) section of the set up and populate tutorial.

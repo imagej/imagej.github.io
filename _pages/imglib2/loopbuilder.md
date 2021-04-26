@@ -41,8 +41,7 @@ LoopBuilder works for for 1D, 2D, 3D, 4D and any other number of dimensions. The
 
 (`Img`, `ArrayImg`, `PlanarImg`, etc. work as well because the implement the `RandomAccessibleInterval` interface.)
 
-Tips
-----
+## Tips
 
 ### Coordinates
 
@@ -86,8 +85,7 @@ Lets look at an example again. Let's calculate the maximum over 8 images. That a
         r.setReal( max );
     } );
 
-Alternatives
-------------
+## Alternatives
 
 LoopBuilder provides nothing, that is otherwise impossible to achieve. It is just a nice way, to write otherwise complex loops. But you could achieve the same results with ImgLib2 `Cursor` or `RandomAccess`. Lets add two images using `Cursor`:
 
@@ -122,8 +120,7 @@ The example above is actually still quite simple. And a `Cursor` is fast for bas
         ra.fwd( 2 );
     }
 
-Multi Threading
----------------
+## Multi Threading
 
 If your images are big, than multithreading might speed up the operation. And it's super easy if you use LoopBuilder. Let's calculate the sum using multiple threads. The only thing you need to do is write `.multiThreaded()` before the call to `forEachPixel(...)`.
 
@@ -182,8 +179,7 @@ Another use case for the `forEachChunk` mappens, happens if your per pixel opera
 
 Disclaimer: Please always measure the execution time if you use multi-threading. Sometimes the simgle threaded code is better optimized by the compiler and runs even faster than the multi-threaded code. Also check that you don't have thread-safety issues, make sure your results are correct. Thread-safety problem are hard to debug!
 
-Performance
------------
+## Performance
 
 Disclaimer: LoopBuilder achieves good perfomance in Java, but it is slow when used in scripting languages like Groovy or Jython. (This is because LoopBuilder relies on Lambda expression, and using them in scripting languages is rather complicated and slow.)
 

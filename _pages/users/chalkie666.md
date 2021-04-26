@@ -14,15 +14,13 @@ Hi there,
 
 I have been nicknamed *Ambassador of Fiji* by the [Mother of Fiji](/users/dscho).
 
-Maintained plugins
-------------------
+## Maintained plugins
 
 -   [Coloc 2](/plugins/coloc-2) (and [Colocalization Analysis](/techniques/colocalization-analysis))
 -   [Series Labeler](/plugins/series-labeler)
 -   [Manual Tracking](/plugins/manual-tracking)
 -   [Time Stamper](/plugins/time-stamper)
 
-Authored plugins
-----------------
+## Authored plugins
 
 One of the authors of [BioImageXD](/software/bioimagexd)!

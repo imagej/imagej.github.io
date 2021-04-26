@@ -48,8 +48,7 @@ the selected channel is processed individually.
 
 {% include thumbnail src='/media/Photo3.jpg' title='Photo2 original image'%} {% include thumbnail src='/media/Photo3-clahe-50-256-3.jpg' title='Photo2 CLAHE processed, (block: 50; bins: 256; max slope: 3)'%}
 
-Tips
-----
+## Tips
 
 How can I process a series/stack of images?  
 Execute the following macro from [ImageJ's macro editor](/ij/developer/macro/macros.html) or [Fiji's scripting editor](/scripting/script-editor):
@@ -88,8 +87,7 @@ Execute the following macro from [ImageJ's macro editor](/ij/developer/macro/mac
       }
     }
 
-References
-----------
+## References
 
 <references />
 

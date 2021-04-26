@@ -13,8 +13,7 @@ title: Ellipse split
 {% endcapture %}
 {% include info-box software='Fiji/ImageJ' name='Ellipse Splitting Plugin' author=author maintainer=maintainer filename='ij-ellipsesplit.jar [\[1](https://github.com/thorstenwagner/ij-ellipsesplit/releases/latest) \]' source='Github [\[2](https://github.com/thorstenwagner/ij-ellipsesplit) \]' latest-version='v0.4.0 (15 May 2016)' status='active' %}
 
-Purpose
--------
+## Purpose
 
 The ellipse splitting plugin splits binary objects which could approximated by an ellipse. The used ellipse fitting algorithm was proposed in
 
@@ -33,8 +32,7 @@ The generall approach of the ellipse fitting plugin is as follows:
 `7. Merge ellipses if possible`  
 `8. Filter ellipses by geometric features`
 
-Examples
---------
+## Examples
 
 Suppose you have the following input image:
 
@@ -52,8 +50,7 @@ Furthermore it outputs several important features:
 
 <img src="/media/Ellipsesplit resultstable.png" width="600"/>
 
-Parameters
-----------
+## Parameters
 
 <figure><img src="/media/EllipseSplit.png" title="GUI of Ellipse Split Plugin" width="350" alt="GUI of Ellipse Split Plugin" /><figcaption aria-hidden="true">GUI of Ellipse Split Plugin</figcaption></figure>
 
@@ -71,14 +68,12 @@ Parameters
 
 **Aspect ratio:** Ratio of Major axis length and minor axis length.
 
-Installation
-------------
+## Installation
 
 Simply turn on the [Biomedgroup update site](https://fiji.sc/How_to_follow_a_3rd_party_update_site), which includes the ellipse splitting plugin.
 
 If you use ImageJ just copy the ij-ellipessplit.jar file in your plugins folder and copy the [GPCJ 2.2.0](http://sourceforge.net/projects/geom-java/files/gpcj/) and the latest [ij-blob](https://fiji.sc/IJ_Blob) jar file into the plugins/jars folder.
 
-How to cite
------------
+## How to cite
 
 Please get the lastest DOI for this plugin here: https://zenodo.org/badge/latestdoi/18649/thorstenwagner/ij-ellipsesplit

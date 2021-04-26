@@ -6,13 +6,11 @@ categories: Plugins,Registration
 
 {% include info-box name='Selective Plane Illumination Microscopy Registration' software='ImageJ' author='Stephan Preibisch, Stephan Saalfeld, Johannes Schindelin, Pavel Tomancak' maintainer='Stephan Preibisch' filename='SPIM\_Registration.jar' released='February 2010' latest-version='September 2011' category='[SPIM Registration](Category_Registration)' website=' [Stephan Preibisch"s homepage](http://fly.mpi-cbg.de/~preibisch)' %}
 
-Important Note
---------------
+## Important Note
 
 <span style="color:#A52A2A"> ***Please Note: This version of the software is outdated. It will be part of Fiji for the time being, but I highly recommend using the new [Multiview Reconstruction Plugin](/plugins/multiview-reconstruction). It is much more powerful, flexible and completely integrated with the [BigDataViewer](/plugins/bdv).*** </span>
 
-Citation
---------
+## Citation
 
 Please note that the SPIM registration plugin available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
@@ -20,8 +18,7 @@ Please note that the SPIM registration plugin available through Fiji, is based o
 
 For technical details about the bead-based registration method and SPIM imaging see [SPIM Registration Method](/plugins/spim-registration/method).
 
-Overview of the ***deprecated*** SPIM bead-based registration plugin
---------------------------------------------------------------------
+## Overview of the ***deprecated*** SPIM bead-based registration plugin
 
 The SPIM Registration plugin reconstructs an image from several input images, called views. For this reconstruction process some parameters defining the input and output data are required. The user has to define the naming convention of the input images, an approximate bead-brightness as well as the strategies for creating the fused output image.
 
@@ -51,8 +48,7 @@ Processing a time lapse acquisition requires two steps. In the first step the re
 
 After all individual timepoints are registered and the cropping area is defined the plugin has to be called again. This time check **Timelapse Registration**, insert the **Reference Timepoint**, uncheck **Register only (no fusion)** and insert the coordinates of the cropping area of the reference timepoint. The created output images can be viewed for example with Plugins-&gt;Image5D-&gt;Virtual Image 5D Opener [1](/ij/plugins/image5d.html).
 
-***deprecated*** SPIM bead-based registration
----------------------------------------------
+## ***deprecated*** SPIM bead-based registration
 
 {% include thumbnail src='/media/SPIM Registration.png' title='Shows the SPIM Registration Dialog.'%}
 
@@ -126,8 +122,7 @@ After all individual timepoints are registered and the cropping area is defined 
 -   **Crop Offset Output Image X/Y/Z**: Defines the cropping offset in the x/y/z-dimension of the output image relative to the uncropped image. A value of 0 means no cropping. **Note:** All the values are relative to the downsampling factor in **Output Image Scaling**.
 -   **Crop Size Output Image X/Y/Z**: Defines the cropped size in the x/y/z-dimension of the output image relative to the uncropped image. A value of 0 means no cropping. **Note:** All the values are relative to the downsampling factor in **Output Image Scaling**.
 
-Plugin Wishlist
----------------
+## Plugin Wishlist
 
 When you find some features that you would like to be added to the plugin, please write them down here
 
@@ -135,8 +130,7 @@ When you find some features that you would like to be added to the plugin, pleas
 -   Automatic Timelapse processing
 -   Preview (e.g. Max Projections of first angle) if register only checked and more than one timepoint
 
-Multi-Channel SPIM Registration
--------------------------------
+## Multi-Channel SPIM Registration
 
 The multi-channel SPIM Registration extends the normal registration by the ability to register multiple channels and to override the resolution (xy, z) stored in the files. Therefore two new options are available
 
@@ -154,8 +148,7 @@ The multi-channel SPIM Registration extends the normal registration by the abili
 
 -   **z resolution (um/px)**: Define the z-resolution in um per pixel, note that only the ratio between xy and z-resolution is used.
 
-Advanced SPIM Registration
---------------------------
+## Advanced SPIM Registration
 
 {% include thumbnail src='/media/Advanced SPIM Registration.png' title='Shows the Advanced SPIM Registration Dialog.'%}  
 For advanced SPIM registration all available parameters can be tuned using two configuration files (configuration.txt and VariablesAssignment.txt, see below). Contact the author for further details [2](http://fly.mpi-cbg.de/preibisch/contact.html).

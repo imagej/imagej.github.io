@@ -19,13 +19,11 @@ This tutorial assumes you are familiar with [Git](/develop/git). If this is not 
 
 In this example, we want to fix some bugs and add some functionality to the VIB-lib library. Let's see step by step how to do it:
 
-GitHub
-------
+## GitHub
 
 In your favorite browser, log into your GitHub account. If you don't have an account yet, go ahead and [create one](https://github.com/join).
 
-Fork
-----
+## Fork
 
 Go to the library's repository (in this case https://github.com/fiji/VIB-lib) and "fork" the repository (click on the upper-right "Fork" button):
 
@@ -33,8 +31,7 @@ Go to the library's repository (in this case https://github.com/fiji/VIB-lib) an
 
 By doing this, you will be duplicating the whole repository into your own GitHub account. This way you can freely work on the library with an identical version of the existing repository's master branch. *See [GitHub: how to fork a repository](https://help.github.com/articles/fork-a-repo) for more details.*
 
-Clone
------
+## Clone
 
 Next, go to your command line, move to your workspace folder and clone the repository:
 
@@ -42,8 +39,7 @@ Next, go to your command line, move to your workspace folder and clone the repos
 
 (change "username" for your GitHub account name)
 
-Configure remotes
------------------
+## Configure remotes
 
 To sync changes you make in a fork with the original repository, you must configure a remote that points to the upstream repository in Git. In our case:
 
@@ -53,15 +49,13 @@ To sync changes you make in a fork with the original repository, you must config
 
 *See [GitHub: how to configure a remote fork](https://help.github.com/articles/configuring-a-remote-for-a-fork/) and [GitHub: how to sync a fork](https://help.github.com/articles/syncing-a-fork/) for more details.*
 
-Create a topic branch
----------------------
+## Create a topic branch
 
 Create a new branch with a descriptive name. Since we want to work on AmiraMesh files, we call it "amira-io":
 
     $ git checkout -b amira-io
 
-Development
------------
+## Development
 
 Now we develop our code to include our changes in the library.
 
@@ -79,8 +73,7 @@ Remember to:
 2.  Push the commits to your GitHub repository; e.g.:
         git push -u origin amira-io
 
-Pull request
-------------
+## Pull request
 
 Finally, once you have tested your new code and are satisfied with the results, you have to propose to add your contributions to the original project. In GitHub, you do so by using **pull requests**:
 
@@ -100,15 +93,13 @@ Finally, when you're ready to submit your pull request, click **Create pull requ
 
 *See [GitHub: how to send a pull request](https://help.github.com/articles/using-pull-requests) for more details.*
 
-Pull request discussion
------------------------
+## Pull request discussion
 
 Once the pull request is created, it is automatically sent to the person in charge of the original repository. After reviewing the basic description, commits, and cumulative diff, the person tasked with applying the changes may have questions or comments. The **discussion view** is designed to encourage and capture this type of discussion:
 
 <img src="/media/GitHub-discussion-view-tutorial.png" width="700"/>
 
-Modifying your commits
-----------------------
+## Modifying your commits
 
 From the discussion, you might realize you need to modify a part of the changes you made on your branch. Some of the changes introduced by your commits can be fixed with new commits (that will appear in the discussion view of the pull request). But some commits may need to be modified so the history of your repository stays reasonably clean. In that case, you need to use the [git rebase command](https://help.github.com/articles/about-git-rebase/):
 
@@ -203,15 +194,13 @@ If we are **not** happy with the state after our rebase, we can reset our local 
 
     git reset --hard $(git rev-parse --abbrev-ref --symbolic-full-name @{u})
 
-Closing pull request
---------------------
+## Closing pull request
 
 Once all the developers involved in the conversation are satisfied with the state of the branch, the person in charge of the repository will merge and close the pull the request:
 
 <img src="/media/GitHub-merge-and-close-pull-request.png" width="780"/>
 
-See also
---------
+## See also
 
 This tutorial has been written using the following references:
 

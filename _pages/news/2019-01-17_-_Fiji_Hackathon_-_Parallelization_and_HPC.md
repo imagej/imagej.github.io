@@ -5,8 +5,7 @@ title: 2019-01-17 - Fiji Hackathon - Parallelization and HPC
 
 From Thursday, January 17, 2019 through Tuesday, January 29, 2019, [VŠB - Technical University of Ostrava](https://www.vsb.cz/en/) hosts \~20 developers at the [IT4Innovations national supercomputing center](https://www.it4i.cz/?lang=en/) in Ostrava, Czech Republic for a [hackathon](/events/Hackathon) to develop [ImageJ2](/software/imagej2) and [Fiji](/fiji) core infrastructure and [plugins](/plugins).
 
-Useful links
-------------
+## Useful links
 
 [Online forum for discussions](https://gitter.im/imagej/hackathon-Ostrava-2019)
 
@@ -14,5 +13,4 @@ Useful links
 
 [Hackathon Google doc](https://docs.google.com/document/d/1FTab99LYk5jcLZQJYOdB8PTu7SiTR9L8yvaucA7uCzs/edit)
 
-Technical discussions
----------------------
+## Technical discussions

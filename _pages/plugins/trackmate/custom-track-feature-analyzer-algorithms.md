@@ -7,8 +7,7 @@ categories: Tutorials
 {% include extendingtrackmatetutorials%}
 
 
-Introduction
-------------
+## Introduction
 
 This article is the second in the series dedicated to extending TrackMate with your own modules. Here we focus on creating **feature analyzers**: small algorithms that calculate one or several numerical values for the TrackMate results. The [previous article](/plugins/trackmate/custom-edge-feature-analyzer-algorithms) focused on writing edge analyzers: algorithms that allocate a numerical value to the link between two spots.
 
@@ -16,8 +15,7 @@ In this article, we will create a **feature analyzer for tracks** that calculate
 
 Actually, we will not learn much beyond what we saw previously. The only little change is that our analyzer will generate 6 numerical values instead of 1. We will use the [SciJava](SciJava) discovery mechanism as before, but just for the sake of it, we will introduce how to **disable** modules.
 
-Track analyzers
----------------
+## Track analyzers
 
 All the track feature analyzers must implement {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/track/TrackAnalyzer.java' label='TrackAnalyzer interface' %}. Like for the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/edges/EdgeAnalyzer.java' label='EdgeAnalyzer' %} interface, it extends both
 
@@ -34,8 +32,7 @@ the does the actual feature calculation for the specified tracks, and
 
 that specified whether the calculation of the features for one track affects only this track or all the tracks. For the discussion on local *vs* non-local feature analyzers, I report you to the [previous article item](/plugins/trackmate/custom-edge-feature-analyzer-algorithms#isLocal.28.29).
 
-Track feature analyzer header
------------------------------
+## Track feature analyzer header
 
 Like all TrackMate modules, you need to annotate your class to make it discoverable by TrackMate. It takes the following shape:
 
@@ -46,8 +43,7 @@ Like all TrackMate modules, you need to annotate your class to make it discovera
 
 and that's good enough.
 
-Declaring features
-------------------
+## Declaring features
 
 Declaring the features your provide is done as before. This time, a single analyzer returns 6 values, so you need to declare them. Here is the related code:
 
@@ -138,8 +134,7 @@ Declaring the features your provide is done as before. This time, a single analy
 
 Let's compute them now.
 
-Accessing tracks in TrackMate
------------------------------
+## Accessing tracks in TrackMate
 
 In the previous article, we went maybe a bit quickly on how to access data in TrackMate. This is not the goal of this series, but here is a quick recap:
 
@@ -155,8 +150,7 @@ and its links (or edges) with
 
 Let's exploit this.
 
-Calculating the position of start and end points
-------------------------------------------------
+## Calculating the position of start and end points
 
 Well, it is just about retrieving a track and identifying its starting and end points. Here is the whole code for the processing method:
 
@@ -198,8 +192,7 @@ Well, it is just about retrieving a track and identifying its starting and end p
 
 The whole code for the analyzer can be found {% include github org='fiji' repo='TrackMate-examples' source='plugin/trackmate/examples/trackanalyzer/TrackStartSpotAnalyzer.java' label='here' %}.
 
-Wrapping up
------------
+## Wrapping up
 
 Et ca marche !
 
@@ -207,8 +200,7 @@ Et ca marche !
 
 In the next article we will build a spot analyzer and complicate things a bit, by introducing the notion of *priority*. But before this, a short word on how to disable a module.
 
-How to disable a module
------------------------
+## How to disable a module
 
 Suppose you have in your code tree a TrackMate module you wish not to use anymore. The trivial way would be to delete its class, but here is another one what allows us to introduce [SciJava](SciJava) plugin annotation parameters.
 

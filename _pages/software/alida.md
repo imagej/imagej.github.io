@@ -26,8 +26,7 @@ Alida is the basis of the image processing toolbox [MiToBo](/plugins/mitobo).
 
 For further details, see the [Alida website](http://www.informatik.uni-halle.de/alida/).
 
-Publication
------------
+## Publication
 
 -   {% include publication content='Alida' %}
 

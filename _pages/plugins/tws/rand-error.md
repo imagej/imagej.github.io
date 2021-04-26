@@ -22,8 +22,7 @@ Here we instead define the closely related [Rand error](/plugins/tws/rand-error)
 
 $$ RE = 1 - RI$$
 
-Implementation in Fiji
-----------------------
+## Implementation in Fiji
 
 The [Rand error](/plugins/tws/rand-error) metric is implemented in the [Trainable Weka Segmentation](/plugins/tws) library. Here is an example of how to use it in a [Beanshell script](/scripting/beanshell):
 
@@ -45,13 +44,11 @@ The [Rand error](/plugins/tws/rand-error) metric is implemented in the [Trainabl
     IJ.log("Rand error between source image " + originalLabels.getTitle() + " and target image "
     + proposedLabels.getTitle() + " = " + randError);
 
-See also
---------
+## See also
 
 -   [Topology preserving warping error](/plugins/tws/topology-preserving-warping-error).
 
-References
-----------
+## References
 
 <references/>
 

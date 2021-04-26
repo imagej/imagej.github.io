@@ -5,8 +5,7 @@ title: OpenMPI Plugin Extensions
 
 {% include info-box name='OpenMPI Plugin Extensions' software='Fiji' author='Daniel Trnka, Michal Krumnikl' maintainer='Michal Krumnikl' released='TBD' latest-version='TBD' category='TBD' source=' [on github](https://github.com/fiji-hpc/scijava-parallel-mpi)' %}
 
-General information
--------------------
+## General information
 
 ### Motivation
 
@@ -16,13 +15,11 @@ OpenMPI, despite being relatively old, still remains the most dominant programmi
 
 This presents a set of Ops adapted to herein presented OpenMPI wrapper, jointly comprising a solution designed to be seamlessly used in any existing ImageJ2 code. Moreover, framework automatically initializes and disposes connections to the OpenMPI environment, making available OpenMPI implementations for the most frequent operations covered by Ops. The package contains example implementations for fundamental image processing functions as well as basic math, logical and statistics operations.
 
-Installation
-------------
+## Installation
 
 TBD
 
-How to use
-----------
+## How to use
 
 In order to demonstrate convenience of this approach, we prepared an example of parallelized convolution. We used Python for readers' convenience, however plugins can be invoked from any other scripting language supported by Fiji.
 

@@ -5,8 +5,7 @@ title: Neuroanatomy ›External Resources
 
 This page lists [Open Source](Open_Source) resources that complement [SNT](/plugins/snt).
 
-Online Tools
-------------
+## Online Tools
 
 |                                |
 |--------------------------------|
@@ -18,8 +17,7 @@ Online Tools
 | Remod                          |
 | L-measure (applet)             |
 
-Desktop Tools
--------------
+## Desktop Tools
 
 |                                          |
 |------------------------------------------|
@@ -31,7 +29,6 @@ Desktop Tools
 | L-measure                                |
 | btmorph                                  |
 
-Tracing Tools
--------------
+## Tracing Tools
 
 Software packages for neuronal tracing not based on ImageJ: [Neuromantic](http://www.reading.ac.uk/neuromantic/), [NeuronStudio](http://research.mssm.edu/cnic/tools-ns.html), [neuTube](http://www.neutracing.com), [Vaa3D](http://www.vaa3d.org/)

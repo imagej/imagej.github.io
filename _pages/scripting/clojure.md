@@ -20,8 +20,7 @@ See also:
 -   [The Clojure API](http://clojure.org/api) (listing of all available functions, with explanations).
 -   [Clojure cheat sheet](http://clojure.org/cheatsheet): a summary of all the essentials.
 
-Using Clojure inside Fiji
--------------------------
+## Using Clojure inside Fiji
 
 Go to {% include bc path='Plugins|Scripting|Clojure Interpreter'%}. The prompt accepts any clojure code. See also Fiji's [Script Editor](/scripting/script-editor).
 
@@ -132,8 +131,7 @@ There are perhaps more convenient setups built into Eclipse, IntelliJ, NetBeans 
 
 Within the jdb prompt, type "help".
 
-Language basics
----------------
+## Language basics
 
 -   A ';' defines the start of a comment, just like '//' does in Java.
 -   A function definition declares parameters within \[\].
@@ -163,8 +161,7 @@ Language basics
                (java.util.logging Logger
                                   Level)))
 
-Calling methods and variables on a java object
-----------------------------------------------
+## Calling methods and variables on a java object
 
 There are two ways, the second syntactic sugar of the first. Below, <b>imp</b> is a pointer to an ImagePlus:
 
@@ -218,8 +215,7 @@ To enhance readability, use <i>import</i> when appropriate. Imports remain visib
 
 Choose whatever matches your mental schemes best.
 
-Calling static fields and methods: namespace syntax
----------------------------------------------------
+## Calling static fields and methods: namespace syntax
 
 To call a <b>static</b> field or method, use namespace syntax:
 
@@ -229,8 +225,7 @@ To call a <b>static</b> field or method, use namespace syntax:
 
 Above, notice how a class name is used instead of a pointer to call static fields and methods. Static fields and methods are just variables and functions that exist within the namespace of the class in which they are declared. Hence Clojure's namespace syntax makes way more sense than java code, that doesn't do such distinction and allows for loads of confusion (java allows invoking static methods and fields using a pointer to an instance of the class in which such static methods and fields are declared).
 
-Defining variables: obtaining the current image
------------------------------------------------
+## Defining variables: obtaining the current image
 
 As a local variable <b>imp</b> declared within a <i>let</i> statement:
 
@@ -269,8 +264,7 @@ Any number of <i>let</i> statements may be nested together:
             ; print first pixel
         (println (str (.getPixel ip 0 0))))))
 
-Creating objects: invoking constructors
----------------------------------------
+## Creating objects: invoking constructors
 
 A constructor is invoked by adding a dot '.' to the name of a class, followed by the arguments. Below, we create an ImageProcessor and then an ImagePlus with it, and finally we print the ImagePlus, which invokes toString() on it (like in java):
 
@@ -284,8 +278,7 @@ An alternative syntax is to use the java-like <i>new</i> keyword, but it's unnec
           imp (new ij.ImagePlus "my image" ip)]
       (println imp))
 
-Defining a closure
-------------------
+## Defining a closure
 
 In the following a function is declared within the scope of the local variable <b>rand</b>, which contains an instance of java.util.Random. All calls to the function <i>rand-double</i> will use the same random number generator instance with seed 69997.
 
@@ -302,8 +295,7 @@ You can think of a function inside a closure as a static function using a static
 
 Above, note the dot '.' after Random, which indicates we are calling the constructor (with a single parameter 69997, the pseudorandom generator seed to be used). Alternatively, one may use the java-like syntax: (new java.util.Random 69997) -- note the absence of a dot now.
 
-Manipulating images
--------------------
+## Manipulating images
 
 ### ImageJ Image internals: ImagePlus, ImageProcessor, ImageStack
 
@@ -477,8 +469,7 @@ To handle any ImagePlus (with single slice or containing an ImageStack, i.e. man
 
 The above works with both single images and stacks.
 
-Manipulate images using ImgLib
-------------------------------
+## Manipulate images using ImgLib
 
 With [Imglib](/imglib1), pixels are stored in native arrays of primitives such as int, float, double, etc. (or other more interesting forms, such as [Shape](http://download.oracle.com/javase/1.5.0/docs/api/java/awt/Shape.html). Such pixels are accessed with intermediate proxy objects that the JIT is able to completely remove out of the way.
 
@@ -609,8 +600,7 @@ There is a better way to compute the mean and variance of a collection of number
 
 (Code adapted from a Common Lisp version by [Patrick Stein](http://nklein.com/2011/02/calculating-the-mean-and-variance-with-one-pass/).)
 
-Looping an array of pixels
---------------------------
+## Looping an array of pixels
 
 For example, to find the min and max values:
 
@@ -674,8 +664,7 @@ It could even be done using a local variable, but it's ugly and undesirable (why
           (println (float (/ (var-get sum) (count pix)))))
         (println "Not an 8-bit image")))
 
-Executing commands from the menus
----------------------------------
+## Executing commands from the menus
 
 Any ImageJ menu command may be run on the active image:
 
@@ -692,8 +681,7 @@ For even more reliable control, run the command directly on a specified image, i
 
 To find out which arguments can any command accept, open the Plugins - Macros - Macro Recorder and run the command manually.
 
-Creating and using Clojure scripts as ImageJ plugins
-----------------------------------------------------
+## Creating and using Clojure scripts as ImageJ plugins
 
 Simply create a text file with the script inside, and place it in the plugins menu or any subfolder. Then call Plugins - Scripting - Refresh Clojure Scripts to make it appear on the menus.
 
@@ -703,8 +691,7 @@ To modify an script which exists already as a menu item, simply edit its file an
 
 <b>Very important:</b> all scripts and commands from the interpreter will run within the same thread, and within the same clojure context.
 
-Using java beans for quick and convenient access to an object's fields
-----------------------------------------------------------------------
+## Using java beans for quick and convenient access to an object's fields
 
 Essentially it's all about using <i>get</i> methods in a trivial way. For example:
 
@@ -722,8 +709,7 @@ Examples
 
 </h1>
 
-Fixing overexposed images: setting a pixel value to a desirable one for all overexposed pixels
-----------------------------------------------------------------------------------------------
+## Fixing overexposed images: setting a pixel value to a desirable one for all overexposed pixels
 
 The problem: [Leginon](http://ami.scripps.edu/software/leginon/) or the Gatan TEM camera acquired an overexposed image, and set all pixels beyond range to zero.
 
@@ -745,8 +731,7 @@ In the example below, the <i>fix</i> function is called with the current image a
        (fix imp (float 32500))
        (.updateAndDraw imp))
 
-Creating a script for ImageJ
-----------------------------
+## Creating a script for ImageJ
 
 Simply write the clojure script in a text file, and follow these conventions:
 
@@ -759,8 +744,7 @@ Once saved and in the menus, you need <b>not</b> call refresh scripts ever again
 
 See [Scripting Help](/scripting) for more details, including how to use the built-in dynamic interpreter.
 
-Example Clojure plugins included in Fiji
-----------------------------------------
+## Example Clojure plugins included in Fiji
 
 Open the plugins/Examples/ folder in Fiji installation directory. You'll find three Clojure examples:
 
@@ -777,8 +761,7 @@ Appendix
 
 </h1>
 
-Defining the output stream
---------------------------
+## Defining the output stream
 
 The default output stream is at variable <i>\*out\*</i>, which you may redefine to any kind of PrintWriter:
 
@@ -791,8 +774,7 @@ The default output stream is at variable <i>\*out\*</i>, which you may redefine 
        ; Now show any printed out text in ImageJ's log window:
        (ij.IJ/log (str all-out)))
 
-Destructuring
--------------
+## Destructuring
 
 Destructuring is a shortcut to capture the contents of a variable into many variables.
 
@@ -834,8 +816,7 @@ Prints:
 `:c 3 [:c 3]`  
 `nil`
 
-Namespaces
-----------
+## Namespaces
 
 -   To list all existing namespaces:
 
@@ -866,8 +847,7 @@ A nicer way to print all public functions and variables from all namespaces, sor
 
 Note above we use <i>destructuring</i>: the \[k v\] take the values of the key and the value of each entry in the ns-publics table. Actually, since we first sort the table, the k and v take the first and second values of each array pair in the sorted list of array pairs returned on applying <i>sort</i> to the <i>ns-publics</i>-generated table.
 
-Forget/Remove all variables from a namespace
---------------------------------------------
+## Forget/Remove all variables from a namespace
 
 To forget all variables from the user namespace, do:
 
@@ -878,8 +858,7 @@ The above maps the function <i>ns-unmap</i> to each variable name declared in th
 
 <i>Thanks to AWizzArd from \#clojure at irc.freenode.net for the tip.</i>
 
-JVM arguments
--------------
+## JVM arguments
 
 -   To get the arguments passed to the JVM, see contents of variable \*command-line-args\*
 
@@ -887,8 +866,7 @@ JVM arguments
 
     (println *command-line-args*)
 
-Reflection
-----------
+## Reflection
 
 -   To list all methods of an object:
 
@@ -912,8 +890,7 @@ Reflection
 
 (Thanks to Craig McDaniel for posting the above function to Clojure's mailing list.)
 
-Lambda functions
-----------------
+## Lambda functions
 
 ### Declaration
 
@@ -946,8 +923,7 @@ There is no need to declare the names, the above is just for illustration. Above
 
 Beware that the <i>map</i> function above applies the given function to each element of a list, and returns a <b>new</b> list with the results.
 
-Built-in documentation
-----------------------
+## Built-in documentation
 
 Use the function <b><i>doc</i></b> to query any other function or variable. For example, the list generator function <i>range</i>:
 
@@ -1029,8 +1005,7 @@ The test results, in this case, in an exception being thrown:
 
 Otherwise, it would just return the <i>:ok</i> keyword.
 
-A fibonacci sequence: lazy and infinite sequences
--------------------------------------------------
+## A fibonacci sequence: lazy and infinite sequences
 
 A beautiful example of using lazy sequences and applying functions to one or more sequences at a time.
 
@@ -1082,8 +1057,7 @@ So now one can safely print the entire fibonnaci sequence, which will print only
 
 The <b>\*print-length\*</b> applies to all sequences to be printed in the REPL, but is specially useful for very large lazy sequences.
 
-Creating shallow and deep sequences from java arrays
-----------------------------------------------------
+## Creating shallow and deep sequences from java arrays
 
 Many clojure functions take sequences, not native java arrays, as arguments. A java native array can be wrapped by a shallow sequence like the following:
 
@@ -1135,8 +1109,7 @@ So now any changes to the original <i>pixels</i> array will not affect the new s
 
 <i>Thanks to Chouser and wwmorgan for examples on \#clojure at irc.freenode.net</i>
 
-Generating java classes in .class files from clojure code
----------------------------------------------------------
+## Generating java classes in .class files from clojure code
 
 Using ahead of time (AOT) compilation with [gen-class](http://clojure.org/compilation), any clojure code can be compiled to a java class. Such class can then be used from java code, or from any scripting language like [jython](/scripting/jython), [jruby](/scripting/jruby), [javascript](/scripting/javascript), and [any other](Category_Scripting).
 
@@ -1248,8 +1221,7 @@ The example clojure code:
         (.findMinAndMax ip)
         (.updateAndDraw imp)))
 
-References, concurrency, transactions and synchronization
----------------------------------------------------------
+## References, concurrency, transactions and synchronization
 
 Clojure supports thread concurrency without explicit locks. Compared to java code, this is a gigantic step forward: locks, and particularly multiple locks, are very hard to get right and very, very hard to debug properly (but see [debugging multithreaded java programs](http://albert.rierol.net/java_tricks.html#How%20to%20debug%20a%20multithreaded%20java%20program)).
 
@@ -1334,8 +1306,7 @@ The assignment is done in a transaction, so no matter how many concurrent thread
                (- (count @ls)
                   (count (set @ls))))) ; Make a hash set (with unique entries) from the list of ids
 
-Using try/catch/finally and throwing Exceptions
------------------------------------------------
+## Using try/catch/finally and throwing Exceptions
 
     (try
       (println "Going to throw ...")
@@ -1364,8 +1335,7 @@ Above, despite the type declaration, one can pass any value to the <i>area</i> f
 `user=> (area (Rectangle. 0 0 10 10))`  
 `100`
 
-Executing a command in a shell and capturing its output
--------------------------------------------------------
+## Executing a command in a shell and capturing its output
 
 First we define the macro <i>exec</i>:
 
@@ -1410,8 +1380,7 @@ A third example, telling the music player XMMS2 to jump to a specific track in i
 
 The above is an extract from a clojure GUI for XMMS2, available at github {% include github org='acardona' repo='xmms2-clj' label='xmms2-gui' %}.
 
-Creating a derivative of a function
------------------------------------
+## Creating a derivative of a function
 
 The derivative of a function:
 
@@ -1454,8 +1423,7 @@ The derivative of x^3 is 3 \* x^2, which for an x of 4 equals 48. Our derivative
 
 The above code translated from lisp code at [funcall blog](http://funcall.blogspot.com/2009/03/not-lisp-again.html). Thanks [Joe Marshall](http://www.blogger.com/profile/03233353484280456977) for sharing this perl.
 
-Pretty printing a primitive array
----------------------------------
+## Pretty printing a primitive array
 
 Suppose we create a primitive array of length 10:
 
@@ -1493,8 +1461,7 @@ That <i>seq</i> creates only a view (and not a copy), you can convince yourself:
     user=> sa
     [0, 0, 0, 7, 0, 0, 0, 0, 0, 0]
 
-Loading an image file into a byte array
----------------------------------------
+## Loading an image file into a byte array
 
     (import [java.io File FileInputStream]
     (defn ^bytes load-file

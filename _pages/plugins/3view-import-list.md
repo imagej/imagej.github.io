@@ -6,8 +6,7 @@ categories: Plugins,TrakEM2
 
 {% include info-box name='3View import list' software='ImageJ' author='Nuno Dias' maintainer='Nuno Dias' source=' [link](https://dl.dropboxusercontent.com/u/5200940/3view_import_list.zip)' released='March 2013' latest-version='March 2013' %}
 
-Import 3View montages into TrakEM2: overview
---------------------------------------------
+## Import 3View montages into TrakEM2: overview
 
 The purpose of this plugin is to create a text file with a list of files from [Gatan's 3View](http://www.gatan.com/products/sem_products/products/3View_landing.php) montage image stacks. This text file can then be used to automatically import all the images into TrakEM2, as they are, stored in the original directories.
 
@@ -15,8 +14,7 @@ In montage mode, [Gatan's DigitalMicrograph](http://www.gatan.com/software/) sof
 
 This plugin will read all Gatan's files (.dm3) inside the folders and create a file list in a text document (.txt), in a format suitable for importing into TrakEM2, directly from their original directories. You can move the parent directory from the acquisition computer to any other suitable location, of course. The plugin will also attempt to read metadata from the files to automatically calculate the montage configuration (how many tiles in x and y) and to provide rough coordinates for the image positioning, according to image size and overlap. This information will leave the images roughly in place in the TrakEM2 workspace and makes the next step - stitching the images - much quicker.
 
-Installation instructions
--------------------------
+## Installation instructions
 
 The [Jython plugin installation rules](https://fiji.sc/Jython_Scripting#using-a-jython-script-as-a-plugin) apply. You must [download](https://dl.dropboxusercontent.com/u/5200940/3view_import_list.zip) and copy 3view\_import\_list.py and MakeImportList4TrakEM2.py together in the same directory. The third file, TrakEM2\_import\_list.py is optional (see point 3 below). If you want to call the script from your own code, only the second file is necessary. As a suggestion only, you can follow these steps:
 
@@ -24,8 +22,7 @@ The [Jython plugin installation rules](https://fiji.sc/Jython_Scripting#using-a-
 2.  To make the plugin appear in the menu, you have the option of selecting {% include bc path='Plugins | Scripting | Refresh Jython Scripts'%}, {% include bc path='Help | Refresh Menus'%} or restarting Fiji. Then the menu entry '3View import list' will appear under {% include bc path='Plugins | Utilities'%} (the first Utilities folder...)
 3.  Extra: if you need to use different settings other than file type .dm3, other directory names or change the name of the final text file, you can copy TrakEM2\_import\_list.py to the same folder and select the plugin with this name from the same menu location.
 
-How to use
-----------
+## How to use
 
 1.  After selecting the plugin from the Fiji menu:
 2.  Select the parent directory where all the 'Montage\_xxx' folders are located;
@@ -34,8 +31,7 @@ How to use
 5.  The text file will be saved in the same directory initially selected by the user.
 6.  To actually use the text file, right-click anywhere in the TrakEM2 workspace (the black area) and select {% include bc path='Import | Import from text file...'%} After selecting the file, you should get a window asking for some options. These should be left at default, making sure 'Column separator' indicates 'tab'. TrakEM2 will then ask for the location of the files to be imported and you should provide the parent folder where all the 'Montage\_xxx' directories are located - the very same one you selected when running this plugin. TrakEM2 will then import every file in the list and create the minimaps for fast loading/zooming. This may take a while.
 
-Small print: what is allowed and the known limitations
-------------------------------------------------------
+## Small print: what is allowed and the known limitations
 
 1.  **Reading stage coordinates from the metadata is currently not possible. This means the user will always be asked for the tile configuration and overlap.**
 2.  You can have other directories at the same level of the montage directories (for example, the TrakEM2 data directory). Also, any sub-directories of those montage directories you may create and their contents will be completely ignored. However, you shouldn't have directories in the parent directory following the same 'Montage\_xxx' pattern that are actually not part of the dataset.
@@ -58,8 +54,7 @@ Small print: what is allowed and the known limitations
     Note 1: selecting the 'main' plugin for a situation like this using .dm3 files, you still must have the folder name match the pattern 'Montage\_xxx'.  
     Note 2: to create a single-position file list of images in another file format (.tif files for example) using the 'alternate' 'TrakEM2 import list' plugin, you don't need to modify the directory name where you keep the files in the options dialog. You can just submit this name in the 'Directory RegExp' field (no Regular Expression special patterns are necessary). However, you must choose its parent directory in the 'Choose directory' dialog, as you would in every case. As an example, if you have your image files in C:\\data\\images\\stack1, you should select the directory C:\\data\\images\\ and submit 'stack1' as the 'Directory RegExp' value in the 'Import parameters' dialog.
 
-Code
-----
+## Code
 
 3view\_import\_list.py
 
@@ -307,21 +302,18 @@ MakeImportList4TrakEM2.py
             IJ.log(str(counter1) + ' entries were written to the file ' + f.name)
             return counter1
 
-Contact
--------
+## Contact
 
 All comments, questions or suggestions are very welcome. Please send an email to nuno.dias at emez.ethz.ch or ngdias at ibmc.up.pt.
 
-Acknowledgements
-----------------
+## Acknowledgements
 
 -   [Curtis Rueden](http://loci.wisc.edu/people/curtis-rueden)
 -   [This page](http://www.ini.uzh.ch/~acardona/fiji-tutorial/) prepared by Albert Cardona
 -   [This other page](https://fiji.sc/Jython_Scripting) prepared by Albert Cardona
 -   Many, many people who ask and reply to questions about Python all over the Internet
 
-See Also
---------
+## See Also
 
 -   [Importing list](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#importing_list) How the text file should look like.
 

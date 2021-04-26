@@ -6,8 +6,7 @@ categories: Scripting
 
 Super sloppy surface reconstruction from planetary surface photographs or {% include wikipedia title='Scanning electron microscope' text='Scanning Electron Micrographs (SEM)'%}.
 
-Motivation
-----------
+## Motivation
 
 Sometimes, you have a picture of a surface and you want to see how it looks in 3-D. If your picture meets a few requirements, then reconstruction of an approximation of this surface is possible and, indeed, very simple. These requirements are:
 
@@ -18,21 +17,18 @@ Sometimes, you have a picture of a surface and you want to see how it looks in 3
 
 If these requirements are met, your picture is an arbitrarily scaled <em>x</em>-gradient of your surface. That is, integrating it alongside <em>x</em> will give you the surface at an arbitrary scale.
 
-Example
--------
+## Example
 
 See here a photograph of the [lunar crater Hohmann](http://commons.wikimedia.org/wiki/File:Hohmann_crater.png) original, integrated, and rendered as a [3D Surface Plot](/plugins/3d-surface-plot).
 
 <table><tbody><tr class="odd"><td><p>style="vertical-align:top" |{% include thumbnail src='/media/Hohmann-crater.jpg' title='Original image'%}</p></td><td><p>style="vertical-align:top" |{% include thumbnail src='/media/Hohmann-crater-xintegral.jpg' title='Integral in <em>x</em>'%}</p></td><td><p>style="vertical-align:top" |{% include thumbnail src='/media/Hohmann-crater-surfaceplot.jpg' title='3D Surface Plot'%}</p></td></tr></tbody></table>
 
-Shortcomings
-------------
+## Shortcomings
 
 -   The approach is very sensitive to noise. Noise will result in a stripy pattern, because it is accumulated independently for each pixel row.
 -   Lacking the constant initializer for integration, we assume that the average height for all pixel rows is equal and that the average slope per row is 0. Rows with a large mountain without a compensating valley will thus appear lower than they should.
 
-Code
-----
+## Code
 
 This is BeanShell and can be executed via [Script Editor](/scripting/script-editor) or [BeanShell Interpreter](/scripting/interpreter) or by dragging it as a file with extension \`.bsh' into the Fiji toolbar. This script performs per-pixel operations in an interpreted language and, therefore, is very slow. If you really need more speed, compile the source into a Java class which is straight forward for BeanShell code.
 
@@ -79,8 +75,7 @@ This is BeanShell and can be executed via [Script Editor](/scripting/script-edit
         impTarget.updateAndDraw();  
     }
 
-See also
---------
+## See also
 
 -   [Scripting Help](/scripting)
 -   [Scripting\_comparisons](/scripting/comparisons)

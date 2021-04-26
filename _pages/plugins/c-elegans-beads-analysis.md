@@ -7,15 +7,13 @@ This page provides a description and pointers towards the use of the CElegansBea
 
 Mykola Mylenko, Sebastian Boland, Sider Penkov, Julio L. Sampaio, Benoit Lombardot, Daniela Vorkel, Jean-Marc-Verbavatz, Teymuras V. Kurzchalia, NAD+ is a food component that promotes exit from dauer diapause in Caenorhabditis elegans, PLoS One, 2016
 
-Installation
-------------
+## Installation
 
 The plugin can be downloaded from: ![](/media/Celegans beads analysis-1.0.0.jar.zip "fig:Celegans_beads_analysis-1.0.0.jar.zip"). Its usage is described in the next section and its source code can be accessed on [MPI-CBG git repository](https://git.mpi-cbg.de/bioimage-informatics/cElegansBeadsAnalysis)
 
 To install the plugin, download it and copy the unzipped file in your Fiji installation plugin folder. Next time you restart Fiji a new entry will appear in the Plugins menu with the name CElegansBeadsAnalysis.
 
-Usage
------
+## Usage
 
 The plugin was written to quantify the ingestion of fluorescent beads by C. elegans worms in various experimental conditions. More specifically, the plugin was designed to anlyze 2D images where one of the channel shows the fluorescent beads while the other one is a transmited light image of the worms.
 

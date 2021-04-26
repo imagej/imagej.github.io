@@ -14,13 +14,11 @@ categories: Plugins
 {% endcapture %}
 {% include info-box software='FIJI' name='StereoMate' author=author maintainer=maintainer filename='Stereo\_Mate.jar' source='https://github.com/stevenjwest/StereoMate' released='August 2019' status='stable' website='/ij/plugins/stereomate.html' %}
 
-Purpose
--------
+## Purpose
 
 This plugin suite provides tools for the processing and analysis of confocal image stacks. It aims to allow the stereological and automated analysis of 3D reconstructed objects from regions of interest.
 
-Documentation
--------------
+## Documentation
 
 This plugin provides the image processing and analysis functionality described in the following paper {% include citation last='West' first='S-J.' last2='Bennett' first2='D-H-L.' title='StereoMate: A Stereological and Automated Analysis Platform for Assessing Histological Labelling in Cleared Tissue Specimens' journal='bioRxiv' doi='https://doi.org/10.1101/648337' date='August 2019' url='https://www.biorxiv.org/content/10.1101/648337v2' %}
 

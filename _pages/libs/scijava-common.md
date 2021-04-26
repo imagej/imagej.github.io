@@ -12,8 +12,7 @@ Plugin framework
 
 First and foremost, SciJava Common is a plugin framework—a base for developing highly modular and extensible Java applications.
 
-Plugin discovery
-----------------
+## Plugin discovery
 
 All plugins available on Java's classpath are automatically discovered and made available. This is accomplished by scanning classpath resources for the file path `META-INF/json/org.scijava.plugin.Plugin`. Such files are generated at compile time by a Java annotation processor that writes them in response to `@Plugin` annotations on Java classes, an idea inspired by the [SezPoz](https://github.com/jglick/sezpoz/) project.
 
@@ -22,8 +21,7 @@ Application container
 
 All program state, such as available plugins, is accessible from a root object known as the *application context*.
 
-Services
---------
+## Services
 
 
 {% capture  content %}
@@ -70,23 +68,19 @@ Menuing system
 
 The SciJava menuing system is divided into several layers, to make it easier to override its behavior or customize its appearance in a user interface.
 
-Modules
--------
+## Modules
 
 Each module known to the system (via the {% include javadoc package='org/scijava/module' class='ModuleService' %} can have a `menuPath` that says where it should live (by default) in the menu. It also has a `menuRoot` that says in *which* menu it should live, with the default being the `APPLICATION_MENU_ROOT`, indicating the main application menu structure.
 
-MenuService
------------
+## MenuService
 
 The {% include javadoc package='org/scijava/menu' class='MenuService' %} takes care of constructing {% include javadoc package='org/scijava/menu' class='ShadowMenu' %} tree structures for all available modules in the system, using their `menuPath` and `menuRoot` values. These tree structures are UI-agnostic. There is one `ShadowMenu` per `menuRoot`, which can be requested at will from the `MenuService`.
 
-User interfaces
----------------
+## User interfaces
 
 The {% include javadoc package='org/scijava/ui' class='UIService' %} then takes care of constructing an actual UI-specific menu bar (or whatever UI components and/or widgets it wants) from the available `ShadowMenu`s. There is a type hierarchy beneath the {% include javadoc package='org/scijava/menu' class='MenuCreator' %} interface intended for this purpose; for example, the {% include javadoc package='org/scijava/ui/swing/menu' class='SwingJMenuBarCreator' %} implements `MenuCreator` to create and maintain a Swing {% include javadoc project='Java' package='javax/swing' class='JMenuBar' %} that reflects the state of a particular `ShadowMenu`.
 
-How changes propagate
----------------------
+## How changes propagate
 
 When modules are added, removed or changed (via {% include javadoc package='org/scijava/module/event' class='ModulesAddedEvent' %}, {% include javadoc package='org/scijava/module/event' class='ModulesRemovedEvent' %}, {% include javadoc package='org/scijava/module/event' class='ModulesUpdatedEvent' %}), the `MenuService` listens and updates the associated `ShadowMenu`(s) accordingly. It notifies interested parties that it has done so by firing a corresponding event: {% include javadoc package='org/scijava/menu/event' class='MenusAddedEvent' %}, {% include javadoc package='org/scijava/menu/event' class='MenusRemovedEvent' %}, or {% include javadoc package='org/scijava/menu/event' class='MenusUpdatedEvent' %}.
 

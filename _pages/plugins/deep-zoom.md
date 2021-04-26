@@ -20,20 +20,17 @@ The current version uses [Seadragon Ajax](http://seadragon.com/developer/ajax/) 
 
 This plugin uses {% include github org='uw-loci' repo='deep-zoom-plugin' source='com/centerkey/utils/BareBonesBrowserLaunch.java' label='BareBonesBrowserLaunch' %} to launch a new browser window.
 
-Limitations
------------
+## Limitations
 
 The plugin currently has a bug in that it creates an excess number of levels, which are not needed for display.
 
-Installation
-------------
+## Installation
 
 The plugin can be downloaded from the [SciJava Maven repository](//develop/project-management#maven) as [loci:deep\_zoom-plugin](https://maven.scijava.org/#nexus-search;gav~loci~deep_zoom-plugin).
 
 Copy the plugin jar to ImageJ's plugins folder.  Once restarted the plugin will appear in ImageJ's 'File/Save As...' menu as 'Deep Zoom...'.
 
-Description
------------
+## Description
 
 The first screenshot shows the user interface for the plugin:
 
@@ -46,8 +43,7 @@ The first screenshot shows the user interface for the plugin:
 -   On my Mac I have my output folder set to '/Users/aivar/Sites' and URL set to [`http://0.0.0.0/~aivar`](http://0.0.0.0/~aivar).
 -   The dropdown list for 'Implementation' is for experimental purposes (and will be removed from the final version of the plugin).  For now the default 'CHAINED' option is best.  To read more about the different implementations see below.
 
-See also
---------
+## See also
 
 These are implementation details of some of the experimental code in the plugin.  This section is temporary and links are liable to get out of date.
 

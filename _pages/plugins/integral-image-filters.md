@@ -16,8 +16,7 @@ categories: Plugins,Filtering,Integral Image
 
 Integral images have been introduced in by Crow (1984)[1] as a technique to improve texture rendering speed at multiple scales in perspective projections. The technique has since then been used for a number of applications. The most popular examples are fast normalized cross-correlation[2], the {% include wikipedia title='Viola%E2%80%93Jones object detection framework' text='Viola-Jones object detection framework'%}[3], and the {% include wikipedia title='SURF' text='Speeded Up Robust Feature (SURF)'%} transform[4]. In Fiji, we currently use Integral Images for a number of basic statistic block filters.
 
-Basic Block Statistics with Integral Images (Summed-Area Tables)
-----------------------------------------------------------------
+## Basic Block Statistics with Integral Images (Summed-Area Tables)
 
 ### Mean
 
@@ -173,8 +172,7 @@ with
 
 $$ a = n\sum_{i=1}^nx_iy_i - \sum_{i=1}^nx_i\sum_{i=1}^ny_i\quad\text{and}\quad{}\sgn(r_{XY}) = \sgn(a) $$
 
-References
-----------
+## References
 
 <references />
 

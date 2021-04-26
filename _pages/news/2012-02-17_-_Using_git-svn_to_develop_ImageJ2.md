@@ -4,15 +4,13 @@ title: 2012-02-17 - Using git-svn to develop ImageJ2
 categories: News,ImageJ2
 ---
 
-Introduction
-------------
+## Introduction
 
 Subversion is a decent version control program that does not require much thought to operate. Unfortunately, if you want to avoid clunky, unreviewable monster commits ([a known worst practice](http://www.crealytics.de/blog/2010/07/09/5-reasons-keeping-git-commits-small-mluedtke/)), you will need third-party programs to prepare any non-trivial set of patches.
 
 One such third-party program is called [Git](/develop/git)... While Git is usually meant to be used as a standalone version control system (and we have hints [here](/develop/git/notes) and links [here](/develop/git) how to use it), its [`git rebase -i`](/develop/git/topic-branches) functionality lends itself to a patch series based workflow.
 
-The `git svn` workflow
-----------------------
+## The `git svn` workflow
 
 Our recommended `git svn` workflow was described in our chatroom by [Barry](/users/Bdezonia):
 
@@ -35,8 +33,7 @@ When you are ready to publish the patch series in Subversion, synchronize again 
 
 After everything was prepared for Subversion, use the `dcommit` command of `git svn` to commit all changes that are in the current branch but not yet in *trunk*. (If you are interested why it is called `dcommit`: the original `commit` subcommand of `git svn` is a historic wart...)
 
-Setting up the local working directory
---------------------------------------
+## Setting up the local working directory
 
 To get started with `git svn`, you need an initial `git-svn` clone. The easy way to do this would be to start
 

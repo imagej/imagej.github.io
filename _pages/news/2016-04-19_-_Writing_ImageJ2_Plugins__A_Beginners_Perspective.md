@@ -16,15 +16,13 @@ The following article was written by {%- include person id='Scrivello' -%} as he
 Writing ImageJ2 Plugins: A Beginner's Perspective
 =================================================
 
-Preamble
---------
+## Preamble
 
 Before you consider to write your own [plugin](/plugins) for [ImageJ](/about), please note that writing a [script](/scripting/script-editor) has a much lower barrier to entry than Java plugin development.
 
 Also you may want to have a look at [Introduction\_into\_Macro\_Programming](/scripting/macro) as an easy way to automate repetitive tasks with existing tools and plugins.
 
-Finding information
--------------------
+## Finding information
 
 -   The top-level source of information is [the ImageJ wiki](//).
 -   The [Development](/develop) page is the best portal for aspiring ImageJ developers.
@@ -34,8 +32,7 @@ Finding information
 
 The search engines will point you to both `imagej.net` and `developer.imagej.net`. Avoid using `developer.imagej.net` for anything these days. It is a legacy site, in the process of being totally phased out. If you are looking for downloads, see the [/downloads](/downloads) page.
 
-Configure your environment
---------------------------
+## Configure your environment
 
 You will need:
 
@@ -70,8 +67,7 @@ In general, there are two alternative strategies to develop your plugin:
 -   Use your IDE without Maven
 -   Use your IDE with Maven
 
-Using NetBeans without Maven
-----------------------------
+## Using NetBeans without Maven
 
 When you build your own plugins with an IDE, the ImageJ project will link in all plugins as precompiled JAR dependencies (JAR files are archives for java projects).
 
@@ -93,8 +89,7 @@ A somewhat outdated but rather detailed description how to work with an older ve
 
 Using JAR works for local development, but it will cause you various problems later. For example, if you share your source code, you will need to commit this JAR along with your NetBeans project files to your repository, to ensure everyone else uses the same version of ImageJ that you do.' %}
 
-Build ImageJ with NetBeans, Git and Maven
------------------------------------------
+## Build ImageJ with NetBeans, Git and Maven
 
 Using Maven to develop your plugins is a much better approach. You will not have to commit any JAR files to source control. You can pin your code to fixed, known versions of its dependencies that will provide [reproducible builds](/develop/architecture#reproducible-builds) for many years to come.
 
@@ -129,8 +124,7 @@ The repository {% include github org='imagej' repo='imagej1' label='imagej/image
 
 To import several projects from GitHub I always had to close all open project in NetBeans before I could import another project. If somebody knows a better way, please add here.' %}
 
-Build the ImageJ Tutorial Plugin with IntelliJ IDEA, Git and Maven
-------------------------------------------------------------------
+## Build the ImageJ Tutorial Plugin with IntelliJ IDEA, Git and Maven
 
 **Setup IntelliJ**
 
@@ -162,8 +156,7 @@ Build the ImageJ Tutorial Plugin with IntelliJ IDEA, Git and Maven
 Details of Writing Plugins
 ==========================
 
-Tutorials
----------
+## Tutorials
 
 -   For ImageJ 1.x: [Introduction into Developing Plugins](/develop/ij1-plugins) and [Example Legacy Plugin](https://github.com/imagej/example-legacy-plugin)
 -   For ImageJ2: [Writing plugins](/develop/plugins) (Note: The instruction "Update your parent POM" in [Writing plugins\#Update\_your\_POM](/develop/plugins#update-your-pom) just means that the version number should be adjusted to reflect the latest available version of the parent POM file on GitHub.)
@@ -171,8 +164,7 @@ Tutorials
 -   [Developing ImgLib2](/imglib2/developing)
 -   [ImageJ Ops](/libs/imagej-ops)
 
-Getting Started
----------------
+## Getting Started
 
 Start from an existing plugin as a template:
 
@@ -199,15 +191,13 @@ The following lines are copied/cited from the `README.md` file of the `minimal-i
     -   This is only needed for ImageJ 1.x plugins. For ImageJ2 commands, the information is provided by the `@Plugin` annotation at the top of the Java class.
 -   Replace the contents of `README.md` with information about your project.
 
-Additional sample plugins
--------------------------
+## Additional sample plugins
 
 {% include github org='imagej' repo='tutorials' label='imagej/tutorials' %}
 
 The imagej/tutorials are structured as individual projects. The files can live in a directory on its own outside the ImageJ or Fiji project. The `pom.xml` files of the `imagej/tutorials` pull in all the necessary dependencies for compiling via Maven.
 
-"One file to bind them all": parent `pom.xml` files
----------------------------------------------------
+## "One file to bind them all": parent `pom.xml` files
 
 As the projects get more complex, read about the [Maven component structure of ImageJ/SciJava](/develop/architecture#maven-component-structure) and something which is called "[Bill of Materials](//develop/architecture#bill-of-materials)" or just BOM. A "//develop/architecture#bill-of-materials" is a list of dependencies at particular versions which are believed to be mutually compatible. The complexity of ImageJ/SciJava's dependencies is a tribute to the different organizations which are contributing with their independent projects to ImageJ/SciJava. There are several "parent" pom.xml files which are independently maintained for example by the ImageJ, [ImgLib2](/imglib2) or [SCIFIO](/software/scifio) organizations. Each of these organizations has developed source code components which depend on components within the other two organizations. This complicated network of dependencies is managed with the help of the parent `pom.xml` files, i.e. `pom-imagej`, `pom-fiji`, `pom-imglib2` etc. (see a list of all on the [ImageJ Architecture page](/develop/architecture#maven-component-structure)).
 
@@ -261,8 +251,7 @@ Finally add at least one of the following dependencies for ImageJ plugin support
         </dependency>
     </dependencies>
 
-Further readings
-----------------
+## Further readings
 
 -   [README.md](https://github.com/imagej/minimal-ij1-plugin/blob/master/README.md) of the [Minimal Maven based ImageJ 1.x plugin](https://github.com/imagej/minimal-ij1-plugin)
 -   Learn more about [ImageJ/SciJava dependencies](/develop/maven#how-to-find-a-dependencys-groupidartifactidversion-gav)
@@ -285,8 +274,7 @@ and all other links cited in the text!
 Appendix
 ========
 
-How do I find dependencies?
----------------------------
+## How do I find dependencies?
 
 You can search by class for Maven artifacts. For example, [search for `ij.plugin.PlugIn`](https://maven.scijava.org/#nexus-search;classname~ij.plugin.PlugIn). There is also a "Find Jar For Class" helper script in Fiji which does a similar thing for JAR files currently on ImageJ's classpath.
 
@@ -294,8 +282,7 @@ If you are comfortable with command-line tools, you can also use the [Maven Depe
 
 Also [mvnrepository.com](https://mvnrepository.com) is a good resource to find repositories with code you can easily copy and paste in your `pom.xml`.
 
-Manage Java versions
---------------------
+## Manage Java versions
 
 On Linux several java version can be installed. Select the preferred version in a terminal window (e.g. bash):
 
@@ -305,8 +292,7 @@ Note: It might be necessary to use `sudo`.
 
 If necessary, tell NetBeans to use JDK 1.8 as the default JRE for new projects (i. e. on Debian Linux: {% include bc path='Project Properties|Build|Compile...'%} `/usr/lib/jvm/java-1.8.0-openjdk-amd64`) or alternatively set the `netbeans_jdkhome` property in your NetBeans config file. It should be in the local NetBeans directory, for example `./netbeans-8.0/netbeans.conf`.
 
-Where can I find example plugins?
----------------------------------
+## Where can I find example plugins?
 
 -   [ImageJ Tutorials](https://github.com/imagej/tutorials/)
     -   In NetBeans: {% include bc path='Team|Git|Clone'%}
@@ -317,8 +303,7 @@ Where can I find example plugins?
     -   Next
     -   Finish
 
-What is the directory structure for a plugin?
----------------------------------------------
+## What is the directory structure for a plugin?
 
 This text was adapted from the [Maven](/develop/maven) page.
 
@@ -360,8 +345,7 @@ Should you want to apply the best practices called "regression tests" or even "t
 
 More information about Maven's standard directory layout can be found on the [Maven website](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html).
 
-What does a minimal `pom.xml` look like?
-----------------------------------------
+## What does a minimal `pom.xml` look like?
 
 This text was adapted from the [Maven](/develop/maven) page.
 
@@ -385,8 +369,7 @@ The only relevant parts are the `groupId`, which by convention is something like
 
 While the example `pom.xml` above shows the general idea, for ImageJ more details have to be considered. Therefore it is better to start with an existing `pom.xml` file, for example the one from {% include github org='imagej' repo='minimal-ij1-plugin' label='imagej/minimal-ij1-plugin' %}. Copy it to your project and modify it as needed.
 
-Are the underscores still needed for plugins to be visible in IJ or Fiji?
--------------------------------------------------------------------------
+## Are the underscores still needed for plugins to be visible in IJ or Fiji?
 
 From [ImageJ Forum Thread 1020](http://forum.imagej.net/t/mavenization-and-debugging-in-eclipse/1020):
 
@@ -394,8 +377,7 @@ Underscores are needed if your plugin is an ImageJ 1.x style plugin. I.e.: does 
 
 If you write an ImageJ2 command plugin (i.e.: implement the `org.scijava.command.Command` interface, with an `@Plugin` annotation) then the underscore is no longer necessary.
 
-Make the plugins appear in the menus
-------------------------------------
+## Make the plugins appear in the menus
 
 Example, which sets the `plugins.dir` property so that the plugin appears in the menus when launched from an IDE:
 
@@ -403,8 +385,7 @@ Example, which sets the `plugins.dir` property so that the plugin appears in the
 
 Setting `plugins.dir` is only necessary for ImageJ 1.x style plugins. If you write an ImageJ2 command, it should appear in the menus regardless.
 
-NetBeans: what is the difference between Ant and Maven? Or: `build.xml` vs. `pom.xml`
--------------------------------------------------------------------------------------
+## NetBeans: what is the difference between Ant and Maven? Or: `build.xml` vs. `pom.xml`
 
 From [StackOverflow \#15121928](http://stackoverflow.com/a/15122181):
 
@@ -414,8 +395,7 @@ From [StackOverflow \#15121928](http://stackoverflow.com/a/15122181):
 
 Maven is declarative, whereas Ant is procedural. In Ant, you say "do X, then do Y, then do Z." Whereas in Maven, you say "my code is here, my resources are there, and please use these plugins." One advantage of the latter is that Maven provides a standardized build sequence (called the "build lifecycle") making it compatible with all the major IDEs.
 
-How to migrate an existing project to a Maven project?
-------------------------------------------------------
+## How to migrate an existing project to a Maven project?
 
 **In Netbeans**
 
@@ -448,8 +428,7 @@ Adapted from [StackOverflow \#7548008](http://stackoverflow.com/q/7548008):
 -   Here you can right-click and *Run Maven Build* or alternatively press the green arrow above it in the Maven window to build your project
 -   The build process will generate two `.jar` file under *\[project\_name\]/targets/*
 
-Enable the ImageJ 1.x UI, instead of the ImageJ2 Swing UI
----------------------------------------------------------
+## Enable the ImageJ 1.x UI, instead of the ImageJ2 Swing UI
 
 From [ImageJ Forum Thread 1364](http://forum.imagej.net/t/ij1-or-ij2-style-for-plugin-development/1364/3):
 
@@ -463,8 +442,7 @@ Add the following dependency to your POM:
 
 That will enable the ImageJ 1.x UI, instead of the ImageJ2 Swing UI which is otherwise the default.
 
-What is it all about with this Java 6 and Java 8 stuff?
--------------------------------------------------------
+## What is it all about with this Java 6 and Java 8 stuff?
 
 From [ImageJ Forum Thread 1151](http://forum.imagej.net/t/java3d-issue-bonej-with-latest-fiji-version-problem-solved/1151/6):
 
@@ -480,13 +458,11 @@ Note: You can check the Java version as [described here](/help/troubleshooting#c
 
 More information can be read here: [2015-12-22 - The road to Java 8](/news/2015-12-22_-_The_road_to_Java_8)
 
-Make a redistributable package from a locally customized Fiji
--------------------------------------------------------------
+## Make a redistributable package from a locally customized Fiji
 
 Turn your local customized Fiji into a redistributable package that can then be installed on other machines e.g. in your lab: use the [Make Fiji Package](/plugins/make-fiji-package) command.
 
-Tests wit JUnit5
-----------------
+## Tests wit JUnit5
 
 In IntelliJ IDEA you may want to make sure that the JUnit5 Plugin is activated. The next step would be to append the following lines to your `pom.xml` file:
 
@@ -521,8 +497,7 @@ In IntelliJ IDEA you may want to make sure that the JUnit5 Plugin is activated. 
 
 **Note:** if you want to test GUI tests with TravisCI you have to activate a virtual display as described in the Travis CI chapter.
 
-Continuous Integration with Travis CI
--------------------------------------
+## Continuous Integration with Travis CI
 
 If you want to share your plugin in the ImageJ updater automatically [Automatic Update Site Uploads](/update-sites/automatic-uploads), contribute to the ImageJ project [Fiji/Contribution requirements](/fiji/contribution-requirements) or work in a team with multiple developers, you may want to build, test and deploy your Plugin with [Travis CI](/develop/travis). If you are hosting your code in a public [GitHub](/develop/github) repository this service is free for you. After signing in with your [GitHub](/develop/github) account you can activate single repositories for [Travis CI](/develop/travis). Travis then automatically clones your repository with every change and runs a build according to the `.travis.yml` configuration file in your root directory.
 
@@ -551,8 +526,7 @@ In case you are working with GUI tests, you may want to activate a virtual displ
 
 </source>
 
-JavaFX JAR not found
---------------------
+## JavaFX JAR not found
 
 Add this to your pom.xml:
 
@@ -570,8 +544,7 @@ Add this to your pom.xml:
             </plugins>
         </build>
 
-Log4j warning in IntelliJ IDEA
-------------------------------
+## Log4j warning in IntelliJ IDEA
 
 Some of the tutorials seem to be missing a configuration file for Log4. IntelliJ will warn you about this as soon as you try to try to build the project:
 

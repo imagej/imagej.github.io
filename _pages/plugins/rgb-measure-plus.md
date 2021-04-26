@@ -6,8 +6,7 @@ categories: Plugins,Color processing
 
 {% include info-box software='ImageJ' name='RGB Measure Plus' author='Dimiter Prodanov' filename='RGB\_Measure\_Plus.class' source=' [RGB\_Measure\_Plus.java](/ij/plugins/download/RGB_Measure_Plus.java)' released='23 March 2005' latest-version='23 March 2005' status='initial version' category='[Color processing](Category_Color_processing)' website='/ij/plugins/rgb-measure-plus.html' %}
 
-Purpose
--------
+## Purpose
 
 This plugin separately measures the red, green and blue channels of an RGB image between user-definable threshold levels per channel. The aforementioned thresholds can be set using the [Threshold Colour](Threshold_Colour) plugin.
 

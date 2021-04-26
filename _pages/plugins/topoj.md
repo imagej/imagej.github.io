@@ -9,8 +9,7 @@ The TopoJ plugins help you analyze surfaces of bright objects in image stacks. Y
 
 ![](/media/TopoJ-Sintered Alumina.jpg "TopoJ-Sintered_Alumina.jpg")
 
-Compute Topography
-------------------
+## Compute Topography
 
 To compute the Topography, call {% include bc path='Analyze | TopoJ | Compute Topography'%}:
 
@@ -20,8 +19,7 @@ The result looks like this:
 
 ![](/media/TopoJ-Computed Topography.jpg "TopoJ-Computed_Topography.jpg")
 
-Remove Slope
-------------
+## Remove Slope
 
 To remove the overall slope of the surface, click on the {% include bc path='Analyze | TopoJ | Remove Slope'%} menu item:
 

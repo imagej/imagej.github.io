@@ -6,8 +6,7 @@ categories: News
 
 We just released a new minor version of [TrackMate](/plugins/trackmate), that ships improvements to [TrackScheme](/plugins/trackmate/trackscheme) and bugfixes.
 
-Improvements
-------------
+## Improvements
 
 -   TrackScheme now has an outline panel, useful to navigate in large models.
 
@@ -25,8 +24,7 @@ Improvements
 
 <figure><img src="/media/plugins/trackmate-Logo85x50-color-300p.png" title="TrackMate-Logo85x50-color-300p.png" width="600" alt="TrackMate-Logo85x50-color-300p.png" /><figcaption aria-hidden="true">TrackMate-Logo85x50-color-300p.png</figcaption></figure>
 
-Bugfixes
---------
+## Bugfixes
 
 -   Fixed several problems with the 'Copy Overlay' action.
 

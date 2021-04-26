@@ -8,8 +8,7 @@ Today, the [ImageJ](/about) and [KNIME](/software/knime) teams are pleased to an
 
 <figure><img src="/media/Konstanz-hackathon.jpg" title="Happy hackers: 502 commits in five days!" width="320" alt="Happy hackers: 502 commits in five days!" /><figcaption aria-hidden="true">Happy hackers: 502 commits in five days!</figcaption></figure>
 
-Motivation
-----------
+## Motivation
 
 The ImageJ2 vision is to extend Java's mantra of "write once, run anywhere" to image processing algorithms. With that goal at its heart, ImageJ2 introduces extensible {% include github org='scijava' repo='scijava-common' label='plugin' %} and {% include github org='imagej' repo='tutorials' path='maven-projects/working-with-modules/src/main/java/WorkingWithModules.java' label='module' %} frameworks which make ImageJ commands richer, more powerful and easier to share across applications. Already, these modules are accessible from [CellProfiler](/software/cellprofiler), [KNIME](/software/knime), [OMERO](/software/omero) and [Alida](/software/alida).
 
@@ -21,8 +20,7 @@ But still notably missing was the next crucial layer: a framework for *image pro
 
 When it comes to ease of use, generality and performance in computer programs, the usual rule of thumb is "pick two." Yet we are happy to say that we believe Ops strikes a favorable balance between all three criteria.
 
-Getting started
----------------
+## Getting started
 
 An op is just an ImageJ module, but with some additional structure and requirements: you can think of an op as a function which takes a list of typed inputs, produces a list of typed outputs, and has no side effects. There are over 80 ops implemented so far, with {% include github org='imagej' repo='imagej-ops' tag='ij-ops-0.1.0' path='operations.txt' label='many more to come' %}; see this ImageJ tutorial to learn about some of them:
 
@@ -32,18 +30,15 @@ And for algorithm developers, there is another tutorial briefly demonstrating ho
 
 [Create a new op](https://github.com/imagej/tutorials/tree/master/maven-projects/create-a-new-op/src/main/java/CreateANewOp.java)
 
-Caveats
--------
+## Caveats
 
 Today marks the Ops project's very first beta release: [0.1.0](https://github.com/imagej/imagej-ops/tree/ij-ops-0.1.0). As such, it is still under heavy development, with aspects of the design still subject to change. That said, we are quite confident in the core API, and do not expect it to change too much. What is more likely to change are the specific individual ops, how they work, which ones are available, and other finer details which will become apparent as the library continues to be developed and used.
 
-Conclusion
-----------
+## Conclusion
 
 We sincerely hope that the Ops project will make it much easier for various software tools (e.g.: [KNIME](/software/knime), CellProfiler, OMERO, Alida, Icy, Vaa3D and of course ImageJ itself) to provide drop-in support for ImageJ's image processing operations, allowing scientists to truly "write once, run anywhere" and share with the world!
 
-  
------
+##   
 
 P.S. Here is a detailed list of accomplishments during the hackathon:
 

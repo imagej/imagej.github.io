@@ -4,8 +4,7 @@ title: TrakEM2 TPlugIn
 categories: TrakEM2
 ---
 
-TPlugIn Implementation
-----------------------
+## TPlugIn Implementation
 
 Interface ini.trakem2.plugin.TPlugIn allows for TrakEM2 plugins to be called from either the Display menu or the Project Tree menu. Suppose that we would like to add a plugin in class SomePlugIn, named "Some PlugIn". TPlugIn specifies the following methods
 
@@ -27,8 +26,7 @@ Determines whether the menu item for the given TPlugIn is active.
 
 Before the right-click menu is displayed, TPlugIn.applies(Object) is called for all registered TPlugIns. Object ob is the currently selected Object, or null if there isn't one. If this method returns true, the menu item Plugins-&gt;Some PlugIn will be active. If it returns false, it will be inactive and grey.
 
-Registering With TrakEM2
-------------------------
+## Registering With TrakEM2
 
 To register a TPlugIn with TrakEM2, include a file SomePlugIn.trakem2 in the jar file containing SomePlugIn, with the following format:
 

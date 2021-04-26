@@ -6,14 +6,12 @@ categories: Conference
 
 This page describes the full program for the [2015 ImageJ User & Developer Conference](/events/Conference_2015).
 
-Program
--------
+## Program
 
 TODO GOOGLE SPREADSHEET WIDGET {% include clear%}
 
 
-Keynote presentations
----------------------
+## Keynote presentations
 
 There were four 45-minute keynote presentations.
 
@@ -33,8 +31,7 @@ There were four 45-minute keynote presentations.
 
 \[ [Presentation video](https://vimeo.com/140098839/) \]
 
-Featured presentations
-----------------------
+## Featured presentations
 
 Three lightning talks were selected as featured presentations, with elongated presentation times.
 
@@ -56,8 +53,7 @@ The Thin Plate Spline is an established method to yield a smooth non-rigid trans
 
 \[ [Presentation slides](http://conference.imagej.net/2015/john-bogovic/2015_imagej.pptx) \] \[ [Presentation video](https://vimeo.com/140929688/) \]
 
-Lightning talks
----------------
+## Lightning talks
 
 The lightning talks will be 10-minute presentations including time for questions.
 
@@ -182,8 +178,7 @@ Telomeres are regions of repetitive nucleotide sequences located at the ends of 
 
 \[ [Presentation slides](http://conference.imagej.net/2015/aryeh-weiss/ij2015telomere-A.ppt) \] \[ [Presentation video](https://vimeo.com/140929694/) \]
 
-Workshops
----------
+## Workshops
 
 The workshops are one-to-two hour blocks which help users to explore topics interactively and in depth.
 
@@ -289,8 +284,7 @@ This workshop assumes no prior knowledge of image processing, and is designed to
 
 \[ [Presentation video](https://vimeo.com/140929692/) \]
 
-Posters
--------
+## Posters
 
 Posters will be available to browse at any time throughout the conference. There will also be a dedicated poster session on Thursday evening during the reception.
 

@@ -33,8 +33,7 @@ To emulate the \[enter\] key, type the exclamation mark '!'. Other characters ar
 
 A handy way to find the target coordinates is to first grab the screen (which opens as an image in IJ) and check the coordinates with the mouse in IJ (reported in the status bar).
 
-Important
----------
+## Important
 
 Be careful with this plugin. It is really easy to end up clicking in unintended places with undesired results. You have been warned!
 
@@ -44,8 +43,7 @@ It may be also necessary to slow down the macro calls to this plugin between ord
 
 The included demo, seems to work fine in various platforms. Make sure that there are no open images in IJ and that please do not move the mouse while running the macro.
 
-Menu Path
----------
+## Menu Path
 
 {% include bc path='Plugins | Utilities (2nd on the list!) | IJ Robot'%}
 

@@ -24,13 +24,11 @@ Example:
 |----------------------------|--------------------------------------------|
 | ![](/media/Clown.jpg "Clown.jpg") | ![](/media/Clown-magenta.jpg "Clown-magenta.jpg") |
 
-Replace Red with Magenta (system clipboard)
--------------------------------------------
+## Replace Red with Magenta (system clipboard)
 
 Frequently all you [want](#Why.3F) to do is to replace red by magenta in some images in a text document or a presentation. With this function, you only need to copy the image into the system clipboard in the other program, call this plugin in Fiji, and then you can paste the corrected image in the other program.
 
-Why?
-----
+## Why?
 
 8% of the male population is red-green blind. If given the task to find two colors maximizing the number of people who cannot see the difference, red and green are a wise choice. Yet, still way too many figures in scientific publications show red/green merges.
 

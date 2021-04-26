@@ -18,13 +18,11 @@ categories: Scripting,Analysis,Plugins
 {% endcapture %}
 {% include info-box software='ImageJ/Fiji' name='MyofribilJ' maintainer=maintainer author=author source=source released='November 2017' category='[Analysis](Category_Analysis), [Scripting](Category_Scripting), [Plugins](Category_Plugins)' %}
 
-Introduction
-------------
+## Introduction
 
 The MyofibrilJ plugin provides two scripts to analyse fibril morphology. Given a fluorescence image of muscle fibers, the scripts measure myofibrils dimensions and sarcomere length. The scripts were initially developed for the analysis of both longitudinal and cross sections of myofibrils stained with rhodamine-phalloidin.
 
-Usage
------
+## Usage
 
 Two distinct commands, *analyse myofibrils crosswise* and *analyse myofibrils lengthwise*, are provided to analyse cross-sections and longitudinal sections of fibers, respectively. In both cases:
 
@@ -36,8 +34,7 @@ The script will process all the images and generate a table with results, along 
 
 **Note**: when analysing longitudinal sections, fibrils need to be aligned horizontally. If they are not displayed horizontally, rotate the images before the analysis.
 
-Details
--------
+## Details
 
 ### Longitudinal sections
 
@@ -47,11 +44,9 @@ The sarcomere length is estimated by means of Fourier analysis. Because of the p
 
 An initial estimate of the diameter of the fibrils is obtained by finding the first minimum in the radial average profile of the autocorrelation image, while their position is determined by examining the peak intensities. This estimate is used to determine the optimal crop area around all the cross-sections in the image. All of the detected fibrils cross sections are then cropped from the image, the size of the crop being proportional to the the initial diameter estimate, and combined to obtain a noise-free average representation of the fibril section. The diameter is estimated from this average as the full width of its radial profile, where the intensity is 26% of the maximum range. In addition to their diameter, the level of clustering of the fibrils is characterized by nearest neighbor analysis and summarized by the Nearest Neighbor Index (NNI).
 
-References
-----------
+## References
 
-Installation
-------------
+## Installation
 
 The easiest way to install *MyofibrilJ* is by [adding](/update-sites/following#add-update-sites) its update site. Specifically:
 
@@ -64,8 +59,7 @@ The easiest way to install *MyofibrilJ* is by [adding](/update-sites/following#a
 -   click on the *Close* button and then on *Apply changes*
 -   after the update process is completed, close Fji and reopen it. From the main menu you can now select *MyofibrilJ* and launch one of the scripts available.
 
-License
--------
+## License
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [Free Software Foundation](http://www.gnu.org/licenses/gpl.txt). This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 

@@ -15,8 +15,7 @@ title: FLIMJ
 [UW-Madison LOCI](http://loci.wisc.edu/)' maintainer=maintainer filename='flimlib.jar, flimlib-*arch*-*ver*.jar,  
 flimj-ops-*ver*.jar' source=source latest-version='1.0.0' website='https://flimlib.github.io/' category='[:Category:Analysis](Category_Analysis)' %}
 
-Introduction
-------------
+## Introduction
 
 The FLIMJ plugin for ImageJ provides the ability to analyze FLIM data within ImageJ, using the [FLIMLib](https://flimlib.github.io/) library. The plugin can be installed into the [Fiji](/fiji) distribution of ImageJ simply by enabling the FLIMJ [update site](/update-sites). Features include:
 
@@ -29,15 +28,13 @@ The FLIMJ plugin for ImageJ provides the ability to analyze FLIM data within Ima
 -   Support for so-called "excitation" or "prompt" files containing a recorded system response function to be convolved with the exponential fit
 -   Batch processing support for analyzing many lifetime images as part of a [scripting](/scripting) workflow
 
-Installation
-------------
+## Installation
 
 The FLIMJ plugin is available from the "FLIMJ" [update site](/update-sites).
 
 Once you have installed the FLIMJ plugin, it becomes available on the menu under {% include bc path='Analyze | Lifetime | FLIMJ'%}.
 
-Usage
------
+## Usage
 
 ### Startup
 
@@ -128,8 +125,7 @@ FLIMJ plugin currently only supports the selection of IRF from a single pixel in
 
 You may readjust the IRF by starting from step 2 above. You may also reset the IRF setting by selecting *None* for *Instrument Response* in **Settings** pannel or go back to a previously set IRF by choosing the corresponding filename there.
 
-Dataset fitting and results preview
------------------------------------
+## Dataset fitting and results preview
 
 When all settings are properly configured. Click on **Fit Dataset** button on the **Settings** panel to start dataset fitting. A "pending" progress indicator will appear on top of the **Fit Dataset** button.
 
@@ -155,8 +151,7 @@ You can hover the mouse pointer on the rendered image to see the lookup table (L
 
 <figure><img src="/media/FLIMJ fit dataset preview results lut.png" title="Hover on image to see the color bar, the pixel value, and its place in the range." width="200" alt="Hover on image to see the color bar, the pixel value, and its place in the range." /><figcaption aria-hidden="true">Hover on image to see the color bar, the pixel value, and its place in the range.</figcaption></figure>
 
-Image export
-------------
+## Image export
 
 <figure><img src="/media/FLIMJ image export.png" title="Options on the Export pannel." width="200" alt="Options on the Export pannel." /><figcaption aria-hidden="true">Options on the <strong>Export</strong> pannel.</figcaption></figure>
 
@@ -168,8 +163,7 @@ After dataset fitting, you can select images to export in the drop-down checklis
 2.  Convert all images to RGB format by searching and executing the "RGB Color" command in FIJI;
 3.  Search and execute the "compose rgb-stacks" script, make the intensity image the "source" and the fitted image the "target", and choose "Multiply" as "compose method". Hit "OK".' %}
 
-Advanced topics
----------------
+## Advanced topics
 
 ### Noise models
 

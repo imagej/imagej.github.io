@@ -4,8 +4,7 @@ title: Java Tricks and Quirks
 categories: development
 ---
 
-SoftReference and OutOfMemoryError
-----------------------------------
+## SoftReference and OutOfMemoryError
 
 We have recently learned an interesting fact about Java's [SoftReference](http://docs.oracle.com/javase/6/docs/api/java/lang/ref/SoftReference.html) and the potential occurence of an [OutOfMemoryError](http://docs.oracle.com/javase/6/docs/api/java/lang/OutOfMemoryError.html). The result first: An [OutOfMemoryError](http://docs.oracle.com/javase/6/docs/api/java/lang/OutOfMemoryError.html) may be thrown in a situation where [SoftReferences](http://docs.oracle.com/javase/6/docs/api/java/lang/ref/SoftReference.html) can be released after which enough memory would be available. The reason is that normal garbage collection happens in an independent thread and does not halt other threads when they allocate memory. Only an explicit [System.gc()](http://docs.oracle.com/javase/6/docs/api/java/lang/System.html#gc%28%29) waits until the memory is freed . The consequence is that whenever you allocate memory then you should do that with the following clause:
 

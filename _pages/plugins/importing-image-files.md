@@ -8,18 +8,15 @@ categories: Cookbook,Tutorials,Plugins,Import-Export
 
 
 
-The File / Import submenu
--------------------------
+## The File / Import submenu
 
 Most of the commands listed, particularly Fiji extensions, are also available (via ImageJ's [HandleExtraFileTypes](/ij/plugins/file-handler.html) feature) simply by using the File / Open... menu item.
 
-Built-in formats
-----------------
+## Built-in formats
 
 Fiji primarily uses TIFF as the image file format. The menu command {% include bc path='File | Save'%} will save in TIFF format. The menu command {% include bc path='File | Open'%} will open TIFF files and import a number of other common file formats (e.g. JPEG, GIF, BMP, PGM, PNG) as well as those detailed below. Files can be also dragged and dropped to the toolbar to open them.
 
-Bio-Formats
------------
+## Bio-Formats
 
 Many more file formats can be imported via Fiji plugins. One plugin is called [Bio-Formats](/formats/bio-formats). This will import and export a wide number of file formats along with their important metadata. They can be accessed directly via the menu command {% include bc path='File | Import | Bio-Formats'%} or indirectly via the {% include bc path='File | Open'%} menu command which will use the Bio-Formats plugin if needed. See the [list of supported file formats](http://openmicroscopy.org/site/support/bio-formats5/supported-formats.html) on the Bio-Formats website for the complete list (135 as of this writing).
 
@@ -35,8 +32,7 @@ There are several different Bio-Formats commands for importing data into Fiji:
 -   **Bio-Formats Windowless Importer.** With this option, Fiji uses the settings that were previously used for Bio-Formats, so it skips all dialog boxes at the beginning.
 -   **Bio-Formats Importer.** Select this command if you need to change the settings for importing an image.
 
-Zeiss LSM panel
----------------
+## Zeiss LSM panel
 
 The LSM panel plugin duplicates the Zeiss LSM file import function of the LOCI Bio-Format Importer, but will also extensively catalogue the LSM metadata. The *[LSM Toolbox](/formats/lsm)* is activated by the menu command {% include bc path='File | Import | LSM.'%} Once you select LSM the panel will appear.
 
@@ -44,8 +40,7 @@ Images are opened as 8-bit color images with the "no-palette" pseudo color from 
 
 Once opened, the file information can be accessed and the information can be irreversibly stamped into the images or exported.
 
-Multiple files from a folder
-----------------------------
+## Multiple files from a folder
 
 Each time point of an experiment acquired with software such as Perkin Elmer's UltraVIEW or Scion Image's time lapse macro is saved by the acquisition software as a single TIF. The experimental sequence can be imported to Fiji via the menu command {% include bc path='File | Import | Image Sequence.'%}
 
@@ -53,8 +48,7 @@ Locate the directory, click on the first image in the sequence and OK all dialog
 
 Selected images that are not the same size can be imported as individual images windows using *File/Import* and select each individual image you want imported into Fiji. Then you can put those images into a stack by {% include bc path='Image | Stacks | Images to stack'%} Unlike the {% include bc path='File | Import | Image Sequence'%} function, the images don't need to be the same dimensions. If memory is limited, stacks can be opened as Virtual-Stacks with most of the stack remaining on the disk until it is required.
 
-Multi-RAW sequence from a folder
---------------------------------
+## Multi-RAW sequence from a folder
 
 To form an image, Fiji needs to know the image dimensions, bit-depth, slice number per file and any extraneous information in the file format (offset and header size). All you really need to tell it is the image dimension in x and y. These values should be obtainable from the software in which the images were acquired. Armed with this information follow these steps:
 
@@ -68,18 +62,15 @@ To form an image, Fiji needs to know the image dimensions, bit-depth, slice numb
 
 Non-images will also be opened and may appear as blank images and need deleting: {% include bc path='Image | Stacks | Delete slice'%}. The stack will "interleave" the multiple channels you recorded, and can be de-interleaved via {% include bc path='Plugins | Stacks - Shuffling | DeInterleave'%}.
 
-AVI and MOV files
------------------
+## AVI and MOV files
 
 There are two plugins which can open uncompressed AVIs and some types of MOV file. AVIs can be opened via {% include bc path='File | Import | AVI'%}
 
-Other Import functions
-----------------------
+## Other Import functions
 
 Animated GIF- This plugin opens animated GIF files as an RGB stack. Also opens single GIF images.
 
-Fiji Extensions
----------------
+## Fiji Extensions
 
 -   **Amira...**: Open as a stack both Amira (.am) label and image stack files.
 -   **Biorad...**: Open a Biorad (.pic) confocal stack.

@@ -11,22 +11,19 @@ Please [search the list archives](http://search.imagej.net/) first to find any p
 
 If you have a natural allergy toward subscribing to mailing lists, there are [other ways to get help, too](/help).
 
-Bugs
-----
+## Bugs
 
 If you have found a bug, please [submit a bug report](/help/bug-reporting-best-practices) via the Help menu's [Report a Bug](/help/report-a-bug) plugin.
 
 [Search for an existing bug](http://search.imagej.net/) before reporting a new one.
 
-ImageJ
-------
+## ImageJ
 
 | List           | Description                                                                                                                                                                                                                                                                          | Nabble                                      | Archives                     |
 |----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|------------------------------------------------------|
 | [ImageJ](/ij/list.html) | For general user and developer discussion about [ImageJ](/about), mostly focused on [ImageJ1](/software/imagej1). For a larger community of [ImageJ2](/software/imagej2) and [Fiji](/fiji) users, the [Image.sc Forum](https://forum.image.sc/) is preferred. | [Nabble](http://imagej.1557.x6.nabble.com/) | [Archives](http://list.nih.gov/archives/imagej.html) |
 
-Supporting and related software
--------------------------------
+## Supporting and related software
 
 | List                                                  | Description                                                                                                   | Archives                                                  |
 |-------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|

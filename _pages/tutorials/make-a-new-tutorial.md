@@ -9,8 +9,7 @@ How to make a new tutorial
 
 In Fiji, we have a plugin whose only purpose is to write tutorials to be published on the Wiki. This plugin was used to make this tutorial, so in a sense, the plugin was written to document its own usage.
 
-First step: call the Tutorial Maker
------------------------------------
+## First step: call the Tutorial Maker
 
 After clicking on {% include bc path='Plugins | Utilities | Fiji | New Fiji Tutorial'%}, you will be asked for the title of your tutorial:
 
@@ -20,8 +19,7 @@ You will get two new windows: the *Snapshot* winow (which is set to be always on
 
 <img src="/media/How to make a new tutorial-Editor.jpg" width="640"/>
 
-Second step: take snapshots
----------------------------
+## Second step: take snapshots
 
 The *Snapshot* window supports two modes with two different delays:
 
@@ -56,15 +54,13 @@ The other method is to select the image and click on ImageJ's {% include bc path
 
 In both cases, the image references in the text will be adjusted automatically.
 
-Third step: Add some helpful descriptions
------------------------------------------
+## Third step: Add some helpful descriptions
 
 A picture says more than a thousand words, but to be sure that it actually says what you want to tell, add a bit of surrounding text to the snapshots:
 
 <img src="/media/How to make a new tutorial-AddText.jpg" width="640"/>
 
-Fourth step: preview
---------------------
+## Fourth step: preview
 
 Now is the time to preview your work:
 
@@ -78,8 +74,7 @@ This will **not** upload the images yet, but use the Wiki engine to render HTML 
 
 Now is the time to proof-read. Fix whatever you do not like and make a new preview as often as you need to; nothing is stored in the Wiki so far.
 
-Fifth step: upload
-------------------
+## Fifth step: upload
 
 When everything is good to go, upload the tutorial:
 

@@ -14,8 +14,7 @@ categories: Plugins,Registration
 {% endcapture %}
 {% include info-box software='Fiji' name='Microscope Measurement Tools' author=author maintainer='Demis D. John (<demis.john@gmail.com>)' filename=' [Download from GitHub/Releases](https://github.com/demisjohn/Microscope-Measurement-Tools/releases)' source=source released='Sept. 24<sup>th</sup>, 2015' latest-version='2.3' status='beta' website=' [Microscope Measurement Tools at GitHub](https://github.com/demisjohn/Microscope-Measurement-Tools)' %} Recall saved calibrations for your microscope's measurement scale and create measurement annotations.
 
-Description
------------
+## Description
 
 This set of plugins provides a quick way to save distance/length calibrations for various microscopes/objectives in a simple text file.
 
@@ -36,8 +35,7 @@ Three files are included:
 -   *Microscope\_Calibrations\_user\_settings.py*
     -   Settings file that contains your pre-configured scale calibrations, along with some settings for drawing annotations (background/text color etc.)
 
-Installation & Usage Manual
----------------------------
+## Installation & Usage Manual
 
 Please see the complete installation & usage instructions here:
 
@@ -127,8 +125,7 @@ A sub-folder is included that shows how to implement a custom function in Python
 
 The example adds a Calibration for a JEOL SEM, which automatically sets the scale based on an accompanying \*.txt file. The functionality could be extended to other scale-calibrations which are difficult to hard-code as a single resolution (other continuously-varying magnifications, like SEM tools etc.).
 
-Author(s)
----------
+## Author(s)
 
 This simple python (jython) plugin was created by {%- include person id='Demis' -%}, 2015.
 

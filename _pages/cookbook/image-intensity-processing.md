@@ -7,8 +7,7 @@ section: Learn:Cookbook
 
 
 
-Brightness and Contrast
------------------------
+## Brightness and Contrast
 
 {% include thumbnail src='/media/Brightness contrast pic.png' title='right'%} Brightness is the visual perception of reflected light. Increased brightness refers to an image's increased luminance.
 
@@ -26,8 +25,7 @@ Pressing the *Apply* button permanently changes the *actual* grey values of the 
 
 If you prefer the image to be displayed as "black on white" rather than "white on black", then use the "inverted" command: {% include bc path='Image | Lookup Tables | Invert LUT'%}. The command {% include bc path='Edit | Invert'%} inverts the pixel *values themselves* permanently.
 
-Getting intensity values from single ROI
-----------------------------------------
+## Getting intensity values from single ROI
 
 If working with a stack, the ROI selected can be analyzed with the command: {% include bc path='Image | Stacks | Plot Z Axis Profile'%}. This generates a single column of numbers - one slice intensity per row.
 
@@ -35,13 +33,11 @@ The top 6 rows of the column are details of the ROI. This makes sure the same RO
 
 The results are displayed in a plot-window with the ROI details in the plot window title. The plot contains the buttons *List, Save, Copy.* The *Copy* button puts the data in the clipboard so it can be pasted into an Excel sheet. The settings for the copy button can be found under {% include bc path='Edit | Options | Profile Plot Options'%}. Recommended settings include: *Do not save x-values* (prevents slice number data being pasted into Excel) and *Autoclose* so that you don't have to close the analyzed plot each time.
 
-Dynamic intensity vs Time analysis
-----------------------------------
+## Dynamic intensity vs Time analysis
 
 The plugin *Plot Z Axis Profile* (this is the *Z Profiler* from Kevin (Gali) Baler (gliblr at yahoo.com) and {%- include person id='rasband' -%} simply renamed) will monitor the intensity of a moving ROI using a particle tracking tool. This tool can be either manual or automatic. Use the {% include bc path='Image | Stacks | Plot Z Axis Profile'%} command.
 
-Getting intensity values from multiple ROIs
--------------------------------------------
+## Getting intensity values from multiple ROIs
 
 You can analyze multiple ROIs at once with Bob Dougherty's *Multi Measure* plugin. The native "ROI manager" function does a similar job except doesn't generate the results in sorted columns. Check [Bob's website](http://www.optinav.com/imagej.html) for updates.
 
@@ -65,8 +61,7 @@ The Multi Measure plugin that comes with the installation is v3.2.
 
 Oval and rectangular ROIs can be restored individually from x, y, l, h values with the {% include bc path='Plugins | ROI | Specify ROI...'%} command.
 
-Ratio Analysis
---------------
+## Ratio Analysis
 
 ![](/media/Intensity ratio analysis.jpg "fig:intensity_ratio_analysis.jpg") Ratiometric imaging compares the recordings of two different signals to see if there are any similarities between them. It is done by dividing one channel by another channel to produce a third ratiometric channel. This technique is useful because it corrects for dye leakage, unequal dye loading, and photo-bleaching. An example application would be measuring intracellular ion, pH, and voltage dynamics in real time.
 
@@ -98,8 +93,7 @@ To generate a reference image:
 2.  Adjust the brightness and contrast if necessary.
 3.  Select the new image and click the "More" button in the ROI manager. After that select "Label".
 
-Obtaining timestamp data
-------------------------
+## Obtaining timestamp data
 
 ### Zeiss LSM
 
@@ -111,8 +105,7 @@ In Fiji, corresponding commands are: "{% include bc path='File | Import | Show L
 
 This reading can be found by using the menu command {% include bc path='Image | Show Info...'%}. Scroll down to get the time each slice was acquired. Select this time, copy it into Excel, and find the time number obtained by using the Excel menu command {% include bc path='Edit | Replace'%}. This will leave only the time data. The "elapsed" time can then be calculated by subtracting row 1 from all subsequent rows.
 
-Pseudo-linescan
----------------
+## Pseudo-linescan
 
 Linescanning involves acquiring a single line, one pixel in width, from a common confocal microscope instead of a standard 2D image. This is usually a faster way to take an image. All the single pixel-wide images are then stacked to recreate the 2D image.
 
@@ -122,8 +115,7 @@ A line of interest is drawn followed by the command: {% include bc path='Image |
 
 Fiji's default settings assume that stacks are *z*-series rather than *t*-series. This means that many functions related to the third-dimension of an image stack are referred to with a *z-*. Just keep this in mind.
 
-FRAP (Fluorescence Recovery After Photobleaching) Analysis
-----------------------------------------------------------
+## FRAP (Fluorescence Recovery After Photobleaching) Analysis
 
 The FRAP profiler plugin will analyze the intensity of a bleached ROI over time and normalize it against the intensity of the whole cell. After that it will find the minimum intensity in the bleached ROI and fit the recovery with this point in mind.
 
@@ -135,8 +127,7 @@ To use:
 4.  Run the FRAP profiler plugin.
 5.  The plugin will return the intensity vs time plot, the normalized intensity vs time plot of the bleached area, and the curve fit.
 
-Non-linear contrast stretching
-------------------------------
+## Non-linear contrast stretching
 
 ### Equalization
 
@@ -154,8 +145,7 @@ Gamma can be adjusted via the {% include bc path='Process | Math | Gamma'%} comm
 
 ![](/media/Gamma pic.jpg "gamma_pic.jpg")
 
-Filtering
----------
+## Filtering
 
 See the [online reference](http://homepages.inf.ed.ac.uk/rbf/HIPR2/filtops.htm) for an explanation of digital filters and how they work.
 
@@ -175,8 +165,7 @@ Filters can be found using the menu command {% include bc path='Process | Filter
 
 *Kalman filter*: This filter, also known as the Linear Quadratic Estimation, recursively operates on noisy inputs to compute a statistically optimal estimate of the underlying system state.
 
-Background correction
----------------------
+## Background correction
 
 Background correction can be done in multiple ways. A simple method is to use the {% include bc path='Image | Lookup Tables | HiLo'%} LUT to display zero values as blue and white values (pixel value 255) as red.
 
@@ -202,8 +191,7 @@ This macro, because it also works with stacks, can be used on time-courses with 
 
 <table><tbody><tr class="odd"><td style="border:none;padding:0in;"><center><p>Before correction</p></center></td><td style="border:none;padding:0in;"><center><p>Background intensity over time</p></center></td><td style="border:none;padding:0in;"><center><p>After <em>ROI_BG_Correction</em></p></center></td></tr><tr class="even"><td style="border:none;padding:0in;"><p> <img src="/media/Roi back corr before.gif" title="fig:roi_back_corr_before.gif" alt="roi_back_corr_before.gif" /></p></td><td style="border:none;padding:0in;"><p> <img src="/media/Roi back corr during.gif" title="fig:roi_back_corr_during.gif" alt="roi_back_corr_during.gif" /></p></td><td style="border:none;padding:0in;"><p> <img src="/media/Roi back corr after.gif" title="fig:roi_back_corr_after.gif" alt="roi_back_corr_after.gif" /></p></td></tr></tbody></table>
 
-Flat-field correction
----------------------
+## Flat-field correction
 
 ### Proper correction
 
@@ -232,8 +220,7 @@ You can experiment with the settings to optimize the filtering and also choose t
 
 ![](/media/NewFftBandFilter.jpg "newFftBandFilter.jpg")
 
-Masking unwanted regions
-------------------------
+## Masking unwanted regions
 
 ### Simple masking
 

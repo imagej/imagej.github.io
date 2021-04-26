@@ -4,8 +4,7 @@ title: Conference
 categories: Conference, community
 ---
 
-ImageJ User and Developer Conferences
--------------------------------------
+## ImageJ User and Developer Conferences
 
 ![](/media/Imagej-conference-logo.png "Imagej-conference-logo.png")
 

@@ -17,8 +17,7 @@ title: Anomalous Diffusion Filters
 {% endcapture %}
 {% include info-box name='Anomalous Diffusion Filters PlugIn' software='Fiji' author=author maintainer=maintainer source=source released='February 03<sup>rd</sup>, 2015' latest-version='February 03<sup>rd</sup>, 2015' status='experimental, active' category='[Plugins](Category_Plugins), [Filtering](Category_Filtering)' %}
 
-Anomalous Diffusion Filters
----------------------------
+## Anomalous Diffusion Filters
 
 {% include thumbnail src='/media/Filters-examples.png' title='Filtering examples with the T1w MRI stack available in Fiji examples images.'%}
 
@@ -30,8 +29,7 @@ In summary, the anomalous diffusion filters are generalized methods that are pro
 
 -   *Feb-01-2015*: The methods are capable to process image stacks, however, all the filtering method still is performed in bidimensional images.
 
-Anomalous Diffusion Analytic Description
-----------------------------------------
+## Anomalous Diffusion Analytic Description
 
 Anomalous diffusion processes (ADP) are mathematically denoted by a power law in the Fokker-Planck equation, leading to the generalized form. There are several generalizations of the Fokker-Plank equation, which should give many different partial differential equations (PDEs). Here we adopt only the so called porous media form, allowing the super-diffusive and the sub-diffusive processes. In porous media, channels are created promoting or blocking the flow of the density function. Equation (\\ref{Eq:FokkerPlanckGeneralized}) shows the generalized heat flow equation that is the main PDE equation for the anomalous diffusion paradigm.
 
@@ -57,8 +55,7 @@ $$
 
 Where $$I_{\phi,t}$$ and $$I_{\phi,t+1}$$ are the evaluated images in $$t_i$$ iterations, and $$I_{\phi,0}$$ is the original image. $$D_{q}$$ is the diffusion coefficient regulated by a power law with $$\textit{q}$$, and $$\phi$$ are the possible orientations with respect to the central pixel. The equation above assumes the time step is a constant ($$\lambda \propto \Delta t/\Delta x^2$$) and it depends on the numerical discretization. A careful time step determination plays an important role for numerical stability. The time step determination have a direct influence on the numeric discretization of the diffusion equation and here it follows the same assumptions made for the classical anisotropic diffusion algorithm. More details about the time step parameters and numerical stability can be found in [references section](/users/Acsenrafilho) of the CSIM main wiki site.
 
-Filters parameters
-------------------
+## Filters parameters
 
 {% include thumbnail src='/media/Filters-parameters.png' title='Filter\'s parameters for both isotropic and anisotropic approaches.'%}
 
@@ -68,7 +65,6 @@ Now, the only different parameters that have to be set for each filter method ar
 
 In the case of isotropic filtering, the diffusion intensity is set as a fixed parameter for all filtering process, given by the Generalized diffusion coefficient value ($$D_q$$). This approach is similar with the {% include wikipedia title='Gaussian blur' text='Gaussian blur'%} and have the physical process, where all the image space have the same diffusion intensity applied. A further idea, the anisotropic filtering set a local diffusion intensity based on the neighborhood characteristic. The local gradient magnitude is the general parameter to set what will be the filter behavior in that specific region of the image, given by its pixel neighbors. This kind of solution for the local diffusion intensity (gradient magnitude) is similar with the Perona and Malik anisotropic filter and for this case the Condutance parameters plays the edge detection role. See the {% include wikipedia title='Anisotropic diffusion' text='Classic Anisotropic Filter'%} to get more information about the condutance parameter.
 
-Indicated Usage
----------------
+## Indicated Usage
 
 Some studies were already made with different MRI imaging techniques and the both isotropic and anisotropic filters shown a good performance with some specific imaging modalities. Diffusion tensor imaging (DTI) and structural MRI images such as T1 and T2 weighted images show a better filtering efficiency with the AAD filter. For the IAD method, we indicate the use of higher SNR images such as T1 weighted images, where you do not need to decrease so much noise presented in the original image. A short analysis with functional MRI and Diffusion Weighted Imaging with the IAD methods was made and publish in international conferences ([fMRI](http://www.ncbi.nlm.nih.gov/pubmed/25570699), [DWI](http://www.ncbi.nlm.nih.gov/pubmed/24110614)) and should be appropriate use this kind of filtering method to enhance image quality in these cases.

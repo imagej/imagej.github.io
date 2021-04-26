@@ -4,20 +4,17 @@ title: SPIM Registration Method
 categories: Plugins,Registration
 ---
 
-Citation
---------
+## Citation
 
 Please note that the SPIM registration plugin available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
 -   S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", *Nature Methods*, **7**(6):418-419. [Webpage](http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html) [PDF](/media/Nmeth0610-418.pdf) [Supplement](/media/Nmeth0610-418-S1.pdf)
 
-Important Note
---------------
+## Important Note
 
 <span style="color:#A52A2A"> ***For details about the SPIM registration, fusion & deconvolution please have a look at the [Multiview Reconstruction Plugin](/plugins/multiview-reconstruction). It is much more powerful, flexible and completely integrated with the [BigDataViewer](/plugins/bdv). Documentation on the outdated [SPIM Registration](/plugins/spim-registration) is still available.*** </span>
 
-Introduction
-------------
+## Introduction
 
 ### SPIM principles
 
@@ -39,8 +36,7 @@ Matula et al.[28] suggest segmentation based approaches for reconstruction of mu
 
 Our approach combines the idea of using fiduciary markers, local descriptors and geometric hashing and applies global optimization. It can register an arbitrary number of partially overlapping point clouds. It is robust with respect to the amount of incorporated beads, bead distribution, amount of overlap, and can reliably detect non-affine disturbances (e.g. abrupt agarose movement) that might occur during imaging ([Table 1](#Table1)).
 
-The Method
-----------
+## The Method
 
 ### Bead Segmentation
 
@@ -98,8 +94,7 @@ The presence of sub-resolution fluorescent beads used for the registration of th
 
 To completely remove all beads from the sample we adapt the intensities of the beads to the imaged sample. Therefore we simply embed beads excitable by a different wavelength then the fluorescent maker in the sample and use a long-pass filter for detection ([Figure 6e,g](/media/Showcase.jpg)). In such acquisition the intensity of the beads is around 2-4.
 
-Evaluation
-----------
+## Evaluation
 
 ### Evaluation of the performance of the bead-based registration framework
 
@@ -144,8 +139,7 @@ We show minimal, average and maximal displacement of all true correspondences (b
 
 ------------------------------------------------------------------------
 
-Samples imaged by SPIM
-----------------------
+## Samples imaged by SPIM
 
 ### Overview of imaged specimens
 
@@ -161,8 +155,7 @@ Despite the fact that our algorithm is robust with respect to the amount of bead
 
 We applied the bead-based registration framework to various samples derived from major model organisms. These include *Drosophila* embryo, larva ([Figure 6a–c](/media/Showcase.jpg)) and oogenesis ([Figure 6d](/media/Showcase.jpg)), *C. elegans* adult (data not shown), larval stages ([Figure 6e](/media/Showcase.jpg)) and early embryo ([Figure 6f](/media/Showcase.jpg)), whole mouse embryo ([Figure 6g](/media/Showcase.jpg)), and dual color imaging of zebrafish embryo ([Figure 6h](/media/Showcase.jpg)). Despite the fact that the samples range significantly in their size, fluorescent labeling, optical properties and mounting formats the bead-based registration framework was invariably capable of achieving the registration. Therefore, we conclude that our method is sample independent and is universally applicable for registration of any multi-view SPIM acquisition where the sample movement does not disturb the rigidity of the agarose.
 
-Broad applicability of the bead-based framework to multi-view imaging
----------------------------------------------------------------------
+## Broad applicability of the bead-based framework to multi-view imaging
 
 {% include thumbnail src='/media/Rotation chamber.png' title='<b>Figure 7:</b> Multi-view imaging with spinning disc confocal microscopy'%} Having the bead-based registration framework for multi-view reconstruction established, we sought to expand its application beyond SPIM, to other microscopy techniques capable of multi-view acquisition.[54] We designed a sample-mounting set-up that allows imaging of a sample embedded in a horizontally positioned agarose column with fluorescent beads ([Figure 7a](/media/Rotation chamber.png)). The agarose column was manually rotated mimicking the SPIM multi-view acquisition. We acquired multiple views of fixed Drosophila embryos stained with nuclear dye on a spinning disc confocal microscope and reconstructed the views using the bead-based registration framework. By mosaicking around the sample, we captured the specimen in toto and achieved full lateral resolution in areas that are compromised by the poor axial resolution of a single-view confocal stack ([Figure 7b,c,d](/media/Rotation chamber.png) and [Video 6](/media/Supplementary Video 6 Drosophila Spinning Disc.mov) ). The combination of multi-view acquisition and bead-based registration is applicable to any imaging modality as long as the fluorescent beads can be localized and the views overlap.
 
@@ -172,22 +165,19 @@ We constructed a sample chamber for multi-view imaging on an upright microscope 
 
 For imaging, the capillary with the sample embedded in agarose containing appropriate amount of fluorescent beads was inserted into the capillary mounting hole until it reached the end of the capillary bed. The teflon dish was filled with water and the agarose was pushed out of the capillary into the agarose bed by the plunger. Water dipping objective was lowered into the dish and focussed on the *Drosophila* embryo specimen in agarose. A confocal stack was acquired using variety of optical sectioning techniques (spinning disc confocal ([Figure 7](/media/Rotation chamber.png)), single photon confocal (see [Video 3](/media/Supplementary Video 3 Global Opt with Tiling.mov)), two photon confocal, apotome (data not shown). Next, to achieve multi-view acquisition, the agarose column was retracted into the capillary by the plunger and the capillary was manually rotated. The angle of the rotation was only very roughly estimated by the position of a tape piece attached to the capillary. The agarose was again pushed out into the agarose bed and another confocal stack was collected. In this way arbitrary number of views can be collected as long as the sample does not bleach.
 
-Implementation
---------------
+## Implementation
 
 {% include thumbnail src='/media/Screenshot.png' title='<b>Figure 8:</b> Screenshot of SPIM registration plugin in Fiji'%} The bead-based registration framework is implemented in the Java programming language and provided as a fully open source plugin packaged with the ImageJ distribution [Fiji](/fiji) (Fiji Is Just ImageJ, that is actively developed by an international group of developers. The plugin ([Figure 8](/media/Screenshot.png)) performs all steps of the registration pipeline: bead segmentation, correspondence analysis of bead-descriptors, outlier removal (RANSAC and global regression), global optimization including optional visualization, several methods for fusion, blending and time-lapse registration.
 
 The tutorial on how to use the plugin in basic and advanced mode is available at [SPIM Registration](/plugins/spim-registration). The test data containing 7-view SPIM acquisitions of *Drosophila* embryo can be downloaded from [1](http://fly.mpi-cbg.de/preibisch/nm/HisYFP-SPIM.zip).
 
-Acknowledgments
----------------
+## Acknowledgments
 
 We want to thank [Carl Zeiss Microimaging](http://www.zeiss.de/micro) for access to the SPIM demonstrator, Radoslav Kamil Ejsmont[55] for His-YFP flies, Dan White,[56], Jonathan Rodenfels,[57] Ivana Viktorinova,[58] Mihail Sarov,[59] Steffen Jänsch,[60] Jeremy Pulvers,[61] and Pedro Campinho[62] for providing various biological samples for imaging with SPIM shown in [Figure 6](/media/Showcase.jpg).
 
 <references group="A" />
 
-References
-----------
+## References
 
 <references />
 

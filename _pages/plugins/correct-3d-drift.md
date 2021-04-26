@@ -15,7 +15,6 @@ This Fiji menu command is implemented by the script {% include github org='fiji'
 
 The script was originally written by {%- include person id='acardona' -%} and [Robert Bryson-Richardson](http://monash.edu/science/about/schools/biological-sciences/staff/bryson-richardson/) while attending the [Developmental Imaging EMBO course](http://cwp.embo.org/pc10-37/) organized by [Gabriel](http://www.igc.gulbenkian.pt/research/photo/556/) [G. Martins](http://www.igc.gulbenkian.pt/research/unit/51).
 
-Publication
------------
+## Publication
 
 -   [Parslow A, Cardona A and Bryson-Richardson RJ (2014) Sample drift correction following 4D confocal time-lapse imaging. J Vis Exp. 2014 Apr 12;(86). doi: 10.3791/51086](http://http://www.jove.com/video/51086/sample-drift-correction-following-4d-confocal-time-lapse-imaging).

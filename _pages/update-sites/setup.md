@@ -7,18 +7,15 @@ section: Help:Update Sites
 
 
 
-Introduction
-------------
+## Introduction
 
 This tutorial explains how to **set up a website to distribute your plugins**. It assumes that your plugins are correctly installed in your local ImageJ setup.
 
-Rationale
----------
+## Rationale
 
 See the [Distribution](/develop/distributing) page for a discussion of the benefits of update sites and how they fit in to plugin development.
 
-Add your personal update site
------------------------------
+## Add your personal update site
 
 By far the easiest method to provide your macros, scripts and plugins to other users, letting them keep up-to-date in the most convenient manner, is to set up your *personal update site*.
 
@@ -50,15 +47,13 @@ Rather than having a single update site for many plugins, it is highly advised t
 Such dedicated update site can have a more intuitive name.  
 A given user/wiki account can own several update sites. To request a new update site for your user account, post your request on the forum (see [related post](https://forum.image.sc/t/distributing-several-update-sites/21219/2?u=lthomas)), or on the [ImageJ Gitter](https://gitter.im/imagej/imagej).
 
-Group update site
------------------
+## Group update site
 
 In addition to [personal update sites](/update-sites/setup#add-your-personal-update-site), it is possible for groups of people to share an update site.
 
 To create such an update site, post on the [Image.sc Forum](https://forum.image.sc/tags/imagej), or in the [imagej Gitter channel](https://gitter.im/imagej/imagej), requesting the creation of the site on `sites.imagej.net`, including the desired name of the site, as well as the wiki usernames to be granted upload permission to the group update site. An administrator will then create the site skeleton and grant those users upload permission to the new site.
 
-Adding an update site on your own server
-----------------------------------------
+## Adding an update site on your own server
 
 If you have an own server or web space with WebDAV, SFTP or SSH access, you can create a directory in that web space and initialize it as an update site, too. Just call the updater with {% include bc path='Help | Update'%} and click the *Manage update sites* button:
 
@@ -94,8 +89,7 @@ If the update site has not been initialized yet (i.e. if nobody else has initial
 
 Just click *OK* and let the updater upload an empty file index (it is stored in the file *db.xml.gz* which is also called the *database* in the documentation of the updater).
 
-Uploading files to your update site
------------------------------------
+## Uploading files to your update site
 
 Note: you cannot simply copy files to your web space; the updater would miss all kinds of important information, and consequently refuse to accept that update site. You **need** to let the updater handle the file uploading.
 
@@ -161,14 +155,12 @@ Check that your plugins are now registered as ImageJ plugins by selecting the *V
 That's it - you're done. Now, anyone who wants a copy of your plugins merely needs to [add your update site](/update-sites/following) to the Update manger via the URL you specified, and your plugins will be downloaded and updated in their ImageJ installations just like the standard ImageJ plugins.  
 For even more visibility and practicability, you can ask to have your update site listed in the Fiji Updater (see section below).
 
-Publishing your update site
----------------------------
+## Publishing your update site
 
 If you want your update site to be listed in the ImageJ update manager, follow the instructions at this page : {% include list-of-update-sites%}
 .
 
-Further Reading
----------------
+## Further Reading
 
 For additional information on common topics regarding update site maintenance, please see the [update site FAQ](/update-sites/faq).
 

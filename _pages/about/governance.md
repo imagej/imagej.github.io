@@ -15,8 +15,7 @@ The [ImageJ](/about) project, and related projects in the [SciJava](SciJava) sof
 
 That said, every project needs leaders: the ones who participate in *governance* of the project, {% include wikipedia title='Software maintenance' text='maintaining'%} the software and making key decisions.
 
-Project roles
--------------
+## Project roles
 
 Because [open source](Open_source) software (OSS) is highly collaborative, it is extremely important to understand the difference between various roles on the project, to avoid misconceptions about **authority** (who makes decisions) and **responsibility** (who is pledged to do the work) concerning each project.
 
@@ -45,8 +44,7 @@ Projects in the [SciJava component collection](/develop/architecture) define eac
 
 Individuals often fill more than one role.
 
-Component status
-----------------
+## Component status
 
 This web site documents lots of software [components](/develop/architecture#definitions)—and in particular, many ImageJ [plugins](/plugins). Components in the ecosystem each have a distinct development path, with varying levels of maturity and activity, which is ultimately determined by the people who participate in developing it.
 
@@ -74,8 +72,7 @@ Each component's page features an informational sidebar with a status report der
 | Minimal | There is at least one person pledged to the project in some capacity, but not all roles are filled. Response time to questions and issue reports may be protracted.                             |
 | None    | No one is pledged to support the project. Questions and issue reports may be ignored.                                                                                                           |
 
-SciJava project summary
------------------------
+## SciJava project summary
 
 Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
 
@@ -124,8 +121,7 @@ Birgit Möller</p></td><td><p><a href="https://github.com/orgs/mitobo-hub/people
 <sup>1</sup> Pietzsch leads on day to day issues. Pietzsch, Preibisch and Saalfeld vote on primary decisions, with Pietzsch's vote breaking ties.  
 <sup>2</sup> Barber leads development of the {% include github org='slim-curve' repo='slim-curve' label='SLIM Curve C library' %}; Rueden leads development of the {% include github org='slim-curve' repo='slim-plugin' label='SLIM Curve plugin for ImageJ' %}.
 
-Further reading
----------------
+## Further reading
 
 -   [OSS Watch's article on Governance Models](http://oss-watch.ac.uk/resources/governancemodels)
 -   Eric S. Raymond's [Homesteading the Noosphere](http://catb.org/~esr/writings/homesteading/homesteading/)

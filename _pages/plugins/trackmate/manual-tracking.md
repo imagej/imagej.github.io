@@ -6,8 +6,7 @@ categories: Tutorials
 
 The previous TrackMate tutorial - [Manual editing of tracks using TrackMate](/plugins/trackmate/manual-track-editing) is dedicated to manually correcting the results of an automated process. This small tutorial here shows how to do a fully manual annotation with [TrackMate](/plugins/trackmate).
 
-Setting up
-----------
+## Setting up
 
 ![](/media/plugins/trackmate ManualTrackingEntryPoint.png)
 
@@ -20,8 +19,7 @@ You should should get the layout pictured on the right. Notice that we are alrea
 {% include clear%}
 
 
-Creating spots one by one
--------------------------
+## Creating spots one by one
 
 The default view (the one that re-uses the HyperStack viewer of ImageJ) can readily edit the tracks. You just have to make sure that the TrackMate tool is selected in the ImageJ toolbar:
 
@@ -49,8 +47,7 @@ And that's it for spot creation.
 
 ![](/media/plugins/trackmate CreateSpots.png)
 
-Create and removing single links
---------------------------------
+## Create and removing single links
 
 ![](/media/plugins/trackmate CreateSingleLink.png)
 
@@ -66,8 +63,7 @@ As you can see, there is nothing that prevents you from creating a link over man
 
 Removing a link is done the same way: Select exactly two spots that are connected by a link, and press the {% include key content='L' %} key. The link will be removed.
 
-The auto-linking mode
----------------------
+## The auto-linking mode
 
 ![](/media/plugins/trackmate ManualTracking 1.png)
 
@@ -89,8 +85,7 @@ Therefore, to create the branch that goes on the right, go back on the frame 9 (
 {% include clear%}
 
 
-Tracks are updated live
------------------------
+## Tracks are updated live
 
 ![](/media/plugins/trackmate ManualTracking 3.png)
 
@@ -101,8 +96,7 @@ The same is valid when you delete a link or a spot. For instance, let's create 3
 {% include clear%}
 
 
-Track and spot features are updated live
-----------------------------------------
+## Track and spot features are updated live
 
 <figure><img src="/media/plugins/trackmate GUIManualTracking.png" title="TrackMate_GUIManualTracking.png" width="200" alt="TrackMate_GUIManualTracking.png" /><figcaption aria-hidden="true">TrackMate_GUIManualTracking.png</figcaption></figure>
 
@@ -115,8 +109,7 @@ The track and spot colors are refreshed immediately in the HyperStack displayer.
 {% include clear%}
 
 
-The semi-automatic tracking tool
---------------------------------
+## The semi-automatic tracking tool
 
 Since v2.1.0, TrackMate includes a tool that can automatically find spots and automatically link them to build a track. This is extremely handy to annotate images for which the automated detection in bulk yields too much spurious spots. I wish I had come with the idea *before* I started doing *C.elegans* lineaging.
 
@@ -136,8 +129,7 @@ How far can it go really depends on the radius you set for the first spot, so re
 
 Great, no?
 
-Wrapping up
------------
+## Wrapping up
 
 These are the tools that should allow you to work very quickly. For fun: redo this tutorial with a [TrackScheme](/plugins/trackmate/trackscheme) window open. You should see that it works very well with manual annotation.
 

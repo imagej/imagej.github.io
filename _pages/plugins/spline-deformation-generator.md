@@ -15,14 +15,12 @@ artifact: sc.fiji:SplineDeformationGenerator\_
 -   Barrel/pincushion deformations.
 -   "Smile" deformations, typical from 2D gels images.
 
-Documentation
--------------
+## Documentation
 
 -   Main site's [user manual](http://biocomp.cnb.csic.es/~iarganda/SplineDeformationGenerator/index.html#Generalities)
 -   [API documentation](http://biocomp.cnb.csic.es/~iarganda/SplineDeformationGenerator/API/index.html)
 
-References
-----------
+## References
 
 \[1\] I. Arganda-Carreras, C. O. S. Sorzano, R. Marabini, J.-M. Carazo, C. Ortiz-de Solorzano, and J. Kybic, ["Consistent and Elastic Registration of Histological Sections using Vector-Spline Regularization,"](http://biocomp.cnb.uam.es/~iarganda/bUnwarpJ/downloads/arganda_carreras_CVAMIA06.pdf) Lecture Notes in Computer Science, Springer Berlin / Heidelberg, volume 4241/2006, CVAMIA: Computer Vision Approaches to Medical Image Analysis, pages 85-95, 2006.
 
@@ -32,8 +30,7 @@ References
 
 \[4\] M. Unser, ["Splines: A Perfect Fit for Signal and Image Processing,"](http://bigwww.epfl.ch/publications/unser9902.html) IEEE Signal Processing Magazine, vol. 16, no. 6, pp. 22-38, November 1999.
 
-License
--------
+## License
 
 This program is **free software**; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt](http://www.gnu.org/licenses/gpl.txt)).
 

@@ -16,8 +16,7 @@ This page is meant to provide small code snippets as a starting point for writin
 
 **Note:** To copy the snippets, just double-click somewhere into the code. If Javascript is enabled, this will automatically select the complete snippet.
 
-Opening an image using ImageJ
------------------------------
+## Opening an image using ImageJ
 
 #### Macro
 
@@ -64,8 +63,7 @@ Opening an image using ImageJ
     imp = IJ.openImage(path);
     imp.show();
 
-Opening an image using Bio-Formats
-----------------------------------
+## Opening an image using Bio-Formats
 
 #### Macro
 
@@ -113,8 +111,7 @@ See also [this python example script](https://gist.github.com/ctrueden/6282856)
 
 -   Beanshell
 
-Opening, processing, and saving a sequence of files in a folder
----------------------------------------------------------------
+## Opening, processing, and saving a sequence of files in a folder
 
 #### Macro
 
@@ -216,8 +213,7 @@ See also the tutorial *[How to apply a common operation to a complete directory]
 
 -   Beanshell
 
-Wait a given amount of time, or until user presses OK
------------------------------------------------------
+## Wait a given amount of time, or until user presses OK
 
 #### Macro
 
@@ -249,8 +245,7 @@ or
 
 -   Beanshell
 
-Select multiple ROIs from ROI manager and combine them
-------------------------------------------------------
+## Select multiple ROIs from ROI manager and combine them
 
 #### Macro
 
@@ -287,8 +282,7 @@ Select multiple ROIs from ROI manager and combine them
 
 -   Clojure
 
-Unlocking an image
-------------------
+## Unlocking an image
 
 Sometimes things go wrong and all you see is "blabla.jpg is locked" when you try to process the image in some way. Then all you can do is to force-unlock the image, like so:
 
@@ -296,8 +290,7 @@ Sometimes things go wrong and all you see is "blabla.jpg is locked" when you try
 
     IJ.getImage().unlock();
 
-Scripting [SIFT](/plugins/feature-extraction)
------------------------------------------------
+## Scripting [SIFT](/plugins/feature-extraction)
 
 The *Scale-Invariant Feature Transform* poses a relatively powerful way to reduce the complexity when trying to find matching parts of large images. Fiji has an implementation of this algorithm which you can use like so:
 
@@ -321,8 +314,7 @@ The *Scale-Invariant Feature Transform* poses a relatively powerful way to reduc
 
 For more information, please browse the [Javadoc of the Feature class](http://javadoc.imagej.net/MPI-CBG/index.html?mpicbg/imagefeatures/Feature.html).
 
-Plotting charts with JFreeChart
--------------------------------
+## Plotting charts with JFreeChart
 
 [JFreeChart](http://www.jfree.org/jfreechart/) is a Java library for creating various charts. You can create charts as interactive JFrames, display them as an ImagePlus, or write them to SVG format.
 
@@ -422,8 +414,7 @@ Plotting charts with JFreeChart
     outputStream.flush();
     outputStream.close();
 
-Writing out movie files with JavaCV
------------------------------------
+## Writing out movie files with JavaCV
 
 [JavaCV](https://github.com/bytedeco/javacv) is a Java wrapper around OpenCV and FFMPEG. You will have to unpack the libraries into `ImageJ.app/lib/`<platform>`/` (or `Fiji.app/lib/`<platform>`/`) to let JavaCV find the native libraries (e.g. unpack ffmpeg-macosx-x86\_64.jar's `.dylib` files directly into `ImageJ.app/lib/macosx/`) **before** starting ImageJ/Fiji.
 

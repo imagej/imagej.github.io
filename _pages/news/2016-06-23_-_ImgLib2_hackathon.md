@@ -6,8 +6,7 @@ categories: News,Hackathons,ImageJ2
 
 <img src="/media/Janelia-2016-hackathon.jpg" title="fig:ImgLib2 hackers, from left to right: {%- include person id='axtimwalde' -%}, {%- include person id='dietzc' -%}, {%- include person id='ctrueden' -%}, {%- include person id='tpietzsch' -%}." width="450" alt="ImgLib2 hackers, from left to right: {%- include person id='axtimwalde' -%}, {%- include person id='dietzc' -%}, {%- include person id='ctrueden' -%}, {%- include person id='tpietzsch' -%}." /> From Sunday, June 19, 2016 through Tuesday, June 28, 2016, {%- include person id='axtimwalde' -%} at HHMI Janelia in Ashburn, Virginia hosted {%- include person id='tpietzsch' -%}, {%- include person id='ctrueden' -%} and {%- include person id='dietzc' -%} for a [hackathon](/events/Hackathon) to improve the core [ImageJ2](/software/imagej2) data model.
 
-Timeline
---------
+## Timeline
 
 The following chart illustrates when everyone was present:
 
@@ -68,8 +67,7 @@ PlotData=
 
 And {%- include person id='kephale' -%} stopped by on the afternoon of the 23rd to discuss some issues for a bit.
 
-Discussions and progress
-------------------------
+## Discussions and progress
 
 We spent the first couple of days discussing use cases and requirements for core [ImageJ2](/software/imagej2) metadata-rich image structures.
 

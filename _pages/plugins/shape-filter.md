@@ -22,8 +22,7 @@ If you like to cite the Shape Filter plugin in a scientific publication, please 
 
 Wagner, T and Lipinski, H 2013. IJBlob: An ImageJ Library for Connected Component Analysis and Shape Analysis. Journal of Open Research Software 1(1):e6, DOI: http://dx.doi.org/10.5334/jors.ae
 
-Shape Features
---------------
+## Shape Features
 
 -   **Area** ($$A$$): The area enclosed by the outer contour of an object.
 -   **Area Convex Hull** ($$C$$): The area enclosed by the convex hull of the outer contour of an object.

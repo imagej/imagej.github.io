@@ -120,8 +120,7 @@ Using ImageJ
 -   Replace the `[MY-...]` blocks with appropriate information.
 -   Replace license-related blocks with your chosen project license.
 
-Optional dependencies
----------------------
+## Optional dependencies
 
 Simply copy and paste any or all of these into your POM's <dependency> block to add the indicated functionality.
 

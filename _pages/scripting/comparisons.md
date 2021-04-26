@@ -30,8 +30,7 @@ The javascript version (at least, the naive code pasted below) is very much java
 
 To remark here that [Clojure](http://clojure.org) is **not** a scripting language: Clojure compiles directly the JVM byte code, and thus runs at native speed.
 
-In Java
--------
+## In Java
 
 See also the [Introduction into Developing Plugins](/develop/ij1-plugins) documentation page.
 
@@ -98,8 +97,7 @@ Note that above the loop is only set as an example. It's easier to simply query 
                     }
     ...
 
-In Jython
----------
+## In Jython
 
 See also the [Jython Scripting](/scripting/jython) documentation page.
 
@@ -134,8 +132,7 @@ Above, note that instead of looping the list of commands, we just query it with 
             return
     prompt.setForeground(Color.red)
 
-In Clojure
-----------
+## In Clojure
 
 See also the [Clojure Scripting](/scripting/clojure) documentation page.
 
@@ -184,8 +181,7 @@ A second version, lispier, rewritten from the above by Clojure's author [Rich Hi
       (when-not (.wasCanceled gd)
         (.doCommand ij.IJ (.getNextString gd))))
 
-In Javascript
--------------
+## In Javascript
 
 See also the [Javascript Scripting](/scripting/javascript) documentation page.
 
@@ -215,8 +211,7 @@ See also the [Javascript Scripting](/scripting/javascript) documentation page.
     if (!gd.wasCanceled())
         IJ.doCommand(gd.getNextString());
 
-In JRuby
---------
+## In JRuby
 
 For some tutorial material on using JRuby to script ImageJ, please see [JRuby Scripting](/scripting/jruby).
 
@@ -260,8 +255,7 @@ For some tutorial material on using JRuby to script ImageJ, please see [JRuby Sc
       ij.IJ.doCommand gd.getNextString
     end
 
-In BeanShell
-------------
+## In BeanShell
 
 See also the [Beanshell Scripting](/scripting/beanshell) documentation page.
 

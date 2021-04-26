@@ -31,8 +31,7 @@ Version control usually facilitates:
 -   easy synchronization (staying up-to-date, integrating changes between multiple developers/machines)
 -   finding the changes introducing regressions (AKA bugs) efficiently
 
-Hands-on
---------
+## Hands-on
 
 Initial setup:
 
@@ -90,8 +89,7 @@ Before committing, it is a good idea to see what modifications are about to be c
 4.  one or more *hunks* starting with *@@ -<begin line>,<line count> +<begin line>,<line count>*
 5.  a corresponding block of lines starting with a space for lines in both the previous and next revision, a minus for lines only in the previous one (*removed line*) and a plus for lines only in the next revision (*added line*). A modified line will show up as removed and added.
 
-Hands-on
---------
+## Hands-on
 
 -   Looking at a diff:
 
@@ -131,8 +129,7 @@ For ease of use, in addition to their long name (40 hex characters, quite klunky
 -   HEAD
 -   HEAD\~<n>
 
-Hands-on
---------
+## Hands-on
 
 -   Inspecting the version history
 
@@ -183,8 +180,7 @@ Note: branch names must be simple, i.e. not contain spaces or wild characters (a
 
 Branches can be used to organize sets of changes by topic. Compare also [Fiji's tutorial on topic branches](/develop/git/topic-branches).
 
-Hands-on
---------
+## Hands-on
 
 -   Creating a branch
 
@@ -219,8 +215,7 @@ Typically, there is one designated *main repository*. If you want to initialize 
 
 A main repository usually does not need a working directory, in which case it is called a *bare repository*.
 
-Hands-on
---------
+## Hands-on
 
 -   Clone a repository
 
@@ -249,8 +244,7 @@ In order to perform a merge, the file versions are put into a staging area (the 
 
 Please refer to the Fiji's page on [Git Conflicts](/develop/git/conflicts) for a detailed explanation how to resolve merge conflicts.
 
-Hands-on
---------
+## Hands-on
 
 -   Initialize and commit a file, say, *hello.txt*
 
@@ -291,8 +285,7 @@ We looked at the commit history previously. But every repository has its own ind
 
 You can access the reflogs by appending *@{<number>}* or *@{<date>}* to a branch name or to *HEAD*.
 
-Hands-on
---------
+## Hands-on
 
 -   See what revision was current five minutes ago
 
@@ -313,8 +306,7 @@ Sometimes one needs to store away all modifications and go back to a clean state
 
 Note: the stash is a special pseudo-branch, living in *refs/stash*. Their history is in the reflog.
 
-Hands-on
---------
+## Hands-on
 
 -   Make a change and stash it
 
@@ -365,8 +357,7 @@ To access more information about commits, use the parameter *--pretty=fuller*.
 
 For more low-level access, use `git cat-file`.
 
-Hands-on
---------
+## Hands-on
 
 -   Show the raw commit message, with the diff
 
@@ -403,8 +394,7 @@ To unstage changes, one can use the *reset* command (without arguments, it reset
 
 The *reset* command can further be convinced to reset not only the index (staging area), but also the working directory.
 
-Hands-on
---------
+## Hands-on
 
 -   pick a file version from another branch
 
@@ -442,8 +432,7 @@ Note: you need to make sure that you do not mix two different projects in the sa
 
 Note: there is a shortcut for *fetch & merge*: *pull*. If you create a new branch from a local copy of a remote branch, you can even set it up such that *git pull* without further parameters will fetch from the correct remote and merge the correct branch: *git checkout --track origin/cool-feature*
 
-Hands-on
---------
+## Hands-on
 
 -   Add a remote
 
@@ -494,8 +483,7 @@ If you need to have public repositories, you can use http://github.com/, http://
 
 As a goodie, all of said hosters support *gitweb*, a web interface to look at the history.
 
-Hands-on
---------
+## Hands-on
 
 Let's surf to http://github.com/git/hello-world and inspect the history
 

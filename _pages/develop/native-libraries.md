@@ -15,8 +15,7 @@ Sometimes, you may want to use 3rd party libraries that are not available as Jav
 
 There are two options available to make use of native libraries: [JNA](http://jna.java.net/) and JNI (see below for detailed descriptions).
 
-Disadvantages of using native libraries
----------------------------------------
+## Disadvantages of using native libraries
 
 Even if JNA and JNI provide some convenience for using native libraries, there are substantial downsides of using native libraries:
 
@@ -34,8 +33,7 @@ It is one of Java's greatest strengths that you do not need to compile for every
 
 For further arguments to use Java instead of native libraries, see also our [rationale for using Java](/develop/philosophy#why-java).
 
-JNA vs JNI
-----------
+## JNA vs JNI
 
 The benefits of JNA over JNI are:
 
@@ -54,8 +52,7 @@ JNA
 
 The [JNA project](http://jna.java.net/) (*Java Native Access*) tries to provide an easy, pure-Java way to access native libraries using their native interface.
 
-Functions
----------
+## Functions
 
 To this end, the developer has to define an interface describing in Java terms what functions the library provides. Example:
 
@@ -208,8 +205,7 @@ Example:
         }
     }
 
-Scripting JNA
--------------
+## Scripting JNA
 
 In [Beanshell](/scripting/beanshell), it is not possible to extend interfaces, so it is not possible to imitate the plain Java way to use JNA. Other scripting languages have similar problems as far as JNA is concerned.
 
@@ -273,8 +269,7 @@ JNI
 
 The abbreviation *JNI* stands for *Java Native Interface*. It is the original and best supported way to access native libraries from within Java. As such, it is robust but also a bit cumbersome to use.
 
-First steps
------------
+## First steps
 
 Before implementing any native (C or C++) code, you need to declare a native function. Example:
 
@@ -295,8 +290,7 @@ After this, the code doing the actual work needs to be implemented in a separate
 
 Before the native method can be called, the JVM needs to load the native library. There are basically two different methods to do that, *System.loadLibrary()* and *System.load()*. The former looks for the library in the system-wide library search path while the latter expects an absolute path to the dynamic link library file. For the purposes of ImageJ, the latter is usually preferred because we want to avoid requiring administrator privileges of our users.
 
-Support in ImageJ
------------------
+## Support in ImageJ
 
 Native libraries located in:
 
@@ -314,8 +308,7 @@ Finally, the *fiji.JNI* class in *fiji-lib.jar* provides convenience methods to 
 
 See also the [JNI Example](#jni-example) below.
 
-Using the Java Native Interface from C
---------------------------------------
+## Using the Java Native Interface from C
 
 There are a couple of things one needs to keep in mind when accessing Java classes, instances and methods from C.
 
@@ -381,8 +374,7 @@ The *Call<return-type>Method()* family of functions take a variable number of ar
 
 -   Pay attention to the compiler's warnings. They are not there just for fun.
 
-JNI Example
------------
+## JNI Example
 
 There is an example in Fiji's source code: {% include github org='imagej' repo='minimal-ij1-plugin' tag='native' path='src/main/c/JNI\_Example.c' %}.
 
@@ -394,8 +386,7 @@ That will result in the two files *plugins/JNI\_Example.jar* and *lib/<platform>
 
 It does not do terribly useful things as its primary purpose is to show how things are done in a straight-forward manner.
 
-Caveats
--------
+## Caveats
 
 The most important issue is that you should know which platforms (combination of Operating System and architecture, i.e. *i386 Windows* and *x86\_64 Windows* are different) you need to support and make sure that the native libraries are present. Otherwise your users will see a lot of unhelpful *UnsatisfiedLinkError* exceptions.
 
@@ -419,8 +410,7 @@ Usually, you should not need to worry about these issues, as Fiji hides them con
 
 -   If you need to load not only one library, but that library needs to load yet another library, you should set the search path so that the dynamic linker looks in the same directory as the original library, to avoid having to adjust the system-wide search path (which requires administrator privileges). The GCC linker option is called *-R$ORIGIN/* (note that you must prevent the command-line from expanding the *$* character).
 
-Further reading
----------------
+## Further reading
 
 For full information on JNI, see [Sun's/Oracle's programmer guide on JNI](http://java.sun.com/docs/books/jni/html/jniTOC.html).
 

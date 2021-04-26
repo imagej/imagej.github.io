@@ -15,8 +15,7 @@ categories: Plugins,Tutorials,Scripting
 {% endcapture %}
 {% include info-box name='Script Editor' software='ImageJ' author='Johannes Schindelin, Sumit Dubey (Google Summer of Code 2009)' maintainer=maintainer source=source released='11 Sep 2008' status='active' %}The script editor is an invaluable help when writing scripts in any of ImageJ's supported [languages](/scripting/comparisons).
 
-Features
---------
+## Features
 
 Text Editing  
 
@@ -46,8 +45,7 @@ Interface
 -   Tabs for easy switching between open files
 -   Navigation shortcuts
 
-Usage
------
+## Usage
 
 ### Starting the editor
 
@@ -79,8 +77,7 @@ You can use all of ImageJ's classes right away. Here is an example that shows a 
 
 ![](/media/Script-Editor-dialog.jpg "Script-Editor-dialog.jpg")
 
-Further reading
----------------
+## Further reading
 
 See the [Scripting Help](/scripting) page for an introduction to scripting. For more information about each specific language, see the Languages section of top right sidebar.
 

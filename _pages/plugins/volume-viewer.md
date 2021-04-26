@@ -11,8 +11,7 @@ Non-hardware accelerated volume rendering in different modalities.
 
 Documentation: /ij/plugins/volume-viewer.html
 
-See also
---------
+## See also
 
 [3D Viewer](/plugins/3d-viewer): hardware-accelerated 3D visualization of image volumes, orthoslices, and 3D meshes.
 

@@ -4,8 +4,7 @@ title: Distance Analysis
 categories: Plugins,Analysis,Colocalization,Citable
 ---
 
-Distance Analysis (DiAna)
--------------------------
+## Distance Analysis (DiAna)
 
 This plugin allows :
 
@@ -15,15 +14,13 @@ This plugin allows :
 
 The plugin can be used with labelled images, but it also integrates tools for the segmentation of the objects.
 
-Author
-------
+## Author
 
 Jean-François Gilles, Institute of Biology Paris Seine (France). jean-francois.gilles (at) upmc.fr
 
 Thomas Boudier ![](/media/EmailBoudier.png "fig:EmailBoudier.png"), [Academia Sinica](https://www.sinica.edu.tw/en), Taipei, Taiwan.
 
-Features
---------
+## Features
 
 **Denoise filter**
 
@@ -63,8 +60,7 @@ Quantifies for each found object the following parameters:
 -   Centre of mass
 -   Feret's Diameter
 
-Description
------------
+## Description
 
 *Note that when the mouse arrow passes on the items of the plugin, an explanation of each parameter is given.*
 
@@ -140,8 +136,7 @@ if the recorder has a problem, here are some examples of macro line:
 -   run("DiAna\_Segment", "img=C0.tif iter=3-2000-20-30-true");
 -   run("DiAna\_Analyse", "img1=imageA.tif img2=imageB.tif lab1=segA.tif lab2=segB.tif coloc distc=50.0 adja kclosest=1 dista=50.0 measure");
 
-Installation
-------------
+## Installation
 
 Download and copy the following jar in your plugins folder [Diana\_1.48.jar](https://drive.google.com/open?id=1aODVyqRjmU53wEM52lfLM74Yn9GP9PBl)
 
@@ -149,20 +144,17 @@ You have also to manually download and copy into your plugins directory the [3D 
 
 *Note that this version works only with 3D ImageJ library [mcib3d-core3.94.jar](https://drive.google.com/open?id=1a83KAeDEcCk0Lio3xXebd7Fxk83cTjy-) and upper!*
 
-Citation
---------
+## Citation
 
 Gilles J-F, Dos Santos M, Boudier T, Bolte S, Heck N. DiAna, an ImageJ tool for object-based 3D co-localization and distance analysis. Methods 2016 Nov 24. [1](http://www.sciencedirect.com/science/article/pii/S1046202316304649)
 
 The spot segmentation method is based on : Heck N, Dos Santos M, Amairi B, Salery M, Besnard A, Herzog E, Boudier T, Vanhoutte P, Caboche J. A new automated 3D detection of synaptic contacts reveals the formation of cortico-striatal synapses upon cocaine treatment in vivo. Brain Struct Funct. 2014 Jul 8. DOI 10.1007/s00429-014-0837-2. [2](http://link.springer.com/article/10.1007%2Fs00429-014-0837-2)
 
-License
--------
+## License
 
 GPL distribution (see [3](http://www.cecill.info/index.en.html%7Clicence)). Sources for plugins are available freely.
 
-Change log
-----------
+## Change log
 
 -   14/12/2016 v1.0.1: bug fixed for retrieving the calibration, add "about" button
 -   16/12/2016 v1.1: add save 3D-ROIs button

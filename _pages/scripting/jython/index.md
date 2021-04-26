@@ -7,13 +7,11 @@ categories: Scripting
 
 
 
-Introduction
-------------
+## Introduction
 
 Jython is an implementation of the Python programming language designed to run on the Java platform. [1] In ImageJ Jython is one of several [supported languages](/scripting#supported-languages).
 
-When to use Jython
-------------------
+## When to use Jython
 
 All scripting language supported by ImageJ can be used to access the [ImageJ API](http://javadoc.imagej.net/). There are only differences in how the imports are handled and in the syntax of the selected language. Jython has a syntax that differs from most other language as indentations instead of brackets are used to group code blocks.
 
@@ -29,8 +27,7 @@ The Java implementation of Python is limited to the [standard library](https://d
 It is not possible to use external python modules (like Numpy...) however, [any Java class residing in the Fiji installation can be used](/scripting/jython#importing-java-module-and-classes).  
 Even with the given limitations, Jython is a powerful language for ImageJ scripting. Hopefully the examples on this page can convince you of that.
 
-Jython basics for ImageJ
-------------------------
+## Jython basics for ImageJ
 
 {% include info-box content='For an introduction in ImageJ scripting visit the page [Scripting basics](/scripting/basics).' %}
 
@@ -110,8 +107,7 @@ To read more about the used features, the following list provides links to addit
 
 {% include github-embed org='imagej' repo='imagej-scripting' path='src/main/resources/script\_templates/Tutorials/Wiki\_Jython\_Tutorial\_3.py' %}
 
-Importing Java module and classes
----------------------------------
+## Importing Java module and classes
 
 Another great feature of Jython is the possibility to use functions from Java jar package that resides in the jar folder of imageJ.
 
@@ -279,8 +275,7 @@ It is possible to perform some operations between matrices, or between Scalar an
     subtract(A,B,Out)
     print CvMat(Out)
 
-Self written Jython modules for ImageJ
---------------------------------------
+## Self written Jython modules for ImageJ
 
 In Jython you can write all commands line by line in a single file and execute it. To create a neat program, [functions](https://docs.python.org/2/tutorial/controlflow.html#defining-functions) and [classes](https://docs.python.org/2/tutorial/classes.html) can be used to structure code. To prevent using copy&past for regularly used functions and classes, [modules](https://docs.python.org/2/tutorial/modules.html) are the way to choose. Modules are files that contain functions and classes to import into other files.
 
@@ -328,8 +323,7 @@ If you don't want to use `jars/Lib/` to save your modules, you have to extend th
 
 The function `getProperty()` accepts many more strings. A list can be found at [The Java Tutorials](https://docs.oracle.com/javase/tutorial/essential/environment/sysprop.html).
 
-Self written Jython packages for ImageJ
----------------------------------------
+## Self written Jython packages for ImageJ
 
 On the way to perfectly organize Jython code, [packages](https://docs.python.org/2/tutorial/modules.html#packages) are the next step. A Jython package is a folder that contain a set of modules scripts together with a `__init__.py` file. This file can be empty. Below is a typical structure for the `Imagej.app/jars/Lib` folder:
 
@@ -376,8 +370,7 @@ The reason for the last import to fail is the empty `__init__.py`. We have to de
 
 Besides setting this variable, the `__init__.py` file can contain normal Jython code that is executed upon import of the package.
 
-Bundle packages in a JAR file
------------------------------
+## Bundle packages in a JAR file
 
 An interesting feature of Jython is to search for packages and modules inside of [JAR files](https://en.wikipedia.org/wiki/JAR_(file_format)). The folder structure from the last section can be modified by packing everything into a single `myPackages.jar`. The name of the JAR file doesn't matter. All imports work the same as explained before.
 
@@ -408,8 +401,7 @@ Using maven you can automate the packaging of Jython code into JAR files. This a
 
 At GitHub you will find an [example project](https://github.com/m-entrup/imagej-jython-package) that you can use as a template. Just run `mvn package` and maven will generate a JAR file at the `target` directory.
 
-Links
------
+## Links
 
 -   [Jython Scripting Examples](/scripting/jython/examples)
 -   [ImageJ2 Python Scripts](/scripting/examples/imagej2-python)
@@ -417,8 +409,7 @@ Links
 -   [Jython scripting cookbook](http://wiki.cmci.info/documents/120206pyip_cooking/python_imagej_cookbook)
 -   [ImageJ tutorials repository](https://github.com/imagej/tutorials/tree/master/howtos/src/main/java/howto)
 
-References
-----------
+## References
 
 <references />
 

@@ -44,8 +44,7 @@ Views
 
 Because of the extensibility of Ops, there is a lot of information to process when looking at which Ops are actually available. One goal of the Op Finder is to present this information in a way that can be easily understood. To facilitate this, multiple views are available, each tailoring the content of the Op Finder to a specific audience.
 
-For Users
----------
+## For Users
 
 {% include warning-box content='This view provides an abstract representation of available Ops e.g., one entry could be many Ops merged together. An Op call is ultimately defined by the combination of requested **Op type** + **parameters**.' %}
 
@@ -60,8 +59,7 @@ Ops in this view are focused on answering the question "What can I do *right now
 -   Parameter types are abstracted ("Image", "Number")
 -   Optional parameters are hidden
 
-For Developers
---------------
+## For Developers
 
 This view provides a comprehensive list of available Ops implementations. For example, contrasting with the [User view](#for-users), we see there are actually four concrete implementations of the `Convolve` Op, with a plethora of optional parameters.
 
@@ -77,8 +75,7 @@ This view provides a comprehensive list of available Ops implementations. For ex
 Things to do
 ============
 
-Filtering
----------
+## Filtering
 
 The Op Finder includes [fuzzy filtering](Wikipedia_Approximate_string_matching) to find Ops of interest. When filtering:
 
@@ -88,8 +85,7 @@ The Op Finder includes [fuzzy filtering](Wikipedia_Approximate_string_matching) 
 
 <figure><img src="/media/Filter-op-finder.png" title="Filter-op-finder.png" width="600" alt="Filter-op-finder.png" /><figcaption aria-hidden="true">Filter-op-finder.png</figcaption></figure>
 
-Code Snippets
--------------
+## Code Snippets
 
 Code snippets are available in the [Developer view](#for-developers). These are intended to help you rapidly build up scripts around the available Ops. The following is a step-by-step guide to take you through the process of finding an Op of interest to using it in a functional script.
 
@@ -153,8 +149,7 @@ All of the parameters with a {% include key content='?' %} are **optional**. For
 
 [border"1200px](File_4-run-op.png)
 
-Running Ops
------------
+## Running Ops
 
 Although you can run selected Ops through the Op Finder, this method **lacks reproducibility** and should not be used as a substitute for a proper script or plugin when using Ops in a scientific workflow. This functionality *is* intended to allow a rapid preview of what effect an Op will have on a dataset.
 

@@ -7,8 +7,7 @@ artifact: sc.fiji:Stack\_Manipulation
 
  
 
-Content and purpose
--------------------
+## Content and purpose
 
 This package regroups various "small" plugins dedicated to the manipulation of stacks, allowing to sort them, combine them, etc... As they are more of a utility package, they all can be found in the {% include bc path='Image | Stacks | Tools'%} menu, next to the ones provided by bare ImageJ.
 
@@ -22,8 +21,7 @@ What they do is pretty much summarized by the following diagram, taken from the 
 
 -   The **Slice Keeper** does the opposite that of **Slice Remover**. Instead of removing every nth slice in a stack, it creates a new stack by only keeping every nth slice from the original stack.
 
-Author and licenses
--------------------
+## Author and licenses
 
 We list here the authors for each part of this package, with corresponding licenses when relevant.
 

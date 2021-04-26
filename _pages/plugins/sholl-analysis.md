@@ -28,8 +28,7 @@ Having Problems?:Jump to [FAQs](#FAQ)
 
  Automated and multithreaded Sholl for direct analysis of fluorescent images and traced morphologies. Features powerful quantifications based on curve fitting. Analysis of data obtained outside of ImageJ is also possible.
 
-Introduction
-------------
+## Introduction
 
 <span id="CA1CellMask"></span>[frame\|[Skeletonized](/plugins/skeletonize3d) hippocampal CA1 cell[1] (juvenile mouse) in which apical and basal dendrites have been analyzed [separately](#CA1CellPlot) and [color coded](#output-options) according to their Sholl profile. Warmer hues indicate higher number of Intersections (*N*). [Critical radius](#CriticalRadius) (*r<sub>c</sub>*) and [Mean value](#MeanValueOfFunction) (*N<sub>av</sub>*) are indicated.](File:BitmapSholl-CA1mask.png)
 
@@ -40,16 +39,14 @@ The Sholl technique[2] is used to describe neuronal arbors. This plugin can perf
 -   It allows [continuous and repeated sampling](#multiple-samples-and-noise-reduction) around user-defined foci
 -   It allows [batch processing](#batch-processing)
 
-Installation
-------------
+## Installation
 
 The plugin is distributed with Fiji. It installs several commands under {% include bc path='Analysis|Sholl| ' color='white'%}. **As part of an active effort to [modernize ImageJ](/news/2015-12-22_-_The_road_to_Java_8) you need to [ subscribe](/update-sites/following#add-update-sites) to the Java 8 update site to access the latest plugin version** (this will also allow you to access the newest [ImageJ capabilities](/news/2015-12-22_-_The_road_to_Java_8#components-which-have-already-migrated)). To do so, you can either:
 
 -   [Download the latest Fiji release](/downloads). Newer releases come pre-bundled with Java 8, and are already subscribed to the [Java-8 update site](/users/Java-8).
 -   If you have downloaded Fiji while ago and want to keep your existing installation, you will have to download Java 8 and make your [Fiji installation aware of it](/help/troubleshooting#checking-the-java-version). Then subscribe to the [Java-8 update site](/users/Java-8).
 
-Direct Analysis of Images
--------------------------
+## Direct Analysis of Images
 
 In this mode (bitmap analysis), the plugin requires a [binary image or a segmented](#faq:threshold) [grayscale image](#faq:image-types) (2D or 3D) containing a single neuron.
 
@@ -86,8 +83,7 @@ With binary images, *Sholl Analysis* treats zero intensities as the background, 
 {%- endcapture -%}
 {% include tip tip=binary-tip %} <span id="Traces"></span>
 
-Analysis of Traced Cells
-------------------------
+## Analysis of Traced Cells
 
 [400px\|right \|Main prompt (version 3.6.8), when input is traced data ({% include bc path='Analysis|Sholl|Sholl Analysis (Tracings)...' color='white'%})In](File_ShollTracingsPrompt.png) this mode, the plugin analyzes reconstructed arbors. This is particularly relevant for stainings that do not allow single-cell resolution. The plugin is macro recordable and [batch processing](#batch-processing) is also possible.
 
@@ -102,8 +98,7 @@ You can use {% include bc path='Sholl Analysis (Tracings)...' color='white'%} to
 {% endcapture %}
 {% include tip id='external-traces' tip=tip %} <span id="Importing"></span>
 
-Analysis of Existing Profiles
------------------------------
+## Analysis of Existing Profiles
 
 ![Linear plot for CA1 cell [described above](/media/#CA1CellMask). Using the soma as center, image was sampled twice using the [Restrict analysis to hemicircle/hemisphere](#Restrict) option in order to segregate apical from basal dendrites. For convenience, distances for basal branches were assigned negative values. For clarity, the binary image of the arbor was rotated, scaled and overlaid (in green) over the plot canvas. Note that it is also possible to restrict [curve fitting](#MethodsTable) to a sub-range of distances once [data is collected](#Importing).](BitmapSholl-CA1Compartment.png "fig:Linear plot for CA1 cell described above. Using the soma as center, image was sampled twice using the Restrict analysis to hemicircle/hemisphere option in order to segregate apical from basal dendrites. For convenience, distances for basal branches were assigned negative values. For clarity, the binary image of the arbor was rotated, scaled and overlaid (in green) over the plot canvas. Note that it is also possible to restrict curve fitting to a sub-range of distances once data is collected.") This feature is processed by {% include bc path='Analysis|Sholl|Sholl Analysis (Existing Profile)...' color='white'%}. This command can be used to re-analyze data (replot, modify fitting options, etc.) without having to access the initial image or tracing data. [Batch processing](#batch-analysis-of-tabular-data) is also possible. Noteworthy:
 
@@ -111,8 +106,7 @@ Analysis of Existing Profiles
 -   **Restricting input data**: To restrict measurements to a range of distances ([see related example](#CA1CellPlot)), select the range of distances you want analyze. You can click the first row in the range, and then drag the mouse to the last row, or by holding down {% include key content='press\|Shift' %} while selecting the last row in the range. Then, in the prompt, activate the *Restrict analysis to selected rows only* checkbox.
 -   **Calculation of *Radius step size***: [Radius step size](#StepSize) is calculated from the difference between the first two rows in *Distance column*. This is mainly relevant when choosing *Annulus/Spherical shell* as [normalizer](#Normalizer).
 
-Parameters
-----------
+## Parameters
 
 The majority of parameters is shared by all the Analysis commands in the{% include bc path='Analysis|Sholl| ' color='white'%} submenu. However, some settings are specific to the type of data used as input: A segmented image, a tracing, or a previously obtained profile. When analyzing images, input values take into account the scale information of the image (which can be set using the {% include bc path='Analyze|Set Scale...' color='white'%} or {% include bc path='Image|Properties...' color='white'%} ({% include key content='press\|Shift\|P' %}), the type of image (2D or 3D), and its [active ROI](#startup-roi).
 
@@ -189,8 +183,7 @@ Please keep in mind that this is just a refinement feature, and you should not e
 
 {% include tip tip='In the dialog prompts of *Sholl Analysis*, bold headings are clickable URLs pointing to the respective sections of this manual. In addition, relevant tooltips are displayed in the ImageJ status bar when specifying key options.' %}
 
-Sholl Plots
------------
+## Sholl Plots
 
 <center>
 
@@ -224,8 +217,7 @@ Outputs a <i>log(N/S) vs log(Distance)</i> profile. Data is also fitted to a str
 <span style="display: inline-block; width: 25px"> </span>For 3D images, the *Surface* of the sampling sphere (4πr<sup>2</sup>) or its respective *Volume* (4/3πr<sup>3</sup>)  
 **N.B.** A third [normalization option](#Normalizer) is also available when performing [non-continuous sampling](#StepSize): *Annulus*/*Spherical shell*. In this case, the normalization is performed against the area of the annulus formed between the circumferences at *r* ± *Radius step size*/2 (2D images), or against the volume between the two spheres at *r* ± *Radius step size*/2 (3D images).  
 
-Metrics
--------
+## Metrics
 
 Morphometric descriptors and other properties of the arbor are printed to a dedicated table named *Sholl Results*. Output is fully customizable using {% include bc path='Analysis|Sholl|Metrics & Options...' color='white'%} or using the *Options...* command in the *More»* drop-down menu. The first columns log analysis parameters: *Image Directory*, *filename* and *voxel unit*, *Channel*, *Lower* and *Upper Threshold levels*, *X,Y* (in pixels) and *Z* (slice number) coordinates of center of analysis, *Starting* and *Ending radius*, *Radius step*, *Number of Samples per Radius*, etc. Other parameters are described below.
 
@@ -368,8 +360,7 @@ The [kurtosis](#Kurtosis) of the fitted polynomial distribution between [Startin
 Polynomial R<sup>2</sup> (*Polyn. R^2*)  
 The coefficient of determination of the polynomial fit described in [(1)](#eq1).
 
-Complementary Tools
--------------------
+## Complementary Tools
 
 <span id="Extended_Fitting"></span>[frame\|Sampled data from the ddaC cell ({% include bc path="File | Open Samples | ddaC Neuron" %}) being fitted to polynomials of varying degree using a complementary [BAR](/plugins/bar) script.](File:AnimatedPolyFit.gif)
 
@@ -389,8 +380,7 @@ Data analysis tools:
 
 **{% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#interactive-plotting' label='Interactive Plotting' %}:** Whole-purpose routine that plots data from imported spreadsheets.
 
-Pre-processing
---------------
+## Pre-processing
 
 This section discusses some aspects that should be taken into account when segmenting neuronal arbors to be processed by *Sholl Analysis*. Since *image segmentation* (i.e., the partitioning of images into analyzable parts) is vulnerable to noise and background fluorescence, it is not possible to generalize universal routines that efficiently binarize grayscale images. This means that any procedure that tries to appropriately describe the original fluorescence image with a binary mask must be tailored to the characteristics of individual datasets. As mentioned in [Complementary Tools](#complementary-tools), several routines listed here as distributed through the [BAR](/plugins/bar) {% include list-of-update-sites content='update site' %}. <span id="Noise"></span>
 
@@ -437,8 +427,7 @@ For additional image processing tools have a look at the growing list of {% incl
 {% endcapture %}
 {% include tip tip=tip %}
 
-Batch Processing
-----------------
+## Batch Processing
 
 It is fairly simple to [automate](/scripting) the analysis of multiple images using any of the scripting languages supported by ImageJ and Fiji ([ImageJ Macro Language](/scripting/macro), [Beanshell](/scripting/beanshell), [Javascript](/scripting/javascript), [JRuby](/scripting/jruby), [Jython](/scripting/jython), [Clojure](/scripting/clojure), ...). This section provides some examples.
 
@@ -531,8 +520,7 @@ If you already have [obtained profiles](#Importing) (either from previous runs o
     }
     }
 
-Advanced Usage
---------------
+## Advanced Usage
 
 Advanced options can be set through [API calls](http://tferr.github.io/ASA/apidocs/). Here are some examples:
 
@@ -544,8 +532,7 @@ Reduce the number of discretization steps involved in the calculation of [Nav](#
 
 Note that the IJM built-in [call("class.method")](/ij/developer/macro/functions.html#call) function can only pass strings to Java methods. For this reason, you have to quote the passed argument. `Sholl_Analysis` will then parse the string argument and interpreter its value. Note that calls made by the IJM language need to be set before running the plugin and remain in effect while ImageJ is running.
 
-Auxiliary Commands
-------------------
+## Auxiliary Commands
 
 {% include bc path='Analyze|Sholl|Combine Sholl Profiles...' color='white'%}<img src="/media/CombineShollProfiles.png" title="fig:Screenshot of 15 files being processed by {% include bc path='Analyze|Sholl|Combine Sholl Profiles...' color='white'%} (v3.6.12)" width="400" alt="Screenshot of 15 files being processed by {% include bc path='Analyze|Sholl|Combine Sholl Profiles...' color='white'%} (v3.6.12)" />  
 
@@ -849,13 +836,11 @@ Report it in the [ImageJ Forum](http://forum.imagej.net) or file an [issue](http
 </dl>
 </ol>
 
-Release Notes and Pre-releases
-------------------------------
+## Release Notes and Pre-releases
 
 Releases notes are available on {% include github org='tferr' repo='ASA' path='Notes.md\#release-notes-for-sholl-analysis' label='Github' %}. If you do not mind unstable software, {% include github org='tferr' repo='ASA' path='Notes.md\#development-builds' label='development builds' %} may be found [here](http://jenkins.imagej.net/job/Sholl-Analysis). Once new features mature and no major issues are found these development versions will be made available, as usual, through the [Updater](/plugins/updater).
 
-Related Resources
------------------
+## Related Resources
 
 -   **[Simple Neurite Tracer](/plugins/snt) (SNT)** The remarkable ImageJ framework for semi-automated of two- and three-dimensional tracing. SNT performs Sholl using the *Sholl Analysis* plugin. On the other hand, *Sholl Analysis* uses SNT to [analyze tracings](#analyze-traced-cells)
 
@@ -875,13 +860,11 @@ Related Resources
 
 -   **[BAR](/plugins/bar)**, *B*roadly *A*pplicable *R*outines that complement *Sholl Analysis*
 
-Publication
------------
+## Publication
 
 -   Ferreira T, Blackman A, Oyrer J, Jayabal A, Chung A, Watt A, Sjöström J, van Meyel D. (**2014**), [Neuronal morphometry directly from bitmap images](http://www.nature.com/nmeth/journal/v11/n10/full/nmeth.3125.html), *Nature Methods* 11(10): 982–984
 
-Citations
----------
+## Citations
 
 While in development (2005-2014), and prior to its [publication](#Publication), *Sholl Analysis* has been cited by [several manuscripts](https://scholar.google.ca/scholar?as_q=&as_epq=Sholl+Analysis&as_oq=imagej+fiji&as_eq=%22Simple+Neurite+Tracer%22&as_occt=any&as_sauthors=&as_publication=&as_ylo=2005&as_yhi=2014&btnG=&hl=en&as_sdt=1%2C5&as_vis=1). The manuscripts citing its 2014 [publication](#Publication) can be retrieved using [Scholar](https://scholar.google.ca/scholar?cites=15441574333602897335&as_sdt=2005&sciodt=1,5&hl=en) or [PubMed](http://www.ncbi.nlm.nih.gov/pmc/articles/pmid/25264773/citedby/?tool=pubmed). Below is a list of publications from authors that have made the developer aware how the program contributed to their research.
 
@@ -893,8 +876,7 @@ While in development (2005-2014), and prior to its [publication](#Publication), 
 
 {% include ambox text='Please append your work here, if the plugin has been useful to your work.' %}
 
-References
-----------
+## References
 
 <references >
 
@@ -902,8 +884,7 @@ References
 
 </references>
 
-License
--------
+## License
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [Free Software Foundation](http://www.gnu.org/licenses/gpl.txt). This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 

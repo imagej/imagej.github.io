@@ -58,8 +58,7 @@ Link to a video demo: [https://youtu.be/YZsSWBxcdDM>](https://youtu.be/YZsSWBxcd
 
 </div>
 
-**Table of Contents**
----------------------
+## **Table of Contents**
 
 [1) Install EZFig](#RefHeadingToc27213566485089)
 
@@ -391,8 +390,7 @@ Link to a video demo: [https://youtu.be/YZsSWBxcdDM>](https://youtu.be/YZsSWBxcd
 1) Install EZFig
 ================
 
-1.1) Install as a FIJI plugin
------------------------------
+## 1.1) Install as a FIJI plugin
 
 Download and install the latest FIJI available for your OS (from [https://fiji.sc/](https://fiji.sc/)). Launch FIJI.
 
@@ -425,13 +423,11 @@ Press "Ok" and <span style="color:#ff0000;">close</span><span style="color:#ff00
 2) User Interface
 =================
 
-2.1) Quick overview of the EZFig user interface
------------------------------------------------
+## 2.1) Quick overview of the EZFig user interface
 
 ![](/media/Image43.png "Image43.png")
 
-2.2) Quick description
-----------------------
+## 2.2) Quick description
 
 **Journal style** : Select the journal style there. Journal styles help users endorse journal guidelines (See sections "Journal styles" and "Editorial checks").
 
@@ -451,8 +447,7 @@ Nb : please note that the content of the "<span style="color:#0000ff;">available
 
 **Logger :** Finally, EZFig also comes with a logger (arrow), that logs all messages sent by EZFig and FiguR (black) as well as software errors (red).
 
-2.3) Magnification buttons
---------------------------
+## 2.3) Magnification buttons
 
 **zoom in**
 
@@ -495,8 +490,7 @@ press this button to restore default magnification
 
 The easiest way to import files in EZFig is to use <span style="color:#ff0000;">drag n drop</span>.
 
-3.1) Importing files : Drag and drop
-------------------------------------
+## 3.1) Importing files : Drag and drop
 
 ![](/media/Images1.png "images1.png")
 
@@ -506,8 +500,7 @@ To load image(s) with EZFig, you can select images in a folder then drag and dro
 
 Dropped images are added as a single row by default (organisation can be changed later on).
 
-3.2) Importing files via the EZFig menu
----------------------------------------
+## 3.2) Importing files via the EZFig menu
 
 ![](/media/Images4.png "images4.png")
 
@@ -517,8 +510,7 @@ Press "File &gt; Import images"
 
 A dialog opens to select files. Supported formats are : jpg, tif, png, bmp, tga, lsm, svg, figur, gif.
 
-3.3) Importing files from ImageJ/FIJI
--------------------------------------
+## 3.3) Importing files from ImageJ/FIJI
 
 ![](/media/Images6.png "images6.png")
 
@@ -537,8 +529,7 @@ The image has been successfully imported in EZFig.
 
 EZFig has its own native format (.ezf). <span style="color:#ff0000;">It is very important to always save the figure in "</span><span style="color:#ff0000;">ezf"</span><span style="color:#ff0000;"> format as it is the only format that can be </span><span style="color:#ff0000;">re-edited</span><span style="color:#ff0000;"> by EZFig</span>, all other export formats cannot be dynamically modified. EZFig is backward compatible width ScientiFig, i.e. it can read ScientiFig files (.yf5m). The opposite is not true, ScientiFig cannot read .ezf files.
 
-4.1) Load .ezf Files
---------------------
+## 4.1) Load .ezf Files
 
 The simplest way to load an ezf or a yf5m file is to drag and drop it onto EZFig.
 
@@ -546,8 +537,7 @@ The simplest way to load an ezf or a yf5m file is to drag and drop it onto EZFig
 
 Alternatively, press "File &gt; Open"
 
-4.2) Save .ezf files
---------------------
+## 4.2) Save .ezf files
 
 ![](/media/Images61.png "images61.png")
 
@@ -556,8 +546,7 @@ Press "File &gt; Save as..." to save an "ezf" file. Note that if the figure cont
 5) Exports
 ==========
 
-5.1) Direct exports
--------------------
+## 5.1) Direct exports
 
 ![](/media/Image34.png "Image34.png")
 
@@ -614,8 +603,7 @@ EZFig can export figures as videos (this only makes sense if the Figure contains
 
 Also Figures can also be **exported to ImageJ**. See below.
 
-5.2) Export to ImageJ
----------------------
+## 5.2) Export to ImageJ
 
 ![](/media/Image1.png "Image1.png")
 
@@ -632,8 +620,7 @@ Nb : the figure can also be exported as an ImageJ stack (provided the figure its
 
 EZFig is an object based (vectorial) software. Below are the various EZFig objects you can manipulate as well as informations about their selection.
 
-6.1) The basics of object selection in EZFig
---------------------------------------------
+## 6.1) The basics of object selection in EZFig
 
 <div style="color:#ce181e;">
 
@@ -675,8 +662,7 @@ hierarchy : Figure &gt; Row &gt; Panel/Montage &gt; Image
 7) Menus
 ========
 
-7.1) File
----------
+## 7.1) File
 
 Please find below a complete description of the "File" menu :
 
@@ -706,8 +692,7 @@ Please find below a complete description of the "File" menu :
 
 **Quit**: quits/closes EZFig.
 
-7.2) Edit
----------
+## 7.2) Edit
 
 Please find below a complete description of the "edit" menu :
 
@@ -731,8 +716,7 @@ Please find below a complete description of the "edit" menu :
 
 **Remove all ROIs** : removes all ROIs and floating text from the current figure (can be used to clean figure for talks).
 
-7.3) Journals
--------------
+## 7.3) Journals
 
 Please find below a complete description of the "Journals" menu :
 
@@ -744,8 +728,7 @@ Please find below a complete description of the "Journals" menu :
 
 **Permanently Delete journal/plot style** : Delete a journal style (in fact the file is just renamed as .old, so if you change your mind you can still recover it manually).
 
-7.4) Keep For Later
--------------------
+## 7.4) Keep For Later
 
 Please find below a complete description of the "Keep For Later" menu and its functions :
 
@@ -759,22 +742,19 @@ Please find below a complete description of the "Keep For Later" menu and its fu
 
 **Custom content** : The "Keep For Later" menu may contain custom content added by the user. This content is made available as a button, pressing a button adds its content back to the figure.
 
-7.5) Checks
------------
+## 7.5) Checks
 
 Please see the "Editorial Checks" section.
 
 ![](/media/Image40.png "Image40.png")
 
-7.6) FiguR
-----------
+## 7.6) FiguR
 
 Please see the "FiguR" section.
 
 ![](/media/Image41.png "Image41.png")
 
-7.7) Help
----------
+## 7.7) Help
 
 Please find below a complete description of the "/help" menu :
 
@@ -801,8 +781,7 @@ Please find below a complete description of the "/help" menu :
 
 The content of the right side of the EZFig will change dynamically according to the selection type (see also the "Selections" section).
 
-8.1) "Figure" objects parameters
---------------------------------
+## 8.1) "Figure" objects parameters
 
 ### 8.1.1) "Size" tab
 
@@ -842,8 +821,7 @@ The content of the right side of the EZFig will change dynamically according to 
 
 **Create a Figure or a Row with an empty image **: creates a Figure that just contains an empty image. You may use this empty image to draw arrows to logically connect independent figure objects.
 
-.2) "Row" objects parameters
-----------------------------
+## .2) "Row" objects parameters
 
 ### .2.1) "Size" tab
 
@@ -875,8 +853,7 @@ Below are the row specific labels.
 
 **+ text labels on the right** : adds text right of a row..
 
-8.3) "Panel/Montage" objects parameters
----------------------------------------
+## 8.3) "Panel/Montage" objects parameters
 
 ### 8.3.1) "Layout" tab
 
@@ -908,8 +885,7 @@ Since **panels** are containers that **"*should"*** contain only images of the *
 
 **Reset Crops** : reset crops for all images in the panel, useful if you made a mistake.
 
-8.4) "Image/ImagePlus/Stack/Graph/Vector Image" objects parameters
-------------------------------------------------------------------
+## 8.4) "Image/ImagePlus/Stack/Graph/Vector Image" objects parameters
 
 ### 8.4.1) "Labels" tab
 
@@ -1002,8 +978,7 @@ Select "Single gray channels and merge" to split image into gray channels and me
 9) Figure layout
 ================
 
-9.1) Change figure size
------------------------
+## 9.1) Change figure size
 
 ![](/media/Image26.png "Image26.png")
 
@@ -1021,8 +996,7 @@ Note that the figure that was initially 2 columns in size (materialized by the g
 
 You can also set the size of the figure in cm (arrow) or in pixels.
 
-9.2) Change layout
-------------------
+## 9.2) Change layout
 
 The most efficient way to change figure layout is as follows.
 
@@ -1045,8 +1019,7 @@ The two closest images have been swapped (arrows).
 10) Annotating Images
 =====================
 
-10.1) Add letters, labels and scalebar to an image
---------------------------------------------------
+## 10.1) Add letters, labels and scalebar to an image
 
 ![](/media/Image13.png "Image13.png")
 
@@ -1064,8 +1037,7 @@ Select "Upper Left corner" to add text at the upper left corner of the image (to
 
 To add a scale bar, select "Scale Bar" (top arrow), set scale bar size (middle arrow), then set scale bar colour (bottom arrow). The scale bar is displayed dynamically on the original image (arrowhead).
 
-10.2) Add ROIs/Floating text labels to an image
------------------------------------------------
+## 10.2) Add ROIs/Floating text labels to an image
 
 ![](/media/Image17.png "Image17.png")
 
@@ -1075,8 +1047,7 @@ Click on an image until you see a red selection around it (left arrow), you will
 
 A new dialog appears that lets you draw ROIs or add floating text to the image. Press "Ok" when done (arrow) and the ROI will be added to the original image. (ROIs can be further edited if needed).
 
-10.3) Convert ROIs to crop or insets (Picture In Picture, PIP)
---------------------------------------------------------------
+## 10.3) Convert ROIs to crop or insets (Picture In Picture, PIP)
 
 Open the ROI dialog for the image as described in the previous section.
 
@@ -1100,8 +1071,7 @@ An inset appears at the top right region of the image (the inset can be moved an
 
 Also a crop corresponding to the biggest rectangle is added as a new row (arrow) at the end of the figure.
 
-10.4) Add labels outside images/rows
-------------------------------------
+## 10.4) Add labels outside images/rows
 
 ![](/media/Images62.png "images62.png")
 
@@ -1139,8 +1109,7 @@ Pressing the icon button in the "Keep For Later" menu adds the image back to the
 12) Manipulate image channels
 =============================
 
-12.1) Select or create an image with channels
----------------------------------------------
+## 12.1) Select or create an image with channels
 
 Load an image that contains channels, or import one from ImageJ (see the "Imports" section) and select it (see the "Selections" section).
 
@@ -1152,8 +1121,7 @@ If there are no channels available in the "Ch" panel (upper arrow), you can conv
 
 Once the image is composite, its channels are displayed in the "Ch" panel.
 
-12.2) Activate/inactivate channels
-----------------------------------
+## 12.2) Activate/inactivate channels
 
 ![](/media/Image56.png "Image56.png")
 
@@ -1163,8 +1131,7 @@ Once the image is composite, its channels are displayed in the "Ch" panel.
 
 Untick the channel (right arrow) and it becomes inactive in the image (left arrow).
 
-12.3) Change channel colour
----------------------------
+## 12.3) Change channel colour
 
 ![](/media/Image58.png "Image58.png")
 
@@ -1177,8 +1144,7 @@ Press the yellow button "<span style="background-color:#fff200;">Y</span>" (righ
 13) Use drag and drop to build a figure efficiently
 ===================================================
 
-13.1) Add inset using drag and drop
------------------------------------
+## 13.1) Add inset using drag and drop
 
 The easiest way to add an inset or do anything in EZFig is via mouse **drag and drops**.
 
@@ -1198,8 +1164,7 @@ A dialog opens. Select "Add dragged selection as inset"
 
 The inset is added to the image.
 
-13.2) Add an image to a row
----------------------------
+## 13.2) Add an image to a row
 
 ![](/media/Image67.png "Image67.png")
 
@@ -1217,8 +1182,7 @@ A dialog opens. Select "add dragged selection to the dropped target row".
 
 The image is added to the row.
 
-13.3) Create a new row from an image/remove an image from a row
----------------------------------------------------------------
+## 13.3) Create a new row from an image/remove an image from a row
 
 ![](/media/Image71.png "Image71.png")
 
@@ -1242,8 +1206,7 @@ PS : to delete an image from the figure just select it (red selection) and press
 
 </div>
 
-13.4) Create a panel, add it to a row and change its layout
------------------------------------------------------------
+## 13.4) Create a panel, add it to a row and change its layout
 
 ![](/media/Image75.png "Image75.png")
 
@@ -1285,8 +1248,7 @@ A panel with six images is now added to the first figure row. Select this panel,
 
 Change the number of rows to 3 (upper arrow) and the number of columns to 2 (lower arrow). Note that the layout of the panel is changed accordingly.
 
-13.5) List of DND options and their use
----------------------------------------
+## 13.5) List of DND options and their use
 
 **Add dragged selection to the drop target row** : Adds dragged objects to the drop target row.
 
@@ -1326,8 +1288,7 @@ Note that removed insets are not deleted, they are added to the "Keep For Later"
 15) Journal styles
 ==================
 
-15.1) Select a journal style
-----------------------------
+## 15.1) Select a journal style
 
 ![](/media/Images8.png "images8.png")
 
@@ -1337,8 +1298,7 @@ Before performing an editorial check you must always select a journal style firs
 
 If the journal you look for is not available you can create your own journal style (See after).
 
-15.2) Create a new journal style
---------------------------------
+## 15.2) Create a new journal style
 
 ![](/media/Images11.png "images11.png")
 
@@ -1353,8 +1313,7 @@ Enter the journal parameters based on the journal guidelines such as size of a c
 
 When submitting a manuscript to a journal one needs to obey several editorial guidelines. EZFig can help you.
 
-16.1) Check Size
-----------------
+## 16.1) Check Size
 
 ![](/media/Images14.png "images14.png")
 
@@ -1372,8 +1331,7 @@ A dialog pops and offers to change the size of the image to the closest availabl
 
 Upon acceptance, the image is resized (in that case the image has been resized to two journal columns as indicated by the alignment of the figure with the green rectangle on the drawing panel).
 
-16.2) Check style
------------------
+## 16.2) Check style
 
 Most journal have stylistic guidelines, for example the text should not be coloured. To check a figure for style :
 
@@ -1387,8 +1345,7 @@ Press "Checks &gt; Style".
 
 The dialog shows the problematic image styles and offers a solution. Here, it offers to replace multicolour text by white text. Please feel free to accept or reject this suggestion.
 
-16.3) Check Fonts
------------------
+## 16.3) Check Fonts
 
 Most journals ask to use a specific font and font size for the text, lettering and text annotations. To check figure for Fonts :
 
@@ -1408,8 +1365,7 @@ if the fonts do not respect journal guidelines, you will be offered to replace f
 
 Upon acceptance, all fonts will be changed and EZFig will take care of the text layout for you.
 
-16.4) Check line arts
----------------------
+## 16.4) Check line arts
 
 Most journals ask to have specific line width for ROIs and figire line arts, to check figure line arts :
 
@@ -1429,8 +1385,7 @@ If line arts are not in conformity with the journal guidelines you will be offer
 
 Upon acceptance, line arts width is changed.
 
-16.5) Check Text
-----------------
+## 16.5) Check Text
 
 Journals have naming conventions text, for example they dictate how to write speed units should be written, ... To check the figure text :
 
@@ -1442,8 +1397,7 @@ Select a journal style then press "Checks &gt; Text"
 
 If the text did not pass the test, a solution will be offered. Feel free to accept it or reject it. Please pay attention to the offered solutions as text checks are irreversible, are programmatically hard to implement and thereby require careful human inspection.
 
-16.6) Check Graphs
-------------------
+## 16.6) Check Graphs
 
 Most journals have guideline regarding graphs (for example regarding units, background colours, ...). To check graphs (<span style="color:#ce181e;">please note that EZFig can only check graphs generated with FiguR, a tool included in the EZFig package</span>) :
 
@@ -1464,8 +1418,7 @@ Read the comments regarding your graph, perform changes or ignore suggestions if
 
 Often figures contain graphs and FiguR is a tool to create graphs that can be directly edited by EZFig. FiguR uses R and ggplot2 to draw graphs. The use of ggplot2 is motivated by the fact that this is the only R library (as far as I know) where fonts can be set. Proper font is mandatory for most scientific publications.
 
-17.1) Install and configure R (required for FiguR to work)
-----------------------------------------------------------
+## 17.1) Install and configure R (required for FiguR to work)
 
 ![](/media/Image6.png "Image6.png")
 
@@ -1511,8 +1464,7 @@ Similarly, to connect FiguR to R press the "R status" button (arrow) in FiguR.
 
 </div>
 
-17.2) Launch FiguR
-------------------
+## 17.2) Launch FiguR
 
 ![](/media/Image3.png "Image3.png")
 
@@ -1533,8 +1485,7 @@ Press "Edit &gt; Software Preferences"
 
 A dialog opens.
 
-18.1) Undos/Redos
------------------
+## 18.1) Undos/Redos
 
 Undos/Redos are not active by default in SF.
 
@@ -1552,8 +1503,7 @@ Tick the first checkbox to activate undos/redos
 
 When changes are made to the figure two new buttons will become visible and clickable (arrow). These buttons are the undo and redo buttons.
 
-18.2) Shortcuts
----------------
+## 18.2) Shortcuts
 
 ![](/media/Image24.png "Image24.png")
 

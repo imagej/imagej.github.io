@@ -16,13 +16,11 @@ Five different parameters can be adjusted:
 
 As result, the script will display the set of filters, the filtered version of the original image for each orientation, and the projections (average, min, max, mean and variance) of the stack of filtered images.
 
-Example
--------
+## Example
 
 This is an example of the script results using the Leaf sample image ({% include bc path='File | Open Samples | Leaf (36K)'%}) and sigma = 8.0, gamma = 0.25, psi = 0.0, Fx = 3.0, nAngles = 5. {% include thumbnail src='/media/Montage-Gabor-filter-5-angles.png' title='Demonstration of a Gabor filter applied to the Leaf sample image. Five orientations are shown on the right (0°, 36°, 72°, 108° and 144°). The original Leaf picture is shown on the upper-left corner.'%}
 
-Code
-----
+## Code
 
     import ij.*;
     import ij.process.*;
@@ -153,8 +151,7 @@ Code
     IJ.run(result, "Enhance Contrast", "saturated=0.4 normalize normalize_all");
     result.show();
 
-See also
---------
+## See also
 
 -   [Beanshell Scripting](/scripting/beanshell)
 -   [Scripting Help](/scripting)

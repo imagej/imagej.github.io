@@ -7,14 +7,12 @@ section: Development
 {% include info-box content='If your goal is to automate the behavior of ImageJ, consider writing a [script](/scripting/script-editor) using ImageJ"s [Script Editor](/scripting/script-editor)—it is often much simpler than a plugin in Java.' %} 
 This page provides an overview of ImageJ from the perspective of software development: how to use it from your programs, as well as how to modify or extend its capabilities via [plugins](/plugins).
 
-Quick start
------------
+## Quick start
 
 -   **Learn to write [ImageJ scripts](/scripting)** from the [ImageJ tutorial notebooks](/tutorials).
 -   **Learn to use ImageJ from Java** with the [ImageJ tutorial Maven projects](https://github.com/imagej/tutorials/tree/master/maven-projects).
 
-What is ImageJ?
----------------
+## What is ImageJ?
 
 <table style="width: 60%; font-size: large; margin-left: 25px; margin-top: 5px;"><tbody><tr class="odd"><td style="padding: 15px 15px;"><p> An end-user {% include wikipedia title='Application software' text='software application'%}</p></td></tr><tr class="even"><td style="border-top: 1px #aaa solid; padding: 15px 15px;"><p><a href="Getting started"><img src="/media/Imagej-app.png" width="500px"/></a></p></td></tr><tr class="odd"><td><p> Reusable {% include wikipedia title='Library (computing)' text='software libraries'%}</p></td></tr><tr class="even"><td style="padding: 0 15px 15px 35px; font-size: small;"><div class="sourceCode" id="cb1"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="kw">public</span> <span class="dt">void</span> <span class="fu">loadAndDisplay</span>(<span class="bu">File</span> file) {</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a>    ImageJ ij = <span class="kw">new</span> <span class="fu">ImageJ</span>();</span>
@@ -23,8 +21,7 @@ What is ImageJ?
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a>}</span></code></pre></div></td></tr><tr class="odd"><td style="border-top: 1px #aaa solid; padding: 15px 15px 0 15px;"><p> An extensible collection of <a href="plugins">plugins</a> and <a href="services">services</a></p></td></tr><tr class="even"><td style="padding: 15px 0 30px 45px;"><p> <a href="SciJava"><img src="/media/Scijava-logo.png" height="72px"/></a></p></td></tr><tr class="odd"><td style="border-top: 1px #aaa solid; padding: 15px 15px 0 15px;"><p> <em>"Write once, run anywhere"</em> <a href="/libs/imagej-ops">image processing routines</a></p></td></tr><tr class="even"><td style="padding: 15px 0 15px 25px;"><p> <a href="/libs/imagej-ops"><img src="/media/Write-once-run-anywhere.png" width="500px"/></a></p></td></tr></tbody></table>
 
 
-Project structure
------------------
+## Project structure
 
 ImageJ is divided into three parts:
 
@@ -34,8 +31,7 @@ ImageJ is divided into three parts:
 
 For full details on the technical structure of ImageJ, see the [Architecture](/develop/architecture) page.
 
-Key developer tools
--------------------
+## Key developer tools
 
 There are four indispensable software development tools on which ImageJ relies:
 
@@ -44,15 +40,13 @@ Although: ImageJ can be developed using <a href="/develop/ides"><em>any</em> IDE
 
 See the [Project management](/develop/project-management) page for further details.
 
-Source code
------------
+## Source code
 
 [ImageJ](/about) and related [SciJava](SciJava) software projects are [open source](Open_source). The code is organized into [well-separated](/develop/architecture#modularity) projects.
 
 See the [source code](/develop/source) page for further details.
 
-Tutorials
----------
+## Tutorials
 
 Start with the [ImageJ tutorial notebooks](/tutorials)!
 

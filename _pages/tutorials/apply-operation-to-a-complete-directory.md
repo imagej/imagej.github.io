@@ -4,13 +4,11 @@ title: How to apply a common operation to a complete directory
 categories: Tutorials
 ---
 
-How to apply a common operation to a complete directory
--------------------------------------------------------
+## How to apply a common operation to a complete directory
 
 Often you want to apply a common operation to all images in a given directory. This tutorial tries to help you doing this. In addition, the [Script Editor](/scripting/script-editor) provides a template via {% include bc path='Templates | IJ1 Macro | Process Folder'%} that helps getting started quickly.
 
-Step 1: record a macro
-----------------------
+## Step 1: record a macro
 
 First, start the Macro Recorder:
 
@@ -38,8 +36,7 @@ Click on the **Create** button, and you will get this:
 
 ![](/media/How to apply a common operation to a complete directory-7.jpg "How_to_apply_a_common_operation_to_a_complete_directory-7.jpg")
 
-Step 2: Make the macro generic
-------------------------------
+## Step 2: Make the macro generic
 
 The problem now is that this macro contains the verbatim name of the file you saved, but of course, you do not want to save *all* the files in the direcotry as *clown.jpg*!
 
@@ -69,8 +66,7 @@ Now, let's enhance the function so that it opens the image itself, and also clos
 
 The function takes three parameters now: the input and output directories and the file name. These need to be three parameters because the image should be saved into a different directory than the original came from (so that the output images will not be mistaken for input images in subsequent runs of the final macro).
 
-Step 3: Iterating over all images in a given directory
-------------------------------------------------------
+## Step 3: Iterating over all images in a given directory
 
 After defining the generic *action* function, you can call it on each image in an input directory:
 
@@ -105,8 +101,7 @@ Sometimes, ImageJ can get confused when it has to open or close windows and perf
 
 setBatchMode(false);
 
-Alternative: Multiple Image Processor
--------------------------------------
+## Alternative: Multiple Image Processor
 
 If your macro does not use the actual name of the image (as e.g. the Image Calculator does), you can use the *Multiple Image Processor* plugin.
 

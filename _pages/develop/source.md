@@ -7,8 +7,7 @@ section: Development
 
 The source code of ImageJ is very modular; i.e., it is organized into [well-separated](/develop/architecture#modularity) projects. This separation offers many advantages for efficient software development and it is well worth investing a little bit of time to understand.
 
-Where is the code?
-------------------
+## Where is the code?
 
 {% include tip tip='You can search the source code at http://search.imagej.net/ using the GitHub button!' %}\* All source code is on [GitHub](/develop/github).
 
@@ -27,13 +26,11 @@ Where is the code?
 
 See the [Architecture](/develop/architecture) page for more information about the relationship between these projects.
 
-What is the license?
---------------------
+## What is the license?
 
 Most is [BSD-2](/licensing/bsd) (permissive); some is [GPL](/licensing/gpl) (copyleft). See the [Licensing](/licensing) page.
 
-Building from source
---------------------
+## Building from source
 
 Virtually all of these repositories have a top-level `pom.xml` file, identifying them as [Maven](/develop/maven) projects.
 
@@ -47,8 +44,7 @@ Advanced instructions for building, or modifying, the source code are available 
 {% include ides%}
  Note that these tutorials are targeted towards [ImageJ](/about), but would apply to any Maven-based project.
 
-Javadocs
---------
+## Javadocs
 
 Javadoc for all ImageJ-related projects can be found online:
 

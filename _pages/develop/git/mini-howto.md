@@ -10,8 +10,7 @@ section: Development:Git
 
 Most of these explanations are meant for the command line users.
 
-Nomenclature
-------------
+## Nomenclature
 
 A quick note on the nomenclature: *fiji.git* refers to the "official" repository on [1](https://github.com/fiji/fiji.git). After cloning it, you will have a local repository with a working directory, which will be referred to as "fiji/" in this document (and "cd fiji/" just tells you to make sure you are in that directory).
 

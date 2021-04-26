@@ -7,28 +7,23 @@ section: Development
 
  We make a serious effort to keep the ImageJ codebase clean, consistent and easy to read—which includes both the source code and the revision history.
 
-Interface-driven design
------------------------
+## Interface-driven design
 
 ImageJ uses an [interface-driven design](https://msdn.microsoft.com/en-us/library/aa260635%28v=vs.60%29.aspx) where possible. Public interfaces, enumerations and constants (i.e., `public static final` fields) form the basis of ImageJ's API contract with downstream code. While we make an effort not to change the public methods and fields of non-interfaces, they may require occasional changes to improve the system.
 
-Versioning
-----------
+## Versioning
 
 ImageJ uses [Semantic Versioning](http://semver.org/). As of this writing, the project is still in beta, so the API is not finalized yet. But once we make the final 2.0.0 release, future versions will be fully compliant. See the [Architecture](/develop/architecture#versioning) page for further details.
 
-Naming
-------
+## Naming
 
 We have tried to name classes with similar logic to how the Java standard library does. We eschew the "I" prefix for interfaces, as well as the "Impl" suffix for implementations. Instead, like the Java standard library, we prefix abstract superclasses with "Abstract" and canonical implementations with "Default"—for example, the `Display` interface is implemented by an abstract superclass named `AbstractDisplay` and extended by a concrete implementation named `DefaultDisplay`.
 
-Cleverness
-----------
+## Cleverness
 
 Because a large number of developers study the ImageJ codebase, and it provides many examples of use, we try to provide [easy to understand, maintainable code](http://www.daedtech.com/writing-maintainable-code-demands-creativity). We avoid "clever" or obfuscated solutions to problems, since such code tends to be much harder to understand.
 
-SCM history
------------
+## SCM history
 
 We try to follow best practices for maintaining a clean and organized Git history:
 
@@ -40,8 +35,7 @@ We try to follow best practices for maintaining a clean and organized Git histor
 -   In the case of unfinished work at the conclusion of a coding session, we commit it with the subject *WIP* and push to the topic branch. (Calling `git reset HEAD^` next time makes it easy to pick up the work from there.) Doing this reduces the chance of lost work, and makes it easier for other programmers to collaborate during development.
 -   We avoid monster commits (with commit messages like "Many changes to several subsystems") in favor of well-separated, modular commits with one conceptual change at a time. Git's staging area feature makes this much easier (e.g., `git add -p`). Granular commits have many advantages; e.g., [`git`` ``bisect`](/develop/git/pinpoint-regressions) becomes much more useful for understanding mysterious bugs.
 
-Javadoc and comments
---------------------
+## Javadoc and comments
 
 We try to write Javadoc as code is added, rather than earmarking it for addition later. It is our intention to provide Javadoc for all public types. At minimum, we add TODO comments for any pending Javadoc. Our goal is for all Javadoc to render correctly as HTML (i.e., in web browsers) rather than abusing whitespace formatting in source.
 
@@ -53,15 +47,13 @@ We also have several comment tokens we use in various situations:
 -   When additional work is needed somewhere, but not urgently, we add a "TODO" comment marking it.
 -   For temporary code intended to be removed as soon as possible, we label it with a "TEMP" token.
 
-Eclipse code style profiles
----------------------------
+## Eclipse code style profiles
 
 We provide [Eclipse configuration files in the source repository](https://github.com/imagej/imagej/tree/master/config) that define our rules for code structure and formatting. **NB** when downloading an `.epf` file from the repository, don't click *Save link as...*, rather create a file `my-file-name.epf`, and then copy-paste the contents of the file. To do this, click on `eclipse-preferences.epf` and then the *Raw* button.
 
 You can import them to your system using {% include bc path='File | Import | Preferences'%} and selecting the `eclipse-preferences.epf` file. Then, in Eclipse preferences, navigate to {% include bc path='Java | Code Style | Clean Up'%} and select "/about" for the active profile. You can then format your source code by right-clicking your source file(s) and choosing {% include bc path='Source | Clean Up'%} from the context menu. As of this writing, these rules are not automatically applied by CI, but we make an effort to apply them to the codebase occasionally by hand.
 
-Ordering of code blocks
------------------------
+## Ordering of code blocks
 
 For consistency, we prefer the following order for code blocks within a class:
 
@@ -85,8 +77,7 @@ We also try to label each section of code separately; i.e., each class's and int
 
 Even though modern IDEs provide a lot of functionality for understanding where methods and variables come from, we still believe this ordering makes it easier to find what you are looking for in code.
 
-Private over protected fields and methods
------------------------------------------
+## Private over protected fields and methods
 
 We prefer use of private fields and methods over protected ones, where possible. While non-private fields can be a convenient construct for classes intended to be subclassed, there are several disadvantages to using them:
 
@@ -99,8 +90,7 @@ More observations on this issue can be found at [this post on StackOverflow](htt
 
 All of that said, there are times when use of the `protected` modifier is appropriate, so you will certainly see it in a few places in the ImageJ codebase. In particular, we use `protected` for event handler methods, both to avoid unused method warnings in Eclipse, as well as to make it easier for subclasses to override the event handling behavior.
 
-See also
---------
+## See also
 
 [Eclipse code style profiles and IntelliJ](/develop/intellij#code-style-profiles)
 

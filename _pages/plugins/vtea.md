@@ -33,8 +33,7 @@ We developed VTEA out of a need to unify the various tasks involved in image pro
 
 Importantly, our solution is in its infancy. In fact, the tools are relatively simple ones drawn from ImageJ's core functions. These first tools represent only the beginning of our vision for VTEA. We are currently planning to leverage the SciJava framework to make VTEA easily extensible and continue to build both upon existing tools in ImageJ/Fiji and our own novel approaches.
 
-Installing
-----------
+## Installing
 
 `   To install the VTEA plugin use, `[`How`` ``to`` ``follow`` ``a`` ``3rd`` ``party`` ``update`` ``site`](/update-sites/following)` and check the update site:`  
 `   "Volumetric Tissue Exploration and Analysis" `**`OR`**` follow the following four steps:`
@@ -63,8 +62,7 @@ Check "Volumetric Tissue Expl..." and select "Close"
 
 Select "Apply changes". Upon restart, the plugin will be present under a new menu "IU\_Tools".
 
-Tutorials
----------
+## Tutorials
 
 ### Image Processing
 
@@ -82,8 +80,7 @@ Tutorials
 
 `      Coming soon!`
 
-VTEA reference
---------------
+## VTEA reference
 
 The utility of VTEA and 3D tissue cytometry was demonstrated in the following publication:
 

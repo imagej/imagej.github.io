@@ -8,8 +8,7 @@ categories: Binary,Unmaintained, plugins
 
 Computes the 3D discrete (values 0 to 255) distance transform, distance is distance to background. Based on the paper "On digital distance transforms in three dimensions"[1], by Gunilla Borgefors, and code from Centrum for bildanalys, cb.uu.se. See source for more details.
 
-References
-----------
+## References
 
 <references />
 

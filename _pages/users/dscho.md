@@ -23,8 +23,7 @@ A short story about Fiji
 
 This story is not about {% include wikipedia title='Fiji' text='the island called "Fiji"' %}. This story is how [Fiji Is Just ImageJ](https://fiji.sc) became born.
 
-The beginning
--------------
+## The beginning
 
 Back when I met [Albert Cardona](http://albert.rierol.net) at the [first ImageJ conference](/events/Conference_2006), it became pretty apparent pretty quickly that not only would we become good friends, but also that we had a lot of mutual respect for the work we had done so far. His biggest accomplishment was certainly [TrakEM2](/plugins/trakem2), but he had also worked on the macro interpreter (including a so-called [Command Line Interface](/scripting/macro), which is a two-paned window for interactive macro evaluation) and had already turned to [Jython](/scripting/jython) as a more powerful way to script ImageJ. At that time, I had not worked all that many years with ImageJ, but I already was maintainer of [ImageJA](/libs/imageja).
 
@@ -54,8 +53,7 @@ After a couple of days I showed the result to Albert. So far, there was no insta
 
 To this date, there is no installer, but hey, maybe we get one in another 3 years...
 
-The surprise
-------------
+## The surprise
 
 When I showed the result to Albert, he seemed to be happy. At least he did not run away in disgust. But I did not hear a lot about Fiji from his side, except that he needed a way to contribute.
 
@@ -77,7 +75,6 @@ Little did I know just how many people Albert told about this project. I thought
 
 At one point Albert told me. Apparently the good people in Dresden were not only interested in our little software project, but were actually enthusiastic. Enthusiastic enough that they provided us with a nice, beefy [server](/about/funding), and offered to organize a [hackathon](/events/Hackathon) to kick-start Fiji as a much bigger project!
 
-Fiji won't quit
----------------
+## Fiji won't quit
 
 TBD

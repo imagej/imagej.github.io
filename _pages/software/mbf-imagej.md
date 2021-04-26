@@ -10,8 +10,7 @@ We have posted a [mirror](/mbf/) of the last available version of the MBF ImageJ
 
 Hence, rather than using the MBF ImageJ plugins, we encourage users to peruse the [Cookbook](/cookbook), which was inspired by MBF ImageJ but describes functionality available in the most recent version of Fiji, including many plugins originally distributed with MBF ImageJ.
 
-Publication
------------
+## Publication
 
 -   Collins, T. J. (2007). [ImageJ for microscopy](https://medicine.osu.edu/neuroscience/Documents/Biotechniques%20ImageJ%20overview%202013.pdf). Biotechniques, 43(1 Suppl), 25-30.
 

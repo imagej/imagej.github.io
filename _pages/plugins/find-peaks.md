@@ -20,8 +20,7 @@ categories: Scripting,Analysis,Plugins
 
 A [BAR](/plugins/bar) script (written in [BeanShell](/scripting/beanshell)) that retrieves local maxima and minima from an ImageJ plot. The easiest way to install *Find Peaks* is by [subscribing](/plugins/bar#installation) to the BAR {% include list-of-update-sites content='update site' %}.
 
-Options
--------
+## Options
 
 {%- capture FindPeaksSnapshot-title -%}
 Analysis of synthetic data plotted from a .csv file. CSV files can be imported into ImageJ by drag and drop, or by using {% include bc path="File | Import | Results" %}. Once [options](#options) are specified, coordinates of retrieved peaks are logged to the table of a new plot window'
@@ -68,8 +67,7 @@ If active, the Plot's table will be displayed (as frontmost window), allowing va
     IJ.saveAs("Results", "/Path/to/Output/Directory/Plot Values.csv");
     WindowManager.getActiveWindow().close()
 
-Notes
------
+## Notes
 
 -   Both maxima and minima are listed in descending order, from the largest to smallest amplitude
 -   Peaks with flat tops are retrieved at their centers
@@ -78,8 +76,7 @@ Notes
 -   Use *Scientific notation* and *Decimal places* in {% include bc path='Analyze|Set Measurements...'%} to improve the representation of values that are too big or too small to be displayed in the decimal form
 -   Find Peaks was initially though as a [complementary tool](/plugins/sholl-analysis#complementary-tools) for [Sholl Analysis](/plugins/sholl-analysis) but it that can be applied to any dataset. For this reason, it is now part of [BAR](/plugins/bar)
 
-Related Resources
------------------
+## Related Resources
 
 Analysis of 1D-signals was discussed in March 2014 on the [ImageJ mailing list](https://list.nih.gov/cgi-bin/wa.exe?A1=ind1403&L=IMAGEJ#32). That discussion highlighted the following alternatives to *Find Peaks*:
 
@@ -87,13 +84,11 @@ Analysis of 1D-signals was discussed in March 2014 on the [ImageJ mailing list](
 -   [Multi-Peak fitting using R](http://cmci.embl.de/documents/120206pyip_cooking/python_imagej_cookbook#rmulti-peak_fitting_using_r) by Kota Miura, a [Jython](/scripting/jython) script that calls the [R](http://www.r-project.org) package [Peaks](http://cran.r-project.org/web/packages/Peaks/index.html). Requires [Rserve](http://www.rforge.net/Rserve/doc.html) ([instructions](http://cmci.embl.de/documents/101105ij_r_jython#using_r_from_imagej_via_rserve))
 -   [Fast Filters plugin](http://imagejdocu.tudor.lu/doku.php?id=plugin:filter:fast_filters:start) by Michael Schmid, a collection of unidirectional filters that can be applied to to rows or columns in an image ([instructions](https://list.nih.gov/cgi-bin/wa.exe?A2=ind1403&L=IMAGEJ&F=&S=&P=136934)).
 
-Installation
-------------
+## Installation
 
 The easiest way to install *Find Peaks* is by [subscribing to the BAR update site](/plugins/bar#installation).
 
-License
--------
+## License
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [Free Software Foundation](http://www.gnu.org/licenses/gpl.txt). This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 

@@ -13,8 +13,7 @@ linkedin: in/brian-northan-3a78606
 
 Brian is a consultant who works on image analysis problems. He is a contributor to the [ImageJ Ops](/libs/imagej-ops) project.
 
-What is Brian working on
-------------------------
+## What is Brian working on
 
 ### Consulting
 

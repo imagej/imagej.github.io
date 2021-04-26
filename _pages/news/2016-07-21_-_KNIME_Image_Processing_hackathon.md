@@ -6,8 +6,7 @@ categories: News,Hackathons,ImageJ2,KNIME
 
 From Tuesday, July 5, 2016 through Thursday, July 14, 2016, {%- include person id='dietzc' -%} of the [University of Konstanz](http://www.uni-konstanz.de/en/welcome/) hosted \~20 developers at the [KNIME Konstanz Regional Office](https://www.knime.org/contact) for a [hackathon](/events/Hackathon) to develop the [KNIME](/software/knime) Image Processing extensions along with the underlying [ImageJ Ops](/libs/imagej-ops) library, as well as other supporting technologies such as [ImgLib2](/imglib2), [ClearVolume](/plugins/clearvolume) and the [BigDataViewer](/plugins/bdv).
 
-Timeline
---------
+## Timeline
 
 The following chart illustrates when everyone was present:
 
@@ -103,8 +102,7 @@ PlotData=
 
 </timeline>
 
-Gallery
--------
+## Gallery
 
 
 {% capture content%}
@@ -123,8 +121,7 @@ Gallery
 {% include gallery content=content%}
 
 
-Hackathon progress
-------------------
+## Hackathon progress
 
 ### Christian Dietz
 
@@ -160,8 +157,7 @@ Hackathon progress
 -   Helped clean up {%- include person id='rimadoma' -%}'s "Topology namespace and ops" PR ({% include github org='imagej' repo='imagej-ops' pr='415' label='imagej-ops\#415' %})
 -   Created a (not yet functional) [Kotlin](https://kotlinlang.org/) SciJava script engine ({% include github org='scijava' repo='scripting-kotlin' label='scijava/scripting-kotlin' %})
 
-Technical discussions
----------------------
+## Technical discussions
 
 -   The future of ImageJ user interfaces: ImageJFX? KNIME? JavaScript + RESTful image server?
 -   Languages on the JVM: using Scala, Kotlin and/or Groovy for future SciJava components

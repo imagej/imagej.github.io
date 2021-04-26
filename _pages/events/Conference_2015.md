@@ -10,8 +10,7 @@ Information
 
 The 2015 [ImageJ User and Developer Conference](/events/Conference) complemented the EU meetings in Luxembourg and offered workshops to improve software knowledge and usage covering both beginner/user and advanced/developer topics. The conference provided a community forum for ImageJ development over the past three years and also featured shorter presentations highlighting case studies, plugins, and solutions to common problems.
 
-Location
---------
+## Location
 
 ![ 250px \| left](/media/ WID.jpg " 250px | left")
 
@@ -25,8 +24,7 @@ Location
 
 {% include clear content='left' %}
 
-Call for abstracts
-------------------
+## Call for abstracts
 
 Submissions from the ImageJ community were warmly encouraged:
 
@@ -36,13 +34,11 @@ Submissions from the ImageJ community were warmly encouraged:
 
 The focus of this conference was on community, so *tools being presented were made publicly available before the start of the conference.*
 
-Registration
-------------
+## Registration
 
 Due to generous support from the University of Wisconsin-Madison and [LOCI](/orgs/loci), there was no registration fee for this conference.
 
-Visiting Madison
-----------------
+## Visiting Madison
 
 All attendees were expected to cover their own travel and lodging.
 
@@ -79,8 +75,7 @@ As such, the 2015 ImageJ Conference Organizers recommended that guests reserve r
 {% include clear%}
 
 
-Travel support
---------------
+## Travel support
 
 With this conference, there were no registration fees, and there was a free reception. As such, attendees covered their own travel expenses. There was limited travel support for workshop presenters and featured presentations.
 
@@ -95,8 +90,7 @@ For full details including abstracts and presentation recordings, see the [Confe
 Organization
 ============
 
-Organizers
-----------
+## Organizers
 
 -   {%- include person id='eliceiri' -%}, [Laboratory for Optical and Computational Instrumentation](/orgs/loci) (LOCI) at [UW-Madison](http://wisc.edu/)
 -   Kristy Wendt, [Laboratory for Optical and Computational Instrumentation](/orgs/loci) (LOCI) at [UW-Madison](http://wisc.edu/)
@@ -104,8 +98,7 @@ Organizers
 -   {%- include person id='hinerm' -%}, [Laboratory for Optical and Computational Instrumentation](/orgs/loci) (LOCI) at [UW-Madison](http://wisc.edu/)
 -   Andreas Jahnen, [Luxembourg Institute of Science and Technology](http://www.list.lu/)
 
-Advisory committee
-------------------
+## Advisory committee
 
 Abstract submissions were reviewed by the conference advisory committee:
 
@@ -118,8 +111,7 @@ Abstract submissions were reviewed by the conference advisory committee:
 -   {%- include person id='rasband' -%}, [National Institutes of Health](http://www.nih.gov/)
 -   Pavel Tomancak, [Max Planck Institute of Molecular Cell Biology and Genetics](http://mpi-cbg.de/) (MPI-CBG) at Dresden
 
-Sponsors and partners
----------------------
+## Sponsors and partners
 
 <table>
 <tr>

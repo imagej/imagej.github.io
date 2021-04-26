@@ -7,8 +7,7 @@ section: Learn:Cookbook
 
 
 
-Correcting for bleaching
-------------------------
+## Correcting for bleaching
 
 Often, during acquisition of a time-course, the fluorophore may bleach and the intensity of the image is reduced. This can make it harder to discern events at the end of the sequence. A stretch in contrast at the first time point may not be adequate 100 time points later. The process of bleaching and decrease in image intensity can be fitted with a mono-exponential decay, although it often follows a bi-exponential. A mono-exponential decay is described by the equation:
 
@@ -44,8 +43,7 @@ Another way to compensate for bleaching is to use the menu item "*Process/Enhanc
 
 Again, use this function to enhance movies for presentation, not quantification.
 
-F÷F0
-----
+## F÷F0
 
 ![](/media/F f0 raw.png "fig:f_f0_raw.png") ![](/media/F f0 corrected.png "fig:f_f0_corrected.png")
 
@@ -65,8 +63,7 @@ First ensure the image is properly background corrected:
 
 The F divided by F0 steps are automated in the *"F\_div\_F0"* macro. This will return the FdivF0 stack and a thresholded FdivF0 stack.
 
-Delta-F
--------
+## Delta-F
 
 ![](/media/Delta f raw.png "delta_f_raw.png")
 
@@ -84,8 +81,7 @@ For drops in intensity (e.g. TMRE plus irradiation induced mitochondrial depolar
 
 Note: The plugin generates a second result stack. For large memory consuming stacks, run the plugin with the {% include key content='Alt' %} key down. If the plugin is run with the {% include key content='Alt' %} key down, the calculation is made on the original stack. This plugin may also be useful to clean up time courses prior to motion tracking.
 
-Surface plotting
-----------------
+## Surface plotting
 
 ![](/media/Surface plot compare.png "surface_plot_compare.png")
 

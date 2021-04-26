@@ -27,8 +27,7 @@ section: Learn
 
 ImageJ's [extensibility](/develop/architecture#extensibility) is the root of its effectiveness: many advanced image-processing methods are not provided by the core application, but rather are [plugins](/plugins) written by specialists in specific fields, made available via [update sites](/update-sites).
 
-How do I get started?
----------------------
+## How do I get started?
 
 -   Get ImageJ from the [/downloads](/downloads) page
 -   Read the [Getting started](/learn/getting-started) tutorial.

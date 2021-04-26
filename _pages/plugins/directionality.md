@@ -7,8 +7,7 @@ artifact: sc.fiji:Directionality\_
 
  
 
-Usage
------
+## Usage
 
 <img src="/media/Directionality Example.png" width="600"/>
 
@@ -26,8 +25,7 @@ The user interface allows to specify:
 -   The result table flag will generate a table containing all result value to be displayed. This table can be exported as a CSV file thereafter; see below.
 -   The orientation map flag will cause the orientation map to be generated; see below.
 
-Statistics generated
---------------------
+## Statistics generated
 
 On top of the histogram, the plugin tries to generate statistics on the highest peak found.
 
@@ -39,15 +37,13 @@ On top of the histogram, the plugin tries to generate statistics on the highest 
 
 A study made on artificial images reveal that the 'Amount' value as calculated here **underestimates** the real proportion of structures with the preferred orientation. So for the pine image up there, one can conclude that the proportion of needle leaves oriented around +60° is at least 25% (however, the image is not completely uniform, which cripples the meaning of this amount value).
 
-Results data export
--------------------
+## Results data export
 
 1.  Save the Directionality Results window contents to a spreadsheet by copy pasting.
 2.  If you want to save an image of the histogram, right-click on the plot, and choose save as.
 3.  If you want to export the histogram data, check the Data table box in the plugin dialog window. This will generate a results table, that can be exported as a csv file with a right click, or copy pasted directly into a spreadsheet etc.
 
-How does it work?
------------------
+## How does it work?
 
 Different solutions have been thought about, and two of them are currently implemented:
 
@@ -61,8 +57,7 @@ This plugin chops the image into square pieces, and computes their Fourier power
 
 This method is local. The gradient of the image is calculated using a 5x5 Sobel filter, and is used to derive the local gradient orientation. This orientation is then used to build the histogram, by putting the square of the gradient norm in the adequate bin. The square of the norm was retained, so as to have an histogram with the same dimension that for the Fourier analysis.
 
-Orientation map
----------------
+## Orientation map
 
 Since version 2.0, the plugin offers the possibility to generate an orientation map, where the image is colored according to its local directionality, or location orientation. This has a well an easily defined meaning in the case of the local gradient orientation method, but things are a bit more complicated in the case of the Fourier component, which is a global method.
 
@@ -76,8 +71,7 @@ To generate the orientation map image, a HSB image is made by taking
     -   the power spectrum value for the Fourier component method;
     -   the gradient magnitude square for the Local gradient orientation method.
 
-Test images
------------
+## Test images
 
 Here is two images stack made to test the plugin accuracy:
 
@@ -88,8 +82,7 @@ Here is two images stack made to test the plugin accuracy:
 
 `VaryingAmount.tif` has the same parameters than the previous stack, but has a varying amount of orientated rods (from 20% to 100% of the 2000 rods) and a fixed direction of -60° for the orientated ones. You can use it to test the "Amount" score.
 
-Code structure
---------------
+## Code structure
 
 This plugin is written as a classical ImageJ plugin. It implements *PlugInFilter*, and relies on *PlugInFilterRunner* to be run.
 
@@ -102,8 +95,7 @@ String arguments can be passed to it, using the *setup(String, ImagePlus)* metho
      new PlugInFilterRunner(da, command, "nbins=60, start=-90, method=gradient");
      
 
-Scripting
----------
+## Scripting
 
 ### General scripting
 
@@ -206,8 +198,7 @@ You can retrieve them and display them with the following script:
 
     rt.show('Fit param for y = a + (b-a)*exp(-(x-c)*(x-c)/(2*d*d)') 
 
-Uses of this plugin
--------------------
+## Uses of this plugin
 
 Since there is no publication associated with this plugin, it is hard tracking where it is used. However people wrote me and helped building the following list. The Directionality plugin has been used at least in the following publications:
 
@@ -251,24 +242,21 @@ Since there is no publication associated with this plugin, it is hard tracking w
 
 If you use it, please tell me so that I can add to this list.
 
-Version history
----------------
+## Version history
 
 -   v2.0: After a lot of mistakes and problems, each method now propose to generate an orientation map, which colors the image according to the local directionality.
 -   v1.2: Added a new analysis method based on local gradient orientation.
 -   v1.1: Added an option to export the histogram as a table.
 -   v1.0: First working commit with the Fourier method.
 
-Wish list for this plugin
--------------------------
+## Wish list for this plugin
 
 Possible way for further developments:
 
 -   Have a peak finder that can deal with multiple peaks and return statistics on them.
 -   Add a radial filter to the Fourier method, that would allow to pick only structures with a given length (+/- bandwidth). Conversely, add a scale option to the Local gradient orientation method.
 
-References
-----------
+## References
 
 -   \[1\] **Liu.** Scale space approach to directional analysis of images. *Appl. Opt. (1991) vol. 30 (11) pp. 1369-1373*
 

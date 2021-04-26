@@ -6,8 +6,7 @@ categories: Plugins,Color processing
 
 {% include info-box software='ImageJ' name='Align RGB planes' author='Gabriel Landini' maintainer='G. Landini at bham. ac. uk' filename=' [align\_rgb.zip](http://www.mecourse.com/landinig/software/align_rgb.zip)' source='in zip file' released='12 January 2004' latest-version='27 March 2007' status='active' category='[Color processing](Category_Color_processing)' website='http://www.mecourse.com/landinig/software/software.html' %}
 
-Documentation
--------------
+## Documentation
 
 From the plugin inline help:
 
@@ -21,8 +20,7 @@ The *Revert* button works only with single images, not stacks.
 
 Note: When using stacks, 2 buttons \[&lt; Prev\] and \[Next &gt;\] are added to the panel. Do not use the slide bar in the stack window, but use those buttons instead."
 
-Version history
----------------
+## Version history
 
 -   v1.0 12/Jan/2004 released
 -   v1.1 12/Feb/2004 avoids error if image does not exist

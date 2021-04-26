@@ -8,8 +8,7 @@ Morphological operations in Imglib2.
 
 The presentation of what are morphological operations is left to {% include wikipedia title='Mathematical morphology' text='Wikipedia'%}.
 
-Package content and location.
------------------------------
+## Package content and location.
 
 This Imglib2 package ships only (yet) the basic morphological operations:
 
@@ -26,8 +25,7 @@ Classes can be found in the [`net.imglib2.algorithm.morphology`](https://github.
 
 Examples can be found in the [`net.imglib2.algorithm.morphology`](https://github.com/tinevez/imglib2-tests/tree/morphology/src/test/java/net/imglib2/algorithm/morphology) package of the [imglib2-tests library](https://github.com/imglib/imglib2-tests).
 
-Gray morphology and flat structuring elements.
-----------------------------------------------
+## Gray morphology and flat structuring elements.
 
 This set of methods does *gray morphology*. It applies to source images that can be of any scalar numerical type (8-bit, 12-bit, 16-bit, booleans, floats, signed or unsigned, ...), not only black and white images.
 
@@ -35,8 +33,7 @@ It actually applies to more than this: The type of the source image only needs t
 
 However, we use the Imglib2 [Shape interface](https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/region/localneighborhood/Shape.java) for structuring elements. This restricts structuring elements to *flat* structuring elements, which do not have a weight, or value, associated to each location. This prevents us from developing a *stricto sensu* rolling-ball background subtraction algorithm based on this package (but a rolling-disk version is possible).
 
-Morphological operations on `Comparable` type.
-----------------------------------------------
+## Morphological operations on `Comparable` type.
 
 Morphological operations are defined on types that have very little requirement. The data does not have to be made of numerical pixels at all. Mathematically, they are defined on partially ordered sets (complete lattices, see for instance {% include wikipedia title='Dilation (morphology)\#Dilation\_on\_complete\_lattices' text='"Dilation on complete lattices"'%}).
 
@@ -152,8 +149,7 @@ This method returns a structuring element as a list of shapes, and a boolean fla
 
 The following paragraphs document what decompositions are currently implemented for common structuring elements.
 
-Rectangular structuring element.
---------------------------------
+## Rectangular structuring element.
 
 ### Decomposition.
 
@@ -173,8 +169,7 @@ Here the standard case takes a time proportional to `M × R³`, and the optimize
 
 <File:RectangleStrel3DPerformance.png%7CProcessing> time for the dilation of a 40x40x40 image. <File:RectangleStrel3DPerformanceComparison.png%7CProcessing> time ratio.
 
-Square structuring element
---------------------------
+## Square structuring element
 
 ### Decomposition.
 
@@ -188,8 +183,7 @@ The square is just a special case of the rectangle, implemented for convenience.
 
 <File:SquareStrel3DPerformance.png%7CProcessing> time for the dilation of a 49x49x49 image. <File:SquareStrel3DPerformanceComparison.png%7CProcessing> time ratio. <File:SquareStrel3DPerformanceWMATLAB.png%7CFirst> image zoomed to highlight [MATLAB](/scripting/matlab) performance.
 
-Diamond structuring element
----------------------------
+## Diamond structuring element
 
 ### Shape
 
@@ -248,8 +242,7 @@ For the 2D case (only), [MATLAB](/scripting/matlab) offers to generate optimized
 
 In 3D, [MATLAB](/scripting/matlab) does not offer a structuring element decomposition (yet). So the performance curve as the expected cubic shape, though it outperforms Imglib2 in the non-optimized case. For large radius, the Imglib2 optimization manages to beat it.
 
-Disk structuring element.
--------------------------
+## Disk structuring element.
 
 ### 2D Decomposition in periodic lines.
 

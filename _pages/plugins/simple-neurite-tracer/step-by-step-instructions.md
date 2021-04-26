@@ -14,8 +14,7 @@ Step-by-Step Tracer Instructions
 
 These "step-by-step" instructions below assume that you have done the preliminary steps described on the [Simple Neurite Tracer: Basic Instructions](/plugins/simple-neurite-tracer/basic-instructions) page including starting up the plugin and turning on "Hessian-based analysis". Note that the screenshots here are from an early pre-release version of the plugin. The path list in the current version is in a separate window, but otherwise the interface is the same.
 
-Trace a basic path:
--------------------
+## Trace a basic path:
 
 ### 1. Pick a start point
 
@@ -37,8 +36,7 @@ Assuming you confirmed the path, the confirmed path will appear in red, like thi
 
 If you completed that path it will be shown in magenta: ![](/media/Snt-cropped-completed-path.png "fig:Snt-cropped-completed-path.png")
 
-Branching: Start a path on an existing path
--------------------------------------------
+## Branching: Start a path on an existing path
 
 Before you pick a start point for your first path, the tracer will look like this: (We've zoomed in on the region of interest) ![](/media/Snt-sb-before-selecting.png "fig:Snt-sb-before-selecting.png")
 
@@ -54,8 +52,7 @@ To force the start of the new path to be a branch off the selected path, hold do
 
 From this point on, you can carry on adding to the path as above, e.g. create a temporary path: ![](/media/Snt-sb-temporary-path.png "fig:Snt-sb-temporary-path.png") ... and confirm it: ![](/media/Snt-sb-confirmed-path.png "fig:Snt-sb-confirmed-path.png") When you decide to complete the path you should see in the path list that it has been recorded as starting on the existing path: ![](/media/Snt-sb-completed-branch.png "fig:Snt-sb-completed-branch.png")
 
-Joining: End a path on an existing path
----------------------------------------
+## Joining: End a path on an existing path
 
 Supposing you want the end of a path that you're tracing to join onto an existing path, you just use the same modifier key when selecting the end point of the last part of the path. To go into that in more detail, if you're half way through tracing a path like this: ![](/media/Snt-ej-cropped-half-finished.png "fig:Snt-ej-cropped-half-finished.png")
 

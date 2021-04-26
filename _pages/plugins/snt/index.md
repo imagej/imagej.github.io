@@ -19,8 +19,7 @@ categories: Citable,Plugins,Segmentation,Neuroanatomy,SNT
 {% endcapture %}
 {% include info-box name='SNT' software='complete framework for quantification of neuronal anatomy' logo='<img src="/media/SNTLogo512.png" width="150"/>' author=author maintainer=maintainer source=source status='stable, active' category='[Neuroanatomy](Category_Neuroanatomy)' %}
 
-Overview
---------
+## Overview
 
 SNT is ImageJ's framework for semi-automated tracing, visualization, quantitative analyses and modeling of neuronal morphology. For tracing, SNT supports modern multi-dimensional microscopy data, and highly-customizable routines. For data analysis, SNT features advanced visualization tools, access to all major morphology databases, and support for whole-brain circuitry data. It supersedes the original [Simple Neurite Tracer](/plugins/snt/faq#snt) plug-in.
 
@@ -35,8 +34,7 @@ SNT's documentation is extensive. Please use the navigation bar on too of the pa
 
 {% include thumbnail src='/media/SimpleNeuriteTracer2.png' title='SNT Overview. A key feature of SNT is that *every* aspect of the program can be [scripted](/plugins/snt/scripting) in any of Fiji\'s supported languages, or from Python through [pyimagej](https://github.com/imagej/pyimagej).'%}
 
-Features
---------
+## Features
 
 ### Tracing
 
@@ -75,8 +73,7 @@ Features
     -   Improved calls to Dijkstra's filling and Path-fitting routines
     -   Multi-threading improvements
 
-Installation
-------------
+## Installation
 
 SNT is currently distributed through the [Neuroanatomy](/plugins/neuroanatomy) [update site](/update-sites). The first time you start SNT from Fiji's menu structure ({% include bc path='Plugins|Neuroanatomy|SNT'%}, or its backwards-compatible alias {% include bc path='Plugins|NeuroAnatomy|Legacy|Simple Neurite Tracer...'%} ) you should be prompted for automatic subscription and download of required dependencies. If not:
 

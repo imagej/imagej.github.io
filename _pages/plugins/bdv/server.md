@@ -17,15 +17,13 @@ title: BigDataServer
 {% endcapture %}
 {% include info-box name='BigDataServer' software='Fiji' author=author maintainer=maintainer source=source latest-version='1.0.2' status='experimental' category='[Visualization](Category_Visualization), [Transform](Category_Transform)' %}
 
-Description
------------
+## Description
 
 BigDataServer is a minimalistic HTTP server that serves XML/HDF5 datasets to the [BigDataViewer](/plugins/bdv) Fiji plugin for visualisation.
 
 The BigDataServer is running on a remote machine which hosts the XML/HDF5 datasets. A client running Fiji connects to the server, chooses the dataset that the server offers and then the data are efficiently delivered to the BigDataViewer. In this way, it is possible to seamlessly navigate very large datasets that reside in a remote location.
 
-Installing and running the BigDataServer
-----------------------------------------
+## Installing and running the BigDataServer
 
 BigDataServer is packaged as a single "batteries-included" jar file with all required dependencies. It is run from the command line using Java 7 or higher. Copy [bigdataserver.jar](http://fly.mpi-cbg.de/~pietzsch/bigdataserver.jar) onto your webserver (probably running Linux). Run the BigDataServer using this command:
 
@@ -77,8 +75,7 @@ To add new datasets edit the *dataset.txt* and add new XML paths. After that you
 
 Note that the server port needs to be open.
 
-Connecting to a running BigDataServer from Fiji
------------------------------------------------
+## Connecting to a running BigDataServer from Fiji
 
 In order to connect to a BigDataServer from Fiji and view the data go to {% include bc path='Plugins | BigDataViewer | Browse BigDataServer'%}. You will be presented with the following dialog box:
 

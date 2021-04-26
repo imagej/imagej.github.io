@@ -8,8 +8,7 @@ categories: Stacks,Plugins
 
 This plugin builds [kymographs](/tutorials/generate-and-exploit-kymographs) using straight line, polyline or freehand selection of variable thickness (and using either average or maximum intensity across the line). So it is extended implementation of ImageJ's *Reslice* function. Here are some thought on "[Why another kymograph plugin?](http://katpyxa.info/feedbacks/?p=26)".
 
-Using plugin
-------------
+## Using plugin
 
 Open the stack/movie to be analyzed in ImageJ. Draw a line along the area where you want to make a kymograph.  
 You can use ImageJ's *native* **embedded** characteristics of the line/curve, like:
@@ -40,13 +39,11 @@ Where following options are available (in order):
 -   (checked) curve will be added and displayed in the overlay of original movie/stack to mark already analyzed region;
 -   ignore original image/stack calibration, i.e. don't add its calibration to the final kymograph image (width, height, vortex size and frame rate)
 
-Other kymograph plugins
------------------------
+## Other kymograph plugins
 
 As alternative, there is very well documented [Multi Kymograph](/plugins/multi-kymograph) plugin and its updated version [Kymograph tool](http://biop.epfl.ch/TOOL_KYMOGRAPH.html).
 
-Version history
----------------
+## Version history
 
 version 0.5 (2017/04/01): hyperstacks reslice fixed (now time, not Z) and image calibration handling is improved (with option to ignore it).
 

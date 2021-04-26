@@ -22,8 +22,7 @@ However, the [Fiji](/fiji) project has obtained permission to redistribute them:
 >     listed at http://bigwww.epfl.ch/algorithms.html since you have our
 >     consent.
 
-List of BIG components
-----------------------
+## List of BIG components
 
 The following components are expressly or implicitly licensed this way:
 

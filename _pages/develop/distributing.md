@@ -10,8 +10,7 @@ If you create a useful extension of ImageJ—e.g., a [plugin](/plugins), [script
 -   Share the extension's **source code**
 -   **Document** the extension somewhere
 
-Best practices
---------------
+## Best practices
 
 Here is a quick summary of the most recommended options:
 
@@ -28,8 +27,7 @@ Here is a quick summary of the most recommended options:
 
 The tables below discuss additional options for these three aspects of distribution. Green items are recommended. Other options are given but not recommended for various reasons.
 
-Distributing your extension
----------------------------
+## Distributing your extension
 
 The first goal is to get your extension into the hands of users.
 
@@ -69,8 +67,7 @@ The first goal is to get your extension into the hands of users.
 <td><ul><li>Create an archive (TAR, ZIP, etc.).</li><li>Upload the archive to the relevant web space, and link it.</li></ul></td>
 </tr></tbody></table>
 
-Sharing your source code
-------------------------
+## Sharing your source code
 
 If you want to facilitate good science, please [share your source code](Open_Source). Otherwise, your extension is a black box and its results are not verifiable.
 
@@ -134,8 +131,7 @@ If you want to facilitate good science, please [share your source code](Open_Sou
 </tr>
 </tbody></table>
 
-Documenting your extension
---------------------------
+## Documenting your extension
 
 Useful extensions deserve corresponding documentation explaining how to use them.
 

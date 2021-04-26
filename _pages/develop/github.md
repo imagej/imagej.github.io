@@ -13,27 +13,23 @@ Referring to source code
 
 GitHub offers really powerful ways to refer to specific lines of code. And not only that, it also offers powerful ways to find those specific lines of code to begin with.
 
-Finding a file – quickly
-------------------------
+## Finding a file – quickly
 
 After pointing the web browser to a specific repository, typing the {% include key content='T' %} key will let you type out parts of the file name and hit {% include key content='Enter' %} when the file in question is at the top of the list (you can also navigate the list using the cursor keys).
 
-Linking to specific lines
--------------------------
+## Linking to specific lines
 
 Hitting the {% include key content='L' %} key lets you jump to a specific line (and modifies the URL which you can then send around to refer to that line).
 
 After one line is selected already, you can select a line *range* by {% include key content='Shift' %}-clicking on the line number of the other end of the line range.
 
-Permalinks
-----------
+## Permalinks
 
 After you found the link for the file in question, it most likely refers to the current version of the file.
 
 However, once development advances, the file's contents might change in the meantime, or the file might even go away! To provide a link to a specific revision of the file, just hit the {% include key content='Y' %} key to modify the URL to a permanent link (it will then reference the exact commit, instead of a branch).
 
-Ignore whitespace changes in diffs
-----------------------------------
+## Ignore whitespace changes in diffs
 
 Sometimes, a commit will mix whitespace changes with other changes, making the functional changes more difficult to isolate. Fortunately, there is an easy workaround:
 
@@ -50,13 +46,11 @@ Working with Pull Requests
 
 Pull Requests are a really neat way to work together. The idea is that Git makes it very easy and efficient to clone a project's entire revision history, develop a bit, and then offer the improvements in a manner that is easy for the original project's developers to merge.
 
-Common workflow
----------------
+## Common workflow
 
 Let's assume that you want to provide a fix for a vexing bug in one of your favorite [Fiji](/fiji) plugins. The first thing is to *fork* it – meaning to copy the entire revision history into your personal GitHub space – unless you have done so already. Then you clone that onto your computer (again, unless you have done so already). Make your changes, commit them, push them and then make a Pull Request. See the excellent page [How to contribute to an existing plugin or library](/develop/improving-the-code) for a detailed walk-through.
 
-Testing Pull Requests before merging them
------------------------------------------
+## Testing Pull Requests before merging them
 
 GitHub makes it very, very easy to merge Pull Requests simply by hitting a button. Of course you should review the changes before you do so: remember that the quality of open-source software is high only because many developers throw their cumulative expertise together to make something that is better than each individual developer could have developed on their own.
 

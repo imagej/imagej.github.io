@@ -4,8 +4,7 @@ title: Scripting TrackMate
 categories: Scripting
 ---
 
-TrackMate scripting principle
------------------------------
+## TrackMate scripting principle
 
 [TrackMate\_](/plugins/trackmate) can also be used without the GUI, using a scripting language that allows making calls to Java. The most simple way to get started is to use the [Script Editor](/scripting/script-editor), which takes care of the difficult & boring part for you (such as path). The examples proposed on this page all use Jython, but can be adapted to anything.
 
@@ -23,8 +22,7 @@ Since we are calling the internals of TrackMate, we must get to know a bit of it
 
 So getting a working script is all about configuring a proper `Settings` object and calling `exec*` methods on a `TrackMate` object. Then we read the results in the `Model` object.
 
-A full example
---------------
+## A full example
 
 Here is an example of full tracking process, using the easy image found in the [first tutorial](/plugins/trackmate/getting-started). The following (Jython) script works as following:
 
@@ -163,8 +161,7 @@ Here is an example of full tracking process, using the easy image found in the [
     # Echo results with the logger we set at start:
     model.getLogger().log(str(model))
 
-Loading and reading from a saved TrackMate XML file
----------------------------------------------------
+## Loading and reading from a saved TrackMate XML file
 
 Scripting is a good way to interrogate and play non-interactively with tracking results. The example below shows how to load a XML TrackMate file and rebuild a full working model from it.
 
@@ -285,8 +282,7 @@ For the example below to work for you, you will have to edit line 20 and put the
     displayer =  HyperStackDisplayer(model, sm, imp)
     displayer.render()
 
-Export spot, edge and track numerical features after tracking
--------------------------------------------------------------
+## Export spot, edge and track numerical features after tracking
 
 This example shows how to extract numerical features from tracking results.
 
@@ -444,8 +440,7 @@ Check the script below to see a working example.
             mean=spot.getFeature('MEAN_INTENSITY')
             model.getLogger().log('\tspot ID = ' + str(sid) + ': x='+str(x)+', y='+str(y)+', t='+str(t)+', q='+str(q) + ', snr='+str(snr) + ', mean = ' + str(mean))
 
-Manually creating a model
--------------------------
+## Manually creating a model
 
 TrackMate aims at combining automatic and manual tracking facilities. This is also the case when scripting: a part of the API offers to a edit a model extensively. A few code patterns must be followed.
 
@@ -905,8 +900,7 @@ The script below does this: ![](/media/plugins/trackmate AnimatedName.gif "fig:T
     imp.getCalibration().fps = 30
     Animator().run('start')
 
-Calling TrackMate with multi-channel analyzer
----------------------------------------------
+## Calling TrackMate with multi-channel analyzer
 
 TrackMate allows for the addition of jar files that contain extra TrackMate modules. The [multi-channel spot mean intensity analyzer](/plugins/trackmate#downloadable-jars) is such a module.
 
@@ -914,8 +908,7 @@ As any other module it can be used in a script, provided the jar file is in the 
 
 {% include github-embed org='fiji' repo='TrackMate' source='../../../scripts/CallTrackMateMultiChannel.py' %}
 
-Making TrackMate macro recordable with a 64-line script
--------------------------------------------------------
+## Making TrackMate macro recordable with a 64-line script
 
 Contributed by {%- include person id='imagejan' -%} during a NEUBIAS course. Quoting from Jan:
 
@@ -923,8 +916,7 @@ Contributed by {%- include person id='imagejan' -%} during a NEUBIAS course. Quo
 
 {% include github-embed org='fiji' repo='TrackMate' source='../../../scripts/Run\_TrackMate\_Headless.groovy' %}
 
-Add 3D maximas in the ROI Manager using TrackMate
--------------------------------------------------
+## Add 3D maximas in the ROI Manager using TrackMate
 
 Using the 3D spots finder of TrackMate, it is possible to add the maximas to the ROI Manager with a simple Jython code:
 
@@ -989,8 +981,7 @@ Using the 3D spots finder of TrackMate, it is possible to add the maximas to the
     else:
         print "The detector could not process the data."
 
-Tracking spots that are taken from the ROI manager.
----------------------------------------------------
+## Tracking spots that are taken from the ROI manager.
 
 You have to start from a 2D+T image (nothing else) and a results table that contains at least the center of mass XM, YM, the slice and the Area for the cells in the movie. The results table is typically generated from the ROI manager, that would contain the results of the particle analyzer.
 

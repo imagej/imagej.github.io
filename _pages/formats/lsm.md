@@ -9,8 +9,7 @@ artifact: sc.fiji:LSM\_Toolbox
 
 The LSM Toolbox provides plugins for working with Carl Zeiss LSM510 .lsm files.
 
-Usage
------
+## Usage
 
 The LSM Toolbox project aims at the integration of common useful functions around the Zeiss lsm file format, that should enhance usability of confocal lsm files kept in their native format, thus preserving all available metadata.
 

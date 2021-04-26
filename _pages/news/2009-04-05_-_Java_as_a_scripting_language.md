@@ -4,8 +4,7 @@ title: 2009-04-05 - Java as a scripting language
 categories: News
 ---
 
-Is Java a scripting language?
------------------------------
+## Is Java a scripting language?
 
 In the next Fiji release, Java will behave as if it were a scripting language: just drop your .java file into plugins/ and call {% include bc path='Plugins | Scripting | Refresh Javas'%}. You will not only see the plugin appearing in your Plugins folder, when you click on it, it will be compiled and run (thanks to OpenJDK's javac, which we bundle in Fiji).
 

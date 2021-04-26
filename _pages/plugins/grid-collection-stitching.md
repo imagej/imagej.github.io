@@ -42,13 +42,11 @@ How to use the Grid/Collection Stitching plugin
 Troubleshooting with the Grid/Collection Stitching plugin
 =========================================================
 
-Inversion of Coordinates
-------------------------
+## Inversion of Coordinates
 
 Certain data sets have caused an inversion of coordinates when stitched together. The plugin is unable to discern the inversion without human intervention. After stitching, if the output image appears incorrect, redo the stitch. Depending on which axis the image has been inverted upon(the user will need to know this) select the corresponding option within the second dialog box. This will invert the selected coordinates before stitching the image create the correct image.
 
-Speed
------
+## Speed
 
 ### Memory Allocation
 
@@ -64,8 +62,7 @@ Another speed reduction will occur if the tiles used have varying z coordinates.
 
 {% include thumbnail src='/media/Out of memory.png' title='Out of memory error message.'%}
 
-Memory
-------
+## Memory
 
 Even using virtual memory with maximum memory allocation can still be too much for some computers to handle, especially given the size of larger image files. The limited amount of memory available to most computers means that during the stitching of a large image file, the plugin will be trying to store more pixels within memory than there is space for. When this event occurs, Fiji will either stall and need to be force closed, or will display the message "<Out of Memory>." To fix this issue, select "Downsampling" in the Stitching GUI to allow for the image to be stitched in pieces. Please see the [Downsampling](/scripting/examples/downsample) page for more information. {% include thumbnail src='/media/Z variance.png' title='Example of a dataset with z-variance.'%}
 

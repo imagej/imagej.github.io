@@ -8,8 +8,7 @@ Special Dataset Importers
 
 In addition to the more generic [Automatic Loader](/plugins/bigstitcher/autoloader) and [Stack loaders](/plugins/bigstitcher/stackloader), we also offer single-purpose loaders for images acquired on a **Zeiss Lightsheet Z.1** or a **diSPIM** controlled via **MicroManager**.
 
-Zeiss Lightsheet Z.1 Dataset (Bioformats)
------------------------------------------
+## Zeiss Lightsheet Z.1 Dataset (Bioformats)
 
 {% include thumbnail src='/media/BigStitcher CZI Import1.png' title='Step 1: select the .czi file to load.'%}
 
@@ -36,8 +35,7 @@ If you chose to modify the calibration or the rotation axis, a third dialog will
 
 After working through these steps, your dataset will be opened in [BigStitcher](/plugins/bigstitcher).
 
-MicroManager diSPIM Dataset
----------------------------
+## MicroManager diSPIM Dataset
 
 **TODO**
 

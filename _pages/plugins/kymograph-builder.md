@@ -17,8 +17,7 @@ title: KymographBuilder  › Yet Another Kymograph Fiji plugin
 {% endcapture %}
 {% include info-box name='KymographBuilder' logo='' software='Fiji' author=author maintainer=maintainer source=source released='24/04/2016' status='v1.2.2, stable' category='' %}
 
-Presentation
-------------
+## Presentation
 
 *KymographBuilder is Yet Another Kymograph Fiji plugin.*
 
@@ -38,23 +37,20 @@ How to use :
 
 <figure><img src="/media/Kymograph Construction.png" width="600" /></figure>
 
-Scripting
----------
+## Scripting
 
 You can script the plugin. Here is an example :
 
 {% include github-embed org='fiji' repo='KymographBuilder' path='src/main/resources/script\_templates/Examples/MultiKymographBuilder.py' label='MultiKymographBuilder.py' %}
 
-Related links
--------------
+## Related links
 
 -   [Multi\_Kymograph](/plugins/multi-kymograph) : The first kymograph bundled with Fiji, with support for multiple Line ROIs
 -   Source code on GitHub : https://github.com/fiji/KymographBuilder
 -   Maven : https://maven.scijava.org/#nexus-search;quick~kymographbuilder
 -   Travis CI : https://travis-ci.org/fiji/KymographBuilder
 
-Authors
--------
+## Authors
 
 KymographBuilder has been created by Hadrien Mary.
 

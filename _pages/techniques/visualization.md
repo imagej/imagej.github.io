@@ -7,8 +7,7 @@ categories: development
 
 {% include biginfo-box content='See [:Category:Visualization](Category_Visualization) for pages about scientific visualization.' %} {% include wikipedia title='Scientific visualization' text='Scientific visualization'%} is a set of techniques for graphically illustrating scientific data, enabling scientists to better understand, illustrate, and glean insight from their data.
 
-Getting Started with Simple Visualization Options in ImageJ
------------------------------------------------------------
+## Getting Started with Simple Visualization Options in ImageJ
 
 ### Pseudocolor Image Look-Up Tables (LUTs)
 
@@ -97,8 +96,7 @@ Here we summarize some of the 3D visualization plugins in ImageJ.
 </tr>
 </tbody></table>
 
-Making Plots in ImageJ
-----------------------
+## Making Plots in ImageJ
 
 ### The Basics: ImageJ v1.x Plot Tools
 
@@ -115,8 +113,7 @@ Making Plots in ImageJ
 1.  JFreeChart (used by [Directionality](/plugins/directionality))
 2.  [Matplotlib](http://matplotlib.org/)
 
-Making Figures in ImageJ
-------------------------
+## Making Figures in ImageJ
 
 ### Available Plugins for Making Figures in ImageJ
 
@@ -125,8 +122,7 @@ Making Figures in ImageJ
 3.  [ScientiFig](https://grr.gred-clermont.fr/labmirouse/software/)
 4.  [Figure Maker](https://github.com/quantixed/imagej-macros#figure-maker)
 
-Recommended ImageJ Plugins for 'Big Data' Visualization
--------------------------------------------------------
+## Recommended ImageJ Plugins for 'Big Data' Visualization
 
 Here we summarize some of the 'big data' visualization plugins in ImageJ.
 
@@ -151,8 +147,7 @@ Here we summarize some of the 'big data' visualization plugins in ImageJ.
 </tr>
 </tbody></table>
 
-Interactive Analysis Plugins based on 'Big Data' Visualization Tools
---------------------------------------------------------------------
+## Interactive Analysis Plugins based on 'Big Data' Visualization Tools
 
 Here we summarize the more advanced analysis plugins in ImageJ using the above 'big data' visualization tools.
 

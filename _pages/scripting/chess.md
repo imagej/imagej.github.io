@@ -11,8 +11,7 @@ This [Jython](/scripting/jython) script illustrates how to make an image interac
 
 Play chess within Fiji! Click on a starting square, then on another one to move a piece.
 
-Code
-----
+## Code
 
 Small compared to what it does:
 
@@ -175,8 +174,7 @@ Small compared to what it does:
         clicked = newClicked
         sleep(0.1)
 
-See also
---------
+## See also
 
 -   [Jython Scripting](/scripting/jython)
 

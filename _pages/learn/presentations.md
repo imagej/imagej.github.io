@@ -9,8 +9,7 @@ This page collects ImageJ-related presentations, including talks, workshops and 
 
 Do you know of a publicly archived ImageJ-related presentation not listed here? Please add it!
 
-Living workshops
-----------------
+## Living workshops
 
 These materials are regularly updated, and intended to teach ImageJ and Fiji at introductory, intermediate and advanced levels. The [LOCI](/orgs/loci) group uses them to teach ImageJ at the [AQLM](http://www.mbl.edu/education/courses/analytical-quantitative-light-microscopy/) course every year, as well as locally. Videos of the workshops were recorded in Spring 2017; those links are below along with the corresponding slides used at that time.
 
@@ -50,8 +49,7 @@ Spring 2019: <a href="/presentations/fiji-scripting/">slides</a></p></td>
 </tr>
 </tbody></table>
 
-Talks
------
+## Talks
 
 <table>
 <thead>
@@ -350,8 +348,7 @@ Talks
 </tr>
 </tbody></table>
 
-Workshops
----------
+## Workshops
 
 <table>
 <thead>
@@ -463,8 +460,7 @@ Stephane Dallongeville</td>
 </tr>
 </tbody></table>
 
-Posters
--------
+## Posters
 
 <table>
 <thead>

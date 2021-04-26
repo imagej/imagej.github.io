@@ -10,13 +10,11 @@ categories: Plugins
 {% endcapture %}
 {% include info-box name='Multi Stack Montage' software='ImageJ' author='Olivier Burri, Romain Guiet' maintainer='Olivier Burri' filename='Multi\_Stack\_Montage.jar' released='August 2015' latest-version='August 2015' source=source status='stable' category='[Stacks\|Montage\|Visualization](Category_Plugins)' website=' [BIOP Staff Page](http://biop.epfl.ch/INFO_Facility.html#staff)' %}
 
-Purpose
--------
+## Purpose
 
 This plugin brings a bit more functionality that was not available using the **Make Montage...** Plugin, namely making montages out of multiple stacks and hyperstacks.
 
-Installation
-------------
+## Installation
 
 This plugin is available from the {% include list-of-update-sites content='PTBIOP Update Site' %} This places it in a "BIOP" Folder in the plugins directory of Fiji/ImageJ
 
@@ -37,15 +35,13 @@ In the case that there would be many images open, the plugin does not pre-select
 
 This plugin is useful when montaging multiple views or when montaging RGB datasets all in one go.
 
-Macro Recordable
-----------------
+## Macro Recordable
 
 Making use of the GenericDialog class, the plugin is macro-recordable.
 
     run("Multi Stack Montage...", "stack_1=Image1 stack_2=[Another Image] stack_3=Image3 rows=2 columns=2");
 
-Running from a Plugin
----------------------
+## Running from a Plugin
 
 What you need to run this in a plugin is
 
@@ -121,8 +117,7 @@ You can have a look at this minimal plugin that runs StackMontage.
 
     }
 
-Notes
------
+## Notes
 
 The Dialog is limited to 10 elements so as not to make a window potentially larger than the monitor's vertical resolution. However, it is unlimited if calling it from the macro recorder.
 

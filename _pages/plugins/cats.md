@@ -9,13 +9,11 @@ title: CATS
 {% endcapture %}
 {% include info-box name='CATS' software='Fiji' update-site='EMBL-CBA' author='Christian Tischer' maintainer='Christian Tischer' source=source %}
 
-Overview
---------
+## Overview
 
 CATS is a FIJI plugin for context aware trainable segmentation of big image data. For more information please visit the GitHub [README](https://github.com/embl-cba/fiji-plugin-cats/blob/master/README.md#cats---context-aware-trainable-segmentation).
 
-Installation
-------------
+## Installation
 
 CATS can be installed from the ImageJ update site: http://sites.imagej.net/EMBL-CBA/. For details on how to install an update site click [here](/update-sites/following).
 

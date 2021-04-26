@@ -14,13 +14,11 @@ categories: Plugins,Colocalization,Color processing
 {% endcapture %}
 {% include info-box name='Colocalization Threshold' software='ImageJ - Fiji' author='Tony Collins (and others?)' maintainer=maintainer filename='Colocalization.jar' source=source latest-version='june 2009' website='[Colocalization Analysis\#Colocalization\_Threshold](/techniques/colocalization-analysis#colocalization-threshold)' status='no longer actively supported, unlikely to be stable enough for real use. Use [Coloc\_2](/plugins/coloc-2)' %}
 
-Purpose
--------
+## Purpose
 
 Sets the thresholds for colocalization analysis, and also calculates Manders coefficients, 2D histogram / scatter plot, and other stats.
 
-Documentation
--------------
+## Documentation
 
 <span style="color:red">Note: this plugin is now deprecated. You should use the newer [Coloc 2](/plugins/coloc-2) plugin instead.</span>
 

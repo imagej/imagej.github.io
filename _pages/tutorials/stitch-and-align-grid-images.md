@@ -4,8 +4,7 @@ title: Stitch and Align a sequence of grid images Tutorial
 categories: Tutorials
 ---
 
-Introduction
-------------
+## Introduction
 
 This tutorial describes*' how to produce an image stack (or 3D image) from an input sequence of tiles*' using the Fiji plugins for [stitching](/plugins/image-stitching) and [registration](/plugins/register-virtual-stack-slices).
 
@@ -20,8 +19,7 @@ In our test case, we have 19,600 images, i.e. 140 sections of 10x14 tiles:
 
 <img src="/media/Screenshot-File-Browser-Sequence.png" width="725"/>
 
-Stitching
----------
+## Stitching
 
 As a first step, we start Fiji and go to '{% include bc path='Plugins | Stitching | Stitch Sequence of Grids of Images'%}':
 
@@ -52,8 +50,7 @@ As result, the stitched images are stored in the output folder:
 
 **Performance**: The stitching of the 19,600 images (732x732 pixels each) took around 117 minutes in a Intel Core Duo at 3GHz, 4GB of RAM, running on Linux 64-bit.
 
-Alignment
----------
+## Alignment
 
 For the alignment of the stitched slices we will use the plugin *Register Virtual Stack Slices*, under {% include bc path='Plugins | Registration'%}:
 

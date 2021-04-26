@@ -7,8 +7,7 @@ section: Development:ImgLib2:Tutorials
 
 
 
-Creating and Displaying an Image
---------------------------------
+## Creating and Displaying an Image
 
 Before you dive into ImgLib2 for real, you should know how to create and display an image, so that you can visually enjoy the fruits of your labor.
 
@@ -63,8 +62,7 @@ This image is then displayed using:
 
 [`ImageJFunctions`](http://javadoc.scijava.org/ImgLib2/net/imglib2/img/display/imagej/ImageJFunctions.html) provides convenience methods to wrap ImgLib2 constructs into ImageJ containers and display them. It works with 2D and 3D images and can handle most of the pixel types supported by ImgLib2. ImgLib2 provides more sophisticated ways of getting image data to your screen, but we will not go into that now. As a rule of thumb, if you have something remotely resembling a pixel grid, usually you can `ImageJFunctions.show()` it.
 
-Opening And Displaying Image Files
-----------------------------------
+## Opening And Displaying Image Files
 
 You can open image files with [`ImgOpener`](http://javadoc.scijava.org/SCIFIO/io/scif/img/ImgOpener.html) which is using [LOCI Bio-Formats](http://loci.wisc.edu/software/bio-formats). The following opens and displays an image file:
 
@@ -109,8 +107,7 @@ Then we can use the `openImg()` method, giving a filename, `ImgFactory`, and typ
 
 If there is a problem reading the image, `openImg()` throws an [`ImgIOException`](http://javadoc.scijava.org/SCIFIO/io/scif/img/ImgIOException.html). If all goes well, we store the result in an [`Img`](http://javadoc.scijava.org/ImgLib2/net/imglib2/img/Img.html) variable for convenience. (Actually the result is an [`ImgPlus`](http://javadoc.imagej.net/ImageJ1/ij/ImagePlus.html) wrapping an `ArrayImg`.)
 
-Notes
------
+## Notes
 
 -   Note that `Img` is just convenience interface. When you get more proficient with ImgLib2 you will find yourself using it less and less. You will either be more concrete or more general than that. In the above example, we could be more concrete -- the result of the `ArrayImgFactory< UnsignedByteType >.create()` is actually an `ArrayImg< UnsignedByteType, ByteArray >`. In algorithm implementations, you want to be as generic as possible to not constrain yourself to specific image types. You will specify only the super-interfaces of `Img` that you really need. For instance, if you need something which has boundaries and can be iterated you would use `IterableInterval`.
 -   There are more [ImgLib2 Examples](/imglib2/examples) on [ Opening, creating and displaying images](/imglib2/examples#example-1---opening-creating-and-displaying-images).

@@ -16,8 +16,7 @@ The plugins use the {% include wikipedia title='Scale-invariant feature transfor
 
 The extracted sets of corresponding landmarks and the calculated transformations are used in [TrakEM2](/plugins/trakem2), [Register Virtual Stack Slices](/plugins/register-virtual-stack-slices) and [BUnwarpJ](/plugins/bunwarpj) for image registration.
 
-Parameters
-----------
+## Parameters
 
 ![SIFT parameters](/media/SIFT Dialog.png "SIFT parameters")
 
@@ -64,16 +63,14 @@ The ratio of the number of true matches to the number of all matches including b
 expected transformation  
 The expected underlying transformation between both images. Tip: For serial section microscopy images, this is typically a **rigid** transformation.
 
-Legal Notice
-------------
+## Legal Notice
 
 This software embodies methods for which the following patents have been issued:
 
 1.  [*"Method and apparatus for identifying scale invariant features in an image and use of same for locating an object in an image"*](http://www.patentstorm.us/patents/6711293.html), David G. Lowe, US Patent 6,711,293 (March 23, 2004). Asignee: The University of British Columbia.
 2.  [*"Multi-image feature matching using multi-scale oriented patches"*](http://www.patentstorm.us/patents/7382897.html), Matthew Brown, Richard Szeliski, US Patent 7,382,897 (June 3, 2008). Asignee: Microsoft Corporation.
 
-References
-----------
+## References
 
 1.  Lowe, David G. (2004). ["Distinctive Image Features from Scale-Invariant Keypoints"](http://citeseer.ist.psu.edu/lowe04distinctive.html). *International Journal of Computer Vision* **60** (2): 91–110. <doi:%5Bhttp://dx.doi.org/10.1023%2FB%3AVISI.0000029664.99615.94> 10.1023/B:VISI.0000029664.99615.94\].
 2.  Brown, Matthew; Szeliski, Richard; Winder, Simon (2005). ["Multi-Image Matching Using Multi-Scale Oriented Patches"](http://www.cs.ubc.ca/~mbrown/papers/cvpr05.pdf). *Proceedings of the 2005 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'05)* Volume 1: 510–517. <doi:%5Bhttp://dx.doi.org/10.1109/CVPR.2005.235> 10.1109/CVPR.2005.235\].

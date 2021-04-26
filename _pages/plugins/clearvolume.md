@@ -30,13 +30,11 @@ categories: Plugins,Visualization,Citable
 -   **Problem:** on a Mac, after ClearVolume opens in Fiji I see a large grey area where the 3D viewer should be.
 -   **Solution:** we work on a fix... so far, double click on the grey area to switch to full screen, then double click again to go back to window mode.
 
-What is ClearVolume?
---------------------
+## What is ClearVolume?
 
 {% include testimonial quote='I checked out ClearVolume. Extremely well-made plugin! Does exactly what I want :)' person='komodovaran' source='http://forum.imagej.net/t/1907/3' width='50%' float='right' %}ClearVolume is a volume renderer developed at MPI-CBG. Its sources are open and can be cloned [from GitHub](https://github.com/ClearVolume). If you use ClearVolume in your research, please cite it—see reference below.
 
-Screenshots
------------
+## Screenshots
 
 <center>
 

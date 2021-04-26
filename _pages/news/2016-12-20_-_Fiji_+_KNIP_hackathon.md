@@ -6,8 +6,7 @@ categories: News,Fiji
 
 From Tuesday, December 6, 2016 through Friday, December 16, 2016, the [Max Planck Institute of Molecular Cell Biology and Genetics](https://mpi-cbg.de/) hosted \~20 developers at their facility in Dresden, Germany for a [hackathon](/events/Hackathon) to develop [ImageJ2](/software/imagej2) and [Fiji](/fiji) core infrastructure and [plugins](/plugins).
 
-Timeline
---------
+## Timeline
 
 The following chart illustrates when everyone was present:
 
@@ -107,8 +106,7 @@ PlotData=
 
 </timeline>
 
-Gallery
--------
+## Gallery
 
 
 {% capture content%}
@@ -125,8 +123,7 @@ Gallery
 {% include gallery content=content%}
 
 
-Hackathon progress
-------------------
+## Hackathon progress
 
 ### Tim-Oliver Buchholz
 
@@ -243,8 +240,7 @@ Hackathon progress
     -   By using AJAX, database CRUD operations are carried in a responsive way.
     -   Realized how important JDBC database connection pool is.
 
-Technical discussions
----------------------
+## Technical discussions
 
 ### Programmers Anonymous
 

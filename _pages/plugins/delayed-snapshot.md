@@ -4,8 +4,7 @@ title: Delayed Snapshot
 categories: Plugins,Scripting
 ---
 
-Purpose
--------
+## Purpose
 
 As simple as that: a dialog opens to ask for a time delay (in seconds).
 
@@ -13,8 +12,7 @@ After such delay, a screenshot of the desktop is taken.
 
 The script is maintained by Albert Cardona.
 
-Code
-----
+## Code
 
     # Take a snapshot after a delay specified in a dialog
     # 
@@ -39,8 +37,7 @@ Code
         # the 'extra' comma signals tuple, a kind of list in python.
         thread.start_new_thread(snapshot, (int(gd.getNextNumber()),))
 
-See also
---------
+## See also
 
 [Jython Scripting](/scripting/jython)
 

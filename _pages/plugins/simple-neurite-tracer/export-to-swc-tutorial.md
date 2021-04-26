@@ -9,15 +9,13 @@ categories: Tutorials
 
 This short tutorial shows you how to export a connected set of paths in the [Simple Neurite Tracer](/plugins/snt) plugin to an SWC file. This may be useful for analyzing a structure in other tools (e.g. [L-measure](http://cng.gmu.edu:8080/Lm/)) or uploading to a database like [NeuroMorpho.org](http://neuromorpho.org/). (n.b. for use in L-measure you will have to set the SWC type for each path - see [\#Setting\_the\_SWC\_point\_types](#setting-the-swc-point-types))
 
-Export all connected path sets as SWC files
--------------------------------------------
+## Export all connected path sets as SWC files
 
 To export each connected set of paths as a separate SWC file, you can now select the "Export all as SWC..." menu option - you will be prompted for the prefix of the file names:
 
 {% include image-center image-path="media/Save-all-as-swc.png" %}
 
-Export a single connected path set as an SWC file
--------------------------------------------------
+## Export a single connected path set as an SWC file
 
 Often, you will just want to export one set of connected paths. As an example of this, suppose we have a partially traced image like this:
 

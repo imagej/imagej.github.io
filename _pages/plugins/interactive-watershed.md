@@ -29,8 +29,7 @@ The interactive Watershed plugin provides an interactive way to explore local mi
 
 The 2 following subsection gives additionnal details on watershed working principle and on the strategy used in the plugin for local maxima detection: H-Maxima
 
-Watershed principle
--------------------
+## Watershed principle
 
 If we interpret images as landscapes of hills and valleys, the watershed algorithm gradually flood the valleys starting from their lowest point (the image local minima). When the floodings of two minima meet at a sadle they remain distinct as each minima region is labelled with a distinct color. The flooding stops when all the image is covered. As objects do not always cover the whole image a threshold can be set to stop region the region flooding. Alternatively the flooding can be started from local maxima. Figure 2 shows the flooding of 3 peaks for different values of the treshold parameter.
 
@@ -42,8 +41,7 @@ If we interpret images as landscapes of hills and valleys, the watershed algorit
 
 </div>
 
-H-Maxima and H-Watershed
-------------------------
+## H-Maxima and H-Watershed
 
 An image local maximum (minimum) is a region in the image for which all neighboring pixels have a lower (higher) value. A lot of maxima in an image are simply caused by noise and are not meaningful. If one can select more significant maxima corresponding to objects, they could be used to initiate a watershed segmentation of these objects.
 
@@ -62,15 +60,13 @@ We call H-Watershed the segmentation obtained by flooding the H-maxima of an ima
 Usage
 =====
 
-Installation
-------------
+## Installation
 
 To install the plugin in your ImageJ or Fiji installation. Add the update site SCF-MPI-CBG. Java8 update site should also be installed if it is not there yet. The procedure to follow an update site [can be found there](/update-sites/following).
 
 Once the update site is installed, restart ImageJ. A new menu, SCF, should appear. The Interactive Watershed plugin can be found in the menu *SCF&gt;Labelling&gt;Interactive H\_Watershed*.
 
-User Interface
---------------
+## User Interface
 
 To use the Interactive Watershed plugin.
 
@@ -131,8 +127,7 @@ The control panel items, see Figure 4, can be used to modify the segmentation an
 
 </div>
 
-Scripting
----------
+## Scripting
 
 In ImageJ macro language one can perform a H-Watershed segmentation with the following command:
 
@@ -149,22 +144,19 @@ Methods and Implementation
 
 The plugin strategy is to do the heavy lifting once at the beginning and rely on it later on to keep segmentation update lightweight.
 
-Heavy lifting
--------------
+## Heavy lifting
 
 At initialization the plugin calculates the full watershed of the image (i.e. for all local maxima of the image). This initial segmentation is then organized in a bottom up fashion. The segments are gradually merged to form a hierarchy (or a tree if you prefer). First the segment whose maxima have the lowest dynamics (or lowest robustness, remember H-maxima) are merged. When 2 segments are merged their dynamics and the dynamics of the neighbor segments are reevaluated. This merging process is repeated until all the segments are merged. It generates a tree whose nodes corresponds to segments in the image. In particular, when going along a tree branch, from leafs to root, the dynamics of the nodes is always increasing.
 
 As a result of this process we obtain a label map of the full watershed and a tree representing the merging of the regions in that label map.
 
-Ligthweight update of the segmentation
---------------------------------------
+## Ligthweight update of the segmentation
 
 When the H parameter is updated to a value $$h$$. It means that the watershed should show only the segments which local maxima have a dynamics superior to $$h$$. If we prune our full tree to remove all nodes with dynamics inferior to $$h$$ the leaf of the pruned tree correspond to the segments we are looking for. We now need to recolor the label map of the full watershed to create a label map of the segmentation with $$h$$-maxima. This can be done by attributing a label to the leaf node of the pruned tree. This label is then propagated to the leaf nodes of the original tree. Finally, the segment of the full watershed can be recolored according to this new label. This whole process is quite efficient: the relabelling is a simple raster pass on the orignal label map and the tree number of nodes is a lot smaller than the number of pixel in the image.
 
 When the T parameter is updated the maxima are not modified, thus it is only needed to go through the label map and check if the pixel value in the raw data is above or bellow the threshold. When the peak flooding parameter is changed the strategy is similar but each segment as a distinct threshold
 
-Comment on implementation
--------------------------
+## Comment on implementation
 
 The initial description, to the best of our knowledge of a watershed segment hierarchy using peak dynamics as a merging criteria was described in \[Najman 1996\]. The plugin initial watersheding is implemented after the IFT-watershed \[Lotufo 2000\]. The implementation was modified to build the segment tree on the fly. The plugin input and output are IJ1 imagePlus however the image processing inside the plugin relies on ImgLib2. A quick note on the segmentation update of 3D image, the plugin does not relabel the whole volume at every update but only the slice vizualized in order to preserve interactivity.
 

@@ -16,8 +16,7 @@ The best way to install it is via the MOSAIC Fiji Update site, as described on t
 
 The algorithm is described in X. Xiao, V. F. Geyer, H. Bowne-Anderson, J. Howard, and I. F. Sbalzarini (2016[1]).
 
-References
-----------
+## References
 
 <references />
 

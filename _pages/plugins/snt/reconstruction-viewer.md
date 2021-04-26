@@ -32,8 +32,7 @@ The display canvas supports multiple modes of interaction, including controlled 
 RV Controls
 ===========
 
-Scene Controls
---------------
+## Scene Controls
 
 <img src="/media/Reconstruction-viewer-scene-controls.png" title="fig:" width="400" /> This menu provides control over the rendered scene.
 
@@ -63,8 +62,7 @@ Scene Controls
 -   {% include bc path='Wipe Scene...'%} Removes all objects from the scene. Note this action cannot be undone.
 -   {% include bc path='Sync Path Manager Changes'%} If the 3D scene contains any trees that are currently stored in the Path Manager, re-render these trees to reflect any change in the path structure given by the Path Manager.
 
-Manage and Customize Neuronal Arbors
-------------------------------------
+## Manage and Customize Neuronal Arbors
 
 This menu relates to the import, customization and management of rendered reconstructions.
 
@@ -121,8 +119,7 @@ This menu relates to the import, customization and management of rendered recons
 -   {% include bc path='Remove Selected...'%} Deletes the selected reconstructions from the scene.
 -   {% include bc path='Remove All...'%} Deletes all reconstructions from the scene.
 
-Manage and Customize 3D Meshes
-------------------------------
+## Manage and Customize 3D Meshes
 
 <img src="/media/Reconstruction-viewer-mesh-controls.png" title="fig:" width="250" /> <img src="/media/Reconstruction-viewer-customize-mesh-controls.png" title="fig:{% include bc path='Customize|All Parameters...'%}" width="400" alt="{% include bc path='Customize|All Parameters...'%}" />
 
@@ -151,8 +148,7 @@ Manage and Customize 3D Meshes
 {% include clear%}
 
 
-Reference Brains
-----------------
+## Reference Brains
 
 This menu allows import of several Drosophila, Zebrafish and Mouse reference brains and anatomical compartments. <img src="/media/Reconstruction-reference-brains-menu.png" title="fig:" width="300" />
 
@@ -192,8 +188,7 @@ This menu allows import of several Drosophila, Zebrafish and Mouse reference bra
 {% include clear%}
 
 
-Analyze and Measure
--------------------
+## Analyze and Measure
 
 <img src="/media/Reconstruction-viewer-measurement-menu.png" title="fig:" width="300" /> This menu houses several functions to measure and analyze loaded reconstructions.
 
@@ -248,8 +243,7 @@ Analyze and Measure
 {% include clear%}
 
 
-Utilities
----------
+## Utilities
 
 <figure><img src="/media/Reconstruction-viewer-tools-menu.png" title="reconstruction-viewer-tools-menu.png" width="400" alt="reconstruction-viewer-tools-menu.png" /><figcaption aria-hidden="true">reconstruction-viewer-tools-menu.png</figcaption></figure>
 
@@ -270,8 +264,7 @@ Utilities
 {% include clear%}
 
 
-Settings
---------
+## Settings
 
 <figure><img src="/media/Reconstruction-viewer-settings-menu.png" title="reconstruction-viewer-settings-menu.png" width="400" alt="reconstruction-viewer-settings-menu.png" /><figcaption aria-hidden="true">reconstruction-viewer-settings-menu.png</figcaption></figure>
 

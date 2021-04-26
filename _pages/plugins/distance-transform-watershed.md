@@ -18,8 +18,7 @@ categories: Plugins,Segmentation,Mathematical_morphology
 {% endcapture %}
 {% include info-box name='Distance Transform Watershed (2D and 3D)' software='IJPB-plugins' author=author maintainer=maintainer source=source released='August 25<sup>th</sup>, 2016' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](/plugins/morpholibj) v1.4.1)' status='stable, active' category='[Segmentation](Category_Segmentation), [Mathematical morphology](Category_Mathematical_morphology)' %}
 
-Introduction
-------------
+## Introduction
 
 A classic way of separating touching objects in binary images makes use of the distance transform and the watershed method. The idea is to create a border as far as possible from the center of the overlapping objects. This strategy works very well on rounded objects and it is called Distance Transform Watershed. It consists on calculating the distance transform of the binary image, inverting it (so the darkest parts of the image are the centers of the objects) and then applying watershed on it using the original image as mask (see figure below). In our implementation, we include an option to use watershed with extended minima so the user can control the number of object splits and merges.
 
@@ -27,8 +26,7 @@ A classic way of separating touching objects in binary images makes use of the d
 
 [MorphoLibJ](/plugins/morpholibj) provides two plugins under the {% include bc path='Plugins | MorphoLibJ | Binary Images...'%} menu to apply this strategy on 2D and 3D images:
 
-Distance Transform Watershed
-----------------------------
+## Distance Transform Watershed
 
 Distance Transform Watershed needs one 2D 8-bit binary image to run. If that's the case, a dialog like the following will pop up:
 
@@ -55,8 +53,7 @@ Finally, the result with the current plugin configuration can be visualize click
 
 **Result**: 2D 32-bit label image (one index value per object).
 
-Distance Transform Watershed (3D)
----------------------------------
+## Distance Transform Watershed (3D)
 
 Distance Transform Watershed 3D needs one 3D 8-bit binary image to run. If that's the case, a dialog like the following will pop up:
 
@@ -80,8 +77,7 @@ As it is usual in ImageJ, no preview is provided here since we are dealing with 
 
 **Result**: 3D 32-bit label image (one index value per object).
 
-Installation
-------------
+## Installation
 
 The Distance Transform Watershed plugins (2D and 3D) are part of the [MorphoLibJ](/plugins/morpholibj) library. To install them, you just need to [ add](/update-sites/following#add-update-sites) the IJPB-plugins update site:
 
@@ -97,21 +93,18 @@ You should now find the plugin under the sub-menu {% include bc path='Plugins |M
 
 **Note**: the Distance Transform Watershed plugins are only two of the plugins included in the [MorphoLibJ](/plugins/morpholibj) suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
 
-References
-----------
+## References
 
 1.  David Legland, Ignacio Arganda-Carreras, Philippe Andrey; [MorphoLibJ: integrated library and plugins for mathematical morphology with ImageJ](http://bioinformatics.oxfordjournals.org/content/early/2016/07/19/bioinformatics.btw413). Bioinformatics 2016; 32 (22): 3532-3534. doi: 10.1093/bioinformatics/btw413
 
-See also
---------
+## See also
 
 -   [Marker-controlled Watershed](/plugins/marker-controlled-watershed), a plugin to perform watershed by flooding from specific seed points or markers.
 -   [Morphological Segmentation](/plugins/morphological-segmentation), a plugin with a graphical user interface to segment images based on morphological operations and the watershed algorithm.
 -   [Serge Beucher's site](http://cmm.ensmp.fr/~beucher/wtshed.html), with graphic descriptions and animations of the watershed algorithms.
 -   [G. Bertrand's Topological Watershed site](https://perso.esiee.fr/~dpt-it/tw/index.html), with papers, lecture slides and source code.
 
-License
--------
+## License
 
 This program is **free software**; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt](http://www.gnu.org/licenses/gpl.txt)).
 

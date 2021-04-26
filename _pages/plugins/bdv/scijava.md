@@ -5,19 +5,16 @@ title: Bigdataviewer Scijava
 
 As announced in the forum [here](https://forum.image.sc/t/getting-bigdataviewer-instance-in-an-imagej-command/21110/8) and [here](https://forum.image.sc/t/fiji-commands-for-bigdataviewer/25601), this repository aims at a better integration of BigDataViewer into FIJI by using the Scijava Framework.
 
-Installation
-------------
+## Installation
 
 Enable the [update site](/update-sites/following) (https://biop.epfl.ch/Fiji-Update-Bdv/) to activate bigdataviewer\_scijava commands. All commands from this update site are present in the github repository [bigdataviewer\_scijava](https://github.com/BIOP/bigdataviewer_scijava). A [list of all commands](https://github.com/BIOP/bigdataviewer_scijava#list-of-all-commands-of-the-repository) can be found in the repository.
 
-Goals
------
+## Goals
 
 -   **Modularity for bigdataviewer!** Being able to combine scripts or code for display and processing. This update site creates a way to access an existing BDV instance when scripting or writing java code.
 -   **Provide a set of macro recordable commands for bigdataviewer**. Makes it possible to script basic actions on BigDataViewer with the IJ1 recorder.
 
-What you can do with this update site
--------------------------------------
+## What you can do with this update site
 
 By using Scijava framework to store BigDataViewer windows through its `BdvHandle` interface, it is possible to communicate bdv instances between scripts and commands (see [script parameter page](/scripting/parameters)). This also facilitates the use of FIJI GUI because the commands of this repository can be chained easily. Any script or Command which declares a `BdvHandle` parameter can retrieve or provide reference to existing BigDataViewer instances.
 
@@ -36,8 +33,7 @@ In practice, Bdv windows created via the commands from this update site are put 
     @Parameter
     BdvHandle bdvh;
 
-How to make your bigdataviewer workflow compatible with Scijava
----------------------------------------------------------------
+## How to make your bigdataviewer workflow compatible with Scijava
 
 Two options:
 
@@ -47,8 +43,7 @@ Two options:
 
 The type of the parameter annotation can also be `ItemIO.BOTH` if your command is modifying an existing `BdvHandle`
 
-Secondary Goals
----------------
+## Secondary Goals
 
 This repo provide an implementation of all the command from the repository bigdataviewer\_fiji to make it scijava compatible, so it should have the same commands.
 
@@ -60,8 +55,7 @@ This repo provide an implementation of all the command from the repository bigda
     -   export
     -   import
 
-Examples
---------
+## Examples
 
 ### Video
 
@@ -229,7 +223,6 @@ Opens blobs and deforms it and append it in BigDataViewer:
     run("Set Sources Color", "c=255,51,51 sourceindexstring=0"); 
     run("Transform Sources (Affine, string)", "sourceindexstring=0 bdvh_out=Bdv output_mode=[Add To Bdv] stringmatrix=[1,-0.1,0,250,\n 0,0.5,0.1,0,\n 0,0,1,0, \n 0,0,0,1] transforminplace=false");
 
-List of all commands
---------------------
+## List of all commands
 
 The list of commands of this repository is available in the git repository : https://github.com/BIOP/bigdataviewer_scijava

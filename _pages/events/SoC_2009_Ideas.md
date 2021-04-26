@@ -34,8 +34,7 @@ Students can apply for the program at the [Google Summer of Code website](http:/
 Project ideas
 =============
 
-General-purpose Image Processing Framework
-------------------------------------------
+## General-purpose Image Processing Framework
 
 ImageJ has an abstraction of an image, called ImageProcessor, which is specialized by data type as ByteProcessor, ShortProcessor, ColorProcessor... That only wraps 2-dimensional images, though. For 3-dimensional images, you need to use instances of the ImageStack class, and if you need even more dimensions, you need a HyperStack.
 
@@ -75,8 +74,7 @@ The minimal goal is a set of "data type", "cursor" and "iterator" implementation
 **Language:** Java.  
 **Mentor:** Johannes Schindelin (johannes.schindelin@gmx.de)  
 
-Integrate Micro-Manager into Fiji
----------------------------------
+## Integrate Micro-Manager into Fiji
 
 This project requires a bit of knowledge in compiling C++ code on Linux, MacOSX and Windows. The idea is to make a recipe that other people can use to compile new releases of [Micro-Manager](http://www.micro-manager.org/), as well as integrate it into the Fiji project for a smooth user experience. To ensure that support for Micro-Manager is not broken inadvertently, you shall add regression tests, too.
 
@@ -84,8 +82,7 @@ This project requires a bit of knowledge in compiling C++ code on Linux, MacOSX 
 **Language:** Java  
 **Mentor:** Johannes Schindelin (johannes.schindelin@gmx.de)
 
-Add more regression tests
--------------------------
+## Add more regression tests
 
 Whenever releasing Fiji, or after major changes, we would like to be reasonably safe that we did not break things that used to work before. We already have a few [tests](https://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=tests), but hardly enough.
 
@@ -97,8 +94,7 @@ The idea is to extend the simple Python script in tests/record.py to make it eas
 **Language:** Java, Clojure, Javascript, Jython, JRuby **or** ImageJ's macro language  
 **Mentor:** Johannes Schindelin (johannes.schindelin@gmx.de)
 
-Add word expansion to the scripting interpreters
-------------------------------------------------
+## Add word expansion to the scripting interpreters
 
 Fiji offers scripting in 5 different languages, all running on the JVM: [Javascript](/scripting/javascript), [Jython](/scripting/jython), [JRuby](/scripting/jruby), [Clojure](/scripting/clojure), Beanshell and the ImageJ Macro Language. Through the reflection API and the numerous language hooks that each scripting engine provides, it is possible to complete method names or names of member variables, as well as class names.
 
@@ -106,8 +102,7 @@ Fiji offers scripting in 5 different languages, all running on the JVM: [Javascr
 **Language:** A combination of Java plus the scripting language, in this order of preference: Javascript, Jython, JRuby, Clojure and Beanshell. If you can do them all, we'll erect you a monument.  
 **Mentor:** [Albert Cardona](http://www.ini.uzh.ch/people/acardona) (acardona@ini.phys.ethz.ch)  
 
-Add a simple yet minimally powerful plugin and script editor
-------------------------------------------------------------
+## Add a simple yet minimally powerful plugin and script editor
 
 ImageJ offers currently a very limited, java.awt.TextArea -based built-in text editor, for writing, compiling and running java plugins, ImageJ macros, and as of recently javascript scripts. The text editor lacks syntax highlighting, does not use a proper font for coding, and lacks minimal debugging capabilities (such as parsing stack traces to highlight lines that failed to compile).
 
@@ -119,8 +114,7 @@ The student will have to research if there are existing Open Source components t
 **Language:** Java or a JVM scripting language of your choice (preferrably Javascript, Jython, JRuby or Clojure).  
 **Mentor:** [Albert Cardona](http://www.ini.uzh.ch/people/acardona) (acardona@ini.phys.ethz.ch)  
 
-Enhance Fiji's plugin manager
------------------------------
+## Enhance Fiji's plugin manager
 
 Beyond the built-in commands, ImageJ provides the means to add user-developed plugins by implementing the PlugIn, PlugInFilter and PlugInFrame interfaces. Fiji uses ImageJ at the core and packages around it a very large number of plugins (see the [Plugins Menu](/plugins/fiji-menu)). The ideal application menus cannot contain hundreds of plugins: any specific user has no use for more than half of them, and their mere presence get on the way to adding other, user-desired plugins.
 
@@ -141,8 +135,7 @@ The plugin manager will query a specific server based on fiji.sc for updated and
 **Language:** Java or a JVM scripting language of your choice (preferrably Javascript, Jython, JRuby or Clojure).  
 **Mentor:** [Albert Cardona](http://www.ini.uzh.ch/people/acardona) (acardona@ini.phys.ethz.ch), Johannes Schindelin (johannes.schindelin@gmx.de)  
 
-Provide cluster support for Fiji
---------------------------------
+## Provide cluster support for Fiji
 
 Fiji runs fine on desktop machines, but for some tasks, it is better to use a cluster.
 
@@ -157,8 +150,7 @@ To that end, Fiji already supports "headless" mode, i.e. operation without the n
 **Language:** Java.  
 **Mentor:** Pavel Tomancak, Johannes Schindelin (johannes.schindelin@gmx.de)  
 
-Add JMathLib (MATLAB clone) support
------------------------------------
+## Add JMathLib (MATLAB clone) support
 
 Quite a few algorithms are available as proof-of-concept [MATLAB](/scripting/matlab) scripts. While it is [wrong to think of pixels as little squares](Ftp___ftp.alvyray.com_Acrobat_6_Pixel.pdf), and literally all [MATLAB](/scripting/matlab) scripts to perform image processing are suffering from that shortcoming, it would be very nice nevertheless to be able to run the scripts without having to buy [MATLAB](/scripting/matlab) licenses just for that purpose.
 

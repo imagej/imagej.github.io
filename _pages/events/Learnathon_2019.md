@@ -7,8 +7,7 @@ categories: news
 The third DAIS Learnathon will take place from June 23 until June 29 2019.  
 You can also view the [2017 Learnathon](/events/2017-06-18_-_DAIS_learnathon) and the [2018 Learnathon](/events/2018-06_-_DAIS_learnathon) wiki pages!
 
-Instructors
------------
+## Instructors
 
 **{%- include person name=HedgehogCode -%}** *"I am currently a Working Student at KNIME working on KNIME Image Processing and KNIME Deep Learning. I did an internship in the Jug-Lab at MPI-CBG / CSBD working on a Fiji Plugin for CARE and bringing CARE to KNIME. I love Linux, Git and open-source software."*
 
@@ -36,13 +35,11 @@ Instructors
 
 **{%- include person name=skalarproduktraum -%}** '*'Hey there! I'm currently a PhD student at the Sbalzarini Lab at CSBD. I'm trying to bring VR to microscopy and systems biology in general, e.g. by enabling VR control of microscopes, or developing [scenery](https://github.com/scenerygraphics/scenery) and the new 3D viewer for ImageJ, [sciview](https://github.com/scenerygraphics/scenery)."*
 
-Schedule
---------
+## Schedule
 
 See [this page](https://indico.mpi-cbg.de/event/162/timetable/#20190623)!
 
-Preparation
------------
+## Preparation
 
 ### Knowledge
 
@@ -62,8 +59,7 @@ There many beginner books for Java. If you want to be well prepared, you may als
 
 **Bring your Laptop** and make sure you have a Terminal, Git, and a Java IDE (Eclipse or IntelliJ) installed.
 
-Monday
-------
+## Monday
 
 **9:00 - 10:00**
 
@@ -124,8 +120,7 @@ Concepts:
     -   You can retransform an image from the original image + transform,
     -   You can *not* get a transformation back from the transformed image.
 
-Tuesday
--------
+## Tuesday
 
 **9:00 - 12:00 ImgLib2 deep dive**
 
@@ -143,8 +138,7 @@ https://github.com/skalarproduktraum/sciview-tutorial
 
 https://github.com/fiji/learnathon-2019/tree/master/paintera
 
-Wednesday
----------
+## Wednesday
 
 **9:00 - 10:30 ImgLib2: Neighborhoods and Labelings**
 
@@ -160,8 +154,7 @@ The course consisted of three examples of transforming points and images, as wel
 
 https://github.com/bogovicj/transforms_tutorial
 
-Thursday
---------
+## Thursday
 
 **9:00 - 12:00: SciJava - Services, Plugins, Commands & Context**
 
@@ -169,8 +162,7 @@ The presentation and exercises can be found here: https://github.com/maarzt/imag
 
 **13:00 - 15:00: KNIME Introduction**
 
-Friday
-------
+## Friday
 
 **9:00 - 12:00 KNIME Image Processing Basics**
 

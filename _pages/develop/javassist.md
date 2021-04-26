@@ -31,8 +31,7 @@ Code editing
 
 While Javassist allows to edit bytecode directly, its most powerful feature is that it allows you to modify methods using snippets of Java code. There are two slightly different methods to do so: the [CodeConverter](http://www.csg.ci.i.u-tokyo.ac.jp/~chiba/javassist/html/index.html) and the [ExprEditor](http://www.csg.ci.i.u-tokyo.ac.jp/~chiba/javassist/html/javassist/expr/ExprEditor.html) (it depends which one to use, *CodeConverter* is easier to use but *ExprEditor* is more powerful.
 
-Wrapping existing code blocks
------------------------------
+## Wrapping existing code blocks
 
 A common reason for Javassist'ing code is to handle previously unhandled exceptions, or to make certain parts of the code conditional. As an example, we demonstrate here how, say, a hypothetical *OpenAccess*' *toString()* method could be protected against a *NullPointerException*:
 

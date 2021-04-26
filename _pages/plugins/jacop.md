@@ -10,15 +10,13 @@ JACoP
 
 **This plug-in is a compilation of co-localization tools.**
 
-Authors
--------
+## Authors
 
 Fabrice P. Cordelières, Bordeaux Imaging Center (France). Fabrice.Cordelieres at gmail dot com
 
 Susanne Bolte, IFR 83, Paris (France). Susanne.Bolte at upmc.fr
 
-Features
---------
+## Features
 
 JACoP allows:
 
@@ -42,8 +40,7 @@ JACoP allows:
 
 All methods are implemented to work on 3D datasets.
 
-Description
------------
+## Description
 
 JACoP has been totaly re-written, based on user feedback. The interface has been re-designed to offer full access to all the options, based on a unique Swing frame.
 
@@ -51,32 +48,27 @@ JACoP has been totaly re-written, based on user feedback. The interface has been
 
 It includes a "Zoom/Reset button" which allows the user to set the two selected images side-by-side, automatically adapting the zoom. For each method selected, the user's attention is drawn on options to set, by highlighting the appropriate tab by turning its caption to red.
 
-References/Citation
--------------------
+## References/Citation
 
 When using the current plugin for publication, please refer to our review [Bolte & F. P. Cordelières, A guided tour into subcellular colocalization analysis in light microscopy, Journal of Microscopy, Volume 224, Issue 3: 213-232.)](https://doi.org/10.1111/j.1365-2818.2006.01706.x\|(S.), to this webpage and of course to ImageJ. A copy of your paper being sent to both of our e-mail adresses would also be greatly appreciated !
 
 JACoP v2.0 was released for the second ImageJ User and Developer Conference in November 2009. The conference proceedings related the plugin is available [1](https://conference.imagej.net/2008/jacop_ijconf2008.pdf%7Chere).
 
-Installation
-------------
+## Installation
 
 Simply download [JACoP\_.jar](https://imagejdocu.list.lu/_media/plugin/analysis/jacop_2.0/just_another_colocalization_plugin/jacop_.jar) to the Plugins folder of ImageJ, restart ImageJ and use the "JACoP" command in the Plugins menu.
 
-Download
---------
+## Download
 
 Plugin available here: [JACoP\_.jar](https://imagejdocu.list.lu/_media/plugin/analysis/jacop_2.0/just_another_colocalization_plugin/jacop_.jar)
 
-License
--------
+## License
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program. If not, see [https://www.gnu.org/licenses/](https://www.gnu.org/licenses/).
 
 Copyright (C) 2006 Susanne Bolte & Fabrice P. Cordelières
 
-Changelog
----------
+## Changelog
 
 2.0 (07/11/2008):
 

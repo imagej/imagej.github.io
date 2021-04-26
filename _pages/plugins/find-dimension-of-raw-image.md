@@ -4,8 +4,7 @@ title: Find Dimension of Raw Image
 categories: Plugins,Scripting
 ---
 
-Purpose
--------
+## Purpose
 
 This script serves two purposes:
 
@@ -16,8 +15,7 @@ To use it, open the raw image with {% include bc path='File | Import | Raw...'%}
 
 The script is maintained by {%- include person id='dscho' -%}.
 
-Code
-----
+## Code
 
     # This script serves two purposes:
     #
@@ -64,8 +62,7 @@ Code
         pixels[0:width * height] = pixelsCopy
         image.updateAndDraw()
 
-See also
---------
+## See also
 
 -   [Jython Scripting](/scripting/jython)
 

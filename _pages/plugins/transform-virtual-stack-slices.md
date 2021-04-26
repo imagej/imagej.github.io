@@ -26,8 +26,7 @@ This plugin takes a sequence of image slices stored in a folder, and delivers a 
 
 This is a **complementary plugin** of [Register Virtual Stack Slices](/plugins/register-virtual-stack-slices). It allows reproducing the results of [Register Virtual Stack Slices](/plugins/register-virtual-stack-slices) by loading the corresponding transform files (saved by checking the option [ "Save transforms"](/plugins/register-virtual-stack-slices#save-transforms) in the main dialog).
 
-User Manual
------------
+## User Manual
 
 **Premises**:
 
@@ -45,15 +44,13 @@ User Manual
 
 **Results**: on success, a virtual stack will open showing all the transformed images contained in the output folder. The virtual stack can be closed with no ill effect: images are saved in the output folder.
 
-API documentation
------------------
+## API documentation
 
 The latest documentation of the package can be found here:
 
 [https://fiji.sc/javadoc/register_virtual_stack/package-summary.html](https://fiji.sc/javadoc/register_virtual_stack/package-summary.html)
 
-License
--------
+## License
 
 This program is **free software**; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt](http://www.gnu.org/licenses/gpl.txt)).
 

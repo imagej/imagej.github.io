@@ -16,8 +16,7 @@ My name is **Ignacio Arganda-Carreras**. I am currently an Ikerbasque Research f
 
 You can find more information about me in my website: [http://sites.google.com/site/iargandacarreras/](http://sites.google.com/site/iargandacarreras/)
 
-Maintained plugins (Fiji)
--------------------------
+## Maintained plugins (Fiji)
 
 -   [AnalyzeSkeleton](/plugins/analyze-skeleton)
 -   [BUnwarpJ](/plugins/bunwarpj)
@@ -28,8 +27,7 @@ Maintained plugins (Fiji)
 -   [Transform Virtual Stack Slices](/plugins/transform-virtual-stack-slices)
 -   [Trainable Weka Segmentation](/plugins/tws)
 
-Maintained plugins (IJPB-plugins update site)
----------------------------------------------
+## Maintained plugins (IJPB-plugins update site)
 
 Included in [MorphoLibJ](/plugins/morpholibj):
 

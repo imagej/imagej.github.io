@@ -9,8 +9,7 @@ An **uber-JAR**—also known as a **fat JAR** or **JAR with dependencies**—is 
 
 
 
-Approaches
-----------
+## Approaches
 
 There are three common methods for constructing an uber-JAR:
 
@@ -45,8 +44,7 @@ There are three common methods for constructing an uber-JAR:
     -   **Con:** Needs to bundle a special "bootstrap" classloader to enable Java to load classes from the wrapped JAR files. Debugging class loader issues becomes more complex. Using getResource() calls when there are MANY contained jars can be problematic, due to locking inside misc.sun.URLClassPath.
     -   **Tools:** [Eclipse JAR File Exporter](http://help.eclipse.org/luna/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fref-export-jar.htm), [One-JAR](http://one-jar.sourceforge.net/).
 
-Discussion
-----------
+## Discussion
 
 **Advantages:** A single JAR file is simpler to deploy. There is no chance of mismatched versions of multiple JAR files. It is easier to construct a Java classpath, since only a single JAR needs to be included.
 
@@ -58,8 +56,7 @@ Discussion
 
 As you can see, it is important to understand how use of the uber-JAR will affect your application. In particular, Java applications will likely be better served using the individual component JARs, ideally managed using a dependency management platform such as [Maven](http://maven.apache.org/) or [Ivy](http://ant.apache.org/ivy/). But for non-Java applications, the uber-JAR may be sufficient to your needs.
 
-See also
---------
+## See also
 
 -   [What is an uber-jar?](http://stackoverflow.com/q/11947037) on Stack Overflow
 -   [The Elusive Uber Jar](http://dig.floatingsun.net/the-elusive-uber-jar/)

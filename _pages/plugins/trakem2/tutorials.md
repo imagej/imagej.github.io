@@ -4,16 +4,14 @@ title: TrakEM2 tutorials
 categories: TrakEM2,Tutorials
 ---
 
-Video tutorial on 3D reconstruction from serial section
--------------------------------------------------------
+## Video tutorial on 3D reconstruction from serial section
 
 TODO GOOGLE SPREADSHEET WIDGET
 
 {% include clear%}
 
 
-Video tutorial on the basic recipe for TrakEM2
-----------------------------------------------
+## Video tutorial on the basic recipe for TrakEM2
 
 {% include thumbnail-link src="/media/Screenshot-TrakEM2 basics tutorial.png" title='TrakEM2 basic tutorial' link='TrakEM2 basic tutorial'%}
 
@@ -28,8 +26,7 @@ This is the [basic tutorial for TrakEM2](/plugins/trakem2/basics-tutorial). **If
 {% include clear%}
 
 
-Video tutorial on segmenting/outlining objects over multiple sections in 3D
----------------------------------------------------------------------------
+## Video tutorial on segmenting/outlining objects over multiple sections in 3D
 
 {% include thumbnail-link src="/media/Arealists-brushing.jpg" title='TrakEM2 brushing (This video tutorial was made by Albert Cardona. To visualize it, you need a mp4 player.)' link='TrakEM2 brushing (This video tutorial was made by Albert Cardona. To visualize it, you need a mp4 player.)'%} This mp4 [video tutorial](http://www.ini.uzh.ch/~acardona/movies/arealist-create-and-edit.mp4) covers:
 
@@ -41,8 +38,7 @@ See also the list of [key bindings for AreaList](http://www.ini.uzh.ch/~acardona
 {% include clear%}
 
 
-Video tutorial on aligning sections
------------------------------------
+## Video tutorial on aligning sections
 
 {% include thumbnail-link src="/media/Screenshot-TrakEM2 align sections tutorial.png" title='TrakEM2 align sections tutorial' link='TrakEM2 align sections tutorial'%}
 
@@ -56,8 +52,7 @@ See also the feature extraction and alignment [parameters explained](http://www.
 {% include clear%}
 
 
-Video tutorial on manual segmentation modes
--------------------------------------------
+## Video tutorial on manual segmentation modes
 
 {% include thumbnail-link src="/media/Screenshot-TrakEM2-Manual-Segmentation-Modes-Tutorial.png" title='TrakEM2 manual segmentation modes' link='TrakEM2 manual segmentation modes'%}
 
@@ -75,8 +70,7 @@ when painting in an arealist, paint in the current but erase any other arealist.
 {% include clear%}
 
 
-Video tutorial on semi-automatic segmentation
----------------------------------------------
+## Video tutorial on semi-automatic segmentation
 
 {% include thumbnail-link src="/media/Screenshot-TrakEM2-tutorial-automatic-segmentation.png" title='TrakEM2 semi-automatic segmentation' link='TrakEM2 semi-automatic segmentation'%}
 
@@ -89,8 +83,7 @@ In [this video tutorial](/plugins/trakem2/semi-automatic-segmentation-tutorial) 
 {% include clear%}
 
 
-Video tutorial on measuring surfaces and volumes
-------------------------------------------------
+## Video tutorial on measuring surfaces and volumes
 
 {% include thumbnail-link src="/media/Screenshot-TrakEM2-tutorial-measure-surfaces.png" title='TrakEM2 measuring surfaces and volumes' link='TrakEM2 measuring surfaces and volumes'%}
 
@@ -104,8 +97,7 @@ See also [AreaList measurements](http://www.ini.uzh.ch/~acardona/trakem2_manual.
 {% include clear%}
 
 
-Video tutorial on adding sections/layers to an existing project
----------------------------------------------------------------
+## Video tutorial on adding sections/layers to an existing project
 
 {% include thumbnail-link src="/media/Screenshot-TrakEM2-tutorial-add-layers.png" title='TrakEM2 adding layers to existing project' link='TrakEM2 adding layers to existing project'%}
 
@@ -120,15 +112,13 @@ In the tutorial, the layers are imported following an existing set of layers, i.
 {% include clear%}
 
 
-Video tutorial on saving a project
-----------------------------------
+## Video tutorial on saving a project
 
 {% include thumbnail-link src="/media/Screenshot-TrakEM2-save-project.png" title='TrakEM2 saving a project' link='TrakEM2 saving a project'%}
 
 -   [Saving a TrakEM2 project](/plugins/trakem2/saving-project-tutorial) into an .XML file.
 
-See Also
---------
+## See Also
 
 -   [TrakEM2 Scripting](/plugins/trakem2/scripting)
 -   [TrakEM2](/plugins/trakem2) wiki page

@@ -9,8 +9,7 @@ artifact: io.scif:scifio
 
 [ImageJ2](/software/imagej2) uses SCIFIO by default for most image input tasks. You can change this behavior at any time by running {% include bc path='Edit | Options | ImageJ2'%} and modifying the *Use SCIFIO when opening files* option.
 
-Benefits of using SCIFIO
-------------------------
+## Benefits of using SCIFIO
 
 SCIFIO is focused on robust and extensible support for reading and writing image file formats. Using it with ImageJ provides many advantages:
 
@@ -45,14 +44,12 @@ SCIFIO is focused on robust and extensible support for reading and writing image
     -   QuickTime
     -   TIFF
 
-Current limitations of SCIFIO
------------------------------
+## Current limitations of SCIFIO
 
 -   SCIFIO is still in beta, so there is likely to be a higher incidence of bugs. Issues can be reported on the [SCIFIO issue tracker](https://github.com/scifio/scifio/issues).
 -   Although we strive for full backwards compatibility, some files may appear slightly different when opened.
 -   Opening files with SCIFIO is not fully macro recordable yet.
 
-Publications
-------------
+## Publications
 
 -   {% include publication content='SCIFIO' %}

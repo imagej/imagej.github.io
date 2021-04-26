@@ -15,14 +15,12 @@ Client software can:
 -   Send images to, and receive images from, the server.
 -   Discover and execute ImageJ modules.
 
-Installation
-------------
+## Installation
 
 -   [Enable](/update-sites/following) the Server [update site](/update-sites).
 -   Start the server via the {% include bc path='Plugins | Utilities | Start Server'%} command.
 -   Or launch ImageJ in server mode using the `--server` flag.
 
-Documentation
--------------
+## Documentation
 
 See the {% include github org='imagej' repo='imagej-server' label='GitHub site' %}.

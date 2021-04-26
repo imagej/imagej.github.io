@@ -17,13 +17,11 @@ title: Sprout Morphology
 {% endcapture %}
 {% include info-box software='Fiji' name='Sprout Morphology' author=author maintainer=maintainer source=source released='' latest-version='' status='stable' category='[Analysis](Category_Analysis)' %} The **Sprout Morphology** plugin measures sprout *number*, *length*, *width* and *cell density* of endothelial cell (EC) sprouts grown in a bead sprouting assay. It optionally includes measuring the coverage of these sprouts with pericytes included in the assay, as well as the endothelial cell/pericyte ratio.
 
-Installation
-------------
+## Installation
 
 To install the plugin, activate the **Angiogenesis** [update site](/update-sites/following) and restart Fiji.
 
-Usage
------
+## Usage
 
 Open a maximum intensity projection of the multi-channel image to be analyzed, then start the plugin via {% include bc path='Analyze|Sprout Morphology'%}. The process consists of up to six dialogs:
 
@@ -51,7 +49,6 @@ Open a maximum intensity projection of the multi-channel image to be analyzed, t
 
 <figure><img src="/media/SproutAnalyzer PericyteCoverage.png" title="Pericyte coverage measurement" width="400" alt="Pericyte coverage measurement" /><figcaption aria-hidden="true">Pericyte coverage measurement</figcaption></figure>
 
-Publication
------------
+## Publication
 
 -   {% include citation last='Eglinger' first='J.' last2='Karsjens' first2='H.' last3='Lammert' first3='E.' year='2017' journal='Inflammation and Regeneration' url='http://inflammregen.biomedcentral.com/articles/10.1186/s41232-016-0033-2' title='Quantitative assessment of angiogenesis and pericyte coverage in human cell-derived vascular sprouts' volume='37(2)' pmid='' doi='10.1186/s41232-016-0033-2' %}

@@ -40,8 +40,7 @@ One good workflow for segmentation in ImageJ is as follows:
 4.  [Create and transfer](#creating-selections) a selection from a mask to your original image
 5.  [Analyze](#analysis) the resulting data
 
-Preprocessing
--------------
+## Preprocessing
 
 Preprocess the image using filters, to make later thresholding more effective. Which filter(s) to use is highly dependent on your data, but some commonly useful filters include:
 
@@ -50,8 +49,7 @@ Preprocess the image using filters, to make later thresholding more effective. W
 -   \[/docs/guide/146-29.html#sub:Gaussian-Blur... Gaussian Blur\]
 -   [Find Edges](/ij/docs/guide/146-29.html#sub:Find-Edges)
 
-Adjusting Threshold
--------------------
+## Adjusting Threshold
 
 <figure><img src="/media/ Threshold tree.png" title="Tree ring sample image with a threshold applied for a B&amp;W image" width="300" alt="Tree ring sample image with a threshold applied for a B&amp;W image" /><figcaption aria-hidden="true">Tree ring sample image with a threshold applied for a B&amp;W image</figcaption></figure>
 
@@ -63,8 +61,7 @@ Ideally you want to use one of the auto-threshold methods, rather than manually 
 -   Adjust the minimum and maximum sliders until you are satisfied with the saturation level of your image
     -   \[/docs/guide/146-28.html#sub:Threshold...%5BT%5D More information\]
 
-Creating Masks
---------------
+## Creating Masks
 
 <figure><img src="/media/Eroded tree.png" title="Over-saturated mask is eroded around the center tree ring" width="300" alt="Over-saturated mask is eroded around the center tree ring" /><figcaption aria-hidden="true">Over-saturated mask is eroded around the center tree ring</figcaption></figure>
 
@@ -75,8 +72,7 @@ Creating Masks
         -   [More information](/ij/docs/guide/146-29.html#infobox:InvertedLutMask).
 -   One quick way to split overlapping objects is the [Watershed](/ij/docs/guide/146-29.html#sub:Watershed) command.
 
-Selections
-----------
+## Selections
 
 <figure><img src="/media/ Selection tree.png" title="Selections on the mask" width="300" alt="Selections on the mask" /><figcaption aria-hidden="true">Selections on the mask</figcaption></figure>
 
@@ -94,8 +90,7 @@ Selections
 -   Select first the mask, then the original image, and select {% include key content='Shift' %}+{% include key content='E' %} to transfer the mask's selections
     -   [More information](/ij/docs/guide/146-27.html#infobox:TransferSelections)
 
-Analysis
---------
+## Analysis
 
 Do some numerical analysis on the selected data:
 

@@ -9,8 +9,7 @@ This plugin binarises 8 and 16-bit images using various **global** (histogram-de
 
 For **local** thresholding rather than global, see the [Auto Local Threshold](/plugins/auto-local-threshold) plugin.
 
-Installation
-------------
+## Installation
 
 **ImageJ**: requires v1.42m or newer. Download [Auto\_Threshold-X.Y.Z.jar](https://maven.scijava.org/service/local/artifact/maven/redirect?r=releases&g=sc.fiji&a=Auto_Threshold&v=RELEASE&e=jar) and copy it into the ImageJ/plugins folder and either restart ImageJ or run the '{% include bc path='Help | Update Menus'%}' command. After this a new command should appear in '{% include bc path='Image | Adjust | Auto Threshold'%}'.
 
@@ -40,8 +39,7 @@ It you are processing a stack, two additional options are available: **Stack** c
 
 **5.** The same image *scaled* by a fixed value (e.g. when multiplying all pixels by a fixed value) returns a similar threshold result (within 2 greyscale levels of the original unscaled image) for all methods except Huang, Li and Triangle due to the way these algorithms work. E.g. the Triangle method applied to an 8 bit image and to the same image converted to 16 bits *with scaling* can result in different threshold values. This is because the scaling from 8 to 16 bits creates empty bins in between the scaled grey values. The Triangle method (based on a geometric approach) finds those artefactual gaps in the new 16 bit histogram which satisfy the method constraints, but which would not exist in the original 8 bit image. This cannot be prevented (for example by detecting empty histogram bins) as it would interfere with the analysis when real empty bins (as oppose to artefactual ones) exist in the image.
 
-Available methods
------------------
+## Available methods
 
 ### Try all
 

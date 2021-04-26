@@ -24,8 +24,7 @@ Verena Kaynig, {%- include person id='iarganda' -%}, Albert Cardona
 {% endcapture %}
 {% include info-box name='Trainable Segmentation' software='Fiji' author=author maintainer=maintainer source=source released='March 16<sup>th</sup>, 2010' latest-version='January 6<sup>th</sup>, 2012' status='**deprecated**' category='[Segmentation](Category_Segmentation)' %}
 
-User Manual
------------
+## User Manual
 
 This manual shows you how to use the **deprecated** Trainable Segmentation plugin. Trainable means that you have to draw some examples of at least 2 different things you want to differentiate in the image and then a classifier is trained by your examples and segments the rest of the image. Afterwards you can also apply the trained classifier to other images or stacks.
 
@@ -87,15 +86,13 @@ The other option is to apply the trained classifier to other images or stacks. F
 
 Have fun!
 
-Troubleshooting
----------------
+## Troubleshooting
 
 Common problems and solutions:
 
 -   *' I don't find the plugin in my Fiji menus!*': Don't worry, depending on your Fiji release, the updater may not offer you this plugin automatically. Just go to {% include bc path='Help | Update Fiji'%}, then click on "Advanced mode", and on the "View Options" box, select "View uninstalled plugins only". Then the Trainable Segmentation plugin should appear and you should be able to install it.
 
-See Also
---------
+## See Also
 
 -   [Trainable Segmentation Plugin Implementation](/plugins/trainable-segmentation/implementation)
 -   [Scripting the Trainable Segmentation](/plugins/tws/scripting)

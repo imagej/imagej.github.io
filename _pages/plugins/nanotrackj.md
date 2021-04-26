@@ -13,8 +13,7 @@ title: NanoTrackJ
 {% endcapture %}
 {% include info-box software='ImageJFiji' name='NanoTrackJ' author=author maintainer=maintainer filename='nanotrackj.jar [\[1](https://github.com/thorstenwagner/ij-nanotrackj/releases/latest) \]' source='Github [\[2](https://github.com/thorstenwagner/ij-nanotrackj) \]' latest-version='v1.0.3 (22 Feb 2016)' status='active' %}
 
-General
--------
+## General
 
 With NanoTrackJ it is possible to analyze videos of diffusing particles. It is mainly tested with tracking moving diffraction patterns of diffusing nanoparticles. The plugin estimates the particle size and diffusion coefficient distribution. Therefore, a fundamental relationship between the diffusion coefficient and the hydrodynamic diameter is exploited: The Stokes-Einstein relation.
 
@@ -22,8 +21,7 @@ If you are using NanoTrackJ in a scientific publication, please cite:
 
 *Wagner, T., Lipinski, H.-G. & Wiemann, M., 2014. Dark field nanoparticle tracking analysis for size characterization of plasmonic and non-plasmonic particles. Journal of Nanoparticle Research, 16(5), p.2419.*
 
-Parameters
-----------
+## Parameters
 
 **Center Estimation:** here are three methods available. The blob method requires a binary image. The objects you want to track should be connected foreground pixels. Such connected regions are often called "blobs". Each blob represents a particle to be tracked. You have to segment your image (e.g. through thresholding) to use this method. The centroid of the blob is used for tracking.
 
@@ -71,15 +69,13 @@ The *covariance estimator* is a good alternative to the regression estimator. It
 
 **Size Distribution Estimation by Walker's Method:** If this checkbox is activated the size distribution is estimated by a maximum likelihood method described in \[3\]. The method exploits the fact that the mean squared displacements are gamma distributed. Please note, that the mean squared displacements used for this algorithm are measured indirectly. First, the diffusion coefficient D is estimated by the method specified in "Diffusion-Coefficient-Estimator". Multiplying this diffusion coefficient by 4 and the framerate results in the corresponding mean squared displacement. If Walker's Method is used, the result will only be a size distribution (no diffusion coefficient distribution)
 
-Results
--------
+## Results
 
 If the plugin finishes analyzing it opens histogram plots for the size distribution and the diffusion coefficient distribution. Please note that for calculating the distribution the track length is used as weighting factor. Furthermore the plugins open result tables for the histogram data (ideal for plotting with other software). The following plot shows a size distribution (using walker's method & covariance estimator) estimated from a suspension with 100nm polystyrene beads (in water, 22C). The video used was captured with a nanosight LM10 microscope. The reported modal value is 98nm.
 
 ![](/media/Size100nm walker.png "Size100nm_walker.png")
 
-Simulation
-----------
+## Simulation
 
 If you like to check NanoTrackJ by Monte-Carlo simulation, you may use our [simulation macros](https://github.com/thorstenwagner/ij-nanotrackj/tree/master/scripts/simulation).
 
@@ -87,8 +83,7 @@ PartSimDC.ijm: This macro allows you to simulate particle by specifying their di
 
 PartSimDia.ijm: This macro allows you to simulate particle by specifying their hydrodynamic diameter and a temperatur of the solution. Furthermore it allows to simulation polydisperse solutions by setting the number of particle qualities &gt; 1.
 
-Sample data
------------
+## Sample data
 
 For the purpose of testing, you can download some sample video files.
 
@@ -132,8 +127,7 @@ NanoTrackJ settings which works well for this video:
 `Mean size (Maxima Dialog)            4`  
 `Tolerance (Maxima Dialog)            12`
 
-References
-----------
+## References
 
 \[1\] Ernst, D. & Köhler, J., 2013. How the number of fitting points for the slope of the mean-square displacement influences the experimentally determined particle size distribution from single-particle tracking. Physical chemistry chemical physics : PCCPs : PCCP, pp.3429–3432.
 

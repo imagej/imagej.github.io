@@ -7,8 +7,7 @@ categories: Techniques, tutorials
 
 {% include wikipedia title='Thresholding (image processing)' text='Thresholding'%} is a technique for dividing an image into two (or more) classes of pixels, which are typically called "foreground" and "background."
 
-Global thresholding
--------------------
+## Global thresholding
 
 Global thresholding works by choosing a value cutoff, such that every pixel less than that value is considered one class, while every pixel greater than that value is considered the other class.
 
@@ -17,13 +16,11 @@ Global thresholding works by choosing a value cutoff, such that every pixel less
 -   Documentation for the \[/ij/docs/guide/146-28.html#sub:Threshold...%5BT%5D Threshold...\] command.
 -   The [Auto Threshold](/plugins/auto-threshold) plugin page
 
-Local thresholding
-------------------
+## Local thresholding
 
 Local thresholding techniques adapt the threshold value on each pixel to the local image characteristics.
 
-ImageJ Ops
-----------
+## ImageJ Ops
 
 The [ImageJ Ops](/libs/imagej-ops) project provides algorithms for both global and local thresholding.
 

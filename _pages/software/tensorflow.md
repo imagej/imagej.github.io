@@ -16,13 +16,11 @@ categories: Software,Citable,SciJava
 
 The [ImageJ-TensorFlow](https://github.com/imagej/imagej-tensorflow) project enables TensorFlow to be used from ImageJ commands and scripts. Some ImageJ plugins currently use TensorFlow to classify images according to pre-trained models. Future plugins are planned which will support refining models based on additional training images from ImageJ.
 
-Publication
------------
+## Publication
 
 -   {% include publication content='TensorFlow' %}
 
-See also
---------
+## See also
 
 -   {% include github org='imagej' repo='imagej-tensorflow' label='ImageJ-TensorFlow on GitHub' %}.
 -   The TensorFlow [update site](/update-sites) to make TensorFlow features available in ImageJ.

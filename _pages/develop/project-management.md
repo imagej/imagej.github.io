@@ -13,8 +13,7 @@ ImageJ uses the [Git](/develop/git) revision control system to manage its [sourc
 
 See the [Git](/develop/git) pages for more information, tutorials, etc.
 
-Maven
------
+## Maven
 
 ImageJ uses [Maven](/develop/maven) for its project infrastructure.
 
@@ -46,13 +45,11 @@ Developers can benefit from the mirror by adding the following section to their 
             </mirrors>
     </settings>
 
-Continuous integration
-----------------------
+## Continuous integration
 
 ImageJ uses [Travis CI](/develop/travis), a cloud-based continuous integration (CI) system, which automatically checks the code for build and test errors.
 
-Issue tracking
---------------
+## Issue tracking
 
 SciJava software projects manage tasks and priorities using [GitHub Issues](https://guides.github.com/features/issues/):
 
@@ -102,27 +99,23 @@ The high-level topics of interest (i.e., [bugs](https://github.com/issues?q=is%3
 
 Note that the relationship between milestones and software releases can be one-to-many: e.g., bug-fix releases, or even the addition of new features, may not necessitate their own milestones. Good milestone structure should read similarly to a good [git](http://chris.beams.io/posts/git-commit/) [history](https://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message): informative without being overly verbose.
 
-Patch submissions
------------------
+## Patch submissions
 
 The preferred mechanism to contribute improvements to [ImageJ](/about) and other [SciJava](SciJava) components is using [GitHub pull requests](https://help.github.com/articles/using-pull-requests/)! See the [Contributing](/about/contributing) page for details.
 
-Roadmap links
--------------
+## Roadmap links
 
 -   [News](/news) about ImageJ and Fiji developments, including status updates, observations and comments about ImageJ programming.
 -   [Recent changes](Special_RecentChanges) to this web site (*not* the ImageJ code itself).
 -   [BugZilla](https://fiji.sc/bugzilla) database of user-reported bugs from the [Report a Bug](/help/report-a-bug) plugin.
 
-Citable code
-------------
+## Citable code
 
 Many of these tools are employed to facilitate [reproducibility](/develop/architecture#reproducible-builds) from a technical perspective. From a social perspective, we are writing software for science - in which [scholarly citations](/about/citing) provide another currency for reproducibility.
 
 To this end, developers can now use [digital archives like Zenodo](https://guides.github.com/activities/citable-code/) to provide consistent methods for citation.
 
-See also
---------
+## See also
 
 -   The [Releases](/develop/releasing) page, for more about how these resources are used to release SciJava software artifacts.
 

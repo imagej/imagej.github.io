@@ -6,8 +6,7 @@ categories: Plugins,Projection
 
 {% include info-box software='ImageJ/Fiji' name='Min Cost Z Surface' author='[Benoit Lombardot](/users/Benoit)' maintainer='[Benoit Lombardot](/users/Benoit)' released='03 August 2016' filename='![](/media/MinCostZSurface -1.1.0.jar.zip "fig:MinCostZSurface_-1.1.0.jar.zip")' source=' [MPI-CBG git](https://git.mpi-cbg.de/bioimage-informatics/MinCostSurface_Projection)' category='[Plugins](Category_Plugins), [Projection](Category_Projection)' %}
 
-Introduction
-------------
+## Introduction
 
 This plugin detects minimum cost z-surface in a 3D volume. A z surface is a topographic map indicating the altitude z as a function of the position (x,y) in the image. The cost of the surface depends on pixel intensity the surface is going through. This plugin find the z-surface with the lowest intensity in an image.
 
@@ -29,8 +28,7 @@ The detected surface can be used to remove signal close to the surface. For inst
 
 </div>
 
-Usage
------
+## Usage
 
 Both examples illustrated in the previous section can be reproduced with the Min\_Cost\_Surface plugin. Below is a tutorial to reproduce the example from figure 1. First of all load an image with a surface structure you would like to detect. In our example it is portion of a fly wing. the wing is not flat and can not be visualized in a single slice. Max Projection of the image give poor result in visualizing the wing in a single plane since other structures present in the volume hide the details of the wing. The plugin allows to detect the wing surface and to select a region with a user defined thickness around it.
 
@@ -77,8 +75,7 @@ Plugin output: an altitude map (left) and a volume showing intensity on the surf
 
 </div>
 
-Methods and Implementation
---------------------------
+## Methods and Implementation
 
 The initial development of the plugin was initially proposed by Dagmar Kainmueller (Myers lab MPI-CBG, Dresden ). The plugin was implemented after the method of Li et al. \[1\]. One can refer to that paper for the principle of the surface detection. The mincut maxflow problem is solved using the GraphCut solver implemented in FIJI [Graph\_Cut plugin by Jan Funke](https://fiji.sc/Graph_Cut).
 
@@ -86,8 +83,7 @@ Also If the plugin allows to detect only two surface with one input function, th
 
 \[1\] Li, K., Wu, X., Chen, D. Z., & Sonka, M. (2006).[Optimal surface segmentation in volumetric images, a graph-theoretic approach](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2646122/). Pattern Analysis and Machine Intelligence, IEEE Transactions on, 28(1), 119-134.
 
-History
--------
+## History
 
 **2016-08-03 : version 1.1.0**
 

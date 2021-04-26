@@ -38,8 +38,7 @@ Many convenient [IDEs](/develop/ides) (integrated development environments) incl
 What does it take to make a new Maven project?
 ==============================================
 
-POM and directory structure
----------------------------
+## POM and directory structure
 
 All it really takes is a *pom.xml* file and a certain directory structure:
 
@@ -76,8 +75,7 @@ The first 6 lines are of course just a way to say "Hi, Maven? How are you today?
 
 The only relevant parts are the *groupId*, which by convention is something like the inverted domain name (similar to the Java package convention), the name of the artifact to build (it will be put into *target/*, under the name *<artifactId>-<version>.jar*). And of course the version.
 
-Dependencies
-------------
+## Dependencies
 
 Maven is not only a build tool, but also a dependency management tool.
 
@@ -93,8 +91,7 @@ To depend on another library, you must declare the dependencies in your project'
 
 As you can see, dependencies are referenced using the same *groupId*, *artifactId* and *version* triplet (also known as *GAV parameters*) that you declared for your project itself.
 
-Repositories
-------------
+## Repositories
 
 Once your dependencies are declared, Maven will download them on demand from the Internet. However, for Maven to find the dependencies, it has to know where to look.
 
@@ -111,20 +108,17 @@ However, many other SciJava and ImageJ components are not yet deployed to Maven 
 
 As a rule of thumb: components [versioned at 0.x](/develop/versioning) are deployed to the SciJava Maven repository, while those at 1.x or later are deployed to Maven Central.
 
-Releases and snapshots
-----------------------
+## Releases and snapshots
 
 There are two different sorts of Maven artifacts (i.e., JAR files): releases and snapshots. The snapshot versions are "in-progress" versions. If you declare a dependency with a *-SNAPSHOT* suffix in the version, Maven will look once a day for new artifacts of the same versions; otherwise, Maven will look whether it has that version already and not bother re-downloading.
 
-Producing multiple JAR files
-----------------------------
+## Producing multiple JAR files
 
 So what if you have multiple *.jar* files you want to build in the same project? Then these need to live in their own subdirectories and there needs to be a common parent POM, a so-called *aggregator* or *multi-module* POM (only this POM needs to have the SciJava POM as parent, of course). {% include github org='imagej' repo='tutorials' tag='577286474be8399eb38d30d66cf0c35ee50bd929' path='pom.xml\#L47-L62' label='Here is an example' %}. Basically, it is adding the <packaging>`pom`</packaging> entry at the top, as well as some subdirectory names to the <modules> section.
 
 Note, however, that most projects of the [SciJava component collection](/develop/architecture) (e.g., [SciJava](SciJava), [ImgLib2](/imglib2), [SCIFIO](/software/scifio), [ImageJ](/about) and [Fiji](/fiji)) now structure each component as its own single-module project in its own Git repository, since using multi-module projects can complicate versioning.
 
-Convention over configuration
------------------------------
+## Convention over configuration
 
 There are many more things you can do with Maven, but chances are you will not need them.
 

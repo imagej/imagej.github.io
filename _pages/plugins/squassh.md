@@ -14,8 +14,7 @@ categories: Plugins,Segmentation,Colocalization,Deconvolution
 
 Documentation is available as [pdf](http://mosaic.mpi-cbg.de/downloads/SplitBregmanSeg.pdf).
 
-References
-----------
+## References
 
 G. Paul, J. Cardinale, and I. F. Sbalzarini. Coupling image restoration and segmentation: A generalized linear model/Bregman perspective. Int. J. Comput. Vis., 104(1):69–93, 2013.
 

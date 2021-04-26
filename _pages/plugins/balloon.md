@@ -52,8 +52,7 @@ The plugin is started with a set of predefined parameter values. e.g. initial nu
 
 The plugin is still work in progress. Things to be done includes use of threading, connection with a particle search algorithm to automate selection of seeds, improved interface etc... Any comments to improve the plugin are much welcome.
 
-Publication
------------
+## Publication
 
 <references />
 

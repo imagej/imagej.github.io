@@ -114,8 +114,7 @@ Once Wiscan has run, your output will be a series of images that can be stitched
 
 -   NOTE- If an noticeable amount of overlay can be seen in your images, there is a pixel to micron error within the microscope's initial setup. To fix this, recalibrate the microscope's objectives. 
 
-Generate the grid
------------------
+## Generate the grid
 
 <figure><img src="/media/BasicGrid.png" title="BasicGrid.png" width="250" alt="BasicGrid.png" /><figcaption aria-hidden="true">BasicGrid.png</figcaption></figure>
 

@@ -11,8 +11,7 @@ For more information about Maven, see:
 -   [Maven: The Complete Reference](http://www.sonatype.com/books/mvnref-book/reference/public-book.html)
 -   [Better Builds with Maven](http://www.maestrodev.com/better-builds-with-maven/0-about-this-guide)
 
-Install m2eclipse
------------------
+## Install m2eclipse
 
 **Note:** if you use Eclipse 3.7 Indigo or newer, you most likely have m2e already. If your {% include bc path='File | Import'%} offers you a *Maven* section, you have it, and can skip the rest of this section.
 
@@ -25,8 +24,7 @@ Install m2eclipse
 -   Click Next again, accept the license terms, and click Finish.
 -   Restart Eclipse.
 
-Configure Eclipse (Windows only)
---------------------------------
+## Configure Eclipse (Windows only)
 
 On Windows, you will need to configure Eclipse to use the Java Development Kit (JDK).
 
@@ -46,8 +44,7 @@ Now update Eclipse's JRE to be JDK-aware:
 -   Click Search..., navigate to "C:\\Program Files\\Java\\jdk1.6.0\_20" and click OK
 -   Check the box next to the JDK that appears and click OK
 
-Troubleshooting
----------------
+## Troubleshooting
 
 ### On Mac OS X, behind a firewall
 

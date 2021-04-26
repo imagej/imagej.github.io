@@ -7,8 +7,7 @@ title: User Guide/Working with ImageJ
 
 This part introduces some basic aspects of ImageJ so that you can use the software more efficiently. It also introduces some important terms and concepts used throughout this guide. You may skip it if you already use the program efficiently and are familiar with terms such as [Virtual Stacks↓](#sub:Virtual-Stacks), [Hyperstacks↓](#sub:Hyperstacks-Intro), [Pseudocolor Images↓](#sub:Pseudocolor-Images), [Color Composite Images↓](#sub:Color-Composites) or [Composite Selections↓](#sub:Composite-selections).
 
-Using Keyboard Shortcuts
-------------------------
+## Using Keyboard Shortcuts
 
 You'll learn more and more [↓](#index-Keyboard)[↓shortcut](#index-Shortcuts) keys as you use ImageJ, because (almost) all shortcuts are listed throughout ImageJ menus. Similarly, in this guide each command has its shortcut key listed on its name (flanked by square brackets). Please note that the notation for these key-bindings is case sensitive, i.e., Shift-modifiers are not explicitly mentioned (a capital {% include key content="A" %} means {% include key content="Shift+A" %}) and assumes that *Require control key for shortcuts* in {% include bc path="Edit | Options | [Misc...↓](#sub:Misc...)" %} is unchecked (i.e., except when using the IJ [Editor↓](#sub:ImageJ-Macro-Editor) or the [Text Tool↓](#sec:Text-Tool), you won't have to hold down the Control key to use menu shortcuts). For example, the command {% include bc path="Edit | \[\[\#sub:Invert-%5BI%5D\|Invert \[I\]↓\]\]" %} can be evoked by <span class="Keystroke">Shift</span> <span class="Keystroke">I</span> or <span class="Keystroke">Ctrl</span> <span class="Keystroke">Shift</span> <span class="Keystroke">I</span> if *Require control key for shortcuts* is checked. The full list of ImageJ shortcuts (*see* [Keyboard Shortcuts↓](#sec:Keyboard-Shortcuts)) can be retrieved at any time using the {% include bc path="Plugins | Utilities | [List Shortcuts...↓](#sub:List-Shortcuts...)" %} command.
 
@@ -60,8 +59,7 @@ Main ImageJ window
 </div>
 </div>
 
-Finding Commands
-----------------
+## Finding Commands
 
 Navigating through the extensive list of ImageJ commands, macros and plugins may be quite cumbersome. Through its built-in Command Finder / Launcher<span class="bibcites">[48]([#biblio-48)\]</span>, ImageJ offers an expedite alternative that allows you to retrieve commands extremely fast: {% include bc path="Plugins | Utilities | \[\[\#sub:Command-Finder\|Find Commands... \[l\]↓\]\]" %}.
 
@@ -100,8 +98,7 @@ In addition, ImageJ features a find function that locates macros, scripts and pl
 
 </div>
 
-Undo and Redo
--------------
+## Undo and Redo
 
 Probably the first thing you will notice is that ImageJ does not have a large [↓undo](#index-Undo)/redo buffer. Undo ({% include bc path="Edit | \[\[\#sub:Undo-%5Bz%5D\|Undo \[z\]↓\]\]" %}) is currently limited to the most recent image editing / filtering operation. With time you will appreciate that this is necessary to minimize memory overhead. Nevertheless, with IJ 1.45 and later, <span class="menuitem">\[\[\#sub:Undo-%5Bz%5D\|Undo \[z\]↓\]\]</span> is, in most cases, undoable and can be applied to multiple images if *Keep multiple undo buffers* is checked in {% include bc path="Edit | Options | [Memory & Threads...↓](#sub:Memory-&-Threads...)" %}
 
@@ -115,8 +112,7 @@ In ImageJ the equivalent to [↓](#index-Redo)'Redo' is the {% include bc path="
 
 </div>
 
-Image Types and Formats
------------------------
+## Image Types and Formats
 
 [↓Digital](#index-Image-types) Images are two-dimensional grids of pixel[↓](#nom-pixel) intensities values with the width and height of the image being defined by the number of pixels in <span class="formula">*x*</span> (rows) and <span class="formula">*y*</span> (columns) direction. Thus, pixels (picture elements) are the smallest single components of images, holding numeric values — pixel intensities — that range between black and white. The characteristics of this range, i.e., the number of unique intensity (brightness) values that can exist in the image is defined as the bit[↓](#nom-bit)--depth of the image and specifies the level of precision in which intensities are coded, e.g.: A 2--bit image has <span class="formula">2<sup>2</sup> = 4</span> tones: 00 (black), 01 (gray), 10 (gray), and 11 (white). A 4--bit image has <span class="formula">2<sup>4</sup> = 16</span> tones ranging from 0000 (0) to 1111 (16), etc. In terms of bits per pixel (bpp[↓](#nom-bpp)), the most frequent types of images ({% include bc path="Image | [Type↓](#sub:Type) |" %}) that ImageJ deals with are:
 
@@ -223,8 +219,7 @@ Two critical aspects to keep in mind when converting images:
 </div>
 </div>
 
-Stacks, Virtual Stacks and Hyperstacks
---------------------------------------
+## Stacks, Virtual Stacks and Hyperstacks
 
 ### Stacks
 
@@ -306,8 +301,7 @@ TIFF stacks with a <span class="Filename">.tif</span> extension open as virtual 
 
 </div>
 
-Color Images<span class="FootOuter"><span class="SupFootMarker"> \[D\] </span><span class="HoverFoot"><span class="SupFootMarker"> \[D\] </span>This section is partially extracted from the MBF ImageJ online manual at http://www.macbiophotonics.ca/imagej/colour_image_processi.htm>.</span></span
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Color Images<span class="FootOuter"><span class="SupFootMarker"> \[D\] </span><span class="HoverFoot"><span class="SupFootMarker"> \[D\] </span>This section is partially extracted from the MBF ImageJ online manual at http://www.macbiophotonics.ca/imagej/colour_image_processi.htm>.</span></span
 
 [↓ImageJ](#index-MBF-ImageJ) deals with color mainly in three ways: pseudocolor images, RGB images, RGB/ HS<span class="small">B[↓](#nom-hsb)</span><span class="default"> stacks, and composite images.[↓](#index-Image-types)</span>
 
@@ -453,8 +447,7 @@ In a [↓composite](#index-Color-Composites) image colors are handled through ch
 
 </div>
 
-Selections
-----------
+## Selections
 
 Selections (regions of interest, ROIs[↓](#nom-roi)), are typically created using the [Toolbar↓](#sub:Toolbar) [Tools↓](#sec:IJ-Tools). Although ImageJ can display simultaneously several [↓](#index-Selection)[↓ROIs](#index-ROI) (see [Overlays↓](#sub:Overlay-Intro) and [ROI Manager↓](#fig:The-ROI-Manager)) only one selection can be active at a time. Selections can be measured ({% include bc path="Analyze | [Measure...%5Bm%5D](#sub:Measure...%5Bm%5D)" %}
 ↓), drawn ({% include bc path="Edit | \[\[\#sub:Draw-%5Bd%5D\|Draw \[d\]↓\]\]" %}), filled ({% include bc path="Edit | \[\[\#sub:Fill-%5Bf%5D\|Fill \[f\]↓\]\]" %}) or filtered ({% include bc path="Process | [Filters↓](#sub:Filters) |" %} submenu), in the case of area selections. In addition it is also possible to hold multiple ROIs as non-destructive [Overlays↓](#sub:Overlay-Intro).
@@ -575,8 +568,7 @@ Figure 7 **Interpolated selections.** ROIs drawn with (left) or without (middl
 
 </div>
 
-Overlays[]( )<span class="unknown">\\improvement</span>Improved handling of Overlays
-----------------------------------------------------------------------------------------------
+## Overlays[]( )<span class="unknown">\\improvement</span>Improved handling of Overlays
 
 [↓](#index-Overlay)[↓](#index-Non-destructive-annotations)[↓Overlays](#index-Annotations-Non-destructive-image-overlay) are non-active selections displayed 'over' the pixel data, on the image overlay, and are the core of non-destructive image processing in ImageJ. In a way you can think of the image overlay as an invisible [ROI Manager↓](#fig:The-ROI-Manager) in which selections are being added, allowing ROIs to be on 'hold'. This concept of multiple distinct selections has been dramatically improved in [ImageJ2↑](#sub:ImageJ2intro) so we urge you to download IJ2 if multiple ROIs are important in your workflows.
 
@@ -617,8 +609,7 @@ As mentioned in [3↑](#infobox:Formats) [Image Types: Lossy Compression and Met
 
 </div>
 
-3D Volumes
-----------
+## 3D Volumes
 
 Currently, the support for [↓](#index-ThreeD-ROIs_3D-ROIs)[↓](#index-3D-ROIs)3D ROIs (selections containing contiguous cluster of voxels) is somewhat limited in ImageJ. This limitation has been addressed by [ImageJ2↑](#sub:ImageJ2intro) and several IJ1 plugins. The list below summarizes some of the ImageJ plugins that deal effectively with multi-dimensional objects. Note that a manual installation of these tools as standalone ImageJ plugins is a challenging task given their special dependencies, reason why they are all bundled as part of [↓](#index-Fiji)[Fiji↑](#sub:Fiji-intro).
 
@@ -668,8 +659,7 @@ Figure 9 **3D Viewer (Fiji 1.46o), bringing hardware-accelerated 3D visualiz
 
 </div>
 
-Settings and Preferences[]( )<span class="unknown">\\improvement</span>
----------------------------------------------------------------------------------
+## Settings and Preferences[]( )<span class="unknown">\\improvement</span>
 
 [↓](#index-Settings)[↓](#index-Preferences)[↓ImageJ](#index-Options) preferences are automatically saved in a preferences file, the<span class="Filename">IJ\_prefs.txt</span> text file. This file is stored in <span class="Directory"><span class="formula"> \~ </span>/Library/Preferences/</span> on Mac OS X, in <span class="Directory"><span class="formula"> \~ </span>/.imagej/</span> on Linux and Windows (with <span class="formula"> \~ </span> referring to the user's home directory). Several macros and plugins also write parameters to this file. If the <span class="Filename">IJ\_prefs.txt</span> is erased using {% include bc path="Edit | Options | [Reset...↓](#sub:ResetOptions)" %}, ImageJ will create a new one the next time it is opened resetting all parameters to their default values.
 

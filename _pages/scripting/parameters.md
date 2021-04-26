@@ -8,8 +8,7 @@ All scripting languages have access to a universal `#@parameter` notation for de
 
 {% include info-box content='Script parameters are a feature of [ImageJ2](/software/imagej2); they will not work in plain [ImageJ1](/software/imagej1). The [Fiji](/fiji) distribution of ImageJ is built on ImageJ2, so they also work in Fiji.' %}
 
-Basic syntax
-------------
+## Basic syntax
 
 The rules for `#@` parameter use are as follows:
 
@@ -35,8 +34,7 @@ We could also run this script [headlessly](/scripting/headless), thanks to the g
 
 When the script is completed, any `#@output` variables are handled by the framework, based on their type. In this case we expect the `greeting` variable to be printed, since it is a `string`.
 
-Parameter types
----------------
+## Parameter types
 
 A list of possible data types and the corresponding widgets is provided below.  
 The optional style argument defines how the widget are rendered in the input window.  
@@ -61,8 +59,7 @@ A related [issue](https://github.com/scijava/scijava-common/issues/302) occurs w
 
 By implementing {% include javadoc project='SciJava' package='org/scijava/widget' class='InputWidget' %} it is possible to extend this list.
 
-Examples
---------
+## Examples
 
 ### Integer and Decimal input
 
@@ -75,8 +72,7 @@ Different styles are also possible.
 
 <img src="/media/ScriptParameters-IntegerStyles.JPG" width="450"/>
 
-Parameter properties
---------------------
+## Parameter properties
 
 If you look at the [@Parameter annotation](https://github.com/scijava/scijava-common/blob/scijava-common-2.40.0/src/main/java/org/scijava/plugin/Parameter.java), you will notice it has many properties—for example, `name` and `description`.
 

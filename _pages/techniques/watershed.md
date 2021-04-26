@@ -4,8 +4,7 @@ title: Nuclei Watershed Separation
 categories: Tutorials,Segmentation
 ---
 
-Watershed Separation of touching DAPI stained nuclei images -Tutorial
----------------------------------------------------------------------
+## Watershed Separation of touching DAPI stained nuclei images -Tutorial
 
 ### Introduction to the problem
 

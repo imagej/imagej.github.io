@@ -19,8 +19,7 @@ categories: Plugins,OME
 {% include info-box name='OMEVisual' logo='' software='Fiji' author=author maintainer=maintainer source=source released='08/05/2016' status='v1.0.1, stable' category='' %}
 
 
-Presentation
-------------
+## Presentation
 
 `OMEVisual` is a Fiji plugin to easily visualize OME metadata.
 
@@ -43,13 +42,11 @@ Please note that :
 
 <figure><img src="/media/OMEVisual Screenshot.png" title="caption OMEVisual Screenshot" width="600" alt="caption OMEVisual Screenshot" /><figcaption aria-hidden="true">caption OMEVisual Screenshot</figcaption></figure>
 
-Related links
--------------
+## Related links
 
 -   Source code on GitHub : https://github.com/fiji/OMEVisual
 
-Authors
--------
+## Authors
 
 `OMEVisual` has been created by [Hadrien Mary](mailto:hadrien.mary@gmail.com).
 

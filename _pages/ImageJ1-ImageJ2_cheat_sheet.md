@@ -23,8 +23,7 @@ This page summarizes translation of basic operations of ImageJ1 and ImageJ2 API.
 <span id="cb28-3"><a href="#cb28-3" aria-hidden="true"></a>  ...</span>
 <span id="cb28-4"><a href="#cb28-4" aria-hidden="true"></a>}</span></code></pre></div></td></tr></tbody></table>
 
-See also
---------
+## See also
 
 https://github.com/mpicbg-scicomp/ij2course-images/blob/master/slides/ij_legacy_cheetsheet.pdf
 

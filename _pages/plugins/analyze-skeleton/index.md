@@ -9,8 +9,7 @@ Analysis of 2D and 3D skeleton images. For the ImageJ 1.x plugin, see [this page
 
 <table><tbody><tr class="odd"><td><p>style="vertical-align:top" |{% include thumbnail src='/media/Analyze skeleton 09 13 2009.png' title='Example of AnalyzeSkeleton performance'%}</p></td></tr></tbody></table>
 
-General Description
--------------------
+## General Description
 
 {% include thumbnail src='/media/Tagging example.png' title='Example of voxel classification'%} This plugin tags all pixel/voxels in a skeleton image and then counts all its junctions, triple and quadruple points and branches, and measures their average and maximum length. The tags are shown in a new window displaying every tag in a different color. You can find it under {% include bc path='Analyze | Skeleton | Analyze Skeleton (2D/3D)'%}. See [Skeletonize3D](/plugins/skeletonize3d) for an example of how to produce skeleton images.
 
@@ -24,8 +23,7 @@ End-point voxels are displayed in **blue**, slab voxels in **orange** and juncti
 
 Notice here that, following this notation, the number of junction voxels can be different from the number of actual junctions since some junction voxels can be neighbors of each other.
 
-Main options
-------------
+## Main options
 
 {% include thumbnail src='/media/Screenshot-AnalyzeSkeleton-dialog.png' title='Main dialog of the AnalyzeSkeleton plugin'%} In the main dialog of the plugin the user can select some options to
 
@@ -36,8 +34,7 @@ Main options
 -   **Show detailed info** about the branches of each skeleton in the image.
 -   **Display labeled skeletons**. An extra output image will be displayed containing each skeleton labeled with its corresponding skeleton ID.
 
-Loop detection and pruning
---------------------------
+## Loop detection and pruning
 
 {% include thumbnail src='/media/Cycle detection.png' title='Example of cycle detection and pruning'%} Since the 2009/09/02 version of the code, the possible cycles or loops in the skeleton can be detected and pruned previous to the analysis. In this sense, the initial plugin dialog offers 4 options:
 
@@ -50,8 +47,7 @@ For the two last methods, another dialog will pop up asking the user to select t
 
 The only known limitation of this approach is shown in the presence of nested loops. In those cases, a second call to the plugin is usually enough to eliminate all the remaining loops.
 
-Table of results
-----------------
+## Table of results
 
 {% include thumbnail src='/media/AnalyzeSkeleton-Results-table.png' title='Example of AnalyzeSkeleton Results table'%} After classification, a "Results" window is displayed showing for each skeleton in the image:
 
@@ -76,8 +72,7 @@ In this table we display all branches information:
 
 The branches are sorted by decreasing length.
 
-Video tutorial
---------------
+## Video tutorial
 
 For a fast introduction to [Skeletonize3D](/plugins/skeletonize3d) and [AnalyzeSkeleton](/plugins/analyze-skeleton) and an example of a real application, you can have a look at this [ video tutorial](Skeleton_analysis_video_tutorial).
 
@@ -89,15 +84,13 @@ The tutorial describes step by step how to:
 -   Extract the skeleton of a binary image with [Skeletonize3D](/plugins/skeletonize3d)
 -   Analyze the resulting skeletons in the 3D image with [AnalyzeSkeleton](/plugins/analyze-skeleton)
 
-Visualization
--------------
+## Visualization
 
 Using the [3D\_Viewer](/plugins/3d-viewer) libraries we can easily display the results of both, the skeletonization and the analysis:
 
 <table><tbody><tr class="odd"><td><p>style="vertical-align:top" |{% include thumbnail src='/media/Bat cochlea 3D.gif' title='Smooth (by 3D Gaussian filter) bat cochlea volume rendered in the viewer'%}</p></td><td><p>style="vertical-align:top" |{% include thumbnail src='/media/Movie skeleton rendering.gif' title='3D skeleton of bat cochlea volume rendered in the viewer after voxel classification'%}</p></td><td><p>style="vertical-align:top" |{% include thumbnail src='/media/Movie bat skel.gif' title='Bat cochlea volume rendered in the viewer with its corresponding classified skeleton'%}</p></td></tr></tbody></table>
 
-Scripting AnalyzeSkeleton
--------------------------
+## Scripting AnalyzeSkeleton
 
 AnalyzeSkeleton functionalities can also be called from scripts, making use of its library methods or performing the whole analysis in silent mode.
 
@@ -281,15 +274,13 @@ The following [Beanshell](/scripting/beanshell) script shows the voxel classific
         }
     }
 
-API documentation
------------------
+## API documentation
 
 The latest documentation of the code can be found here:
 
 [http://javadoc.imagej.net/Fiji/sc/fiji/analyzeSkeleton/package-summary.html](http://javadoc.imagej.net/Fiji/sc/fiji/analyzeSkeleton/package-summary.html)
 
-Changelog
----------
+## Changelog
 
 All changes can be seen in the [GitHub source repository](https://github.com/fiji/AnalyzeSkeleton/commits/master).
 
@@ -323,8 +314,7 @@ All changes can be seen in the [GitHub source repository](https://github.com/fij
 
 **2008/11/16**: First release.
 
-References and citation
------------------------
+## References and citation
 
 If you need to **cite the plugin**, please do so by citing the following paper:
 
@@ -338,8 +328,7 @@ The shortest path calculation and its applications have been published as:
 
 -   Michael Doube, Michal M. Klosowski, Ignacio Arganda-Carreras, Fabrice P. Cordelieres, Robert P. Dougherty, Jonathan S. Jackson, Benjamin Schmid, John R. Hutchinson, Sandra J. Shefelbine, [BoneJ: Free and extensible bone image analysis in ImageJ](http://dx.doi.org/10.1016/j.bone.2010.08.023), Bone, Volume 47, Issue 6, December 2010, Pages 1076-1079.
 
-License
--------
+## License
 
 This program is **free software**; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt](http://www.gnu.org/licenses/gpl.txt)).
 

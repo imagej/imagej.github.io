@@ -5,8 +5,7 @@ title: 3D Viewer › User FAQs
 
 (Return to the main [3D Viewer](/plugins/3d-viewer) page)
 
-Basic Usage
------------
+## Basic Usage
 
 ### How to display a stack
 
@@ -82,8 +81,7 @@ To change the background color of the 3D world, click on -&gt;View-&gt;Change ba
 
 To use the current background color by default, see [\#How to change general view settings](#how-to-change-general-view-settings). [Top](#top)
 
-Surfaces
---------
+## Surfaces
 
 ### What is the idea of a surface
 
@@ -107,8 +105,7 @@ You can also smooth all displayed surfaces by clicking on -&gt;Edit-&gt;Smooth a
 
 The displayed surfaces can be exported to files in different surface file formats. Currently supported is Wavefront (.obj) and Drawing Interchange Format (.dxf). [Top](#top)
 
-Volumes
--------
+## Volumes
 
 ### What are volumes/volume renderings
 
@@ -128,8 +125,7 @@ The 3D viewer offers the possibility to edit volumes. To crop volumes,
 
 [Top](#top)
 
-Orthoslices:
-------------
+## Orthoslices:
 
 ### What are orthoslices
 
@@ -151,8 +147,7 @@ To hide a slice, hold one of the x, y or z key pressed and hit the 'space' bar. 
 
 See [\#How to change the displayed slice](#how-to-change-the-displayed-slice)
 
-2D Surface Plots
-----------------
+## 2D Surface Plots
 
 ### What are surface plots
 
@@ -168,8 +163,7 @@ See [\#How to change the color, transparency... of a 3D object](#how-to-change-t
 
 A 3D surface plot always shows one slice a time. When a 3D surface plot is opened in the viewer, the currently selected slice is displayed. When changing the slice of the original image stack, the view is automatically updated. [Top](#top)
 
-View Settings
--------------
+## View Settings
 
 ### How to reset the view
 
@@ -222,8 +216,7 @@ Some general view settings can be changed and made permanent by clicking on -&gt
 
 [Top](#top)
 
-Transformations
----------------
+## Transformations
 
 ### The concept of transformations
 
@@ -298,8 +291,7 @@ The 3D viewer allows to load an image stack and display it as a 3D object. This 
 
 Now such a transformed object can be exported to a stack image again. To do so, click on -&gt;Transformation-&gt;Export transformed image. The resulting stack image can of course also be saved via ImageJ's 'Save as' commands. [Top](#top)
 
-Point Lists
------------
+## Point Lists
 
 ### What is meant by 'point list' and why can they be useful
 
@@ -351,8 +343,7 @@ To hide the points, click on -&gt;Edit-&gt;Point List-&gt;Hide Point list. The p
 
 To hide the points, click on -&gt;Edit-&gt;Point List-&gt;Hide Point list. The point list window is closed automatically. [Top](#top)
 
-Registration
-------------
+## Registration
 
 ### Which kinds of registration is supported
 

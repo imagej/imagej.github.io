@@ -16,8 +16,7 @@ categories: Plugins,Color processing
 {% endcapture %}
 {% include info-box name='Temporal-Color Code' software='Fiji' author=author maintainer=' [Kota Miura](http://cmci.embl.de) ([1](mailto:miura@embl.de))' source=source released='29 Nov 2010' latest-version='29 Nov 2010' status='beta' %}
 
-Temporal-Color Code
--------------------
+## Temporal-Color Code
 
 Generates a temporal-color coded XY 2D image (above right) from HyperStack (above left). Works with both 2D time series and 3D time series.
 

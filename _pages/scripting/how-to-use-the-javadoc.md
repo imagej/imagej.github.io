@@ -4,8 +4,7 @@ title: How to use the Javadoc
 section: Learn:Scripting
 ---
 
-What is the Javadoc?
---------------------
+## What is the Javadoc?
 
 The source code of java programs is "self-documented".  
 Most classes, methods and attributes are described by some short docstring to explain their purpose. This documentation can be visualised as a user-friendly webpage: the Javadoc or API (for Application Programming Interface).
@@ -19,8 +18,7 @@ And more particulary for
 -   [ImageJ](/ij/developer/api/overview-summary.html)
 -   [Fiji](https://javadoc.scijava.org/Fiji/)
 
-The ImageJ1 API
----------------
+## The ImageJ1 API
 
 The diagram below depicts the relation between the different classes composing ImageJ1.
 

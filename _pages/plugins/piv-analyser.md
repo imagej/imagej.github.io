@@ -7,8 +7,7 @@ artifact: sc.fiji:PIV\_analyser
 
 This plugin calculates the optic flow for each pair of images made with the given stack.
 
-Principle
----------
+## Principle
 
 The plugin works using the PIV method, which is the most basic technique for optic flow. This technique, mainly used in acoustics or in fluids mechanics, enables the measurements of a velocity field in one plane, using imaging and image analysis[1]. It can be seen as one of the most simple pattern matching problem implementation.
 
@@ -22,8 +21,7 @@ The PIV algorithm is made of the following steps:
 4.  the peak in the resulting correlation image is searched for. The peak location gives the displacement for which the two image parts look the best alike, that is: the amount by which the second image has to be moved to look like the first image the best;
 5.  the velocity vector at this point is defined as the peak's position. This assume that between the two successive instants, the image did not change too much in content, but moved or deformed.
 
-Application to Life-science images
-----------------------------------
+## Application to Life-science images
 
 Here are two examples of its first applications in Biology:
 
@@ -32,8 +30,7 @@ Here are two examples of its first applications in Biology:
 
 For us, the main interest of this technique is that it allows the computation of a velocity field without having to segment objects out of an image and track them, which makes it particularly interesting when dealing with brightfield or DIC images. The trade off is loss of precision, but also the fact that you might get completely irrelevant vectors.
 
-Algorithm
----------
+## Algorithm
 
 As stated before, this plugin implements a very naive and primitive algorithm, without a sense of subtlety, and exists mainly for educational purpose. It has a very pedestrian approach, that make it slow. For each pixel away from the border of the image, a block is extracted for the front image and the back image. The correlation matrix is then calculated from these two blocks, and the result is analyzed to produce a flow vector. This is a highly redundant process, for when the algorithm moves to the next pixel to the right, the blocks content change only a little (only one column is replaced actually, and the rest is shifted left), but the whole correlation matrix is recalculated from scratch (a lot of wasted CPU cycles).
 
@@ -41,8 +38,7 @@ Typically, on a MacBook (grey model, 2009), for an 8-bit stack with a window siz
 
 The plugin is now multi-threaded, meaning that it will analyze multiple frame couples at once, depending how many CPUs it can find.
 
-Example
--------
+## Example
 
 The image to the right is made of 2000 small gaussian blobs (sigma=1), spawned randomly (you can get the original file [here](https://fiji.sc/tinevez/testpiv3.tif)). The second frame was obtained by adding a shift to each blob, given by:
 
@@ -78,15 +74,13 @@ The second one depict the internal wave. Notice the shearing in the middle of th
 {% include gallery content=content%}
 
 
-Installation
-------------
+## Installation
 
 ### Fiji
 
 The plugin is part of the Fiji distribution. You can find it in the {% include bc path='Plugins | Optic Flow'%} menu.
 
-Usage
------
+## Usage
 
 ![](/media/PIV analyser window.png "PIV_analyser_window.png")
 
@@ -132,15 +126,13 @@ The plugin returns also a stack made of the peak height for the analysis.
 
 The peak height is just the value of the correlation peak for each pixels. This can be used to mask irrelevant part of the result image. The algorithm will be typically puzzled where there is no structure to correlate. In these parts of the image, the peak height will be typically low; one can then threshold the peak height image, and use it to mask the result image.
 
-Version history
----------------
+## Version history
 
 -   1.0 - 18 April 2009 - First public release.
 -   1.1 - 19 April 2009 - can now be interrupted between frames.
 -   1.2 - 20 April 2009 - is now multithreaded.
 
-Note & references
------------------
+## Note & references
 
 <references/>
 

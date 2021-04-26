@@ -17,8 +17,7 @@ categories: Tutorials,Plugins
 
 Francisco Estrada, David Fleet, Allan Jepson, <b>Stochastic Image Denoising</b>, British Mashine Vision Conference 2009
 
-Settings
---------
+## Settings
 
 The plugin provides two parameters: The noise standard deviation <b>sigma</b> and the number of <b>samples</b> per pixel.
 
@@ -28,8 +27,7 @@ To get more pleasing results, you can increase the number of samples (i.e., the 
 
 ![](/media/Asd-1.jpg "Asd-1.jpg")
 
-Tutorial
---------
+## Tutorial
 
 ![](/media/Lena small.jpg "fig:Lena_small.jpg") ![](/media/Denoised lena small.jpg "fig:Denoised_lena_small.jpg")
 

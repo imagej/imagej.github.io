@@ -49,8 +49,7 @@ This is, unfortunately, currently quite platform-specific. Docker has tight Linu
 
 Note that this is highly experimental right now, and the steps to get Fiji running can be fairly involved. Please [report issues](https://github.com/fiji/dockerfiles/issues) and contribute suggestions if you have ideas for improving interoperability between Fiji's UI and Docker.
 
-On Linux
---------
+## On Linux
 
 We can adapt [this blog post](http://fabiorehm.com/blog/2014/09/11/running-gui-apps-with-docker/) on running GUI applications with Docker to share the X11 port.
 
@@ -83,8 +82,7 @@ Run Fiji with:
 
 Which should pop up a window with Fiji running.
 
-On OSX
-------
+## On OSX
 
 ### boot2docker
 

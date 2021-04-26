@@ -6,13 +6,11 @@ categories: Plugins,Filtering
 
 {% include info-box software='ImageJ' name='Sigma Filter' author='Michael Schmid and Tony Collins' filename=' [Sigma\_Filter\_Plus.class](/ij/plugins/download/Sigma_Filter_Plus.class)' source=' [Sigma\_Filter\_Plus.java](/ij/plugins/download/Sigma_Filter_Plus.java)' released='25 October 2007' status='1st version' category='[Filtering](Category_Filtering)' website='/ij/plugins/sigma-filter.html' %}
 
-Purpose
--------
+## Purpose
 
 This plugin implement a spatial filter similar to the mean filter. Its particularity is that it tries to preserve edges and to discard outliers by selecting what pixels to include in the mean.
 
-Documentation
--------------
+## Documentation
 
 This filter is based on the algorithm described in the following paper:
 

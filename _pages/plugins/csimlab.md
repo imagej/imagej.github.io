@@ -21,8 +21,7 @@ Promote plugins, macros and scripts created by the Computing in Signal and Image
 
 {% include thumbnail src='/media/CSIM-logo.png' title='CSIM Laboratory. See more details about our research group in the web site: http://dcm.ffclrp.usp.br/csim'%}
 
-Available Methods
------------------
+## Available Methods
 
 Here is a list of the available methods for ImageJ. If you want use any of these methods, please see the CSIM Laboratory option in the Update manager menu.
 
@@ -50,18 +49,15 @@ In this PlugIn we offer a tool to calculate the two-dimensional sample entropy (
 
 See the [SampEn2D wiki page](/plugins/sampen2d) to find out more information about this PlugIn.
 
-Source code
------------
+## Source code
 
 The ImageJ plugins source codes are available on GitHub repository: {% include github org='CSIM-Toolkits' repo='ImageJ' label='GitHub-ImageJ source codes' %}. If you want contribute with our applications, please enter in contact.
 
-Who we are
-----------
+## Who we are
 
 We are a computational laboratory dedicated with biomedical image and signal processing and analysis. Our group is held in the Ribeirão Preto city, São Paulo state, Brazil. Our research group works directly with several applications related to image and signal issues, namely registration, tissue segmentation, filtering, analysis and feature extraction. Also, our goal is to improve and create suitable tools for image and signal applications in medical and biological research. Please, see the reference articles cited here in this wiki to see some of our publications. If you want to know more about our group and research opportunities, be free to enter in contact with us in our [website](http://dcm.ffclrp.usp.br/csim)
 
-Publication
------------
+## Publication
 
 Here it will be found some publications of our research group with respect the image processing methods developed in our laboratory. If you used any of these methods, please cite the published articles bellow.
 

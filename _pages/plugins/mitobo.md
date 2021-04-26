@@ -24,8 +24,7 @@ For further details, see the [MiToBo website](http://www.informatik.uni-halle.de
 
 MiToBo is based on the [Alida](/software/alida) framework. MiToBo's operators are managed by Alida's graphical operator runner. In addition, and thanks to Alida's built-in graphical workflow editor *Grappa* also image analysis workflows can easily be designed graphically.
 
-Publication
------------
+## Publication
 
 -   {% include publication content='MiToBo' %}
 

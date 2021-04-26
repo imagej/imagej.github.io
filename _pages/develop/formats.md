@@ -14,8 +14,7 @@ Before an image can be analyzed, it needs to be opened properly. The way scienti
 -   Check out the [SCIFIO tutorials](https://github.com/scifio/scifio-tutorials/tree/master/core/src/main/java/io/scif/tutorials/core).
 -   Look at simple [existing formats](https://github.com/scifio/scifio/blob/scifio-0.24.0/src/main/java/io/scif/formats/BMPFormat.java) for a starting point.
 
-See also
---------
+## See also
 
 -   [Bio-Formats](/formats/bio-formats)
 

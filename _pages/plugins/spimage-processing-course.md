@@ -6,8 +6,7 @@ title: SPIMage processing course
 Practical course on SPIM image processing
 =========================================
 
-Hardware requirements
----------------------
+## Hardware requirements
 
 The overview of hardware requirements for SPIMage processing can be found [here](http://openspim.org/Pre-requisites).
 
@@ -15,21 +14,17 @@ The overview of hardware requirements for SPIMage processing can be found [here]
 
 ### Cluster
 
-Software requirements
----------------------
+## Software requirements
 
-Sample data
------------
+## Sample data
 
 ### OpenSPIM
 
 ### Lightsheet Z1
 
-Useful links
-------------
+## Useful links
 
-Course outline
---------------
+## Course outline
 
 ### Installation
 

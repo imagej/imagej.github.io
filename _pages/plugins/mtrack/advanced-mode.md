@@ -4,8 +4,7 @@ title: Advanced mode(MTrack)
 categories: tutorials
 ---
 
-Object recognition methods
---------------------------
+## Object recognition methods
 
 In advanced mode there are three distinct methods to identify microtubules, MSER, Watershedding followed by Hough Transform and MSER followed by Hough Transform. The object recognition for microtubules is performed on a preprocessed image, on that preprocessed image a Canny edge detector followed by a mean filter with a radius determined by the PSF of the microscope is applied, in the simple mode the edge enhancement factor is simply 1. In this mode this is adjustable, increasing this parameter causes the microtubules to appear thicker on the preprocessed image. This factor can be increased if certain microtubules are not properly detected by the Object recognition method of choice.
 
@@ -29,8 +28,7 @@ The first panel for this mode is shown below.
 
 The next button appears on this panel only after the user has made the choice of the object recognition method.
 
-Tracking options
-----------------
+## Tracking options
 
 After clicking the next button the user has several options to choose from before starting the tracking.
 

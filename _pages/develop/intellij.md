@@ -5,8 +5,7 @@ title: Developing ImageJ in IntelliJ IDEA
 
 This article explains how to install and configure IntelliJ IDEA for use with [ImageJ](/about) development. Directions correspond to IntelliJ IDEA 11.1, and may need adjustment for other versions.
 
-Install and configure IDEA
---------------------------
+## Install and configure IDEA
 
 -   **Install Java Development Kit.** Download and install Java SE 8 from the [Java web site](http://www.oracle.com/technetwork/java/javase/downloads/). Or install it via a package manager, if possible.
 
@@ -14,8 +13,7 @@ Install and configure IDEA
 
 -   **Install IDEA.** Download and install IDEA from the [IDEA web site](http://www.jetbrains.com/idea/download/).
 
-Import the ImageJ source
-------------------------
+## Import the ImageJ source
 
 1.  From the IDEA menu, choose {% include bc path='Version Control|Checkout from Version Control|Git'%}
 2.  For the Git Repository URL, enter: [`git://github.com/imagej/imagej`](Git___github.com_imagej_imagej)
@@ -27,8 +25,7 @@ On some platforms, the first time you perform this procedure, you may be prompte
 1.  Click the plus sign and choose "JSDK"
 2.  Navigate to the directory containing your JDK installation
 
-Launch the program
-------------------
+## Launch the program
 
 1.  Choose {% include bc path='Run|Edit Configurations'%} from the menu
 2.  Click the Plus icon and choose Application
@@ -40,8 +37,7 @@ Launch the program
 
 The project automatically builds before launching, so it may take a little while the first time.
 
-Code style profiles
--------------------
+## Code style profiles
 
 This section is a short guide on how to start using the Eclipse code style profile of ImageJ.
 
@@ -80,8 +76,7 @@ After installing the ECF plugin you need to set it to use the Eclipse code style
 
 More information on setting up the ECF plugin can be found [here](https://github.com/krasa/EclipseCodeFormatter#instructions).
 
-Troubleshooting
----------------
+## Troubleshooting
 
 ### Renaming SciJava `@Plugin` annotated classes
 

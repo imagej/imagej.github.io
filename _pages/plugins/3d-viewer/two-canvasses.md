@@ -6,8 +6,7 @@ title: 3D Viewer › Two Canvasses
 (Return to the [Developer Documentation](/plugins/3d-viewer/developer-documentation) page)  
 (Return to the main [3D\_Viewer](/plugins/3d-viewer) page)
 
-How to create two canvasses displaying the same universe
---------------------------------------------------------
+## How to create two canvasses displaying the same universe
 
 You can download example source code for this HowTo [here](/plugins/3d-viewer/example-code).
 

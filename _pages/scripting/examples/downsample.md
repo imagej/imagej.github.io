@@ -6,18 +6,15 @@ categories: Scripting
 
 Gaussian downsampling of an image with ImageJ on-board tools.
 
-Motivation
-----------
+## Motivation
 
 Sound downsampling of an image requires the elimination of image frequencies higher than half the sampling frequency in the result image (see the {% include wikipedia title='Nyquist%E2%80%93Shannon sampling theorem' text='Nyquist–Shannon sampling theorem'%}). The exclusive tool for this is {% include wikipedia title='Gaussian function' text='Gaussian convolution'%}.
 
-Download
---------
+## Download
 
 Get a snapshot from the git repository here: [downsample\_.js](https://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob_plain;f=plugins/Examples/downsample_.js).
 
-Documentation
--------------
+## Documentation
 
 This script calculates the required Gaussian kernel for a given target **width** or **height**, smooths the image and resamples it. The target size must be smaller than the source image size.
 
@@ -25,8 +22,7 @@ Furthermore, you can define the "intrinsic" Gaussian kernel of the source and ta
 
 This script is maintained by Stephan Saalfeld.
 
-Example
--------
+## Example
 
 A picture is worth a thousand words, so here is an example. You see a 2,048×2,048px transmission electron micrograph downsampled to 100×100px. For better illustration, the examples are shown at 200%.
 
@@ -34,8 +30,7 @@ A picture is worth a thousand words, so here is an example. You see a 2,048×2,0
 |-------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | ![ImageJ interpolated scaling](/media/Downsample-imagej.png "ImageJ interpolated scaling") | ![Gaussian downsampling with target sigma=0.25](/media/Downsample-ts-0.25.png "Gaussian downsampling with target sigma=0.25") | ![Gaussian downsampling with target sigma=0.5](/media/Downsample-ts-0.5.png "Gaussian downsampling with target sigma=0.5") |
 
-Code
-----
+## Code
 
     /**
      * Gaussian downsampling of an image with ImageJ on-board tools.
@@ -146,8 +141,7 @@ Code
     else
       IJ.showMessage( "You should have at least one image open." );
 
-See also
---------
+## See also
 
 -   [Javascript Scripting](/scripting/javascript)
 -   [Scripting Help](/scripting)

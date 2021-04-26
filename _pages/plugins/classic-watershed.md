@@ -19,8 +19,7 @@ categories: Plugins,Segmentation,Mathematical_morphology
 {% include info-box name='Classic Watershed' software='IJPB-plugins' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](/plugins/morpholibj) v1.4.1)' status='stable, active' category='[Segmentation](Category_Segmentation), [Mathematical morphology](Category_Mathematical_morphology)' %}{\| \|<span>  
 </span>style="vertical-align:top" \|{% include thumbnail src='/media/Classic-Watershed-lines-blur-blobs.png' title='Overlay of watershed lines on blurred blobs.'%} \|}
 
-Introduction
-------------
+## Introduction
 
 {% include thumbnail src='/media/Watershed-flooding-graph.png' title='Schematic overview of watershed flooding in 1D'%}Classic Watershed is an ImageJ/Fiji plugin to perform watershed segmentation of grayscale 2D/3D images using flooding simulations as described by Pierre Soille and Luc M. Vincent (1990)&lt;ref name="Soille1990&gt;{% include cite content='conference' title='Determining watersheds in digital pictures via flooding simulations' author='Soille, Pierre and Vincent, Luc M' booktitle='Proc. SPIE' volume='1360' pages='240-250' year='1990' organization='International Society for Optics and Photonics' doi='10.1117/12.24211' url='http://dx.doi.org/10.1117/12.24211' %}</ref>.
 
@@ -30,8 +29,7 @@ All points in the surface at a given minimum constitute the **catchment basin** 
 
 The first image points that are reached by water are the points at the lowest grayscale value $$h_{min}$$, then all image pixels are progressively reached up to the highest level $$h_{max}$$.
 
-Usage
------
+## Usage
 
 The Classic Watershed plugin runs on any **grayscale image (8, 16 and 32-bit) in 2D and 3D**.
 
@@ -52,8 +50,7 @@ Output:
 
 -   **Labeled image** containing the resulting catchment basins (with integer values 1, 2, 3...) and watershed lines (with 0 value).
 
-Over-segmentation
------------------
+## Over-segmentation
 
 Normally, Classic Watershed will lead to an over-segmentation of the input image, especially for noisy images with many regional minima. In that case, it is recommended to **either pre-process the image before running the plugin, or merge regions based on a similarity criterion afterwards**. Several denoising methods are available in Fiji/ImageJ, namely: median filtering, Gaussian blur, bilateral filtering, etc.
 
@@ -81,8 +78,7 @@ This short macro runs the plugin twice in the blobs sample, first without pre-pr
 
 Image:Blobs-blur.png\|Gaussian-blurred blobs image used as input (radius = 3). Image:Blobs-watershed-no-preprocessing.png\|Watershed segmentation on original image (Min h = 0, Max h = 150) Image:Blobs-blur-watershed.png\|Watershed segmentation on Gaussian-blurred original image (radius = 3, Min h = 0, Max h = 150)
 
-Installation
-------------
+## Installation
 
 The Classic Watershed plugin is part of the [MorphoLibJ](/plugins/morpholibj) library. To install it, you just need to [ add](/update-sites/following#add-update-sites) the IJPB-plugins update site:
 
@@ -98,21 +94,18 @@ You should now find the plugin under the sub-menu {% include bc path='Plugins |M
 
 **Note**: Classic Watershed is only one of the plugins included in the [MorphoLibJ](/plugins/morpholibj) suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
 
-References
-----------
+## References
 
 <references />
 
-See also
---------
+## See also
 
 -   [Marker-controlled Watershed](/plugins/marker-controlled-watershed), a plugin to perform watershed by flooding from specific seed points or markers.
 -   [Morphological Segmentation](/plugins/morphological-segmentation), a plugin with a graphical user interface to segment images based on morphological operations and the watershed algorithm.
 -   [Serge Beucher's site](http://cmm.ensmp.fr/~beucher/wtshed.html), with graphic descriptions and animations of the watershed algorithms.
 -   [G. Bertrand's Topological Watershed site](http://www.esiee.fr/~info/tw/index.html), with papers, lecture slides and source code.
 
-License
--------
+## License
 
 This program is **free software**; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt](http://www.gnu.org/licenses/gpl.txt)).
 

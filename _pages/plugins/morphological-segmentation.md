@@ -19,13 +19,11 @@ categories: Plugins,Segmentation,Mathematical_morphology,Citable
 {% include info-box name='Morphological Segmentation' software='IJPB-plugins' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](/plugins/morpholibj) v1.4.1)' status='stable, active' category='[Segmentation](Category_Segmentation), [Mathematical morphology](Category_Mathematical_morphology)' %}{\| \|<span>  
 </span>style="vertical-align:top" \|{% include thumbnail src='/media/Morphological-Segmentation-animation-blobs.gif' title='Visual description of the different steps of the Morphological Segmentation plugin.'%} \|}
 
-Introduction
-------------
+## Introduction
 
 <img src="/media/Morphological-segmentation-front.png" width="400"/>Morphological Segmentation is an ImageJ/Fiji plugin that combines morphological operations, such as extended minima and morphological gradient, with watershed flooding algorithms to segment grayscale images of any type (8, 16 and 32-bit) in 2D and 3D.
 
-Usage
------
+## Usage
 
 Morphological Segmentation runs on any open grayscale image, single 2D image or (3D) stack. If no image is open when calling the plugin, an Open dialog will pop up.
 
@@ -85,8 +83,7 @@ If your segmentation is taking too long or you want **to stop it** for any reaso
 
 -   **Shuffle colors**: randomly re-assign colors to the labels. This is a very handy option whenever two adjacent labels present a similar color.
 
-Video tutorials
----------------
+## Video tutorials
 
 ### Quick start guide
 
@@ -100,8 +97,7 @@ This video tutorial (with audio as well) shows how to use the plugin segment a 3
 
 {% include youtube url='https://www.youtube.com/embed/lm4hQhLlnHU'%}
 
-Macro language compatibility
-----------------------------
+## Macro language compatibility
 
 Morphological Segmentation is completely compatible with the popular [ImageJ macro language](/ij/developer/macro/macros.html). Each of the buttons in the GUI are macro-recordable and their commands can be reproduced later from a simple macro file.
 
@@ -182,8 +178,7 @@ The complete list of commands is as follows:
     // display the overlaid dams
     call("inra.ijpb.plugins.MorphologicalSegmentation.setDisplayFormat", "Overlaid dams");
 
-Installation
-------------
+## Installation
 
 Morphological Segmentation is part of the [MorphoLibJ](/plugins/morpholibj) library. To install it, you just need to [ add](/update-sites/following#add-update-sites) the IJPB-plugins update site:
 
@@ -199,13 +194,11 @@ You should now find the plugin under the sub-menu {% include bc path='Plugins | 
 
 **Note**: Morphological Segmentation is only one of the plugins included in the [MorphoLibJ](/plugins/morpholibj) library. By following these installation steps, you will be installing as well the rest of plugins in the suite.
 
-Examples
---------
+## Examples
 
 <table><tbody><tr class="odd"><td><p>style="vertical-align:top" |{% include thumbnail src='/media/Arabidopsis-embryo-3d-animation.gif' title='3d reconstruction of an *Arabidopsis thaliana* embryo using the Morphological Segmentation plugin. Image courtesy of Jean-Christophe Palauqui (INRA-Versailles)'%}</p></td></tr></tbody></table>
 
-Citation
---------
+## Citation
 
 If you need to cite the plugin, please do so by citing the following paper:
 
@@ -213,22 +206,19 @@ If you need to cite the plugin, please do so by citing the following paper:
 
 To cite the implementation, [MorphoLibJ](/plugins/morpholibj)'s code repository has its own [DOI](http://dx.doi.org/10.5281/zenodo.50694).
 
-References
-----------
+## References
 
 1.  Meyer, Fernand, and Serge Beucher. "Morphological segmentation." Journal of visual communication and image representation 1.1 (1990): 21-46.
 2.  Soille, P., "Morphological Image Analysis: Principles and Applications", Springer-Verlag, 1999, pp. 170-171.
 
-See also
---------
+## See also
 
 -   [Marker-controlled Watershed](/plugins/marker-controlled-watershed), a plugin to perform watershed by flooding from specific seed points or markers.
 -   [Classic Watershed](/plugins/classic-watershed), plugin implementing the original watershed algorithm to segment 2D/3D grayscale images.
 -   [Serge Beucher's site](http://cmm.ensmp.fr/~beucher/wtshed.html), with graphic descriptions and animations of the watershed algorithms.
 -   [G. Bertrand's Topological Watershed site](http://www.esiee.fr/~info/tw/index.html), with papers, lecture slides and source code.
 
-License
--------
+## License
 
 This program is **free software**; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt](http://www.gnu.org/licenses/gpl.txt)).
 

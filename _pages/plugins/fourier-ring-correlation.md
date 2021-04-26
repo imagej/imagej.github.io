@@ -39,8 +39,7 @@ Making use of the Fourier Ring Correlation Implementation by Alex Herbert which 
 Details
 =======
 
-Threshold Methods
------------------
+## Threshold Methods
 
 There are three threshold methods currently implemented
 
@@ -50,8 +49,7 @@ There are three threshold methods currently implemented
 
 Please see the publication **van Hell and Schatz, Fourier shell correlation threshold criteria, Journal of Structural Biology 151, 2005**[2] for more information on the calculation of these criteria.
 
-Image Calibration
------------------
+## Image Calibration
 
 We recommend you use a calibrated image so that your results are in calibrated units (microns, millimeters, etc..) directly. The plugin will always return both the non calibrated values and the calibrated ones as separate columns.
 
@@ -63,8 +61,7 @@ This plugin is available from the {% include list-of-update-sites content='PTBIO
 Use
 ===
 
-Direct Use
-----------
+## Direct Use
 
 <figure><img src="/media/Frc-dialog-std.png" title="Plugin Dialog choices Standard Use" width="500" alt="Plugin Dialog choices Standard Use" /><figcaption aria-hidden="true">Plugin Dialog choices Standard Use</figcaption></figure>
 
@@ -72,8 +69,7 @@ Call up the plugin using *Plugins-&gt;BIOP-&gt;Image Analysis-&gt;FRC-&gt;FRC Ca
 
 You need two images open to perform the FRC.
 
-Batch Mode
-----------
+## Batch Mode
 
 <figure><img src="/media/Frc-dialog-batch.png" title="Plugin Dialog choices in Batch mode" width="500" alt="Plugin Dialog choices in Batch mode" /><figcaption aria-hidden="true">Plugin Dialog choices in Batch mode</figcaption></figure>
 
@@ -88,8 +84,7 @@ The plugin writes the FIRE (Fourier Image REsolution) number on a Results Table 
 
 <figure><img src="/media/Frc-results.png" title="Results Table example from FRC Calculation" width="500" alt="Results Table example from FRC Calculation" /><figcaption aria-hidden="true">Results Table example from FRC Calculation</figcaption></figure>
 
-Plots
------
+## Plots
 
 The Plugin can display a plot of the FRC curve, along with the LOESS smoothed version of the curve. Finally it displays the threshold method used and the intersection of the FRC with the threshold, providing the FIRE number. The X dimension is in the frequency domain and represents pixels<sup>-1</sup>
 
@@ -127,8 +122,7 @@ There are other methods to get the FRC curve, see the [FRC.java file](https://c4
 Notes
 =====
 
-References
-----------
+## References
 
 
 

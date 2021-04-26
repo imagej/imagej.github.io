@@ -15,8 +15,7 @@ section: About
 
 Historically, [ImageJ 1.x](/software/imagej1) was funded internally by the Research Services branch of the [National Institutes of Health](https://nih.gov/). It is developed by {%- include person id='rasband' -%}, who is now retired, and continues his work on ImageJ1 as an NIH special volunteer.
 
-ImageJ2
--------
+## ImageJ2
 
 [ImageJ2](/software/imagej2) was initially funded from 2010 through 2012 by the National Institute of General Medical Sciences (NIGMS) through the American Recovery and Reinvestment Act of 2009 NIH Research and Research Infrastructure "Grand Opportunities" Grant, **"Hardening" of Biomedical Informatics/Computing Software for Robustness and Dissemination** (Ref: RC2 GM092519-01). For more information on the grant call, see the listing on the NIGMS [Grand Opportunity Areas](http://www.nigms.nih.gov/Research/pages/GrandOpportunityAreas.aspx) page. See also the original [ImageJ2 grant proposal](ImageJ2_grant_proposal) from 2009.
 
@@ -24,15 +23,13 @@ In recent years, ImageJ2 development has been funded by several sources, includi
 
 The ImageJ2 project as a whole is maintained by {%- include person id='ctrueden' -%} of the [Eliceiri/LOCI lab](/orgs/loci), currently supported by CZI as an [Imaging Software Fellow](https://www.chanzuckerberg.com/newsroom/czi-announces-support-for-open-source-software-efforts-to-improve-biomedical-imaging).
 
-SCIFIO
-------
+## SCIFIO
 
 [SCIFIO](/software/scifio) was funded by the [National Science Foundation](http://nsf.gov/), award number [1148362](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1148362). It was initially developed by {%- include person id='hinerm' -%} and {%- include person id='ctrueden' -%} of the [Eliceiri/LOCI lab](/orgs/loci).
 
 SCIFIO's development is now funded indirectly by various institutions as part of their respective research and development goals. SCIFIO as a whole is organized and maintained as part of the ImageJ2 effort by {%- include person id='ctrueden' -%} of the [Eliceiri/LOCI lab](/orgs/loci).
 
-ImgLib2
--------
+## ImgLib2
 
 The [ImgLib2](/imglib2) project was developed by {%- include person id='axtimwalde' -%}, {%- include person id='StephanPreibisch' -%} and {%- include person id='tpietzsch' -%} of the [Tomancak lab](https://mpi-cbg.de/research/research-groups/pavel-tomancak.html) at [MPI-CBG](https://mpi-cbg.de/).
 
@@ -42,15 +39,13 @@ The ImgLib2 project as a whole is organized and maintained by {%- include person
 
 [ImgLib2](/imglib2) is also funded indirectly by the various involved software efforts, including the [Tomancak](https://www.mpi-cbg.de/tomancak), [Jug](https://www.mpi-cbg.de/jug) and [Saalfeld](https://www.janelia.org/lab/saalfeld-lab) labs as well as the [Eliceiri/LOCI lab](/orgs/loci).
 
-SciJava
--------
+## SciJava
 
 Core [SciJava](SciJava) libraries are funded indirectly by the various involved software efforts, including [ImageJ2](/software/imagej2), [KNIME](/software/knime), [OMERO](/software/omero) and [CellProfiler](/software/cellprofiler).
 
 The SciJava project as a whole is organized and maintained by {%- include person id='ctrueden' -%} of the [Eliceiri/LOCI lab](/orgs/loci), currently supported by CZI as an [Imaging Software Fellow](https://www.chanzuckerberg.com/newsroom/czi-announces-support-for-open-source-software-efforts-to-improve-biomedical-imaging).
 
-Fiji
-----
+## Fiji
 
 The [Fiji](/fiji) distribution of [ImageJ](/about) for the life sciences is a broad collection of plugins by many authors across the worldwide community.
 
@@ -61,7 +56,6 @@ Fiji as a whole is organized and maintained by:
 
 Fiji development is also funded indirectly by various institutions as part of their respective research and development goals.
 
-de.NBI DAIS
------------
+## de.NBI DAIS
 
 The Dresden Analysis-of-Images Suite ([DAIS](/orgs/dais)) is a partner project of [CIBI](https://www.denbi.de/network/center-for-integrative-bioinformatics-cibi/21-about/508-portfolio-of-center-for-integrative-bioinformatics-cibi) in the German Network for Bioinformatics Infrastructure ([de.NBI)](https://www.denbi.de). The [Fiji](/fiji) community is actively working towards tight integration with the [KNIME](/software/knime) workflow engine, which is maintained and developed by the de.NBI center CIBI. DAIS has a strong focus on further strengthening interoperability and integration of Fiji and KNIME, as well as bringing together their respective developer communities.

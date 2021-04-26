@@ -31,8 +31,7 @@ deb-src https://downloads.imagej.net/fiji/apt-experimental/ ./
 
 The packages are targetting Ubuntu 10.04 (Lucid Lynx) and Debian testing (squeeze) later than August 2010.
 
-Short Version
--------------
+## Short Version
 
 Mostly as a reminder to myself, the quick way to build new packages is:
 
@@ -41,8 +40,7 @@ Mostly as a reminder to myself, the quick way to build new packages is:
 -   Assuming that you're building on an amd64 machine, run `debian/build-in-i386-chroot` to build the i386 packages. (The chroot can be created as a one-off with debian/create-i386-chroot.py but you will still need to carefully customize /etc/schroot/schroot.conf )
 -   Upload the new versions of the packages with `debian/upload-to-pacific`.
 
-Longer Version
---------------
+## Longer Version
 
 ### Clone a new copy of fiji.git
 

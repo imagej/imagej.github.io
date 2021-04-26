@@ -4,8 +4,7 @@ title: Read more about Preprocessing
 categories: tutorials
 ---
 
-Pre-Processing
---------------
+## Pre-Processing
 
 If the original movie is not flat field corrected by the microscope, the program offers to do a pseudo-flat field correction by applying a Gaussian of radius a twentieth the size of the image and subtracting it from the original image to create a preprocessed movie which would be used for tracking.
 

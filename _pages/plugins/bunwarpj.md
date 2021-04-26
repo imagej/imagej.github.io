@@ -11,13 +11,11 @@ This ImageJ/Fiji plugin performs **2D image registration based on elastic deform
 
 For a quick start, you can have a look at the [video tutorial](http://imagejdocu.tudor.lu/doku.php?id=video:aligning:bunwarpj_basic_tutorial) (awarded at the Second ImageJ User & Developer Conference).
 
-General Description
--------------------
+## General Description
 
 [bUnwarpJ](/plugins/bunwarpj) is an algorithm for **elastic and consistent image registration** developed as an ImageJ plugin. It performs a simultaneous registration of two images, A and B. Image A is elastically deformed in order to look as similar as possible to image B, and, at the same time, the "inverse" transformation (from B to A) is also calculated so a pseudo-invertibility of the final deformation could be guaranteed. Two images are given as a result: the deformed versions of A and B images.
 
-Technical Explanations
-----------------------
+## Technical Explanations
 
 This image registration algorithm is based on the minimization of an energy functional that includes the dissimilarity between the source and target images -in both directions- $$E_{img}$$, an optional landmark constraint $$E_{\mu}$$, a regularization term $$(E_{div} + E_{rot})$$, and an energy term $$E_{cons}$$ that accounts for the geometrical consistency between the elastic deformation in both directions. Namely, the energy function is given by
 
@@ -27,8 +25,7 @@ $$ E = w_iE_{img} + w_{\mu}E_{\mu} + (w_dE_{div} + w_rE_{rot}) + w_cE_{cons} $$
 
 Where the weights of every term are set by the user in the main window of the plugin. The optimization process is a [Levenberg-Marquardt](https://en.wikipedia.org/wiki/Levenberg%E2%80%93Marquardt_algorithm) minimization enhanced by a [Broyden-Fletcher-Goldfarb-Shanno (BFGS)](https://en.wikipedia.org/wiki/Broyden%E2%80%93Fletcher%E2%80%93Goldfarb%E2%80%93Shanno_algorithm) estimate of the local Hessian of the goal function, and both, images and deformations are represented by [cubic B-splines](https://en.wikipedia.org/wiki/B-spline).
 
-User Manual
------------
+## User Manual
 
 ### Generalities
 
@@ -241,8 +238,7 @@ An explanation of the parameters is [ here](/plugins/feature-extraction#paramete
 
 After applying SIFT or MOPS methods, you will get two sets of corresponding points in both images. If you call then [bUnwarpJ](/plugins/bunwarpj), the corresponding points will appear as source and target landmarks.
 
-/downloads
----------
+## /downloads
 
 The latest stable distribution of bUnwarpJ can always be found included within Fiji and the **latest released JARs are available in the** [GitHub repository](https://github.com/fiji/bUnwarpJ/releases). If you detect any bug, please feel free to contact the maintainer. Any feedback will be very appreciated.
 
@@ -256,8 +252,7 @@ In Fiji, [bUnwarpJ](/plugins/bunwarpj) comes installed by default. In ImageJ, yo
 
 To execute bUnwarpJ as a macro or from the command line, see the description in the User Manual.
 
-Frequently Asked Questions
---------------------------
+## Frequently Asked Questions
 
 ### How do I choose the weights? What does each of the weights really mean?
 
@@ -342,8 +337,7 @@ The raw transformation file should be a text file with the following structure:
     Y Trans -----------------------------------
        [(Height * Width) coordinates representing the Y transformation for every pixel on the target image]
 
-References (Citation)
----------------------
+## References (Citation)
 
 The algorithm implemented on bUnwarpJ and its technical explanations are detailed on a publication. If you use it successfully for your research please be so kind to cite our work:
 
@@ -353,15 +347,13 @@ The related paper of the previous work ([UnwarpJ](/plugins/unwarpj)) is:
 
 -   C.Ó. Sánchez Sorzano, P. Thévenaz, M. Unser, "Elastic Registration of Biological Images Using Vector-Spline Regularization", IEEE Transactions on Biomedical Engineering, vol. 52, no. 4, pp. 652-663, April 2005.
 
-License
--------
+## License
 
 This program is **free software**; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt](http://www.gnu.org/licenses/gpl.txt)).
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-Acknowledgements
-----------------
+## Acknowledgements
 
 [bUnwarpJ](/plugins/bunwarpj) has been developed during several years already and many people need to be acknowledged for:
 

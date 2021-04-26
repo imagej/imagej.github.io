@@ -7,8 +7,7 @@ section: Learn:Cookbook
 
 
 
-Slice shuffling/removing/Adding
--------------------------------
+## Slice shuffling/removing/Adding
 
 The slices in a stack can be manipulated in many ways. Some of these functions are described below.
 
@@ -66,8 +65,7 @@ Stack Sorter: "*Image/Stacks/Tools/Stack Sorter*".
 
 ![](/media/Stack slice manipulations1.png "stack_slice_manipulations1.png")
 
-Stack dimension manipulations
------------------------------
+## Stack dimension manipulations
 
 Images and stacks can be resized and rotated with native functions or with the more sophisticated TransformJ set of plugins from Erik Meijering. More details about each TransformJ plugin can be found on [this website.](http://www.imagescience.org/meijering/software/transformj/)
 
@@ -79,8 +77,7 @@ An alternative method for cropping a stack is found with "*Plugins/Stacks/Crop (
 
 Window for the Crop (3D) plugin.
 
-Zoomify plugin
---------------
+## Zoomify plugin
 
 The Zoomify plugin will generate a movie sequence such that the first frame includes the whole image and the last is the user defined ROI at 100%. The first slice image is the whole of the original image, scaled so that it fits into the framesize of the ROI. The intermediate images are progressively scaled so that the last frame is 100%. The scale factor is noted as the label slice in the stack.
 
@@ -94,8 +91,7 @@ Series generated with zoomify
 
 <figure><img src="/media/Zoomify montage.png" title="zoomify_montage.png" width="533" height="111" alt="zoomify_montage.png" /><figcaption aria-hidden="true">zoomify_montage.png</figcaption></figure>
 
-Align slices in stack
----------------------
+## Align slices in stack
 
 The plugins StackReg (to align a stack) and TurboReg (to align more than one image or stack) can be used for alignment and are found at "*Plugins/Registration/StackReg or TurboReg*". StackReg takes a stack with misaligned slices and aligns the slices with respect to the current slice. Open the stack, scroll to the most centered slice and run the plugin. The "Rigid body" method typically produces the best results for microscopy images. The TurboReg plugin must be installed before using StackReg.
 

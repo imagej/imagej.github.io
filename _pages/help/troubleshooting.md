@@ -10,8 +10,7 @@ section: Help
 How to troubleshoot problems
 ============================
 
-Checking the Java version
--------------------------
+## Checking the Java version
 
 You can tell which Java version ImageJ is using by clicking the ImageJ [status bar](/learn/getting-started#the-status-bar) and looking for the part that says e.g. "Java 1.8.0\_45 \[64-bit\]". The relevant number is the one after "Java 1."—so e.g. "Java 1.8.0\_45" or similar indicates Java 8, while "Java 1.7.0\_79" or similar indicates Java 7.
 
@@ -19,8 +18,7 @@ On OS X, you can use [this script](https://raw.githubusercontent.com/ctrueden/ct
 
 See also [How do I launch ImageJ with a different version of Java?](/help/faq#how-do-i-launch-imagej-with-a-different-version-of-java).
 
-Launching ImageJ from the console
----------------------------------
+## Launching ImageJ from the console
 
 To diagnose problems with ImageJ, it is often helpful to launch it in debug mode:
 
@@ -40,13 +38,11 @@ You can control the log level more precisely by setting the `scijava.log.level` 
 
 Valid levels include: `none`, `error`, `warn`, `info`, `debug` and `trace`. See the [Logging](/develop/logging) page for more about SciJava logging.
 
-The other debug mode
---------------------
+## The other debug mode
 
 There is another debug mode, which can be enabled in the {% include bc path='Edit | Options | Misc...'%} menu, by checking *Debug mode*. This might reveal different information than using the techniques described above. For maximum debugitude, turn on both!
 
-If ImageJ freezes or hangs
---------------------------
+## If ImageJ freezes or hangs
 
 If ImageJ appears to {% include wikipedia title='Hang (computing)' text='hang'%}—i.e., it stops responding to inputs—it is often helpful to take a "snapshot" of where the program is at after the hang occurs. This information can give the developers valuable hints about how to fix the problem.
 
@@ -76,8 +72,7 @@ If the first method does not work, and you can reproduce the hang:
 
 Once you have the stack trace. you can paste it into a [bug report](/help/report-a-bug)!
 
-If ImageJ crashes
------------------
+## If ImageJ crashes
 
 If ImageJ {% include wikipedia title='Crash (computing)' text='crashes'%}—i.e., the program suddenly terminates, with or without an error message—it is very helpful to identify the steps which can reliably reproduce the crash:
 
@@ -85,8 +80,7 @@ If ImageJ {% include wikipedia title='Crash (computing)' text='crashes'%}—i.e.
 -   Perform the same actions which previously resulted in the crash.
 -   Take note of any error messages in the console window, which you can copy and paste it into a [bug report](/help/report-a-bug).
 
-If ImageJ does not start up
----------------------------
+## If ImageJ does not start up
 
 ### On a fresh installation
 
@@ -115,16 +109,14 @@ The easiest workaround is to [download](/downloads) a fresh copy of the software
 
 If you are feeling investigative, you can try [launching ImageJ from the console](#launching-imagej-from-the-console) to get more information about why it is failing to start up. After doing that, you will probably see some information printed to the console, which you can paste online to somewhere like [Pastebin.com](http://pastebin.com/), and write to the [Community](/help) to ask for help deciphering it.
 
-Advanced debugging techniques
------------------------------
+## Advanced debugging techniques
 
 If you are technically savvy, check out the [Debugging](/develop/debugging) page for additional—but more complicated—debugging techniques.
 
 Common issues
 =============
 
-The image I loaded is displayed all black! But it is not black!
----------------------------------------------------------------
+## The image I loaded is displayed all black! But it is not black!
 
 This problem can arise when 12-bit, 14-bit or 16-bit images are loaded into ImageJ without autoscaling. In that case, the display is scaled to the full 16-bit range (0 - 65535 intensity values), even though the actual data values typically span a much smaller range. For example, on a 12-bit camera, the largest possible intensity value is 4095—but with 0 mapped to black and 65535 mapped to white, 4095 ends up (linearly) mapped to a very very dark gray, nearly invisible to the human eye.
 
@@ -132,8 +124,7 @@ You can fix this by clicking on {% include bc path='Image | Adjust | Brightness/
 
 You can verify whether the actual data is there by moving the mouse over the image, and looking at the pixel probe output in the [status bar area of the main ImageJ window](/learn/getting-started#the-status-bar).
 
-The image colors do not match what I see in other programs! ImageJ is wrong!
-----------------------------------------------------------------------------
+## The image colors do not match what I see in other programs! ImageJ is wrong!
 
 In many cases, ImageJ performs autoscaling by default, to improve the contrast of your image. Otherwise, in many cases with scientific images you might see only a black square (see previous question).
 
@@ -156,15 +147,13 @@ Further reading:
 -   [Image Intensity Processing](/cookbook/image-intensity-processing)
 -   [Image Processing Principles](/techniques/principles)
 
-Whenever I open a file in ImageJ, the file size increases by a ridiculous amount!
----------------------------------------------------------------------------------
+## Whenever I open a file in ImageJ, the file size increases by a ridiculous amount!
 
 Are you using a [compressed format](/ij/docs/guide/146-7.html#sub:Native-Formats) such as JPEG, PNG or ZIP? The file size on disk is smaller than the size of the pixels in memory. ImageJ reports this true (uncompressed) size of the image in the subtitle bar of the image window. For example: an uncompressed image of 16000 pixels x 16000 pixels x 32 bit (RGBA) will occupy 976 MB in memory.
 
 Note that [lossy compression is not suitable for quantitative image analysis](/techniques/principles#why-lossy-jpegs-should-not-be-used-in-imaging).
 
-The same plugin gives different results on different machines!
---------------------------------------------------------------
+## The same plugin gives different results on different machines!
 
 While ImageJ strives for [reproducible](/develop/architecture#reproducible-builds) analysis, there are many reasons results can differ. Check the following:
 
@@ -190,8 +179,7 @@ While ImageJ strives for [reproducible](/develop/architecture#reproducible-build
 Common error messages
 =====================
 
-OutOfMemoryError
-----------------
+## OutOfMemoryError
 
 {% include box float='right' %} The error means ImageJ ran out of available {% include wikipedia title='Random-access memory' text='computer memory'%} (*not* hard drive space).
 
@@ -213,8 +201,7 @@ If you are already at the limits of your computer's physical memory, the next st
 
 **About Java garbage collection:** Java always automatically calls the garbage collector when the heap is getting full [\[1](http://stackoverflow.com/questions/8719071)\]. While it is possible to manually invoke the garbage collector by clicking ImageJ's [status bar](/learn/getting-started#the-status-bar)—or programmatically by calling `run("Collect Garbage")` in a macro or `System.gc()` in a plugin—it will not solve the fundamental problem of Java actually not having a sufficient amount of memory. (The only exception to this is a rare case where Java decides that garbage collection is happening too slowly, in which case you should see the message "GC overhead limit exceeded" [\[2](http://www.petefreitag.com/item/746.cfm)\]).
 
-NegativeArraySizeException
---------------------------
+## NegativeArraySizeException
 
 This error usually means that your image planes are larger than the maximum supported size.
 
@@ -224,8 +211,7 @@ If you are using Bio-Formats to open a file, however, the size limit is a bit mo
 
 [ImageJ2](/software/imagej2) supports larger image planes internally, but uses the [ImageJ1](/software/imagej1) user interface by default, which once again limits visualization to 2 gigapixels. The [ImageJ2 team](/about/contributors) is working to lift these size restrictions; see {% include github org='imagej' repo='imagej' issue='87' label='imagej/imagej\#87' %}.
 
-UnsupportedClassVersionError
-----------------------------
+## UnsupportedClassVersionError
 
 Usually, this error takes the form of "Unsupported major.minor version 52.0" or similar, and indicates you are attempting to use a plugin which requires a newer version of Java than you are running. For example, you may have enabled an [update site](/update-sites) that requires Java 7, but your ImageJ is using Java 6.
 
@@ -248,8 +234,7 @@ See {% include wikipedia title='Java version history' text='Java version history
 
 To control the version of Java that ImageJ uses, see [How do I launch ImageJ with a different version of Java](/help/faq#how-do-i-launch-imagej-with-a-different-version-of-java).
 
-NoSuchMethodError or NoClassDefFoundError
------------------------------------------
+## NoSuchMethodError or NoClassDefFoundError
 
 These errors indicate a "version skew" between the software libraries in your ImageJ installation. Most commonly, this situation occurs when multiple [update sites](/update-sites) are enabled which ship incompatible versions of those libraries.
 
@@ -258,8 +243,7 @@ The proper fix is for the maintainers of those update sites to reconcile the ver
 OS X issues
 ===========
 
-Why does ImageJ run so slowly?
-------------------------------
+## Why does ImageJ run so slowly?
 
 ### Java painting bug
 

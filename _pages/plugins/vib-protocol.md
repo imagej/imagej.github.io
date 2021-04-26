@@ -7,8 +7,7 @@ artifact: sc.fiji:VIB\_
 
 The VIB Protocol is designed for aligning 3D image stacks. The images we used are confocal images of adult fly brains, but basically the VIB protocol can be used for any 3D images.
 
-Workflow
---------
+## Workflow
 
 -   Load the input images. If they consist of several channels, the channels are splitted.
 -   Label the reference channel
@@ -19,8 +18,7 @@ Workflow
 
 The output of the VIB Protocol is written to a user-specified folder. A description of how to use this plugin can found below, while a more detailed description about how the VIB Protocol works can be found in this [presentation](http://132.187.25.13/home/imagej/fens.pdf), which was shown at the FENS 2008 in Geneve. There exists also a [movie](http://132.187.25.13/home/imagej/fens.avi) which demonstrates nicely the alignment of two brains.
 
-Documentation
--------------
+## Documentation
 
 The VIB Protocol starts with the following dialog:
 

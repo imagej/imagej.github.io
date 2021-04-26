@@ -4,13 +4,11 @@ title: Xlib
 categories: Analysis,Data,Filtering,Fundamental,Matlab,Particle analysis,Plugins,Segmentation,Skeleton
 ---
 
-'Xlib' plugins
---------------
+## 'Xlib' plugins
 
 {% include info-box software='ImageJ / Fiji plugins' name='Xlib' maintainer='Beat Münch' author='Beat Münch' filename='install from ImageJ Updater (Help--&gt;Update--&gt;Manage update sites--&gt;Xlib). Takes repository from https://sites.imagej.net/Xlib' released='01.06.2015' latest-version='09.05.2020' status='maintained actively as of May 2020' category='[Plugins](Category_Plugins)' website='http://wiki.imagej.net/Xlib' %}
 
-Overview of 'Xlib'
-------------------
+## Overview of 'Xlib'
 
 A set of prospective ImageJ plugins is maintained by the group for 3D-Microscopy, Analysis and Modeling of the Laboratory for Concrete and Construction Chemistry at Empa Dübendorf, Switzerland. The plugins include automated imaging tools for filtering, data reconstruction, quantitative data evaluation and data import, as well as tools for interactive segmentation, visualization and management of image data.
 
@@ -64,8 +62,7 @@ The following plugins are included:
 -   ["Segment Phases 3D"](#segment-phases-3d): Engine for basic interactive segmentation of images and volumes
 -   ["View 3D Mask"](#view-3d-mask): Rendering of 3D image masks
 
-Data Analysis
--------------
+## Data Analysis
 
 Plugins of this section offer importing, handling or analysis of special data formats that are unknown to ImageJ, but interesting for special purposes.
 
@@ -106,8 +103,7 @@ Reading the a DMP image with [MATLAB](/scripting/matlab) can be achieved like th
     end
     fclose(fid);
 
-Filtering
----------
+## Filtering
 
 The filtering functions accept one or more images or stacks of images where some filtering techniques are applied to. Generally, the following filtering functions work on 2D images, slice-wise 2D, as well as in true 3D mode if it is applied to image stacks.
 
@@ -561,8 +557,7 @@ After a wavelet decomposition, the wavelet specifications (e.g. "db2" for the Da
 
 The example to the right shows a Haar wavelet decomposition of the "Lenna" image which is well known in the wavelet community. A graphically nice (top center) as well as a reconstructible version (bottom center) is presented. Reconstruction (right) is possible only from the reconstructible version. Since "Lenna" is a colour image and colour images are usually resolved with 8 bits per R,G,B-channel only, the reconstruction is not perfect but still acceptable for this example. In contrast, gray level images result in wavelet decompositions in floating point format and therefore allow perfect reconstructions.
 
-Reconstruction
---------------
+## Reconstruction
 
 Plugins of this section support preprocessing and reconstruction of images from projection data for CT imaging.
 
@@ -588,8 +583,7 @@ Examples of the 2D-to-3D reconstruction are given in the figure above for a stru
 
 <table><tbody><tr class="odd"><td><p>style="vertical-align:top" |{% include thumbnail src='/media/XFig7 3 2.jpg' title='Shaded 3D representation of the reconstructed 3D stacks from the reconstructed volume of the cement paste (left) and the anode membrane (right).'%}</p></td></tr></tbody></table>
 
-Evaluation
-----------
+## Evaluation
 
 The plugins of this section achieve quantitative evaluation on image values and structures. This is an important topic in image processing in different scientific fields. A result from quantitative evaluation is not an image as it is from filtering, but rather a number representing some structural characteristics.
 
@@ -657,8 +651,7 @@ The above figure (top) shows a picture of a 3D volume of cement paste measured b
 
 -   {% include citation last='Münch' first='B' last2='Holzer' first2='L' title='Contradicting Geometrical Concepts in Pore Size Analysis Attained with Electron Microscopy and Mercury Intrusion' journal='Journal of American Ceramics Society' volume='91(12)' pages='4059-4067' year='2008' %}
 
-Editors and Viewers
--------------------
+## Editors and Viewers
 
 This section contains plugins that are designed for user-interactive visualization and data processing on 2D slices and 3D volumes. They therefore don't just support a unique interaction on some image data, but they provide engines supporting an interactive dialog between the computer and the user.
 

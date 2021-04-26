@@ -12,8 +12,7 @@ title: Uploading plugins
 ./Build.sh plugins/Fiji_Plugins.jar
 ```
 
-The graphical way (recommended)
--------------------------------
+## The graphical way (recommended)
 
 You can use the [Fiji Updater](/plugins/updater) to upload new plugins (or new versions thereof). First start {% include bc path='Help | Update Fiji'%}. It will tell you that there are *locally modified files*:
 
@@ -33,8 +32,7 @@ Once everything is ready for upload, just click the button *Upload to Server*.
 
 **Note:** you will need to have an account on [fiji.sc](/about/funding) which is in the group *updaters*, and you will only be offered the upload option by the Updater if you work from a working directory with source files.
 
-Using the command line
-----------------------
+## Using the command line
 
 If you have an ssh account on *fiji.sc* that is in the *uploaders* group, you can upload plugins. To do this, run
 
@@ -53,8 +51,7 @@ If it was a fast-forward (or if Git said "Everything up-to-date"), you are good 
 
 It will refuse to upload a file that has locally-modified dependencies, and list them. To upload those dependencies, too, you can use the *--auto* option of *./bin/update-fiji.py*. **Use with care!**
 
-Internals
----------
+## Internals
 
 The original [Fiji Updater](/plugins/updater) was very limited; it only allowed to download new versions of files, and it did not have an option to determine whether a local version was previously installed via the Updater or not.
 
@@ -86,8 +83,7 @@ The new database is stored in the file `db.xml.gz`, which again is a static file
 
 This database not only stores the same information as `current.txt`, it can contain arbitrary file names (even including spaces, which is not possible with the former database), store descriptions of the files, have information about the platform, categories and most importantly, it has the checksums of all known previous versions so that we can finally decide whether it is safe to update files or whether they are locally modified and the user should state **explicitly** that it is safe to update.
 
-File organization
------------------
+## File organization
 
 Different file types are stored at different locations in an ImageJ/Fiji installation, where they are picked up by the updater (see the [source code](https://github.com/imagej/imagej-updater/blob/imagej-updater-0.8.1/src/main/java/net/imagej/updater/Checksummer.java#L439-L451) for technical details):
 
@@ -157,8 +153,7 @@ The updater will only pick up files stored at the appropriate location according
 
 Further information is in this [thread on fiji-devel](https://groups.google.com/forum/#!topic/fiji-devel/QbY4XnLC-wE)
 
-The actual files
-----------------
+## The actual files
 
 The files corresponding to the database entries are also stored as flat files of the form
 

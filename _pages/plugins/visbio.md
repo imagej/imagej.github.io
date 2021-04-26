@@ -13,13 +13,11 @@ title: VisBio Fiji plugin
 {% endcapture %}
 {% include info-box name='VisBio- orthogonal projection plugin' software='ImageJ - Fiji - ImgLib' author='Curtis Rueden, Melissa Linkert, Eric Kjellman' maintainer=maintainer filename='visbio.jar' source=source latest-version='Jan 2014' website='Fiji' status='Beta. Under development, but stable enough for real work.' %}
 
-What is the VisBio Plugin?
---------------------------
+## What is the VisBio Plugin?
 
 The VisBio Ortho Stack plugin is a simple 3D visualization plugin for Fiji that displays a stack of image planes in a parallel or perspective projection along the z plane. The plugin can control several common operations, such as specifying distance between cross sections, rotating and zooming the RD view, and saving a snapshot of the current image to a file.
 
-Updating the VisBio Plugin
---------------------------
+## Updating the VisBio Plugin
 
 The VisBio Plugin is located within the LOCI updates. To learn more on how to update plugins, visit the update fiji page. To update the VisBio Plugin:
 
@@ -29,8 +27,7 @@ The VisBio Plugin is located within the LOCI updates. To learn more on how to up
 -   Close "Manage Update Sites" and select "Apply changes"
 -   Restart ImageJ and the update will be in effect
 
-Using VisBio
-------------
+## Using VisBio
 
 To use VisBio you must first import an Image Sequence. To do so, Select {% include bc path='File | Import | Image Sequence'%} and select the file of images you wish to use.
 

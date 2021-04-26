@@ -7,8 +7,7 @@ From Monday, December 3, 2018 through Friday, December 7, 2018, the [Max Planck 
 
 Gitter channel: https://gitter.im/juglab/Hack1812
 
-Topics / Technical Discussions
-------------------------------
+## Topics / Technical Discussions
 
 ### TensorFlow (Debo, Curtis, Benny)
 

@@ -31,8 +31,7 @@ If in doubt about the location of the repository, just call {% include bc path='
 
 Once the developer has identified which plugin or library she wants to modify or develop further, it is very easy to build and contribute by following [this tutorial](/develop/improving-the-code).
 
-Example
--------
+## Example
 
 Let's assume that we want to develop the Skeletonize3D plugin. Its source code is maintained at https://github.com/fiji/Skeletonize3D. The first step is to clone the source code:
 

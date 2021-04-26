@@ -4,15 +4,13 @@ title: Celsius to fahrenheit
 categories: Plugins,Scripting,Unmaintained
 ---
 
-Purpose
--------
+## Purpose
 
 An example [Clojure](/scripting/clojure) script illustrating how to use a GenericDialog and how to show information to the user.
 
 The example is taken from the [Clojure](http://clojure.org) website.
 
-Code
-----
+## Code
 
     ;; Example taken from Clojure website
 
@@ -67,8 +65,7 @@ Code
     ; Execute the function
     (celsius)
 
-See also
---------
+## See also
 
 -   [Clojure Scripting](/scripting/clojure).
 

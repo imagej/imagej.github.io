@@ -11,8 +11,7 @@ After clicking on {% include bc path='Plugins | Utilities | Make Fiji Package'%}
 
 After both are specified, the plugin does all the rest, reporting its progress in the status bar.
 
-Files included in the archive
------------------------------
+## Files included in the archive
 
 The packager includes files from the following subdirectories of *Fiji.app/*:
 

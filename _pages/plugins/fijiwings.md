@@ -37,20 +37,17 @@ If you would like to reference FijiWings in a publication, you can cite:
 
 -   {% include publication content='FijiWings' %}
 
-Tutorials
----------
+## Tutorials
 
 {% include youtube url='https://www.youtube.com/embed/kkwbRaN51ww'%} {% include youtube url='https://www.youtube.com/embed/nlYZyJxV5Bw'%} {% include youtube url='https://www.youtube.com/embed/YDZHy\_5mPko'%}
 
 -   [All FijiWings videos](http://www.youtube.com/user/Fijiwingsadmin/videos)
 
-Technical Documentation
------------------------
+## Technical Documentation
 
 see &lt;http://sourceforge.net/projects/fijiwings&gt;
 
-Authors
--------
+## Authors
 
 These macros were written by Alexander Dobens with feedback and direction from Leonard Dobens.
 

@@ -9,8 +9,7 @@ These functions can be found under `Calibration/Transformations` in the main men
 
 <img src="/media/BigStitcher registration menu.png" width="700"/>
 
-Registration Explorer
----------------------
+## Registration Explorer
 
 Clicking **Registration Explorer (on/off)** will open up a new window listing all transformations that are currently applied to the selected view (groups).
 
@@ -30,8 +29,7 @@ You have a few options of modifying the transformations here:
 
 If the BigDataViewer is open, you can immediately see the effects of your changes.
 
-Specify Calibration
--------------------
+## Specify Calibration
 
 Using **Specify Calibration**, you can change the voxel distance and length unit for the selected views.
 
@@ -39,8 +37,7 @@ Using **Specify Calibration**, you can change the voxel distance and length unit
 
 {% include warning-box content='As mentioned in the dialog, this will only change the metadata and leave computed registrations (including the scaling to isotropic x,y and z-resolution) as-is. Use **Apply Transformation(s)** and **Apply on top of Calibration** to update the isotropy scaling. This will remove other transformations however, so please make sure that the calibration is set correctly **before** starting any registration/stitching.' %}
 
-Apply Transformation(s)
------------------------
+## Apply Transformation(s)
 
 The **Apply Transformation(s)** option gives you a variety of possibilities of adding new transformations for the selected images.
 
@@ -76,8 +73,7 @@ For **Rigid models**, you can specify how to define the transformation(s):
 
 <img src="/media/BigStitcher registration rotation.png" width="500"/>
 
-Bake BDV manual transform
--------------------------
+## Bake BDV manual transform
 
 The BigDataViewer offers its own functionality for transforming views or view groups. Clicking {% include key content='t' %} in the BigDataViewer window will start the transformation. Now, you can transform the views via clicking and dragging the mouse. Click {% include key content='t' %} again to apply the transformation or {% include key content='Esc' %} to cancel the transformation.
 
@@ -87,15 +83,13 @@ Normally, the manual transformations from BDV are not propagated to BigStitcher/
 
 The **Bake BDV manual transform** will take the manual transformations for the selected views from BigDataViewer and append them to the dataset's registrations.
 
-Remove Transformation
----------------------
+## Remove Transformation
 
 Under this menu item, you have the option to remove **Latest/Newest Transformation** or the **First/Oldest Transformation** (typically the **calibration**) for all selected views.
 
 As every registration step adds a new transformation, you can use **Remove Latest/Newest Transformation** to **un-do** a bad registration (note that there is no re-do, it will be gone forever, unless you saved before).
 
-Interactively Reorient Sample
------------------------------
+## Interactively Reorient Sample
 
 Clicking this will open up a new window that listens for the **global transformation** of the BigDataViewer. You can then **Apply the Transformation** from BDV to all selected views. This is a convenient way of interactively re-orienting the sample, e.g. to be aligned to the coordinate system axes, by simply rotating it in the BigDataViewer.
 

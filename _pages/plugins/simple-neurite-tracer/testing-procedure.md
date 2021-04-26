@@ -9,8 +9,7 @@ categories: tutorials
 
 This is a set of instructions to follow to test as much of the code as possible in [Simple Neurite Tracer](/plugins/snt). It does not give complete coverage, but following this before each new release should stop the more obvious problems from getting through. The coverage results for this procedure with VIB at 6840872c6a492e31caa453a6776d1e9fac26f58d are [here](https://fiji.sc/~longair/coverage-VIB-6840872c6a492e31caa453a6776d1e9fac26f58d/_files/2b.html).
 
-Basic Tracing
--------------
+## Basic Tracing
 
 -   Open example-for-tracing.tif
 -   Run "Simple Neurite Tracer", selecting "Create new 3D Viewer" and "Use three pane view"
@@ -81,8 +80,7 @@ Basic Tracing
 -   Click "Cancel Fill"
 -   Move on to the next section
 
-Saving and Loading
-------------------
+## Saving and Loading
 
 -   Click "Export as CSV"
 -   Check that the CSV file has been created properly
@@ -103,15 +101,13 @@ Saving and Loading
 -   Click "No", and select it manually.
 -   Quit the tracer and try again, this time loading the default when it offers.
 
-Test Different 3D Views
------------------------
+## Test Different 3D Views
 
 -   Load up the traces file, make sure that some paths are fitted, some not
 -   Try each of the View Paths (3D) options, check they all work
 -   Change back to surface reconstructions
 
-Reuse an existing 3D viewer
----------------------------
+## Reuse an existing 3D viewer
 
 -   Select "Show only selected paths", pick two fitted paths
 -   Change the fitted path colour to something different from the default (e.g. yellow)
@@ -121,16 +117,14 @@ Reuse an existing 3D viewer
 -   Add a new path, check that the existing yellow reconstructions are still there
 -   Quit the tracer and close the 3D Viewer
 
-Load Labels
------------
+## Load Labels
 
 -   Load up an image which has a corresponding labels file
 -   Click "load labels", select the right labels file
 -   Hover the mouse over different regions and check that the ImageJ status updates to tell you the region's name
 -   Quit the tracer
 
-Show Correspondences To Traces
-------------------------------
+## Show Correspondences To Traces
 
 -   Load a file for which you have a traces file
 -   Start the tracer
@@ -139,7 +133,6 @@ Show Correspondences To Traces
 -   Change 3D view to "lines" and check that the correspondences are shown correctly
 -   Quit the tracer
 
-SWC Import
-----------
+## SWC Import
 
 -   Load an image file for which you have a corresponding SWC file

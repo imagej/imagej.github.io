@@ -18,8 +18,7 @@ categories: Analysis
 {% endcapture %}
 {% include info-box name='Hough Circle Transform' software='plugin' update-site='UCB Vision Sciences' author=author maintainer=maintainer source=source released='February 4<sup>th</sup>, 2017' latest-version='September 21<sup>st</sup>, 2018 (v1.0.0)' status='stable, active' category='[Analysis](Category_Analysis), [Feature Extraction](Category_Feature_Extraction)' %}
 
-Introduction
-------------
+## Introduction
 
 A {% include wikipedia title='Circle Hough Transform' text='Hough circle transform'%} is an image transform that allows for circular objects to be extracted from an image, even if the circle is incomplete. The transform is also selective for circles, and will generally ignore elongated ellipses. The transform effectively searches for objects with a high degree of radial symmetry, with each degree of symmetry receiving one "vote" in the search space. By searching a 3D Hough search space, the transform can measure the centroid and radius of each circlular object in an image.
 
@@ -29,8 +28,7 @@ A {% include wikipedia title='Circle Hough Transform' text='Hough circle transfo
 
 The method works by transforming an image around in a circle. Each time a transformed pixel with an intensity greater than zero lands on a Cartesian coordinate, that coordinate gets one vote. As the image continues to be transformed in a circle of a given radius, if a circle in the image has the same radius, then votes will accumulate at the centroid of this circle. Therefore, by finding the maxima in the transform (points with the highest number of votes) you can find the centroid of circles within the image. A Hough circle transform can also be used to find circles of an unknown radius by searching a 3D transform space, where the the third dimension is the range of radii to be tested.
 
-Image Processing Workflow
--------------------------
+## Image Processing Workflow
 
 The Hough circle transform finds circles based on the rotational symmetry of the perimeter. Therefore, the data needs to be converted to this format for the transform to work.
 
@@ -54,8 +52,7 @@ Now you are ready to run the Hough transform (see below for detailed information
 
 If the circle found is correct, then gradually reduce the threshold until all the circles in the image are found. This will give you the upper threshold bound. Continue to decrease the threshold until an errant circle is detected, this will give you the lower threshold bound. Set the threshold between the upper and lower bounds, and then run the transform on the full data set.
 
-Running the Hough Circle Transform Plugin
------------------------------------------
+## Running the Hough Circle Transform Plugin
 
 The plugin runs on the current active image, and can also process stacks, but it cannot handle hyperstacks. The plugin is also recordable for macro implementation, and multi-threaded to fast searching on the 3D Hough space. The plugin can be cancelled at any time by either pressing the "Cancel" button in the GUI or pressing the "Escape" key.
 
@@ -222,8 +219,7 @@ This output is identical to the radius output (see above), however the pixel int
 
 If no circles were found in a frame, than that frame is excluded from the results table.
 
-Installing the Plugin
----------------------
+## Installing the Plugin
 
 The Hough Circle Transform plugin is part of the [UCB Vision Sciences](UCB_Vision_Sciences) library. To install it, you just need to [ add](/update-sites/following#add-update-sites) the UCB Vision Sciences update site:
 
@@ -239,22 +235,19 @@ You should now find the plugin under the sub-menu {% include bc path='Plugins | 
 
 NOTE: Hough Circle Transform is only one of the plugins included in the [UCB Vision Sciences](UCB_Vision_Sciences) suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
 
-Acknowledgements
-----------------
+## Acknowledgements
 
 This plugin is a modified version of the Hough circle transform implemented by [Hemerson Pistori and Eduardo Rocha Costa](/ij/plugins/hough-circles.html). The transform algorithm was based off of an original implementation by [Mark Schulze](http://www.markschulze.net/).
 
 This plugin was developed as part of the University of California, Berkeley Vision Sciences core grant NIH P30EY003176.
 
-Bug Report
-----------
+## Bug Report
 
 April 5, 2018 - Fixed bug where the clear radius ratio was ignored.
 
 September 21, 2018 - Fixed bug where repeated calls to the plugin would result in a memory leak.
 
-License
--------
+## License
 
 This program is **free software**; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt](http://www.gnu.org/licenses/gpl.txt)).
 

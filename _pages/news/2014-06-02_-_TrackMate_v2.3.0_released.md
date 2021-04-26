@@ -6,8 +6,7 @@ categories: News
 
 We just released a new minor version of [TrackMate](/plugins/trackmate), pressed by the many bugs that were found and appeared between this version and the [previous one](/news/2014-03-19_-_TrackMate_v2.2.0_released). It focuses mainly on **interoperability** and of course **bugfixes**.
 
-Highlights
-----------
+## Highlights
 
 -   It is possible to manually color spots and edges. The colors attributed are saved and retrieved from XML.
 
@@ -35,8 +34,7 @@ We would like to express our thanks to {%- include person id='Fab14' -%} for his
 
 ![](/media/plugins/trackmate ManualColorScale.png "TrackMate_ManualColorScale.png")
 
-Minor improvements
-------------------
+## Minor improvements
 
 -   The table in the InfoPane of TrackScheme displays the full spot name.
 
@@ -48,8 +46,7 @@ Minor improvements
 
 -   Two new track feature analyzers allow filtering tracks by their spots quality or by their longest gap.
 
-Bugfixes
---------
+## Bugfixes
 
 -   Fix a potential (and potentially long standing) bug with numerical input on machine using locales different from the US locale.
 

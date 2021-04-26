@@ -19,8 +19,7 @@ PLEASE NOTE: you also need to enable the "IBMP-CNRS" update site that is already
 Description
 ===========
 
-Macros and Plugins in the IMCF repository
------------------------------------------
+## Macros and Plugins in the IMCF repository
 
 Auto Run  
 Our custom auto run macros.

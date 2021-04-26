@@ -26,8 +26,7 @@ of [LOCI](/orgs/loci).
 He is the principal architect of [ImageJ2](/software/imagej2),
 and the current maintainer of the [Fiji](/fiji) distribution of ImageJ.
 
-What is Curtis working on?
---------------------------
+## What is Curtis working on?
 
 ### Primary projects
 
@@ -72,8 +71,7 @@ Finally, I have the following continuous priorities:
 
 On average, I spend \~0-2 hours per day on my primary projects above. The rest is spent on these constant priorities.
 
-Recommended development tools
------------------------------
+## Recommended development tools
 
 So you want to be an effective software developer? Use tools!
 

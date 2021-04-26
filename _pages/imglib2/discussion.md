@@ -5,8 +5,7 @@ section: Development:ImgLib2:Development
 categories: ImgLib
 ---
 
-2011-03-16
-----------
+## 2011-03-16
 
 Tobias and Saalfeld found it a great idea to create this discussion page that, if ever possible, will be filled with the daily conceptual discussions and results. That way, all interested people can contribute and keep track on what we're trying to tackle next.
 
@@ -83,8 +82,7 @@ Why not just call it "org.imglib" then? Wouldn't clash with "mpicbg.imglib" of i
   
 Because imglib.org is registered by somebody else already. {%- include person id='axtimwalde' -%} 14:38, 24 March 2011 (CET)
 
-2011-03-21
-----------
+## 2011-03-21
 
 ### Efficient access for RandomAccessibleViews
 
@@ -176,8 +174,7 @@ If we need to access the blue region, we wrap a out-of-bounds `RandomAccess` on 
 
 A view hierarchy may consist of an arbitrary sequence of views that do coordinate transforms and extending views. Depending on interval we want to access, sometimes the extending views "disappear". In this case, transforms before and after the extending view can be concatenated and simplified if possible.
 
-2011-03-24
-----------
+## 2011-03-24
 
 ### Transformation Hierarchies
 
@@ -232,8 +229,7 @@ Note, that `TranslationTransform` cannot extend `RigidTransform` (because otherw
 
 We add an abstract class hierarchy between the interfaces and the transform classes. The abstract classes do not implement `Concatenable`, so at this level extension is still possible.
 
-2011-03-25
-----------
+## 2011-03-25
 
 ### Get and Set Strategy for different dimensionalities
 
@@ -263,8 +259,7 @@ We discussed this topic again and found that it is always bad practice to actual
 
 for the reason that in the latter case, the loop would require Localizable.numDimensions() to be called otherwise. There will be many situations where this cannot be inlined and thus be slower than using a temporary *n* in the executing class.
 
-2011-05-02
-----------
+## 2011-05-02
 
 ### We discussed the ExtendedRandomAccessibleInterval:
 
@@ -293,8 +288,7 @@ just for the case that somebody wants to implement it for some reason and does n
 
 {%- include person id='StephanPreibisch' -%} 12:24, 4 May 2011 (CEST)
 
-2011-05-04
-----------
+## 2011-05-04
 
 ### Localizable and RealLocalizable Interface get()-methods
 
@@ -312,8 +306,7 @@ should we maybe change it as well to intPosition(), longPosition, etc?
 
 Tobias pointed out that we should not as it is not clear if it is a getter or setter when passing an array.
 
-2011-05-12
-----------
+## 2011-05-12
 
 ### Positionables
 
@@ -349,8 +342,7 @@ What about having a 1D `RandomAccess` instead as we have done in `PlanarImg` for
   
 I like this way of realizing it, maybe we could also implement it on ImgFactory level. If a Img implements RandomAccessible1D, the factory could also have a special create( long size ) method (in e.g. RandomAccessible1DFactory) which returns for example &lt;I extends ArrayImg&lt;T,?&gt; & RandomAccessible1D&gt;, so no unchecked casts are necessary. {%- include person id='StephanPreibisch' -%} 16:15, 12 May 2011 (CEST)
 
-2011-11-28
-----------
+## 2011-11-28
 
 ### RealViews
 
@@ -413,8 +405,7 @@ Similar to what is now in `Views` there would be static methods to construct vie
 
 One would wrap all of the source images into `InterpolatedRandomAccessible` and use RealViews as required to match the calibration of the target image. Then to carry out some operation, one would iterate through the target image and fetch the (possibly interpolated) values from the corresponding locations in the respective source views.
 
-2012-01-28
-----------
+## 2012-01-28
 
 We have discussed with Tobias that two additional integer views would be very helpful:
 
@@ -423,8 +414,7 @@ We have discussed with Tobias that two additional integer views would be very he
 
 When done properly this has the potential to replace or at least simplify PlanarImg like containers since they could be expressed as a composition of multiple ArrayImg-s. {%- include person id='axtimwalde' -%} 16:11, 18 January 2012 (CET)
 
-2012-11-21
-----------
+## 2012-11-21
 
 Another useful integer view comes to mind:
 

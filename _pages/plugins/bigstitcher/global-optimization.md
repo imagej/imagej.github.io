@@ -39,8 +39,7 @@ Expert Mode
 
 If you click on {% include bc path='Optimize Globally And Apply Shift|Expert Mode'%} or proceed to the global optimization from the **Stitching wizard** in **expert mode**, you will be asked for a few extra parameters before the your views are aligned.
 
-Optimization strategy and convergence criteria
-----------------------------------------------
+## Optimization strategy and convergence criteria
 
 In the first dialog, you will be asked for the optimization strategy to apply:
 
@@ -69,8 +68,7 @@ Since the processing time for the global optimization is comparatively short and
 
 We found, however, that the default values of 3.5px absolute error and 2.5 relative error work well in many cases. To give the user a bit more flexibility without confusing them with setting the values directly, we added "STRICT" (default thresholds) and "RELAXED" (default thresholds x2) presets (see above).
 
-Expert view grouping
---------------------
+## Expert view grouping
 
 In the next two dialogs, you will be asked which views to include in the global optimization. They are the same as in [BigStitcher\_Advanced\_stitching](/plugins/bigstitcher/advanced-stitching).
 
@@ -84,8 +82,7 @@ In the next two dialogs, you will be asked which views to include in the global 
 
 {% include warning-box content='Theoretically, you can use the second dialog to align arbitrary groupings of the data, e.g. compare Channels but group Tiles for chromatic shift correction. Note that you have to have done the *pairwise shift calculation* for the same grouping of the data, otherwise, we can find no pairwise shifts to use in the global optimization' %}
 
-Fixing views
-------------
+## Fixing views
 
 Finally, you will be asked which view groups to fix in each subset that you chose to *treat individually*. The selected groups will be left where they are and all others will be aligned relative to them.
 

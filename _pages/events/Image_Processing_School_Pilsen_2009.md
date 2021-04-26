@@ -16,8 +16,7 @@ Schedule (tentative):
 | Session 3: 14:00 - 15:30 | [Fiji scripting: Python](#Fiji_scripting:_Python)                                                             | [TrakEM2](#TrakEM2)                           | [Fiji scripting: advanced Python](#Fiji_scripting:_advanced_Python) |                                          |
 | Session 4: 16:00 - 17:30 | [Show your images!](#work-sessions)                                                                           | [Work session](#work-sessions)                | [Work session](#work-sessions)                                      |                                          |
 
-Wednesday
----------
+## Wednesday
 
 ### Welcome and Introduction
 
@@ -41,8 +40,7 @@ Introduction to Fiji scripting in Python
 
 Lead instructor: [Johannes Schindelin](Johannes_Schindelin)
 
-Thursday
---------
+## Thursday
 
 ### Quantitative Imaging
 
@@ -66,8 +64,7 @@ Lead instructor: [Dan White](/users/chalkie666)
 
 Lead instructor: [Albert Cardona](Albert_Cardona)
 
-Friday
-------
+## Friday
 
 ### Segmentation
 
@@ -98,8 +95,7 @@ Introduction to Fiji programming in Java (this will be an add-on to the [advance
 
 Lead instructor: [Johannes Schindelin](Johannes_Schindelin)
 
-Saturday
---------
+## Saturday
 
 ### Registration
 
@@ -107,7 +103,6 @@ Image registration: rigid, affine, elastic, maximal warping... ([Register Virtua
 
 Lead instructor: {%- include person id='iarganda' -%}
 
-Work sessions
--------------
+## Work sessions
 
 At the end of every day, there is time to apply what you learnt and go beyond that. You can process your own images and discuss results and methods with the instructors.

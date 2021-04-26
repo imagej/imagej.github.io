@@ -8,15 +8,13 @@ categories: News,ImageJ2,Hackathons,Ops
 
 From Sunday, September 14, 2014 through Friday, September 19, 2014, LOCI in Madison hosted Christian Dietz and Brian Northan, two developers of [ImageJ Ops](/libs/imagej-ops), for an exciting hackathon. [Christian Dietz](http://www.informatik.uni-konstanz.de/en/berthold/members/christian-dietz/) is a PhD student in computer science at the University of Konstanz and the lead developer of the [KNIME Image Processing](http://knime.imagej.net/) project; [Brian Northan](https://www.linkedin.com/pub/brian-northan/6/860/3a7) is a freelance contract research and development engineer specializing in scientific image and signal processing.
 
-Overview
---------
+## Overview
 
 ImageJ Ops is an extensible Java framework for algorithms, particularly image processing algorithms. Ops seeks to be a unifying library for scientific image processing. See the [Motivation](https://github.com/imagej/imagej-ops/wiki/Motivation) page on the Ops wiki for details.
 
 [KNIME](/software/knime) is an open source data analytics, reporting and integration platform, which integrates various components for machine learning and data mining through its modular data pipelining concept. The [**KN**IME **I**mage **P**rocessing](http://knime.imagej.net/) extension, KNIP, provides nodes for working with images, and is built on the ImageJ Ops library. Ops makes it possible to execute the image processing algorithm in many contexts, including from within [ImageJ](/about) itself, from [OMERO](/software/omero), [KNIME](/software/knime), [CellProfiler](/software/cellprofiler) and beyond.
 
-Accomplishments
----------------
+## Accomplishments
 
 This hackathon focused on the [ImageJ Ops](/libs/imagej-ops) library, adding support for key image processing operations, as well as improving the framework itself. Achievements from the hackathon include:
 
@@ -30,8 +28,7 @@ All thresholding algorithms from [ImageJ 1.x](/software/imagej1) have been porte
 
 <table><tbody><tr class="odd"><td style="vertical-align: top"><ul><li>huang</li><li>ij1</li><li>intermodes</li></ul></td><td><ul><li>isodata</li><li>li</li><li>maxEntropy</li></ul></td><td><ul><li>maxlikelihood</li><li>mean</li><li>minerror</li></ul></td><td><ul><li>minimum</li><li>moments</li><li>otsu</li></ul></td><td><ul><li>percentile</li><li>renyientropy</li><li>shanbhag</li></ul></td><td><ul><li>triangle</li><li>yen</li></ul></td></tr></tbody></table>
 
-Progress and future directions
-------------------------------
+## Progress and future directions
 
 We also made great progress on several new lines of development:
 
@@ -41,8 +38,7 @@ We also made great progress on several new lines of development:
 -   Conditions ([\#73](https://github.com/imagej/imagej-ops/pull/73))
 -   Features and descriptors ([feature-service branch](https://github.com/imagej/imagej-ops/compare/feature-service))
 
-Future directions
------------------
+## Future directions
 
 The Ops development plan and timeline is now [codified on GitHub](https://github.com/imagej/imagej-ops/milestones). Major milestones include:
 

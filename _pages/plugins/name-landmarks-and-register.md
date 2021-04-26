@@ -18,8 +18,7 @@ Registration is done to a template image, so if you wish to register a image to 
 -   Set the template image to be the default template image
 -   For each image for registration, mark as many common points as you can, save the points file and select one of the registration options
 
-Marking Points in a New Image
------------------------------
+## Marking Points in a New Image
 
 To make points in a new image, open that image and start the plugin *Name Landmarks and Register*. You should see a dialog something like this:
 

@@ -6,13 +6,11 @@ categories: news
 
 The first DAIS Learnathon took place from June 18 until June 24 2017.
 
-Schedule
---------
+## Schedule
 
 See [this page](https://indico.mpi-cbg.de/event/50/other-view?view=standard)!
 
-Setting up your system
-----------------------
+## Setting up your system
 
 Check if you have this set up:
 
@@ -44,8 +42,7 @@ This can happen later:
 
 -   imglyb (forget that for now)
 
-Monday
-------
+## Monday
 
 Git repos to clone:
 
@@ -93,8 +90,7 @@ This is, from my (Hanslovsky) point of view, the best way to create a new git re
 -   Commit the stage files with commit message: `git commit -m 'Add pom.xml'`
 -   Push your commit: `git push --set-upstream origin master` (you can ommit `--set-upstream origin master` in future commits)
 
-Tuesday
--------
+## Tuesday
 
 Git repos to clone:
 
@@ -111,8 +107,7 @@ Optional practical for you to do on your own:
 
 -   [`https://github.com/imglib/imglib2-advanced-workshop`](https://github.com/imglib/imglib2-advanced-workshop)
 
-Wednesday
----------
+## Wednesday
 
 Git repos to clone:
 
@@ -146,8 +141,7 @@ Git repos to clone:
     -   Please follow the [installation instructions](https://gist.github.com/hanslovsky/508fb1ff7668f1e53bb769e6dccc789c) and install imglyb through conda.
     -   If you are a Windows user, please pair up with a OSX or Linux user, or download the [VirtualBox Ubuntu appliance](https://www.dropbox.com/s/gxqqzbxaff6uowe/Ubuntu%2017.04%20-%20imglyb.ova). We also have (at least) one MacBook that is available for use during that session. First come first serve!
 
-Thursday
---------
+## Thursday
 
 ### imglib2-algorithm
 
@@ -172,8 +166,7 @@ The jupyter notebooks in the *imglyb-learnathon* repository cover basic and adva
     -   [`https://github.com/hanslovsky/imagey`](https://github.com/hanslovsky/imagey)
     -   [`https://github.com/hanslovsky/imglyb-learnathon`](https://github.com/hanslovsky/imglyb-learnathon)
 
-Friday
-------
+## Friday
 
 Git repos to clone:
 
@@ -191,5 +184,4 @@ Awesome stuff that happened too:
 -   [Headless with Fiji](/scripting/headless) (ignoring legacy problems)
 -   ImgLib2 ROIs (https://github.com/imglib/imglib2-roi/tree/shape-rois), a preview to what will/might come soon!
 
-Saturday
---------
+## Saturday

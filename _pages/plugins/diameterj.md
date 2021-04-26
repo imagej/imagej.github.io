@@ -170,8 +170,7 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 
 <table><tbody><tr class="odd"><td><p><big> <strong>Download and install <a href="/ij/download.html">ImageJ 1.48</a> or newer or <a href="/downloads">Fiji</a> (any version)</strong> </big></p></td><td></td><td></td></tr><tr class="even"><td><p><strong>Windows</strong></p></td><td><p><strong>OSX</strong></p></td><td><p><strong>Linux</strong></p></td></tr><tr class="odd"><td><ol><li>Download and unzip the DiameterJ files (Find in "/develop/source" above) and move or copy the three folders into the plugins folder of ImageJ.</li><li>That should be in directory:<dl><dt></dt><dd>"C:\Program Files\ImageJ\plugins"<dl><dt></dt><dd>Or</dd></dl></dd><dd>"C:\Program Files (x86)\ImageJ\plugins"<ul><li>DiameterJ will work with x86 (32-bit) or x64 (64-bit) versions of Java/ImageJ</li></ul></dd></dl></li><li>Restart ImageJ</li></ol></td><td><ol><li>Follow instructions <a href="/ij/docs/install/osx.html#dandd">Here</a> or <a href="/platforms/macos">Here</a> for installation of ImageJ/Fiji on OSX</li></ol></td><td><ol><li>Download and unzip the DiameterJ files (Find in "File" in the Info box above)</li><li>Move or copy the three folders into the plugins folder of the directory where you have placed ImageJ.<p>:*DiameterJ will work with x86 (32-bit) or x64 (64-bit) versions of Java/ImageJ</p></li><li>Restart ImageJ</li></ol></td></tr></tbody></table>
 
-FAQs
-----
+## FAQs
 
 :\# Q: When running either segmentation algorithm an error occurs that says either "Unrecognized command: "Auto Threshold"" or "Unrecognized command: "Auto Threshold..""
 
@@ -207,8 +206,7 @@ FAQs
 
 :\#:\* A: *The algorithms included by default with DiameterJ rely heavily on uniformity of fiber color and/or a dark background. Below are four good examples and four examples that work poorly for image segmentation with the default algorithms. Keep in mind there are many more segmentation algorithms than I have included with DiameterJ in both Fiji and ImageJ. See the [Complementary Tools](/plugins/diameterj#complementary-tools) or [Image Segmentation](/plugins/diameterj#image-segmentation) sections of this work for a few of the options available.* <img src="/media/Good vs Bad Seg.PNG" title="fig:Example images that segment well and that do not segment well with DiameterJ&#39;s default segmentation algorithms" width="750" alt="Example images that segment well and that do not segment well with DiameterJ&#39;s default segmentation algorithms" />
 
-Complementary Tools
--------------------
+## Complementary Tools
 
 DiameterJ[20] works with several plugins of ImageJ/Fiji. First and foremost [OrientationJ](http://bigwww.epfl.ch/demo/orientation/). Also, other great tools that we have incorporated are [AnalyzeSkeleton](/plugins/analyze-skeleton) function from Ignacio Arganda-Carreras, as well as [Skeleton Intersections](http://jvsmicroscope.uta.fi/?q=skeleton_intersections) from Gabriel Landini's morphology plugin. We'd also like to give a big thank you to the [Statistical Region Merging](/plugins/statistical-region-merging) algorithm which makes our segmentations work a lot better. Speaking of which, we include a lot of segmentation algorithms that we aren't nearly talented enough to of developed ourselves. In particular those techniques outlined above in the [Segmentation](/plugins/diameterj#segmentation) section of this article and can be found in the links below.
 
@@ -216,8 +214,7 @@ We'd also like to say that DiameterJ plays nicely with the output from any other
 
 Finally, we'd like to encourage everyone to do peak fitting of the diameter histograms that DiameterJ produces. To do this any peak fitting tool can be used. A free resource for Windows is [Fityk](http://fityk.nieto.pl/) however, we don't recommend any software in particular.
 
-Future Development
-------------------
+## Future Development
 
 :\# Reducing bias of the Histogram intersection correction by directionally subtracting fiber intersections rather than blanket subtraction within a given intersection radius
 
@@ -239,8 +236,7 @@ Future Development
 
 Help is welcome in any/all of these improvements!
 
-References
-----------
+## References
 
 [1] Hotaling NA, Bharti K, Kriel H, Simon Jr. CG. DiameterJ: A validated open source nanofiber diameter measurement tool. Biomaterials 2015;61:327–38. <doi:10.1016/j.biomaterials.2015.05.015> http://www.sciencedirect.com/science/article/pii/S0142961215004652
 
@@ -276,8 +272,7 @@ References
 [16] Liu. Scale space approach to directional analysis of images. Appl. Opt. (1991) vol. 30 (11) pp. 1369-1373
 
 
-External Links
---------------
+## External Links
 
 -   [OrientationJ](http://bigwww.epfl.ch/demo/orientation/)
 -   [NIST](http://www.nist.gov/)

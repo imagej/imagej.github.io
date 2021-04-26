@@ -57,8 +57,7 @@ Cherry-picking comes in handy if you fix something in a topic branch which needs
 
 In this example, after fixing the bug and committing the bug fix, you switched to the branch *master*, cherry-picked the most recent commit on the branch *topic234* and then switched back to the branch *topic234*.
 
-Resolving conflicts
--------------------
+## Resolving conflicts
 
 Note: when cherry-picking commits, conflicts can arise. These are marked with conflict markers ("&lt;&lt;&lt;" ... "===" ... "&gt;&gt;&gt;").
 
@@ -151,8 +150,7 @@ Note: as with cherry-picking and merging, conflicts can arise. You will [have to
 
 will pick up the changes, apply the correct commit author and message, and fire up an editor for you to verify the contents. As before, save and exit, and the rebase will continue.
 
-Aborting an interactive rebase
-------------------------------
+## Aborting an interactive rebase
 
 Sometimes you realize by the sheer size of the list of commits that you made a mistake, and do not want to rebase after all. As with "git commit", just delete the *complete* list, and the interactive rebase will be aborted.
 
@@ -162,8 +160,7 @@ Even at later stages, e.g. when you have a huge conflict and would prefer to go 
 
 and Git will bring you back to where you were before you started the rebase.
 
-Reflogs and rebases
--------------------
+## Reflogs and rebases
 
 A rebase will work on a *detached* HEAD. In other words, while the rebase is in progress, no branch will be updated, but a temporary branch will grow, and only when the rebase is finished successfully, the originally current branch will be updated.
 

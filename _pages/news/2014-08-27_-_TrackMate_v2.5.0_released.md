@@ -8,8 +8,7 @@ We are happy to announce [TrackMate](/plugins/trackmate) version 2.5.0, but aren
 
 This version brings mainly a complete rewrite of the [LAP tracker](/plugins/trackmate/algorithms#lap-trackers), that brings major improvement in speed performance and memory usage, as well as several enhancement in the UI of [TrackScheme](/plugins/trackmate/trackscheme).
 
-The new LAP tracker
--------------------
+## The new LAP tracker
 
 We completely rewrote the LAP tracker and this version ships it. It gives (almost exactly) the same results and has the same settings that the former version, but exploits the sparse structure of the cost matrices we typically have in bioimaging to achieve a much better memory usage. Let's quickly review how.
 
@@ -25,15 +24,13 @@ We have a new version of our tracker which is 10 times faster and takes 40 times
 
 There are tiny differences with the previous version, notably in the way cost thresholds are handled, that makes the new tracker give results that are not exactly the same as the old version. For instance, on a medium-size model, 99.73% of the links created are common to the two trackers. For this reason we did not discard the old version of the tracker, but renamed it with the prefix "old-". You can still find it in TrackMate, and it will be correctly set if you load from an XML file.
 
-TrackScheme UI improvement
---------------------------
+## TrackScheme UI improvement
 
 [TrackScheme](/plugins/trackmate/trackscheme) now features a search box and proper row and column headers.
 
 <img src="/media/TrachSchemeSearchBar.png" width="600"/>
 
-Other improvement
------------------
+## Other improvement
 
 A new action, called *Branch hierarchy analysis* features a branch-based analysis of tracks. The output is an ImageJ results table that contains for each branch the number of predecessors, the number of successors and its duration. The results table is clickable and will set the selection to be the clicked branch.
 

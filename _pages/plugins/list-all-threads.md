@@ -4,8 +4,7 @@ title: List all threads
 categories: Plugins,Scripting,Unmaintained
 ---
 
-Purpose
--------
+## Purpose
 
 An example [Jython](/scripting/jython) script to illustrate how to query a ThreadGroup recursively to gather all children Thread instances.
 
@@ -41,8 +40,7 @@ The output is something like the following:
 `27: J3D-SoundSchedulerUpdateThread-1`  
 `28: J3D-InputDeviceScheduler-1`
 
-Code
-----
+## Code
 
     from jarray import zeros
     from java.lang import *
@@ -78,8 +76,7 @@ Code
         IJ.log(str(i) + ": " + thread)
         i += 1
 
-See also
---------
+## See also
 
 [Jython Scripting](/scripting/jython)
 

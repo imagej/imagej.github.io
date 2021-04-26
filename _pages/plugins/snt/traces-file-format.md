@@ -7,8 +7,7 @@ categories: SNT
 {% include sntnavbar%}
 
 
-SNT's File Format
------------------
+## SNT's File Format
 
 The .traces files that are saved by [SNT](/plugins/snt) are gzipped compressed XML. SNT will also load uncompressed XML files, but by default, they are saved in the compressed form.
 

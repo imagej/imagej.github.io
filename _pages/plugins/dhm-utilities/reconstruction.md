@@ -19,8 +19,7 @@ maintainers: David Cohoe ([1](mailto:dcohoe@pdx.edu))
 
 Reconstruction is a plugin to reconstruct holograms and perform numerical propagation, with a focus on holograms produced by DHM. The plugin is highly extendable, with anybody able to add new plugins within it to perform whatever process they want at any point in the reconstruction pipeline. By default, it includes support for angular spectrum propagation, and for various noise removal techniques such as a reference hologram and a polynomial fit algorithm.
 
-Overview
---------
+## Overview
 
 To run the command, run "Plugins &gt; DHM &gt; Reconstruction". When running the command, a dialog box will pop up asking for parameters for all enabled plugins. The parameters that are always there are as follows:
 
@@ -62,8 +61,7 @@ The Z plane selection sets which z values you want to propagate to. The differen
 -   List: Propagate to any arbitrary z values, as a comma-separated list of time values.
 -   Range: Propagate to a range of z planes, given a starting point, ending point, and step size. For example, if your starting point was -1 μm, your ending point 1 μm, and your step size 0.5 μm, it would propagate to -1 μm, -0.5 μm, 0 μm, 0.5 μm, and 1 μm.
 
-Default Plugins in Detail
--------------------------
+## Default Plugins in Detail
 
 ### Filter
 
@@ -140,8 +138,7 @@ The Result plugin gets the result of the whole command and finds a way to displa
 
 The Status plugin just updates the status bar during the command's running.
 
-Options
--------
+## Options
 
 Every plugin has options that can be changed in the "Plugins &gt; DHM &gt; Reconstruction Options" command. Here the units for some of the values can be changed, plugins can be enabled/disabled, and plugins can put their own options here too. Here are the options that the default plugins have:
 
@@ -149,8 +146,7 @@ Every plugin has options that can be changed in the "Plugins &gt; DHM &gt; Recon
 
 The Angular Spectrum plugin can cache a lot of its processing to speed up the process. However, when performing a large amount of reconstructions, the memory used could increase too much. You can change the cutoff point of the cache size here, or disable caching entirely.
 
-Creating Your Own Plugin
-------------------------
+## Creating Your Own Plugin
 
 To create your own plugin type, you must implement `ReconstructionPlugin`. If you want the plugin to show up in the normal command, you must use the `@Plugin` annotation. If you do this, you must implement either `MainReconstructionPlugin` or `SubReconstructionPlugin`. The plugin interface has methods for all of the different parts of the reconstruction pipeline. Override whichever you wish, and your plugin will be executed along with all of the other plugins. For more information on how to make your own plugin, please consult the documentation on github.
 

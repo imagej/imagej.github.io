@@ -9,16 +9,14 @@ Bigwarp is a tool for manual, interactive, landmark-based deformable image align
 
 The interface enables landmark pair placement and displays the effects of the warp on-the-fly.
 
-Installation
-------------
+## Installation
 
 Bigwarp comes with Fiji. You can access it via *Plugins {% include arrow%}
 BigDataViewer {% include arrow%}
 Big Warp*, or by modifying {% include github org='saalfeldlab' repo='bigwarp' path='scriptsbigwarp\_fiji\_demo.bsh' label='this example script' %}. If this is not visible in your installation, try updating Fiji with *Help {% include arrow%}
 Update Fiji.*
 
-Usage
------
+## Usage
 
 Open two images in ImageJ, one *moving* and the other *target* and navigate to *Plugins {% include arrow%}
  BigDataViewer {% include arrow%}
@@ -201,8 +199,7 @@ Note the input csv must be formatted:
 
 without quotation marks, spaces, or any other characters. Csv files storing bigwarp landmarks will not work as input to this script.
 
-Working with large images
--------------------------
+## Working with large images
 
 The "normal" BigWarp plugin accessible through *Plugins {% include arrow%}
  Big Data Viewer {% include arrow%}

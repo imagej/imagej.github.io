@@ -14,8 +14,7 @@ To make yourself familiar with MTrack, please go to the [Example section](#Examp
 
 For using MTrack on movies which have very low signal to noise ratio you should create a denoised image to be used for segmentation and upload it along with the original movie. In this setting the microtubules pixels are identified from the segmentation movie while the actual measurement is always done on the original movie. To make yourself familiar with this setting please go to the [Low SNR Example section](#low-snr-example) where we detail this approach with a demo movie.
 
-Installation
-------------
+## Installation
 
 1.  Click {% include bc path="Help | Update..." %}.
 2.  Click the *Manage update sites* button.
@@ -24,8 +23,7 @@ Installation
 5.  Restart Fiji.
 6.  Launch the plugin with {% include bc path="Plugins | MTrack" %}.
 
-Usage
------
+## Usage
 
 ### Module 1 - Microtubule Detection & Tracking
 
@@ -101,8 +99,7 @@ In addition, the user can obtain microtubule length distribution for a certain t
 
 <img src="/media/RansacPanel.png" width="600"/> Click here to see some examples of the [MTrack-Ransac fits](/plugins/mtrack/ransac-fits).
 
-Example
--------
+## Example
 
 An example movie with several dynamic microtubules is available for download [here](http://preibischlab.mdc-berlin.de/download/MTrack/MTrack_Demo.tif.zip). To perform the analysis of this movie:
 
@@ -120,8 +117,7 @@ An example movie with several dynamic microtubules is available for download [he
 
 All dynamic parameters are saved in a .txt file call 'Allaverages'. For a better presentation the user can copy and paste the data from the .txt file to Excel or an equivalent software.
 
-Low SNR Example
----------------
+## Low SNR Example
 
 An example movie with a single simulated microtubule at low SNR and the same microtubule without the noise is available for download [here](http://preibischlab.mdc-berlin.de/download/MTrack/LowSNRMTrack_Demo.tif.zip) To perform the analysis of such microtubules:
 
@@ -136,15 +132,13 @@ An example movie with a single simulated microtubule at low SNR and the same mic
 9.  To track the microtubules over all 100 time-points click on **Start tracking** from the **Tracker options** panel . The expected runtime is around 5 min.
 10. The microtubule trajectory will be saved.
 
-Citation
---------
+## Citation
 
 Please note that MTrack is available through Fiji, and is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
 Varun Kapoor, William G. Hirst, Christoph Hentschel, Stephan Preibisch and Simone Reber, "MTrack: Automated Detection and Tracking of Dynamic Microtubules" [2]
 
-References
-----------
+## References
 
 [1] Robust wide-baseline stereo from maximally stable extremal regions, J Matas, O Chum, M Urban, T Pajdla Image and vision computing 22 (10), 761-767.
 

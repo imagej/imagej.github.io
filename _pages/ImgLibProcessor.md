@@ -7,8 +7,7 @@ categories: ImageJ2,Development
 {% include warning-box content='The following article describes a method of ImageJ1/ImageJ2 integration we explored in 2010, revolving around an `ij.process.ImageProcessor` extension called `ImgLibProcessor` which would enable additional transparent usage of [ImgLib2](/imglib2) from within ImageJ1, thus greatly expanding the available pixel types and storage strategies. However, after discussion with [Wayne Rasband](/users/rasband), we settled on a different method of backwards compatibility known as [ImageJ Legacy](/libs/imagej-legacy). The text below is preserved only for historical reasons.' %} 
 
 
-Design
-------
+## Design
 
 As much as possible ImgLibProcessor utilizes operations to implement its functionality. Operation is not a class here but just a concept. If you imagine a processor class the operations are really the methods that act upon the processor's data and live as separate classes rather than within the processor class methods. This was done to reduce the complexity of ImgLibProcessor. Originally there was a motivation of having operations that could be chained together. (Not sure how well this motivation was realized)
 
@@ -305,8 +304,7 @@ This can all be tied together in a plugin demo. The following code works on a fl
      
     }
 
-Miscellaneous notes
--------------------
+## Miscellaneous notes
 
 -   if desired we can likely eliminate inheritance from the operations (in SingleCursorRoiOperation for example) by passing it a class that implements an interface that does before(), inside(), and after(). This is similar to Observer and InfoCollector and we may be able to do some simplification here
 -   there are a number of different operations based upon how you are iterating and how many datasets you are simultaneously working with. There is also the built in limitation that iterators are synchronized. I have written proof of concept code to generalize iteration, allowing composition of iterators into either synchronized or nested iterators, eliminating the split between Unary/Binary/NAry functions, etc. Unfinished/untested but close to working.
@@ -324,8 +322,7 @@ Section 4 outlines further changes needed related to case logic switching on Ima
 Section 5 contains miscellaneous notes  
   
 
-CHANGES ALREADY MADE to allow ImgLib data to be correctly updated by IJ1
-------------------------------------------------------------------------
+## CHANGES ALREADY MADE to allow ImgLib data to be correctly updated by IJ1
 
   Reflects source code changes as of 12-17-10  
   
@@ -457,8 +454,7 @@ CHANGES ALREADY MADE to allow ImgLib data to be correctly updated by IJ1
     FloatProcessor convertOtherToFloat().  
   
 
-PLACES WHERE ImagePlus::getType() USES NEED UPDATING
-----------------------------------------------------
+## PLACES WHERE ImagePlus::getType() USES NEED UPDATING
 
 -   ij.gui.Roi - showStatus() number of decimal places of display would be incorrect for some Imglib types without a simple fix.
 -   ij.io.FileOpener - setCalibration() minor change needed to make sure min and max set correctly for the processor.
@@ -484,8 +480,7 @@ PLACES WHERE ImagePlus::getType() USES NEED UPDATING
 -   ij.IJ: - doWand() needs minor change (from GRAY32 test to isFloatingType() test)
 -   ij.Menus – menu entries needed for OTHER types. And addWindowMenuItem() should use new byte use calculation routines.
 
-PLACES WHERE instanceof SomeProcessor USES NEED UPDATING
---------------------------------------------------------
+## PLACES WHERE instanceof SomeProcessor USES NEED UPDATING
 
 -   ij.io.TextEncoder – minor change needed (use !ip.isFloatingType()) to support OTHER types
 -   ij.macro.Functions – getStatistics() assumes you only have 8 & 16 bit images/histograms. Needs some reworking to support OTHER types.
@@ -506,8 +501,7 @@ PLACES WHERE instanceof SomeProcessor USES NEED UPDATING
 -   ij.process.TypeConverter – I think I already made all changes needed and in \_ij1-patches
 -   ij.ImagePlus - I think I already made all changes needed and in \_ij1-patches
 
-PLACES WHERE ImagePlus::getBitDepth() USES NEED UPDATING
---------------------------------------------------------
+## PLACES WHERE ImagePlus::getBitDepth() USES NEED UPDATING
 
 -   ij.io.FileSaver – okForFits() should test imp.getType() rather than imp.getBitDepth(). Simple.
 -   ij.io.ImportDialog – rather than test bitDepth() it should test getType() not Byte or Color. Simple.
@@ -556,8 +550,7 @@ PLACES WHERE ImagePlus::getBitDepth() USES NEED UPDATING
 -   ij.ImagePlus – revert() and show() use bit depth but 8 bit cases. So may be safe but best to replace. Simple fix.
 -   ij.VirtualStack – getProcessor switches on bit depth. Can only support 8, 16, 24, and 32. This is probably okay from the looks of it.
 
-MISCELLANEOUS NOTES
--------------------
+## MISCELLANEOUS NOTES
 
    Additional methods desired in ImageProcessor and subclasses:
 

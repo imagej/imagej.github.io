@@ -30,8 +30,7 @@ The variables in the initial dialogue can be set from a macro, and the dialogue 
 
     run("MTrack2 ");
 
-See also
---------
+## See also
 
 -   http://valelab.ucsf.edu/~nico/IJplugins/MTrack2.html
 

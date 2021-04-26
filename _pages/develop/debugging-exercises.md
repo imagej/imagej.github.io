@@ -57,8 +57,7 @@ Changing the source code to actually fix the bugs is outside the scope of this g
 Exercises
 =========
 
-Exercise 1: Stack Traces and Breakpoints
-----------------------------------------
+## Exercise 1: Stack Traces and Breakpoints
 
 **Goals**
 
@@ -94,8 +93,7 @@ To investigate further, try to complete the following debugging steps:
 -   Stack traces are helpful in identifying starting points for debugging
 -   The Debug view allows line-by-line execution of code and inspection of variable values to help us pinpoint errors
 
-Exercise 2: Expressions
------------------------
+## Exercise 2: Expressions
 
 **Goals**
 
@@ -144,8 +142,7 @@ To complete this exercise:
 -   Setting breakpoints on exceptions avoids unnecessary breakpoint hits (and can be useful when we aren't sure where to set the breakpoint)
 -   The Expressions window of the Debug view allows us to evaluate arbitrary Java expressions without modifying our source code
 
-Exercise 3: Conditional breakpoints
------------------------------------
+## Exercise 3: Conditional breakpoints
 
 **Goals**
 
@@ -196,8 +193,7 @@ Were you able to get the breakpoint to stop in the loop only when a problem is e
 -   Setting a hit count on a breakpoint is useful if problematic code is called multiple times
 -   If problems appear randomly, using a conditional expressions on the breakpoint can help
 
-Exercise 4: ImageJ plugins
---------------------------
+## Exercise 4: ImageJ plugins
 
 **Goals**
 
@@ -262,8 +258,7 @@ Since we already followed these best practices, we can now finally debug our plu
 -   Launching ImageJ from the command line allows us to add useful flags and collect debugging information
 -   Attaching Eclipse to a running ImageJ lets us debug plugins in a "production" environment
 
-Exercise 5: Git history
------------------------
+## Exercise 5: Git history
 
 **Goals**
 
@@ -316,8 +311,7 @@ After marking the last commit good or bad, bisect will print out the first bad c
 
 -   Use *all* resources available when debugging - even the git history can be useful (assuming it's [well-maintained](/develop/releasing)!)
 
-Exercise 6: Print stack trace
------------------------------
+## Exercise 6: Print stack trace
 
 **Goals**
 
@@ -368,8 +362,7 @@ Hint: raw stack dumps like this are not the easiest to read. Stack traces for al
 
 -   Manually acquiring stack traces is useful when we don't have anything else to go on (e.g. if our program crashes without warning, or becomes unresponsive)
 
-Exercise 7: Out of memory
--------------------------
+## Exercise 7: Out of memory
 
 **Goals**
 
@@ -423,8 +416,7 @@ What is the child"s variable name and class? \|&gt;It is a `java.util.HashSet` w
 
 -   To identify subtle problems, like memory leaks, it helps to learn how to use external tools - like `jvisualvm`
 
-Exercise 8: Profiling
----------------------
+## Exercise 8: Profiling
 
 **Goals**
 
@@ -453,8 +445,7 @@ Exercise 8 in pretty straightforward with the main function calling two function
 
 -   Profiling tools allow quick and precise identification of performance bottlenecks.
 
-Exercise 9: Multiple threads
-----------------------------
+## Exercise 9: Multiple threads
 
 **Goals**
 

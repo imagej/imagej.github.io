@@ -12,13 +12,11 @@ The answer to this question depends on how you use ImageJ.
 -   Are you writing a script? ([\#From a Script](#from-a-script))
 -   Are you using Java, to develop an ImageJ2 plug-in or do write your one program using ImgLib2 and ImageJ libraries? ([\#From Java](#from-java))
 
-From the GUI
-------------
+## From the GUI
 
 In the menu select "File &gt; Open ..." or "File &gt; Import &gt; ...".
 
-From a Script
--------------
+## From a Script
 
 What are then possible ways to open an image when you are writing an Python / Groovy / ... script in ImageJ?
 
@@ -40,5 +38,4 @@ When the following script is run in ImageJ. ImageJ will ask to user to select tw
     image = io.open(path)
     ui.show(image)
 
-From Java
----------
+## From Java

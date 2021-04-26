@@ -7,15 +7,13 @@ title: TrackMate Accuracy
 
 This answer can be completely irrelevant, even non-physical, and there is no built-in flags that would indicate something wrong. The best way to avoid basing your downstream analysis on faulty tracking results is to know in what situation the tracker works the best, and what are its limitations. This is the aim of this page for the trackers and detectors shipped with [TrackMate](/plugins/trackmate).
 
-The ISBI 2012 single particle challenge.
-----------------------------------------
+## The ISBI 2012 single particle challenge.
 
 In 2011-2012, an ISBI Grand Challenge was organized for the [Single-Particle Tracking algorithms](http://bioimageanalysis.org/track/). Though TrackMate does not offer a completely new algorithm, product of an original Research work, we took the chance and participated in the challenge. The results and the methodology to compute the accuracy of a tracking algorithms were published[1] thereafter.
 
 Unsurprisingly, we did not score amongst the best. At the time, TrackMate was in version 1.1, and ship a stripped down version of the better performing Jaqaman *et al.* LAP framework[2]. See the [LAP trackers section](/plugins/trackmate/algorithms#lap-trackers) for algorithm details. Plus, TrackMate was was young at the time, and some bugs did not help.
 
-TrackMate v2.7.x series accuracy against the ISBI dataset.
-----------------------------------------------------------
+## TrackMate v2.7.x series accuracy against the ISBI dataset.
 
 From v2.7.x, TrackMate ships a new tracker that can deal specifically with linear motion. We though it was the right time to re-run the accuracy assessment with the ISBI challenge data. The people behind [Icy](/software/icy) offered the website to host the challenge data, and it is still available today[3] for download.
 
@@ -195,8 +193,7 @@ The LAP trackers were the first trackers to be shipped with TrackMate. They are 
 
 The challenge data does offer that possibility: all particles have roughly the same shape and intensity (modulo some minor variations in SNR). An exception is the MICROTUBULE scenario, where particles have an elongated shape. Therefore, we could have computed an orientation for them, and penalize two particles with different orientation (assuming - correctly - that orientation remains roughly the same between two frames).
 
-References.
------------
+## References.
 
 <references/>
 

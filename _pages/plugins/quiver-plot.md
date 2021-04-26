@@ -18,15 +18,13 @@ categories: Visualization, plugins
 {% endcapture %}
 {% include info-box name='Quiver Plot' software='plugin' author=author maintainer=maintainer source=source released='January 11<sup>th</sup>, 2017' latest-version='March 17<sup>th</sup>, 2017 (v0.2.0)' status='stable, active' category='[Visualization](Category_Visualization)' %}
 
-Introduction
-------------
+## Introduction
 
 A quiver plot is a 2D array of vector arrows that can be used to visualize dynamic processes such as flow or wave propagation. Vectors have both magnitude and direction; therefore to generate a vector plot, there needs to be a corresponding 2D array of the direction of each vector, and a 2D array of the magnitude of each vector.
 
 {% include thumbnail src='/media/Intro Quiver Plot Image.jpg' title='**Intro to generating a quiver plot** From left to right: The original data showing a wave moving through time (blue = start time, red = end time). Vector analysis was performed on the wave to generate a corresponding array of vector angles and vector speeds for points in space. (NOTE: The actual pixel values in these images needs to be the angle in degrees, and the magnitude of the vector). The Quiver Plot plugin was then used to make a quiver plot based off of the angle and speed arrays.'%}
 
-Running the Quiver Plot Plugin
-------------------------------
+## Running the Quiver Plot Plugin
 
 The Quiver Plot plugin needs two 32-bit images, one representing the vector angles (direction) and one representing the vector magnitude. When you run the plugin, you will see the following window:
 
@@ -40,8 +38,7 @@ The plugin will then search for the largest magnitude vector in the magnitude im
 
 This plugin is also recordable within ImageJ, and can be implemented as part of a macro.
 
-Installing the Quiver Plot Plugin
----------------------------------
+## Installing the Quiver Plot Plugin
 
 The Quiver Plot plugin is part of the [UCB Vision Sciences](UCB_Vision_Sciences) library. To install it, you just need to [ add](/update-sites/following#add-update-sites) the UCB Vision Sciences update site:
 
@@ -57,13 +54,11 @@ You should now find the plugin under the sub-menu {% include bc path='Plugins |U
 
 **Note**: Quiver Plot is only one of the plugins included in the [UCB Vision Sciences](UCB_Vision_Sciences) suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
 
-Acknowledgements
-----------------
+## Acknowledgements
 
 This plugin was developed as part of the University of California, Berkeley Vision Sciences core grant NIH P30EY003176.
 
-License
--------
+## License
 
 This program is **free software**; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt](http://www.gnu.org/licenses/gpl.txt)).
 

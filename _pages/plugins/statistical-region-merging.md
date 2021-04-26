@@ -9,8 +9,7 @@ Statistical Region Merging[1] is a fast and robust algorithm to segment an image
 
 The idea is to start with one region per pixel and then applying a statistical test on neighboring regions (in ascending order of intensity differences) whether the mean intensities are sufficiently similar enough to be merged.
 
-Tutorial
---------
+## Tutorial
 
 For the moment, the plugin handles only grayscale images:
 
@@ -24,8 +23,7 @@ This is a result for a low value of *Q*:
 
 ![](/media/Statistical Region Merging-Result.jpg "Statistical_Region_Merging-Result.jpg")
 
-References
-----------
+## References
 
 <references />
 

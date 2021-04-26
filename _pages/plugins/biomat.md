@@ -10,8 +10,7 @@ categories: Plugins,Filtering
 {% endcapture %}
 {% include info-box software='ImageJ' name='Biomat' maintainer='[Jiří Janáček](mailto:jiri.janacek_at_fgu.cas.cz)' author='Jiří Janáček' source=source released='03/26/2019' latest-version='02/24/2020' status='' website='' %}
 
-Plugins for 3D image preprocessing.
------------------------------------
+## Plugins for 3D image preprocessing.
 
 **Stack Linear Contrast** - multiplies images in stack by coefficient obtained by linear interpolation of the "first" and "last" coefficient. A simple tool for compensation of contrast decreasing with depth within thick sample.
 
@@ -23,8 +22,7 @@ Preprocessing example: [Image of capillaries in brain](/media/Capillaries_brain.
 -   {% include bc path='Process | Filters | Gaussian blur 3D'%} with "sigma"= 1 pixel
 -   {% include bc path='Plugins | Biomat | Lipschitz 3D Filter'%} with parameter "slope"= 2 / pixel
 
-Plugins for detection of fibres in 3D image.
---------------------------------------------
+## Plugins for detection of fibres in 3D image.
 
 **Tensor Line 3D Filter** - enhances white fibers of uniform width sparsely distributed on dark background.
 
@@ -40,8 +38,7 @@ Example: [Image of capillaries in embryonic heart](/media/Capillaries_heart.zip)
 
 -   {% include bc path='Plugins | Biomat | Vector Line 3D Filter'%} with parameters "sigma"= 4 pixels, "scale number"= 2
 
-Plugins for evaluation of 2D images using heat equation.
---------------------------------------------------------
+## Plugins for evaluation of 2D images using heat equation.
 
 **2D Tensor Color Coding** - standard color coding of 2D tensor image. Symmetric tensor is coded as channels of 32 bit image stacks.
 

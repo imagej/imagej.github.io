@@ -14,8 +14,7 @@ categories: Plugins,Particle analysis,Tracking
 
 Documentation is available as [html](http://mosaic.mpi-cbg.de/ParticleTracker/tutorial.html) and [pdf](http://mosaic.mpi-cbg.de/ParticleTracker/doc/ParticleTrackerUserManual.pdf).
 
-References
-----------
+## References
 
 I. F. Sbalzarini and P. Koumoutsakos. Feature Point Tracking and Trajectory Analysis for Video Imaging in Cell Biology, Journal of Structural Biology 151(2):182-195, 2005.
 

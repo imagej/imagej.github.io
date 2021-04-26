@@ -7,8 +7,7 @@ artifact: sc.fiji:level\_sets
 
 <img src="/media/LS.2b.progress.png" width="300"/>
 
-Level Sets and Fast Marching
-----------------------------
+## Level Sets and Fast Marching
 
 ### Introduction
 

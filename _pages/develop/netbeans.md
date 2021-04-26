@@ -5,8 +5,7 @@ title: Developing ImageJ in NetBeans
 
  This article explains how to install and configure NetBeans for use with [ImageJ](/about) development. Directions correspond to NetBeans 7.1.2, which added integrated Git support, and may need adjustment for other versions.
 
-Install and configure NetBeans
-------------------------------
+## Install and configure NetBeans
 
 ### Setting up NetBeans on Windows
 
@@ -41,8 +40,7 @@ Install NetBeans using the package manager—e.g., on Ubuntu:
 
     sudo aptitude install netbeans
 
-Import the ImageJ source
-------------------------
+## Import the ImageJ source
 
 1.  Choose Team &gt; Git &gt; Clone... from the NetBeans menu
 2.  For the Repository URL, enter: [`git://github.com/imagej/imagej`](Git___github.com_imagej_imagej)
@@ -53,8 +51,7 @@ Import the ImageJ source
 
 You may receive a warning about Maven when building the project. It is not required, but if you wish to eliminate it, you can install Maven from the [Maven web site](http://maven.apache.org/download.html).
 
-Launch the program
-------------------
+## Launch the program
 
 1.  Expand the "ImageJ Projects" project, then "Modules"
 2.  Expand the "ImageJ POM: User Interface" module
@@ -64,8 +61,7 @@ Launch the program
 
 To expand the projects you can also right click on the top-level "ImageJ Projects" and choose "Open Required Projects" (and "Close Required Projects" to close). During development you must select "Open Required Projects" before you can successfully do "Find Usages" in the "Open Projects" scope.
 
-See also
---------
+## See also
 
 -   [Developing ImageJ 1.x plugins with NetBeans](https://www.youtube.com/watch?v=Ac-6gJ2eRb0) screencast
 -   {% include github org='imagej' repo='example-legacy-plugin' label='example-legacy-plugin' %} project template

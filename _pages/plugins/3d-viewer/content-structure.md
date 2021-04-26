@@ -6,8 +6,7 @@ title: 3D Viewer › Content Structure
 (Return to the [Developer Documentation](/plugins/3d-viewer/developer-documentation) page)  
 (Return to the main [3D\_Viewer](/plugins/3d-viewer) page)
 
-The relation between Content and Universe
------------------------------------------
+## The relation between Content and Universe
 
 You can download example source code for this HowTo [here](/plugins/3d-viewer/example-code).
 

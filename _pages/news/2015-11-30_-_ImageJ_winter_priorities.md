@@ -6,15 +6,13 @@ categories: ImageJ2,News
 
 Here is a status update from the ImageJ team at [LOCI](/orgs/loci): where we're at, what's next, and what tasks we see as the most important to keep ImageJ moving forward.
 
-Top priority
-------------
+## Top priority
 
 First and foremost, we're on the cusp of submitting a paper describing the structure of ImageJ2, which is a critical step towards future funding efforts.
 
 On the technical side, {%- include person id='ctrueden' -%} just wrote the first ImageJ code using Java 8 functionality, which will continue drive our {% include github org='imagej' repo='imagej' issue='135' label='need to migrate' %}. One recent and fundamental step in this direction is the release of the {% include list-of-update-sites content='3D update site' %}: providing Java 7- and 8-compatible versions of 3D ImageJ plugins (previously relegated to Java 6).
 
-Next steps
-----------
+## Next steps
 
 In the coming months we have several projects of interest. In approximate order of our priority:
 
@@ -27,15 +25,13 @@ In the coming months we have several projects of interest. In approximate order 
 -   Improved {% include github org='imagej' repo='imagej-legacy' issue='86' label='ImageJ1-ImageJ2 synchronization' %}
 -   [Formalizing developer roles and responsibilities](http://forum.imagej.net/t/project-developer-roles/206) (which will make an "Adopt-a-plugin" program possible!)
 
-Long-term plans
----------------
+## Long-term plans
 
 -   Better support for arbitrarily large planes (via google-maps style scaling)
 -   Improved support for arbitrarily large images (i.e., with huge numbers of planes or blocks)
 -   JavaFX-based UI
 
-Continued support
------------------
+## Continued support
 
 While not directly tied to any one issue or reportable task, [LOCI](/orgs/loci) will continue to support:
 

@@ -7,8 +7,7 @@ title: PlugIn Design Guidelines
 {% include outdated%}
 
 
-Key concepts
-------------
+## Key concepts
 
 We favor a style of ImageJ plugin design that enables execution of the plugin:
 
@@ -29,8 +28,7 @@ If you cannot use a *GenericDialog* for input for some reason, make your code sc
             Recorder.recordString(command);
     }
 
-Example java plugin
--------------------
+## Example java plugin
 
 For example, a plugin that duplicates and scales an image:
 
@@ -102,8 +100,7 @@ For example, a plugin that duplicates and scales an image:
         }
     }
 
-Compiling the plugin
---------------------
+## Compiling the plugin
 
 ### Using the Script Editor
 
@@ -125,8 +122,7 @@ To compile the plugin, you have several options:
 
 For this to work, you have to save the java file into the *plugins/* directory, or you have to copy the class files into said directory after compilation. For the plugin to appear in the *Plugins* menu, you have to call {% include bc path='Help | Refresh Menus'%}, or to restart Fiji.
 
-Running the plugin
-------------------
+## Running the plugin
 
 If you pasted the source into the [Script Editor](/scripting/script-editor), you can run the plugin using the *Run&gt;Run* menu entry.
 

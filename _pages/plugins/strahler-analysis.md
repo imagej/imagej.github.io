@@ -28,15 +28,13 @@ A plugin from the [Neuroanatomy update site](/users/Neuroanatomy) that performs 
 
 {% include ambox text='This page describes how to perform Strahler Analysis on skeletonized images. For analysis of traced structures have a look at [SNT](/plugins/snt).' %}
 
-Description
------------
+## Description
 
 <span id="StrahlerAnimation"></span><img src="/media/StrahlerAnimation.gif" title="fig:Strahler Analysis by iterative elimination of end-point branches" width="300" alt="Strahler Analysis by iterative elimination of end-point branches" /> The analysis occurs through progressive pruning of terminal branches, *iterative tree simplification*, a method that requires detecting all terminal branches (i.e., branches that contain an end-point) and all the degree-one paths leading to them.
 
 *Strahler Analysis* takes a <u>binary</u> or <u>8-bit grayscale</u> image (2D or 3D) containing a <u>single arbor</u>, and calls [AnalyzeSkeleton](/plugins/analyze-skeleton) iteratively to retrieve [Horton-Strahler numbers](#References) from the [skeletonized centerlines](/plugins/skeletonize3d) of the input image. Each iteration includes three operations: 1) a (re)-skeletonization step to ensure that arbor remains represented by its centerlines, 2) an elimination step in which terminal-branches are pruned from the image and 3) an analysis step in which pruned branches are counted and measured. The iteration ceases as soon as all branches have been eliminated or a unresolved [closed loop](#elimination-of-skeleton-loops) has been detected in the pruned arbor.
 
-Parameters
-----------
+## Parameters
 
 Tree Classification:  
 
@@ -78,8 +76,7 @@ Output Options:
   
 If checked, analysis will run in *verbose* mode by outputting detailed measurements and by logging debug messages.
 
-Root Detection
---------------
+## Root Detection
 
 The problem with undiscriminated elimination of terminal branches is that a root-branch containing an end-point is always eliminated on the first iteration step. In order to protect root branches from elimination, *Strahler Analysis* needs to know where root branches are located. As of version 1.4.0, root-detection is implemented by means of a rectangular ROI containing the root branch and by activating the *Infer root end-points from rectangular ROI* option. Here is an example:
 
@@ -100,8 +97,7 @@ The problem with undiscriminated elimination of terminal branches is that a root
 -   Root detection may not be required in the case of radial arbors (i.e., tree-like structures that branch out evenly in multiple directions), if root(s) remain connected in the center of the arbor (as in [animation above](#StrahlerAnimation)). In neurobiology, radial-ramification is an anatomical hallmark of certain cell types such as Retinal Ganglion Cells, Chandelier neurons or Drosophila Class IV sensory neurons.
 -   If you are batch processing multiple images you should work with .tif files: When saving as TIFF, ImageJ will store the active ROI in the image header, making it immediately available when the image is open.
 
-Results
--------
+## Results
 
 The plugin produces three types of outputs:
 
@@ -127,19 +123,16 @@ Ramification or {% include wikipedia title='Strahler number\#Bifurcation\_ratio'
 Iteration log  
 If *Show detailed information* is checked, *Average branch length*, *N. of trees*, *N. of branches*, *N. of junctions*, *N. of triple points*, *N. of quadruple points* are also retrieved for each iteration. These are described in the AnalyzeSkeleton's [documentation page](/plugins/analyze-skeleton#table-of-results).
 
-Installation
-------------
+## Installation
 
 To install *Strahler Analysis* you must use Java 8 and subscribe to the [Neuroanatomy update site](/users/Neuroanatomy).
 
-Related Links
--------------
+## Related Links
 
 -   [AnalyzeSkeleton](/plugins/analyze-skeleton) and [Skeletonize3D](/plugins/skeletonize3d), analysis of topographic skeletons
 -   [Sholl Analysis](/plugins/sholl-analysis), bitmap morphometry based on the Sholl technique
 
-References
-----------
+## References
 
 Original publications by {% include wikipedia title='Robert E. Horton' text='Robert E. Horton'%} and {% include wikipedia title='Arthur Newell Strahler' text='Arthur N. Strahler'%}:
 
@@ -153,8 +146,7 @@ Original publications by {% include wikipedia title='Robert E. Horton' text='Rob
 
 -   {% include citation last='Strahler' first='A. N.' year='1957' title='Quantitative analysis of watershed geomorphology' journal='Transactions of the American Geophysical Union' volume='38' issue='6' pages='913–920' %} ([PDF](http://www.uvm.edu/~pdodds/files/papers/others/1957/strahler1957a.pdf)).
 
-Citing
-------
+## Citing
 
 Plugins from the [Neuroanatomy update site](/users/Neuroanatomy):
 
@@ -166,13 +158,11 @@ Plugins from the [Neuroanatomy update site](/users/Neuroanatomy):
 
 :\* Michael Doube, Michal M. Klosowski, Ignacio Arganda-Carreras, Fabrice P. Cordelieres, Robert P. Dougherty, Jonathan S. Jackson, Benjamin Schmid, John R. Hutchinson, Sandra J. Shefelbine, [BoneJ: Free and extensible bone image analysis in ImageJ](http://dx.doi.org/10.1016/j.bone.2010.08.023), Bone, Volume 47, Issue 6, December 2010, Pages 1076-1079.
 
-Acknowledgments
----------------
+## Acknowledgments
 
 To all the developers of [AnalyzeSkeleton](https://github.com/fiji/AnalyzeSkeleton/graphs/contributors).
 
-License
--------
+## License
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [Free Software Foundation](http://www.gnu.org/licenses/gpl.txt). This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 

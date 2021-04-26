@@ -38,8 +38,7 @@ Example: assign text to a variable:
 
 In this case, the variable is named *message*, and the text *Hello, World!* is assigned to it; Text is specified inside double quotes.
 
-Using variables
----------------
+## Using variables
 
 You can use variables in *expressions*: you can calculate with numeric variables, and you can concatenate text and text variables. Example:
 
@@ -76,8 +75,7 @@ The same principle applies when using variables which reflect parameters passed 
     //run("Auto Threshold", "method=" + userDefinedAutoThreshold + "white");   //does NOT work because the macro runs as "method=Liwhite"
     run("Auto Threshold", "method=" + userDefinedAutoThreshold + " white");   //WORKS because including a space in " white" results in "method=Li white"
 
-Self-referencing assignments
-----------------------------
+## Self-referencing assignments
 
 When a variable is assigned, the right-hand side is evaluated first, and only then the assignment is performed. This allows you to double the value of a variable:
 
@@ -109,8 +107,7 @@ As before, a semicolon signifies the end of the statement. The name of the funct
 
 Like *write*, *newImage* is a builtin function of ImageJ. The order of the parameters is relevant, this is the way the function knows what each parameter means.
 
-Defining functions
-------------------
+## Defining functions
 
 For recurring tasks, you can define your own functions:
 
@@ -133,8 +130,7 @@ When you read your code again in six months from now, you want to understand wha
 
 Everything after the two slashes up to the end of the line is a comment.
 
-Multi-line comments
--------------------
+## Multi-line comments
 
 You can also have multi-line comments enclosed in */\* ... \*/* blocks:
 
@@ -145,8 +141,7 @@ You can also have multi-line comments enclosed in */\* ... \*/* blocks:
     */
     alpha = 0.5;
 
-Commented-out code
-------------------
+## Commented-out code
 
 When reading macros written by other people, you will often find the concept of *commented-out code*. This is code that is pretended to be a comment so that it is not executed. Example:
 
@@ -174,8 +169,7 @@ If the code block consists of only one statement, the curly braces may be omitte
 
 Likewise, it is a good practice to *indent* the code inside the conditional block (i.e. to add white space in front of the lines inside the block). This makes reading the code much easier, too.
 
-else
-----
+## else
 
 You can optionally add an *else* clause, i.e. a code block that is executed when the condition is <b>not</b> met. Example:
 
@@ -189,8 +183,7 @@ You can optionally add an *else* clause, i.e. a code block that is executed when
 Loops
 =====
 
-1st example
------------
+## 1st example
 
 To repeat instructions several times, loops are used. Example:
 
@@ -212,8 +205,7 @@ Even if the counter variable was not used inside the code block in this example,
 
 Note that starting with 0 and testing for the condition "smaller than 10" will result in the code block being run 10 times. It is the standard way to execute a certain block of code a fixed number of times.
 
-Looping over slices of a stack
-------------------------------
+## Looping over slices of a stack
 
 To loop over a stack, one can use the variable `nSlices`.
 
@@ -226,8 +218,7 @@ To loop over a stack, one can use the variable `nSlices`.
         // do some processing
     }
 
-Looping over rois in RoiManager
--------------------------------
+## Looping over rois in RoiManager
 
 This small IJmacro scriptlet loops over the roi in the Roi Manager, selecting one at a time.
 
@@ -277,8 +268,7 @@ Simply save your macro in a "/plugins" subfolder of `./Fiji.app/scripts/` (e.g. 
 
 Note: The {% include bc path="Plugins | Macro | Install..." %} command is an ImageJ 1.x command that does not yet support the SciJava [Script Parameters](/scripting/parameters) syntax (@) that was introduced with ImageJ2.
 
-Keyboard shortcuts
-------------------
+## Keyboard shortcuts
 
 Keyboard shortcuts can be defined by adding the key within brackets at the end of the macro name. Example:
 
@@ -293,8 +283,7 @@ Keyboard shortcuts can be defined by adding the key within brackets at the end o
         saveAs("Jpeg");
     }
 
-Tool icons
-----------
+## Tool icons
 
 By choosing a macro name that ends in *Action Tool*, you can install new tools into the toolbar:
 
@@ -325,8 +314,7 @@ This section contains a number of macros which you can use as starting points to
 
 If you're interested in performing a certain procedure for all files in a given folder, you might want to have a look a the tutorial *[How to apply a common operation to a complete directory](/tutorials/apply-operation-to-a-complete-directory)* or at the macro template that you can open in the [Script Editor](/scripting/script-editor) via {% include bc path='Templates | Macros | Process Folder'%}.
 
-Resizing to a given width of the selection bounds
--------------------------------------------------
+## Resizing to a given width of the selection bounds
 
 When you need to resize an image but all you know is what width (in pixels) a structure has that you selected as a ROI, this macro is for you:
 
@@ -347,8 +335,7 @@ When you need to resize an image but all you know is what width (in pixels) a st
     }
     makeSelection(roiType, x, y);
 
-Splitting timepoints
---------------------
+## Splitting timepoints
 
 This macro splits a hyperstack into its individual timepoints, so that you end up with as many new images as the original hyperstack had frames:
 
@@ -374,8 +361,7 @@ This macro splits a hyperstack into its individual timepoints, so that you end u
     selectImage(id);
     close();
 
-Merging timepoints
-------------------
+## Merging timepoints
 
 This macro does the opposite from the previous ones: it merges all the open images into one big hyperstack, assuming that they are the different timepoints of one movie.
 
@@ -424,8 +410,7 @@ This macro does the opposite from the previous ones: it merges all the open imag
     selectImage(title);
     setBatchMode(false);
 
-Normalize all images to the global mean
----------------------------------------
+## Normalize all images to the global mean
 
 This macro takes the mean of all open images' means and then adjusts the pixel values in each image to that mean:
 
@@ -448,8 +433,7 @@ This macro takes the mean of all open images' means and then adjusts the pixel v
 
     setBatchMode(false);
 
-Make a false-colored montage
-----------------------------
+## Make a false-colored montage
 
 Here is a more complicated macro, maybe you can guess from reading the code how it does what it does? After that, you might want to try it on the Lena example...
 
@@ -587,8 +571,7 @@ Here is a more complicated macro, maybe you can guess from reading the code how 
     randomize = true;
     makeMontage(false);
 
-Mimic the *merge sides* command in the BioRad MRC600 confocal
--------------------------------------------------------------
+## Mimic the *merge sides* command in the BioRad MRC600 confocal
 
 Macro to mimic the merge sides command in the original BioRad MRC600 confocal.
 
@@ -616,8 +599,7 @@ Michael Cammer michael.cammer@med.nyu.edu with editing by Johannes Schindelin \[
       rename("merged_"+right);
     }  // end
 
-More example macros
--------------------
+## More example macros
 
 There are quite a lot of macros on the [ImageJ1 website](/ij/macros/), and specifically [example macros](/ij/macros/examples/) including a few from the Macro workshop at the [ImageJ conference 2010](http://imagejconf.tudor.lu/archive/imagej-user-and-developer-conference-2010). Since there is no categorized index, you might want to use the search facility on [this page](/ij/developer/index.html).
 
@@ -626,18 +608,15 @@ Overcoming limitations
 
 Macros have a major limitation compared to the other [scripting](/scripting) languages: they have only a [fixed set of built-in functions](/ij/developer/macro/functions.html). Sometimes, though, one needs access to functions outside this realm; in that case, there are three primary means of overcoming this limitation:
 
-Macro extensions
-----------------
+## Macro extensions
 
 It is possible to implement code in [Java](/develop/plugins) which extends the macro language via the [`Ext` prefix](/ij/developer/macro/functions.html#Ext). However, this cannot be done within the macro itself.
 
-The call function
------------------
+## The call function
 
 The [`call` function](/ij/developer/macro/functions.html#call) can invoke Java methods directly. However, this function only supports calling `public static` Java methods which accept `String` only, and return `String` only. Most times, though, the needed function does not conform to these requirements; this approach is suitable mostly for routines designed to be called from the macro language in this way.
 
-The eval function
------------------
+## The eval function
 
 The [`eval` function](/ij/developer/macro/functions.html#eval) can execute [JavaScript](/scripting/javascript) (or [BeanShell](/scripting/beanshell) or [Python](/scripting/python)) code directly. This is a powerful and flexible approach which can invoke nearly any Java API without needing to write external Java code.
 
@@ -660,8 +639,7 @@ Here is an example which sets the position of a [3D Viewer](/plugins/3d-viewer) 
         "}"
     );
 
-The exec function
------------------
+## The exec function
 
 The [`exec` function](/ij/developer/macro/functions.html#exec) can call any external program or process with optional arguments.  
 It can be used to e.g. automatically open a tabular software with a result table after analysis. It can also be used to open a specific webpage in the default browser.  

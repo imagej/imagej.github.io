@@ -9,8 +9,7 @@ categories: tutorials
 
 Simple Neurite Tracer's "Hessian-based analysis" option for filtering for tube-like structures is an quick way of improving the efficiency and accuracy of path-finding. However, for best results, I would recommend using a slower but more accurate method to preprocess the data.
 
-Using Pre-Processed Data
-------------------------
+## Using Pre-Processed Data
 
 If the file you are tracing was originally called "example.tif" or "example.lsm", then the plugin will check for the existence of a file in the same directory called "example.tubes.tif". If such a file exists, the plugin will offer to load it for you:
 
@@ -22,8 +21,7 @@ The "\*.tubes.tif" file must be a 32-bit float image. Then, if you select the "U
 
 ... then tracing will take place on the preprocessed image rather than the raw image data or the "Hessian-based analysis" filtered values.
 
-An Example Using Frangi et al.'s method
----------------------------------------
+## An Example Using Frangi et al.'s method
 
 ### A single image
 

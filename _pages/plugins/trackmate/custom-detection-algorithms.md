@@ -7,8 +7,7 @@ categories: Tutorials
 {% include extendingtrackmatetutorials%}
 
 
-Introduction.
--------------
+## Introduction.
 
 Welcome to the most useful and also unfortunately the hardest part in this tutorial series on how to extend [TrackMate](/plugins/trackmate) with custom modules.
 
@@ -26,8 +25,7 @@ We did not have to care when implementing a [custom action](/plugins/trackmate/c
 
 Let's get started with the easiest part, the detection algorithm.
 
-The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/detection/SpotDetector.java' label='SpotDetector' %} interface.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/detection/SpotDetector.java' label='SpotDetector' %} interface.
 
 ### A detector instance operates on a single frame.
 
@@ -243,8 +241,7 @@ And that's about it.
 
 Now for something completely different, we move to the factory class that instantiates this detector.
 
-The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/detection/SpotDetectorFactory.java' label='SpotDetectorFactory' %} interface.
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/detection/SpotDetectorFactory.java' label='SpotDetectorFactory' %} interface.
 
 The SpotDetectorFactory concrete implementation is the class that needs to be annotated with the [SciJava](SciJava) annotation. For instance:
 
@@ -523,8 +520,7 @@ And here is the full code for this tutorial example. It is the ultimate simplifi
         }
     }
 
-Wrapping up
------------
+## Wrapping up
 
 Ouf! That was a lot of information and a lot of coding for a single piece of functionality. But all of these painful methods make your detector a first-class citizen of TrackMate. "/develop/native-libraries" detectors use the exact same logic.
 

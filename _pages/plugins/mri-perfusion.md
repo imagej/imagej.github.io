@@ -17,8 +17,7 @@ title: MRI Perfusion
 {% endcapture %}
 {% include info-box name='MRI Perfusion PlugIn' software='Fiji' author=author maintainer=maintainer source=source released='February 04<sup>th</sup>, 2015' latest-version='February 04<sup>th</sup>, 2015' status='experimental, active' category='[Plugins](Category_Plugins), [MRI](Category_Perfusion)' %}
 
-Perfusion in MRI
-----------------
+## Perfusion in MRI
 
 {% include thumbnail src='/media/Perfusion.png' title='Example of the perfusion curve obtained in the peritumoral region on brain cancer.'%}
 
@@ -30,8 +29,7 @@ The ultimate goal of perfusion MRI is to measure or assess the blood flow irriga
 
 -   *Feb-04-2015*: The method is capable to process a image stack with the perfusion gadolinium contrast agent.
 
-Perfusion Metrics
------------------
+## Perfusion Metrics
 
 The quantitative values that our plugin can calculate are listed bellow.
 
@@ -47,8 +45,7 @@ The quantitative values that our plugin can calculate are listed bellow.
 
 ### Time to peak
 
-How to use
-----------
+## How to use
 
 First of all, the perfusion gadolinium contrast agent image sequence has to be transformed into a HyperStack (use the plugin MRI Perfusion/Create HyperStack). It is important here that the image sequence loaded must to have a DICOM header, otherwise the method will fail to transform the image stack into a HyperStack. ALso, the perfusion image sequence that we say here is a image sequence with each brain slice are acquired in a period of time, which usually all the brain is acquired.
 

@@ -17,8 +17,7 @@ Although ITK is a C++ application, many ITK functions are available in ImageJ th
 
 Enabling this functionality in ImageJ is simply a matter of turning on the {% include list-of-update-sites content='ImageJ-ITK update site' %}. Note that this will trigger a large download, as it requires the SimpleITK native library (up to a few hundred MB).
 
-What's on the update site?
---------------------------
+## What's on the update site?
 
 SimpleITK 0.90 is distributed with this update. After update all SimpleITK classes can be called from the script editor.
 
@@ -36,15 +35,13 @@ There are several templates in the [Script Editor](/scripting/script-editor) dem
     # call otsu using simple itk wrapper
     output = otsu.execute(image, 2, 0, 255, True)
 
-Developer resources
--------------------
+## Developer resources
 
 -   [GitHub (we welcome pull requests)](https://github.com/imagej/imagej-itk/)
 -   [An ImageJ2 Op that uses SimpleITK](https://github.com/imagej/imagej-itk/tree/master/src/main/java/net/imagej/itk/ops)
 -   [An ImageJ2 command (plugin that adds a menu item) for the Op.](https://github.com/imagej/imagej-itk/tree/master/src/main/java/net/imagej/itk/commands)
 
-Publication
------------
+## Publication
 
 To cite ITK, please use the following publication:
 

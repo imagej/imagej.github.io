@@ -4,15 +4,13 @@ title: FAST
 categories: Analysis,Segmentation
 ---
 
-**F**luorescence image **A**nalysi**S** **T**ool: FAST
-------------------------------------------------------
+## **F**luorescence image **A**nalysi**S** **T**ool: FAST
 
 ### Description
 
 This ImageJ macro automates tasks (open, set threshold, save Region Of Interest, measure) to process a set of single-channel fluorescence images.
 
-Installation
-------------
+## Installation
 
 Requirements:
 
@@ -23,8 +21,7 @@ Requirements:
 
 New commands should then appear in ImageJ '{% include bc path='Plugins | FAST'%}' menu.
 
-Image Processing
-----------------
+## Image Processing
 
 {% include thumbnail src='/media/FAST Processing.png' title='Description of the Image processing pipeline of FAST macro.'%}
 
@@ -40,8 +37,7 @@ Image Processing
 2.  User can confirm the ROI, modify it directly or remove image from further analysis.
 3.  Measure of fluorescence in selected ROI.
 
-Startup Options
----------------
+## Startup Options
 
 {% include thumbnail src='/media/FAST Options.png' title='Options dialog box'%} The macro displays a dialog box to set analysis options:
 
@@ -57,8 +53,7 @@ Startup Options
 **Silent Mode** : If selected, the macro will measure the ROI of all images without prompting the user every time. Useful for reanalysis of previous data.  
 **Restart Mode** : When auto processing is cancelled accidentally, this mode checks the last ROI created and restart analysis from this point.  
 
-Validation of selected Regions Of Interest
-------------------------------------------
+## Validation of selected Regions Of Interest
 
 <img src="/media/FAST ROI-check.png" title="fig:User validation of defined ROI" width="200" alt="User validation of defined ROI" /> After completion of Step 1 of image processing, images and their corresponding ROIs need to be validated by the user.
 
@@ -85,8 +80,7 @@ After completion of Step 2, a list of all measured images with filename is displ
 
 This table is automatically saved as a *csv* file in the work directory selected at startup.
 
-Related Resources
------------------
+## Related Resources
 
 This program is free software; you can redistribute it and/or modify it under the terms of the [GNU General Public License](http://www.gnu.org/licenses/gpl.html) as published by the Free Software Foundation. [Comments or improvements are welcome](/User:C.TURI%C3%88S). It is distributed in the hope that it will be useful, but **"AS IS" without warranty of any kind**. See the [GNU General Public License](http://www.gnu.org/licenses/gpl.html) for more details.
 

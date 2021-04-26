@@ -7,8 +7,7 @@ section: Learn:Cookbook
 
 
 
-Scale bar
----------
+## Scale bar
 
 All images for publications should include a scale bar. A standard size should be used for the scale bars on all images if possible to help avoid confusion.
 
@@ -58,8 +57,7 @@ Check the "*Label all slices*" box to add a scale-bar to the whole stack.
 
 This plugin points to the native menu command "*Analyze/Tools/Scale bar...".*
 
-Text and lines
---------------
+## Text and lines
 
 ### Issues with adding text
 

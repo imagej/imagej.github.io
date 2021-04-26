@@ -5,18 +5,15 @@ title: Profiling Java Code
 
 If your Java code seems to have bottlenecks that make it run slow, you need to *profile* the code. There are a couple of options you have for that.
 
-JProfiler
----------
+## JProfiler
 
 [JProfiler](http://www.ej-technologies.com/products/jprofiler/overview.html) is a commercial program, but you can evaluate a trial version.
 
-HPROF
------
+## HPROF
 
 Use [HPROF](http://java.sun.com/developer/technicalArticles/Programming/HPROF.html), a profiler included in Sun's Java since version 1.5.
 
-Java Mission Control
---------------------
+## Java Mission Control
 
 Starting with Java 1.7 update 40, Oracle bundles [Java Mission Control](http://www.oracle.com/technetwork/java/javaseproducts/mission-control/index.html) with their JREs/JDKs. This provides incredibly powerful monitoring/profiling capabilities, but it is notably lacking from OpenJDK.
 
@@ -34,15 +31,13 @@ The easiest way to use the flight recorder to profile a certain code path, say, 
 
 After the JUnit test finishes, call *Java Mission Control* via the `jmc` executable (it lives in the JDK's *bin/* directory), {% include bc path='File | Open File'%} the *.jfr* file, click on the *Code* button in the center of the Mission Control window, select the *Hot Methods* tab of the big panel (confusingly, the tabs are at the bottom) and inspect the stack traces.
 
-VisualVM
---------
+## VisualVM
 
 Use [VisualVM](http://download.oracle.com/docs/cd/E17409_01/javase/6/docs/technotes/guides/visualvm/index.html) (a tutorial can be found [here](http://java.dzone.com/articles/profile-your-applications-java)), which is a graphical alternative to HPROF, available in Sun's Java since version 6 update 7.
 
 See also [Rejeev Divakaran's detailed instructions on memory profiling with VisualVM](http://rejeev.blogspot.com/2009/04/analyzing-memory-leak-in-java.html).
 
-OProfile
---------
+## OProfile
 
 If you are on Linux, you can use [OProfile](http://oprofile.sourceforge.net/news/), a low-overhead profiler which uses a kernel module to minimize its impact.
 
@@ -86,8 +81,7 @@ To get information about source files and line numbers, also pass the *-g* optio
 
 See the [OProfile manual](http://oprofile.sourceforge.net/doc/) for more information.
 
-Shark (for MacOSX)
-------------------
+## Shark (for MacOSX)
 
 You might find [Shark 4](http://developer.apple.com/tools/sharkoptimize.html) useful if you're on MacOSX.
 
@@ -98,8 +92,7 @@ Even if Java's memory management prevents most memory issues (unaligned writes, 
 
 Note: *heap* is Java speak for *memory*.
 
-Javassist-based
----------------
+## Javassist-based
 
 A quite versatile method is to use (and possibly modify) the class {% include github org='fiji' repo='fiji-compat' source='fiji/MemoryProfiler.java' label='fiji.MemoryProfiler' %} in *fiji-compat.jar*.
 
@@ -114,8 +107,7 @@ If you want to instrument any class handled by {% include github org='imagej' re
     ./fiji -Dpatch.ij1=false --cp jars/javassist.jar --cp jars/fiji-compat.jar \
         --cp jars/ij.jar --main-class fiji.MemoryProfiler -- ij.ImageJ
 
-Using JVisualVM
----------------
+## Using JVisualVM
 
 JDK6 and newer come with a quite useful tool called *jvisualvm*. It is in the *bin/* directory of the Java Development Kit (it does not come with the JRE, also known as *Java Runtime Environment*).
 

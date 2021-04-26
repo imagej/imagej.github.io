@@ -34,8 +34,7 @@ Note: The builtin functions of the ImageJ Macro language are <u>not</u> availabl
 Syntax
 ======
 
-Variables
----------
+## Variables
 
 -   A variable is a placeholder for a changing entity
 -   Each variable has a name
@@ -77,8 +76,7 @@ Note that the right hand side needs to be evaluated first before the value is as
 
 This statement just doubled the value of *intensity*.
 
-Comments
---------
+## Comments
 
 It is important to use comments in your source code, not only for other people to understand the intent of the code, but also for yourself, when you come back to your code in 6 months. Comments look like this:
 
@@ -101,8 +99,7 @@ If you have a substantial amount of things to say in a comment, you might use mu
      by a star followed by a slash:
     */
 
-Further reading
----------------
+## Further reading
 
 For more information, see BeanShell's [Quickstart](http://www.beanshell.org/manual/quickstart.html) page.
 
@@ -116,8 +113,7 @@ You can *source* scripts (i.e. interpret another script before continuing to int
 Examples
 ========
 
-Add CIEL\*a\*b numbers to the status bar
-----------------------------------------
+## Add CIEL\*a\*b numbers to the status bar
 
 If your monitor is calibrated to *sRGB*, there is an easy way to do display also the *L*, *a* and *b* values in the status bar:
 

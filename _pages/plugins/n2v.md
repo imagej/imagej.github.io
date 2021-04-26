@@ -42,8 +42,7 @@ You should now have access to these plugins:
 Usage
 =====
 
-Training
---------
+## Training
 
 Training without GPU support is possible, but will take ages. Please read the notes on [this page](/develop/tensorflow) for how to run the tools on the GPU.
 
@@ -93,8 +92,7 @@ Training without GPU support is possible, but will take ages. Please read the no
 3.  Click `Ok`
 4.  Look below at the [What happens during and after training](#what-happens-during-and-after-training) section for what happens next
 
-What happens during and after training
---------------------------------------
+## What happens during and after training
 
 {% include thumbnail src='/media/N2v-train-progress.png' title='N2V training progress window'%} {% include thumbnail src='/media/N2v-train-preview.png' title='N2V training preview window'%} During training, you will see two windows:
 
@@ -109,8 +107,7 @@ They are stored to a temporary location which you can see in the Overview sectio
 
 <b>Copy the model from there to another permanent destination on your disk if you want to keep this trained model.</b>
 
-Prediction
-----------
+## Prediction
 
 There are two ways to predict from a trained model.
 
@@ -144,13 +141,11 @@ How to handle macros / scripts / models from the first early release of N2V for 
 
 Thank you for testing the first early release version! Here is what changed, if that does not help you getting already trained models or scripts running, please write a post in the forum!
 
-Update Site
------------
+## Update Site
 
 You don't need the N2V update site any more, the CSBDeep update site is sufficient. Please remove the N2V update site.
 
-Macros / Scripts
-----------------
+## Macros / Scripts
 
 -   the `predict` command was renamed to `N2V predict`
 -   the `train` command was renamed to `N2V train`
@@ -162,7 +157,6 @@ Macros / Scripts
 -   the training output `latestTrainedModelPath` changed to `latestTrainedModel` (it's a displayable model object now)
 -   the training output `bestTrainedModelPath` changed to `bestTrainedModel` (it's a displayable model object now)
 
-Trained models
---------------
+## Trained models
 
 Models trained with the first N2V for Fiji version cannot be used with the newer commands for model prediction. Please upgrade them first by using the command `Plugins > CSBDeep > N2V > Upgrade old N2V model`. ! Note: When testing this, I had to unzip and zip the new model before it was usable. I'll try to fix this, but if you run into problems with the converted model, try unzipping and zipping it again.

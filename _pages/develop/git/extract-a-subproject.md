@@ -9,8 +9,7 @@ section: Development:Git
 
 This tutorial describes how to split part of a Git repository into its own dedicated Git repository, preserving only the history relevant to the subproject being extracted.
 
-Extract the revision history
-----------------------------
+## Extract the revision history
 
 1.  Use Git's *filter-branch* feature to extract the Git history of only the subproject:
         git filter-branch -f --prune-empty --subdirectory-filter <subdir>
@@ -20,8 +19,7 @@ Extract the revision history
 </li>
 </ol>
 
-Update the Maven build
-----------------------
+## Update the Maven build
 
 Assuming you are using [Maven](/develop/maven) to build the subproject:
 
@@ -34,8 +32,7 @@ Assuming you are using [Maven](/develop/maven) to build the subproject:
         mvn clean package
 5.  Add (or adjust) the *.gitignore* file (see [example](https://github.com/fiji/spimreconstruction/commit/cf95dcc06b31c0044b58213c12f886027a5eb3ba)).
 
-Push the changes
-----------------
+## Push the changes
 
 1.  Make sure that all your changes look good:
         git status
@@ -52,8 +49,7 @@ Push the changes
 5.  Push the resultant history to the project's new repository:
         git push -u origin master
 
-Change any online resources
----------------------------
+## Change any online resources
 
 1.  Edit the relevant web page(s) to reflect the new Git repository location
 2.  Update any other known links to the project

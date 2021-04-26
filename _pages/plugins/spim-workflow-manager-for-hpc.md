@@ -20,8 +20,7 @@ Addressing this issue is particularly challenging as Fiji is an extraordinarily 
 Description
 ===========
 
-SPIM data processing pipeline
------------------------------
+## SPIM data processing pipeline
 
 SPIM ("Selective/Single Plane Illumination Microscopy") typically images living biological samples from multiple angles (views) collecting several 3D image stacks to cover the entire biological specimen. The 3D image stacks, representing one time point in a long-term time-lapse acquisition, need to be registered to each other which is typically achieved using fluorescent beads as fiduciary markers. After the registration, the individual views within one time point need to be combined into a single output image either by content-based fusion or multi-view deconvolution [\[Multiview-reconstruction](/plugins/multiview-reconstruction)\]. The living specimen can move during acquisition, necessitating an intermediate step of time-lapse registration. Whereas parallel processing of individual time points has proven to be beneficial, the time-lapse registration takes only a few seconds and can therefore be performed on a single computing node without the need for parallelization.
 
@@ -29,8 +28,7 @@ The sheer amount of the SPIM data requires conversion from raw microscopy data t
 
 Pipeline input parameters are entered by a user into a *config.yaml* configuration file. In the first step, the .czi raw data are concurrently resaved into the HDF5 container in parallel on the cluster. Similarly, the individual time points are registered in parallel using fluorescent beads as fiduciary markers on the cluster. Subsequently, a non-parallel job executed by *Snakemake* consolidate the registration XML files into a single one, followed by time-lapse registration using the beads segmented during the spatial registration step. After this, the pipeline diverge into either parallel content-based fusion or parallel multi-view deconvolution. To achieve this divergence in practice, the *Snakemake* pipeline is launched from the Fiji plugin as two separate jobs using two different *config.yaml* files set to execute content-based fusion and deconvolution respectively. In the final stage of the pipeline, the fusion/deconvolution output is saved into a new HDF5 container. Figure below shows results of registration, fusion and deconvolution in different time points. <img src="/media/Drosophila.PNG" width="800"/>
 
-HEAppE middleware
------------------
+## HEAppE middleware
 
 Accessing a remote HPC cluster is often burdened by administrative overhead due to more or less complex security policies enforced by HPC centers. This barrier can be substantially lowered by employing a middleware tool based on the HPC-as-a-Service concept. To provide this simple and intuitive access to the supercomputing infrastructure an in-house application framework called High-End Application Execution [(HEAppE)](http://heappe.eu) Middleware has been developed. This middleware provides HPC capabilities to the users and third-party applications without the need to manage the running jobs from the command-line interface of the HPC scheduler on the cluster.
 

@@ -8,8 +8,7 @@ categories: Import-Export,Plugins
 
 These are a set of plugins that are used to work with data in the frame direction. The F\_Project plugin projects the images in the frame direction into a lower dimension using different methods. The F\_Profiler pulgin plots the contents of an ROI through the frame direction. The Frame\_Slider provides sliders to step though the frames of a hyperstacks based on the variable/values in the slice labels.
 
-F\_Project
-----------
+## F\_Project
 
 <img src="/media/F Project ScreenShot.jpg" width="400"/>
 
@@ -184,25 +183,21 @@ ImagePlus[] pimp = F_Project.compute(imp, new F_Project.Compute() {
    }, mask, new ImagePlus[0]);
 ```
 
-F\_Profilier
-------------
+## F\_Profilier
 
 <img src="/media/F Profiler Screenshot.jpg" width="400"/>  
 Given a Hyperstack image, draw an ROI and start plugin. Manipulate the ROI and the plot changes. Check out Interactive\_Fitting plugin.
 
-Frame\_Slider
--------------
+## Frame\_Slider
 
 <img src="/media/Frame Slider Screenshot.jpg" width="400"/>  
 When you have one or more Hyperstacks open and want to step though the images per the variables in the slice labels, start the Frame\_Slider with the dataset with the most variables, select the other datasets, and step through them using the sliders. The datasets should all be governed by the same set of variables, i.e., The two left images are the raw data with repeats and the two right images are the mean and SNR projections, to see why click the scrollbars.
 
-Install
--------
+## Install
 
 Unzip [Frames.zip](/media/Frames.zip) into ImageJ1 plugins (File&gt;Show Folder&gt;Plugins) or plugins/jars directories. Source code in jar file.
 
-ChangeLog
----------
+## ChangeLog
 
 * 1 April 2018 - Initial Version.
 * 1 April 2019 - Updated.

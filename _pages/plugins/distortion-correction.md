@@ -10,8 +10,7 @@ categories: Plugins,Transform
 {% endcapture %}
 {% include info-box software='ImageJ' name='Lens correction' author='Verena Kaynig (verena.kaynig \[at\] inf.ethz.ch)' maintainer='Verena Kaynig' filename='included in [TrakEM2](/plugins/trakem2)' source=source latest-version='18/05/2010' status='active' %}== Purpose == This plugin can be used to estimate nonlinear distortions induced by the image acquisition process[1] . It does not require special calibration samples, but needs sufficient overlapping image areas with preferably high contrast. For further information on how to best arrange calibration images please see the documentation.
 
-Documentation
--------------
+## Documentation
 
 The documentation of this plugin is in [this pdf.](http://www.kaynig.de/downloads/DistortionCorrectionPlugin_Manual.pdf)
 

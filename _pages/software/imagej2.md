@@ -34,8 +34,7 @@ To ensure backwards compatibility, ImageJ2 has been designed to fully integrate 
 The [Fiji](/fiji) distribution of ImageJ has shipped with beta versions of ImageJ2 for quite some time, so you may already be familiar with some of ImageJ2's features—some of which, such as the [Updater](/plugins/updater) and [Launcher](Launcher), were originally developed as part of Fiji. 
 
 
-Features of ImageJ2
--------------------
+## Features of ImageJ2
 
 ImageJ2 provides a wealth of new features and capabilities:
 
@@ -82,8 +81,7 @@ The following software component libraries form the core of ImageJ2:
 
 See the [Architecture](/develop/architecture) page for further details.
 
-Rationale
----------
+## Rationale
 
 In recent years a segment of the ImageJ developer community has repeatedly inquired as to ImageJ's future. The program has been successful enough that it would greatly benefit from modern open source software best practices: a publicly accessible source code repository, a suite of unit tests with a continuous build integration system, a central repository of extensions, clear guidelines on how external developers can contribute to both those extensions and to the core program when warranted, and a development roadmap addressing feature requests and tasks from the community.
 
@@ -96,29 +94,25 @@ Listening to the ImageJ community, it is clear that:
 
 For more details, see the [presentation from the 2010 ImageJ Conference](http://developer.imagej.net/2010/10/29/imagejdev-presentation-imagejconf-2010).
 
-Funding
--------
+## Funding
 
 ImageJ2 is funded from a variety of sources. See the [Funding](/about/funding) page for details.
 
-Publications
-------------
+## Publications
 
 -   {% include publication content='ImageJ2' %}
 -   {% include publication content='Ecosystem' %}
 
 For the moment, we suggest using "The ImageJ ecosystem" paper for citations. But we recommend both of the above for learning about ImageJ2 in depth.
 
-Presentations
--------------
+## Presentations
 
 -   2017-Feb-16 "What's New in ImageJ2?" \[ [slides](/presentations/2017-02-16-imagej2-neubias/) \]
 -   2015-Sep-03 "The ImageJ2 platform, and the Fiji distribution of ImageJ" \[ [video](https://vimeo.com/140929687), [slides](/presentations/2015-09-03-imagej2-and-fiji/) \]
 -   2012-Oct-24 "ImageJ2: Current Status and Future Directions" \[ [slides](http://conference.imagej.net/2012/curtis-rueden/2012-10-24-imagej-conference.odp) \]
 -   2010-Oct-27 "ImageJDev: Next Generation ImageJ" \[ [slides](http://conference.imagej.net/2010/curtis-rueden/2010-10-27-ImageJDev.pdf) \]
 
-See also
---------
+## See also
 
 -   [ImageJ1-ImageJ2 cheat sheet](ImageJ1-ImageJ2_cheat_sheet)
 

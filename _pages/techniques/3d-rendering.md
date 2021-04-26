@@ -5,8 +5,7 @@ title: 3d rendering
 
 3D rendering in Fiji ecosystem
 
-Currently available options
----------------------------
+## Currently available options
 
 -   Existing [3D Viewer](/plugins/3d-viewer)
 -   [BigDataViewer](/plugins/bdv)
@@ -17,7 +16,6 @@ Currently available options
 -   [VTK](VTK)
 -   [Imaris](Imaris) (some have linked to it)
 
-See also
---------
+## See also
 
 -   [LOCI's review of Imaris alternatives](https://loci.wisc.edu/outreach/3d-viz)

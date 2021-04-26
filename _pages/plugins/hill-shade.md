@@ -9,15 +9,13 @@ Hill Shade
 
 **Produces relief shading as in topographic maps, assuming that the pixel value is the height of a surface at the given position (x, y).**
 
-Description
------------
+## Description
 
 The plugin needs an 8-bit, 16-bit or float (=32-bit) input image; pixel value (height) calibration of 8-bit and 16-bit input images is taken into account. The plugin produces a new 8-bit grayscale output image, irrespective of the type of input image. Preview is shown as an overlay of the input image, however.
 
 The math behind it: When 'Nonlinear Contrast' and 'Half Brightness for Flat Areas' are off, the brightness of the output image is proportional to the cosine of the angle between the direction perpendicular to surface and the direction to the light source (sun), i.e., the surface is shows [Lambertian reflectance](https://en.wikipedia.org/wiki/Lambertian_reflectance). If that angle is 90 degrees or more, i.e. if the slope that is directed away from the sun, the output is black. It is assumed that the "Mountains" do not cast a shadow, however.
 
-Dialog parameters
------------------
+## Dialog parameters
 
 ![Dialog screen shot](/media/Hillshade-screenshot.jpg "Dialog screen shot")
 
@@ -28,8 +26,7 @@ Dialog parameters
 -   **Nonlinear Contrast** - when &gt; 0, contrast for gentle slopes gets enhanced. Typical values are 1-5.
 -   **Half Brightness for Horizontal** - when selected, a gamma correction is applied to the output, such that a horizontal plane will appear with half brightness (pixel value = 128), irrespective of the elevation of the sun. When not selected, the pixel value of a horizontal plane will be roughly 256\*sin(Sun\_Elevation). In that case, a horizontal plane gets half brighness only at sun elevation of 30°, the output gets brighter if the sun elevation is higher, and darker if it is lower.
 
-Tips
-----
+## Tips
 
 <figure><img src="/media/Hillshade-overlay-example.jpg" title="Topographic map created by superposition, click to enlarge" width="280" alt="Topographic map created by superposition, click to enlarge" /><figcaption aria-hidden="true">Topographic map created by superposition, click to enlarge</figcaption></figure>
 
@@ -42,20 +39,17 @@ Tips
     -   The image at the right shows an example, based on Space Shuttle Radar Topography Mission data of the area around Austria's highest mountain, the Großglockner.
 -   Such a superimposed map can be also loaded as 'Texture' when using the [Interactive 3D surface plot](/ij/plugins/surface-plot-3d.html) plugin.
 
-Version History
----------------
+## Version History
 
 -   2014-Nov-22 Michael Schmid: enhanced version of the plugin released on the ImageJ mailing list a few days earlier
 
-Usage
------
+## Usage
 
 -   Copy [Hill\_Shade.java](https://imagejdocu.tudor.lu/_media/plugin/filter/hill_shade/hill_shade.java) into the ImageJ plugins folder or a subfolder thereof (make sure you name the downloaded file "Hill\_Shade.java"; uppercase/lowercase matters).
 -   Compile with "Compile and run".
 -   Alternatively, directly save the compiled class file [Hill\_Shade.class](/media/Hill Shade.class) into the ImageJ/plugins directory or an immediate subdirectory thereof. Again, make sure that you name the file correctly.
 
-Related Links
--------------
+## Related Links
 
 -   Find out the elevation and azimuth of the Sun (or Moon) at any day/time for a given location: http://aa.usno.navy.mil/data/docs/AltAz.php
 -   Get elevation maps for a given place at this website: http://srtm.csi.cgiar.org/SELECTION/inputCoord.asp

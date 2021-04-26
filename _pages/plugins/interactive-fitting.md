@@ -10,8 +10,7 @@ The Interactive\_Fitting plugin provides the ability to fit plotted data to an e
 
 N.B., I wish to express gratitude to the immense work that I was able to add a little part to.
 
-Features
---------
+## Features
 
 <img src="/media/Interactive Fitting.jpg" width="800"/>  
 **PlotWindow** identifies the PlotWindow that contains the plot of interest.  
@@ -28,8 +27,7 @@ Features
 **Copy to Clipboard** allow the information from the current settings to be captured for later use. May be pasted into the primary equation field to recover the current equations/parameters settings.  
 The *status field* presents any pertinent details about the fitting / updating.
 
-Coding Goodies
---------------
+## Coding Goodies
 
 Fancy control of the GUI so that only relevant information is used.
 
@@ -37,24 +35,20 @@ Evaluating equations using the macro processor.
 
 Interrogating plots and reacting as they change.
 
-Install
--------
+## Install
 
 Unzip [Interactive\_Fitting.zip](/media/Interactive_Fitting.zip) into ImageJ1 plugins (File&gt;Show Folder&gt;Plugins) or plugins/jars directories. Source code in jar file.  
 **Plugins&gt;Interactive&gt;Interactive\_Plotting...**
 
-Licence
--------
+## Licence
 
 GPL distribution licence.
 
-ChangeLog
----------
+## ChangeLog
 
 1 April 2020 Initial version.
 
-Known Bugs
-----------
+## Known Bugs
 
 Let me know.
 

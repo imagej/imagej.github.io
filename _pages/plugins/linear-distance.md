@@ -14,33 +14,27 @@ More information on github.
 
 For automatic installation in Fiji, add update site SimonKlein.
 
-LinearDistance
---------------
+## LinearDistance
 
 Plugin for ImageJ to measure linear distances in binary images in X and Y direction. It scans an image linewise (with a given skip distance) in both directions and finds stripes of only black or white and calculates the mean length of these stripes.
 
-Application
------------
+## Application
 
 Used for the calcuation of mean free paths in a two phase material.
 
-Dependecies
------------
+## Dependecies
 
 tested with ImageJ 1.50e and Fiji
 
-Installation
-------------
+## Installation
 
 Copy the File **LinearDistance\_.jar** in the plugins/jars folder. When using Fiji, you can simply add the update site **LinearDistance**.
 
-Usage
------
+## Usage
 
 Open one or more binary (black/white) images or binarize an image. Start the plugin by selecting "Plugins&gt;Analyze&gt;Measure linear distances" and select the results you want to obtain.
 
-Available Options
------------------
+## Available Options
 
 | Option                         | Description                                                            |
 |--------------------------------|------------------------------------------------------------------------|
@@ -52,7 +46,6 @@ Available Options
 | Numbers                        | Print the number of counted stripes                                    |
 | Both Phases                    | Calculates also the mean of both (all) Phases (Black and White)        |
 
-Source
-------
+## Source
 
 Source available at [https://github.com/kleinsimon/LinearDistance/](https://github.com/kleinsimon/LinearDistance/)

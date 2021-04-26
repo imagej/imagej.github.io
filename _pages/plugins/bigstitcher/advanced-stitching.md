@@ -19,8 +19,7 @@ We currently support three different ways of calculating pairwise shifts.
 
 {% include info-box content='We strongly advice to try the default **Phase Correlation** first, as it tends to give the most robust results in comparison to the more specialized methods below.' %}
 
-Advanced phase correlation
---------------------------
+## Advanced phase correlation
 
 First, you will be asked for parameters for the phase correlation calculation:
 
@@ -34,8 +33,7 @@ Next, you will be asked how to treat grouped views and which downsampling of the
 
 <img src="/media/BigStitcher stitch advanced phasecorr.png" width="600"/>
 
-Iterative alignment via Lucas-Kanade algorithm
-----------------------------------------------
+## Iterative alignment via Lucas-Kanade algorithm
 
 The Lucas-Kanade Algorithm can align two images by iteratively minimizing the difference between them via Gradient descent an the transformation parameters. It can in theory be used for more complex transformation models, such as affine transforms, but at the moment, we restrict it to a simple translation. Lucas-Kanade tends to produce good, subpixel-accurate alignments. It requires, however, that the images **are already roughly aligned**, otherwise the optimization often fails to determine the correct shift.
 
@@ -49,8 +47,7 @@ Next, you will be asked how to treat grouped views and which downsampling of the
 
 <img src="/media/BigStitcher stitch advanced lk.png" width="600"/>
 
-Interest point-based shift calculation
---------------------------------------
+## Interest point-based shift calculation
 
 Finally, you can use the interest point-based registration of the [Multiview-Reconstruction](/plugins/multiview-reconstruction) to determine pairwise shifts. In the right-click menu, you can choose whether to do the alignment with **new interest points** or **existing interest points** (if they exist).
 

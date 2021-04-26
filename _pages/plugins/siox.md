@@ -23,8 +23,7 @@ artifact: sc.fiji:Siox\_Segmentation
 
 This is a Fiji plugin based on the [SIOX project](http://www.siox.org) **to segment color images**. [SIOX](/plugins/siox) stands for *Simple Interactive Object Extraction*, a method for **extracting foreground from still images** with very little user interaction. [SIOX](/plugins/siox) is fast, noise robust and can therefore also be used for the segmentation of videos. It avoids many of the drawbacks of graph-based segmentation methods but performs about equally well on different benchmarks. [SIOX](/plugins/siox) is open and free (Apache License) and the authors have intentionally not patented any part of the technology. As a result, it has been integrated into several open-source image manipulation programs over the past years. [SIOX](/plugins/siox) is the underlying algorithm of the foreground extraction tool in the GNU Image Manipulation Program ([GIMP](http://www.gimp.org/)) and is part of the tracer tool in [Inkscape](http://www.inkscape.org/). [SIOX](/plugins/siox) originates from [E-Chalk](http://www.echalk.de/) where an instructor standing in front of an electronic chalkboard is segmented. Variants of [SIOX](/plugins/siox) are being used for robotic vision and for improving 3D time-of-flight camera segmentation.
 
-Quick Start
------------
+## Quick Start
 
 **Premises:**  
 In order to call the plugin, you need to have at least one **RGB color image** open.
@@ -46,8 +45,7 @@ Click the "Reset" button to restart the process or click on the "Create mask" bu
 
 <table><tbody><tr class="odd"><td><p>style="vertical-align:top"|{% include thumbnail src='/media/Screenshot-SIOX Segmentation.png' title='SIOX segmentation Graphical User Interface applied to Leaf sample'%}</p></td><td><p>style="vertical-align:top"|{% include thumbnail src='/media/SIOX-Mask.png' title='Resulting mask of Leaf sample after SIOX segmentation'%}</p></td></tr></tbody></table>
 
-User Manual
------------
+## User Manual
 
 [SIOX](/plugins/siox) is a plugin designed to segment 2D color images. If the image is not RGB color, it can be converted to RGB using the command {% include bc path='Image | Type | RGB Color'%}. However, the [SIOX](/plugins/siox) algorithm makes uses color information, so it is expected to work better on real RGB images.
 
@@ -177,16 +175,14 @@ The segmentator will be applied to the selected image or stack and the result wi
 
 **Note**: when applying a saved segmentator there is no information about the size of the expected foreground components so the largest component will be used as reference. The multiple component option will be consistent with what it was used during the segmentator calculation.
 
-API documentation
------------------
+## API documentation
 
 The latest documentation of the package can be found here:
 
 -   For the SIOX plugin: [https://fiji.sc/javadoc/siox/package-summary.html](https://fiji.sc/javadoc/siox/package-summary.html)
 -   For the SIOX library: [https://fiji.sc/javadoc/org/siox/package-summary.html](https://fiji.sc/javadoc/org/siox/package-summary.html)
 
-References
-----------
+## References
 
 Most Comprehensive Work:
 
@@ -200,22 +196,19 @@ Still Image Approach:
 -   G. Friedland, K. Jantz, T. Lenz, R. Rojas: Extending the SIOX Algorithm: Alternative Clustering Methods, Sub-pixel Accurate Object Extraction from Still Images, and Generic Video Segmentation, [Technical Report B-06-06](http://www.siox.org/downloads/tr-b-06-06.pdf), Department of Computer Science, Freie Universitaet Berlin, January 2006 (PDF, 10MB).
 -   G. Friedland, K. Jantz, T. Lenz, F. Wiesel, R. Rojas: A Practical Approach to Boundary-Accurate Multi-Object Extraction from Still Images and Videos, to appear in Proceedings of the IEEE International Symposium on Multimedia (ISM2006), San Diego (California), December, 2006.
 
-ImageJ version
---------------
+## ImageJ version
 
 Thanks to {%- include person id='rasband' -%}, there is an [ImageJ](/ij/plugins/siox/index.html) version of this plugin without Fiji dependencies:
 
 [/ij/plugins/siox/index.html](/ij/plugins/siox/index.html)
 
-Licenses
---------
+## Licenses
 
 The [SIOX Java library](https://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Siox_Segmentation/org;h=902e7e0379b36f7f03b512552fb899861d866fa9;hb=d451306e290fb55a31052cbfc5426eaa70df17d6) developed by [Gerald Friedland](http://www.gerald-friedland.org/), [Kristian Jantz](http://www.inf.fu-berlin.de/~jantz) and [Lars Knipping](http://www.inf.fu-berlin.de/~knipping) is licensed under the **Apache License**, Version 2.0 (the "/licensing"): [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0). Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
 The Fiji plugin GUI, developed by {%- include person id='iarganda' -%}, [Stephan Saalfeld](http://fly.mpi-cbg.de/~saalfeld/) and {%- include person id='dscho' -%} is free software; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt](http://www.gnu.org/licenses/gpl.txt)).
 
-See also
---------
+## See also
 
 -   Original SIOX project: [http://www.siox.org/](http://www.siox.org/)
 -   SIOX project FAQs: [http://www.siox.org/faq.html](http://www.siox.org/faq.html)

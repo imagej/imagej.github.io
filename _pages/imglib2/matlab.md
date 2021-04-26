@@ -12,8 +12,7 @@ All snippets listed here are to be run from [MATLAB](/scripting/matlab). We rely
 
     Miji(false)
 
-Creating a new ImgLib2 image in MATLAB
---------------------------------------
+## Creating a new ImgLib2 image in MATLAB
 
 In [MATLAB](/scripting/matlab), we are limited to native type images (float, uint8, uint16, ...) represented as native arrays. The matching ImgLib2 container for this is the {% include github repo='imglib' path='core/src/main/java/net/imglib2/img/array/ArrayImg.java' label='ArrayImg' %}.
 
@@ -30,15 +29,13 @@ We note that the ImageJ display is rotated and flipped regarding the [MATLAB](/s
 
 Note also that the raw data was cast from 64-bit double data to 32-bit float for display. But the source `img` has the expected type.
 
-MATLAB to ImgLib2 bridge functions
-----------------------------------
+## MATLAB to ImgLib2 bridge functions
 
 The exacts method in `ArrayImgs` depend on the native type you want to use, so you would have to deal with all possible cases. But there is already some [MATLAB](/scripting/matlab) functions in Fiji that does that in the `scripts` folder of your Fiji installation: {% include github repo='fiji' path='scripts/copytoImg.m' label='copytoImg' %} and {% include github repo='fiji' path='scripts/copytoImgPlus.m' label='copytoImgPlus' %}. You need therefore to add `scripts` to your [MATLAB](/scripting/matlab) path, but this is most likely already done since it also contains `Miji` which you need to call already.
 
 The first function generates a plain `Img`. The second one generates and `ImgPlus` which allows you specifying the spatial calibration, image name and axis types. Check the help of these functions for details.
 
-Example usage
--------------
+## Example usage
 
 Let's put ImgLib2 to work to filter a source image using anisotropic diffusion:
 
@@ -50,8 +47,7 @@ Let's put ImgLib2 to work to filter a source image using anisotropic diffusion:
     end
     net.imglib2.img.display.imagej.ImageJFunctions.show(img);
 
-Retrieving the content of an ImgLib2 image in MATLAB
-----------------------------------------------------
+## Retrieving the content of an ImgLib2 image in MATLAB
 
 Now we want to get the result back in [MATLAB](/scripting/matlab). Since we are using `ArrayImg`, we can always access the underlying java primitive array that the `Img` wraps, but we still have to keep in mind the X and Y dimension permutation. Also: the wrapped array is a 1D, very long array, that can be looked upon as the row-by-row concatenation of the image content. We have to reshape it in [MATLAB](/scripting/matlab) to give the image back its aspect:
 
@@ -101,8 +97,7 @@ But when we call the `getCurrentStorageArray` method, we retrieve this internal 
 
 But of course, there is a [MATLAB](/scripting/matlab) function that does all of this for you, and that you can also find in the scripts folder of your Fiji installation: {% include github repo='fiji' path='scripts/copytoMatlab.m' label='copytoMatlab' %}.
 
-MATLAB arrays are not shared
-----------------------------
+## MATLAB arrays are not shared
 
 We expect the underlying raw data - an array of doubles - to be shared between [MATLAB](/scripting/matlab) and ImgLib2. Unfortunately, it isn't so. Let's try to turn the first column entirely white
 
@@ -115,8 +110,7 @@ It did not work: the ImgLib2 image did not see the change. This means that it do
 
 This is by construction, and there is no workaround, at least for Java[2]. [MATLAB](/scripting/matlab) passes all the data *per-value*, not *per-reference* and this is what happened here.
 
-Using Java arrays in MATLAB
----------------------------
+## Using Java arrays in MATLAB
 
 A first attempt to solve this would be to try and use Java arrays in [MATLAB](/scripting/matlab), which is made possible by the function `javaArray`. As explained in the [[MATLAB](/scripting/matlab) docs](http://www.mathworks.fr/fr/help/matlab/matlab_external/working-with-java-arrays.html), you can use this function to instantiate proper Java arrays, which we could then use to create an ImgLib2 image, and play with the same data both on the [MATLAB](/scripting/matlab) side and on the ImgLib2 side.
 
@@ -135,8 +129,7 @@ An array of `java.lang.Double[]` is not acceptable for most of our use cases. We
 
 As of now ([MATLAB](/scripting/matlab) 2013a), this answer seems to be definitive: There is no workaround if we are to stay with a native array in [MATLAB](/scripting/matlab).
 
-Using ImgLib2 types as primary data holder
-------------------------------------------
+## Using ImgLib2 types as primary data holder
 
 Therefore, a solution implies a change of approach. We will not use [MATLAB](/scripting/matlab) matrices as data holder, but use ImgLib2 structures. We can access the raw data through ImgLib2 facilities (cursor, randomAcess, ...). The changes made are then done *in place*, and will be visible from both ImgLib2 and [MATLAB](/scripting/matlab), provided the data is accessed from the ImgLib2 container. We also already saw that `ArrayImg`s wrap a native array, that we can copy to [MATLAB](/scripting/matlab) shall we need to quickly get the whole dataset.
 

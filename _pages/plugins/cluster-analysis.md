@@ -10,15 +10,13 @@ Introduction
 
 Fiji-Plugin to segment and quantify confocal images.
 
-Install Plugin in Fiji
-----------------------
+## Install Plugin in Fiji
 
 The Cluster Analysis Plugin is integrated in the built-in Updater Site of Imagej and regular updates are available through it.
 
 Go directly on your local Fiji-application and click on Update &gt; Manage update sites &gt; Add my site and type in the ImageJ Wiki account dcolam. After that all scripts and dependencies should be installed in the right place and you only need to restart Fiji.
 
-Prerequisites
--------------
+## Prerequisites
 
 Only thing one should follow, is the right organisation of the folder where you keep the images to be analyzed. In particular the titles should all have the same structure, meaning all useful information should be separated by a common delimiter (e.g. an underscore) that you need to specify and all images should have the same number of information (XX\_YY\_ZZ.tif for example, another title should accordingly look something like this AA\_BB\_CC.tif). The script throw an error, if the titles don't have the same length. The script will initiate a database extracting informations from the title that you can specify and describe later on.
 
@@ -26,8 +24,7 @@ https://raw.githubusercontent.com/dcolam/Cluster-Analysis-Plugin/blob/master/Exa
 
 If you want to exclude a particular information, don't type anything into the field
 
-Running the Plugin
-------------------
+## Running the Plugin
 
 After successfull installation, you will find in Plugins &gt; Cluster Analysis three sections, namely the script starter, the Manual and Helper which redirects you to this github-repository and a ini.cfg-file loader which will allow you to feed in older ini.cfg-files from other experiments. Load an ini.file from a previous experiment before starting the script and then run the Cluster Analysis script with the new parameters.
 
@@ -38,8 +35,7 @@ The general script workflow consists of several steps:
 -   Either reconfigure the parameters or start the experiment
 -   In experimental mode, all images will be analyzed in the background
 
-Parameter Configuration
------------------------
+## Parameter Configuration
 
 After clicking on Cluster Analysis, a dialog should appear, where you need to specify the input folder path to your images. In addition, you can run the script in headless-mode, meaning that the current ini.cfg with all parameters from a previous run will be read directly and run directly in experimental mode. You also have the possibility to click the "Set Measurements"-option to choose which type of measurements such as Area, Mean Grey Value, Integrated Intensity or Perimeter to describe the particles in your images. Additionally, set a name for the current run. At the end, all parameters stored in that run will be stored in a configuration-file with the experiment name. If you re-run an analysis with the same name, your configuration-file will be overwritten.
 

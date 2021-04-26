@@ -13,8 +13,7 @@ title: Robust clump splitting
 {% endcapture %}
 {% include info-box software='Fiji' name='Robust Clump Splitting' author=author maintainer=maintainer filename='ij\_robust\_split.jar \[\]' source='Github https://github.com/thorstenwagner/ij-robust-split' latest-version='v1.0.0 (04 Sep 2016)' status='active' %}
 
-Purpose
--------
+## Purpose
 
 This plugin is an implementation of the concavity-based clump splitting algorithms described in:
 
@@ -30,8 +29,7 @@ The plugin provides an alternative to the ImageJ "build-in"-[watershed](/ij/docs
 
 It depends on the [IJ-Blob](/plugins/ij-blob) library, the [Vecmath](https://github.com/hharrison/vecmath) library, the [LIBSVM](https://www.csie.ntu.edu.tw/~cjlin/libsvm/) library and the [JavaML](http://java-ml.sourceforge.net/) library.
 
-Plugin usage
-------------
+## Plugin usage
 
 If you start the plugin you can choose between two main uses, you either want to split clumps of an image or want to train a SVM to optimize parameters $$c_1$$ and $$c_2$$. To train the SVM you need to have input data already.
 
@@ -117,8 +115,7 @@ The second window shows the parameters of this model. The optimum for $$c_1$$ an
 
 <img src="/media/SVMModelNumbers.png" width="300"/>
 
-Parameters
-----------
+## Parameters
 
 As already mentioned the main algorithm follows the publication of *Kumar et al.* The presented algorithm to specify a valid split line depends on lots of parameters, as you can see below. Not every parameter is needed for every split line type and concavity region detection
 

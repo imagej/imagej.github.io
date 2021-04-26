@@ -8,8 +8,7 @@ This page describes how to visualize the various data sets provided as part of t
 
 If you have any comments or suggestions relating to this page, please email <em>mark-diadem</em> at <em>longair</em> dot <em>net</em>.
 
-Olfactory Project Neurons
--------------------------
+## Olfactory Project Neurons
 
 This data set [is described here](http://www.diademchallenge.org/olfactory_projection_fibers_readme.html). I will go through loading the example "OP\_1". Each image stack in this data set is distributed as a directory of TIFF files, one per slice. To load such a stack, go to {% include bc path='File | Import | Image Sequence'%} and select the file "1.tif". You should be shown a dialog like this:
 
@@ -41,8 +40,7 @@ You may wish at this point to adjust the viewing options in the tracer's dialog 
 
 <img src="/media/Diadem Challenge Data-9.png" width="750"/>
 
-Diadem Neocortical Layer 6 Axons
---------------------------------
+## Diadem Neocortical Layer 6 Axons
 
 [The Neocortical Layer 6 Axons](http://www.diademchallenge.org/neocortical_layer_6_axons_readme.html) data set is based on a set of image stacks that need to be stitched together. The key point here is that you must use the offsets supplied by the Diadem challenge rather than allowing Fiji to stitch the automatically - the stitching will be subtly different.
 
@@ -96,8 +94,7 @@ Then the traces should load in the correct position with those offsets:
 
 <img src="/media/Diadem Neocortical Layer 6 Axons-6.png" width="750"/>
 
-Cerebellar Climbing Fibers
---------------------------
+## Cerebellar Climbing Fibers
 
 We will go through loading in the CF\_1 image stack from the [Cerebellar Climbing Fibers](http://www.diademchallenge.org/cerebellar_climbing_fibers_readme.html) data set. The raw data for this image is stored in RGB and about 3.4GB in size, so for convenience you may wish to load this as a virtual stack (i.e. one where the slices are loaded from disk as required), convert it to 8-bit and resave the file first. In any case, I would recommend using a machine with 2GB of RAM (at the very least) to deal with these files.
 
@@ -141,8 +138,7 @@ Make sure that "Ignore calibration" is selected (as in that screenshot) and that
 
 <img src="/media/Diadem Cerebellar-8.png" width="750"/>
 
-Hippocampal CA3 Interneuron
----------------------------
+## Hippocampal CA3 Interneuron
 
 The [Hippocampal CA3 Interneuron](http://www.diademchallenge.org/hippocampal_ca3_Interneuron_readme.html) data set is difficult to deal with, since even after converting the stack to 8-bit values, it is still nearly 2GB in size.
 
@@ -180,8 +176,7 @@ Then you can load the SWC files via "Load Traces / SWC file" with these options:
 
 <img src="/media/Diadem Hippocampal CA3 Interneuron-9.png" width="750"/>
 
-Neuromuscular Projection Fibers
--------------------------------
+## Neuromuscular Projection Fibers
 
 There are a number of caveats regarding these image data and reconstructions which are [listed on its web page](http://www.diademchallenge.org/neuromuscular_projection_fibers_readme.html).
 

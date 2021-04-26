@@ -4,8 +4,7 @@ title: Blend two images
 categories: Plugins,Scripting
 ---
 
-Purpose
--------
+## Purpose
 
 A [Clojure](/scripting/clojure) script illustrating how to:
 
@@ -16,8 +15,7 @@ A [Clojure](/scripting/clojure) script illustrating how to:
 
 The script is maintained by Albert Cardona.
 
-Code
-----
+## Code
 
     ; Albert Cardona 20080427 at MPI-CBG Dresden Fiji hackathon.
 
@@ -52,8 +50,7 @@ Code
 
     ; The above script is ready for a lot of macro abstraction
 
-See also
---------
+## See also
 
 [Clojure Scripting](/scripting/clojure)
 

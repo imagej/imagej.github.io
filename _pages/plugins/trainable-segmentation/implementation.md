@@ -12,13 +12,11 @@ categories: Segmentation,Tutorials,Plugins
 
 This page provides a high level overview of how the **deprecated** [Trainable Segmentation](/plugins/tws) plugin (TSP) works.
 
-Summary
--------
+## Summary
 
 The plug in creates a set of features for each input image pixel by individually applying various filters (for example, Gaussian blur) to the image. The user then selects sets of pixels in the image and assigns each set to a class (e.g. background, cells, nucleus, spores, cell membranes). The plug in builds a forest of classification trees by bootstrapping the feature data and assigned classes for the user chosen pixels. This is the classifier. The classifier can then be used to segment the trained image and other images by applying the forest to each pixel - the trees 'vote' for which class each pixel belongs to based on its features.
 
-Features
---------
+## Features
 
 The plugin creates a stack of images - one image for each feature. For instance, if only Gaussian Blur is selected as a feature, the classifier will be trained on the original image and four blurred images with four different $$\sigma$$ parameters for the Gaussian, so each pixel will have 5 features. If the mean is added as a feature, then each pixel will have nine features (the value of the pixel's location in the original image, four Gaussian blur images, and four mean images with different radii).
 
@@ -69,8 +67,7 @@ The pixels within a radius of 1, 2, 4, and 8 pixels from the target pixel are su
 
 Once the selected features have been calculated for each pixel (each feature stored as a separate image) and the user has chosen sets of pixels for each class, the classifier can be trained.
 
-Classifier
-----------
+## Classifier
 
 The plugin's classifier is the [Fast Random Forest](http://code.google.com/p/fast-random-forest/) (FRF) algorithm, which is based on the (wait for it) [Random Forest](http://www.springerlink.com/content/u0p06167n6173512/) algorithm. The FRF algorithm is a re-implementation of the RF code as implemented in [Weka](http://www.cs.waikato.ac.nz/ml/weka/).
 

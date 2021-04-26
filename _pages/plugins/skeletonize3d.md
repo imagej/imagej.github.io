@@ -9,13 +9,11 @@ artifact: sc.fiji:Skeletonize3D\_
 
 <table><tbody><tr class="odd"><td><p>style="vertical-align:top" |{% include thumbnail src='/media/Smoothed-bat-cochlea-volume.gif' title='Smoothed bat cochlea volume'%}</p></td><td><p>style="vertical-align:top" |{% include thumbnail src='/media/Skeleton-bat-cochlea-volume.gif' title='3D skeleton from bat cochlea volume'%}</p></td></tr></tbody></table>
 
-General Description
--------------------
+## General Description
 
 Skeletonize3D is a Fiji and ImageJ plugin that performs the {% include wikipedia title='Topological skeleton' text='skeletonization'%} of 2D and 3D binary images (8-bit images). In Fiji, you can find it under {% include bc path='Plugins | Skeleton | Skeletonize (2D/3D)'%}. If you need to analyze a 2D/3D skeleton image, you may be interested on having a look at [AnalyzeSkeleton](/plugins/analyze-skeleton).
 
-Video tutorial
---------------
+## Video tutorial
 
 For a fast introduction to [Skeletonize3D](/plugins/skeletonize3d) and [AnalyzeSkeleton](/plugins/analyze-skeleton) and an example of a real application, you can have a look at this [ video tutorial](Skeleton_analysis_video_tutorial).
 
@@ -27,8 +25,7 @@ The tutorial describes step by step how to:
 -   Extract the skeleton of a binary image with [Skeletonize3D](/plugins/skeletonize3d)
 -   Analyze the resulting skeletons in the 3D image with [AnalyzeSkeleton](/plugins/analyze-skeleton)
 
-Related work
-------------
+## Related work
 
 This work is an implementation by Ignacio Arganda-Carreras of the **3D thinning algorithm** from Lee et al. [*"Building skeleton models via 3-D medial surface/axis thinning algorithms. Computer Vision, Graphics, and Image Processing, 56(6):462–478, 1994."*](http://portal.acm.org/citation.cfm?id=202862.202867) Based on the ITK version from Hanno Homann: [http://hdl.handle.net/1926/1292](http://hdl.handle.net/1926/1292) It works with 8-bit images and stacks. It expects the images to be binary. If not, all pixel values above 0 will be considered white. The resulting skeleton image will have **pixel value 255 at the skeleton and 0 at the background** (black) pixels.
 
@@ -38,22 +35,19 @@ As Hanno Homman explains in his paper, \[...\] *binary thinning is used for find
 
 *In 3D there are 2²⁶ = 67,108,864 possible binary combinations of object and background voxels in a 26-neighborhood, which cannot be completely captured by kernel-based filters. Lee et al. have demonstrated in their work that their solution, based on a decision tree, can handle all these cases correctly and find all deletable surface points at each iteration. Thus their algorithm allows for a very fast iterative erosion process* \[...\].
 
-Changelog
----------
+## Changelog
 
 **2008/11/19**: Update: changed skeleton pixel values to 255.
 
 **2008/11/15**: First release.
 
-License
--------
+## License
 
 This program is **free software**; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt](http://www.gnu.org/licenses/gpl.txt)).
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-See also
---------
+## See also
 
 -   [Skeletonize3D at ImageJ documentation wiki](http://imagejdocu.tudor.lu/doku.php?id=plugin:morphology:skeletonize3d:start)
 

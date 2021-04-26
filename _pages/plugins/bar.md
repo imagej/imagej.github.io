@@ -29,13 +29,11 @@ categories: Analysis,Citable,Filtering,Image annotation,Plugins,Scripting,Segmen
 
 The collection contains [Macros](/scripting/macro), [Scripts](/scripting) and [Plugins](/plugins) focused on Data Analysis, Image Annotation and Image Segmentation. It is curated using {% include github org='tferr' repo='Scripts\#ij-bar' label='GitHub' %} and distributed as an optional {% include list-of-update-sites content='update site' %}.
 
-Installation
-------------
+## Installation
 
 Run {% include bc path='Help|Update...'%} and choose *Manage update sites*. Activate the *BAR* checkbox in the alphabetically-sorted list of update sites. Press *OK*, then *Apply changes*. Restart ImageJ. That's it. Enjoy BAR!
 
-Description
------------
+## Description
 
 BAR files are accessible through a dedicated top-level menu subdivided in task-oriented categories. All routines should be documented on {% include github org='tferr' repo='Scripts' path='README.md\#ij-bar' label='GitHub' %}.
 
@@ -78,8 +76,7 @@ Described in [Scripting BARs](#scripting-bars)
 {% include github org='tferr' repo='Scripts' path='README.md\#utilities' label='Utilities' %}<span id="Utilities"></span>  
 [Commander](#Commander)
 
-Accessing BARs
---------------
+## Accessing BARs
 
 As with all ImageJ commands, BAR scripts can be accessed in multiple ways: 1) through the {% include bc path="BAR |" %} menu, 2) the [Context Menu](#context-menu), 3) [Keyboard Shortcuts](#keyboard-shortcuts), 3) the *Shortcuts Menu Tool* ({% include bc path="BAR | Tool Installers | Install Shortcuts Menu" %}), that registers frequently used commands in the ImageJ toolbar, 4) by [pressing](#ExpediteAccess) {% include key content='press\|[L](#ExpediteAccess)' %}, or 5) from other [scripts, macros and plugins](#scripting-bars). 
 {% capture tip%}
@@ -409,15 +406,13 @@ Macro functions from a IJ macro [lib](#lib) may only be available once a new ins
   
 The first time you run `confirmLoading();` ImageJ will complain about `confirmLoading` being an undefined identifier, but it will successfully recognize the call the second time you run the code above.
 
-Citation
---------
+## Citation
 
 BAR scripts can be cited using the DOI associated with the repository:
 
 :\* Tiago Ferreira et al., (2016) [<img src="https://zenodo.org/badge/doi/10.5281/zenodo.28838.svg" alt="10.5281/zenodo.28838">](http://dx.doi.org/10.5281/zenodo.28838)
 
-License
--------
+## License
 
 These scripts are free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [Free Software Foundation](http://www.gnu.org/licenses/gpl.txt). This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 

@@ -17,8 +17,7 @@ If you run MATLAB R2017b and later, you don"t need to do this, as it ships and u
 MATLAB tutorial for ImageJ
 ==========================
 
-Prerequisites
--------------
+## Prerequisites
 
 -   Add the {% include list-of-update-sites content='ImageJ-MATLAB' %} update site. See [Following an update site](/update-sites/following) for more detail.
     1.  You go to `Help > Update...`
@@ -45,8 +44,7 @@ Prerequisites
 -   Alternatively, this can also be done by creating a `java.opts` file in [the startup directory](https://mathworks.com/help/matlab/matlab_env/matlab-startup-folder.html) and overriding the default memory settings (see [this documentation](https://mathworks.com/help/matlab/matlab_env/java-opts-file.html) for more information). For instance, `-Xmx512m` in your `java.opts` file may be a good start point.
 -   For the common "Out of Memory" error, see [ the Troubleshooting page](/help/troubleshooting#outofmemoryerror).
 
-Creating MATLAB scripts inside ImageJ
--------------------------------------
+## Creating MATLAB scripts inside ImageJ
 
 Using the [Script Editor](/scripting/script-editor) you will be able to select [MATLAB](/scripting/matlab) from the [ language menu](/scripting/script-editor#choosing-a-language). You can also install and run .m scripts via the [ standard script plugin infrastructure](/scripting#creating-scripts-and-using-refresh-scripts).
 
@@ -134,8 +132,7 @@ Most of the ImageJ scripting languages have implicit return values. As mentioned
 
 Instead, you can [launch ImageJ inside MATLAB](#running-imagej-within-matlab) and have it take care of managing the class loading for you. [MATLAB](/scripting/matlab) then supports the use of import statements to [simplify class names](http://www.mathworks.com/help/matlab/matlab_external/bringing-java-classes-and-methods-into-matlab-workspace.html#f46341).
 
-Running ImageJ within MATLAB
-----------------------------
+## Running ImageJ within MATLAB
 
 {% include info-box content='MATLAB versions prior to R2017b need to be [tweaked to use Java 8](http://www.mathworks.com/matlabcentral/answers/130359-how-do-i-change-the-java-virtual-machine-jvm-that-matlab-is-using-on-windows) instead of Java 7.' %}
 

@@ -7,22 +7,19 @@ artifact: sc.fiji:Stitching\_
 
 {% include warning-box content='**Please note that this version of the Stitching is deprecated. A new version is available here: [Image Stitching](/plugins/image-stitching)**' %}
 
-Citation
---------
+## Citation
 
 Please note that the Stitching, as well as other plugins available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
 -   S. Preibisch, S. Saalfeld, P. Tomancak (2009) "Globally optimal stitching of tiled 3D microscopic image acquisitions", *Bioinformatics*, **25**(11):1463-1465. [Webpage](http://bioinformatics.oxfordjournals.org/cgi/content/abstract/btp184) [PDF](http://bioinformatics.oxfordjournals.org/cgi/reprint/25/11/1463.pdf)
 
-Introduction
-------------
+## Introduction
 
 There is an increasing demand to image large biological specimen at high resolution. Typically those specimen do not fit in the field of view of the microscope. To overcome this drawback, motorized stages moving the sample are used to create a tiled scan of the whole specimen. The physical coordinates provided by the microscope stage are not precise enough to allow reconstruction ("Stitching") of the whole image from individual image stacks.
 
 The 2D/3D Stitching Plugin is able to reconstruct big images/stacks from an arbitrary number of tiled input images/stacks, making use of the Fourier Shift Theorem that computes all possible translations (x, y\[, z\]) between two 2D/3D images at once, yielding the best overlap in terms of the cross correlation measure. If more than two input images/stacks are used the correct placement of all tiles is determined using a global optimization. To remove brightness differences at the tile borders, non-linear intensity blending is applied.
 
-Overview of the Stitching Plugins
----------------------------------
+## Overview of the Stitching Plugins
 
 The Stitching package comes with 4 different plugins:
 
@@ -33,8 +30,7 @@ The Stitching package comes with 4 different plugins:
 -   **[ Stitch Collection of Images](Stitching_2D_3D#stitch-collection-of-images)**: Stitch an arbitrary number of 2D or 3D images which do not have to be in a regular grid. The rough initial configuration (which image is overlapping another one) is given in tile configuration file.
 -   **[ Stitch Directory with Images (unknown configuration)](Stitching_2D_3D#stitch-directory-with-images-unknown-configuration))**: Stitch all images that are located in a given directory without any knowledge of the tile configuration.
 
-2D Stitching and 3D Stitching
------------------------------
+## 2D Stitching and 3D Stitching
 
 {% include thumbnail src='/media/3dstitching.png' title='Shows the 3D Stitching Dialog.'%}  
 The plugins 2D/3D Stitching take two 2D/3D images as input. They can contain rectangular ROIs which limit the search to those areas, however, the full images will be stitched together. If the input images are RGB images the user can select which channels will be used to determine the correct overlap. Note: If the stitching was not successful using ROIs on the obviously overlapping area might solve the problem.
@@ -51,8 +47,7 @@ There are 5 fusion methods available right now.
 -   **Min. Intensity**: In the overlapping area the minimum intensity between both images is used int the output image.
 -   **Red/Cyan Overlay**: In the output image the first image is colored in red, the second one colored in cyan to visualize the registration. In the overlapping area the intensities should appear in gray scales (R + GB). This fusion method does not work with RGB input images for obvious reasons.
 
-Stitch Grid of Images
----------------------
+## Stitch Grid of Images
 
 {% include thumbnail src='/media/StitchGrid.png' title='Shows the Stitch Grid Dialog.'%}  
 This plugin is able to stitch a grid of images, it does not matter if it is 2D or 3D images as long as all images are of the same type. In contrast to the 2D/3D stitching of two images, this plugins will load the images from harddisc.
@@ -83,13 +78,11 @@ The last three entries describe the behaviour of the global optimization:
 
 If you check the Create only Preview checkbox the program will not register the input data but only show a the principal layout of the files to check if your input was correct.
 
-Stitch Image Grid Sequence
---------------------------
+## Stitch Image Grid Sequence
 
 This plugin complements the previous one by stitching a sequence of grid of image that must have the same X-Y grid configuration. Apart from the previous parameters, the user must now select the number of sections (*grid size z*), the file name template (for example "Tile\_Z{zzz}\_Y{yyy}\_X{xxx}.lsm"), the starting z value and the *output directory* where all resulting stitched images will be stored.
 
-Stitch Collection of Images
----------------------------
+## Stitch Collection of Images
 
 {% include thumbnail src='/media/StitchCollection.png' title='Shows the Stitch Image Collection Dialog.'%}  
 This plugin takes an arbitrary tile configuration as input which has to be stored in a file.
@@ -98,18 +91,15 @@ The plugin Stitch Grid of Images will for example create such a file.
 
 All the other parameters are the same as explained in the section [ Stitch Grid of Images](Stitching_2D_3D#stitch-grid-of-images).
 
-Stitch Directory with Images (unknown configuration)
-----------------------------------------------------
+## Stitch Directory with Images (unknown configuration)
 
 This plugin takes all images that are located in a given directory and tries to align them without any knowledge of the tile configuration. All other parameters are identical to those explained in the section [ Stitch Grid of Images](Stitching_2D_3D#stitch-grid-of-images). If the plugin does not find the correct alignment, you can try to increase the cross correlation threshold so that only pairwise alignments with very high quality are used for the global optimization. This increases the chance that the optimizer is able to detect the correct pairwise alignments. This, however, requires images with high quality as otherwise correct pairwise alignments with relatively low correlation are excluded.
 
-Stitch Multiple Series or Tile Scan File
-----------------------------------------
+## Stitch Multiple Series or Tile Scan File
 
 This plugin takes series of images contained in a single file, e.g. in the .lsm file format. It relies on [Bio-Formats](/formats/bio-formats)'s series support. The parameters are as explained in the section [ Stitch Grid of Images](Stitching_2D_3D#stitch-grid-of-images).
 
-Problems and Known Issues
--------------------------
+## Problems and Known Issues
 
 If the Stitch Grid, Stitch Collection or Stich with Unknown Configuration plugins are not able to create the correct output image you can do it yourself iteratively using the 2D/3D Stitching plugins. You just start with the first two images and fuse them. Using ROIs on clearly similar areas you can force a correct alignment. Afterwards you fuse the result with the third image and so on. The biggest drawback apart from the time consumption is that you can only use Maximum Intensity as fusion method, otherwise the image will look weird. Furthermore it will consume more memory.
 
@@ -117,8 +107,7 @@ For loading microscopic images we use the LOCI Bioformats importer. If you exper
 
 3D Stitching will not work for z-Stack size of smaller than 3 pixels. If you want to reconstruct such image from very thin tiles, duplicating of some of the stacks should solve the problem.
 
-Results & Computation time
---------------------------
+## Results & Computation time
 
 <img src="/media/ResultsStitching.jpg" title="fig:Example of Stitching of 3D confocal stacks." width="780" alt="Example of Stitching of 3D confocal stacks." />  
 The figure shows stitched images of 3D confocal tiles. (A) shows a Drosophila melanogaster pupae expressing a GFP reporter under the regulation of the yellow gene, imaged few hours before eclosion using a 4× dry lens on an Optiphot confocal microscope (Nikon). It was stitched from three image stacks arranged in a 1 × 3 grid (Table 1 first row). The maximum intensity projection is shown. (B) shows the Drosophila larval nervous system stained with three dyes, stitched from a grid of 2 × 3 RGB images (see table 1 second row), the maximum intensity projection is shown. (C) shows a zone in the dorsal telencephalon of human embryonic tissue from week 17 post conception, incubated for 24 hours at 37°C in DiI. It was imaged using a 63×/1.4 objective on Zeiss LSM 510 equipped with a motorized stage. The final image was created from 24 image stacks arranged in a 4 × 6 grid (see table 1 third row), slice 18 is shown. Special thanks to Nicolas Gompel, James W. Truman, Simone Fietz and Wieland B. Huttner for providing the images.
@@ -135,13 +124,11 @@ The figure shows stitched images of 3D confocal tiles. (A) shows a Drosophila me
 
 The Table shows examples of stitched data computed on an Intel® Quad-Core CPU machine with 2.67GHz and 24GB of RAM. The global alignments of all stitchings have an average error below 1 px, the displacements in row 1 are zero because the two alignments are independent of each other. Note that the computation time scales roughly linearly with the output image size.
 
-Contact
--------
+## Contact
 
 For any type of comment, questions or input please write to preibisch@mpi-cbg.de or visit my [homepage](http://fly.mpi-cbg.de/~preibisch).
 
-See Also
---------
+## See Also
 
 -   [The Publication on the Stitching Plugin](http://bioinformatics.oxfordjournals.org/cgi/content/abstract/btp184), S. Preibisch, S. Saalfeld, P. Tomancak (2009) Globally optimal stitching of tiled 3D microscopic image acquisitions", *Bioinformatics*, **25**(11):1463-1465. [PDF](http://bioinformatics.oxfordjournals.org/cgi/reprint/25/11/1463.pdf)
 -   [TrakEM2](/plugins/trakem2) for non-destructive stitching with floating, adjustable images.

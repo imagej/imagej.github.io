@@ -9,69 +9,58 @@ The page is a collection of principles for the entire image analysis process, fr
 Image acquisition principles
 ============================
 
-Introduction
-------------
+## Introduction
 
 Not all data is created equal and thus the analysis of certain images can be easily automated, while others pose a bigger challenge.
 
 The goal of this section is to collect information on image acquisition principles that ease the automation of image analysis.
 
-Use sufficient spatial resolution
----------------------------------
+## Use sufficient spatial resolution
 
 Spatial resolution refers to the number (or density, if you prefer) of samples in the image. Digital detectors such as cameras and PMTs can produce sample matrices ranging from 256 x 256 pixels or fewer, up to 128 megapixels or more. As a rule of thumb, more samples is better. Spatial resolution can always be downsampled after the fact—but never upsampled. Furthermore, if your objects of interest are described by too few pixels, the error of many statistical computations will be prohibitively high, and some forms of analyses will not be possible at all.
 
-Avoid lossy compression
------------------------
+## Avoid lossy compression
 
 Original data should be saved in a way that preserves the exact sample values. Do not store raw image data in file formats such as JPEG which use lossy compression. See [Why (lossy) JPEGs should not be used in imaging](/techniques/principles#why-lossy-jpegs-should-not-be-used-in-imaging) below for details.
 
-Illuminate as evenly as possible
---------------------------------
+## Illuminate as evenly as possible
 
 Many forms of imaging require some form of illumination. You should ensure that this illumination is as evenly distributed as possible, rather than attempting to correct for it after acquisition. If you *must* tolerate an uneven illumination for some reason, try to acquire a background image so that you can use a background subtraction—but there may still be issues such as reflection artifacts.
 
-Avoid overlapping objects
--------------------------
+## Avoid overlapping objects
 
 In many cases, it is not possible to avoid objects which overlap. But they are harder to analyze and measure, since many algorithms have difficulty distinguishing between objects. It may be possible to mitigate these difficulties by preparing the environment somehow—e.g., staining cell membranes with a fluorescent dye.
 
-Naming schemes
---------------
+## Naming schemes
 
 Effective naming schemes are easy to read by both humans and computers. The following examples give an overview over the principles of creating good naming schemes:
 
 -   Example A:
 
-Sample preparation
-------------------
+## Sample preparation
 
 In certain cases (Examples ...) it is very helpful to add markers to the slides.
 
 Image processing principles
 ===========================
 
-Introduction
-------------
+## Introduction
 
 In scientific image processing and image analysis, an image is something different than a regular digital photograph of a beautiful scene you shot during your latest vacation.
 
 In the context of science, digital images are samples of information, sampled at vertex points of *n*-dimensional grids.
 
-What are pixel values?
-----------------------
+## What are pixel values?
 
 Human visual perception is very good at certain tasks, such as contrast correction and detecting subtle differences in bright colors, but notoriously bad with other things, such as discerning dark colors, or classifying colors without appropriate reference. Our brains process and filter information, so that we perceive visually only after we 1) "see" light information that enters our eyes and interacts with the environment of the eye and eventually individual cells in our retinas, and 2) process the signal in the context of our brains. It is therefore very important to keep in mind that the pixel values in digital images are numbers, not subjective experiences of color. These numbers represent how light or some other type of signal entered the instrument we are using and interacted with its environment and eventually triggered sensors in the instrument that further processed the information into a digital output.
 
 For example, when you record an image using a light gathering device such as a confocal microscope, the values you get at a certain coordinate or pixel are not color values, but relate to photon counts. This is an essential point to start with for understanding this topic.
 
-Pixels are not little squares
------------------------------
+## Pixels are not little squares
 
 And voxels are not cubes! See the [whitepaper by Alvy Ray Smith](http://alvyray.com/Memos/CG/Microsoft/6_pixel.pdf).
 
-Why (lossy) JPEGs should not be used in imaging
------------------------------------------------
+## Why (lossy) JPEGs should not be used in imaging
 
 JPEG stands for Joint Photographic Experts Group who were the creators of a commonly used method of lossy compression for photographic images. This format is commonly used in web pages and supported by the vast majority of digital photographic cameras and image scanners because it can store images in relatively small files at the expense of image quality. There are also loss-less JPEG modes, but these in general are not widely implemented and chances are that most of the images are of the lossy type.
 
@@ -122,8 +111,7 @@ Below is an ImageJ macro which demonstrates the issue. It requires the [Glasbey]
     run("glasbey");
     selectWindow("Difference");
 
-Considerations during image segmentation (binarization)
--------------------------------------------------------
+## Considerations during image segmentation (binarization)
 
 ### What is binarization and what is it good for?
 
@@ -227,8 +215,7 @@ If converting to grayscale damages or distorts the information desired from a pa
 Image analysis principles
 =========================
 
-Introduction
-------------
+## Introduction
 
 The following principles help with the analysis of processed images.
 

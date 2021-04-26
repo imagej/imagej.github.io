@@ -9,8 +9,7 @@ artifact: sc.fiji:Manual\_Tracking
 
 See pdf documentation [here](/plugins/track/Manual%20Tracking%20plugin.pdf)
 
-See also
---------
+## See also
 
 -   [ImageJ 1.x website](/ij/plugins/track/track.html)
 

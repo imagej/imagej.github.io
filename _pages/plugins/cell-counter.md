@@ -9,13 +9,11 @@ This plugin will open a new cell counter GUI. On the left are the counter types 
 
 {% include info-box content='Please consider using the built-in [Multi-Point Tool](/ij/docs/guide/146-19.html#sec:Multi-point-Tool) in ImageJ, as this tool now replicates most of the functionality of Cell Counter.' %}
 
-Bugs
-----
+## Bugs
 
 May not work correctly after using **Load Markers** to load more than 8 counter types from an XML file. Opens off-screen on 1024 pixel wide and smaller monitors.
 
-Functions
----------
+## Functions
 
 -   **Initialize:** Initializes the current image or stack for counting, this will create a duplicate image/stack titled "counter window" - when keep original is checked, the source image remains open
 -   **Add:** adds a counter type.
@@ -29,8 +27,7 @@ Functions
 -   **Export Image:** Makes a copy of the counter image with the markers written on it (only the current slice is copied in case of a stack)
 -   **Measure...:** Measures the pixel value at each marker and displays a result window showing: Type - Slice - X coordinate - Y coordinate - Pixel Value
 
-Usage
------
+## Usage
 
 Open the Cell Counter plugin and the image/stack you want to count (if the Cell Counter plugin is already open you don't need to open a new instance). Click initialize, now you are ready to count features. Note that at any time you can add types or remove them. Select the type you want to count, and count by clicking on the feature in the image. A colored number corresponding to the type you are counting will be displayed on the image every time you click, and the corresponding counter is updated.
 
@@ -45,8 +42,7 @@ Add the following macros to *ImageJ/macros/StartupMacros.txt*, restart ImageJ, a
 ` macro "Type 7 [7]" {call("CellCounter.setType", "7");}`  
 ` macro "Type 8 [8]" {call("CellCounter.setType", "8");}`
 
-History
--------
+## History
 
 -   <u>2001/10/17</u>: first version
 -   <u>2002/02/01</u>: bug fixes

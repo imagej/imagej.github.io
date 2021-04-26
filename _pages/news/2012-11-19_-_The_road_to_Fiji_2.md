@@ -5,8 +5,7 @@ title: 2012-11-19 - The road to Fiji 2
 
 This blog post was originally [a talk at the ImageJ conference 2012](http://imagejconf.tudor.lu/program/doku.php?id=:program:presentations:johannes_schindelin13920899) in Luxembourg.
 
-Introduction
-------------
+## Introduction
 
 It seems that many projects associated with [Fiji](/fiji) attach a "2" to their name... [TrakEM2](/plugins/trakem2), [ImgLib2](/imglib2), [ImageJ2](/software/imagej2). Not to be left behind, Fiji will do the same: the next big Fiji version will be Fiji2 :-)
 
@@ -16,15 +15,13 @@ As an example, we provided a way to run some plugins [without a graphical deskto
 
 Happily, these and other design limitations are addressed in the next-generation ImageJ!
 
-ImageJ2
--------
+## ImageJ2
 
 ImageJ2 (thanks to NIH's funding) provides a new, modular and flexible architecture that will serve us well for decades to come. Fiji started contributing back modules such as the powerful data processing library ImgLib2, the updater and the scripting editor, and can concentrate on life sciences again, its original purpose. Like Fiji, ImageJ2 tries as much as possible to cater to the large and vibrant ImageJ community, testament to which is that the default user interface looks almost exactly like the user interface of ImageJ 1.x:
 
 <figure><img src="/media/Ij2-screenshot.jpg" title="ImageJ2 screenshot" width="665" alt="ImageJ2 screenshot" /><figcaption aria-hidden="true"><strong>ImageJ2 screenshot</strong></figcaption></figure>
 
-Modular architecture
---------------------
+## Modular architecture
 
 But under the hood, ImageJ2 is much more modular. This is something we needed in Fiji, too. As an example, let's look at a subset of Fiji's modules:
 
@@ -40,8 +37,7 @@ On the road to Fiji2, we also adopted ImageJ2's use of [Maven](/develop/maven)â€
 
 This modular architecture allows us to integrate many third-party components without hassle, for example machine-learning libraries, database libraries, libraries to read/write PDF files, the powerful [Bio-Formats](/formats/bio-formats) and [SCIFIO](/software/scifio) libraries, etc.
 
-Automated testing
------------------
+## Automated testing
 
 Another very important step on the road to Fiji2 is that the components which migrated to ImageJ2 are equipped with automatic regression testing. That is, ImageJ2's trusty server ([Jenkins](/develop/jenkins)) runs a series of functions testing certain functionality everytime a developer makes some changes. Whenever these tests break, the developers are notified and can fix the breakage before the respective component is uploaded to the update site.
 
@@ -49,8 +45,7 @@ This procedure helps us ensure that bugs, once fixed, do not rear their ugly hea
 
 <figure><img src="/media/Ij2-jenkins.png" title="Automated regression testing" width="665" alt="Automated regression testing" /><figcaption aria-hidden="true">Automated regression testing</figcaption></figure>
 
-Recurrent tasks
----------------
+## Recurrent tasks
 
 Using ImageJ2's Jenkins has further benefits: apart from building the complete Fiji and running automatic regression tests, Jenkins can run all kinds of repeating jobs. One of those jobs keeps an up-to-date Fiji version and packages it into what we call [continuous releases](/downloads).
 
@@ -58,15 +53,13 @@ Using ImageJ2's Jenkins has further benefits: apart from building the complete F
 
 Other tasks involve [keeping our source code repositories in sync](http://jenkins.imagej.net/view/Synchronizers/), [building the ImageJ launcher](http://jenkins.imagej.net/job/ImageJ-launcher/) for all of our supported platforms, keeping an eye on the ImageJ 1.x website, [deploying it as a Mavenized project](http://jenkins.imagej.net/view/Synchronizers/job/Synchronize-and-deploy-IJ1/) and [uploading the new ImageJ 1.x version to the update site immediately](http://jenkins.imagej.net/job/Upload-IJ1-Into-ImageJ/) (thereby making sure that every Fiji/ImageJ2 user always gets the benefit of the latest ImageJ 1.x release), etc.
 
-Project management
-------------------
+## Project management
 
 A development tool Fiji2 might adopt (inspired by ImageJ2, too) is to [manage the project](http://trac.imagej.net/roadmap) by splitting it into milestones that are in turn split into goals (that are in turn split into single tasks). It makes it easier to organize and prioritize what has to be done. Just like the automatic testing, it is part of the open process of ImageJ2:
 
 <figure><img src="/media/Ij2-trac.jpg" title="ImageJ2 Project Management" width="610" alt="ImageJ2 Project Management" /><figcaption aria-hidden="true"><strong>ImageJ2 Project Management</strong></figcaption></figure>
 
-Fiji vs Fiji2
--------------
+## Fiji vs Fiji2
 
 What will change with Fiji2 is best illustrated by this figure:
 
@@ -86,8 +79,7 @@ In preparation for the final move to Fiji2 (which will bring up ImageJ2's GUI by
 
 <figure><img src="/media/Ij2-legacy-mode.png" title="ImageJ2 legacy mode" width="665" alt="ImageJ2 legacy mode" /><figcaption aria-hidden="true"><strong>ImageJ2 legacy mode</strong></figcaption></figure>
 
-What does this mean for you?
-----------------------------
+## What does this mean for you?
 
 In addition to full support for ImageJ 1.x through ImageJ2's legacy mode, Fiji will benefit from the flexible design of ImageJ2.
 

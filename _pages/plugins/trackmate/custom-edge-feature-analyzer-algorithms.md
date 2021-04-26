@@ -7,8 +7,7 @@ categories: Tutorials
 {% include extendingtrackmatetutorials%}
 
 
-Introduction
-------------
+## Introduction
 
 This page is a tutorial that shows how to integrate your own edge feature analyzer algorithm in TrackMate. It is the first in the series of tutorials dedicated to TrackMate extension, and should be read first by scientists willing to extend TrackMate.
 
@@ -16,8 +15,7 @@ All these tutorials assume you are familiar with Java development. You should be
 
 Edge feature analyzers are algorithms that can associate one or more scalar numerical features to an edge, or a link between two spots in TrackMate. For instance, the instantaneous velocity is an edge feature (you need two linked spots to compute a displacement and a time interval), which happens to be provided by the algorithm named {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/edges/EdgeVelocityAnalyzer.java' label='EdgeVelocityAnalyzer.java' %}.
 
-TrackMate modules
------------------
+## TrackMate modules
 
 TrackMate is extended by writing *modules*. Modules are just the basic algorithms that provide TrackMate with core functionality, that the GUI and API wrap. There are 7 classes of modules:
 
@@ -50,8 +48,7 @@ TrackMateModule is used for two basic purpose:
 
 These are the methods used to integrate you module within the GUI. According to the class of the module, some might be plainly ignored. For instance, the edge analyzers subject of this tutorial ignore the icon and info text, since they are used silently within the GUI to provide new features.
 
-Basic project structure
------------------------
+## Basic project structure
 
 Before we step into the edge analyzers specific, you want to setup a development environment that will ease TrackMate module development. Rather than listing the requirement, just checkout {% include github org='fiji' repo='TrackMate-examples' label='this github repository' %}, and clone it. It contains the files of this tutorial series and more importantly, is configured to depend on the latest TrackMate version, which will make it available to your code.
 
@@ -59,8 +56,7 @@ Compiling this project with maven will generate a jar, that you will be able to 
 
 But more on that later.
 
-Let's get started
------------------
+## Let's get started
 
 But let's get back on our edge analyzer.
 
@@ -80,8 +76,7 @@ In this package, create a class `EdgeAngleAnalyzer` and let it implement the {% 
 
 It is important to note that we provide a blank constructor. This is very important: with the way we use SciJavaPlugin integration, we cannot use the constructor to pass any object reference. If your analyzer needs some objects which are not provided through the interface methods, then you cannot code it with TrackMate directly. However we should cover most use-cases with what we have.
 
-Feature analyzers specific methods
-----------------------------------
+## Feature analyzers specific methods
 
 Eclipse will immediately complain (I suppose you are using Eclipse; but when it comes to complaining, everything tends to be general) that your class needs to implement some abstract method. A variety of methods popup.
 
@@ -228,8 +223,7 @@ In this tutorial, our analyzer just returns one feature, which is an angle. So a
             return false;
         }
 
-Multithreading & Benchmarking methods
--------------------------------------
+## Multithreading & Benchmarking methods
 
 There are also 4 methods which we will skip right now. They are related to the multi-threading aspect of the analyzer. You can code your analyzer to exploit a multithreaded environment, and TrackMate will configure it through the following methods:
 
@@ -258,8 +252,7 @@ There is also
 
 that returns how much milliseconds was spent on computing the features.
 
-The core methods
-----------------
+## The core methods
 
 What is really important is the two methods that actually perform the work:
 
@@ -320,8 +313,7 @@ And for our XY edge angle, here are the methods content:
             return true;
         }
 
-Making the analyzer discoverable
---------------------------------
+## Making the analyzer discoverable
 
 Right now, your analyzer is functionnal. It compiles and would return expected results. Everything is fine.
 
@@ -346,8 +338,7 @@ Right now, just compile your project, and drop the resulting jar in the Fiji plu
 
 ![](/media/plugins/trackmate DevelopEdgeAnalyzer.png "TrackMate_DevelopEdgeAnalyzer.png")
 
-Wrapping up
------------
+## Wrapping up
 
 Great, no?
 

@@ -10,8 +10,7 @@ ImageJ Ops is a framework for reusable image processing operations. Ops extends 
 
 The central goal is to enable programmers to code an image processing algorithm in the Ops framework, which is then usable as-is from any [SciJava](SciJava)-compatible software project, such as [ImageJ](/about), [CellProfiler](/software/cellprofiler), [KNIME](/software/knime), [OMERO](/software/omero) and [Alida](/software/alida).  
 
-Design goals
-------------
+## Design goals
 
 Ops has three major design goals:
 
@@ -19,8 +18,7 @@ Ops has three major design goals:
 2.  **Powerful and general.** An op should be able to consist of any number of typed input and output parameters, operating on arbitrary data structures, including images of N dimensions stored in a myriad of different ways: as files on disk, programmatically generated in memory, or in remote databases. Using the powerful [ImgLib2](/imglib2) library achieves this ambitious goal.
 3.  **Very fast.** Even though ImgLib2 is vastly more general than ImageJ 1.x's data model, that generality should not come at the expense of performance. Otherwise, users must pay a time tax to do the same things they could already do in ImageJ 1.x. The ImageJ Ops framework needs to provide a means to override *any* general-but-slow op with a faster-but-more-specific alternative, fully transparently to the user.
 
-Getting started
----------------
+## Getting started
 
 Start by reading these Jupyter notebooks:
 
@@ -34,8 +32,7 @@ In addition to cloning the [imagej-ops](https://github.com/imagej/imagej-ops) it
 -   {% include github org='imagej' repo='imagej-tutorials' label='ImageJ-tutorials' %} - examples of ImageJ plugins using Ops
 -   {% include github org='imagej' repo='imagej-scripting' label='ImageJ-scripting' %} - provides [templates in the Script Editor](/scripting/templates)
 
-Tutorials and workshops
------------------------
+## Tutorials and workshops
 
 -   [Step-by-step guide: Adding new ops](/develop/writing-ops)
 -   [ImageJ Tutorial: Introduction to ImageJ Ops](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/1-Using-ImageJ/2-ImageJ-Ops.ipynb)
@@ -93,7 +90,6 @@ Then an independent developer comes up with a new way to add the arrays that's 5
 
 Regardless of this proliferation of implementations, a user just has to write `ops.math().add(array1, array2)` and it will work. If they have the guava implementation on their classpath it will be faster, and if they purchase the proprietary implementation it will be faster still. But their code does not have to be adjusted.
 
-See also
---------
+## See also
 
 -   [2014-04-04 - Announcing ImageJ Ops](/news/2014-04-04_-_Announcing_ImageJ_Ops) news post

@@ -13,8 +13,7 @@ title: TAPAS
 {% endcapture %}
 {% include info-box name='TAPAS' software='tapas' update-site='TAPAS' author=author maintainer=' [Thomas Boudier](https://github.com/mcib3d)' source=source released='14/08/2019, V0.4' latest-version='22/06/2020, V0.6.3' status='stable, active' category='[Automation](Category_Automation), [Analysis](Category_Analysis), [Filtering](Category_Filtering), [Segmentation](Category_Segmentation)' %}
 
-TAPAS : An integrated tool for batch processing
------------------------------------------------
+## TAPAS : An integrated tool for batch processing
 
 **TAPAS** (Towards an Automated Processing and Analysis System) is a framework for processing and analysis workflow for multi-dimensional images. A workflow is a series of modules linked together to process an image, each module should perform one simple task.
 
@@ -24,13 +23,11 @@ Finally, the pipeline should be separated from the set of images to process, so 
 
 Here we propose modules to process and analyze images stored in an OMERO database, but the system should work fine with files stored locally or on a server.
 
-Author
-------
+## Author
 
 Thomas Boudier
 
-Features
---------
+## Features
 
 Basically we will propose modules from the [3D\_ImageJ\_Suite](/plugins/3d-imagej-suite), ImageJ/Fiji, along with other modules.
 
@@ -45,8 +42,7 @@ As for stable version 0.5 the following modules are available :
 -   Colocalisation and distances
 -   Calling ImageJ macros and executables
 
-Installation
-------------
+## Installation
 
 -   Install [ImageJ](/ij/) or [Fiji](http://fiji.sc/).
 
@@ -68,8 +64,7 @@ Installation
 
 TAPAS was tested successfully with OMERO.insight 5.5.5 and Bioformats 6.0.1.
 
-Usage / Tutorials
------------------
+## Usage / Tutorials
 
 -   If you want to process data stored on an Omero server, connect first to your server using **TAPAS Connect** inside the TAPAS menu.
 
@@ -94,22 +89,19 @@ A list of tutorials :
 
 The list of available modules is described in [Tapas description0.6.3.pdf](/media/Tapas description0.6.3.pdf).
 
-Citation
---------
+## Citation
 
 2018 Whitehead, L., Wimmer, V., Lafouresse, F., Ratnayake, D., Currie, P., Groom, J., Rogers, K. and Boudier, T. Towards an Automated Processing and Analysis System for multi-dimensional light-sheet microscopy big data using ImageJ and OMERO. International Microscopy Congress IMC 19. ([Abstract 1848 thomasboudier.pdf](/media/Abstract 1848 thomasboudier.pdf))
 
 Gilles JF and Boudier T. TAPAS: Towards Automated Processing and Analysis of multi-dimensional bioimage data. F1000Research 2020, 9:1278 [doi](https://doi.org/10.12688/f1000research.26977.1)
 
-License
--------
+## License
 
 Version 0.5 and later are under GPL distribution (see [license](http://www.cecill.info/licences/Licence_CeCILL_V2.1-en.html)).
 
 Source code is available on **github** : [tapas-core](https://github.com/mcib3d/tapas-core), [tapas-plugins](https://github.com/mcib3d/tapas-plugins).
 
-Change log
-----------
+## Change log
 
 -   22/06/2020 V0.6.3 : new modules (CLIJFilters, EDT+EVF, localThickness, CloseLabels). Changed ?name? by ?image?. Generic image processing, default is ImagePlus.Folder *attachments* for TAPAS-FILES.
 -   19/09/2019 V0.51 : minor change, new module load attachment from Omero

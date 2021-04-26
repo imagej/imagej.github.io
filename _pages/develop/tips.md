@@ -48,24 +48,20 @@ Using ImageJ Effectively
 
 ImageJ has a simple API, but it is also big, so here are a few pointers to some useful parts.
 
-How to read a file into an ImagePlus
-------------------------------------
+## How to read a file into an ImagePlus
 
      ImagePlus image = IJ.openImage(path);
 
-How to get the current image
-----------------------------
+## How to get the current image
 
     ImagePlus img = WindowManager.getCurrentImage();  // current image
     ImageProcessor ip = img.getProcessor();  // current slice
 
-Making a new image stack -- quickly!
-------------------------------------
+## Making a new image stack -- quickly!
 
      ImagePlus image = IJ.createImage("my image", "RGB", 640, 480, 20);
 
-How to display an exception in a window
----------------------------------------
+## How to display an exception in a window
 
 This is especially useful on Windows, where you usually do not see the console:
 
@@ -79,8 +75,7 @@ This is available since ImageJ 1.43g, as well as the option to set a different e
         }
      });
 
-How to show a plot
-------------------
+## How to show a plot
 
 ImageJ offers the `ij.gui.Plot` class to make a window showing a plot. Use it like this:
 
@@ -115,15 +110,13 @@ The plots can be drawn in different colors like this:
 
 You might need to adjust the bounding box if the second plot does not match the bounding box of the first one by using the `setLimits()` method before the call to `plot.draw();`
 
-Duplicate, or convert between, *ImageProcessor* types
------------------------------------------------------
+## Duplicate, or convert between, *ImageProcessor* types
 
 The `ImageProcessor` class has several useful methods: [duplicate()](https://javadoc.scijava.org/ImageJ1/ij/process/ImageProcessor.html#duplicate>()), [convertToByte()](https://javadoc.scijava.org/ImageJ1/ij/process/ImageProcessor.html#convertToByte(boolean)), \[<https://javadoc.scijava.org/ImageJ1/ij/process/ImageProcessor.html#convertToFloat>() convertToFloat()\], \[<https://javadoc.scijava.org/ImageJ1/ij/process/ImageProcessor.html#convertToRGB() convertToRGB()\], and [convertToShort()](https://javadoc.scijava.org/ImageJ1/ij/process/ImageProcessor.html#convertToShort(boolean)).
 
 This [class](https://javadoc.scijava.org/ImageJ1/ij/process/ImageProcessor.html) also has some other goodies, such as methods for convolution.
 
-How to store settings persistently
-----------------------------------
+## How to store settings persistently
 
 ImageJ (and therefore Fiji, too) has a way to store key/value pairs persistently, i.e. they are available even after a restart. The settings are stored in a file called *IJ\_Prefs.txt* in the subdirectory called *.imagej/* in your home directory (on Windows, directly in your home directory; on Mac, in *\~/Library/Preferences*).
 
@@ -149,15 +142,13 @@ Example:
 
 **Note:** do <u>not</u> use the `getString()` or `getInt()`; These methods do not have any setter methods, and they do <u>not</u> access the same values as the `get()` method (`get()` actually prefixes the keys with a dot)!
 
-How to turn a number into a string, using a given number of decimal places
---------------------------------------------------------------------------
+## How to turn a number into a string, using a given number of decimal places
 
 Use the `d2s()` method of the `ij.IJ` class:
 
     String message = "The current temperature is " + IJ.d2s(degrees, 1) + "° Celsius";
 
-How to abort a plugin completely
---------------------------------
+## How to abort a plugin completely
 
 Sometimes, you want to abort a plugin without catching an exception at the highest level(s), without having ImageJ show an exception window. You can do that:
 
@@ -165,8 +156,7 @@ Sometimes, you want to abort a plugin without catching an exception at the highe
 
 The special message *Macro.MACRO\_CANCELED* will tell ImageJ not to show the exception message and stack trace in a text window.
 
-Interact with the ROI manager
------------------------------
+## Interact with the ROI manager
 
 To add ROIs to the ROI manager, do something like this:
 
@@ -230,8 +220,7 @@ To get just the selected ROIs, use code similar to this:
         }
     }
 
-Show a results table
---------------------
+## Show a results table
 
 First you need to get the results table instance (or create one):
 
@@ -254,16 +243,14 @@ Then you can add a new row:
 
     rt.show("Results");
 
-How to find equivalent API commands between ImageJ1 and ImageJ2?
-----------------------------------------------------------------
+## How to find equivalent API commands between ImageJ1 and ImageJ2?
 
 [ImageJ1-ImageJ2 cheat sheet](ImageJ1-ImageJ2_cheat_sheet) is available.
 
 Tips for Graphical User Interface (GUI) programming
 ===================================================
 
-Programming with Swing components
----------------------------------
+## Programming with Swing components
 
 When programming with Swing, beware that Swing is not thread safe. Swing's golden rule states that:
 

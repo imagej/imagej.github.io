@@ -5,8 +5,7 @@ categories: Visualization,Citable
 artifact: sc.fiji:bigdataviewer\_fiji
 ---
 
-Description
------------
+## Description
 
 The BigDataViewer is a re-slicing browser for terabyte-sized multi-view image sequences. BigDataViewer was developed with multi-view light-sheet microscopy data in mind and integrates well with Fiji's SPIMage processing pipeline.
 
@@ -16,13 +15,11 @@ BigDataViewer comes with a custom data format that is is optimized for fast rand
 
 The file format is based on XML and HDF5. Images are represented as tiled multi-resolution pyramids, and stored in HDF5 chunked multi-dimensional arrays. The XML file contains metadata, for example the registration of sources to the global coordinate system.
 
-Installation
-------------
+## Installation
 
 The BigDataViewer comes with Fiji. You should have a sub-menu {% include bc path='Plugins | BigDataViewer'%}.
 
-Usage
------
+## Usage
 
 ### Opening a Dataset
 
@@ -186,8 +183,7 @@ Select the XML file of a dataset, then choose the time-point and source (setup) 
 
 Note that the import function is macro-recordable. Thus, you can make use of it to batch-process images from BigDataViewer datasets.
 
-Exporting Datasets for the BigDataViewer
-----------------------------------------
+## Exporting Datasets for the BigDataViewer
 
 BigDataViewer uses a custom file-format that is optimized for fast arbitrary re-slicing at various scales. This file format is build on open standards [XML](http://www.w3.org/XML/) and [HDF5](http://www.hdfgroup.org/HDF5/). XML is used to store meta-data and HDF5 is used to store image volumes. (Actually, we support several ways to store the image volumes besides HDF5. For example, the volume data can be provided by a web service for remote access.)
 
@@ -309,8 +305,7 @@ First it is necessary to define an XML file that describes the parameters of the
 
 A multi-view dataset consisting of 715 six angle time points (altogether 2.1 Terabytes) converts to HDF5 with compression in 65 minutes using about 200 processors working in parallel.
 
-Publication
------------
+## Publication
 
 -   {% include publication content='BigDataViewer' %}
 

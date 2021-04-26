@@ -10,8 +10,7 @@ The {% include github repo='fiji' path='plugins/Scripts/File/Open\_Samples/Spira
 
 In the generated image, the human eye perceives some yellow and some green-yellow bands, but they have exactly the same color.
 
-The macro
----------
+## The macro
 
 Any self-respecting scientist will doubt your statement. This is where the source code comes in. In Fiji, press the {% include key content='Shift' %} key and then open {% include bc path='File | Open Samples | Spirals (macro)'%} which will open the macro in the [Script Editor](/scripting/script-editor) instead of running it directly. Alternatively, you can drag & drop [this link](https://raw.github.com/fiji/fiji/master/plugins/Scripts/File/Open_Samples/Spirals_.ijm) to your main window.
 
@@ -23,8 +22,7 @@ The macro originally illustrated this idea with blue versus green, rather than g
 
 But it was changed to address the objection: "Yeah, but I want to quantify red versus green."
 
-Take home message
------------------
+## Take home message
 
 You cannot quantify color by eye. Nobody can. The only thing you can quantify by eye are written-out numbers.
 

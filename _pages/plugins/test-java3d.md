@@ -6,13 +6,11 @@ categories: Plugins
 
 {% include info-box software='ImageJ' name='Test Java3D' author='Benjamin Schmid' maintainer='Benjamin Schmid' filename='http://132.187.25.13/home/imagej/Test\_Java3D.jar' source='http://132.187.25.13/home/imagej/Test\_Java3D.jar' released='-' latest-version='-' status='stable' category='[Plugins](Category_Plugins)' %}
 
-Purpose
--------
+## Purpose
 
 Plugin to test whether Java3D is installed and working correctly.
 
-Documentation
--------------
+## Documentation
 
 Java3D is an extension to Java, providing a library for hardware-accelerated 3D rendering. It runs on any common platform, but there are different binaries for Windows, Linux and Mac OS. Furthermore, the underlying graphics interface can either be OpenGL (via Jogl, its Java binding) or DirectX.
 

@@ -56,8 +56,7 @@ How to use Coloc 2
 Pitfalls of the Manders and Costes methods
 ==========================================
 
-The auto threshold calculation method can fail if fed inappropriate information
--------------------------------------------------------------------------------
+## The auto threshold calculation method can fail if fed inappropriate information
 
 That means it does not like images with high zero offset, where no light detected still gives a large non zero pixel value. For instance, from a digital camera's zero offset/bias, or a confocal PMT's offset when incorrectly set. Also, a high, flat non specific background causes the same problem. These all add a constant number to the intensity values of each pixel, offsetting and obscuring the true proportionality relationship with the "concentration" of the fluorescent dye detected at each pixel. If pixels that contain no real (specific) signal have large intensity values, the algorithm, not knowing about the non zero intensity offset in all pixels, assumes the offset is real signal to be dealt with, and can reach a result for the thresholds where one or both of them is below the value of the lowest intensity value present in that colour channel of the image. This means that ALL of that channel's pixels are considered to be colocalised, then the Manders' Coefficients that you get will reflect that aberrant, unrealistic situation. In these cases, the background and/or offset should be carefully removed/subtracted before running the Coloc 2 or [Colocalization Threshold](/plugins/colocalization-threshold) plugin. The images below are an example of this situation, using the badly behaved data set: [150707\_WTstack.lsm](https://fiji.sc/samples/150707_WTstack.lsm). Note that the values for M1 and tM1 are the same! This should not be the case. You can see the green channel threshold is wrongly set below the intensity where the image data intensities actually start.
 
@@ -65,34 +64,29 @@ Notice: the image contains large areas of background, with similar low values of
 
 <img src="/media/BadOffsetConfusesCostesAutoThreshold.png" width="300"/>
 
-Effect of noise on Pearson's and Manders' coefficients
-------------------------------------------------------
+## Effect of noise on Pearson's and Manders' coefficients
 
 In the case of perfect colocalization, where the intensities of the 2 channels are always perfectly correlated: Low red with low green, and high green with high red, the scatterplot would have all the data points falling on a straight diagonal line, since the green intensity would always be in proportion to the red! However, that is the ideal case and real biological data is noisy! Noise (be it from the dyes not staining every single molecule, or from statistical photon shot noise from recording the signal from too few photons, or from other electronics noise sources) will cause the pixel intensities to deviate from the perfect/true case, to be lower or higher than they really are on average. This causes scatter in the distribution of the data points in the scatterplot, perpendicular to the line of regression fit. So you can see the noise by looking at how spread or tight the scatterplot points are from the linear regression line. Also, since Manders' coefficients are measuring correlation, and noise lowers the similarity of two identical signals, noise lowers the Manders' coefficients to less than they should be for an image with very low noise. The same is true for Pearson's correlation. So for the same object under the microscope, noisier images will appear to give less colocalization than a clean, low noise, image. That means you can't compare different images with different signal:noise levels, unless you have some way of estimating the noise and correcting for it.
 
 Background and digital offset should be subtracted (this doesn't affect Pearson's but does affect other measurements), and noise should be filtered out, suppressed or best avoided by collecting as many photons as possible. Deconvolution is a great way to restore images to give a better estimate of the real fluorophore spatial distribution by suppressing noise and removing the offset or background, while improving contrast and dynamic range by equalizing the spatial frequency response up to the objective lens resolution limit. Confocal images should also be deconvolved, not only widefield images, especially in the case of low signal and high noise.
 
-Fluorescence emission bleed through looks like perfect colocalization
----------------------------------------------------------------------
+## Fluorescence emission bleed through looks like perfect colocalization
 
 As is often true for DAPI nuclear stain and GFP dye pairs, when images are captured at the same time, with both dyes being excited and detected simultaneously, fluorescence emission bleed through gives misleading results, as the signal from the DAPI also appears in the GFP detection channel! Where there is more DAPI, there is also more signal in the GFP channel. This looks like really good colocalization, but of course it is totally false! It is a problem with the imaging systems not being set up correctly or not used correctly. This can also happen with many other dye combinations, if they have overlapping emission spectra. Always check your spectra. You can do that here: [Invitrogen Fluorescent Dye Spectra Viewer](http://probes.invitrogen.com/servlets/spectraviewer). To be safe, check your emission filter sets don't allow in the wrong signal, and do **"sequential imaging"**, so you only excite and image one dye at a time.
 
 <img src="/media/ColocBleedThru.png" width="300"/>
 
-Regions of interest (ROIs)
---------------------------
+## Regions of interest (ROIs)
 
 Whether or not to consider zero - zero pixels as part of the interesting data for the algorithms to deal with. If you think about it, in a fluorescence image there is typically quite a large area which is black in both channels. For instance where there is space between cells, or just no signal in either channel since that area is not part of an interesting area of the sample. A philosophical point but a significant one: Why bother taking images of black areas? Why bother analyzing black areas for colocalisation? Surely you are not interested in those regions, as they contain no information of use to you? If you perform these pixel intensity correlation methods and include zero zero pixels, then of course these pixels have a very high correlation! They have the same value. But they are totally uninteresting! Sure, the auto threshold method excludes them from the tM1 and tM2 figures, but why include them in the first place? Probably better not to include them unless there is a good reason to do that. Why not just image the area, or just analyze the area where your biology is happening? If you analyse an image with large areas of close to zero and zero intensities, then the autothreshold method will tend to lower the thresholds to include more of that non interesting background. If you image the same sample, but only image a patch of the interesting part, say cytoplasm, then the autothreshold will probably give higher thresholds, and exclude more non interesting background, so the thresholded Manders coefficients will better reflect the biologically interesting parts of the image data - right? You can analyze only a region of interest by making an ROI then selecting the use ROI option in the plugin. You can use a regular shape (rectangle or ellipse) or even a freehand ROI to manually select the interesting part of the image and ignore the part you know is background. Yes, this is a subjective decision, so be careful! You can see in the following example screenshot that for the same misbehaving data set, using an ROI which roughly gets just the cell, the thresholds were calculated properly and the tM1 and tM2 are sensible and lower than 1.00:
 
 <img src="/media/ColocWithROI.png" width="300"/>
 
-Other pitfalls
---------------
+## Other pitfalls
 
 Please see the [Colocalization Analysis](/techniques/colocalization-analysis) page for further discussion of precautions.
 
-Release Notes, Newly Added Features and Squashed Bugs
------------------------------------------------------
+## Release Notes, Newly Added Features and Squashed Bugs
 
 The definitive list of new features and fixes is the source code history as shown by the GIT history here: https://github.com/fiji/Colocalisation_Analysis/commits/master> This is just an easy way to check, a casual list for users, and might not be up to date. These might not yet all be in the version of the Coloc\_2 plugin released into the imageJ/Fiji updater; you can see that version listed in the search bar details pane. Latest released into Fiji updater versions are tagged as releases on GITHUB, eg. &lt;https://github.com/fiji/Colocalisation_Analysis/releases&gt;
 
@@ -117,8 +111,7 @@ The definitive list of new features and fixes is the source code history as show
 1.  After version 2.1.0
     1.  09-2015 Fixed in fiji master github repo commit: Coloc Job filed and result nanme in output fixed to be more sensible formatting, with a label and a value like all other results
 
-Ideas List
-----------
+## Ideas List
 
 Coloc\_2 issue tracker is found on GITHUB.com, along with the source code; bugs can be reported there: https://github.com/fiji/Colocalisation_Analysis/issues?q=is%3Aopen+is%3Aissue
 

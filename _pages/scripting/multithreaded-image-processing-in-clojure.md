@@ -11,8 +11,7 @@ An example [Clojure](/scripting/clojure) script illustrating how to run concurre
 
 The same result could be obtained using the built-in clojure <i>pmap</i> function. This script illustrates how to instantiate java Thread directly from Clojure, and how to launch and join threads for concurrent execution.
 
-Code
-----
+## Code
 
     ; Albert Cardona 20081011
     ;
@@ -198,8 +197,7 @@ Code
       (.setMinAndMax (.getProcessor imp) 0 1)
       (.show imp))
 
-See also
---------
+## See also
 
 [Clojure Scripting](/scripting/clojure)
 

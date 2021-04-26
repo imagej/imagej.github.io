@@ -20,8 +20,7 @@ will start a Fiji inside [MATLAB](/scripting/matlab).
 Getting started
 ===============
 
-Using MATLAB as processing core and sending results to Fiji
------------------------------------------------------------
+## Using MATLAB as processing core and sending results to Fiji
 
 An example how to work with MIJ is provided here:
 
@@ -33,8 +32,7 @@ An example how to work with MIJ is provided here:
 
 If you get an error saying that some Plugin related classes cannot be found, please update your Fiji with {% include bc path='Help | Update Fiji'%}!
 
-Running ImageJ commands
------------------------
+## Running ImageJ commands
 
 In ImageJ, you can \[/ij/docs/guide/146-31.html#sub:Record... record macros\], one of the most powerful ways to use the program. Most of the recorded statements will look like this:
 
@@ -57,8 +55,7 @@ The above example would read like this:
 
 Note: in [MATLAB](/scripting/matlab), it is not strictly necessary to end the *MIJ.run()* statement with a semicolon, because it does not return anything. However, it is good practice with MIJ to end all statements in semicolons: some functions return images, cluttering the output and taking a very long time to print if the statement does not end in a semicolon.
 
-Opening images
---------------
+## Opening images
 
 Normally, the best way to use MIJ is to [use ImageJ's macro recorder](#running-imagej-commands). However, this procedure does not work when opening images because ImageJ records simply: **open("/path/to/image.png");**
 
@@ -66,8 +63,7 @@ Instead, one needs to keep in mind how *run()* statements are constructed and im
 
     MIJ.run('Open...', 'path=[C:\\Documents and Settings\\Fiji\\Test.png]');
 
-Using Fiji as a 3D viewer for MATLAB
-------------------------------------
+## Using Fiji as a 3D viewer for MATLAB
 
 A set of demos made for [MATLAB](/scripting/matlab) users, and introducing how to install and use Fiji as a visualization tool for [MATLAB](/scripting/matlab) is published on the [fex](http://www.mathworks.com/matlabcentral/fileexchange/32344-hardware-accelerated-3d-viewer-for-matlab).
 

@@ -9,8 +9,7 @@ This page contains a loose list of ideas for cool/useful projects that have some
 Visualization
 =============
 
-3-way viewer for Block-Face EM image volumes based in ImgLib cells
-------------------------------------------------------------------
+## 3-way viewer for Block-Face EM image volumes based in ImgLib cells
 
 The [Imglib](/imglib1) provides a cell container, where each cell is an arbitrary n-dimensional image block potentially paged out to a file. Consider the specific case of isotropic 3d-cells stored with lossless compression. This setup would enable efficient browsing and analysis of image volumes larger than available RAM, while observing a specific 3d ROI from XY, YZ and XZ planes. These image volumes are common in [Block-Face Serial Scanning Electron Microscopy](http://www.plosbiology.org/article/info:doi/10.1371/journal.pbio.0020329), a technique now commercialized as "Gatan 3-way view EM." See this page for [theory](http://www.gatan.com/knowhow/knowhow_15/3view.htm) and for [pictures and examples](http://www.gatan.com/resources/knowhow/kh18-3view.php).
 
@@ -18,8 +17,7 @@ The [Imglib](/imglib1) provides a cell container, where each cell is an arbitrar
 **Language:** any supported by Fiji, preferably java.  
 **Contact:** {%- include person id='acardona' -%}
 
-Plugin for Mixed-File-Format MultiVirtualHyperStack viewing window
-------------------------------------------------------------------
+## Plugin for Mixed-File-Format MultiVirtualHyperStack viewing window
 
 The idea is to be able to display multiple virtual hyperstack-type data sets in a single multi-color composite window. I've already arranged this using multiple QuickTime Movies or AVIs. But the ideal will be to allow overlay from mixed data of any of the many BioFormats-supported file types.
 
@@ -42,16 +40,14 @@ The project would consist of
 **Contact:** Bill Mohler (wmohler@neuron.uchc.edu)  
 **Plugin:** [ python script for multi-stack composite image](/scripting/jython#visualize-any-number-of-tiff-stacks-in-a-single-composite-multi-color-image-stack)
 
-Interactively adjustable intensity/LUT curves
----------------------------------------------
+## Interactively adjustable intensity/LUT curves
 
 In Fiji, you can adjust the dynamic range of an image by calling {% include bc path='Image | Adjust | Brightness & Contrast'%}. However, this only lets you choose a linear mapping between pixel intensity and lookup table. This project aims to provide non-linear controls, such as piecewise linear functions, gamma curves, splines, etc
 
 Image processing plugins
 ========================
 
-Applying machine learning to the image segmentation problem
------------------------------------------------------------
+## Applying machine learning to the image segmentation problem
 
 The term *image segmentation* describes the task where objects in an image are to be outlined, so that every pixel is connected to either a named object, or background.
 
@@ -74,8 +70,7 @@ You are welcome to use any scientifically-relevant dataset of your choice, but w
 **Language:** Java.  
 **Mentor:** {%- include person id='iarganda' -%}, {%- include person id='acardona' -%}  
 
-Implementing algorithms for Imglib
-----------------------------------
+## Implementing algorithms for Imglib
 
 The new imglib supports dimension-, storage- and data type independent image processing. This library has some algorithms built-in already but there is a strong need to generically implement more general image processing algorithms, storage strategies and data types such as:
 
@@ -89,8 +84,7 @@ The new imglib supports dimension-, storage- and data type independent image pro
 **Language:** Java.  
 **Mentor:** [Stephan Preibisch](http://fly.mpi-cbg.de/preibisch), [Stephan Saalfeld](http://fly.mpi-cbg.de/saalfeld)\], [Tobias Pietzsch](http://www.wv.inf.tu-dresden.de/People/Pietzsch.html), {%- include person id='acardona' -%}  
 
-Colorizing algorithms
----------------------
+## Colorizing algorithms
 
 There are a number of publications about turning greyscale images into color images. This project is about implementing as many of them as possible.
 
@@ -100,13 +94,11 @@ Note: this is an ill-posed problem, as there is not enough information in the gr
 **Language:** Java.  
 **Mentor:** J. Schindelin (johannes.schindelin AT gmx.de)  
 
-Image selector/sorter
----------------------
+## Image selector/sorter
 
 Implement an algorithm that sorts a number of images by features, such as color. Inspired by Kai-Uwe Barthel's [pixolu](http://pixolu.de) project.
 
-A set of more powerful painting brushes and image editing tools
----------------------------------------------------------------
+## A set of more powerful painting brushes and image editing tools
 
 Even if Fiji aims at scientific image processing rather than beautifying photographs, it might be fun to take your holiday pictures and post-process them with the image processing software you are familiar with.
 
@@ -116,8 +108,7 @@ Possible tools to do so would be airbrushes (allowing for transparent colors) or
 **Language:** Java.  
 **Mentor:** J. Schindelin (johannes.schindelin AT gmx.de)  
 
-Wavelet inpainting
-------------------
+## Wavelet inpainting
 
 Implement a simple inpainting method (i.e. restore missing/unwanted parts of the image marked by a ROI) using wavelets: apply the wavelet transform, and then, on each level, use a diffusion algorithm to deduce a smooth signal from the surrounding parts, and finally inverse-transform the wavelet to get the restored image.
 
@@ -128,8 +119,7 @@ Implement a simple inpainting method (i.e. restore missing/unwanted parts of the
 Scripting
 =========
 
-Add JMathLib (MATLAB clone) support
------------------------------------
+## Add JMathLib (MATLAB clone) support
 
 Quite a few algorithms are available as proof-of-concept [MATLAB](/scripting/matlab) scripts. While it is [wrong to think of pixels as little squares](Ftp___ftp.alvyray.com_Acrobat_6_Pixel.pdf), and literally all [MATLAB](/scripting/matlab) scripts to perform image processing are suffering from that assumption, it would be very nice nevertheless to be able to run the scripts without having to buy [MATLAB](/scripting/matlab) licenses just for that purpose.
 
@@ -169,53 +159,44 @@ This issue needs to be tackled in Fiji's source code:
 **Language:** Java.  
 **Mentor:** Johannes Schindelin (johannes.schindelin@gmx.de)  
 
-A Javascript Recorder
----------------------
+## A Javascript Recorder
 
 Similar to the Macro Recorder but producing Javascript instead. There is a Javascript recorder in ImageJ right now, but it is in no way integrated into the Fiji Script Editor. It also appears that the Javascript recorder is not as robust as the Macro recorder yet.
 
-Code templates in the Script Editor
------------------------------------
+## Code templates in the Script Editor
 
 The Script Editor provides a fine way to script small plugins that do some simple tasks. If you know how.
 
 Provide a good number of templates so that the user does not have to start from scratch. A good template will also include rather more documentation than less, so that ideally the user does not have to look up the appropriate API calls, but just modifies the well-documented code.
 
-Make Script Editor rename a Java class automatically on *Save As...*
---------------------------------------------------------------------
+## Make Script Editor rename a Java class automatically on *Save As...*
 
 A public Java class must be compiled from a source file reflecting the class name, so it makes sense to rename the Java class when the file is saved under a new name. Teach the Script Editor to do that.
 
-Add a *Bookmark* function to the Script Editor
-----------------------------------------------
+## Add a *Bookmark* function to the Script Editor
 
 Often, it would be very convenient to remember the current cursor position to come back to, after looking around in other parts of the file. Maybe {% include key content='Ctrl' %}+{% include key content='B' %} (together with a menu entry), or {% include key content='Ctrl' %}+{% include key content='<digit>' %} are good ways to implement the user interface. (The code should be similar to the *Goto Line...* function.
 
-Add support for Haskell (via Jaskell) and Tcl (via Jacl)
---------------------------------------------------------
+## Add support for Haskell (via Jaskell) and Tcl (via Jacl)
 
 We already have Jacl in Fiji, as it is a dependency of Batik. There is also a pure-Java implementation of the Haskell language, and both should be relatively easy to integrate into Fiji as scripting languages.
 
 For Tcl, the Script Editor would need minimal adjustments, as RSyntaxTextArea already has support for Tcl, but for Haskell, a new TokenMaker would have to be implemented.
 
-Add {% include bc path='Edit | Find in files...'%}
--------------------------------------------------------
+## Add {% include bc path='Edit | Find in files...'%}
 
 We already have a mechanism to jump between compile errors and locations of a stack trace. The same mechanism could be used to present results from a search through multiple files.
 
-Add a {% include wikipedia title='Read-eval-print loop' text='"REPL" (Read-Eval-Print-Loop)'%} to the [Script Editor](/scripting/script-editor)
-------------------------------------------------------------------------------------------------------------------------------------------------------
+## Add a {% include wikipedia title='Read-eval-print loop' text='"REPL" (Read-Eval-Print-Loop)'%} to the [Script Editor](/scripting/script-editor)
 
-Detect loops after macro recording
-----------------------------------
+## Detect loops after macro recording
 
 A special form of an autocorrelation (on text) should be pretty good an indication where the user repeated things that might want to be done in a loop instead. This would help users with little background in programming to write powerful plugins through the macro recorder.
 
 Fiji development environment/infrastructure
 ===========================================
 
-GUI Testing framework
----------------------
+## GUI Testing framework
 
 We have some rudimentary GUI testing in the *tests* branch but it may be better to use an established GUI framework such as [Jemmy](https://jemmy.dev.java.net/) or [Marathon](http://www.marathontesting.com/Marathon.html).
 
@@ -225,8 +206,7 @@ The idea is, in any case, to record mouse moves and keyboard presses, optionally
 **Language:** Mainly Java  
 **Mentor:** Johannes Schindelin (johannes.schindelin@gmx.de)
 
-Interface between R and ImageJ/Fiji
------------------------------------
+## Interface between R and ImageJ/Fiji
 
 It would be nice to have a set of implemented procedures so IJ/Fiji can run statistical procedures directly from Results tables, etc).
 
@@ -245,8 +225,7 @@ To overcome the typical problem of loading native libraries via System.loadLibra
     }
     Rengine re = new Rengine();
 
-Teach the Fiji Updater to accept other sites in addition to [fiji.sc](/about/funding)
------------------------------------------------------------------------------------------
+## Teach the Fiji Updater to accept other sites in addition to [fiji.sc](/about/funding)
 
 The Fiji Updater always looks for a static file containing an XML database of Fiji plugins (both current and past versions) on our website. To put new versions or new plugins there (to *upload into the updater*), you have to be a Fiji developer with write permission for that particular directory on our server.
 
@@ -276,8 +255,7 @@ The project is not without complications, though:
 
 -   Cross-site dependencies should be handled by having hints in the XML database as to what other site is supposed to have the newest dependency.
 
-Integrate [JGit](http://www.jgit.org) into Fiji
------------------------------------------------
+## Integrate [JGit](http://www.jgit.org) into Fiji
 
 An important part of Fiji's success is the ease with which developers can collaborate through the use of [Git](/develop/git).
 
@@ -285,8 +263,7 @@ There exists a pure Java implementation of Git called [JGit](http://www.jgit.org
 
 It would be nice to have it integrated into Fiji so that the Script Editor can give the developers an even smoother developing experience.
 
-Make the Fiji Updater more intelligent about restarting
--------------------------------------------------------
+## Make the Fiji Updater more intelligent about restarting
 
 Only when there are updates outside plugins/ is it necessary to do a full restart; otherwise, a simple "Update Menus" will do the trick.
 
@@ -294,8 +271,7 @@ Further, after the message "You need to restart Fiji" (or the Update Menus), the
 
 And finally, if a restart is required, the user could be asked whether a restart should be attempted, and a JNI-provided function could be called with a list of open images (if there are unsaved images, they should be saved temporarily into temporary files) and result tables, which then re-executes Fiji appropriately.
 
-Make the Object Inspector more useful
--------------------------------------
+## Make the Object Inspector more useful
 
 There is a tool in Fiji that lets you sift through all open frames and inspect the corresponding objects (and their fields, in a recursive fashion).
 
@@ -306,8 +282,7 @@ Additionally, there could be a mode where you open the hierarchy of objects star
 User interface improvements
 ===========================
 
-Add a meta-plugin to run other plugins with ranges of parameters
-----------------------------------------------------------------
+## Add a meta-plugin to run other plugins with ranges of parameters
 
 Many plugins take parameters, and it might not be obvious what the optimal values are. So it would be nice to have a plugin that can call another plugin with a range of values.
 
@@ -319,8 +294,7 @@ Another (more hacky) possibility of getting the range parameters is to intercept
 
 Suggested by Quentin de Robillard.
 
-Integrate ImageFlow into Fiji
------------------------------
+## Integrate ImageFlow into Fiji
 
 <figure><img src="/media/ImageFlow.png" title="ImageFlow.png" width="700" alt="ImageFlow.png" /><figcaption aria-hidden="true">ImageFlow.png</figcaption></figure>
 
@@ -340,8 +314,7 @@ The following issues need to be resolved:
 
 -   it searches for its .xml files outside of the .jar file, which makes it cumbersome to ship with the Fiji updater.
 
-Provide *Help on menu item*
----------------------------
+## Provide *Help on menu item*
 
 Many commands available from menu items are actually plugins, so they are documented nicely on the Fiji Wiki. There is a beginning of a plugin that changes the cursor to an arrow with a question mark, and (temporarily) the way the menu items are handled: instead of running the corresponding command, the corresponding documentation on the Fiji Wiki is opened in a web browser.
 
@@ -353,8 +326,7 @@ The user should also be informed that hitting the {% include key content='Esc' %
 
 And finally, the Fiji Wiki needs some love to reflect the exact titles of the menu items, most probably by adding appropriate redirects.
 
-Add a clever *Save As* plugin
------------------------------
+## Add a clever *Save As* plugin
 
 For now, {% include bc path='File | Save As'%} always saves the result as a *.tiff* file, even if the user specified a file name ending in, say, *.png*.
 
@@ -365,38 +337,31 @@ For extra brownie points, do not hardcode the extension/plugin mapping (like Han
 Miscellaneous
 =============
 
-Alpha shapes / concave hull / other Graph Theory algorithms
------------------------------------------------------------
+## Alpha shapes / concave hull / other Graph Theory algorithms
 
 Fiji already contains a [Delaunay\_Voronoi](/plugins/delaunay-voronoi) plugin. The purpose of this project is to implement more graph algorithms. Most likely, this will involve designing a common framework for graph theory as applied to two- or higher-dimensional graphs.
 
-Support for storing ROIs in TIFF tag fields
--------------------------------------------
+## Support for storing ROIs in TIFF tag fields
 
 Fiji can save images as TIFF files and ROIs into custom .roi files. Provide a way to store the ROIs inside custom tags in the TIFF file so ROIs and images can be saved together.
 
-Cross platform webcam support
------------------------------
+## Cross platform webcam support
 
 Supporting image recording from webcams might provide a cheap way to make videomicroscope/telescope units (possibly using the [Distortion Correction](/plugins/distortion-correction) plugin to overcome low-quality CCD chips and lenses).
 
 One way to achieve that would be by using the [Free Java Media Framework](http://fmj-sf.net/).
 
-A unique/common segmentation interface
---------------------------------------
+## A unique/common segmentation interface
 
 I have collected near 15 new histogram segmentation methods that would be better put under a single interface together with others already available.
 
 Note: this is more or less implemented in the Auto\_Threshold and Auto\_Local\_Threshold plugins.--{%- include person id='landinig' -%} 14:47, 29 November 2009 (CET)
 
-Virtual microscope-like image viewer
-------------------------------------
+## Virtual microscope-like image viewer
 
-HSB/Lab painting modes
-----------------------
+## HSB/Lab painting modes
 
-Integrate Micro-Manager into Fiji
----------------------------------
+## Integrate Micro-Manager into Fiji
 
 This project requires a bit of knowledge in compiling C++ code on Linux, MacOSX and Windows. The idea is to make a recipe that other people can use to compile new releases of [Micro-Manager](http://www.micro-manager.org/), as well as integrate it into the Fiji project for a smooth user experience. To ensure that support for Micro-Manager is not broken inadvertently, you shall add regression tests, too.
 

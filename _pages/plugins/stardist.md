@@ -10,8 +10,7 @@ categories: Plugins
 {% endcapture %}
 {% include info-box name='StarDist' software='ImageJ' update-site='StarDist' author='Uwe Schmidt, Martin Weigert' maintainer='Uwe Schmidt, Martin Weigert' source=source website='https://github.com/mpicbg-csbd/stardist' %} <img src="/media/StarDist logo.jpg" width="128"/>
 
-Overview
---------
+## Overview
 
 This is the ImageJ/Fiji plugin for [StarDist](https://github.com/mpicbg-csbd/stardist), a cell/nuclei detection method for microscopy images with star-convex shape priors. The plugin can be used to apply already trained models to new images. See the [main repository](https://github.com/mpicbg-csbd/stardist) for links to our publications and the full-featured Python package that can also be used to train new models. If you encounter problems with the plugin, please file an issue [here](https://github.com/stardist/stardist-imagej).
 
@@ -19,8 +18,7 @@ This is the ImageJ/Fiji plugin for [StarDist](https://github.com/mpicbg-csbd/sta
 
 <img src="/media/Stardist screenshot small.jpg" width="640"/>
 
-Installation
-------------
+## Installation
 
 1.  Start Fiji (or download and install it from [here](https://fiji.sc) first).
 2.  Select `Help > Update...` from the menu bar.
@@ -31,8 +29,7 @@ Installation
 5.  Click on `Apply changes` to install the plugin.
 6.  Restart Fiji.
 
-Usage
------
+## Usage
 
 ### Plugin
 
@@ -52,15 +49,13 @@ Example of running the plugin, showing the returned label image and ROIs overlai
 
 Please have a look at the [Fiji/Jython script batch-processing example](https://gist.github.com/maweigert/8dd6ef139e1cd37b2307b35fb50dee4a) that runs stardist on all files of a folder.
 
-Citation
---------
+## Citation
 
 Please cite the paper if you are using the plugin in your research:
 
 -   Uwe Schmidt, Martin Weigert, Coleman Broaddus, and Gene Myers. [Cell Detection with Star-convex Polygons](https://arxiv.org/abs/1806.03535). International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI), Granada, Spain, September 2018.
 
-References
-----------
+## References
 
   
 

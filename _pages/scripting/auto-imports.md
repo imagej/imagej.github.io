@@ -35,8 +35,7 @@ How to: Activate a Header
 
 That's it! If one or more ScriptHeader(s) exist for the selected language, they will be added automatically to the top of your script.
 
-Limitations
------------
+## Limitations
 
 By default, headers will only be added when switching away from `Language = None`. The ScriptHeader population logic itself can be overridden by providing a higher-priority [ScriptHeaderService](https://github.com/scijava/scijava-common/blob/181c016330be30861b573b70fb934f0b23c30447/src/main/java/org/scijava/script/ScriptService.java).
 
@@ -48,8 +47,7 @@ A skeleton ScriptHeader is provided below. Simply resolve the marked TODOs and y
 -   If you are writing a ScriptHeader general to the core scripting languages, it can be contributed to the [core scripting repositories](https://github.com/scijava?query=scripting).
 -   If your ScriptHeader is specific to your project, it can be distributed as part of that project.
 
-Prototype ScriptHeader
-----------------------
+## Prototype ScriptHeader
 
     import org.scijava.plugin.Plugin;
     import org.scijava.script.AbstractScriptHeader;

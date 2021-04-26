@@ -6,8 +6,7 @@ categories: Scripting
 
 <img src="/media/Cmyk.jpg" title="fig:Trivial RGB to CMYK conversion. The left panel shows the individual CMYK channels as intensities in range [0(black)...1(white)], the right panel visualizes the individual CMYK channels as printed with the respective ink color on white paper." width="300" alt="Trivial RGB to CMYK conversion. The left panel shows the individual CMYK channels as intensities in range [0(black)...1(white)], the right panel visualizes the individual CMYK channels as printed with the respective ink color on white paper." /> Natively, ImageJ supports RGB and HSL color spaces. There is no effort spent to support {% include wikipedia title='Color management' text='color management'%} because the application is targeted at scientific image processing rather than image preparation for screen or print. For pure educational purposes, we show here how to do a trivial transformation between uncalibrated linear {% include wikipedia title='Rgb' text='RGB'%} to uncalibrated linear {% include wikipedia title='Cmyk' text='CMYK'%} where, in RGB, the grey intensity is just (R+G+B)/3.
 
-Description
------------
+## Description
 
 CMYK is a {% include wikipedia title='Subtractive color' text='subtractive'%} color space with a redundant gray channel to save color ink. The pure Cyan, Yellow and Magenta components are calculated by linearly combining the RGB components (in unsigned byte range \[0...255\]):
 
@@ -28,8 +27,7 @@ else
 
 That is, at least one of the CMY channels is always zero.
 
-Code
-----
+## Code
 
 This is BeanShell and can be executed via [Script Editor](/scripting/script-editor) or [BeanShell Interpreter](/scripting/interpreter) or by dragging it as a file with extension \`.bsh' into the Fiji toolbar. This script performs per-pixel operations in an interpreted language and, therefore, is very slow. If you really need more speed, compile the source into a Java class which is straight forward for BeanShell code.
 
@@ -107,8 +105,7 @@ This is BeanShell and can be executed via [Script Editor](/scripting/script-edit
     new ImagePlus( "Y visualized", ipYVis ).show();
     new ImagePlus( "K visualized", ipKVis ).show();
 
-See also
---------
+## See also
 
 -   [Scripting Help](/scripting)
 -   [Scripting\_comparisons](/scripting/comparisons)

@@ -10,8 +10,7 @@ categories: Segmentation, tutorials
 
 The images are representative of actual images in the real-world, containing some noise and small image alignment errors. None of these problems led to any difficulties in the manual labeling of each element in the image stack by an [expert human neuroanatomist](http://albert.rierol.net). The aim of the challenge is to compare and rank the different competing methods based on their pixel and object classification accuracy.
 
-Relevant dates
---------------
+## Relevant dates
 
 -   **Deadline for submitting results**: ~~February 1<sup>st</sup>~~ March 1<sup>st</sup>, 2012
 
@@ -29,8 +28,7 @@ Relevant dates
 
 The workshop competition is done but **the challenge remains open for new contributions**.
 
-How to participate
-------------------
+## How to participate
 
 **Everybody** can participate in the challenge. The only requirement consists of filling up the registration form [here](http://brainiac2.mit.edu/isbi_challenge/user/register) to get a user name and password to download the data and upload the results.
 
@@ -40,8 +38,7 @@ Each team received statistics regarding their results. **After the workshop, an 
 
 If you have any doubt regarding the challenge, please, do not hesitate to contact the [organizers](/events/Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012#Organizers). There is also an **open discussion group** that you can join [here](http://groups.google.com/group/EM-segmentation-challenge-ISBI-2012).
 
-Training data
--------------
+## Training data
 
 {% include thumbnail src='/media/Challenge-ISBI-2012-Animation-Input-Labels.gif' title='Input training data and corresponding labels'%} The training data is a set of 30 sections from a serial section Transmission Electron Microscopy (ssTEM) data set of the Drosophila first instar larva ventral nerve cord (VNC). The microcube measures 2 x 2 x 1.5 microns approx., with a resolution of 4x4x50 nm/pixel.
 
@@ -51,18 +48,15 @@ The corresponding binary labels are provided in an in-out fashion, i.e. white fo
 
 This is the only data that participants are allowed to use to train their algorithms.
 
-Test data
----------
+## Test data
 
 The contesting segmentation methods will be ranked by their performance on a test dataset, also available in the [challenge server](http://brainiac2.mit.edu/isbi_challenge/), after registration. This test data is another volume from the same Drosophila first instar larva VNC as the training dataset.
 
-Results format
---------------
+## Results format
 
 The **results** are expected to be uploaded in the [challenge server](http://brainiac2.mit.edu/isbi_challenge/) as a **32-bit TIFF 3D image, which values between 0 (100% membrane certainty) and 1 (100% non-membrane certainty).**
 
-Evaluation metrics
-------------------
+## Evaluation metrics
 
 In order to evaluate and rank the performances of the participant methods, we will use 2D topology-based segmentation metrics, together with the pixel error (for the sake of metric comparison). Each metric will have an updated leader-board.
 
@@ -76,16 +70,14 @@ If you want to apply these metrics yourself to your own results, you can do it w
 
 We understand that segmentation evaluation is an ongoing and sensitive research topic, therefore we open the metrics to discussion. Please, do not hesitate to contact the [organizers](/events/Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012#Organizers) to discuss about the metric selection.
 
-Organizers
-----------
+## Organizers
 
 -   {%- include person id='iarganda' -%} (Howard Hughes Medical Institute, Department of Brain and Cognitive Sciences, Massachusetts Institute of Technology, Cambridge, MA, USA)
 -   [Sebastian Seung](http://hebb.mit.edu/people/seung/) (Howard Hughes Medical Institute, Department of Brain and Cognitive Sciences, Massachusetts Institute of Technology, Cambridge, MA, USA)
 -   {%- include person id='acardona' -%} (Institute of Neuroinformatics, Uni/ETH Zurich, Switzerland)
 -   {%- include person id='dscho' -%} (University of Wisconsin-Madison, WI, USA)
 
-References
-----------
+## References
 
 Publications about the data:
 

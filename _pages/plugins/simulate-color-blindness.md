@@ -10,8 +10,7 @@ This plugin simulates color blindness.
 
 It is based on http://quarkphysics.ca/phys1/light/u-light.htm .
 
-Usage
------
+## Usage
 
 Choose one of the color blindness modes in the dialog, then press OK:
 

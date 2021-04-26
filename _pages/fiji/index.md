@@ -11,14 +11,12 @@ categories: Fiji,Related Software,Citable
 -   **[For users](/about/usage)** - Fiji is [easy to install](/fiji/downloads) and has an automatic update function, bundles a [lot of plugins](Category_Plugins) and offers comprehensive [documentation](/learn).
 -   **[For developers](/fiji/developing)** - Fiji is an open source project hosted in a [Git](/develop/git) version control {% include github repo='fiji' label='repository' %}, with access to the source code of all internals, libraries and plugins, and eases the [development](/develop) and [scripting](/scripting) of plugins.
 
-/downloads
----------
+## /downloads
 
 {% include downloadfiji %}
  See the [Fiji /downloads](/fiji/downloads) page for Life-Line versions, etc.
 
-License
--------
+## License
 
 Fiji is released as [open source](Open_source) under the [GNU General Public License](/licensing/gpl).
 
@@ -28,8 +26,7 @@ Plugins and other components have {% include github repo='fiji' path='LICENSES' 
 
 See the [Licensing](/licensing) page for details.
 
-Contributing
-------------
+## Contributing
 
 Fiji is supported by several laboratories and institutions:
 
@@ -42,7 +39,6 @@ Fiji is an [open source](Open_source) project, so everybody is welcome to contri
 
 If you'd like to share an idea or project, please [share them with the community](/help).
 
-Publication
------------
+## Publication
 
 {% include publication content='Fiji' %}

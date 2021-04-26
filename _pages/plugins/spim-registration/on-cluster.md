@@ -39,8 +39,7 @@ So, if you are new read a bit of the chapter 1 (original pipeline) to get famili
 Original SPIM registration pipeline
 ===================================
 
-Pre-requisites
---------------
+## Pre-requisites
 
 ### Saving data on Lighsheet Z.1
 
@@ -85,8 +84,7 @@ Change to the newly created Fiji-app directory and [update](/plugins/updater#com
 
 Done, you are ready to use Fiji on the cluster.
 
-Renaming files
---------------
+## Renaming files
 
 We need to change the file name from a simple index to a pattern that contains the time point and the angle information.
 
@@ -185,8 +183,7 @@ To check if all time points and angles of a time point are present, you can use 
 
 The script will return you the specific time points that are missing or the time points that have missing angles.
 
-Saving data as tif
-------------------
+## Saving data as tif
 
 As a first step we will open the .czi files and save them as **.tif**. This is necessary because Fiji's bead based registration currently cannot open the .czi files. Opening hundreds of files several GB each sequentially and re-saving them as tif may take a long time on a single computer. We will use the cluster to speed-up that operation significantly.
 
@@ -343,8 +340,7 @@ Now we must repeat the whole procedure for the other two angles (325 and 235). O
 
 On our cluster powered by the Lustre filesystem the resaving operation takes only minutes. Imagine what is happening - up to 480 processors are accessing the file system reading .czi files and immediately resaving it to that very same filesystem as tif - all at the same time. The files are 1.8GB each. Beware: this may not work at all on lesser filesystems - the Lustre is made for this.
 
-Registration
-------------
+## Registration
 
 SPIM registration consists of **within time-point** registration of the views followed by **across time-point** registration of the time-series. Both are achieved using Fiji's bead based SPIM registration plugin. The per-time-point registration is a pre-requisite for time-lapse registration. For detailed overview see [here](/plugins/spim-registration).
 
@@ -507,8 +503,7 @@ Tips and tricks
 -   the xy\_resolution can be set to 1 since the plugin only uses the ratio between xy and z
 -   For very long time-series where the sample potentially jumps in the field of view it may be necessary to register several segments of the series separately.
 
-Fusion
-------
+## Fusion
 
 In multi-view SPIM imaging fusion means combination of registered views into a single output image. Fiji currently implements two distinct fusion strategies: content based fusion and multi-view deconvolution. For detailed overview see [SPIM registration](/plugins/spim-registration) page.
 
@@ -773,8 +768,7 @@ Tips and tricks:
 
 Coming soon.
 
-3D rendering
-------------
+## 3D rendering
 
 Finally we want generate a beautiful 3D rendering of the downsampled, fused data and run it as movies at conferences... ;-).
 
@@ -1021,8 +1015,7 @@ Tips and tricks
 
 The 3D rendering is relatively complex (we are working on a simpler solution) but extremely rewarding. *Drosophila* embryogenesis movie coming soon here.
 
-Processing 2 channels
----------------------
+## Processing 2 channels
 
 This part will deal with the processing of SPIM data with 2 channels. The registration and fusion works very similar and needs only a few adjustments to the scripts above, which I will point out specifically. There are 2 main differences:
 
@@ -1508,8 +1501,7 @@ All the scripts work with padded zeros.
 
 At the moment this tutorial is written for advanced users that already used the previous pipeline. For a more detailed introduction please read into the description of the previous pipeline.
 
-Master file
------------
+## Master file
 
 There are two parts in this file:
 
@@ -1833,8 +1825,7 @@ We will discuss each section of this file with the associated processing step.
     ##Working script
     export="/projects/pilot_spim/Christopher/pipeline/jobs_master_beta_2.0/hdf5/export.bsh"
 
-First time using the master file
---------------------------------
+## First time using the master file
 
 Upon using the master file the first time please change the links for Fiji, the working directories and scripts in the second part of the file:
 
@@ -2003,8 +1994,7 @@ Or the **create-resaving-jobs** file:
 
 These settings only need to be changed once, if the job scripts and the master file stay in the same directories.
 
-Single-channel Processing
--------------------------
+## Single-channel Processing
 
 ### First steps
 
@@ -3479,8 +3469,7 @@ Send the jobs to the cluster using the **submit-jobs** script:
         bsub -q short -n 8 -W 01:00 -R rusage[mem=10000] -R span[hosts=1] -o "out.%J" -e "err.%J" ${1}/$file
     done
 
-Multi-channel Processing
-------------------------
+## Multi-channel Processing
 
 The **master file** has all the necessary information to easily switch between single-channel and multi-channel data. You just need to make the correct settings in the master file and use 2 additional scripts for the current pipeline to process multi-channel datasets. In this chapter I will point out the necessary changes specifically.
 
@@ -4396,8 +4385,7 @@ In practice it means the following steps need to be executed:
 
 Some new parameters are introduced and some old parameters change names. Therefore, use the master file described in this chapter to process with the MVR pipeline.
 
-Define XML
-----------
+## Define XML
 
 First step in [**Multiview Reconstruction**](/plugins/multiview-reconstruction) is to define an XML file that describes the imaged dataset. This is very flexible and can be adapted to datasets with several angles, channels, illumination sides and timepoints. The relevant portion of the *master* file looks like this:
 
@@ -4547,8 +4535,7 @@ Tips and tricks:
 
 -   Macro commands that consist of strings are usually surrounded by square brackets "\[\]". Do NOT put the brackets into the master file, they are provided by the Beanshell script.
 
-Re-save as HDF5
----------------
+## Re-save as HDF5
 
 *Note: this step is optional at this point. Re-saving to HDF5 can be done also after registration or not at all*.
 
@@ -4699,8 +4686,7 @@ and new *hdf5\_dataset.xml*.
 
 From now on, the data are in the HDF5 container (unregistered) and can be viewed in [BigDataViewer](/plugins/bdv). In the next step we register the data by running the registration pipeline and updating the XML.
 
-Multiview registration
-----------------------
+## Multiview registration
 
 We now have to .xml files. *dataset.xml* created during the define xml step and *hdf5\_dataset.xml* created after re-saving to HDF5. Lets first make a copy of the *dataset.xml*
 
@@ -4965,8 +4951,7 @@ The result of the registration are 10 XML files, one for each timepoint, in the 
 `dataset.job_8.xml`  
 `dataset.job_9.xml`
 
-Merge XMLs
-----------
+## Merge XMLs
 
 The per timepoint XMLs need to be merged into a single output XML. This can be done at any point of the cluster run, i.e. not all XMLs need to exist to perform the merge and the merge can be performed multiple times. It however makes sense to wait until all per-timepoint XMLs are created.
 

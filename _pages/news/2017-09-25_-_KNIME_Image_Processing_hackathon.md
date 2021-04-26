@@ -8,15 +8,13 @@ From Wednesday, September 20, 2017 through Friday, September 28, 2017, {%- inclu
 
 There was a big focus this time on machine learning, particularly deep learning networks applied to biological data.
 
-Participants
-------------
+## Participants
 
 -   KNIME: {%- include person id='dietzc' -%}, {%- include person id='gab1one' -%}, Jon Fuller, {%- include person id='AlexanderFillbrunn' -%}, {%- include person id='Squareys' -%}, {%- include person id='hornm' -%}, {%- include person id='SimonSchmid' -%}, {%- include person id='MarcelWiedenmann' -%}, {%- include person id='patrick-winter-knime' -%}
 -   MPI-CBG Dresden: {%- include person id='fjug' -%}, {%- include person id='maarzt' -%}, {%- include person id='tibuch' -%}, {%- include person id='tpietzsch' -%}, {%- include person id='mp007' -%}, {%- include person id='frauzufall' -%}, {%- include person id='xulman' -%}, {%- include person id='HedgehogCode' -%}
 -   Others: {%- include person id='imagejan' -%}, {%- include person id='chaubold' -%}, {%- include person id='stelfrich' -%}, {%- include person id='Treiblesschorle' -%}, {%- include person id='milkyklim' -%}, {%- include person id='kmader' -%}, Julianus Pfeuffer, {%- include person id='StephanPreibisch' -%}, Jonas Probst, René Rahn, {%- include person id='ctrueden' -%}
 
-Hackathon progress
-------------------
+## Hackathon progress
 
 ### Curtis Rueden
 
@@ -73,8 +71,7 @@ Hackathon progress
 -   Got an introduction on KNIME Node development by Tim Oliver and Stefan Hilfrich
 -   Created a KNIME image processing plugin for image segmentation based on Labkit / Trainable Segmentation.
 
-Technical discussions
----------------------
+## Technical discussions
 
 -   Fiji component and application releases: today and in the future ({%- include person id='ctrueden' -%}, {%- include person id='fjug' -%}, {%- include person id='tpietzsch' -%})
     -   Next stable release (December 2017) will still follow the 'old' way of doing things.

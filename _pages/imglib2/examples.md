@@ -12,13 +12,11 @@ categories: ImgLib,Tutorials
 {% include info-box name='Examples' software='ImgLib2' author='Stephan Preibisch' maintainer='Stephan Preibisch, Curtis Rueden' source=source released='March 2012' latest-version='December 2013' website=' [ImgLib2 publication](http://bioinformatics.oxfordjournals.org/content/early/2012/09/07/bioinformatics.bts543.abstract)' %} 
 
 
-Jupyter notebook
-----------------
+## Jupyter notebook
 
 This tutorial is also available in Jupyter notebook form [here](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/3-Advanced-Usage/2-ImgLib2-in-Detail.ipynb)!
 
-Introduction & required files
------------------------------
+## Introduction & required files
 
 This page shows eight increasingly complex examples of how to program with ImgLib2. The intention of these examples are not to explain ImgLib2 concepts, but rather to give some practical hints how to work with the library and to grasp the principles in a learning-by-doing way.
 
@@ -34,8 +32,7 @@ All examples presented on this page are always entire classes including a main m
 
 Alternately, you can access the examples from the {% include github org='imglib' repo='imglib-tutorials' label='ImgLib-tutorials Git repository' %}. After cloning the source code, open the project in your favorite IDE. See [Developing ImgLib2](/imglib2/developing) for further details.
 
-Example 1 - Opening, creating and displaying images
----------------------------------------------------
+## Example 1 - Opening, creating and displaying images
 
 The first example illustrates the most basic operations of opening, creating, and displaying image content in ImgLib2. It will first focus on entires images (**Img<T>**), but also show how to display subsets only.
 
@@ -79,8 +76,7 @@ A **View** almost behaves similar to an **Img**, and in fact they share importan
 
 {% include github-embed org='imglib' repo='imglib-tutorials' source='Example1d.java' %}
 
-Example 2 - How to use Cursor, RandomAccess and Type
-----------------------------------------------------
+## Example 2 - How to use Cursor, RandomAccess and Type
 
 The following examples illustrate how to access pixels using **Cursor** and **RandomAccess**, their basic properties, and how to modify pixel values using **Type**.
 
@@ -135,8 +131,7 @@ As the *target* needs to be an **IterableInterval**, it is more confined. This, 
 
 {% include github-embed org='imglib' repo='imglib-tutorials' source='Example2c.java' %}
 
-Example 3 - Writing generic algorithms
---------------------------------------
+## Example 3 - Writing generic algorithms
 
 Examples 1 and 2 tried to introduce important tools you need in order to implement algorithms with ImgLib2. This example will show three generic implementations of algorithms computing the [min/max](#example-3a-min-max-search), average as well as the center of mass.
 
@@ -177,8 +172,7 @@ In a very similar way one can compute the average intensity for image data. Note
 
 {% include github-embed org='imglib' repo='imglib-tutorials' source='Example3b.java' %}
 
-Example 4 - Specialized iterables
----------------------------------
+## Example 4 - Specialized iterables
 
 Example 4 will focus on how to work with specialized **iterables**. They are especially useful when performing operations in the local neighborhood of many pixels - like finding local minima/maxima, texture analysis, convolution with non-separable, non-linear filters and many more. One elegant solution is to write a specialized **Iterable** that will iterate all pixels in the local neighborhood. We implemented two examples:
 
@@ -224,8 +218,7 @@ Please note as well that if one would increase the radius of the **RectangleShap
 
 {% include github-embed org='imglib' repo='imglib-tutorials' source='Example4b.java' %}
 
-Example 5 - Out of bounds
--------------------------
+## Example 5 - Out of bounds
 
 Many algorithms like *convolutions* require to access pixels outside of an **Interval**, i.e. also pixels outside of an image. In ImgLib2 this is handled using **Views** which convert a **RandomAccessibleInterval** into an infinite **RandomAccessible** using an **OutOfBoundsStrategy**. Those infinite **RandomAccessibles** are able to return pixel values at any arbitrary location.
 
@@ -237,8 +230,7 @@ Which **OutOfBoundsStrategies** to use depends on task you want to perform. For 
 
 {% include github-embed org='imglib' repo='imglib-tutorials' source='Example5.java' %}
 
-Example 6 - Basic built-in algorithms
--------------------------------------
+## Example 6 - Basic built-in algorithms
 
 ImgLib2 contains a growing number of built-in standard algorithms. In this section, we will show some of those, illustrate how to use them and give some examples of what it might be used for.
 
@@ -310,8 +302,7 @@ The final convolution of the inverse template with the image is performed using 
 
 {% include github-embed org='imglib' repo='imglib-tutorials' source='Example6c.java' %}
 
-Example 7 - Interpolation
--------------------------
+## Example 7 - Interpolation
 
 Interpolation is a basic operation required in many image processing tasks. In the terminology of ImgLib2 it means to convert a **RandomAccessible** into a **RealRandomAccessible** which is able to create a **RealRandomAccess**. It can be positioned at real coordinates instead of only integer coordinates and a return a value for each real location. Currently, three interpolation schemes are available for ImgLib2:
 
@@ -325,8 +316,7 @@ In the example we magnify a given real interval in the **RealRandomAccessible** 
 
 {% include github-embed org='imglib' repo='imglib-tutorials' source='Example7.java' %}
 
-Example 8 - Working with sparse data
-------------------------------------
+## Example 8 - Working with sparse data
 
 ImgLib2 supports sparsely sampled data, i.e. collections of locations together with their value. Such datasets typically implement the **IterableRealInterval** interface, which means they can be iterated and have real-valued locations in n-dimensional space. Currently ImgLib2 supports to store such collections either as list (**RealPointSampleList**) or **KDTree**. The **RealPointSampleList** can be iterated, whereas the **KDTree** additionally supports three efficient ways of searching for nearest neighboring points in the n-dimensional space (**NearestNeighborSearch**, **KNearestNeighborSearch**, and **RadiusNeighborSearch**).
 

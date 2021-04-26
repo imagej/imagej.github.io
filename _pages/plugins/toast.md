@@ -9,8 +9,7 @@ The **ToAST** plugin (Tool for Automated Sporozoite Tracking)
 
 ToAST is a Fiji plugin performing tracking and analysis of motile fluorescent objects highly customized to study malaria sporozoite motility. It is based on a popular [MTrack2](/plugins/mtrack2) plugin for ImageJ additionally performing classification of tracks of objects into circular clockwise (CW) or counter-clockwise (CCW) movement, non-motile ("Attached") and strongly rotationally moving ("Waving") objects based on short time intervals. Although it was designed to classify the motility patterns of malaria sporozoites that isolated to a glass slide essentially glide in circles, it may be worthwhile trying the plugin on other types of moving objects especially when addressing the questions of motility directionality.
 
-Usage
------
+## Usage
 
 The input for ToAST is a binary image, to create one please go to {% include bc path='Image | Adjust | Threshold'%}, select the level, press "apply". You might need to invert the image to make the background value 255, the object – 0. Use of automated thresolding plugins is also possible.
 
@@ -28,13 +27,11 @@ After pressing OK button the plugin runs creating a log-file where it stores the
 
 Below you can find all the data again but sorted according to the types of motility; average parameters for every state and frequencies of transmission between states.
 
-Example
--------
+## Example
 
 There is an example for ToAST in Fiji: {% include bc path='File | Open Samples | Malaria Sporozoites (9.2MB)'%}
 
-Citation
---------
+## Citation
 
 -   Automated classification of *Plasmodium* sporozoite movement patterns reveals a shift towards productive motility during salivary gland infection, Hegge S, Kudryashev M, Smith A, Frischknecht F, *Biotechnology Journal* , 2009, 4, 6 pp: 903-913
 

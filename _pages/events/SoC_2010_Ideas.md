@@ -34,8 +34,7 @@ Students can apply for the program at the [Google Summer of Code website](http:/
 Project ideas
 =============
 
-Applying machine learning to the image segmentation problem
------------------------------------------------------------
+## Applying machine learning to the image segmentation problem
 
 The term *image segmentation* describes the task where objects in an image are to be outlined, so that every pixel is connected to either a named object, or background.
 
@@ -58,8 +57,7 @@ You are welcome to use any scientifically-relevant dataset of your choice, but w
 **Language:** Java.  
 **Mentor:** Johannes Schindelin (johannes.schindelin AT gmx.de) or Albert Cardona (acardona AT ini phys ethz ch)  
 
-Add JMathLib (MATLAB clone) support
------------------------------------
+## Add JMathLib (MATLAB clone) support
 
 Quite a few algorithms are available as proof-of-concept [MATLAB](/scripting/matlab) scripts. While it is [wrong to think of pixels as little squares](Ftp___ftp.alvyray.com_Acrobat_6_Pixel.pdf), and literally all [MATLAB](/scripting/matlab) scripts to perform image processing are suffering from that shortcoming, it would be very nice nevertheless to be able to run the scripts without having to buy [MATLAB](/scripting/matlab) licenses just for that purpose.
 
@@ -85,8 +83,7 @@ The project would consist of
 **Language:** Java.  
 **Mentor:** Johannes Schindelin (johannes.schindelin AT gmx.de)  
 
-Teach the Fiji Updater about multiple update sites and offer to upgrade the Java Runtime
-----------------------------------------------------------------------------------------
+## Teach the Fiji Updater about multiple update sites and offer to upgrade the Java Runtime
 
 The Fiji Updater always looks for a static file containing an XML database of Fiji plugins (both current and past versions) on our website. To put new versions or new plugins there (to *upload into the updater*), you have to be a Fiji developer with write permission for that particular directory on our server.
 
@@ -122,8 +119,7 @@ Also, the Updater cannot upgrade the Java Runtime as of now. There is little rea
 **Language:** Java.  
 **Mentor:** Johannes Schindelin (johannes.schindelin AT gmx.de)  
 
-Add a "real" installer
-----------------------
+## Add a "real" installer
 
 For now, Fiji is a portable application, which means you can unpack it anywhere and run it from there.
 
@@ -135,8 +131,7 @@ In short, basically provide all the niceties one expects from an installer.
 **Language:** Java.  
 **Mentor:** Johannes Schindelin (johannes.schindelin AT gmx.de)  
 
-Implementing algorithms for imglib
-----------------------------------
+## Implementing algorithms for imglib
 
 The new imglib supports dimension-, storage- and data type independent image processing. This library has some algorithms built-in already but there is a strong need to generically implement more general image processing algorithms, storage strategies and data types such as:
 
@@ -151,8 +146,7 @@ The new imglib supports dimension-, storage- and data type independent image pro
 **Language:** Java.  
 **Mentor:** Stephan Preibisch (preibisch AT mpi-cbg.de) or Johannes Schindelin (johannes.schindelin AT gmx.de)  
 
-Composing a feature extraction library for supervised training of segmentations
--------------------------------------------------------------------------------
+## Composing a feature extraction library for supervised training of segmentations
 
 On natural images machine learning approaches like boosted edge learning \[1\] or global probability of boundary \[2\] have demonstrated significant improvement in image segmentation by training on manually labeled ground truth.
 
@@ -165,8 +159,7 @@ While significant features for a specific classification task can be selected ba
 \[1\] Piotr Dollar, Zhuowen Tu, and Serge Belongie, [*Supervised Learning of Edges and Object Boundaries*](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.91.4383&rep=rep1&type=pdf), CVPR, 2006.  
 \[2\] Michael Maire, Pablo Arbelaez, Charless Fowlkes and Jitendra Malik, [*Using Contours to Detect and Localize Junctions in Natural Images.*](http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/papers/mafm-cvpr08.pdf),CVPR 2008
 
-Translate ITK methods into Fiji
--------------------------------
+## Translate ITK methods into Fiji
 
 The new **imglib** library facilitates the task of translating [ITK routines](http://www.itk.org/itkindex.html) into Fiji. The main idea of this project is to import interesting algorithms from [ITK](http://www.itk.org/itkindex.html) into native imglib code, mainly methods for:
 
@@ -179,8 +172,7 @@ The new **imglib** library facilitates the task of translating [ITK routines](ht
 **Language:** Java, C++, ITK  
 **Mentor:** Ignacio Arganda-Carreras (iarganda@mit.edu), Stephan Preibisch (preibisch@mpi-cbg.edu) or Johannes Schindelin (johannes.schindelin@gmx.de)
 
-Integrate µManager into Fiji
-----------------------------
+## Integrate µManager into Fiji
 
 [µManager](http://www.micro-manager.org/) is a partly platform-dependent ImageJ project that adds support for controlling microscopes (focus, stages, filter banks, objective wheels, etc).
 
@@ -190,8 +182,7 @@ This project requires a bit of knowledge in compiling C++ code on Linux, MacOSX 
 **Language:** Java, C++, shell  
 **Mentor:** Johannes Schindelin (johannes.schindelin@gmx.de)
 
-Morphological classification via hierarchical clustering
---------------------------------------------------------
+## Morphological classification via hierarchical clustering
 
 The idea behind this project is to implement interactive object classification on an image or stack containing various binary objects, based on morphological data residing on the Results Table. This data will be submitted to one of various hierarchical cluster analysis methods and produce a dendrogram graph. The distance between clusters in the dendrogram is represented by a "distance" axis and the user should be able to select the number of clusters via a slider on the "distance" axis. The objects in the original image are then labelled according to the cluster they belong defined by the distance slider.
 
@@ -199,8 +190,7 @@ The idea behind this project is to implement interactive object classification o
 **Language:** Java, Weka library  
 **Mentor:** G. Landini (G.Landini at bham.ac.uk) and Johannes Schindelin (johannes.schindelin@gmx.de)
 
-Applying machine learning to the image classification problem
--------------------------------------------------------------
+## Applying machine learning to the image classification problem
 
 This project is motivated by a specific biological questions associated with large-scale image set describing patterns of gene expression in [<i>Drosophila</i> embryogenesis](http://www.fruitfly.org/cgi-bin/ex/insitu.pl). It is inspired by the software developed under the [Cell Profiler project](http://www.pnas.org/content/106/6/1826.long).
 
@@ -222,8 +212,7 @@ This approach has been successfully used to classify embryo images yet a usable 
 <b>Language</b> Java  
 <b>Mentors</b> Pavel Tomancak (tomancak at mpi-cbg.de) and Erwin Frise  
 
-Provide cluster support for Fiji
---------------------------------
+## Provide cluster support for Fiji
 
 Fiji runs fine on desktop machines, but for some tasks, it is better to use a cluster.
 
@@ -238,8 +227,7 @@ To that end, Fiji already supports "headless" mode, i.e. operation without the n
 **Language:** Java.  
 **Mentor:** Pavel Tomancak (tomancak at mpi-cbg.de) and Johannes Schindelin (johannes.schindelin at gmx.de)  
 
-Hierarchical n-dimensional compressable cell-base storage backend
------------------------------------------------------------------
+## Hierarchical n-dimensional compressable cell-base storage backend
 
 Develop storage backend that enables fast random access through limited bandwidth channels to large scale image datasets, e.g. a Java client that can arbitrarily slice into very large volumes hosted by a server without making the server render the slices and without the client loading the full volume.
 
@@ -251,8 +239,7 @@ The project should make use of the imglib library
 <b>Language</b> Java  
 <b>Mentors</b> Stephan Saalfeld (saalfeld at mpi-cbg.de)  
 
-Motion Deblurring from a Single Image
--------------------------------------
+## Motion Deblurring from a Single Image
 
 The aim of the project is to implement a state-of-the-art motion deblurring algorithm as described in the paper of Qi Shan et al., "High-quality Motion Deblurring from a Single Image" published at the Siggraph 2008. The algorithm is capable of approximating the undisturbed image without any prior knowledge like the Point Spread Function. Convergence is achieved by using improved noise modeling and actively suppressing ringing artifacts.
 
@@ -264,8 +251,7 @@ The aim of the project is to implement a state-of-the-art motion deblurring algo
 <b>Language</b> Java  
 <b>Mentors</b> Stephan Preibisch (preibisch at mpi-cbg.de)  
 
-Robust blob segmentation
-------------------------
+## Robust blob segmentation
 
 In life sciences, you often cope with round structures of interest. Such round structures can be cells, vesicles, nuclei or similarly shaped objects. While an ellipse might be a good initial fit, the final outline most certainly is not.
 
@@ -279,8 +265,7 @@ The purpose of this project is to segment in a fully automatic way round, convex
 **Language:** Java  
 **Mentor:** Johannes Schindelin (johannes.schindelin@gmx.de)
 
-Fiber segmentation
-------------------
+## Fiber segmentation
 
 Biological images sometimes contain fiber-like structures, such as cell membranes (in 2D, they are fiber-like), the mitotic spindle, or microtubuli. Example (the green signal):
 
@@ -292,8 +277,7 @@ A combination of edge detection, hough transform and fitting should provide a ro
 **Language:** Java  
 **Mentor:** Johannes Schindelin (johannes.schindelin@gmx.de)
 
-Texture segmentation
---------------------
+## Texture segmentation
 
 Not all images which Fiji users are interested in contain bright objects on dark background, or vice versa. Sometimes, the structures cannot be discerned using the intensity, but only using statistic measures where the inside pixels have a different geometric distribution than the outside pixels. Example:
 
@@ -307,8 +291,7 @@ This proposal is about adding at least one such segmentation algorithm to Fiji.
 **Language:** Java  
 **Mentor:** Johannes Schindelin (johannes.schindelin@gmx.de)
 
-Add trainable region merging
-----------------------------
+## Add trainable region merging
 
 We have implemented the Statistical Region Merging algorithm in Fiji. It segments the image into different regions.
 

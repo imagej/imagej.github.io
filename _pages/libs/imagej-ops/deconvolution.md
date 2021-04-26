@@ -7,8 +7,7 @@ categories: Ops,Deconvolution
 
 
 
-Overview
---------
+## Overview
 
 [ImageJ Ops](/libs/imagej-ops) is an extensible framework for algorithms. [Deconvolution](/cookbook/deconvolution) is a process that is used to de-blur images. When implemented with appropriate constraints deconvolution can also de-noise images. The imagej-ops project gives algorithm developers a framework to implement, organize and test various approaches to deconvolution.
 
@@ -20,8 +19,7 @@ Current work is focused on:
 
 3\. Designing a framework that will make it easy for developers to implement other types of deconvolution.
 
-Richardson Lucy
----------------
+## Richardson Lucy
 
 {% include wikipedia title='Richardson%E2%80%93Lucy deconvolution' text='Richardson Lucy'%} is an iterative deconvolution algorithm that can be used to reconstruct a blurred image.
 
@@ -51,13 +49,11 @@ The proper handling of boundary conditions is an important part of deconvolution
 
 [Non-circulant Richardson Lucy](http://bigwww.epfl.ch/deconvolution/challenge2013/index.html?p=doc_math_rl)
 
-Scripts
--------
+## Scripts
 
 A collection of scripts that use ops-deconvolution is being developed and can be found [here on github](https://github.com/imagej/imagej-scripting/tree/master/src/main/resources/script_templates/Deconvolution). The scripts can also be accessed via the Templates-&gt;Deconvolution menu in the Fiji script editor. Note that as new scripts are added it may take a couple of weeks for them to be available in Fiji. Thus check github for the most up to date collection of scripts.
 
-Preliminary Results
--------------------
+## Preliminary Results
 
 Preliminary results have been generated using the [C. Elegans Embryo](http://bigwww.epfl.ch/deconvolution/bio/) images and PSFs provided by the Bio-Imaging Group of EPFL. Note that this result is not yet optimal, as the image has spherical aberration (asymmetrical 'flare' in the xz view) and the provided PSF did not have SA. In the future better ops to produce a theoretical PSF with spherical aberration will be developed.
 
@@ -71,8 +67,7 @@ We encourage users of deconvolution to try deconvolving this image with various 
 
 <img src="/media/Composite decon xy.jpg" width="300"/><img src="/media/Composite decon zx.jpg" width="140"/>
 
-References
-----------
+## References
 
 -   T. Pietzsch, S. Preibisch, P. Tomancak and S. Saalfeld, *ImgLib2 - Generic image processing in Java*, Bioinformatics, Vol. 28(22), pp. 3009-3011 (2012).
 

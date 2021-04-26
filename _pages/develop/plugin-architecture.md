@@ -8,15 +8,13 @@ title: Description of ImageJ's plugin architecture
 
 So you want to know how ImageJ determines what plugins are available, and how to call them? If so, you came to the right place.
 
-What are ImageJ plugins?
-------------------------
+## What are ImageJ plugins?
 
 ImageJ plugins are classes implementing the *ij.plugin.PlugIn* or *ij.plugin.filter.PlugInFilter* interface. The latter will only work when it has an input image, and it has a *setup()* method that returns information about which types of images the plugin can handle.
 
 If a plugin class implements both the *PlugIn* and the *PlugInFilter* interface, the *PlugIn* interface will be preferred.
 
-How does ImageJ find the plugins?
----------------------------------
+## How does ImageJ find the plugins?
 
 Plugins must be stored as either *.class* or *.jar* files in the *plugins/* directory in ImageJ's root directory.
 
@@ -34,8 +32,7 @@ The *.class* file discovery in *.jar* files is <u>not</u> performed if the *.jar
 
 *Fiji note:* while the plugins' *.jar* files are stored in the *plugins/* directory, the third-party libraries are not. They are stored in the *jars/* directory, so that e.g. the file *jai\_codec.jar* (which also contains classes with underscores in their names) is not mistaken for a plugin *.jar*. Plugins share all third party-libraries located in the *jars* directory. Every plugin has all third-party libraries in its classpath.
 
-Can plugins be reloaded?
-------------------------
+## Can plugins be reloaded?
 
 Yes. By clicking on *Update Menus* in the *Help* menu, ImageJ's plugin class loader is replaced with a new instance. Plugins which are already running are not reloaded, though.
 
@@ -45,8 +42,7 @@ Yes. By clicking on *Update Menus* in the *Help* menu, ImageJ's plugin class loa
 
 *Another Fiji note:* for scripting languages to work, the interpreters' class loaders have to be replaced or augmented by ImageJ's plugin class loader.
 
-How can a plugin specify input/output parameters?
--------------------------------------------------
+## How can a plugin specify input/output parameters?
 
 A plugin typically instantiates *ij.gui.GenericDialog* in its *run()* method. This class serves three purposes:
 

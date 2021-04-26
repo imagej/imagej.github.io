@@ -6,13 +6,11 @@ categories: Plugins,Deconvolution
 
 {% include info-box software='ImageJ' name='Parallel Iterative Deconvolution 2D and 3D' author='Piotr Wendykier' maintainer='None' filename=' [parallel\_iterative\_deconvolution-1.9-bin.zip](http://sourceforge.net/project/downloading.php?group_id=260515&filename=parallel_iterative_deconvolution-1.9-bin.zip)' source=' [parallel\_iterative\_deconvolution-1.9-src.zip](http://sourceforge.net/project/downloading.php?group_id=260515&filename=parallel_iterative_deconvolution-1.9-src.zip)' released='30 January 2008' latest-version='11 April 2009' status='active' category='[Deconvolution](Category_Deconvolution)' website='http://sites.google.com/site/piotrwendykier/software/deconvolution/paralleliterativedeconvolution' %}
 
-Purpose
--------
+## Purpose
 
 Parallel Iterative Deconvolution is an ImageJ plugin for iterative deblurring. This plugin takes advantage of multi-core processors.
 
-Documentation
--------------
+## Documentation
 
 The plugin code is based on a [MATLAB](/scripting/matlab) toolbox: [RestoreTools](http://mathcs.emory.edu/%7Enagy/RestoreTools/index.html) by James G. Nagy and several of his students, including Julianne Chung, Katrina Palmer, Lisa Perrone, and Ryan Wright and also on [Iterative Deconvolve 3D](/plugins/iterative-deconvolve-3d) by Robert Dougherty.
 
@@ -25,8 +23,7 @@ It implements the 4 following iterative methods:
 
 Please refer to the [website](http://sites.google.com/site/piotrwendykier/software/deconvolution/paralleliterativedeconvolution) for details and examples.
 
-Introduction
-------------
+## Introduction
 
 ### What is Deconvolution?
 
@@ -38,8 +35,7 @@ With iterative deconvolution methods, a sequence of approximations is constructe
 
 Parallel Iterative Deconvolution is an ImageJ plugin for iterative image deblurring. The code is derived from [RestoreTools](http://mathcs.emory.edu/%7Enagy/RestoreTools/index.html): An Object Oriented [MATLAB](/scripting/matlab) Package for Image Restoration written by James G. Nagy and several of his students, including Julianne Chung, Katrina Palmer, Lisa Perrone, and Ryan Wright and also from [Iterative Deconvolve 3D](/plugins/iterative-deconvolve-3d) written by Robert Dougherty. The current version implements four iterative algorithms: Modified Residual Norm Steepest Descent [(MRNSD)](Ftp___ftp.mathcs.emory.edu_pub_nagy_papers_NagStr00.ps.gz), Wiener Filter Preconditioned Landweber [(WPL)](http://www.optinav.com/Iterative-Deconvolve-3D.htm), Conjugate Gradient for Least Squares [(CGLS)](http://www.mai.liu.se/%7Eakbjo/LSPbook.html) and Hybrid Bidiagonalization Regularization [(HyBR)](http://www.mathcs.emory.edu/%7Enagy/WGCV/). Although the plugin can handle arbitrary-sized 2- and 3-dimensional images, its usage is limited to grayscale images. To deconvolve a color image, you would have to split the channels and deblur each channel separately.
 
-How to use
-----------
+## How to use
 
 <figure><img src="/media/ParallelIterativeDeconvolutionDialog.jpg" title="ParallelIterativeDeconvolutionDialog.jpg" width="500" alt="ParallelIterativeDeconvolutionDialog.jpg" /><figcaption aria-hidden="true">ParallelIterativeDeconvolutionDialog.jpg</figcaption></figure>
 
@@ -93,8 +89,7 @@ There are several ImageJ plugins for generating a theoretical point spread funct
 
 To use these tools you need to know some parameters of your microscope setup and sample like NA, RI of mounting medium, wavelength, etc.
 
-2D Spatially Invariant Example
-------------------------------
+## 2D Spatially Invariant Example
 
 After opening the image to deconvolve and the image of the PSF, start {% include bc path='Plugins | Deconvolution | 2D Iterative Deconvolution...'%}
 
@@ -104,8 +99,7 @@ Clicking on the Deconvolve button results in this:
 
 <figure><img src="/media/ParallelIterativeDeconvolution2DSpatiallyInvariantExampleResult.jpg" title="ParallelIterativeDeconvolution2DSpatiallyInvariantExampleResult.jpg" width="800" alt="ParallelIterativeDeconvolution2DSpatiallyInvariantExampleResult.jpg" /><figcaption aria-hidden="true">ParallelIterativeDeconvolution2DSpatiallyInvariantExampleResult.jpg</figcaption></figure>
 
-2D Spatially Variant Example
-----------------------------
+## 2D Spatially Variant Example
 
 After opening the image to deconvolve, start {% include bc path='Plugins | Deconvolution | 2D Iterative Deconvolution...'%}, select Spatially variant PSF check-box and click on the Define button
 
@@ -119,8 +113,7 @@ Enter 40 in the Max number of iterations text field and click on the Deconvolve 
 
 <figure><img src="/media/ParallelIterativeDeconvolution2DSpatiallyVariantExample3.jpg" title="ParallelIterativeDeconvolution2DSpatiallyVariantExample3.jpg" width="800" alt="ParallelIterativeDeconvolution2DSpatiallyVariantExample3.jpg" /><figcaption aria-hidden="true">ParallelIterativeDeconvolution2DSpatiallyVariantExample3.jpg</figcaption></figure>
 
-3D Spatially Invariant Example
-------------------------------
+## 3D Spatially Invariant Example
 
 After opening the image to deconvolve and the image of the PSF, start {% include bc path='Plugins | Deconvolution | 3D Iterative Deconvolution...'%}
 
@@ -134,13 +127,11 @@ Enter 20 in the Max number of iterations text field and click on the Deconvolve 
 
 <figure><img src="/media/ParallelIterativeDeconvolution3DSpatiallyInvariantExample3.jpg" title="ParallelIterativeDeconvolution3DSpatiallyInvariantExample3.jpg" width="800" alt="ParallelIterativeDeconvolution3DSpatiallyInvariantExample3.jpg" /><figcaption aria-hidden="true">ParallelIterativeDeconvolution3DSpatiallyInvariantExample3.jpg</figcaption></figure>
 
-See also
---------
+## See also
 
 -   [Parallel Spectral Deconvolution](/plugins/parallel-spectral-deconvolution) by the same author, for another set of methods.
 
-Version history
----------------
+## Version history
 
 -   1.0: January 30, 2008
     -   Initial release.

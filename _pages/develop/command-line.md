@@ -5,8 +5,7 @@ title: Developing ImageJ on the command line
 
 This article explains how to install and configure command line tools for use with [ImageJ](/about) development.
 
-Install and configure command line tools
-----------------------------------------
+## Install and configure command line tools
 
 <div style="overflow: hidden">
 
@@ -34,21 +33,18 @@ Download and install [Java SE](http://www.oracle.com/technetwork/java/javase/dow
 
 </div>
 
-Download the source
--------------------
+## Download the source
 
     git clone git://github.com/imagej/imagej
 
 See the [Source Code](/develop/source) page for further details.
 
-Build the source
-----------------
+## Build the source
 
     cd imagej
     mvn
 
-Launch the program
-------------------
+## Launch the program
 
     mvn -Pexec
 
@@ -60,8 +56,7 @@ Launch the program
     mvn -Dscijava.ui=swing-mdi -Pexec
     mvn -Dscijava.ui=awt -Pexec
 
-See also
---------
+## See also
 
 -   [Dotfiles](/develop/dotfiles) if you want to twink out your shell
 

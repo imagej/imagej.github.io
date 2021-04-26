@@ -7,8 +7,7 @@ categories: Tutorials
 {% include extendingtrackmatetutorials%}
 
 
-Introduction.
--------------
+## Introduction.
 
 Developing a custom view for [TrackMate](/plugins/trackmate) is *hard* and painful. Of course it must be a graphical representation of the model: the tracking results with all intermediate steps. If you want to build something really useful, it has to be interactive and should allow modifying the model. And be aware that modifications might happen somewhere else. Performance is also critical: since it stands at the user interface, it must be responsive, and possibly deal with large models (millions of detections).
 
@@ -18,8 +17,7 @@ Still, it is perfectly possible to build something useful without fulfilling all
 
 This tutorial introduces the <u>view interfaces</u> of TrackMate, and since they deal with user interactions, we will also review the <u>TrackMate event system</u>. As for the [SciJava](SciJava) discovery system, we will see how to make a TrackMate module available in TrackMate, but not visible to the user, using the `visible` parameter.
 
-A custom TrackMate view.
-------------------------
+## A custom TrackMate view.
 
 Like for the [spot feature analyzers](/plugins/trackmate/custom-spot-feature-analyzer-algorithms), a TrackMate view is separated in two parts, that each extends a different interface:
 
@@ -32,8 +30,7 @@ But because this is a bit limited, we will not let the user pick this view as th
 
 Right now, we just focus on building the view.
 
-The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/visualization/ViewFactory.java' label='ViewFactory' %}.
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+## The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/visualization/ViewFactory.java' label='ViewFactory' %}.
 
 The factory itself has nothing particular. On top of the TrackMateModule methods, it just has a method to instantiate the view it controls:
 
@@ -44,8 +41,7 @@ You can see that we can possibly pass 3 parameters to the constructor of the vie
 
 The selection model is also offered, and the instance passed is the common one used in the GUI, so that a selection made by the user can be shared amongst all views.
 
-The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/visualization/plugins/trackmateModelView.java' label='TrackMateModelView' %} interface.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/visualization/plugins/trackmateModelView.java' label='TrackMateModelView' %} interface.
 
 ### Methods.
 
@@ -119,8 +115,7 @@ Your view can be kept in sync with the selection changes by implementing the {% 
 
     public void selectionChanged(SelectionChangeEvent event);
 
-A simple event logger.
-----------------------
+## A simple event logger.
 
 Let's keep our custom view simple: we will just build an event logger that recycles the IJ logger window to echo what happens to the model. We then of course have to implement the two listener interfaces mentioned above. But the code stays pretty simple: check {% include github org='fiji' repo='TrackMate-examples' source='plugin/trackmate/examples/view/EventLoggerView.java' label='here' %} for the details.
 
@@ -203,8 +198,7 @@ And here is what you get after a few manipulations:
 
 <figure><img src="/media/plugins/trackmate CustomView 1.png" title="TrackMate_CustomView_1.png" width="500" alt="TrackMate_CustomView_1.png" /><figcaption aria-hidden="true">TrackMate_CustomView_1.png</figcaption></figure>
 
-Controlling the visibility of your view with the SciJava `visible` parameter.
------------------------------------------------------------------------------
+## Controlling the visibility of your view with the SciJava `visible` parameter.
 
 Our view is a good dummy examples. It is not that useful, and the info panel of the GUI could be used instead advantageously. We have nothing against it, but maybe we should not let users select it as the main view in the GUI, otherwise they might get frustrated (well, the HyperStack view is *always* used, whatever you choose, so we could not mind, but eh).
 

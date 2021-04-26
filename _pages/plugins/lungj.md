@@ -11,8 +11,7 @@ categories: Plugins,Citable,Segmentation,Binary,Filtering,Image_annotation
 {% include info-box name='LungJ' author='[Lasse Wollatz](/users/LungJ)' maintainer='[Lasse Wollatz](/users/LungJ)' software='ImageJ/Fiji' logo='<img src="/media/LungJ-logo.png" title="fig:LungJ-logo.png" width="200" alt="LungJ-logo.png" />' source=source released='Nov 10<sup>st</sup>, 2016' latest-version='0.5.1, November 10<sup>th</sup>, 2016 (LungJ v0.5.1)' status='stable, new' category='[Segmentation](Category_Segmentation), [Binary](Category_Binary), [Filtering](Category_Filtering), [Image annotation](Category_Image_annotation)' %}
 
 
-Installation
-------------
+## Installation
 
 1\) {% include bc path='Help | Update...'%}
 
@@ -34,8 +33,7 @@ Installation
 
 10\) Future versions of LungJ will be updated together with the normal Fiji plugin updates.
 
-Function Documentation
-----------------------
+## Function Documentation
 
 ### 3D Blocks - Concatenate (Concatenate\_3D)
 
@@ -203,8 +201,7 @@ Linearly stretch the values of an image.
 
 Allows to compare WEKA filters visually. Note that the Gabor filter is currently not working.
 
-Publications
-------------
+## Publications
 
 Please note that LungJ, as well as other plug-ins available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 

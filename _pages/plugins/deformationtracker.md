@@ -8,8 +8,7 @@ artifact: net.imagej:ETrack
 
 For using ETrack you have to provide a superpixel segmentation map of your cells in the timelapse image along with the original timelapse images coming out of the microscope.
 
-Installation
-------------
+## Installation
 
 1.  Click {% include bc path="Help | Update..." %}.
 2.  Click the *Manage update sites* button.
@@ -18,8 +17,7 @@ Installation
 5.  Restart Fiji.
 6.  Launch the plugin with {% include bc path="Plugins | ETrack" %}.
 
-Usage
------
+## Usage
 
 ### Automated Curvature Measurement
 

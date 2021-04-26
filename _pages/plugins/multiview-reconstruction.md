@@ -7,8 +7,7 @@ artifact: sc.fiji:SPIM\_Registration
 
  
 
-Download
---------
+## Download
 
 The integration of the **Multiview Reconstruction** and the [BigDataViewer](/plugins/bdv) is available through the Fiji Updater. Simply update Fiji and the Multiview-Reconstruction pipeline will be available under '{% include bc path='Plugins | Multiview Reconstruction | Multiview Reconstruction Application'%}'. The source code is available {% include github org='bigdataviewer' repo='SPIM\_Registration' %}, please also report feature requests & bugs there.
 
@@ -17,8 +16,7 @@ To enable GPU hardware accelerated processing, you might want to download the **
 -   Separable Convolution: Used for the Difference-of-Gaussian segmentation, available on [GitHub](https://github.com/StephanPreibisch/SeparableConvolutionCUDALib)
 -   Non-Separable Convolution: Used for the [MultiView Deconvolution](/plugins/multi-view-deconvolution), available on [GitHub](https://github.com/StephanPreibisch/FourierConvolutionCUDALib)
 
-Citation
---------
+## Citation
 
 Please note that the SPIM registration plugin available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
@@ -27,8 +25,7 @@ Please note that the SPIM registration plugin available through Fiji, is based o
 
 For technical details about the registration method and SPIM imaging see also [SPIM Registration Method](/plugins/spim-registration/method).
 
-Introduction & Overview
------------------------
+## Introduction & Overview
 
 The **Multiview Reconstruction** software package enables users to *register, fuse, deconvolve and view* multiview microscopy images (first box). The software is designed for lightsheet fluorescence microscopy (LSFM, second box), but is applicable to any form of three or higher dimensional imaging modalities like confocal timeseries or multicolor stacks.
 
@@ -54,8 +51,7 @@ The second video shows a fixed *C. elegans* larvae in L1 stage expressing Lamin-
 
 {% include youtube url='https://www.youtube.com/embed/16gq2WUm-50'%}
 
-Detailed Tutorials
-------------------
+## Detailed Tutorials
 
 Using this software package consists of several steps. Please note that this software is more flexible and that this order is just a suggestion of how to use it in a more-or-less standard case.
 
@@ -124,8 +120,7 @@ Apart from this potential processing outline there are many **tools** available 
 -   **[Visualize Detections](MVR-VisualizeDetections)**
     -   Detections as identified by [Detect Interest Points](MVR-InterestPointDetection) can be visualized. It is possible to visualize all detections or only those that are found to be corresponding with other detections and were therefore used for registration. This helps to identify potential misalignments if corresponding detections are not equally distributed around the sample as they should be. One can also load the input view at the same time to overlay the detections with the image data
 
-Video Tutorials & Scientific Talks
-----------------------------------
+## Video Tutorials & Scientific Talks
 
 During the [EMBO Practical Course on Lightsheet Microscopy](http://openspim.org/EMBO_practical_course_Light_sheet_microscopy) two of my talks were recorded:
 
@@ -141,23 +136,19 @@ This 30-minute talk by {%- include person id='StephanPreibisch' -%} covers the t
 
 This one hour tutorial by {%- include person id='StephanPreibisch' -%} covers the basic usage of this multiview reconstruction software for Fiji. Documentation, source code, bug reports and feature requests can be found [on SourceForge](https://sourceforge.net/projects/multiviewreconstruction/).
 
-Comments, Bugs & Feature Requests
----------------------------------
+## Comments, Bugs & Feature Requests
 
 There is a webpage on [GitHub](https://github.com/bigdataviewer/SPIM_Registration) and [SourceForge](https://sourceforge.net/projects/multiviewreconstruction/) dedicated to this project. It contains links to this documentation, the source code and other related things. All comments, bugs & feature requests should be posted in the [GitHub issues](https://github.com/bigdataviewer/SPIM_Registration/issues) or the [SourceForge discussion board](https://sourceforge.net/p/multiviewreconstruction/discussion/?source=navbar).
 
-Downloading example dataset
----------------------------
+## Downloading example dataset
 
 There is a 7-angle SPIM dataset of *Drosophila* available for download [here](http://fly.mpi-cbg.de/preibisch/nm/HisYFP-SPIM.zip). Other datasets can be provided upon request.
 
-System requirements
--------------------
+## System requirements
 
 Multi-view SPIM datasets are typically rather large, therefore it is recommended to use the registration plugin on a computer with a lot of RAM. The minimal requirement for the example dataset is **at least 4Gb** of memory however we recommend an **16Gb+** system, ideally at least **64Gb** and a CUDA capable graphics card. You may need to increase the Fiji memory limit by going to Edit-&gt;Options-&gt;Memory & Threads.
 
-Cluster processing
-------------------
+## Cluster processing
 
 See the dedicated [page](/plugins/automated-workflow-for-parallel-multiview-reconstruction) describing an automated workflow for processing SPIM data from Lighsheet.Z1 and OpenSPIM on the MPI-CBG cluster.
 

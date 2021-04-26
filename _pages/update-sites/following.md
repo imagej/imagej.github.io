@@ -8,20 +8,17 @@ section: Help:Update Sites
  
 
 
-Introduction
-------------
+## Introduction
 
 This tutorial will explain how to **add an update site to your install of ImageJ** such that the plugins maintained there will be installed and updated just like core ImageJ plugins.
 
-Start the [Updater](/plugins/updater)
----------------------------------------
+## Start the [Updater](/plugins/updater)
 
 First, start the [updater](/plugins/updater):
 
 ![](/media/How to setup a plugin distribution site-1.jpg "How_to_setup_a_plugin_distribution_site-1.jpg")
 
-Add update sites
-----------------
+## Add update sites
 
 Click on the *Manage update sites* button to bring up the site management dialog:
 
@@ -39,8 +36,7 @@ After you have selected your desired update site(s), close the dialog. The list 
 Ideally the maintainers of these sites would work with the core ImageJ maintainers to centralize important plugins.  
 When you find plugin conflicts between update sites, you can greatly help the community by [starting a discussion](/help) with the maintainers!' %}
 
-Choose and download plugins
----------------------------
+## Choose and download plugins
 
 You can select whether you want to install a particular plugin by clicking in the **Status/Action** column and changing the option - for example, select **Keep as-is** to avoid installing a clashing plugin.
 
@@ -48,8 +44,7 @@ You can select whether you want to install a particular plugin by clicking in th
 
 Once you are happy with what will be installed, click on the *Apply Changes* button to download your updates.
 
-Verify install
---------------
+## Verify install
 
 {% include warning-box content='An update is not finalized until **restarting the application.** After initiating an update, **do not modify your ImageJ installation manually** until after restarting at least once.' %}
 

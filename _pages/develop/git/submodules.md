@@ -9,8 +9,7 @@ section: Development:Git
 {% include outdated%}
 
 
-Submodules in Fiji
-------------------
+## Submodules in Fiji
 
 Fiji is hosted on a main git repository which contains several declared submodules such as TrakEM2.
 
@@ -56,8 +55,7 @@ When happy with the arrangement, push the changes to the shared repository for o
     ~/fiji/plugins/trakem2$ cd ..
     ~/fiji$ git push
 
-Resolving Submodule Conflicts
------------------------------
+## Resolving Submodule Conflicts
 
 When merging and rebasing fiji, you are likely to end up having to fix conflicts in the versions of submodules. These next two sections are intended to help you to resolve these conflicts.
 
@@ -160,8 +158,7 @@ If you're using "git diff --theirs" and "git diff --ours" while rebasing then yo
 
 This is probably the opposite way round from what you expect from resolving conflicts while merging :)
 
-Difference between git submodule update and git pull
-----------------------------------------------------
+## Difference between git submodule update and git pull
 
 What is the difference between calling git supmodule update from the fiji directory and changing into a submodule directory and doing a git pull?
 

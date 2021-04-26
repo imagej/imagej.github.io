@@ -5,8 +5,7 @@ title: Widget ›UsageMap
 
 <noinclude> This widget allows embedding of ImageJ usage maps on wiki pages.
 
-Using this widget
------------------
+## Using this widget
 
 Supported parameters include:
 
@@ -15,8 +14,7 @@ Supported parameters include:
 -   `width` - width of the map (default is 400)
 -   `height` - height of the map (default is 300)
 
-Copy to your site
------------------
+## Copy to your site
 
 To use this widget on your site, just install the [MediaWiki Widgets extension](https://www.mediawiki.org/wiki/Extension:Widgets) and the copy \[{% include fullurl content='\_\_\_SHADOW1\_\_\_' action='edit' %} full source code\] of this page to your wiki, as an article called **{% include fullpagename%}
 **. </noinclude><includeonly><iframe src="/awesome/<!--{$url}-->" frameborder="<!--{$border|validate:int|default:0}-->" width="<!--{$width|escape:html|default:400}-->" height="<!--{$height|escape:html|default:300}-->"></iframe></includeonly>

@@ -29,7 +29,6 @@ When using FigureJ for a research article, you can cite the following [article f
 
 ![](/media/Figurej poster.png "Figurej_poster.png")
 
-Publication
------------
+## Publication
 
 -   {% include publication content='FigureJ' %}

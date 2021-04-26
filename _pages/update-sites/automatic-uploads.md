@@ -91,8 +91,7 @@ Don't forget to replace
 
 by your informations.
 
-Encrypting your password
-------------------------
+## Encrypting your password
 
 To upload to your wiki update site, you will need to provide Travis CI with a `WIKI_UPLOAD_PASS` environment variable, which should evaluate to the [upload password](Special_ChangeUploadPassword) of the Wiki account performing the upload. To do so securely, follow the instructions on the [encrypting environment variables](https://docs.travis-ci.com/user/environment-variables/#Encrypting-Variables-Using-a-Public-Key).
 
@@ -102,8 +101,7 @@ Note that when you run:
 
 in your repository, the `.travis.yml` will automatically be updated appropriately. You can simply commit and push the changes.
 
-Non-Mavenized Files
--------------------
+## Non-Mavenized Files
 
 Travis CI is capable of building many languages besides Java. If you cannot use Maven with a `scijava.app.directory` then you need to replace the following line of your `.travis.yml`:
 

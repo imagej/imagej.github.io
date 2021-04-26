@@ -4,8 +4,7 @@ title: CARE
 artifact: de.csbdresden:csbdeep
 ---
 
-Install
--------
+## Install
 
 ### ImageJ update site
 
@@ -18,8 +17,7 @@ The CSBDeep plugin can be installed from the ImageJ update site [1](http://sites
 
 `mvn -Dimagej.app.directory=/path/to/Fiji.app/ -Ddelete.other.versions=true`
 
-Run demos
----------
+## Run demos
 
 1.  Download the [exemplary image data](http://csbdeep.bioimagecomputing.com/exemplary-image-data.zip)
 2.  Open Fiji.
@@ -31,8 +29,7 @@ If all goes well, an image will be displayed representing the result of the mode
 
 See the [CSBDeep Wiki Pages](https://github.com/CSBDeep/CSBDeep_website/wiki/CSBDeep-in-Fiji) for more details.
 
-Run your own model
-------------------
+## Run your own model
 
 1.  Use the [python code](https://github.com/CSBDeep/CSBDeep) to train your network with your data. Export it as ZIP.
 2.  Open Fiji.
@@ -45,12 +42,10 @@ If all goes well, an image will be displayed representing the result of the mode
 
 See the [CSBDeep Wiki Page](https://github.com/CSBDeep/CSBDeep_website/wiki/Your-Model-in-Fiji) for more details.
 
-GPU support
------------
+## GPU support
 
 Please read [this page](/develop/tensorflow) for GPU support.
 
-License
--------
+## License
 
 This project is licensed under the BSD 2-clause "Simplified" License -- see the [LICENSE.txt](https://github.com/CSBDeep/CSBDeep_fiji/blob/master/LICENSE.txt) file for details.

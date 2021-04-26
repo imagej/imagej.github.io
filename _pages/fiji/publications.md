@@ -35,8 +35,7 @@ categories: Fiji
 
 -   A German article about Fiji was published in the popular scientific journal [Laborwelt](http://www.laborwelt.de/spezialthemen/bioinformatik/bildanalyse-mit-fiji.html) (with one erratum: the authors would never claim that Fiji succeeds ImageJ; rather, Fiji <u>Is Just ImageJ</u>).
 
-Publications using or enhancing Fiji
-------------------------------------
+## Publications using or enhancing Fiji
 
 -   [Stitching](/plugins/image-stitching)[6]
 
@@ -146,8 +145,7 @@ Publications using or enhancing Fiji
 
 </ref> journal dedicated to open source software for Life Sciences.
 
-References
-----------
+## References
 
 <references />
 

@@ -10,8 +10,7 @@ Everybody is welcome to [contribute](/about/contributing) with [plugins](/plugin
 
 The [SciJava](SciJava) ecosystem is strongly committed to open-source software development. This software is not an open source software *product*—it is an open-source software *project* following an open-source development *process*. There are public [source code repositories](/develop/source), public [communication](Communication) channels, public [project management](/develop/project-management) resources, and of course, this [community editable website](Help_Contents). See the [Philosophy](/develop/philosophy) page for more information.
 
-Why open source?
-----------------
+## Why open source?
 
 One core principle of the {% include wikipedia title='Scientific method' text='scientific method'%} is repeatability: the ability to continually retest and refine hypotheses. As computer software plays an increasingly large role in science, it is vital that that software be fully transparent and available to researchers: software is simply too complex to be easily [reproduced](/develop/architecture#reproducible-builds) from scratch by every research group. In contrast, closed source software presents a barrier to {% include wikipedia title='Open research computation\#Reproducibility\_and\_open\_research\_computing' text='open research'%}, because the implementation details of algorithms cannot be freely modified or even necessarily verified.
 

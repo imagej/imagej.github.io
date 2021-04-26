@@ -6,25 +6,21 @@ categories: Plugins,Deconvolution
 
 {% include info-box software='ImageJ' name='Iterative Deconvolve 3D' author='Bob Dougherty' filename=' [Iterative\_Deconvolve\_3D.class](http://www.optinav.info/download/Iterative_Deconvolve_3D.class)' source=' [Iterative\_Deconvolve\_3D.java](http://www.optinav.info/download/Iterative_Deconvolve_3D.java)' released='1 May 2005' latest-version='4 June 2005' status='stable' category='[Deconvolution](Category_Deconvolution)' website='http://www.optinav.info/Iterative-Deconvolve-3D.htm' %}
 
-Purpose
--------
+## Purpose
 
 Plugin for 2D and 3D non-negative, iterative, deconvolution. Based in part on the DAMAS algorithm by Thomas F. Brooks and William M. Humphreys, Jr., NASA-Langley Research Center. Also includes a regularized Wiener filter as a preconditioning step. Called DAMAS3 in aeroacoustics.
 
-Documentation
--------------
+## Documentation
 
 The [website](http://www.optinav.com/Iterative-Deconvolve-3D.htm) document this plugin; please refer to it.
 
 The plugin was also the subject of a conference paper: {% include citation last='Dougherty' first='R.' title='Extensions of DAMAS and Benefits and Limitations of Deconvolution in Beamforming' journal='11th AIAA/CEAS Aeroacoustics Conference (26th AIAA Aeroacoustics Conference)' date='2005' %} .
 
-See also
---------
+## See also
 
 [Diffraction PSF 3D](/plugins/diffraction-psf-3d) for the creation of theoretical PSF.
 
-Version history
----------------
+## Version history
 
 -   Version 0: 5/1/2005. Beta release.
 -   Version 1: 5/2/2005. Improved performance for 2D images. Option to not show iterations.

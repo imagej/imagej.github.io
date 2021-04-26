@@ -11,8 +11,7 @@ categories: Import-Export
 {% endcapture %}
 {% include info-box software='ImageJ' name='FIBSEM importer' maintainer='Stephan Preibisch' author='Stephan Preibisch' source=source released='08/02/2012' latest-version='08/02/2012' status='stable' category='[:Category:Plugins](Category_Plugins)' website='' %}
 
-Overview
---------
+## Overview
 
 The FIBSEM importer is able to read the image files produced by the FIB-SEM machine at Janelia Farm. It can be used via:
 
@@ -23,8 +22,7 @@ It will be opened as unsigned 16-bit data ranging from 0 to 65535, where 0 corre
 
 For access to all the other meta-data, see the special options paragraph below.
 
-Special options
----------------
+## Special options
 
 ### Open image as float
 

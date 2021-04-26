@@ -11,20 +11,17 @@ title: Multifrac
 
 **Multifrac** is an ImageJ plugin for fractal, multifractal and scaling analysis and characterization of 2D and 3D gray and B&W stack images. It has been particularly developed for the study of CT-scan images on soil science but it is recommended for complexity analysis in any kind of image.
 
-Citation
---------
+## Citation
 
 Please when using the plugin, cite:
 
 :\* I. G. Torre, R. J. Heck and A. M. Tarquis, **MULTIFRAC: An ImageJ plugin for multiscale characterization of 2D and 3D stack images**, *preprint*.
 
-Installation
-------------
+## Installation
 
 Run {% include bc path='Help|Update...'%} and choose *Manage update sites*. Activate the *Multifrac* checkbox in the alphabetically-sorted list of update sites. Press *OK*, then *Apply changes*. Restart ImageJ. That's it. Enjoy Multifrac!
 
-Description
------------
+## Description
 
 Multifrac is an ImageJ plugin for the analysis and characterization of 2D and 3D stack images. This tool is specifically designated for the analysis of soil pore structure and scaling behaviour and patterns therein. Main features of Multifrac are:
 
@@ -35,8 +32,7 @@ Multifrac is an ImageJ plugin for the analysis and characterization of 2D and 3D
 
 This plugin has extensively used with real soil samples and results published in high impact factor journals.
 
-Changelog
----------
+## Changelog
 
 All changes can be seen in the [GitHub source repository](https://github.com/ivangtorre/multifrac/commits/master).
 

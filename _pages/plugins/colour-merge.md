@@ -6,13 +6,11 @@ categories: Plugins,Color processing
 
 {% include info-box software='ImageJ' name='Colour merge' author='unknown' filename='Colour\_merge.class' source='not found' released='unknown' latest-version='unknown' status='unknown' category='[Color processing](Category_Color_processing)' %}
 
-Purpose
--------
+## Purpose
 
 This plugin allows you to merge two grayscale stacks into a single RGB stack. It is useful e.g. to merge a brightfield with the corresponding fluorescence image, or two different dye images of the same series.
 
-Documentation
--------------
+## Documentation
 
 Adapted from the [MBF ImageJ](/software/mbf-imagej) manual:
 

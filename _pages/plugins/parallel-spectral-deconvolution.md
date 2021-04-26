@@ -6,13 +6,11 @@ categories: Plugins,Deconvolution
 
 {% include info-box software='ImageJ' name='Parallel Spectral Deconvolution 2D and 3D' author='Piotr Wendykier' filename=' [parallel\_spectral\_deconvolution-1.9-bin.zip](http://sourceforge.net/project/downloading.php?group_id=260514&filename=parallel_spectral_deconvolution-1.9-bin.zip)' source=' [parallel\_spectral\_deconvolution-1.9-src.zip](http://sourceforge.net/project/downloading.php?group_id=260514&filename=parallel_spectral_deconvolution-1.9-src.zip)' released='27 September 2007' latest-version='11 April 2009' category='[Deconvolution](Category_Deconvolution)' website='http://sites.google.com/site/piotrwendykier/software/deconvolution/parallelspectraldeconvolution' %}
 
-Purpose
--------
+## Purpose
 
 Parallel Spectral Deconvolution is an ImageJ plugin for spectral deblurring. This plugin takes advantage of multi-core processors.
 
-Documentation
--------------
+## Documentation
 
 The plugin code is based on the following book:
 
@@ -20,8 +18,7 @@ The plugin code is based on the following book:
 
 Please refer to the [website](http://sites.google.com/site/piotrwendykier/software/deconvolution/parallelspectraldeconvolution) for detail and examples.
 
-Introduction
-------------
+## Introduction
 
 ### What is Deconvolution?
 
@@ -33,8 +30,7 @@ The spectral filtering algorithms include many well known techniques for image d
 
 Parallel Spectral Deconvolution is an ImageJ plugin for spectral image deblurring. The code is based on methods described in Deblurring Images: Matrices, Spectra, and Filtering by Per Christian Hansen, James G. Nagy, and Dianne P. O'Leary, SIAM, 2006. The current version implements Tikhonov- and TSVD-based image deblurring assuming either periodic of reflexive boundary conditions. Although the plugin can handle arbitrary-sized 2- and 3-dimensional images, its usage is limited to grayscale images. To deconvolve a color image, you would have to split the channels and deblur each channel separately.
 
-How to use
-----------
+## How to use
 
 <figure><img src="/media/ParallelSpectralDeconvolutionDialog.jpg" title="ParallelSpectralDeconvolutionDialog.jpg" width="500" alt="ParallelSpectralDeconvolutionDialog.jpg" /><figcaption aria-hidden="true">ParallelSpectralDeconvolutionDialog.jpg</figcaption></figure>
 
@@ -54,8 +50,7 @@ There are several ImageJ plugins for generating a theoretical point spread funct
 
 To use these tools you need to know some parameters of your microscope setup and sample like NA, RI of mounting medium, wavelength, etc.
 
-2D Example
-----------
+## 2D Example
 
 After opening the image to deconvolve and the image of the PSF, start {% include bc path='Plugins | Deconvolution | 2D Spectral Deconvolution...'%}
 
@@ -65,8 +60,7 @@ Clicking on the Deconvolve button results in this:
 
 <figure><img src="/media/ParallelSpectralDeconvolution2DExampleResult.jpg" title="ParallelSpectralDeconvolution2DExampleResult.jpg" width="800" alt="ParallelSpectralDeconvolution2DExampleResult.jpg" /><figcaption aria-hidden="true">ParallelSpectralDeconvolution2DExampleResult.jpg</figcaption></figure>
 
-3D Example
-----------
+## 3D Example
 
 After opening the image to deconvolve and the image of the PSF, start {% include bc path='Plugins | Deconvolution | 3D Spectral Deconvolution...'%}
 
@@ -76,13 +70,11 @@ Clicking on the Deconvolve button results in this:
 
 <figure><img src="/media/ParallelSpectralDeconvolution3DExampleResult.jpg" title="ParallelSpectralDeconvolution3DExampleResult.jpg" width="800" alt="ParallelSpectralDeconvolution3DExampleResult.jpg" /><figcaption aria-hidden="true">ParallelSpectralDeconvolution3DExampleResult.jpg</figcaption></figure>
 
-See also
---------
+## See also
 
 -   [Parallel Iterative Deconvolution](/plugins/parallel-iterative-deconvolution) by the same author, for another set of methods.
 
-Version history
----------------
+## Version history
 
 -   1.0: September 28, 2007
     -   Initial release.

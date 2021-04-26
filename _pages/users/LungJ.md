@@ -8,7 +8,6 @@ Lasse Wollatz
 
 University of Southampton, L.Wollatz@soton.ac.uk
 
-Contributions
--------------
+## Contributions
 
 -   LungJ: [1](/plugins/lungj)

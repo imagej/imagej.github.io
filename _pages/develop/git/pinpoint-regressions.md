@@ -10,8 +10,7 @@ section: Development:Git
 How to bisect with Git
 ======================
 
-How to find which commit introduced a regression
-------------------------------------------------
+## How to find which commit introduced a regression
 
 So you found a regression? I.e. you know that the version worked perfectly that you had yesterday of, say, the [ImageJ Ops](/libs/imagej-ops) library, but today it crashes?
 
@@ -43,8 +42,7 @@ where the commit name is that 40-digit hex string Git told you was the first bad
 
 This will bring you back to the revision and branch you were on before starting the bisection.
 
-How to forward port a fix
--------------------------
+## How to forward port a fix
 
 If there is an obvious flaw in the patch, just try to patch it. You have to move to the first bad revision first:
 

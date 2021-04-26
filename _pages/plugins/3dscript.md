@@ -26,13 +26,11 @@ In 3Dscript, animations are defined by a syntax based on natural English languag
 
 ![](/media/3Dscript-wiki-01.jpg "3Dscript-wiki-01.jpg")
 
-Publication
------------
+## Publication
 
 -   {% include publication content='3Dscript' %}
 
-Installation
-------------
+## Installation
 
 -   Click on Help&gt;Update...
 -   Click on Manage update sites
@@ -41,8 +39,7 @@ Installation
 -   Click on Apply changes
 -   Restart Fiji
 
-Quick start
------------
+## Quick start
 
 -   Click on File&gt;Open Samples&gt;T1 Head
 -   Click on Plugins&gt;3D script&gt;Interactive Animation
@@ -57,8 +54,7 @@ To run the software on another data set, open a different image stack (instead o
 
 More information is available at [https://bene51.github.io/3Dscript](https://bene51.github.io/3Dscript).
 
-User documentation
-------------------
+## User documentation
 
 See 3Dscript in action below:
 

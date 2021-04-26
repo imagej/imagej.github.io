@@ -16,18 +16,15 @@ categories: Related Software,Citable,SciJava,OME
 - [University of Dundee](https://www.dundee.ac.uk/)' maintainer='OME development team' filename=' [See Bio-Formats /downloads page](https://downloads.openmicroscopy.org/bio-formats/)' source=source latest-version=' [See Bio-Formats /downloads page](https://downloads.openmicroscopy.org/bio-formats/)' status='active' category='[:Category:Import-Export](Category_Import-Export)' %}
 
 
-Purpose
--------
+## Purpose
 
 Import data from many life sciences file formats, and export to several open formats.
 
-History
--------
+## History
 
 See [LOCI's Bio-Formats site](https://loci.wisc.edu/software/bio-formats) for a historical narrative of the project.
 
-Documentation
--------------
+## Documentation
 
 What follows is a brief overview of the available plugins. You will find them all under the "/formats/bio-formats" submenu of Plugins. See the [Bio-Formats web site](https://www.openmicroscopy.org/bio-formats/) for additional information about Bio-Formats in general.
 
@@ -94,8 +91,7 @@ The **Bio-Formats Plugins Shortcut Window** is a small window with a quick-launc
 
 The **Update Bio-Formats Plugins** command will check online for updates to the Bio-Formats Plugins. In the case of Fiji, we recommend that you do not use this method of update, but instead use the [Fiji Updater](/plugins/updater).
 
-Calling Bio-Formats from the command line
------------------------------------------
+## Calling Bio-Formats from the command line
 
 You can invoke Bio-Formats from the command line using the [ImageJ Launcher](Launcher):
 
@@ -117,8 +113,7 @@ Here is an example macro created in such a fashion:
       "autoscale color_mode=Default view=Hyperstack stack_order=XYCZT");
     saveAs("Tiff", "/Users/jdoe/Desktop/result.tif");
 
-Scripting
----------
+## Scripting
 
 Bio-Formats has a high-level scripting interface, accessible by Java and all scripting languages supported by Fiji (but not the ImageJ macro language). Java example:
 
@@ -137,8 +132,7 @@ If needed, import options can be set:
     //...etc.
     ImagePlus[] imps = BF.openImagePlus(options);
 
-Daily builds
-------------
+## Daily builds
 
 {% include warning-box content='The daily builds are **not yet released** and should be considered **beta** in quality. There may be new bugs. In particular, you should **avoid exporting data using the Bio-Formats Exporter** because the files it writes might not be readable later by release versions of Bio-Formats or other OME-compliant tools.' %}
 
@@ -156,18 +150,15 @@ To enable the Bio-Formats update site:
 6.  Restart Fiji when prompted.
 7.  To verify the upgrade, choose **Bio-Formats Plugins...** from **About Plugins** beneath the **Help** menu: <img src="/media/Bf-about-plugins.png" title="fig:Bf-about-plugins.png" width="700" alt="Bf-about-plugins.png" />
 
-Source code
------------
+## Source code
 
 The Bio-Formats source code is {% include github org='openmicroscopy' repo='bioformats' %}.
 
-Reporting bugs
---------------
+## Reporting bugs
 
 To report a bug in Bio-Formats, please see [reporting a bug in Bio-Formats](https://docs.openmicroscopy.org/latest/bio-formats/about/bug-reporting.html).
 
-Publication
------------
+## Publication
 
 -   {% include publication content='Bio-Formats' %}
 

@@ -7,8 +7,7 @@ section: Development:Git
 
 
 
-Merge conflicts
----------------
+## Merge conflicts
 
 Sometimes you get *merge conflicts* when merging or pulling from a branch. Git will then tell you something like
 
@@ -18,8 +17,7 @@ CONFLICT (content): Merge conflict in Fakefile
 
 It also tells you to fix the conflicts and then to commit the result. So how to fix the conflicts?
 
-Resolving merge conflicts
--------------------------
+## Resolving merge conflicts
 
 First a little background: what is a merge conflict, and how does it happen? A merge conflict usually occurs when your current branch and the branch you want to merge into the current branch have diverged. That is, you have commits in your current branch which are not in the other branch, and vice versa.
 
@@ -116,8 +114,7 @@ or for your version:
 git checkout --ours ImageJA
 ```
 
-Committing the resolution
--------------------------
+## Committing the resolution
 
 After you resolved all the conflicts (if in doubt, where the conflicts are, just call *git diff*), add the resolved file contents:
 
@@ -131,8 +128,7 @@ and then commit the merge:
 git commit -s
 ```
 
-Using an external merge tool
-----------------------------
+## Using an external merge tool
 
 For complicated conflicts, you may find it easier to do the resolution using an external merge tool, which can show three versions of the file side-by-side. You can do this with:
 

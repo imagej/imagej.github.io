@@ -7,8 +7,7 @@ section: Learn:Cookbook
 
 
 
-Image formats
--------------
+## Image formats
 
 ![](/media/Save as1.png "fig:save_as1.png") ![](/media/Save as2.png "fig:save_as2.png")The "*File/Save*" (hotkey: S) menu command will save the image as a TIF file. Other formats are available (see menu image on the right) and can be accessed by "*File/Save As...*". When the "*Save as*" dialog is opened, Fiji will enter the image window's name, plus the appropriate file suffix, as the "File Name".
 
@@ -20,13 +19,11 @@ Flash MX will import uncompressed AVI files. The frame-rate will then be determi
 
 Other options for saving and exporting image files are shown in the Fiji *Save As* menu. Their procedures are all straightforward.
 
-Image sequences
----------------
+## Image sequences
 
 *Image Sequence...* This option saves each slice in a stack as a separate TIF file. You will be presented with the option to either name the images numerically or with the slice labels.
 
-Non-image formats
------------------
+## Non-image formats
 
 *Selection...* After drawing an ROI onto an image, the selection's coordinates can be saved using this option. Once the ROI is deselected, it can be restored at any time in the same location by opening the saved ROI.
 
@@ -34,8 +31,7 @@ Non-image formats
 
 *Results...* This uses the information in an active results window and exports it into a text file.
 
-Bio-Formats
------------
+## Bio-Formats
 
 Files may also be exported to many file types using {% include bc path='Plugins|Bio-Formats|Bio-Formats Exporter'%}. As of this writing, the supported file types are:
 

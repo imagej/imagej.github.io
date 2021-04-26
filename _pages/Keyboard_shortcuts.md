@@ -7,33 +7,27 @@ categories: User interface, tutorials
 
 ImageJ has a lot of keyboard shortcuts.
 
-Listing all keyboard shortcuts
-------------------------------
+## Listing all keyboard shortcuts
 
 For a verbose list of keyboard shortcuts, call {% include bc path='Plugins | Shortcuts | List Shortcuts'%}.
 
-The Search Bar
---------------
+## The Search Bar
 
 Use {% include key content='Ctrl' %}+{% include key content='L' %} (on Mac, {% include key content='Command' %}+{% include key content='L' %}) to jump to the [search bar](/learn/getting-started#the-search-bar), to call menu entries by name.
 
-Recent Commands
----------------
+## Recent Commands
 
 To open a list of some recent commands, and a list of the most frequently called commands, hit {% include key content='Ctrl' %}+{% include key content='9' %} (on Mac, {% include key content='Command' %}+{% include key content='9' %}).
 
-Open
-----
+## Open
 
 To open new images, type {% include key content='Ctrl' %}+{% include key content='O' %} (on Mac, {% include key content='Command' %}+{% include key content='O' %}).
 
-Creating your own keyboard shortcuts
-------------------------------------
+## Creating your own keyboard shortcuts
 
 You can also [assign your own keyboard shortcuts](/ij/docs/guide/146-31.html#toc-Subsection-31.2)!
 
-Assign a shortcut to a macro
-----------------------------
+## Assign a shortcut to a macro
 
 There are 3 options to assign a keyboard shortcut to a macro.  
 
