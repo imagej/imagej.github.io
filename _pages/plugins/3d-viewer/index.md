@@ -50,8 +50,7 @@ Full documentation for developers with tutorials and explained code snippets can
 
 The Fiji Javadocs provide detailed information about the {% include javadoc package='ij3d' class='package-summary' label='3D Viewer API' %}.
 
-FAQ
----
+## FAQ
 
 ### The 3D Viewer opens a window saying *An unexpected exception occurred.*
 

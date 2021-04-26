@@ -16,8 +16,7 @@ Installation
 
 **Fiji**: this plugin is part of the Fiji distribution, there is no need to download it.
 
-Use
----
+## Use
 
 **Method** selects the algorithm to be applied (detailed below).
 

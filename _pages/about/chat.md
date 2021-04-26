@@ -23,8 +23,7 @@ The {% include wikipedia title='Gitter' text='Gitter'%} chat service, while rela
 | <img src="/media/Scifio-icon.png" width="48"/>  | [SCIFIO](/software/scifio)   | [scifio](https://gitter.im/orgs/scifio/rooms)     |
 | <img src="/media/Scijava-icon.png" width="48"/> | [SciJava](SciJava) | [scijava](https://gitter.im/orgs/scijava/rooms)   |
 
-IRC
----
+## IRC
 
 Some community members frequent {% include wikipedia title='Internet Relay Chat' text='IRC'%} on [irc.freenode.net](http://freenode.net/), in chat rooms:
 

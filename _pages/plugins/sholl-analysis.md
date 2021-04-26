@@ -559,8 +559,7 @@ Opens a sample image of a Drosophila class IV ddaC sensory neuron in which dendr
 {% include bc path='Help|About Plugins|About Sholl Analysis...' color='white'%}  
 Retrieves information about the plugin version and provides links to several resources including its source code {% include github org='tferr' repo='ASA' label='repository' %} and its [API documentation](http://tferr.github.io/ASA/apidocs/). It is also accessible through the *More »* dropdown menu.
 
-FAQ
----
+## FAQ
 
 **General**
 

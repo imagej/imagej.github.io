@@ -27,8 +27,7 @@ ImageJ Ops
 
 The [ImageJ Ops](/libs/imagej-ops) project provides algorithms for both global and local thresholding.
 
-FAQ
----
+## FAQ
 
 ### How do I know whether my threshold is correct?
 

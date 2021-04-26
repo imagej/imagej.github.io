@@ -45,8 +45,7 @@ Tutorials and workshops
 -   "The ImageJ Ops Framework: Image processing made easy" (January 2015) – [slides](/presentations/2015-01-12-imagej-ops/)
 -   "Intro to ImageJ Ops - Usage and Development" (November 2015) – [slides](http://workshops.imagej.net/IntroToOps.pdf)
 
-FAQ
----
+## FAQ
 
 ### Why not implement algorithms as "plain old Java" methods?
 

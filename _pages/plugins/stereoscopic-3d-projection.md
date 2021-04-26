@@ -9,8 +9,7 @@ The source is attached to the jar, and is public on [Github](https://github.com/
 
 Java 8 is required to run this plugin.
 
-Use
----
+## Use
 
 To create a new projection:
 

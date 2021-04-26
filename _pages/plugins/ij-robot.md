@@ -9,8 +9,7 @@ This plugin calls the Robot Java class. The purpose of the plugin is to allow th
 
 See also http://www.mecourse.com/landinig/software/software.html
 
-Use
----
+## Use
 
 When running the plugin one must specify an 'order' to the robot and some parameters (not all orders require all the parameters):
 

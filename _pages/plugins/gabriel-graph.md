@@ -22,8 +22,7 @@ Details
 
 The algorithm goes through each pair of points and looks for the shortest distance between two points that does not contain any other point within the circle whose diameter is defined by the two points being queried. It is built to run in parallel as per the implementation of [Albert Cardona's ImageJ Tutorials](http://albert.rierol.net/imagej_programming_tutorials.html)
 
-Use
----
+## Use
 
 Call up the plugin using *Plugins-&gt;BIOP-&gt;Gabriel Graph...*.
 

@@ -20,8 +20,7 @@ Installation
 
 This plugin is available from the {% include list-of-update-sites content='PTBIOP Update Site' %} This places it in a "BIOP" Folder in the plugins directory of Fiji/ImageJ
 
-Use
----
+## Use
 
 Call up the plugin using *Plugins-&gt;BIOP-&gt;Multi Stack Montage...* and select the stacks that you wish to use.
 

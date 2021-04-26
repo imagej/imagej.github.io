@@ -18,8 +18,7 @@ DICOM
 
 ImageJ has some built-in support for the DICOM format, and there are also plugins for working with DICOM files. See the [DICOM](/formats/dicom) page for full details.
 
-HDF
----
+## HDF
 
 The HDF5 [update site](/update-sites) enables support for reading and writing [HDF5](https://en.wikipedia.org/wiki/Hierarchical_Data_Format) image data. Note that HDF5 is a very broad specification; the HDF5 plugin will not support all manner of HDF files, but only those written according to its constraints.
 

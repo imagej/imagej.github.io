@@ -14,8 +14,7 @@ Installation
 
 **Fiji**: this plugin is part of the Fiji distribution, there is no need to download it.
 
-Use
----
+## Use
 
 The command {% include bc path='Analyze | Tools | Sync Windows'%} opens a dialog that allows to choose what features should be synchronized:
 

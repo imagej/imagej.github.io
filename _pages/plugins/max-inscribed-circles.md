@@ -36,8 +36,7 @@ Installation
 
 This plugin is available from the {% include list-of-update-sites content='BIOP Update Site' %} This places it in a "BIOP" Folder in the plugins directory of Fiji/ImageJ
 
-Use
----
+## Use
 
 Call up the plugin using *Plugins-&gt;BIOP-&gt;Max Inscribed Circles...*.
 

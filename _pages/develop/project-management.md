@@ -7,8 +7,7 @@ section: Development
 
 The [ImageJ](/about) and related [SciJava](SciJava) projects take advantage of several project management tools.
 
-Git
----
+## Git
 
 ImageJ uses the [Git](/develop/git) revision control system to manage its [source code](/develop/source).
 

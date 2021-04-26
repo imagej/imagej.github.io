@@ -364,8 +364,7 @@ Now that we are capable of generating a random filename, we just need to monitor
         setResult("Randomized filename", availableRow, getTitle());
     }
 
-FAQ
----
+## FAQ
 
 What is the rationale behind BAR?  
 The motivation behind bar is quite simple: To collect snippets of code that can be incorporated into any workflow. So rather than performing fully fledged procedures, BARs tend to produce single tasks. The advantages are two-fold: 1) Scripts are easier to understand and maintain and 2) they can be used to complement any other ImageJ add-on, let it be the simplest macro or the most sophisticated plugin.
