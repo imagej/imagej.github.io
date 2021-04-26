@@ -35,7 +35,7 @@ search.addWidgets([
     container: '#search-hits',
     templates: {
       item: `
-        <a href="{{#helpers.highlight}}{ "attribute": "url" }{{/helpers.highlight}}">
+        <a href="{{#helpers.highlight}}{ "attribute": "id" }{{/helpers.highlight}}">
           <div class="search-result">
             <img class="hit-icon" src="{{#helpers.highlight}}{ "attribute": "icon" }{{/helpers.highlight}}"></img>
             <div class="hit-title">

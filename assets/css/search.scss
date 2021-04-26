@@ -47,6 +47,7 @@ $shadowSize: 4px;
   left: $logoSize;
   background: lightgray;
   box-shadow: $shadowSize $shadowSize $shadowSize gray;
+  display: none;
 }
 
 .ais-Hits-list {
@@ -56,7 +57,7 @@ $shadowSize: 4px;
 }
 
 .ais-Hits-item {
-  width: 100%;
+  width: #{'calc(100% - #{$shadowSize + 4*$hitPadding})'};
   margin-top: 0;
   margin-bottom: 8px;
   padding: 0;
@@ -69,7 +70,7 @@ $shadowSize: 4px;
 }
 
 .search-result:hover {
-  background: goldenrod;
+  background: #dd7;
 }
 
 .hit-icon {
