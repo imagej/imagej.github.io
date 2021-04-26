@@ -52,14 +52,14 @@
 }
 
 .menu details > summary:after {
-	content: "▶";
-	font-size: 8px;
+	content: "❭";
+	font-size: 12px;
 	position: absolute;
 }
 
 .menu details[open] > summary:after {
-	content: "▼";
-	font-size: 11px;
+	content: "˅";
+	font-size: 15px;
 }
 
 #sidebar-left .menu details > summary:after {
@@ -242,14 +242,14 @@
 }
 
 #menuToggle details > summary:after {
-	content: "▶";
+	content: "❭";
 	font-size: 16px;
 	position: absolute;
 	left: 230px;
 }
 
 #menuToggle details[open] > summary:after {
-	content: "▼";
+	content: "˅";
 	font-size: 18px;
 	left: 228px;
 }
