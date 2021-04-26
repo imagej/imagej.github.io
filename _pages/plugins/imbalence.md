@@ -5,13 +5,11 @@ title: IMBalENce
 
 {% include info-box content='Plugin' software='ImageJ/FIJI' name='EM tool' maintainer=' [Zhou XU](https://github.com/IMBalENce/EM-tool) @ Monash Centre for Electron Microscopy' source='https://github.com/IMBalENce/EM-tool' released='30/08/2018' latest-version='06/05/2020' status='Stable, Active' category='' website='' %}
 
-**Overview**
-============
+# **Overview**
 
 This is a suite of ImageJ plugins that are used for processing images acquired from electron microscopes. Currently the main focus is on SEM images, but I will keep working on streamline the image processing of both SEM and TEM data.
 
-**Components and Functions**
-============================
+# **Components and Functions**
 
 Click the links below to find more about each tool.
 
@@ -24,8 +22,7 @@ Click the links below to find more about each tool.
 7.  \[ [Flat field correction](Flat_field_correction) \] Applies flat filed correction to a folder of images for large area mapping to mitigate chess pattern after stitching. (Page in preparation)
 8.  \[ [ TEM .ser .dm3 folder export](/plugins/tia-.ser-folder-export) \] This tool convert TIA EM image .ser files and Gatan .dm3 files in a folder to TIFF format.
 
-**Installation**
-================
+# **Installation**
 
 ## Installation via FIJI updater
 

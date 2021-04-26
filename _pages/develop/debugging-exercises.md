@@ -9,8 +9,7 @@ If you are a *user* looking to troubleshoot issues, see the [Troubleshooting](/h
 
 [Debugging](/develop/debugging) is the art of determining the cause and/or location of a problem. The purpose of this guide is to provide developers practical, hands-on experience using a variety of debugging techniques to identify problems in code.
 
-Requirements
-============
+# Requirements
 
 As ImageJ is built using the [SciJava principles of project management](/develop/project-management), this guide assumes a basic familiarity with these topics and tools, especially:
 
@@ -28,8 +27,7 @@ Finally, you should read the [Debugging in Eclipse](http://webcache.googleuserco
 
 **If you find yourself confused** when this tutorial asks you to do something in Eclipse (e.g. "start debugging", "step into") it's almost certainly covered in [Vogel's guide](http://webcache.googleusercontent.com/search?q=cache:http://www.vogella.com/tutorials/EclipseDebugging/article.html#usedebug).
 
-What not to do: print statements
-================================
+# What not to do: print statements
 
 For many developers, the first tool in their debugging toolbox is the print statement. Print statements are easy to lean on as a safety crutch: you don't need any special knowledge to use them, and they often work to answer common questions (e.g. "why is this variable null here?", "how many elements are in my array here?").
 
@@ -41,8 +39,7 @@ However, there are critical drawbacks to trying to debug via print statement:
 
 Learning to use debugging tools is, understandably, a burden: it's "one more thing" to learn as a developer. But if you want to develop ImageJ plugins, you will almost certainly run into cases where debugging is necessary. So you may as well start familiarizing yourself with the tools now, gaining skills and perspectives that will serve you well throughout your career.
 
-Using this guide
-================
+# Using this guide
 
 The goal of these exercises is not to *solve* the problems, but to build up your toolbox of troubleshooting techniques and develop your intuition for *when* to apply each technique. To keep exercises simple and focused, most do not explicitly use ImageJ. But once you learn how to [debug an external Java application](#Exercise_4:_ImageJ_plugins), you will have the knowledge to apply any of these techniques to a rich, and complex, application like [ImageJ](/about).
 
@@ -54,8 +51,7 @@ Changing the source code to actually fix the bugs is outside the scope of this g
 
     git reset --hard origin/master
 
-Exercises
-=========
+# Exercises
 
 ## Exercise 1: Stack Traces and Breakpoints
 
@@ -472,8 +468,7 @@ Even though no code changes, sometimes debugging affects code execution. The Exe
 -   The act of debugging can change the way our code executes. Find the right approach for the situation.
 -   In case of multithreaded programming, set breakpoints to stop the virtual machine at the breakpoint to freeze the state of all threads.
 
-What next?
-==========
+# What next?
 
 At the start of this guide we mentioned that the goal of debugging isn't explicitly to fix the problem. So a natural question that follows is - once we've successfully identified the cause of an issue (or at least narrowed things down), what are the next steps to take?
 
@@ -490,8 +485,7 @@ If a fix is unclear:
 
 Even if you can't contribute a fix, if you went through the effort of debugging - at the very least you should identify the problem, steps you took to debug, and potential fix(es) via a [bug report](/help/report-a-bug) so that your effort is not lost.
 
-See Also
-========
+# See Also
 
 -   [Debugging in Eclipse](http://webcache.googleusercontent.com/search?q=cache:http://www.vogella.com/tutorials/EclipseDebugging/article.html)
 -   [Using the Eclipse Memory Analyzer plugin](http://wiki.eclipse.org/index.php/MemoryAnalyzer)

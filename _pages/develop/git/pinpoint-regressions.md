@@ -7,8 +7,7 @@ section: Development:Git
 
 
 
-How to bisect with Git
-======================
+# How to bisect with Git
 
 ## How to find which commit introduced a regression
 
@@ -70,8 +69,7 @@ After that, you can get rid of the now-obsolete tag:
 
 Note: instead of using a temporary tag, you can use the [reflog](/develop/git/reflogs) of the HEAD ref (`git cherry-pick HEAD@{1}`), but if you are not familiar with the concept, tags are probably easier to handle.
 
-See also
-========
+# See also
 
 -   [Binary search tutorial](http://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git#Binary-Search) in the Git book
 

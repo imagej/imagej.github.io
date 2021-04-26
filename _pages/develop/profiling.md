@@ -85,8 +85,7 @@ See the [OProfile manual](http://oprofile.sourceforge.net/doc/) for more informa
 
 You might find [Shark 4](http://developer.apple.com/tools/sharkoptimize.html) useful if you're on MacOSX.
 
-Memory profiling
-================
+# Memory profiling
 
 Even if Java's memory management prevents most memory issues (unaligned writes, access to uninitialized/released memory), there is a chance of memory leaks: constant accumulation of objects over time, most likely because there are stale references to them.
 

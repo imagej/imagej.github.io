@@ -15,8 +15,7 @@ Email: [Daniel Maidana](mailto:dmaida3@uic.edu)' filename=' [TUNEL Cell Counter 
 
 ----
 
-TUNEL Cell Counter
-==================
+# TUNEL Cell Counter
 
 
 TUNEL Cell Counter is a customizable tool that processes digital images from retinal cryosections. It segments retinal outer nuclear (ONL) and inner nuclear layers (INL) and quantitates fluorescent-labelled cells in these layers. {% include thumbnail src='/media/RETINA Cell Counter Montage.png' title='**TUNEL Cell Counter**: Input a fluorescent-labeled retinal image for ONL & INL layer segmentation and cell quantitation.'%}
@@ -89,8 +88,7 @@ Yes, we know there is a lot to improve!
 
 ------------------------------------------------------------------------
 
-Macro Setup Instructions
-========================
+# Macro Setup Instructions
 
 ## How to Download and Install ImageJ Macros
 

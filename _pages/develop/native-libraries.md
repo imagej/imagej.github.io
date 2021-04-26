@@ -8,8 +8,7 @@ section: Development:Guides
 {% include outdated%}
 
 
-Introduction
-============
+# Introduction
 
 Sometimes, you may want to use 3rd party libraries that are not available as Java components, but only as native libraries.
 
@@ -47,8 +46,7 @@ The benefits of JNI over JNA are:
 -   way faster
 -   JNI is "type-safer" (i.e. Java and native code access data via the same type definitions)
 
-JNA
-===
+# JNA
 
 The [JNA project](http://jna.java.net/) (*Java Native Access*) tries to provide an easy, pure-Java way to access native libraries using their native interface.
 
@@ -264,8 +262,7 @@ Example:
     print("mtime: " + new Date(stat.getLong(88) * 1000));
     print("ctime: " + new Date(stat.getLong(104) * 1000));
 
-JNI
-===
+# JNI
 
 The abbreviation *JNI* stands for *Java Native Interface*. It is the original and best supported way to access native libraries from within Java. As such, it is robust but also a bit cumbersome to use.
 

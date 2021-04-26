@@ -18,19 +18,16 @@ SNT's Reconstruction Viewer is a powerful OpenGL 3D visualization tool for both 
 
 ![](/media/Reconstruction-viewer-animated-gif.gif "reconstruction-viewer-animated-gif.gif")
 
-Starting the Viewer
-===================
+# Starting the Viewer
 
 The Reconstruction Viewer may be used as either a standalone program or from within SNT. To open Reconstruction Viewer as a standalone program, go to {% include bc path='Plugins|NeuroAnatomy|Reconstruction Viewer'%}. To open the program from within SNT, use the "Open Reconstruction Viewer" option in the 3D tab of the SNT dialog. If there are any tracings currently loaded in SNT, they will be displayed in Reconstruction Viewer after opening. Note that, for performance reasons, some Path Manager changes may need to be synchronized manually from RV controls.
 
-Scene Interaction
-=================
+# Scene Interaction
 
 The display canvas supports multiple modes of interaction, including controlled rotations, panning, zoom, scaling, animation, and alternation between "dark" and "light" modes. The full list of keyboard shortcuts is found by navigating to {% include bc path='Scene Controls|Scene Shortcuts...'%} from RV Controls, or by pressing {% include key content='H' %} (notification) or {% include key content='F1' %} (separate window) in the Viewer scene. <img src="/media/Reconstruction-viewer-shortcuts.png" title="fig:" width="400" /> {% include clear%}
 
 
-RV Controls
-===========
+# RV Controls
 
 ## Scene Controls
 

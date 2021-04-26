@@ -5,14 +5,12 @@ title: User ›Sjwest
 
 Here are some details of software packages contributed by Steven J. West.
 
-StereoMate Package:
-===================
+# StereoMate Package:
 
 The StereoMate Package facilitates Stereological and Automated analysis of confocal image stacks.
 
 ------------------------------------------------------------------------
 
-Multi-OTSU:
-===========
+# Multi-OTSU:
 
 The Multi-OTSU algorithm is based on the [Multi\_Otsu\_Threshold](/plugins/multi-otsu-threshold) algorithm contributed by Yasunari Tosa. It has been modified to work on image stacks, and to directly modify the image, so that it can be used with the StereoMate Threshold Manager plugin.

@@ -387,8 +387,7 @@ Link to a video demo: [https://youtu.be/YZsSWBxcdDM>](https://youtu.be/YZsSWBxcd
 
 [18.2) Shortcuts](#RefHeadingToc28813566485089)
 
-1) Install EZFig
-================
+# 1) Install EZFig
 
 ## 1.1) Install as a FIJI plugin
 
@@ -420,8 +419,7 @@ Press "Ok" and <span style="color:#ff0000;">close</span><span style="color:#ff00
 
 <span style="color:#ff0000;">Restart</span><span style="color:#ff0000;"> FIJI</span>, press "Plugin &gt; EZFig &gt; EZFig" to launch the software
 
-2) User Interface
-=================
+# 2) User Interface
 
 ## 2.1) Quick overview of the EZFig user interface
 
@@ -485,8 +483,7 @@ press again the same button to fit height. Note that the green rectangle indicat
 
 press this button to restore default magnification
 
-3) Imports
-==========
+# 3) Imports
 
 The easiest way to import files in EZFig is to use <span style="color:#ff0000;">drag n drop</span>.
 
@@ -524,8 +521,7 @@ Select "import single image from ImageJ" if you want to import the currently dis
 
 The image has been successfully imported in EZFig.
 
-4) Load/Save EZFig files
-========================
+# 4) Load/Save EZFig files
 
 EZFig has its own native format (.ezf). <span style="color:#ff0000;">It is very important to always save the figure in "</span><span style="color:#ff0000;">ezf"</span><span style="color:#ff0000;"> format as it is the only format that can be </span><span style="color:#ff0000;">re-edited</span><span style="color:#ff0000;"> by EZFig</span>, all other export formats cannot be dynamically modified. EZFig is backward compatible width ScientiFig, i.e. it can read ScientiFig files (.yf5m). The opposite is not true, ScientiFig cannot read .ezf files.
 
@@ -543,8 +539,7 @@ Alternatively, press "File &gt; Open"
 
 Press "File &gt; Save as..." to save an "ezf" file. Note that if the figure contains stacks, they will be saved in a folder with the same name as the "ezf" file with an extra .files. <span style="color:#ff0000;">Please always store the .ezf and the .ezf.files folder together, otherwise stack data will be lost</span>. Nb: You can use the Ctrl/Cmd + S shortcut to save.
 
-5) Exports
-==========
+# 5) Exports
 
 ## 5.1) Direct exports
 
@@ -615,8 +610,7 @@ The image is opened in ImageJ as an ImagePlus
 
 Nb : the figure can also be exported as an ImageJ stack (provided the figure itself contains stacks). To do so press "File &gt; Export to ImageJ Stack"
 
-6) Selections
-=============
+# 6) Selections
 
 EZFig is an object based (vectorial) software. Below are the various EZFig objects you can manipulate as well as informations about their selection.
 
@@ -659,8 +653,7 @@ hierarchy : Figure &gt; Row &gt; Panel/Montage &gt; Image
 
 </div>
 
-7) Menus
-========
+# 7) Menus
 
 ## 7.1) File
 
@@ -776,8 +769,7 @@ Please find below a complete description of the "/help" menu :
 
 **Load random demo images** : Random images (just for me to do some debugging).
 
-8) Dynamic menus 
-=================
+# 8) Dynamic menus 
 
 The content of the right side of the EZFig will change dynamically according to the selection type (see also the "Selections" section).
 
@@ -975,8 +967,7 @@ Select "Single gray channels and merge" to split image into gray channels and me
 
 ![](/media/Images69.png "images69.png")
 
-9) Figure layout
-================
+# 9) Figure layout
 
 ## 9.1) Change figure size
 
@@ -1016,8 +1007,7 @@ To move an inner component of the row, click on it until it gets selected (arrow
 
 The two closest images have been swapped (arrows).
 
-10) Annotating Images
-=====================
+# 10) Annotating Images
 
 ## 10.1) Add letters, labels and scalebar to an image
 
@@ -1089,8 +1079,7 @@ Press "Add" (bottom arrow). Set begin to "2" and end to "3" (upper arrows), this
 
 Labels have been added above images. Labels can also be added left, right and below rows.
 
-11) Keep for later
-==================
+# 11) Keep for later
 
 Often one needs to hide/remove portions of figures that are not yet finalized, however this unfinished work must still be kept somewhere in order to be added back later. This is what the "Keep For Later" menu is for.
 
@@ -1106,8 +1095,7 @@ Note that the selected image is removed (lower arrow) from the row and added to 
 
 Pressing the icon button in the "Keep For Later" menu adds the image back to the end of the figure.
 
-12) Manipulate image channels
-=============================
+# 12) Manipulate image channels
 
 ## 12.1) Select or create an image with channels
 
@@ -1141,8 +1129,7 @@ Make sure "ch1" is active (ticked)
 
 Press the yellow button "<span style="background-color:#fff200;">Y</span>" (right arrow) to turn the green channel to a yellow one. See the channel colour change on the image (left arrow).
 
-13) Use drag and drop to build a figure efficiently
-===================================================
+# 13) Use drag and drop to build a figure efficiently
 
 ## 13.1) Add inset using drag and drop
 
@@ -1270,8 +1257,7 @@ Change the number of rows to 3 (upper arrow) and the number of columns to 2 (low
 
 **Add dragged selection as inset (picture in picture/PIP) to the drop target image** : adds dragged selection as an inset in the drop target image.
 
-14) Add inset/Picture in picture (PIP) from the local drive
-===========================================================
+# 14) Add inset/Picture in picture (PIP) from the local drive
 
 ![](/media/Image60.png "Image60.png")
 
@@ -1285,8 +1271,7 @@ Press the "Add/Replace Inset" button to insert an image from the local hard driv
 
 Note that removed insets are not deleted, they are added to the "Keep For Later" menu (arrow) (See also the "Keep for Later" section).
 
-15) Journal styles
-==================
+# 15) Journal styles
 
 ## 15.1) Select a journal style
 
@@ -1308,8 +1293,7 @@ Press "Journals &gt; Create new Journal"
 
 Enter the journal parameters based on the journal guidelines such as size of a column, size of 2 columns, fonts to use, letter capitalization rules, style rules, text formatting rules, graph rules, ... Provide the name of the journal and it's all set. Please do not hesitate to send me the journal style you generate so that I can add it to EZFig, you'll be credited for this journal and you may really help other people.
 
-16) Editorial Checks
-====================
+# 16) Editorial Checks
 
 When submitting a manuscript to a journal one needs to obey several editorial guidelines. EZFig can help you.
 
@@ -1413,8 +1397,7 @@ Press "Checks &gt; Graphs"
 
 Read the comments regarding your graph, perform changes or ignore suggestions if you think they are not appropriate. If you accept the solution your graphs will be changed (most changes are irreversible).
 
-17) FiguR
-=========
+# 17) FiguR
 
 Often figures contain graphs and FiguR is a tool to create graphs that can be directly edited by EZFig. FiguR uses R and ggplot2 to draw graphs. The use of ggplot2 is motivated by the fact that this is the only R library (as far as I know) where fonts can be set. Proper font is mandatory for most scientific publications.
 
@@ -1474,8 +1457,7 @@ To Launch FiguR from EZFig press "FiguR &gt; Launch FiguR"
 
 The FiguR interface opens
 
-18) Settings
-============
+# 18) Settings
 
 ![](/media/Image7.png "Image7.png")
 

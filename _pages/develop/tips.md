@@ -6,8 +6,7 @@ section: Development:Guides
 
 An unsorted list of hints that you might find useful:
 
-Compile & Execute a Class
-=========================
+# Compile & Execute a Class
 
 You do not need to call `javac` yourself with a long *classpath*:
 
@@ -17,8 +16,7 @@ and you can call its `main()` method just as easy:
 
     $ ./fiji YourClass.class argument1 argument2
 
-Rapidly Prototype a Plugin
-==========================
+# Rapidly Prototype a Plugin
 
 It is often easier to start out with a Jython, JRuby or BeanShell script, as you do not have to care about strict typing, exceptions or recompiling. Just place your script (with the correct extension -- .py, .rb or .bsh) into the plugins/ folder and execute the script. Fiji will always execute the current version of the script, so you can edit and run the script without restarting Fiji.
 
@@ -26,8 +24,7 @@ Of course, it is even more convenient to use the [Script Editor](/scripting/scri
 
 Once you have working code, you can turn it into a proper plugin (this is easiest with BeanShell, as its syntax is closest to Java already), adding strict typing and exception handling as needed.
 
-Find the .jar File Containing a Certain Class
-=============================================
+# Find the .jar File Containing a Certain Class
 
 Sometimes, the compiler complains about a class not having a certain method or interface, but you *know* it must contain it. More often than not, that class exists in different versions in your classpath. Find out with
 
@@ -43,8 +40,7 @@ If you want to do that with an installed Fiji (i.e. when bin/ is missing), you c
 
 This will output the URL to the *.class* file, including the path to the enclosing *.jar* file.
 
-Using ImageJ Effectively
-========================
+# Using ImageJ Effectively
 
 ImageJ has a simple API, but it is also big, so here are a few pointers to some useful parts.
 
@@ -247,8 +243,7 @@ Then you can add a new row:
 
 [ImageJ1-ImageJ2 cheat sheet](ImageJ1-ImageJ2_cheat_sheet) is available.
 
-Tips for Graphical User Interface (GUI) programming
-===================================================
+# Tips for Graphical User Interface (GUI) programming
 
 ## Programming with Swing components
 

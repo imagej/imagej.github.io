@@ -7,8 +7,7 @@ section: Development:Git
 
 
 
-Git's reflogs
-=============
+# Git's reflogs
 
 ## What is a "ref"?
 

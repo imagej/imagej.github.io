@@ -5,8 +5,7 @@ title: Cluster Analysis
 
 {% include info-box content='This Wiki-Page is still under construction.' %}
 
-Introduction
-============
+# Introduction
 
 Fiji-Plugin to segment and quantify confocal images.
 
@@ -84,13 +83,11 @@ These tables are also available as .csv-tables in the Output Table folder.
 
 It is recommended to open your Output.db file with a a DB-Browser such as DB-Browser for Sqlite (http://sqlitebrowser.org/) for a quick look, but to import your datasets using Matlab, R, Python or another popular programming language to properly analyze your data. The usual routine consists of creating a connection to the database and defining a query containing conditional-statements to correctly retrieve the corresponding measurements.
 
-ShinyApp to Analyze and Plot Results from the SQLite-Database (In Progress)
-===========================================================================
+# ShinyApp to Analyze and Plot Results from the SQLite-Database (In Progress)
 
 Using the ShinyApp-library within the R-framework, we are currently working on a solution to allow people to analyze and plot the results given by the Cluster Analysis Plugin in form of the database without any need of scripting at all. The work is still in progress and should be soon available.
 
-Headless-mode
-=============
+# Headless-mode
 
 Thanks to the headless-mode functionality of ImageJ2 and the Cluster Analysis Plugin, the program is able to run in a desktop-free environment such as an external server (preinstalled with FIJI). Load a previously tested ini.cfg-file with the right parameters using following command in a bash-shell terminal (in a Linux-server):
 

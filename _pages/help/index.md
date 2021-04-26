@@ -7,15 +7,13 @@ section: Help
 
 The ImageJ community firmly believes in public discussion of the software. In this way, each question benefits not only the one asking, but everyone in the community, including everyone who subsequently does a [web search](http://search.imagej.net/) on the same topic.
 
-Searching ImageJ resources
-==========================
+# Searching ImageJ resources
 
 There is a convenient online search interface:
 
 {% include big-link url='https://search.imagej.net/' %}
 
-Getting help with ImageJ
-========================
+# Getting help with ImageJ
 
 {% include recommendedcontact%}
 
@@ -25,13 +23,11 @@ Getting help with ImageJ
 There are several popular communication channels: {% include communication%}
 
 
-Troubleshooting
-===============
+# Troubleshooting
 
 If you encounter problems, check the [Troubleshooting](/help/troubleshooting) page.
 
-Reporting bugs
-==============
+# Reporting bugs
 
 If you have found a bug, you can help the project by [reporting it](/help/report-a-bug).
 

@@ -9,8 +9,7 @@ categories: tutorials
 
 <div class="toclimit-3">
 
-Step-by-Step Tracer Instructions
-================================
+# Step-by-Step Tracer Instructions
 
 These "step-by-step" instructions below assume that you have done the preliminary steps described on the [Simple Neurite Tracer: Basic Instructions](/plugins/simple-neurite-tracer/basic-instructions) page including starting up the plugin and turning on "Hessian-based analysis". Note that the screenshots here are from an early pre-release version of the plugin. The path list in the current version is in a separate window, but otherwise the interface is the same.
 

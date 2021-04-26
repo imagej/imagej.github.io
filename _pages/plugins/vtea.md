@@ -10,8 +10,7 @@ categories: Segmentation,Visualization,Plugins,Citable
 {% endcapture %}
 {% include info-box name='VTEA' software='Fiji' author='Seth Winfree ([1](mailto:winfrees@iu.edu))' maintainer='Seth Winfree ([2](mailto:winfrees@iu.edu))' source=source status='v0.7, alpha, 1.0.a on deck.' category='[Segmentation](Category_Segmentation),[Visualization](Category_Visualization),[Plugins](Category_Plugins)' %}
 
-Volumetric Tissue Exploration and Analysis
-==========================================
+# Volumetric Tissue Exploration and Analysis
 
 **Three-dimensional tissue cytometry.** Three-dimensional tissue cytometry(3DTC) enables the quantitative measurement of whole cells while retaining their morphology, localization and associations-think of it as *in situ* flow cytometry. How can we do 3DTC? Volumetric tissue exploration and analysis!
 

@@ -6,8 +6,7 @@ categories: Tutorials
 
 The page is a collection of principles for the entire image analysis process, from acquisition to processing to analysis.
 
-Image acquisition principles
-============================
+# Image acquisition principles
 
 ## Introduction
 
@@ -41,8 +40,7 @@ Effective naming schemes are easy to read by both humans and computers. The foll
 
 In certain cases (Examples ...) it is very helpful to add markers to the slides.
 
-Image processing principles
-===========================
+# Image processing principles
 
 ## Introduction
 
@@ -212,8 +210,7 @@ If converting to grayscale damages or distorts the information desired from a pa
 4.  Specific tools based on machine learning might be helpful. Here, the user is required to do some training on representative example images. This is achieved by selecting areas which should be assigned to the foreground or background, respectively. This is obviously also biased, with a good training (potentially by different experts) the feature extraction contains a lower bias, since the same trained classifier is applied to the different images. Relevant ImageJ plugins available are the [SIOX: Simple Interactive Object Extraction](/plugins/siox) and the [Trainable WEKA Segmentation](/plugins/tws).
 5.  ...
 
-Image analysis principles
-=========================
+# Image analysis principles
 
 ## Introduction
 

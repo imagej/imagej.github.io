@@ -7,8 +7,7 @@ section: Help
 
  This page lists answers to the most frequently asked questions.
 
-Usage
-=====
+# Usage
 
 ## How do I apply an operation or macro to multiple images?
 
@@ -25,8 +24,7 @@ The [Fiji](/fiji) project also includes the [BigDataViewer](/plugins/bdv) (BDV) 
 1.  BDV was originally designed for large SPIM data; opening large image files more generally currently requires some coding. But we want to change this.
 2.  Many ImageJ 1.x plugins assume the data is stored in an ImageJ 1.x data structure, which is not what BDV uses. So ["mixing and matching" IJ1 and IJ2 functionality](/libs/imagej-legacy) is tricky here. But we are working to lift these restrictions as time goes on.
 
-Mac OS X
-========
+# Mac OS X
 
 ## How do I set up Java 6 on OS X?
 
@@ -40,8 +38,7 @@ See the [MacOS](/platforms/macos) page.
 
 See the [MacOS](/platforms/macos) page.
 
-Running
-=======
+# Running
 
 ## How do I launch ImageJ with a different version of Java?
 
@@ -99,8 +96,7 @@ You will then see two icons in the dock, the one of the launcher app and the one
 
 The term *headless* refers to running ImageJ without a graphical desktop, e.g. on a cluster. See the [Headless](/learn/headless) page for more information.
 
-Installing/Updating
-===================
+# Installing/Updating
 
 ## How can I verify that my ImageJ is really 100% up to date?
 
@@ -163,8 +159,7 @@ Indeed, an earlier version of the Updater does not use your system-wide network 
 
 -   run the script via the *Run* menu
 
-Compatibility
-=============
+# Compatibility
 
 ## What is the difference between ImageJ1 and ImageJ2?
 
@@ -196,8 +191,7 @@ Yes, see the [call-modern-from-legacy](https://github.com/imagej/tutorials/tree/
 
 [ImageJ1-ImageJ2 cheat sheet](ImageJ1-ImageJ2_cheat_sheet) is available.
 
-[Fiji](/fiji)
-=======================
+# [Fiji](/fiji)
 
 ## What is the difference between Fiji and ImageJ?
 
@@ -241,15 +235,13 @@ Then copy `target/dependency/*.jar` into your ImageJ installation.
 
 You will need [Git](/develop/git) and [Maven](/develop/maven) installed for this to work.
 
-Interoperability
-================
+# Interoperability
 
 ## How can I call ImageJ from MATLAB, or vice versa?
 
 Use the ImageJ-MATLAB [update site](/update-sites). See the [MATLAB](/scripting/matlab) page for details.
 
-Development
-===========
+# Development
 
 ## Why do I get a NoSuchMethodError/NoSuchClassDefFoundError when running a rebuilt plugin?
 
@@ -372,8 +364,7 @@ That said, ImageJ2 has not even been compile-tested yet using an Android SDK, so
 
 Another possibility for the future is a client/server version of ImageJ that runs in a web browser using HTML5 and JavaScript, which could include cross-platform support for mobile devices (Android, iPhone, tablets, etc.). Again, much groundwork has been done to make the [ImageJ2](/software/imagej2) core design compatible with such an application, but no one has written the server- or client-side yet. If you are seriously interested in helping to pursue such an application, you might also want to check out the [OMERO](/software/omero) project, which is a client/server application which has some [integration with ImageJ](https://github.com/imagej/imagej-omero).
 
-Community
-=========
+# Community
 
 ## Why is there Fiji when there is already ImageJ? And what is this ImageJ2 about?
 
@@ -457,8 +448,7 @@ See the [bug reporting best practices](/help/bug-reporting-best-practices) artic
 
 See the [Contributing](/about/contributing) page!
 
-Miscellaneous
-=============
+# Miscellaneous
 
 ## Why do you program in Java? Is C++ not much faster?
 

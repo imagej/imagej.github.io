@@ -13,8 +13,7 @@ The following article was written by {%- include person id='Scrivello' -%} as he
 
 
 
-Writing ImageJ2 Plugins: A Beginner's Perspective
-=================================================
+# Writing ImageJ2 Plugins: A Beginner's Perspective
 
 ## Preamble
 
@@ -153,8 +152,7 @@ To import several projects from GitHub I always had to close all open project in
 -   Here you can right-click and "Run Maven Build" or alternatively press the green arrow above it in the Maven window to build your project
 -   The build process will generate two `.jar` file under *\[project\_name\]/targets/* that can be installed in your local ImageJ installation
 
-Details of Writing Plugins
-==========================
+# Details of Writing Plugins
 
 ## Tutorials
 
@@ -257,8 +255,7 @@ Finally add at least one of the following dependencies for ImageJ plugin support
 -   Learn more about [ImageJ/SciJava dependencies](/develop/maven#how-to-find-a-dependencys-groupidartifactidversion-gav)
 -   [ImageJ Maven FAQ](/develop/maven-faq)
 
-Other References
-================
+# Other References
 
 -   [ImageJ Forum Thread 1151](http://forum.imagej.net/t/java3d-issue-bonej-with-latest-fiji-version-problem-solved/1151)
 -   [ImageJ Forum Thread 1290](http://forum.imagej.net/t/guide-to-make-a-plugin-as-official-fiji-plugin/1290)
@@ -271,8 +268,7 @@ Other References
 
 and all other links cited in the text!
 
-Appendix
-========
+# Appendix
 
 ## How do I find dependencies?
 

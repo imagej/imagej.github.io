@@ -6,8 +6,7 @@ categories: Scripting,Segmentation,Machine Learning
 
 [Scripting](/scripting/script-editor) is one of the reasons Fiji is so powerful, and the Trainable Weka Segmentation library (that includes the [ Trainable Weka Segmentation plugin](/plugins/tws)) is one of the best examples for scriptable Fiji components.
 
-Getting started
-===============
+# Getting started
 
 The first thing you need to start scripting the Trainable Weka Segmentation is to know which methods you can use. For that, please have a look at the **[API](http://javadoc.imagej.net/Fiji/trainableSegmentation/package-tree.html) of the Trainable Weka Segmentation** library, which is available [here](http://javadoc.imagej.net/Fiji/trainableSegmentation/package-tree.html).
 
@@ -158,8 +157,7 @@ We might also want to use the default random forest but tune its parameters. In 
     // set classifier
     segmentator.setClassifier( rf );
 
-Example: apply classifier to all images in folder
-=================================================
+# Example: apply classifier to all images in folder
 
 Very frequently we might end up having to process a large number of images using a classifier that we interactively trained with the GUI of the [Trainable Weka Segmentation](/plugins/tws) plugin. The following [Beanshell](/scripting/beanshell) script shows how to load a classifier from file, apply it to all images contained in a folder and save the results in another folder defined by the user:
 
@@ -218,8 +216,7 @@ Very frequently we might end up having to process a large number of images using
     estimatedTime = System.currentTimeMillis() - startTime;
     IJ.log( "** Finished processing folder in " + estimatedTime + " ms **" );
 
-Example: apply classifier to all images in folder **by tiles**
-==============================================================
+# Example: apply classifier to all images in folder **by tiles**
 
 In some cases, we may have to apply a saved classifier to very large images, which together with a large number of image features may fill the RAM of our machine. To prevent running into out-of-memory exceptions, the following [Beanshell](/scripting/beanshell) script shows how to load a classifier from file, apply it to all images contained in a folder by subdividing them into smaller pieces, and save the results in another folder defined by the user:
 
@@ -291,8 +288,7 @@ In some cases, we may have to apply a saved classifier to very large images, whi
     IJ.log( "** Finished processing folder in " + estimatedTime + " ms **" );
     System.gc();
 
-Example: define your own features
-=================================
+# Example: define your own features
 
 Although Trainable Segmentation provides a large set of predefined image features, it might happen that you need to define your own features for a specific problem. You can do that with a simple set of instructions. Here is a little [Beanshell](/scripting/beanshell) script that makes two features from the Clown example and uses them to train a classifier (see the inline comments for more information):
 
@@ -388,8 +384,7 @@ Although Trainable Segmentation provides a large set of predefined image feature
     output.setLut( Utils.getGoldenAngleLUT() );
     output.show();
 
-Example: define training samples with binary labels
-===================================================
+# Example: define training samples with binary labels
 
 Here is a simple script in **Beanshell** doing the following:
 
@@ -473,8 +468,7 @@ Here is a simple script in **Beanshell** doing the following:
     estimatedTime = System.currentTimeMillis() - startTime;
     IJ.log( "** Finished script in " + estimatedTime + " ms **" );
 
-Example: color-based segmentation using clustering
-==================================================
+# Example: color-based segmentation using clustering
 
 The following [Beanshell](/scripting/beanshell) script shows how to segment a 2D color image or stack in an automatic fashion using the {% include wikipedia title='CIELAB' text='CIELab color space'%} and two possible clustering schemes: {% include wikipedia title='K-means' text='k-means'%} and {% include wikipedia title='Expectation–maximization\_algorithm' text='expectation maximization'%} (note: if you do not have Weka's ClassificationViaClustering classifier installed, check [how to install new classifiers via Weka's package manager](/plugins/tws/how-to-install-new-classifiers)).
 

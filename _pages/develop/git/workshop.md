@@ -7,8 +7,7 @@ section: Development:Git
 
  These are the notes of a Git workshop held at the [Max-Planck Institute of molecular Cell Biology and Genetics](http://www.mpi-cbg.de/) on August 3rd, 2011.
 
-What is a version control system, why should I care?
-====================================================
+# What is a version control system, why should I care?
 
 A version control system is a database that holds multiple revisions of a project. A revision consists of
 
@@ -78,8 +77,7 @@ Notes:
 -   `git init` creates .git/ in which all of the repository's files live
 -   `git config` accesses .git/config, \~/.gitconfig and /etc/gitconfig
 
-What are diffs?
-===============
+# What are diffs?
 
 Before committing, it is a good idea to see what modifications are about to be committed. One mode to look at them is to let Git show a *diff*. A *diff* consists of the following parts for every modified file:
 
@@ -109,8 +107,7 @@ Before committing, it is a good idea to see what modifications are about to be c
     git config --global diff.color auto
     ```
 
-A word on the data model of Git (and how to reference objects)
-==============================================================
+# A word on the data model of Git (and how to reference objects)
 
 See [Git for computer scientists](http://eagain.net/articles/git-for-computer-scientists/).
 
@@ -169,8 +166,7 @@ For ease of use, in addition to their long name (40 hex characters, quite klunky
 
 Note: to disambiguate between start commit and files, put a *--* between commit and/or options and files/directories, e.g. `git log HEAD -5 -- doc`
 
-What are branches? Why do I need them?
-======================================
+# What are branches? Why do I need them?
 
 A branch is a named pointer into the commit graph. The main branch is called 'master' (Subversion's *trunk*, Mercurial's *default*). Since branches are just pointers, they are very easily created.
 
@@ -206,8 +202,7 @@ Branches can be used to organize sets of changes by topic. Compare also [Fiji's 
     git checkout @{-1}
     ```
 
-What does "distributed" mean with regards to Git?
-=================================================
+# What does "distributed" mean with regards to Git?
 
 So far, the repository is local to the working directory. But Git can also synchronize with multiple other repositories.
 
@@ -235,8 +230,7 @@ A main repository usually does not need a working directory, in which case it is
     git init --bare --shared=group /path/to/fileserver/my.git
     ```
 
-The merge concept of Git (and what is this "index" all about?)
-==============================================================
+# The merge concept of Git (and what is this "index" all about?)
 
 When working with others, or with topic branches, the changes (including their complete commit history) need to be integrated into another branch, typically *master*. This integration is called *merging*.
 
@@ -278,8 +272,7 @@ Please refer to the Fiji's page on [Git Conflicts](/develop/git/conflicts) for a
     git merge tut-anch-amun
     ```
 
-What are reflogs? How can they help me?
-=======================================
+# What are reflogs? How can they help me?
 
 We looked at the commit history previously. But every repository has its own individual history; for example, yesterday at noon, a specific branch with a specific revision was the current branch. This is stored in the reflogs (for space efficiency, reflogs are not available eternally but are pruned at some stage).
 
@@ -299,8 +292,7 @@ You can access the reflogs by appending *@{<number>}* or *@{<date>}* to a branch
     git log -g
     ```
 
-What is the stash?
-==================
+# What is the stash?
 
 Sometimes one needs to store away all modifications and go back to a clean state, but keep the modifications accessible. This is done using the *stash*.
 
@@ -348,8 +340,7 @@ Note: the stash is a special pseudo-branch, living in *refs/stash*. Their histor
     git stash pop
     ```
 
-Accessing parts of the object database
-======================================
+# Accessing parts of the object database
 
 The primary way to look at commits is by using `git show`. It can show tags, commits, trees and blobs.
 
@@ -383,8 +374,7 @@ For more low-level access, use `git cat-file`.
     git cat-file commit HEAD
     ```
 
-What meanings do "checkout", "reset" have in Git?
-=================================================
+# What meanings do "checkout", "reset" have in Git?
 
 We already saw that *checkout* can switch between branches and even initialize new branches.
 
@@ -414,8 +404,7 @@ The *reset* command can further be convinced to reset not only the index (stagin
     git reset --hard
     ```
 
-Git's concept of "remote repositories"
-======================================
+# Git's concept of "remote repositories"
 
 In addition to the repository from which we cloned, other repositories can be linked, too, using the `git remote` command. Such repositories are called *remote repositories* or simply *remotes*.
 
@@ -476,8 +465,7 @@ Note: there is a shortcut for *fetch & merge*: *pull*. If you create a new branc
     git push --delete origin blabla-branch
     ```
 
-Popular public repository hosters
-=================================
+# Popular public repository hosters
 
 If you need to have public repositories, you can use http://github.com/, http://code.google.com/, http://sourceforge.net/, http://repo.or.cz/ and quite a few others. Typically, you have a decent amount of storage, but the deal is that your version-controlled project must be Open Source.
 
@@ -487,8 +475,7 @@ As a goodie, all of said hosters support *gitweb*, a web interface to look at th
 
 Let's surf to http://github.com/git/hello-world and inspect the history
 
-Advanced topics
-===============
+# Advanced topics
 
 -   aliases
 
@@ -530,8 +517,7 @@ Advanced topics
 
 -   rename handling
 
-Links
-=====
+# Links
 
 -   The homepage: http://git-scm.com/
 -   Git for Windows: http://code.google.com/p/msysgit/

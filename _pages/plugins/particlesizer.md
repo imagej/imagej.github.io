@@ -13,13 +13,11 @@ title: ParticleSizer
 {% endcapture %}
 {% include info-box software='Fiji' update-site='Biomedgroup & ParticleSizer' name='ParticleSizer' author=author maintainer=maintainer filename='ParticleSizer\_.jar [\[1](https://github.com/thorstenwagner/ij-particlesizer/releases/latest) \]' source='Github [\[2](https://github.com/thorstenwagner/ij-particlesizer) \]' latest-version='v1.0.7 (28. Ocotober 2016)' status='active' %}
 
-Purpose
-=======
+# Purpose
 
 The ParticleSizer script was developed to automatically measures the distributions of the characteristic size and shape properties of a nanomaterial. In the scope of implementing the European Commission definition of a nanomaterial, the minimal external dimension of the primary particles of a particulate material is assessed as the minimal feret diameter from electron microscopy images. Other size and shape parameters are measured simultaneously.
 
-Installation
-============
+# Installation
 
 The ParticleSizer script combines a number of different plugins. The most easy way (and at the moment the only way) is to [follow](/update-sites/following) Biomedgroup & ParticleSizer [update site](/update-sites).
 
@@ -33,8 +31,7 @@ It is recommended to install R to get better plots. When this point is skipped, 
 
 You can now start the ParticleSizer via *Plugins -&gt; NanoDefine -&gt; ParticleSizer*
 
-Settings
-========
+# Settings
 
 **Segmentation:**![](/media/Psizer gui.png "fig:Psizer_gui.png")
 
@@ -89,13 +86,11 @@ Combining both information, we could give the following adivices (as a rule of t
 -   S+E -&gt; Activate ellipse fitting
 -   H -&gt; Activate single particle mode
 
-Use the ParticleSizer with the NanoDefiner e-tool
-=================================================
+# Use the ParticleSizer with the NanoDefiner e-tool
 
 The ParticleSizer supports the [NanoDefiner e-tool](https://labs.inf.fh-dortmund.de/NanoDefiner/?anchor=version#version). After the analysis of a dataset is finished, you can select the results table and export the cummulative mass function of the feret min diamater by "Results &gt; Export CMF". The exported file can be uploaded to the [NanoDefiner e-tool](https://labs.inf.fh-dortmund.de/NanoDefiner/?anchor=version#version).
 
-Examples
-========
+# Examples
 
 ## Gold 8 nm, Settings: Default
 
@@ -111,8 +106,7 @@ Examples
 
 <img src="/media/Kaolin ohne overlay.png" title="fig:Kaolin_ohne_overlay.png" width="300" alt="Kaolin_ohne_overlay.png" /> <img src="/media/Kaolin overlay.png" width="300"/> <img src="/media/Kaolin size distr.png" title="fig:Kaolin_size_distr.png" width="300" alt="Kaolin_size_distr.png" />
 
-How to cite
-===========
+# How to cite
 
 A publication is in preparation.
 
@@ -120,7 +114,6 @@ You can use Zenodo to cite the lastest release of the ParticleSizer: https://zen
 
 As example: Thorsten Wagner. (2016). ij-particlesizer: ParticleSizer 1.0.1. Zenodo. 10.5281/zenodo.56457
 
-Acknowledgements
-================
+# Acknowledgements
 
 The development of the ParticleSizer has received funding from the European Union Seventh Framework Programme (FP7/2007-2013)

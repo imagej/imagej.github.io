@@ -8,13 +8,11 @@ section: Development
  {% include info-box content='This page has approaches for *software developers* to use for debugging ImageJ.  
 If you are a *user* looking to troubleshoot issues, see the [Troubleshooting](/help/troubleshooting) page.' %}
 
-Launching ImageJ in debug mode
-==============================
+# Launching ImageJ in debug mode
 
 To debug problems with ImageJ, it is often helpful to launch it in debug mode. See the [Troubleshooting](/help/troubleshooting#launching-imagej-from-the-console) page for instructions.
 
-Debugging plugins in an IDE (Netbeans, IntelliJ, Eclipse, etc)
-==============================================================
+# Debugging plugins in an IDE (Netbeans, IntelliJ, Eclipse, etc)
 
 To debug a plugin in an IDE, you most likely need to provide a *main()* method. To make things easier, we provide helper methods in *fiji-lib* in the class *fiji.Debug* to run plugins, and to load images and run filter plugins:
 
@@ -58,8 +56,7 @@ In this case you start the debugging session first, e.g. in Eclipse debug config
 
     ImageJ.app/ImageJ-linux64 -agentlib:jdwp=suspend=y,transport=dt_socket,address=localhost:8000 --
 
-Monitoring system calls
-=======================
+# Monitoring system calls
 
 ## Linux
 
@@ -77,8 +74,7 @@ Use the *dtruss* wrapper around [dtrace](http://developer.apple.com/documentatio
 
 To monitor all kinds of aspects of processes on Windows, use [Sysinternal's Process Monitor](http://technet.microsoft.com/en-us/sysinternals/bb896645.aspx).
 
-Debugging shared (dynamic) library issues
-=========================================
+# Debugging shared (dynamic) library issues
 
 ## Linux
 
@@ -96,8 +92,7 @@ Set the *DYLD\_PRINT\_APIS* environment variable before launching ImageJ:
 
 Often, dynamic library issues are connected to a dependent .dll file missing. Download [depends.exe](http://www.dependencywalker.com/) and load the .dll file you suspect is missing a dependency.
 
-Debugging JVM hangs
-===================
+# Debugging JVM hangs
 
 When the Java VM hangs, the reason might be a dead-lock. Try taking a [stack trace](/help/troubleshooting#if-imagej-freezes-or-hangs). If you have trouble, you can try one of the following advanced techniques:
 
@@ -112,15 +107,13 @@ When the Java VM hangs, the reason might be a dead-lock. Try taking a [stack tra
 
 Regardless of which method you use to acquire the stack trace, to debug you will want to acquire multiple stack traces over time and compare. If all the stack traces are in the same method execution, then that's the source of the deadlock (or slowdown).
 
-Debugging memory leaks
-======================
+# Debugging memory leaks
 
 Sometimes, memory is not released properly, leading to OutOfMemoryExceptions.
 
 One way to find out what is happening is to use `jvisualvm` (see [\#Debugging JVM hangs](#debugging-jvm-hangs)) to connect to the ImageJ process, click on *Heap Dump* in the *Monitor* tab, in said tab select the sub-tab *Classes* and sort by size. Double-clicking on the top user should get you to a detailed list of *Instances* where you can expand the tree of references to find out what is holding a reference still.
 
-Debugging hard JVM crashes
-==========================
+# Debugging hard JVM crashes
 
 When you have found an issue that crashes the JVM, and you can repeat that crash reliably, there are a number of options to find out what is going on.
 
@@ -180,8 +173,7 @@ is not required, but convenient for controlling where the resulting .hprof file 
 
 After acquiring a heap dump, you can analyze it yourself, e.g. with a [memory analyzer](http://www.eclipse.org/mat/), or post on \[Mailing Lists\|imagej-devel\] with a brief explanation of your problem.
 
-Debugging Java code with jdb
-============================
+# Debugging Java code with jdb
 
 ## How to attach the Java debugger jdb to a running ImageJ process
 
@@ -271,8 +263,7 @@ Okay, so here you go, a little demonstration:
 `>`  
 `The application exited`
 
-Inspecting serialized objects
-=============================
+# Inspecting serialized objects
 
 If you have a file with a serialized object, you can use this Beanshell in the [Script Editor](/scripting/script-editor) to open a tree view of the object (double-click to open/close the branches of the view):
 
@@ -293,15 +284,13 @@ If you have a file with a serialized object, you can use this Beanshell in the [
         Object_Inspector.openFrame("classifier", object);
     }
 
-Debugging Swing (Event Dispatch Thread) issues
-==============================================
+# Debugging Swing (Event Dispatch Thread) issues
 
 Swing does not allow us to call all the methods on all UI objects from wherever we want. Some things, such as *setVisible(true)* or *pack()* need to be called on the Event Dispatch Thread (AKA EDT). See Sun's [detailed explanation](http://java.sun.com/products/jfc/tsc/articles/threads/threads1.html) as to why this is the case.
 
 There are a couple of ways to test for such EDT violations, see [this blog post by Alexander Potochkin](http://weblogs.java.net/blog/alexfromsun/archive/2006/02/debugging_swing.html) (current versions of debug.jar can be found [here](http://java.net/projects/swinghelper/sources/svn/show/trunk/www/bin)).
 
-Debugging Java3D issues
-=======================
+# Debugging Java3D issues
 
 When Java3D does not work, the first order of business is to use {% include bc path='Plugins | Utilities | Debugging | Test Java3D'%}. If this shows a rotating cube, but the [3D Viewer](/plugins/3d-viewer) does not work, please click on {% include bc path='Help | Java3D Properties...'%} in the [3D Viewer](/plugins/3d-viewer)'s menu bar.
 
@@ -355,8 +344,7 @@ This list of Java 3D properties was salvaged from the now-defunct j3d.org websit
 OpenGL Only</p></td><td></td><td></td><td></td></tr><tr class="even"><td><p>j3d.backgroundtexture</p></td><td><p>true or false</p></td><td><p>1.3</p></td><td><p>Prior to Java3D 1.3 OGL version of Java3D used glDrawPixels() to render background, which is known to be very slow under Windows since most window driver did not accelerate the function. To workaround this performance problem current release uses textures for the backgrond under windows by default (glDrawPixels() is used as default under Solaris). Setting this flag to false will force Java3D fall back to use glDrawPixels() instead of texture when drawing background texture in case it provide better performance under some drivers.</p></td></tr><tr class="odd"><td><p>j3d.disableSeparateSpecular</p></td><td><p>true or false</p></td><td><p>1.2</p></td><td><p>Default true enables the use of specular highlights in textures when using OpenGL 1.2.</p></td></tr><tr class="even"><td><p>j3d.disableXinerama</p></td><td><p>true or false</p></td><td><p>1.3</p></td><td><p>Solaris version only. Allows major performance boost when using dual screen environments with the X11 Xinerama extension enabled. To disable this feature you need JDK1.4. Detailed information in the release notes.</p></td></tr><tr class="odd"><td><p>j3d.displaylist</p></td><td><p>true or false</p></td><td><p>1.2</p></td><td><p>Default true to use display lists (an OpenGL performance enhancing feature). False to disable for debugging.</p></td></tr><tr class="even"><td><p>j3d.g2ddrawpixel</p></td><td><p>true or false</p></td><td><p>1.1</p></td><td><p>If false, this will use texture mapping instead of glDrawPixel to flush the graphics2D to the screen. glDrawPixel is not accelerated on some older video cards (windows).</p></td></tr><tr class="odd"><td><p>j3d.sharedctx</p></td><td><p>true or false</p></td><td><p>1.2</p></td><td><p>Default true for Solaris and false for windows. Shared contexts are used in OpenGL for DisplayLists and Texture Objects to improve performance. However some drivers have bugs causing weird rendering artifacts. This can be used to disable their use to see if this is the problem.</p></td></tr><tr class="even"><td><p>j3d.sharedstereozbuffer</p></td><td><p>true or false</p></td><td><p>1.2</p></td><td><p>Some framebuffers only have one Z buffer and share this between the left and right eyes. This may be the reason why they don't have quad buffer but can still support stereo by setting this flag to true.</p></td></tr><tr class="odd"><td><p>j3d.usecombiners</p></td><td><p>true or false</p></td><td><p>1.3</p></td><td><p>Default false, uses the standard OpenGL all environment options. When set to true, it will make use of the Nvidia register combiner extensions to OpenGL for for Texture combine modes such as COMBINE_INTERPOLATE, COMBINE_DOT3. (ie GL_NV_register_combiners instead of standard OpenGL call glTexEnvi(GL_TEXTURE_ENV, ...)). It can be use in case like Dot3 texture when the driver does not support OpenGL extension GL_ARB_texture_env_dot3/GL_EXT_texture_env_dot3 but it supports the GL_NV_register_combiners extension instead.</p></td></tr><tr class="even"><td><p><br />
 DirectX only</p></td><td></td><td></td><td></td></tr><tr class="odd"><td><p>j3d.d3ddevice</p></td><td><p>"emulation" or "hardware" or "tnlhardware" or "reference"</p></td><td><p>1.2</p></td><td><p>Forces the software to use a particular mode for the underlying graphics accelaration. The reference option is only available if you have the Direct3D SDK installed (very unlikely).</p></td></tr><tr class="even"><td><p>j3d.d3ddriver</p></td><td><p>idx</p></td><td><p>1.2</p></td><td><p>For cards like Voodoo that run fullscreen 3D only. idx is the order DirectX enumerates its driver using DirectDrawEnumerateEx(). This number starts at 1. This will force Java3D to use the driver specified by the user (may fail if the driver is not compatible with display). The driver number and details can be found by using the j3d.debug property. For a typical setup of a 3D only card attach to a graphics card in a single monitor system, use idx=2. This will automatically toggle to fullscreen hardware accelerated mode since if the 3D card support 3D only.</p></td></tr><tr class="odd"><td><p>j3d.debug</p></td><td><p>true or false</p></td><td><p>1.1</p></td><td><p>Prints out startup and running information. Useful for finding out information about the underlying hardware setup.</p></td></tr><tr class="even"><td><p>j3d.fullscreen</p></td><td><p>PREFERRED or REQUIRED or UNNECESSARY</p></td><td><p>1.2</p></td><td><p>Option to force Java3D to run in fullscreen mode for video cards that will only use hardware accelaration when using fullscreen (non-windowed) mode, like the older Voodoo series.</p></td></tr><tr class="odd"><td><p>j3d.vertexbuffer</p></td><td><p>true or false</p></td><td><p>1.2</p></td><td><p>false to turn off the use of vertex buffers (a D3D performance enhancing feature equivalent to OpenGL display lists). Some drivers have implementation problems so it might be worth turning this off if you get crashes. Utility Classes</p></td></tr><tr class="even"><td><p>j3d.audiodevice</p></td><td><p>A quote string containing a class name</p></td><td><p>1.3.2</p></td><td><p>SimpleUniverse utility classes. Takes the name of a concrete subclass of com.sun.j3d.audioengines.AudioEngine3DL2 that will be constructed by Viewer.createAudioDevice(). The default value is null, which means that audio is disabled by default for applications that call Viewer.createAudioDevice(). j3d.configURL Unknown 1.3.1 Found in the ConfiguredUniverse class. Functionality unknown currently.</p></td></tr><tr class="odd"><td><p>j3d.io.ImageCompression</p></td><td><p>"None" or "GZIP" or "JPEG"</p></td><td><p>1.3.1</p></td><td><p>Found in the scenegraph I/O package. Functionality unknown currently.</p></td></tr><tr class="even"><td><p>j3d.stereo</p></td><td><p>PREFERRED or REQUIRED</p></td><td><p>1.1</p></td><td><p>Only used by SimpleUniverse. If you roll your own VirtualUniverse, this property is not used. Controls whether you want Java3D to definitely create stereo mode capable canvases or not</p></td></tr><tr class="odd"><td><p>sun.java2d.d3d</p></td><td><p>true or false</p></td><td><p>??</p></td><td><p>Default true. Enable Direct3D in Java 2D (not Java 3D, actually).</p></td></tr><tr class="even"><td><p>sun.java2d.ddoffscreen</p></td><td><p>true or false</p></td><td><p>??</p></td><td><p>Default true. Enable DirectDraw and Direct3D by Java 2D for off screen images, such as the Swing back buffer (not Java 3D, actually).</p></td></tr><tr class="odd"><td><p>sun.java2d.noddraw</p></td><td><p>true or false</p></td><td><p>??</p></td><td><p>Default false. Completely disable DirectDraw and Direct3D by Java 2D (not Java 3D, actually). This avoids any problems associated with use of these APIs and their respective drivers.</p></td></tr></tbody></table>
 
-Interactive debugging using a shared Terminal session
-=====================================================
+# Interactive debugging using a shared Terminal session
 
 For users running Linux and MacOSX computers (or on Windows, [Cygwin](http://www.cygwin.com/) with an openssh server), one can use an SSH tunnel for a debugging session shared between a user and a developer. All that is needed is a shared account on a public SSH server.
 

@@ -8,15 +8,13 @@ artifact: sc.fiji:legacy-imglib1
 {% include imglib1-deprecation-info-box%}
 
 
-Citation
-========
+# Citation
 
 Please note that the ImgLib, as well as other plugins available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
 -   S. Preibisch, P. Tomancak, S. Saalfeld (2010) "Into ImgLib – Generic Image Processing in Java", *ImageJ User and Developer Conference 2010* (1):72-76. [Webpage](http://imagejconf.tudor.lu/program/workshops/preibisch/start) [PDF](http://fly.mpi-cbg.de/preibisch/pubs/imagejpaper2010.pdf)
 
-Introduction
-============
+# Introduction
 
 In ImageJ, images can have a number of types (*8-bit gray*, *8-bit with lookup table*, *16-bit*, *32-bit floating point*, *RGB packed into a 32-bit int*), and up to 5 dimensions. Internally, every image is stored as an array of *channels \* slices \* frames* instances of the class *ImageProcessor*, which in turn stores the pixel values as arrays of *width \* height* values which have the native types *byte*, *short*, etc
 
@@ -28,15 +26,13 @@ The corresponding technique in Java is called *generics* and is available since 
 
 In *imglib*, these issues have been addressed, in a way compatible with Java.
 
-Vocabulary
-==========
+# Vocabulary
 
 <b>Type</b>: The Type class wraps a value, in the same way that the java.lang Integer, Double, Float, etc. wrap a value. The value is not necessarily a primitive (like int, short, long, char, float, double ...) but can be a complex number, base pair, boolean, label, and other non-numerical types.
 
 <b>Outside Strategy</b>: The OutsideStrategy is a method to handle values when requested at a position beyond the boundaries of the image. Typical outside strategies may be to return a constant value, or to mirror the values of the image.
 
-Core ideas of the architecture
-==============================
+# Core ideas of the architecture
 
 Since basic types cannot be passed as parameters to Java generics, and operators cannot be overloaded, all values must be accessed via *Type* instances. *Type* is the base interface for all data types handled by imglib. If you need a new data type to be handled, just make a new class implementing the *Type* interface. There is a convenient abstract class "TypeImpl" that provides default implementations for some common methods.
 
@@ -46,8 +42,7 @@ Especially for large images, which become more and more prevalent, it is interes
 
 In addition to adapters wrapping ImageJ's ImagePlus, *imglib* currently supports two container types: a container wrapping an image as a linearized array of a basic type (available in the *mpicbg.imglib.array* package) and a container wrapping the image as so-called *cells*, which are sort of n-dimensional "tiles" (in 3D, would be a cube). The latter container is available in the package *mpicbg.imglib.container.cell* and has the advantage to be "pageable", i.e. not the complete image has to be loaded into memory at the same time, allowing for images larger than the available RAM. This is comparable, but more powerful, than ImageJ's VirtualStack concept.
 
-Example
-=======
+# Example
 
 Let's look at a simple function multiplying every pixel value with a given constant.
 
@@ -108,8 +103,7 @@ In plain ImageJ, the same function looks like the following. Notice how we have 
 
 The performance is better in the *ImgLib* version, as there is no need for two type conversions in every iteration: the Type instance implements the native operation *mul()*, and since the implementation is labeled using the Java keyword *final*, it will be inlined and optimized pretty quickly by Java's Just-In-Time compiler. Furthermore it will work on any ComplexType (even for example real numbers) that are available or will be implemented in the future.
 
-Tutorials and howtos
-====================
+# Tutorials and howtos
 
 -   [Using Imglib in a plugin](/imglib1/using-in-a-plugin)
 -   [Imglib: iterating through pixel data](/imglib1/iterating-through-pixel-data)

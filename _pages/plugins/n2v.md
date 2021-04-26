@@ -15,8 +15,7 @@ See the paper for a detailed description of the algorithm.
 
 This FIJI plugin is part of CSBDeep. A set of open source neural network algorithms in FIJI. For more information, examples and images, click [here](https://csbdeep.bioimagecomputing.com/tools/n2v/).
 
-Publication: Noise2Void - Learning Denoising from Single Noisy Images
-=====================================================================
+# Publication: Noise2Void - Learning Denoising from Single Noisy Images
 
 **Abstract**
 
@@ -24,8 +23,7 @@ The field of image denoising is currently dominated by discriminative deep learn
 
 **[Full-text](https://arxiv.org/abs/1811.10980)**
 
-Installation
-============
+# Installation
 
 1.  Start ImageJ / Fiji
 2.  Open the updater via `Help > Update...`
@@ -39,8 +37,7 @@ You should now have access to these plugins:
 
 ![Available N2V plugins](/media/N2v-plugins.png "Available N2V plugins")
 
-Usage
-=====
+# Usage
 
 ## Training
 
@@ -127,8 +124,7 @@ Alternatively, you can <b>use the N2V menu</b>: {% include thumbnail src='/media
 3.  Click `Plugins > N2V > N2V predict` and adjust the parameters as described above, with this addition:
     -   <b>`Trained model file`</b> The ZIP file containing the pretrained model (it should end with `.bioimage.io.zip`)
 
-Exporting trained models from Python to ImageJ / Fiji
-=====================================================
+# Exporting trained models from Python to ImageJ / Fiji
 
 It's possible to train a Noise2Void neural network using Python. The required code and instructions can be found [here](https://github.com/juglab/n2v). The model that has been trained in Python, can be used in FIJI as well:
 
@@ -136,8 +132,7 @@ It's possible to train a Noise2Void neural network using Python. The required co
 2.  Locate the exported model file
 3.  Proceed as described in [Prediction](#Prediction)
 
-How to handle macros / scripts / models from the first early release of N2V for Fiji
-====================================================================================
+# How to handle macros / scripts / models from the first early release of N2V for Fiji
 
 Thank you for testing the first early release version! Here is what changed, if that does not help you getting already trained models or scripts running, please write a post in the forum!
 

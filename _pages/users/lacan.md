@@ -7,5 +7,4 @@ affiliation: EPFL
 github: lacan
 ---
 
-Olivier Burri
-=============
+# Olivier Burri

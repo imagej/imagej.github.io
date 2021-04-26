@@ -8,8 +8,7 @@ In the [ImageJ](/about) and related [SciJava](SciJava) projects, we make extensi
 
 Here are a few tips how to interact via GitHub more effectively:
 
-Referring to source code
-========================
+# Referring to source code
 
 GitHub offers really powerful ways to refer to specific lines of code. And not only that, it also offers powerful ways to find those specific lines of code to begin with.
 
@@ -36,13 +35,11 @@ Sometimes, a commit will mix whitespace changes with other changes, making the f
 -   On the command-line, Git [understands the `-w` flag](https://github.com/git/git/blob/v2.1.3/Documentation/diff-options.txt#L466-L470) to ignore whitespace changes.
 -   GitHub provides the same functionality, too: just append `?w=1` to the URL (or `&w=1` if there are already GET parameters).
 
-Editing files
-=============
+# Editing files
 
 If you want to modify some file's contents and you are certain that the changes do not need to be tested locally, you can hit the `Edit` button on the upper right corner after navigating to the file in question (in case you don't have *Push* permission on the repository in question, this will *fork* the project at the same time). This will let you edit the file online and commit the changes after providing a commit message (you should still try to write a [meaningful commit message](/develop/coding-style#scm-history), of course).
 
-Working with Pull Requests
-==========================
+# Working with Pull Requests
 
 Pull Requests are a really neat way to work together. The idea is that Git makes it very easy and efficient to clone a project's entire revision history, develop a bit, and then offer the improvements in a manner that is easy for the original project's developers to merge.
 

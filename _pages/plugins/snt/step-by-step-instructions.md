@@ -7,8 +7,7 @@ categories: SNT, tutorials
 {% include sntnavbar%}
 
 
-Tracing
-=======
+# Tracing
 
 These instructions assume that you have read the [Overview](/plugins/snt/manual) page, including starting up the plugin, enabling [Cursor Auto-snapping](/plugins/snt/manual#auto-snapping), and [Auto-tracing](/plugins/snt/manual#auto-tracing) options. This section is also documented in a [Screencast](/plugins/snt/screencasts#introduction-to-tracing).
 
@@ -106,8 +105,7 @@ To open the viewer, select the *3D* menu tab in the SNT dialog and look for *Leg
 
 Once you have selected each of these tools (Wand and Hand) once, you should be able to switch between them by pressing the {% include key content='Esc' %} key. See [Key Shortcuts](/plugins/snt/key-shortcuts#legacy-3d-viewer) for the list of all supported shortcuts. ![](/media/Fiji-toolbar-wand-and-hand-2.png "fig:Fiji-toolbar-wand-and-hand-2.png")
 
-Filling
-=======
+# Filling
 
 There is a simple facility in this plugin for "filling out" paths to volumes. This is not particularly sophisticated, but often good enough for a rough visualization of the shape of a neuron beyond what can be seen from the traced path.
 
@@ -154,8 +152,7 @@ If you are happy with this, then you might as well click "Pause" so that your co
 
 The image stack you would get from the image used in this example might look something like this: <img src="/media/Snt-filling-viewed-2.png" title="fig:Having selected the &quot;Image Stack... -&gt; As Grayscale Image...&quot; option" width="500" alt="Having selected the &quot;Image Stack... -&gt; As Grayscale Image...&quot; option" />
 
-Generating *Filtered Images*
-============================
+# Generating *Filtered Images*
 
 This section describes how to generate [Filtered Images](/plugins/snt/manual#tracing-on-filtered-image) outside SNT. Note that the filtering used in this walk-through (*[Frangi](/plugins/frangi) Vesselness*) is already supported directly by SNT. This tutorial will assume you need to perform the filtering with adjusted parameters.
 
@@ -304,8 +301,7 @@ The same process can be accomplished more completely in a script using [ImageJ O
 
     run()
 
-Accurate Point Placement
-========================
+# Accurate Point Placement
 
 This section describes methods to increase the accuracy of node placement.
 

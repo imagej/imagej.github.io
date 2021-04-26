@@ -4,8 +4,7 @@ title: Hackathon
 categories: Hackathons, community
 ---
 
-What is a hackathon?
-====================
+# What is a hackathon?
 
 In the context of ImageJ, a {% include wikipedia title='Hackathon' text='hackathon'%} is a coding spree, or if you want, a one or two-week brainstorm session where scientists with programming skills sit together and work in a low-distraction, high-energy environment to advance the software side of their research. Typically, results get accomplished much faster (read: days instead of weeks or months) than without hackathons, because the setting is ideal to discuss advanced ideas with similar-thinking scientists and ideas can sprout much faster. Sometimes, results are achieved that would not have been possible without a hackathon at all.
 
@@ -16,15 +15,13 @@ In the context of ImageJ, a {% include wikipedia title='Hackathon' text='hackath
 
 </div>
 
-Why?
-====
+# Why?
 
 First and foremost, hackathons are <u>fun</u>. The participants like what they are working on, and rarely have the same opportunities to talk to and inspire each other about their ongoing research.
 
 Also, hackathons are the perfect excuse to concentrate on a particular subject without distractions. A *lot* gets done at a hackathon (see right!).
 
-Origin of the term *hackathon*
-==============================
+# Origin of the term *hackathon*
 
 The term comes from the original meaning of {% include wikipedia title='Hack %28technology%29' text='hack'%}, i.e. a clever and unforeseen way to use or improve a technical system.
 
@@ -34,8 +31,7 @@ Ever since, OpenBSD held annual hackathons during which OpenBSD was improved in 
 
 In 2007, the first hackathon revolving around neuro-science was taking place at [HHMI Janelia Research Campus](https://janelia.org/). In a sense, it can be seen as the first Fiji hackathon, since Fiji was born in the wake of that hackathon, and probably would not have happened without it.
 
-ImageJ hackathons
-=================
+# ImageJ hackathons
 
 ImageJ has benefitted from many hackathons over the years:
 

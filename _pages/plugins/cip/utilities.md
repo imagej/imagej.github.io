@@ -7,8 +7,7 @@ This page provides user documentation for the utility functions of the [CIP](/pl
 
 {% include cip content='Navigation' %}
 
-**measure**
-===========
+# **measure**
 
 <span style="font-size:110%">**Description**</span>  
 This function performs measures in image and region and return them as a table.
@@ -38,8 +37,7 @@ In the first line labelMap is the left image in the illustration below. In the s
 <span style="font-size:110%">**Implementation**</span>  
 The measure function instanciate a toolbox adapted for the object to measure. the toolbox can receive new measures tools to extend the existing measure set.
 
-**show**
-========
+# **show**
 
 <span style="font-size:110%">**Description**</span>  
 show display CIP data within IJ1 component: hyperstack viewer, results table and log window. this ensures easy communication and reuse of the data by the rest of imageJ ecosystem.
@@ -101,8 +99,7 @@ An example script displaying tracks can found [here](https://github.com/benoalo/
 <span style="font-size:110%">**Implementation**</span>  
 The show function relies on IJ1 component as a starting point as this is the way data are displayed when downloading a fresh version of Fiji. this also ensure that this data can easily be seen and processed the usual way by any imageJ plugins.
 
-**region**
-==========
+# **region**
 
 <span style="font-size:110%">**Description**</span>  
 This function is a converter is that IJ1 or IJ2 object and convert them to CIP regions.
@@ -118,8 +115,7 @@ This function is a converter is that IJ1 or IJ2 object and convert them to CIP r
 <span style="font-size:110%">**Output**</span>  
     **region**: a region if the input is boolean a list of region otherwise.
 
-**toIJ1**
-=========
+# **toIJ1**
 
 <span style="font-size:110%">**Description**</span>  
 Is a converter that converts image to ImagePlus and CIP regions to rois.
@@ -139,8 +135,7 @@ Is a converter that converts image to ImagePlus and CIP regions to rois.
     **IJ1\_image** : and ImagePlus version of the input image  
     **IJ1\_rois** : a list of list of Rois. each of the input region will be represented by a list of Rois where each Roi is the contour of a 2d section through the region.
 
-**toIJ2**
-=========
+# **toIJ2**
 
 <span style="font-size:110%">**Description**</span>  
 Converts an image (of any type handled by CIP) to an IJ2 Dataset and a region (of any type handled by CIP) to an Imglib2 IterableRegion.
@@ -160,8 +155,7 @@ Converts an image (of any type handled by CIP) to an IJ2 Dataset and a region (o
     **IJ2\_image**: an image of type Dataset  
     **IJ2\_region**: a list of Iterable region
 
-**spacing**
-===========
+# **spacing**
 
 <span style="font-size:110%">**Description**</span>  
 Retrieves the pixel size of the input image
@@ -174,8 +168,7 @@ Retrieves the pixel size of the input image
 <span style="font-size:110%">**Output**</span>  
     **pixelSize** : a list of scalars representing the input image pixel size along each image dimension  
 
-**unit**
-========
+# **unit**
 
 <span style="font-size:110%">**Description**</span>  
 Retrieves the units of the input image
@@ -188,8 +181,7 @@ Retrieves the units of the input image
 <span style="font-size:110%">**Output**</span>  
     **units** : a list of string representing the input image unit along each image dimension  
 
-**axes**
-========
+# **axes**
 
 <span style="font-size:110%">**Description**</span>  
 Retrieves the axes names of the input image
@@ -202,8 +194,7 @@ Retrieves the axes names of the input image
 <span style="font-size:110%">**Output**</span>  
     **axesName** : a list of string representing the input image axes names along each image dimension  
 
-**list**
-========
+# **list**
 
 <span style="font-size:110%">**Description**</span>  
 utility functions creating a Java list of object from a list of object.
@@ -219,7 +210,6 @@ The function was created for a technical reason. In Jython passing a list to CIP
     `a list of scalar = cip.list( [string1 , string2, ...] )`  
     converts a list of string to a java list of string
 
-**help**
-========
+# **help**
 
 TODO

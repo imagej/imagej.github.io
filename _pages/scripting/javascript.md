@@ -7,13 +7,11 @@ categories: Scripting
 
 {% include wikipedia title='JavaScript' text='JavaScript'%} is a high-level, dynamic, untyped programming language, supporting multiple paradigms including object-oriented, imperative and functional programming styles. Although there are similarities between JavaScript and [Java](/develop/plugins), including language name and syntax, the two are distinct languages and differ greatly in their design.
 
-A note about JavaScript engines
-===============================
+# A note about JavaScript engines
 
 ImageJ supports JavaScript via Java's built-in {% include wikipedia title='Nashorn (JavaScript engine)' text='Nashorn JavaScript engine'%}. Versions of Java before Java 8 instead included Mozilla's {% include wikipedia title='Rhino (JavaScript engine)' text='Rhino JavaScript engine'%}. The two engines are largely, but not completely, compatible—meaning that some older scripts written for older versions of ImageJ (which used Rhino) may no longer function correctly when run with current ImageJ versions (which use Nashorn).
 
-JavaScript tutorial for ImageJ
-==============================
+# JavaScript tutorial for ImageJ
 
 ## Language basics
 
@@ -832,8 +830,7 @@ Despite the simple example below, the <i>multithreader</i> framework function al
 
 See the complete file here: {% include github repo='fiji' path='plugins/Examples/Multithreaded\_Image\_Processing\_in\_Javascript.js' label='Multithreaded\_Image\_Processing\_in\_Javascript.js' %}
 
-Links
-=====
+# Links
 
 -   [Tutorial](http://www.mozilla.org/rhino/tutorial.html) at Mozilla Rhino webpages (Java 6).
 -   [Scripting Java with JavaScript](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino/Scripting_Java) (Java 6).

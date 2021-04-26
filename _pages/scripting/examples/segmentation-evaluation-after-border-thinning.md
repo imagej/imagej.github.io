@@ -4,8 +4,7 @@ title: Segmentation evaluation after border thinning - Script
 categories: Segmentation,Scripting
 ---
 
-Introduction
-============
+# Introduction
 
 The following [Beanshell script](/scripting/beanshell) allows you to evaluate the performance of your [segmentation](Category_Segmentation) method after thinning the borders of the image segments to 1-pixel width.
 
@@ -18,8 +17,7 @@ Retrospective evaluation of the original [ISBI-2012 segmentation challenge](http
 
 Further details about the metrics can be found in the [challenge publication](http://journal.frontiersin.org/article/10.3389/fnana.2015.00142/abstract).
 
-Use
-===
+# Use
 
 Just copy/paste it in the [Script Editor](/scripting/script-editor) or save it into a .bsh file and run it ({% include bc path='File | Open'%}):
 
@@ -123,8 +121,7 @@ After clicking OK the metrics will be applied and the results will be shown in t
 
 ![](/media/Script-segmentation-evaluation-thinning-log.png "Script-segmentation-evaluation-thinning-log.png")
 
-References
-==========
+# References
 
 -   Ignacio Arganda-Carreras, Srinivas C. Turaga, Daniel R. Berger, Dan Ciresan, Alessandro Giusti, Luca M. Gambardella, Jürgen Schmidhuber, Dmtry Laptev, Sarversh Dwivedi, Joachim M. Buhmann, Ting Liu, Mojtaba Seyedhosseini, Tolga Tasdizen, Lee Kamentsky, Radim Burget, Vaclav Uher, Xiao Tan, Chanming Sun, Tuan D. Pham, Eran Bas, Mustafa G. Uzunbas, Albert Cardona, Johannes Schindelin, and H. Sebastian Seung. [Crowdsourcing the creation of image segmentation algorithms for connectomics](http://journal.frontiersin.org/article/10.3389/fnana.2015.00142/abstract). Frontiers in Neuroanatomy, vol. 9, no. 142, 2015.
 

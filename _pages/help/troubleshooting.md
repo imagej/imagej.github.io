@@ -7,8 +7,7 @@ section: Help
 
 
 
-How to troubleshoot problems
-============================
+# How to troubleshoot problems
 
 ## Checking the Java version
 
@@ -113,8 +112,7 @@ If you are feeling investigative, you can try [launching ImageJ from the console
 
 If you are technically savvy, check out the [Debugging](/develop/debugging) page for additional—but more complicated—debugging techniques.
 
-Common issues
-=============
+# Common issues
 
 ## The image I loaded is displayed all black! But it is not black!
 
@@ -176,8 +174,7 @@ While ImageJ strives for [reproducible](/develop/architecture#reproducible-build
     -   Try the analysis *headless* vs. through the GUI on a single machine, and see if the results match.
     -   If the results differ due to headlessness, it is a bug—please [report it](/help/report-a-bug)!
 
-Common error messages
-=====================
+# Common error messages
 
 ## OutOfMemoryError
 
@@ -240,8 +237,7 @@ These errors indicate a "version skew" between the software libraries in your Im
 
 The proper fix is for the maintainers of those update sites to reconcile the versions somehow, but as a user you can work around the issue in the meantime by disabling the problematic update site(s). Start from a fresh download of ImageJ, enabling the update sites you want one by one, testing your workflow each time. Once you determine which update site(s) causes the issue, you can create a separate copy of ImageJ with only the problematic site(s) enabled. Although you will no longer have a single ImageJ with all desired functionality enabled, keeping isolated installations will let you continue using all the plugins you need by launching each appropriate copy of ImageJ.
 
-OS X issues
-===========
+# OS X issues
 
 ## Why does ImageJ run so slowly?
 

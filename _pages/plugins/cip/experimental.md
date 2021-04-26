@@ -7,8 +7,7 @@ This page provides user documentation for some experimental functions of the [CI
 
 {% include cip content='Navigation' %}
 
-**track**
-=========
+# **track**
 
 <span style="font-size:110%">**Description**</span>  
 This function allow to track the region defined in a list of label map image and return a measures table describing the tracks.

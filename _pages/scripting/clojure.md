@@ -7,8 +7,7 @@ categories: Scripting
 
 {% include wikipedia title='Clojure' text='Clojure'%} is a dialect of the {% include wikipedia title='Lisp (programming\_language)' text='Lisp programming language'%}. Clojure is a general-purpose programming language with an emphasis on functional programming.
 
-Clojure tutorial for ImageJ
-===========================
+# Clojure tutorial for ImageJ
 
 Check out [clojure web site](http://clojure.org) and particularly the chapter on [Java interoperability](http://clojure.org/java_interop).
 

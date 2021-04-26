@@ -11,8 +11,7 @@ section: Development:Guides
 
 The SciJava [philosophy](/develop/philosophy) is to [release early, release often](/develop/philosophy#release-early-release-often). At the same time, we always want to preserve [scientific reproducibility](/develop/architecture#reproducible-builds). To make this possible we lean on several [project management](/develop/project-management) tools. The purpose of this guide is to take you through the process of using these tools with the goal of releasing new versions of your software, and then providing those releases to users.
 
-Phases of development
-=====================
+# Phases of development
 
 [ImageJ](/about) and [Fiji](/fiji) are developed according to the [SciJava philosophy](/develop/philosophy), thus these applications are used throughout this tutorial to illustrate the development lifecycle.
 
@@ -37,8 +36,7 @@ Artifacts are files, most commonly a **{% include wikipedia title='JAR\_%28file\
 
 The following sections will discuss these phases, and their associated tools and workflows, in more depth.
 
-Relationship with Maven SNAPSHOTs
-=================================
+# Relationship with Maven SNAPSHOTs
 
 Another way of thinking about the development cycle is through the Maven version number given associated with the code. The idea behind reproducible builds is that from a given version of a plugin, the state of the code producing that version can be determined unambiguously. Typically, that state is determined by a unique [Git](/develop/git) commit. However, it would be impractical and unrealistic to change the Maven version with every single Git commit.
 
@@ -46,8 +44,7 @@ This is why [SNAPSHOT](https://docs.oracle.com/middleware/1212/core/MAVEN/maven_
 
 To provide users with an updated version of an artifact (phases 3, 4 and 5) the version is changed to a unique, non-SNAPSHOT, version for a single Git commit. Then the next commit returns to SNAPSHOT versioning for further development. Thus the cycle repeats.
 
-Phases in-depth
-===============
+# Phases in-depth
 
 {% include box float='right' title='When to use a topic branch?' text='[Core SciJava components](/develop/architecture) employ a "release ready master branch" approach:
 
@@ -155,8 +152,7 @@ If you do manage [your own update site](/update-sites/setup), you can upload you
 
 See the [documentation on update sites](/update-sites) for further instructions.
 
-Further reading
-===============
+# Further reading
 
 -   The SciJava [versioning guidelines](/develop/architecture#versioning) will help you choose appropriate version numbers for your software when performing Maven releases.
 

@@ -46,8 +46,7 @@ Test LimeSeg is a modular 3D segmentation plugin. It is a particle-based active 
 
 LimeSeg can be used with simple commands provided by the plugin (under {% include bc path="Plugins|LimeSeg" %} in ImageJ menu), or on a more advanced manner with scripting capabilities of ImageJ (macro commands of ImageJ1 or preferentially with [groovy scripts](/scripting/groovy)).
 
-Commands : basic usage
-======================
+# Commands : basic usage
 
 ## Single object segmentation
 
@@ -215,8 +214,7 @@ Should be used cautiously : this erases all objects segmented by LimeSeg so far.
 
 So far LimeSeg provides its own 3D vizualizer. The 3D viewer looks at a specific point in 3D. Arrows keyboard allow to move this central point. Mouse dragging allows to rotate around this point. Zoom/zoom out can be done with the mouse wheel.
 
-Advanced usage
-==============
+# Advanced usage
 
 ## Graphical user interface
 
@@ -372,8 +370,7 @@ The other parameters can be modified within the 3D View Panel. In LimeSeg GUI, t
 
 8 : If an optimization is occuring, the optimized dots are displayed (green, dots which have converged, red, dots which have not converged).
 
-Script examples
-===============
+# Script examples
 
 Example scripts (ImageJ1 and groovy) are available here:
 

@@ -4,8 +4,7 @@ title: Voxelization
 categories: Techniques, tutorials
 ---
 
-Voxelization
-============
+# Voxelization
 
 Voxelization is the process of converting a data structures that store geometric information in a continuous domain (such as a 3D triangular mesh) into a rasterized image (a discrete grid).
 

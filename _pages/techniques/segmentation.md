@@ -9,8 +9,7 @@ categories: Tutorials,Segmentation
 
 {% include tip tip='See [this helpful workshop on Image Segmentation](/media/Arganda-Carreras-Segmentation-Bioimage-course-MDC-Berlin-2016.pdf) for another great overview of Segmentation!' %}
 
-Introduction
-============
+# Introduction
 
 Image segmentation is "the process of partitioning a digital image into multiple segments." ({% include wikipedia title='Image segmentation' text='Wikipedia'%})
 
@@ -20,8 +19,7 @@ It is typically used to locate *objects* and *boundaries*.
 
 More precisely, image segmentation is the process of *assigning a label* to every pixel in an image such that pixels with the same label share certain visual characteristics.
 
-Easy workflow
-=============
+# Easy workflow
 
 One plugin which is designed to be very powerful, yet easy to use for non-experts in image processing:
 
@@ -29,8 +27,7 @@ One plugin which is designed to be very powerful, yet easy to use for non-expert
 
 Give it a try—you might like it!
 
-Flexible workflow
-=================
+# Flexible workflow
 
 One good workflow for segmentation in ImageJ is as follows:
 
@@ -100,8 +97,7 @@ Do some numerical analysis on the selected data:
 -   Use the [ROI Manager](/ij/docs/guide/146-30.html#fig:The-ROI-Manager) to **Add** the selection and then **Split** it (under the **More** button), then use **Multi Measure** (also under **More**) to report statistics on the objects.
 -   [Write a macro](/scripting/macro) to automate this sort of analysis, loop over objects in the ROI manager, measure and manipulate them, etc.
 
-See also
-========
+# See also
 
 -   The [Introduction to Image Segmentation using ImageJ/Fiji](/media/Arganda-Carreras-Segmentation-Bioimage-course-MDC-Berlin-2016.pdf) workshop.
 -   The [Segmentation with Fiji workshop slides](/presentations/fiji-segmentation/).

@@ -5,8 +5,7 @@ title: Javassist
 
 [Javassist](http://www.javassist.org) is a Java library to generate, modify and inspect bytecode (i.e. the machine language of Java).
 
-Quick example
-=============
+# Quick example
 
 Let's assume that you want to know which call paths lead to a given method (e.g. *foo()*) in a given class (e.g. *org.soft.micro.Narf*).
 
@@ -26,8 +25,7 @@ Other useful actions include inspecting the parameters passed to the method whic
 
 Further reading: Javassist's [online tutorial](http://www.csg.is.titech.ac.jp/~chiba/javassist/tutorial/tutorial.html).
 
-Code editing
-============
+# Code editing
 
 While Javassist allows to edit bytecode directly, its most powerful feature is that it allows you to modify methods using snippets of Java code. There are two slightly different methods to do so: the [CodeConverter](http://www.csg.ci.i.u-tokyo.ac.jp/~chiba/javassist/html/index.html) and the [ExprEditor](http://www.csg.ci.i.u-tokyo.ac.jp/~chiba/javassist/html/javassist/expr/ExprEditor.html) (it depends which one to use, *CodeConverter* is easier to use but *ExprEditor* is more powerful.
 
@@ -49,8 +47,7 @@ A common reason for Javassist'ing code is to handle previously unhandled excepti
 
 Note that the special `$_ = $proceed($$)` is a Javassist-specific syntax referring to the original code. See [the Javassist tutorial](http://www.csg.ci.i.u-tokyo.ac.jp/~chiba/javassist/tutorial/tutorial2.html#before) for details.
 
-Debugging
-=========
+# Debugging
 
 Javassist has very useful tools for disassembly and introspection. For example, you could inspect the contents of a class using some code like this:
 
@@ -74,8 +71,7 @@ Or you could disassemble a method like this:
 
 If you absolutely do not want the output to go to *System.err*, you could substitute it by *new PrintStream(new IJLogOutputStream())* (the class *IJLogOutputStream* is defined in [Fiji Updater](/plugins/updater)'s *fiji.updater.util* class for you to reuse).
 
-VerifyError
-===========
+# VerifyError
 
 For security reasons, HotSpot does not allow any malformed bytecode to execute. To verify that the bytecode is reasonably sane, the code is *verified* before being executed.
 

@@ -4,8 +4,7 @@ title: How to make a new tutorial
 categories: Tutorials
 ---
 
-How to make a new tutorial
-==========================
+# How to make a new tutorial
 
 In Fiji, we have a plugin whose only purpose is to write tutorials to be published on the Wiki. This plugin was used to make this tutorial, so in a sense, the plugin was written to document its own usage.
 
@@ -82,8 +81,7 @@ When everything is good to go, upload the tutorial:
 
 This will upload all the images (asking you how to proceed when an image exists already in the Wiki) and upload the text. The final page will be opened in your default web browser, and the *Snapshot* and *Editor* windows will be closed.
 
-Tip: use two different Fiji instances
-=====================================
+# Tip: use two different Fiji instances
 
 As the graphical user interface allows to open modal dialogs which block input to any other window in the same application (including the *Tutorial Maker* windows), it is often wise to open a second Fiji instance in which you start the *Tutorial Maker*.
 

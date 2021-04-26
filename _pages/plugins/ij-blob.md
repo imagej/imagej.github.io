@@ -68,8 +68,7 @@ The [Shape Filter](/plugins/shape-filter) plugin uses the ij-blob library to cha
 -   **Orientation**: The orientation of the major axis from in grad (measured counter clockwise from the positive x axis).
 -   **Fractal Box Dimension**: Estimated fractal dimension by the box count algorithm. The default box-sizes are "2,3,4,6,8,12,16,32,64".
 
-Examples
-========
+# Examples
 
 ## Example 1: Extract the connected components of an image and read the perimeter of a blob
 
@@ -151,8 +150,7 @@ Convert the outer contour to a ROI and add it to the ROI manager:
         roiManager.add(imp, roi, i);
     }
 
-Who used this plugin?
-=====================
+# Who used this plugin?
 
 This is a list of publication who used ijblob / shape filter plugin:
 

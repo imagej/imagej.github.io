@@ -6,13 +6,11 @@ categories: Tutorials
 
 {% include ambox text='This is an old tutorial on how to call the [Sholl Analysis](/plugins/sholl-analysis) plugin from [Simple Neurite Tracer](/plugins/snt). **It is rather outdated. More up-to-date information is provided in [SNT: Analysis](/plugins/snt/analysis#sholl-analysis).** For an overview of the technique refer to the [Sholl Analysis](/plugins/sholl-analysis) documentation page.' %}
 
-Introduction
-============
+# Introduction
 
 This tutorial assumes that you've already traced an image with Simple Neurite Tracer (SNT) and that you are familiar with the [variants of Sholl methods](/plugins/sholl-analysis#methodstable) and the [Sholl Analysis](/plugins/sholl-analysis) plugin. This tutorial will use an olfactory projection fibre image, freely available from the [Diadem challenge data set](http://www.diademchallenge.org/olfactory_projection_fibers_readme.html).
 
-Retrieving Profiles
-===================
+# Retrieving Profiles
 
 When you've loaded the traces, that should look something like this: <img src="/media/Simple Neurite Tracer- Sholl analysis-1.jpg" title="fig:" width="500" />
 
@@ -26,15 +24,13 @@ Consider the first two options: you should probably select the top option *Use a
 
 This graph shows exactly how many times a sphere of a particular radius will intersect with paths (i.e., *continuos sampling*). To consider spheres of evenly spaced radii (see definition of [Step size](/plugins/sholl-analysis#stepsize)), you have to enter a value into the *Radius step size* box. E.g., <img src="/media/Simple Neurite Tracer- Sholl analysis-7.jpg" title="fig:" width="500" />
 
-Data Normalization
-==================
+# Data Normalization
 
 If you need to preview the effect of [normalizing](/plugins/sholl-analysis#methodstable) the number of intersections by the volume (or area) enclosed by the sphere (or circle) - you can do that by selecting the *Normalize for volume enclosed by circle* option: <img src="/media/Simple Neurite Tracer- Sholl analysis-8.jpg" title="fig:" width="500" />
 
 The *Use standard axes* / *Use semi-log axes* / *Use log-log axes* controls whether the analysis is based on the log of normalized intersections and distance (*log-log*), the log of normalized intersections (*semi-log*) or unmodified values (linear axes) (see [Sholl Plots](/plugins/sholl-analysis#sholl-plots) for details. Note that the [Regression coefficient](/plugins/sholl-analysis#sholldecay) is always calculated in real time even if no normalization options are chosen.
 
-Exporting Profiles
-==================
+# Exporting Profiles
 
 You can export profiles by clicking on "Save Profile" which will prompt for a CSV filename to save to. If you want to export the profile, so that you can edit in some other software or include it in a presentation, you can select *Export graph as SVG* in the graph window. You can then load the SVG file (e.g., in Inkscape):
 
@@ -47,13 +43,11 @@ You can export profiles by clicking on "Save Profile" which will prompt for a CS
 {% include clear%}
 
 
-Analyzing Profiles
-==================
+# Analyzing Profiles
 
 Press *Analyze Profile* to run the [Sholl Analysis](/plugins/sholl-analysis) plugin. Once [Parameters](/plugins/sholl-analysis#parameters) have been specified, the plugin will [automatically calculate](/plugins/sholl-analysis#dratio) the normalization method thought to be the most informative. Metrics will be displayed in a [detailed table](/plugins/sholl-analysis#metrics). {% include tip tip='You can perform batch analysis using [\_\_\_SHADOW1\_\_\_](/plugins/sholl-analysis#analysis-of-existing-profiles) or [\_\_\_SHADOW2\_\_\_](/plugins/sholl-analysis#analysis-of-traced-cells)' %}
 
-Sholl Image
-===========
+# Sholl Image
 
 Another option that might be useful is *Make Sholl image*, equivalent to the [Intersections mask](/plugins/sholl-analysis#output-options) created by the [Sholl Analysis](/plugins/sholl-analysis) plugin when parsing images directly. This will produce a stack which shows the number of intersections at each distance from the centre point on a colour scale. You can see the exact number of intersections corresponding to a colour by mousing over that region and looking in the status bar. For example, this shows you that the orange colour corresponds to 2 intersections ("value=2"): <img src="/media/Simple Neurite Tracer- Sholl analysis-12.jpg" title="fig:" width="500" />
 

@@ -10,8 +10,7 @@ Open the "Plugins - Scripting - Jython Interpreter" (see [Scripting Help](/scrip
 
 Or open a new [Script Editor](/scripting/script-editor) window with "File - New - Script", then paste the example, select the "Language - Python", and push the "Run" button.
 
-Introduction to scripting TrakEM2
-=================================
+# Introduction to scripting TrakEM2
 
 Some basics:
 
@@ -228,8 +227,7 @@ Documentation you may want to look at: [Project.newFSProject](https://fiji.sc/ja
 
     print "Done!"
 
-Manipulating Displayable objects
-================================
+# Manipulating Displayable objects
 
 ### Resetting the affine transform of all images in a Layer
 
@@ -356,8 +354,7 @@ Notice that python (and jython) lets you use object instance methods as first-cl
                      filter(None,
                             map(arealist.getAreaAt, arealist.getLayerRange())))))
 
-Adding images
-=============
+# Adding images
 
 ### Adding a single image to a layer shown in an open display
 
@@ -495,8 +492,7 @@ To create a script with the above code, copy paste it into a file with an unders
     # Invoke the function!
     merge_layers()
 
-Measure
-=======
+# Measure
 
 ### Measure the minimal distance from each ball to a surface defined by a profile list
 
@@ -593,8 +589,7 @@ A similar measurement may be obtained like the following, if you don't mind typi
 
     print mean, stdDev, median
 
-Interacting with Layers (Sections)
-==================================
+# Interacting with Layers (Sections)
 
 ### Calibrating and setting the Z dimension
 
@@ -637,8 +632,7 @@ To accomplish the same programatically, do the following:
     # Update the GUI
     layerset.getProject().getLayerTree().updateUILater()
 
-Interacting with Treeline, AreaTree and Connector
-=================================================
+# Interacting with Treeline, AreaTree and Connector
 
 All three types: "treeline", "areatree", and "connector" are expressed by homonimous classes that inherit from the abstract class [ini.trakem2.display.Tree](https://fiji.sc/javadoc/ini/trakem2/display/Tree.html).
 
@@ -1037,8 +1031,7 @@ Then, we iterate all nodes of the arbor looking for nodes that have the "neck st
       for neuron in trees:
         measureSpineNecks(neuron)
 
-Interact with a Ball object
-===========================
+# Interact with a Ball object
 
 ## Set the radius of all balls of all Ball objects in a project
 
@@ -1095,8 +1088,7 @@ Interact with a Ball object
 
     t = TextWindow("Balls CSV", csv, 400, 400)
 
-Generate 3D meshes
-==================
+# Generate 3D meshes
 
 In TrakEM2, 3D meshes are generated as a list of [Point3f](http://javadoc.imagej.net/Java3D/index.html?org/scijava/vecmath/Point3f.html) for each object. Then the list is wrapped into any of the subclasses of [CustomMesh](https://fiji.sc/javadoc/customnode/CustomMesh.html) of the 3D Viewer library, such as a [CustomTriangleMesh](https://fiji.sc/javadoc/customnode/CustomTriangleMesh.html) or a [CustomLineMesh](https://fiji.sc/javadoc/customnode/CustomLineMesh.html). Then these mesh objects are encapsulated into a [Content](https://javadoc.scijava.org/ImageJ1/ij3d/Content.html) object and added to an instance of the [Image3DUniverse](https://javadoc.scijava.org/ImageJ1/ij3d/Image3DUniverse.html), which is the main window of the 3D Viewer.
 
@@ -1150,8 +1142,7 @@ Just like for an AreaList (see above), but extract the triangles with:
 
 The [AreaTree](https://fiji.sc/javadoc/ini/trakem2/display/AreaTree.html)'s generateMesh returns a [MeshData](https://fiji.sc/javadoc/ini/trakem2/display/Tree.MeshData.html) object with the list of vertices and the list of colors of each vertex. The <i>generateTriangles</i> method of an [AreaTree](https://fiji.sc/javadoc/ini/trakem2/display/AreaTree.html) returns a list of [Point3f](http://javadoc.imagej.net/Java3D/index.html?org/scijava/vecmath/Point3f.html) that are ready for creating a [CustomLineMesh](https://fiji.sc/javadoc/customnode/CustomLineMesh.html) (in PAIRWISE mode) to represent the skeleton.
 
-Save the project while running a task
-=====================================
+# Save the project while running a task
 
 While a task is running, the right-click menu shows only an entry to cancel the task. To save the project while the task is running, type the following into the [Jython Interpreter](/scripting/jython), and push return to execute it:
 
@@ -1165,8 +1156,7 @@ In the above dialog, you will be able to set the autosaving interval (see the bo
 
 Of course it may be easier to set that autosaving interval <b>before</b> running the long task!
 
-Create a TrakEM2 project for fast visualization, without mipmaps
-================================================================
+# Create a TrakEM2 project for fast visualization, without mipmaps
 
 Create a TrakEM2 project that avoids generating mipmaps, then import lots of images from a text file that has four columns: the file path, the X, the Y, and the section index of each image tile. Then acquire a snapshot of the first section.
 
@@ -1206,8 +1196,7 @@ As a result of the script, a new Project tab will open in the "/plugins/trakem2"
 
     print "done!"
 
-Create a snapshot in 8-bit, 16-bit, 32-bit or RGB
-=================================================
+# Create a snapshot in 8-bit, 16-bit, 32-bit or RGB
 
 From the right-click menu, one may choose "Export - Make flat image", which opens a dialog that lets one choose between 8-bit and RGB. These snapshots are created from the mipmaps, which are all 8-bit or RGB images.
 
@@ -1244,8 +1233,7 @@ Here is an example that, for a given Layer and set of selected Patch instances (
 
 For other output types, use ImagePlus.GRAY8, .GRAY16, GRAY32 or .COLOR\_RGB, as listed in the documentation for the [ImagePlus](https://javadoc.scijava.org/ImageJ1/ij/ImagePlus.html) class.
 
-Enrich the GUI of TrakEM
-========================
+# Enrich the GUI of TrakEM
 
 ### Add an extra tab to a Display
 
@@ -1281,8 +1269,7 @@ Notice that Jython lets you define the methods of event listeners as additional 
     else:
       IJ.showMessage("Open a display first!")
 
-See also
-========
+# See also
 
 ## TrakEM2 tutorials
 

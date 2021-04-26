@@ -7,8 +7,7 @@ categories: SNT
 {% include sntnavbar%}
 
 
-Sholl Analysis
-==============
+# Sholl Analysis
 
 There are two [Sholl Analysis](/plugins/sholl-analysis) commands available in SNT's *Analysis* menu. The {% include bc path='Analysis|Shuoll Analysis...'%} option provides a set of pre-defined focal points the user can choose from. Note for the morphology-based focal points (e.g., *Soma*, *Root node(s): Primary apical dendrite(s)*) , the relevant morphology tag(s) must be assigned to the set of paths considered by the analysis. To select a focal point manually, see the following section.
 
@@ -51,8 +50,7 @@ In addition to the Sholl Profile plot and table, the output of the analysis can 
 
 </div>
 
-Strahler Analysis
-=================
+# Strahler Analysis
 
 To conduct [Strahler Analysis](/plugins/strahler-analysis) on the current contents of the Path Manager, choose the {% include bc path='Utilities|Strahler Analysis'%} command in the main SNT dialog. This command will output the results of the analysis as a table and plot. These figures contain morphometric statistics on the group of paths associated with each Horton-Strahler Number. Note that this feature analyzes traced reconstructions. To run Strahler analysis on images, use the {% include bc path='Analyze|Skeleton|Strahler Analysis...'%} plugin in the main Fiji dialog.
 
@@ -63,8 +61,7 @@ To conduct [Strahler Analysis](/plugins/strahler-analysis) on the current conten
 
 </div>
 
-Path Order Analysis
-===================
+# Path Order Analysis
 
 Found at {% include bc path='Analysis|Path Order Analysis'%} in the main SNT dialog, this option analyzes the Paths in the Path Manager based on [Branch Order](https://www.mbfbioscience.com/help/nx11/Content/Branch%20order/Branch_Order.htm). Produces a table of results and a plot similar to the *Strahler Analysis* option, with morphometric statistics on the group of paths associated with each Branch Order.
 
@@ -75,8 +72,7 @@ Found at {% include bc path='Analysis|Path Order Analysis'%} in the main SNT dia
 
 </div>
 
-Measurements
-============
+# Measurements
 
 <img src="/media/Snt-Measurements-List.png" title="fig:Measure... dialog" width="120" alt="Measure... dialog" /> SNT provides several ways to measure reconstructions. A comprehensive selection of measurements can be found by going to {% include bc path='Analysis|Measure...'%}. in the main SNT dialog. Note that for this option, if multiple rooted tree structures exist in the Path Manger, you will be prompted to choose one for analysis.
 
@@ -91,8 +87,7 @@ Batch measurements of reconstructions can be accomplished via scripting. See *Me
 {% include clear%}
 
 
-Dendrogram Viewer
-=================
+# Dendrogram Viewer
 
 <img src="/media/Snt-Dendrogram-Shortcuts.png" title="fig:Dendrogram Viewer shortcuts" width="140" alt="Dendrogram Viewer shortcuts" /> Found at {% include bc path='Utilities|Create Dendrogram'%}, this option generates a [Dendrogram](https://en.wikipedia.org/wiki/Dendrogram) from one connected component (i.e., a single rooted tree structure) in the Path Manager, providing a high-level overview of neurite branching topology. Note that if multiple rooted trees exist in the Path Manager, you will be prompted to choose one of them.
 
@@ -100,8 +95,7 @@ The viewer provides controls for orientation, zoom level, panning, vertex editin
 
 Fine-grained programmatic control over SNT's Graph objects is achieved using the [JGraphT API](https://jgrapht.org/javadoc/) in a script. Also relevant is the [sc.fiji.snt.analysis.graph](http://fiji.github.io/SNT/sc/fiji/snt/analysis/graph/package-frame.html) package which provides high-level tools for Graph creation and conversion. See *Graph\_Analysis.py* in the SNT [Script Templates](/plugins/snt/scripting#script-templates) for a basic example. <img src="/media/Snt-Dendrogram-Viewer.png" title="fig:Dendrogram Viewer" width="300" alt="Dendrogram Viewer" />
 
-Comparing Reconstructions
-=========================
+# Comparing Reconstructions
 
 The {% include bc path='Utilities|Compare Reconstructions...'%} command will bring up a prompt which gives the user the option to compare two single reconstruction files against multiple metrics, or multiple groups of reconstruction files against a single metric.
 
@@ -134,8 +128,7 @@ The file selection prompt for this option allows selection of up to four directo
 
 </div>
 
-Custom Analyses
-===============
+# Custom Analyses
 
 It is possible to script your own analysis routines. See [SNT:\_Scripting](/plugins/snt/scripting) for the link to SNT's API as well as script templates demonstrating a range of analysis possibilities.
 

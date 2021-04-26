@@ -10,18 +10,15 @@ The complete Fiji distribution of ImageJ consists of over a hundred individual c
 
 In the past, Fiji used to be built from one monolithic source code repository, which became unmanageable over time. These days, therefore, developers start from a fully-populated *Fiji.app/* directory and build only the parts they would like to change.
 
-Download Fiji
-=============
+# Download Fiji
 
 The first step is the same for developers as it is for users: [Download](/downloads) Fiji, and unpack it. The Desktop is the recommended location.
 
-Install Java
-============
+# Install Java
 
 The next step is to install [OpenJDK 8](https://adoptopenjdk.net/). You will need a JDK in order to develop Java code.
 
-Check out and build individual plugins/libraries
-================================================
+# Check out and build individual plugins/libraries
 
 To develop a plugin, the developer first needs to find out in which file it is contained. To do that, simply call the *Command Finder* (shortcut {% include key content='press\|Ctrl\|L' %}), type (part of) the label of the menu entry in whose function you are interested, and look at the *File* column.
 

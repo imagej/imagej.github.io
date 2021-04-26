@@ -13,8 +13,7 @@ Mark Hiner
 Curtis Rueden' filename='Stitching\_.jar' source=source released='October 2008' status='active' category='[Stitching](Category_Stitching)' website=' [Stephan Preibisch"s homepage](http://fly.mpi-cbg.de/~preibisch)' %}
 
 
-What is Grid/Collection Stitching?
-==================================
+# What is Grid/Collection Stitching?
 
 When a large biological specimen must be pictured in high resolution, it must be done in tiles as the entire thing could not fit into the field view of the microscope. Once the entire specimen has been imaged, the tiles must be fit or stitched together to form one coherent image. Some overlap will be present between each tile and its neighbors to verify its location in the image.
 
@@ -22,8 +21,7 @@ The Grid/Collection stitching plugin allows several tiles placed in varying dime
 
 To learn more about Stitching, please read the [Stitching](/plugins/image-stitching) section of [Techniques](/techniques).
 
-How to use the Grid/Collection Stitching plugin
-===============================================
+# How to use the Grid/Collection Stitching plugin
 
 -   Launch the stitching plugin from the menu item {% include bc path='Plugins | Stitching | Grid/Collection stitching'%}
     -   Launch the stitching plugin from the menu item {% include bc path='Plugins | Stitching | Grid/Collection stitching'%}
@@ -39,8 +37,7 @@ How to use the Grid/Collection Stitching plugin
     -   Alternatively, [more memory can be allocated](Grid_Collection_Stitching_Plugin#memory-allocation) to the Fiji operation
 -   Click ok and the images will begin to be stitched together.
 
-Troubleshooting with the Grid/Collection Stitching plugin
-=========================================================
+# Troubleshooting with the Grid/Collection Stitching plugin
 
 ## Inversion of Coordinates
 
@@ -66,8 +63,7 @@ Another speed reduction will occur if the tiles used have varying z coordinates.
 
 Even using virtual memory with maximum memory allocation can still be too much for some computers to handle, especially given the size of larger image files. The limited amount of memory available to most computers means that during the stitching of a large image file, the plugin will be trying to store more pixels within memory than there is space for. When this event occurs, Fiji will either stall and need to be force closed, or will display the message "<Out of Memory>." To fix this issue, select "Downsampling" in the Stitching GUI to allow for the image to be stitched in pieces. Please see the [Downsampling](/scripting/examples/downsample) page for more information. {% include thumbnail src='/media/Z variance.png' title='Example of a dataset with z-variance.'%}
 
-Other Pitfalls
-==============
+# Other Pitfalls
 
 Please see the [Image Stitching](/plugins/image-stitching) page for other precautions.
 

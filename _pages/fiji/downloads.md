@@ -13,8 +13,7 @@ title: Fiji Downloads
 {% include downloadfiji%}
 
 
-System requirements
-===================
+# System requirements
 
 Fiji is supported on the following systems:
 
@@ -24,8 +23,7 @@ Fiji is supported on the following systems:
 
 However, Fiji (like ImageJ) should run on any system for which a Java 8 runtime is available (Solaris, Raspbian, etc.).
 
-Installation
-============
+# Installation
 
 {% include avoidprogramfiles%}
  {% include box title='Packages for Debian / Ubuntu' float='right' text='
@@ -36,19 +34,16 @@ If you are a Debian packaging expert who would like to address this situation, w
 
 ' %} Fiji is distributed as a {% include wikipedia title='Portable application' text='portable application'%}. That means that you do not have to run an installer; just download, unpack and start it.
 
-Troubleshooting
-===============
+# Troubleshooting
 
 -   Many common questions are answered on the [FAQ](/help/faq).
 -   If you encounter bugs, please see the [Getting Help](/help) page.
 
-Source code
-===========
+# Source code
 
 See the [source code](/develop/source) page for details on obtaining the Fiji source code.
 
-Other downloads
-===============
+# Other downloads
 
 ## Archive
 

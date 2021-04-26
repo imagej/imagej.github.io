@@ -172,8 +172,7 @@ Also, for a review of the hardware part, read *Zucker, 2006, Cytometry*.
 `From Jan Peychl notes. `  
 `The two animated gifs are from the Huygens Software wiki page. `
 
-Further reading
-===============
+# Further reading
 
 [The 39 steps: a cautionary tale of quantitative 3-D fluorescence microscopy](http://www.ncbi.nlm.nih.gov/pubmed/10818693) by J. Pawley.
 

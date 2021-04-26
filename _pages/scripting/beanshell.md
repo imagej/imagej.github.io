@@ -9,8 +9,7 @@ categories: Scripting
 
 BeanShell also does not require strict typing (read: you do not need to declare variables with types), making it easy to turn prototype code into proper Java after seeing that the code works.
 
-Quickstart
-==========
+# Quickstart
 
 If you are already familiar with Java or the macro language, the syntax of BeanShell will be familiar to you.
 
@@ -31,8 +30,7 @@ Variables are not strongly typed in BeanShell by default; If you use a variable 
 
 Note: The builtin functions of the ImageJ Macro language are <u>not</u> available in BeanShell.
 
-Syntax
-======
+# Syntax
 
 ## Variables
 
@@ -103,15 +101,13 @@ If you have a substantial amount of things to say in a comment, you might use mu
 
 For more information, see BeanShell's [Quickstart](http://www.beanshell.org/manual/quickstart.html) page.
 
-Tips
-====
+# Tips
 
 You can *source* scripts (i.e. interpret another script before continuing to interpret the current script) using this line:
 
     this.interpreter.source("the-other-script.bsh");
 
-Examples
-========
+# Examples
 
 ## Add CIEL\*a\*b numbers to the status bar
 

@@ -7,8 +7,7 @@ This page describes the segmentation function of the [CIP scripting](/plugins/ci
 
 {% include cip content='Navigation' %}
 
-**threshold**
-=============
+# **threshold**
 
 <span style="font-size:110%">**Description**</span>  
 this function creates a binary image from an input graylevel image
@@ -32,8 +31,7 @@ this function creates a binary image from an input graylevel image
 <span style="font-size:110%">**Implementation**</span>  
 the threshold method wraps ops threshold methods
 
-**label**
-=========
+# **label**
 
 <span style="font-size:110%">**Description**</span>  
 This function threshold an image and label its connected component (i.e. it sets the pixels of each region to a distinct integer value).
@@ -54,8 +52,7 @@ The labeling is performed our custom implementation. It uses a union find approa
 
 \[1\] Cabaret, Laurent, Lionel Lacassagne, and Louiza Oudni. "A review of world's fastest connected component labeling algorithms: Speed and energy estimation." Design and Architectures for Signal and Image Processing (DASIP), 2014 Conference on. IEEE, 2014.
 
-**maxima**
-==========
+# **maxima**
 
 <span style="font-size:110%">**Description**</span>  
 This function detects the intensity maxima of an imaget and return a labeled image of these maximage.
@@ -94,8 +91,7 @@ Each maxima detection method rely on a custom implementation
 
 \[2\] Lowe, D. G. (2004). Distinctive image features from scale-invariant keypoints. International journal of computer vision, 60(2), 91-110.
 
-**watershed**
-=============
+# **watershed**
 
 <span style="font-size:110%">**Description**</span>  
 Watershed algorithm partitions an image in regions and outputs a label image of these regions. Initialized with image maxima or or user defined regions the algorithm grow these seed regions following the shape of, i.e. flooding, intensity peaks.

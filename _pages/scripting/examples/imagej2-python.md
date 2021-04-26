@@ -6,15 +6,13 @@ categories: Scripting,ImageJ2,Ops,SciJava
 
 
 
-Introduction
-============
+# Introduction
 
 This page is a primer of **ImageJ2 only** Python scripts. It means that the examples included here avoid IJ1 as much as possible, unless it's really necessary.
 
 Note that all the scripts of this page are links from https://github.com/imagej/imagej-scripting/tree/master/src/main/resources/script_templates/ImageJ2.
 
-Scripts
-=======
+# Scripts
 
 ## Stack Projection
 
@@ -54,8 +52,7 @@ Scripts
 
 {% include github-embed org='imagej' repo='imagej-scripting' path='src/main/resources/script\_templates/ImageJ2/Manual\_Registration.py' label='Manual\_Registration.py' %}
 
-Resources
-=========
+# Resources
 
 -   [Jython Scripting](/scripting/jython)
 -   [Jython Examples](/scripting/jython/examples)

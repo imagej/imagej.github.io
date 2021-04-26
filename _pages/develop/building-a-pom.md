@@ -6,8 +6,7 @@ section: Development:Guides
 
 When you start a new [Maven](/develop/maven) project, one of the first things you will do is create an appropriate [pom.xml](https://maven.apache.org/pom.html). The POM determines what resources are available to your project. Given the scope of the ImageJ project, there are several possible starting points. The purpose of this guide is to help you select a pom.xml based on your individual project's goals.
 
-Using ImageJ
-============
+# Using ImageJ
 
     <?xml version="1.0" encoding="UTF-8"?>
     <project xmlns="http://maven.apache.org/POM/4.0.0"

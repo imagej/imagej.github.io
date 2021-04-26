@@ -38,13 +38,11 @@ One of the most powerful things Git can do is rewrite a series of patches after 
 
 ## Git for dummies
 
-What is Git?
-============
+# What is Git?
 
 Git is a distributed Version Control System ("VCS"), or Source Code Management tool ("SCM"). The purpose is to track the development of source code through time, along with useful side information: Who did it? When? Why?
 
-Principles of Git
-=================
+# Principles of Git
 
 The source code lives in a *working directory*, where you have *tracked* files (i.e. files which are version-controlled) and *untracked* files (for example, *.class* files; they are generated from the source code, so they are uninteresting).
 
@@ -58,8 +56,7 @@ All Git-specific things, such as revisions, are stored in the *repository*, whic
 
 To collaborate with others, there are also *remote repositories* from where you can *clone*, and with which you can synchronize by *fetching* and *pushing*.
 
-Why do I need Git?
-==================
+# Why do I need Git?
 
 Git makes it not only to record what you did, it makes it easy to follow the development of other developers, and integrate those changes (*merge* in Git speak).
 
@@ -79,8 +76,7 @@ If you feel comfortable in using the commandline but you are still not familiar 
 
 If the commandline is not your favorite playground you can have a look at the Git integration **[EGit](/develop/git/eclipse)** in the **[Eclipse](/develop/eclipse)** IDE.
 
-Essential Git commands
-======================
+# Essential Git commands
 
 Except for the *clone* command, this follows the common workflow:
 
@@ -112,8 +108,7 @@ Initially, you need to start from somewhere:
 
 See also the more verbose [Git mini howto](/develop/git/mini-howto).
 
-Substantial differences to other version control systems
-========================================================
+# Substantial differences to other version control systems
 
 If you know CVS or Subversion, you are in for some surprises:
 

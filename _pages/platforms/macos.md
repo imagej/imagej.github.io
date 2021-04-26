@@ -14,13 +14,11 @@ section: Learn:Supported Platforms
 
 
 
-Installation
-============
+# Installation
 
 See also the [Java 8](/news/2016-05-10_-_ImageJ_HOWTO_-_Java_8,_Java_6,_Java_3D) page for OS-X-specific issues.
 
-Troubleshooting
-===============
+# Troubleshooting
 
 See also the [Troubleshooting](/help/troubleshooting) page.
 
@@ -46,8 +44,7 @@ On macOS 10.11 "El Capitan" and later, the operating system no longer includes a
 
 As a workaround, you can check "Use JFileChooser to open/save" in the {% include bc path='Edit | Options | Input/Output...'%} dialog.
 
-Frequently Asked Questions
-==========================
+# Frequently Asked Questions
 
 See also the [Frequently Asked Questions](/help/faq) page.
 
@@ -69,8 +66,7 @@ Unfortunately, El Capitan has some new java-related issues. If you upgraded to E
 2.  If that does not work, see [this guide](https://oliverdowling.com.au/2015/10/09/oracles-jre-8-on-mac-os-x-el-capitan/) for steps which could get things working again.
 3.  Alternately, ImageJ still works on El Capitan with Java 6 (see above).
 
-Additional macOS Tips
-=====================
+# Additional macOS Tips
 
 {% include outdated %}
 

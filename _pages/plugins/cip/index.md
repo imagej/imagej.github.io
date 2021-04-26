@@ -13,8 +13,7 @@ title: CIP
 
 </div>
 
-CIP : Classic Image Processing
-==============================
+# CIP : Classic Image Processing
 
 Classic Image Processing (CIP) is an image procesing toolbox which provides functions for scripting in ImageJ. Its principal goal is to facilitate image analysis workflow construction as well as to provide an accessible entry point to learn the programming of such workflow. CIP also has a specific focus on user experience which should appear clearly in the libraries main features:
 
@@ -32,8 +31,7 @@ Classic Image Processing (CIP) is an image procesing toolbox which provides func
 
 -   An **essential** set of tools: CIP gathers the 10% of tools that will get the job done, allowing one to go straight to the tool he needs. The function selected are also well adopted by the community to facilitate exchange and understanding. Finally, CIP provides basic visualisation and measure tools that are needed in every workflow.
 
-Getting started
-===============
+# Getting started
 
 ## Installation
 
@@ -49,8 +47,7 @@ To get information on a function follow the link in the function table in the [c
 
 For information on the parameters, their type, whether they are optionnal or required and more one can consult the [ Parameters](/plugins/cip/parameters) page.
 
-Tools categories
-================
+# Tools categories
 
 Image analysis workflows require the user to perform stereotypic steps: enhance signal, define and characterize region, visualize and assess results. This recurring process allows to create one function per task and to organize these functions in categories with similar roles, input and output: Format, Filter, Segment, Math, Assess.
 
@@ -95,8 +92,7 @@ Link to function user documentation are provided in the table below.
 | [invert](/plugins/cip/filter#invert)     |                                                    |                                              | [sign](/plugins/cip/math#unary-operator), [abs](/plugins/cip/math#unary-operator)                                                | [list](/plugins/cip/utilities#list)       |                                            |
 |                                            |                                                    |                                              |                                                                                                                                      | [help](/plugins/cip/utilities#help)       |                                            |
 
-Script example
-==============
+# Script example
 
 The following script shows how to segment 2d object in an image and visualize them. The workflow is illustrated in the **Figure 3**.
 
@@ -122,8 +118,7 @@ The following script shows a 3d nuclei segmentation and the measure and displau 
 
 </div>
 
-Development plan
-================
+# Development plan
 
 This section provide the main development directions as well as a list of functions that we intend to implement per category
 
@@ -134,11 +129,9 @@ This section provide the main development directions as well as a list of functi
 | hessian   |              |             |                      |        |
 | fillholes |              |             |                      |        |
 
-Cite
-====
+# Cite
 
-History
-=======
+# History
 
 -   2017-12-20 : version 0.1.0 , first public version of CIP is made available on CIP update site. The package is still under development
 

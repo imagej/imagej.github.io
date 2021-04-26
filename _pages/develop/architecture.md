@@ -12,8 +12,7 @@ section: Development
 
 This page describes the technical structure of [SciJava](SciJava) and [ImageJ](/about) projects. For maximum benefit, we suggest readers familiarize themselves with [Maven](/develop/maven), [Git](/develop/git) and [GitHub](/develop/github) before reading the sections here.
 
-Definitions
-===========
+# Definitions
 
 Throughout this article, and elsewhere on this wiki, we use the following terms:
 
@@ -23,8 +22,7 @@ Throughout this article, and elsewhere on this wiki, we use the following terms:
 -   **SciJava core components** are SciJava components of the SciJava component layer itself. See "Organizational structure" below.
 -   The **ImageJ software stack** is the set of components upon which [ImageJ](/about) is built. It includes components from the [SciJava](SciJava), [ImgLib2](/imglib2), [ImageJ](/about) and [SCIFIO](/software/scifio) foundational layers; see "Organizational structure" and "Core libraries" below for details.
 
-SciJava project structure
-=========================
+# SciJava project structure
 
 The [ImageJ](/about) project, and related projects in the [SciJava](SciJava) software ecosystem, are carefully structured to foster [extensibility](#extensibility).
 
@@ -132,8 +130,7 @@ Extensibility is [ImageJ](/about)'s greatest strength. ImageJ provides many diff
 
 The [SciJava Common](/libs/scijava-common) (SJC) library provides a plugin framework with {% include wikipedia title='Strong and weak typing' text='strong typing'%}, and makes extensive use of plugins itself, to allow core functionality to be [customized easily](http://c2.com/cgi/wiki?SoftwareSeam). SJC has an powerful plugin discovery mechanism that finds all plugins available on the Java classpath, without knowing in advance what they are or where they are located. It works by indexing the plugins at compile time via an {% include wikipedia title='Java annotation\#Processing' text='annotation processor'%} (inspired by the [SezPoz](https://github.com/jglick/sezpoz) project) which writes the plugin metadata inside the JAR file (in `META-INF/json/org.scijava.plugin.Plugin`). Reading this index allows the system to discover plugin metadata at runtime very quickly *without* loading the plugin classes in advance.
 
-Reproducible builds
-===================
+# Reproducible builds
 
 {% include box title='Why are reproducible builds so essential for science?' width='40%' float='right' text='Arguably **the most important thing** in science is to gain insights about nature **that can be verified by other researchers**. It is this mission for which [ImageJ](/about) and [Fiji](/fiji) stand, and it is the central reason why they are [open source](Open_source).
 
@@ -188,8 +185,7 @@ In the case of Eclipse, you may need to "Update Maven project" in order to see t
 
 Either way, ***be sure to work on a topic branch while developing code in this fashion.*** You will need to clean up your Git history afterwards before merging things to the `master` branch, in order to achieve [reproducible builds](#reproducible-builds).
 
-Versioning
-==========
+# Versioning
 
 SciJava components use the [Semantic Versioning](/develop/versioning) system. This scheme communicates information about the [backwards compatibility](/libs/imagej-legacy) (or lack thereof) between versions of each individual software component. In a nutshell:
 

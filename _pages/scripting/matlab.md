@@ -14,8 +14,7 @@ If you run MATLAB R2017b and later, you don"t need to do this, as it ships and u
 -   Lets you launch ImageJ and interact with it from inside MATLAB.
 -   Allows developers to write additional [plugins](/plugins) which [extend](/develop/architecture#extensibility) these capabilities in new directions.
 
-MATLAB tutorial for ImageJ
-==========================
+# MATLAB tutorial for ImageJ
 
 ## Prerequisites
 
@@ -352,24 +351,20 @@ If you use [`copytoImagePlus`](https://github.com/kouichi-c-nakamura/copytoImage
 
 `copytoImagePlus` can keep the dimensions and the data type. <img src="/media/Image003.png" width="150"/>
 
-Source
-======
+# Source
 
 -   {% include github org='scijava' repo='scripting-matlab' label='Scripting-MATLAB' %} provides the script engine plugins.
 -   {% include github org='imagej' repo='imagej-matlab' label='ImageJ-MATLAB' %} defines the ImageJ-specific translators.
 
-Video presentation
-==================
+# Video presentation
 
 TODO VIMEO WIDGET
 
-Publication
-===========
+# Publication
 
 -   {% include publication content='ImageJ-MATLAB' %}
 
-See also
-========
+# See also
 
 -   [Creating Imglib2 images in MATLAB](/imglib2/matlab)
 -   [Using TrackMate from MATLAB](/plugins/trackmate/using-from-matlab)

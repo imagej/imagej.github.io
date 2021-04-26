@@ -17,8 +17,7 @@ Macros can be used to
 
 {% include info-box message='Please be aware that there are several other available [scripting](/scripting) languages that are more powerful than macros, too! See the sidebar on the right, as well as the [Overcoming limitations](#overcoming-limitations) section below.' %}
 
-Variables
-=========
+# Variables
 
 The most important concept when starting to program macros are *variables*. A variable is a placeholder for a changing entity. It has a *name* and a *value*, which can be *numeric* or *text* (so-called *strings*).
 
@@ -92,8 +91,7 @@ It is so important that there is a short form for it:
     // This statement does the same as counter = counter + 1;
     counter++;
 
-Functions
-=========
+# Functions
 
 Most of the time, you will call *functions* which implement the actions you want to execute. Functions have names, like variables, but they also have *parameters* that you can pass to the functions. ImageJ comes with many [predefined functions](/ij/developer/macro/functions.html) that you can call to perform specific calculations or other operations.
 
@@ -120,8 +118,7 @@ Note that the *title* is just another [variable](#Variables), which is implicitl
 
     closeImageByTitle("My pretty new image");
 
-Comments
-========
+# Comments
 
 When you read your code again in six months from now, you want to understand what your code does, and why. For this, you can add comments, i.e. text which is ignored by ImageJ when it executes the macro. Example:
 
@@ -151,8 +148,7 @@ When reading macros written by other people, you will often find the concept of 
 
 Typical uses for commented-out code are instructions that help with debugging, but are too verbose (or too slow) for regular execution of the macro.
 
-Conditional code blocks
-=======================
+# Conditional code blocks
 
 Sometimes, you need to execute a certain part of the code if and only if a certain condition is met. Example:
 
@@ -180,8 +176,7 @@ You can optionally add an *else* clause, i.e. a code block that is executed when
             write("The current image is not binary");
     }
 
-Loops
-=====
+# Loops
 
 ## 1st example
 
@@ -227,8 +222,7 @@ This small IJmacro scriptlet loops over the roi in the Roi Manager, selecting on
          // do some operation
     }
 
-The recorder
-============
+# The recorder
 
 Typically, macros are not written from scratch, but recorded using the Macro Recorder: Just click on {% include bc path='Plugins | Macros | Record...'%} and perform some actions. These actions will be recorded in the recorder window, and you can hit the *Create* button to open the recorded instructions in an editor:
 
@@ -253,8 +247,7 @@ In order to allow spaces in the name, you might also want to add extra *\[...\]*
     run("Merge Channels...",
          "red=[Edges of " + title + "] green=[" + title + "] blue=[" + title + "] gray=*None*");
 
-Installing macros
-=================
+# Installing macros
 
 To install keyboard shortcuts or tool icons, you need to [wrap macro code in *macro* blocks](/ij/developer/macro/macros.html#tools):
 
@@ -307,8 +300,7 @@ Many tools open an option dialog upon double-click on the icon. You can do that,
         run("Input/Output...", "jpeg="+quality);
     }
 
-Example macros
-==============
+# Example macros
 
 This section contains a number of macros which you can use as starting points to write your own macros.
 
@@ -603,8 +595,7 @@ Michael Cammer michael.cammer@med.nyu.edu with editing by Johannes Schindelin \[
 
 There are quite a lot of macros on the [ImageJ1 website](/ij/macros/), and specifically [example macros](/ij/macros/examples/) including a few from the Macro workshop at the [ImageJ conference 2010](http://imagejconf.tudor.lu/archive/imagej-user-and-developer-conference-2010). Since there is no categorized index, you might want to use the search facility on [this page](/ij/developer/index.html).
 
-Overcoming limitations
-======================
+# Overcoming limitations
 
 Macros have a major limitation compared to the other [scripting](/scripting) languages: they have only a [fixed set of built-in functions](/ij/developer/macro/functions.html). Sometimes, though, one needs access to functions outside this realm; in that case, there are three primary means of overcoming this limitation:
 
@@ -649,8 +640,7 @@ If you dont want the macro to wait until the end of the external process you can
 `setOption("WaitForCompletion", false);`  
 before the `exec` call. (since ImageJ 1.52u38)
 
-Further documentation
-=====================
+# Further documentation
 
 A complete description of the macro language, a reference of the built-in functions, and examples can be found [here](/ij/developer/index.html).
 

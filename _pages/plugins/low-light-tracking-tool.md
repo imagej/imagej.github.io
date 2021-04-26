@@ -16,8 +16,7 @@ categories: Tutorials
 
 This software is a tool for the tracking of low-light sub-resolution objects in fluorescent microscopy. It can be applied in other fields as well. The plugin implements the localization algorithm described in the following paper: "A Divide and Conquer Strategy for the Maximum Likelihood localization of Low Intensity Objects" by Alexander Krull et al, 2013 Optics Express, Vol. 22, Issue 1, pp. 210-228 (2014).
 
-Installation of the plugin
-==========================
+# Installation of the plugin
 
 The plugin can be quickly installed via the projects update site. This is unfortunately may not possible if you are using a Fiji version installed via package management system. If you encounter this problem, please use the Fiji version obtainable [ here](/downloads).
 
@@ -35,8 +34,7 @@ Please refer to the [ **tutorial**](/update-sites) on how to add our update site
 
 Install or update all 6 items shown above by hitting **Apply changes**. Please restart Fiji afterwards.
 
-Startup
-=======
+# Startup
 
 ## Load the data
 
@@ -71,8 +69,7 @@ Finally you have to provide the ratio at which the analog digital unit in your c
 
 Please consult you camera's specs sheet to obtain this information. The **EMCCD gain** and **Electrons per A/D count** are required for tracking with the [ EMCCD-GaussianML method](/plugins/low-light-tracking-tool#emccd-gaussianml). The [ GaussianML method](/plugins/low-light-tracking-tool#gaussianml) uses these values to correct the measured flux of the object and background.
 
-The User Interface
-==================
+# The User Interface
 
 ## The different windows
 
@@ -92,8 +89,7 @@ The yellow lines in the kymographs indicate what frame you are currently working
 -   You can set frame number, slice number and channel number in the control window.
 -   You can use your middle mouse button to click directly into one of the kymographs to set the frame number. If you are working with 3D data you can click into one of the side projections with your middle mouse button to set the slice number.
 
-Basic tracking
-==============
+# Basic tracking
 
 ## Create session
 
@@ -145,8 +141,7 @@ Only the highlighted objects will be tracked. So in the example above both are h
 
 Objects that are very close to each other should generally be tracked jointly by selecting them both before starting to track. Objects which are far away from each other should be tracked in individually one after the other.
 
-Working with tracking results
-=============================
+# Working with tracking results
 
 ![](/media/Result1.png "Result1.png")
 
@@ -178,8 +173,7 @@ When you delete a trace or a session you will be asked whether to delete the cor
 
 Changes done by **Merge**, **Split** and **Trim** can also be undone in this way. They are made permanent only when you hit the **Save** button or start tracking with the **Autosave** option activated.
 
-Advanced features
-=================
+# Advanced features
 
 ## 3D data
 
@@ -205,8 +199,7 @@ You can change the default behavior in the edit menu.
 
 The algorithm builds a {% include wikipedia title='Pyramid %28image processing%29' text='pyramid'%} by repetitively smothing the image with a Gaussian kernel with the standard deviation given in the **Smoothing σ** field and than down-sampling it by a factor set in the **Downscaling** field. The pyramid's hight (i.e. the number of repetitions) can be set in the **iterations** field. Localization is than first performed on the top level of the pyramid and repeated until its bottom, which is the original image.
 
-Tips
-====
+# Tips
 
 -   If you want to be able to see the original image data and find your tracking results get in the way, you use the hot-key {% include key content='P' %} or {% include key content='Ctrl' %}+{% include key content='P' %} respectively to hide all overlays (all circles lines and cross-hairs drawn on top of the image).
 -   If some of the windows appear to bright or to dark use **View-&gt;Adjust Brightness/Contrast** to correct them.
@@ -215,13 +208,11 @@ Tips
 -   You can zoom into the kymographs by moving the cursor over the kymograph window and holding down {% include key content='Shift' %}, while using the scroll wheel on the mouse.
 -   You can use the **optimize** button. This will perform the tracking of the selected objects on the single frame you are looking at. You can use this for example with **Automatic σ** turned on to determine the size of the target's PSF on a single frame.
 
-Hot-keys
-========
+# Hot-keys
 
 There are several hot-keys you can use. You can find the key to press in the menus of the control panel. When the focus is on the control panel you have to press {% include key content='Ctrl' %} to access hotkeys. When the focus is on one of the other windows this is not necessary.
 
-File format
-===========
+# File format
 
 The tracking results are stored in text files with the ending '.trcT'. Each file holds the result of one trace. The structure of the file name is the following:
 
@@ -246,13 +237,11 @@ The files are created in the working directory. Each file begins with some lines
 -   column 15 the fraction of flux in the considered window assumed to belong to the tracked object
 -   column 16 the total estimated flux in the considered window
 
-Example Data
-============
+# Example Data
 
 This link contains the data used to generate this tutorial, and a two channel 3D data set to try. [Example\_Data.zip](/media/Example Data.zip)
 
-License
-=======
+# License
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation (http://www.gnu.org/licenses/gpl.txt).
 

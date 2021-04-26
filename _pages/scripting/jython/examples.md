@@ -1843,8 +1843,7 @@ NB : This latter command with the dependencies was [reported not to function wit
 
 Notice, though, that <b>you don't need to do the .jar packaging at all</b>. Just place the python scripts directly under fiji/plugins/My Scripts/ and they will appear in the menus as regular plugins, and similarly be handle by the updater to populate an update site.
 
-Jython examples in Fiji
-=======================
+# Jython examples in Fiji
 
 -   {% include github repo='fiji' path='plugins/Examples/Find\_Dimension\_of\_Raw\_Image.py' label='Find Dimension of Raw Image' %}
 -   {% include github repo='fiji' path='plugins/Examples/Edit\_LUT\_As\_Text.py' label='Edit LUT As Text' %}
@@ -1860,8 +1859,7 @@ Jython examples in Fiji
 -   {% include github repo='fiji' path='plugins/Examples/plugins/trakem2\_Example\_Scripts/T2\_Select\_All.py' label='Select All' %} objects in TrakEM2.
 -   {% include github repo='fiji' path='plugins/Examples/plugins/trakem2\_Example\_Scripts/Measure\_AreaLists.py' label='Measure AreaList' %} in TrakEM2.
 
-See also
-========
+# See also
 
 -   Albert Cardona's crash course in [Jython scripting with Fiji](http://www.ini.uzh.ch/~acardona/fiji-tutorial/index.html).
 -   Jython for [TrakEM2 Scripting](/plugins/trakem2/scripting).

@@ -7,13 +7,11 @@ section: Development:Guides
  
 
 
-Introduction
-============
+# Introduction
 
 Many developers are more familiar with C++ than Java when starting to develop code for Fiji. There are a few common pitfalls when coding in Java, being used to C++, and this page tries to help you avoid them.
 
-General differences
-===================
+# General differences
 
 ## Compile time
 
@@ -46,8 +44,7 @@ In the same spirit, it is not possible to realloc() memory. If you need a larger
 
 In Java, member variables and methods can be accessed without the prefix *this.*, so it is considered better to skip that unnecessary prefix. But it also means that your code has to make clear what variables are local in another manner.
 
-Pitfalls
-========
+# Pitfalls
 
 ## Java only knows *by-reference*
 
@@ -111,8 +108,7 @@ Likewise, Java comes with useful classes implementing neat things such as priori
 
 In C++, when an array is declared <i>const</i>, none of its entries can be edited in any way. But in java, when a variable that points to an array is declared <i>final</i> only that variable cannot be assigned. Any entries of the array (or collection, or whatever container) are editable, and the entry slots themselves may be reassigned.
 
-Conventions
-===========
+# Conventions
 
 ## Class and function names
 

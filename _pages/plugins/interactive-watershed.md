@@ -18,8 +18,7 @@ categories: Plugins,Segmentation
 
 </div>
 
-Introduction
-============
+# Introduction
 
 Watershed \[Vincent 1991\] is a common tool to segment objects in an 2D and 3D images. It is relatively fast and can provides understandable and robust results which can be used for image analysis.
 
@@ -57,8 +56,7 @@ We call H-Watershed the segmentation obtained by flooding the H-maxima of an ima
 
 </div>
 
-Usage
-=====
+# Usage
 
 ## Installation
 
@@ -139,8 +137,7 @@ In a Jython script the H-Watershed segmentation could be called as follows:
 
 The run commands are also recorded by the macro recorder when exporting a label map.
 
-Methods and Implementation
-==========================
+# Methods and Implementation
 
 The plugin strategy is to do the heavy lifting once at the beginning and rely on it later on to keep segmentation update lightweight.
 
@@ -160,8 +157,7 @@ When the T parameter is updated the maxima are not modified, thus it is only nee
 
 The initial description, to the best of our knowledge of a watershed segment hierarchy using peak dynamics as a merging criteria was described in \[Najman 1996\]. The plugin initial watersheding is implemented after the IFT-watershed \[Lotufo 2000\]. The implementation was modified to build the segment tree on the fly. The plugin input and output are IJ1 imagePlus however the image processing inside the plugin relies on ImgLib2. A quick note on the segmentation update of 3D image, the plugin does not relabel the whole volume at every update but only the slice vizualized in order to preserve interactivity.
 
-References
-==========
+# References
 
 **\[Vincent 1991\]** Vincent, L., & Soille, P. (1991). Watersheds in digital spaces: an efficient algorithm based on immersion simulations. IEEE transactions on pattern analysis and machine intelligence, 13(6), 583-598.
 
@@ -169,8 +165,7 @@ References
 
 **\[Lotufo 2000\]** Lotufo, R., & Falcao, A. (2000). The Ordered Queue And The Optimality Of The Watershed Approaches. In In Mathematical Morphology and its Applications to Image and Signal Processing.
 
-History
-=======
+# History
 
 History of version available of SCF\_MPI\_CBG update site
 

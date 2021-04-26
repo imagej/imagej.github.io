@@ -12,8 +12,7 @@ section: Help:Update Sites
 
 
 
-Requirements
-============
+# Requirements
 
 -   An open-source project hosted on [GitHub](/develop/github)
 -   Logging in to [Travis CI](https://travis-ci.org/auth) with your corresponding GitHub account
@@ -21,13 +20,11 @@ Requirements
 -   An [account on this wiki](Special_CreateAccount)
 -   An [initialized upload password](Special_ChangeUploadPassword). (**NOTE** - *not* necessarily the same as your Wiki password)
 
-Additional resources
-====================
+# Additional resources
 
 -   [Travis CI user guide](https://docs.travis-ci.com/user/getting-started/)
 
-Automatic Uploads via Travis CI
-===============================
+# Automatic Uploads via Travis CI
 
 Travis CI can be used to automatically build a repository in response to code changes. To ease the maintenance of ImageJ update sites, we can use Travis to automatically upload the latest version of a site. This is done by creating a `.travis.yml` file in your update site's GitHub repository that does the following:
 
@@ -111,8 +108,7 @@ with a sequence of commands that will move your build artifacts to the appropria
 
 This is also true if you have custom scripts, macros, etc... if these files are not present in the correct locations of the local ImageJ.app, they will appear to have been deleted.
 
-Caveats
-=======
+# Caveats
 
 {% include warning-box content='**USE CAUTION HERE**
 
@@ -120,7 +116,6 @@ Caveats
 2.  By default—building the master branch of your repository—your update site will be updated with \*\*every change\*\* to the source code. Although we encourage the master branch to be "[release ready](/develop/releasing#phase-2-on-master)", a safer practice would be to configure Travis CI to [only build specific branches](https://docs.travis-ci.com/user/customizing-the-build/#Building-Specific-Branches)—and set it to build [release versions](/develop/architecture#reproducible-builds) only—e.g. with a release version integration branch.
 3.  Using the Maven-based `.travis.yml` as suggested implies that you are conforming to the managed dependencies of the parent pom.xml. If you are not staying up-to-date with the ImageJ and Fiji update sites (by using the latest ImageJ or Fiji [bill of materials](/develop/architecture#bill-of-materials)) then this automation may break your own update site.' %}
 
-See Also
-========
+# See Also
 
 -   [Travis use](/develop/travis)

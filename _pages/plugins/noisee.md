@@ -20,13 +20,11 @@ categories: Plugins,Citable
 
 **NoiSee** - An easy-to-use ImageJ macro suite for measuring SNR (signal-to-noise ratio) of confocal microscopes.
 
-Installation
-============
+# Installation
 
 [Enable the NoiSee update site](/update-sites/following) and restart Fiji.
 
-Usage
-=====
+# Usage
 
 NoiSee consists of two independent macros, one for each type of analysis:
 
@@ -72,8 +70,7 @@ The parameters dialog will show with the following input fields / options:
 -   Again all images and plots created by NoiSee can optionally be saved in a PDF report.
 -   Press "*OK*" and wait for NoiSee to finish its calculations as presented in the screenshot below.
 
-Example
-=======
+# Example
 
 We provide a small set of [sample data](https://sites.imagej.net/NoiSee/samples/) to demonstrate the usage of the macros and to give you an idea how the input data is supposed to look like.
 
@@ -94,8 +91,7 @@ Running the fluorescein macro on the above sample data will give the following r
 
 <File:Noisee-Fluorescein-Original-Data.png%7CFluorescein> Input Data <File:Noisee-Fluorescein-Darkfield.png%7CDark> Field Input Data <File:Noisee-Fluorescein-Absolute-Signal.png%7CAbsolute> Signal <File:Noisee-Fluorescein-Histogram.png%7CHistogram> of the Absolute Signal
 
-Citation
-========
+# Citation
 
 Please note that NoiSee is based on a publication. If you use it for related research please be so kind to cite our work:
 

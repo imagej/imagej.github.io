@@ -10,13 +10,11 @@ Distributing your software component as part of [Fiji](/fiji) is an effective wa
 
 The following document describes these requirements, as well as associated best practices, for shipping your component as part of the [Fiji](/fiji) update site.
 
-Definition
-==========
+# Definition
 
 A "core" [Fiji](/fiji) project is one distributed on the [Fiji update site](http://update.fiji.sc). Such projects are subject to the requirements discussed below. Conversely, if you distribute your [ImageJ](/about) extension on a separate update site, this page does not apply.
 
-Requirements
-============
+# Requirements
 
 ## Freely accessible source code
 
@@ -102,8 +100,7 @@ Furthermore, for backwards-compatibility a version can be automatically deduced:
 -   All of Fiji's components are deployed by [Travis CI](/develop/travis) to the [SciJava Maven repository](/develop/project-management#maven) or to [OSS Sonatype](http://oss.sonatype.org/). That way, all Fiji components can be added easily as dependencies to downstream projects.
 -   All Fiji components are declared in the toplevel [fiji](https://github.com/fiji/fiji) project's POM as dependencies, and declared in the [pom-fiji](https://github.com/fiji/pom-fiji) parent as *managed dependencies*, as part of Fiji's [Bill of Materials](/develop/architecture#bill-of-materials).
 
-Guidelines
-==========
+# Guidelines
 
 The following guidelines are less technical and more philosophical, but represent best practice for core Fiji components.
 
@@ -133,8 +130,7 @@ In particular when fixing a bug, it is a good idea to write a regression test *f
 
 New features should be put into the appropriate component. E.g., when adding a general purpose utility, consider contributing to [SciJava Common](/libs/scijava-common) or [ImageJ Common](/plugins/imagej-common) instead of bundling it with your specific extension.
 
-Examples
-========
+# Examples
 
 The following table provides a few examples of how various Fiji components are structured.
 

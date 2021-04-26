@@ -9,8 +9,7 @@ title: CMP-BIA tools
 {% endcapture %}
 {% include info-box name='CMP-BIA tools' software='ImagejJ/Fiji' author='Jiří Borovec ( [web](http://cmp.felk.cvut.cz/~borovji3/) )' maintainer='Jiří Borovec ([email](mailto:jiri.borovec(at)fel.cvut.cz))' filename=' [CMP\_BIA-0.2.jar](http://sites.imagej.net/CMP-BIA/plugins/)' source=source released='2013' version='0.2' latest-version='December 20<sup>th</sup>, 2013' license='GPLv2' category='[Segmentation](Category_Segmentation)' %}
 
-About
-=====
+# About
 
 The CMP-BIA tools is a package for ImageJ/Fiji which will perform image segmentation and registration. For a fast integration of our plugins you can use our [update site](http://sites.imagej.net/CMP-BIA/).
 
@@ -22,8 +21,7 @@ Please note that these plugins available through Fiji, is based on publications.
 
 **Center for Machine Perception** ([CMP](http://cmp.felk.cvut.cz)) is a university research center performing fundamental and applied research in computer vision, robotics, machine learning, pattern recognition, and mathematics. **Biomedical Imaging Algorithms** group ([BIA](http://www.fel.cvut.cz/vv/tymy/mip.html)) headed by *[Jan Kybic](http://cmp.felk.cvut.cz/~kybic/)* develops new algorithms for biomedical image processing.
 
-Plugins
-=======
+# Plugins
 
 The package currently contains a few plugins:
 
@@ -57,7 +55,6 @@ To show of handle segmentation results we presented a few approaches:
 
 Image:jSLIC-Lena-ROIs.jpg\|Sample of jSLIC segmented Lena with ROI manager. Image:jSLIC-Lena-ROIs-2.jpg\|Sample of jSLIC segmented Lena with ROI manager. Image:Human Breast Cytokeratin jSLIC.jpg\|Sample of jSLIC segmented histological tissue. Image:Human Breast Cytokeratin jSLIC 50px 0-2.png\|Sample of jSLIC segmented histological tissue. Image:jSLIC-AuPbSn40.jpg\|Sample of jSLIC segmented AuPbSn40. Image:jSLIC-Leaf.jpg\|Sample of jSLIC segmented Leaf.
 
-References
-==========
+# References
 
 Borovec, J., & Kybic, J. (2014). jSLIC : superpixels in ImageJ. [Computer Vision Winter Workshop. Praha](http://cmp.felk.cvut.cz/cvww2014/index.html).

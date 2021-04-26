@@ -13,8 +13,7 @@ Pascal Behnel, {%- include person id='thorstenwagner' -%}
 {% endcapture %}
 {% include info-box software='ImageJ/Fiji' name='Non Local Means Denoise' maintainer=maintainer author=author filename='ij\_nl\_means.jar [\[1](https://github.com/thorstenwagner/ij-nl-means/releases/latest) \]' source='GitHub [\[2](https://github.com/jumpfunky/ij-nl-means) \]' latest-version='v1.4.6 (13 March 2016)' status='maintaining' category='[:Category:Plugins](Category_Plugins)' %}
 
-Purpose
-=======
+# Purpose
 
 This is an ImageJ plugin for denosing images via the non-local-means algorithm descriped in
 
@@ -28,8 +27,7 @@ It is numerically optimized and multithreaded. It works with all image types (RG
 
 This plugin was developed within the scope of a study work of Pascal Behnel and is maintained by Thorsten Wagner (Both are members of the Biomedical Imaging Group).
 
-Settings
-========
+# Settings
 
 **Sigma:** The sigma of the noise.
 
@@ -39,18 +37,15 @@ Settings
 
 Both, the value for the (estimated) sigma and the smoothing factor are saved in the imagej preferences and are accessible with the keys "nlmean.sigma" / "nlmeans.smoothingfactor".
 
-Example
-=======
+# Example
 
 The left image shows a noisy (sigma=25) image of lena and right image the denoised version using the non local means plugin: <img src="/media/Lena-noise-25.png" width="250"/> <img src="/media/Lena-denoised.png" width="250"/>
 
-Installation
-============
+# Installation
 
 You could simply use our update site "[biomedgroup](/list-of-update-sites)" to install the non local means plugin or copy the jar file into your plugins folder.
 
-How to cite
-===========
+# How to cite
 
 We think the best way is to cite the formal method and the used implementation:
 

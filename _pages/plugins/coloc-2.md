@@ -13,8 +13,7 @@ Coloc 2 does NOT perform object based colocalization measurements, where objects
 
 <span style="color:red">There are many nuances and pitfalls to colocalization analysis. As such, we strongly recommend you read the [Colocalization Analysis](/techniques/colocalization-analysis) section of the [Cookbook](/cookbook) before attempting to use Coloc 2!</span>
 
-How to use Coloc 2
-==================
+# How to use Coloc 2
 
 1.  Read the original papers describing the analysis you are about to perform.
     1.  Don't treat this tool as a black box - try to understand what the strengths and limitations are and what the results could mean.
@@ -53,8 +52,7 @@ How to use Coloc 2
 9.  You will be asked if you want to save the results as a PDF file (if the "Show Save PDF dialog" button was checked. So tell it where to save the PDF. This is standard output format, so you can compare with your friends, same vs. same.
     1.  Feel free to tell us what things you think should be included in this standardized PDF output file and how it should be formatted. HTML? XML? Plain text?
 
-Pitfalls of the Manders and Costes methods
-==========================================
+# Pitfalls of the Manders and Costes methods
 
 ## The auto threshold calculation method can fail if fed inappropriate information
 

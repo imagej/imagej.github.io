@@ -6,8 +6,7 @@ categories: news
 
 See also the [Image Processing School](http://www.neuroinformatics2009.org/courses-and-satellite-meetings/image-processing-school/) announcement webpage.
 
-Schedule (tentative):
-=====================
+# Schedule (tentative):
 
 | **Time**                 | Wednesday, September 9th                                                                                                 | Thursday, September 10th                                 | Friday, September 11th                                                         | Saturday, September 12th                 |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|--------------------------------------------------------------------------------|------------------------------------------|

@@ -8,13 +8,11 @@ section: Learn
 
 
 
-Installation
-============
+# Installation
 
 First, you should to [install](/downloads) ImageJ!
 
-The main window
-===============
+# The main window
 
 After starting ImageJ, you will see the main window:
 
@@ -84,8 +82,7 @@ You can drag files from your favorite file manager and drop them on the main win
 
 Drag 'n Drop will also work for images displayed in your web browser, unless they are links to other web pages. You can try with this page: clicking on an image will open a page whose image you can Drag 'n Drop into ImageJ's main window.
 
-Image windows
-=============
+# Image windows
 
 Whenever you open an image, be it via {% include bc path='File | Open'%}, Drag 'n Drop or {% include bc path='File | Open Samples'%}, ImageJ will open an image window.
 
@@ -111,8 +108,7 @@ Choose between
 
 There are two more options: RGB stack and HSV stack, which can turn a 2-dimensional color image into a stack consisting of 3 color channels (red, green & blue or hue, saturation & value, respectively).
 
-Further reading
-===============
+# Further reading
 
 Have a look at the list of [tutorials](Category_Tutorials) on this Wiki.
 

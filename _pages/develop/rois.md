@@ -6,8 +6,7 @@ title: ROIs
 {% include wip%}
  In {% include wikipedia title='Image processing' text='image processing'%}, two of the most often needed yet complex operations are {% include wikipedia title='Segmentation (image processing)' text='segmentation'%} and {% include wikipedia title='Image registration' text='registration'%}. Regions of interest (ROIs) are an effective way of expressing and visualizing the results of a segmentation. For the current implementation of ROIs in ImageJ, see the [imglib2-roi](https://github.com/imglib/imglib2-roi) repository.
 
-Introduction
-============
+# Introduction
 
 The base interface for all ROIs is **MaskPredicate**. **MaskPredicate** extends Java's **Predicate** whose `test(...)` method is used to determine if a given point is inside or outside a ROI.
 
@@ -41,8 +40,7 @@ The **KnownConstant** enum is used for determining if a ROI returns `false` for 
 -   **ALL\_TRUE** - ROI is known to return `true` for all locations
 -   **UNKNOWN** - it is undetermined what the ROI returns for all locations, most ROIs have this
 
-Combining ROIs
-==============
+# Combining ROIs
 
 ROIs can be combined via a number of operations, namely: `and`, `or`, `negate`, `minus`, and `xor`. **RealMask**s also have a `transform` operation. Combined ROIs are **CompositeMaskPredicate**s, which preserves the provenance of the composite ROI. For each **CompositeMaskPredicate** it is possible to retrieve the operator and operands. This results in a "tree" of ROIs.
 
@@ -149,8 +147,7 @@ style="caption-side:bottom; text-align: left; font-size: 0.9em; font-weight: nor
 | yes                 | bounded             | bounded             | yes                 |
 | no                  | bounded             | unbounded           | no                  |
 
-Converting to RandomAccessible
-==============================
+# Converting to RandomAccessible
 
 It is also possible to convert **MaskPredicate**s to **(Real)RandomAccessible**s. The easiest way to do this is via the **Masks** class.
 
@@ -161,8 +158,7 @@ It is also possible to convert **MaskPredicate**s to **(Real)RandomAccessible**s
 
     final RealRandomAccessibleRealInterval< BoolType > rrari = Masks.toRealRandomAccessibleRealInterval( se );
 
-Discussion
-==========
+# Discussion
 
 -   [G. Landini: Imglib or ImageJ2 and ROIs](https://groups.google.com/d/msg/fiji-devel/AdeqZKffIUU/K8NRgKgk-WUJ) – ROIs should be drawn from the center of each pixel
 -   [S. Preibisch: Imglib or ImageJ2 and ROIs - Where is a pixel?](https://groups.google.com/d/msg/fiji-devel/AdeqZKffIUU/9SoisoaivWwJ) – Two kinds of ROIs: discrete and continuous

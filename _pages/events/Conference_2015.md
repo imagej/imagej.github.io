@@ -5,8 +5,7 @@ title: Conference 2015
 
 {% include conference title='ImageJ 2015 User & Developer Conference' section='5th ImageJ User & Developer Conference' dates='3 - 4 September 2015' image='Imagej-conference-2015.jpg' location=' [Wisconsin Institutes for Discovery](http://discovery.wisc.edu/) in Madison, Wisconsin, USA' %}
 
-Information
-===========
+# Information
 
 The 2015 [ImageJ User and Developer Conference](/events/Conference) complemented the EU meetings in Luxembourg and offered workshops to improve software knowledge and usage covering both beginner/user and advanced/developer topics. The conference provided a community forum for ImageJ development over the past three years and also featured shorter presentations highlighting case studies, plugins, and solutions to common problems.
 
@@ -79,16 +78,14 @@ As such, the 2015 ImageJ Conference Organizers recommended that guests reserve r
 
 With this conference, there were no registration fees, and there was a free reception. As such, attendees covered their own travel expenses. There was limited travel support for workshop presenters and featured presentations.
 
-Program
-=======
+# Program
 
 TODO GOOGLE SPREADSHEET WIDGET {% include clear%}
 
 
 For full details including abstracts and presentation recordings, see the [Conference 2015 Program](/events/Conference_2015_Program) page.
 
-Organization
-============
+# Organization
 
 ## Organizers
 

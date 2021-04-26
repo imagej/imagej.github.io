@@ -207,20 +207,17 @@ The "normal" BigWarp plugin accessible through *Plugins {% include arrow%}
 
 [This script](https://raw.githubusercontent.com/saalfeldlab/bigwarp/master/scripts/BigWarp_N5.groovy) enables you to run BigWarp using images stored using [N5](https://github.com/saalfeldlab/n5).
 
-Tutorials
-=========
+# Tutorials
 
 -   An example of a 2d warping by [Nicolas Chiaruttini](http://kiaru.eu/cv-rapide/) in response to [this forum post.](https://forum.image.sc/t/superimpose-atlas-image-onto-microscope-picture/20593)
 
 {% include youtube url='https://www.youtube.com/embed/zNur6mk9VXg'%}
 
-Publication
-===========
+# Publication
 
 -   {% include publication content='BigWarp' %}
 
-Publications using BigWarp
-==========================
+# Publications using BigWarp
 
 1.  Russell et al. ["3D correlative light and electron microscopy of cultured cells using serial blockface scanning electron microscopy"](https://www.ncbi.nlm.nih.gov/pubmed/27445312) J Cell Sci 130: 278-291 2017.
 2.  Collinson et al. ["Correlating 3D light to 3D electron microscopy for systems biology"](https://www.sciencedirect.com/science/article/pii/S2468451117300685) Current Opinion in Biomedical Engineering 2017 3:49-55

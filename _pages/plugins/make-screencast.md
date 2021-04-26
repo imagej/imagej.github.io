@@ -18,8 +18,7 @@ Stop recording the screencast via {% include bc path='File | Stop Screencast'%}.
 
 **Note**: This script requires the open source video player [VLC](http://www.videolan.org/vlc/index.html) to be installed. When started, it tries to autodetect VLC on your system, and asks to install it if it fails to detect it.
 
-Tips for a good screencast
-==========================
+# Tips for a good screencast
 
 -   A screencast's primary purpose is to cast the screen. So: make sure that something moves on the screen every once in a while, rather than presenting a boring static screen while rambling on.
 -   Take your time. There is no need to click so fast that nobody can follow.

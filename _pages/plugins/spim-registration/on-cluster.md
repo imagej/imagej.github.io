@@ -36,8 +36,7 @@ The SPIM registration is a piece of software that undergoes ongoing development.
 
 So, if you are new read a bit of the chapter 1 (original pipeline) to get familiar and then skip to chapter 3 (Multiview reconstruction pipeline) which is more up-to-date. To understand how the master file works refer to chapter 2 (NEW PIPELINE).
 
-Original SPIM registration pipeline
-===================================
+# Original SPIM registration pipeline
 
 ## Pre-requisites
 
@@ -1463,8 +1462,7 @@ Worked in my example, but again I would recommend that you modify this with the 
 
 The fused images will be saved into separate subdirectories for each time point into the output directory.
 
-NEW PIPELINE
-============
+# NEW PIPELINE
 
 The new pipeline is centered around a configuration file, **the master file**, that contains all the relevant processing parameters. It increases the efficiency of the processing significantly since mainly this file is manipulated for each dataset, instead of the scripts in each processing step individually.
 
@@ -4369,8 +4367,7 @@ The output of the **getnumjobs**:
 
 Modify the **master file** accordingly. Create the jobs using the **create\_export\_jobs** script and submit them to the cluster.
 
-New Multiview Reconstruction pipeline
-=====================================
+# New Multiview Reconstruction pipeline
 
 The key change in the **[Multiview Reconstruction](/plugins/multiview-reconstruction)** (MVR) pipeline is that all results are written into an XML. This poses new problems for cluster processing, because several concurrently running jobs need to update the same file.
 

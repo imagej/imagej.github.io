@@ -9,8 +9,7 @@ categories: SNT, tutorials
 
 
 
-SNT Commands
-============
+# SNT Commands
 
 SNT registers three commands in Fiji's menu structure in the {% include bc path='Plugins|NeuroAnatomy| '%} sub-menu:
 
@@ -18,8 +17,7 @@ SNT registers three commands in Fiji's menu structure in the {% include bc path=
 **[Rec. Viewer](/plugins/snt/reconstruction-viewer)**:A fast, streamlined interface for analysis of existing neuroanatomical data.  
 **[Reconstruction Plotter](#RecPlotter)**:A utility command for quickly render reconstructions in vector format without having to load other interfaces.  
 
-Startup Prompt
-==============
+# Startup Prompt
 
 ![](/media/SNT-Startup-Prompt.png "fig:SNT-Startup-Prompt.png") SNT is initialized by running {% include bc path='Plugins|NeuroAnatomy|SNT...'%}. All the options in the startup prompt can be set once SNT is opened, but the startup prompt provides the convenience of setting the most important parameters at once.
 
@@ -28,8 +26,7 @@ Startup Prompt
 -   **User interface** Specifies which views to display for 3D images. The default setting provides the XY, ZY, and XZ views and allows for more [accurate node placement](/plugins/snt/step-by-step-instructions#accurate-point-placement) but requires more RAM.
 -   **Tracing Channel** Specifies the image channel to trace on (this option is ignored with single-channel images).
 
-Main Dialog
-===========
+# Main Dialog
 
 ## Menu Commands
 
@@ -300,8 +297,7 @@ The [Reconstruction Viewer](/plugins/snt/reconstruction-viewer) is an advanced, 
 The Legacy 3D Viewer is a functional tracing canvas but it depends on outdated services that are now deprecated. It may not function reliably on recent operating systems. For usage instructions, see [Tracing using the Legacy 3D Viewer](/plugins/snt/step-by-step_instructions#tracing-in-the-legacy-3d-viewer). {% include clear%}
 
 
-Contextual Menu
-===============
+# Contextual Menu
 
 Right-clicking on any of the image views will bring up a menu with various editing tools. The corresponding keyboard shortcuts are shown to the right of each option. <img src="/media/SNT-Path-Edit-Right-Click-Menu.png" title="fig:Contextual menu" width="250" alt="Contextual menu" />
 
@@ -323,8 +319,7 @@ Right-clicking on any of the image views will bring up a menu with various editi
 -   **Bring Active Node to Current Z-plane** {% include key content='B' %} Moves the active node to the active Z-plane. Note that the translation is only done in Z. XY positions are unchanged.
 -   **Connect To (Start Join)** Allows two existing paths to be [merged or joined](/plugins/snt/step-by-step_instructions#mergingjoining-paths).
 
-Path Manager
-============
+# Path Manager
 
 ![Path Manager](/media/SNT-Path-Manager.png "fig:Path Manager") The Path Manager dialog displays all existing paths in a hierarchical structure (tree), where one path is "primary" (path 0) and all other paths (paths 1...N) are children of the primary path. The dialog also contains several menus with various editing, tagging, refinement/fitting, filling and analysis options. Paths can be searched by name and/or tags in the text filter, with more sophisticated search capabilities in the Advanced Filtering Menu.
 
@@ -500,7 +495,6 @@ This menu contains several options which provide quick ways to analyze and visua
     -   *No. of Nodes...* Filters for Paths with node count within the inputted range.
     -   *SWC Type...* Filters for Paths with the selected SWC type tags. Note that the Paths of interest must have been [tagged](/plugins/snt/manual#tag) using the{% include bc path='Tag|Type| '%} menu.
 
-Fill Manager
-============
+# Fill Manager
 
 Provides controls for all filling operations. It is described in more detail in the [Filling: Step-By-Step Instructions](/plugins/snt/step-by-step-instructions#filling). {% include sntnavbar%}

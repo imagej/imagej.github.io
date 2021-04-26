@@ -22,8 +22,7 @@ Generates a temporal-color coded XY 2D image (above right) from HyperStack (abov
 
 Be sure to set the dimensional sizes (especially Z and T) properly with Image/Properties.  
 
-Work Flow
-=========
+# Work Flow
 
 With a hyperstack window activated (at the most front among other images), select **Image/Hyperstacks/Temporal-Color** Code.
 

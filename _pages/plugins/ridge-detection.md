@@ -26,8 +26,7 @@ It works with stacks, is parallelized, has a preview mode and is able to resolve
 
 This example shows the application of the plugin on images of carbon nanotubes (Sigma = 1.5, Lower Threshold = 1.3, Higher Threshold = 7).
 
-Parameter Selection
-===================
+# Parameter Selection
 
 There are three parameters which **have to ** be specified. These are the mandatory parameters. The optional parameters can be used to estimate the mandatory parameters <img src="/media/Ridge Detection Parameters.png" title="fig:Ridge_Detection_Parameters.png" width="200" alt="Ridge_Detection_Parameters.png" />
 
@@ -103,22 +102,19 @@ In this image we see poor overlap detection. In this case due to a superfluous j
 
 Successful ridge detection with slope-based overlap detection enabled. Line 134 is selected to illustrate the selection of a complete line despite numerous intersections.
 
-Installation
-============
+# Installation
 
 Simply turn on the [Biomedgroup update site](/update-sites/following), which includes the ridge detection plugin.
 
 If you use ImageJ just copy the RidgeDetection.jar file in your plugins folder and copy the [apache-commons-lang 3](http://commons.apache.org/proper/commons-lang/) jar file into the plugins/jars folder.
 
-Who used this plugin?
-=====================
+# Who used this plugin?
 
 This is a list of publications where the plugin was used:
 
 Glaser, M., Schnauß, J., Tschirner, T., Schmidt, S., Moebius-Winkler, M., Käs, J. A., & Smith, D. M. (2016). Self-assembly of hierarchically ordered structures in DNA nanotube systems. New Journal of Physics New J. Phys., 18(5), 055001. <doi:10.1088/1367-2630/18/5/055001>
 
-How to cite
-===========
+# How to cite
 
 We think the best way is to cite the formal method and the used implementation:
 

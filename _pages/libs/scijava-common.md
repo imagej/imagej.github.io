@@ -7,8 +7,7 @@ artifact: org.scijava:scijava-common
 
 SciJava Common is a common library for [SciJava](SciJava) software. It provides a plugin framework, with an extensible mechanism for service discovery, backed by its own annotation processor, so that plugins can be loaded dynamically. It is used by both [ImageJ](/about) and [SCIFIO](/software/scifio).
 
-Plugin framework
-================
+# Plugin framework
 
 First and foremost, SciJava Common is a plugin framework—a base for developing highly modular and extensible Java applications.
 
@@ -16,8 +15,7 @@ First and foremost, SciJava Common is a plugin framework—a base for developing
 
 All plugins available on Java's classpath are automatically discovered and made available. This is accomplished by scanning classpath resources for the file path `META-INF/json/org.scijava.plugin.Plugin`. Such files are generated at compile time by a Java annotation processor that writes them in response to `@Plugin` annotations on Java classes, an idea inspired by the [SezPoz](https://github.com/jglick/sezpoz/) project.
 
-Application container
-=====================
+# Application container
 
 All program state, such as available plugins, is accessible from a root object known as the *application context*.
 
@@ -63,8 +61,7 @@ SCIFIO provides several additional services—in particular:
 
 -   **{% include javadoc project='SCIFIO' package='io/scif/services' class='FormatService' %}** - Service for managing available image formats.
 
-Menuing system
-==============
+# Menuing system
 
 The SciJava menuing system is divided into several layers, to make it easier to override its behavior or customize its appearance in a user interface.
 
@@ -84,13 +81,11 @@ The {% include javadoc package='org/scijava/ui' class='UIService' %} then takes 
 
 When modules are added, removed or changed (via {% include javadoc package='org/scijava/module/event' class='ModulesAddedEvent' %}, {% include javadoc package='org/scijava/module/event' class='ModulesRemovedEvent' %}, {% include javadoc package='org/scijava/module/event' class='ModulesUpdatedEvent' %}), the `MenuService` listens and updates the associated `ShadowMenu`(s) accordingly. It notifies interested parties that it has done so by firing a corresponding event: {% include javadoc package='org/scijava/menu/event' class='MenusAddedEvent' %}, {% include javadoc package='org/scijava/menu/event' class='MenusRemovedEvent' %}, or {% include javadoc package='org/scijava/menu/event' class='MenusUpdatedEvent' %}.
 
-API Version History
-===================
+# API Version History
 
 A history of API changes is available at: https://abi-laboratory.pro/java/tracker/timeline/scijava-common/
 
-Further reading
-===============
+# Further reading
 
 -   [SciJava web site](https://scijava.org/)
 -   [SciJava Common presentation](https://scijava.org/scijava-common/scijava-common.html)

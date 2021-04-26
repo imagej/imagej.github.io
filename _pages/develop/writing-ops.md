@@ -7,8 +7,7 @@ section: Development:Guides
 
 This tutorial is designed to guide developers through the options, processes and motivations for adding Ops outside the core {% include github org='imagej' repo='imagej-ops' label='imagej-ops' %} project. Because this tutorial caters to external developers, in this tutorial we show how a [BAR](/plugins/bar) function could be converted to an Op.
 
-Make your first Op
-==================
+# Make your first Op
 
 At the most fundamental level, an Op is a SciJava [Plugin](https://github.com/scijava/scijava-common/blob/scijava-common-2.47.0/src/main/java/org/scijava/plugin/Plugin.java) encapsulating a piece of functionality, which can be discovered and used by a central [OpService](https://github.com/imagej/imagej-ops/blob/imagej-ops-0.18.0/src/main/java/net/imagej/ops/OpService.java).
 
@@ -100,8 +99,7 @@ With these two components, you can start using your Op - for example, in the [sc
     # Print the result of running our Op
     print(ops.run("gcf", 20, 7))
 
-Group your Ops in a Namespace
-=============================
+# Group your Ops in a Namespace
 
 Calling our Ops by name is not type-safe, and importing each interface is tedious. If you are going to provide a collection of Ops, a useful way to package them is within a custom [Namespace](http://javadoc.scijava.org/ImageJ/net/imagej/ops/Namespace.html).
 
@@ -225,8 +223,7 @@ Namespaces also present an easy way for users to find information about availabl
     # Print usage for all ops in the BAR namespace
     print(ops.help(bar))
 
-Potential next steps
-====================
+# Potential next steps
 
 ## Create a helper service for your Namespace
 
@@ -292,8 +289,7 @@ Then users will be able to select `Templates > BAR > GCD` from the script editor
 
 This is an easy way to provide a starting point for development using your Ops.
 
-Advanced Topics
-===============
+# Advanced Topics
 
 There are many conveniences in Op development that have not been covered in this tutorial, including:
 

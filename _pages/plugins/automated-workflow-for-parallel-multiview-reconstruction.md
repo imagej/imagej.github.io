@@ -6,8 +6,7 @@ categories: Transform,Registration,Deconvolution
 
 {% include info-box name='An automated workflow for parallel processing of large multiview SPIM recordings' software='Fiji' author=' [Christopher Schmied](https://de.linkedin.com/in/christopher-schmied-75882b101) , Peter Steinbach, Pavel Tomancak' maintainer=' [Christopher Schmied](https://de.linkedin.com/in/christopher-schmied-75882b101)' released='July 2015' latest-version='March 2016' category='[Transform](Category_Transform), [Registration](Category_Registration), [Deconvolution](Category_Deconvolution)' source=' [on github](https://github.com/mpicbg-scicomp/snakemake-workflows)' %}
 
-Citation
-========
+# Citation
 
 Please note that the automated workflow for processing SPIM data on a cluster is based on a publication. If you use it successfully for your research please be so kind to cite the following work:
 
@@ -19,8 +18,7 @@ The automated workflow is based on the Fiji plugins **[Multiview Reconstruction]
 -   S. Preibisch, F. Amat, E. Stamataki, M. Sarov, R.H. Singer, E. Myers and P. Tomancak (2014) "Efficient Bayesian-based Multiview Deconvolution", *Nature Methods*, **11**(6):645-648. [Webpage](http://www.nature.com/nmeth/journal/v11/n6/full/nmeth.2929.html)
 -   T. Pietzsch, S. Saalfeld, S. Preibisch, P. Tomancak (2015) "BigDataViewer: visualization and processing for large image data sets." *Nature Methods*, **12**(6)481–483. [Webpage](http://www.nature.com/nmeth/journal/v12/n6/full/nmeth.3392.html)
 
-Multiview reconstruction
-========================
+# Multiview reconstruction
 
 In the **[Multiview Reconstruction](/plugins/multiview-reconstruction)** (MVR) pipeline all results are written into an XML. This poses new problems for cluster processing, because several concurrently running jobs need to update the same file.
 
@@ -37,8 +35,7 @@ Some new parameters are introduced and some old parameters change names. Therefo
 
 Outdated versions of the cluster processing scripts on which this workflow is based on you can find [here](/plugins/spim-registration/on-cluster)
 
-Logic of workflow
-=================
+# Logic of workflow
 
 We map and dispatch the workflow logic either on a single maschine or on a HPC cluster using the automated workflow engine **[Snakemake](https://bitbucket.org/johanneskoester/snakemake/wiki/Home.)**. Within the *Snakefile* the workflow with the processing steps and the input and output rules is defined. Each of these steps call a Fiji *beanshell* script. These scripts in turn drive the processing via Fiji.
 
@@ -64,8 +61,7 @@ The current workflow consists of the following steps. It covers the prinicipal p
 
 10\. resave output into hdf5, creates XML for fused dataset.
 
-Supported datasets
-==================
+# Supported datasets
 
 The scripts are supporting multiple angles, multiple channels and multiple illumination direction without adjusting the Snakefile or .bsh scripts.
 
@@ -98,8 +94,7 @@ Using ImageJ Opener (.tif):
 `   Multiple illumination directions: YES (one file per illumination direction) => not tested yet`  
 `   Multiple angles: YES (one file per angle)`
 
-Fiji for workflow
-=================
+# Fiji for workflow
 
 You can download a Fiji version that we have tested for compatibility with the automated cluster processing here:
 
@@ -107,13 +102,11 @@ You can download a Fiji version that we have tested for compatibility with the a
 
 It is important to note that we can only guarantee the proper execution of the workflow with the provided Fiji version. We will from time to time upgrade to cover the latest changes in the plugins.
 
-Snakemake for workflow
-======================
+# Snakemake for workflow
 
 **[Snakemake](https://bitbucket.org/snakemake/snakemake/wiki/Home)** (command-line workflow engine) is used to automatically execute individual steps in the workflow. The workflow documented on this page was tested with snakemake 3.3 (interfaced with **[PyYAML](http://www.pyyaml.org)**(version 3.11) and **[python drmaa](https://github.com/pygridtools/drmaa-python)**(version 0.7.6) support.
 
-Automated Multiview Reconstruction workflow
-===========================================
+# Automated Multiview Reconstruction workflow
 
 Clone the repository for the workflow from **[github](https://github.com/mpicbg-scicomp/snakemake-workflows)**.
 
@@ -187,13 +180,11 @@ Compile with:
 
 where PREFIX is the installation directory. ANSI mode is necessary when compiling with our default GCC version, 4.9.2. It may or may not be necessary with older versions.
 
-Command line
-============
+# Command line
 
 It is very likely that the cluster computer does not run ANY Graphical User Interface and relies exclusively on the command line. Steering a cluster from the command line is fairly easy - I use about 10 different commands to do everything I need to do. Since the Linux command line may be unfamiliar to most biologists we start a separate **[Linux\_command\_line\_tutorial](Linux_command_line_tutorial)** and **http://swcarpentry.github.io/shell-novice/** page that explains the bare essentials.
 
-Initial setup of the workflow
-=============================
+# Initial setup of the workflow
 
 After you cloned the snakemake-workflows repository you need to configure the *config.yaml* for your setup. This means you need to specify the directory for your Fiji, the location of the xvfb-run and the location for the GPU deconvolution libraries. Go into the timelapse directory of the snakemake-workflows and open the *config.yaml* with your preferred editor for example nano and change the settings in section *7. Software directories*:
 
@@ -223,8 +214,7 @@ After you cloned the snakemake-workflows repository you need to configure the *c
 
 After this initial setup you can proceed to modify the *config.yaml* for your specific dataset.
 
-Setup for the dataset
-=====================
+# Setup for the dataset
 
 You can download a 5 view, single channel .czi example dataset here:
 
@@ -557,8 +547,7 @@ The log files are written into a new directory in the data directory called "log
 
 force certain rules: use the -R flag to rerun a particular rule and everything downstream -R <name of rule>
 
-Cluster
-=======
+# Cluster
 
 Every cluster is different both in terms of the used hardware and the software running on it, particularly the scheduling system. Here we use a cluster computer at the MPI-CBG that consists of **44** nodes each with **12** Intel Xeon E5-2640 cores running @ 2.50 GHz and enjoying **128GB** of memory. The cluster nodes have access to 200TB of data storage provided by a dedicated Lustre distributed file system, suffice to say that it is optimised for high performance input/output (read/write) operations which is crucial for the SPIM data volumes.
 

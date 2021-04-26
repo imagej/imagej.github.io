@@ -215,8 +215,7 @@ Native Library Path Prefix: `/opt/glassfishv3/glassfish/lib`
 
 ------------------------------------------------------------------------
 
-GPU Based Processing Techniques and the ImageJ Architecture
-===========================================================
+# GPU Based Processing Techniques and the ImageJ Architecture
 
 {% include warning-box content='The following article describes our first effort at GPU computing with ImageJ using OpenCL, in early 2010. The tutorial above is more recent and more complete; the text below is preserved only for historical reasons.' %}
 

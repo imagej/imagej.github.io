@@ -7,8 +7,7 @@ categories: Scripting
 
 
 
-Background
-==========
+# Background
 
 The ImageJ script editor originally would automatically import many useful classes. This provided a clear benefit to writing scripts in ImageJ, as any plugins could be used without troubling the writer to know and enumerate the required classes.
 
@@ -16,8 +15,7 @@ However, there were drawbacks to this method as well. As the imports were not tr
 
 Today, ImageJ has a flexible and extensible automatic import mechanism: the [ScriptHeader](https://github.com/scijava/scijava-common/blob/181c016330be30861b573b70fb934f0b23c30447/src/main/java/org/scijava/script/ScriptHeader.java).
 
-How ScriptHeaders works
-=======================
+# How ScriptHeaders works
 
 ScriptHeaders are [SciJava](SciJava) plugins, so they can be distributed with any part of ImageJ or Fiji and will automatically be discovered.
 
@@ -27,8 +25,7 @@ Added lines may be language-specific imports, `@Parameter` script parameters, co
 
 The result is that the script-writer sees exactly what is added. If they need to make changes of any type, they can do so easily within the editor. When a script is complete, it is then able to be run in any context and not just ImageJ where the auto-imports are present.
 
-How to: Activate a Header
-=========================
+# How to: Activate a Header
 
 1.  Open the [Script Editor](/scripting/script-editor)
 2.  Select a language from the Language Menu
@@ -39,8 +36,7 @@ That's it! If one or more ScriptHeader(s) exist for the selected language, they 
 
 By default, headers will only be added when switching away from `Language = None`. The ScriptHeader population logic itself can be overridden by providing a higher-priority [ScriptHeaderService](https://github.com/scijava/scijava-common/blob/181c016330be30861b573b70fb934f0b23c30447/src/main/java/org/scijava/script/ScriptService.java).
 
-How to: Add a New Header
-========================
+# How to: Add a New Header
 
 A skeleton ScriptHeader is provided below. Simply resolve the marked TODOs and you can distribute your header as appropriate.
 

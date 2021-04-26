@@ -7,15 +7,13 @@ categories: Scripting
 
 
 
-Introduction
-============
+# Introduction
 
 ImageJ and Fiji are able to run scripts written in [different languages](/scripting#supported-languages). Besides all the differences the approach on how to use the [API of ImageJ](http://javadoc.imagej.net/) is similar for all of them. This article will introduce the basic concepts and is valid for all scripting languages.
 
 {% include info-box content='The examples are written in Groovy, but they are easy to adapt for any other scripting language ImageJ supports. For the ImageJ1 macro language, refer to the dedicated section in Languages.' %}
 
-Importing classes, services and functions
-=========================================
+# Importing classes, services and functions
 
 Using scripting, one can access a huge number of classes and functions available in Fiji.  
 The most common ones are provided by the ImageJ and ImageJ2 API.  
@@ -28,8 +26,7 @@ For instance you might come across the `PrefService` responsible for the storage
 
     import ij.IJ // classical ImageJ1 import statement
 
-Get an image and perform an action
-==================================
+# Get an image and perform an action
 
 First we want to learn different ways to select an image and perform an action on it. In [ImageJ1](/software/imagej1) the image is represented by an [ImagePlus](http://javadoc.imagej.net/ImageJ1/ij/ImagePlus.html) object. The recommended way to select an ImagePlus object is to use [Script Parameters](/scripting/parameters):
 
@@ -67,8 +64,7 @@ Finally we want to use the [WindowManager](http://javadoc.imagej.net/ImageJ1/ij/
 
 This is nearly identical to the use of `IJ.getImage()` and therefore not recommended. The WindowManager class contains some useful methods that can be used to select more than one image (e.g. `getImageTitles()` and `getIDList()`.
 
-Opening images
-==============
+# Opening images
 
 In ImageJ there are many different ways to open images (or more general datasets). We want to introduce some of them.
 
@@ -112,8 +108,7 @@ If a script only depends on ImageJ1 functionality, one can use the function `IJ.
     // Display the ImagePlus.
     imagePlus.show()
 
-ImagePlus, ImageStack and ImageProcessor Conversion
-===================================================
+# ImagePlus, ImageStack and ImageProcessor Conversion
 
 When working with the ImageJ API you will run into the problem that you have e.g. a ImageProcessor, but what you need right now is a ImagePlus.
 
@@ -140,8 +135,7 @@ To convert one to another use these commands:
 
 The following scheme depicts the relations between the different classes. <img src="/media/Image Class Hierarchy.png" title="fig:Image_Class_Hierarchy.png" width="600" alt="Image_Class_Hierarchy.png" />
 
-Loop over Roi in Roi Manager
-============================
+# Loop over Roi in Roi Manager
 
 This small IJmacro scriptlet loops over the roi in the Roi Manager, selecting one at a time.
 
@@ -169,8 +163,7 @@ Since version 1.52v11 of ImageJ, one can directly loop over the roi in a RoiMana
     for roi in RoiManager.getInstance():
         print roi
 
-Calling a script from another script
-====================================
+# Calling a script from another script
 
 There are different ways to call a script from another script.  
 Generally, the called script is executed in the same thread than the calling script, which means that the calling script will wait that the called script terminates before going on with the rest of the execution.
@@ -234,8 +227,7 @@ Here the example of a mainScript calling a subScript both in Jython.
 
 subScript must use \#@ Script Parameters for the inputs, and mainScript pass the arguments to subScript as a list of `field, value`
 
-Calling external programs
-=========================
+# Calling external programs
 
 Similar to the macro language, one can use the `exec` method available via [java.lang.Runtime](https://docs.oracle.com/javase/7/docs/api/java/lang/Runtime.html) class.  
 Note that the code below execute the external program and directly execute the rest of the script. It does not wait for the external process to finish (which is also possible by doing some extra command on the `proc` object).  
@@ -253,8 +245,7 @@ In Jython this looks like:
 
     print("Done")
 
-Links
-=====
+# Links
 
 -   [ImageJ API examples](/develop/ij1-plugins#imagejs-api)
 -   [ImageJ tutorials repository](https://github.com/imagej/tutorials/tree/master/howtos/src/main/java/howto)

@@ -10,8 +10,7 @@ categories: tutorials
 {% endcapture %}
 {% include info-box software='ImageJ' name='Edit LUT As Text' author='Johannes Schindelin' maintainer='Johannes Schindelin' source=source status='stable' category='[Color processing](Category_Color_processing)' %}
 
-Purpose
-=======
+# Purpose
 
 Demonstrate how to call ImageJ's editor and extend the menu in a Jython script.
 

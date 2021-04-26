@@ -7,16 +7,14 @@ section: Help
 
 A bug report is a reproducible set of steps describing a problem. They are a common communication medium between users and developers. Users willing to take the time to write helpful bug reports drive the development of ImageJ, making it a better product for everyone.
 
-TL;DR Summary
-=============
+# TL;DR Summary
 
 -   Report the issue using the [Report a Bug](/help/report-a-bug) plugin (in the Help menu).
 -   Provide a [minimal, complete, verifiable example](http://stackoverflow.com/help/mcve) (MCVE).
 -   [Describe what you already tried](http://whathaveyoutried.com/).
 -   [Put as much effort into your question](http://stackoverflow.com/help/how-to-ask) as you expect to be put into its response.
 
-Be concise
-==========
+# Be concise
 
 Here are some quick tips for [writing a shorter letter](http://en.wikiquote.org/wiki/Blaise_Pascal):
 
@@ -29,8 +27,7 @@ Here are some quick tips for [writing a shorter letter](http://en.wikiquote.org/
 
 \[1\] For technical matters, "too much" information is certainly much preferred to "too little" information. But long paragraphs also break up the flow of information, and bog down an otherwise concise and clear bug report or question. So there is certainly a balance to be struck.
 
-Why put effort into bug reports
-===============================
+# Why put effort into bug reports
 
 For light reading, there are numerous guides and essays on [how and why to write excellent bug reports](http://www.chiark.greenend.org.uk/~sgtatham/bugs.html). ImageJ users should be aware that the development community is diverse: from publicly-funded individuals and teams to scientists and user contributors. For a largely open-source community like this, there are several key points to consider when submitting a bug:
 
@@ -38,8 +35,7 @@ For light reading, there are numerous guides and essays on [how and why to write
 -   If you encounter a bug, it is likely interfering with your desired workflow and needs to be resolved quickly. The better the bug report, the faster a developer will be able to reproduce and address the issue. Poorly written bug reports are more likely to sit unanswered—not because developers see the issue as unimportant, rather that the time required to clarify the bug report itself presents a significant barrier when setting priorities within an overflowing schedule.
 -   When you find a bug, it is unlikely that you are the only individual affected by it. By reporting a bug in a way that developers can understand, identify and resolve the issue, you are performing a necessary and valuable service to the entire ImageJ community.
 
-Components of a complete bug report
-===================================
+# Components of a complete bug report
 
 There are three critical components in an ImageJ bug report. If a report is missing any of these components, its usefulness may be limited.
 
@@ -80,8 +76,7 @@ Note: if you do upload sample data via ImageJ, you should mention the name of th
 
 For bugs working with excessively large datasets, you may need to communicate with a developer to determine the best way to test on your data.
 
-While you're waiting...
-=======================
+# While you're waiting...
 
 If you have encountered and reported a bug that is completely blocking your work, you still have options available while waiting for the issue to be resolved.
 

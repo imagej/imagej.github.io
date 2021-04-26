@@ -6,8 +6,7 @@ categories: development
 
 This page contains a loose list of ideas for cool/useful projects that have some relation to Fiji
 
-Visualization
-=============
+# Visualization
 
 ## 3-way viewer for Block-Face EM image volumes based in ImgLib cells
 
@@ -44,8 +43,7 @@ The project would consist of
 
 In Fiji, you can adjust the dynamic range of an image by calling {% include bc path='Image | Adjust | Brightness & Contrast'%}. However, this only lets you choose a linear mapping between pixel intensity and lookup table. This project aims to provide non-linear controls, such as piecewise linear functions, gamma curves, splines, etc
 
-Image processing plugins
-========================
+# Image processing plugins
 
 ## Applying machine learning to the image segmentation problem
 
@@ -116,8 +114,7 @@ Implement a simple inpainting method (i.e. restore missing/unwanted parts of the
 **Language:** Java.  
 **Mentor:** \[ Albert Cardona\])  
 
-Scripting
-=========
+# Scripting
 
 ## Add JMathLib (MATLAB clone) support
 
@@ -193,8 +190,7 @@ We already have a mechanism to jump between compile errors and locations of a st
 
 A special form of an autocorrelation (on text) should be pretty good an indication where the user repeated things that might want to be done in a loop instead. This would help users with little background in programming to write powerful plugins through the macro recorder.
 
-Fiji development environment/infrastructure
-===========================================
+# Fiji development environment/infrastructure
 
 ## GUI Testing framework
 
@@ -279,8 +275,7 @@ However, there is no connection to the script editor yet (where you could open t
 
 Additionally, there could be a mode where you open the hierarchy of objects starting with the object the cursor hovers over, updated dynamically. This could be even more useful if there was a mode to show only the listeners of the objects, so that you can easily determine what code is responsible, say, to handle the click on a specific OK button.
 
-User interface improvements
-===========================
+# User interface improvements
 
 ## Add a meta-plugin to run other plugins with ranges of parameters
 
@@ -334,8 +329,7 @@ Stephan Preibisch suggests: Add a plugin that determines from a set of extension
 
 For extra brownie points, do not hardcode the extension/plugin mapping (like HandleExtraFileTypes), but make it configurable via one or more file.
 
-Miscellaneous
-=============
+# Miscellaneous
 
 ## Alpha shapes / concave hull / other Graph Theory algorithms
 
@@ -369,7 +363,6 @@ This project requires a bit of knowledge in compiling C++ code on Linux, MacOSX 
 **Language:** Java, C++, shell  
 **Mentor:** Johannes Schindelin (johannes.schindelin@gmx.de)
 
-Other resources
-===============
+# Other resources
 
 There is a wish list on the [ImageJ Documentation Wiki](http://imagejdocu.tudor.lu/doku.php?id=wishlist:start&s%5b%5d=ideas).

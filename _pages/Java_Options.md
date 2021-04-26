@@ -4,13 +4,11 @@ title: Java Options
 categories: development
 ---
 
-Introduction
-============
+# Introduction
 
 Fiji's kernel is ImageJ, which is written mainly in Java. Therefore, we rely on the Java virtual machine to do a good job for us. Sometimes, you have to help it, by providing some Java options to Fiji.
 
-Passing Java options to Fiji
-============================
+# Passing Java options to Fiji
 
 There are basically two ways to do that:
 
@@ -48,8 +46,7 @@ Examples:
 
 *Note*: in the last example, *Ant* gets to see the option *--help*, which Fiji would have interpreted itself if it were passed before the double dash.
 
-Useful Java options
-===================
+# Useful Java options
 
 These examples are gleaned from [Headius' blog](http://blog.headius.com/2009/01/my-favorite-hotspot-jvm-flags.html):
 

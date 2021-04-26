@@ -6,8 +6,7 @@ categories: news
 
 The second DAIS Learnathon is held at CSBD (MPI-CBG) in Dresden from June 4th to June 8th, 2018.
 
-Preparation
-===========
+# Preparation
 
 1.  Follow the Gitter channel for news: https://gitter.im/juglab/DaisLearnathon18
 2.  Bring your laptop

@@ -7,10 +7,8 @@ categories: Colocalization,Plugins
 {% include wip%}
 
 
-What is Colocalize?
-===================
+# What is Colocalize?
 
-How to Use Colocalize
-=====================
+# How to Use Colocalize
 
  

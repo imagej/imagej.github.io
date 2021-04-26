@@ -18,8 +18,7 @@ osrc: dscho
 
 ... was involved in the [Fiji](/fiji) and [ImageJ2](/software/imagej2) projects helping with programming, algorithms, educating scientists about the fine points of scientific image analysis, planning experiments, and generally cheering up people.
 
-A short story about Fiji
-========================
+# A short story about Fiji
 
 This story is not about {% include wikipedia title='Fiji' text='the island called "Fiji"' %}. This story is how [Fiji Is Just ImageJ](https://fiji.sc) became born.
 

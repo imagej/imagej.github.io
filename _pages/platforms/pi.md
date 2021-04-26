@@ -10,8 +10,7 @@ section: Learn:Supported Platforms
 
 
 
-Installation
-============
+# Installation
 
 {% include imagej1 content='You might notice there is as an `imagej` package available from your package manager. Please be aware that this provides [ImageJ 1.x](/software/imagej1) only, packaged by a third party, without cooperation from the core ImageJ development team. You will not have access to any [ImageJ2](/software/imagej2)-specific features such as [parameterized scripts](/scripting/parameters), and you will likely have permissions errors because it is a system-wide ImageJ installation.' %}The following steps describe how to install ImageJ on a Raspberry Pi:
 
@@ -54,25 +53,21 @@ The following steps describe how to create a desktop icon to launch Fiji on a Ra
 4.  In the terminal window, type the following to navigate to the Desktop `cd ~/Desktop`
 5.  Then type the following to make the new icon executable `chmod +x Fiji.desktop`
 
-3D Visualization
-================
+# 3D Visualization
 
 It is supposedly possible to run [Java 3D](/libs/java-3d) on the Pi; see [this StackOverflow thread](http://stackoverflow.com/questions/28529344/how-to-run-java3d-on-rpi-2). However, there have been no official reported successes on ImageJ community channels yet. If you get it working, please edit this section to describe the steps you used!
 
 Even better, if you get [ClearVolume](/plugins/clearvolume) and/or [SciView](/plugins/sciview) working on the Pi, please update this page, and announce it on the [Image.sc Forum](/help)!
 
-Troubleshooting
-===============
+# Troubleshooting
 
 See the [Troubleshooting](/help/troubleshooting) page.
 
-Frequently Asked Questions
-==========================
+# Frequently Asked Questions
 
 See the [Frequently Asked Questions](/help/faq) page.
 
-See also
-========
+# See also
 
 -   Topics tagged [raspberry-pi](https://forum.image.sc/tags/raspberry-pi) on the [Image.sc Forum](/help).
 -   The [Linux](/platforms/linux) page, for general information about ImageJ on Linux systems.

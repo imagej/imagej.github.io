@@ -165,13 +165,11 @@ As already mentioned the main algorithm follows the publication of *Kumar et al.
 
 **$$\chi$$-threshold:** Parameter to validate a splitline. $$\chi = \frac{c_1*CD_i+c_1*CD_j+c_2}{d(C_i,C_j)+c_1*CD_i+ c_1*CD_j+c_2}$$ Decrease threshold value if there are less split lines.
 
-Installation
-============
+# Installation
 
 If you use ImageJ just copy ij\_robust\_split.jar in your plugins folder and copy the [IJ-Blob](/plugins/ij-blob), [Vecmath](https://github.com/hharrison/vecmath), the [LIBSVM](https://www.csie.ntu.edu.tw/~cjlin/libsvm/) and the [JavaML](http://java-ml.sourceforge.net/) jars into the plugins/jars folder.
 
-How to cite
-===========
+# How to cite
 
 The best way to cite the formal methods is:
 

@@ -17,8 +17,7 @@ Segmenting your data with DenoiSeg requires 3 steps:
 
 This FIJI plugin is part of CSBDeep, a collection of neural network algorithm in FIJI. For more information about our open source implementation , examples and images, click [here](https://csbdeep.bioimagecomputing.com/tools/denoiseg/).
 
-Publication: DenoiSeg - Joint Denoising and Segmentation
-========================================================
+# Publication: DenoiSeg - Joint Denoising and Segmentation
 
 **Abstract**
 
@@ -26,8 +25,7 @@ Microscopy image analysis often requires the segmentation of objects, but traini
 
 **[Full-text](https://arxiv.org/abs/2005.02987)**
 
-Installation
-============
+# Installation
 
 The DenoiSeg FIJI Plugin is part of the CSBDeep update site. Look [here](/update-sites/following), for detailed instructions on how to install an update site. Or just follow these steps:
 
@@ -43,8 +41,7 @@ You should now have access to these plugins:
 
 ![Available DenoiSeg plugins](/media/Denoiseg-plugins.png "Available DenoiSeg plugins")
 
-Usage
-=====
+# Usage
 
 ## Training
 
@@ -142,8 +139,7 @@ Alternatively, you can <b>use the DenoiSeg menu</b>: {% include thumbnail src='/
 3.  Click `Plugins > DenoiSeg > DenoiSeg predict` and adjust the parameters as described above, with this addition:
     -   <b>`Trained model file`</b> The ZIP file containing the pretrained model (it should end with `.bioimage.io.zip`)
 
-Exporting trained models from Python to ImageJ / Fiji
-=====================================================
+# Exporting trained models from Python to ImageJ / Fiji
 
 It's possible to train a DenoiSeg neural network using Python. The required code and instructions can be found [here](https://github.com/juglab/DenoiSeg). The model that has been trained in Python, can be used in FIJI as well:
 
@@ -151,8 +147,7 @@ It's possible to train a DenoiSeg neural network using Python. The required code
 2.  Locate the exported model file
 3.  Proceed as described in [Prediction](#Prediction)
 
-Creating labelings for the training
-===================================
+# Creating labelings for the training
 
 There are many possibilities for how to create labelings. But since we get this question a lot, here is how we do it:
 

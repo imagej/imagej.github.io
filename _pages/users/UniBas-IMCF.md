@@ -5,8 +5,7 @@ title: User ›UniBas-IMCF
 
 This is a repository (update site) containing custom plugins and scripts created at the IMCF / Uni Basel, as well as some collected ImageJ plugins we are using that are not (yet) included in Fiji.
 
-Instructions
-============
+# Instructions
 
 To add the repository to your list of FiJi update sites, use this address:
 
@@ -16,8 +15,7 @@ Please see [how to follow a 3rd party update site](/update-sites/following) for 
 
 PLEASE NOTE: you also need to enable the "IBMP-CNRS" update site that is already configured in Fiji (it's just not active by default). Otherwise the ActionBars won't work.
 
-Description
-===========
+# Description
 
 ## Macros and Plugins in the IMCF repository
 

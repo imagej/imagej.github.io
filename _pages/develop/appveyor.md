@@ -7,8 +7,7 @@ section: Development:Tools
 [AppVeyor](https://ci.appveyor.com/) is a tool for [continuous integration](/develop/project-management#continuous-integration) on [Windows](/platforms/windows) platforms. It is very useful for automating builds, deployment and other tasks.
 
 
-Services
-========
+# Services
 
 Most [ImageJ](/about) and [SciJava](SciJava) builds use [Travis CI](/develop/travis). However, for Windows-specific builds, AppVeyor is used.
 

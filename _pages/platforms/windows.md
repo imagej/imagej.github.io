@@ -14,14 +14,12 @@ section: Learn:Supported Platforms
 
 
 
-Installation
-============
+# Installation
 
 {% include avoidprogramfiles%}
 
 
-Troubleshooting
-===============
+# Troubleshooting
 
 See also the [Troubleshooting](/help/troubleshooting) page.
 
@@ -33,8 +31,7 @@ If text and other UI elements appear tiny on your {% include wikipedia title='Hi
 -   Verify that you are running Windows 10 (Windows 7 and 8 do not do HiDPI scaling).
 -   In {% include bc path='ImageJ.exe|Properties|Compatibility'%}, check the "Disable display scaling on high DPI settings" option. Try with it enabled, as well as disabled—some users have reported success only with this option *off*, and others only with it *on*.
 
-Frequently Asked Questions
-==========================
+# Frequently Asked Questions
 
 See the [Frequently Asked Questions](/help/faq) page.
 

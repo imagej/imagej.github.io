@@ -18,16 +18,14 @@ section: Development:Tools
 
 Maven artifacts are published to the [SciJava Maven repository](/develop/project-management#maven).
 
-Why do we use Maven?
-====================
+# Why do we use Maven?
 
 -   We need something to take source code and package it into a useable format, *i.e.* jar files.
 -   Maven organizes dependencies for us, declaring those dependencies... as opposed to manually tracking each individual piece-of-the-puzzle.
 -   Maven is a central storage location for all developers, providing the same tools to many folks.
 -   Maven has an established concept of immutable release and development versioning – both of which are essential for reproducible science.
 
-Introduction
-============
+# Introduction
 
 Maven is a powerful tool to build Java projects and to manage their dependencies. It can build dependencies from sources, but if the sources are not available, it will look into Maven repositories from which to download the dependencies.
 
@@ -35,8 +33,7 @@ Example: let's assume that you want to build a new plugin for [ImageJ 1.x](/soft
 
 Many convenient [IDEs](/develop/ides) (integrated development environments) including [Eclipse](/develop/eclipse), [NetBeans](/develop/netbeans) and [IntelliJ](/develop/intellij) support Maven projects; therefore, using Maven is an excellent choice when trying to let every developer choose their preferred development environment.
 
-What does it take to make a new Maven project?
-==============================================
+# What does it take to make a new Maven project?
 
 ## POM and directory structure
 
@@ -126,8 +123,7 @@ The simplicity of the *pom.xml* you need comes from the fact that Maven defines 
 
 In the context of [SciJava](SciJava), you will most likely never write a *pom.xml* from scratch. You will rather more likely edit an existing one, possibly after having copied it. We recommend using the [ImageJ "Load and Display a Dataset" tutorial](https://github.com/imagej/tutorials/tree/master/maven-projects/load-and-display-dataset) as a starting point.
 
-How to find a dependency's groupId/artifactId/version (GAV)?
-============================================================
+# How to find a dependency's groupId/artifactId/version (GAV)?
 
 Most popular open source libraries upon which you might want to depend are stored in the [Maven Central repository](https://search.maven.org/). However, the ImageJ and Fiji JARs are not yet stored there, but in the [SciJava Maven repository](/develop/project-management#maven). Fortunately, you can search both at once, by visiting:
 
@@ -137,8 +133,7 @@ For example, let's suppose you want to depend on the [snakeyaml](http://snakeyam
 
 {% include tip tip='If your dependencies are in Maven Central, you can use the [quickdeps](https://github.com/ingenieux/quickdeps) tool to quickly generate dependency blocks, by scanning your project"s bytecode.' %}
 
-Depending on libraries outside the core repositories
-====================================================
+# Depending on libraries outside the core repositories
 
 If you need to depend on a library that is not present in either Maven Central or the SciJava Maven repository, first double check the project's web site for any documentation on using their library with Maven. They might provide their own public Maven repository which you could use instead (by [adding a `<repository>` to the `<repositories>` section of your POM](https://maven.apache.org/guides/mini/guide-multiple-repositories.html)).
 
@@ -161,8 +156,7 @@ For the `groupId`, it is typically best to use the reversed domain name of the l
 
 When in doubt, [contact the community](/help) with your questions.
 
-Further reading
-===============
+# Further reading
 
 -   Our very own [Maven FAQ](/develop/maven-faq)
 -   [Maven's Getting Started](https://maven.apache.org/guides/getting-started/)

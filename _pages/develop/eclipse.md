@@ -6,8 +6,7 @@ section: Development:Guides
 
 This article explains how to install, configure and use Eclipse to develop [ImageJ](/about) [components](/develop/architecture#definitions) and [plugins](/plugins). Directions correspond to Eclipse 4.4 Luna, and may need adjustment for other versions.
 
-Initial setup
-=============
+# Initial setup
 
 ## Install the Java Development Kit
 
@@ -80,8 +79,7 @@ Eclipse will import and automatically build the project(s). There should not be 
 
 If you're having trouble, how to import and build your Maven + Eclipse project, follow this video: [How To Setup and Make a Fiji Plugin](https://www.youtube.com/watch?v=YIWpoBnnLio)
 
-The Run-Debug cycle
-===================
+# The Run-Debug cycle
 
 <div style="float: right;
         width: 400px;

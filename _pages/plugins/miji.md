@@ -17,8 +17,7 @@ will start a Fiji inside [MATLAB](/scripting/matlab).
 
 {% include warning-box message='There are over 300 jar and plugin files that ship with Fiji, and depending on your operating system and configuration, you may run into **too many files open** errors (for example, on OSX [MATLAB](/scripting/matlab) seems to use the default soft limit for open files, which is typically 256). If this happens you will need to increase the open file limit per-session or system-wide. See [this guide](http://docs.basho.com/riak/latest/ops/tuning/open-files-limit/) for helpful instructions on doing so for OSX and Linux.' %}
 
-Getting started
-===============
+# Getting started
 
 ## Using MATLAB as processing core and sending results to Fiji
 
@@ -67,8 +66,7 @@ Instead, one needs to keep in mind how *run()* statements are constructed and im
 
 A set of demos made for [MATLAB](/scripting/matlab) users, and introducing how to install and use Fiji as a visualization tool for [MATLAB](/scripting/matlab) is published on the [fex](http://www.mathworks.com/matlabcentral/fileexchange/32344-hardware-accelerated-3d-viewer-for-matlab).
 
-Getting help
-============
+# Getting help
 
 To get a quick help on the available functions, call
 
@@ -79,15 +77,13 @@ Further descriptions and example code can be found on [the home page for MIJ](ht
   
 ![](/media/MIJ Splash.jpg "fig:MIJ_Splash.jpg")
 
-Alternative: do not start the Fiji GUI
-======================================
+# Alternative: do not start the Fiji GUI
 
 If you want to use the functions without starting Fiji's graphical interface, just call
 
     Miji(false);
 
-Links
-=====
+# Links
 
 A related project is [MatlabControl](http://code.google.com/p/matlabcontrol/) which allows you to start [MATLAB](/scripting/matlab) conveniently from within Java.
 

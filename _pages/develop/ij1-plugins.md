@@ -7,8 +7,7 @@ title: Developing Plugins for ImageJ 1.x
 
 {% include project content='ImageJ1 \| describes content related to' %}
 
-Plugin, script or macro?
-========================
+# Plugin, script or macro?
 
 If you want to add a new feature to ImageJ, you can either [write a script or macro](/scripting), or do it as a plugin. Scripts and macros are easier to learn, and hence often faster to develop. However, Java offers numerous advantages including better performance in many cases, as well as compile-time safety of the code.
 
@@ -16,8 +15,7 @@ If you are not sure which to choose, take a look at the [Scripting Help](/script
 
 If you are certain that you want to write a plugin in Java, keep on reading!
 
-Plugins
-=======
+# Plugins
 
 ## What are plugins (in terms of files)?
 
@@ -87,8 +85,7 @@ A general plugin looks like this:
 -   Some functions which are easy to call via macros are not available via the public Java API (e.g. {% include bc path='Image | Stacks | Plot Z-axis profile...'%})
 -   It is often quicker to write macros
 
-Rapid prototyping with the [Script Editor](/scripting/script-editor)
-====================================================================
+# Rapid prototyping with the [Script Editor](/scripting/script-editor)
 
 {% include warning-box content='Using the Script Editor for Java development is not currently recommended.  
 For Java development, proceed to the [Getting Started with Maven](#getting-started-with-maven) section.  
@@ -108,15 +105,13 @@ If you would like to use the script editor, see the sections for the [other supp
 
 <s>To plunge into writing plugins, make sure that there is an active image (e.g. a sample image), start the [Script Editor](/scripting/script-editor) ({% include bc path='File | New | Script'%}), and select the *Process Pixels* menu item from the {% include bc path='Templates | Java'%} menu. Then, run the plugin with *Run&gt;Run*.</s>
 
-Getting started with Maven
-==========================
+# Getting started with Maven
 
 The {% include github org='imagej' repo='example-legacy-plugin' label='example-legacy-plugin project' %} provides a working example, and documentation, illustrating how an ImageJ plugin should be structured from a "best practices in Maven" point of view.
 
 Using this project requires a basic understanding of [Git](/develop/git) and [Maven](/develop/maven); thus if you are already familiar with the ImageJ 1.x API, this is a reasonable starting point to learn the [project management](/develop/project-management) tools used in [ImageJ2 development](/develop/plugins).
 
-Basic workflow
-==============
+# Basic workflow
 
 All plugin development tends to follow a consistent "Design - Build - Test" workflow. Practically, this looks like:
 
@@ -127,8 +122,7 @@ All plugin development tends to follow a consistent "Design - Build - Test" work
 
 ... and repeat until your plugin is working as intended.
 
-ImageJ's API
-============
+# ImageJ's API
 
 The source of the various Fiji-related projects is spread over several source code repositories, and so is their API documentation. An overview of all the javadoc resources can be found on [this page with javadoc links](http://javadoc.imagej.net/).
 
@@ -383,8 +377,7 @@ See the {% include github org='imagej' repo='tutorials' path='maven-projects/cal
 
 Please see also the developers tips how to [use ImageJ's API effectively](/develop/tips#using-imagej-effectively).
 
-Next steps
-==========
+# Next steps
 
 See guides on:
 

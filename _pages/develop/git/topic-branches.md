@@ -9,8 +9,7 @@ section: Development:Git
 
 If you want to try something that might not work out, and you do not want anybody to know in such a case, you can keep the topic branches local.
 
-Creating a topic branch
-=======================
+# Creating a topic branch
 
 You can create a topic branch from any starting point like this:
 
@@ -28,8 +27,7 @@ The argument *branch-point* can be any commit, or tag. If you want to branch off
 
 will pull the branch *fake2* from *origin* into the current (*fake2*) branch.
 
-Switching between branches
-==========================
+# Switching between branches
 
 To switch from the current branch to another, first make sure that you have committed (or stashed) everything, and then call
 
@@ -37,8 +35,7 @@ To switch from the current branch to another, first make sure that you have comm
 
 This will switch to another branch (which now becomes your HEAD), and update the working directory. Note: only the tracked files will be updated; the untracked files will be untouched.
 
-Cherry-picking commits
-======================
+# Cherry-picking commits
 
 If you have a single commit on another branch that you would like to have in the current branch, use
 
@@ -70,8 +67,7 @@ After editing the files, stage them for commit and commit, with
 
 In case of a failed cherry-pick/rebase, this will pick up the appropriate commit message for you.
 
-Merging/Rebasing topic branches
-===============================
+# Merging/Rebasing topic branches
 
 If you finished a topic, and want to bring the changes to the branch *master*, just switch to that branch and merge the topic branch:
 
@@ -112,8 +108,7 @@ Typically, merges should be preferred to rebases, because merges show the histor
 
 However, a rebase comes in pretty handy from time to time, especially if you want to rewrite commit history, as described in the next section.
 
-Advanced topic branch editing (AKA rebase on drugs)
-===================================================
+# Advanced topic branch editing (AKA rebase on drugs)
 
 Often, a topic branch becomes a collection of nice commits and fixup commits, and maybe a few commits that are no longer necessary. In such a case, you probably want to clean up the commit history a bit. This is where the *interactive* rebase comes in.
 

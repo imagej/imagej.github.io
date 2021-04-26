@@ -7,16 +7,14 @@ artifact: net.imagej:op-finder
 
 The Op Finder is a utility for the browsing, learning, and running of all available {% include github org='imagej' groupId='imagej-ops' label='Ops' %}. Because Ops are plugins and can be dynamically extended and specialized for particular inputs, it is not practical to have static documentation on a given Op. By using the Op Finder, you are able to explore the actual list of Ops available in *your* installation. The purpose of this guide is to familiarize yourself with the basic capabilities of the Op Finder, enabling you to learn and experiment with Ops.
 
-Getting started
-===============
+# Getting started
 
 There are two ways to start up the Op Finder:
 
 1.  Using the shortcut: {% include key content='Shift\|\|L' %}
 2.  Using the menu path: {% include bc path='Plugins|Utilities|Find Ops...'%}
 
-Parts of the Op Finder
-======================
+# Parts of the Op Finder
 
 
 ![](/media/LabeledOpFinder.png "fig:LabeledOpFinder.png")
@@ -39,8 +37,7 @@ Parts of the Op Finder
 -   Hover your mouse over any part of the Op Finder to get a descriptive tool-tip.
 -   Double-click any cell to copy its contents to your clipboard.
 
-Views
-=====
+# Views
 
 Because of the extensibility of Ops, there is a lot of information to process when looking at which Ops are actually available. One goal of the Op Finder is to present this information in a way that can be easily understood. To facilitate this, multiple views are available, each tailoring the content of the Op Finder to a specific audience.
 
@@ -72,8 +69,7 @@ This view provides a comprehensive list of available Ops implementations. For ex
 2.  Code snippet for use
 3.  Defining Op class
 
-Things to do
-============
+# Things to do
 
 ## Filtering
 
@@ -157,7 +153,6 @@ The [play button](#parts-of-the-op-finder) essentially automates the process of 
 
 Thus it is recommended to run Ops primarily from the [User view](#for-users), as these Ops focus on images and numbers, which can automatically be provided by the framework (via open images and input panels, respectively).
 
-Further Reading
-===============
+# Further Reading
 
 -   For more in-depth development information, see [the guide to writing plugins](/develop/plugins).

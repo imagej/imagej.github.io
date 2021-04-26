@@ -13,8 +13,7 @@ title: Shape Filter
 {% endcapture %}
 {% include info-box software='ImageJ/Fiji' name='Shape Filter Plugin' author=author maintainer=maintainer filename='shape\_filter\_x.y.z.jar [\[1](https://github.com/thorstenwagner/ij-shape-filter/releases/latest) \]' source='Github [\[2](https://github.com/thorstenwagner/ij-shape-filter) \]' latest-version='v1.4.2 (14 July 2016)' status='active' %}
 
-General Description
-===================
+# General Description
 
 The ImageJ Shape Filter Plugin use the [\[ij-blob](https://github.com/thorstenwagner/ij-blob)\] library to characterize and filter objects in binary scenes by its shape. Therefore, several features are calculated as shown below. <img src="/media/Shape Filter GUI.png" title="fig:Shape_Filter_GUI.png" width="200" alt="Shape_Filter_GUI.png" />
 
@@ -46,7 +45,6 @@ Wagner, T and Lipinski, H 2013. IJBlob: An ImageJ Library for Connected Componen
 -   **Orientation**: The orientation of the major axis from in grad (measured counter clockwise from the positive x axis).
 -   **Fractal Box Dimension**: Estimated fractal dimension by the box count algorithm. The default box-sizes are "2,3,4,6,8,12,16,32,64".
 
-Installation
-============
+# Installation
 
 You could simply use our update site "{% include list-of-update-sites content='Biomedgroup' %}" to install the shape filter plugin.

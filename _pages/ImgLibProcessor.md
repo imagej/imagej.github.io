@@ -310,8 +310,7 @@ This can all be tied together in a plugin demo. The following code works on a fl
 -   there are a number of different operations based upon how you are iterating and how many datasets you are simultaneously working with. There is also the built in limitation that iterators are synchronized. I have written proof of concept code to generalize iteration, allowing composition of iterators into either synchronized or nested iterators, eliminating the split between Unary/Binary/NAry functions, etc. Unfinished/untested but close to working.
 -   We may want to break out SelectionFunction into ValueFunction and PositionFunction. Need to think about more
 
-Required changes to IJ1 to accommodate ImgLibProcessor
-======================================================
+# Required changes to IJ1 to accommodate ImgLibProcessor
 
 This document describes changes required to ImageJ 1.x source code that will faciitate correct behavior when passed ImgLib-backed data. It is divided into 5 sections.
 

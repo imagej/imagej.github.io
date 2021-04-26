@@ -7,8 +7,7 @@ section: Development:Tools
 {% include minibox logo='Travis.png' blurb='**Travis CI:** Build your code in the cloud!' %}[Travis CI](https://travis-ci.org/) is a tool for [continuous integration](/develop/project-management#continuous-integration). It has excellent integration with [GitHub](/develop/github), and is very useful for automating builds, deployment and other tasks. 
 
 
-Services
-========
+# Services
 
 [ImageJ](/about) and [SciJava](SciJava) projects use Travis in a variety of ways:
 
@@ -18,8 +17,7 @@ Services
 -   Keep the [javadoc](/develop/source#javadocs) site updated.
 -   Keep other web resources updated.
 
-Automatic Deployment of Maven Artifacts
-=======================================
+# Automatic Deployment of Maven Artifacts
 
 Deploying your library to a [Maven](/develop/maven) repository makes it available for other developers. It is also a [contribution requirement for the Fiji project](/fiji/contribution-requirements).
 

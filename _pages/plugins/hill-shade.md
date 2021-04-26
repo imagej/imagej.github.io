@@ -4,8 +4,7 @@ title: Hill Shade
 categories: Plugins
 ---
 
-Hill Shade
-==========
+# Hill Shade
 
 **Produces relief shading as in topographic maps, assuming that the pixel value is the height of a surface at the given position (x, y).**
 

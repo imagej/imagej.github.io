@@ -7,8 +7,7 @@ categories: Scripting
 
 ImageJ allows you to write scripts in several different languages.
 
-Getting started
-===============
+# Getting started
 
 -   Read the [ImageJ tutorial notebooks](/tutorials) to learn how to write ImageJ scripts.
 -   Press the {% include key content='\[' %} key to open the [Script Editor](/scripting/script-editor) (or {% include key content='Shift' %}-{% include key content='\[' %} to open the [Script Interpreter](/scripting/interpreter)).
@@ -18,22 +17,19 @@ Getting started
 -   See [Scripting comparisons](/scripting/comparisons) for a side-by-side comparison of scripting languages.
 -   See [:Category:Scripting](Category_Scripting) for a list of all scripting-related pages on this wiki.
 
-Supported languages
-===================
+# Supported languages
 
 ImageJ's [Script Editor](/scripting/script-editor) supports many different languages. The following table summarizes the possibilities.
 
 <table><tbody><tr class="odd"><td style="white-space: normal !important"><p>Recommended options</p></td><td></td></tr><tr class="even"><td><p><a href="/scripting/groovy">Groovy</a></p></td><td><p> {% include wikipedia title='Groovy (programming language)' text='Groovy'%} is a flexible and powerful scripting language, Java-like but less verbose and dynamically typed. Learn this, and using Java later (if needed) will become easier.</p></td></tr><tr class="odd"><td><p><a href="/scripting/macro">ImageJ Macro</a></p></td><td><p> The <a href="/software/imagej1">ImageJ 1.x</a> macro language is less powerful than the other scripting languages, but is designed to be easy to learn and use.</p></td></tr><tr class="even"><td style="white-space: nowrap"><p> <a href="/scripting/jython">Python (Jython)</a></p></td><td><p> {% include wikipedia title='Python (programming language)' text='Python'%} is a popular choice among scientists.</p></td></tr><tr class="odd"><td><p><a href="/scripting/javascript">JavaScript</a></p></td><td><p> {% include wikipedia title='JavaScript' text='JavaScript'%} is a popular choice among web developers.</p></td></tr><tr class="even"><td><p><a href="/scripting/jruby">Ruby (JRuby)</a></p></td><td><p> {% include wikipedia title='Ruby (programming language)' text='Ruby'%} is another popular choice among web developers.</p></td></tr><tr class="odd"><td><p><a href="/scripting/clojure">Lisp (Clojure)</a></p></td><td><p> {% include wikipedia title='Lisp (programming language)' text='Lisp'%} is a popular choice among computer scientists.</p></td></tr><tr class="even"><td><p><a href="/scripting/renjin">R (Renjin)</a></p></td><td><p> {% include wikipedia title='R (programming language)' text='R'%} is a popular choice among scientists and statisticians.</p></td></tr><tr class="odd"><td><p>Other options</p></td><td></td></tr><tr class="even"><td><p><a href="/develop/plugins">Java</a></p></td><td><p>You can code Java plugins in the Script Editor. This is the most difficult path, but also the most powerful.</p></td></tr><tr class="odd"><td><p><a href="/scripting/matlab">MATLAB</a></p></td><td><p>ImageJ can interface bidirectionally with MATLAB. See the <a href="/scripting/matlab">MATLAB Scripting</a> page for details.</p></td></tr><tr class="even"><td><p><a href="/scripting/beanshell">BeanShell</a></p></td><td><p> {% include wikipedia title='BeanShell' text='BeanShell'%} is an old script language, maintained mostly for backwards compatibility. It is nearly 100% compatible with Java syntax, but so is <a href="/scripting/groovy">Groovy</a>.</p></td></tr><tr class="odd"><td><p><a href="/scripting/scala">Scala</a></p></td><td><p> {% include wikipedia title='Scala (programming language)' text='Scala'%} support is currently experimental, and has bugs.</p></td></tr></tbody></table>
 
-Script parameters
-=================
+# Script parameters
 
 There is a universal `@parameter` notation available across all scripts for declaring inputs and outputs. This approach is preferred to using ImageJ 1.x `GenericDialog` because it is totally agnostic to the user interface, allowing such scripts to run in a variety of contexts.
 
 See the [script parameters](/scripting/parameters) page for details.
 
-Using an interpreter
-====================
+# Using an interpreter
 
 All scripting languages use the same basic interpreter, with the following common features.
 
@@ -59,13 +55,11 @@ On selecting text, a popup offers to:
 -   execute
 -   save to a new file
 
-Using the script editor
-=======================
+# Using the script editor
 
 You can create, edit and run scripts using the built-in [Script Editor](/scripting/script-editor). For details, please see [the Script Editor documentation](/scripting/script-editor).
 
-Adding scripts to the Plugins menu
-==================================
+# Adding scripts to the Plugins menu
 
 For the script to appear in the ImageJ menus, the following must apply:
 
@@ -100,8 +94,7 @@ Inside the example-script-collection jar, the scripts are in `./resources/script
 
 ImageJ2 (and therefore Fiji) looks for scripts in subfolders of `./scripts/` as it is already described in the previous section, and for jars in `./jars/`. ImageJ1 recognizes plugins and scripts in `./plugins/`
 
-Running scripts in headless mode
-================================
+# Running scripts in headless mode
 
 See the [Scripting Headless](/scripting/headless) page for instructions on executing scripts headlessly.
 
