@@ -53,13 +53,13 @@
 
 .menu details > summary:after {
 	content: "▶";
-	font-size: 12px;
+	font-size: 8px;
 	position: absolute;
 }
 
 .menu details[open] > summary:after {
 	content: "▼";
-	font-size: 15px;
+	font-size: 11px;
 }
 
 #sidebar-left .menu details > summary:after {
