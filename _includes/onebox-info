@@ -1,0 +1,63 @@
+{%- comment -%}
+Credit to David Ensinger:
+https://gist.github.com/davidensinger/5431869
+{%- endcomment -%}
+
+{%- capture og-title -%}
+	{%- if page.title -%}
+		{{ page.title }}
+	{%- else -%}
+		{{ site.title }}
+	{%- endif -%}
+{%- endcapture -%}
+
+{%- capture og-type -%}
+	{%- if page.title -%}
+		article
+	{%- else -%}
+		website
+	{%- endif -%}
+{%- endcapture -%}
+
+{%- capture og-description -%}
+	{%- if page.description -%}
+		{{ page.description }}
+	{%- else -%}
+		{{ site.description }}
+	{%- endif -%}
+{%- endcapture -%}
+
+{%- capture og-url -%}
+	{%- if page.url -%}
+		{{ site.url }}{{ page.url }}
+	{%- else -%}
+		{{ site.url }}
+	{%- endif -%}
+{%- endcapture -%}
+
+{%- capture og-image -%}
+	{%- if page.image -%}
+		{{ site.url }}{{ page.image }}
+	{%- else -%}
+		{{ site.url }}{{ site.image }}
+	{%- endif -%}
+{%- endcapture -%}
+
+		<meta content="{{ site.title }}" property="og:site_name">
+		<meta content="{{ og-title }}" property="og:title">
+		<meta content="{{ og-type }}" property="og:type">
+		<meta content="{{ og-description }}" property="og:description">
+		<meta content="{{ og-url }}" property="og:url">
+		<meta content="{{ og-image }}" property="og:image">
+
+{%- if page.categories -%}
+  {%- for category in page.categories limit:1 %}
+		<meta content="{{ category }}" property="article:section">
+  {% endfor -%}
+{%- endif -%}
+
+{%- if page.tags -%}
+  {%- for tag in page.tags %}
+		<meta content="{{ tag }}" property="article:tag">
+  {% endfor -%}
+{%- endif -%}

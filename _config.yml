@@ -1,5 +1,7 @@
 name: ImageJ
 title: ImageJ
+description: ImageJ is an open source image processing program designed for scientific multidimensional images.
+image: /assets/images/logo.png
 markdown: kramdown
 kramdown:
   syntax_highlighter: rogue
