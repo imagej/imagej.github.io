@@ -10,6 +10,5 @@
 		<link rel="stylesheet" href="/assets/css/plugin-grid.css"/>
 		<link rel="stylesheet" href="/assets/css/lightbox.min.css" />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7/themes/algolia-min.css"/>
-		<link rel="stylesheet" href="/assets/css/top-bar.css"/>
 		<link rel="stylesheet" href="/assets/css/search.css"/>
 		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
