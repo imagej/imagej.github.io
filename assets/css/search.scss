@@ -3,7 +3,8 @@
 ---
 
 $logoSize: 36px;
-$topBarHeight: $logoSize + 4px;
+$searchBarPadding: 5px;
+$topBarHeight: $logoSize;
 $hitTitleWidth: 200px;
 $hitIconSize: 36px;
 $hitPadding: 5px;
@@ -109,10 +110,14 @@ $shadowSize: 4px;
   font-size: inherit;
 }
 
-#searchbox {
-  margin-top: 1px;
-  width: #{'calc(100% - 1px)'};
+#search-box {
+  margin-top: $searchBarPadding;
+  width: #{'calc(100% - #{$searchBarPadding})'};
   height: $topBarHeight;
+}
+
+#search-box input {
+  height: $logoSize - 2*$searchBarPadding - 1;
 }
 
 #pagination {
