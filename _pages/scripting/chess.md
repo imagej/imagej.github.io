@@ -5,7 +5,7 @@ section: Learn:Scripting
 categories: Plugins,Scripting
 ---
 
-== Purpose ==
+## Purpose
 
 This [Jython](/scripting/jython) script illustrates how to make an image interactive.
 

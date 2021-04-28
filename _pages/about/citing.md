@@ -11,7 +11,7 @@ section: About
 -   For information on how ImageJ projects are *funded*, see [Funding](/about/funding).' %}
 
 
-== Guidelines ==
+## Guidelines
 
 We ask users to cite:
 

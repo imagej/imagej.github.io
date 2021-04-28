@@ -5,7 +5,7 @@ categories: Plugins,Segmentation,Citable
 artifact: sc.fiji:BalloonSegmentation\_
 ---
 
-== Balloon Segmentation for multicellular images ==
+## Balloon Segmentation for multicellular images
 
 ### Introduction
 

@@ -14,7 +14,7 @@ openhub: gitte
 osrc: dscho
 ---
 
-= [Johannes Schindelin](http://loci.wisc.edu/people/johannes-schindelin) =
+# Johannes Schindelin
 
 ... was involved in the [Fiji](/fiji) and [ImageJ2](/software/imagej2) projects helping with programming, algorithms, educating scientists about the fine points of scientific image analysis, planning experiments, and generally cheering up people.
 

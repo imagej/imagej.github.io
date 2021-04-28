@@ -5,7 +5,7 @@ section: Learn:Scripting
 categories: Plugins,Scripting,Unmaintained
 ---
 
-== Purpose ==
+## Purpose
 
 An example [Clojure](/scripting/clojure) script illustrating how to run concurrent threads that perform independent tasks, and how to combine their results afterwards.
 

@@ -5,7 +5,7 @@ section: Learn:Languages
 categories: Scripting
 ---
 
-= Why Macros? =
+# Why Macros?
 
 Macros can be used to
 

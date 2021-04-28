@@ -11,7 +11,7 @@ categories: Fiji
 -   For an index of citable software, see [:Category:Citable](Category_Citable).' %}
 
 
-== Publications introducing Fiji ==
+## Publications introducing Fiji
 
 -   The primary reference for citing Fiji is the paper presented in Nature Methods [Focus on Bioimage Informatics](http://www.nature.com/nmeth/focus/bioimageinformatics/index.html) in July 2012[1].
 

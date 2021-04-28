@@ -5,7 +5,7 @@ section: Learn:Scripting
 categories: Plugins,Scripting,Unmaintained
 ---
 
-== Purpose ==
+## Purpose
 
 An example [Javascript](/scripting/javascript) ImageJ script illustrating how to create java Threads for concurrent execution.
 
