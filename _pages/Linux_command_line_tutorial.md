@@ -6,7 +6,7 @@ categories: tutorials
 
 ## Connecting to the cluster
 
-We will use SSH (secure shell) to connect to the cluster. On Mac OSX we need to simply open a terminal window (under Applications-&gt;Utilities), on PC we may need to download an ssh client such as [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/).
+We will use SSH (secure shell) to connect to the cluster. On macOS we need to simply open a terminal window (under Applications-&gt;Utilities), on PC we may need to download an ssh client such as [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/).
 
 In the terminal type:
 

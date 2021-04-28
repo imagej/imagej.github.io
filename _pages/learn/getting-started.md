@@ -18,7 +18,7 @@ After starting ImageJ, you will see the main window:
 
 ![](/media/Fiji-main-window.jpg "Fiji-main-window.jpg")
 
-On Mac OS X, the menu bar will appear on the top of the screen (as with all OS X applications).
+On macOS, the menu bar will appear on the top of the screen (as with all macOS applications).
 
 ## The search bar
 

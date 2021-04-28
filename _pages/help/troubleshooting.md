@@ -13,7 +13,7 @@ section: Help
 
 You can tell which Java version ImageJ is using by clicking the ImageJ [status bar](/learn/getting-started#the-status-bar) and looking for the part that says e.g. "Java 1.8.0\_45 \[64-bit\]". The relevant number is the one after "Java 1."—so e.g. "Java 1.8.0\_45" or similar indicates Java 8, while "Java 1.7.0\_79" or similar indicates Java 7.
 
-On OS X, you can use [this script](https://raw.githubusercontent.com/ctrueden/ctr-scripts/master/java-info) to diagnose which versions of Java are installed on your system.
+On macOS, you can use [this script](https://raw.githubusercontent.com/ctrueden/ctr-scripts/master/java-info) to diagnose which versions of Java are installed on your system.
 
 See also [How do I launch ImageJ with a different version of Java?](/help/faq#how-do-i-launch-imagej-with-a-different-version-of-java).
 
@@ -23,7 +23,7 @@ To diagnose problems with ImageJ, it is often helpful to launch it in debug mode
 
 -   <img src="/media/Tux.png" height="20"/> On Linux 64-bit (from a console):
         DEBUG=1 $HOME/ImageJ.app/ImageJ-linux64
--   <img src="/media/Osx.png" height="20"/> On OS X (from Terminal):
+-   <img src="/media/Osx.png" height="20"/> On macOS (from Terminal):
         DEBUG=1 /Applications/ImageJ.app/Contents/MacOS/ImageJ-macosx
 -   <img src="/media/Win.png" height="20"/> On Windows 64-bit:
     -   Make a copy of `ImageJ-win64.exe` called `debug.exe`
@@ -237,7 +237,7 @@ These errors indicate a "version skew" between the software libraries in your Im
 
 The proper fix is for the maintainers of those update sites to reconcile the versions somehow, but as a user you can work around the issue in the meantime by disabling the problematic update site(s). Start from a fresh download of ImageJ, enabling the update sites you want one by one, testing your workflow each time. Once you determine which update site(s) causes the issue, you can create a separate copy of ImageJ with only the problematic site(s) enabled. Although you will no longer have a single ImageJ with all desired functionality enabled, keeping isolated installations will let you continue using all the plugins you need by launching each appropriate copy of ImageJ.
 
-# OS X issues
+# macOS issues
 
 ## Why does ImageJ run so slowly?
 

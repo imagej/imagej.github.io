@@ -24,9 +24,9 @@ The [Fiji](/fiji) project also includes the [BigDataViewer](/plugins/bdv) (BDV) 
 1.  BDV was originally designed for large SPIM data; opening large image files more generally currently requires some coding. But we want to change this.
 2.  Many ImageJ 1.x plugins assume the data is stored in an ImageJ 1.x data structure, which is not what BDV uses. So ["mixing and matching" IJ1 and IJ2 functionality](/libs/imagej-legacy) is tricky here. But we are working to lift these restrictions as time goes on.
 
-# Mac OS X
+# macOS
 
-## How do I set up Java 6 on OS X?
+## How do I set up Java 6 on macOS?
 
 See the [MacOS](/platforms/macos) page.
 
@@ -46,7 +46,7 @@ See the [MacOS](/platforms/macos) page.
 
 Install Java 8, and delete or rename the `ImageJ.app\java` and/or `ImageJ.app\jre` folders, if they exist. If this does not result in ImageJ using the expected Java version, check the Environment Variables ({% include bc path='Control Panel | System and Security | System | Advanced Settings | Advanced | Environment Variables'%}) for the variable "JAVA\_HOME". Update or create this variable as needed; its value should be the desired JDK or JRE that you would like to use for ImageJ (for instance: "C:\\Program Files\\Java\\jdk1.8.0\_172"). See also [Java environment variable setup](http://stackoverflow.com/questions/1672281/environment-variables-for-java-installation).
 
-### On OS X
+### On macOS
 
 Use the `--java-home` command line option:
 
@@ -77,7 +77,7 @@ Use the `--java-home` command line option:
 
 One downside of doing this is that ImageJ will launch in a separate process, which has some unintuitive side effects. For example, Ubuntu's Unity user interface will not allow you to "Pin to Launcher" in this case...
 
-## How do I setup a launcher app for OS X for running with a different JVM version?
+## How do I setup a launcher app for macOS for running with a different JVM version?
 
 Start Automator and select to create an *Application*. Double-click *Run Shell Script* in the Library/Utilities folder and replace the text content — cat — with the following:
 
@@ -199,7 +199,7 @@ Fiji is a *distribution* of ImageJ: it bundles the core ImageJ application with 
 
 ## How do I install Fiji?
 
-The installation of Fiji is described on specific pages for [MacOSX](/fiji/downloads#installation), [Windows](/fiji/downloads#installation) and [Linux](/fiji/downloads#installation).
+See [here](/fiji/downloads#installation) for instructions.
 
 ## How do I turn my ImageJ installation into a Fiji one?
 
@@ -247,7 +247,7 @@ Use the ImageJ-MATLAB [update site](/update-sites). See the [MATLAB](/scripting/
 
 This is most likely caused by version skew, i.e. when an incompatible version of a build dependency is installed. Example: if you build against *mpicbg-1.0.0.jar* and run that plugin in a Fiji which has only installed *mpicbg-0.6.1.jar*, the latter might miss some methods or classes, or even contain incompatible class definitions.
 
-To investigate, you can use `mvn dependency:copy-dependencies` on the command-line (to copy all build dependencies into *target/dependency/*) and then use your favorite Zip tool to look for the class name mentioned in the exception. In Eclipse, you can simply use Ctrl+Shift+T (or Command+Shift+T on MacOSX) to look open the respective class; If a recent enough Eclipse is used, and the default settings have not been tampered with, this will start downloading and show the source attached to the dependency.
+To investigate, you can use `mvn dependency:copy-dependencies` on the command-line (to copy all build dependencies into *target/dependency/*) and then use your favorite Zip tool to look for the class name mentioned in the exception. In Eclipse, you can simply use Ctrl+Shift+T (or Command+Shift+T on macOS) to look open the respective class; If a recent enough Eclipse is used, and the default settings have not been tampered with, this will start downloading and show the source attached to the dependency.
 
 Once you know which dependency is supposed to contain the class/method, compare the version number of the file(s) in *ImageJ.app/plugins/* and *ImageJ.app/jars/*.
 

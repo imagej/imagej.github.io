@@ -19,7 +19,7 @@ We also heartily recommend installing [Cygwin](https://www.cygwin.com/):
 
     choco install -y cyg-get
 
-</tab> <tab name="OS X"> ![ x32px](/media/Osx.png "fig: x32px") **OS X**
+</tab> <tab name="macOS"> ![ x32px](/media/Osx.png "fig: x32px") **macOS**
 
 Install [Git](/develop/git) and [Maven](/develop/maven) using [Homebrew](http://brew.sh/):
 

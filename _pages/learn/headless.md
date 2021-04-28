@@ -17,7 +17,7 @@ Unfortunately, with X11-based Java (such as on Linux, which is the most prevalen
 
 Since ImageJ 1.x was devised as a desktop application, everything -- including macros -- works through the GUI. For example, a simple `run("Open...");` will look for the action in the menu.
 
-On MacOSX, there is no problem: Aqua provides GUI-independent text rendering (mapping to the actual display using anti-aliasing). There, running in headless mode allows instantiating GUI elements such as the menu bar.
+On macOS, there is no problem: Aqua provides GUI-independent text rendering (mapping to the actual display using anti-aliasing). There, running in headless mode allows instantiating GUI elements such as the menu bar.
 
 # Possible solutions
 

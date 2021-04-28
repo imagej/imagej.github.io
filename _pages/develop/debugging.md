@@ -64,7 +64,7 @@ On Linux, you should call ImageJ using the [strace command](http://www.linuxmanp
 
     strace -Ffo syscall.log ./imagej <args>
 
-## MacOSX
+## macOS
 
 Use the *dtruss* wrapper around [dtrace](http://developer.apple.com/documentation/Darwin/Reference/ManPages/man1/dtrace.1.html) to monitor system calls:
 
@@ -82,7 +82,7 @@ Set the *LD\_DEBUG* environment variable before launching ImageJ:
 
     LD_DEBUG=1 ./imagej <args>
 
-## MacOSX
+## macOS
 
 Set the *DYLD\_PRINT\_APIS* environment variable before launching ImageJ:
 
@@ -103,7 +103,7 @@ When the Java VM hangs, the reason might be a dead-lock. Try taking a [stack tra
 
         jstack <ImageJ's PID>
 2.  For GUI-based debugging, can also attach to the ImageJ PID using the `jvisualvm` program that you can find in `java/`<platform>`/`<jdk>`/bin/`. Here you can simply press a big *Thread Dump* button to view the stack trace.
-    MacOSX users, please note that Apple decided that the VisualVM tool should no longer be shipped with the Java Development Kit; you will have to download it [from here](http://visualvm.java.net/download.html).
+    macOS users, please note that Apple decided that the VisualVM tool should no longer be shipped with the Java Development Kit; you will have to download it [from here](http://visualvm.java.net/download.html).
 
 Regardless of which method you use to acquire the stack trace, to debug you will want to acquire multiple stack traces over time and compare. If all the stack traces are in the same method execution, then that's the source of the deadlock (or slowdown).
 
@@ -127,7 +127,7 @@ But there is a very easy method to use gdb to inspect serious errors such as seg
 
 ## Using lldb
 
-On newer OS X versions, gdb has been replaced with lldb. For those familiar with gdb already, there is an [LLDB to GDB Command Map](http://lldb.llvm.org/lldb-gdb.html) cheat sheet which may be useful.
+On newer macOS versions, gdb has been replaced with lldb. For those familiar with gdb already, there is an [LLDB to GDB Command Map](http://lldb.llvm.org/lldb-gdb.html) cheat sheet which may be useful.
 
 ## Using the *hs\_err\_pid<pid>.log* files
 
@@ -308,9 +308,9 @@ On Windows, you will see a console window popping up; to copy information for pa
 
 On Linux, the output will be written to the file *.xsession-errors* in the home directory.
 
-### MacOSX
+### macOS
 
-On MacOSX, you need to remember that any application is just a directory with a special layout. So you can call ImageJ like this from the *Terminal* (which you will find in the Finder by clicking on *Go&gt;Utilities*. Example command line:
+On macOS, you need to remember that any application is just a directory with a special layout. So you can call ImageJ like this from the *Terminal* (which you will find in the Finder by clicking on *Go&gt;Utilities*. Example command line:
 
     cd /Applications/ImageJ.app/Contents/MacOS/
     cp ImageJ-macosx debug

@@ -28,7 +28,7 @@ There are several reasons ImageJ can run slowly on macOS.
 
 ### Java painting bug
 
-On OS X, older versions of Java 8 (prior to 1.8.0\_45)—as well as all versions of Java 7 (including 1.7.0\_80)—are extremely slow at displaying images. You should either upgrade to the latest version of Java 8, or revert to Java 6 (see "Frequently Asked Questions" below).
+On macOS, older versions of Java 8 (prior to 1.8.0\_45)—as well as all versions of Java 7 (including 1.7.0\_80)—are extremely slow at displaying images. You should either upgrade to the latest version of Java 8, or revert to Java 6 (see "Frequently Asked Questions" below).
 
 ### Window menu bar bug
 
@@ -36,7 +36,7 @@ There is a bug in Java 8 on MacOS which causes the application to drastically sl
 
 ### App Nap
 
-On recent versions of OS X—10.9 "Mavericks" and later—there is an "App Nap" feature which dramatically slows down applications that are not in the foreground. Leave ImageJ in the foreground while it is processing to avoid this issue. (There are also [various](http://osxdaily.com/2014/05/13/disable-app-nap-mac-os-x/) [ways](http://www.cultofmac.com/274396/disable-app-nap-specific-apps-os-x-tips/) to disable App Nap on your machine, but we have not had much success with them. If you find a solution that works, allowing ImageJ to run fast in the background, please [tell us on the forum](http://forum.imagej.net/)!)
+With macOS version 10.9 "Mavericks" and later, there is an "App Nap" feature which dramatically slows down applications that are not in the foreground. Leave ImageJ in the foreground while it is processing to avoid this issue. (There are also [various](http://osxdaily.com/2014/05/13/disable-app-nap-mac-os-x/) [ways](http://www.cultofmac.com/274396/disable-app-nap-specific-apps-os-x-tips/) to disable App Nap on your machine, but we have not had much success with them. If you find a solution that works, allowing ImageJ to run fast in the background, please [tell us on the forum](http://forum.imagej.net/)!)
 
 ## No title bar in file chooser dialogs
 
@@ -72,7 +72,7 @@ Unfortunately, El Capitan has some new java-related issues. If you upgraded to E
 
 ## Running Fiji in 32-bit mode
 
-{% include warning-box content='It may no longer be possible to start Fiji in 32-bit on recent versions of OS X. See [this bug report](https://fiji.sc/bug/1018) for details.' %} Fiji on Intel Macs runs on Java 1.6 in 64-bit mode. If you need to run it in 32-bit mode, you can do so as follows:
+{% include warning-box content='It may no longer be possible to start Fiji in 32-bit on recent versions of macOS. See [this bug report](https://fiji.sc/bug/1018) for details.' %} Fiji on Intel Macs runs on Java 1.6 in 64-bit mode. If you need to run it in 32-bit mode, you can do so as follows:
 
 1.  Launch Fiji normally, and choose {% include bc path='Edit | Options | Memory & Threads'%}.
 2.  Reduce your Maximum Memory setting to \~1800 MB or less.
@@ -97,7 +97,7 @@ We offer [a special intermediate release of Fiji specific to PowerPC Macs (G4/G5
 
 ### Advanced
 
-You can also install a third party Java 6, part of the OpenJDK project. You will need a [working X11 server](http://developer.apple.com/opensource/tools/x11.html), that you can find on your OS X disk, and MacPorts.
+You can also install a third party Java 6, part of the OpenJDK project. You will need a [working X11 server](http://developer.apple.com/opensource/tools/x11.html), that you can find on your macOS disk, and MacPorts.
 
 Execute **sudo port install openjdk6** on your Terminal. You can also install the SoyLatte Binaries, as an alternate choice. Then you can proceed with the generic Fiji Installation
 
@@ -113,17 +113,17 @@ Alternatively, right-click (or {% include key content='Ctrl' %}+{% include key c
 
 For plugins, please follow the instructions about [Installing 3rd party plugins](Installing_3rd_party_plugins). Otherwise, access the plugins folder as explained above and just drag and drop any plugin into the plugins folder, like you would do for ImageJ. Same for macros.
 
-## Installing OpenJDK for MacOSX
+## Installing OpenJDK for macOS
 
-Oracle now supports MacOSX JavaSE 7 [officially](http://www.h-online.com/open/news/item/Java-SE-7-Update-6-hands-OS-X-support-to-Oracle-1667714.html).
+As of JavaSE 7, Oracle now supports macOS [officially](http://www.h-online.com/open/news/item/Java-SE-7-Update-6-hands-OS-X-support-to-Oracle-1667714.html).
 
-It is based on [an Apple-backed effort](http://openjdk.java.net/projects/macosx-port/) to get a proper MacOSX backend into the BSD port of OpenJDK. So far, only Snow Leopard and later are supported, and preliminary builds can be found [here](http://code.google.com/p/openjdk-osx-build/).
+It is based on [an Apple-backed effort](http://openjdk.java.net/projects/macosx-port/) to get a proper macOS backend into the BSD port of OpenJDK. So far, only Snow Leopard and later are supported, and preliminary builds can be found [here](http://code.google.com/p/openjdk-osx-build/).
 
 If you are experiencing problems, say, with AWT-AppKit related crashes, and if you do not mind working with an X11-based graphical user display, you might want to try OpenJDK.
 
-As of mid-April 2011, OpenJDK for MacOSX has basic working support for Aqua, which you have to activate explicitly by passing the Java option *-Dswing.defaultlaf=com.apple.laf.AquaLookAndFeel*.
+As of mid-April 2011, OpenJDK for macOS has basic working support for Aqua, which you have to activate explicitly by passing the Java option *-Dswing.defaultlaf=com.apple.laf.AquaLookAndFeel*.
 
-Since the development of OpenJDK for MacOSX is driven exclusively by Apple employees, the minimal MacOSX version required to run OpenJDK/Aqua is 10.6. If you require Fiji to run on earlier versions of MacOSX, you will have to go back to [SoyLatte](http://landonf.bikemonkey.org/static/soylatte/), where you will also find an X11-only OpenJDK version that runs on MacOSX 10.5/PowerPC (MacOSX 10.6+ does not support PowerPC). In the alternative, you can put in a considerable effort to "backport" OpenJDK :-).
+Since the development of OpenJDK for macOS is driven exclusively by Apple employees, the minimal macOS version required to run OpenJDK/Aqua is 10.6. If you require Fiji to run on earlier versions of macOS, you will have to go back to [SoyLatte](http://landonf.bikemonkey.org/static/soylatte/), where you will also find an X11-only OpenJDK version that runs on Mac OS X 10.5/PowerPC (macOS 10.6+ does not support PowerPC). In the alternative, you can put in a considerable effort to "backport" OpenJDK :-).
 
 ## Running Fiji in the command line
 
@@ -147,6 +147,6 @@ Now you can pass, say, [Java Options](Java_Options):
 
 **Note**: to distinguish between options intended for Java and options intended for ImageJ, you need to separate the former from the latter with a double-dash: **--**. Since the default is to accept ImageJ options, you have to pass a trailing double-dash if you want to pass only Java options.
 
-## MacOSX keyboard shortcuts
+## macOS keyboard shortcuts
 
 It is often helpful to use keyboard shortcuts when using Fiji. There are also operating system specific shortcuts which can be quite helpful. For example, pressing {% include key content='Command' %}+{% include key content='Tab' %} and releasing first only the {% include key content='Tab' %} key will allow you to cycle through the running applications, while {% include key content='Command' %}+{% include key content='\`' %} will do the same for the windows opened by the current application. [Dave Polaschek](http://davespicks.com/) has [a comprehensive list](http://davespicks.com/writing/programming/mackeys.html).

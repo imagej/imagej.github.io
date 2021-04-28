@@ -25,7 +25,7 @@ When running the plugin one must specify an 'order' to the robot and some parame
 
 **KeyPress**: this order will emulate typing the entered string, but will first Click (at the current position), so the cursor is guaranteed to focus in an entry box (maybe this click is not required, please send feedback or suggestions). KeyPress currently supports the following key presses: 0-9 a-z A-Z space /.,-
 
-To emulate the \[enter\] key, type the exclamation mark '!'. Other characters are converted to '.' Note that in Mac OSX with an AZERTY keyboard, the typed string does not get interpreted correctly. Be also aware that some OS do not support some key presses.
+To emulate the \[enter\] key, type the exclamation mark '!'. Other characters are converted to '.' Note that in macOS with an AZERTY keyboard, the typed string does not get interpreted correctly. Be also aware that some OS do not support some key presses.
 
 **GetPixel**: reports to the Log window the r,g,b values of the pixel at the specified postion (requires x, y coordinates). It will also return the Width and Height of the screen, as well as the coordinates of the pixel.
 

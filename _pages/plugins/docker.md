@@ -78,11 +78,11 @@ Run Fiji with:
 
 Which should pop up a window with Fiji running.
 
-## On OSX
+## On macOS
 
 ### boot2docker
 
-To get a GUI application running on OSX, we can adapt the techniques discussed in [this docker issue](https://github.com/docker/docker/issues/8710) to run an X11 session, and share it with Docker.
+To get a GUI application running on macOS, we can adapt the techniques discussed in [this docker issue](https://github.com/docker/docker/issues/8710) to run an X11 session, and share it with Docker.
 
 First, you will need to install the following:
 
@@ -113,7 +113,7 @@ which will print output that should end with something like:
 
 And take note of the ip address on the last line (`192.168.15.2` in this case).
 
-Since you are using OSX it is assumed you are using [boot2docker](http://boot2docker.io/). Now, in the same terminal you started boot2docker, you should have set up the environment variables e.g. with
+Since you are using macOS it is assumed you are using [boot2docker](http://boot2docker.io/). Now, in the same terminal you started boot2docker, you should have set up the environment variables e.g. with
 
 ` $(boot2docker shellinit)`
 

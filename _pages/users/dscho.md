@@ -46,7 +46,7 @@ Eventually, one dark December day in 2007 (and in Scotland, December <u>is</u> a
 
 Out of frustration with my job, I had just started a distribution of [Git](/develop/git) for [Windows](https://git-for-windows.github.io/) which included making an installer, so I thought I could put together an installer pretty quickly.
 
-The first step was to get a version of ImageJ and TrakEM2 and Java (we were 100% sure that we needed to ship Java with the installer, otherwise users would get into problems with their Java 1.1.8 not being able to run Java 5 classes, let alone run at a decent speed) to run on the main platforms: Windows, MacOSX and Linux. You might not consider Linux a major platform, but it was and still is the platform Albert and me are using.
+The first step was to get a version of ImageJ and TrakEM2 and Java (we were 100% sure that we needed to ship Java with the installer, otherwise users would get into problems with their Java 1.1.8 not being able to run Java 5 classes, let alone run at a decent speed) to run on the main platforms: Windows, macOS and Linux. You might not consider Linux a major platform, but it was and still is the platform Albert and me are using.
 
 After a couple of days I showed the result to Albert. So far, there was no installer, but it was a working *portable application*, i.e. a big *.zip* file you could unpack and then double click on an executable which would run Java with all the parameters set correctly.
 
@@ -66,7 +66,7 @@ So Albert got me access to his computer. Back then, that was in Los Angeles in V
 
 By the way, this computer was called *Instar*, but I have no idea whether that was only because it was used to develop things (*instar* is a biological term describing a stage of larval development in insects).
 
-I continued to work on this Fiji thing and even got it to run on MacOSX, which was one of my goals: I wanted to support all the major platforms. Windows, MacOSX and Linux. Both 32-bit and 64-bit. It should not matter which Operating System you happened to have, the software should Just Run<sup>tm</sup>.
+I continued to work on this Fiji thing and even got it to run on macOS, which was one of my goals: I wanted to support all the major platforms. Windows, macOS and Linux. Both 32-bit and 64-bit. It should not matter which Operating System you happened to have, the software should Just Run<sup>tm</sup>.
 
 After some weeks I was reasonably comfortable with Fiji and thought about wrapping this project up, since I had plans to work for Google.
 

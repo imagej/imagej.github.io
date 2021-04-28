@@ -54,7 +54,7 @@ E.g.,
 
 `$IJ_DIR/ImageJ-linux64 -Dij1.plugin.dirs=$IJ_DIR/jars:$IJ_DIR/plugins:$HOME/.plugins`
 
--   On OS X:
+-   On macOS:
 
 `$IJ_DIR/Contents/MacOS/ImageJ-macosx -Dij1.plugin.dirs=$IJ_DIR/jars:$IJ_DIR/plugins:$HOME/.plugins`
 

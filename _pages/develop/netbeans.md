@@ -17,7 +17,7 @@ Download and install JDK 6 from the [Java web site](http://www.oracle.com/techne
 
 Download and install NetBeans from the [NetBeans web site](http://netbeans.org/downloads/). Any bundle that includes Java SE should be fine.
 
-### Setting up NetBeans on Mac OS X
+### Setting up NetBeans on macOS
 
 #### Install NetBeans
 

@@ -12,8 +12,8 @@ This page has a few war stories about having to fight with developing software w
 
 QuickTime for Java is a small component on top of the QuickTime SDK (software development kit). In theory, it should make it easy to create movies in QuickTime format. In practice, it is a hassle:
 
--   QuickTime is only supported on Windows and MacOSX. Good bye, Linux users.
--   QuickTime for Java is not supported on 64-bit MacOSX. Which means that every time you try to write a QuickTime movie on that platform, it complains that QuickTime is not installed. Good bye, almost every new MacOSX user.
+-   QuickTime is only supported on Windows and macOS. Good bye, Linux users.
+-   QuickTime for Java is not supported on 64-bit macOS. Which means that every time you try to write a QuickTime movie on that platform, it complains that QuickTime is not installed. Good bye, almost every new macOS user.
 -   QuickTime for Java does not follow a standard API (see also "Java Media Framework" below). So you will never be able to write code that writes movies in general. You will always have to special-case QuickTime. Goodbye, disgusted developers.
 
 All in all, QuickTime is just a nuisance, and were it not for Apple shipping it by default with every of their computers, the format would be long dead: the .avi format is a much more open and wider-spread format that does everything QuickTime ever could do, and more.

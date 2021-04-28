@@ -4,9 +4,6 @@ title: Git reflogs
 section: Development:Git
 ---
 
-
-
-
 # Git's reflogs
 
 ## What is a "ref"?
@@ -73,7 +70,7 @@ It will show you something like
 
         Add a Makefile target to create a .dmg file
 
-        For the moment, this script only works on MacOSX :-(
+        For the moment, this script only works on macOS :-(
 
         Signed-off-by: Johannes Schindelin <johannes.schindelin@gmx.de>
 
@@ -86,7 +83,7 @@ It will show you something like
         check-class-versions: do not delete the temporary macro file
 
         check-class-versions creates a temporary macro file which is then
-        executed in headless mode.  However, when falling back on MacOSX,
+        executed in headless mode.  However, when falling back on macOS,
         it was deleted before ImageJ saw it.
 
         Signed-off-by: Johannes Schindelin <johannes.schindelin@gmx.de>

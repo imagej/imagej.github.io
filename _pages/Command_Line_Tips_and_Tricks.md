@@ -6,7 +6,7 @@ categories: tutorials
 
 This page lists all kinds of usable hints how to use the command line in the different environments supported by Fiji.
 
-| Action                         | Linux                                   | MacOSX                    | Windows                                                                                            |
+| Action                         | Linux                                   | macOS                     | Windows                                                                                            |
 |--------------------------------|-----------------------------------------|---------------------------|----------------------------------------------------------------------------------------------------|
 | List dependencies of libraries | `ldd `<library-file>                    | `otool -L `<library-file> | `objdump -p `<library-file>` | grep "DLL Name:"`                                                   |
 | Trace system calls             | `strace -Ffo syscall.log ./fiji `<args> | `dtruss ./fiji `<args>    | Use [Sysinternal's Process Monitor](http://technet.microsoft.com/en-us/sysinternals/bb896645.aspx) |

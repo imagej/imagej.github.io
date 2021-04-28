@@ -68,7 +68,7 @@ While it was once true that Java is always slower than the equivalent in C++, th
 
 Pragmatically, one should note that there is not really a big difference in performance when comparing Java to C++.
 
-Java programs run without trouble and without recompiling on the major platforms: Windows, Mac OS X and Linux. And plugins compiled on one platform also execute on all other platforms without recompiling. And profiling and debugging is easier with Java than with C++. And all programs/plugins double as libraries.
+Java programs run without trouble and without recompiling on the major platforms: Windows, macOS and Linux. And plugins compiled on one platform also execute on all other platforms without recompiling. And profiling and debugging is easier with Java than with C++. And all programs/plugins double as libraries.
 
 So the true reason why we use Java is probably: it makes [ImageJ](/about) accessible.
 

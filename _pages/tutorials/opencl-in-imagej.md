@@ -14,7 +14,7 @@ To use OpenCL from Java in ImageJ we rely on [JOCL](http://jogamp.org/deployment
 
 ## Setting up the Development Machine
 
-We set up an Ubuntu based development machine for OpenCL development and testing. OSX 10.6, Windows 64/32, and Linux 64/32 pass the tests and are supported by this package. Here are the steps for setting up Ubuntu:
+We set up an Ubuntu based development machine for OpenCL development and testing. Mac OS X 10.6, Windows 64/32, and Linux 64/32 pass the tests and are supported by this package. Here are the steps for setting up Ubuntu:
 
 -   Obtain an ISO for Ubuntu 10.04
 -   Install Ubuntu on the target machine.

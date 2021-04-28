@@ -81,9 +81,9 @@ To get information about source files and line numbers, also pass the *-g* optio
 
 See the [OProfile manual](http://oprofile.sourceforge.net/doc/) for more information.
 
-## Shark (for MacOSX)
+## Shark (for macOS)
 
-You might find [Shark 4](http://developer.apple.com/tools/sharkoptimize.html) useful if you're on MacOSX.
+You might find [Shark 4](http://developer.apple.com/tools/sharkoptimize.html) useful if you're on macOS.
 
 # Memory profiling
 

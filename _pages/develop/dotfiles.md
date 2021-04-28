@@ -63,7 +63,7 @@ Switch to zsh:
     sudo apt-get install zsh
     sudo chsh -s /bin/zsh
 
-    # on OS X
+    # on macOS
     brew install zsh
     sudo chsh -s /usr/local/bin/zsh
 

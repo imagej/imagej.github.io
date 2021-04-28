@@ -20,7 +20,7 @@ The last version of Java 3D supported by Sun/Oracle was 1.5.2. It was packaged a
 It works with Java 6, but:
 
 -   It has a restrictive license.
--   It does not work Java 7 or 8 on OS X.
+-   It does not work with Java 7 or 8 on macOS.
 -   It does not work with Java 8 (or 7?) on some Windows systems.
 
 The Java 6 version of ImageJ works with Java 3D 1.5.2, by launching the 3D Viewer and allowing it to automatically install Java 3D; see [this page](/news/2016-05-10_-_ImageJ_HOWTO_-_Java_8,_Java_6,_Java_3D) for further details.

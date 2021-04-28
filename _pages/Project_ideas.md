@@ -357,7 +357,7 @@ Note: this is more or less implemented in the Auto\_Threshold and Auto\_Local\_T
 
 ## Integrate Micro-Manager into Fiji
 
-This project requires a bit of knowledge in compiling C++ code on Linux, MacOSX and Windows. The idea is to make a recipe that other people can use to compile new releases of [Micro-Manager](http://www.micro-manager.org/), as well as integrate it into the Fiji project for a smooth user experience. To ensure that support for Micro-Manager is not broken inadvertently, you shall add regression tests, too.
+This project requires a bit of knowledge in compiling C++ code on Linux, macOS and Windows. The idea is to make a recipe that other people can use to compile new releases of [Micro-Manager](http://www.micro-manager.org/), as well as integrate it into the Fiji project for a smooth user experience. To ensure that support for Micro-Manager is not broken inadvertently, you shall add regression tests, too.
 
 **Goal:** Provide an easy way to compile and ship Micro-Manager with Fiji.  
 **Language:** Java, C++, shell  
