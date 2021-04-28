@@ -34,51 +34,55 @@ function clearSearch() {
   refreshSearchResultsVisibility();
 }
 
-var itemsPerPage = 10;
 var selectedHit = -1;
 
 function visitSelected() {
+  var items = searchHitItems();
   var hit = Math.max(0, selectedHit);
-  var i = Math.min(hit % itemsPerPage, searchHitItems().length - 1);
-  window.location = searchHitItems()[i].parentElement.href;
+  var i = Math.min(hit, items.length - 1);
+  window.location = items[i].parentElement.href;
 }
 
 function selectHit(step) {
-  var pageCount = searchPageLinks().length - 4; // do not count << < > >> buttons
-
-  // deselect previously selected hit, if any
-  var oldHitPage = 0, oldHitIndex = -1;
-  if (selectedHit >= 0) {
-    // moved from one selected hit to another
-    // (not off the search box onto the list)
-    oldHitPage = Math.floor(selectedHit / itemsPerPage);
-    oldHitIndex = selectedHit % itemsPerPage;
-    if (oldHitIndex < searchHitItems().length) {
-      searchHitItems()[oldHitIndex].style.background = null;
-    }
-  }
+  var items = searchHitItems();
+  var oldIndex = selectedHit;
 
   // move the selected hit
   selectedHit += step;
-  if (selectedHit < -1) selectedHit = -1;
+  if (selectedHit < -1) {
+    // trying to move up from the search box
+    selectedHit = -1;
+  }
   else if (selectedHit < 0) {
     // moved off the list, back to the search box
     focusSearchBar();
   }
-  else {
-    var hitPage = Math.floor(selectedHit / itemsPerPage);
-    if (hitPage >= pageCount) hitPage = pageCount - 1;
-    if (hitPage != oldHitPage) {
-      console.log('CHANGING PAGES: ' + oldHitPage + ' -> ' + hitPage);
-      searchPageLinks()[hitPage + 2].click();
-    }
-
-    var hitIndex = selectedHit % itemsPerPage;
-    var maxIndex = searchHitItems().length - 1;
-    if (hitIndex > maxIndex) hitIndex = maxIndex;
-    searchHitItems()[hitIndex].style.background = '#7dd';
-    searchHitItems()[hitIndex].focus();
+  else if (selectedHit >= items.length) {
+    // trying to move off the bottom of the list
+    selectedHit = items.length - 1;
   }
+
+  if (oldIndex == selectedHit) return;
+
+  if (oldIndex >= 0 && oldIndex < items.length) {
+    // deselect previously selected hit
+    items[oldIndex].style.background = null;
+  }
+  if (selectedHit >= 0 && selectedHit < items.length) {
+    // highlight the new selected hit
+    items[selectedHit].style.background = '#7dd';
+    items[selectedHit].focus();
+  }
+}
+
+function selectPage(buttonIndex) {
+  var pageButtons = searchPageLinks();
+  if (buttonIndex < 0) {
+    // count negative indices from the right
+    buttonIndex += pageButtons.length;
+  }
+  pageButtons[buttonIndex].click();
+  selectedHit = -1;
 }
 
 searchInput().oninput = refreshSearchResultsVisibility;
@@ -93,13 +97,21 @@ searchClear().onkeydown = function(e) {
 searchClear().onclick = function(e) { clearSearch(); }
 
 document.addEventListener("keydown", function(e) {
+  console.log(e);
   if (isSearchActive()) {
     if (e.keyCode == 40) selectHit(1); // down arrow
     else if (e.keyCode == 38) selectHit(-1); // up arrow
+    else if (e.keyCode == 34) selectPage(-2); // page down: page + 1
+    else if (e.keyCode == 33) selectPage(1); // page up: page - 1
+    else if (e.keyCode == 35) selectPage(-1); // end: last page
+    else if (e.keyCode == 36) selectPage(0); // home: first page
     else return;
   }
   else {
-    if (e.keyCode == 76) focusSearchBar(); // L
+    if (e.keyCode == 76 && !e.shiftKey && !e.ctrlKey && !e.altKey && !e.metaKey) {
+      // NB: Only do this without modifiers, so that e.g. ctrl+L still works.
+      focusSearchBar(); // L
+    }
     else return;
   }
   e.preventDefault();
