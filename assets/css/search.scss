@@ -49,6 +49,7 @@ $shadowSize: 4px;
   background: lightgray;
   box-shadow: $shadowSize $shadowSize $shadowSize gray;
   display: none;
+  z-index: 1;
 }
 
 .ais-Hits-list {
