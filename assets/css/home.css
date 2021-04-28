@@ -1,15 +1,15 @@
 .text-success {
-    color: #28a745!important;
+  color: #28a745!important;
 }
 .text-primary {
-    color: #007bff!important;
+  color: #007bff!important;
 }
 .text-danger {
-    color: #dc3545!important;
+  color: #dc3545!important;
 }
 .text-center {
-    text-align: center!important;
-    margin-top: 2.0em;
+  text-align: center!important;
+  margin-top: 2.0em;
 }
 .text-center h1 {
   font-size: 2.5rem;
@@ -18,7 +18,7 @@
   line-height: 1.2;
 }
 .fa-5x {
-    font-size: 5em;
+  font-size: 5em;
 }
 
 /* Table Why ImageJ */
@@ -57,26 +57,26 @@
 
 @media screen and ( max-width: 780px ) {
 
-     .row-whyij {
-       flex-direction: column;
-       text-align:center;
-       vertical-align:top;
-       display: block;
-       margin-left: auto;
-       margin-right: auto;
-     }
+  .row-whyij {
+    flex-direction: column;
+    text-align:center;
+    vertical-align:top;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-     .col-4 {
-       width: 100%;
-       text-align:center;
-       vertical-align:top;
-     }
+  .col-4 {
+    width: 100%;
+    text-align:center;
+    vertical-align:top;
+  }
 
-     .row-whyij > .col-4 {
-       width: 65%;
-       align: center;
-       display: block;
-       margin-left: auto;
-       margin-right: auto;
-     }
-   }
+  .row-whyij > .col-4 {
+    width: 65%;
+    align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -6,22 +6,22 @@
 
 /* Header */
 
-	body.is-preload #header .inner {
-		-moz-transform: none;
-		-webkit-transform: none;
-		-ms-transform: none;
-		transform: none;
-		opacity: 1;
-	}
+body.is-preload #header .inner {
+	-moz-transform: none;
+	-webkit-transform: none;
+	-ms-transform: none;
+	transform: none;
+	opacity: 1;
+}
 
-		body.is-preload #header .inner .actions {
-			-moz-transform: none;
-			-webkit-transform: none;
-			-ms-transform: none;
-			transform: none;
-			opacity: 1;
-		}
+body.is-preload #header .inner .actions {
+	-moz-transform: none;
+	-webkit-transform: none;
+	-ms-transform: none;
+	transform: none;
+	opacity: 1;
+}
 
-	body.is-preload #header:after {
-		opacity: 0;
-	}
+body.is-preload #header:after {
+	opacity: 0;
+}

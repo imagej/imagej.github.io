@@ -46,8 +46,8 @@ $shadowSize: 4px;
   width: #{'calc(100% - #{$logoSize + $shadowSize + 3})'};
   top: $topBarHeight + $shadowSize;
   left: $logoSize;
-  background: lightgray;
-  box-shadow: $shadowSize $shadowSize $shadowSize gray;
+  background: #eee;
+  box-shadow: $shadowSize $shadowSize $shadowSize lightgray;
   display: none;
   z-index: 1;
 }

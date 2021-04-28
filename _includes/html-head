@@ -3,14 +3,13 @@
 		{% include onebox-info %}
 		<link rel="shortcut icon" href="./favicon.png">
 		<link rel="stylesheet" href="/assets/css/main.css" />
-		<link rel="stylesheet" href="/assets/css/menus.css" />
-		<link rel="stylesheet" href="/assets/css/infoboxes.css" />
 		<link rel="stylesheet" href="/assets/css/sidebars.css" />
-		<link rel="stylesheet" href="/assets/css/statbox.css"/>
-		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
-		<link rel="stylesheet" href="/assets/css/lightbox.min.css" />
-		<link rel="stylesheet" href="/assets/css/debo.css" />
+		<link rel="stylesheet" href="/assets/css/hamburger.css" />
+		<link rel="stylesheet" href="/assets/css/images.css" />
+		<link rel="stylesheet" href="/assets/css/infoboxes.css" />
 		<link rel="stylesheet" href="/assets/css/plugin-grid.css"/>
+		<link rel="stylesheet" href="/assets/css/lightbox.min.css" />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7/themes/algolia-min.css"/>
 		<link rel="stylesheet" href="/assets/css/top-bar.css"/>
 		<link rel="stylesheet" href="/assets/css/search.css"/>
+		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>

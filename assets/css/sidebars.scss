@@ -1,0 +1,250 @@
+---
+# This is a Sass file. Jekyll will compile it to plain CSS.
+---
+
+.sidebar {
+	width: 210px;
+	padding: 0 10px;
+	background: #eee;
+	box-shadow: 4px 4px 4px lightgray;
+	margin: 0 1em;
+}
+
+#left-column {
+	float: left;
+}
+
+#right-column {
+	margin-top: -70px;
+	float: right;
+}
+
+@media screen and (max-width: 780px) {
+	#right-column {
+		width: 100%;
+		margin-top: 0;
+	}
+}
+
+/* Menu */
+
+.menu {
+	font-size: 0.85em;
+}
+
+.menu h3 {
+	text-align: center;
+	font-weight: bold;
+	border-bottom: 1px solid darkgray;
+	margin-bottom: 0 2em 0.5em 2em;
+}
+
+.menu ul {
+	margin: 0;
+	border-left: 1px solid gray;
+	list-style-type: none;
+	line-height: 14px;
+}
+
+.menu > ul {
+	border: none;
+	padding: 0 0 1rem 0;
+}
+
+.menu a {
+	color: black;
+}
+
+.menu ul li {
+	margin-bottom: 0px;
+}
+
+.menu li {
+	margin: 10px 0;
+}
+
+.menu summary {
+	outline:none;
+}
+
+.menu summary.li {
+	padding-left: 1.4em;
+}
+
+.menu details>summary {
+	list-style: none;
+}
+
+.menu summary::-webkit-details-marker {
+	display: none;
+}
+
+.menu details > summary:after {
+	content: "▶";
+	font-size: 8px;
+	position: absolute;
+}
+
+.menu details[open] > summary:after {
+	content: "▼";
+	font-size: 11px;
+}
+
+#left-column .menu details > summary:after {
+	left: 200px;
+}
+
+#left-column .menu details[open] > summary:after {
+	left: 197px;
+}
+
+#right-column .menu details > summary:after {
+	right: 10px;
+}
+
+#right-column .menu details[open] > summary:after {
+	right: 8px;
+}
+
+@media screen and (max-width: 780px) {
+	.menu {
+		display: none;
+	}
+}
+
+/* Menus */
+
+.menu {
+	font-size: 0.85em;
+}
+
+.menu h3 {
+	text-align: center;
+	font-weight: bold;
+	border-bottom: 1px solid darkgray;
+	margin-bottom: 0 2em 0.5em 2em;
+}
+
+.menu ul {
+	margin: 0;
+	border-left: 1px solid gray;
+	list-style-type: none;
+	line-height: 14px;
+}
+
+.menu > ul {
+	border: none;
+	padding: 0 0 1rem 0;
+}
+
+.menu a {
+	color: black;
+}
+
+.menu ul li {
+	margin-bottom: 0px;
+}
+
+.menu li {
+	margin: 10px 0;
+}
+
+.menu summary {
+	outline:none;
+}
+
+.menu summary.li {
+	padding-left: 1.4em;
+}
+
+.menu details>summary {
+	list-style: none;
+}
+
+.menu summary::-webkit-details-marker {
+	display: none;
+}
+
+.menu details > summary:after {
+	content: "▶";
+	font-size: 8px;
+	position: absolute;
+}
+
+.menu details[open] > summary:after {
+	content: "▼";
+	font-size: 11px;
+}
+
+#left-column .menu details > summary:after {
+	left: 200px;
+}
+
+#left-column .menu details[open] > summary:after {
+	left: 197px;
+}
+
+#right-column .menu details > summary:after {
+	right: 10px;
+}
+
+#right-column .menu details[open] > summary:after {
+	right: 8px;
+}
+
+@media screen and (max-width: 780px) {
+  .menu {
+    display: none;
+  }
+}
+
+/* Statbox */
+
+#statbox {
+	font-size: small;
+	padding-bottom: 1.5em;
+}
+
+#statbox ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#statbox ul li {
+	font-size: smaller;
+	white-space: nowrap;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+
+#statbox h3 {
+	font-weight: bold;
+	text-align: center;
+	border-bottom: 1px solid darkgray;
+	margin-bottom: 0.5em;
+}
+
+#statbox img {
+	max-width: 100%;
+}
+
+#statbox #statbox-image {
+	float: left;
+	max-width: 128px;
+	max-height: 128px;
+}
+
+#statbox #statbox-name {
+	font-size: large;
+}
+
+#statbox #statbox-header {
+	text-align: center;
+}
+
+#statbox #statbox-affiliation {
+	clear: left;
+	line-height: 1.2em;
+}
