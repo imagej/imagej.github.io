@@ -18,19 +18,19 @@
 {% if item contains plugin_filter %}
 {% if plugin_page_1 == null %}
 {% capture plugin_page_1 %}
-<img src="/images/placeholder.png" height="25"><a href="{{page.url | relative_url}}">{{page.title}}</a>
+{% include plugin-index-icon %}<a href="{{page.url | relative_url}}">{{page.title}}</a>
 {% endcapture %}
 {% continue %}
 {% endif %}
 {% if plugin_page_2 == null %}
 {% capture plugin_page_2 %}
-<img src="/images/placeholder.png" height="25"><a href="{{page.url | relative_url}}">{{page.title}}</a>
+{% include plugin-index-icon %}<a href="{{page.url | relative_url}}">{{page.title}}</a>
 {% endcapture %}
 {% continue %}
 {% endif %}
 {% if plugin_page_3 == null %}
 {% capture plugin_page_3 %}
-<img src="/images/placeholder.png" height="25"><a href="{{page.url | relative_url}}">{{page.title}}</a>
+{% include plugin-index-icon %}<a href="{{page.url | relative_url}}">{{page.title}}</a>
 {% endcapture %}
 {% continue %}
 {% endif %}
