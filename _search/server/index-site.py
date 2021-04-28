@@ -26,9 +26,10 @@ def first_sentence(lines):
     s = re.sub('{%[^%]*%}', '', s)                 # strip Liquid tags
     s = re.sub('\[([^]]*)\]\([^\)]*\)', '\\1', s)  # strip Markdown links
     s = re.sub('\*+\\s*([^\*]*)\\s*\*+', '\\1', s) # strip emphasis
-    # TODO: strip or adjust more types of Markdown syntax
-    m = re.match('[^\.]*\.\\s', s)
-    return m.group(0).strip() if m else s
+    s = re.sub('\\s\\s*', ' ', s)                  # unify whitespace
+    dot = s.find('. ')
+    if dot >= 0: s = s[:dot+1]                     # cut down to first sentence
+    return s.strip()
 
 
 def connect():
