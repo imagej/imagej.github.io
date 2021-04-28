@@ -2,12 +2,18 @@
 # This is a Sass file. Jekyll will compile it to plain CSS.
 ---
 
+$sidebarWidth: 230px;
+$sidebarMargin: 12px;
+$sidebarPadding: 10px;
+$sidebarShadowSize: 4px;
+$sidebarEdge: $sidebarMargin + $sidebarPadding + $sidebarShadowSize;
+
 .sidebar {
-	width: 210px;
-	padding: 0 10px;
+	width: $sidebarWidth - $sidebarMargin;
+	margin: 0 $sidebarMargin;
+	padding: 0 $sidebarPadding;
+	box-shadow: $sidebarShadowSize $sidebarShadowSize $sidebarShadowSize lightgray;
 	background: #eee;
-	box-shadow: 4px 4px 4px lightgray;
-	margin: 0 1em;
 }
 
 #left-column {
@@ -71,7 +77,7 @@
 	padding-left: 1.4em;
 }
 
-.menu details>summary {
+.menu details > summary {
 	list-style: none;
 }
 
@@ -80,30 +86,30 @@
 }
 
 .menu details > summary:after {
-	content: "▶";
-	font-size: 8px;
+	content: "▹";
+	font-size: 10px;
 	position: absolute;
 }
 
 .menu details[open] > summary:after {
-	content: "▼";
+	content: "▿";
 	font-size: 11px;
 }
 
 #left-column .menu details > summary:after {
-	left: 200px;
+	left: $sidebarWidth - $sidebarEdge;
 }
 
 #left-column .menu details[open] > summary:after {
-	left: 197px;
+	left: $sidebarWidth - $sidebarEdge - 1;
 }
 
 #right-column .menu details > summary:after {
-	right: 10px;
+	right: $sidebarEdge;
 }
 
 #right-column .menu details[open] > summary:after {
-	right: 8px;
+	right: $sidebarEdge;
 }
 
 @media screen and (max-width: 780px) {
