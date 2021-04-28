@@ -7,7 +7,7 @@ artifact: sc.fiji:AnalyzeSkeleton\_
 
 Analysis of 2D and 3D skeleton images. For the ImageJ 1.x plugin, see [this page](http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:analyzeskeleton:start).
 
-<table><tbody><tr class="odd"><td><p>style="vertical-align:top" |{% include thumbnail src='/media/Analyze skeleton 09 13 2009.png' title='Example of AnalyzeSkeleton performance'%}</p></td></tr></tbody></table>
+<table><tbody><tr class="odd"><td><p style="vertical-align:top">{% include thumbnail src='/media/Analyze skeleton 09 13 2009.png' title='Example of AnalyzeSkeleton performance'%}</p></td></tr></tbody></table>
 
 ## General Description
 
@@ -88,7 +88,7 @@ The tutorial describes step by step how to:
 
 Using the [3D\_Viewer](/plugins/3d-viewer) libraries we can easily display the results of both, the skeletonization and the analysis:
 
-<table><tbody><tr class="odd"><td><p>style="vertical-align:top" |{% include thumbnail src='/media/Bat cochlea 3D.gif' title='Smooth (by 3D Gaussian filter) bat cochlea volume rendered in the viewer'%}</p></td><td><p>style="vertical-align:top" |{% include thumbnail src='/media/Movie skeleton rendering.gif' title='3D skeleton of bat cochlea volume rendered in the viewer after voxel classification'%}</p></td><td><p>style="vertical-align:top" |{% include thumbnail src='/media/Movie bat skel.gif' title='Bat cochlea volume rendered in the viewer with its corresponding classified skeleton'%}</p></td></tr></tbody></table>
+<table><tbody><tr class="odd"><td><p style="vertical-align:top">{% include thumbnail src='/media/Bat cochlea 3D.gif' title='Smooth (by 3D Gaussian filter) bat cochlea volume rendered in the viewer'%}</p></td><td><p style="vertical-align:top">{% include thumbnail src='/media/Movie skeleton rendering.gif' title='3D skeleton of bat cochlea volume rendered in the viewer after voxel classification'%}</p></td><td><p style="vertical-align:top">{% include thumbnail src='/media/Movie bat skel.gif' title='Bat cochlea volume rendered in the viewer with its corresponding classified skeleton'%}</p></td></tr></tbody></table>
 
 ## Scripting AnalyzeSkeleton
 
