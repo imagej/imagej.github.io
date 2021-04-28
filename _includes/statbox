@@ -29,7 +29,7 @@ the javascript only populates fields when they are empty.
 {%- comment -%}
                === GENERAL FIELDS ===
 {%- endcomment -%}
-{%- assign icon              = page.icon              -%} {%- comment -%} URL of the image icon to show in the statbox header.        {%- endcomment -%}
+{%- assign icon              = page.icon              -%} {%- comment -%} URL of the image icon to show in the statbox header         {%- endcomment -%}
 {%- assign name              = page.name              -%} {%- comment -%} Name of the component/person/etc.                           {%- endcomment -%}
 {%- assign affiliation       = page.affiliation       -%} {%- comment -%} Organizational affiliation of the person/component/etc.     {%- endcomment -%}
 {%- assign website           = page.website           -%} {%- comment -%} Primary website link for the component/person/etc.          {%- endcomment -%}
@@ -39,10 +39,10 @@ the javascript only populates fields when they are empty.
 {%- assign artifact          = page.artifact          -%} {%- comment -%} The component's groupId:artifactId                          {%- endcomment -%}
 {%- assign repository        = page.repository        -%} {%- comment -%} Maven repository where release artifact is deployed         {%- endcomment -%}
 {%- assign project           = page.project           -%} {%- comment -%} Project umbrella to which this component belongs            {%- endcomment -%}
-{%- assign source-url        = page.source-url        -%} {%- comment -%} TODO                                                        {%- endcomment -%}
-{%- assign source-label      = page.source-label      -%} {%- comment -%} TODO                                                        {%- endcomment -%}
-{%- assign license-url       = page.license-url       -%} {%- comment -%} TODO                                                        {%- endcomment -%}
-{%- assign license-label     = page.license-label     -%} {%- comment -%} TODO                                                        {%- endcomment -%}
+{%- assign source-url        = page.source-url        -%} {%- comment -%} URL where the component's source code can be found          {%- endcomment -%}
+{%- assign source-label      = page.source-label      -%} {%- comment -%} Label to use for the source code link                       {%- endcomment -%}
+{%- assign license-url       = page.license-url       -%} {%- comment -%} URL where the component's licensing details can be found    {%- endcomment -%}
+{%- assign license-label     = page.license-label     -%} {%- comment -%} Label to use for the license link                           {%- endcomment -%}
 {%- assign release-url       = page.release-url       -%} {%- comment -%} URL where most recent component release can be found        {%- endcomment -%}
 {%- assign release-version   = page.release-version   -%} {%- comment -%} Most recent component release version                       {%- endcomment -%}
 {%- assign release-date      = page.release-date      -%} {%- comment -%} Most recent component release date                          {%- endcomment -%}
@@ -59,20 +59,20 @@ the javascript only populates fields when they are empty.
 {%- comment -%}
                 === PERSON FIELDS ===
 {%- endcomment -%}
-{%- assign gravatar          = page.gravatar          -%} {%- comment -%} Personal gravatar image registered to the person.           {%- endcomment -%}
-{%- assign forum             = page.forum             -%} {%- comment -%} TODO                                                        {%- endcomment -%}
-{%- assign github            = page.github            -%} {%- comment -%} TODO                                                        {%- endcomment -%}
-{%- assign stackoverflow     = page.stackoverflow     -%} {%- comment -%} TODO                                                        {%- endcomment -%}
-{%- assign openhub           = page.openhub           -%} {%- comment -%} TODO                                                        {%- endcomment -%}
-{%- assign twitter           = page.twitter           -%} {%- comment -%} TODO                                                        {%- endcomment -%}
-{%- assign linkedin          = page.linkedin          -%} {%- comment -%} TODO                                                        {%- endcomment -%}
-{%- assign researchgate      = page.researchgate      -%} {%- comment -%} TODO                                                        {%- endcomment -%}
-{%- assign loop              = page.loop              -%} {%- comment -%} TODO                                                        {%- endcomment -%}
-{%- assign orcid             = page.orcid             -%} {%- comment -%} TODO                                                        {%- endcomment -%}
-{%- assign researcherid      = page.researcherid      -%} {%- comment -%} TODO                                                        {%- endcomment -%}
-{%- assign scopus            = page.scopus            -%} {%- comment -%} TODO                                                        {%- endcomment -%}
-{%- assign arxiv             = page.arxiv             -%} {%- comment -%} TODO                                                        {%- endcomment -%}
-{%- assign scholar           = page.scholar           -%} {%- comment -%} TODO                                                        {%- endcomment -%}
+{%- assign gravatar          = page.gravatar          -%} {%- comment -%} Personal gravatar image registered to the person            {%- endcomment -%}
+{%- assign forum             = page.forum             -%} {%- comment -%} The person's username on the Image.sc Forum                 {%- endcomment -%}
+{%- assign github            = page.github            -%} {%- comment -%} The person's username on GitHub                             {%- endcomment -%}
+{%- assign stackoverflow     = page.stackoverflow     -%} {%- comment -%} The person's username on StackOverflow                      {%- endcomment -%}
+{%- assign openhub           = page.openhub           -%} {%- comment -%} The person's username on Black Duck Open Hub                {%- endcomment -%}
+{%- assign twitter           = page.twitter           -%} {%- comment -%} The person's username on Twitter                            {%- endcomment -%}
+{%- assign linkedin          = page.linkedin          -%} {%- comment -%} The person's username on LinkedIn                           {%- endcomment -%}
+{%- assign researchgate      = page.researchgate      -%} {%- comment -%} The person's username on ResearchGate                       {%- endcomment -%}
+{%- assign loop              = page.loop              -%} {%- comment -%} The person's username on the Loop Research Network          {%- endcomment -%}
+{%- assign orcid             = page.orcid             -%} {%- comment -%} The person's ORCID                                          {%- endcomment -%}
+{%- assign researcherid      = page.researcherid      -%} {%- comment -%} The person's ResearcherID                                   {%- endcomment -%}
+{%- assign scopus            = page.scopus            -%} {%- comment -%} The person's Scopus Author Identifier                       {%- endcomment -%}
+{%- assign arxiv             = page.arxiv             -%} {%- comment -%} The person's username on arXiv                              {%- endcomment -%}
+{%- assign scholar           = page.scholar           -%} {%- comment -%} The person's Google Scholar ID                              {%- endcomment -%}
 {%- comment -%}
                  === JAVASCRIPT ===
 {%- endcomment -%}
