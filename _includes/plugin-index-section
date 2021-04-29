@@ -2,7 +2,7 @@
 {% assign plugin_page_2 = null %}
 {% assign plugin_page_3 = null %}
 {% assign plugin_filter = include.category %}
-<div class="plugin-grid">
+<div class="plugin-index">
 <table>
 <tbody>
 {% for page in site.pages %}

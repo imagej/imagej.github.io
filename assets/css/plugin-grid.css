@@ -1,5 +1,27 @@
 /* Plugin grid */
 
-.plugin-grid {
+.plugin-index {
     font-weight: 500;
+}
+
+.plugin-index table {
+    margin: 0 auto;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.plugin-index table td {
+    vertical-align: middle;
+}
+
+.plugin-index table td a {
+    vertical-align: middle;
+    padding: 0 0 1.2em 0;
+}
+
+.plugin-index table tbody tr {
+    border-left: 0;
+    border-right: 0;
+    background-color: #ffffff;
 }
