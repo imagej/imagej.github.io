@@ -328,7 +328,7 @@ Menu path {% include bc path="Plugins | BoneJ | Fractal dimension" %}.
 
 This plug-in estimates the fractal dimension of an image by applying the box-counting algorithm. In this algorithm grids of diminishing size are scanned over the image, and the number of boxes containing at least one foreground voxel is counted. As the box size decreases and the grid becomes finer, the proportion of foreground boxes increases in a fractal structure. See {% include wikipedia title="Box counting" %} for further details. BoneJ uses a fixed-grid scan, with an option to try to find the optimal covering.
 
-The box counting algorithm produces a pair of $$(log(n), -log(m))$$ values for each iteration it runs. Here n = number of boxes with foreground, and m = box size. These pairs are passed to a curve-fitting algorithm, which returns the slope of the linear function which describes them ({% include wikipedia title="Linear regression)" %}. The coefficient of this slope is the fractal dimension.
+The box counting algorithm produces a pair of $$(log(n), -log(m))$$ values for each iteration it runs. Here n = number of boxes with foreground, and m = box size. These pairs are passed to a curve-fitting algorithm, which returns the slope of the linear function which describes them ({% include wikipedia title="Linear regression" %}). The coefficient of this slope is the fractal dimension.
 
 Fractal dimension is markedly influenced by the parameters selected for the box counting algorithm, so it's worth running it several times with different values to find an accurate measure for your image.
 

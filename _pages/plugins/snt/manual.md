@@ -117,7 +117,7 @@ This home tab aggregated widgets for tracing and frequent operations.
 
 ### Auto-tracing
 
-![](/media/SNT-auto-tracing.png "fig:SNT-auto-tracing.png") **Enable A\* search algorithm** By default, SNT uses the [A\* search](https://en.wikipedia.org/wiki/A*_search_algorithm) to automatically trace paths between two manually selected points. To manually place nodes in a path, toggle this feature off. Note that it is also possible to enable other algorithms through the installation of SNT add-ons. See [Tubular Geodesics](/plugins/snt/tubular-geodesics) for details.
+![](/media/SNT-auto-tracing.png "fig:SNT-auto-tracing.png") **Enable A\* search algorithm** By default, SNT uses the {% include wikipedia title="A* search algorithm" text="A* search" %} to automatically trace paths between two manually selected points. To manually place nodes in a path, toggle this feature off. Note that it is also possible to enable other algorithms through the installation of SNT add-ons. See [Tubular Geodesics](/plugins/snt/tubular-geodesics) for details.
 
 **Hessian-based analysis** (Toggling shortcut: {% include key content='H' %}) A quick way to improve the quality and efficiency of the pathfinding is to enable this feature, in which paths are computed after filtering the image for tube-like structures. Upon such filtering, SNT will use a measure of [Tubeness](/plugins/tubeness) at each point of the image to define the best path through it, based on eigenvalues and eigenvectors of the {% include wikipedia title="Hessian matrix" %}. The later can be used to infer the likelihood that a point in the image belongs to a tube-like structure. This concept is also known as *vesselness* or *neuriteness*.
 

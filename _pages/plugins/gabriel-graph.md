@@ -12,7 +12,7 @@ categories: Plugins
 
 ## Purpose
 
-Gabriel Graph Implementation for ImageJ/Fiji See https://en.wikipedia.org/wiki/Gabriel_graph for implementation
+{% include wikipedia title="Gabriel graph" %} implementation for ImageJ/Fiji.
 
 <figure><img src="/media/Gabriel Graph Dialog.png" title="Gabriel_Graph_Dialog.png" width="200" alt="Gabriel_Graph_Dialog.png" /><figcaption aria-hidden="true">Gabriel_Graph_Dialog.png</figcaption></figure>
 

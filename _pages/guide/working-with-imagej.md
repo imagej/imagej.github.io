@@ -319,7 +319,7 @@ A pseudocolor (or indexed color) image is a single channel gray image (8, 16 or 
 
 ### True Color Images
 
-As described in [Image Types and Formats↑](#sec:Image-Types), true color images such as RGB images reflect genuine colors, i.e., the green in an RGB image reflects green color in the specimen. Color images are typically produced by color CCD[↓](#nom-ccd) cameras, in which [↓color](#index-Color-filter-array) filter arrays ({% include wikipedia title="Bayer filter)" %} are placed over the image sensor.[↓](#index-CCD)
+As described in [Image Types and Formats↑](#sec:Image-Types), true color images such as RGB images reflect genuine colors, i.e., the green in an RGB image reflects green color in the specimen. Color images are typically produced by color CCD[↓](#nom-ccd) cameras, in which [↓color](#index-Color-filter-array) filter arrays ({% include wikipedia title="Bayer filter" %}) are placed over the image sensor.[↓](#index-CCD)
 
 #### Color Spaces and Color Separation
 
