@@ -5,7 +5,7 @@ section: Learn:Languages
 categories: Scripting
 ---
 
-{% include wikipedia title='Clojure' text='Clojure'%} is a dialect of the {% include wikipedia title='Lisp (programming\_language)' text='Lisp programming language'%}. Clojure is a general-purpose programming language with an emphasis on functional programming.
+{% include wikipedia title='Clojure' text='Clojure'%} is a dialect of the {% include wikipedia title='Lisp (programming language)' text='Lisp programming language'%}. Clojure is a general-purpose programming language with an emphasis on functional programming.
 
 # Clojure tutorial for ImageJ
 
@@ -747,12 +747,12 @@ See [Scripting Help](/scripting) for more details, including how to use the buil
 
 Open the plugins/Examples/ folder in Fiji installation directory. You'll find three Clojure examples:
 
--   {% include github repo='fiji' path='plugins/Examples/Multithreaded\_Image\_Processing.clj' label='Multithreaded\_Image\_Processing.clj' %}: illustrate, with macros (via [defmacro](http://clojure.org/macros#toc9)), how to automatically multithread the processing of an image using arbitrary subdivision of the image, such as one line per thread, for as many threads as cores the CPU has.
--   {% include github repo='fiji' path='plugins/Examples/blend\_two\_images.clj' label='blend\_two\_images.clj' %}: illustrates how to open two images from an URL, and blend the gray image into each channel of the color image.
--   {% include github repo='fiji' path='plugins/Examples/celsius\_to\_fahrenheit.clj' label='celsius\_to\_fahrenheit.clj' %}: illustrates the usage of a Swing GUI, and how to instantiate anonymous classes from an interface (via [proxy](http://clojure.org/java_interop#toc20) Clojure function). This example is taken from the [Clojure website](http://clojure.org/jvm_hosted).
--   {% include github repo='fiji' path='plugins/Examples/random\_noise\_example.clj' label='random\_noise\_example.clj' %}: illustrates how to declare a function inside a closure (for private access to, in this case, a unique instance of a random number generator), and then fill all pixels of a ByteProcessor image with a random byte value.
--   {% include github repo='fiji' path='plugins/Examples/Command\_Launchers/Command\_Launcher\_Clojure.clj' label='Command\_Launcher\_Clojure.clj' %}: illustrates how to create a GUI with a KeyListener, so that the typed text changes color from red to black when it matches the name of an ImageJ command. This example is also under the [Scripting comparisons](/scripting/comparisons), along equivalent versions written in Java, [Jython](/scripting/jython), [Javascript](/scripting/javascript) and [JRuby](/scripting/jruby).
--   {% include github repo='fiji' path='plugins/Analyze/Dynamic\_ROI\_Profiler.clj' label='Dynamic ROI Profiler' %}: illustrates how to add a MouseMotionListener and a WindowListener to an ImageWindow of an open image. Reads out the ROI (Region Of Interest), and if it's a line, polyline or rectangle, plots the profile of pixel intensity along the line. As the mouse moves or edits the ROI on the image, the profile is updated.
+-   {% include github repo='fiji' path='plugins/Examples/Multithreaded_Image_Processing.clj' label='Multithreaded_Image_Processing.clj' %}: illustrate, with macros (via [defmacro](http://clojure.org/macros#toc9)), how to automatically multithread the processing of an image using arbitrary subdivision of the image, such as one line per thread, for as many threads as cores the CPU has.
+-   {% include github repo='fiji' path='plugins/Examples/blend_two_images.clj' label='blend_two_images.clj' %}: illustrates how to open two images from an URL, and blend the gray image into each channel of the color image.
+-   {% include github repo='fiji' path='plugins/Examples/celsius_to_fahrenheit.clj' label='celsius_to_fahrenheit.clj' %}: illustrates the usage of a Swing GUI, and how to instantiate anonymous classes from an interface (via [proxy](http://clojure.org/java_interop#toc20) Clojure function). This example is taken from the [Clojure website](http://clojure.org/jvm_hosted).
+-   {% include github repo='fiji' path='plugins/Examples/random_noise_example.clj' label='random_noise_example.clj' %}: illustrates how to declare a function inside a closure (for private access to, in this case, a unique instance of a random number generator), and then fill all pixels of a ByteProcessor image with a random byte value.
+-   {% include github repo='fiji' path='plugins/Examples/Command_Launchers/Command_Launcher_Clojure.clj' label='Command_Launcher_Clojure.clj' %}: illustrates how to create a GUI with a KeyListener, so that the typed text changes color from red to black when it matches the name of an ImageJ command. This example is also under the [Scripting comparisons](/scripting/comparisons), along equivalent versions written in Java, [Jython](/scripting/jython), [Javascript](/scripting/javascript) and [JRuby](/scripting/jruby).
+-   {% include github repo='fiji' path='plugins/Analyze/Dynamic_ROI_Profiler.clj' label='Dynamic ROI Profiler' %}: illustrates how to add a MouseMotionListener and a WindowListener to an ImageWindow of an open image. Reads out the ROI (Region Of Interest), and if it's a line, polyline or rectangle, plots the profile of pixel intensity along the line. As the mouse moves or edits the ROI on the image, the profile is updated.
 
 <h1>
 

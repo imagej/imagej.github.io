@@ -30,7 +30,7 @@ For the complete "developer experience", you can go through the [GitHub Bootcamp
 
 Conceptually, a **plugin** is a new piece of functionality added to ImageJ. Nearly all aspects of ImageJ are *pluggable*, meaning plugins can be provided *ad hoc* to perform specified functions. The ImageJ core needs only know what general operations are available; then when the program is running, the options for how to complete a requested operation will be determined by which plugins are available at that time.
 
-Technically, ImageJ is built on the [SciJava Common](/libs/scijava-common) plugin framework. Within this framework, a plugin is a Java class [annotated](https://docs.oracle.com/javase/tutorial/java/annotations/index.html) with the {% include github org='scijava' repo='scijava-common' tag='scijava-common-2.47.0' source='org/scijava/plugin/Plugin.java' label='@Plugin' %} annotation. Classes annotated in this way are then automatically discovered and indexed at {% include wikipedia title='Run\_time\_(program\_lifecycle\_phase)' text='"runtime"' %}, when the application is launched by a user (as opposed to {% include wikipedia title='Compile\_time' text='"compile-time"' %}).
+Technically, ImageJ is built on the [SciJava Common](/libs/scijava-common) plugin framework. Within this framework, a plugin is a Java class [annotated](https://docs.oracle.com/javase/tutorial/java/annotations/index.html) with the {% include github org='scijava' repo='scijava-common' tag='scijava-common-2.47.0' source='org/scijava/plugin/Plugin.java' label='@Plugin' %} annotation. Classes annotated in this way are then automatically discovered and indexed at {% include wikipedia title='Run time (program lifecycle phase)' text='"runtime"' %}, when the application is launched by a user (as opposed to {% include wikipedia title='Compile time' text='"compile-time"' %}).
 
 ### Plugin types
 
@@ -54,17 +54,17 @@ When plugins are retrieved from a [Context](/develop/plugins#the-context) it's p
 
 For example, given the following plugins:
 
-    @Plugin(priority=Priority.HIGH_PRIORITY)
+    @Plugin(priority=Priority.HIGH)
     public class MyService implements Service { }
 
     @Plugin(priority=224)
     public class SpecialService implements Service { }
 
-{% include expanding-box content='Which plugin would be returned first if we asked the Context for a `Service` plugin? \| &gt; The `SpecialService` plugin would come back first. If we look at the `Priority` class we see that HIGH\_PRIORITY simply [resolves to 100](https://github.com/scijava/scijava-common/blob/scijava-common-2.47.0/src/main/java/org/scijava/Priority.java#L54-L55).' %}
+{% include expanding-box content='Which plugin would be returned first if we asked the Context for a `Service` plugin? \| &gt; The `SpecialService` plugin would come back first. If we look at the `Priority` class we see that `HIGH` simply [resolves to 100](https://github.com/scijava/scijava-common/blob/scijava-common-2.47.0/src/main/java/org/scijava/Priority.java#L54-L55).' %}
 
 We can also use *relative priorities* when referring to particular priority constants. This is a nice way to give the best chance that sorting will remain the same even if these constants change in the future:
 
-    @Plugin(priority=Priority.HIGH_PRIORITY+124)
+    @Plugin(priority=Priority.HIGH+124)
     public class SpecialService implements Service { }
 
 ## What makes up the SciJava plugin framework?

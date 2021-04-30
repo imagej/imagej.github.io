@@ -470,7 +470,7 @@ Here is a simple script in **Beanshell** doing the following:
 
 # Example: color-based segmentation using clustering
 
-The following [Beanshell](/scripting/beanshell) script shows how to segment a 2D color image or stack in an automatic fashion using the {% include wikipedia title='CIELAB' text='CIELab color space'%} and two possible clustering schemes: {% include wikipedia title='K-means' text='k-means'%} and {% include wikipedia title='Expectation–maximization\_algorithm' text='expectation maximization'%} (note: if you do not have Weka's ClassificationViaClustering classifier installed, check [how to install new classifiers via Weka's package manager](/plugins/tws/how-to-install-new-classifiers)).
+The following [Beanshell](/scripting/beanshell) script shows how to segment a 2D color image or stack in an automatic fashion using the {% include wikipedia title='CIELAB' text='CIELab color space'%} and two possible clustering schemes: {% include wikipedia title='K-means' text='k-means'%} and {% include wikipedia title='Expectation–maximization algorithm' text='expectation maximization'%} (note: if you do not have Weka's ClassificationViaClustering classifier installed, check [how to install new classifiers via Weka's package manager](/plugins/tws/how-to-install-new-classifiers)).
 
     #@ ImagePlus image
     #@ int(label="Num. of clusters", description="Number of expected clusters", value=5) numClusters

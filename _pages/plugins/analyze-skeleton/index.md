@@ -43,7 +43,7 @@ Notice here that, following this notation, the number of junction voxels can be 
 -   **lowest intensity voxel**: the darkest voxel among the loop voxels will be cut (set to 0) in the input image.
 -   **lowest intensity branch**: the darkest (in average) branch among the loop branches will be cut in its darkest voxel.
 
-For the two last methods, another dialog will pop up asking the user to select the original (gray-scale) image among the open images in order to perform the intensity calculations. The cycle detection is based on a classical {% include wikipedia title='Depth-first search' text='"Depth-First Search"'%} (DFS) in the skeleton. The skeleton is treated as an {% include wikipedia title='Undirected graph\#Undirected\_graph' text='undirected graph'%}, where the end-points and junctions are the nodes and the slab-branches are the edges. While traversing the graph in the DFS fashion, the edges/branches pointing to unvisited nodes are marked as **TREE** edges, while the edges to visited nodes are marked as **BACK** edges, which involves the presence of a loop. After the edge classification, the BACK edges are backtracked following their predecessors in order to calculate all the edges belonging to each cycle and proceed with the pruning.
+For the two last methods, another dialog will pop up asking the user to select the original (gray-scale) image among the open images in order to perform the intensity calculations. The cycle detection is based on a classical {% include wikipedia title='Depth-first search' text='"Depth-First Search"'%} (DFS) in the skeleton. The skeleton is treated as an {% include wikipedia title='Undirected graph#Undirected_graph' text='undirected graph'%}, where the end-points and junctions are the nodes and the slab-branches are the edges. While traversing the graph in the DFS fashion, the edges/branches pointing to unvisited nodes are marked as **TREE** edges, while the edges to visited nodes are marked as **BACK** edges, which involves the presence of a loop. After the edge classification, the BACK edges are backtracked following their predecessors in order to calculate all the edges belonging to each cycle and proceed with the pruning.
 
 The only known limitation of this approach is shown in the presence of nested loops. In those cases, a second call to the plugin is usually enough to eliminate all the remaining loops.
 
@@ -57,7 +57,7 @@ The only known limitation of this approach is shown in the presence of nested lo
 -   The number of triple points (junctions with exactly 3 branches) and quadruple points (4 branches).
 -   The average and maximum length of branches, in the corresponding units.
 
-AnalyzeSkeleton is able to process up to **2<sup>31</sup>-1 skeletons in one single image** (only limited by [java Integer.MAX\_VALUE](http://java.sun.com/javase/6/docs/api/)).
+AnalyzeSkeleton is able to process up to **2<sup>31</sup>-1 skeletons in one single image** (only limited by [java `Integer.MAX_VALUE`](http://java.sun.com/javase/6/docs/api/)).
 
 #### Detailed information
 

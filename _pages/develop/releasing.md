@@ -18,8 +18,8 @@ The SciJava [philosophy](/develop/philosophy) is to [release early, release ofte
 Whether adding new features, fixing bugs, improving performance, etc... **development** is the process of making changes, with the goal of exposing these changes to users. To accomplish this, actively developed projects cycle through five general "phases":
 
 
-{% capture text%}
-Artifacts are files, most commonly a **{% include wikipedia title='JAR\_%28file\_format%29' text='JAR'%}** encapsulating the compiled classes for a component. Other files that may be produced as artifacts include:
+{% capture text %}
+Artifacts are files, most commonly a **{% include wikipedia title='JAR (file format)' text='JAR' %}** encapsulating the compiled classes for a component. Other files that may be produced as artifacts include:
 
 -   The project"s ** [POM](https://maven.apache.org/pom.html) **
 -   A jar with the original source files

@@ -11,7 +11,7 @@ categories: development
 
 ### Pseudocolor Image Look-Up Tables (LUTs)
 
-A [pseudocolor image](/cookbook/color-image-processing#pseudo-color) is a single channel gray image (8, 16 or 32-bit) that has color assigned to it via a lookup table, i.e. a [LUT](https://en.wikipedia.org/wiki/Lookup_table#lookup-tables-in-image-processing). A LUT is a predefined table of gray values with matching red, green, and blue values so that shadows of gray are displayed as colorized pixels. Thus, differences in color in the pseudo-colored image reflect differences in intensity of the object rather than differences in color of the specimen that has been imaged.
+A [pseudocolor image](/cookbook/color-image-processing#pseudo-color) is a single channel gray image (8, 16 or 32-bit) that has color assigned to it via a lookup table, i.e. a {% include wikipedia title='Lookup table#Lookup_tables_in_image_processing' text='LUT' %}. A LUT is a predefined table of gray values with matching red, green, and blue values so that shadows of gray are displayed as colorized pixels. Thus, differences in color in the pseudo-colored image reflect differences in intensity of the object rather than differences in color of the specimen that has been imaged.
 
 The [LUT Menu](/ij/docs/guide/146-19.html#sub:LUTMenu) of ImageJ contains a large collection of lookup tables that can be applied to a pseudocolor image.
 
@@ -167,7 +167,7 @@ Here we summarize the more advanced analysis plugins in ImageJ using the above '
 <tr class="odd">
 <td><a href="/plugins/bigwarp">BigWarp</a></td>
 <td>A tool for manual, interactive, landmark-based deformable image alignment.</td>
-<td><ul><li>Uses <a href="/plugins/bdv">BigDataViewer</a> for visualization and navigation</li><li>Uses a {% include wikipedia title='Thin_plate_spline' text='Thin Plate Spline'%} implemented {% include github org='saalfeldlab' repo='bigwarp' label='in Java' %} to build a deformation from point correspondences</li><li>Enables landmark pair placement and displays the effects of the warp on-the-fly</li></ul></td>
+<td><ul><li>Uses <a href="/plugins/bdv">BigDataViewer</a> for visualization and navigation</li><li>Uses a {% include wikipedia title='Thin plate spline' text='Thin Plate Spline'%} implemented {% include github org='saalfeldlab' repo='bigwarp' label='in Java' %} to build a deformation from point correspondences</li><li>Enables landmark pair placement and displays the effects of the warp on-the-fly</li></ul></td>
 <td><img src="/media/BigWarp.png" width="400"/></td>
 </tr>
 </tbody></table>

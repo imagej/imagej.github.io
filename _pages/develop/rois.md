@@ -36,9 +36,9 @@ The boundary behavior of a ROI is given by its **BoundaryType** enum which has t
 
 The **KnownConstant** enum is used for determining if a ROI returns `false` for all locations, or `true` for all locations. This is useful for determining if the result of an operation between ROIs results in "empty" space or "all" space.
 
--   **ALL\_FALSE** - ROI is known to return `false` for all locations
--   **ALL\_TRUE** - ROI is known to return `true` for all locations
--   **UNKNOWN** - it is undetermined what the ROI returns for all locations, most ROIs have this
+-   **`ALL_FALSE`** - ROI is known to return `false` for all locations
+-   **`ALL_TRUE`** - ROI is known to return `true` for all locations
+-   **`UNKNOWN`** - it is undetermined what the ROI returns for all locations, most ROIs have this
 
 # Combining ROIs
 
@@ -72,7 +72,7 @@ The boundary behavior of a ROI may change as a result of the operation. The belo
 
 ### Unary Operators
 
-<table><tbody><tr class="odd"><td><p>+style="caption-side:bottom; text-align: left; font-size: 0.9em; font-weight: normal;"|<sup>1</sup> Transform is {% include wikipedia title='Continuous_function' text='continuous'%} (preserves boundary behavior) and will preserve the interval bounds<br />
+<table><tbody><tr class="odd"><td><p>+style="caption-side:bottom; text-align: left; font-size: 0.9em; font-weight: normal;"|<sup>1</sup> Transform is {% include wikipedia title='Continuous function' text='continuous'%} (preserves boundary behavior) and will preserve the interval bounds<br />
 <sup>2</sup> Transform is discontinuous or doesn't preserve bounds</p></td><td><p>Operation</p></td><td><p>BoundaryType</p></td></tr><tr class="even"><td></td><td><p>open</p></td><td><p>closed</p></td></tr><tr class="odd"><td><p>negate</p></td><td><p>closed</p></td><td><p>open</p></td></tr><tr class="even"><td><p>transform<sup>1<sup></p></td><td><p>open</p></td><td><p>closed</p></td></tr><tr class="odd"><td><p>transform<sup>2<sup></p></td><td><p>unspecified</p></td><td><p>unspecified</p></td></tr></tbody></table>
 
 ### Binary Operators

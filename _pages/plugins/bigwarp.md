@@ -5,7 +5,7 @@ categories: Plugins,Visualization,Transform,Registration,Citable
 artifact: sc.fiji:bigwarp\_fiji
 ---
 
-Bigwarp is a tool for manual, interactive, landmark-based deformable image alignment. It uses the [BigDataViewer](/plugins/bdv) for visualization and navigation, and uses a {% include wikipedia title='Thin\_plate\_spline' text='Thin Plate Spline'%} implemented {% include github org='saalfeldlab' repo='bigwarp' label='in Java' %} to build a deformation from point correspondences.
+Bigwarp is a tool for manual, interactive, landmark-based deformable image alignment. It uses the [BigDataViewer](/plugins/bdv) for visualization and navigation, and uses a {% include wikipedia title='Thin plate spline' text='Thin Plate Spline'%} implemented {% include github org='saalfeldlab' repo='bigwarp' label='in Java' %} to build a deformation from point correspondences.
 
 The interface enables landmark pair placement and displays the effects of the warp on-the-fly.
 
@@ -13,7 +13,7 @@ The interface enables landmark pair placement and displays the effects of the wa
 
 Bigwarp comes with Fiji. You can access it via *Plugins {% include arrow%}
 BigDataViewer {% include arrow%}
-Big Warp*, or by modifying {% include github org='saalfeldlab' repo='bigwarp' path='scriptsbigwarp\_fiji\_demo.bsh' label='this example script' %}. If this is not visible in your installation, try updating Fiji with *Help {% include arrow%}
+Big Warp*, or by modifying {% include github org='saalfeldlab' repo='bigwarp' path='scripts/bigwarp_fiji_demo.bsh' label='this example script' %}. If this is not visible in your installation, try updating Fiji with *Help {% include arrow%}
 Update Fiji.*
 
 ## Usage

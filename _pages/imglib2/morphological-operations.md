@@ -34,7 +34,7 @@ However, we use the Imglib2 [Shape interface](https://github.com/imglib/imglib2-
 
 ## Morphological operations on `Comparable` type.
 
-Morphological operations are defined on types that have very little requirement. The data does not have to be made of numerical pixels at all. Mathematically, they are defined on partially ordered sets (complete lattices, see for instance {% include wikipedia title='Dilation (morphology)\#Dilation\_on\_complete\_lattices' text='"Dilation on complete lattices"'%}).
+Morphological operations are defined on types that have very little requirement. The data does not have to be made of numerical pixels at all. Mathematically, they are defined on partially ordered sets (complete lattices, see for instance {% include wikipedia title='Dilation (morphology)#Dilation_on_complete_lattices' text='"Dilation on complete lattices"'%}).
 
 In Imglib2, we require a little bit more than that. The data type you can use with morphological operations needs to be comparable. In practice, it must extends `Type` and `Comparable`: `T extends Type< T > & Comparable< T >`. With this, it is perfectly possible to dilate an image of strings by a 3x3 square strel:
 

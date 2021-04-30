@@ -20,7 +20,7 @@ categories: Skeleton,Analysis,Plugins,Neuroanatomy
 {% capture source%}
 {% include github org='tferr' repo='hIPNAT' %}
 {% endcapture %}
-{% include info-box software='Fiji' name='Strahler Analysis' maintainer=maintainer author=author filename='hIPNAT\_.jar ([Neuroanatomy update site](/users/Neuroanatomy))' source=source released='April 2016' category='[Plugins](Category_Plugins), [Neuroanatomy](Category_Neuroanatomy), [Analysis](Category_Analysis), [Skeleton](Category_Skeleton)' %}
+{% include info-box software='Fiji' name='Strahler Analysis' maintainer=maintainer author=author filename='hIPNAT_.jar ([Neuroanatomy update site](/users/Neuroanatomy))' source=source released='April 2016' category='[Plugins](Category_Plugins), [Neuroanatomy](Category_Neuroanatomy), [Analysis](Category_Analysis), [Skeleton](Category_Skeleton)' %}
 
 </div>
 
@@ -116,7 +116,7 @@ The number of branches for each Horton-Strahler order.
 
   
   
-Ramification or {% include wikipedia title='Strahler number\#Bifurcation\_ratio' text='bifurcation ratios'%} are the quotients between branches of consecutive orders. An overall ratio may be obtained by averaging ratios across orders.
+Ramification or {% include wikipedia title='Strahler number#Bifurcation_ratio' text='bifurcation ratios'%} are the quotients between branches of consecutive orders. An overall ratio may be obtained by averaging ratios across orders.
 
 <!-- -->
 

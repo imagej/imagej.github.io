@@ -346,7 +346,7 @@ The plugin calculating these measurements is found under {% include bc path='Plu
 -   **Label**: the label of the particle measured on the current line (it can be different from the row number if some labels do no exist in original image).
 -   **Bounding box**: the minimal and maximal coordinates in each direction for each label.
 -   **Volume**: computes the number of voxels comprising the particle, multiplied by the volume of an individual voxel.
--   **Surface area**: the surface area computed using a discretized version of the {% include wikipedia title='Crofton\_formula' text='Crofton formula'%}, that computes intersections with line grids of various orientations (currently either 3 or 13).
+-   **Surface area**: the surface area computed using a discretized version of the {% include wikipedia title='Crofton formula' text='Crofton formula'%}, that computes intersections with line grids of various orientations (currently either 3 or 13).
 -   **Sphericity index**: defined as $$36\pi V^{2}/S^{3}$$.
 -   **Inertia ellipse / ellipsoid**: returns the centroid (center of gravity) as well as the size and the orientation of the inertia ellipse or ellipsoid of each particle. Radii are sorted in decreasing order. Angles are given in degrees, and correspond to the azimut ("yaw"), the elevation ("pitch"), and the roll around the main axis.
 
@@ -734,7 +734,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 [3] {% include cite content='journal' title='Characterization of changes in blood vessel width and tortuosity in retinopathy of prematurity using image analysis' author='Conor Heneghan and John Flynn and Michael O Keefe and Mark Cahill' journal='Medical Image Analysis' volume='6' number='4' pages='407-429' year='2002' publisher='Elsevier' doi='10.1016/S1361-8415(02)00058-0' %}
 
-[4] {% include cite content='conference' title='Discrete Morphology with Line Structuring Elements' author='Hendriks, CL Luengo and van Vliet, Lucas J' booktitle='International Conference on Computer Analysis of Images and Patterns' pages='722-729' year='2003' organization='Springer' doi='10.1007/978-3-540-45179-2\_88' %}
+[4] {% include cite content='conference' title='Discrete Morphology with Line Structuring Elements' author='Hendriks, CL Luengo and van Vliet, Lucas J' booktitle='International Conference on Computer Analysis of Images and Patterns' pages='722-729' year='2003' organization='Springer' doi='10.1007/978-3-540-45179-2_88' %}
 
 [5] {% include cite content='conference' title='Attribute Opening, Thinnings, and Granulometries' author='Edmond J. Breen and Ronald Jones' journal='Computer Vision and Image Understanding' year='1996' month='Nov.' number='3' pages='377--389' volume='64' doi='10.1006/cviu.1996.0066' url='http://www.sciencedirect.com/science/article/pii/S1077314296900661' %}
 
