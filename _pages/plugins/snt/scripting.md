@@ -35,7 +35,7 @@ The most up-to-date SNT API can be found at [https://morphonets.github.io/SNT](h
 
 <!-- -->
 
--   **Graph\_Analysis.py** Demonstrates how to handle neurons as graph structures [(graph theory)](https://en.wikipedia.org/wiki/Graph_theory) in which nodes connected by edges define the morphology of the neuron. SNT represents neurons as directed graphs (assuming the root -typically the soma- as origin) and allows data be processed using the powerful [jgrapht](https://jgrapht.org/) library. In this demo, the [graph diameter](http://mathworld.wolfram.com/GraphDiameter.html) (i.e., the length of the longest shortest path or the longest graph geodesic) of a cellular compartment is computed for a neuron fetched from the MouseLight database.
+-   **Graph\_Analysis.py** Demonstrates how to handle neurons as graph structures {% include wikipedia title="Graph theory" %} in which nodes connected by edges define the morphology of the neuron. SNT represents neurons as directed graphs (assuming the root -typically the soma- as origin) and allows data be processed using the powerful [jgrapht](https://jgrapht.org/) library. In this demo, the [graph diameter](http://mathworld.wolfram.com/GraphDiameter.html) (i.e., the length of the longest shortest path or the longest graph geodesic) of a cellular compartment is computed for a neuron fetched from the MouseLight database.
 
 <!-- -->
 

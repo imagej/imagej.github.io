@@ -53,7 +53,7 @@ SNT's documentation is extensive. Please use the navigation bar on too of the pa
 -   Direct access to public databases, including [MouseLight](https://ml-neuronbrowser.janelia.org/), [FlyCircuit](http://www.flycircuit.tw) and [NeuroMorpho](http://neuromorpho.org/)
 -   Built-in commands for *immediate* retrieval of summary statistics, comparison plots and histograms
 -   Image processing: Reconstructions can be skeletonized, converted to masks or ROIs, and voxel intensities profiled
--   [Sholl](/plugins/snt/analysis#sholl-analysis) and [Horton-Strahler](/plugins/snt/analysis#strahler-analysis) analyses. [Graph theory](https://en.wikipedia.org/wiki/Graph_theory) and [Persistent homology](https://en.wikipedia.org/wiki/Persistent_homology) -based analyses
+-   [Sholl](/plugins/snt/analysis#sholl-analysis) and [Horton-Strahler](/plugins/snt/analysis#strahler-analysis) analyses. {% include wikipedia title="Graph theory" %} and {% include wikipedia title="Persistent homology" %} -based analyses
 -   Modeling: access to the [Cx3D simulation engine](/plugins/snt/modeling)
 
 ### Visualization

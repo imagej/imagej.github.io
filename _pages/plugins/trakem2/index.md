@@ -120,7 +120,7 @@ If you change the method for generating mipmaps to a non-Gaussian method, the ab
 
 Besides choosing an appropriate mipmap generation strategy for large images, make sure that you set as well the bucket size appropriately.
 
-What is a bucket in TrakEM2: each layer (each section) has an internal [quadtree](https://en.wikipedia.org/wiki/Quadtree) to be able to find an object (e.g. an image) under the mouse, or to be able to quickly find images that overlap with other images. In other words, to be able to perform fast spatial queries such as finding the list of all images that intersect a given rectangle.
+What is a bucket in TrakEM2: each layer (each section) has an internal {% include wikipedia title="Quadtree" %} to be able to find an object (e.g. an image) under the mouse, or to be able to quickly find images that overlap with other images. In other words, to be able to perform fast spatial queries such as finding the list of all images that intersect a given rectangle.
 
 If the bucket size is small (the default is 4096 pixels on the side, and a bucket is then a square of 4096x4096 pixels, which could be considered quite small), then in combination with a very large canvas size there will be way too many buckets generated. <b>Will take a lot of time and also consume a lot of memory</b>.
 

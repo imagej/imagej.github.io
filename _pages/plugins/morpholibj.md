@@ -370,22 +370,22 @@ $$TO_{r}=\frac{|S_{r}\cap T_{r}|}{|T_{r}|}$$
   
 $$TO=\frac{\sum_{r}{|S_{r}\cap T_{r}|}}{\sum_{r}{|T_{r}|}}$$
 
--   [Jaccard Index](https://en.wikipedia.org/wiki/Jaccard_index) or Union Overlap for each individual labeled region $$r$$:
+-   {% include wikipedia title="Jaccard index" %} or Union Overlap for each individual labeled region $$r$$:
 
   
 $$UO_{r}=\frac{|S_{r}\cap T_{r}|}{|S_{r}\cup T_{r}|}$$
 
--   [Jaccard Index](https://en.wikipedia.org/wiki/Jaccard_index) or Union Overlap for all regions:
+-   {% include wikipedia title="Jaccard index" %} or Union Overlap for all regions:
 
   
 $$UO=\frac{\sum_{r}|S_{r}\cap T_{r}|}{\sum_{r}|S_{r}\cup T_{r}|}$$
 
--   [Dice Coefficient](https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient) or Mean Overlap for each individual labeled region $$r$$:
+-   {% include wikipedia title="Sørensen–Dice coefficient" %} or Mean Overlap for each individual labeled region $$r$$:
 
   
 $$MO_{r}=2\frac{|S_{r}\cap T_{r}|}{|S_{r}|+|T_{r}|}$$
 
--   [Dice Coefficient](https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient) or Mean Overlap for all regions:
+-   {% include wikipedia title="Sørensen–Dice coefficient" %} or Mean Overlap for all regions:
 
   
 $$MO=2\frac{\sum_{r}|S_{r}\cap T_{r}|}{\sum_{r}\left(|S_{r}|+|T_{r}|\right)}$$

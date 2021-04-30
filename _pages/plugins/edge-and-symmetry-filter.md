@@ -13,7 +13,7 @@ Thomas Boudier
 
 ## Description
 
-This plugin will compute the gradients of the image based on the [Canny edge detector](https://en.wikipedia.org/wiki/Canny_edge_detector). The symmetry filter will vote for the voxels inside the object based on the gradient vector direction.
+This plugin will compute the gradients of the image based on the {% include wikipedia title="Canny edge detector" %}. The symmetry filter will vote for the voxels inside the object based on the gradient vector direction.
 
 **Alpha parameter** refers to the smoothing in canny edge detection, the smaller the value, the smoother the edges.
 

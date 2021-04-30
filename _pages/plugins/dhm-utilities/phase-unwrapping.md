@@ -45,7 +45,7 @@ This assigns every pixel a quality value of zero. The exact result this produces
 
 #### Fringe Visibility
 
-Calculates the quality based on the [Interferometric Visibility](https://en.wikipedia.org/wiki/Interferometric_visibility). Higher visibility values correspond to higher quality values. This quality type requires the hologram as an extra parameter.
+Calculates the quality based on the {% include wikipedia title="Interferometric visibility" %}. Higher visibility values correspond to higher quality values. This quality type requires the hologram as an extra parameter.
 
 #### Gradient
 

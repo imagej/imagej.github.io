@@ -372,7 +372,7 @@ Besides setting this variable, the `__init__.py` file can contain normal Jython 
 
 ## Bundle packages in a JAR file
 
-An interesting feature of Jython is to search for packages and modules inside of [JAR files](https://en.wikipedia.org/wiki/JAR_(file_format)). The folder structure from the last section can be modified by packing everything into a single `myPackages.jar`. The name of the JAR file doesn't matter. All imports work the same as explained before.
+An interesting feature of Jython is to search for packages and modules inside of {% include wikipedia title="JAR (file format)" %}. The folder structure from the last section can be modified by packing everything into a single `myPackages.jar`. The name of the JAR file doesn't matter. All imports work the same as explained before.
 
     Imagej.app/jars/Lib/
     -- myPackages.jar

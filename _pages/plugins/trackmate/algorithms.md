@@ -51,7 +51,7 @@ The plain statistical estimates are simply calculated from all the values for pi
 
 ### Contrast & Signal/Noise ratio
 
-This contrast followed [Michelson contrast](http://en.wikipedia.org/wiki/Michelson_contrast#Formula) definition: `C = (I_in - I_out) / (I_in + I_out)` where `I_in` is the mean intensity inside the spot volume (using the physical radius), and `I_out` is the mean intensity in a ring ranging from its radius to twice its radius.
+This contrast followed {% include wikipedia title="Michelson contrast#Formula" %} definition: `C = (I_in - I_out) / (I_in + I_out)` where `I_in` is the mean intensity inside the spot volume (using the physical radius), and `I_out` is the mean intensity in a ring ranging from its radius to twice its radius.
 
 The spots's SNR is computed a `(I_in - I_out) / std_in` where `std_in` is the standard deviation computed within the spot.
 
@@ -355,7 +355,7 @@ where C is the costs of the top-left quadrant.
 
 #### Cost calculation & Brownian motion
 
-Without penalties and with a maximal linking allowed distance, the returned solution is the one that minimizes the sum of squared distances. This actually corresponds to the case where the motion of spots is governed by [Brownian motion](http://en.wikipedia.org/wiki/Brownian_motion). See for instance Crocker and Grier[7].
+Without penalties and with a maximal linking allowed distance, the returned solution is the one that minimizes the sum of squared distances. This actually corresponds to the case where the motion of spots is governed by {% include wikipedia title="Brownian motion" %}. See for instance Crocker and Grier[7].
 
 By adding feature penalties, we aim at favoring linking particles that "resemble" each other. In brute single particle linking problems, spots are generally all the same, and they only differ by position. However, there is a variety of problems for which these feature penalties can add robustness to the tracking process.
 
@@ -404,7 +404,7 @@ Though it deals with a completely different motion model compared to the LAP tra
 
 #### Principle.
 
-The linear motion tracker relies on the [Kalman filter](http://en.wikipedia.org/wiki/Kalman_filter) to <i>predict</i> the most probable position of a particle undergoing constant velocity movement.
+The linear motion tracker relies on the {% include wikipedia title="Kalman filter" %} to <i>predict</i> the most probable position of a particle undergoing constant velocity movement.
 
 Tracks are initiated from the first two frames, using the classical LAP framework with the Jaqaman cost matrix (see above), using the square distance as cost. The user can set what is the maximal distance allowed for the initial search with the <b>Initial search radius</b> setting.
 

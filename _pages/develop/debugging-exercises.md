@@ -273,7 +273,7 @@ To find what tags are available, on the command line we can run:
     git tag -l
     e5-good-maths
 
-The purpose of the `bisect` tool is to search our commit history to find the breaking commit. Although you could search one by one through the commit history, this would take [linear time](https://en.wikipedia.org/wiki/Time_complexity#linear-time) in proportion to the number of commits to search. Bisecting performs a [binary search](https://en.wikipedia.org/wiki/Binary_search_algorithm#Performance), speeding up the process significantly. It also allows much of the process to be automated.
+The purpose of the `bisect` tool is to search our commit history to find the breaking commit. Although you could search one by one through the commit history, this would take {% include wikipedia title="Time complexity#linear-time" %} in proportion to the number of commits to search. Bisecting performs a {% include wikipedia title="Binary search algorithm#Performance" %}, speeding up the process significantly. It also allows much of the process to be automated.
 
 To use the bisect tool we just need to know two commits: one where the test worked, and one where the test failed. In this case, we know the `e5-good-maths` tag worked, and our current state is broken, so we can start the bisect:
 

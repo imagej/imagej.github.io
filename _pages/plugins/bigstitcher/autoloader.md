@@ -14,7 +14,7 @@ You can either **Browse** for files or directories, drag and drop them to the **
 To include multiple files in the dataset you can:
 
 -   Select a directory as the path - in that case, all files in that directory (except for the ones filtered out by size) will be included.
--   Use wildcards in the path. The Automatic loader supports [glob-Syntax](https://en.wikipedia.org/wiki/Glob_(programming)):
+-   Use wildcards in the path. The Automatic loader supports {% include wikipedia title="Glob (programming)" %}:
     -   a '\*' can be used to specify any sequence of characters
     -   a '?' can be used to specify a single, varying charcter
 

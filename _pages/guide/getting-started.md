@@ -259,8 +259,8 @@ If you are having problems with ImageJ, you should inquiry about them in the app
 2.  Look up the mailing list archives ({% include bc path="Help | [Mailing List...↓](#sub:List-Archives...)" %}). Most of your questions may have already been answered.
 3.  If you think you are facing a [↓bug](#index-Bug-(reporting)) try to upgrade to the latest version of ImageJ ({% include bc path="Help | [Update ImageJ...↓](#sub:Update-ImageJ...)" %}). You should also check if you are running the latest version of the Java Virtual Machine for your operating system. Detailed instructions on how to submit a bug report are found [here](/ij/docs/faqs.html#bug).
 4.  Remember that in most cases you can find answers within your own ImageJ installation without even connecting to the internet since the heuristics for finding commands or writing macros have been significantly improved in later versions (*see* [Finding Commands↓](#sec:Finding-Commands) and [Extending ImageJ↓](#sec:Extending-ImageJ)).
-5.  As with any other mailing list, you should always follow basic [netiquette](http://en.wikipedia.org/wiki/Netiquette), namely:
+5.  As with any other mailing list, you should always follow basic {% include wikipedia title="Netiquette" %}, namely:
     1.  Use descriptive subject lines — *Re: Problem with Image&gt;Set Scale command* is much more effective than a general *Re: Problem.*
     2.  Stay on topic — Do not post off-topic messages, unrelated to the message thread.
-    3.  Be careful when sending attachments — Refrain from attaching large files. Use, e.g., a [file hosting service](http://en.wikipedia.org/wiki/File_hosting_service#comparison-of-notable-file-hosting-services) instead.
+    3.  Be careful when sending attachments — Refrain from attaching large files. Use, e.g., a {% include wikipedia title="File hosting service#comparison-of-notable-file-hosting-services" %} instead.
     4.  Edit replies — You should include only the minimum content that is necessary to provide a logical flow from the question to the answer, i.e., quote only as much as absolutely necessary and relevant.

@@ -24,7 +24,7 @@ This plugin also need the [apache common maths](https://mvnrepository.com/artifa
 Here is the Interface of Stack Object Combiner. The window contain several boxes, that allow you to set the different parameters and that give you an overview of the meshes.  
 
 ![](/media/SOC folderSelection.png "fig:SOC_folderSelection.png") Folder selection box  
-This is the Folder Box. Choose the folder containing your meshes. To work only with certain meshes inside this folder, use the "Name pattern" function. Write the characters that the file contains, and click on "Actualise". The pattern can be a [regular expression](https://en.wikipedia.org/wiki/Regular_expression).  
+This is the Folder Box. Choose the folder containing your meshes. To work only with certain meshes inside this folder, use the "Name pattern" function. Write the characters that the file contains, and click on "Actualise". The pattern can be a {% include wikipedia title="Regular expression" %}.  
 Finally "Actualise" allow you to refresh the folder, for example if you have deleted or added files.
 
 ![](/media/SOC shift.png "fig:SOC_shift.png") Shift box  

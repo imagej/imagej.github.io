@@ -75,7 +75,7 @@ Ops is under development at the moment, as indicated by the 0.x.x version number
 
 ### Why is matching important?
 
-This is a necessary part of any plugin-based infrastructure (see [inversion of control](https://en.wikipedia.org/wiki/Inversion_of_control)). The core library (ImageJ Ops) has many built-in operations, but:
+This is a necessary part of any plugin-based infrastructure (see {% include wikipedia title="Inversion of control)" %}. The core library (ImageJ Ops) has many built-in operations, but:
 
 1.  cannot possibly cover all possible implementations and
 2.  would be impractical if a user had to explicitly call the precise signature for their arguments.

@@ -129,7 +129,7 @@ PlotData=
 
 ### Richard Domander
 
--   Added first ops from BoneJ legacy code - topology namespace and ops for calculating the [Euler characteristic](https://en.wikipedia.org/wiki/Euler_characteristic) ({% include github org='imagej' repo='imagej-ops' pr='413' label='imagej-ops\#413' %})
+-   Added first ops from BoneJ legacy code - topology namespace and ops for calculating the {% include wikipedia title="Euler characteristic" %} ({% include github org='imagej' repo='imagej-ops' pr='413' label='imagej-ops\#413' %})
 
 ### Kyle Harrington
 

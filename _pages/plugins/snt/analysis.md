@@ -89,7 +89,7 @@ Batch measurements of reconstructions can be accomplished via scripting. See *Me
 
 # Dendrogram Viewer
 
-<img src="/media/Snt-Dendrogram-Shortcuts.png" title="fig:Dendrogram Viewer shortcuts" width="140" alt="Dendrogram Viewer shortcuts" /> Found at {% include bc path='Utilities|Create Dendrogram'%}, this option generates a [Dendrogram](https://en.wikipedia.org/wiki/Dendrogram) from one connected component (i.e., a single rooted tree structure) in the Path Manager, providing a high-level overview of neurite branching topology. Note that if multiple rooted trees exist in the Path Manager, you will be prompted to choose one of them.
+<img src="/media/Snt-Dendrogram-Shortcuts.png" title="fig:Dendrogram Viewer shortcuts" width="140" alt="Dendrogram Viewer shortcuts" /> Found at {% include bc path='Utilities|Create Dendrogram'%}, this option generates a {% include wikipedia title="Dendrogram" %} from one connected component (i.e., a single rooted tree structure) in the Path Manager, providing a high-level overview of neurite branching topology. Note that if multiple rooted trees exist in the Path Manager, you will be prompted to choose one of them.
 
 The viewer provides controls for orientation, zoom level, panning, vertex editing and traversal as well as options to display vertex labels and edge weights (which by default are the euclidean distances between adjacent vertices). To see the available key shortcuts, right click on the viewer and choose *Available Shortcuts...*. The plot may be exported in several file formats, including HTML, PNG and SVG.
 

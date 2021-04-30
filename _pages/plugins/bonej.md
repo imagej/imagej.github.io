@@ -326,9 +326,9 @@ A 3D image.
 
 Menu path {% include bc path="Plugins | BoneJ | Fractal dimension" %}.
 
-This plug-in estimates the fractal dimension of an image by applying the box-counting algorithm. In this algorithm grids of diminishing size are scanned over the image, and the number of boxes containing at least one foreground voxel is counted. As the box size decreases and the grid becomes finer, the proportion of foreground boxes increases in a fractal structure. See [Wikipedia](https://en.wikipedia.org/wiki/Box_counting) for further details. BoneJ uses a fixed-grid scan, with an option to try to find the optimal covering.
+This plug-in estimates the fractal dimension of an image by applying the box-counting algorithm. In this algorithm grids of diminishing size are scanned over the image, and the number of boxes containing at least one foreground voxel is counted. As the box size decreases and the grid becomes finer, the proportion of foreground boxes increases in a fractal structure. See {% include wikipedia title="Box counting" %} for further details. BoneJ uses a fixed-grid scan, with an option to try to find the optimal covering.
 
-The box counting algorithm produces a pair of $$(log(n), -log(m))$$ values for each iteration it runs. Here n = number of boxes with foreground, and m = box size. These pairs are passed to a curve-fitting algorithm, which returns the slope of the linear function which describes them ([regression fit](https://en.wikipedia.org/wiki/Linear_regression)). The coefficient of this slope is the fractal dimension.
+The box counting algorithm produces a pair of $$(log(n), -log(m))$$ values for each iteration it runs. Here n = number of boxes with foreground, and m = box size. These pairs are passed to a curve-fitting algorithm, which returns the slope of the linear function which describes them ({% include wikipedia title="Linear regression)" %}. The coefficient of this slope is the fractal dimension.
 
 Fractal dimension is markedly influenced by the parameters selected for the box counting algorithm, so it's worth running it several times with different values to find an accurate measure for your image.
 
@@ -347,8 +347,8 @@ A 2D or 3D binary image.
 
 #### Results
 
--   *Fractal dimension*: the [fractal dimension](https://en.wikipedia.org/wiki/Fractal_dimension) of the image. For example, the Koch snow flake has a fractal dimension of 1.262.
--   *R²*: the [coefficient of determination](https://en.wikipedia.org/wiki/Coefficient_of_determination) of the line fitted to the $$(log(n), -log(m))$$ points.
+-   *Fractal dimension*: the {% include wikipedia title="Fractal dimension" %} of the image. For example, the Koch snow flake has a fractal dimension of 1.262.
+-   *R²*: the {% include wikipedia title="Coefficient of determination" %} of the line fitted to the $$(log(n), -log(m))$$ points.
 
 The measures are reported separately for each 3D subspace in the image, i.e. for each channel and time frame.
 

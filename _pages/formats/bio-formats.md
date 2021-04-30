@@ -43,10 +43,10 @@ The **Bio-Formats Exporter** is a plugin for exporting data to disk.
 It can save to the open [OME-TIFF](https://docs.openmicroscopy.org/latest/ome-model/#ome-tiff) file format, as well as several movie formats (e.g., QuickTime, AVI) and graphics formats (e.g., PNG, JPEG).
 
 -   Animated PNG (\*.png)
--   [Audio Video Interleave](https://en.wikipedia.org/wiki/Audio_Video_Interleave) (\*.avi)
+-   {% include wikipedia title="Audio Video Interleave" %} (\*.avi)
 -   [CellH5](https://github.com/CellH5/cellh5) File Format (\*.ch5)
 -   Encausupated PostScript (\*.eps, \*.epsi)
--   [Image Cytometry Standard](https://en.wikipedia.org/wiki/Image_Cytometry_Standard) (\*.ids, \*.ics)
+-   {% include wikipedia title="Image Cytometry Standard" %} (\*.ids, \*.ics)
 -   Java source code (\*.java)
 -   JPEG (\*.jpg, \*.jpeg, \*.jpe)
 -   JPEG-2000 (\*.jp2)
