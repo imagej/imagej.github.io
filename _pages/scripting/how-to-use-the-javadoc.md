@@ -15,7 +15,8 @@ Most scijava-projects API are listed on the [scijava javadocs](https://javadoc.s
 
 And more particulary for
 
--   [ImageJ](/ij/developer/api/overview-summary.html)
+-   [ImageJ1](https://javadoc.scijava.org/ImageJ1)
+-   [ImageJ2](https://javadoc.scijava.org/ImageJ2)
 -   [Fiji](https://javadoc.scijava.org/Fiji/)
 
 ## The ImageJ1 API
