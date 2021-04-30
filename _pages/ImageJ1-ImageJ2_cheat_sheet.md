@@ -141,6 +141,7 @@ ImagePlus imp = ImageJFunctions.wrap(img,"Title");
       <td>
         <p>Convert from ImageJ1 <code>ImagePlus</code> object to ImgLib2 <code>Img</code> object:</p>
 {%- highlight java -%}
+Img img = ij.convert().convert(imp, Img.class);
 Img<T> realImg = ImageJFunctions.wrapReal(imp);
 Img<FloatType> floatImg = ImageJFunctions.convertFloat(imp);
 Img<FloatType> realImg2 = ImageJFunctions.wrap(imp);
@@ -159,11 +160,7 @@ imagePlus.setRoi(roi);
       <td>
 {% highlight java %}
 Img<BitType> mask; // = ...
-ImagePlus maskImp = ImageJFunctions.wrap(mask, "mask");
-// threshold the mask to get an ROI
-ImageProcessor imageProcessor = maskImp.getProcessor();
-imageProcessor.setThreshold(128, 128, ImageProcessor.NO_LUT_UPDATE);
-Roi roi = new ThresholdToSelection().convert(imageProcessor);
+Roi roi = ij.convert().convert(mask, Roi.class);
 imagePlus.setRoi(roi);
 {% endhighlight %}
       </td>
