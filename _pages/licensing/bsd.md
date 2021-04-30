@@ -1,5 +1,5 @@
 ---
-title: BSD
+title: BSD Licenses
 section: About:Licensing:Open Source
 ---
 

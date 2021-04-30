@@ -1,5 +1,5 @@
 ---
-title: GPL
+title: GNU General Public License
 section: About:Licensing:Open Source
 ---
 

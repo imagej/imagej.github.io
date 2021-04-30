@@ -26,4 +26,4 @@ The **Unlicense** is a template for dedicating your software to the public domai
 CC0 enables scientists, educators, artists and other creators and owners of
 copyright- or database-protected content to waive those interests.
 
-{% include license-links shortname='CC0' url='https://creativecommons.org/publicdomain/zero/1.0/legalcode' choosealicense='cc0' wikipedia='Creative\_Commons\_license\#Zero\_.2F\_Public\_domain' osswatch='cclicensing' %}
+{% include license-links shortname='CC0' url='https://creativecommons.org/publicdomain/zero/1.0/legalcode' choosealicense='cc0' wikipedia='Creative_Commons_license#Zero .2F_Public_domain' osswatch='cclicensing' %}

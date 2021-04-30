@@ -1,5 +1,5 @@
 ---
-title: Apache
+title: Apache Software License
 section: About:Licensing:Open Source
 ---
 

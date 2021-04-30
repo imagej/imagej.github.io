@@ -1,5 +1,5 @@
 ---
-title: MIT
+title: MIT License
 section: About:Licensing:Open Source
 ---
 

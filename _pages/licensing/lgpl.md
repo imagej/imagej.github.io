@@ -1,5 +1,5 @@
 ---
-title: LGPL
+title: GNU Lesser General Public License
 section: About:Licensing:Open Source
 ---
 
