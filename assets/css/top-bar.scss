@@ -1,3 +1,129 @@
+---
+# This is a Sass file. Jekyll will compile it to plain CSS.
+---
+
+$logoSize: 36px;
+$searchBarPadding: 5px;
+$topBarHeight: $logoSize;
+$hitTitleWidth: 200px;
+$hitIconSize: 36px;
+$hitPadding: 5px;
+$shadowSize: 4px;
+
+#top-bar {
+  background-color: #3f454b;
+  overflow: hidden;
+}
+
+#site-logo {
+  height: $logoSize;
+  float: left;
+}
+
+/* ------------------------------ SEARCH BAR ------------------------------ */
+
+#search-panel {
+  display: inline-block;
+  width: #{'calc(100% - #{$logoSize + 1})'};
+  height: $topBarHeight;
+}
+
+#search-hits {
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+#search-results .filters {
+  /* TODO */
+}
+
+#search-results {
+  position: absolute;
+  width: #{'calc(100% - #{$logoSize + $shadowSize + 3})'};
+  top: $topBarHeight + $shadowSize;
+  left: $logoSize;
+  background: #eee;
+  box-shadow: $shadowSize $shadowSize $shadowSize lightgray;
+  display: none;
+  z-index: 1;
+}
+
+.ais-Hits-list {
+  list-style: none;
+  display: block;
+  margin-top: 0;
+}
+
+.ais-Hits-item {
+  width: #{'calc(100% - #{$shadowSize + 4*$hitPadding})'};
+  margin-top: 0;
+  margin-bottom: 8px;
+  padding: 0;
+  box-shadow: none;
+  border: none;
+}
+
+.search-result {
+  height: $logoSize;
+}
+
+.search-result:hover {
+  background: #dd7;
+}
+
+.hit-icon {
+  width: $hitIconSize;
+  height: $hitIconSize;
+  float: left;
+}
+
+.hit-title {
+  display: inline-block;
+  width: $hitTitleWidth;
+  height: $hitIconSize;
+  margin-left: $hitPadding;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hit-description {
+  display: inline-block;
+  width: #{'calc(100% - #{$hitTitleWidth + $hitIconSize + 2*$hitPadding + 18px})'};
+  height: $hitIconSize;
+  margin-left: $hitPadding;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: small;
+  line-height: 17px;
+}
+
+.hit-name {
+  display: inline-block;
+}
+
+.ais-Highlight-highlighted {
+  color: inherit;
+  font-size: inherit;
+}
+
+#search-box {
+  margin-top: $searchBarPadding;
+  width: #{'calc(100% - #{$searchBarPadding})'};
+  height: $topBarHeight;
+}
+
+#search-box input {
+  height: $logoSize - 2*$searchBarPadding - 1;
+}
+
+#pagination {
+  margin: 1rem auto;
+  text-align: center;
+}
+
+/* ---------------------------- HAMBURGER MENU ---------------------------- */
+
 /*
  * Made by Erik Terwan
  * 24th of November 2015
@@ -8,7 +134,6 @@
  * production code, beware of the browser
  * prefixes.
  */
-@media screen and (max-width: 780px) {
 
 #menuToggle {
 	padding-left: 0.7em;
@@ -68,9 +193,9 @@
 	transform-origin: 4px 0px;
 
 	transition:
-		transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-		background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-		opacity 0.55s ease;
+	transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+	background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+	opacity 0.55s ease;
 }
 
 #menuToggle span:first-child {
@@ -169,78 +294,5 @@
 }
 
 #menuToggle summary {
-	outline:none;
-}
-
-@media screen and (min-width: 780px) {
-	#menuToggle {
-		display: none;
-	}
-}
-
-/* -------------------------- */
-
-.ham-drop-content a {
-  display: none;
-}
-
-@media screen and (max-width: 780px) {
-  .ham-drop {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    padding-left: 0.5em;
-    padding-top: 0.2em;
-  }
-
-  .ham-drop-content {
-    display: none;
-    position: absolute;
-    background-color: #f3f3f3;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    right: auto;
-    left: 0;
-  }
-
-  .ham-drop-content a {
-    color: black !important;
-    padding: 12px 16px;
-    text-decoration: none;
-    font-weight: 500;
-    display: block;
-    border-bottom: none;
-  }
-
-  .ham-drop-content a:hover {
-    background-color: #bdebeb;
-    border-bottom: none;
-  }
-
-  .show {
-    display: block;
-  }
-
-  .bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #f2f2f2;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
-
-  .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-  }
-
-  .change .bar2 {
-    opacity: 0;
-  }
-
-  .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-  }
+	outline: none;
 }
