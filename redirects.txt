@@ -273,8 +273,8 @@
 A_Tutorial_for_using_OpenCL_in_ImageJ :: tutorials/opencl-in-imagej
 About :: about
 About... :: plugins/quickpalm
-About_TrakEM2... :: ???
-About_bUnwarpJ... :: ???
+About_TrakEM2... :: plugins/trakem2
+About_bUnwarpJ... :: plugins/bunwarpj
 AccPbFRET :: plugins/accpbfret
 ActionBar :: plugins/action-bar
 ActogramJ :: plugins/actogramj
@@ -428,7 +428,7 @@ Blend_two_images :: plugins/blend-two-images
 Blind_Analysis_Tools :: plugins/blind-analysis-tools
 Blob_Tracker :: plugins/low-light-tracking-tool
 Blob_Tracking :: plugins/low-light-tracking-tool
-Blobs_Demo_in_Ruby :: ???
+Blobs_Demo_in_Ruby :: scripting/jruby#converting-imagej-macros-to-jruby
 Block_Matching :: plugins/block-matching
 BoneJ :: plugins/bonej
 BoneJ1 :: plugins/bonej1
@@ -437,10 +437,10 @@ BoneJ2-redirect :: plugins/bonej
 BoneJ_Usage_Legacy :: plugins/bonej#usage-reporting
 BoneJ_Usage_Modern :: plugins/bonej#usage-reporting
 BoneJ_experimental :: plugins/bonej
-Brightness_and_Contrast :: ???
+Brightness_and_Contrast :: TODO
 Bug_reporting_best_practices :: help/bug-reporting-best-practices
 Bugs :: help/report-a-bug
-Build_ImageJ2_Plugin_With_JavaFX :: ???
+Build_ImageJ2_Plugin_With_JavaFX :: TODO
 Building_a_POM :: develop/building-a-pom
 Building_a_pom :: develop/building-a-pom
 CAMDU :: plugins/camdu
@@ -492,10 +492,10 @@ Clij :: plugins/clij
 Clojure :: scripting/clojure
 Clojure_Interpreter :: scripting/interpreter
 Clojure_Scripting :: scripting/clojure
-Close_All_Without_Saving :: ???
+Close_All_Without_Saving :: <DELETED> (obsolete command)
 Cluster_Analysis :: plugins/cluster-analysis
 Code :: develop/source
-Code_Coverage_in_Fiji :: ???
+Code_Coverage_in_Fiji :: <DELETED> (obsolete instructions on using EMMA for code coverage)
 Code_Style :: develop/coding-style
 Code_style :: develop/coding-style
 Coding_Style :: develop/coding-style
@@ -605,7 +605,7 @@ Delaunay_Voronoi :: plugins/delaunay-voronoi
 Delayed_Snapshot :: plugins/delayed-snapshot
 Delete_Slice_Range :: plugins/bonej#delete-slice-range-wip
 DenoiSeg :: plugins/denoiseg
-Description_of_ImageJ's_plugin_architecture :: ???
+Description_of_ImageJ's_plugin_architecture :: develop/plugin-architecture
 Description_of_ImageJs_plugin_architecture :: develop/plugin-architecture
 Descriptor-based_registration_(2d/3d) :: plugins/descriptor-based-registration-2d-3d
 Descriptor_based_registration :: plugins/descriptor-based-registration
@@ -613,7 +613,7 @@ DetectInformationLoss :: techniques/detect-information-loss
 Detect_Information_Loss :: techniques/detect-information-loss
 Detrendr :: plugins/detrendr
 Develop :: develop
-Developers_HowTo :: ???
+Developers_HowTo :: develop/using-weka
 Developing_Fiji :: fiji/developing
 Developing_Fiji_in_Eclipse :: develop/eclipse
 Developing_ImageJ_in_Eclipse :: develop/eclipse
@@ -678,7 +678,7 @@ EpiGraph :: plugins/epigraph
 Erode_(3D) :: plugins/3d-binary-filters
 Events :: events
 Example_mamut.properties_file :: plugins/mamut/example-properties-file
-Excessive_Traffic :: ???
+Excessive_Traffic :: <DELETED> (spam)
 Extended_Depth_Field :: plugins/extended-depth-of-field
 Extended_Depth_of_Field :: plugins/extended-depth-of-field
 Extended_Depth_of_Field_(Easy_mode)... :: plugins/extended-depth-of-field
@@ -687,7 +687,7 @@ Extended_Depth_of_Focus :: plugins/extended-depth-of-field
 Extensibility :: develop/architecture#extensibility
 Extensible :: develop/architecture#extensibility
 External_Plugins :: develop/git/extract-a-subproject
-External_plugins :: ???
+External_plugins :: develop/git/extract-a-subproject
 External_tutorials :: tutorials
 Extract_Images_From_PDF... :: formats/pdf
 Extract_MOPS_Correspondences :: plugins/feature-extraction
@@ -719,7 +719,7 @@ Feature_Extraction :: plugins/feature-extraction
 Featured_Fiji_Projects :: fiji/featured-projects
 FigureJ :: plugins/figurej
 Fiji :: fiji
-Fiji's_Menu :: ???
+Fiji's_Menu :: fiji/menu
 Fiji.sc :: about/funding
 Fiji/Build_System :: develop
 Fiji/Cite :: about/citing
@@ -862,7 +862,7 @@ Help:Formatting :: help/editing
 Help_on_Menu_Item :: TODO
 Hill_Shade :: plugins/hill-shade
 Hinerm :: users/hinerm
-Hippocampal_CA3_Interneuron :: ???
+Hippocampal_CA3_Interneuron :: TODO
 History :: about#history
 Home :: /
 Hough_Circle_Transform :: plugins/hough-circle-transform
@@ -891,18 +891,18 @@ How_to_write_your_own_particle-linking_algorithm_for_TrackMate :: plugins/trackm
 How_to_write_your_own_spot_feature_analyzer_algorithm_for_TrackMate :: plugins/trackmate/custom-spot-feature-analyzer-algorithms
 How_to_write_your_own_track_feature_analyzer_algorithm_for_TrackMate :: plugins/trackmate/custom-track-feature-analyzer-algorithms
 How_to_write_your_own_viewer_for_TrackMate :: plugins/trackmate/custom-viewers
-I/O :: ???
+I/O :: formats
 I2K_2018 :: events/i2k-2018
 IDE :: develop/ides
 IDEA :: develop/intellij
 IDEs :: develop/ides
 IJ-OpenCV :: plugins/ij-opencv
-IJ2-python-lib :: ???
+IJ2-python-lib :: https://github.com/hadim/fiji_scripts
 IJMMD :: plugins/ijmmd
 IJ_Blob :: plugins/ij-blob
 IJ_Robot :: plugins/ij-robot
 IMBalENce :: plugins/imbalence
-IMG :: ???
+IMG :: <DELETED> (empty page) 
 IO :: formats
 IP_Principles :: techniques/principles
 IRC :: about/chat#irc
@@ -1075,7 +1075,7 @@ LGPLv2 :: licensing/lgpl
 LGPLv3 :: licensing/lgpl
 LIBAV_Plugins :: formats/video
 LOCI :: orgs/loci
-LOCI_Plugins... :: ???
+LOCI_Plugins... :: formats/bio-formats
 LOCI_Plugins_Configuration :: formats/bio-formats#bio-formats-plugins-configuration
 LOCI_Plugins_Shortcut_Window :: formats/bio-formats#bio-formats-plugins-shortcut-window
 LSM_Toolbox :: formats/lsm
@@ -1166,7 +1166,7 @@ Mailing_Lists :: about/mailing-lists
 Mailing_list :: about/mailing-lists
 Mailing_lists :: about/mailing-lists
 Main_Page :: fiji
-Maintainer_page :: ???
+Maintainer_page :: TODO (about/maintainers)
 Make_Fiji_Package :: plugins/make-fiji-package
 Make_Screencast :: plugins/make-screencast
 Malaria_Sporozoites_(9.2MB) :: plugins/malaria-sporozoites-9.2mb
@@ -1204,7 +1204,7 @@ Minimum/Maximum/Median :: plugins/minimum-maximum-median
 Minimum_(3D) :: plugins/minimum-maximum-median
 Minimum_Cost_Z_surface_Projection :: plugins/minimum-cost-z-surface-projection
 Minimum_Splits_and_Mergers_Warping_error :: plugins/tws/minimum-splits-and-mergers-warping-error
-Misc :: ???
+Misc :: <DELETED> (random off-topic)
 Mission :: software/imagej2#imagej2s-mission
 Mixture_Modeling_Thresholding :: plugins/mixture-modeling-thresholding
 MoBIE :: plugins/mobie
@@ -1231,7 +1231,7 @@ Multiple_Image_Processor :: plugins/multiple-image-processor
 Multithreaded_Image_Processing :: scripting/multithreaded-image-processing-in-clojure
 Multithreaded_Image_Processing_in_Clojure :: scripting/multithreaded-image-processing-in-clojure
 Multithreaded_Image_Processing_in_JavaScript :: scripting/multithreaded-image-processing-in-javascript
-Multithreaded_Image_Processing_in_Javascript :: ???
+Multithreaded_Image_Processing_in_Javascript :: scripting/multithreaded-image-processing-in-javascript
 Multiview-Reconstruction :: plugins/multiview-reconstruction
 Multiview_Reconstruction :: plugins/multiview-reconstruction
 MyofibrilJ :: plugins/myofibrilj
@@ -1279,7 +1279,7 @@ Ops_Browser :: plugins/op-finder
 Ops_Deconvolution :: libs/imagej-ops/deconvolution
 Orientation :: plugins/bonej#orientation
 OtoRing :: plugins/otoring
-Overview_of_Fiji's_source_code :: ???
+Overview_of_Fiji's_source_code :: fiji/source
 Overview_of_Fijis_source_code :: fiji/source
 PIV_analyser :: plugins/piv-analyser
 PIV_analysis :: plugins/piv-analyser
@@ -1401,7 +1401,7 @@ Roi_1-click_tools :: plugins/roi-1-click-tools
 Rolling_Ball_Background_Subtraction :: plugins/rolling-ball-background-subtraction
 Ruby :: scripting/jruby
 Ruby_Scripting :: scripting/jruby
-Rumah :: ???
+Rumah :: <DELETED> (spam)
 SCIFIO :: software/scifio
 SEM_FEI_metadata_scale :: plugins/sem-fei-metadata-scale
 SEM_JOEL_Scale :: plugins/sem-joel-scale
@@ -1445,7 +1445,7 @@ Saim :: plugins/saim
 Same_Slice_in_Multiple_Images :: plugins/same-slice-in-multiple-images
 SampEn2D :: plugins/sampen2d
 Samples :: plugins/samples
-Sandbox:Test :: <DELETED>
+Sandbox:Test :: <DELETED> (MediaWiki-specific test page)
 Save_Particles_(.tif_file_-_fast) :: plugins/quickpalm
 Save_as_animated_gif :: formats/animated-gif
 Saving_and_Exporting :: cookbook/saving-and-exporting
@@ -1507,7 +1507,7 @@ SheppLogan :: plugins/shepp-logan-phantom
 Sholl :: plugins/sholl-analysis
 Sholl_Analysis :: plugins/sholl-analysis
 Sholl_Analysis... :: plugins/sholl-analysis
-Shortcuts_to_folders_inside_Fiji.app :: <DELETED>
+Shortcuts_to_folders_inside_Fiji.app :: <DELETED> (macOS-specific folder management tips)
 Show_Color_Surfaces :: plugins/show-color-surfaces
 Sigma_Filter :: plugins/sigma-filter
 Simple_Neurite_Tracer :: plugins/snt
@@ -1596,7 +1596,7 @@ Stitch_Collection_of_Images :: plugins/stitching-2d-3d
 Stitch_Directory_with_Images_(unknown_configuration) :: plugins/stitching-2d-3d
 Stitch_Grid_of_Images :: plugins/stitching-2d-3d
 Stitch_Multiple_Series_or_Tile_Scan_File :: plugins/stitching-2d-3d#stitch-multiple-series-or-tile-scan-file
-Stitch_Sequence_of_Grids_of_Images :: ???
+Stitch_Sequence_of_Grids_of_Images :: plugins/stitching-2d-3d#stitch-image-grid-sequence
 Stitch_and_Align_a_sequence_of_grid_images_Tutorial :: tutorials/stitch-and-align-grid-images
 Stitch_and_Align_sequence_of_grid_images_Tutorial :: tutorials/stitch-and-align-grid-images
 Stitch_and_Register_grid_sequence_tutorial :: tutorials/stitch-and-align-grid-images
@@ -1634,11 +1634,11 @@ Temporal-Color_Code :: plugins/temporal-color-code
 Temporal_Median :: plugins/temporal-median
 TensorFlow :: software/tensorflow
 TensorFlow-GPU :: develop/tensorflow
-Test :: ???
-Test-include :: ???
+Test :: <DELETED> (empty)
+Test-include :: <DELETED> (test page with iframe to Google maps)
 Test_Block_Matching_Parameters :: plugins/test-block-matching-parameters
 Test_Java3D :: plugins/test-java3d
-Test_of_PNG-screenshot_tutorial :: ???
+Test_of_PNG-screenshot_tutorial :: <DELETED> (stub page with non-existent image)
 Testing_Procedure_for_Simple_Neurite_Tracer :: plugins/simple-neurite-tracer/testing-procedure
 The_Hue_Game :: scripting/examples/hue-game
 Thickness :: plugins/bonej#thickness
@@ -1671,7 +1671,7 @@ TrackMate_version_history :: plugins/trackmate/version-history
 TrackScheme :: plugins/trackmate/trackscheme
 Track_analysis_using_TrackMate :: plugins/trackmate
 Tracking :: techniques/tracking
-Tracks :: ???
+Tracks :: <DELETED> (empty)
 Trainable_Segmentation :: plugins/tws
 Trainable_Segmentation_Plugin :: plugins/trainable-segmentation
 Trainable_Segmentation_Plugin_(deprecated) :: plugins/trainable-segmentation
@@ -1699,7 +1699,7 @@ Transform_Virtual_Stack_Slices :: plugins/transform-virtual-stack-slices
 Travis :: develop/travis
 Travis_CI :: develop/travis
 TreeJ :: plugins/treej
-Tree_and_Menu_Demo :: ???
+Tree_and_Menu_Demo :: <DELETED> (MediaWiki demo page)
 Troubleshooting :: help/troubleshooting
 Tubeness :: plugins/tubeness
 TurboReg :: plugins/turboreg
@@ -1812,8 +1812,8 @@ User:FiloQuant :: users/FiloQuant
 User:Fjug :: users/fjug
 User:Fosterl :: users/lesfoster
 User:Frauzufall :: users/frauzufall
-User:Freetrashbox :: <DELETED>
-User:Freetrashbox/DiameterJ :: <DELETED>
+User:Freetrashbox :: <DELETED> (spammy user?)
+User:Freetrashbox/DiameterJ :: <DELETED> (spammy user?)
 User:Frise :: users/frederikfly
 User:Frusak :: users/Frusak
 User:Funke :: users/funkey
@@ -2051,14 +2051,14 @@ Welcome :: /
 Why :: develop/philosophy
 Why_Closed-Source_Is_Wrong :: TODO
 Why_Java :: develop/philosophy#why-java
-Widget:Flash :: widgets/Widget_Flash
-Widget:Google_Spreadsheet :: widgets/Widget_Google_Spreadsheet
-Widget:SWITCHtube :: widgets/Widget_SWITCHtube
-Widget:UsageMap :: widgets/Widget_UsageMap
-Widget:Vimeo :: widgets/Widget_Vimeo
-Widget:YouTube :: widgets/Widget_YouTube
+Widget:Flash :: <DELETED> (Flash was discontinued)
+Widget:Google_Spreadsheet :: TODO
+Widget:SWITCHtube :: TODO
+Widget:UsageMap :: about/usage
+Widget:Vimeo :: TODO
+Widget:YouTube :: help/editing/youtube-video
 Wiki :: about/contributing#this-web-site
-Wiki_log :: ???
+Wiki_log :: <DELETED> (MediaWiki-specific changelog)
 Windows :: platforms/windows
 Wish_list :: develop/wish-list
 Workshops :: learn/presentations#workshops
