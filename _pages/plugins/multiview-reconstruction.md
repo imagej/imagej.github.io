@@ -37,13 +37,68 @@ This software package is the successor to the [SPIM Registration](/plugins/spim-
 
 ### Examples
 
-<table><thead><tr class="header"><th><p>What does 'multiview' mean exactly?</p></th></tr></thead><tbody><tr class="odd"><td><p>When we speak of <strong>multiview</strong> datasets we generally mean that per timepoint there <em>n</em> image stacks, which could be different:</p><ul><li>Channels</li><li>Illumination Directions</li><li>Rotation Angles</li></ul><p>Note that even if <em>n</em>=1, i.e. there is only one stack per timepoint, this software can be used to stabilize the timeseries (drift-correction).</p></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <thead>
+    <tr class="header">
+      <th>
+        <p>What does 'multiview' mean exactly?</p>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="odd">
+      <td>
+        <p>When we speak of <strong>multiview</strong> datasets we generally mean that per timepoint there <em>n</em> image stacks, which could be different:</p>
+        <ul>
+          <li>Channels</li>
+          <li>Illumination Directions</li>
+          <li>Rotation Angles</li>
+        </ul>
+        <p>Note that even if <em>n</em>=1, i.e. there is only one stack per timepoint, this software can be used to stabilize the timeseries (drift-correction).</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 Two examples of multiview datasets reconstructed with this software package are shown as YouTube videos below. Both datasets were registered using the bead-based registration ([*Nature Methods*, **7**(6):418-419](http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html)) and the Multiview Deconvolution ([*Nature Methods*, **11**(6):645-648](http://www.nature.com/nmeth/journal/v11/n6/full/nmeth.2929.html)), which are part of this software package. Please check out the Citation section for information on how to cite this software package.
 
 The first video shows a developing *Drosophila* embryo expressing His-YFP in all cells. The entire embryogenesis was acquired using the Zeiss Demonstrator B. The top row shows the multiview deconvolution of this seven-view dataset, the lower row the content-based fusion.
 
-<table><thead><tr class="header"><th><p>Lightsheet fluorescence microscopy</p></th></tr></thead><tbody><tr class="odd"><td><p>Lightsheet fluorescence microscopy entered the world of modern biology in 2004 when <strong>Selective Plane Illumination Microscopy</strong> (<a href="http://www.sciencemag.org/content/305/5686/1007"><strong>SPIM</strong></a>) was published. It allows <em>in toto</em> imaging of large specimens by acquiring image stacks from multiple angles with high spatial and temporal resolution. Many impressive variations and extensions have been published, some of them using new variations or entirely new naming schemes:</p><ul><li>OpenSPIM</li><li>Digital scanned laser light-sheet fluorescence microscopy (DSLM)</li><li>DSLM and structured illumination (DSLM-SI)</li><li>Two-photon versions of SPIM and DSLM</li><li>MuVi-SPIM</li><li>Two-photon light sheet microscopy (2P-LSM)</li><li>Bessel-Beam illumination and DSLM</li><li>Ultramicroscopy</li><li>Orthogonal-plane fluorescence optical sectioning microscopy (OPFOS)</li><li>Multidirectional selective plane illumination microscopy (mSPIM)</li><li>Thin-sheet laser imaging microscopy (TSLIM)</li><li>...</li></ul><p>During the 2012 Lightsheet fluorescence microscopy meeting in Dublin, organized by Emmanuel Reynaud, it was voted to summarize most of these developments under the name of <strong>Lightsheet fluorescence microscopy (LSFM)</strong>.</p></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <thead>
+    <tr class="header">
+      <th>
+        <p>Lightsheet fluorescence microscopy</p>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="odd">
+      <td>
+        <p>Lightsheet fluorescence microscopy entered the world of modern biology in 2004 when <strong>Selective Plane Illumination Microscopy</strong> (<a href="http://www.sciencemag.org/content/305/5686/1007"><strong>SPIM</strong></a>) was published. It allows <em>in toto</em> imaging of large specimens by acquiring image stacks from multiple angles with high spatial and temporal resolution. Many impressive variations and extensions have been published, some of them using new variations or entirely new naming schemes:</p>
+        <ul>
+          <li>OpenSPIM</li>
+          <li>Digital scanned laser light-sheet fluorescence microscopy (DSLM)</li>
+          <li>DSLM and structured illumination (DSLM-SI)</li>
+          <li>Two-photon versions of SPIM and DSLM</li>
+          <li>MuVi-SPIM</li>
+          <li>Two-photon light sheet microscopy (2P-LSM)</li>
+          <li>Bessel-Beam illumination and DSLM</li>
+          <li>Ultramicroscopy</li>
+          <li>Orthogonal-plane fluorescence optical sectioning microscopy (OPFOS)</li>
+          <li>Multidirectional selective plane illumination microscopy (mSPIM)</li>
+          <li>Thin-sheet laser imaging microscopy (TSLIM)</li>
+          <li>...</li>
+        </ul>
+        <p>During the 2012 Lightsheet fluorescence microscopy meeting in Dublin, organized by Emmanuel Reynaud, it was voted to summarize most of these developments under the name of <strong>Lightsheet fluorescence microscopy (LSFM)</strong>.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 {% include youtube url='https://www.youtube.com/embed/NJHoP8RBIaw'%}
 

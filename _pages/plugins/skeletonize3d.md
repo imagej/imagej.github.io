@@ -7,7 +7,20 @@ artifact: sc.fiji:Skeletonize3D\_
 
 2D and 3D skeletonization of binary images.
 
-<table><tbody><tr class="odd"><td><p>style="vertical-align:top" |{% include thumbnail src='/media/Smoothed-bat-cochlea-volume.gif' title='Smoothed bat cochlea volume'%}</p></td><td><p>style="vertical-align:top" |{% include thumbnail src='/media/Skeleton-bat-cochlea-volume.gif' title='3D skeleton from bat cochlea volume'%}</p></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td>
+        <p>style="vertical-align:top" |{% include thumbnail src='/media/Smoothed-bat-cochlea-volume.gif' title='Smoothed bat cochlea volume'%}</p>
+      </td>
+      <td>
+        <p>style="vertical-align:top" |{% include thumbnail src='/media/Skeleton-bat-cochlea-volume.gif' title='3D skeleton from bat cochlea volume'%}</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 ## General Description
 

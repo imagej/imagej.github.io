@@ -131,7 +131,18 @@ To use:
 
 ### Equalization
 
-<table><tbody><tr class="odd"><td style="border:none;padding:0in;"><p> You can have more control over brightness and contrast adjustments with the {% include bc path='Process | Enhance contrast'%} menu command. With a stack, it analyzes the each slice's histogram to make the adjustment.</p><p>The <em>Equalize contrast</em> command applies a non-linear stretch of the histogram based on the square root of its intensity.</p></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td style="border:none;padding:0in;">
+        <p>You can have more control over brightness and contrast adjustments with the {% include bc path='Process | Enhance contrast'%} menu command. With a stack, it analyzes the each slice's histogram to make the adjustment.</p>
+        <p>The <em>Equalize contrast</em> command applies a non-linear stretch of the histogram based on the square root of its intensity.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 ![](/media/Equalize histrogram.jpg "equalize_histrogram.jpg")
 
@@ -175,7 +186,32 @@ With a background that is relatively even across the image, remove it with the *
 
 To fix an uneven background use the menu command {% include bc path='Process | Subtract background'%}. This will use a *rolling ball* algorithm on the uneven background. The radius should be set to at least the size of the largest object that is *not* part of the background. It can also be used to remove background from gels where the background is white. Running the command several times may produce better results. The user can choose whether or not to have a light background, create a background with no subtraction, have a sliding paraboloid, disable smoothing, or preview the results. The default value for the rolling ball radius is 50 pixels.
 
-<table><tbody><tr class="odd"><td style="border:none;padding:0.0194in;"><p> <em>RAW</em></p></td><td style="border:none;padding:0.0194in;"></td><td style="border:none;padding:0.0194in;"><p> {% include bc path='Process | Subtract Background...'%}</p></td></tr><tr class="even"><td style="border:none;padding:0.0194in;"><p> <img src="/media/Raw rolling ball back corr.jpg" title="fig:raw_rolling_ball_back_corr.jpg" alt="raw_rolling_ball_back_corr.jpg" /></p></td><td style="border:none;padding:0.0194in;"><p> <img src="/media/Rolling ball back corr.jpg" title="fig:rolling_ball_back_corr.jpg" alt="rolling_ball_back_corr.jpg" /></p></td><td style="border:none;padding:0.0194in;"><p> <img src="/media/Processed rolling ball back corr.jpg" title="fig:processed_rolling_ball_back_corr.jpg" alt="processed_rolling_ball_back_corr.jpg" /></p></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td style="border:none;padding:0.0194in;">
+        <p><em>RAW</em></p>
+      </td>
+      <td style="border:none;padding:0.0194in;"></td>
+      <td style="border:none;padding:0.0194in;">
+        <p>{% include bc path='Process | Subtract Background...'%}</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="border:none;padding:0.0194in;">
+        <p><img src="/media/Raw%20rolling%20ball%20back%20corr.jpg" title="fig:raw_rolling_ball_back_corr.jpg" alt="raw_rolling_ball_back_corr.jpg"></p>
+      </td>
+      <td style="border:none;padding:0.0194in;">
+        <p><img src="/media/Rolling%20ball%20back%20corr.jpg" title="fig:rolling_ball_back_corr.jpg" alt="rolling_ball_back_corr.jpg"></p>
+      </td>
+      <td style="border:none;padding:0.0194in;">
+        <p><img src="/media/Processed%20rolling%20ball%20back%20corr.jpg" title="fig:processed_rolling_ball_back_corr.jpg" alt="processed_rolling_ball_back_corr.jpg"></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 Once the background has been evened, final adjustments can be made with the *Brightness/Contrast* control.
 
@@ -189,7 +225,40 @@ The rolling-ball algorithm takes a lot of time. To speed up the process with an 
 
 This macro, because it also works with stacks, can be used on time-courses with varying backgrounds.
 
-<table><tbody><tr class="odd"><td style="border:none;padding:0in;"><center><p>Before correction</p></center></td><td style="border:none;padding:0in;"><center><p>Background intensity over time</p></center></td><td style="border:none;padding:0in;"><center><p>After <em>ROI_BG_Correction</em></p></center></td></tr><tr class="even"><td style="border:none;padding:0in;"><p> <img src="/media/Roi back corr before.gif" title="fig:roi_back_corr_before.gif" alt="roi_back_corr_before.gif" /></p></td><td style="border:none;padding:0in;"><p> <img src="/media/Roi back corr during.gif" title="fig:roi_back_corr_during.gif" alt="roi_back_corr_during.gif" /></p></td><td style="border:none;padding:0in;"><p> <img src="/media/Roi back corr after.gif" title="fig:roi_back_corr_after.gif" alt="roi_back_corr_after.gif" /></p></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td style="border:none;padding:0in;">
+        <center>
+          <p>Before correction</p>
+        </center>
+      </td>
+      <td style="border:none;padding:0in;">
+        <center>
+          <p>Background intensity over time</p>
+        </center>
+      </td>
+      <td style="border:none;padding:0in;">
+        <center>
+          <p>After <em>ROI_BG_Correction</em></p>
+        </center>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="border:none;padding:0in;">
+        <p><img src="/media/Roi%20back%20corr%20before.gif" title="fig:roi_back_corr_before.gif" alt="roi_back_corr_before.gif"></p>
+      </td>
+      <td style="border:none;padding:0in;">
+        <p><img src="/media/Roi%20back%20corr%20during.gif" title="fig:roi_back_corr_during.gif" alt="roi_back_corr_during.gif"></p>
+      </td>
+      <td style="border:none;padding:0in;">
+        <p><img src="/media/Roi%20back%20corr%20after.gif" title="fig:roi_back_corr_after.gif" alt="roi_back_corr_after.gif"></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 ## Flat-field correction
 
@@ -197,7 +266,29 @@ This macro, because it also works with stacks, can be used on time-courses with 
 
 Use this technique on brightfield images. You can correct uneven illumination or dirt/dust on lenses by acquiring a "flat-field" reference image *with the same intensity illumination as the experiment*. The flat field image should be as close as possible to a field of view of the cover slip without any cells/debris. This is often not possible with the experimental cover slip, so a fresh cover slip may be used with approximately the same amount of buffer as the experiment.
 
-<table><tbody><tr class="odd"><td><figure><img src="/media/Flat field correction.gif" title="flat_field_correction.gif" alt="flat_field_correction.gif" /><figcaption aria-hidden="true">flat_field_correction.gif</figcaption></figure></td></tr><tr class="even"><td><center><p><strong>RAW</strong></p></center></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td>
+        <figure>
+          <img src="/media/Flat%20field%20correction.gif" title="flat_field_correction.gif" alt="flat_field_correction.gif">
+          <figcaption aria-hidden="true">
+            flat_field_correction.gif
+          </figcaption>
+        </figure>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <center>
+          <p><strong>RAW</strong></p>
+        </center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 1.  Open both the experimental image and the flat-field image.
 2.  Click the *Select all* button on the flat-field image and measure the average intensity. This value, the k1 value, will appear in the results window.
@@ -210,7 +301,30 @@ This can also be done using the {% include bc path='Process | Image Calculator'%
 
 ### Pseudo-correction
 
-<table><tbody><tr class="odd"><td style="border:none;padding:0in;"><figure><img src="/media/PseudoCorrectionImage.gif" title="pseudoCorrectionImage.gif" alt="pseudoCorrectionImage.gif" /><figcaption aria-hidden="true">pseudoCorrectionImage.gif</figcaption></figure><p>Sometimes it is not possible to obtain a flat-field reference image. It is still possible to correct for illumination intensity, though not small defects like dust, by making a "pseudo-flat field" image by performing a large-kernel filter on the image to be corrected. For those working with DIC images, this is particularly useful because they generally have an intrinsic, and distracting, gradient in illumination.</p><p>This can be accomplished simply by subtracting the Gaussian-blurred image version of the image.</p><p>This can also be used with stacks for brightfield time-courses that vary in intensity with time. Doing this with stacks can be time consuming.</p></td></tr><tr class="even"><td><p> <img src="/media/PseudoCorrRawCorrected.gif" title="fig:pseudoCorrRawCorrected.gif" alt="pseudoCorrRawCorrected.gif" /></p></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td style="border:none;padding:0in;">
+        <figure>
+          <img src="/media/PseudoCorrectionImage.gif" title="pseudoCorrectionImage.gif" alt="pseudoCorrectionImage.gif">
+          <figcaption aria-hidden="true">
+            pseudoCorrectionImage.gif
+          </figcaption>
+        </figure>
+        <p>Sometimes it is not possible to obtain a flat-field reference image. It is still possible to correct for illumination intensity, though not small defects like dust, by making a "pseudo-flat field" image by performing a large-kernel filter on the image to be corrected. For those working with DIC images, this is particularly useful because they generally have an intrinsic, and distracting, gradient in illumination.</p>
+        <p>This can be accomplished simply by subtracting the Gaussian-blurred image version of the image.</p>
+        <p>This can also be used with stacks for brightfield time-courses that vary in intensity with time. Doing this with stacks can be time consuming.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p><img src="/media/PseudoCorrRawCorrected.gif" title="fig:pseudoCorrRawCorrected.gif" alt="pseudoCorrRawCorrected.gif"></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 ### FFT background correction
 

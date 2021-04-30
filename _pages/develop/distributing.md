@@ -31,154 +31,278 @@ The tables below discuss additional options for these three aspects of distribut
 
 The first goal is to get your extension into the hands of users.
 
-<table><tbody>
-<tr class="odd">
-<td style="background: #dfd"><p><strong>Create your own update site</strong></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Steps</strong></p></td>
-</tr>
-<tr class="odd">
-<td style="background: #dfd; vertical-align: top"><ul><li><strong><a href="/update-sites/setup"> Create your update site</a></strong>, then <strong><a href="/update-sites/setup#uploading-files-to-your-update-site">upload your extension to it</a></strong>.</li><li>You may add your update site to the list of built-in sites by editing the <strong>{% include list-of-update-sites%}
-</strong> page.</li><li>To release a new version, <strong><a href="/update-sites/setup#uploading-files-to-your-update-site">upload it to the update site</a></strong>.</li></ul></td>
-</tr>
-<tr class="even">
-<td style="background: #dfd"></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Distribute it as part of Fiji</strong></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Steps</strong></p></td>
-</tr>
-<tr class="odd">
-<td style="background: #dfd; vertical-align: top"><ul><li>Make a post on the <strong><a href="/help">ImageJ forum</a></strong> to initiate a request.</li></ul></td>
-</tr>
-<tr class="even">
-<td style="vertical-align: top"></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Serve it from a website as a download</strong></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Steps</strong></p></td>
-</tr>
-<tr class="odd">
-<td><ul><li>Create an archive (TAR, ZIP, etc.).</li><li>Upload the archive to the relevant web space, and link it.</li></ul></td>
-</tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td style="background: #dfd">
+        <p><strong>Create your own update site</strong></p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p><strong>Steps</strong></p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="background: #dfd; vertical-align: top">
+        <ul>
+          <li><strong><a href="/update-sites/setup">Create your update site</a></strong>, then <strong><a href="/update-sites/setup#uploading-files-to-your-update-site">upload your extension to it</a></strong>.</li>
+          <li>You may add your update site to the list of built-in sites by editing the <strong>{% include list-of-update-sites%}</strong> page.</li>
+          <li>To release a new version, <strong><a href="/update-sites/setup#uploading-files-to-your-update-site">upload it to the update site</a></strong>.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="background: #dfd"></td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p><strong>Distribute it as part of Fiji</strong></p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p><strong>Steps</strong></p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="background: #dfd; vertical-align: top">
+        <ul>
+          <li>Make a post on the <strong><a href="/help">ImageJ forum</a></strong> to initiate a request.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="vertical-align: top"></td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p><strong>Serve it from a website as a download</strong></p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p><strong>Steps</strong></p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <ul>
+          <li>Create an archive (TAR, ZIP, etc.).</li>
+          <li>Upload the archive to the relevant web space, and link it.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 ## Sharing your source code
 
 If you want to facilitate good science, please [share your source code](Open_Source). Otherwise, your extension is a black box and its results are not verifiable.
 
-<table><tbody>
-<tr class="odd">
-<td style="background: #dfd"><p><strong>Host on GitHub in your userspace or organization</strong></p></td>
-</tr>
-<tr class="even">
-<td><p> <strong>Steps</strong></p></td>
-</tr>
-<tr class="odd">
-<td style="background: #dfd; vertical-align: top"><ul><li>Create an account on <strong><a href="https://github.com">GitHub</a></strong>.</li><li><strong><a href="https://help.github.com/articles/create-a-repo">Create a new repository</a></strong> for your project.</li><li><strong><a href="https://help.github.com/articles/pushing-to-a-remote">Push your code</a></strong> there.</li><li><strong><a href="/develop/git">Learn Git</a></strong> to manage your code effectively.</li></ul></td>
-</tr>
-<tr class="even">
-<td style="background: #dfd"></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Host on GitHub in the Fiji organization (for <a href="/fiji/contribution-requirements">extensions distributed with Fiji</a>)</strong></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Steps</strong></p></td>
-</tr>
-<tr class="odd">
-<td style="background: #dfd; vertical-align: top"><ul><li>Request a <strong><a href="/about/governance">Fiji maintainer</a></strong> create a repository for you and add you as a contributor.</li><li>Meet the <strong><a href="/fiji/contribution-requirements">Fiji contribution requirements</a></strong>.</li></ul></td>
-</tr>
-<tr class="even">
-<td style="vertical-align: top"></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Host on BitBucket</strong></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Steps</strong></p></td>
-</tr>
-<tr class="odd">
-<td><ul><li>Similar to GitHub, but using <a href="https://bitbucket.org/">BitBucket</a> instead.</li></ul></td>
-</tr>
-<tr class="even">
-<td style="vertical-align: top"></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Host on SourceForge</strong></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Steps</strong></p></td>
-</tr>
-<tr class="odd">
-<td><ul><li>Similar to GitHub, but using <a href="http://sourceforge.net/">SourceForge</a> instead.</li></ul></td>
-</tr>
-<tr class="even">
-<td style="vertical-align: top"></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Serve it from a website as a download</strong></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Steps</strong></p></td>
-</tr>
-<tr class="odd">
-<td><ul><li>Create an archive (TAR, ZIP, etc.).</li><li>Upload the archive to the relevant web space, and link it.</li><li>Users download and unpack the archive.</li></ul></td>
-</tr>
-</tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td style="background: #dfd">
+        <p><strong>Host on GitHub in your userspace or organization</strong></p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p><strong>Steps</strong></p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="background: #dfd; vertical-align: top">
+        <ul>
+          <li>Create an account on <strong><a href="https://github.com">GitHub</a></strong>.</li>
+          <li><strong><a href="https://help.github.com/articles/create-a-repo">Create a new repository</a></strong> for your project.</li>
+          <li><strong><a href="https://help.github.com/articles/pushing-to-a-remote">Push your code</a></strong> there.</li>
+          <li><strong><a href="/develop/git">Learn Git</a></strong> to manage your code effectively.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="background: #dfd"></td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p><strong>Host on GitHub in the Fiji organization (for <a href="/fiji/contribution-requirements">extensions distributed with Fiji</a>)</strong></p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p><strong>Steps</strong></p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="background: #dfd; vertical-align: top">
+        <ul>
+          <li>Request a <strong><a href="/about/governance">Fiji maintainer</a></strong> create a repository for you and add you as a contributor.</li>
+          <li>Meet the <strong><a href="/fiji/contribution-requirements">Fiji contribution requirements</a></strong>.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="vertical-align: top"></td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p><strong>Host on BitBucket</strong></p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p><strong>Steps</strong></p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <ul>
+          <li>Similar to GitHub, but using <a href="https://bitbucket.org/">BitBucket</a> instead.
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="vertical-align: top"></td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p><strong>Host on SourceForge</strong></p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p><strong>Steps</strong></p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <ul>
+          <li>Similar to GitHub, but using <a href="http://sourceforge.net/">SourceForge</a> instead.
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="vertical-align: top"></td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p><strong>Serve it from a website as a download</strong></p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p><strong>Steps</strong></p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <ul>
+          <li>Create an archive (TAR, ZIP, etc.).</li>
+          <li>Upload the archive to the relevant web space, and link it.</li>
+          <li>Users download and unpack the archive.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 ## Documenting your extension
 
 Useful extensions deserve corresponding documentation explaining how to use them.
 
-<table><tbody>
-<tr class="odd">
-<td style="background: #dfd"><p><strong>Create an ImageJ wiki page</strong></p></td>
-</tr>
-<tr class="even">
-<td><p> <strong>Steps</strong></p></td>
-</tr>
-<tr class="odd">
-<td style="background: #dfd; vertical-align: top"><ul><li><strong><a href="https://github.com/join">Create a GitHub account</a></strong>.</li><li><strong><a href="/help/editing">Create a page</a></strong> for your extension.</li></ul></td>
-</tr>
-<tr class="even">
-<td style="vertical-align: top"></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Use the ImageJ Information and Documentation Portal (IIDP)</strong></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Steps</strong></p></td>
-</tr>
-<tr class="odd">
-<td><ul><li>Request an account from an IIDP administrator.</li><li><a href="http://imagejdocu.tudor.lu/doku.php?id=create_new_content">Create a page</a> for your extension.</li></ul></td>
-</tr>
-<tr class="even">
-<td style="vertical-align: top"></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Add a page to the ImageJ 1.x website</strong></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Steps</strong></p></td>
-</tr>
-<tr class="odd">
-<td><ul><li>Prepare an HTML page modeled after the <a href="/ij/plugins/index.html">list of ImageJ 1.x plugins</a>.</li><li>Email it to {%- include person id='rasband' -%}, the developer of ImageJ 1.x, and sole maintainer of the <a href="/ij/index.html">ImageJ 1.x website</a>.</li></ul></td>
-</tr>
-<tr class="even">
-<td style="vertical-align: top"></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Create your own webpage elsewhere</strong></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Steps</strong></p></td>
-</tr>
-<tr class="odd">
-<td><p> (Varies)</p></td>
-</tr>
-</tbody></table>
+  <table>
+{::nomarkdown}
+  <tbody>
+    <tr class="odd">
+      <td style="background: #dfd">
+        <p><strong>Create an ImageJ wiki page</strong></p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p><strong>Steps</strong></p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="background: #dfd; vertical-align: top">
+        <ul>
+          <li><strong><a href="https://github.com/join">Create a GitHub account</a></strong>.</li>
+          <li><strong><a href="/help/editing">Create a page</a></strong> for your extension.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="vertical-align: top"></td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p><strong>Use the ImageJ Information and Documentation Portal (IIDP)</strong></p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p><strong>Steps</strong></p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <ul>
+          <li>Request an account from an IIDP administrator.</li>
+          <li>
+            <a href="http://imagejdocu.tudor.lu/doku.php?id=create_new_content">Create a page</a> for your extension.
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="vertical-align: top"></td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p><strong>Add a page to the ImageJ 1.x website</strong></p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p><strong>Steps</strong></p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <ul>
+          <li>Prepare an HTML page modeled after the <a href="/ij/plugins/index.html">list of ImageJ 1.x plugins</a>.
+          </li>
+          <li>Email it to {%- include person id='rasband' -%}, the developer of ImageJ 1.x, and sole maintainer of the <a href="/ij/index.html">ImageJ 1.x website</a>.
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="vertical-align: top"></td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p><strong>Create your own webpage elsewhere</strong></p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p><strong>Steps</strong></p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>(Varies)</p>
+      </td>
+    </tr>
+  </tbody>
+{:/}
+  </table>

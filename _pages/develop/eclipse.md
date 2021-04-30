@@ -94,9 +94,206 @@ If you're having trouble, how to import and build your Maven + Eclipse project, 
 
 On macOS, replace {% include key content='Ctrl' %} with {% include key content='Cmd' %}
 
-<table><tbody><tr class="odd"><td style="text-align: right; vertical-align: top; white-space: nowrap"><p><strong>Navigation</strong></p></td><td></td></tr><tr class="even"><td><p> {% include key content='Ctrl|Shift|T' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Open a Java class from the workspace</p></td></tr><tr class="odd"><td><p> {% include key content='Ctrl|Shift|R' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Open a file from the workspace</p></td></tr><tr class="even"><td><p> {% include key content='F3' %}</p></td><td><p>Jump to selected class<br />
-(to edit the code, see <a href="/develop/architecture#using-snapshot-couplings-during-development">snapshot coupling</a>)</p></td></tr><tr class="odd"><td style="text-align: right; vertical-align: top; white-space: nowrap"><p> {% include key content='Ctrl|O' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Show superclass/subclass hierarchy</p></td></tr><tr class="even"><td><p> {% include key content='Ctrl|T' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Show implementations of interface or class</p></td></tr><tr class="odd"><td><p> {% include key content='Ctrl|L' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Go to line number</p></td></tr><tr class="even"><td><p> {% include key content='Ctrl|Q' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Go to last edit location</p></td></tr><tr class="odd"><td><p> {% include key content='Ctrl|E' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Go to next file in editor</p></td></tr><tr class="even"><td><p><strong>Editing</strong></p></td><td></td></tr><tr class="odd"><td><p> {% include key content='Alt|Up' %}, {% include key content='Alt|Down' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Move current line up or down</p></td></tr><tr class="even"><td><p> {% include key content='Ctrl|D' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Delete the current line</p></td></tr><tr class="odd"><td><p> {% include key content='Ctrl|/' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Comment/uncomment the selected line(s)</p></td></tr><tr class="even"><td><p> {% include key content='Ctrl|1' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Quick fix selected error</p></td></tr><tr class="odd"><td><p> {% include key content='Ctrl|Space' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Auto-complete current selection</p></td></tr><tr class="even"><td><p><strong>Code cleanup</strong></p></td><td></td></tr><tr class="odd"><td><p> {% include key content='Ctrl|Shift|O' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Organize imports</p></td></tr><tr class="even"><td><p> {% include key content='Ctrl|Shift|F' %}</p></td><td><p>Format code<br />
-(BUT make sure you set the <a href="/develop/coding-style#eclipse-code-style-profiles">coding style</a>)</p></td></tr><tr class="odd"><td style="text-align: right; vertical-align: top; white-space: nowrap"><p> {% include key content='Alt|Shift|S' %}, {% include key content='U' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Clean up (does format and much more)</p></td></tr><tr class="even"><td><p> {% include key content='Alt|Shift|R' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Refactor/rename selected class/variable</p></td></tr><tr class="odd"><td><p><strong>Debugging</strong></p></td><td></td></tr><tr class="even"><td><p> {% include key content='Ctrl|Shift|B' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Set/Remove breakpoint</p></td></tr><tr class="odd"><td><p> {% include key content='F5' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Step into</p></td></tr><tr class="even"><td><p> {% include key content='F6' %}</p></td><td style="text-align: right; vertical-align: top; white-space: nowrap"><p>Step over</p></td></tr><tr class="odd"><td><p> {% include key content='F7' %}</p></td><td><p>Step out</p></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td style="text-align: right; vertical-align: top; white-space: nowrap">
+        <p><strong>Navigation</strong></p>
+      </td>
+      <td></td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>{% include key content='Ctrl|Shift|T' %}</p>
+      </td>
+      <td style="text-align: right; vertical-align: top; white-space: nowrap">
+        <p>Open a Java class from the workspace</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>{% include key content='Ctrl|Shift|R' %}</p>
+      </td>
+      <td style="text-align: right; vertical-align: top; white-space: nowrap">
+        <p>Open a file from the workspace</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>{% include key content='F3' %}</p>
+      </td>
+      <td>
+        <p>Jump to selected class<br>
+        (to edit the code, see <a href="/develop/architecture#using-snapshot-couplings-during-development">snapshot coupling</a>)</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="text-align: right; vertical-align: top; white-space: nowrap">
+        <p>{% include key content='Ctrl|O' %}</p>
+      </td>
+      <td style="text-align: right; vertical-align: top; white-space: nowrap">
+        <p>Show superclass/subclass hierarchy</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>{% include key content='Ctrl|T' %}</p>
+      </td>
+      <td style="text-align: right; vertical-align: top; white-space: nowrap">
+        <p>Show implementations of interface or class</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>{% include key content='Ctrl|L' %}</p>
+      </td>
+      <td style="text-align: right; vertical-align: top; white-space: nowrap">
+        <p>Go to line number</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>{% include key content='Ctrl|Q' %}</p>
+      </td>
+      <td style="text-align: right; vertical-align: top; white-space: nowrap">
+        <p>Go to last edit location</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>{% include key content='Ctrl|E' %}</p>
+      </td>
+      <td style="text-align: right; vertical-align: top; white-space: nowrap">
+        <p>Go to next file in editor</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p><strong>Editing</strong></p>
+      </td>
+      <td></td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>{% include key content='Alt|Up' %}, {% include key content='Alt|Down' %}</p>
+      </td>
+      <td style="text-align: right; vertical-align: top; white-space: nowrap">
+        <p>Move current line up or down</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>{% include key content='Ctrl|D' %}</p>
+      </td>
+      <td style="text-align: right; vertical-align: top; white-space: nowrap">
+        <p>Delete the current line</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>{% include key content='Ctrl|/' %}</p>
+      </td>
+      <td style="text-align: right; vertical-align: top; white-space: nowrap">
+        <p>Comment/uncomment the selected line(s)</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>{% include key content='Ctrl|1' %}</p>
+      </td>
+      <td style="text-align: right; vertical-align: top; white-space: nowrap">
+        <p>Quick fix selected error</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>{% include key content='Ctrl|Space' %}</p>
+      </td>
+      <td style="text-align: right; vertical-align: top; white-space: nowrap">
+        <p>Auto-complete current selection</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p><strong>Code cleanup</strong></p>
+      </td>
+      <td></td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>{% include key content='Ctrl|Shift|O' %}</p>
+      </td>
+      <td style="text-align: right; vertical-align: top; white-space: nowrap">
+        <p>Organize imports</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>{% include key content='Ctrl|Shift|F' %}</p>
+      </td>
+      <td>
+        <p>Format code<br>
+        (BUT make sure you set the <a href="/develop/coding-style#eclipse-code-style-profiles">coding style</a>)</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="text-align: right; vertical-align: top; white-space: nowrap">
+        <p>{% include key content='Alt|Shift|S' %}, {% include key content='U' %}</p>
+      </td>
+      <td style="text-align: right; vertical-align: top; white-space: nowrap">
+        <p>Clean up (does format and much more)</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>{% include key content='Alt|Shift|R' %}</p>
+      </td>
+      <td style="text-align: right; vertical-align: top; white-space: nowrap">
+        <p>Refactor/rename selected class/variable</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p><strong>Debugging</strong></p>
+      </td>
+      <td></td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>{% include key content='Ctrl|Shift|B' %}</p>
+      </td>
+      <td style="text-align: right; vertical-align: top; white-space: nowrap">
+        <p>Set/Remove breakpoint</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>{% include key content='F5' %}</p>
+      </td>
+      <td style="text-align: right; vertical-align: top; white-space: nowrap">
+        <p>Step into</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>{% include key content='F6' %}</p>
+      </td>
+      <td style="text-align: right; vertical-align: top; white-space: nowrap">
+        <p>Step over</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>{% include key content='F7' %}</p>
+      </td>
+      <td>
+        <p>Step out</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 </div>
 
@@ -210,4 +407,39 @@ Note that doing this only allows you to view the source code, it does **not** al
 
 ## See also
 
-<table><thead><tr class="header"><th><p><a href="/software/imagej2">ImageJ2</a></p></th><th><p><a href="/software/imagej1">ImageJ 1.x</a></p></th></tr></thead><tbody><tr class="odd"><td><ul><li><a href="/develop/plugins">Writing plugins</a></li><li><a href="/develop/improving-the-code">Contributing to a plugin</a></li></ul></td><td><ul><li>{% include github org='imagej' repo='example-legacy-plugin' label='example-legacy-plugin' %} project template</li><li><a href="/develop/ij1-plugins">Developing Plugins for ImageJ 1.x</a></li></ul></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <thead>
+    <tr class="header">
+      <th>
+        <p><a href="/software/imagej2">ImageJ2</a></p>
+      </th>
+      <th>
+        <p><a href="/software/imagej1">ImageJ 1.x</a></p>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="odd">
+      <td>
+        <ul>
+          <li>
+            <a href="/develop/plugins">Writing plugins</a>
+          </li>
+          <li>
+            <a href="/develop/improving-the-code">Contributing to a plugin</a>
+          </li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>{% include github org='imagej' repo='example-legacy-plugin' label='example-legacy-plugin' %} project template</li>
+          <li>
+            <a href="/develop/ij1-plugins">Developing Plugins for ImageJ 1.x</a>
+          </li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}

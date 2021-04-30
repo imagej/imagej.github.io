@@ -72,8 +72,66 @@ The boundary behavior of a ROI may change as a result of the operation. The belo
 
 ### Unary Operators
 
-<table><tbody><tr class="odd"><td><p>+style="caption-side:bottom; text-align: left; font-size: 0.9em; font-weight: normal;"|<sup>1</sup> Transform is {% include wikipedia title='Continuous function' text='continuous'%} (preserves boundary behavior) and will preserve the interval bounds<br />
-<sup>2</sup> Transform is discontinuous or doesn't preserve bounds</p></td><td><p>Operation</p></td><td><p>BoundaryType</p></td></tr><tr class="even"><td></td><td><p>open</p></td><td><p>closed</p></td></tr><tr class="odd"><td><p>negate</p></td><td><p>closed</p></td><td><p>open</p></td></tr><tr class="even"><td><p>transform<sup>1<sup></p></td><td><p>open</p></td><td><p>closed</p></td></tr><tr class="odd"><td><p>transform<sup>2<sup></p></td><td><p>unspecified</p></td><td><p>unspecified</p></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td>
+        <p>+style="caption-side:bottom; text-align: left; font-size: 0.9em; font-weight: normal;"|<sup>1</sup> Transform is {% include wikipedia title='Continuous function' text='continuous'%} (preserves boundary behavior) and will preserve the interval bounds<br>
+        <sup>2</sup> Transform is discontinuous or doesn't preserve bounds</p>
+      </td>
+      <td>
+        <p>Operation</p>
+      </td>
+      <td>
+        <p>BoundaryType</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td></td>
+      <td>
+        <p>open</p>
+      </td>
+      <td>
+        <p>closed</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>negate</p>
+      </td>
+      <td>
+        <p>closed</p>
+      </td>
+      <td>
+        <p>open</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>transform<sup>1</sup></p>
+      </td>
+      <td>
+        <p>open</p>
+      </td>
+      <td>
+        <p>closed</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>transform<sup>2</sup></p>
+      </td>
+      <td>
+        <p>unspecified</p>
+      </td>
+      <td>
+        <p>unspecified</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 ### Binary Operators
 

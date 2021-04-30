@@ -23,7 +23,52 @@ More precisely, image segmentation is the process of *assigning a label* to ever
 
 One plugin which is designed to be very powerful, yet easy to use for non-experts in image processing:
 
-<table><tbody><tr class="odd"><td><p><strong>Plugin Name</strong></p></td><td><p><strong>Short Description</strong></p></td><td><p><strong>Highlights</strong></p></td><td><p><strong>Plugin Snapshot</strong></p></td></tr><tr class="even"><td><p><a href="/plugins/tws">Trainable Weka Segmentation</a></p></td><td><p>A tool that combines a collection of machine learning algorithms with a set of selected image features to produce pixel-based segmentations.</p></td><td><ul><li>Can be trained to learn from the user input and perform later the same task in unknown (test) data</li><li>Makes use of all the powerful tools and classifiers from the latest version of <a href="http://www.cs.waikato.ac.nz/ml/weka/">Weka</a></li><li>Provides a labeled result based on the training of a chosen classifier</li><li>Ease of use due to its graphical user interfaces</li></ul></td><td><p><img src="/media/TWS-GUI-after-training.png" width="500"/></p></td></tr><tr class="odd"><td></td><td></td><td></td><td></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td>
+        <p><strong>Plugin Name</strong></p>
+      </td>
+      <td>
+        <p><strong>Short Description</strong></p>
+      </td>
+      <td>
+        <p><strong>Highlights</strong></p>
+      </td>
+      <td>
+        <p><strong>Plugin Snapshot</strong></p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p><a href="/plugins/tws">Trainable Weka Segmentation</a></p>
+      </td>
+      <td>
+        <p>A tool that combines a collection of machine learning algorithms with a set of selected image features to produce pixel-based segmentations.</p>
+      </td>
+      <td>
+        <ul>
+          <li>Can be trained to learn from the user input and perform later the same task in unknown (test) data</li>
+          <li>Makes use of all the powerful tools and classifiers from the latest version of <a href="http://www.cs.waikato.ac.nz/ml/weka/">Weka</a>
+          </li>
+          <li>Provides a labeled result based on the training of a chosen classifier</li>
+          <li>Ease of use due to its graphical user interfaces</li>
+        </ul>
+      </td>
+      <td>
+        <p><img src="/media/TWS-GUI-after-training.png" width="500"></p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 Give it a try—you might like it!
 

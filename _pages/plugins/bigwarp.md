@@ -34,15 +34,175 @@ Landmark placements is done in *Landmark mode* which you enter by pressing {% in
 
 The following table shows the available commands and keystrokes for landmark placement, warping.
 
-<table><tbody><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|T' %}</p></td><td style="padding: 5px;"><p> Toggle between warped view and raw view or moving image.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|Ctrl' %}+{% include key content='press|O' %}</p></td><td style="padding: 5px;"><p> Open landmarks from saved file.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|Ctrl' %}+{% include key content='press|S' %}</p></td><td style="padding: 5px;"><p> Save current landmarks to a file.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|Spacebar' %}</p></td><td style="padding: 5px;"><p> Toggle <em>Landmark mode</em></p></td></tr><tr class="odd"><td style="padding: 5px;"><p> &lt;<em>Landmark mode</em>&gt;+{% include key content='press|left-click' %}</p></td><td style="padding: 5px;"><p> Clicking while in landmark mode adds a landmark point or selects and existing landmark.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> &lt;<em>Landmark mode</em>&gt;+{% include key content='press|left-click' %}+{% include key content='press|drag' %}</p></td><td style="padding: 5px;"><p> Clicking an existing point and dragging changes it's position.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> &lt;<em>Landmark mode</em>&gt;+{% include key content='press|Shift' %}+{% include key content='press|left-click' %}+{% include key content='press|drag' %}</p></td><td style="padding: 5px;"><p> "Move" a point. The initial click places a landmark point for the moving image. The release places a landmark point for the target image.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> &lt;<em>Landmark mode</em>&gt;+{% include key content='press|Ctrl' %}+{% include key content='press|left-click' %}</p></td><td style="padding: 5px;"><p> "Pin" a point. Add a landmark at the same location for both moving and target images.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> &lt;<em>Landmark mode</em>&gt;+{% include key content='press|Ctrl' %}+{% include key content='press|Shift' %}+{% include key content='press|left-click' %}</p></td><td style="padding: 5px;"><p> Place a point in the "other" space. Place a moving landmark from the fixed window, and vice versa.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|Ctrl' %} + {% include key content='press|Z' %}</p></td><td style="padding: 5px;"><p> Undo the last landmark point change.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|Ctrl' %} + {% include key content='press|Y' %}</p></td><td style="padding: 5px;"><p> Redo the last landmark point change.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|V' %}</p></td><td style="padding: 5px;"><p> Toggle point visibility in the viewer.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|N' %}</p></td><td style="padding: 5px;"><p> Toggle point name visibility in the viewer.</p></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|T' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Toggle between warped view and raw view or moving image.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|Ctrl' %}+{% include key content='press|O' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Open landmarks from saved file.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|Ctrl' %}+{% include key content='press|S' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Save current landmarks to a file.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|Spacebar' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Toggle <em>Landmark mode</em></p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>&lt;<em>Landmark mode</em>&gt;+{% include key content='press|left-click' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Clicking while in landmark mode adds a landmark point or selects and existing landmark.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p>&lt;<em>Landmark mode</em>&gt;+{% include key content='press|left-click' %}+{% include key content='press|drag' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Clicking an existing point and dragging changes it's position.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>&lt;<em>Landmark mode</em>&gt;+{% include key content='press|Shift' %}+{% include key content='press|left-click' %}+{% include key content='press|drag' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>"Move" a point. The initial click places a landmark point for the moving image. The release places a landmark point for the target image.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p>&lt;<em>Landmark mode</em>&gt;+{% include key content='press|Ctrl' %}+{% include key content='press|left-click' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>"Pin" a point. Add a landmark at the same location for both moving and target images.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>&lt;<em>Landmark mode</em>&gt;+{% include key content='press|Ctrl' %}+{% include key content='press|Shift' %}+{% include key content='press|left-click' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Place a point in the "other" space. Place a moving landmark from the fixed window, and vice versa.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|Ctrl' %} + {% include key content='press|Z' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Undo the last landmark point change.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|Ctrl' %} + {% include key content='press|Y' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Redo the last landmark point change.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|V' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Toggle point visibility in the viewer.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|N' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Toggle point name visibility in the viewer.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 ### Landmark selection and editing in the table
 
 Some changes to landmarks can be done by interacting with the landmark table.
 
-<table><tbody><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|left-click' %}</p></td><td style="padding: 5px;"><p> Select row.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|Ctrl' %}+{% include key content='press|left-click' %}</p></td><td style="padding: 5px;"><p> Add row to selection.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|Shift' %}+{% include key content='press|left-click' %}</p></td><td style="padding: 5px;"><p> Select range of rows.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|Esc' %}</p></td><td style="padding: 5px;"><p> Deselect all rows.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|right-click' %} {% include arrow%}
- Delete</p></td><td style="padding: 5px;"><p> Deletes a landmark pair (row in the table).</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|right-click' %} {% include arrow%}
- Delete all selected</p></td><td style="padding: 5px;"><p> Deletes all selected landmark pairs (row in the table).</p></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|left-click' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Select row.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|Ctrl' %}+{% include key content='press|left-click' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Add row to selection.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|Shift' %}+{% include key content='press|left-click' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Select range of rows.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|Esc' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Deselect all rows.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|right-click' %} {% include arrow%} Delete</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Deletes a landmark pair (row in the table).</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|right-click' %} {% include arrow%} Delete all selected</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Deletes all selected landmark pairs (row in the table).</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 ### Notes on point addition and landmark pair selection
 
@@ -76,7 +236,100 @@ Bigwarp inherits many image [navigation](/plugins/bdv#basic-navigation), [visual
 
 The following table shows the available navigation commands using the mouse:
 
-<table><tbody><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|Q' %}</p></td><td style="padding: 5px;"><p> Align the non-active viewer with the active viewer.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|W' %}</p></td><td style="padding: 5px;"><p> Align the active viewer with the non-active viewer.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|E' %}</p></td><td style="padding: 5px;"><p> Centers the active viewer to the nearest landmark (considers 3D when applicable).</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|Ctrl' %}+{% include key content='press|D' %}</p></td><td style="padding: 5px;"><p> Centers the active viewer to the next landmark.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|Ctrl' %}+{% include key content='press|Shift' %}+{% include key content='press|D' %}</p></td><td style="padding: 5px;"><p> Centers the active viewer to the previous landmark.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|R' %}</p></td><td style="padding: 5px;"><p> Resets the active viewer.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|U' %}</p></td><td style="padding: 5px;"><p> Show warp visualization / grid dialog.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|F6' %}</p></td><td style="padding: 5px;"><p> Show moving image panel Visibility &amp; and Grouping dialog.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|F7' %}</p></td><td style="padding: 5px;"><p> Show target image panel Visibility &amp; and Grouping dialog.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|Ctrl' %}+{% include key content='press|E' %}</p></td><td style="padding: 5px;"><p> Export moving image as an ImagePlus.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|Ctrl' %}+{% include key content='press|Shift' %}+{% include key content='press|E' %}</p></td><td style="padding: 5px;"><p> Export moving image as a Virtual ImagePlus.</p></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|Q' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Align the non-active viewer with the active viewer.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|W' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Align the active viewer with the non-active viewer.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|E' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Centers the active viewer to the nearest landmark (considers 3D when applicable).</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|Ctrl' %}+{% include key content='press|D' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Centers the active viewer to the next landmark.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|Ctrl' %}+{% include key content='press|Shift' %}+{% include key content='press|D' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Centers the active viewer to the previous landmark.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|R' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Resets the active viewer.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|U' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Show warp visualization / grid dialog.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|F6' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Show moving image panel Visibility & and Grouping dialog.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|F7' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Show target image panel Visibility & and Grouping dialog.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|Ctrl' %}+{% include key content='press|E' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Export moving image as an ImagePlus.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|Ctrl' %}+{% include key content='press|Shift' %}+{% include key content='press|E' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Export moving image as a Virtual ImagePlus.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 ### Commands shared with BigDataViewer
 
@@ -87,11 +340,125 @@ The following table shows the available navigation commands using the mouse:
 
 #### Mouse navigation
 
-<table><tbody><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|left-click|drag' %}</p></td><td style="padding: 5px;"><p> Rotate (pan and tilt) around the point where the mouse was clicked.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|right-click|drag' %} or {% include key content='press|middle-click|drag' %}</p></td><td style="padding: 5px;"><p> Translate in the XY-plane.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|mouse-wheel' %}</p></td><td style="padding: 5px;"><p> Move along the z-axis.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|Cmd|mouse-wheel' %} or {% include key content='press|Shift|Ctrl|mouse-wheel' %}</p></td><td style="padding: 5px;"><p> Zoom in and out.</p></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|left-click|drag' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Rotate (pan and tilt) around the point where the mouse was clicked.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|right-click|drag' %} or {% include key content='press|middle-click|drag' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Translate in the XY-plane.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|mouse-wheel' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Move along the z-axis.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|Cmd|mouse-wheel' %} or {% include key content='press|Shift|Ctrl|mouse-wheel' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Zoom in and out.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 #### Keyboard navigation
 
-<table><tbody><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|X' %}, {% include key content='press|Y' %}, {% include key content='press|Z' %}</p></td><td style="padding: 5px;"><p> Select keyboard rotation axis.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|Left' %}, {% include key content='press|Right' %}</p></td><td style="padding: 5px;"><p> Rotate clockwise or counter-clockwise around the choosen rotation axis.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|Up' %}, {% include key content='press|Down' %}</p></td><td style="padding: 5px;"><p> Zoom in or out.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|,' %}, {% include key content='press|.' %}</p></td><td style="padding: 5px;"><p> Move forward or backward along the Z-axis.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|Shift|X' %}</p></td><td style="padding: 5px;"><p> Rotate to the ZY-plane of the current source. (Look along the X-axis of the current source.)</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|Shift|Y' %} or {% include key content='press|Shift|A' %}</p></td><td style="padding: 5px;"><p> Rotate to the XZ-plane of the current source. (Look along the Y-axis of the current source.)</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|Shift|Z' %}</p></td><td style="padding: 5px;"><p> Rotate to the XY-plane of the current source. (Look along the Z-axis of the current source.)</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|[' %} or {% include key content='press|N' %}</p></td><td style="padding: 5px;"><p> Move to previous timepoint.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|]' %} or {% include key content='press|M' %}</p></td><td style="padding: 5px;"><p> Move to next timepoint.</p></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|X' %}, {% include key content='press|Y' %}, {% include key content='press|Z' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Select keyboard rotation axis.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|Left' %}, {% include key content='press|Right' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Rotate clockwise or counter-clockwise around the choosen rotation axis.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|Up' %}, {% include key content='press|Down' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Zoom in or out.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|,' %}, {% include key content='press|.' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Move forward or backward along the Z-axis.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|Shift|X' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Rotate to the ZY-plane of the current source. (Look along the X-axis of the current source.)</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|Shift|Y' %} or {% include key content='press|Shift|A' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Rotate to the XZ-plane of the current source. (Look along the Y-axis of the current source.)</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|Shift|Z' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Rotate to the XY-plane of the current source. (Look along the Z-axis of the current source.)</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|[' %} or {% include key content='press|N' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Move to previous timepoint.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|]' %} or {% include key content='press|M' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Move to next timepoint.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 For all navigation commands you can hold {% include key content='press\|Shift' %} to rotate and browse 10x faster, or hold {% include key content='press\|Ctrl' %} to rotate and browse 10x slower. For example, {% include key content='press\|Left' %} rotates by 1° clockwise, while {% include key content='press\|Shift\|Left' %} rotates by 10°, and {% include key content='press\|Ctrl\|Left' %} rotates by 0.1°.
 

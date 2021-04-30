@@ -59,7 +59,64 @@ From this point on, you can carry on adding nodes to the branched path as [above
 
 ## Joining: End A Path On An Existing Path
 
-<table><tbody><tr class="odd"><td><p>Supposing you want the end of a path that you're tracing to join onto an existing path, you just use the same modifier key when selecting the end point of the last part of the path. To go into that in more detail, if you're halfway through tracing a path like [1]:</p></td><td><figure><img src="/media/Snt-ej-cropped-half-finished-2.png" title="[1] Unfinished join segment, in red - disconnected" width="350" alt="[1] Unfinished join segment, in red - disconnected" /><figcaption aria-hidden="true"><span style="text-align:center;font-size:90%">[1] Unfinished join segment, in red - disconnected</span></figcaption></figure></td></tr><tr class="even"><td><p>... and you want the final part of that path to join up with the existing path running from the top-left to top-right of the image. First, select that path in the path list (or using the {% include key content='G' %} shortcut) as in [2]:</p></td><td><figure><img src="/media/Snt-ej-cropped-selected-destination-path-2.png" title="[2] Selected path to join to, in green" width="350" alt="[2] Selected path to join to, in green" /><figcaption aria-hidden="true"><span style="text-align:center;font-size:90%">[2] Selected path to join to, in green</span></figcaption></figure></td></tr><tr class="odd"><td><p>Now hold down {% include key content='Alt|Shift' %} to restrict the endpoint to be a "join" on that existing path. Click (while still holding down the modifier keys) to start the search for that endpoint and make it join the existing path. If the search can find a path to the end point, the result should look like [3]:</p></td><td><figure><img src="/media/Snt-ej-cropped-end-join-created-2.png" title="[3] Connected path to join, unconfirmed" width="350" alt="[3] Connected path to join, unconfirmed" /><figcaption aria-hidden="true"><span style="text-align:center;font-size:90%">[3] Connected path to join, unconfirmed</span></figcaption></figure></td></tr><tr class="even"><td><p>If you're happy with the result, confirming the temporary path will automatically complete the whole path, since if you're creating an end join there cannot be any more to the path. Note that the path list indicates that this new <em>Path (1)</em> ends on the existing <em>Path (0)</em>. The result will look like [4]:</p></td><td><figure><img src="/media/Snt-ej-cropped-path-completed-2.png" title="[4] Confirmed join" width="350" alt="[4] Confirmed join" /><figcaption aria-hidden="true"><span style="text-align:center;font-size:90%">[4] Confirmed join</span></figcaption></figure></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td>
+        <p>Supposing you want the end of a path that you're tracing to join onto an existing path, you just use the same modifier key when selecting the end point of the last part of the path. To go into that in more detail, if you're halfway through tracing a path like [1]:</p>
+      </td>
+      <td>
+        <figure>
+          <img src="/media/Snt-ej-cropped-half-finished-2.png" title="[1] Unfinished join segment, in red - disconnected" width="350" alt="[1] Unfinished join segment, in red - disconnected">
+          <figcaption aria-hidden="true">
+            <span style="text-align:center;font-size:90%">[1] Unfinished join segment, in red - disconnected</span>
+          </figcaption>
+        </figure>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>... and you want the final part of that path to join up with the existing path running from the top-left to top-right of the image. First, select that path in the path list (or using the {% include key content='G' %} shortcut) as in [2]:</p>
+      </td>
+      <td>
+        <figure>
+          <img src="/media/Snt-ej-cropped-selected-destination-path-2.png" title="[2] Selected path to join to, in green" width="350" alt="[2] Selected path to join to, in green">
+          <figcaption aria-hidden="true">
+            <span style="text-align:center;font-size:90%">[2] Selected path to join to, in green</span>
+          </figcaption>
+        </figure>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>Now hold down {% include key content='Alt|Shift' %} to restrict the endpoint to be a "join" on that existing path. Click (while still holding down the modifier keys) to start the search for that endpoint and make it join the existing path. If the search can find a path to the end point, the result should look like [3]:</p>
+      </td>
+      <td>
+        <figure>
+          <img src="/media/Snt-ej-cropped-end-join-created-2.png" title="[3] Connected path to join, unconfirmed" width="350" alt="[3] Connected path to join, unconfirmed">
+          <figcaption aria-hidden="true">
+            <span style="text-align:center;font-size:90%">[3] Connected path to join, unconfirmed</span>
+          </figcaption>
+        </figure>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>If you're happy with the result, confirming the temporary path will automatically complete the whole path, since if you're creating an end join there cannot be any more to the path. Note that the path list indicates that this new <em>Path (1)</em> ends on the existing <em>Path (0)</em>. The result will look like [4]:</p>
+      </td>
+      <td>
+        <figure>
+          <img src="/media/Snt-ej-cropped-path-completed-2.png" title="[4] Confirmed join" width="350" alt="[4] Confirmed join">
+          <figcaption aria-hidden="true">
+            <span style="text-align:center;font-size:90%">[4] Confirmed join</span>
+          </figcaption>
+        </figure>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 ## Merging/Joining Paths
 
@@ -305,7 +362,78 @@ The same process can be accomplished more completely in a script using [ImageJ O
 
 This section describes methods to increase the accuracy of node placement.
 
-<table><tbody><tr class="odd"><td><p>Accurate node placement requires <em>XY</em>, <em>ZY</em> and <em>XZ</em> views to be visible. You can do so at <a href="/plugins/snt/manual#startup-prompt">startup</a>, by making sure that <em>Default: XY, ZY and XZ views</em> is selected, or by clicking in <em>Display ZY/XZ Views</em> in the <a href="/plugins/snt/manual#options-tab">Options tab</a> if you have already started SNT.</p></td><td><figure><img src="/media/SNT-Three-Pane-View-Enabled-Startup-Prompt.png" title="SNT-Three-Pane-View-Enabled-Startup-Prompt.png" alt="SNT-Three-Pane-View-Enabled-Startup-Prompt.png" /><figcaption aria-hidden="true">SNT-Three-Pane-View-Enabled-Startup-Prompt.png</figcaption></figure></td></tr><tr class="even"><td><p>Find the approximate location of your start point by moving your mouse in the XY window, holding down {% include key content='Shift' %} to synchronize the view in the other panes. At this point, you should enable cursor <a href="/plugins/snt/manual#cursor-auto-snapping">auto-snapping</a> in the <a href="/plugins/snt/manual#main-tab">Main tab</a> using suitable parameters for your image.</p></td><td><p><img src="/media/SNT-Accurate-Point-Placement-Walkthrough-Updated-1.png" width="350"/></p></td></tr><tr class="odd"><td><p>When you press {% include key content='+' %} to zoom in, all the panes will zoom in on the point that the crosshair is over, so each time you press {% include key content='+' %}, make sure you move your mouse pointer so that it's still over the structure of interest. You may want to adjust in the <a href="/plugins/snt/manual#views">Views</a> widget (<a href="/plugins/snt/manual#options-tab">Options tab</a>) whether all views should zoom synchronously.<br />
-At this point, you should adjust a suitable <a href="/plugins/snt/manual#cursor-auto-snapping">snapping neighborhood</a> both in 2D (XY) and 3D (Z). Note that when Z-snapping is enabled, all views become synchronized,</p></td><td><p><img src="/media/SNT-Accurate-Point-Placement-Walkthrough-Updated-2.png" width="350"/></p></td></tr><tr class="even"><td><p>Locate the center of the structure to be clicked on. If <a href="/plugins/snt/manual#cursor-auto-snapping">cursor auto-snapping</a> is enabled, simply mouse over the structure, otherwise, try moving the mouse and scroll wheel in each of the panes (holding down {% include key content='Shift' %} so synchronize the views in all three panes). Note that you can toggle the cursor auto-snapping feature at will, by pressing the <a href="/plugins/snt/key-shortcuts">shortcut</a> {% include key content='S' %}. Also, note that you can "click" on the <a href="/plugins/snt/key-shortcuts#tracing">brightest voxel</a> of a voxel column, by pressing {% include key content='M' %}.</p><p>When you're happy with the point under the crosshairs, left-click to start the path:</p></td><td><p><img src="/media/SNT-Accurate-Point-Placement-Walkthrough-Updated-3.png" width="350"/></p></td></tr><tr class="odd"><td><p>Zoom out again with the {% include key content='-' %} key, and similarly zoom in on the next point you want to be on your path to place it precisely:</p></td><td><p><img src="/media/SNT-Accurate-Point-Placement-Walkthrough-Updated-4.png" width="350"/></p></td></tr><tr class="even"><td><p>The path along the neuron may not follow the center line perfectly:</p></td><td><p><img src="/media/SNT-Accurate-Point-Placement-Walkthrough-Updated-5.png" width="350"/></p></td></tr><tr class="odd"><td><p>... but you can later improve that with the {% include bc path='Refine/Fit|Fit Path...'%} option in the <a href="/plugins/snt/manual#path-manager">Path Manager</a>, which tries to align the path to the midline of the structure to sub-voxel accuracy:</p></td><td><p><img src="/media/SNT-Accurate-Point-Placement-Walkthrough-Updated-6.png" width="350"/></p></td></tr><tr class="even"><td></td><td></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td>
+        <p>Accurate node placement requires <em>XY</em>, <em>ZY</em> and <em>XZ</em> views to be visible. You can do so at <a href="/plugins/snt/manual#startup-prompt">startup</a>, by making sure that <em>Default: XY, ZY and XZ views</em> is selected, or by clicking in <em>Display ZY/XZ Views</em> in the <a href="/plugins/snt/manual#options-tab">Options tab</a> if you have already started SNT.</p>
+      </td>
+      <td>
+        <figure>
+          <img src="/media/SNT-Three-Pane-View-Enabled-Startup-Prompt.png" title="SNT-Three-Pane-View-Enabled-Startup-Prompt.png" alt="SNT-Three-Pane-View-Enabled-Startup-Prompt.png">
+          <figcaption aria-hidden="true">
+            SNT-Three-Pane-View-Enabled-Startup-Prompt.png
+          </figcaption>
+        </figure>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>Find the approximate location of your start point by moving your mouse in the XY window, holding down {% include key content='Shift' %} to synchronize the view in the other panes. At this point, you should enable cursor <a href="/plugins/snt/manual#cursor-auto-snapping">auto-snapping</a> in the <a href="/plugins/snt/manual#main-tab">Main tab</a> using suitable parameters for your image.</p>
+      </td>
+      <td>
+        <p><img src="/media/SNT-Accurate-Point-Placement-Walkthrough-Updated-1.png" width="350"></p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>When you press {% include key content='+' %} to zoom in, all the panes will zoom in on the point that the crosshair is over, so each time you press {% include key content='+' %}, make sure you move your mouse pointer so that it's still over the structure of interest. You may want to adjust in the <a href="/plugins/snt/manual#views">Views</a> widget (<a href="/plugins/snt/manual#options-tab">Options tab</a>) whether all views should zoom synchronously.<br>
+        At this point, you should adjust a suitable <a href="/plugins/snt/manual#cursor-auto-snapping">snapping neighborhood</a> both in 2D (XY) and 3D (Z). Note that when Z-snapping is enabled, all views become synchronized,</p>
+      </td>
+      <td>
+        <p><img src="/media/SNT-Accurate-Point-Placement-Walkthrough-Updated-2.png" width="350"></p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>Locate the center of the structure to be clicked on. If <a href="/plugins/snt/manual#cursor-auto-snapping">cursor auto-snapping</a> is enabled, simply mouse over the structure, otherwise, try moving the mouse and scroll wheel in each of the panes (holding down {% include key content='Shift' %} so synchronize the views in all three panes). Note that you can toggle the cursor auto-snapping feature at will, by pressing the <a href="/plugins/snt/key-shortcuts">shortcut</a> {% include key content='S' %}. Also, note that you can "click" on the <a href="/plugins/snt/key-shortcuts#tracing">brightest voxel</a> of a voxel column, by pressing {% include key content='M' %}.</p>
+        <p>When you're happy with the point under the crosshairs, left-click to start the path:</p>
+      </td>
+      <td>
+        <p><img src="/media/SNT-Accurate-Point-Placement-Walkthrough-Updated-3.png" width="350"></p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>Zoom out again with the {% include key content='-' %} key, and similarly zoom in on the next point you want to be on your path to place it precisely:</p>
+      </td>
+      <td>
+        <p><img src="/media/SNT-Accurate-Point-Placement-Walkthrough-Updated-4.png" width="350"></p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>The path along the neuron may not follow the center line perfectly:</p>
+      </td>
+      <td>
+        <p><img src="/media/SNT-Accurate-Point-Placement-Walkthrough-Updated-5.png" width="350"></p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>... but you can later improve that with the {% include bc path='Refine/Fit|Fit Path...'%} option in the <a href="/plugins/snt/manual#path-manager">Path Manager</a>, which tries to align the path to the midline of the structure to sub-voxel accuracy:</p>
+      </td>
+      <td>
+        <p><img src="/media/SNT-Accurate-Point-Placement-Walkthrough-Updated-6.png" width="350"></p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 {% include sntnavbar%}

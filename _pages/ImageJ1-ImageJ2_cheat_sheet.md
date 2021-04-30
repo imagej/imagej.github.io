@@ -4,27 +4,214 @@ title: ImageJ1-ImageJ2 cheat sheet
 categories: Tutorials,Development
 ---
 
-This page summarizes translation of basic operations of ImageJ1 and ImageJ2 API. Based on the work of {%- include person id='haesleinhuepf' -%}, Scientific Computing Facility, MPI-CBG Dresden.
+This page summarizes translation of basic operations of ImageJ1 and ImageJ2 API. Based on the work of {% include person id='haesleinhuepf' %}, Scientific Computing Facility, MPI-CBG Dresden.
 
-<table><thead><tr class="header"><th style="text-align:left;"><p> Task</p></th><th><p>ImageJ1</p></th><th><p>ImageJ2</p></th></tr></thead><tbody><tr class="odd"><td><p>Starting ImageJ</p></td><td><div class="sourceCode" id="cb1"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="kw">new</span> ij.<span class="fu">ImageJ</span>();</span></code></pre></div></td><td><div class="sourceCode" id="cb2"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a>ImageJ ij = <span class="kw">new</span> net.<span class="fu">imagej</span>.<span class="fu">ImageJ</span>();</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true"></a>ij.<span class="fu">ui</span>().<span class="fu">showUI</span>();</span></code></pre></div></td></tr><tr class="even"><td><p>Show images</p></td><td><p><code>imp</code> is an <code>ImagePlus</code> object</p><div class="sourceCode" id="cb3"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true"></a>imp.<span class="fu">show</span>()</span></code></pre></div></td><td><div class="sourceCode" id="cb4"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true"></a>ij.<span class="fu">ui</span>().<span class="fu">show</span>(imp);</span></code></pre></div><div class="sourceCode" id="cb5"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true"></a>ImageJFunctions.<span class="fu">show</span>(imp);</span></code></pre></div><div class="sourceCode" id="cb6"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true"></a>ImageJFunctions.<span class="fu">wrap</span>(imp,<span class="st">&quot;Image&quot;</span>).<span class="fu">show</span>();</span></code></pre></div></td></tr><tr class="odd"><td><p>Retrieve an active image object</p></td><td><div class="sourceCode" id="cb7"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true"></a>ImagePlus imp = IJ.<span class="fu">getImage</span>();</span></code></pre></div></td><td><p>Script parameter (the same for <code>Dataset</code>, <code>ImagePlus</code>, etc.):</p><div class="sourceCode" id="cb8"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true"></a>#@ Img image</span></code></pre></div><p>In Java code:</p><div class="sourceCode" id="cb9"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true"></a><span class="at">@Parameter</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true"></a><span class="kw">private</span> Img image;</span></code></pre></div><p>Using <code>ImageDisplayService</code>:</p><div class="sourceCode" id="cb10"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true"></a>Dataset image = ij.<span class="fu">imageDisplay</span>().<span class="fu">getActiveDataset</span>();</span></code></pre></div></td></tr><tr class="even"><td><p>Open an image file</p></td><td><p><code>IJ.openImage()</code> returns an <code>ImagePlus</code> object without showing.</p><div class="sourceCode" id="cb11"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true"></a>ImagePlus imp = IJ.<span class="fu">openImage</span>(urlOrFilePath);</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true"></a>imp.<span class="fu">show</span>();</span></code></pre></div><p><code>IJ.open()</code> automatically shows the image without returning <code>ImagePlus</code>.</p><div class="sourceCode" id="cb12"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true"></a>IJ.<span class="fu">open</span>(urlOrFilePath);</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true"></a>ImagePlus imp = IJ.<span class="fu">getImage</span>();</span></code></pre></div></td><td><p>Using <code>IOService</code>:</p><div class="sourceCode" id="cb13"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true"></a><span class="bu">Object</span> image = ij.<span class="fu">io</span>().<span class="fu">open</span>(urlOrFilePath);</span></code></pre></div><p>Using <code>DatasetIOService</code> (for type safety):</p><div class="sourceCode" id="cb14"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true"></a>Dataset image = ij.<span class="fu">scifio</span>().<span class="fu">datasetIO</span>().<span class="fu">open</span>(urlOrFilePath);</span></code></pre></div></td></tr><tr class="odd"><td><p>Save an image file</p></td><td><div class="sourceCode" id="cb15"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true"></a>IJ.<span class="fu">saveasTiff</span>(imp, <span class="st">&quot;/path/to/image.tif&quot;</span>)</span></code></pre></div></td><td><p>Using <code>IOService</code>:</p><div class="sourceCode" id="cb16"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true"></a>ij.<span class="fu">io</span>().<span class="fu">save</span>(dataset, <span class="st">&quot;/path/to/image.tif&quot;</span>);</span></code></pre></div><p>Using <code>DatasetIOService</code>:</p><div class="sourceCode" id="cb17"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true"></a>ij.<span class="fu">scifio</span>().<span class="fu">datasetIO</span>().<span class="fu">save</span>(dataset, <span class="st">&quot;/path/to/image.tif&quot;</span>);</span></code></pre></div></td></tr><tr class="even"><td><p>Convert image types</p></td><td><p>Convert from ImageJ2 Img object to ImageJ1 <code>ImagePlus</code> object:</p><div class="sourceCode" id="cb18"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true"></a>ImagePlus imp = ImageJFunctions.<span class="fu">wrap</span>(img,<span class="st">&quot;Title&quot;</span>);</span></code></pre></div></td><td><p>Convert from ImageJ1 <code>ImagePlus</code> object to ImgLib2 <code>Img</code> object:</p><div class="sourceCode" id="cb19"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true"></a>Img&lt;T&gt; realImg = ImageJFunctions.<span class="fu">wrapReal</span>(imp);</span></code></pre></div><div class="sourceCode" id="cb20"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true"></a>Img&lt;FloatType&gt; floatImg = ImageJFunctions.<span class="fu">convertFloat</span>(imp);</span></code></pre></div><div class="sourceCode" id="cb21"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true"></a>Img&lt;FloatType&gt; realImg2 = ImageJFunctions.<span class="fu">wrap</span>(imp);</span></code></pre></div></td></tr><tr class="odd"><td><p>Show regions</p></td><td><div class="sourceCode" id="cb22"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true"></a>imagePlus.<span class="fu">setRoi</span>(roi)</span></code></pre></div></td><td><div class="sourceCode" id="cb23"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true"></a>Img&lt;BitType&gt; mask; <span class="co">// = ...</span></span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true"></a>ImagePlus maskImp =ImageJFunctions.<span class="fu">wrap</span>(mask, <span class="st">&quot;mask&quot;</span>);</span>
-<span id="cb23-3"><a href="#cb23-3" aria-hidden="true"></a><span class="co">// threshold the mask to get an ROI</span></span>
-<span id="cb23-4"><a href="#cb23-4" aria-hidden="true"></a>ImageProcessor imageProcessor = maskImp.<span class="fu">getProcessor</span>();</span>
-<span id="cb23-5"><a href="#cb23-5" aria-hidden="true"></a>imageProcessor.<span class="fu">setThreshold</span>(<span class="dv">128</span>,<span class="dv">128</span>,ImageProcessor NO_LUT_UPDATE);</span>
-<span id="cb23-6"><a href="#cb23-6" aria-hidden="true"></a>Roi roi = <span class="kw">new</span> <span class="fu">ThresholdToSelection</span>().<span class="fu">convert</span>(imageProcessor);</span>
-<span id="cb23-7"><a href="#cb23-7" aria-hidden="true"></a>imagePlus.<span class="fu">setRoi</span>(roi);</span></code></pre></div></td></tr><tr class="even"><td><p>Run plugins</p></td><td><div class="sourceCode" id="cb24"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true"></a>IJ.<span class="fu">run</span>(imagePlus,<span class="st">&quot;Normalisation&quot;</span>,<span class="st">&quot;&quot;</span>);</span></code></pre></div></td><td><div class="sourceCode" id="cb25"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true"></a>ij.<span class="fu">command</span>().<span class="fu">run</span>(ImageNormalizerIJ2Plugin.<span class="fu">class</span>, <span class="kw">true</span>, <span class="st">&quot;input&quot;</span>, img, <span class="st">&quot;ij&quot;</span>, ij);</span></code></pre></div></td></tr><tr class="odd"><td><p>Define plugins</p></td><td><div class="sourceCode" id="cb26"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true"></a><span class="kw">public</span> <span class="kw">class</span> ImageNormalizerPlugin <span class="kw">implements</span> PluginFilter {</span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true"></a>  ...</span>
-<span id="cb26-3"><a href="#cb26-3" aria-hidden="true"></a>}</span></code></pre></div><p>In <code>resources/plugins.config</code>:</p><pre><code>Plugins&gt;Filtering, &quot;Normalisation&quot;, NormalizerPlugin</code></pre></td><td><div class="sourceCode" id="cb28"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true"></a><span class="at">@Plugin</span>(type = Command.<span class="fu">class</span>, menuPath = <span class="st">&quot;Plugins&gt;Normalization&quot;</span>)</span>
-<span id="cb28-2"><a href="#cb28-2" aria-hidden="true"></a><span class="kw">public</span> <span class="kw">class</span> ImageNormalizerIJ2Plugin <span class="kw">implements</span> Command {</span>
-<span id="cb28-3"><a href="#cb28-3" aria-hidden="true"></a>  ...</span>
-<span id="cb28-4"><a href="#cb28-4" aria-hidden="true"></a>}</span></code></pre></div></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <thead>
+    <tr class="header">
+      <th style="text-align:left;">
+        <p>Task</p>
+      </th>
+      <th>
+        <p>ImageJ1</p>
+      </th>
+      <th>
+        <p>ImageJ2</p>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="odd">
+      <td>
+        <p>Starting ImageJ</p>
+      </td>
+      <td>
+{%- highlight java -%}
+new ij.ImageJ();
+{%- endhighlight -%}
+      </td>
+      <td>
+{%- highlight java -%}
+ImageJ ij = new net.imagej.ImageJ();
+ij.ui().showUI();
+{%- endhighlight -%}
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>Show images</p>
+      </td>
+      <td>
+        <p><code>imp</code> is an <code>ImagePlus</code> object</p>
+{%- highlight java -%}
+imp.show();
+{%- endhighlight -%}
+      </td>
+      <td>
+{%- highlight java -%}
+ij.ui().show(imp);
+ImageJFunctions.show(imp);
+ImageJFunctions.wrap(imp,"Image").show();
+{%- endhighlight -%}
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>Retrieve an active image object</p>
+      </td>
+      <td>
+{%- highlight java -%}
+ImagePlus imp = IJ.getImage();
+{%- endhighlight -%}
+      </td>
+      <td>
+        <p>Script parameter (the same for <code>Dataset</code>, <code>ImagePlus</code>, etc.):</p>
+{%- highlight plain -%}
+#@ Img image
+{%- endhighlight -%}
+        <p>In Java code:</p>
+{%- highlight java -%}
+@Parameter
+private Img image;
+{%- endhighlight -%}
+        <p>Using <code>ImageDisplayService</code>:</p>
+{%- highlight java -%}
+Dataset image = ij.imageDisplay().getActiveDataset();
+{%- endhighlight -%}
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>Open an image file</p>
+      </td>
+      <td>
+        <p><code>IJ.openImage()</code> returns an <code>ImagePlus</code> object without showing.</p>
+{%- highlight java -%}
+ImagePlus imp = IJ.openImage(urlOrFilePath);
+imp.show();
+{%- endhighlight -%}
+        <p><code>IJ.open()</code> automatically shows the image without returning <code>ImagePlus</code>.</p>
+{%- highlight java -%}
+IJ.open(urlOrFilePath);
+ImagePlus imp = IJ.getImage();
+{%- endhighlight -%}
+      </td>
+      <td>
+        <p>Using <code>IOService</code>:</p>
+{%- highlight java -%}
+Object image = ij.io().open(urlOrFilePath);
+{%- endhighlight -%}
+        <p>Using <code>DatasetIOService</code> (for type safety):</p>
+{%- highlight java -%}
+Dataset image = ij.scifio().datasetIO().open(urlOrFilePath);
+{%- endhighlight -%}
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>Save an image file</p>
+      </td>
+      <td>
+{%- highlight java -%}
+IJ.saveasTiff(imp, "/path/to/image.tif")
+{%- endhighlight -%}
+      </td>
+      <td>
+        <p>Using <code>IOService</code>:</p>
+{%- highlight java -%}
+ij.io().save(dataset, "/path/to/image.tif");
+{%- endhighlight -%}
+        <p>Using <code>DatasetIOService</code>:</p>
+{%- highlight java -%}
+ij.scifio().datasetIO().save(dataset, "/path/to/image.tif");
+{%- endhighlight -%}
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>Convert image types</p>
+      </td>
+      <td>
+        <p>Convert from ImageJ2 Img object to ImageJ1 <code>ImagePlus</code> object:</p>
+{%- highlight java -%}
+ImagePlus imp = ImageJFunctions.wrap(img,"Title");
+{%- endhighlight -%}
+      </td>
+      <td>
+        <p>Convert from ImageJ1 <code>ImagePlus</code> object to ImgLib2 <code>Img</code> object:</p>
+{%- highlight java -%}
+Img<T> realImg = ImageJFunctions.wrapReal(imp);
+Img<FloatType> floatImg = ImageJFunctions.convertFloat(imp);
+Img<FloatType> realImg2 = ImageJFunctions.wrap(imp);
+{%- endhighlight -%}
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>Show regions</p>
+      </td>
+      <td>
+{%- highlight java -%}
+imagePlus.setRoi(roi);
+{%- endhighlight -%}
+      </td>
+      <td>
+{% highlight java %}
+Img<BitType> mask; // = ...
+ImagePlus maskImp = ImageJFunctions.wrap(mask, "mask");
+// threshold the mask to get an ROI
+ImageProcessor imageProcessor = maskImp.getProcessor();
+imageProcessor.setThreshold(128, 128, ImageProcessor.NO_LUT_UPDATE);
+Roi roi = new ThresholdToSelection().convert(imageProcessor);
+imagePlus.setRoi(roi);
+{% endhighlight %}
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>Run plugins</p>
+      </td>
+      <td>
+{%- highlight java -%}
+IJ.run(imagePlus,"Normalisation","");
+{%- endhighlight -%}
+      </td>
+      <td>
+{%- highlight java -%}
+ij.command().run(ImageNormalizerIJ2Plugin.class, true,
+                 "input", img, "ij", ij);
+{%- endhighlight -%}
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>Define plugins</p>
+      </td>
+      <td>
+{%- highlight java -%}
+public class ImageNormalizerPlugin implements PluginFilter {
+  ...
+}
+{%- endhighlight -%}
+        <p>In <code>resources/plugins.config</code>:</p>
+{%- highlight plain -%}
+Plugins>Filtering, "Normalisation", NormalizerPlugin
+{%- endhighlight -%}
+      </td>
+      <td>
+{%- highlight java -%}
+@Plugin(type = Command.class, menuPath = "Plugins>Normalization")
+public class ImageNormalizerIJ2Plugin implements Command {
+  ...
+}
+{%- endhighlight -%}
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 ## See also
 
-https://github.com/mpicbg-scicomp/ij2course-images/blob/master/slides/ij_legacy_cheetsheet.pdf
-
- 
+{% include github org="mpicbg-scicomp" repo="ij2course-images" path="slides/ij_legacy_cheetsheet.pdf" %}

@@ -48,7 +48,23 @@ The following are required to execute this tool:
 9.  <b>Channels</b>: Choose the cells of interest in either the green, red, or combined channels.
 10. <b>Help</b>: Links directly to this site.
 
-<table><tbody><tr class="odd"><td><p>style="vertical-align:top"|{% include thumbnail src='/media/RETINA Cell Counter Roundness.png' title='**Cell Roundness**: Select the desired morphology for cells.'%}</p></td><td><p>style="vertical-align:top"|{% include thumbnail src='/media/RETINA Cell Counter Area.png' title='**Retina Area Selection**: Choose between automated or manual segmentation.'%}</p></td><td><p>style="vertical-align:top"|{% include thumbnail src='/media/RETINA Cell Counter Threshold.png' title='**Threshold Sensitivity**: Select the threshold protocol for cell counting.'%}</p></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td>
+        <p>style="vertical-align:top"|{% include thumbnail src='/media/RETINA Cell Counter Roundness.png' title='**Cell Roundness**: Select the desired morphology for cells.'%}</p>
+      </td>
+      <td>
+        <p>style="vertical-align:top"|{% include thumbnail src='/media/RETINA Cell Counter Area.png' title='**Retina Area Selection**: Choose between automated or manual segmentation.'%}</p>
+      </td>
+      <td>
+        <p>style="vertical-align:top"|{% include thumbnail src='/media/RETINA Cell Counter Threshold.png' title='**Threshold Sensitivity**: Select the threshold protocol for cell counting.'%}</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 ## Results
 

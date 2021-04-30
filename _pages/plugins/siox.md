@@ -43,7 +43,20 @@ Select new ROIs to be added or subtracted from the current segmentation. Press "
 **Step 3:** Reset or Create mask.  
 Click the "Reset" button to restart the process or click on the "Create mask" button to create a binary image. Please, note that the binary image polarity will follow the option set in {% include bc path='Process | Binary | Options'%}.
 
-<table><tbody><tr class="odd"><td><p>style="vertical-align:top"|{% include thumbnail src='/media/Screenshot-SIOX Segmentation.png' title='SIOX segmentation Graphical User Interface applied to Leaf sample'%}</p></td><td><p>style="vertical-align:top"|{% include thumbnail src='/media/SIOX-Mask.png' title='Resulting mask of Leaf sample after SIOX segmentation'%}</p></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td>
+        <p>style="vertical-align:top"|{% include thumbnail src='/media/Screenshot-SIOX Segmentation.png' title='SIOX segmentation Graphical User Interface applied to Leaf sample'%}</p>
+      </td>
+      <td>
+        <p>style="vertical-align:top"|{% include thumbnail src='/media/SIOX-Mask.png' title='Resulting mask of Leaf sample after SIOX segmentation'%}</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 ## User Manual
 

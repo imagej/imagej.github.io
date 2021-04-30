@@ -58,12 +58,125 @@ On startup, the middle slice of the first source (angle) is shown. You can brows
 
 The following table shows the available navigation commands using the mouse:
 
-<table><tbody><tr class="odd"><td style="padding: 5px;"><p> <span class="removeme"><br />
-</span>{% include key content='press|left-click|drag' %}</p></td><td style="padding: 5px;"><p> Rotate (pan and tilt) around the point where the mouse was clicked.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|right-click|drag' %} or {% include key content='press|middle-click|drag' %}</p></td><td style="padding: 5px;"><p> Translate in the XY-plane.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|mouse-wheel' %}</p></td><td style="padding: 5px;"><p> Move along the z-axis.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|Cmd|mouse-wheel' %} or {% include key content='press|Shift|Ctrl|mouse-wheel' %}</p></td><td style="padding: 5px;"><p> Zoom in and out.</p></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p><span class="removeme"><br></span> {% include key content='press|left-click|drag' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Rotate (pan and tilt) around the point where the mouse was clicked.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|right-click|drag' %} or {% include key content='press|middle-click|drag' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Translate in the XY-plane.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|mouse-wheel' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Move along the z-axis.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|Cmd|mouse-wheel' %} or {% include key content='press|Shift|Ctrl|mouse-wheel' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Zoom in and out.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 The following table shows the available navigation commands using keyboard shortcuts:
 
-<table><tbody><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|X' %}, {% include key content='press|Y' %}, {% include key content='press|Z' %}</p></td><td style="padding: 5px;"><p> Select keyboard rotation axis.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|Left' %}, {% include key content='press|Right' %}</p></td><td style="padding: 5px;"><p> Rotate clockwise or counter-clockwise around the choosen rotation axis.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|Up' %}, {% include key content='press|Down' %}</p></td><td style="padding: 5px;"><p> Zoom in or out.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|,' %}, {% include key content='press|.' %}</p></td><td style="padding: 5px;"><p> Move forward or backward along the Z-axis.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|Shift|X' %}</p></td><td style="padding: 5px;"><p> Rotate to the ZY-plane of the current source. (Look along the X-axis of the current source.)</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|Shift|Y' %} or {% include key content='press|Shift|A' %}</p></td><td style="padding: 5px;"><p> Rotate to the XZ-plane of the current source. (Look along the Y-axis of the current source.)</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|Shift|Z' %}</p></td><td style="padding: 5px;"><p> Rotate to the XY-plane of the current source. (Look along the Z-axis of the current source.)</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|[' %} or {% include key content='press|N' %}</p></td><td style="padding: 5px;"><p> Move to previous timepoint.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|]' %} or {% include key content='press|M' %}</p></td><td style="padding: 5px;"><p> Move to next timepoint.</p></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|X' %}, {% include key content='press|Y' %}, {% include key content='press|Z' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Select keyboard rotation axis.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|Left' %}, {% include key content='press|Right' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Rotate clockwise or counter-clockwise around the choosen rotation axis.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|Up' %}, {% include key content='press|Down' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Zoom in or out.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|,' %}, {% include key content='press|.' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Move forward or backward along the Z-axis.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|Shift|X' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Rotate to the ZY-plane of the current source. (Look along the X-axis of the current source.)</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|Shift|Y' %} or {% include key content='press|Shift|A' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Rotate to the XZ-plane of the current source. (Look along the Y-axis of the current source.)</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|Shift|Z' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Rotate to the XY-plane of the current source. (Look along the Z-axis of the current source.)</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|[' %} or {% include key content='press|N' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Move to previous timepoint.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|]' %} or {% include key content='press|M' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Move to next timepoint.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 For all navigation commands you can hold {% include key content='press\|Shift' %} to rotate and browse 10x faster, or hold {% include key content='press\|Ctrl' %} to rotate and browse 10x slower. For example, {% include key content='press\|Left' %} rotates by 1° clockwise, while {% include key content='press\|Shift\|Left' %} rotates by 10°, and {% include key content='press\|Ctrl\|Left' %} rotates by 0.1°.
 

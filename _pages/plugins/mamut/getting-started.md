@@ -583,7 +583,237 @@ An example of such a file can be found [**here**](/plugins/mamut/example-propert
 
 Here is a list of all available commands.
 
-<table><tbody><tr class="odd"><td style="padding: 5px;"><p> <code>add spot</code></p></td><td style="padding: 5px;"><p> Add a spot at mouse location.</p><p>If the <code>auto-linking</code> mode is on, also link it with the spot previously in the selection, and set the newly added spot to be the current selection.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> <code>delete spot</code></p></td><td style="padding: 5px;"><p> Delete the spot at mouse location.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> <code>increase spot radius</code></p></td><td style="padding: 5px;"><p> Increase the spot radius at mouse location by 10%.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> <code>increase spot radius a lot</code></p></td><td style="padding: 5px;"><p> Increase the spot radius at mouse location by 100%.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> <code>increase spot radius a bit</code></p></td><td style="padding: 5px;"><p> Increase the spot radius at mouse location by 1%.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> <code>decrease spot radius</code></p></td><td style="padding: 5px;"><p> Decrease the spot radius at mouse location by 9.10%.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> <code>decrease spot radius a lot</code></p></td><td style="padding: 5px;"><p> Decrease the spot radius at mouse location by 50%.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> <code>decrease spot radius a bit</code></p></td><td style="padding: 5px;"><p> Decrease the spot radius at mouse location by 1%.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> <code>toggle link</code></p></td><td style="padding: 5px;"><p> Add / Remove a link between two spots in the selection.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> <code>toggle linking mode</code></p></td><td style="padding: 5px;"><p> Toggle the <code>auto-linking</code> mode.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> <code>semi-auto tracking</code></p></td><td style="padding: 5px;"><p> Launch semi-automatic tracking from the cells currently selected.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> <code>help</code></p></td><td style="padding: 5px;"><p> Display the help window.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> <code>brightness settings</code></p></td><td style="padding: 5px;"><p> Toggle the brightness settings dialog.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> <code>visibility and grouping</code></p></td><td style="padding: 5px;"><p> Toggle the visibility and grouping settings dialog.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> <code>toggle interpolation</code></p></td><td style="padding: 5px;"><p> Toggle interpolation method for pixel drawing between <code>Nearest neighbor</code> and <code>Tri-linear interpolation</code>.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> <code>toggle fused mode</code></p></td><td style="padding: 5px;"><p> Toggle fused or single-source display mode.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> <code>toggle grouping</code></p></td><td style="padding: 5px;"><p> Toggle grouping mode.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> <code>toggle source visibility X</code></p></td><td style="padding: 5px;"><p> Replace X by a digit from 0 to 9. Toggle the visibility of the source X.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> <code>align XY plane</code></p></td><td style="padding: 5px;"><p> Change the current view to align it with the XY planes of the source currently active.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> <code>align XZ plane</code></p></td><td style="padding: 5px;"><p> Change the current view to align it with the XZ planes of the source currently active.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> <code>align ZY plane</code></p></td><td style="padding: 5px;"><p> Change the current view to align it with the ZY planes of the source currently active.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> <code>next timepoint</code></p></td><td style="padding: 5px;"><p> Move to the next time-point.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> <code>previous timepoint</code></p></td><td style="padding: 5px;"><p> Move to the previous time-point.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> <code>step time forward</code></p></td><td style="padding: 5px;"><p> Jump to the next time step.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> <code>step time backward</code></p></td><td style="padding: 5px;"><p> Jump to the previous time step.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> <code>set bookmark</code></p></td><td style="padding: 5px;"><p> Store a bookmark for the current view.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> <code>go to bookmark</code></p></td><td style="padding: 5px;"><p> Move the view to the specified bookmark.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> <code>got to bookmark orientation</code></p></td><td style="padding: 5px;"><p> Orient the view to the specified bookmark orientation.</p></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p><code>add spot</code></p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Add a spot at mouse location.</p>
+        <p>If the <code>auto-linking</code> mode is on, also link it with the spot previously in the selection, and set the newly added spot to be the current selection.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p><code>delete spot</code></p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Delete the spot at mouse location.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p><code>increase spot radius</code></p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Increase the spot radius at mouse location by 10%.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p><code>increase spot radius a lot</code></p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Increase the spot radius at mouse location by 100%.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p><code>increase spot radius a bit</code></p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Increase the spot radius at mouse location by 1%.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p><code>decrease spot radius</code></p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Decrease the spot radius at mouse location by 9.10%.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p><code>decrease spot radius a lot</code></p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Decrease the spot radius at mouse location by 50%.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p><code>decrease spot radius a bit</code></p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Decrease the spot radius at mouse location by 1%.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p><code>toggle link</code></p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Add / Remove a link between two spots in the selection.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p><code>toggle linking mode</code></p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Toggle the <code>auto-linking</code> mode.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p><code>semi-auto tracking</code></p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Launch semi-automatic tracking from the cells currently selected.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p><code>help</code></p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Display the help window.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p><code>brightness settings</code></p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Toggle the brightness settings dialog.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p><code>visibility and grouping</code></p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Toggle the visibility and grouping settings dialog.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p><code>toggle interpolation</code></p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Toggle interpolation method for pixel drawing between <code>Nearest neighbor</code> and <code>Tri-linear interpolation</code>.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p><code>toggle fused mode</code></p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Toggle fused or single-source display mode.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p><code>toggle grouping</code></p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Toggle grouping mode.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p><code>toggle source visibility X</code></p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Replace X by a digit from 0 to 9. Toggle the visibility of the source X.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p><code>align XY plane</code></p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Change the current view to align it with the XY planes of the source currently active.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p><code>align XZ plane</code></p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Change the current view to align it with the XZ planes of the source currently active.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p><code>align ZY plane</code></p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Change the current view to align it with the ZY planes of the source currently active.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p><code>next timepoint</code></p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Move to the next time-point.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p><code>previous timepoint</code></p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Move to the previous time-point.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p><code>step time forward</code></p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Jump to the next time step.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p><code>step time backward</code></p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Jump to the previous time step.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p><code>set bookmark</code></p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Store a bookmark for the current view.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p><code>go to bookmark</code></p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Move the view to the specified bookmark.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p><code>got to bookmark orientation</code></p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Orient the view to the specified bookmark orientation.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 ### Default key-bindings.
 
@@ -595,4 +825,133 @@ Here we recapitulate the default key-bindings for the MaMuT viewer. This image i
 
 TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list them here.
 
-<table><tbody><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|F2' %}</p></td><td style="padding: 5px;"><p> Edit current spot name.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|Delete' %}</p></td><td style="padding: 5px;"><p> Delete the current selection.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|Home' %}</p></td><td style="padding: 5px;"><p> Center view on the first spot in current selection.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|End' %}</p></td><td style="padding: 5px;"><p> Center view on the last spot in current selection.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|+' %} &amp; {% include key content='press|equals' %}</p></td><td style="padding: 5px;"><p> Zoom in.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|-' %}</p></td><td style="padding: 5px;"><p> Zoom out.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|Shift|equals' %}</p></td><td style="padding: 5px;"><p> Reset zoom.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|1' %} {% include key content='press|2' %} ... {% include key content='press|9' %} on the keypad</p></td><td style="padding: 5px;"><p> Pan the view.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|Control|A' %}</p></td><td style="padding: 5px;"><p> Select all.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|Control|Shift|A' %}</p></td><td style="padding: 5px;"><p> Clear selection.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|up' %} / {% include key content='press|down' %}</p></td><td style="padding: 5px;"><p> Move to the previous / next spot in time, within the current track.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|left' %} / {% include key content='press|right' %}</p></td><td style="padding: 5px;"><p> Move to the previous / next sibling, within the current track. Sibling are spots that belong to the same track and to the same time-point. For instance the two spots of two sister daughter cells.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|Page up' %} / {% include key content='press|Page down' %}</p></td><td style="padding: 5px;"><p> Jump to the the previous / next track.</p></td></tr><tr class="even"><td style="padding: 5px;"><p> {% include key content='press|Shift|Mousedrag' %}</p></td><td style="padding: 5px;"><p> Pan the view.</p></td></tr><tr class="odd"><td style="padding: 5px;"><p> {% include key content='press|Shift|Mousewheel' %}</p></td><td style="padding: 5px;"><p> Zoom in / out.</p></td></tr><tr class="even"><td></td><td></td></tr></tbody></table>
+  <table>
+{::nomarkdown}
+  <tbody>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|F2' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Edit current spot name.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|Delete' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Delete the current selection.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|Home' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Center view on the first spot in current selection.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|End' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Center view on the last spot in current selection.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|+' %} & {% include key content='press|equals' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Zoom in.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|-' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Zoom out.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|Shift|equals' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Reset zoom.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|1' %} {% include key content='press|2' %} ... {% include key content='press|9' %} on the keypad</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Pan the view.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|Control|A' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Select all.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|Control|Shift|A' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Clear selection.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|up' %} / {% include key content='press|down' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Move to the previous / next spot in time, within the current track.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|left' %} / {% include key content='press|right' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Move to the previous / next sibling, within the current track. Sibling are spots that belong to the same track and to the same time-point. For instance the two spots of two sister daughter cells.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|Page up' %} / {% include key content='press|Page down' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Jump to the the previous / next track.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|Shift|Mousedrag' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Pan the view.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td style="padding: 5px;">
+        <p>{% include key content='press|Shift|Mousewheel' %}</p>
+      </td>
+      <td style="padding: 5px;">
+        <p>Zoom in / out.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+{:/}
+  </table>

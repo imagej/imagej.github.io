@@ -124,7 +124,164 @@ Please go to [Learn DiameterJ](https://sites.google.com/site/diameterj/) to take
 
 ------------------------------------------------------------------------
 
-<table><tbody><tr class="odd"><td><h4><p><big> Summaries Folder </big></p></h4></td><td></td></tr><tr class="even"><td><p><strong>"File Source Name"_Total Summary.csv</strong></p></td><td><p><strong>"File Source Name"_Total Summary.csv Continued</strong></p></td></tr><tr class="odd"><td><ol><li>Super Pixel: The mean fiber diameter as calculated using a super pixel determination. A detailed explanation of how this algorithm works can be found above.</li><li>Histogram Mean: The mean fiber diameter as calculated by fitting a Gaussian Curve to the radius data and finding the curves mean value.</li><li>Histogram SD: The standard dev. of the Gaussian fit of the radius histogram</li><li>Histogram Mode: Most occurring fiber diameter in the histogram</li><li>Histogram Median: Middle fiber diameter in the histogram</li><li>Histogram Min. Diam.: The smallest diameter measured</li><li>Histogram Max. Diam.: The largest diameter measured</li><li>Histogram Integrated Density: The product of length of the fibers and the average radius</li><li>Histogram Raw Integrated Density: The sum of the radii at all pixels in the image or selection</li><li>Diameter Skewness: The third order moment about the mean</li><li>Diameter Kurtosis: The fourth order moment about the mean.</li></ol></td><td><ol><li>Fiber Length: The total length of the Fiber centerlines in the segmented image.</li><li>Mean Pore Area: (Total number of black pixels counted in pores) / (Total number of pores in image)</li><li>Pore Area SD: The standard deviation of all pore areas measured</li><li>Min. Pore Area: The minimum pore area measured</li><li>Max Pore Area: The maximum pore area measured</li><li>Percent Porosity: (Total number of black pixels) / (Total pixels in an image)</li><li>Intersection Density (100x100px): (Number of fiber overlaps)*10000 / (Total pixels in image)</li><li>Characteristic Length: (Total length of all fiber centerlines) / (# of fiber overlaps)</li></ol></td></tr><tr class="even"><td><h4><p><big>Histograms Folder</big></p></h4></td><td></td></tr><tr class="odd"><td><p><strong>"File Source Name"_Pore Data.csv</strong></p></td><td><p><strong>"File Source Name"_Histogram.csv</strong></p></td></tr><tr class="even"><td><ol><li>Slice: Image name</li><li>Count: Total number of pores found in image that are not touching the side</li><li>Area: Total number of black pixels in an image not in groups touching the sides</li><li>StdDev: 0 (individual pore measurements so no SD</li><li>% Area: (Total number of black pixels) / (Total pixels in an image)</li><li>Major: The length of the primary axis of the best fitting ellipse for each pore.</li><li>Minor: The length of the secondary axis of the best fitting ellipse for each pore</li><li>Angle: The angle between the primary axis and a line parallel to the X-axis of the image</li><li>Circ.: 4π × [Area] / [Perimeter^2] with a value of 1.0 indicating a perfect circle. As the value approaches 0.0, it indicates an increasingly elongated shape :::#Values may not be valid for very small particles. Uses the heading Circ.</li><li>Skew: The third order moment about the mean – NaN because only one pore</li><li>Kurt: The fourth order moment about the mean – NaN because only one pore</li><li>AR: The aspect ratio of the particle's fitted ellipse, i.e., [Major Axis] / [Minor Axis]</li><li>Round: 4 × [Area] / (π × [Major axis]2) or the inverse of Aspect Ratio.</li><li>Solidity: [Area] / [Convex area]</li></ol></td><td><ol><li>Radius Value: Radius length (in pixels)</li><li>Radius Count: Number of times the radius value occurred in the image. Also known as the frequency of occurrence and can also be interpreted as the length of fiber in an image that has a given radius<ul><li>The radius or diameter histogram is constructed from the radius value (x-axis) and radius count (frequency of occurrence on y-axis)</li></ul></li></ol></td></tr><tr class="odd"><td><p><strong>"File Source Name"_Intersection Coordinates.txt</strong></p></td><td><p><strong>"File Source Name"_Radius Histogram.tif</strong></p></td></tr><tr class="even"><td><ol><li>Column 1 – Grey scale value at intersection</li><li>Column 2 – x coordinate of intersection<ul><li>Upper left hand corner is 0,0</li></ul></li><li>Column 3 – y coordinate of intersection<ul><li>Upper left hand corner is 0,0</li></ul></li></ol></td><td><ol><li>Image of the histogram of all fiber radii in the image</li></ol></td></tr><tr class="odd"><td><h4><p><big>Diameter Analysis Images Folder</big></p></h4></td><td></td></tr><tr class="even"><td><p><strong>"File Source Name"_Compare.png</strong></p></td><td><p><strong>"File Source Name"_Orientation.tif</strong></p></td></tr><tr class="odd"><td><p>A montage image with four images in it</p><ol><li>Top Left Image - Original segmented image</li><li>Top right Image- Image of the centerline as determined by the Voronoi tessellation algorithm</li><li>Bottom Left Image - Image of all centerlines counted in the histogram overlaid on the Euclidean distance transformed of the fibers fibers.<ul><li>Yellow lines are the locations where radii were counted</li><li>Fibers are in greyscale as transformed by the Euclidean distance transform</li></ul></li><li>Bottom Right Image - Pores found and analyzed by Diameterj</li></ol></td><td><ol><li>An image with the frequency of orientation of the centerline of all fibers. This is an output of OrientationJ and was not coded by any developers from DiameterJ</li></ol></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td>
+        <p><big>Summaries Folder</big></p>
+      </td>
+      <td></td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p><strong>"File Source Name"_Total Summary.csv</strong></p>
+      </td>
+      <td>
+        <p><strong>"File Source Name"_Total Summary.csv Continued</strong></p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <ol>
+          <li>Super Pixel: The mean fiber diameter as calculated using a super pixel determination. A detailed explanation of how this algorithm works can be found above.</li>
+          <li>Histogram Mean: The mean fiber diameter as calculated by fitting a Gaussian Curve to the radius data and finding the curves mean value.</li>
+          <li>Histogram SD: The standard dev. of the Gaussian fit of the radius histogram</li>
+          <li>Histogram Mode: Most occurring fiber diameter in the histogram</li>
+          <li>Histogram Median: Middle fiber diameter in the histogram</li>
+          <li>Histogram Min. Diam.: The smallest diameter measured</li>
+          <li>Histogram Max. Diam.: The largest diameter measured</li>
+          <li>Histogram Integrated Density: The product of length of the fibers and the average radius</li>
+          <li>Histogram Raw Integrated Density: The sum of the radii at all pixels in the image or selection</li>
+          <li>Diameter Skewness: The third order moment about the mean</li>
+          <li>Diameter Kurtosis: The fourth order moment about the mean.</li>
+        </ol>
+      </td>
+      <td>
+        <ol>
+          <li>Fiber Length: The total length of the Fiber centerlines in the segmented image.</li>
+          <li>Mean Pore Area: (Total number of black pixels counted in pores) / (Total number of pores in image)</li>
+          <li>Pore Area SD: The standard deviation of all pore areas measured</li>
+          <li>Min. Pore Area: The minimum pore area measured</li>
+          <li>Max Pore Area: The maximum pore area measured</li>
+          <li>Percent Porosity: (Total number of black pixels) / (Total pixels in an image)</li>
+          <li>Intersection Density (100x100px): (Number of fiber overlaps)*10000 / (Total pixels in image)</li>
+          <li>Characteristic Length: (Total length of all fiber centerlines) / (# of fiber overlaps)</li>
+        </ol>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p><big>Histograms Folder</big></p>
+      </td>
+      <td></td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p><strong>"File Source Name"_Pore Data.csv</strong></p>
+      </td>
+      <td>
+        <p><strong>"File Source Name"_Histogram.csv</strong></p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <ol>
+          <li>Slice: Image name</li>
+          <li>Count: Total number of pores found in image that are not touching the side</li>
+          <li>Area: Total number of black pixels in an image not in groups touching the sides</li>
+          <li>StdDev: 0 (individual pore measurements so no SD</li>
+          <li>% Area: (Total number of black pixels) / (Total pixels in an image)</li>
+          <li>Major: The length of the primary axis of the best fitting ellipse for each pore.</li>
+          <li>Minor: The length of the secondary axis of the best fitting ellipse for each pore</li>
+          <li>Angle: The angle between the primary axis and a line parallel to the X-axis of the image</li>
+          <li>Circ.: 4π × [Area] / [Perimeter^2] with a value of 1.0 indicating a perfect circle. As the value approaches 0.0, it indicates an increasingly elongated shape :::#Values may not be valid for very small particles. Uses the heading Circ.</li>
+          <li>Skew: The third order moment about the mean – NaN because only one pore</li>
+          <li>Kurt: The fourth order moment about the mean – NaN because only one pore</li>
+          <li>AR: The aspect ratio of the particle's fitted ellipse, i.e., [Major Axis] / [Minor Axis]</li>
+          <li>Round: 4 × [Area] / (π × [Major axis]2) or the inverse of Aspect Ratio.</li>
+          <li>Solidity: [Area] / [Convex area]</li>
+        </ol>
+      </td>
+      <td>
+        <ol>
+          <li>Radius Value: Radius length (in pixels)</li>
+          <li>Radius Count: Number of times the radius value occurred in the image. Also known as the frequency of occurrence and can also be interpreted as the length of fiber in an image that has a given radius
+            <ul>
+              <li>The radius or diameter histogram is constructed from the radius value (x-axis) and radius count (frequency of occurrence on y-axis)</li>
+            </ul>
+          </li>
+        </ol>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p><strong>"File Source Name"_Intersection Coordinates.txt</strong></p>
+      </td>
+      <td>
+        <p><strong>"File Source Name"_Radius Histogram.tif</strong></p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <ol>
+          <li>Column 1 – Grey scale value at intersection</li>
+          <li>Column 2 – x coordinate of intersection
+            <ul>
+              <li>Upper left hand corner is 0,0</li>
+            </ul>
+          </li>
+          <li>Column 3 – y coordinate of intersection
+            <ul>
+              <li>Upper left hand corner is 0,0</li>
+            </ul>
+          </li>
+        </ol>
+      </td>
+      <td>
+        <ol>
+          <li>Image of the histogram of all fiber radii in the image</li>
+        </ol>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p><big>Diameter Analysis Images Folder</big></p>
+      </td>
+      <td></td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p><strong>"File Source Name"_Compare.png</strong></p>
+      </td>
+      <td>
+        <p><strong>"File Source Name"_Orientation.tif</strong></p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>A montage image with four images in it</p>
+        <ol>
+          <li>Top Left Image - Original segmented image</li>
+          <li>Top right Image- Image of the centerline as determined by the Voronoi tessellation algorithm</li>
+          <li>Bottom Left Image - Image of all centerlines counted in the histogram overlaid on the Euclidean distance transformed of the fibers fibers.
+            <ul>
+              <li>Yellow lines are the locations where radii were counted</li>
+              <li>Fibers are in greyscale as transformed by the Euclidean distance transform</li>
+            </ul>
+          </li>
+          <li>Bottom Right Image - Pores found and analyzed by Diameterj</li>
+        </ol>
+      </td>
+      <td>
+        <ol>
+          <li>An image with the frequency of orientation of the centerline of all fibers. This is an output of OrientationJ and was not coded by any developers from DiameterJ</li>
+        </ol>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 ### <big>Limitations</big>
 
@@ -168,7 +325,69 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 
 :\*We recommend ImageJ over Fiji if you have no experience with either software because it is simpler to use.
 
-<table><tbody><tr class="odd"><td><p><big> <strong>Download and install <a href="/ij/download.html">ImageJ 1.48</a> or newer or <a href="/downloads">Fiji</a> (any version)</strong> </big></p></td><td></td><td></td></tr><tr class="even"><td><p><strong>Windows</strong></p></td><td><p><strong>macOS</strong></p></td><td><p><strong>Linux</strong></p></td></tr><tr class="odd"><td><ol><li>Download and unzip the DiameterJ files (Find in "/develop/source" above) and move or copy the three folders into the plugins folder of ImageJ.</li><li>That should be in directory:<dl><dt></dt><dd>"C:\Program Files\ImageJ\plugins"<dl><dt></dt><dd>Or</dd></dl></dd><dd>"C:\Program Files (x86)\ImageJ\plugins"<ul><li>DiameterJ will work with x86 (32-bit) or x64 (64-bit) versions of Java/ImageJ</li></ul></dd></dl></li><li>Restart ImageJ</li></ol></td><td><ol><li>Follow instructions <a href="/ij/docs/install/osx.html#dandd">Here</a> or <a href="/platforms/macos">Here</a> for installation of ImageJ/Fiji on macOS</li></ol></td><td><ol><li>Download and unzip the DiameterJ files (Find in "File" in the Info box above)</li><li>Move or copy the three folders into the plugins folder of the directory where you have placed ImageJ.<p>:*DiameterJ will work with x86 (32-bit) or x64 (64-bit) versions of Java/ImageJ</p></li><li>Restart ImageJ</li></ol></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td>
+        <p><big><strong>Download and install <a href="/ij/download.html">ImageJ 1.48</a> or newer or <a href="/downloads">Fiji</a> (any version)</strong></big></p>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p><strong>Windows</strong></p>
+      </td>
+      <td>
+        <p><strong>macOS</strong></p>
+      </td>
+      <td>
+        <p><strong>Linux</strong></p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <ol>
+          <li>Download and unzip the DiameterJ files (Find in "/develop/source" above) and move or copy the three folders into the plugins folder of ImageJ.</li>
+          <li>That should be in directory:
+            <dl>
+              <dd>
+                "C:\Program Files\ImageJ\plugins"
+                <dl>
+                  <dd>Or</dd>
+                </dl>
+              </dd>
+              <dd>
+                "C:\Program Files (x86)\ImageJ\plugins"
+                <ul>
+                  <li>DiameterJ will work with x86 (32-bit) or x64 (64-bit) versions of Java/ImageJ</li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li>Restart ImageJ</li>
+        </ol>
+      </td>
+      <td>
+        <ol>
+          <li>Follow instructions <a href="/ij/docs/install/osx.html#dandd">Here</a> or <a href="/platforms/macos">Here</a> for installation of ImageJ/Fiji on macOS
+          </li>
+        </ol>
+      </td>
+      <td>
+        <ol>
+          <li>Download and unzip the DiameterJ files (Find in "File" in the Info box above)</li>
+          <li>Move or copy the three folders into the plugins folder of the directory where you have placed ImageJ.
+            <p>:*DiameterJ will work with x86 (32-bit) or x64 (64-bit) versions of Java/ImageJ</p>
+          </li>
+          <li>Restart ImageJ</li>
+        </ol>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 ## FAQs
 

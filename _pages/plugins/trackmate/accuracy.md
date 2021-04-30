@@ -27,7 +27,65 @@ The figures below shows the comparison of accuracy for the 3 classes of tracking
 
 It's best to directly read the paper[5] to know what is behind these measures, but here is a brief survey of how they are done. The ISBI dataset covers four scenarios:
 
-<table><thead><tr class="header"><th><p>Scenario name</p></th><th><p>Particle shape</p></th><th><p>Motion type</p></th></tr></thead><tbody><tr class="odd"><td><p><a href="#microtubule-scenario">MICROTUBULE</a></p></td><td><p>Slightly elongated shape to mimic MT tip staining.</p></td><td><p>Roughly constant velocity motion.</p></td></tr><tr class="even"><td><p><a href="#receptor-scenario">RECEPTOR</a></p></td><td><p>Spherical.</p></td><td><p> {% include wikipedia title='Tethered particle motion' text='Tethered motion'%}: switch between Brownian and directed motion with random orientation for the later.</p></td></tr><tr class="odd"><td><p><a href="#vesicle-scenario">VESICLE</a></p></td><td><p> {% include wikipedia title='Brownian motion' text='Brownian motion'%}.</p></td><td></td></tr><tr class="even"><td><p><a href="#virus-scenario">VIRUS</a></p></td><td><p>Switch between Brownian and directed motion with fixed orientation for the later.</p></td><td></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <thead>
+    <tr class="header">
+      <th>
+        <p>Scenario name</p>
+      </th>
+      <th>
+        <p>Particle shape</p>
+      </th>
+      <th>
+        <p>Motion type</p>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="odd">
+      <td>
+        <p><a href="#microtubule-scenario">MICROTUBULE</a></p>
+      </td>
+      <td>
+        <p>Slightly elongated shape to mimic MT tip staining.</p>
+      </td>
+      <td>
+        <p>Roughly constant velocity motion.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p><a href="#receptor-scenario">RECEPTOR</a></p>
+      </td>
+      <td>
+        <p>Spherical.</p>
+      </td>
+      <td>
+        <p>{% include wikipedia title='Tethered particle motion' text='Tethered motion'%}: switch between Brownian and directed motion with random orientation for the later.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p><a href="#vesicle-scenario">VESICLE</a></p>
+      </td>
+      <td>
+        <p>{% include wikipedia title='Brownian motion' text='Brownian motion'%}.</p>
+      </td>
+      <td></td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p><a href="#virus-scenario">VIRUS</a></p>
+      </td>
+      <td>
+        <p>Switch between Brownian and directed motion with fixed orientation for the later.</p>
+      </td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 For each scenario, images covers several particle density:
 

@@ -58,13 +58,55 @@ Finally, for printing poster size images, the plugin will generate in the second
 
 ## CoverMaker Tutorial
 
-<table><tbody><tr class="odd"><td><p>We will start by opening an image that will serve as template. For the time being it needs to be an RGB image. It can have any dimensions, however consider that larger images will require many more tiles to fill up, it will take long and the effect will be less visible. Fiji logo shown on the right is a good start. Alternatively one of the Fiji sample images such as the clown.jpg gives good results quickly.</p><p><em>Note:</em> I would recommend having only one image opened before proceeding further.</p></td><td><p>{% include thumbnail src='/media/Fiji logo in Fiji.png' title='"Template image"'%}</p></td><td></td></tr><tr class="even"><td><p>Now we launch the CoverMaker python script by going to Plugins -&gt; Examples -&gt; CoverMaker -&gt; Cover Maker. (Or typing 'l' and searching with keyword 'cover').</p><p>A basic dialog box will appear prompting us to select the image database by clicking on <strong>Browse</strong> and locating in the file system the <a href="#Databases">tif file</a> containing down-sampled images. The tif file is called 12_9.tif indicating that the images have been scaled to the 12x9 pixel dimension. This is the default tile size. If you use a different database with different aspect ratio please change the default <strong>tile width and height</strong> in the dialog box.</p><p>Next <strong>click ok</strong> and the reconstruction will start. As a first step the template image will be cropped to the size that is multiple of the tile width and height (not shown, see <a href="#future-work">Future work</a> for comment on the cropping issue.</p><p>Below we monitor the progress of building the cover</p></td><td><p>{% include thumbnail src='/media/CoverMaker dialog 1.png' title='The initial CoverMaker dialog box'%}</p></td><td></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td>
+        <p>We will start by opening an image that will serve as template. For the time being it needs to be an RGB image. It can have any dimensions, however consider that larger images will require many more tiles to fill up, it will take long and the effect will be less visible. Fiji logo shown on the right is a good start. Alternatively one of the Fiji sample images such as the clown.jpg gives good results quickly.</p>
+        <p><em>Note:</em> I would recommend having only one image opened before proceeding further.</p>
+      </td>
+      <td>
+        <p>{% include thumbnail src='/media/Fiji logo in Fiji.png' title='"Template image"'%}</p>
+      </td>
+      <td></td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>Now we launch the CoverMaker python script by going to Plugins -&gt; Examples -&gt; CoverMaker -&gt; Cover Maker. (Or typing 'l' and searching with keyword 'cover').</p>
+        <p>A basic dialog box will appear prompting us to select the image database by clicking on <strong>Browse</strong> and locating in the file system the <a href="#Databases">tif file</a> containing down-sampled images. The tif file is called 12_9.tif indicating that the images have been scaled to the 12x9 pixel dimension. This is the default tile size. If you use a different database with different aspect ratio please change the default <strong>tile width and height</strong> in the dialog box.</p>
+        <p>Next <strong>click ok</strong> and the reconstruction will start. As a first step the template image will be cropped to the size that is multiple of the tile width and height (not shown, see <a href="#future-work">Future work</a> for comment on the cropping issue.</p>
+        <p>Below we monitor the progress of building the cover</p>
+      </td>
+      <td>
+        <p>{% include thumbnail src='/media/CoverMaker dialog 1.png' title='The initial CoverMaker dialog box'%}</p>
+      </td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+  {:/}
 
 |                                                                                                         |                                                                                                           |                                                                                                           |                                                                                                             |                                                                                                               |     |
 |---------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|-----|
 | {% include thumbnail src='/media/Cover buildup 1.png' title='Starting'%} | {% include thumbnail src='/media/Cover buildup 2.png' title='Progress 1'%} | {% include thumbnail src='/media/Cover buildup 3.png' title='Progress 2'%} | {% include thumbnail src='/media/Cover buildup 4.png' title='Almost there'%} | {% include thumbnail src='/media/Cover buildup 5.png' title='Finished Cover'%} |     |
 
-<table><tbody><tr class="odd"><td><p>After the reconstruction finishes a second dialog box pops up. Here we have an option to <strong>Cancel</strong> the program, the finished low resolution image will remain opened and can be saved using normal Fiji procedures.</p><p>If we like the result of the experiment, we can save it at high resolution using the original images. We can decide on the final <strong>resolution</strong> of the output image in dpi, specify the <strong>width or height in pixels or inches</strong>. The fields are linked and should update while we are editing the different parameters.</p><p>Next we need to click on <strong>Browse</strong> and locate the <a href="#Databases">zip file</a> containing the originals. Finally we click on <strong>ok</strong> and the building of the final high resolution output image will commence as shown below. Note that now the image grows sequentially since we already know where to place the images from the initial run and the <a href="#how-does-it-work">randomization</a> is no longer necessary.</p></td><td><p>{% include thumbnail src='/media/CoverMaker dialog 2.png' title='The second CoverMaker dialog box for saving high resolution output'%}</p></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td>
+        <p>After the reconstruction finishes a second dialog box pops up. Here we have an option to <strong>Cancel</strong> the program, the finished low resolution image will remain opened and can be saved using normal Fiji procedures.</p>
+        <p>If we like the result of the experiment, we can save it at high resolution using the original images. We can decide on the final <strong>resolution</strong> of the output image in dpi, specify the <strong>width or height in pixels or inches</strong>. The fields are linked and should update while we are editing the different parameters.</p>
+        <p>Next we need to click on <strong>Browse</strong> and locate the <a href="#Databases">zip file</a> containing the originals. Finally we click on <strong>ok</strong> and the building of the final high resolution output image will commence as shown below. Note that now the image grows sequentially since we already know where to place the images from the initial run and the <a href="#how-does-it-work">randomization</a> is no longer necessary.</p>
+      </td>
+      <td>
+        <p>{% include thumbnail src='/media/CoverMaker dialog 2.png' title='The second CoverMaker dialog box for saving high resolution output'%}</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 |                                                                                                               |                                                                                                                 |                                                                                                                 |                                                                                                                   |                                                                                                                     |     |
 |---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|-----|
@@ -72,7 +114,20 @@ Finally, for printing poster size images, the plugin will generate in the second
 
 When we zoom in on the final output image that was generated in this case at 300dpi and compare with the initial reconstructed image we will see the database images with much greater detail. The image can be made almost arbitrarily large and printed as a large poster. *Note*: the downsampler we use does not do a good job upsampling, thus when the originals are too small for a given dpi size combination artifacts in the output image will occur (grid of lines). This exception is currently not handled properly.
 
-<table><tbody><tr class="odd"><td><p> {% include thumbnail src='/media/Lowres zoomin.png' title='Close up on the Initial low resolution image'%}</p></td><td><p> {% include thumbnail src='/media/Hires zoomin.png' title='Close up on the final high resolution image'%}</p></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td>
+        <p>{% include thumbnail src='/media/Lowres zoomin.png' title='Close up on the Initial low resolution image'%}</p>
+      </td>
+      <td>
+        <p>{% include thumbnail src='/media/Hires zoomin.png' title='Close up on the final high resolution image'%}</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 ## Prepare CoverMaker Database
 

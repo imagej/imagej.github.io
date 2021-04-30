@@ -33,7 +33,81 @@ The requirements to run the Neuroanatomy suite of plugins are twofold: i) [Fiji]
 
 SNT has its own [documentation](/plugins/snt). The list of *Image Processing for NeuroAnatomy and Tree-like Structures* ({% include github org='tferr' repo='hIPNAT' label='source' %}) is as follows:
 
-<table><tbody><tr class="odd"><td><p><strong>Name</strong></p></td><td><p><strong>Menu Path</strong></p></td><td><p><strong>Description</strong></p></td></tr><tr class="even"><td><p><em>Topological Skeletons</em></p></td><td></td><td></td></tr><tr class="odd"><td><p>Strahler classifier</p></td><td><p>{% include bc path='Analyze|Skeleton|Strahler Analysis...'%}</p></td><td><p>Described in <a href="/plugins/strahler-analysis">Strahler Analysis</a>. Implemented as a {% include github org='tferr' repo='hIPNAT' path='src/main/java/ipnat/skel' label='Java plugin' %}.</p></td></tr><tr class="even"><td><p>Summarize Skeleton</p></td><td><p>{% include bc path='Analyze|Skeleton|Summarize Skeleton'%}</p></td><td><p>Bulk statistics of skeletonized images. Implemented as a {% include github org='tferr' repo='hIPNAT' path='src/main/java/ipnat/skel' label='Java plugin' %}.</p></td></tr><tr class="odd"><td><p>Particles classifier</p></td><td><p>{% include bc path='Analyze|Skeleton|Classify Particles Using Skeleton'%}</p></td><td><p>Tags particles according to skeleton features. Detects maxima on a masked image and clusters detected maxima using features of the skeletonized mask. A maxima is considered to be associated to a skeleton feature (e.g., a junction or end-point, see <a href="/plugins/analyze-skeleton">AnalyzeSkeleton</a>) if the distance between its centroid and the feature is less than or equal to a cuttoff ("snap to") distance. Implemented as a {% include github org='tferr' repo='hIPNAT' path='src/main/resources/scripts/' label='Python script' %}.</p></td></tr><tr class="even"><td><p><em>Utilities</em></p></td><td></td><td></td></tr><tr class="odd"><td><p>Fractal Trees</p></td><td><p> {% include bc path='File|Open Samples|Fractal Tree'%}</p></td><td><p>Synthetic images (<a href="https://en.wikipedia.org/wiki/L-system">L-System</a> Trees) useful for debugging, testing or prototyping. Implemented as a {% include github org='tferr' repo='hIPNAT' path='src/main/java/ipnat/skel' label='Java plugin' %}.</p></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td>
+        <p><strong>Name</strong></p>
+      </td>
+      <td>
+        <p><strong>Menu Path</strong></p>
+      </td>
+      <td>
+        <p><strong>Description</strong></p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p><em>Topological Skeletons</em></p>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>Strahler classifier</p>
+      </td>
+      <td>
+        <p>{% include bc path='Analyze|Skeleton|Strahler Analysis...'%}</p>
+      </td>
+      <td>
+        <p>Described in <a href="/plugins/strahler-analysis">Strahler Analysis</a>. Implemented as a {% include github org='tferr' repo='hIPNAT' path='src/main/java/ipnat/skel' label='Java plugin' %}.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>Summarize Skeleton</p>
+      </td>
+      <td>
+        <p>{% include bc path='Analyze|Skeleton|Summarize Skeleton'%}</p>
+      </td>
+      <td>
+        <p>Bulk statistics of skeletonized images. Implemented as a {% include github org='tferr' repo='hIPNAT' path='src/main/java/ipnat/skel' label='Java plugin' %}.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>Particles classifier</p>
+      </td>
+      <td>
+        <p>{% include bc path='Analyze|Skeleton|Classify Particles Using Skeleton'%}</p>
+      </td>
+      <td>
+        <p>Tags particles according to skeleton features. Detects maxima on a masked image and clusters detected maxima using features of the skeletonized mask. A maxima is considered to be associated to a skeleton feature (e.g., a junction or end-point, see <a href="/plugins/analyze-skeleton">AnalyzeSkeleton</a>) if the distance between its centroid and the feature is less than or equal to a cuttoff ("snap to") distance. Implemented as a {% include github org='tferr' repo='hIPNAT' path='src/main/resources/scripts/' label='Python script' %}.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p><em>Utilities</em></p>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>Fractal Trees</p>
+      </td>
+      <td>
+        <p>{% include bc path='File|Open Samples|Fractal Tree'%}</p>
+      </td>
+      <td>
+        <p>Synthetic images (<a href="https://en.wikipedia.org/wiki/L-system">L-System</a> Trees) useful for debugging, testing or prototyping. Implemented as a {% include github org='tferr' repo='hIPNAT' path='src/main/java/ipnat/skel' label='Java plugin' %}.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 # Further information
 

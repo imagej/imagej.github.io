@@ -130,7 +130,47 @@ If you choose *Visually*, the dialog will prompt you to click on a representativ
 
 <center>
 
-<table><tbody><tr class="odd"><td></td><td><p>Adusting max</p></td></tr><tr class="even"><td><p> {% include thumbnail src='/media/Sigma-palette-location.png' title='200px'%}</p></td><td><figure><img src="/media/Sigma-palette-max.png" title="Sigma-palette-max.png" width="200" alt="Sigma-palette-max.png" /><figcaption aria-hidden="true">Sigma-palette-max.png</figcaption></figure></td></tr><tr class="odd"><td></td><td><p>Oversaturated</p></td></tr><tr class="even"><td><p>Choosing <em>sigma</em> and <em>max.</em> parameters visually for hessian analysis from a representative region in the image (orange box). With saturated <em>max</em>, the cost function for A* search is equivalent across the signal. Also, note how lower sigma values cause the axon to be dimmer on the center and brighter on the edges, while higher sigma values eliminate detail from the structure.</p></td><td></td></tr><tr class="odd"><td></td><td></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td></td>
+      <td>
+        <p>Adusting max</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>{% include thumbnail src='/media/Sigma-palette-location.png' title='200px'%}</p>
+      </td>
+      <td>
+        <figure>
+          <img src="/media/Sigma-palette-max.png" title="Sigma-palette-max.png" width="200" alt="Sigma-palette-max.png">
+          <figcaption aria-hidden="true">
+            Sigma-palette-max.png
+          </figcaption>
+        </figure>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td></td>
+      <td>
+        <p>Oversaturated</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>Choosing <em>sigma</em> and <em>max.</em> parameters visually for hessian analysis from a representative region in the image (orange box). With saturated <em>max</em>, the cost function for A* search is equivalent across the signal. Also, note how lower sigma values cause the axon to be dimmer on the center and brighter on the edges, while higher sigma values eliminate detail from the structure.</p>
+      </td>
+      <td></td>
+    </tr>
+    <tr class="odd">
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 </center>
 

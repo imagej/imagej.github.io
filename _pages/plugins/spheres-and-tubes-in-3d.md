@@ -6,6 +6,16 @@ categories: Plugins,Unmaintained
 
 An example ImageJ plugin illustrating how to create and display 3D tubes and 3D spheres in the [3D Viewer](/plugins/3d-viewer).
 
-<table><tbody><tr class="odd"><td><p>style="vertical-align:top" |{% include thumbnail src='/media/Spheres and tubes 3D.jpg' title='Example of tubes, spheres and discs in 3D.'%}</p></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td>
+        <p>style="vertical-align:top" |{% include thumbnail src='/media/Spheres and tubes 3D.jpg' title='Example of tubes, spheres and discs in 3D.'%}</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
  

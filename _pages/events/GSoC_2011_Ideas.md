@@ -56,7 +56,23 @@ The new imglib supports dimension-, storage- and data type independent image pro
 
 Implement a simple inpainting method (i.e. restore missing/unwanted parts of the image marked by a ROI) using wavelets: apply the wavelet transform, and then, on each level, use a diffusion algorithm to deduce a smooth signal from the surrounding parts, and finally inverse-transform the wavelet to get the restored image.
 
-<table><tbody><tr class="odd"><td><p>{% include thumbnail src='/media/S2.png' title='Section 1'%}</p></td><td><p>{% include thumbnail src='/media/S1.png' title='Section 2'%}</p></td><td><p>{% include thumbnail src='/media/S3.png' title='Section 3'%}</p></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td>
+        <p>{% include thumbnail src='/media/S2.png' title='Section 1'%}</p>
+      </td>
+      <td>
+        <p>{% include thumbnail src='/media/S1.png' title='Section 2'%}</p>
+      </td>
+      <td>
+        <p>{% include thumbnail src='/media/S3.png' title='Section 3'%}</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 Other approaches are also welcome, such as using information from adjacent serial sections in electron microscopical image volumes. See for example the [large black blob at top left](http://fly.mpi-cbg.de/?pid=10&zp=660&yp=43500.5532&xp=54214.2522&sid0=10&s0=2) which could be restored with information from the next and previous sections.
 

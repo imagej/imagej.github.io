@@ -53,7 +53,46 @@ There are three common ways to travel to Madison:
 
 ### Nearby restaurants
 
-<table><tbody><tr class="odd"><td><ul><li><a href="http://www.steenbocksonorchard.com/">Steenbock's on Orchard</a></li><li><a href="http://www.aldoscafemadison.com/">Aldo's Cafe</a></li><li><a href="http://babcockhalldairystore.wisc.edu">Babcock Hall Dairy Store</a></li><li><a href="http://www.librarycafeandbar.com">The Library Cafe and Bar</a></li></ul></td><td><ul><li><a href="http://www.eatmobettah.com/home.html">New Orleans Take-Out</a></li><li><a href="http://www.brasseriev.com/">BrasserieV</a></li><li><a href="http://www.brocach.com/">Brocach</a></li><li><a href="https://ianspizza.com/">Ian's Pizza on Frances St.</a></li></ul></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td>
+        <ul>
+          <li>
+            <a href="http://www.steenbocksonorchard.com/">Steenbock's on Orchard</a>
+          </li>
+          <li>
+            <a href="http://www.aldoscafemadison.com/">Aldo's Cafe</a>
+          </li>
+          <li>
+            <a href="http://babcockhalldairystore.wisc.edu">Babcock Hall Dairy Store</a>
+          </li>
+          <li>
+            <a href="http://www.librarycafeandbar.com">The Library Cafe and Bar</a>
+          </li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>
+            <a href="http://www.eatmobettah.com/home.html">New Orleans Take-Out</a>
+          </li>
+          <li>
+            <a href="http://www.brasseriev.com/">BrasserieV</a>
+          </li>
+          <li>
+            <a href="http://www.brocach.com/">Brocach</a>
+          </li>
+          <li>
+            <a href="https://ianspizza.com/">Ian's Pizza on Frances St.</a>
+          </li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 ### Things to do
 

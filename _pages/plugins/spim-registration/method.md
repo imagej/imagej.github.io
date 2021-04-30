@@ -122,16 +122,162 @@ To evaluate the precision and performance of the bead-based registration framewo
 
 ------------------------------------------------------------------------
 
-<table><caption>style="margin-top:1em; margin-bottom:1em;" |<strong>Table 1:</strong> Statistics of multi-view registration of various datasets</caption><thead><tr class="header"><th><p>Dataset</p></th><th><p>min/avg/max error [px]</p></th><th><p>DoG detections</p></th><th><p>True correspondence number (ratio)</p></th><th><p>processing time [min:sec]</p></th></tr></thead><tbody><tr class="odd"><td><p>Fixed <em>C.elegans</em>, 8 views<br />
-SPIM 40×/0.8NA</p></td><td><p>1.02/1.12/1.31</p></td><td><p>4566</p></td><td><p>1717 (98%)</p></td><td><p>11:09</p></td></tr><tr class="even"><td><p>Live <em>Drosophila</em>, 5 views<br />
-SPIM 20×/0.5NA</p></td><td><p>0.76/0.81/1.31</p></td><td><p>9267</p></td><td><p>1459 (97%)</p></td><td><p>2:31</p></td></tr><tr class="odd"><td><p>Fixed <em>Drosophila</em>, 10 views<br />
-SPIM 20×/0.5NA</p></td><td><p>0.65/0.78/0.97</p></td><td><p>9035</p></td><td><p>1301 (93%)</p></td><td><p>20:10</p></td></tr><tr class="even"><td><p>Fixed <em>Drosophila</em>, 11 views<br />
-Spinning Disc 20&amp;times/0.5NA</p></td><td><p>1.10/1.33/1.86</p></td><td><p>6309</p></td><td><p>978 (92%)</p></td><td><p>6:15</p></td></tr><tr class="odd"><td><p>Simulated Dataset, 8 views<br />
-Isotropic Resolution</p></td><td><p>0.02/0.02/0.02</p></td><td><p>2594</p></td><td><p>2880 (96%)</p></td><td><p>15:54</p></td></tr><tr class="even"><td><p>Live <em>Drosophila</em>, 7 views<br />
-SPIM 20×/0.5NA<br />
-<strong>bead-based</strong></p></td><td><p>0.87/0.98/1.17</p></td><td><p>6232</p></td><td><p>603 (97%)</p></td><td><p>2:27</p></td></tr><tr class="odd"><td><p>Live <em>Drosophila</em>, 7 views<br />
-SPIM 20×/0.5NA<br />
-<strong>intensity-based</strong></p></td><td><p>0.93/6.91/9.59</p></td><td><p>n.a.</p></td><td><p>n.a.</p></td><td><p>515:10</p></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <caption>
+    style="margin-top:1em; margin-bottom:1em;" |<strong>Table 1:</strong> Statistics of multi-view registration of various datasets
+  </caption>
+  <thead>
+    <tr class="header">
+      <th>
+        <p>Dataset</p>
+      </th>
+      <th>
+        <p>min/avg/max error [px]</p>
+      </th>
+      <th>
+        <p>DoG detections</p>
+      </th>
+      <th>
+        <p>True correspondence number (ratio)</p>
+      </th>
+      <th>
+        <p>processing time [min:sec]</p>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="odd">
+      <td>
+        <p>Fixed <em>C.elegans</em>, 8 views<br>
+        SPIM 40×/0.8NA</p>
+      </td>
+      <td>
+        <p>1.02/1.12/1.31</p>
+      </td>
+      <td>
+        <p>4566</p>
+      </td>
+      <td>
+        <p>1717 (98%)</p>
+      </td>
+      <td>
+        <p>11:09</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>Live <em>Drosophila</em>, 5 views<br>
+        SPIM 20×/0.5NA</p>
+      </td>
+      <td>
+        <p>0.76/0.81/1.31</p>
+      </td>
+      <td>
+        <p>9267</p>
+      </td>
+      <td>
+        <p>1459 (97%)</p>
+      </td>
+      <td>
+        <p>2:31</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>Fixed <em>Drosophila</em>, 10 views<br>
+        SPIM 20×/0.5NA</p>
+      </td>
+      <td>
+        <p>0.65/0.78/0.97</p>
+      </td>
+      <td>
+        <p>9035</p>
+      </td>
+      <td>
+        <p>1301 (93%)</p>
+      </td>
+      <td>
+        <p>20:10</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>Fixed <em>Drosophila</em>, 11 views<br>
+        Spinning Disc 20&amp;times/0.5NA</p>
+      </td>
+      <td>
+        <p>1.10/1.33/1.86</p>
+      </td>
+      <td>
+        <p>6309</p>
+      </td>
+      <td>
+        <p>978 (92%)</p>
+      </td>
+      <td>
+        <p>6:15</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>Simulated Dataset, 8 views<br>
+        Isotropic Resolution</p>
+      </td>
+      <td>
+        <p>0.02/0.02/0.02</p>
+      </td>
+      <td>
+        <p>2594</p>
+      </td>
+      <td>
+        <p>2880 (96%)</p>
+      </td>
+      <td>
+        <p>15:54</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>Live <em>Drosophila</em>, 7 views<br>
+        SPIM 20×/0.5NA<br>
+        <strong>bead-based</strong></p>
+      </td>
+      <td>
+        <p>0.87/0.98/1.17</p>
+      </td>
+      <td>
+        <p>6232</p>
+      </td>
+      <td>
+        <p>603 (97%)</p>
+      </td>
+      <td>
+        <p>2:27</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>Live <em>Drosophila</em>, 7 views<br>
+        SPIM 20×/0.5NA<br>
+        <strong>intensity-based</strong></p>
+      </td>
+      <td>
+        <p>0.93/6.91/9.59</p>
+      </td>
+      <td>
+        <p>n.a.</p>
+      </td>
+      <td>
+        <p>n.a.</p>
+      </td>
+      <td>
+        <p>515:10</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 style="margin-top:1em; margin-bottom:1em;" \|**Table 1:** Statistics of multi-view registration of various datasets
 

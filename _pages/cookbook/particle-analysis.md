@@ -21,7 +21,20 @@ Automatic particle counting can be done if the image does not have too many indi
 
 Automatic particle analysis requires a "binary", black and white, image. A threshold range is set to tell the objects of interest apart from the background. All pixels in the image whose values lie under the threshold are converted to black and all pixels with values above the threshold are converted to white, or vice-versa.
 
-<table><tbody><tr class="odd"><td style="border:none;padding:0in;"><p> {% include thumbnail src='/media/Black white threshold.png' title='left'%}</p></td><td style="border:none;padding:0in;"><p> There are several ways to set thresholds. Monochrome images are most simply thresholded via the menu command {% include bc path='Image | Adjust | Threshold'%}. The threshold can be set using the slider bars. The pixels within the threshold range are displayed in red. When you are satisfied with the threshold settings, you can then hit <em>Apply</em>. This will permanently apply the threshold settings and convert the image to binary. You have different options for setting a manual threshold. The drop-down menu set to <em>Default</em> allows you to choose between <em>Default</em> and 15 other threshold techniques. The drop-down menu set to <em>Red</em> allows you to choose between a red on white color scheme, a black on white color scheme, or an over and under color scheme. The <em>Dark Background</em> box will flip the foreground color with the background color. You can also choose to check the Stack histogram box to produce a histogram for an entire stack.</p></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td style="border:none;padding:0in;">
+        <p>{% include thumbnail src='/media/Black white threshold.png' title='left'%}</p>
+      </td>
+      <td style="border:none;padding:0in;">
+        <p>There are several ways to set thresholds. Monochrome images are most simply thresholded via the menu command {% include bc path='Image | Adjust | Threshold'%}. The threshold can be set using the slider bars. The pixels within the threshold range are displayed in red. When you are satisfied with the threshold settings, you can then hit <em>Apply</em>. This will permanently apply the threshold settings and convert the image to binary. You have different options for setting a manual threshold. The drop-down menu set to <em>Default</em> allows you to choose between <em>Default</em> and 15 other threshold techniques. The drop-down menu set to <em>Red</em> allows you to choose between a red on white color scheme, a black on white color scheme, or an over and under color scheme. The <em>Dark Background</em> box will flip the foreground color with the background color. You can also choose to check the Stack histogram box to produce a histogram for an entire stack.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 {% include thumbnail src='/media/Color thresholding manual threshold2.png' title='right'%} For color images, setting the threshold is done with the command sequence {% include bc path='Image | Adjust | Color Threshold...'%}. The *Thresholding method* option allows you to choose a thresholding techniqe other than the default. The *Threshold color* option allows you to choose between Red, White, Black, or B&W as the thresholding color. The *Color space* option allows you to choose between HSB, RGB, Lab, and YUV. The background of the thresholded image can be made light or dark. The image can be converted to a binary image via the menu command {% include bc path='Image | Type | 8-bit'%}.
 

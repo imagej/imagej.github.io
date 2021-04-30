@@ -19,7 +19,89 @@ The Cookbook is based on the [Fiji](/fiji) distribution of ImageJ. {% include do
 
 ## Installing the Cookbook plugins
 
-<table style="font-size:17px; margin-left: 25px;"><tbody><tr class="odd"><td><p>From the Fiji menu, select {% include bc path='Help | Update...'%}</p></td><td><figure><img src="/media/1 Update Fiji.png" title="1_Update_Fiji.png" width="150" alt="1_Update_Fiji.png" /><figcaption aria-hidden="true">1_Update_Fiji.png</figcaption></figure></td></tr><tr class="even"><td><p>Click the <strong>Manage update sites</strong> button</p></td><td><figure><img src="/media/2 Manage update sites.png" title="2_Manage_update_sites.png" width="250" alt="2_Manage_update_sites.png" /><figcaption aria-hidden="true">2_Manage_update_sites.png</figcaption></figure></td></tr><tr class="odd"><td><p>Check the <strong>Cookbook</strong> update site</p></td><td><figure><img src="/media/3 Enable cookbook.png" title="3_Enable_cookbook.png" width="250" alt="3_Enable_cookbook.png" /><figcaption aria-hidden="true">3_Enable_cookbook.png</figcaption></figure></td></tr><tr class="even"><td><p>Close the <strong>Manage update sites</strong> dialog</p></td><td></td></tr><tr class="odd"><td><p>Click <strong>Apply changes</strong> to download the Cookbook plugins</p></td><td><figure><img src="/media/4 Apply changes.png" title="4_Apply_changes.png" width="250" alt="4_Apply_changes.png" /><figcaption aria-hidden="true">4_Apply_changes.png</figcaption></figure></td></tr><tr class="even"><td><p>Restart Fiji to complete the plugin installation</p></td><td></td></tr><tr class="odd"><td><p>Enjoy your new plugins from the <strong>Cookbook</strong> menu!</p></td><td><figure><img src="/media/5 Use the Cookbook.png" title="5_Use_the_Cookbook.png" width="250" alt="5_Use_the_Cookbook.png" /><figcaption aria-hidden="true">5_Use_the_Cookbook.png</figcaption></figure></td></tr></tbody></table>
+{::nomarkdown}
+<table style="font-size:17px; margin-left: 25px;">
+  <tbody>
+    <tr class="odd">
+      <td>
+        <p>From the Fiji menu, select {% include bc path='Help | Update...'%}</p>
+      </td>
+      <td>
+        <figure>
+          <img src="/media/1%20Update%20Fiji.png" title="1_Update_Fiji.png" width="150" alt="1_Update_Fiji.png">
+          <figcaption aria-hidden="true">
+            1_Update_Fiji.png
+          </figcaption>
+        </figure>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>Click the <strong>Manage update sites</strong> button</p>
+      </td>
+      <td>
+        <figure>
+          <img src="/media/2%20Manage%20update%20sites.png" title="2_Manage_update_sites.png" width="250" alt="2_Manage_update_sites.png">
+          <figcaption aria-hidden="true">
+            2_Manage_update_sites.png
+          </figcaption>
+        </figure>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>Check the <strong>Cookbook</strong> update site</p>
+      </td>
+      <td>
+        <figure>
+          <img src="/media/3%20Enable%20cookbook.png" title="3_Enable_cookbook.png" width="250" alt="3_Enable_cookbook.png">
+          <figcaption aria-hidden="true">
+            3_Enable_cookbook.png
+          </figcaption>
+        </figure>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>Close the <strong>Manage update sites</strong> dialog</p>
+      </td>
+      <td></td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>Click <strong>Apply changes</strong> to download the Cookbook plugins</p>
+      </td>
+      <td>
+        <figure>
+          <img src="/media/4%20Apply%20changes.png" title="4_Apply_changes.png" width="250" alt="4_Apply_changes.png">
+          <figcaption aria-hidden="true">
+            4_Apply_changes.png
+          </figcaption>
+        </figure>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>Restart Fiji to complete the plugin installation</p>
+      </td>
+      <td></td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>Enjoy your new plugins from the <strong>Cookbook</strong> menu!</p>
+      </td>
+      <td>
+        <figure>
+          <img src="/media/5%20Use%20the%20Cookbook.png" title="5_Use_the_Cookbook.png" width="250" alt="5_Use_the_Cookbook.png">
+          <figcaption aria-hidden="true">
+            5_Use_the_Cookbook.png
+          </figcaption>
+        </figure>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 ## Source
 

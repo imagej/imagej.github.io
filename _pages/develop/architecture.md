@@ -82,7 +82,120 @@ As a rule of thumb, we find that multi-module [Maven](/develop/maven) projects s
 
 All components in these organizations use [Maven](/develop/maven) for [project management](/develop/project-management). Each organization has its own Maven [groupId](http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-more-coordinates). Each component extends the {% include github org='scijava' repo='pom-scijava' label='pom-scijava' %} [parent POM](http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-project-inheritance), which provides sensible build defaults and compatible dependency versions (see "Bill of Materials" below).
 
-<table><tbody><tr class="odd"><td><p><strong>Logo</strong></p></td><td><p><strong>Project</strong></p></td><td><p><strong>Organization</strong></p></td><td><p><strong>groupId</strong></p></td></tr><tr class="even"><td><p> {% include logo content='SciJava' %}</p></td><td><p><a href="SciJava">SciJava</a></p></td><td><p><a href="https://github.com/scijava">scijava</a></p></td><td><p><a href="https://maven.scijava.org/index.html#nexus-search;gav~org.scijava">org.scijava</a></p></td></tr><tr class="odd"><td><p> {% include logo content='ImageJ2' %}</p></td><td><p><a href="/about">ImageJ</a></p></td><td><p><a href="https://github.com/imagej">imagej</a></p></td><td><p><a href="https://maven.scijava.org/index.html#nexus-search;gav~net.imagej">net.imagej</a></p></td></tr><tr class="even"><td><p> {% include logo content='ImgLib2' %}</p></td><td><p><a href="/imglib2">ImgLib2</a></p></td><td><p><a href="https://github.com/imglib">imglib</a></p></td><td><p><a href="https://maven.scijava.org/index.html#nexus-search;gav~net.imglib2">net.imglib2</a></p></td></tr><tr class="odd"><td><p> {% include logo content='SCIFIO' %}</p></td><td><p><a href="/software/scifio">SCIFIO</a></p></td><td><p><a href="https://github.com/scifio">scifio</a></p></td><td><p><a href="https://maven.scijava.org/index.html#nexus-search;gav~io.scif">io.scif</a></p></td></tr><tr class="even"><td rowspan=3 style="vertical-align: middle"><p> {% include logo content='Fiji' %}</p></td><td><p><a href="/fiji">Fiji</a></p></td><td><p><a href="https://github.com/fiji">fiji</a></p></td><td><p><a href="https://maven.scijava.org/index.html#nexus-search;gav~sc.fiji">sc.fiji</a></p></td></tr><tr class="odd"><td><p><a href="/plugins/bdv">BigDataViewer</a></p></td><td><p><a href="https://github.com/bigdataviewer">bigdataviewer</a></p></td><td><p><a href="https://maven.scijava.org/index.html#nexus-search;gav~sc.fiji">sc.fiji</a></p></td><td></td></tr><tr class="even"><td><p><a href="/plugins/trakem2">TrakEM2</a></p></td><td><p><a href="https://github.com/trakem2">trakem2</a></p></td><td><p><a href="https://maven.scijava.org/index.html#nexus-search;gav~sc.fiji">sc.fiji</a></p></td><td></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td>
+        <p><strong>Logo</strong></p>
+      </td>
+      <td>
+        <p><strong>Project</strong></p>
+      </td>
+      <td>
+        <p><strong>Organization</strong></p>
+      </td>
+      <td>
+        <p><strong>groupId</strong></p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>{% include logo content='SciJava' %}</p>
+      </td>
+      <td>
+        <p><a href="SciJava">SciJava</a></p>
+      </td>
+      <td>
+        <p><a href="https://github.com/scijava">scijava</a></p>
+      </td>
+      <td>
+        <p><a href="https://maven.scijava.org/index.html#nexus-search;gav~org.scijava">org.scijava</a></p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>{% include logo content='ImageJ2' %}</p>
+      </td>
+      <td>
+        <p><a href="/about">ImageJ</a></p>
+      </td>
+      <td>
+        <p><a href="https://github.com/imagej">imagej</a></p>
+      </td>
+      <td>
+        <p><a href="https://maven.scijava.org/index.html#nexus-search;gav~net.imagej">net.imagej</a></p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>{% include logo content='ImgLib2' %}</p>
+      </td>
+      <td>
+        <p><a href="/imglib2">ImgLib2</a></p>
+      </td>
+      <td>
+        <p><a href="https://github.com/imglib">imglib</a></p>
+      </td>
+      <td>
+        <p><a href="https://maven.scijava.org/index.html#nexus-search;gav~net.imglib2">net.imglib2</a></p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>{% include logo content='SCIFIO' %}</p>
+      </td>
+      <td>
+        <p><a href="/software/scifio">SCIFIO</a></p>
+      </td>
+      <td>
+        <p><a href="https://github.com/scifio">scifio</a></p>
+      </td>
+      <td>
+        <p><a href="https://maven.scijava.org/index.html#nexus-search;gav~io.scif">io.scif</a></p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td rowspan="3" style="vertical-align: middle">
+        <p>{% include logo content='Fiji' %}</p>
+      </td>
+      <td>
+        <p><a href="/fiji">Fiji</a></p>
+      </td>
+      <td>
+        <p><a href="https://github.com/fiji">fiji</a></p>
+      </td>
+      <td>
+        <p><a href="https://maven.scijava.org/index.html#nexus-search;gav~sc.fiji">sc.fiji</a></p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p><a href="/plugins/bdv">BigDataViewer</a></p>
+      </td>
+      <td>
+        <p><a href="https://github.com/bigdataviewer">bigdataviewer</a></p>
+      </td>
+      <td>
+        <p><a href="https://maven.scijava.org/index.html#nexus-search;gav~sc.fiji">sc.fiji</a></p>
+      </td>
+      <td></td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p><a href="/plugins/trakem2">TrakEM2</a></p>
+      </td>
+      <td>
+        <p><a href="https://github.com/trakem2">trakem2</a></p>
+      </td>
+      <td>
+        <p><a href="https://maven.scijava.org/index.html#nexus-search;gav~sc.fiji">sc.fiji</a></p>
+      </td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 ## Bill of Materials
 

@@ -51,7 +51,60 @@ Note that these many of these limitations can be mitigated in practice. For exam
 
 Furthermore, SciJava projects typically accompany interfaces with a corresponding abstract class and/or default implementation, providing *implementors* a future-resistant extension point. So e.g. in the case of {% include javadoc package='org/scijava/module' class='ModuleService' %}, making your class extend {% include javadoc package='org/scijava/module' class='DefaultModuleService' %} instead of only implementing the interface would be an effective way of largely shielding yourself from future SPI breakages during dependency version upgrades. Some other examples:
 
-<table><tbody><tr class="odd"><td><p><strong>Interface of interest</strong></p></td><td><p><strong>Base class to extend</strong></p></td></tr><tr class="even"><td><p> {% include javadoc package='org/scijava/plugin' class='RichPlugin' %}</p></td><td><p> {% include javadoc package='org/scijava/plugin' class='AbstractRichPlugin' %}</p></td></tr><tr class="odd"><td><p> {% include javadoc package='org/scijava/command' class='Command' %}</p></td><td><p> {% include javadoc package='org/scijava/command' class='ContextCommand' %}</p></td></tr><tr class="even"><td><p> {% include javadoc package='org/scijava/tool' class='Tool' %}</p></td><td><p> {% include javadoc package='org/scijava/tool' class='AbstractTool' %}</p></td></tr><tr class="odd"><td><p> {% include javadoc package='org/scijava/service' class='Service' %}</p></td><td><p> {% include javadoc package='org/scijava/service' class='AbstractService' %}</p></td></tr><tr class="even"><td><p> {% include javadoc project='SCIFIO' package='io/scif' class='Format' %}</p></td><td><p> {% include javadoc project='SCIFIO' package='io/scif' class='AbstractFormat' %}</p></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td>
+        <p><strong>Interface of interest</strong></p>
+      </td>
+      <td>
+        <p><strong>Base class to extend</strong></p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>{% include javadoc package='org/scijava/plugin' class='RichPlugin' %}</p>
+      </td>
+      <td>
+        <p>{% include javadoc package='org/scijava/plugin' class='AbstractRichPlugin' %}</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>{% include javadoc package='org/scijava/command' class='Command' %}</p>
+      </td>
+      <td>
+        <p>{% include javadoc package='org/scijava/command' class='ContextCommand' %}</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>{% include javadoc package='org/scijava/tool' class='Tool' %}</p>
+      </td>
+      <td>
+        <p>{% include javadoc package='org/scijava/tool' class='AbstractTool' %}</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>{% include javadoc package='org/scijava/service' class='Service' %}</p>
+      </td>
+      <td>
+        <p>{% include javadoc package='org/scijava/service' class='AbstractService' %}</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>{% include javadoc project='SCIFIO' package='io/scif' class='Format' %}</p>
+      </td>
+      <td>
+        <p>{% include javadoc project='SCIFIO' package='io/scif' class='AbstractFormat' %}</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 ## Melting pot
 

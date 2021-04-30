@@ -76,47 +76,439 @@ Each component's page features an informational sidebar with a status report der
 
 Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
 
-<table><tbody><tr class="odd"><td><p><strong>Logo</strong></p></td><td><p><strong>Project</strong></p></td><td><p><strong>Founders</strong></p></td><td><p><strong>Leads</strong></p></td><td><p><strong>Maintainers</strong></p></td><td><p><strong>Developers</strong></p></td><td><p><strong>Contributors</strong></p></td></tr><tr class="even"><td><p> {% include logo content='SciJava' %}</p></td><td><p><strong><a href="SciJava">SciJava</a></strong></p></td><td><p> {%- include person id='joshmoore' -%}<br />
-{%- include person id='ctrueden' -%}</p></td><td><p> {%- include person id='ctrueden' -%}</p></td><td><p> {%- include person id='ctrueden' -%}</p></td><td><p><a href="https://github.com/orgs/scijava/people">List on GitHub</a></p></td><td><p>See <a href="/about/contributors">Contributors</a></p></td></tr><tr class="odd"><td><p> {% include logo content='ImgLib2' %}</p></td><td><p><strong><a href="/imglib2">ImgLib2</a></strong></p></td><td><p> {%- include person id='axtimwalde' -%}<br />
-{%- include person id='StephanPreibisch' -%}</p></td><td><p> {%- include person id='tpietzsch' -%}<sup>1</sup><br />
-{%- include person id='StephanPreibisch' -%}<br />
-{%- include person id='axtimwalde' -%}</p></td><td><p> {%- include person id='tpietzsch' -%}<br />
-{%- include person id='ctrueden' -%}<br />
-{%- include person id='StephanPreibisch' -%}<br />
-{%- include person id='axtimwalde' -%}</p></td><td><p><a href="https://github.com/orgs/imglib/people">List on GitHub</a></p></td><td><p>See <a href="/about/contributors">Contributors</a></p></td></tr><tr class="even"><td><p> {% include logo content='ImageJ1' %}</p></td><td><p><strong><a href="/software/imagej1">ImageJ1</a></strong></p></td><td><p> {%- include person id='rasband' -%}</p></td><td><p> {%- include person id='rasband' -%}</p></td><td><p> {%- include person id='rasband' -%}<br />
-{%- include person id='ctrueden' -%}</p></td><td><p> {%- include person id='rasband' -%}</p></td><td><p>See <a href="/ij/notes.html">release notes</a></p></td></tr><tr class="odd"><td><p> {% include logo content='ImageJ2' %}</p></td><td><p><strong><a href="/software/imagej2">ImageJ2</a></strong></p></td><td><p> {%- include person id='ctrueden' -%}<br />
-{%- include person id='eliceiri' -%}</p></td><td><p> {%- include person id='ctrueden' -%}</p></td><td><p> {%- include person id='ctrueden' -%}</p></td><td><p><a href="https://github.com/orgs/imagej/people">List on GitHub</a></p></td><td><p>See <a href="/about/contributors">Contributors</a></p></td></tr><tr class="even"><td><p> {% include logo content='SCIFIO' %}</p></td><td><p><strong><a href="/software/scifio">SCIFIO</a></strong></p></td><td><p> {%- include person id='ctrueden' -%}<br />
-{%- include person id='eliceiri' -%}<br />
-{%- include person id='hinerm' -%}</p></td><td><p> {%- include person id='ctrueden' -%}</p></td><td><p> {%- include person id='ctrueden' -%}</p></td><td><p><a href="https://github.com/orgs/scijava/people">List on GitHub</a></p></td><td><p>See <a href="/about/contributors">Contributors</a></p></td></tr><tr class="odd"><td rowspan=3 style="vertical-align: middle"><p> {% include logo content='Fiji' %}</p></td><td><p><strong><a href="/fiji">Fiji</a></strong></p></td><td><p> {%- include person id='dscho' -%}<br />
-{%- include person id='acardona' -%}<br />
-{%- include person id='tomancak' -%}</p></td><td><p> {%- include person id='ctrueden' -%}</p></td><td><p> {%- include person id='ctrueden' -%}<br />
-Gabriella Turek</p></td><td><p><a href="https://github.com/orgs/fiji/people">List on GitHub</a></p></td><td><p>See <a href="/about/contributors">Contributors</a></p></td></tr><tr class="even"><td><p><strong><a href="/plugins/bdv">BigDataViewer</a></strong></p></td><td><p> {%- include person id='tpietzsch' -%}</p></td><td><p> {%- include person id='tpietzsch' -%}</p></td><td><p> {%- include person id='tpietzsch' -%}<br />
-{%- include person id='StephanPreibisch' -%}</p></td><td><p><a href="https://github.com/orgs/bigdataviewer/people">List on GitHub</a></p></td><td><p><a href="https://github.com/bigdataviewer/bigdataviewer-core/graphs/contributors">Info on GitHub</a></p></td><td></td></tr><tr class="odd"><td><p><strong><a href="/plugins/trakem2">TrakEM2</a></strong></p></td><td><p> {%- include person id='acardona' -%}</p></td><td><p> {%- include person id='acardona' -%}</p></td><td><p> {%- include person id='acardona' -%}<br />
-{%- include person id='axtimwalde' -%}<br />
-{%- include person id='ctrueden' -%}</p></td><td><p><a href="https://github.com/orgs/trakem2/people">List on GitHub</a></p></td><td><p><a href="https://github.com/trakem2/plugins/trakem2/graphs/contributors">Info on GitHub</a></p></td><td></td></tr><tr class="even"><td><p> {% include logo content='SLIM Curve' %}</p></td><td><p><strong><a href="/plugins/slim-curve">SLIM Curve</a></strong></p></td><td><p> Paul Barber<br />
-{%- include person id='ctrueden' -%}</p></td><td><p> Paul Barber<sup>2</sup><br />
-{%- include person id='ctrueden' -%}<sup>2</sup></p></td><td><p> {%- include person id='aksagar' -%}<br />
-{%- include person id='ctrueden' -%}</p></td><td><p><a href="https://github.com/orgs/slim-curve/people">List on GitHub</a></p></td><td><p><a href="https://github.com/slim-curve/slim-plugin/graphs/contributors">Info on GitHub</a></p></td></tr><tr class="odd"><td><p> {% include logo content='Bio-Formats' %}</p></td><td><p><strong><a href="/formats/bio-formats">Bio-Formats</a></strong></p></td><td><p> {%- include person id='ctrueden' -%}<br />
-{%- include person id='eliceiri' -%}</p></td><td><p> {%- include person id='melissalinkert' -%}</p></td><td><p> {%- include person id='melissalinkert' -%}<br />
-{%- include person id='sbesson' -%}</p></td><td style="white-space: normal"><p><a href="https://github.com/openmicroscopy/bioformats/graphs/contributors">List on GitHub</a></p></td><td><p>See <a href="http://www.openmicroscopy.org/site/about/ome-contributors">OME Contributors</a></p></td></tr><tr class="even"><td><p> {% include logo content='KNIME' %}</p></td><td><p> <strong><a href="/software/knime">KNIME Image Processing</a></strong></p></td><td><p> {%- include person id='dietzc' -%}<br />
-Martin Horn</p></td><td><p> {%- include person id='dietzc' -%}</p></td><td><p> {%- include person id='dietzc' -%}<br />
-Martin Horn</p></td><td><p><a href="https://github.com/orgs/knime-ip/people">List on GitHub</a></p></td><td><p>See <a href="/about/contributors">Contributors</a></p></td></tr><tr class="odd"><td><p> {% include logo content='CellProfiler' %}</p></td><td><p><strong><a href="/software/cellprofiler">CellProfiler</a></strong></p></td><td><p> {%- include person id='LeeKamentsky' -%}<br />
-Anne Carpenter</p></td><td><p> {%- include person id='0x00b1' -%}</p></td><td><p> {%- include person id='0x00b1' -%}</p></td><td><p><a href="https://github.com/orgs/CellProfiler/people">List on GitHub</a></p></td><td><p>See <a href="/about/contributors">Contributors</a></p></td></tr><tr class="even"><td><p> {% include logo content='OMERO' %}</p></td><td><p><strong><a href="/software/omero">OMERO</a></strong></p></td><td><p> {%- include person id='joshmoore' -%}<br />
-Jean-Marie Burel<br />
-Chris Allan<br />
-Jason Swedlow</p></td><td><p> {%- include person id='joshmoore' -%}<br />
-Jean-Marie Burel<br />
-Chris Allan</p></td><td><p><a href="https://github.com/orgs/openmicroscopy/people">List on GitHub</a></p></td><td><p><a href="https://github.com/orgs/openmicroscopy/people">List on GitHub</a></p></td><td><p><a href="https://github.com/openmicroscopy/openmicroscopy/graphs/contributors">Info on GitHub</a></p></td></tr><tr class="odd"><td><p> {% include logo content='Icy' %}</p></td><td><p><strong><a href="/software/icy">Icy</a></strong></p></td><td><p> Stephane Dallongeville<br />
-{%- include person id='Fab14' -%}<br />
-Jean-Christophe Olivo-Marin</p></td><td><p> Stephane Dallongeville<br />
-{%- include person id='Fab14' -%}</p></td><td><p> Stephane Dallongeville<br />
-{%- include person id='Fab14' -%}</p></td><td><p><a href="https://github.com/orgs/Icy-imaging/people">List on GitHub</a></p></td><td><p><a href="https://github.com/Icy-imaging/Icy-Kernel/graphs/contributors">Info on GitHub</a></p></td></tr><tr class="even"><td><p> {% include logo content='Alida' %}</p></td><td><p><strong><a href="/software/alida">Alida</a></strong></p></td><td><p>Stefan Posch<br />
-Birgit Möller</p></td><td><p>Stefan Posch<br />
-Birgit Möller</p></td><td><p>Stefan Posch<br />
-Birgit Möller</p></td><td><p><a href="https://github.com/orgs/alida-hub/people">List on GitHub</a></p></td><td><p><a href="https://github.com/alida-hub/alida/graphs/contributors">Info on GitHub</a></p></td></tr><tr class="odd"><td><p> {% include logo content='MiToBo' %}</p></td><td><p><strong><a href="/plugins/mitobo">MiToBo</a></strong></p></td><td><p>Stefan Posch<br />
-Birgit Möller</p></td><td><p>Stefan Posch<br />
-Birgit Möller</p></td><td><p>Stefan Posch<br />
-Birgit Möller</p></td><td><p><a href="https://github.com/orgs/mitobo-hub/people">List on GitHub</a></p></td><td><p><a href="https://github.com/mitobo-hub/mitobo/graphs/contributors">Info on GitHub</a></p></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td>
+        <p><strong>Logo</strong></p>
+      </td>
+      <td>
+        <p><strong>Project</strong></p>
+      </td>
+      <td>
+        <p><strong>Founders</strong></p>
+      </td>
+      <td>
+        <p><strong>Leads</strong></p>
+      </td>
+      <td>
+        <p><strong>Maintainers</strong></p>
+      </td>
+      <td>
+        <p><strong>Developers</strong></p>
+      </td>
+      <td>
+        <p><strong>Contributors</strong></p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>{% include logo content='SciJava' %}</p>
+      </td>
+      <td>
+        <p><strong><a href="SciJava">SciJava</a></strong></p>
+      </td>
+      <td>
+        <p>{%- include person id='joshmoore' -%}<br>
+        {%- include person id='ctrueden' -%}</p>
+      </td>
+      <td>
+        <p>{%- include person id='ctrueden' -%}</p>
+      </td>
+      <td>
+        <p>{%- include person id='ctrueden' -%}</p>
+      </td>
+      <td>
+        <p><a href="https://github.com/orgs/scijava/people">List on GitHub</a></p>
+      </td>
+      <td>
+        <p>See <a href="/about/contributors">Contributors</a></p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>{% include logo content='ImgLib2' %}</p>
+      </td>
+      <td>
+        <p><strong><a href="/imglib2">ImgLib2</a></strong></p>
+      </td>
+      <td>
+        <p>{%- include person id='axtimwalde' -%}<br>
+        {%- include person id='StephanPreibisch' -%}</p>
+      </td>
+      <td>
+        <p>{%- include person id='tpietzsch' -%}<sup>1</sup><br>
+        {%- include person id='StephanPreibisch' -%}<br>
+        {%- include person id='axtimwalde' -%}</p>
+      </td>
+      <td>
+        <p>{%- include person id='tpietzsch' -%}<br>
+        {%- include person id='ctrueden' -%}<br>
+        {%- include person id='StephanPreibisch' -%}<br>
+        {%- include person id='axtimwalde' -%}</p>
+      </td>
+      <td>
+        <p><a href="https://github.com/orgs/imglib/people">List on GitHub</a></p>
+      </td>
+      <td>
+        <p>See <a href="/about/contributors">Contributors</a></p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>{% include logo content='ImageJ1' %}</p>
+      </td>
+      <td>
+        <p><strong><a href="/software/imagej1">ImageJ1</a></strong></p>
+      </td>
+      <td>
+        <p>{%- include person id='rasband' -%}</p>
+      </td>
+      <td>
+        <p>{%- include person id='rasband' -%}</p>
+      </td>
+      <td>
+        <p>{%- include person id='rasband' -%}<br>
+        {%- include person id='ctrueden' -%}</p>
+      </td>
+      <td>
+        <p>{%- include person id='rasband' -%}</p>
+      </td>
+      <td>
+        <p>See <a href="/ij/notes.html">release notes</a></p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>{% include logo content='ImageJ2' %}</p>
+      </td>
+      <td>
+        <p><strong><a href="/software/imagej2">ImageJ2</a></strong></p>
+      </td>
+      <td>
+        <p>{%- include person id='ctrueden' -%}<br>
+        {%- include person id='eliceiri' -%}</p>
+      </td>
+      <td>
+        <p>{%- include person id='ctrueden' -%}</p>
+      </td>
+      <td>
+        <p>{%- include person id='ctrueden' -%}</p>
+      </td>
+      <td>
+        <p><a href="https://github.com/orgs/imagej/people">List on GitHub</a></p>
+      </td>
+      <td>
+        <p>See <a href="/about/contributors">Contributors</a></p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>{% include logo content='SCIFIO' %}</p>
+      </td>
+      <td>
+        <p><strong><a href="/software/scifio">SCIFIO</a></strong></p>
+      </td>
+      <td>
+        <p>{%- include person id='ctrueden' -%}<br>
+        {%- include person id='eliceiri' -%}<br>
+        {%- include person id='hinerm' -%}</p>
+      </td>
+      <td>
+        <p>{%- include person id='ctrueden' -%}</p>
+      </td>
+      <td>
+        <p>{%- include person id='ctrueden' -%}</p>
+      </td>
+      <td>
+        <p><a href="https://github.com/orgs/scijava/people">List on GitHub</a></p>
+      </td>
+      <td>
+        <p>See <a href="/about/contributors">Contributors</a></p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td rowspan="3" style="vertical-align: middle">
+        <p>{% include logo content='Fiji' %}</p>
+      </td>
+      <td>
+        <p><strong><a href="/fiji">Fiji</a></strong></p>
+      </td>
+      <td>
+        <p>{%- include person id='dscho' -%}<br>
+        {%- include person id='acardona' -%}<br>
+        {%- include person id='tomancak' -%}</p>
+      </td>
+      <td>
+        <p>{%- include person id='ctrueden' -%}</p>
+      </td>
+      <td>
+        <p>{%- include person id='ctrueden' -%}<br>
+        Gabriella Turek</p>
+      </td>
+      <td>
+        <p><a href="https://github.com/orgs/fiji/people">List on GitHub</a></p>
+      </td>
+      <td>
+        <p>See <a href="/about/contributors">Contributors</a></p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p><strong><a href="/plugins/bdv">BigDataViewer</a></strong></p>
+      </td>
+      <td>
+        <p>{%- include person id='tpietzsch' -%}</p>
+      </td>
+      <td>
+        <p>{%- include person id='tpietzsch' -%}</p>
+      </td>
+      <td>
+        <p>{%- include person id='tpietzsch' -%}<br>
+        {%- include person id='StephanPreibisch' -%}</p>
+      </td>
+      <td>
+        <p><a href="https://github.com/orgs/bigdataviewer/people">List on GitHub</a></p>
+      </td>
+      <td>
+        <p><a href="https://github.com/bigdataviewer/bigdataviewer-core/graphs/contributors">Info on GitHub</a></p>
+      </td>
+      <td></td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p><strong><a href="/plugins/trakem2">TrakEM2</a></strong></p>
+      </td>
+      <td>
+        <p>{%- include person id='acardona' -%}</p>
+      </td>
+      <td>
+        <p>{%- include person id='acardona' -%}</p>
+      </td>
+      <td>
+        <p>{%- include person id='acardona' -%}<br>
+        {%- include person id='axtimwalde' -%}<br>
+        {%- include person id='ctrueden' -%}</p>
+      </td>
+      <td>
+        <p><a href="https://github.com/orgs/trakem2/people">List on GitHub</a></p>
+      </td>
+      <td>
+        <p><a href="https://github.com/trakem2/plugins/trakem2/graphs/contributors">Info on GitHub</a></p>
+      </td>
+      <td></td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>{% include logo content='SLIM Curve' %}</p>
+      </td>
+      <td>
+        <p><strong><a href="/plugins/slim-curve">SLIM Curve</a></strong></p>
+      </td>
+      <td>
+        <p>Paul Barber<br>
+        {%- include person id='ctrueden' -%}</p>
+      </td>
+      <td>
+        <p>Paul Barber<sup>2</sup><br>
+        {%- include person id='ctrueden' -%}<sup>2</sup></p>
+      </td>
+      <td>
+        <p>{%- include person id='aksagar' -%}<br>
+        {%- include person id='ctrueden' -%}</p>
+      </td>
+      <td>
+        <p><a href="https://github.com/orgs/slim-curve/people">List on GitHub</a></p>
+      </td>
+      <td>
+        <p><a href="https://github.com/slim-curve/slim-plugin/graphs/contributors">Info on GitHub</a></p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>{% include logo content='Bio-Formats' %}</p>
+      </td>
+      <td>
+        <p><strong><a href="/formats/bio-formats">Bio-Formats</a></strong></p>
+      </td>
+      <td>
+        <p>{%- include person id='ctrueden' -%}<br>
+        {%- include person id='eliceiri' -%}</p>
+      </td>
+      <td>
+        <p>{%- include person id='melissalinkert' -%}</p>
+      </td>
+      <td>
+        <p>{%- include person id='melissalinkert' -%}<br>
+        {%- include person id='sbesson' -%}</p>
+      </td>
+      <td style="white-space: normal">
+        <p><a href="https://github.com/openmicroscopy/bioformats/graphs/contributors">List on GitHub</a></p>
+      </td>
+      <td>
+        <p>See <a href="http://www.openmicroscopy.org/site/about/ome-contributors">OME Contributors</a></p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>{% include logo content='KNIME' %}</p>
+      </td>
+      <td>
+        <p><strong><a href="/software/knime">KNIME Image Processing</a></strong></p>
+      </td>
+      <td>
+        <p>{%- include person id='dietzc' -%}<br>
+        Martin Horn</p>
+      </td>
+      <td>
+        <p>{%- include person id='dietzc' -%}</p>
+      </td>
+      <td>
+        <p>{%- include person id='dietzc' -%}<br>
+        Martin Horn</p>
+      </td>
+      <td>
+        <p><a href="https://github.com/orgs/knime-ip/people">List on GitHub</a></p>
+      </td>
+      <td>
+        <p>See <a href="/about/contributors">Contributors</a></p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>{% include logo content='CellProfiler' %}</p>
+      </td>
+      <td>
+        <p><strong><a href="/software/cellprofiler">CellProfiler</a></strong></p>
+      </td>
+      <td>
+        <p>{%- include person id='LeeKamentsky' -%}<br>
+        Anne Carpenter</p>
+      </td>
+      <td>
+        <p>{%- include person id='0x00b1' -%}</p>
+      </td>
+      <td>
+        <p>{%- include person id='0x00b1' -%}</p>
+      </td>
+      <td>
+        <p><a href="https://github.com/orgs/CellProfiler/people">List on GitHub</a></p>
+      </td>
+      <td>
+        <p>See <a href="/about/contributors">Contributors</a></p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>{% include logo content='OMERO' %}</p>
+      </td>
+      <td>
+        <p><strong><a href="/software/omero">OMERO</a></strong></p>
+      </td>
+      <td>
+        <p>{%- include person id='joshmoore' -%}<br>
+        Jean-Marie Burel<br>
+        Chris Allan<br>
+        Jason Swedlow</p>
+      </td>
+      <td>
+        <p>{%- include person id='joshmoore' -%}<br>
+        Jean-Marie Burel<br>
+        Chris Allan</p>
+      </td>
+      <td>
+        <p><a href="https://github.com/orgs/openmicroscopy/people">List on GitHub</a></p>
+      </td>
+      <td>
+        <p><a href="https://github.com/orgs/openmicroscopy/people">List on GitHub</a></p>
+      </td>
+      <td>
+        <p><a href="https://github.com/openmicroscopy/openmicroscopy/graphs/contributors">Info on GitHub</a></p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>{% include logo content='Icy' %}</p>
+      </td>
+      <td>
+        <p><strong><a href="/software/icy">Icy</a></strong></p>
+      </td>
+      <td>
+        <p>Stephane Dallongeville<br>
+        {%- include person id='Fab14' -%}<br>
+        Jean-Christophe Olivo-Marin</p>
+      </td>
+      <td>
+        <p>Stephane Dallongeville<br>
+        {%- include person id='Fab14' -%}</p>
+      </td>
+      <td>
+        <p>Stephane Dallongeville<br>
+        {%- include person id='Fab14' -%}</p>
+      </td>
+      <td>
+        <p><a href="https://github.com/orgs/Icy-imaging/people">List on GitHub</a></p>
+      </td>
+      <td>
+        <p><a href="https://github.com/Icy-imaging/Icy-Kernel/graphs/contributors">Info on GitHub</a></p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>{% include logo content='Alida' %}</p>
+      </td>
+      <td>
+        <p><strong><a href="/software/alida">Alida</a></strong></p>
+      </td>
+      <td>
+        <p>Stefan Posch<br>
+        Birgit Möller</p>
+      </td>
+      <td>
+        <p>Stefan Posch<br>
+        Birgit Möller</p>
+      </td>
+      <td>
+        <p>Stefan Posch<br>
+        Birgit Möller</p>
+      </td>
+      <td>
+        <p><a href="https://github.com/orgs/alida-hub/people">List on GitHub</a></p>
+      </td>
+      <td>
+        <p><a href="https://github.com/alida-hub/alida/graphs/contributors">Info on GitHub</a></p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>{% include logo content='MiToBo' %}</p>
+      </td>
+      <td>
+        <p><strong><a href="/plugins/mitobo">MiToBo</a></strong></p>
+      </td>
+      <td>
+        <p>Stefan Posch<br>
+        Birgit Möller</p>
+      </td>
+      <td>
+        <p>Stefan Posch<br>
+        Birgit Möller</p>
+      </td>
+      <td>
+        <p>Stefan Posch<br>
+        Birgit Möller</p>
+      </td>
+      <td>
+        <p><a href="https://github.com/orgs/mitobo-hub/people">List on GitHub</a></p>
+      </td>
+      <td>
+        <p><a href="https://github.com/mitobo-hub/mitobo/graphs/contributors">Info on GitHub</a></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 <sup>1</sup> Pietzsch leads on day to day issues. Pietzsch, Preibisch and Saalfeld vote on primary decisions, with Pietzsch's vote breaking ties.  
 <sup>2</sup> Barber leads development of the {% include github org='slim-curve' repo='slim-curve' label='SLIM Curve C library' %}; Rueden leads development of the {% include github org='slim-curve' repo='slim-plugin' label='SLIM Curve plugin for ImageJ' %}.

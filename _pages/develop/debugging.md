@@ -340,9 +340,508 @@ where you substitute *<property-name>* and *<property-values>* appropriately. Yo
 
 This list of Java 3D properties was salvaged from the now-defunct j3d.org website:
 
-<table><thead><tr class="header"><th><p>Property</p></th><th><p>Values</p></th><th><p>Java 3D version</p></th><th><p>Explanation</p></th></tr></thead><tbody><tr class="odd"><td><p>j3d.rend</p></td><td><p>"ogl" or "d3d"</p></td><td><p>1.3.2</p></td><td><p>Win32-only. Specifies which underlying rendering API should be used (thus allowing both Direct3D and OpenGL native DLLs to be installed on a singe machine. (default value "ogl")</p></td></tr><tr class="even"><td><p>j3d.deviceSampleTime</p></td><td><p>A time in millseconds</p></td><td><p>1.1</p></td><td><p>The sample time for non-blocking input devices (default value is 5ms).</p></td></tr><tr class="odd"><td><p>j3d.disablecompile</p></td><td><p>N/A</p></td><td><p>1.2</p></td><td><p>If set turns off the ability to internally .compile() the scenegraph.</p></td></tr><tr class="even"><td><p>j3d.docompaction</p></td><td><p>true or false</p></td><td><p>1.3</p></td><td><p>Default true. Controls whether or not objects are removed from the render cache when they haven't been visibile for a while. If it is disabled, they stay in the render cache from when they are first visible until they are removed from the scene graph.</p></td></tr><tr class="odd"><td><p>j3d.forceReleaseView</p></td><td><p>true or false</p></td><td><p>1.3.2</p></td><td><p>Default false. If this flag is set to true, the view is released after the Canvas3D is removed from the view. Can be used if you have memory leaks after disposing Canvas3D. Note: Setting this flag as true disables the bug fix 4267395 in View deactivate()</p></td></tr><tr class="even"><td><p>j3d.implicitAntialiasing</p></td><td><p>true or false</p></td><td><p>1.3</p></td><td><p>Default false. By default, full scene antialiasing is disabled if a multisampling pixel format (or visual) is chosen. To honor a display drivers multisample antialiasing setting (e.g. force scene antialiasing), set the implicitAntialiasing property to true. This causes Java3D to ignore its own scene antialias settings, letting the driver implicitly implement the feature</p></td></tr><tr class="odd"><td><p>j3d.optimizeForSpace</p></td><td><p>true or false</p></td><td><p>1.3</p></td><td><p>Default true Java3d only builds display list for by-copy geometry. Set to false will cause Java3d to build display list for by-ref geometry and infrequently changing geometry using more space, but having greater speed.</p></td></tr><tr class="even"><td><p>j3d.renderLock</p></td><td><p>true or false</p></td><td><p>1.3</p></td><td><p>JDK requires getting the JAWT_DrawingSurfaceInfo and lock the surface before Java3D render on the canvas. (see comment on jdk/include/jawt.h in the SDK) Default false causes Java3D to lock the surface before rendering and unlock it afterwards for onScreen rendering in the Renderer thread. For OffScreen rendering and for front/back buffer swapping the lock will not acquired. Setting the value to true will force Java3D lock the surface using the AWT mechanism before swap() and for offScreen rendering. This may be useful for some driver/OS to workaround problem. But in general the default should work.</p></td></tr><tr class="odd"><td><p>j3d.threadLimit</p></td><td><p>An integer</p></td><td><p>1.2</p></td><td><p>Controls how many threads may run in parallel regardless of how many cpu's the system has. Setting it to "1" will make the system act like a traditional OpenGL render loop. The default value is the number of CPUs in your machine + 1.</p></td></tr><tr class="even"><td><p>j3d.transparentOffScreen</p></td><td><p>true or false</p></td><td><p>1.3.2</p></td><td><p>Default false. If this flag is set to true the background of the off screen canvas is set to transparent.</p></td></tr><tr class="odd"><td><p>j3d.usePbuffer</p></td><td><p>true or false</p></td><td><p>1.3.2</p></td><td><p>Default true. If this flag is set to false pbuffer will not be use for off screen rendering.</p></td></tr><tr class="even"><td><p>j3d.viewFrustumCulling</p></td><td><p>true or false</p></td><td><p>1.3.2</p></td><td><p>Default true. If this flag is set to false, the renderer view frustum culling is turned off. Java 3D uses a 2 pass view culling. The first pass is a loose view culling of the spatial tree, and the second pass is a tight view frustum culling in the renderer before sending the geometry down to the low level graphics API. This property is to control the renderer view frustum culling, and it will not affect the first pass view culling.</p></td></tr><tr class="odd"><td><p>javax.media.j3d.compileStats</p></td><td><p>N/A</p></td><td><p>??</p></td><td><p>Output scenegraph compilation statistics</p></td></tr><tr class="even"><td><p>javax.media.j3d.compileVerbose</p></td><td><p>N/A</p></td><td><p>??</p></td><td><p>Output verbose message when compiling scenegraph</p></td></tr><tr class="odd"><td><p><br />
-OpenGL Only</p></td><td></td><td></td><td></td></tr><tr class="even"><td><p>j3d.backgroundtexture</p></td><td><p>true or false</p></td><td><p>1.3</p></td><td><p>Prior to Java3D 1.3 OGL version of Java3D used glDrawPixels() to render background, which is known to be very slow under Windows since most window driver did not accelerate the function. To workaround this performance problem current release uses textures for the backgrond under windows by default (glDrawPixels() is used as default under Solaris). Setting this flag to false will force Java3D fall back to use glDrawPixels() instead of texture when drawing background texture in case it provide better performance under some drivers.</p></td></tr><tr class="odd"><td><p>j3d.disableSeparateSpecular</p></td><td><p>true or false</p></td><td><p>1.2</p></td><td><p>Default true enables the use of specular highlights in textures when using OpenGL 1.2.</p></td></tr><tr class="even"><td><p>j3d.disableXinerama</p></td><td><p>true or false</p></td><td><p>1.3</p></td><td><p>Solaris version only. Allows major performance boost when using dual screen environments with the X11 Xinerama extension enabled. To disable this feature you need JDK1.4. Detailed information in the release notes.</p></td></tr><tr class="odd"><td><p>j3d.displaylist</p></td><td><p>true or false</p></td><td><p>1.2</p></td><td><p>Default true to use display lists (an OpenGL performance enhancing feature). False to disable for debugging.</p></td></tr><tr class="even"><td><p>j3d.g2ddrawpixel</p></td><td><p>true or false</p></td><td><p>1.1</p></td><td><p>If false, this will use texture mapping instead of glDrawPixel to flush the graphics2D to the screen. glDrawPixel is not accelerated on some older video cards (windows).</p></td></tr><tr class="odd"><td><p>j3d.sharedctx</p></td><td><p>true or false</p></td><td><p>1.2</p></td><td><p>Default true for Solaris and false for windows. Shared contexts are used in OpenGL for DisplayLists and Texture Objects to improve performance. However some drivers have bugs causing weird rendering artifacts. This can be used to disable their use to see if this is the problem.</p></td></tr><tr class="even"><td><p>j3d.sharedstereozbuffer</p></td><td><p>true or false</p></td><td><p>1.2</p></td><td><p>Some framebuffers only have one Z buffer and share this between the left and right eyes. This may be the reason why they don't have quad buffer but can still support stereo by setting this flag to true.</p></td></tr><tr class="odd"><td><p>j3d.usecombiners</p></td><td><p>true or false</p></td><td><p>1.3</p></td><td><p>Default false, uses the standard OpenGL all environment options. When set to true, it will make use of the Nvidia register combiner extensions to OpenGL for for Texture combine modes such as COMBINE_INTERPOLATE, COMBINE_DOT3. (ie GL_NV_register_combiners instead of standard OpenGL call glTexEnvi(GL_TEXTURE_ENV, ...)). It can be use in case like Dot3 texture when the driver does not support OpenGL extension GL_ARB_texture_env_dot3/GL_EXT_texture_env_dot3 but it supports the GL_NV_register_combiners extension instead.</p></td></tr><tr class="even"><td><p><br />
-DirectX only</p></td><td></td><td></td><td></td></tr><tr class="odd"><td><p>j3d.d3ddevice</p></td><td><p>"emulation" or "hardware" or "tnlhardware" or "reference"</p></td><td><p>1.2</p></td><td><p>Forces the software to use a particular mode for the underlying graphics accelaration. The reference option is only available if you have the Direct3D SDK installed (very unlikely).</p></td></tr><tr class="even"><td><p>j3d.d3ddriver</p></td><td><p>idx</p></td><td><p>1.2</p></td><td><p>For cards like Voodoo that run fullscreen 3D only. idx is the order DirectX enumerates its driver using DirectDrawEnumerateEx(). This number starts at 1. This will force Java3D to use the driver specified by the user (may fail if the driver is not compatible with display). The driver number and details can be found by using the j3d.debug property. For a typical setup of a 3D only card attach to a graphics card in a single monitor system, use idx=2. This will automatically toggle to fullscreen hardware accelerated mode since if the 3D card support 3D only.</p></td></tr><tr class="odd"><td><p>j3d.debug</p></td><td><p>true or false</p></td><td><p>1.1</p></td><td><p>Prints out startup and running information. Useful for finding out information about the underlying hardware setup.</p></td></tr><tr class="even"><td><p>j3d.fullscreen</p></td><td><p>PREFERRED or REQUIRED or UNNECESSARY</p></td><td><p>1.2</p></td><td><p>Option to force Java3D to run in fullscreen mode for video cards that will only use hardware accelaration when using fullscreen (non-windowed) mode, like the older Voodoo series.</p></td></tr><tr class="odd"><td><p>j3d.vertexbuffer</p></td><td><p>true or false</p></td><td><p>1.2</p></td><td><p>false to turn off the use of vertex buffers (a D3D performance enhancing feature equivalent to OpenGL display lists). Some drivers have implementation problems so it might be worth turning this off if you get crashes. Utility Classes</p></td></tr><tr class="even"><td><p>j3d.audiodevice</p></td><td><p>A quote string containing a class name</p></td><td><p>1.3.2</p></td><td><p>SimpleUniverse utility classes. Takes the name of a concrete subclass of com.sun.j3d.audioengines.AudioEngine3DL2 that will be constructed by Viewer.createAudioDevice(). The default value is null, which means that audio is disabled by default for applications that call Viewer.createAudioDevice(). j3d.configURL Unknown 1.3.1 Found in the ConfiguredUniverse class. Functionality unknown currently.</p></td></tr><tr class="odd"><td><p>j3d.io.ImageCompression</p></td><td><p>"None" or "GZIP" or "JPEG"</p></td><td><p>1.3.1</p></td><td><p>Found in the scenegraph I/O package. Functionality unknown currently.</p></td></tr><tr class="even"><td><p>j3d.stereo</p></td><td><p>PREFERRED or REQUIRED</p></td><td><p>1.1</p></td><td><p>Only used by SimpleUniverse. If you roll your own VirtualUniverse, this property is not used. Controls whether you want Java3D to definitely create stereo mode capable canvases or not</p></td></tr><tr class="odd"><td><p>sun.java2d.d3d</p></td><td><p>true or false</p></td><td><p>??</p></td><td><p>Default true. Enable Direct3D in Java 2D (not Java 3D, actually).</p></td></tr><tr class="even"><td><p>sun.java2d.ddoffscreen</p></td><td><p>true or false</p></td><td><p>??</p></td><td><p>Default true. Enable DirectDraw and Direct3D by Java 2D for off screen images, such as the Swing back buffer (not Java 3D, actually).</p></td></tr><tr class="odd"><td><p>sun.java2d.noddraw</p></td><td><p>true or false</p></td><td><p>??</p></td><td><p>Default false. Completely disable DirectDraw and Direct3D by Java 2D (not Java 3D, actually). This avoids any problems associated with use of these APIs and their respective drivers.</p></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <thead>
+    <tr class="header">
+      <th>
+        <p>Property</p>
+      </th>
+      <th>
+        <p>Values</p>
+      </th>
+      <th>
+        <p>Java 3D version</p>
+      </th>
+      <th>
+        <p>Explanation</p>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="odd">
+      <td>
+        <p>j3d.rend</p>
+      </td>
+      <td>
+        <p>"ogl" or "d3d"</p>
+      </td>
+      <td>
+        <p>1.3.2</p>
+      </td>
+      <td>
+        <p>Win32-only. Specifies which underlying rendering API should be used (thus allowing both Direct3D and OpenGL native DLLs to be installed on a singe machine. (default value "ogl")</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>j3d.deviceSampleTime</p>
+      </td>
+      <td>
+        <p>A time in millseconds</p>
+      </td>
+      <td>
+        <p>1.1</p>
+      </td>
+      <td>
+        <p>The sample time for non-blocking input devices (default value is 5ms).</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>j3d.disablecompile</p>
+      </td>
+      <td>
+        <p>N/A</p>
+      </td>
+      <td>
+        <p>1.2</p>
+      </td>
+      <td>
+        <p>If set turns off the ability to internally .compile() the scenegraph.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>j3d.docompaction</p>
+      </td>
+      <td>
+        <p>true or false</p>
+      </td>
+      <td>
+        <p>1.3</p>
+      </td>
+      <td>
+        <p>Default true. Controls whether or not objects are removed from the render cache when they haven't been visibile for a while. If it is disabled, they stay in the render cache from when they are first visible until they are removed from the scene graph.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>j3d.forceReleaseView</p>
+      </td>
+      <td>
+        <p>true or false</p>
+      </td>
+      <td>
+        <p>1.3.2</p>
+      </td>
+      <td>
+        <p>Default false. If this flag is set to true, the view is released after the Canvas3D is removed from the view. Can be used if you have memory leaks after disposing Canvas3D. Note: Setting this flag as true disables the bug fix 4267395 in View deactivate()</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>j3d.implicitAntialiasing</p>
+      </td>
+      <td>
+        <p>true or false</p>
+      </td>
+      <td>
+        <p>1.3</p>
+      </td>
+      <td>
+        <p>Default false. By default, full scene antialiasing is disabled if a multisampling pixel format (or visual) is chosen. To honor a display drivers multisample antialiasing setting (e.g. force scene antialiasing), set the implicitAntialiasing property to true. This causes Java3D to ignore its own scene antialias settings, letting the driver implicitly implement the feature</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>j3d.optimizeForSpace</p>
+      </td>
+      <td>
+        <p>true or false</p>
+      </td>
+      <td>
+        <p>1.3</p>
+      </td>
+      <td>
+        <p>Default true Java3d only builds display list for by-copy geometry. Set to false will cause Java3d to build display list for by-ref geometry and infrequently changing geometry using more space, but having greater speed.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>j3d.renderLock</p>
+      </td>
+      <td>
+        <p>true or false</p>
+      </td>
+      <td>
+        <p>1.3</p>
+      </td>
+      <td>
+        <p>JDK requires getting the JAWT_DrawingSurfaceInfo and lock the surface before Java3D render on the canvas. (see comment on jdk/include/jawt.h in the SDK) Default false causes Java3D to lock the surface before rendering and unlock it afterwards for onScreen rendering in the Renderer thread. For OffScreen rendering and for front/back buffer swapping the lock will not acquired. Setting the value to true will force Java3D lock the surface using the AWT mechanism before swap() and for offScreen rendering. This may be useful for some driver/OS to workaround problem. But in general the default should work.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>j3d.threadLimit</p>
+      </td>
+      <td>
+        <p>An integer</p>
+      </td>
+      <td>
+        <p>1.2</p>
+      </td>
+      <td>
+        <p>Controls how many threads may run in parallel regardless of how many cpu's the system has. Setting it to "1" will make the system act like a traditional OpenGL render loop. The default value is the number of CPUs in your machine + 1.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>j3d.transparentOffScreen</p>
+      </td>
+      <td>
+        <p>true or false</p>
+      </td>
+      <td>
+        <p>1.3.2</p>
+      </td>
+      <td>
+        <p>Default false. If this flag is set to true the background of the off screen canvas is set to transparent.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>j3d.usePbuffer</p>
+      </td>
+      <td>
+        <p>true or false</p>
+      </td>
+      <td>
+        <p>1.3.2</p>
+      </td>
+      <td>
+        <p>Default true. If this flag is set to false pbuffer will not be use for off screen rendering.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>j3d.viewFrustumCulling</p>
+      </td>
+      <td>
+        <p>true or false</p>
+      </td>
+      <td>
+        <p>1.3.2</p>
+      </td>
+      <td>
+        <p>Default true. If this flag is set to false, the renderer view frustum culling is turned off. Java 3D uses a 2 pass view culling. The first pass is a loose view culling of the spatial tree, and the second pass is a tight view frustum culling in the renderer before sending the geometry down to the low level graphics API. This property is to control the renderer view frustum culling, and it will not affect the first pass view culling.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>javax.media.j3d.compileStats</p>
+      </td>
+      <td>
+        <p>N/A</p>
+      </td>
+      <td>
+        <p>??</p>
+      </td>
+      <td>
+        <p>Output scenegraph compilation statistics</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>javax.media.j3d.compileVerbose</p>
+      </td>
+      <td>
+        <p>N/A</p>
+      </td>
+      <td>
+        <p>??</p>
+      </td>
+      <td>
+        <p>Output verbose message when compiling scenegraph</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p><br>
+        OpenGL Only</p>
+      </td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>j3d.backgroundtexture</p>
+      </td>
+      <td>
+        <p>true or false</p>
+      </td>
+      <td>
+        <p>1.3</p>
+      </td>
+      <td>
+        <p>Prior to Java3D 1.3 OGL version of Java3D used glDrawPixels() to render background, which is known to be very slow under Windows since most window driver did not accelerate the function. To workaround this performance problem current release uses textures for the backgrond under windows by default (glDrawPixels() is used as default under Solaris). Setting this flag to false will force Java3D fall back to use glDrawPixels() instead of texture when drawing background texture in case it provide better performance under some drivers.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>j3d.disableSeparateSpecular</p>
+      </td>
+      <td>
+        <p>true or false</p>
+      </td>
+      <td>
+        <p>1.2</p>
+      </td>
+      <td>
+        <p>Default true enables the use of specular highlights in textures when using OpenGL 1.2.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>j3d.disableXinerama</p>
+      </td>
+      <td>
+        <p>true or false</p>
+      </td>
+      <td>
+        <p>1.3</p>
+      </td>
+      <td>
+        <p>Solaris version only. Allows major performance boost when using dual screen environments with the X11 Xinerama extension enabled. To disable this feature you need JDK1.4. Detailed information in the release notes.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>j3d.displaylist</p>
+      </td>
+      <td>
+        <p>true or false</p>
+      </td>
+      <td>
+        <p>1.2</p>
+      </td>
+      <td>
+        <p>Default true to use display lists (an OpenGL performance enhancing feature). False to disable for debugging.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>j3d.g2ddrawpixel</p>
+      </td>
+      <td>
+        <p>true or false</p>
+      </td>
+      <td>
+        <p>1.1</p>
+      </td>
+      <td>
+        <p>If false, this will use texture mapping instead of glDrawPixel to flush the graphics2D to the screen. glDrawPixel is not accelerated on some older video cards (windows).</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>j3d.sharedctx</p>
+      </td>
+      <td>
+        <p>true or false</p>
+      </td>
+      <td>
+        <p>1.2</p>
+      </td>
+      <td>
+        <p>Default true for Solaris and false for windows. Shared contexts are used in OpenGL for DisplayLists and Texture Objects to improve performance. However some drivers have bugs causing weird rendering artifacts. This can be used to disable their use to see if this is the problem.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>j3d.sharedstereozbuffer</p>
+      </td>
+      <td>
+        <p>true or false</p>
+      </td>
+      <td>
+        <p>1.2</p>
+      </td>
+      <td>
+        <p>Some framebuffers only have one Z buffer and share this between the left and right eyes. This may be the reason why they don't have quad buffer but can still support stereo by setting this flag to true.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>j3d.usecombiners</p>
+      </td>
+      <td>
+        <p>true or false</p>
+      </td>
+      <td>
+        <p>1.3</p>
+      </td>
+      <td>
+        <p>Default false, uses the standard OpenGL all environment options. When set to true, it will make use of the Nvidia register combiner extensions to OpenGL for for Texture combine modes such as COMBINE_INTERPOLATE, COMBINE_DOT3. (ie GL_NV_register_combiners instead of standard OpenGL call glTexEnvi(GL_TEXTURE_ENV, ...)). It can be use in case like Dot3 texture when the driver does not support OpenGL extension GL_ARB_texture_env_dot3/GL_EXT_texture_env_dot3 but it supports the GL_NV_register_combiners extension instead.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p><br>
+        DirectX only</p>
+      </td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>j3d.d3ddevice</p>
+      </td>
+      <td>
+        <p>"emulation" or "hardware" or "tnlhardware" or "reference"</p>
+      </td>
+      <td>
+        <p>1.2</p>
+      </td>
+      <td>
+        <p>Forces the software to use a particular mode for the underlying graphics accelaration. The reference option is only available if you have the Direct3D SDK installed (very unlikely).</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>j3d.d3ddriver</p>
+      </td>
+      <td>
+        <p>idx</p>
+      </td>
+      <td>
+        <p>1.2</p>
+      </td>
+      <td>
+        <p>For cards like Voodoo that run fullscreen 3D only. idx is the order DirectX enumerates its driver using DirectDrawEnumerateEx(). This number starts at 1. This will force Java3D to use the driver specified by the user (may fail if the driver is not compatible with display). The driver number and details can be found by using the j3d.debug property. For a typical setup of a 3D only card attach to a graphics card in a single monitor system, use idx=2. This will automatically toggle to fullscreen hardware accelerated mode since if the 3D card support 3D only.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>j3d.debug</p>
+      </td>
+      <td>
+        <p>true or false</p>
+      </td>
+      <td>
+        <p>1.1</p>
+      </td>
+      <td>
+        <p>Prints out startup and running information. Useful for finding out information about the underlying hardware setup.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>j3d.fullscreen</p>
+      </td>
+      <td>
+        <p>PREFERRED or REQUIRED or UNNECESSARY</p>
+      </td>
+      <td>
+        <p>1.2</p>
+      </td>
+      <td>
+        <p>Option to force Java3D to run in fullscreen mode for video cards that will only use hardware accelaration when using fullscreen (non-windowed) mode, like the older Voodoo series.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>j3d.vertexbuffer</p>
+      </td>
+      <td>
+        <p>true or false</p>
+      </td>
+      <td>
+        <p>1.2</p>
+      </td>
+      <td>
+        <p>false to turn off the use of vertex buffers (a D3D performance enhancing feature equivalent to OpenGL display lists). Some drivers have implementation problems so it might be worth turning this off if you get crashes. Utility Classes</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>j3d.audiodevice</p>
+      </td>
+      <td>
+        <p>A quote string containing a class name</p>
+      </td>
+      <td>
+        <p>1.3.2</p>
+      </td>
+      <td>
+        <p>SimpleUniverse utility classes. Takes the name of a concrete subclass of com.sun.j3d.audioengines.AudioEngine3DL2 that will be constructed by Viewer.createAudioDevice(). The default value is null, which means that audio is disabled by default for applications that call Viewer.createAudioDevice(). j3d.configURL Unknown 1.3.1 Found in the ConfiguredUniverse class. Functionality unknown currently.</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>j3d.io.ImageCompression</p>
+      </td>
+      <td>
+        <p>"None" or "GZIP" or "JPEG"</p>
+      </td>
+      <td>
+        <p>1.3.1</p>
+      </td>
+      <td>
+        <p>Found in the scenegraph I/O package. Functionality unknown currently.</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>j3d.stereo</p>
+      </td>
+      <td>
+        <p>PREFERRED or REQUIRED</p>
+      </td>
+      <td>
+        <p>1.1</p>
+      </td>
+      <td>
+        <p>Only used by SimpleUniverse. If you roll your own VirtualUniverse, this property is not used. Controls whether you want Java3D to definitely create stereo mode capable canvases or not</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>sun.java2d.d3d</p>
+      </td>
+      <td>
+        <p>true or false</p>
+      </td>
+      <td>
+        <p>??</p>
+      </td>
+      <td>
+        <p>Default true. Enable Direct3D in Java 2D (not Java 3D, actually).</p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>sun.java2d.ddoffscreen</p>
+      </td>
+      <td>
+        <p>true or false</p>
+      </td>
+      <td>
+        <p>??</p>
+      </td>
+      <td>
+        <p>Default true. Enable DirectDraw and Direct3D by Java 2D for off screen images, such as the Swing back buffer (not Java 3D, actually).</p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>sun.java2d.noddraw</p>
+      </td>
+      <td>
+        <p>true or false</p>
+      </td>
+      <td>
+        <p>??</p>
+      </td>
+      <td>
+        <p>Default false. Completely disable DirectDraw and Direct3D by Java 2D (not Java 3D, actually). This avoids any problems associated with use of these APIs and their respective drivers.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+  {:/}
 
 # Interactive debugging using a shared Terminal session
 

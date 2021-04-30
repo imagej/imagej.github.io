@@ -498,7 +498,20 @@ To create a script with the above code, copy paste it into a file with an unders
 
 Suppose for example that, using a [Ball object](http://t2.ini.uzh.ch/trakem2_manual.html#balls), you have clicked on each vesicle of a synaptic terminal. And that, using a [profile list](http://t2.ini.uzh.ch/trakem2_manual.html#profiles), you have traced the surface area of a synapse.
 
-<table><tbody><tr class="odd"><td><p>style="vertical-align:top" |{% include thumbnail src='/media/Synaptic-surface-and-vesicles.jpg' title='313|3D view of a synaptic surface and its vesicles'%}</p></td><td><p>style="vertical-align:top" |{% include thumbnail src='/media/Synaptic-surface-and-vesicles-measurements.png' title='323|Synaptic vesicle measurements of the minimal distance from each vesicle to the synaptic surface'%}</p></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td>
+        <p>style="vertical-align:top" |{% include thumbnail src='/media/Synaptic-surface-and-vesicles.jpg' title='313|3D view of a synaptic surface and its vesicles'%}</p>
+      </td>
+      <td>
+        <p>style="vertical-align:top" |{% include thumbnail src='/media/Synaptic-surface-and-vesicles-measurements.png' title='323|Synaptic vesicle measurements of the minimal distance from each vesicle to the synaptic surface'%}</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 Using the following script, we generate a surface from the profile list, and then measure, for each synaptic vesicle, its minimal distance to the synaptic surface.
 

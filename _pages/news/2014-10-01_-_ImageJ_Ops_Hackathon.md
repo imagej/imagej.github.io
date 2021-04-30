@@ -26,7 +26,55 @@ This hackathon focused on the [ImageJ Ops](/libs/imagej-ops) library, adding sup
 
 All thresholding algorithms from [ImageJ 1.x](/software/imagej1) have been ported to Ops. Available thresholding methods now include:
 
-<table><tbody><tr class="odd"><td style="vertical-align: top"><ul><li>huang</li><li>ij1</li><li>intermodes</li></ul></td><td><ul><li>isodata</li><li>li</li><li>maxEntropy</li></ul></td><td><ul><li>maxlikelihood</li><li>mean</li><li>minerror</li></ul></td><td><ul><li>minimum</li><li>moments</li><li>otsu</li></ul></td><td><ul><li>percentile</li><li>renyientropy</li><li>shanbhag</li></ul></td><td><ul><li>triangle</li><li>yen</li></ul></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td style="vertical-align: top">
+        <ul>
+          <li>huang</li>
+          <li>ij1</li>
+          <li>intermodes</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>isodata</li>
+          <li>li</li>
+          <li>maxEntropy</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>maxlikelihood</li>
+          <li>mean</li>
+          <li>minerror</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>minimum</li>
+          <li>moments</li>
+          <li>otsu</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>percentile</li>
+          <li>renyientropy</li>
+          <li>shanbhag</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>triangle</li>
+          <li>yen</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 ## Progress and future directions
 

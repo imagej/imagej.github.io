@@ -18,6 +18,16 @@ Choose one of the color blindness modes in the dialog, then press OK:
 
 Here's how the results look like when applied to the *Clown* sample image:
 
-<table><tbody><tr class="odd"><td><p>style="vertical-align:top" |{% include thumbnail src='/media/Simulate Color Blindness Results.png' title='Simulate Color Blindness: overview of the nine different modes.'%}</p></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td>
+        <p>style="vertical-align:top" |{% include thumbnail src='/media/Simulate Color Blindness Results.png' title='Simulate Color Blindness: overview of the nine different modes.'%}</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
   

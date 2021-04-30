@@ -76,7 +76,36 @@ Multi-point selection:A Multi-point selection (multi-point counter) in which the
 
 Press *More» Cf. Segmentation* to visually confirm which phase of the segmented image will be sampled. This command highlights foreground from background pixels and is particularly useful when analyzing black and white (binary) images or when using the *B&W* lookup table in the Threshold Widget ({% include bc path="Image | Adjust | Threshold..." %} {% include key content='press\|Shift\|T' %}). *Cf. Segmentation* allows you to ensure that you are measuring neuronal processes and not the interstitial spaces between them. Here is an example using an axonal arbor of a Drosophila olfactory neuron from the [DIADEM](http://diademchallenge.org) dataset[3]:
 
-<table><tbody><tr class="odd"><td><center><p><span style="display:inline-block;text-align:center;width:230px">Segmented image</span> <span style="display:inline-block;text-align:center;width:230px"><em>Cf. Segmentation output</em></span> <span style="display:inline-block;text-align:center;width:230px"><em>Intersections mask</em></span></p></center></td></tr><tr class="even"><td><center><figure><img src="/media/CfSegmentation.png" width="700" /></figure></center></td></tr><tr class="odd"><td><center><p><strong>Top row:</strong> Image properly segmented: Arbor is sampled. <strong>Bottom row:</strong> Aberrant segmentation (inverted image): Background is sampled.</p></center><p>Note the reversal of <em><a href="#cf-segmentation">Cf. Segmentation</a> output</em> and how the <em><a href="#output-options">intersections mask</a></em> no longer decorates the axonal processes but the interstitial spaces between them. The consequences of the phase inversion are twofold: 1) the program oversamples (cf. hue ramps on upper left of <em>Intersections mask</em>) and 2) the program detects artifacts induced by the edges of the image (cf. top-right and bottom-right corners of mask where intersections are sampled in the absence of real axons at those locations). Also, note that the initial black and white image would <em>look the same</em> under an inverted lookup table ({% include bc path='Image|Lookup Tables|Invert LUT' color='white'%}).</p></td></tr></tbody></table>
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr class="odd">
+      <td>
+        <center>
+          <p><span style="display:inline-block;text-align:center;width:230px">Segmented image</span> <span style="display:inline-block;text-align:center;width:230px"><em>Cf. Segmentation output</em></span> <span style="display:inline-block;text-align:center;width:230px"><em>Intersections mask</em></span></p>
+        </center>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <center>
+          <figure>
+            <img src="/media/CfSegmentation.png" width="700">
+          </figure>
+        </center>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <center>
+          <p><strong>Top row:</strong> Image properly segmented: Arbor is sampled. <strong>Bottom row:</strong> Aberrant segmentation (inverted image): Background is sampled.</p>
+        </center>
+        <p>Note the reversal of <em><a href="#cf-segmentation">Cf. Segmentation</a> output</em> and how the <em><a href="#output-options">intersections mask</a></em> no longer decorates the axonal processes but the interstitial spaces between them. The consequences of the phase inversion are twofold: 1) the program oversamples (cf. hue ramps on upper left of <em>Intersections mask</em>) and 2) the program detects artifacts induced by the edges of the image (cf. top-right and bottom-right corners of mask where intersections are sampled in the absence of real axons at those locations). Also, note that the initial black and white image would <em>look the same</em> under an inverted lookup table ({% include bc path='Image|Lookup Tables|Invert LUT' color='white'%}).</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
 {%- capture binary-tip -%}
 With binary images, *Sholl Analysis* treats zero intensities as the background, independently of the image lookup table or the state of the *Black background option* in {% include bc path="Process | Binary | Options..." %}. As with any other [ImageJ routine](/ij/docs/guide/146-29.html#infobox:blackBackground) , confusing background with foreground pixels will lead to aberrant results, including: 1) overestimation of branches and 2) artifacts at distances intersecting the boundaries of the image canvas.
@@ -195,15 +224,99 @@ Please keep in mind that this is just a refinement feature, and you should not e
 
 <span id="MethodsTable"></span>
 
-<table><thead><tr class="header"><th><p> </p></th><th><p>Method</p></th><th><p>Fit</p></th><th><p>Description</p></th></tr></thead><tbody><tr class="odd"><td><p><span id="eq1">(1)</span>  </p></td><td><p>Linear</p></td><td><p>   <i>N</i> = a + br + cr<sup>2</sup> + dr<sup>3</sup> + er<sup>4</sup> + fr<sup>5</sup> + ... + xr<sup>n</sup>  </p></td><td><p>   <br />
-Outputs a <em>N vs Distance</em> profile. Data is fitted to a polynomial function<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. <a href="#CriticalRadius">Critical radius</a>, <a href="#CriticalValue">Critical value</a> and <a href="#MeanValueOfFunction">Mean value of function</a> are calculated<br />
- </p></td></tr><tr class="even"><td><p><span id="eq2">(2)</span>  </p></td><td><p>Linear-norm</p></td><td><p>   <em>N/S</em> = a r<sup>b</sup></p></td><td><p> <br />
-Outputs a <i>N/S vs Distance</i> profile. Points are fitted to a power function. It is an intermediate representation of the data that can be used to gauge the choice of <a href="#Normalizer">normalizer</a>. Once plotted under a logarithmic scale the Linear-norm curve is similar to the Semi-log profile<br />
- </p></td></tr><tr class="odd"><td><p><span id="eq3">(3)</span>  </p></td><td><p>Semi-log</p></td><td><p>   log(<em>N/S</em>) = -k r + m</p></td><td><p> <br />
-Outputs a <i>log(N/S) vs Distance</i> profile. A linear regression is fitted to the sampled data. The <a href="#ShollDecay">Sholl regression coefficient</a> (<em>k</em>) is calculated<br />
- </p></td></tr><tr class="even"><td><p><span id="eq4">(4)</span>  </p></td><td><p>Log-log</p></td><td><p>   log(<em>N/S</em>) = -k × log(r) + m</p></td><td><p> <br />
-Outputs a <i>log(N/S) vs log(Distance)</i> profile. Data is also fitted to a straight line. This is an alternative approach<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> of obtaining a relevant <a href="#ShollDecay">regression coefficient</a>, when the Semi-log method returns a poor fit<br />
- </p></td></tr><tr class="odd"><td></td><td></td><td></td><td></td></tr></tbody></table><section class="footnotes" role="doc-endnotes"><hr /><ol><li id="fn1" role="doc-endnote"></li><li id="fn2" role="doc-endnote"></li></ol></section>
+{::nomarkdown}
+<table>
+  <thead>
+    <tr class="header">
+      <th></th>
+      <th>
+        <p>Method</p>
+      </th>
+      <th>
+        <p>Fit</p>
+      </th>
+      <th>
+        <p>Description</p>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="odd">
+      <td>
+        <p><span id="eq1">(1)</span></p>
+      </td>
+      <td>
+        <p>Linear</p>
+      </td>
+      <td>
+        <p><i>N</i> = a + br + cr<sup>2</sup> + dr<sup>3</sup> + er<sup>4</sup> + fr<sup>5</sup> + ... + xr<sup>n</sup></p>
+      </td>
+      <td>
+        <p><br>
+        Outputs a <em>N vs Distance</em> profile. Data is fitted to a polynomial function<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. <a href="#CriticalRadius">Critical radius</a>, <a href="#CriticalValue">Critical value</a> and <a href="#MeanValueOfFunction">Mean value of function</a> are calculated<br></p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p><span id="eq2">(2)</span></p>
+      </td>
+      <td>
+        <p>Linear-norm</p>
+      </td>
+      <td>
+        <p><em>N/S</em> = a r<sup>b</sup></p>
+      </td>
+      <td>
+        <p><br>
+        Outputs a <i>N/S vs Distance</i> profile. Points are fitted to a power function. It is an intermediate representation of the data that can be used to gauge the choice of <a href="#Normalizer">normalizer</a>. Once plotted under a logarithmic scale the Linear-norm curve is similar to the Semi-log profile<br></p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p><span id="eq3">(3)</span></p>
+      </td>
+      <td>
+        <p>Semi-log</p>
+      </td>
+      <td>
+        <p>log(<em>N/S</em>) = -k r + m</p>
+      </td>
+      <td>
+        <p><br>
+        Outputs a <i>log(N/S) vs Distance</i> profile. A linear regression is fitted to the sampled data. The <a href="#ShollDecay">Sholl regression coefficient</a> (<em>k</em>) is calculated<br></p>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p><span id="eq4">(4)</span></p>
+      </td>
+      <td>
+        <p>Log-log</p>
+      </td>
+      <td>
+        <p>log(<em>N/S</em>) = -k × log(r) + m</p>
+      </td>
+      <td>
+        <p><br>
+        Outputs a <i>log(N/S) vs log(Distance)</i> profile. Data is also fitted to a straight line. This is an alternative approach<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> of obtaining a relevant <a href="#ShollDecay">regression coefficient</a>, when the Semi-log method returns a poor fit<br></p>
+      </td>
+    </tr>
+    <tr class="odd">
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+{:/}
+    <ol>
+      <li id="fn1" role="doc-endnote"></li>
+      <li id="fn2" role="doc-endnote"></li>
+    </ol>
+  </section>
+</body>
+</html>
 
 <span style="display: inline-block; width: 25px">***N***</span> For 2D images, the <u>N</u>umber of clusters of pixels (8–connected) intersecting the circumference of radius *r*  
 <span style="display: inline-block; width: 25px"> </span> For 3D images, the <u>N</u>umber of clusters of voxels (26-connected) intersecting the surface of the sphere of radius *r*
