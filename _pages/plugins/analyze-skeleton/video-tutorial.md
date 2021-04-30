@@ -4,9 +4,7 @@ title: Skeleton analysis video tutorial
 categories: Tutorials
 ---
 
-TODO FLASH WIDGET
-
-This video tutorial was made by Javier Cabrera-Chaves and edited by {%- include person id='iarganda' -%} using [Wink 1.5 for linux](http://www.debugmode.com/wink/). It has since been recorded via the screen capture below, as Adobe Flash is now defunct.
+This video tutorial was made by Javier Cabrera-Chaves and edited by {%- include person id='iarganda' -%} using [Wink 1.5 for linux](http://www.debugmode.com/wink/), then converted from Adobe Flash to a plain video by {% include person id='smgriffin2' %}.
 
 {% include youtube url="https://www.youtube.com/embed/_EnLX5uJb1M" %}
 

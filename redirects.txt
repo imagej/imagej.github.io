@@ -1532,7 +1532,7 @@ Simple_Neurite_Tracer:_Wishlist :: plugins/simple-neurite-tracer/wishlist
 Simulate_Color_Blindness :: plugins/simulate-color-blindness
 Sintered_Alumina_(2.6MB) :: plugins/topoj
 Siox_Segmentation :: plugins/siox
-Skeleton_analysis_video_tutorial :: TODO
+Skeleton_analysis_video_tutorial :: plugins/analyze-skeleton/video-tutorial
 Skeletonise :: plugins/bonej#skeletonise
 Skeletonize3D :: plugins/skeletonize3d
 Skeletonize_(2D/3D) :: plugins/skeletonize3d
