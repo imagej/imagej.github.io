@@ -7,7 +7,7 @@ check_unfinished() {
   grep -q TODO "$1" && echo "$2 [UNFINISHED]" || echo "$2"
 }
 
-matches=$(git grep -ohI '{% *include  *[a-z0-9-]*' | sed 's/.* //' | sort)
+matches=$(git grep -ohI '{%-\? *include  *[a-z0-9-]*' | sed 's/.* //' | sort)
 used=$(echo "$matches" | uniq)
 
 # Check for usage of includes that don't exist.
