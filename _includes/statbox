@@ -165,6 +165,12 @@ the javascript only populates fields when they are empty.
 {% endcapture -%}
 {%- endif -%}
 
+{%- if forum -%}
+{%- capture forum-url -%}
+https://forum.image.sc/u/{{forum}}
+{%- endcapture -%}
+{%- endif -%}
+
 {%- if github or stackoverflow or openhub -%}
 {%- capture person-developer -%}
 <ul>
@@ -236,10 +242,10 @@ refreshComponent();
 {%- if team -%}                       {%- include statbox-row id="component-team"                                           value=team            -%} {%- endif -%}
 
 {%- comment -%} =============== PERSON INFO ================ {%- endcomment -%}
-{%- if forum              -%} {%- include statbox-row id="person-forum"       label="Image.sc Forum" value=forum              -%} {%- endif -%}
-{%- if person-developer   -%} {%- include statbox-row id="person-developer"   label="Developer"      value=person-developer   -%} {%- endif -%}
-{%- if person-social      -%} {%- include statbox-row id="person-social"      label="Social"         value=person-social      -%} {%- endif -%}
-{%- if person-publication -%} {%- include statbox-row id="person-publication" label="Publication"    value=person-publication -%} {%- endif -%}
+{%- if forum              -%} {%- include statbox-row id="person-forum"       label="Image.sc Forum" value=forum url=forum-url -%} {%- endif -%}
+{%- if person-developer   -%} {%- include statbox-row id="person-developer"   label="Developer"      value=person-developer    -%} {%- endif -%}
+{%- if person-social      -%} {%- include statbox-row id="person-social"      label="Social"         value=person-social       -%} {%- endif -%}
+{%- if person-publication -%} {%- include statbox-row id="person-publication" label="Publication"    value=person-publication  -%} {%- endif -%}
 
 {%- comment -%} ================== FOOTER ================== {%- endcomment -%}
 </table>
