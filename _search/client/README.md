@@ -22,3 +22,8 @@ yarn start
 ```
 
 Open http://localhost:3000 to see the demo app.
+
+## Deploying to production
+
+If you make changes to this search app, and want to deploy them to the website,
+run `_bin/build-search-app.sh` to regenerate `assets/js/search.js`.
