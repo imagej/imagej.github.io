@@ -3,12 +3,19 @@
 ---
 
 $logoSize: 36px;
-$searchBarPadding: 5px;
 $topBarHeight: $logoSize;
+$shadowSize: 4px;
+
+$searchBarPadding: 5px;
 $hitTitleWidth: 200px;
 $hitIconSize: 36px;
 $hitPadding: 5px;
-$shadowSize: 4px;
+
+$hamPadY: 3px;
+$hamPadX: 5px;
+$hamThickness: 3px;
+$hamMenuWidth: 250px;
+$hamMenuEdge: 20px;
 
 #top-bar {
   background-color: #3f454b;
@@ -127,45 +134,46 @@ $shadowSize: 4px;
 /*
  * Made by Erik Terwan
  * 24th of November 2015
- * MIT License
+ * https://codepen.io/erikterwan/pen/EVzeRP
  *
+ * MIT License
  *
  * If you are thinking of using this in
  * production code, beware of the browser
  * prefixes.
  */
 
-#menuToggle {
-	padding-left: 0.7em;
-	padding-top: .7em;
-	padding-bottom: .7em;
+#ham-toggle {
+	display: block;
+	position: absolute;
+	top: 8px;
+	left: 6px;
+
 	z-index: 1;
 
 	-webkit-user-select: none;
 	user-select: none;
-
-	background-color: #3f454b;
-	overflow: hidden;
 }
 
-#menuToggle a {
+#ham-toggle a {
 	text-decoration: none;
 	color: #232323;
+
 	transition: color 0.3s ease;
 }
 
-#menuToggle a:hover {
+#ham-toggle a:hover {
 	color: tomato;
 }
 
 
-#menuToggle input {
+#ham-toggle input {
 	display: block;
 	width: 40px;
 	height: 32px;
 	position: absolute;
-	top: 7px;
-	left: 5px;
+	top: -7px;
+	left: -5px;
 
 	cursor: pointer;
 
@@ -178,11 +186,11 @@ $shadowSize: 4px;
 /*
  * Just a quick hamburger
  */
-#menuToggle span {
+#ham-toggle span {
 	display: block;
-	width: 36px;
-	height: 4px;
-	margin-bottom: 6px;
+	width: 25px;
+	height: 3px;
+	margin-bottom: 5px;
 	position: relative;
 
 	background: #cdcdcd;
@@ -198,11 +206,11 @@ $shadowSize: 4px;
 	opacity 0.55s ease;
 }
 
-#menuToggle span:first-child {
+#ham-toggle span:first-child {
 	transform-origin: 0% 0%;
 }
 
-#menuToggle span:nth-last-child(2) {
+#ham-toggle span:nth-last-child(2) {
 	transform-origin: 0% 100%;
 }
 
@@ -210,16 +218,16 @@ $shadowSize: 4px;
  * Transform all the slices of hamburger
  * into a crossmark.
  */
-#menuToggle input:checked ~ span {
+#ham-toggle input:checked ~ span {
 	opacity: 1;
-	transform: rotate(45deg) translate(-2px, -1px);
+	transform: rotate(45deg) translate(6px, -2px) scale(0.7, 0.7);
 	background: #232323;
 }
 
 /*
  * But let's hide the middle one.
  */
-#menuToggle input:checked ~ span:nth-last-child(3) {
+#ham-toggle input:checked ~ span:nth-last-child(3) {
 	opacity: 0;
 	transform: rotate(0deg) scale(0.2, 0.2);
 }
@@ -227,22 +235,22 @@ $shadowSize: 4px;
 /*
  * Ohyeah and the last one should go the other direction
  */
-#menuToggle input:checked ~ span:nth-last-child(2) {
-	transform: rotate(-45deg) translate(0, -1px);
+#ham-toggle input:checked ~ span:nth-last-child(2) {
+	transform: rotate(-45deg) translate(8px, 2px) scale(0.7, 0.7);
 }
 
 /*
  * Make this absolute positioned
  * at the top left of the screen
  */
-#menu-ham {
+#ham-menu {
 	position: absolute;
-	width: 300px;
+	width: $hamMenuWidth;
 	margin: -100px 0 0 -50px;
-	padding: 50px;
-	padding-top: 125px;
+	padding: 80px 5px 5px 50px;
+	box-shadow: 1px 1px 6px #444;
 
-	background: #ededed;
+	background: #eee;
 	list-style-type: none;
 	-webkit-font-smoothing: antialiased;
 	/* to stop flickering of text in safari */
@@ -253,46 +261,18 @@ $shadowSize: 4px;
 	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
-#menu-ham li {
-	list-style-type: none;
-	padding: 10px 0;
-	font-size: 22px;
-}
-
-#menu-ham ul {
-	margin: 0;
-	border-left: 1px solid gray;
-	list-style-type: none;
-}
-
 /*
  * And let's slide it in from the left
  */
-#menuToggle input:checked ~ ul {
+#ham-toggle input:checked ~ ul
+{
 	transform: none;
 }
 
-#menuToggle details > summary:after {
-	content: "▶";
-	font-size: 16px;
-	position: absolute;
-	left: 230px;
+#ham-menu .menu details > summary:after {
+	left: $hamMenuWidth - $hamMenuEdge;
 }
 
-#menuToggle details[open] > summary:after {
-	content: "▼";
-	font-size: 18px;
-	left: 228px;
-}
-
-#menuToggle details>summary {
-	list-style: none;
-}
-
-#menuToggle summary::-webkit-details-marker {
-	display: none
-}
-
-#menuToggle summary {
-	outline: none;
+#ham-menu .menu details[open] > summary:after {
+	left: $hamMenuWidth - $hamMenuEdge - 1;
 }

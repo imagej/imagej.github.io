@@ -1,3 +1,7 @@
+#site-logo {
+  visibility: hidden;
+}
+
 .text-success {
   color: #28a745!important;
 }
@@ -55,7 +59,7 @@
   font-size: 1.6em;
 }
 
-@media screen and ( max-width: 780px ) {
+@media screen and (max-width: 779px) {
 
   .row-whyij {
     flex-direction: column;

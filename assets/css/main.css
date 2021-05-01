@@ -276,7 +276,7 @@ pre code {
 	}
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 779px) {
 
 	.container {
 		max-width: 100% !important;
@@ -1776,8 +1776,7 @@ button:disabled,
 }
 
 
-@media screen and (max-width: 780px) {
-
+@media screen and (max-width: 779px) {
 	.main.style2, .main.style3 {
 		width:100%;
 	}
@@ -2164,91 +2163,6 @@ ul.major-icons li .icon {
 	text-align: center;
 }
 
-/* Small */
-
-@media screen and (max-width: 736px) {
-
-	/* Basic */
-
-	body, input, select, textarea {
-		font-size: 12pt;
-	}
-
-	h1 {
-		font-size: 1.75em;
-	}
-
-	h2 {
-		font-size: 1.5em;
-	}
-
-	h3 {
-		font-size: 1.1em;
-	}
-
-	h4 {
-		font-size: 1em;
-	}
-
-	/* List */
-
-	ul.major-icons li {
-		padding: 1.5em;
-	}
-
-	ul.major-icons li .icon {
-		height: 5em;
-		line-height: 5em;
-		width: 5em;
-	}
-
-	ul.major-icons li .icon:before {
-		font-size: 42px;
-	}
-
-	/* Icon */
-
-	.icon.major {
-		margin: 0 0 1em 0;
-	}
-
-	/* Button */
-
-	input[type="submit"],
-	input[type="reset"],
-	input[type="button"],
-	button,
-	.button {
-		height: 3em;
-		line-height: 3em;
-	}
-
-	/* Main */
-
-	.main {
-		padding: 1em 1.5em 1em 1.5em;
-	}
-
-	/* Header */
-
-	#header {
-		padding: 4em 3em 4em 3em;
-	}
-
-	#header .actions {
-		margin: 2em 0 0 0;
-	}
-
-	/* Footer */
-
-	#footer {
-		padding: 3em 1.5em 3em 1.5em;
-	}
-
-}
-
-/* ------------------------- */
-
 .resources {
 	width: 100%;
 }
@@ -2324,14 +2238,14 @@ ul.major-icons li .icon {
 }
 
 .bc {
-  font-style: italic;
+	font-style: italic;
 }
 .bc span {
-  border-bottom: 1px dotted #ccc;
+	border-bottom: 1px dotted #ccc;
 }
 
 .include {
-  border: 2px solid red;
-  padding: 5px;
-  display: inline-block;
+	border: 2px solid red;
+	padding: 5px;
+	display: inline-block;
 }
