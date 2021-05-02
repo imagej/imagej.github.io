@@ -63,7 +63,7 @@ Each image and the corresponding ROI are opened automatically. An options dialog
 -   If the area contains non-specific signal, select {% include key key='Yes' %} to *redefine area manually* and edit the ROI.
 -   The dialog box allows to exclude current image from analysis (e.g. blurred image).
 
-Just select the radio button option needed then click {% include key key='OK' %} or {% include key key='⏎ENTER' %} to continue.
+Just select the radio button option needed then click {% include key key='OK' %} or {% include key key='Enter' %} to continue.
 
 <img src="/media/FAST ROI-edition.png" title="fig:Dialog box to redefine area" width="200" alt="Dialog box to redefine area" /> If you selected to *redefine area manually*, a new dialog box is displayed to get access to the ImageJ toolbar and modify the selection. The user-defined threshold is then automatically applied.
 

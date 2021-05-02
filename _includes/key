@@ -24,6 +24,7 @@ Draw the Unicode symbol you want    -- https://shapecatcher.com/
       {%- when "Printscreen", "Printscrn",
                "Prntscrn", "Prtscrn", "Prtscn",
                "Prtscr", "Prtsc", "Prsc"        -%} Print Screen
+      {%- when "Return"                         -%} Enter
       {%- when "Del"                            -%} Delete
       {%- when "Ins"                            -%} Insert
       {%- when "Escape"                         -%} Esc
@@ -60,8 +61,8 @@ Draw the Unicode symbol you want    -- https://shapecatcher.com/
       {%- when "Shift"     -%} &#8679;
       {%- when "Caps Lock" -%} &#8682;
       {%- when "Eject"     -%} &#9167;
-      {%- when "Return"    -%} &crarr;
-      {%- when "Enter"     -%} &#8996;
+      {%- when "Enter"     -%} &crarr;
+      {%- when "Enter2"    -%} &#8996;
       {%- when "Backspace" -%} &#9003;
       {%- when "Delete"    -%} &#8998;
       {%- when "Esc"       -%} &#9099;
@@ -79,7 +80,7 @@ Draw the Unicode symbol you want    -- https://shapecatcher.com/
     {%- endcase -%}
   {%- endcapture -%}
 
-  {%- if label == "Return" and style == "mac" -%}
+  {%- if label == "Enter" and style == "mac" -%}
     {%- assign glyph = "&#9166;" -%}
   {%- elsif label == "Backspace" and style == "mac" -%}
     {%- assign label = "delete" -%}

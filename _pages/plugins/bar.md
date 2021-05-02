@@ -115,13 +115,13 @@ It is a productivity tool that applies the principles of the [search bar](/learn
 
 <i>Console mode</i> is triggered by typing {% include key key='!' %}, which evokes a list of searchable commands so that all file navigation can be done exclusively with the keyboard. Some of these (`cd`, `ls`, `pwd`, etc.) are reminiscent of commands found in most command-line interfaces. Here are some examples:
 
-* To access ImageJ's LUT folder: type `!LUT` and press {% include key key='Return' %}
-* To access all JavaScript [lib files](#lib): type `!LIB` and press {% include key key='Return' %}, then `.JS`
-* To reveal the directory of active image: type `!IMP` and press {% include key key='Return' %}, then choose {% include bc path='Reveal Path'%}.
-* To access Commander's built-in help: type `!HELP` and press {% include key key='Return' %}
+* To access ImageJ's LUT folder: type `!LUT` and press {% include key key='Enter' %}
+* To access all JavaScript [lib files](#lib): type `!LIB` and press {% include key key='Enter' %}, then `.JS`
+* To reveal the directory of active image: type `!IMP` and press {% include key key='Enter' %}, then choose {% include bc path='Reveal Path'%}.
+* To access Commander's built-in help: type `!HELP` and press {% include key key='Enter' %}
 * To extract the paths of all TIFF images in a directory:
     * Drag and drop the desired folder into the Commander list
-    * Type `TIF` and press {% include key key='Return' %}
+    * Type `TIF` and press {% include key key='Enter' %}
     * Choose {% include bc path='Print Current List'%} in the Options Menu or press {% include key keys='Control|P' %} ({% include key keys='Command|P' %} in Mac OS).
 
 ### Keyboard Shortcuts

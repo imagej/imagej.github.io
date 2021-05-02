@@ -33,7 +33,7 @@ If *{% include bc path='Edit | Options | Misc...'%}&gt;Require command key for s
 
 ## Put the main window to the foreground
 
-Pressing the {% include key key='Return' %} key on any image will bring the main window to the foreground.
+Pressing the {% include key key='Enter' %} key on any image will bring the main window to the foreground.
 
 ## Close all images (without being asked whether to save them)
 

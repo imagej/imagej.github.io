@@ -142,14 +142,14 @@ All scripting languages use the same basic interpreter, with the following commo
 
 -   {% include key key='up' %}: bring the previously typed command.
 -   {% include key key='down' %}: bring the next typed command.
--   {% include key key='enter' %} or {% include key key='return' %}: execute the contents of the prompt.
+-   {% include key key='enter' %}: execute the contents of the prompt.
 
 ## Multiline editing and keybindings
 
 You can enlarge the prompt by dragging the middle bar.
 
--   {% include key keys='Shift||Enter' %}: create a new line within the prompt.
--   {% include key keys='Shift||Up' %}: move to the line above within the prompt.
+-   {% include key keys='Shift|Enter' %}: create a new line within the prompt.
+-   {% include key keys='Shift|Up' %}: move to the line above within the prompt.
 -   {% include key keys='Shift|Down' %}: move to the line below within the prompt.
 
 ## Selecting and executing text from the screen
