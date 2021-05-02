@@ -2249,3 +2249,15 @@ ul.major-icons li .icon {
 	padding: 5px;
 	display: inline-block;
 }
+
+.key {
+	white-space: nowrap;
+	border: 1px solid #aaa;
+	border-radius: 0.2em;
+	box-shadow: 0.1em 0.1em 0.2em rgba(0,0,0,0.1);
+	background-color: #f9f9f9;
+	background-image: linear-gradient(to bottom, #eee, #f9f9f9, #eee);
+	padding: 0.1em 0.3em;
+	font-family: inherit;
+	font-size: 0.85em;
+}

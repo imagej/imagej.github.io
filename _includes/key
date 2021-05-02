@@ -1,1 +1,100 @@
-<code class="key">{{include.content}}</code>
+{%- assign keys = include.keys | default: include.key | split: "|" -%}
+{%- assign chain = include.chain | default: "&nbsp;+&nbsp;" -%}
+{%- assign style = include.style | downcase | strip -%}
+
+{%- for key in keys -%}
+  {%- assign code = key | capitalize | remove: " " | strip -%}
+
+  {%- capture label -%}
+    {%- case code -%}
+      {%- when "Win"                            -%} Windows
+      {%- when "Cmd"                            -%} Command
+      {%- when "Function"                       -%} Fn
+      {%- when "Altgraph", "Altgr"              -%} AltGr
+      {%- when "Control", "Ctl"                 -%} Ctrl
+      {%- when "Opt"                            -%} Option
+      {%- when "Numlock", "Numlk"               -%} Num Lock
+      {%- when "Capslock", "Caps"               -%} Caps Lock
+      {%- when "Scrolllock"                     -%} Scroll Lock
+      {%- when "Printscreen", "Printscrn",
+               "Prntscrn", "Prtscrn", "Prtscn",
+               "Prtscr", "Prtsc", "Prsc"        -%} Print Screen
+      {%- when "Del"                            -%} Delete
+      {%- when "Ins"                            -%} Insert
+      {%- when "Escape"                         -%} Esc
+      {%- when "Pageup", "Pgup"                 -%} Page Up
+      {%- when "Pagedown", "Pgdn"               -%} Page Down
+      {%- when "Top"                            -%} Home
+      {%- when "Spacebar"                       -%} Space
+      {%- when "Bar", "Pipe"                    -%} |
+      {%- else                                  -%} {{code}}
+    {%- endcase -%}
+  {%- endcapture -%}
+
+  {%- if label == "Super" and style == "pc" -%}
+    {%- assign label = "Windows" -%}
+  {%- elsif label == "Super" and style == "mac" -%}
+    {%- assign label = "Command" -%}
+  {%- elsif label == "Ctrl" and style == "mac" -%}
+    {%- assign label = "Control" -%}
+  {%- elsif label == "Alt" and style == "mac" -%}
+    {%- assign label = "Option" -%}
+  {%- endif -%}
+
+  {%- capture glyph -%}
+    {%- case label -%}
+      {%- when "Menu"      -%} &#8803;
+      {%- when "Hyper"     -%} &#10022;
+      {%- when "Meta"      -%} &#9670;
+      {%- when "Windows"   -%} &#8862;
+      {%- when "Command"   -%} &#8984;
+      {%- when "Super"     -%} &#10070;
+      {%- when "Ctrl"      -%} &#8963;
+      {%- when "Alt"       -%} &#8997;
+      {%- when "Option"    -%} &#8997;
+      {%- when "Shift"     -%} &#8679;
+      {%- when "Caps Lock" -%} &#8682;
+      {%- when "Eject"     -%} &#9167;
+      {%- when "Return"    -%} &crarr;
+      {%- when "Enter"     -%} &#8996;
+      {%- when "Backspace" -%} &#9003;
+      {%- when "Delete"    -%} &#8998;
+      {%- when "Esc"       -%} &#9099;
+      {%- when "Right"     -%} &rarr;
+      {%- when "Left"      -%} &larr;
+      {%- when "Up"        -%} &uarr;
+      {%- when "Down"      -%} &darr;
+      {%- when "Page Up"   -%} &#8670;
+      {%- when "Page Down" -%} &#8671;
+      {%- when "Home"      -%} &#8598;
+      {%- when "End"       -%} &#8600;
+      {%- when "Tab"       -%} &#8677;
+      {%- when "Space"     -%} &#9251;
+      {%- when "Clear"     -%} &#8999;
+    {%- endcase -%}
+  {%- endcapture -%}
+
+  {%- if label == "Return" and style == "mac" -%}
+    {%- assign glyph = "&#9166;" -%}
+  {%- elsif label == "Backspace" and style == "mac" -%}
+    {%- assign label = "delete" -%}
+  {%- elsif label == "Tab" and style == "pc" -%}
+    {%- assign glyph = "&#8633;" -%}
+  {%- endif -%}
+
+  {%- if style == "mac" -%}
+    {%- case label -%}
+      {%- when  "F1",  "F2",  "F3",  "F4",  "F5",  "F6",  "F7",  "F8",  "F9", "F10",
+               "F11", "F12", "F13", "F14", "F15", "F16", "F17", "F18", "F19", "F20",
+               "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M",
+               "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" -%}
+      {%- else -%}
+        {%- assign label = label | downcase -%}
+    {%- endcase -%}
+  {%- endif -%}
+
+  {%- assign text = glyph | append: " " | append: label | strip -%}
+
+  {%- unless forloop.first -%}{{chain}}{%- endunless -%}
+  <kbd class="key">{{text}}</kbd>
+{%- endfor -%}
