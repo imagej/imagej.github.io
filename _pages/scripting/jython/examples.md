@@ -10,8 +10,8 @@ categories: Scripting,Jython
 
 ## Quickstart
 
--   Press {% include key key='\[' %} to bring up the [Script Editor](/scripting/script-editor).
--   Select an example Jython script from the {% include bc path='Templates | \[by language\] | Python'%} menu.
+-   Press {% include key key='[' %} to bring up the [Script Editor](/scripting/script-editor).
+-   Select an example Jython script from the {% include bc path='Templates | [by language] | Python'%} menu.
 -   Press {% include key keys='Ctrl|R' %} to run the script!
 
 ## The Jython interpreter plugin
@@ -33,7 +33,7 @@ Within the interpreter, all ImageJ, java.lang.\* and TrakEM2 classes are automat
 -   Any text after a \# is commented out.
 -   There are no line terminators (such as ';' in other languages), neither curly braces to define code blocks.
 -   Indentation defines code blocks.
--   Functions are defined with <i>def</i>, and classes with <i>class</i>.
+-   Functions are defined with `def`, and classes with `class`.
 -   Functions are objects, and thus storable in variables.
 -   Jython (and python in general) accepts a mixture of procedural and object-oriented code.
 -   Jython currently implements the Python language at its 2.5 version. All [documentation for python 2.5](http://www.python.org/doc/2.5.2/) applies to Jython bundled with Fiji (with the remarks listed later).
@@ -86,8 +86,6 @@ To test if a number is NaN:
 
 -   <u>Some existing python modules can't be imported in jython.</u>
 
-  
-  
 This is for instance the case of the module *numpy*, which would have been really convenient for analysing data and results.
 
 But see these java numerical libraries: http://math.nist.gov/javanumerics/#libraries , of which:
@@ -96,14 +94,10 @@ But see these java numerical libraries: http://math.nist.gov/javanumerics/#libra
 
 :\* Java3D (particularly its [vecmath](http://java.sun.com/products/java-media/3D/forDevelopers/j3dapi/javax/vecmath/package-summary.html) package provides general matrix and vector classes ([GMatrix](http://java.sun.com/products/java-media/3D/forDevelopers/j3dapi/javax/vecmath/GMatrix.html), [GVector](http://java.sun.com/products/java-media/3D/forDevelopers/j3dapi/javax/vecmath/GVector.html)).
 
-  
-  
 ... are already included in Fiji.
 
 -   <u>Your Jython version may be matching a much older Python version than you expect.</u>
 
-  
-  
 The latest Jython stable release (as of May 2015) is 2.7.0. Fiji (as of December 2015) distributes Jython 2.5.3. Any recent Python syntax such as `except ExceptionType as e:` or `with open(filepath, 'r') as f:` will fail.
 
 ## Jython tutorials for ImageJ
@@ -126,7 +120,7 @@ To execute the function, just use parentheses on it:
 
      imp = c()
 
-The above gets the value of <i>c</i>, which is the method named getCurrentImage in class WindowManager, and executes it, storing its returned object in <i>imp</i>.
+The above gets the value of `c`, which is the method named getCurrentImage in class WindowManager, and executes it, storing its returned object in `imp`.
 
 ### Manipulating pixels
 
@@ -145,11 +139,11 @@ Then loop to modify them:
 
     # catch width
     w = imp.getWidth()
-     
+
     # create a ramp gradient from left to right
     for i in range(len(pix)):
        pix[i] = i % w
-     
+
     # adjust min and max, since we know them
     imp.getProcessor().setMinAndMax(0, w-1)
 
@@ -168,7 +162,7 @@ Then create the array and fill it with random bytes:
 
     width = 512
     height = 512
-     
+
     pix = zeros(width * height, 'b')
     Random().nextBytes(pix)
 
@@ -218,20 +212,20 @@ All the above can be summarized like the following:
     # 4 - Show the watersheded image:
     imp.show()
 
-The EDM plugin that contains the watershed could have been indirectly applied to the currently active image, which is <i>not</i> recommended:
+The EDM plugin that contains the watershed could have been indirectly applied to the currently active image, which is *not* recommended:
 
     imp = IJ.getImage()  # the current image
     imp.getProcessor().setThreshold(174, 174, ImageProcessor.NO_LUT_UPDATE)
     IJ.run(imp, "Convert to Mask", "")
     IJ.run(imp, "Watershed", "")
 
-If you had called <i>show()</i> on the image at any early stage, just update the screen with:
+If you had called `show()` on the image at any early stage, just update the screen with:
 
     imp.updateAndDraw()
 
 #### ... and counting particles, and measuring their areas
 
-Continuing from the <i>imp</i> above, that contains the now watersheded "blobs" sample image:
+Continuing from the `imp` above, that contains the now watersheded "blobs" sample image:
 
     # Create a table to store the results
     table = ResultsTable()
@@ -258,14 +252,16 @@ Continuing from the <i>imp</i> above, that contains the now watersheded "blobs" 
 
 To print out the area measurement of each:
 
-`>>> for area in areas: print area`  
-`76.0`  
-`185.0`  
-`658.0`  
-`434.0`  
-`...`
+```
+>>> for area in areas: print area
+76.0
+185.0
+658.0
+434.0
+...
+```
 
-Now, we want to measure the intensity of each particle. To do so, we'll retrieve the ROI from the ROIManager, set them one at a time on the original (non-watershed, non-thresholded) image stored in the variable <i>blobs</i>, and measure:
+Now, we want to measure the intensity of each particle. To do so, we'll retrieve the ROI from the ROIManager, set them one at a time on the original (non-watershed, non-thresholded) image stored in the variable `blobs`, and measure:
 
     # Create a new list to store the mean intensity values of each blob:
     means = []
@@ -280,21 +276,25 @@ Finally read out the measured mean intensity value of each blob, along with its 
     for area, mean in zip(areas, means):
       print area, mean
 
-`6.0 191.47368421052633`  
-`185.0 179.2864864864865`  
-`658.0 205.61702127659575`  
-`434.0 217.32718894009216`  
-`477.0 212.1425576519916`  
-`...`
+```
+6.0 191.47368421052633
+185.0 179.2864864864865
+658.0 205.61702127659575
+434.0 217.32718894009216
+477.0 212.1425576519916
+...
+```
 
 ### Creating an image from a text file
 
 A data file containing rows with 4 columns:
 
-`...`  
-`399 23 30 10.12`  
-`400 23 30 12.34`  
-`...`
+```
+...
+399 23 30 10.12
+400 23 30 12.34
+...
+```
 
 ... where the columns are X, Y, Z and value, for every pixel in the image. We assume we know the width and height of the image. From this sort of data, we create an image, read out all lines and parse the numbers:
 
@@ -345,21 +345,23 @@ How ImageJ does it, internally, has to do with the [ImageStatisics](/ij/develope
     stats = imp.getStatistics()
     print stats.histogram
 
-`array('i',[0, 0, 0, 0, 0, 0, 0, 0, 53, 0, 0, 0, 0, 0, 0, 0, 304,`  
-`           0, 0, 0, 0, 0, 0, 0, 1209, 0, 0, 0, 0, 0, 0, 0, 3511, 0,`  
-`           0, 0, 0, 0, 0, 0, 7731, 0, 0, 0, 0, 0, 0, 0, 10396, 0, 0,`  
-`           0, 0, 0, 0, 0, 7456, 0, 0, 0, 0, 0, 0, 0, 3829, 0, 0, 0,`  
-`           0, 0, 0, 0, 1992, 0, 0, 0, 0, 0, 0, 0, 1394, 0, 0, 0, 0,`  
-`           0, 0, 0, 1158, 0, 0, 0, 0, 0, 0, 0, 1022, 0, 0, 0, 0, 0,`  
-`           0, 0, 984, 0, 0, 0, 0, 0, 0, 0, 902, 0, 0, 0, 0, 0, 0,`  
-`           0, 840, 0, 0, 0, 0, 0, 0, 0, 830, 0, 0, 0, 0, 0, 0, 0,`  
-`           926, 0, 0, 0, 0, 0, 0, 0, 835, 0, 0, 0, 0, 0, 0, 0, 901,`  
-`           0, 0, 0, 0, 0, 0, 0, 1025, 0, 0, 0, 0, 0, 0, 0, 1180, 0,`  
-`           0, 0, 0, 0, 0, 0, 1209, 0, 0, 0, 0, 0, 0, 0, 1614, 0, 0,`  
-`           0, 0, 0, 0, 0, 1609, 0, 0, 0, 0, 0, 0, 0, 2220, 0, 0, 0,`  
-`           0, 0, 0, 0, 2037, 0, 0, 0, 0, 0, 0, 0, 2373, 0, 0, 0, 0,`  
-`           0, 0, 0, 1568, 0, 0, 0, 0, 0, 0, 0, 1778, 0, 0, 0, 0, 0,`  
-`           0, 0, 774, 0, 0, 0, 0, 0, 0, 0, 1364, 0, 0, 0, 0, 0, 0, 0])`
+```
+array('i',[0, 0, 0, 0, 0, 0, 0, 0, 53, 0, 0, 0, 0, 0, 0, 0, 304,
+           0, 0, 0, 0, 0, 0, 0, 1209, 0, 0, 0, 0, 0, 0, 0, 3511, 0,
+           0, 0, 0, 0, 0, 0, 7731, 0, 0, 0, 0, 0, 0, 0, 10396, 0, 0,
+           0, 0, 0, 0, 0, 7456, 0, 0, 0, 0, 0, 0, 0, 3829, 0, 0, 0,
+           0, 0, 0, 0, 1992, 0, 0, 0, 0, 0, 0, 0, 1394, 0, 0, 0, 0,
+           0, 0, 0, 1158, 0, 0, 0, 0, 0, 0, 0, 1022, 0, 0, 0, 0, 0,
+           0, 0, 984, 0, 0, 0, 0, 0, 0, 0, 902, 0, 0, 0, 0, 0, 0,
+           0, 840, 0, 0, 0, 0, 0, 0, 0, 830, 0, 0, 0, 0, 0, 0, 0,
+           926, 0, 0, 0, 0, 0, 0, 0, 835, 0, 0, 0, 0, 0, 0, 0, 901,
+           0, 0, 0, 0, 0, 0, 0, 1025, 0, 0, 0, 0, 0, 0, 0, 1180, 0,
+           0, 0, 0, 0, 0, 0, 1209, 0, 0, 0, 0, 0, 0, 0, 1614, 0, 0,
+           0, 0, 0, 0, 0, 1609, 0, 0, 0, 0, 0, 0, 0, 2220, 0, 0, 0,
+           0, 0, 0, 0, 2037, 0, 0, 0, 0, 0, 0, 0, 2373, 0, 0, 0, 0,
+           0, 0, 0, 1568, 0, 0, 0, 0, 0, 0, 0, 1778, 0, 0, 0, 0, 0,
+           0, 0, 774, 0, 0, 0, 0, 0, 0, 0, 1364, 0, 0, 0, 0, 0, 0, 0])
+```
 
 The histogram, area and mean are computed by default. Other values like the median need to be specified.
 
@@ -497,15 +499,15 @@ Which is to say, translate the histogram so that the lowest value is at zero.
 
 Notice we used:
 
--   The <i>reduce</i> function to obtain a single value from a list of values (the pixel array) by applying a function to every pair of consecutive values (in this case, the Math.min).
--   <i>lambda</i>, which is used to declare an anonymous function that takes one argument.
--   The <i>map</i> function, which runs a function given as argument to every element of a list (here, every pixel) and returns a new list with all the results.
+-   The `reduce` function to obtain a single value from a list of values (the pixel array) by applying a function to every pair of consecutive values (in this case, the Math.min).
+-   `lambda`, which is used to declare an anonymous function that takes one argument.
+-   The `map` function, which runs a function given as argument to every element of a list (here, every pixel) and returns a new list with all the results.
 
 ### Extract a specific color channel for a given time frame of a composite image
 
 Suppose you have a 4D multicolor image, and want to obtain a stack of slices corresponding to a specific color channel and time frame.
 
-The [CompositeImage](https://javadoc.scijava.org/ImageJ1/ij/CompositeImage.html) is a stack whose slices are interpreted as belonging to specific color channels, Z slices and time frames. To find out which slice corresponds to what, use the <i>getStackIndex</i> method of the [ImagePlus](https://javadoc.scijava.org/ImageJ1/ij/ImagePlus.html), which translates between color channels, z slices and time frames to the slice index in the underlying [ImageStack](https://javadoc.scijava.org/ImageJ1/ij/ImageStack.html).
+The [CompositeImage](https://javadoc.scijava.org/ImageJ1/ij/CompositeImage.html) is a stack whose slices are interpreted as belonging to specific color channels, Z slices and time frames. To find out which slice corresponds to what, use the `getStackIndex` method of the [ImagePlus](https://javadoc.scijava.org/ImageJ1/ij/ImagePlus.html), which translates between color channels, z slices and time frames to the slice index in the underlying [ImageStack](https://javadoc.scijava.org/ImageJ1/ij/ImageStack.html).
 
     from ij import IJ, ImagePlus, ImageStack
 
@@ -525,7 +527,7 @@ Notice that color channels, stack slices and time frames are all 1-based. For ex
 
 ### Visualize any number of TIFF stacks in a single composite multi-color image stack
 
-Suppose you have 1000 stacks of <i>Drosophila</i> fly brains, each with different neurons labeled in a single color channel. Suppose that you have registered all these confocal stacks. Were you to overlay them, you would see whether the labeled neurons overlap in 3D space or not.
+Suppose you have 1000 stacks of *Drosophila* fly brains, each with different neurons labeled in a single color channel. Suppose that you have registered all these confocal stacks. Were you to overlay them, you would see whether the labeled neurons overlap in 3D space or not.
 
 Here is a script to do that. First, it asks for a directory containing any number of TIF image stacks. It assumes all stacks have the same dimensions, and that they are all single channel (i.e. just red, or just green, etc.). Then, it displays a small window with a listing of many colors: red, green, blue, orange, gray, etc. Any of the hundreds of stacks in the directory can be assigned to each color channel.
 
@@ -1335,10 +1337,12 @@ See complete documentation at: [jython book chapter 6](http://jythonpodcast.host
 
 Which prints:
 
-`Dividing by zero doesn't make any sense! Error: integer division or modulo by zero`  
-`This line will always print no matter what errors occurs`
+```
+Dividing by zero doesn't make any sense! Error: integer division or modulo by zero
+This line will always print no matter what errors occurs
+```
 
-To catch any kind of errors, use <i>sys.exc\_info</i>:
+To catch any kind of errors, use `sys.exc_info`:
 
     import sys
 
@@ -1408,7 +1412,7 @@ And now you have a second script in which you want to use a function from the *F
 
 A simple class to store an X,Y coordinate. (In real code, just use javax.vecmath.\* classes such as Point3f, Point3d, etc.)
 
-The constructor is defined with <i>\_\_init\_\_</i>, and takes at least one argument , named <i>self</i> by convention (you may name it something else, like <i>this</i>).
+The constructor is defined with `__init__`, and takes at least one argument , named `self` by convention (you may name it something else, like `this`).
 
     from math import sqrt, pow
 
@@ -1428,9 +1432,9 @@ The constructor is defined with <i>\_\_init\_\_</i>, and takes at least one argu
 
 ### Adding a static method to a class
 
-A static method is a method of a class that doesn't need a <i>self</i> first argument. You may call this method by using the name of the class alone--you don't need to invoke it on an instance.
+A static method is a method of a class that doesn't need a `self` first argument. You may call this method by using the name of the class alone--you don't need to invoke it on an instance.
 
-To declare a method as static, decorate it with <i>@staticmethod</i>, as shown below for method <i>two</i>:
+To declare a method as static, decorate it with `@staticmethod`, as shown below for method `two`:
 
     class Numbers:
 
@@ -1441,7 +1445,7 @@ To declare a method as static, decorate it with <i>@staticmethod</i>, as shown b
       def two():
         return 2
 
-Now, to invoke these methods, notice how <i>two</i> doesn't need to be invoked on an instance (we merely prepend the class name), but <i>one</i> does:
+Now, to invoke these methods, notice how `two` doesn't need to be invoked on an instance (we merely prepend the class name), but `one` does:
 
     print Numbers.two()
 
@@ -1452,7 +1456,7 @@ Why would you want to use a static method? It is useful to keep the namespace ti
 
 ### Creating multi-dimensional native java arrays
 
-Suppose you want to create a one-dimensional double array, the equivalent of **double\[\]** in java. This is what you would do:
+Suppose you want to create a one-dimensional double array, the equivalent of `double[]` in java. This is what you would do:
 
     from jarray import array
 
@@ -1462,16 +1466,18 @@ Suppose you want to create a one-dimensional double array, the equivalent of **d
 
 Other accepted primitive array types are:
 
-`z  boolean`  
-`c  char`  
-`b  byte`  
-`h  short`  
-`i  int`  
-`l  long`  
-`f  float`  
-`d  double`
+```
+z  boolean
+c  char
+b  byte
+h  short
+i  int
+l  long
+f  float
+d  double
+```
 
-But now suppose you want a two-dimensional double array, the equivalent of **double\[\]\[\]** in java. How to do that? Here's how:
+But now suppose you want a two-dimensional double array, the equivalent of `double[][]` in java. How to do that? Here's how:
 
     from jarray    import array
     from java.lang import Class
@@ -1481,7 +1487,7 @@ But now suppose you want a two-dimensional double array, the equivalent of **dou
 
 Essentially, what we did is to give the function **array** the argument **class of a one-dimensional double array**, so that it will create an array of that--hence a two-dimensional double array.
 
-For a three-dimensional array in jython, you'd just add another **\[** (square bracket) to the class name:
+For a three-dimensional array in jython, you'd just add another `[` (square bracket) to the class name:
 
     from jarray import array
     from java.lang import Class
@@ -1501,7 +1507,7 @@ To create primitive arrays of any class, pass along the class itself. For exampl
 
 Of course arrays can also be created empty. For numbers, all values will be zero. For an arbitrary class such as **String**, all values will be null (or None, in python parlance).
 
-In the example below, we create an empty two-dimensional array of **double\[N\]\[\]** type, where the smaller, inner arrays are null (just like in java a **new double\[5\]\[\]** would have the second-order also all null):
+In the example below, we create an empty two-dimensional array of `double[N][]` type, where the smaller, inner arrays are null (just like in java a `new double[5][]` would have the second-order also all null):
 
     from jarray import zeros
 
@@ -1524,9 +1530,9 @@ Jython is great at doing high-level operations on images. But sometimes one want
 
 The weaver removes all the pain.
 
-The weaver offers two ways to embed java code: the <i>inline</i> and the <i>method</i>.
+The weaver offers two ways to embed java code: the `inline` and the `method`.
 
-Here is an example using the <i>inline</i> approach, where the <i>float\[\]</i> pixels array of the current image is iterated to compute the mean intensity:
+Here is an example using the `inline` approach, where the `float[]` pixels array of the current image is iterated to compute the mean intensity:
 
     from fiji.scripting import Weaver
     from ij import IJ
@@ -1557,11 +1563,11 @@ Here is an example using the <i>inline</i> approach, where the <i>float\[\]</i> 
 
     print mean
 
-The above is trivial and it is meant only as an example (there are better ways to get the mean value, such as via <i>imp.getStatistics()</i>. Notice that the <i>Weaver.inline</i> function takes three arguments: the java code to inline, the map of bindings, and the return type. In the example, we pass only the <i>float\[\]</i> pixels array, and define <i>Double</i> as the return type. The return type is optional.
+The above is trivial and it is meant only as an example (there are better ways to get the mean value, such as via `imp.getStatistics()`. Notice that the `Weaver.inline` function takes three arguments: the java code to inline, the map of bindings, and the return type. In the example, we pass only the `float[]` pixels array, and define `Double` as the return type. The return type is optional.
 
 Internally, bindings are represented as fields in a java class, set as either primitives (like double, int ...) or the least general public class or superclass of the object to bind.
 
-A better example that exploits the capabilities of the <i>Weaver.inline</i> is the following: compile the function once, and then call it over and over with different parameters. The bindings cannot be changed, but if they are arrays or collections, one can change the elements of these collections. For example, to obtain a new <i>ImageStack</i> that is the result of applying XOR to each consecutive pair of slices (which will give you the boundaries of objects):
+A better example that exploits the capabilities of the `Weaver.inline` is the following: compile the function once, and then call it over and over with different parameters. The bindings cannot be changed, but if they are arrays or collections, one can change the elements of these collections. For example, to obtain a new `ImageStack` that is the result of applying XOR to each consecutive pair of slices (which will give you the boundaries of objects):
 
     from ij import IJ, ImagePlus, ImageStack
     from fiji.scripting import Weaver
@@ -1596,9 +1602,9 @@ A better example that exploits the capabilities of the <i>Weaver.inline</i> is t
 
     ImagePlus("XORed stack", stackXOR).show()
 
-The above approach with <i>Weaver.inline</i> becomes a bit verbose and ad-hoc, having to edit the contents of the <i>slices</i> list.
+The above approach with `Weaver.inline` becomes a bit verbose and ad-hoc, having to edit the contents of the `slices` list.
 
-Instead, here is the same code but using the <i>Weaver.method</i> approach, where, instead of bindings, we pass the arrays directly as method arguments. This approach requires knowing a bit more about java, but not much, to declare a full java class method (or any number of them). The returned <i>w</i> object contains that method, which we can invoke with, in this case, the two byte arrays as arguments:
+Instead, here is the same code but using the `Weaver.method` approach, where, instead of bindings, we pass the arrays directly as method arguments. This approach requires knowing a bit more about java, but not much, to declare a full java class method (or any number of them). The returned `w` object contains that method, which we can invoke with, in this case, the two byte arrays as arguments:
 
     from ij import IJ, ImagePlus, ImageStack
     from fiji.scripting import Weaver
@@ -1626,7 +1632,7 @@ Instead, here is the same code but using the <i>Weaver.method</i> approach, wher
 
     ImagePlus("XORed stack", stackXOR).show()
 
-There are two additional, optional arguments for <i>Weaver.inline</i> and <i>Weaver.method</i>:
+There are two additional, optional arguments for `Weaver.inline` and `Weaver.method`:
 
 `1. A list of classes to insert as imports, so that instead of fully qualified class names`
 
@@ -1638,7 +1644,7 @@ There are two additional, optional arguments for <i>Weaver.inline</i> and <i>Wea
 
 `2. A boolean, to show the generated java code in a tab of the Script Editor.`
 
-Here is a small example, using <i>Weaver.method</i>, that uses imports. The script subtracts "10" from every pixel:
+Here is a small example, using `Weaver.method`, that uses imports. The script subtracts "10" from every pixel:
 
     from net.imglib2.type.numeric.real import FloatType
     from net.imglib2.img.display.imagej import ImageJFunctions as IJF
@@ -1700,7 +1706,7 @@ The Fiji launcher can execute scripts. When running scripts from the command lin
 
     # Do some processing ...
 
-IMPORTANT: notice that, when executing scripts from the command line, there is no auto-importing of common imports. So above we <b>must</b> declare "from ij import IJ" to import the namespace <i>IJ</i> with all the static utility functions such as <i>openImage</i>.
+IMPORTANT: notice that, when executing scripts from the command line, there is no auto-importing of common imports. So above we <b>must</b> declare "from ij import IJ" to import the namespace `IJ` with all the static utility functions such as `openImage`.
 
 ### Catching errors from a running macro
 
@@ -1769,11 +1775,11 @@ The whole idea is to be able to distribute an entire collection of scripts in a 
 
 In this example, we create two jython scripts that we want to distribute in a .jar file as plugins:
 
-The <i>printer.py</i> script:
+The `printer.py` script:
 
     IJ.log("Print this to the log window")
 
-... and the <i>create\_new\_image.py</i> script:
+... and the `create_new_image.py` script:
 
     ip = ByteProcessor(400, 400)
     imp = ImagePlus("New", ip)
@@ -1784,7 +1790,7 @@ The <i>printer.py</i> script:
 
 #### Manual packaging
 
-Place both scripts under a folder named <i>scripts/</i> .
+Place both scripts under a folder named `scripts/` .
 
 You will need a tiny .java file specifying a launcher PlugIn, such as:
 
@@ -1798,7 +1804,7 @@ You will need a tiny .java file specifying a launcher PlugIn, such as:
         }
     }
 
-Notice we place the above file under directory <i>my/</i>, packaged.
+Notice we place the above file under directory `my/`, packaged.
 
 To compile it:
 
@@ -1808,22 +1814,26 @@ To compile it:
 
 Then we define the plugins.config file:
 
-`Plugins>My Scripts, "Print to log window", my.Jython_Launcher("/scripts/printer.py")`  
-`Plugins>My Scripts, "Create image with a white circle", my.Jython_Launcher("/scripts/create_new_image.py")`
+```
+Plugins>My Scripts, "Print to log window", my.Jython_Launcher("/scripts/printer.py")
+Plugins>My Scripts, "Create image with a white circle", my.Jython_Launcher("/scripts/create_new_image.py")
+```
 
 Finally, we put all files in a .jar file:
 
-`$ jar cf my_jython_scripts.jar plugins.config my/Jython_Launcher.class scripts/*py`
+```
+$ jar cf my_jython_scripts.jar plugins.config my/Jython_Launcher.class scripts/*py
+```
 
 Then, drop the jar file into fiji/plugins/ folder and run "Help - Update Menus", or restart fiji. Your scripts will appear under Plugins - My Scripts.
 
 For clarity, this is a summary of the files in the folder:
 
-`my/Jython_Launcher.java`  
-`my/Jython_Launcher.class`  
-`scripts/printer.py`  
-`scripts/create_new_image.py`  
-`plugins.config`
+* `my/Jython_Launcher.java`
+* `my/Jython_Launcher.class`
+* `scripts/printer.py`
+* `scripts/create_new_image.py`
+* `plugins.config`
 
 #### With Maven
 
