@@ -49,7 +49,7 @@ There are two ways to create such a snapshot, known as a "thread dump" or "stack
 
 ### The easy way
 
-1.  Press {% include key keys='Shift|\\' %} in ImageJ itself. If successful, it will open a new window with the stack trace.
+1.  Press {% include key keys='Shift|backslash' %} in ImageJ itself. If successful, it will open a new window with the stack trace.
 2.  Press {% include key keys='Ctrl|A' %} to select it, then {% include key keys='Ctrl|C' %} to copy it to the clipboard.
 
 ### The fallback way
@@ -60,7 +60,7 @@ If the first method does not work, and you can reproduce the hang:
     -   <img src="/media/Win.png" height="20"/> On Windows, you will need to download and run [this batch file](https://raw.githubusercontent.com/imagej/imagej/master/bin/ImageJ.bat), which launches ImageJ with an attached Command Prompt window.
 2.  Generate and copy the stack trace:
     -   <img src="/media/Osx.png" height="20"/> <img src="/media/Tux.png" height="20"/> On non-Windows platforms:
-        1.  Press {% include key keys='Ctrl|\\' %} in the console window to print the stack trace.
+        1.  Press {% include key keys='Ctrl|backslash' %} in the console window to print the stack trace.
         2.  Select the stack trace by dragging with the left mouse button.
         3.  Right click and select "Copy" to copy it to the clipboard.
     -   <img src="/media/Win.png" height="20"/> On Windows:

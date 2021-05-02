@@ -33,6 +33,7 @@ Draw the Unicode symbol you want    -- https://shapecatcher.com/
       {%- when "Top"                            -%} Home
       {%- when "Spacebar"                       -%} Space
       {%- when "Bar", "Pipe"                    -%} |
+      {%- when "Backslash"                      -%} &#92;
       {%- else                                  -%} {{code}}
     {%- endcase -%}
   {%- endcapture -%}

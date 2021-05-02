@@ -46,7 +46,7 @@ e.g. {% include key key="ctrl|cmd|esc" chain="&#9939;" %}:
 
 ## List of key codes
 
-{%- assign keys = "Menu, Hyper, Meta, Windows, Command, Super, Fn, AltGr, Ctrl, Alt, Option, Shift, Num Lock, Caps Lock, Scroll Lock, Print Screen, Eject, Enter, Enter2, Backspace, Delete, Insert, Esc, Right, Left, Up, Down, Page Up, Page Down, Home, End, Tab, Space Bar, Clear, F1, ..., F20, A, ..., Z, Bar" | split: ", " -%}
+{%- assign keys = "Menu, Hyper, Meta, Windows, Command, Super, Fn, AltGr, Ctrl, Alt, Option, Shift, Num Lock, Caps Lock, Scroll Lock, Print Screen, Eject, Enter, Enter2, Backspace, Delete, Insert, Esc, Right, Left, Up, Down, Page Up, Page Down, Home, End, Tab, Space Bar, Clear, F1, ..., F20, A, ..., Z, Bar, Backslash" | split: ", " -%}
 
 {::nomarkdown}
 <table>
