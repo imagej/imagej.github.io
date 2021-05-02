@@ -8,7 +8,7 @@ Draw the Unicode symbol you want    -- https://shapecatcher.com/
 {%- assign style = include.style | downcase | strip -%}
 
 {%- for key in keys -%}
-  {%- assign code = key | capitalize | remove: " " | strip -%}
+  {%- assign code = key | capitalize | remove: " " | remove: "-" | strip -%}
 
   {%- capture label -%}
     {%- case code -%}
@@ -34,6 +34,16 @@ Draw the Unicode symbol you want    -- https://shapecatcher.com/
       {%- when "Spacebar"                       -%} Space
       {%- when "Bar", "Pipe"                    -%} |
       {%- when "Backslash"                      -%} &#92;
+      {%- when "Leftclick"                      -%} Left Click
+      {%- when "Middleclick"                    -%} Middle Click
+      {%- when "Rightclick"                     -%} Right Click
+      {%- when "Doubleclick"                    -%} Double Click
+      {%- when "Leftdrag"                       -%} Left Drag
+      {%- when "Middledrag"                     -%} Middle Drag
+      {%- when "Rightdrag"                      -%} Right Drag
+      {%- when "Mousewheel"                     -%} Mouse Wheel
+      {%- when "Mousewheelup"                   -%} Mouse Wheel Up
+      {%- when "Mousewheeldown"                 -%} Mouse Wheel Down
       {%- else                                  -%} {{code}}
     {%- endcase -%}
   {%- endcapture -%}
@@ -81,6 +91,21 @@ Draw the Unicode symbol you want    -- https://shapecatcher.com/
     {%- endcase -%}
   {%- endcapture -%}
 
+  {%- capture image -%}
+    {%- case label -%}
+      {%- when "Left Click"       -%} https://upload.wikimedia.org/wikipedia/commons/2/27/LMB_click.svg
+      {%- when "Middle Click"     -%} https://upload.wikimedia.org/wikipedia/commons/b/b6/Mouse_wheel_activate.svg
+      {%- when "Right Click"      -%} https://upload.wikimedia.org/wikipedia/commons/f/fc/RMB_click.svg
+      {%- when "Double Click"     -%} https://upload.wikimedia.org/wikipedia/commons/2/27/LMB_click.svg
+      {%- when "Left Drag"        -%} https://upload.wikimedia.org/wikipedia/commons/2/27/LMB_click.svg
+      {%- when "Middle Drag"      -%} https://upload.wikimedia.org/wikipedia/commons/b/b6/Mouse_wheel_activate.svg
+      {%- when "Right Drag"       -%} https://upload.wikimedia.org/wikipedia/commons/f/fc/RMB_click.svg
+      {%- when "Mouse Wheel"      -%} https://upload.wikimedia.org/wikipedia/commons/b/b6/Mouse_wheel_activate.svg
+      {%- when "Mouse Wheel Up"   -%} https://upload.wikimedia.org/wikipedia/commons/3/32/Mouse_wheel_up.svg
+      {%- when "Mouse Wheel Down" -%} https://upload.wikimedia.org/wikipedia/commons/3/37/Mouse_wheel_down.svg
+    {%- endcase -%}
+  {%- endcapture -%}
+
   {%- if label == "Enter" and style == "mac" -%}
     {%- assign glyph = "&#9166;" -%}
   {%- elsif label == "Backspace" and style == "mac" -%}
@@ -100,8 +125,10 @@ Draw the Unicode symbol you want    -- https://shapecatcher.com/
     {%- endcase -%}
   {%- endif -%}
 
-  {%- assign text = glyph | append: " " | append: label | strip -%}
-
   {%- unless forloop.first -%}{{chain}}{%- endunless -%}
-  <kbd class="key">{{text}}</kbd>
+  {%- if image == '' -%}
+    <kbd class="key">{{ glyph | append: " " | append: label | strip }}</kbd>
+  {%- else -%}
+    <span class="key"><img src="{{image}}"> {{label}}</span>
+  {%- endif -%}
 {%- endfor -%}
