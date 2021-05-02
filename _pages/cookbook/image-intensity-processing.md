@@ -29,7 +29,7 @@ If you prefer the image to be displayed as "black on white" rather than "white o
 
 If working with a stack, the ROI selected can be analyzed with the command: {% include bc path='Image | Stacks | Plot Z Axis Profile'%}. This generates a single column of numbers - one slice intensity per row.
 
-The top 6 rows of the column are details of the ROI. This makes sure the same ROI is not analyzed twice and allows you to save any interesting ROIs. The details are comprised of area, x-coordinate, y-coordinate, AR, roundness, and solidity of the ROI. If the ROI is a polyline&gt;freehand ROI rather than a square&gt;oval, it acts as if the ROI is an oval&gt;square. The (oval) ROI can be restored by entering the details prompted by the {% include bc path='Edit | Selection | Restore Selection'%} (hotkey: {% include key content='Ctrl' %}+{% include key content='Shift' %}+{% include key content='E' %}) command.
+The top 6 rows of the column are details of the ROI. This makes sure the same ROI is not analyzed twice and allows you to save any interesting ROIs. The details are comprised of area, x-coordinate, y-coordinate, AR, roundness, and solidity of the ROI. If the ROI is a polyline&gt;freehand ROI rather than a square&gt;oval, it acts as if the ROI is an oval&gt;square. The (oval) ROI can be restored by entering the details prompted by the {% include bc path='Edit | Selection | Restore Selection'%} (hotkey: {% include key keys='Ctrl|Shift|E' %}) command.
 
 The results are displayed in a plot-window with the ROI details in the plot window title. The plot contains the buttons *List, Save, Copy.* The *Copy* button puts the data in the clipboard so it can be pasted into an Excel sheet. The settings for the copy button can be found under {% include bc path='Edit | Options | Profile Plot Options'%}. Recommended settings include: *Do not save x-values* (prevents slice number data being pasted into Excel) and *Autoclose* so that you don't have to close the analyzed plot each time.
 
@@ -67,7 +67,7 @@ Oval and rectangular ROIs can be restored individually from x, y, l, h values wi
 
 Background subtraction is needed before analysis of dual-channel ratio images. See also the [background correction](#background-correction) section. The *Ratio\_Profiler* plugin will perform ratiometric analysis of a single ROI on a dual-channel interleaved stack. The odd-slices are channel 1 images and the even slices are channel 2 images. If your two channels are opened as separate stacks, such as Zeiss, the two channels can be interleaved (mixed together by alternating between them) with the menu command {% include bc path='Plugins | Stacks - Shuffling | Stack Interleaver'%}.
 
-The plugin will generate a green-plot of the ratio values. Ch1÷Ch2 is the default and you can get Ch2÷Ch1 if the plugin is run with the {% include key content='Alt' %} key down. It will also generate a second plot of the intensities of the individual channels, Ch1 and Ch2, as well as a results table.
+The plugin will generate a green-plot of the ratio values. Ch1÷Ch2 is the default and you can get Ch2÷Ch1 if the plugin is run with the {% include key key='Alt' %} key down. It will also generate a second plot of the intensities of the individual channels, Ch1 and Ch2, as well as a results table.
 
 The first row of the results table contains values for the x, y, width and height of the ROI.
 
@@ -81,7 +81,7 @@ This table can be copied to the clipboard and pasted elsewhere with the "{% incl
 
 2\. Open *ROI manager* ({% include bc path='Analyze | Tools | ROI manager...'%}) and click the "Show All" button.
 
-3\. Select the cells to be analyzed and add them to the ROI manager ("Add" button or keyboard {% include key content='T' %} key).
+3\. Select the cells to be analyzed and add them to the ROI manager ("Add" button or keyboard {% include key key='T' %} key).
 
 4\. Run the plugin.
 
@@ -111,7 +111,7 @@ Linescanning involves acquiring a single line, one pixel in width, from a common
 
 A pseudo-linescan generation of a 3-D (*x, y, t*) image. It is useful for displaying 3-D data in 2 dimensions.
 
-A line of interest is drawn followed by the command: {% include bc path='Image | Stacks | Reslice'%} or with the keyboard button {% include key content='/' %}. It will ask you for the line width that you wish to be averaged. It will generate a pseudo-linescan "stack" with each slice representing the pseudo-linescan of a single-pixel wide line along the line of interest. Average the pseudo-linescan "stack" by selecting {% include bc path='Image | Stacks | Z-Project...'%} and use the *Average* command. A poly-line can be utilized, but this will only generate a single pixel slice.
+A line of interest is drawn followed by the command: {% include bc path='Image | Stacks | Reslice'%} or with the keyboard button {% include key key='/' %}. It will ask you for the line width that you wish to be averaged. It will generate a pseudo-linescan "stack" with each slice representing the pseudo-linescan of a single-pixel wide line along the line of interest. Average the pseudo-linescan "stack" by selecting {% include bc path='Image | Stacks | Z-Project...'%} and use the *Average* command. A poly-line can be utilized, but this will only generate a single pixel slice.
 
 Fiji's default settings assume that stacks are *z*-series rather than *t*-series. This means that many functions related to the third-dimension of an image stack are referred to with a *z-*. Just keep this in mind.
 

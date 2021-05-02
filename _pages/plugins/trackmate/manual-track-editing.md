@@ -18,7 +18,7 @@ It is a good idea to be already familiar with the automated segmentation in Trac
 
 Download the target image here: [Celegans-5pc-17timepoints.tif (94 MB)](http://samples.fiji.sc/Celegans-5pc-17timepoints.tif).
 
-Open it in Fiji. You will get a stack, made of 41 Z-slices over 17 time-points, each image being 240 x 295. As you can see in {% include bc path='Image | Properties'%} ({% include key content='Ctrl' %}+{% include key content='Shift' %}+{% include key content='P' %}), it has a spatial and temporal calibration.
+Open it in Fiji. You will get a stack, made of 41 Z-slices over 17 time-points, each image being 240 x 295. As you can see in {% include bc path='Image | Properties'%} ({% include key keys='Ctrl|Shift|P' %}), it has a spatial and temporal calibration.
 
 The context if the following: We used a *C.elegans* strain named [AZ212](http://www.wormbase.org/db/gene/strain?name=AZ212;class=Strain) that has its histone H2B coupled to the eGFP. The nuclei can therefore be seen in the 488 nm excitation fluorescence channel. The movie started just after the first cell division, so you can see on the first frame two blob-like spots in the center of the egg. On the top-right part of the egg, there is also two smaller spots that are the polar bodies. One will remain at a fixed place, the other one will be pushed around as the cells divide. The movie has 17 time-points that span the first 34 minutes of the *C.elegans* embryo development.
 
@@ -106,7 +106,7 @@ We will first start by removing all the bad spots and tracks. We decide not to k
     1.  Draw a selection rectangle around the whole track representation.
     2.  Select one spot or link in the track. Right-click anywhere on TrackScheme: a menu appears, in which you will find **Select whole track**.
 -   Notice in the displayer that the selected track appear with a green and thick line, so as to highlight it.
--   To delete all of it, simply press the {% include key content='Delete' %} key in TrackScheme, or use the right-click menu to do so.
+-   To delete all of it, simply press the {% include key key='Delete' %} key in TrackScheme, or use the right-click menu to do so.
 
 Do the same for Track\_1, since we do not care for polar bodies.
 
@@ -137,13 +137,13 @@ The HyperStack displayer let you edit spots in two ways:
 #### Deleting an existing spot
 
 -   Select a spot by single-clicking inside it. It turns green.
--   Press the {% include key content='Delete' %} key
+-   Press the {% include key key='Delete' %} key
 
 #### Changing the radius of a spot
 
 -   Select a spot for editing by double-slinking inside it.
--   By holding the {% include key content='Alt' %} key, rotates the wheel button. This will change the spot's radius.
--   Holding {% include key content='Shift' %}+{% include key content='Alt' %} changes its radius faster.
+-   By holding the {% include key key='Alt' %} key, rotates the wheel button. This will change the spot's radius.
+-   Holding {% include key keys='Shift|Alt' %} changes its radius faster.
 -   Double-click anywhere when you are happy with the new radius. The spot thumbnail in TrackScheme gets updated.
 
 ### With the keyboard
@@ -153,13 +153,13 @@ I have found using the mouse clicks sub-optimal and painful for the carpal bones
 #### Moving an existing spot
 
 -   Lay the mouse over the target spot (you do not need to select it).
--   Hold the {% include key content='Space' %} key.
+-   Hold the {% include key key='Space' %} key.
 -   Move the mouse around. The target spot follows the mouse location until you release the mouse key.
 
 #### Creating a new spot
 
 -   Lay the mouse anywhere on the image.
--   Press the {% include key content='A' %} key.
+-   Press the {% include key key='A' %} key.
 -   A new spot is <u>a</u>dded at the mouse location.
 
 By default, the new spot has the radius of the last spot edited with the mouse. So if you want to set the default radius, just double-click inside a spot that has the desired radius, then double-click again to leave editing mode. From now on, the radius of this spot will by used by default.
@@ -167,14 +167,14 @@ By default, the new spot has the radius of the last spot edited with the mouse. 
 #### Deleting an existing spot
 
 -   Lay the mouse over the target spot.
--   Press the {% include key content='D' %} key.
+-   Press the {% include key key='D' %} key.
 -   The target spot is <u>d</u>eleted
 
 #### Changing the radius of a spot
 
 -   Lay the mouse over the target spot.
--   Press the {% include key content='E' %} key to increase its radius, {% include key content='Q' %} to diminish it.
--   {% include key content='Shift' %}+{% include key content='Q' %} and {% include key content='Shift' %}+{% include key content='E' %} change the radius by a bigger amount.
+-   Press the {% include key key='E' %} key to increase its radius, {% include key key='Q' %} to diminish it.
+-   {% include key keys='Shift|Q' %} and {% include key keys='Shift|E' %} change the radius by a bigger amount.
 
 ## Adding missed spots
 
@@ -209,7 +209,7 @@ In TrackScheme, find the first spot of Track\_4, in frame 9. When you click on t
 We want to link this cell to the mother cell in Track\_0, frame 8, just before it divided. To do so,
 
 -   In the HyperStack displayer, move to the frame 8
--   Hold the {% include key content='Shift' %} key
+-   Hold the {% include key key='Shift' %} key
 -   Click on the mother cell
 
 It gets highlighted in the displayer, and in TrackScheme as well. You now have two cells in the selection.
@@ -227,13 +227,13 @@ After doing so, you should now see a branching track, as picture below. Notice t
 
 ### Creating several links at once
 
-Using {% include key content='Shift' %}+{% include key content='click' %}, we can put several cells in the selection, and create the links between each pair. We don't have the need for it, but this is a good way to create a single track from several solitary spots: Just select them all (dragging a selection box or {% include key content='Shift' %}+{% include key content='click' %}) and select the **Link N spots** menu item.
+Using {% include key keys='Shift|click' %}, we can put several cells in the selection, and create the links between each pair. We don't have the need for it, but this is a good way to create a single track from several solitary spots: Just select them all (dragging a selection box or {% include key keys='Shift|click' %}) and select the **Link N spots** menu item.
 
 ## Editing tracks: deleting links
 
 We do not have much to say here. The tracks we generated had missing links, but no spurious ones. So we do not need to remove any. But here is how to do it:
 
-In TrackScheme, select the target link by clicking on it; it gets highlighted in the displayer as well. Press the {% include key content='Delete' %} key to remove it.
+In TrackScheme, select the target link by clicking on it; it gets highlighted in the displayer as well. Press the {% include key key='Delete' %} key to remove it.
 
 Removing a link often splits a track in 2 new tracks. To have them properly re-arranged, press the **Redo layout** button.
 

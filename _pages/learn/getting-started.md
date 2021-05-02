@@ -62,7 +62,7 @@ Some tools offer option dialogs which you can open by double clicking the icon. 
 
 ![](/media/Oval Tool Option Dialog.png "Oval_Tool_Option_Dialog.png")
 
-If there is a small red arrow in the lower right corner of the tool icon, you can right-click ({% include key content='Ctrl' %}+{% include key content='click' %} on an Apple mouse) and select an alternative selection tool (e.g. a circular brush selection tool which shares the icon with the ellipse selection tool). Example:
+If there is a small red arrow in the lower right corner of the tool icon, you can right-click ({% include key keys='Ctrl|click' %} on an Apple mouse) and select an alternative selection tool (e.g. a circular brush selection tool which shares the icon with the ellipse selection tool). Example:
 
 ![](/media/Alternative Tools.png "Alternative_Tools.png")
 

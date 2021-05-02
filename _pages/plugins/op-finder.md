@@ -11,7 +11,7 @@ The Op Finder is a utility for the browsing, learning, and running of all availa
 
 There are two ways to start up the Op Finder:
 
-1.  Using the shortcut: {% include key content='Shift\|\|L' %}
+1.  Using the shortcut: {% include key keys='Shift||L' %}
 2.  Using the menu path: {% include bc path='Plugins|Utilities|Find Ops...'%}
 
 # Parts of the Op Finder
@@ -90,7 +90,7 @@ Code snippets are available in the [Developer view](#for-developers). These are 
 
 ![](/media/1-select-op.png "fig:1-select-op.png")
 
-2\. In the [Script Editor](/scripting/script-editor) (the keyboard shortcut {% include key content='{' %} (open curly bracket) opens the editor), we need to add a reference to the `OpService` which will be our entry point for Op usage:
+2\. In the [Script Editor](/scripting/script-editor) (the keyboard shortcut {% include key key='{' %} (open curly bracket) opens the editor), we need to add a reference to the `OpService` which will be our entry point for Op usage:
 
     # @OpService ops
 
@@ -121,7 +121,7 @@ and paste:
 <!-- -->
 
 
-All of the parameters with a {% include key content='?' %} are **optional**. For our purposes, let's just work with the input image, kernel, and returned image:
+All of the parameters with a {% include key key='?' %} are **optional**. For our purposes, let's just work with the input image, kernel, and returned image:
 
 <!-- -->
 

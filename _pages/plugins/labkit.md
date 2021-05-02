@@ -36,7 +36,7 @@ Follow these steps to segment an image:
 
 1.  Open an image in ImageJ.
 2.  Start Labkit by selecting "Plugins &gt; Segmentation &gt; Labkit" from the menu.
-3.  Labkit should start and display the image. If it shows a black window instead of the image: Click {% include key content='press\|S' %} and adjust the contrast.
+3.  Labkit should start and display the image. If it shows a black window instead of the image: Click {% include key key='S' %} and adjust the contrast.
 4.  Select "foreground" (In the side bar of Labkit). Select the pencil tool (top bar of Labkit) and draw on the image.
 5.  Select "background" and the pencil tool, and mark some other region of the image as background.
 6.  In the side bar of Labkit, under the heading "/techniques/segmentation" you will find an entry "Classifier \#1". And next to it there is a play button (black triangle). Click it, to train the Classifier. After a moment you will see the automatic segmentation of your image.
@@ -46,26 +46,26 @@ Follow these steps to segment an image:
 
 Labkit is based on Big Data Viewer. Navigation the image works as in Big Data Viewer, and many short cuts work too. Click [here](/plugins/bdv) for a description of the short cuts.
 
--   {% include key content='press\|Ctrl\|Shift\|mouse-wheel' %} to zoom in and out
--   {% include key content='press\|right-click\|drag' %} to move the image
--   {% include key content='press\|left-click\|drag' %} to rotate a 3d image
--   {% include key content='press\|mouse-wheel' %} to scroll through the z-slices of a 3d image
+-   {% include key keys='Ctrl|Shift|mouse-wheel' %} to zoom in and out
+-   {% include key keys='right-click|drag' %} to move the image
+-   {% include key keys='left-click|drag' %} to rotate a 3d image
+-   {% include key key='mouse-wheel' %} to scroll through the z-slices of a 3d image
 
 ## Tips & Tricks
 
--   If there's a black window, where the image should be? You might need to change the contrast settings: Click on the image, and then press {% include key content='press\|S' %} on the keyboard. A dialog shows up. Use it to adjust the contrast.
+-   If there's a black window, where the image should be? You might need to change the contrast settings: Click on the image, and then press {% include key key='S' %} on the keyboard. A dialog shows up. Use it to adjust the contrast.
 -   There can be more than two labels, just click on the "Add label" button...
 -   Labels can be renamed, by double clicking on them.
 -   To change the label color, just click on the colored rectangle left of the labels name.
--   {% include key content='press\|D\|mouse-wheel' %} to change the size of the brush tool.
+-   {% include key keys='D|mouse-wheel' %} to change the size of the brush tool.
 
 ## Drawing Tool Shortcuts
 
--   {% include key content='press\|D\|left-click' %} to draw with the pencil tool.
--   {% include key content='press\|E\|left-click' %} to erase with the pencil tool.
--   {% include key content='press\|F\|left click' %} to use the flood fill tool.
--   {% include key content='press\|R\|left-click' %} to remove a connected component.
--   {% include key content='press\|N' %} - switch to next label
+-   {% include key keys='D|left-click' %} to draw with the pencil tool.
+-   {% include key keys='E|left-click' %} to erase with the pencil tool.
+-   {% include key keys='F|left click' %} to use the flood fill tool.
+-   {% include key keys='R|left-click' %} to remove a connected component.
+-   {% include key key='N' %} - switch to next label
 
 ## Open & Save - Import & Export
 

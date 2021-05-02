@@ -33,7 +33,7 @@ It will ask you for the file name of the plugin, and install the given file.
 -   You can also copy the *.jar*, *.class* or *.java* files (or a script in any language Fiji supports) to *Fiji.app/plugins/*, followed by calling {% include bc path='Help | Refresh Menus'%}.
 
 
-**Note:** On macOS, you need to {% include key content='Ctrl' %}+{% include key content='click' %} on the *Fiji* icon in the Finder and select *Show package contents* to see the *plugins/* folder.
+**Note:** On macOS, you need to {% include key keys='Ctrl|click' %} on the *Fiji* icon in the Finder and select *Show package contents* to see the *plugins/* folder.
 
 ## For developers
 

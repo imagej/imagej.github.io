@@ -21,15 +21,15 @@ Before you pick a start point for your first path, the tracer will look like thi
 
 ### 2. Click a subsequent point
 
-A small blue square should appear, showing the start of the path: ![](/media/Snt-cropped-after-starting.png "fig:Snt-cropped-after-starting.png") Move through the stack to find a subsequent point further along the same neuron, blood vessel, or whatever, and click there. During tracing, if a part cannot be found immediately, you may see the progress of the search in cyan: ![](/media/Snt-cropped-mid-tracing.png "fig:Snt-cropped-mid-tracing.png") You can scroll through the stack while such a search is in progress - if it appears not be making good progress, it's probably best to click "Abandon search" (or press {% include key content='Esc' %}) and pick a point closer to the start point.
+A small blue square should appear, showing the start of the path: ![](/media/Snt-cropped-after-starting.png "fig:Snt-cropped-after-starting.png") Move through the stack to find a subsequent point further along the same neuron, blood vessel, or whatever, and click there. During tracing, if a part cannot be found immediately, you may see the progress of the search in cyan: ![](/media/Snt-cropped-mid-tracing.png "fig:Snt-cropped-mid-tracing.png") You can scroll through the stack while such a search is in progress - if it appears not be making good progress, it's probably best to click "Abandon search" (or press {% include key key='Esc' %}) and pick a point closer to the start point.
 
 ### 3. Confirm the temporary path
 
-Once the search has found that point, it is shown in blue (to indicate that this is still a temporary path) and you are asked to confirm (by clicking "Yes" or pressing {% include key content='Y' %}) that this path is following the route through the stack that you expect. If it is not, then click "No" {% include key content='N' %} and you'll go back to step 2. ![](/media/Snt-cropped-confirmation.png "fig:Snt-cropped-confirmation.png")
+Once the search has found that point, it is shown in blue (to indicate that this is still a temporary path) and you are asked to confirm (by clicking "Yes" or pressing {% include key key='Y' %}) that this path is following the route through the stack that you expect. If it is not, then click "No" {% include key key='N' %} and you'll go back to step 2. ![](/media/Snt-cropped-confirmation.png "fig:Snt-cropped-confirmation.png")
 
 ### 4. After confirming the temporary path
 
-Assuming you confirmed the path, the confirmed path will appear in red, like this: ![](/media/Snt-cropped-confirmed.png "fig:Snt-cropped-confirmed.png") Now you are essentially back at step 2. Normally you will go on top pick further points along the structure. However, if you have finished with that path, click "Finish Path" {% include key content='F' %} and you will go back to step 1.
+Assuming you confirmed the path, the confirmed path will appear in red, like this: ![](/media/Snt-cropped-confirmed.png "fig:Snt-cropped-confirmed.png") Now you are essentially back at step 2. Normally you will go on top pick further points along the structure. However, if you have finished with that path, click "Finish Path" {% include key key='F' %} and you will go back to step 1.
 
 ### 5. After completing a path
 
@@ -41,11 +41,11 @@ Before you pick a start point for your first path, the tracer will look like thi
 
 ### 1. Select the path to branch off
 
-To select the path you want to branch off from, you can either select it in the path list, or press {% include key content='G' %} while your mouse pointer is over the path. When the path is first selected, it will be shown in the default green color, as below: ![](/media/Snt-sb-before-starting-path.png "fig:Snt-sb-before-starting-path.png")
+To select the path you want to branch off from, you can either select it in the path list, or press {% include key key='G' %} while your mouse pointer is over the path. When the path is first selected, it will be shown in the default green color, as below: ![](/media/Snt-sb-before-starting-path.png "fig:Snt-sb-before-starting-path.png")
 
 ### 2. Click while holding the branch modifier to start the branch
 
-To force the start of the new path to be a branch off the selected path, hold down the {% include key content='Ctrl\|Shift' %} keys while you move the mouse to find the right point under the red cross-hairs. Then click with the left mouse button - {% include key content='Ctrl\|Shift' %} should still be held down. Finally release the keys. **N.B. on MacOS you must use {% include key content='Alt\|Shift' %} instead.** Once you've started a path, it looks like this: ![](/media/Snt-sb-started-branch.png "fig:Snt-sb-started-branch.png")
+To force the start of the new path to be a branch off the selected path, hold down the {% include key keys='Ctrl|Shift' %} keys while you move the mouse to find the right point under the red cross-hairs. Then click with the left mouse button - {% include key keys='Ctrl|Shift' %} should still be held down. Finally release the keys. **N.B. on MacOS you must use {% include key keys='Alt|Shift' %} instead.** Once you've started a path, it looks like this: ![](/media/Snt-sb-started-branch.png "fig:Snt-sb-started-branch.png")
 
 ### 3. Continue adding to the path as normal
 
@@ -57,7 +57,7 @@ Supposing you want the end of a path that you're tracing to join onto an existin
 
 ... and you want the final part of that path to join up with the existing path running from the bottom to the top of the image. First, select that path in the path list, so that it turns green: ![](/media/Snt-ej-cropped-selected-destination-path.png "fig:Snt-ej-cropped-selected-destination-path.png")
 
-Now hold down {% include key content='Ctrl\|Shift' %} (or {% include key content='Alt\|Shift' %} on MacOS) to restrict the end point to be a "join" on that existing path. Click (while still holding down the modifier keys) to start the search for that end point and make it join the existing path. If the search can find a path to the end point, the result should look like this: ![](/media/Snt-ej-cropped-end-join-created.png "fig:Snt-ej-cropped-end-join-created.png")
+Now hold down {% include key keys='Ctrl|Shift' %} (or {% include key keys='Alt|Shift' %} on MacOS) to restrict the end point to be a "join" on that existing path. Click (while still holding down the modifier keys) to start the search for that end point and make it join the existing path. If the search can find a path to the end point, the result should look like this: ![](/media/Snt-ej-cropped-end-join-created.png "fig:Snt-ej-cropped-end-join-created.png")
 
 If you're happy with that, confirming the temporary path will automatically complete the whole path, since if you're creating an end join there cannot be any more to the path. The result will look like this: ![](/media/Snt-ej-cropped-path-completed.png "fig:Snt-ej-cropped-path-completed.png")
 

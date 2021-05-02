@@ -64,7 +64,7 @@ Other changes include:
 -   when JAVA\_HOME is set to a bogus location Fiji ignores it now (thanks Albert)
 -   avoid mistaking .jar files inside .rsrc/ directories for real .jar files, working around a MacOSX quirk (thanks to Maté Biro)
 -   ImageJ was updated to version 1.43h
--   the Command Launcher ({% include key content='Ctrl' %}+{% include key content='L' %} in the Fiji window) was converted to Swing, and sports a fuzzy matching, and an option to show more information such as which .jar file that plugin is contained in, for a much-improved user-experience (thanks Mark)
+-   the Command Launcher ({% include key keys='Ctrl|L' %} in the Fiji window) was converted to Swing, and sports a fuzzy matching, and an option to show more information such as which .jar file that plugin is contained in, for a much-improved user-experience (thanks Mark)
 -   ImageJ now opens websites in the preferred browser on Linux
 -   cropping an image marks it as modified now
 -   {% include bc path='Plugins | Install Plugin...'%} can install .jar files now (provided you have permission to write to Fiji's plugins/ directory)

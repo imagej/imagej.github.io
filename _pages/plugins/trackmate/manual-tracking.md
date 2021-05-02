@@ -34,14 +34,14 @@ With this tool selected, you can now make the image window active and use the mo
 -   To leave the edit mode, **double-click** again anywhere. The spot is then added to the data model.
 -   To edit it again, **double-click inside the spot**. Its outline is now dashed; you are back in the edit mode.
 -   While in the edit mode, you can move the edited spot around by clicking inside the spot and dragging it around. The spot will follow you if you change the time or the Z slider, and it will be added to the right plane upon leaving the edit mode.
--   You can also change its radius by using {% include key content='Alt' %}+{% include key content='Mouse wheel' %}. Using {% include key content='Shift' %}+{% include key content='Alt' %} changes the spot radius faster.
+-   You can also change its radius by using {% include key keys='Alt|Mouse wheel' %}. Using {% include key keys='Shift|Alt' %} changes the spot radius faster.
 
 This is how you edit the data with the mouse. You can also use the keyboard:
 
--   To create (or <u>a</u>dd) a spot, press {% include key content='A' %} with the mouse at the desired location. By default, the new spot will have the radius of the last spot you edited with the double-click mode. So if you want to have all spots of a certain radius, edit a spot by double-clicking inside it, set its radius using {% include key content='Alt' %}+{% include key content='Mouse wheel' %}, and leave the edit mode. This will "capture" the spot radius and apply it anywhere after.
--   To move a spot around, press {% include key content='Space' %} with the mouse over the target spot. Then move the mouse around. No need for mouse clicks.
--   To <u>d</u>elete a spot, press the {% include key content='D' %} key with the mouse over the target spot.
--   To change a spot radius, press {% include key content='Q' %} and {% include key content='E' %} over the target spot. {% include key content='Shift' %}+{% include key content='Q' %} and {% include key content='Shift' %}+{% include key content='E' %} change the radius by a larger amount.
+-   To create (or <u>a</u>dd) a spot, press {% include key key='A' %} with the mouse at the desired location. By default, the new spot will have the radius of the last spot you edited with the double-click mode. So if you want to have all spots of a certain radius, edit a spot by double-clicking inside it, set its radius using {% include key keys='Alt|Mouse wheel' %}, and leave the edit mode. This will "capture" the spot radius and apply it anywhere after.
+-   To move a spot around, press {% include key key='Space' %} with the mouse over the target spot. Then move the mouse around. No need for mouse clicks.
+-   To <u>d</u>elete a spot, press the {% include key key='D' %} key with the mouse over the target spot.
+-   To change a spot radius, press {% include key key='Q' %} and {% include key key='E' %} over the target spot. {% include key keys='Shift|Q' %} and {% include key keys='Shift|E' %} change the radius by a larger amount.
 
 And that's it for spot creation.
 
@@ -55,13 +55,13 @@ All we have done so far was to create single spots, that are not part of any tra
 
 We need to add spots to the **selection**. The selection in TrackMate is a very useful tool for inspection, particularly because it is shared amongst all the possible views of a session, including *e.g.* [TrackScheme](/plugins/trackmate/trackscheme). When you click in a spot, the selection is made of this spot, and all views are centered on the target spot.
 
-To create a link, we need exactly two spots to be in the selection. To add or remove a spot from the selection, use {% include key content='Shift' %}+{% include key content='click' %}. Selected spots are highlighted with a green, thick circle. To empty the selection, click on an empty (no spot) part of the image.
+To create a link, we need exactly two spots to be in the selection. To add or remove a spot from the selection, use {% include key keys='Shift|click' %}. Selected spots are highlighted with a green, thick circle. To empty the selection, click on an empty (no spot) part of the image.
 
-Once you have two spots in the selection, you can create a link between them by simply pressing the {% include key content='L' %} key. It should be immediately displayed, as on the example on the right.
+Once you have two spots in the selection, you can create a link between them by simply pressing the {% include key key='L' %} key. It should be immediately displayed, as on the example on the right.
 
 As you can see, there is nothing that prevents you from creating a link over many frames, between any two spots. A spot can have several link arriving or departing from it. The only impossible things is to create a link between two spots that belong to the same frame.
 
-Removing a link is done the same way: Select exactly two spots that are connected by a link, and press the {% include key content='L' %} key. The link will be removed.
+Removing a link is done the same way: Select exactly two spots that are connected by a link, and press the {% include key key='L' %} key. The link will be removed.
 
 ## The auto-linking mode
 
@@ -69,9 +69,9 @@ Removing a link is done the same way: Select exactly two spots that are connecte
 
 Creating long tracks this way would be tedious, as you would always have to select a spot before creating a link. There is way to simplify this.
 
-Press {% include key content='Shift' %}+{% include key content='L' %} to toggle the auto-linking mode on/off. When the mode is on, new spots will be automatically created to the spot in the selection (if there is only one). Then the selection is set to be the newly created spot, which allows you to quickly trace tracks by moving through frames and pressing the {% include key content='A' %} key over the desired location.
+Press {% include key keys='Shift|L' %} to toggle the auto-linking mode on/off. When the mode is on, new spots will be automatically created to the spot in the selection (if there is only one). Then the selection is set to be the newly created spot, which allows you to quickly trace tracks by moving through frames and pressing the {% include key key='A' %} key over the desired location.
 
-Let's apply this to our data. First create a spot over the bright blob at the top of the first frame, and roughly adjust its radius. Make sure the selection contains this spot, and only it (it must be highlighted in green), and press {% include key content='Shift' %}+{% include key content='L' %} to toggle the auto-linking mode on. Then move the second frame and place the mouse over the new spot location. Press **A**; a spot is created AND it is linked to the first spot by a track normally painted in red. Repeat until you reach about the frame 15 (the track branches, at some point, you have to decide what way you want to go). You should get - rather quickly - something like the picture on the right.
+Let's apply this to our data. First create a spot over the bright blob at the top of the first frame, and roughly adjust its radius. Make sure the selection contains this spot, and only it (it must be highlighted in green), and press {% include key keys='Shift|L' %} to toggle the auto-linking mode on. Then move the second frame and place the mouse over the new spot location. Press **A**; a spot is created AND it is linked to the first spot by a track normally painted in red. Repeat until you reach about the frame 15 (the track branches, at some point, you have to decide what way you want to go). You should get - rather quickly - something like the picture on the right.
 
 {% include clear%}
 
@@ -121,7 +121,7 @@ We are interested in the **Semi-automatic tracking** panel. The bottom panel has
 
 The **Quality threshold** and the **Distance tolerance** settings allow to tune the tool. A quality threshold of 0.5 means that the spot found must have a quality of at least 50% of the first spot to be accepted. A distance tolerance of 2 means that it must not be further away than twice the radius of the first spot to be accepted.
 
-Let's put this in practice. Go to the frame 16 (or wherever you stopped annotating in the previous section), and select the last spot of the right track. You can start the semi-automatic tracking by either clicking on the purple button on the tool panel, or by pressing the {% include key content='Shift' %}+{% include key content='A' %} key. The tracking process is updated live.
+Let's put this in practice. Go to the frame 16 (or wherever you stopped annotating in the previous section), and select the last spot of the right track. You can start the semi-automatic tracking by either clicking on the purple button on the tool panel, or by pressing the {% include key keys='Shift|A' %} key. The tracking process is updated live.
 
 How far can it go really depends on the radius you set for the first spot, so results may vary. Here is how it looks on a movie:
 

@@ -49,8 +49,8 @@ There are two ways to create such a snapshot, known as a "thread dump" or "stack
 
 ### The easy way
 
-1.  Press {% include key content='Shift' %}+{% include key content='\\' %} in ImageJ itself. If successful, it will open a new window with the stack trace.
-2.  Press {% include key content='Ctrl\|A' %} to select it, then {% include key content='Ctrl\|C' %} to copy it to the clipboard.
+1.  Press {% include key keys='Shift|\\' %} in ImageJ itself. If successful, it will open a new window with the stack trace.
+2.  Press {% include key keys='Ctrl|A' %} to select it, then {% include key keys='Ctrl|C' %} to copy it to the clipboard.
 
 ### The fallback way
 
@@ -60,14 +60,14 @@ If the first method does not work, and you can reproduce the hang:
     -   <img src="/media/Win.png" height="20"/> On Windows, you will need to download and run [this batch file](https://raw.githubusercontent.com/imagej/imagej/master/bin/ImageJ.bat), which launches ImageJ with an attached Command Prompt window.
 2.  Generate and copy the stack trace:
     -   <img src="/media/Osx.png" height="20"/> <img src="/media/Tux.png" height="20"/> On non-Windows platforms:
-        1.  Press {% include key content='Ctrl\|\\' %} in the console window to print the stack trace.
+        1.  Press {% include key keys='Ctrl|\\' %} in the console window to print the stack trace.
         2.  Select the stack trace by dragging with the left mouse button.
         3.  Right click and select "Copy" to copy it to the clipboard.
     -   <img src="/media/Win.png" height="20"/> On Windows:
-        1.  Press {% include key content='Ctrl\|Pause' %} in the Command Prompt window to print the stack trace. (**Note:** this shortcut actually uses the [Break key](Wikipedia_Break_key))
+        1.  Press {% include key keys='Ctrl|Pause' %} in the Command Prompt window to print the stack trace. (**Note:** this shortcut actually uses the [Break key](Wikipedia_Break_key))
         2.  Click the Command Prompt icon in the upper left corner of the window, and choose {% include bc path='Edit|Mark'%}.
         3.  Select the stack trace by dragging with the left mouse button.
-        4.  Press {% include key content='Enter' %} to copy it to the clipboard.
+        4.  Press {% include key key='Enter' %} to copy it to the clipboard.
 
 Once you have the stack trace. you can paste it into a [bug report](/help/report-a-bug)!
 
@@ -130,7 +130,7 @@ You can override the autoscaling using the [Brightness/Contrast](/ij/docs/guide/
 
 It is important to understand that [your image is a collection of samples, each of which has a numerical intensity value](/techniques/principles#what-are-pixel-values). The unit of these values is rather arbitrary and unspecified, depending on the type and calibration of your detector. Your file is stored with a certain [bit depth](/ij/docs/guide/146-7.html#toc-Section-7), meaning these intensities can range from 0 (no light detected) to a particular maximum value (the most light the detector is capable of detecting). For example, 8-bit images have a maximum value of 255, whereas 16-bit images have a maximum of 65535. In practice though, especially with higher bit depths, your detector will not typically record sample intensities across that entire range of values (and if it does record a significant number of values at the maximum, you probably oversaturated your detector, which will skew your analysis!).
 
-Because the full range of values is typically much less than the maximum—e.g., in the case of a 12-bit detector the actual maximum range is 0-4095, and often even smaller in practice—ImageJ performs **autoscaling** to show you a meaningful or "pretty good" image by default, which is not just a black square (see previous question). That is: it maps the darkest actual intensity in your data to black, and the brightest actual intensity in your data to white. You can override this mapping using the [Brightness/Contrast](/ij/docs/guide/146-28.html#sub:Adjust) dialog under the {% include bc path='Image | Adjust'%} menu (shortcut: {% include key content='shift' %}+{% include key content='C' %}).
+Because the full range of values is typically much less than the maximum—e.g., in the case of a 12-bit detector the actual maximum range is 0-4095, and often even smaller in practice—ImageJ performs **autoscaling** to show you a meaningful or "pretty good" image by default, which is not just a black square (see previous question). That is: it maps the darkest actual intensity in your data to black, and the brightest actual intensity in your data to white. You can override this mapping using the [Brightness/Contrast](/ij/docs/guide/146-28.html#sub:Adjust) dialog under the {% include bc path='Image | Adjust'%} menu (shortcut: {% include key keys='shift|C' %}).
 
 Alternately, to disable autoscaling during initial import, you can use the [Bio-Formats](/formats/bio-formats) plugin to import your data with the "Autoscale" option turned off:
 

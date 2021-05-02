@@ -12,9 +12,9 @@ section: Development:Git
 In the newer versions of Eclipse, the EGit extension comes already preinstalled. If this should not be so in your case you can install it as follows:
 
 1.  in Eclipse go to {% include bc path='Help |Install New Software...'%}
-2.  you can look in the "All Available Sites" drop down panel if EGit is existing there or add update site with the {% include key content='Add..' %} button
+2.  you can look in the "All Available Sites" drop down panel if EGit is existing there or add update site with the {% include key key='Add..' %} button
 3.  enter this URI: http://download.eclipse.org/egit/updates
-4.  choose the *JGit* and the *Eclipse Team Provider* and {% include key content='Finish' %} the installation
+4.  choose the *JGit* and the *Eclipse Team Provider* and {% include key key='Finish' %} the installation
 
 ## Setting up EGit panels in Eclipse
 
@@ -30,11 +30,11 @@ Here you can also find a video tutorial on [integrating github with Eclipse](htt
 1.  go to github into the repository you wish to clone and copy the URI
 2.  switch to the Git repository panel in Eclipse
 3.  *Clone a Git Repository* button (in the window which opens up the copied URI should be already specified. If not, change this here)
-4.  hit {% include key content='Next &gt;' %} and select the branch(es) you would like to clone (then hit {% include key content='Next &gt;' %})
-5.  specify where all your local git repositories sould be stored and press {% include key content='Finish' %}
+4.  press {% include key key='Next &gt;' %} and select the branch(es) you would like to clone (then press {% include key key='Next &gt;' %})
+5.  specify where all your local git repositories sould be stored and press {% include key key='Finish' %}
 6.  once the cloned repository is visible in the *Git Repositories* panel, you can right click on it and choose *Import Projects...*
-    1.  choose *Import as general project* and press {% include key content='Next &gt;' %}
-    2.  specify the projects name and {% include key content='Next &gt;' %}
+    1.  choose *Import as general project* and press {% include key key='Next &gt;' %}
+    2.  specify the projects name and {% include key key='Next &gt;' %}
 
 If the clones repository contains a [Maven](/develop/maven) project, you can then right-click it in Eclipses' package explorer and choose {% include bc path='Configure |Convert to Maven Project'%}
 

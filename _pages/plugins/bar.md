@@ -78,9 +78,9 @@ Described in [Scripting BARs](#scripting-bars)
 
 ## Accessing BARs
 
-As with all ImageJ commands, BAR scripts can be accessed in multiple ways: 1) through the {% include bc path="BAR |" %} menu, 2) the [Context Menu](#context-menu), 3) [Keyboard Shortcuts](#keyboard-shortcuts), 3) the *Shortcuts Menu Tool* ({% include bc path="BAR | Tool Installers | Install Shortcuts Menu" %}), that registers frequently used commands in the ImageJ toolbar, 4) by [pressing](#ExpediteAccess) {% include key content='press\|[L](#ExpediteAccess)' %}, or 5) from other [scripts, macros and plugins](#scripting-bars). 
+As with all ImageJ commands, BAR scripts can be accessed in multiple ways: 1) through the {% include bc path="BAR |" %} menu, 2) the [Context Menu](#context-menu), 3) [Keyboard Shortcuts](#keyboard-shortcuts), 3) the *Shortcuts Menu Tool* ({% include bc path="BAR | Tool Installers | Install Shortcuts Menu" %}), that registers frequently used commands in the ImageJ toolbar, 4) by [pressing](#ExpediteAccess) {% include key key='[L](#ExpediteAccess)' %}, or 5) from other [scripts, macros and plugins](#scripting-bars). 
 {% capture tip%}
-You can open any BAR script by holding {% include key content='press\|Shift' %} while selecting its name from the {% include bc path="BAR |" %} menu. For pre-compiled java plugins, the source code is available through the <span style="border-bottom:1px dotted #ccc;">About BAR...</span> command.
+You can open any BAR script by holding {% include key key='Shift' %} while selecting its name from the {% include bc path="BAR |" %} menu. For pre-compiled java plugins, the source code is available through the <span style="border-bottom:1px dotted #ccc;">About BAR...</span> command.
 {% endcapture %}
 {% include tip id='OpeningBAR' tip=tip %}
 
@@ -113,19 +113,20 @@ It may be wise to allow ImageJ enough time to register all scripts before trigge
 
 It is a productivity tool that applies the principles of the [search bar](/learn/getting-started#the-search-bar) to file browsing, providing instant access to files just by typing abbreviations of filenames. It serves two purposes: 1) to expedite the opening of files and 2) to produce filtered lists of directory contents. Features include: drag-and-drop support, interaction with native file manager, regex filtering, and a built-in console for common operations.
 
-<i>Console mode</i> is triggered by typing {% include key content='!' %}, which evokes a list of searchable commands so that all file navigation can be done exclusively with the keyboard. Some of these (`cd`, `ls`, `pwd`, etc.) are reminiscent of commands found in most command-line interfaces. Here are some examples:
+<i>Console mode</i> is triggered by typing {% include key key='!' %}, which evokes a list of searchable commands so that all file navigation can be done exclusively with the keyboard. Some of these (`cd`, `ls`, `pwd`, etc.) are reminiscent of commands found in most command-line interfaces. Here are some examples:
 
-To access ImageJ's LUT folder:Type {% include key content='!\|L\|U\|T\|Enter' %}  
-To access all JavaScript [lib files](#lib):Type {% include key content='!\|L\|I\|B\|Enter' %}, then {% include key content='.\|J\|S' %}  
-To reveal the directory of active image:Type {% include key content='!\|I\|M\|P\|Enter' %}, then choose {% include bc path='Reveal Path'%}.  
-To access Commander's built-in help:Type {% include key content='!\|H\|E\|L\|P\|Enter' %}  
-To extract the paths of all TIFF images in a directory:Drag and drop the desired folder into the Commander list  
-Type {% include key content='T\|I\|F\|Enter' %}  
-Choose {% include bc path='Print Current List'%} in the Options Menu or press {% include key content='Control\|P' %} ({% include key content='Command\|P' %} in Mac OS).  
+* To access ImageJ's LUT folder: type `!LUT` and press {% include key key='Return' %}
+* To access all JavaScript [lib files](#lib): type `!LIB` and press {% include key key='Return' %}, then `.JS`
+* To reveal the directory of active image: type `!IMP` and press {% include key key='Return' %}, then choose {% include bc path='Reveal Path'%}.
+* To access Commander's built-in help: type `!HELP` and press {% include key key='Return' %}
+* To extract the paths of all TIFF images in a directory:
+    * Drag and drop the desired folder into the Commander list
+    * Type `TIF` and press {% include key key='Return' %}
+    * Choose {% include bc path='Print Current List'%} in the Options Menu or press {% include key keys='Control|P' %} ({% include key keys='Command|P' %} in Mac OS).
 
 ### Keyboard Shortcuts
 
-You can use {% include bc path="Plugins | Shortcuts | Create Shortcut..." %} to assign hotkeys (e.g., keyboard key that you do not use frequently such as {% include key content='press\|0' %} or {% include key content='press\|F7' %}) to any script registered in the {% include bc path="BAR |" %} menu. These shortcuts will be listed in {% include bc path="Plugins | Shortcuts |" %} and are remembered across restarts.
+You can use {% include bc path="Plugins | Shortcuts | Create Shortcut..." %} to assign hotkeys (e.g., keyboard key that you do not use frequently such as {% include key key='0' %} or {% include key key='F7' %}) to any script registered in the {% include bc path="BAR |" %} menu. These shortcuts will be listed in {% include bc path="Plugins | Shortcuts |" %} and are remembered across restarts.
 
 Alternatively, keyboard shortcuts can be defined in macros that call BAR commands by placing the [shortcut key within square brackets](/scripting/macro#keyboard-shortcuts) at the end of the macro name. Such macros can pass specific options to BAR commands, allowing scripts to run without prompt. Example:
 
@@ -135,7 +136,7 @@ Alternatively, keyboard shortcuts can be defined in macros that call BAR command
 
 As [mentioned](#context-menu), such macros can then be pasted into the text area of {% include bc path="Edit | Options | Startup..." %} so that they can be executed when ImageJ starts up. 
 {% capture tip%}
-Two other expedite ways of retrieving commands include: 1) Pressing {% include key content='press\|L' %}, the shortcut for the \_\_\_SHADOW3\_\_\_ and 2) Pressing {% include key content='press\|9' %}, the default shortcut for the *Recent Commands* list.
+Two other expedite ways of retrieving commands include: 1) Pressing {% include key key='L' %}, the shortcut for the \_\_\_SHADOW3\_\_\_ and 2) Pressing {% include key key='9' %}, the default shortcut for the *Recent Commands* list.
 {% endcapture %}
 {% include tip id='ExpediteAccess' tip=tip %}== Scripting BARs == Although BARs can be used as standalone commands, the scripts and plugins in BAR become more useful when incorporated into other routines.
 
@@ -379,7 +380,7 @@ Yes, please do! If you have some suggestions on how to improve it, do {% include
 <!-- -->
 
 Nothing happens when I run a BAR. What's going on?  
-In a case of premature termination BARs tend to exit rather silently. The best way to have insights on an unexpected error is to run it directly from the [Script Editor](/scripting/script-editor): Open the script by holding {% include key content='press\|Shift' %} while selecting it from the {% include bc path="BAR |" %} menu, press *Run* and have a look at the editors' s console, where all sort of useful messages will be printed to. Do {% include github org='tferr' repo='Scripts' path='README.md\#help' label='let us know' %} if you have found a bug.
+In a case of premature termination BARs tend to exit rather silently. The best way to have insights on an unexpected error is to run it directly from the [Script Editor](/scripting/script-editor): Open the script by holding {% include key key='Shift' %} while selecting it from the {% include bc path="BAR |" %} menu, press *Run* and have a look at the editors' s console, where all sort of useful messages will be printed to. Do {% include github org='tferr' repo='Scripts' path='README.md\#help' label='let us know' %} if you have found a bug.
 
 <!-- -->
 

@@ -85,13 +85,13 @@ Text on converted image.
 
 ### Adding Text/Line/Box
 
-Drawing lines/boxes is achieved by first using the line/rectangle ROI tool from the toolbar or defining the box via the *Specify Line* or *Specify ROI* plugins. The line/box can then be stamped in to the image through "*Edit/Draw*" or the shortcut {% include key content='Ctrl' %}+{% include key content='D' %}. If you're drawing the ROI on a stack, you'll be asked if you want to process all of the slices. Choosing 'yes' will draw the ROI on every slice while choosing 'no' will result in the ROI only being added to the current frame. The color is determined by the color picker toolbar button and the width in pixels is defined in "*Edit/Options/Line width*". The line width must be determined before it is drawn on the image.
+Drawing lines/boxes is achieved by first using the line/rectangle ROI tool from the toolbar or defining the box via the *Specify Line* or *Specify ROI* plugins. The line/box can then be stamped in to the image through "*Edit/Draw*" or the shortcut {% include key keys='Ctrl|D' %}. If you're drawing the ROI on a stack, you'll be asked if you want to process all of the slices. Choosing 'yes' will draw the ROI on every slice while choosing 'no' will result in the ROI only being added to the current frame. The color is determined by the color picker toolbar button and the width in pixels is defined in "*Edit/Options/Line width*". The line width must be determined before it is drawn on the image.
 
-Adding text is done with the toolbar's text button. Click the toolbar, click the image, and write the desired text. Double click on the toolbar-text button to set the font size and style. Color is determined by the color picker toolbar button. Antialiasing can be turned on/off via the menu item "*Edit/Options/Fonts*" and unchecking the "Smooth" option (although this option does not affect the Stamper plugins which have antialiasing on permanently). The text is stamped onto the image through the same methods of drawing on a box or line (*Edit/Draw* or {% include key content='Ctrl' %}+{% include key content='D' %}).
+Adding text is done with the toolbar's text button. Click the toolbar, click the image, and write the desired text. Double click on the toolbar-text button to set the font size and style. Color is determined by the color picker toolbar button. Antialiasing can be turned on/off via the menu item "*Edit/Options/Fonts*" and unchecking the "Smooth" option (although this option does not affect the Stamper plugins which have antialiasing on permanently). The text is stamped onto the image through the same methods of drawing on a box or line (*Edit/Draw* or {% include key keys='Ctrl|D' %}).
 
 It is possible to add a line, box, or text to each slice in a stack. After adding to a single slice and selecting "*Edit/Draw*", you will be asked if you want to apply the selection to every slice. Keep in mind that there is no undo option for this operation.
 
-Adding text to a stack is a slightly different process. You can draw a text box by following the same steps, but on a stack, keyboard shortcut {% include key content='Ctrl' %}+{% include key content='B' %} will overlay the text on the current slice, while shortcut {% include key content='Ctrl' %}+{% include key content='D' %} will draw the text on every slice of the stack.
+Adding text to a stack is a slightly different process. You can draw a text box by following the same steps, but on a stack, keyboard shortcut {% include key keys='Ctrl|B' %} will overlay the text on the current slice, while shortcut {% include key keys='Ctrl|D' %} will draw the text on every slice of the stack.
 
 ### Adding timestamps
 
@@ -103,7 +103,7 @@ Alternatively, you can also draw a rectangular ROI at the location and approxima
 
 Remember: bigger text will typically look smoother and the timestamp will be easier to read. It may be worth changing it to a consistent value for all of your movies.
 
-Also, bear in mind that the interval doesn't necessarily need to be "time". The Time Stamper can also be used to add "z-axis depths" to z-stacks and "angle of rotation" to rotating volume movies (° = {% include key content='Alt' %}+{% include key content='2' %}-{% include key content='4' %}-{% include key content='8' %}; µ = {% include key content='Alt' %}+{% include key content='2' %}-{% include key content='3' %}-{% include key content='0' %}).
+Also, bear in mind that the interval doesn't necessarily need to be "time". The Time Stamper can also be used to add "z-axis depths" to z-stacks and "angle of rotation" to rotating volume movies (° = {% include key keys='Alt|2' %}-{% include key key='4' %}-{% include key key='8' %}; µ = {% include key keys='Alt|2' %}-{% include key key='3' %}-{% include key key='0' %}).
 
 ### Adding event markers to a movie
 

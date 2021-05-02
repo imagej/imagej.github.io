@@ -292,7 +292,7 @@ There are two easy ways of going about this:
 
     These files need not have any content; their mere existence will trigger the dev profile associated with the named organization, causing all artifacts of that organization to become coupled as `SNAPSHOT`s.
 
-In the case of Eclipse, you may need to "Update Maven project" in order to see the snapshot couplings go into effect; the shortcut {% include key content='Alt' %}+{% include key content='F5' %} while selecting the affected project(s) accomplishes this quickly.
+In the case of Eclipse, you may need to "Update Maven project" in order to see the snapshot couplings go into effect; the shortcut {% include key keys='Alt|F5' %} while selecting the affected project(s) accomplishes this quickly.
 
 {% include warning-box content='**Current versions of the Eclipse Maven integration (tested with Eclipse Mars) fail to correctly resolve the `LATEST` version tag to `SNAPSHOT`s. Use the command-line client instead.**' %}
 

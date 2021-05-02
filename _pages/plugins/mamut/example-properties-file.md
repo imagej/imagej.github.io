@@ -17,7 +17,7 @@ The key-bindings used in the [MaMuT](/plugins/mamut) viewer can be customized th
     control\ Q=decrease spot radius a bit
     ...
 
-It follows the syntax `key=command`, one per line. Modifier keys such as {% include key content='press\|Control' %} and {% include key content='press\|Shift' %} are specified by prepending the key with their name, separated by a space escaped with a backslash `\`. Spaces in commands do not need to be escaped. The dash \# character at the beginning of a line is used to insert comments.
+It follows the syntax `key=command`, one per line. Modifier keys such as {% include key key='Control' %} and {% include key key='Shift' %} are specified by prepending the key with their name, separated by a space escaped with a backslash `\`. Spaces in commands do not need to be escaped. The dash \# character at the beginning of a line is used to insert comments.
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 

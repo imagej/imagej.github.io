@@ -77,8 +77,8 @@ Unfortunately, El Capitan has some new java-related issues. If you upgraded to E
 1.  Launch Fiji normally, and choose {% include bc path='Edit | Options | Memory & Threads'%}.
 2.  Reduce your Maximum Memory setting to \~1800 MB or less.
 3.  Quit Fiji.
-4.  {% include key content='Ctrl' %}+{% include key content='click' %} the Fiji dock icon and choose {% include bc path='Options | Show in Finder'%}.
-5.  {% include key content='Ctrl' %}+{% include key content='click' %} on the Fiji application icon that pops up, and choose Show Info (or press {% include key content='Cmd' %}+{% include key content='I' %}).
+4.  {% include key keys='Ctrl|click' %} the Fiji dock icon and choose {% include bc path='Options | Show in Finder'%}.
+5.  {% include key keys='Ctrl|click' %} on the Fiji application icon that pops up, and choose Show Info (or press {% include key keys='Cmd|I' %}).
 6.  Check the "Open in 32-bit mode" box in the Fiji info window.
 7.  Press the red X on the Fiji info window to close it.
 8.  Launch Fiji again, and the status bar should report "\[32-bit\]" in brackets.
@@ -107,7 +107,7 @@ Check more info at [landonf.bikemonkey.org/static/soylatte/](http://landonf.bike
 
 To access the plugins or macros folders, set the Finder window to either icons or lists mode, <b>not</b> in column mode, and double-click them.
 
-Alternatively, right-click (or {% include key content='Ctrl' %}+{% include key content='click' %}) the Fiji.app and select "Show package contents", to open the folder where the actual plugins and macros folders are.
+Alternatively, right-click (or {% include key keys='Ctrl|click' %}) the Fiji.app and select "Show package contents", to open the folder where the actual plugins and macros folders are.
 
 ## Adding new plugins and macros
 
@@ -149,4 +149,4 @@ Now you can pass, say, [Java Options](Java_Options):
 
 ## macOS keyboard shortcuts
 
-It is often helpful to use keyboard shortcuts when using Fiji. There are also operating system specific shortcuts which can be quite helpful. For example, pressing {% include key content='Command' %}+{% include key content='Tab' %} and releasing first only the {% include key content='Tab' %} key will allow you to cycle through the running applications, while {% include key content='Command' %}+{% include key content='\`' %} will do the same for the windows opened by the current application. [Dave Polaschek](http://davespicks.com/) has [a comprehensive list](http://davespicks.com/writing/programming/mackeys.html).
+It is often helpful to use keyboard shortcuts when using Fiji. There are also operating system specific shortcuts which can be quite helpful. For example, pressing {% include key keys='Command|Tab' %} and releasing first only the {% include key key='Tab' %} key will allow you to cycle through the running applications, while {% include key keys='Command|\`' %} will do the same for the windows opened by the current application. [Dave Polaschek](http://davespicks.com/) has [a comprehensive list](http://davespicks.com/writing/programming/mackeys.html).

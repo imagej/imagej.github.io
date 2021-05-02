@@ -31,7 +31,7 @@ Note that the shell script supports only a subset of the functionality of the na
 The following steps describe how to create a desktop icon to launch Fiji on a Raspberry Pi:
 
 1.  Download the Fiji icon image: [Fiji icon link](/media/Fiji-icon.png)
-2.  Press {% include key content='ctrl\|alt\|t' %} to open the terminal window
+2.  Press {% include key keys='ctrl|alt|t' %} to open the terminal window
 3.  Type `nano Fiji.desktop` and press return. This will load Nano which will allow you to create a desktop icon.
 4.  Type the following code, replacing `/path/to` with the paths to the `ImageJ.sh` file and the Fiji icon:
 
@@ -47,9 +47,9 @@ The following steps describe how to create a desktop icon to launch Fiji on a Ra
     Type=Application
     Categories=Education
 
-1.  Press {% include key content='ctrl\|x' %} and then press {% include key content='Y' %} to exit and save the new desktop icon.
+1.  Press {% include key keys='ctrl|x' %} and then press {% include key key='Y' %} to exit and save the new desktop icon.
 2.  Enter your desired file name, such as `Fiji.desktop` and press return. Once complete, an icon should be visible on the desktop.
-3.  Press {% include key content='ctrl\|x' %} to return to the terminal window
+3.  Press {% include key keys='ctrl|x' %} to return to the terminal window
 4.  In the terminal window, type the following to navigate to the Desktop `cd ~/Desktop`
 5.  Then type the following to make the new icon executable `chmod +x Fiji.desktop`
 

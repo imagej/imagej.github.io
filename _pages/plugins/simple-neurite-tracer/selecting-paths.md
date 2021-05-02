@@ -15,13 +15,13 @@ You can select a path in the Path Window. You can also use the up and down curso
 
 ### In the 2D tracing view
 
-If you press the {% include key content='G' %} key with your mouse over a path in the 2D tracing view, that path should be selected. Note that this is the nearest path to the point shown in the image, so if you're showing paths projected through all slices, this may not be the one you expect. You can make this more obvious by switching the 'View paths (2D)' option to 'parts in nearby slices'. Alternatively, just move through the stack to a nearby slice before pressing {% include key content='G' %}.
+If you press the {% include key key='G' %} key with your mouse over a path in the 2D tracing view, that path should be selected. Note that this is the nearest path to the point shown in the image, so if you're showing paths projected through all slices, this may not be the one you expect. You can make this more obvious by switching the 'View paths (2D)' option to 'parts in nearby slices'. Alternatively, just move through the stack to a nearby slice before pressing {% include key key='G' %}.
 
 ### In the 3D tracing view
 
 There are various ways to select a path in the 3D viewer, from easiest to most difficult:
 
--   If you press {% include key content='G' %} when the mouse is over a path in the 3D Viewer, it will be selected.
+-   If you press {% include key key='G' %} when the mouse is over a path in the 3D Viewer, it will be selected.
 
 <!-- -->
 

@@ -121,15 +121,15 @@ Ideally you want to use one of the auto-threshold methods, rather than manually 
 ### Creating Selections
 
 -   Select {% include bc path='Edit | Selection | Create Selection'%} to select the objects within the mask
--   To deselect a portion of the image, select {% include key content='Shift' %}+{% include key content='click' %}
+-   To deselect a portion of the image, select {% include key keys='Shift|click' %}
     -   [More information](/ij/docs/guide/146-27.html#sub:Create-Selection)
 
 <figure><img src="/media/ Reverted tree.png" title="Selections on the reverted image" width="300" alt="Selections on the reverted image" /><figcaption aria-hidden="true">Selections on the reverted image</figcaption></figure>
 
 ### Transferring Selections
 
--   Before transferring the mask's selections, revert the image to its original form by selecting {% include key content='Shift' %}+{% include key content='E' %}
--   Select first the mask, then the original image, and select {% include key content='Shift' %}+{% include key content='E' %} to transfer the mask's selections
+-   Before transferring the mask's selections, revert the image to its original form by selecting {% include key keys='Shift|E' %}
+-   Select first the mask, then the original image, and select {% include key keys='Shift|E' %} to transfer the mask's selections
     -   [More information](/ij/docs/guide/146-27.html#infobox:TransferSelections)
 
 ## Analysis

@@ -10,9 +10,9 @@ categories: Scripting,Jython
 
 ## Quickstart
 
--   Press {% include key content='\[' %} to bring up the [Script Editor](/scripting/script-editor).
+-   Press {% include key key='\[' %} to bring up the [Script Editor](/scripting/script-editor).
 -   Select an example Jython script from the {% include bc path='Templates | \[by language\] | Python'%} menu.
--   Press {% include key content='Ctrl\|R' %} to run the script!
+-   Press {% include key keys='Ctrl|R' %} to run the script!
 
 ## The Jython interpreter plugin
 

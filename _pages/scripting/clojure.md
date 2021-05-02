@@ -23,7 +23,7 @@ See also:
 
 Go to {% include bc path='Plugins|Scripting|Clojure Interpreter'%}. The prompt accepts any clojure code. See also Fiji's [Script Editor](/scripting/script-editor).
 
-See [Scripting Help](/scripting) for details on keybindings and how to use the interpreter. {% include key content='Ctrl' %}+{% include key content=')' %} will add all necessary ending parenthesis.
+See [Scripting Help](/scripting) for details on keybindings and how to use the interpreter. {% include key keys='Ctrl|)' %} will add all necessary ending parenthesis.
 
 A minimal, complete clojure example:
 
@@ -39,7 +39,7 @@ To execute a script, do any of:
 
 -   Select it from the plugins menus.
 -   Type 'l' (L), start typing its name, push the down arrow and then return to execute it.
--   If it was the last executed command, just type {% include key content='Shift' %}+{% include key content='R' %} (shortcut to "Process - Repeat Command").
+-   If it was the last executed command, just type {% include key keys='Shift|R' %} (shortcut to "Process - Repeat Command").
 
 The script is <b>always</b> read directly from the source file, so no updating of menus is needed (unless its file name changes).
 

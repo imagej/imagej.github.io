@@ -24,7 +24,7 @@ The Reconstruction Viewer may be used as either a standalone program or from wit
 
 # Scene Interaction
 
-The display canvas supports multiple modes of interaction, including controlled rotations, panning, zoom, scaling, animation, and alternation between "dark" and "light" modes. The full list of keyboard shortcuts is found by navigating to {% include bc path='Scene Controls|Scene Shortcuts...'%} from RV Controls, or by pressing {% include key content='H' %} (notification) or {% include key content='F1' %} (separate window) in the Viewer scene. <img src="/media/Reconstruction-viewer-shortcuts.png" title="fig:" width="400" /> {% include clear%}
+The display canvas supports multiple modes of interaction, including controlled rotations, panning, zoom, scaling, animation, and alternation between "dark" and "light" modes. The full list of keyboard shortcuts is found by navigating to {% include bc path='Scene Controls|Scene Shortcuts...'%} from RV Controls, or by pressing {% include key key='H' %} (notification) or {% include key key='F1' %} (separate window) in the Viewer scene. <img src="/media/Reconstruction-viewer-shortcuts.png" title="fig:" width="400" /> {% include clear%}
 
 
 # RV Controls
@@ -33,7 +33,7 @@ The display canvas supports multiple modes of interaction, including controlled 
 
 <img src="/media/Reconstruction-viewer-scene-controls.png" title="fig:" width="400" /> This menu provides control over the rendered scene.
 
--   {% include bc path='Fit to Visible Objects'%} {% include key content='F' %} Computes a bounding box containing all objects of the scene and adjusts the zoom level to ensure all objects are within the camera view.
+-   {% include bc path='Fit to Visible Objects'%} {% include key key='F' %} Computes a bounding box containing all objects of the scene and adjusts the zoom level to ensure all objects are within the camera view.
 -   {% include bc path='Stretch-to-Fill'%} Stretches the projection on the whole viewport.
 
 <div align="left">
@@ -52,10 +52,10 @@ The display canvas supports multiple modes of interaction, including controlled 
 
 </div>
 
--   {% include bc path='Full Screen'%} {% include key content='Shift' %} + {% include key content='F' %} Enters full screen mode. To exit full screen press {% include key content='ESC' %}
--   {% include bc path='Reset Scene'%} {% include key content='R' %}
--   {% include bc path='Reload Scene'%} {% include key content='CTRL' %} + {% include key content='R' %} Resets the zoom level to the default, fitting and centering all scene objects into the camera view. The current rotation setting remains unchanged. Note if some drawables in the 3D scene are not being rendered properly when this option is selected, it will prompt to rebuild the scene completely.
--   {% include bc path='Rebuild Scene...'%} {% include key content='CTRL' %} + {% include key content='SHIFT' %} + {% include key content='R' %} Clears all objects from the scene then rebuilds them from scratch.
+-   {% include bc path='Full Screen'%} {% include key keys='Shift|F' %} Enters full screen mode. To exit full screen press {% include key key='ESC' %}
+-   {% include bc path='Reset Scene'%} {% include key key='R' %}
+-   {% include bc path='Reload Scene'%} {% include key keys='CTRL|R' %} Resets the zoom level to the default, fitting and centering all scene objects into the camera view. The current rotation setting remains unchanged. Note if some drawables in the 3D scene are not being rendered properly when this option is selected, it will prompt to rebuild the scene completely.
+-   {% include bc path='Rebuild Scene...'%} {% include key keys='CTRL|SHIFT|R' %} Clears all objects from the scene then rebuilds them from scratch.
 -   {% include bc path='Wipe Scene...'%} Removes all objects from the scene. Note this action cannot be undone.
 -   {% include bc path='Sync Path Manager Changes'%} If the 3D scene contains any trees that are currently stored in the Path Manager, re-render these trees to reflect any change in the path structure given by the Path Manager.
 
@@ -246,7 +246,7 @@ This menu allows import of several Drosophila, Zebrafish and Mouse reference bra
 
 ### Actions & Utilities
 
--   {% include bc path='Take Snapshot'%} {% include key content='S' %} Saves a PNG image of the current scene to disk. The default directory may be changed in the Reconstruction Viewer *Preferences*.
+-   {% include bc path='Take Snapshot'%} {% include key key='S' %} Saves a PNG image of the current scene to disk. The default directory may be changed in the Reconstruction Viewer *Preferences*.
 -   {% include bc path='Record Rotation'%} Animates a rotation of the current scene and saves each frame to disk. The save directory, rotation degree, duration and frames per second may be adjusted in the Reconstruction Viewer *Preferences*.
 -   {% include bc path='Color Legends| '%} Contains options relating to the adding and management of LUT-based color legends.
 -   {% include bc path='Light Controls...'%} Adjustments of light and shadows. Note these are currently experimental features, some of which are un-doable.
@@ -255,7 +255,7 @@ This menu allows import of several Drosophila, Zebrafish and Mouse reference bra
 
 -   {% include bc path='Script This Viewer'%} Opens an instance of the Script Editor with pre-loaded extensible boilerplate code for advanced scripting of Reconstruction Viewer. For an example of the scripting capabilities of Reconstruction Viewer, see [Scripting Reconstruction Viewer](/plugins/snt/scripting#scripting-reconstruction-viewer). A related script template can also be found in the Script Editor at {% include bc path='Templates|Neuroanatomy|Analysis|Reconstruction Viewer Demo (Python)'%}.
 -   {% include bc path='Script This Viewer In...'%} Prompts for selection of scripting language before running the previous command.
--   {% include bc path='Log Scene Details'%} {% include key content='L' %} Logs detailed information about the current scene (e.g., currently visible objects, API calls, etc.) to the Console. This facilitates programmatic control over the Viewer's scene.
+-   {% include bc path='Log Scene Details'%} {% include key key='L' %} Logs detailed information about the current scene (e.g., currently visible objects, API calls, etc.) to the Console. This facilitates programmatic control over the Viewer's scene.
 -   {% include bc path='Debug Mode'%} Logs detailed information about plugin usage, including warnings and errors to the Console.
 
 {% include clear%}

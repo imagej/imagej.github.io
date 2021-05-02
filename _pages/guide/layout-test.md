@@ -34,9 +34,9 @@ dropdown choices will be indeícated ***bold/italic***
 
 ## Keyboard keys
 
-    {% include key content='Ctrl' %} + {% include key content='C' %}   or    {% include key content='Ctrl' %} + {% include key content='Shift' %} + {% include key content='F' %}
+    {% include key keys='Ctrl|C' %}   or    {% include key keys='Ctrl|Shift|F' %}
 
-{% include key content='Ctrl' %} + {% include key content='C' %}     /     {% include key content='Ctrl' %} + {% include key content='Shift' %} + {% include key content='F' %}
+{% include key keys='Ctrl|C' %}     /     {% include key keys='Ctrl|Shift|F' %}
 
 ## Menu structure
 
@@ -63,13 +63,13 @@ dropdown choices will be indeícated ***bold/italic***
 
 
 {% capture tip%}
-Press the {% include key content='L' %} key to access ImageJ"s most useful feature: the [[Command Finder]].
+Press the {% include key key='L' %} key to access ImageJ"s most useful feature: the [[Command Finder]].
 {% endcapture %}
 {% include tip tip=tip %}
 
 
 {% capture tip%}
-Press the {% include key content='L' %} key to access ImageJ"s most useful feature: the [search bar](/learn/getting-started#the-search-bar).
+Press the {% include key key='L' %} key to access ImageJ"s most useful feature: the [search bar](/learn/getting-started#the-search-bar).
 {% endcapture %}
 {% include tip tip=tip %}
 
@@ -146,12 +146,12 @@ Press the {% include key content='L' %} key to access ImageJ"s most useful featu
 The guidetask enables to make a tasklist with up to 10 entries. This could either be appended to the bottom of each article, or to article's discussion page. We could use the Todo
 
 {% capture  content %}
-add link to wiki page|add info on shortcut {% include key content='Shift' %} + {% include key content='F' %}|mention alternative plugins
+add link to wiki page|add info on shortcut {% include key keys='Shift|F' %}|mention alternative plugins
 {% endcapture %}
 {% include guidetask content=content %}
 
 
 {% capture  content %}
-add link to wiki page\|add info on usage of {% include key content='Shift' %} + {% include key content='F' %}\|mention alternative plugins
+add link to wiki page\|add info on usage of {% include key keys='Shift|F' %}\|mention alternative plugins
 {% endcapture %}
 {% include guidetask content=content %}

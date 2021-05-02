@@ -123,39 +123,39 @@ Navigating through the data in space and time uses the mouse and keyboard in a s
 
 **To pan and zoom:**
 
--   {% include key content='press\|Right Drag' %} or {% include key content='press\|Middle Drag' %} Move in the XY-plane of the view.
--   {% include key content='press\|Mousewheel' %} Move along the Z-axis of the view. Press {% include key content='press\|Shift' %} or {% include key content='press\|Control' %} to change the speed.
--   {% include key content='press\|Alt-Mousewheel' %} (Mac and Linux) or {% include key content='press\|Ctrl-Shift-Mousewheel' %} (Windows) Zoom in and out.
--   {% include key content='press\|up' %} / {% include key content='press\|down' %} Zoom in / out. With {% include key content='press\|Shift' %} fast zoom. With {% include key content='press\|Control' %} slow zoom.
+-   {% include key key='Right Drag' %} or {% include key key='Middle Drag' %} Move in the XY-plane of the view.
+-   {% include key key='Mousewheel' %} Move along the Z-axis of the view. Press {% include key key='Shift' %} or {% include key key='Control' %} to change the speed.
+-   {% include key key='Alt-Mousewheel' %} (Mac and Linux) or {% include key key='Ctrl-Shift-Mousewheel' %} (Windows) Zoom in and out.
+-   {% include key key='up' %} / {% include key key='down' %} Zoom in / out. With {% include key key='Shift' %} fast zoom. With {% include key key='Control' %} slow zoom.
 
 **To orient, rotate the view:**
 
--   {% include key content='press\|Left Drag' %} Rotate around the point where the mouse was clicked.
--   {% include key content='press\|X' %} / {% include key content='press\|Y' %} / {% include key content='press\|Z' %} Select rotation axis.
--   {% include key content='press\|up' %} / {% include key content='press\|down' %} Rotate clockwise / counter-clockwise around the chosen rotation axis.
--   {% include key content='press\|,' %} / {% include key content='press\|.' %} Move forward / backward along the z-axis.
--   {% include key content='press\|Shift\|X' %} Rotate to the ZY-plane of the current source (look along the x-axis of the current source).
--   {% include key content='press\|Shift\|Y' %} or {% include key content='press\|Shift\|C' %} Rotate to the XZ-plane of the current source (look along the y-axis of the current source).
--   {% include key content='press\|Shift\|Z' %} Rotate to the XY-plane of the current source (look along the z-axis of the current source).
+-   {% include key key='Left Drag' %} Rotate around the point where the mouse was clicked.
+-   {% include key key='X' %} / {% include key key='Y' %} / {% include key key='Z' %} Select rotation axis.
+-   {% include key key='up' %} / {% include key key='down' %} Rotate clockwise / counter-clockwise around the chosen rotation axis.
+-   {% include key key=',' %} / {% include key key='.' %} Move forward / backward along the z-axis.
+-   {% include key keys='Shift|X' %} Rotate to the ZY-plane of the current source (look along the x-axis of the current source).
+-   {% include key keys='Shift|Y' %} or {% include key keys='Shift|C' %} Rotate to the XZ-plane of the current source (look along the y-axis of the current source).
+-   {% include key keys='Shift|Z' %} Rotate to the XY-plane of the current source (look along the z-axis of the current source).
 
 **To navigate in time:**
 
--   {% include key content='press\|N' %} Move to the previous time-point.
--   {% include key content='press\|M' %} Move to the next time-point.
--   {% include key content='press\|\[' %} Jump to the previous time step (explained below).
--   {% include key content='press\|\]' %} Jump to the next time step.
+-   {% include key key='N' %} Move to the previous time-point.
+-   {% include key key='M' %} Move to the next time-point.
+-   {% include key key='\[' %} Jump to the previous time step (explained below).
+-   {% include key key='\]' %} Jump to the next time step.
 
 There is a fantastic feature in the BigDataViewer that you will find here called **bookmarks**. They let you store a position and orientation in space as bookmarks. You can later call them again. To use them:
 
--   First press {% include key content='press\|Shift\|B' %} then any other key to bookmark the current view position.
--   Pressing {% include key content='press\|B' %} then the bookmark's key to restore the view position.
--   {% include key content='press\|O' %} does the same things, but only restore the bookmark orientation, and does not translate to its position.
+-   First press {% include key keys='Shift|B' %} then any other key to bookmark the current view position.
+-   Pressing {% include key key='B' %} then the bookmark's key to restore the view position.
+-   {% include key key='O' %} does the same things, but only restore the bookmark orientation, and does not translate to its position.
 
 You can many bookmarks, all identified by the key you press after the bookmark command.
 
 ### Configuring the source visibility and display.
 
-Switching from one source to another is done with the numeric keys {% include key content='press\|1' %} ... {% include key content='press\|0' %} for up to 10 views. Pressing {% include key content='press\|F' %} switches to the fused mode, where all sources are overlaid. You can add and remove sources from the fused view by pressing {% include key content='press\|Shift\|1' %} - etc. The color and brightness of each source are defined in the **brightness and color** panel, brought by pressing the {% include key content='press\|S' %} key.
+Switching from one source to another is done with the numeric keys {% include key key='1' %} ... {% include key key='0' %} for up to 10 views. Pressing {% include key key='F' %} switches to the fused mode, where all sources are overlaid. You can add and remove sources from the fused view by pressing {% include key keys='Shift|1' %} - etc. The color and brightness of each source are defined in the **brightness and color** panel, brought by pressing the {% include key key='S' %} key.
 
 <img src="/media/Bdv-MaMuT ViewerBrightnessColor.png" width="700"/>
 
@@ -165,7 +165,7 @@ The MaMuT viewer also overlays some useful information:
 
 <img src="/media/Bdv-MaMuT ViewerOverlays2.png" width="700"/>
 
-The MaMuT viewer only displays a slice of the current source(s). It fetches the pixel values it needs to generate a single slice through the data. By default, pixel values are interpolated using the nearest neighbor, which might generate a pixelated look for high level of zoom. By pressing {% include key content='press\|I' %} you can toggle between nearest-neighbor interpolation, and tri-linear interpolation, which smoothes the display.
+The MaMuT viewer only displays a slice of the current source(s). It fetches the pixel values it needs to generate a single slice through the data. By default, pixel values are interpolated using the nearest neighbor, which might generate a pixelated look for high level of zoom. By pressing {% include key key='I' %} you can toggle between nearest-neighbor interpolation, and tri-linear interpolation, which smoothes the display.
 
 ## Annotating cells.
 
@@ -175,14 +175,14 @@ Using these commands, try to move the view around so that these cells are in sig
 
 ![](/media/Bdv-MaMuT DesiredOrientation.png "bdv-MaMuT_DesiredOrientation.png")
 
-To do so, select the first source (angle 0°) and move the view in its XY place (press {% include key content='press\|Shift\|Z' %}). Then move in Z to the top of the embryo (around Z=1800) and finally zoom to bring about 50 cells in view. If you move in time, you can see that a lot of cell divisions are happening there. We will now build their lineage.
+To do so, select the first source (angle 0°) and move the view in its XY place (press {% include key keys='Shift|Z' %}). Then move in Z to the top of the embryo (around Z=1800) and finally zoom to bring about 50 cells in view. If you move in time, you can see that a lot of cell divisions are happening there. We will now build their lineage.
 
-Move the mouse pointer over the cell you want to annotation, and press {% include key content='press\|A' %}. A magenta circle should appear, representing a cell or more generally, a spot. Spots are created, edited and removed using the following default key bindings:
+Move the mouse pointer over the cell you want to annotation, and press {% include key key='A' %}. A magenta circle should appear, representing a cell or more generally, a spot. Spots are created, edited and removed using the following default key bindings:
 
--   {% include key content='press\|A' %} to add a spot at the mouse location.
--   {% include key content='press\|D' %} to delete the spot under the mouse location.
--   {% include key content='press\|Q' %} / {% include key content='press\|E' %} to decrease / increase the spot radius. Use {% include key content='press\|Shift' %} / {% include key content='press\|Control' %} to change the radius by a greater / smaller amount.
--   {% include key content='press\|Space' %} is used to move a spot in the XY view plane: put the mouse pointer inside the spot you want to move, then press and hold space while moving the mouse. The spot will follow your mouse until you release the {% include key content='press\|Space' %} key.
+-   {% include key key='A' %} to add a spot at the mouse location.
+-   {% include key key='D' %} to delete the spot under the mouse location.
+-   {% include key key='Q' %} / {% include key key='E' %} to decrease / increase the spot radius. Use {% include key key='Shift' %} / {% include key key='Control' %} to change the radius by a greater / smaller amount.
+-   {% include key key='Space' %} is used to move a spot in the XY view plane: put the mouse pointer inside the spot you want to move, then press and hold space while moving the mouse. The spot will follow your mouse until you release the {% include key key='Space' %} key.
 
 Spots represents point of interest (in our case, cells) under the shape of a sphere. You can change the sphere time-point, location and radius, but that's it. There is no object contour in MaMuT. Spots are drawn as circles in the MaMuT viewer, with the radius of their intersection with the view XY plane. If they are not intersecting with the view plane, they are drawn as small dots, as you can see by moving along Z a bit.
 
@@ -190,16 +190,16 @@ Spots represents point of interest (in our case, cells) under the shape of a sph
 
 Accurately placing a spot in 3D can be difficult. This is where using multiple views in MaMut can help. On the main GUI window, click on the **MaMuT Viewer** button again to open a new view. This new view might not be showing the spot you just added. Fortunately, all views can be brought in sync by clicking inside a spot.
 
-In the first view, click on the spot you added. The second view is translated so that this very spot is brought at the center of the view window. Rotate around this point so as to show the YZ plane of the source (press {% include key content='press\|Shift\|X' %}) and zoom close to the spot, to have a view pair resembling this:
+In the first view, click on the spot you added. The second view is translated so that this very spot is brought at the center of the view window. Rotate around this point so as to show the YZ plane of the source (press {% include key keys='Shift|X' %}) and zoom close to the spot, to have a view pair resembling this:
 
 <img src="/media/Bdv-MaMuT MultipleViews.png" width="500"/>
 
-Just to ensure we are looking at the same spot in the two views, we checked the **Display spots names** button in the main GUI. Use the {% include key content='press\|Space' %} key to move the spot around in a plane until you are happy with its location. This view combination is useful to place properly spots in 3D. You can open as many views as you want. Other views can be used e.g. to have an overview of the data using a dezoomed view.
+Just to ensure we are looking at the same spot in the two views, we checked the **Display spots names** button in the main GUI. Use the {% include key key='Space' %} key to move the spot around in a plane until you are happy with its location. This view combination is useful to place properly spots in 3D. You can open as many views as you want. Other views can be used e.g. to have an overview of the data using a dezoomed view.
 
 Spots can also be created with a double-click of the mouse. So if we recapitulate:
 
--   {% include key content='press\|Left Click' %} inside a spot to select it and center all views to this spot.
--   {% include key content='press\|Double Left Click' %} outside any spot to create a new one at the mouse location.
+-   {% include key key='Left Click' %} inside a spot to select it and center all views to this spot.
+-   {% include key key='Double Left Click' %} outside any spot to create a new one at the mouse location.
 
 ### Display settings for spots.
 
@@ -230,14 +230,14 @@ So a link can be created between any two spots, provided they do not belong to t
 In the MaMuT Viewer, only spots are selectable with the mouse. To create or remove a link, you have to select exactly two spots.
 
 -   Select a spot by clicking inside it.
--   Move to another time-point ({% include key content='press\|N' %}, {% include key content='press\|M' %}, {% include key content='press\|\[' %}, {% include key content='press\|\]' %}, the time slider).
+-   Move to another time-point ({% include key key='N' %}, {% include key key='M' %}, {% include key key='\[' %}, {% include key key='\]' %}, the time slider).
 -   Add a second spot to the selection by shift-clicking inside it.
--   Press {% include key content='press\|L' %} to add a link between these two spots, or to remove it already exists.
+-   Press {% include key key='L' %} to add a link between these two spots, or to remove it already exists.
 
 So here are the two new useful bindings for **editing links**:
 
--   {% include key content='press\|Shift-Left Click' %} add and remove spots from the selection.
--   {% include key content='press\|L' %} toggle a link between the two spots of the selection. This does nothing if there is not exactly two spots in the selection.
+-   {% include key key='Shift-Left Click' %} add and remove spots from the selection.
+-   {% include key key='L' %} toggle a link between the two spots of the selection. This does nothing if there is not exactly two spots in the selection.
 
 Now go back to your MaMuT session, with the data oriented as aid above, and try to annotate and link the cell that divides between the first and second time-point. The mother cell can be found around X=1095, Y=1020, Z=1820 and t=0. On the image below, we tracked the daughter cell that emerges from the division on the left part of the view.
 
@@ -247,9 +247,9 @@ Note that when you create a link with this method, after link creating the selec
 
 ### The auto-linking mode.
 
-Press {% include key content='press\|Shift-L' %} with a MaMuT viewer window active. A message should appear in the MaMuT viewer that states the auto-linking mode is now on. In this mode, a link is automatically created when you create a new spot between this spot and the last one in the selection. Then the selection is changed to be the last spot added. Using this, you can quickly create lineage by moving forward in time with the keyboard and creating spots by typing {% include key content='press\|A' %}. You can also use {% include key content='press\|Double Click' %} to create spots, but because a simple click would clear the selection, you have to hold the {% include key content='press\|Shift' %} key down to use auto-linking with mouse clicks.
+Press {% include key key='Shift-L' %} with a MaMuT viewer window active. A message should appear in the MaMuT viewer that states the auto-linking mode is now on. In this mode, a link is automatically created when you create a new spot between this spot and the last one in the selection. Then the selection is changed to be the last spot added. Using this, you can quickly create lineage by moving forward in time with the keyboard and creating spots by typing {% include key key='A' %}. You can also use {% include key key='Double Click' %} to create spots, but because a simple click would clear the selection, you have to hold the {% include key key='Shift' %} key down to use auto-linking with mouse clicks.
 
-Try to use the auto-linking mode to create the cell lineage of the dividing cell above, this time following the other daughter cell. Move back to the first time-point, select the mother cell, move to the second time-point {% include key content='press\|M' %} and add a spot {% include key content='press\|A' %} or {% include key content='press\|Shift-Double Click' %} on the cell location. Repeat by following the right daughter cell. You should end up with an annotation that resembles the following:
+Try to use the auto-linking mode to create the cell lineage of the dividing cell above, this time following the other daughter cell. Move back to the first time-point, select the mother cell, move to the second time-point {% include key key='M' %} and add a spot {% include key key='A' %} or {% include key key='Shift-Double Click' %} on the cell location. Repeat by following the right daughter cell. You should end up with an annotation that resembles the following:
 
 <img src="/media/Bdv-MaMuT DesiredTracking 2.PNG" width="500"/>
 
@@ -261,8 +261,8 @@ MaMuT is built as an application for the annotation of large images immediately 
 
 MaMuT has step-wise time browsing commands to just do that. The keyboard shortcut to do this are:
 
--   {% include key content='press\|\[' %} Jump to the previous time step.
--   {% include key content='press\|\]' %} Jump to the next time step.
+-   {% include key key='\[' %} Jump to the previous time step.
+-   {% include key key='\]' %} Jump to the next time step.
 
 By default, the viewer will jump to time-points multiples of 5: 0, 5, 10, etc. You can set what is the time step in the **Annotation** tab of the main GUI window, under the **Stepwise time browsing** field.
 
@@ -310,19 +310,19 @@ Though this view is very synthetic, there is a lot you can do with TrackMate.
 
 ### Moving around in TrackScheme.
 
-Moving around is done classically with the mouse, and the panning is triggered by holding down the {% include key content='press\|Space' %} key:
+Moving around is done classically with the mouse, and the panning is triggered by holding down the {% include key key='Space' %} key:
 
--   {% include key content='press\|Mousewheel' %} scrolls up and down.
--   {% include key content='press\|Shift\|Mousewheel' %} scrolls left and right.
--   {% include key content='press\|Space\|Mousedrag' %} pans the view, à la ImageJ. If you pull the mouse out of the TrackScheme window, it will scroll in the direction of the mouse cursor.
--   {% include key content='press\|Space\|Mousewheel' %} is used for zooming.
+-   {% include key key='Mousewheel' %} scrolls up and down.
+-   {% include key keys='Shift|Mousewheel' %} scrolls left and right.
+-   {% include key keys='Space|Mousedrag' %} pans the view, à la ImageJ. If you pull the mouse out of the TrackScheme window, it will scroll in the direction of the mouse cursor.
+-   {% include key keys='Space|Mousewheel' %} is used for zooming.
 
 The keyboard can also be used:
 
--   The numeric keypad numbers {% include key content='press\|6' %}, {% include key content='press\|9' %}, {% include key content='press\|8' %}, {% include key content='press\|7' %}, {% include key content='press\|4' %}, {% include key content='press\|1' %}, {% include key content='press\|2' %} and {% include key content='press\|3' %} are used to move as on a compass.
--   {% include key content='press\|+' %} zoom in.
--   {% include key content='press\|-' %} zoom out.
--   {% include key content='press\|equals' %} restores the zoom to its default level.
+-   The numeric keypad numbers {% include key key='6' %}, {% include key key='9' %}, {% include key key='8' %}, {% include key key='7' %}, {% include key key='4' %}, {% include key key='1' %}, {% include key key='2' %} and {% include key key='3' %} are used to move as on a compass.
+-   {% include key key='+' %} zoom in.
+-   {% include key key='-' %} zoom out.
+-   {% include key key='equals' %} restores the zoom to its default level.
 
 The top-left part of the TrackScheme window shows the outline of the graph. The blue square represents the current view and can be resized and moved around.
 
@@ -363,12 +363,12 @@ The hierarchical layout of the lineages provided by TrackScheme can be useful fo
 
 [TrackScheme](/plugins/trackmate/trackscheme) is useful to build a selection and query its properties. As we said above, TrackScheme does not abide any visibility setting. Spots and links are always visible, which is useful to build a selection. Spots and links are added to the current selection in a classical way:
 
--   {% include key content='press\|Left-Click' %} on a spot or link to set the selection with this spot or link. The selection is cleared before.
--   {% include key content='press\|Left-Click' %} outside a spot to clear the selection.
--   {% include key content='press\|Shift\|Left-Click' %} on a spot or link to add or remove this spot or link to the selection.
--   {% include key content='press\|Mousedrag' %} to select multiple spots and links in a selection box. Hold {% include key content='press\|Shift' %} to add them to the current selection.
+-   {% include key key='Left-Click' %} on a spot or link to set the selection with this spot or link. The selection is cleared before.
+-   {% include key key='Left-Click' %} outside a spot to clear the selection.
+-   {% include key keys='Shift|Left-Click' %} on a spot or link to add or remove this spot or link to the selection.
+-   {% include key key='Mousedrag' %} to select multiple spots and links in a selection box. Hold {% include key key='Shift' %} to add them to the current selection.
 
-Adding to this, several items in the {% include key content='press\|Right-click' %} popup menu help selecting part of tracks. If you {% include key content='press\|Right-click' %} on a spot or {% include key content='press\|Right-click' %} outside a spot with a non-empty selection, you can:
+Adding to this, several items in the {% include key key='Right-click' %} popup menu help selecting part of tracks. If you {% include key key='Right-click' %} on a spot or {% include key key='Right-click' %} outside a spot with a non-empty selection, you can:
 
 -   `Select whole track` will include all the spots and the links of the tracks the selection belongs to.
 -   `Select track downwards` walks from the spots and links in the selection, and add the spots and links that connect from them, forward in time (downward in TrackScheme).
@@ -386,11 +386,11 @@ For instance, you can use it to only display a series of disjoint parts of a tra
 
 Another use of the selection is to display, plot and export information on its content. The left side bar of TrackScheme has two small panels dedicated to this, in addition to the outline panel in the top left.
 
-The info pane in the middle left takes the shape of a table, that displays the numerical feature values of the spot selection as a table. Spots are arranged as columns and feature as lines. This table can be exported to an ImageJ table with the {% include key content='press\|Right-click' %} popup menu.
+The info pane in the middle left takes the shape of a table, that displays the numerical feature values of the spot selection as a table. Spots are arranged as columns and feature as lines. This table can be exported to an ImageJ table with the {% include key key='Right-click' %} popup menu.
 
 The bottom left part if the spot feature plotter. The **Feature for X axis** drop down menu lets you choose what will be the feature used for the X axis. **Feature for Y axis** menus work the same way. Y-axis features can be added and removed using the add and remove buttons.
 
-To generate the plot, click the **Plot features** button. A graph should appear on which you can interact a bit. {% include key content='press\|Mousedrag' %} towards the bottom right direction will zoom the plot, and {% include key content='press\|Mousedrag' %} towards to up right direction will reset the zoom. The {% include key content='press\|Right-click' %} menu lets you configure the plot, save it to an image file and export it as an ImageJ table.
+To generate the plot, click the **Plot features** button. A graph should appear on which you can interact a bit. {% include key key='Mousedrag' %} towards the bottom right direction will zoom the plot, and {% include key key='Mousedrag' %} towards to up right direction will reset the zoom. The {% include key key='Right-click' %} menu lets you configure the plot, save it to an image file and export it as an ImageJ table.
 
 <img src="/media/Bdv-MaMuT TrackSchemeSideBar.png" width="800"/>
 
@@ -400,13 +400,13 @@ The main application of TrackScheme is to edit annotations in conjunction with c
 
 ### Linking spots with the popup menu item.
 
-Make sure you have a TrackScheme window open, a MaMuT viewer window open, and move the later close to the cells we tracked previously. Make sure the auto-linking mode is off {% include key content='press\|Shift\|L' %}, and start creating spots over a cell close to the first one. Try to follow it over time. You should see spots appearing in TrackScheme, under a special column on the right called `Unlaid spots`. The TrackScheme window should resembles this:
+Make sure you have a TrackScheme window open, a MaMuT viewer window open, and move the later close to the cells we tracked previously. Make sure the auto-linking mode is off {% include key keys='Shift|L' %}, and start creating spots over a cell close to the first one. Try to follow it over time. You should see spots appearing in TrackScheme, under a special column on the right called `Unlaid spots`. The TrackScheme window should resembles this:
 
 <img src="/media/Bdv-MaMuT TrackSchemeUnlaidSpots.png" width="700"/>
 
 Normally, TrackScheme only displays the spots that belong in a track. Lonely spots that are not linked to anything when you launch TrackScheme are not shown. The spots you create after TrackScheme are however stacked under this special column. From there, you can attach them to an existing track or create a new one.
 
-Here is a way to do it. In TrackScheme using {% include key content='press\|Mousedrag' %} select all the spots in the unlaid column. {% include key content='press\|Right-click' %} somewhere in TrackScheme to make the pop-up menu appear. One of the menu item should be something like `Link 10 spots`. Choose this one. Each spots is then linked to the next one, frame by frame, and the links should appear in TrackScheme and in the MaMuT viewer. You just created a new track.
+Here is a way to do it. In TrackScheme using {% include key key='Mousedrag' %} select all the spots in the unlaid column. {% include key key='Right-click' %} somewhere in TrackScheme to make the pop-up menu appear. One of the menu item should be something like `Link 10 spots`. Choose this one. Each spots is then linked to the next one, frame by frame, and the links should appear in TrackScheme and in the MaMuT viewer. You just created a new track.
 
 ### Triggering re-layout and style refresh.
 
@@ -428,11 +428,11 @@ Now move over any cell in one track. As you do, the cell gets highlighted with a
 
 ### Removing spots and links.
 
-The last you link you added may have strongly perturbed our annotation, particularly if you did what was on the screenshot above. Correct it by removing the last link. Simply select it press {% include key content='press\|Delete' %}. The same key will remove everything in the selection.
+The last you link you added may have strongly perturbed our annotation, particularly if you did what was on the screenshot above. Correct it by removing the last link. Simply select it press {% include key key='Delete' %}. The same key will remove everything in the selection.
 
 ### Editing track names and imposing track order.
 
-Tracks are ordered from left to right alphanumerically with their name. To change a track name, {% include key content='press\|Double-click' %} on it in the column header part. Track names should be made of a single line with a combination of any character.
+Tracks are ordered from left to right alphanumerically with their name. To change a track name, {% include key key='Double-click' %} on it in the column header part. Track names should be made of a single line with a combination of any character.
 
 Try for instance to change the track order by changing their name. Let's call the first one 'B' and the second one 'A'. Click the **Layout** button. Your TrackScheme window should look like this:
 
@@ -442,11 +442,11 @@ Try for instance to change the track order by changing their name. Let's call th
 
 Spots also have a name, that you can see either in the MaMuT viewer by checking the **Display spot names**, either in TrackScheme by using the `full` display style. They are all called `ID##` by default, which is not very informative.
 
-To edit a spot name in TrackScheme, {% include key content='press\|Double-click' %} on the spot. It should be replaced by an orange box in which you can type the spot name. Press {% include key content='press\|Shift\|Enter' %} to validate the new name, or {% include key content='press\|Escape' %} to cancel the change. Spot names may be several lines long, but their display might then not be very pleasing.
+To edit a spot name in TrackScheme, {% include key key='Double-click' %} on the spot. It should be replaced by an orange box in which you can type the spot name. Press {% include key keys='Shift|Enter' %} to validate the new name, or {% include key key='Escape' %} to cancel the change. Spot names may be several lines long, but their display might then not be very pleasing.
 
-You can also set the name of several spots at once. For instance, select the the whole second track (now named 'A') and {% include key content='press\|Right click' %} (outside of a spot) to bring the popup menu. There is an item called `Edit 10 spot names`. The closest spot is changed to an edit box. When you validate the new name, all the selected spots get this new name.
+You can also set the name of several spots at once. For instance, select the the whole second track (now named 'A') and {% include key key='Right click' %} (outside of a spot) to bring the popup menu. There is an item called `Edit 10 spot names`. The closest spot is changed to an edit box. When you validate the new name, all the selected spots get this new name.
 
-Apart from their use to mark some biological meaning to the annotations, spot names have several uses. There is a search box in TrackScheme toolbar that centers the view on spots with name matching the text you enter there. Press {% include key content='press\|Enter' %} to loop over all the matching spots.
+Apart from their use to mark some biological meaning to the annotations, spot names have several uses. There is a search box in TrackScheme toolbar that centers the view on spots with name matching the text you enter there. Press {% include key key='Enter' %} to loop over all the matching spots.
 
 Spot names are also used to decide in what order to lay out track branches. For instance, our track 'B' as a cell division in the second time-point. You can force one branch to be the laid left or the right by setting the name of the spot just after the division. Sister cells are laid out from left to right alphanumerically, like for tracks.
 
@@ -575,7 +575,7 @@ The key-bindings used in the MaMuT viewer can be customized through a text file,
     control\ Q=decrease spot radius a bit
     ...
 
-It follows the syntax `key=command`, one per line. Modifier keys such as {% include key content='press\|Control' %} and {% include key content='press\|Shift' %} are specified by prepending the key with their name, separated by a space escaped with a backslash '\\'. Spaces in commands do not need to be escaped. The dash \# character at the beginning of a line is used to insert comments.
+It follows the syntax `key=command`, one per line. Modifier keys such as {% include key key='Control' %} and {% include key key='Shift' %} are specified by prepending the key with their name, separated by a space escaped with a backslash '\\'. Spaces in commands do not need to be escaped. The dash \# character at the beginning of a line is used to insert comments.
 
 An example of such a file can be found [**here**](/plugins/mamut/example-properties-file).
 
@@ -830,7 +830,7 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
   <tbody>
     <tr class="odd">
       <td style="padding: 5px;">
-        <p>{% include key content='press|F2' %}</p>
+        <p>{% include key key='F2' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Edit current spot name.</p>
@@ -838,7 +838,7 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
     </tr>
     <tr class="even">
       <td style="padding: 5px;">
-        <p>{% include key content='press|Delete' %}</p>
+        <p>{% include key key='Delete' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Delete the current selection.</p>
@@ -846,7 +846,7 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
     </tr>
     <tr class="odd">
       <td style="padding: 5px;">
-        <p>{% include key content='press|Home' %}</p>
+        <p>{% include key key='Home' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Center view on the first spot in current selection.</p>
@@ -854,7 +854,7 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
     </tr>
     <tr class="even">
       <td style="padding: 5px;">
-        <p>{% include key content='press|End' %}</p>
+        <p>{% include key key='End' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Center view on the last spot in current selection.</p>
@@ -862,7 +862,7 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
     </tr>
     <tr class="odd">
       <td style="padding: 5px;">
-        <p>{% include key content='press|+' %} & {% include key content='press|equals' %}</p>
+        <p>{% include key key='+' %} & {% include key key='equals' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Zoom in.</p>
@@ -870,7 +870,7 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
     </tr>
     <tr class="even">
       <td style="padding: 5px;">
-        <p>{% include key content='press|-' %}</p>
+        <p>{% include key key='-' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Zoom out.</p>
@@ -878,7 +878,7 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
     </tr>
     <tr class="odd">
       <td style="padding: 5px;">
-        <p>{% include key content='press|Shift|equals' %}</p>
+        <p>{% include key keys='Shift|equals' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Reset zoom.</p>
@@ -886,7 +886,7 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
     </tr>
     <tr class="even">
       <td style="padding: 5px;">
-        <p>{% include key content='press|1' %} {% include key content='press|2' %} ... {% include key content='press|9' %} on the keypad</p>
+        <p>{% include key key='1' %} {% include key key='2' %} ... {% include key key='9' %} on the keypad</p>
       </td>
       <td style="padding: 5px;">
         <p>Pan the view.</p>
@@ -894,7 +894,7 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
     </tr>
     <tr class="odd">
       <td style="padding: 5px;">
-        <p>{% include key content='press|Control|A' %}</p>
+        <p>{% include key keys='Control|A' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Select all.</p>
@@ -902,7 +902,7 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
     </tr>
     <tr class="even">
       <td style="padding: 5px;">
-        <p>{% include key content='press|Control|Shift|A' %}</p>
+        <p>{% include key keys='Control|Shift|A' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Clear selection.</p>
@@ -910,7 +910,7 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
     </tr>
     <tr class="odd">
       <td style="padding: 5px;">
-        <p>{% include key content='press|up' %} / {% include key content='press|down' %}</p>
+        <p>{% include key key='up' %} / {% include key key='down' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Move to the previous / next spot in time, within the current track.</p>
@@ -918,7 +918,7 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
     </tr>
     <tr class="even">
       <td style="padding: 5px;">
-        <p>{% include key content='press|left' %} / {% include key content='press|right' %}</p>
+        <p>{% include key key='left' %} / {% include key key='right' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Move to the previous / next sibling, within the current track. Sibling are spots that belong to the same track and to the same time-point. For instance the two spots of two sister daughter cells.</p>
@@ -926,7 +926,7 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
     </tr>
     <tr class="odd">
       <td style="padding: 5px;">
-        <p>{% include key content='press|Page up' %} / {% include key content='press|Page down' %}</p>
+        <p>{% include key key='Page up' %} / {% include key key='Page down' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Jump to the the previous / next track.</p>
@@ -934,7 +934,7 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
     </tr>
     <tr class="even">
       <td style="padding: 5px;">
-        <p>{% include key content='press|Shift|Mousedrag' %}</p>
+        <p>{% include key keys='Shift|Mousedrag' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Pan the view.</p>
@@ -942,7 +942,7 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
     </tr>
     <tr class="odd">
       <td style="padding: 5px;">
-        <p>{% include key content='press|Shift|Mousewheel' %}</p>
+        <p>{% include key keys='Shift|Mousewheel' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Zoom in / out.</p>

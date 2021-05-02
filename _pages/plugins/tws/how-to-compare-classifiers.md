@@ -107,7 +107,7 @@ Additional algorithms can be added again with the *Add new...* button. After set
 
 With the *Load options...* and *Save options...* buttons one can load and save the setup of a selected classifier from and to XML. This is especially useful for highly configured classifiers (e.g., nested meta-classifiers), where the manual setup takes quite some time, and which are used often.
 
-One can also paste classifier settings here by right-clicking (or {% include key content='Alt' %}+{% include key content='Shift' %}+{% include key content='click' %}) and selecting the appropriate menu point from the popup menu, to either add a new classifier or replace the selected one with a new setup. This is rather useful for transferring a classifier setup from the Weka Explorer over to the Experimenter without having to setup the classifier from scratch.
+One can also paste classifier settings here by right-clicking (or {% include key keys='Alt|Shift|click' %}) and selecting the appropriate menu point from the popup menu, to either add a new classifier or replace the selected one with a new setup. This is rather useful for transferring a classifier setup from the Weka Explorer over to the Experimenter without having to setup the classifier from scratch.
 
 #### Saving the setup
 

@@ -172,7 +172,7 @@ A public Java class must be compiled from a source file reflecting the class nam
 
 ## Add a *Bookmark* function to the Script Editor
 
-Often, it would be very convenient to remember the current cursor position to come back to, after looking around in other parts of the file. Maybe {% include key content='Ctrl' %}+{% include key content='B' %} (together with a menu entry), or {% include key content='Ctrl' %}+{% include key content='<digit>' %} are good ways to implement the user interface. (The code should be similar to the *Goto Line...* function.
+Often, it would be very convenient to remember the current cursor position to come back to, after looking around in other parts of the file. Maybe {% include key keys='Ctrl|B' %} (together with a menu entry), or {% include key keys='Ctrl|<digit>' %} are good ways to implement the user interface. (The code should be similar to the *Goto Line...* function.
 
 ## Add support for Haskell (via Jaskell) and Tcl (via Jacl)
 
@@ -317,7 +317,7 @@ The code needs to be improved, though, to handle special menu items correctly, s
 
 Some menu items are actually provided by the core of ImageJ, and it may be the best to open the appropriate place on the ImageJ website instead of the Fiji Wiki. In the alternative, the ImageJ documentation should be replicated on the Fiji Wiki under the appropriate page titles.
 
-The user should also be informed that hitting the {% include key content='Esc' %} key gets her out of this mode.
+The user should also be informed that pressing the {% include key key='Esc' %} key gets her out of this mode.
 
 And finally, the Fiji Wiki needs some love to reflect the exact titles of the menu items, most probably by adding appropriate redirects.
 

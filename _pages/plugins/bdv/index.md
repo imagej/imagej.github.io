@@ -51,10 +51,10 @@ Assuming you downloaded the *drosophila melanogaster* example dataset, you shoul
 
 On startup, the middle slice of the first source (angle) is shown. You can browse the stack using the keyboard or the mouse. To get started, try the following:
 
--   Use the mouse-wheel or {% include key content='press\|&lt;' %} and {% include key content='press\|&gt;' %} keys to scroll through z slices.
--   {% include key content='press\|right-click\|drag' %} anywhere on the canvas to translate the image.
--   Use {% include key content='press\|Ctrl\|Shift\|mouse-wheel' %}, or {% include key content='press\|Up' %} and {% include key content='press\|Down' %} keys to zoom in and out.
--   {% include key content='press\|left-click\|drag' %} anywhere on the canvas to rotate (reslice) the image.
+-   Use the mouse-wheel or {% include key key='&lt;' %} and {% include key key='&gt;' %} keys to scroll through z slices.
+-   {% include key keys='right-click|drag' %} anywhere on the canvas to translate the image.
+-   Use {% include key keys='Ctrl|Shift|mouse-wheel' %}, or {% include key key='Up' %} and {% include key key='Down' %} keys to zoom in and out.
+-   {% include key keys='left-click|drag' %} anywhere on the canvas to rotate (reslice) the image.
 
 The following table shows the available navigation commands using the mouse:
 
@@ -63,7 +63,7 @@ The following table shows the available navigation commands using the mouse:
   <tbody>
     <tr class="odd">
       <td style="padding: 5px;">
-        <p><span class="removeme"><br></span> {% include key content='press|left-click|drag' %}</p>
+        <p><span class="removeme"><br></span> {% include key keys='left-click|drag' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Rotate (pan and tilt) around the point where the mouse was clicked.</p>
@@ -71,7 +71,7 @@ The following table shows the available navigation commands using the mouse:
     </tr>
     <tr class="even">
       <td style="padding: 5px;">
-        <p>{% include key content='press|right-click|drag' %} or {% include key content='press|middle-click|drag' %}</p>
+        <p>{% include key keys='right-click|drag' %} or {% include key keys='middle-click|drag' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Translate in the XY-plane.</p>
@@ -79,7 +79,7 @@ The following table shows the available navigation commands using the mouse:
     </tr>
     <tr class="odd">
       <td style="padding: 5px;">
-        <p>{% include key content='press|mouse-wheel' %}</p>
+        <p>{% include key key='mouse-wheel' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Move along the z-axis.</p>
@@ -87,7 +87,7 @@ The following table shows the available navigation commands using the mouse:
     </tr>
     <tr class="even">
       <td style="padding: 5px;">
-        <p>{% include key content='press|Cmd|mouse-wheel' %} or {% include key content='press|Shift|Ctrl|mouse-wheel' %}</p>
+        <p>{% include key keys='Cmd|mouse-wheel' %} or {% include key keys='Shift|Ctrl|mouse-wheel' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Zoom in and out.</p>
@@ -104,7 +104,7 @@ The following table shows the available navigation commands using keyboard short
   <tbody>
     <tr class="odd">
       <td style="padding: 5px;">
-        <p>{% include key content='press|X' %}, {% include key content='press|Y' %}, {% include key content='press|Z' %}</p>
+        <p>{% include key key='X' %}, {% include key key='Y' %}, {% include key key='Z' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Select keyboard rotation axis.</p>
@@ -112,7 +112,7 @@ The following table shows the available navigation commands using keyboard short
     </tr>
     <tr class="even">
       <td style="padding: 5px;">
-        <p>{% include key content='press|Left' %}, {% include key content='press|Right' %}</p>
+        <p>{% include key key='Left' %}, {% include key key='Right' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Rotate clockwise or counter-clockwise around the choosen rotation axis.</p>
@@ -120,7 +120,7 @@ The following table shows the available navigation commands using keyboard short
     </tr>
     <tr class="odd">
       <td style="padding: 5px;">
-        <p>{% include key content='press|Up' %}, {% include key content='press|Down' %}</p>
+        <p>{% include key key='Up' %}, {% include key key='Down' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Zoom in or out.</p>
@@ -128,7 +128,7 @@ The following table shows the available navigation commands using keyboard short
     </tr>
     <tr class="even">
       <td style="padding: 5px;">
-        <p>{% include key content='press|,' %}, {% include key content='press|.' %}</p>
+        <p>{% include key key=',' %}, {% include key key='.' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Move forward or backward along the Z-axis.</p>
@@ -136,7 +136,7 @@ The following table shows the available navigation commands using keyboard short
     </tr>
     <tr class="odd">
       <td style="padding: 5px;">
-        <p>{% include key content='press|Shift|X' %}</p>
+        <p>{% include key keys='Shift|X' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Rotate to the ZY-plane of the current source. (Look along the X-axis of the current source.)</p>
@@ -144,7 +144,7 @@ The following table shows the available navigation commands using keyboard short
     </tr>
     <tr class="even">
       <td style="padding: 5px;">
-        <p>{% include key content='press|Shift|Y' %} or {% include key content='press|Shift|A' %}</p>
+        <p>{% include key keys='Shift|Y' %} or {% include key keys='Shift|A' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Rotate to the XZ-plane of the current source. (Look along the Y-axis of the current source.)</p>
@@ -152,7 +152,7 @@ The following table shows the available navigation commands using keyboard short
     </tr>
     <tr class="odd">
       <td style="padding: 5px;">
-        <p>{% include key content='press|Shift|Z' %}</p>
+        <p>{% include key keys='Shift|Z' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Rotate to the XY-plane of the current source. (Look along the Z-axis of the current source.)</p>
@@ -160,7 +160,7 @@ The following table shows the available navigation commands using keyboard short
     </tr>
     <tr class="even">
       <td style="padding: 5px;">
-        <p>{% include key content='press|[' %} or {% include key content='press|N' %}</p>
+        <p>{% include key key='[' %} or {% include key key='N' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Move to previous timepoint.</p>
@@ -168,7 +168,7 @@ The following table shows the available navigation commands using keyboard short
     </tr>
     <tr class="odd">
       <td style="padding: 5px;">
-        <p>{% include key content='press|]' %} or {% include key content='press|M' %}</p>
+        <p>{% include key key=']' %} or {% include key key='M' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Move to next timepoint.</p>
@@ -178,13 +178,13 @@ The following table shows the available navigation commands using keyboard short
 </table>
 {:/}
 
-For all navigation commands you can hold {% include key content='press\|Shift' %} to rotate and browse 10x faster, or hold {% include key content='press\|Ctrl' %} to rotate and browse 10x slower. For example, {% include key content='press\|Left' %} rotates by 1° clockwise, while {% include key content='press\|Shift\|Left' %} rotates by 10°, and {% include key content='press\|Ctrl\|Left' %} rotates by 0.1°.
+For all navigation commands you can hold {% include key key='Shift' %} to rotate and browse 10x faster, or hold {% include key key='Ctrl' %} to rotate and browse 10x slower. For example, {% include key key='Left' %} rotates by 1° clockwise, while {% include key keys='Shift|Left' %} rotates by 10°, and {% include key keys='Ctrl|Left' %} rotates by 0.1°.
 
-The axis-rotation commands (e.g., {% include key content='press\|Shift\|X' %}) rotate around the current mouse location. That is, if you press {% include key content='press\|Shift\|X' %}, the view will pivot such that you see a ZY-slice through the dataset (you look along the X-axis). The point under the mouse will stay fixed, i.e., the view will be a ZY-slice through that point.
+The axis-rotation commands (e.g., {% include key keys='Shift|X' %}) rotate around the current mouse location. That is, if you press {% include key keys='Shift|X' %}, the view will pivot such that you see a ZY-slice through the dataset (you look along the X-axis). The point under the mouse will stay fixed, i.e., the view will be a ZY-slice through that point.
 
 ### Interpolation Mode
 
-Using {% include key content='press\|I' %} you can switch between nearest-neighbor and trilinear interpolation schemes. The difference is clearly visible when you zoom in such that individual source pixels are visible.
+Using {% include key key='I' %} you can switch between nearest-neighbor and trilinear interpolation schemes. The difference is clearly visible when you zoom in such that individual source pixels are visible.
 
 ![](/media/Bdv-interpolation.png "bdv-interpolation.png")
 
@@ -194,13 +194,13 @@ Trilinear interpolation results in smoother images but is a bit more expensive c
 
 BigDataViewer datasets typically contain more than one source. For a SPIM sequence one usually has multiple angles and possibly fused and deconvoled data on top.
 
-Select {% include bc path='Settings | Visibility & Grouping'%} from the BigDataViewer menu to bring up a dialog to control source visibility. You can also bring up this dialog by the shortcut {% include key content='press\|F6' %}.
+Select {% include bc path='Settings | Visibility & Grouping'%} from the BigDataViewer menu to bring up a dialog to control source visibility. You can also bring up this dialog by the shortcut {% include key key='F6' %}.
 
 <img src="/media/Bdv-visibility.png" width="500"/>
 
-Using the current source checkboxes (A in the figure above), you can switch between available sources. The first ten sources can also be made current by the number keys {% include key content='press\|1' %} through {% include key content='press\|0' %} in the main BigDataViewer window.
+Using the current source checkboxes (A in the figure above), you can switch between available sources. The first ten sources can also be made current by the number keys {% include key key='1' %} through {% include key key='0' %} in the main BigDataViewer window.
 
-To view multiple sources overlaid at the same time, switch to *fused mode* using the checkbox (B). You can also switch between normal and fused mode using the shortcut {% include key content='press\|F' %} in the main window. In fused mode individual sources can be turned on and off using the checkboxes (C) or shortcuts {% include key content='press\|Shift\|1' %} through {% include key content='press\|Shift\|0' %} in the main window.
+To view multiple sources overlaid at the same time, switch to *fused mode* using the checkbox (B). You can also switch between normal and fused mode using the shortcut {% include key key='F' %} in the main window. In fused mode individual sources can be turned on and off using the checkboxes (C) or shortcuts {% include key keys='Shift|1' %} through {% include key keys='Shift|0' %} in the main window.
 
 Whether in normal or fused mode, the (unselectable) boxes (D) provide feedback on which sources are actually currently displayed. Also the main window provides feedback:
 
@@ -210,13 +210,13 @@ In the top-left corner an overview of the dataset is displayed (E). Visible sour
 
 At the top of the window, the name of the current source is shown (F).
 
-Note, that also in fused mode there is always a *current source*, although this source may not even be visible. Commands such as {% include key content='press\|Shift\|X' %} (rotate to ZY-plane) refer to the local coordinate system of the current source.
+Note, that also in fused mode there is always a *current source*, although this source may not even be visible. Commands such as {% include key keys='Shift|X' %} (rotate to ZY-plane) refer to the local coordinate system of the current source.
 
 ### Grouping Sources
 
 Often there are sets of sources for which visibility is logically related. For example, in a multi-angle, multi-channel SPIM sequence, you will frequently want to see all channels of a given angle, or all angles of a given channel. If your dataset contains deconvolved data, you may want to see either all raw angles overlaid, or the deconvolved view, respectively. You want to be able to quickly switch between those two views. Turning individual sources on and off becomes tedious in these situations. Therefore, sources can be organized into *groups*. All sources of a *group* can be activated or deactivated at once.
 
-Source grouping is handled in the visibility and grouping dialog, too (menu {% include bc path='Settings | Visibility & Grouping'%} or shortcut {% include key content='press\|F6' %}).
+Source grouping is handled in the visibility and grouping dialog, too (menu {% include bc path='Settings | Visibility & Grouping'%} or shortcut {% include key key='F6' %}).
 
 <img src="/media/Bdv-grouping.png" width="500"/>
 
@@ -224,9 +224,9 @@ The lower half of the dialog is dedicated to grouping. There are 10 groups avail
 
 Sources can be assigned to groups using the checkboxes (B). In every line, there are as many checkboxes as there are sources. Sources corresponding to active checkboxes are assigned to the respective group. For example, in the above screenshot there are two sources and therefore two "assigned sources" checkboxes per line The first source is assigned to groups 1 and 2, the second source is assigned to groups 2 and 3. Group 2 has been renamed to "all sources".
 
-*Grouping* can be turned on and off by the checkbox (C) or by using the shortcut {% include key content='press\|G' %} in the main window. If grouping is enabled, groups take the role of individual sources: There is one *current group* which is visible in normal mode (all individual sources that are part of this group are overlaid). Groups can be activated or deactivated to determine visibility in fused mode (all individual sources that are part of at least one active group are overlaid).
+*Grouping* can be turned on and off by the checkbox (C) or by using the shortcut {% include key key='G' %} in the main window. If grouping is enabled, groups take the role of individual sources: There is one *current group* which is visible in normal mode (all individual sources that are part of this group are overlaid). Groups can be activated or deactivated to determine visibility in fused mode (all individual sources that are part of at least one active group are overlaid).
 
-Groups can be made current and made active or inactive using the checkboxes (D). Also, if grouping is enabled the number key shortcuts in the main BigDataViewer window act on groups instead of individual sources. That is, groups 1 through 10 can be made current by keys {% include key content='press\|1' %} through {% include key content='press\|0' %}. Similarly, shortcuts {% include key content='press\|Shift\|1' %} through {% include key content='press\|Shift\|0' %} in the main window activate or deactivate groups 1 through 10 for visibility in fused mode.
+Groups can be made current and made active or inactive using the checkboxes (D). Also, if grouping is enabled the number key shortcuts in the main BigDataViewer window act on groups instead of individual sources. That is, groups 1 through 10 can be made current by keys {% include key key='1' %} through {% include key key='0' %}. Similarly, shortcuts {% include key keys='Shift|1' %} through {% include key keys='Shift|0' %} in the main window activate or deactivate groups 1 through 10 for visibility in fused mode.
 
 If grouping is enabled, the name of the current group is shown at the top of the main window.
 
@@ -234,7 +234,7 @@ If grouping is enabled, the name of the current group is shown at the top of the
 
 ### Adjusting Brightness and Color
 
-To change the brightness, contrast, or color of particular sources select {% include bc path='Settings | Brightness & Color'%} or press the shortcut {% include key content='press\|S' %}. This brings up the brightness and color settings dialog.
+To change the brightness, contrast, or color of particular sources select {% include bc path='Settings | Brightness & Color'%} or press the shortcut {% include key key='S' %}. This brings up the brightness and color settings dialog.
 
 <img src="/media/Bdv-brightness-1.png" width="500"/>
 
@@ -262,19 +262,19 @@ Finally, at the bottom of the dialog (D) colors can be assigned to sources. Ther
 
 BigDataViewer allows to bookmark the current view. You can set bookmarks for interesting views or particular details of your dataset to easily navigate back to those views later.
 
-Each bookmark has an assigned shortcut key, i.e., you can have bookmarks "a", "A", "b", ..., "1", "2", etc. To set a bookmark for the current view, press {% include key content='press\|Shift\|B' %} and then the shortcut you want to use for the bookmark. To recall bookmark, press {% include key content='press\|B' %} and then the shortcut of the bookmark.
+Each bookmark has an assigned shortcut key, i.e., you can have bookmarks "a", "A", "b", ..., "1", "2", etc. To set a bookmark for the current view, press {% include key keys='Shift|B' %} and then the shortcut you want to use for the bookmark. To recall bookmark, press {% include key key='B' %} and then the shortcut of the bookmark.
 
-BigDataViewer provides visual feedback for setting and recalling bookmarks. When you press {% include key content='press\|Shift\|B' %}, the message "**set bookmark:**" appears in the lower right corner of the main window, prompting to press the bookmark shortcut next.
+BigDataViewer provides visual feedback for setting and recalling bookmarks. When you press {% include key keys='Shift|B' %}, the message "**set bookmark:**" appears in the lower right corner of the main window, prompting to press the bookmark shortcut next.
 
 <img src="/media/Bdv-set-bookmark.png" width="500"/>
 
-Now press the key you want to use as a shortcut, for example {% include key content='press\|A' %}. The prompt message will change to "**set bookmark: a**" indicating that you have set a bookmark with shortcut {% include key content='press\|A' %}. Instead of pressing a shortcut key you can abort using {% include key content='press\|esc' %}.
+Now press the key you want to use as a shortcut, for example {% include key key='A' %}. The prompt message will change to "**set bookmark: a**" indicating that you have set a bookmark with shortcut {% include key key='A' %}. Instead of pressing a shortcut key you can abort using {% include key key='esc' %}.
 
-Similarly, when you press {% include key content='press\|B' %} to recall a bookmark, the prompt message "**go to bookmark:**" appears. Now press the shortcut of the bookmark you want to recall, for example {% include key content='press\|A' %}. The prompt message will change to "**go to bookmark: a**" and the view will move to the bookmarked location. Instead of pressing a shortcut key you can abort using {% include key content='press\|esc' %}.
+Similarly, when you press {% include key key='B' %} to recall a bookmark, the prompt message "**go to bookmark:**" appears. Now press the shortcut of the bookmark you want to recall, for example {% include key key='A' %}. The prompt message will change to "**go to bookmark: a**" and the view will move to the bookmarked location. Instead of pressing a shortcut key you can abort using {% include key key='esc' %}.
 
-Note, that bookmark shortcuts are case-sensitive, i.e., {% include key content='press\|A' %} and {% include key content='press\|Shift\|A' %} refer to distinct bookmarks "a" and "A" respectively.
+Note, that bookmark shortcuts are case-sensitive, i.e., {% include key key='A' %} and {% include key keys='Shift|A' %} refer to distinct bookmarks "a" and "A" respectively.
 
-The bookmarking mechanism can also be used to bookmark and recall orientations. Press {% include key content='press\|O' %} and then a bookmark shortcut to recall only the orientation of that bookmark. This rotates the view into the rotation of the bookmarked view (but does not zoom or translate to the bookmarked location). The rotation is around the current mouse location (i.e., the point under the mouse stays fixed).
+The bookmarking mechanism can also be used to bookmark and recall orientations. Press {% include key key='O' %} and then a bookmark shortcut to recall only the orientation of that bookmark. This rotates the view into the rotation of the bookmarked view (but does not zoom or translate to the bookmarked location). The rotation is around the current mouse location (i.e., the point under the mouse stays fixed).
 
 ### Loading and Saving Settings
 

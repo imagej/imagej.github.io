@@ -79,7 +79,7 @@ The keystore password should be provided when the server starts. Then, the /mana
 
 The web interface of /manager context looks like this: <img src="/media/BigDataServer Manager.png" width="600"/>
 
-The server will keep running until you cancel it with {% include key content='press\|Ctrl\|C' %} or close the shell. To start the server in the background run it in a screen session:
+The server will keep running until you cancel it with {% include key keys='Ctrl|C' %} or close the shell. To start the server in the background run it in a screen session:
 
 `$ screen`  
 `$ java -Xmx4G -jar bigdataserver.jar -d datasets.txt`  
@@ -87,9 +87,9 @@ The server will keep running until you cancel it with {% include key content='pr
 `...`  
 `2015-02-14 14:03:12.316:`[`INFO:oejs.Server:main`](INFO_oejs.Server_main)`: Started @20046ms`
 
-and detach the screen with {% include key content='press\|Ctrl\|A' %} {% include key content='press\|D' %}.
+and detach the screen with {% include key keys='Ctrl|A' %} {% include key key='D' %}.
 
-To add new datasets edit the *dataset.txt* and add new XML paths. After that you have to currently restart the server. (Re-attach the screen session with `screen -r`, cancel the server with {% include key content='press\|Ctrl\|C' %} and repeat the above).
+To add new datasets edit the *dataset.txt* and add new XML paths. After that you have to currently restart the server. (Re-attach the screen session with `screen -r`, cancel the server with {% include key keys='Ctrl|C' %} and repeat the above).
 
 Note that the server port needs to be open.
 

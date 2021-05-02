@@ -22,7 +22,7 @@ This will launch the Weka GUI Chooser and, if it is the first time, a warning di
 
 ![](/media/Weka-GUI-Chooser-package-warning-ubuntu.png "Weka-GUI-Chooser-package-warning-ubuntu.png")
 
-We can just click OK, go the Weka GUI Chooser window and look for the package manager under the menu {% include bc path='Tools | Package manager'%}, or by pressing {% include key content='Ctrl\|U' %}:
+We can just click OK, go the Weka GUI Chooser window and look for the package manager under the menu {% include bc path='Tools | Package manager'%}, or by pressing {% include key keys='Ctrl|U' %}:
 
 ![](/media/Weka-GUI-Chooser-package-manager.png "Weka-GUI-Chooser-package-manager.png")
 

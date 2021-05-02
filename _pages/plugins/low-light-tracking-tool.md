@@ -77,7 +77,7 @@ When the plugin starts on a 2D image stack you have three windows and the contro
 
 ![](/media/Opendatasmall.png "fig:Opendatasmall.png") ![](/media/Controlwindownew.png "fig:Controlwindownew.png")
 
-If you would like the windows to become larger or smaller, change the size of the main data window and then select **Arrange Windows**, from the **View** menu. Alternatively you can use the [ hot-key](/plugins/low-light-tracking-tool#hot-keys) {% include key content='Ctrl' %}+{% include key content='W' %} (when the focus is on the control panel) or {% include key content='W' %} (when the focus is on one of the other windows). This will also organize the windows if they have become scattered.
+If you would like the windows to become larger or smaller, change the size of the main data window and then select **Arrange Windows**, from the **View** menu. Alternatively you can use the [ hot-key](/plugins/low-light-tracking-tool#hot-keys) {% include key keys='Ctrl|W' %} (when the focus is on the control panel) or {% include key key='W' %} (when the focus is on one of the other windows). This will also organize the windows if they have become scattered.
 
 If you close some of the windows you can bring them back using the **Windows** menu in the control panel. If you close the control panel, this will terminate the program. Don't forget to [ **Save**](/plugins/low-light-tracking-tool#saving-and-loading) your results before.
 
@@ -121,7 +121,7 @@ Fixed **σ** can be more stable and also faster, this is more so for 3D data. Al
 
 ## Adding objects to track
 
-To add an object in order to track it, make sure the cross hair icon in the Fiji toolbar is selected and then double click roughly on the object you would like to track in the main window. This new object is represented as a circle. An accordant entry will appear in the table in the control panel representing the objects trace. You can select objects by clicking on them in the control panel or directly in the main window. You can then move them around, using drag and drop or edit them. Multiple objects can be selected by holding {% include key content='Shift' %} when selecting.
+To add an object in order to track it, make sure the cross hair icon in the Fiji toolbar is selected and then double click roughly on the object you would like to track in the main window. This new object is represented as a circle. An accordant entry will appear in the table in the control panel representing the objects trace. You can select objects by clicking on them in the control panel or directly in the main window. You can then move them around, using drag and drop or edit them. Multiple objects can be selected by holding {% include key key='Shift' %} when selecting.
 
 ![](/media/CreateDots.png "CreateDots.png")
 
@@ -201,16 +201,16 @@ The algorithm builds a {% include wikipedia title='Pyramid %28image processing%2
 
 # Tips
 
--   If you want to be able to see the original image data and find your tracking results get in the way, you use the hot-key {% include key content='P' %} or {% include key content='Ctrl' %}+{% include key content='P' %} respectively to hide all overlays (all circles lines and cross-hairs drawn on top of the image).
+-   If you want to be able to see the original image data and find your tracking results get in the way, you use the hot-key {% include key key='P' %} or {% include key keys='Ctrl|P' %} respectively to hide all overlays (all circles lines and cross-hairs drawn on top of the image).
 -   If some of the windows appear to bright or to dark use **View-&gt;Adjust Brightness/Contrast** to correct them.
 -   You can use **File-&gt;Export images** to export a sequence of image with the tracking results drawn on top of them. You can use this to create a movie in order to demonstrate your tracking results. In your working directory a new folder named **movieMain** will be created and filled with images.
 -   If you have multichannel data, each channel needs its own session. You can select which sessions are visible by checking their boxes in the **Visible Sessions** list. You can use the current session drop down menu to switch between sessions.
--   You can zoom into the kymographs by moving the cursor over the kymograph window and holding down {% include key content='Shift' %}, while using the scroll wheel on the mouse.
+-   You can zoom into the kymographs by moving the cursor over the kymograph window and holding down {% include key key='Shift' %}, while using the scroll wheel on the mouse.
 -   You can use the **optimize** button. This will perform the tracking of the selected objects on the single frame you are looking at. You can use this for example with **Automatic σ** turned on to determine the size of the target's PSF on a single frame.
 
 # Hot-keys
 
-There are several hot-keys you can use. You can find the key to press in the menus of the control panel. When the focus is on the control panel you have to press {% include key content='Ctrl' %} to access hotkeys. When the focus is on one of the other windows this is not necessary.
+There are several hot-keys you can use. You can find the key to press in the menus of the control panel. When the focus is on the control panel you have to press {% include key key='Ctrl' %} to access hotkeys. When the focus is on one of the other windows this is not necessary.
 
 # File format
 

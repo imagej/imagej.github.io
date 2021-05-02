@@ -33,7 +33,7 @@ In any of the two modes, the snapshot window will hide itself before taking the 
 
 <img src="/media/How to make a new tutorial-MakeSnapshots.jpg" width="640"/>
 
-After taking some or all of the snapshots you want to include in your tutorial, you have to crop them. Just select the appropriate rectangle, and then click on ImageJ's {% include bc path='Edit | Crop'%} or hit {% include key content='Ctrl' %}+{% include key content='Shift' %}+{% include key content='X' %}:
+After taking some or all of the snapshots you want to include in your tutorial, you have to crop them. Just select the appropriate rectangle, and then click on ImageJ's {% include bc path='Edit | Crop'%} or press {% include key keys='Ctrl|Shift|X' %}:
 
 ![](/media/How to make a new tutorial-CropSnapshot.jpg "How_to_make_a_new_tutorial-CropSnapshot.jpg")
 

@@ -10,7 +10,7 @@ ImageJ allows you to write scripts in several different languages.
 # Getting started
 
 -   Read the [ImageJ tutorial notebooks](/tutorials) to learn how to write ImageJ scripts.
--   Press the {% include key content='\[' %} key to open the [Script Editor](/scripting/script-editor) (or {% include key content='Shift' %}-{% include key content='\[' %} to open the [Script Interpreter](/scripting/interpreter)).
+-   Press the {% include key key='\[' %} key to open the [Script Editor](/scripting/script-editor) (or {% include key key='Shift' %}-{% include key key='\[' %} to open the [Script Interpreter](/scripting/interpreter)).
 -   Optionally, choose a template from the *Templates* menu to get you started.
 -   Otherwise, choose your language from the *Language* menu.
 -   Grab code snippets for common tasks from the [Scripting toolbox](/scripting/toolbox).
@@ -140,17 +140,17 @@ All scripting languages use the same basic interpreter, with the following commo
 
 ## General key bindings
 
--   {% include key content='up' %}: bring the previously typed command.
--   {% include key content='down' %}: bring the next typed command.
--   {% include key content='enter' %} or {% include key content='return' %}: execute the contents of the prompt.
+-   {% include key key='up' %}: bring the previously typed command.
+-   {% include key key='down' %}: bring the next typed command.
+-   {% include key key='enter' %} or {% include key key='return' %}: execute the contents of the prompt.
 
 ## Multiline editing and keybindings
 
 You can enlarge the prompt by dragging the middle bar.
 
--   {% include key content='Shift\|\|Enter' %}: create a new line within the prompt.
--   {% include key content='Shift\|\|Up' %}: move to the line above within the prompt.
--   {% include key content='Shift\|Down' %}: move to the line below within the prompt.
+-   {% include key keys='Shift||Enter' %}: create a new line within the prompt.
+-   {% include key keys='Shift||Up' %}: move to the line above within the prompt.
+-   {% include key keys='Shift|Down' %}: move to the line below within the prompt.
 
 ## Selecting and executing text from the screen
 

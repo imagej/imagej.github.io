@@ -53,7 +53,7 @@ To get started, start up the script editor:
 
 <img src="/media/Script-Editor-new.jpg" width="500"/>
 
-There is also the keyboard shortcut {% include key content='\[' %} (open square bracket) to open the editor.
+There is also the keyboard shortcut {% include key key='\[' %} (open square bracket) to open the editor.
 
 ### Choosing a language
 

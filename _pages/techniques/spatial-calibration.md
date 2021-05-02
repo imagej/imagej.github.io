@@ -17,7 +17,7 @@ The process of spatial calibration involves calibrating a single image against k
 5.  Set the units of the measurement (um, mm, whatever)
 6.  Now turn on the "Global" option by clicking the check box, so all open images will take the same spatial calibration when you click OK. (If not then only the image with the line selection is calibrated. <img src="/media/SpatialCalibrationSS1.png" width="700"/>
 7.  Now you will see that the test image is spatially calibrated. In the info bar at the top of the image, the numbers have spatial units! Notice the (G) in the name bar of both the images. That means calibration is being set the same for all open images.
-8.  Now make a line or area selection. If you use the measure function {% include bc path='Analyze | Measure'%} or {% include key content='Ctrl\|M' %}, the results will be spatially calibrated. ![](/media/SpatialCalibrationSS2.png "fig:SpatialCalibrationSS2.png")
+8.  Now make a line or area selection. If you use the measure function {% include bc path='Analyze | Measure'%} or {% include key keys='Ctrl|M' %}, the results will be spatially calibrated. ![](/media/SpatialCalibrationSS2.png "fig:SpatialCalibrationSS2.png")
 
 If you want to see the spatial calibration of an image, or even change it manually, you can use the "Image-Properties" menu function to view and change the xyz voxel sizes, time calibration, number of z slices, (colour) channels, and time point interval. This is handy if you need to rearrange the dimensionality of a stack of images (also, use the "Image-Hyperstacks" menu item functions for that).
 

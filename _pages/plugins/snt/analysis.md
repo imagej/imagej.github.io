@@ -13,13 +13,13 @@ There are two [Sholl Analysis](/plugins/sholl-analysis) commands available in SN
 
 ## Sholl Analysis (by Focal Point)
 
-<img src="/media/Snt-Sholl-Coarse-Intructions.png" title="fig:Initiating Sholl Analysis: coarse method" width="200" alt="Initiating Sholl Analysis: coarse method" /> It is also possible to initiate [Sholl Analysis](/plugins/sholl-analysis) on a tracing in the canvas by manually selecting a focal point. You can do it coarsely by right-clicking near a node and choosing *Sholl Analysis at Nearest Node* from the contextual menu (Shortcut: {% include key content='Alt' %} + {% include key content='Shift' %} + {% include key content='A' %}.
+<img src="/media/Snt-Sholl-Coarse-Intructions.png" title="fig:Initiating Sholl Analysis: coarse method" width="200" alt="Initiating Sholl Analysis: coarse method" /> It is also possible to initiate [Sholl Analysis](/plugins/sholl-analysis) on a tracing in the canvas by manually selecting a focal point. You can do it coarsely by right-clicking near a node and choosing *Sholl Analysis at Nearest Node* from the contextual menu (Shortcut: {% include key keys='Alt|Shift|A' %}.
 
 Alternatively, for precise positioning of the center of analysis:
 
-1.  Mouse over the path of interest. Press {% include key content='G' %} to activate it.
-2.  Press {% include key content='Alt' %}+{% include key content='Shift' %} to select a node along the path.
-3.  Press {% include key content='Alt' %}+{% include key content='Shift' %}+{% include key content='A' %} to start analysis.
+1.  Mouse over the path of interest. Press {% include key key='G' %} to activate it.
+2.  Press {% include key keys='Alt|Shift' %} to select a node along the path.
+3.  Press {% include key keys='Alt|Shift|A' %} to start analysis.
 
 <div align="center">
 

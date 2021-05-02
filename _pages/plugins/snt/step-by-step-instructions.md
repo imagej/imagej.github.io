@@ -15,17 +15,17 @@ These instructions assume that you have read the [Overview](/plugins/snt/manual)
 
 ### I. Pick The Starting Point
 
-<img src="/media/Snt-cropped-before-starting-2.png" title="fig:Choosing a starting point" width="400" alt="Choosing a starting point" /> You may notice that, by default, the cursor [snaps](/plugins/snt/manual#auto-snapping) to the brightest pixel in its vicinity. If you prefer to manually control the placement of nodes, feel free to toggle feature by pressing {% include key content='S' %}. Now, to begin tracing, move through the image stack to find the start point of a path then click there with the left mouse button.
+<img src="/media/Snt-cropped-before-starting-2.png" title="fig:Choosing a starting point" width="400" alt="Choosing a starting point" /> You may notice that, by default, the cursor [snaps](/plugins/snt/manual#auto-snapping) to the brightest pixel in its vicinity. If you prefer to manually control the placement of nodes, feel free to toggle feature by pressing {% include key key='S' %}. Now, to begin tracing, move through the image stack to find the start point of a path then click there with the left mouse button.
 
 ### II. Pick A Subsequent Point
 
 <img src="/media/Snt-cropped-after-starting-2.png" title="fig:First point of a path selected" width="400" alt="First point of a path selected" /> <img src="/media/Snt-cropped-mid-tracing-2.png" title="fig:A* search animated progress" width="400" alt="A* search animated progress" /> A small circle should appear, highlighting the start of the path. Move through the stack to find a subsequent point further along the same structure to be traced (neuron, blood vessel, etc.), and click there.
 
-If a path between the two points cannot be found immediately, you may see the animated progress of the search. You can scroll through the stack while such a search progresses: If it appears to not be making good progress, it's probably best to press the "Cancel/Esc" button (shortcut: {% include key content='C' %}/{% include key content='Esc' %}) and pick a point closer to the start point. {% include tip id='external-traces' tip='Increase *Z* in the *Cursor Auto-snapping* panel for automated Z-navigation on signal mouseover.' %}
+If a path between the two points cannot be found immediately, you may see the animated progress of the search. You can scroll through the stack while such a search progresses: If it appears to not be making good progress, it's probably best to press the "Cancel/Esc" button (shortcut: {% include key key='C' %}/{% include key key='Esc' %}) and pick a point closer to the start point. {% include tip id='external-traces' tip='Increase *Z* in the *Cursor Auto-snapping* panel for automated Z-navigation on signal mouseover.' %}
 
 ### III. Confirm The Temporary Segment
 
-Once the search has reached the target point, the path is shown in cyan (to indicate that this is still a temporary path) and you are asked to confirm (by clicking "Yes" or pressing {% include key content='Y' %}) that this path is following the route through the image that you expect. If it is not, then click "No" {% include key content='N' %} and you'll go back to the [previous step](#ii-picking-a-subsequent-point). Assuming you confirmed the path, the confirmed path will appear in red. Now you are essentially back at [step II](#ii-picking-a-subsequent-point). Normally you will go on to pick further points along the structure. However, if you have finished with that path, click "Finish Path" {% include key content='F' %} and you will go back to [step I](#i-picking-a-start-point). If you completed that path it would be shown in magenta.
+Once the search has reached the target point, the path is shown in cyan (to indicate that this is still a temporary path) and you are asked to confirm (by clicking "Yes" or pressing {% include key key='Y' %}) that this path is following the route through the image that you expect. If it is not, then click "No" {% include key key='N' %} and you'll go back to the [previous step](#ii-picking-a-subsequent-point). Assuming you confirmed the path, the confirmed path will appear in red. Now you are essentially back at [step II](#ii-picking-a-subsequent-point). Normally you will go on to pick further points along the structure. However, if you have finished with that path, click "Finish Path" {% include key key='F' %} and you will go back to [step I](#i-picking-a-start-point). If you completed that path it would be shown in magenta.
 
 <div align="center">
 
@@ -39,11 +39,11 @@ Once the search has reached the target point, the path is shown in cyan (to indi
 
 ### I. Select The Path To Branch Off
 
-To select the path you want to branch off from, you can either select it in the Path Manager, or press {% include key content='G' %} while the mouse pointer is near the path. When the path is first selected, it will be shown in the default green color. <img src="/media/Snt-sb-selecting-by-G.gif" title="fig:Holding &#39;G&#39; (Group paths around cursor) will select the closest path to the mouse pointer" width="600" alt="Holding &#39;G&#39; (Group paths around cursor) will select the closest path to the mouse pointer" />
+To select the path you want to branch off from, you can either select it in the Path Manager, or press {% include key key='G' %} while the mouse pointer is near the path. When the path is first selected, it will be shown in the default green color. <img src="/media/Snt-sb-selecting-by-G.gif" title="fig:Holding &#39;G&#39; (Group paths around cursor) will select the closest path to the mouse pointer" width="600" alt="Holding &#39;G&#39; (Group paths around cursor) will select the closest path to the mouse pointer" />
 
 ### II. Select The Fork Point
 
-<img src="/media/Snt-sb-started-branch-2.png" title="fig:A newly created fork point" width="400" alt="A newly created fork point" /> To force the start of the new path to be a branch of the selected path, hold down the {% include key content='Alt\|Shift' %} keys while you move the mouse to find the branch point under the red cross-hairs, now decorated with a "Fork Point" annotation. With {% include key content='Alt\|Shift' %} held down, click with the left mouse button. Finally, release the keys. Note that it is also possible to zoom into the branch point, right-click on the image and choose *Fork at Nearest Node* from the contextual menu.
+<img src="/media/Snt-sb-started-branch-2.png" title="fig:A newly created fork point" width="400" alt="A newly created fork point" /> To force the start of the new path to be a branch of the selected path, hold down the {% include key keys='Alt|Shift' %} keys while you move the mouse to find the branch point under the red cross-hairs, now decorated with a "Fork Point" annotation. With {% include key keys='Alt|Shift' %} held down, click with the left mouse button. Finally, release the keys. Note that it is also possible to zoom into the branch point, right-click on the image and choose *Fork at Nearest Node* from the contextual menu.
 
 ### III. Extend The Path
 
@@ -77,7 +77,7 @@ From this point on, you can carry on adding nodes to the branched path as [above
     </tr>
     <tr class="even">
       <td>
-        <p>... and you want the final part of that path to join up with the existing path running from the top-left to top-right of the image. First, select that path in the path list (or using the {% include key content='G' %} shortcut) as in [2]:</p>
+        <p>... and you want the final part of that path to join up with the existing path running from the top-left to top-right of the image. First, select that path in the path list (or using the {% include key key='G' %} shortcut) as in [2]:</p>
       </td>
       <td>
         <figure>
@@ -90,7 +90,7 @@ From this point on, you can carry on adding nodes to the branched path as [above
     </tr>
     <tr class="odd">
       <td>
-        <p>Now hold down {% include key content='Alt|Shift' %} to restrict the endpoint to be a "join" on that existing path. Click (while still holding down the modifier keys) to start the search for that endpoint and make it join the existing path. If the search can find a path to the end point, the result should look like [3]:</p>
+        <p>Now hold down {% include key keys='Alt|Shift' %} to restrict the endpoint to be a "join" on that existing path. Click (while still holding down the modifier keys) to start the search for that endpoint and make it join the existing path. If the search can find a path to the end point, the result should look like [3]:</p>
       </td>
       <td>
         <figure>
@@ -124,7 +124,7 @@ Two paths can be merged or joined in *Edit Mode*. To do so:
 
 1.  Select a path and enter *Edit Mode* (by right-clicking on the image canvas to access its [Contextual menu](/plugins/snt/manual#contextual-menu))
 2.  Activate the node to be merged by hovering over it
-3.  Select the second path by using the {% include key content='G' %} [shortcut](/plugins/snt/key-shortcuts) and activate the second merging node by hovering over it
+3.  Select the second path by using the {% include key key='G' %} [shortcut](/plugins/snt/key-shortcuts) and activate the second merging node by hovering over it
 4.  Open the contextual menu and select the initial path from the *Connect To (Start Join)* / *Connect To (End Join)* menu.
 
 If both nodes are terminal, the paths are merged together. Otherwise, one path will become a child of the other. Note that one of the nodes must be terminal, to ensure no loops are created.
@@ -155,12 +155,12 @@ To open the viewer, select the *3D* menu tab in the SNT dialog and look for *Leg
 
 ### II.Tracing and Navigation
 
--   **Selecting points for tracing** Select the *Wand tool* ({% include key content='W' %} [shortcut](/plugins/snt/key-shortcuts#legacy-3d-viewer)) in the main ImageJ toolbar and click over the region you want to trace. Tracing works the same way as in the 2.5D view, i.e., click somewhere in the image to create a starting point, then click further along the structure of interest to find a path between the two points, then confirm or deny the temporary segment as described [above](#Tracing). Similarly, branching occurs as [described for 2D canvas(es)](#Branching:_Start_A_Path_On_An_Existing_Path), by holding the {% include key content='Alt\|Shift' %} modifier.
--   **Rotation** Either use the *Hand tool* ({% include key content='H' %} [shortcut](/plugins/snt/key-shortcuts#legacy-3d-viewer)) tool and left-click while dragging the mouse or drag mouse while holding the scroll wheel.
--   **Translation** Hold {% include key content='Shift' %} and the scroll wheel while dragging the mouse.
+-   **Selecting points for tracing** Select the *Wand tool* ({% include key key='W' %} [shortcut](/plugins/snt/key-shortcuts#legacy-3d-viewer)) in the main ImageJ toolbar and click over the region you want to trace. Tracing works the same way as in the 2.5D view, i.e., click somewhere in the image to create a starting point, then click further along the structure of interest to find a path between the two points, then confirm or deny the temporary segment as described [above](#Tracing). Similarly, branching occurs as [described for 2D canvas(es)](#Branching:_Start_A_Path_On_An_Existing_Path), by holding the {% include key keys='Alt|Shift' %} modifier.
+-   **Rotation** Either use the *Hand tool* ({% include key key='H' %} [shortcut](/plugins/snt/key-shortcuts#legacy-3d-viewer)) tool and left-click while dragging the mouse or drag mouse while holding the scroll wheel.
+-   **Translation** Hold {% include key key='Shift' %} and the scroll wheel while dragging the mouse.
 -   **Adjusting zoom depth** Scroll the mouse wheel.
 
-Once you have selected each of these tools (Wand and Hand) once, you should be able to switch between them by pressing the {% include key content='Esc' %} key. See [Key Shortcuts](/plugins/snt/key-shortcuts#legacy-3d-viewer) for the list of all supported shortcuts. ![](/media/Fiji-toolbar-wand-and-hand-2.png "fig:Fiji-toolbar-wand-and-hand-2.png")
+Once you have selected each of these tools (Wand and Hand) once, you should be able to switch between them by pressing the {% include key key='Esc' %} key. See [Key Shortcuts](/plugins/snt/key-shortcuts#legacy-3d-viewer) for the list of all supported shortcuts. ![](/media/Fiji-toolbar-wand-and-hand-2.png "fig:Fiji-toolbar-wand-and-hand-2.png")
 
 # Filling
 
@@ -217,9 +217,9 @@ This section describes how to generate [Filtered Images](/plugins/snt/manual#tra
 
 To process a single image with the Frangi Vesselness filter, pause SNT, and select {% include bc path='Process | Filters | Frangi Vesselness'%}. By way of example, let's say you need to enhance strucutres at two scales: twice the x voxel separation and five times that value. We apply a Gaussian convolution at each scale. Assuming your image has isotropic resolution with pixel width = pixel height = voxel depth = 1, the parameters would be: ![](/media/Frangi-parameters.png "fig:")
 {% capture tip%}
-To get the spatial calibration for your image, go to {% include bc path='Image|Properties...'%} ({% include key content='Ctrl' %}+{% include key content='Shift' %}+{% include key content='P' %}) in the main Fiji dialog.
+To get the spatial calibration for your image, go to {% include bc path='Image|Properties...'%} ({% include key keys='Ctrl|Shift|P' %}) in the main Fiji dialog.
 {% endcapture %}
-{% include tip id='image-spacing' tip=tip %} Save the result using {% include bc path='File | Save As|Tiff...'%} ("test-filtered.tif", for example). Then, in SNT's dialog look for the "Tracing on Secondary Image" widget in the *Main* tab. Click the file folder button to specify the secondary image. Next, toggle the "Trace on Secondary Image" checkbox (you can do so using {% include key content='I' %}. Now the pathfinding will occur on the secondary image. To view a MIP of the secondary image "over" the original image during tracing, toggle the "Render in overlay at X% opacity" checkbox.
+{% include tip id='image-spacing' tip=tip %} Save the result using {% include bc path='File | Save As|Tiff...'%} ("test-filtered.tif", for example). Then, in SNT's dialog look for the "Tracing on Secondary Image" widget in the *Main* tab. Click the file folder button to specify the secondary image. Next, toggle the "Trace on Secondary Image" checkbox (you can do so using {% include key key='I' %}. Now the pathfinding will occur on the secondary image. To view a MIP of the secondary image "over" the original image during tracing, toggle the "Render in overlay at X% opacity" checkbox.
 
 <div align="center">
 
@@ -380,7 +380,7 @@ This section describes methods to increase the accuracy of node placement.
     </tr>
     <tr class="even">
       <td>
-        <p>Find the approximate location of your start point by moving your mouse in the XY window, holding down {% include key content='Shift' %} to synchronize the view in the other panes. At this point, you should enable cursor <a href="/plugins/snt/manual#cursor-auto-snapping">auto-snapping</a> in the <a href="/plugins/snt/manual#main-tab">Main tab</a> using suitable parameters for your image.</p>
+        <p>Find the approximate location of your start point by moving your mouse in the XY window, holding down {% include key key='Shift' %} to synchronize the view in the other panes. At this point, you should enable cursor <a href="/plugins/snt/manual#cursor-auto-snapping">auto-snapping</a> in the <a href="/plugins/snt/manual#main-tab">Main tab</a> using suitable parameters for your image.</p>
       </td>
       <td>
         <p><img src="/media/SNT-Accurate-Point-Placement-Walkthrough-Updated-1.png" width="350"></p>
@@ -388,7 +388,7 @@ This section describes methods to increase the accuracy of node placement.
     </tr>
     <tr class="odd">
       <td>
-        <p>When you press {% include key content='+' %} to zoom in, all the panes will zoom in on the point that the crosshair is over, so each time you press {% include key content='+' %}, make sure you move your mouse pointer so that it's still over the structure of interest. You may want to adjust in the <a href="/plugins/snt/manual#views">Views</a> widget (<a href="/plugins/snt/manual#options-tab">Options tab</a>) whether all views should zoom synchronously.<br>
+        <p>When you press {% include key key='+' %} to zoom in, all the panes will zoom in on the point that the crosshair is over, so each time you press {% include key key='+' %}, make sure you move your mouse pointer so that it's still over the structure of interest. You may want to adjust in the <a href="/plugins/snt/manual#views">Views</a> widget (<a href="/plugins/snt/manual#options-tab">Options tab</a>) whether all views should zoom synchronously.<br>
         At this point, you should adjust a suitable <a href="/plugins/snt/manual#cursor-auto-snapping">snapping neighborhood</a> both in 2D (XY) and 3D (Z). Note that when Z-snapping is enabled, all views become synchronized,</p>
       </td>
       <td>
@@ -397,7 +397,7 @@ This section describes methods to increase the accuracy of node placement.
     </tr>
     <tr class="even">
       <td>
-        <p>Locate the center of the structure to be clicked on. If <a href="/plugins/snt/manual#cursor-auto-snapping">cursor auto-snapping</a> is enabled, simply mouse over the structure, otherwise, try moving the mouse and scroll wheel in each of the panes (holding down {% include key content='Shift' %} so synchronize the views in all three panes). Note that you can toggle the cursor auto-snapping feature at will, by pressing the <a href="/plugins/snt/key-shortcuts">shortcut</a> {% include key content='S' %}. Also, note that you can "click" on the <a href="/plugins/snt/key-shortcuts#tracing">brightest voxel</a> of a voxel column, by pressing {% include key content='M' %}.</p>
+        <p>Locate the center of the structure to be clicked on. If <a href="/plugins/snt/manual#cursor-auto-snapping">cursor auto-snapping</a> is enabled, simply mouse over the structure, otherwise, try moving the mouse and scroll wheel in each of the panes (holding down {% include key key='Shift' %} so synchronize the views in all three panes). Note that you can toggle the cursor auto-snapping feature at will, by pressing the <a href="/plugins/snt/key-shortcuts">shortcut</a> {% include key key='S' %}. Also, note that you can "click" on the <a href="/plugins/snt/key-shortcuts#tracing">brightest voxel</a> of a voxel column, by pressing {% include key key='M' %}.</p>
         <p>When you're happy with the point under the crosshairs, left-click to start the path:</p>
       </td>
       <td>
@@ -406,7 +406,7 @@ This section describes methods to increase the accuracy of node placement.
     </tr>
     <tr class="odd">
       <td>
-        <p>Zoom out again with the {% include key content='-' %} key, and similarly zoom in on the next point you want to be on your path to place it precisely:</p>
+        <p>Zoom out again with the {% include key key='-' %} key, and similarly zoom in on the next point you want to be on your path to place it precisely:</p>
       </td>
       <td>
         <p><img src="/media/SNT-Accurate-Point-Placement-Walkthrough-Updated-4.png" width="350"></p>

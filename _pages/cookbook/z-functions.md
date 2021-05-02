@@ -131,7 +131,7 @@ The window seen when 3D Viewer is opened.
 
 To use the 3D Viewer, an 8-bit or RGB image is required. If used on another type of stack, the plugin will have a prompt for you to choose to convert to these types.
 
-The current display mode may be changed by clicking *"Edit/Display As"*. This will let you choose from 'Volume', 'Orthoslice', 'Multi-orthoslice', 'Surface', and 'Surface Plot 2D'. When using the 'Orthoslice' mode, you can right click on the viewer and select 'Adjust Slices' to update the placement of the x, y, and z coordinates. You can also press the {% include key content='X' %}, {% include key content='Y' %}, or {% include key content='Z' %} keys in combination with arrow keys to move the slices.
+The current display mode may be changed by clicking *"Edit/Display As"*. This will let you choose from 'Volume', 'Orthoslice', 'Multi-orthoslice', 'Surface', and 'Surface Plot 2D'. When using the 'Orthoslice' mode, you can right click on the viewer and select 'Adjust Slices' to update the placement of the x, y, and z coordinates. You can also press the {% include key key='X' %}, {% include key key='Y' %}, or {% include key key='Z' %} keys in combination with arrow keys to move the slices.
 
 <figure><img src="/media/3d viewer volume.png" title="3d_viewer_volume.png" width="264" height="286" alt="3d_viewer_volume.png" /><figcaption aria-hidden="true">3d_viewer_volume.png</figcaption></figure>
 

@@ -20,7 +20,7 @@ The next step is to install [OpenJDK 8](https://adoptopenjdk.net/). You will nee
 
 # Check out and build individual plugins/libraries
 
-To develop a plugin, the developer first needs to find out in which file it is contained. To do that, simply call the *Command Finder* (shortcut {% include key content='press\|Ctrl\|L' %}), type (part of) the label of the menu entry in whose function you are interested, and look at the *File* column.
+To develop a plugin, the developer first needs to find out in which file it is contained. To do that, simply call the *Command Finder* (shortcut {% include key keys='Ctrl|L' %}), type (part of) the label of the menu entry in whose function you are interested, and look at the *File* column.
 
 Each individual component is maintained in its own repository in the [*fiji* org on GitHub](https://github.com/fiji/). The name of the repository corresponding to a given *.jar* file is essentially identical with the file name, except that trailing underscores are stripped. Example: *Stitching\_.jar* is maintained in the repository at https://github.com/fiji/Stitching>, *Time\_Lapse.jar* in the repository at <https://github.com/fiji/Time_Lapse.
 

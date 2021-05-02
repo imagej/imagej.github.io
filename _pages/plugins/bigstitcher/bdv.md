@@ -11,7 +11,7 @@ For help on using BigDataViewer, you can either click {% include bc path='Help|S
 
 {% include thumbnail src='/media/BigStitcher BDV Colormode.png' title='Toggle per-view and per-channel coloring by pressing **c** in the main window.'%}
 
-In the BigDataViewer window accompanying the BigStitcher, you can switch between color schemes by pressing {% include key content='c' %} in the BigSitcher main window. A single press will switch between per-view and per-channel coloring. Pressing {% include key content='c' %} repeatedly will cycle through different colors.
+In the BigDataViewer window accompanying the BigStitcher, you can switch between color schemes by pressing {% include key key='c' %} in the BigSitcher main window. A single press will switch between per-view and per-channel coloring. Pressing {% include key key='c' %} repeatedly will cycle through different colors.
 
 ## Displaying selected views as ImageJ images
 

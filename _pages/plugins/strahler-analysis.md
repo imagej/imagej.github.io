@@ -102,7 +102,7 @@ The problem with undiscriminated elimination of terminal branches is that a root
 The plugin produces three types of outputs:
 
 Strahler Image  
-A heat-map image, in which branches are color-coded by their Horton-Strahler numbers. By default, a calibration ramp ({% include bc path='Analyze|Tools|Calibration Bar...'%}) is added as an overlay. WYSIWYG versions (RGB images) of this *Strahler Color Map* image can be obtained by pressing {% include key content='press\|Shift\|F' %} (shortcut for {% include bc path='Image|Overlay|Flatten'%}).
+A heat-map image, in which branches are color-coded by their Horton-Strahler numbers. By default, a calibration ramp ({% include bc path='Analyze|Tools|Calibration Bar...'%}) is added as an overlay. WYSIWYG versions (RGB images) of this *Strahler Color Map* image can be obtained by pressing {% include key keys='Shift|F' %} (shortcut for {% include bc path='Image|Overlay|Flatten'%}).
 
 <!-- -->
 

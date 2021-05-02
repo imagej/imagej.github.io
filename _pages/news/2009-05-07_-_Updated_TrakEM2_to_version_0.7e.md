@@ -12,7 +12,7 @@ The update includes:
 
 -   Fixed profiles 'b','n' for "Duplicate, Link and Send to \[previous/next\] Layer" functionality to select the new profile in the target layer, so that it can be immediately edited, its points deleted with 'x' and redrawn at ease.
 -   Fixed stack-index ordering of AreaList, Pipe, etc. Z-objects. So now Home/End and PgUp/PgDn keys will do the right thing with ZDisplayable objects. For very large and complex AreaList, sending the AreaList to the top will repaint it much more smoothly (faster).
--   Extended AreaList fill-add ({% include key content='Shift' %}+{% include key content='click' %}) and fill-erase ({% include key content='Shift' %}+{% include key content='Alt' %}+{% include key content='click' %}) to look for delimited areas in other AreaList, in the intersection of other AreaList, or the combined areas delimited by several AreaLists.
+-   Extended AreaList fill-add ({% include key keys='Shift|click' %}) and fill-erase ({% include key keys='Shift|Alt|click' %}) to look for delimited areas in other AreaList, in the intersection of other AreaList, or the combined areas delimited by several AreaLists.
 -   Undoing no longer zooms out (oops).
 
 Thanks to [German Koestinger](http://www.ini.uzh.ch/people/german) and [Nuno da Costa](http://www.ini.uzh.ch/people/ndacosta) for testing and bug reports.

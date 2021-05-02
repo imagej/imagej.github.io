@@ -118,7 +118,7 @@ Fiji's handling of {% include bc path='Help | Refresh Menus'%} has seen a number
 
 For teachers' and instructors' convenience, Fiji can cache sample images locally, avoiding huge network traffic during courses.
 
-When using the Recent Commands (available via the {% include key content='9' %} key), the Recorder properly records which action was chosen.
+When using the Recent Commands (available via the {% include key key='9' %} key), the Recorder properly records which action was chosen.
 
 In addition to macros available as menu items, scripts are also opened in the Script Editor rather than executed when holding down the Shift key prior to opening the menu. While at it, the status of the main window tells the user what is currently happening.
 
@@ -172,7 +172,7 @@ When saving a new file, the Script Editor will default to the Fiji.app/ director
 
 You can ask the Script Editor to wrap the lines around instead of showing a horizontal scrollbar. Additionally, it can label whitespace and zap gremlins, thanks to Albert Cardona.
 
-The Simple Neurite Tracer can perform Sholl analysis and export the graphs as .svg or .csv files now. Additionally, there were many fixes and improvements, including an export as .swc option, or being able to select the path nearest to the mouse pointer with the {% include key content='G' %} key. Further, selecting a path in the 3D Viewer selects it in the Neurite Tracer, too. For convenience, there is a button to run Fiji's *Analyze Skeleton (2D/3D)* plugin on the paths. The user interface was converted to the nicer Swing look. Thanks to Mark Longair.
+The Simple Neurite Tracer can perform Sholl analysis and export the graphs as .svg or .csv files now. Additionally, there were many fixes and improvements, including an export as .swc option, or being able to select the path nearest to the mouse pointer with the {% include key key='G' %} key. Further, selecting a path in the 3D Viewer selects it in the Neurite Tracer, too. For convenience, there is a button to run Fiji's *Analyze Skeleton (2D/3D)* plugin on the paths. The user interface was converted to the nicer Swing look. Thanks to Mark Longair.
 
 The SPIM Registration can now handle multi-channel files, too. It provides the cosine blending option and has many more improvements. Thanks to Stephan Preibisch.
 

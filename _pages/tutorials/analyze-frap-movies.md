@@ -9,7 +9,7 @@ Here is a [Jython](Category_Jython) script that does the analysis of a FRAP movi
 Once the user has loaded a good FRAP movie, [well aligned with no drift](/tutorials/correcting-drift-in-frap-experiments), and has specified the ROI for the FRAP zone and another for the control zone, it should be possible to automate the analysis of the FRAP curve. This is what this script aims to do:
 
 -   Load a movie
--   Draw a ROI for the FRAP zone, and store it as the **first** ROI in the ROI manager (by pressing the {% include key content='T' %} key)
+-   Draw a ROI for the FRAP zone, and store it as the **first** ROI in the ROI manager (by pressing the {% include key key='T' %} key)
 -   Do the same for a control zone, out of the FRAP zone
 
 Then load this script in the [Script Editor](/scripting/script-editor), choose {% include bc path='Language | Python'%}, and run it. It will measure the FRAP intensity for all frames, try to find the FRAP frame (by finding the one with the minimal FRAP ROI intensity), and fit the FRAP curve by an increasing exponential. The parameters of the fit can be then read in the log window, and the FRAP curve and its fit are plotted. Careful:the background is taken as the intensity in the FRAP region just after the FRAP pulse.

@@ -339,14 +339,14 @@ We actually don't need any extra flags this time, as this technique isn't specif
 
 <figure><img src="/media/E6Console.png" title="Waiting for input after launching ImageJ" width="400" alt="Waiting for input after launching ImageJ" /><figcaption aria-hidden="true">Waiting for input after launching ImageJ</figcaption></figure>
 
-In this state, we can still send signals to the running application (for example - {% include key content='ctrl\|c' %} to [kill the app](http://www.howtogeek.com/howto/ubuntu/keyboard-shortcuts-for-bash-command-shell-for-ubuntu-debian-suse-redhat-linux-etc/)).
+In this state, we can still send signals to the running application (for example - {% include key keys='ctrl|c' %} to [kill the app](http://www.howtogeek.com/howto/ubuntu/keyboard-shortcuts-for-bash-command-shell-for-ubuntu-debian-suse-redhat-linux-etc/)).
 
-When running a Java application, we can use {% include key content='ctrl\|\\' %} to print a stack trace. **Note:** this shortcut may vary based on your OS and keyboard: see the [print stack trace instructions](/help/troubleshooting#if-imagej-freezes-or-hangs) for more information.
+When running a Java application, we can use {% include key keys='ctrl|\\' %} to print a stack trace. **Note:** this shortcut may vary based on your OS and keyboard: see the [print stack trace instructions](/help/troubleshooting#if-imagej-freezes-or-hangs) for more information.
 
 With this knowledge:
 
 1.  Run the `E6 - Start Looping` command from ImageJ
-2.  Before ImageJ crashes, switch back to the terminal and use {% include key content='ctrl\|\\' %} to print a stack trace
+2.  Before ImageJ crashes, switch back to the terminal and use {% include key keys='ctrl|\\' %} to print a stack trace
 3.  Because we want to guess what the last method to run is, keep taking stack traces until ImageJ crashes
 4.  Look back through the console text and find the last method to be executed
 

@@ -12,7 +12,7 @@ In the generated image, the human eye perceives some yellow and some green-yello
 
 ## The macro
 
-Any self-respecting scientist will doubt your statement. This is where the source code comes in. In Fiji, press the {% include key content='Shift' %} key and then open {% include bc path='File | Open Samples | Spirals (macro)'%} which will open the macro in the [Script Editor](/scripting/script-editor) instead of running it directly. Alternatively, you can drag & drop [this link](https://raw.github.com/fiji/fiji/master/plugins/Scripts/File/Open_Samples/Spirals_.ijm) to your main window.
+Any self-respecting scientist will doubt your statement. This is where the source code comes in. In Fiji, press the {% include key key='Shift' %} key and then open {% include bc path='File | Open Samples | Spirals (macro)'%} which will open the macro in the [Script Editor](/scripting/script-editor) instead of running it directly. Alternatively, you can drag & drop [this link](https://raw.github.com/fiji/fiji/master/plugins/Scripts/File/Open_Samples/Spirals_.ijm) to your main window.
 
 You can inspect the source code, run it, change it, run it again. This is the proper scientific way to convince yourself that the spiral arms have indeed the exact same color.
 

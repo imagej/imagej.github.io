@@ -14,19 +14,19 @@ GitHub offers really powerful ways to refer to specific lines of code. And not o
 
 ## Finding a file – quickly
 
-After pointing the web browser to a specific repository, typing the {% include key content='T' %} key will let you type out parts of the file name and hit {% include key content='Enter' %} when the file in question is at the top of the list (you can also navigate the list using the cursor keys).
+After pointing the web browser to a specific repository, typing the {% include key key='T' %} key will let you type out parts of the file name and press {% include key key='Return' %} when the file in question is at the top of the list (you can also navigate the list using the cursor keys).
 
 ## Linking to specific lines
 
-Hitting the {% include key content='L' %} key lets you jump to a specific line (and modifies the URL which you can then send around to refer to that line).
+Hitting the {% include key key='L' %} key lets you jump to a specific line (and modifies the URL which you can then send around to refer to that line).
 
-After one line is selected already, you can select a line *range* by {% include key content='Shift' %}-clicking on the line number of the other end of the line range.
+After one line is selected already, you can select a line *range* by {% include key key='Shift' %}-clicking on the line number of the other end of the line range.
 
 ## Permalinks
 
 After you found the link for the file in question, it most likely refers to the current version of the file.
 
-However, once development advances, the file's contents might change in the meantime, or the file might even go away! To provide a link to a specific revision of the file, just hit the {% include key content='Y' %} key to modify the URL to a permanent link (it will then reference the exact commit, instead of a branch).
+However, once development advances, the file's contents might change in the meantime, or the file might even go away! To provide a link to a specific revision of the file, just press the {% include key key='Y' %} key to modify the URL to a permanent link (it will then reference the exact commit, instead of a branch).
 
 ## Ignore whitespace changes in diffs
 
@@ -37,7 +37,7 @@ Sometimes, a commit will mix whitespace changes with other changes, making the f
 
 # Editing files
 
-If you want to modify some file's contents and you are certain that the changes do not need to be tested locally, you can hit the `Edit` button on the upper right corner after navigating to the file in question (in case you don't have *Push* permission on the repository in question, this will *fork* the project at the same time). This will let you edit the file online and commit the changes after providing a commit message (you should still try to write a [meaningful commit message](/develop/coding-style#scm-history), of course).
+If you want to modify some file's contents and you are certain that the changes do not need to be tested locally, you can press the `Edit` button on the upper right corner after navigating to the file in question (in case you don't have *Push* permission on the repository in question, this will *fork* the project at the same time). This will let you edit the file online and commit the changes after providing a commit message (you should still try to write a [meaningful commit message](/develop/coding-style#scm-history), of course).
 
 # Working with Pull Requests
 
@@ -49,7 +49,7 @@ Let's assume that you want to provide a fix for a vexing bug in one of your favo
 
 ## Testing Pull Requests before merging them
 
-GitHub makes it very, very easy to merge Pull Requests simply by hitting a button. Of course you should review the changes before you do so: remember that the quality of open-source software is high only because many developers throw their cumulative expertise together to make something that is better than each individual developer could have developed on their own.
+GitHub makes it very, very easy to merge Pull Requests simply by pressing a button. Of course you should review the changes before you do so: remember that the quality of open-source software is high only because many developers throw their cumulative expertise together to make something that is better than each individual developer could have developed on their own.
 
 You might even want to test the code locally before merging. This is really easy because GitHub provides not only the test whether a Pull Request can be merged cleanly, but it also offers the revision in the form of the `refs/pull/`<ID>`/merge` pseudo branches.
 

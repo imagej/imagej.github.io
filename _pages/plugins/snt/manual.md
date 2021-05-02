@@ -107,7 +107,7 @@ This home tab aggregated widgets for tracing and frequent operations.
 
 ### Cursor Auto-snapping
 
-**Enable Snapping checkbox** If active (the default) the cursor snaps to the brightest voxel in its vicinity (Toggling shortcut: {% include key content='S' %}). To accomplish this, SNT takes the cuboid of the specified dimensions (in pixels) centered on the current cursor position and searches quickly for local maxima in that neighborhood, moving the cursor to that position. The Z-plane in which the maximum was found is automatically selected if the "Z" parameter is greater than 0. Noteworthy:
+**Enable Snapping checkbox** If active (the default) the cursor snaps to the brightest voxel in its vicinity (Toggling shortcut: {% include key key='S' %}). To accomplish this, SNT takes the cuboid of the specified dimensions (in pixels) centered on the current cursor position and searches quickly for local maxima in that neighborhood, moving the cursor to that position. The Z-plane in which the maximum was found is automatically selected if the "Z" parameter is greater than 0. Noteworthy:
 
 -   This feature assumes the signal is brighter than the background as typically found in fluorescent images.![](/media/Cursor-snap.png "fig:cursor-snap.png")
 -   If multiple maxima exist (e.g., when the signal is saturated), it snaps to their centroid.
@@ -119,7 +119,7 @@ This home tab aggregated widgets for tracing and frequent operations.
 
 ![](/media/SNT-auto-tracing.png "fig:SNT-auto-tracing.png") **Enable A\* search algorithm** By default, SNT uses the {% include wikipedia title="A* search algorithm" text="A* search" %} to automatically trace paths between two manually selected points. To manually place nodes in a path, toggle this feature off. Note that it is also possible to enable other algorithms through the installation of SNT add-ons. See [Tubular Geodesics](/plugins/snt/tubular-geodesics) for details.
 
-**Hessian-based analysis** (Toggling shortcut: {% include key content='H' %}) A quick way to improve the quality and efficiency of the pathfinding is to enable this feature, in which paths are computed after filtering the image for tube-like structures. Upon such filtering, SNT will use a measure of [Tubeness](/plugins/tubeness) at each point of the image to define the best path through it, based on eigenvalues and eigenvectors of the {% include wikipedia title="Hessian matrix" %}. The later can be used to infer the likelihood that a point in the image belongs to a tube-like structure. This concept is also known as *vesselness* or *neuriteness*.
+**Hessian-based analysis** (Toggling shortcut: {% include key key='H' %}) A quick way to improve the quality and efficiency of the pathfinding is to enable this feature, in which paths are computed after filtering the image for tube-like structures. Upon such filtering, SNT will use a measure of [Tubeness](/plugins/tubeness) at each point of the image to define the best path through it, based on eigenvalues and eigenvectors of the {% include wikipedia title="Hessian matrix" %}. The later can be used to infer the likelihood that a point in the image belongs to a tube-like structure. This concept is also known as *vesselness* or *neuriteness*.
 
 **Hessian options** (Specified in the *gear* drop-down menu) may be chosen *Manually* (if you already have a quantitative understanding of the image) or *Visually* (generally more intuitive). Hessian analysis requires two parameters to be specified:
 
@@ -207,7 +207,7 @@ This is one of SNT's most advanced features. [Hessian-based analysis](#Auto-trac
 -   **Hessian-analysis at multiple scales** Let's consider a structure formed simultaneously by very thick and very thin processes (e.g. axons and dendrites). To trace it one would need to adjust continuously the sigma parameter while tracing. Instead, to trace structures of variable diameters more effectively, one could load a copy of the current image as *secondary image*, and assign different hessian parameters to both images.
 -   **Adopting probability maps** Pre-classified images (using e.g., machine learning) could also be loaded here.
 
-Importantly, this option can be toggled at will, during tracing. Indeed, one can ping-pong between *secondary image* and main image simply, by pressing {% include key content='I' %}, the shortcut for the *Trace on Secondary **I**mage* checkbox.
+Importantly, this option can be toggled at will, during tracing. Indeed, one can ping-pong between *secondary image* and main image simply, by pressing {% include key key='I' %}, the shortcut for the *Trace on Secondary **I**mage* checkbox.
 
 **Secondary Image options** can be specified in the *gear* drop-down menu, including commands for Loading/displaying the image file and the powerful *Generate Secondary Image* command:
 
@@ -226,7 +226,7 @@ See the [Generating Filtered Images](/plugins/snt/step-by-step-instructions#gene
 
 By default, all the nodes of a path are projected onto the current Z-slice. This is useful to see how much has been completed and gives a sense of the overall structure of the reconstruction. However, SNT provides three additional visibility options for paths: !["Filters for visibility of paths" widget](Path-visibility-filters.png "fig:"Filters for visibility of paths" widget")
 
-1.  **Only selected paths (hide deselected)** Only show paths that have been manually selected in the Path Manager or with the {% include key content='G' %} key ({% include key content='Shift' %}+{% include key content='G' %} to select multiple paths).
+1.  **Only selected paths (hide deselected)** Only show paths that have been manually selected in the Path Manager or with the {% include key key='G' %} key ({% include key keys='Shift|G' %} to select multiple paths).
 2.  **Only nodes within {x} nearby Z-slices** Only highlight nodes within {x} number of Z-slices on either side of the current slice. The projected skeletons of all paths remain visible.
 3.  **Only paths from active channel/frame** If tracing on a multichannel image or an image with a time axis, only show paths from the active channel or frame.
 
@@ -296,8 +296,8 @@ This tab aggregated widgets for advanced settings.
 !["Temporary Paths" widget](SNT-temporary-paths-dialog.png ""Temporary Paths" widget")
 
 -   **Confirm temporary segments** If active, prompts for either confirmation or denial of whether or not to keep an unconfirmed path segment. If inactive, automatically confirms the path segment created on each subsequent node placement after starting a path. Applies to both auto-traced and manually traced path segments. The following two settings are only toggle-able when this setting is active.
-    -   **Pressing 'Y' twice finishes path** Finish a temporary path on two successive {% include key content='Y' %} key presses.
-    -   **Pressing 'N' twice cancels path** Discard a temporary or unconfirmed path, including the start node, on two successive {% include key content='N' %} key presses.
+    -   **Pressing 'Y' twice finishes path** Finish a temporary path on two successive {% include key key='Y' %} key presses.
+    -   **Pressing 'N' twice cancels path** Discard a temporary or unconfirmed path, including the start node, on two successive {% include key key='N' %} key presses.
 
 ### UI Interaction
 
@@ -341,22 +341,22 @@ The Legacy 3D Viewer is a functional tracing canvas but it depends on outdated s
 
 Right-clicking on any of the image views will bring up a menu with various editing tools. The corresponding keyboard shortcuts are shown to the right of each option. <img src="/media/SNT-Path-Edit-Right-Click-Menu.png" title="fig:Contextual menu" width="250" alt="Contextual menu" />
 
--   **Select Nearest Path** {% include key content='G' %} or {% include key content='Shift' %}+{% include key content='G' %} Will select the path closest to the mouse cursor.
--   **Fork at Nearest Node** {% include key content='Shift' %}+{% include key content='Alt' %}+{% include key content='Left Click' %} Creates a fork point at the node closest to the mouse cursor. Once a fork point is made, the branch may be extended as described in [Step-By-Step Instructions](/plugins/snt/step-by-step-instructions#branching-start-a-path-on-an-existing-path).
+-   **Select Nearest Path** {% include key key='G' %} or {% include key keys='Shift|G' %} Will select the path closest to the mouse cursor.
+-   **Fork at Nearest Node** {% include key keys='Shift|Alt|Left Click' %} Creates a fork point at the node closest to the mouse cursor. Once a fork point is made, the branch may be extended as described in [Step-By-Step Instructions](/plugins/snt/step-by-step-instructions#branching-start-a-path-on-an-existing-path).
 -   **Continue Extending Path** Allows continued tracing of previously finished paths. Note only one path may be extended at a time. To extend a path: first select it, choose this option, then place additional nodes as shown in [Step-By-Step Instructions](/plugins/snt/step-by-step-instructions#ii-pick-a-subsequent-point).
 -   **Pause SNT** Waives all keyboard and mouse inputs to ImageJ, allowing you to interleave image processing routines with tracing operations. Note that if the image contents change while SNT is paused, the image should be reloaded so that SNT is aware of the changes. Tracing views are annotated with the *SNT Paused* [label](/plugins/snt/manual#ui-interaction) to indicate this state.
 -   **Pause Tracing** Disables tracing functions until this option is deselected. Tracing views are annotated with the *Tracing Paused* [label](/plugins/snt/manual#ui-interaction) to indicate this state.
--   **Sholl Analysis at Nearest Node** {% include key content='Shift' %}+{% include key content='Alt' %}+{% include key content='A' %} Runs the [Sholl Analysis](/plugins/sholl-analysis) plugin found in {% include bc path='Analyze|Sholl|Sholl Analysis (From Tracings)'%}. Note the *Center* parameter, which sets the center point of the analysis, is left out as this value is given by the selected node.
+-   **Sholl Analysis at Nearest Node** {% include key keys='Shift|Alt|A' %} Runs the [Sholl Analysis](/plugins/sholl-analysis) plugin found in {% include bc path='Analyze|Sholl|Sholl Analysis (From Tracings)'%}. Note the *Center* parameter, which sets the center point of the analysis, is left out as this value is given by the selected node.
 
 ### Editing Paths
 
 <img src="/media/SNT-Path-Edit-Right-Click-Menu-Active.png" title="fig:SNT-Path-Edit-Right-Click-Menu-Active.png" width="250" alt="SNT-Path-Edit-Right-Click-Menu-Active.png" /> Pressing *Edit Path* with a single path selected will activate *Edit Mode*, allowing use of the menu options under the *Edit Path* option. When *Edit Mode* is active, moving the mouse cursor along the path will activate the nearest node and synchronize the current Z-slice to the location of that node. Note that the ability to create new paths is temporarily disabled when in *Edit Mode*.
 
 -   **Reset Active Node** Clears the active node from the cursor.
--   **Delete Active Node** {% include key content='D' %} or {% include key content='Backspace' %} Permanently removes the active node from the path.
--   **Insert New Node At Cursor Position** {% include key content='I' %} Inserts a new node at the cursor position. The inserted node is placed between the active node and its parent.
--   **Move Active Node to Cursor Position** {% include key content='M' %} Moves the active node to the cursor position.
--   **Bring Active Node to Current Z-plane** {% include key content='B' %} Moves the active node to the active Z-plane. Note that the translation is only done in Z. XY positions are unchanged.
+-   **Delete Active Node** {% include key key='D' %} or {% include key key='Backspace' %} Permanently removes the active node from the path.
+-   **Insert New Node At Cursor Position** {% include key key='I' %} Inserts a new node at the cursor position. The inserted node is placed between the active node and its parent.
+-   **Move Active Node to Cursor Position** {% include key key='M' %} Moves the active node to the cursor position.
+-   **Bring Active Node to Current Z-plane** {% include key key='B' %} Moves the active node to the active Z-plane. Note that the translation is only done in Z. XY positions are unchanged.
 -   **Connect To (Start Join)** Allows two existing paths to be [merged or joined](/plugins/snt/step-by-step_instructions#mergingjoining-paths).
 
 # Path Manager
@@ -525,7 +525,7 @@ This menu contains several options which provide quick ways to analyze and visua
 
 ## Filter Toolbar
 
-![](/media/SNT-Path-Manager-Text-Filter.png "fig:") The filter toolbar allows paths to be searched and filtered quickly using tags (colors, annotations, SWC-type, etc.) or morphometric properties. The text field is used for text-based searches (recent searches can be recovered through its drop-down menu). The {% include key content='down' %} and {% include key content='up' %} arrow keys find the next/previous occurrence of the entered phrase, while the ![](/media/SNT-Text-Filter-Balloon-Button.png "fig:SNT-Text-Filter-Balloon-Button.png") button highlights all occurrences of the entered phrase. Settings for advance text-based filtering can be accessed through the ![](/media/SNT-Text-Filter-Menu-Button.png "fig:SNT-Text-Filter-Menu-Button.png") button, including wildcard support, case sensitive matching, and replace-by-pattern. In addition, the ![](/media/SNT-Text-Filter-Advanced-Button.png "fig:SNT-Text-Filter-Advanced-Button.png") button restricts filtering to the selected subset of Path(s). Other means of filtering Paths include: !["Color Filters" menu](SNT-Path-Manager-Text-Filter-Color-Filters.png "fig:"Color Filters" menu")
+![](/media/SNT-Path-Manager-Text-Filter.png "fig:") The filter toolbar allows paths to be searched and filtered quickly using tags (colors, annotations, SWC-type, etc.) or morphometric properties. The text field is used for text-based searches (recent searches can be recovered through its drop-down menu). The {% include key key='down' %} and {% include key key='up' %} arrow keys find the next/previous occurrence of the entered phrase, while the ![](/media/SNT-Text-Filter-Balloon-Button.png "fig:SNT-Text-Filter-Balloon-Button.png") button highlights all occurrences of the entered phrase. Settings for advance text-based filtering can be accessed through the ![](/media/SNT-Text-Filter-Menu-Button.png "fig:SNT-Text-Filter-Menu-Button.png") button, including wildcard support, case sensitive matching, and replace-by-pattern. In addition, the ![](/media/SNT-Text-Filter-Advanced-Button.png "fig:SNT-Text-Filter-Advanced-Button.png") button restricts filtering to the selected subset of Path(s). Other means of filtering Paths include: !["Color Filters" menu](SNT-Path-Manager-Text-Filter-Color-Filters.png "fig:"Color Filters" menu")
 
 -   **Color Filters** ![](/media/SNT-Text-Filter-Color-Button.png "fig:SNT-Text-Filter-Color-Button.png") Allows filtering of Paths by color tags. Custom colors may be selected by right-clicking an empty swatch, which will bring up the CMYK palette. The chosen color is temporarily saved in that swatch.
 -   **Morphology Filters** ![](/media/SNT-Text-Filter-Morphology-Button.png "fig:SNT-Text-Filter-Morphology-Button.png") Allows filtering of Paths by selected morphological properties (including cell identity). Note that these filters do not require Paths to be labeled using {% include bc path='Tag|Morphology| '%}.

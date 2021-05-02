@@ -27,7 +27,7 @@ If the shift key is pressed while dragging the head, only direction multiple of 
 
 ![](/media/Arrow example3.png "fig:Arrow_example3.png") To customize the arrow shape and type, double click the arrow tool. A dialog is displayed that allow to select the line thickness, the arrow head length and the arrow type. Changes made to the configuration panel are reflected to the arrow immediately.
 
-It is possible to change the arrow shape using the mouse wheel. To change its thickness or the arrow head length, press shift and rotate the mouse wheel respectively near the arrow body and head. To change the arrow style, press {% include key content='Ctrl' %}+{% include key content='Shift' %} and rotate the mouse wheel near the arrow.
+It is possible to change the arrow shape using the mouse wheel. To change its thickness or the arrow head length, press shift and rotate the mouse wheel respectively near the arrow body and head. To change the arrow style, press {% include key keys='Ctrl|Shift' %} and rotate the mouse wheel near the arrow.
 
 ![](/media/Arrow example4.png "fig:Arrow_example4.png") So far, 4 types of arrow head are implemented:
 

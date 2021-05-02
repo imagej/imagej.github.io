@@ -310,9 +310,9 @@ Here are several ways to do so:
     -   Type in your search
     -   Click the GitHub button!
 2.  **Using the search bar:**
-    -   Press {% include key content='L' %} to focus the search bar.
+    -   Press {% include key key='L' %} to focus the search bar.
     -   Type the name of the command.
-    -   Press {% include key content='Down' %} to select it.
+    -   Press {% include key key='Down' %} to select it.
     -   Click the Source button.
     -   This will open the source in a browser window.
 3.  **Using GitHub:**
@@ -320,7 +320,7 @@ Here are several ways to do so:
         -   E.g., if we type "make binary" we see that the class is `ij.plugin.Thresholder`.
     -   Open the relevant project in GitHub:
         -   E.g., for "ij." classes, go to: https://github.com/imagej/ImageJA
-    -   Press the {% include key content='T' %} key, and type the name of the file you are looking for.
+    -   Press the {% include key key='T' %} key, and type the name of the file you are looking for.
         -   In the example above, this is Thresholder.java.
     -   You should end up with a hit like: https://github.com/imagej/ImageJA/blob/master/src/main/java/ij/plugin/Thresholder.java.
     -   This method requires that you know in which repository the code lives. However, you can combine it with **search.imagej.net** method above to figure out which repository, then load the code on GitHub, if desired.
@@ -403,18 +403,18 @@ The first place to check is this wiki. The [Fiji's Menu](/plugins/fiji-menu) pag
 
 If documentation is missing for the command you're interested in, you can always view the source directly:
 
-1.  Jump to the [search bar](/learn/getting-started#the-search-bar) (Shortcut: {% include key content='L' %})
+1.  Jump to the [search bar](/learn/getting-started#the-search-bar) (Shortcut: {% include key key='L' %})
 2.  Filter to the command you're interested in.
 3.  The \`File\` column will tell you the plugin where the desired command is contained.
 4.  You can then use this information to find the source code on GitHub - for core [ImageJ](https://github.com/imagej) or [Fiji](https://github.com/fiji) plugins.
 5.  From the appropriate project on GitHub, you can find the repository corresponding to the desired plugin.
-6.  Finally, you can search for the actual file for the command of interest (Shortcut: {% include key content='T' %}).
+6.  Finally, you can search for the actual file for the command of interest (Shortcut: {% include key key='T' %}).
 
 As a complete example, if you were interested in the [2D Histogram](/plugins/2d-histogram) command:
 
 -   The [search bar](/learn/getting-started#the-search-bar) indicates it's located in VIB.jar
 -   VIB is a Fiji plugin, so we go to [the VIB repository](https://github.com/fiji/VIB).
--   On GitHub, press {% include key content='T' %}, search for "Histogram", and find [the Histogram 2D](https://github.com/fiji/VIB/blob/master/src/main/java/util/Histogram_2D.java) source.
+-   On GitHub, press {% include key key='T' %}, search for "Histogram", and find [the Histogram 2D](https://github.com/fiji/VIB/blob/master/src/main/java/util/Histogram_2D.java) source.
 
 ## I have a problem that is not covered on this page!
 

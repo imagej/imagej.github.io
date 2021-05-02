@@ -29,7 +29,7 @@ In other words, there is one large group of neurons which are all connected, wit
 
 (Paths are connected when you start one path on another one (branching) or end one path on another one (joining). To find out how to do that, see the [Simple Neurite Tracer: Step-By-Step Instructions](/plugins/simple-neurite-tracer/step-by-step-instructions).)
 
-The SWC file format describes a single neuron's morphology (so every point is connected to another one), whereas a .traces file in Simple Neurite Tracer can describe multiple disconnected structures. This means that in this plugin you can only export a complete connected set of paths to SWC. So, in this example, you could only export three different SWC files, since there are three connected groups of paths. To do that, select all of the paths in that structure (using {% include key content='Shift' %} or {% include key content='Control' %} when selecting items in the list) - that should look like this:
+The SWC file format describes a single neuron's morphology (so every point is connected to another one), whereas a .traces file in Simple Neurite Tracer can describe multiple disconnected structures. This means that in this plugin you can only export a complete connected set of paths to SWC. So, in this example, you could only export three different SWC files, since there are three connected groups of paths. To do that, select all of the paths in that structure (using {% include key key='Shift' %} or {% include key key='Control' %} when selecting items in the list) - that should look like this:
 
 {% include image-center image-path="media/Simple_Neurite_Tracer_Export_to_SWC_Tutorial-3.png" %}
 

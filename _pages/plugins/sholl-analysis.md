@@ -50,10 +50,10 @@ The plugin is distributed with Fiji. It installs several commands under {% inclu
 
 In this mode (bitmap analysis), the plugin requires a [binary image or a segmented](#faq:threshold) [grayscale image](#faq:image-types) (2D or 3D) containing a single neuron.
 
-1.  Segment the neuronal arbor using {% include bc path='Image|Adjust|Threshold...' color='white'%} (shortcut: <span style="display:inline-block;">{% include key content='press\|Shift\|T' %} </span>).
+1.  Segment the neuronal arbor using {% include bc path='Image|Adjust|Threshold...' color='white'%} (shortcut: <span style="display:inline-block;">{% include key keys='Shift|T' %} </span>).
 
   
-:N.B.: When using multichannel images, you will have to set the its display mode to *Grayscale* using {% include bc path='Image|Color|Channels Tool...' color='white'%} ({% include key content='press\|Shift\|Z' %}), because images displayed as *Composites* cannot be thresholded.
+:N.B.: When using multichannel images, you will have to set the its display mode to *Grayscale* using {% include bc path='Image|Color|Channels Tool...' color='white'%} ({% include key keys='Shift|Z' %}), because images displayed as *Composites* cannot be thresholded.
 
 1.  Define the center of analysis using a valid [startup ROI](#startup-roi).
 2.  Run {% include bc path='Analysis|Sholl|Sholl Analysis...' color='white'%}, adjusting the default [Parameters](#Parameters) in the dialog prompt.
@@ -66,7 +66,7 @@ In this mode (bitmap analysis), the plugin requires a [binary image or a segment
 
 The center of analysis can be specified using one of three possibilities:
 
-Straight line: A Straight line from the focus of the arbor to its most distal point using the Straight Line Tool. The advantages of using line selections are twofold: 1) Center of analysis and [Ending radius](#EndRadius) are automatically set, and 2) Horizontal/vertical lines (created by holding {% include key content='press\|Shift' %} while using the Straight Line Selection Tool) can be used to [restrict analysis to sub-regions](#Restrict) of the image.  
+Straight line: A Straight line from the focus of the arbor to its most distal point using the Straight Line Tool. The advantages of using line selections are twofold: 1) Center of analysis and [Ending radius](#EndRadius) are automatically set, and 2) Horizontal/vertical lines (created by holding {% include key key='Shift' %} while using the Straight Line Selection Tool) can be used to [restrict analysis to sub-regions](#Restrict) of the image.  
 Single point: A single point marking the focus of the arbor using the Point Selection Tool. With single point selections, only the center of analysis is defined. Thus, this option is suitable for [batch processing](#batch-processing) of images with different dimensions with undefined [Ending radius](#EndRadius).  
 Multi-point selection:A Multi-point selection (multi-point counter) in which the first point marks the center of analysis while the remaining points mark (count) the number of primary branches required for the calculation of [ramification indices](#SchoenenSampled)). Suitable for cases in which [inference from starting radius](#PrimaryBranches) is not effective.  
 
@@ -74,7 +74,7 @@ Multi-point selection:A Multi-point selection (multi-point counter) in which the
 
 ### Cf. Segmentation
 
-Press *More» Cf. Segmentation* to visually confirm which phase of the segmented image will be sampled. This command highlights foreground from background pixels and is particularly useful when analyzing black and white (binary) images or when using the *B&W* lookup table in the Threshold Widget ({% include bc path="Image | Adjust | Threshold..." %} {% include key content='press\|Shift\|T' %}). *Cf. Segmentation* allows you to ensure that you are measuring neuronal processes and not the interstitial spaces between them. Here is an example using an axonal arbor of a Drosophila olfactory neuron from the [DIADEM](http://diademchallenge.org) dataset[3]:
+Press *More» Cf. Segmentation* to visually confirm which phase of the segmented image will be sampled. This command highlights foreground from background pixels and is particularly useful when analyzing black and white (binary) images or when using the *B&W* lookup table in the Threshold Widget ({% include bc path="Image | Adjust | Threshold..." %} {% include key keys='Shift|T' %}). *Cf. Segmentation* allows you to ensure that you are measuring neuronal processes and not the interstitial spaces between them. Here is an example using an axonal arbor of a Drosophila olfactory neuron from the [DIADEM](http://diademchallenge.org) dataset[3]:
 
 {::nomarkdown}
 <table>
@@ -132,12 +132,12 @@ You can use {% include bc path='Sholl Analysis (Tracings)...' color='white'%} to
 ![Linear plot for CA1 cell [described above](/media/#CA1CellMask). Using the soma as center, image was sampled twice using the [Restrict analysis to hemicircle/hemisphere](#Restrict) option in order to segregate apical from basal dendrites. For convenience, distances for basal branches were assigned negative values. For clarity, the binary image of the arbor was rotated, scaled and overlaid (in green) over the plot canvas. Note that it is also possible to restrict [curve fitting](#MethodsTable) to a sub-range of distances once [data is collected](#Importing).](BitmapSholl-CA1Compartment.png "fig:Linear plot for CA1 cell described above. Using the soma as center, image was sampled twice using the Restrict analysis to hemicircle/hemisphere option in order to segregate apical from basal dendrites. For convenience, distances for basal branches were assigned negative values. For clarity, the binary image of the arbor was rotated, scaled and overlaid (in green) over the plot canvas. Note that it is also possible to restrict curve fitting to a sub-range of distances once data is collected.") This feature is processed by {% include bc path='Analysis|Sholl|Sholl Analysis (Existing Profile)...' color='white'%}. This command can be used to re-analyze data (replot, modify fitting options, etc.) without having to access the initial image or tracing data. [Batch processing](#batch-analysis-of-tabular-data) is also possible. Noteworthy:
 
 -   **Input data**: Any tab or comma delimited text file (.csv, .txt, .xls, .ods) can be used. You can drag & drop these files into the main ImageJ window, import data from the clipboard, or use data from any other table already opened by ImageJ.
--   **Restricting input data**: To restrict measurements to a range of distances ([see related example](#CA1CellPlot)), select the range of distances you want analyze. You can click the first row in the range, and then drag the mouse to the last row, or by holding down {% include key content='press\|Shift' %} while selecting the last row in the range. Then, in the prompt, activate the *Restrict analysis to selected rows only* checkbox.
+-   **Restricting input data**: To restrict measurements to a range of distances ([see related example](#CA1CellPlot)), select the range of distances you want analyze. You can click the first row in the range, and then drag the mouse to the last row, or by holding down {% include key key='Shift' %} while selecting the last row in the range. Then, in the prompt, activate the *Restrict analysis to selected rows only* checkbox.
 -   **Calculation of *Radius step size***: [Radius step size](#StepSize) is calculated from the difference between the first two rows in *Distance column*. This is mainly relevant when choosing *Annulus/Spherical shell* as [normalizer](#Normalizer).
 
 ## Parameters
 
-The majority of parameters is shared by all the Analysis commands in the{% include bc path='Analysis|Sholl| ' color='white'%} submenu. However, some settings are specific to the type of data used as input: A segmented image, a tracing, or a previously obtained profile. When analyzing images, input values take into account the scale information of the image (which can be set using the {% include bc path='Analyze|Set Scale...' color='white'%} or {% include bc path='Image|Properties...' color='white'%} ({% include key content='press\|Shift\|P' %}), the type of image (2D or 3D), and its [active ROI](#startup-roi).
+The majority of parameters is shared by all the Analysis commands in the{% include bc path='Analysis|Sholl| ' color='white'%} submenu. However, some settings are specific to the type of data used as input: A segmented image, a tracing, or a previously obtained profile. When analyzing images, input values take into account the scale information of the image (which can be set using the {% include bc path='Analyze|Set Scale...' color='white'%} or {% include bc path='Image|Properties...' color='white'%} ({% include key keys='Shift|P' %}), the type of image (2D or 3D), and its [active ROI](#startup-roi).
 
 #### Definition of Shells
 
@@ -150,7 +150,7 @@ The majority of parameters is shared by all the Analysis commands in the{% inclu
 
 **N.B.** For stacks with anisotropic voxel size, setting *Radius step size* to zero, sets the step length to the dimension of the matching isotropic voxel, i.e., the cube root of the product of the voxel dimensions (3D images) or the square root of the product of the pixel dimensions (2D images).
 
--   <span id="Restrict"></span>**Restrict analysis to hemicircle/hemisphere** - This option is only available when an orthogonal radius has been created (by holding {% include key content='Shift' %} while using the <span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>). It can be used to limit the analysis to sub-compartments of the arbor.
+-   <span id="Restrict"></span>**Restrict analysis to hemicircle/hemisphere** - This option is only available when an orthogonal radius has been created (by holding {% include key key='Shift' %} while using the <span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>). It can be used to limit the analysis to sub-compartments of the arbor.
 
 **N.B.** For horizontal lines, this option instructs the algorithm to measure intersections at sites equidistant from the center that have y-coordinates above/below the drawn line. For vertical lines, it instructs the plugin to measure intersections at sites equidistant from the center that have x-coordinates to the left/right of the drawn line. [320px\|right \|Main prompt (version 3.4.1), when input is a segmented image ({% include bc path='Analysis|Sholl|Sholl Analysis...' color='white'%})](File_BitmapSholl-Prompt_v3.png)
 
@@ -205,7 +205,7 @@ Please keep in mind that this is just a refinement feature, and you should not e
 <figure><img src="/media/ShollResultAsROIs.png" title="Intersection points and sampling shells can be retrieved as ROIs using {% include bc path='Image|Overlay|To ROI Manager' color='white'%}. Intersection points are placed at edges of detected clusters of foreground pixels, not their center." width="400" alt="Intersection points and sampling shells can be retrieved as ROIs using {% include bc path='Image|Overlay|To ROI Manager' color='white'%}. Intersection points are placed at edges of detected clusters of foreground pixels, not their center." /><figcaption aria-hidden="true">Intersection points and sampling shells can be retrieved as ROIs using {% include bc path='Image|Overlay|To ROI Manager' color='white'%}. Intersection points are placed at edges of detected clusters of foreground pixels, not their center.</figcaption></figure>
 
 -   **Create intersections mask** - If checked, a 16/32–bit maximum intensity projection of the analyzed image is generated in which the measured arbor is painted according to its Sholl profile. The type of data (*Raw*, i.e., sampled or *Fitted*) is displayed in the image subtitle and can be specified in {% include bc path='Analysis|Sholl|Metrics & Options...' color='white'%} or using the *Options...* command in the *More»* drop-down menu.  
-    NB: The default Lookup Table (LUT) used by the mask can be changed using {% include bc path='Image|Lookup Tables|' color='white'%}. The background color \[gray level: 0 (black) to 255 (white)\] can also be set in {% include bc path='Metrics & Options...' color='white'%}, or at any later point using {% include bc path='Image|Color|Edit Lut...' color='white'%} WYSIWYG versions (RGB images) of these masks can be otained using by pressing {% include key content='press\|Shift\|F' %} ({% include bc path='Image|Overlay|Flatten' color='white'%}) or by running {% include bc path='Analyze|Tools|Calibration Bar...' color='white'%}
+    NB: The default Lookup Table (LUT) used by the mask can be changed using {% include bc path='Image|Lookup Tables|' color='white'%}. The background color \[gray level: 0 (black) to 255 (white)\] can also be set in {% include bc path='Metrics & Options...' color='white'%}, or at any later point using {% include bc path='Image|Color|Edit Lut...' color='white'%} WYSIWYG versions (RGB images) of these masks can be otained using by pressing {% include key keys='Shift|F' %} ({% include bc path='Image|Overlay|Flatten' color='white'%}) or by running {% include bc path='Analyze|Tools|Calibration Bar...' color='white'%}
 -   **Overlay sampling shells and intersection points (2D images only)** - If checked, two sets of ROIS are added to the image overlay: 1) concentric shells matching sampled distances (circular ROIs or composite ROIs when using hemicircles); and 2) Multipoint ROIs at intersection sites between shells and clusters of foreground pixels.
 -   **Save results to** -  If checked, all the results (with the exception of the *[Sholl Table](#Metrics)*) are saved to the specified directory. These include: 1) Sholl plots (saved as PNG images), 2) A table containing detailed data and 3) The Sholl mask. Files are named after the image filename and analysis method. Saving options can be specified in {% include bc path='Analysis|Sholl|Metrics & Options...' color='white'%} (*Options...* command in the *More»* drop-down menu).
     -   **Do not display saved files** If checked, saved files are directly saved to disk and are not displayed. Activate this option when [batch processing](#batch-processing) files.
@@ -550,10 +550,10 @@ Any macro or script must allow the Sholl Analysis plugin to access the ROI marki
 
 1.  Place all the .tif images to be processed in a single folder.
 2.  Select the <span style="border-bottom:1px dotted #ccc;">Point Selection Tool</span> in the main ImageJ window. With 3D images, make sure *Set stack positions* is active in the {% include bc path="Image | Overlay | Overlay Options..." %} prompt.
-3.  Open the first image and press {% include key content='press\|Shift\|T' %} to activate the Threshold widget ({% include bc path="Image | Adjust | Threshold..." %}).
+3.  Open the first image and press {% include key keys='Shift|T' %} to activate the Threshold widget ({% include bc path="Image | Adjust | Threshold..." %}).
 4.  Adjust threshold levels. Press the *Apply* button of the Threshold widget to create a binary image.
-5.  Select the z-slice containing the center of analysis. Click over the center with the <span style="border-bottom:1px dotted #ccc;">Point Selection Tool</span> and press {% include key content='press\|B' %} (shortcut for {% include bc path="Image | Overlay | Add Selection..." %}). This will add the point ROI to the image overlay. Save the image as .TIFF by pressing {% include key content='press\|S' %} ({% include bc path="File | Save As... | Tiff..." %}).
-6.  Repeat the last 2 steps until all images are marked, using {% include key content='press\|Shift\|O' %} (shortcut for {% include bc path="File | Open Next" %}) to iterate through all the images.
+5.  Select the z-slice containing the center of analysis. Click over the center with the <span style="border-bottom:1px dotted #ccc;">Point Selection Tool</span> and press {% include key key='B' %} (shortcut for {% include bc path="Image | Overlay | Add Selection..." %}). This will add the point ROI to the image overlay. Save the image as .TIFF by pressing {% include key key='S' %} ({% include bc path="File | Save As... | Tiff..." %}).
+6.  Repeat the last 2 steps until all images are marked, using {% include key keys='Shift|O' %} (shortcut for {% include bc path="File | Open Next" %}) to iterate through all the images.
 
 {%- capture roi-tiff-tip -%}
 When working with ROIs, it is critical that you work with .tif files because only this format keeps track of image overlays. The {% include bc path="Process | Batch | Convert..." %} command allows bulk conversion between image formats.
@@ -652,7 +652,7 @@ Note that the IJM built-in [call("class.method")](/ij/developer/macro/functions.
 Analysis tool that 1) Merges individual Sholl profiles into a single table and 2) Obtains the average profile (with standard deviation) of a group of cells.
 
 {% include bc path='File|Open Samples|ddaC Neuron' color='white'%}  
-Opens a sample image of a Drosophila class IV ddaC sensory neuron in which dendrites have been previously segmented (2D arbor). Use it to get acquainted with the plugin. Run {% include bc path='Image|Show Info...' color='white'%} (shortcut: {% include key content='press\|I' %} ) to know more about this cell type.
+Opens a sample image of a Drosophila class IV ddaC sensory neuron in which dendrites have been previously segmented (2D arbor). Use it to get acquainted with the plugin. Run {% include bc path='Image|Show Info...' color='white'%} (shortcut: {% include key key='I' %} ) to know more about this cell type.
 
 <!-- -->
 
@@ -783,7 +783,7 @@ The plugin does not parse RGB images, but will process any grayscale image (8/16
 <dl>
 <dd>
 
-This option is only available if an orthogonal line has been created by holding {% include key content='press\|Shift' %} when using the <span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>. See the [ImageJ User Guide](/ij/docs/guide/) for the full list of key modifiers that can be used while creating straight line ROIs.
+This option is only available if an orthogonal line has been created by holding {% include key key='Shift' %} when using the <span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>. See the [ImageJ User Guide](/ij/docs/guide/) for the full list of key modifiers that can be used while creating straight line ROIs.
 
 </dd>
 </dl>
@@ -868,7 +868,7 @@ The Sholl mask ([see example of CA1 cell](#CA1CellMask)) is simply an illustrati
 <dl>
 <dd>
 
-An anisotropic voxel size will have a strong impact on [step size](#StepSize). On the other hand, 2D and 3D images can be sampled differently depending on the [options chosen](#Parameters). If {% include bc path="Image | Properties..." %} ({% include key content='press\|Shift\|P' %}) reports the appropriate spatial calibration, make sure to read [Multiple Samples and Noise Reduction](#multiple-samples-and-noise-reduction) before deciding which type of images to use.
+An anisotropic voxel size will have a strong impact on [step size](#StepSize). On the other hand, 2D and 3D images can be sampled differently depending on the [options chosen](#Parameters). If {% include bc path="Image | Properties..." %} ({% include key keys='Shift|P' %}) reports the appropriate spatial calibration, make sure to read [Multiple Samples and Noise Reduction](#multiple-samples-and-noise-reduction) before deciding which type of images to use.
 
 </dd>
 </dl>

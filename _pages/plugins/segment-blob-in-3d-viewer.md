@@ -20,10 +20,10 @@ A results window will open with surface and volume measurements, and the 3d coor
 
 # Canceling an ongoing segmentation
 
-Push the {% include key content='Esc' %} key. You may have to do so while having the Fiji toolbar window activated.
+Push the {% include key key='Esc' %} key. You may have to do so while having the Fiji toolbar window activated.
 
 # Adjusting parameters of the segmentation
 
-Internally, the [Level Sets](/plugins/level-sets) plugin is used. To adjust its many parameters, do a {% include key content='Shift' %}+{% include key content='click' %} with the magic wand. The dialog will open; it's the same dialog as shown in the [Level Sets](/plugins/level-sets) documentation page.
+Internally, the [Level Sets](/plugins/level-sets) plugin is used. To adjust its many parameters, do a {% include key keys='Shift|click' %} with the magic wand. The dialog will open; it's the same dialog as shown in the [Level Sets](/plugins/level-sets) documentation page.
 
  

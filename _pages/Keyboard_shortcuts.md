@@ -13,15 +13,15 @@ For a verbose list of keyboard shortcuts, call {% include bc path='Plugins | Sho
 
 ## The Search Bar
 
-Use {% include key content='Ctrl' %}+{% include key content='L' %} (on Mac, {% include key content='Command' %}+{% include key content='L' %}) to jump to the [search bar](/learn/getting-started#the-search-bar), to call menu entries by name.
+Use {% include key key='Ctrl|L' %} (on Mac, {% include key key='Command|L' %}) to jump to the [search bar](/learn/getting-started#the-search-bar), to call menu entries by name.
 
 ## Recent Commands
 
-To open a list of some recent commands, and a list of the most frequently called commands, hit {% include key content='Ctrl' %}+{% include key content='9' %} (on Mac, {% include key content='Command' %}+{% include key content='9' %}).
+To open a list of some recent commands, and a list of the most frequently called commands, press {% include key key='Ctrl|9' %} (on Mac, {% include key key='Command|9' %}).
 
 ## Open
 
-To open new images, type {% include key content='Ctrl' %}+{% include key content='O' %} (on Mac, {% include key content='Command' %}+{% include key content='O' %}).
+To open new images, press {% include key keys='Ctrl|O' %} (on Mac, {% include key keys='Command|O' %}).
 
 ## Creating your own keyboard shortcuts
 

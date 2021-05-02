@@ -59,11 +59,11 @@ New commands should then appear in ImageJ '{% include bc path='Plugins | FAST'%}
 
 Each image and the corresponding ROI are opened automatically. An options dialog box is displayed.
 
--   If the area is correct the user must click {% include key content='press\|OK' %} to proceed with next image.
--   If the area contains non-specific signal, select {% include key content='press\|Yes' %} to *redefine area manually* and edit the ROI.
+-   If the area is correct the user must click {% include key key='OK' %} to proceed with next image.
+-   If the area contains non-specific signal, select {% include key key='Yes' %} to *redefine area manually* and edit the ROI.
 -   The dialog box allows to exclude current image from analysis (e.g. blurred image).
 
-Just select the radio button option needed then click {% include key content='press\|OK' %} or {% include key content='press\|⏎ENTER' %} to continue.
+Just select the radio button option needed then click {% include key key='OK' %} or {% include key key='⏎ENTER' %} to continue.
 
 <img src="/media/FAST ROI-edition.png" title="fig:Dialog box to redefine area" width="200" alt="Dialog box to redefine area" /> If you selected to *redefine area manually*, a new dialog box is displayed to get access to the ImageJ toolbar and modify the selection. The user-defined threshold is then automatically applied.
 
@@ -71,10 +71,10 @@ Just select the radio button option needed then click {% include key content='pr
 
 Select the appropriate tool in ImageJ toolbar: ![](/media/Freehand.png "fig:Freehand.png") Freehand (default) OR ![](/media/Wand-tool.png "fig:Wand-tool.png") Wand tool.
 
--   To remove non-specific fluorescence, use selected tool and hold {% include key content='press\|Alt' %} while unwanted area to remove it from ROI.
--   To add area to the previously selected ROI, hold {% include key content='press\|Shift' %} while selecting new area to add.
+-   To remove non-specific fluorescence, use selected tool and hold {% include key key='Alt' %} while unwanted area to remove it from ROI.
+-   To add area to the previously selected ROI, hold {% include key key='Shift' %} while selecting new area to add.
 
-Click {% include key content='press\|OK' %} to confirm the new ROI. Fluorescence is then measured and the ROI zip file is automatically updated. {% include tip id='Selection' tip='In case the selection is empty after manual correction, the macro discards the image from analysis.' %}
+Click {% include key key='OK' %} to confirm the new ROI. Fluorescence is then measured and the ROI zip file is automatically updated. {% include tip id='Selection' tip='In case the selection is empty after manual correction, the macro discards the image from analysis.' %}
 
 After completion of Step 2, a list of all measured images with filename is displayed in the Result Table window of ImageJ.
 

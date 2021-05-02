@@ -861,8 +861,8 @@ The developer should then execute this command:
 
     ssh -t $ACCOUNT@$SSHSERVER 'screen -x'
 
-Since this provides a shared [GNU screen](http://savannah.gnu.org/projects/screen/) session, both the user and the developer can execute commands and see the output. It is even quite common to use the terminal window as sort of a private chat room by typing out what you have to say, ending the line with a {% include key content='Ctrl' %}+{% include key content='C' %} (lest it get executed as a command).
+Since this provides a shared [GNU screen](http://savannah.gnu.org/projects/screen/) session, both the user and the developer can execute commands and see the output. It is even quite common to use the terminal window as sort of a private chat room by typing out what you have to say, ending the line with a {% include key keys='Ctrl|C' %} (lest it get executed as a command).
 
-After the debugging party is over, the user can log out securely by hitting {% include key content='Ctrl' %}+{% include key content='D' %} to log out from the local machine (since the user typed in their password in the GNU screen session herself, there is no way for the developer to log back in without the user's explicit consent). Another {% include key content='Ctrl' %}+{% include key content='D' %} will terminate the GNU screen session, and yet another {% include key content='Ctrl' %}+{% include key content='D' %} will log out from the shared account on the SSH server.
+After the debugging party is over, the user can log out securely by pressing {% include key keys='Ctrl|D' %} to log out from the local machine (since the user typed in their password in the GNU screen session herself, there is no way for the developer to log back in without the user's explicit consent). Another {% include key keys='Ctrl|D' %} will terminate the GNU screen session, and yet another {% include key keys='Ctrl|D' %} will log out from the shared account on the SSH server.
 
 

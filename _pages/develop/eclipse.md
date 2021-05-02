@@ -92,7 +92,7 @@ If you're having trouble, how to import and build your Maven + Eclipse project, 
 
 ## Keyboard shortcuts
 
-On macOS, replace {% include key content='Ctrl' %} with {% include key content='Cmd' %}
+On macOS, replace {% include key key='Ctrl' %} with {% include key key='Cmd' %}
 
 {::nomarkdown}
 <table>
@@ -105,7 +105,7 @@ On macOS, replace {% include key content='Ctrl' %} with {% include key content='
     </tr>
     <tr class="even">
       <td>
-        <p>{% include key content='Ctrl|Shift|T' %}</p>
+        <p>{% include key keys='Ctrl|Shift|T' %}</p>
       </td>
       <td style="text-align: right; vertical-align: top; white-space: nowrap">
         <p>Open a Java class from the workspace</p>
@@ -113,7 +113,7 @@ On macOS, replace {% include key content='Ctrl' %} with {% include key content='
     </tr>
     <tr class="odd">
       <td>
-        <p>{% include key content='Ctrl|Shift|R' %}</p>
+        <p>{% include key keys='Ctrl|Shift|R' %}</p>
       </td>
       <td style="text-align: right; vertical-align: top; white-space: nowrap">
         <p>Open a file from the workspace</p>
@@ -121,7 +121,7 @@ On macOS, replace {% include key content='Ctrl' %} with {% include key content='
     </tr>
     <tr class="even">
       <td>
-        <p>{% include key content='F3' %}</p>
+        <p>{% include key key='F3' %}</p>
       </td>
       <td>
         <p>Jump to selected class<br>
@@ -130,7 +130,7 @@ On macOS, replace {% include key content='Ctrl' %} with {% include key content='
     </tr>
     <tr class="odd">
       <td style="text-align: right; vertical-align: top; white-space: nowrap">
-        <p>{% include key content='Ctrl|O' %}</p>
+        <p>{% include key keys='Ctrl|O' %}</p>
       </td>
       <td style="text-align: right; vertical-align: top; white-space: nowrap">
         <p>Show superclass/subclass hierarchy</p>
@@ -138,7 +138,7 @@ On macOS, replace {% include key content='Ctrl' %} with {% include key content='
     </tr>
     <tr class="even">
       <td>
-        <p>{% include key content='Ctrl|T' %}</p>
+        <p>{% include key keys='Ctrl|T' %}</p>
       </td>
       <td style="text-align: right; vertical-align: top; white-space: nowrap">
         <p>Show implementations of interface or class</p>
@@ -146,7 +146,7 @@ On macOS, replace {% include key content='Ctrl' %} with {% include key content='
     </tr>
     <tr class="odd">
       <td>
-        <p>{% include key content='Ctrl|L' %}</p>
+        <p>{% include key keys='Ctrl|L' %}</p>
       </td>
       <td style="text-align: right; vertical-align: top; white-space: nowrap">
         <p>Go to line number</p>
@@ -154,7 +154,7 @@ On macOS, replace {% include key content='Ctrl' %} with {% include key content='
     </tr>
     <tr class="even">
       <td>
-        <p>{% include key content='Ctrl|Q' %}</p>
+        <p>{% include key keys='Ctrl|Q' %}</p>
       </td>
       <td style="text-align: right; vertical-align: top; white-space: nowrap">
         <p>Go to last edit location</p>
@@ -162,7 +162,7 @@ On macOS, replace {% include key content='Ctrl' %} with {% include key content='
     </tr>
     <tr class="odd">
       <td>
-        <p>{% include key content='Ctrl|E' %}</p>
+        <p>{% include key keys='Ctrl|E' %}</p>
       </td>
       <td style="text-align: right; vertical-align: top; white-space: nowrap">
         <p>Go to next file in editor</p>
@@ -176,7 +176,7 @@ On macOS, replace {% include key content='Ctrl' %} with {% include key content='
     </tr>
     <tr class="odd">
       <td>
-        <p>{% include key content='Alt|Up' %}, {% include key content='Alt|Down' %}</p>
+        <p>{% include key keys='Alt|Up' %}, {% include key keys='Alt|Down' %}</p>
       </td>
       <td style="text-align: right; vertical-align: top; white-space: nowrap">
         <p>Move current line up or down</p>
@@ -184,7 +184,7 @@ On macOS, replace {% include key content='Ctrl' %} with {% include key content='
     </tr>
     <tr class="even">
       <td>
-        <p>{% include key content='Ctrl|D' %}</p>
+        <p>{% include key keys='Ctrl|D' %}</p>
       </td>
       <td style="text-align: right; vertical-align: top; white-space: nowrap">
         <p>Delete the current line</p>
@@ -192,7 +192,7 @@ On macOS, replace {% include key content='Ctrl' %} with {% include key content='
     </tr>
     <tr class="odd">
       <td>
-        <p>{% include key content='Ctrl|/' %}</p>
+        <p>{% include key keys='Ctrl|/' %}</p>
       </td>
       <td style="text-align: right; vertical-align: top; white-space: nowrap">
         <p>Comment/uncomment the selected line(s)</p>
@@ -200,7 +200,7 @@ On macOS, replace {% include key content='Ctrl' %} with {% include key content='
     </tr>
     <tr class="even">
       <td>
-        <p>{% include key content='Ctrl|1' %}</p>
+        <p>{% include key keys='Ctrl|1' %}</p>
       </td>
       <td style="text-align: right; vertical-align: top; white-space: nowrap">
         <p>Quick fix selected error</p>
@@ -208,7 +208,7 @@ On macOS, replace {% include key content='Ctrl' %} with {% include key content='
     </tr>
     <tr class="odd">
       <td>
-        <p>{% include key content='Ctrl|Space' %}</p>
+        <p>{% include key keys='Ctrl|Space' %}</p>
       </td>
       <td style="text-align: right; vertical-align: top; white-space: nowrap">
         <p>Auto-complete current selection</p>
@@ -222,7 +222,7 @@ On macOS, replace {% include key content='Ctrl' %} with {% include key content='
     </tr>
     <tr class="odd">
       <td>
-        <p>{% include key content='Ctrl|Shift|O' %}</p>
+        <p>{% include key keys='Ctrl|Shift|O' %}</p>
       </td>
       <td style="text-align: right; vertical-align: top; white-space: nowrap">
         <p>Organize imports</p>
@@ -230,7 +230,7 @@ On macOS, replace {% include key content='Ctrl' %} with {% include key content='
     </tr>
     <tr class="even">
       <td>
-        <p>{% include key content='Ctrl|Shift|F' %}</p>
+        <p>{% include key keys='Ctrl|Shift|F' %}</p>
       </td>
       <td>
         <p>Format code<br>
@@ -239,7 +239,7 @@ On macOS, replace {% include key content='Ctrl' %} with {% include key content='
     </tr>
     <tr class="odd">
       <td style="text-align: right; vertical-align: top; white-space: nowrap">
-        <p>{% include key content='Alt|Shift|S' %}, {% include key content='U' %}</p>
+        <p>{% include key keys='Alt|Shift|S' %}, {% include key key='U' %}</p>
       </td>
       <td style="text-align: right; vertical-align: top; white-space: nowrap">
         <p>Clean up (does format and much more)</p>
@@ -247,7 +247,7 @@ On macOS, replace {% include key content='Ctrl' %} with {% include key content='
     </tr>
     <tr class="even">
       <td>
-        <p>{% include key content='Alt|Shift|R' %}</p>
+        <p>{% include key keys='Alt|Shift|R' %}</p>
       </td>
       <td style="text-align: right; vertical-align: top; white-space: nowrap">
         <p>Refactor/rename selected class/variable</p>
@@ -261,7 +261,7 @@ On macOS, replace {% include key content='Ctrl' %} with {% include key content='
     </tr>
     <tr class="even">
       <td>
-        <p>{% include key content='Ctrl|Shift|B' %}</p>
+        <p>{% include key keys='Ctrl|Shift|B' %}</p>
       </td>
       <td style="text-align: right; vertical-align: top; white-space: nowrap">
         <p>Set/Remove breakpoint</p>
@@ -269,7 +269,7 @@ On macOS, replace {% include key content='Ctrl' %} with {% include key content='
     </tr>
     <tr class="odd">
       <td>
-        <p>{% include key content='F5' %}</p>
+        <p>{% include key key='F5' %}</p>
       </td>
       <td style="text-align: right; vertical-align: top; white-space: nowrap">
         <p>Step into</p>
@@ -277,7 +277,7 @@ On macOS, replace {% include key content='Ctrl' %} with {% include key content='
     </tr>
     <tr class="even">
       <td>
-        <p>{% include key content='F6' %}</p>
+        <p>{% include key key='F6' %}</p>
       </td>
       <td style="text-align: right; vertical-align: top; white-space: nowrap">
         <p>Step over</p>
@@ -285,7 +285,7 @@ On macOS, replace {% include key content='Ctrl' %} with {% include key content='
     </tr>
     <tr class="odd">
       <td>
-        <p>{% include key content='F7' %}</p>
+        <p>{% include key key='F7' %}</p>
       </td>
       <td>
         <p>Step out</p>
@@ -384,7 +384,7 @@ After that, ask Eclipse to import it: {% include bc path='File | Import | Maven 
 
 ## Viewing Dependency Source
 
-When jumping into a dependency class in Eclipse (using {% include key content='F3' %}), you may see a message stating "Source not found".
+When jumping into a dependency class in Eclipse (using {% include key key='F3' %}), you may see a message stating "Source not found".
 
 For Maven dependencies there must be a `-sources` classifier JAR in the repository along side the main JAR. For example, `imagej-common` has an `imagej-common-0.24.4.jar` and an `imagej-common-0.24.4-sources.jar`. In theory, the Eclipse M2E plugin should download this `-sources` JAR and automatically display it to you when you jump to the class.
 
