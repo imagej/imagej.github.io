@@ -1,3 +1,8 @@
+{%- comment -%}
+Unicode character info in one place -- https://graphemica.com/
+Draw the Unicode symbol you want    -- https://shapecatcher.com/
+{%- endcomment -%}
+
 {%- assign keys = include.keys | default: include.key | split: "|" -%}
 {%- assign chain = include.chain | default: "&nbsp;+&nbsp;" -%}
 {%- assign style = include.style | downcase | strip -%}
