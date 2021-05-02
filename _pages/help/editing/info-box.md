@@ -1,6 +1,5 @@
 ---
 title: Demo info-box
-author:
 description: This page demonstrates how to insert an info-box.
 ---
 

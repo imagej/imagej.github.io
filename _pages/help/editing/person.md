@@ -1,6 +1,5 @@
 ---
 title: Demo people
-author:
 
 description: this page demonstrates how to use the person include tag.
 ---

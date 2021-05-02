@@ -1,6 +1,5 @@
 ---
 title: Using symbols on the wiki
-author:
 description: This page demonstrates how to add a symbol to your page from preset options.
 ---
 

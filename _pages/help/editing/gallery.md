@@ -1,6 +1,5 @@
 ---
 title: Demo gallery
-author:
 description: This page demonstrates how to insert a gallery.
 ---
 

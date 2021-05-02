@@ -1,6 +1,5 @@
 ---
 title: Demo images
-author:
 description: This page demonstrates how to add a details box to your page.
 ---
 ## Uploading an Image

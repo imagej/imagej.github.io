@@ -1,6 +1,6 @@
 ---
 title: Demo conference
-author:
+
 description: This page demonstrates how to insert conference information.
 ---
 

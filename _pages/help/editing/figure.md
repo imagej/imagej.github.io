@@ -1,6 +1,6 @@
 ---
 title: Demo figure
-author:
+
 description: This page demonstrates how to use figures (_i.e._ images with legend text).
 ---
 
