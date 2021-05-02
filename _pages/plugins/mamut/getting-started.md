@@ -142,8 +142,8 @@ Navigating through the data in space and time uses the mouse and keyboard in a s
 
 -   {% include key key='N' %} Move to the previous time-point.
 -   {% include key key='M' %} Move to the next time-point.
--   {% include key key='\[' %} Jump to the previous time step (explained below).
--   {% include key key='\]' %} Jump to the next time step.
+-   {% include key key='[' %} Jump to the previous time step (explained below).
+-   {% include key key=']' %} Jump to the next time step.
 
 There is a fantastic feature in the BigDataViewer that you will find here called **bookmarks**. They let you store a position and orientation in space as bookmarks. You can later call them again. To use them:
 
@@ -230,7 +230,7 @@ So a link can be created between any two spots, provided they do not belong to t
 In the MaMuT Viewer, only spots are selectable with the mouse. To create or remove a link, you have to select exactly two spots.
 
 -   Select a spot by clicking inside it.
--   Move to another time-point ({% include key key='N' %}, {% include key key='M' %}, {% include key key='\[' %}, {% include key key='\]' %}, the time slider).
+-   Move to another time-point ({% include key key='N' %}, {% include key key='M' %}, {% include key key='[' %}, {% include key key=']' %}, the time slider).
 -   Add a second spot to the selection by shift-clicking inside it.
 -   Press {% include key key='L' %} to add a link between these two spots, or to remove it already exists.
 
@@ -261,8 +261,8 @@ MaMuT is built as an application for the annotation of large images immediately 
 
 MaMuT has step-wise time browsing commands to just do that. The keyboard shortcut to do this are:
 
--   {% include key key='\[' %} Jump to the previous time step.
--   {% include key key='\]' %} Jump to the next time step.
+-   {% include key key='[' %} Jump to the previous time step.
+-   {% include key key=']' %} Jump to the next time step.
 
 By default, the viewer will jump to time-points multiples of 5: 0, 5, 10, etc. You can set what is the time step in the **Annotation** tab of the main GUI window, under the **Stepwise time browsing** field.
 
@@ -322,7 +322,7 @@ The keyboard can also be used:
 -   The numeric keypad numbers {% include key key='6' %}, {% include key key='9' %}, {% include key key='8' %}, {% include key key='7' %}, {% include key key='4' %}, {% include key key='1' %}, {% include key key='2' %} and {% include key key='3' %} are used to move as on a compass.
 -   {% include key key='+' %} zoom in.
 -   {% include key key='-' %} zoom out.
--   {% include key key='equals' %} restores the zoom to its default level.
+-   {% include key key='=' %} restores the zoom to its default level.
 
 The top-left part of the TrackScheme window shows the outline of the graph. The blue square represents the current view and can be resized and moved around.
 
@@ -862,7 +862,7 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
     </tr>
     <tr class="odd">
       <td style="padding: 5px;">
-        <p>{% include key key='+' %} & {% include key key='equals' %}</p>
+        <p>{% include key key='+' %} & {% include key key='=' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Zoom in.</p>
@@ -878,7 +878,7 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
     </tr>
     <tr class="odd">
       <td style="padding: 5px;">
-        <p>{% include key keys='Shift|equals' %}</p>
+        <p>{% include key keys='Shift|=' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Reset zoom.</p>

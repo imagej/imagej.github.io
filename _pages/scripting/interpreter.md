@@ -21,7 +21,7 @@ categories: Scripting
 
 ## Getting Started
 
-Start it via {% include bc path='Plugins|Scripting|Script Interpreter'%} or by typing {% include key key='Shift' %}-{% include key key='\[' %}.
+Start it via {% include bc path='Plugins|Scripting|Script Interpreter'%} or by typing {% include key key='Shift|[' %}.
 
 ![](/media/Script Interpreter.png"Script_Interpreter.png")
 

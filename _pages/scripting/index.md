@@ -10,7 +10,7 @@ ImageJ allows you to write scripts in several different languages.
 # Getting started
 
 -   Read the [ImageJ tutorial notebooks](/tutorials) to learn how to write ImageJ scripts.
--   Press the {% include key key='\[' %} key to open the [Script Editor](/scripting/script-editor) (or {% include key key='Shift' %}-{% include key key='\[' %} to open the [Script Interpreter](/scripting/interpreter)).
+-   Press the {% include key key='[' %} key to open the [Script Editor](/scripting/script-editor) (or {% include key key='Shift' %}-{% include key key='[' %} to open the [Script Interpreter](/scripting/interpreter)).
 -   Optionally, choose a template from the *Templates* menu to get you started.
 -   Otherwise, choose your language from the *Language* menu.
 -   Grab code snippets for common tasks from the [Scripting toolbox](/scripting/toolbox).
@@ -193,7 +193,7 @@ Commands added to the menu in the described way can be called from other scripts
 
 ## Adding JAR-packaged scripts to the menu
 
-Scripts can be packaged in a JAR file for easier distribution to your colleagues and via \[Update Sites\]. For this purpose, [example-script-collection](https://github.com/imagej/example-script-collection) can be used as the template Maven project.
+Scripts can be packaged in a JAR file for easier distribution to your colleagues and via [Update Sites](/update-sites). For this purpose, [example-script-collection](https://github.com/imagej/example-script-collection) can be used as the template Maven project.
 
 Inside the example-script-collection jar, the scripts are in `./resources/scripts.` and therefore get added to the menu when the JAR is on the classpath (i.e. in `./plugins/` or `./jars/`).
 

@@ -11,7 +11,7 @@ The Op Finder is a utility for the browsing, learning, and running of all availa
 
 There are two ways to start up the Op Finder:
 
-1.  Using the shortcut: {% include key keys='Shift||L' %}
+1.  Using the shortcut: {% include key keys='Shift|L' %}
 2.  Using the menu path: {% include bc path='Plugins|Utilities|Find Ops...'%}
 
 # Parts of the Op Finder
