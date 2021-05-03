@@ -4,11 +4,9 @@
   {%- if include.name -%}
     {%- assign label = include.name -%}
   {%- else -%}
-    {%- for p in site.pages -%}
-      {%- if p.url == url -%}
-        {%- assign label = p.name -%}
-      {%- endif -%}
-    {%- endfor -%}
+    {%- comment -%} The find filter would be nicer here, but needs Jekyll 4.1.0+. {%- endcomment -%}
+    {%- assign people = site.pages | where: "url", url -%}
+    {%- if people -%}{%- assign label = people[0].name -%}{%- endif -%}
   {%- endif -%}
   <a class="person" href="{{url}}">{{label}}</a>
 {%- else -%}
