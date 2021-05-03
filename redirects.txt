@@ -532,7 +532,7 @@ Command_Line :: develop/command-line
 Command_Line_Debugging :: develop/debugging#command-line-debugging
 Command_Line_Tips_and_Tricks :: TODO
 Command_line :: develop/command-line
-Common :: plugins/imagej-common
+Common :: libs/imagej-common
 Communication :: TODO
 Community :: help
 Comparison_of_Matlab_functions_and_Ops :: libs/imagej-ops/comparison-with-matlab
@@ -933,8 +933,8 @@ ImageJA :: libs/imageja
 ImageJFX :: software/imagejfx
 ImageJX :: software/imagejx
 ImageJ_1.x :: software/imagej1
-ImageJ_Command_Archetype :: plugins/imagej-command-archetype
-ImageJ_Common :: plugins/imagej-common
+ImageJ_Command_Archetype :: libs/imagej-command-archetype
+ImageJ_Common :: libs/imagej-common
 ImageJ_Forum :: help
 ImageJ_Jenkins :: develop/jenkins
 ImageJ_Launcher :: TODO (Launcher)
