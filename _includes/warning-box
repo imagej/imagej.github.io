@@ -1,9 +1,3 @@
-{% capture info_content %}
-<div info="content" markdown="1">
-{{include.content}}
-</div>
-{% endcapture %}
-
 <div id="wrap">
     <table class="table-info warning-notice">
         <tbody>
@@ -12,7 +6,7 @@
                     <img src="/images/icons/40px-Warning-sign.png">
                 </td>
                 <td>
-                    {{info_content}}
+                    <span markdown=1>{{include.content}}</span>
                 </td>
             </tr>
         </tbody>
