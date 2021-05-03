@@ -108,17 +108,8 @@ What are you going to do, bleed on me?
 {% endcapture %}
 {% include example code=fixed-width-block-markdown %}
 
-...or use a normally-inline element with `display: block`:
-
-{% capture fixed-width-block-display %}
-What are you going to do, bleed on me?
-<span style="font-family: monospace; display: block">
-+-=-=-=-=-=-=-=-=-=-=-=-=-+\\
-| -=- I'm *Invincible!* -=- |\\
-+-=-=-=-=-=-=-=-=-=-=-=-=-+
-</span> You're a loony.
-{% endcapture %}
-{% include example code=fixed-width-block-display %}
+...or [wrap the Markdowny parts in a
+`<span markdown=1>`](/help/editing/pitfalls#markdown-inside-block-elements).
 
 ## Multiple spaces in a row
 
