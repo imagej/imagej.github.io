@@ -1,4 +1,4 @@
-<details class="quiz">
-<summary>{::markdown}**Quiz!** {{include.q}}{:/}</summary>
-{::markdown}{{include.a}}{:/}
+<details class="shadowed-box">
+<summary><span markdown=1>**Quiz!** {{include.q}}</span></summary>
+<span markdown=1>**Answer:** {{include.a}}</span>
 </details>
