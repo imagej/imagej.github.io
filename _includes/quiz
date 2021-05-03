@@ -1,0 +1,4 @@
+<details class="quiz">
+<summary>{::markdown}**Quiz!** {{include.q}}{:/}</summary>
+{::markdown}{{include.a}}{:/}
+</details>

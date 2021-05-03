@@ -1,6 +1,0 @@
-{{% capture content %}}
-{{% include.content | replace: "|", "
->" %}}
-{{% endcapture %}}
-
-{{content}}
