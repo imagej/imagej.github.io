@@ -6,46 +6,32 @@ description: this page demonstrates how to use the person include tag.
 
 ## Usage
 
-Specify a person using their [GitHub](/develop/github) username, or a plain/unlinked name.
+Specify a person using their ID from the
+{% include github label="`/users` folder" org="imagej" repo="imagej.github.io" path="_pages/users" %},
+or a plain/unlinked name.
 
 ## Examples
 
-{% raw %}
-```
-{%- include person id='rasband' -%}
-```
-{% endraw %}
+{% capture ex1-code %}
+{% raw %}{% include person id='rasband' %}{% endraw %}
+{% endcapture %}
+{% capture ex1-result %}
+{% include person id='rasband' %}
+{% endcapture %}
+{% include example code=ex1-code result=ex1-result %}
 
-{%- include person id='rasband' -%}
+{% capture ex2-code %}
+{% raw %}{% include person id='ctrueden' name='Chuckles' %}{% endraw %}
+{% endcapture %}
+{% capture ex2-result %}
+{% include person id='ctrueden' name='Chuckles' %}
+{% endcapture %}
+{% include example code=ex2-code result=ex2-result %}
 
-{% raw %}
-```
-{%- include person id='ctrueden' -%}
-```
-{% endraw %}
-
-{%- include person id='ctrueden' -%}
-
-{% raw %}
-```
-{%- include person id='dietzc' -%}
-```
-{% endraw %}
-
-{%- include person id='dietzc' -%}
-
-{% raw %}
-```
-{%- include person id='marktsuchida' -%}
-```
-{% endraw %}
-
-{%- include person id='marktsuchida' -%}
-
-{% raw %}
-```
-{%- include person name='Jane Doe' -%}
-```
-{% endraw %}
-
-{%- include person name='Jane Doe' -%}
+{% capture ex3-code %}
+{% raw %}{% include person name='Jane Doe' %}{% endraw %}
+{% endcapture %}
+{% capture ex3-result %}
+{% include person name='Jane Doe' %}
+{% endcapture %}
+{% include example code=ex3-code result=ex3-result %}

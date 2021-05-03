@@ -1,3 +1,4 @@
+{%- assign result = include.result | default: include.code -%}
 <div class="example">
 <div style="float: left; max-width: 100%; margin-right: 1em">
 <p style="text-align: center; font-weight: bold; margin: 0.2em 0 0 0">Code</p>
@@ -6,7 +7,7 @@
 <div style="float: left; max-width: 100%; overflow: auto; padding-right: 8px">
 <p style="text-align: center; font-weight: bold; margin: 0.2em 0 0 0">Result</p>
 <div class="shadowed-box" markdown=1>
-{{include.code}}
+{{result}}
 </div>
 </div>
 <div style="clear: left; margin-bottom: 1em"></div>
