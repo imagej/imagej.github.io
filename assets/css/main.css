@@ -2265,3 +2265,10 @@ ul.major-icons li .icon {
 .key img {
 	height: 1em;
 }
+
+.shadowed-box {
+	box-shadow: 4px 4px 4px lightgray;
+	background: #eee;
+	padding: 0.5em;
+	margin-bottom: 0.8em;
+}
