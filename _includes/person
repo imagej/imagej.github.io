@@ -1,14 +1,24 @@
+{%- assign name = nil -%}
+{%- assign url = nil -%}
 {%- if include.id -%}
-  {%- assign label = include.id -%}
   {%- assign url = "/users/" | append: include.id -%}
-  {%- if include.name -%}
-    {%- assign label = include.name -%}
+  {%- comment -%}
+  NB: The find filter would be nicer here, but it requires Jekyll 4.1.0+.
+  {%- endcomment -%}
+  {%- assign matches = site.pages | where: "url", url -%}
+  {%- if matches.size > 0 -%}
+    {%- assign name = matches[0].name -%}
   {%- else -%}
-    {%- comment -%} The find filter would be nicer here, but needs Jekyll 4.1.0+. {%- endcomment -%}
-    {%- assign people = site.pages | where: "url", url -%}
-    {%- if people -%}{%- assign label = people[0].name -%}{%- endif -%}
+    {%- comment -%} Unknown ID -- treat it as a raw name. {%- endcomment -%}
+    {%- assign url = nil -%}
+    {%- assign name = include.id -%}
   {%- endif -%}
+{%- endif -%}
+
+{%- assign label = include.name | default: name -%}
+
+{%- if url -%}
   <a class="person" href="{{url}}">{{label}}</a>
 {%- else -%}
-  {{include.name}}
+  <span class="person">{{label}}</span>
 {%- endif -%}

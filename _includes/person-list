@@ -1,5 +1,22 @@
-{%- assign people = include.content | split: "|" -%}
-{%- for person in people -%}
-  {%- assign id = person | strip -%}
-  {%- include person id=id -%}
-{%- endfor -%}
+{%- assign people = include.ids | split: "|" -%}
+{%- assign limit = include.limit | default: 3 -%}
+{%- if people.size > limit -%}
+  {%- comment -%} Conceal the overflow beneath a details box. {%- endcomment -%}
+  <details id="person-list">
+  <summary>
+    {%- for person in people limit:limit -%}
+      {%- assign id = person | strip -%}
+      {%- include person id=id -%}{%- if forloop.last -%}...{%- else -%}, {% endif -%}
+    {%- endfor -%}
+  </summary>
+  {%- for person in people offset:limit -%}
+    {%- assign id = person | strip -%}
+    {%- include person id=id -%}{%- unless forloop.last -%}, {% endunless -%}
+  {%- endfor -%}
+  </details>
+{%- else -%}
+  {%- for person in people -%}
+    {%- assign id = person | strip -%}
+    {%- include person id=id -%}{%- unless forloop.last -%}, {% endunless -%}
+  {%- endfor -%}
+{%- endif -%}

@@ -4,7 +4,7 @@ title: Demo people
 description: this page demonstrates how to use the person include tag.
 ---
 
-## Usage
+## Individuals
 
 Specify a person using their ID from the
 {% include github label="`/users` folder" org="imagej" repo="imagej.github.io" path="_pages/users" %},
@@ -35,3 +35,13 @@ or a plain/unlinked name.
 {% include person name='Jane Doe' %}
 {% endcapture %}
 {% include example code=ex3-code result=ex3-result %}
+
+## Lists of people
+
+{% capture list-ex1-code %}
+{% raw %}{% include person-list ids="dietzc | marktsuchida | Julius Caesar" %}{% endraw %}
+{% endcapture %}
+{% capture list-ex1-result %}
+{% include person-list ids="dietzc | marktsuchida | Julius Caesar" %}
+{% endcapture %}
+{% include example code=list-ex1-code result=list-ex1-result %}

@@ -70,8 +70,8 @@ ImageJ has benefitted from many hackathons over the years:
         <p><a href="https://janelia.org/">HHMI Janelia</a><br>
         Ashburn, VA, USA</p>
       </td>
-      <td style="white-space: nowrap">
-        <p>{% include person-list content='Albertcardona|bene51|jefferis|hanchuan|Schindelin|StephanP|Saalfeld|rasband|Arnim Jenett|Julie Simpson|Torsten Rohlfing|Yuriy Mishchenko' %}</p>
+      <td>
+        <p>{% include person-list ids='acardona|bene51|jefferis|hanchuan|dscho|StephanPreibisch|axtimwalde|rasband|Arnim Jenett|Julie Simpson|Torsten Rohlfing|Yuriy Mishchenko' %}</p>
       </td>
       <td>
         <p>Neuroscience</p>
@@ -86,8 +86,8 @@ ImageJ has benefitted from many hackathons over the years:
         <p><a href="https://mpi-cbg.de/">MPI-CBG</a><br>
         Dresden, Germany</p>
       </td>
-      <td style="white-space: nowrap">
-        <p>{% include person-list content='Albertcardona|bene51|ysis|White|frederikfly|JeanYvesTinevez|Schindelin|Hinerm|StephanP|Saalfeld|Tomancak' %}</p>
+      <td>
+        <p>{% include person-list ids='acardona|bene51|ysis|chalkie666|frederikfly|tinevez|dscho|hinerm|StephanPreibisch|axtimwalde|tomancak' %}</p>
       </td>
       <td>
         <p><a href="/fiji">Fiji</a></p>
@@ -102,7 +102,7 @@ ImageJ has benefitted from many hackathons over the years:
         <p><a href="https://www.ini.uzh.ch/">INI</a><br>
         Zürich, Switzerland</p>
       </td>
-      <td style="white-space: nowrap">
+      <td>
         <p>?</p>
       </td>
       <td>
@@ -118,8 +118,8 @@ ImageJ has benefitted from many hackathons over the years:
         <p><a href="https://mpi-cbg.de/">MPI-CBG</a><br>
         Dresden, Germany</p>
       </td>
-      <td style="white-space: nowrap">
-        <p>{% include person-list content='Schindelin|Albertcardona|JeanYvesTinevez|bene51|Iarganda|White|Hinerm|Tomancak|StephanP|Saalfeld|Raju Tomer|Misha Kudryashev' %}</p>
+      <td>
+        <p>{% include person-list ids='dscho|acardona|tinevez|bene51|iarganda|chalkie666|hinerm|tomancak|StephanPreibisch|axtimwalde|Raju Tomer|Misha Kudryashev' %}</p>
       </td>
       <td>
         <p>Segmentation</p>
@@ -134,8 +134,8 @@ ImageJ has benefitted from many hackathons over the years:
         <p><a href="https://www.embl.de/">EMBL</a><br>
         Heidelberg, Germany</p>
       </td>
-      <td style="white-space: nowrap">
-        <p>{% include person-list content='Albertcardona|Saalfeld|bene51|cmci|Rueden|Schindelin|Iarganda|Lindsey|Hinerm|StephanP|Harris|vkaynig' %}</p>
+      <td>
+        <p>{% include person-list ids='acardona|axtimwalde|bene51|cmci|ctrueden|dscho|iarganda|larrylindsey|hinerm|StephanPreibisch|tnargsirrah|vkaynig' %}</p>
       </td>
       <td>
         <p><a href="/fiji">Fiji</a></p>
@@ -150,8 +150,8 @@ ImageJ has benefitted from many hackathons over the years:
         <p><a href="https://www.lbl.gov/">LBNL</a><br>
         Berkeley CA, USA</p>
       </td>
-      <td style="white-space: nowrap">
-        <p>{% include person-list content='frederikfly|Schindelin' %}</p>
+      <td>
+        <p>{% include person-list ids='frederikfly|dscho' %}</p>
       </td>
       <td>
         <p>Running <a href="/software/micro-manager">Micro-Manager</a> inside <a href="/fiji">Fiji</a></p>
@@ -166,8 +166,8 @@ ImageJ has benefitted from many hackathons over the years:
         <p><a href="https://discovery.wisc.edu/">WID</a><br>
         Madison, WI, USA</p>
       </td>
-      <td style="white-space: nowrap">
-        <p>{% include person-list content='Iarganda|paulbarber|Albertcardona|Bdezonia|arthuredelstein|afraser|frederikfly|Grislis|Harris|hinerm|luisibanez|LeeKamentsky|Lindsey|Linkert|Hinerm|Pietzsch|StephanP|Rueden|Saalfeld|Schindelin|bene51|Tomancak|Eliceiri|Lentz|Mark Rowley' %}</p>
+      <td>
+        <p>{% include person-list ids='iarganda|paulbarber|acardona|bdezonia|arthuredelstein|afraser|frederikfly|grislis|tnargsirrah|hinerm|luisibanez|LeeKamentsky|larrylindsey|melissalinkert|hinerm|tpietzsch|StephanPreibisch|ctrueden|axtimwalde|dscho|bene51|tomancak|eliceiri|Lentz|Mark Rowley' %}</p>
       </td>
       <td>
         <p>Multidimensional visualization</p>
@@ -182,8 +182,8 @@ ImageJ has benefitted from many hackathons over the years:
         <p><a href="https://mpi-cbg.de/">MPI-CBG</a><br>
         Dresden, Germany</p>
       </td>
-      <td style="white-space: nowrap">
-        <p>{% include person-list content='jburel|Stephane-D|Bdezonia|Dietzc|Michaeldoube|Fab14|frederikfly|hornm|White|tomka|alex-krull|Linkert|Hinerm|Moore|Pietzsch|StephanP|Rueden|Schindelin|bene51|Tomancak|Peter-Gabriel-Pitrone|Eliceiri|Fernando Carrilo, Jiri Matas, Jurgen Mayer' %}</p>
+      <td>
+        <p>{% include person-list ids='jburel|Stephane-D|bdezonia|dietzc|mdoube|Fab14|frederikfly|hornm|chalkie666|tomka|alex-krull|melissalinkert|hinerm|joshmoore|tpietzsch|StephanPreibisch|ctrueden|dscho|bene51|tomancak|Peter-Gabriel-Pitrone|eliceiri|Fernando Carrilo, Jiri Matas, Jurgen Mayer' %}</p>
       </td>
       <td>
         <p>Interoperability</p>
@@ -197,8 +197,8 @@ ImageJ has benefitted from many hackathons over the years:
         <p><a href="https://www.uni-konstanz.de/en/">Universität Konstanz</a><br>
         Konstanz, Germany</p>
       </td>
-      <td style="white-space: nowrap">
-        <p>{% include person-list content='hornm|Dietzc|Pietzsch|Schindelin' %}</p>
+      <td>
+        <p>{% include person-list ids='hornm|dietzc|tpietzsch|dscho' %}</p>
       </td>
       <td>
         <p><a href="/software/knime">KNIME</a>+<a href="/fiji">Fiji</a></p>
@@ -213,8 +213,8 @@ ImageJ has benefitted from many hackathons over the years:
         <p><a href="/orgs/loci">LOCI</a><br>
         Madison, WI, USA</p>
       </td>
-      <td style="white-space: nowrap">
-        <p>{% include person-list content='thewtex|Rueden|Schindelin|hinerm' %}</p>
+      <td>
+        <p>{% include person-list ids='thewtex|ctrueden|dscho|hinerm' %}</p>
       </td>
       <td>
         <p>{% include github org='scifio' repo='scifio-imageio' label='SCIFIO ImageIO plugin' %}</p>
@@ -230,7 +230,7 @@ ImageJ has benefitted from many hackathons over the years:
         Madison, WI, USA</p>
       </td>
       <td>
-        <p>{% include person-list content='Iarganda|Schindelin|Rueden' %}</p>
+        <p>{% include person-list ids='iarganda|dscho|ctrueden' %}</p>
       </td>
       <td>
         <p><a href="/plugins/tws">Trainable Weka Segmentation</a></p>
@@ -245,8 +245,8 @@ ImageJ has benefitted from many hackathons over the years:
         <p><a href="/orgs/loci">LOCI</a><br>
         Madison, WI, USA</p>
       </td>
-      <td style="white-space: nowrap">
-        <p>{% include person-list content='StephanP|Pietzsch|Rueden|Schindelin|Bdezonia|hinerm|Grislis' %}</p>
+      <td>
+        <p>{% include person-list ids='StephanPreibisch|tpietzsch|ctrueden|dscho|bdezonia|hinerm|grislis' %}</p>
       </td>
       <td>
         <p><a href="/imglib2">ImgLib2</a></p>
@@ -261,8 +261,8 @@ ImageJ has benefitted from many hackathons over the years:
         <p><a href="https://www.pasteur.fr/en">Institut Pasteur</a><br>
         Paris France</p>
       </td>
-      <td style="white-space: nowrap">
-        <p>{% include person-list content='Pietzsch|JeanYvesTinevez' %}</p>
+      <td>
+        <p>{% include person-list ids='tpietzsch|tinevez' %}</p>
       </td>
       <td>
         <p><a href="/plugins/mamut">MaMuT</a>, <a href="/plugins/bdv">BigDataViewer</a></p>
@@ -277,8 +277,8 @@ ImageJ has benefitted from many hackathons over the years:
         <p><a href="/orgs/loci">LOCI</a><br>
         Madison, WI, USA</p>
       </td>
-      <td style="white-space: nowrap">
-        <p>{% include person-list content='Dietzc|Schindelin|Rueden' %}</p>
+      <td>
+        <p>{% include person-list ids='dietzc|dscho|ctrueden' %}</p>
       </td>
       <td>
         <p><a href="/software/knime">KNIME</a>+<a href="/about">ImageJ</a></p>
@@ -293,8 +293,8 @@ ImageJ has benefitted from many hackathons over the years:
         <p><a href="https://www.uni-konstanz.de/en/">Universität Konstanz</a><br>
         Konstanz, Germany</p>
       </td>
-      <td style="white-space: nowrap">
-        <p>{% include person-list content='Rueden|Schindelin|Dietzc|hornm' %}</p>
+      <td>
+        <p>{% include person-list ids='ctrueden|dscho|dietzc|hornm' %}</p>
       </td>
       <td>
         <p><a href="/libs/imagej-ops">ImageJ Ops</a> |- valign="top" |</p>
@@ -309,8 +309,8 @@ ImageJ has benefitted from many hackathons over the years:
         <p><a href="/orgs/loci">LOCI</a><br>
         Madison, WI, USA</p>
       </td>
-      <td style="white-space: nowrap">
-        <p>{% include person-list content='jburel|pwalczysko|Rueden' %}</p>
+      <td>
+        <p>{% include person-list ids='jburel|pwalczysko|ctrueden' %}</p>
       </td>
       <td>
         <p>{% include github org='imagej' repo='imagej-omero' label='ImageJ-OMERO' %}</p>
@@ -325,8 +325,8 @@ ImageJ has benefitted from many hackathons over the years:
         <p><a href="/orgs/loci">LOCI</a><br>
         Madison, WI, USA</p>
       </td>
-      <td style="white-space: nowrap">
-        <p>{% include person-list content='marktsuchida|ChrisWeisiger|Schindelin|stuyvenberg|Rueden|hinerm' %}</p>
+      <td>
+        <p>{% include person-list ids='marktsuchida|ChrisWeisiger|dscho|stuyvenberg|ctrueden|hinerm' %}</p>
       </td>
       <td>
         <p><a href="https://micro-manager.org/">Micro-Manager</a> and <a href="https://openspim.org/">OpenSPIM</a></p>
@@ -342,7 +342,7 @@ ImageJ has benefitted from many hackathons over the years:
         Madison, WI, USA</p>
       </td>
       <td>
-        <p>{% include person-list content='Dietzc|bnorthan|hinerm|Rueden|apal4|yuminguw|Awalter2|Ginger Pocock' %}</p>
+        <p>{% include person-list ids='dietzc|bnorthan|hinerm|ctrueden|apal4|yuminguw|awalter17|Ginger Pocock' %}</p>
       </td>
       <td>
         <p><a href="/libs/imagej-ops">ImageJ Ops</a> + <a href="/software/knime">KNIME</a></p>
@@ -358,7 +358,7 @@ ImageJ has benefitted from many hackathons over the years:
         Madison, WI, USA</p>
       </td>
       <td>
-        <p>{% include person-list content='Pietzsch|StephanP|Saalfeld|Schindelin|Rueden|hinerm' %}</p>
+        <p>{% include person-list ids='tpietzsch|StephanPreibisch|axtimwalde|dscho|ctrueden|hinerm' %}</p>
       </td>
       <td>
         <p><a href="/imglib2">ImgLib2</a></p>
@@ -373,8 +373,8 @@ ImageJ has benefitted from many hackathons over the years:
         <p><a href="http://www.freiraeume-kn.de/standort.htm">FREIRÄUME</a><br>
         Konstanz, Germany</p>
       </td>
-      <td style="white-space: nowrap">
-        <p>{% include person-list content='Dietzc|Rueden|hinerm|LeeKamentsky|Pietzsch|Jug|Schindelin|Iarganda|gab1one|seebacherd|kmader|angrauma|Squareys|tibuch|patrick-winter-knime|AndreasBurger|Tobias Kötter' %}</p>
+      <td>
+        <p>{% include person-list ids='dietzc|ctrueden|hinerm|LeeKamentsky|tpietzsch|fjug|dscho|iarganda|gab1one|seebacherd|kmader|angrauma|Squareys|tibuch|patrick-winter-knime|AndreasBurger|Tobias Kötter' %}</p>
       </td>
       <td>
         <p><a href="/libs/imagej-ops">ImageJ Ops</a> + <a href="/software/knime">KNIME</a> + <a href="/software/cellprofiler">CellProfiler</a> + more</p>
@@ -389,8 +389,8 @@ ImageJ has benefitted from many hackathons over the years:
         <p><a href="https://janelia.org/">HHMI Janelia</a><br>
         Ashburn, VA, USA</p>
       </td>
-      <td style="white-space: nowrap">
-        <p>{% include person-list content='StephanP|Pietzsch|Saalfeld|Tomancak' %}</p>
+      <td>
+        <p>{% include person-list ids='StephanPreibisch|tpietzsch|axtimwalde|tomancak' %}</p>
       </td>
       <td>
         <p><a href="/plugins/multiview-reconstruction">Multiview-Reconstruction</a> and <a href="/plugins/bdv">BigDataViewer</a></p>
@@ -406,7 +406,7 @@ ImageJ has benefitted from many hackathons over the years:
         Berlin, Germany</p>
       </td>
       <td>
-        <p>{% include person-list content='StephanP|Dietzc|emmenlau|StephanJanosch' %}</p>
+        <p>{% include person-list ids='StephanPreibisch|dietzc|emmenlau|StephanJanosch' %}</p>
       </td>
       <td>
         <p>Parallelization of <a href="/plugins/multiview-reconstruction">Multiview-Reconstruction</a><br>
@@ -414,7 +414,7 @@ ImageJ has benefitted from many hackathons over the years:
       </td>
     </tr>
     <tr class="even">
-      <td style="white-space: nowrap">
+      <td>
         <p><a href="/news/2015-07-27_-_Janelia_Hackathon">2015 Jul 27 -<br>
         2015 Jul 31</a></p>
       </td>
@@ -422,8 +422,8 @@ ImageJ has benefitted from many hackathons over the years:
         <p><a href="https://janelia.org/">HHMI Janelia</a><br>
         Ashburn, VA, USA</p>
       </td>
-      <td style="white-space: nowrap">
-        <p>{% include person-list content='Saalfeld|Rueden|hinerm|Pietzsch|tomka|bhoeckendorf|fernandoamat|Phillip Keller' %}</p>
+      <td>
+        <p>{% include person-list ids='axtimwalde|ctrueden|hinerm|tpietzsch|tomka|bhoeckendorf|fernandoamat|Phillip Keller' %}</p>
       </td>
       <td>
         <p><a href="/software/scifio">SCIFIO</a> performance and generality</p>
@@ -438,8 +438,8 @@ ImageJ has benefitted from many hackathons over the years:
         <p><a href="https://discovery.wisc.edu/">WID</a> + <a href="/orgs/loci">LOCI</a><br>
         Madison, WI, USA</p>
       </td>
-      <td style="white-space: nowrap">
-        <p>{% include person-list content='Rueden|hinerm|Dietzc|Pietzsch|Saalfeld|bnorthan|Jug|thewtex|jaywarrick|Tiago|biovoxxel|etarena|Awalter2|LeonYang5114|yuminguw|guneetsinghmehta|Bio7|kbellve|Akramhar|Omsai|marktsuchida|ChrisWeisiger' %}</p>
+      <td>
+        <p>{% include person-list ids='ctrueden|hinerm|dietzc|tpietzsch|axtimwalde|bnorthan|fjug|thewtex|jaywarrick|tferr|biovoxxel|etadobson|awalter17|lnyng|yuminguw|guneetsinghmehta|Bio7|kbellve|Akramhar|cmci|marktsuchida|ChrisWeisiger' %}</p>
       </td>
       <td>
         <p><a href="/software/imagej2">ImageJ2</a> Learnathon + <a href="/libs/imagej-ops">ImageJ Ops</a></p>
@@ -454,8 +454,8 @@ ImageJ has benefitted from many hackathons over the years:
         <p><a href="https://www.knime.org/contact">KNIME Konstanz Regional Office</a><br>
         Konstanz, Germany</p>
       </td>
-      <td style="white-space: nowrap">
-        <p>{% include person-list content='Dietzc|Rueden|Hinerm|hornm|Pietzsch|Jug|royerloic|skalarproduktraum|Haesleinhuepf|Stelfrich|kmader|Kharrington|Eglinger|drtjre|tibuch|Squareys|seebacherd|patrick-winter-knime|AlexanderFillbrunn|Nico Hoffmann|Timo Sachsenberg|Julianus Pfeuffer|Temesgen H. Dadi' %}</p>
+      <td>
+        <p>{% include person-list ids='dietzc|ctrueden|hinerm|hornm|tpietzsch|fjug|royerloic|skalarproduktraum|haesleinhuepf|stelfrich|kmader|kephale|imagejan|drtjre|tibuch|Squareys|seebacherd|patrick-winter-knime|AlexanderFillbrunn|Nico Hoffmann|Timo Sachsenberg|Julianus Pfeuffer|Temesgen H. Dadi' %}</p>
       </td>
       <td>
         <p><a href="/software/knime">KNIME</a> Image Processing</p>
@@ -470,8 +470,8 @@ ImageJ has benefitted from many hackathons over the years:
         <p><a href="https://janelia.org/">HHMI Janelia</a><br>
         Ashburn, VA, USA</p>
       </td>
-      <td style="white-space: nowrap">
-        <p>{% include person-list content='Saalfeld|Pietzsch|Rueden|Dietzc|Kharrington' %}</p>
+      <td>
+        <p>{% include person-list ids='axtimwalde|tpietzsch|ctrueden|dietzc|kephale' %}</p>
       </td>
       <td>
         <p>Metadata rich images</p>
@@ -486,8 +486,8 @@ ImageJ has benefitted from many hackathons over the years:
         <p><a href="https://www.knime.org/contact">KNIME Konstanz Regional Office</a><br>
         Konstanz, Germany</p>
       </td>
-      <td style="white-space: nowrap">
-        <p>{% include person-list content='Dietzc|patrick-winter-knime|Pietzsch|skalarproduktraum|Rueden|hornm|Stelfrich|Kharrington|Rdom|kmader|AndreasBurger|MarcelWiedenmann|SimonSchmid|irrwitz|Squareys|AlexanderFillbrunn|Eglinger|tibuch|StefanoWoerner|cmongis|hoerldavid|Nico Hoffmann' %}</p>
+      <td>
+        <p>{% include person-list ids='dietzc|patrick-winter-knime|tpietzsch|skalarproduktraum|ctrueden|hornm|stelfrich|kephale|Rdom|kmader|AndreasBurger|MarcelWiedenmann|SimonSchmid|irrwitz|Squareys|AlexanderFillbrunn|imagejan|tibuch|StefanoWoerner|cmongis|hoerldavid|Nico Hoffmann' %}</p>
       </td>
       <td>
         <p><a href="/software/knime">KNIME</a> Image Processing + 3D viz</p>
@@ -503,7 +503,7 @@ ImageJ has benefitted from many hackathons over the years:
         Dresden, Germany</p>
       </td>
       <td>
-        <p>{% include person-list content='Jug|Pietzsch|Tomancak|Rueden|Saalfeld|hanslovsky|kephale|rimadoma|tinevez|dietzc|patrick-winter-knime|skalarproduktraum|royerloic|Haesleinhuepf|hkmoon|tibuch|MarcelWiedenmann|hoerldavid|milkyklim|maarzt|xulman|Chaubold|Jonas Massa' %}</p>
+        <p>{% include person-list ids='fjug|tpietzsch|tomancak|ctrueden|axtimwalde|hanslovsky|kephale|rimadoma|tinevez|dietzc|patrick-winter-knime|skalarproduktraum|royerloic|haesleinhuepf|hkmoon|tibuch|MarcelWiedenmann|hoerldavid|milkyklim|maarzt|xulman|chaubold|Jonas Massa' %}</p>
       </td>
       <td>
         <p><a href="/fiji">Fiji</a> & <a href="/software/knime">KNIP</a></p>
@@ -519,7 +519,7 @@ ImageJ has benefitted from many hackathons over the years:
         Madison, WI, USA</p>
       </td>
       <td>
-        <p>{% include person-list content='Pietzsch|Saalfeld|Dietzc|Rueden|Awalter2' %}</p>
+        <p>{% include person-list ids='tpietzsch|axtimwalde|dietzc|ctrueden|awalter17' %}</p>
       </td>
       <td>
         <p><a href="/imglib2">ImgLib2</a></p>
@@ -534,8 +534,8 @@ ImageJ has benefitted from many hackathons over the years:
         <p><a href="/orgs/loci">LOCI</a><br>
         Madison, WI, USA</p>
       </td>
-      <td style="white-space: nowrap">
-        <p>{% include person-list content='dietzc|Rueden' %}</p>
+      <td>
+        <p>{% include person-list ids='dietzc|ctrueden' %}</p>
       </td>
       <td>
         <p><a href="/libs/imagej-ops">ImageJ Ops</a></p>
@@ -550,8 +550,8 @@ ImageJ has benefitted from many hackathons over the years:
         <p><a href="https://www.knime.org/contact">KNIME Konstanz Regional Office</a><br>
         Konstanz, Germany</p>
       </td>
-      <td style="white-space: nowrap">
-        <p>{% include person-list content='dietzc|maarzt|tibuch|imagejan|gab1one|AlexanderFillbrunn|Jon Fuller|Squareys|Chaubold|stelfrich|hornm|fjug|Treiblesschorle|milkyklim|kmader|Julianus Pfeuffer|tpietzsch|mp007|StephanPreibisch|Jonas Probst|René Rahn|ctrueden|SimonSchmid|frauzufall|xulman|MarcelWiedenmann|HedgehogCode|patrick-winter-knime' %}</p>
+      <td>
+        <p>{% include person-list ids='dietzc|maarzt|tibuch|imagejan|gab1one|AlexanderFillbrunn|Jon Fuller|Squareys|chaubold|stelfrich|hornm|fjug|Treiblesschorle|milkyklim|kmader|Julianus Pfeuffer|tpietzsch|mp007|StephanPreibisch|Jonas Probst|René Rahn|ctrueden|SimonSchmid|frauzufall|xulman|MarcelWiedenmann|HedgehogCode|patrick-winter-knime' %}</p>
       </td>
       <td>
         <p><a href="/software/knime">KNIME</a> Image Processing, <a href="/libs/imagej-ops">ImageJ Ops</a>, <a href="http://ilastik.org/">Ilastik</a></p>
@@ -566,8 +566,8 @@ ImageJ has benefitted from many hackathons over the years:
         <p><a href="https://health.uconn.edu/">UConn Health</a><br>
         Farmington, CT, USA</p>
       </td>
-      <td style="white-space: nowrap">
-        <p>{% include person-list content='jcschaff|Rueden' %}</p>
+      <td>
+        <p>{% include person-list ids='jcschaff|ctrueden' %}</p>
       </td>
       <td>
         <p><a href="/software/virtual-cell">Virtual Cell</a> + <a href="/about">ImageJ</a></p>
@@ -582,8 +582,8 @@ ImageJ has benefitted from many hackathons over the years:
         <p><a href="https://mpi-cbg.de/">MPI-CBG</a><br>
         Dresden, Germany</p>
       </td>
-      <td style="white-space: nowrap">
-        <p>{% include person-list content='Jug|Pietzsch|Tomancak|Rueden|hanslovsky|kephale|rimadoma|tinevez|dietzc|skalarproduktraum|royerloic|Haesleinhuepf|hkmoon|tibuch|MarcelWiedenmann|hoerldavid|milkyklim|maarzt|xulman|Chaubold|Pbainar|Awalter2' %}</p>
+      <td>
+        <p>{% include person-list ids='fjug|tpietzsch|tomancak|ctrueden|hanslovsky|kephale|rimadoma|tinevez|dietzc|skalarproduktraum|royerloic|haesleinhuepf|hkmoon|tibuch|MarcelWiedenmann|hoerldavid|milkyklim|maarzt|xulman|chaubold|PetrBainar|awalter17' %}</p>
       </td>
       <td>
         <p><a href="/fiji">Fiji</a> & <a href="/software/knime">KNIP</a></p>
@@ -599,7 +599,7 @@ ImageJ has benefitted from many hackathons over the years:
         Moscow, ID, USA</p>
       </td>
       <td>
-        <p>{% include person-list content='Kharrington|Saalfeld|Dietzc|Rueden|Maarzt|Pietzsch|royerloic|Bnorthan|skalarproduktraum|marktsuchida|Robert Wiese' %}</p>
+        <p>{% include person-list ids='kephale|axtimwalde|dietzc|ctrueden|maarzt|tpietzsch|royerloic|bnorthan|skalarproduktraum|marktsuchida|Robert Wiese' %}</p>
       </td>
       <td>
         <p><a href="/plugins/sciview">SciView</a></p>
@@ -615,7 +615,7 @@ ImageJ has benefitted from many hackathons over the years:
         San Francisco, CA, USA</p>
       </td>
       <td>
-        <p>{% capture content %} Dan Toloudis (AICS)|Dyche Mullins (UCSF)|Lisa Harrylock (AICS)|Tom Goddard (UCSF)|Molly Maleckar (AICS)|Tom Ferrin (UCSF)|Graham Johnson (AICS)|Samuel Lord (UCSF/HHMI)|Basu Chaudhuri (AICS)|Ambrose Carr (CZI)|Megan Riel-Megan (AICS)|Jeremy Freeman (CZI)|Dave Williams (AICS)|Nicholas Sofroniew (CZI)|{%- include person id='ctrueden' -%}|Arne Bakker (CZI)|Syuan-Ming Guo (CZ Biohub)|Andréa Clavijo (CZI)|Deep Ganguli (CZI)|Shalin Mehta (CZ Biohub)|Tony Tung (CZI)|Sarah Kefayati (CZ Biohub)|Anitha Krishnan (CZ Biohub)|{%- include person id='0x00b1' -%}|Norah Klintberg (CZ Biohub)|Eric Perlman (Johns Hopkins)|Oana Carja (CZ Biohub) Benny Lin (U Texas Austin)|Jeremy Maitlen-Shephard (Google) {% endcapture %} {% include person-list content=content %}</p>
+        <p>{% capture content %} Dan Toloudis (AICS)|Dyche Mullins (UCSF)|Lisa Harrylock (AICS)|Tom Goddard (UCSF)|Molly Maleckar (AICS)|Tom Ferrin (UCSF)|Graham Johnson (AICS)|Samuel Lord (UCSF/HHMI)|Basu Chaudhuri (AICS)|Ambrose Carr (CZI)|Megan Riel-Megan (AICS)|Jeremy Freeman (CZI)|Dave Williams (AICS)|Nicholas Sofroniew (CZI)|{%- include person id='ctrueden' -%}|Arne Bakker (CZI)|Syuan-Ming Guo (CZ Biohub)|Andréa Clavijo (CZI)|Deep Ganguli (CZI)|Shalin Mehta (CZ Biohub)|Tony Tung (CZI)|Sarah Kefayati (CZ Biohub)|Anitha Krishnan (CZ Biohub)|{%- include person id='0x00b1' -%}|Norah Klintberg (CZ Biohub)|Eric Perlman (Johns Hopkins)|Oana Carja (CZ Biohub) Benny Lin (U Texas Austin)|Jeremy Maitlen-Shephard (Google) {% endcapture %} {% include person-list ids=content %}</p>
       </td>
       <td>
         <p>Bioimage Analysis in JavaScript, Python + Java</p>
@@ -631,7 +631,7 @@ ImageJ has benefitted from many hackathons over the years:
         Madison, WI, USA</p>
       </td>
       <td>
-        <p>{% include person-list content='Dietzc|Pietzsch|marktsuchida|Rueden' %}</p>
+        <p>{% include person-list ids='dietzc|tpietzsch|marktsuchida|ctrueden' %}</p>
       </td>
       <td>
         <p>ImgLib2, Micro-Manager</p>
@@ -647,7 +647,7 @@ ImageJ has benefitted from many hackathons over the years:
         Dresden, Germany</p>
       </td>
       <td>
-        <p>{% include person-list content='Rueden|Chaubold|Dietzc|gab1one|HedgehogCode|MarcelWiedenmann|maarzt|frauzufall|Pietzsch|skalarproduktraum|turekg' %}</p>
+        <p>{% include person-list ids='ctrueden|chaubold|dietzc|gab1one|HedgehogCode|MarcelWiedenmann|maarzt|frauzufall|tpietzsch|skalarproduktraum|turekg' %}</p>
       </td>
       <td>
         <p>Hacking</p>
@@ -663,7 +663,7 @@ ImageJ has benefitted from many hackathons over the years:
         Ostrava, Czech Republic</p>
       </td>
       <td>
-        <p>{% include person-list content='Jug|Pietzsch|Tomancak|dietzc|tibuch|MarcelWiedenmann|maarzt|xulman|Pbainar|Awalter2|gab1one|Treiblesschorle|mp007|frauzufall|HedgehogCode| John Bogovic| Nicolas Chiaruttini| Jana Klímová| Jan Kožusznik| Michal Krumnikl| Manan Lalit| Emil Melnikov| Pavel Moravec| Václav Svatoň| Christian Tischer| Gabriella Turek| Tomas Vicar| Marwan Zouinkhi' %}</p>
+        <p>{% include person-list ids='fjug|tpietzsch|tomancak|dietzc|tibuch|MarcelWiedenmann|maarzt|xulman|PetrBainar|awalter17|gab1one|Treiblesschorle|mp007|frauzufall|HedgehogCode|bogovicj|NicoKiaru|Jana Klímová|kozusznik|Michal Krumnikl|Manan Lalit|Emil Melnikov|Pavel Moravec|Václav Svatoň|tischi|turekg|Tomas Vicar|Marwan Zouinkhi' %}</p>
       </td>
       <td>
         <p><a href="/plugins/spim-workflow-manager-for-hpc">Parallelization and HPC</a></p>
@@ -679,7 +679,7 @@ ImageJ has benefitted from many hackathons over the years:
         Konstanz, Germany</p>
       </td>
       <td>
-        <p>{% include person-list content='mr-c|sverhoeven|ctrueden|dietzc|tpietzsch|MarcelWiedenmann|DanielBogenrieder|frauzufall|HedgehogCode|AtR1an|LauLauThom|KFDing|frankprotopapa|ChristianAlbrecht|gab1one|Treiblesschorle' %}</p>
+        <p>{% include person-list ids='mr-c|sverhoeven|ctrueden|dietzc|tpietzsch|MarcelWiedenmann|DanielBogenrieder|frauzufall|HedgehogCode|AtR1an|LauLauThom|KFDing|frankprotopapa|ChristianAlbrecht|gab1one|Treiblesschorle' %}</p>
       </td>
       <td>
         <p><a href="/software/knime">KNIME</a></p>
@@ -695,7 +695,7 @@ ImageJ has benefitted from many hackathons over the years:
         Dresden, Germany</p>
       </td>
       <td>
-        <p>{% include person-list content='hanslovsky|ctrueden|tpietzsch|skalarproduktraum|tibuch|fjug|thewtex|stelfrich|haesleinhuepf|MarcelWiedenmann|emilmelnikov|oeway|xulman|tomancak|uschmidt83|frauzufall|HedgehogCode|NicoKiaru|mangalp|m-novikov|tischi|MLbyML|BobHanson|wolny|turekg|tomasvicar|davidackerman|lagru|axon900|arrmunoz' %}</p>
+        <p>{% include person-list ids='hanslovsky|ctrueden|tpietzsch|skalarproduktraum|tibuch|fjug|thewtex|stelfrich|haesleinhuepf|MarcelWiedenmann|emilmelnikov|oeway|xulman|tomancak|uschmidt83|frauzufall|HedgehogCode|NicoKiaru|mangalp|m-novikov|tischi|MLbyML|BobHanson|wolny|turekg|tomasvicar|davidackerman|lagru|axon900|arrmunoz' %}</p>
       </td>
       <td>
         <p><a href="/scripting/python">Python</a>+<a href="/fiji">Fiji</a></p>
@@ -711,7 +711,7 @@ ImageJ has benefitted from many hackathons over the years:
         Ostrava, Czech Republic</p>
       </td>
       <td>
-        <p>{% include person-list content='Jug|Tomancak| Jan Kožusznik| Michal Krumnikl| Pavel Moravec| Václav Svatoň' %}</p>
+        <p>{% include person-list ids='fjug|tomancak|kozusznik|Michal Krumnikl|Pavel Moravec|Václav Svatoň' %}</p>
       </td>
       <td>
         <p>Parallel Macro/Scripts and OpenMPI Plugins</p>
