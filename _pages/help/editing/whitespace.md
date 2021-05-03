@@ -84,16 +84,41 @@ you can use the `style` attribute on a surrounding `<span>` element:
 {% endcapture %}
 {% include example code=fixed-width-span-style %}
 
-But if you try this on a block-level HTML element such as `<div>`, you won't be able to mix in Markdown anymore:
+But if you do this on a block-level HTML element such as `<div>`, you won't be able to mix in Markdown anymore:
 
 {% capture fixed-width-div-style-fail %}
+What are you going to do, bleed on me?
 <div style="font-family: monospace">
 +-=-=-=-=-=-=-=-=-=-=-=-=-+\\
 | -=- I'm *Invincible!* -=- |\\
 +-=-=-=-=-=-=-=-=-=-=-=-=-+
-</div>
+</div> You're a loony.
 {% endcapture %}
 {% include example code=fixed-width-div-style-fail %}
+
+...unless you add `markdown=1` to the element in question:
+
+{% capture fixed-width-block-markdown %}
+What are you going to do, bleed on me?
+<div style="font-family: monospace" markdown=1>
++-=-=-=-=-=-=-=-=-=-=-=-=-+\\
+| -=- I'm *Invincible!* -=- |\\
++-=-=-=-=-=-=-=-=-=-=-=-=-+
+</div> You're a loony.
+{% endcapture %}
+{% include example code=fixed-width-block-markdown %}
+
+...or use a normally-inline element with `display: block`:
+
+{% capture fixed-width-block-display %}
+What are you going to do, bleed on me?
+<span style="font-family: monospace; display: block">
++-=-=-=-=-=-=-=-=-=-=-=-=-+\\
+| -=- I'm *Invincible!* -=- |\\
++-=-=-=-=-=-=-=-=-=-=-=-=-+
+</span> You're a loony.
+{% endcapture %}
+{% include example code=fixed-width-block-display %}
 
 ## Multiple spaces in a row
 
@@ -131,7 +156,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ## Beware of leading whitespace
 
-If you uses more than three spaces to indent lines, the Markdown processor will think you meant a code block:
+If you use more than three spaces to indent lines, the Markdown processor will think you meant a code block:
 
 {% capture beware-leading-whitespace %}
 It works to indent 4 spaces without a leading blank line:
@@ -140,6 +165,6 @@ It works to indent 4 spaces without a leading blank line:
 But if you indent 4 spaces after a blank line, watch out:
 
     Markdown kicks in, treating it as a block of code.
-Weird, eh?
+Even if a subsequent line is not indented!
 {% endcapture %}
 {% include example code=beware-leading-whitespace %}
