@@ -5,7 +5,7 @@
 {{include.code}}
 {% endhighlight %}
 </div>
-<div style="float: left; max-width: 100%; overflow: auto">
+<div style="float: left; max-width: 100%; overflow: auto; padding-right: 8px">
 <p style="text-align: center; font-weight: bold; margin: 0.2em 0 0 0">Result</p>
 <div class="shadowed-box" markdown=1>
 {{include.code}}
