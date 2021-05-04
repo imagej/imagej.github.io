@@ -6,18 +6,23 @@
 
 .plugin-index table {
     margin: 0 auto;
+    table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
 }
 
 .plugin-index table td {
-    vertical-align: middle;
+    vertical-align: middle;;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 75%;
 }
 
 .plugin-index table td a {
     vertical-align: middle;
-    padding: 0 0 1.2em 0;
+    padding: 0 0 0 0;
 }
 
 .plugin-index table tbody tr {
