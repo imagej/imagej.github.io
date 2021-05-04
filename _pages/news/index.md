@@ -7,6 +7,5 @@ This page shows the latest announcements and updates about ImageJ. You can also 
 
 [ImageJ1](/software/imagej1) release notes are listed on the [IJ1 news page](/ij/notes.html).
 
-<listnews limit="20" />
 
-You can also browse the [news archive](Category_News).
+{% include listnews %}

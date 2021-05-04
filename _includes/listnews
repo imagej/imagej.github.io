@@ -1,0 +1,10 @@
+{%- assign newsPages = site.pages
+	| sort:"date"
+	| reverse
+	| where_exp:"page", "page.url contains '/news/' and page.url != '/news/index'" -%}
+
+<ul>
+{%- for newsPg in newsPages -%}
+  <li><a href="{{newsPg.url}}">{{newsPg.title}}</a></li>
+{%- endfor -%}
+</ul>
