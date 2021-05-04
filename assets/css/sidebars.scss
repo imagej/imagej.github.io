@@ -64,7 +64,8 @@ $sidebarEdge: $sidebarMargin + $sidebarPadding + $sidebarShadowSize;
 }
 
 .menu summary {
-	outline:none;
+	outline: none;
+	cursor: pointer;
 }
 
 .menu summary.li {
