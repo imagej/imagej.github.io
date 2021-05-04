@@ -87,7 +87,7 @@ The plug-in is intended to analyse the "texture" of an object thus it suits samp
 
 -   **Directions**: number of times sampling is performed from different directions. The minimum is $$9$$, because that's how many independent variables the algorithm needs to solve the "shape" of the orientation in the image.
 -   **Lines per direction**: controls how many parallel lines are drawn per each direction. Each line has the length $$d = \sqrt{width^2 + height^2 + depth^2}$$.
--   **Sampling increment**: controls the distance between sampling points along a line. The default and minimum is &lt;math\\sqrt{3}$$. The number of samples taken per line depends on the length of the line segment within the image stack.
+-   **Sampling increment**: controls the distance between sampling points along a line. The default and minimum is $$\sqrt{3}$$. The number of samples taken per line depends on the length of the line segment within the image stack.
 -   **Recommended minimum**: if checked, then the above three parameters are set to the recommended minimum values. In our tests we found that with these values the results are quite stable, and fitting unlikely to fail. However, these minimums are not guaranteed to be the best settings for your image.
 -   **Show radii**: if checked, then the radii of the fitted ellipsoid are shown in the results table.
 -   **Show Eigens** if checked, then the eigenvectors and values of the fitted ellipsoid are shown in the results table.
