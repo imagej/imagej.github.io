@@ -29,6 +29,7 @@ function loadDockState() {
   for (var i=0; i<tokens.length; i++) {
     var dockId, dockableIds;
     [dockId, dockableList] = tokens[i].split(':', 2);
+    if (!dockId || !dockableList) continue;
     var dock = document.getElementById(dockId);
     if (!dock) continue;
     var dockableIds = dockableList.split(',');
