@@ -44,7 +44,7 @@ The following alumni worked on ImageJ-related projects during their time at LOCI
 -   {% include person id='dscho' %} (senior developer, Sep 2011-Nov 2014)
 -   {% include person id='grislis' %} (programmer, [SLIM Curve](/plugins/slim-curve), Jan 2010-Dec 2013)
 -   {% include person id='bdezonia' %} (programmer, [ImageJ2](/software/imagej2), Jan 2010-Nov 2013)
--   {% include person id='Lentz' %} (programmer, [ImageJ2](/software/imagej2), Dec 2009-Feb 2011)
+-   {% include person id='ricklentz' %} (programmer, [ImageJ2](/software/imagej2), Dec 2009-Feb 2011)
 
 See also the [complete list of LOCI lab alumni](https://eliceirilab.org/labalumni/) on the LOCI website.
 

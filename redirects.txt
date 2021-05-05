@@ -1873,7 +1873,7 @@ User:LMEscudero :: users/LMEscudero
 User:LOCI :: users/LOCI
 User:Landini :: users/landinig
 User:Leek :: users/LeeKamentsky
-User:Lentz :: users/Lentz
+User:Lentz :: users/ricklentz
 User:Leon :: users/lnyng
 User:LeonYang5114 :: users/lnyng
 User:Lhilbert :: users/lhilbert
@@ -1974,7 +1974,7 @@ User:Tibuch :: users/tibuch
 User:Tomancak :: users/tomancak
 User:Trackers :: users/kapoorlab
 User:Tupper :: users/btupper
-User:Turek :: users/Turek
+User:Turek :: users/turekg
 User:Twagner :: users/thorstenwagner
 User:Ulman :: users/xulman
 User:UniBas-IMCF :: users/UniBas-IMCF

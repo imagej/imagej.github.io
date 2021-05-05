@@ -1,5 +1,5 @@
 ---
-title: User › elevans
+title: Edward Evans
 
 name: Edward Evans
 affiliation:
@@ -8,4 +8,6 @@ affiliation:
 forum: elevans
 github: elevans
 ---
-{% include stub %}
+Ed Evans is a postdoc programmer at [LOCI](/orgs/loci) and member of LOCI's
+core [ImageJ2](/software/imagej2)/[Fiji](/software/fiji) team. His current
+project is integration of Python-based machine learning approaches with ImageJ.
