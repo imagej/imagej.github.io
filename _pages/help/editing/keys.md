@@ -6,43 +6,56 @@ The `key` include enables declaration of keyboard shortcuts in a clear way.
 
 ## Single keys
 
-The syntax to write {% include key key="ctrl" %} is:
+The syntax for talking about a key such as {% include key key="enter" %} is:
 ```liquid
-{% raw %}{% include key key="ctrl" %}{% endraw %}
+{% raw %}{% include key key="enter" %}{% endraw %}
 ```
+
+See the [list of key codes](#list-of-key-codes) below for a complete summary of
+available key codes.
 
 ## Key combinations
 
 You can declare a combination of keys such as {% include key keys="ctrl|c" %}
 by separating them with `|` symbols:
-```liquid
+{% capture key-combos-code %}
 {% raw %}{% include key keys="ctrl|c" %}{% endraw %}
-```
+{% endcapture %}
+{% capture key-combos-result %}
+{% include key keys="ctrl|c" %}
+{% endcapture %}
+{% include example code=key-combos-code result=key-combos-result %}
 
 ## Keyboard styles
 
 By default, keys are rendered in a platform-agnostic way, but you can use the
 `style` parameter to render the keys to better match certain keyboards.
 
-{%- highlight liquid -%}
-{% raw %}{% include key key="super|f2" %}{% endraw %}
-{% raw %}{% include key key="super|f2" style="pc" %}{% endraw %}
-{% raw %}{% include key key="super|f2" style="mac" %}{% endraw %}
-{%- endhighlight -%}
-results in
-{% include key key="super|f2" %},
-{% include key key="super|f2" style="pc" %}, and
-{% include key key="super|f2" style="mac" %} respectively.
+{% capture keyboard-style-code -%}
+{% raw %}| Default   | {% include key key="ctrl|tab" %}             |{% endraw %}
+{% raw %}| PC style  | {% include key key="ctrl|tab" style="pc" %}  |{% endraw %}
+{% raw %}| Mac style | {% include key key="ctrl|tab" style="mac" %} |{% endraw %}
+{% endcapture %}
+{% capture keyboard-style-result %}
+| Default   | {% include key key="ctrl|tab" %}             |
+| PC style  | {% include key key="ctrl|tab" style="pc" %}  |
+| Mac style | {% include key key="ctrl|tab" style="mac" %} |
+{% endcapture %}
+{% include example code=keyboard-style-code result=keyboard-style-result %}
 
 ## Custom chain symbols
 
 Finally, if you want to connect a key combination together with something
 other than the default `+` symbol, you can use the `chain` parameter
-to do something different,
-e.g. {% include key key="ctrl|shift|esc" chain="&#9939;" %}:
-{%- highlight liquid -%}
-{% raw %}{% include key key="ctrl|shift|esc" chain="&#9939;" %}{% endraw %}
-{%- endhighlight -%}
+to do something different:
+
+{% capture custom-chain-symbols-code %}
+{% raw %}{% include key keys="ctrl|shift|esc" chain="&#9939;" %}{% endraw %}
+{% endcapture %}
+{% capture custom-chain-symbols-result %}
+{% include key keys="ctrl|shift|esc" chain="&#9939;" %}
+{% endcapture %}
+{% include example code=custom-chain-symbols-code result=custom-chain-symbols-result %}
 
 ## List of key codes
 
