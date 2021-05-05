@@ -39,9 +39,9 @@ results in
 Finally, if you want to connect a key combination together with something
 other than the default `+` symbol, you can use the `chain` parameter
 to do something different,
-e.g. {% include key key="ctrl|cmd|esc" chain="&#9939;" %}:
+e.g. {% include key key="ctrl|shift|esc" chain="&#9939;" %}:
 {%- highlight liquid -%}
-{% raw %}{% include key key="ctrl|cmd|esc" chain="&#9939;" %}{% endraw %}
+{% raw %}{% include key key="ctrl|shift|esc" chain="&#9939;" %}{% endraw %}
 {%- endhighlight -%}
 
 ## List of key codes
