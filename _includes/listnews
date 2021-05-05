@@ -1,3 +1,12 @@
+{% comment %}
+Looks through all pages in /news/ and sorts them by year.
+
+Outputs a list of links to the news pages, organized under year headers.
+
+NB: relies on news pages to be named in the format "YYYY-MM-DD-*" to be
+sorted correctly, and to generate the year headers consistently.
+{% endcomment %}
+
 {%- assign newsPages = site.pages
 	| sort:"date"
 	| reverse
@@ -5,7 +14,13 @@
 	| where_exp:"page", "page.url != '/news/index'" -%}
 
 <ul>
+{% assign headers = "" | split: ',' %}
 {%- for newsPg in newsPages -%}
+  {% capture page_year %} {{ newsPg.title | slice: 0, 4 }} {% endcapture %}
+  {% unless headers contains page_year %}
+    {% assign headers = headers | push: page_year %}
+    <h2>{{ page_year }}</h2>
+  {% endunless %}
   <li><a href="{{newsPg.url}}">{{newsPg.title}}</a></li>
 {%- endfor -%}
 </ul>
