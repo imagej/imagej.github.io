@@ -9,29 +9,18 @@ This part introduces some basic aspects of ImageJ so that you can use the softwa
 
 ## Using Keyboard Shortcuts
 
-You'll learn more and more [↓](#index-Keyboard)[↓shortcut](#index-Shortcuts) keys as you use ImageJ, because (almost) all shortcuts are listed throughout ImageJ menus. Similarly, in this guide each command has its shortcut key listed on its name (flanked by square brackets). Please note that the notation for these key-bindings is case sensitive, i.e., Shift-modifiers are not explicitly mentioned (a capital {% include key key="A" %} means {% include key keys="Shift|A" %}) and assumes that *Require control key for shortcuts* in {% include bc path="Edit | Options | [Misc...↓](#sub:Misc...)" %} is unchecked (i.e., except when using the IJ [Editor↓](#sub:ImageJ-Macro-Editor) or the [Text Tool↓](#sec:Text-Tool), you won't have to hold down the Control key to use menu shortcuts). For example, the command {% include bc path="Edit | \[\[\#sub:Invert-%5BI%5D\|Invert \[I\]↓\]\]" %} can be evoked by <span class="Keystroke">Shift</span> <span class="Keystroke">I</span> or <span class="Keystroke">Ctrl</span> <span class="Keystroke">Shift</span> <span class="Keystroke">I</span> if *Require control key for shortcuts* is checked. The full list of ImageJ shortcuts (*see* [Keyboard Shortcuts↓](#sec:Keyboard-Shortcuts)) can be retrieved at any time using the {% include bc path="Plugins | Utilities | [List Shortcuts...↓](#sub:List-Shortcuts...)" %} command.
+You'll learn more and more [↓keyboard](#index-Keyboard)[↓shortcut](#index-Shortcuts) keys as you use ImageJ, because (almost) all shortcuts are listed throughout ImageJ menus. Similarly, in this guide each command has its shortcut key listed on its name (flanked by square brackets). Please note that the notation for these key-bindings is case sensitive, i.e., Shift-modifiers are not explicitly mentioned (a capital {% include key key="A" %} means {% include key keys="Shift|A" %}) and assumes that *Require control key for shortcuts* in {% include bc path="Edit | Options | [Misc...↓](#sub:Misc...)" %} is unchecked (i.e., except when using the IJ [Editor↓](#sub:ImageJ-Macro-Editor) or the [Text Tool↓](#sec:Text-Tool), you won't have to hold down the {% include key key="Control" %} key to use menu shortcuts). For example, the command {% include bc path="Edit | [Invert \[I\]↓](#sub:Invert-%5BI%5D)" %} can be evoked by {% include key keys="Shift|I" %}, or {% include key keys="Ctrl|Shift|I" %} if *Require control key for shortcuts* is checked. The full list of ImageJ shortcuts (*see* [Keyboard Shortcuts↓](#sec:Keyboard-Shortcuts)) can be retrieved at any time using the {% include bc path="Plugins | Utilities | [List Shortcuts...↓](#sub:List-Shortcuts...)" %} command.
 
 There are three [↓modifier](#index-Modifier-keys) keys in ImageJ:
 
-<div class="Labeling">
+* {% include key key="Control" %} ({% include key key="Command" %} on Apple keyboards) - Although a {% include key key="control" style="mac" %} key is typically present on Apple keyboards, on a Macintosh computer running ImageJ the {% include key key="Command" %} key replaces the functionality of the {% include key key="Control" %} key of other operating systems. For sake of simplification, {% include key key="Ctrl" %} will always refer to both throughout this guide.
 
-**Control** (**Command Key**[↓](#index-Command-key) on Apple keyboards) Denoted by 'Ctrl'[↓](#nom-ctrl) or <span class="Keystroke">Ctrl</span> in this document. Although a control key is typically present on Apple keyboards, on a Macintosh computer running ImageJ the Command key <span class="Keystroke"><span class="unknown">\\cmd</span>  Cmd</span> replaces the functionality of the Control key of other operating systems. For sake of simplification, 'Ctrl' will always refer to both throughout this guide.
+* {% include key key="Shift" %}
 
-</div>
-<div class="Labeling">
+* {% include key key="Alt" %} - This is also the {% include key key="Option" %} or {% include key key="Meta" %} key on many keyboards. In ImageJ, it is also used to type special unit symbols such as μ ({% include key keys="Alt|M" %}) or Å ({% include key keys="Alt|Shift|A" %}).
 
-**Shift** Denoted by 'Shift'[↓](#nom-shift) or <span class="Keystroke">Shift</span> in this document.
-
-</div>
-<div class="Labeling">
-
-**Alt** Denoted by 'Alt'[↓](#nom-alt) or <span class="Keystroke">Alt</span> in this document. This is also the 'Option' or 'Meta' key on many keyboards. In ImageJ, it is also used to type special unit symbols such as <span class="formula"><span class="unknown">\\micro</span></span> (<span class="Keystroke">Alt</span><span class="Keystroke">M</span>) or <span class="formula"><span class="unknown">\\angstrom</span></span> (<span class="Keystroke">Alt</span><span class="Keystroke">Shift</span><span class="Keystroke">A</span>).
-
-</div>
-<div class="See">
-
+<div class="See" markdown=1>
 [Keyboard Shortcuts↓](#sec:Keyboard-Shortcuts), {% include bc path="Plugins | [Shortcuts↓](#sub:Shortcuts) |" %}
-
 </div>
 <div class="float">
 <div class="infobox">
@@ -41,11 +30,11 @@ float-infobox2 Frontmost Window and Window Activation
 
 </div>
 
-In ImageJ, all operations are performed on the active (frontmost) image (which has its title bar highlighted). If a window is already open it will activate when its opening command is re-run, e.g., if the B&C window is already opened ({% include bc path="Image | Adjust | \[\[\#sub:Brightness/Contrast...%5BC%5D\|Brightness/Contrast... \[C\]↓\]\]" %}), pressing its keyboard shortcut ( <span class="Keystroke">Shift</span> <span class="Keystroke">C</span> ) will activate it.
+In ImageJ, all operations are performed on the active (frontmost) image (which has its title bar highlighted). If a window is already open it will activate when its opening command is re-run, e.g., if the B&C window is already opened ({% include bc path="Image | Adjust | \[\[\#sub:Brightness/Contrast...%5BC%5D\|Brightness/Contrast... \[C\]↓\]\]" %}), pressing its keyboard shortcut ( {% include key keys="Shift|C" %} ) will activate it.
 
 <div class="PlainVisible">
 
-Pressing <span class="Keystroke">Enter</span> on any image will bring the [The-ImageJ-window](#fig:The-ImageJ-window)
+Pressing {% include key key="Enter" %} on any image will bring the [The-ImageJ-window](#fig:The-ImageJ-window)
 
 <div class="PlainVisible">
 
@@ -114,26 +103,26 @@ In ImageJ the equivalent to [↓](#index-Redo)'Redo' is the {% include bc path="
 
 ## Image Types and Formats
 
-[↓Digital](#index-Image-types) Images are two-dimensional grids of pixel[↓](#nom-pixel) intensities values with the width and height of the image being defined by the number of pixels in <span class="formula">*x*</span> (rows) and <span class="formula">*y*</span> (columns) direction. Thus, pixels (picture elements) are the smallest single components of images, holding numeric values — pixel intensities — that range between black and white. The characteristics of this range, i.e., the number of unique intensity (brightness) values that can exist in the image is defined as the bit[↓](#nom-bit)--depth of the image and specifies the level of precision in which intensities are coded, e.g.: A 2--bit image has <span class="formula">2<sup>2</sup> = 4</span> tones: 00 (black), 01 (gray), 10 (gray), and 11 (white). A 4--bit image has <span class="formula">2<sup>4</sup> = 16</span> tones ranging from 0000 (0) to 1111 (16), etc. In terms of bits per pixel (bpp[↓](#nom-bpp)), the most frequent types of images ({% include bc path="Image | [Type↓](#sub:Type) |" %}) that ImageJ deals with are:
+[↓Digital](#index-Image-types) Images are two-dimensional grids of pixel[↓](#nom-pixel) intensities values with the width and height of the image being defined by the number of pixels in $$*x*$$ (rows) and $$*y*$$ (columns) direction. Thus, pixels (picture elements) are the smallest single components of images, holding numeric values — pixel intensities — that range between black and white. The characteristics of this range, i.e., the number of unique intensity (brightness) values that can exist in the image is defined as the bit[↓](#nom-bit)--depth of the image and specifies the level of precision in which intensities are coded, e.g.: A 2--bit image has $$ 2^2 = 4 $$ tones: 00 (black), 01 (gray), 10 (gray), and 11 (white). A 4--bit image has $$ 2^4 = 16 $$ tones ranging from 0000 (0) to 1111 (16), etc. In terms of bits per pixel (bpp[↓](#nom-bpp)), the most frequent types of images ({% include bc path="Image | [Type↓](#sub:Type) |" %}) that ImageJ deals with are:
 
 <div class="Labeling">
 
-**8--bit** Images that can display 256 (<span class="formula">2<sup>8</sup></span>) gray levels (integers only).
+**8--bit** Images that can display 256 ($$ 2^8 $$) gray levels (integers only).
 
 </div>
 <div class="Labeling">
 
-**16--bit** Images that can display 65, 536 (<span class="formula">2<sup>16</sup></span>) gray levels (integers only).
+**16--bit** Images that can display 65, 536 ($$ 2^16 $$) gray levels (integers only).
 
 </div>
 <div class="Labeling">
 
-**32--bit** Images that can display 4, 294, 967, 296 (<span class="formula">2<sup>32</sup></span>) gray levels (real numbers). In 32--bit images, pixels are described by {% include wikipedia title="Floating point" %} values and can have<span class="versalitas"> any</span> intensity value including *NaN*[↓](#nom-nan) (Not a Number).
+**32--bit** Images that can display 4, 294, 967, 296 ($$ 2^32 $$) gray levels (real numbers). In 32--bit images, pixels are described by {% include wikipedia title="Floating point" %} values and can have<span class="versalitas"> any</span> intensity value including *NaN*[↓](#nom-nan) (Not a Number).
 
 </div>
 <div class="Labeling">
 
-**RGB Color** [Color Images↓](#sec:Color-Images) that can display 256 values in the Red, Green and Blue channel. These are 24--bit (<span class="formula">2<sup>3 × 8</sup></span>) images. RGB[↓](#nom-rgb) color images can also be 32--bit color images (24--bit color images with additional eight bits coding alpha blending values, i.e., transparency).
+**RGB Color** [Color Images↓](#sec:Color-Images) that can display 256 values in the Red, Green and Blue channel. These are 24--bit (2^{3 \times 8}) images. RGB[↓](#nom-rgb) color images can also be 32--bit color images (24--bit color images with additional eight bits coding alpha blending values, i.e., transparency).
 
 </div>
 
@@ -293,7 +282,7 @@ TIFF stacks with a <span class="Filename">.tif</span> extension open as virtual 
 
 ### Hyperstacks
 
-[↓Hyperstacks](#index-Stacks-Hyperstacks) are multidimensional images, extending image stacks to four (4D) or five (5D) dimensions: <span class="formula">*x*</span> (width), <span class="formula">*y*</span> (height), <span class="formula">*z*</span> (slices), <span class="formula">*c*</span> (channels or wavelengths) and <span class="formula">*t*</span> (time frames). Hyperstacks are displayed in a window with three labelled scrollbars (*see* [Stacks and Hyperstacks↑](#fig:Stacks-and-Hyperstacks)). Similarly to the scrollbar in [Stacks↑](#sub:Stacks-Intro), the frame slider (*t*) has a play/pause icon.
+[↓Hyperstacks](#index-Stacks-Hyperstacks) are multidimensional images, extending image stacks to four (4D) or five (5D) dimensions: $$ x $$ (width), $$ y $$ (height), $$ z $$ (slices), $$ c $$ (channels or wavelengths) and $$ t $$ (time frames). Hyperstacks are displayed in a window with three labelled scrollbars (*see* [Stacks and Hyperstacks↑](#fig:Stacks-and-Hyperstacks)). Similarly to the scrollbar in [Stacks↑](#sub:Stacks-Intro), the frame slider (*t*) has a play/pause icon.
 
 <div class="See">
 
@@ -482,7 +471,7 @@ Most of commands that can be useful in defining or drawing selections are availa
 </div>
 <div class="Labeling">
 
-**Deleting** Choose any of the selection tools and click outside the selection, or use {% include bc path="Edit | Selection | " %}\[\[\#sub:Select-None-%5BA%5D\|Select None \[A\]↓\]\]. Use {% include bc path="Edit | Selection | " %}\[\[\#sub:Restore-Selection-%5BE%5D\|Restore Selection \[E\]↓\]\] to restore a selection back after having deleted it. With [Overlays↓](#sub:Overlay-Intro), an activated ROI can be deleted by pressing the <span class="Keystroke">Backspace</span> (<span class="Keystroke">Delete</span> on Mac) key.
+**Deleting** Choose any of the selection tools and click outside the selection, or use {% include bc path="Edit | Selection | " %}\[\[\#sub:Select-None-%5BA%5D\|Select None \[A\]↓\]\]. Use {% include bc path="Edit | Selection | " %}\[\[\#sub:Restore-Selection-%5BE%5D\|Restore Selection \[E\]↓\]\] to restore a selection back after having deleted it. With [Overlays↓](#sub:Overlay-Intro), an activated ROI can be deleted by pressing the {% include key key="Backspace" %} ({% include key key="Delete" %} on Mac) key.
 
 </div>
 <div class="Labeling">
@@ -502,7 +491,7 @@ Most of commands that can be useful in defining or drawing selections are availa
 </div>
 <div class="Labeling">
 
-**Resizing** The [Brush Selection Tool↓](#sub:Brush-Selection-Tool) can be used to perform fine adjustments of ROI contours. Most ROIs can be resized one pixel at a time by holding <span class="Keystroke">Alt</span> while using the arrow keys. In general (*see* [Area Selection Tools↓](#sec:Area-selection-tools) and [Line Selection Tools↓](#sec:Line-Selection-Tools) for details), selections are resized by dragging one of the selection handlers. While dragging, holding <span class="Keystroke">Ctrl</span> resizes the selection around its center, holding <span class="Keystroke">Alt</span> imposes a fixed aspect ratio and holding <span class="Keystroke">Shift</span> forces a 1:1 aspect ratio.
+**Resizing** The [Brush Selection Tool↓](#sub:Brush-Selection-Tool) can be used to perform fine adjustments of ROI contours. Most ROIs can be resized one pixel at a time by holding {% include key key="Alt" %} while using the arrow keys. In general (*see* [Area Selection Tools↓](#sec:Area-selection-tools) and [Line Selection Tools↓](#sec:Line-Selection-Tools) for details), selections are resized by dragging one of the selection handlers. While dragging, holding {% include key key="Ctrl" %} resizes the selection around its center, holding {% include key key="Alt" %} imposes a fixed aspect ratio and holding {% include key key="Shift" %} forces a 1:1 aspect ratio.
 
 <div class="See">
 
@@ -526,12 +515,12 @@ The following modifier keys can be use to create composite selections:[↓](#ind
 
 <div class="Labeling">
 
-<span class="Keystroke">Shift</span> Drawing outside current selection while pressing Shift creates new content. To add a non-square rectangle or ellipse, the Shift key must be released after adding the selection
+{% include key key="Shift" %} Drawing outside current selection while pressing Shift creates new content. To add a non-square rectangle or ellipse, the Shift key must be released after adding the selection
 
 </div>
 <div class="Labeling">
 
-<span class="Keystroke">Alt</span> Drawing inside current selection while pressing Alt creates a hole removing content from the ROI
+{% include key key="Alt" %} Drawing inside current selection while pressing Alt creates a hole removing content from the ROI
 
 </div>
 
@@ -594,13 +583,13 @@ As mentioned in [3↑](#infobox:Formats) [Image Types: Lossy Compression and Met
 
 <div class="Description">
 
-<span class="Description-entry">Storage of ROIs</span> In ImageJ it is only possible to have a single ROI at a time. However, it is possible to add selections to the image overlay using <span class="Keystroke">B</span> ({% include bc path="Image | Overlay | [Add-Selection...%5Bb%5D](#sub:Add-Selection...%5Bb%5D)" %}
-↓).<span class="unknown">\\feature</span> Once added to the image overlay, ROIs can be re-activated by Alt-clicking, Control-clicking or long-pressing (<span class="formula"><span class="fraction"><sup>1</sup>/<sub>4</sub></span></span> second or longer). Activated ROIs can be deleted by pressing the <span class="Keystroke">Backspace</span> key. Selections can also be added and recovered in bulk, using the {% include bc path="Image | Overlay | [From ROI Manager↓](#sub:From-ROI-Manager)" %}/<span class="menuitem">[To ROI Manager↓](#sub:To-ROI-Manager)</span> commands.
+<span class="Description-entry">Storage of ROIs</span> In ImageJ it is only possible to have a single ROI at a time. However, it is possible to add selections to the image overlay using {% include key key="B" %} ({% include bc path="Image | Overlay | [Add-Selection...%5Bb%5D](#sub:Add-Selection...%5Bb%5D)" %}
+↓).<span class="unknown">\\feature</span> Once added to the image overlay, ROIs can be re-activated by Alt-clicking, Control-clicking or long-pressing ($$ \frac{1}{4} $$ second or longer). Activated ROIs can be deleted by pressing the {% include key key="Backspace" %} key. Selections can also be added and recovered in bulk, using the {% include bc path="Image | Overlay | [From ROI Manager↓](#sub:From-ROI-Manager)" %}/<span class="menuitem">[To ROI Manager↓](#sub:To-ROI-Manager)</span> commands.
 
 </div>
 <div class="Description">
 
-<span class="Description-entry">Non-destructive annotations</span> Overlays are the best way of annotating images in ImageJ ([examples↓](#fig:image-overlays)). As vector graphics, overlays do not change pixel values, can be scaled without loss of quality even at high zoom levels (*see* [19↓](#infobox:ZoomedCanvas) [Working with Zoomed Canvases↓](#infobox:ZoomedCanvas)) and can be displayed at different opacity values (*see* [20↓](#infobox:HEX) [Hexadecimal Color Values↓](#infobox:HEX)). RGB snapshots of the image with embedded overlays can be created by holding <span class="Keystroke">Shif</span> <span class="Keystroke">F</span>, the shortcut for {% include bc path="Image | Overlay | \[\[\#sub:Flatten-%5BF%5D\|Flatten \[F\]↓\]\]" %}. 'Flattened' images with the overlay rendered as pixel data are also created when saving the image as PNG or JPEG ({% include bc path="File | [Save As↓](#sub:SaveAs) |" %}), or when printing the image canvas ({% include bc path="File | \[\[\#sub:Print...%5Bp%5D\|Print... \[p\]↓\]\]" %}). The <span class="menuitem">Flatten</span> command is also listed in the [ROI Manager↓](#fig:The-ROI-Manager).
+<span class="Description-entry">Non-destructive annotations</span> Overlays are the best way of annotating images in ImageJ ([examples↓](#fig:image-overlays)). As vector graphics, overlays do not change pixel values, can be scaled without loss of quality even at high zoom levels (*see* [19↓](#infobox:ZoomedCanvas) [Working with Zoomed Canvases↓](#infobox:ZoomedCanvas)) and can be displayed at different opacity values (*see* [20↓](#infobox:HEX) [Hexadecimal Color Values↓](#infobox:HEX)). RGB snapshots of the image with embedded overlays can be created by holding {% include key keys="Shift|F," %} the shortcut for {% include bc path="Image | Overlay | \[\[\#sub:Flatten-%5BF%5D\|Flatten \[F\]↓\]\]" %}. 'Flattened' images with the overlay rendered as pixel data are also created when saving the image as PNG or JPEG ({% include bc path="File | [Save As↓](#sub:SaveAs) |" %}), or when printing the image canvas ({% include bc path="File | \[\[\#sub:Print...%5Bp%5D\|Print... \[p\]↓\]\]" %}). The {% include bc path="Flatten" %} command is also listed in the [ROI Manager↓](#fig:The-ROI-Manager).
 
 </div>
 <div class="Description">
@@ -661,7 +650,7 @@ Figure 9 **3D Viewer (Fiji 1.46o), bringing hardware-accelerated 3D visualiz
 
 ## Settings and Preferences[]( )<span class="unknown">\\improvement</span>
 
-[↓](#index-Settings)[↓](#index-Preferences)[↓ImageJ](#index-Options) preferences are automatically saved in a preferences file, the<span class="Filename">IJ\_prefs.txt</span> text file. This file is stored in <span class="Directory"><span class="formula"> \~ </span>/Library/Preferences/</span> on Mac OS X, in <span class="Directory"><span class="formula"> \~ </span>/.imagej/</span> on Linux and Windows (with <span class="formula"> \~ </span> referring to the user's home directory). Several macros and plugins also write parameters to this file. If the <span class="Filename">IJ\_prefs.txt</span> is erased using {% include bc path="Edit | Options | [Reset...↓](#sub:ResetOptions)" %}, ImageJ will create a new one the next time it is opened resetting all parameters to their default values.
+[↓](#index-Settings)[↓](#index-Preferences)[↓ImageJ](#index-Options) preferences are automatically saved in a preferences file, the<span class="Filename">IJ\_prefs.txt</span> text file. This file is stored in `~/Library/Preferences/` on Mac OS X, in `~/.imagej/` on Linux and Windows (with `~` referring to the user's home directory). Several macros and plugins also write parameters to this file. If the <span class="Filename">IJ\_prefs.txt</span> is erased using {% include bc path="Edit | Options | [Reset...↓](#sub:ResetOptions)" %}, ImageJ will create a new one the next time it is opened resetting all parameters to their default values.
 
 Sometimes, it may be useful to override (or restore) certain settings that may have been changed during a working session. For example, the *Limit to threshold* option ({% include bc path="Analyze | [Set Measurements...↓](#sub:Set-Measurements...)" %}) will affect most measurements performed on thresholded images. Thus, it may be wise to check the status of this parameter before each analysis, specially when working on multiple computers.
 
@@ -693,7 +682,7 @@ The `setOption()` [macro function](/ij/developer/macro/functions.html#setOption)
 4.  Measurements are not restricted to thresholded pixels (*Limit to Threshold* in {% include bc path="Analyze | [Set Measurements...↓](#sub:Set-Measurements...)" %})
 5.  Binary images are processed assuming white objects on a black background (*Black background* in {% include bc path="Process | Binary | [Options...↓](#sub:BinaryOptions...)" %}, *see* [23↓](#infobox:blackBackground) [Interpreting Binary Images↓](#infobox:blackBackground))
 6.  *Background color* is black and *foreground color* is white ({% include bc path="Edit | Options | [Colors...↓](#sub:Colors...)" %})
-7.  ImageJ plots contain grid lines and are always <span class="formula">350 × 200</span> pixels in size ({% include bc path="Edit | Options | [Profile Plot Options...↓](#sub:Profile-Plot-Options...)" %})
+7.  ImageJ plots contain grid lines and are always $$ 350 \times 200 $$ pixels in size ({% include bc path="Edit | Options | [Profile Plot Options...↓](#sub:Profile-Plot-Options...)" %})
 8.  Open the B&C widget at its last saved screen position ({% include bc path="Image | Adjust | \[\[\#sub:Brightness/Contrast...%5BC%5D\|Brightness/Contrast... \[C\]↓\]\]" %})
 
 <div class="See">
