@@ -3,3 +3,7 @@
 {%- else -%}
 <li><a href="{{include.link}}">{{include.title}}</a></li>
 {%- endif -%}
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

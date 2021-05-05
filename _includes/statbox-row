@@ -16,3 +16,7 @@ This is a helper include used by the statbox include.
     <td id="{{include.id}}" colspan=2>{{value}}</td>
 {%- endif -%}
   </tr>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

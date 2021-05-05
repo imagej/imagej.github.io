@@ -26,3 +26,7 @@
 <td> Some people like to post about ImageJ on Reddit, a community bulletin board.
 </td></tr></tbody></table>
 {% endraw %}
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

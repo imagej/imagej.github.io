@@ -13,3 +13,7 @@ The {{include.shortname}} license text can be found at:
 {% endif %}{% if include.osi %}
 * [{{include.shortname}} on Open Source Initiative](https://opensource.org/licenses/{{include.osi}})
 {% endif %}
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

@@ -8,3 +8,7 @@
 
 </tr>
 </tbody></table>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

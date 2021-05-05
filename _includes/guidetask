@@ -7,3 +7,7 @@
     <li>{{task}}</li>
   {% endfor %}
 </ol>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

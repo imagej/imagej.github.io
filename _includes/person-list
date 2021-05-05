@@ -20,3 +20,7 @@
     {%- include person id=id -%}{%- unless forloop.last -%}, {% endunless -%}
   {%- endfor -%}
 {%- endif -%}
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

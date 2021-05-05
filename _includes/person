@@ -22,3 +22,7 @@
 {%- else -%}
   <span class="person">{{label}}</span>
 {%- endif -%}
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

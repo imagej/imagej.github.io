@@ -5,3 +5,7 @@
 {{include.blurb}}
 </div>
 </div>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

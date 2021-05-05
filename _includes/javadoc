@@ -25,3 +25,6 @@
 <a href="{{javadoc-url}}">{{label}}</a>
 {% endcapture %}
 {{javadoc-content | strip }}
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

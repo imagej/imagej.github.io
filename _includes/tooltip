@@ -1,3 +1,7 @@
 <span class="tooltip">{{include.text}}
 <span class="tooltiptext">{{include.tooltip}}</span>
 </span>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

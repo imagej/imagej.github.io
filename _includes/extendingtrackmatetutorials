@@ -14,3 +14,7 @@
 <li> <a href="How_to_write_your_own_detection_algorithm_for_TrackMate" title="How to write your own detection algorithm for TrackMate">How to write your own detection algorithm for TrackMate</a></li>
 <li> <a href="How_to_write_your_own_particle-linking_algorithm_for_TrackMate" title="How to write your own particle-linking algorithm for TrackMate">How to write your own particle-linking algorithm for TrackMate</a></li></ul>
 </td></tr></tbody></table>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

@@ -10,3 +10,7 @@
 </div>
 {{info_content}}
 </div>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

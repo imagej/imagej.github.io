@@ -2,3 +2,7 @@
     {{include.title | markdownify}}
     {{include.text | markdownify}}
 </div>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

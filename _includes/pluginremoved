@@ -19,3 +19,7 @@
 </div>
 <br>
 <br>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

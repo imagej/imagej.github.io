@@ -5,3 +5,7 @@
     <a href="/help/editing">How do I edit this website?</a>
     
 </div>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

@@ -1,1 +1,5 @@
 <span class="include fullurl">TODO fullurl:  <code>{{include}}</code></span>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

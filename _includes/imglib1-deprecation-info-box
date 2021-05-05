@@ -1,1 +1,5 @@
 <span class="imglib1-deprecation-info-box">{{include.content}}</span>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

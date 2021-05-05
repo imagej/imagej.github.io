@@ -30,3 +30,7 @@
 
 
 {{citation-content | strip }}
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

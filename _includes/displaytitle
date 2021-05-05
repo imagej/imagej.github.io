@@ -3,3 +3,7 @@
 {% endcapture %}
 
 <h2>{{title}}</h2>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

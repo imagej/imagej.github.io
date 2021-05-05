@@ -4,3 +4,7 @@
 </center>
 {% endcapture %}
 {{yes}}
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

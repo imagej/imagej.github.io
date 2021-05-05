@@ -11,3 +11,7 @@
 <a href="{{scholar-url}}">{{label}}</a>
 {% endcapture %}
 {{- content | strip_newlines -}}
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

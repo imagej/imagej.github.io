@@ -65,3 +65,6 @@
 </tbody>
 </table>
 </div>
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

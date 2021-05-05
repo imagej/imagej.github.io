@@ -65,3 +65,7 @@
 [![{{text}}](/images/pages/{{img}})]({{name}})
 </span>
 </div>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

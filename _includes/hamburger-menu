@@ -9,3 +9,7 @@
         </ul>
       </div>
     </nav>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

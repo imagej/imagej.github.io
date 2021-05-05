@@ -28,3 +28,7 @@
 </table>
 </div>
 {% endraw %}
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

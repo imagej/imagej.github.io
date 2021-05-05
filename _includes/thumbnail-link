@@ -13,3 +13,7 @@
 <a href="/{{link}}">
 <img src="{{src}}" alt="{{title}}"
 style="float:right;width:250px;height:194px;"></a>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

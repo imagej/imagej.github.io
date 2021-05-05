@@ -1,1 +1,4 @@
 {% include warning-box content="This page or section is a WORK IN PROGRESS, and still unfinished!" %}
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

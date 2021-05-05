@@ -135,3 +135,7 @@ Draw the Unicode symbol you want    -- https://shapecatcher.com/
     <span class="key"><img src="{{image}}"> {{label}}</span>
   {%- endif -%}
 {%- endfor -%}
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

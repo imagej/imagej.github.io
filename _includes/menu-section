@@ -21,3 +21,7 @@
 <summary>{{include.title}}</summary>
 {%- endif -%}
 <ul>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

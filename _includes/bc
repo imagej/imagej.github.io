@@ -12,3 +12,7 @@
 {{sep}}<span>{{token | strip}}</span>
 {%- endfor -%}
 </span>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

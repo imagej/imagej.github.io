@@ -4,3 +4,7 @@
     <div id="search-box"></div>
   </div>
 </section>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

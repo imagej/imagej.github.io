@@ -12,3 +12,7 @@
 </div>
 <div style="clear: left; margin-bottom: 1em"></div>
 </div>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

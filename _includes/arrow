@@ -1,2 +1,6 @@
 {% capture content %} › {% endcapture %}
 {{- content | strip_newlines -}}
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

@@ -9,3 +9,7 @@
   <li><a href="{{newsPg.url}}">{{newsPg.title}}</a></li>
 {%- endfor -%}
 </ul>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

@@ -61,3 +61,7 @@ https://gist.github.com/davidensinger/5431869
 		<meta content="{{ tag }}" property="article:tag">
   {% endfor -%}
 {%- endif -%}
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

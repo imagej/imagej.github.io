@@ -88,3 +88,7 @@ SOFTWARE.
 		</div>
 	</div>
 </div>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

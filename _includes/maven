@@ -32,3 +32,7 @@
 
 {% endcapture %}
 {{content}}
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

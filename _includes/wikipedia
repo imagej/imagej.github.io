@@ -1,2 +1,6 @@
 {%- assign text = include.text | default: include.title -%}
 <a class="wikipedia" href="https://en.wikipedia.org/wiki/{{include.title | replace: ' ', '_'}}">{{text}}</a>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

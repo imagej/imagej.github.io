@@ -193,3 +193,7 @@ Loew, L. & Schaff, J. C. (2001), "<a href="http://www.sciencedirect.com/science/
 {% if include.content == "VisBio" %}
 Rueden, C., Eliceiri, K. W., & White, J. G. (2004). "<a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1600-0854.2004.00189.x/full">VisBio: a computational tool for visualization of multidimensional biological image data</a>." *Traffic*, **5(6)**, 411-417.
 {% endif %}
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

@@ -4,3 +4,7 @@
     </a>
     <span>{{include.title}}</span>
 </div>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

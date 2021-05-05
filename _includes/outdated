@@ -12,3 +12,7 @@
     </table>
 </div>
 <br>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

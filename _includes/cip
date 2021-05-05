@@ -30,3 +30,7 @@ To access another category of CIP functions: <a href ="CIP_Format" Title="CIP Fo
 <ul><li> by passing in the same position and order as the example signature provided in the documentation. If we take the gauss function as example it would write as follows using only the required parameters: <br /> <code> out = gauss(in , myRadius )</code></li>
 <li> by passing a string/value <br /> <code>out = gauss(in , 'radius', myRadius) </code>  or even <br /><code>out = gauss('radius', myRadius, 'inputImage', in )</code></li></ul>
 {% endif %}
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

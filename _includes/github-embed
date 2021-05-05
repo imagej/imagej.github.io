@@ -8,3 +8,7 @@
 <a href="{{githubembed-url}}">{{label}}</a>
 {% endcapture %}
 {{githubembed-content | strip }}
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

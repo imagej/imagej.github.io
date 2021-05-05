@@ -25,3 +25,7 @@ This is a helper include used by the statbox include.
 {%- endif -%}
     </td>
   </tr>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

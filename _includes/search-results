@@ -2,3 +2,7 @@
   <div id="search-hits"></div>
   <div id="pagination"></div>
 </div>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

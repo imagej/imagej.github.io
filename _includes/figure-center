@@ -5,3 +5,7 @@
 {{include.content}}
 
 </div>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

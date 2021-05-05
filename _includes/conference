@@ -12,3 +12,7 @@
 See the [{{include.title}} web site]({{include.link}}) for details!
 
 </div>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

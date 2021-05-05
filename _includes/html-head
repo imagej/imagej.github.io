@@ -12,3 +12,7 @@
 		<link rel="stylesheet" href="/assets/css/plugin-grid.css"/>
 		<link rel="stylesheet" href="/assets/css/dock.css"/>
 		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

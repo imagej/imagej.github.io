@@ -1,3 +1,7 @@
 </ul>
 </details>
 </li>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}
