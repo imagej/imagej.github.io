@@ -60,34 +60,34 @@ Draw the Unicode symbol you want    -- https://shapecatcher.com/
 
   {%- capture glyph -%}
     {%- case label -%}
-      {%- when "Menu"      -%} &#8803;
-      {%- when "Hyper"     -%} &#10022;
-      {%- when "Meta"      -%} &#9670;
-      {%- when "Windows"   -%} &#8862;
-      {%- when "Command"   -%} &#8984;
-      {%- when "Super"     -%} &#10070;
-      {%- when "Ctrl"      -%} &#8963;
-      {%- when "Alt"       -%} &#8997;
-      {%- when "Option"    -%} &#8997;
-      {%- when "Shift"     -%} &#8679;
-      {%- when "Caps Lock" -%} &#8682;
-      {%- when "Eject"     -%} &#9167;
-      {%- when "Enter"     -%} &crarr;
-      {%- when "Enter2"    -%} &#8996;
-      {%- when "Backspace" -%} &#9003;
-      {%- when "Delete"    -%} &#8998;
-      {%- when "Esc"       -%} &#9099;
-      {%- when "Right"     -%} &rarr;
-      {%- when "Left"      -%} &larr;
-      {%- when "Up"        -%} &uarr;
-      {%- when "Down"      -%} &darr;
-      {%- when "Page Up"   -%} &#8670;
-      {%- when "Page Down" -%} &#8671;
-      {%- when "Home"      -%} &#8598;
-      {%- when "End"       -%} &#8600;
-      {%- when "Tab"       -%} &#8677;
-      {%- when "Space"     -%} &#9251;
-      {%- when "Clear"     -%} &#8999;
+      {%- when "Menu"            -%} &#8803;
+      {%- when "Hyper"           -%} &#10022;
+      {%- when "Meta"            -%} &#9670;
+      {%- when "Windows"         -%} &#8862;
+      {%- when "Command"         -%} &#8984;
+      {%- when "Super"           -%} &#10070;
+      {%- when "Ctrl", "Control" -%} &#8963;
+      {%- when "Alt"             -%} &#8997;
+      {%- when "Option"          -%} &#8997;
+      {%- when "Shift"           -%} &#8679;
+      {%- when "Caps Lock"       -%} &#8682;
+      {%- when "Eject"           -%} &#9167;
+      {%- when "Enter"           -%} &crarr;
+      {%- when "Enter2"          -%} &#8996;
+      {%- when "Backspace"       -%} &#9003;
+      {%- when "Delete"          -%} &#8998;
+      {%- when "Esc"             -%} &#9099;
+      {%- when "Right"           -%} &rarr;
+      {%- when "Left"            -%} &larr;
+      {%- when "Up"              -%} &uarr;
+      {%- when "Down"            -%} &darr;
+      {%- when "Page Up"         -%} &#8670;
+      {%- when "Page Down"       -%} &#8671;
+      {%- when "Home"            -%} &#8598;
+      {%- when "End"             -%} &#8600;
+      {%- when "Tab"             -%} &#8677;
+      {%- when "Space"           -%} &#9251;
+      {%- when "Clear"           -%} &#8999;
     {%- endcase -%}
   {%- endcapture -%}
 
