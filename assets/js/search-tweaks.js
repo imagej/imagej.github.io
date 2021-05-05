@@ -97,7 +97,6 @@ searchClear().onkeydown = function(e) {
 searchClear().onclick = function(e) { clearSearch(); }
 
 document.addEventListener("keydown", function(e) {
-  console.log(e);
   if (isSearchActive()) {
     if (e.keyCode == 40) selectHit(1); // down arrow
     else if (e.keyCode == 38) selectHit(-1); // up arrow
