@@ -117,6 +117,8 @@ Draw the Unicode symbol you want    -- https://shapecatcher.com/
     {%- assign glyph = "&#8633;" -%}
   {%- endif -%}
 
+  {%- if label == "Enter2" -%}{%- assign label = "Enter" -%}{%- endif -%}
+
   {%- if style == "mac" -%}
     {%- case label -%}
       {%- when  "F1",  "F2",  "F3",  "F4",  "F5",  "F6",  "F7",  "F8",  "F9", "F10",
