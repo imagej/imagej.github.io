@@ -1,14 +1,18 @@
+<!-- Libraries -->
 <script src="/assets/js/jquery.min.js"></script>
 <script src="/assets/js/jquery.scrolly.min.js"></script>
 <script src="/assets/js/browser.min.js"></script>
 <script src="/assets/js/breakpoints.min.js"></script>
 <script src="/assets/js/util.js"></script>
 <script src="/assets/js/jquery.toc.js"></script>
-<script src="/assets/js/main.js"></script>
 <script src="/assets/js/lightbox.min.js"></script>
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
+<!-- Site code -->
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/dock.js"></script>
+<!-- Search -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/algoliasearch/3.32.0/algoliasearchLite.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.21.0"></script>
 <script src="/assets/js/search.js"></script>

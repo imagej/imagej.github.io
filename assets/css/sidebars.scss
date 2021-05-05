@@ -6,12 +6,14 @@ $sidebarWidth: 230px;
 $sidebarMargin: 12px;
 $sidebarPadding: 10px;
 $sidebarShadowSize: 4px;
-$sidebarEdge: $sidebarMargin + $sidebarPadding + $sidebarShadowSize;
 
 .sidebar {
 	width: $sidebarWidth - $sidebarMargin;
-	margin: 0 $sidebarMargin;
-	padding: 0 $sidebarPadding;
+}
+
+.sidebar > div {
+	margin: 0 $sidebarMargin 10px $sidebarMargin;
+	padding: 5px $sidebarPadding 0 $sidebarPadding;
 	box-shadow: $sidebarShadowSize $sidebarShadowSize $sidebarShadowSize lightgray;
 	background: #eee;
 }
@@ -43,6 +45,7 @@ $sidebarEdge: $sidebarMargin + $sidebarPadding + $sidebarShadowSize;
 	border-left: 1px solid gray;
 	list-style-type: none;
 	line-height: 14px;
+	padding-left: 0.5em;
 }
 
 .menu > ul {
@@ -91,20 +94,22 @@ $sidebarEdge: $sidebarMargin + $sidebarPadding + $sidebarShadowSize;
 	font-size: 11px;
 }
 
+
+$leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding;
+
 #left-column .menu details > summary:after {
-	left: $sidebarWidth - $sidebarEdge;
+	left: $leftColumnArrowOffset;
 }
 
 #left-column .menu details[open] > summary:after {
-	left: $sidebarWidth - $sidebarEdge - 1;
+	left: $leftColumnArrowOffset - 1;
 }
 
 #right-column .menu details > summary:after {
-	right: $sidebarEdge;
+	right: $sidebarMargin + $sidebarPadding;
 }
 
 #right-column .menu details[open] > summary:after {
-	right: $sidebarEdge;
 }
 
 /* Statbox */

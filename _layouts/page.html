@@ -12,9 +12,9 @@
 		<!-- Page-info -->
 		{% include page-info %}
 
-		<section id="left-column" class="sidebar">
+		<section id="left-column" class="sidebar dock">
 			<!-- Menu -->
-			{% include main-menu %}
+			{% include main-menu dockable=true %}
 		</section>
 
 		<!-- Page title -->
@@ -24,12 +24,13 @@
 			</header>
 		</div>
 
-		<section id="right-column" class="sidebar">
+		<section id="right-column" class="sidebar dock">
 			<!-- Vital stats -->
 			{% include statbox %}
 
 			<!-- Table of contents -->
-			<div class="toc menu">
+			<div id="toc" class="toc menu dockable">
+				<div class="drag-handle"></div>
 				<h3>Page contents</h3>
 				<ul data-toc="#content" data-toc-headings="h1,h2,h3,h4,h5,h6"></ul>
 			</div>
@@ -50,6 +51,9 @@
 
 		<!-- Hamburger menu -->
 		{% include hamburger-menu %}
+
+		<div id="dock-overlay-left" class="dock-overlay" data-dock-target="left-column"></div>
+		<div id="dock-overlay-right" class="dock-overlay" data-dock-target="right-column"></div>
 
 		<!-- Search results -->
 		{% include search-results %}

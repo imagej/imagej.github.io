@@ -1,4 +1,9 @@
-<div class="menu">
+{%- if include.dockable -%}
+<div id="main-menu" class="menu dockable">
+<div class="drag-handle"></div>
+{%- else -%}
+<div id="main-menu" class="menu">
+{%- endif -%}
 <h3>ImageJ Documentation</h3>
 <ul>
 {%- include menu-section title="About" link="/about" -%}
