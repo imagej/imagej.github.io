@@ -1742,13 +1742,13 @@ User:A._Karperien :: users/A._Karperien
 User:Abastien :: users/alexandrebastien
 User:Acsenrafilho :: users/Acsenrafilho
 User:Aicjanelia :: users/aicjanelia
-User:Aida01 :: users/Aida01
+User:Aida01 :: <DELETED> (spam)
 User:Alanb :: users/lannybroo
 User:Albertcardona :: users/acardona
 User:Alecneevel :: users/aneevel
 User:Alessandrofelder :: users/alessandrofelder
 User:Alex-krull :: users/alex-krull
-User:Alvinpark :: users/Alvinpark
+User:Alvinpark :: <DELETED> (spam)
 User:Amacall :: users/Amacall
 User:Amccall :: users/andmccall
 User:Angiogenesis :: users/Angiogenesis
@@ -1790,12 +1790,12 @@ User:DS4H :: plugins/ds4h-image-alignment
 User:Damienrj :: users/Damienrj
 User:Daniel_E._Maidana :: users/DanielMaidana
 User:Davidhoerl :: users/hoerldavid
-User:Dcolam :: users/Dcolam
-User:Demis :: users/Demis
+User:Dcolam :: users/dcolam
+User:Demis :: users/demisjohn
 User:DiameterJ :: users/DiameterJ
 User:Dietzc :: users/dietzc
 User:Dimiterpp :: users/dprodanov
-User:Divoticom :: users/Divoticom
+User:Divoticom :: <DELETED> (spam)
 User:Dobensl :: users/Dobensl
 User:Dukechem :: users/Dukechem
 User:Dupuy :: users/Dupuy
@@ -1843,8 +1843,8 @@ User:Ilan :: users/Ilan
 User:ImageScience :: users/emeijering
 User:ImagingBook :: users/imagingbook
 User:Ivos :: users/Ivos
-User:Jackspraw :: users/Jackspraw
-User:JamesSears :: users/JamesSears
+User:Jackspraw :: <DELETED> (spam)
+User:JamesSears :: users/JamesCSears
 User:Jana :: users/Jana
 User:Janmartens :: users/m4dguy
 User:Java-8 :: users/Java-8
@@ -1853,7 +1853,7 @@ User:JeanYvesTinevez :: users/tinevez
 User:Jefferis :: users/jefferis
 User:Jejmule :: users/jejmule
 User:Jenkins :: users/Jenkins
-User:Jiminimor89 :: users/Jiminimor89
+User:Jiminimor89 :: <DELETED> (spam)
 User:Jmburel :: users/jburel
 User:Joe_Napoli :: users/Joe_Napoli
 User:Joshmoore :: users/joshmoore
@@ -1920,7 +1920,7 @@ User:Oxford_Oncology :: users/Oxford_Oncology
 User:Pablovm1990 :: users/Pablo1990
 User:Pam66 :: users/Pam66
 User:Panovr :: users/panovr
-User:Pattersg :: users/Pattersg
+User:Pattersg :: users/pattersg
 User:Pbainar :: users/PetrBainar
 User:Pedgomgal1 :: users/Pedgomgal1
 User:PhotonImaging :: plugins/photon-imaging
@@ -1953,7 +1953,7 @@ User:Sjwest :: users/Sjwest
 User:Skalarproduktraum :: users/skalarproduktraum
 User:Snownontrace :: users/Snownontrace
 User:Sorzano :: users/Sorzano
-User:Spam :: users/Spam
+User:Spam :: <DELETED> (spam)
 User:SpheroideJ :: users/SpheroideJ
 User:Stelfrich :: users/stelfrich
 User:StephanJanosch :: users/StephanJanosch
@@ -1963,12 +1963,12 @@ User:StuartLab/Apply_Generic_LUT :: users/StuartLab_Apply_Generic_LUT
 User:StuartLab/DPI_Dialog :: users/StuartLab_DPI_Dialog
 User:StuartLab/Render_OS-SIM_Optical_Sections :: users/StuartLab_Render_OS-SIM_Optical_Sections
 User:Stuyvenberg :: users/stuyvenberg
-User:Superhair000 :: users/Superhair000
-User:Sweeneyian :: users/Sweeneyian
+User:Superhair000 :: <DELETED> (spam)
+User:Sweeneyian :: users/sweeneyian
 User:TUNEL_Cell_Counter :: users/TUNEL_Cell_Counter
 User:Tango :: users/Tango
 User:Tboudier :: users/mcib3d
-User:Theappideas :: users/Theappideas
+User:Theappideas :: <DELETED> (spam)
 User:Tiago :: users/tferr
 User:Tibuch :: users/tibuch
 User:Tomancak :: users/tomancak
@@ -1976,7 +1976,7 @@ User:Trackers :: users/kapoorlab
 User:Tupper :: users/btupper
 User:Turek :: users/Turek
 User:Twagner :: users/thorstenwagner
-User:Ulman :: users/Ulman
+User:Ulman :: users/xulman
 User:UniBas-IMCF :: users/UniBas-IMCF
 User:VIB :: users/VIB
 User:VarunKapoor :: users/kapoorlab
