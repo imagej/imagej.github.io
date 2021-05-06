@@ -15,15 +15,15 @@ We are grateful to Jan Brocher and Masanari Takamiya for comments and bug report
 -   Major rewrite of the core track model to achieve a far better performance when manually editing a very large datasets. You can now interactively edit large datasets without the GUI becoming too sluggish.
 -   You can now preview the detection parameters on the current frame before applying it to the whole data:
 
-![](/media/plugins/trackmate v2.1.0 PreviewDetection.png "TrackMate_v2.1.0_PreviewDetection.png")
+![](/media/trackmate v2.1.0 PreviewDetection.png "TrackMate_v2.1.0_PreviewDetection.png")
 
 -   The detection step is now interruptible in the GUI. A click on the cancel button will gracefully interrupt the detection process, and yields the spots found so far. They can be used later on normally.
 
-![](/media/plugins/trackmate v2.1.0 InterruptDetection.png "TrackMate_v2.1.0_InterruptDetection.png")
+![](/media/trackmate v2.1.0 InterruptDetection.png "TrackMate_v2.1.0_InterruptDetection.png")
 
 -   The HyperStack viewer and editor has now a configuration panel that has a log window and some tools for manual annotation:
 
-![](/media/plugins/trackmate v2.1.0 TrackMateTools.png "TrackMate_v2.1.0_TrackMateTools.png")
+![](/media/trackmate v2.1.0 TrackMateTools.png "TrackMate_v2.1.0_TrackMateTools.png")
 
 -   Semi-automatic tracking: Select one (or more) spot, TrackMate will find its most likely successors:
 

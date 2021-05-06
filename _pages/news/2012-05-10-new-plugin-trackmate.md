@@ -16,6 +16,6 @@ Hope you like it!
 
 *Jean-Yves, Nick, Johannes, Ricardo & Spencer*
 
-<figure><img src="/media/plugins/trackmate Split Merge Gapclosing.gif" title="TrackMate_Split_Merge_Gapclosing.gif" width="300" alt="TrackMate_Split_Merge_Gapclosing.gif" /><figcaption aria-hidden="true">TrackMate_Split_Merge_Gapclosing.gif</figcaption></figure>
+<figure><img src="/media/trackmate Split Merge Gapclosing.gif" title="TrackMate_Split_Merge_Gapclosing.gif" width="300" alt="TrackMate_Split_Merge_Gapclosing.gif" /><figcaption aria-hidden="true">TrackMate_Split_Merge_Gapclosing.gif</figcaption></figure>
 
 

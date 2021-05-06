@@ -21,7 +21,7 @@ Many segmentation algorithms have been implemented in Fiji to perform image segm
 
 Recently, a new class of segmentation algorithms has been emerging: segmentation by example. These algorithms require a set of examples from which a model is calculated which can be applied to other -- similar-looking -- images.
 
-{% include thumbnail src='/media/plugins/trakem2-display-s.jpg' title='Segmented neural tissue, painfully done by hand. See the [Public data sets](/plugins/public-data-sets)'%}
+{% include thumbnail src='/media/trakem2-display-s.jpg' title='Segmented neural tissue, painfully done by hand. See the [Public data sets](/plugins/public-data-sets)'%}
 
 We will consider applications for implementations that are either as generic as possible (i.e. they apply to any images), or that try to solve a very specific problem (such as segmenting neurons in serial sections imaged with electron microscopy, or with confocal imaging.)
 

@@ -34,7 +34,7 @@ There are tiny differences with the previous version, notably in the way cost th
 
 A new action, called *Branch hierarchy analysis* features a branch-based analysis of tracks. The output is an ImageJ results table that contains for each branch the number of predecessors, the number of successors and its duration. The results table is clickable and will set the selection to be the clicked branch.
 
-<img src="/media/plugins/trackmateBranchAnalysis.png" width="600"/>
+<img src="/media/trackmateBranchAnalysis.png" width="600"/>
 
 <references/>
 

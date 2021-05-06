@@ -193,7 +193,7 @@ It was written to add track descriptor that would help characterize the track mo
 
 Please note that the feature values listed in this paragraph are only properly defined bor **linear tracks**, that is tracks with no fusion nor split events.
 
-![](/media/plugins/trackmate track features.png "TrackMate_track_features.png")
+![](/media/trackmate track features.png "TrackMate_track_features.png")
 
 #### Total distance traveled.
 
@@ -412,7 +412,7 @@ Each track initiated from a pair of spots is used to create an instance of a Kal
 
 Then, all the predicted positions are linked against the actual spot positions in the frame, using again the Jaqaman LAP framework, with the square distance as costs. The user can set how far can be an actual position from a predicted position for linking with the <b>Search radius</b> setting.
 
-<figure><img src="/media/plugins/trackmate KalmanTrackerPrinciple.png" title="TrackMate_KalmanTrackerPrinciple.png" width="600" alt="TrackMate_KalmanTrackerPrinciple.png" /><figcaption aria-hidden="true">TrackMate_KalmanTrackerPrinciple.png</figcaption></figure>
+<figure><img src="/media/trackmate KalmanTrackerPrinciple.png" title="TrackMate_KalmanTrackerPrinciple.png" width="600" alt="TrackMate_KalmanTrackerPrinciple.png" /><figcaption aria-hidden="true">TrackMate_KalmanTrackerPrinciple.png</figcaption></figure>
 
 Now of course, after linking, some Kalman filters might not get linked to a found spot. This event is called an occlusion: the predicted position did not correspond to an actual measurement (spot). The good thing with Kalman filters is that they are fine with this, and are still able to make a prediction for the next frame even with a missing detection. If the number of successive occlusions is too large, the track is considered terminated. The user can set the maximal number of successive occlusions allowed before a track is terminated with the <b>Max frame gap</b> setting.
 

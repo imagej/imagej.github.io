@@ -196,7 +196,7 @@ The whole code for the analyzer can be found {% include github org='fiji' repo='
 
 Et ca marche !
 
-<figure><img src="/media/plugins/trackmate TrackAnalyzerExample.png" title="TrackMate_TrackAnalyzerExample.png" width="600" alt="TrackMate_TrackAnalyzerExample.png" /><figcaption aria-hidden="true">TrackMate_TrackAnalyzerExample.png</figcaption></figure>
+<figure><img src="/media/trackmate TrackAnalyzerExample.png" title="TrackMate_TrackAnalyzerExample.png" width="600" alt="TrackMate_TrackAnalyzerExample.png" /><figcaption aria-hidden="true">TrackMate_TrackAnalyzerExample.png</figcaption></figure>
 
 In the next article we will build a spot analyzer and complicate things a bit, by introducing the notion of *priority*. But before this, a short word on how to disable a module.
 
