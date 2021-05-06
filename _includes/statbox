@@ -224,9 +224,9 @@ refreshComponent();
 
 {%- comment -%} ========== HEADER + GENERAL INFO ==========  {%- endcomment -%}
 {%- if show-statbox -%}
-<div id="statbox" class="dockable">
-<div class="drag-handle"></div>
+<div id="statbox" class="dockable" style="position: relative;">
 <h3>Vital statistics</h3>
+<div class="drag-handle"></div>
 <table>
 {%- include statbox-row id="statbox-header" value=header -%}
 

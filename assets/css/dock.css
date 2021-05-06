@@ -4,6 +4,10 @@
     position: absolute;
     width: 0;
     height: 0;
+    top: 0;
+    left: 0;
+    margin-left: 10px;
+    margin-top: 5px;
     border-right: 10px solid transparent;
     border-top: 10px solid black;
     cursor: move;
