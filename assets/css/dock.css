@@ -13,6 +13,19 @@
     cursor: move;
 }
 
+.btn-refresh {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: auto;
+    margin-right: 10px;
+    margin-top: 5px;
+    padding: 0.25em 0.25em;
+    line-height: 0!important;
+    text-indent: 0!important;
+    letter-spacing: 0!important;
+}
+
 .dock-overlay {
   opacity: 0.2;
   display: none;

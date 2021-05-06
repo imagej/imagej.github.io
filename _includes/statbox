@@ -227,6 +227,7 @@ refreshComponent();
 <div id="statbox" class="dockable" style="position: relative;">
 <h3>Vital statistics</h3>
 <div class="drag-handle"></div>
+<button class="btn-refresh" onclick="refreshComponent()"><i class="fa fa-sync" style="pointer-events: none;"></i></button>
 <table>
 {%- include statbox-row id="statbox-header" value=header -%}
 
