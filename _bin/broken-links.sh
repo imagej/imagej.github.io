@@ -26,7 +26,7 @@ allowed() {
   return 1
 }
 
-grep -IRo 'href="\/[^"]*' "$root" | sed 's/:href="/:/' | while read line
+grep -IRo '\(href\|src\)="\/[^"]*' "$root" | sed 's/:\(href\|src\)="/:/' | while read line
 do
   file=${line%%:*}
   file=${file##*/_site/}
