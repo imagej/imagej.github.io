@@ -2,7 +2,7 @@
 # This is a Sass file. Jekyll will compile it to plain CSS.
 ---
 
-$logoSize: 36px;
+$logoSize: 52px;
 $topBarHeight: $logoSize;
 $shadowSize: 4px;
 
@@ -120,10 +120,6 @@ $hamMenuEdge: 20px;
   height: $topBarHeight;
 }
 
-#search-box input {
-  height: $logoSize - 2*$searchBarPadding - 1;
-}
-
 #pagination {
   margin: 1rem auto;
   text-align: center;
@@ -146,8 +142,8 @@ $hamMenuEdge: 20px;
 #ham-toggle {
   display: block;
   position: absolute;
-  top: 8px;
-  left: 6px;
+  top: 16px;
+  left: 14px;
 
   z-index: 1;
 
