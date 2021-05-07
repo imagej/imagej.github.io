@@ -2,7 +2,7 @@
 # This is a Sass file. Jekyll will compile it to plain CSS.
 ---
 
-$logoSize: 52px;
+$logoSize: 48px;
 $topBarHeight: $logoSize;
 $shadowSize: 4px;
 
@@ -11,9 +11,6 @@ $hitTitleWidth: 200px;
 $hitIconSize: 36px;
 $hitPadding: 5px;
 
-$hamPadY: 3px;
-$hamPadX: 5px;
-$hamThickness: 3px;
 $hamMenuWidth: 250px;
 $hamMenuEdge: 20px;
 
@@ -142,8 +139,8 @@ $hamMenuEdge: 20px;
 #ham-toggle {
   display: block;
   position: absolute;
-  top: 16px;
-  left: 14px;
+  top: 14px;
+  left: 12px;
 
   z-index: 1;
 
@@ -165,10 +162,10 @@ $hamMenuEdge: 20px;
 
 #ham-toggle input {
   display: block;
-  width: 40px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   position: absolute;
-  top: -7px;
+  top: -5px;
   left: -5px;
 
   cursor: pointer;

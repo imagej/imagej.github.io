@@ -21,7 +21,6 @@ section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -104,10 +103,9 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 body, input, select, textarea {
   color: #000000;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
-  font-size: 16pt;
+  font-size: 90%;
   font-weight: 300;
-  line-height: 1.65em;
-
+  line-height: 1.5em;
 }
 
 a {
@@ -1881,7 +1879,7 @@ button:disabled,
 
 #header p {
   margin: 4em 0 0 0;
-  font-size: 14pt;
+  font-size: 1.3em;
   font-weight: 500;
 }
 
@@ -2113,12 +2111,6 @@ body.is-preload #header:after {
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-/* Basic */
-
-body, input, select, textarea {
-  font-size: 11pt;
 }
 
 /* List */
