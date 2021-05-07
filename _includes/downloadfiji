@@ -9,9 +9,9 @@
 <tr>
 <td style="text-align: center; vertical-align: top; width: 128px"> <a href="https://downloads.imagej.net/fiji/latest/fiji-win64.zip" rel="nofollow"><img alt="Windows (64-bit)" src="/images/logos/Win.png" width="129" height="128"></a><br><a rel="nofollow" class="external text" href="https://downloads.imagej.net/fiji/latest/fiji-win64.zip"><b>64-bit</b></a>
 </td>
-<td style="text-align: center; vertical-align: top; width: 128px"> <a href="https://downloads.imagej.net/fiji/latest/fiji-macosx.zip" rel="nofollow"><img alt="macOS" src="images/logos/Osx.png" width="105" height="128"></a><br><a rel="nofollow" class="external text" href="https://downloads.imagej.net/fiji/latest/fiji-macosx.zip"><b>macOS</b></a>
+<td style="text-align: center; vertical-align: top; width: 128px"> <a href="https://downloads.imagej.net/fiji/latest/fiji-macosx.zip" rel="nofollow"><img alt="macOS" src="/images/logos/Osx.png" width="105" height="128"></a><br><a rel="nofollow" class="external text" href="https://downloads.imagej.net/fiji/latest/fiji-macosx.zip"><b>macOS</b></a>
 </td>
-<td style="text-align: center; vertical-align: top; width: 128px"> <a href="https://downloads.imagej.net/fiji/latest/fiji-linux64.zip" rel="nofollow"><img alt="Linux (64-bit)" src="images/logos/Tux.svg" width="128" height="128"></a><br><a rel="nofollow" class="external text" href="https://downloads.imagej.net/fiji/latest/fiji-linux64.zip"><b>64-bit</b></a>
+<td style="text-align: center; vertical-align: top; width: 128px"> <a href="https://downloads.imagej.net/fiji/latest/fiji-linux64.zip" rel="nofollow"><img alt="Linux (64-bit)" src="/images/logos/Tux.svg" width="128" height="128"></a><br><a rel="nofollow" class="external text" href="https://downloads.imagej.net/fiji/latest/fiji-linux64.zip"><b>64-bit</b></a>
 </td>
 </tr>
 <tr>
@@ -19,11 +19,11 @@
 </th>
 </tr>
 <tr>
-<td style="text-align: center"> <a href="https://downloads.imagej.net/fiji/latest/fiji-win32.zip" rel="nofollow"><img alt="Windows (32-bit)" src="images/logos/Win.png" width="24" height="24"></a> <a rel="nofollow" class="external text" href="https://downloads.imagej.net/fiji/latest/fiji-win32.zip">32-bit</a>
+<td style="text-align: center"> <a href="https://downloads.imagej.net/fiji/latest/fiji-win32.zip" rel="nofollow"><img alt="Windows (32-bit)" src="/images/logos/Win.png" width="24" height="24"></a> <a rel="nofollow" class="external text" href="https://downloads.imagej.net/fiji/latest/fiji-win32.zip">32-bit</a>
 </td>
-<td style="text-align: center">  <a href="https://downloads.imagej.net/fiji/latest/fiji-nojre.zip" rel="nofollow"><img alt="All platforms (no JRE)" src="images/logos/Fiji-icon.png" width="24" height="24"></a> <a rel="nofollow" class="external text" href="https://downloads.imagej.net/fiji/latest/fiji-nojre.zip">No JRE</a>
+<td style="text-align: center">  <a href="https://downloads.imagej.net/fiji/latest/fiji-nojre.zip" rel="nofollow"><img alt="All platforms (no JRE)" src="/images/logos/Fiji-icon.png" width="24" height="24"></a> <a rel="nofollow" class="external text" href="https://downloads.imagej.net/fiji/latest/fiji-nojre.zip">No JRE</a>
 </td>
-<td style="text-align: center">  <a href="https://downloads.imagej.net/fiji/latest/fiji-linux32.zip" rel="nofollow"><img alt="Linux (32-bit)" src="images/logos/Tux.svg" width="24" height="24"></a> <a rel="nofollow" class="external text" href="https://downloads.imagej.net/fiji/latest/fiji-linux32.zip">32-bit</a>
+<td style="text-align: center">  <a href="https://downloads.imagej.net/fiji/latest/fiji-linux32.zip" rel="nofollow"><img alt="Linux (32-bit)" src="/images/logos/Tux.svg" width="24" height="24"></a> <a rel="nofollow" class="external text" href="https://downloads.imagej.net/fiji/latest/fiji-linux32.zip">32-bit</a>
 </td></tr></tbody>
 </table>
 </div>
