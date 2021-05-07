@@ -95,7 +95,7 @@ $sidebarShadowSize: 4px;
 }
 
 
-$leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding;
+$leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding - 10px;
 
 #left-column .menu details > summary:after {
   left: $leftColumnArrowOffset;
@@ -106,7 +106,7 @@ $leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding;
 }
 
 #right-column .menu details > summary:after {
-  right: $sidebarMargin + $sidebarPadding;
+  right: $sidebarMargin;
 }
 
 #right-column .menu details[open] > summary:after {
