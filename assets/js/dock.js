@@ -74,10 +74,13 @@ function dockMouseUp(e) {
 
 function dockDragStart(e) {
   draggedElement = e.target;
-  overlays.forEach(function(overlay) {
-    overlay.style.display = 'block';
-    overlay.classList.add('drag-active');
-  });
+  /* NB: Work around bug in Chrome; see https://stackoverflow.com/a/20733870. */
+  setTimeout(function() {
+    overlays.forEach(function(overlay) {
+      overlay.style.display = 'block';
+      overlay.classList.add('drag-active');
+    });
+  }, 10);
 }
 
 function dockDragEnd(e) {
