@@ -1,4 +1,4 @@
-/* Plugin grid */
+/* Plugin index */
 
 .plugin-index {
     font-weight: 500;
@@ -22,7 +22,7 @@
 
 .plugin-index table td a {
     vertical-align: middle;
-    padding: 0 0 0 0;
+    padding-bottom: 1.2em;
 }
 
 .plugin-index table tbody tr {
