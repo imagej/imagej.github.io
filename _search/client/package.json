@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "start": "parcel index.html --port 3000",
     "build": "parcel build index.html",
     "lint": "eslint .",
@@ -20,5 +21,8 @@
   },
   "dependencies": {
     "typesense-instantsearch-adapter": "^1.1.1"
+  },
+  "resolutions": {
+    "node-forge": "0.10.0"
   }
 }
