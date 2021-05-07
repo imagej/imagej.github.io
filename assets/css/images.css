@@ -1,176 +1,176 @@
 .image {
-	border-radius: 4px;
-	border: 0;
-	display: inline-block;
-	position: relative;
+  border-radius: 4px;
+  border: 0;
+  display: inline-block;
+  position: relative;
 }
 
 .image img {
-	border-radius: 4px;
-	display: block;
+  border-radius: 4px;
+  display: block;
 }
 
 .image-table {
-	display: inline-block;
-	margin: 0 0 0 0;
-	vertical-align: middle;
+  display: inline-block;
+  margin: 0 0 0 0;
+  vertical-align: middle;
 }
 
 .image-left {
-	float: left;
-	padding: 0 0.5em 0.5em 0;
-	top: 0.25em;
+  float: left;
+  padding: 0 0.5em 0.5em 0;
+  top: 0.25em;
 }
 
 .image-right {
-	float: right;
-	padding: 0 0 0.5em 0.5em;
-	top: 0.25em;
+  float: right;
+  padding: 0 0 0.5em 0.5em;
+  top: 0.25em;
 }
 
 .image-center {
-	margin: 0 auto;
-	display: block;
+  margin: 0 auto;
+  display: block;
 }
 
 .grey-border {
-	border: 1px solid#AAAAAA;
+  border: 1px solid#AAAAAA;
 }
 
 .image-left, .image-right {
-	max-width: 50%;
+  max-width: 50%;
 }
 
 .image-left img, .image-right img {
-	width: 100%;
+  width: 100%;
 }
 
 .image-fit {
-	display: block;
-	margin: 0 0 2em 0;
-	width: 100%;
+  display: block;
+  margin: 0 0 2em 0;
+  width: 100%;
 }
 
 .image-fit img {
-	width: 100%;
+  width: 100%;
 }
 
 .image-header {
-	display: block;
-	margin: auto;
-	width: 25%;
+  display: block;
+  margin: auto;
+  width: 25%;
 }
 
 .image-gallery {
-	display: block;
-	margin: 0 auto;
-	padding: 0.25em;
+  display: block;
+  margin: 0 auto;
+  padding: 0.25em;
 }
 
 .gallery {
-	margin: 2px;
-	padding: 2px;
-	display: block;
+  margin: 2px;
+  padding: 2px;
+  display: block;
 }
 
 .gallery a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .gallery-item {
-	margin: 20.5px auto;
+  margin: 20.5px auto;
 }
 
 .gallery-text {
-	overflow: hidden;
-	font-size: 94%;
-	padding: 2px 4px;
-	word-wrap: break-word;
+  overflow: hidden;
+  font-size: 94%;
+  padding: 2px 4px;
+  word-wrap: break-word;
 }
 
 .gallery-box {
-	text-align: center;
-	border: 1px solid #ccc;
-	background-color: #f9f9f9;
-	margin: 2px;
+  text-align: center;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  margin: 2px;
 
 }
 
 .gallery-frame {
-	vertical-align: top;
-	display: inline-block;
-	margin-bottom: 0.375em;
-	margin-top: 0.375em;
+  vertical-align: top;
+  display: inline-block;
+  margin-bottom: 0.375em;
+  margin-top: 0.375em;
 }
 
 .gallery-block {
-	margin: 2px;
-	padding: 2px;
-	display: block;
+  margin: 2px;
+  padding: 2px;
+  display: block;
 }
 
 .figure.left {
-	max-width: 50%;
-	float: left;
-	text-align: center;
-	font-size: medium;
-	text-indent: 0;
-	border: thin silver solid;
-	margin: 0.5em;
-	padding: 0.5em;
-	background-color: #f9f9f9;
+  max-width: 50%;
+  float: left;
+  text-align: center;
+  font-size: medium;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color: #f9f9f9;
 }
 
 .figure.right {
-	max-width: 50%;
-	float: right;
-	text-align: center;
-	font-size: medium;
-	text-indent: 0;
-	border: thin silver solid;
-	margin: 0.5em;
-	padding: 0.5em;
-	background-color: #f9f9f9;
+  max-width: 50%;
+  float: right;
+  text-align: center;
+  font-size: medium;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color: #f9f9f9;
 }
 
 .figure.center {
-	display: block;
-	width: 35%;
-	text-align: center;
-	font-size: medium;
-	text-indent: 0;
-	border: thin silver solid;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0.5em;
-	background-color: #f9f9f9;
+  display: block;
+  width: 35%;
+  text-align: center;
+  font-size: medium;
+  text-indent: 0;
+  border: thin silver solid;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5em;
+  background-color: #f9f9f9;
 }
 
 .figure.row {
-	display: block;
-	width: 100%;
-	text-align: center;
-	font-size: medium;
-	text-indent: 0;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0.5em;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: medium;
+  text-indent: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5em;
 }
 
 .figure table {
-	border-collapse: collapse;
-	border-spacing: 0;
-	width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
 }
 
 .figure table td {
-	width: 20%;
-	height: 20%;
-	padding: 0.5em 0.5em 0 0.5em;
+  width: 20%;
+  height: 20%;
+  padding: 0.5em 0.5em 0 0.5em;
 }
 
 .figure.center img, .figure.left img, .figure.right img {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 /* ------------------ */
