@@ -177,7 +177,7 @@
     {%- include menu-item title="Git submodules" link="/develop/git/submodules" -%}
     {%- include menu-item title="How to pinpoint regressions" link="/develop/git/pinpoint-regressions" -%}
     {%- include menu-item title="How to publish a git repository" link="/develop/git/publish-a-repository" -%}
-    {%- include menu-item title="How to extract a subproject" link="extract-a-subproject" -%}
+    {%- include menu-item title="How to extract a subproject" link="/develop/git/extract-a-subproject" -%}
   {%- include menu-section-end -%} <!-- Development/Git -->
 
   {%- include menu-section title="ImgLib2" link="/imglib2" -%}
