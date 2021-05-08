@@ -1,4 +1,4 @@
-<div id="conference" markdown="1">
+<div class="conference" markdown="1">
 
 # {{include.title}}
 

@@ -2,7 +2,7 @@
 {%- assign limit = include.limit | default: 3 -%}
 {%- if people.size > limit -%}
   {%- comment -%} Conceal the overflow beneath a details box. {%- endcomment -%}
-  <details id="person-list">
+  <details class="person-list">
   <summary>
     {%- for person in people limit:limit -%}
       {%- assign id = person | strip -%}

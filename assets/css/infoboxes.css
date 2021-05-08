@@ -158,7 +158,7 @@ div.miniboxcaption {
   margin: 0.5em -0.1em 0 0;
 }
 
-#info-box {
+.info-box {
   position: relative;
   float: right;
   width: 240px;

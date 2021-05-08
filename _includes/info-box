@@ -49,7 +49,7 @@
 {% endif %}
 {% endcapture %}
 
-<div id="wrap">
+<div class="note">
     <table class="table-info info-notice">
         <tbody>
             <tr>

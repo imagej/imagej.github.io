@@ -1,8 +1,8 @@
 {%- if include.dockable -%}
-<div id="main-menu" class="menu dockable">
+<div class="menu dockable">
 <div class="drag-handle"></div>
 {%- else -%}
-<div id="main-menu" class="menu">
+<div class="menu">
 {%- endif -%}
 <h3>ImageJ Documentation</h3>
 <ul>
