@@ -200,7 +200,7 @@ Thanks to Travis, the extension we are aware of are built automatically and can 
         <p><a href="/plugins/trackmate/find-maxima-detector">Find maxima (Trackmate module)</a></p>
       </td>
       <td>
-        <p>This plugin implements the find maxima detection algorithm for TrackMateas in the <i>Process -&gt; Find Maxima...</i> command. The results are almost the same. Subpixel accuracy is activated by default.</p>
+        <p>This plugin implements the find maxima detection algorithm for TrackMateas in the {% include bc path="Process | Find Maxima..." %} command. The results are almost the same. Subpixel accuracy is activated by default.</p>
       </td>
       <td>
         <p>Thorsten Wagner</p>

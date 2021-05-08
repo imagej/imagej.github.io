@@ -22,7 +22,7 @@ Multi-Image Landmark Correspondences is a plugin that extends mpicbg's [Landmark
 
 ## Usage
 
-To run the plugin, run the command "Plugins &gt; Transform &gt; Multi-Image Landmark Correspondences". A dialog will pop up with the following options:
+To run the plugin, run the command {% include bc path="Plugins | Transform | Multi-Image Landmark Correspondences" %}. A dialog will pop up with the following options:
 
 -   Interpolation Type: What type of interpolation to use when transforming.
 -   Suppress interpolation at discontinuities: If interpolation is enabled, this parameter will appear. Enabling this option will disable interpolation at points on the image where there are discontinuities, but will still allow interpolation to happen elsewhere. It is useful when dealing with phase images, because discontinuities need to be sharp if an unwrapping algorithm is to be used.

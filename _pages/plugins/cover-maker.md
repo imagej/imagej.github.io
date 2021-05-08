@@ -73,7 +73,7 @@ Finally, for printing poster size images, the plugin will generate in the second
     </tr>
     <tr class="even">
       <td>
-        <p>Now we launch the CoverMaker python script by going to Plugins -&gt; Examples -&gt; CoverMaker -&gt; Cover Maker. (Or typing 'l' and searching with keyword 'cover').</p>
+        <p>Now we launch the CoverMaker python script by going to {% include bc path="Plugins | Examples | CoverMaker | Cover Maker" %}. (Or typing {% include key key="L" %} and searching with keyword `cover`).</p>
         <p>A basic dialog box will appear prompting us to select the image database by clicking on <strong>Browse</strong> and locating in the file system the <a href="#Databases">tif file</a> containing down-sampled images. The tif file is called 12_9.tif indicating that the images have been scaled to the 12x9 pixel dimension. This is the default tile size. If you use a different database with different aspect ratio please change the default <strong>tile width and height</strong> in the dialog box.</p>
         <p>Next <strong>click ok</strong> and the reconstruction will start. As a first step the template image will be cropped to the size that is multiple of the tile width and height (not shown, see <a href="#future-work">Future work</a> for comment on the cropping issue.</p>
         <p>Below we monitor the progress of building the cover</p>
@@ -131,7 +131,7 @@ When we zoom in on the final output image that was generated in this case at 300
 
 ## Prepare CoverMaker Database
 
-In many ways preparing the image databases is a trickier business than actually performing the reconstruction. The aim of the **Prepare\_CoverMaker\_Database.py** script (Plugins -&gt; Examples -&gt; Cover Maker -&gt; Prepare Cover Maker Database) is to explore your local filesystem for RGB images that could be used to build a database. As many things can go wrong in the process, it should be considered experimental.
+In many ways preparing the image databases is a trickier business than actually performing the reconstruction. The aim of the `Prepare_CoverMaker_Database.py` script ({% include bc path="Plugins | Examples | Cover Maker | Prepare Cover Maker Database" %}) is to explore your local filesystem for RGB images that could be used to build a database. As many things can go wrong in the process, it should be considered experimental.
 
 ### Input/Search/Output
 

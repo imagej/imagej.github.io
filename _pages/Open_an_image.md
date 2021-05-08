@@ -14,7 +14,7 @@ The answer to this question depends on how you use ImageJ.
 
 ## From the GUI
 
-In the menu select "File &gt; Open ..." or "File &gt; Import &gt; ...".
+In the menu select {% include bc path="File | Open..." %} or {% include bc path="File | Import | ..." %}.
 
 ## From a Script
 

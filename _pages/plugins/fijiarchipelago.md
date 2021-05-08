@@ -18,7 +18,7 @@ Client nodes either may be started by the root node, or else the root node may b
 ## Requirements
 
 -   Root and client nodes should all have the same version of Fiji installed.
--   Fiji Archipelago makes use of ssh and ssh key pair authentication, so the server must have a private key file that matches a public key in authorized\_hosts on the client.
+-   Fiji Archipelago makes use of ssh and ssh key pair authentication, so the server must have a private key file that matches a public key in `authorized_hosts` on the client.
 -   Server and clients must have access to a shared network file server if file transfer is required.
 
 So far, this has been extensively tested only on Linux machines, but it should be platform-independent.
@@ -45,13 +45,13 @@ This plugin allows clusterized least-squares and elastic alignment in TrakEM2. R
 
 This plugin accelerates image classification with the [ Trainable Weka Segmentation](/plugins/tws) plugin. To use it, create a classifier and save it (ie, a .model file).
 
-Run the batch segmentation plugin by selecting Plugins -&gt; Batch -&gt; Weka Segmentation 2D
+Run the batch segmentation plugin by selecting {% include bc path="Plugins | Batch | Weka Segmentation 2D" %}.
 
 This plugin is designed for two-dimensional serial sections.
 
 ### Starting a Cluster
 
--   From the ImageJ window, select Plugins-&gt;Cluster-&gt;Start Cluster...
+-   From the ImageJ window, select {% include bc path="Plugins|Cluster|Start Cluster..." %}
 
 The Cluster user interface will open. The cluster must be configured before it may be started.
 
@@ -118,19 +118,19 @@ On the root node, once the cluster is started, click the Start Insecure Server b
 On the client node:
 
 -   Start Fiji
--   From the ImageJ window, select Plugins-&gt;Cluster-&gt;Attach to Cluster...
+-   From the ImageJ window, select {% include bc path="Plugins|Cluster|Attach to Cluster..." %}
 -   Enter the hostname and port for your root node
 -   Click OK
 
 or
 
--   Run ./fiji --full-classpath --main-class edu.utexas.clm.archipelago.Fiji\_Archipelago root.node.hostname port
+-   Run `./fiji --full-classpath --main-class edu.utexas.clm.archipelago.Fiji_Archipelago root.node.hostname port`
 
 The default port is 4012.
 
 #### Configuration on a Proprietary Cluster
 
-Archipelago may be run on a proprietary cluster, for instance one running SLURM or qsub, by scripting the creation of an .arc configuration file and passing it as an argument to the Fiji or ImageJ executable. An {% include github org='larrylindsey' repo='Stampede-Fiji-Archipelago' path='job.fiji\#L126' label='example' %} showing how this is done on the vnc queue of the TACC stampede cluster is available.
+Archipelago may be run on a proprietary cluster, for instance one running SLURM or qsub, by scripting the creation of an .arc configuration file and passing it as an argument to the Fiji or ImageJ executable. An {% include github org='larrylindsey' repo='Stampede-Fiji-Archipelago' path='job.fiji#L126' label='example' %} showing how this is done on the vnc queue of the TACC stampede cluster is available.
 
 #### Saving
 
@@ -174,6 +174,6 @@ To make this work, submissions to a Cluster are serialized and transmitted to a 
 
 While many Clusters may exist on a single root node, only one is "official." This instance is referenced by Cluster.getCluster(). Cluster.activeCluster() indicates whether there is existing active Cluster.
 
-An example may be found in {% include github repo='fiji' path='src-plugins/Fiji\_Archipelago/src/main/java/edu/utexas/clm/archipelago/example/Cluster\_SIFT.java' label='Cluster\_SIFT' %}. An example that demonstrates the breakage of deep equality may be found in {% include github repo='fiji' path='src-plugins/Fiji\_Archipelago/src/main/java/edu/utexas/clm/archipelago/example/Equality\_Example.java' label='Equality\_Example' %}
+An example may be found in {% include github repo='fiji' path='src-plugins/Fiji_Archipelago/src/main/java/edu/utexas/clm/archipelago/example/Cluster_SIFT.java' label='Cluster_SIFT' %}. An example that demonstrates the breakage of deep equality may be found in {% include github repo='fiji' path='src-plugins/Fiji_Archipelago/src/main/java/edu/utexas/clm/archipelago/example/Equality_Example.java' label='Equality_Example' %}
 
  

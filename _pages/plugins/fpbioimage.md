@@ -30,13 +30,13 @@ If you want to install FPBioimage manually, copy the [.jar release](https://gith
 
 FPBioimage Helper will appear under the **Plugins** menu of ImageJ. Open an image stack, then click it to run the plugin!
 
-Note that, to ensure color appears correctly in the web app, images must be of type RGB. You can change the type of your image by selecting from the menus: Image &gt; Type &gt; RGB Color.
+Note that, to ensure color appears correctly in the web app, images must be of type RGB. You can change the type of your image by selecting from the menus: {% include bc path="Image | Type | RGB Color" %}.
 
-FPBioimage Helper will set the XYZ voxel ratio from the image properties (Image &gt; Properties...), although you can overwrite this data in the plugin in case it is incorrect.
+FPBioimage Helper will set the XYZ voxel ratio from the image properties {% include bc path="Image | Properties..." %}, although you can overwrite this data in the plugin in case it is incorrect.
 
 ## One-click Macro
 
-Copy the following macro to the bottom of the Fiji/macros/StartupMacros.fiji.ijm file to add a macro button for one-click uploading to FPBioimage.
+Copy the following macro to the bottom of the `Fiji/macros/StartupMacros.fiji.ijm` file to add a macro button for one-click uploading to FPBioimage.
 
     macro "FPB Upload Action Tool - C111F00ffCeeeD21D24D71D81Dc1Dd1De1CfffL3137L393eL4161L4464D49D4bD4eD59D5bD5eD6aD6cD6dL9197D99D9bD9cDa1Da4Db1Db4DbbDc2Dc3DcaDccDdb" {
         rW = getWidth();

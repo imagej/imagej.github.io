@@ -22,7 +22,7 @@ The algorithm goes through each pair of points and looks for the shortest distan
 
 ## Use
 
-Call up the plugin using *Plugins-&gt;BIOP-&gt;Gabriel Graph...*.
+Call up the plugin using {% include bc path="Plugins|BIOP|Gabriel Graph..." %}.
 
 The plugin expects an open image with a multipoint selection.
 
@@ -36,20 +36,24 @@ If selected, it will overlay the Gabriel Graph onto the image.
 
 Making use of the GenericDialog class, the plugin is macro-recordable.
 
-    run("Gabriel Graph...", "results overlay parallel");
+```
+run("Gabriel Graph...", "results overlay parallel");
+```
 
 ## Running from a Plugin
 
 What you need to run this in a plugin is
 
-    import ch.epfl.biop.GabrielGraph;
+```
+import ch.epfl.biop.GabrielGraph;
+```
 
 And then call the static method
 
-    ResultsTable results = GabrielGraph.getGabrielGraph(final ImagePlus imp, final boolean is_show_overlay, final boolean is_parallel);
+```
+ResultsTable results = GabrielGraph.getGabrielGraph(final ImagePlus imp, final boolean is_show_overlay, final boolean is_parallel);
+```
 
 ## Notes
 
 It makes little sense not to use parallel processing, the only issue might be that the order of the points will be different on multiple runs, as this will depend on how Java will manage the threads.
-
-

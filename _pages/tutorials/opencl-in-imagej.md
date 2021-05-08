@@ -121,7 +121,7 @@ and downloading Eclipse for J2EE Developers from:
 
 and following the Eclipse installation steps.
 
-We added the SVN plugin to Eclipse by clicking on Help-&gt; Install New Software and adding the SVN adapter site:
+We added the SVN plugin to Eclipse by clicking on {% include bc path="Help|Install New Software" %} and adding the SVN adapter site:
 
     http://subclipse.tigris.org/update_1.6.x
 
@@ -147,7 +147,7 @@ For these samples, three native libraries are needed: gluegen-rt, jocl, and JOCL
 
 <figure><img src="/media/2011-opencl-01.png" title="2011-opencl-01.png" width="256" height="170" alt="2011-opencl-01.png" /><figcaption aria-hidden="true">2011-opencl-01.png</figcaption></figure>
 
-Then ensure that the platform specific jar is exported during the project build. For example notice that the JOCL-0-1.4-beta1.jar file is referenced in the project. (To see this menu right click the project and choose Properties -&gt; Java Build Path -&gt; Libraries.)
+Then ensure that the platform specific jar is exported during the project build. For example notice that the JOCL-0-1.4-beta1.jar file is referenced in the project. (To see this menu right click the project and choose {% include bc path="Properties | Java Build Path | Libraries" %}.)
 
 <figure><img src="/media/2011-opencl-00.png" title="2011-opencl-00.png" width="641" height="270" alt="2011-opencl-00.png" /><figcaption aria-hidden="true">2011-opencl-00.png</figcaption></figure>
 
@@ -280,50 +280,54 @@ There are a few properties that make the above partial implementation ideal for 
 
 Here is the partial implementation of Sobel filter in OpenCL:
 
-    __kernel void sobel( __global char* input, __global char* output, int width, int height)
-    {
-        int x = get_global_id(0);  //find the X id
-        int y = get_global_id(1);  //find the Y id
-        int p[9];  //allocate a local array used for intermediate values
-        int offset = y * width + x;  //determine the offset
-    if( x &lt; 1 || y &lt; 1 || x &gt; width - 2 || y &gt; height - 2 )  //is this an edge pixel?
-    {
-      output[offset] = 0; //This partial implementation does not calculate edge values
-    }
-    else
-    {
-        p[0] = input[offset - width - 1] &amp; 0xff;
-        p[1] = input[offset - width] &amp; 0xff;
-        p[2] = input[offset - width + 1] &amp; 0xff;
-        p[3] = input[offset - 1] &amp; 0xff;
-        p[4] = input[offset] &amp; 0xff;
-        p[5] = input[offset + 1] &amp; 0xff;
-        p[6] = input[offset + width - 1] &amp; 0xff;
-        p[7] = input[offset + width] &amp; 0xff;
-        p[8] = input[offset + width + 1] &amp; 0xff;
+```opencl
+__kernel void sobel( __global char* input, __global char* output, int width, int height)
+{
+    int x = get_global_id(0);  //find the X id
+    int y = get_global_id(1);  //find the Y id
+    int p[9];  //allocate a local array used for intermediate values
+    int offset = y * width + x;  //determine the offset
+if( x &lt; 1 || y &lt; 1 || x > width - 2 || y > height - 2 )  //is this an edge pixel?
+{
+  output[offset] = 0; //This partial implementation does not calculate edge values
+}
+else
+{
+    p[0] = input[offset - width - 1] &amp; 0xff;
+    p[1] = input[offset - width] &amp; 0xff;
+    p[2] = input[offset - width + 1] &amp; 0xff;
+    p[3] = input[offset - 1] &amp; 0xff;
+    p[4] = input[offset] &amp; 0xff;
+    p[5] = input[offset + 1] &amp; 0xff;
+    p[6] = input[offset + width - 1] &amp; 0xff;
+    p[7] = input[offset + width] &amp; 0xff;
+    p[8] = input[offset + width + 1] &amp; 0xff;
 
-        int sum1 = p[0] + 2*p[1] + p[2] - p[6] - 2*p[7] - p[8];
-        int sum2 = p[0] + 2*p[3] + p[6] - p[2] - 2*p[5] - p[8];
-        float sum3 = sum1*sum1 + sum2*sum2;
+    int sum1 = p[0] + 2*p[1] + p[2] - p[6] - 2*p[7] - p[8];
+    int sum2 = p[0] + 2*p[3] + p[6] - p[2] - 2*p[5] - p[8];
+    float sum3 = sum1*sum1 + sum2*sum2;
 
-        int sum = sqrt( sum3 );
-        if (sum &gt; 255) sum = 255;
-        output[offset] = (char) sum;  //write the result to the output array
-     }
-    };
+    int sum = sqrt( sum3 );
+    if (sum > 255) sum = 255;
+    output[offset] = (char) sum;  //write the result to the output array
+ }
+};
+```
 
 The above OpenCL kernel is almost identical to the Java implementation with the exception that an index is used to identify the per value offset (rather than looping through an array). This allows the computation to be spread over many cores and thus provide the potential for speed up.
 
 The following example demonstrates how an image is loaded using Imglib in preparation for GPU computation:
 
-    //Create an array container factory
-    ArrayContainerFactory arrayContainerFactory = new ArrayContainerFactory();
+```
+//Create an array container factory
+ArrayContainerFactory arrayContainerFactory = new ArrayContainerFactory();
 
-    //Set the backing type to NIO
-    arrayContainerFactory.setNIOUse(true);
+//Set the backing type to NIO
+arrayContainerFactory.setNIOUse(true);
 
-    //Create a image backed by an NIO typed array given an input file
-    Image inImg = LOCI.openLOCIFloatType( file.getPath(), arrayContainerFactory );
+//Create a image backed by an NIO typed array given an input file
+Image inImg = LOCI.openLOCIFloatType( file.getPath(), arrayContainerFactory );
+```
 
 `ArrayContainerFactory.setNIOUse(true)` ensures that NIO backed arrays are used. The reason for using NIO backed arrays rather than Java native arrays is due to optimal data sharing between Java and native code as well as for improved throughput between the host and device. Both CUDA and OpenCL benefit from the use of host arrays that are not paged to disk. This type of memory is referred to as paged-locked memory. Section 5.3.1 of "CUDA Programming Guide Version 3.0" has more specific information on this detail.
 

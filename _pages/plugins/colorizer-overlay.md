@@ -62,8 +62,8 @@ How to not do string overlays; there are more direct ways I discovered after bec
 
 ## Install
 
-Unzip [Colorizer\_Overlay.zip](/media/Colorizer_Overlay.zip) into ImageJ1 plugins (File&gt;Show Folder&gt;Plugins) or plugins/jars directories. Source code in jar file.  
-**Plugins&gt;Annotation&gt;Colarizer\_Overlay...**
+Unzip [Colorizer\_Overlay.zip](/media/Colorizer_Overlay.zip) into ImageJ1 plugins {% include bc path="File|Show Folder|Plugins" %} or plugins/jars directories. Source code in jar file.  
+{% include bc path="Plugins|Annotation|Colarizer_Overlay..." %}
 
 ## Licence
 

@@ -204,7 +204,7 @@ A note for the interested programmer: About 15% of the macro functions have be d
 
 ## Example: Generating Red/Cyan Anaglyphs
 
-This example script can be found in the Plugins/Examples/ folder of Fiji. It will take an image stack and generate from it an image that should appear in 3D when viewed through red and cyan glasses. All that this does is to do two maximum intensity projections from two slightly different angles and merges them together. It's a nice example because all the work is done by existing ImageJ commands. If you look at the script, you'll see that the first step is to run the "3D Project..." plugin with some slightly convoluted options:
+This example script can be found in the `plugins/Examples/` folder of Fiji. It will take an image stack and generate from it an image that should appear in 3D when viewed through red and cyan glasses. All that this does is to do two maximum intensity projections from two slightly different angles and merges them together. It's a nice example because all the work is done by existing ImageJ commands. If you look at the script, you'll see that the first step is to run the "3D Project..." plugin with some slightly convoluted options:
 
     projection_options = "projection=[Brightest Point] axis=Y-Axis "
     projection_options += "initial=-#{degree_separation / 2} "

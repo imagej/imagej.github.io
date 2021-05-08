@@ -36,27 +36,27 @@ Mac
 
 File Open
 
-1.  Select a menu item ( Plugins -&gt; OlympusViewer -&gt; Viewer )
+1.  Select a menu item {% include bc path="Plugins | OlympusViewer | Viewer" %}
 2.  Select a file.
 
 Show Meta Data
 
-1.  Select a menu item ( Plugins -&gt; OlympusViewer -&gt; ShowInfo )
+1.  Select a menu item {% include bc path="Plugins | OlympusViewer | ShowInfo" %}
 
 Drag & Drop (ver2.1.1-)
 
-1.  Select a menu item ( Plugins -&gt; OlympusViewer -&gt; DragDrop )
+1.  Select a menu item {% include bc path="Plugins | OlympusViewer | DragDrop" %}
 2.  Drop a image file.
 
 Virtual stack mode for large images (ver2.2.1-)
 
-1.  Select a menu item ( Plugins -&gt; OlympusViewer -&gt; DragDrop -&gt; Use Virtual Stack for large images )
+1.  Select a menu item {% include bc path="Plugins | OlympusViewer | DragDrop | Use Virtual Stack" %} for large images
 2.  Drop a image file.
 
 Use Macro function (ver2.3.1-)
 
 1.  Enable Macro Record function.
-2.  Select menu item ( Plugins -&gt; OlympusViewer -&gt; Viewer )
+2.  Select menu item {% include bc path="Plugins | OlympusViewer | Viewer" %}
 3.  Select image file.
 4.  You can see that Macro command was registered.
 

@@ -60,7 +60,7 @@ This plugin is available from the {% include list-of-update-sites content='PTBIO
 
 <figure><img src="/media/Frc-dialog-std.png" title="Plugin Dialog choices Standard Use" width="500" alt="Plugin Dialog choices Standard Use" /><figcaption aria-hidden="true">Plugin Dialog choices Standard Use</figcaption></figure>
 
-Call up the plugin using *Plugins-&gt;BIOP-&gt;Image Analysis-&gt;FRC-&gt;FRC Calculation...*.
+Call up the plugin using {% include bc path="Plugins|BIOP|Image Analysis|FRC|FRC Calculation..." %}.
 
 You need two images open to perform the FRC.
 
@@ -68,7 +68,7 @@ You need two images open to perform the FRC.
 
 <figure><img src="/media/Frc-dialog-batch.png" title="Plugin Dialog choices in Batch mode" width="500" alt="Plugin Dialog choices in Batch mode" /><figcaption aria-hidden="true">Plugin Dialog choices in Batch mode</figcaption></figure>
 
-There is also a Batch Option under *Plugins-&gt;BIOP-&gt;Image Analysis-&gt;FRC-&gt;FRC Calculation (Batch)...*
+There is also a Batch Option under {% include bc path="Plugins|BIOP|Image Analysis|FRC|FRC Calculation (Batch)..." %}
 
 This dialog needs two folders. The plugin will open one folder, and perform the FRC for each image that has an image in the second folder **with the same name**.
 

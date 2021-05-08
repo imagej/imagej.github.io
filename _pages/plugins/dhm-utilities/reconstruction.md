@@ -141,7 +141,7 @@ The Status plugin just updates the status bar during the command's running.
 
 ## Options
 
-Every plugin has options that can be changed in the "Plugins &gt; DHM &gt; Reconstruction Options" command. Here the units for some of the values can be changed, plugins can be enabled/disabled, and plugins can put their own options here too. Here are the options that the default plugins have:
+Every plugin has options that can be changed in the {% include bc path="Plugins | DHM | Reconstruction Options" %} command. Here the units for some of the values can be changed, plugins can be enabled/disabled, and plugins can put their own options here too. Here are the options that the default plugins have:
 
 ### Propagation/Angular Spectrum
 

@@ -42,7 +42,7 @@ Install NetBeans using the package manager—e.g., on Ubuntu:
 
 ## Import the ImageJ source
 
-1.  Choose Team &gt; Git &gt; Clone... from the NetBeans menu
+1.  Choose {% include bc path="Team | Git | Clone..." %} from the NetBeans menu
 2.  For the Repository URL, enter: [`git://github.com/imagej/imagej`](Git___github.com_imagej_imagej)
 3.  Click Next, check the "master\*" branch, then Next again, then Finish
 4.  When prompted, click Open Project...

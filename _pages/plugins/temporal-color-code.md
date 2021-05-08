@@ -12,7 +12,7 @@ categories: Plugins,Color processing
 {% endcapture %}
 
 {% capture source%}
-{% include github repo='fiji' path='plugins/Scripts/Image/Hyperstacks/Temporal-Color\_Code.ijm' %}
+{% include github repo='fiji' path='plugins/Scripts/Image/Hyperstacks/Temporal-Color_Code.ijm' %}
 {% endcapture %}
 {% include info-box name='Temporal-Color Code' software='Fiji' author=author maintainer=' [Kota Miura](http://cmci.embl.de) ([1](mailto:miura@embl.de))' source=source released='29 Nov 2010' latest-version='29 Nov 2010' status='beta' %}
 
@@ -20,11 +20,11 @@ categories: Plugins,Color processing
 
 Generates a temporal-color coded XY 2D image (above right) from HyperStack (above left). Works with both 2D time series and 3D time series.
 
-Be sure to set the dimensional sizes (especially Z and T) properly with Image/Properties.  
+Be sure to set the dimensional sizes (especially Z and T) properly with {% include bc path="Image|Properties" %}.
 
 # Work Flow
 
-With a hyperstack window activated (at the most front among other images), select **Image/Hyperstacks/Temporal-Color** Code.
+With a hyperstack window activated (at the most front among other images), select {% include bc path="Image|Hyperstacks|Temporal-Color" %} Code.
 
 In dialog window, select a LUT from drop down menu. Selected LUT will be used for color coding the time. You could also set the range of frames to be coded. Default is full frames. There is also an option check-box for generating color-scale bar in separate window. This will show correspondence between color and frame number in the color coded image.
 

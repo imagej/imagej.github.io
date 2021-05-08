@@ -43,4 +43,4 @@ Once the plugin is installed, you can analyze an image as follows:
 
 In further steps, the worms masks can be corrected manually if necessary. In that case, the area of the mask can be remeasured by pressing the M key. The worm mask area as well as the total beads signal is used further in the paper to analyze the relative quantity of beads ingested by worms in different experimental conditions.
 
-Remark: Note that the plugin change the Fiji "black background" settings (in the menu Process&gt;Binary&gt;Option) to uncheck.
+Remark: Note that the plugin change the Fiji "black background" settings (in the menu {% include bc path="Process|Binary|Options..." %}) to uncheck.

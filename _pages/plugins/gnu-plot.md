@@ -75,9 +75,9 @@ Dynamically updating Choice(s).
 
 ## Install
 
-Unzip [Gnu\_Plot.zip](/media/Gnu_Plot.zip) into ImageJ1 plugins (File&gt;Show Folder&gt;Plugins) or plugins/jars directories. Source code is in jar file.  
-**Edit&gt;Options&gt;Gnu\_Plot...** Configure location of gnuplot executable.  
-**Anaylze&gt;Tools&gt;Gnu\_Plot...** Runs Gnu\_Plot.
+Unzip [Gnu_Plot.zip](/media/Gnu_Plot.zip) into ImageJ1 plugins {% include bc path="File|Show Folder|Plugins" %} or plugins/jars directories. Source code is in jar file.\\
+{% include bc path="Edit|Options|Gnu_Plot..." %} Configure location of gnuplot executable.\\
+{% include bc path="Analyze|Tools|Gnu_Plot..." %} Runs `Gnu_Plot`.
 
 ## Licence
 

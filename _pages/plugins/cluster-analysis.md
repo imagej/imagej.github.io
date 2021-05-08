@@ -13,7 +13,7 @@ Fiji-Plugin to segment and quantify confocal images.
 
 The Cluster Analysis Plugin is integrated in the built-in Updater Site of Imagej and regular updates are available through it.
 
-Go directly on your local Fiji-application and click on Update &gt; Manage update sites &gt; Add my site and type in the ImageJ Wiki account dcolam. After that all scripts and dependencies should be installed in the right place and you only need to restart Fiji.
+Go directly on your local Fiji-application and click on {% include bc path="Update | Manage update sites | Add my site" %} and type in the ImageJ Wiki account dcolam. After that all scripts and dependencies should be installed in the right place and you only need to restart Fiji.
 
 ## Prerequisites
 
@@ -25,7 +25,7 @@ If you want to exclude a particular information, don't type anything into the fi
 
 ## Running the Plugin
 
-After successfull installation, you will find in Plugins &gt; Cluster Analysis three sections, namely the script starter, the Manual and Helper which redirects you to this github-repository and a ini.cfg-file loader which will allow you to feed in older ini.cfg-files from other experiments. Load an ini.file from a previous experiment before starting the script and then run the Cluster Analysis script with the new parameters.
+After successfull installation, you will find in {% include bc path="Plugins | Cluster Analysis" %} three sections, namely the script starter, the Manual and Helper which redirects you to this github-repository and a ini.cfg-file loader which will allow you to feed in older ini.cfg-files from other experiments. Load an ini.file from a previous experiment before starting the script and then run the Cluster Analysis script with the new parameters.
 
 The general script workflow consists of several steps:
 

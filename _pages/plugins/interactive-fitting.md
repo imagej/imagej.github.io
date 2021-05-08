@@ -37,8 +37,8 @@ Interrogating plots and reacting as they change.
 
 ## Install
 
-Unzip [Interactive\_Fitting.zip](/media/Interactive_Fitting.zip) into ImageJ1 plugins (File&gt;Show Folder&gt;Plugins) or plugins/jars directories. Source code in jar file.  
-**Plugins&gt;Interactive&gt;Interactive\_Plotting...**
+Unzip [Interactive\_Fitting.zip](/media/Interactive_Fitting.zip) into ImageJ1 plugins {% include bc path="File|Show Folder|Plugins" %} or plugins/jars directories. Source code in jar file.  
+{% include bc path="Plugins|Interactive|Interactive\_Plotting..." %}
 
 ## Licence
 

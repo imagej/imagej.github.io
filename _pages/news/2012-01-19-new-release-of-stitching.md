@@ -19,8 +19,8 @@ Here is a list of all new highlights:
 
 There are only two plugins left, they replace the Stitching2D/3D and the Stitch Grid, ... Sequence, ... Collection and so on. They are called:
 
--   **Stitching -&gt; Pairwise Stitching**
--   **Stitching -&gt; Grid/Collection Stitching**
+-   {% include bc path="Stitching | Pairwise Stitching" %}
+-   {% include bc path="Stitching | Grid/Collection Stitching" %}
 
 You will find a complete documentation on the Fiji wiki: [Image\_Stitching](/plugins/image-stitching)
 

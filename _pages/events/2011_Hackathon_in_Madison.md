@@ -164,7 +164,7 @@ All of these discussions benefited incredibly from the fact that all the people 
 -   An alternative to the Tubeness algorithm which was published by Frangi was integrated into the Simple Neurite Tracer (Mark Longair).
 -   Fiji allows scripts & macros to be inserted anywhere in the menu structure by putting them in the corresponding subdirectory of Fiji.app/plugins/Scripts/ (Curtis Rueden).
 -   All scripts and macros inserted into the menus report that they were started, and they can be opened in the Script Editor when Shift was pressed before clicking on the respective menu entry.
--   There is now a "Scale by DPI" Javascript in the Image&gt;Adjust menu (Curtis Rueden).
+-   There is now a "Scale by DPI" Javascript in the {% include bc path="Image|Adjust" %} menu (Curtis Rueden).
 -   When Fiji was asked via the properties on MacOSX to run in 32-bit mode, it does so (Erwin Frise).
 -   There is a base class for the Command Launcher of IJ1, reusable for every Swing application (and easily extended to AWT or whatever).
 -   There have been too many improvements to the Advanced Trainable Segmentation (AKA WEKA Segmentation) (Ignacio Arganda-Carreras).

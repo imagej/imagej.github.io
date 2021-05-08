@@ -25,7 +25,9 @@ Vessel Analysis can be added to Fiji (version 1.47g or higher required).
 
 Download the [Vessel Analysis.zip](/File:Vessel_Analysis.zip) package and save an unzipped copy in Fiji's Plugins folder. Open a new session in Fiji and you should now see Vessel Analysis listed near the bottom of the Plugins drop down menu.
 
-Before using the plugin, make sure your version of Fiji comes pre-downloaded with the Auto Threshold and Geometry to Distance plugins. They should be listed under: o Image &gt; Adjust &gt; Auto Threshold o Analyze &gt; Local Thickness &gt; Geometry to Distance Map
+Before using the plugin, make sure your version of Fiji comes pre-downloaded with the Auto Threshold and Geometry to Distance plugins. They should be listed under:
+* {% include bc path="Image | Adjust | Auto Threshold" %}
+* {% include bc path="Analyze | Local Thickness | Geometry to Distance Map" %}
 
 Also make sure you install [Mexican Hat Filter](/ij/plugins/mexican-hat/index.html) plugin
 
@@ -33,11 +35,11 @@ Also make sure you install [Mexican Hat Filter](/ij/plugins/mexican-hat/index.ht
 
 Detailed Instructions [HERE](/File:Vessel_Analysis_User_Manual.pdf)
 
-Open a multi-channel image in Fiji and execute the Vessel Analysis plugin via Plugins &gt; Vessel Analysis &gt; Vessel Analysis (complete). The "complete" program will guide you through preprocessing steps to prepare the image for vascular density and diameter measurements.
+Open a multi-channel image in Fiji and execute the Vessel Analysis plugin via {% include bc path="Plugins | Vessel Analysis | Vessel Analysis (complete)" %}. The "complete" program will guide you through preprocessing steps to prepare the image for vascular density and diameter measurements.
 
 *Using the Plugin: Pre-processing*
 
-You may skip directly to Vessel Analysis &gt; Vascular Density or Vessel Analysis &gt; Diameter Measurements if you already have the appropriate pre-processed image.
+You may skip directly to {% include bc path="Vessel Analysis | Vascular Density or Vessel Analysis | Diameter Measurements" %} if you already have the appropriate pre-processed image.
 
 As the image is processed, new images will be generated and automatically saved in the source directory of the original image. You may re-use these images for future processing.
 

@@ -32,7 +32,7 @@ There is a 7-angle SPIM dataset of *Drosophila* available [here](http://fly.mpi-
 
 ### System requirements
 
-Multi-view SPIM datasets are typically rather large, therefore it is recommended to use the registration plugin on a computer with a lot of RAM. The minimal requirement for the example dataset is **at least 4Gb** of memory however we recommend an **8Gb** system. You may need to increase the Fiji memory limit by going to Edit-&gt;Options-&gt;Memory & Threads.
+Multi-view SPIM datasets are typically rather large, therefore it is recommended to use the registration plugin on a computer with a lot of RAM. The minimal requirement for the example dataset is **at least 4Gb** of memory however we recommend an **8Gb** system. You may need to increase the Fiji memory limit by going to {% include bc path="Edit|Options|Memory & Threads" %}.
 
 ### Using the Plugins
 
@@ -46,7 +46,7 @@ There are three plugins which take those input parameters in different formats:
 
 Processing a time lapse acquisition requires two steps. In the first step the registration for each individual timepoint has to be computed and will be automatically stored. Therefore, in the first pass, input the timepoints that should be processed in **Time Points to process** (e.g. 1-100), check **Register only (no fusion)** and uncheck **Timelapse processing**. After the registration is performed one timepoint has to be selected as reference timepoint, typically one with a low registration error. This timepoint should be fused to determine the **[correct cropping area ](#creating-a-cropped-output-image)** which will afterwards be applied to all other timepoints.
 
-After all individual timepoints are registered and the cropping area is defined the plugin has to be called again. This time check **Timelapse Registration**, insert the **Reference Timepoint**, uncheck **Register only (no fusion)** and insert the coordinates of the cropping area of the reference timepoint. The created output images can be viewed for example with Plugins-&gt;Image5D-&gt;Virtual Image 5D Opener [1](/ij/plugins/image5d.html).
+After all individual timepoints are registered and the cropping area is defined the plugin has to be called again. This time check **Timelapse Registration**, insert the **Reference Timepoint**, uncheck **Register only (no fusion)** and insert the coordinates of the cropping area of the reference timepoint. The created output images can be viewed for example with {% include bc path="Plugins|Image5D|Virtual Image 5D Opener" %} [1](/ij/plugins/image5d.html).
 
 ## ***deprecated*** SPIM bead-based registration
 

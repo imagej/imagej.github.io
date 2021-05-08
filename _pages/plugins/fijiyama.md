@@ -50,13 +50,13 @@ In order to install Fijiyama on your computer, please follow these simple steps:
 
 1\. (if needed) Download and install Fiji from https://fiji.sc/ ; start Fiji, and let it automatically update. Then restart Fiji.
 
-2\. Open Fiji, run the **Update manager** (Help &gt; Update). Click on "OK" to close the first popup windows, then click on the button **Manage update sites...**.
+2\. Open Fiji, run the **Update manager** {% include bc path="Help | Update" %}. Click on "OK" to close the first popup windows, then click on the button **Manage update sites...**.
 
 3\. In this list, activate **ImageJ-ITK** by checking the corresponding checkboxes.
 
 and add the **Fijiyama** repository (by clicking on the button **Add update site**, and filling the fields : name = "/plugins/fijiyama", site = https://sites.imagej.net/Fijiyama), then check the associated checkbox.
 
-4\. Restart Fiji: a new **Fijiyama** entry should be available in the menu Plugins &gt; Registration. If not, go back to the Update Manager, and check that the repositories **ImageJ-ITK**, and **Fijiyama** are correctly selected.
+4\. Restart Fiji: a new **Fijiyama** entry should be available in the menu {% include bc path="Plugins | Registration" %}. If not, go back to the Update Manager, and check that the repositories **ImageJ-ITK**, and **Fijiyama** are correctly selected.
 
 The following video shows a tutorial for Fijiyama installation:
 
@@ -73,8 +73,8 @@ In order to register your data, Fijiyama needs properly formatted dataset:
   
 Before starting registration, check your images calibration:
 
--   **Intensities: ** verify there is a proper contrast between your object of interest and the background when opened in Fiji/ImageJ. If needed, use Image &gt; Adjust &gt; Brightness / Contrast, and set the min and max values, then close the Brightness / Contrast window.
--   **Voxel sizes: ** using ImageJ, check the image properties (Image &gt; Properties...) and correct the 4 central values, if needed. Unit of length **should have another value than "pixel" ** (it can be "mm", "cm", "µm" for example). Check coherence of pixel width / height / depth according to your unit of length. If needed, open the "info" menu (Image &gt; Show info...), to get dicom parameters, or any other parameters. To visualize if the voxel depth is coherent with the pixel size, along X and Y axis, you can render your object as a 3D volume using the 3D viewer (plugins &gt; 3D viewer).
+-   **Intensities: ** verify there is a proper contrast between your object of interest and the background when opened in Fiji/ImageJ. If needed, use {% include bc path="Image | Adjust | Brightness / Contrast" %}, and set the min and max values, then close the Brightness / Contrast window.
+-   **Voxel sizes: ** using ImageJ, check the image properties {% include bc path="Image | Properties..." %} and correct the 4 central values, if needed. Unit of length **should have another value than "pixel" ** (it can be "mm", "cm", "µm" for example). Check coherence of pixel width / height / depth according to your unit of length. If needed, open the "info" menu (Image | Show info...), to get dicom parameters, or any other parameters. To visualize if the voxel depth is coherent with the pixel size, along X and Y axis, you can render your object as a 3D volume using the 3D viewer (plugins | 3D viewer).
 
 Once signal intensity and voxel sizes have been checked, save your modified images. Then run Fijiyama, and select the **two images registration** mode or the **series registration** mode.
 

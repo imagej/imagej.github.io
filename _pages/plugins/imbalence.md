@@ -28,7 +28,7 @@ Click the links below to find more about each tool.
 
 1\. [FIJI](https://fiji.sc) (Fiji Is Just ImageJ) should be installed on your computer.
 
-2\. Click "Help / Update..." to open the FIJI updater. If it's the first time updating your FIJI, it might take some time to download the update files and may also require to restart FIJI a few times. Once done, click "Help / Update..." again to bring up the ImageJ updater window.
+2\. Click {% include bc path="Help | Update..." %} to open the FIJI updater. If it's the first time updating your FIJI, it might take some time to download the update files and may also require to restart FIJI a few times. Once done, click {% include bc path="Help | Update..." %} again to bring up the ImageJ updater window.
 
 <figure><img src="/media/EMtool 01.jpg" title="EMtool_01.jpg" width="350" alt="EMtool_01.jpg" /><figcaption aria-hidden="true">EMtool_01.jpg</figcaption></figure>
 
@@ -56,4 +56,4 @@ If you only want to use one of the plugins you can follow these steps:
 
 3\. Save .ijm files in the desired location within your imageJ application
 
-4\. Go to "Plugins/Macros/install..." to add the macros, or drag-and-drop the .ijm file into ImageJ/FIJI
+4\. Go to {% include bc path="Plugins|Macros|Install..." %} to add the macros, or drag-and-drop the .ijm file into ImageJ/FIJI

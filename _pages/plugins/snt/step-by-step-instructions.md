@@ -168,7 +168,7 @@ There is a simple facility in this plugin for "filling out" paths to volumes. Th
 
 ### I.Starting the Fill
 
-First, select the one or more paths that you want to fill out from in the Path Manager and select "Fill -&gt; Fill Out..." in the Path Manager menu options. The selected paths are shown in green so that you can check that you're starting from the right ones. After a couple of seconds if you scroll through the stack you should be able to see a thick green surround the path:
+First, select the one or more paths that you want to fill out from in the Path Manager and select {% include bc path="Fill | Fill Out..." %} in the Path Manager menu options. The selected paths are shown in green so that you can check that you're starting from the right ones. After a couple of seconds if you scroll through the stack you should be able to see a thick green surround the path:
 
 <figure><img src="/media/Snt-initial-filling-2.png" title="A few seconds after selecting &quot;Fill Out...&quot; with 1 path selected" width="400" alt="A few seconds after selecting &quot;Fill Out...&quot; with 1 path selected" /><figcaption aria-hidden="true">A few seconds after selecting "Fill Out..." with 1 path selected</figcaption></figure>
 

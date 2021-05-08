@@ -51,7 +51,7 @@ The proper handling of boundary conditions is an important part of deconvolution
 
 ## Scripts
 
-A collection of scripts that use ops-deconvolution is being developed and can be found [here on github](https://github.com/imagej/imagej-scripting/tree/master/src/main/resources/script_templates/Deconvolution). The scripts can also be accessed via the Templates-&gt;Deconvolution menu in the Fiji script editor. Note that as new scripts are added it may take a couple of weeks for them to be available in Fiji. Thus check github for the most up to date collection of scripts.
+A collection of scripts that use ops-deconvolution is being developed and can be found [here on github](https://github.com/imagej/imagej-scripting/tree/master/src/main/resources/script_templates/Deconvolution). The scripts can also be accessed via the {% include bc path="Templates|Deconvolution" %} menu in the Fiji script editor. Note that as new scripts are added it may take a couple of weeks for them to be available in Fiji. Thus check github for the most up to date collection of scripts.
 
 ## Preliminary Results
 

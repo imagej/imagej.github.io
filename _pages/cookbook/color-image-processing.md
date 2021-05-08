@@ -17,7 +17,7 @@ A pseudo-colored image has a single channel, (i.e. grey) image that has color as
 
 ### 24-bit RGB images
 
-The colors in RGB images (24-bit with 8-bits for each of the red, green and blue channels) are used to show multi-channel images. The colors are designed to reflect genuine colors (i.e. the green in an RGB image reflects green color in the specimen). There are several RGB functions in Fiji. Native functions can be found in "Image/Color".
+The colors in RGB images (24-bit with 8-bits for each of the red, green and blue channels) are used to show multi-channel images. The colors are designed to reflect genuine colors (i.e. the green in an RGB image reflects green color in the specimen). There are several RGB functions in Fiji. Native functions can be found in {% include bc path="Image|Color" %}.
 
 ![](/media/24bit rgb images.jpg "24bit_rgb_images.jpg")
 
@@ -25,26 +25,26 @@ The colors in RGB images (24-bit with 8-bits for each of the red, green and blue
 
 A color composite image is similar to the color images one would find in the image processing software Photoshop. In Photoshop these images are made of "layers", and in Fiji they are made of "channels". Both "layers" and "channels" are the same idea. The advantages of using this type of image instead of RGB images include:
 
-1.  Each channel is kept separate from the others and can be turned on or off using the 'Channels Tool' ("Image/Color/Channels Tool"). You have the option of viewing the image as a composite of all or some of the different channels, as individual channels, or as individual greyscale channels. There is a button labeled 'More' at the bottom of the window that allows you to make a composite, convert the image to RGB, merge or split channels, edit the image's LUT, or choose new channel colors from a list.
+1.  Each channel is kept separate from the others and can be turned on or off using the 'Channels Tool' ({% include bc path="Image|Color|Channels Tool" %}). You have the option of viewing the image as a composite of all or some of the different channels, as individual channels, or as individual greyscale channels. There is a button labeled 'More' at the bottom of the window that allows you to make a composite, convert the image to RGB, merge or split channels, edit the image's LUT, or choose new channel colors from a list.
 2.  Each original channel can be kept as 16-bit.
 3.  More than 3 channels can be merged and kept separate. Each channel can be selected via the scroll bar at the bottom of the window.
 4.  The contrast and brightness of individual channels can be adjusted after merging.
 
 Color composite images can be converted to 24-bit RGB via the 'Channels Tool' dialog box.
 
-The disadvantage of the Composite image type is that this relatively recent Fiji development is not supported by all existing plugins. Sometime the composite can revert to a multi-slice stack. To convert it back to a composite you can use the menu command "Image/Color/Make Composite".
+The disadvantage of the Composite image type is that this relatively recent Fiji development is not supported by all existing plugins. Sometime the composite can revert to a multi-slice stack. To convert it back to a composite you can use the menu command {% include bc path="Image|Color|Make Composite" %}.
 
 ## Merging multi-channel images
 
 ### Interleaved multi-channel experiments
 
-Multi-channel experiments acquired on some systems are imported with the different channels interleaved, i.e. Slice 1 is Timepoint1-channel1 and Slice 2 is Timepoint1-channel2. The stack needs to be "De-interleaved" before it can be RGB-merged. This can be done with "*Image/Stacks/Tools/Deinterleave*" and entering the number of channels in the dialog (typically "2"). You can also choose to check a box for whether or not the source stacks should be kept. The two stacks can then be merged via: "*Image/Color/RGB merge*".
+Multi-channel experiments acquired on some systems are imported with the different channels interleaved, i.e. Slice 1 is Timepoint1-channel1 and Slice 2 is Timepoint1-channel2. The stack needs to be "De-interleaved" before it can be RGB-merged. This can be done with {% include bc path="Image|Stacks|Tools|Deinterleave" %} and entering the number of channels in the dialog (typically "2"). You can also choose to check a box for whether or not the source stacks should be kept. The two stacks can then be merged via: {% include bc path="Image|Color|RGB merge" %}.
 
 ![](/media/ deinterleaver.jpg "_deinterleaver.jpg")
 
 ### RGB color merging
 
-The native Fiji function "*Image/Color/Merge Channels...*" can be used to merge red, green and/or blue channel images or Image Stacks
+The native Fiji function {% include bc path="Image|Color|Merge Channels..." %} can be used to merge red, green and|or blue channel images or Image Stacks
 
 This reduces 16-bit images to 8-bits (based on the current Brightness and Contrast values) then generates a 24-bit RGB image.
 
@@ -56,19 +56,19 @@ Run the plugin and select the two images to be merged. Select the desired colors
 
 ## Merging transmitted light and fluorescence images
 
-Fluorescence and transmitted light brightfield images can be merged with the "*Image/Color/Merge Channels...*". This instruction lets you than choose the C4 (gray) option. This can prevent a 'washed out' look to the fluorescence.
+Fluorescence and transmitted light brightfield images can be merged with the {% include bc path="Image|Color|Merge Channels..." %}. This instruction lets you than choose the C4 (gray) option. This can prevent a 'washed out' look to the fluorescence.
 
 This also reduces 16-bit images to 8-bits (based on the current Brightness and Contrast values) then generates a 24-bit RGB image.
 
 ### Merging images to a color composite
 
-The menu command "*Image/Color/Merge Channels...*" opens a dialog to merge grey, red, green, blue, cyan, magenta, and yellow channels to a new composite image.
+The menu command {% include bc path="Image|Color|Merge Channels..." %} opens a dialog to merge grey, red, green, blue, cyan, magenta, and yellow channels to a new composite image.
 
 ![](/media/ merge channels.jpg "_merge_channels.jpg")
 
 ## Splitting multi-channel Images
 
-An RGB image or stack can be split to the respective red, green and blue image components using the menu command "*Image/Color/Split Channels*".
+An RGB image or stack can be split to the respective red, green and blue image components using the menu command {% include bc path="Image|Color|Split Channels" %}.
 
 Sometime a merged RGB image may need to be displayed along with the separate channels in a final figure. This can be done with the "RGB to Montage" plugin.
 
@@ -78,7 +78,7 @@ It works with single slice RGB images. A new RGB stack is created, channel 1 bei
 
 ## Color Composite
 
-The composite can be reverted to a greyscale stack via the menu command "*Image/Hyperstacks/Hyperstack to Stack*". The channels can be subsequently split to individual images via the menu command "*Image/Stacks/Stack to Images*".
+The composite can be reverted to a greyscale stack via the menu command {% include bc path="Image|Hyperstacks|Hyperstack to Stack" %}. The channels can be subsequently split to individual images via the menu command {% include bc path="Image|Stacks|Stack to Images" %}.
 
 ## Pseudo-color
 
@@ -98,14 +98,12 @@ Have a play and see which LUT helps illustrates the features in your image.
 
 ![](/media/ list of luts.jpg "_list_of_luts.jpg")
 
-Montage compiled from a stack generated using the menu commands "*Image/Color/Display LUTs*".
+Montage compiled from a stack generated using the menu commands {% include bc path="Image|Color|Display LUTs" %}.
 
-Different LUTs are available via the menu commands "*Image/Lookup Tables*".
+Different LUTs are available via the menu commands {% include bc path="Image|Lookup Tables" %}.
 
-When using a non-standard LUT it may be useful to add a greyscale ramp so the user can judge which color represents which grey-scale value. A ramp can be added with the native function "*Analyze/Tools/Calibration Bar...*". If there is no space for the ramp, try enlarging the image canvas with the menu command "*Image/Adjust/Canvas Size...*".
+When using a non-standard LUT it may be useful to add a greyscale ramp so the user can judge which color represents which grey-scale value. A ramp can be added with the native function {% include bc path="Analyze|Tools|Calibration Bar..." %}. If there is no space for the ramp, try enlarging the image canvas with the menu command {% include bc path="Image|Adjust|Canvas Size..." %}.
 
 ![](/media/ analyze calibration bar.jpg "_analyze_calibration_bar.jpg")
 
-Analyze/Tools/Calibration Bar...
-
- 
+{% include bc path="Analyze|Tools|Calibration Bar..." %}

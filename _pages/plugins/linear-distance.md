@@ -32,7 +32,7 @@ Copy the File **LinearDistance\_.jar** in the plugins/jars folder. When using Fi
 
 ## Usage
 
-Open one or more binary (black/white) images or binarize an image. Start the plugin by selecting "Plugins&gt;Analyze&gt;Measure linear distances" and select the results you want to obtain.
+Open one or more binary (black/white) images or binarize an image. Start the plugin by selecting {% include bc path="Plugins|Analyze|Measure linear distances" %} and select the results you want to obtain.
 
 ## Available Options
 

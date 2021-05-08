@@ -195,7 +195,7 @@ When you have one or more Hyperstacks open and want to step though the images pe
 
 ## Install
 
-Unzip [Frames.zip](/media/Frames.zip) into ImageJ1 plugins (File&gt;Show Folder&gt;Plugins) or plugins/jars directories. Source code in jar file.
+Unzip [Frames.zip](/media/Frames.zip) into ImageJ1 plugins {% include bc path="File|Show Folder|Plugins" %} or plugins/jars directories. Source code in jar file.
 
 ## ChangeLog
 

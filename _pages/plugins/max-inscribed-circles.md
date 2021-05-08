@@ -35,7 +35,7 @@ This plugin is available from the {% include list-of-update-sites content='BIOP 
 
 ## Use
 
-Call up the plugin using *Plugins-&gt;BIOP-&gt;Max Inscribed Circles...*.
+Call up the plugin using {% include bc path="Plugins|BIOP|Max Inscribed Circles..." %}.
 
 You can select the smallest circle diameter after which it will stop looking, and whether you want the plugin to run on the current selection or the current image mask.
 

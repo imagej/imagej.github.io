@@ -36,7 +36,7 @@ If you are interested in the SPIM workflow type visit [this](/plugins/spim-workf
 
 ### How to start the plugin
 
-From the Fiji menu bar select Plugins &gt; Multiview Reconstruction &gt; HPC Workflow Manager and fill in the Login dialog that will appear. For example, see the filled-in dialog in Figure 1.
+From the Fiji menu bar select {% include bc path="Plugins | Multiview Reconstruction | HPC Workflow Manager" %} and fill in the Login dialog that will appear. For example, see the filled-in dialog in Figure 1.
 
 <figure><img src="/media/Hpc-workflow-manager-login.png" title="Figure 1: Example of a filled in login dialog." width="500" alt="Figure 1: Example of a filled in login dialog." /><figcaption aria-hidden="true">Figure 1: Example of a filled in login dialog.</figcaption></figure>
 
@@ -189,7 +189,7 @@ We should get the id of the node and print it instead as well as the total numbe
 
 To get the id of the node (that is its rank) we must call `parGetRank()`.
 
-    parInit();  
+    parInit();
       myRank = parGetRank();
       if (myRank == 0){
         print("The greeting program.");
@@ -333,51 +333,53 @@ For example, the following two nodes will have different task numbers for the sa
 
 This can cause great difficulty, this is why it is suggested to always store the task id returned when adding the task in a variable and use it instead.
 
-    parInit();
-      introductionTask = parAddTask("Introduction to other nodes.");
-      
-      myRank = parGetRank();
-      size = parGetSize();
-      
-      if(myRank == 1){
-        print("The greeting program. Now with progress reporting!");
-        cakeTask = parAddTask("Get the cake.");
-      }
-      getPieceTask = parAddTask("Get the cake pieces.");
-      annoucementTask = parAddTask("Announce the pieces you got.");
-      parReportTasks();
+```
+parInit();
+  introductionTask = parAddTask("Introduction to other nodes.");
 
-      parReportProgress(introductionTask,0);
-      print("Hello to all "+size+" nodes. I am node number: "+myRank);
-      parReportProgress(introductionTask, 100);
-      
-      cake = newArray(0);
-      if(myRank == 1){
-        parReportProgress(cakeTask, 0);
-        print("I brought the cake.");
-        cake = newArray(30);
-          for(i = 0; i < lengthOf(cake); i++){
-            cake[i] = i;
-            parReportProgress(cakeTask, i/30 * 100);
-          }
-          parReportProgress(cakeTask, 100);
+  myRank = parGetRank();
+  size = parGetSize();
+
+  if(myRank == 1){
+    print("The greeting program. Now with progress reporting!");
+    cakeTask = parAddTask("Get the cake.");
+  }
+  getPieceTask = parAddTask("Get the cake pieces.");
+  annoucementTask = parAddTask("Announce the pieces you got.");
+  parReportTasks();
+
+  parReportProgress(introductionTask,0);
+  print("Hello to all "+size+" nodes. I am node number: "+myRank);
+  parReportProgress(introductionTask, 100);
+
+  cake = newArray(0);
+  if(myRank == 1){
+    parReportProgress(cakeTask, 0);
+    print("I brought the cake.");
+    cake = newArray(30);
+      for(i = 0; i < lengthOf(cake); i++){
+        cake[i] = i;
+        parReportProgress(cakeTask, i/30 * 100);
       }
-      
-      parReportProgress(getPieceTask, 0);
-      receivedPieces = parScatterEqually(cake, 10, 1);
-      parReportProgress(getPieceTask, 100);
-      
-      parBarrier();
-      
-      parReportProgress(annoucementTask, 0);
-      for(i = 0; i < lengthOf(receivedPieces); i++){
-        print("I node number "+myRank+" received piece: "+receivedPieces[i]);
-        parReportProgress(annoucementTask, i/lengthOf(receivedPieces)*100);
-      }
-      parReportProgress(annoucementTask, 100);
-      
-      print("Bye, from node number: "+myRank);
-    parFinalize();
+      parReportProgress(cakeTask, 100);
+  }
+
+  parReportProgress(getPieceTask, 0);
+  receivedPieces = parScatterEqually(cake, 10, 1);
+  parReportProgress(getPieceTask, 100);
+
+  parBarrier();
+
+  parReportProgress(annoucementTask, 0);
+  for(i = 0; i < lengthOf(receivedPieces); i++){
+    print("I node number "+myRank+" received piece: "+receivedPieces[i]);
+    parReportProgress(annoucementTask, i/lengthOf(receivedPieces)*100);
+  }
+  parReportProgress(annoucementTask, 100);
+
+  print("Bye, from node number: "+myRank);
+parFinalize();
+```
 
 <figure><img src="/media/Hpc-workflow-manager-progress-no-task.png" title=" Figure 9: The job has finished and all the progress indicators are present. Note that the task &quot;Get the cake&quot; has a progress indicator only on node one (1) as expected. This is because this task was added in an if statement checking that the rank is one." width="300" alt=" Figure 9: The job has finished and all the progress indicators are present. Note that the task &quot;Get the cake&quot; has a progress indicator only on node one (1) as expected. This is because this task was added in an if statement checking that the rank is one." /><figcaption aria-hidden="true"> Figure 9: The job has finished and all the progress indicators are present. Note that the task "Get the cake" has a progress indicator only on node one (1) as expected. This is because this task was added in an <code>if</code> statement checking that the rank is one.</figcaption></figure>
 

@@ -33,8 +33,8 @@ The math behind it: When 'Nonlinear Contrast' and 'Half Brightness for Flat Area
 -   To create an output like a topographic map, display the input (elevation data) with a suitable lookup table and superimpose the hill shade output:
     -   Run *Hill Shade*.
     -   Convert the input image to RGB.
-    -   Use Process&gt;Image Calculator with 'Operation=Average' to combine the input image and the shaded image.
-    -   Typically, you will then want to enhance the colors a bit, using Image&gt;Adjust&gt;Color Balance.
+    -   Use {% include bc path="Process|Image Calculator" %} with 'Operation=Average' to combine the input image and the shaded image.
+    -   Typically, you will then want to enhance the colors a bit, using {% include bc path="Image|Adjust|Color Balance" %}.
     -   The image at the right shows an example, based on Space Shuttle Radar Topography Mission data of the area around Austria's highest mountain, the Großglockner.
 -   Such a superimposed map can be also loaded as 'Texture' when using the [Interactive 3D surface plot](/ij/plugins/surface-plot-3d.html) plugin.
 

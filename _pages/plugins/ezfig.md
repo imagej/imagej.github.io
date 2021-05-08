@@ -395,7 +395,7 @@ Download and install the latest FIJI available for your OS (from [https://fiji.s
 
 ![](/media/Images37.png "images37.png")
 
-Press "Help &gt; Update..."
+Press {% include bc path="Help | Update..." %}
 
 ![](/media/Images38.png "images38.png")
 
@@ -417,7 +417,7 @@ Press "Ok" and <span style="color:#ff0000;">close</span><span style="color:#ff00
 
 ![](/media/Image36.png "Image36.png")
 
-<span style="color:#ff0000;">Restart</span><span style="color:#ff0000;"> FIJI</span>, press "Plugin &gt; EZFig &gt; EZFig" to launch the software
+<span style="color:#ff0000;">Restart</span><span style="color:#ff0000;"> FIJI</span>, press {% include bc path="Plugin | EZFig | EZFig" %} to launch the software
 
 # 2) User Interface
 
@@ -501,7 +501,7 @@ Dropped images are added as a single row by default (organisation can be changed
 
 ![](/media/Images4.png "images4.png")
 
-Press "File &gt; Import images"
+Press {% include bc path="File | Import images" %}
 
 ![](/media/Images3.png "images3.png")
 
@@ -531,13 +531,13 @@ The simplest way to load an ezf or a yf5m file is to drag and drop it onto EZFig
 
 ![](/media/Images60.png "images60.png")
 
-Alternatively, press "File &gt; Open"
+Alternatively, press {% include bc path="File | Open" %}
 
 ## 4.2) Save .ezf files
 
 ![](/media/Images61.png "images61.png")
 
-Press "File &gt; Save as..." to save an "ezf" file. Note that if the figure contains stacks, they will be saved in a folder with the same name as the "ezf" file with an extra .files. <span style="color:#ff0000;">Please always store the .ezf and the .ezf.files folder together, otherwise stack data will be lost</span>. Nb: You can use the Ctrl/Cmd + S shortcut to save.
+Press {% include bc path="File | Save as..." %} to save an "ezf" file. Note that if the figure contains stacks, they will be saved in a folder with the same name as the "ezf" file with an extra .files. <span style="color:#ff0000;">Please always store the .ezf and the .ezf.files folder together, otherwise stack data will be lost</span>. Nb: You can use the Ctrl/Cmd + S shortcut to save.
 
 # 5) Exports
 
@@ -545,7 +545,7 @@ Press "File &gt; Save as..." to save an "ezf" file. Note that if the figure cont
 
 ![](/media/Image34.png "Image34.png")
 
-To export a Figure, press "File&gt;Export as..." and select one of the export formats available. Please note that exported files cannot be further edited by EZFig, so it is particularly important to also "save" your figures (see Section "Save .ezf files").
+To export a Figure, press {% include bc path="File|Export as..." %} and select one of the export formats available. Please note that exported files cannot be further edited by EZFig, so it is particularly important to also "save" your figures (see Section "Save .ezf files").
 
 EZFig can export figures as raster/bitmap images :
 
@@ -602,13 +602,13 @@ Also Figures can also be **exported to ImageJ**. See below.
 
 ![](/media/Image1.png "Image1.png")
 
-Press "File &gt; Export to ImageJ"
+Press {% include bc path="File | Export to ImageJ" %}
 
 ![](/media/Image2.png "Image2.png")
 
 The image is opened in ImageJ as an ImagePlus
 
-Nb : the figure can also be exported as an ImageJ stack (provided the figure itself contains stacks). To do so press "File &gt; Export to ImageJ Stack"
+Nb : the figure can also be exported as an ImageJ stack (provided the figure itself contains stacks). To do so press {% include bc path="File | Export to ImageJ Stack" %}
 
 # 6) Selections
 
@@ -644,7 +644,7 @@ Summary of the hierarchy of objects in EZFig and their associated colour selecti
 
 <div style="text-align:center;">
 
-hierarchy : Figure &gt; Row &gt; Panel/Montage &gt; Image
+hierarchy : "Figure &gt; Row &gt; Panel/Montage &gt; Image"
 
 </div>
 <div style="text-align:center;">
@@ -1085,7 +1085,7 @@ Often one needs to hide/remove portions of figures that are not yet finalized, h
 
 ![](/media/Image45.png "Image45.png")
 
-Select the object(s) to remove temporarily/hide from the figure. In this example, I selected the bottom right image (lower arrow). Press "Keep For Later &gt; Keep current selection for later" (upper arrow).
+Select the object(s) to remove temporarily/hide from the figure. In this example, I selected the bottom right image (lower arrow). Press {% include bc path="Keep For Later | Keep current selection for later" %} (upper arrow).
 
 ![](/media/Image46.png "Image46.png")
 
@@ -1287,7 +1287,7 @@ If the journal you look for is not available you can create your own journal sty
 
 ![](/media/Images11.png "images11.png")
 
-Press "Journals &gt; Create new Journal"
+Press {% include bc path="Journals | Create new Journal" %}
 
 ![](/media/Image25.png "Image25.png")
 
@@ -1305,7 +1305,7 @@ Select a journal style
 
 ![](/media/Images15.png "images15.png")
 
-To check image size, i.e. that the created figure fits the journal style guidelines, press "Checks &gt; Size".
+To check image size, i.e. that the created figure fits the journal style guidelines, press {% include bc path="Checks | Size" %}.
 
 ![](/media/Images12.png "images12.png")
 
@@ -1323,7 +1323,7 @@ Select a journal style
 
 ![](/media/Images16.png "images16.png")
 
-Press "Checks &gt; Style".
+Press {% include bc path="Checks | Style" %}.
 
 ![](/media/Image83.png "Image83.png")
 
@@ -1375,7 +1375,7 @@ Journals have naming conventions text, for example they dictate how to write spe
 
 ![](/media/Images25.png "images25.png")
 
-Select a journal style then press "Checks &gt; Text"
+Select a journal style then press {% include bc path="Checks | Text" %}
 
 ![](/media/Images26.png "images26.png")
 
@@ -1391,7 +1391,7 @@ Select a journal style (left arrow) and ensure that EZFig is connected to R (gre
 
 ![](/media/Images28.png "images28.png")
 
-Press "Checks &gt; Graphs"
+Press {% include bc path="Checks | Graphs" %}
 
 ![](/media/Images29.png "images29.png")
 
@@ -1405,7 +1405,7 @@ Often figures contain graphs and FiguR is a tool to create graphs that can be di
 
 ![](/media/Image6.png "Image6.png")
 
-Press "Help &gt; Show R installation guidelines"
+Press {% include bc path="Help | Show R installation guidelines" %}
 
 ![](/media/Image5.png "Image5.png")
 
@@ -1451,7 +1451,7 @@ Similarly, to connect FiguR to R press the "R status" button (arrow) in FiguR.
 
 ![](/media/Image3.png "Image3.png")
 
-To Launch FiguR from EZFig press "FiguR &gt; Launch FiguR"
+To Launch FiguR from EZFig press {% include bc path="FiguR | Launch FiguR" %}
 
 ![](/media/Image4.png "Image4.png")
 
@@ -1461,7 +1461,7 @@ The FiguR interface opens
 
 ![](/media/Image7.png "Image7.png")
 
-Press "Edit &gt; Software Preferences"
+Press {% include bc path="Edit | Software Preferences" %}
 
 ![](/media/Image8.png "Image8.png")
 
@@ -1473,7 +1473,7 @@ Undos/Redos are not active by default in SF.
 
 ![](/media/Image9.png "Image9.png")
 
-Press "Edit &gt; Software Preferences"
+Press {% include bc path="Edit | Software Preferences" %}
 
 ![](/media/Image10.png "Image10.png")
 
@@ -1489,7 +1489,7 @@ When changes are made to the figure two new buttons will become visible and clic
 
 ![](/media/Image24.png "Image24.png")
 
-To edit EZFig shortcuts select "Help &gt; Shortcuts"
+To edit EZFig shortcuts select {% include bc path="Help | Shortcuts" %}
 
 ![](/media/Image35.png "Image35.png")
 

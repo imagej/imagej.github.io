@@ -26,7 +26,7 @@ The quality-based unwrapping algorithm works on the principle that some pixels s
 
 To unwrap the image, the algorithm starts with the center pixel. It then looks at the four adjacent pixels and picks the one with the highest quality, unwrapping it relative to itself. It then looks at the six adjacent pixels and picks the one with the highest quality, unwrapping it relative to an adjacent pixel that has already been unwrapped with the highest quality. This process repeats until the entire image has been unwrapped.
 
-To perform quality-based unwrapping, run the command "Plugins &gt; DHM &gt; Phase Unwrapping &gt; Quality Guided". Here is a description of all of the parameters:
+To perform quality-based unwrapping, run the command {% include bc path="Plugins | DHM | Phase Unwrapping | Quality Guided" %}. Here is a description of all of the parameters:
 
 -   Phase Image: The phase image that you want to unwrap.
 -   Quality: What algorithm you wish to use to compute the quality mapping. Depending on the quality type, it may add additional parameters that will appear directly after this one.
@@ -75,7 +75,7 @@ There is still another issue: the final image can still be wrapped. You can alwa
 
 If you can find ways to improve our implementation of the algorithm, please let us know.
 
-To use this algorithm in ImageJ, run the command "Plugins &gt; DHM &gt; Phase Unwrapping &gt; Double Wavelength". Here is a description of all of the parameters:
+To use this algorithm in ImageJ, run the command {% include bc path="Plugins | DHM | Phase Unwrapping | Double Wavelength" %}. Here is a description of all of the parameters:
 
 -   Phase Image 1: The first phase image to use.
 -   Wavelength 1: The wavelength of light used to create the first image. There are no units on it because the actual value of the wavelength is not important, only the difference between it and the other wavelength is important.

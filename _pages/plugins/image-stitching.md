@@ -158,7 +158,7 @@ Now, you can choose to open the input stacks as *virtual stacks*. This results i
 
 *Computation parameters*: If you choose *Save memory (but be slower)* the stitching will compute all pairwise correlations one after another. Although it is performed multi-threaded it is slower than computing as many pairwise correlations at the same time as processors are available done by the option *Save computation time (but use more RAM)*.
 
-Finally, you can choose whether to display the result or write the fused image to disk. If you choose to write it to disk, it will require very little memory to do so as it writes it slice-by-slice. You can later on open this dataset virtually or partially and convert it back to a Hyperstack (Image -&gt; Hyperstacks -&gt; Stack to Hyperstack ...). Writing it directly to disk, will, however, take more time than just displaying it.
+Finally, you can choose whether to display the result or write the fused image to disk. If you choose to write it to disk, it will require very little memory to do so as it writes it slice-by-slice. You can later on open this dataset virtually or partially and convert it back to a Hyperstack ({% include bc path="Image | Hyperstacks | Stack to Hyperstack..." %}). Writing it directly to disk, will, however, take more time than just displaying it.
 
 ### Grid Collection/Stitching plugin
 
@@ -180,7 +180,7 @@ Three-dimensional stitching will not work for z-Stack size of smaller than 3 pix
 
 ### Register different channels to each other
 
-The plugin is not build to register different channels to each other. However, if you want to do that anyways simply convert channels into time-points and run it as if it was time-lapse registration. Afterwards you can convert it back. The easiest to achieve this is to use **Image -&gt; Hyperstacks -&gt; Re-order hyperstack ...**
+The plugin is not build to register different channels to each other. However, if you want to do that anyways simply convert channels into time-points and run it as if it was time-lapse registration. Afterwards you can convert it back. The easiest to achieve this is to use {% include bc path="Image | Hyperstacks | Re-order hyperstack..." %}
 
 ### Timelapse alignment for Grid/Collection Stitching
 

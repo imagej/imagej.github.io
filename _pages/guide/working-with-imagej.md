@@ -394,7 +394,7 @@ It is also possible to simulate color blindness using the [Vischeck](http://www.
 
 </div>
 
-     /* This macro replaces Red with Magenta in RGB images using Process&gt;Image Calculator...  command. */
+     /* This macro replaces Red with Magenta in RGB images using Process>Image Calculator...  command. */
        if (bitDepth!=24)
            exit(&quot;This macro requires an RGB image&quot;);
      setBatchMode(true);
@@ -423,14 +423,14 @@ In a [↓composite](#index-Color-Composites) image colors are handled through ch
 
 </div>
 
-     /* This macro replaces Red with Magenta in RGB images using the Image&gt;Color&gt;Channels... tool. */
+     /* This macro replaces Red with Magenta in RGB images using the Image>Color>Channels... tool. */
        if (bitDepth!=24)         // Ignore non-RGB images
            exit(&quot;This macro requires an RGB image&quot;);
      setBatchMode(true);         // Enter 'Batch' mode
        title = getTitle();       // Retrieve the image title
-       run(&quot;Make Composite&quot;);    // Run Image&gt;Color&gt;Make Composite
-       run(&quot;Magenta&quot;);           // Run Image&gt;Lookup Tables&gt;Magenta on channel 1
-       run(&quot;RGB Color&quot;);         // Run Image&gt;Type&gt;RGB Color
+       run(&quot;Make Composite&quot;);    // Run Image>Color>Make Composite
+       run(&quot;Magenta&quot;);           // Run Image>Lookup Tables>Magenta on channel 1
+       run(&quot;RGB Color&quot;);         // Run Image>Type>RGB Color
        rename(title + &quot; (MGB)&quot;); // Rename the image
      setBatchMode(false);        // Restore 'GUI' mode
 

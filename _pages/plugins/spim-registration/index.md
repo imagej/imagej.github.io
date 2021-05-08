@@ -30,14 +30,14 @@ We developed several algorithms for the registration and fusion of multi-angle S
 
 -   **Multi-view registration:** Aligns all views of the dataset  
       
-    \* [Bead-based registration](/plugins/spim-bead-registration): Uses flourescent beads to achieve the alignment. This method is very fast and solves timeseries registration, but relies on the incorporation of fluorescent beads. The plugin can be found in Plugins-&gt;SPIM Registration-&gt;Bead-based registration.
+    \* [Bead-based registration](/plugins/spim-bead-registration): Uses flourescent beads to achieve the alignment. This method is very fast and solves timeseries registration, but relies on the incorporation of fluorescent beads. The plugin can be found in {% include bc path="Plugins|SPIM Registration|Bead-based registration" %}.
     -   [Segmentation-based registration](Segmentation-based_registration): Uses structures within the sample like nuclei to achieve registration. It is slower and timelapse registration might be a sample dependent problem, but does not require any special sample prepration.
 
 <!-- -->
 
 -   **Multi-view fusion:** Computes the output image(s) based on the registration results  
       
-    \* [Multi-view fusion](/plugins/multi-view-fusion): Performs a weighted average fusion of the dataset, which includes blending and/or content-based weightening. The plugin can be found in Plugins-&gt;SPIM Registration-&gt;Multi-view fusion.
+    \* [Multi-view fusion](/plugins/multi-view-fusion): Performs a weighted average fusion of the dataset, which includes blending and/or content-based weightening. The plugin can be found in {% include bc path="Plugins|SPIM Registration|Multi-view fusion" %}.
     -   [Multi-view deconvolution](/plugins/multi-view-deconvolution): Performs a multi-view deconvolution of the dataset which requires an estimation of the point spread function.
 
 ***Please note:*** *the SPIM registration has been rewritten and now replaces the "old" plugin collection (Registration, Advanced Registration, MultiChannel Registration) which has been moved to the deprecated folder. For information regarding these outdated plugins please refer to this [page](/plugins/spim-bead-registration-deprecated).*
@@ -56,7 +56,7 @@ The pipeline is relatively linear as described above, we highlight the steps whe
 
 ## How do I view fused, saved output image(s)
 
-The fused images will be saved in the *output* directory of the dataset as a collection of two-dimensional planes. The created output images can be viewed for example with Plugins-&gt;Image5D-&gt;[Virtual Image 5D Opener](/ij/plugins/image5d.html) or via the Plugins-&gt;LOCI-&gt;[Bio-Formats Importer](http://www.loci.wisc.edu/software/bio-formats) (check the option *Group files with similar names*).
+The fused images will be saved in the *output* directory of the dataset as a collection of two-dimensional planes. The created output images can be viewed for example with {% include bc path="Plugins|Image5D|[Virtual Image 5D Opener](/ij/plugins/image5d.html)" %} or via the {% include bc path="File|Import|Bio-Formats..." %} (check the option *Group files with similar names*).
 
 ## Downloading example dataset
 
@@ -64,7 +64,7 @@ There is a 7-angle SPIM dataset of *Drosophila* available [here](http://fly.mpi-
 
 ## System requirements
 
-Multi-view SPIM datasets are typically rather large, therefore it is recommended to use the registration plugin on a computer with a lot of RAM. The minimal requirement for the example dataset is **at least 4Gb** of memory however we recommend an **16Gb+** system. You may need to increase the Fiji memory limit by going to Edit-&gt;Options-&gt;Memory & Threads.
+Multi-view SPIM datasets are typically rather large, therefore it is recommended to use the registration plugin on a computer with a lot of RAM. The minimal requirement for the example dataset is **at least 4Gb** of memory however we recommend an **16Gb+** system. You may need to increase the Fiji memory limit by going to {% include bc path="Edit|Options|Memory & Threads" %}.
 
 ## Cluster processing
 

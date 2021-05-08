@@ -28,7 +28,7 @@ The plugin currently has a bug in that it creates an excess number of levels, wh
 
 The plugin can be downloaded from the [SciJava Maven repository](//develop/project-management#maven) as [loci:deep\_zoom-plugin](https://maven.scijava.org/#nexus-search;gav~loci~deep_zoom-plugin).
 
-Copy the plugin jar to ImageJ's plugins folder.  Once restarted the plugin will appear in ImageJ's 'File/Save As...' menu as 'Deep Zoom...'.
+Copy the plugin jar to ImageJ's plugins folder.  Once restarted the plugin will appear in ImageJ's menu at {% include bc path="File|Save As...|Deep Zoom..." %}.
 
 ## Description
 

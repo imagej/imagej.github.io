@@ -38,9 +38,9 @@ See the [GitHub issue tracker](https://github.com/fiji/Image_5D/issues)
 
 ### Sample data
 
-A sample 5D data set [is available](/ij/images/Spindly-GFP.zip). In consists of HeLa cells with an H2B-GFP construct to stain the chromatin imaged in fluorescence and transmission. A large part of the GFP fluorescence is bleached in the second frame and the cells go through mitosis, later. It has 2 channels, 24 slices and 7 frames. The file (Spindly-GFP.zip) is a TIFF stack contained in a ZIP archive. To view it with Image5D, open it using *File/Open* or drag and drop, then convert it to an Image5D using {% include bc path='Plugins|Image5D|Stack to Image5D'%}.
+A sample 5D data set [is available](/ij/images/Spindly-GFP.zip). In consists of HeLa cells with an H2B-GFP construct to stain the chromatin imaged in fluorescence and transmission. A large part of the GFP fluorescence is bleached in the second frame and the cells go through mitosis, later. It has 2 channels, 24 slices and 7 frames. The file (Spindly-GFP.zip) is a TIFF stack contained in a ZIP archive. To view it with Image5D, open it using {% include bc path="File|Open" %} or drag and drop, then convert it to an Image5D using {% include bc path='Plugins|Image5D|Stack to Image5D'%}.
 
-A sample [16-bit RGB data set](/ij/macros/images/MyoblastCells.zip) of triple labeled cloned myoblast cells is also available. To view it with Image5D, open it using *File/Open* or drag and drop, then convert it to an Image5D using {% include bc path='Plugins|Image5D|Stack to Image5D'%}. This image is courtasy of Dr. Angelica Keller and Juliette Peltzer, Faculte des Sciences et Technologies, Universite Paris 12 Val de Marne, France.
+A sample [16-bit RGB data set](/ij/macros/images/MyoblastCells.zip) of triple labeled cloned myoblast cells is also available. To view it with Image5D, open it using {% include bc path="File|Open" %} or drag and drop, then convert it to an Image5D using {% include bc path='Plugins|Image5D|Stack to Image5D' %}. This image is courtasy of Dr. Angelica Keller and Juliette Peltzer, Faculte des Sciences et Technologies, Universite Paris 12 Val de Marne, France.
 
 ## See also
 

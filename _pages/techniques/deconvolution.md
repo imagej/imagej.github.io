@@ -48,7 +48,7 @@ The beads should be sufficiently diluted so that on average only one bead is vis
 
 A PSF should be obtained for every combination of z-step intervals, wavelengths, objectives, and immersion medium. However, there is no sense in measuring the PSF of low magnification objectives which give undersampled images, or stainings like DAPI which do not need to be deconvolved.
 
-The last step in generating a useful measured PSF for deconvolution is to subtract the background signal from the stacks so that some pixel values will be equal to zero where there is no real signal. To accomplish this, simply measure the mean intensity of a black region in the stack, outside of the Airy rings. This mean value represents the background signal in the image, which usually originates from the positive offset/bias of a CCD camera chip. Subtract the mean value from all the pixels in the stack (use ImageJ/Process/Math/Subtract...). If this step is omitted, square deformation artifacts may be visible in the deconvolved image.
+The last step in generating a useful measured PSF for deconvolution is to subtract the background signal from the stacks so that some pixel values will be equal to zero where there is no real signal. To accomplish this, simply measure the mean intensity of a black region in the stack, outside of the Airy rings. This mean value represents the background signal in the image, which usually originates from the positive offset/bias of a CCD camera chip. Subtract the mean value from all the pixels in the stack (use {% include bc path="ImageJ|Process|Math|Subtract..." %}). If this step is omitted, square deformation artifacts may be visible in the deconvolved image.
 
 ### Obtaining images optimized for deconvolution
 

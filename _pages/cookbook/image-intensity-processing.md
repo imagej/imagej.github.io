@@ -50,7 +50,7 @@ The Multi Measure plugin that comes with the installation is v3.2.
 5.  Select ROIs and "*Add*" to the ROI manager. Click the "*Show All*" button to help avoid analyzing the same cell twice.
 6.  After selecting ROIs to be analyzed in the reference image, you can draw them to the reference image by clicking the "*More&gt;&gt;*" button and selecting *Draw*. Save the reference image to the experiment's data folder and then click on the stack to be analyzed.
 7.  Click the "*More&gt;&gt;*" button in the ROI manager and select the *Multi Measure* button to measure all the ROIs. Click *Ok*. This will put values from each slice in to a single row with multiple columns per slice. Clicking on "*Measure all 50 slices*" will put all values from all slices and each ROI in a single column.
-8.  Go to the *Results* window and select the menu item {% include bc path='Edit | Select All...'%}. Then *Edit/Copy*.
+8.  Go to the *Results* window and select the menu item {% include bc path='Edit | Select All...'%}. Then {% include bc path="Edit | Copy" %}.
 9.  Go to Excel and paste in the data. Check that everything was pasted in correctly
 
 ![](/media/ roi select all.jpg "_roi_select_all.jpg")

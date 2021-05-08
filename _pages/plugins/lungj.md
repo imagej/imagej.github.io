@@ -187,7 +187,7 @@ Applies the Neighbors filter from Trainable Segmentation/src/main/java/trainable
 
 {% include bc path='Plugins | LungJ | Other | Set Calibration'%}
 
-Allows to set the Calibration of an image, similar to Image &gt; Properties but with pixel value calibration function included.
+Allows to set the Calibration of an image, similar to {% include bc path="Image | Properties" %} but with pixel value calibration function included.
 
 ### Stretch Histogram (Stretch\_Histogram)
 

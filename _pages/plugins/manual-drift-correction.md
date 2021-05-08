@@ -14,7 +14,7 @@ Manual Drift Correction plugin allows to correct drift in an image sequence by u
 
 ### Installation
 
-To get started with the plugin first download it (![](/media/Manual Drift Correction-1.0.0.jar.zip "fig:Manual_Drift_Correction-1.0.0.jar.zip")), unzip it and install it (Fiji menu Plugins&gt;Install...). Alternatively you can manually copy the unzipped file in <Fiji folder>/plugins.Once the file is installed, restart Fiji. A new entry will be available in the menu Plugins&gt;Registration&gt;Manual drift correction meaning that the plugin was properly installed.
+To get started with the plugin first download it (![](/media/Manual Drift Correction-1.0.0.jar.zip "fig:Manual_Drift_Correction-1.0.0.jar.zip")), unzip it and install it (Fiji menu {% include bc path="Plugins|Install..." %}). Alternatively you can manually copy the unzipped file in <Fiji folder>/plugins.Once the file is installed, restart Fiji. A new entry will be available in the menu {% include bc path="Plugins|Registration|Manual drift correction" %} meaning that the plugin was properly installed.
 
 ### Tutorial
 
@@ -24,9 +24,9 @@ To perform Manual drift correction:
 2.  Browsing through the image of the sequence, select some landmarks that will be visible throughout the time sequence.
 3.  Starting from the first timesteps annotate these landmark position with a ROI (point, line or polyline) and add them to the Roi Manager (this can be done by pressing the "t" on your keyboard).
 4.  Going further in time, repeat the previous step annotating the same landmark in the same order. Reapeat the operation till you covered the whole sequence.
-5.  If your image is an hyperstack check that the time dimension is properly set in image properties (menu Image&gt;Properties)
+5.  If your image is an hyperstack check that the time dimension is properly set in image properties (menu {% include bc path="Image|Properties" %})
 6.  Set the time slider to the reference image (all other image of the stack will be registered to this one)
-7.  Click the menu Plugins&gt;Registration&gt;Manual drift correction. The registered stack will open in the Fiji UI.
+7.  Click the menu {% include bc path="Plugins|Registration|Manual drift correction" %}. The registered stack will open in the Fiji UI.
 
 ### Limitations
 

@@ -32,7 +32,7 @@ In 3Dscript, animations are defined by a syntax based on natural English languag
 
 ## Installation
 
--   Click on Help&gt;Update...
+-   Click on {% include bc path="Help|Update..." %}
 -   Click on Manage update sites
 -   Check the box in front of '3Dscript'
 -   Click on Close
@@ -41,14 +41,14 @@ In 3Dscript, animations are defined by a syntax based on natural English languag
 
 ## Quick start
 
--   Click on File&gt;Open Samples&gt;T1 Head
--   Click on Plugins&gt;3D script&gt;Interactive Animation
+-   Click on {% include bc path="File|Open Samples|T1 Head" %}
+-   Click on {% include bc path="Plugins|3D script|Interactive Animation" %}
 -   In the "Interactive Raycaster" window, click on "show" next to "Animation"
 -   Click on "Start text-based animation editor"
 -   In the editor window, type the following text: From frame 0 to frame 200 rotate by 360 degrees horizontally
 -   Click on "Run" This will render 200 frames of a movie sequence, within which the MRI data set rotates by 360 degrees.
 
-Rendering of 200 frames of this data set will typically take less than a minute on an OpenCL-enabled Graphics Card. The resulting stack can be saved as a video file using Fiji's File&gt;Save As&gt;AVI... command.
+Rendering of 200 frames of this data set will typically take less than a minute on an OpenCL-enabled Graphics Card. The resulting stack can be saved as a video file using Fiji's {% include bc path="File|Save As|AVI..." %} command.
 
 To run the software on another data set, open a different image stack (instead of the T1 Head sample data) before running 3Dscript.
 

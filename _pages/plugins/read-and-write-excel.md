@@ -207,11 +207,11 @@ http://sites.imagej.net/ResultsToExcel
 
 ## Installation
 
--   With ImageJ open, navigate to 'Help'
--   In the presented drop down menu, then select 'Update...'
+-   With ImageJ open, navigate to {% include bc path="Help" %}
+-   In the presented drop down menu, then select {% include bc path="Update..." %}
 -   Allow ImageJ to check for updates
 -   If required, download updates and restart ImageJ as prompted
--   Repeat the first two steps = Help&gt;Update...
+-   Repeat the first two steps = {% include bc path="Help|Update..." %}
 -   This time ImageJ should let you know that there are no updates available
 -   Click on 'OK' but do not close the 'ImageJ Updater' window that is also open
 -   In the bottom left of the 'ImageJ Updater' window, find and click on 'Manage update sites'

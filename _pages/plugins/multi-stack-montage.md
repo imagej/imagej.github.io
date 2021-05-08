@@ -20,7 +20,7 @@ This plugin is available from the {% include list-of-update-sites content='PTBIO
 
 ## Use
 
-Call up the plugin using *Plugins-&gt;BIOP-&gt;Multi Stack Montage...* and select the stacks that you wish to use.
+Call up the plugin using {% include bc path="Plugins|BIOP|Multi Stack Montage..." %} and select the stacks that you wish to use.
 
 <figure><img src="/media/Hyperstacks Montage menu.jpg" title="Interface of the plugin" width="400" alt="Interface of the plugin" /><figcaption aria-hidden="true">Interface of the plugin</figcaption></figure>
 

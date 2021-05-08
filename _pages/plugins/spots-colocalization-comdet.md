@@ -21,7 +21,7 @@ For **colocalization** you need a [color composite image](/cookbook/color-image-
 
 The plugin works with time/z-stacks.
 
-Launch the detection by choosing *Plugins-&gt;ComDet-&gt;Detect Particles*.
+Launch the detection by choosing {% include bc path="Plugins|ComDet|Detect Particles" %}.
 
 http://katpyxa.info/software/ComDet/ComDet_open_v.0.5.0.png
 

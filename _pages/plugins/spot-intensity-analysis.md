@@ -22,19 +22,19 @@ This plugin has two phases, in the first phase it detects spots. It does so by s
 
 ![](/media/SpotIntensityAnalysisImage.jpg "fig:SpotIntensityAnalysisImage.jpg") ![](/media/SpotIntensityProfile.png "fig:SpotIntensityProfile.png")
 
-In the second phase the intensities of each spot at each time point is calculated. The Background image is first subtracted from each frame, and then the intensities of all pixels in a circle with given radius around the center (maximum) pixel is calculated. When selecting a row in the resulting table, a plot is generated with the intensities plotted as a function of time. Clicking in the image itself will select the nearest by spot, select the corresponding row in the table and draw the intensity plot. Data can be exported by selecting the table, followed by "File &gt; Save As" in the menu. The first two columns in the output table are the x and y position of the spot (in pixels). The keyboard key "j" will scroll up, the key "k" will scroll down.
+In the second phase the intensities of each spot at each time point is calculated. The Background image is first subtracted from each frame, and then the intensities of all pixels in a circle with given radius around the center (maximum) pixel is calculated. When selecting a row in the resulting table, a plot is generated with the intensities plotted as a function of time. Clicking in the image itself will select the nearest by spot, select the corresponding row in the table and draw the intensity plot. Data can be exported by selecting the table, followed by {% include bc path="File | Save As" %} in the menu. The first two columns in the output table are the x and y position of the spot (in pixels). The keyboard key "j" will scroll up, the key "k" will scroll down.
 
 If there is significant movement during the time-lapse image, you will first need to "de-jitter" using another ImageJ plugin.
 
 ## Testing
 
-To test the plugin, use the data: File &gt; Open Samples &gt; Tracks for Trackmate. Convert to 16 bit (Image &gt; Type &gt; 16-bit). In the Spot Intensity Analysis plugin set Time Interval to 1.0, Electrons per ADU to 1.0, Check First n Frames to 10, Spot Radius (pixels) to 3, Noise tolerance to 45, and Background estimation to Median-40. Press OK. You should get a table with 3 rows. Clicking on any of the rows in the table or the red circles in the image should bring up a graph with the intensity profile.
+To test the plugin, use the data: {% include bc path="File | Open Samples | Tracks for TrackMate" %}. Convert to 16 bit (Image | Type | 16-bit). In the Spot Intensity Analysis plugin set Time Interval to 1.0, Electrons per ADU to 1.0, Check First n Frames to 10, Spot Radius (pixels) to 3, Noise tolerance to 45, and Background estimation to Median-40. Press OK. You should get a table with 3 rows. Clicking on any of the rows in the table or the red circles in the image should bring up a graph with the intensity profile.
 
 ![](/media/SpotIntensityAnalysisScreenshot.png "fig:SpotIntensityAnalysisScreenshot.png") ![](/media/SpotIntensityAnalysisTable.png "fig:SpotIntensityAnalysisTable.png")
 
 ## Common Problems
 
-When the plugin does not work on your stack, or if it only works on the first image, make sure that ImageJ sees your stack as a time-lapse and not as a Z-stack. To do so, go to Image &gt; Properties, and make sure that the number of Slices is 1, and the number of Frames is whatever the length of your stack. If that is not the case, change the numbers in the dialog.
+When the plugin does not work on your stack, or if it only works on the first image, make sure that ImageJ sees your stack as a time-lapse and not as a Z-stack. To do so, go to {% include bc path="Image | Properties..." %}, and make sure that the number of Slices is 1, and the number of Frames is whatever the length of your stack. If that is not the case, change the numbers in the dialog.
 
 ## History
 

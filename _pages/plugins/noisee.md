@@ -36,7 +36,7 @@ NoiSee consists of two independent macros, one for each type of analysis:
 
 ## Bead Method
 
-Type "*NoiSee*" in the quick search bar, select "*Bead Analysis*" and click "*Run*". Otherwise, you can also locate the NoiSee macros in the Plugins &gt; NoiSee menu.
+Type "*NoiSee*" in the quick search bar, select "*Bead Analysis*" and click "*Run*". Otherwise, you can also locate the NoiSee macros in the {% include bc path="Plugins | NoiSee" %} menu.
 
 First, the parameters dialog will appear with the following input fields / options:
 

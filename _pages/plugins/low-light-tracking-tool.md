@@ -46,7 +46,7 @@ To begin use Fiji to load the data to be used for tracking. Use whichever method
 
 After the data is loaded, start the plugin by clicking:
 
-**plugins-&gt;Tracking-&gt;Low Light Tracking Tool**
+{% include bc path="Plugins|Tracking|Low Light Tracking Tool" %}
 
 ![](/media/LLTT Start1.jpg "LLTT_Start1.jpg")
 
@@ -202,8 +202,8 @@ The algorithm builds a {% include wikipedia title='Pyramid %28image processing%2
 # Tips
 
 -   If you want to be able to see the original image data and find your tracking results get in the way, you use the hot-key {% include key key='P' %} or {% include key keys='Ctrl|P' %} respectively to hide all overlays (all circles lines and cross-hairs drawn on top of the image).
--   If some of the windows appear to bright or to dark use **View-&gt;Adjust Brightness/Contrast** to correct them.
--   You can use **File-&gt;Export images** to export a sequence of image with the tracking results drawn on top of them. You can use this to create a movie in order to demonstrate your tracking results. In your working directory a new folder named **movieMain** will be created and filled with images.
+-   If some of the windows appear to bright or to dark use {% include bc path="View|Adjust Brightness/Contrast" %} to correct them.
+-   You can use {% include bc path="File|Export images" %} to export a sequence of image with the tracking results drawn on top of them. You can use this to create a movie in order to demonstrate your tracking results. In your working directory a new folder named **movieMain** will be created and filled with images.
 -   If you have multichannel data, each channel needs its own session. You can select which sessions are visible by checking their boxes in the **Visible Sessions** list. You can use the current session drop down menu to switch between sessions.
 -   You can zoom into the kymographs by moving the cursor over the kymograph window and holding down {% include key key='Shift' %}, while using the scroll wheel on the mouse.
 -   You can use the **optimize** button. This will perform the tracking of the selected objects on the single frame you are looking at. You can use this for example with **Automatic σ** turned on to determine the size of the target's PSF on a single frame.
@@ -216,9 +216,11 @@ There are several hot-keys you can use. You can find the key to press in the men
 
 The tracking results are stored in text files with the ending '.trcT'. Each file holds the result of one trace. The structure of the file name is the following:
 
-**<name of image file>\_<name of session>\_<label of trace>\_<id of trace>.trcT**
+```
+<name of image file>_<name of session>_<label of trace>_<id of trace>.trcT
+```
 
-The files are created in the working directory. Each file begins with some lines starting with '\#'. These lines store information for the tracking program they will be ignored by most programs like [MATLAB](/scripting/matlab) or gnuplot potentially used to further analyze the data. This meta information is followed by columns of data holding the actual tracking results. The columns have the following meaning:
+The files are created in the working directory. Each file begins with some lines starting with `#`. These lines store information for the tracking program they will be ignored by most programs like [MATLAB](/scripting/matlab) or gnuplot potentially used to further analyze the data. This meta information is followed by columns of data holding the actual tracking results. The columns have the following meaning:
 
 -   column 1 frame number
 -   column 2 trace id

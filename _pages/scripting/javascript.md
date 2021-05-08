@@ -569,7 +569,7 @@ Best practice is to create a single object in each library that uses the same na
       }
     }
 
-The following code demonstrates how to use the library, if it's saved as *SimpleObject.js* in *Plugins/JavaScript/*.
+The following code demonstrates how to use the library, if it's saved as `SimpleObject.js` in {% include bc path="Plugins|JavaScript" %}.
 
     load(Packages.ij.IJ.getDirectory("plugins") + "JavaScript" + java.io.File.separator + "SimpleObject.js");
     var obj = new SimpleObject(10, 10, 100);

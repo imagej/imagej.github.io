@@ -50,7 +50,7 @@ An initial estimate of the diameter of the fibrils is obtained by finding the fi
 
 The easiest way to install *MyofibrilJ* is by [adding](/update-sites/following#add-update-sites) its update site. Specifically:
 
--   launch Fiji and go to the menu *Help/Update...*
+-   launch Fiji and go to the menu {% include bc path="Help|Update..." %}
 -   once the dialog window *ImageJ Updater* is opened, click on the *Manage update sites* button
 -   click on the *Add update site* button in the site management dialog, and a new, empty line will appear at the end of the list
 -   in the column *Name*, fill in a name of your choice, e.g. Myofibril

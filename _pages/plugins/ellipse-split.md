@@ -38,7 +38,7 @@ Suppose you have the following input image:
 
 <figure><img src="/media/Ellipsesplit input.png" title="Ellipsesplit_input.png" width="300" alt="Ellipsesplit_input.png" /><figcaption aria-hidden="true">Ellipsesplit_input.png</figcaption></figure>
 
-Then the watershed approach (*Process -&gt; Binary -&gt; Watershed*) would give this result:
+Then the watershed approach ({% include bc path="Process | Binary | Watershed" %}) would give this result:
 
 <img src="/media/Ellipsesplit watershed.png" width="300"/>
 

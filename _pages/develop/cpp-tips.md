@@ -40,7 +40,7 @@ This is not possible in Java. Instead, you have to use String's substring() meth
 
 In the same spirit, it is not possible to realloc() memory. If you need a larger buffer, you have to allocate it, possibly copying existing data into it using the method *System.arraycopy()*.
 
-## There is no need for *this-&gt;*
+## There is no need for `this->`
 
 In Java, member variables and methods can be accessed without the prefix *this.*, so it is considered better to skip that unnecessary prefix. But it also means that your code has to make clear what variables are local in another manner.
 

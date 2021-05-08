@@ -13,7 +13,7 @@ A z-series is generally difficult to represent as a 2-D image for publication pu
 
 ### Maximum Intensity Z-projection
 
-Z Project is a method of analyzing a stack by applying different projection methods to the pixels within the stack. This process may be used to highlight specific data from the stack and is accessed using *"Image/Stacks/Z Project..."*
+Z Project is a method of analyzing a stack by applying different projection methods to the pixels within the stack. This process may be used to highlight specific data from the stack and is accessed using {% include bc path="Image|Stacks|Z Project..." %}
 
 When Z Project opens, it prompts for a start and stop slice, which will determine the range of the stack that will be included in the z projection. The default for these values is the endpoint slices of the stack.
 
@@ -27,7 +27,7 @@ The six projection methods clockwise from top left: average intensity, maximum i
 
 ### Grouped Z Projector
 
-The Grouped Z Project tool ("*Image/Stacks/Tools/Grouped Z Project...*") works similarly to Z Project in terms of projection methods. This plugin uses the maximum intensity, average intensity, or sum slices projection method to apply a z projection to a stack of images. Unlike the standard Z Project, this plugin prompts for a group size that must be a factor of the total number of slices in the stack.
+The Grouped Z Project tool ({% include bc path="Image|Stacks|Tools|Grouped Z Project..." %}) works similarly to Z Project in terms of projection methods. This plugin uses the maximum intensity, average intensity, or sum slices projection method to apply a z projection to a stack of images. Unlike the standard Z Project, this plugin prompts for a group size that must be a factor of the total number of slices in the stack.
 
 The plugin will then apply the selected projection method to subgroups with this number of slices, starting with the first slice. The result of running this plugin is a new stack where each slice is a a projection of a subset of the original stack. This is a useful plugin for analyzing large stacks where the change from slice to slice is still relevant, but not all slices need to be examined individually. If group size is set to equal the number of slices in the stack, Grouped Z Project will evaluate the stack in the same manner as Z Project.
 
@@ -59,7 +59,7 @@ J. Berent, B. Forster, D. Van De Ville, D. Sage, M. Unser, "[Extended Depth-of-F
 
 ## Depth Coding
 
-One method of preserving some z-information in a 2D image is to 'depth-encode' the stack. A monochrome 3D image can be colored so that the color represents the z-depth. Any subsequent projection will retain this z-encoding. An 8-bit stack can be depth encoded with the menu command "*Image/Hyperstacks/Temporal-Color Code*". From there you will be able to choose a LUT as well as the start and end slices from the stack.
+One method of preserving some z-information in a 2D image is to 'depth-encode' the stack. A monochrome 3D image can be colored so that the color represents the z-depth. Any subsequent projection will retain this z-encoding. An 8-bit stack can be depth encoded with the menu command {% include bc path="Image|Hyperstacks|Temporal-Color Code" %}. From there you will be able to choose a LUT as well as the start and end slices from the stack.
 
 Another option is to use the plugin *Z Code Stack* for the results shown below.
 
@@ -77,7 +77,7 @@ Maximum Intensity Projections of each:
 
 ## 3D Project
 
-3D project (*"Image/Stacks/3D Project"*) creates a 3D rendering from a stack and rotates the resulting object through a range of angles. When using this plugin, you will be prompted for a variety of initial specifications. Based on these values, the program will generate a stack depicting a 360 degree rotation of the 3D projection. There are three projection methods available: nearest point, brightest point, and mean value.
+3D project ({% include bc path="Image|Stacks|3D Project" %}) creates a 3D rendering from a stack and rotates the resulting object through a range of angles. When using this plugin, you will be prompted for a variety of initial specifications. Based on these values, the program will generate a stack depicting a 360 degree rotation of the 3D projection. There are three projection methods available: nearest point, brightest point, and mean value.
 
 <figure><img src="/media/3d project window.png" title="3d_project_window.png" width="225" height="293" alt="3d_project_window.png" /><figcaption aria-hidden="true">3d_project_window.png</figcaption></figure>
 
@@ -131,15 +131,15 @@ The window seen when 3D Viewer is opened.
 
 To use the 3D Viewer, an 8-bit or RGB image is required. If used on another type of stack, the plugin will have a prompt for you to choose to convert to these types.
 
-The current display mode may be changed by clicking *"Edit/Display As"*. This will let you choose from 'Volume', 'Orthoslice', 'Multi-orthoslice', 'Surface', and 'Surface Plot 2D'. When using the 'Orthoslice' mode, you can right click on the viewer and select 'Adjust Slices' to update the placement of the x, y, and z coordinates. You can also press the {% include key key='X' %}, {% include key key='Y' %}, or {% include key key='Z' %} keys in combination with arrow keys to move the slices.
+The current display mode may be changed by clicking {% include bc path="Edit|Display As" %}. This will let you choose from 'Volume', 'Orthoslice', 'Multi-orthoslice', 'Surface', and 'Surface Plot 2D'. When using the 'Orthoslice' mode, you can right click on the viewer and select 'Adjust Slices' to update the placement of the x, y, and z coordinates. You can also press the {% include key key='X' %}, {% include key key='Y' %}, or {% include key key='Z' %} keys in combination with arrow keys to move the slices.
 
 <figure><img src="/media/3d viewer volume.png" title="3d_viewer_volume.png" width="264" height="286" alt="3d_viewer_volume.png" /><figcaption aria-hidden="true">3d_viewer_volume.png</figcaption></figure>
 
 Example of the type of volume seen in 3D viewer.
 
-The "Edit" menu supplies some more options to change the color and transparency of the rendering. *"Edit/Change Color"* can be used to edit the color of the rendering, including an option to apply to all time points. *"Edit/Change Transparency"* may be used for a straightforward way to edit the transparency for all types of displays. *"Edit/Change Channels"* provides the option to select or deselect any combination of the red, green, and blue channels. *"Edit/Adjust Threshold"* can be used for both the 'Volume' and the 'Surface' viewing options.
+The {% include bc path="Edit" %} menu supplies some more options to change the color and transparency of the rendering. {% include bc path="Edit|Change Color" %} can be used to edit the color of the rendering, including an option to apply to all time points. {% include bc path="Edit|Change Transparency" %} may be used for a straightforward way to edit the transparency for all types of displays. {% include bc path="Edit|Change Channels" %} provides the option to select or deselect any combination of the red, green, and blue channels. {% include bc path="Edit|Adjust Threshold" %} can be used for both the 'Volume' and the 'Surface' viewing options.
 
-*"Edit/Transformation/Set Transform"* can give more control over the placement of the rendering by specifying rotation origin and rotation axis. You can also use the 3x4 matrix in "Set Transform" to specify the x, y, and z axes of the transformed coordinate system in the first three columns and the vector from the old origin to the new origin in the fourth column.
+{% include bc path="Edit|Transformation|Set Transform" %} can give more control over the placement of the rendering by specifying rotation origin and rotation axis. You can also use the 3x4 matrix in "Set Transform" to specify the x, y, and z axes of the transformed coordinate system in the first three columns and the vector from the old origin to the new origin in the fourth column.
 
 ## Other Volume Rendering Methods
 
@@ -159,7 +159,7 @@ NB: VolumeJ's interactive rendering option is currently not working. Other modes
 
 1.  Select the volume stack to render.
 2.  Select the classifier (i.e. rendering algorithm). Choose 'Gradient no index' for grayscale stacks; choose 'Ramp + index' for RGB stacks.
-3.  Set the classifier threshold as the intensity of the "surface" of the object. This can be determined using the *"Image/Adjust/Threshold"* command.
+3.  Set the classifier threshold as the intensity of the "surface" of the object. This can be determined using the {% include bc path="Image|Adjust|Threshold" %} command.
 4.  Set the classifier deviation. Low values tend to result in sharper edges while higher values may be unfocused. A good compromise is 1-2.
 5.  Set the rotation angle (try -20 in the first box to rotate the volume backwards slightly).
 6.  Ensure that the aspect ratio is correct: VolumeJ should pick up the spatial calibration of the stack if it is present.
@@ -169,7 +169,7 @@ NB: VolumeJ's interactive rendering option is currently not working. Other modes
 
 ## Stack Reslice
 
-This generates a "side-view" of a stack along a user defined line. Select part of a stack to be axially sectioned using the line ROI tool from the toolbar. Select the menu item "*Image/Stacks/Reslice*" after drawing a straight line or rectangle onto an open stack.
+This generates a "side-view" of a stack along a user defined line. Select part of a stack to be axially sectioned using the line ROI tool from the toolbar. Select the menu item {% include bc path="Image|Stacks|Reslice" %} after drawing a straight line or rectangle onto an open stack.
 
 ![](/media/Stack reslice example.png "stack_reslice_example.png")
 
@@ -177,11 +177,11 @@ Stack resliced along a vertical axis.
 
 From this point, you can generate a new stack by reconstructing the slices along the selection. If you drew a line, the new stack will be from the angle of this new line, as if it "cut" through the stack. You'll also be able to specify the number of slices to include in the stack and the spacing between the slices. Since you will be specifying both values, it is up to you to determine how many slices are needed to represent the region of interest in a substack. If you drew a rectangle over the initial stack, you won't be able to specify the number of slices, though you can still control the spacing. The application will then create a new stack depicting the region of interest chosen with the rectangle.
 
-The *Dynamic Reslice* plugin is used the same way as "*Image/Stacks/Reslice*". This plugin will dynamically update the slice generated as the ROI is changed on the original image.
+The *Dynamic Reslice* plugin is used the same way as {% include bc path="Image|Stacks|Reslice" %}. This plugin will dynamically update the slice generated as the ROI is changed on the original image.
 
 ## Orthogonal Views
 
-A straightforward method to visualize 3D renderings is through orthogonal views, accessed via "*Image/Stacks/Orthogonal Views*". This method may be used with a stack to display the XZ and YZ planes at a given point in the 3D image. When Orthogonal Views is opened, windows containing the two planes will dock alongside the original stack, with the intersection of the yellow lines on the stack indicating the point in the stack that is being analyzed. The views in the XZ and YZ planes will update automatically, either as the stack is set to a different slice or the lines are manually adjusted on any of the three windows.
+A straightforward method to visualize 3D renderings is through orthogonal views, accessed via {% include bc path="Image|Stacks|Orthogonal Views" %}. This method may be used with a stack to display the XZ and YZ planes at a given point in the 3D image. When Orthogonal Views is opened, windows containing the two planes will dock alongside the original stack, with the intersection of the yellow lines on the stack indicating the point in the stack that is being analyzed. The views in the XZ and YZ planes will update automatically, either as the stack is set to a different slice or the lines are manually adjusted on any of the three windows.
 
 <figure><img src="/media/Orthogonal views example.png" title="orthogonal_views_example.png" width="292" height="350" alt="orthogonal_views_example.png" /><figcaption aria-hidden="true">orthogonal_views_example.png</figcaption></figure>
 
@@ -215,7 +215,7 @@ Red-green anaglyph at left, red-cyan anaglyph on the right.
 
 Surface stereo pairs for a stack are simply made with VolumeJ's stereo pair button. This generates a stereo pair with a 5° difference.
 
-These two images can be merged to form an anaglyph using either the menu command *"Image/Color/Merge channels"* or the plugin *"Colour merge"*.
+These two images can be merged to form an anaglyph using either the menu command {% include bc path="Image|Color|Merge channels" %} or the plugin *"Colour merge"*.
 
 The "left eye" needs to be red; the "right eye" green or cyan.
 
@@ -225,7 +225,7 @@ Surface rendered anaglyph movies can be constructed using VolumeJ following an a
 2.  Duplicate the surface rendered movie.
 3.  Delete the top slice from the original movie.
 4.  Delete the last slice from the duplicate movie.
-5.  Merge the stacks using the menu command *"Image/Color/RGB merge"*.
+5.  Merge the stacks using the menu command {% include bc path="Image|Color|RGB merge" %}.
 6.  Assign the duplicate stack as red and the original stack as green. For Red-Green anaglyphs, set blue to be none. For red-cyan anaglyphs, set the blue channel to be the same as green.
 
  

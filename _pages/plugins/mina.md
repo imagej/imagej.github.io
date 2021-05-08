@@ -140,7 +140,7 @@ Please ensure you have read through the full wiki page prior to using the tool. 
 
 1.  Open an image. MiNA expects an 8-bit or 16-bit single channel image that can be 2D or 3D (with limited options).
 2.  Select a single cell using the rectangular ROI tool. You may make a copy of the cropped region if you wish.
-3.  Run the script by navigating to Plugins -&gt; StuartLab -&gt; MiNA Scripts -&gt; MiNA Analyze Morphology. A user dialog will pop up. Fill in the parameters as desired and select OK to run the analysis.
+3.  Run the script by navigating to {% include bc path="Plugins | StuartLab | MiNA Scripts | MiNA Analyze Morphology" %}. A user dialog will pop up. Fill in the parameters as desired and select OK to run the analysis.
 4.  An overlay as shown in an above figure will be generated for you to visually inspect the faithfulness of the analysis. The magenta region is the binarized signal used for calculating the area or volume. The green lines are the morphological skeleton.
 5.  To save a copy of the image with overlays, save the image as a PNG or flatten the image and save it in whatever format you wish.
 

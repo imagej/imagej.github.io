@@ -25,7 +25,7 @@ If you are using NanoTrackJ in a scientific publication, please cite:
 
 **Center Estimation:** here are three methods available. The blob method requires a binary image. The objects you want to track should be connected foreground pixels. Such connected regions are often called "blobs". Each blob represents a particle to be tracked. You have to segment your image (e.g. through thresholding) to use this method. The centroid of the blob is used for tracking.
 
-The *maxima method* utilizes the ["Process -&gt; Find Maxima"](/ij/docs/menus/process.html#find-maxima) method of ImageJ. A "Spot Assistant" helps the user to select an appropriate mean filter size and tolerance value.
+The *maxima method* utilizes the [{% include bc path="Process|Find Maxima" %}](/ij/docs/menus/process.html#find-maxima) method of ImageJ. A "Spot Assistant" helps the user to select an appropriate mean filter size and tolerance value.
 
 ![](/media/Spotassistant.png "Spotassistant.png")
 
@@ -33,7 +33,7 @@ This is the recommended method and it is also usable with RGB image series. The 
 
 ![](/media/Spots.png "fig:Spots.png") ![](/media/SpotsMax.png "fig:SpotsMax.png")
 
-The *maxima method & gaussian fit* also utilizes the ["Process -&gt; Find Maxima"](/ij/docs/menus/process.html#find-maxima) method of ImageJ but do an gaussian fit after that to improve the estimation qualtity. Theoretically it achieves sub-pixel accuracy. However, diffraction patterns often suffers from saturation and sometimes they do not even have a gaussian shape so that sub-pixel accuracy is not achievable.
+The *maxima method & gaussian fit* also utilizes the [{% include bc path="Process|Find Maxima" %}](/ij/docs/menus/process.html#find-maxima) method of ImageJ but do an gaussian fit after that to improve the estimation qualtity. Theoretically it achieves sub-pixel accuracy. However, diffraction patterns often suffers from saturation and sometimes they do not even have a gaussian shape so that sub-pixel accuracy is not achievable.
 
 **Diffusion-Coefficient-Estimator:** Two methods are available: The regression method and the covariance method. The *regression method* is the most used in literature to estimate the diffusion coefficient. It evaluates the mean squared displacement for different time lags. Then it fits a regression line to the data points. This regression line is not constrained to go through the point of origin (0,0). The slope of this regression line is proportional to diffusion coefficient. This method is very simple but unfortunately error prone. Up to now its not clear, how many data points lead to the best estimate. Therefore, the plugin allows the user to determine what minimum and maximum time lag should be used.
 
@@ -59,7 +59,7 @@ The *covariance estimator* is a good alternative to the regression estimator. It
 
 **Maximum Diameter (WM only, 0 = auto):** This parameter is only relevant if Walker's Method is used to estimate the size distribution. Walker's method estimates the size distribution for a the diameter range. As larger this range is as more time consuming is the estimation. To increase the performance it is possible to set an upper limit of the diameter range. If the upper limit is set to zero, it will automatically set to the largest value needed to display the whole distribution.
 
-**Black/Dark Background:** This checkbox states if background pixels are black (foreground-&gt;white) or white (foreground -&gt; black).
+**Black/Dark Background:** This checkbox states if background pixels are black (foreground -&gt; white) or white (foreground -&gt; black).
 
 **Correct Linear Drift:** The software is capable to correct a simple linear drift. The drift is estimated by averaging over all distances of all particles in x and y direction. If there is no drift, this estimate should be 0.
 

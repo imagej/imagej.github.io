@@ -27,9 +27,9 @@ This plugin requires at least Java 8 to function. Make sure that ImageJ is insta
 
 **How to install**
 
-There are two ways of installing the plugin. For developers, who cloned this project and build a jar file via maven, you can install the plugin in ImageJ via 'Plugins&gt;Install PlugIn...'. Users can enable the update site 'PhotonImaging' via 'Update...&gt;Manage update sites'. This will prompt you to download the plugin the next time ImageJ searches for updates.
+There are two ways of installing the plugin. For developers, who cloned this project and build a jar file via maven, you can install the plugin in ImageJ via {% include bc path="Plugins|Install PlugIn..." %}. Users can enable the update site 'PhotonImaging' via {% include bc path="Update...|Manage update sites" %}. This will prompt you to download the plugin the next time ImageJ searches for updates.
 
-After you installed the plugin, restart ImageJ. When correctly installed, you'll now have 'Plugins&gt;Photon Image Processor' available. If you have enabled the update site, you will automatically receive updates for the plugin when their released.
+After you installed the plugin, restart ImageJ. When correctly installed, you'll now have {% include bc path="Plugins|Photon Image Processor" %} available. If you have enabled the update site, you will automatically receive updates for the plugin when their released.
 
 ------------------------------------------------------------------------
 

@@ -17,4 +17,4 @@ BigDataProcessor in an ImageJ1 based FIJI plugin for efficient inspection and pr
 
 BigDataProcessor can be installed from the ImageJ update site: http://sites.imagej.net/EMBL-CBA/. For details on how to install an update site click [here](/update-sites/following).
 
-To start BigDataProcessor in ImageJ, select Plugins &gt; BigDataTools &gt; BigDataProcessor from the main menu.
+To start BigDataProcessor in ImageJ, select {% include bc path="Plugins | BigDataTools | BigDataProcessor" %} from the main menu.

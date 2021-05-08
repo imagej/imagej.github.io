@@ -612,7 +612,7 @@ The GPU mediated deconvolution is faster, but currently only by a factor of 2-3 
 
 In contrast to the multiview fusion plugin described above, [Stephan Preibisch](http://fly.mpi-cbg.de/~preibisch/), in his infinite wisdom ;-), did not implement the option to scale down the data before deconvolution starts. Since deconvolution is a very expensive operation, it will take a very long time (hours) on full resolution data. If the sole purpose of fusing the data by deconvolution is to render them in 3D, the full resolution images are not necessary, ergo we need to downsample. Fortunately Stephan implemented a workaround in the form of a script that prepends a transformation (such as scaling) to the raw SPIM data.
 
-The script can be found under Plugins-&gt;SPIM registration-&gt;Utilities-&gt;Apply external transformation (or press letter **l** and type Apply external transformation). The initial dialog is reminiscent of SPIM registration, the screen that comes after that is not.
+The script can be found under {% include bc path="Plugins|SPIM registration|Utilities|Apply external transformation" %} (or press {% include key key="L" %} and type `Apply external transformation`). The initial dialog is reminiscent of SPIM registration, the screen that comes after that is not.
 
 What we are looking at is the so called Affine Transformation Matrix that will be pre-concatenated to the transformation matrix in the registration files from bead based registration. The m00, m11 and m22 entries of the matrix represent the scaling of the image and so by setting all three of them to 0.5 we will downscale the image by a factor of 2.
 
@@ -773,29 +773,29 @@ Finally we want generate a beautiful 3D rendering of the downsampled, fused data
 
 The preparation phase of 3D rendering is a bit more complicated. We will use the [interactive Stack Rotation](/plugins/interactive-stack-rotation) plugin to position the specimen the way we want to render it and then send it to [3DViewer](/plugins/3d-viewer) plugin. Here is the recipe:
 
-1\. Open fused image stack and launch Interactive Stack Rotation plugin (Plugins-&gt;Transform-&gt;Interactive Stack Rotation). *Note: Familiarize yourself with the keystrokes that navigate the Interactive Stack Rotation. This is an extremely powerful way of looking at nearly isotropic 3D data coming from SPIM. More advanced version honoring these keystroke conventions is coming to Fiji soon (by Tobias Pietzsch).*
+1. Open fused image stack and launch Interactive Stack Rotation plugin ({% include bc path="Plugins|Transform|Interactive Stack Rotation" %}). *Note: Familiarize yourself with the keystrokes that navigate the Interactive Stack Rotation. This is an extremely powerful way of looking at nearly isotropic 3D data coming from SPIM. More advanced version honoring these keystroke conventions is coming to Fiji soon (by Tobias Pietzsch).*
 
-2\. Use the key commands to rotate the specimen into the position from which you want to 3D render it. *Note that the top slice with the lower z-index will be facing towards you when rendering in 3d Viewer.*
+2. Use the key commands to rotate the specimen into the position from which you want to 3D render it. *Note that the top slice with the lower z-index will be facing towards you when rendering in 3d Viewer.*
 
-3\. Record the transform by pressing letter **E** on the keyboard. The transformation matrix will appear in the Fiji log window.
+3. Record the transform by pressing letter **E** on the keyboard. The transformation matrix will appear in the Fiji log window.
 
-4\. Copy the transform into the render.bsh script shown below into line 41 (read the comments if unsure).
+4. Copy the transform into the render.bsh script shown below into line 41 (read the comments if unsure).
 
-5\. Press **enter** to apply the transformation to the stack.
+5. Press **enter** to apply the transformation to the stack.
 
-6\. Now use the rectangle tool to define a crop area that will include the specimen with minimal background. Write down the *x*,*y*coordinates *width* and *height* of the crop area and paste them into the render.bsh script (line 128). *Note: A more efficient way to capture the numbers is to start macro record before and simply copy and paste them from the macro recorder window.*
+6. Now use the rectangle tool to define a crop area that will include the specimen with minimal background. Write down the *x*,*y*coordinates *width* and *height* of the crop area and paste them into the render.bsh script (line 128). *Note: A more efficient way to capture the numbers is to start macro record before and simply copy and paste them from the macro recorder window.*
 
-7\. Apply crop (Image-&gt;Crop).
+7. Apply crop ({% include bc path="Image|Crop" %}).
 
-8\. Determine the z-index where the specimen starts and ends and paste them into the render.bsh script (line 131).
+8. Determine the z-index where the specimen starts and ends and paste them into the render.bsh script (line 131).
 
-9\. Run Duplicate command (Image-&gt;Duplicate) and enter the z-index as range (for example 20-200). A tightly cropped specimen stack should be the result of this series of operations.
+9. Run Duplicate command ({% include bc path="Image|Duplicate" %}) and enter the z-index as range (for example 20-200). A tightly cropped specimen stack should be the result of this series of operations.
 
-10\. Adjust brightness and contrast on the stack to see the data well, perhaps slightly saturating and write the min and max into the render.bsh script (line 31).
+10. Adjust brightness and contrast on the stack to see the data well, perhaps slightly saturating and write the min and max into the render.bsh script (line 31).
 
-11\. Launch the 3d Viewer and experiment with threshold (3d Viewer then Edit-&gt;Adjust Threshold) and transparency (3DViewer then Edit-&gt;Change Transparency) and enter them into the render.bsh script (lines 154 and 156).
+11. Launch the 3d Viewer and experiment with threshold (3d Viewer then {% include bc path="Edit|Adjust Threshold" %}) and transparency (3DViewer then {% include bc path="Edit|Change Transparency" %}) and enter them into the render.bsh script (lines 154 and 156).
 
-12\. Finally modify the dimensions of the Snapshot that the 3D VIewer takes to match the dimensions of the crop area (width and height) on line 161.
+12. Finally modify the dimensions of the Snapshot that the 3D VIewer takes to match the dimensions of the crop area (width and height) on line 161.
 
 We are ready to begin the cluster processing by creating our old friend, the **create-render-job** bash script in a directory jobs/3d\_rendering
 

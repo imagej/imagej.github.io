@@ -13,7 +13,7 @@ The plugin can be downloaded from: http://sites.imagej.net/Jhowarth/
 
 Copy the cell\_detector-1.0.0-SNAPSHOT.jar to ImageJ's plugins folder. Also copy each jar within the the jars folder to ImageJ's jars folder. Once ImageJ is restarted the plugin will appear in the Plugin submenu as Cell Detector.
 
-Alternatively open your ImageJ application and add http://sites.imagej.net/Jhowarth/ to the Update manager (found in the menu under Help/Update...).
+Alternatively open your ImageJ application and add http://sites.imagej.net/Jhowarth/ to the Update manager (found in the menu under {% include bc path="Help|Update..." %}).
 
 ## **Usage**
 

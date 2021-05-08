@@ -21,7 +21,7 @@ For details on how to install an update site click [here](/update-sites/followin
 
 To use this plugin you also need to install elastix itself, as described [here](https://github.com/embl-cba/fiji-plugin-elastixWrapper/blob/master/README.md#install-elastix-binary).
 
-To start Elastix in ImageJ, select Plugins &gt; Registration &gt; Elastix &gt; Elastix from the main menu.
+To start Elastix in ImageJ, select {% include bc path="Plugins | Registration | Elastix | Elastix" %} from the main menu.
 
 ## Citation
 

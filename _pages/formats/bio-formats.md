@@ -26,7 +26,7 @@ See [LOCI's Bio-Formats site](https://loci.wisc.edu/software/bio-formats) for a 
 
 ## Documentation
 
-What follows is a brief overview of the available plugins. You will find them all under the "/formats/bio-formats" submenu of Plugins. See the [Bio-Formats web site](https://www.openmicroscopy.org/bio-formats/) for additional information about Bio-Formats in general.
+What follows is a brief overview of the available plugins. You will find them all under the "/formats/bio-formats" submenu of {% include bc path="Plugins" %}. See the [Bio-Formats web site](https://www.openmicroscopy.org/bio-formats/) for additional information about Bio-Formats in general.
 
 See especially the [Using Bio-Formats](https://docs.openmicroscopy.org/latest/bio-formats/users/imagej/load-images.html#using-bio-formats-to-load-images-into-imagej) page for detailed instructions.
 
@@ -34,7 +34,7 @@ See especially the [Using Bio-Formats](https://docs.openmicroscopy.org/latest/bi
 
 The **Bio-Formats Importer** is a plugin for reading data into Fiji. It can open many dozens of proprietary life sciences formats, and standardize their acquisition metadata into a common [OME data model](https://docs.openmicroscopy.org/latest/ome-model/developers/model-overview.html). It will also extract and set basic metadata values such as [spatial calibration](/techniques/spatial-calibration) if they are available in the file.
 
-Often, you will not need to worry about this plugin to import your data, because Bio-Formats is largely integrated with the File/Open command of Fiji. However, for certain file formats, you may wish to explicitly activate the Bio-Formats Importer to override the default behavior of Fiji. For example, by default Fiji uses some built-in logic to open TIFF files, but this logic may fail with certain TIFFs. The Bio-Formats Importer plugin may be able to import such TIFFs successfully.
+Often, you will not need to worry about this plugin to import your data, because Bio-Formats is largely integrated with the {% include bc path="File|Open" %} command of Fiji. However, for certain file formats, you may wish to explicitly activate the Bio-Formats Importer to override the default behavior of Fiji. For example, by default Fiji uses some built-in logic to open TIFF files, but this logic may fail with certain TIFFs. The Bio-Formats Importer plugin may be able to import such TIFFs successfully.
 
 ### Bio-Formats Exporter
 
@@ -89,7 +89,7 @@ The **Bio-Formats Plugins Shortcut Window** is a small window with a quick-launc
 
 ### Update Bio-Formats Plugins
 
-The **Update Bio-Formats Plugins** command will check online for updates to the Bio-Formats Plugins. In the case of Fiji, we recommend that you do not use this method of update, but instead use the [Fiji Updater](/plugins/updater).
+The **Update Bio-Formats Plugins** command will check online for updates to the Bio-Formats Plugins. In the case of Fiji, we recommend that you do not use this method of update, but instead use the [ImageJ Updater](/plugins/updater).
 
 ## Calling Bio-Formats from the command line
 

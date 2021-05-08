@@ -20,36 +20,40 @@ If you are certain that you want to write a plugin in Java, keep on reading!
 ## What are plugins (in terms of files)?
 
 -   Plugins are a dedicated mechanism for extending ImageJ/Fiji
--   A plugin consists of one or more Java classes living inside a *.jar* file in *plugins/* (exception: a single *.class* file)
--   All plugin *.jar* (or *.class*) files must contain an underscore in their name
--   Plugins can use 3rd party libraries; in Fiji, store them in the *jars/* directory (in ImageJ you have to put them into the *plugins/* directory, and to avoid funny menu entries in the Plugins menu, you should rename them if their name contains an underscore)
+-   A plugin consists of one or more Java classes living inside a `.jar` file in `plugins/` (exception: a single `.class` file)
+-   All plugin `.jar` (or `.class`) files must contain an underscore in their name
+-   Plugins can use 3rd party libraries; in Fiji, store them in the `jars/` directory (in ImageJ you have to put them into the `plugins/` directory, and to avoid funny menu entries in the {% include bc path="Plugins" %} menu, you should rename them if their name contains an underscore)
 
 ## Updating plugins
 
--   After storing the *.jar* file(s) into the *plugins/* (or *jars/*) directory, call {% include bc path='Help | Refresh Menus'%} or restart Fiji
--   If the respective plugin is in-use, you might get funny results when refreshing the menus, due to limitations in Sun Java's handling of *.jar* files.
+-   After storing the `.jar` file(s) into the `plugins/` (or `jars/`) directory, call {% include bc path='Help | Refresh Menus'%} or restart Fiji
+-   If the respective plugin is in-use, you might get funny results when refreshing the menus, due to limitations in Sun Java's handling of `.jar` files.
 
 ## What are plugins (in terms of menu entries)?
 
--   If the *.jar* file contains a file called *plugins.config*, it determines what menu items are provided by the plugin
--   If the *.jar* file does not contain a file called *plugins.config*, all contained classes containing an underscore in their name are added to the *Plugins* menu
+-   If the `.jar` file contains a file called `plugins.config`, it determines what menu items are provided by the plugin
+-   If the `.jar` file does not contain a file called `plugins.config`, all contained classes containing an underscore in their name are added to the {% include bc path="Plugins" %} menu
 
-A *plugins.config* file looks like this:
+A `plugins.config` file looks like this:
 
-`# Comments (such as title, author, etc)`  
-`#`  
-`# The other lines have this format:`  
-`#  Menu, "Menu Item", ClassName`  
-`# Example:`  
+```
+# Comments (such as title, author, etc)
+#
+# The other lines have this format:
+#  Menu, "Menu Item", ClassName
+# Example:
 
-`Plugins > Analyze, "Plot", fiji.Plot`
+Plugins > Analyze, "Plot", fiji.Plot
+```
 
-A class can be reused for multiple menu entries, by passing an optional argument in the *plugins.config* file:
+A class can be reused for multiple menu entries, by passing an optional argument in the `plugins.config` file:
 
-`# Example how to reuse a Java class`  
+```
+# Example how to reuse a Java class
 
-`Help, "Bug report", fiji.Send("bug")`  
-`Help, "Contact", fiji.Send("contact")`
+Help, "Bug report", fiji.Send("bug")
+Help, "Contact", fiji.Send("contact")
+```
 
 ## What are plugins (in terms of Java code)?
 
@@ -96,14 +100,14 @@ If you would like to use the script editor, see the sections for the [other supp
 -   Supports Jython, JRuby, Javascript, Clojure, Java, BeanShell, and ImageJ's Macro Language
 -   Syntax highlighting
 -   Compile and Run without restarting Fiji (mini-IDE)
--   Export scripts/plugins as *.jar* files
+-   Export scripts/plugins as `.jar` files
 -   You can compile & run Java classes in the Script Editor which implement neither a plugin nor a plugin filter, but which have a static *main()* method
 -   Provides code templates
 -   Convenience functions, (add import, open JavaDoc, for given class, etc)</s>
 
 ## Quick Start
 
-<s>To plunge into writing plugins, make sure that there is an active image (e.g. a sample image), start the [Script Editor](/scripting/script-editor) ({% include bc path='File | New | Script'%}), and select the *Process Pixels* menu item from the {% include bc path='Templates | Java'%} menu. Then, run the plugin with *Run&gt;Run*.</s>
+<s>To plunge into writing plugins, make sure that there is an active image (e.g. a sample image), start the [Script Editor](/scripting/script-editor) ({% include bc path='File | New | Script'%}), and select the {% include bc path="Process Pixels" %} menu item from the {% include bc path='Templates | Java'%} menu. Then, run the plugin with {% include bc path="Run | Run" %}.</s>
 
 # Getting started with Maven
 

@@ -29,7 +29,7 @@ Where the weights of every term are set by the user in the main window of the pl
 
 ### Generalities
 
-The plugin can be called from the main ImageJ/Fiji menu under Plugins &gt; Registration &gt; bUnwarpJ. Two images (**8, 16, 32-bit grayscale or RGB Color**) need to be opened in order to be able to use the plugin. If so, the maing dialog window of the plugin will open.
+The plugin can be called from the main ImageJ/Fiji menu under {% include bc path="Plugins | Registration | bUnwarpJ" %}. Two images (**8, 16, 32-bit grayscale or RGB Color**) need to be opened in order to be able to use the plugin. If so, the maing dialog window of the plugin will open.
 
 {% include thumbnail src='/media/bunwarpj-main-dialog.png' title='bUnwarpJ main dialog'%}
 
@@ -343,7 +343,7 @@ The API documentation can be reached [online](http://javadoc.imagej.net/Fiji/bun
 
 ### Installation
 
-In Fiji, [bUnwarpJ](/plugins/bunwarpj) comes installed by default. In ImageJ, you must simply download the latest bUnwarpJ\_.jar to the Plugins folder of ImageJ, restart ImageJ and there will be a new "Registration &gt; bUnwarpJ" command in the Plugins menu.
+In Fiji, [bUnwarpJ](/plugins/bunwarpj) comes installed by default. In ImageJ, you must simply download the latest bUnwarpJ\_.jar to the Plugins folder of ImageJ, restart ImageJ and there will be a new {% include bc path="Registration | bUnwarpJ" %} command in the Plugins menu.
 
 To execute bUnwarpJ as a macro or from the command line, see the description in the User Manual.
 
@@ -405,7 +405,7 @@ The corresponding paper citation is on the [References](/plugins/bunwarpj#refere
 
 ### My result images are 32-bit although my input images are 8-bit, is that a bug?
 
-No this is not a bug. To calculate the elastic-transformed images [bUnwarpJ](/plugins/bunwarpj) needs to interpolate the pixel values, so the first step in the process consists of converting the 8-bit (byte) images into 32-bit (float). You may want to convert them back to 8-bit after registration (Image &gt; Type &gt; 8-bit) and adjust the contrast (Process &gt; Enhance Contrast).
+No this is not a bug. To calculate the elastic-transformed images [bUnwarpJ](/plugins/bunwarpj) needs to interpolate the pixel values, so the first step in the process consists of converting the 8-bit (byte) images into 32-bit (float). You may want to convert them back to 8-bit after registration {% include bc path="Image | Type | 8-bit" %} and adjust the contrast {% include bc path="Process | Enhance Contrast" %}.
 
 ### How do I integrate the SIFT/MOPS results into bUnwarpJ?
 

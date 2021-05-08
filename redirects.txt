@@ -457,7 +457,7 @@ CIP_Math :: plugins/cip/math
 CIP_Parameters :: plugins/cip/parameters
 CIP_Segmentation :: plugins/cip/segmentation
 CIP_Utilities :: plugins/cip/utilities
-CLAHE :: plugins/enhance-local-contrast-clahe
+CLAHE :: plugins/clahe
 CLI :: develop/command-line
 CLIJ :: plugins/clij
 CMP-BIA_tools :: plugins/cmp-bia-tools

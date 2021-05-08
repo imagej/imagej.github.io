@@ -69,7 +69,7 @@ Sorts a multi b-value diffusion dataset into a array of 4 hyperstacks, one array
 
 ## Install
 
-Unzip [DICOM\_open.zip](/media/DICOM_open.zip) into ImageJ1 plugins (File&gt;Show Folder&gt;Plugins) or plugins/jars directories. Source code in jar file. DICOM\_explode is included.
+Unzip [DICOM\_open.zip](/media/DICOM_open.zip) into ImageJ1 plugins {% include bc path="File|Show Folder|Plugins" %} or plugins/jars directories. Source code in jar file. `DICOM_explode` is included.
 
 ## Licence
 

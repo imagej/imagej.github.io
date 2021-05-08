@@ -26,10 +26,10 @@ It is recommended to install R to get better plots. When this point is skipped, 
 1.  Download the latest R: https://cran.uni-muenster.de/
     1.  Download the Rserver package: https://rforge.net/bin/windows/contrib/3.0/Rserve_1.8-0.zip
     2.  Download the MASS package: https://cran.r-project.org/bin/windows/contrib/3.2/MASS_7.3-45.zip
-    3.  Start R and select the packages downloaded in 1. and 2. via "Start Packages -&gt; Install packages from local zip files"
+    3.  Start R and select the packages downloaded in 1. and 2. via {% include bc path="Start Packages | Install packages from local zip files" %}
 2.  Open Fiji, start the ParticleSizer Settings Manager and the R path to the R binary.
 
-You can now start the ParticleSizer via *Plugins -&gt; NanoDefine -&gt; ParticleSizer*
+You can now start the ParticleSizer via {% include bc path="Plugins | NanoDefine -|ParticleSizer" %}
 
 # Settings
 
@@ -88,7 +88,7 @@ Combining both information, we could give the following adivices (as a rule of t
 
 # Use the ParticleSizer with the NanoDefiner e-tool
 
-The ParticleSizer supports the [NanoDefiner e-tool](https://labs.inf.fh-dortmund.de/NanoDefiner/?anchor=version#version). After the analysis of a dataset is finished, you can select the results table and export the cummulative mass function of the feret min diamater by "Results &gt; Export CMF". The exported file can be uploaded to the [NanoDefiner e-tool](https://labs.inf.fh-dortmund.de/NanoDefiner/?anchor=version#version).
+The ParticleSizer supports the [NanoDefiner e-tool](https://labs.inf.fh-dortmund.de/NanoDefiner/?anchor=version#version). After the analysis of a dataset is finished, you can select the results table and export the cummulative mass function of the feret min diamater by {% include bc path="Results | Export CMF" %}. The exported file can be uploaded to the [NanoDefiner e-tool](https://labs.inf.fh-dortmund.de/NanoDefiner/?anchor=version#version).
 
 # Examples
 

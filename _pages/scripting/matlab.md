@@ -33,7 +33,7 @@ If you run MATLAB R2017b and later, you don"t need to do this, as it ships and u
 ### Memory issue
 
 -   In order to handle large images, the default Java Heap Memory size assigned won't be enough and you may get the error `java.lang.OutOfMemoryError: Java heap space`.
--   From MATLAB R2010a onward, you can increase the Jave Heap Memory size from **Preferences &gt; General &gt; Java Heap Memory**. ![](/media/MATLAB java heap memory.png "fig:MATLAB_java_heap_memory.png")
+-   From MATLAB R2010a onward, you can increase the Jave Heap Memory size from {% include bc path="Preferences | General | Java Heap Memory" %}. ![](/media/MATLAB java heap memory.png "fig:MATLAB_java_heap_memory.png")
 -   However, the maximum value allowed in the Preferences can still be too small for your purpose. In that case, you can directly edit `matlab.prf` file in the folder specified by the <code>prefdir&lt;\\code&gt; MATLAB function (eg. `C:\Users\xxxxxxx\AppData\Roaming\MathWorks\MATLAB\R2018b`). Find the parameter `JavaMemHeapMax` in the file and increase the number that follows the capital I (in MB) to increase the maximum Java heap memory size. The change will be reflected by the Preferences as above.
 
 <!-- -->
@@ -252,7 +252,7 @@ The startup process automatically injects the ImageJ classpath into the [MATLAB]
 #### Issues specific to `IJM.show(name)`
 
 -   A multi (&gt;2) dimensional image (with multi-channels, slices or time frames) is treated as single channel images with multiple time frames irrespective of the dimensions. For example, if a MATLAB array `A` has the size `[i,j,k]`, where `i`, `j`, and `k` correspond to the sizes in rows, columns and channels, then `IJM.show(name)` will show it as `[j,i,1,1,k]`, where X and Y axes are flipped over (see below) and channels are interpreted as frames. On the other hand, `IJM.getDataset()` and `IJM.getDatasetAs(name)` can maintain the dimensions of the image data (except the flipping over of X and Y axes).
-    -   From GUI, you can fix this by *Image &gt; Hyperstacks &gt; Re-order Hyperstack...*
+    -   From GUI, you can fix this by {% include bc path="Image | Hyperstacks | Re-order Hyperstack..." %}
     -   For a scripting-based solution, you can run `ij.IJ.run("Re-order Hyperstack ...", "channels=[Frames (t)] slices=[Slices (z)] frames=[Channels (c)]");` in MATLAB for the example above to have dimensions `[i,j,k,1,1]` in XYCZT format. See [here for details](http://forum.imagej.net/t/imagej-matlab-ijm-show-does-not-reliably-pass-numeric-data-to-imagej/10724).
     -   When you have multiple channels, slices and frames, they're all damped into the fifth dimension, so it takes extra effort to correct the data format.
 -   Also, data is always handled as 32bit (int32) per channel. **Conversion to 8 bit or 16 bit images require an extra care** to avoid unwanted scaling of numeric values (see [here for details](http://forum.imagej.net/t/imagej-matlab-ijm-show-does-not-reliably-pass-numeric-data-to-imagej/10724))

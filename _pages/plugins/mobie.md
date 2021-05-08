@@ -27,7 +27,7 @@ MoBIE (Multimodal Big Image Data Exploration) is a framework for sharing and int
 
 Please install the Update Site: http://sites.imagej.net/MoBIE/. For details on how to install an update site click [here](/update-sites/following).
 
-To run it, please select Plugins &gt; MoBIE from the main menu.
+To run it, please select {% include bc path="Plugins | MoBIE" %} from the main menu.
 
 ## Publication
 

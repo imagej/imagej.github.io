@@ -9,7 +9,7 @@ title: 3D Viewer › User FAQs
 
 ### How to display a stack
 
-After you have started the 3D viewer, click on '-&gt;File-&gt;Add content'. A dialog window opens, asking for some information:
+After you have started the 3D viewer, click on {% include bc path="File|Add content" %}. A dialog window opens, asking for some information:
 
 -   **Image:** The image which should be displayed in the viewer. The user can select from a list of all open images.
 -   **Name:** A name for the 3D object. The default is the image title.
@@ -47,23 +47,23 @@ Color, transparency, threshold and displayed channels of color images are so-cal
 The attributes can be changed by
 
 1.  Select the corresponding object by clicking on it
-2.  Click on -&gt; Edit -&gt; Attributes and select the attribute you want to change.
+2.  Click on {% include bc path="Edit | Attributes" %} and select the attribute you want to change.
 
 [Top](#top)
 
 ### How to make animations and movie recordings
 
-To animate the view, click on -&gt;View-&gt;Start animation. The view begins immediately to rotate around the y-axis. If you now want to record such an animation, click on -&gt;View-&gt;Start recording. The animation is now recorded for one full 360° rotation. The result is displayed in a stack.
+To animate the view, click on {% include bc path="View|Start animation" %}. The view begins immediately to rotate around the y-axis. If you now want to record such an animation, click on {% include bc path="View|Start recording" %}. The animation is now recorded for one full 360° rotation. The result is displayed in a stack.
 
 If you want to include the recording in a presentation, save it via ImageJ's 'Save as AVI' function. You can incorporate the resulting movie file in powerpoint presentations.
 
-To stop an animation, click on -&gt;View-&gt;Stop animation. [Top](#top)
+To stop an animation, click on {% include bc path="View|Stop animation" %}. [Top](#top)
 
 ### How to reset the view
 
-You can reset the 3D universe to its initial view by clicking on -&gt;View-&gt;Reset View. This resets the view.
+You can reset the 3D universe to its initial view by clicking on {% include bc path="View|Reset View" %}. This resets the view.
 
-Note however, that this does not change the transformation of individual 3D objects. To reset them, too, select each object and click on -&gt;Transformation-&gt;Reset transformation. [Top](#top)
+Note however, that this does not change the transformation of individual 3D objects. To reset them, too, select each object and click on {% include bc path="Transformation|Reset transformation" %}. [Top](#top)
 
 ### How to hide the coordinate system
 
@@ -71,13 +71,13 @@ There are two types of coordinate systems: One global coordinate system, which i
 
 For hiding the global coordinate system, have a look at "How to general view settings"
 
-For hiding the local coordinate system, select the object and click on -&gt;Edit-&gt;Hide/Show and disable 'Show coordinate system'.
+For hiding the local coordinate system, select the object and click on {% include bc path="Edit|Hide/Show" %} and disable 'Show coordinate system'.
 
 See [\#How to general view settings](#how-to-general-view-settings) for how you can avoid to show local coordinate systems in general. [Top](#top)
 
 ### How to change the background color
 
-To change the background color of the 3D world, click on -&gt;View-&gt;Change background color. A dialog opens, which lets you interactively adjust the background color.
+To change the background color of the 3D world, click on {% include bc path="View|Change background color" %}. A dialog opens, which lets you interactively adjust the background color.
 
 To use the current background color by default, see [\#How to change general view settings](#how-to-change-general-view-settings). [Top](#top)
 
@@ -97,9 +97,9 @@ See [\#How to change the color, transparency... of a 3D object](#how-to-change-t
 
 ### How to smooth a surface
 
-In order to smooth the surface of a 3D object, select the object and click on -&gt;Edit-&gt;Smooth surface.
+In order to smooth the surface of a 3D object, select the object and click on {% include bc path="Edit|Smooth surface" %}.
 
-You can also smooth all displayed surfaces by clicking on -&gt;Edit-&gt;Smooth all surfaces [Top](#top)
+You can also smooth all displayed surfaces by clicking on {% include bc path="Edit|Smooth all surfaces" %} [Top](#top)
 
 ### How to export surfaces
 
@@ -121,7 +121,7 @@ The 3D viewer offers the possibility to edit volumes. To crop volumes,
 
 1.  Select an object by clicking on it.
 2.  Use one of ImageJ's selection tools to draw a region of interest (ROI).
-3.  Click on -&gt;Edit-&gt;Fill selection to erase the volume which is covered by the ROI. (Erasing means actually filling it with black).
+3.  Click on {% include bc path="Edit|Fill selection" %} to erase the volume which is covered by the ROI. (Erasing means actually filling it with black).
 
 [Top](#top)
 
@@ -137,7 +137,7 @@ See [\#How to change the color, transparency... of a 3D object](#how-to-change-t
 
 ### How to change the displayed slice
 
-The position of the three slices can be changed. To do so, click on -&gt; Edit -&gt; Adjust slices. A dialog opens, which lets you adjust interactively the position of each of the three slices.
+The position of the three slices can be changed. To do so, click on {% include bc path=" Edit | Adjust slices" %}. A dialog opens, which lets you adjust interactively the position of each of the three slices.
 
 There exist also keyboard shortcuts to adjust the slices: hold one of the x, y, and z key pressed and use either the arrow keys or mouse scrolling to adjust the slices.
 
@@ -171,7 +171,7 @@ See [\#How to reset the view](#how-to-reset-the-view)
 
 ### How to center a 3D object in the view
 
-In case you have several 3D objects in the 3D window, it is desirable to center the view on one specific object. This is possible by selecting an object (by clicking on it) and click on -&gt;View -&gt; Center selected. [Top](#top)
+In case you have several 3D objects in the 3D window, it is desirable to center the view on one specific object. This is possible by selecting an object (by clicking on it) and click on {% include bc path="View | Center selected" %}. [Top](#top)
 
 ### How to hide the coordinate system
 
@@ -183,7 +183,7 @@ see [\#How to change the background color](#how-to-change-the-background-color)
 
 ### How to show a scalebar
 
-To show or edit a scalebar to the 3D view, click on -&gt;View-&gt;Edit scalebar. A dialog opens, which allows you to adjust scalebar settings:
+To show or edit a scalebar to the 3D view, click on {% include bc path="View|Edit scalebar" %}. A dialog opens, which allows you to adjust scalebar settings:
 
 -   **x position:** The x coordinate of the scalebar in realworld coordinates.
 -   **y position:** The y coordinate of the scalebar in realworld coordinates.
@@ -200,7 +200,7 @@ See [\#How to change general view settings](#how-to-change-general-view-settings
 
 ### How to change general view settings
 
-Some general view settings can be changed and made permanent by clicking on -&gt;View-&gt;View settings. A dialog window opens, asking the user for settings. There are two types of settings, startup options and options which are applied immediately.
+Some general view settings can be changed and made permanent by clicking on {% include bc path="View|View settings" %}. A dialog window opens, asking the user for settings. There are two types of settings, startup options and options which are applied immediately.
 
 1.  Startup options:
     -   **Width and Height** The window dimensions of the 3D viewer.
@@ -230,7 +230,7 @@ Alternatively, transformations of individual objects can be altered more exactly
 
 Applying a transformation to a 3D object means to concatenate the specified transformation with the current transformation of the object.
 
-To apply a transformation, select an object and click on -&gt;Transformation-&gt;Apply transform. A window opens, which asks you for a transformation matrix. The matrix is supposed to be given as a (3x4) matrix, row by row. All the individual values should be separated by a space character.
+To apply a transformation, select an object and click on {% include bc path="Transformation|Apply transform" %}. A window opens, which asks you for a transformation matrix. The matrix is supposed to be given as a (3x4) matrix, row by row. All the individual values should be separated by a space character.
 
 Example:
 
@@ -247,7 +247,7 @@ The window also allows you to load a transformation from a file. [Top](#top)
 
 Setting a transformation of a 3D object does not concatenate transformations. See [\#How to apply a specific transformation to a 3D object](#how-to-apply-a-specific-transformation-to-a-3d-object) to concatenate transformations.
 
-To set a transformation, select an object and click on -&gt;Transformation-&gt;Set transform. A window opens, which asks you for a transformation matrix. The matrix is supposed to be given as a (3x4) matrix, row by row. All the individual values should be separated by a space character.
+To set a transformation, select an object and click on {% include bc path="Transformation|Set transform" %}. A window opens, which asks you for a transformation matrix. The matrix is supposed to be given as a (3x4) matrix, row by row. All the individual values should be separated by a space character.
 
 Example:
 
@@ -262,7 +262,7 @@ The window also allows you to load a transformation from a file. [Top](#top)
 
 ### How can I see the current transformation of a 3D object
 
-To see the current transformation matrix of a 3D object, select that object and click for example on -&gt; Transformation -&gt; Set Transform. The window which opens shows the current transformation of the object. A (3x4) matrix is shown, row by row in one line.
+To see the current transformation matrix of a 3D object, select that object and click for example on {% include bc path="Transformation | Set Transform" %}. The window which opens shows the current transformation of the object. A (3x4) matrix is shown, row by row in one line.
 
 Example:
 
@@ -277,9 +277,9 @@ Click 'Cancel' if you don't want to change the transformation. [Top](#top)
 
 ### Can I save/reload the current transformation of a 3D object
 
-To save the current transformation of a 3D object, select that object and click on -&gt;Transformation-&gt;Save transform. You can specify a file to which the current transformation is stored.
+To save the current transformation of a 3D object, select that object and click on {% include bc path="Transformation|Save transform" %}. You can specify a file to which the current transformation is stored.
 
-To load a transformation, click on -&gt;Transformation-&gt;Set transform. In the opening window, you can choose a previously stored transformation file. [Top](#top)
+To load a transformation, click on {% include bc path="Transformation|Set transform" %}. In the opening window, you can choose a previously stored transformation file. [Top](#top)
 
 ### How to save a transformed object
 
@@ -289,7 +289,7 @@ The 3D viewer allows to load an image stack and display it as a 3D object. This 
 -   [\#How to apply a specific transformation to a 3D object](#how-to-apply-a-specific-transformation-to-a-3d-object)
 -   [\#How to set a specific transformation for a 3D object](#how-to-set-a-specific-transformation-for-a-3d-object)
 
-Now such a transformed object can be exported to a stack image again. To do so, click on -&gt;Transformation-&gt;Export transformed image. The resulting stack image can of course also be saved via ImageJ's 'Save as' commands. [Top](#top)
+Now such a transformed object can be exported to a stack image again. To do so, click on {% include bc path="Transformation|Export transformed image" %}. The resulting stack image can of course also be saved via ImageJ's 'Save as' commands. [Top](#top)
 
 ## Point Lists
 
@@ -301,7 +301,7 @@ Point lists represent a list of named points. They can be used for marking regio
 
 There are two ways to show the point list of a 3D object:
 
--   Click on -&gt;Edit-&gt;Point list-&gt;Show Point list or
+-   Click on {% include bc path="Edit|Point list|Show Point list" %} or
 -   Select ImageJ's point tool and click on a selected object.
 
 In both cases, a window opens which shows a list of named points for the selected object. [Top](#top)
@@ -329,7 +329,7 @@ You can interactively drag the point of interest. ImageJ's 'POINT' tool has to b
 
 ### How to save a point list to file and how to reload it
 
-Point lists can be stored to file and be reloaded. To do so, select an object and click on -&gt; Edit -&gt; Point list -&gt; Save Point list or on -&gt;Edit-&gt;Point list-&gt;Load Point list respectively. Choose the file containing the point lists. [Top](#top)
+Point lists can be stored to file and be reloaded. To do so, select an object and click on {% include bc path=" Edit | Point list | Save Point list" %} or on {% include bc path="Edit|Point list|Load Point list" %} respectively. Choose the file containing the point lists. [Top](#top)
 
 ### How to highlight a point from the list in the 3D view
 
@@ -337,11 +337,11 @@ Sometimes, one wishes to know where a particular point from the point list windo
 
 ### How to hide the points
 
-To hide the points, click on -&gt;Edit-&gt;Point List-&gt;Hide Point list. The point list window is closed automatically. [Top](#top)
+To hide the points, click on {% include bc path="Edit|Point List|Hide Point list" %}. The point list window is closed automatically. [Top](#top)
 
 ### How to close the list window
 
-To hide the points, click on -&gt;Edit-&gt;Point List-&gt;Hide Point list. The point list window is closed automatically. [Top](#top)
+To hide the points, click on {% include bc path="Edit|Point List|Hide Point list" %}. The point list window is closed automatically. [Top](#top)
 
 ## Registration
 
@@ -351,14 +351,14 @@ At the moment, only rigid landmark-based registration is supported. [Top](#top)
 
 ### How can two 3D objects be registered
 
-To initiate registration, load at least two objects into the viewer and click on -&gt;Edit-&gt;Register
+To initiate registration, load at least two objects into the viewer and click on {% include bc path="Edit|Register" %}.
 
 You are now guided step by step through landmark selection of model and reference image and through the registration process.
 
-Please note that the images are locked after registration, to prevent unintended user interaction. To be able to transform the objects again, select each of them and inactivate -&gt;Transformation-&gt;Lock [Top](#top)
+Please note that the images are locked after registration, to prevent unintended user interaction. To be able to transform the objects again, select each of them and inactivate {% include bc path="Transformation|Lock" %}. [Top](#top)
 
 ### How can the results be saved
 
-See [\#How to save a transformed object](#how-to-save-a-transformed-object)
+See [How to save a transformed object](#how-to-save-a-transformed-object).
 
 [Top](#top)

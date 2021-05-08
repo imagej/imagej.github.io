@@ -69,7 +69,7 @@ Also, you will save memory only if you process blocks sequentially. If you fire 
 
 ### TrackMate honors ImageJ thread configuration.
 
-To configure how many threads TrackMate can use, Go the the *Edit &gt; Options &gt; Memory & Threads ....* menu item.
+To configure how many threads TrackMate can use, Go the the {% include bc path="Edit | Options | Memory & Threads..." %} menu item.
 
 ### TrackScheme acknowledges the spot radius setting when capturing thumbnails.
 

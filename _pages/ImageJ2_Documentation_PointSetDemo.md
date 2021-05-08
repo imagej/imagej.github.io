@@ -13,7 +13,7 @@ The syntax for a text specified PointSet is as one or more axis ranges optionall
 
 The axis syntax follows Haskell's list comprehension syntax. You can specify an axis name and its associated single value (i.e. "x = \[10\]"). Or multiple values (i.e. "x=\[10,20,30\]"). Or a range of values (i.e. "x = \[1..25\]"). Or even a range of values by a defined step size (i.e. "x = \[1,3..15\]" which equals \[1,3,5,7,9,11,13,15\]).
 
-The constraint equations use much of the same syntax as outlined here: http://wiki.imagej.net/ImageJ2/Documentation/Process/Math/Equation
+The constraint equations use much of the same syntax as outlined [here](/ImageJ2_Documentation_Process_Math_Equation).
 
 Some examples:
 
