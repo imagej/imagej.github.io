@@ -13,6 +13,9 @@ Doube, M.; Kłosowski, M. M. & Arganda-Carreras, I. et al. (2010), "<a href="htt
 {% if include.content == "Bio7" %}
 Austenfeld, M. & Beyschlag, W. (2012), "<a href="https://www.jstatsoft.org/article/view/v049i04">A Graphical User Interface for R in a Rich Client Platform for Ecological Modeling.</a>", *Journal of Statistical Software* **49(4)**: 1-19 (<a href="http://scholar.google.com/scholar?cluster=13595381325241049266">on Google Scholar</a>).
 {% endif %}
+{% if include.content == "FunImageJ" %}
+Kyle I S Harrington, Curtis T Rueden, Kevin W Eliceiri; FunImageJ: a Lisp framework for scientific image processing, Bioinformatics, btx710, https://doi.org/10.1093/bioinformatics/btx710
+{% endif %}
 {% if include.content == "ImgLib2" %}
 Pietzsch, T.; Preibisch, S. & Tomancak, P. et al. (2012), "<a href="http://bioinformatics.oxfordjournals.org/content/28/22/3009.full">ImgLib2—generic image processing in Java</a>", *Bioinformatics* **28(22)**: 3009-3011, PMID 22962343 (<a href="http://scholar.google.com/scholar?cluster=17114668151840635304">on Google Scholar</a>).
 {% endif %}
