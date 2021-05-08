@@ -25,7 +25,7 @@ function getCookie(cname) {
 function loadDockState() {
   var docks = getCookie('docks');
   if (!docks) return;
-  var tokens = docks.split('::');
+  var tokens = docks.split('~');
   for (var i=0; i<tokens.length; i++) {
     var dockId, dockableIds;
     [dockId, dockableList] = tokens[i].split(':', 2);
@@ -51,7 +51,7 @@ function saveDockState() {
     });
     tokens.push(dock.id + ':' + token.join(','));
   });
-  setCookie('docks', tokens.join('::'), 36500);
+  setCookie('docks', tokens.join('~'), 36500);
 }
 
 function grab(el) {
