@@ -5,7 +5,7 @@ title: RiFRET
 
 
 {% capture maintainer%}
-{%- include person id='camlloyd' -%}
+{% include person id='camlloyd' %}
 {% endcapture %}
 
 {% capture source%}

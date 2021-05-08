@@ -6,11 +6,11 @@ categories: Plugins,Analysis,Filtering,Segmentation,Mathematical_morphology,Cita
 
 
 {% capture author%}
- [David Legland](https://github.com/dlegland) , {%- include person id='iarganda' -%}
+ [David Legland](https://github.com/dlegland) , {% include person id='iarganda' %}
 {% endcapture %}
 
 {% capture maintainer%}
- [David Legland](https://github.com/dlegland) , {%- include person id='iarganda' -%}
+ [David Legland](https://github.com/dlegland) , {% include person id='iarganda' %}
 {% endcapture %}
 
 {% capture source%}

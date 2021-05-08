@@ -528,7 +528,7 @@ Here is what our dummy example looks. To maximize your user experience, I let it
 
 ![](/media/trackmateCustomDetector 01.gif "TrackMateCustomDetector_01.gif")
 
-{%- include person id='tinevez' -%} ([talk](User_talk_JeanYvesTinevez)) 08:28, 3 April 2014 (CDT)
+{% include person id='tinevez' %} ([talk](User_talk_JeanYvesTinevez)) 08:28, 3 April 2014 (CDT)
 
 ------------------
 

@@ -7,7 +7,7 @@ categories: Tutorials,Plugins
 {% include unreleased%}
 
 {% capture maintainer%}
-{%- include person id='funkey' -%}
+{% include person id='funkey' %}
 {% endcapture %}
 
 {% capture source%}

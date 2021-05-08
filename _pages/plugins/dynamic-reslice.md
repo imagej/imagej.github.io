@@ -12,7 +12,7 @@ categories: Plugins
 
 ## Purpose
 
-This plugin is simply a dynamic version of the Reslice command as it is in ImageJ version 1.42l, by Patrick Kelly, Harvey Karten, {%- include person id='rasband' -%}, Julian Cooper and Adrian Deerr. It draws an orthogonal slice through the volume represented by the stack it is applied on along its ROI, and update dynamically this slice as the ROI is displaced or deformed.
+This plugin is simply a dynamic version of the Reslice command as it is in ImageJ version 1.42l, by Patrick Kelly, Harvey Karten, {% include person id='rasband' %}, Julian Cooper and Adrian Deerr. It draws an orthogonal slice through the volume represented by the stack it is applied on along its ROI, and update dynamically this slice as the ROI is displaced or deformed.
 
 ## Installation
 

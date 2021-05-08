@@ -5,11 +5,11 @@ title: BigDataServer
 
 
 {% capture author%}
-{%- include person id='tpietzsch' -%}, {%- include person id='hkmoon' -%}, {%- include person id='tomancak' -%}
+{% include person id='tpietzsch' %}, {% include person id='hkmoon' %}, {% include person id='tomancak' %}
 {% endcapture %}
 
 {% capture maintainer%}
-{%- include person id='tpietzsch' -%}
+{% include person id='tpietzsch' %}
 {% endcapture %}
 
 {% capture source%}

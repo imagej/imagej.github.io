@@ -255,7 +255,7 @@ The challenge data does offer that possibility: all particles have roughly the s
 
 <references/>
 
-{%- include person id='tinevez' -%} ([talk](User_talk_JeanYvesTinevez)) 03:49, 25 January 2015 (CST)
+{% include person id='tinevez' %} ([talk](User_talk_JeanYvesTinevez)) 03:49, 25 January 2015 (CST)
 
 [1] [Chenouard *et al.*, "Objective comparison of particle tracking methods", **Nature Methods, 2014 **](http://www.nature.com/nmeth/journal/v11/n3/full/nmeth.2808.html)
 

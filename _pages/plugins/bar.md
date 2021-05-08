@@ -10,7 +10,7 @@ categories: Analysis,Citable,Filtering,Image annotation,Plugins,Scripting,Segmen
 
 
 {% capture maintainer%}
-{%- include person id='tferr' -%}
+{% include person id='tferr' %}
 {% endcapture %}
 
 {% capture source%}

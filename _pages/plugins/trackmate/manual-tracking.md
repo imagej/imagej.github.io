@@ -133,6 +133,6 @@ Great, no?
 
 These are the tools that should allow you to work very quickly. For fun: redo this tutorial with a [TrackScheme](/plugins/trackmate/trackscheme) window open. You should see that it works very well with manual annotation.
 
-{%- include person id='tinevez' -%} ([talk](User_talk_JeanYvesTinevez)) 10:54, 5 August 2013 (CDT)
+{% include person id='tinevez' %} ([talk](User_talk_JeanYvesTinevez)) 10:54, 5 August 2013 (CDT)
 
 

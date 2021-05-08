@@ -47,12 +47,12 @@ For an educational interactive ImageJ javascript demo of convolution, inverse fi
 
 <div style="float: left; padding-right: 1em">
 
-TODO VIMEO WIDGET by {%- include person id='bnorthan' -%}, ([slides](/presentations/2015-09-04-imagej2-deconvolution/))
+TODO VIMEO WIDGET by {% include person id='bnorthan' %}, ([slides](/presentations/2015-09-04-imagej2-deconvolution/))
 
 </div>
 <div style="float: left">
 
-TODO VIMEO WIDGET by {%- include person id='bene51' -%}
+TODO VIMEO WIDGET by {% include person id='bene51' %}
 
 </div>
 

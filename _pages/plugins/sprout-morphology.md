@@ -5,11 +5,11 @@ title: Sprout Morphology
 
 
 {% capture author%}
-{%- include person id='imagejan' -%}
+{% include person id='imagejan' %}
 {% endcapture %}
 
 {% capture maintainer%}
-{%- include person id='imagejan' -%}
+{% include person id='imagejan' %}
 {% endcapture %}
 
 {% capture source%}

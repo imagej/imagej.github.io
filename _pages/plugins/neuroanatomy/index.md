@@ -5,11 +5,11 @@ title: Neuroanatomy
 
 {% include project content='SNT' %}
 {% capture author%}
-{%- include person id='tferr' -%}
+{% include person id='tferr' %}
 {% endcapture %}
 
 {% capture maintainer%}
-{%- include person id='tferr' -%}
+{% include person id='tferr' %}
 {% endcapture %}
 
 {% capture source%}

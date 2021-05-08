@@ -114,15 +114,15 @@ PlotData=
 
 \* Madison locals include:
 
--   {%- include person id='etadobson' -%}
--   {%- include person id='eliceiri' -%}
--   {%- include person id='hinerm' -%}
--   {%- include person id='yuminguw' -%}
--   {%- include person id='guneetsinghmehta' -%}
--   {%- include person id='ctrueden' -%}
--   {%- include person id='awalter17' -%}
--   {%- include person id='jaywarrick' -%}
--   {%- include person id='lnyng' -%}
+-   {% include person id='etadobson' %}
+-   {% include person id='eliceiri' %}
+-   {% include person id='hinerm' %}
+-   {% include person id='yuminguw' %}
+-   {% include person id='guneetsinghmehta' %}
+-   {% include person id='ctrueden' %}
+-   {% include person id='awalter17' %}
+-   {% include person id='jaywarrick' %}
+-   {% include person id='lnyng' %}
 
 Some people were not present at the hackathon on weekends.
 

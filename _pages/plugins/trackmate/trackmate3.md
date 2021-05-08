@@ -55,4 +55,4 @@ From the branch {% include github org='fiji' repo='TrackMate3' tag='trackmate-mo
 
 It seems that the memory used while creating the model is much higher than the final one, but it's properly garbage collected at the end. Also notice the impact of the initial capacity: the model is never below 256 MB.
 
-{%- include person id='tinevez' -%} ([talk](User_talk_JeanYvesTinevez)) 10:16, 13 February 2015 (CST)
+{% include person id='tinevez' %} ([talk](User_talk_JeanYvesTinevez)) 10:16, 13 February 2015 (CST)

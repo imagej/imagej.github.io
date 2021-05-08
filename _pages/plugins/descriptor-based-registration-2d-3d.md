@@ -5,7 +5,7 @@ title: Descriptor-based registration (2d/3d)
 
 
 {% capture maintainer%}
-{%- include person id='StephanPreibisch' -%}
+{% include person id='StephanPreibisch' %}
 {% endcapture %}
 
 {% capture source%}

@@ -259,7 +259,7 @@ I am unable to derive an efficient decomposition of the disk STREL for the 3D ca
 
 <references/>
 
-{%- include person id='tinevez' -%} ([talk](User_talk_JeanYvesTinevez)) 09:33, 5 December 2014 (CST)
+{% include person id='tinevez' %} ([talk](User_talk_JeanYvesTinevez)) 09:33, 5 December 2014 (CST)
 
 [1] These are the 35 words added by the Oxford Online Dictionary during summer 2012. And another one.
 

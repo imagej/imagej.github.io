@@ -6,11 +6,11 @@ categories: Tutorials
 
 
 {% capture author%}
-{%- include person id='alex-krull' -%}, {%- include person id='Damienrj' -%}
+{% include person id='alex-krull' %}, {% include person id='Damienrj' %}
 {% endcapture %}
 
 {% capture maintainer%}
-{%- include person id='alex-krull' -%}, {%- include person id='Damienrj' -%}
+{% include person id='alex-krull' %}, {% include person id='Damienrj' %}
 {% endcapture %}
 {% include info-box name='Blob Tracking' software='Fiji' author=author maintainer=maintainer source='https://github.com/alex-krull/fiji' released='May 22<sup>nd</sup>, 2013' latest-version='May 22<sup>nd</sup>, 2013' status='PreRelease, active' category='[Tracking](Category_Tracking)' %}
 

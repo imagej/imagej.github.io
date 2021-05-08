@@ -83,6 +83,6 @@ In TrackScheme, links are selectable, therefore deletable. Select the target lin
 
 Removing a link often splits a track in 2 new tracks. To have them properly re-arranged, press the **Redo layout** button.
 
-{%- include person id='tinevez' -%} ([talk](User_talk_JeanYvesTinevez)) 09:21, 5 August 2013 (CDT)
+{% include person id='tinevez' %} ([talk](User_talk_JeanYvesTinevez)) 09:21, 5 August 2013 (CDT)
 
 

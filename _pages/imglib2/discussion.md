@@ -80,7 +80,7 @@ We think that it would be a great idea to be able to run both imglib and imglib2
 Why not just call it "org.imglib" then? Wouldn't clash with "mpicbg.imglib" of imglib1.
 
   
-Because imglib.org is registered by somebody else already. {%- include person id='axtimwalde' -%} 14:38, 24 March 2011 (CET)
+Because imglib.org is registered by somebody else already. {% include person id='axtimwalde' %} 14:38, 24 March 2011 (CET)
 
 ## 2011-03-21
 
@@ -276,7 +276,7 @@ We have been discussing this several times with a two-folded answer:
 1.  Yes, because iteration order for ImgLib2 Iterators is claimed to be constant. Given that, accessing the previous element (bck()) call is always defined.
 2.  No, because it would require a substantial extension of the existing interfaces and classes. ImgLib2 Iterator could then implement ListIterator which is a lot of effort to implement.
 
-In principal, I strongly support introducing it. It makes total sense but it is a change in the core. {%- include person id='axtimwalde' -%} 17:03, 3 May 2011 (CEST)
+In principal, I strongly support introducing it. It makes total sense but it is a change in the core. {% include person id='axtimwalde' %} 17:03, 3 May 2011 (CEST)
 
 I discussed it again with Tobias yesterday in detail and we came to the conclusion that it does not make too much sense. First of all, any Sampler can be copied at a certain location now, i.e. wait there. And it is also important to consider that going back would have a different logic than going forward as Cursors might crash when moved out. This means one would not be able to access +1, but one has to start at the last pixel of the e.g. Img<T>. That means when iterating back, the test has to be different: First get value, then move.
 
@@ -286,7 +286,7 @@ bck(); hasPrevious();
 
 just for the case that somebody wants to implement it for some reason and does not has to do its own interface which would be incompatible with other people who would want to it. Could be named ReverseCursor or so...
 
-{%- include person id='StephanPreibisch' -%} 12:24, 4 May 2011 (CEST)
+{% include person id='StephanPreibisch' %} 12:24, 4 May 2011 (CEST)
 
 ## 2011-05-04
 
@@ -302,7 +302,7 @@ etc...
 
 should we maybe change it as well to intPosition(), longPosition, etc?
 
-{%- include person id='StephanPreibisch' -%} 12:24, 4 May 2011 (CEST)
+{% include person id='StephanPreibisch' %} 12:24, 4 May 2011 (CEST)
 
 Tobias pointed out that we should not as it is not clear if it is a getter or setter when passing an array.
 
@@ -332,15 +332,15 @@ which saves a multiplication for many operations. It can also not be inlined by 
 
 The same applies for fwd(dim), bck(dim), move(dim), there a -- ++ and += can replace a array lookup...
 
-{%- include person id='StephanPreibisch' -%} 12:27, 12 May 2011 (CEST)
+{% include person id='StephanPreibisch' %} 12:27, 12 May 2011 (CEST)
 
   
-What about having a 1D `RandomAccess` instead as we have done in `PlanarImg` for `Cursor`. That could implement the `setPosition(long p, int d)` method ignoring `d`. A 1D `RandomAccess` could, in addition, have the proposed method such that in situations where you know what you're doing (read: where you can cast), you have a shorter call available. That approach would also relieve us from the need to implement that method in situations where it does not make sense at all, e.g. `ShapeImg`, that has no 1D. {%- include person id='axtimwalde' -%} 15:27, 12 May 2011 (CEST)
+What about having a 1D `RandomAccess` instead as we have done in `PlanarImg` for `Cursor`. That could implement the `setPosition(long p, int d)` method ignoring `d`. A 1D `RandomAccess` could, in addition, have the proposed method such that in situations where you know what you're doing (read: where you can cast), you have a shorter call available. That approach would also relieve us from the need to implement that method in situations where it does not make sense at all, e.g. `ShapeImg`, that has no 1D. {% include person id='axtimwalde' %} 15:27, 12 May 2011 (CEST)
 
 <!-- -->
 
   
-I like this way of realizing it, maybe we could also implement it on ImgFactory level. If a Img implements RandomAccessible1D, the factory could also have a special create( long size ) method (in e.g. RandomAccessible1DFactory) which returns for example &lt;I extends ArrayImg&lt;T,?&gt; & RandomAccessible1D&gt;, so no unchecked casts are necessary. {%- include person id='StephanPreibisch' -%} 16:15, 12 May 2011 (CEST)
+I like this way of realizing it, maybe we could also implement it on ImgFactory level. If a Img implements RandomAccessible1D, the factory could also have a special create( long size ) method (in e.g. RandomAccessible1DFactory) which returns for example &lt;I extends ArrayImg&lt;T,?&gt; & RandomAccessible1D&gt;, so no unchecked casts are necessary. {% include person id='StephanPreibisch' %} 16:15, 12 May 2011 (CEST)
 
 ## 2011-11-28
 
@@ -412,7 +412,7 @@ We have discussed with Tobias that two additional integer views would be very he
 1.  Joining multiple images of the same size and dimensions into one or more dimensions of a single image (composition as opposed to decomposition which is implemented by hyperslice views).
 2.  Adding a new dimension considering an existing dimension as interleaved data.
 
-When done properly this has the potential to replace or at least simplify PlanarImg like containers since they could be expressed as a composition of multiple ArrayImg-s. {%- include person id='axtimwalde' -%} 16:11, 18 January 2012 (CET)
+When done properly this has the potential to replace or at least simplify PlanarImg like containers since they could be expressed as a composition of multiple ArrayImg-s. {% include person id='axtimwalde' %} 16:11, 18 January 2012 (CET)
 
 ## 2012-11-21
 

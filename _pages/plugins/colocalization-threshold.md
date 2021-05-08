@@ -6,7 +6,7 @@ categories: Plugins,Colocalization,Color processing
 
 
 {% capture maintainer%}
-{%- include person id='chalkie666' -%}
+{% include person id='chalkie666' %}
 {% endcapture %}
 
 {% capture source%}

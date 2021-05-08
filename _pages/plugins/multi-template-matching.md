@@ -6,11 +6,11 @@ categories: Plugins,Citable,Feature Extraction,Jython,Object Detection
 
 
 {% capture author%}
-{%- include person id='LauLauThom' -%}, J.Gehrig
+{% include person id='LauLauThom' %}, J.Gehrig
 {% endcapture %}
 
 {% capture maintainer%}
-{%- include person id='LauLauThom' -%}
+{% include person id='LauLauThom' %}
 {% endcapture %}
 
 {% capture source%}

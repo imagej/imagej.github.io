@@ -615,7 +615,7 @@ ImageJ has benefitted from many hackathons over the years:
         San Francisco, CA, USA</p>
       </td>
       <td>
-        <p>{% capture content %} Dan Toloudis (AICS)|Dyche Mullins (UCSF)|Lisa Harrylock (AICS)|Tom Goddard (UCSF)|Molly Maleckar (AICS)|Tom Ferrin (UCSF)|Graham Johnson (AICS)|Samuel Lord (UCSF/HHMI)|Basu Chaudhuri (AICS)|Ambrose Carr (CZI)|Megan Riel-Megan (AICS)|Jeremy Freeman (CZI)|Dave Williams (AICS)|Nicholas Sofroniew (CZI)|{%- include person id='ctrueden' -%}|Arne Bakker (CZI)|Syuan-Ming Guo (CZ Biohub)|Andréa Clavijo (CZI)|Deep Ganguli (CZI)|Shalin Mehta (CZ Biohub)|Tony Tung (CZI)|Sarah Kefayati (CZ Biohub)|Anitha Krishnan (CZ Biohub)|{%- include person id='0x00b1' -%}|Norah Klintberg (CZ Biohub)|Eric Perlman (Johns Hopkins)|Oana Carja (CZ Biohub) Benny Lin (U Texas Austin)|Jeremy Maitlen-Shephard (Google) {% endcapture %} {% include person-list ids=content %}</p>
+        <p>{% capture content %} Dan Toloudis (AICS)|Dyche Mullins (UCSF)|Lisa Harrylock (AICS)|Tom Goddard (UCSF)|Molly Maleckar (AICS)|Tom Ferrin (UCSF)|Graham Johnson (AICS)|Samuel Lord (UCSF/HHMI)|Basu Chaudhuri (AICS)|Ambrose Carr (CZI)|Megan Riel-Megan (AICS)|Jeremy Freeman (CZI)|Dave Williams (AICS)|Nicholas Sofroniew (CZI)|{% include person id='ctrueden' %}|Arne Bakker (CZI)|Syuan-Ming Guo (CZ Biohub)|Andréa Clavijo (CZI)|Deep Ganguli (CZI)|Shalin Mehta (CZ Biohub)|Tony Tung (CZI)|Sarah Kefayati (CZ Biohub)|Anitha Krishnan (CZ Biohub)|{% include person id='0x00b1' %}|Norah Klintberg (CZ Biohub)|Eric Perlman (Johns Hopkins)|Oana Carja (CZ Biohub) Benny Lin (U Texas Austin)|Jeremy Maitlen-Shephard (Google) {% endcapture %} {% include person-list ids=content %}</p>
       </td>
       <td>
         <p>Bioimage Analysis in JavaScript, Python + Java</p>

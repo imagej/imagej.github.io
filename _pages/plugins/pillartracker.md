@@ -8,11 +8,11 @@ categories: Tracking,Visualization,Analysis,Filtering,Plugins
 
 
 {% capture author%}
-{%- include person name='Xu Xiaochun' -%}, {%- include person name='Felix Martin Margadant' -%}
+{% include person name='Xu Xiaochun' %}, {% include person name='Felix Martin Margadant' %}
 {% endcapture %}
 
 {% capture maintainer%}
-{%- include person name='Xu Xiaochun' -%}
+{% include person name='Xu Xiaochun' %}
 {% endcapture %}
 
 {% capture source%}

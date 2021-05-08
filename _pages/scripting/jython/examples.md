@@ -1120,7 +1120,7 @@ Note that it is counterintuitive that the area outside the mask gets filled with
 
 First note that the FFMPEG I/O plugin was a proof-of-concept that is completely **unmaintained**.
 
-Then open the [Fiji Updater](/plugins/updater), push the "Manage update sites" at the bottom left of the dialog, and install the [FFMPEG](https://fiji.sc/~schindelin/ffmpeg-plugins/) plugin by {%- include person id='dscho' -%} by ticking its checkbox, as [explained in more detail here](/update-sites/following).
+Then open the [Fiji Updater](/plugins/updater), push the "Manage update sites" at the bottom left of the dialog, and install the [FFMPEG](https://fiji.sc/~schindelin/ffmpeg-plugins/) plugin by {% include person id='dscho' %} by ticking its checkbox, as [explained in more detail here](/update-sites/following).
 
 See also the Java source code for the {% include github repo='fiji' tag='8164ae68' path='native/FFMPEG\_IO/plugin/src/main/java/fiji/ffmpeg/IO.java' label='IO' %} class from the [FFMPEG plugin source code site](https://github.com/fiji/fiji/tree/8164ae68/native/FFMPEG_IO/plugin/src/main/java/fiji/ffmpeg/).
 

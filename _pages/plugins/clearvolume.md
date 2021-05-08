@@ -6,11 +6,11 @@ categories: Plugins,Visualization,Citable
 
 
 {% capture author%}
-{%- include person id='fjug' -%}, {%- include person id='royerloic' -%}, Martin Weigert, {%- include person id='skalarproduktraum' -%}
+{% include person id='fjug' %}, {% include person id='royerloic' %}, Martin Weigert, {% include person id='skalarproduktraum' %}
 {% endcapture %}
 
 {% capture maintainer%}
-{%- include person id='fjug' -%}
+{% include person id='fjug' %}
 {% endcapture %}
 
 {% capture source%}

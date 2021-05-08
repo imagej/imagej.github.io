@@ -6,11 +6,11 @@ categories: Plugins,Transform,Registration
 
 
 {% capture author%}
-{%- include person id='axtimwalde' -%} ([1](mailto:saalfeld@mpi-cbg.de))
+{% include person id='axtimwalde' %} ([1](mailto:saalfeld@mpi-cbg.de))
 {% endcapture %}
 
 {% capture maintainer%}
-{%- include person id='axtimwalde' -%}
+{% include person id='axtimwalde' %}
 {% endcapture %}
 
 {% capture source%}

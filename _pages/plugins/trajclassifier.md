@@ -5,11 +5,11 @@ title: TraJClassifier
 
 
 {% capture author%}
-{%- include person id='thorstenwagner' -%}
+{% include person id='thorstenwagner' %}
 {% endcapture %}
 
 {% capture maintainer%}
-{%- include person id='thorstenwagner' -%}
+{% include person id='thorstenwagner' %}
 {% endcapture %}
 {% include info-box software='Fiji' name='Trajectory classifier for TrackMate' author=author maintainer=maintainer filename='ij-trajectory-classifier.jar [\[1](https://github.com/thorstenwagner/ij-trajectory-classifier/releases/latest) \]' source='Github [\[2](https://github.com/thorstenwagner/ij-trajectory-classifier) \]' latest-version='v0.8.1 (24 Aug. 2016)' status='active' %}
 

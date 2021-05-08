@@ -5,11 +5,11 @@ title: Robust clump splitting
 
 
 {% capture author%}
-{%- include person id='LouiseBloch' -%}, {%- include person id='thorstenwagner' -%}
+{% include person id='LouiseBloch' %}, {% include person id='thorstenwagner' %}
 {% endcapture %}
 
 {% capture maintainer%}
-{%- include person id='LouiseBloch' -%}, {%- include person id='thorstenwagner' -%}
+{% include person id='LouiseBloch' %}, {% include person id='thorstenwagner' %}
 {% endcapture %}
 {% include info-box software='Fiji' name='Robust Clump Splitting' author=author maintainer=maintainer filename='ij\_robust\_split.jar \[\]' source='Github https://github.com/thorstenwagner/ij-robust-split' latest-version='v1.0.0 (04 Sep 2016)' status='active' %}
 

@@ -9,7 +9,7 @@ This plugin implements various algorithms to segment 3D images, as part of the [
 
 ## Author
 
-{%- include person id='mcib3d' -%}
+{% include person id='mcib3d' %}
 
 ## Features
 

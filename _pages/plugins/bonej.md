@@ -5,11 +5,11 @@ title: BoneJ
 
 
 {% capture author%}
-{%- include person id='mdoube' -%}, {%- include person id='rimadoma' -%}, {%- include person id='alessandrofelder' -%}
+{% include person id='mdoube' %}, {% include person id='rimadoma' %}, {% include person id='alessandrofelder' %}
 {% endcapture %}
 
 {% capture maintainer%}
-{%- include person id='mdoube' -%}, {%- include person id='alessandrofelder' -%}
+{% include person id='mdoube' %}, {% include person id='alessandrofelder' %}
 {% endcapture %}
 
 {% capture source%}

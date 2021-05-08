@@ -5,7 +5,7 @@ title: VisBio Fiji plugin
 
 
 {% capture maintainer%}
-{%- include person id='ctrueden' -%}
+{% include person id='ctrueden' %}
 {% endcapture %}
 
 {% capture source%}

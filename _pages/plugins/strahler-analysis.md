@@ -10,11 +10,11 @@ categories: Skeleton,Analysis,Plugins,Neuroanatomy
 
 
 {% capture maintainer%}
-{%- include person id='tferr' -%}
+{% include person id='tferr' %}
 {% endcapture %}
 
 {% capture author%}
-{%- include person id='tferr' -%}
+{% include person id='tferr' %}
 {% endcapture %}
 
 {% capture source%}

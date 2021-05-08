@@ -5,7 +5,7 @@ title: TAPAS
 
 
 {% capture author%}
-{%- include person id='mcib3d' -%}
+{% include person id='mcib3d' %}
 {% endcapture %}
 
 {% capture source%}

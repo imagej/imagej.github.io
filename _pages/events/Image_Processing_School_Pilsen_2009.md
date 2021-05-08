@@ -80,13 +80,13 @@ Lead instructor: [Verena Kaynig](Verena_Kaynig)
 
 Intensity vs time analysis
 
-Lead instructor: {%- include person id='tinevez' -%}
+Lead instructor: {% include person id='tinevez' %}
 
 ### Fiji scripting: advanced Python
 
 Advanced Fiji scripting in Python
 
-Lead instructors: {%- include person id='tinevez' -%}
+Lead instructors: {% include person id='tinevez' %}
 
 ### Writing Fiji plugins in Java
 
@@ -100,7 +100,7 @@ Lead instructor: [Johannes Schindelin](Johannes_Schindelin)
 
 Image registration: rigid, affine, elastic, maximal warping... ([Register Virtual Stack Slices](/plugins/register-virtual-stack-slices), [TrakEM2](/plugins/trakem2), [BUnwarpJ](/plugins/bunwarpj))
 
-Lead instructor: {%- include person id='iarganda' -%}
+Lead instructor: {% include person id='iarganda' %}
 
 ## Work sessions
 

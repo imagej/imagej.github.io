@@ -6,11 +6,11 @@ categories: Software,SciJava
 
 
 {% capture maintainer%}
-Stefan Posch, {%- include person id='bimoelle' -%}
+Stefan Posch, {% include person id='bimoelle' %}
 {% endcapture %}
 
 {% capture author%}
-Stefan Posch, {%- include person id='bimoelle' -%}
+Stefan Posch, {% include person id='bimoelle' %}
 {% endcapture %}
 
 {% capture source%}

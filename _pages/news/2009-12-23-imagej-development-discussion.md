@@ -25,6 +25,6 @@ And the threads for [ImageJX](http://groups.google.com/group/imagejx):
 4.  **[Plugins infrastructure](http://groups.google.com/group/imagejx/browse_thread/thread/17781673f35dcff5)** – Multiple proposals have been presented for enhancing the plugin model—e.g., allowing for explicit declaration of input and output types to more easily chain plugins into a workflow. Some have even suggested eliminating the idea of "plugins" entirely (as opposed to scripts/macros). Various frameworks also exist to facilitate data processing workflows (e.g., KNIME and Cell Profiler)—what can we learn from them, and does it make sense to integrate? OSGi?
 5.  **[Performance](http://groups.google.com/group/imagejx/browse_thread/thread/a31da8a22cce440e)** – How can we improve ImageJ's algorithmic performance? Language translation? Performance packs? OpenCL?
 
-Please reply on whichever threads are of interest to you. {%- include person id='ctrueden' -%} will be on holiday for the rest of the year, but will be back before January 7th, and will try to chime in as time allows. Hopefully this great dialogue will continue as we all refine the roadmap for ImageJ over the next few weeks and months!
+Please reply on whichever threads are of interest to you. {% include person id='ctrueden' %} will be on holiday for the rest of the year, but will be back before January 7th, and will try to chime in as time allows. Hopefully this great dialogue will continue as we all refine the roadmap for ImageJ over the next few weeks and months!
 
  

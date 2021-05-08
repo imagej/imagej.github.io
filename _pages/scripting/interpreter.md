@@ -6,11 +6,11 @@ categories: Scripting
 
 
 {% capture author%}
-{%- include person id='dscho' -%}, {%- include person id='ctrueden' -%}
+{% include person id='dscho' %}, {% include person id='ctrueden' %}
 {% endcapture %}
 
 {% capture maintainer%}
-{%- include person id='ctrueden' -%}
+{% include person id='ctrueden' %}
 {% endcapture %}
 
 {% capture source%}

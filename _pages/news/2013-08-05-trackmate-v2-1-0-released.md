@@ -47,6 +47,6 @@ We are grateful to Jan Brocher and Masanari Takamiya for comments and bug report
 -   A 'Locale' problem prevented the entering of numerical features correctly on system relying on other decimal separators that the dot. TrackMate now enforces the dot to be used as a decimal separator on all Locales. <b>However</b> there are still reports that this fails on Windows machine with exotic (*i.e.* non dot as decimal separator) locales.
 -   Numerous other bugfixes.
 
-{%- include person id='tinevez' -%} ([talk](User_talk_JeanYvesTinevez)) 05:03, 5 August 2013 (CDT)
+{% include person id='tinevez' %} ([talk](User_talk_JeanYvesTinevez)) 05:03, 5 August 2013 (CDT)
 
 

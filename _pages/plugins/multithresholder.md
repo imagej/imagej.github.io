@@ -6,7 +6,7 @@ categories: Plugins,Segmentation
 
 
 {% capture reason%}
-This plugin was removed, as the [Auto Threshold](/plugins/auto-threshold) plugin from {%- include person id='landinig' -%} does a better job.
+This plugin was removed, as the [Auto Threshold](/plugins/auto-threshold) plugin from {% include person id='landinig' %} does a better job.
 {% endcapture %}
 {% include pluginremoved reason=reason date='April 2009' %}
 

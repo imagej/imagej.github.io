@@ -7,7 +7,7 @@ categories: Plugins,Tutorials,Scripting
 
 
 {% capture maintainer%}
-{%- include person id='ctrueden' -%}
+{% include person id='ctrueden' %}
 {% endcapture %}
 
 {% capture source%}

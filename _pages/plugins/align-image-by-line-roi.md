@@ -6,7 +6,7 @@ categories: Tutorials,Plugins,Registration
 
 
 {% capture maintainer%}
-{%- include person id='dscho' -%}
+{% include person id='dscho' %}
 {% endcapture %}
 
 {% capture source%}

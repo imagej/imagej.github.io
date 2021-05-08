@@ -5,11 +5,11 @@ title: Shape Filter
 
 
 {% capture author%}
-{%- include person id='thorstenwagner' -%}
+{% include person id='thorstenwagner' %}
 {% endcapture %}
 
 {% capture maintainer%}
-{%- include person id='thorstenwagner' -%}
+{% include person id='thorstenwagner' %}
 {% endcapture %}
 {% include info-box software='ImageJ/Fiji' name='Shape Filter Plugin' author=author maintainer=maintainer filename='shape\_filter\_x.y.z.jar [\[1](https://github.com/thorstenwagner/ij-shape-filter/releases/latest) \]' source='Github [\[2](https://github.com/thorstenwagner/ij-shape-filter) \]' latest-version='v1.4.2 (14 July 2016)' status='active' %}
 

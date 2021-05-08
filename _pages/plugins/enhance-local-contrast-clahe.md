@@ -8,11 +8,11 @@ categories: Plugins,Filtering
 
 
 {% capture author%}
-{%- include person id='axtimwalde' -%} ([1](mailto:saalfeld@mpi-cbg.de))
+{% include person id='axtimwalde' %} ([1](mailto:saalfeld@mpi-cbg.de))
 {% endcapture %}
 
 {% capture maintainer%}
-{%- include person id='axtimwalde' -%}
+{% include person id='axtimwalde' %}
 {% endcapture %}
 {% include info-box name='Enhance Local Contrast (CLAHE)' software='Fiji' author=author maintainer=maintainer source='https://github.com/axtimwalde/mpicbg/tree/master/mpicbg/src/main/java/mpicbg/ij/clahe' released='November 13<sup>th</sup>, 2009' latest-version='September 1<sup>st</sup>, 2010' status='stable, active' category='[Plugins](Category_Plugins), [Filtering](Category_Filtering)' %} The plugin **Enhance Local Contrast (CLAHE)** implements the method *{% include wikipedia title='CLAHE' text='Contrast Limited Adaptive Histogram Equalization'%}*[1] for enhancing the local contrast of an image. In Fiji, it is called through the menu entry **Process / Enhance Local Contrast (CLAHE)**. The filter respects the selected regions of interest and triggers an Undo-step.
 

@@ -5,7 +5,7 @@ title: PixFRET
 
 
 {% capture maintainer%}
-{%- include person id='imagejan' -%}
+{% include person id='imagejan' %}
 {% endcapture %}
 
 {% capture source%}

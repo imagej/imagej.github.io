@@ -5,10 +5,10 @@ title: LimeSeg
 
 
 {% capture maintainer%}
-{%- include person id='NicoKiaru' -%}
+{% include person id='NicoKiaru' %}
 {% endcapture %}
 {% capture author%}
-{%- include person id='NicoKiaru' -%}, {%- include person name='Sarah Machado' -%}
+{% include person id='NicoKiaru' %}, {% include person name='Sarah Machado' %}
 {% endcapture %}
 
 {% capture source%}

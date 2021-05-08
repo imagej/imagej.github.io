@@ -18,7 +18,7 @@ The rules for `#@` parameter use are as follows:
 
 
 {% capture person%}
-{%- include person id='kephale' -%},  
+{% include person id='kephale' %},  
 Clojure developer
 {% endcapture %}
 {% include testimonial quote='zomg UIs are so easy now  

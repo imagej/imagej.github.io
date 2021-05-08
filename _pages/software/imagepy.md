@@ -6,11 +6,11 @@ categories: Software,Citable
 
 
 {% capture author%}
-{%- include person id='yxdragon' -%}
+{% include person id='yxdragon' %}
 {% endcapture %}
 
 {% capture maintainer%}
-{%- include person id='yxdragon' -%}
+{% include person id='yxdragon' %}
 {% endcapture %}
 
 {% capture source%}

@@ -12,11 +12,11 @@ categories: Segmentation,Tutorials,Plugins
 
 
 {% capture author%}
-Verena Kaynig, {%- include person id='iarganda' -%}, Albert Cardona
+Verena Kaynig, {% include person id='iarganda' %}, Albert Cardona
 {% endcapture %}
 
 {% capture maintainer%}
- [Verena Kaynig](http://www.kaynig.de) and {%- include person id='iarganda' -%}
+ [Verena Kaynig](http://www.kaynig.de) and {% include person id='iarganda' %}
 {% endcapture %}
 
 {% capture source%}

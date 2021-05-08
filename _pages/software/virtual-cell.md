@@ -6,7 +6,7 @@ categories: Software,SciJava,Citable
 
 
 {% capture maintainer%}
-{%- include person id='jcschaff' -%}, {%- include person id='ctrueden' -%}
+{% include person id='jcschaff' %}, {% include person id='ctrueden' %}
 {% endcapture %}
 {% include info-box name='Virtual Cell' software='Virtual Cell' logo='<img src="/media/Vcell-icon.png" width="96"/>' author=' [CCAM](https://health.uconn.edu/cell-analysis-modeling/) at [UConn Health](https://health.uconn.edu/)' maintainer=maintainer source=' [on GitHub](https://github.com/virtualcell)' status='Active' website='http://vcell.org/' %}Virtual Cell (VCell for short) is a modeling and simulation environment for cell biology.
 

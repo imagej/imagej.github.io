@@ -5,11 +5,11 @@ title: Ellipse split
 
 
 {% capture author%}
-{%- include person id='thorstenwagner' -%}
+{% include person id='thorstenwagner' %}
 {% endcapture %}
 
 {% capture maintainer%}
-{%- include person id='thorstenwagner' -%}
+{% include person id='thorstenwagner' %}
 {% endcapture %}
 {% include info-box software='Fiji/ImageJ' name='Ellipse Splitting Plugin' author=author maintainer=maintainer filename='ij-ellipsesplit.jar [\[1](https://github.com/thorstenwagner/ij-ellipsesplit/releases/latest) \]' source='Github [\[2](https://github.com/thorstenwagner/ij-ellipsesplit) \]' latest-version='v0.4.0 (15 May 2016)' status='active' %}
 

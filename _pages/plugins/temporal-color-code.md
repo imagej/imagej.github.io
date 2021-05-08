@@ -8,7 +8,7 @@ categories: Plugins,Color processing
 
 
 {% capture author%}
- [Kota Miura](http://cmci.embl.de) , {%- include person id='dscho' -%}
+ [Kota Miura](http://cmci.embl.de) , {% include person id='dscho' %}
 {% endcapture %}
 
 {% capture source%}

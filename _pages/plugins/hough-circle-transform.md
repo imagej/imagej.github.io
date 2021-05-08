@@ -6,11 +6,11 @@ categories: Analysis
 
 
 {% capture author%}
-{%- include person id='llamero' -%}
+{% include person id='llamero' %}
 {% endcapture %}
 
 {% capture maintainer%}
-{%- include person id='llamero' -%}
+{% include person id='llamero' %}
 {% endcapture %}
 
 {% capture source%}

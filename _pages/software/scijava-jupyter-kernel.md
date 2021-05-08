@@ -6,11 +6,11 @@ categories: Software
 
 
 {% capture author%}
-{%- include person id='hadim' -%}
+{% include person id='hadim' %}
 {% endcapture %}
 
 {% capture maintainer%}
-{%- include person id='hadim' -%}
+{% include person id='hadim' %}
 {% endcapture %}
 
 {% capture source%}

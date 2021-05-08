@@ -19,6 +19,6 @@ The update includes:
 
 And many, many more features and error fixes.
 
-Thanks to {%- include person id='axtimwalde' -%}, {%- include person id='iarganda' -%}, {%- include person id='mhl' -%}, Johannes Schindelin and [German Koestinger](http://www.ini.uzh.ch/people/german) for code, bug reports and testing.
+Thanks to {% include person id='axtimwalde' %}, {% include person id='iarganda' %}, {% include person id='mhl' %}, Johannes Schindelin and [German Koestinger](http://www.ini.uzh.ch/people/german) for code, bug reports and testing.
 
 

@@ -22,6 +22,6 @@ As it stands, there is still one significant limitation to the adapters (that I 
 
 In the future, with SezPoz support, you would still have to create an `Adapter`, but just by annotating as an `Adapter` it would automatically be included in the static `AdapterTools` class, and your library would automatically work as a plug-in to Bio-Formats/SCIFIO.
 
-\~{%- include person id='hinerm' -%}
+\~{% include person id='hinerm' %}
 
  

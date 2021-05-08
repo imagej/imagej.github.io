@@ -4,6 +4,8 @@ title: Project ideas
 categories: development
 ---
 
+{% include outdated %}
+
 This page contains a loose list of ideas for cool/useful projects that have some relation to Fiji
 
 # Visualization
@@ -12,9 +14,9 @@ This page contains a loose list of ideas for cool/useful projects that have some
 
 The [Imglib](/imglib1) provides a cell container, where each cell is an arbitrary n-dimensional image block potentially paged out to a file. Consider the specific case of isotropic 3d-cells stored with lossless compression. This setup would enable efficient browsing and analysis of image volumes larger than available RAM, while observing a specific 3d ROI from XY, YZ and XZ planes. These image volumes are common in [Block-Face Serial Scanning Electron Microscopy](http://www.plosbiology.org/article/info:doi/10.1371/journal.pbio.0020329), a technique now commercialized as "Gatan 3-way view EM." See this page for [theory](http://www.gatan.com/knowhow/knowhow_15/3view.htm) and for [pictures and examples](http://www.gatan.com/resources/knowhow/kh18-3view.php).
 
-**Goal:** create a 3-way viewer for a 3d instance of an [Imglib](/imglib1)'s cell container.  
-**Language:** any supported by Fiji, preferably java.  
-**Contact:** {%- include person id='acardona' -%}
+**Goal:** create a 3-way viewer for a 3d instance of an [Imglib](/imglib1)'s cell container.\\
+**Language:** any supported by Fiji, preferably java.\\
+**Contact:** {% include person id='acardona' %}
 
 ## Plugin for Mixed-File-Format MultiVirtualHyperStack viewing window
 
@@ -34,9 +36,9 @@ The project would consist of
 
 -   Create a control panel that allows adjustments of XYZT position for any single VirtualHyperStack that is a component of the mixed overlay window.
 
-**Goal:** Plugin for Mixed-File-Format MultiVirtualHyperStack viewing window.  
-**Language:** Java.  
-**Contact:** Bill Mohler (wmohler@neuron.uchc.edu)  
+**Goal:** Plugin for Mixed-File-Format MultiVirtualHyperStack viewing window.\\
+**Language:** Java.\\
+**Contact:** Bill Mohler (wmohler@neuron.uchc.edu)\\
 **Plugin:** [ python script for multi-stack composite image](/scripting/jython#visualize-any-number-of-tiff-stacks-in-a-single-composite-multi-color-image-stack)
 
 ## Interactively adjustable intensity/LUT curves
@@ -64,9 +66,9 @@ We have several data sets of images and their corresponding manual segmentations
 
 You are welcome to use any scientifically-relevant dataset of your choice, but we will give priority to biologically-oriented data sets.
 
-**Goal:** Implement a number of segmentation algorithms based on machine learning.  
-**Language:** Java.  
-**Mentor:** {%- include person id='iarganda' -%}, {%- include person id='acardona' -%}  
+**Goal:** Implement a number of segmentation algorithms based on machine learning.\\
+**Language:** Java.\\
+**Mentor:** {% include person id='iarganda' %}, {% include person id='acardona' %}
 
 ## Implementing algorithms for Imglib
 
@@ -78,9 +80,9 @@ The new imglib supports dimension-, storage- and data type independent image pro
 -   Color Spaces and Color Space Conversions
 -   Efficient representation of non-raster images (based on 2d polygonal shapes and 3d/4d meshes)
 
-**Goal:** Implement generic algorithms for image processing.  
-**Language:** Java.  
-**Mentor:** [Stephan Preibisch](http://fly.mpi-cbg.de/preibisch), [Stephan Saalfeld](http://fly.mpi-cbg.de/saalfeld)\], [Tobias Pietzsch](http://www.wv.inf.tu-dresden.de/People/Pietzsch.html), {%- include person id='acardona' -%}  
+**Goal:** Implement generic algorithms for image processing.\\
+**Language:** Java.\\
+**Mentor:** [Stephan Preibisch](http://fly.mpi-cbg.de/preibisch), [Stephan Saalfeld](http://fly.mpi-cbg.de/saalfeld)\], [Tobias Pietzsch](http://www.wv.inf.tu-dresden.de/People/Pietzsch.html), {% include person id='acardona' %}
 
 ## Colorizing algorithms
 
@@ -88,9 +90,9 @@ There are a number of publications about turning greyscale images into color ima
 
 Note: this is an ill-posed problem, as there is not enough information in the greyscale images to identify the original color. However, under certain circumstances, it is possible to estimate a best guess for the color for most or all pixels.
 
-**Goal:** implement a colorizing plugin.  
-**Language:** Java.  
-**Mentor:** J. Schindelin (johannes.schindelin AT gmx.de)  
+**Goal:** implement a colorizing plugin.\\
+**Language:** Java.\\
+**Mentor:** {% include person id="dscho" %}
 
 ## Image selector/sorter
 
@@ -102,17 +104,17 @@ Even if Fiji aims at scientific image processing rather than beautifying photogr
 
 Possible tools to do so would be airbrushes (allowing for transparent colors) or brushes with a certain inertia to allow calligraphic effects, etc.
 
-**Goal:** implement a plugin for interactive calligraphic effects.  
-**Language:** Java.  
-**Mentor:** J. Schindelin (johannes.schindelin AT gmx.de)  
+**Goal:** implement a plugin for interactive calligraphic effects.\\
+**Language:** Java.\\
+**Mentor:** {% include person id="dscho" %}
 
 ## Wavelet inpainting
 
 Implement a simple inpainting method (i.e. restore missing/unwanted parts of the image marked by a ROI) using wavelets: apply the wavelet transform, and then, on each level, use a diffusion algorithm to deduce a smooth signal from the surrounding parts, and finally inverse-transform the wavelet to get the restored image.
 
-**Goal:** implement a plugin for interactive calligraphic effects.  
-**Language:** Java.  
-**Mentor:** \[ Albert Cardona\])  
+**Goal:** implement a plugin for interactive calligraphic effects.\\
+**Language:** Java.\\
+**Mentor:** {% include person id="acardona" %}
 
 # Scripting
 
@@ -152,9 +154,9 @@ This issue needs to be tackled in Fiji's source code:
 
 -   JMathLib's image toolbox does not contain much. Even the most basic functions are missing. And even if there were functions, we would have to override them, because the functions need to be done in a way so that they can use and interact with ImageJ. The best approach may be to start by implementing the functions mentioned in [[MATLAB](/scripting/matlab)'s image processing toolbox'](http://www.mathworks.com/help/toolbox/images/index.html) *Getting Started* section, by implementing *.m* files that call directly into ImagePlus (using the above-mentioned technique).
 
-**Goal:** Integrate JMathLib as a new scripting language.  
-**Language:** Java.  
-**Mentor:** Johannes Schindelin (johannes.schindelin@gmx.de)  
+**Goal:** Integrate JMathLib as a new scripting language.\\
+**Language:** Java.\\
+**Mentor:** {% include person id="dscho" %}
 
 ## A Javascript Recorder
 
@@ -198,9 +200,9 @@ We have some rudimentary GUI testing in the *tests* branch but it may be better 
 
 The idea is, in any case, to record mouse moves and keyboard presses, optionally waiting for some GUI element (such as a window) to appear, and error out if something unexpected happens -- which most likely means that something broke and needs fixing.
 
-**Goal:** Provide an easy way to record and run GUI regression tests.  
-**Language:** Mainly Java  
-**Mentor:** Johannes Schindelin (johannes.schindelin@gmx.de)
+**Goal:** Provide an easy way to record and run GUI regression tests.\\
+**Language:** Mainly Java\\
+**Mentor:** {% include person id="dscho" %}
 
 ## Interface between R and ImageJ/Fiji
 
@@ -349,7 +351,7 @@ One way to achieve that would be by using the [Free Java Media Framework](http:/
 
 I have collected near 15 new histogram segmentation methods that would be better put under a single interface together with others already available.
 
-Note: this is more or less implemented in the Auto\_Threshold and Auto\_Local\_Threshold plugins.--{%- include person id='landinig' -%} 14:47, 29 November 2009 (CET)
+Note: this is more or less implemented in the Auto\_Threshold and Auto\_Local\_Threshold plugins.--{% include person id='landinig' %} 14:47, 29 November 2009 (CET)
 
 ## Virtual microscope-like image viewer
 
@@ -359,9 +361,9 @@ Note: this is more or less implemented in the Auto\_Threshold and Auto\_Local\_T
 
 This project requires a bit of knowledge in compiling C++ code on Linux, macOS and Windows. The idea is to make a recipe that other people can use to compile new releases of [Micro-Manager](http://www.micro-manager.org/), as well as integrate it into the Fiji project for a smooth user experience. To ensure that support for Micro-Manager is not broken inadvertently, you shall add regression tests, too.
 
-**Goal:** Provide an easy way to compile and ship Micro-Manager with Fiji.  
-**Language:** Java, C++, shell  
-**Mentor:** Johannes Schindelin (johannes.schindelin@gmx.de)
+**Goal:** Provide an easy way to compile and ship Micro-Manager with Fiji.\\
+**Language:** Java, C++, shell\\
+**Mentor:** {% include person id="dscho" %}
 
 # Other resources
 

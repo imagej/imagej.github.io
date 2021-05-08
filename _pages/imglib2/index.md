@@ -7,11 +7,11 @@ categories: ImgLib,Citable
 
 
 {% capture author%}
-{%- include person id='axtimwalde' -%}, {%- include person id='tpietzsch' -%}, {%- include person id='StephanPreibisch' -%}, {%- include person id='ctrueden' -%}, {%- include person id='LeeKamentsky' -%}, {%- include person id='bdezonia' -%}, {%- include person id='dscho' -%}, {%- include person id='dietzc' -%}, {%- include person id='hornm' -%}, {%- include person id='acardona' -%}, {%- include person id='tnargsirrah' -%}, {%- include person id='larrylindsey' -%}
+{% include person id='axtimwalde' %}, {% include person id='tpietzsch' %}, {% include person id='StephanPreibisch' %}, {% include person id='ctrueden' %}, {% include person id='LeeKamentsky' %}, {% include person id='bdezonia' %}, {% include person id='dscho' %}, {% include person id='dietzc' %}, {% include person id='hornm' %}, {% include person id='acardona' %}, {% include person id='tnargsirrah' %}, {% include person id='larrylindsey' %}
 {% endcapture %}
 
 {% capture maintainer%}
-{%- include person id='tpietzsch' -%}, {%- include person id='ctrueden' -%}
+{% include person id='tpietzsch' %}, {% include person id='ctrueden' %}
 {% endcapture %}
 
 {% capture source%}

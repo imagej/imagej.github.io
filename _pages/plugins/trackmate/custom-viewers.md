@@ -215,6 +215,6 @@ is enough to hide it in the menu. This is different from the `enabled` parameter
 
 But how could I make use of it then? you want to ask. Fortunately, this is just the subject of the next tutorial, on TrackMate actions. See you there.
 
-{%- include person id='tinevez' -%} ([talk](User_talk_JeanYvesTinevez)) 10:51, 17 March 2014 (CDT)
+{% include person id='tinevez' %} ([talk](User_talk_JeanYvesTinevez)) 10:51, 17 March 2014 (CDT)
 
 

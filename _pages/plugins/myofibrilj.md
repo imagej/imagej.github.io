@@ -6,11 +6,11 @@ categories: Scripting,Analysis,Plugins
 
 <seo metak="Fourier analysis, autocorrelation" metad="Fourier analysis, autocorrelation" /> 
 {% capture maintainer%}
-{%- include person id='giocard' -%}
+{% include person id='giocard' %}
 {% endcapture %}
 
 {% capture author%}
-{%- include person id='giocard' -%} and Maria Spletter
+{% include person id='giocard' %} and Maria Spletter
 {% endcapture %}
 
 {% capture source%}

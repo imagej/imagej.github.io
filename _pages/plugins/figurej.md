@@ -5,11 +5,11 @@ title: FigureJ
 
 
 {% capture maintainer%}
-{%- include person id='mutterer' -%}
+{% include person id='mutterer' %}
 {% endcapture %}
 
 {% capture author%}
-{%- include person id='mutterer' -%}
+{% include person id='mutterer' %}
 {% endcapture %}
 
 {% capture source%}

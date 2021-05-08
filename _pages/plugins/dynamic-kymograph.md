@@ -5,11 +5,11 @@ title: Dynamic Kymograph
 
 
 {% capture author%}
-{%- include person name='Rudy Zhou' -%}
+{% include person name='Rudy Zhou' %}
 {% endcapture %}
 
 {% capture maintainer%}
-{%- include person name='Rudy Zhou' -%}
+{% include person name='Rudy Zhou' %}
 {% endcapture %}
 
 {% capture source%}

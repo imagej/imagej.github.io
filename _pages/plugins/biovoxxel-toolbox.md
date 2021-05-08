@@ -6,15 +6,15 @@ categories:  Particle analysis, plugins
 
 
 {% capture author%}
-{%- include person id='biovoxxel' -%}
+{% include person id='biovoxxel' %}
 {% endcapture %}
 
 {% capture maintainer%}
-{%- include person id='biovoxxel' -%}
+{% include person id='biovoxxel' %}
 {% endcapture %}
 
 {% capture maintainer%}
-{%- include person id='biovoxxel' -%}
+{% include person id='biovoxxel' %}
 {% endcapture %}
 {% include info-box software='ImageJ / Fiji' name='BioVoxxel Toolbox' update-site='BioVoxxel' author=author maintainer=maintainer website=' [www.biovoxxel.de](http://www.biovoxxel.de/index.html)' maintainer=maintainer released='2014' latest-version='12. February 2020' status='stable (active maintainance)' source=' [GitHub](https://github.com/biovoxxel/BioVoxxel-Toolbox)' category='[Particle analysis](Category_Particle_analysis), [Binary](Category_Binary), [Filtering](Category_Filtering)' %}You can setup an automatic update for the BioVoxxel Toolbox. Just run the [Updater](/plugins/updater) ({% include bc path='Help | Update...'%}) and switch in the main window to 'Advanced mode'. Then click on 'Manage update sites'. Here you simply need to activate the "BioVoxxel". See here how to follow an update site [follow an update site](/update-sites/following)
 
@@ -542,7 +542,7 @@ Future: Will be implemented for stacks as well.
 
 ------------------------------------------------------------------------
 
-All BioVoxxel Macros were developed by {%- include person id='biovoxxel' -%}
+All BioVoxxel Macros were developed by {% include person id='biovoxxel' %}
 
 The macros can be freely used, redistributed and changed according to the BSD-3 License.
 
@@ -550,4 +550,4 @@ For questions, comments and suggestions please contact: jan.brocher(at)biovoxxel
 
 There is NO WARRANTY of functionality for those macros.
 
-In no event neither {%- include person id='biovoxxel' -%} nor BioVoxxel shall be liable to any party for direct, indirect, special, incidental, or consequential damages or data loss of any kind arising out of the use of this software and its documentation, even if advised of the possibility thereof.
+In no event neither {% include person id='biovoxxel' %} nor BioVoxxel shall be liable to any party for direct, indirect, special, incidental, or consequential damages or data loss of any kind arising out of the use of this software and its documentation, even if advised of the possibility thereof.

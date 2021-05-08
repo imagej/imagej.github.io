@@ -5,7 +5,7 @@ title: sciview
 
 
 {% capture author%}
-{%- include person id='kephale' -%}, {%- include person id='skalarproduktraum' -%}, {%- include person id='ctrueden' -%}
+{% include person id='kephale' %}, {% include person id='skalarproduktraum' %}, {% include person id='ctrueden' %}
 {% endcapture %}
 {% include info-box logo='<img src="/media/SciView-icon.png" width="150"/>' name='SciView' software='ImageJ' author=author filename='' source=' [sciview](https://github.com/kephale/SciView)' released='in development' latest-version='in development' status='alpha' category='[Visualization](Category_Visualization)' website='https://github.com/scenerygraphics/SciView' %}== Purpose ==
 

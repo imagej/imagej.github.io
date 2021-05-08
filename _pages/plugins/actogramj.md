@@ -6,11 +6,11 @@ categories: Plugins,Visualization,Citable
 
 
 {% capture maintainer%}
-{%- include person id='bene51' -%}
+{% include person id='bene51' %}
 {% endcapture %}
 
 {% capture author%}
-{%- include person id='bene51' -%}
+{% include person id='bene51' %}
 {% endcapture %}
 
 {% capture source%}

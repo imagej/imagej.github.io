@@ -27,7 +27,7 @@ No changes are ever saved to the Reconstruct project. The new *.xml* file associ
 
 ## Contact
 
-The author of this plugin is {%- include person id='larrylindsey' -%}
+The author of this plugin is {% include person id='larrylindsey' %}
 
 ------------------------------------------------------------------------
 

@@ -216,6 +216,6 @@ Like this:
 
 Disabled modules are not even instantiated. They are as good as dead, except that you can change your mind easily. By the way, you can see that the TrackMate source tree has many of these disabled modules...
 
-{%- include person id='tinevez' -%} ([talk](User_talk_JeanYvesTinevez)) 14:23, 11 March 2014 (CDT)
+{% include person id='tinevez' %} ([talk](User_talk_JeanYvesTinevez)) 14:23, 11 March 2014 (CDT)
 
 

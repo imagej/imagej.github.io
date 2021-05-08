@@ -13,7 +13,7 @@ This Fiji menu command is implemented by the script {% include github org='fiji'
 4.  If a virtualstack is selected the a folder save the aligned stack to needs to be selected.
 5.  After some processing (there are progress bars), the resulting, registered volumes are opened. If a virtualstack was selected the registered volume will already be saved in the chosen target folder.
 
-The script was originally written by {%- include person id='acardona' -%} and [Robert Bryson-Richardson](http://monash.edu/science/about/schools/biological-sciences/staff/bryson-richardson/) while attending the [Developmental Imaging EMBO course](http://cwp.embo.org/pc10-37/) organized by [Gabriel](http://www.igc.gulbenkian.pt/research/photo/556/) [G. Martins](http://www.igc.gulbenkian.pt/research/unit/51).
+The script was originally written by {% include person id='acardona' %} and [Robert Bryson-Richardson](http://monash.edu/science/about/schools/biological-sciences/staff/bryson-richardson/) while attending the [Developmental Imaging EMBO course](http://cwp.embo.org/pc10-37/) organized by [Gabriel](http://www.igc.gulbenkian.pt/research/photo/556/) [G. Martins](http://www.igc.gulbenkian.pt/research/unit/51).
 
 ## Publication
 

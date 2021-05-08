@@ -6,11 +6,11 @@ categories: Libraries,ImageScience,plugins
 
 
 {% capture maintainer%}
-{%- include person id='emeijering' -%}
+{% include person id='emeijering' %}
 {% endcapture %}
 
 {% capture author%}
-{%- include person id='emeijering' -%}
+{% include person id='emeijering' %}
 {% endcapture %}
 
 {% capture source%}

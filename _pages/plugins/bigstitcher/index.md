@@ -5,11 +5,11 @@ title: BigStitcher
 
 
 {% capture author%}
-{%- include person id='StephanPreibisch' -%} & {%- include person id='hoerldavid' -%}
+{% include person id='StephanPreibisch' %} & {% include person id='hoerldavid' %}
 {% endcapture %}
 
 {% capture maintainer%}
-{%- include person id='StephanPreibisch' -%} & {%- include person id='hoerldavid' -%}
+{% include person id='StephanPreibisch' %} & {% include person id='hoerldavid' %}
 {% endcapture %}
 
 {% capture source%}

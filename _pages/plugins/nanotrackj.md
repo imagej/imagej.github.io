@@ -5,11 +5,11 @@ title: NanoTrackJ
 
 
 {% capture author%}
-{%- include person id='thorstenwagner' -%},
+{% include person id='thorstenwagner' %},
 {% endcapture %}
 
 {% capture maintainer%}
-{%- include person id='thorstenwagner' -%},
+{% include person id='thorstenwagner' %},
 {% endcapture %}
 {% include info-box software='ImageJFiji' name='NanoTrackJ' author=author maintainer=maintainer filename='nanotrackj.jar [\[1](https://github.com/thorstenwagner/ij-nanotrackj/releases/latest) \]' source='Github [\[2](https://github.com/thorstenwagner/ij-nanotrackj) \]' latest-version='v1.0.3 (22 Feb 2016)' status='active' %}
 

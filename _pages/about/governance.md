@@ -110,14 +110,14 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
         <p><strong><a href="SciJava">SciJava</a></strong></p>
       </td>
       <td>
-        <p>{%- include person id='joshmoore' -%}<br>
-        {%- include person id='ctrueden' -%}</p>
+        <p>{% include person id='joshmoore' %}<br>
+        {% include person id='ctrueden' %}</p>
       </td>
       <td>
-        <p>{%- include person id='ctrueden' -%}</p>
+        <p>{% include person id='ctrueden' %}</p>
       </td>
       <td>
-        <p>{%- include person id='ctrueden' -%}</p>
+        <p>{% include person id='ctrueden' %}</p>
       </td>
       <td>
         <p><a href="https://github.com/orgs/scijava/people">List on GitHub</a></p>
@@ -134,19 +134,19 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
         <p><strong><a href="/imglib2">ImgLib2</a></strong></p>
       </td>
       <td>
-        <p>{%- include person id='axtimwalde' -%}<br>
-        {%- include person id='StephanPreibisch' -%}</p>
+        <p>{% include person id='axtimwalde' %}<br>
+        {% include person id='StephanPreibisch' %}</p>
       </td>
       <td>
-        <p>{%- include person id='tpietzsch' -%}<sup>1</sup><br>
-        {%- include person id='StephanPreibisch' -%}<br>
-        {%- include person id='axtimwalde' -%}</p>
+        <p>{% include person id='tpietzsch' %}<sup>1</sup><br>
+        {% include person id='StephanPreibisch' %}<br>
+        {% include person id='axtimwalde' %}</p>
       </td>
       <td>
-        <p>{%- include person id='tpietzsch' -%}<br>
-        {%- include person id='ctrueden' -%}<br>
-        {%- include person id='StephanPreibisch' -%}<br>
-        {%- include person id='axtimwalde' -%}</p>
+        <p>{% include person id='tpietzsch' %}<br>
+        {% include person id='ctrueden' %}<br>
+        {% include person id='StephanPreibisch' %}<br>
+        {% include person id='axtimwalde' %}</p>
       </td>
       <td>
         <p><a href="https://github.com/orgs/imglib/people">List on GitHub</a></p>
@@ -163,17 +163,17 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
         <p><strong><a href="/software/imagej1">ImageJ1</a></strong></p>
       </td>
       <td>
-        <p>{%- include person id='rasband' -%}</p>
+        <p>{% include person id='rasband' %}</p>
       </td>
       <td>
-        <p>{%- include person id='rasband' -%}</p>
+        <p>{% include person id='rasband' %}</p>
       </td>
       <td>
-        <p>{%- include person id='rasband' -%}<br>
-        {%- include person id='ctrueden' -%}</p>
+        <p>{% include person id='rasband' %}<br>
+        {% include person id='ctrueden' %}</p>
       </td>
       <td>
-        <p>{%- include person id='rasband' -%}</p>
+        <p>{% include person id='rasband' %}</p>
       </td>
       <td>
         <p>See <a href="/ij/notes.html">release notes</a></p>
@@ -187,14 +187,14 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
         <p><strong><a href="/software/imagej2">ImageJ2</a></strong></p>
       </td>
       <td>
-        <p>{%- include person id='ctrueden' -%}<br>
-        {%- include person id='eliceiri' -%}</p>
+        <p>{% include person id='ctrueden' %}<br>
+        {% include person id='eliceiri' %}</p>
       </td>
       <td>
-        <p>{%- include person id='ctrueden' -%}</p>
+        <p>{% include person id='ctrueden' %}</p>
       </td>
       <td>
-        <p>{%- include person id='ctrueden' -%}</p>
+        <p>{% include person id='ctrueden' %}</p>
       </td>
       <td>
         <p><a href="https://github.com/orgs/imagej/people">List on GitHub</a></p>
@@ -211,15 +211,15 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
         <p><strong><a href="/software/scifio">SCIFIO</a></strong></p>
       </td>
       <td>
-        <p>{%- include person id='ctrueden' -%}<br>
-        {%- include person id='eliceiri' -%}<br>
-        {%- include person id='hinerm' -%}</p>
+        <p>{% include person id='ctrueden' %}<br>
+        {% include person id='eliceiri' %}<br>
+        {% include person id='hinerm' %}</p>
       </td>
       <td>
-        <p>{%- include person id='ctrueden' -%}</p>
+        <p>{% include person id='ctrueden' %}</p>
       </td>
       <td>
-        <p>{%- include person id='ctrueden' -%}</p>
+        <p>{% include person id='ctrueden' %}</p>
       </td>
       <td>
         <p><a href="https://github.com/orgs/scijava/people">List on GitHub</a></p>
@@ -236,15 +236,15 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
         <p><strong><a href="/fiji">Fiji</a></strong></p>
       </td>
       <td>
-        <p>{%- include person id='dscho' -%}<br>
-        {%- include person id='acardona' -%}<br>
-        {%- include person id='tomancak' -%}</p>
+        <p>{% include person id='dscho' %}<br>
+        {% include person id='acardona' %}<br>
+        {% include person id='tomancak' %}</p>
       </td>
       <td>
-        <p>{%- include person id='ctrueden' -%}</p>
+        <p>{% include person id='ctrueden' %}</p>
       </td>
       <td>
-        <p>{%- include person id='ctrueden' -%}<br>
+        <p>{% include person id='ctrueden' %}<br>
         Gabriella Turek</p>
       </td>
       <td>
@@ -259,14 +259,14 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
         <p><strong><a href="/plugins/bdv">BigDataViewer</a></strong></p>
       </td>
       <td>
-        <p>{%- include person id='tpietzsch' -%}</p>
+        <p>{% include person id='tpietzsch' %}</p>
       </td>
       <td>
-        <p>{%- include person id='tpietzsch' -%}</p>
+        <p>{% include person id='tpietzsch' %}</p>
       </td>
       <td>
-        <p>{%- include person id='tpietzsch' -%}<br>
-        {%- include person id='StephanPreibisch' -%}</p>
+        <p>{% include person id='tpietzsch' %}<br>
+        {% include person id='StephanPreibisch' %}</p>
       </td>
       <td>
         <p><a href="https://github.com/orgs/bigdataviewer/people">List on GitHub</a></p>
@@ -281,15 +281,15 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
         <p><strong><a href="/plugins/trakem2">TrakEM2</a></strong></p>
       </td>
       <td>
-        <p>{%- include person id='acardona' -%}</p>
+        <p>{% include person id='acardona' %}</p>
       </td>
       <td>
-        <p>{%- include person id='acardona' -%}</p>
+        <p>{% include person id='acardona' %}</p>
       </td>
       <td>
-        <p>{%- include person id='acardona' -%}<br>
-        {%- include person id='axtimwalde' -%}<br>
-        {%- include person id='ctrueden' -%}</p>
+        <p>{% include person id='acardona' %}<br>
+        {% include person id='axtimwalde' %}<br>
+        {% include person id='ctrueden' %}</p>
       </td>
       <td>
         <p><a href="https://github.com/orgs/trakem2/people">List on GitHub</a></p>
@@ -308,15 +308,15 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
       </td>
       <td>
         <p>Paul Barber<br>
-        {%- include person id='ctrueden' -%}</p>
+        {% include person id='ctrueden' %}</p>
       </td>
       <td>
         <p>Paul Barber<sup>2</sup><br>
-        {%- include person id='ctrueden' -%}<sup>2</sup></p>
+        {% include person id='ctrueden' %}<sup>2</sup></p>
       </td>
       <td>
-        <p>{%- include person id='aksagar' -%}<br>
-        {%- include person id='ctrueden' -%}</p>
+        <p>{% include person id='aksagar' %}<br>
+        {% include person id='ctrueden' %}</p>
       </td>
       <td>
         <p><a href="https://github.com/orgs/slim-curve/people">List on GitHub</a></p>
@@ -333,15 +333,15 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
         <p><strong><a href="/formats/bio-formats">Bio-Formats</a></strong></p>
       </td>
       <td>
-        <p>{%- include person id='ctrueden' -%}<br>
-        {%- include person id='eliceiri' -%}</p>
+        <p>{% include person id='ctrueden' %}<br>
+        {% include person id='eliceiri' %}</p>
       </td>
       <td>
-        <p>{%- include person id='melissalinkert' -%}</p>
+        <p>{% include person id='melissalinkert' %}</p>
       </td>
       <td>
-        <p>{%- include person id='melissalinkert' -%}<br>
-        {%- include person id='sbesson' -%}</p>
+        <p>{% include person id='melissalinkert' %}<br>
+        {% include person id='sbesson' %}</p>
       </td>
       <td style="white-space: normal">
         <p><a href="https://github.com/openmicroscopy/bioformats/graphs/contributors">List on GitHub</a></p>
@@ -358,14 +358,14 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
         <p><strong><a href="/software/knime">KNIME Image Processing</a></strong></p>
       </td>
       <td>
-        <p>{%- include person id='dietzc' -%}<br>
+        <p>{% include person id='dietzc' %}<br>
         Martin Horn</p>
       </td>
       <td>
-        <p>{%- include person id='dietzc' -%}</p>
+        <p>{% include person id='dietzc' %}</p>
       </td>
       <td>
-        <p>{%- include person id='dietzc' -%}<br>
+        <p>{% include person id='dietzc' %}<br>
         Martin Horn</p>
       </td>
       <td>
@@ -383,14 +383,14 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
         <p><strong><a href="/software/cellprofiler">CellProfiler</a></strong></p>
       </td>
       <td>
-        <p>{%- include person id='LeeKamentsky' -%}<br>
+        <p>{% include person id='LeeKamentsky' %}<br>
         Anne Carpenter</p>
       </td>
       <td>
-        <p>{%- include person id='0x00b1' -%}</p>
+        <p>{% include person id='0x00b1' %}</p>
       </td>
       <td>
-        <p>{%- include person id='0x00b1' -%}</p>
+        <p>{% include person id='0x00b1' %}</p>
       </td>
       <td>
         <p><a href="https://github.com/orgs/CellProfiler/people">List on GitHub</a></p>
@@ -407,13 +407,13 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
         <p><strong><a href="/software/omero">OMERO</a></strong></p>
       </td>
       <td>
-        <p>{%- include person id='joshmoore' -%}<br>
+        <p>{% include person id='joshmoore' %}<br>
         Jean-Marie Burel<br>
         Chris Allan<br>
         Jason Swedlow</p>
       </td>
       <td>
-        <p>{%- include person id='joshmoore' -%}<br>
+        <p>{% include person id='joshmoore' %}<br>
         Jean-Marie Burel<br>
         Chris Allan</p>
       </td>
@@ -436,16 +436,16 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
       </td>
       <td>
         <p>Stephane Dallongeville<br>
-        {%- include person id='Fab14' -%}<br>
+        {% include person id='Fab14' %}<br>
         Jean-Christophe Olivo-Marin</p>
       </td>
       <td>
         <p>Stephane Dallongeville<br>
-        {%- include person id='Fab14' -%}</p>
+        {% include person id='Fab14' %}</p>
       </td>
       <td>
         <p>Stephane Dallongeville<br>
-        {%- include person id='Fab14' -%}</p>
+        {% include person id='Fab14' %}</p>
       </td>
       <td>
         <p><a href="https://github.com/orgs/Icy-imaging/people">List on GitHub</a></p>

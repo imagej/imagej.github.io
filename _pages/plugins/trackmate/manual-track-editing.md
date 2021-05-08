@@ -243,6 +243,6 @@ Plus or minus the localization errors and some incorrect cell radii, you now hav
 
 ![](/media/trackmate SmallLineage.png "TrackMate_SmallLineage.png")
 
-{%- include person id='tinevez' -%} ([talk](User_talk_JeanYvesTinevez)) 11:30, 1 August 2013 (CDT)
+{% include person id='tinevez' %} ([talk](User_talk_JeanYvesTinevez)) 11:30, 1 August 2013 (CDT)
 
 

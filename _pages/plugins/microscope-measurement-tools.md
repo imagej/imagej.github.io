@@ -6,7 +6,7 @@ categories: Plugins,Registration
 
 
 {% capture author%}
-{%- include person id='Demis' -%}
+{% include person id='Demis' %}
 {% endcapture %}
 
 {% capture source%}
@@ -127,7 +127,7 @@ The example adds a Calibration for a JEOL SEM, which automatically sets the scal
 
 ## Author(s)
 
-This simple python (jython) plugin was created by {%- include person id='Demis' -%}, 2015.
+This simple python (jython) plugin was created by {% include person id='Demis' %}, 2015.
 
 I used the following plugins as inspiration: [Correct\_3D\_drift](/plugins/correct-3d-drift) and [Microscope Scale](/ij/plugins/microscope-scale.html) (which sadly is no longer easily customizable).
 

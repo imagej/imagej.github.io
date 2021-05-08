@@ -5,11 +5,11 @@ title: IJ Blob
 
 
 {% capture author%}
-{%- include person id='thorstenwagner' -%}
+{% include person id='thorstenwagner' %}
 {% endcapture %}
 
 {% capture maintainer%}
-{%- include person id='thorstenwagner' -%}
+{% include person id='thorstenwagner' %}
 {% endcapture %}
 {% include info-box software='ImageJ/Fiji' name='IJBlob' author=author maintainer=maintainer filename='ij-blob.jar [\[1](https://github.com/thorstenwagner/ij-blob/releases/latest) \]' source='Github [\[2](https://github.com/thorstenwagner/ij-blob) \]' latest-version='v1.4.9 (4 July 2016)' status='active' %}
 

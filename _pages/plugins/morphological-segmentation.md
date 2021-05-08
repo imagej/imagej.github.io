@@ -6,11 +6,11 @@ categories: Plugins,Segmentation,Mathematical_morphology,Citable
 
 
 {% capture author%}
-{%- include person id='iarganda' -%}, David Legland
+{% include person id='iarganda' %}, David Legland
 {% endcapture %}
 
 {% capture maintainer%}
-{%- include person id='iarganda' -%}
+{% include person id='iarganda' %}
 {% endcapture %}
 
 {% capture source%}

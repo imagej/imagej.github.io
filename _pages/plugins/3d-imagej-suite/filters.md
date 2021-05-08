@@ -9,7 +9,7 @@ title: 3D Filters
 
 ## Author
 
-{%- include person id='mcib3d' -%}
+{% include person id='mcib3d' %}
 
 Matthias Labschütz contributed a fast version for isotropic kernels (for min, max and mean filtering)
 

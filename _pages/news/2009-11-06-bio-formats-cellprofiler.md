@@ -6,7 +6,7 @@ categories: News,ImageJ2
 
 
 {% capture  content %}
-The following is a blog post from {%- include person id='LeeKamentsky' -%} originally published on the ImageJDev web site.
+The following is a blog post from {% include person id='LeeKamentsky' %} originally published on the ImageJDev web site.
 {% endcapture %}
 {% include info-box content=content %}
 

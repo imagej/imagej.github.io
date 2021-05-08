@@ -6,7 +6,7 @@ categories: Scripting,Analysis,Plugins
 
 <seo metak="local maxima,local minima,extrema,inflection point, signal processing, spectral analysis" metad="local maxima,local minima,extrema,inflection point, signal processing, spectral analysis" /> 
 {% capture author%}
-{%- include person id='tferr' -%}
+{% include person id='tferr' %}
 {% endcapture %}
 
 {% capture filename%}

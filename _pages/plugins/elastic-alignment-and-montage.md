@@ -6,11 +6,11 @@ categories: Plugins,Registration,TrakEM2,Citable
 
 
 {% capture author%}
-{%- include person id='axtimwalde' -%} ([1](mailto:saalfeld@mpi-cbg.de))
+{% include person id='axtimwalde' %} ([1](mailto:saalfeld@mpi-cbg.de))
 {% endcapture %}
 
 {% capture maintainer%}
-{%- include person id='axtimwalde' -%}
+{% include person id='axtimwalde' %}
 {% endcapture %}
 {% include info-box name='Elastic Align and Montage' software='Fiji' author=author maintainer=maintainer source='https://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=tree;f=mpicbg/ij/plugin' released='March 11<sup>th</sup>, 2011' latest-version='October 22<sup>nd</sup>, 2011' status='experimental, active' category='[Plugins](Category_Plugins), [Registration](Category_Registration)' %}== Citation == Please note that the elastic alignment and montage plugin available through Fiji, is based on a publication. If you use it successfully for your research please cite our work:
 
@@ -22,11 +22,11 @@ Supplementary videos demonstrating the performance of the method are available [
 
 
 {% capture title%}
-Example 2: Example for elastic alignment and montaging. 7 serial TEM sections of the neuropil of a *Drosophila melanogaster* first instar larva, detail at 100% pixel resolution. Image courtesy of {%- include person id='acardona' -%}.
+Example 2: Example for elastic alignment and montaging. 7 serial TEM sections of the neuropil of a *Drosophila melanogaster* first instar larva, detail at 100% pixel resolution. Image courtesy of {% include person id='acardona' %}.
 {% endcapture %}
 {% include thumbnail src='/media/Aligned-series-crop-512.gif' title=title %}
 {% capture title%}
-Example 1: Example for elastic alignment and montaging. 7 serial TEM sections of the neuropil of a *Drosophila melanogaster* first instar larva, downscaled by a factor of 12. Image courtesy of {%- include person id='acardona' -%}.
+Example 1: Example for elastic alignment and montaging. 7 serial TEM sections of the neuropil of a *Drosophila melanogaster* first instar larva, downscaled by a factor of 12. Image courtesy of {% include person id='acardona' %}.
 {% endcapture %}
 {% include thumbnail src='/media/Aligned-series-512.gif' title=title %} We describe here our elastic alignment method for series or groups of overlapping 2d-images. The method is accessible through the plugins **Elastic Stack Alignment** and **Elastic Montage** and incorporated in the **[TrakEM2](/plugins/trakem2)** software. Applications are:
 
@@ -86,7 +86,7 @@ Both plugins work with stacks of images. The stacks might be virtual, which is s
 <!-- -->
 
 Output  
-The plugins export their output as a file or a series of files respectively. In addition, previously extracted [local features](/plugins/feature-extraction) and [feature correspondences](/plugins/feature-extraction) are saved for later re-use during parameter triggering (thanks to {%- include person id='acardona' -%} for adding this). Make sure that you work in a clear folder when changing the input data because both saved matches and features are identified by their stack index and parameters only.
+The plugins export their output as a file or a series of files respectively. In addition, previously extracted [local features](/plugins/feature-extraction) and [feature correspondences](/plugins/feature-extraction) are saved for later re-use during parameter triggering (thanks to {% include person id='acardona' %} for adding this). Make sure that you work in a clear folder when changing the input data because both saved matches and features are identified by their stack index and parameters only.
 
 You can choose whether to **interpolate** the result or not. **Visualize** checked will render the spring mesh simulation into a 512×512 pixel stack for demonstration purposes. The result is rendered using a transform mesh similar to the spring mesh discussed above. The parameter **resolution** specifies the number of vertices in a long row for this mesh, higher numbers give smoother results. Usually, you will never need more than **128**. Optionally, the result can be **rendered as RGB with green background** to explicitly mark empty background pixels e.g. when generating montages for successive series alignment.
 

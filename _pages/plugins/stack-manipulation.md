@@ -56,11 +56,11 @@ By Tony Collins.
 
 This command lets you remove multiple slices in one go. You can specify a start slice, and end slice and an increment (i.e. start=1, end=5, increment=2 will remove the slices 1, 3 and 5). Warning: The Slice Remover treats hyperstacks as if they were converted via {% include bc path='Image | Hyperstacks | Hyperstack to Stack'%} first.
 
-Original code by {%- include person id='rasband' -%}.
+Original code by {% include person id='rasband' %}.
 
 ### Slice Keeper
 
-By Tony Collins, initially part of his wonderful [MBF Plugin Collection](/software/mbf-imagej) package. Tony mentioned credit should go to {%- include person id='rasband' -%}, for the initial code is his work.
+By Tony Collins, initially part of his wonderful [MBF Plugin Collection](/software/mbf-imagej) package. Tony mentioned credit should go to {% include person id='rasband' %}, for the initial code is his work.
 
 <references/>
 

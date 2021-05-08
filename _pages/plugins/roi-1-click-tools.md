@@ -6,11 +6,11 @@ categories: Plugins,Update Sites,Macro Tools,Citable
 
 
 {% capture author%}
-{%- include person id='LauLauThom' -%}
+{% include person id='LauLauThom' %}
 {% endcapture %}
 
 {% capture maintainer%}
-{%- include person id='LauLauThom' -%}
+{% include person id='LauLauThom' %}
 {% endcapture %}
 
 {% capture source%}

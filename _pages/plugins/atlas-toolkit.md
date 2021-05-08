@@ -6,7 +6,7 @@ categories: Plugins,Registration,Citable
 
 
 {% capture maintainer%}
-{%- include person id='GrocottLab' -%}
+{% include person id='GrocottLab' %}
 {% endcapture %}
 
 {% capture source%}

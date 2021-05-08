@@ -18,6 +18,6 @@ The update includes:
 
 See [all news here.](http://t2.ini.uzh.ch/trakem2.html)
 
-Thanks to {%- include person id='axtimwalde' -%} for commits, testing, and bug reports.
+Thanks to {% include person id='axtimwalde' %} for commits, testing, and bug reports.
 
 

@@ -6,7 +6,7 @@ categories: Plugins,Particle analysis,Colocalization
 
 
 {% capture maintainer%}
-{%- include person id='krzysg' -%}
+{% include person id='krzysg' %}
 {% endcapture %}
 {% include info-box software='ImageJ' name='MosaicIA - Interaction Analysis' author=' [MOSAIC Group](http://mosaic.mpi-cbg.de/) , [Center for Systems Biology Dresden (CSBD)](http://www.mpg-sysbio.de) , [Max Planck Institute of Molecular Cell Biology and Genetics (MPI-CBG)](http://www.mpi-cbg.de/research/research-groups/ivo-sbalzarini.html) , Dresden, Germany.' maintainer=maintainer update-site='MOSAIC ToolSuite' source=' [MPI-CBG git](https://git.mpi-cbg.de/mosaic/MosaicSuite)' released='2013' status='active' category='[Particle analysis](Category_Particle_analysis), [Colocalization](Category_Colocalization)' website=' [MosaicSuite](http://mosaic.mpi-cbg.de/?q=downloads/imageJ)' %}
 

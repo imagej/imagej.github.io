@@ -6,11 +6,11 @@ categories: Tracking,Tutorials,Plugins
 
 
 {% capture maintainer%}
-{%- include person id='anotherche' -%}
+{% include person id='anotherche' %}
 {% endcapture %}
 
 {% capture author%}
-{%- include person id='anotherche' -%}
+{% include person id='anotherche' %}
 {% endcapture %}
 
 {% capture source%}

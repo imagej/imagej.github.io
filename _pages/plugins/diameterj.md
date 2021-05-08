@@ -6,11 +6,11 @@ categories: Plugins,Analysis
 
 
 {% capture author%}
-{%- include person id='DiameterJ' -%}
+{% include person id='DiameterJ' %}
 {% endcapture %}
 
 {% capture maintainer%}
-{%- include person id='DiameterJ' -%}
+{% include person id='DiameterJ' %}
 {% endcapture %}
 {% include info-box software='ImageJ 1.48 or newer (including ImageJ 2.XX) and Fiji' name='DiameterJ' author=author maintainer=maintainer filename='ImageJ 1.48a to 2.XXX [DiameterJ v1.018](/media/DiameterJ_1-018.zip) Fiji any version [DiameterJ v1.018](/media/DiameterJ_Fiji_-_1-018.zip)' source=' [Source Code](https://github.com/NHotaling/DiameterJ)' released='February 2015' latest-version='August 5<sup>th</sup>, 2016' status='v X.003 (first version released publicly)' category='[Plugins](Category_Plugins) [Analysis](Category_Analysis)' %} <span style="display: none">nanofiber diameter measurement, nanofiber diameter analysis, nanofiber diameter characterization, nanofiber diameter software, nanofiber diameter plugin, nanofiber diameter program, ImageJ nanofiber diameter, Fiji nanofiber diameter, automated nanofiber diameter, free, open source, radius</span>**DiameterJ**[1] is a free, open source plugin created for ImageJ, ImageJ 2, and Fiji developed at the National Institute of Standards and Technology. DiameterJ is a validated nanofiber diameter characterization tool. DiameterJ is able to analyze an image and find the diameter of nanofibers or microfibers at every pixel along a fibers axis and produces a histogram of these diameters. Included with this histogram are summary statistics such as mean fiber diameter and most occurring fiber diameter (mode). DiameterJ also bundles [OrientationJ](http://bigwww.epfl.ch/demo/orientation/)[2] for a complete analysis of fiber orientation within an image as well as the "Analyze Particles" function built into ImageJ/Fiji to analyze pore space within scaffolds and produce summary statistics for pores.
 

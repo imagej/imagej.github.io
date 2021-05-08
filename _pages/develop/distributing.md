@@ -280,7 +280,7 @@ Useful extensions deserve corresponding documentation explaining how to use them
         <ul>
           <li>Prepare an HTML page modeled after the <a href="/ij/plugins/index.html">list of ImageJ 1.x plugins</a>.
           </li>
-          <li>Email it to {%- include person id='rasband' -%}, the developer of ImageJ 1.x, and sole maintainer of the <a href="/ij/index.html">ImageJ 1.x website</a>.
+          <li>Email it to {% include person id='rasband' %}, the developer of ImageJ 1.x, and sole maintainer of the <a href="/ij/index.html">ImageJ 1.x website</a>.
           </li>
         </ul>
       </td>

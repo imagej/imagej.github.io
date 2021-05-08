@@ -4,7 +4,7 @@ title: 2016-01-29 - KNIME Image Processing hackathon
 categories: News,Hackathons,ImageJ2,KNIME
 ---
 
-From Monday, January 11, 2016 through Friday, January 22, 2016, {%- include person id='dietzc' -%} of the [University of Konstanz](http://www.uni-konstanz.de/en/welcome/) hosted \~30 developers at the [KNIME Konstanz Regional Office](https://www.knime.org/contact) for a [hackathon](/events/Hackathon) to develop the [KNIME](/software/knime) Image Processing extensions along with the underlying [ImageJ Ops](/libs/imagej-ops) library, as well as other supporting technologies such as [ImgLib2](/imglib2) and [ClearVolume](/plugins/clearvolume).
+From Monday, January 11, 2016 through Friday, January 22, 2016, {% include person id='dietzc' %} of the [University of Konstanz](http://www.uni-konstanz.de/en/welcome/) hosted \~30 developers at the [KNIME Konstanz Regional Office](https://www.knime.org/contact) for a [hackathon](/events/Hackathon) to develop the [KNIME](/software/knime) Image Processing extensions along with the underlying [ImageJ Ops](/libs/imagej-ops) library, as well as other supporting technologies such as [ImgLib2](/imglib2) and [ClearVolume](/plugins/clearvolume).
 
 ## Timeline
 
@@ -137,22 +137,22 @@ PlotData=
     -   Improved inplace and hybrid op interfaces ({% include github org='imagej' repo='imagej-ops' commit='2e4d67f55f439bb49b85bcf700b2909d982784c8' label='binary-inplace' %}, {% include github org='imagej' repo='imagej-ops' commit='3e2e8317b193207c266a7e22a81c8b457e620649' label='special-lookups' %})
     -   Improved the help op to support filtering by more criteria ({% include github org='imagej' repo='imagej-ops' commit='456acc7d8725578c2ac2a8c421645023a477fd7e' label='special-help' %})
     -   Improved ImageJ tutorials to facilitate community members learning ImageJ2 ([1](https://github.com/imagej/tutorials/compare/88c124b504f3f1e603fe106bbb34ff5423012f47%5E...54de6c20a6db7b69514cd7279c98683e850ce657))
-    -   Improved structure of [Script Editor](/scripting/script-editor) Templates menu, thanks to discussions with {%- include person id='kephale' -%} ({% include github org='imagej' repo='imagej-ui-swing' commit='27342e0b4e05ddc7d21bff6530a588554eea87e2' label='templates-menu' %})
-    -   Marked [ImageJ Legacy](/libs/imagej-legacy) as optional, thanks to feedback from {%- include person id='kmader' -%} and others ({% include github org='imagej' repo='imagej' commit='e8fbfeee858960f4a46aed8e0eb03175385d62fa' label='imagej/imagej@e8fbfeee' %})
-    -   Added a main class to Fiji, for easier launching from an IDE, thanks to a discussion with {%- include person id='fjug' -%} ([1](https://github.com/fiji/fiji/compare/bc128e3d7ab8c9e1269d88b7e534f7025e6f41cd%5E...f45204e32105873f4cddb132740d17deeda49879))
+    -   Improved structure of [Script Editor](/scripting/script-editor) Templates menu, thanks to discussions with {% include person id='kephale' %} ({% include github org='imagej' repo='imagej-ui-swing' commit='27342e0b4e05ddc7d21bff6530a588554eea87e2' label='templates-menu' %})
+    -   Marked [ImageJ Legacy](/libs/imagej-legacy) as optional, thanks to feedback from {% include person id='kmader' %} and others ({% include github org='imagej' repo='imagej' commit='e8fbfeee858960f4a46aed8e0eb03175385d62fa' label='imagej/imagej@e8fbfeee' %})
+    -   Added a main class to Fiji, for easier launching from an IDE, thanks to a discussion with {% include person id='fjug' %} ([1](https://github.com/fiji/fiji/compare/bc128e3d7ab8c9e1269d88b7e534f7025e6f41cd%5E...f45204e32105873f4cddb132740d17deeda49879))
     -   Added a View marker interface to ImgLib2, to facilitate "lightweight" ops ({% include github org='imglib' repo='imglib2' pr='116' label='view-marker' %})
-    -   Helped clean up {%- include person id='tibuch' -%}'s Ops Views PR ({% include github org='imagej' repo='imagej-ops' pr='168' label='views' %})
-    -   Helped {%- include person id='hinerm' -%} a bit with the Renjin script language ([1](https://github.com/scijava/scripting-renjin/compare/8c65d9ae8ca30ffe3c6b3e70e1dd88222e07a52c%5E...f6fffb4117bed4c37811fa64a114145ce0b5c938))
-    -   Helped {%- include person id='fjug' -%} and {%- include person id='tpietzsch' -%} establish [Jenkins](/develop/jenkins) jobs for [MPI-CBG projects](http://jenkins.imagej.net/view/MPI-CBG/)
+    -   Helped clean up {% include person id='tibuch' %}'s Ops Views PR ({% include github org='imagej' repo='imagej-ops' pr='168' label='views' %})
+    -   Helped {% include person id='hinerm' %} a bit with the Renjin script language ([1](https://github.com/scijava/scripting-renjin/compare/8c65d9ae8ca30ffe3c6b3e70e1dd88222e07a52c%5E...f6fffb4117bed4c37811fa64a114145ce0b5c938))
+    -   Helped {% include person id='fjug' %} and {% include person id='tpietzsch' %} establish [Jenkins](/develop/jenkins) jobs for [MPI-CBG projects](http://jenkins.imagej.net/view/MPI-CBG/)
 
 <!-- -->
 
 -   Bugs
     -   Fixed equals/hashCode problems with [ImgLib2](/imglib2) integer types ({% include github org='imglib' repo='imglib2' pr='111' label='imglib/imglib2\#111' %})
-    -   Fixed a bug in the [SJC](/libs/scijava-common) PrefService, noticed by {%- include person id='kephale' -%} ({% include github org='scijava' repo='scijava-common' commit='ab2a9adae7a8e6e8785874a13bbf805c5f8e71fe' label='long-pref-keys' %})
-    -   Fixed [SCIFIO](/software/scifio) bug with DICOM format, noticed by {%- include person id='kmader' -%} ({% include github org='scifio' repo='scifio' pr='292' label='dicom-file-list-npe' %})
-    -   Fixed bug when executing ops as commands, noticed by {%- include person id='kephale' -%} ({% include github org='imagej' repo='imagej-ops' commit='34b5523dfc051741a9ed69d2b5b9f97df24f2677' label='ops-as-commands' %})
-    -   Investigated SJC bug in class loading, noticed by {%- include person id='EikeHeinz' -%}, but no solution yet ({% include github org='scijava' repo='scijava-common' issue='219' label='scijava/scijava-common\#219' %})
+    -   Fixed a bug in the [SJC](/libs/scijava-common) PrefService, noticed by {% include person id='kephale' %} ({% include github org='scijava' repo='scijava-common' commit='ab2a9adae7a8e6e8785874a13bbf805c5f8e71fe' label='long-pref-keys' %})
+    -   Fixed [SCIFIO](/software/scifio) bug with DICOM format, noticed by {% include person id='kmader' %} ({% include github org='scifio' repo='scifio' pr='292' label='dicom-file-list-npe' %})
+    -   Fixed bug when executing ops as commands, noticed by {% include person id='kephale' %} ({% include github org='imagej' repo='imagej-ops' commit='34b5523dfc051741a9ed69d2b5b9f97df24f2677' label='ops-as-commands' %})
+    -   Investigated SJC bug in class loading, noticed by {% include person id='EikeHeinz' %}, but no solution yet ({% include github org='scijava' repo='scijava-common' issue='219' label='scijava/scijava-common\#219' %})
     -   Fixed Eclipse configuration to run enforcer only upon initial configuration ({% include github org='scijava' repo='pom-scijava' commit='022a7bea5ebbc5b81ffae7386a26eea8f8677e3f scijava/pom-scijava@022a7bea' %})
 
 <!-- -->
@@ -160,7 +160,7 @@ PlotData=
 -   Research
     -   Investigated improvements to Ops generic parameter matching. The problem is complex, but a solution is in the works.
     -   Explored possible Ops matching performance improvements ({% include github org='imagej' repo='imagej-ops' pr='332' label='fast-op-index' %})
-    -   Improved Jenkins jobs to build SNAPSHOT javadoc for all core [SciJava](SciJava) components (scijava, scifio, imglib2 and imagej). as requested by {%- include person id='stelfrich' -%} ({% include github org='imagej' repo='imagej-javadoc' commit='8cffdfa07c7406ebc8152cbdb84213d8a9774ff8' label='1' %}, {% include github org='scifio' repo='scifio-javadoc' commit='be25fda9f6baaaaa84f62fc6081d7e0ded8891e8' label='2' %}, {% include github org='imglib' repo='imglib2-javadoc' commit='e97cfc7a1e29dd1251297e2858245e7bfb275657' label='3' %})
+    -   Improved Jenkins jobs to build SNAPSHOT javadoc for all core [SciJava](SciJava) components (scijava, scifio, imglib2 and imagej). as requested by {% include person id='stelfrich' %} ({% include github org='imagej' repo='imagej-javadoc' commit='8cffdfa07c7406ebc8152cbdb84213d8a9774ff8' label='1' %}, {% include github org='scifio' repo='scifio-javadoc' commit='be25fda9f6baaaaa84f62fc6081d7e0ded8891e8' label='2' %}, {% include github org='imglib' repo='imglib2-javadoc' commit='e97cfc7a1e29dd1251297e2858245e7bfb275657' label='3' %})
 
 <!-- -->
 
@@ -169,9 +169,9 @@ PlotData=
 <!-- -->
 
 -   Pair programming bug-fixes and enhancements:
-    -   {% include github org='imagej' repo='imagej-common' pr='58' label='alias-for-img' %} (with {%- include person id='kephale' -%})
-    -   {% include github org='imagej' repo='imagej-ops' pr='318' label='refactor-stats-ops' %} (with {%- include person id='imagejan' -%})
-    -   {% include github org='imagej' repo='imagej-ops' pr='322' label='fix-slicewise-op' %} (with {%- include person id='imagejan' -%})
+    -   {% include github org='imagej' repo='imagej-common' pr='58' label='alias-for-img' %} (with {% include person id='kephale' %})
+    -   {% include github org='imagej' repo='imagej-ops' pr='318' label='refactor-stats-ops' %} (with {% include person id='imagejan' %})
+    -   {% include github org='imagej' repo='imagej-ops' pr='322' label='fix-slicewise-op' %} (with {% include person id='imagejan' %})
 
 ### Robert Haase
 
@@ -190,21 +190,21 @@ PlotData=
 
 ### Ulrik Günther
 
--   discussed future directions and extensions for [ClearVolume](https://github.com/clearvolume/clearvolume) with {%- include person id='royerloic' -%}, {%- include person id='fjug' -%} and {%- include person id='tpietzsch' -%}.
+-   discussed future directions and extensions for [ClearVolume](https://github.com/clearvolume/clearvolume) with {% include person id='royerloic' %}, {% include person id='fjug' %} and {% include person id='tpietzsch' %}.
 -   moved scenegraph implementation for ClearVolume to [own project](https://github.com/clearvolume/scenery) for re-usability.
 -   moved [ClearGL](https://github.com/clearvolume/cleargl) back to pure Java
--   discussed possilibities for additional renderers (e.g. software renderer) with {%- include person id='kephale' -%}.
--   discussed implementation with {%- include person id='royerloic' -%} and wrote first tests.
+-   discussed possilibities for additional renderers (e.g. software renderer) with {% include person id='kephale' %}.
+-   discussed implementation with {% include person id='royerloic' %} and wrote first tests.
 
 ### Tobias Pietzsch
 
--   reviewed, augmented and merged {%- include person id='tinevez' -%} YAML serialization for {% include github org='scijava' repo='ui-behaviour' label='ui-behaviour' %}.
--   moved {% include github org='scijava' repo='ui-behaviour' label='ui-behaviour' %} to the scijava org and set up jenkins jobs with {%- include person id='ctrueden' -%}, and released 1.0.0.
+-   reviewed, augmented and merged {% include person id='tinevez' %} YAML serialization for {% include github org='scijava' repo='ui-behaviour' label='ui-behaviour' %}.
+-   moved {% include github org='scijava' repo='ui-behaviour' label='ui-behaviour' %} to the scijava org and set up jenkins jobs with {% include person id='ctrueden' %}, and released 1.0.0.
 -   fixed memory leak in BigDataViewer ([1](https://github.com/bigdataviewer/bigdataviewer-core/pull/17)).
--   worked on factor graph library for tracking/segmentation formulations with {%- include person id='fjug' -%}.
+-   worked on factor graph library for tracking/segmentation formulations with {% include person id='fjug' %}.
 -   reviewed and merged imglib2 PRs [2](https://github.com/imglib/imglib2/pull/117), [3](https://github.com/imglib/imglib2/pull/116), [4](https://github.com/imglib/imglib2/pull/114), [5](https://github.com/imglib/imglib2/pull/113), [6](https://github.com/imglib/imglib2/pull/111), [7](https://github.com/imglib/imglib2-realtransform/pull/3), [8](https://github.com/imglib/imglib2-realtransform/pull/2).
 -   unified naming of "source" and "target" in imglib2 Views and RealViews [9](https://github.com/imglib/imglib2-realtransform/pull/4).
--   investigated imglib2 PlanarImg bug with {%- include person id='dietzc' -%} and {%- include person id='kephale' -%}.
+-   investigated imglib2 PlanarImg bug with {% include person id='dietzc' %} and {% include person id='kephale' %}.
 
 ### Stefan Helfrich
 
@@ -220,6 +220,6 @@ PlotData=
 
 ## Future directions
 
--   {%- include person id='kephale' -%} - Explore updating the [3D Viewer](/plugins/3d-viewer) to use [Ops](/libs/imagej-ops) and [ClearVolume](/plugins/clearvolume) under the hood.
+-   {% include person id='kephale' %} - Explore updating the [3D Viewer](/plugins/3d-viewer) to use [Ops](/libs/imagej-ops) and [ClearVolume](/plugins/clearvolume) under the hood.
 
    

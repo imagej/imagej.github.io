@@ -10,7 +10,7 @@ categories: Plugins,Color processing
 
 From the plugin webpage:
 
-"This Plugin draw the Red, Green and Blue profile plot of an RGB image on the same Plot, for each type of line selection. This profile is refreshed when a new selection is made. Large parts of this code were taken from plugins by {%- include person id='rasband' -%}."
+"This Plugin draw the Red, Green and Blue profile plot of an RGB image on the same Plot, for each type of line selection. This profile is refreshed when a new selection is made. Large parts of this code were taken from plugins by {% include person id='rasband' %}."
 
 
 {% capture content%}

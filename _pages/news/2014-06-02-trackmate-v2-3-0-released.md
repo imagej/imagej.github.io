@@ -24,7 +24,7 @@ To use it, select a few cells in TrackScheme and right-click to make the context
 
 ![](/media/trackmate ImportFromIcy.png "TrackMate_ImportFromIcy.png")
 
-We would like to express our thanks to {%- include person id='Fab14' -%} for his help in developing these two features.
+We would like to express our thanks to {% include person id='Fab14' %} for his help in developing these two features.
 
 -   A new action allows merging two TrackMate files into one.
 

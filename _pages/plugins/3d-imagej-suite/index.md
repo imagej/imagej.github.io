@@ -5,7 +5,7 @@ title: 3D ImageJ Suite
 
 
 {% capture author%}
-{%- include person id='mcib3d' -%}, Jean Ollion
+{% include person id='mcib3d' %}, Jean Ollion
 {% endcapture %}
 
 {% capture source%}
@@ -27,7 +27,7 @@ The associated project for automation is available in [TAPAS](/plugins/tapas).
 
 ## Author
 
-{%- include person id='mcib3d' -%} ![](/media/EmailBoudier.png "fig:EmailBoudier.png"), [Sorbonne University](https://www.sorbonne-universite.fr/en), Paris, France.
+{% include person id='mcib3d' %} ![](/media/EmailBoudier.png "fig:EmailBoudier.png"), [Sorbonne University](https://www.sorbonne-universite.fr/en), Paris, France.
 
 With many contributions from J. Ollion, Laboratoire Jean Perrin, Paris, France.
 

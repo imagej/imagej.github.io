@@ -6,11 +6,11 @@ categories: Plugins
 
 
 {% capture author%}
-{%- include person id='iarganda' -%}, Albert Cardona and Stephan Saalfeld
+{% include person id='iarganda' %}, Albert Cardona and Stephan Saalfeld
 {% endcapture %}
 
 {% capture maintainer%}
-{%- include person id='iarganda' -%}
+{% include person id='iarganda' %}
 {% endcapture %}
 
 {% capture filename%}

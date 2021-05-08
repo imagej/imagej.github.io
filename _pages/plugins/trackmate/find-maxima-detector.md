@@ -5,11 +5,11 @@ title: Find maxima (Trackmate module)
 
 
 {% capture author%}
-{%- include person id='thorstenwagner' -%}, {%- include person id='tinevez' -%}
+{% include person id='thorstenwagner' %}, {% include person id='tinevez' %}
 {% endcapture %}
 
 {% capture maintainer%}
-{%- include person id='thorstenwagner' -%},
+{% include person id='thorstenwagner' %},
 {% endcapture %}
 {% include info-box software='Fiji' name='Find Maxima Detector for TrackMate' author=author maintainer=maintainer filename='TrackMate\_FindMaxima.jar [\[1](https://github.com/thorstenwagner/ij-trackmate-findmaxima/releases/latest) \]' source='Github [\[2](https://github.com/thorstenwagner/ij-trackmate-findmaxima) \]' latest-version='v1.0.0 (13 May 2016)' status='active' %}
 

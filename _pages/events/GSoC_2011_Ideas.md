@@ -9,7 +9,7 @@ title: GSoC 2011 Ideas
 
 **Goal:** create a multi-scale disk-stored image data container for [Imglib](/imglib1) and use it for a rapid multi-view/multi-scale display of very large *n*-dimensional image data.  
 **Language:** any supported by Fiji, preferably Java.  
-**Mentor:** {%- include person id='acardona' -%}, [Mark Longair](http://longair.net/mark)
+**Mentor:** {% include person id='acardona' %}, [Mark Longair](http://longair.net/mark)
 
 ## Applying machine learning to the image segmentation problem
 
@@ -36,7 +36,7 @@ A plugin already exists for Fiji: [Trainable Segmentation](/plugins/tws).
 
 **Goal:** Implement a number of segmentation algorithms based on machine learning.  
 **Language:** Java.  
-**Mentor:** {%- include person id='iarganda' -%}, {%- include person id='acardona' -%}, {%- include person id='mhl' -%}  
+**Mentor:** {% include person id='iarganda' %}, {% include person id='acardona' %}, {% include person id='mhl' %}  
 
 ## Implementing algorithms for Imglib
 
@@ -50,7 +50,7 @@ The new imglib supports dimension-, storage- and data type independent image pro
 
 **Goal:** Implement generic algorithms for image processing.  
 **Language:** Java.  
-**Mentor:** [Stephan Preibisch](http://fly.mpi-cbg.de/preibisch), [Stephan Saalfeld](http://fly.mpi-cbg.de/saalfeld), [Tobias Pietzsch](http://www.wv.inf.tu-dresden.de/People/Pietzsch.html), {%- include person id='acardona' -%}  
+**Mentor:** [Stephan Preibisch](http://fly.mpi-cbg.de/preibisch), [Stephan Saalfeld](http://fly.mpi-cbg.de/saalfeld), [Tobias Pietzsch](http://www.wv.inf.tu-dresden.de/People/Pietzsch.html), {% include person id='acardona' %}  
 
 ## Reparing images with missing data by using contextual information
 
@@ -78,7 +78,7 @@ Other approaches are also welcome, such as using information from adjacent seria
 
 **Goal:** implement a plugin for repairing images.  
 **Language:** Java.  
-**Mentor:** {%- include person id='acardona' -%}  
+**Mentor:** {% include person id='acardona' %}  
 
 ## Robust blob segmentation
 
@@ -92,4 +92,4 @@ The purpose of this project is to segment in a fully automatic way round, convex
 
 **Goal:** Provide a robust blob segmentation algorithm that can work in 2D, 3D and 4D.  
 **Language:** Java  
-**Mentor:** {%- include person id='acardona' -%}  
+**Mentor:** {% include person id='acardona' %}  
