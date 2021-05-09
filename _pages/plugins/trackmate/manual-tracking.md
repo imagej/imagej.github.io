@@ -27,12 +27,12 @@ The default view (the one that re-uses the HyperStack viewer of ImageJ) can read
 
 With this tool selected, you can now make the image window active and use the mouse of the keyboard to create spots. Here are the commands for the mouse:
 
--   **Double-click** anywhere in the image to create a spot and enter the edit mode. The edited spot is highlighted with a green, dashed circle, as pictured below:
+-   {% include key key="Double-click" %} anywhere in the image to create a spot and enter the edit mode. The edited spot is highlighted with a green, dashed circle, as pictured below:
 
 ![](/media/trackmate SpotEditMode.png)
 
--   To leave the edit mode, **double-click** again anywhere. The spot is then added to the data model.
--   To edit it again, **double-click inside the spot**. Its outline is now dashed; you are back in the edit mode.
+-   To leave the edit mode, {% include key key="double-click" %} again anywhere. The spot is then added to the data model.
+-   To edit it again, {% include key key="double-click" %} inside the spot. Its outline is now dashed; you are back in the edit mode.
 -   While in the edit mode, you can move the edited spot around by clicking inside the spot and dragging it around. The spot will follow you if you change the time or the Z slider, and it will be added to the right plane upon leaving the edit mode.
 -   You can also change its radius by using {% include key keys='Alt|Mouse wheel' %}. Using {% include key keys='Shift|Alt' %} changes the spot radius faster.
 
@@ -55,7 +55,7 @@ All we have done so far was to create single spots, that are not part of any tra
 
 We need to add spots to the **selection**. The selection in TrackMate is a very useful tool for inspection, particularly because it is shared amongst all the possible views of a session, including *e.g.* [TrackScheme](/plugins/trackmate/trackscheme). When you click in a spot, the selection is made of this spot, and all views are centered on the target spot.
 
-To create a link, we need exactly two spots to be in the selection. To add or remove a spot from the selection, use {% include key keys='Shift|click' %}. Selected spots are highlighted with a green, thick circle. To empty the selection, click on an empty (no spot) part of the image.
+To create a link, we need exactly two spots to be in the selection. To add or remove a spot from the selection, use {% include key keys='Shift|left click' %}. Selected spots are highlighted with a green, thick circle. To empty the selection, click on an empty (no spot) part of the image.
 
 Once you have two spots in the selection, you can create a link between them by simply pressing the {% include key key='L' %} key. It should be immediately displayed, as on the example on the right.
 

@@ -121,7 +121,7 @@ Ideally you want to use one of the auto-threshold methods, rather than manually 
 ### Creating Selections
 
 -   Select {% include bc path='Edit | Selection | Create Selection'%} to select the objects within the mask
--   To deselect a portion of the image, select {% include key keys='Shift|click' %}
+-   To deselect a portion of the image, select {% include key keys='Shift|left click' %}
     -   [More information](/ij/docs/guide/146-27.html#sub:Create-Selection)
 
 <figure><img src="/media/ Reverted tree.png" title="Selections on the reverted image" width="300" alt="Selections on the reverted image" /><figcaption aria-hidden="true">Selections on the reverted image</figcaption></figure>

@@ -78,7 +78,7 @@ Described in [Scripting BARs](#scripting-bars)
 
 ## Accessing BARs
 
-As with all ImageJ commands, BAR scripts can be accessed in multiple ways: 1) through the {% include bc path="BAR |" %} menu, 2) the [Context Menu](#context-menu), 3) [Keyboard Shortcuts](#keyboard-shortcuts), 3) the *Shortcuts Menu Tool* ({% include bc path="BAR | Tool Installers | Install Shortcuts Menu" %}), that registers frequently used commands in the ImageJ toolbar, 4) by [pressing](#ExpediteAccess) {% include key key='[L](#ExpediteAccess)' %}, or 5) from other [scripts, macros and plugins](#scripting-bars). 
+As with all ImageJ commands, BAR scripts can be accessed in multiple ways: 1) through the {% include bc path="BAR |" %} menu, 2) the [Context Menu](#context-menu), 3) [Keyboard Shortcuts](#keyboard-shortcuts), 3) the *Shortcuts Menu Tool* ({% include bc path="BAR | Tool Installers | Install Shortcuts Menu" %}), that registers frequently used commands in the ImageJ toolbar, 4) by [pressing](#ExpediteAccess) {% include key key='L' %}, or 5) from other [scripts, macros and plugins](#scripting-bars). 
 {% capture tip%}
 You can open any BAR script by holding {% include key key='Shift' %} while selecting its name from the {% include bc path="BAR |" %} menu. For pre-compiled java plugins, the source code is available through the <span style="border-bottom:1px dotted #ccc;">About BAR...</span> command.
 {% endcapture %}

@@ -125,7 +125,7 @@ Navigating through the data in space and time uses the mouse and keyboard in a s
 
 -   {% include key key='Right Drag' %} or {% include key key='Middle Drag' %} Move in the XY-plane of the view.
 -   {% include key key='Mousewheel' %} Move along the Z-axis of the view. Press {% include key key='Shift' %} or {% include key key='Control' %} to change the speed.
--   {% include key key='Alt-Mousewheel' %} (Mac and Linux) or {% include key key='Ctrl-Shift-Mousewheel' %} (Windows) Zoom in and out.
+-   {% include key keys='Alt|Mousewheel' %} (Mac and Linux) or {% include key keys='Ctrl|Shift|Mousewheel' %} (Windows) Zoom in and out.
 -   {% include key key='up' %} / {% include key key='down' %} Zoom in / out. With {% include key key='Shift' %} fast zoom. With {% include key key='Control' %} slow zoom.
 
 **To orient, rotate the view:**
@@ -199,7 +199,7 @@ Just to ensure we are looking at the same spot in the two views, we checked the 
 Spots can also be created with a double-click of the mouse. So if we recapitulate:
 
 -   {% include key key='Left Click' %} inside a spot to select it and center all views to this spot.
--   {% include key key='Double Left Click' %} outside any spot to create a new one at the mouse location.
+-   {% include key key='Double Click' %} outside any spot to create a new one at the mouse location.
 
 ### Display settings for spots.
 
@@ -314,7 +314,7 @@ Moving around is done classically with the mouse, and the panning is triggered b
 
 -   {% include key key='Mousewheel' %} scrolls up and down.
 -   {% include key keys='Shift|Mousewheel' %} scrolls left and right.
--   {% include key keys='Space|Mousedrag' %} pans the view, à la ImageJ. If you pull the mouse out of the TrackScheme window, it will scroll in the direction of the mouse cursor.
+-   {% include key keys='Space|Left Drag' %} pans the view, à la ImageJ. If you pull the mouse out of the TrackScheme window, it will scroll in the direction of the mouse cursor.
 -   {% include key keys='Space|Mousewheel' %} is used for zooming.
 
 The keyboard can also be used:
@@ -366,7 +366,7 @@ The hierarchical layout of the lineages provided by TrackScheme can be useful fo
 -   {% include key key='Left-Click' %} on a spot or link to set the selection with this spot or link. The selection is cleared before.
 -   {% include key key='Left-Click' %} outside a spot to clear the selection.
 -   {% include key keys='Shift|Left-Click' %} on a spot or link to add or remove this spot or link to the selection.
--   {% include key key='Mousedrag' %} to select multiple spots and links in a selection box. Hold {% include key key='Shift' %} to add them to the current selection.
+-   {% include key key='Left Drag' %} to select multiple spots and links in a selection box. Hold {% include key key='Shift' %} to add them to the current selection.
 
 Adding to this, several items in the {% include key key='Right-click' %} popup menu help selecting part of tracks. If you {% include key key='Right-click' %} on a spot or {% include key key='Right-click' %} outside a spot with a non-empty selection, you can:
 
@@ -390,7 +390,7 @@ The info pane in the middle left takes the shape of a table, that displays the n
 
 The bottom left part if the spot feature plotter. The **Feature for X axis** drop down menu lets you choose what will be the feature used for the X axis. **Feature for Y axis** menus work the same way. Y-axis features can be added and removed using the add and remove buttons.
 
-To generate the plot, click the **Plot features** button. A graph should appear on which you can interact a bit. {% include key key='Mousedrag' %} towards the bottom right direction will zoom the plot, and {% include key key='Mousedrag' %} towards to up right direction will reset the zoom. The {% include key key='Right-click' %} menu lets you configure the plot, save it to an image file and export it as an ImageJ table.
+To generate the plot, click the **Plot features** button. A graph should appear on which you can interact a bit. {% include key key='Left Drag' %} towards the bottom right direction will zoom the plot, and {% include key key='Left Drag' %} towards to up right direction will reset the zoom. The {% include key key='Right-click' %} menu lets you configure the plot, save it to an image file and export it as an ImageJ table.
 
 <img src="/media/Bdv-MaMuT TrackSchemeSideBar.png" width="800"/>
 
@@ -406,7 +406,7 @@ Make sure you have a TrackScheme window open, a MaMuT viewer window open, and mo
 
 Normally, TrackScheme only displays the spots that belong in a track. Lonely spots that are not linked to anything when you launch TrackScheme are not shown. The spots you create after TrackScheme are however stacked under this special column. From there, you can attach them to an existing track or create a new one.
 
-Here is a way to do it. In TrackScheme using {% include key key='Mousedrag' %} select all the spots in the unlaid column. {% include key key='Right-click' %} somewhere in TrackScheme to make the pop-up menu appear. One of the menu item should be something like `Link 10 spots`. Choose this one. Each spots is then linked to the next one, frame by frame, and the links should appear in TrackScheme and in the MaMuT viewer. You just created a new track.
+Here is a way to do it. In TrackScheme using {% include key key='Left Drag' %} select all the spots in the unlaid column. {% include key key='Right-click' %} somewhere in TrackScheme to make the pop-up menu appear. One of the menu item should be something like `Link 10 spots`. Choose this one. Each spots is then linked to the next one, frame by frame, and the links should appear in TrackScheme and in the MaMuT viewer. You just created a new track.
 
 ### Triggering re-layout and style refresh.
 
@@ -934,7 +934,7 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
     </tr>
     <tr class="even">
       <td style="padding: 5px;">
-        <p>{% include key keys='Shift|Mousedrag' %}</p>
+        <p>{% include key keys='Shift|Left Drag' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Pan the view.</p>

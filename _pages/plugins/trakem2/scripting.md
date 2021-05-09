@@ -624,7 +624,7 @@ Then we must set this thickness to every section. This consists of the following
 
 `   Then choose "Reset layer Z and thickness".`
 
-2\. Click on the first layer node, then {% include key keys='Shift|click' %} on the last layer node.
+2\. Click on the first layer node, then {% include key keys='Shift|left click' %} on the last layer node.
 
 `   All nodes will be selected.`
 

@@ -1,0 +1,5 @@
+<button disabled>{{include.label}}</button>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

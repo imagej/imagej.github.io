@@ -104,7 +104,7 @@ We will first start by removing all the bad spots and tracks. We decide not to k
 -   Move to the **Track\_3** column in TrackScheme. You can see that it is following the static polar body.
 -   We wish to select it at once. There is two way you can do it:
     1.  Draw a selection rectangle around the whole track representation.
-    2.  Select one spot or link in the track. Right-click anywhere on TrackScheme: a menu appears, in which you will find **Select whole track**.
+    2.  Select one spot or link in the track. {% include key keys="Right-click" %} anywhere on TrackScheme: a menu appears, in which you will find **Select whole track**.
 -   Notice in the displayer that the selected track appear with a green and thick line, so as to highlight it.
 -   To delete all of it, simply press the {% include key key='Delete' %} key in TrackScheme, or use the right-click menu to do so.
 
@@ -124,13 +124,13 @@ The HyperStack displayer let you edit spots in two ways:
 
 #### Moving an existing spot
 
--   Double-click *inside* a spot on the displayer to select it for editing. It becomes green with a dashed line.
--   Click and drag inside the selected spot to move its center around. To move it Z or in time, simply move the sliders at the bottom of the window and the spot will follow (shortcuts: '&lt;' & '&gt;' for Z, 'Alt + &gt;' & 'Alt + &lt;' to move in time).
--   When you are happy with its new location, double-click anywhere to leave the editing mode. You should notice that its thumbnail in TrackScheme gets updated.
+-   {% include key keys="Double-click" %} *inside* a spot on the displayer to select it for editing. It becomes green with a dashed line.
+-   {% include key key="Left Drag" %} inside the selected spot to move its center around. To move it Z or in time, simply move the sliders at the bottom of the window and the spot will follow (shortcuts: '&lt;' & '&gt;' for Z, 'Alt + &gt;' & 'Alt + &lt;' to move in time).
+-   When you are happy with its new location, {% include key key="double-click" %} anywhere to leave the editing mode. You should notice that its thumbnail in TrackScheme gets updated.
 
 #### Creating a new spot
 
--   Double-click on the image *outside* of any spot.
+-   {% include key key="Double-click" %} on the image *outside* of any spot.
 -   A new spot is created, and is selected for edition.
 -   The previous remarks apply to change its location.
 
@@ -144,7 +144,7 @@ The HyperStack displayer let you edit spots in two ways:
 -   Select a spot for editing by double-slinking inside it.
 -   By holding the {% include key key='Alt' %} key, rotates the wheel button. This will change the spot's radius.
 -   Holding {% include key keys='Shift|Alt' %} changes its radius faster.
--   Double-click anywhere when you are happy with the new radius. The spot thumbnail in TrackScheme gets updated.
+-   {% include key key="Double-click" %} anywhere when you are happy with the new radius. The spot thumbnail in TrackScheme gets updated.
 
 ### With the keyboard
 
@@ -162,7 +162,7 @@ I have found using the mouse clicks sub-optimal and painful for the carpal bones
 -   Press the {% include key key='A' %} key.
 -   A new spot is <u>a</u>dded at the mouse location.
 
-By default, the new spot has the radius of the last spot edited with the mouse. So if you want to set the default radius, just double-click inside a spot that has the desired radius, then double-click again to leave editing mode. From now on, the radius of this spot will by used by default.
+By default, the new spot has the radius of the last spot edited with the mouse. So if you want to set the default radius, just {% include key key="double-click" %} inside a spot that has the desired radius, then {% include key key="double-click" %} again to leave editing mode. From now on, the radius of this spot will by used by default.
 
 #### Deleting an existing spot
 
@@ -216,7 +216,7 @@ It gets highlighted in the displayer, and in TrackScheme as well. You now have t
 
 To create a link between the two,
 
--   Right-click anywhere in TrackScheme
+-   {% include key key="Right-click" %} anywhere in TrackScheme
 -   In the menu that pops-up, select **Link 2 spots**.
 
 The newly created link is displayed in magenta. Note that the track arrangement is not changed; you need to press the **Redo layout** button to rearrange the tracks.
@@ -227,7 +227,7 @@ After doing so, you should now see a branching track, as picture below. Notice t
 
 ### Creating several links at once
 
-Using {% include key keys='Shift|click' %}, we can put several cells in the selection, and create the links between each pair. We don't have the need for it, but this is a good way to create a single track from several solitary spots: Just select them all (dragging a selection box or {% include key keys='Shift|click' %}) and select the **Link N spots** menu item.
+Using {% include key keys='Shift|left click' %}, we can put several cells in the selection, and create the links between each pair. We don't have the need for it, but this is a good way to create a single track from several solitary spots: Just select them all (dragging a selection box or {% include key keys='Shift|left click' %}) and select the **Link N spots** menu item.
 
 ## Editing tracks: deleting links
 

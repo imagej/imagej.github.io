@@ -126,7 +126,7 @@ Out of those folder, the updater might not see them.
 
 In this case, the plugin we'll be uploading is contained in *A\_Jolly\_Useful\_Plugin.jar*.
 
-Select the file to upload, click under the *Stats/Action* column, or right-click (on macOS, {% include key keys='Ctrl|click' %}) in any column, for the context menu and select *Upload to <update site name>*.
+Select the file to upload, click under the *Stats/Action* column, or right-click (on macOS, {% include key keys='Ctrl|Left Click' %}) in any column, for the context menu and select *Upload to <update site name>*.
 
 <img src="/media/Upload-to-update-site.png" width="770"/>
 

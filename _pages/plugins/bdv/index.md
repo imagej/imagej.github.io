@@ -51,10 +51,10 @@ Assuming you downloaded the *drosophila melanogaster* example dataset, you shoul
 
 On startup, the middle slice of the first source (angle) is shown. You can browse the stack using the keyboard or the mouse. To get started, try the following:
 
--   Use the mouse-wheel or {% include key key='&lt;' %} and {% include key key='&gt;' %} keys to scroll through z slices.
--   {% include key keys='right-click|drag' %} anywhere on the canvas to translate the image.
+-   Use the mouse-wheel or {% include key key='<' %} and {% include key key='>' %} keys to scroll through z slices.
+-   {% include key keys='right-drag' %} anywhere on the canvas to translate the image.
 -   Use {% include key keys='Ctrl|Shift|mouse-wheel' %}, or {% include key key='Up' %} and {% include key key='Down' %} keys to zoom in and out.
--   {% include key keys='left-click|drag' %} anywhere on the canvas to rotate (reslice) the image.
+-   {% include key keys='left-drag' %} anywhere on the canvas to rotate (reslice) the image.
 
 The following table shows the available navigation commands using the mouse:
 
@@ -63,7 +63,7 @@ The following table shows the available navigation commands using the mouse:
   <tbody>
     <tr class="odd">
       <td style="padding: 5px;">
-        <p><span class="removeme"><br></span> {% include key keys='left-click|drag' %}</p>
+        <p><span class="removeme"><br></span> {% include key keys='left-drag' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Rotate (pan and tilt) around the point where the mouse was clicked.</p>
@@ -71,7 +71,7 @@ The following table shows the available navigation commands using the mouse:
     </tr>
     <tr class="even">
       <td style="padding: 5px;">
-        <p>{% include key keys='right-click|drag' %} or {% include key keys='middle-click|drag' %}</p>
+        <p>{% include key keys='right-drag' %} or {% include key keys='middle-drag' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Translate in the XY-plane.</p>

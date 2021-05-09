@@ -73,7 +73,7 @@ This can be used to create branching links, as picture below:
 
 ### Creating several links at once
 
-Using {% include key keys='Shift|click' %}, we can put several cells in the selection, and create the links between each pair. Simply use {% include key keys='Shift|click' %} to add or remove cells from the selection. They get highlighted both in TrackScheme, in the linked viewer, and on TrackScheme sidebar.
+Using {% include key keys='Shift|left click' %}, we can put several cells in the selection, and create the links between each pair. Simply use {% include key keys='Shift|left click' %} to add or remove cells from the selection. They get highlighted both in TrackScheme, in the linked viewer, and on TrackScheme sidebar.
 
 Bring the right-click menu of TrackScheme, and select **Link X spots**. Links are created for cells that are consecutive in time, regardless of the frame interval between two consecutive cells. If creating these links generate a novel track, you should see that the track colors have changed in the displayer. No links are created between two cells if they are already linked, or if they belong to the same frame.
 

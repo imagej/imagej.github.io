@@ -79,7 +79,7 @@ The following table shows the available commands and keystrokes for landmark pla
     </tr>
     <tr class="even">
       <td style="padding: 5px;">
-        <p>&lt;<em>Landmark mode</em>&gt;+{% include key keys='left-click|drag' %}</p>
+        <p>&lt;<em>Landmark mode</em>&gt;+{% include key keys='left-drag' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Clicking an existing point and dragging changes it's position.</p>
@@ -87,7 +87,7 @@ The following table shows the available commands and keystrokes for landmark pla
     </tr>
     <tr class="odd">
       <td style="padding: 5px;">
-        <p>&lt;<em>Landmark mode</em>&gt;+{% include key keys='Shift|left-click|drag' %}</p>
+        <p>&lt;<em>Landmark mode</em>&gt;+{% include key keys='Shift|left-drag' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>"Move" a point. The initial click places a landmark point for the moving image. The release places a landmark point for the target image.</p>
@@ -345,7 +345,7 @@ The following table shows the available navigation commands using the mouse:
   <tbody>
     <tr class="odd">
       <td style="padding: 5px;">
-        <p>{% include key keys='left-click|drag' %}</p>
+        <p>{% include key keys='left-drag' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Rotate (pan and tilt) around the point where the mouse was clicked.</p>
@@ -353,7 +353,7 @@ The following table shows the available navigation commands using the mouse:
     </tr>
     <tr class="even">
       <td style="padding: 5px;">
-        <p>{% include key keys='right-click|drag' %} or {% include key keys='middle-click|drag' %}</p>
+        <p>{% include key keys='right-drag' %} or {% include key keys='middle-drag' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Translate in the XY-plane.</p>

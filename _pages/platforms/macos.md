@@ -77,8 +77,8 @@ Unfortunately, El Capitan has some new java-related issues. If you upgraded to E
 1.  Launch Fiji normally, and choose {% include bc path='Edit | Options | Memory & Threads'%}.
 2.  Reduce your Maximum Memory setting to \~1800 MB or less.
 3.  Quit Fiji.
-4.  {% include key keys='Ctrl|click' %} the Fiji dock icon and choose {% include bc path='Options | Show in Finder'%}.
-5.  {% include key keys='Ctrl|click' %} on the Fiji application icon that pops up, and choose Show Info (or press {% include key keys='Cmd|I' %}).
+4.  {% include key keys='Ctrl|Left Click' %} the Fiji dock icon and choose {% include bc path='Options | Show in Finder'%}.
+5.  {% include key keys='Ctrl|Left Click' %} on the Fiji application icon that pops up, and choose Show Info (or press {% include key keys='Cmd|I' %}).
 6.  Check the "Open in 32-bit mode" box in the Fiji info window.
 7.  Press the red X on the Fiji info window to close it.
 8.  Launch Fiji again, and the status bar should report "\[32-bit\]" in brackets.
@@ -107,7 +107,7 @@ Check more info at [landonf.bikemonkey.org/static/soylatte/](http://landonf.bike
 
 To access the plugins or macros folders, set the Finder window to either icons or lists mode, <b>not</b> in column mode, and double-click them.
 
-Alternatively, right-click (or {% include key keys='Ctrl|click' %}) the Fiji.app and select "Show package contents", to open the folder where the actual plugins and macros folders are.
+Alternatively, right-click (or {% include key keys='Ctrl|Left Click' %}) the Fiji.app and select "Show package contents", to open the folder where the actual plugins and macros folders are.
 
 ## Adding new plugins and macros
 

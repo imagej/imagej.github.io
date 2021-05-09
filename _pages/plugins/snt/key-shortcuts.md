@@ -84,7 +84,7 @@ These shortcuts are always available:
 
 <!-- -->
 
--   {% include key key='&gt;' %} / {% include key key='&lt;' %} - Previous/Next Z-slice, or Previous/Next channel, depending on the *Reverse CZT oder of "&gt;" and "&lt;"* choice set in IJ's {% include bc path='Edit|Options|Misc..'%} prompt (IJ default).
+-   {% include key key='>' %} / {% include key key='<' %} - Previous/Next Z-slice, or Previous/Next channel, depending on the *Reverse CZT oder of "&gt;" and "&lt;"* choice set in IJ's {% include bc path='Edit|Options|Misc..'%} prompt (IJ default).
 
 <!-- -->
 
@@ -133,11 +133,11 @@ These shortcuts become available in *Edit Mode*, activated through the contextua
 
 ### SciView
 
--   Drag - Move around
--   {% include key keys='Shift|' %}+Drag - Rotate around selected node
--   Single-click - Select node
--   Double-click - Centers clicked node
--   {% include key keys='Shift|' %}+Scroll - Zoom
+-   {% include key key="Left Drag" %} - Move around
+-   {% include key keys='Shift|Left Drag' %} - Rotate around selected node
+-   {% include key key="Left Click" %} - Select node
+-   {% include key key="Double Click" %} - Centers clicked node
+-   {% include key keys='Shift|Mouse Wheel' %} - Zoom
 -   {% include key key='W' %} {% include key key='A' %} {% include key key='S' %} {% include key key='D' %} - Move around (hold {% include key key='Shift' %} for slow movement)
 
 See [SciView](/plugins/sciview)'s {% include bc path='Help| '%}menu for a full list of shortcuts.

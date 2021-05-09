@@ -52,7 +52,7 @@ Validate with the **Unpair** button.
 #### Tree annotation
 
 -   if Tag field is filled during linking action, the created mother cell will have the tag
--   select the cell (Ctrl+click\| pom+click) or enter its label number in the label field of the *unpair and tag* panel and enter the tag in the field "Tag"
+-   select the cell ({% include key keys="Ctrl|Left Click" %}) or enter its label number in the label field of the *unpair and tag* panel and enter the tag in the field "Tag"
 
 **Apply** to validate the tagging.
 
