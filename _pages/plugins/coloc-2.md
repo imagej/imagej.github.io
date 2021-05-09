@@ -30,8 +30,8 @@ Coloc 2 does NOT perform object based colocalization measurements, where objects
     2.  You can have a third "binary mask" image, with the same x,y,z dimensions as the 2 images to be analyzed:
         1.  where the mask image is white (255 pixel value for an 8 bit greyscale image) colocalization will be analyzed for those pixels only. Where it is black (zero pixel value), the pixels will be ignored: not included in the analysis.
         2.  you can use a z stack as a 3D mask... it's up to you how you make that mask image, manually or by some automated method.
-4.  Launch the Coloc 2 plugin from the menu item: Analyze - Colocalization Analysis - Coloc 2
-    1.  or use the search bar: press L then start typing Coloc, then choose the plugin with the arrow keys and hit enter, or double mouse click it to launch the plugin.
+4.  Launch the Coloc 2 plugin from the menu item: {% include bc path="Analyze | Colocalization Analysis | Coloc 2" %}
+    1.  or use the search bar: press {% include key key="L" %} then start typing `coloc`, then choose the plugin with the arrow keys and press {% include key key="enter" %}, or {% include key key="double click" %} it to launch the plugin.
 5.  In the plugin's graphical user interface (GUI) choose the 2 images you want to analyze in the first 2 drop down lists.
     1.  Select the images according to which you want to be channel 1 and which to be channel 2.
     2.  In the third drop down list selection, select the image/channel you want to use that has the correct ROI or mask image

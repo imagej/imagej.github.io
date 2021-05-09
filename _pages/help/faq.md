@@ -86,7 +86,7 @@ Start Automator and select to create an *Application*. Double-click *Run Shell S
 
 Save anywhere you like.
 
-To replace this application's icon, Get Info on your real Fiji, click on the icon on the top left, press Cmd-C, Get Info on your Fiji Automator app, click the icon, and press Cmd-V.
+To replace this application's icon, Get Info on your real Fiji, click on the icon on the top left, press {% include key keys="Cmd|C" %}, Get Info on your Fiji Automator app, click the icon, and press {% include key keys="Cmd|V" %}.
 
 You will then see two icons in the dock, the one of the launcher app and the one of Fiji when it's running.
 

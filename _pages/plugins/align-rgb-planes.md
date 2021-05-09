@@ -10,15 +10,19 @@ categories: Plugins,Color processing
 
 From the plugin inline help:
 
-" <u>Align RGB planes</u> v1.7 by G.Landini Changes the alignment of the RGB planes independently.
+<blockquote>
+
+<u>Align RGB planes</u> v1.7 by G.Landini Changes the alignment of the RGB planes independently.
 
 *Red* *Green* and *Blue* checkboxes switch ON and OFF the planes and undo the alignment since last plane change. Note that when switching planes, the portion of the previously edited plane left outside the image frame is lost. Rotation, Width and Height changes are interpolated (so there is some loss of sharpness) and do not retain the image portions outside the image frame. You can use the **Resize2Rotate** macro to avoid loosing any image data.
 
-The *Rotate*, *Width* and *Height* sliders set integer values, but fractional values can also be typed in the entry boxes. Just make sure you press \[RETURN\] after the number is typed.
+The *Rotate*, *Width* and *Height* sliders set integer values, but fractional values can also be typed in the entry boxes. Just make sure you press {% include key key="RETURN" %} after the number is typed.
 
 The *Revert* button works only with single images, not stacks.
 
-Note: When using stacks, 2 buttons \[&lt; Prev\] and \[Next &gt;\] are added to the panel. Do not use the slide bar in the stack window, but use those buttons instead."
+Note: When using stacks, 2 buttons {% include button label="< Prev" %} and {% include button label="Next >" %} are added to the panel. Do not use the slide bar in the stack window, but use those buttons instead.
+
+</blockquote>
 
 ## Version history
 

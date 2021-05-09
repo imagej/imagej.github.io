@@ -537,7 +537,7 @@ Alternatively, press {% include bc path="File | Open" %}
 
 ![](/media/Images61.png "images61.png")
 
-Press {% include bc path="File | Save as..." %} to save an "ezf" file. Note that if the figure contains stacks, they will be saved in a folder with the same name as the "ezf" file with an extra .files. <span style="color:#ff0000;">Please always store the .ezf and the .ezf.files folder together, otherwise stack data will be lost</span>. Nb: You can use the Ctrl/Cmd + S shortcut to save.
+Press {% include bc path="File | Save as..." %} to save an "ezf" file. Note that if the figure contains stacks, they will be saved in a folder with the same name as the "ezf" file with an extra .files. <span style="color:#ff0000;">Please always store the .ezf and the .ezf.files folder together, otherwise stack data will be lost</span>. Nb: You can use the {% include key keys="ctlcmd|s" %} shortcut to save.
 
 # 5) Exports
 
@@ -638,7 +638,7 @@ Clicking the upper right image again selects a "Panel/Montage", yet another lowe
 
 Clicking the upper right image again finally selects the image, the lowest level object in the figure hierachy. (Note the red color of the selection and the "Img" keyword drawn in the center of the "image" object).
 
-<span style="color:#ce181e;">**Note that the options </span><span style="color:#ce181e;">in the panel located at the right of the software </span><span style="color:#ce181e;">change with selection </span><span style="color:#ce181e;">type</span><span style="color:#ce181e;">. Options will also change depending on </span><span style="color:#ce181e;">whether</span><span style="color:#ce181e;"> it is a single selection or multiple selection. Multiple selection is </span><span style="color:#ce181e;">obtained</span><span style="color:#ce181e;"> by maintaining the Ctrl/Cmd key while clicking.**</span>
+<span style="color:#ce181e;">**Note that the options </span><span style="color:#ce181e;">in the panel located at the right of the software </span><span style="color:#ce181e;">change with selection </span><span style="color:#ce181e;">type</span><span style="color:#ce181e;">. Options will also change depending on </span><span style="color:#ce181e;">whether</span><span style="color:#ce181e;"> it is a single selection or multiple selection. Multiple selection is </span><span style="color:#ce181e;">obtained</span><span style="color:#ce181e;"> by maintaining the {% include key key="ctlcmd" %} key while clicking.**</span>
 
 Summary of the hierarchy of objects in EZFig and their associated colour selection scheme  :
 
@@ -973,7 +973,7 @@ Select "Single gray channels and merge" to split image into gray channels and me
 
 ![](/media/Image26.png "Image26.png")
 
-Press Ctrl/Cmd+A to select all elements of the figure.
+Press {% include key keys="ctlcmd|A" %} to select all elements of the figure.
 
 ![](/media/Image27.png "Image27.png")
 
@@ -993,7 +993,7 @@ The most efficient way to change figure layout is as follows.
 
 ![](/media/Image30.png "Image30.png")
 
-Select the object to be moved, for example a row of the figure (arrow, labelled in cyan). Then press the keyboard "up" or "left" arrow to move the row up. (Press the "Right" or "down" arrows to move a row down).
+Select the object to be moved, for example a row of the figure (arrow, labelled in cyan). Then press the {% include key key="up" %} or {% include key key="left" %} arrow to move the row up. (Press the {% include key key="Right" %} or {% include key key="down" %} arrows to move a row down).
 
 ![](/media/Image31.png "Image31.png")
 
@@ -1201,7 +1201,7 @@ Click on an image until it gets surrounded by a red rectangle (arrow).
 
 ![](/media/Image76.png "Image76.png")
 
-**Duplicate it** (i.e. press **Ctrl/Cmd + C, Ctrl/Cmd + V**) five times (you should have 6 times the same image in your figure). Here I have six identical leaf image but things would work the same with non identical images having the same aspect ratio (e.g. images in a time series, Z slices, ...).
+**Duplicate it** (i.e. press {% include key keys="ctlcmd|C" %}, {% include key keys="ctlcmd|v" %}) five times (you should have 6 times the same image in your figure). Here I have six identical leaf image but things would work the same with non identical images having the same aspect ratio (e.g. images in a time series, Z slices, ...).
 
 ![](/media/Image84.png "Image84.png")
 
@@ -1217,7 +1217,7 @@ Note that a panel/montage containing two images has been added to the first row 
 
 ![](/media/Image79.png "Image79.png")
 
-Select one of the copied images, maintain the Ctrl/Cmd keyboard key and click on the three other copied images <span style="color:#ce181e;">(Ctrl/Cmd + Click allows for multiple selection)</span>. Note the cyan (or red) rectangles indicating the selected images (arrows).
+Select one of the copied images, maintain the {% include key keys="ctlcmd" %} keyboard key and click on the three other copied images <span style="color:#ce181e;">({% include key keys="ctlcmd | left click" %} allows for multiple selection)</span>. Note the cyan (or red) rectangles indicating the selected images (arrows).
 
 ![](/media/Image78.png "Image78.png")
 
