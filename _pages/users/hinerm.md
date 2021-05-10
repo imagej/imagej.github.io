@@ -12,7 +12,6 @@ forum: hinerm
 github: hinerm
 stackoverflow: 1027800/hinerm
 openhub: hinerm
-osrc: hinerm
 linkedin: pub/mark-hiner/63/984/8b2
 ---
 

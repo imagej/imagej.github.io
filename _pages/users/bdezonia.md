@@ -7,7 +7,6 @@ affiliation:
   - Eliceiri Lab / LOCI (former) | /orgs/loci
   - University of Wisconsin-Madison | https://wisc.edu/
 github: bdezonia
-osrc: bdezonia
 ---
 
 Barry DeZonia was a programmer at [LOCI](/orgs/loci) from January 2010 through

@@ -11,7 +11,6 @@ affiliation:
   - University of Wisconsin-Madison | https://wisc.edu/
 github: dscho
 openhub: gitte
-osrc: dscho
 ---
 
 # Johannes Schindelin

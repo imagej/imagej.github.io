@@ -4,7 +4,6 @@ title: User ›Harris
 
 name: Grant Harris
 github: tnargsirrah
-osrc: tnargsirrah
 ---
 {% include stub %}
 

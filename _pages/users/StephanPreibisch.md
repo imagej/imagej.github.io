@@ -9,7 +9,6 @@ affiliation:
   - Max Delbrück Center (MDC) | https://www.mdc-berlin.de/en
 forum: StephanPreibisch
 github: StephanPreibisch
-osrc: StephanPreibisch
 website: http://www.preibisch.net/
 ---
 {% include stub %}

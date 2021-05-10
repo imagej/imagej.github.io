@@ -7,7 +7,6 @@ gravatar: 1bfb3821f416339b291b6f3b0102689c
 affiliation: Broad Institute (former)
 forum: LeeKamentsky
 github: LeeKamentsky
-osrc: LeeKamentsky
 ---
 
 The imaging platform has two goals that are related to ImageJ: to make ImageJ macros accessible as modules in a [CellProfiler](/software/cellprofiler) pipeline and to make CellProfiler pipelines executable as macros within ImageJ. We also have integrated the [Bio-Formats](/formats/bio-formats) library into CellProfiler to read and write image formats.

@@ -7,7 +7,6 @@ gravatar: 8393457e2502f0dd9acfaa88483dcb03
 affiliation: Institut Pasteur
 forum: tinevez
 github: tinevez
-osrc: tinevez
 ---
 
 Hi,

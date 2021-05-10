@@ -7,7 +7,6 @@ affiliation:
   - Eliceiri Lab / LOCI (former) | /orgs/loci
   - University of Wisconsin-Madison | https://wisc.edu/
 github: grislis
-osrc: grislis
 ---
 {% include stub %}
 

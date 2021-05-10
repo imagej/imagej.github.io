@@ -9,7 +9,6 @@ affiliation:
   - MPI-CBG Dresden | /orgs/mpi-cbg
 forum: fjug
 github: fjug
-osrc: fjug
 scholar: vYInKgwAAAAJ
 website: https://www.mpi-cbg.de/jug
 ---

@@ -6,7 +6,6 @@ name: Benjamin Smith
 gravatar: 4fd39fb69e03cbcda0ee155b3387048f
 forum: llamero
 github: llamero
-osrc: llamero
 website: https://github.com/llamero
 ---
 

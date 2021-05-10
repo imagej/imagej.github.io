@@ -9,7 +9,6 @@ scholar:
 researchgate: 
 forum: arshadic
 github: carshadi
-osrc: 
 loop: 
 ---
 {% include stub %}

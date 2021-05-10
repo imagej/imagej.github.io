@@ -9,7 +9,6 @@ scholar: MOnW5FEAAAAJ
 researchgate: Tiago\_Ferreira51
 forum: tferr
 github: tferr
-osrc: tferr
 loop: 141716
 ---
 
