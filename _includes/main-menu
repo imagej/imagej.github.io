@@ -210,10 +210,10 @@
   {%- include menu-item title="Editing the ImageJ Wiki" link="/help/editing" -%}
   {%- include menu-section title="Update Sites" link="/update-sites"  -%}
     {%- include menu-item title="Following an update site" link="/update-sites/following" -%}
-    {%- include menu-item title="Creating your own update site" link="/update-sites/setup" -%}
-    {%- include menu-item title="ToS for personal update sites" link="/update-sites/tos" -%}
-    {%- include menu-item title="Automatically upload your site" link="/update-sites/automatic-uploads" -%}
-    {%- include menu-item title="Uploading to core update sites" link="/update-sites/core-uploads" -%}
+    {%- include menu-item title="Creating an update site" link="/update-sites/setup" -%}
+    {%- include menu-item title="Terms of service" link="/update-sites/tos" -%}
+    {%- include menu-item title="Automatic upload" link="/update-sites/automatic-uploads" -%}
+    {%- include menu-item title="Uploading to core sites" link="/update-sites/core-uploads" -%}
     {%- include menu-item title="List of update sites" link="/list-of-update-sites" -%}
     {%- include menu-item title="Update site FAQ" link="/update-sites/faq" -%}
   {%- include menu-section-end -%} <!-- Help/Update Sites -->

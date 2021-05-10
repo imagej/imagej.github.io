@@ -243,10 +243,10 @@ pre code {
 }
 
 /* Container */
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 880px) {
 
   .container {
-    margin: 0 200px;
+    margin: 0 220px;
   }
 
   .container.xsmall {
@@ -274,7 +274,7 @@ pre code {
   }
 }
 
-@media screen and (max-width: 779px) {
+@media screen and (max-width: 879px) {
 
   .container {
     max-width: 100% !important;
@@ -1774,7 +1774,7 @@ button:disabled,
 }
 
 
-@media screen and (max-width: 779px) {
+@media screen and (max-width: 879px) {
   .main.style2, .main.style3 {
     width:100%;
   }

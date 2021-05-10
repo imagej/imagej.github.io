@@ -59,7 +59,7 @@
   font-size: 1.6em;
 }
 
-@media screen and (max-width: 779px) {
+@media screen and (max-width: 879px) {
 
   .row-whyij {
     flex-direction: column;
