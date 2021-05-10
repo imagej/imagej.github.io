@@ -103,7 +103,7 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 body, input, select, textarea {
   color: #000000;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
-  font-size: 90%;
+  font-size: 100%;
   font-weight: 300;
   line-height: 1.5em;
 }
