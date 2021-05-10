@@ -5,6 +5,7 @@ title: User ›Brossetti
 name: Blair Rossetti
 gravatar: c99a612cb8d9a25d36cf2bf92d3d066e
 affiliation: Janelia Research Campus
+github: brossetti
 forum: brossetti
 ---
 

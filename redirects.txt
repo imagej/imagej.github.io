@@ -1761,7 +1761,7 @@ User:Bdezonia :: users/bdezonia
 User:Bene :: users/bene51
 User:Benoit :: users/benoalo
 User:Benwbooth :: users/benwbooth
-User:Bio-Formats :: users/Bio-Formats
+User:Bio-Formats :: formats/bio-formats
 User:BioVoxxel :: users/biovoxxel
 User:Biomat :: users/Biomat
 User:Biomedgroup :: users/Biomedgroup
@@ -1772,7 +1772,7 @@ User:Brossetti :: users/Brossetti
 User:Bwilhelm :: users/HedgehogCode
 User:C.TURIES :: users/cyrilturies
 User:C.TURIÈS :: users/cyrilturies
-User:CIPMM-MolPhys :: users/CIPMM-MolPhys
+User:CIPMM-MolPhys :: plugins/cipmm
 User:CK642509 :: users/CK642509
 User:Camlloyd :: users/camlloyd
 User:Carandraug :: users/carandraug
@@ -1782,7 +1782,7 @@ User:Cellkai :: users/Cellkai
 User:Chaubold :: users/chaubold
 User:ChristophH :: users/ChristophH
 User:ClaudiaCarabanaGarcia :: users/claudiacarabana
-User:Cookbook :: users/Cookbook
+User:Cookbook :: cookbook
 User:Cordelieres :: users/fab2506
 User:CrossSectionalAnalyzer :: users/CrossSectionalAnalyzer
 User:Ctrueden :: users/ctrueden
@@ -1801,7 +1801,7 @@ User:Dukechem :: users/Dukechem
 User:Dupuy :: users/Dupuy
 User:Dylan :: users/Dylan
 User:Eglinger :: users/imagejan
-User:Eglinger/monobook.css :: users/Eglinger_monobook.css
+User:Eglinger/monobook.css :: users/imagejan
 User:Ehrenfeu :: users/ehrenfeu
 User:Ekatrukha :: users/ekatrukha
 User:Eliceiri :: users/eliceiri
@@ -1847,12 +1847,12 @@ User:Jackspraw :: <DELETED> (spam)
 User:JamesSears :: users/JamesCSears
 User:Jana :: users/janaklimova
 User:Janmartens :: users/m4dguy
-User:Java-8 :: users/Java-8
+User:Java-8 :: /list-of-update-sites
 User:Jcschaff :: users/jcschaff
 User:JeanYvesTinevez :: users/tinevez
 User:Jefferis :: users/jefferis
 User:Jejmule :: users/jejmule
-User:Jenkins :: users/Jenkins
+User:Jenkins :: /develop/jenkins
 User:Jiminimor89 :: <DELETED> (spam)
 User:Jmburel :: users/jburel
 User:Joe_Napoli :: users/Joe_Napoli
@@ -1883,8 +1883,8 @@ User:Llamero :: users/llamero
 User:Lthomas :: users/LauLauThom
 User:LungJ :: users/LWollatz
 User:M-entrup :: users/m-entrup
-User:MAP-Lab :: users/MAP-Lab
-User:MATLAB :: users/MATLAB
+User:MAP-Lab :: orgs/map-lab
+User:MATLAB :: scripting/matlab
 User:MS-ECS-2D :: plugins/ms-ecs-2d-update-site
 User:MTrack :: users/kapoorlab
 User:M_farna :: users/mfarna
@@ -1895,7 +1895,7 @@ User:Matt.mccormick :: users/thewtex
 User:Mdoube :: users/mdoube
 User:MiToBo :: users/bimoelle
 User:Michaeldoube :: users/mdoube
-User:MicroscopyOncologyOxford :: users/MicroscopyOncologyOxford
+User:MicroscopyOncologyOxford :: orgs/oxford-oncology
 User:Milkyklim :: users/milkyklim
 User:Miura :: users/cmci
 User:Mocte90 :: users/Moctezuma90
@@ -1912,11 +1912,11 @@ User:NicholasPerry :: users/nickp
 User:Nico :: users/nicost
 User:Nmjmorph :: users/NMJMorph
 User:Nstifani :: users/nstifani
-User:OMERO-5.0 :: users/OMERO-5.0
-User:OMERO-5.1 :: users/OMERO-5.1
+User:OMERO-5.0 :: software/omero
+User:OMERO-5.1 :: software/omero
 User:Oburri :: users/lacan
 User:Omsai :: users/omsai
-User:Oxford_Oncology :: users/Oxford_Oncology
+User:Oxford_Oncology :: orgs/oxford-oncology
 User:Pablovm1990 :: users/Pablo1990
 User:Pam66 :: users/pam66
 User:Panovr :: users/panovr
@@ -1946,7 +1946,7 @@ User:Scepticalphysiologist :: users/sparsonslab
 User:Schier :: users/jschier
 User:Schindelin :: users/dscho
 User:Schindelin/vitilevu.css :: users/dscho
-User:Scijava-parallel :: users/Scijava-parallel
+User:Scijava-parallel :: /software/scijava-parallel
 User:Scrivello :: users/kkunzelm
 User:SimoneR :: users/ReberLabHU
 User:Sinverso :: users/sinverso
@@ -1959,10 +1959,10 @@ User:SpheroideJ :: users/SpheroideJ
 User:Stelfrich :: users/stelfrich
 User:StephanJanosch :: users/StephanJanosch
 User:StephanP :: users/StephanPreibisch
-User:StuartLab :: users/ScienceToolkit
-User:StuartLab/Apply_Generic_LUT :: users/StuartLab_Apply_Generic_LUT
-User:StuartLab/DPI_Dialog :: users/StuartLab_DPI_Dialog
-User:StuartLab/Render_OS-SIM_Optical_Sections :: users/StuartLab_Render_OS-SIM_Optical_Sections
+User:StuartLab :: orgs/stuart-lab
+User:StuartLab/Apply_Generic_LUT :: orgs/stuart-lab
+User:StuartLab/DPI_Dialog :: orgs/stuart-lab
+User:StuartLab/Render_OS-SIM_Optical_Sections :: orgs/stuart-lab
 User:Stuyvenberg :: users/stuyvenberg
 User:Superhair000 :: <DELETED> (spam)
 User:Sweeneyian :: users/sweeneyian
