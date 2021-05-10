@@ -149,5 +149,5 @@ Our deep thanks to {% include person id='rasband' %}, author of
 <sup>18</sup> [University of Idaho](http://www.uidaho.edu), Moscow\\
 <sup>19</sup> [University of Applied Sciencs and Arts Dortmund](http://www.fh-dortmund.de), Germany\\
 <sup>20</sup> [Institute of Neuroinformatics](https://www.ini.uzh.ch/), [Uni/ETH Zurich](https://www.ethz.ch/en.html)\\
-<sup>21</sup> [HHMI Janelia Research Campus](http://janelia.org/)\\
+<sup>21</sup> [HHMI Janelia Research Campus](/orgs/janelia)\\
 <sup>22</sup> [Image Data Analysis platform](https://www.mdc-berlin.de/image-data-analysis) of the [Max Delbrück Center (MDC)](https://www.mdc-berlin.de/)

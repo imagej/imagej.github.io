@@ -29,7 +29,7 @@ It is {% include wikipedia title='Hackathon' text='not clear whether Sun\'s mark
 
 Ever since, OpenBSD held annual hackathons during which OpenBSD was improved in leaps and bounds.
 
-In 2007, the first hackathon revolving around neuro-science was taking place at [HHMI Janelia Research Campus](https://janelia.org/). In a sense, it can be seen as the first Fiji hackathon, since Fiji was born in the wake of that hackathon, and probably would not have happened without it.
+In 2007, the first hackathon revolving around neuro-science was taking place at [HHMI Janelia Research Campus](/orgs/janelia). In a sense, it can be seen as the first Fiji hackathon, since Fiji was born in the wake of that hackathon, and probably would not have happened without it.
 
 # ImageJ hackathons
 
@@ -67,7 +67,7 @@ ImageJ has benefitted from many hackathons over the years:
         <p><a href="https://www.hhmi.org/sites/default/files/Bulletin/2007/November/nov2007_fulltext.pdf">2007 Summer</a></p>
       </td>
       <td>
-        <p><a href="https://janelia.org/">HHMI Janelia</a><br>
+        <p><a href="/orgs/janelia">HHMI Janelia</a><br>
         Ashburn, VA, USA</p>
       </td>
       <td>
@@ -386,7 +386,7 @@ ImageJ has benefitted from many hackathons over the years:
         2015 Apr 17</p>
       </td>
       <td>
-        <p><a href="https://janelia.org/">HHMI Janelia</a><br>
+        <p><a href="/orgs/janelia">HHMI Janelia</a><br>
         Ashburn, VA, USA</p>
       </td>
       <td>
@@ -419,7 +419,7 @@ ImageJ has benefitted from many hackathons over the years:
         2015 Jul 31</a></p>
       </td>
       <td>
-        <p><a href="https://janelia.org/">HHMI Janelia</a><br>
+        <p><a href="/orgs/janelia">HHMI Janelia</a><br>
         Ashburn, VA, USA</p>
       </td>
       <td>
@@ -467,7 +467,7 @@ ImageJ has benefitted from many hackathons over the years:
         2016 Jun 28</a></p>
       </td>
       <td>
-        <p><a href="https://janelia.org/">HHMI Janelia</a><br>
+        <p><a href="/orgs/janelia">HHMI Janelia</a><br>
         Ashburn, VA, USA</p>
       </td>
       <td>

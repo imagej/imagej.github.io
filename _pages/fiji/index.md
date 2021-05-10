@@ -32,7 +32,7 @@ Fiji is supported by several laboratories and institutions:
 
 -   The [Eliceiri/LOCI](/orgs/loci) lab at [UW-Madison](https://wisc.edu/), home of [ImageJ2](/software/imagej2).
 -   The [Tomancak](https://www.mpi-cbg.de/research-groups/current-groups/pavel-tomancak/research-focus/) and [Jug](https://www.mpi-cbg.de/jug) labs at [MPI-CBG](/orgs/mpi-cbg) and the [CSBD](/orgs/csbd).
--   The [Saalfeld Lab](https://www.janelia.org/lab/saalfeld-lab) at [Janelia Research Campus](https://www.janelia.org/).
+-   The [Saalfeld Lab](https://www.janelia.org/lab/saalfeld-lab) at [Janelia Research Campus](/orgs/janelia).
 -   Individuals at [many other institutions worldwide](/about/contributors).
 
 Fiji is an [open source](Open_source) project, so everybody is welcome to contribute with plugins, patches, bug reports, tutorials, documentation, and artwork.

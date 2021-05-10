@@ -1741,7 +1741,7 @@ User:3Dcyclorama :: users/HarryRos
 User:A._Karperien :: users/A._Karperien
 User:Abastien :: users/alexandrebastien
 User:Acsenrafilho :: users/acsenrafilho
-User:Aicjanelia :: users/aicjanelia
+User:Aicjanelia :: orgs/janelia#advanced-imaging-center
 User:Aida01 :: <DELETED> (spam)
 User:Alanb :: users/lannybroo
 User:Albertcardona :: users/acardona
