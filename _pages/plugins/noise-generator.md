@@ -5,11 +5,11 @@ title: Noise Generator
 
 
 {% capture author%}
-{% include person id='Acsenrafilho' %} ([1](mailto:acsenrafilho@gmail.com))
+{% include person id='acsenrafilho' %} ([1](mailto:acsenrafilho@gmail.com))
 {% endcapture %}
 
 {% capture maintainer%}
-{% include person id='Acsenrafilho' %}
+{% include person id='acsenrafilho' %}
 {% endcapture %}
 
 {% capture source%}

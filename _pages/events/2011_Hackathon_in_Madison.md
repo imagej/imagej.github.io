@@ -112,13 +112,13 @@ PlotData=
 
 \* Madison locals include:
 
--   Barry DeZonia
--   Aivar Grislis
--   Mark Hiner
--   Rick Lentz
--   Melissa Linkert
--   Curtis Rueden
--   Kevin Eliceiri
+-   {% include person id="bdezonia" %}
+-   {% include person id="grislis" %}
+-   {% include person id="hinerm" %}
+-   {% include person id="ricklentz" %}
+-   {% include person id="melissalinkert" %}
+-   {% include person id="ctrueden" %}
+-   {% include person id="eliceiri" %}
 
 Some locals were not present at the hackathon on weekends.
 

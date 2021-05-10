@@ -116,9 +116,9 @@ The Cookbook technical writer team includes:
 -   {% include person id='ctrueden' %} (technical oversight and maintenance)
 -   {% include person id='apal4' %} (January 2014 - May 2015)
 -   {% include person id='dscho' %} (June 2013 - November 2014)
--   {% include person id='Khildebrand' %} (June 2013 - December 2013)
+-   {% include person id='kghildebrand' %} (June 2013 - December 2013)
 -   {% include person id='Amacall' %} (June 2013 - December 2013)
--   {% include person id='Ruizhi' %} (November 2013 - December 2013)
+-   {% include person id='RuizhiLiao' %} (November 2013 - December 2013)
 -   {% include person id='Gtcwildfire' %} (June 2013 - August 2013)
 
 The plugins featured in the Cookbook were collated from various sources and have various authors and licenses.

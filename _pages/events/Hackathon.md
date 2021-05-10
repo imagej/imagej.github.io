@@ -167,7 +167,7 @@ ImageJ has benefitted from many hackathons over the years:
         Madison, WI, USA</p>
       </td>
       <td>
-        <p>{% include person-list ids='iarganda|paulbarber|acardona|bdezonia|arthuredelstein|afraser|frederikfly|grislis|tnargsirrah|hinerm|luisibanez|LeeKamentsky|larrylindsey|melissalinkert|hinerm|tpietzsch|StephanPreibisch|ctrueden|axtimwalde|dscho|bene51|tomancak|eliceiri|Lentz|Mark Rowley' %}</p>
+        <p>{% include person-list ids='iarganda|paulbarber|acardona|bdezonia|arthuredelstein|afraser|frederikfly|grislis|tnargsirrah|hinerm|luisibanez|LeeKamentsky|larrylindsey|melissalinkert|hinerm|tpietzsch|StephanPreibisch|ctrueden|axtimwalde|dscho|bene51|tomancak|eliceiri|ricklentz|Mark Rowley' %}</p>
       </td>
       <td>
         <p>Multidimensional visualization</p>
@@ -183,7 +183,7 @@ ImageJ has benefitted from many hackathons over the years:
         Dresden, Germany</p>
       </td>
       <td>
-        <p>{% include person-list ids='jburel|Stephane-D|bdezonia|dietzc|mdoube|Fab14|frederikfly|hornm|chalkie666|tomka|alex-krull|melissalinkert|hinerm|joshmoore|tpietzsch|StephanPreibisch|ctrueden|dscho|bene51|tomancak|Peter-Gabriel-Pitrone|eliceiri|Fernando Carrilo, Jiri Matas, Jurgen Mayer' %}</p>
+        <p>{% include person-list ids='jburel|Stephane-D|bdezonia|dietzc|mdoube|Fab14|frederikfly|hornm|chalkie666|tomka|alex-krull|melissalinkert|hinerm|joshmoore|tpietzsch|StephanPreibisch|ctrueden|dscho|bene51|tomancak|Peter-Gabriel-Pitrone|eliceiri|Fernando Carrilo|Jiri Matas|Jurgen Mayer' %}</p>
       </td>
       <td>
         <p>Interoperability</p>
@@ -487,7 +487,7 @@ ImageJ has benefitted from many hackathons over the years:
         Konstanz, Germany</p>
       </td>
       <td>
-        <p>{% include person-list ids='dietzc|patrick-winter-knime|tpietzsch|skalarproduktraum|ctrueden|hornm|stelfrich|kephale|Rdom|kmader|AndreasBurger|MarcelWiedenmann|SimonSchmid|irrwitz|Squareys|AlexanderFillbrunn|imagejan|tibuch|StefanoWoerner|cmongis|hoerldavid|Nico Hoffmann' %}</p>
+        <p>{% include person-list ids='dietzc|patrick-winter-knime|tpietzsch|skalarproduktraum|ctrueden|hornm|stelfrich|kephale|rimadoma|kmader|AndreasBurger|MarcelWiedenmann|SimonSchmid|irrwitz|Squareys|AlexanderFillbrunn|imagejan|tibuch|StefanoWoerner|cmongis|hoerldavid|Nico Hoffmann' %}</p>
       </td>
       <td>
         <p><a href="/software/knime">KNIME</a> Image Processing + 3D viz</p>
@@ -679,7 +679,7 @@ ImageJ has benefitted from many hackathons over the years:
         Konstanz, Germany</p>
       </td>
       <td>
-        <p>{% include person-list ids='mr-c|sverhoeven|ctrueden|dietzc|tpietzsch|MarcelWiedenmann|DanielBogenrieder|frauzufall|HedgehogCode|AtR1an|LauLauThom|KFDing|frankprotopapa|ChristianAlbrecht|gab1one|Treiblesschorle' %}</p>
+        <p>{% include person-list ids='mr-c|sverhoeven|ctrueden|dietzc|tpietzsch|MarcelWiedenmann|DanielBogenrieder|frauzufall|HedgehogCode|AtR1an|LauLauThom|KFDing|ChristianAlbrecht|gab1one|Treiblesschorle' %}</p>
       </td>
       <td>
         <p><a href="/software/knime">KNIME</a></p>

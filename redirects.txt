@@ -1738,7 +1738,7 @@ Usage_monthly :: about/usage
 Usage_weekly :: about/usage
 Useful_keyboard_shortcuts :: TODO (Keyboard_shortcuts)
 User:3Dcyclorama :: users/HarryRos
-User:A._Karperien :: users/A._Karperien
+User:A._Karperien :: users/audrey-karperien
 User:Abastien :: users/alexandrebastien
 User:Acsenrafilho :: users/acsenrafilho
 User:Aicjanelia :: orgs/janelia#advanced-imaging-center
@@ -1768,7 +1768,7 @@ User:Biomedgroup :: users/Biomedgroup
 User:Bnanes :: users/bnanes
 User:Bnorthan :: users/bnorthan
 User:Bogovic :: users/bogovicj
-User:Brossetti :: users/Brossetti
+User:Brossetti :: users/brossetti
 User:Bwilhelm :: users/HedgehogCode
 User:C.TURIES :: users/cyrilturies
 User:C.TURIÈS :: users/cyrilturies
@@ -1792,13 +1792,13 @@ User:Daniel_E._Maidana :: users/DanielMaidana
 User:Davidhoerl :: users/hoerldavid
 User:Dcolam :: users/dcolam
 User:Demis :: users/demisjohn
-User:DiameterJ :: users/DiameterJ
+User:DiameterJ :: users/NHotaling
 User:Dietzc :: users/dietzc
 User:Dimiterpp :: users/dprodanov
 User:Divoticom :: <DELETED> (spam)
 User:Dobensl :: users/Dobensl
 User:Dukechem :: users/Dukechem
-User:Dupuy :: users/Dupuy
+User:Dupuy :: users/LionelDupuy
 User:Dylan :: users/Dylan
 User:Eglinger :: users/imagejan
 User:Eglinger/monobook.css :: users/imagejan
@@ -1815,7 +1815,7 @@ User:Frauzufall :: users/frauzufall
 User:Freetrashbox :: <DELETED> (spammy user?)
 User:Freetrashbox/DiameterJ :: <DELETED> (spammy user?)
 User:Frise :: users/frederikfly
-User:Frusak :: users/Frusak
+User:Frusak :: users/fabio-rusak
 User:Funke :: users/funkey
 User:Gab1one :: users/gab1one
 User:Gcardone :: users/giocard
@@ -1827,13 +1827,13 @@ User:Hadim :: users/hadim
 User:Haesleinhuepf :: users/haesleinhuepf
 User:Hanslovsky :: users/hanslovsky
 User:Harris :: users/tnargsirrah
-User:Heintzmann :: users/Heintzmann
+User:Heintzmann :: users/RainerHeintzmann
 User:Helderc :: users/helderc
 User:Hiner :: users/hinerm
 User:Hinerm :: users/hinerm
 User:Hoerldavid :: users/hoerldavid
-User:Hornung :: users/Hornung
-User:Hovis :: users/Hovis
+User:Hornung :: users/quazgar
+User:Hovis :: users/david-hovis
 User:IMBMicroscopy :: users/IMBMicroscopy
 User:IMBalENce :: plugins/imbalence
 User:IMG :: users/LMCF-IMG
@@ -1855,9 +1855,9 @@ User:Jejmule :: users/jejmule
 User:Jenkins :: /develop/jenkins
 User:Jiminimor89 :: <DELETED> (spam)
 User:Jmburel :: users/jburel
-User:Joe_Napoli :: users/Joe_Napoli
+User:Joe_Napoli :: users/JosephMNapoli
 User:Joshmoore :: users/joshmoore
-User:Jpsacha :: users/Jpsacha
+User:Jpsacha :: users/jpsacha
 User:Jug :: users/fjug
 User:Kai :: users/kaibarthel
 User:Karm :: users/Karm
@@ -1867,7 +1867,7 @@ User:Khildebrand :: users/kghildebrand
 User:Kouichicnakamura :: users/kouichi-c-nakamura
 User:Krzysztof.Gonciarz :: users/krzysg
 User:Ksmader :: users/kmader
-User:Kudryashev :: users/Kudryashev
+User:Kudryashev :: users/KudryashevLab
 User:LMCF-IMG :: users/LMCF-IMG
 User:LMEscudero :: users/LMEscudero
 User:LOCI :: users/LOCI
@@ -1932,7 +1932,7 @@ User:Pmarks :: users/pcmarks
 User:Pmoravec :: users/fiji-hpc
 User:Rasband :: users/rasband
 User:Rdom :: users/rimadoma
-User:Rerger :: users/Rerger
+User:Rerger :: plugins/fuzzy-set
 User:ResultsToExcel :: plugins/read-and-write-excel
 User:Robertbr :: users/robertb-r
 User:Rueden :: users/ctrueden
@@ -1986,7 +1986,7 @@ User:Verena :: users/vkaynig
 User:Victorix :: users/tektonia
 User:Vischer :: users/norbertvischer
 User:Volker :: users/volker-baecker
-User:Volker_Gatterdam :: users/Volker_Gatterdam
+User:Volker_Gatterdam :: users/VolkerGatterdam
 User:Vuhlmann :: users/vuhlmann
 User:Vuillaume :: users/vuillaut
 User:Weisong :: users/WeisongZhao
