@@ -148,11 +148,11 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 h1 { font-size: 1.75em; }
-h2 { font-size: 1.55em; }
-h3 { font-size: 1.45em; }
-h4 { font-size: 1.35em; }
-h5 { font-size: 1.25em; }
-h6 { font-size: 1.15em; }
+h2 { font-size: 1.50em; }
+h3 { font-size: 1.25em; }
+h4 { font-size: 1.20em; }
+h5 { font-size: 1.15em; }
+h6 { font-size: 1.10em; }
 
 sub {
   font-size: 0.8em;

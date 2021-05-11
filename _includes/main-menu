@@ -4,7 +4,7 @@
 {%- else -%}
 <div class="menu">
 {%- endif -%}
-<h3>ImageJ Documentation</h3>
+<h3>ImageJ Docs</h3>
 <ul>
 {%- include menu-section title="About" link="/about" -%}
   {%- include menu-item title="Usage" link="/about/usage" -%}
