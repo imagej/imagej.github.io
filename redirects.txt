@@ -1764,7 +1764,7 @@ User:Benwbooth :: users/benwbooth
 User:Bio-Formats :: formats/bio-formats
 User:BioVoxxel :: users/biovoxxel
 User:Biomat :: users/Biomat
-User:Biomedgroup :: users/Biomedgroup
+User:Biomedgroup :: users/thorstenwagner
 User:Bnanes :: users/bnanes
 User:Bnorthan :: users/bnorthan
 User:Bogovic :: users/bogovicj
@@ -1797,7 +1797,7 @@ User:Dietzc :: users/dietzc
 User:Dimiterpp :: users/dprodanov
 User:Divoticom :: <DELETED> (spam)
 User:Dobensl :: users/leonard-dobens
-User:Dukechem :: users/Dukechem
+User:Dukechem :: <DELETED> (effectively empty)
 User:Dupuy :: users/LionelDupuy
 User:Dylan :: users/dylan-jeonghwan-son
 User:Eglinger :: users/imagejan
@@ -1905,7 +1905,8 @@ User:Msagar :: users/aksagar
 User:Mutterer :: users/mutterer
 User:Myfriendfernando123 :: users/Myfriendfernando123
 User:N.condon :: users/NickCondon
-User:NIST-ISG-MIST :: users/NIST-ISG-MIST
+User:NIST-ISG-LineageMapper :: users/mmajurski
+User:NIST-ISG-MIST :: users/mmajurski
 User:NanoJ :: users/paxcalpt
 User:Neuroanatomy :: plugins/neuroanatomy
 User:NicholasPerry :: users/nickp
@@ -1955,7 +1956,7 @@ User:Skalarproduktraum :: users/skalarproduktraum
 User:Snownontrace :: users/snownontrace
 User:Sorzano :: users/Sorzano
 User:Spam :: <DELETED> (spam)
-User:SpheroideJ :: users/SpheroideJ
+User:SpheroideJ :: <DELETED> (empty)
 User:Stelfrich :: users/stelfrich
 User:StephanJanosch :: users/StephanJanosch
 User:StephanP :: users/StephanPreibisch
@@ -1978,8 +1979,8 @@ User:Tupper :: users/btupper
 User:Turek :: users/turekg
 User:Twagner :: users/thorstenwagner
 User:Ulman :: users/xulman
-User:UniBas-IMCF :: users/UniBas-IMCF
-User:VIB :: users/VIB
+User:UniBas-IMCF :: sites/imcf
+User:VIB :: plugins/vib-protocol
 User:VarunKapoor :: users/kapoorlab
 User:Vcaldas :: users/vcaldas
 User:Verena :: users/vkaynig
@@ -1996,10 +1997,11 @@ User:William_Hirst :: users/wihirst66
 User:Xlib :: users/bmuench
 User:Yaman :: users/YamanYousof
 User:Yul.liuyu :: users/ohliumliu
-User:Zfmacros :: users/Zfmacros
+User:Zfmacros :: users/MarcoTarasco
 User:Zitmen :: users/zitmen
 User:Zjpetersen :: users/zjpetersen
 User:Zouin :: users/mzouink
+User:* :: users
 User_Guide :: learn/user-guides
 User_Guide/Getting_Started :: guide/getting-started
 User_Guide/Layout_Test :: guide/layout-test
