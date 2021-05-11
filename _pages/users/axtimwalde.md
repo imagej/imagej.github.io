@@ -9,6 +9,9 @@ affiliation:
 - Howard Hughes Medical Institute | https://www.hhmi.org/
 forum: axtimwalde
 github: axtimwalde
+scholar: oSGyzt4AAAAJ
 ---
 
-{% include stub %}
+Stephan Saalfeld is a group leader at Janelia Research Campus,
+researching methods for scalable automatic image analysis.
+He is one of the architects of the [ImgLib2](/libs/imglib2) library.

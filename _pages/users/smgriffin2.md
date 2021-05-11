@@ -1,5 +1,5 @@
 ---
-title: User › smgriffin2
+title: Sam Griffin
 
 name: Sam Griffin
 affiliation:

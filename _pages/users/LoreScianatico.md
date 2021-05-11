@@ -1,5 +1,5 @@
 ---
-title: User › LoreScianatico
+title: Lorenzo Scianatico
 
 name: Lorenzo Scianatico
 github: LoreScianatico

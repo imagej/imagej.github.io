@@ -9,6 +9,7 @@ affiliation:
   - University of Wisconsin-Madison | https://wisc.edu/
 github: dscho
 openhub: gitte
+scholar: svkf4t4AAAAJ
 ---
 
 # Johannes Schindelin

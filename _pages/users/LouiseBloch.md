@@ -1,5 +1,5 @@
 ---
-title: User › LouiseBloch
+title: Louise Bloch
 
 name: Louise Bloch
 github: LouiseBloch

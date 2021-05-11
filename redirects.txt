@@ -1749,7 +1749,7 @@ User:Alecneevel :: users/aneevel
 User:Alessandrofelder :: users/alessandrofelder
 User:Alex-krull :: users/alex-krull
 User:Alvinpark :: <DELETED> (spam)
-User:Amacall :: users/Amacall
+User:Amacall :: users/amanda-macallister
 User:Amccall :: users/andmccall
 User:Angiogenesis :: users/imagejan
 User:Anotherche :: users/anotherche
@@ -1778,13 +1778,13 @@ User:Camlloyd :: users/camlloyd
 User:Carandraug :: users/carandraug
 User:Carshadi :: users/carshadi
 User:CellDynamics :: users/CellDynamics
-User:Cellkai :: users/Cellkai
+User:Cellkai :: users/CellKai
 User:Chaubold :: users/chaubold
 User:ChristophH :: users/ChristophH
 User:ClaudiaCarabanaGarcia :: users/claudiacarabana
 User:Cookbook :: cookbook
 User:Cordelieres :: users/fab2506
-User:CrossSectionalAnalyzer :: users/CrossSectionalAnalyzer
+User:CrossSectionalAnalyzer :: plugins/cross-sectional-analyzer
 User:Ctrueden :: users/ctrueden
 User:DS4H :: plugins/ds4h-image-alignment
 User:Damienrj :: users/damienrj
@@ -1796,10 +1796,10 @@ User:DiameterJ :: users/NHotaling
 User:Dietzc :: users/dietzc
 User:Dimiterpp :: users/dprodanov
 User:Divoticom :: <DELETED> (spam)
-User:Dobensl :: users/Dobensl
+User:Dobensl :: users/leonard-dobens
 User:Dukechem :: users/Dukechem
 User:Dupuy :: users/LionelDupuy
-User:Dylan :: users/Dylan
+User:Dylan :: users/dylan-jeonghwan-son
 User:Eglinger :: users/imagejan
 User:Eglinger/monobook.css :: users/imagejan
 User:Ehrenfeu :: users/ehrenfeu
@@ -1822,7 +1822,7 @@ User:Gcardone :: users/giocard
 User:Gonciarz :: users/krzysg
 User:Grislis :: users/grislis
 User:GrocottLab :: users/GrocottLab
-User:Gtcwildfire :: users/Gtcwildfire
+User:Gtcwildfire :: users/gabby-campagnola
 User:Hadim :: users/hadim
 User:Haesleinhuepf :: users/haesleinhuepf
 User:Hanslovsky :: users/hanslovsky
@@ -1869,7 +1869,7 @@ User:Krzysztof.Gonciarz :: users/krzysg
 User:Ksmader :: users/kmader
 User:Kudryashev :: users/KudryashevLab
 User:LMCF-IMG :: users/LMCF-IMG
-User:LMEscudero :: users/LMEscudero
+User:LMEscudero :: users/luis-escudero
 User:LOCI :: users/LOCI
 User:Landini :: users/landinig
 User:Leek :: users/LeeKamentsky
@@ -1906,7 +1906,7 @@ User:Mutterer :: users/mutterer
 User:Myfriendfernando123 :: users/Myfriendfernando123
 User:N.condon :: users/NickCondon
 User:NIST-ISG-MIST :: users/NIST-ISG-MIST
-User:NanoJ :: users/NanoJ
+User:NanoJ :: users/paxcalpt
 User:Neuroanatomy :: plugins/neuroanatomy
 User:NicholasPerry :: users/nickp
 User:Nico :: users/nicost
@@ -1927,7 +1927,7 @@ User:PhotonImaging :: plugins/photon-imaging
 User:PhotonImaging :: users/PhotonImaging
 User:Pietzsch :: users/tpietzsch
 User:PillarTracker :: plugins/pillartracker
-User:PluginListBot :: users/PluginListBot
+User:PluginListBot :: plugin-index
 User:Pmarks :: users/pcmarks
 User:Pmoravec :: users/fiji-hpc
 User:Rasband :: users/rasband
@@ -1991,7 +1991,7 @@ User:Vuhlmann :: users/vuhlmann
 User:Vuillaume :: users/vuillaut
 User:Weisong :: users/WeisongZhao
 User:White :: users/chalkie666
-User:Willemsejj :: users/Willemsejj
+User:Willemsejj :: users/joost-willemse
 User:William_Hirst :: users/wihirst66
 User:Xlib :: users/bmuench
 User:Yaman :: users/YamanYousof
@@ -1999,7 +1999,7 @@ User:Yul.liuyu :: users/ohliumliu
 User:Zfmacros :: users/Zfmacros
 User:Zitmen :: users/zitmen
 User:Zjpetersen :: users/zjpetersen
-User:Zouin :: users/Zouin
+User:Zouin :: users/mzouink
 User_Guide :: learn/user-guides
 User_Guide/Getting_Started :: guide/getting-started
 User_Guide/Layout_Test :: guide/layout-test

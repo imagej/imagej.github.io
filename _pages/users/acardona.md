@@ -7,6 +7,7 @@ affiliation:
 - Janelia Research Campus | /orgs/janelia
 - Howard Hughes Medical Institute | https://www.hhmi.org/
 github: acardona
+scholar: hh9mnKisJrYC
 website: https://albert.rierol.net/
 ---
 
