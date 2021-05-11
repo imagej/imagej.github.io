@@ -9,7 +9,7 @@ section: Learn:Cookbook
 
 ## Brightness and Contrast
 
-{% include thumbnail src='/media/Brightness contrast pic.png' title='right'%} Brightness is the visual perception of reflected light. Increased brightness refers to an image's increased luminance.
+{% include thumbnail src='/media/brightness-contrast-pic.png' title='right'%} Brightness is the visual perception of reflected light. Increased brightness refers to an image's increased luminance.
 
 Contrast is the separation of the lightest and darkest parts of an image. An increase in contrast will darken shadows and lighten highlights. Increasing contrast is generally used to make objects in an image more distinguishable.
 
@@ -63,7 +63,7 @@ Oval and rectangular ROIs can be restored individually from x, y, l, h values wi
 
 ## Ratio Analysis
 
-![](/media/Intensity ratio analysis.jpg "fig:intensity_ratio_analysis.jpg") Ratiometric imaging compares the recordings of two different signals to see if there are any similarities between them. It is done by dividing one channel by another channel to produce a third ratiometric channel. This technique is useful because it corrects for dye leakage, unequal dye loading, and photo-bleaching. An example application would be measuring intracellular ion, pH, and voltage dynamics in real time.
+![](/media/intensity-ratio-analysis.jpg "fig:intensity_ratio_analysis.jpg") Ratiometric imaging compares the recordings of two different signals to see if there are any similarities between them. It is done by dividing one channel by another channel to produce a third ratiometric channel. This technique is useful because it corrects for dye leakage, unequal dye loading, and photo-bleaching. An example application would be measuring intracellular ion, pH, and voltage dynamics in real time.
 
 Background subtraction is needed before analysis of dual-channel ratio images. See also the [background correction](#background-correction) section. The *Ratio\_Profiler* plugin will perform ratiometric analysis of a single ROI on a dual-channel interleaved stack. The odd-slices are channel 1 images and the even slices are channel 2 images. If your two channels are opened as separate stacks, such as Zeiss, the two channels can be interleaved (mixed together by alternating between them) with the menu command {% include bc path='Plugins | Stacks - Shuffling | Stack Interleaver'%}.
 
@@ -144,7 +144,7 @@ To use:
 </table>
 {:/}
 
-![](/media/Equalize histrogram.jpg "equalize_histrogram.jpg")
+![](/media/equalize-histrogram.jpg "equalize_histrogram.jpg")
 
 ### Gamma
 
@@ -154,7 +154,7 @@ For 8 bit images; New intensity = 255 × *\[(old intensity÷255) gamma*\]
 
 Gamma can be adjusted via the {% include bc path='Process | Math | Gamma'%} command. It will allow you to adjust the gamma with the scroll bar. Click on *Ok* when you are finished. You can use the Scroll-bar to determine the desired gamma value on one slice of your stack. There is also an option to preview the results.
 
-![](/media/Gamma pic.jpg "gamma_pic.jpg")
+![](/media/gamma-pic.jpg "gamma_pic.jpg")
 
 ## Filtering
 
@@ -217,7 +217,7 @@ Once the background has been evened, final adjustments can be made with the *Bri
 
 |                                                                                                                    |                                                                                                              |                                                                                                                                    |
 |--------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| ![](/media/Bright contr roll ball.jpg "fig:bright_contr_roll_ball.jpg") | ![](/media/Histogram roll ball.jpg "fig:histogram_roll_ball.jpg") | ![](/media/Bright contr control roll ball.jpg "fig:bright_contr_control_roll_ball.jpg") |
+| ![](/media/bright-contr-roll-ball.jpg "fig:bright_contr_roll_ball.jpg") | ![](/media/histogram-roll-ball.jpg "fig:histogram_roll_ball.jpg") | ![](/media/bright-contr-control-roll-ball.jpg "fig:bright_contr_control_roll_ball.jpg") |
 
 ### ROI background correction
 
@@ -297,7 +297,7 @@ Use this technique on brightfield images. You can correct uneven illumination or
 
 This can also be done using the {% include bc path='Process | Image Calculator'%}function with the *32-bit Result* option checked. Then adjust the brightness and contrast and convert the image to 8-bit.
 
-![](/media/Calculator plus flat field.jpg "calculator_plus_flat_field.jpg")
+![](/media/calculator-plus-flat-field.jpg "calculator_plus_flat_field.jpg")
 
 ### Pseudo-correction
 
@@ -307,7 +307,7 @@ This can also be done using the {% include bc path='Process | Image Calculator'%
     <tr class="odd">
       <td style="border:none;padding:0in;">
         <figure>
-          <img src="/media/PseudoCorrectionImage.gif" title="pseudoCorrectionImage.gif" alt="pseudoCorrectionImage.gif">
+          <img src="/media/pseudocorrectionimage.gif" title="pseudoCorrectionImage.gif" alt="pseudoCorrectionImage.gif">
           <figcaption aria-hidden="true">
             pseudoCorrectionImage.gif
           </figcaption>
@@ -319,7 +319,7 @@ This can also be done using the {% include bc path='Process | Image Calculator'%
     </tr>
     <tr class="even">
       <td>
-        <p><img src="/media/PseudoCorrRawCorrected.gif" title="fig:pseudoCorrRawCorrected.gif" alt="pseudoCorrRawCorrected.gif"></p>
+        <p><img src="/media/pseudocorrrawcorrected.gif" title="fig:pseudoCorrRawCorrected.gif" alt="pseudoCorrRawCorrected.gif"></p>
       </td>
     </tr>
   </tbody>
@@ -332,7 +332,7 @@ You can correct for uneven illumination and horizontal "scan lines" in transmitt
 
 You can experiment with the settings to optimize the filtering and also choose to filter structures down to a certain number of pixels. The default value is 40 pixels. You can filter small structures up to a certain value. The default value is 3 pixels. The user can choose from a drop down menu whether to suppress stripes with None, Horizontal, or Vertical. The tolerance of direction can be chosen. The default is 5%. Finally, the user can choose whether to allow autoscale after filtering, saturation of the image when autoscaling, whether or not to display the filter, and whether or not to process an entire stack.
 
-![](/media/NewFftBandFilter.jpg "newFftBandFilter.jpg")
+![](/media/newfftbandfilter.jpg "newFftBandFilter.jpg")
 
 ## Masking unwanted regions
 

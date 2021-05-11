@@ -31,7 +31,7 @@ Some theoretical background of FD-filtering: the result of step 1 is a series of
 
 # Parameters
 
-<figure><img src="/media/Shape smoothing GUI.png" title="Shape-Smoothing parameters" width="320" alt="Shape-Smoothing parameters" /><figcaption aria-hidden="true">Shape-Smoothing parameters</figcaption></figure>
+<figure><img src="/media/shape-smoothing-gui.png" title="Shape-Smoothing parameters" width="320" alt="Shape-Smoothing parameters" /><figcaption aria-hidden="true">Shape-Smoothing parameters</figcaption></figure>
 
 At first users have to choose on how they want to define the smoothing: via relative or absolute number of FDs to be "kept".
 
@@ -49,9 +49,9 @@ At first users have to choose on how they want to define the smoothing: via rela
 
 <div>
 
--   {% include thumbnail src='/media/Shape-smoothing-original-image.png' title='none\|300px\|Original image'%}
--   {% include thumbnail src='/media/Shape-smoothing-smoothed-object.png' title='none\|300px\|Smoothed object (4% of FDs retained)'%}
--   {% include thumbnail src='/media/Shape-smoothing-smoothed-contour.png' title='none\|300px\|Smoothed contour (2% of FDs retained)'%}
+-   {% include thumbnail src='/media/shape-smoothing-original-image.png' title='none\|300px\|Original image'%}
+-   {% include thumbnail src='/media/shape-smoothing-smoothed-object.png' title='none\|300px\|Smoothed object (4% of FDs retained)'%}
+-   {% include thumbnail src='/media/shape-smoothing-smoothed-contour.png' title='none\|300px\|Smoothed contour (2% of FDs retained)'%}
 
 </div>
 

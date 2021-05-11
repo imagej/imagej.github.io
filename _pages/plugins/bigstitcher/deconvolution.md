@@ -15,7 +15,7 @@ The deconvolution can be started by selecting the views you wish to deconvolve a
 
 After clicking **(MultiView) Deconvolution**, you will be presented with a dialog asking for the main parameters for deconvolution:
 
-<img src="/media/BigStitcher Deconvolution Main.png" width="600"/>
+<img src="/media/bigstitcher-deconvolution-main.png" width="600"/>
 
 Since you are also producing a fused image for the deconvolution, some parameters are the same as in [BigStitcher\_Fuse](/plugins/bigstitcher/fuse):
 
@@ -46,21 +46,21 @@ If you chose to **Initialize from TIFF file** in the main dialog, you will be as
 
 You can choose whether to do **Exact avg and max computation from input** or not. TODO: explain...
 
-<img src="/media/BigStitcher Deconvolution fromFile.png" width="600"/>
+<img src="/media/bigstitcher-deconvolution-fromfile.png" width="600"/>
 
 Using this option, you can **continue a previous deconvolution** if you think that additional iterations will improve the results.
 
 ### Manual block size setup
 
-<img src="/media/BigStitcher Deconvolution blocksize.png" width="600"/>
+<img src="/media/bigstitcher-deconvolution-blocksize.png" width="600"/>
 
 ### Blending & grouping parameters
 
-<img src="/media/BigStitcher Deconvolution blending.png" width="600"/>
+<img src="/media/bigstitcher-deconvolution-blending.png" width="600"/>
 
 ### Debug mode
 
-<img src="/media/BigStitcher Deconvolution debug.png" width="600"/>
+<img src="/media/bigstitcher-deconvolution-debug.png" width="600"/>
 
 ### Deconvolution on GPU
 

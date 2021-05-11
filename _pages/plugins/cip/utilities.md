@@ -33,7 +33,7 @@ This function performs measures in image and region and return them as a table.
     `regions = cip.region(labelMap)`  
     `table = cip.measure(regions, 'size' , 'nuclei' )`  
     `cip.show( table )`  
-In the first line labelMap is the left image in the illustration below. In the second line, 'size' is the measure performed, 'nuclei' is used to customize region names (see object column in the illustration below). <img src="/media/CIP measure.PNG" title="fig:CIP_measure.PNG" width="400" alt="CIP_measure.PNG" />  
+In the first line labelMap is the left image in the illustration below. In the second line, 'size' is the measure performed, 'nuclei' is used to customize region names (see object column in the illustration below). <img src="/media/cip-measure.png" title="fig:CIP_measure.PNG" width="400" alt="CIP_measure.PNG" />  
 <span style="font-size:110%">**Implementation**</span>  
 The measure function instanciate a toolbox adapted for the object to measure. the toolbox can receive new measures tools to extend the existing measure set.
 
@@ -93,7 +93,7 @@ This example demonstrate how to label a gray level image and overlay the contour
     `regions = cip.region(labelMap)`  
     `h = cip.show(img) # display img`  
     `cip.show(h, regions, 'glasbey' ) # overlay the region contour to img`  
-<img src="/media/CIP show region.PNG" title="fig:CIP_show_region.PNG" width="650" alt="CIP_show_region.PNG" />  
+<img src="/media/cip-show-region.png" title="fig:CIP_show_region.PNG" width="650" alt="CIP_show_region.PNG" />  
 An example script displaying tracks can found [here](https://github.com/benoalo/CIP/blob/master/scripts/tracking_cip.py)
 
 <span style="font-size:110%">**Implementation**</span>  

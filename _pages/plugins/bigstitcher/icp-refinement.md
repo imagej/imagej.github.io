@@ -11,7 +11,7 @@ The default stitching pipeline of BigStitcher will calculate a **translational a
 
 The ICP refinement can be found in the main (right-click) menu of the Stiching mode under {% include bc path='Registration Refinement (optional)|Refine with ICP'%}:
 
-<img src="/media/BigStitcher icp 01.png" width="700"/>
+<img src="/media/bigstitcher-icp-01.png" width="700"/>
 
 ICP is an interest-point-based algorithm, meaning that we have to first detect interest points in the sample before aligning the images. In **simple mode**, we do this automatically, with a just a few adjustable parameters.
 
@@ -47,10 +47,10 @@ Once you have detected interest points, a dialog with expert options will pop up
 -   **Group Tiles:** Whether to groups tiles (i.e. transform them together) or not.
 -   **Group Illuminations:** Whether to groups illuminations (i.e. transform them together) or not.
 
-<img src="/media/BigStitcher icp 02.png" width="500"/>
+<img src="/media/bigstitcher-icp-02.png" width="500"/>
 
 If you opted for **Regularization** of the transform in the previous dialog, you will be asked for the type of the second transformation model to estimate and a **lambda** ($$\in[0,1]$$), i.e. how much weight you want to give to the regularizing model in the final averaged result.
 
-<img src="/media/BigStitcher regularize model.png" width="400"/>
+<img src="/media/bigstitcher-regularize-model.png" width="400"/>
 
 Go back to the [main page](/plugins/bigstitcher#documentation)

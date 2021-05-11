@@ -4,7 +4,7 @@ title: 2012-06-29 - Fiji papers at Nature Methods
 categories: News
 ---
 
-{% include thumbnail src='/media/NM cover.jpg' title='Cover of the July 2012 issue of Nature Methods with a mosaic by Pavel Tomancak'%}
+{% include thumbnail src='/media/nm-cover.jpg' title='Cover of the July 2012 issue of Nature Methods with a mosaic by Pavel Tomancak'%}
 
 Nature Methods July issue [focuses](http://www.nature.com/nmeth/focus/bioimageinformatics/index.html) on Bioimage Informatics and there are several papers dealing with or using Fiji.
 

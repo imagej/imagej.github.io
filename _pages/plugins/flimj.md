@@ -11,7 +11,7 @@ title: FLIMJ
 {% capture source%}
 {% include github org='slim-curve' repo='slim-plugin' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='FLIMJ plugin' logo='<img src="/media/Slim-curve-icon.png" width="64"/>' author=' [CRUK/MRC at University of Oxford](http://www.rob.ox.ac.uk/)  
+{% include info-box software='ImageJ' name='FLIMJ plugin' logo='<img src="/media/slim-curve-icon.png" width="64"/>' author=' [CRUK/MRC at University of Oxford](http://www.rob.ox.ac.uk/)  
 [UW-Madison LOCI](http://loci.wisc.edu/)' maintainer=maintainer filename='flimlib.jar, flimlib-*arch*-*ver*.jar,  
 flimj-ops-*ver*.jar' source=source latest-version='1.0.0' website='https://flimlib.github.io/' category='[:Category:Analysis](Category_Analysis)' %}
 
@@ -40,23 +40,23 @@ Once you have installed the FLIMJ plugin, it becomes available on the menu under
 
 Open a dataset (such as {% include github org='flimlib' repo='flimj-ops' path='test\_files/test2.sdt' label='this one' %}) or select an existing image display in Fiji:
 
-<figure><img src="/media/FLIMJ usage open dataset.png" title="FLIMJ_usage_open_dataset.png" width="300" alt="FLIMJ_usage_open_dataset.png" /><figcaption aria-hidden="true">FLIMJ_usage_open_dataset.png</figcaption></figure>
+<figure><img src="/media/flimj-usage-open-dataset.png" title="FLIMJ_usage_open_dataset.png" width="300" alt="FLIMJ_usage_open_dataset.png" /><figcaption aria-hidden="true">FLIMJ_usage_open_dataset.png</figcaption></figure>
 
 With the desired dataset window active, launch FLIMJ from the menu under {% include bc path='Analyze | Lifetime | FLIMJ'%} or search for "FLIMJ" in the search box:
 
-<figure><img src="/media/FLIMJ first launch.png" title="FLIMJ_first_launch.png" width="600" alt="FLIMJ_first_launch.png" /><figcaption aria-hidden="true">FLIMJ_first_launch.png</figcaption></figure>
+<figure><img src="/media/flimj-first-launch.png" title="FLIMJ_first_launch.png" width="600" alt="FLIMJ_first_launch.png" /><figcaption aria-hidden="true">FLIMJ_first_launch.png</figcaption></figure>
 
-{% include info-box img-src='"FLIMJ Lifetime Axis Not Detected.png" width="350"/&gt;<img src="/media/FLIMJ Time Base Info Not Detected.png" width="200"/>
+{% include info-box img-src='"FLIMJ Lifetime Axis Not Detected.png" width="350"/&gt;<img src="/media/flimj-time-base-info-not-detected.png" width="200"/>
 
 If the dataset comes with a (fourth) spectral dimension, the user has to choose the spectral channel to analyze as well:
 
-<img src="/media/FLIMJ Multiple Channel Detected.png" width="350"/>' %}
+<img src="/media/flimj-multiple-channel-detected.png" width="350"/>' %}
 
 ### Fit preview
 
 Before fitting the entire dataset, the user may click on the intensity image or type in the coordinates in **Preview** panel to preview the fitted curve and parameters of the pixel under the cursor:
 
-<img src="/media/FLIMJ preview preview.png" width="200"/> <img src="/media/FLIMJ preview plot.png" width="400"/> <img src="/media/FLIMJ preview settings.png" width="200"/>
+<img src="/media/flimj-preview-preview.png" width="200"/> <img src="/media/flimj-preview-plot.png" width="400"/> <img src="/media/flimj-preview-settings.png" width="200"/>
 
 In the screenshots above,
 
@@ -81,7 +81,7 @@ Sometimes you may want to fine-tune the fitting configurations. The **Settings**
 -   **Kernel Size**: The radius (in pixels, excluding the center) of the binning kernel.  
     FLIMJ plugin currently only supports the square kernel with size $$2r+1$$ and values all equal to 1 where $$r$$ is the radius). The binning of the dataset is performed by convolving the dataset with this kernel, which is equivalent to adding neighboring pixels into the center:
 
-<figure><img src="/media/FLIMJ settings binning.png" title="Left to right: Intensity of dataset after binning of radius 0, 1, and 2." width="600" alt="Left to right: Intensity of dataset after binning of radius 0, 1, and 2." /><figcaption aria-hidden="true">Left to right: Intensity of dataset after binning of radius 0, 1, and 2.</figcaption></figure>
+<figure><img src="/media/flimj-settings-binning.png" title="Left to right: Intensity of dataset after binning of radius 0, 1, and 2." width="600" alt="Left to right: Intensity of dataset after binning of radius 0, 1, and 2." /><figcaption aria-hidden="true">Left to right: Intensity of dataset after binning of radius 0, 1, and 2.</figcaption></figure>
 
 -   **χ² Target**: The $$\chi^2$$ value below which the LM fitting will stop.  
     The LM algorithm checks at the end of each iteration whether the fit is good enough by comparing $$\chi^2$$ with this threshold. If the results are satisfactory, the LM algorithm will terminate.
@@ -112,7 +112,7 @@ Sometimes you may want to fine-tune the fitting configurations. The **Settings**
 -   **Start** and **End**: The ends (in ns, inclusive) of the interval during which the data is considered.  
     The cursors can be changed by dragging in the Fit plot, clicking on the up and down buttons, or typing in values (input will be rounded to the nearest time bin marking).
 
-<figure><img src="/media/FLIMJ settings start end.png" title="Change of the cursors results in different fit results." width="700" alt="Change of the cursors results in different fit results." /><figcaption aria-hidden="true">Change of the cursors results in different fit results.</figcaption></figure>
+<figure><img src="/media/flimj-settings-start-end.png" title="Change of the cursors results in different fit results." width="700" alt="Change of the cursors results in different fit results." /><figcaption aria-hidden="true">Change of the cursors results in different fit results.</figcaption></figure>
 
 #### Instrument response function (IRF/prompt)
 
@@ -120,7 +120,7 @@ FLIMJ plugin currently only supports the selection of IRF from a single pixel in
 
 1.  Click on the drop-down menu, select *From file*; select the dataset file that contains the IRF.
 2.  In **Preview** panel, select *IRF Intensity* for the "Show" option (you may also select *Grayscale* for the "as" option to deactivate pseudocoloring):<img src="/media/FLIMJ irf show irf.png" title="fig:Choose IRF Intensity to enter IRF picking mode." width="200" alt="Choose IRF Intensity to enter IRF picking mode." />
-3.  Click on the image to select the candidate pixel and adjust the *Start* and *End* cursors in **Plot** pannel to crop out the section of interest (*IRF is plotted in green*):<img src="/media/FLIMJ irf crop irf.png" title="fig:Drag the cursors to crop IRF." width="350" alt="Drag the cursors to crop IRF." />
+3.  Click on the image to select the candidate pixel and adjust the *Start* and *End* cursors in **Plot** pannel to crop out the section of interest (*IRF is plotted in green*):<img src="/media/flimj-irf-crop-irf.png" title="fig:Drag the cursors to crop IRF." width="350" alt="Drag the cursors to crop IRF." />
 4.  Exit the IRF picking mode by selecting other options for the "Show" in **Preview** panel and adjust the *Start* cursor to get a better fit.
 
 You may readjust the IRF by starting from step 2 above. You may also reset the IRF setting by selecting *None* for *Instrument Response* in **Settings** pannel or go back to a previously set IRF by choosing the corresponding filename there.
@@ -135,7 +135,7 @@ After the "pending" state ends, new options will be available as "Show" options 
 
 You may also change the "as" option to specify how the results are rendered. Currently supported options are:
 
-<figure><img src="/media/FLIMJ fit dataset preview results as.png" title="Left to right: The $$tau$$ image rendered with Grayscale, Color and Composite Color." width="600" alt="Left to right: The $$tau$$ image rendered with Grayscale, Color and Composite Color." /><figcaption aria-hidden="true">Left to right: The $$tau$$ image rendered with <strong>Grayscale</strong>, <strong>Color</strong> and <strong>Composite Color</strong>.</figcaption></figure>
+<figure><img src="/media/flimj-fit-dataset-preview-results-as.png" title="Left to right: The $$tau$$ image rendered with Grayscale, Color and Composite Color." width="600" alt="Left to right: The $$tau$$ image rendered with Grayscale, Color and Composite Color." /><figcaption aria-hidden="true">Left to right: The $$tau$$ image rendered with <strong>Grayscale</strong>, <strong>Color</strong> and <strong>Composite Color</strong>.</figcaption></figure>
 
 -   **Grayscale**: Linearly maps the middle 80 percentile of the result image's values to grayscale colors from black to white. Values below the 10th percentile and above the 90th percentile are rendered black and white respectively.
 
@@ -149,11 +149,11 @@ You may also change the "as" option to specify how the results are rendered. Cur
 
 You can hover the mouse pointer on the rendered image to see the lookup table (LUT) color bar and the numerical value of the pixel:
 
-<figure><img src="/media/FLIMJ fit dataset preview results lut.png" title="Hover on image to see the color bar, the pixel value, and its place in the range." width="200" alt="Hover on image to see the color bar, the pixel value, and its place in the range." /><figcaption aria-hidden="true">Hover on image to see the color bar, the pixel value, and its place in the range.</figcaption></figure>
+<figure><img src="/media/flimj-fit-dataset-preview-results-lut.png" title="Hover on image to see the color bar, the pixel value, and its place in the range." width="200" alt="Hover on image to see the color bar, the pixel value, and its place in the range." /><figcaption aria-hidden="true">Hover on image to see the color bar, the pixel value, and its place in the range.</figcaption></figure>
 
 ## Image export
 
-<figure><img src="/media/FLIMJ image export.png" title="Options on the Export pannel." width="200" alt="Options on the Export pannel." /><figcaption aria-hidden="true">Options on the <strong>Export</strong> pannel.</figcaption></figure>
+<figure><img src="/media/flimj-image-export.png" title="Options on the Export pannel." width="200" alt="Options on the Export pannel." /><figcaption aria-hidden="true">Options on the <strong>Export</strong> pannel.</figcaption></figure>
 
 After dataset fitting, you can select images to export in the drop-down checklist on the **Export** pannel. Hit "Export" button to export the selected images to for further processing. If "With LUT" is checked, the exported image will be loaded with the LUT used to render the preview image on the **Preview** panel (value ranges are set for each image separately).
 

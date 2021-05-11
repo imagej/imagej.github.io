@@ -5,7 +5,7 @@ title: CIP
 
 {% include info-box software='ImageJ/Fiji' name='CIP' update-site='CIP' author='[Benoit Lombardot](/users/Benoit)' maintainer='[Benoit Lombardot](/users/Benoit)' released='January 2018' filename='CIP update site' source='https://github.com/benoalo/CIP' category='[Scripting](Category_Scripting)' %}
 
-<figure><img src="/media/CIP basic concept.PNG" title="CIP: " width="600" alt="CIP: " /><figcaption aria-hidden="true">CIP: </figcaption></figure>
+<figure><img src="/media/cip-basic-concept.png" title="CIP: " width="600" alt="CIP: " /><figcaption aria-hidden="true">CIP: </figcaption></figure>
 
 <div align="center">
 
@@ -98,7 +98,7 @@ The following script shows how to segment 2d object in an image and visualize th
 
 {% include github-embed org='benoalo' repo='CIP' branch='master' path='wiki_examples/2D_nuclei.py' %}
 
-<figure><img src="/media/CIP example 2D.PNG" title="CIP: " width="800" alt="CIP: " /><figcaption aria-hidden="true">CIP: </figcaption></figure>
+<figure><img src="/media/cip-example-2d.png" title="CIP: " width="800" alt="CIP: " /><figcaption aria-hidden="true">CIP: </figcaption></figure>
 
 <div align="center">
 
@@ -110,7 +110,7 @@ The following script shows a 3d nuclei segmentation and the measure and displau 
 
 {% include github-embed org='benoalo' repo='CIP' branch='master' path='wiki_examples/3D_nuclei_segmentation.py' %}
 
-<figure><img src="/media/CIP example 3D.PNG" title="CIP: " width="800" alt="CIP: " /><figcaption aria-hidden="true">CIP: </figcaption></figure>
+<figure><img src="/media/cip-example-3d.png" title="CIP: " width="800" alt="CIP: " /><figcaption aria-hidden="true">CIP: </figcaption></figure>
 
 <div align="center">
 

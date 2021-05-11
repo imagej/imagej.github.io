@@ -17,7 +17,7 @@ There are two ways to start up the Op Finder:
 # Parts of the Op Finder
 
 
-![](/media/LabeledOpFinder.png "fig:LabeledOpFinder.png")
+![](/media/labeledopfinder.png "fig:LabeledOpFinder.png")
 
 **Labeled components**
 
@@ -48,7 +48,7 @@ Because of the extensibility of Ops, there is a lot of information to process wh
 Ops in this view are focused on answering the question "What can I do *right now* with Ops?" For example, in this example we see that we can call the `Convolve` Op with either a base image, or the base and kernel:
 
 
-<img src="/media/UserOpFinder.png" title="fig:UserOpFinder.png" width="800" alt="UserOpFinder.png" />
+<img src="/media/useropfinder.png" title="fig:UserOpFinder.png" width="800" alt="UserOpFinder.png" />
 
 **User View Contents**
 
@@ -61,7 +61,7 @@ Ops in this view are focused on answering the question "What can I do *right now
 This view provides a comprehensive list of available Ops implementations. For example, contrasting with the [User view](#for-users), we see there are actually four concrete implementations of the `Convolve` Op, with a plethora of optional parameters.
 
 
-<img src="/media/DevOpFinder.png" title="fig:DevOpFinder.png" width="800" alt="DevOpFinder.png" />
+<img src="/media/devopfinder.png" title="fig:DevOpFinder.png" width="800" alt="DevOpFinder.png" />
 
 **Developer View Contents**
 
@@ -79,7 +79,7 @@ The Op Finder includes [fuzzy filtering](Wikipedia_Approximate_string_matching) 
 -   In [User view](#for-users), the complete simplified Op entry is filtered.
 -   In [Developer view](#for-developers), the Op namespaces + class name are filtered.
 
-<figure><img src="/media/Filter-op-finder.png" title="Filter-op-finder.png" width="600" alt="Filter-op-finder.png" /><figcaption aria-hidden="true">Filter-op-finder.png</figcaption></figure>
+<figure><img src="/media/filter-op-finder.png" title="Filter-op-finder.png" width="600" alt="Filter-op-finder.png" /><figcaption aria-hidden="true">Filter-op-finder.png</figcaption></figure>
 
 ## Code Snippets
 

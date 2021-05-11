@@ -5,7 +5,7 @@ categories: Plugins,Segmentation,Machine Learning,Citable
 artifact: sc.fiji:Trainable\_Segmentation
 ---
 
-{\| \|style="vertical-align:top" \|<img src="/media/TWS-pipeline.png" title="fig:Trainable Weka Segmentation pipeline overview." width="600" alt="Trainable Weka Segmentation pipeline overview." /> \|<span>  
+{\| \|style="vertical-align:top" \|<img src="/media/tws-pipeline.png" title="fig:Trainable Weka Segmentation pipeline overview." width="600" alt="Trainable Weka Segmentation pipeline overview." /> \|<span>  
 </span>}
  **Trainable**: this plugin can be trained to learn from the user input and perform later the same task in unknown (test) data.
 
@@ -39,7 +39,7 @@ The main goal of this plugin is to work as a **bridge between the Machine Learni
 
 ## The Graphical User Interface
 
-{% include thumbnail src='/media/Trainable-Weka-Segmentation-GUI.png' title='Example of the first look of the plugin window when using it on a TEM image'%} [Trainable Weka Segmentation](/plugins/tws) runs on any 2D or 3D image (grayscale or color). To use 2D features, you need to select the menu command {% include bc path='Plugins | Segmentation | Trainable Weka Segmentation'%}. For 3D features, call the plugin under {% include bc path='Plugins | Segmentation | Trainable Weka Segmentation 3D'%}. Both commands will use the same GUI but offer different feature options in their settings.
+{% include thumbnail src='/media/trainable-weka-segmentation-gui.png' title='Example of the first look of the plugin window when using it on a TEM image'%} [Trainable Weka Segmentation](/plugins/tws) runs on any 2D or 3D image (grayscale or color). To use 2D features, you need to select the menu command {% include bc path='Plugins | Segmentation | Trainable Weka Segmentation'%}. For 3D features, call the plugin under {% include bc path='Plugins | Segmentation | Trainable Weka Segmentation 3D'%}. Both commands will use the same GUI but offer different feature options in their settings.
 
 By default, the plugin starts with two classes, i.e. it will produce **binary pixel classification**. The user can add traces to both classes using the whole set of [tools for ROI](/ij/docs/guide/userguide-19b.html#toc-Section-19) (region of interest) drawing available in Fiji. That includes rectangular, round rectangular, oval, elliptical, brush polygon and freehand selections. By default, the freehand selection tool (of 1 pixel width) is automatically selected.
 
@@ -47,7 +47,7 @@ The user can pan, zoom in and out, or scroll between slices (if the input image 
 
 ### Training panel
 
-{% include thumbnail src='/media/TWS-GUI-after-training.png' title='Example of the aspect of the plugin window after training on a TEM image'%}
+{% include thumbnail src='/media/tws-gui-after-training.png' title='Example of the aspect of the plugin window after training on a TEM image'%}
 
 #### Train classifier
 
@@ -109,7 +109,7 @@ The default number of classes of the plugin is two, but through this button we c
 
 #### Settings
 
-{% include thumbnail src='/media/TWS-settings-dialog-2D.png' title='Settings dialog of the Trainable Weka Segmentation plugin (2D features)'%} The rest of tunable parameters of the plugin can be changed on the Settings dialog, which is displayed when clicking on this button.
+{% include thumbnail src='/media/tws-settings-dialog-2d.png' title='Settings dialog of the Trainable Weka Segmentation plugin (2D features)'%} The rest of tunable parameters of the plugin can be changed on the Settings dialog, which is displayed when clicking on this button.
 
 ##### Training features (2D)
 
@@ -167,7 +167,7 @@ The detailed implementation of these 2D filters can be found in the [source code
 
 ##### Training features (3D)
 
-{% include thumbnail src='/media/TWS-3D-Settings-dialog.png' title='Settings dialog for the Trainable Weka Segmentation 3D plugin.'%}When calling the plugin from the menu command {% include bc path='Plugins | Segmentation | Trainable Weka Segmentation 3D'%} the set of available image features will be as follows:
+{% include thumbnail src='/media/tws-3d-settings-dialog.png' title='Settings dialog for the Trainable Weka Segmentation 3D plugin.'%}When calling the plugin from the menu command {% include bc path='Plugins | Segmentation | Trainable Weka Segmentation 3D'%} the set of available image features will be as follows:
 
 -   **Gaussian blur**: performs $$n$$ individual 3D convolutions with Gaussian kernels with the normal $$n$$ variations of $$\sigma$$. The larger the radius the more blurred the image becomes until the pixels are homogeneous.
 -   **Hessian**: using [FeatureJ](/plugins/featurej) it computes for each image element (voxel) the eigenvalues of the Hessian, which can be used for example to discriminate locally between plate-like, line-like, and blob-like image structures. More specifically, it calculates the magnitude of the largest, middle and smallest eigenvalue of the Hessian tensor. It requires enabling the [ImageScience](/plugins/imagescience) update site in the updater. It uses smoothing scale $$\sigma$$.
@@ -441,7 +441,7 @@ The **[API](http://javadoc.scijava.org/Fiji/?trainableSegmentation/package-summa
 
 ## Versatility
 
-{% include thumbnail src='/media/TWS-application-examples.png' title='**Examples of application of Trainable Weka Segmentation**. From left to right and from top to bottom: original image of the [Berkeley Segmentation Dataset (Test Image \#42049 (color)](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/BSDS300/html/dataset/images/color/42049.html)), probability of boundaries after training, semantic segmentation into 3 classes (sky, tree, eagle), and detected object using the probability maps of the semantic segmentation and some post-processing ([Level Sets](/plugins/level-sets) from maximum and bounding box selection).'%} As a **pixel classifier**, the Trainable Weka Segmentation presents a wide range of applications such as {% include wikipedia title="Edge detection" %}, semantic segmentation, or {% include wikipedia title="Object detection" %} and localization. All of them at the distance of a few clicks on the plugin GUI and sometimes in combination with other Fiji tools or plugins.
+{% include thumbnail src='/media/tws-application-examples.png' title='**Examples of application of Trainable Weka Segmentation**. From left to right and from top to bottom: original image of the [Berkeley Segmentation Dataset (Test Image \#42049 (color)](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/BSDS300/html/dataset/images/color/42049.html)), probability of boundaries after training, semantic segmentation into 3 classes (sky, tree, eagle), and detected object using the probability maps of the semantic segmentation and some post-processing ([Level Sets](/plugins/level-sets) from maximum and bounding box selection).'%} As a **pixel classifier**, the Trainable Weka Segmentation presents a wide range of applications such as {% include wikipedia title="Edge detection" %}, semantic segmentation, or {% include wikipedia title="Object detection" %} and localization. All of them at the distance of a few clicks on the plugin GUI and sometimes in combination with other Fiji tools or plugins.
 
 To see **who is using Trainable Weka Segmentation** and its multiple applications, you can have a look at [these publications](https://scholar.google.es/scholar?q=%22Trainable+Weka+Segmentation%22+OR+%22Advanced+Weka+Segmentation%22&btnG=&hl=es&as_sdt=0%2C5).
 

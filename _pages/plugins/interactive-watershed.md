@@ -10,7 +10,7 @@ categories: Plugins,Segmentation
 {% endcapture %}
 {% include info-box software='ImageJ/Fiji' name='Interactive H\_Watershed' author='[Benoit Lombardot](/users/Benoit)' maintainer='[Benoit Lombardot](/users/Benoit)' released='08 May 2017' filename='SCF-MPI-CBG update site' source=source category='[Plugins](Category_Plugins), [Segmentation](Category_Segmentation)' %}
 
-<img src="/media/InteractiveWatershed illustration.PNG" width="500"/>
+<img src="/media/interactivewatershed-illustration.png" width="500"/>
 
 <div align="center">
 
@@ -32,7 +32,7 @@ The 2 following subsection gives additionnal details on watershed working princi
 
 If we interpret images as landscapes of hills and valleys, the watershed algorithm gradually flood the valleys starting from their lowest point (the image local minima). When the floodings of two minima meet at a sadle they remain distinct as each minima region is labelled with a distinct color. The flooding stops when all the image is covered. As objects do not always cover the whole image a threshold can be set to stop region the region flooding. Alternatively the flooding can be started from local maxima. Figure 2 shows the flooding of 3 peaks for different values of the treshold parameter.
 
-<img src="/media/Figure Watershed.PNG" width="800"/>
+<img src="/media/figure-watershed.png" width="800"/>
 
 <div align="center">
 
@@ -48,7 +48,7 @@ There exists many different ways of detecting local maxima. H-maxima focuses on 
 
 We call H-Watershed the segmentation obtained by flooding the H-maxima of an image. Such segmentation has 2 parameters. The Threshold, T, that stops the flooding of the image and the H-maxima robustness, H, that defines the flooding initialization.
 
-<img src="/media/Figure HMax HWatershed v3.PNG" width="800"/>
+<img src="/media/figure-hmax-hwatershed-v3.png" width="800"/>
 
 <div align="center">
 
@@ -93,7 +93,7 @@ The control panel items, see Figure 4, can be used to modify the segmentation an
 -   **Export regions mask**: if checked the export button will export a binary image rather than a label image. if the image is 2D this binary image is compatible with the particle analyzer from ImageJ.
 -   **Export**: Once satisfied with the segmentation visible on screen the corresponding label map can be exported to an ImagePlus that can be further analyzed with ImageJ. The export action appear in the macro recorder for Image Macro Language and Jython language.
 
-<img src="/media/Figure IWS controlPanel.PNG" width="800"/>
+<img src="/media/figure-iws-controlpanel.png" width="800"/>
 
 <div align="center">
 
@@ -101,7 +101,7 @@ The control panel items, see Figure 4, can be used to modify the segmentation an
 
 </div>
 
-<img src="/media/Figure IWS visualisationMode.PNG" width="800"/>
+<img src="/media/figure-iws-visualisationmode.png" width="800"/>
 
 <div align="center">
 
@@ -109,7 +109,7 @@ The control panel items, see Figure 4, can be used to modify the segmentation an
 
 </div>
 
-<img src="/media/Figure IWS sideViews v2.PNG" width="800"/>
+<img src="/media/figure-iws-sideviews-v2.png" width="800"/>
 
 <div align="center">
 
@@ -117,7 +117,7 @@ The control panel items, see Figure 4, can be used to modify the segmentation an
 
 </div>
 
-<img src="/media/Figure IWS customBgImage.PNG" width="800"/>
+<img src="/media/figure-iws-custombgimage.png" width="800"/>
 
 <div align="center">
 

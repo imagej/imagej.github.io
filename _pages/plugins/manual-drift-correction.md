@@ -4,7 +4,7 @@ title: Manual drift correction plugin
 categories: Plugins,Registration
 ---
 
-{% include info-box software='Fiji' name='Manual drift correction' author='[Benoit Lombardot](/users/Benoit)' maintainer='[Benoit Lombardot](/users/Benoit)' released='22 March 2016' filename='![](/media/Manual Drift Correction-1.0.0.jar.zip "fig:Manual_Drift_Correction-1.0.0.jar.zip")' source=' [github](https://github.com/mpicbg-scicomp/Manual_drift_correction)' category='[Plugins](Category_Plugins), [Registration](Category_Registration)' %}
+{% include info-box software='Fiji' name='Manual drift correction' author='[Benoit Lombardot](/users/Benoit)' maintainer='[Benoit Lombardot](/users/Benoit)' released='22 March 2016' filename='![](/media/manual-drift-correction-1.0.0.jar.zip "fig:Manual_Drift_Correction-1.0.0.jar.zip")' source=' [github](https://github.com/mpicbg-scicomp/Manual_drift_correction)' category='[Plugins](Category_Plugins), [Registration](Category_Registration)' %}
 
 ## Goal of the plugin
 
@@ -14,7 +14,7 @@ Manual Drift Correction plugin allows to correct drift in an image sequence by u
 
 ### Installation
 
-To get started with the plugin first download it (![](/media/Manual Drift Correction-1.0.0.jar.zip "fig:Manual_Drift_Correction-1.0.0.jar.zip")), unzip it and install it (Fiji menu {% include bc path="Plugins|Install..." %}). Alternatively you can manually copy the unzipped file in <Fiji folder>/plugins.Once the file is installed, restart Fiji. A new entry will be available in the menu {% include bc path="Plugins|Registration|Manual drift correction" %} meaning that the plugin was properly installed.
+To get started with the plugin first download it (![](/media/manual-drift-correction-1.0.0.jar.zip "fig:Manual_Drift_Correction-1.0.0.jar.zip")), unzip it and install it (Fiji menu {% include bc path="Plugins|Install..." %}). Alternatively you can manually copy the unzipped file in <Fiji folder>/plugins.Once the file is installed, restart Fiji. A new entry will be available in the menu {% include bc path="Plugins|Registration|Manual drift correction" %} meaning that the plugin was properly installed.
 
 ### Tutorial
 

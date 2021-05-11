@@ -12,13 +12,13 @@ categories: Plugins,Filtering
 
 ## Plugin for wavelet-based denoising/filtering image data
 
-<img src="/media/Wavelet Denoise Pics ImageJ SyncWins.jpg" width="800"/>
+<img src="/media/wavelet-denoise-pics-imagej-syncwins.jpg" width="800"/>
 
 When starting the plugin, pictures and <i>Sync Wins</i> dialog appear, like in the picture above, together with the plugin dialog. The first picture is the input image, the second one is the filtered picture ("Filtered-" prefix), the third one contains the wavelet coefficients ("WT-" prefix), that are converted to 8-bit and are intensity scaled for good visualization, the fourth picture ("WT-NoStretch-" prefix) contains float values of the wavelet coefficients without intensity scaling. The third and fourth pictures appear only after checking corresponding boxes in the main dialog. <i>Applying Synchronize All</i> in the <i>Sync Wins</i> dialog is helpful when navigating through image stacks.
 
 We should mention here that sizes of input image matrices must be of power of 2, common sizes are: 64, 128, 256, 512, 1024, 2048 etc., otherwise the plugin will not start and a warning message appears again. This is due to the proper computation of levels of wavelet decomposition of images, see below.
 
-<figure><img src="/media/Wavelet Denoise dialog.jpg" title="Wavelet_Denoise_dialog.jpg" width="350" alt="Wavelet_Denoise_dialog.jpg" /><figcaption aria-hidden="true">Wavelet_Denoise_dialog.jpg</figcaption></figure>
+<figure><img src="/media/wavelet-denoise-dialog.jpg" title="Wavelet_Denoise_dialog.jpg" width="350" alt="Wavelet_Denoise_dialog.jpg" /><figcaption aria-hidden="true">Wavelet_Denoise_dialog.jpg</figcaption></figure>
 
 ## Description of functionality of items in the plugin window
 

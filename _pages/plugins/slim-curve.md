@@ -14,12 +14,12 @@ categories: Plugins
 {% capture source%}
 {% include github org='slim-curve' repo='slim-plugin' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='SLIM Curve plugin' logo='<img src="/media/Slim-curve-icon.png" width="64"/>' author=' [CRUK/MRC at University of Oxford](http://www.rob.ox.ac.uk/)  
+{% include info-box software='ImageJ' name='SLIM Curve plugin' logo='<img src="/media/slim-curve-icon.png" width="64"/>' author=' [CRUK/MRC at University of Oxford](http://www.rob.ox.ac.uk/)  
 [UW-Madison LOCI](http://loci.wisc.edu/)' maintainer=maintainer filename='slim\_plugin-2.0.0-SNAPSHOT.jar' source=source latest-version='2.0.0-SNAPSHOT' status='discontinued in favor of [FLIMJ](/plugins/flimj)' website='https://slim-curve.github.io/' category='[:Category:Analysis](Category_Analysis)' %}
 
 ## Introduction
 
-<figure><img src="/media/SLIM-screenshot.png" title="SLIM-screenshot.png" width="357" alt="SLIM-screenshot.png" /><figcaption aria-hidden="true">SLIM-screenshot.png</figcaption></figure>
+<figure><img src="/media/slim-screenshot.png" title="SLIM-screenshot.png" width="357" alt="SLIM-screenshot.png" /><figcaption aria-hidden="true">SLIM-screenshot.png</figcaption></figure>
 
 [SLIM Curve](https://slim-curve.github.io/) is an exponential curve fitting library used for Fluorescent Lifetime Imaging (FLIM) and Spectral Lifetime Imaging (SLIM). It is developed by Paul Barber and the Advanced Technology Group at the [Cancer Research UK and Medical Research Council Oxford Institute for Radiation Oncology](http://www.rob.ox.ac.uk/), as well as the [Laboratory for Optical and Computational Instrumentation](http://loci.wisc.edu/) at the University of Wisconsin-Madison. SLIM Curve is used for FLIM functionality in the Advanced Technology Group's [Time Resolved Imaging](https://www.assembla.com/spaces/ATD_TRI/wiki) (TRI2) software, as well as in the SLIM Curve plugin for ImageJ.
 
@@ -40,7 +40,7 @@ Once you have installed the SLIM Curve plugin it becomes available on the menu u
 
 When you run the plugin you will first be prompted to load a lifetime data file. (This should have a .sdt or .ics suffix.) Once the file loads a grayscale version of the lifetime image pops up, produced by summing the photon counts for all time bins for each pixel:
 
-![](/media/SLIM-grayscale-image.png "SLIM-grayscale-image.png")
+![](/media/slim-grayscale-image.png "SLIM-grayscale-image.png")
 
 Here the red color signifies pixels that have a low photon count and will be excluded from any fitted images that are produced. The threshold value for this is adjustable in the user interface. When fitted images are created, yellow pixels signify fitting errors. During analysis of fitted images, blue pixels indicate outliers.
 
@@ -48,13 +48,13 @@ The crosshair cursor shows the current fitted pixel. This starts out as the brig
 
 The fitted decay graph pops up showing the results of the pixel fit:
 
-![](/media/SLIM-fitted-decay-graph.png "SLIM-fitted-decay-graph.png")
+![](/media/slim-fitted-decay-graph.png "SLIM-fitted-decay-graph.png")
 
 Here the graph shows black squares for the observed photon counts over time and a red line for the fitted curve. There are also vertical blue, green, and red lines or cursors that mark the region of the decay being fitted. Below the decay graph is a graph showing the Residuals, the difference between the observed and fitted values. For a good fit the residuals should have a low value range and exhibit a random pattern.
 
 The user interface panel also pops up, allowing you to control the settings of the fit. On the initial tab of the user interface panel entitled *Fit* you can choose what kind of fit and analysis you want to perform:
 
-![](/media/SLIM-UI-fit-tab.png "SLIM-UI-fit-tab.png")
+![](/media/slim-ui-fit-tab.png "SLIM-UI-fit-tab.png")
 
 -   *Region* allows you to fit the entire image, a single pixel, the sum of all pixels, or the sum of each ROI defined on the grayscale image.
 -   *Algorithm* selects the fit algorithm. *SLIMCurve RLD+LMA* is recommended. This uses a rapid lifetime determination (also known as a triple integral fit) to quickly estimate the fitted parameters. Then a Levenberg-Marquardt least-squares fit is done to refine those estimates.
@@ -67,7 +67,7 @@ The user interface panel also pops up, allowing you to control the settings of t
 
 The next tab is entitled *Cursors*:
 
-![](/media/SLIM-UI-cursors-tab.png "SLIM-UI-cursors-tab.png")
+![](/media/slim-ui-cursors-tab.png "SLIM-UI-cursors-tab.png")
 
 Here the positions of the fit cursors are listed. There are two kinds of cursors:
 
@@ -75,7 +75,7 @@ The transient cursors bracket which region of the decay to fit. *Transient Start
 
 The excitation cursors bracket which region of the excitation or instrument response function decay to use in the fit. If an excitation is loaded the decay is shown in an Instrument Response Function graph with cursor lines similar to the *Fitted Decay Graph:*
 
-![](/media/SLIM-excitation-graph.png "SLIM-excitation-graph.png")
+![](/media/slim-excitation-graph.png "SLIM-excitation-graph.png")
 
 The horizontal green line controls the *Excitation Baseline*, the minimum photon count to be included in the excitation. The vertical blue and green cursor lines define the start and end of the excitation. The *Excitation Delay* is the offset between the *Transient Start* and the start of the excitation. *Excitation Width* is the end of the excitation minus the start.
 
@@ -89,11 +89,11 @@ To create an excitation is currently a two step process. Run SLIM Curve with the
 
 If an excitation is loaded it is also shown on the fitted decay graph in light gray:
 
-![](/media/SLIM-fitted-decay-graph-excitation.png "SLIM-fitted-decay-graph-excitation.png")
+![](/media/slim-fitted-decay-graph-excitation.png "SLIM-fitted-decay-graph-excitation.png")
 
 In the next tab of the UI panel titled *Control* you can fine tune some aspects of the fit:
 
-![](/media/SLIM-UI-control-tab.png "SLIM-UI-control-tab.png")
+![](/media/slim-ui-control-tab.png "SLIM-UI-control-tab.png")
 
 -   *X* and *Y* specify the location of the last single fitted pixel. (You can fit a single pixel by setting Region to Single Pixel and clicking the Fit Pixel button or by just clicking on the grayscale image.)
 -   *Start* and *Stop* select the starting and ending time bins to be fitted.
@@ -103,7 +103,7 @@ In the next tab of the UI panel titled *Control* you can fine tune some aspects 
 
 The final tab of the user interface panel is a section entitled *Parameters* which displays and lets you constrain the fitted parameters. The actual contents of this subpanel will depend upon the Function selected.
 
-![](/media/SLIM-UI-params-tab.png "SLIM-UI-params-tab.png")
+![](/media/slim-ui-params-tab.png "SLIM-UI-params-tab.png")
 
 For each parameter:
 
@@ -118,7 +118,7 @@ SLIM Curve starts up with the *Region* under the *Fit* tab of the UI set to Imag
 
 When a fitted image is created a histogram tool panel also pops up. This panel shows the range of values encountered in the fitted image and the LUT used to display those values, as well as a histogram of the distribution of those values in the image.
 
-![](/media/SLIM-fitted-image-histogram.png "SLIM-fitted-image-histogram.png")
+![](/media/slim-fitted-image-histogram.png "SLIM-fitted-image-histogram.png")
 
 By default the histogram tool comes up in automatic mode, the start and end of the LUT range automatically adjust to the minimum and maximum values in the image, so you can see the distribution all of the fitted values. Here the dashed gray lines indicate the quartiles of the distribution. If you uncheck this *Adjust range to min/max values* checkbox the histogram will zoom in based on the quartile range. (This uses Tukey's Outlier Rule: If Q1 is the first quartile value and Q3 the third, let the interquartile range IQR equal Q3 - Q1. Then values less than Q1 - 1.5 \* IQR or greater than Q3 + 1.5 \* IQR are considered outliers and are discarded.) You can also either enter new start and end values (this is useful to impose a uniform LUT range so you can compare different lifetime images) or just drag markers at the start and end of the histogram.
 
@@ -128,11 +128,11 @@ For images that have more than one channel, there will also be a checkbox to *Di
 
 ### Save/Load default excitation
 
-{% include thumbnail src='/media/Excitation.png' title='Controlling the default excitation'%} As loading/saving excitation file is something user need to do every time, the process has been simplified. Whatever macro user wants to set as default excitation, user should load the sdt file normally, set transient start/end time and save the file as \*irf file. Then from the drop down user should select "Set as default". This way, the excitation with the transient start/end time is saved as default excitation. Later, when needed to load the default excitation, selecting "Use default excitation" will load the default one.
+{% include thumbnail src='/media/excitation.png' title='Controlling the default excitation'%} As loading/saving excitation file is something user need to do every time, the process has been simplified. Whatever macro user wants to set as default excitation, user should load the sdt file normally, set transient start/end time and save the file as \*irf file. Then from the drop down user should select "Set as default". This way, the excitation with the transient start/end time is saved as default excitation. Later, when needed to load the default excitation, selecting "Use default excitation" will load the default one.
 
 ### Macro language support
 
-All the operations in SLIM Plugin operation are completely compatible with the popular [ImageJ macro language](/ij/developer/macro/macros.html). Each of the button, selection, choice of algorithm, binning, noise model, default excitation selection with custom start-end time is completely macro record-able. Below is a typical macro recording for a typical usage where the user sets the algorithm, noise model, changes transient time, loads default excitation, sets the chi2 target, fixes A value for fitting and then starts fitting. {% include thumbnail src='/media/Screenshot slim final.png' title='Example of macro recording SLIM Curve'%}
+All the operations in SLIM Plugin operation are completely compatible with the popular [ImageJ macro language](/ij/developer/macro/macros.html). Each of the button, selection, choice of algorithm, binning, noise model, default excitation selection with custom start-end time is completely macro record-able. Below is a typical macro recording for a typical usage where the user sets the algorithm, noise model, changes transient time, loads default excitation, sets the chi2 target, fixes A value for fitting and then starts fitting. {% include thumbnail src='/media/screenshot-slim-final.png' title='Example of macro recording SLIM Curve'%}
 
 The list of command are as follows
 
@@ -285,13 +285,13 @@ Complete macro example with exporting histograms and pixel information to CSV fi
 
 Once you are satisfied with the fitting settings for a source image you can use those same settings on a series of similar images. All images should have the same number of time bins. To get into batch mode merely click on the *New File/Batch* button and select a folder or a selection of images. The batch mode UI will pop up:
 
-![](/media/SLIM-batch-mode-UI.png "SLIM-batch-mode-UI.png")
+![](/media/slim-batch-mode-ui.png "SLIM-batch-mode-UI.png")
 
 You can export the pixel values, histogram values and statistics, and summary histogram values and statistics to a text file. This can be the same file or separate files. The default is tab separated values but the checkbox allows comma separated values.
 
 Once the batch processing starts a window will pop up showing the histogram and statistics for each lifetime file, as well as a summary histogram and statistics:
 
-![](/media/SLIM-batch-mode-window.png "SLIM-batch-mode-window.png")
+![](/media/slim-batch-mode-window.png "SLIM-batch-mode-window.png")
 
 Each source lifetime image has a row of histograms for each of the parameters in the *Fitted Images* dropdown of the *Fit* tab of the UI. Clicking on the row loads the source image into the plugin.
 
@@ -346,7 +346,7 @@ For some specific applications, you might want to analyze a specific segment in 
 7.  Run the Create Mask and Create Selection commands to make the ROI. You can execute commands easily using the [search bar](/learn/getting-started#the-search-bar) (press {% include key key='L' %}).
 8.  Add the ROI to ROI manager by pressing {% include key key='T' %}. Use it on overlay with lifetime image and start analyzing.
 
-![](/media/Weka module.JPG "fig:Weka_module.JPG") ![](/media/Overlay.JPG "fig:Overlay.JPG")
+![](/media/weka-module.jpg "fig:Weka_module.JPG") ![](/media/overlay.jpg "fig:Overlay.JPG")
 
 ### Result comparison
 

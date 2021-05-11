@@ -5,7 +5,7 @@ categories: Segmentation,Tutorials,Plugins
 artifact: sc.fiji:Graph\_Cut
 ---
 
- <img src="/media/Mito-sample.png" width="350"/>
+ <img src="/media/mito-sample.png" width="350"/>
 
 The Graph Cut plugin provides a way to obtain a globally smooth binary segmentation. As input, you have to provide a gray-scale image that represents the pixel affinities for belonging to the foreground. Via a single parameter you can adjust the smoothness of the segmentation.
 
@@ -25,24 +25,24 @@ The only available setting so far is the "smoothness" value. Use it to adjust th
 
 Assume we want to segment the following image into foreground/background, such that the foreground is the mitochondria and the background everything else:
 
-<img src="/media/Mito.png" width="200"/>
+<img src="/media/mito.png" width="200"/>
 
 ### Probability Image
 
 First, we create a probability image that reflects the per-pixel probability of belonging to the foreground. For that, we can use the [Trainable Weka Segmentation](/plugins/tws) plugin. We train a classifier for the mitochondria and everything else. Instead of using the classifier directly for the segmentation, however, we create a probability image:
 
-<img src="/media/Mito-prob.png" width="200"/>
+<img src="/media/mito-prob.png" width="200"/>
 
 ### Running Graph Cut
 
 Now we start the Graph Cut plugin on the probability image. With the "smoothness" slider we can adjust the smoothness of the segmentation to avoid some small extrema to corrupt our segmentation. In our example, we found that a value of about 600 gives reasonable results. The outcome of the plugin is a binary image, with white being the foreground segmentation:
 
-<img src="/media/Mito-seg.png" width="200"/>
+<img src="/media/mito-seg.png" width="200"/>
 
 ### Result
 
 Finally, we merge the original image and the segmentation for illustration purposes:
 
-<figure><img src="/media/Mito-comp.png" title="200px" width="100" alt="200px" /><figcaption aria-hidden="true">200px</figcaption></figure>
+<figure><img src="/media/mito-comp.png" title="200px" width="100" alt="200px" /><figcaption aria-hidden="true">200px</figcaption></figure>
 
   

@@ -17,11 +17,11 @@ categories: Plugins,Segmentation,Mathematical_morphology
 {% include github org='ijpb' repo='ijpb-plugins' %}
 {% endcapture %}
 {% include info-box name='Classic Watershed' software='IJPB-plugins' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](/plugins/morpholibj) v1.4.1)' status='stable, active' category='[Segmentation](Category_Segmentation), [Mathematical morphology](Category_Mathematical_morphology)' %}{\| \|<span>  
-</span>style="vertical-align:top" \|{% include thumbnail src='/media/Classic-Watershed-lines-blur-blobs.png' title='Overlay of watershed lines on blurred blobs.'%} \|}
+</span>style="vertical-align:top" \|{% include thumbnail src='/media/classic-watershed-lines-blur-blobs.png' title='Overlay of watershed lines on blurred blobs.'%} \|}
 
 ## Introduction
 
-{% include thumbnail src='/media/Watershed-flooding-graph.png' title='Schematic overview of watershed flooding in 1D'%}Classic Watershed is an ImageJ/Fiji plugin to perform watershed segmentation of grayscale 2D/3D images using flooding simulations as described by Pierre Soille and Luc M. Vincent (1990)&lt;ref name="Soille1990&gt;{% include cite content='conference' title='Determining watersheds in digital pictures via flooding simulations' author='Soille, Pierre and Vincent, Luc M' booktitle='Proc. SPIE' volume='1360' pages='240-250' year='1990' organization='International Society for Optics and Photonics' doi='10.1117/12.24211' url='http://dx.doi.org/10.1117/12.24211' %}</ref>.
+{% include thumbnail src='/media/watershed-flooding-graph.png' title='Schematic overview of watershed flooding in 1D'%}Classic Watershed is an ImageJ/Fiji plugin to perform watershed segmentation of grayscale 2D/3D images using flooding simulations as described by Pierre Soille and Luc M. Vincent (1990)&lt;ref name="Soille1990&gt;{% include cite content='conference' title='Determining watersheds in digital pictures via flooding simulations' author='Soille, Pierre and Vincent, Luc M' booktitle='Proc. SPIE' volume='1360' pages='240-250' year='1990' organization='International Society for Optics and Photonics' doi='10.1117/12.24211' url='http://dx.doi.org/10.1117/12.24211' %}</ref>.
 
 The basic idea consists of considering the input image as topographic surface and placing a water source in each regional minimum of its relief. Next the entire relief is flooded from the sources and dams are placed where the different water sources meet.
 
@@ -35,7 +35,7 @@ The Classic Watershed plugin runs on any **grayscale image (8, 16 and 32-bit) in
 
 At least one image needs to be open in order to run the plugin.
 
-{% include thumbnail src='/media/Classic-Watershed-dialog.png' title='Main dialog of the Classic Watershed plugin'%} Image parameters:
+{% include thumbnail src='/media/classic-watershed-dialog.png' title='Main dialog of the Classic Watershed plugin'%} Image parameters:
 
 -   **Input** image: grayscale image to flood, usually the gradient of an image.
 -   **Mask** image (optional): binary image of the same dimensions as the input image which can be used to restrict the areas of application of the algorithm. Set to "None" to run the method on the whole input image.

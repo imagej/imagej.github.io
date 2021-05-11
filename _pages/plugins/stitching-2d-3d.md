@@ -49,7 +49,7 @@ There are 5 fusion methods available right now.
 
 ## Stitch Grid of Images
 
-{% include thumbnail src='/media/StitchGrid.png' title='Shows the Stitch Grid Dialog.'%}  
+{% include thumbnail src='/media/stitchgrid.png' title='Shows the Stitch Grid Dialog.'%}  
 This plugin is able to stitch a grid of images, it does not matter if it is 2D or 3D images as long as all images are of the same type. In contrast to the 2D/3D stitching of two images, this plugins will load the images from harddisc.
 
 The user has to define the grid size, that means how the input tiles are arranged (e.g. 7 x 7 image tiles). The overlap is a rough estimate. Note: Smaller overlap reduces computation time, but if the correct alignment is not found try increasing this value first.
@@ -84,7 +84,7 @@ This plugin complements the previous one by stitching a sequence of grid of imag
 
 ## Stitch Collection of Images
 
-{% include thumbnail src='/media/StitchCollection.png' title='Shows the Stitch Image Collection Dialog.'%}  
+{% include thumbnail src='/media/stitchcollection.png' title='Shows the Stitch Image Collection Dialog.'%}  
 This plugin takes an arbitrary tile configuration as input which has to be stored in a file.
 
 The plugin Stitch Grid of Images will for example create such a file.
@@ -109,7 +109,7 @@ For loading microscopic images we use the LOCI Bioformats importer. If you exper
 
 ## Results & Computation time
 
-<img src="/media/ResultsStitching.jpg" title="fig:Example of Stitching of 3D confocal stacks." width="780" alt="Example of Stitching of 3D confocal stacks." />  
+<img src="/media/resultsstitching.jpg" title="fig:Example of Stitching of 3D confocal stacks." width="780" alt="Example of Stitching of 3D confocal stacks." />  
 The figure shows stitched images of 3D confocal tiles. (A) shows a Drosophila melanogaster pupae expressing a GFP reporter under the regulation of the yellow gene, imaged few hours before eclosion using a 4× dry lens on an Optiphot confocal microscope (Nikon). It was stitched from three image stacks arranged in a 1 × 3 grid (Table 1 first row). The maximum intensity projection is shown. (B) shows the Drosophila larval nervous system stained with three dyes, stitched from a grid of 2 × 3 RGB images (see table 1 second row), the maximum intensity projection is shown. (C) shows a zone in the dorsal telencephalon of human embryonic tissue from week 17 post conception, incubated for 24 hours at 37°C in DiI. It was imaged using a 63×/1.4 objective on Zeiss LSM 510 equipped with a motorized stage. The final image was created from 24 image stacks arranged in a 4 × 6 grid (see table 1 third row), slice 18 is shown. Special thanks to Nicolas Gompel, James W. Truman, Simone Fietz and Wieland B. Huttner for providing the images.
 
 [For interactive examples of these datasets have a look here.](http://fly.mpi-cbg.de/~preibisch/stitching.html)

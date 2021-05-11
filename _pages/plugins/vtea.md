@@ -26,7 +26,7 @@ categories: Segmentation,Visualization,Plugins,Citable
 
 {% include info-box content='VTEA is still under active development. Version 1.0 is tentatively planned for an October release..' %}
 
-This brief [video](/media/Demostration.mov) describes VTEA's core behaviors. VTEA's utility has been demonstrated in this [paper](http://jasn.asnjournals.org/content/early/2017/02/01/ASN.2016091027.full).
+This brief [video](/media/demostration.mov) describes VTEA's core behaviors. VTEA's utility has been demonstrated in this [paper](http://jasn.asnjournals.org/content/early/2017/02/01/ASN.2016091027.full).
 
 We developed VTEA out of a need to unify the various tasks involved in image processing, segmenting, exploring and analyzing large 3D fluorescence light microscopy image volumes ranging from 50-100s of microns thick. Our solution is predicated upon the idea that *image processing, segmentation and analysis of 3D image volumes is best implemented with a bidirectional interactive user interface from image processing to analysis*.
 
@@ -39,13 +39,13 @@ Importantly, our solution is in its infancy. In fact, the tools are relatively s
 
 ### 1. Start updater
 
-<figure><img src="/media/Step 1.jpg" title="Select &quot;Update...&quot; under &quot;Help&quot;." width="500" alt="Select &quot;Update...&quot; under &quot;Help&quot;." /><figcaption aria-hidden="true">Select "Update..." under "/help".</figcaption></figure>
+<figure><img src="/media/step-1.jpg" title="Select &quot;Update...&quot; under &quot;Help&quot;." width="500" alt="Select &quot;Update...&quot; under &quot;Help&quot;." /><figcaption aria-hidden="true">Select "Update..." under "/help".</figcaption></figure>
 
 Select "Update..." under "/help".
 
 ### 2. Add update site
 
-<figure><img src="/media/Step 2.jpg" title="Select &quot;Manage update sites.&quot;" width="500" alt="Select &quot;Manage update sites.&quot;" /><figcaption aria-hidden="true">Select "Manage update sites."</figcaption></figure>
+<figure><img src="/media/step-2.jpg" title="Select &quot;Manage update sites.&quot;" width="500" alt="Select &quot;Manage update sites.&quot;" /><figcaption aria-hidden="true">Select "Manage update sites."</figcaption></figure>
 
 Select "Manage update sites."
 

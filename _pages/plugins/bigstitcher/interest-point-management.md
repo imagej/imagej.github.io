@@ -26,9 +26,9 @@ If you click **Interest Point Explorer (on/off)**, a new window will open that s
 
 You can right-click on a line in the list and click **Delete** to delete the interest points.
 
-{% include thumbnail src='/media/BigStitcher ips explorer bdv all.png' title='all interest points as an overlay in BigDataViewer'%}
+{% include thumbnail src='/media/bigstitcher-ips-explorer-bdv-all.png' title='all interest points as an overlay in BigDataViewer'%}
 
-{% include thumbnail src='/media/BigStitcher ips explorer bdv corresponding.png' title='**corresponding** interest points as an overlay in BigDataViewer'%}
+{% include thumbnail src='/media/bigstitcher-ips-explorer-bdv-corresponding.png' title='**corresponding** interest points as an overlay in BigDataViewer'%}
 
 <img src="/media/BigStitcher ips explorer panel.png" width="600"/>
 
@@ -42,7 +42,7 @@ In the **Manage Interest Points** sub-menu, we offer a few ways of filtering and
 
 This allows you to select **just the corresponding interest points** with a given label and save them under a new name. Clicking this opens a dialog allowing you to select for which points to extract correspondences **(Corresponding interest points)** and give a name to the copied points **(New label)**.
 
-<img src="/media/BigStitcher ips new from corresponding.png" width="400"/>
+<img src="/media/bigstitcher-ips-new-from-corresponding.png" width="400"/>
 
 ### Show distance histogram
 
@@ -52,7 +52,7 @@ Selecting **Show Distance Histogram ...** and clicking on an interest point labe
 
 **Show Relative Distance Histogram ...** allows you to plot the distribution of distances from points with one label **to the nearest neighbor among points of another label**. You will be asked for which **Interest points** to use and **Relative to** which other set distances should be computed.
 
-<img src="/media/BigStitcher ips dist hist relative.png" width="400"/>
+<img src="/media/bigstitcher-ips-dist-hist-relative.png" width="400"/>
 
 ### Remove by distance
 
@@ -64,7 +64,7 @@ Using **Remove by Distance** or **Remove by relative Distance**, you can filter 
 -   **Lower threshold** and **Upper threshold**: the range of distances to keep or remove
 -   **Defined range:** whether to **Remove** points with a nearest-neighbor-distance in the given range or **Keep** them (removes all otside the range).
 
-<img src="/media/BigStitcher ips dist remove dist.png" width="400"/>
+<img src="/media/bigstitcher-ips-dist-remove-dist.png" width="400"/>
 
 ### Remove interactively
 
@@ -89,6 +89,6 @@ In the dialog, you can set the following parameters:
 
 Clicking **OK** will produce an interest point rendering *for each selected view*.
 
-<img src="/media/BigStitcher ips vis dialog.png" width="600"/>
+<img src="/media/bigstitcher-ips-vis-dialog.png" width="600"/>
 
 Go back to the [main page](/plugins/bigstitcher#documentation)

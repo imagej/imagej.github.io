@@ -19,7 +19,7 @@ As ImageJ is built using the [SciJava principles of project management](/develop
 
 |                                                                                                              |                                                                                                                  |
 |--------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| <a href="/develop/git"><img src="/media/Git-icon.png" width="64px"/></a> | <a href="/develop/maven"><img src="/media/Maven-icon.png" width="64px"/></a> |
+| <a href="/develop/git"><img src="/media/git-icon.png" width="64px"/></a> | <a href="/develop/maven"><img src="/media/maven-icon.png" width="64px"/></a> |
 | [Git](/develop/git)                                    | [Maven](/develop/maven)                                    |
 
 Additionally, at a minimum, you should clone the {% include github org='imagej' repo='tutorials' label='imagej/tutorials repository' %}. This will give you a local copy of the tutorials discussed in this guide, as well as templates for use in your own development.

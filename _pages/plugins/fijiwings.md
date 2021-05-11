@@ -4,7 +4,7 @@ title: FijiWings
 categories: Citable
 ---
 
-<img src="/media/File.png" title="fig:File.png" width="500" alt="File.png" />{% include clear%}
+<img src="/media/file.png" title="fig:File.png" width="500" alt="File.png" />{% include clear%}
 
 {% capture author%}
 Alex Dobens, {% include person id='Dobensl' %}

@@ -27,7 +27,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
   <tbody>
     <tr class="odd">
       <td style="font-size: 24px; padding: 0.3em 1em 0.3em 10px !important">
-        <p><a href="/presentations/fiji-introduction/"><img src="/media/Fiji-intro-slide.png" width="300px"></a></p>
+        <p><a href="/presentations/fiji-introduction/"><img src="/media/fiji-intro-slide.png" width="300px"></a></p>
       </td>
       <td>Introduction to Fiji</td>
       <td style="padding: 0.3em 1em 0.3em 10px !important">

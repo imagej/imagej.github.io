@@ -15,14 +15,14 @@ The core plugins written in Java, versioned via Maven and distributed via update
 
 ## User perspective
 
-![`user-updater.png`](/media/User-updater.png "fig:user-updater.png")` `
+![`user-updater.png`](/media/user-updater.png "fig:user-updater.png")` `
 
 -   the user downloads packaged Fiji from website
 -   some update sites are enabled by default and will serve all core updates (see update site chapter)
 -   each time Fiji is started, these update sites are checked for new content
 -   in case there is new content, the user will be asked to approve the updates
 
-![](/media/User updatesite.png "user_updatesite.png")
+![](/media/user-updatesite.png "user_updatesite.png")
 
 -   the user can manually add additional update sites which will then also be checked for updates on startup
 

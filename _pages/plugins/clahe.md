@@ -6,7 +6,7 @@ categories: Plugins,Filtering
 artifact: mpicbg:mpicbg_:1.4.1
 ---
 
-{% include thumbnail src='/media/Tem.jpg' title='TEM original image'%} {% include thumbnail src='/media/Tem-clahe-50-256-2.5.jpg' title='TEM CLAHE processed, (block: 50; bins: 256; max slope: 2.5)'%}
+{% include thumbnail src='/media/tem.jpg' title='TEM original image'%} {% include thumbnail src='/media/tem-clahe-50-256-2.5.jpg' title='TEM CLAHE processed, (block: 50; bins: 256; max slope: 2.5)'%}
 
 The method has three parameters:
 
@@ -36,9 +36,9 @@ use the displayed image to estimate the intensity transfer that is then applied 
 unchecked  
 the selected channel is processed individually.
 
-{% include thumbnail src='/media/Photo1.jpg' title='Photo1 original image'%} {% include thumbnail src='/media/Photo1-clahe-150-256-3.jpg' title='Photo1 CLAHE processed, (block: 150; bins: 256; max slope: 3)'%}
+{% include thumbnail src='/media/photo1.jpg' title='Photo1 original image'%} {% include thumbnail src='/media/photo1-clahe-150-256-3.jpg' title='Photo1 CLAHE processed, (block: 150; bins: 256; max slope: 3)'%}
 
-{% include thumbnail src='/media/Photo3.jpg' title='Photo2 original image'%} {% include thumbnail src='/media/Photo3-clahe-50-256-3.jpg' title='Photo2 CLAHE processed, (block: 50; bins: 256; max slope: 3)'%}
+{% include thumbnail src='/media/photo3.jpg' title='Photo2 original image'%} {% include thumbnail src='/media/photo3-clahe-50-256-3.jpg' title='Photo2 CLAHE processed, (block: 50; bins: 256; max slope: 3)'%}
 
 ## Tips
 

@@ -13,7 +13,7 @@ categories: Tutorials,Segmentation
 
 Image segmentation is "the process of partitioning a digital image into multiple segments." ({% include wikipedia title='Image segmentation' text='Wikipedia'%})
 
-![](/media/Segmentation-overlay.jpg "fig:Segmentation-overlay.jpg") ![](/media/Segmentation-boundaries.jpg "fig:Segmentation-boundaries.jpg")
+![](/media/segmentation-overlay.jpg "fig:Segmentation-overlay.jpg") ![](/media/segmentation-boundaries.jpg "fig:Segmentation-boundaries.jpg")
 
 It is typically used to locate *objects* and *boundaries*.
 
@@ -57,7 +57,7 @@ One plugin which is designed to be very powerful, yet easy to use for non-expert
         </ul>
       </td>
       <td>
-        <p><img src="/media/TWS-GUI-after-training.png" width="500"></p>
+        <p><img src="/media/tws-gui-after-training.png" width="500"></p>
       </td>
     </tr>
     <tr class="odd">
@@ -105,7 +105,7 @@ Ideally you want to use one of the auto-threshold methods, rather than manually 
 
 ## Creating Masks
 
-<figure><img src="/media/Eroded tree.png" title="Over-saturated mask is eroded around the center tree ring" width="300" alt="Over-saturated mask is eroded around the center tree ring" /><figcaption aria-hidden="true">Over-saturated mask is eroded around the center tree ring</figcaption></figure>
+<figure><img src="/media/eroded-tree.png" title="Over-saturated mask is eroded around the center tree ring" width="300" alt="Over-saturated mask is eroded around the center tree ring" /><figcaption aria-hidden="true">Over-saturated mask is eroded around the center tree ring</figcaption></figure>
 
 -   Select {% include bc path='Edit | Selection | Create Mask'%}
 -   Based on the image and set threshold, some portions of the image may be over/under saturated

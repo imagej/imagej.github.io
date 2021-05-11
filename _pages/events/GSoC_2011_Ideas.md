@@ -61,13 +61,13 @@ Implement a simple inpainting method (i.e. restore missing/unwanted parts of the
   <tbody>
     <tr class="odd">
       <td>
-        <p>{% include thumbnail src='/media/S2.png' title='Section 1'%}</p>
+        <p>{% include thumbnail src='/media/s2.png' title='Section 1'%}</p>
       </td>
       <td>
-        <p>{% include thumbnail src='/media/S1.png' title='Section 2'%}</p>
+        <p>{% include thumbnail src='/media/s1.png' title='Section 2'%}</p>
       </td>
       <td>
-        <p>{% include thumbnail src='/media/S3.png' title='Section 3'%}</p>
+        <p>{% include thumbnail src='/media/s3.png' title='Section 3'%}</p>
       </td>
     </tr>
   </tbody>
@@ -84,7 +84,7 @@ Other approaches are also welcome, such as using information from adjacent seria
 
 In life sciences, you often cope with round structures of interest. Such round structures can be cells, vesicles, nuclei or similarly shaped objects. While an ellipse might be a good initial fit, the final outline most certainly is not.
 
-{% include thumbnail src='/media/NucleiDAPIconfocal.png' title='center'%}
+{% include thumbnail src='/media/nucleidapiconfocal.png' title='center'%}
 
 It is important to keep in mind that the objects are clearly convex, as they sometimes overlap, and we still want to find the objects correctly. See the adjacent image for an example.
 

@@ -28,7 +28,7 @@ done by lunchtime' person=person gravatar='9e4ed4484fd425f3f178bfeed4777b31' sou
 
 We see that an input parameter `name` of type `String` is declared. `@Parameters` are handled automatically by the framework; if we run this script when the User Interface is available (e.g. from the script editor), the `name` parameter will automatically be harvested via a pop-up dialog:
 
-<img src="/media/ScriptParams.png" width="450"/>
+<img src="/media/scriptparams.png" width="450"/>
 
 We could also run this script [headlessly](/scripting/headless), thanks to the general nature of `@parameters`.
 
@@ -71,7 +71,7 @@ Different styles are also possible.
     #@ Integer (label="Slider integer style", style="slider", min=0, max=10, stepSize=2) myint2
     #@ Float   (label="Slider with float", style="slider", min=0, max=1, stepSize=0.1) myfloat
 
-<img src="/media/ScriptParameters-IntegerStyles.JPG" width="450"/>
+<img src="/media/scriptparameters-integerstyles.jpg" width="450"/>
 
 ## Parameter properties
 
@@ -128,12 +128,12 @@ This property set if the parameter should be displayed, editable and/or recorded
 
 \- MESSAGE: parameter value is intended as a message only, not editable by the user nor included as an input or output parameter. The option `required` should be set to false.
 
-![](/media/ScriptParam MESSAGEstring.JPG "ScriptParam_MESSAGEstring.JPG")
+![](/media/scriptparam-messagestring.jpg "ScriptParam_MESSAGEstring.JPG")
 
     #@ String (visibility=MESSAGE, value="This is a documentation line", required=false) msg
     #@ Integer (label="Some integer parameter") my_int
 
-You can [use HTML](https://forum.image.sc/t/multiline-messages-in-dialog-widgets/183) to format the message string, for example: ![](/media/ScijavaMultilineMessage.png "fig:ScijavaMultilineMessage.png")
+You can [use HTML](https://forum.image.sc/t/multiline-messages-in-dialog-widgets/183) to format the message string, for example: ![](/media/scijavamultilinemessage.png "fig:ScijavaMultilineMessage.png")
 
     #@ String (visibility=MESSAGE, value="<html>Message line 1<br/>Message line 2<p>Let's make a list<ul><li>item a</li><li>item b</li></ul></html>") docmsg
     #@ Integer anIntParam
@@ -151,7 +151,7 @@ The choice widget can have different styles like dropdown list or radio buttons.
     print(myChoice123)
     print(myChoiceABC)
 
-![](/media/Input-styles.png "Input-styles.png")
+![](/media/input-styles.png "Input-styles.png")
 
 ### Files and Folders
 

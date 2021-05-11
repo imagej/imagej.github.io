@@ -29,7 +29,7 @@ For advanced fusion options, select the desired views to be fused in the main wi
 
 This will bring up a new dialog showing the fusion options:
 
-![](/media/BigStitcher Fusion 1.png "BigStitcher_Fusion_1.png")
+![](/media/bigstitcher-fusion-1.png "BigStitcher_Fusion_1.png")
 
 -   **Bounding Box:** Here, you can select which sub-volume ([Bounding Box](/plugins/bigstitcher/boundingbox)) of the dataset to fuse. The options **All Views** and **Currently Selected Views** are always available, even if you did not manually specify a bounding box.
 

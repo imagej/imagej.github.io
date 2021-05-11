@@ -41,7 +41,7 @@ Open the image with the beads and navigate to the 'Plugins' &gt; 'Radial Symmetr
 
 You will see the dialog window:
 
-<figure><img src="/media/Calculate-anisotropy-coefficient.png" title="Calculate-anisotropy-coefficient.png" height="300" alt="Calculate-anisotropy-coefficient.png" /><figcaption aria-hidden="true">Calculate-anisotropy-coefficient.png</figcaption></figure>
+<figure><img src="/media/calculate-anisotropy-coefficient.png" title="Calculate-anisotropy-coefficient.png" height="300" alt="Calculate-anisotropy-coefficient.png" /><figcaption aria-hidden="true">Calculate-anisotropy-coefficient.png</figcaption></figure>
 
 Choose the image for detection and set 'Gauss Fit' as a detection method. You can also try to use Radial Symmetry as a detection method but in this case Gauss fit gives better results.
 
@@ -49,7 +49,7 @@ Once ok is pressed you will see 2 windows:
 
 <figure><img src="/media/Adjust-difference-of-gaussian-values.png" title="Adjust-difference-of-gaussian-values.png" height="300" alt="Adjust-difference-of-gaussian-values.png" /><figcaption aria-hidden="true">Adjust-difference-of-gaussian-values.png</figcaption></figure>
 
-<figure><img src="/media/One-spot-overlay.png" title="One-spot-overlay.png" height="500" alt="One-spot-overlay.png" /><figcaption aria-hidden="true">One-spot-overlay.png</figcaption></figure>
+<figure><img src="/media/one-spot-overlay.png" title="One-spot-overlay.png" height="500" alt="One-spot-overlay.png" /><figcaption aria-hidden="true">One-spot-overlay.png</figcaption></figure>
 
 Adjust 'Sigma' and 'Threshold' values so that only beads are detected.
 
@@ -73,7 +73,7 @@ Open the image and navigate to the 'Plugins' menu under 'Radial Symmetry Localiz
 
 Window will pop up.
 
-<figure><img src="/media/Radial-symmetry-initital-gui-ransac-on.png" title="Radial-symmetry-initital-gui-ransac-on.png" height="500" alt="Radial-symmetry-initital-gui-ransac-on.png" /><figcaption aria-hidden="true">Radial-symmetry-initital-gui-ransac-on.png</figcaption></figure>
+<figure><img src="/media/radial-symmetry-initital-gui-ransac-on.png" title="Radial-symmetry-initital-gui-ransac-on.png" height="500" alt="Radial-symmetry-initital-gui-ransac-on.png" /><figcaption aria-hidden="true">Radial-symmetry-initital-gui-ransac-on.png</figcaption></figure>
 
 Ensure that the correct image is chosen.
 
@@ -105,7 +105,7 @@ Difference of Gaussian window to adjust the corresponding parameters. This windo
 
 RANSAC window is the 'main' window of the whole plugin. Therefore, we will give a more detailed explanation for the parameters here.
 
-<figure><img src="/media/Interactive-adjust-ransac-values.png" title="Interactive-adjust-ransac-values.png" height="500" alt="Interactive-adjust-ransac-values.png" /><figcaption aria-hidden="true">Interactive-adjust-ransac-values.png</figcaption></figure>
+<figure><img src="/media/interactive-adjust-ransac-values.png" title="Interactive-adjust-ransac-values.png" height="500" alt="Interactive-adjust-ransac-values.png" /><figcaption aria-hidden="true">Interactive-adjust-ransac-values.png</figcaption></figure>
 
 'Support region radius' defines the radius of the spots we are looking for. You might want to play with this parameter. Sometimes it is useful to increase the radius and decrease the inlier ratio at the same time.
 
@@ -123,9 +123,9 @@ Once the parameters are adjusted hit any of the 'Done' buttons and wait a bit wh
 
 You will see the result table with the coordinates, time, channel and intensity values in the corresponding columns.
 
-<figure><img src="/media/Histogram-detections.png" title="Histogram-detections.png" height="400" alt="Histogram-detections.png" /><figcaption aria-hidden="true">Histogram-detections.png</figcaption></figure>
+<figure><img src="/media/histogram-detections.png" title="Histogram-detections.png" height="400" alt="Histogram-detections.png" /><figcaption aria-hidden="true">Histogram-detections.png</figcaption></figure>
 
-<figure><img src="/media/Results-interactive.png" title="Results-interactive.png" height="400" alt="Results-interactive.png" /><figcaption aria-hidden="true">Results-interactive.png</figcaption></figure>
+<figure><img src="/media/results-interactive.png" title="Results-interactive.png" height="400" alt="Results-interactive.png" /><figcaption aria-hidden="true">Results-interactive.png</figcaption></figure>
 
 Besides that you will get 2 images: one of them showing the overlay of the initial image with the regions that we used for the spots search, another one showing the 3D overlay for the detected spots.
 
@@ -137,6 +137,6 @@ In the manual mode you can skip all the hassle of the parameters adjustment and 
 
 After you choose 'Parameters's mode' manual in the 'Setup window' you will see all the parameters you have set already in the interactive mode. All you have to do now is to press 'OK' button and wait for the results.
 
-<figure><img src="/media/Manual-set-parameters.png" title="Manual-set-parameters.png" height="400" alt="Manual-set-parameters.png" /><figcaption aria-hidden="true">Manual-set-parameters.png</figcaption></figure>
+<figure><img src="/media/manual-set-parameters.png" title="Manual-set-parameters.png" height="400" alt="Manual-set-parameters.png" /><figcaption aria-hidden="true">Manual-set-parameters.png</figcaption></figure>
 
-<figure><img src="/media/Results-interactive.png" title="Results-interactive.png" height="400" alt="Results-interactive.png" /><figcaption aria-hidden="true">Results-interactive.png</figcaption></figure>
+<figure><img src="/media/results-interactive.png" title="Results-interactive.png" height="400" alt="Results-interactive.png" /><figcaption aria-hidden="true">Results-interactive.png</figcaption></figure>

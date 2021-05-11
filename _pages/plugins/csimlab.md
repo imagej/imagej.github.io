@@ -19,7 +19,7 @@ title: CSIMLab
 
 Promote plugins, macros and scripts created by the Computing in Signal and Image in Medicine research group (CSIM). All the code implemented here have a specific applications, where are related with the basic image analysis such as image filtering, registration, feature extraction and others. Please, be free to install our plugins, macros and scripts from the ImageJ Updater or even contribute with our codes on GitHub repository ({% include github org='CSIM-Toolkits' repo='ImageJ' label='GitHub CSIM-ImageJ repository' %}).
 
-{% include thumbnail src='/media/CSIM-logo.png' title='CSIM Laboratory. See more details about our research group in the web site: http://dcm.ffclrp.usp.br/csim'%}
+{% include thumbnail src='/media/csim-logo.png' title='CSIM Laboratory. See more details about our research group in the web site: http://dcm.ffclrp.usp.br/csim'%}
 
 ## Available Methods
 

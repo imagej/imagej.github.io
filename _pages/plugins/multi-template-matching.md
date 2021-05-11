@@ -18,7 +18,7 @@ categories: Plugins,Citable,Feature Extraction,Jython,Object Detection
 {% endcapture %}
 {% include info-box software='ImageJ' name='Multi-Template Matching' author=author maintainer=maintainer update-site='Multi-Template-Matching' source=source released='2019' status='active' category='[Analysis](Category_Analysis) [Feature Extraction](Category_Feature_Extraction)' %}
 
-<img src="/media/Multi-Template-Matching-MontageGUI.png" width="800"/>
+<img src="/media/multi-template-matching-montagegui.png" width="800"/>
 
 # Installation
 

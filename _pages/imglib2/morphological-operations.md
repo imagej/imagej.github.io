@@ -84,7 +84,7 @@ Each of these classes contains only static methods that performs the desired ope
 
     Img< FloatType > result = Dilation.dilate( img, strel, 1 );
 
-<img src="/media/DilatedToNewImgExample.png" width="600"/>
+<img src="/media/dilatedtonewimgexample.png" width="600"/>
 
 -   You want to perform to **full** dilation or erosion on a source Img. Full version of these operations means the new image will have a size increased or shrunk as if the structuring element would actually dilate or erode the source border:
 
@@ -92,7 +92,7 @@ Each of these classes contains only static methods that performs the desired ope
 
     Img< FloatType > result = Dilation.dilateFull( img, strel, 1 );
 
-<img src="/media/DilatedToNewFullImgExample.png" width="600"/>
+<img src="/media/dilatedtonewfullimgexample.png" width="600"/>
 
 -   You want to operate on a source [RandomAccessibleInterval](https://github.com/imglib/imglib2/blob/master/src/main/java/net/imglib2/RandomAccessibleInterval.java), in place (write the results in the source):
 
@@ -100,7 +100,7 @@ Each of these classes contains only static methods that performs the desired ope
 
     Dilation.dilateInPlace( rai, interval, strel, 1 );
 
-<img src="/media/DilatedInPlaceExample.png" width="600"/>
+<img src="/media/dilatedinplaceexample.png" width="600"/>
 
 -   You want to operate on a source [RandomAccessible](https://github.com/imglib/imglib2/blob/master/src/main/java/net/imglib2/RandomAccessible.java), and write the results in a provided [IterableInterval](https://github.com/imglib/imglib2/blob/master/src/main/java/net/imglib2/IterableInterval.java):
 
@@ -108,7 +108,7 @@ Each of these classes contains only static methods that performs the desired ope
 
     Dilation.dilate( source, target, strel, 1 )
 
-<img src="/media/DilatedToTargetExample.png" width="600"/>
+<img src="/media/dilatedtotargetexample.png" width="600"/>
 
 Now, each of these category are declined in 4 specifics methods:
 

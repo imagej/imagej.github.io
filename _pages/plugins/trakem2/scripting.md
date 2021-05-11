@@ -503,10 +503,10 @@ Suppose for example that, using a [Ball object](http://t2.ini.uzh.ch/trakem2_man
   <tbody>
     <tr class="odd">
       <td>
-        <p>style="vertical-align:top" |{% include thumbnail src='/media/Synaptic-surface-and-vesicles.jpg' title='313|3D view of a synaptic surface and its vesicles'%}</p>
+        <p>style="vertical-align:top" |{% include thumbnail src='/media/synaptic-surface-and-vesicles.jpg' title='313|3D view of a synaptic surface and its vesicles'%}</p>
       </td>
       <td>
-        <p>style="vertical-align:top" |{% include thumbnail src='/media/Synaptic-surface-and-vesicles-measurements.png' title='323|Synaptic vesicle measurements of the minimal distance from each vesicle to the synaptic surface'%}</p>
+        <p>style="vertical-align:top" |{% include thumbnail src='/media/synaptic-surface-and-vesicles-measurements.png' title='323|Synaptic vesicle measurements of the minimal distance from each vesicle to the synaptic surface'%}</p>
       </td>
     </tr>
   </tbody>

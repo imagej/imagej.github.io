@@ -28,7 +28,7 @@ Purpose: The "Extended Particle Analyzer" is based on the ImageJ "Analyze Partic
 
 Example: If you want to extract/analyze only particles with a certain Feret's Angle or exclude elongated structures using the aspect ratio (AR) or circilarity you can specify so in the initial dialog box.
 
-<figure><img src="/media/ExtendedParticleAnalyzer v2.png" title="ExtendedParticleAnalyzer_v2.png" width="750" alt="ExtendedParticleAnalyzer_v2.png" /><figcaption aria-hidden="true">ExtendedParticleAnalyzer_v2.png</figcaption></figure>
+<figure><img src="/media/extendedparticleanalyzer-v2.png" title="ExtendedParticleAnalyzer_v2.png" width="750" alt="ExtendedParticleAnalyzer_v2.png" /><figcaption aria-hidden="true">ExtendedParticleAnalyzer_v2.png</figcaption></figure>
 
 How to: Key in minimal and maximal exclusion values connected with a hyphen. You can use integers as well as numbers containing decimal places. "Redirect" redirects the analysis to a grayscale image which enables to analyze skewness, kurtosis as well as the new measure coefficient of variance (cov). The option "Keep borders (correction)" eliminates particles from 2 edges and keeps particles touching the two borders of choice. This corrects the particle count for edge touching particles.
 
@@ -82,7 +82,7 @@ This macro helps to visually identify features in images according to their shap
 
 How to: Select analysis modes and start.
 
-<img src="/media/ShapeDescriptorMaps.png" width="750"/>
+<img src="/media/shapedescriptormaps.png" width="750"/>
 
 Form: macro
 
@@ -100,7 +100,7 @@ Example: A specific nuclear fluorescent staining is thresholded as the selector 
 
 How to: First, specify the images containing on the one hand the objects to extract and on the other hand the selectors (e.g. marker staining, cell masks) which defines the objects that should be extracted. The plugin then extracts the features which overlap with the selector. The "Overlap in percent" option enables to define a minimal overlap fraction (in percent) of the selector area with the object area (in exactly this sequence). The object is only extracted if the overlap is equal or bigger than the defined minimal overlap. Finally, you can define to show the count of objects, selectors and extracted features as well as display the individual results tables for the three different images (This is equal to run the "Analyze Particles..." on each of the images.
 
-<img src="/media/FeatureExtractor1.png" width="750"/>
+<img src="/media/featureextractor1.png" width="750"/>
 
 Status: plugin v1.0, can be run from the BioVoxxel Toolbox Menu, maintenance active
 
@@ -114,7 +114,7 @@ Purpose: The "Speckle Inspector" is able to identify bigger features by the numb
 
 How to: In the setup dialog the user can enter the 2 images to be analyzed as well as lower and upper limits of speckle numbers, speckle sizes, object size and object circularity to determine characteristics which include/exclude speckles and features from the analysis according to the entered parameters.
 
-<img src="/media/SpeckleInspector1.png" width="1200"/>
+<img src="/media/speckleinspector1.png" width="1200"/>
 
 The macro gives different outputs. The optical output is an color-coded image, where positive features (lying inbetween the determined minimum and maximum parameters) are colord in magenta, features containing less than the specified minimum speckle numbers are colored in blue and features containing more than the specified maximum speckle numbers are colored in green. In the same image the features are numbered to identify them in the respective speckle list as well as the ROI manager. Furthermore, they contain the number of "speckles" per feature in brackets. The second output are all feature selection ROIs in the ImageJ/Fiji ROI manager. Moreover a list of all features and respective speckle numbers is given if "show speckle list" was ticked. The "statistics log" window depicts an analysis of the features showing overall numbers of features and speckles as well as the numbers for the features lying below, inbetween, and above the thresholds. You can also choose if you want to see the RoiManager for the objects rois to further analyze the original image. "individual roi analysis" returns a results table which contains the analyzed particles inside each roi (the latter is indicated in the results "Label" column).
 
@@ -132,7 +132,7 @@ Future: suggestions are welcome!
 
 Purpose: The standard watershed algorithm in ImageJ is very usefull to separate connected, roughly circular structures. Nevertheless, it gets into trouble while separating irregular (non-ellipsoid like) structures. The Irregular Watershed enables the user to separate also irregular shaped structures to a certain extend.
 
-<img src="/media/Watershed Irregular Features.png" width="770"/>
+<img src="/media/watershed-irregular-features.png" width="770"/>
 
 How to: The user needs to specify one of two parameters:
 
@@ -156,7 +156,7 @@ Future: Suggestions are welcome!
 
 Purpose: The standard binary erosion and dilation suffers from the artefact that under higher iteration cycles the binary structures get irregularly deformed (see image below, second column). The EDM based methods for erosion and dilation prevent these artifacts. The method is using thresholding on a 8-bit euclidean distance map of the original image to facilitate binary erosion, dilation, opening and closing.
 
-<img src="/media/EDMErosionDilation.png" width="600"/>
+<img src="/media/edmerosiondilation.png" width="600"/>
 
 How to: The number of iterations determines how often the chosen function will be applied to the image.
 
@@ -190,7 +190,7 @@ How to: The user needs to first select the image the in which the thresholds sho
 
 Output interpretation: You will get a stack with each thresholding method represented in a single stack slice. The following colors should help in interpreting the thresholding result:
 
-<img src="/media/ThresholdCheck.png" width="770"/>
+<img src="/media/thresholdcheck.png" width="770"/>
 
 **blue** = this is thresholded as background and also represents black or very dark areas in the original image, thus most likely beeing really background.
 
@@ -230,7 +230,7 @@ Purpose: This plugin enables you to test a certain range of radii of a specified
 
 How to: Choose a filter method from the drop down menu, key in a starting and an end radius. The image will be filtered in individual integer steps between the start and stop radius and presented in an image stack containing all the filtered images. The filter can also be applied to only a ROI. This is recommended for filters which are cost intensive, like the "Gaussian Weighted Median". The parameter setting is only needed for the "Bilateral Filter" (range radius) , "Mean Shift Filter" (Color Distance) and the "Linear Kuwahara" (line length).
 
-<figure><img src="/media/Filter Check.png" title="Filter_Check.png" width="750" alt="Filter_Check.png" /><figcaption aria-hidden="true">Filter_Check.png</figcaption></figure>
+<figure><img src="/media/filter-check.png" title="Filter_Check.png" width="750" alt="Filter_Check.png" /><figcaption aria-hidden="true">Filter_Check.png</figcaption></figure>
 
 Form: plugin
 
@@ -268,7 +268,7 @@ How to: The user can choose between Gaussian, Median and Mean convolution filter
 
 Method: The convoluted images are directly subtracted from the original with exception of the median filtered one. The latter additionally receives a grayscale dilation by application of a maximum filter with the factor (1.5\*(radius/10)). This should reduce artifacts around object borders.
 
-<figure><img src="/media/Convoluted Background Subtraction.png" title="Convoluted_Background_Subtraction.png" width="750" alt="Convoluted_Background_Subtraction.png" /><figcaption aria-hidden="true">Convoluted_Background_Subtraction.png</figcaption></figure>
+<figure><img src="/media/convoluted-background-subtraction.png" title="Convoluted_Background_Subtraction.png" width="750" alt="Convoluted_Background_Subtraction.png" /><figcaption aria-hidden="true">Convoluted_Background_Subtraction.png</figcaption></figure>
 
 Distribution: plugin, recordable
 
@@ -282,7 +282,7 @@ Future: suggestions are welcome!
 
 Purpose: The tool creates a intensity plot along any kind of lines as well as from rectangular selections (as does {% include bc path='Analyze | Plot Profile'%}) but with the initial possibility to influence the displayed intensity scale. This enables to create plots which can be overlayed by choosing "add to existing plot". In the case of a rectangular selection it can be chosen if the plotting direction should be horizontal or vertical. The intensities along the other direction are then averaged. Additionally, the color and look of the plot line can be chosen. This should enable to better compare intensity plots from different images or selections which is only possible if they have the same scaling. The latter is done in unscaled units (pixels). If a new plot line is added to an existing plot the choice "Draw grid lines" is either ignored or forced depending on how the destination plot was created using the same tool.
 
-<img src="/media/ScaledIntensityPlots.png" width="750"/>
+<img src="/media/scaledintensityplots.png" width="750"/>
 
 Form: macro
 
@@ -296,7 +296,7 @@ Purpose: The stack line plot enables to make line plots over a complete stack of
 
 How To: The line can be either straight, freehand or segmented and needs to be drawn beforehand. If the input image is a hyperstack the user can choose to plot over the z-slice or the t-frame range. In such a case the intensities of the active channel are taken for the plot. The macro automatically creates a stack of plots along the line selection with the upper intensity limit set at the highest intensity occurring along the line over all images. If the \[Shift\] key is held down before and while going to &gt;BioVoxxel Icon &gt;Stack Line Plots the limit is set to 255 for 8-bit images and 65535 for 16-bit images
 
-<img src="/media/StackLinePlots.png" width="750"/>
+<img src="/media/stacklineplots.png" width="750"/>
 
 Form: macro
 
@@ -338,7 +338,7 @@ Purpose: The recursive filters plugin allows to repetitively apply one of the th
 
 The maximum iteration can be set by the user up to 500 times but will be stopped if two consecutive filtered images do not show any further difference.
 
-<img src="/media/RecursiveFilters01.png" width="500"/>
+<img src="/media/recursivefilters01.png" width="500"/>
 
 Form: recordable plugin
 
@@ -382,7 +382,7 @@ How to: Specify the analysis parameters (same input as for "Analyze Particles...
 
 Methods: "Voronoi" analyzes the paticles according to the directly correlated voronoi map. "UEP Voronoi" uses the voronoi map from the ultimate eroded points of the particles. This might underestimate the real number of neighbors and is rather suitable for roundish structures. "Centroid Neighborhood" analyzes an area corresponding to a circle with the specified neighborhood radius around the centroid of each particle. "Particle Neighborhood" analyzes also an area around each particle with the specified radius as distance to the particle border.
 
-<img src="/media/NeighborAnalysis.png" width="750"/>
+<img src="/media/neighboranalysis.png" width="750"/>
 
 Form: macro
 
@@ -404,7 +404,7 @@ Method: The UEPs of the particles are generated and the nearest neighbor distanc
 
 **BE AWARE:** This tool estimates the type of clustering or exclusion since it does not take non-isotropic shape into account and WORKS ONLY on complete, rectangular images and NOT inside irregular ROIs. This might be changed in future.
 
-<img src="/media/DistributionAnalysis.png" width="750"/>
+<img src="/media/distributionanalysis.png" width="750"/>
 
 Form: macro
 
@@ -448,7 +448,7 @@ Clusters overlapping (at least 1 pixel) can also be fused to one cluster if spec
 
 Consider that the detector size as well as density settings influence if a cluster is found and finally accepted as a cluster. This on the one hand leads to a certain bias but should enable the user to search for clusters of different sizes and densities.
 
-<img src="/media/ClusterIndicator.png" width="750"/>
+<img src="/media/clusterindicator.png" width="750"/>
 
 Method: Circle ROIs of the specified size are initially distributed with sufficient overlap to cover the complete image. The cluster finding process is done according to the mean shift method towards the center of mass of clusters. The latter is influenced by particle number, size and neighbor distance.
 
@@ -474,7 +474,7 @@ Output: A copy of the original image is created with the particle of interest (P
 
 Method: As measure for the distance between the particles the minimum separation distance is taken by analysis of the intensity coded Voronoi cell algorithm of ImageJ. The lowest non-background intensity is used to indicate the nearest neighbor.
 
-<img src="/media/NearestNeighborIndicator.png" width="750"/>
+<img src="/media/nearestneighborindicator.png" width="750"/>
 
 Form: macro
 

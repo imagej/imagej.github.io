@@ -12,10 +12,10 @@ artifact: sc.fiji:Skeletonize3D\_
   <tbody>
     <tr class="odd">
       <td>
-        <p>style="vertical-align:top" |{% include thumbnail src='/media/Smoothed-bat-cochlea-volume.gif' title='Smoothed bat cochlea volume'%}</p>
+        <p>style="vertical-align:top" |{% include thumbnail src='/media/smoothed-bat-cochlea-volume.gif' title='Smoothed bat cochlea volume'%}</p>
       </td>
       <td>
-        <p>style="vertical-align:top" |{% include thumbnail src='/media/Skeleton-bat-cochlea-volume.gif' title='3D skeleton from bat cochlea volume'%}</p>
+        <p>style="vertical-align:top" |{% include thumbnail src='/media/skeleton-bat-cochlea-volume.gif' title='3D skeleton from bat cochlea volume'%}</p>
       </td>
     </tr>
   </tbody>

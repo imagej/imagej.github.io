@@ -55,11 +55,11 @@ This plugin is designed for two-dimensional serial sections.
 
 The Cluster user interface will open. The cluster must be configured before it may be started.
 
-<img src="/media/Archipelago 01.png" width="300"/>
+<img src="/media/archipelago-01.png" width="300"/>
 
 #### Configure the Root Node
 
-<img src="/media/Archipelago 02.png" width="500"/>
+<img src="/media/archipelago-02.png" width="500"/>
 
 -   Click the Configure Root Node... button
     -   Local Exec Root: The folder containing your local fiji (or ImageJ) executable. This field may disappear in future versions.
@@ -82,7 +82,7 @@ The default is the SSH Shell method, which uses standard IO over ssh for communi
 
 The other option is the Insecure Socket Shell method, which starts the remote nodes by ssh and causes them to connect to an insecure server running on the root node. This may be faster, but should not be used on an unprotected network.
 
-<img src="/media/Archipelago 03.png" width="500"/>
+<img src="/media/archipelago-03.png" width="500"/>
 
 -   Click Configure Cluster Nodes...
 
@@ -90,7 +90,7 @@ This will open the cluster node configuration window
 
 -   Click Add Node...
 
-<img src="/media/Archipelago 04.png" width="500"/>
+<img src="/media/archipelago-04.png" width="500"/>
 
 This will open a dialog for adding a new cluster node, with the following fields:
 
@@ -150,7 +150,7 @@ To allow "volunteer nodes" to attach, click the Start Insecure Server button. Th
 
 #### Show Node Statistics
 
-<img src="/media/Archipelago 05.png" width="500"/>
+<img src="/media/archipelago-05.png" width="500"/>
 
 Clicking the Show Node Statistics button will open a dialog that displays usage stats for running client nodes:
 

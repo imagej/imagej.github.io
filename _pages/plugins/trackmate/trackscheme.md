@@ -6,13 +6,13 @@ categories: Tutorials
 
 TrackScheme displays a kind of "track map", where a track is laid on pane, arranged vertically over time, as a Parisian subway train map. Each spot is displayed as a cell in the map. Each cell displays a thumbnail of the spot.
 
-<figure><img src="/media/TrackScheme Start.png" title="TrackScheme_Start.png" width="700" alt="TrackScheme_Start.png" /><figcaption aria-hidden="true">TrackScheme_Start.png</figcaption></figure>
+<figure><img src="/media/trackscheme-start.png" title="TrackScheme_Start.png" width="700" alt="TrackScheme_Start.png" /><figcaption aria-hidden="true">TrackScheme_Start.png</figcaption></figure>
 
 ## TrackScheme in a nutshell
 
 You can do quite some things using TrackScheme, notably track analysis. This is not the focus of this tutorial, we will simply be focusing on the track editing features. However, here is a brief description of what the toolbar buttons do.
 
-![](/media/TrackSchemeToolbarExplanation.png "TrackSchemeToolbarExplanation.png")
+![](/media/trackschemetoolbarexplanation.png "TrackSchemeToolbarExplanation.png")
 
 We will be mainly using the **Redo layout** and button.
 

@@ -5,7 +5,7 @@ title: Stitching data acquisition
 
 # Wiscan Data Acquisition
 
-<figure><img src="/media/OWS 1.jpg" title="Microscope setup" width="300" alt="Microscope setup" /><figcaption aria-hidden="true">Microscope setup</figcaption></figure>
+<figure><img src="/media/ows-1.jpg" title="Microscope setup" width="300" alt="Microscope setup" /><figcaption aria-hidden="true">Microscope setup</figcaption></figure>
 
 1.  Make sure the image being used has been set up correctly:
     1.  On the computer, click and hold the shutter button until it turns yellow. The shutter is now activated
@@ -121,7 +121,7 @@ Once Wiscan has run, your output will be a series of images that can be stitched
 
 1.  Fill in the Dimensions of X and Y in \#X and \#Y respectively
 
-<figure><img src="/media/OverlappedGrid.png" title="OverlappedGrid.png" width="250" alt="OverlappedGrid.png" /><figcaption aria-hidden="true">OverlappedGrid.png</figcaption></figure>
+<figure><img src="/media/overlappedgrid.png" title="OverlappedGrid.png" width="250" alt="OverlappedGrid.png" /><figcaption aria-hidden="true">OverlappedGrid.png</figcaption></figure>
 
 <li>
 
@@ -149,7 +149,7 @@ Select "OK"
 
 ### Calculating grid using total sample size
 
-<figure><img src="/media/SampleSize.png" title="SampleSize.png" width="250" alt="SampleSize.png" /><figcaption aria-hidden="true">SampleSize.png</figcaption></figure>
+<figure><img src="/media/samplesize.png" title="SampleSize.png" width="250" alt="SampleSize.png" /><figcaption aria-hidden="true">SampleSize.png</figcaption></figure>
 
 1.  Enter the total size dimensions of your stitched image in microns into the "Total Size" boxes
 2.  Enter the step size or the overlap for you stitched images and select "Calculate total size from \# Pos"
@@ -159,7 +159,7 @@ Select "OK"
 
 1.  Determine your step size using either a pre-calculated value or the overlap slider
 
-<figure><img src="/media/StageGrid.png" title="StageGrid.png" width="250" alt="StageGrid.png" /><figcaption aria-hidden="true">StageGrid.png</figcaption></figure>
+<figure><img src="/media/stagegrid.png" title="StageGrid.png" width="250" alt="StageGrid.png" /><figcaption aria-hidden="true">StageGrid.png</figcaption></figure>
 
 <li>
 

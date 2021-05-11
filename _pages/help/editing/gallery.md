@@ -13,7 +13,7 @@ description: This page demonstrates how to insert a gallery.
 /images/pic02.jpg | Example 2
 /images/pic03.jpg | Example 3
 /images/pic04.jpg | Example 4
-/media/Imagej2-icon.png | ImageJ!
+/media/imagej2-icon.png | ImageJ!
 "
 %}
 ```
@@ -25,6 +25,6 @@ description: This page demonstrates how to insert a gallery.
 /images/pic02.jpg | Example 2
 /images/pic03.jpg | Example 3
 /images/pic04.jpg | Example 4
-/media/Imagej2-icon.png | ImageJ!
+/media/imagej2-icon.png | ImageJ!
 "
 %}

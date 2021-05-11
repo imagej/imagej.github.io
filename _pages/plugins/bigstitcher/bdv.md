@@ -9,7 +9,7 @@ If your dataset is in a format suitable for quick visualization by [BigDataViewe
 
 For help on using BigDataViewer, you can either click {% include bc path='Help|Show Help'%} in the BigDataViewer window or consult the BigDataViewer [documentation](/plugins/bdv#usage) on this Wiki.
 
-{% include thumbnail src='/media/BigStitcher BDV Colormode.png' title='Toggle per-view and per-channel coloring by pressing **c** in the main window.'%}
+{% include thumbnail src='/media/bigstitcher-bdv-colormode.png' title='Toggle per-view and per-channel coloring by pressing **c** in the main window.'%}
 
 In the BigDataViewer window accompanying the BigStitcher, you can switch between color schemes by pressing {% include key key='c' %} in the BigSitcher main window. A single press will switch between per-view and per-channel coloring. Pressing {% include key key='c' %} repeatedly will cycle through different colors.
 

@@ -5,4 +5,4 @@ title: MTrack-Ransac fits
 
 Below we show some examples of Ransac fits on the trajectories obtained using the simple mode of Mtrack. In red are the inliers found using the [MTrack-RANSAC models](/plugins/mtrack/ransac-models) and in green and blue are the line fits on the inliers to determine the rates.
 
-<img src="/media/ExampleA.png" width="300"/> <img src="/media/ExampleB.png" width="300"/> <img src="/media/ExampleC.png" width="300"/> <img src="/media/ExampleD.png" width="300"/> <img src="/media/ExampleE.png" width="300"/>
+<img src="/media/examplea.png" width="300"/> <img src="/media/exampleb.png" width="300"/> <img src="/media/examplec.png" width="300"/> <img src="/media/exampled.png" width="300"/> <img src="/media/examplee.png" width="300"/>

@@ -6,7 +6,7 @@ categories: Software
 
 {% include info-box software='ImageJ' name='Adiposoft' author=' [CIMA](https://cima.unav.edu/) , [University of Navarra](http://www.unav.edu/) .' maintainer='[Mikel Ariz](mailto:mikelariz@unav.es)' released='April 2012' latest-version='January 2019' status='stable, active' publications=' [JLR](http://www.jlr.org/content/53/12/2791.short)' category='[Segmentation](Category_Segmentation)' %}
 
-<img src="/media/Screenshot1.jpg" width="350"/>
+<img src="/media/screenshot1.jpg" width="350"/>
 
 **Adiposoft** is an automated Open Source software for the analysis of adipose tissue cellularity in histological sections. Adiposoft has been developed as a plug-in for Fiji (advanced distribution of ImageJ) that can be run under Windows, Linux or macOS. The software, that can be downloaded and used with no license restrictions, was developed at the Imaging Unit of the Center for Applied Medical Research ([CIMA](https://cima.unav.edu/)), [University of Navarra](http://www.unav.edu/).
 
@@ -16,7 +16,7 @@ A **paper validating Adiposoft** was published by [Journal of Lipid Research](ht
 
 The accurate estimation of the number and size of adipocytes provides relevant information about the growth kinetics and the physiological status of a given tissue or organ. Adiposoft is an automated, open source software for the analysis of white adipose tissue cellularity on histological, hematoxylin and eosin (H&E) stained sections.
 
-<img src="/media/Datasetim.png" width="500"/>
+<img src="/media/datasetim.png" width="500"/>
 
 ## Download and Installation
 

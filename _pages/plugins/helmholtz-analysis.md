@@ -17,14 +17,14 @@ With an artificial example input like this:
 
 and parameters like this:
 
-![](/media/HelmholtzDialog.png "HelmholtzDialog.png")
+![](/media/helmholtzdialog.png "HelmholtzDialog.png")
 
 the Helmholtz Analysis plugin produces the local estimates:
 
-<img src="/media/HelmholtzAnalysisOutput.png" width="750"/>
+<img src="/media/helmholtzanalysisoutput.png" width="750"/>
 
 and the smoothed versions thereof:
 
-<img src="/media/HelmholtzAnalysisAverageOutput.png" width="750"/>
+<img src="/media/helmholtzanalysisaverageoutput.png" width="750"/>
 
 

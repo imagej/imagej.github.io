@@ -11,7 +11,7 @@ This plugin takes in an image of muscle fibers, outlines and numbers all of the
 fibers, and outputs a table of each fiber's area as well as an RGB Color image
 of the numbered fiber outlines on a black background.
 
-<img src="/media/Fibers.png" title="fig:Input Image" width="300" alt="Input Image" /> <img src="/media/FiberOutlines.png" title="fig:Output Image" width="300" alt="Output Image" />
+<img src="/media/fibers.png" title="fig:Input Image" width="300" alt="Input Image" /> <img src="/media/fiberoutlines.png" title="fig:Output Image" width="300" alt="Output Image" />
 
 ## Installation
 

@@ -19,7 +19,7 @@ A pseudo-colored image has a single channel, (i.e. grey) image that has color as
 
 The colors in RGB images (24-bit with 8-bits for each of the red, green and blue channels) are used to show multi-channel images. The colors are designed to reflect genuine colors (i.e. the green in an RGB image reflects green color in the specimen). There are several RGB functions in Fiji. Native functions can be found in {% include bc path="Image|Color" %}.
 
-![](/media/24bit rgb images.jpg "24bit_rgb_images.jpg")
+![](/media/24bit-rgb-images.jpg "24bit_rgb_images.jpg")
 
 ### Color Composite Images
 

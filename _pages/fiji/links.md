@@ -32,7 +32,7 @@ Links to the contributors' personal pages can be found [here](/about/contributor
   <tbody>
     <tr class="odd">
       <td>
-        <p><img src="/media/Knime-logo.jpg" width="150"></p>
+        <p><img src="/media/knime-logo.jpg" width="150"></p>
       </td>
       <td>
         <p>The <a href="http://tech.knime.org/community/image-processing">Konstanz kNowledge Information Mining Environment</a>.</p>
@@ -40,7 +40,7 @@ Links to the contributors' personal pages can be found [here](/about/contributor
     </tr>
     <tr class="even">
       <td>
-        <p><img src="/media/Mm-icon.jpg" width="150"></p>
+        <p><img src="/media/mm-icon.jpg" width="150"></p>
       </td>
       <td>
         <p>valign=center|<a href="http://micro-manager.org/">µManager</a> is an extensive software suite to interact with microscopes. It integrates nicely as an ImageJ plugin ({% include bc path='Plugins | Micro-Manager | Micro-Manager Studio'%}).</p>
@@ -48,7 +48,7 @@ Links to the contributors' personal pages can be found [here](/about/contributor
     </tr>
     <tr class="odd">
       <td>
-        <p><img src="/media/OpenSPIM-logo.png" width="150"></p>
+        <p><img src="/media/openspim-logo.png" width="150"></p>
       </td>
       <td>
         <p><a href="http://openspim.org/">OpenSPIM</a> is an Open Access and Open Source project to make Single Plane Illumination Microscopy (SPIM) accessible to researchers working with, or on, SPIM technology.</p>
@@ -56,7 +56,7 @@ Links to the contributors' personal pages can be found [here](/about/contributor
     </tr>
     <tr class="even">
       <td>
-        <p><img src="/media/SlideSet-logo.png" width="90"></p>
+        <p><img src="/media/slideset-logo.png" width="90"></p>
       </td>
       <td>
         <p><a href="http://b.nanes.org/slideset/">Slide Set</a> is a batch processing system for ImageJ, already leveraging the power of <a href="/software/imagej2">ImageJ2</a>.</p>

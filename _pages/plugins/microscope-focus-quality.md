@@ -7,7 +7,7 @@ artifact: sc.fiji:microscope-image-quality
 
  
 
-<img src="/media/Mifqc.png" width="900"/> 
+<img src="/media/mifqc.png" width="900"/> 
 
 This plugin assesses the focus quality of microscope images, classifying the image in tiles.
 

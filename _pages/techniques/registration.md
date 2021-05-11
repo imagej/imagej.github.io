@@ -52,7 +52,7 @@ Here we summarize some of the Registration plugins in ImageJ.
         </ul>
       </td>
       <td>
-        <p><img src="/media/Tem-42-33-f.png" width="500"> MOPS feature correspondences (example 1)</p>
+        <p><img src="/media/tem-42-33-f.png" width="500"> MOPS feature correspondences (example 1)</p>
       </td>
     </tr>
     <tr class="odd">
@@ -104,7 +104,7 @@ Here we summarize some of the Registration plugins in ImageJ.
         </ul>
       </td>
       <td>
-        <p><img src="/media/Trakem2-snap.jpg" width="500"></p>
+        <p><img src="/media/trakem2-snap.jpg" width="500"></p>
       </td>
     </tr>
     <tr class="even">

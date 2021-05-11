@@ -8,7 +8,7 @@ categories: Plugins
 {% capture source%}
 {% include github org='stardist' repo='stardist-imagej' %}
 {% endcapture %}
-{% include info-box name='StarDist' software='ImageJ' update-site='StarDist' author='Uwe Schmidt, Martin Weigert' maintainer='Uwe Schmidt, Martin Weigert' source=source website='https://github.com/mpicbg-csbd/stardist' %} <img src="/media/StarDist logo.jpg" width="128"/>
+{% include info-box name='StarDist' software='ImageJ' update-site='StarDist' author='Uwe Schmidt, Martin Weigert' maintainer='Uwe Schmidt, Martin Weigert' source=source website='https://github.com/mpicbg-csbd/stardist' %} <img src="/media/stardist-logo.jpg" width="128"/>
 
 ## Overview
 
@@ -16,7 +16,7 @@ This is the ImageJ/Fiji plugin for [StarDist](https://github.com/mpicbg-csbd/sta
 
 *The plugin currently only supports 2D image and time lapse data. If you have 3D data, please use our [python library](https://github.com/mpicbg-csbd/stardist).*
 
-<img src="/media/Stardist screenshot small.jpg" width="640"/>
+<img src="/media/stardist-screenshot-small.jpg" width="640"/>
 
 ## Installation
 
@@ -25,7 +25,7 @@ This is the ImageJ/Fiji plugin for [StarDist](https://github.com/mpicbg-csbd/sta
 3.  Click on the button `Manage update sites`.
 4.  Scroll down the list and tick the checkboxes for update sites `CSBDeep` and `StarDist`, then click the `Close` button.  
     (If `StarDist` is missing, click `Update URLs` to refresh the list of update sites.)  
-    <img src="/media/StarDist update site2.png" width="320"/><img src="/media/StarDist update site.png" width="320"/>
+    <img src="/media/stardist-update-site2.png" width="320"/><img src="/media/stardist-update-site.png" width="320"/>
 5.  Click on `Apply changes` to install the plugin.
 6.  Restart Fiji.
 
@@ -35,7 +35,7 @@ This is the ImageJ/Fiji plugin for [StarDist](https://github.com/mpicbg-csbd/sta
 
 Open the image that should be segmented. Note, that currently only 2D and 2D+time images are supported. Suitable test images can for instance be found at the [Broad Bioimage Benchmark Collection](https://data.broadinstitute.org/bbbc/BBBC008/BBBC008_v1_images.zip)[1]:
 
-<img src="/media/StarDist usage input.png" height="240"/>
+<img src="/media/stardist-usage-input.png" height="240"/>
 
 Start the plugin from `Plugins > StarDist > StarDist 2D`. The following parameters can be set:
 
@@ -105,7 +105,7 @@ Start the plugin from `Plugins > StarDist > StarDist 2D`. The following paramete
 
 Example of running the plugin, showing the returned label image and ROIs overlaid on the input image (check `Show All` in the ROI Manager):
 
-<img src="/media/StarDist usage output.png" height="240"/>
+<img src="/media/stardist-usage-output.png" height="240"/>
 
 ### Scripting/Batch-Processing
 

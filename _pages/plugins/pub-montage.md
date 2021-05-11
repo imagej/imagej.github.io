@@ -11,7 +11,7 @@ Since imageJ can set the image scale to any unit you want, this plugin sets it t
 
 ## **Gallery**
 
-<img src="/media/Temp.jpg" width="1070"/> <img src="/media/Temp2.jpg" width="1070"/>
+<img src="/media/temp.jpg" width="1070"/> <img src="/media/temp2.jpg" width="1070"/>
 
 ## **Directions**
 
@@ -26,7 +26,7 @@ This means that any stack can be used. For example, the fly brain stack that com
 
 ### **Main Window**
 
-The main window is shown to the right. It puts the controls at your fingertips from the beginning. In most cases after you click "OK" on this window, the plugin will proceed directly to building your montage unless you have selected the "Yes" option for editing the stack order. <img src="/media/Window1.jpg" width="400"/>
+The main window is shown to the right. It puts the controls at your fingertips from the beginning. In most cases after you click "OK" on this window, the plugin will proceed directly to building your montage unless you have selected the "Yes" option for editing the stack order. <img src="/media/window1.jpg" width="400"/>
 
 1.  **Number of Rows:** This sets the number of rows in your montage.
 2.  **Number of Columns:** This sets the number of columns in your montage.
@@ -37,13 +37,13 @@ The main window is shown to the right. It puts the controls at your fingertips f
 7.  **Include filename/label?** This gives you a couple of options on how you want the images labeled in the montage. The filename can be entered into a text window, a letter label can be added, or nothing can be added to the images.
 8.  **Include Border?** If you wish to include a border around the montage, then select "Yes". This is useful if you want a few images to appear as a single page appended to a word document. This feature combined with a image width entry of 8.5 inches, will create a "page" with the same width as a standard piece of letter paper. You can append the image to a pdf of your word file in most pdf editors.
 
-<img src="/media/Window2.jpg" width="100"/>
+<img src="/media/window2.jpg" width="100"/>
 
 ### **Optional Stack Editing**
 
-The easiest way to open a bunch of images in imageJ is to drag and drop your selected bunch of images onto the imageJ user interface. However, if you do it this way, the order in which the stack is built will probably not be the order you want. This option lets you edit your stack before the plugin builds the montage. <img src="/media/Window3.jpg" width="200"/> The plugin is interrupted and two windows popup. One is an "Action Required" window that just pauses the plugin until you select "OK", i.e. after you are satisfied with the stack. The other window is a stack sorter that imageJ supplies. It has a lot of useful options, but the side facing arrows will move the active slice around in the stack, the first and last buttons move the active slice to the first or last position, and delete will delete the active slice. For more info on how to use it please click [here](http://www.optinav.info/Stack-Sorter.htm).
+The easiest way to open a bunch of images in imageJ is to drag and drop your selected bunch of images onto the imageJ user interface. However, if you do it this way, the order in which the stack is built will probably not be the order you want. This option lets you edit your stack before the plugin builds the montage. <img src="/media/window3.jpg" width="200"/> The plugin is interrupted and two windows popup. One is an "Action Required" window that just pauses the plugin until you select "OK", i.e. after you are satisfied with the stack. The other window is a stack sorter that imageJ supplies. It has a lot of useful options, but the side facing arrows will move the active slice around in the stack, the first and last buttons move the active slice to the first or last position, and delete will delete the active slice. For more info on how to use it please click [here](http://www.optinav.info/Stack-Sorter.htm).
 
-<img src="/media/Window4.jpg" width="400"/>
+<img src="/media/window4.jpg" width="400"/>
 
 ### **Fly Brain Example**
 

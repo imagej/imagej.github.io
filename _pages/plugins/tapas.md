@@ -60,7 +60,7 @@ As for stable version 0.5 the following modules are available :
 
 <!-- -->
 
--   Download ![](/media/Bundle-tapas0.6.3.zip "fig:Bundle-tapas0.6.3.zip") and unzip it into the ImageJ or Fiji directory.
+-   Download ![](/media/bundle-tapas0.6.3.zip "fig:Bundle-tapas0.6.3.zip") and unzip it into the ImageJ or Fiji directory.
 
 TAPAS was tested successfully with OMERO.insight 5.5.5 and Bioformats 6.0.1.
 
@@ -87,11 +87,11 @@ A list of tutorials :
 -   How to use the **analyzeParticles** module for segmentation and measurement [here](https://imagejdocu.list.lu/plugin/utilities/tapas_tutorial/2d_measurements_with_analyze_particles/start).
 -   How to quantify **layers distribution** [here](https://imagejdocu.list.lu/plugin/utilities/layers_analysis/start).
 
-The list of available modules is described in [Tapas description0.6.3.pdf](/media/Tapas description0.6.3.pdf).
+The list of available modules is described in [Tapas description0.6.3.pdf](/media/tapas-description0.6.3.pdf).
 
 ## Citation
 
-2018 Whitehead, L., Wimmer, V., Lafouresse, F., Ratnayake, D., Currie, P., Groom, J., Rogers, K. and Boudier, T. Towards an Automated Processing and Analysis System for multi-dimensional light-sheet microscopy big data using ImageJ and OMERO. International Microscopy Congress IMC 19. ([Abstract 1848 thomasboudier.pdf](/media/Abstract 1848 thomasboudier.pdf))
+2018 Whitehead, L., Wimmer, V., Lafouresse, F., Ratnayake, D., Currie, P., Groom, J., Rogers, K. and Boudier, T. Towards an Automated Processing and Analysis System for multi-dimensional light-sheet microscopy big data using ImageJ and OMERO. International Microscopy Congress IMC 19. ([Abstract 1848 thomasboudier.pdf](/media/abstract-1848-thomasboudier.pdf))
 
 Gilles JF and Boudier T. TAPAS: Towards Automated Processing and Analysis of multi-dimensional bioimage data. F1000Research 2020, 9:1278 [doi](https://doi.org/10.12688/f1000research.26977.1)
 

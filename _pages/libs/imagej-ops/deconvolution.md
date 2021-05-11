@@ -61,11 +61,11 @@ We encourage users of deconvolution to try deconvolving this image with various 
 
 ### Original
 
-<img src="/media/Composite orig xy.jpg" width="300"/><img src="/media/Composite orig zx.jpg" width="140"/>
+<img src="/media/composite-orig-xy.jpg" width="300"/><img src="/media/composite-orig-zx.jpg" width="140"/>
 
 ### Deconvolved
 
-<img src="/media/Composite decon xy.jpg" width="300"/><img src="/media/Composite decon zx.jpg" width="140"/>
+<img src="/media/composite-decon-xy.jpg" width="300"/><img src="/media/composite-decon-zx.jpg" width="140"/>
 
 ## References
 

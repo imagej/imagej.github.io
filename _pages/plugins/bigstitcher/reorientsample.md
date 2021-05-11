@@ -7,7 +7,7 @@ In addition to the manual view alignment functionality in **Stitching mode** (se
 
 These functions can be found under `Calibration/Transformations` in the main menu of the MultiView mode.
 
-<img src="/media/BigStitcher registration menu.png" width="700"/>
+<img src="/media/bigstitcher-registration-menu.png" width="700"/>
 
 ## Registration Explorer
 
@@ -17,7 +17,7 @@ Each **Transformation** consists of a 3x4 matrix (3D affine transformation + tra
 
 Note that the final transformation of a view is determined by applying the individual transformations **last-to-first**.
 
-<img src="/media/BigStitcher registration explorer.png" width="900"/>
+<img src="/media/bigstitcher-registration-explorer.png" width="900"/>
 
 You have a few options of modifying the transformations here:
 
@@ -56,22 +56,22 @@ Also, you have to select what to **Append** the new transformation on top of:
 
 Furthermore, you can select **Same transformation for all angles** to generate one transformation for all views. Otherwise, you will be asked to specify a separate transformation for all angles of the selected views.
 
-<img src="/media/BigStitcher registration apply main.png" width="500"/>
+<img src="/media/bigstitcher-registration-apply-main.png" width="500"/>
 
 For **Translation** or **Affine Models**, you will be asked for the shift vector or the transformation matrix in the next dialog (if you chose NOT to use the same transformation for all angles, you will be asked for multiple vectors/matrices). Please provide them as **comma-separated numbers** (for matrices: row-by-row).
 
-<img src="/media/BigStitcher registration translation.png" width="600"/> <img src="/media/BigStitcher registration affine.png" width="600"/>
+<img src="/media/bigstitcher-registration-translation.png" width="600"/> <img src="/media/bigstitcher-registration-affine.png" width="600"/>
 
   
 For **Rigid models**, you can specify how to define the transformation(s):
 
-<img src="/media/BigStitcher registration rigid.png" width="500"/>
+<img src="/media/bigstitcher-registration-rigid.png" width="500"/>
 
 -   **Matrix**: same as for **Affine** (see above)
 -   **Interactively using the BigDataViewer**: same as **Interactively Reorient Sample** (see below)
 -   **Rotation around axis**: allows you to specify an axis around which to to rotate and by how many degrees
 
-<img src="/media/BigStitcher registration rotation.png" width="500"/>
+<img src="/media/bigstitcher-registration-rotation.png" width="500"/>
 
 ## Bake BDV manual transform
 

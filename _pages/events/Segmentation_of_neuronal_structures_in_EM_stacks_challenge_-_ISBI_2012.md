@@ -4,9 +4,9 @@ title: Segmentation of neuronal structures in EM stacks challenge - ISBI 2012
 categories: Segmentation, tutorials
 ---
 
-<img src="/media/ISBI-logo.jpg" title="fig:ISBI-logo.jpg" width="100" alt="ISBI-logo.jpg" />The [IEEE International Symposium on Biomedical Imaging (ISBI)](http://www.biomedicalimaging.org/) is the premier forum for the presentation of technological advances in theoretical and applied biomedical imaging and image computing. In the context of the [ISBI 2012](http://www.biomedicalimaging.org/2012/) conference which was held in Barcelona, Spain, from 2 to 5 May 2012, we organized a [challenge workshop](http://www.biomedicalimaging.org/2012/index.php/programme/isbi-challenges/13-challenges/49-contest-workshop-segmentation-of-neuronal) on **segmentation of neuronal structures in EM stacks**.
+<img src="/media/isbi-logo.jpg" title="fig:ISBI-logo.jpg" width="100" alt="ISBI-logo.jpg" />The [IEEE International Symposium on Biomedical Imaging (ISBI)](http://www.biomedicalimaging.org/) is the premier forum for the presentation of technological advances in theoretical and applied biomedical imaging and image computing. In the context of the [ISBI 2012](http://www.biomedicalimaging.org/2012/) conference which was held in Barcelona, Spain, from 2 to 5 May 2012, we organized a [challenge workshop](http://www.biomedicalimaging.org/2012/index.php/programme/isbi-challenges/13-challenges/49-contest-workshop-segmentation-of-neuronal) on **segmentation of neuronal structures in EM stacks**.
 
-{% include thumbnail src='/media/Challenge-ISBI-2012-sample-image.png' title='Example of ssTEM image and its corresponding segmentation'%}In this **challenge**, a full stack of EM slices will be used to train {% include wikipedia title='Machine learning' text='machine learning'%} algorithms for the purpose of **automatic segmentation of neural structures**.
+{% include thumbnail src='/media/challenge-isbi-2012-sample-image.png' title='Example of ssTEM image and its corresponding segmentation'%}In this **challenge**, a full stack of EM slices will be used to train {% include wikipedia title='Machine learning' text='machine learning'%} algorithms for the purpose of **automatic segmentation of neural structures**.
 
 The images are representative of actual images in the real-world, containing some noise and small image alignment errors. None of these problems led to any difficulties in the manual labeling of each element in the image stack by an [expert human neuroanatomist](http://albert.rierol.net). The aim of the challenge is to compare and rank the different competing methods based on their pixel and object classification accuracy.
 
@@ -40,7 +40,7 @@ If you have any doubt regarding the challenge, please, do not hesitate to contac
 
 ## Training data
 
-{% include thumbnail src='/media/Challenge-ISBI-2012-Animation-Input-Labels.gif' title='Input training data and corresponding labels'%} The training data is a set of 30 sections from a serial section Transmission Electron Microscopy (ssTEM) data set of the Drosophila first instar larva ventral nerve cord (VNC). The microcube measures 2 x 2 x 1.5 microns approx., with a resolution of 4x4x50 nm/pixel.
+{% include thumbnail src='/media/challenge-isbi-2012-animation-input-labels.gif' title='Input training data and corresponding labels'%} The training data is a set of 30 sections from a serial section Transmission Electron Microscopy (ssTEM) data set of the Drosophila first instar larva ventral nerve cord (VNC). The microcube measures 2 x 2 x 1.5 microns approx., with a resolution of 4x4x50 nm/pixel.
 
 The corresponding binary labels are provided in an in-out fashion, i.e. white for the pixels of segmented objects and black for the rest of pixels (which correspond mostly to membranes).
 

@@ -24,7 +24,7 @@ In the first dialog, you will be asked for some **basic parameters** for the reg
 -   **Interest points**: the interest points to use for registration.
 -   **Group Tiles** and **Group illuminations**: (Only available if you have multiple Tiles or Illuminations in your dataset) Tick this to group the Tiles and/or illumination directions within one Channel/Angle/TimePoint. Grouped views will be moved together. Use this if you already aligned Tiles in Stitching mode. Since we also have to do less comparisons this way, this will also speed up the registration process.
 
-<img src="/media/BigStitcher Register basic.png" width="800"/>
+<img src="/media/bigstitcher-register-basic.png" width="800"/>
 
 ## Specific Registration Options
 
@@ -34,7 +34,7 @@ Depending on the choices you made in the previous dialog, you will be asked for 
 -   2\) **View Fixing and map-back Transformations** (not available when registering relative to a **refenence timepoint**)
 -   3\) **Registration Algorithm Parameters**
 
-<img src="/media/BigStitcher Register scpecific.png" width="800"/>
+<img src="/media/bigstitcher-register-scpecific.png" width="800"/>
 
 ### Time Series Registration Options
 
@@ -74,7 +74,7 @@ When manually selecting **views to fix**, you can choose to fix multiple views (
 
 When **mapping back**, you can select a single view to map back to.
 
-<img src="/media/BigStitcher Register fix select.png" width="400"/><img src="/media/BigStitcher Register map back select.png" width="400"/>
+<img src="/media/bigstitcher-register-fix-select.png" width="400"/><img src="/media/BigStitcher Register map back select.png" width="400"/>
 
   
 
@@ -88,7 +88,7 @@ Depending on which **Registration algorithm** you selected in the first dialog, 
 
 #### Fast descriptor-based (rotation invariant)
 
-{% include thumbnail src='/media/BigStitcher Register fast desc rot.png' title='Parameters for Fast descriptor-based (rotation invariant) registration'%}
+{% include thumbnail src='/media/bigstitcher-register-fast-desc-rot.png' title='Parameters for Fast descriptor-based (rotation invariant) registration'%}
 
 The **Fast descriptor-based (rotation invariant) registration** is the default choice for aligning views from multiple angles. It first constructs a *descriptor* for every point based on the "constellation" of its 3 nearest neighbors and matches it to the most similar point in other views. By using a special local coordinate system, we can find the points in other views even if they were imaged from different angles.
 
@@ -115,7 +115,7 @@ The parameters for this algorithm and their meaning is the same as for the rotat
 
 #### Precise descriptor-based (translation invariant)
 
-{% include thumbnail src='/media/BigStitcher Register prec desc tr.png' title='Parameters for Precise descriptor-based (translation invariant) registration'%}
+{% include thumbnail src='/media/bigstitcher-register-prec-desc-tr.png' title='Parameters for Precise descriptor-based (translation invariant) registration'%}
 
 The **Precise descriptor-based (translation invariant) registration** work essentially the same as the fast descriptor-based registration algorithms with the main difference being that you can manually specify the **number of neighbors** of an interest point to use for constructing the point descriptor. Due to the more flexible descriptors, it lacks the specific optimizations for 3 neighbors and is slightly slower than the fast versions.
 
@@ -137,7 +137,7 @@ This method has a single parameter:
 
 #### Assign closest points with ICP (no invariance)
 
-{% include thumbnail src='/media/BigStitcher Register icp.png' title='Parameters for ICP-based (no invariance) registration'%}
+{% include thumbnail src='/media/bigstitcher-register-icp.png' title='Parameters for ICP-based (no invariance) registration'%}
 
 In addition to the descriptor-based registration algorithm, we also offer registration via a slightly modified version of the {% include wikipedia title="Point set registration#Iterative_closest_point" text="Iterative Closest Point (ICP)" %} algorithm.
 
@@ -154,13 +154,13 @@ In the parameter dialog, you can set the two parameters described above:
 
 If you opted for **Regularization** of the transform in the previous dialog, you will be asked for the type of the second transformation model to estimate and a **lambda** ($$\in[0,1]$$), i.e. how much weight you want to give to the regularizing model in the final averaged result.
 
-<img src="/media/BigStitcher regularize model.png" width="400"/>
+<img src="/media/bigstitcher-regularize-model.png" width="400"/>
 
 ### Grouping Options
 
 If you chose to **group tiles or illuminations** in the first dialog, you will be asked how to perform the grouping in another dialog.
 
-<img src="/media/BigStitcher register grouping.png" width="600"/>
+<img src="/media/bigstitcher-register-grouping.png" width="600"/>
 
 The options for **Interest point grouping** are:
 

@@ -24,7 +24,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
       <th>Status</th>
     </tr>
     <tr class="even">
-      <td><img src="/media/Fiji-icon.png" width="64"/></td>
+      <td><img src="/media/fiji-icon.png" width="64"/></td>
       <td><a href="/fiji">Fiji</a></td>
       <td><a href="/about/contributors">Fiji contributors</a></td>
       <td><strong>F</strong>iji <strong>i</strong>s <strong>J</strong>ust
@@ -36,7 +36,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
       <td>Active</td>
     </tr>
     <tr class="odd">
-      <td><img src="/media/Imagej2-icon.png" width="64"/></td>
+      <td><img src="/media/imagej2-icon.png" width="64"/></td>
       <td><a href="/software/imagej2">ImageJ2</a></td>
       <td><a href="/about/contributors">ImageJ developers</a></td>
       <td>A new version of ImageJ targeting scientific multidimensional image
@@ -50,7 +50,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
       <td>Active</td>
     </tr>
     <tr class="even">
-      <td><img src="/media/Imagej1-icon.png" width="64"/></td>
+      <td><img src="/media/imagej1-icon.png" width="64"/></td>
       <td><a href="/software/imagej1">ImageJ1</a></td>
       <td>{% include person id='rasband' %}</td>
       <td>A stable version of ImageJ which has been in development since 1997.
@@ -60,7 +60,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
       <td>Active</td>
     </tr>
     <tr class="odd">
-      <td><img src="/media/Imagej1-icon.png" width="64"/></td>
+      <td><img src="/media/imagej1-icon.png" width="64"/></td>
       <td><a href="/libs/imageja">ImageJA</a></td>
       <td><a href="/about/contributors">ImageJ developers</a></td>
       <td>ImageJA is a project that provides a clean <a href="/develop/git">Git</a>
@@ -80,7 +80,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
       <td>Abandoned</td>
     </tr>
     <tr class="odd">
-      <td><img src="/media/Imagesxm-icon.png" width="64"/></td>
+      <td><img src="/media/imagesxm-icon.png" width="64"/></td>
       <td><a href="/software/imagesxm">ImageSXM</a></td>
       <td>Steve Barrett</td>
       <td>Image SXM is a version of NIH Image that has been extended to handle
@@ -108,7 +108,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
       <th colspan=6>Closed-source variants</th>
     </tr>
     <tr class="odd">
-      <td><img src="/media/Eu-hou-logo.png" width="64"/></td>
+      <td><img src="/media/eu-hou-logo.png" width="64"/></td>
       <td><a href="http://www.euhou.net/index.php?option=com_content&amp;task=view&amp;id=7&amp;Itemid=9">SalsaJ</a></td>
       <td><a href="http://www.euhou.net/">EU-HOU</a></td>
       <td>SalsaJ is a closed-source fork of ImageJ1 intended for use with
@@ -180,7 +180,7 @@ The first imaging program that {% include person id='rasband' %} developed, star
 
 Here is a timeline of software development related to ImageJ:
 
-![](/media/Timeline History of ImageJ.png "Timeline_History_of_ImageJ.png")
+![](/media/timeline-history-of-imagej.png "Timeline_History_of_ImageJ.png")
 
 ## Publications
 

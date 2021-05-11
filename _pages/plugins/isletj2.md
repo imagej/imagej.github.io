@@ -79,7 +79,7 @@ Similarly to the training protocol, the analysis protocol is a CSV file. There i
 
 The following steps show basic interaction with the plugin.
 
-1.  Download a demo [dataset](/media/Isletj-demo.zip) and extract the archive. Directory `isletj-demo` will be created containing one image and its ground truth segmentation.
+1.  Download a demo [dataset](/media/isletj-demo.zip) and extract the archive. Directory `isletj-demo` will be created containing one image and its ground truth segmentation.
 2.  Start ImageJ and open the dialog for training (`Plugins` – `IsletJ` – `Train`).
 3.  Select the extracted directory, set the prefixes of examples and GTs to `img_` and `gt_`, respectively, and click `Load` to load the dataset. Images (only a single one in this case) from the dataset will be displayed, and respective segmentations will be applied to the images resulting in green bordered regions.
 4.  Ensure that the segmentations were loaded correctly and click `Ok`.

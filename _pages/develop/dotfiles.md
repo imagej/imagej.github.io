@@ -19,33 +19,33 @@ You can find the dotfiles in the following repositories:
         {% include github org='ctrueden' repo='dotfiles' label='ctrueden/dotfiles' %}</p>
       </td>
       <td style="text-align: center; vertical-align: bottom">
-        <p><a href="SciJava"><img src="/media/Scijava-icon.png" width="48px"></a><br>
+        <p><a href="SciJava"><img src="/media/scijava-icon.png" width="48px"></a><br>
         {% include github org='scijava' repo='dotfiles' label='scijava/dotfiles' %}</p>
       </td>
       <td style="text-align: center; vertical-align: bottom">
-        <p><a href="/about"><img src="/media/Imagej2-icon.png" width="48px"></a><br>
+        <p><a href="/about"><img src="/media/imagej2-icon.png" width="48px"></a><br>
         {% include github org='imagej' repo='dotfiles' label='imagej/dotfiles' %}</p>
       </td>
       <td style="text-align: center; vertical-align: bottom">
-        <p><a href="/orgs/loci"><img src="/media/Loci-logo.png" width="48px"></a><br>
+        <p><a href="/orgs/loci"><img src="/media/loci-logo.png" width="48px"></a><br>
         {% include github org='uw-loci' repo='dotfiles' label='uw-loci/dotfiles' %}</p>
       </td>
     </tr>
     <tr class="even">
       <td style="text-align: center; vertical-align: bottom">
-        <p><a href="/imglib2"><img src="/media/Imglib2-icon.png" width="48px"></a><br>
+        <p><a href="/imglib2"><img src="/media/imglib2-icon.png" width="48px"></a><br>
         {% include github org='imglib2' repo='dotfiles' label='imglib2/dotfiles' %}</p>
       </td>
       <td style="text-align: center; vertical-align: bottom">
-        <p><a href="/software/scifio"><img src="/media/Scifio-icon.png" width="48px"></a><br>
+        <p><a href="/software/scifio"><img src="/media/scifio-icon.png" width="48px"></a><br>
         {% include github org='scifio' repo='dotfiles' label='scifio/dotfiles' %}</p>
       </td>
       <td style="text-align: center; vertical-align: bottom">
-        <p><a href="/fiji"><img src="/media/Fiji-icon.png" width="48px"></a><br>
+        <p><a href="/fiji"><img src="/media/fiji-icon.png" width="48px"></a><br>
         {% include github org='fiji' repo='dotfiles' label='fiji/dotfiles' %}</p>
       </td>
       <td style="text-align: center; vertical-align: bottom">
-        <p><a href="SLIM%20Curve"><img src="/media/Slim-curve-icon.png" width="48px"></a><br>
+        <p><a href="SLIM%20Curve"><img src="/media/slim-curve-icon.png" width="48px"></a><br>
         {% include github org='slim-curve' repo='dotfiles' label='slim-curve/dotfiles' %}</p>
       </td>
     </tr>

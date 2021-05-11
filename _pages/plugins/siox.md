@@ -9,13 +9,13 @@ artifact: sc.fiji:Siox\_Segmentation
 
 <div style="float: left">
 
-{% include thumbnail src='/media/Embryos775x581.png' title='Embryos original sample'%}
+{% include thumbnail src='/media/embryos775x581.png' title='Embryos original sample'%}
 
 </div>
 <div style="float:
  left">
 
-{% include thumbnail src='/media/SIOX result embryos775x581.png' title='SIOX segmentation result'%}
+{% include thumbnail src='/media/siox-result-embryos775x581.png' title='SIOX segmentation result'%}
 
 </div>
 
@@ -48,10 +48,10 @@ Click the "Reset" button to restart the process or click on the "Create mask" bu
   <tbody>
     <tr class="odd">
       <td>
-        <p>style="vertical-align:top"|{% include thumbnail src='/media/Screenshot-SIOX Segmentation.png' title='SIOX segmentation Graphical User Interface applied to Leaf sample'%}</p>
+        <p>style="vertical-align:top"|{% include thumbnail src='/media/screenshot-siox-segmentation.png' title='SIOX segmentation Graphical User Interface applied to Leaf sample'%}</p>
       </td>
       <td>
-        <p>style="vertical-align:top"|{% include thumbnail src='/media/SIOX-Mask.png' title='Resulting mask of Leaf sample after SIOX segmentation'%}</p>
+        <p>style="vertical-align:top"|{% include thumbnail src='/media/siox-mask.png' title='Resulting mask of Leaf sample after SIOX segmentation'%}</p>
       </td>
     </tr>
   </tbody>
@@ -66,7 +66,7 @@ When calling the plugin, the image will be embedded into the [SIOX](/plugins/sio
 
 ### Initial Segmentation
 
-{% include thumbnail src='/media/SIOX-Initial-Segmentation.png' title='SIOX initial segmentation panel'%} This is the **first step** of the procedure where one defines the ROIs that correspond to typical areas of foreground or background.
+{% include thumbnail src='/media/siox-initial-segmentation.png' title='SIOX initial segmentation panel'%} This is the **first step** of the procedure where one defines the ROIs that correspond to typical areas of foreground or background.
 
 **Defining foreground and background**  
 
@@ -83,7 +83,7 @@ The ROIs can be defined with any of the Selection Tools:
 <!-- -->
 
   
-![](/media/Fiji-selection-tools.png "fig:Fiji-selection-tools.png")
+![](/media/fiji-selection-tools.png "fig:Fiji-selection-tools.png")
 
 <!-- -->
 
@@ -112,7 +112,7 @@ The *Smoothing* slider defines the sharpness of the resulting contours. For exam
 
 **Segmentation**  
 
-{% include thumbnail src='/media/SIOX Segmentation GUI step1.png' title='Example of SIOX result after initial segmentation'%}
+{% include thumbnail src='/media/siox-segmentation-gui-step1.png' title='Example of SIOX result after initial segmentation'%}
 
   
 In order to proceed with the initial segmentation, click on *Segment*.
@@ -134,7 +134,7 @@ Following this, the initial segmentation panel is disabled. If the results are n
 
 ### Detail Refinement Brush
 
-{% include thumbnail src='/media/SIOX-Detail-Refinement-Brush.png' title='SIOX detail refinement brush panel'%} This is the **second step** in the [SIOX](/plugins/siox) segmentation process.
+{% include thumbnail src='/media/siox-detail-refinement-brush.png' title='SIOX detail refinement brush panel'%} This is the **second step** in the [SIOX](/plugins/siox) segmentation process.
 
 At this point, the method can be called again to refine the results obtained so far to subtract or add new areas to the background or foreground components **as many times needed**.
 
@@ -148,7 +148,7 @@ Finally, by clicking on *Refine*, the segmentation is recalculated for the selec
 
 ### Reset or Create mask
 
-{% include thumbnail src='/media/SIOX-Reset-Create-mask.png' title='SIOX Reset/Create mask panel'%} This panel is enabled during any of the other segmentation steps.
+{% include thumbnail src='/media/siox-reset-create-mask.png' title='SIOX Reset/Create mask panel'%} This panel is enabled during any of the other segmentation steps.
 
 **Reset**  
 
@@ -178,13 +178,13 @@ You can apply a previously saved SIOX segmentator to any open image or set of im
 
 **Step 2**: Click on {% include bc path='Plugins | Segmentation | Apply SIOX segmentator'%}, and the following dialog will pop up:
 
-![ left \| thumb \| 600 px \| Apply SIOX segmentator input dialog](/media/Screenshot-Load-SIOX-segmentator.png " left | thumb | 600 px | Apply SIOX segmentator input dialog")
+![ left \| thumb \| 600 px \| Apply SIOX segmentator input dialog](/media/screenshot-load-siox-segmentator.png " left | thumb | 600 px | Apply SIOX segmentator input dialog")
 
 **Step 3**: Select the siox segmentator file (or just drag and drop it) and click "OK".
 
 The segmentator will be applied to the selected image or stack and the result will pop up.
 
-![ left \| thumb \| 1014px \| Results of applying the previously calculated SIOX segmentator to a stack of transformed versions of the Leaf sample](/media/Combined-SIOX-Stacks.gif " left | thumb | 1014px | Results of applying the previously calculated SIOX segmentator to a stack of transformed versions of the Leaf sample")
+![ left \| thumb \| 1014px \| Results of applying the previously calculated SIOX segmentator to a stack of transformed versions of the Leaf sample](/media/combined-siox-stacks.gif " left | thumb | 1014px | Results of applying the previously calculated SIOX segmentator to a stack of transformed versions of the Leaf sample")
 
 **Note**: when applying a saved segmentator there is no information about the size of the expected foreground components so the largest component will be used as reference. The multiple component option will be consistent with what it was used during the segmentator calculation.
 

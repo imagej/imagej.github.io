@@ -9,7 +9,7 @@ title: Multi-View Fusion
 
 Please note that the multi-view fusion plugin available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
--   S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", *Nature Methods*, **7**(6):418-419. [Webpage](http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html) [PDF](/media/Nmeth0610-418.pdf) [Supplement](/media/Nmeth0610-418-S1.pdf)
+-   S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", *Nature Methods*, **7**(6):418-419. [Webpage](http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html) [PDF](/media/nmeth0610-418.pdf) [Supplement](/media/nmeth0610-418-s1.pdf)
 
 ## Overview of the multi-view fusion plugin
 
@@ -41,7 +41,7 @@ The fused images will be saved in the *output* directory of the dataset as a col
 
 ## How to use the plugin
 
-{% include thumbnail src='/media/Spim multiview dialog1.jpg' title='Shows the first dialog that queries the location of the multi-view files'%}
+{% include thumbnail src='/media/spim-multiview-dialog1.jpg' title='Shows the first dialog that queries the location of the multi-view files'%}
 
 The multi-view fusion consists of two consecutive dialogs. The first dialog queries the information necessary to analyze the dataset. Please note that all the parameters will be looked up in the [bead-based registration](/plugins/spim-bead-registration) or [segmentation-based registration](Segmentation-based_registration), so typically just pressing ok is sufficient, except you process a timeseries. These are the options of the first dialog:
 
@@ -65,7 +65,7 @@ The multi-view fusion consists of two consecutive dialogs. The first dialog quer
 
 After entering the data the program will check which kind of registrations are available for each channel. Typically, the individual registration for each channel is available, and maybe also several timeseries registration with various reference timepoints. If no registration files could be found, the plugin will quit.
 
-{% include thumbnail src='/media/Spim multiview dialog2.jpg' title='Shows the second dialog that queries the details of the multi-view fusion'%}
+{% include thumbnail src='/media/spim-multiview-dialog2.jpg' title='Shows the second dialog that queries the details of the multi-view fusion'%}
 
 In the second dialog, you have to define the details of the multi-view fusion. It offers the following options:
 

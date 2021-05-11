@@ -27,7 +27,7 @@ Estimating colocalisation by looking for yellow colour in images where the green
 4.  There are simple and quick objective methods to estimate colocalisation, so don't be lazy. You can use them to get hard objective statistics describing the colocalisation in your images, and its easy to do.
 5.  Our brains find color contrast that is not even really there. In the following illusion (Fig. 1), there are only really 3 colors. The "blue"and "green" are exactly the same color: Do not trust your eyes - measure it.
 
-{% include thumbnail src='/media/Spirals.png' title='**Figure 1**: The *spirals* color illusion'%}
+{% include thumbnail src='/media/spirals.png' title='**Figure 1**: The *spirals* color illusion'%}
 
   
 What we need are objective quantitative methods to estimate/measure colocalisation in 2 colour channel images. These will output colocalisation coefficients that should be:
@@ -45,7 +45,7 @@ There are various problems that need to be understood and overcome while collect
 
 ### Blur
 
-![](/media/ColocBlur.gif "ColocBlur.gif")
+![](/media/colocblur.gif "ColocBlur.gif")
 
 *`Definition:`*` The Fourier spectrum of the `  
 `image lacks proper high frequencies. `
@@ -78,7 +78,7 @@ If the blurring of you images is too much, you might want to consider [deconvolu
 
 ### Background
 
-![](/media/ColocBGnoise.gif "ColocBGnoise.gif")
+![](/media/colocbgnoise.gif "ColocBGnoise.gif")
 
 *`Definition:`*` Unspecific signal. `
 

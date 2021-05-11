@@ -9,7 +9,7 @@ This article explains how to install and configure command line tools for use wi
 
 <div style="overflow: hidden">
 
-<tabs> <tab name="/platforms/windows"> ![ x32px](/media/Win.png "fig: x32px") **Windows**
+<tabs> <tab name="/platforms/windows"> ![ x32px](/media/win.png "fig: x32px") **Windows**
 
 Install [Git](/develop/git), [Maven](/develop/maven), and Java SE using [Chocolatey](https://chocolatey.org/):
 
@@ -19,13 +19,13 @@ We also heartily recommend installing [Cygwin](https://www.cygwin.com/):
 
     choco install -y cyg-get
 
-</tab> <tab name="macOS"> ![ x32px](/media/Osx.png "fig: x32px") **macOS**
+</tab> <tab name="macOS"> ![ x32px](/media/osx.png "fig: x32px") **macOS**
 
 Install [Git](/develop/git) and [Maven](/develop/maven) using [Homebrew](http://brew.sh/):
 
     brew install git maven bash-completion
 
-Download and install [Java SE](http://www.oracle.com/technetwork/java/javase/downloads/) from Oracle. </tab> <tab name="/platforms/linux"> ![ x32px](/media/Tux.png "fig: x32px") **Linux**
+Download and install [Java SE](http://www.oracle.com/technetwork/java/javase/downloads/) from Oracle. </tab> <tab name="/platforms/linux"> ![ x32px](/media/tux.png "fig: x32px") **Linux**
 
     sudo apt-get install default-jdk git maven
 

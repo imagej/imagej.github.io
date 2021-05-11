@@ -35,7 +35,7 @@ We made a Java-based open source implementation jSLIC - the superpixel clusterin
 
 ### How to use the plugin
 
-<img src="/media/Fiji jSLIC gui.jpg" title="fig:jSLIC interface" width="250" alt="jSLIC interface" /> As you can see the Interface to the plugin contains a parameters for superpixel configuration and also its final visualisation.
+<img src="/media/fiji-jslic-gui.jpg" title="fig:jSLIC interface" width="250" alt="jSLIC interface" /> As you can see the Interface to the plugin contains a parameters for superpixel configuration and also its final visualisation.
 
 #### Parameters
 
@@ -51,7 +51,7 @@ To show of handle segmentation results we presented a few approaches:
 -   *Overlap contours* - simply draw the contours on resulting superpixels into the image by chosen colour.
 -   *Export segments as ROIs* - all superpixels are exported as polygons into the [ROI Manager](/ij/plugins/roi-manager-tools/index.html).
 -   *Show final segmentation* - add one more layer and fill each superpixel by a random colour.
--   *Save segmentation into file* - export the superpixel segmentation into a text file as segmentation matrix with labels. The first line mark the image dimensions (*Dims: {width} {height}*) and then follow the labeling where each number represents the superpixel index. (Note, number of lines is equal to *{image width}* and there is *{image height}* number of indexes which are splitted by blanc space.) Have a look at sample file ![ jSLIC-AuPbSn40](/media/JSLIC-AuPbSn40.zip "fig: jSLIC-AuPbSn40").
+-   *Save segmentation into file* - export the superpixel segmentation into a text file as segmentation matrix with labels. The first line mark the image dimensions (*Dims: {width} {height}*) and then follow the labeling where each number represents the superpixel index. (Note, number of lines is equal to *{image width}* and there is *{image height}* number of indexes which are splitted by blanc space.) Have a look at sample file ![ jSLIC-AuPbSn40](/media/jslic-aupbsn40.zip "fig: jSLIC-AuPbSn40").
 
 Image:jSLIC-Lena-ROIs.jpg\|Sample of jSLIC segmented Lena with ROI manager. Image:jSLIC-Lena-ROIs-2.jpg\|Sample of jSLIC segmented Lena with ROI manager. Image:Human Breast Cytokeratin jSLIC.jpg\|Sample of jSLIC segmented histological tissue. Image:Human Breast Cytokeratin jSLIC 50px 0-2.png\|Sample of jSLIC segmented histological tissue. Image:jSLIC-AuPbSn40.jpg\|Sample of jSLIC segmented AuPbSn40. Image:jSLIC-Leaf.jpg\|Sample of jSLIC segmented Leaf.
 

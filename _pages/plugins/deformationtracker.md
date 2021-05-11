@@ -25,7 +25,7 @@ A typical dataset consists of a single two-dimensional (2d) image of the cells w
 
 The welcome panel will open.
 
-<img src="/media/WelcomeEtrack.png" width="800"/>
+<img src="/media/welcomeetrack.png" width="800"/>
 
 #### Choose Mode
 
@@ -37,13 +37,13 @@ As an example, for Embryo cells the user can select the actin channel image from
 
 Embryo cells with Actin, Membrane channel and segmentation mask image respectively:
 
-<img src="/media/Ch1.png" width="300"/><img src="/media/Ch2.png" width="300"/><img src="/media/Seg.png" width="300"/>
+<img src="/media/ch1.png" width="300"/><img src="/media/ch2.png" width="300"/><img src="/media/seg.png" width="300"/>
 
 Please run the program at least once before running it in batch mode over a directory of such timelapse images.
 
 The microscope parameters are read from the channel 1 image and are displayed in the Pixel calibration boxes in the microscope parameters panel box in the welcome screen (shown above). If the parameters can not be read from the metadata, the user can input the pixel size and timeframe to second conversion.
 
-Press "start ETrack" to proceed. The main ETrack panel will appear and the first time frame of the timelapse image would be displayed. All other open images in Fiji will close. By default, the distance method of deformation measuring tool will run on the first frame of the image. <img src="/media/Main.png" width="800"/>
+Press "start ETrack" to proceed. The main ETrack panel will appear and the first time frame of the timelapse image would be displayed. All other open images in Fiji will close. By default, the distance method of deformation measuring tool will run on the first frame of the image. <img src="/media/main.png" width="800"/>
 
 #### Distance method
 

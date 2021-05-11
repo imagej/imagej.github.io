@@ -19,7 +19,7 @@ This *suite* provides plugins to enhance 3D capabilities of ImageJ.
 
 Migrating contents from [3D Suite on ImageJ Documentation Website](https://imagejdocu.list.lu/plugin/stacks/3d_ij_suite/start).
 
-The pdf of the [NEUBIAS academy](http://eubias.org/NEUBIAS/training-schools/neubias-academy-home/) presentation "*Introduction to 3D Analysis with 3D ImageJ suite*" is available : [NEUBIAS\_3DSuite.pdf](/media/NEUBIAS 3DSuite.pdf).
+The pdf of the [NEUBIAS academy](http://eubias.org/NEUBIAS/training-schools/neubias-academy-home/) presentation "*Introduction to 3D Analysis with 3D ImageJ suite*" is available : [NEUBIAS\_3DSuite.pdf](/media/neubias-3dsuite.pdf).
 
 The associated video is available on [YouTube](https://www.youtube.com/watch?v=OPC2kP-5By4). The QAs are available on the [image.sc forum](https://forum.image.sc/t/neubias-academy-home-webinar-introduction-to-3d-analysis-with-3d-imagej-suite-questions-answers/39027).
 
@@ -27,7 +27,7 @@ The associated project for automation is available in [TAPAS](/plugins/tapas).
 
 ## Author
 
-{% include person id='mcib3d' %} ![](/media/EmailBoudier.png "fig:EmailBoudier.png"), [Sorbonne University](https://www.sorbonne-universite.fr/en), Paris, France.
+{% include person id='mcib3d' %} ![](/media/emailboudier.png "fig:EmailBoudier.png"), [Sorbonne University](https://www.sorbonne-universite.fr/en), Paris, France.
 
 With many contributions from J. Ollion, Laboratoire Jean Perrin, Paris, France.
 
@@ -61,7 +61,7 @@ ImageJ 1.47 or later is required. Java3D is also required, check that [3D\_Viewe
 
 Java 1.8 or later is required. **The [imagescience](http://www.imagescience.org/meijering/software/featurej/) library is required ** : [download here](http://www.imagescience.org/meijering/software/download/imagescience.jar).
 
-**Bundle** : [Mcib3d-suite3.96.3.zip](/media/Mcib3d-suite3.96.3.zip)
+**Bundle** : [Mcib3d-suite3.96.3.zip](/media/mcib3d-suite3.96.3.zip)
 
 Sources are available on [GitHub](https://github.com/) for [core](https://github.com/mcib3d/mcib3d-core) and [plugins](https://github.com/mcib3d/mcib3d-plugins).
 

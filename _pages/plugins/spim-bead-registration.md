@@ -9,7 +9,7 @@ title: SPIM Bead Registration
 
 Please note that the SPIM registration plugin available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
--   S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", *Nature Methods*, **7**(6):418-419. [Webpage](http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html) [PDF](/media/Nmeth0610-418.pdf) [Supplement](/media/Nmeth0610-418-S1.pdf)
+-   S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", *Nature Methods*, **7**(6):418-419. [Webpage](http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html) [PDF](/media/nmeth0610-418.pdf) [Supplement](/media/nmeth0610-418-s1.pdf)
 
 For technical details about the registration method and SPIM imaging see [SPIM Registration Method](/plugins/spim-registration/method).
 
@@ -36,7 +36,7 @@ Both options work in the exactly same way and have very similar options. The add
 
 ## How to use the plugin
 
-{% include thumbnail src='/media/Spim beads singlechannel.jpg' title='Shows the dialog for the bead-based registration'%}
+{% include thumbnail src='/media/spim-beads-singlechannel.jpg' title='Shows the dialog for the bead-based registration'%}
 
 -   **SPIM data directory**: Fill in the directory name that contains all the image files (or directories with equally sized 2d image planes). You can either drag&drop the directory, browse for it or type the name directly.
 
@@ -95,7 +95,7 @@ Both options work in the exactly same way and have very similar options. The add
 
 ## How timelapse registration works
 
-{% include thumbnail src='/media/Spim beads timelapse.jpg' title='Shows the panel that displays the registration quality of an entire timelapse registration. The reference timepoint can be chosen manually by clicking or automatically by the plugin. The error should be as low as possible (around 1px), the correspondence ratio as high as possible (between 90-100%).'%}
+{% include thumbnail src='/media/spim-beads-timelapse.jpg' title='Shows the panel that displays the registration quality of an entire timelapse registration. The reference timepoint can be chosen manually by clicking or automatically by the plugin. The error should be as low as possible (around 1px), the correspondence ratio as high as possible (between 90-100%).'%}
 
 Processing a timelapse acquisition works in two steps. In the first step the registration for each individual timepoint will be computed and automatically stored. Based on these results, a reference timepoint will be selected either manually or automatically (see figure). Note that the panel will be also displayed when choosing automatic reference timepoint selection, but it cannot be changed. Based on the selected timepoint, all other timepoints of the series will be registered relative to it which leads to a properly aligned timeseries.
 

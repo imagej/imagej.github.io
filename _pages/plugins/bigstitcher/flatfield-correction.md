@@ -7,7 +7,7 @@ title: BigStitcher Flatfield correction
 
 Uneven illumination and fixed pattern noise can lead to artifacts in stitched images. If the aberration is the same for multiple images, it can be corrected via a process called **flatfield correction**. We offer on-the-fly correction for a user-provided **dark image** and/or **bright image**.
 
-<img src="/media/BigStitcher Flatfield 1.png" width="800"/>
+<img src="/media/bigstitcher-flatfield-1.png" width="800"/>
 
 We perform the correction by calculating a corrected image pixel $$C_{x,y,z}$$ according to {% include wikipedia title="Flat-field correction" %}:
 
@@ -25,7 +25,7 @@ You can find the flatfield correction as **Flatfield Correction (experimental) .
 
 Click on the menu item and you will be presented with a dialog allowing you to set bright and dark images for every (channel, illumination direction)-combination of your images.
 
-<img src="/media/BigStitcher Flatfield 2.png" width="600"/>
+<img src="/media/bigstitcher-flatfield-2.png" width="600"/>
 
 You can specify the dark and bright image files by dragging and dropping the file, entering the path manually or selecting the file by clicking **Browse...**.
 

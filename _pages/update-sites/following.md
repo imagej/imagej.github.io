@@ -16,13 +16,13 @@ This tutorial will explain how to **add an update site to your install of ImageJ
 
 First, start the [updater](/plugins/updater):
 
-![](/media/How to setup a plugin distribution site-1.jpg "How_to_setup_a_plugin_distribution_site-1.jpg")
+![](/media/how-to-setup-a-plugin-distribution-site-1.jpg "How_to_setup_a_plugin_distribution_site-1.jpg")
 
 ## Add update sites
 
 Click on the *Manage update sites* button to bring up the site management dialog:
 
-<img src="/media/Mamed-3.jpg" width="770"/>
+<img src="/media/mamed-3.jpg" width="770"/>
 
 If the update site you want to follow is listed, just click the checkbox next to its name. If it is not listed, you can add Click the *Add update site* button and fill in the name of your choice for the site and the URL, which would be provided by the plugin's author or distributor.
 

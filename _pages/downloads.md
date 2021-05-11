@@ -14,7 +14,7 @@ Here you can [download](https://downloads.imagej.net/ImageJ2-20160205.zip) an "a
 
 <center>
 
-<a href="https://downloads.imagej.net/ImageJ2-20160205.zip "><img src="/media/Imagej2-download-icon.png" width="192px"/></a>
+<a href="https://downloads.imagej.net/ImageJ2-20160205.zip "><img src="/media/imagej2-download-icon.png" width="192px"/></a>
 
 </center>
 
@@ -30,14 +30,14 @@ These downloads bundle ImageJ with a curated collection of plugins pre-installed
 
 <div style="float: left; padding: 1em; text-align:center; font-size:1.5em" markdown="1">
 
-<a href="/fiji/downloads"><img src="/media/Fiji-icon.png" height="96px"/></a>  
+<a href="/fiji/downloads"><img src="/media/fiji-icon.png" height="96px"/></a>  
 [Fiji](/fiji/downloads)
 
 </div>
 
 <div style="float: left; padding: 1em; text-align:center; font-size:1.5em" markdown="1">
 
-<a href="/software/bio7"><img src="/media/Bio7-icon.png" height="96px"/></a>  
+<a href="/software/bio7"><img src="/media/bio7-icon.png" height="96px"/></a>  
 [Bio7](/software/bio7)
 
 </div>

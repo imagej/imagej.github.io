@@ -6,7 +6,7 @@ categories: News
 
 Thanks to a lot of help by Robert Futrell, [Fiji's Script Editor](/scripting/script-editor) learnt [ImageJ's macro language](/scripting/macro). Now you can enjoy the power of full undo and of syntax highlighting when writing macros!
 
-![](/media/ImageJ Macro in the Script-Editor.png "ImageJ_Macro_in_the_Script-Editor.png")
+![](/media/imagej-macro-in-the-script-editor.png "ImageJ_Macro_in_the_Script-Editor.png")
 
 For further convenience, the Macro Recorder opens newly created macros in the Script Editor, too.
 

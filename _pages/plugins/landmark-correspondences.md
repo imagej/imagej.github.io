@@ -20,6 +20,6 @@ categories: Plugins,Transform,Registration
 
 The non-linear non-invertible transformations as estimated using the Moving Least Squares method are rendered through a mesh of triangles whose resolution is a parameter of the plugin, see [Interactive Moving Least Squares](/plugins/interactive-moving-least-squares) for an intuitive explanation.
 
-{% include thumbnail src='/media/Transform Roi-linear.jpg' title='Two snapshots from the ImageJ Conference 2008 registered into each other using an affine transformation as estimated from automatically extracted Feature Correspondences.'%} {% include thumbnail src='/media/Transform Roi-mls.jpg' title='A photograph and a cartoon registered into each other using the Moving Least Squares method and a similarity transformation as estimated from manually set landmark correspondences.'%}
+{% include thumbnail src='/media/transform-roi-linear.jpg' title='Two snapshots from the ImageJ Conference 2008 registered into each other using an affine transformation as estimated from automatically extracted Feature Correspondences.'%} {% include thumbnail src='/media/transform-roi-mls.jpg' title='A photograph and a cartoon registered into each other using the Moving Least Squares method and a similarity transformation as estimated from manually set landmark correspondences.'%}
 
   

@@ -23,7 +23,7 @@ The plugin **Fijiyama** (Yet Another Matching and Alignment tool for Fiji) is a 
 
 **Versatility:** Fijiyama is a generic tool, efficient at any scale, tissue or imaging modality. It has been tested on the most common imaging approaches in biology and medicine: MRI, X-rays, photography...
 
-<img src="/media/Reg present 1.png" width="700"/>
+<img src="/media/reg-present-1.png" width="700"/>
 
 ## Dataset with DOI for testing purpose
 
@@ -80,7 +80,7 @@ Once signal intensity and voxel sizes have been checked, save your modified imag
 
 ## The registration manager window
 
-<img src="/media/Fijiyama reg manager.png" title="fig:Fijiyama_reg_manager.png" width="350" alt="Fijiyama_reg_manager.png" /> Once a registration scenario starts, you can interact with the registration manager window through (see image) :
+<img src="/media/fijiyama-reg-manager.png" title="fig:Fijiyama_reg_manager.png" width="350" alt="Fijiyama_reg_manager.png" /> Once a registration scenario starts, you can interact with the registration manager window through (see image) :
 
 -   The log window : a guide to remember last operations, and to understand what the plugin expects from you
 

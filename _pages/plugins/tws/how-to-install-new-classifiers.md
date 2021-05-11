@@ -16,19 +16,19 @@ We assume you are familiar with the [Trainable Weka Segmentation](/plugins/tws) 
 
 To get started, from the main plugin GUI click on the Weka button (on the bottom left corner of the window):
 
-<img src="/media/TWS-GUI-ubuntu.png" width="700"/>
+<img src="/media/tws-gui-ubuntu.png" width="700"/>
 
 This will launch the Weka GUI Chooser and, if it is the first time, a warning dialog will be displayed to warn you about the package manager:
 
-![](/media/Weka-GUI-Chooser-package-warning-ubuntu.png "Weka-GUI-Chooser-package-warning-ubuntu.png")
+![](/media/weka-gui-chooser-package-warning-ubuntu.png "Weka-GUI-Chooser-package-warning-ubuntu.png")
 
 We can just click OK, go the Weka GUI Chooser window and look for the package manager under the menu {% include bc path='Tools | Package manager'%}, or by pressing {% include key keys='Ctrl|U' %}:
 
-![](/media/Weka-GUI-Chooser-package-manager.png "Weka-GUI-Chooser-package-manager.png")
+![](/media/weka-gui-chooser-package-manager.png "Weka-GUI-Chooser-package-manager.png")
 
 This will open the Weka Package Manager window:
 
-<img src="/media/Weka-package-manager-window.png" width="700"/>
+<img src="/media/weka-package-manager-window.png" width="700"/>
 
 ### Adding a new classifier
 
@@ -36,22 +36,22 @@ Once the package manager is open, we can select any "package" from the displayed
 
 In this tutorial we show how to install a new classifier, in particular the *ClassificationViaClustering* classifier. For that reason, we scroll down until we find the packaged called "classificationViaClustering" and click on "/downloads":
 
-<img src="/media/Weka-package-manager-classificationViaClustering.png" width="700"/>
+<img src="/media/weka-package-manager-classificationviaclustering.png" width="700"/>
 
 A confirmation dialog will pop up:
 
-![](/media/Weka-package-manager-confirmation.png "Weka-package-manager-confirmation.png")
+![](/media/weka-package-manager-confirmation.png "Weka-package-manager-confirmation.png")
 
 We click on "Yes" and another dialog will pop up to warn us about closing any active Weka application window that we might have open:
 
-![](/media/Weka-warning-install-package.png "Weka-warning-install-package.png")
+![](/media/weka-warning-install-package.png "Weka-warning-install-package.png")
 
 We click OK and the package will be installed. If everything goes right, the package should be listed with a "Yes" in the "Loaded" column:
 
-<img src="/media/Weka-package-manager-loaded-package.png" width="700"/>
+<img src="/media/weka-package-manager-loaded-package.png" width="700"/>
 
 This means the *ClassificationViaClustering* classifier **is now installed** and ready to use. We can check it out by going to the settings dialog of the [Trainable Weka Segmentation](/plugins/tws) plugin and confirming the classifier is now listed:
 
-![](/media/TWS-settings-new-classifier.png "TWS-settings-new-classifier.png")
+![](/media/tws-settings-new-classifier.png "TWS-settings-new-classifier.png")
 
   

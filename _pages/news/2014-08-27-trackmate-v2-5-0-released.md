@@ -28,7 +28,7 @@ There are tiny differences with the previous version, notably in the way cost th
 
 [TrackScheme](/plugins/trackmate/trackscheme) now features a search box and proper row and column headers.
 
-<img src="/media/TrachSchemeSearchBar.png" width="600"/>
+<img src="/media/trachschemesearchbar.png" width="600"/>
 
 ## Other improvement
 

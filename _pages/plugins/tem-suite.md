@@ -27,7 +27,7 @@ The easiest way to install the TEM suite of plugins is to use the FIJI updater:
 
 This will install the plugins in a plugin/sripts/TEM folder, which has the advantage of creating it's own menu item in ImageJ, so you don't have to go hunting for it in the massive Plugins menu.
 
-![](/media/Menu.jpg "Menu.jpg")
+![](/media/menu.jpg "Menu.jpg")
 
 ### Manual Installation
 

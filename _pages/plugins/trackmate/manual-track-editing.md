@@ -62,7 +62,7 @@ Almost all polar bodies are incorrectly detected, and the localization of cells 
 
 ## Generating irrelevant tracks
 
-![](/media/Celegans-5pc 17timepoints-Incorrect.png "Celegans-5pc_17timepoints-Incorrect.png")
+![](/media/celegans-5pc-17timepoints-incorrect.png "Celegans-5pc_17timepoints-Incorrect.png")
 
 Normally, TrackMate can robustly handles track splitting events, representing *e.g.* cell division. Though this happens in this movie, we choose to dismiss this possibility in the automated tracking part.
 
@@ -83,17 +83,17 @@ Move to the *Display options* panel, skipping the track filtering part.
 
 [TrackScheme](/plugins/trackmate/trackscheme) also allows manually editing the tracks. Press the **TrackScheme** button on the last panel. By default, the tracks are displayed as colored circles joined by lines. Each circle represent a spot, and the lines represent a link connecting two dots. The selection in TrackScheme is share across TrackMate, so if you select one circle, it will be highlighted in the HyperStack viewer as well (circled in green).
 
-<figure><img src="/media/TrackScheme Start.png" title="TrackScheme_Start.png" width="700" alt="TrackScheme_Start.png" /><figcaption aria-hidden="true">TrackScheme_Start.png</figcaption></figure>
+<figure><img src="/media/trackscheme-start.png" title="TrackScheme_Start.png" width="700" alt="TrackScheme_Start.png" /><figcaption aria-hidden="true">TrackScheme_Start.png</figcaption></figure>
 
 TrackScheme launches with a simple style: each spot is represented with a circle. You can get more information by changing the style. Next to the **Style** button in the TrackScheme toolbar, there is combo-box ini which you can select either **simple** or **full**. Select **full**. Each spot is now represented by a rounded rectangle, with the default name printed on the right. Go back in the TrackScheme toolbar. Next to the style combo-box, there is greyed-out button showing 3 pictures. Press it; after some time, each spot in TrackScheme will contain a thumbnail of the spot taken in the raw image. This is very handy to quickly detect detection problems.
 
-<figure><img src="/media/TrackScheme Full.png" title="TrackScheme_Full.png" width="700" alt="TrackScheme_Full.png" /><figcaption aria-hidden="true">TrackScheme_Full.png</figcaption></figure>
+<figure><img src="/media/trackscheme-full.png" title="TrackScheme_Full.png" width="700" alt="TrackScheme_Full.png" /><figcaption aria-hidden="true">TrackScheme_Full.png</figcaption></figure>
 
 ## TrackScheme in a nutshell
 
 You can do quite some things using TrackScheme, notably track analysis. This is not the ofcus of this tutorial, we will simply be focusing on the track editing features. However, here is a brief description of what the toolbar buttons do.
 
-![](/media/TrackSchemeToolbarExplanation.png "TrackSchemeToolbarExplanation.png")
+![](/media/trackschemetoolbarexplanation.png "TrackSchemeToolbarExplanation.png")
 
 We will be mainly using the **Redo layout** and button.
 

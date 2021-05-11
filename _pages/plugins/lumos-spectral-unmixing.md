@@ -14,19 +14,19 @@ Learning Unsupervised Means of Spectra (LUMoS) is a blind spectral unmixing meth
 
 Due to the overlapping emission spectra of fluorophores, fluorescence microscopy images often have bleed-through problems, leading to a false positive detection. This problem is almost unavoidable when the samples are labeled with three or more fluorophores and completely unavoidable when fluorophores outnumber detection channels.
 
-<figure><img src="/media/Spectral overlap.png" title="spectral_overlap.png" width="1000" alt="spectral_overlap.png" /><figcaption aria-hidden="true">spectral_overlap.png</figcaption></figure>
+<figure><img src="/media/spectral-overlap.png" title="spectral_overlap.png" width="1000" alt="spectral_overlap.png" /><figcaption aria-hidden="true">spectral_overlap.png</figcaption></figure>
 
 # *K*-means clustering
 
 *K*-means is an unsupervised learning clustering technique. Given a set of input datapoints, *k*-means clusters the points into *k* different groups based on their values. K-means defines clusters by iteratively calculating the centroid of each cluster and assigning datapoints to the nearest cluster centroid. This process is depicted below:
 
-<img src="/media/K-means.png" width="600"/>
+<img src="/media/k-means.png" width="600"/>
 
 # *K*-means for spectral unmixing
 
 In the context of spectral unmixing, the inputs to *k*-means are individual pixels. Each pixel is represented by a *1 x n* vector where *n* is the number of detection channels in the image. This vector is referred to as the "spectral signature" of the pixel. Pixels with similar spectral signatures are grouped into the same cluster. Each cluster is then represented as an inividual channel in the output image. The output channels correspond to unmixed fluorophores. This process will also separate background, autofluorescence and colocalization into distinct output channels.
 
-<figure><img src="/media/Spectral unmixing example.png" title="spectral_unmixing_example.png" width="800" alt="spectral_unmixing_example.png" /><figcaption aria-hidden="true">spectral_unmixing_example.png</figcaption></figure>
+<figure><img src="/media/spectral-unmixing-example.png" title="spectral_unmixing_example.png" width="800" alt="spectral_unmixing_example.png" /><figcaption aria-hidden="true">spectral_unmixing_example.png</figcaption></figure>
 
 # Usage
 
@@ -34,7 +34,7 @@ To install the plugin in your ImageJ or Fiji installation, add the update site L
 
 Alternatively, a full Fiji distribution with LUMoS already packaged can be downloaded. Unlike the update site, this packaged download is PC only. [PC only download](https://www.urmc.rochester.edu/MediaLibraries/URMCMedia/multiphoton-core/documents/Fiji-app-for-LUMoS-spectral-unmixing.zip).
 
-A user guide for this plugin with step by step instructions can be found [ here](/media/Spectral Unmixing User Guide.pdf).
+A user guide for this plugin with step by step instructions can be found [ here](/media/spectral-unmixing-user-guide.pdf).
 
 # See Also
 

@@ -77,7 +77,7 @@ A common way to start the server with the manager context looks like below:
 
 The keystore password should be provided when the server starts. Then, the /manager context enables users to handle the datasets with the web interface.
 
-The web interface of /manager context looks like this: <img src="/media/BigDataServer Manager.png" width="600"/>
+The web interface of /manager context looks like this: <img src="/media/bigdataserver-manager.png" width="600"/>
 
 The server will keep running until you cancel it with {% include key keys='Ctrl|C' %} or close the shell. To start the server in the background run it in a screen session:
 

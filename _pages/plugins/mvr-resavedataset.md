@@ -10,7 +10,7 @@ Resaving a dataset is a simple two step process:
 
 ![](/media/MVR resave1.png "MVR_resave1.png")
 
-![](/media/MVR resave2.png "MVR_resave2.png")
+![](/media/mvr-resave2.png "MVR_resave2.png")
 
 Some log output shows the resaving process.
 
@@ -27,4 +27,4 @@ Some log output shows the resaving process.
 
 Finally you can use [BigDataViewer](/plugins/bdv) to view your data set.
 
-![](/media/MVR resave3.png "MVR_resave3.png")
+![](/media/mvr-resave3.png "MVR_resave3.png")

@@ -4,7 +4,7 @@ title: Open Source
 categories: Development
 ---
 
-![ 64px \| left \| link=https://opensource.org/](/media/Osi symbol.png "fig: 64px | left | link=https://opensource.org/") The [ImageJ](/about) project, and related projects in the [SciJava](SciJava) software ecosystem, are open source software projects. See the [Licensing](/licensing) page for details.
+![ 64px \| left \| link=https://opensource.org/](/media/osi-symbol.png "fig: 64px | left | link=https://opensource.org/") The [ImageJ](/about) project, and related projects in the [SciJava](SciJava) software ecosystem, are open source software projects. See the [Licensing](/licensing) page for details.
 
 Everybody is welcome to [contribute](/about/contributing) with [plugins](/plugins), patches, [bug reports](/help/report-a-bug), [tutorials](/tutorials), [documentation](/learn), and artwork.
 

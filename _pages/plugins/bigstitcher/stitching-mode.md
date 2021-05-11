@@ -7,7 +7,7 @@ After opening a XML file the main windows will appear in the **Stitching Mode**.
 
 ### The main window
 
-<img src="/media/BigStitcher Overview 1.png" width="1000"/>
+<img src="/media/bigstitcher-overview-1.png" width="1000"/>
 
 -   At the top of the window **(1)**, you can switch between Stitching and MultiView mode.
 
@@ -31,13 +31,13 @@ After opening a XML file the main windows will appear in the **Stitching Mode**.
 
 If the dataset is in a format suitable for quick visualization by [BigDataViewer](/plugins/bdv) (e.g. multiresolution HDF5 or virtually loading), a BigDataViewer window in which selected Views can be visualized will open along with the BigStitcher main window. For other datasets, you can open BigDataViewer manually via the menu.
 
-<img src="/media/BigStitcher Overview 2.png" width="1000"/>
+<img src="/media/bigstitcher-overview-2.png" width="1000"/>
 
 ### The right-click menu
 
 Select the views you wish to process in the main window and right-click to open a menu with further options.
 
-<img src="/media/BigStitcher Overview 3.png" width="500"/>
+<img src="/media/bigstitcher-overview-3.png" width="500"/>
 
 -   **Displaying (1)** shows functions for displaying the data in BigDataViewer or in ImageJ ([details](/plugins/bigstitcher/bdv)).
 -   **Preprocessing (2)** shows functions for manually moving views ([details](/plugins/bigstitcher/manual-translation)), selecting the best illuminations ([details](/plugins/bigstitcher/select-illumination)) and performing flat-field correction ([details](/plugins/bigstitcher/flatfield-correction)).

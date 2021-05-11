@@ -12,29 +12,29 @@ Often you want to apply a common operation to all images in a given directory. T
 
 First, start the Macro Recorder:
 
-![](/media/How to apply a common operation to a complete directory-1.jpg "How_to_apply_a_common_operation_to_a_complete_directory-1.jpg")
+![](/media/how-to-apply-a-common-operation-to-a-complete-directory-1.jpg "How_to_apply_a_common_operation_to_a_complete_directory-1.jpg")
 
 This will open the Macro Recorder window:
 
-![](/media/How to apply a common operation to a complete directory-2.jpg "How_to_apply_a_common_operation_to_a_complete_directory-2.jpg")
+![](/media/how-to-apply-a-common-operation-to-a-complete-directory-2.jpg "How_to_apply_a_common_operation_to_a_complete_directory-2.jpg")
 
 Now perform the operation on a single image. Make sure that you save the image at the end.
 
 Exmaple: cropping the image. First, select a rectangle:
 
-![](/media/How to apply a common operation to a complete directory-3.jpg "How_to_apply_a_common_operation_to_a_complete_directory-3.jpg")
+![](/media/how-to-apply-a-common-operation-to-a-complete-directory-3.jpg "How_to_apply_a_common_operation_to_a_complete_directory-3.jpg")
 
 Then crop it.
 
-![](/media/How to apply a common operation to a complete directory-4.jpg "How_to_apply_a_common_operation_to_a_complete_directory-4.jpg")
+![](/media/how-to-apply-a-common-operation-to-a-complete-directory-4.jpg "How_to_apply_a_common_operation_to_a_complete_directory-4.jpg")
 
 After saving, the recorder window will show this:
 
-![](/media/How to apply a common operation to a complete directory-6.jpg "How_to_apply_a_common_operation_to_a_complete_directory-6.jpg")
+![](/media/how-to-apply-a-common-operation-to-a-complete-directory-6.jpg "How_to_apply_a_common_operation_to_a_complete_directory-6.jpg")
 
 Click on the **Create** button, and you will get this:
 
-![](/media/How to apply a common operation to a complete directory-7.jpg "How_to_apply_a_common_operation_to_a_complete_directory-7.jpg")
+![](/media/how-to-apply-a-common-operation-to-a-complete-directory-7.jpg "How_to_apply_a_common_operation_to_a_complete_directory-7.jpg")
 
 ## Step 2: Make the macro generic
 
@@ -114,10 +114,10 @@ In our case, the file would simply contain these lines:
 
 Find the *Multiple ImageProcessor* plugin in the *Process* menu:
 
-![](/media/How to apply a common operation to a complete directory-8.jpg "How_to_apply_a_common_operation_to_a_complete_directory-8.jpg")
+![](/media/how-to-apply-a-common-operation-to-a-complete-directory-8.jpg "How_to_apply_a_common_operation_to_a_complete_directory-8.jpg")
 
 The dialog would need to be filled out like this:
 
-![](/media/How to apply a common operation to a complete directory-9.jpg "How_to_apply_a_common_operation_to_a_complete_directory-9.jpg")
+![](/media/how-to-apply-a-common-operation-to-a-complete-directory-9.jpg "How_to_apply_a_common_operation_to_a_complete_directory-9.jpg")
 
 

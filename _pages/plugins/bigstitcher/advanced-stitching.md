@@ -7,7 +7,7 @@ title: BigStitcher Advanced stitching
 
 In addition to the default Phase Correlation-based pairwise shift determination, we offer some alternative methods and advanced parameterization, as well as non-standard grouping of the views in your dataset.
 
-<img src="/media/BigStitcher stitch 0.png" width="600"/>
+<img src="/media/bigstitcher-stitch-0.png" width="600"/>
 
 If you want to proceed straight to the next steps after calculating the shifts, we offer the same options under {% include bc path='Stitching Wizard|Stitch dataset (expert) ...'%}
 
@@ -29,7 +29,7 @@ First, you will be asked for parameters for the phase correlation calculation:
 
 Next, you will be asked how to treat grouped views and which downsampling of the images to use. This is the same as in the simple mode, so please look [to the corresponding page](/plugins/bigstitcher/pairwise-shift#pairwise-shift-calculation) for details.
 
-<img src="/media/BigStitcher stitch advanced phasecorr.png" width="600"/>
+<img src="/media/bigstitcher-stitch-advanced-phasecorr.png" width="600"/>
 
 ## Iterative alignment via Lucas-Kanade algorithm
 
@@ -43,7 +43,7 @@ First, you will be asked for three parameters:
 
 Next, you will be asked how to treat grouped views and which downsampling of the images to use. This is the same as in the simple mode, so please look [to the corresponding page](/plugins/bigstitcher/pairwise-shift#pairwise-shift-calculation) for details.
 
-<img src="/media/BigStitcher stitch advanced lk.png" width="600"/>
+<img src="/media/bigstitcher-stitch-advanced-lk.png" width="600"/>
 
 ## Interest point-based shift calculation
 
@@ -67,11 +67,11 @@ In the next two dialogs, you will be asked which views to include in the calcula
 
 -   In the first dialog, you can select whether all instances of an attribute or just the currently selected views should be processed. For example, in the example below, we use all Channels, Tiles and Illuminations, but only for the currently selected timepoint and angle.
 
-<img src="/media/BigStitcher stitch 6.png" width="600"/>
+<img src="/media/bigstitcher-stitch-6.png" width="600"/>
 
 -   Select how to process the different attributes. For example, in the figure below, we will *treat TimePoints and Angles individually*, which means that we will compute shifts between view pairs separately for each time point and angle. Likewise, we *group Channels and Illuminations*, meaning that we will combine all channels and illumination directions for a tile into one image beforw calculating shifts. Finally, we *compare* Tiles, which means that shifts will be calculated between tiles.
 
-<img src="/media/BigStitcher stitch 8.png" width="600"/>
+<img src="/media/bigstitcher-stitch-8.png" width="600"/>
 
 {% include warning-box content='Theoretically, you can use the second dialog to generate arbitrary groupings of the data, e.g. compare Channels but group Tiles for chromatic shift correction. Not all of these groupings might make sense and not all of them can be properly visualized in the UI (e.g. for *interactive link preview*). Note that you have to use for the same grouping of the data in the subsequent *global optimization* step.' %}
 

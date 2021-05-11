@@ -19,7 +19,7 @@ To install the plugin, activate the **PixFRET** [update site](/update-sites/foll
 
 ## Usage
 
-Please refer to the [user guide (PDF)](/media/PixFRET userguide.pdf).
+Please refer to the [user guide (PDF)](/media/pixfret-userguide.pdf).
 
 ## Publication
 

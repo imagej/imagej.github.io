@@ -10,7 +10,7 @@ categories: Related Software,Citable,SciJava,OME
 {% capture source%}
 {% include github org='openmicroscopy' repo='bioformats' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='OME Bio-Formats plugins' logo='<img src="/media/Bio-formats-icon.png" width="96"/>' author=' [Open Microscopy Environment](https://www.openmicroscopy.org/) :  
+{% include info-box software='ImageJ' name='OME Bio-Formats plugins' logo='<img src="/media/bio-formats-icon.png" width="96"/>' author=' [Open Microscopy Environment](https://www.openmicroscopy.org/) :  
 - [UW-Madison LOCI](/orgs/loci)  
 - [Glencoe Software](https://www.glencoesoftware.com/)  
 - [University of Dundee](https://www.dundee.ac.uk/)' maintainer='OME development team' filename=' [See Bio-Formats /downloads page](https://downloads.openmicroscopy.org/bio-formats/)' source=source latest-version=' [See Bio-Formats /downloads page](https://downloads.openmicroscopy.org/bio-formats/)' status='active' category='[:Category:Import-Export](Category_Import-Export)' %}

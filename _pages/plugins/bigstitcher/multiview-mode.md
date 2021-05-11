@@ -23,6 +23,6 @@ Selecting the desired views and right-clicking in the main view list brings up a
 -   **Interest Points** shows functions for visualizing and removing interest points.
 -   **Modifications** shows functions for resaving the dataset.
 
-![](/media/BigStitcher Overview 5.png "BigStitcher_Overview_5.png")
+![](/media/bigstitcher-overview-5.png "BigStitcher_Overview_5.png")
 
 Go back to the [main page](/plugins/bigstitcher#documentation)

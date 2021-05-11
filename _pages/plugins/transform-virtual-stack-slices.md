@@ -20,7 +20,7 @@ categories: Plugins
 {% capture source%}
 {% include github org='fiji' repo='register\_virtual\_stack\_slices' %}
 {% endcapture %}
-{% include info-box name='Transform Virtual Stack Slices' software='Fiji' author=author maintainer=maintainer filename=filename source=source released='September 24<sup>th</sup>, 2009' latest-version='3.0.0, February 17<sup>th</sup>, 2016' status='stable, active' category='[Registration](Category_Registration), [Transform](Category_Transform)' %}{\| \|style="vertical-align:top" \| <img src="/media/Transform Virtual Stack scheme.png" title="fig:Transform Virtual Stack scheme - All images are transformed based on the XML files" width="381" alt="Transform Virtual Stack scheme - All images are transformed based on the XML files" /> \|}
+{% include info-box name='Transform Virtual Stack Slices' software='Fiji' author=author maintainer=maintainer filename=filename source=source released='September 24<sup>th</sup>, 2009' latest-version='3.0.0, February 17<sup>th</sup>, 2016' status='stable, active' category='[Registration](Category_Registration), [Transform](Category_Transform)' %}{\| \|style="vertical-align:top" \| <img src="/media/transform-virtual-stack-scheme.png" title="fig:Transform Virtual Stack scheme - All images are transformed based on the XML files" width="381" alt="Transform Virtual Stack scheme - All images are transformed based on the XML files" /> \|}
 
 This plugin takes a sequence of image slices stored in a folder, and delivers a list of transformed image slices (with enlarged canvas) applying a list of transforms stored as **.XML** files in another folder.
 
@@ -36,7 +36,7 @@ This is a **complementary plugin** of [Register Virtual Stack Slices](/plugins/r
 -   **Transform folder**: You have a folder with the transform files (from a [Register Virtual Stack Slices](/plugins/register-virtual-stack-slices) execution).
 -   **Interpolate**: Toggle the interpolation for the result images.
 
-**Step 1**: launch the "Plugins - Transform - Transform Virtual Stack Slices" plugin. {% include thumbnail src='/media/Main-Dialog-Transform Virtual Stack.png' title='Transform Virtual Stack main dialog'%} **Step 2**: choose the source, output and transform folders:
+**Step 1**: launch the "Plugins - Transform - Transform Virtual Stack Slices" plugin. {% include thumbnail src='/media/main-dialog-transform-virtual-stack.png' title='Transform Virtual Stack main dialog'%} **Step 2**: choose the source, output and transform folders:
 
 -   Select a source folder containing the slices, at one slice per image file.
 -   Select the target folder where resulting transformed slices will be automatically stored as TIFF files.

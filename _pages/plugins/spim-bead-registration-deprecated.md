@@ -14,7 +14,7 @@ categories: Plugins,Registration
 
 Please note that the SPIM registration plugin available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
--   S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", *Nature Methods*, **7**(6):418-419. [Webpage](http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html) [PDF](/media/Nmeth0610-418.pdf) [Supplement](/media/Nmeth0610-418-S1.pdf)
+-   S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", *Nature Methods*, **7**(6):418-419. [Webpage](http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html) [PDF](/media/nmeth0610-418.pdf) [Supplement](/media/nmeth0610-418-s1.pdf)
 
 For technical details about the bead-based registration method and SPIM imaging see [SPIM Registration Method](/plugins/spim-registration/method).
 
@@ -50,7 +50,7 @@ After all individual timepoints are registered and the cropping area is defined 
 
 ## ***deprecated*** SPIM bead-based registration
 
-{% include thumbnail src='/media/SPIM Registration.png' title='Shows the SPIM Registration Dialog.'%}
+{% include thumbnail src='/media/spim-registration.png' title='Shows the SPIM Registration Dialog.'%}
 
 -   **SPIM Data Directory**: Fill in the directory name that contains all the image files. You can either drag&drop the directory, browse for it or type the name directly.
 
@@ -150,7 +150,7 @@ The multi-channel SPIM Registration extends the normal registration by the abili
 
 ## Advanced SPIM Registration
 
-{% include thumbnail src='/media/Advanced SPIM Registration.png' title='Shows the Advanced SPIM Registration Dialog.'%}  
+{% include thumbnail src='/media/advanced-spim-registration.png' title='Shows the Advanced SPIM Registration Dialog.'%}  
 For advanced SPIM registration all available parameters can be tuned using two configuration files (configuration.txt and VariablesAssignment.txt, see below). Contact the author for further details [2](http://fly.mpi-cbg.de/preibisch/contact.html).
 
 ### configuration.txt

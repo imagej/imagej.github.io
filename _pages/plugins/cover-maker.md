@@ -21,7 +21,7 @@ categories: Tutorials,Plugins
 
 ## Introduction
 
-<img src="/media/Nature cover.png" title="fig:Nature cover for the paper on the developmental hourglass ." width="166" alt="Nature cover for the paper on the developmental hourglass ." />This project explores the algorithms for reconstructing scientific images as a combination of other scientific images drawing from a large database of scientific imagery. The resulting image can be visually stunning given that a large database with good balance of colors is available. One such database consisting of about 66,000 images of gene expression patterns in Drosophila embryogenesis is provided [here](#Databases) as a starting point. The results of the plugin can be used as material for cover art such as for example the Nature cover on the right.
+<img src="/media/nature-cover.png" title="fig:Nature cover for the paper on the developmental hourglass ." width="166" alt="Nature cover for the paper on the developmental hourglass ." />This project explores the algorithms for reconstructing scientific images as a combination of other scientific images drawing from a large database of scientific imagery. The resulting image can be visually stunning given that a large database with good balance of colors is available. One such database consisting of about 66,000 images of gene expression patterns in Drosophila embryogenesis is provided [here](#Databases) as a starting point. The results of the plugin can be used as material for cover art such as for example the Nature cover on the right.
 
 There are many online or offline solutions available for reconstructing images in this way, some of them undoubtedly more sophisticated than the CoverMaker. The CoverMaker is open source, integrated into Fiji and so can serve as platform for exploring the associated image analysis questions. Everyone is welcome to improve the code and the algorithms, contribute more image databases and show off the results of their experiments.
 
@@ -33,7 +33,7 @@ Please note that the Nature cover was NOT made with the CoverMaker plugin, but i
 {% capture title%}
 **Drawing of Haeckel embryos.** For afficionados this is in fact Romanes' 1892 copy of the {% include wikipedia title='Ernst Haeckel' text='Ernst Haeckel'%} drawing. If you consider Haeckel a fraud, think again and start by reading the excellent Robert J. Richards book "[The Tragic Sense of Life](http://www.amazon.com/The-Tragic-Sense-Life-Evolutionary/dp/0226712141)".
 {% endcapture %}
-{% include thumbnail src='/media/Haeckel embryos white.png' title=title %} | <figure><img src="/media/Haeckel embryos cover.png" title="CoverMaker rendition of Haeckel embryos The image was generated using a database of 66,579 images of gene expression pattern during Drosophila embryogenesis visualized by histochemical RNA in situ hybridization." width="350" alt="CoverMaker rendition of Haeckel embryos The image was generated using a database of 66,579 images of gene expression pattern during Drosophila embryogenesis visualized by histochemical RNA in situ hybridization." /><figcaption aria-hidden="true"><strong>CoverMaker rendition of Haeckel embryos</strong> The image was generated using a database of 66,579 images of gene expression pattern during Drosophila embryogenesis visualized by histochemical RNA in situ hybridization.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></figcaption></figure><section class="footnotes" role="doc-endnotes"><hr /><ol><li id="fn1" role="doc-endnote">{% include cite content='journal' title='Systematic determination of patterns of gene expression during Drosophila embryogenesis.' author='P. Tomancak, A. Beaton, R. Weiszmann, E. Kwan, S. Shu, S.E. Lewis, S. Richards, M. Ashburner, V. Hartenstein, S.E. Celniker, G.M. Rubin' journal='Genome Biology' pages='88–88' volume='3' number='12' year='2002' %}<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></li><li id="fn2" role="doc-endnote">{% include cite content='journal' title='Global analysis of patterns of gene expression during Drosophila embryogenesis.' author='P. Tomancak, B.P. Berman, A. Beaton, R. Weiszmann, E. Kwan, V. Hartenstein, S.E. Celniker, G.M. Rubin' journal='Genome Biology' pages='145–145' volume='8' number='7' year='2007' %}<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></li></ol></section> |
+{% include thumbnail src='/media/haeckel-embryos-white.png' title=title %} | <figure><img src="/media/haeckel-embryos-cover.png" title="CoverMaker rendition of Haeckel embryos The image was generated using a database of 66,579 images of gene expression pattern during Drosophila embryogenesis visualized by histochemical RNA in situ hybridization." width="350" alt="CoverMaker rendition of Haeckel embryos The image was generated using a database of 66,579 images of gene expression pattern during Drosophila embryogenesis visualized by histochemical RNA in situ hybridization." /><figcaption aria-hidden="true"><strong>CoverMaker rendition of Haeckel embryos</strong> The image was generated using a database of 66,579 images of gene expression pattern during Drosophila embryogenesis visualized by histochemical RNA in situ hybridization.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></figcaption></figure><section class="footnotes" role="doc-endnotes"><hr /><ol><li id="fn1" role="doc-endnote">{% include cite content='journal' title='Systematic determination of patterns of gene expression during Drosophila embryogenesis.' author='P. Tomancak, A. Beaton, R. Weiszmann, E. Kwan, S. Shu, S.E. Lewis, S. Richards, M. Ashburner, V. Hartenstein, S.E. Celniker, G.M. Rubin' journal='Genome Biology' pages='88–88' volume='3' number='12' year='2002' %}<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></li><li id="fn2" role="doc-endnote">{% include cite content='journal' title='Global analysis of patterns of gene expression during Drosophila embryogenesis.' author='P. Tomancak, B.P. Berman, A. Beaton, R. Weiszmann, E. Kwan, V. Hartenstein, S.E. Celniker, G.M. Rubin' journal='Genome Biology' pages='145–145' volume='8' number='7' year='2007' %}<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></li></ol></section> |
 
 ## Gallery
 
@@ -79,7 +79,7 @@ Finally, for printing poster size images, the plugin will generate in the second
         <p>Below we monitor the progress of building the cover</p>
       </td>
       <td>
-        <p>{% include thumbnail src='/media/CoverMaker dialog 1.png' title='The initial CoverMaker dialog box'%}</p>
+        <p>{% include thumbnail src='/media/covermaker-dialog-1.png' title='The initial CoverMaker dialog box'%}</p>
       </td>
       <td></td>
     </tr>
@@ -89,7 +89,7 @@ Finally, for printing poster size images, the plugin will generate in the second
 
 |                                                                                                         |                                                                                                           |                                                                                                           |                                                                                                             |                                                                                                               |     |
 |---------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|-----|
-| {% include thumbnail src='/media/Cover buildup 1.png' title='Starting'%} | {% include thumbnail src='/media/Cover buildup 2.png' title='Progress 1'%} | {% include thumbnail src='/media/Cover buildup 3.png' title='Progress 2'%} | {% include thumbnail src='/media/Cover buildup 4.png' title='Almost there'%} | {% include thumbnail src='/media/Cover buildup 5.png' title='Finished Cover'%} |     |
+| {% include thumbnail src='/media/cover-buildup-1.png' title='Starting'%} | {% include thumbnail src='/media/cover-buildup-2.png' title='Progress 1'%} | {% include thumbnail src='/media/cover-buildup-3.png' title='Progress 2'%} | {% include thumbnail src='/media/cover-buildup-4.png' title='Almost there'%} | {% include thumbnail src='/media/cover-buildup-5.png' title='Finished Cover'%} |     |
 
 {::nomarkdown}
 <table>
@@ -101,7 +101,7 @@ Finally, for printing poster size images, the plugin will generate in the second
         <p>Next we need to click on <strong>Browse</strong> and locate the <a href="#Databases">zip file</a> containing the originals. Finally we click on <strong>ok</strong> and the building of the final high resolution output image will commence as shown below. Note that now the image grows sequentially since we already know where to place the images from the initial run and the <a href="#how-does-it-work">randomization</a> is no longer necessary.</p>
       </td>
       <td>
-        <p>{% include thumbnail src='/media/CoverMaker dialog 2.png' title='The second CoverMaker dialog box for saving high resolution output'%}</p>
+        <p>{% include thumbnail src='/media/covermaker-dialog-2.png' title='The second CoverMaker dialog box for saving high resolution output'%}</p>
       </td>
     </tr>
   </tbody>
@@ -110,7 +110,7 @@ Finally, for printing poster size images, the plugin will generate in the second
 
 |                                                                                                               |                                                                                                                 |                                                                                                                 |                                                                                                                   |                                                                                                                     |     |
 |---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|-----|
-| {% include thumbnail src='/media/Hires cover buildup 1.png' title='Starting'%} | {% include thumbnail src='/media/Hires cover buildup 2.png' title='Progress 1'%} | {% include thumbnail src='/media/Hires cover buildup 3.png' title='Progress 2'%} | {% include thumbnail src='/media/Hires cover buildup 4.png' title='Almost there'%} | {% include thumbnail src='/media/Hires cover buildup 5.png' title='Finished Cover'%} |     |
+| {% include thumbnail src='/media/hires-cover-buildup-1.png' title='Starting'%} | {% include thumbnail src='/media/hires-cover-buildup-2.png' title='Progress 1'%} | {% include thumbnail src='/media/hires-cover-buildup-3.png' title='Progress 2'%} | {% include thumbnail src='/media/hires-cover-buildup-4.png' title='Almost there'%} | {% include thumbnail src='/media/hires-cover-buildup-5.png' title='Finished Cover'%} |     |
 
 When we zoom in on the final output image that was generated in this case at 300dpi and compare with the initial reconstructed image we will see the database images with much greater detail. The image can be made almost arbitrarily large and printed as a large poster. *Note*: the downsampler we use does not do a good job upsampling, thus when the originals are too small for a given dpi size combination artifacts in the output image will occur (grid of lines). This exception is currently not handled properly.
 
@@ -119,10 +119,10 @@ When we zoom in on the final output image that was generated in this case at 300
   <tbody>
     <tr class="odd">
       <td>
-        <p>{% include thumbnail src='/media/Lowres zoomin.png' title='Close up on the Initial low resolution image'%}</p>
+        <p>{% include thumbnail src='/media/lowres-zoomin.png' title='Close up on the Initial low resolution image'%}</p>
       </td>
       <td>
-        <p>{% include thumbnail src='/media/Hires zoomin.png' title='Close up on the final high resolution image'%}</p>
+        <p>{% include thumbnail src='/media/hires-zoomin.png' title='Close up on the final high resolution image'%}</p>
       </td>
     </tr>
   </tbody>
@@ -137,13 +137,13 @@ In many ways preparing the image databases is a trickier business than actually 
 
 Before we start searching for images we must decide on the dominant aspect ratio present in our image set. Obviously, since the tiles have all the same dimensions, different aspect ratios of input images would cause deformation during down-sampling to that common tile dimension. Fortunately, since CoverMaker is targeting scientific imaging, in most cases a large image database will have a uniform or one dominant aspect ratio.
 
-{% include thumbnail src='/media/Create database dialog.png' title='Input and output parameters dialog'%} The user must also specify the **aspect ratio** and **base directory** under which the images are to be found.
+{% include thumbnail src='/media/create-database-dialog.png' title='Input and output parameters dialog'%} The user must also specify the **aspect ratio** and **base directory** under which the images are to be found.
 
 The output parameters are the **minimum and maximum tile width and height** of the downsampled tiles. These should be compatible with the aspect ratio (for convenience the width and height are linked in the Dialog box). Users can specify a range of tile dimensions (by specifying minimum and maximum widths and heights) and the script will generate scalings between those bound in increments of one pixel. Note that the range should not be very broad (typically between 10 and 20 pixels). When the minimum and maximum are the same only single tile size will be generated.
 
 Finally the user must specify the **originals width and height** to which the images should be scaled. If these dimensions are the same as the dominant image dimensions on the filesystem, no scaling will occur, however this will duplicate every image encountered during the search. The resulting zip archive could become too large. Note that the images need not be very large as they will be scaled down again when CoverMaker outputs the final image at reasonable resolution.
 
-{% include thumbnail src='/media/CoverMaker database log.png' title='Progress log'%} The script will then recursively traverse the directory tree under this root looking for images with extensions *jpeg*, *jpe* and *jpg*. The extensions to be searched are currently hardcoded. During the search the script will write into ImageJ log the images it encountered and what is being done with them. Hopefully most images will have the matching aspect ratio specified above and will be scaled. Images with different aspect ratios will be skipped.
+{% include thumbnail src='/media/covermaker-database-log.png' title='Progress log'%} The script will then recursively traverse the directory tree under this root looking for images with extensions *jpeg*, *jpe* and *jpg*. The extensions to be searched are currently hardcoded. During the search the script will write into ImageJ log the images it encountered and what is being done with them. Hopefully most images will have the matching aspect ratio specified above and will be scaled. Images with different aspect ratios will be skipped.
 
 The output of the script are two types of files:
 

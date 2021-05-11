@@ -7,7 +7,7 @@ title: Fpbioimage
 {% capture source%}
 {% include github org='fpBioimage' repo='FPBioimageHelper-FIJI' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='FPBioimage Helper Plugin' logo='<img src="/media/FPB Logo.png" width="96"/>' author=' [FPBioimage](http://fpb.ceb.cam.ac.uk)  
+{% include info-box software='ImageJ' name='FPBioimage Helper Plugin' logo='<img src="/media/fpb-logo.png" width="96"/>' author=' [FPBioimage](http://fpb.ceb.cam.ac.uk)  
 Marcus Fantham' Maintainer='Marcus Fantham' source=source %}FPBioimage is an interactive tool for viewing volumetric data in the web browser. To quickly share 3D data with your collaborators using FPBioimage, we provide this useful plugin for ImageJ and FIJI. 
 
 
@@ -17,8 +17,8 @@ Add FPBioimage to your 'Update' sites:
 
 1.  Launch the updater by selecting **Update** from the **Help** menu.
 2.  Click the **Manage update sites** button.
-3.  Tick the **FPBioimage** box: <img src="/media/FPB-manage-update-sites.png" title="fig:FPB-manage-update-sites.png" width="700" alt="FPB-manage-update-sites.png" />
-4.  Click the **Close** button. The updater should now want to install or update some files: <img src="/media/FPB-jars-to-update.png" title="fig:FPB-jars-to-update.png" width="700" alt="FPB-jars-to-update.png" />
+3.  Tick the **FPBioimage** box: <img src="/media/fpb-manage-update-sites.png" title="fig:FPB-manage-update-sites.png" width="700" alt="FPB-manage-update-sites.png" />
+4.  Click the **Close** button. The updater should now want to install or update some files: <img src="/media/fpb-jars-to-update.png" title="fig:FPB-jars-to-update.png" width="700" alt="FPB-jars-to-update.png" />
 5.  Click the **Apply changes** button.
 6.  Restart Fiji when prompted.
 
