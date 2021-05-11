@@ -22,7 +22,7 @@ SOFTWARE.
 -->
 
 <h1>Notable inventions, <span>1910–2000</span></h1>
-<div class="flex-parent">
+<div class="timeline">
 	<div class="input-flex-container">
 		<input type="radio" name="timeline-dot" data-description="1910">
 		<div class="dot-info" data-description="1910">
@@ -74,7 +74,7 @@ SOFTWARE.
 			<span class="year">2000</span>
 			<span class="label">Google AdWords</span>
 		</div>
-		<div id="timeline-descriptions-wrapper">
+		<div class="timeline-descriptions-wrapper">
 			<p data-description="1910">And future Call of Duty players would thank them.</p>
 			<p data-description="1920">Because every kid should get to be Tarzan for a day.</p>
 			<p data-description="1930">And the world rejoiced.</p>

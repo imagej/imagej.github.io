@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="/assets/css/infoboxes.css" />
 		<link rel="stylesheet" href="/assets/css/plugin-index.css"/>
 		<link rel="stylesheet" href="/assets/css/dock.css"/>
+		<link rel="stylesheet" href="/assets/css/timeline.css"/>
 		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
 
 {%- comment -%}
