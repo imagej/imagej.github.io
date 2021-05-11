@@ -51,8 +51,9 @@
   {%- include menu-item title="Getting Started" link="/learn/getting-started" -%}
   {%- include menu-item title="User Guides" link="/learn/user-guides" -%}
   {%- include menu-item title="Tutorials" link="/tutorials" -%}
-  {%- include menu-item title="Tips and Tricks" link="/learn/tips-and-tricks" -%}
   {%- include menu-item title="Presentations" link="/learn/presentations" -%}
+  {%- include menu-item title="Keyboard Shortcuts" link="/learn/keyboard-shortcuts" -%}
+  {%- include menu-item title="Tips and Tricks" link="/learn/tips-and-tricks" -%}
 
   {%- include menu-section title="Supported Platforms" link="/platforms" -%}
     {%- include menu-item title="Windows" link="/platforms/windows" -%}

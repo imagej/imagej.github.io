@@ -1063,7 +1063,7 @@ KNIME_Image_Processing :: software/knime
 KNIP :: software/knime
 Kalman_Stack_Filter :: plugins/kalman-stack-filter
 Kappa :: plugins/kappa
-Keyboard_shortcuts :: TODO
+Keyboard_shortcuts :: learn/keyboard-shortcuts
 Kotlin :: develop/kotlin
 Kuwahara_Filter :: plugins/kuwahara-filter
 KymoResliceWide :: plugins/kymoreslicewide
