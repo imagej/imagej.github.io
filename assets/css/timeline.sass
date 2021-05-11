@@ -32,41 +32,26 @@ $parentMaxWidth: 1000px
 $dotWidth: 25px
 $active: #2C3E50
 $inactive: #AEB6BF
+$sidebarShadowSize: 4px
 
-//body
-//  font-family: 'Quicksand', sans-serif
-//  font-weight: 500
-//  color: #424949
-//  background-color: #ECF0F1
-//  padding: 0 25px
-//  display: flex
-//  flex-direction: column
-//  position: relative
-//h1
-//  text-align: center
-//  height: 38px
-//  margin: 60px 0
-//  span
-//    white-space: nowrap
 .timeline
   display: flex
   flex-direction: column
   justify-content: center
   align-items: center
-//  width: 100%
-//  height: 100%
-  min-height: 500px
+  background: #eee
+  box-shadow: $sidebarShadowSize $sidebarShadowSize $sidebarShadowSize lightgray
+  padding: 1em 3em 1em 1em
 .timeline .input-flex-container
   display: flex
   justify-content: space-around
   align-items: center
   flex-wrap: wrap
-  width: $parentWidth
-  max-width: $parentMaxWidth
+  width: 100%
   position: relative
   z-index: 0
-  margin-left: calc((#{$parentWidth} - #{$dotWidth}) / #{$numDots}) //make up for offset of .dot-info
-  padding-top: 80px;
+  margin-left: calc((#{$parentWidth} - #{$dotWidth}) / #{$numDots} - 20px) //make up for offset of .dot-info
+  padding-top: 8em;
 .timeline input
   width: $dotWidth
   height: $dotWidth
@@ -125,14 +110,14 @@ $inactive: #AEB6BF
     font-size: 12px
     &.year
       bottom: -30px
-      left: 50%
-      transform: translateX(-50%)
+      left: calc(50% + 20px)
+      transform: translateX(calc(-50% - 20px))
     &.label
-      top: -65px
-      left: 0
-      transform: rotateZ(-45deg)
-      width: 70px
+      top: -6.5em
+      transform: rotateZ(-60deg)
+      width: 10em
       text-indent: -10px
+      white-space: nowrap
 
 .timeline .timeline-descriptions-wrapper
   width: 100%
@@ -141,6 +126,7 @@ $inactive: #AEB6BF
   p
     margin-top: 0
     display: none
+    text-align: center
 
 @media (min-width: $parentMaxWidth / $parentWidthBase)
   .timeline .input-flex-container
@@ -156,7 +142,7 @@ $inactive: #AEB6BF
     margin-left: #{-($parentMaxWidth / $numDots) + ($dotWidth / 2)}
 
 
-@media (max-width: 630px)
+@media (max-width: 879px)
   .timeline
     justify-content: initial
   .timeline .input-flex-container
