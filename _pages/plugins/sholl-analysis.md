@@ -7,32 +7,13 @@ artifact: ca.mcgill:Sholl_Analysis
 
 <seo metak="sholl,sholl analysis, plugin,arbor,neuron,morphometry,dendrite, neuroanatomy" metad="sholl,sholl analysis, plugin,arbor,neuron,morphometry,dendrite,neuroanatomy" />
 
-<div style="float:right;">
-
- 
-
-<div style="padding-top:17em;padding-left:1.5em;">
-<div style="font-size:175%;border-bottom:1px dotted #ccc;margin-bottom:0.55em;">
-
-Quick links
-
-</div>
-
-Analysis of traced arbors?:Jump to [Traced Cells](#analysis-of-traced-cells) or [Other tracing software](#external-traces)  
-Segmentation issues?:Jump to [Cf. Segmentation](#cf-segmentation) or [Pre-processing](#pre-processing)  
-Having Problems?:Jump to [FAQs](#faq)  
-
-</div>
-</div>
-
-
  Automated and multithreaded Sholl for direct analysis of fluorescent images and traced morphologies. Features powerful quantifications based on curve fitting. Analysis of data obtained outside of ImageJ is also possible.
 
 ## Introduction
 
-<span id="ca1-cell-mask"></span>[frame\|[Skeletonized](/plugins/skeletonize3d) hippocampal CA1 cell[1] (juvenile mouse) in which apical and basal dendrites have been analyzed [separately](#ca1-cell-plot) and [color coded](#output-options) according to their Sholl profile. Warmer hues indicate higher number of Intersections (*N*). [Critical radius](#critical-radius) (*r<sub>c</sub>*) and [Mean value](#mean-value-of-function) (*N<sub>av</sub>*) are indicated.](File:BitmapSholl-CA1mask.png)
+{% include figure-right name="ca1-cell-mask" image-path="/media/bitmapsholl-ca1mask.png" content="[Skeletonized](/plugins/skeletonize3d) hippocampal CA1 cell([1](#references)) (juvenile mouse) in which apical and basal dendrites have been analyzed [separately](#ca1-cell-plot) and [color coded](#output-options) according to their Sholl profile. Warmer hues indicate higher number of Intersections (*N*). [Critical radius](#critical-radius) (*r<sub>c</sub>*) and [Mean value](#mean-value-of-function) (*N<sub>av</sub>*) are indicated." %}
 
-The Sholl technique[2] is used to describe neuronal arbors. This plugin can perform Sholl directly on 2D and 3D grayscale images of isolated neurons. Its internal algorithm to collect data is based upon how Sholl analysis is done by hand — it creates a series of concentric *shells* (circles or spheres) around the focus of a neuronal arbor, and counts how many times connected voxels defining the arbor intersect the sampling shells. The major advantages of this plugin over other implementations are:
+The Sholl technique([2](#references)) is used to describe neuronal arbors. This plugin can perform Sholl directly on 2D and 3D grayscale images of isolated neurons. Its internal algorithm to collect data is based upon how Sholl analysis is done by hand — it creates a series of concentric *shells* (circles or spheres) around the focus of a neuronal arbor, and counts how many times connected voxels defining the arbor intersect the sampling shells. The major advantages of this plugin over other implementations are:
 
 -   When analyzing images directly, it does not require previous tracing of the arbor (although it can also analyze [traced arbors](#analysis-of-traced-cells))
 -   It combines [curve fitting](#methods-table) with several [methods](#sholl-plots) to automatically retrieve [quantitative descriptors](#metrics) from sampled data, which allows direct statistical comparisons between arbors
@@ -53,7 +34,7 @@ In this mode (bitmap analysis), the plugin requires a [binary image or a segment
 1.  Segment the neuronal arbor using {% include bc path='Image|Adjust|Threshold...' color='white'%} (shortcut: <span style="display:inline-block;">{% include key keys='Shift|T' %} </span>).
 
   
-:N.B.: When using multichannel images, you will have to set the its display mode to *Grayscale* using {% include bc path='Image|Color|Channels Tool...' color='white'%} ({% include key keys='Shift|Z' %}), because images displayed as *Composites* cannot be thresholded.
+**N.B.** When using multichannel images, you will have to set the its display mode to *Grayscale* using {% include bc path='Image|Color|Channels Tool...' color='white'%} ({% include key keys='Shift|Z' %}), because images displayed as *Composites* cannot be thresholded.
 
 1.  Define the center of analysis using a valid [startup ROI](#startup-roi).
 2.  Run {% include bc path='Analysis|Sholl|Sholl Analysis...' color='white'%}, adjusting the default [Parameters](#parameters) in the dialog prompt.
@@ -74,7 +55,7 @@ Multi-point selection:A Multi-point selection (multi-point counter) in which the
 
 ### Cf. Segmentation
 
-Press *More» Cf. Segmentation* to visually confirm which phase of the segmented image will be sampled. This command highlights foreground from background pixels and is particularly useful when analyzing black and white (binary) images or when using the *B&W* lookup table in the Threshold Widget ({% include bc path="Image | Adjust | Threshold..." %} {% include key keys='Shift|T' %}). *Cf. Segmentation* allows you to ensure that you are measuring neuronal processes and not the interstitial spaces between them. Here is an example using an axonal arbor of a Drosophila olfactory neuron from the [DIADEM](http://diademchallenge.org) dataset[3]:
+Press *More» Cf. Segmentation* to visually confirm which phase of the segmented image will be sampled. This command highlights foreground from background pixels and is particularly useful when analyzing black and white (binary) images or when using the *B&W* lookup table in the Threshold Widget ({% include bc path="Image | Adjust | Threshold..." %} {% include key keys='Shift|T' %}). *Cf. Segmentation* allows you to ensure that you are measuring neuronal processes and not the interstitial spaces between them. Here is an example using an axonal arbor of a Drosophila olfactory neuron from the [DIADEM](http://diademchallenge.org) dataset([3](#references)):
 
 {::nomarkdown}
 <table>
@@ -129,7 +110,7 @@ You can use {% include bc path='Sholl Analysis (Tracings)...' color='white'%} to
 
 ## Analysis of Existing Profiles
 
-![Linear plot for CA1 cell [described above](/media/#ca1-cell-mask). Using the soma as center, image was sampled twice using the [Restrict analysis to hemicircle/hemisphere](#restrict) option in order to segregate apical from basal dendrites. For convenience, distances for basal branches were assigned negative values. For clarity, the binary image of the arbor was rotated, scaled and overlaid (in green) over the plot canvas. Note that it is also possible to restrict [curve fitting](#methods-table) to a sub-range of distances once [data is collected](#importing).](BitmapSholl-CA1Compartment.png "fig:Linear plot for CA1 cell described above. Using the soma as center, image was sampled twice using the Restrict analysis to hemicircle/hemisphere option in order to segregate apical from basal dendrites. For convenience, distances for basal branches were assigned negative values. For clarity, the binary image of the arbor was rotated, scaled and overlaid (in green) over the plot canvas. Note that it is also possible to restrict curve fitting to a sub-range of distances once data is collected.") This feature is processed by {% include bc path='Analysis|Sholl|Sholl Analysis (Existing Profile)...' color='white'%}. This command can be used to re-analyze data (replot, modify fitting options, etc.) without having to access the initial image or tracing data. [Batch processing](#batch-analysis-of-tabular-data) is also possible. Noteworthy:
+{% include figure-right name="ca1-linear-plot" image-path="/media/bitmapsholl-ca1compartment.png" content="Linear plot for CA1 cell [described above](/media/#ca1-cell-mask). Using the soma as center, image was sampled twice using the [Restrict analysis to hemicircle/hemisphere](#restrict) option in order to segregate apical from basal dendrites. For convenience, distances for basal branches were assigned negative values. For clarity, the binary image of the arbor was rotated, scaled and overlaid (in green) over the plot canvas. Note that it is also possible to restrict [curve fitting](#methods-table) to a sub-range of distances once [data is collected](#importing)." %}
 
 -   **Input data**: Any tab or comma delimited text file (.csv, .txt, .xls, .ods) can be used. You can drag & drop these files into the main ImageJ window, import data from the clipboard, or use data from any other table already opened by ImageJ.
 -   **Restricting input data**: To restrict measurements to a range of distances ([see related example](#ca1-cell-plot)), select the range of distances you want analyze. You can click the first row in the range, and then drag the mouse to the last row, or by holding down {% include key key='Shift' %} while selecting the last row in the range. Then, in the prompt, activate the *Restrict analysis to selected rows only* checkbox.
@@ -195,7 +176,7 @@ Please keep in mind that this is just a refinement feature, and you should not e
 
 <span id="sholl-methods"></span>The [type of profile(s)](#methods-table) to be obtained. *Linear* (profile without normalization), or normalized profiles: *Linear-norm*, *Semi-log*, or *Log-log*.
 
--   **Polynomial** -  Specifies the degree of the [polynomial](#methods-table) to be fitted to the *Linear* profile[4]. While the polynomial of best approximation, or "best fit", should be empirically determined for each analyzed cell type, it is possible to ask the plugin to predict the order of the fitting polynomial (or at least try) using the choice *Best fitting degree*. In this case, the plugin will loop through all the available choices of polynomials, perform each fit in the background and choose the one with the highest coefficient of determination.
+-   **Polynomial** -  Specifies the degree of the [polynomial](#methods-table) to be fitted to the *Linear* profile([4](#references)). While the polynomial of best approximation, or "best fit", should be empirically determined for each analyzed cell type, it is possible to ask the plugin to predict the order of the fitting polynomial (or at least try) using the choice *Best fitting degree*. In this case, the plugin will loop through all the available choices of polynomials, perform each fit in the background and choose the one with the highest coefficient of determination.
 -   **Most informative** -  Select this option when you cannot predict which type of normalized profile best describes the dataset. If chosen, the plugin will use the [Determination ratio](#dratio) to determine which of *Semi-log* or *Log-log* methods is more appropriate. *Linear-norm* is not performed.  
     The *Best fitting degree* and *Most informative* choices are obviously more computer-intensive and can be monitored by activating the *Show fitting details* checkbox.
 -   <span id="normalizer"></span>**Normalizer** The property of the sampling shell to be used in the normalization of *Linear-norm*, *Semi-log*, and *Log-log* profiles. It is [described below](#methods-table).
@@ -214,11 +195,7 @@ Please keep in mind that this is just a refinement feature, and you should not e
 
 ## Sholl Plots
 
-<center>
-
-![](/media/ShollPlots.png "fig:")
-
-</center>
+{% include image-center name="sholl plots" image-path="/media/shollplots.png" %}
 
 ***Linear*, *Linear-norm*, *Semi-log* and *Log-log* profiles for the ddaC cell ({% include bc path='File|Open Samples|ddaC Neuron' color='white'%}), version 3.0**. Most of the retrieved [metrics](#metrics-based-on-fitted-data) are automatically highlighted by the plugin. *Linear profile*: [Mean value](#mean-value-of-function) (horizontal grid line) and [Centroid](#centroid) (colored mark). Logarithmic profiles: The [Sholl regression coefficient](#sholl-decay) (also known as Sholl decay) can be retrieved by linear regression using either the full range of data (blue line) or data within percentiles 10–90 (red line). For this particular cell type, the Semi-log method is more [informative](#dratio) when compared to the Log-log method.
 
@@ -314,9 +291,6 @@ Please keep in mind that this is just a refinement feature, and you should not e
       <li id="fn1" role="doc-endnote"></li>
       <li id="fn2" role="doc-endnote"></li>
     </ol>
-  </section>
-</body>
-</html>
 
 <span style="display: inline-block; width: 25px">***N***</span> For 2D images, the <u>N</u>umber of clusters of pixels (8–connected) intersecting the circumference of radius *r*  
 <span style="display: inline-block; width: 25px"> </span> For 3D images, the <u>N</u>umber of clusters of voxels (26-connected) intersecting the surface of the sphere of radius *r*
@@ -334,11 +308,11 @@ Please keep in mind that this is just a refinement feature, and you should not e
 
 Morphometric descriptors and other properties of the arbor are printed to a dedicated table named *Sholl Results*. Output is fully customizable using {% include bc path='Analysis|Sholl|Metrics & Options...' color='white'%} or using the *Options...* command in the *More»* drop-down menu. The first columns log analysis parameters: *Image Directory*, *filename* and *voxel unit*, *Channel*, *Lower* and *Upper Threshold levels*, *X,Y* (in pixels) and *Z* (slice number) coordinates of center of analysis, *Starting* and *Ending radius*, *Radius step*, *Number of Samples per Radius*, etc. Other parameters are described below.
 
-![100%\|center\|Descriptors and metrics are listed in the Sholl Table (v2.4)](/media/BitmapSholl-Table.png "100%|center|Descriptors and metrics are listed in the Sholl Table (v2.4)")
+{% include image-center name="Descriptors and metrics are listed in the Sholl Table (v2.4)" image-path="/media/bitmapsholl-table.png"%}
 
 ### Metrics based on sampled data
 
-[350px\|right \|Metrics & Options prompt (version 3.6.4)](File_ShollOptionsPrompt.png)
+{% include image-right name="Metrics & Options prompt (version 3.6.4)" image-path="/media/sholloptionsprompt.png" %}
 
 Intersecting radii  
 The number of sampling radii intersecting the arbor at least once.
@@ -391,7 +365,7 @@ See also [Critical radius](#critical-radius)
 <!-- -->
 
 <span id="schoenen-sampled"></span>Schoenen Ramification index (*Ramification index (sampled)*)  
-A measure of ramification[5]: the ratio between *Max inters.* and the number of [primary branches](#primary-branches). It is only calculated when [primary branches](#primary-branches) is valid and not zero.
+A measure of ramification([5](#references)): the ratio between *Max inters.* and the number of [primary branches](#primary-branches). It is only calculated when [primary branches](#primary-branches) is valid and not zero.
 
 See also [Ramification index (fit)](#schoenen-fitted)
 
@@ -413,7 +387,7 @@ The last (thus, the widest) of *Intersecting radii* to be associated with the nu
 ### Metrics based on fitted data
 
 <span id="dratio"></span>Determination ratio  
-The ratio of the [coefficient of determination](#reg-r2) for the semi-log method and that for the log–log method[6]. If the semi-log method is better relatively to the log–log method, the *Determination ratio* becomes larger than 1. It is the parameter used by the plugin to silently predict the normalization method that is the [most informative](#choice-of-methods). The prediction can be monitored by activating the [Show fitting details ](#descriptors-and-curve-fitting) checkbox.
+The ratio of the [coefficient of determination](#reg-r2) for the semi-log method and that for the log–log method([6](#references)). If the semi-log method is better relatively to the log–log method, the *Determination ratio* becomes larger than 1. It is the parameter used by the plugin to silently predict the normalization method that is the [most informative](#choice-of-methods). The prediction can be monitored by activating the [Show fitting details ](#descriptors-and-curve-fitting) checkbox.
 
 <!-- -->
 
@@ -475,7 +449,7 @@ The coefficient of determination of the polynomial fit described in [(1)](#eq1).
 
 ## Complementary Tools
 
-<span id="extended-fitting"></span>[frame\|Sampled data from the ddaC cell ({% include bc path="File | Open Samples | ddaC Neuron" %}) being fitted to polynomials of varying degree using a complementary [BAR](/plugins/bar) script.](File:AnimatedPolyFit.gif)
+{% include figure-right name="extended-fitting" image-path="/media/animatedpolyfit.gif" content="Sampled data from the ddaC cell being fitted to polynomials of varying degree using a complementary [BAR](/plugins/bar) script."%}
 
 *Sholl Analysis* tries to be as flexible as possible by providing several options for normalization and curve fitting. However, it cannot offer exhaustive curve fitting options as determining *best fit models* requires reasonable choices that are not amenable to full automation. For this reason, complementary tools for curve fitting can be installed as needed using [BAR](/plugins/bar) by subscribing to its [update site](/plugins/bar#installation). Several [BAR](/plugins/bar) commands complement *Sholl Analysis*. These include:
 
@@ -497,7 +471,7 @@ Data analysis tools:
 
 This section discusses some aspects that should be taken into account when segmenting neuronal arbors to be processed by *Sholl Analysis*. Since *image segmentation* (i.e., the partitioning of images into analyzable parts) is vulnerable to noise and background fluorescence, it is not possible to generalize universal routines that efficiently binarize grayscale images. This means that any procedure that tries to appropriately describe the original fluorescence image with a binary mask must be tailored to the characteristics of individual datasets. As mentioned in [Complementary Tools](#complementary-tools), several routines listed here as distributed through the [BAR](/plugins/bar) {% include list-of-update-sites content='update site' %}. <span id="noise"></span>
 
-Noise  
+#### Noise  
 Noise can be mitigated through the usage of processing filters, specially edge-preserving ones. Examples:
 
 -   [Rolling Ball](/plugins/rolling-ball-background-subtraction) or "Top hat" filters, e.g., {% include bc path="Process | Subtract Background..." %}
@@ -509,7 +483,7 @@ Noise can be mitigated through the usage of processing filters, specially edge-p
 
 <span id="uneven-illumination"></span>
 
-Uneven Illumination  
+#### Uneven Illumination  
 Uneven illumination problems, typically associated with [wide field microscopy](http://imagejdocu.tudor.lu/doku.php?id=howto:working:how_to_correct_background_illumination_in_brightfield_microscopy), do occur in confocal microscopy when signal from deep layers of the tissue is not captured as bright as with superficial layers. This signal attenuation along the Z-axis will generate a shaded gradient across the stack that [histogram-based segmentation](#automated-segmentation) will need to take into account. While these problems are better tackled during acquisition (e.g., using laser ramping), it is possible to mitigate this effect using histogram-normalization techniques. Examples:
 
 -   [Bleach Correction](/plugins/bleach-correction), {% include bc path="Image | Adjust |" %}
@@ -517,7 +491,7 @@ Uneven illumination problems, typically associated with [wide field microscopy](
 
 <span id="automated-segmentation"></span>
 
-Automated Segmentation  
+#### Automated Segmentation  
 It is possible to adopt more sophisticated [segmentation algorithms](Category_Segmentation) when [global thresholding methods](/plugins/auto-threshold) do not yield satisfactory results. Examples:
 
 -   [Local Threshold](/plugins/auto-local-threshold), {% include bc path="Image | Adjust |" %}
@@ -528,7 +502,7 @@ It is possible to adopt more sophisticated [segmentation algorithms](Category_Se
 
 <span id="semi-automated-segmentation"></span>
 
-Semi-Automated Segmentation  
+#### Semi-Automated Segmentation  
 Object detection and image segmentation in images with poor signal-to-noise will likely require decisions taken by a human operator. This is frequently done using hand-crafted workflows using either ImageJ's built-in tools or external add ons. Examples:
 
 -   [Blow/Lasso Tool](/plugins/lasso-and-blow-tool), {% include bc path="Plugins | Segmentation |" %}
@@ -663,10 +637,14 @@ Retrieves information about the plugin version and provides links to several res
 
 **General**
 
-1.  <span id="faq:citing"></span>**How do I cite *Sholl Analysis***?
+<ol>
+<li markdown="1">
 
+<span id="faq:citing"></span>**How do I cite *Sholl Analysis***?
+
+</li>
 <dl>
-<dd>
+<dd markdown="1">
 
 The authoritative reference for *Sholl Analysis* is:
 
@@ -678,85 +656,85 @@ The [authoritative reference](/about/citing) for Fiji:
 
 </dd>
 </dl>
-<li>
+<li markdown="1">
 
 <span id="faq:plugin"></span>**What is the difference between *Sholl Analysis* and an homonymous plugin released by the Ghosh laboratory in 2005**?
 
 </li>
 <dl>
-<dd>
+<dd markdown="1">
 
 The [original Sholl Analysis plugin](http://labs.biology.ucsd.edu/ghosh/software/) by Tom Maddock (version 1.0) was released for ImageJ 1.35 and is now deprecated, unmaintained software that behaves erratically in newer versions of ImageJ. The current implementation of *Sholl Analysis* inherits Tom's initial 2D algorithm, but has numerous [added features](#release-notes) to enhance its utility. Note that throughout 2012 the plugin was temporarily called *Advanced Sholl Analysis*. You can follow the entire history of the plugin on {% include github org='tferr' repo='ASA' label='GitHub' %}.
 
 </dd>
 </dl>
-<li>
+<li markdown="1">
 
 <span id="faq:threshold"></span>**Why do I need to threshold the cell?**
 
 </li>
 <dl>
-<dd>
+<dd markdown="1">
 
 Counting intersections is really a binary procedure: a shell either intercepts a branch or it doesn't. For this reason the image must be split in two phases: *arbor* and *background*.
 
 </dd>
 </dl>
-<li>
+<li markdown="1">
 
 <span id="faq:threshold2"></span>**In version 1.0, it was not mandatory to adjust threshold values prior to analysis. Why is it now?**
 
 </li>
 <dl>
-<dd>
+<dd markdown="1">
 
 Image segmentation has always been [required](#faq:threshold). In its early implementations, the program dealt solely with binary images and used the intensity at the center of the analysis to decide how to segregate objects from background. This approach was very restringent: It assumed that the pixels representing the neuron would have the same (constant!) intensity that was not to be found in the remaining background. As the program became aware of grayscale images, this "feature" had to be removed because a single intensity can no longer be used to infer which parts of the image should be analyzed.
 
 </dd>
 </dl>
-<li>
+<li markdown="1">
 
 <span id="faq:pre-processing"></span>**My images do not look that *great*. How can I treat them prior to analysis?**
 
 </li>
 <dl>
-<dd>
+<dd markdown="1">
 
 Have a look at [ Pre-processing](#pre-processing).
 
 </dd>
 </dl>
-<li>
+<li markdown="1">
 
 <span id="faq:accuracy"></span>**My bitmap profiles are different from the ones obtained from tracings of the same cells. Why?**
 
 </li>
 <dl>
-<dd>
+<dd markdown="1">
 
 As mentioned several times, the quality of the analysis relies on how the arbor was segmented. If you are working with grayscale images you probably need to optimize your [segmentation routines](#pre-processing). On the other hand, if you already obtained binary images make sure you are [interpreting them properly](#cf-segmentation). You should also confirm that [Ending radius](#end-radius) does not intersect objects in the image canvas that extend beyond the analyzed arbor. As a rule of thumb, always refer to the [Sholl mask](#faq:sholl-mask) to visually inspect which regions of the image have been measured.
 
 </dd>
 </dl>
-<li>
+<li markdown="1">
 
 <span id="faq:updates"></span>**My version is not the latest after running {% include bc path="Help | Update Fiji..." %} Why?**
 
 </li>
 <dl>
-<dd>
+<dd markdown="1">
 
 Please note that from version 3.4.6 onwards, updates are available through the [Java-8 update site](##fiji-users). If you have manually installed/modified *Sholl\_Analysis.jar* ([Development build](#release-notes_and_Pre-releases)?). Run the [Updater](/plugins/updater), choose *Advanced Mode* then *View locally modified files* under *View Options*. Type "/plugins/sholl-analysis" in the *Search* field, selecting *Sholl\_Analysis.jar* from the list of files. If the *Details pane* indicates an available update, click on *Locally modified* under *Status/Action* and choose *Install/Update*. The latest release version will be available once you press *Apply changes*. See [Installation FAQs](/help/faq#installingupdating) for more details.
 
 </dd>
 </dl>
-<li>
+<li markdown="1">
 
 <span id="faq:documentation"></span>**This documentation is not that useful. How long do I have to wait until it gets improved?**
 
 </li>
 <dl>
-<dd>
+<dd markdown="1">
 
 Around 20 seconds. This is the time it will take you to [create an account](Help_Contents#new-accounts) on this wiki. Once you have created one, you will be able to improve this page yourself.
 
@@ -766,58 +744,62 @@ Around 20 seconds. This is the time it will take you to [create an account](Help
 
 **Analysis**
 
-1.  <span id="faq:image-types"></span>**The plugin complains about a wrong image type. Why?**
+<ol>
+<li markdown="1">
 
+<span id="faq:image-types"></span>**The plugin complains about a wrong image type. Why?**
+
+</li>
 <dl>
-<dd>
+<dd markdown="1">
 
 The plugin does not parse RGB images, but will process any grayscale image (8/16-bit), including multi-channel (composite) images. This is intentional: RGB images are inflexible and images of fluorescence-labeled cells are typically non-RGB images. As explained in the [ImageJ User Guide](/ij/docs/guide/), RGB images can be converted using {% include bc path='Image|Color|Channels Tool...' color='white'%} or {% include bc path='Image|Type|' color='white'%} commands.
 
 </dd>
 </dl>
-<li>
+<li markdown="1">
 
 <span id="faq:compartments"></span>**I cannot see the hemicircle/hemisphere option. Why?**
 
 </li>
 <dl>
-<dd>
+<dd markdown="1">
 
 This option is only available if an orthogonal line has been created by holding {% include key key='Shift' %} when using the <span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>. See the [ImageJ User Guide](/ij/docs/guide/) for the full list of key modifiers that can be used while creating straight line ROIs.
 
 </dd>
 </dl>
-<li>
+<li markdown="1">
 
 <span id="faq:z-position"></span>**With 3D and 4D images, how do I set the Z-position and of the center?**
 
 </li>
 <dl>
-<dd>
+<dd markdown="1">
 
 The Z-position (depth) of the center of analysis is the active Z-slice of the stack. With multichannel (composite) images, the active channel also defines the C-position. Both are reported in the *Sholl Results* table.
 
 </dd>
 </dl>
-<li>
+<li markdown="1">
 
 <span id="faq:saving"></span>**I cannot see the option to save the results. Why?**
 
 </li>
 <dl>
-<dd>
+<dd markdown="1">
 
 The image you are trying to analyze is not saved locally. Saving it to a local directory (e.g., your Desktop or Home folder) should re-enable it.
 
 </dd>
 </dl>
-<li>
+<li markdown="1">
 
 <span id="faq:parameters"></span>**Why so many parameters?**
 
 </li>
 <dl>
-<dd>
+<dd markdown="1">
 
 The plugin is designed for the analysis of a wide diversity of arbors and it is not biased to any particular cell type. The only way to ensure this broad applicability is to give users full control over the mathematical techniques used by the plugin to analyze sampled data.
 
@@ -827,58 +809,62 @@ The plugin is designed for the analysis of a wide diversity of arbors and it is 
 
 **Results**
 
-1.  <span id="faq:Sholl-table"></span>**How can I save/edit the *Sholl Results* table?**
+<ol>
+<li markdown="1">
 
+<span id="faq:Sholl-table"></span>**How can I save/edit the *Sholl Results* table?**
+
+</li>
 <dl>
-<dd>
+<dd markdown="1">
 
 Select the table, then choose {% include bc path="File | Save As..." %}The filename extension can be specified using the *More » Options...* command (see the [ImageJ User Guide](/ij/docs/guide/) for details). Single cells cannot be modified from within ImageJ, but custom extensions (e.g., .csv, .xls or .ods) will allow the table to be imported by other spreadsheet applications.
 
 </dd>
 </dl>
-<li>
+<li markdown="1">
 
 <span id="faq:precision"></span>**Can I modify the way data is displayed?**
 
 </li>
 <dl>
-<dd>
+<dd markdown="1">
 
 Mostly, using {% include bc path='Analysis|Sholl|Metrics & Options' color='white'%} (also listed in the *More » Options...* shortcut), including the number of decimal places reported by the *Sholl Results* table or the usage of scientific notation. To resize plots, use the *More »* dropdown menu in the *Options* dialog.
 
 </dd>
 </dl>
-<li>
+<li markdown="1">
 
 <span id="faq:sholl-mask"></span>**What is the *Sholl mask*?**
 
 </li>
 <dl>
-<dd>
+<dd markdown="1">
 
 The Sholl mask ([see example of CA1 cell](#ca1-cell-mask)) is simply an illustration: a maximum intensity projection of the analyzed cell in which [intersection counts](##output-options) are used as pixel intensities. As explained in [Output Options](#output-options), its LUT can be modified, and intensities calibrated using ImageJ default commands. As mentioned, it can also be used to visually inspect for [segmentation artifacts](#cf-segmentation).
 
 </dd>
 </dl>
-<li>
+<li markdown="1">
 
 <span id="faq:3Dvs2D"></span>**The 3D profile looks *worse* than the 2D profile of the Maximum Intensity Projection of the same cell. Why?**
 
 </li>
 <dl>
-<dd>
+<dd markdown="1">
 
 An anisotropic voxel size will have a strong impact on [step size](#step-size). On the other hand, 2D and 3D images can be sampled differently depending on the [options chosen](#parameters). If {% include bc path="Image | Properties..." %} ({% include key keys='Shift|P' %}) reports the appropriate spatial calibration, make sure to read [Multiple Samples and Noise Reduction](#multiple-samples-and-noise-reduction) before deciding which type of images to use.
 
 </dd>
 </dl>
-<li>
+<li markdown="1">
 
 <span id="faq:no-output"></span>**The program terminates without warnings. What am I doing wrong?**
 
 </li>
 <dl>
-<dd>
+<dd markdown="1">
 
 The program will not terminate without throwing an error message. However, do note that some exiting messages are displayed in the often overlooked status bar of the main ImageJ window. This is intentional, as it minimizes the frequency of modal windows popping up for each failed operation.
 
@@ -887,35 +873,38 @@ The program will not terminate without throwing an error message. However, do no
 </ol>
 
 **Metrics and Curve Fitting**
+<ol>
+<li markdown="1">
 
-1.  <span id="faq:AUC"></span>**Would it be possible to retrieve the Area Under the Curve (linear Sholl plot)?**
+<span id="faq:AUC"></span>**Would it be possible to retrieve the Area Under the Curve (linear Sholl plot)?**
 
+</li>
 <dl>
-<dd>
+<dd markdown="1">
 
 Sure. But it would hardly be relevant for data sampled at fixed intervals. The area under the curve (AUC, the area between the sampled curve and the horizontal axis, i.e., its definite integral) could be estimated using, e.g., the {% include wikipedia title='Trapezoidal rule' text='trapezoidal rule'%}. However, because data is always sampled at equally spaced intervals, doing so would be the same as multiplying [Mean inters.](#mean-inters) by the distance between [Ending radius](#end-radius) and [Starting radius](#start-radius). Thus, effectively, AUC is redundant with [Mean inters.](#mean-inters), that is already an integrated measurement of the sampled data. On the other hand, one could retrieve the AUC of the polynomial fit, but such property is already covered by [Mean value](#mean-value-of-function).
 
 </dd>
 </dl>
-<li>
+<li markdown="1">
 
 <span id="faq:inflection-points"></span>**The shape of the polynomial changes at the edges of the profile. Why?**
 
 </li>
 <dl>
-<dd>
+<dd markdown="1">
 
 Inflection points at [starting/ending radius](#start-radius) are usually associated with a poor fit and/or the fact that all the radii in which no intersections were counted are ignored. The latter is required to calculate the [Sholl regression coefficient](#sholl-decay), as *log(0)* is undefined.
 
 </dd>
 </dl>
-<li>
+<li markdown="1">
 
 <span id="faq:poor-fitting"></span>**None of the fitting options is suitable for my datasets. What should I do?**
 
 </li>
 <dl>
-<dd>
+<dd markdown="1">
 
 Have a look at [Complementary Tools](#complementary-tools).
 
@@ -924,11 +913,14 @@ Have a look at [Complementary Tools](#complementary-tools).
 </ol>
 
 **Batch Processing**
+<ol>
+<li markdown="1">
 
-1.  <span id="faq:recorder"></span>**The code that the Macro Recorder produced does not seem to work. What am I doing wrong?**
+<span id="faq:recorder"></span>**The code that the Macro Recorder produced does not seem to work. What am I doing wrong?**
 
+</li>
 <dl>
-<dd>
+<dd markdown="1">
 
 It is likely that frequent interactions with the dialog prompt(s) (from which the Recorder retrieves user-specified parameters) have "confused" ImageJ. While this process is usually flawless, it may happen that repeated triggering of GUI-specific commands that are not recordable (e.g., *[Cf. Segmentation](#cf-segmentation)* or *[Import Other Data](#importing)* buttons) may lead to an incomplete recording. The solution is to repeat the recording, while minimizing such interactions.
 
@@ -937,11 +929,14 @@ It is likely that frequent interactions with the dialog prompt(s) (from which th
 </ol>
 
 **Development**
+<ol>
+<li markdown="1">
 
-1.  <span id="faq:bug-report"></span>**I found a bug. How do I report it?**
+<span id="faq:bug-report"></span>**I found a bug. How do I report it?**
 
+</li>
 <dl>
-<dd>
+<dd markdown="1">
 
 Report it in the [ImageJ Forum](http://forum.imagej.net) or file an [issue](https://github.com/tferr/ASA/issues) on GitHub. Don't forget to include the [steps needed to reproduce the problem](/help/bug-reporting-best-practices). You may also want to check the {% include github org='tferr' repo='ASA' path='Notes.md\#development-builds' label='release notes' %} for the latest [development version](http://jenkins.imagej.net/job/Sholl-Analysis/lastBuild/) to see if the issue has meanwhile been addressed.
 
@@ -991,40 +986,33 @@ While in development (2005-2014), and prior to its [publication](#publication), 
 
 ## References
 
-<references >
+<references>
+<p markdown="1">
+[1]: Ferreira TA, Iacono LL, Gross CT. Serotonin receptor 1A modulates actin dynamics and restricts dendritic growth in hippocampal neurons. Eur J Neurosci. 2010 Jul;32(1):18-26. [PMID: 20561047](http://www.ncbi.nlm.nih.gov/pubmed?term=20561047)
+</p>
 
-[8] [9] [10] [11] [12] [13]
+<p markdown="1">
+[2]: Sholl DA. Dendritic organization in the neurons of the visual and motor cortices of the cat. J Anat. 1953 Oct;87(4):387-406. [PMID: 13117757](http://www.ncbi.nlm.nih.gov/pubmed?term=13117757)
+</p>
 
+<p markdown="1">
+[3]: Ristanović D, Milosević NT, Stulić V. Application of modified Sholl analysis to neuronal dendritic arborization of the cat spinal cord. J Neurosci Methods. 2006 Dec 15;158(2):212-8. [PMID: 16814868](http://www.ncbi.nlm.nih.gov/pubmed?term=16814868)
+</p>
+
+<p markdown="1">
+[4]: Schoenen J. The dendritic organization of the human spinal cord: the dorsal horn. Neuroscience. 1982;7(9):2057-87.[PMID: 7145088](http://www.ncbi.nlm.nih.gov/pubmed?term=7145088)
+</p>
+
+<p markdown="1">
+[5]: Milosević NT, Ristanović D. The Sholl analysis of neuronal cell images: semi-log or log-log method? J Theor Biol. 2007 Mar 7;245(1):130-40 [PMID: 17084415](http://www.ncbi.nlm.nih.gov/pubmed?term=17084415)
+</p>
+
+<p markdown="1">
+[6]: Brown KM, Barrionuevo G, Canty AJ, De Paola V, Hirsch JA, Jefferis GS, Lu J, Snippe M, Sugihara I, Ascoli GA. The DIADEM data sets: representative light microscopy images of neuronal morphology to advance automation of digital reconstructions. Neuroinformatics. 2011 Sep;9(2-3):143-57, [PMID: 21249531](http://www.ncbi.nlm.nih.gov/pubmed?term=21249531)
+</p>
 </references>
 
 ## License
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [Free Software Foundation](http://www.gnu.org/licenses/gpl.txt). This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-   
-
-[1] 
-
-[2] 
-
-[3] 
-
-[4] 
-
-[5] 
-
-[6] 
-
-[7] 
-
-[8] Ferreira TA, Iacono LL, Gross CT. Serotonin receptor 1A modulates actin dynamics and restricts dendritic growth in hippocampal neurons. Eur J Neurosci. 2010 Jul;32(1):18-26. [PMID: 20561047](http://www.ncbi.nlm.nih.gov/pubmed?term=20561047)
-
-[9] Sholl DA. Dendritic organization in the neurons of the visual and motor cortices of the cat. J Anat. 1953 Oct;87(4):387-406. [PMID: 13117757](http://www.ncbi.nlm.nih.gov/pubmed?term=13117757)
-
-[10] Ristanović D, Milosević NT, Stulić V. Application of modified Sholl analysis to neuronal dendritic arborization of the cat spinal cord. J Neurosci Methods. 2006 Dec 15;158(2):212-8. [PMID: 16814868](http://www.ncbi.nlm.nih.gov/pubmed?term=16814868)
-
-[11] Schoenen J. The dendritic organization of the human spinal cord: the dorsal horn. Neuroscience. 1982;7(9):2057-87.[PMID: 7145088](http://www.ncbi.nlm.nih.gov/pubmed?term=7145088)
-
-[12] Milosević NT, Ristanović D. The Sholl analysis of neuronal cell images: semi-log or log-log method? J Theor Biol. 2007 Mar 7;245(1):130-40 [PMID: 17084415](http://www.ncbi.nlm.nih.gov/pubmed?term=17084415)
-
-[13] Brown KM, Barrionuevo G, Canty AJ, De Paola V, Hirsch JA, Jefferis GS, Lu J, Snippe M, Sugihara I, Ascoli GA. The DIADEM data sets: representative light microscopy images of neuronal morphology to advance automation of digital reconstructions. Neuroinformatics. 2011 Sep;9(2-3):143-57, [PMID: 21249531](http://www.ncbi.nlm.nih.gov/pubmed?term=21249531)
