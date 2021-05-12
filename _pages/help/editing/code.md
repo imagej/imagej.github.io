@@ -69,7 +69,7 @@ log.error("I'm a what?");
 {% include example code=liquid-highlight-code result=liquid-highlight-result %}
 
 The `highlight` directive and code fences are separate features, but
-functionality very similar. If code fences are not working as you like,
+functionally very similar. If code fences are not working as you like,
 give the `highlight` directive a try to see if it does any better.
 
 ## Embedding code from GitHub

@@ -10,11 +10,7 @@ categories: Software,ImageJ2,SciJava,Citable
 
 {% include box float='right' text='
 
-<h2>
-
-ImageJ2"s Mission
-
-</h2>
+## Mission
 
 -   **Design** the next generation of ImageJ, driven by the needs of the community.
 -   **Collaborate** across organizations, fostering open development through sharing and reuse.
