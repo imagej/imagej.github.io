@@ -70,11 +70,11 @@ The following list links to documentation of the used Python features:
 -   [str.join()-method](https://docs.python.org/2/library/stdtypes.html#str.join)
 -   [List Comprehensions](https://docs.python.org/2/tutorial/datastructures.html#list-comprehensions)
 -   [Generator Expressions](https://www.python.org/dev/peps/pep-0289/)
--   [\*\* (double star) and \* (star) parameters](http://stackoverflow.com/questions/36901/what-does-double-star-and-star-do-for-python-parameters)
--   [Top-level script environment (\_\_main\_\_)](https://docs.python.org/2/library/%5F%5Fmain%5F%5F.html)
--   [Purpose of the single underscore "\_" variable](http://stackoverflow.com/questions/5893163/what-is-the-purpose-of-the-single-underscore-variable-in-python)
+-   [`**` (double star) and `*` (star) parameters](http://stackoverflow.com/questions/36901/what-does-double-star-and-star-do-for-python-parameters)
+-   [Top-level script environment (`__main__`)](https://docs.python.org/2/library/%5F%5Fmain%5F%5F.html)
+-   [Purpose of the single underscore `_` variable](http://stackoverflow.com/questions/5893163/what-is-the-purpose-of-the-single-underscore-variable-in-python)
 
-{% include github-embed org='imagej' repo='imagej-scripting' path='src/main/resources/script\_templates/Tutorials/Wiki\_Jython\_Tutorial\_1.py' %}
+{% include github-embed org='imagej' repo='imagej-scripting' branch='master' path='src/main/resources/script_templates/Tutorials/Wiki_Jython_Tutorial_1.py' %}
 
 ### Using Scripting Parameters
 
@@ -88,7 +88,7 @@ This list links to the documentation of Python features that are introduced with
 -   [Rotating a two-dimensional array](http://stackoverflow.com/questions/8421337/rotating-a-two-dimensional-array-in-python)
 -   [Lambda expressions](https://docs.python.org/2/reference/expressions.html#lambda)
 
-{% include github-embed org='imagej' repo='imagej-scripting' path='src/main/resources/script\_templates/Tutorials/Wiki\_Jython\_Tutorial\_2.py' %}
+{% include github-embed org='imagej' repo='imagej-scripting' branch='master' path='src/main/resources/script_templates/Tutorials/Wiki_Jython_Tutorial_2.py' %}
 
 ### A batch opener using `os.walk()`
 
@@ -105,7 +105,7 @@ To read more about the used features, the following list provides links to addit
 -   [Using continue to control a loop](https://docs.python.org/2/reference/simple_stmts.html#continue)
 -   [Truth Value Testing](https://docs.python.org/2/library/stdtypes.html#truth-value-testing)
 
-{% include github-embed org='imagej' repo='imagej-scripting' path='src/main/resources/script\_templates/Tutorials/Wiki\_Jython\_Tutorial\_3.py' %}
+{% include github-embed org='imagej' repo='imagej-scripting' branch='master' path='src/main/resources/script_templates/Tutorials/Wiki_Jython_Tutorial_3.py' %}
 
 ## Importing Java module and classes
 

@@ -96,7 +96,7 @@ Link to function user documentation are provided in the table below.
 
 The following script shows how to segment 2d object in an image and visualize them. The workflow is illustrated in the **Figure 3**.
 
-{% include github-embed org='benoalo' repo='CIP' path='wiki\_examples/2D\_nuclei.py' %}
+{% include github-embed org='benoalo' repo='CIP' branch='master' path='wiki_examples/2D_nuclei.py' %}
 
 <figure><img src="/media/CIP example 2D.PNG" title="CIP: " width="800" alt="CIP: " /><figcaption aria-hidden="true">CIP: </figcaption></figure>
 
@@ -108,7 +108,7 @@ The following script shows how to segment 2d object in an image and visualize th
 
 The following script shows a 3d nuclei segmentation and the measure and displau of nuclei size. The workflow is illustrated in the **Figure 4**.
 
-{% include github-embed org='benoalo' repo='CIP' path='wiki\_examples/3D\_nuclei\_segmentation.py' %}
+{% include github-embed org='benoalo' repo='CIP' branch='master' path='wiki_examples/3D_nuclei_segmentation.py' %}
 
 <figure><img src="/media/CIP example 3D.PNG" title="CIP: " width="800" alt="CIP: " /><figcaption aria-hidden="true">CIP: </figcaption></figure>
 

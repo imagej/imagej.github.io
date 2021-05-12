@@ -39,13 +39,13 @@ How to use :
 
 ## Scripting
 
-You can script the plugin. Here is an example :
+You can script the plugin. Here is an example:
 
-{% include github-embed org='fiji' repo='KymographBuilder' path='src/main/resources/script\_templates/Examples/MultiKymographBuilder.py' label='MultiKymographBuilder.py' %}
+{% include github-embed org='fiji' repo='KymographBuilder' branch='master' path='src/main/resources/script_templates/Examples/MultiKymographBuilder.py' %}
 
 ## Related links
 
--   [Multi\_Kymograph](/plugins/multi-kymograph) : The first kymograph bundled with Fiji, with support for multiple Line ROIs
+-   [Multi_Kymograph](/plugins/multi-kymograph) : The first kymograph bundled with Fiji, with support for multiple Line ROIs
 -   Source code on GitHub : https://github.com/fiji/KymographBuilder
 -   Maven : https://maven.scijava.org/#nexus-search;quick~kymographbuilder
 -   Travis CI : https://travis-ci.org/fiji/KymographBuilder

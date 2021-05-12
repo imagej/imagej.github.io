@@ -906,7 +906,7 @@ TrackMate allows for the addition of jar files that contain extra TrackMate modu
 
 As any other module it can be used in a script, provided the jar file is in the plugins or jars folder of Fiji:
 
-{% include github-embed org='fiji' repo='TrackMate' source='../../../scripts/CallTrackMateMultiChannel.py' %}
+{% include github-embed org='fiji' repo='TrackMate' branch='master' path='scripts/CallTrackMateMultiChannel.py' %}
 
 ## Making TrackMate macro recordable with a 64-line script
 
@@ -914,72 +914,74 @@ Contributed by {% include person id='imagejan' %} during a NEUBIAS course. Quoti
 
 > "The macro language is too limited to work with such awesome things as TrackMate, but that you can do everything with a more powerful scripting language. So when using a 64-line script to call it, it actually is macro recordable."
 
-{% include github-embed org='fiji' repo='TrackMate' source='../../../scripts/Run\_TrackMate\_Headless.groovy' %}
+{% include github-embed org='fiji' repo='TrackMate' branch='master' path='scripts/Run_TrackMate_Headless.groovy' %}
 
 ## Add 3D maximas in the ROI Manager using TrackMate
 
 Using the 3D spots finder of TrackMate, it is possible to add the maximas to the ROI Manager with a simple Jython code:
 
-    # @ImagePlus imp
+```python
+# @ImagePlus imp
 
-    # Imports
-    from fiji.plugin.trackmate.detection import LogDetector
-    from net.imglib2.img.display.imagej import ImageJFunctions
+# Imports
+from fiji.plugin.trackmate.detection import LogDetector
+from net.imglib2.img.display.imagej import ImageJFunctions
 
-    from ij.plugin.frame import RoiManager
-    from ij.gui import PointRoi
+from ij.plugin.frame import RoiManager
+from ij.gui import PointRoi
 
-    # Set the parameters for LogDetector
-    img = ImageJFunctions.wrap(imp)
-    interval = img
-    cal = imp.getCalibration()
-    # Get the calibration from the metadata if exists
-    calibration = [cal.pixelWidth, cal.pixelHeight, cal.pixelDepth]
+# Set the parameters for LogDetector
+img = ImageJFunctions.wrap(imp)
+interval = img
+cal = imp.getCalibration()
+# Get the calibration from the metadata if exists
+calibration = [cal.pixelWidth, cal.pixelHeight, cal.pixelDepth]
 
-    # Values to enter based on the TrackMate GUI
-    radius = 5  # the radius is half the diameter
-    threshold = 1050
-    doSubpixel = True
-    doMedian = True
+# Values to enter based on the TrackMate GUI
+radius = 5  # the radius is half the diameter
+threshold = 1050
+doSubpixel = True
+doMedian = True
 
 
-    # Setup spot detector (see http://javadoc.imagej.net/Fiji/fiji/plugin/trackmate/detection/LogDetector.html)
-    #
-    # public LogDetector(RandomAccessible<T> img,
-    #            Interval interval,
-    #            double[] calibration,
-    #            double radius,
-    #            double threshold,
-    #            boolean doSubPixelLocalization,
-    #            boolean doMedianFilter)
+# Setup spot detector (see http://javadoc.imagej.net/Fiji/fiji/plugin/trackmate/detection/LogDetector.html)
+#
+# public LogDetector(RandomAccessible<T> img,
+#            Interval interval,
+#            double[] calibration,
+#            double radius,
+#            double threshold,
+#            boolean doSubPixelLocalization,
+#            boolean doMedianFilter)
 
-    detector = LogDetector(img, interval, calibration, radius, threshold, doSubpixel, doMedian)
+detector = LogDetector(img, interval, calibration, radius, threshold, doSubpixel, doMedian)
 
-    # Start processing and display the results
-    if detector.process():
-        # Get the list of peaks found
-        peaks = detector.getResult()
-        print str(len(peaks)), "peaks were found."
+# Start processing and display the results
+if detector.process():
+    # Get the list of peaks found
+    peaks = detector.getResult()
+    print str(len(peaks)), "peaks were found."
 
-        # Add points to ROI manager
-        rm = RoiManager.getInstance()
-        if not rm:
-            rm = RoiManager()
+    # Add points to ROI manager
+    rm = RoiManager.getInstance()
+    if not rm:
+        rm = RoiManager()
 
-        # Loop through all the peak that were found
-        for peak in peaks:
-            # Print the current coordinates
-            print peak.getDoublePosition(0), peak.getDoublePosition(1), peak.getDoublePosition(2)
-            # Add the current peak to the Roi manager
-            roi = PointRoi(peak.getDoublePosition(0) / cal.pixelWidth, peak.getDoublePosition(1) / cal.pixelHeight)
-            # Set the Z position of the peak otherwise the peaks are all set on the same slice
-            roi.setPosition(int(round(peak.getDoublePosition(2) / cal.pixelDepth))+1)
-            rm.addRoi(roi)
-        # Show all ROIs on the image
-        rm.runCommand(imp, "Show All")
+    # Loop through all the peak that were found
+    for peak in peaks:
+        # Print the current coordinates
+        print peak.getDoublePosition(0), peak.getDoublePosition(1), peak.getDoublePosition(2)
+        # Add the current peak to the Roi manager
+        roi = PointRoi(peak.getDoublePosition(0) / cal.pixelWidth, peak.getDoublePosition(1) / cal.pixelHeight)
+        # Set the Z position of the peak otherwise the peaks are all set on the same slice
+        roi.setPosition(int(round(peak.getDoublePosition(2) / cal.pixelDepth))+1)
+        rm.addRoi(roi)
+    # Show all ROIs on the image
+    rm.runCommand(imp, "Show All")
 
-    else:
-        print "The detector could not process the data."
+else:
+    print "The detector could not process the data."
+```
 
 ## Tracking spots that are taken from the ROI manager.
 

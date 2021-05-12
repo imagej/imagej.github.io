@@ -24,7 +24,7 @@ Clojure developer
 {% include testimonial quote='zomg UIs are so easy now  
 done by lunchtime' person=person gravatar='9e4ed4484fd425f3f178bfeed4777b31' source='https://gitter.im/fiji/fiji?at=5717afbc98c544f1396cef2f' float='right' %} For example, if we look at the [Greeting.py](https://github.com/scijava/scripting-jython/blob/scripting-jython-0.2.0/src/main/resources/script_templates/Python/Greeting.py) [template](/scripting/templates) supplied with Fiji:
 
-{% include github-embed org='scijava' repo='scripting-jython' path='src/main/resources/script\_templates/Intro/Greeting.py' %}
+{% include github-embed org='scijava' repo='scripting-jython' branch='master' path='src/main/resources/script_templates/Intro/Greeting.py' %}
 
 We see that an input parameter `name` of type `String` is declared. `@Parameters` are handled automatically by the framework; if we run this script when the User Interface is available (e.g. from the script editor), the `name` parameter will automatically be harvested via a pop-up dialog:
 
@@ -40,22 +40,23 @@ A list of possible data types and the corresponding widgets is provided below.
 The optional style argument defines how the widget are rendered in the input window.  
 See the respective widget sections for a preview of the styles.
 
-|                                    |                                          |                                                   |
-|------------------------------------|------------------------------------------|---------------------------------------------------|
-| **Data type**                      | **Widget type**                          | **Available styles**                              |
-| \| `boolean` `Boolean`             | checkbox                                 |                                                   |
-| \| `byte` `short` `int` `long`     | numeric field                            | \| `slider` `spinner` `scroll bar`                |
-| \| `Byte` `Short` `Integer` `Long` | numeric field                            | \| `slider` `spinner` `scroll bar`                |
-| \| `Float`                         | numeric field                            | \| `slider` `spinner` `scroll bar`                |
-| \| `BigInteger` `BigDecimal`       | numeric field                            | \| `slider` `spinner` `scroll bar`                |
-| \| `char` `Character` `String`     | text field                               | \| `text field` `text area` `password`            |
-| \| `Dataset` `ImagePlus`           | (&gt;=2 images) triggers a dropdown list |                                                   |
-| \| `ColorRGB`                      | color chooser                            |                                                   |
-| \| `Date`                          | date chooser                             |                                                   |
-| \| `File`                          | file chooser                             | \| `open` `save` `file` `directory` `extensions:` |
+| **Data type**                   | **Widget type**                          | **Available styles**                           |
+|---------------------------------|------------------------------------------|------------------------------------------------|
+| `boolean` `Boolean`             | checkbox                                 |                                                |
+| `byte` `short` `int` `long`     | numeric field                            | `slider` `spinner` `scroll bar`                |
+| `Byte` `Short` `Integer` `Long` | numeric field                            | `slider` `spinner` `scroll bar`                |
+| `Float`                         | numeric field                            | `slider` `spinner` `scroll bar`                |
+| `BigInteger` `BigDecimal`       | numeric field                            | `slider` `spinner` `scroll bar`                |
+| `char` `Character` `String`     | text field                               | `text field` `text area` `password`            |
+| `Dataset` `ImagePlus`           | (&gt;=2 images) triggers a dropdown list |                                                |
+| `ColorRGB`                      | color chooser                            |                                                |
+| `Date`                          | date chooser                             |                                                |
+| `File`                          | file chooser                             | `open` `save` `file` `directory` `extensions:` |
 
-{% include warning-box content='`float` is also an accepted field but the decimal part is not displayed in the form compared to `Float` (mind the capital F).  
-A related [issue](https://github.com/scijava/scijava-common/issues/302) occurs with `int` and `double` when a default value is set in the code and entered in the form, the value is not properly recalled at the next run. Use `Integer` and `Double` instead.' %} {% include warning-box content='A single `#@ImagePlus` or `#@Dataset` field will not show up in the input form, instead the current image will automatically be processed. The idea is to stick to the IJ macro language. However if 2 `#@ImagePlus` (or respectively `#@Dataset`) are present then they will be rendered as drop-down buttons.' %}
+Notes and gotchas:
+* `float` is also an accepted field but the decimal t is not displayed in the form compared to `Float` (mind the capital F).
+* A related [issue](https://github.com/scijava/scijava-common/issues/302) occurs with `int` and `double` when a default value is set in the code and entered in the form, the value is not properly recalled at the next run. Use `Integer` and `Double` instead.
+* A single `#@ ImagePlus` or `#@ Dataset` field will not show up in the input form, instead the current image will automatically be processed. However, if two `#@ ImagePlus` (or respectively `#@ Dataset`) are present then they will be rendered as drop-down buttons.
 
 By implementing {% include javadoc project='SciJava' package='org/scijava/widget' class='InputWidget' %} it is possible to extend this list.
 

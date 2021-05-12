@@ -129,11 +129,11 @@ The control panel items, see Figure 4, can be used to modify the segmentation an
 
 In ImageJ macro language one can perform a H-Watershed segmentation with the following command:
 
-{% include github-embed org='mpicbg-scicomp' repo='Interactive-H-Watershed' path='scripts/macro\_IJ1.ijm' %}
+{% include github-embed org='mpicbg-scicomp' repo='Interactive-H-Watershed' branch='master' path='scripts/macro_IJ1.ijm' %}
 
 In a Jython script the H-Watershed segmentation could be called as follows:
 
-{% include github-embed org='mpicbg-scicomp' repo='Interactive-H-Watershed' path='scripts/jython\_Ops.py' %}
+{% include github-embed org='mpicbg-scicomp' repo='Interactive-H-Watershed' branch='master' path='scripts/jython_Ops.py' %}
 
 The run commands are also recorded by the macro recorder when exporting a label map.
 
