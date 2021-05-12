@@ -13,17 +13,21 @@ We do not have a dedicated include to create a table. You can, however, easily c
 | 1 | 2 | 3 |
 ```
 ## Example
-```
-| Blue | Red | Green | Yellow | Purple |
-| :---: | :---: | :---: | :---: |:---: |
-| 5 | 4 | 3 | 2 | 1 |
+<p>
+| Blue | Red | Green | Yellow | Purple |<br/>
+| :---: | :---: | :---: | :---: |:---: |<br/>
+| 5 | 4 | 3 | 2 | 1 |<br/>
 | 1 | 2 | 3 | 4 | 5 |
-```
+</p>
+
 produces:
+```
 | Blue | Red | Green | Yellow | Purple |
 | :---: | :---: | :---: | :---: |:---: |
 | 5 | 4 | 3 | 2 | 1 |
 | 1 | 2 | 3 | 4 | 5 |
+```
+
 
 ## Adding Images
 
