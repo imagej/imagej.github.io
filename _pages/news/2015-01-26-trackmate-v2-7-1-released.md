@@ -16,7 +16,7 @@ But a tracker that deals specifically with a new motion model is welcome, in par
 
 To assess the performance of the new and old trackers, we re-run the ISBI tracking challenge from 2012[1]. We put all the results on a single page: [TrackMate Accuracy](/plugins/trackmate/accuracy) that should help you decide what is the algorithm that suits your problem best. For instance:
 
-<figure><img src="/media/trackmate RECEPTOR LAP Brownian motion, Linear motion tracker &amp;amp; Nearest neighbor.png" title="TrackMate_RECEPTOR_LAP_Brownian_motion,_Linear_motion_tracker_&amp;amp;_Nearest_neighbor.png" width="300" alt="TrackMate_RECEPTOR_LAP_Brownian_motion,_Linear_motion_tracker_&amp;amp;_Nearest_neighbor.png" /><figcaption aria-hidden="true">TrackMate_RECEPTOR_LAP_Brownian_motion,_Linear_motion_tracker_&amp;amp;_Nearest_neighbor.png</figcaption></figure>
+<figure><img src="/media/trackmate-receptor-lap-brownian-motion-linear-motion-tracker--nearest-neighbor.png" title="TrackMate_RECEPTOR_LAP_Brownian_motion,_Linear_motion_tracker_&amp;amp;_Nearest_neighbor.png" width="300" alt="TrackMate_RECEPTOR_LAP_Brownian_motion,_Linear_motion_tracker_&amp;amp;_Nearest_neighbor.png" /><figcaption aria-hidden="true">TrackMate_RECEPTOR_LAP_Brownian_motion,_Linear_motion_tracker_&amp;amp;_Nearest_neighbor.png</figcaption></figure>
 
 <references/>
 
