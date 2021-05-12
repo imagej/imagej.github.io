@@ -12,7 +12,7 @@ This version brings mainly a complete rewrite of the [LAP tracker](/plugins/trac
 
 We completely rewrote the LAP tracker and this version ships it. It gives (almost exactly) the same results and has the same settings that the former version, but exploits the sparse structure of the cost matrices we typically have in bioimaging to achieve a much better memory usage. Let's quickly review how.
 
-The LAP tracking framework proposed by Jaqaman *et al.*[1] is based on generating a large cost matrix that contains the costs to link all possible spots to another, within physically reasonable bounds. Then a solver finds the links that minimize the total cost.
+The LAP tracking framework proposed by Jaqaman *et al.*[^1] is based on generating a large cost matrix that contains the costs to link all possible spots to another, within physically reasonable bounds. Then a solver finds the links that minimize the total cost.
 
 In some cases, when allowing for tracks to merge and split, the cost matrix generated had almost all spots of the model as rows and almost all spots of the model as columns. Even is the vast majority of these costs were infinite (impossible linking, because they are too far apart, not in suitable frames, etc...) they still occupied most of the memory. It gets worst as the cost matrix has to be manipulated to be completed by alternative costs. These heavy movements of large chunks of memory can crash the program and slows it down considerably.
 
@@ -36,8 +36,4 @@ A new action, called *Branch hierarchy analysis* features a branch-based analysi
 
 <img src="/media/trackmateBranchAnalysis.png" width="600"/>
 
-<references/>
-
-
-
-[1] [Jaqaman et al., "Robust single-particle tracking in live-cell time-lapse sequences", Nat Methods. 2008 Aug;5(8):695-702.](http://www.nature.com/nmeth/journal/v5/n8/full/nmeth.1237.html)
+[^1]: [Jaqaman et al., "Robust single-particle tracking in live-cell time-lapse sequences", Nat Methods. 2008 Aug;5(8):695-702.](http://www.nature.com/nmeth/journal/v5/n8/full/nmeth.1237.html)

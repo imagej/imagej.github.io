@@ -58,7 +58,7 @@ After full dilation:
     La-la Land    Whatevs       Whatevs       Whatevs       Totes         Whovian       Whovian       Whovian       
     Jean-Yves     Mini-Me       Mini-Me       Mini-Me       Totes         Whovian       Whovian       Whovian       
 
-After standard dilation:[1]
+After standard dilation:[^1]
 
     Woot          Woot          Unfriend      Unfriend      Screenager    Screenager    
     Woot          Woot          Unfriend      Unfriend      Textspeak     Textspeak     
@@ -213,9 +213,9 @@ It is the crudest approximation of a sphere.
 
 ### Decomposition.
 
-The diamond strel can be effectively decomposed in 2D (and 1D) using the logarithmic decomposition in extreme sets, as explained in [2]. The shape is then decomposed in a minimal series of smaller diamond and diamond tips. The decomposition is exact, giving the same result that of the non-decomposed version.
+The diamond strel can be effectively decomposed in 2D (and 1D) using the logarithmic decomposition in extreme sets, as explained in [^2]. The shape is then decomposed in a minimal series of smaller diamond and diamond tips. The decomposition is exact, giving the same result that of the non-decomposed version.
 
-In 3D and higher dimensionalities, the logarithmic decomposition cannot be done, and we rely on a more classical linear decomposition (also well explained in [3]). Here is a comparison on how the decomposed version performs versus the non-decomposed one.
+In 3D and higher dimensionalities, the logarithmic decomposition cannot be done, and we rely on a more classical linear decomposition (also well explained in [^2]). Here is a comparison on how the decomposed version performs versus the non-decomposed one.
 
 #### 2D performance
 
@@ -243,7 +243,7 @@ In 3D, [MATLAB](/scripting/matlab) does not offer a structuring element decompos
 
 ### 2D Decomposition in periodic lines.
 
-In the 2D case, a disk structuring element can be decomposed in a succession of 4, 6 or 8 periodic lines[4]. Doing so, the shape of the disk is only an approximate one. The first plot below indicates the percentage of pixels that are a mismatch compared to the "true" disk (by "true" I mean as best as digitizing a disk on a square matrix can be). In practice, this plot is rather uninformative. The second plot gives the effective aspect of the decomposed disks:
+In the 2D case, a disk structuring element can be decomposed in a succession of 4, 6 or 8 periodic lines[^3]. Doing so, the shape of the disk is only an approximate one. The first plot below indicates the percentage of pixels that are a mismatch compared to the "true" disk (by "true" I mean as best as digitizing a disk on a square matrix can be). In practice, this plot is rather uninformative. The second plot gives the effective aspect of the decomposed disks:
 
 <File:DiskDecompError.png%7CError> percentage when approximating a disk STREL with a PL decomposition. <File:DiskDecompErrorLook.png%7CAspect> of the disk STREL decomposition in periodic lines, with varying radius.
 
@@ -257,14 +257,10 @@ I am unable to derive an efficient decomposition of the disk STREL for the 3D ca
 
 # References and links.
 
-<references/>
-
 {% include person id='tinevez' %} ([talk](User_talk_JeanYvesTinevez)) 09:33, 5 December 2014 (CST)
 
-[1] These are the 35 words added by the Oxford Online Dictionary during summer 2012. And another one.
+[^1]: These are the 35 words added by the Oxford Online Dictionary during summer 2012. And another one.
 
-[2] Rein van den Boomgard and Richard van Balen, [Methods for Fast Morphological Image Transforms Using Bitmapped Binary Images](http://www.sciencedirect.com/science/article/pii/1049965292900553.htm), CVGIP: Models and Image Processing, vol. 54, no. 3, May 1992, pp. 252-254.
+[^2]: Rein van den Boomgard and Richard van Balen, [Methods for Fast Morphological Image Transforms Using Bitmapped Binary Images](http://www.sciencedirect.com/science/article/pii/1049965292900553.htm), CVGIP: Models and Image Processing, vol. 54, no. 3, May 1992, pp. 252-254.
 
-[3] 
-
-[4] Rolf Adams, [Radial Decomposition of Discs and Spheres](http://www.sciencedirect.com/science/article/pii/S1049965283710242), CVGIP: Graphical Models and Image Processing, vol. 55, no. 5, September 1993, pp. 325-332.
+[^3]: Rolf Adams, [Radial Decomposition of Discs and Spheres](http://www.sciencedirect.com/science/article/pii/S1049965283710242), CVGIP: Graphical Models and Image Processing, vol. 55, no. 5, September 1993, pp. 325-332.

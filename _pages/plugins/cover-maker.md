@@ -187,8 +187,3 @@ There is clearly room for improvement. Here is what comes to my mind, but feel f
 -   implement different tile geometries (like for instance hexagons)
 -   port it all into Java and particularly ImgLib2 for better performance (hopefully)
 
-## References
-
-<references />
-
- 

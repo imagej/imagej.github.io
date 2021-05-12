@@ -14,7 +14,7 @@ categories: Plugins,Filtering,Integral Image
 {% endcapture %}
 {% include info-box name='Integral Image Filters' software='Fiji' author=author maintainer=maintainer source=' [GitHub](https://github.com/axtimwalde/mpicbg/tree/master/mpicbg/src/main/java/mpicbg/ij/integral)' released='March 21<sup>st</sup>, 2011' latest-version='February 22<sup>nd</sup>, 2012' status='stable, active' category='[Plugins](Category_Plugins), [Filtering](Category_Filtering)' %}{% include youtube url='https://www.youtube.com/embed/p1mhZqj2VTY'%}
 
-Integral images have been introduced in by Crow (1984)[1] as a technique to improve texture rendering speed at multiple scales in perspective projections. The technique has since then been used for a number of applications. The most popular examples are fast normalized cross-correlation[2], the {% include wikipedia title='Viola%E2%80%93Jones object detection framework' text='Viola-Jones object detection framework'%}[3], and the {% include wikipedia title='SURF' text='Speeded Up Robust Feature (SURF)'%} transform[4]. In Fiji, we currently use Integral Images for a number of basic statistic block filters.
+Integral images have been introduced in by Crow (1984)[^1] as a technique to improve texture rendering speed at multiple scales in perspective projections. The technique has since then been used for a number of applications. The most popular examples are fast normalized cross-correlation[^2], the {% include wikipedia title='Viola%E2%80%93Jones object detection framework' text='Viola-Jones object detection framework'%}[^3], and the {% include wikipedia title='SURF' text='Speeded Up Robust Feature (SURF)'%} transform[^4]. In Fiji, we currently use Integral Images for a number of basic statistic block filters.
 
 ## Basic Block Statistics with Integral Images (Summed-Area Tables)
 
@@ -174,14 +174,10 @@ $$ a = n\sum_{i=1}^nx_iy_i - \sum_{i=1}^nx_i\sum_{i=1}^ny_i\quad\text{and}\quad{
 
 ## References
 
-<references />
+{% include cite fn='1' content='conference' last='Crow' first='Franklin C.' title='Summed-area tables for texture mapping' booktitle='Proceedings of the 11<sup>th</sup> annual conference on Computer graphics and interactive techniques' series='SIGGRAPH "84' year='1984' pages='207–212' publisher='ACM' address='New York, NY, USA' isbn='0-89791-138-5' url='http://doi.acm.org/10.1145/800031.808600' doi='10.1145/800031.808600' %}
 
-  
+{% include cite fn='2' content='conference' first='J. P.' last='Lewis' booktitle='Vision Interface' volume='95' pages='120–123' publisher='Canadian Image Processing and Pattern Recognition Society' title='Fast template matching' year='1995' %}
 
-[1] {% include cite content='conference' last='Crow' first='Franklin C.' title='Summed-area tables for texture mapping' booktitle='Proceedings of the 11<sup>th</sup> annual conference on Computer graphics and interactive techniques' series='SIGGRAPH "84' year='1984' pages='207–212' publisher='ACM' address='New York, NY, USA' isbn='0-89791-138-5' url='http://doi.acm.org/10.1145/800031.808600' doi='10.1145/800031.808600' %}
+{% include cite fn='3' content='journal' first1='Paul' last1='Viola' first2='Michael J.' last2='Jones' title='Robust Real-Time Face Detection' journal='International Journal of Computer Vision' pages='137–154' volume='57' number='2' year='2004' %}
 
-[2] {% include cite content='conference' first='J. P.' last='Lewis' booktitle='Vision Interface' volume='95' pages='120–123' publisher='Canadian Image Processing and Pattern Recognition Society' title='Fast template matching' year='1995' %}
-
-[3] {% include cite content='journal' first1='Paul' last1='Viola' first2='Michael J.' last2='Jones' title='Robust Real-Time Face Detection' journal='International Journal of Computer Vision' pages='137–154' volume='57' number='2' year='2004' %}
-
-[4] {% include cite content='journal' first1='Herbert' last1='Bay' first2='Andreas' last2='Ess' first3='Tinne' last3='Tuytelaars' first4='Luc' last4='Van Gool' title='SURF: Speeded Up Robust Features' journal='Computer Vision and Image Understanding (CVIU)' volume='110' number='3' pages='346–359' year='2008' %}
+{% include cite fn='4' content='journal' first1='Herbert' last1='Bay' first2='Andreas' last2='Ess' first3='Tinne' last3='Tuytelaars' first4='Luc' last4='Van Gool' title='SURF: Speeded Up Robust Features' journal='Computer Vision and Image Understanding (CVIU)' volume='110' number='3' pages='346–359' year='2008' %}

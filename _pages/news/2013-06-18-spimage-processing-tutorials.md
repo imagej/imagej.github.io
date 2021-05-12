@@ -4,7 +4,7 @@ title: 2013-06-18 - SPIMage processing tutorials
 categories: News
 ---
 
-As part of Fiji's sister project - [**OpenSPIM**](http://openspim.org)[1] - we have assembled detailed step-by-step tutorials for [**SPIMage processing**](http://openspim.org/Operation#data-processing).
+As part of Fiji's sister project - [**OpenSPIM**](http://openspim.org)[^1] - we have assembled detailed step-by-step tutorials for [**SPIMage processing**](http://openspim.org/Operation#data-processing).
 
 -   We start by defining [**System requirements**](http://openspim.org/Pre-requisites) and downloading [sample OpenSPIM data](http://openspim.org/Raw_data),
 -   followed by optional [**pre-processing steps**](http://openspim.org/Pre-processing).
@@ -14,8 +14,4 @@ As part of Fiji's sister project - [**OpenSPIM**](http://openspim.org)[1] - we h
 
 The pipeline is relatively linear as described above, we highlight the steps where [**alternative routes exist**](http://openspim.org/Registration#cross-road-in-spim-plugins).
 
-<references/>
-
-
-
-[1] {% include cite content='journal' author='Pitrone P. G., Schindelin J., Stuyvenberg L., Preibisch S., Weber M.; Eliceiri K. W., Huisken J., Tomancak P.' title='OpenSPIM: an open access light sheet microscopy platform' journal='Nature Methods' volume='' number='' pages='' year='2013' url='http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.2507.html' %}
+{% include cite fn='1' content='journal' author='Pitrone P. G., Schindelin J., Stuyvenberg L., Preibisch S., Weber M.; Eliceiri K. W., Huisken J., Tomancak P.' title='OpenSPIM: an open access light sheet microscopy platform' journal='Nature Methods' volume='' number='' pages='' year='2013' url='http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.2507.html' %}

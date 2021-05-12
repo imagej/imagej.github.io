@@ -84,7 +84,7 @@ What happened here? The gray levels are all messed up. Checking the class of the
 ` `  
 ` int8`
 
-Aha! So we gave to ImgLib2 an uint8 array, but it gives us back an int8 array, with all values wrapped. This is actually something that should have been expected: There is no unsigned byte type in Java, only signed byte type. This is a language design choice we could discuss for hours, but in Java there just isn't uint8 or uint16[1].
+Aha! So we gave to ImgLib2 an uint8 array, but it gives us back an int8 array, with all values wrapped. This is actually something that should have been expected: There is no unsigned byte type in Java, only signed byte type. This is a language design choice we could discuss for hours, but in Java there just isn't uint8 or uint16[^1].
 
 ImgLib2 developers managed to deal with it elegantly. Since the library can abstract about everything, having an image type which is not directly backed up by an existing primitive type is not a problem. The uint8 is represented internally by something Java can handle, and ImgLib2 makes sure the unsigned byte type arithmetics are respected whenever the image content is retrieved or display.
 
@@ -108,7 +108,7 @@ We expect the underlying raw data - an array of doubles - to be shared between [
 
 It did not work: the ImgLib2 image did not see the change. This means that it does not wrap <b>the</b> [MATLAB](/scripting/matlab) array, but a copy of it. This is a shame and this is of crucial importance. Not only we might have some very large data to process we wish not to duplicate in memory, but we might want to take advantage of some ImgLib2 algorithms that run *in place* and modify the source image.
 
-This is by construction, and there is no workaround, at least for Java[2]. [MATLAB](/scripting/matlab) passes all the data *per-value*, not *per-reference* and this is what happened here.
+This is by construction, and there is no workaround, at least for Java[^2]. [MATLAB](/scripting/matlab) passes all the data *per-value*, not *per-reference* and this is what happened here.
 
 ## Using Java arrays in MATLAB
 
@@ -135,10 +135,8 @@ Therefore, a solution implies a change of approach. We will not use [MATLAB](/sc
 
 With this strategy, [MATLAB](/scripting/matlab) steps aside a bit, since we use ImgLib2 for basically all data manipulation. It takes the role of a scripting language like [Jython](/scripting/jython), from which you make plain call to Java classes. Duplicating the native array wrapped in an `ArrayImg` allows you still make the best our of [MATLAB](/scripting/matlab) easily, but you must design a good tactic in your script to avoid these local copies to exist for too long.
 
-<references/>
+## References
 
- 
+[^1] :Check [here](http://darksleep.com/player/JavaAndUnsignedTypes.html) for the details of unsigned types story.
 
-[1] Check [here](http://darksleep.com/player/JavaAndUnsignedTypes.html) for the details of unsigned types story.
-
-[2] For C++, you can write a Mex wrapper that will force [MATLAB](/scripting/matlab) to operate on the reference of an array.
+[^2]: For C++, you can write a Mex wrapper that will force [MATLAB](/scripting/matlab) to operate on the reference of an array.

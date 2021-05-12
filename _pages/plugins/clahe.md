@@ -8,6 +8,8 @@ artifact: mpicbg:mpicbg_:1.4.1
 
 {% include thumbnail src='/media/tem.jpg' title='TEM original image'%} {% include thumbnail src='/media/tem-clahe-50-256-2.5.jpg' title='TEM CLAHE processed, (block: 50; bins: 256; max slope: 2.5)'%}
 
+The plugin **Enhance Local Contrast (CLAHE)** implements the method Contrast [Limited Adaptive Histogram Equalization](http://en.wikipedia.org/wiki/CLAHE)[^1] for enhancing the local contrast of an image. In Fiji, it is called through the menu entry **Process / Enhance Local Contrast (CLAHE)**. The filter respects the selected regions of interest and triggers an Undo-step.
+
 The method has three parameters:
 
 block size  
@@ -81,8 +83,4 @@ Execute the following macro from [ImageJ's macro editor](/ij/developer/macro/mac
 
 ## References
 
-<references />
-
- 
-
-[1] {% include citation last='Zuiderveld' first='Karel' contribution='Contrast limited adaptive histogram equalization' title='Graphics gems IV' pages='474–485' publisher='Academic Press Professional, Inc.' address='San Diego, CA, USA' year='1994' url='http://portal.acm.org/citation.cfm?id=180940' %}
+{% include citation fn='1' last='Zuiderveld' first='Karel' contribution='Contrast limited adaptive histogram equalization' title='Graphics gems IV' pages='474–485' publisher='Academic Press Professional, Inc.' address='San Diego, CA, USA' year='1994' url='http://portal.acm.org/citation.cfm?id=180940' %}

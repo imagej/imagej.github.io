@@ -4,7 +4,7 @@ title: Topology preserving warping error
 categories: Segmentation
 ---
 
-{% include thumbnail src='/media/warping-error-comparison.png' title='Application of the topology-preserving warping error. Example A and B have almost the same amount of pixel error with respect to the ground truth, however, example B has no topological error.'%} The **warping error** is a [segmentation](Category_Segmentation) metric that tolerates disagreements over boundary location, penalizes topological disagreements, and can be used directly as a cost function for learning boundary detection[1].
+{% include thumbnail src='/media/warping-error-comparison.png' title='Application of the topology-preserving warping error. Example A and B have almost the same amount of pixel error with respect to the ground truth, however, example B has no topological error.'%} The **warping error** is a [segmentation](Category_Segmentation) metric that tolerates disagreements over boundary location, penalizes topological disagreements, and can be used directly as a cost function for learning boundary detection[^1].
 
 In other words, instead of focusing on the geometric differences (pixel disagreement) between two segmentations, the **warping error** focuses on the objects and measures the topological error between them.
 
@@ -16,7 +16,7 @@ The pixel error is appealing because of its simplicity, but suffers from a serio
 
 ## Digital topology and the warping error
 
-Jain *et al.* [2] introduced the **warping error**, another metric for comparing boundary labelings based on concepts from the field of {% include wikipedia title='Digital topology' text='digital topology'%}.
+Jain *et al.* [^1] introduced the **warping error**, another metric for comparing boundary labelings based on concepts from the field of {% include wikipedia title='Digital topology' text='digital topology'%}.
 
 If *L*<sup>\*</sup> can be transformed into *L* by a sequence of pixel flips that each
 
@@ -126,10 +126,5 @@ The warping error metric is implemented for 2D images in the [Trainable Weka Seg
 
 ## References
 
-<references />
+{% include cite fn='1' content='journal' author='V. Jain, B. Bollmann, M. Richardson, D.R. Berger, M.N. Helmstaedter, K.L. Briggman, W. Denk, J.B. Bowden, J.M. Mendenhall, W.C. Abraham, K.M. Harris, N. Kasthuri, K.J. Hayworth, R. Schalek, J.C. Tapia, J.W. Lichtman, S.H. Seung' title='Boundary Learning by Optimization with Topological Constraints' booktitle='2010 IEEE CONFERENCE ON COMPUTER VISION AND PATTERN RECOGNITION (CVPR)' year='2010' series='IEEE Conference on Computer Vision and Pattern Recognition' pages='2488-2495' organization='IEEE Comp Soc' doi='10.1109/CVPR.2010.5539950' %}
 
-
-
-[1] {% include cite content='journal' author='V. Jain, B. Bollmann, M. Richardson, D.R. Berger, M.N. Helmstaedter, K.L. Briggman, W. Denk, J.B. Bowden, J.M. Mendenhall, W.C. Abraham, K.M. Harris, N. Kasthuri, K.J. Hayworth, R. Schalek, J.C. Tapia, J.W. Lichtman, S.H. Seung' title='Boundary Learning by Optimization with Topological Constraints' booktitle='2010 IEEE CONFERENCE ON COMPUTER VISION AND PATTERN RECOGNITION (CVPR)' year='2010' series='IEEE Conference on Computer Vision and Pattern Recognition' pages='2488-2495' organization='IEEE Comp Soc' doi='10.1109/CVPR.2010.5539950' %}
-
-[2] 

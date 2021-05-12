@@ -94,10 +94,6 @@ You should now find the plugin under the sub-menu {% include bc path='Plugins |M
 
 **Note**: Classic Watershed is only one of the plugins included in the [MorphoLibJ](/plugins/morpholibj) suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
 
-## References
-
-<references />
-
 ## See also
 
 -   [Marker-controlled Watershed](/plugins/marker-controlled-watershed), a plugin to perform watershed by flooding from specific seed points or markers.

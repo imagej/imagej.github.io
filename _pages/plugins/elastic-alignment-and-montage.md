@@ -51,7 +51,7 @@ For those vertices of a source image overlapping a target image, we identify its
 
 ## Linear Initialization
 
-Both relaxing the system of meshes and identifying corresponding locations between images require good initialization. The former because the meshes will fold otherwise, the latter to narrow the matching space with the benefit of both, increased speed and better reliability. We initialize the system with a linear-per-image optimal pre-alignment based on [local image features](/plugins/feature-extraction).[1]
+Both relaxing the system of meshes and identifying corresponding locations between images require good initialization. The former because the meshes will fold otherwise, the latter to narrow the matching space with the benefit of both, increased speed and better reliability. We initialize the system with a linear-per-image optimal pre-alignment based on [local image features](/plugins/feature-extraction).[^1]
 
 ## Block Matching
 
@@ -61,16 +61,16 @@ Fig. 2: Match filter based on the correlation surface. Starting from an approxim
 {% endcapture %}
 {% include thumbnail src='/media/correlation.png' title=title %} Corresponding locations are searched through block matching. Initialized from an approximate linear pairwise alignment that is estimated using [local image features](/plugins/feature-extraction), the local vicinity around each vertex is inspected for an optimal match. We use the The {% include wikipedia title='Pearson product-moment correlation coefficient' text='PMCC coefficent'%} *r* of a patch around the vertex and the overlapping patch in the other image as the quality measure for a match. The location with maximal *r* specifies the offset of the vertex relative to the initial linear alignment.
 
-We perform block matching at a reasonably down-scaled version of the images. The ideal scaling factor depends on the application and quality of the signal. To overcome the reduced accuracy of the estimated offset, we use Brown's method[2] to estimate an approximate sub-pixel offset. Furthermore, in order to reject wrong matches, three local filters based on the correlation surface are in place:
+We perform block matching at a reasonably down-scaled version of the images. The ideal scaling factor depends on the application and quality of the signal. To overcome the reduced accuracy of the estimated offset, we use Brown's method[^2] to estimate an approximate sub-pixel offset. Furthermore, in order to reject wrong matches, three local filters based on the correlation surface are in place:
 
 minimal threshold for *r*  
 if the match has an *r* lower than a given threshold it is rejected
 
 edge response filter  
-if the principal curvatures of *r(x,y)* at matches location are related by a factor larger than a given threshold, the match is rejected for being an edge response.[3]
+if the principal curvatures of *r(x,y)* at matches location are related by a factor larger than a given threshold, the match is rejected for being an edge response.[^3]
 
 ambiguity filter  
-if the second best *r(x,y)* is very similar to the best, the match is rejected for being ambiguous. Similar means related by a factor larger than a given threshold.[4]
+if the second best *r(x,y)* is very similar to the best, the match is rejected for being ambiguous. Similar means related by a factor larger than a given threshold.[^3]
 
 See also [Test Block Matching Parameters](/plugins/test-block-matching-parameters) plugin
 
@@ -126,14 +126,8 @@ We will further investigate in automatic selection of appropriate parameters dep
 
 ## References
 
-<references />
+{% include cite fn='1' content='journal' title='As-rigid-as-possible mosaicking and serial section registration of large ssTEM datasets' author='S. Saalfeld, A. Cardona, V. Hartenstein, P. Tomancak' journal='Bioinformatics' pages='i57–i63' volume='26' number='12' year='2010' doi='10.1093/bioinformatics/btq219' %}
 
-   
+{% include cite fn='2' content='conference' author='M. Brown and D. Lowe' title='Invariant Features from Interest Point Groups' booktitle='British Machine Vision Conference' year='2002' pages='656–665' place='Cardiff, Wales' %}
 
-[1] {% include cite content='journal' title='As-rigid-as-possible mosaicking and serial section registration of large ssTEM datasets' author='S. Saalfeld, A. Cardona, V. Hartenstein, P. Tomancak' journal='Bioinformatics' pages='i57–i63' volume='26' number='12' year='2010' doi='10.1093/bioinformatics/btq219' %}
-
-[2] {% include cite content='conference' author='M. Brown and D. Lowe' title='Invariant Features from Interest Point Groups' booktitle='British Machine Vision Conference' year='2002' pages='656–665' place='Cardiff, Wales' %}
-
-[3] {% include cite content='journal' author='D. Lowe' title='Distinctive Image Features from Scale-Invariant Keypoints' journal='International Journal of Computer Vision' volume='60' number='2' pages='91–110' year='2004' doi='10.1109/ICCV.1999.790410' %}
-
-[4] 
+{% include cite fn='3' content='journal' author='D. Lowe' title='Distinctive Image Features from Scale-Invariant Keypoints' journal='International Journal of Computer Vision' volume='60' number='2' pages='91–110' year='2004' doi='10.1109/ICCV.1999.790410' %}

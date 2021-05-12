@@ -20,7 +20,7 @@ categories: Tracking,Tutorials,Plugins
 
 ## PhotoBend plugins collection
 
-A collection of specialized plugins for ImageJ providing tracking of a needle-like crystal shape changing during photobending process. Photobending is a phenomenon of crystal deformation caused by non-uniform crystal structure transformation due to photochemical reaction. Bending of crystals caused by light irradiation is only one of various types of mechanical response observed in chemically transforming solid substances (see the review by Naumov *et al.*, 2015[1]{% include cite content='journal' title='Quantification of photoinduced bending of dynamic molecular crystals: from macroscopic strain to kinetic constants and activation energies' author='Stanislav Chizhik, Anatoly Sidelnikov, Boris Zakharov, Panče Naumov and Elena Boldyreva' journal='Chemical Science' volume='9' number='8' pages='2319-2335' year='2018' publisher='The Royal Society of Chemistry' doi='10.1039/C7SC04863G' %}</ref> ).
+A collection of specialized plugins for ImageJ providing tracking of a needle-like crystal shape changing during photobending process. Photobending is a phenomenon of crystal deformation caused by non-uniform crystal structure transformation due to photochemical reaction. Bending of crystals caused by light irradiation is only one of various types of mechanical response observed in chemically transforming solid substances (see the review by Naumov *et al.*, 2015[^1] ).
 
 {% include thumbnail src='/media/photobend-demo.gif' title='Animation of the photobend time lapse (\~1500x playback speed)'%}
 
@@ -82,12 +82,8 @@ Warning: the plugins depend on several libraries which will be installed in loca
 
 ## Citing
 
-We kindly ask you to cite ref.&lt;ref name="Cizhik2018&gt;</ref> when publishing the results obtained using these plugins. Thank you for your support.
+We kindly ask you to cite Cizhik 2018[^1] when publishing the results obtained using these plugins. Thank you for your support.
 
 ## References
 
-<references />
-
-  
-
-[1] 
+{% include cite fn='1' content='journal' title='Quantification of photoinduced bending of dynamic molecular crystals: from macroscopic strain to kinetic constants and activation energies' author='Stanislav Chizhik, Anatoly Sidelnikov, Boris Zakharov, Panče Naumov and Elena Boldyreva' journal='Chemical Science' volume='9' number='8' pages='2319-2335' year='2018' publisher='The Royal Society of Chemistry' doi='10.1039/C7SC04863G' %}

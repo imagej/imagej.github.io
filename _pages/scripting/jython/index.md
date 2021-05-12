@@ -9,7 +9,7 @@ categories: Scripting
 
 ## Introduction
 
-Jython is an implementation of the Python programming language designed to run on the Java platform. [1] In ImageJ Jython is one of several [supported languages](/scripting#supported-languages).
+Jython is an implementation of the Python programming language designed to run on the Java platform. [^1] In ImageJ Jython is one of several [supported languages](/scripting#supported-languages).
 
 ## When to use Jython
 
@@ -411,6 +411,4 @@ At GitHub you will find an [example project](https://github.com/m-entrup/imagej-
 
 ## References
 
-<references />
-
-[1] [Wikipedia entry on Jython](/ij/plugins/index.html). Accessed: 2016-08-30
+[^1]: [Wikipedia entry on Jython](/ij/plugins/index.html). Accessed: 2016-08-30

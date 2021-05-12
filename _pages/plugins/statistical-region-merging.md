@@ -5,7 +5,7 @@ categories: Tutorials,Plugins,Segmentation
 artifact: sc.fiji:Statistical\_Region\_Merging
 ---
 
-Statistical Region Merging[1] is a fast and robust algorithm to segment an image into regions of similar intensity or color.
+Statistical Region Merging[^1] is a fast and robust algorithm to segment an image into regions of similar intensity or color.
 
 The idea is to start with one region per pixel and then applying a statistical test on neighboring regions (in ascending order of intensity differences) whether the mean intensities are sufficiently similar enough to be merged.
 
@@ -25,8 +25,4 @@ This is a result for a low value of *Q*:
 
 ## References
 
-<references />
-
-  
-
-[1] {% include cite content='journal' author='R. Nock, F. Nielsen' title='Statistical Region Merging' journal='IEEE Trans. Pattern Anal. Mach. Intell.' volume='26' number='11' pages='1452-1458' year='2004' %}
+{% include cite fn='1' content='journal' author='R. Nock, F. Nielsen' title='Statistical Region Merging' journal='IEEE Trans. Pattern Anal. Mach. Intell.' volume='26' number='11' pages='1452-1458' year='2004' %}

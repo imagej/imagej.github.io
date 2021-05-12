@@ -62,6 +62,3 @@ Original code by {% include person id='rasband' %}.
 
 By Tony Collins, initially part of his wonderful [MBF Plugin Collection](/software/mbf-imagej) package. Tony mentioned credit should go to {% include person id='rasband' %}, for the initial code is his work.
 
-<references/>
-
-
