@@ -16,7 +16,15 @@ categories: [Plugins,Segmentation,Mathematical morphology,Citable]
 {% capture source%}
 {% include github org='ijpb' repo='MorphoLibJ' %}
 {% endcapture %}
-{% include info-box name='Morphological Segmentation' software='IJPB-plugins' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](/plugins/morpholibj) v1.4.1)' status='stable, active' category='[Segmentation](Category_Segmentation), [Mathematical morphology](Category_Mathematical_morphology)' %}{\| \|<span>  
+{% include info-box name='Morphological Segmentation'
+software='IJPB-plugins'
+author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014'
+latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](/plugins/morpholibj) v1.4.1)'
+status='stable, active'
+category='[Segmentation](Category_Segmentation), [Mathematical morphology](Category_Mathematical_morphology)'
+%}
+
+{\| \|<span>  
 </span>style="vertical-align:top" \|{% include thumbnail src='/media/morphological-segmentation-animation-blobs.gif' title='Visual description of the different steps of the Morphological Segmentation plugin.'%} \|}
 
 ## Introduction

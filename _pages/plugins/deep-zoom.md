@@ -4,11 +4,17 @@ title: Deep Zoom
 categories: [Plugins,Unmaintained]
 ---
 
-
 {% capture source%}
 {% include github org='uw-loci' repo='deep-zoom-plugin' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='Deep Zoom' author=' [Aivar Grislis](http://loci.wisc.edu/people/aivar-grislis)' source=source status='inactive' category='[Import-Export](Category_Import-Export)' %}== Introduction ==
+{% include info-box software='ImageJ'
+name='Deep Zoom'
+author='[Aivar Grislis](http://loci.wisc.edu/people/aivar-grislis)'
+source=source status='inactive'
+category='[Import-Export](Category_Import-Export)'
+%}
+
+== Introduction ==
 
 <img src="/media/deep-zoom-1.png" title="fig:Deep-zoom-1.png" width="300" alt="Deep-zoom-1.png" /> <img src="/media/deep-zoom-2.png" title="fig:Deep-zoom-2.png" width="400" alt="Deep-zoom-2.png" />
 

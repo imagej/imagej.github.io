@@ -4,11 +4,15 @@ title: SciJava
 categories: [development]
 ---
 
+<<<<<<< HEAD
 {% include project content='SciJava' %}
 {% capture maintainer%}
 {% include person id='ctrueden' %}
 {% endcapture %}
 {% include info-box name='SciJava' software='SciJava' logo='<img src="/media/logos/scijava.png" width="128"/>' author=' [SciJava consortium](https://scijava.org/)' maintainer=maintainer source=' [on GitHub](https://github.com/scijava)' status='Active' website='https://scijava.org/' %}SciJava is a collaboration of projects providing software for scientific computing—an effort to cooperate and reuse code when feasible.
+=======
+SciJava is a collaboration of projects providing software for scientific computing—an effort to cooperate and reuse code when feasible.
+>>>>>>> ea70f1166 (WIP)
 
 ## The SciJava component collection
 

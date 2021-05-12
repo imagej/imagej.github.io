@@ -7,7 +7,18 @@ title: Multi-View Deconvolution
 {% capture source%}
 {% include github org='fiji' repo='SPIM\_Registration' %}
 {% endcapture %}
-{% include info-box name='Multi-view deconvolution plugin' software='ImageJ' author='Stephan Preibisch, Fernando Amat, Eugene Myers, Pavel Tomancak' maintainer='Stephan Preibisch' source=source filename='SPIM\_Registration.jar' released='February 2013' latest-version='June 2013' category='[SPIM Registration](Category_Registration)' website=' [Stephan Preibisch"s homepage](http://fly.mpi-cbg.de/~preibisch)' %}
+{% include info-box name='Multi-view deconvolution plugin'
+software='ImageJ'
+author='Stephan Preibisch, Fernando Amat, Eugene Myers, Pavel Tomancak'
+maintainer='Stephan Preibisch'
+source=source filename='SPIM\_Registration.jar'
+released='February 2013'
+latest-version='June 2013'
+category='[SPIM Registration](Category_Registration)'
+website='[Stephan Preibisch"s homepage](http://fly.mpi-cbg.de/~preibisch)'
+%}
+
+
 
 ## Citation
 

@@ -4,7 +4,7 @@ title: Kalman Stack Filter
 categories: [Filtering,Plugins]
 ---
 
-{% include info-box software='ImageJ' name='Kalman Stack Filter' author='Christopher Philip Mauer' filename='Kalman\_Stack\_Filter.class' source=' [Kalman\_Stack\_Filter.java](/ij/plugins/download/Kalman_Stack_Filter.java)' released='23 May 2003' latest-version='17 November 2006' status='stable (not yet in fiji update)' category='[Filtering](Category_Filtering)' website='/ij/plugins/kalman.html' %}
+{% include info-box software='ImageJ' name='Kalman Stack Filter' author='Christopher Philip Mauer' filename='Kalman\_Stack\_Filter.class' source='[Kalman\_Stack\_Filter.java](/ij/plugins/download/Kalman_Stack_Filter.java)' released='23 May 2003' latest-version='17 November 2006' status='stable (not yet in fiji update)' category='[Filtering](Category_Filtering)' website='/ij/plugins/kalman.html' %}
 
 ## Purpose
 

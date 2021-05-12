@@ -4,7 +4,7 @@ title: Maximum Entropy Threshold
 categories: [Plugins,Segmentation]
 ---
 
-{% include info-box software='ImageJ' name='Maximum Entropy Threshold' author='Jerek Sacha' filename=' [Entropy\_Threshold.class](/ij/plugins/download/Entropy_Threshold.class) (1,418 Bytes)' source=' [Entropy\_Threshold.java](/ij/plugins/download/Entropy_Threshold.java) (2,755 Bytes)' released='13 February 2004' status='unknown' category='[Segmentation](Category_Segmentation)' website='/ij/plugins/entropy.html' %}
+{% include info-box software='ImageJ' name='Maximum Entropy Threshold' author='Jerek Sacha' filename='[Entropy\_Threshold.class](/ij/plugins/download/Entropy_Threshold.class) (1,418 Bytes)' source='[Entropy\_Threshold.java](/ij/plugins/download/Entropy_Threshold.java) (2,755 Bytes)' released='13 February 2004' status='unknown' category='[Segmentation](Category_Segmentation)' website='/ij/plugins/entropy.html' %}
 
 ## Purpose
 

@@ -8,7 +8,15 @@ categories: [Plugins,Citable]
 {% capture source%}
 {% include github org='Fiji' repo='PQCT' %}
 {% endcapture %}
-{% include info-box name='pQCT' author='Timo Rantalainen' software='ImageJ/Fiji' source=source released='Feb 9<sup>th</sup>, 2018' latest-version='3.0.0, Jun 8<sup>th</sup>, 2018' status='stable' %}
+{% include info-box name='pQCT'
+author='Timo Rantalainen'
+software='ImageJ/Fiji'
+source=source released='Feb 9<sup>th</sup>, 2018'
+latest-version='3.0.0, Jun 8<sup>th</sup>, 2018'
+status='stable'
+%}
+
+
 
 
 ## Summary

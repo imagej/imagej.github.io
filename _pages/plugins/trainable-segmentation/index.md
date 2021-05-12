@@ -22,7 +22,15 @@ Verena Kaynig, {% include person id='iarganda' %}, Albert Cardona
 {% capture source%}
 {% include github org='fiji' repo='Trainable\_Segmentation' %}
 {% endcapture %}
-{% include info-box name='Trainable Segmentation' software='Fiji' author=author maintainer=maintainer source=source released='March 16<sup>th</sup>, 2010' latest-version='January 6<sup>th</sup>, 2012' status='**deprecated**' category='[Segmentation](Category_Segmentation)' %}
+{% include info-box name='Trainable Segmentation'
+software='Fiji'
+author=author maintainer=maintainer source=source released='March 16<sup>th</sup>, 2010'
+latest-version='January 6<sup>th</sup>, 2012'
+status='**deprecated**'
+category='[Segmentation](Category_Segmentation)'
+%}
+
+
 
 ## User Manual
 

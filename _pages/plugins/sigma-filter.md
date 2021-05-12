@@ -4,7 +4,7 @@ title: Sigma Filter
 categories: [Plugins,Filtering]
 ---
 
-{% include info-box software='ImageJ' name='Sigma Filter' author='Michael Schmid and Tony Collins' filename=' [Sigma\_Filter\_Plus.class](/ij/plugins/download/Sigma_Filter_Plus.class)' source=' [Sigma\_Filter\_Plus.java](/ij/plugins/download/Sigma_Filter_Plus.java)' released='25 October 2007' status='1st version' category='[Filtering](Category_Filtering)' website='/ij/plugins/sigma-filter.html' %}
+{% include info-box software='ImageJ' name='Sigma Filter' author='Michael Schmid and Tony Collins' filename='[Sigma\_Filter\_Plus.class](/ij/plugins/download/Sigma_Filter_Plus.class)' source='[Sigma\_Filter\_Plus.java](/ij/plugins/download/Sigma_Filter_Plus.java)' released='25 October 2007' status='1st version' category='[Filtering](Category_Filtering)' website='/ij/plugins/sigma-filter.html' %}
 
 ## Purpose
 

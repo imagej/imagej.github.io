@@ -4,7 +4,7 @@ title: Parallel Spectral Deconvolution
 categories: [Plugins,Deconvolution]
 ---
 
-{% include info-box software='ImageJ' name='Parallel Spectral Deconvolution 2D and 3D' author='Piotr Wendykier' filename=' [parallel\_spectral\_deconvolution-1.9-bin.zip](http://sourceforge.net/project/downloading.php?group_id=260514&filename=parallel_spectral_deconvolution-1.9-bin.zip)' source=' [parallel\_spectral\_deconvolution-1.9-src.zip](http://sourceforge.net/project/downloading.php?group_id=260514&filename=parallel_spectral_deconvolution-1.9-src.zip)' released='27 September 2007' latest-version='11 April 2009' category='[Deconvolution](Category_Deconvolution)' website='http://sites.google.com/site/piotrwendykier/software/deconvolution/parallelspectraldeconvolution' %}
+{% include info-box software='ImageJ' name='Parallel Spectral Deconvolution 2D and 3D' author='Piotr Wendykier' filename='[parallel\_spectral\_deconvolution-1.9-bin.zip](http://sourceforge.net/project/downloading.php?group_id=260514&filename=parallel_spectral_deconvolution-1.9-bin.zip)' source='[parallel\_spectral\_deconvolution-1.9-src.zip](http://sourceforge.net/project/downloading.php?group_id=260514&filename=parallel_spectral_deconvolution-1.9-src.zip)' released='27 September 2007' latest-version='11 April 2009' category='[Deconvolution](Category_Deconvolution)' website='http://sites.google.com/site/piotrwendykier/software/deconvolution/parallelspectraldeconvolution' %}
 
 ## Purpose
 

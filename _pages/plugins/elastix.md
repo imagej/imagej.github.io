@@ -7,7 +7,14 @@ title: Elastix
 {% capture source%}
 {% include github org='embl-cba' repo='fiji-plugin-elastixWrapper' %}
 {% endcapture %}
-{% include info-box name='Elastix' software='Fiji' update-site='EMBL-CBA' author='Christian Tischer' maintainer='Christian Tischer' source=source %}
+{% include info-box name='Elastix'
+software='Fiji'
+update-site='EMBL-CBA'
+author='Christian Tischer'
+maintainer='Christian Tischer'
+source=source %}
+
+
 
 ## Overview
 

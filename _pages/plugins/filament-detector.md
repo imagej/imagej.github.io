@@ -15,7 +15,15 @@ title: FilamentDetector
 {% capture source%}
 {% include github org='hadim' repo='FilamentDetector' %}
 {% endcapture %}
-{% include info-box name='FilamentDetector' logo='' software='Fiji' author=author maintainer=maintainer source=source released='13/10/2017' status='v0.1.1, alpha' category='Tracking, Detection' %}
+{% include info-box name='FilamentDetector'
+logo=''
+software='Fiji'
+author=author maintainer=maintainer source=source released='13/10/2017'
+status='v0.1.1, alpha'
+category='Tracking, Detection'
+%}
+
+
 
 ## Presentation
 

@@ -13,7 +13,14 @@ categories: [Plugins,Tutorials,Scripting]
 {% capture source%}
 {% include github org='scijava' repo='script-editor' source='org/scijava/ui/swing/script/ScriptEditor.java' %}
 {% endcapture %}
-{% include info-box name='Script Editor' software='ImageJ' author='Johannes Schindelin, Sumit Dubey (Google Summer of Code 2009)' maintainer=maintainer source=source released='11 Sep 2008' status='active' %}The script editor is an invaluable help when writing scripts in any of ImageJ's supported [languages](/scripting/comparisons).
+{% include info-box name='Script Editor'
+software='ImageJ'
+author='Johannes Schindelin, Sumit Dubey (Google Summer of Code 2009)'
+maintainer=maintainer source=source released='11 Sep 2008'
+status='active'
+%}
+
+The script editor is an invaluable help when writing scripts in any of ImageJ's supported [languages](/scripting/comparisons).
 
 ## Features
 

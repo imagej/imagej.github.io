@@ -7,7 +7,15 @@ title: Adaptive Median Filter
 {% capture author%}
 {% include person id='WeisongZhao' %}
 {% endcapture %}
-{% include info-box software='ImageJ/Fiji' name='Adaptive Median Filter' maintainer=' [Weisong Zhao](https://weisongzhao.github.io/)' author=author filename='Adaptive\_Median\_Filter-0.1.0.jar [\[1](https://github.com/WeisongZhao/AdaptiveMedian.imagej/releases//latest) \]' source='GitHub [\[2](https://github.com/jumpfunky/ij-nl-means) \]' latest-version='v0.1.0 (18 Feb 2019)' status='Maintaining' category='[Plugins](/plugins)' %}
+{% include info-box software='ImageJ/Fiji'
+name='Adaptive Median Filter'
+maintainer='[Weisong Zhao](https://weisongzhao.github.io/)'
+author=author filename='Adaptive_Median_Filter-0.1.0.jar [\[1](https://github.com/WeisongZhao/AdaptiveMedian.imagej/releases//latest) \]'
+source='GitHub [\[2](https://github.com/jumpfunky/ij-nl-means) \]'
+latest-version='v0.1.0 (18 Feb 2019)'
+status='Maintaining'
+category='[Plugins](/plugins)'
+%}
 
 ## Motivation
 

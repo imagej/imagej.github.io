@@ -4,7 +4,7 @@ title: LUMoS Spectral Unmixing
 categories: [Plugins,Color processing,Colocalization]
 ---
 
-{% include info-box software='ImageJ/Fiji' name='LUMoS Spectral Unmixing' author='Tristan McRae' maintainer='Tristan McRae' released='June 2019' source=' [GitHub](https://github.com/tristan-mcrae-rochester/Multiphoton-Image-Analysis/blob/master/Spectral%20Unmixing/Code/ImageJ-FIJI/LUMoS_Spectral_Unmixing.java)' category='[Plugins](Category_Plugins), [Color Processing](Category_Color_processing), [Colocalization](Category_Colocalization)' %}
+{% include info-box software='ImageJ/Fiji' name='LUMoS Spectral Unmixing' author='Tristan McRae' maintainer='Tristan McRae' released='June 2019' source='[GitHub](https://github.com/tristan-mcrae-rochester/Multiphoton-Image-Analysis/blob/master/Spectral%20Unmixing/Code/ImageJ-FIJI/LUMoS_Spectral_Unmixing.java)' category='[Plugins](Category_Plugins), [Color Processing](Category_Color_processing), [Colocalization](Category_Colocalization)' %}
 
 # Introduction
 

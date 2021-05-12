@@ -16,7 +16,13 @@ categories: [Scripting]
 {% capture source%}
 {% include github org='scijava' repo='script-editor' source='org/scijava/ui/swing/script' %}
 {% endcapture %}
-{% include info-box name='Script Interpreter' software='ImageJ' author=author maintainer=maintainer source=source released='8 Apr 2016' status='active' %}
+{% include info-box name='Script Interpreter'
+software='ImageJ'
+author=author maintainer=maintainer source=source released='8 Apr 2016'
+status='active'
+%}
+
+
  The **Script Interpreter** is a {% include wikipedia title="Read–eval–print loop" %} allowing scripting from the command line.
 
 ## Getting Started

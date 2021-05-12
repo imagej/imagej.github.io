@@ -11,7 +11,17 @@ title: 3D ImageJ Suite
 {% capture source%}
 {% include github org='mcib3d' repo='mcib3d-core' %}
 {% endcapture %}
-{% include info-box name='3D ImageJ Suite' software='3DSuite' update-site='3D ImageJ Suite' author=author maintainer=' [Thomas Boudier](https://github.com/mcib3d)' source=source released='25/09/2012, V2.0' latest-version='30/10/2019, V3.96' status='stable, active' category='[3D](Category_3D), [Analysis](Category_Analysis), [Filtering](Category_Filtering), [Segmentation](Category_Segmentation), [Mathematical morphology](Category_Mathematical_morphology)' %}
+{% include info-box name='3D ImageJ Suite'
+software='3DSuite'
+update-site='3D ImageJ Suite'
+author=author maintainer='[Thomas Boudier](https://github.com/mcib3d)'
+source=source released='25/09/2012, V2.0'
+latest-version='30/10/2019, V3.96'
+status='stable, active'
+category='[3D](Category_3D), [Analysis](Category_Analysis), [Filtering](Category_Filtering), [Segmentation](Category_Segmentation), [Mathematical morphology](Category_Mathematical_morphology)'
+%}
+
+
 
 ## 3D ImageJ Suite
 

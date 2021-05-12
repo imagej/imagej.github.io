@@ -4,7 +4,7 @@ title: Granulometric Filtering
 categories: [Plugins,Particle analysis]
 ---
 
-{% include info-box software='ImageJ' name='Granulometric Filtering' author='Dimiter Prodanov' filename=' [Gran\_Filter.jar](/ij/plugins/download/jars/Gran_Filter.jar) (39,559 Bytes)' source='in .jar file' released='21 May 2005' latest-version='' status='unknown' category='' website='/ij/plugins/gran-filter.html' %}
+{% include info-box software='ImageJ' name='Granulometric Filtering' author='Dimiter Prodanov' filename='[Gran\_Filter.jar](/ij/plugins/download/jars/Gran_Filter.jar) (39,559 Bytes)' source='in .jar file' released='21 May 2005' latest-version='' status='unknown' category='' website='/ij/plugins/gran-filter.html' %}
 
 ## Purpose
 

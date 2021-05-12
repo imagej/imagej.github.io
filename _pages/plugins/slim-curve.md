@@ -14,8 +14,12 @@ categories: [Plugins]
 {% capture source%}
 {% include github org='slim-curve' repo='slim-plugin' %}
 {% endcapture %}
+<<<<<<< HEAD
 {% include info-box software='ImageJ' name='SLIM Curve plugin' logo='<img src="/media/icons/slim-curve.png" width="64"/>' author=' [CRUK/MRC at University of Oxford](http://www.rob.ox.ac.uk/)  
 [UW-Madison LOCI](http://loci.wisc.edu/)' maintainer=maintainer filename='slim\_plugin-2.0.0-SNAPSHOT.jar' source=source latest-version='2.0.0-SNAPSHOT' status='discontinued in favor of [FLIMJ](/plugins/flimj)' website='https://slim-curve.github.io/' category='[:Category:Analysis](Category_Analysis)' %}
+=======
+{% include info-box software='ImageJ' name='SLIM Curve plugin' logo='<img src="/media/slim-curve-icon.png" width="64"/>' author='[CRUK/MRC at University of Oxford](http://www.rob.ox.ac.uk/)\n[UW-Madison LOCI](http://loci.wisc.edu/)' maintainer=maintainer filename='slim\_plugin-2.0.0-SNAPSHOT.jar' source=source latest-version='2.0.0-SNAPSHOT' status='discontinued in favor of [FLIMJ](/plugins/flimj)' website='https://slim-curve.github.io/' category='[:Category:Analysis](Category_Analysis)' %}
+>>>>>>> ea70f1166 (WIP)
 
 ## Introduction
 

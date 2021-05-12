@@ -4,9 +4,7 @@ title: Point Picker
 categories: [Plugins,Particle analysis]
 ---
 
-{% include info-box software='ImageJ' name='Point Picker' author=' [Philippe Thévenaz](http://bigwww.epfl.ch/thevenaz/)' filename=' [PC](http://bigwww.epfl.ch/thevenaz/pointpicker/pointpicker.zip)  
-[Macintosh](http://bigwww.epfl.ch/thevenaz/pointpicker/pointpicker.sit)  
-[Unix](http://bigwww.epfl.ch/thevenaz/pointpicker/pointpicker.tar.Z)' source=' [Java API](http://bigwww.epfl.ch/thevenaz/pointpicker/api/)' released='' latest-version='27 September 2003' status='probably not active' category='[Particle analysis](Category_Particle_analysis)' website='http://bigwww.epfl.ch/thevenaz/pointpicker/' %}
+{% include info-box software='ImageJ' name='Point Picker' author='[Philippe Thévenaz](http://bigwww.epfl.ch/thevenaz/)' filename='[PC](http://bigwww.epfl.ch/thevenaz/pointpicker/pointpicker.zip)\n[Macintosh](http://bigwww.epfl.ch/thevenaz/pointpicker/pointpicker.sit)\n[Unix](http://bigwww.epfl.ch/thevenaz/pointpicker/pointpicker.tar.Z)' source='[Java API](http://bigwww.epfl.ch/thevenaz/pointpicker/api/)' released='' latest-version='27 September 2003' status='probably not active' category='[Particle analysis](Category_Particle_analysis)' website='http://bigwww.epfl.ch/thevenaz/pointpicker/' %}
 
 {% capture source%}
 {% include github org='fiji' repo='PointPicker' source='PointPicker\_.java' %}

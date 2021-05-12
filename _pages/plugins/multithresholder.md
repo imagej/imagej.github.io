@@ -9,7 +9,16 @@ plugin from {% include person id='landinig' %} does a better job.
 {%- endcapture removed-from-fiji -%}
 {% include ambox text=removed-from-fiji %}
 
+<<<<<<< HEAD
 {% include info-box software='ImageJ' name='MultiThresholder' author='Kevin (Gali) Baler' filename=' [Multi_Thresholder.jar](/ij/plugins/download/jars/Multi_Thresholder.jar) (30,729 Bytes)' source='in .jar file' released='21 July 2005' latest-version='25 January 2007' status='unknown' category='[Segmentation](Category_Segmentation)' website='/ij/plugins/multi-thresholder.html' %}
+=======
+{% capture reason%}
+This plugin was removed, as the [Auto Threshold](/plugins/auto-threshold) plugin from {% include person id='landinig' %} does a better job.
+{% endcapture %}
+{% include pluginremoved reason=reason date='April 2009' %}
+
+{% include info-box software='ImageJ' name='MultiThresholder' author='Kevin (Gali) Baler' filename='[Multi\_Thresholder.jar](/ij/plugins/download/jars/Multi_Thresholder.jar) (30,729 Bytes)' source='in .jar file' released='21 July 2005' latest-version='25 January 2007' status='unknown' category='[Segmentation](Category_Segmentation)' website='/ij/plugins/multi-thresholder.html' %}
+>>>>>>> 18ca3c5d0 (WIP - migrate plugin info-boxs to statbox)
 
 ## Purpose
 

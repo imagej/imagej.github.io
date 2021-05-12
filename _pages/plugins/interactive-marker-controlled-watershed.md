@@ -16,7 +16,15 @@ categories: [Plugins,Segmentation,Mathematical morphology]
 {% capture source%}
 {% include github org='ijpb' repo='ijpb-plugins' %}
 {% endcapture %}
-{% include info-box name='Interactive Marker-controlled Watershed' software='IJPB-plugins' author=author maintainer=maintainer source=source released='September 9<sup>th</sup>, 2017' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](/plugins/morpholibj) v1.4.1)' status='stable, active' category='[Segmentation](Category_Segmentation), [Mathematical morphology](Category_Mathematical_morphology)' %}
+{% include info-box name='Interactive Marker-controlled Watershed'
+software='IJPB-plugins'
+author=author maintainer=maintainer source=source released='September 9<sup>th</sup>, 2017'
+latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](/plugins/morpholibj) v1.4.1)'
+status='stable, active'
+category='[Segmentation](Category_Segmentation), [Mathematical morphology](Category_Mathematical_morphology)'
+%}
+
+
 
 ## Introduction
 

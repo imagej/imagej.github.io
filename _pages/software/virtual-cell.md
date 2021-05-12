@@ -8,7 +8,22 @@ categories: [Software,SciJava,Citable]
 {% capture maintainer%}
 {% include person id='jcschaff' %}, {% include person id='ctrueden' %}
 {% endcapture %}
+<<<<<<< HEAD
 {% include info-box name='Virtual Cell' software='Virtual Cell' logo='<img src="/media/icons/vcell.png" width="96"/>' author=' [CCAM](https://health.uconn.edu/cell-analysis-modeling/) at [UConn Health](https://health.uconn.edu/)' maintainer=maintainer source=' [on GitHub](https://github.com/virtualcell)' status='Active' website='http://vcell.org/' %}Virtual Cell (VCell for short) is a modeling and simulation environment for cell biology.
+=======
+{% include info-box name='Virtual Cell'
+software='Virtual Cell'
+logo='<img src="/media/vcell-icon.png" width="96"/>'
+author='[CCAM](https://health.uconn.edu/cell-analysis-modeling/) at [UConn Health](https://health.uconn.edu/)'
+maintainer=maintainer source='[on GitHub](https://github.com/virtualcell)'
+status='Active'
+website='http://vcell.org/'
+%}
+
+
+
+Virtual Cell (VCell for short) is a modeling and simulation environment for cell biology.
+>>>>>>> ea70f1166 (WIP)
 
 A VCell plugin for ImageJ is currently in the works! Stay tuned!
 

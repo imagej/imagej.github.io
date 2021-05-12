@@ -8,7 +8,19 @@ categories: [Plugins]
 {% capture source%}
 {% include github org='stardist' repo='stardist-imagej' %}
 {% endcapture %}
+<<<<<<< HEAD
 {% include info-box name='StarDist' software='ImageJ' update-site='StarDist' author='Uwe Schmidt, Martin Weigert' maintainer='Uwe Schmidt, Martin Weigert' source=source website='https://github.com/mpicbg-csbd/stardist' %} <img src="/media/icons/stardist.jpg" width="128"/>
+=======
+{% include info-box name='StarDist'
+software='ImageJ'
+update-site='StarDist'
+author='Uwe Schmidt, Martin Weigert'
+maintainer='Uwe Schmidt, Martin Weigert'
+source=source website='https://github.com/mpicbg-csbd/stardist'
+%}
+
+<img src="/media/stardist-logo.jpg" width="128"/>
+>>>>>>> ea70f1166 (WIP)
 
 ## Overview
 

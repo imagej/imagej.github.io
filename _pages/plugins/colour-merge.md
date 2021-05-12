@@ -4,7 +4,16 @@ title: Colour merge
 categories: [Plugins,Color processing]
 ---
 
-{% include info-box software='ImageJ' name='Colour merge' author='unknown' filename='Colour\_merge.class' source='not found' released='unknown' latest-version='unknown' status='unknown' category='[Color processing](Category_Color_processing)' %}
+{% include info-box software='ImageJ'
+name='Colour merge'
+author='unknown'
+filename='Colour_merge.class'
+source='not found'
+released='unknown'
+latest-version='unknown'
+status='unknown'
+category='[Color processing](Category_Color_processing)'
+%}
 
 ## Purpose
 

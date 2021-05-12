@@ -12,7 +12,13 @@ categories: [Tutorials,Plugins]
 {% capture source%}
 {% include github org='fiji' repo='VIB' source='Moving\_Least\_Squares.java' %}
 {% endcapture %}
-{% include info-box name='Moving Least Squares registration' software='ImageJ' author=author maintainer='Johannes Schindelin' source=source released='2006/10/05' %}
+{% include info-box name='Moving Least Squares registration'
+software='ImageJ'
+author=author maintainer='Johannes Schindelin'
+source=source released='2006/10/05'
+%}
+
+
 
 This plugin implements the algorithms described in [^1] to deform an image given a set of landmarks.
 

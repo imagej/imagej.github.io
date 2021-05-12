@@ -8,7 +8,17 @@ categories: [Plugins,Transform]
 {% capture source%}
 {% include github org='axtimwalde' repo='mpicbg' path='mpicbg\_/src/main/java/Transform\_MovingLeastSquaresMesh.java' %}
 {% endcapture %}
-{% include info-box name='Interactive Moving Least Squares' software='Fiji' author='Stephan Saalfeld' maintainer='Stephan Saalfeld' source=source released='July 18, 2008' latest-version='May 26, 2009' status='stable, active' category='[Transform](Category_Transform), [Plugins](Category_Plugins)' %}{% include youtube url='https://www.youtube.com/embed/NwOxRmX03xs'%}
+{% include info-box name='Interactive Moving Least Squares'
+software='Fiji'
+author='Stephan Saalfeld'
+maintainer='Stephan Saalfeld'
+source=source released='July 18, 2008'
+latest-version='May 26, 2009'
+status='stable, active'
+category='[Transform](Category_Transform), [Plugins](Category_Plugins)'
+%}
+
+{% include youtube url='https://www.youtube.com/embed/NwOxRmX03xs'%}
 
 ## License
 

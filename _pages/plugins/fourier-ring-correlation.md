@@ -4,7 +4,19 @@ title: Fourier Ring Correlation Plugin
 categories: [Plugins]
 ---
 
-{% include info-box name='Fourier Ring Correlation' software='Fiji' author='Olivier Burri, Alex Herbert' maintainer='Olivier Burri' filename='FRC\_-1.0.2.jar' released='September 2016' latest-version='July 2018' source=' [github page](https://github.com/BIOP/ijp-frc)' status='stable' website=' [BIOP Staff Page](http://biop.epfl.ch/INFO_Facility.html#staff)' %}
+{% include info-box name='Fourier Ring Correlation'
+software='Fiji'
+author='Olivier Burri, Alex Herbert'
+maintainer='Olivier Burri'
+filename='FRC\_-1.0.2.jar'
+released='September 2016'
+latest-version='July 2018'
+source='[github page](https://github.com/BIOP/ijp-frc)'
+status='stable'
+website='[BIOP Staff Page](http://biop.epfl.ch/INFO_Facility.html#staff)'
+%}
+
+
 
 # Updates
 

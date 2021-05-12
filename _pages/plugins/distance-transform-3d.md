@@ -4,7 +4,16 @@ title: Distance Transform 3D
 categories: [Binary,Unmaintained, plugins]
 ---
 
-{% include info-box name='Distance Transform 3D' software='ImageJ' author='Jens Bache-Wiig, Christian Henden' filename=' [DT3D\_.class](http://www.pvv.org/~perchrh/imagej/DT3D_.class)' source=' [DT3D\_.java](http://www.pvv.org/~perchrh/imagej/DT3D_.java)' released='2005/04/20' latest-version='2005/04/20' category='[Binary](Category_Binary)' website='http://www.pvv.org/\~perchrh/imagej/distance3d.html' %}
+{% include info-box name='Distance Transform 3D'
+software='ImageJ'
+author='Jens Bache-Wiig, Christian Henden'
+filename='[DT3D_.class](http://www.pvv.org/~perchrh/imagej/DT3D_.class)'
+source='[DT3D_.java](http://www.pvv.org/~perchrh/imagej/DT3D_.java)'
+released='2005/04/20'
+latest-version='2005/04/20'
+category='[Binary](Category_Binary)'
+website='http://www.pvv.org/~perchrh/imagej/distance3d.html'
+%}
 
 Computes the 3D discrete (values 0 to 255) distance transform, distance is distance to background. Based on the paper "On digital distance transforms in three dimensions"[^1], by Gunilla Borgefors, and code from Centrum for bildanalys, cb.uu.se. See source for more details.
 

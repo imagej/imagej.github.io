@@ -4,7 +4,7 @@ title: Adiposoft
 categories: [Software]
 ---
 
-{% include info-box software='ImageJ' name='Adiposoft' author=' [CIMA](https://cima.unav.edu/) , [University of Navarra](http://www.unav.edu/) .' maintainer='[Mikel Ariz](mailto:mikelariz@unav.es)' released='April 2012' latest-version='January 2019' status='stable, active' publications=' [JLR](http://www.jlr.org/content/53/12/2791.short)' category='[Segmentation](Category_Segmentation)' %}
+{% include info-box software='ImageJ' name='Adiposoft' author='[CIMA](https://cima.unav.edu/) , [University of Navarra](http://www.unav.edu/) .' maintainer='[Mikel Ariz](mailto:mikelariz@unav.es)' released='April 2012' latest-version='January 2019' status='stable, active' publications='[JLR](http://www.jlr.org/content/53/12/2791.short)' category='[Segmentation](Category_Segmentation)' %}
 
 <img src="/media/screenshot1.jpg" width="350"/>
 

@@ -11,7 +11,16 @@ title: VisBio Fiji plugin
 {% capture source%}
 {% include github org='uw-loci' repo='visbio-imagej' %}
 {% endcapture %}
-{% include info-box name='VisBio- orthogonal projection plugin' software='ImageJ - Fiji - ImgLib' author='Curtis Rueden, Melissa Linkert, Eric Kjellman' maintainer=maintainer filename='visbio.jar' source=source latest-version='Jan 2014' website='Fiji' status='Beta. Under development, but stable enough for real work.' %}
+{% include info-box name='VisBio- orthogonal projection plugin'
+software='ImageJ - Fiji - ImgLib'
+author='Curtis Rueden, Melissa Linkert, Eric Kjellman'
+maintainer=maintainer filename='visbio.jar'
+source=source latest-version='Jan 2014'
+website='Fiji'
+status='Beta. Under development, but stable enough for real work.'
+%}
+
+
 
 ## What is the VisBio Plugin?
 

@@ -3,7 +3,15 @@ title: Colocalization by Cross Correlation
 categories: [Colocalization,Plugins]
 description: How to use the Colocalization by Cross Correlation plugin
 ---
-{% include info-box software='Fiji' name='Colocalization by Cross Correlation' maintainer=' [Andrew McCall](/users/andmccall)' author=' [Andrew McCall](/users/andmccall)' source=source status='active' released='2020' category='[:Category:Plugins](Category_Plugins), [:Category:Colocalization](Category_Colocalization)' %}
+
+{% include info-box software='Fiji'
+name='Colocalization by Cross Correlation'
+maintainer='[Andrew McCall](/users/andmccall)'
+author='[Andrew McCall](/users/andmccall)'
+source=source status='active'
+released='2020'
+category='[:Category:Plugins](Category_Plugins), [:Category:Colocalization](Category_Colocalization)'
+%}
 
 ## Colocalization by Cross Correlation
 

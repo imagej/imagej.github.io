@@ -4,7 +4,18 @@ title: SPIM Bead Registration (deprecated)
 categories: [Plugins,Registration]
 ---
 
-{% include info-box name='Selective Plane Illumination Microscopy Registration' software='ImageJ' author='Stephan Preibisch, Stephan Saalfeld, Johannes Schindelin, Pavel Tomancak' maintainer='Stephan Preibisch' filename='SPIM\_Registration.jar' released='February 2010' latest-version='September 2011' category='[SPIM Registration](Category_Registration)' website=' [Stephan Preibisch"s homepage](http://fly.mpi-cbg.de/~preibisch)' %}
+{% include info-box name='Selective Plane Illumination Microscopy Registration'
+software='ImageJ'
+author='Stephan Preibisch, Stephan Saalfeld, Johannes Schindelin, Pavel Tomancak'
+maintainer='Stephan Preibisch'
+filename='SPIM\_Registration.jar'
+released='February 2010'
+latest-version='September 2011'
+category='[SPIM Registration](Category_Registration)'
+website='[Stephan Preibisch"s homepage](http://fly.mpi-cbg.de/~preibisch)'
+%}
+
+
 
 ## Important Note
 

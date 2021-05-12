@@ -4,7 +4,6 @@ title: 3Dscript
 categories: [Plugins,Visualization,Citable]
 ---
 
-
 {% capture maintainer%}
 {% include person id='bene51' %}
 {% endcapture %}

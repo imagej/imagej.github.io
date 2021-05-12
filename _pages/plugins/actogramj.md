@@ -4,7 +4,6 @@ title: ActogramJ
 categories: [Plugins,Visualization,Citable]
 ---
 
-
 {% capture maintainer%}
 {% include person id='bene51' %}
 {% endcapture %}
