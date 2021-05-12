@@ -67,6 +67,9 @@
 {% if include.journal %}
 {% assign journal = {{include.journal}} %}
 {% endif %}
+{% if include.fn %}
+{% assign fn = {{include.fn}} | prepend: "[^" | append: "]:" %}
+{% endif %}
 {% if include.volume %}
 {% assign volume = {{include.volume}} | append: "**" | prepend: "**" | append: {{number}} | append: ":" %}
 {% endif %}
@@ -92,7 +95,7 @@
 {% assign doi = "doi:<a href=" | append: '"' | |append: "https://dx.doi.org/" | append: {{include.doi}} | append: '"' | append: ">" | append: {{include.doi}} | append: "</a>" %}
 {% endif %}
 
-{{last}} {{first}} {{last2}} {{first2}} {{last3}} {{first3}} {{last4}} {{first4}} {{last5}} {{first5}} {{last6}} {{first6}} "<a href="{{url}}">{{title}}</a>", *{{journal}}* {{volume}} {{pages}} {{doi}}.
+{{fn}} {{last}} {{first}} {{last2}} {{first2}} {{last3}} {{first3}} {{last4}} {{first4}} {{last5}} {{first5}} {{last6}} {{first6}} "<a href="{{url}}">{{title}}</a>", *{{journal}}* {{volume}} {{pages}} {{doi}}.
 {% assign doi = "" %}
 {% endcapture %}
 

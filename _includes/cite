@@ -4,6 +4,9 @@
 {% assign url = {{include.url}} %}
 {% assign author = {{include.author}} %}
 {% assign title = {{include.title}} %}
+{% if include.fn %}
+{% assign fn = {{include.fn}} | prepend: "[^" | append: "]:" %}
+{% endif %}
 {% if include.journal %}
 {% assign journal = {{include.journal}} %}
 {% endif %}
@@ -24,7 +27,7 @@
 {% if include.doi %}
 {% assign doi = ", doi:<a href=" | append: '"' | |append: "https://dx.doi.org/" | append: {{include.doi}} | append: '"' | append: ">" | append: {{include.doi}} | append: "</a>" %}
 {% endif %}
-{{author}} {{year}} "<a href="{{url}}">{{title}}</a>", *{{journal}}* {{volume}} {{page}} {{doi}}.
+{{fn}} {{author}} {{year}} "<a href="{{url}}">{{title}}</a>", *{{journal}}* {{volume}} {{page}} {{doi}}.
 {% assign doi = "" %}
 {% endcapture %}
 
