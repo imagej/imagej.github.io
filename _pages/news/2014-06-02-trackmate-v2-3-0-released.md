@@ -10,29 +10,29 @@ We just released a new minor version of [TrackMate](/plugins/trackmate), pressed
 
 -   It is possible to manually color spots and edges. The colors attributed are saved and retrieved from XML.
 
-<figure><img src="/media/trackmate ManualColoring.png" title="TrackMate_ManualColoring.png" width="400" alt="TrackMate_ManualColoring.png" /><figcaption aria-hidden="true">TrackMate_ManualColoring.png</figcaption></figure>
+<figure><img src="/media/trackmate-manualcoloring.png" title="TrackMate_ManualColoring.png" width="400" alt="TrackMate_ManualColoring.png" /><figcaption aria-hidden="true">TrackMate_ManualColoring.png</figcaption></figure>
 
 To use it, select a few cells in TrackScheme and right-click to make the contextual menu appear:
 
-![](/media/trackmate ManualColoring 2.png "TrackMate_ManualColoring_2.png")
+![](/media/trackmate-manualcoloring-2.png "TrackMate_ManualColoring_2.png")
 
 -   There is now an action to export to [Icy](http://icy.bioimageanalysis.org/) track manager. It generates a XML file that can be opened in the [Icy track manager](http://icy.bioimageanalysis.org/plugin/Track_Manager).
 
-![](/media/trackmate ExportToIcy.png "TrackMate_ExportToIcy.png")
+![](/media/trackmate-exporttoicy.png "TrackMate_ExportToIcy.png")
 
 -   Icy XML track files can be opened in TrackMate. Just point the TrackMate loader plugin to such a file, and its type will be detected and it will be opened in TrackMate.
 
-![](/media/trackmate ImportFromIcy.png "TrackMate_ImportFromIcy.png")
+![](/media/trackmate-importfromicy.png "TrackMate_ImportFromIcy.png")
 
 We would like to express our thanks to {% include person id='Fab14' %} for his help in developing these two features.
 
 -   A new action allows merging two TrackMate files into one.
 
-![](/media/trackmate MergeFiles.png "TrackMate_MergeFiles.png")
+![](/media/trackmate-mergefiles.png "TrackMate_MergeFiles.png")
 
 -   The color scale used to display colored tracks, links and spots can now be manually adjusted. In the display panel of the GUI, double click on the label "color by" and a settings window will open allowing the user to select between manual or automatic scaling. This is great to generate views that are comparable between datasets. This feature is commissioned and offered by Fumio Hayashi, Kobe University.
 
-![](/media/trackmate ManualColorScale.png "TrackMate_ManualColorScale.png")
+![](/media/trackmate-manualcolorscale.png "TrackMate_ManualColorScale.png")
 
 ## Minor improvements
 
