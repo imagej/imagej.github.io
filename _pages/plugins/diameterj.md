@@ -12,13 +12,13 @@ categories: Plugins,Analysis
 {% capture maintainer%}
 {% include person id='DiameterJ' %}
 {% endcapture %}
-{% include info-box software='ImageJ 1.48 or newer (including ImageJ 2.XX) and Fiji' name='DiameterJ' author=author maintainer=maintainer filename='ImageJ 1.48a to 2.XXX [DiameterJ v1.018](/media/DiameterJ_1-018.zip) Fiji any version [DiameterJ v1.018](/media/DiameterJ_Fiji_-_1-018.zip)' source=' [Source Code](https://github.com/NHotaling/DiameterJ)' released='February 2015' latest-version='August 5<sup>th</sup>, 2016' status='v X.003 (first version released publicly)' category='[Plugins](Category_Plugins) [Analysis](Category_Analysis)' %} <span style="display: none">nanofiber diameter measurement, nanofiber diameter analysis, nanofiber diameter characterization, nanofiber diameter software, nanofiber diameter plugin, nanofiber diameter program, ImageJ nanofiber diameter, Fiji nanofiber diameter, automated nanofiber diameter, free, open source, radius</span>**DiameterJ**[1] is a free, open source plugin created for ImageJ, ImageJ 2, and Fiji developed at the National Institute of Standards and Technology. DiameterJ is a validated nanofiber diameter characterization tool. DiameterJ is able to analyze an image and find the diameter of nanofibers or microfibers at every pixel along a fibers axis and produces a histogram of these diameters. Included with this histogram are summary statistics such as mean fiber diameter and most occurring fiber diameter (mode). DiameterJ also bundles [OrientationJ](http://bigwww.epfl.ch/demo/orientation/)[2] for a complete analysis of fiber orientation within an image as well as the "Analyze Particles" function built into ImageJ/Fiji to analyze pore space within scaffolds and produce summary statistics for pores.
+{% include info-box software='ImageJ 1.48 or newer (including ImageJ 2.XX) and Fiji' name='DiameterJ' author=author maintainer=maintainer filename='ImageJ 1.48a to 2.XXX [DiameterJ v1.018](/media/DiameterJ_1-018.zip) Fiji any version [DiameterJ v1.018](/media/DiameterJ_Fiji_-_1-018.zip)' source=' [Source Code](https://github.com/NHotaling/DiameterJ)' released='February 2015' latest-version='August 5<sup>th</sup>, 2016' status='v X.003 (first version released publicly)' category='[Plugins](Category_Plugins) [Analysis](Category_Analysis)' %} <span style="display: none">nanofiber diameter measurement, nanofiber diameter analysis, nanofiber diameter characterization, nanofiber diameter software, nanofiber diameter plugin, nanofiber diameter program, ImageJ nanofiber diameter, Fiji nanofiber diameter, automated nanofiber diameter, free, open source, radius</span>**DiameterJ**[^1] is a free, open source plugin created for ImageJ, ImageJ 2, and Fiji developed at the National Institute of Standards and Technology. DiameterJ is a validated nanofiber diameter characterization tool. DiameterJ is able to analyze an image and find the diameter of nanofibers or microfibers at every pixel along a fibers axis and produces a histogram of these diameters. Included with this histogram are summary statistics such as mean fiber diameter and most occurring fiber diameter (mode). DiameterJ also bundles [OrientationJ](http://bigwww.epfl.ch/demo/orientation/)[^2] for a complete analysis of fiber orientation within an image as well as the "Analyze Particles" function built into ImageJ/Fiji to analyze pore space within scaffolds and produce summary statistics for pores.
 
 ### <big>Overview</big>
 
 ------------------------------------------------------------------------
 
-<img src="/media/02b-hotaling-visual-abstract.png" title="fig:Overview of DiameterJ analysis flow - (Top) SEM image --&gt; segmented image --&gt; stylized Euclidean distance transform. (Bottom) A few of the graphs capable of being produced from data given by DiameterJ" width="500" alt="Overview of DiameterJ analysis flow - (Top) SEM image --&gt; segmented image --&gt; stylized Euclidean distance transform. (Bottom) A few of the graphs capable of being produced from data given by DiameterJ" /> DiameterJ[3] is a two step process of image analysis:
+<img src="/media/02b-hotaling-visual-abstract.png" title="fig:Overview of DiameterJ analysis flow - (Top) SEM image --&gt; segmented image --&gt; stylized Euclidean distance transform. (Bottom) A few of the graphs capable of being produced from data given by DiameterJ" width="500" alt="Overview of DiameterJ analysis flow - (Top) SEM image --&gt; segmented image --&gt; stylized Euclidean distance transform. (Bottom) A few of the graphs capable of being produced from data given by DiameterJ" /> DiameterJ[^1] is a two step process of image analysis:
 
 1.  Image Segmentation into a binary image (black and white pixels only)
     -   Sixteen default segmentation algorithms have been included with DiameterJ in the "Segment SRM" and "Segment Mixed" plugins. However, these algorithms may not work for all SEM images.
@@ -53,29 +53,29 @@ For Fiji latest release: [DiameterJ v. 1.018 for Fiji](/media/DiameterJ_Fiji_-_1
 
 ------------------------------------------------------------------------
 
-<img src="/media/figure-1.png" title="fig:Diagram of DiameterJ code" width="400" alt="Diagram of DiameterJ code" /> The overall goal of the DiameterJ[4] algorithm was to be able to analyze an 8-bit SEM image of any resolution using a desktop computer in less than 60 seconds. For a block diagram and overview of how the DiameterJ algorithm analyzes fiber diameter and other scaffold properties see below.
+<img src="/media/figure-1.png" title="fig:Diagram of DiameterJ code" width="400" alt="Diagram of DiameterJ code" /> The overall goal of the DiameterJ[^1] algorithm was to be able to analyze an 8-bit SEM image of any resolution using a desktop computer in less than 60 seconds. For a block diagram and overview of how the DiameterJ algorithm analyzes fiber diameter and other scaffold properties see below.
 
 #### Segmentation
 
-SEM micrographs were first segmented using a variety of thresholding techniques available in ImageJ/Fiji. Both the Segment SRM and Segment Mixed plugins are automated inclusions of others segmentation algorithm work. Specifically, we have found that for SEM images of nanofibers the [Statistical Region Merging](/plugins/statistical-region-merging) algorithm[5] developed by Johannes Schindelin does a great job of blending fibers across their diameter and by depth to create great representations of the fibers when they are segmented. Additionally, we use more conventional segmentation algorithms developed by Otsu[6] , Huang[7], Kittler (min error)[8], Doyle (percentile) [9], or Zack (triangle)[10]
+SEM micrographs were first segmented using a variety of thresholding techniques available in ImageJ/Fiji. Both the Segment SRM and Segment Mixed plugins are automated inclusions of others segmentation algorithm work. Specifically, we have found that for SEM images of nanofibers the [Statistical Region Merging](/plugins/statistical-region-merging) algorithm[^3] developed by Johannes Schindelin does a great job of blending fibers across their diameter and by depth to create great representations of the fibers when they are segmented. Additionally, we use more conventional segmentation algorithms developed by Otsu[^4] , Huang[^5], Kittler (min error)[^6], Doyle (percentile) [^7], or Zack (triangle)[^8]
 
-After segmentation all images had remaining noise and morphological features that were smoothed according to the protocols outlined by D'Amore[11] and by Gonzalez[12]. Briefly, successive rounds of noise removal (via ImageJ's despeckle command) were performed until no change in the image was found. Erosion (through ImageJs erode command, and dilation (through ImageJs dilate command), and a final erosion (through ImageJs erode command), operations served to refine the image, highlighting fiber edges and eliminating isolated pixel areas. The described morphological procedures were performed to improve the precision of the centerline determinations as per the method developed by Lam et. al.[13].
+After segmentation all images had remaining noise and morphological features that were smoothed according to the protocols outlined by D'Amore[^9] and by Gonzalez[^10]. Briefly, successive rounds of noise removal (via ImageJ's despeckle command) were performed until no change in the image was found. Erosion (through ImageJs erode command, and dilation (through ImageJs dilate command), and a final erosion (through ImageJs erode command), operations served to refine the image, highlighting fiber edges and eliminating isolated pixel areas. The described morphological procedures were performed to improve the precision of the centerline determinations as per the method developed by Lam et. al.[^11].
 
 <figure><img src="/media/segmentation.png" title="Original image--&gt; Segmented image with no processing--&gt; Segmented image after smoothing and noise removal" width="600" alt="Original image--&gt; Segmented image with no processing--&gt; Segmented image after smoothing and noise removal" /><figcaption aria-hidden="true">Original image--&gt; Segmented image with no processing--&gt; Segmented image after smoothing and noise removal</figcaption></figure>
 
 #### Super Pixel Diameter
 
-After image segmentation white pixels were summed for total fiber area in each image. Two different center-lines were then calculated for the image, one using an axial thinning algorithm developed by Zhang and Suen[14](Skeletonize command in ImageJ) and the other using a Voronoi tessellation[15] (Voronoi command in ImageJ). The axial thinning algorithm is very sensitive to changes in the fiber surface resulting in branches to areas that were not necessarily new fibers. The Voronoi algorithm essentially maximizes the distance between discrete black pixel clusters and thus is completely insensitive to fiber morphology. The length of each center-line was then averaged and the total area of fibers was divided by the average of the axially thinned and Voronoi center-line lengths. The two centerline lengths were averaged based on results from analyzing digital synthetic images and the finding that one method consistently overestimated fiber length while the other consistently underestimated fiber length.
+After image segmentation white pixels were summed for total fiber area in each image. Two different center-lines were then calculated for the image, one using an axial thinning algorithm developed by Zhang and Suen[^12](Skeletonize command in ImageJ) and the other using a Voronoi tessellation[^13] (Voronoi command in ImageJ). The axial thinning algorithm is very sensitive to changes in the fiber surface resulting in branches to areas that were not necessarily new fibers. The Voronoi algorithm essentially maximizes the distance between discrete black pixel clusters and thus is completely insensitive to fiber morphology. The length of each center-line was then averaged and the total area of fibers was divided by the average of the axially thinned and Voronoi center-line lengths. The two centerline lengths were averaged based on results from analyzing digital synthetic images and the finding that one method consistently overestimated fiber length while the other consistently underestimated fiber length.
 
 The Super Pixel name was chosen because the fiber area, in pixels, was divided by the center-line lengths, in pixels; thus producing a unitless value that is equivalent to mean fiber diameter (fiber length x diameter = fiber area). This value is therefore a transformed pixel unit and is equivalent to the mean fiber diameter under the assumption that the fibers are just long rectangles when segmented into 2D shapes.
 
-After its initial calculation the diameter calculation was then further refined via intersection correction. Intersection correction was done by taking the average length of the centerline and subtracting a radius value (obtained from first approximation of the diameter as determined without intersection correction) for each three-point intersection and a diameter value (obtained from first approximation) for each four-point intersection of the fibers. Intersections of each centerline were found using the algorithm developed by Arganda-Carreras et al.[16].
+After its initial calculation the diameter calculation was then further refined via intersection correction. Intersection correction was done by taking the average length of the centerline and subtracting a radius value (obtained from first approximation of the diameter as determined without intersection correction) for each three-point intersection and a diameter value (obtained from first approximation) for each four-point intersection of the fibers. Intersections of each centerline were found using the algorithm developed by Arganda-Carreras et al.[^14].
 
 A new diameter was then calculated using the new corrected length and the total fiber area and this processes was looped until the diameter converged to 1/1000th of a pixel. Additionally, the number of intersections was also saved and the intersection density (ID) was calculated for a 100px x 100px (10<sup>4</sup>) pixel area by dividing the total number of intersections by the total area (in pixels) of the image and multiplying by 10<sup>4</sup>: $$ID = {intersections_{Total} \over pixels_{total}}*10^4$$ . The characteristic length (CL) of fibers was defined as mean length of fiber between intersections and was calculated by dividing the total centerline length by the number of intersections: $$CL = {Fiber_{Length} \over Intersections_{Total}}$$. The center-line length was calculated as the average of the axial thinning and Voronoi tessellation center-lines.
 
 #### Fiber Diameter Histogram
 
-{% include thumbnail src='/media/radius-histogram.png' title='alt=Alt\|Radius histogram produced by DiameterJ'%}To obtain the distribution of fiber diameters the segmented image was transformed with a Euclidian distance transformation algorithm [17] (Distance Map command in ImageJ). This algorithm takes a fiber pixel and finds the distance to the nearest orthogonal mesh hole using the square root of the sum of the square of the vertical and horizontal distances to the hole and then transforms the fiber pixel to a grey scale value equal to that distance. The resulting image is a grey scale image rather than black and white. The center-line calculated by the axial thinning algorithm above is then overlaid on top of the distance transformed image. At each intersection of the centerline the greyscale value is found and radii values within that range are subtracted out from the center-line. The greyscale values under the remaining centerline are then obtained and multiplied by 2 to get the value of all diameters not in an intersection area. The subsequent histogram of greyscale values is then found and placed in a .csv file along with the overall average, standard deviation, median and mode of all diameter values. The sensitive centerline was chosen because it was the more discriminating option and thus, had a higher likelihood of eliminating pixels that had a higher value than the real radius value.
+{% include thumbnail src='/media/radius-histogram.png' title='alt=Alt\|Radius histogram produced by DiameterJ'%}To obtain the distribution of fiber diameters the segmented image was transformed with a Euclidian distance transformation algorithm [^15] (Distance Map command in ImageJ). This algorithm takes a fiber pixel and finds the distance to the nearest orthogonal mesh hole using the square root of the sum of the square of the vertical and horizontal distances to the hole and then transforms the fiber pixel to a grey scale value equal to that distance. The resulting image is a grey scale image rather than black and white. The center-line calculated by the axial thinning algorithm above is then overlaid on top of the distance transformed image. At each intersection of the centerline the greyscale value is found and radii values within that range are subtracted out from the center-line. The greyscale values under the remaining centerline are then obtained and multiplied by 2 to get the value of all diameters not in an intersection area. The subsequent histogram of greyscale values is then found and placed in a .csv file along with the overall average, standard deviation, median and mode of all diameter values. The sensitive centerline was chosen because it was the more discriminating option and thus, had a higher likelihood of eliminating pixels that had a higher value than the real radius value.
 
 #### Mesh Hole Analysis
 
@@ -83,7 +83,7 @@ A new diameter was then calculated using the new corrected length and the total 
 
 #### Fiber Orientation
 
-Fiber orientation was determined using a well-established plug-in for ImageJ called [OrientationJ](http://bigwww.epfl.ch/demo/orientation/)[18]. To determine fiber orientation an axial thinning algorithm was used and then the centerline was enlarged by 2 pixels (using the Enlarge command in ImageJ) to ensure accurate measure of the line. Within OrientationJ a Fourier gradient was used with a gaussian window of 7 pixels. The subsequent frequency histogram of fiber orientation was then saved as an image. OrientationJ limits access to the raw data for this histogram; thus, if the user desires the raw data they must use the "OrientationJ Distribution" plugin. In the Fiji version of DiameterJ the [Directionality](/plugins/directionality)[19] plugin, written by Jean-Yves Tinevez, can also be used to obtain the raw distribution data. This approach is considerably slower and less elegant (pop-up windows remain open) than OrientationJ but for now it is the only way to obtain the raw orientation data in batch.
+Fiber orientation was determined using a well-established plug-in for ImageJ called [OrientationJ](http://bigwww.epfl.ch/demo/orientation/). To determine fiber orientation an axial thinning algorithm was used and then the centerline was enlarged by 2 pixels (using the Enlarge command in ImageJ) to ensure accurate measure of the line. Within OrientationJ a Fourier gradient was used with a gaussian window of 7 pixels. The subsequent frequency histogram of fiber orientation was then saved as an image. OrientationJ limits access to the raw data for this histogram; thus, if the user desires the raw data they must use the "OrientationJ Distribution" plugin. In the Fiji version of DiameterJ the [Directionality](/plugins/directionality)[^16] plugin, written by Jean-Yves Tinevez, can also be used to obtain the raw distribution data. This approach is considerably slower and less elegant (pop-up windows remain open) than OrientationJ but for now it is the only way to obtain the raw orientation data in batch.
 
 ### <big>How to Use DiameterJ</big>
 
@@ -427,7 +427,7 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 
 ## Complementary Tools
 
-DiameterJ[20] works with several plugins of ImageJ/Fiji. First and foremost [OrientationJ](http://bigwww.epfl.ch/demo/orientation/). Also, other great tools that we have incorporated are [AnalyzeSkeleton](/plugins/analyze-skeleton) function from Ignacio Arganda-Carreras, as well as [Skeleton Intersections](http://jvsmicroscope.uta.fi/?q=skeleton_intersections) from Gabriel Landini's morphology plugin. We'd also like to give a big thank you to the [Statistical Region Merging](/plugins/statistical-region-merging) algorithm which makes our segmentations work a lot better. Speaking of which, we include a lot of segmentation algorithms that we aren't nearly talented enough to of developed ourselves. In particular those techniques outlined above in the [Segmentation](/plugins/diameterj#segmentation) section of this article and can be found in the links below.
+DiameterJ[^1] works with several plugins of ImageJ/Fiji. First and foremost [OrientationJ](http://bigwww.epfl.ch/demo/orientation/). Also, other great tools that we have incorporated are [AnalyzeSkeleton](/plugins/analyze-skeleton) function from Ignacio Arganda-Carreras, as well as [Skeleton Intersections](http://jvsmicroscope.uta.fi/?q=skeleton_intersections) from Gabriel Landini's morphology plugin. We'd also like to give a big thank you to the [Statistical Region Merging](/plugins/statistical-region-merging) algorithm which makes our segmentations work a lot better. Speaking of which, we include a lot of segmentation algorithms that we aren't nearly talented enough to of developed ourselves. In particular those techniques outlined above in the [Segmentation](/plugins/diameterj#segmentation) section of this article and can be found in the links below.
 
 We'd also like to say that DiameterJ plays nicely with the output from any other segmentation algorithm that produces a binary image. Fiji has a ton of [Segmentation](/techniques/segmentation) algorithms that are great for different types of images. Additionally, many plugins have been created for use in ImageJ or Fiji: [IJ Plugins](http://ij-plugins.sourceforge.net/plugins/segmentation/) [Auto Threshold](/plugins/auto-threshold) and [Auto Local Threshold](/plugins/auto-local-threshold). If our defaults don't work then try any/all of these.
 
@@ -455,43 +455,43 @@ Finally, we'd like to encourage everyone to do peak fitting of the diameter hist
 
 Help is welcome in any/all of these improvements!
 
-## References
-
-[1] Hotaling NA, Bharti K, Kriel H, Simon Jr. CG. DiameterJ: A validated open source nanofiber diameter measurement tool. Biomaterials 2015;61:327–38. <doi:10.1016/j.biomaterials.2015.05.015> http://www.sciencedirect.com/science/article/pii/S0142961215004652
-
-[2] R. Rezakhaniha, A. Agianniotis, J. T. C. Schrauwen, A. Griffa, D. Sage, C. V. C. Bouten, F. N. van de Vosse, M. Unser and N. Stergiopulos, Experimental investigation of collagen waviness and orientation in the arterial adventitia using confocal laser scanning microscopy, Biomechanics and modeling in mechanobiology, SpringerLink (DOI: 10.1007/s10237-011-0325-z)
-
-[3] R. Nock, F. Nielsen (2004), "Statistical Region Merging", IEEE Trans. Pattern Anal. Mach. Intell. 26 (11): 1452-1458
-
-[4] Otsu N. A threshold selection method from gray-level histograms. Automatica 1975;11:23–7.
-
-[5] Huang L-K, Wang M-JJ. Image thresholding by minimizing the measures of fuzziness. Pattern Recognit 1995;28:41–51. <doi:10.1016/0031-3203(94)E0043-K>.
-
-[6] Kittler J, Illingworth J. Minimum error thresholding. Pattern Recognit 1986;19:41–7. <doi:10.1016/0031-3203(86)90030-0>.
-
-[7] Doyle, W (1962), "Operation useful for similarity-invariant pattern recognition", Journal of the Association for Computing Machinery 9: 259-267, <doi:10.1145/321119.321123>
-
-[8] Zack GW, Rogers WE, Latt SA (1977), "Automatic measurement of sister chromatid exchange frequency", J. Histochem. Cytochem. 25 (7): 741–53, PMID 70454
-
-[9] D'Amore A, Stella JA, Wagner WR, Sacks MS. Characterization of the complete fiber network topology of planar fibrous tissues and scaffolds. Biomaterials 2010;31:5345–54. <doi:10.1016/j.biomaterials.2010.03.052>.
-
-[10] Gonzalez RC, Eddins SL. Digital Image Processing Using [MATLAB](/scripting/matlab), 2nd ed. 2nd edition. S.I.: Gatesmark Publishing; 2001.
-
-[11] Lam L, Lee S-W, Suen CY. Thinning Methodologies-A Comprehensive Survey. IEEE Trans Pattern Anal Mach Intell 1992;14:869–85. <doi:10.1109/34.161346>.
-
-[12] Zhang TY, Suen CY. A Fast Parallel Algorithm for Thinning Digital Patterns. Commun ACM 1984;27:236–9. <doi:10.1145/357994.358023>.
-
-[13] Okabe A. Spatial Tessellations: Concepts and Applications of Voronoi Diagrams. 2 edition. Chichester ; New York: Wiley; 2000.
-
-[14] Arganda-Carreras I, Fernández-González R, Muñoz-Barrutia A, Ortiz-De-Solorzano C. 3D reconstruction of histological sections: Application to mammary gland tissue. Microsc Res Tech 2010;73:1019–29. <doi:10.1002/jemt.20829>
-
-[15] F. Leymarie, M. D. Levine, in: CVGIP Image Understanding, vol. 55 (1992), pp 84-94 http://dx.doi.org/10.1016/1049-9660(92)90008-Q
-
-
-[16] Liu. Scale space approach to directional analysis of images. Appl. Opt. (1991) vol. 30 (11) pp. 1369-1373
-
-
 ## External Links
 
 -   [OrientationJ](http://bigwww.epfl.ch/demo/orientation/)
 -   [NIST](http://www.nist.gov/)
+
+## References
+
+[^1]: Hotaling NA, Bharti K, Kriel H, Simon Jr. CG. DiameterJ: A validated open source nanofiber diameter measurement tool. Biomaterials 2015;61:327–38. <doi:10.1016/j.biomaterials.2015.05.015> http://www.sciencedirect.com/science/article/pii/S0142961215004652
+
+[^2]: R. Rezakhaniha, A. Agianniotis, J. T. C. Schrauwen, A. Griffa, D. Sage, C. V. C. Bouten, F. N. van de Vosse, M. Unser and N. Stergiopulos, Experimental investigation of collagen waviness and orientation in the arterial adventitia using confocal laser scanning microscopy, Biomechanics and modeling in mechanobiology, SpringerLink (DOI: 10.1007/s10237-011-0325-z)
+
+[^3]: R. Nock, F. Nielsen (2004), "Statistical Region Merging", IEEE Trans. Pattern Anal. Mach. Intell. 26 (11): 1452-1458
+
+[^4]: Otsu N. A threshold selection method from gray-level histograms. Automatica 1975;11:23–7.
+
+[^5]: Huang L-K, Wang M-JJ. Image thresholding by minimizing the measures of fuzziness. Pattern Recognit 1995;28:41–51. <doi:10.1016/0031-3203(94)E0043-K>.
+
+[^6]: Kittler J, Illingworth J. Minimum error thresholding. Pattern Recognit 1986;19:41–7. <doi:10.1016/0031-3203(86)90030-0>.
+
+[^7]: Doyle, W (1962), "Operation useful for similarity-invariant pattern recognition", Journal of the Association for Computing Machinery 9: 259-267, <doi:10.1145/321119.321123>
+
+[^8]: Zack GW, Rogers WE, Latt SA (1977), "Automatic measurement of sister chromatid exchange frequency", J. Histochem. Cytochem. 25 (7): 741–53, PMID 70454
+
+[^9]: D'Amore A, Stella JA, Wagner WR, Sacks MS. Characterization of the complete fiber network topology of planar fibrous tissues and scaffolds. Biomaterials 2010;31:5345–54. <doi:10.1016/j.biomaterials.2010.03.052>.
+
+[^10]: Gonzalez RC, Eddins SL. Digital Image Processing Using [MATLAB](/scripting/matlab), 2nd ed. 2nd edition. S.I.: Gatesmark Publishing; 2001.
+
+[^11]: Lam L, Lee S-W, Suen CY. Thinning Methodologies-A Comprehensive Survey. IEEE Trans Pattern Anal Mach Intell 1992;14:869–85. <doi:10.1109/34.161346>.
+
+[^12]: Zhang TY, Suen CY. A Fast Parallel Algorithm for Thinning Digital Patterns. Commun ACM 1984;27:236–9. <doi:10.1145/357994.358023>.
+
+[^13]: Okabe A. Spatial Tessellations: Concepts and Applications of Voronoi Diagrams. 2 edition. Chichester ; New York: Wiley; 2000.
+
+[^14]: Arganda-Carreras I, Fernández-González R, Muñoz-Barrutia A, Ortiz-De-Solorzano C. 3D reconstruction of histological sections: Application to mammary gland tissue. Microsc Res Tech 2010;73:1019–29. <doi:10.1002/jemt.20829>
+
+[^15]: F. Leymarie, M. D. Levine, in: CVGIP Image Understanding, vol. 55 (1992), pp 84-94 http://dx.doi.org/10.1016/1049-9660(92)90008-Q
+
+[^16]: Liu. Scale space approach to directional analysis of images. Appl. Opt. (1991) vol. 30 (11) pp. 1369-1373
+
+

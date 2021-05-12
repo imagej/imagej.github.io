@@ -51,7 +51,7 @@ Different solutions have been thought about, and two of them are currently imple
 
 This method is based on Fourier spectrum analysis. For a square image, structures with a preferred orientation generate a periodic pattern at +90° orientation in the Fourier transform of the image, compared to the direction of the objects in the input image.
 
-This plugin chops the image into square pieces, and computes their Fourier power spectra. The later are analyzed in polar coordinates, and the power is measured for each angle using the spatial filters proposed in \[1\].
+This plugin chops the image into square pieces, and computes their Fourier power spectra. The later are analyzed in polar coordinates, and the power is measured for each angle using the spatial filters proposed in [^1].
 
 ### Local gradient orientation
 
@@ -258,8 +258,7 @@ Possible way for further developments:
 
 ## References
 
--   \[1\] **Liu.** Scale space approach to directional analysis of images. *Appl. Opt. (1991) vol. 30 (11) pp. 1369-1373*
-
 A discussion with A. Leroy and another one with J. Schindelin are greatly acknowledged.
 
+[^1]: **Liu.** Scale space approach to directional analysis of images. *Appl. Opt. (1991) vol. 30 (11) pp. 1369-1373*
  
