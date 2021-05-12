@@ -19,42 +19,41 @@ This tool copies randomly selected (image) files to a new subfolder (output fold
 
 1.  In **basic mode**, only one parameter i.e., the number of files to be copied/encrypted is required.
 
-<center>
 
-[frame\| File Name Encrypter: Basic mode.](File_FileNameEncrypterBasic.PNG)
-
-</center>
+{% include image-center name="File Name Encrypter: Basic mode." image-path="/media/filenameencrypterbasic.png" %}
 
 1.  In **advance mode**, you can decide if files should be grouped. When grouping is set to "No", each file is treated as an independent entity. To group files, set the option to "Yes" and provide a substring.
 
-<center>
-
-[frame\| File Name Encrypter: Advance mode.](File__FileNameEncrypterAdvance.PNG)
-
-</center>
+{% include image-center name="File Name Encrypter: Advance mode." image-path="/media/filenameencrypteradvance.png" %}
 
 Grouping comes in handy when, for example, different channels are saved in separate files with related names and you would like to keep the relation even with encrypted names. The tool will look for the first occurrence of the substring in the names of the available files to determine groups. The groups can be of different sizes. File names not containing the substring will be treated as independent entities. In the output folder, all file names in a group will start with the same cryptic string and will have different suffixes. For example, when the following six files are available:
 
 1404\_1\_w1TL-BF\_tub0.mat, 1404\_2\_w1TL-BF\_tub1.mat, 1404\_1\_w2SD-561.tif, 1404\_1\_w3SD-488.tif, 1404\_2\_w2SD-561.tif, 1404\_2\_w3SD-488.tif
 
-:\* Grouping "No" will result in the number of entities/groups = 6
+* Grouping "No" will result in the number of entities/groups = 6
 
-:\* Grouping "Yes" with Substring "\_w" will result in the number of entities/groups = 2. File names will be split as follows:
+* Grouping "Yes" with Substring "\_w" will result in the number of entities/groups = 2. File names will be split as follows:
 
 
-{\| class="wikitable"
 
-!%NN%text-align:left;%OO% File name ! Part 1 ! Part 2 \|- style="color: green;" \|1404\_1\_w1TL-BF\_tub0 \|1404\_1 \|\_w1TL-BF\_tub0 \|- style="color: blue;" \|1404\_2\_w1TL-BF\_tub1 \|1404\_2 \|\_w1TL-BF\_tub1 \|- style="color: green;" \|1404\_1\_w2SD-561 \|1404\_1 \|\_w2SD-561 \|- style="color: green;" \|1404\_1\_w3SD-488 \|1404\_1 \|\_w3SD-488 \|- style="color: blue;" \|1404\_2\_w2SD-561 \|1404\_2 \|\_w2SD-561 \|- style="color: blue;" \|1404\_2\_w3SD-488 \|1404\_2 \|\_w3SD-488 \|}
+|File name | Part 1 | Part 2 |
+| :---: | :---: | :---: |
+|1404\_1\_w1TL-BF\_tub0 |1404\_1 |\_w1TL-BF\_tub0 \|
+|1404\_2\_w1TL-BF\_tub1 |1404\_2 |\_w1TL-BF\_tub1 \|
+|1404\_1\_w2SD-561 |1404\_1 |\_w2SD-561 |
+|1404\_1\_w3SD-488 |1404\_1 |\_w3SD-488 |
+|1404\_2\_w2SD-561 |1404\_2 |\_w2SD-561 |
+|1404\_2\_w3SD-488 |1404\_2 |\_w3SD-488 |
 
 Part 1 will determine the group and part 2 will determine the suffix of each file in the group. In the above example, all files in a group are shown in the same color.
 
 In advance mode, you can freely choose how many files should be copied in the output folder. Note that repetition would be required to copy more than n files. You can control repetition with the following parameters under **Replicates**:
 
-:\* Minimum: minimum guaranteed repetitions of each file
+* Minimum: minimum guaranteed repetitions of each file
 
-:\* Maximum: maximum possible repetitions of each file
+* Maximum: maximum possible repetitions of each file
 
-:\* Total: total number of files to be copied in the output folder. Total must be between minimum\*(*n* or no. of groups) and maximum\*(*n* or no. of groups).
+* Total: total number of files to be copied in the output folder. Total must be between minimum\*(*n* or no. of groups) and maximum\*(*n* or no. of groups).
 
 Following are some examples of different replicates parameter settings for *n*=6 and no grouping:
 
@@ -86,17 +85,17 @@ It is possible to make a **decision** about an opened image, for example, weak/m
 
 Click on the "Open First/Next Image" button to open the next image for analysis. Once you have analyzed an adequate number of files (&lt;= *n*), press done to finish the analysis. During this analysis, macro commands are recorded in the background. A decisions file (name: "BlindAnalyse&Decide\_Log" + timestamp) and a log file (name: "BlindAnalyse&Decide\_Decisions" + timestamp) will be saved in the input folder containing a detailed report of your analysis including:
 
-:\* Start and end time of the analysis
+* Start and end time of the analysis
 
-:\* Chosen directory
+* Chosen directory
 
-:\* Number of available files and number of analyzed files
+* Number of available files and number of analyzed files
 
-:\* Absolute names of the available and analyzed files
+* Absolute names of the available and analyzed files
 
-:\* Initial macro
+* Initial macro
 
-:\* Recorded macro
+* Recorded macro
 
 ## Limitations
 
