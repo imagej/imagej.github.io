@@ -69,19 +69,11 @@ Following are some examples of different replicates parameter settings for *n*=6
 
 This tool facilitates blind image analysis by randomly opening an image and displaying it with an encrypted name. Therefore, the user does not see the original image name. You can provide **macro commands** to apply to each image before it is presented. This feature could be useful, for example, if you would like to remove a channel (because it is unnecessary or confusing for the analysis) prior to image display.
 
-<center>
-
-[frame\| Analyse & Decide](File__Analyse&DecideMain.PNG)
-
-</center>
+{% include image-center name="Analyse & Decide" image-path="/media/analysedecidemain.png" %}
 
 It is possible to make a **decision** about an opened image, for example, weak/medium/strong or small/large, etc. You can simply type your own decision choices at the beginning by pressing the "Set" button. Provide your decision choices as a comma-separated list and press OK. Note that once you press the "Open First Image" button, the "Set" button and the macro text box will be disabled.
 
-<center>
-
-[frame\| Analyse & Decide: Setting choices](File__Analyse&DecideSetChoices.PNG)
-
-</center>
+{% include image-center name="Analyse & Decide: Setting choices" image-path="/media/analysedecidesetchoices.png" %}
 
 Click on the "Open First/Next Image" button to open the next image for analysis. Once you have analyzed an adequate number of files (&lt;= *n*), press done to finish the analysis. During this analysis, macro commands are recorded in the background. A decisions file (name: "BlindAnalyse&Decide\_Log" + timestamp) and a log file (name: "BlindAnalyse&Decide\_Decisions" + timestamp) will be saved in the input folder containing a detailed report of your analysis including:
 
