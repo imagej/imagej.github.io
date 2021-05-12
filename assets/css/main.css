@@ -2049,3 +2049,17 @@ ul.major-icons li .icon {
   padding: 0.5em;
   margin-bottom: 0.8em;
 }
+
+div.row {
+  display: flex;
+}
+
+div.column3 {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+div.column5 {
+  flex: 20%;
+  padding: 5px;
+}
