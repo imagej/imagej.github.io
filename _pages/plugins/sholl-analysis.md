@@ -11,9 +11,9 @@ artifact: ca.mcgill:Sholl_Analysis
 
 ## Introduction
 
-{% include figure-right name="ca1-cell-mask" image-path="/media/bitmapsholl-ca1mask.png" content="[Skeletonized](/plugins/skeletonize3d) hippocampal CA1 cell([1](#references)) (juvenile mouse) in which apical and basal dendrites have been analyzed [separately](#ca1-cell-plot) and [color coded](#output-options) according to their Sholl profile. Warmer hues indicate higher number of Intersections (*N*). [Critical radius](#critical-radius) (*r<sub>c</sub>*) and [Mean value](#mean-value-of-function) (*N<sub>av</sub>*) are indicated." %}
+{% include figure-right name="ca1-cell-mask" image-path="/media/bitmapsholl-ca1mask.png" content="[Skeletonized](/plugins/skeletonize3d) hippocampal CA1 cell[^1] (juvenile mouse) in which apical and basal dendrites have been analyzed [separately](#ca1-cell-plot) and [color coded](#output-options) according to their Sholl profile. Warmer hues indicate higher number of Intersections (*N*). [Critical radius](#critical-radius) (*r<sub>c</sub>*) and [Mean value](#mean-value-of-function) (*N<sub>av</sub>*) are indicated." %}
 
-The Sholl technique([2](#references)) is used to describe neuronal arbors. This plugin can perform Sholl directly on 2D and 3D grayscale images of isolated neurons. Its internal algorithm to collect data is based upon how Sholl analysis is done by hand — it creates a series of concentric *shells* (circles or spheres) around the focus of a neuronal arbor, and counts how many times connected voxels defining the arbor intersect the sampling shells. The major advantages of this plugin over other implementations are:
+The Sholl technique[^2] is used to describe neuronal arbors. This plugin can perform Sholl directly on 2D and 3D grayscale images of isolated neurons. Its internal algorithm to collect data is based upon how Sholl analysis is done by hand — it creates a series of concentric *shells* (circles or spheres) around the focus of a neuronal arbor, and counts how many times connected voxels defining the arbor intersect the sampling shells. The major advantages of this plugin over other implementations are:
 
 -   When analyzing images directly, it does not require previous tracing of the arbor (although it can also analyze [traced arbors](#analysis-of-traced-cells))
 -   It combines [curve fitting](#methods-table) with several [methods](#sholl-plots) to automatically retrieve [quantitative descriptors](#metrics) from sampled data, which allows direct statistical comparisons between arbors
@@ -55,7 +55,7 @@ Multi-point selection:A Multi-point selection (multi-point counter) in which the
 
 ### Cf. Segmentation
 
-Press *More» Cf. Segmentation* to visually confirm which phase of the segmented image will be sampled. This command highlights foreground from background pixels and is particularly useful when analyzing black and white (binary) images or when using the *B&W* lookup table in the Threshold Widget ({% include bc path="Image | Adjust | Threshold..." %} {% include key keys='Shift|T' %}). *Cf. Segmentation* allows you to ensure that you are measuring neuronal processes and not the interstitial spaces between them. Here is an example using an axonal arbor of a Drosophila olfactory neuron from the [DIADEM](http://diademchallenge.org) dataset([3](#references)):
+Press *More» Cf. Segmentation* to visually confirm which phase of the segmented image will be sampled. This command highlights foreground from background pixels and is particularly useful when analyzing black and white (binary) images or when using the *B&W* lookup table in the Threshold Widget ({% include bc path="Image | Adjust | Threshold..." %} {% include key keys='Shift|T' %}). *Cf. Segmentation* allows you to ensure that you are measuring neuronal processes and not the interstitial spaces between them. Here is an example using an axonal arbor of a Drosophila olfactory neuron from the [DIADEM](http://diademchallenge.org) dataset[^3]:
 
 {::nomarkdown}
 <table>
@@ -176,7 +176,7 @@ Please keep in mind that this is just a refinement feature, and you should not e
 
 <span id="sholl-methods"></span>The [type of profile(s)](#methods-table) to be obtained. *Linear* (profile without normalization), or normalized profiles: *Linear-norm*, *Semi-log*, or *Log-log*.
 
--   **Polynomial** -  Specifies the degree of the [polynomial](#methods-table) to be fitted to the *Linear* profile([4](#references)). While the polynomial of best approximation, or "best fit", should be empirically determined for each analyzed cell type, it is possible to ask the plugin to predict the order of the fitting polynomial (or at least try) using the choice *Best fitting degree*. In this case, the plugin will loop through all the available choices of polynomials, perform each fit in the background and choose the one with the highest coefficient of determination.
+-   **Polynomial** -  Specifies the degree of the [polynomial](#methods-table) to be fitted to the *Linear* profile[^4]. While the polynomial of best approximation, or "best fit", should be empirically determined for each analyzed cell type, it is possible to ask the plugin to predict the order of the fitting polynomial (or at least try) using the choice *Best fitting degree*. In this case, the plugin will loop through all the available choices of polynomials, perform each fit in the background and choose the one with the highest coefficient of determination.
 -   **Most informative** -  Select this option when you cannot predict which type of normalized profile best describes the dataset. If chosen, the plugin will use the [Determination ratio](#dratio) to determine which of *Semi-log* or *Log-log* methods is more appropriate. *Linear-norm* is not performed.  
     The *Best fitting degree* and *Most informative* choices are obviously more computer-intensive and can be monitored by activating the *Show fitting details* checkbox.
 -   <span id="normalizer"></span>**Normalizer** The property of the sampling shell to be used in the normalization of *Linear-norm*, *Semi-log*, and *Log-log* profiles. It is [described below](#methods-table).
@@ -230,7 +230,7 @@ Please keep in mind that this is just a refinement feature, and you should not e
       </td>
       <td>
         <p><br>
-        Outputs a <em>N vs Distance</em> profile. Data is fitted to a polynomial function<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. <a href="#critical-radius">Critical radius</a>, <a href="#critical-value">Critical value</a> and <a href="#mean-value-of-function">Mean value of function</a> are calculated<br></p>
+        Outputs a <em>N vs Distance</em> profile. Data is fitted to a polynomial function<a href="#fn:4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>. <a href="#critical-radius">Critical radius</a>, <a href="#critical-value">Critical value</a> and <a href="#mean-value-of-function">Mean value of function</a> are calculated<br></p>
       </td>
     </tr>
     <tr class="even">
@@ -275,7 +275,7 @@ Please keep in mind that this is just a refinement feature, and you should not e
       </td>
       <td>
         <p><br>
-        Outputs a <i>log(N/S) vs log(Distance)</i> profile. Data is also fitted to a straight line. This is an alternative approach<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> of obtaining a relevant <a href="#sholl-decay">regression coefficient</a>, when the Semi-log method returns a poor fit<br></p>
+        Outputs a <i>log(N/S) vs log(Distance)</i> profile. Data is also fitted to a straight line. This is an alternative approach<a href="#fn:5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> of obtaining a relevant <a href="#sholl-decay">regression coefficient</a>, when the Semi-log method returns a poor fit<br></p>
       </td>
     </tr>
     <tr class="odd">
@@ -365,7 +365,7 @@ See also [Critical radius](#critical-radius)
 <!-- -->
 
 <span id="schoenen-sampled"></span>Schoenen Ramification index (*Ramification index (sampled)*)  
-A measure of ramification([5](#references)): the ratio between *Max inters.* and the number of [primary branches](#primary-branches). It is only calculated when [primary branches](#primary-branches) is valid and not zero.
+A measure of ramification[^6]: the ratio between *Max inters.* and the number of [primary branches](#primary-branches). It is only calculated when [primary branches](#primary-branches) is valid and not zero.
 
 See also [Ramification index (fit)](#schoenen-fitted)
 
@@ -387,7 +387,7 @@ The last (thus, the widest) of *Intersecting radii* to be associated with the nu
 ### Metrics based on fitted data
 
 <span id="dratio"></span>Determination ratio  
-The ratio of the [coefficient of determination](#reg-r2) for the semi-log method and that for the log–log method([6](#references)). If the semi-log method is better relatively to the log–log method, the *Determination ratio* becomes larger than 1. It is the parameter used by the plugin to silently predict the normalization method that is the [most informative](#choice-of-methods). The prediction can be monitored by activating the [Show fitting details ](#descriptors-and-curve-fitting) checkbox.
+The ratio of the [coefficient of determination](#reg-r2) for the semi-log method and that for the log–log method[^5]. If the semi-log method is better relatively to the log–log method, the *Determination ratio* becomes larger than 1. It is the parameter used by the plugin to silently predict the normalization method that is the [most informative](#choice-of-methods). The prediction can be monitored by activating the [Show fitting details ](#descriptors-and-curve-fitting) checkbox.
 
 <!-- -->
 
@@ -421,7 +421,7 @@ See also [Max inters. radius](#max-inters-radius)
 {% include tip id='Nomenclature' tip='**Nomenclature**: [Previous authors](#references) have used different terms to describe the largest value taken by the Sholl profile, including *Dendrite maximum*. Since the Sholl technique is not restricted to dendritic arbors and can be applied to any tree-like structure such as axonal arbors, mammary ducts or blood vessels (cf. [List of citations](#citations)), *Sholl Analysis* introduces the term [Critical radius](#critical-radius), renaming *Dendrite maximum* (*N<sub>m</sub>*) to [Critical value](#critical-value).' %}
 
 <span id="mean-value-of-function"></span>Mean value  
-The mean value[7] of the fitted polynomial function [(1)](#eq1), representing the average of intersections over the whole area occupied by the arbor. Abbreviation *N<sub>av</sub>*.
+The mean value[^4] of the fitted polynomial function [(1)](#eq1), representing the average of intersections over the whole area occupied by the arbor. Abbreviation *N<sub>av</sub>*.
 
 On the Sholl plot, it is [highlighted](#sholl-plots) as the height of the rectangle that has the width of *Enclosing radius* − *First intersecting radius* and the same area of the area under the fitted curve on that discrete interval. It is analogous to [Mean inters.](#mean-inters), the arithmetic mean of sampled intersections throughout the arbor (cf. [Metrics based on sampled data](#metrics-based-on-sampled-data)). By default (see [Advanced Usage](#advanced-usage)), it is calculated with a precision of 1/1000 of *Radius step size*.
 
@@ -984,35 +984,21 @@ While in development (2005-2014), and prior to its [publication](#publication), 
 
 {% include ambox text='Please append your work here, if the plugin has been useful to your work.' %}
 
-## References
-
-<references>
-<p markdown="1">
-[1]: Ferreira TA, Iacono LL, Gross CT. Serotonin receptor 1A modulates actin dynamics and restricts dendritic growth in hippocampal neurons. Eur J Neurosci. 2010 Jul;32(1):18-26. [PMID: 20561047](http://www.ncbi.nlm.nih.gov/pubmed?term=20561047)
-</p>
-
-<p markdown="1">
-[2]: Sholl DA. Dendritic organization in the neurons of the visual and motor cortices of the cat. J Anat. 1953 Oct;87(4):387-406. [PMID: 13117757](http://www.ncbi.nlm.nih.gov/pubmed?term=13117757)
-</p>
-
-<p markdown="1">
-[3]: Ristanović D, Milosević NT, Stulić V. Application of modified Sholl analysis to neuronal dendritic arborization of the cat spinal cord. J Neurosci Methods. 2006 Dec 15;158(2):212-8. [PMID: 16814868](http://www.ncbi.nlm.nih.gov/pubmed?term=16814868)
-</p>
-
-<p markdown="1">
-[4]: Schoenen J. The dendritic organization of the human spinal cord: the dorsal horn. Neuroscience. 1982;7(9):2057-87.[PMID: 7145088](http://www.ncbi.nlm.nih.gov/pubmed?term=7145088)
-</p>
-
-<p markdown="1">
-[5]: Milosević NT, Ristanović D. The Sholl analysis of neuronal cell images: semi-log or log-log method? J Theor Biol. 2007 Mar 7;245(1):130-40 [PMID: 17084415](http://www.ncbi.nlm.nih.gov/pubmed?term=17084415)
-</p>
-
-<p markdown="1">
-[6]: Brown KM, Barrionuevo G, Canty AJ, De Paola V, Hirsch JA, Jefferis GS, Lu J, Snippe M, Sugihara I, Ascoli GA. The DIADEM data sets: representative light microscopy images of neuronal morphology to advance automation of digital reconstructions. Neuroinformatics. 2011 Sep;9(2-3):143-57, [PMID: 21249531](http://www.ncbi.nlm.nih.gov/pubmed?term=21249531)
-</p>
-</references>
-
 ## License
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [Free Software Foundation](http://www.gnu.org/licenses/gpl.txt). This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+## References
+
+[^1]: Ferreira TA, Iacono LL, Gross CT. Serotonin receptor 1A modulates actin dynamics and restricts dendritic growth in hippocampal neurons. Eur J Neurosci. 2010 Jul;32(1):18-26. [PMID: 20561047](http://www.ncbi.nlm.nih.gov/pubmed?term=20561047)
+
+[^2]: Sholl DA. Dendritic organization in the neurons of the visual and motor cortices of the cat. J Anat. 1953 Oct;87(4):387-406. [PMID: 13117757](http://www.ncbi.nlm.nih.gov/pubmed?term=13117757)
+
+[^3]: Ristanović D, Milosević NT, Stulić V. Application of modified Sholl analysis to neuronal dendritic arborization of the cat spinal cord. J Neurosci Methods. 2006 Dec 15;158(2):212-8. [PMID: 16814868](http://www.ncbi.nlm.nih.gov/pubmed?term=16814868)
+
+[^4]: Schoenen J. The dendritic organization of the human spinal cord: the dorsal horn. Neuroscience. 1982;7(9):2057-87.[PMID: 7145088](http://www.ncbi.nlm.nih.gov/pubmed?term=7145088)
+
+[^5]: Milosević NT, Ristanović D. The Sholl analysis of neuronal cell images: semi-log or log-log method? J Theor Biol. 2007 Mar 7;245(1):130-40 [PMID: 17084415](http://www.ncbi.nlm.nih.gov/pubmed?term=17084415)
+
+[^6]: Brown KM, Barrionuevo G, Canty AJ, De Paola V, Hirsch JA, Jefferis GS, Lu J, Snippe M, Sugihara I, Ascoli GA. The DIADEM data sets: representative light microscopy images of neuronal morphology to advance automation of digital reconstructions. Neuroinformatics. 2011 Sep;9(2-3):143-57, [PMID: 21249531](http://www.ncbi.nlm.nih.gov/pubmed?term=21249531)
 
