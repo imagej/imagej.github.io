@@ -162,7 +162,7 @@ Here is how this translates simply in a simple launcher:
 
 And here are the results:
 
-<figure><img src="/media/trackmate CustomAction 1.png" title="TrackMate_CustomAction_1.png" width="400" alt="TrackMate_CustomAction_1.png" /><figcaption aria-hidden="true">TrackMate_CustomAction_1.png</figcaption></figure>
+<figure><img src="/media/trackmatecustomaction1.png" title="TrackMate_CustomAction_1.png" width="400" alt="TrackMate_CustomAction_1.png" /><figcaption aria-hidden="true">TrackMate_CustomAction_1.png</figcaption></figure>
 
 You can imagine a lot of applications for Actions. Since they give you access to most of the plugin context, you can basically plug anything there. The one limitation is that it does not fit perfectly in the existing GUI: actions just appear as items in a drop-down list. But in most cases it does not matter much. Actions are very useful to quickly graft a piece of new functionality on TrackMate.
 

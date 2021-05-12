@@ -23,7 +23,7 @@ Copy the jar file into your fiji plugins folder. If you start TrackMate it is de
 
 ## Parameters
 
-<figure><img src="/media/Findmaxima gui.png" title="Findmaxima_gui.png" width="400" alt="Findmaxima_gui.png" /><figcaption aria-hidden="true">Findmaxima_gui.png</figcaption></figure>
+<figure><img src="/media/findmaximagui.png" title="Findmaxima_gui.png" width="400" alt="Findmaxima_gui.png" /><figcaption aria-hidden="true">Findmaxima_gui.png</figcaption></figure>
 
 **Estimated blob diameter:** To achieve subpixel accuracy this region is used for refining the positions.
 

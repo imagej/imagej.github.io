@@ -313,7 +313,7 @@ TrackMate actually depends on many other Fiji plugins or libraries. The [Fiji Bu
 
 ## Acknowledgements
 
-We are extremely thankful for the support of [Khuloud Jaqaman](http://www.utsouthwestern.edu/labs/jaqaman/) while we were implementing in Java a stripped down version of her work on robust LAP tracker, following her seminal paper published in the Danuser group[1].
+We are extremely thankful for the support of [Khuloud Jaqaman](http://www.utsouthwestern.edu/labs/jaqaman/) while we were implementing in Java a stripped down version of her work on robust LAP tracker, following her seminal paper published in the Danuser group[^1].
 
 JYT acknowledges funding from the European commission FP7 ICT ([project "MEMI"](http://www.memi-fp7.org)) at the beginning of this project. NP was a visiting student thanks to funds provisioned by the Stanford University. JS acknowledges funding from the Laboratory for Optical and Computational Instrumentation at the UW-Madison and National Science Foundation award \#1121998.
 
@@ -322,8 +322,7 @@ YourKit is the creator of [YourKit Java Profiler](https://www.yourkit.com/java/p
 
 ![YourKit logo](https://www.yourkit.com/images/yklogo.png)
 
-<references/>
+## References
 
-    
 
-[1] Jaqaman et al. *Robust single-particle tracking in live-cell time-lapse sequences*. **Nat Methods** (2008) vol. 5 (8) pp. 695-702
+[^1]: Jaqaman et al. *Robust single-particle tracking in live-cell time-lapse sequences*. **Nat Methods** (2008) vol. 5 (8) pp. 695-702

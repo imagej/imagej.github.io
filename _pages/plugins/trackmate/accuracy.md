@@ -9,23 +9,23 @@ This answer can be completely irrelevant, even non-physical, and there is no bui
 
 ## The ISBI 2012 single particle challenge.
 
-In 2011-2012, an ISBI Grand Challenge was organized for the [Single-Particle Tracking algorithms](http://bioimageanalysis.org/track/). Though TrackMate does not offer a completely new algorithm, product of an original Research work, we took the chance and participated in the challenge. The results and the methodology to compute the accuracy of a tracking algorithms were published[1] thereafter.
+In 2011-2012, an ISBI Grand Challenge was organized for the [Single-Particle Tracking algorithms](http://bioimageanalysis.org/track/). Though TrackMate does not offer a completely new algorithm, product of an original Research work, we took the chance and participated in the challenge. The results and the methodology to compute the accuracy of a tracking algorithms were published[^1] thereafter.
 
-Unsurprisingly, we did not score amongst the best. At the time, TrackMate was in version 1.1, and ship a stripped down version of the better performing Jaqaman *et al.* LAP framework[2]. See the [LAP trackers section](/plugins/trackmate/algorithms#lap-trackers) for algorithm details. Plus, TrackMate was was young at the time, and some bugs did not help.
+Unsurprisingly, we did not score amongst the best. At the time, TrackMate was in version 1.1, and ship a stripped down version of the better performing Jaqaman *et al.* LAP framework[^2]. See the [LAP trackers section](/plugins/trackmate/algorithms#lap-trackers) for algorithm details. Plus, TrackMate was was young at the time, and some bugs did not help.
 
 ## TrackMate v2.7.x series accuracy against the ISBI dataset.
 
-From v2.7.x, TrackMate ships a new tracker that can deal specifically with linear motion. We though it was the right time to re-run the accuracy assessment with the ISBI challenge data. The people behind [Icy](/software/icy) offered the website to host the challenge data, and it is still available today[3] for download.
+From v2.7.x, TrackMate ships a new tracker that can deal specifically with linear motion. We though it was the right time to re-run the accuracy assessment with the ISBI challenge data. The people behind [Icy](/software/icy) offered the website to host the challenge data, and it is still available today[^3] for download.
 
 The figures below shows the comparison of accuracy for the 3 classes of tracking algorithms available in TrackMate:
 
--   The LAP framework derived from Jaqaman *et al.*[4].
+-   The LAP framework derived from Jaqaman *et al.*[^2].
 -   The linear motion tracker based on Kalman filter.
 -   The plain Nearest neighbor tracker for reference.
 
 ### Scenarios.
 
-It's best to directly read the paper[5] to know what is behind these measures, but here is a brief survey of how they are done. The ISBI dataset covers four scenarios:
+It's best to directly read the paper[^1] to know what is behind these measures, but here is a brief survey of how they are done. The ISBI dataset covers four scenarios:
 
 {::nomarkdown}
 <table>
@@ -103,19 +103,45 @@ Below are shown typical images taken from the challenge.
 
 #### Varying particle density.
 
-<File:VESICLE> snr 7 density low-1.png\|Low density <File:VESICLE> snr 7 density mid-1.png\|Medium density <File:VESICLE> snr 7 density high-1.png\|High density
+<div class="row">
+  <div class="column3">
+{% include image-fit name="Low density" image-path="/media/vesicle-snr-7-density-low-1.png" %}
+  </div>
+  <div class="column3">
+{% include image-fit name="Medium density" image-path="/media/vesicle-snr-7-density-mid-1.png" %}
+  </div>
+  <div class="column3">
+{% include image-fit name="High density" image-path="/media/vesicle-snr-7-density-high-1.png" %}
+  </div>
+</div>
 
 Contrast stretched to the 0-150 8-bit range.
 
 #### Varying particle SNR.
 
-<File:RECEPTOR> snr 7 density low-1.png\|SNR = 7 <File:RECEPTOR> snr 4 density low-1.png\|SNR = 4 <File:RECEPTOR> snr 3 density low-1.png\|SNR = 3 <File:RECEPTOR> snr 2 density low-1.png\|SNR = 2 <File:RECEPTOR> snr 1 density low-1.png\|SNR = 1
+<div class="row">
+  <div class="column5">
+{% include image-fit name="SNR = 7" image-path="/media/receptor-snr-7-density-low-1.png" %}
+  </div>
+  <div class="column5">
+{% include image-fit name="SNR = 4" image-path="/media/receptor-snr-4-density-low-1.png" %}
+  </div>
+  <div class="column5">
+{% include image-fit name="SNR = 3" image-path="/media/receptor-snr-3-density-low-1.png" %}
+  </div>
+  <div class="column5">
+{% include image-fit name="SNR = 2" image-path="/media/receptor-snr-2-density-low-1.png" %}
+  </div>
+  <div class="column5">
+{% include image-fit name="SNR = 1" image-path="/media/receptor-snr-1-density-low-1.png" %}
+  </div>
+</div>
 
 Contrast stretched to the 0-50 8-bit range.
 
 #### The MICROTUBULE scenario particle shape.
 
-<File:MICROTUBULE> snr 4 density mid-1.png\|MICROTUBULE, SNR = 4, density = mid
+{% include image-fit name="SNR = 4, density = mid" image-path="/media/microtubule-snr-4-density-mid-1.png" %}
 
 ### Accuracy measurements.
 
@@ -225,7 +251,7 @@ Fortunately, accuracy values are rather good and do not break down too much agai
 
 The motion model of this scenario is the pure Brownian motion. Unsurprisingly the LAP tracker behaves the best as it models precisely this situation. The linear motion tracker is confused by the constant direction changed generated by the random motion, and is superseded even by the nearst neighbor search.
 
-<figure><img src="/media/trackmate VESICLE LAP Brownian motion, Linear motion tracker & Nearest neighbor.png" title="TrackMate_VESICLE_LAP_Brownian_motion,_Linear_motion_tracker_&amp;_Nearest_neighbor.png" width="600" alt="TrackMate_VESICLE_LAP_Brownian_motion,_Linear_motion_tracker_&amp;_Nearest_neighbor.png" /><figcaption aria-hidden="true">TrackMate_VESICLE_LAP_Brownian_motion,_Linear_motion_tracker_&amp;_Nearest_neighbor.png</figcaption></figure>
+<figure><img src="/media/trackmate-vesicle-lap-brownian-motion-linear-motion-tracker--Nearest-neighbor.png" title="TrackMate_VESICLE_LAP_Brownian_motion,_Linear_motion_tracker_&amp;_Nearest_neighbor.png" width="600" alt="TrackMate_VESICLE_LAP_Brownian_motion,_Linear_motion_tracker_&amp;_Nearest_neighbor.png" /><figcaption aria-hidden="true">TrackMate_VESICLE_LAP_Brownian_motion,_Linear_motion_tracker_&amp;_Nearest_neighbor.png</figcaption></figure>
 
 #### Virus scenario.
 
@@ -237,7 +263,7 @@ Also, this scenario was the only one to ship 3D data over time. Thanks to ImgLib
 
 ### Comments.
 
-These results should help you pick the right algorithm for your problems, and maybe encourage you to implement your own. As said before, a deeper interpretation of these metrics in the general case is found in the original paper[6]. Here are a few things specific to the current version of TrackMate.
+These results should help you pick the right algorithm for your problems, and maybe encourage you to implement your own. As said before, a deeper interpretation of these metrics in the general case is found in the original paper[^1]. Here are a few things specific to the current version of TrackMate.
 
 The parameters and strategy used for this accuracy assessment are pretty basic and unelaborated. This way, results give the 'raw' accuracy, before a user exploits the deeper specificity of their problem. The two sections below quickly list what we could have done and could not have done even if we wanted to improve results.
 
@@ -253,18 +279,9 @@ The challenge data does offer that possibility: all particles have roughly the s
 
 ## References.
 
-<references/>
 
-{% include person id='tinevez' %} ([talk](User_talk_JeanYvesTinevez)) 03:49, 25 January 2015 (CST)
+[^1]: [Chenouard *et al.*, "Objective comparison of particle tracking methods", **Nature Methods, 2014 **](http://www.nature.com/nmeth/journal/v11/n3/full/nmeth.2808.html)
 
-[1] [Chenouard *et al.*, "Objective comparison of particle tracking methods", **Nature Methods, 2014 **](http://www.nature.com/nmeth/journal/v11/n3/full/nmeth.2808.html)
+[^2]: [Jaqaman *et al.*, "Robust single-particle tracking in live-cell time-lapse sequences", **Nature Methods, 2008**](http://www.nature.com/nmeth/journal/v5/n8/full/nmeth.1237.html)
 
-[2] [Jaqaman *et al.*, "Robust single-particle tracking in live-cell time-lapse sequences", **Nature Methods, 2008**](http://www.nature.com/nmeth/journal/v5/n8/full/nmeth.1237.html)
-
-[3] January 2015
-
-[4]
-
-[5]
-
-[6]
+[^3]: {% include person id='tinevez' %} ([talk](User_talk_JeanYvesTinevez)) 03:49, 25 January 2015 (CST)

@@ -47,7 +47,7 @@ Of course, you have to devise a clever multithreading strategy to operate concur
 
 {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/Spot.java' label='Spots' %} are used to represent detection results: one detection = one spot. By convention, a detection algorithm must provide *at least* the following numerical feature to each spot:
 
--   The X, Y, Z coordinates, obviously. What is not that obvious is that TrackMate uses only image coordinates. This means that if your image has a physical calibration in µm (*e.g.* 0.2 µm/pixels in X,Y), the spot coordinates must be in µm[1]. If you have just a 2D image, use 0 for the Z position, but it must not be omitted.
+-   The X, Y, Z coordinates, obviously. What is not that obvious is that TrackMate uses only image coordinates. This means that if your image has a physical calibration in µm (*e.g.* 0.2 µm/pixels in X,Y), the spot coordinates must be in µm[^1]. If you have just a 2D image, use 0 for the Z position, but it must not be omitted.
 -   A quality value, that reflects the quality of the detection itself. It must be a real, positive number, that reflects how confident your detection algorithm is that the found detection is not spurious. The larger the more confident.
 -   The spot radius, representing in physical units, the approximate size of the image structure that was detected. TrackMate default detectors do not have an automatic size detection feature, so they ask the user what is the most likely size of the structures they should detect, tune themselves to this size, and set all the radius of the detections to be the one entered by the user.
 
@@ -306,7 +306,7 @@ Marshalling is the action of serializing a java object to XML. TrackMate relies 
 
 The settings map that the `marshall` method receives is the settings map to save. You can safely assume it has been successfully checked. The element parameter is a [JDom element](http://www.jdom.org/docs/apidocs/org/jdom2/Element.html), and it must contain eveything you want to save from the detector, as attribute or child elements. Here is what you must put in it:
 
--   You must at the very least set an attribute that has for key {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/detection/DetectorKeys.java\#L14' label='`"DETECTOR_NAME"`' %} and value the SpotDetectorFactory key (the one you get with the `getKey()`) method[2]. This will be used in turn when loading from XML, to retrieve the right detector you used.
+-   You must at the very least set an attribute that has for key {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/detection/DetectorKeys.java\#L14' label='`"DETECTOR_NAME"`' %} and value the SpotDetectorFactory key (the one you get with the `getKey()`) method[^2]. This will be used in turn when loading from XML, to retrieve the right detector you used.
 
 <!-- -->
 
@@ -526,16 +526,13 @@ Ouf! That was a lot of information and a lot of coding for a single piece of fun
 
 Here is what our dummy example looks. To maximize your user experience, I let it run on a 512 x 512 x 200 frames image, and tracked them.
 
-![](/media/trackmateCustomDetector 01.gif "TrackMateCustomDetector_01.gif")
+![](/media/trackmatecustomdetector-01.gif "TrackMateCustomDetector_01.gif")
 
 {% include person id='tinevez' %} ([talk](User_talk_JeanYvesTinevez)) 08:28, 3 April 2014 (CDT)
 
-------------------
 
-<references/>
+## References
 
-------------------
+[^1]: The reason behind this is that TrackMate wants to break free of the source data. Keeping all the coordinates in physical units allow exchanging results without having to keep a reference to the original image.
 
-[1] The reason behind this is that TrackMate wants to break free of the source data. Keeping all the coordinates in physical units allow exchanging results without having to keep a reference to the original image.
-
-[2] Careful, this will not be mandatory in TrackMate v2.3.0
+[^2]: Careful, this will not be mandatory in TrackMate v2.3.0

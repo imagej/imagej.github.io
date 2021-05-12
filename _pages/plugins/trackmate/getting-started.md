@@ -88,7 +88,7 @@ There are extra fields that you can configure also. The **Threshold** numerical 
 
 You can check **Use median filter**: this will apply a 3x3 median filter prior to any processing. This can help dealing with images that have a marked salt & pepper noise which generates spurious spots.
 
-We hope that TrackMate will be used in experiments requiring **Sub-pixel localization**, such as following motor proteins in biophysical experiments, so we added schemes to achieve this. The one currently implemented uses a quadratic fitting scheme (made by Stephan Saalfeld and Stephan Preibisch) based on [David Lowe SIFT work](http://www.cs.ubc.ca/~lowe/keypoints/)[1]. It has the advantage of being very quick, compared to the segmentation time itself.
+We hope that TrackMate will be used in experiments requiring **Sub-pixel localization**, such as following motor proteins in biophysical experiments, so we added schemes to achieve this. The one currently implemented uses a quadratic fitting scheme (made by Stephan Saalfeld and Stephan Preibisch) based on [David Lowe SIFT work](http://www.cs.ubc.ca/~lowe/keypoints/)[^1]. It has the advantage of being very quick, compared to the segmentation time itself.
 
 Finally, there is a **Preview button** that allows to quickly check your parameters on the current data. After some computations, you can check the results overlaid on the image. Most likely, you will see plenty of spurious spots that you will be tempted to discard by adjusting the **Threshold** value. This is a very good approach for large problems. Here, we care little for that, just leave the threshold at 0.
 
@@ -197,7 +197,7 @@ Press **Next** when you are ready to build tracks with these spots.
 
 The next panel let you choose amongst available particle-linking algorithms, or "trackers".
 
-The apparent profusion of choices should not disorient you, for it just that: an appearance. We chose to focus on the Linear Assignment Problem (LAP) in the framework first developed by Jaqaman *et al.*[2].
+The apparent profusion of choices should not disorient you, for it just that: an appearance. We chose to focus on the Linear Assignment Problem (LAP) in the framework first developed by Jaqaman *et al.*[^2].
 
 The first two LAP trackers are based on LAP, with important differences from the original paper described [here](/plugins/trackmate/algorithms#main-differences-with-the-jaqaman-paper) . We focused on this method for it gave us a lot of flexibility and it can be configured easily to handle most cases. You can tune it to allow *splitting events*, where a track splits in two, for instance following a cell that encounters mitosis. *Merging events* are handled too in the same way, though my small culture prevents me from quoting a relevant biological case obvious as the previous one. More importantly are *gap-closing* events, where a spot disappear for one frame (because it moves out of focus, because segmentation fails, ...) but the track manages to recuperates and connect with reappearing spots later.
 
@@ -255,13 +255,13 @@ However, this apparent complexity is not that difficult to harness. If you look 
 
 The first one deals with the <u>frame-to-frame linking</u>. It consists in creating small track segments by linking spots in one frame to the spots in the frame just after, not minding anything else. That is of course not enough to make us happy: there might be some spot missing, failed detection that might have caused your tracks to be broken. But let us focus on this one now.
 
-Linking is made by minimizing a global cost (from one frame to another, yet). A short word on the linking logic: The base cost of linking a particle with another one is simply the squared distance[3]. Following the proposal of Jaqaman *et al.*[4], we also consider the possibility for a particle *not* to make any link, if is advantageous for the global cost. The sum of all costs are minimized to find to set of link for this pair of frame, and we move to the next one.
+Linking is made by minimizing a global cost (from one frame to another, yet). A short word on the linking logic: The base cost of linking a particle with another one is simply the squared distance[^3]. Following the proposal of Jaqaman *et al.*[^2], we also consider the possibility for a particle *not* to make any link, if is advantageous for the global cost. The sum of all costs are minimized to find to set of link for this pair of frame, and we move to the next one.
 
 As for the simple tracker, the **Max distance** field helps preventing irrelevant linking to occur. Two spots separated by more than this distance will never be considered for linking. This also saves some computation time.
 
 The **Feature penalties** let you tune the linking cost using some measures of spot similarity. Typically in the single particle tracking framework, you cannot rely on shape descriptors to identify a single object across multiple frames, for spots are "shapeless": they are just described by a X, Y, Z, T position tuple.
 
-Yet, you might know your Biology better. For instance, you might be in the case where the mean intensity of a spot is roughly conserved along time, but vary even slightly from one spot to another. Or it might be the spot diameters, or a rough elliptic shape. Feature penalties allow you to penalize links between spots that have feature values that are different. Since the case you study might be anything, you can pick any feature to build your penalties. This one of the novelties in TrackMate, already evoked in Jaqaman *et al.*[5], but extended here.
+Yet, you might know your Biology better. For instance, you might be in the case where the mean intensity of a spot is roughly conserved along time, but vary even slightly from one spot to another. Or it might be the spot diameters, or a rough elliptic shape. Feature penalties allow you to penalize links between spots that have feature values that are different. Since the case you study might be anything, you can pick any feature to build your penalties. This one of the novelties in TrackMate, already evoked in Jaqaman *et al.*[^2], but extended here.
 
 If you want to use feature penalties for frame-to-frame linking, simply press the green **+** button in the sub-panel. A combo-box will appear, in which you can choose the target feature. The text field ti its right allows specifying the penalty weight. Feature penalties will *change* the base cost. We will not go in the details here (particularly because we are not going to use feature penalties in this tutorial), but basically, two spots with different features will have a linking cost higher than if the selected features values were the same. The weight allows you to specify how much you want to penalize a specific feature difference. A weight of 10 is already very penalizing.
 
@@ -314,16 +314,8 @@ Now that you know how the plugin works, you should be able to reach the end resu
 
 ## References
 
-<references/>
+[^1]: David G. Lowe, "Distinctive image features from scale-invariant keypoints", International Journal of Computer Vision, 60, 2 (2004), pp. 91-110.
 
+[^2]: [Jaqaman et al., "Robust single-particle tracking in live-cell time-lapse sequences", Nat Methods. 2008 Aug;5(8):695-702.](http://www.nature.com/nmeth/journal/v5/n8/full/nmeth.1237.html)
 
-
-[1] David G. Lowe, "Distinctive image features from scale-invariant keypoints", International Journal of Computer Vision, 60, 2 (2004), pp. 91-110.
-
-[2] [Jaqaman et al., "Robust single-particle tracking in live-cell time-lapse sequences", Nat Methods. 2008 Aug;5(8):695-702.](http://www.nature.com/nmeth/journal/v5/n8/full/nmeth.1237.html)
-
-[3] There is some theoretical grounds for that, if you are investigating Brownian motion. See the [page](/plugins/trackmate/algorithms#cost-calculation--brownian-motion) that details the segmenters and trackers for information.
-
-[4] 
-
-[5] 
+[^3]: There is some theoretical grounds for that, if you are investigating Brownian motion. See the [page](/plugins/trackmate/algorithms#cost-calculation--brownian-motion) that details the segmenters and trackers for information.

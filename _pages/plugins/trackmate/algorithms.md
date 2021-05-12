@@ -37,7 +37,7 @@ Given d an approximate expected particle diameter, determined upon inspection, t
 
 The image is filtered using these two gaussians, and the result of the second filter (largest sigma) is subtracted from the result of the first filter (smallest sigma). This yields a smoothed image with sharp local maximas at particle locations. A detection spot is then created for each of these maximas, and an arbitrary quality feature is assigned to the new spot by taking the smoothed image value at the maximum. If two spots are found to be closer than the expected radius d/2, the one with the lowest quality is discarded.
 
-To improve the localization accuracy, and extra step is taken to yield a sub-pixel localization of the spots. The position of each spot is recalculated using a simple parabolic interpolation scheme, as in [1]. The quality feature is also interpolated using this scheme.
+To improve the localization accuracy, and extra step is taken to yield a sub-pixel localization of the spots. The position of each spot is recalculated using a simple parabolic interpolation scheme, as in [^1]. The quality feature is also interpolated using this scheme.
 
 A large number of spurious spots are created by finding local maximas. There spurious spots are discarded inn extra step, by applying a threshold on the quality feature computed during segmentation. The value of this threshold is set manually, to match the SNR of the input image. Thresholded spots are then retained for subsequent particle-linking.
 
@@ -289,7 +289,7 @@ where *αi,i+1* is the angle between two succeeding links, in radians.
 
 ### LAP trackers
 
-The Linear Assignment Problem (LAP) trackers implemented here follow a stripped down version of the renowned method contributed by Jaqaman and colleagues[2]. We repeat here the ideas found in the reference paper, then stresses the differences with the nominal implementation.
+The Linear Assignment Problem (LAP) trackers implemented here follow a stripped down version of the renowned method contributed by Jaqaman and colleagues[^2]. We repeat here the ideas found in the reference paper, then stresses the differences with the nominal implementation.
 
 In TrackMate, the LAP framework backs up two instances of a tracker (four if you count the old ones, prior to v2.5.z):
 
@@ -318,17 +318,17 @@ In the first step, two consecutive frames are inspected for linking. Each spot o
 
 <!-- -->
 
--   The bottom-right quadrant (size *m* x *n*) is the auxiliary block mathematically required by the LAP formalism. A detailed explanation for its existence is given in the supplementary note 3 of [3]. This quadrant is built by taking the transpose of the top-left quadrant, and replacing all non-blocking costs by the minimal cost.
+-   The bottom-right quadrant (size *m* x *n*) is the auxiliary block mathematically required by the LAP formalism. A detailed explanation for its existence is given in the supplementary note 3 of [^2]. This quadrant is built by taking the transpose of the top-left quadrant, and replacing all non-blocking costs by the minimal cost.
 
 #### Solving LAP
 
-To solve this LAP, we rely on the Munkres & Kuhn algorithm[4], that solves the problem in polynomial time (*O(n<sup>3</sup>)*). The algorithm returns the assignment list that minimizes the sum of their costs.
+To solve this LAP, we rely on the Munkres & Kuhn algorithm[^3], that solves the problem in polynomial time (*O(n<sup>3</sup>)*). The algorithm returns the assignment list that minimizes the sum of their costs.
 
 The frame-to-frame linking described above is repeated first for all frame pairs. This yields a series of non-branching track segments. A track segment may be start or stop because of a missing detection, or because of a merge or split event, which is not taken into account at this stage. A second step where track segments are offered to link between each other (and not only spots) is need, and described further down.
 
 #### Calculating linking costs
 
-In calculating costs, we deviate slightly from the original paper from Jaqaman *et al.*[5]. In the paper, costs depend solely on the spot-to-spot distance, possibly weighted by the difference in spot intensity. Here, we offer to the user to tune costs by adding penalties on spot features, as explained below.
+In calculating costs, we deviate slightly from the original paper from Jaqaman *et al.*[^2]. In the paper, costs depend solely on the spot-to-spot distance, possibly weighted by the difference in spot intensity. Here, we offer to the user to tune costs by adding penalties on spot features, as explained below.
 
 The user is asked for a maximal allowed linking distance (entered in physical units), and for a series of spot features, alongside with penalty weights. These parameters are used to tune the cost matrices. For two spots that may link, the linking cost is calculated as follow:
 
@@ -347,7 +347,7 @@ If the user feeds no penalty, the costs are simply the distances squared.
 
 #### Calculating non-linking costs
 
-The top-right and bottom-left quadrant of the frame-to-frame linking matrix contain costs associated with track segment termination or initiation (a spot is not linking to a spot in the next or previous frame). Each of these two blocks is a square matrix with blocking value everywhere, except along the diagonal for which an alternative cost is computed. Following Jaqaman[6], this cost is set to be
+The top-right and bottom-left quadrant of the frame-to-frame linking matrix contain costs associated with track segment termination or initiation (a spot is not linking to a spot in the next or previous frame). Each of these two blocks is a square matrix with blocking value everywhere, except along the diagonal for which an alternative cost is computed. Following Jaqaman[^2], this cost is set to be
 
 Calt = 1.05 × max( C )
 
@@ -355,7 +355,7 @@ where C is the costs of the top-left quadrant.
 
 #### Cost calculation & Brownian motion
 
-Without penalties and with a maximal linking allowed distance, the returned solution is the one that minimizes the sum of squared distances. This actually corresponds to the case where the motion of spots is governed by {% include wikipedia title="Brownian motion" %}. See for instance Crocker and Grier[7].
+Without penalties and with a maximal linking allowed distance, the returned solution is the one that minimizes the sum of squared distances. This actually corresponds to the case where the motion of spots is governed by {% include wikipedia title="Brownian motion" %}. See for instance Crocker and Grier[^4].
 
 By adding feature penalties, we aim at favoring linking particles that "resemble" each other. In brute single particle linking problems, spots are generally all the same, and they only differ by position. However, there is a variety of problems for which these feature penalties can add robustness to the tracking process.
 
@@ -400,7 +400,7 @@ The notable differences are:
 
 Starting from TrackMate v2.7.z, we shipped a new tracker that can deal specifically with linear motion, or particle moving with a roughly constant velocity. This velocity does not need to be the same for all particles. You can find it in TrackMate tracker selection under the name <b>Linear motion LAP tracker</b>.
 
-Though it deals with a completely different motion model compared to the LAP trackers in TrackMate, it reuses the Jaqaman LAP framework, and it is similar to a tracker proposed in the Jaqaman paper as well: See the CD36 tracking, in the supplementary note 7 of the paper[10]. But again, the version in TrackMate is simplified compared to what you can find in <b>u-track</b>.
+Though it deals with a completely different motion model compared to the LAP trackers in TrackMate, it reuses the Jaqaman LAP framework, and it is similar to a tracker proposed in the Jaqaman paper as well: See the CD36 tracking, in the supplementary note 7 of the paper[^2]. But again, the version in TrackMate is simplified compared to what you can find in <b>u-track</b>.
 
 #### Principle.
 
@@ -459,24 +459,10 @@ The particle linking algorithm would read as follow:
 
 ## References
 
-<references/>
+[^1]: David G. Lowe, ["Distinctive image features from scale-invariant keypoints"](http://www.cs.ubc.ca/~lowe/papers/ijcv04.pdf), International Journal of Computer Vision, 60, 2 (2004), pp. 91-110.
 
-[1] David G. Lowe, ["Distinctive image features from scale-invariant keypoints"](http://www.cs.ubc.ca/~lowe/papers/ijcv04.pdf), International Journal of Computer Vision, 60, 2 (2004), pp. 91-110.
+[^2]: [Jaqaman et al., "Robust single-particle tracking in live-cell time-lapse sequences", Nat Methods. 2008 Aug;5(8):695-702.](http://www.nature.com/nmeth/journal/v5/n8/full/nmeth.1237.html)
 
-[2] [Jaqaman et al., "Robust single-particle tracking in live-cell time-lapse sequences", Nat Methods. 2008 Aug;5(8):695-702.](http://www.nature.com/nmeth/journal/v5/n8/full/nmeth.1237.html)
+[^3]: J. Munkres, "Algorithms for the Assignment and Transportation Problems", Journal of the Society for Industrial and Applied Mathematics, 5(1):32–38, 1957 March
 
-[3] 
-
-[4] J. Munkres, "Algorithms for the Assignment and Transportation Problems", Journal of the Society for Industrial and Applied Mathematics, 5(1):32–38, 1957 March
-
-[5] 
-
-[6] 
-
-[7] [Crocker and Grier. "Methods of Digital Video Microscopy for Colloidal Studies." J Colloid Interf Sci (1996) vol. 179 (1) pp. 298-310](http://physics.nyu.edu/grierlab/methods3c/methods3c.pdf)
-
-[8] 
-
-[9] 
-
-[10] 
+[^4]: [Crocker and Grier. "Methods of Digital Video Microscopy for Colloidal Studies." J Colloid Interf Sci (1996) vol. 179 (1) pp. 298-310](http://physics.nyu.edu/grierlab/methods3c/methods3c.pdf)

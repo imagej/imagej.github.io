@@ -66,7 +66,7 @@ We used a 1024x1024 *uint16* image, with 200 gaussian spots, the size of which w
 
 <figure><img src="/media/trackmate-dogandlogtimevsradius2d.png" title="TrackMate_DoGandLoGTimeVsRadius2D.png" width="400" alt="TrackMate_DoGandLoGTimeVsRadius2D.png" /><figcaption aria-hidden="true">TrackMate_DoGandLoGTimeVsRadius2D.png</figcaption></figure>
 
-We find that for the DoG detector, the processing time to increase linearly with the specified radius, following approximately *t (ms) = 20.5 x radius + 260*. As the difference-of-gaussians is calculated in the direct space, a marked increase is expected as there is more pixels to iterate over. Without optimization, we should however have found the time to be increasing with the square of the radius, and find the same dependence that for the image size. Thanks to the clever implementation of gaussian filtering[1], this is avoided.
+We find that for the DoG detector, the processing time to increase linearly with the specified radius, following approximately *t (ms) = 20.5 x radius + 260*. As the difference-of-gaussians is calculated in the direct space, a marked increase is expected as there is more pixels to iterate over. Without optimization, we should however have found the time to be increasing with the square of the radius, and find the same dependence that for the image size. Thanks to the clever implementation of gaussian filtering[^1], this is avoided.
 
 The LoG detector shows a near-constant processing time, which makes it desirable for spots larger than 2 pixels in radius. This is due to the way we compute the convolution which is explained below.
 
@@ -87,6 +87,6 @@ This stepwise evolution makes it slightly harder to choose between LoG and DoG d
 -   The LoG detector outperforms the DoG detector in 2D for radiuses larger than 2 pixels.
 -   The LoG detector outperforms the DoG detector in 3D for radiuses larger than 4 pixels.
 
-<references/>
+## References
 
-[1] https://github.com/imagej/imglib/blob/master/algorithms/core/src/main/java/net/imglib2/algorithm/gauss3/Gauss3.java
+[^1]: https://github.com/imagej/imglib/blob/master/algorithms/core/src/main/java/net/imglib2/algorithm/gauss3/Gauss3.java
