@@ -1,6 +1,10 @@
 /* Plugin index */
 
-.plugin-index {
+.plugin-index h1 {
+  text-transform: capitalize;
+}
+
+.plugin-index ul {
   display: flex;
   flex-wrap: wrap;
 }

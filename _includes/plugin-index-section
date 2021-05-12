@@ -1,14 +1,11 @@
-{%- assign plugin_page_1 = null -%}
-{%- assign plugin_page_2 = null -%}
-{%- assign plugin_page_3 = null -%}
-{%- assign section = include.category | downcase -%}
-<ul class="plugin-index">
+{%- assign section = include.category | strip | capitalize -%}
+<ul>
 {%- for page in site.pages -%}
   {%- assign tokens = page.url | split: "/" -%}
   {%- if tokens[1] != 'plugins' -%} {%- continue -%} {%- endif -%}
   {%- if tokens[3] and tokens[3] != 'index' -%} {%- continue -%} {%- endif -%}
   {%- for category in page.categories -%}
-    {%- assign c = category | downcase -%}
+    {%- assign c = category | strip | capitalize -%}
     {%- if c == section -%}
       <li>{%- include plugin-index-icon -%}<a href="{{page.url}}">{{page.title}}</a></li>
     {%- endif -%}
