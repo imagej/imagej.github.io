@@ -1,6 +1,6 @@
 ---
 title: NIH Image
-categories: Software,Citable
+categories: [Software,Citable]
 ---
 
 {% include image-left name="nih-image" image-path="/media/nih-image-logo.png" %}

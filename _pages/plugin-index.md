@@ -1,6 +1,6 @@
 ---
 title: Plugin Index
-categories: admin
+categories: [admin]
 ---
 
 # Analysis
@@ -10,6 +10,10 @@ categories: admin
 # Binary
 
 {% include plugin-index-section category="binary" %}
+
+# Color Processing
+
+{% include plugin-index-section category="color processing" %}
 
 # Deconvolution
 

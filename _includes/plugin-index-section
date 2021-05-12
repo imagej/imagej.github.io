@@ -1,65 +1,21 @@
 {%- assign plugin_page_1 = null -%}
 {%- assign plugin_page_2 = null -%}
 {%- assign plugin_page_3 = null -%}
-{%- assign plugin_filter = include.category -%}
-<div class="plugin-index">
-<table>
-<tbody>
+{%- assign section = include.category | downcase -%}
+<ul class="plugin-index">
 {%- for page in site.pages -%}
-  {%- assign url_array = page.url | split: "/" -%}
-  {%- if url_array[1] != "plugins" -%} {%- continue -%} {%- endif -%}
-  {%- if url_array[3] and url_array[3] != "index" -%} {%- continue -%} {%- endif -%}
-  {%- assign category_array = page.categories | downcase | split: "," -%}
-  {%- for item in category_array -%}
-    {%- if item contains plugin_filter -%}
-      {%- if plugin_page_1 == null -%}
-        {%- capture plugin_page_1 -%}
-        {%- include plugin-index-icon -%}<a href="{{page.url | relative_url}}">{{page.title}}</a>
-        {%- endcapture -%}
-        {%- continue -%}
-      {%- endif -%}
-      {%- if plugin_page_2 == null -%}
-        {%- capture plugin_page_2 -%}
-        {%- include plugin-index-icon -%}<a href="{{page.url | relative_url}}">{{page.title}}</a>
-        {%- endcapture -%}
-        {%- continue -%}
-      {%- endif -%}
-      {%- if plugin_page_3 == null -%}
-        {%- capture plugin_page_3 -%}
-        {%- include plugin-index-icon -%}<a href="{{page.url | relative_url}}">{{page.title}}</a>
-        {%- endcapture -%}
-        {%- continue -%}
-      {%- endif -%}
-      <tr>
-        <td>{{plugin_page_1}}</td>
-        <td>{{plugin_page_2}}</td>
-        <td>{{plugin_page_3}}</td>
-      </tr>
-      {%- assign plugin_page_1 = null -%}
-      {%- assign plugin_page_2 = null -%}
-      {%- assign plugin_page_3 = null -%}
+  {%- assign tokens = page.url | split: "/" -%}
+  {%- if tokens[1] != 'plugins' -%} {%- continue -%} {%- endif -%}
+  {%- if tokens[3] and tokens[3] != 'index' -%} {%- continue -%} {%- endif -%}
+  {%- for category in page.categories -%}
+    {%- assign c = category | downcase -%}
+    {%- if c == section -%}
+      <li>{%- include plugin-index-icon -%}<a href="{{page.url}}">{{page.title}}</a></li>
     {%- endif -%}
   {%- endfor -%}
-  {%- if forloop.last == true -%}
-    <tr>
-    {%- if plugin_page_1 != null -%}
-      <td>{{plugin_page_1}}</td>
-      {%- assign plugin_page_1 = null -%}
-    {%- endif -%}
-    {%- if plugin_page_2 != null -%}
-      <td>{{plugin_page_2}}</td>
-      {%- assign plugin_page_2 = null -%}
-    {%- endif -%}
-    {%- if plugin_page_3 != null -%}
-      <td>{{plugin_page_3}}</td>
-      {%- assign plugin_page_3 = null -%}
-    {%- endif -%}
-    </tr>
-  {%- endif -%}
 {%- endfor -%}
-</tbody>
-</table>
-</div>
+</ul>
+
 {%- comment -%}
 # vi:syntax=liquid
 {%- endcomment -%}

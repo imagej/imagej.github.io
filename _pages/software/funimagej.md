@@ -2,7 +2,7 @@
 title: FunImageJ
 
 artifact: fun.imagej:fun.imagej
-categories: Lisp, Citable
+categories: [Lisp, Citable]
 ---
 
 ## Purpose

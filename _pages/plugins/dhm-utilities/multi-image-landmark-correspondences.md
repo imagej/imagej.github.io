@@ -1,6 +1,6 @@
 ---
 title: DHM Utilities/Multi-Image Landmark Correspondences
-categories: Plugins
+categories: [Plugins]
 project: DHM Utilities
 
 name: Multi-Image Landmark Correspondences

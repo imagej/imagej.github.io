@@ -1,32 +1,20 @@
 /* Plugin index */
 
 .plugin-index {
-    font-weight: 500;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.plugin-index table {
-    margin: 0 auto;
-    table-layout: fixed;
-    width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0;
+.plugin-index li {
+  flex-grow: 1;
+  width: 33%;
+  vertical-align: middle;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.plugin-index table td {
-    vertical-align: middle;;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 75%;
-}
-
-.plugin-index table td a {
-    vertical-align: middle;
-    padding-bottom: 1.2em;
-}
-
-.plugin-index table tbody tr {
-    border-left: 0;
-    border-right: 0;
-    background-color: #ffffff;
+.plugin-index a {
+  vertical-align: middle;
+  padding-bottom: 1.2em;
 }

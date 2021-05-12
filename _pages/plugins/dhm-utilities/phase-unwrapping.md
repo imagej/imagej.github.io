@@ -1,6 +1,6 @@
 ---
 title: DHM Utilities/Phase Unwrapping
-categories: Plugins
+categories: [Plugins]
 project: DHM Utilities
 
 name: Phase Unwrapping

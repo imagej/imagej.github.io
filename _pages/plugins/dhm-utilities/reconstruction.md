@@ -1,6 +1,6 @@
 ---
 title: DHM Utilities/Reconstruction
-categories: Plugins
+categories: [Plugins]
 project: DHM Utilities
 
 name: Reconstruction

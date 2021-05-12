@@ -1,6 +1,6 @@
 ---
 title: DHM Utilities
-categories: Plugins
+categories: [Plugins]
 ---
 
 DHM Utilities is a collection of plugins for use in Digital Holographic Microscopy. There are three main plugins packaged with DHM Utilities:

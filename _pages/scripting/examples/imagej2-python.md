@@ -1,6 +1,6 @@
 ---
 title: ImageJ2 Python Scripts
-categories: Scripting,ImageJ2,Ops,SciJava
+categories: [Scripting,ImageJ2,Ops,SciJava]
 ---
 
 # Introduction
