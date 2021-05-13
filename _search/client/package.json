@@ -23,6 +23,7 @@
     "typesense-instantsearch-adapter": "^1.1.1"
   },
   "resolutions": {
-    "node-forge": "0.10.0"
+    "node-forge": "0.10.0",
+    "postcss": "~8.2.10"
   }
 }
