@@ -82,8 +82,8 @@
 2011-05-01_-_ImageJ_v2.0.0-alpha2 :: news/2011-05-01-imagej-v2-0-0-alpha2
 2011-05-24_-_Advanced_Weka_Segmentation_is_released :: news/2011-05-24-advanced-weka-segmentation-is-released
 2011-06-01_-_ImageJ_v2.0.0-alpha3 :: news/2011-06-01-imagej-v2-0-0-alpha3
-2011-06-30_-_Easier_URL :: news/2011-06-30-easier-url-http-fiji-sc-
-2011-06-30_-_Easier_URL:_http://fiji.sc/ :: news/2011-06-30-easier-url-http-fiji-sc-
+2011-06-30_-_Easier_URL :: news/2011-06-30-easier-url-http-fiji-sc
+2011-06-30_-_Easier_URL:_http://fiji.sc/ :: news/2011-06-30-easier-url-http-fiji-sc
 2011-07-01_-_First_ImageJ2_beta_delayed :: news/2011-07-01-first-imagej2-beta-delayed
 2011-07-15_-_Fiji_with_splash_screen :: news/2011-07-15-fiji-with-splash-screen
 2011-07-22_-_Updates_to_the_ImageJ_extensibility_framework :: news/2011-07-22-updates-to-the-imagej-extensibility-framework
