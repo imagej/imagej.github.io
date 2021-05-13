@@ -40,7 +40,7 @@ Click the links below to find more about each tool.
 
 5\. If the update site does not show, you can manually add the site by clicking "Add update site". Type in Name "EM tool", URL "https://sites.imagej.net/IMBalENce/"
 
-<figure><img src="/media/EMtool 03.jpg" title="EMtool_03.jpg" width="500" alt="EMtool_03.jpg" /><figcaption aria-hidden="true">EMtool_03.jpg</figcaption></figure>
+<figure><img src="/media/emtool-03.jpg" title="EMtool_03.jpg" width="500" alt="EMtool_03.jpg" /><figcaption aria-hidden="true">EMtool_03.jpg</figcaption></figure>
 
 6 Close the "Manage Update Sites" window and click the "Apply Changes" button on the "ImageJ Updater Window".
 

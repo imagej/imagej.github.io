@@ -19,7 +19,7 @@ The currently selected fusion mode is highlighted in red, clicking on another on
 
 Finally, selecting a bounding box will open another sub-menu in which you can select the downsampling level to fuse. Click the desired level to fuse the image(s) and display the result in a new ImageJ-window.
 
-<img src="/media/BigStitcher Fusion Quick.png" width="700"/>
+<img src="/media/bigstitcher-fusion-quick.png" width="700"/>
 
 {% include info-box content='The quick fusion will fuse **all selected images**, including multiple channels/illuminations/time points, into one final image. To prevent e.g. a fusion of multiple channels, make sure to select only the images you need, ungrouping the views in the main window, if necessary.' %}
 

@@ -28,7 +28,7 @@ This is the [basic tutorial for TrakEM2](/plugins/trakem2/basics-tutorial). **If
 
 ## Video tutorial on segmenting/outlining objects over multiple sections in 3D
 
-{% include thumbnail-link src="/media/Arealists-brushing.jpg" title='TrakEM2 brushing (This video tutorial was made by Albert Cardona. To visualize it, you need a mp4 player.)' link='TrakEM2 brushing (This video tutorial was made by Albert Cardona. To visualize it, you need a mp4 player.)'%} This mp4 [video tutorial](http://www.ini.uzh.ch/~acardona/movies/arealist-create-and-edit.mp4) covers:
+{% include thumbnail-link src="/media/arealists-brushing.jpg" title='TrakEM2 brushing (This video tutorial was made by Albert Cardona. To visualize it, you need a mp4 player.)' link='TrakEM2 brushing (This video tutorial was made by Albert Cardona. To visualize it, you need a mp4 player.)'%} This mp4 [video tutorial](http://www.ini.uzh.ch/~acardona/movies/arealist-create-and-edit.mp4) covers:
 
 -   How to use the PEN tool with "area lists" segmentation type (paint an area, flood-fill, erase, flood-erase).
 -   How to use ROIs (selections like polygon and freeroi) to edit "area lists".

@@ -25,7 +25,7 @@ A fundamental benefit to creating [scripts and macros](/scripting) in [ImageJ](/
 
 The fastest way to start batch conversion is via the [{% include bc path='Process | Batch | Macro...'%}](/ij/docs/guide/146-29.html#toc-Subsubsection-29.12.3) command. This will open a dialog (below) that will allow you to specify an input and output directory. You can select an output file format, and then use the `Add Macro Code` drop-down to generate a macro with the desired functionality.
 
-![](/media/BatchProcess.png "BatchProcess.png")
+![](/media/batchprocess.png "BatchProcess.png")
 
 # Option 2 - Script Template
 

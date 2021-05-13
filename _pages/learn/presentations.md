@@ -572,7 +572,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       </td>
       <td>Introduction to Image Segmentation using ImageJ/Fiji</td>
       <td>
-        <a href="/media/Arganda-Carreras-Segmentation-Bioimage-course-MDC-Berlin-2016.pdf">slides (PDF)</a>
+        <a href="/media/arganda-carreras-segmentation-bioimage-course-mdc-berlin-2016.pdf">slides (PDF)</a>
       </td>
     </tr>
     <tr class="even">

@@ -38,7 +38,7 @@ After selecting the regions to label in each slice, click the I-Button (which is
 
 Now go to the material list, select the material which you want to asign, and click on the Plus button. That's it.
 
-![](/media/Segmentation Editor 4.png "Segmentation_Editor_4.png")
+![](/media/segmentation-editor-4.png "Segmentation_Editor_4.png")
 
 After finishing, click Ok to close the segmentation window. The labels will remain open. You must store them yourself.
 

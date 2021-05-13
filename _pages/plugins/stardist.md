@@ -44,7 +44,7 @@ Start the plugin from `Plugins > StarDist > StarDist 2D`. The following paramete
   <tbody>
     <tr class="odd">
       <td>
-        <p><img src="/media/StarDist%20usage%20param%20pred.jpg" width="400"></p>
+        <p><img src="/media/stardist-usage-param-pred.jpg" width="400"></p>
       </td>
       <td>
         <p>Select a neural network model from the dropdown list, which can be one of the following:</p>
@@ -69,7 +69,7 @@ Start the plugin from `Plugins > StarDist > StarDist 2D`. The following paramete
     </tr>
     <tr class="even">
       <td>
-        <p><img src="/media/StarDist%20usage%20param%20nms.jpg" width="400"></p>
+        <p><img src="/media/stardist-usage-param-nms.jpg" width="400"></p>
       </td>
       <td>
         <p>Adjust the NMS (non-maximum suppression) postprocessing parameters:</p>
@@ -83,7 +83,7 @@ Start the plugin from `Plugins > StarDist > StarDist 2D`. The following paramete
     </tr>
     <tr class="odd">
       <td>
-        <p><img src="/media/StarDist%20usage%20param%20advanced.jpg" width="400"></p>
+        <p><img src="/media/stardist-usage-param-advanced.jpg" width="400"></p>
       </td>
       <td>
         <p>Advanced options:</p>

@@ -408,8 +408,8 @@ Assuming you chose to fit both centroids and radii, a fitted path might look lik
 <div align="center">
 
 -   <img src="/media/fit-parameter-prompt.png" title="fig:Fitting parameters" width="286" alt="Fitting parameters" />
--   <img src="/media/Before-fitting.png" title="fig:Before fitting" width="300" alt="Before fitting" />
--   <img src="/media/After-fitting.png" title="fig:Fitted path" width="300" alt="Fitted path" />
+-   <img src="/media/before-fitting.png" title="fig:Before fitting" width="300" alt="Before fitting" />
+-   <img src="/media/after-fitting.png" title="fig:Fitted path" width="300" alt="Fitted path" />
 
 </div>
 

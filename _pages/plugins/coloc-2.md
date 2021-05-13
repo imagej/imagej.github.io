@@ -60,7 +60,7 @@ That means it does not like images with high zero offset, where no light detecte
 
 Notice: the image contains large areas of background, with similar low values of pixel intensities in both channels. This means there is strong correlation in the background areas, which interferes with the interesting biological correlation in the high signal areas where the biology is located. This means it is important to set a biologically relevant region of interest (ROI) and not analyse the whole image. We must avoid analyzing the highly correlated, but uninteresting, background areas. See the section below...
 
-<img src="/media/BadOffsetConfusesCostesAutoThreshold.png" width="300"/>
+<img src="/media/badoffsetconfusescostesautothreshold.png" width="300"/>
 
 ## Effect of noise on Pearson's and Manders' coefficients
 

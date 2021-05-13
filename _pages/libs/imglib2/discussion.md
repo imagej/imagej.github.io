@@ -148,7 +148,7 @@ In imglib2, out-of-bounds access is handled by [`ExtendedRandomAccessibleInterva
 
 The original `img` looks like this:
 
-![](/media/Imglib2views img.png "Imglib2views_img.png")
+![](/media/imglib2views-img.png "Imglib2views_img.png")
 
 This is extended to infinity (using mirroring strategy) resulting in the unbounded `RandomAccessible view1`. A crop of `view1` looks like this:
 

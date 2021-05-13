@@ -123,7 +123,7 @@ Here we summarize some of the Registration plugins in ImageJ.
         </ul>
       </td>
       <td>
-        <p><img src="/media/Rvs%20scheme.png" width="500"></p>
+        <p><img src="/media/rvs-scheme.png" width="500"></p>
       </td>
     </tr>
     <tr class="odd">
@@ -148,7 +148,7 @@ Here we summarize some of the Registration plugins in ImageJ.
         </ul>
       </td>
       <td>
-        <p><img src="/media/Reg%20present%201.png" width="500"></p>
+        <p><img src="/media/reg-present-1.png" width="500"></p>
       </td>
     </tr>
   </tbody>

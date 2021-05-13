@@ -24,7 +24,7 @@ categories: [Plugins,Visualization,Citable]
 
 -   {% include publication content='ActogramJ' %}
 
-![](/media/ActogramJ.png "ActogramJ.png")
+![](/media/actogramj.png "ActogramJ.png")
 
 More information is available at [https://bene51.github.io/ActogramJ](https://bene51.github.io/ActogramJ).
 

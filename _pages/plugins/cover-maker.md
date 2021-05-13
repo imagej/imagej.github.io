@@ -67,7 +67,7 @@ Finally, for printing poster size images, the plugin will generate in the second
         <p><em>Note:</em> I would recommend having only one image opened before proceeding further.</p>
       </td>
       <td>
-        <p>{% include thumbnail src='/media/Fiji logo in Fiji.png' title='"Template image"'%}</p>
+        <p>{% include thumbnail src='/media/fiji-logo-in-fiji.png' title='"Template image"'%}</p>
       </td>
       <td></td>
     </tr>

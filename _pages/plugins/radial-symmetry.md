@@ -47,7 +47,7 @@ Choose the image for detection and set 'Gauss Fit' as a detection method. You ca
 
 Once ok is pressed you will see 2 windows:
 
-<figure><img src="/media/Adjust-difference-of-gaussian-values.png" title="Adjust-difference-of-gaussian-values.png" height="300" alt="Adjust-difference-of-gaussian-values.png" /><figcaption aria-hidden="true">Adjust-difference-of-gaussian-values.png</figcaption></figure>
+<figure><img src="/media/adjust-difference-of-gaussian-values.png" title="Adjust-difference-of-gaussian-values.png" height="300" alt="Adjust-difference-of-gaussian-values.png" /><figcaption aria-hidden="true">Adjust-difference-of-gaussian-values.png</figcaption></figure>
 
 <figure><img src="/media/one-spot-overlay.png" title="One-spot-overlay.png" height="500" alt="One-spot-overlay.png" /><figcaption aria-hidden="true">One-spot-overlay.png</figcaption></figure>
 
@@ -101,7 +101,7 @@ After that you will see multiple windows.
 
 Difference of Gaussian window to adjust the corresponding parameters. This window is necessary to get rid of the false pre-detections. In general, we could skip this part but then the computations would take too much time. Adjust the parameters so that you do not have too many false detections. But also do not try to get rid of all of them – they will be discarded in the next computation step anyways.
 
-<figure><img src="/media/Adjust-difference-of-gaussian-values.png" title="Adjust-difference-of-gaussian-values.png" height="300" alt="Adjust-difference-of-gaussian-values.png" /><figcaption aria-hidden="true">Adjust-difference-of-gaussian-values.png</figcaption></figure>
+<figure><img src="/media/adjust-difference-of-gaussian-values.png" title="Adjust-difference-of-gaussian-values.png" height="300" alt="Adjust-difference-of-gaussian-values.png" /><figcaption aria-hidden="true">Adjust-difference-of-gaussian-values.png</figcaption></figure>
 
 RANSAC window is the 'main' window of the whole plugin. Therefore, we will give a more detailed explanation for the parameters here.
 

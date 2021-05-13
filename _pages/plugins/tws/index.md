@@ -59,7 +59,7 @@ If the training ends correctly, then the displayed image will be completely segm
 
 #### Toggle overlay
 
-{% include thumbnail src='/media/AWS-Probability-maps.png' title='Example of resulting probability map displayed as a hyperstack'%} This button activates and deactivates the overlay of the result image. The transparency of the overlay image can be adjusted in the [Settings dialog](/plugins/tws#settings).
+{% include thumbnail src='/media/aws-probability-maps.png' title='Example of resulting probability map displayed as a hyperstack'%} This button activates and deactivates the overlay of the result image. The transparency of the overlay image can be adjusted in the [Settings dialog](/plugins/tws#settings).
 
 #### Create result
 
@@ -75,7 +75,7 @@ This button calls the [Weka](http://www.cs.waikato.ac.nz/ml/weka/) core to gener
 
 These curves allow to visualize the performance of the classifier based on the different thresholds that can be applied to the probability maps.
 
-{% include thumbnail src='/media/AWS-Plot-result.png' title='Weka model performance chart. Displayed after clicking on "Plot result"'%}
+{% include thumbnail src='/media/aws-plot-result.png' title='Weka model performance chart. Displayed after clicking on "Plot result"'%}
 
 ### Options panel
 
@@ -189,7 +189,7 @@ The detailed implementation of these 2D filters can be found in the [source code
 
 ##### Classifier options
 
-{% include thumbnail src='/media/AWS-Classifier-selection.png' title='Classifier selection in the Trainable Weka Segmentation [Settings dialog](/plugins/tws#settings).'%} The default classifier is [FastRandomForest](https://code.google.com/p/fast-random-forest/), a **multi-threaded** version of {% include wikipedia title='Random forest' text='random forest'%} by [Fran Supek](https://scholar.google.com/citations?user=Rz3rPeUAAAAJ), initialized with 200 trees and 2 random features per node. However the user can select any available classifier in the [Weka](http://www.cs.waikato.ac.nz/ml/weka/) by clicking on "Choose" button. By left-clicking on the classifier text we can also edit the classifier options.
+{% include thumbnail src='/media/aws-classifier-selection.png' title='Classifier selection in the Trainable Weka Segmentation [Settings dialog](/plugins/tws#settings).'%} The default classifier is [FastRandomForest](https://code.google.com/p/fast-random-forest/), a **multi-threaded** version of {% include wikipedia title='Random forest' text='random forest'%} by [Fran Supek](https://scholar.google.com/citations?user=Rz3rPeUAAAAJ), initialized with 200 trees and 2 random features per node. However the user can select any available classifier in the [Weka](http://www.cs.waikato.ac.nz/ml/weka/) by clicking on "Choose" button. By left-clicking on the classifier text we can also edit the classifier options.
 
 **If you do not find the classifier you want**, you might have to install the Weka package that includes it. For that, you need to launch the Weka GUI Chooser (by clicking on the Weka button of the left panel of the plugin GUI) and use the [ Weka Package Manager](/plugins/tws/how-to-install-new-classifiers) (under {% include bc path='Tools | Package manager'%}). For a step-by-step description on how to install new packages, have a look at this [tutorial](/plugins/tws/how-to-install-new-classifiers).
 
@@ -222,7 +222,7 @@ For a complete step-by-step description on how to compare classifiers for image 
 
 ### Macro language compatibility
 
-[Trainable Weka Segmentation](/plugins/tws) is completely compatible with the popular [ImageJ macro language](/ij/developer/macro/macros.html). Each of the buttons in the GUI are macro-recordable and their commands can be reproduced later from a simple macro file. {% include thumbnail src='/media/AWS-macro-recording.png' title='Example of macro recording of the Trainable Weka Segmentation tools.'%}
+[Trainable Weka Segmentation](/plugins/tws) is completely compatible with the popular [ImageJ macro language](/ij/developer/macro/macros.html). Each of the buttons in the GUI are macro-recordable and their commands can be reproduced later from a simple macro file. {% include thumbnail src='/media/aws-macro-recording.png' title='Example of macro recording of the Trainable Weka Segmentation tools.'%}
 
 The complete list of commands is as follows:
 

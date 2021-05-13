@@ -151,7 +151,7 @@ It's possible to train a DenoiSeg neural network using Python. The required code
 
 There are many possibilities for how to create labelings. But since we get this question a lot, here is how we do it:
 
-{% include thumbnail src='/media/updatesite-labkit.png' title='Update site Labkit'%} {% include thumbnail src='/media/labkit.png' title='Labkit'%} {% include thumbnail src='/media/3Dobjectscounter.png' title='3D Objects counter options'%}
+{% include thumbnail src='/media/updatesite-labkit.png' title='Update site Labkit'%} {% include thumbnail src='/media/labkit.png' title='Labkit'%} {% include thumbnail src='/media/3dobjectscounter.png' title='3D Objects counter options'%}
 
 1.  Install the Labkit update site via `Help > Update...`, clicking on `Manage update sites`, and selecting `Labkit`
 2.  Restart Fiji

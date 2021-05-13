@@ -54,7 +54,7 @@ After the connection to the HPC Cluster is made and the jobs are downloaded from
 
 Right-click in the empty table or an empty row of the table to display the context menu, an example of the context menu is featured in Figure 3.
 
-<figure><img src="/media/Hpc workflow manager context menu.png" title=" Figure 3: Context menu press right click on an empty row or empty table to display." width="200" alt=" Figure 3: Context menu press right click on an empty row or empty table to display." /><figcaption aria-hidden="true"> Figure 3: Context menu press right click on an empty row or empty table to display.</figcaption></figure>
+<figure><img src="/media/hpc-workflow-manager-context-menu.png" title=" Figure 3: Context menu press right click on an empty row or empty table to display." width="200" alt=" Figure 3: Context menu press right click on an empty row or empty table to display." /><figcaption aria-hidden="true"> Figure 3: Context menu press right click on an empty row or empty table to display.</figcaption></figure>
 
 Select the first option "Create a new job". The "Create job" window will appear. From the "Workflow Type" section, select the "Macro Execution" option.
 

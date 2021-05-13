@@ -94,7 +94,7 @@ The ParticleSizer supports the [NanoDefiner e-tool](https://labs.inf.fh-dortmund
 
 ## Gold 8 nm, Settings: Default
 
-<img src="/media/gold-nooverlay.png" title="fig:Gold_nooverlay.png" width="300" alt="Gold_nooverlay.png" /> <img src="/media/gold-overlay.png" title="fig:Gold_overlay.png" width="300" alt="Gold_overlay.png" /> <img src="/media/Hist gold normal.png" title="fig:Hist_gold_normal.png" width="300" alt="Hist_gold_normal.png" />
+<img src="/media/gold-nooverlay.png" title="fig:Gold_nooverlay.png" width="300" alt="Gold_nooverlay.png" /> <img src="/media/gold-overlay.png" title="fig:Gold_overlay.png" width="300" alt="Gold_overlay.png" /> <img src="/media/hist-gold-normal.png" title="fig:Hist_gold_normal.png" width="300" alt="Hist_gold_normal.png" />
 
 ## Gold 8 nm, Settings: +Ellipse fitting mode
 

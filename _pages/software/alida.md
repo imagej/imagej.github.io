@@ -16,7 +16,7 @@ Stefan Posch, {% include person id='bimoelle' %}
 {% capture source%}
 {% include github org='alida-hub' repo='alida' %}
 {% endcapture %}
-{% include info-box software='Alida' name='Alida' logo='<img src="/media/Alida-logo.jpg" width="96"/>' maintainer=maintainer author=author source=source status='' category='[:Category:Software](Category_Software)' website='http://www.informatik.uni-halle.de/alida/' %}Alida, the *Advanced Library for Integrated Development of Data Analysis Applications*, defines a concept for designing libraries and toolkits in data analysis. It supports and simplifies integrated algorithm development by inherently joining algorithm implementation, automatic process documentation and fully generic generation of user interfaces.
+{% include info-box software='Alida' name='Alida' logo='<img src="/media/alida-logo.jpg" width="96"/>' maintainer=maintainer author=author source=source status='' category='[:Category:Software](Category_Software)' website='http://www.informatik.uni-halle.de/alida/' %}Alida, the *Advanced Library for Integrated Development of Data Analysis Applications*, defines a concept for designing libraries and toolkits in data analysis. It supports and simplifies integrated algorithm development by inherently joining algorithm implementation, automatic process documentation and fully generic generation of user interfaces.
 
 Alida offers a Java implementation of its concept subsuming basic functionality for implementing data analysis operators, automatic creation of corresponding graphical and command line user interfaces, and automatic documentation of image analysis procedures.
 

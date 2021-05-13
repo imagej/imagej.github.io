@@ -15,12 +15,12 @@ This guide covers the process of migrating a page from the ImageJ Documentation 
     <a href=""><img src="/media/creating-a-new-page.png" width="500px"/></a>  
     Click "edit this page" to continue.
 6.  <b>Paste the converted wiki markup into the empty text area:</b>  
-    <a href=""><img src="/media/Add-wiki-markup.png" width="500px"/></a>
+    <a href=""><img src="/media/add-wiki-markup.png" width="500px"/></a>
 7.  <b>Preview the results.</b> Scroll down below the text field, and click the "Show preview" button (in between "Save page" and "Show changes").
 8.  <b>Migrate needed images:</b>
     1.  Right-click and "Save Image As..." the images from your page on the ImageJ Documentation Wiki. For Colocalization Finder, there are two images: `cf_images.png` and `cf_table.png`.
     2.  In a separate browser tab, open the [Special:Upload](Special_Upload) page and upload the images one by one. The Colocalization Finder images will become available from URLs [`https://imagej.net/File:Cf_images.png`](/File:Cf_images.png) and [`https://imagej.net/File:Cf_table.png`](/File:Cf_table.png). Notice that MediaWiki always capitalizes the first letter of resources, including image files.
-    3.  Back in our new Colocalization Finder page, we now replace the DocuWiki image link syntax with MediaWiki's syntax: e.g. {% raw %}`{{:plugin:analysis:colocalizationfinder:cf_images.png?nolink&400|}}`{% endraw %} becomes `<a href=""><img src="/media/Cf images.png" width="400px"/></a>`. See MediaWiki's [Help:Images](https://www.mediawiki.org/wiki/Help:Images) page for further details on formatting your images.
+    3.  Back in our new Colocalization Finder page, we now replace the DocuWiki image link syntax with MediaWiki's syntax: e.g. {% raw %}`{{:plugin:analysis:colocalizationfinder:cf_images.png?nolink&400|}}`{% endraw %} becomes `<a href=""><img src="/media/cf-images.png" width="400px"/></a>`. See MediaWiki's [Help:Images](https://www.mediawiki.org/wiki/Help:Images) page for further details on formatting your images.
 9.  <b>Add categories to your page</b> so that it is classified correctly. The Colocalization Finder page is in the `plugins/analysis` subtree, so we will add `[[Category:Analysis]]` and `[[Category:Plugins]]`. These tags go at the very bottom of the wiki markup, each one on its own line. See [Special:Categories](Special_Categories) for a complete list of available categories on imagej.net.
 10. <b>Fix any remaining errors and imperfections.</b> Inspect the rendered page, noting any problems. Then scroll down below the page to find the text box containing the wiki markup code.
     -   The `<note warning>...</note>` block can become a {% raw %}`{{Warning | ...}}`{% endraw %} block. (See documentation for [Template:Warning](Template_Warning), [Template:Notice](Template_Notice), [Template:Tech](Template_Tech), [Template:Box](Template_Box), [Template:Tip](Template_Tip), and [other boxes](Category_Boxes).)

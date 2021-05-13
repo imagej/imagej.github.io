@@ -16,7 +16,7 @@ of the numbered fiber outlines on a black background.
 ## Installation
 
 1. Download
-   [Cross-sectional-analysis.zip](/media/Cross-sectional-analysis.zip), unzip
+   [Cross-sectional-analysis.zip](/media/cross-sectional-analysis.zip), unzip
    it and locate `Cross_Sectional_Analyzer.jar`.
 
 2. Open the package contents of ImageJ, and navigate to `ImageJ/plugins/Filters`.

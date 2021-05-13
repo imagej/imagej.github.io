@@ -24,11 +24,11 @@ Supplementary videos demonstrating the performance of the method are available [
 {% capture title%}
 Example 2: Example for elastic alignment and montaging. 7 serial TEM sections of the neuropil of a *Drosophila melanogaster* first instar larva, detail at 100% pixel resolution. Image courtesy of {% include person id='acardona' %}.
 {% endcapture %}
-{% include thumbnail src='/media/Aligned-series-crop-512.gif' title=title %}
+{% include thumbnail src='/media/aligned-series-crop-512.gif' title=title %}
 {% capture title%}
 Example 1: Example for elastic alignment and montaging. 7 serial TEM sections of the neuropil of a *Drosophila melanogaster* first instar larva, downscaled by a factor of 12. Image courtesy of {% include person id='acardona' %}.
 {% endcapture %}
-{% include thumbnail src='/media/Aligned-series-512.gif' title=title %} We describe here our elastic alignment method for series or groups of overlapping 2d-images. The method is accessible through the plugins **Elastic Stack Alignment** and **Elastic Montage** and incorporated in the **[TrakEM2](/plugins/trakem2)** software. Applications are:
+{% include thumbnail src='/media/aligned-series-512.gif' title=title %} We describe here our elastic alignment method for series or groups of overlapping 2d-images. The method is accessible through the plugins **Elastic Stack Alignment** and **Elastic Montage** and incorporated in the **[TrakEM2](/plugins/trakem2)** software. Applications are:
 
 Elastic Montage  
 montaging mosaics from overlapping tiles where the tiles have non-linear relative deformation

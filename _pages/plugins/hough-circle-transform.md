@@ -199,7 +199,7 @@ NOTE: This option is only available in advanced mode. this value defaults to 1.0
 
 #### *Circle centroid(s) marked on the original image*
 
-{% include thumbnail src='/media/Mask Output.png' title=''%} This option will draw a cross-hair pattern on each centroid found within the image, overlaid on a mask of the original image. This output is especially useful for optimizing the Hough seach parameters. The header of the image contains the number of circles that were found within the image. If the inputted data was not a mask, it will calculate a mask with a threshold of 1.
+{% include thumbnail src='/media/mask-output.png' title=''%} This option will draw a cross-hair pattern on each centroid found within the image, overlaid on a mask of the original image. This output is especially useful for optimizing the Hough seach parameters. The header of the image contains the number of circles that were found within the image. If the inputted data was not a mask, it will calculate a mask with a threshold of 1.
 
 If the inputted data was a multi-frame stack, then the transform will return a stack, where the Z-dimension is each frame in the movie, and the header will show the number of circles found in each frame.
 

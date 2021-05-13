@@ -8,7 +8,7 @@ Resaving a dataset is a simple two step process:
 -   select existing dataset
 -   define resaving parameters
 
-![](/media/MVR resave1.png "MVR_resave1.png")
+![](/media/mvr-resave1.png "MVR_resave1.png")
 
 ![](/media/mvr-resave2.png "MVR_resave2.png")
 

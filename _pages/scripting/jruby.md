@@ -258,7 +258,7 @@ Hopefully it should be obvious how I derived the `projection_options` string in 
 
 Some example output:
 
-![Example anaglyph image](/media/Anaglyph.png "Example anaglyph image")
+![Example anaglyph image](/media/anaglyph.png "Example anaglyph image")
 
 ## Script Parameters
 

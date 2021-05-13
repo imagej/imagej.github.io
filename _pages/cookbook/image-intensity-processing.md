@@ -200,13 +200,13 @@ To fix an uneven background use the menu command {% include bc path='Process | S
     </tr>
     <tr class="even">
       <td style="border:none;padding:0.0194in;">
-        <p><img src="/media/Raw%20rolling%20ball%20back%20corr.jpg" title="fig:raw_rolling_ball_back_corr.jpg" alt="raw_rolling_ball_back_corr.jpg"></p>
+        <p><img src="/media/raw-rolling-ball-back-corr.jpg" title="fig:raw_rolling_ball_back_corr.jpg" alt="raw_rolling_ball_back_corr.jpg"></p>
       </td>
       <td style="border:none;padding:0.0194in;">
-        <p><img src="/media/Rolling%20ball%20back%20corr.jpg" title="fig:rolling_ball_back_corr.jpg" alt="rolling_ball_back_corr.jpg"></p>
+        <p><img src="/media/rolling-ball-back-corr.jpg" title="fig:rolling_ball_back_corr.jpg" alt="rolling_ball_back_corr.jpg"></p>
       </td>
       <td style="border:none;padding:0.0194in;">
-        <p><img src="/media/Processed%20rolling%20ball%20back%20corr.jpg" title="fig:processed_rolling_ball_back_corr.jpg" alt="processed_rolling_ball_back_corr.jpg"></p>
+        <p><img src="/media/processed-rolling-ball-back-corr.jpg" title="fig:processed_rolling_ball_back_corr.jpg" alt="processed_rolling_ball_back_corr.jpg"></p>
       </td>
     </tr>
   </tbody>
@@ -247,13 +247,13 @@ This macro, because it also works with stacks, can be used on time-courses with 
     </tr>
     <tr class="even">
       <td style="border:none;padding:0in;">
-        <p><img src="/media/Roi%20back%20corr%20before.gif" title="fig:roi_back_corr_before.gif" alt="roi_back_corr_before.gif"></p>
+        <p><img src="/media/roi-back-corr-before.gif" title="fig:roi_back_corr_before.gif" alt="roi_back_corr_before.gif"></p>
       </td>
       <td style="border:none;padding:0in;">
-        <p><img src="/media/Roi%20back%20corr%20during.gif" title="fig:roi_back_corr_during.gif" alt="roi_back_corr_during.gif"></p>
+        <p><img src="/media/roi-back-corr-during.gif" title="fig:roi_back_corr_during.gif" alt="roi_back_corr_during.gif"></p>
       </td>
       <td style="border:none;padding:0in;">
-        <p><img src="/media/Roi%20back%20corr%20after.gif" title="fig:roi_back_corr_after.gif" alt="roi_back_corr_after.gif"></p>
+        <p><img src="/media/roi-back-corr-after.gif" title="fig:roi_back_corr_after.gif" alt="roi_back_corr_after.gif"></p>
       </td>
     </tr>
   </tbody>
@@ -272,7 +272,7 @@ Use this technique on brightfield images. You can correct uneven illumination or
     <tr class="odd">
       <td>
         <figure>
-          <img src="/media/Flat%20field%20correction.gif" title="flat_field_correction.gif" alt="flat_field_correction.gif">
+          <img src="/media/flat-field-correction.gif" title="flat_field_correction.gif" alt="flat_field_correction.gif">
           <figcaption aria-hidden="true">
             flat_field_correction.gif
           </figcaption>

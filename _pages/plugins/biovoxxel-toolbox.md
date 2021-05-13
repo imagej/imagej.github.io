@@ -316,7 +316,7 @@ The *Shape* option enables a basic pre-selection of pixels from the kernel neigh
 
 In the image below the upper pannels show the original photograph and a version with artificial shot noise added. The lower pannels depict the noisy image after a median filter (radius=2) or after the Adaptive Filter (radius = 2 and tolerance set to 0.2) using a circle-like kernel.
 
-![](/media/AdaptiveFilter.png "AdaptiveFilter.png")
+![](/media/adaptivefilter.png "AdaptiveFilter.png")
 
 Output: The filter will be applied directly on the input image. It is undoable (by pressing \[z\]).
 

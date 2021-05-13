@@ -97,12 +97,12 @@ Note that the server port needs to be open.
 
 In order to connect to a BigDataServer from Fiji and view the data go to {% include bc path='Plugins | BigDataViewer | Browse BigDataServer'%}. You will be presented with the following dialog box:
 
-<img src="/media/Bdv-browse-bigdataserver-1.png" width="500"/>
+<img src="/media/bdv-browse-bigdataserver-1.png" width="500"/>
 
 Enter the URL (including port) of a BigDataServer. For example, the Drosophila timelapse dataset described in [BigDataViewer\_Example\_Datasets\#Remote\_HDF5](/plugins/bdv/example-datasets#remote-hdf5) is available through this address: [http://fly.mpi-cbg.de:8081](http://fly.mpi-cbg.de:8081). Click OK. The following window will pop up showing a list of datasets offered by the server:
 
-<img src="/media/Bdv-browse-bigdataserver-2.png" width="500"/>
+<img src="/media/bdv-browse-bigdataserver-2.png" width="500"/>
 
 In the example, the server offers only a single dataset called *Drosophila*. Double-clicking on a dataset in the list will launch it in the BigDataViewer.
 
-![](/media/Bdv-bdv-start.png "bdv-bdv-start.png")
+![](/media/bdv-bdv-start.png "bdv-bdv-start.png")

@@ -205,14 +205,14 @@ When using the "**Input/Output Menu**" from the toolbar, we have the possibility
   <tbody>
     <tr class="odd">
       <td>
-        <p>{% include thumbnail src='/media/bunwarpj-toolbar-IO-menu.png' title='bUnwarpJ toolbar with "Input/Output menu" button selected.'%}</p>
+        <p>{% include thumbnail src='/media/bunwarpj-toolbar-io-menu.png' title='bUnwarpJ toolbar with "Input/Output menu" button selected.'%}</p>
       </td>
     </tr>
   </tbody>
 </table>
 {:/}
 
-{% include thumbnail src='/media/bunwarpj-IO-menu.png' title='bUnwarpJ Input/Output menu.'%}
+{% include thumbnail src='/media/bunwarpj-io-menu.png' title='bUnwarpJ Input/Output menu.'%}
 
 In the last release, the plugin presents the following Input/Output options:
 
@@ -327,7 +327,7 @@ One important advantage of [bUnwarpJ](/plugins/bunwarpj) over the previous metho
 
 ### SIFT and MOPS plugin support
 
-{% include thumbnail src='/media/bunwarpj-lena-SIFT-landmarks-example.png' title='bUnwarpJ: example of SIFT correspondences converted to registration landmarks.'%}The last release of bUnwarpJ has compatibility with Stephan Saalfeld's plugin for automatic [ feature extraction](/plugins/feature-extraction) (implementations of SIFT and MOPS algorithms).
+{% include thumbnail src='/media/bunwarpj-lena-sift-landmarks-example.png' title='bUnwarpJ: example of SIFT correspondences converted to registration landmarks.'%}The last release of bUnwarpJ has compatibility with Stephan Saalfeld's plugin for automatic [ feature extraction](/plugins/feature-extraction) (implementations of SIFT and MOPS algorithms).
 
 An explanation of the parameters is [ here](/plugins/feature-extraction#parameters). This plugin is also integrated in Fiji.
 

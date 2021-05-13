@@ -11,7 +11,7 @@ The **MultiView Mode** can be accessed by clicking the "MultiView" button in the
 
 -   The views can be grouped by Illuminations or Tiles (they are grouped by default, but can be ungrouped by unticking the respective option at the bottom of the main window).
 
-![](/media/BigStitcher Overview 4.png "BigStitcher_Overview_4.png")
+![](/media/bigstitcher-overview-4.png "BigStitcher_Overview_4.png")
 
 ### The right-click menu
 

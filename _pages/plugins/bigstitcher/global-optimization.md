@@ -19,7 +19,7 @@ Furthermore, we apply a few tweaks to improve the results:
 
 The **simple mode** of global optimization requires only selection of an optimization strategy and no explicit setting of the threshold parameters. The simple global optimization is run automatically if you click through the **Stitching wizard** (in no-expert mode) or can be accessed from the main menu under {% include bc path='Optimize Globally And Apply Shift|Simple Mode'%}.
 
-<img src="/media/BigStitcher optimize simple1.png" width="600"/>
+<img src="/media/bigstitcher-optimize-simple1.png" width="600"/>
 
 The options available here are:
 

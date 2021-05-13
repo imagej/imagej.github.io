@@ -11,7 +11,7 @@ The 2015 [ImageJ User and Developer Conference](/events/Conference) complemented
 
 ## Location
 
-![ 250px \| left](/media/ WID.jpg " 250px | left")
+![ 250px \| left](/media/-wid.jpg " 250px | left")
 
 [H.F. DeLuca Forum](http://discovery.wisc.edu/home/town-center/apply-to-reserve-town-center-spaces/large-rooms/h-f-deluca-forum/h-f-deluca-forum.cmsx)  
 [Wisconsin Institutes for Discovery](http://discovery.wisc.edu/)  

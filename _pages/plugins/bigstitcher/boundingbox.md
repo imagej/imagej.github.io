@@ -23,7 +23,7 @@ First, you will be asked for the existing bounding box that you want to modify:
 
 In the next dialog, you can modify the bounding box by adjusting the sliders for the minima and maxima. The size and memory/disk space requirements of a fusion will also be previewed. Clicking **OK** will generate the new, modified Mounding Box.
 
-<img src="/media/BigStitcher BBox modify.png" width="600"/>
+<img src="/media/bigstitcher-bbox-modify.png" width="600"/>
 
 ### Define using the BigDataViewer interactively
 

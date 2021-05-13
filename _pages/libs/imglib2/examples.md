@@ -236,7 +236,7 @@ upper z plane (z-1)    center z plane (z=0)    lower z plane(z+1)
 
 Please note as well that if one would increase the radius of the `RectangleShape` to more than 1 (without at the same time changing the `View` on source that creates an inset border of exactly this one pixel), this example would fail as we would try to write image data outside of the defined boundary. `OutOfBoundsStrategies` which define how to handle such cases is discussed in example 5.
 
-<img src="/media/AllMinima.jpg" width="780"/> *Shows the result of the detection of local minima after the Gaussian blurring. (a) depicts the input image, (b) the blurred version (sigma=1) and (c) all local mimina drawn as circles with radius 1.*
+<img src="/media/allminima.jpg" width="780"/> *Shows the result of the detection of local minima after the Gaussian blurring. (a) depicts the input image, (b) the blurred version (sigma=1) and (c) all local mimina drawn as circles with radius 1.*
 
 {% include github-embed org='imglib' repo='imglib2-tutorials' branch='master'
                         path='src/main/java/Example4b.java' line-start='34' %}

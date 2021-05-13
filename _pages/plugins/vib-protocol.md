@@ -28,7 +28,7 @@ A configuration file stores all the settings for running the VIB Protocol on a p
 
 After that, a second dialog appears, which asks the user for all the necessary input:
 
-![](/media/VIB Protocol 2.png "VIB_Protocol_2.png")
+![](/media/vib-protocol-2.png "VIB_Protocol_2.png")
 
 The different fields have the following meaning:
 

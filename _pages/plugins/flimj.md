@@ -69,7 +69,7 @@ In the screenshots above,
 
 ### Fit settings
 
-<figure><img src="/media/FLIMJ fit settings.png" title="Options on the Settings pannel." width="200" alt="Options on the Settings pannel." /><figcaption aria-hidden="true">Options on the <strong>Settings</strong> pannel.</figcaption></figure>
+<figure><img src="/media/flimj-fit-settings.png" title="Options on the Settings pannel." width="200" alt="Options on the Settings pannel." /><figcaption aria-hidden="true">Options on the <strong>Settings</strong> pannel.</figcaption></figure>
 
 Sometimes you may want to fine-tune the fitting configurations. The **Settings** panel and the **Plot** pannel. The configurations include:
 
@@ -119,7 +119,7 @@ Sometimes you may want to fine-tune the fitting configurations. The **Settings**
 FLIMJ plugin currently only supports the selection of IRF from a single pixel in an [acceptable dataset](#Startup) that is taken during a standard IRF measurement procedure (such as {% include github org='flimlib' repo='flimj-ui' path='test\_files/urea.sdt' label='this one using urea crystals' %}). The steps are as follows:
 
 1.  Click on the drop-down menu, select *From file*; select the dataset file that contains the IRF.
-2.  In **Preview** panel, select *IRF Intensity* for the "Show" option (you may also select *Grayscale* for the "as" option to deactivate pseudocoloring):<img src="/media/FLIMJ irf show irf.png" title="fig:Choose IRF Intensity to enter IRF picking mode." width="200" alt="Choose IRF Intensity to enter IRF picking mode." />
+2.  In **Preview** panel, select *IRF Intensity* for the "Show" option (you may also select *Grayscale* for the "as" option to deactivate pseudocoloring):<img src="/media/flimj-irf-show-irf.png" title="fig:Choose IRF Intensity to enter IRF picking mode." width="200" alt="Choose IRF Intensity to enter IRF picking mode." />
 3.  Click on the image to select the candidate pixel and adjust the *Start* and *End* cursors in **Plot** pannel to crop out the section of interest (*IRF is plotted in green*):<img src="/media/flimj-irf-crop-irf.png" title="fig:Drag the cursors to crop IRF." width="350" alt="Drag the cursors to crop IRF." />
 4.  Exit the IRF picking mode by selecting other options for the "Show" in **Preview** panel and adjust the *Start* cursor to get a better fit.
 
@@ -131,7 +131,7 @@ When all settings are properly configured. Click on **Fit Dataset** button on th
 
 After the "pending" state ends, new options will be available as "Show" options in the **Preview** panel. Click on the options to view the fit results:
 
-<figure><img src="/media/FLIMJ fit dataset preview results show.png" title="Viewing the $$tau$$ (lifetime) parameter of the fitted dataset." width="220" alt="Viewing the $$tau$$ (lifetime) parameter of the fitted dataset." /><figcaption aria-hidden="true">Viewing the $$tau$$ (lifetime) parameter of the fitted dataset.</figcaption></figure>
+<figure><img src="/media/flimj-fit-dataset-preview-results-show.png" title="Viewing the $$tau$$ (lifetime) parameter of the fitted dataset." width="220" alt="Viewing the $$tau$$ (lifetime) parameter of the fitted dataset." /><figcaption aria-hidden="true">Viewing the $$tau$$ (lifetime) parameter of the fitted dataset.</figcaption></figure>
 
 You may also change the "as" option to specify how the results are rendered. Currently supported options are:
 

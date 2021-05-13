@@ -53,7 +53,7 @@ Start MaMuT on this dataset by browsing to {% include bc path='Plugins | MaMuT |
 
 A file explorer window opens. Browse to the `.xml` file of the BDV file pair. After a little while, the MaMuT main GUI window opens:
 
-<img src="/media/Bdv-MaMuT MainGUIWindow beginning.png" width="200"/>
+<img src="/media/bdv-mamut-mainguiwindow-beginning.png" width="200"/>
 
 If you get this, so far so good. This is the main window of the GUI. It is split in 3 tabs but we will just focus on the first one for now. It controls the display of the data, both for the image and for the annotations. It also used to launch Views of the data. Right now there is no annotation data. We started by opening a BigDataViewer file, which is now loaded. The next MaMuT viewer (presented in the next section) you will open with display this image data, as in a normal BigDataViewer.
 
@@ -270,7 +270,7 @@ If you are on a time-point not a multiple of the time-step, the next key-press w
 
 Below is an example from an actual annotation, peeking ahead the lineage visualizer we will describe in the next section. In this view, cells are arranged by lineage, time running from top to bottom. Time-points are lines of alternating color. You can see that except when cells are dividing or when there is an ambiguity, this user only annotated time-points multiples of 5. This leads to a sparser annotation, generated faster.
 
-<img src="/media/Bdv-MaMuT TrackSchemeStepwiseTimeBrowsing.png" width="500"/>
+<img src="/media/bdv-mamut-trackschemestepwisetimebrowsing.png" width="500"/>
 
 ### Display settings for tracks.
 
@@ -326,7 +326,7 @@ The keyboard can also be used:
 
 The top-left part of the TrackScheme window shows the outline of the graph. The blue square represents the current view and can be resized and moved around.
 
-<img src="/media/Bdv-MaMuT TrackSchemeOutline.png" width="500"/>
+<img src="/media/bdv-mamut-trackschemeoutline.png" width="500"/>
 
 ### Configuring TrackScheme look.
 
@@ -492,7 +492,7 @@ The **Record Movie** command will export a PNG capture of the viewer "as is". Al
 
 Below is an example obtained on the last time-point of the demo dataset. Notice that the exported image a flattened view of the data, as RGB images.
 
-![](/media/Bdv-MaMuTRecordMaxProjection.png "bdv-MaMuTRecordMaxProjection.png")
+![](/media/bdv-mamutrecordmaxprojection.png "bdv-MaMuTRecordMaxProjection.png")
 
 ### Exporting a track sub-volume.
 
@@ -819,7 +819,7 @@ Here is a list of all available commands.
 
 Here we recapitulate the default key-bindings for the MaMuT viewer. This image is also included in the help window of the MaMuT viewer.
 
-![](/media/Bdv-MaMuTKeyboardLayout.png "bdv-MaMuTKeyboardLayout.png")
+![](/media/bdv-mamutkeyboardlayout.png "bdv-MaMuTKeyboardLayout.png")
 
 ## TrackScheme key-bindings.
 

@@ -115,7 +115,7 @@ Once Wiscan has run, your output will be a series of images that can be stitched
 
 ## Generate the grid
 
-<figure><img src="/media/BasicGrid.png" title="BasicGrid.png" width="250" alt="BasicGrid.png" /><figcaption aria-hidden="true">BasicGrid.png</figcaption></figure>
+<figure><img src="/media/basicgrid.png" title="BasicGrid.png" width="250" alt="BasicGrid.png" /><figcaption aria-hidden="true">BasicGrid.png</figcaption></figure>
 
 ### The basic grid
 

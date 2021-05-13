@@ -66,10 +66,10 @@ Here is a step-by-step example of a successful GPU support installation:
 -   add `/PATH/TO/Fiji.app/lib/win64/tensorflow_jni.dll` to your `PATH` (here's a guide [how to set system variables](https://www.techjunkie.com/environment-variables-windows-10/))
 
 The variables you should have set are these two. Normally, CUDA does that for you when you install it.
-![System Environment Variables](../media/Tensorflow_gpu_win_envvars.png)
+![System Environment Variables](../media/tensorflow-gpu-win-envvars.png)
 
 As well as the following additions to your PATH system-variable.
-![PATH variable content](../media/Tensorflow_gpu_win_path.png)
+![PATH variable content](../media/tensorflow-gpu-win-path.png)
 
 ### 3.2 Hints for Linux
 

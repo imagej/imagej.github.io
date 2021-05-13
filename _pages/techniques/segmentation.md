@@ -7,7 +7,7 @@ categories: [Tutorials,Segmentation]
 
 {% include biginfo-box content='See [:Category:Segmentation](Category_Segmentation) for pages about image segmentation.' %} 
 
-{% include tip tip='See [this helpful workshop on Image Segmentation](/media/Arganda-Carreras-Segmentation-Bioimage-course-MDC-Berlin-2016.pdf) for another great overview of Segmentation!' %}
+{% include tip tip='See [this helpful workshop on Image Segmentation](/media/arganda-carreras-segmentation-bioimage-course-mdc-berlin-2016.pdf) for another great overview of Segmentation!' %}
 
 # Introduction
 
@@ -93,7 +93,7 @@ Preprocess the image using filters, to make later thresholding more effective. W
 
 ## Adjusting Threshold
 
-<figure><img src="/media/ Threshold tree.png" title="Tree ring sample image with a threshold applied for a B&amp;W image" width="300" alt="Tree ring sample image with a threshold applied for a B&amp;W image" /><figcaption aria-hidden="true">Tree ring sample image with a threshold applied for a B&amp;W image</figcaption></figure>
+<figure><img src="/media/-threshold-tree.png" title="Tree ring sample image with a threshold applied for a B&amp;W image" width="300" alt="Tree ring sample image with a threshold applied for a B&amp;W image" /><figcaption aria-hidden="true">Tree ring sample image with a threshold applied for a B&amp;W image</figcaption></figure>
 
 Ideally you want to use one of the auto-threshold methods, rather than manually tweaking, so that your result is reproducible later on the same data, and on multiple other datasets.
 
@@ -116,7 +116,7 @@ Ideally you want to use one of the auto-threshold methods, rather than manually 
 
 ## Selections
 
-<figure><img src="/media/ Selection tree.png" title="Selections on the mask" width="300" alt="Selections on the mask" /><figcaption aria-hidden="true">Selections on the mask</figcaption></figure>
+<figure><img src="/media/-selection-tree.png" title="Selections on the mask" width="300" alt="Selections on the mask" /><figcaption aria-hidden="true">Selections on the mask</figcaption></figure>
 
 ### Creating Selections
 
@@ -124,7 +124,7 @@ Ideally you want to use one of the auto-threshold methods, rather than manually 
 -   To deselect a portion of the image, select {% include key keys='Shift|left click' %}
     -   [More information](/ij/docs/guide/146-27.html#sub:Create-Selection)
 
-<figure><img src="/media/ Reverted tree.png" title="Selections on the reverted image" width="300" alt="Selections on the reverted image" /><figcaption aria-hidden="true">Selections on the reverted image</figcaption></figure>
+<figure><img src="/media/-reverted-tree.png" title="Selections on the reverted image" width="300" alt="Selections on the reverted image" /><figcaption aria-hidden="true">Selections on the reverted image</figcaption></figure>
 
 ### Transferring Selections
 
@@ -144,7 +144,7 @@ Do some numerical analysis on the selected data:
 
 # See also
 
--   The [Introduction to Image Segmentation using ImageJ/Fiji](/media/Arganda-Carreras-Segmentation-Bioimage-course-MDC-Berlin-2016.pdf) workshop.
+-   The [Introduction to Image Segmentation using ImageJ/Fiji](/media/arganda-carreras-segmentation-bioimage-course-mdc-berlin-2016.pdf) workshop.
 -   The [Segmentation with Fiji workshop slides](/presentations/fiji-segmentation/).
 -   [:Category:Segmentation](Category_Segmentation), a list of pages about image segmentation.
 

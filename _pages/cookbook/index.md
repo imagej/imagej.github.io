@@ -28,7 +28,7 @@ The Cookbook is based on the [Fiji](/software/fiji) distribution of ImageJ. {% i
       </td>
       <td>
         <figure>
-          <img src="/media/1%20Update%20Fiji.png" title="1_Update_Fiji.png" width="150" alt="1_Update_Fiji.png">
+          <img src="/media/1-update-fiji.png" title="1_Update_Fiji.png" width="150" alt="1_Update_Fiji.png">
           <figcaption aria-hidden="true">
             1_Update_Fiji.png
           </figcaption>
@@ -41,7 +41,7 @@ The Cookbook is based on the [Fiji](/software/fiji) distribution of ImageJ. {% i
       </td>
       <td>
         <figure>
-          <img src="/media/2%20Manage%20update%20sites.png" title="2_Manage_update_sites.png" width="250" alt="2_Manage_update_sites.png">
+          <img src="/media/2-manage-update-sites.png" title="2_Manage_update_sites.png" width="250" alt="2_Manage_update_sites.png">
           <figcaption aria-hidden="true">
             2_Manage_update_sites.png
           </figcaption>
@@ -54,7 +54,7 @@ The Cookbook is based on the [Fiji](/software/fiji) distribution of ImageJ. {% i
       </td>
       <td>
         <figure>
-          <img src="/media/3%20Enable%20cookbook.png" title="3_Enable_cookbook.png" width="250" alt="3_Enable_cookbook.png">
+          <img src="/media/3-enable-cookbook.png" title="3_Enable_cookbook.png" width="250" alt="3_Enable_cookbook.png">
           <figcaption aria-hidden="true">
             3_Enable_cookbook.png
           </figcaption>
@@ -73,7 +73,7 @@ The Cookbook is based on the [Fiji](/software/fiji) distribution of ImageJ. {% i
       </td>
       <td>
         <figure>
-          <img src="/media/4%20Apply%20changes.png" title="4_Apply_changes.png" width="250" alt="4_Apply_changes.png">
+          <img src="/media/4-apply-changes.png" title="4_Apply_changes.png" width="250" alt="4_Apply_changes.png">
           <figcaption aria-hidden="true">
             4_Apply_changes.png
           </figcaption>
@@ -92,7 +92,7 @@ The Cookbook is based on the [Fiji](/software/fiji) distribution of ImageJ. {% i
       </td>
       <td>
         <figure>
-          <img src="/media/5%20Use%20the%20Cookbook.png" title="5_Use_the_Cookbook.png" width="250" alt="5_Use_the_Cookbook.png">
+          <img src="/media/5-use-the-cookbook.png" title="5_Use_the_Cookbook.png" width="250" alt="5_Use_the_Cookbook.png">
           <figcaption aria-hidden="true">
             5_Use_the_Cookbook.png
           </figcaption>

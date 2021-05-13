@@ -124,7 +124,7 @@ Now save this as a single TIFF stack called CF\_1.tif by going to "{% include bc
 
 You can now start the tracer with {% include bc path='Plugins | Segmentation | Simple Neurite Tracer'%}. This may take some time, since there is a lot of data to load in to the 3D viewer. The result should look like this:
 
-<img src="/media/Diadem Cerebellar-6.png" width="750"/>
+<img src="/media/diadem-cerebellar-6.png" width="750"/>
 
 You may wish to adjust the transparency in the 3D viewer by selecting the image volume (left click on the image in the 3D viewer) and then going to "{% include bc path='Edit | Attributes | Change Transparency...'%}":
 

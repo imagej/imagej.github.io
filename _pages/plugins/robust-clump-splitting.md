@@ -87,7 +87,7 @@ The plugin supports different concavity pixel detection types. The chosen type s
 
 **Detect all concavity pixels:** If all concavity pixels should be detected, the plugin is looking for all local concavity pixels. Use it, if you have chosen the concavity region detection by convex hull.
 
-<img src="/media/AllPixels.png" width="250"/>
+<img src="/media/allpixels.png" width="250"/>
 
 **Detect all concavity pixels with largest concavity depth:** If all concavity pixel with largest concavity depth should be detected, the plugin is looking for the global concavity pixels of a concavity region. Use it, if you have choosen the local concavity region detection.
 

@@ -4,7 +4,7 @@ title: Interactive Fitting
 categories: [Plotting,Plugins]
 ---
 
-{% include info-box software='ImageJ1' name='Interactive\_Fitting' author='Fred Damen' filename='Interactive\_Fitting.jar' source=' [Interactive\_Fitting.zip](/media/Interactive_Fitting.zip)' released='1 April 2020' status='stable' category='[Plotting](Category_Plotting)' website='' %}
+{% include info-box software='ImageJ1' name='Interactive\_Fitting' author='Fred Damen' filename='Interactive\_Fitting.jar' source=' [Interactive\_Fitting.zip](/media/interactive-fitting.zip)' released='1 April 2020' status='stable' category='[Plotting](Category_Plotting)' website='' %}
 
 The Interactive\_Fitting plugin provides the ability to fit plotted data to an equation and plot the results on the same plot, and to be able to update the plot without refitting if you suspect there is a better set of parameters or a better equation. I had noticed that an ability to fit a plotted dataset using CurveFitter was added to the PlotWindow(Data&gt;&gt;Add fit...). I needed more functionality, so...
 
@@ -37,7 +37,7 @@ Interrogating plots and reacting as they change.
 
 ## Install
 
-Unzip [Interactive\_Fitting.zip](/media/Interactive_Fitting.zip) into ImageJ1 plugins {% include bc path="File|Show Folder|Plugins" %} or plugins/jars directories. Source code in jar file.  
+Unzip [Interactive\_Fitting.zip](/media/interactive-fitting.zip) into ImageJ1 plugins {% include bc path="File|Show Folder|Plugins" %} or plugins/jars directories. Source code in jar file.  
 {% include bc path="Plugins|Interactive|Interactive\_Plotting..." %}
 
 ## Licence

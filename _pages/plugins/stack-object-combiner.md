@@ -19,7 +19,7 @@ This plugin also need the [apache common maths](https://mvnrepository.com/artifa
 
 ## Presentation of the interface
 
-<figure><img src="/media/SOC Window.png" title="SOC_Window.png" width="1000" alt="SOC_Window.png" /><figcaption aria-hidden="true">SOC_Window.png</figcaption></figure>
+<figure><img src="/media/soc-window.png" title="SOC_Window.png" width="1000" alt="SOC_Window.png" /><figcaption aria-hidden="true">SOC_Window.png</figcaption></figure>
 
 Here is the Interface of Stack Object Combiner. The window contain several boxes, that allow you to set the different parameters and that give you an overview of the meshes.  
 

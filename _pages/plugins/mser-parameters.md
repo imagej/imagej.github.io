@@ -31,4 +31,4 @@ As an example we show in the animation below how during a collision including th
 
 MSER panel in the advanced mode appears as shown below, after clicking on "find endpoints" a next button would appear along with the prev button, allowing user to flip to the next panel.
 
-<img src="/media/Advanced3.png" width="300"/>
+<img src="/media/advanced3.png" width="300"/>

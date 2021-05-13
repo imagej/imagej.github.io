@@ -257,6 +257,6 @@ G. Table columns:
 
 H. Resulting image
 
-<img src="/media/English manual uz html e86db9c.png" title="fig:English_manual_uz_html_e86db9c.png" width="800" alt="English_manual_uz_html_e86db9c.png" />
+<img src="/media/english-manual-uz-html-e86db9c.png" title="fig:English_manual_uz_html_e86db9c.png" width="800" alt="English_manual_uz_html_e86db9c.png" />
 
 Test lsm image is available [here](http://pixie.bionet.nsc.ru/LSM_WORKER/example.lsm).

@@ -68,13 +68,13 @@ If you chose to **manually** select the views to fix or map back to, you will be
 
 When **registering timepoints individually**, you will be asked whether you want to fix/map back to the same view in each timepoint or select different ones for each time point.
 
-<img src="/media/BigStitcher Register fix same all tps.png" width="400"/>
+<img src="/media/bigstitcher-register-fix-same-all-tps.png" width="400"/>
 
 When manually selecting **views to fix**, you can choose to fix multiple views (optionally, this is repeated for each timepoint, see above).
 
 When **mapping back**, you can select a single view to map back to.
 
-<img src="/media/bigstitcher-register-fix-select.png" width="400"/><img src="/media/BigStitcher Register map back select.png" width="400"/>
+<img src="/media/bigstitcher-register-fix-select.png" width="400"/><img src="/media/bigstitcher-register-map-back-select.png" width="400"/>
 
   
 

@@ -4,7 +4,7 @@
             "name": "3Dscript",
             "description": "Create high-quality 3D/4D animations using a natural-language based syntax.",
             "link": "/plugins/3d-script",
-            "imgUrl": "/media/3Dscript-wiki-01.jpg"
+            "imgUrl": "/media/3dscript-wiki-01.jpg"
         },
         {
             "name": "Action Bar",
@@ -64,7 +64,7 @@
             "name": "FigureJ",
             "description": "Easy article figures with links to original images and processing history",
             "link": "/plugins/figurej",
-            "imgUrl": "/media/Figurej_poster.png"
+            "imgUrl": "/media/figurej-poster.png"
         },
         {
             "name": "MaMuT",
@@ -76,7 +76,7 @@
             "name": "Microscope Image Focus Quality Classifier",
             "description": "Predict image focus quality and certainty patch by patch without any user-specified parameters.",
             "link": "/plugins/microscope-focus-quality",
-            "imgUrl": "/media/Mifqc.png"
+            "imgUrl": "/media/mifqc.png"
         },
         {
             "name": "MorphoLibJ",
@@ -88,7 +88,7 @@
             "name": "Multi-Template Matching",
             "description": "Object recognition using user-provided template(s)",
             "link": "/plugins/multi-template-matching",
-            "imgUrl": "/media/Multi-Template-Matching-MontageGUI.png"
+            "imgUrl": "/media/multi-template-matching-montagegui.png"
         },
         {
             "name": "sciview",
@@ -106,7 +106,7 @@
             "name": "SNT",
             "description": "The ImageJ framework for neuronal reconstructions.",
             "link": "/plugins/snt",
-            "imgUrl": "/media/SimpleNeuriteTracer2.png"
+            "imgUrl": "/media/simpleneuritetracer2.png"
         },
         {
             "name": "TrackMate",

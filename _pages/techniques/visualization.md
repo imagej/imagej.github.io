@@ -131,7 +131,7 @@ Here we summarize some of the 3D visualization plugins in ImageJ.
       </td>
       <td>
         <figure>
-          <img src="/media/3D%20Viewer%20overview.png" title="3D_Viewer_overview.png" alt="3D_Viewer_overview.png">
+          <img src="/media/3d-viewer-overview.png" title="3D_Viewer_overview.png" alt="3D_Viewer_overview.png">
           <figcaption aria-hidden="true">
             3D_Viewer_overview.png
           </figcaption>
@@ -243,7 +243,7 @@ Here we summarize some of the 'big data' visualization plugins in ImageJ.
           </li>
         </ul>
       </td>
-      <td><img src="/media/Bdv.png" width="500"></td>
+      <td><img src="/media/bdv.png" width="500"></td>
     </tr>
     <tr class="odd">
       <td>
@@ -257,7 +257,7 @@ Here we summarize some of the 'big data' visualization plugins in ImageJ.
           <li>Interactive viewing and annotation of the data</li>
         </ul>
       </td>
-      <td><img src="/media/Spim%20application.png" width="500"></td>
+      <td><img src="/media/spim-application.png" width="500"></td>
     </tr>
   </tbody>
 </table>

@@ -25,7 +25,7 @@ With the sigma setting, you can adjust the expected amount of noise in the image
 
 To get more pleasing results, you can increase the number of samples (i.e., the number of random walks) per pixel. However, this will result in longer runtime.
 
-![](/media/Asd-1.jpg "Asd-1.jpg")
+![](/media/asd-1.jpg "Asd-1.jpg")
 
 ## Tutorial
 

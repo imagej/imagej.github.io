@@ -51,7 +51,7 @@ Straight line: A Straight line from the focus of the arbor to its most distal po
 Single point: A single point marking the focus of the arbor using the Point Selection Tool. With single point selections, only the center of analysis is defined. Thus, this option is suitable for [batch processing](#batch-processing) of images with different dimensions with undefined [Ending radius](#end-radius).  
 Multi-point selection:A Multi-point selection (multi-point counter) in which the first point marks the center of analysis while the remaining points mark (count) the number of primary branches required for the calculation of [ramification indices](#schoenen-sampled)). Suitable for cases in which [inference from starting radius](#primary-branches) is not effective.  
 
-![Three types of ROIs expected by the plugin when analyzing images directly. Left: Line defining center of analysis (focal point), hemisphere restriction and ending radius. Middle: Single point defining center of analysis. Right: Multi-point selection in which the first point defines the focal point while the remaining points (2 to 5) serve as counters for primary dendrites.](/media/ShollAnalysisStartupROIs.png "Three types of ROIs expected by the plugin when analyzing images directly. Left: Line defining center of analysis (focal point), hemisphere restriction and ending radius. Middle: Single point defining center of analysis. Right: Multi-point selection in which the first point defines the focal point while the remaining points (2 to 5) serve as counters for primary dendrites.")
+![Three types of ROIs expected by the plugin when analyzing images directly. Left: Line defining center of analysis (focal point), hemisphere restriction and ending radius. Middle: Single point defining center of analysis. Right: Multi-point selection in which the first point defines the focal point while the remaining points (2 to 5) serve as counters for primary dendrites.](/media/shollanalysisstartuprois.png "Three types of ROIs expected by the plugin when analyzing images directly. Left: Line defining center of analysis (focal point), hemisphere restriction and ending radius. Middle: Single point defining center of analysis. Right: Multi-point selection in which the first point defines the focal point while the remaining points (2 to 5) serve as counters for primary dendrites.")
 
 ### Cf. Segmentation
 
@@ -71,7 +71,7 @@ Press *More» Cf. Segmentation* to visually confirm which phase of the segmented
       <td>
         <center>
           <figure>
-            <img src="/media/CfSegmentation.png" width="700">
+            <img src="/media/cfsegmentation.png" width="700">
           </figure>
         </center>
       </td>
@@ -183,7 +183,7 @@ Please keep in mind that this is just a refinement feature, and you should not e
 
 #### Output Options
 
-<figure><img src="/media/ShollResultAsROIs.png" title="Intersection points and sampling shells can be retrieved as ROIs using {% include bc path='Image|Overlay|To ROI Manager' color='white'%}. Intersection points are placed at edges of detected clusters of foreground pixels, not their center." width="400" alt="Intersection points and sampling shells can be retrieved as ROIs using {% include bc path='Image|Overlay|To ROI Manager' color='white'%}. Intersection points are placed at edges of detected clusters of foreground pixels, not their center." /><figcaption aria-hidden="true">Intersection points and sampling shells can be retrieved as ROIs using {% include bc path='Image|Overlay|To ROI Manager' color='white'%}. Intersection points are placed at edges of detected clusters of foreground pixels, not their center.</figcaption></figure>
+<figure><img src="/media/shollresultasrois.png" title="Intersection points and sampling shells can be retrieved as ROIs using {% include bc path='Image|Overlay|To ROI Manager' color='white'%}. Intersection points are placed at edges of detected clusters of foreground pixels, not their center." width="400" alt="Intersection points and sampling shells can be retrieved as ROIs using {% include bc path='Image|Overlay|To ROI Manager' color='white'%}. Intersection points are placed at edges of detected clusters of foreground pixels, not their center." /><figcaption aria-hidden="true">Intersection points and sampling shells can be retrieved as ROIs using {% include bc path='Image|Overlay|To ROI Manager' color='white'%}. Intersection points are placed at edges of detected clusters of foreground pixels, not their center.</figcaption></figure>
 
 -   **Create intersections mask** - If checked, a 16/32–bit maximum intensity projection of the analyzed image is generated in which the measured arbor is painted according to its Sholl profile. The type of data (*Raw*, i.e., sampled or *Fitted*) is displayed in the image subtitle and can be specified in {% include bc path='Analysis|Sholl|Metrics & Options...' color='white'%} or using the *Options...* command in the *More»* drop-down menu.  
     NB: The default Lookup Table (LUT) used by the mask can be changed using {% include bc path='Image|Lookup Tables|' color='white'%}. The background color \[gray level: 0 (black) to 255 (white)\] can also be set in {% include bc path='Metrics & Options...' color='white'%}, or at any later point using {% include bc path='Image|Color|Edit Lut...' color='white'%} WYSIWYG versions (RGB images) of these masks can be otained using by pressing {% include key keys='Shift|F' %} ({% include bc path='Image|Overlay|Flatten' color='white'%}) or by running {% include bc path='Analyze|Tools|Calibration Bar...' color='white'%}
@@ -621,7 +621,7 @@ Note that the IJM built-in [call("class.method")](/ij/developer/macro/functions.
 
 ## Auxiliary Commands
 
-{% include bc path='Analyze|Sholl|Combine Sholl Profiles...' color='white'%}<img src="/media/CombineShollProfiles.png" title="fig:Screenshot of 15 files being processed by {% include bc path='Analyze|Sholl|Combine Sholl Profiles...' color='white'%} (v3.6.12)" width="400" alt="Screenshot of 15 files being processed by {% include bc path='Analyze|Sholl|Combine Sholl Profiles...' color='white'%} (v3.6.12)" />  
+{% include bc path='Analyze|Sholl|Combine Sholl Profiles...' color='white'%}<img src="/media/combineshollprofiles.png" title="fig:Screenshot of 15 files being processed by {% include bc path='Analyze|Sholl|Combine Sholl Profiles...' color='white'%} (v3.6.12)" width="400" alt="Screenshot of 15 files being processed by {% include bc path='Analyze|Sholl|Combine Sholl Profiles...' color='white'%} (v3.6.12)" />  
 
 Analysis tool that 1) Merges individual Sholl profiles into a single table and 2) Obtains the average profile (with standard deviation) of a group of cells.
 

@@ -33,7 +33,7 @@ If the BigDataViewer is open, you can immediately see the effects of your change
 
 Using **Specify Calibration**, you can change the voxel distance and length unit for the selected views.
 
-<img src="/media/BigStitcher registration calibration.png" width="500"/>
+<img src="/media/bigstitcher-registration-calibration.png" width="500"/>
 
 {% include warning-box content='As mentioned in the dialog, this will only change the metadata and leave computed registrations (including the scaling to isotropic x,y and z-resolution) as-is. Use **Apply Transformation(s)** and **Apply on top of Calibration** to update the isotropy scaling. This will remove other transformations however, so please make sure that the calibration is set correctly **before** starting any registration/stitching.' %}
 
@@ -95,7 +95,7 @@ Clicking this will open up a new window that listens for the **global transforma
 
 You can choose to **Ignore scaling factor from BigDataViewer** - this way, we will extract the sample rotation, but not any effects of zooming. Note that the scaling depends on the BDV window size, among other things, and you can achieve a zoom-out when fusing by using downsampling - we suggest to ignore the scaling unless you know what you are doing.
 
-<img src="/media/BigStitcher registration reorient.png" width="500"/>
+<img src="/media/bigstitcher-registration-reorient.png" width="500"/>
 
 Note that the identity transformation corresponds to an xy-View of the data in BDV. To avoid confusion, we advise to reset the view (by clicking {% include key keys='Shift|Z' %} in the BDV window) before you start the interactive reorientation.
 

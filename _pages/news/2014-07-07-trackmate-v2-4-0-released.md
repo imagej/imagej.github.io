@@ -22,7 +22,7 @@ We just released a new minor version of [TrackMate](/plugins/trackmate), that sh
 
 -   TrackMate has new logos and icons, made by Agnieszka Kawska @ [IlluScientia](http://www.illuscientia.com/).
 
-<figure><img src="/media/trackmate-Logo85x50-color-300p.png" title="TrackMate-Logo85x50-color-300p.png" width="600" alt="TrackMate-Logo85x50-color-300p.png" /><figcaption aria-hidden="true">TrackMate-Logo85x50-color-300p.png</figcaption></figure>
+<figure><img src="/media/trackmate-logo85x50-color-300p.png" title="TrackMate-Logo85x50-color-300p.png" width="600" alt="TrackMate-Logo85x50-color-300p.png" /><figcaption aria-hidden="true">TrackMate-Logo85x50-color-300p.png</figcaption></figure>
 
 ## Bugfixes
 

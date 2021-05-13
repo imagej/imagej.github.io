@@ -26,6 +26,6 @@ Then load the image you want to align with the template, and select a line (the 
 
 Now, start the plugin. If there was more than one other image with an active line selection, you would be asked which one is the template. Since there is only one, the plugin does not ask, but starts to work right away. The result looks like this:
 
-![](/media/Aligned-Blue-Parrot-Fish.jpg "Aligned-Blue-Parrot-Fish.jpg")
+![](/media/aligned-blue-parrot-fish.jpg "Aligned-Blue-Parrot-Fish.jpg")
 
   

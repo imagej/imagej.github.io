@@ -989,7 +989,7 @@ You have to start from a 2D+T image (nothing else) and a results table that cont
 
 So an ideal starting situation would like this:
 
-<img src="/media/trackmateScriptBeforeCapture.png" width="600"/>
+<img src="/media/trackmatescriptbeforecapture.png" width="600"/>
 
 this script will generate the following tracks:
 
