@@ -1402,7 +1402,7 @@ Rolling_Ball_Background_Subtraction :: plugins/rolling-ball-background-subtracti
 Ruby :: scripting/jruby
 Ruby_Scripting :: scripting/jruby
 Rumah :: <DELETED> (spam)
-SCIFIO :: software/scifio
+SCIFIO :: libs/scifio
 SEM_FEI_metadata_scale :: plugins/sem-fei-metadata-scale
 SEM_JOEL_Scale :: plugins/sem-joel-scale
 SIFT :: plugins/feature-extraction

@@ -426,7 +426,7 @@ ImageJ has benefitted from many hackathons over the years:
         <p>{% include person-list ids='axtimwalde|ctrueden|hinerm|tpietzsch|tomka|bhoeckendorf|fernandoamat|Phillip Keller' %}</p>
       </td>
       <td>
-        <p><a href="/software/scifio">SCIFIO</a> performance and generality</p>
+        <p><a href="/libs/scifio">SCIFIO</a> performance and generality</p>
       </td>
     </tr>
     <tr class="odd">

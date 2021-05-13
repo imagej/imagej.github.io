@@ -31,7 +31,7 @@ Isaac Newton attributed his success to {% include wikipedia title='Standing on t
 
 ## Interoperability
 
-One of the central goals of the [SciJava component collection](/develop/architecture) is to extend Java's mantra of "write once, run anywhere" in new directions: [ImageJ Ops](/libs/imagej-ops) for image processing algorithms, and [SCIFIO](/software/scifio) for scientific image I/O.
+One of the central goals of the [SciJava component collection](/develop/architecture) is to extend Java's mantra of "write once, run anywhere" in new directions: [ImageJ Ops](/libs/imagej-ops) for image processing algorithms, and [SCIFIO](/libs/scifio) for scientific image I/O.
 
 [ImageJ2](/software/imagej2) commands work not only in the [ImageJ](/about) user interface, but also from many [other applications](Category_Related_Software) in the [SciJava ecosystem](SciJava), including [CellProfiler](/software/cellprofiler), [OMERO](/software/omero), [KNIME](/software/knime) and [Alida](/software/alida).
 

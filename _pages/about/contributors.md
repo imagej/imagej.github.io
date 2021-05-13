@@ -76,7 +76,7 @@ categories: [community]
 -   {% include person id='StephanPreibisch' %}<sup>2,21</sup>
 -   {% include person id='axtimwalde' %}<sup>2,21</sup>
 
-### {% include logo content='SCIFIO' size='32px' %}[SCIFIO](/software/scifio)
+### {% include logo content='SCIFIO' size='32px' %}[SCIFIO](/libs/scifio)
 
 -   {% include person id='ctrueden' %}<sup>1</sup> (co-lead)
 -   {% include person id='hinerm' %}<sup>1</sup> (co-lead)

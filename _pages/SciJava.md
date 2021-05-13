@@ -16,7 +16,7 @@ The following component layers are part of the **[SciJava component collection](
 
 -   **SciJava** - foundational layer unspecific to image processing, including the [SciJava Common](/libs/scijava-common) shared library with powerful plugin framework and application container, and plugins built on it.
 -   [ImgLib2](/libs/imglib2) - core libraries for N-dimensional image processing.
--   [SCIFIO](/software/scifio) - core libraries for N-dimensional image I/O.
+-   [SCIFIO](/libs/scifio) - core libraries for N-dimensional image I/O.
 -   [ImageJ2](/software/imagej2) - core libraries and application for N-dimensional image processing.
 -   [Fiji](/software/fiji) - "batteries-included" distribution of ImageJ, bundling a lot of plugins which facilitate scientific image analysis.
 -   [BigDataViewer](/plugins/bdv) - re-slicing browser and Fiji plugin for terabyte-sized multi-view image sequences

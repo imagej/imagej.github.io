@@ -208,7 +208,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
         <p>{% include logo content='SCIFIO' %}</p>
       </td>
       <td>
-        <p><strong><a href="/software/scifio">SCIFIO</a></strong></p>
+        <p><strong><a href="/libs/scifio">SCIFIO</a></strong></p>
       </td>
       <td>
         <p>{% include person id='ctrueden' %}<br>

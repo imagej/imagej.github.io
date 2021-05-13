@@ -9,7 +9,7 @@ We are on track to release the first beta of ImageJ2 by the end of March. As sho
 The beta still has many bugs and limitations, but we have several substantial milestones:
 
 -   Support for most ImageJ1 plugins and macros
--   Import and export of all [SCIFIO](/software/scifio)-supported file formats
+-   Import and export of all [SCIFIO](/libs/scifio)-supported file formats
 -   Many new pixel types (thanks to [ImgLib2](/libs/imglib2))
 -   Multidimensional data beyond 5D (thanks to [ImgLib2](/libs/imglib2))
 -   Improved region of interest (ROI) tools

@@ -150,7 +150,7 @@ PlotData=
 -   Bugs
     -   Fixed equals/hashCode problems with [ImgLib2](/libs/imglib2) integer types ({% include github org='imglib' repo='imglib2' pr='111' label='imglib/imglib2\#111' %})
     -   Fixed a bug in the [SJC](/libs/scijava-common) PrefService, noticed by {% include person id='kephale' %} ({% include github org='scijava' repo='scijava-common' commit='ab2a9adae7a8e6e8785874a13bbf805c5f8e71fe' label='long-pref-keys' %})
-    -   Fixed [SCIFIO](/software/scifio) bug with DICOM format, noticed by {% include person id='kmader' %} ({% include github org='scifio' repo='scifio' pr='292' label='dicom-file-list-npe' %})
+    -   Fixed [SCIFIO](/libs/scifio) bug with DICOM format, noticed by {% include person id='kmader' %} ({% include github org='scifio' repo='scifio' pr='292' label='dicom-file-list-npe' %})
     -   Fixed bug when executing ops as commands, noticed by {% include person id='kephale' %} ({% include github org='imagej' repo='imagej-ops' commit='34b5523dfc051741a9ed69d2b5b9f97df24f2677' label='ops-as-commands' %})
     -   Investigated SJC bug in class loading, noticed by {% include person id='EikeHeinz' %}, but no solution yet ({% include github org='scijava' repo='scijava-common' issue='219' label='scijava/scijava-common\#219' %})
     -   Fixed Eclipse configuration to run enforcer only upon initial configuration ({% include github org='scijava' repo='pom-scijava' commit='022a7bea5ebbc5b81ffae7386a26eea8f8677e3f scijava/pom-scijava@022a7bea' %})

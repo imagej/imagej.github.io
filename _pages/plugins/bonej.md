@@ -829,7 +829,7 @@ You can read the code on Github and in every copy of BoneJ. If you turn on Image
 
 We have removed some plug-ins from BoneJ. *Neck shaft angle*, *Plateness* and *Structure model index* have been discontinued. *Interpolate ROIs*, [*Dilate 3D* and *Erode 3D*](/plugins/3d-binary-filters) come pre-packaged with ImageJ, so they are no longer included in BoneJ2.
 
-Support for *Kontron IMG*, *Scanco ISQ* and *Stratec pQCT* file formats has been moved to [SCIFIO](/software/scifio). Just run {% include bc path="Edit | Options | ImageJ2" %}, and check *Use SCIFIO when opening files*. When the option is enabled, these kinds of files can be opened from {% include bc path="File | Open" %} or dragging & dropping them like any other format.
+Support for *Kontron IMG*, *Scanco ISQ* and *Stratec pQCT* file formats has been moved to [SCIFIO](/libs/scifio). Just run {% include bc path="Edit | Options | ImageJ2" %}, and check *Use SCIFIO when opening files*. When the option is enabled, these kinds of files can be opened from {% include bc path="File | Open" %} or dragging & dropping them like any other format.
 
 *Distribution analysis* and other pQCT related tools can now be downloaded independently from the [PQCT](/plugins/pqct) update site.
 

@@ -20,7 +20,7 @@ Throughout this article, and elsewhere on this wiki, we use the following terms:
 -   A software **project** is a more general term referring to either a single component or a *collection* of related components. For example, the phrase "ImageJ project" refers to several components including [ImageJ Common](/libs/imagej-common), [ImageJ Ops](/libs/imagej-ops), [ImageJ Legacy](/libs/imagej-legacy) and the [ImageJ Updater](/plugins/updater).
 -   The **SciJava component collection** is the set of all components managed by the `pom-scijava` Bill of Materials. Such **SciJava components** reside across several different architectural layers. See "Bill of Materials" below for details.
 -   **SciJava core components** are SciJava components of the SciJava component layer itself. See "Organizational structure" below.
--   The **ImageJ software stack** is the set of components upon which [ImageJ](/about) is built. It includes components from the [SciJava](SciJava), [ImgLib2](/libs/imglib2), [ImageJ](/about) and [SCIFIO](/software/scifio) foundational layers; see "Organizational structure" and "Core libraries" below for details.
+-   The **ImageJ software stack** is the set of components upon which [ImageJ](/about) is built. It includes components from the [SciJava](SciJava), [ImgLib2](/libs/imglib2), [ImageJ](/about) and [SCIFIO](/libs/scifio) foundational layers; see "Organizational structure" and "Core libraries" below for details.
 
 # SciJava project structure
 
@@ -33,7 +33,7 @@ There are four organizations on [GitHub](https://github.com/) which form the bac
 -   [scijava](https://github.com/scijava) - for [SciJava](SciJava) core components: general-purpose, non-image-specific libraries.
 -   [imglib](https://github.com/imglib) - for [ImgLib2](/libs/imglib2) components: flexible N-dimensional image processing.
 -   [imagej](https://github.com/imagej) - for [ImageJ](/about) components: metadata-rich image library and application.
--   [scifio](https://github.com/scifio) - for [SCIFIO](/software/scifio) components: scientific image I/O and file formats.
+-   [scifio](https://github.com/scifio) - for [SCIFIO](/libs/scifio) components: scientific image I/O and file formats.
 
 Each organization contains several related components under its respective umbrella: a core library (see below) and several extensions. In social terms, each organization represents a collection of conceptually related components developed by a distinct [team of developers](/about/contributors).
 
@@ -146,7 +146,7 @@ All components in these organizations use [Maven](/develop/maven) for [project m
         <p>{% include logo content='SCIFIO' %}</p>
       </td>
       <td>
-        <p><a href="/software/scifio">SCIFIO</a></p>
+        <p><a href="/libs/scifio">SCIFIO</a></p>
       </td>
       <td>
         <p><a href="https://github.com/scifio">scifio</a></p>
@@ -225,7 +225,7 @@ The ImageJ software stack is composed of the following core libraries:
 -   [ImgLib2](/libs/imglib2) - The N-dimensional image data model.
 -   [ImageJ Common](/libs/imagej-common) - Metadata-rich image data structures and SciJava extensions.
 -   [ImageJ Ops](/libs/imagej-ops) - The framework for reusable image processing operations.
--   [SCIFIO](/software/scifio) - The framework for N-dimensional image I/O.
+-   [SCIFIO](/libs/scifio) - The framework for N-dimensional image I/O.
 
 These libraries form the basis of ImageJ-based software.
 

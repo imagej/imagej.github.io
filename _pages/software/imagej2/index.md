@@ -35,7 +35,7 @@ The [Fiji](/software/fiji) distribution of ImageJ has shipped with beta versions
 ImageJ2 provides a wealth of new features and capabilities:
 
 -   The [ImageJ Updater](/plugins/updater) makes it simple to keep your ImageJ up to date, and to add new plugins by enabling additional [Update Sites](/update-sites).
--   New and enhanced file format support via the [SCIFIO](/software/scifio) library ([see below](#improved-image-io-with-the-scifio-library)).
+-   New and enhanced file format support via the [SCIFIO](/libs/scifio) library ([see below](#improved-image-io-with-the-scifio-library)).
 -   More powerful [Script Editor](/scripting/script-editor) with support for several scripting languages.
 -   New commands:
     -   {% include bc path='Plugins | Debug | Dump Stack'%} for debugging when things {% include wikipedia title='Hang (computing)' text='hang'%}.
@@ -59,9 +59,9 @@ Developers can extend the capabilities of the search bar by writing [Searcher](h
 
 ### Improved image I/O with the SCIFIO library
 
-ImageJ2 uses the [SCIFIO](/software/scifio) library (SCientific Image Format Input and Output) by default for most image input tasks. You can change this behavior at any time by running {% include bc path='Edit | Options | ImageJ2'%} and modifying the *Use SCIFIO when opening files* option.
+ImageJ2 uses the [SCIFIO](/libs/scifio) library (SCientific Image Format Input and Output) by default for most image input tasks. You can change this behavior at any time by running {% include bc path='Edit | Options | ImageJ2'%} and modifying the *Use SCIFIO when opening files* option.
 
-For further details, see the [SCIFIO](/software/scifio) page.
+For further details, see the [SCIFIO](/libs/scifio) page.
 
 ### ImageJ2 is more than just an application
 

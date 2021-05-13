@@ -113,7 +113,7 @@ There are two different sorts of Maven artifacts (i.e., JAR files): releases and
 
 So what if you have multiple *.jar* files you want to build in the same project? Then these need to live in their own subdirectories and there needs to be a common parent POM, a so-called *aggregator* or *multi-module* POM (only this POM needs to have the SciJava POM as parent, of course). {% include github org='imagej' repo='tutorials' tag='577286474be8399eb38d30d66cf0c35ee50bd929' path='pom.xml\#L47-L62' label='Here is an example' %}. Basically, it is adding the <packaging>`pom`</packaging> entry at the top, as well as some subdirectory names to the <modules> section.
 
-Note, however, that most projects of the [SciJava component collection](/develop/architecture) (e.g., [SciJava](SciJava), [ImgLib2](/libs/imglib2), [SCIFIO](/software/scifio), [ImageJ](/about) and [Fiji](/software/fiji)) now structure each component as its own single-module project in its own Git repository, since using multi-module projects can complicate versioning.
+Note, however, that most projects of the [SciJava component collection](/develop/architecture) (e.g., [SciJava](SciJava), [ImgLib2](/libs/imglib2), [SCIFIO](/libs/scifio), [ImageJ](/about) and [Fiji](/software/fiji)) now structure each component as its own single-module project in its own Git repository, since using multi-module projects can complicate versioning.
 
 ## Convention over configuration
 

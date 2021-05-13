@@ -102,7 +102,7 @@ ImageJ is divided into three parts:
             <a href="/libs/imagej-legacy">ImageJ Legacy</a>
           </li>
           <li>
-            <a href="/software/scifio">SCIFIO</a>
+            <a href="/libs/scifio">SCIFIO</a>
           </li>
         </ul>
       </td>

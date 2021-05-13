@@ -37,7 +37,7 @@ You can find the dotfiles in the following repositories:
         {% include github org='imglib2' repo='dotfiles' label='imglib2/dotfiles' %}</p>
       </td>
       <td style="text-align: center; vertical-align: bottom">
-        <p><a href="/software/scifio"><img src="/media/scifio-icon.png" width="48px"></a><br>
+        <p><a href="/libs/scifio"><img src="/media/scifio-icon.png" width="48px"></a><br>
         {% include github org='scifio' repo='dotfiles' label='scifio/dotfiles' %}</p>
       </td>
       <td style="text-align: center; vertical-align: bottom">

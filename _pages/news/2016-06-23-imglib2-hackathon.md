@@ -99,7 +99,7 @@ Ultimately, we concluded it was too difficult to design such a data structure in
 
 We invented `MetaViews`, a class analogous to {% include javadoc project='ImgLib2' package='net/imglib2/view' class='Views' %} but for metadata elements. These elements are then aggregated into a `MetaSpace`, which provides mutators and accessors for working with the space. For example, you might attach a physical calibration to a spatial axis, or a custom variable-width timestamp to each point along the time axis.
 
-On top of this, we are actively developing a (tentatively named) `RichImage` structure, consisting of image pixels (e.g., a `RandomAccessible`) together with a `MetaSpace` which describes it. The [SCIFIO](/software/scifio) library will be updated to produce a `Dataset`, a collection of `RichImage` elements, which are populated with elements directly from the source data format.
+On top of this, we are actively developing a (tentatively named) `RichImage` structure, consisting of image pixels (e.g., a `RandomAccessible`) together with a `MetaSpace` which describes it. The [SCIFIO](/libs/scifio) library will be updated to produce a `Dataset`, a collection of `RichImage` elements, which are populated with elements directly from the source data format.
 
 ### Image enrichers
 

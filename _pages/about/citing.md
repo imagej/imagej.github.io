@@ -144,7 +144,7 @@ Thank you for your support.
         <p>{% include logo content='SCIFIO' %}</p>
       </td>
       <td>
-        <p><a href="/software/scifio">SCIFIO</a></p>
+        <p><a href="/libs/scifio">SCIFIO</a></p>
       </td>
       <td>
         <p>{% include publication content='SCIFIO' %}</p>

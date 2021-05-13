@@ -21,7 +21,7 @@ The ImageJ2 project as a whole is maintained by {% include person id='ctrueden' 
 
 ## SCIFIO
 
-[SCIFIO](/software/scifio) was funded by the [National Science Foundation](http://nsf.gov/), award number [1148362](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1148362). It was initially developed by {% include person id='hinerm' %} and {% include person id='ctrueden' %} of the [Eliceiri/LOCI lab](/orgs/loci).
+[SCIFIO](/libs/scifio) was funded by the [National Science Foundation](http://nsf.gov/), award number [1148362](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1148362). It was initially developed by {% include person id='hinerm' %} and {% include person id='ctrueden' %} of the [Eliceiri/LOCI lab](/orgs/loci).
 
 SCIFIO's development is now funded indirectly by various institutions as part of their respective research and development goals. SCIFIO as a whole is organized and maintained as part of the ImageJ2 effort by {% include person id='ctrueden' %} of the [Eliceiri/LOCI lab](/orgs/loci).
 

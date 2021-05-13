@@ -10,7 +10,7 @@ Today, the [ImageJ team](/about/contributors) is pleased to announce a new publi
 
 ## What's new
 
-First pass to reduce [SCIFIO](/software/scifio) overhead:
+First pass to reduce [SCIFIO](/libs/scifio) overhead:
 
 -   Fixed a bug resulting in 2-second timeouts when calling SCIFIO from a macro ([b83c41e5](https://github.com/imagej/imagej-legacy/commit/b83c41e532ff5e17c9cb57ee93188b2b4dae0bba)).
 -   Improved caching of common data (boosts performance throughout ImageJ2) ([7ae4103a...24051249](https://github.com/scijava/scijava-common/compare/7ae4103ac2d4503a6291c73dd3cd90f16656e821%5E...240512492ea754576819e681d1d79ce1db5270c3)).
