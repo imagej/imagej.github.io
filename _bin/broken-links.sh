@@ -7,6 +7,8 @@ test -d "$root" || {
   exit 1
 }
 
+#bundle exec htmlproofer --root-dir=_site --empty-alt-ignore --disable-external  --assume-extension --allow-hash-href --url-ignore '/\/(conference|ij|list-of-update-sites|mbf|presentations|tickets|workshops|images|list-of-update-sites)($|\/.*)/' 2> broken-links.txt
+
 prefixes="
 ij
 conference
