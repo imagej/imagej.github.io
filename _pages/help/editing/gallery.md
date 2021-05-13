@@ -9,10 +9,10 @@ description: This page demonstrates how to insert a gallery.
 ```
 {% include gallery content=
 "
-/images/pic01.jpg | Example 1
-/images/pic02.jpg | Example 2
-/images/pic03.jpg | Example 3
-/images/pic04.jpg | Example 4
+/media/site/pic01.jpg | Example 1
+/media/site/pic02.jpg | Example 2
+/media/site/pic03.jpg | Example 3
+/media/site/pic04.jpg | Example 4
 /media/imagej2-icon.png | ImageJ!
 "
 %}
@@ -21,10 +21,10 @@ description: This page demonstrates how to insert a gallery.
 
 {% include gallery content=
 "
-/images/pic01.jpg | Example 1
-/images/pic02.jpg | Example 2
-/images/pic03.jpg | Example 3
-/images/pic04.jpg | Example 4
+/media/site/pic01.jpg | Example 1
+/media/site/pic02.jpg | Example 2
+/media/site/pic03.jpg | Example 3
+/media/site/pic04.jpg | Example 4
 /media/imagej2-icon.png | ImageJ!
 "
 %}
