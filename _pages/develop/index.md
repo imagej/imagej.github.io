@@ -90,7 +90,7 @@ ImageJ is divided into three parts:
       <td>
         <ul>
           <li>
-            <a href="/plugins/imagej-common">ImageJ Common</a>
+            <a href="/libs/imagej-common">ImageJ Common</a>
           </li>
           <li>
             <a href="/libs/imagej-ops">ImageJ Ops</a>

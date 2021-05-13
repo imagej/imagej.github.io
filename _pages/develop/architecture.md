@@ -17,7 +17,7 @@ This page describes the technical structure of [SciJava](SciJava) and [ImageJ](/
 Throughout this article, and elsewhere on this wiki, we use the following terms:
 
 -   A software **component** is a program, such as a [plugin](/plugins), or a {% include wikipedia title='Library (computing)' text='library'%} of reusable functions. Components are typically designed to work together, and combined to form a {% include wikipedia title='Application software' text='software application'%} such as [ImageJ](/about). In [Maven](/develop/maven) terms, a component is a single *artifact*, typically a {% include wikipedia title="JAR (file format)" %}.
--   A software **project** is a more general term referring to either a single component or a *collection* of related components. For example, the phrase "ImageJ project" refers to several components including [ImageJ Common](/plugins/imagej-common), [ImageJ Ops](/libs/imagej-ops), [ImageJ Legacy](/libs/imagej-legacy) and the [ImageJ Updater](/plugins/updater).
+-   A software **project** is a more general term referring to either a single component or a *collection* of related components. For example, the phrase "ImageJ project" refers to several components including [ImageJ Common](/libs/imagej-common), [ImageJ Ops](/libs/imagej-ops), [ImageJ Legacy](/libs/imagej-legacy) and the [ImageJ Updater](/plugins/updater).
 -   The **SciJava component collection** is the set of all components managed by the `pom-scijava` Bill of Materials. Such **SciJava components** reside across several different architectural layers. See "Bill of Materials" below for details.
 -   **SciJava core components** are SciJava components of the SciJava component layer itself. See "Organizational structure" below.
 -   The **ImageJ software stack** is the set of components upon which [ImageJ](/about) is built. It includes components from the [SciJava](SciJava), [ImgLib2](/libs/imglib2), [ImageJ](/about) and [SCIFIO](/software/scifio) foundational layers; see "Organizational structure" and "Core libraries" below for details.
@@ -223,7 +223,7 @@ The ImageJ software stack is composed of the following core libraries:
 
 -   [SciJava Common](/libs/scijava-common) - The [SciJava](SciJava) application container and plugin framework.
 -   [ImgLib2](/libs/imglib2) - The N-dimensional image data model.
--   [ImageJ Common](/plugins/imagej-common) - Metadata-rich image data structures and SciJava extensions.
+-   [ImageJ Common](/libs/imagej-common) - Metadata-rich image data structures and SciJava extensions.
 -   [ImageJ Ops](/libs/imagej-ops) - The framework for reusable image processing operations.
 -   [SCIFIO](/software/scifio) - The framework for N-dimensional image I/O.
 

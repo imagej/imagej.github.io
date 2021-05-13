@@ -128,7 +128,7 @@ In particular when fixing a bug, it is a good idea to write a regression test *f
 
 ## Separation of concerns
 
-New features should be put into the appropriate component. E.g., when adding a general purpose utility, consider contributing to [SciJava Common](/libs/scijava-common) or [ImageJ Common](/plugins/imagej-common) instead of bundling it with your specific extension.
+New features should be put into the appropriate component. E.g., when adding a general purpose utility, consider contributing to [SciJava Common](/libs/scijava-common) or [ImageJ Common](/libs/imagej-common) instead of bundling it with your specific extension.
 
 # Examples
 

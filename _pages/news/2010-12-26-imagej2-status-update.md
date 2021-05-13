@@ -20,7 +20,7 @@ We have created {% include github org='imagej' repo='ij1-tests' label='extensive
 
 #### ImageJ2 architecture
 
-We have designed initial versions of several aspects of the ImageJ2 architecture, including the [image data model](/plugins/imagej-common), and [IJ2 plugin architecture](/develop/architecture#extensibility). At this point, everything is completely subject to change, with many things not yet ready for public review.
+We have designed initial versions of several aspects of the ImageJ2 architecture, including the [image data model](/libs/imagej-common), and [IJ2 plugin architecture](/develop/architecture#extensibility). At this point, everything is completely subject to change, with many things not yet ready for public review.
 
 #### ImageJ2 user interface
 

@@ -40,7 +40,7 @@ The disadvantage of the Composite image type is that this relatively recent Fiji
 
 Multi-channel experiments acquired on some systems are imported with the different channels interleaved, i.e. Slice 1 is Timepoint1-channel1 and Slice 2 is Timepoint1-channel2. The stack needs to be "De-interleaved" before it can be RGB-merged. This can be done with {% include bc path="Image|Stacks|Tools|Deinterleave" %} and entering the number of channels in the dialog (typically "2"). You can also choose to check a box for whether or not the source stacks should be kept. The two stacks can then be merged via: {% include bc path="Image|Color|RGB merge" %}.
 
-![](/media/ deinterleaver.jpg)
+![](/media/deinterleaver.jpg)
 
 ### RGB color merging
 
@@ -64,7 +64,7 @@ This also reduces 16-bit images to 8-bits (based on the current Brightness and C
 
 The menu command {% include bc path="Image|Color|Merge Channels..." %} opens a dialog to merge grey, red, green, blue, cyan, magenta, and yellow channels to a new composite image.
 
-![](/media/ merge channels.jpg)
+![](/media/merge-channels.jpg)
 
 ## Splitting multi-channel Images
 
@@ -74,7 +74,7 @@ Sometime a merged RGB image may need to be displayed along with the separate cha
 
 It works with single slice RGB images. A new RGB stack is created, channel 1 being the red channel; 2 the green and 3 the blue. The fourth slice is the merged slice. If a channel is empty (e.g. a red-green merged image will have no blue) then the slice is omitted. Then the plugin prompts you for the layout of the montage. You have the option to alter the width of the white border between the image panels. If the 'Pseudo-color 'option is off, each channel will be greyscale. If scale bar size is set to zero, no scale bar will be added.
 
-![](/media/ splitting multichannel pics.jpg)
+![](/media/splitting-multichannel-pics.jpg)
 
 ## Color Composite
 
@@ -86,17 +86,17 @@ Judicious use of LUTs can be very useful in highlighting the desired features of
 
 Traditional "Green" LUT
 
-![](/media/ traditional green lut.jpg)
+![](/media/traditional-green-lut.jpg)
 
 Enhanced "Green Hot" LUT
 
-![](/media/ enhanced green hot lut.jpg)
+![](/media/enhanced-green-hot-lut.jpg)
 
 Microtubules under nucleus now more apparent
 
 Have a play and see which LUT helps illustrates the features in your image.
 
-![](/media/ list of luts.jpg)
+![](/media/list-of-luts.jpg)
 
 Montage compiled from a stack generated using the menu commands {% include bc path="Image|Color|Display LUTs" %}.
 
@@ -104,6 +104,6 @@ Different LUTs are available via the menu commands {% include bc path="Image|Loo
 
 When using a non-standard LUT it may be useful to add a greyscale ramp so the user can judge which color represents which grey-scale value. A ramp can be added with the native function {% include bc path="Analyze|Tools|Calibration Bar..." %}. If there is no space for the ramp, try enlarging the image canvas with the menu command {% include bc path="Image|Adjust|Canvas Size..." %}.
 
-![](/media/ analyze calibration bar.jpg)
+![](/media/analyze-calibration-bar.jpg)
 
 {% include bc path="Analyze|Tools|Calibration Bar..." %}
