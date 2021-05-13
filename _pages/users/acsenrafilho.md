@@ -3,7 +3,7 @@ title: Antonio Carlos da Silva Senra Filho
 name: Antonio Carlos da Silva Senra Filho
 email: acsenrafilho@gmail.com
 affiliation: University of Sao Paulo, Brazil
-researchgate: Antonio\_Carlos\_Senra\_Filho
+researchgate: Antonio_Carlos_Senra_Filho
 scholar: 8WPyRPQAAAAJ
 website: http://dcm.ffclrp.usp.br/csim
 github: acsenrafilho

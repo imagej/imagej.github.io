@@ -7,7 +7,7 @@ affiliation:
 - Howard Hughes Medical Institute | https://www.hhmi.org/
 orcid: 0000-0001-6866-1540
 scholar: MOnW5FEAAAAJ
-researchgate: Tiago\_Ferreira51
+researchgate: Tiago_Ferreira51
 forum: tferr
 github: tferr
 loop: 141716

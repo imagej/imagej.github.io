@@ -1,6 +1,5 @@
 ---
 title: Curtis Rueden
-
 name: Curtis Rueden
 website: https://restlesscoder.net/
 gravatar: 63df759e2779af56fd050a968ff98d09
@@ -13,9 +12,9 @@ stackoverflow: 1207769/ctrueden
 openhub: ctrueden
 twitter: ctrueden
 linkedin: pub/curtis-rueden/15/372/52a
-researchgate: Curtis\_Rueden
+researchgate: Curtis_Rueden
 orcid: 0000-0001-7055-6707
-arxiv: rueden\_c\_1
+arxiv: rueden_c_1
 scholar: VqKfxYcAAAAJ
 ---
 
