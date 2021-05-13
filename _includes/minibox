@@ -1,5 +1,5 @@
 <div class="minibox" style="width:252px;">
-<img alt="" src="images/logos/{{include.logo}}" width="250" height="200">
+<img alt="" src="media/logos/{{include.logo}}" width="250" height="200">
 <div class="miniboxcaption">
 
 {{include.blurb}}

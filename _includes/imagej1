@@ -9,7 +9,7 @@
         <tbody>
             <tr>
                 <td>
-                    <img alt="Imagej1-icon.png" src="/images/logos/Imagej1-icon.png" width="64" height="64">
+                    <img alt="Imagej1-icon.png" src="/media/logos/Imagej1-icon.png" width="64" height="64">
                 </td>
                 <td>
                     {{info_content}}
