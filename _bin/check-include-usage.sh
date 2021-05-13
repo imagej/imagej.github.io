@@ -30,5 +30,5 @@ do
   grep -q TODO "$f" && echo "$s [UNFINISHED]" || echo "$s"
 done | sort -nr)
 echo "$output"
-unused=$(echo "$output" | grep '^\\s*0\\s*' | wc -l)
+unused=$(echo "$output" | grep '^ *0 *' | wc -l)
 exit $((invalid+unused))
