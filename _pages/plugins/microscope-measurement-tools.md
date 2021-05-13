@@ -5,14 +5,14 @@ categories: [Plugins,Registration]
 ---
 
 
-{% capture author%}
-{% include person id='Demis' %}
+{% capture demisjohn %}
+{% include person id='demisjohn' %}
 {% endcapture %}
 
 {% capture source%}
 {% include github org='demisjohn' repo='Microscope-Measurement-Tools' %}
 {% endcapture %}
-{% include info-box software='Fiji' name='Microscope Measurement Tools' author=author maintainer='Demis D. John (<demis.john@gmail.com>)' filename=' [Download from GitHub/Releases](https://github.com/demisjohn/Microscope-Measurement-Tools/releases)' source=source released='Sept. 24<sup>th</sup>, 2015' latest-version='2.3' status='beta' website=' [Microscope Measurement Tools at GitHub](https://github.com/demisjohn/Microscope-Measurement-Tools)' %} Recall saved calibrations for your microscope's measurement scale and create measurement annotations.
+{% include info-box software='Fiji' name='Microscope Measurement Tools' author=demisjohn maintainer=demisjohn filename=' [Download from GitHub/Releases](https://github.com/demisjohn/Microscope-Measurement-Tools/releases)' source=source released='Sept. 24<sup>th</sup>, 2015' latest-version='2.3' status='beta' website=' [Microscope Measurement Tools at GitHub](https://github.com/demisjohn/Microscope-Measurement-Tools)' %} Recall saved calibrations for your microscope's measurement scale and create measurement annotations.
 
 ## Description
 
@@ -127,7 +127,7 @@ The example adds a Calibration for a JEOL SEM, which automatically sets the scal
 
 ## Author(s)
 
-This simple python (jython) plugin was created by {% include person id='Demis' %}, 2015.
+This simple python (jython) plugin was created by {% include person id='demisjohn' %}, 2015.
 
 I used the following plugins as inspiration: [Correct\_3D\_drift](/plugins/correct-3d-drift) and [Microscope Scale](/ij/plugins/microscope-scale.html) (which sadly is no longer easily customizable).
 

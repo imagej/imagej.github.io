@@ -1953,7 +1953,7 @@ User:Sinverso :: users/sinverso
 User:Sjwest :: users/stevenjwest
 User:Skalarproduktraum :: users/skalarproduktraum
 User:Snownontrace :: users/snownontrace
-User:Sorzano :: users/Sorzano
+User:Sorzano :: users/cossorzano
 User:Spam :: <DELETED> (spam)
 User:SpheroideJ :: <DELETED> (empty)
 User:Stelfrich :: users/stelfrich

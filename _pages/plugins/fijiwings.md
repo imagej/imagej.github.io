@@ -7,11 +7,11 @@ categories: [Citable]
 <img src="/media/file.png" title="fig:File.png" width="500" alt="File.png" />{% include clear%}
 
 {% capture author%}
-Alex Dobens, {% include person id='Dobensl' %}
+Alex Dobens, {% include person id='leonard-dobens' %}
 {% endcapture %}
 
 {% capture maintainer%}
-{% include person id='Dobensl' %}
+{% include person id='leonard-dobens' %}
 {% endcapture %}
 {% include info-box content='Plugin' software='Fiji/ImageJ' name='FijiWings' author=author maintainer=maintainer filename='fiji-macosx.zip' source='https://sourceforge.net/projects/fijiwings/' status='stable' %}=== Introduction ===
 
