@@ -469,9 +469,10 @@ Data analysis tools:
 
 ## Pre-processing
 
-This section discusses some aspects that should be taken into account when segmenting neuronal arbors to be processed by *Sholl Analysis*. Since *image segmentation* (i.e., the partitioning of images into analyzable parts) is vulnerable to noise and background fluorescence, it is not possible to generalize universal routines that efficiently binarize grayscale images. This means that any procedure that tries to appropriately describe the original fluorescence image with a binary mask must be tailored to the characteristics of individual datasets. As mentioned in [Complementary Tools](#complementary-tools), several routines listed here as distributed through the [BAR](/plugins/bar) {% include list-of-update-sites content='update site' %}. <span id="noise"></span>
+This section discusses some aspects that should be taken into account when segmenting neuronal arbors to be processed by *Sholl Analysis*. Since *image segmentation* (i.e., the partitioning of images into analyzable parts) is vulnerable to noise and background fluorescence, it is not possible to generalize universal routines that efficiently binarize grayscale images. This means that any procedure that tries to appropriately describe the original fluorescence image with a binary mask must be tailored to the characteristics of individual datasets. As mentioned in [Complementary Tools](#complementary-tools), several routines listed here as distributed through the [BAR](/plugins/bar) {% include list-of-update-sites content='update site' %}.
 
 #### Noise  
+
 Noise can be mitigated through the usage of processing filters, specially edge-preserving ones. Examples:
 
 -   [Rolling Ball](/plugins/rolling-ball-background-subtraction) or "Top hat" filters, e.g., {% include bc path="Process | Subtract Background..." %}
@@ -481,17 +482,15 @@ Noise can be mitigated through the usage of processing filters, specially edge-p
 -   Shen-Castan Edge Detector ([BAR](/plugins/bar) {% include list-of-update-sites content='update site' %}), {% include bc path="BAR | Segmentation |" %}
 -   Frequency filters, e.g., {% include bc path="Process | FFT | Bandpass Filter..." %}
 
-<span id="uneven-illumination"></span>
-
 #### Uneven Illumination  
+
 Uneven illumination problems, typically associated with [wide field microscopy](http://imagejdocu.tudor.lu/doku.php?id=howto:working:how_to_correct_background_illumination_in_brightfield_microscopy), do occur in confocal microscopy when signal from deep layers of the tissue is not captured as bright as with superficial layers. This signal attenuation along the Z-axis will generate a shaded gradient across the stack that [histogram-based segmentation](#automated-segmentation) will need to take into account. While these problems are better tackled during acquisition (e.g., using laser ramping), it is possible to mitigate this effect using histogram-normalization techniques. Examples:
 
 -   [Bleach Correction](/plugins/bleach-correction), {% include bc path="Image | Adjust |" %}
 -   [Attenuation correction](http://imagejdocu.tudor.lu/doku.php?id=plugin:stacks:attenuation_correction:start)
 
-<span id="automated-segmentation"></span>
-
 #### Automated Segmentation  
+
 It is possible to adopt more sophisticated [segmentation algorithms](Category_Segmentation) when [global thresholding methods](/plugins/auto-threshold) do not yield satisfactory results. Examples:
 
 -   [Local Threshold](/plugins/auto-local-threshold), {% include bc path="Image | Adjust |" %}
@@ -500,9 +499,8 @@ It is possible to adopt more sophisticated [segmentation algorithms](Category_Se
 -   [Morphological Segmentation](/plugins/morphological-segmentation) (IJPB-plugins {% include list-of-update-sites content='update site' %}), {% include bc path="Plugins | Segmentation |" %}
 -   [Squassh](/plugins/squassh), split-Bregman Image Segmentation (Segmentation and Quantification of Sub-cellular Shapes, MOSAIC ToolSuite {% include list-of-update-sites content='update site' %}), , {% include bc path="Plugins | Mosaic | Segmentation |" %}
 
-<span id="semi-automated-segmentation"></span>
-
 #### Semi-Automated Segmentation  
+
 Object detection and image segmentation in images with poor signal-to-noise will likely require decisions taken by a human operator. This is frequently done using hand-crafted workflows using either ImageJ's built-in tools or external add ons. Examples:
 
 -   [Blow/Lasso Tool](/plugins/lasso-and-blow-tool), {% include bc path="Plugins | Segmentation |" %}
