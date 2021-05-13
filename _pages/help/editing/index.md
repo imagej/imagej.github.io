@@ -13,7 +13,7 @@ If you do not need to create a new page and would like to make changes to an exi
 ## Creating a new page
 <br>
 
-{% include image-right name="create-page" image-path="/images/readme/create-page-etw.png" %}
+{% include image-right name="create-page" image-path="/media/help/create-page-etw.png" %}
 
 <br>
 
@@ -22,7 +22,7 @@ Click `Add file` then  `Create new file` from the drop-down.
 
 2. Add a name for your file. **Note: this is not the page title;** the page title will be applied in the next section, front matter. File names should be lowercase, avoid symbols, and contain no spaces (use underscores or dashes instead, `_` `-`).
 
-{% include image-right name="name-your-file" image-path="/images/readme/name-your-file.png" classes="grey-border" %}
+{% include image-right name="name-your-file" image-path="/media/help/name-your-file.png" classes="grey-border" %}
 
 ## Add the page's *front matter*
 The *front matter* precedes the content of your page, and sets several parameters that help setup your page within the repository. Without the front matter, your page will not render correctly.

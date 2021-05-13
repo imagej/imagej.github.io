@@ -12,12 +12,12 @@ Images can be added with an accompanying legend text by including `figure-` foll
 
 {% raw %}
 ```
-{% include figure-left name="spiral left" image-path="/images/readme/spirals.png" content="**Figure 1**: This is a left figure." %}
+{% include figure-left name="spiral left" image-path="/media/help/spirals.png" content="**Figure 1**: This is a left figure." %}
 
 ```
 {% endraw %}
 
-{% include figure-left name="place holder image" image-path="/images/readme/spirals.png" content="**Figure 1**: This is a left figure." %}
+{% include figure-left name="place holder image" image-path="/media/help/spirals.png" content="**Figure 1**: This is a left figure." %}
 
 Lorem ipsum dolor sit amet, qui possit aeterno denique ea, te usu affert consequuntur, vix in utinam mentitum reformidans. Sed ea vidisse eripuit aliquid, no usu ullum dictas, an epicurei maluisset vix. Ne posse virtute impedit duo. Eos homero euripidis honestatis no.
 
@@ -35,11 +35,11 @@ Or to the right of the text.
 
 {% raw %}
 ```
-{% include figure-right name="place holder image" image-path="/images/readme/spirals.png" content="**Figure 2** : This is a right figure." %}
+{% include figure-right name="place holder image" image-path="/media/help/spirals.png" content="**Figure 2** : This is a right figure." %}
 ```
 {% endraw %}
 
-{% include figure-right name="place holder image" image-path="/images/readme/spirals.png" content="**Figure 2** : This is a right figure." %}
+{% include figure-right name="place holder image" image-path="/media/help/spirals.png" content="**Figure 2** : This is a right figure." %}
 
 Lorem ipsum dolor sit amet, qui possit aeterno denique ea, te usu affert consequuntur, vix in utinam mentitum reformidans. Sed ea vidisse eripuit aliquid, no usu ullum dictas, an epicurei maluisset vix. Ne posse virtute impedit duo. Eos homero euripidis honestatis no.
 
