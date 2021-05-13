@@ -16,7 +16,7 @@ section: Learn:Supported Platforms
 
 # Installation
 
-See also the [Java 8](/news/2016-05-10_-_ImageJ_HOWTO_-_Java_8,_Java_6,_Java_3D) page for OS-X-specific issues.
+See also the [Java 8](/news/2016-05-10-imagej-howto-java-8-java-6-java-3d) page for OS-X-specific issues.
 
 # Troubleshooting
 

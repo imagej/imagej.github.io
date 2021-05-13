@@ -48,7 +48,7 @@ categories: [community]
 </div>
 
 <div style="padding-right: 1em" markdown=1>
-### {% include logo content='Fiji' size='32px' %}[Fiji](/fiji)
+### {% include logo content='Fiji' size='32px' %}[Fiji](/software/fiji)
 
 -   {% include person id='ctrueden' %}<sup>1</sup> (lead)
 -   {% include person id='tinevez' %}<sup>12</sup>
@@ -70,7 +70,7 @@ categories: [community]
 </div>
 
 <div style="padding-right: 1em" markdown=1>
-### {% include logo content='ImgLib2' size='32px' %}[ImgLib2](/imglib2)
+### {% include logo content='ImgLib2' size='32px' %}[ImgLib2](/libs/imglib2)
 
 -   {% include person id='tpietzsch' %}<sup>2,3</sup> (lead)
 -   {% include person id='StephanPreibisch' %}<sup>2,21</sup>

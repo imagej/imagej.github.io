@@ -9,4 +9,4 @@ scholar: Iu-PrGkAAAAJ
 ---
 
 Pavel Tomancak is a group leader at MPI-CBG who studies Drosophila.
-He is also the godfather of [Fiji](/fiji)!
+He is also the godfather of [Fiji](/software/fiji)!

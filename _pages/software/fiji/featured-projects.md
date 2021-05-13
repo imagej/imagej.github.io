@@ -48,7 +48,7 @@ Analysis
 
 -   [Skeletons and tree analysis](Category_Skeleton)
 
-[ImgLib2](/imglib2)  
+[ImgLib2](/libs/imglib2)  
 
 -   Generic and extensible *n*-dimensional image processing library for Java.
 

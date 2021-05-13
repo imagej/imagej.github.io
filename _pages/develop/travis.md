@@ -19,7 +19,7 @@ section: Development:Tools
 
 # Automatic Deployment of Maven Artifacts
 
-Deploying your library to a [Maven](/develop/maven) repository makes it available for other developers. It is also a [contribution requirement for the Fiji project](/fiji/contribution-requirements).
+Deploying your library to a [Maven](/develop/maven) repository makes it available for other developers. It is also a [contribution requirement for the Fiji project](/software/fiji/contribution-requirements).
 
 ## Requirements
 

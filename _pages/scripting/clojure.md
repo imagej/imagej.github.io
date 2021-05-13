@@ -470,7 +470,7 @@ The above works with both single images and stacks.
 
 ## Manipulate images using ImgLib
 
-With [Imglib](/imglib1), pixels are stored in native arrays of primitives such as int, float, double, etc. (or other more interesting forms, such as [Shape](http://download.oracle.com/javase/1.5.0/docs/api/java/awt/Shape.html). Such pixels are accessed with intermediate proxy objects that the JIT is able to completely remove out of the way.
+With [Imglib](/libs/imglib1), pixels are stored in native arrays of primitives such as int, float, double, etc. (or other more interesting forms, such as [Shape](http://download.oracle.com/javase/1.5.0/docs/api/java/awt/Shape.html). Such pixels are accessed with intermediate proxy objects that the JIT is able to completely remove out of the way.
 
 From Clojure, there are many ways in which to access the pixels. Here we list some examples of the pixels accessed as a Collection of accessor [Type](https://fiji.sc/javadoc/mpicbg/imglib/type/Type.html) objects.
 

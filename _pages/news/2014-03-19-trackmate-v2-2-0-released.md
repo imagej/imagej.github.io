@@ -18,7 +18,7 @@ Version 2.2.0 focuses mainly on extendability, tracking performance and detectio
 
 <!-- -->
 
--   We also took the chance to rewrite all the detectors from scratch, using the latest development in [ImgLib2](/imglib2). This prompted **major performance improvement for the detection process**. Here are the results of a quick benchmark:
+-   We also took the chance to rewrite all the detectors from scratch, using the latest development in [ImgLib2](/libs/imglib2). This prompted **major performance improvement for the detection process**. Here are the results of a quick benchmark:
 
 | Detector                   | v2.1.1 | v2.2.0 | speedup factor |
 |----------------------------|--------|--------|----------------|

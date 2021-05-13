@@ -10,7 +10,7 @@ section: Help:Update Sites
 
 ## Introduction
 
-This tutorial explains how to upload changes to core [ImageJ](/about) and [Fiji](/fiji) libraries.
+This tutorial explains how to upload changes to core [ImageJ](/about) and [Fiji](/software/fiji) libraries.
 
 The typical workflow is:
 

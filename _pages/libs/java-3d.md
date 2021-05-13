@@ -9,7 +9,7 @@ title: Java 3D
 
 The Java 3D project, originally developed at Sun (now Oracle), has been abandoned for several years in favor of [JavaFX 3D](https://docs.oracle.com/javase/8/javafx/graphics-tutorial/javafx-3d-graphics.htm). However, it has been adopted by the [JogAmp](https://jogamp.org/) community, and is now maintained there—though no longer under active development.
 
-From the perspective of new features, Java 3D is essentially a dead technology. The future of 3D visualization in ImageJ is the [SciView](/plugins/sciview) plugin. But it will be a lot of work to make SciView comparable to—and eventually better than—3D Viewer, so the ImageJ and [Fiji](/fiji) teams are still exploring the best ways to proceed here.
+From the perspective of new features, Java 3D is essentially a dead technology. The future of 3D visualization in ImageJ is the [SciView](/plugins/sciview) plugin. But it will be a lot of work to make SciView comparable to—and eventually better than—3D Viewer, so the ImageJ and [Fiji](/software/fiji) teams are still exploring the best ways to proceed here.
 
 ## Versions of Java 3D
 
@@ -23,10 +23,10 @@ It works with Java 6, but:
 -   It does not work with Java 7 or 8 on macOS.
 -   It does not work with Java 8 (or 7?) on some Windows systems.
 
-The Java 6 version of ImageJ works with Java 3D 1.5.2, by launching the 3D Viewer and allowing it to automatically install Java 3D; see [this page](/news/2016-05-10_-_ImageJ_HOWTO_-_Java_8,_Java_6,_Java_3D) for further details.
+The Java 6 version of ImageJ works with Java 3D 1.5.2, by launching the 3D Viewer and allowing it to automatically install Java 3D; see [this page](/news/2016-05-10-imagej-howto-java-8-java-6-java-3d) for further details.
 
 ### Java 3D 1.6
 
 Java 3D 1.6 is the community version maintained by JogAmp. It was rewritten to work on top of {% include wikipedia title='Java OpenGL' text='JOGL'%}, and requires Java 7 or newer.
 
-The Java 8 version of ImageJ includes Java 3D 1.6; see [this page](/news/2016-05-10_-_ImageJ_HOWTO_-_Java_8,_Java_6,_Java_3D) for further details.
+The Java 8 version of ImageJ includes Java 3D 1.6; see [this page](/news/2016-05-10-imagej-howto-java-8-java-6-java-3d) for further details.

@@ -35,7 +35,7 @@ The reslice window is drawn. Now change the roi shape or move it with the mouse.
 
 ## Scripting
 
-It is possible to call and control this plugin from other plugin or scripts. Here is a script example for use with [Fiji](/fiji).
+It is possible to call and control this plugin from other plugin or scripts. Here is a script example for use with [Fiji](/software/fiji).
 
 ```python
 '''

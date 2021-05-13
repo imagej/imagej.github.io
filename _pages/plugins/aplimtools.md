@@ -117,7 +117,7 @@ A window appear, that let you explore your data clicking on your images. Control
 
 ## Software dependencies acknowledgements
 
--   Johannes Schindelin et al for [Fiji](/fiji) (Schindelin et al., 2012)
+-   Johannes Schindelin et al for [Fiji](/software/fiji) (Schindelin et al., 2012)
 -   Karl Schmidt and Curtis Rueden for tips seen in the MRI Analysis Calculator and in the CurveFitters
 
   

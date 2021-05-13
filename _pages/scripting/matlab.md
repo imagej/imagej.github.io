@@ -260,7 +260,7 @@ The startup process automatically injects the ImageJ classpath into the [MATLAB]
 #### Solution to `IJM.show(name)` issues
 
 -   Until someone can fix `IJM.show(name)` properly, consider using [`copytoImagePlus`](https://github.com/kouichi-c-nakamura/copytoImagePlus) MATLAB function instead. It solves all the issues of `IJM.show(name)` descrived above and create an ImagePlus hyperstack. See the example of a 5D Hyperstack below.
--   `copytoImg` and `copytoImgPlus` MATLAB functions are also available from `Fiji.app/scripts` folder to allow you convert a MATLAB array to ImageJ2 (ImgLib2) Img and ImgPlus objects, respectively. See also [ this page](/imglib2/matlab).
+-   `copytoImg` and `copytoImgPlus` MATLAB functions are also available from `Fiji.app/scripts` folder to allow you convert a MATLAB array to ImageJ2 (ImgLib2) Img and ImgPlus objects, respectively. See also [ this page](/libs/imglib2/matlab).
 
 ### Examples
 
@@ -366,7 +366,7 @@ TODO VIMEO WIDGET
 
 # See also
 
--   [Creating Imglib2 images in MATLAB](/imglib2/matlab)
+-   [Creating Imglib2 images in MATLAB](/libs/imglib2/matlab)
 -   [Using TrackMate from MATLAB](/plugins/trackmate/using-from-matlab)
 -   [Analyzing TrackMate results with MATLAB](/plugins/trackmate/analyzing-results-with-matlab)
 -   [Comparison of Matlab functions and Ops](/libs/imagej-ops/comparison-with-matlab)

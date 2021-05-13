@@ -6,7 +6,7 @@ author: test author
 
 Here you can [download](https://downloads.imagej.net/ImageJ2-20160205.zip) an "all platforms" version of ImageJ, without a bundled Java or extra extensions.
 
-{% include info-box content='Unfortunately, due to the ongoing transition from Java 6 to Java 8, this download of "plain ImageJ2" cannot currently be updated to the latest Java-8-compatible version. See the [Java 8](/news/2016-05-10_-_ImageJ_HOWTO_-_Java_8,_Java_6,_Java_3D) page for details. For the time being, we recommend [using the Fiji distribution of ImageJ](/fiji/downloads) to stay current with updates.' %}
+{% include info-box content='Unfortunately, due to the ongoing transition from Java 6 to Java 8, this download of "plain ImageJ2" cannot currently be updated to the latest Java-8-compatible version. See the [Java 8](/news/2016-05-10_-_ImageJ_HOWTO_-_Java_8,_Java_6,_Java_3D) page for details. For the time being, we recommend [using the Fiji distribution of ImageJ](/software/fiji/downloads) to stay current with updates.' %}
 
 <div style="width: 540px">
 
@@ -30,8 +30,8 @@ These downloads bundle ImageJ with a curated collection of plugins pre-installed
 
 <div style="float: left; padding: 1em; text-align:center; font-size:1.5em" markdown="1">
 
-<a href="/fiji/downloads"><img src="/media/fiji-icon.png" height="96px"/></a>  
-[Fiji](/fiji/downloads)
+<a href="/software/fiji/downloads"><img src="/media/fiji-icon.png" height="96px"/></a>  
+[Fiji](/software/fiji/downloads)
 
 </div>
 

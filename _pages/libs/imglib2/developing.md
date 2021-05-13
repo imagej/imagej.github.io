@@ -10,7 +10,7 @@ categories: [ImgLib,Tutorials,Development]
 
 ## Introduction
 
-The [ImgLib2](/imglib2) library uses [Maven](/develop/maven) to manage project dependencies. One advantage of this approach is nice integration with various development environments ([IDEs](/develop/ides)).
+The [ImgLib2](/libs/imglib2) library uses [Maven](/develop/maven) to manage project dependencies. One advantage of this approach is nice integration with various development environments ([IDEs](/develop/ides)).
 
 Because people tend to have differing IDE configurations, we do not put project metadata files (e.g., `.classpath`, `.project` and `.settings` for Eclipse) into the git repository. Instead, the IDE can use Maven's `pom.xml` file directly to manage your dependencies in a better way.
 

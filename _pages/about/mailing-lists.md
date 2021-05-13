@@ -21,7 +21,7 @@ If you have found a bug, please [submit a bug report](/help/bug-reporting-best-p
 
 | List           | Description                                                                                                                                                                                                                                                                          | Nabble                                      | Archives                     |
 |----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|------------------------------------------------------|
-| [ImageJ](/ij/list.html) | For general user and developer discussion about [ImageJ](/about), mostly focused on [ImageJ1](/software/imagej1). For a larger community of [ImageJ2](/software/imagej2) and [Fiji](/fiji) users, the [Image.sc Forum](https://forum.image.sc/) is preferred. | [Nabble](http://imagej.1557.x6.nabble.com/) | [Archives](http://list.nih.gov/archives/imagej.html) |
+| [ImageJ](/ij/list.html) | For general user and developer discussion about [ImageJ](/about), mostly focused on [ImageJ1](/software/imagej1). For a larger community of [ImageJ2](/software/imagej2) and [Fiji](/software/fiji) users, the [Image.sc Forum](https://forum.image.sc/) is preferred. | [Nabble](http://imagej.1557.x6.nabble.com/) | [Archives](http://list.nih.gov/archives/imagej.html) |
 
 ## Supporting and related software
 

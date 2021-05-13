@@ -26,15 +26,15 @@ There's a new modernized version of BoneJ available through the ImageJ [updater]
 
 {% include logo content='ImageJ1' size='24px' %} BoneJ was originally designed to work with plain [ImageJ 1.x](/software/imagej1).
 
-{% include logo content='Fiji' size='24px' %} BoneJ can be installed into [Fiji](/fiji), but you must **use the Java-6 version of Fiji, not the current Java-8 version**:
+{% include logo content='Fiji' size='24px' %} BoneJ can be installed into [Fiji](/software/fiji), but you must **use the Java-6 version of Fiji, not the current Java-8 version**:
 
--   Download the final Java-6 version of Fiji labeled "2017 May 30" from [here](/fiji/downloads#java-6).
+-   Download the final Java-6 version of Fiji labeled "2017 May 30" from [here](/software/fiji/downloads#java-6).
 -   Unpack it somewhere beneath your home folder.
 -   Download and install `BoneJ_.jar` into that installation's `plugins` folder.
 -   Launch Fiji and run {% include bc path='Plugins | 3D Viewer'%} to trigger installation of the [3D Viewer](/plugins/3d-viewer).
 -   Restart Fiji.
 
-For technical details about ImageJ and Fiji using Java 6 vs. Java 8, see the [Java 8](/news/2016-05-10_-_ImageJ_HOWTO_-_Java_8,_Java_6,_Java_3D) page.
+For technical details about ImageJ and Fiji using Java 6 vs. Java 8, see the [Java 8](/news/2016-05-10-imagej-howto-java-8-java-6-java-3d) page.
 
 ## BoneJ and pQCT
 

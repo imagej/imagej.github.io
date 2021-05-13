@@ -25,7 +25,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
     </tr>
     <tr class="even">
       <td><img src="/media/fiji-icon.png" width="64"/></td>
-      <td><a href="/fiji">Fiji</a></td>
+      <td><a href="/software/fiji">Fiji</a></td>
       <td><a href="/about/contributors">Fiji contributors</a></td>
       <td><strong>F</strong>iji <strong>i</strong>s <strong>J</strong>ust
         <strong>I</strong>mageJ, with extras. It is a distribution of ImageJ with

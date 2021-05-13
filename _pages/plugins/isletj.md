@@ -19,7 +19,7 @@ IsletJ was designed to work with plain [ImageJ 1.x](/software/imagej1). It requi
 
 The simplest way to install the plugin is using the Fiji installer&gt;
 
--   Download current version of Fiji from [here](/fiji/downloads)
+-   Download current version of Fiji from [here](/software/fiji/downloads)
 -   Launch Fiji and run Updater {% include bc path='Help | Update...'%}
 -   In {% include bc path='ImageJ Updater'%} select {% include bc path='Manage update sites'%}
 -   In {% include bc path='Manage update sites'%} select {% include bc path='IsletJ'%} and then {% include bc path='Close'%}

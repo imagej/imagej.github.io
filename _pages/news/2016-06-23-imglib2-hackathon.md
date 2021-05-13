@@ -93,7 +93,7 @@ The central use cases we used as litmus tests for our ideas:
 
 We spent quite some time considering how to create a unified data structure (`SpaceTree`? :-) which would keep multiple images grouped into some tree- or graph-like structure, with attached {% include javadoc project='ImgLib2' package='net/imglib2/realtransform' class='RealTransform' label='transforms' %}, in a way which handled all of the above use cases and more.
 
-Ultimately, we concluded it was too difficult to design such a data structure in a vacuum, so we instead opted to start coding individual use cases using [ImgLib2](/imglib2). We came up with a design which provides: A) a container for metadata-rich images, with individual metadata elements sensitive to {% include javadoc project='ImgLib2' package='net/imglib2/view' class='Views' %} manipulations; and B) a scheme for "grooming" these metadata-rich images into increasingly useful data structures depending on the use case.
+Ultimately, we concluded it was too difficult to design such a data structure in a vacuum, so we instead opted to start coding individual use cases using [ImgLib2](/libs/imglib2). We came up with a design which provides: A) a container for metadata-rich images, with individual metadata elements sensitive to {% include javadoc project='ImgLib2' package='net/imglib2/view' class='Views' %} manipulations; and B) a scheme for "grooming" these metadata-rich images into increasingly useful data structures depending on the use case.
 
 ### Metadata-rich containers
 

@@ -131,7 +131,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
         <p>{% include logo content='ImgLib2' %}</p>
       </td>
       <td>
-        <p><strong><a href="/imglib2">ImgLib2</a></strong></p>
+        <p><strong><a href="/libs/imglib2">ImgLib2</a></strong></p>
       </td>
       <td>
         <p>{% include person id='axtimwalde' %}<br>
@@ -233,7 +233,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
         <p>{% include logo content='Fiji' %}</p>
       </td>
       <td>
-        <p><strong><a href="/fiji">Fiji</a></strong></p>
+        <p><strong><a href="/software/fiji">Fiji</a></strong></p>
       </td>
       <td>
         <p>{% include person id='dscho' %}<br>

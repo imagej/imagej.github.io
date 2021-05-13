@@ -4,7 +4,7 @@ title: 2014-12-10 - ImgLib2 released
 categories: [News,ImageJ2]
 ---
 
-We are happy to announce the first stable release version of the [ImgLib2](/imglib2) core library!
+We are happy to announce the first stable release version of the [ImgLib2](/libs/imglib2) core library!
 
 This release was a central goal of the recent [hackathon](/events/Hackathon) at [LOCI](/orgs/loci) in Madison, during the week of October 13 - 17.
 
@@ -46,6 +46,6 @@ Before coming out of beta, we have made several last-minute changes to the code:
 
 All ImgLib2 subprojects have been adapted to these changes and released (in some cases as new beta versions).
 
-One thing still pending is to upload these new ImgLib2 releases to the ImageJ and [Fiji](/fiji) [update sites](/update-sites), making them available to users of ImageJ and Fiji. This change has been rather involved, since there is a lot of downstream code affected by the API changes. But we expect to make the new ImgLib2 available to users before the end of the calendar year. Stay tuned for further announcements!
+One thing still pending is to upload these new ImgLib2 releases to the ImageJ and [Fiji](/software/fiji) [update sites](/update-sites), making them available to users of ImageJ and Fiji. This change has been rather involved, since there is a lot of downstream code affected by the API changes. But we expect to make the new ImgLib2 available to users before the end of the calendar year. Stay tuned for further announcements!
 
  

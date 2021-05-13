@@ -7,7 +7,7 @@ categories: [ImgLib,Tutorials,Development]
 {% include imglib1-deprecation-info-box%}
 
 
-The architecture of [Imglib](/imglib1) aims at completely separating the image - which can be seen as a data container - from the concrete basic data type it encapsulates. In practice, this means that you can write "blind" algorithms, which can safely ignore whether they operate on a `uint8` image, a RGB image or a `uint16` stack of 15 slices.
+The architecture of [Imglib](/libs/imglib1) aims at completely separating the image - which can be seen as a data container - from the concrete basic data type it encapsulates. In practice, this means that you can write "blind" algorithms, which can safely ignore whether they operate on a `uint8` image, a RGB image or a `uint16` stack of 15 slices.
 
 This in turn imposes a certain gymnastic when accessing the underlying data is involved. Here, we will make a brief introduction on how to do this with Imglib. We assume you want to use Imglib in a Java plugin, and that you are already familiar with Java itself.
 

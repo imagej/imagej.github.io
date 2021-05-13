@@ -4,9 +4,9 @@ title: 2016-05-10 - ImageJ HOWTO - Java 8, Java 6, Java 3D
 categories: [News,Fiji,ImageJ2]
 ---
 
-[ImageJ2](/software/imagej2) (and hence also [Fiji](/fiji)) is currently in the midst of a [transition to Java 8](/news/2015-12-22_-_The_road_to_Java_8).
+[ImageJ2](/software/imagej2) (and hence also [Fiji](/software/fiji)) is currently in the midst of a [transition to Java 8](/news/2015-12-22-the-road-to-java-8).
 
-However, at the moment, it is still possible to run a (slightly outdated now) version of [Fiji](/fiji) with Java 6.
+However, at the moment, it is still possible to run a (slightly outdated now) version of [Fiji](/software/fiji) with Java 6.
 
 ## Current recommendations and possibilities
 
@@ -25,7 +25,7 @@ However, at the moment, it is still possible to run a (slightly outdated now) ve
 <th style="width: 30%"> <a href="/libs/java-3d" title="Java 3D">Java 3D</a>
 </th></tr>
 <tr>
-<th rowspan="3"> <a href="/fiji" title="/fiji"><img alt="/fiji" src="/images/logos/Fiji-icon.png" width="64" height="64" /></a>
+<th rowspan="3"> <a href="/software/fiji" title="/software/fiji"><img alt="/software/fiji" src="/images/logos/Fiji-icon.png" width="64" height="64" /></a>
 </th>
 <th> Java 8
 </th>
@@ -36,7 +36,7 @@ However, at the moment, it is still possible to run a (slightly outdated now) ve
 </p>
 </th>
 <td> <b>Recommended.</b>
-<p><a href="/fiji/downloads" title="Fiji Downloads">Download the newest Fiji</a> for your platform. It comes bundled with Java 8, with the Java-8 update site enabled.
+<p><a href="/software/fiji/downloads" title="Fiji Downloads">Download the newest Fiji</a> for your platform. It comes bundled with Java 8, with the Java-8 update site enabled.
 </p>
 </td>
 <td> Run <a href="/plugins/updater" title="/plugins/updater"><span><em><span style="border-bottom:1px dotted #ccc;">Help</span>&#160;&#8250; <span style="border-bottom:1px dotted #ccc;">Update...</span></em></span></a> to update to the latest version of ImageJ core and Fiji components.
@@ -51,7 +51,7 @@ However, at the moment, it is still possible to run a (slightly outdated now) ve
 <br /><a href="/media/tux.png" class="image"><img alt="/platforms/linux" src="/media/tux.png" width="32" height="32" /></a>
 </p>
 </th>
-<td> Download the final (2017-May-30) <a href="/fiji/downloads#java-6" title="Fiji Downloads">Java-6 version of Fiji</a>. It comes bundled with Java 6 and all platform launchers.
+<td> Download the final (2017-May-30) <a href="/software/fiji/downloads#java-6" title="Fiji Downloads">Java-6 version of Fiji</a>. It comes bundled with Java 6 and all platform launchers.
 </td>
 <td rowspan="2"> Run <a href="/plugins/updater" title="/plugins/updater"><span><em><span style="border-bottom:1px dotted #ccc;">Help</span>&#160;&#8250; <span style="border-bottom:1px dotted #ccc;">Update...</span></em></span></a> to update to the latest Java-6-compatible version. Your Fiji will become outdated over time, stuck on the final Java-6-compatible plugin versions.
 </td>
@@ -60,7 +60,7 @@ However, at the moment, it is still possible to run a (slightly outdated now) ve
 <tr>
 <th> <a href="/media/osx.png" class="image"><img alt="macOS" src="/images/logos/Osx.png" width="26" height="32" /></a>
 </th>
-<td> Download the final (2017-May-30) <a href="/fiji/downloads#java-6" title="Fiji Downloads">Java-6 version of Fiji</a>. It is distributed <i>without</i> Java, so you must <a href="/help/faq#how-do-i-set-up-java-6-on-os-x" title="Frequently Asked Questions">install Apple Java 6</a> on your system.
+<td> Download the final (2017-May-30) <a href="/software/fiji/downloads#java-6" title="Fiji Downloads">Java-6 version of Fiji</a>. It is distributed <i>without</i> Java, so you must <a href="/help/faq#how-do-i-set-up-java-6-on-os-x" title="Frequently Asked Questions">install Apple Java 6</a> on your system.
 <ul><li> If you have Java 7 and/or Java 8 installed, uninstall them—or else ImageJ will not use your Java 6 installation.</li>
 <li> Afterwards, <a href="/help/troubleshooting#checking-the-java-version" title="/help/troubleshooting">verify that Fiji is using Java 6</a>.</li></ul>
 </td></tr>
@@ -98,7 +98,7 @@ However, at the moment, it is still possible to run a (slightly outdated now) ve
 </p>
 </th>
 <td> It is possible to set up a "plain" ImageJ2 with Java 6, but <b>not recommended</b>:
-<ul><li> Set up <a href="/fiji" title="/fiji">Fiji</a> + Java 6 as described above.</li>
+<ul><li> Set up <a href="/software/fiji">Fiji</a> + Java 6 as described above.</li>
 <li> Disable the Fiji update site.</li>
 <li> Restart ImageJ.</li>
 <li> Delete all Fiji-specific files using the updater's Advanced mode, View "Local only files" and deleting them all.</li></ul>

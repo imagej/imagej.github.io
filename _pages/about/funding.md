@@ -27,13 +27,13 @@ SCIFIO's development is now funded indirectly by various institutions as part of
 
 ## ImgLib2
 
-The [ImgLib2](/imglib2) project was developed by {% include person id='axtimwalde' %}, {% include person id='StephanPreibisch' %} and {% include person id='tpietzsch' %} of the [Tomancak lab](https://mpi-cbg.de/research/research-groups/pavel-tomancak.html) at [MPI-CBG](https://mpi-cbg.de/).
+The [ImgLib2](/libs/imglib2) project was developed by {% include person id='axtimwalde' %}, {% include person id='StephanPreibisch' %} and {% include person id='tpietzsch' %} of the [Tomancak lab](https://mpi-cbg.de/research/research-groups/pavel-tomancak.html) at [MPI-CBG](https://mpi-cbg.de/).
 
 The ImgLib2 project as a whole is organized and maintained by {% include person id='tpietzsch' %} of MPI-CBG, {% include person id='axtimwalde' %} of Janelia Research Campus, and {% include person id='ctrueden' %} of the [Eliceiri/LOCI lab](/orgs/loci).
 
-[ImgLib2](/imglib2) is currently funded by [Bundesministerium für Bildung und Forschung (BMBF)](https://bmbf.org/) grant 031L0102.
+[ImgLib2](/libs/imglib2) is currently funded by [Bundesministerium für Bildung und Forschung (BMBF)](https://bmbf.org/) grant 031L0102.
 
-[ImgLib2](/imglib2) is also funded indirectly by the various involved software efforts, including the [Tomancak](https://www.mpi-cbg.de/tomancak), [Jug](https://www.mpi-cbg.de/jug) and [Saalfeld](https://www.janelia.org/lab/saalfeld-lab) labs as well as the [Eliceiri/LOCI lab](/orgs/loci).
+[ImgLib2](/libs/imglib2) is also funded indirectly by the various involved software efforts, including the [Tomancak](https://www.mpi-cbg.de/tomancak), [Jug](https://www.mpi-cbg.de/jug) and [Saalfeld](https://www.janelia.org/lab/saalfeld-lab) labs as well as the [Eliceiri/LOCI lab](/orgs/loci).
 
 ## SciJava
 
@@ -43,7 +43,7 @@ The SciJava project as a whole is organized and maintained by {% include person 
 
 ## Fiji
 
-The [Fiji](/fiji) distribution of [ImageJ](/about) for the life sciences is a broad collection of plugins by many authors across the worldwide community.
+The [Fiji](/software/fiji) distribution of [ImageJ](/about) for the life sciences is a broad collection of plugins by many authors across the worldwide community.
 
 Fiji as a whole is organized and maintained by:
 
@@ -54,4 +54,4 @@ Fiji development is also funded indirectly by various institutions as part of th
 
 ## de.NBI DAIS
 
-The Dresden Analysis-of-Images Suite ([DAIS](/orgs/dais)) is a partner project of [CIBI](https://www.denbi.de/network/center-for-integrative-bioinformatics-cibi/21-about/508-portfolio-of-center-for-integrative-bioinformatics-cibi) in the German Network for Bioinformatics Infrastructure ([de.NBI)](https://www.denbi.de). The [Fiji](/fiji) community is actively working towards tight integration with the [KNIME](/software/knime) workflow engine, which is maintained and developed by the de.NBI center CIBI. DAIS has a strong focus on further strengthening interoperability and integration of Fiji and KNIME, as well as bringing together their respective developer communities.
+The Dresden Analysis-of-Images Suite ([DAIS](/orgs/dais)) is a partner project of [CIBI](https://www.denbi.de/network/center-for-integrative-bioinformatics-cibi/21-about/508-portfolio-of-center-for-integrative-bioinformatics-cibi) in the German Network for Bioinformatics Infrastructure ([de.NBI)](https://www.denbi.de). The [Fiji](/software/fiji) community is actively working towards tight integration with the [KNIME](/software/knime) workflow engine, which is maintained and developed by the de.NBI center CIBI. DAIS has a strong focus on further strengthening interoperability and integration of Fiji and KNIME, as well as bringing together their respective developer communities.

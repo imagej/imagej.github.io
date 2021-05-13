@@ -10,4 +10,4 @@ github: tpietzsch
 scholar: ugoS43YAAAAJ
 ---
 
-Tobias Pietzsch develops the [BigDataViewer](/plugins/bdv), and is primary co-lead of the [ImgLib2](/imglib2) project.
+Tobias Pietzsch develops the [BigDataViewer](/plugins/bdv), and is primary co-lead of the [ImgLib2](/libs/imglib2) project.

@@ -19,7 +19,7 @@ There is an increasing demand to image large biological specimen at high resolut
 
 The Stitching Plugin (2d-5d) is able to reconstruct big images/stacks from an arbitrary number of tiled input images/stacks, making use of the Fourier Shift Theorem that computes all possible translations (x, y\[, z\]) between two 2d/3d images at once, yielding the best overlap in terms of the cross correlation measure. If more than two input images/stacks are used the correct placement of all tiles is determined using a global optimization. The stitching is able to align an arbitrary amount of channels and supports timelapse registration. To remove brightness differences at the tile borders, non-linear intensity blending can be applied.
 
-Plase note: this is the new implementation of the Stitching plugin which is finally based on [Imglib](/imglib1) and supports a lot of new features:
+Plase note: this is the new implementation of the Stitching plugin which is finally based on [Imglib](/libs/imglib1) and supports a lot of new features:
 
 -   composite images and hyperstacks now
 -   write the stitched image slice-by-slice directly to disk (significantly reduces the RAM requirements)
@@ -279,7 +279,7 @@ Additionally to the Stitching plugins, it contains the following libraries. I wa
 
 -   *edu\_mines\_jtk.jar*: Efficient 1-dimensional FFT implementation by [Dave Hale](http://inside.mines.edu/~dhale/jtk/).
 -   *mpicbg.jar*: Transformation package by {% include person id='axtimwalde' %}
--   *[imglib](/imglib1)*: N-dimensional image processing library for Java by {% include person id='tpietzsch' %}, {% include person id='StephanPreibisch' %} & {% include person id='axtimwalde' %}
+-   *[imglib](/libs/imglib1)*: N-dimensional image processing library for Java by {% include person id='tpietzsch' %}, {% include person id='StephanPreibisch' %} & {% include person id='axtimwalde' %}
 -   *fiji-lib.jar & Fiji\_Plugins.jar*: Fiji libraries by {% include person id='dscho' %}
 -   *loci\_tools.jar*: [Bio-Formats](/formats/bio-formats) Java library for reading and writing life sciences image file formats. I want to especially thank {% include person id='ctrueden' %} and {% include person id='melissalinkert' %}
 

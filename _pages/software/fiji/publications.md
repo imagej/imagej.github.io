@@ -5,9 +5,9 @@ section: About:Fiji
 categories: [Fiji]
 ---
 
-{% include info-box content='This page lists publications relating to the [Fiji](/fiji) project.
+{% include info-box content='This page lists publications relating to the [Fiji](/software/fiji) project.
 
--   For general instructions on citing [ImageJ](/about) and [Fiji](/fiji), see [Citing](/about/citing).
+-   For general instructions on citing [ImageJ](/about) and [Fiji](/software/fiji), see [Citing](/about/citing).
 -   For an index of citable software, see [:Category:Citable](Category_Citable).' %}
 
 
@@ -17,7 +17,7 @@ categories: [Fiji]
 
 <!-- -->
 
--   A paper about the ImageJ software ecosystem—including [ImageJ](/about) itself, [ImageJ2](/software/imagej2), [Fiji](/fiji), related [SciJava](SciJava) projects, and various [plugins](/plugins)—was published in Molecular Reproduction and Development in July 2015[^2].
+-   A paper about the ImageJ software ecosystem—including [ImageJ](/about) itself, [ImageJ2](/software/imagej2), [Fiji](/software/fiji), related [SciJava](SciJava) projects, and various [plugins](/plugins)—was published in Molecular Reproduction and Development in July 2015[^2].
 
 <!-- -->
 
@@ -93,7 +93,7 @@ categories: [Fiji]
 
 <!-- -->
 
--   [ImgLib2](/imglib2) was published in [Bioinformatics](http://bioinformatics.oxfordjournals.org/content/28/22/3009). The library developed jointly by Stephan Saalfeld, Stephan Preibisch and Tobias Pietzsch has originated in Fiji but has outgrown it becoming the centerpiece of other projects, especially [ImageJ2](/software/imagej2) Pavel Tomancak provided funding for its developers.[^20].
+-   [ImgLib2](/libs/imglib2) was published in [Bioinformatics](http://bioinformatics.oxfordjournals.org/content/28/22/3009). The library developed jointly by Stephan Saalfeld, Stephan Preibisch and Tobias Pietzsch has originated in Fiji but has outgrown it becoming the centerpiece of other projects, especially [ImageJ2](/software/imagej2) Pavel Tomancak provided funding for its developers.[^20].
 
 <!-- -->
 

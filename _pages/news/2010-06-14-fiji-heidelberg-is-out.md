@@ -367,15 +367,15 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 <!-- -->
 
--   The new [versatile and most generic image processing library](/imglib1) -- fully Open Source! -- was added (thanks Stephan Saalfeld and Stephan Preibisch).
+-   The new [versatile and most generic image processing library](/libs/imglib1) -- fully Open Source! -- was added (thanks Stephan Saalfeld and Stephan Preibisch).
 
 <!-- -->
 
--   [imglib](/imglib1) was improved dramatically (thanks to Stephan Saalfeld, Stephan Preibisch, Larry Lindsey and Curtis Rueden).
+-   [imglib](/libs/imglib1) was improved dramatically (thanks to Stephan Saalfeld, Stephan Preibisch, Larry Lindsey and Curtis Rueden).
 
 <!-- -->
 
--   To use the [imglib](/imglib1), just select the Imglib Plugin item of [Script Editor's](/scripting/script-editor) *Templates* menu.
+-   To use the [imglib](/libs/imglib1), just select the Imglib Plugin item of [Script Editor's](/scripting/script-editor) *Templates* menu.
 
 <!-- -->
 

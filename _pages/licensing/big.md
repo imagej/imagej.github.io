@@ -8,7 +8,7 @@ Components distributed via the BIG-EPFL [update site](/update-sites) were develo
 
 These components are licensed under proprietary terms, incompatible with the [GPL](/licensing/gpl) and similar licenses.
 
-However, the [Fiji](/fiji) project has obtained permission to redistribute them:
+However, the [Fiji](/software/fiji) project has obtained permission to redistribute them:
 
 >     Date: Mon, 26 Jul 2010 10:58:20 +0200
 >     From: Michael Unser <michael.unser@epfl.ch>

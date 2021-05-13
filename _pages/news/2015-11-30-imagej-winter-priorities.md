@@ -16,7 +16,7 @@ On the technical side, {% include person id='ctrueden' %} just wrote the first I
 
 In the coming months we have several projects of interest. In approximate order of our priority:
 
--   [SCIFIO blockization](https://github.com/scifio/scifio/tree/blocks-are-so-plane) - better-integrating the [ImgLib2](/imglib2) data model and moving from Planes to a general block-based API
+-   [SCIFIO blockization](https://github.com/scifio/scifio/tree/blocks-are-so-plane) - better-integrating the [ImgLib2](/libs/imglib2) data model and moving from Planes to a general block-based API
 -   [Rich images](https://github.com/imagej/imagej-common/tree/rich-image) - a polishing pass at the ImageJ data model
 -   [Robust-IO](https://github.com/scifio/scifio/tree/location-robust-io) - generalizing image I/O sources
 -   Increasing the sophistication of [ImageJ Ops](/libs/imagej-ops)

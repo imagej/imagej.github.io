@@ -281,7 +281,7 @@ The [ImageProcessor](http://jenkins.imagej.net/job/ImageJ1-javadoc/javadoc/ij/pr
 **Tip:** use the Script Editor's functions in the *Tools* menu:
 
 -   *Open Help for Class...* (opens the JavaDoc for a class in a browser),
--   *Open .java file for class...* (requires the respective source files to be present in the Fiji directory, such as after [Downloading and Building Fiji From Source](/fiji/building-from-source), or
+-   *Open .java file for class...* (requires the respective source files to be present in the Fiji directory, such as after [Downloading and Building Fiji From Source](/software/fiji/building-from-source), or
 -   *Open .java file for menu item...* (also needs the source files).
 
 ## Plots

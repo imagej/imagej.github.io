@@ -8,7 +8,7 @@ categories: [Tutorials]
 
 ### Download
 
-[Download Fiji](/fiji/downloads) for your operating system. Double click the package to expand it and move it to your application folder and then drop the icon into your dock. If you have Fiji already skip this step.
+[Download Fiji](/software/fiji/downloads) for your operating system. Double click the package to expand it and move it to your application folder and then drop the icon into your dock. If you have Fiji already skip this step.
 
 ### Update Fiji
 

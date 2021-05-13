@@ -312,4 +312,4 @@ This project is about implementing a trainer for such tests, whose result is a m
 -   [Weka project](http://www.cs.waikato.ac.nz/ml/weka/)
 -   [\#fiji-devel channel](/about/chat#irc) on irc.freenode.net
 -   Other [Project ideas](Project_ideas)
--   [more links](/fiji/links)
+-   [more links](/software/fiji/links)

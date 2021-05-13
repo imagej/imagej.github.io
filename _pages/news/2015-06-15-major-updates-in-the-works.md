@@ -6,7 +6,7 @@ categories: [ImageJ2,News]
 
 In recent months, ImageJ has seen an increasing number of issues relating to application distribution, packaging and deployment.
 
-This summer, the ImageJ team at [LOCI](/orgs/loci) is taking several major steps to bring [ImageJ2](/software/imagej2) and [Fiji](/fiji) up to the latest Java packaging and deployment standards.
+This summer, the ImageJ team at [LOCI](/orgs/loci) is taking several major steps to bring [ImageJ2](/software/imagej2) and [Fiji](/software/fiji) up to the latest Java packaging and deployment standards.
 
 ## The obsolescence of Java 6
 

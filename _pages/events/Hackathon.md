@@ -90,7 +90,7 @@ ImageJ has benefitted from many hackathons over the years:
         <p>{% include person-list ids='acardona|bene51|ysis|chalkie666|frederikfly|tinevez|dscho|hinerm|StephanPreibisch|axtimwalde|tomancak' %}</p>
       </td>
       <td>
-        <p><a href="/fiji">Fiji</a></p>
+        <p><a href="/software/fiji">Fiji</a></p>
       </td>
     </tr>
     <tr class="even">
@@ -106,12 +106,12 @@ ImageJ has benefitted from many hackathons over the years:
         <p>?</p>
       </td>
       <td>
-        <p><a href="/fiji">Fiji</a></p>
+        <p><a href="/software/fiji">Fiji</a></p>
       </td>
     </tr>
     <tr class="odd">
       <td>
-        <p><a href="/news/2009-03-12_-_Dresden_Hackathon_2009">2009 Mar 23 -<br>
+        <p><a href="/news/2009-03-12-dresden-hackathon-2009">2009 Mar 23 -<br>
         2009 Apr 03</a></p>
       </td>
       <td>
@@ -127,7 +127,7 @@ ImageJ has benefitted from many hackathons over the years:
     </tr>
     <tr class="even">
       <td>
-        <p><a href="/news/2010-03-14_-_Hackathon_at_EMBL">2010 Mar 14 -<br>
+        <p><a href="/news/2010-03-14-hackathon-at-embl">2010 Mar 14 -<br>
         2010 Mar 27</a></p>
       </td>
       <td>
@@ -138,7 +138,7 @@ ImageJ has benefitted from many hackathons over the years:
         <p>{% include person-list ids='acardona|axtimwalde|bene51|cmci|ctrueden|dscho|iarganda|larrylindsey|hinerm|StephanPreibisch|tnargsirrah|vkaynig' %}</p>
       </td>
       <td>
-        <p><a href="/fiji">Fiji</a></p>
+        <p><a href="/software/fiji">Fiji</a></p>
       </td>
     </tr>
     <tr class="odd">
@@ -154,7 +154,7 @@ ImageJ has benefitted from many hackathons over the years:
         <p>{% include person-list ids='frederikfly|dscho' %}</p>
       </td>
       <td>
-        <p>Running <a href="/software/micro-manager">Micro-Manager</a> inside <a href="/fiji">Fiji</a></p>
+        <p>Running <a href="/software/micro-manager">Micro-Manager</a> inside <a href="/software/fiji">Fiji</a></p>
       </td>
     </tr>
     <tr class="even">
@@ -175,7 +175,7 @@ ImageJ has benefitted from many hackathons over the years:
     </tr>
     <tr class="odd">
       <td>
-        <p><a href="/news/2011-12-14_-_Fiji_Hackathon_in_Dresden">2011 Dec 9 -<br>
+        <p><a href="/news/2011-12-14-fiji-hackathon-in-dresden">2011 Dec 9 -<br>
         2011 Dec 19</a></p>
       </td>
       <td>
@@ -201,7 +201,7 @@ ImageJ has benefitted from many hackathons over the years:
         <p>{% include person-list ids='hornm|dietzc|tpietzsch|dscho' %}</p>
       </td>
       <td>
-        <p><a href="/software/knime">KNIME</a>+<a href="/fiji">Fiji</a></p>
+        <p><a href="/software/knime">KNIME</a>+<a href="/software/fiji">Fiji</a></p>
       </td>
     </tr>
     <tr class="odd">
@@ -222,7 +222,7 @@ ImageJ has benefitted from many hackathons over the years:
     </tr>
     <tr class="even">
       <td>
-        <p><a href="/news/2013-04-22_-_Trainable_Segmentation_Hackathon">2013 Apr 14 -<br>
+        <p><a href="/news/2013-04-22-trainable-segmentation-hackathon">2013 apr 14 -<br>
         2013 Apr 18</a></p>
       </td>
       <td>
@@ -238,7 +238,7 @@ ImageJ has benefitted from many hackathons over the years:
     </tr>
     <tr class="odd">
       <td>
-        <p><a href="/news/2013-05-03_-_ImgLib2_Hackathon_in_Madison">2013 Apr 27 -<br>
+        <p><a href="/news/2013-05-03-imglib2-hackathon-in-madison">2013 Apr 27 -<br>
         2013 May 3</a></p>
       </td>
       <td>
@@ -249,7 +249,7 @@ ImageJ has benefitted from many hackathons over the years:
         <p>{% include person-list ids='StephanPreibisch|tpietzsch|ctrueden|dscho|bdezonia|hinerm|grislis' %}</p>
       </td>
       <td>
-        <p><a href="/imglib2">ImgLib2</a></p>
+        <p><a href="/libs/imglib2">ImgLib2</a></p>
       </td>
     </tr>
     <tr class="even">
@@ -286,7 +286,7 @@ ImageJ has benefitted from many hackathons over the years:
     </tr>
     <tr class="even">
       <td>
-        <p><a href="/news/2014-04-04_-_Announcing_ImageJ_Ops">2014 Mar 4 -<br>
+        <p><a href="/news/2014-04-04-announcing-imagej-ops">2014 Mar 4 -<br>
         2014 Mar 13</a></p>
       </td>
       <td>
@@ -334,7 +334,7 @@ ImageJ has benefitted from many hackathons over the years:
     </tr>
     <tr class="odd">
       <td>
-        <p><a href="/news/2014-10-01_-_ImageJ_Ops_Hackathon">2014 Sep 14 -<br>
+        <p><a href="/news/2014-10-01-imagej-ops-hackathon">2014 Sep 14 -<br>
         2014 Sep 18</a></p>
       </td>
       <td>
@@ -361,7 +361,7 @@ ImageJ has benefitted from many hackathons over the years:
         <p>{% include person-list ids='tpietzsch|StephanPreibisch|axtimwalde|dscho|ctrueden|hinerm' %}</p>
       </td>
       <td>
-        <p><a href="/imglib2">ImgLib2</a></p>
+        <p><a href="/libs/imglib2">ImgLib2</a></p>
       </td>
     </tr>
     <tr class="odd">
@@ -415,7 +415,7 @@ ImageJ has benefitted from many hackathons over the years:
     </tr>
     <tr class="even">
       <td>
-        <p><a href="/news/2015-07-27_-_Janelia_Hackathon">2015 Jul 27 -<br>
+        <p><a href="/news/2015-07-27-janelia-hackathon">2015 Jul 27 -<br>
         2015 Jul 31</a></p>
       </td>
       <td>
@@ -447,7 +447,7 @@ ImageJ has benefitted from many hackathons over the years:
     </tr>
     <tr class="even">
       <td>
-        <p><a href="/news/2016-01-29_-_KNIME_Image_Processing_hackathon">2016 Jan 12 -<br>
+        <p><a href="/news/2016-01-29-knime-image-processing-hackathon">2016 Jan 12 -<br>
         2016 Jan 22</a></p>
       </td>
       <td>
@@ -463,7 +463,7 @@ ImageJ has benefitted from many hackathons over the years:
     </tr>
     <tr class="odd">
       <td>
-        <p><a href="/news/2016-06-23_-_ImgLib2_hackathon">2016 Jun 19 -<br>
+        <p><a href="/news/2016-06-23-imglib2-hackathon">2016 Jun 19 -<br>
         2016 Jun 28</a></p>
       </td>
       <td>
@@ -479,7 +479,7 @@ ImageJ has benefitted from many hackathons over the years:
     </tr>
     <tr class="even">
       <td>
-        <p><a href="/news/2016-07-21_-_KNIME_Image_Processing_hackathon">2016 Jul 5 -<br>
+        <p><a href="/news/2016-07-21-knime-image-processing-hackathon">2016 Jul 5 -<br>
         2016 Jul 14</a></p>
       </td>
       <td>
@@ -495,7 +495,7 @@ ImageJ has benefitted from many hackathons over the years:
     </tr>
     <tr class="odd">
       <td>
-        <p><a href="/news/2016-12-20_-_Fiji_+_KNIP_hackathon">2016 Dec 6 -<br>
+        <p><a href="/news/2016-12-20-fiji-knip-hackathon">2016 Dec 6 -<br>
         2016 Dec 16</a></p>
       </td>
       <td>
@@ -506,7 +506,7 @@ ImageJ has benefitted from many hackathons over the years:
         <p>{% include person-list ids='fjug|tpietzsch|tomancak|ctrueden|axtimwalde|hanslovsky|kephale|rimadoma|tinevez|dietzc|patrick-winter-knime|skalarproduktraum|royerloic|haesleinhuepf|hkmoon|tibuch|MarcelWiedenmann|hoerldavid|milkyklim|maarzt|xulman|chaubold|Jonas Massa' %}</p>
       </td>
       <td>
-        <p><a href="/fiji">Fiji</a> & <a href="/software/knime">KNIP</a></p>
+        <p><a href="/software/fiji">Fiji</a> & <a href="/software/knime">KNIP</a></p>
       </td>
     </tr>
     <tr class="even">
@@ -522,7 +522,7 @@ ImageJ has benefitted from many hackathons over the years:
         <p>{% include person-list ids='tpietzsch|axtimwalde|dietzc|ctrueden|awalter17' %}</p>
       </td>
       <td>
-        <p><a href="/imglib2">ImgLib2</a></p>
+        <p><a href="/libs/imglib2">ImgLib2</a></p>
       </td>
     </tr>
     <tr class="odd">
@@ -543,7 +543,7 @@ ImageJ has benefitted from many hackathons over the years:
     </tr>
     <tr class="even">
       <td>
-        <p><a href="/news/2017-09-25_-_KNIME_Image_Processing_hackathon">2017 Sep 20 -<br>
+        <p><a href="/news/2017-09-25-knime-image-processing-hackathon">2017 Sep 20 -<br>
         2017 Sep 29</a></p>
       </td>
       <td>
@@ -575,7 +575,7 @@ ImageJ has benefitted from many hackathons over the years:
     </tr>
     <tr class="even">
       <td>
-        <p><a href="/news/2017-12-04_-_Fiji_+_KNIP_hackathon">2017 Dec 4 -<br>
+        <p><a href="/news/2017-12-04-fiji-knip-hackathon">2017 Dec 4 -<br>
         2017 Dec 15</a></p>
       </td>
       <td>
@@ -586,7 +586,7 @@ ImageJ has benefitted from many hackathons over the years:
         <p>{% include person-list ids='fjug|tpietzsch|tomancak|ctrueden|hanslovsky|kephale|rimadoma|tinevez|dietzc|skalarproduktraum|royerloic|haesleinhuepf|hkmoon|tibuch|MarcelWiedenmann|hoerldavid|milkyklim|maarzt|xulman|chaubold|PetrBainar|awalter17' %}</p>
       </td>
       <td>
-        <p><a href="/fiji">Fiji</a> & <a href="/software/knime">KNIP</a></p>
+        <p><a href="/software/fiji">Fiji</a> & <a href="/software/knime">KNIP</a></p>
       </td>
     </tr>
     <tr class="odd">
@@ -639,7 +639,7 @@ ImageJ has benefitted from many hackathons over the years:
     </tr>
     <tr class="even">
       <td>
-        <p><a href="/news/2018-12-06_-_I2K_2018_Dresden_Hackathon">2018 Dec 09 -<br>
+        <p><a href="/news/2018-12-06-i2k-2018-dresden-hackathon">2018 Dec 09 -<br>
         2018 Dec 14</a></p>
       </td>
       <td>
@@ -655,7 +655,7 @@ ImageJ has benefitted from many hackathons over the years:
     </tr>
     <tr class="odd">
       <td>
-        <p><a href="/news/2019-01-17_-_Fiji_Hackathon_-_Parallelization_and_HPC">2019 Jan 17 -<br>
+        <p><a href="/news/2019-01-17-fiji-hackathon-parallelization-and-hpc">2019 Jan 17 -<br>
         2019 Jan 29</a></p>
       </td>
       <td>
@@ -698,7 +698,7 @@ ImageJ has benefitted from many hackathons over the years:
         <p>{% include person-list ids='hanslovsky|ctrueden|tpietzsch|skalarproduktraum|tibuch|fjug|thewtex|stelfrich|haesleinhuepf|MarcelWiedenmann|emilmelnikov|oeway|xulman|tomancak|uschmidt83|frauzufall|HedgehogCode|NicoKiaru|mangalp|m-novikov|tischi|MLbyML|BobHanson|wolny|turekg|tomasvicar|davidackerman|lagru|axon900|arrmunoz' %}</p>
       </td>
       <td>
-        <p><a href="/scripting/python">Python</a>+<a href="/fiji">Fiji</a></p>
+        <p><a href="/scripting/python">Python</a>+<a href="/software/fiji">Fiji</a></p>
       </td>
     </tr>
     <tr class="even">

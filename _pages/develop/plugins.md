@@ -246,7 +246,7 @@ In addition to modifying and developing the source code itself, there are severa
 
 #### Update your POM
 
--   For your [parent pom](https://maven.apache.org/pom.html#inheritance), we recommend that you extend [`pom-scijava`](https://github.com/scijava/pom-scijava). This will provide [dependency management](https://maven.apache.org/pom.html#dependency-management) of a lot of common useful dependencies, including the entire [ImageJ software stack](/develop/architecture#definitions) and all [Fiji](/fiji) components. Try to use the newest available version of `pom-scijava`.
+-   For your [parent pom](https://maven.apache.org/pom.html#inheritance), we recommend that you extend [`pom-scijava`](https://github.com/scijava/pom-scijava). This will provide [dependency management](https://maven.apache.org/pom.html#dependency-management) of a lot of common useful dependencies, including the entire [ImageJ software stack](/develop/architecture#definitions) and all [Fiji](/software/fiji) components. Try to use the newest available version of `pom-scijava`.
 -   Update your [groupId](https://maven.apache.org/pom.html#maven-coordinates). ImageJ projects use a `net.imagej` groupId, while Fiji projects use `sc.fiji`—or you may use your own if you do not plan to distribute your plugin with the core ImageJ or Fiji projects.
 -   Update your [artifactId](https://maven.apache.org/pom.html#maven-coordinates) to something appropriate based on the intended use of your project.
 -   Update your <name> and <description> to something appropriate for your new artifactId.
@@ -273,7 +273,7 @@ Once you have completed plugins and want to get them out to users, you can famil
 
 -   [Plugin distribution](/develop/distributing)
 -   [The development lifecycle](/develop/releasing)
--   [Core contribution requirements](/fiji/contribution-requirements)
+-   [Core contribution requirements](/software/fiji/contribution-requirements)
 
 As always, if you ever need assistance, [just ask](/help)!
 

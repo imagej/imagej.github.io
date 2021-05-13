@@ -220,7 +220,7 @@ Since each project consists of many components, some may be licensed differently
         <p><img src="/media/imglib2-icon.png" width="48"></p>
       </td>
       <td>
-        <p><strong><a href="/imglib2">ImgLib2</a></strong></p>
+        <p><strong><a href="/libs/imglib2">ImgLib2</a></strong></p>
       </td>
       <td>
         <p><a href="https://github.com/imglib/imglib2/blob/master/LICENSE.txt">License</a></p>
@@ -259,7 +259,7 @@ Since each project consists of many components, some may be licensed differently
     </tr>
     <tr class="even">
       <td>
-        <p><a href="/fiji">Fiji projects</a></p>
+        <p><a href="/software/fiji">Fiji projects</a></p>
       </td>
       <td></td>
       <td></td>
@@ -280,7 +280,7 @@ Since each project consists of many components, some may be licensed differently
         <p><img src="/media/fiji-icon.png" width="48"></p>
       </td>
       <td>
-        <p><strong><a href="/fiji">Fiji</a></strong></p>
+        <p><strong><a href="/software/fiji">Fiji</a></strong></p>
       </td>
       <td>
         <p><a href="https://github.com/fiji/fiji/blob/master/LICENSES">Licenses</a></p>

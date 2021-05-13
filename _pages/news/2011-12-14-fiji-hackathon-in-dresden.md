@@ -4,11 +4,11 @@ title: 2011-12-14 - Fiji Hackathon in Dresden
 categories: [News,Hackathons]
 ---
 
-A great [Fiji](/fiji) hackathon took place between Saturday, December 10 and Sunday, December 18, 2011 at the [MPI-CBG](http://www.mpi-cbg.de/), which besides hosting also provided generous sponsoring of food and accommodation, and again brought together biologists and developers associated with the various bioimage analysis projects.
+A great [Fiji](/software/fiji) hackathon took place between Saturday, December 10 and Sunday, December 18, 2011 at the [MPI-CBG](http://www.mpi-cbg.de/), which besides hosting also provided generous sponsoring of food and accommodation, and again brought together biologists and developers associated with the various bioimage analysis projects.
 
 ## Topic
 
-The topic was Integration, including: [Fiji](/fiji) + [ImageJ2](/software/imagej2), [OMERO](/software/omero) + [ImageJ](/about), [KNIME](/software/knime) + [ImageJ](/about), [Icy](/software/icy) + [ImageJ](/about), [OMERO](/software/omero) + [Icy](/software/icy), [KNIME](/software/knime) + [OMERO](/software/omero) and more.
+The topic was Integration, including: [Fiji](/software/fiji) + [ImageJ2](/software/imagej2), [OMERO](/software/omero) + [ImageJ](/about), [KNIME](/software/knime) + [ImageJ](/about), [Icy](/software/icy) + [ImageJ](/about), [OMERO](/software/omero) + [Icy](/software/icy), [KNIME](/software/knime) + [OMERO](/software/omero) and more.
 
 This is the hackathon where the [SciJava](SciJava) idea was originally born!
 
@@ -21,28 +21,28 @@ Here is the list of participants together with their primary affiliation:
 |                        |                                                               |
 |------------------------|---------------------------------------------------------------|
 | Kevin Eliceiri         | [ImageJ2](/software/imagej2)                                 |
-| Curtis Rueden          | [IJ2](IJ2)/[Fiji](/fiji)                 |
+| Curtis Rueden          | [IJ2](IJ2)/[Fiji](/software/fiji)                 |
 | Barry DeZonia          | [IJ2](IJ2)                                         |
-| Johannes Schindelin    | [Fiji](/fiji)                                       |
+| Johannes Schindelin    | [Fiji](/software/fiji)                                       |
 | Christian Dietz        | [KNIME](/software/knime)                                     |
 | Martin Horn            | [KNIME](/software/knime)                                     |
 | Melissa Linkert        | [OME](/software/omero) ([Bio-Formats](/formats/bio-formats)) |
-| Erwin Frise            | [Fiji](/fiji)/[uManager](UManager)       |
-| Mark Longair           | [Fiji](/fiji)                                       |
+| Erwin Frise            | [Fiji](/software/fiji)/[uManager](UManager)       |
+| Mark Longair           | [Fiji](/software/fiji)                                       |
 | Josh Moore             | [OMERO](/software/omero)                                     |
 | Jean-Marie Burel       | [OMERO](/software/omero)                                     |
 | Jurgen Mayer           | CRG Barcelona                                                 |
-| Stephan Preibisch      | [Fiji](/fiji)/[ImgLib](ImgLib)           |
-| Benjamin Schmid        | [Fiji](/fiji)/[3D Viewer](/plugins/3d-viewer)     |
-| Pavel Tomancak         | [Fiji](/fiji)                                       |
-| Daniel James White     | [Fiji](/fiji)/[Coloc 2](/plugins/coloc-2)/SPIM    |
-| Michael Doube          | [Fiji](/fiji)/[BoneJ](/plugins/bonej)             |
-| Tobias Pietzsch        | [Fiji](/fiji)/[ImgLib](ImgLib)           |
+| Stephan Preibisch      | [Fiji](/software/fiji)/[ImgLib](ImgLib)           |
+| Benjamin Schmid        | [Fiji](/software/fiji)/[3D Viewer](/plugins/3d-viewer)     |
+| Pavel Tomancak         | [Fiji](/software/fiji)                                       |
+| Daniel James White     | [Fiji](/software/fiji)/[Coloc 2](/plugins/coloc-2)/SPIM    |
+| Michael Doube          | [Fiji](/software/fiji)/[BoneJ](/plugins/bonej)             |
+| Tobias Pietzsch        | [Fiji](/software/fiji)/[ImgLib](ImgLib)           |
 | Peter Pitrone          | SPIM                                                          |
-| Fernando Carrillo      | [Fiji](/fiji)                                       |
+| Fernando Carrillo      | [Fiji](/software/fiji)                                       |
 | Fabrice de Chaumont    | [Icy](/software/icy)                                         |
 | Stephane Dallongeville | [Icy](/software/icy)                                         |
-| Alex Krull             | [Fiji](/fiji)                                       |
+| Alex Krull             | [Fiji](/software/fiji)                                       |
 | Jiri Matas             | Computer Vision (Prague) special guest                        |
 | Boris Flach            | Computer Vision (Prague) special guest                        |
 

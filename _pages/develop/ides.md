@@ -9,7 +9,7 @@ section: Development:Tools
 <center>
 
 If you are new to programming, and wondering which IDE to try first:  
-many [ImageJ](/about) and [Fiji](/fiji) developers use [Eclipse](/develop/eclipse) and the [command line](/develop/command-line).
+many [ImageJ](/about) and [Fiji](/software/fiji) developers use [Eclipse](/develop/eclipse) and the [command line](/develop/command-line).
 
 </center>
 

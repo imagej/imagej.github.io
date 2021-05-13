@@ -4,7 +4,7 @@ title: 2012-03-20 - Unit tests for ImageJ 1.46
 categories: [News,ImageJ2]
 ---
 
-Last October we ran the [unit tests for ImageJ1](/develop/ij1-unit-tests) against [various versions of ImageJ 1.45](/news/2011-10-07_-_Unit_tests_for_ImageJ_1.45). It has been awhile since then, so here are the results with various versions of ImageJ 1.46.
+Last October we ran the [unit tests for ImageJ1](/develop/ij1-unit-tests) against [various versions of ImageJ 1.45](/news/2011-10-07-unit-tests-for-imagej-1-45). It has been awhile since then, so here are the results with various versions of ImageJ 1.46.
 
 Once again, an increasing number of tests are failing with each release, which indicates changing behavior creeping into the code.
 

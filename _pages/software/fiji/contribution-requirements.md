@@ -6,13 +6,13 @@ categories: [Fiji]
 ---
 
 {% include info-box content='There is another good way to distribute your extension: your own [update site](/update-sites). See the [Distribution](/develop/distributing) page for details.' %} 
-Distributing your software component as part of [Fiji](/fiji) is an effective way to immediately and easily put it into the hands of many users, as well as to actively participate in the community of ImageJ software development. However, doing so comes with a few corresponding rules.
+Distributing your software component as part of [Fiji](/software/fiji) is an effective way to immediately and easily put it into the hands of many users, as well as to actively participate in the community of ImageJ software development. However, doing so comes with a few corresponding rules.
 
-The following document describes these requirements, as well as associated best practices, for shipping your component as part of the [Fiji](/fiji) update site.
+The following document describes these requirements, as well as associated best practices, for shipping your component as part of the [Fiji](/software/fiji) update site.
 
 # Definition
 
-A "core" [Fiji](/fiji) project is one distributed on the [Fiji update site](http://update.fiji.sc). Such projects are subject to the requirements discussed below. Conversely, if you distribute your [ImageJ](/about) extension on a separate update site, this page does not apply.
+A "core" [Fiji](/software/fiji) project is one distributed on the [Fiji update site](http://update.fiji.sc). Such projects are subject to the requirements discussed below. Conversely, if you distribute your [ImageJ](/about) extension on a separate update site, this page does not apply.
 
 # Requirements
 
@@ -93,7 +93,7 @@ Furthermore, for backwards-compatibility a version can be automatically deduced:
 
 ## Maven artifacts
 
-[Fiji](/fiji) and related [SciJava](SciJava) software uses [Maven](/develop/maven), an industry standard to declare metadata about a project, to build projects using said metadata, and to *deploy* the resulting artifacts to a [Maven repository](/develop/project-management#maven). Such repositories are essentially for developers what [update sites](/update-sites) are for users.
+[Fiji](/software/fiji) and related [SciJava](SciJava) software uses [Maven](/develop/maven), an industry standard to declare metadata about a project, to build projects using said metadata, and to *deploy* the resulting artifacts to a [Maven repository](/develop/project-management#maven). Such repositories are essentially for developers what [update sites](/update-sites) are for users.
 
 -   The minimum requirement for core Fiji projects is to use a build system (e.g., [Maven](/develop/maven) or Gradle) that automatically deploys required artifacts to the [SciJava Maven repository](/develop/project-management#maven), such that they can be consumed by downstream code, including other Fiji projects. Required artifacts to deploy include the main JAR and POM files, `-tests` JAR, `-sources` JAR and `-javadoc` JAR.
 -   To facilitate this, most Fiji projects inherit a common Maven configuration from the [pom-fiji](https://github.com/fiji/pom-fiji) parent project. This configuration ensures that not only the compiled *.jar* files are deployed, but also the Javadocs and the sources. Therefore, it is strongly encouraged to extend this parent; see the [Maven component structure](/develop/architecture#maven-component-structure) section for details.

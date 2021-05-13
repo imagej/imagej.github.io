@@ -12,7 +12,7 @@ Out of the box, ImageJ has limited support for some video formats such as AVI an
 
 There are several ways to enable support for more video formats:
 
--   [Bio-Formats](/formats/bio-formats) includes support for reading additional codecs for some video formats. See the Bio-Formats [AVI](https://www.openmicroscopy.org/site/support/bio-formats5.4/formats/avi.html) and [QuickTime](https://www.openmicroscopy.org/site/support/bio-formats/formats/quicktime-movie.html) pages for the list of supported codecs. Bio-Formats is included with the [Fiji](/fiji) distribution of ImageJ.
+-   [Bio-Formats](/formats/bio-formats) includes support for reading additional codecs for some video formats. See the Bio-Formats [AVI](https://www.openmicroscopy.org/site/support/bio-formats5.4/formats/avi.html) and [QuickTime](https://www.openmicroscopy.org/site/support/bio-formats/formats/quicktime-movie.html) pages for the list of supported codecs. Bio-Formats is included with the [Fiji](/software/fiji) distribution of ImageJ.
 
 <!-- -->
 

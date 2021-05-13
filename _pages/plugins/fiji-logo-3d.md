@@ -88,7 +88,7 @@ The script is maintained by {% include person id='dscho' %}.
      * Create a universe, add the mesh, and display everything.
      */
     var universe = new Image3DUniverse();
-    universe.addMesh(mesh, blue, "/fiji", 0);
+    universe.addMesh(mesh, blue, "Fiji", 0);
     universe.show();
 
 ## See also

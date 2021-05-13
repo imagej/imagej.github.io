@@ -15,11 +15,11 @@ See the [Batch Processing](/scripting/batch) page.
 
 ## What is the largest size image that ImageJ can open?
 
-There is a 2 gigapixel limit when opening and displaying image planes using the [ImageJ 1.x](/software/imagej1) user interface's default image viewer. However, one major goal of the [ImageJ2](/software/imagej2) project is to break this limit. ImageJ2 uses the [ImgLib2](/imglib2) library as its data model, which has much larger limits on the number of pixels (theoretically: \~$$ 2^{63} $$ per dimension, up to \~ $$ 2^{31} $$ dimensions, totaling \~$$ 2^{63^{31}} $$ pixels). Hence, you can open larger images using the {% include github org='imagej' repo='tutorials' label='ImageJ2 API' %}. But you will not be able to display them in the user interface yet.
+There is a 2 gigapixel limit when opening and displaying image planes using the [ImageJ 1.x](/software/imagej1) user interface's default image viewer. However, one major goal of the [ImageJ2](/software/imagej2) project is to break this limit. ImageJ2 uses the [ImgLib2](/libs/imglib2) library as its data model, which has much larger limits on the number of pixels (theoretically: \~$$ 2^{63} $$ per dimension, up to \~ $$ 2^{31} $$ dimensions, totaling \~$$ 2^{63^{31}} $$ pixels). Hence, you can open larger images using the {% include github org='imagej' repo='tutorials' label='ImageJ2 API' %}. But you will not be able to display them in the user interface yet.
 
 Furthermore, the [SCIFIO](/software/scifio) library (what ImageJ2 uses for data I/O) supports opening such images on-demand as "cell images" such that blocks are read from disk as you iterate over the image. This is similar to (but more powerful than) ImageJ 1.x's virtual stacks feature. In this way, you can write code to process these large images without displaying them.
 
-The [Fiji](/fiji) project also includes the [BigDataViewer](/plugins/bdv) (BDV) plugin, which currently functions as an alternative viewer, to display arbitrarily large images backed by ImgLib2. In the future we hope to integrate BDV-driven UI technology more completely into ImageJ core. But there are a couple of limitations right now:
+The [Fiji](/software/fiji) project also includes the [BigDataViewer](/plugins/bdv) (BDV) plugin, which currently functions as an alternative viewer, to display arbitrarily large images backed by ImgLib2. In the future we hope to integrate BDV-driven UI technology more completely into ImageJ core. But there are a couple of limitations right now:
 
 1.  BDV was originally designed for large SPIM data; opening large image files more generally currently requires some coding. But we want to change this.
 2.  Many ImageJ 1.x plugins assume the data is stored in an ImageJ 1.x data structure, which is not what BDV uses. So ["mixing and matching" IJ1 and IJ2 functionality](/libs/imagej-legacy) is tricky here. But we are working to lift these restrictions as time goes on.
@@ -191,7 +191,7 @@ Yes, see the [call-modern-from-legacy](https://github.com/imagej/tutorials/tree/
 
 [ImageJ1-ImageJ2 cheat sheet](ImageJ1-ImageJ2_cheat_sheet) is available.
 
-# [Fiji](/fiji)
+# [Fiji](/software/fiji)
 
 ## What is the difference between Fiji and ImageJ?
 
@@ -199,7 +199,7 @@ Fiji is a *distribution* of ImageJ: it bundles the core ImageJ application with 
 
 ## How do I install Fiji?
 
-See [here](/fiji/downloads#installation) for instructions.
+See [here](/software/fiji/downloads#installation) for instructions.
 
 ## How do I turn my ImageJ installation into a Fiji one?
 
@@ -213,7 +213,7 @@ Please refer to the page *[Developing Fiji in Eclipse](/develop/eclipse)*.
 
 ## How can I build Fiji from the command-line?
 
-[Download and build it](/fiji/building-from-source). You need Git for that (if you are on Windows, please use [Git for Windows](https://msysgit.github.io/)).
+[Download and build it](/software/fiji/building-from-source). You need Git for that (if you are on Windows, please use [Git for Windows](https://msysgit.github.io/)).
 
 ## How do I install a Fiji plugin into vanilla [ImageJ 1.x](/software/imagej1)?
 
@@ -221,7 +221,7 @@ Doing this is not recommended:
 
 -   Fiji plugin authors test their plugins in Fiji, not vanilla [ImageJ 1.x](/software/imagej1).
 -   An increasing number of plugins use features of [ImageJ2](/software/imagej2), which are not available in [ImageJ 1.x](/software/imagej1).
--   If you install multiple plugins with complex dependency chains in this manner, you may have dependency [version](/develop/architecture#versioning) conflicts. For things to work, you will need to ensure that all the library versions are compatible. The [ Fiji maintainers](/about/governance) have already solved this problem for the [Fiji](/fiji) distribution.
+-   If you install multiple plugins with complex dependency chains in this manner, you may have dependency [version](/develop/architecture#versioning) conflicts. For things to work, you will need to ensure that all the library versions are compatible. The [ Fiji maintainers](/about/governance) have already solved this problem for the [Fiji](/software/fiji) distribution.
 
 So you could save yourself a lot of pain by using Fiji instead.
 
@@ -368,7 +368,7 @@ Another possibility for the future is a client/server version of ImageJ that run
 
 ## Why is there Fiji when there is already ImageJ? And what is this ImageJ2 about?
 
-The [ImageJ](/about), [Fiji](/fiji) and [ImageJ2](/software/imagej2) projects are very closely related. See [ImageJ\#Flavors](/about#flavors) for a thorough breakdown of the differences.
+The [ImageJ](/about), [Fiji](/software/fiji) and [ImageJ2](/software/imagej2) projects are very closely related. See [ImageJ\#Flavors](/about#flavors) for a thorough breakdown of the differences.
 
 See also:
 
@@ -383,7 +383,7 @@ We are working to create an architecture where the programs work together and pr
 
 ## Would it make sense to merge the ImageJ2 and Fiji projects?
 
-[Fiji](/fiji) and [ImageJ2](/software/imagej2) are fundamentally the same software, using the same [launcher](Launcher). So from the standpoint of development effort, the ImageJ2 and Fiji projects have indeed merged. ImageJ2 is the core software, and several pieces of infrastructure originally developed for Fiji have now migrated to ImageJ2 (e.g., the [Updater](/plugins/updater), [Launcher](Launcher) and [Script Editor](/scripting/script-editor) components). At heart, Fiji is just a big collection of life sciences plugins (though "Fijabcolsp" doesn't have quite the same ring to it). In other words, Fiji is just an ImageJ update site ("Fijaius")—and as such, you can obtain a working Fiji installation by downloading ImageJ2, running the updater, and enabling the Fiji update site.
+[Fiji](/software/fiji) and [ImageJ2](/software/imagej2) are fundamentally the same software, using the same [launcher](Launcher). So from the standpoint of development effort, the ImageJ2 and Fiji projects have indeed merged. ImageJ2 is the core software, and several pieces of infrastructure originally developed for Fiji have now migrated to ImageJ2 (e.g., the [Updater](/plugins/updater), [Launcher](Launcher) and [Script Editor](/scripting/script-editor) components). At heart, Fiji is just a big collection of life sciences plugins (though "Fijabcolsp" doesn't have quite the same ring to it). In other words, Fiji is just an ImageJ update site ("Fijaius")—and as such, you can obtain a working Fiji installation by downloading ImageJ2, running the updater, and enabling the Fiji update site.
 
 All of that said, we do not want to get rid of the two distinct project names, since people are familiar with both. But we are integrating resources when feasible: e.g., the [ImageJ wiki](/) serves all ImageJ content including Fiji-specific content (which is marked with the Fiji logo). But we want to ensure it is clear that ImageJ is not a life-sciences-specific project, whereas Fiji is. Historically, because Fiji has a life sciences focus, there have been some users who refused to switch from vanilla [ImageJ1](/software/imagej1) to Fiji even though Fiji makes users' lives easier in lots of ways. With ImageJ2, we want to avoid such misconceptions.
 
@@ -484,4 +484,4 @@ See the [Open Source](Open_Source) page!
 
 ## Is Java still free and open source? I heard Oracle is charging for Java now!
 
-Java is still free and open source. The only reason to pay Oracle for a Java license is to continue receiving commercial support from Oracle after January 2019 for the *Oracle version of Java 8*. If you use OpenJDK, you are fine. If you use an older version of Oracle Java 8 (such as the one currently shipping with [Fiji](/fiji)), you are fine. See [this article](https://medium.com/@javachampions/java-is-still-free-c02aef8c9e04) for details.
+Java is still free and open source. The only reason to pay Oracle for a Java license is to continue receiving commercial support from Oracle after January 2019 for the *Oracle version of Java 8*. If you use OpenJDK, you are fine. If you use an older version of Oracle Java 8 (such as the one currently shipping with [Fiji](/software/fiji)), you are fine. See [this article](https://medium.com/@javachampions/java-is-still-free-c02aef8c9e04) for details.

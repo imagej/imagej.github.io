@@ -22,7 +22,7 @@ This online version, similar to the past in-person meetings, is open to all and 
 
 #### I2K 2021
 
-The [Center for Open Bioimage Analysis (COBA)](/orgs/coba) at Broad Institute and UW-Madison, as well as the [Fiji](/fiji) development team at Max Planck Institute of Molecular Cell Biology and Genetics in Dresden, is pleased to formally announce the 2021 "From Images to Knowledge with ImageJ & Friends (I2K)" Symposium.
+The [Center for Open Bioimage Analysis (COBA)](/orgs/coba) at Broad Institute and UW-Madison, as well as the [Fiji](/software/fiji) development team at Max Planck Institute of Molecular Cell Biology and Genetics in Dresden, is pleased to formally announce the 2021 "From Images to Knowledge with ImageJ & Friends (I2K)" Symposium.
 
 -   Date: September 23-24, 2021
 -   Location: University of Wisconsin, Madison

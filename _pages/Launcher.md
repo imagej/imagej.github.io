@@ -11,9 +11,9 @@ The launcher supports the following flavors of ImageJ:
 
 -   [ImageJ1](/software/imagej1)
 -   [ImageJ2](/software/imagej2)
--   [Fiji](/fiji)
+-   [Fiji](/software/fiji)
 
-The launcher is a native executable whose purpose is to start up a Java Virtual Machine and run ImageJ 1.x, Fiji or ImageJ2 in it. It is used in the [Fiji](/fiji) distribution as well as in [ImageJ2](/software/imagej2).
+The launcher is a native executable whose purpose is to start up a Java Virtual Machine and run ImageJ 1.x, Fiji or ImageJ2 in it. It is used in the [Fiji](/software/fiji) distribution as well as in [ImageJ2](/software/imagej2).
 
 ## Source
 

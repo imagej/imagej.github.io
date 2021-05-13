@@ -13,7 +13,7 @@ The SciJava [philosophy](/develop/philosophy) is to [release early, release ofte
 
 # Phases of development
 
-[ImageJ](/about) and [Fiji](/fiji) are developed according to the [SciJava philosophy](/develop/philosophy), thus these applications are used throughout this tutorial to illustrate the development lifecycle.
+[ImageJ](/about) and [Fiji](/software/fiji) are developed according to the [SciJava philosophy](/develop/philosophy), thus these applications are used throughout this tutorial to illustrate the development lifecycle.
 
 Whether adding new features, fixing bugs, improving performance, etc... **development** is the process of making changes, with the goal of exposing these changes to users. To accomplish this, actively developed projects cycle through five general "phases":
 
@@ -140,7 +140,7 @@ To update the version of your component listed in the {% include github org='sci
 
 -   The core ImageJ update site reflects the state of the newest {% include github org='imagej' repo='imagej' label='net.imagej:imagej' %} release.
 -   The core Fiji update site reflects the state of the newest {% include github org='fiji' repo='fiji' label='sc.fiji:fiji' %} release.
--   Actually, for the moment, both of the above statements are untrue, but they represent the direction we are heading. Right now, core components of both ImageJ and Fiji are distributed manually via the Java-8 update site. See the [Java 8](/news/2016-05-10_-_ImageJ_HOWTO_-_Java_8,_Java_6,_Java_3D) page for details.
+-   Actually, for the moment, both of the above statements are untrue, but they represent the direction we are heading. Right now, core components of both ImageJ and Fiji are distributed manually via the Java-8 update site. See the [Java 8](/news/2016-05-10-imagej-howto-java-8-java-6-java-3d) page for details.
 
 ### External update sites
 

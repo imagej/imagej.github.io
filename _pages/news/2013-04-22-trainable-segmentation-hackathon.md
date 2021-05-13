@@ -24,7 +24,7 @@ All it needs is to conform to a simple interface and to add an annotation (no wo
 
 That way, if you come up with a powerful algorithm that makes classification of your objects of interest much easier, just a few minutes of work will enable you to include that algorithm as a feature (or multiple features) in the Trainable Segmentation.
 
-Something else we started to work on: we identified the places to change for [ImgLib2](/imglib2) support.
+Something else we started to work on: we identified the places to change for [ImgLib2](/libs/imglib2) support.
 
 Due to ImgLib2's interface-drive design, it is very easy to wrap any data structure (e.g. Icy's, Alida's, ImageJ 1.x', etc) to conform with ImgLib2's interfaces, so all of the algorithms implemented to work with ImgLib2 interfaces can run on all of aforementioned data structures.
 

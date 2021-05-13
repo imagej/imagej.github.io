@@ -109,7 +109,7 @@ ImageJ is divided into three parts:
     </tr>
     <tr class="even">
       <td style="font-size: 56px; bold">
-        <p>{% include logo content='ImgLib2' size='72px' %}<a href="/imglib2">ImgLib2</a></p>
+        <p>{% include logo content='ImgLib2' size='72px' %}<a href="/libs/imglib2">ImgLib2</a></p>
       </td>
       <td style="width: 350px;">
         <p><a href="SciJava"><img src="/media/scijava-logo.png" height="72px"></a></p>
@@ -232,7 +232,7 @@ Start with the [ImageJ tutorial notebooks](/tutorials)!
             <a href="https://github.com/imagej/tutorials">ImageJ tutorials</a>
           </li>
           <li>
-            <a href="/imglib2/examples">ImgLib2 Examples</a>
+            <a href="/libs/imglib2/examples">ImgLib2 Examples</a>
           </li>
           <li>
             <a href="ImageJ1-ImageJ2_cheat_sheet">ImageJ1-ImageJ2 cheat sheet</a>
@@ -258,13 +258,13 @@ Start with the [ImageJ tutorial notebooks](/tutorials)!
       <td>
         <ul>
           <li>
-            <a href="/fiji/developing">Developing Fiji</a>
+            <a href="/software/fiji/developing">Developing Fiji</a>
           </li>
           <li>
             <a href="/develop/eclipse">Fiji + Eclipse</a>
           </li>
           <li>
-            <a href="/fiji/contribution-requirements">Fiji contribution requirements</a>
+            <a href="/software/fiji/contribution-requirements">Fiji contribution requirements</a>
           </li>
           <li>
             <a href="/develop/supported-compilers">Supported Compilers</a>

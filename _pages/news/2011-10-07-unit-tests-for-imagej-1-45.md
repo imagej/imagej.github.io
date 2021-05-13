@@ -71,7 +71,7 @@ Once all the tests pass, [Jenkins](/develop/jenkins) can run them automatically 
         <p>1.45r+</p>
       </td>
       <td>
-        <p>See the <a href="/news/2012-03-20_-_Unit_tests_for_ImageJ_1.46">ImageJ 1.46 unit tests blog post</a></p>
+        <p>See the <a href="/news/2012-03-20-unit-tests-for-imagej-1-46">ImageJ 1.46 unit tests blog post</a></p>
       </td>
     </tr>
   </tbody>

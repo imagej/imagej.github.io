@@ -4,9 +4,9 @@ title: 2009-09-20 - First public release of the script editor
 categories: [News]
 ---
 
-This is a first *alpha* release of the [script editor](/events/SoC_2009_Ideas#add-a-simple-yet-minimally-powerful-plugin-and-script-editor) that was one of our [Google Summer of Code](/news/2009-04-20_-_Summer_of_Code__We_got_us_three_students) projects.
+This is a first *alpha* release of the [script editor](/events/SoC_2009_Ideas#add-a-simple-yet-minimally-powerful-plugin-and-script-editor) that was one of our [Google Summer of Code](/news/2009-04-20-summer-of-code-we-got-us-three-students) projects.
 
-While it was pretty well stress-tested in the [Fiji School](/news/2009-08-04_-_Fiji_School_-_Last_Call_for_Student_Applications), and while it works pretty well for some of the Fiji developers, it is more like a technology preview.
+While it was pretty well stress-tested in the [Fiji School](/news/2009-08-04-fiji-school-last-call-for-student-applications), and while it works pretty well for some of the Fiji developers, it is more like a technology preview.
 
 Having said all that, if you are interested in scripting Fiji, just use the [Fiji Updater](/plugins/updater) and [give it a shot](/scripting/script-editor)!
 

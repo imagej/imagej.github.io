@@ -16,7 +16,7 @@ There are several ways to import MOV files into ImageJ, each discussed below.
 
 The [Bio-Formats](/formats/bio-formats) library supports several, but not all, QuickTime codecs. It is written in pure Java, so those codecs will be readable within ImageJ on all platforms (Windows, macOS, Linux, etc.).
 
-The Bio-Formats plugins are bundled with the [Fiji](/fiji) distribution of ImageJ.
+The Bio-Formats plugins are bundled with the [Fiji](/software/fiji) distribution of ImageJ.
 
 See the [Bio-Formats QuickTime supported codecs](https://www.openmicroscopy.org/site/support/bio-formats/formats/quicktime-movie.html) page for a list of supported codecs.
 

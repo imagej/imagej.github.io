@@ -30,15 +30,15 @@
   {%- include menu-item title="Citing" link="/about/citing" -%}
   {%- include menu-item title="Contributing" link="/about/contributing" -%}
 
-  {%- include menu-section title="Fiji" link="/fiji" -%}
-    {%- include menu-item title="Using Fiji" link="/fiji/using" -%}
-    {%- include menu-item title="Featured Fiji Projects" link="/fiji/featured-projects" -%}
-    {%- include menu-item title="Publications" link="/fiji/publications" -%}
-    {%- include menu-item title="Links" link="/fiji/links" -%}
+  {%- include menu-section title="Fiji" link="/software/fiji" -%}
+    {%- include menu-item title="Using Fiji" link="/software/fiji/using" -%}
+    {%- include menu-item title="Featured Fiji Projects" link="/software/fiji/featured-projects" -%}
+    {%- include menu-item title="Publications" link="/software/fiji/publications" -%}
+    {%- include menu-item title="Links" link="/software/fiji/links" -%}
 
-    {%- include menu-section title="Developing Fiji" link="/fiji/developing" -%}
-      {%- include menu-item title="Building Fiji from source" link="/fiji/building-from-source" -%}
-      {%- include menu-item title="Contribution requirements" link="/fiji/contribution-requirements" -%}
+    {%- include menu-section title="Developing Fiji" link="/software/fiji/developing" -%}
+      {%- include menu-item title="Building Fiji from source" link="/software/fiji/building-from-source" -%}
+      {%- include menu-item title="Contribution requirements" link="/software/fiji/contribution-requirements" -%}
     {%- include menu-section-end -%} <!-- About/Fiji/Developing Fiji -->
   {%- include menu-section-end -%} <!-- About/Fiji -->
 {%- include menu-section-end -%} <!-- About -->
@@ -181,24 +181,24 @@
     {%- include menu-item title="How to extract a subproject" link="/develop/git/extract-a-subproject" -%}
   {%- include menu-section-end -%} <!-- Development/Git -->
 
-  {%- include menu-section title="ImgLib2" link="/imglib2" -%}
-    {%- include menu-item title="ImgLib2 Benchmarks" link="/imglib2/benchmarks" -%}
-    {%- include menu-item title="FAQ" link="/imglib2/faq" -%}
+  {%- include menu-section title="ImgLib2" link="/libs/imglib2" -%}
+    {%- include menu-item title="ImgLib2 Benchmarks" link="/libs/imglib2/benchmarks" -%}
+    {%- include menu-item title="FAQ" link="/libs/imglib2/faq" -%}
 
     {%- include menu-section title="Tutorials" -%}
-      {%- include menu-item title="Getting Started" link="/imglib2/getting-started" -%}
-      {%- include menu-item title="Accessors" link="/imglib2/accessors" -%}
-      {%- include menu-item title="Accessibles" link="/imglib2/accessibles" -%}
-      {%- include menu-item title="Examples" link="/imglib2/examples" -%}
-      {%- include menu-item title="Introductory Workshop" link="/imglib2/workshop-introductory" -%}
-      {%- include menu-item title="Advanced Programming Workshop" link="/imglib2/workshop-advanced" -%}
-      {%- include menu-item title="Into ImgLib - Generic Image Processing in Java" link="/imglib1/workshop" -%}
-      {%- include menu-item title="Creating Imglib2 images in MATLAB" link="/imglib2/matlab" -%}
+      {%- include menu-item title="Getting Started" link="/libs/imglib2/getting-started" -%}
+      {%- include menu-item title="Accessors" link="/libs/imglib2/accessors" -%}
+      {%- include menu-item title="Accessibles" link="/libs/imglib2/accessibles" -%}
+      {%- include menu-item title="Examples" link="/libs/imglib2/examples" -%}
+      {%- include menu-item title="Introductory Workshop" link="/libs/imglib2/workshop-introductory" -%}
+      {%- include menu-item title="Advanced Programming Workshop" link="/libs/imglib2/workshop-advanced" -%}
+      {%- include menu-item title="Into ImgLib - Generic Image Processing in Java" link="/libs/imglib1/workshop" -%}
+      {%- include menu-item title="Creating Imglib2 images in MATLAB" link="/libs/imglib2/matlab" -%}
     {%- include menu-section-end -%} <!-- Development/ImgLib2/Tutorials -->
 
     {%- include menu-section title="Development" -%}
-      {%- include menu-item title="Developing ImgLib2" link="/imglib2/developing" -%}
-      {%- include menu-item title="ImgLib2 Discussion" link="/imglib2/discussion" -%}
+      {%- include menu-item title="Developing ImgLib2" link="/libs/imglib2/developing" -%}
+      {%- include menu-item title="ImgLib2 Discussion" link="/libs/imglib2/discussion" -%}
     {%- include menu-section-end -%} <!-- Development/ImgLib2/Development -->
   {%- include menu-section-end -%} <!-- Development/ImgLib2 -->
 {%- include menu-section-end -%} <!-- Development -->

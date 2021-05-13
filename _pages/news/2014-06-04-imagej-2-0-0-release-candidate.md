@@ -8,7 +8,7 @@ Today, the [ImageJ team](/about/contributors) is pleased to announce a public re
 
 Unlike the beta releases during the past two years, this version of ImageJ2 integrates fully with the legacy [ImageJ 1.x](/software/imagej1) user interface. Consequently, this version of ImageJ2 really is the same ImageJ you know and love, achieving 100% backwards compatibility with existing ImageJ 1.x plugins, scripts and macros, while still providing access to the redesigned capabilities of ImageJ2. This allows you to keep using ImageJ in familiar ways, while also enabling migration toward more powerful new features as needed.
 
-The [Fiji](/fiji) distribution of ImageJ has bundled ImageJ2 for quite some time, so you may already be familiar with some of ImageJ2's features, some of which—such as the [Updater](/plugins/updater) and [Launcher](Launcher)—were originally developed as part of Fiji, now they are part of ImageJ proper. But this release candidate represents the first time Fiji has really been built fully on top of ImageJ2.
+The [Fiji](/software/fiji) distribution of ImageJ has bundled ImageJ2 for quite some time, so you may already be familiar with some of ImageJ2's features, some of which—such as the [Updater](/plugins/updater) and [Launcher](Launcher)—were originally developed as part of Fiji, now they are part of ImageJ proper. But this release candidate represents the first time Fiji has really been built fully on top of ImageJ2.
 
 ## Features of ImageJ2
 
@@ -49,7 +49,7 @@ ImageJ2 provides a wealth of new features and capabilities:
             }
         }
 -   Easy yet powerful plugin concept—stay tuned for a dedicated blog post soon!
--   Use ImageJ2's N-dimensional [ImgLib2](/imglib2)-based data structures (still in beta).
+-   Use ImageJ2's N-dimensional [ImgLib2](/libs/imglib2)-based data structures (still in beta).
 
 <figure><img src="/media/parameterized-macro.png" title="Parameterized-macro.png" width="439" alt="Parameterized-macro.png" /><figcaption aria-hidden="true">Parameterized-macro.png</figcaption></figure>
 

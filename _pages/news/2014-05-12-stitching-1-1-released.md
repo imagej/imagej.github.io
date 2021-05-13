@@ -4,7 +4,7 @@ title: 2014-05-12 - Stitching 1.1 released
 categories: [News,ImageJ2]
 ---
 
-Last month [we announced](/news/2014-04-07_-_Stitching_in_Fiji_IJ2) that performance improvements were coming to [Stitching](/plugins/image-stitching). Last week, a new version (1.1) of the Stitching plugin was finally released and is now available in [Fiji](/fiji).
+Last month [we announced](/news/2014-04-07-stitching-in-fiji-ij2) that performance improvements were coming to [Stitching](/plugins/image-stitching). Last week, a new version (1.1) of the Stitching plugin was finally released and is now available in [Fiji](/software/fiji).
 
 The speed improvements in this plugin come from taking a different approach to the amount of work that is done per pixel. When fusing data, especially microscopy data, you are typically working with very large datasets—potentially many gigabytes in size. In datasets where individual images overlap, the pixel values of multiple input images may need to be combined in a reasonable method to obtain a final output pixel value for a given position.
 

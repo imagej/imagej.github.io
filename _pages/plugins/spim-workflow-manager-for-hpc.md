@@ -35,7 +35,7 @@ We developed a Fiji plugin underlain by HEAppE, which enables users to steer wor
 
 # Installation
 
-After you install and launch [Fiji](/fiji/downloads), go to {% include bc path='Help | Update... | Manage update sites'%}, tick *P2E-IT4Innovations* and close the window. Then click *Apply changes* and restart Fiji.
+After you install and launch [Fiji](/software/fiji/downloads), go to {% include bc path='Help | Update... | Manage update sites'%}, tick *P2E-IT4Innovations* and close the window. Then click *Apply changes* and restart Fiji.
 
 # Usage
 

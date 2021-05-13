@@ -15,7 +15,7 @@ The central goal is to enable programmers to code an image processing algorithm 
 Ops has three major design goals:
 
 1.  **Easy to use and extend.** There must be a wealth of easy-to-use image processing operations ("ops"), as well as an easy framework for extending those ops in new directions.
-2.  **Powerful and general.** An op should be able to consist of any number of typed input and output parameters, operating on arbitrary data structures, including images of N dimensions stored in a myriad of different ways: as files on disk, programmatically generated in memory, or in remote databases. Using the powerful [ImgLib2](/imglib2) library achieves this ambitious goal.
+2.  **Powerful and general.** An op should be able to consist of any number of typed input and output parameters, operating on arbitrary data structures, including images of N dimensions stored in a myriad of different ways: as files on disk, programmatically generated in memory, or in remote databases. Using the powerful [ImgLib2](/libs/imglib2) library achieves this ambitious goal.
 3.  **Very fast.** Even though ImgLib2 is vastly more general than ImageJ 1.x's data model, that generality should not come at the expense of performance. Otherwise, users must pay a time tax to do the same things they could already do in ImageJ 1.x. The ImageJ Ops framework needs to provide a means to override *any* general-but-slow op with a faster-but-more-specific alternative, fully transparently to the user.
 
 ## Getting started
@@ -92,4 +92,4 @@ Regardless of this proliferation of implementations, a user just has to write `o
 
 ## See also
 
--   [2014-04-04 - Announcing ImageJ Ops](/news/2014-04-04_-_Announcing_ImageJ_Ops) news post
+-   [2014-04-04 - Announcing ImageJ Ops](/news/2014-04-04-announcing-imagej-ops) news post

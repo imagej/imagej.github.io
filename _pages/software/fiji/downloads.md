@@ -8,10 +8,9 @@ title: Fiji Downloads
 
 {% include project content='Fiji' %}
 
-<span id="/fiji"></span> [Fiji](/fiji) is a distribution of ImageJ which includes many useful plugins [contributed by the community](/fiji/contribution-requirements).
+[Fiji](/software/fiji) is a distribution of ImageJ which includes many useful plugins [contributed by the community](/software/fiji/contribution-requirements).
 
 {% include downloadfiji%}
-
 
 # System requirements
 
@@ -216,7 +215,7 @@ Here are Life-Line versions from before Fiji switched to Java 8.
         <p>{% include logo content='Fiji' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-nojre-20151222.zip' %}</p>
       </td>
       <td style="white-space: nowrap">
-        <p>Just prior to <a href="/news/2015-12-22_-_The_road_to_Java_8">starting the transition to Java 8</a>.</p>
+        <p>Just prior to <a href="/news/2015-12-22-the-road-to-java-8">starting the transition to Java 8</a>.</p>
       </td>
     </tr>
     <tr class="even">
@@ -268,7 +267,7 @@ Here are Life-Line versions from before Fiji switched to Java 8.
         <p>{% include logo content='Fiji' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-nojre-20140602.zip' %}</p>
       </td>
       <td style="white-space: nowrap">
-        <p>Just prior to <a href="/news/2014-06-04_-_ImageJ_2.0.0_release_candidate">some big changes to ImageJ2 under the hood</a>.</p>
+        <p>Just prior to <a href="/news/2014-06-04-imagej-2-0-0-release-candidate">some big changes to ImageJ2 under the hood</a>.</p>
       </td>
     </tr>
     <tr class="even">
@@ -303,5 +302,5 @@ Here are Life-Line versions from before Fiji switched to Java 8.
 
 ## See also
 
--   [https://downloads.imagej.net/fiji/](https://downloads.imagej.net/fiji/) for early versions of [Fiji](/fiji), and other miscellany.
+-   [https://downloads.imagej.net/fiji/](https://downloads.imagej.net/fiji/) for early versions of [Fiji](/software/fiji), and other miscellany.
 -   The main [/downloads](/downloads) page, for a version of ImageJ without the Fiji extensions.

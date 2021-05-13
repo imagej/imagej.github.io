@@ -7,7 +7,7 @@ This blog post was originally [a talk at the ImageJ conference 2012](http://imag
 
 ## Introduction
 
-It seems that many projects associated with [Fiji](/fiji) attach a "2" to their name... [TrakEM2](/plugins/trakem2), [ImgLib2](/imglib2), [ImageJ2](/software/imagej2). Not to be left behind, Fiji will do the same: the next big Fiji version will be Fiji2 :-)
+It seems that many projects associated with [Fiji](/software/fiji) attach a "2" to their name... [TrakEM2](/plugins/trakem2), [ImgLib2](/libs/imglib2), [ImageJ2](/software/imagej2). Not to be left behind, Fiji will do the same: the next big Fiji version will be Fiji2 :-)
 
 In addition, there is a very good, technical reason to go "Fiji2". From the get-go, Fiji set out to make work with ImageJ easier—both for developers and users. For developers in particular, we wanted to have a good infrastructure that helps developing better plugins faster. As part of that, we explored not only new development techniques such as using a [source code management tool](/develop/git), but we also worked toward a more flexible core.
 
@@ -29,7 +29,7 @@ But under the hood, ImageJ2 is much more modular. This is something we needed in
 
 In this chart, the dark blue boxes denote three of Fiji's plugins, the light blue boxes three of the projects associated with Fiji and the gray boxes stand for third-party projects which are used, but not actively developed, in the Fiji context. The arrows show the relationship "contributing functionality to".
 
-It is obvious that many of the depicted components share their dependencies with other components. For example, both the [3D Viewer](/plugins/3d-viewer) and [TrakEM2](/plugins/trakem2) rely on [ImgLib2](/imglib2). Now, [ImageJ 1.x](/software/imagej1) (and many plugins written for it) try to avoid such dependencies since it is inconvenient to force users to keep track of them. The downside for the developer is that they have to implement the same functionality as other people provided, again. As a consequence, such support is often incomplete, and sometimes bugs hide in that code for years.
+It is obvious that many of the depicted components share their dependencies with other components. For example, both the [3D Viewer](/plugins/3d-viewer) and [TrakEM2](/plugins/trakem2) rely on [ImgLib2](/libs/imglib2). Now, [ImageJ 1.x](/software/imagej1) (and many plugins written for it) try to avoid such dependencies since it is inconvenient to force users to keep track of them. The downside for the developer is that they have to implement the same functionality as other people provided, again. As a consequence, such support is often incomplete, and sometimes bugs hide in that code for years.
 
 But in Fiji, we have the [updater](/plugins/updater), which makes it easy both for developers and users to manage many dependencies effortlessly.
 

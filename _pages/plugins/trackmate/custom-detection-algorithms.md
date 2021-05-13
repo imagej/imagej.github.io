@@ -13,7 +13,7 @@ Welcome to the most useful and also unfortunately the hardest part in this tutor
 
 The detection algorithms in TrackMate are basic: they are all based or approximated from the {% include wikipedia title='Blob detection#The_Laplacian_of_Gaussian' text='Laplacian of Gaussian'%} technique. They work well even in the presence of noise for round or spherical and well separated objects. As soon as you move away from these requirements, you will feel the need to implement your own custom detector.
 
-This is the subject of this tutorial, which I promised to be rather difficult. Not because implementing a custom detection algorithm is difficult. It *is* difficult, even very difficult if you are not familiar with the [ImgLib2](/imglib2) library. But we will skip this difficulty here by not making a true detector, but just a dummy one that returns detections irrespective of the image content. This involved task is left to your Java and ImgLib2 skills.
+This is the subject of this tutorial, which I promised to be rather difficult. Not because implementing a custom detection algorithm is difficult. It *is* difficult, even very difficult if you are not familiar with the [ImgLib2](/libs/imglib2) library. But we will skip this difficulty here by not making a true detector, but just a dummy one that returns detections irrespective of the image content. This involved task is left to your Java and ImgLib2 skills.
 
 No, this tutorial will be difficult because contrary to the previous ones, we need to do a lot of work even for just a dummy detector. The reason for this comes from our desire to have a nice and tidy integration in TrackMate. The custom detector we will write will be a first-class citizen of TrackMate, and this means several things: Not only it must be able to provide a proper detection, but it must also
 
@@ -29,7 +29,7 @@ Let's get started with the easiest part, the detection algorithm.
 
 ### A detector instance operates on a single frame.
 
-The detection part itself is implemented in a class that implements the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/detection/SpotDetector.java' label='SpotDetector' %} interface. Browsing there, you will see that it is just a specialization of an output algorithm from [ImgLib2](/imglib2). We are required to spit out a `List`<Spot> that represents the list of detection (one `Spot` per detection) for a **single frame**.
+The detection part itself is implemented in a class that implements the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/detection/SpotDetector.java' label='SpotDetector' %} interface. Browsing there, you will see that it is just a specialization of an output algorithm from [ImgLib2](/libs/imglib2). We are required to spit out a `List`<Spot> that represents the list of detection (one `Spot` per detection) for a **single frame**.
 
 This is important: <u>an instance of your detector is supposed to work on a single frame</u>. TrackMate will generate as many instances of the detector per frame it has to operate on. This facilitates development, but also multithreading: TrackMate fires one detector per thread it has access to, and this is done without you having to worry about it. TrackMate will bundle the outputs of all detectors in a thread-safe manner.
 
@@ -55,7 +55,7 @@ Any omission will trigger errors at runtime.
 
 ### A dummy detector that returns spiraling spots.
 
-For this tutorial we will build a dummy detector, that actually fully ignores the image content and just create spots that seem to spiral out from the center of the image. A real detector would require you to hone your [ImgLib2](/imglib2) skills; check the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/detection/LogDetector.java' label='LogDetector' %} code for an example.
+For this tutorial we will build a dummy detector, that actually fully ignores the image content and just create spots that seem to spiral out from the center of the image. A real detector would require you to hone your [ImgLib2](/libs/imglib2) skills; check the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/detection/LogDetector.java' label='LogDetector' %} code for an example.
 
 Below is the source code for the dummy detector. You can also find it {% include github org='fiji' repo='TrackMate-examples' source='plugin/trackmate/examples/detector/SpiralDummyDetector.java' label='online' %}. Let's comment a bit on this:
 
@@ -259,7 +259,7 @@ Since the TrackMateModule concrete implementation must have a blank constructor,
         @Override
         public boolean setTarget( final ImgPlus< T > img, final Map< String, Object > settings )
 
-The raw image data is returned as an {% include github repo='imglib' path='meta/src/main/java/net/imglib2/meta/ImgPlus.java' label='ImgPlus' %}, that can be seen as the [ImgLib2](/imglib2) equivalent of ImageJ1 {% include github org='imagej' repo='ImageJA' source='ij/ImagePlus.java' label='ImagePlus' %}. It contains the pixel data for all available dimensions (all X, Y, Z, C, T if any), plus the spatial calibration we need to operate in physical units. The concrete factory must be able to extract from this ImgPlus the data useful for the SpotDetectors it will instantiate, keeping in mind that each SpotDetector operates on one frame.
+The raw image data is returned as an {% include github repo='imglib' path='meta/src/main/java/net/imglib2/meta/ImgPlus.java' label='ImgPlus' %}, that can be seen as the [ImgLib2](/libs/imglib2) equivalent of ImageJ1 {% include github org='imagej' repo='ImageJA' source='ij/ImagePlus.java' label='ImagePlus' %}. It contains the pixel data for all available dimensions (all X, Y, Z, C, T if any), plus the spatial calibration we need to operate in physical units. The concrete factory must be able to extract from this ImgPlus the data useful for the SpotDetectors it will instantiate, keeping in mind that each SpotDetector operates on one frame.
 
 The second argument is the settings map for this specific detector. It takes the shape of a map with string keys and object values, that can be cast to whatever relevant class. The concrete factory must be able to check that all the required parameters are there, and have a valid class, and to feed to the SpotDetector instances. We will see below that the user provides them through a configuration panel.
 

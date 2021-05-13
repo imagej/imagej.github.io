@@ -535,7 +535,7 @@ The stacks are accessed in a virtual way, so even 1000 (one thousand) stacks wil
 
 One could easily add more color channels. But there are already lots.
 
-The script uses [Imglib](/imglib1) scripting to normalize images and generate the color composite. See this [imglib scripting tutorial](http://www.ini.uzh.ch/~acardona/fiji-tutorial/#s10) for in-depth explanations.
+The script uses [Imglib](/libs/imglib1) scripting to normalize images and generate the color composite. See this [imglib scripting tutorial](http://www.ini.uzh.ch/~acardona/fiji-tutorial/#s10) for in-depth explanations.
 
 ![](/media/corti-multi-channel.png "Corti-multi-channel.png")
 

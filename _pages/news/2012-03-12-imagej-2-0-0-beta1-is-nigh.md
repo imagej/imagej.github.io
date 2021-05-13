@@ -10,8 +10,8 @@ The beta still has many bugs and limitations, but we have several substantial mi
 
 -   Support for most ImageJ1 plugins and macros
 -   Import and export of all [SCIFIO](/software/scifio)-supported file formats
--   Many new pixel types (thanks to [ImgLib2](/imglib2))
--   Multidimensional data beyond 5D (thanks to [ImgLib2](/imglib2))
+-   Many new pixel types (thanks to [ImgLib2](/libs/imglib2))
+-   Multidimensional data beyond 5D (thanks to [ImgLib2](/libs/imglib2))
 -   Improved region of interest (ROI) tools
 -   Truly headless: image processing is separate from user interface
 -   Automatic updates: once you download beta1, ImageJ can update itself (with your permission)

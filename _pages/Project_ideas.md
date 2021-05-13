@@ -12,9 +12,9 @@ This page contains a loose list of ideas for cool/useful projects that have some
 
 ## 3-way viewer for Block-Face EM image volumes based in ImgLib cells
 
-The [Imglib](/imglib1) provides a cell container, where each cell is an arbitrary n-dimensional image block potentially paged out to a file. Consider the specific case of isotropic 3d-cells stored with lossless compression. This setup would enable efficient browsing and analysis of image volumes larger than available RAM, while observing a specific 3d ROI from XY, YZ and XZ planes. These image volumes are common in [Block-Face Serial Scanning Electron Microscopy](http://www.plosbiology.org/article/info:doi/10.1371/journal.pbio.0020329), a technique now commercialized as "Gatan 3-way view EM." See this page for [theory](http://www.gatan.com/knowhow/knowhow_15/3view.htm) and for [pictures and examples](http://www.gatan.com/resources/knowhow/kh18-3view.php).
+The [Imglib](/libs/imglib1) provides a cell container, where each cell is an arbitrary n-dimensional image block potentially paged out to a file. Consider the specific case of isotropic 3d-cells stored with lossless compression. This setup would enable efficient browsing and analysis of image volumes larger than available RAM, while observing a specific 3d ROI from XY, YZ and XZ planes. These image volumes are common in [Block-Face Serial Scanning Electron Microscopy](http://www.plosbiology.org/article/info:doi/10.1371/journal.pbio.0020329), a technique now commercialized as "Gatan 3-way view EM." See this page for [theory](http://www.gatan.com/knowhow/knowhow_15/3view.htm) and for [pictures and examples](http://www.gatan.com/resources/knowhow/kh18-3view.php).
 
-**Goal:** create a 3-way viewer for a 3d instance of an [Imglib](/imglib1)'s cell container.\\
+**Goal:** create a 3-way viewer for a 3d instance of an [Imglib](/libs/imglib1)'s cell container.\\
 **Language:** any supported by Fiji, preferably java.\\
 **Contact:** {% include person id='acardona' %}
 

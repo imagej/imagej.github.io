@@ -27,7 +27,7 @@ ImageJ2 is a new version of [ImageJ](/about) for the next generation of multidim
 
 To ensure backwards compatibility, ImageJ2 has been designed to fully integrate into the existing ImageJ user interface. This allows users to keep using ImageJ in familiar ways, while providing the ability to migrate toward more powerful new features as needed.
 
-The [Fiji](/fiji) distribution of ImageJ has shipped with beta versions of ImageJ2 for quite some time, so you may already be familiar with some of ImageJ2's features—some of which, such as the [Updater](/plugins/updater) and [Launcher](Launcher), were originally developed as part of Fiji. 
+The [Fiji](/software/fiji) distribution of ImageJ has shipped with beta versions of ImageJ2 for quite some time, so you may already be familiar with some of ImageJ2's features—some of which, such as the [Updater](/plugins/updater) and [Launcher](Launcher), were originally developed as part of Fiji. 
 
 
 ## Features of ImageJ2
@@ -40,7 +40,7 @@ ImageJ2 provides a wealth of new features and capabilities:
 -   New commands:
     -   {% include bc path='Plugins | Debug | Dump Stack'%} for debugging when things {% include wikipedia title='Hang (computing)' text='hang'%}.
     -   {% include bc path='Plugins | Debug | System Information'%} for reporting on versions of installed plugins and libraries.
--   Use ImageJ2's N-dimensional [ImgLib2](/imglib2)-based data structures (still in beta).
+-   Use ImageJ2's N-dimensional [ImgLib2](/libs/imglib2)-based data structures (still in beta).
 -   Write parameterized commands and scripts:
     -   Typed inputs and outputs with no dependence on AWT user interface.
     -   Mix and match ImageJ 1.x and ImageJ2 data structures.

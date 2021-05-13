@@ -4,7 +4,7 @@ title: 2016-01-29 - KNIME Image Processing hackathon
 categories: [News,Hackathons,ImageJ2,KNIME]
 ---
 
-From Monday, January 11, 2016 through Friday, January 22, 2016, {% include person id='dietzc' %} of the [University of Konstanz](http://www.uni-konstanz.de/en/welcome/) hosted \~30 developers at the [KNIME Konstanz Regional Office](https://www.knime.org/contact) for a [hackathon](/events/Hackathon) to develop the [KNIME](/software/knime) Image Processing extensions along with the underlying [ImageJ Ops](/libs/imagej-ops) library, as well as other supporting technologies such as [ImgLib2](/imglib2) and [ClearVolume](/plugins/clearvolume).
+From Monday, January 11, 2016 through Friday, January 22, 2016, {% include person id='dietzc' %} of the [University of Konstanz](http://www.uni-konstanz.de/en/welcome/) hosted \~30 developers at the [KNIME Konstanz Regional Office](https://www.knime.org/contact) for a [hackathon](/events/Hackathon) to develop the [KNIME](/software/knime) Image Processing extensions along with the underlying [ImageJ Ops](/libs/imagej-ops) library, as well as other supporting technologies such as [ImgLib2](/libs/imglib2) and [ClearVolume](/plugins/clearvolume).
 
 ## Timeline
 
@@ -148,7 +148,7 @@ PlotData=
 <!-- -->
 
 -   Bugs
-    -   Fixed equals/hashCode problems with [ImgLib2](/imglib2) integer types ({% include github org='imglib' repo='imglib2' pr='111' label='imglib/imglib2\#111' %})
+    -   Fixed equals/hashCode problems with [ImgLib2](/libs/imglib2) integer types ({% include github org='imglib' repo='imglib2' pr='111' label='imglib/imglib2\#111' %})
     -   Fixed a bug in the [SJC](/libs/scijava-common) PrefService, noticed by {% include person id='kephale' %} ({% include github org='scijava' repo='scijava-common' commit='ab2a9adae7a8e6e8785874a13bbf805c5f8e71fe' label='long-pref-keys' %})
     -   Fixed [SCIFIO](/software/scifio) bug with DICOM format, noticed by {% include person id='kmader' %} ({% include github org='scifio' repo='scifio' pr='292' label='dicom-file-list-npe' %})
     -   Fixed bug when executing ops as commands, noticed by {% include person id='kephale' %} ({% include github org='imagej' repo='imagej-ops' commit='34b5523dfc051741a9ed69d2b5b9f97df24f2677' label='ops-as-commands' %})

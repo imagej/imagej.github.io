@@ -16,7 +16,7 @@ Here is a quick summary of the most recommended options:
 
 -   **Distribution.**
     -   A\) **[create your own update site](/update-sites/setup)**; or
-    -   B\) **[bundle your plugin with Fiji](/fiji/contribution-requirements)**.
+    -   B\) **[bundle your plugin with Fiji](/software/fiji/contribution-requirements)**.
 -   **Source code.**
     -   Make your project **[open source](Open_source)**.
     -   Host it on **[GitHub](/develop/github)**.
@@ -130,7 +130,7 @@ If you want to facilitate good science, please [share your source code](Open_Sou
     </tr>
     <tr class="odd">
       <td>
-        <p><strong>Host on GitHub in the Fiji organization (for <a href="/fiji/contribution-requirements">extensions distributed with Fiji</a>)</strong></p>
+        <p><strong>Host on GitHub in the Fiji organization (for <a href="/software/fiji/contribution-requirements">extensions distributed with Fiji</a>)</strong></p>
       </td>
     </tr>
     <tr class="even">
@@ -142,7 +142,7 @@ If you want to facilitate good science, please [share your source code](Open_Sou
       <td style="background: #dfd; vertical-align: top">
         <ul>
           <li>Request a <strong><a href="/about/governance">Fiji maintainer</a></strong> create a repository for you and add you as a contributor.</li>
-          <li>Meet the <strong><a href="/fiji/contribution-requirements">Fiji contribution requirements</a></strong>.</li>
+          <li>Meet the <strong><a href="/software/fiji/contribution-requirements">Fiji contribution requirements</a></strong>.</li>
         </ul>
       </td>
     </tr>

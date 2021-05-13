@@ -118,7 +118,7 @@ If you do not have ImageJ yet, you can download [bootstrap.js](http://update.ima
 
 This uses the **jrunscript** executable of your Java installation to run the Javascript file tracked in ImageJ's {% include github org='imagej' repo='imagej-updater' path='bin/bootstrap.js' label='source code repository' %}.
 
-The `bootstrap.js` script was originally intended to fix broken [Fiji](/fiji) installations, and was subsequently enhanced to initialize the updater in an ImageJ 1.x-only directory -- or even from a complete fresh state.
+The `bootstrap.js` script was originally intended to fix broken [Fiji](/software/fiji) installations, and was subsequently enhanced to initialize the updater in an ImageJ 1.x-only directory -- or even from a complete fresh state.
 
 ## Managing a mirror of ImageJ update sites
 
@@ -172,10 +172,10 @@ Once the mirrors get populated, you can start using them on your ImageJ installa
 
 ## History
 
-The original updater was written in a frantic week in October 2008 in preparation for the first public [Fiji](/fiji) release, to be able to keep Fiji up-to-date.
+The original updater was written in a frantic week in October 2008 in preparation for the first public [Fiji](/software/fiji) release, to be able to keep Fiji up-to-date.
 
 In the course of one of two successful Google Summer of Code projects, the updater was rewritten from scratch (but in a [backwards-compatible manner](/libs/imagej-legacy)) by Yap Chin Kiet under the mentorship of Mark Longair and Johannes Schindelin in 2009.
 
 Johannes Schindelin got stuck with the maintainership and introduced third-party update sites (a feature that many claimed to desire, though no pinky was harmed by contributing any code) in the course of a very successful [hackathon](/events/Hackathon#imagej-hackathons) at the Lawrence Berkeley National Laboratory in October 2010 and another one in February 2011 hosted by [LOCI](/orgs/loci).
 
-As of September 2012, the Fiji Updater has moved to [ImageJ2](/software/imagej2). Details can be found in the announcement: [2012-09-14 - The Updater moved](/news/2012-09-14_-_The_Updater_moved).
+As of September 2012, the Fiji Updater has moved to [ImageJ2](/software/imagej2). Details can be found in the announcement: [2012-09-14 - The Updater moved](/news/2012-09-14-the-updater-moved).

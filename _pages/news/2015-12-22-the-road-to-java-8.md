@@ -7,7 +7,7 @@ categories: [ImageJ2,Fiji,News]
 <div style="float: right; padding-left: 1em">
 </div>
 
-For {% include github org='imagej' repo='imagej' issue='135' label='many reasons' %}, ImageJ needs to switch to Java 8. Hence, in recent months, the ImageJ team at [LOCI](/orgs/loci) has been [taking steps toward migrating ImageJ and Fiji toward Java 8](/news/2015-06-15_-_Major_updates_in_the_works). This week marks a significant milestone in that effort:
+For {% include github org='imagej' repo='imagej' issue='135' label='many reasons' %}, ImageJ needs to switch to Java 8. Hence, in recent months, the ImageJ team at [LOCI](/orgs/loci) has been [taking steps toward migrating ImageJ and Fiji toward Java 8](/news/2015-06-15-major-updates-in-the-works). This week marks a significant milestone in that effort:
 
 1.  Several ImageJ and Fiji components migrated to Java 7 or 8; and
 2.  A new Java-8 [update site](/update-sites) was created, which offers the latest releases of these components.
@@ -114,7 +114,7 @@ The following ImageJ and Fiji components now require a minimum Java version of J
     </tr>
     <tr class="odd">
       <td>
-        <p><a href="/fiji">Fiji</a></p>
+        <p><a href="/software/fiji">Fiji</a></p>
       </td>
       <td></td>
       <td></td>
@@ -123,7 +123,7 @@ The following ImageJ and Fiji components now require a minimum Java version of J
     </tr>
     <tr class="even">
       <td>
-        <p><a href="/imglib1">legacy-imglib1</a></p>
+        <p><a href="/libs/imglib1">legacy-imglib1</a></p>
       </td>
       <td>
         <p>Java 7</p>

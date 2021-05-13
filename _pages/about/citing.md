@@ -16,7 +16,7 @@ section: About
 We ask users to cite:
 
 1.  Any [specific publications](Category_Citable) of [plugins](/plugins) used.
-2.  The general paper of ImageJ distribution(s) used—e.g., if you used [Fiji](/fiji), cite the [Fiji](/fiji) paper.
+2.  The general paper of ImageJ distribution(s) used—e.g., if you used [Fiji](/software/fiji), cite the [Fiji](/software/fiji) paper.
 3.  The general [ImageJ](/about) paper.
 
 If journal reference limits interfere, the plugin-specific publications should take precedence.
@@ -82,7 +82,7 @@ Thank you for your support.
         <p>{% include logo content='Fiji' %}</p>
       </td>
       <td>
-        <p><a href="/fiji">Fiji</a></p>
+        <p><a href="/software/fiji">Fiji</a></p>
       </td>
       <td>
         <p>{% include publication content='Fiji' %}</p>
@@ -122,7 +122,7 @@ Thank you for your support.
         <p>{% include logo content='ImgLib2' %}</p>
       </td>
       <td>
-        <p><a href="/imglib2">ImgLib2</a></p>
+        <p><a href="/libs/imglib2">ImgLib2</a></p>
       </td>
       <td>
         <p>{% include publication content='ImgLib2' %}</p>
@@ -175,4 +175,4 @@ Thank you for your support.
 </table>
 {:/}
 
-See the [list of citable software](Category_Citable) and [publications using Fiji](/fiji/publications) for additional citation information.
+See the [list of citable software](Category_Citable) and [publications using Fiji](/software/fiji/publications) for additional citation information.

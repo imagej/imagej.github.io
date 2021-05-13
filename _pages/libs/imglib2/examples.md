@@ -22,13 +22,13 @@ All examples presented on this page are always entire classes including a main m
 
 -   imglib2 (the core)
 -   imglib2-algorithm (algorithms implemented in ImgLib2)
--   imglib2-algorithm-gpl (for example 6b and 6c: GPL-licensed algorithms implemented in ImgLib2—ships with [Fiji](/fiji) only, not plain [ImageJ2](/software/imagej2), for [licensing](/licensing) reasons)
+-   imglib2-algorithm-gpl (for example 6b and 6c: GPL-licensed algorithms implemented in ImgLib2—ships with [Fiji](/software/fiji) only, not plain [ImageJ2](/software/imagej2), for [licensing](/licensing) reasons)
 -   imglib2-ij (the ImageJ interaction)
 -   imglib2-realtransform (for example 8)
 -   scifio (for reading and writing files)
 -   ij (ImageJ 1.x core, used for display)
 
-Alternately, you can access the examples from the {% include github org='imglib' repo='imglib2-tutorials' label='ImgLib-tutorials Git repository' %}. After cloning the source code, open the project in your favorite IDE. See [Developing ImgLib2](/imglib2/developing) for further details.
+Alternately, you can access the examples from the {% include github org='imglib' repo='imglib2-tutorials' label='ImgLib-tutorials Git repository' %}. After cloning the source code, open the project in your favorite IDE. See [Developing ImgLib2](/libs/imglib2/developing) for further details.
 
 ## Example 1 - Opening, creating and displaying images
 

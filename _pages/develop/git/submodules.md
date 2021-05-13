@@ -21,7 +21,7 @@ Submodules, although existing as folders inside the fiji repository, are differe
 
 Each submodule is a proper full-fledged git repository, so any git commands executed within the folders of the submodule will affect that git repository, not fiji's.
 
-However, to work with a submodule you must clone that repository. See the [Submodules](/fiji/building-from-source#submodules) section of the [Downloading and Building Fiji From Source](/fiji/building-from-source) page for details.
+However, to work with a submodule you must clone that repository. See the [Submodules](/software/fiji/building-from-source#submodules) section of the [Downloading and Building Fiji From Source](/software/fiji/building-from-source) page for details.
 
 ### Submodule workflow
 

@@ -15,7 +15,7 @@ SCIFIO is focused on robust and extensible support for reading and writing image
 
 -   There is no need to call a special SCIFIO plugin; it works with commands like {% include bc path='File | Open'%} automatically.
 -   There are additional import options available via the {% include bc path='File | Import | Image...'%} command.
--   There is a [Bio-Formats](/formats/bio-formats) plugin for SCIFIO, included with the [Fiji](/fiji) distribution of ImageJ, that adds automatic support for over a hundred life sciences file formats.
+-   There is a [Bio-Formats](/formats/bio-formats) plugin for SCIFIO, included with the [Fiji](/software/fiji) distribution of ImageJ, that adds automatic support for over a hundred life sciences file formats.
 -   Additional SCIFIO file format plugins can be dropped into ImageJ and will also work automatically.
 -   Unlike the ImageJ 1.x TIFF implementation, SCIFIO's support for TIFF adheres to the specification, allowing to successfully read many more sorts of TIFFs.
 -   Similarly, SCIFIO supports more sorts of JPEG files since it uses its own JPEG decoder.

@@ -23,17 +23,17 @@ See also [Developing Fiji in Eclipse](/develop/eclipse) for a tutorial specific 
 
 ## Getting started
 
-First, you have to [download and build Fiji](/fiji/building-from-source). If you do not know Git yet, we have a [concise introduction](/develop/git) for you.
+First, you have to [download and build Fiji](/software/fiji/building-from-source). If you do not know Git yet, we have a [concise introduction](/develop/git) for you.
 
 ## Building Fiji
 
 Fiji is organized into a set of [Maven](/develop/maven) projects. For convenience and speed, there is [SciJava](SciJava)'s minimal Maven-lookalike [MiniMaven](/develop/minimaven) to build Fiji, but it is recommended to use an [Integrated Development Environment](/develop/ides), or at least real Maven.
 
-For details, please see [Downloading and Building Fiji From Source](/fiji/building-from-source). See also the [Supported Compilers](/develop/supported-compilers) page for more information.
+For details, please see [Downloading and Building Fiji From Source](/software/fiji/building-from-source). See also the [Supported Compilers](/develop/supported-compilers) page for more information.
 
 ## Testing
 
-It is strongly recommended to write regression tests (also known as *unit tests*). It is [easy](/fiji/contribution-requirements#regression-tests).
+It is strongly recommended to write regression tests (also known as *unit tests*). It is [easy](/software/fiji/contribution-requirements#regression-tests).
 
 Furthermore, it is highly recommended to write and run unit tests in an [Integrated Development Environment](/develop/ides) for efficient debugging.
 
@@ -57,7 +57,7 @@ If you have an account on this Wiki, you can easily create new tutorials with th
 
 ## Further reading for developers
 
--   [Overview of Fiji's source code](/fiji/source)
+-   [Overview of Fiji's source code](/software/fiji/source)
 -   [Description of ImageJ's plugin architecture](/develop/plugin-architecture)
 -   [Tips for developers](/develop/tips)
 -   [ImageJ1 Javadoc ZIP](http://jenkins.imagej.net/job/ImageJ1-javadoc/lastStableBuild/artifact/target/site/apidocs/) (for offline usage)

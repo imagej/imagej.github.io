@@ -80,7 +80,7 @@ If you need to use classes that aren't in the `java.*` or `ij.*` hierarchy—or 
 
 {%- include importing-classes lang='JRuby' -%}
 
-For example, in the classpath of [Fiji](/fiji) there is a useful class called `util.BatchOpener,` that has static methods for opening files as arrays of `ImagePlus` objects (one per channel) without showing them. To use these methods, you would have to do:
+For example, in the classpath of [Fiji](/software/fiji) there is a useful class called `util.BatchOpener,` that has static methods for opening files as arrays of `ImagePlus` objects (one per channel) without showing them. To use these methods, you would have to do:
 ```ruby
 >>> java_import 'util.BatchOpener'
 util.BatchOpener

@@ -4,7 +4,7 @@ title: 2014-03-27 - ImageJ2 and Fiji recent milestones
 categories: [News,ImageJ2]
 ---
 
-Every so often, it is good to look back at a project's progress over the past couple of years. [ImageJ2](/software/imagej2) and [Fiji](/fiji) have made great strides; what follows is a summary of some of the biggest achievements in recent history.
+Every so often, it is good to look back at a project's progress over the past couple of years. [ImageJ2](/software/imagej2) and [Fiji](/software/fiji) have made great strides; what follows is a summary of some of the biggest achievements in recent history.
 
 The most important feature of Fiji (the ImageJ distribution for the life sciences) is most certainly the [updater](/plugins/updater). Two years ago, the updater source code was moved from Fiji into ImageJ2. Ever since, when you call {% include bc path="Help|Update Fiji" %}, it is actually the ImageJ2 updater performing her duties. Rationale for the move: Fiji and ImageJ2 collaborate very closely (consistent with {% include person id='dscho' %} joining [LOCI](http://loci.wisc.edu/), the home of ImageJ2, in the fall of 2011), and it was obvious that ImageJ2 should play the role of generic image processing core while Fiji is dedicated to support the life sciences.
 
@@ -21,7 +21,7 @@ While we obviously spend a lot of effort to support existing ImageJ 1.x users (f
 
 In addition to supporting users on the ImageJ mailing list, a lot of developer support has been happening, too, resulting in powerful new plugins such as [TrackMate](/plugins/trackmate)—an extensible tracking framework—and the [BigDataViewer](/plugins/bdv)—a multi-dimensional viewer for huge datasets.
 
-Both are based on [ImgLib2](/imglib2), the data processing library serving as the core of ImageJ2. You see, whenever we found that a component we use in ImageJ2 would be useful to other projects, too, we put in that extra effort to make it so. You can use ImgLib2 without using ImageJ.
+Both are based on [ImgLib2](/libs/imglib2), the data processing library serving as the core of ImageJ2. You see, whenever we found that a component we use in ImageJ2 would be useful to other projects, too, we put in that extra effort to make it so. You can use ImgLib2 without using ImageJ.
 
 To put the importance of ImgLib2 into perspective: the industry-grade data mining environment [KNIME](/software/knime) started to [support image processing](http://tech.knime.org/community/image-processing) using exactly that library. This collaboration led to an amazing hackathon two weeks ago, the {% include github org='imagej' repo='imagej-ops' label='results of which' %} you can be certain to hear about soon ;-).
 

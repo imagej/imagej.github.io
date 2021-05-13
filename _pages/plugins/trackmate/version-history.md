@@ -29,9 +29,9 @@ Initial release
 
 ## 25/02/2013 - v2.0.0
 
-[Major update](/news/2013-02-25_-_TrackMate_v2.0.0_released):
+[Major update](/news/2013-02-25-trackmate-v2-0-0-released):
 
--   TrackMate now uses [ImgLib2](/imglib2) internally, and is therefore ready to be moved to [ImageJ2](/software/imagej2).
+-   TrackMate now uses [ImgLib2](/libs/imglib2) internally, and is therefore ready to be moved to [ImageJ2](/software/imagej2).
 -   TrackMate now computes edge features (on top of spot and track features). These features enable the immediate measure of velocity, displacement, etc...
 -   Tracks can be colored in the Hyperstack displayer, in the 3D viewer and in TrackScheme using indifferently track or edge features.
 -   All spot, edge and track features are computed automatically and kept in sync even versus manual modifications.
@@ -103,7 +103,7 @@ Initial release
 
 -   Major **improvement for tracking performance**: The LAP trackers are now based on the [Jonker-Volgenant](http://link.springer.com/article/10.1007%2FBF02278710) solver, which performs better than the Munkres-Kuhn we were using until then. Our initial tests report that this new version runs 2x to 4x faster.
 -   A **major problem was found in the LoG detector**: Because of a severe rounding error, the LoG detector was not behaving as a true LoG detector, which strongly hindered its accuracy and potence. The problem is now fixed and **the accuracy of the detector has vastly improved**. You should now observe much better results when using this detector: less spurious spots, better spot size sensitivity, better sensitivity to faint spots. On its side, the DoG detector now handles spots that lie on the border of the images better. Of course, the results will be different when comparing to v2.1.1.
--   We also took the chance to rewrite all the detectors from scratch, using the latest development in [ImgLib2](/imglib2). This prompted **major performance improvement for the detection process**.
+-   We also took the chance to rewrite all the detectors from scratch, using the latest development in [ImgLib2](/libs/imglib2). This prompted **major performance improvement for the detection process**.
 -   Complete rewrite of the way we handle modules in TrackMate. TrackMate now uses [SciJava](http://www.scijava.org/) and exploit its automatic discovery mechanism for modules. Practically, **it is now very easy to extend TrackMate**, and you do not depend on us anymore at all for anything. We could completely disappear and you would still be able to extend TrackMate so that it suits your need, without requiring any of our help. Several [tutorials](/plugins/trackmate#for-developers-1) describe how to do this. This is made possible thanks to the enormous efforts of the SciJava team. Thanks to them!
 -   In [TrackScheme](/plugins/trackmate/trackscheme), the tracks can be navigated through using the keyboard:
     -   UP: previous spot in time.
@@ -190,7 +190,7 @@ Initial release
 
 ## 22-12-2014 - v2.6.3
 
-TrackMate version bumped by several increments, prompted by the [big update](/news/2014-12-10_-_ImgLib2_released) that happened to Fiji between this and the previous release. Some minor bugfixes and improvements are shipped nonetheless.
+TrackMate version bumped by several increments, prompted by the [big update](/news/2014-12-10-imglib2-released) that happened to Fiji between this and the previous release. Some minor bugfixes and improvements are shipped nonetheless.
 
 -   In the table exports, spots and links are sorted by track then by frame.
 -   TrackMate now works with 1D images: image sequences made of single line or single column frames.
@@ -223,7 +223,7 @@ TrackMate version bumped by several increments, prompted by the [big update](/ne
 
 -   Fix a bug, incorrectly fixed in imglib, that caused dead threads to accumulate upon running the detection step. Noticed and fixed by @hadim, @dietzc and @tpietzsch.
 
-## 27-10-2015 - [v2.8.0](/news/2015-10-27_-_TrackMate_v2.8.0_released)
+## 27-10-2015 - [v2.8.0](/news/2015-10-27-trackmate-v2-8-0-released)
 
 -   Contributed modules.
     -   Ronny Sczech linear tracker and batch modules.

@@ -226,7 +226,7 @@ For details check out this example of a remote update site database file:
 A freshly downlodaed Fiji `db.xml` file additionally contains entries for the update sites which are enabled by default:
 
     <update-site name="/about" url="http://update.imagej.net/" timestamp="20181128223928"/>
-    <update-site name="/fiji" url="http://update.fiji.sc/" timestamp="20171213124524"/>
+    <update-site name="/software/fiji" url="http://update.fiji.sc/" timestamp="20171213124524"/>
     <update-site name="Java-8" url="http://sites.imagej.net/Java-8/" timestamp="20181204081238"/>
 
 Once the user opens the list of update sites, the updater is accessing the official list of update sites (see the [update site chapter](#list-of-update-sites)) and adding entries for the disabled but available update sites to the database.
@@ -276,7 +276,7 @@ For more details check out this example of a the `db.xml` of a local Fiji instal
     <!ATTLIST previous-version checksum CDATA #REQUIRED>]>
     <pluginRecords>
       <update-site name="/about" url="http://update.imagej.net/" timestamp="20181129053928"/>
-      <update-site name="/fiji" url="http://update.fiji.sc/" timestamp="20171213194524"/>
+      <update-site name="/software/fiji" url="http://update.fiji.sc/" timestamp="20171213194524"/>
       <disabled-update-site name="Fiji-Legacy" url="http://sites.imagej.net/Fiji-Legacy/" description="Restores old Fiji plugins which never made the transition to Maven, as well as obsolete libraries no longer used by current Fiji installations." timestamp="0"/>
       <update-site name="Java-8" url="http://sites.imagej.net/Java-8/" timestamp="20181207191837"/>
       <disabled-update-site name="2015-Conference" url="http://sites.imagej.net/2015-Conference/" description="A collection of plugins highlighting the latest features of ImageJ. As seen in Wayne Rasband's opening talk at the 2015 conference!" timestamp="0"/>
@@ -307,7 +307,7 @@ For more details check out this example of a the `db.xml` of a local Fiji instal
             <previous-version timestamp="20130620192406" checksum="9b8a1d36fe119b298cdb90c81f2c44730d1fa1d6" filename="jars/jai_imageio-4.4.8.jar"/>
             <previous-version timestamp="20130716162630" checksum="e5852db5bd833fddeec7dc72601f8b037a59375a" filename="jars/jai_imageio-1.0.1.jar"/>
         </plugin>
-        <plugin update-site="/fiji" filename="jars/lwf-stubs-4.4.8.jar">
+        <plugin update-site="/software/fiji" filename="jars/lwf-stubs-4.4.8.jar">
             <previous-version timestamp="20120404210913" checksum="79306ce7fc25148381c47a792072fa3c77c49163" filename="jars/lwf-stubs-4.4-imagej-2.0.0-beta1.jar"/>
             <previous-version timestamp="20120518211518" checksum="a21325f2fb086c10e3fbaa9521893e8e87182ece" filename="jars/lwf-stubs-4.4-imagej-2.0.0-beta2.1.jar"/>
             <previous-version timestamp="20120713182620" checksum="c32b8e83de4ccc3f0bbe26c1a39ff3710945b4e8" filename="jars/lwf-stubs-4.4.0.jar"/>
@@ -349,12 +349,12 @@ For more details check out this example of a the `db.xml` of a local Fiji instal
             <previous-version timestamp="20160121115531" checksum="c42c3c6afcbdeb7658a04fcef98880d6d2bcf212" filename="jars/imagej-launcher-4.0.3.jar"/>
         </plugin>
     ...
-        <plugin update-site="/fiji" filename="luts/blue_orange_icb.lut">
+        <plugin update-site="/software/fiji" filename="luts/blue_orange_icb.lut">
             <version checksum="a4cec22b96c306321ba4c7b3ff30df9fa7919616" timestamp="20090918172547" filesize="800"/>
             <previous-version timestamp="20080801134354" checksum="a4cec22b96c306321ba4c7b3ff30df9fa7919616" filename="luts/blue_orange_icb.lut"/>
             <previous-version timestamp="20090918172547" checksum="a4cec22b96c306321ba4c7b3ff30df9fa7919616" filename="luts/blue_orange_icb.lut"/>
         </plugin>
-        <plugin update-site="/fiji" filename="luts/brgbcmyw.lut">
+        <plugin update-site="/software/fiji" filename="luts/brgbcmyw.lut">
             <version checksum="c9e396a3f83ee8cebf1ed28d3e2d53296cc908e7" timestamp="20090918172547" filesize="768"/>
             <previous-version timestamp="20080801134354" checksum="c9e396a3f83ee8cebf1ed28d3e2d53296cc908e7" filename="luts/brgbcmyw.lut"/>
             <previous-version timestamp="20090918172547" checksum="c9e396a3f83ee8cebf1ed28d3e2d53296cc908e7" filename="luts/brgbcmyw.lut"/>

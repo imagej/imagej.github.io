@@ -33,7 +33,7 @@ You can find the dotfiles in the following repositories:
     </tr>
     <tr class="even">
       <td style="text-align: center; vertical-align: bottom">
-        <p><a href="/imglib2"><img src="/media/imglib2-icon.png" width="48px"></a><br>
+        <p><a href="/libs/imglib2"><img src="/media/imglib2-icon.png" width="48px"></a><br>
         {% include github org='imglib2' repo='dotfiles' label='imglib2/dotfiles' %}</p>
       </td>
       <td style="text-align: center; vertical-align: bottom">
@@ -41,7 +41,7 @@ You can find the dotfiles in the following repositories:
         {% include github org='scifio' repo='dotfiles' label='scifio/dotfiles' %}</p>
       </td>
       <td style="text-align: center; vertical-align: bottom">
-        <p><a href="/fiji"><img src="/media/fiji-icon.png" width="48px"></a><br>
+        <p><a href="/software/fiji"><img src="/media/fiji-icon.png" width="48px"></a><br>
         {% include github org='fiji' repo='dotfiles' label='fiji/dotfiles' %}</p>
       </td>
       <td style="text-align: center; vertical-align: bottom">

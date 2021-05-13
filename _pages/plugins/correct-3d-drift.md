@@ -7,7 +7,7 @@ artifact: sc.fiji:Correct\_3D\_Drift
 
 This Fiji menu command is implemented by the script {% include github org='fiji' repo='Correct\_3D\_Drift' path='src/main/resources/scripts/Plugins/Registration/Correct\_3D\_drift.py' label='Correct\_3D\_Drift.py' %}.
 
-1.  The script expects the currently open and active image to be a hyperstack (or virtual hyperstack) consisting of 2D or 3D volumes over time. The script registers the time points to each other using the phase correlation implementation of [ImgLib 1](/imglib1).
+1.  The script expects the currently open and active image to be a hyperstack (or virtual hyperstack) consisting of 2D or 3D volumes over time. The script registers the time points to each other using the phase correlation implementation of [ImgLib 1](/libs/imglib1).
 2.  Once implemented a dialogue box will request the use to select the color channel to use for registration.
 3.  If memory is limiting on the system then the user can select to use a virtualstack for the result.
 4.  If a virtualstack is selected the a folder save the aligned stack to needs to be selected.

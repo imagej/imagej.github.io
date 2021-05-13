@@ -20,7 +20,7 @@ Throughout this article, and elsewhere on this wiki, we use the following terms:
 -   A software **project** is a more general term referring to either a single component or a *collection* of related components. For example, the phrase "ImageJ project" refers to several components including [ImageJ Common](/plugins/imagej-common), [ImageJ Ops](/libs/imagej-ops), [ImageJ Legacy](/libs/imagej-legacy) and the [ImageJ Updater](/plugins/updater).
 -   The **SciJava component collection** is the set of all components managed by the `pom-scijava` Bill of Materials. Such **SciJava components** reside across several different architectural layers. See "Bill of Materials" below for details.
 -   **SciJava core components** are SciJava components of the SciJava component layer itself. See "Organizational structure" below.
--   The **ImageJ software stack** is the set of components upon which [ImageJ](/about) is built. It includes components from the [SciJava](SciJava), [ImgLib2](/imglib2), [ImageJ](/about) and [SCIFIO](/software/scifio) foundational layers; see "Organizational structure" and "Core libraries" below for details.
+-   The **ImageJ software stack** is the set of components upon which [ImageJ](/about) is built. It includes components from the [SciJava](SciJava), [ImgLib2](/libs/imglib2), [ImageJ](/about) and [SCIFIO](/software/scifio) foundational layers; see "Organizational structure" and "Core libraries" below for details.
 
 # SciJava project structure
 
@@ -31,15 +31,15 @@ The [ImageJ](/about) project, and related projects in the [SciJava](SciJava) sof
 There are four organizations on [GitHub](https://github.com/) which form the backbone of the [SciJava](SciJava) ecosystem:
 
 -   [scijava](https://github.com/scijava) - for [SciJava](SciJava) core components: general-purpose, non-image-specific libraries.
--   [imglib](https://github.com/imglib) - for [ImgLib2](/imglib2) components: flexible N-dimensional image processing.
+-   [imglib](https://github.com/imglib) - for [ImgLib2](/libs/imglib2) components: flexible N-dimensional image processing.
 -   [imagej](https://github.com/imagej) - for [ImageJ](/about) components: metadata-rich image library and application.
 -   [scifio](https://github.com/scifio) - for [SCIFIO](/software/scifio) components: scientific image I/O and file formats.
 
 Each organization contains several related components under its respective umbrella: a core library (see below) and several extensions. In social terms, each organization represents a collection of conceptually related components developed by a distinct [team of developers](/about/contributors).
 
-Additional organizations can further extend this structure. For example, the [Fiji](/fiji) project has several organizations as follows:
+Additional organizations can further extend this structure. For example, the [Fiji](/software/fiji) project has several organizations as follows:
 
--   [fiji](https://github.com/fiji) - for [Fiji](/fiji) components
+-   [fiji](https://github.com/fiji) - for [Fiji](/software/fiji) components
 -   [bigdataviewer](https://github.com/bigdataviewer) - for [BigDataViewer](/plugins/bdv) components
 -   [trakem2](https://github.com/trakem2) - for [TrakEM2](/plugins/trakem2) components
 
@@ -132,7 +132,7 @@ All components in these organizations use [Maven](/develop/maven) for [project m
         <p>{% include logo content='ImgLib2' %}</p>
       </td>
       <td>
-        <p><a href="/imglib2">ImgLib2</a></p>
+        <p><a href="/libs/imglib2">ImgLib2</a></p>
       </td>
       <td>
         <p><a href="https://github.com/imglib">imglib</a></p>
@@ -160,7 +160,7 @@ All components in these organizations use [Maven](/develop/maven) for [project m
         <p>{% include logo content='Fiji' %}</p>
       </td>
       <td>
-        <p><a href="/fiji">Fiji</a></p>
+        <p><a href="/software/fiji">Fiji</a></p>
       </td>
       <td>
         <p><a href="https://github.com/fiji">fiji</a></p>
@@ -222,7 +222,7 @@ The `pom-scijava` parent includes a [Bill of Materials](http://howtodoinjava.com
 The ImageJ software stack is composed of the following core libraries:
 
 -   [SciJava Common](/libs/scijava-common) - The [SciJava](SciJava) application container and plugin framework.
--   [ImgLib2](/imglib2) - The N-dimensional image data model.
+-   [ImgLib2](/libs/imglib2) - The N-dimensional image data model.
 -   [ImageJ Common](/plugins/imagej-common) - Metadata-rich image data structures and SciJava extensions.
 -   [ImageJ Ops](/libs/imagej-ops) - The framework for reusable image processing operations.
 -   [SCIFIO](/software/scifio) - The framework for N-dimensional image I/O.
@@ -245,7 +245,7 @@ The [SciJava Common](/libs/scijava-common) (SJC) library provides a plugin frame
 
 # Reproducible builds
 
-{% include box title='Why are reproducible builds so essential for science?' width='40%' float='right' text='Arguably **the most important thing** in science is to gain insights about nature **that can be verified by other researchers**. It is this mission for which [ImageJ](/about) and [Fiji](/fiji) stand, and it is the central reason why they are [open source](Open_source).
+{% include box title='Why are reproducible builds so essential for science?' width='40%' float='right' text='Arguably **the most important thing** in science is to gain insights about nature **that can be verified by other researchers**. It is this mission for which [ImageJ](/about) and [Fiji](/software/fiji) stand, and it is the central reason why they are [open source](Open_source).
 
 To verify results, it is absolutely necessary to be able to reproduce results claimed in scientific articles, and in the interest of efficiency, it should be **easy** to reproduce the results, and it should **also** be easy to scrutinize the used methods—incorrect results can be artifacts of flawed algorithms, after all.
 

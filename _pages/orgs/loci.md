@@ -9,7 +9,7 @@ The {% include person id='eliceiri' name='Eliceiri' %} lab, also known as the [L
 LOCI plays a very active role in the ImageJ community:
 
 -   LOCI launched the [ImageJ2](/software/imagej2), [SCIFIO](/software/scifio) and [SciJava Common](/libs/scijava-common) projects, and continues to drive their development.
--   Together with [CSBD](/orgs/csbd)/[MPI-CBG](/orgs/mpi-cbg), LOCI maintains the [Fiji](/fiji) project.
+-   Together with [CSBD](/orgs/csbd)/[MPI-CBG](/orgs/mpi-cbg), LOCI maintains the [Fiji](/software/fiji) project.
 -   LOCI founded the [Bio-Formats](/formats/bio-formats) project, and led the project's development for several years.
 -   LOCI regularly funds and hosts [hackathons](/events/Hackathon) intended to foster community development of [open source](Open_source) biological software projects.
 -   LOCI hosts the `imagej.net` web services, as well as related services including `fiji.sc` and `openspim.org`.

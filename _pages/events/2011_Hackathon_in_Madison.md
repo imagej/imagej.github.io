@@ -4,7 +4,7 @@ title: 2011 Hackathon in Madison
 categories: [Hackathons]
 ---
 
-The 2011 Madison [Fiji](/fiji)/ImageJDev [hackathon](/events/Hackathon) took place from Friday, January 28 until Friday, February 11. The topic was "Multidimensional Visualization and Analysis in Fiji."
+The 2011 Madison [Fiji](/software/fiji)/ImageJDev [hackathon](/events/Hackathon) took place from Friday, January 28 until Friday, February 11. The topic was "Multidimensional Visualization and Analysis in Fiji."
 
 ## Participants
 
@@ -138,7 +138,7 @@ You can [see a map of all three locations relative to each other](http://maps.go
 
 Here is a summary of the hackathon results, written by Johannes Schindelin, Stephan Saalfeld and Curtis Rueden. Note that there was simply too much activity to fully describe everything everyone worked on, but we have tried to summarize the most major items. Thanks to all who participated!
 
-The most important work done is certainly the redesign of ImgLib (dubbed "/imglib2"). Other design questions have been addressed, too:
+The most important work done is certainly the redesign of ImgLib (dubbed "ImgLib2"). Other design questions have been addressed, too:
 
 -   How to reuse IJ2's plugin infrastructure (e.g. in the 3D Viewer)
 -   How to wrap IJ1 elegantly (Javassist)

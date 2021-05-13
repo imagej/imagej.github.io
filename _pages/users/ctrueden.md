@@ -23,7 +23,7 @@ Curtis Rueden directs the
 [software development efforts](https://loci.wisc.edu/software/home)
 of [LOCI](/orgs/loci).
 He is the principal architect of [ImageJ2](/software/imagej2),
-and the current maintainer of the [Fiji](/fiji) distribution of ImageJ.
+and the current maintainer of the [Fiji](/software/fiji) distribution of ImageJ.
 
 ## What is Curtis working on?
 

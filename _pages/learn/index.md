@@ -12,7 +12,7 @@ section: Learn
 
 ## What is Fiji?
 
-<a href="/fiji"><img src="/media/fiji-icon.png" height="48px"/></a> [<span style="color: darkcyan; font-size: large; font-weight: bold">F</span>iji <span style="color: darkcyan; font-size: large; font-weight: bold">I</span>s <span style="color: darkcyan; font-size: large; font-weight: bold">J</span>ust <span style="color: darkcyan; font-size: large; font-weight: bold">I</span>mageJ](/fiji)—a "batteries-included" distribution of ImageJ which includes many useful [plugins](/plugins) [contributed by the community](/fiji/contribution-requirements).
+<a href="/software/fiji"><img src="/media/fiji-icon.png" height="48px"/></a> [<span style="color: darkcyan; font-size: large; font-weight: bold">F</span>iji <span style="color: darkcyan; font-size: large; font-weight: bold">I</span>s <span style="color: darkcyan; font-size: large; font-weight: bold">J</span>ust <span style="color: darkcyan; font-size: large; font-weight: bold">I</span>mageJ](/software/fiji)—a "batteries-included" distribution of ImageJ which includes many useful [plugins](/plugins) [contributed by the community](/software/fiji/contribution-requirements).
 
 ## What does ImageJ provide?
 

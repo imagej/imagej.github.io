@@ -18,7 +18,7 @@ Most changes in this version are for developers and are not displayed in the tex
 
 #### Highlights
 
--   TrackMate now uses [ImgLib2](/imglib2) internally, and is therefore ready to be moved to [ImageJ2](/software/imagej2).
+-   TrackMate now uses [ImgLib2](/libs/imglib2) internally, and is therefore ready to be moved to [ImageJ2](/software/imagej2).
 -   TrackMate now computes edge features (on top of spot and track features). These features enable the immediate measure of velocity, displacement, etc...
 -   Tracks can be colored in the Hyperstack displayer, in the 3D viewer and in TrackScheme using indifferently track or edge features.
 

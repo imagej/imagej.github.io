@@ -10,7 +10,7 @@ Thanks to ImageJ's [extensibility](/develop/architecture#extensibility) via [plu
 
 ## Life sciences
 
-The [OME Bio-Formats](/formats/bio-formats) plugins provide support for over 130 file formats in microscopy, medical imaging, and related life science formats. Bio-Formats is included with the [Fiji](/fiji) distribution of ImageJ. See also the Bio-Formats [list of supported formats](https://www.openmicroscopy.org/site/support/bio-formats/supported-formats.html).
+The [OME Bio-Formats](/formats/bio-formats) plugins provide support for over 130 file formats in microscopy, medical imaging, and related life science formats. Bio-Formats is included with the [Fiji](/software/fiji) distribution of ImageJ. See also the Bio-Formats [list of supported formats](https://www.openmicroscopy.org/site/support/bio-formats/supported-formats.html).
 
 ## DICOM
 

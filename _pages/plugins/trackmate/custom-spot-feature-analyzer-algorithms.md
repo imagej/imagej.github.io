@@ -13,7 +13,7 @@ This third article in the series dedicated to extending [TrackMate](/plugins/tra
 
 Spot features are typically calculated from the spot location and the image data. For instance, there is a spot feature that reports the mean intensity within the spot radius. You need to have the spot location, its radius and the image data to compute it.
 
-In this tutorial, we will generate an analyzer that is not directly calculated from the image data. This will enable us to skip over introducing [ImgLib2](/imglib2) API, which would have considerably augmented the length of this series. But this choice does not only aim at nurturing my laziness: We will make our feature **depend on other features** which will allow us to introduce **analyzers priority**.
+In this tutorial, we will generate an analyzer that is not directly calculated from the image data. This will enable us to skip over introducing [ImgLib2](/libs/imglib2) API, which would have considerably augmented the length of this series. But this choice does not only aim at nurturing my laziness: We will make our feature **depend on other features** which will allow us to introduce **analyzers priority**.
 
 But before this, let's visit the spot feature analyzers specificities.
 
