@@ -8,7 +8,21 @@
 {% assign style-class = "image-fit" %}
 {% endif %}
 
-<img src="{{include.src}}" alt="{{include.name}}" class="{{style-class}} {{include.classes}}"{% if include.width %} width={{include.width}}{% endif %}>
+{%- comment -%}
+# prepend /media to any image file that isn't found locally
+{%- endcomment -%}
+{% assign found = false %}
+{% assign src = {{include.src}} %}
+{% for static_file in site.static_files %}
+    {% if include.src == static_file.path %}
+        {% assign found = true %}
+    {% endif %}
+{% endfor %}
+{% unless found %}
+    {% assign src = {{include.src}} | prepend: "/media" %}
+{% endunless %}
+
+<img src="{{src}}" alt="{{include.name}}" class="{{style-class}} {{include.classes}}"{% if include.width %} width={{include.width}}{% endif %}>
 
 {%- comment -%}
 # vi:syntax=liquid

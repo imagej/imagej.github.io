@@ -19,6 +19,16 @@ Images can be added to your page by including `img` and the path to your image. 
 
 {% include img name="spirals" src="/media/help/spirals.png" %}
 
+**N.B.** for any file in `/media`, the prefix is optional:
+
+{% raw %}
+```
+{% include img name="spirals" src="/help/spirals.png" %}
+```
+{% endraw %}
+
+{% include img name="spirals" src="/help/spirals.png" %}
+
 ## Options
 
 ### Classes
