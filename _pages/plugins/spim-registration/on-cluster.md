@@ -608,7 +608,7 @@ The GPU mediated deconvolution is faster, but currently only by a factor of 2-3 
 
 #### Multiview deconvolution on CPU
 
-{% include thumbnail src='/media/Apply External Transformation screenshot.jpeg' title='200px'%}
+{% include thumbnail src='/media/apply-external-transformation-screenshot.jpeg' title='200px'%}
 
 In contrast to the multiview fusion plugin described above, [Stephan Preibisch](http://fly.mpi-cbg.de/~preibisch/), in his infinite wisdom ;-), did not implement the option to scale down the data before deconvolution starts. Since deconvolution is a very expensive operation, it will take a very long time (hours) on full resolution data. If the sole purpose of fusing the data by deconvolution is to render them in 3D, the full resolution images are not necessary, ergo we need to downsample. Fortunately Stephan implemented a workaround in the form of a script that prepends a transformation (such as scaling) to the raw SPIM data.
 

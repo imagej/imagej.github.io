@@ -4,7 +4,7 @@ title: Temporal-Color Code
 categories: [Plugins,Color processing]
 ---
 
-![ 256px \| Stack of Listeria Movement ](/media/k-listeria-animated.gif "fig: 256px | Stack of Listeria Movementfig: 256px | Temporal-Color Coded")
+![ 256px \| Stack of Listeria Movement ](/media/k-listeria-animated.gif)
 
 
 {% capture author%}
