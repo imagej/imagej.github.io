@@ -13,7 +13,7 @@ We began developing a GUI based java application separate from the Fiji platform
 Our application employs the principle of fuzzy sets to transform pixels with the hope of enhancing an image.  The Fuzzy Set plugin inputs the pixels from an image into an array.  The user provides, through the use of an input window, numbers that correspond to values (except z0) in the following equation.
 
 <div style="text-align: center;" markdown=1>
-![](/media/fuzzysetformula.gif "FuzzySetFormula.gif")
+![](/media/fuzzysetformula.gif)
 </div>
 
 All images utilize the gray levels of the image; therefore, limiting the range of output values from "0-255" ("0" corresponds to totally black, likewise "255" corresponds to totally white).
@@ -44,7 +44,7 @@ Launch the Fiji application until the following window appears.
 
 <div style="text-align: center;">
 
-![](/media/openinganimage.jpg "OpeningAnImage.jpg")
+![](/media/openinganimage.jpg)
 
 </div>
 
@@ -56,9 +56,9 @@ Select the Plugin from the application window. See diagram below.
 
 <div style="text-align: center;">
 
-![](/media/launchingplugin.jpg "LaunchingPlugin.jpg")
+![](/media/launchingplugin.jpg)
 
-![](/media/launchingplugin2.jpg "LaunchingPlugin2.jpg")
+![](/media/launchingplugin2.jpg)
 
 </div>
 
@@ -66,7 +66,7 @@ A user may now set the appropriate user defined values.
 
 <div style="text-align: center;">
 
-![](/media/selectvalues.jpg "SelectValues.jpg")
+![](/media/selectvalues.jpg)
 
 </div>
 
@@ -78,7 +78,7 @@ Below is an example of a histogram window.
 
 <div style="text-align: center;">
 
-![](/media/histogramwindow.jpg "HistogramWindow.jpg")
+![](/media/histogramwindow.jpg)
 
 </div>
 
@@ -88,7 +88,7 @@ Below is an example of the modified Histogram
 
 <div style="text-align: center;">
 
-![](/media/modifiedhistogramwindow.jpg "ModifiedHistogramWindow.jpg")
+![](/media/modifiedhistogramwindow.jpg)
 
 </div>
 
@@ -98,7 +98,7 @@ Following is an example of the Modified Image Window (image supplied by author)
 
 <div style="text-align: center;">
 
-![](/media/modifiedwindow.jpg "ModifiedWindow.jpg")
+![](/media/modifiedwindow.jpg)
 
 </div>
 
@@ -108,21 +108,21 @@ The user of the application can save results using the save as feature under the
 
 ## Demo
 
-We did many experiments with the application, but to show case one such result, we have included a demo below. ![](/media/2.jpg "fig:2.jpg") ![](/media/modae.jpg "fig:ModAE.jpg")
+We did many experiments with the application, but to show case one such result, we have included a demo below. ![](/media/2.jpg) ![](/media/modae.jpg)
 
 <div>
 
-![](/media/hist2.jpg "fig:Hist2.jpg") Histogram of Image Before Transformation
+![](/media/hist2.jpg) Histogram of Image Before Transformation
 
 </div>
 
-![](/media/histmod.jpg "fig:HistMod.jpg") Histogram of Image After Transformation
+![](/media/histmod.jpg) Histogram of Image After Transformation
 
 ## Acknowledgements
 
 <div style="text-align: center;">
 
-![](/media/dr.jpg "Dr.jpg")
+![](/media/dr.jpg)
 
 </div>
 

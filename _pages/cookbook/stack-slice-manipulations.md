@@ -60,7 +60,7 @@ Stack Sorter: {% include bc path="Image|Stacks|Tools|Stack Sorter" %}.
 -   Control the position of individual slices or groups of slices.
 -   Advanced "Insert" functionality.
 
-![](/media/stack-slice-manipulations1.png "stack_slice_manipulations1.png")
+![](/media/stack-slice-manipulations1.png)
 
 ## Stack dimension manipulations
 
@@ -70,7 +70,7 @@ E. H. W. Meijering, W. J. Niessen, M. A. Viergever, [Quantitative Evaluation of 
 
 An alternative method for cropping a stack is found with {% include bc path="Plugins|Stacks|Crop (3D)" %} After selecting 'OK', you will be presented with panels of the ZY and XZ planes, as well as the original stack, where you can use the mouse to crop the stack in any of the three directions.
 
-![](/media/3dcrop.png "3dcrop.png")
+![](/media/3dcrop.png)
 
 Window for the Crop (3D) plugin.
 
@@ -98,10 +98,10 @@ P. Thévenaz, U.E. Ruttimann, M. Unser, "[A Pyramid Approach to Subpixel Registr
 
 Time series before alignment
 
-![](/media/pre-alignment.png "pre_alignment.png")
+![](/media/pre-alignment.png)
 
 After
 
-![](/media/after-alignment.png "after_alignment.png")
+![](/media/after-alignment.png)
 
  

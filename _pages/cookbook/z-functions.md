@@ -39,7 +39,7 @@ Grouped Z Project applied to two halves of a stack, resulting in the two slices 
 
 The Stack Focuser plugin uses a Sobel edge filter to calculate "best focus". Try "3" for the kernel value in the first instance. The result is a "height map" showing the focused images. This plugin only works on 8- or 16-bit images. It can result in a "pixelly" image.
 
-![](/media/stack-focuser-example.png "stack_focuser_example.png")
+![](/media/stack-focuser-example.png)
 
 Result of the Stack Focuser plugin with '3' as the kernel value.
 
@@ -49,7 +49,7 @@ Authors: Daniel Sage, Jesse Berent, Brigitte Forster, Dimitri Van De Ville, Biom
 
 This is a superior but slower, algorithm compared to the Sobel-filter focusing. The "*Extended Depth of Field*" plugin uses a wavelet transform (a more sophisticated transform compared to the Fourier transform) to calculate "best focus". Run the plugin and check "Show 3D View". This plugin will work with RGB images. A more detailed description of the wavelet transform extended depth of field plugin can be found at the authors' website. A topology image is also generated. Please cite the authors' papers below if you publish work using this plugin.
 
-![](/media/extended-depth-of-field.png "Extended_depth_of_field.png")
+![](/media/extended-depth-of-field.png)
 
 For more information see the following papers:
 
@@ -65,15 +65,15 @@ Another option is to use the plugin *Z Code Stack* for the results shown below.
 
 Original stack:
 
-![](/media/z-coded-stack-original.png "z_coded_stack_original.png")
+![](/media/z-coded-stack-original.png)
 
 Z coded stack:
 
-![](/media/z-coded-stack-colored.png "z_coded_stack_colored.png")
+![](/media/z-coded-stack-colored.png)
 
 Maximum Intensity Projections of each:
 
-![](/media/depth-code-max.png "depth_code_max.png")
+![](/media/depth-code-max.png)
 
 ## 3D Project
 
@@ -171,7 +171,7 @@ NB: VolumeJ's interactive rendering option is currently not working. Other modes
 
 This generates a "side-view" of a stack along a user defined line. Select part of a stack to be axially sectioned using the line ROI tool from the toolbar. Select the menu item {% include bc path="Image|Stacks|Reslice" %} after drawing a straight line or rectangle onto an open stack.
 
-![](/media/stack-reslice-example.png "stack_reslice_example.png")
+![](/media/stack-reslice-example.png)
 
 Stack resliced along a vertical axis.
 
@@ -203,11 +203,11 @@ This is an adaptation of the methods described at [https://imagej.nih.gov/nih-im
 
 This plugin can use your stack to create a side by side stereo pair, a red-cyan anaglyph, a red-green anaglyph, or a rotation movie based on user specifications. The plugin will let you specify which of the stereo pair projections you want as well as the angle of rotation between the pairs. Typical values are 6-9°.
 
-![](/media/stereo-pair.png "stereo_pair.png")
+![](/media/stereo-pair.png)
 
 Stereo pair
 
-![](/media/anaglyph-comparisons.png "anaglyph_comparisons.png")
+![](/media/anaglyph-comparisons.png)
 
 Red-green anaglyph at left, red-cyan anaglyph on the right.
 

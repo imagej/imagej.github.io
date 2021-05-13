@@ -16,7 +16,7 @@ First, you should to [install](/downloads) ImageJ!
 
 After starting ImageJ, you will see the main window:
 
-![](/media/fiji-main-window.jpg "Fiji-main-window.jpg")
+![](/media/fiji-main-window.jpg)
 
 On macOS, the menu bar will appear on the top of the screen (as with all macOS applications).
 
@@ -60,21 +60,21 @@ The toolbar mostly contains selection tools: the rectangle, ellipse, polygon, fr
 
 Some tools offer option dialogs which you can open by double clicking the icon. This example shows the option dialog of the Oval Tool:
 
-![](/media/oval-tool-option-dialog.png "Oval_Tool_Option_Dialog.png")
+![](/media/oval-tool-option-dialog.png)
 
 If there is a small red arrow in the lower right corner of the tool icon, you can right-click ({% include key keys='Ctrl|Left Click' %} on an Apple mouse) and select an alternative selection tool (e.g. a circular brush selection tool which shares the icon with the ellipse selection tool). Example:
 
-![](/media/alternative-tools.png "Alternative_Tools.png")
+![](/media/alternative-tools.png)
 
 ## The status bar
 
 The status bar displays useful information at startup, and when running plugins. It also shows a progress bar on the right side for long-running processes:
 
-![](/media/status-bar-with-progress.png "Status-bar-with-progress.png")
+![](/media/status-bar-with-progress.png)
 
 A single mouse click on the status bar will show the information about ImageJ and Java version as well as about memory consumption:
 
-![](/media/default-status-message.png "Default-status-message.png")
+![](/media/default-status-message.png)
 
 ## Drag & Drop
 
@@ -86,7 +86,7 @@ Drag 'n Drop will also work for images displayed in your web browser, unless the
 
 Whenever you open an image, be it via {% include bc path='File | Open'%}, Drag 'n Drop or {% include bc path='File | Open Samples'%}, ImageJ will open an image window.
 
-![](/media/clown-snapshot.jpg "Clown-snapshot.jpg")
+![](/media/clown-snapshot.jpg)
 
 The window has the file name as title, and it display some useful information above the image: the real resolution (in this case in square centimeters), the pixel resolution, the image type and the memory required by the image.
 
@@ -96,7 +96,7 @@ If your image does not have meta-data about the real resolution, you can set the
 
 You can change the image *type*:
 
-![](/media/image-types.png "Image-Types.png")
+![](/media/image-types.png)
 
 Choose between
 

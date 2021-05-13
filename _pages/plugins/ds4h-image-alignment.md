@@ -14,7 +14,7 @@ categories: [Tutorials,Plugins,Registration]
 
 Align (i.e. co-register) 2D images
 
-![](/media/ds4h-ia-modified-tsujikawacellreports2017.png "DS4H_IA_Modified_TsujikawaCellReports2017.png")
+![](/media/ds4h-ia-modified-tsujikawacellreports2017.png)
 
 ## Description
 

@@ -128,12 +128,12 @@ This property set if the parameter should be displayed, editable and/or recorded
 
 \- MESSAGE: parameter value is intended as a message only, not editable by the user nor included as an input or output parameter. The option `required` should be set to false.
 
-![](/media/scriptparam-messagestring.jpg "ScriptParam_MESSAGEstring.JPG")
+![](/media/scriptparam-messagestring.jpg)
 
     #@ String (visibility=MESSAGE, value="This is a documentation line", required=false) msg
     #@ Integer (label="Some integer parameter") my_int
 
-You can [use HTML](https://forum.image.sc/t/multiline-messages-in-dialog-widgets/183) to format the message string, for example: ![](/media/scijavamultilinemessage.png "fig:ScijavaMultilineMessage.png")
+You can [use HTML](https://forum.image.sc/t/multiline-messages-in-dialog-widgets/183) to format the message string, for example: ![](/media/scijavamultilinemessage.png)
 
     #@ String (visibility=MESSAGE, value="<html>Message line 1<br/>Message line 2<p>Let's make a list<ul><li>item a</li><li>item b</li></ul></html>") docmsg
     #@ Integer anIntParam
@@ -151,7 +151,7 @@ The choice widget can have different styles like dropdown list or radio buttons.
     print(myChoice123)
     print(myChoiceABC)
 
-![](/media/input-styles.png "Input-styles.png")
+![](/media/input-styles.png)
 
 ### Files and Folders
 

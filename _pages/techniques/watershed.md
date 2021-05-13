@@ -26,11 +26,11 @@ categories: [Tutorials,Segmentation]
 
 -   open the [sample image of touching DAPI stained cell nuclei from a confocal laser scanning microscope.](/media/nucleidapiconfocal.png)
 
-![ 250px](/media/nucleidapiconfocal.png " 250px")
+![ 250px](/media/nucleidapiconfocal.png)
 
 -   Run a [Gaussian Blur filter](http://imagejdocu.tudor.lu/doku.php?id=gui:process:filters) on the image to blur out the "speckle", actually Poisson distributed, statistical "photon {% include wikipedia title='Shot noise' text='shot noise'%}", and also to smooth out the inhomogeneity of the nuclear staining. We will use a large sigma value of 3 for this task. A value of sigma too small will mean that the segmentation will be disturbed by the noise and staining pattern. Too high a sigma value, and the objects will be too blurred, making it harder to find their edges precisely and separate them later. Run menu command: Process - Filters - Gaussian Blur, with a sigma value of 3 pixels. You can preview other values to see how they look also. You should get an image that looks like this:
 
-![ 250px](/media/nucleidapiconfocalgauss3pxsigma.png " 250px")
+![ 250px](/media/nucleidapiconfocalgauss3pxsigma.png)
 
 ### Pixel Intensity Threshold - find the foreground areas
 
@@ -40,7 +40,7 @@ categories: [Tutorials,Segmentation]
 
 -   Do menu command Image - Adjust - Threshold. Turn on the check box for "Dark background" . Indeed, in this case the background is dark! The default method will be previewed automatically when you launch the menu command, and a threshold will be set, something close to 100 intensity. If you are happy with the automatically calculate threshold, then click "Apply", which will give you a binary image. Black is background, and white is foreground. It should look like this:
 
-![ 250px](/media/nucleidapiconfocalautodefaultthresh.png " 250px")
+![ 250px](/media/nucleidapiconfocalautodefaultthresh.png)
 
 -   So far so good... But we still don't have objects... only background and foreground pixels. Also it is clear that some nuclei are connected to adjacent ones... and we want them to be separated. We will use the watershed method built into Fiji for that:
 
@@ -48,7 +48,7 @@ categories: [Tutorials,Segmentation]
 
 -   To run the built in [ImageJ watershed method](/ij/docs/menus/process.html#watershed) choose menu item: Process - Binary - Watershed. This method finds the centre of each object (using a morphological erode operation), then calculates a distance map from the object centre points to the edges of the objects, then fills that "topological map" with imaginary water. Where 2 "Watersheds" meet, it builds a dam to separate them! One could do all these steps manually, but the watershed function automates that for you, which is nice. Your watershed image should look like this:
 
-![ 250 px](/media/nucleidapiconfocalwatershed.png " 250 px")
+![ 250 px](/media/nucleidapiconfocalwatershed.png)
 
 -   Notice how the nuclei have been split away from each other. This method only works robustly for roughly circular objects. Why?
 
@@ -66,7 +66,7 @@ categories: [Tutorials,Segmentation]
 
 [documentation for analyze particles.](http://imagejdocu.tudor.lu/doku.php?id=gui:analyze:analyze_particles)
 
-![ 500px](/media/nulceidapiconfocalanalyzeparticles.png " 500px")
+![ 500px](/media/nulceidapiconfocalanalyzeparticles.png)
 
 -   You can filter out different sizes of particles. For example, you might only be interested in large objects, like nuclei. So you can exclude small objects that you know are junk. Change the area number range in the Size field and see what happens.
 
@@ -86,6 +86,6 @@ categories: [Tutorials,Segmentation]
 
 -   It also spits out lots of useful statistics:
 
-![ 700px](/media/nulceidapiconfocalsegmentationresults.png " 700px")
+![ 700px](/media/nulceidapiconfocalsegmentationresults.png)
 
  

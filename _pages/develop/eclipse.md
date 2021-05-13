@@ -26,7 +26,7 @@ This article explains how to install, configure and use Eclipse to develop [Imag
 
 <div style="overflow: hidden">
 
-<tabs> <tab name="/platforms/windows"> ![ x32px](/media/win.png "fig: x32px") **Windows**
+<tabs> <tab name="/platforms/windows"> ![ x32px](/media/win.png) **Windows**
 
 **Avoid permissions issues.** We recommend installing Eclipse *outside* of the `Program Files` directory. E.g.: **`C:\Users\frood\Programs\eclipse`**, where **`C:\Users\frood`** is your user directory.
 
@@ -42,9 +42,9 @@ Now update Eclipse's JRE to be JDK-aware:
 -   Click Search..., navigate to your JDK installation folder (e.g., **`C:\Program Files\Java\jdk1.8.0_11`**) and click OK
 -   Check the box next to the JRE that appears and click OK
 
-</tab> <tab name="macOS"> ![ x32px](/media/osx.png "fig: x32px") **macOS**
+</tab> <tab name="macOS"> ![ x32px](/media/osx.png) **macOS**
 
-**Understand Java 6 vs. Java 8.** Eclipse should work on macOS with no further configuration. However, we recommend reading the [macOS section of the FAQ](/help/faq#macos), as there are several Java-related issues on macOS. </tab> <tab name="/platforms/linux"> ![ x32px](/media/tux.png "fig: x32px") **Linux**
+**Understand Java 6 vs. Java 8.** Eclipse should work on macOS with no further configuration. However, we recommend reading the [macOS section of the FAQ](/help/faq#macos), as there are several Java-related issues on macOS. </tab> <tab name="/platforms/linux"> ![ x32px](/media/tux.png) **Linux**
 
 **Avoid permissions issues.** We recommend installing to `$HOME/eclipse`.
 

@@ -63,19 +63,19 @@ Then choose a language from the language menu:
 
 Now you can write your script. In this tutorial, Jython was chosen as scripting language, but the process is really the same for all scripting languages.
 
-![](/media/script-editor-first-script.jpg "Script-Editor-first-script.jpg")
+![](/media/script-editor-first-script.jpg)
 
 ### Running the script
 
 Once you are satisfied with the script, run it. This does not require saving, but of course you should save your script later when it works.
 
-![](/media/script-editor-run.jpg "Script-Editor-run.jpg")
+![](/media/script-editor-run.jpg)
 
 Note that while the script is running, the window title shows the tell-tale *(Running)*.
 
 You can use all of ImageJ's classes right away. Here is an example that shows a dialog where the user can input a number. For details how to write dialogs in the different scripting languages, see [Scripting comparisons](/scripting/comparisons)
 
-![](/media/script-editor-dialog.jpg "Script-Editor-dialog.jpg")
+![](/media/script-editor-dialog.jpg)
 
 ## Further reading
 

@@ -27,7 +27,7 @@ There are three ways to reapply spatial calibration: manually via the {% include
 
 #### Copy-calibration
 
-![](/media/copy-pixel-size.png "copy_pixel_size.png")
+![](/media/copy-pixel-size.png)
 
 1.  Open the image with the original calibration
 2.  Run the "Copy Pixel Size" plugin.
@@ -67,11 +67,11 @@ Always save your images before adding text. Text color is set via the color pick
 
 Pseudocolored images should be converted to RGB ({% include bc path="Image|Type|RGB color" %}) prior to adding text. The text is "anti-aliased". This means that instead of being completely white in color, some pixels on the curved edges of letters are averaged with neighboring pixels. This makes these pixels gray and helps the text to appear smoother.
 
-![](/media/aliased-text.png "aliased_text.png")
+![](/media/aliased-text.png)
 
 Since some of the pixels in anti-aliased text do not have the gray-scale value of 255, some LUTS will display the pixels as other colors such as orange or green. This will lose the smoothing affect from antialiasing.
 
-![](/media/antialiased-lut.png "antialiased_lut.png")
+![](/media/antialiased-lut.png)
 
 Frame 1 counter text when used with Hot Green LUT.
 
@@ -79,7 +79,7 @@ Another potential problem is that if you use the red or blue LUT then the text w
 
 To avoid this, convert the pseudocolored image from its current format (i.e. *8-bit color*) to an RGB image with {% include bc path="Image|Type|RGB color" %} before adding the text.
 
-![](/media/corrected-lut.png "corrected_lut.png")
+![](/media/corrected-lut.png)
 
 Text on converted image.
 

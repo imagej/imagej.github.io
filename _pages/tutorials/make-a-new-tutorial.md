@@ -12,7 +12,7 @@ In Fiji, we have a plugin whose only purpose is to write tutorials to be publish
 
 After clicking on {% include bc path='Plugins | Utilities | Fiji | New Fiji Tutorial'%}, you will be asked for the title of your tutorial:
 
-![](/media/how-to-make-a-new-tutorial-pagetitle.jpg "How_to_make_a_new_tutorial-PageTitle.jpg")
+![](/media/how-to-make-a-new-tutorial-pagetitle.jpg)
 
 You will get two new windows: the *Snapshot* winow (which is set to be always on top) and the *Editor* window:
 
@@ -35,7 +35,7 @@ In any of the two modes, the snapshot window will hide itself before taking the 
 
 After taking some or all of the snapshots you want to include in your tutorial, you have to crop them. Just select the appropriate rectangle, and then click on ImageJ's {% include bc path='Edit | Crop'%} or press {% include key keys='Ctrl|Shift|X' %}:
 
-![](/media/how-to-make-a-new-tutorial-cropsnapshot.jpg "How_to_make_a_new_tutorial-CropSnapshot.jpg")
+![](/media/how-to-make-a-new-tutorial-cropsnapshot.jpg)
 
 You can also annotate the images at this stage, such as circling an important aspect of the snapshot in a bright color, or adding an arrow to shift the attention of the interested reader to a certain item.
 
@@ -43,11 +43,11 @@ If -- for whatever reason -- you want to crop (or process in another manner) the
 
 For aesthetic reasons -- and to avoid confusing yourself -- you might want to rename the snapshots. There are two options for that. The first is to call the *Rename Image* menu item in the *Wiki* menu of the *Editor*:
 
-![](/media/how-to-make-a-new-tutorial-rename1.jpg "How_to_make_a_new_tutorial-Rename1.jpg")
+![](/media/how-to-make-a-new-tutorial-rename1.jpg)
 
 This will pop up another dialog which lets you change the name of the image:
 
-![](/media/how-to-make-a-new-tutorial-rename2.jpg "How_to_make_a_new_tutorial-Rename2.jpg")
+![](/media/how-to-make-a-new-tutorial-rename2.jpg)
 
 The other method is to select the image and click on ImageJ's {% include bc path='Image | Rename...'%} menu item.
 

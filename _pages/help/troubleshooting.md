@@ -190,7 +190,7 @@ Note that in most cases, the [ImageJ launcher](Launcher) will make an initial gu
 
 You can confirm how much memory is actually available by clicking on the [status bar](/learn/getting-started#the-status-bar). You will see a "\[used\] of \[max\]" memory message, as pictured here:
 
-![](/media/memorystatus.png "MemoryStatus.png")
+![](/media/memorystatus.png)
 
 If you are already at the limits of your computer's physical memory, the next step would be to add more.
 

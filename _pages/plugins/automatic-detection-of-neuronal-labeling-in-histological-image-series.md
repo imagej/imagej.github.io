@@ -12,7 +12,7 @@ Axonal tracers such as biotinylated dextran amine (BDA) and *Phaseolus vulgaris*
 
 Download files to the `ImageJ/plugins` or `ImageJ/plugins/Macros` directory. The zip package is organized into the right folder structure and can be extracted directly to the ImageJ directory. Processing of image series is primarily handled by the macros, available from the ImageJ menu {% include bc path="Plugins | Macros" %}. The NeSys Pixel Counter plugin can be used on individual images by placing the .class file into the ImageJ/plugins directory, or compiling the Java source code (.java) in the same place ({% include bc path="Plugins | Compile and run" %}), and thereafter running the plugin from the Plugins menu. The CDgetPrimaryChannel plugin is intended for usage together with the NeSys Labeling Detection macro and is not available from the Plugins menu.
 
-<u>**Download the complete package:**</u> ![](/media/nesys-labeling-detection.zip "fig:Nesys-labeling-detection.zip")
+<u>**Download the complete package:**</u> ![](/media/nesys-labeling-detection.zip)
 
 **Package contents**
 

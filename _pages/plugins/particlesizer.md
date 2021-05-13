@@ -33,7 +33,7 @@ You can now start the ParticleSizer via {% include bc path="Plugins | NanoDefine
 
 # Settings
 
-**Segmentation:**![](/media/psizer-gui.png "fig:Psizer_gui.png")
+**Segmentation:**![](/media/psizer-gui.png)
 
 -   Circular window radius: This is a parameter of the local thresholding technique. The ParticleSizer does not use a global threshold to binarize the image. Instead it uses a local threshold which is estimated for a specific circular region with the configured radius.
 -   Rolling ball radius: The background is removed by rolling a ball with this radius over the surface (intensity interpreded as hight) of the image. It should be at least as large as the largest object in image which does not belongs to the background.

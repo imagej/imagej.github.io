@@ -30,7 +30,7 @@ This tutorial uses the following strategy: we will use an inadequate set of segm
 
 ## Doing a fast but very bad segmentation
 
-![](/media/trackmate-downsampledlogsegmenter.png "TrackMate_DownsampledLogSegmenter.png")
+![](/media/trackmate-downsampledlogsegmenter.png)
 
 Launch TrackMate ({% include bc path='Plugins | Tracking | TrackMate'%}) and select the *C.elegans* stack as a target. Check on the first panel that all the spatial calibration is OK. The pixel size is about 200 nm in XY, 1 μm in Z, and each frame is separated by 2 minutes.
 
@@ -43,7 +43,7 @@ The segmentation should take you no more than a minute, even on a standard machi
 {% include clear%}
 
 
-![](/media/trackmate-downsampledinitthreshold.png "TrackMate_DownsampledInitThreshold.png")
+![](/media/trackmate-downsampledinitthreshold.png)
 
 On the Initial thresholding panel, we see that it is easy to separate spurious spots using the **Quality** feature only. There is a big and sharp peak at the left of the histogram. By moving the slider around you can get the remaining number of spot after filtering. If we put the threshold around 70, just above the first sharp peak, we see that we are left with about 115 spots. Now: We have 17 time-points, each of them containing at most 4 cells and two polar bodies (check the raw movie). So 115 remaining spots seems to be correct, therefore the threshold set at 70 seems right.
 
@@ -55,14 +55,14 @@ Anyway, let's correct it now. Just add a filter on Quality, and take a value of 
 
 Almost all polar bodies are incorrectly detected, and the localization of cells is bad. These are expected defects given our choice of detection algorithm and the parameters we have used. Here, the results are not so bad, unfortunately for this tutorial. We could fix them right now, before tracking. You can actually edit the results any time after the first panel of TrackMate. But let us exploit these defects for our training purpose, by having them generating additional linking defects.
 
-![](/media/trackmate-downsamplefilter.png "TrackMate_DownsampleFilter.png")
+![](/media/trackmate-downsamplefilter.png)
 
 {% include clear%}
 
 
 ## Generating irrelevant tracks
 
-![](/media/celegans-5pc-17timepoints-incorrect.png "Celegans-5pc_17timepoints-Incorrect.png")
+![](/media/celegans-5pc-17timepoints-incorrect.png)
 
 Normally, TrackMate can robustly handles track splitting events, representing *e.g.* cell division. Though this happens in this movie, we choose to dismiss this possibility in the automated tracking part.
 
@@ -93,7 +93,7 @@ TrackScheme launches with a simple style: each spot is represented with a circle
 
 You can do quite some things using TrackScheme, notably track analysis. This is not the ofcus of this tutorial, we will simply be focusing on the track editing features. However, here is a brief description of what the toolbar buttons do.
 
-![](/media/trackschemetoolbarexplanation.png "TrackSchemeToolbarExplanation.png")
+![](/media/trackschemetoolbarexplanation.png)
 
 We will be mainly using the **Redo layout** and button.
 
@@ -223,7 +223,7 @@ The newly created link is displayed in magenta. Note that the track arrangement 
 
 After doing so, you should now see a branching track, as picture below. Notice that the track colors are out of sync. The colors are not automatically updated when changing a track layout. You have to click the **Style** button in the TrackScheme toolbar to do so. Do so.
 
-![](/media/trackmate-branchingtrack.png "TrackMate_BranchingTrack.png")
+![](/media/trackmate-branchingtrack.png)
 
 ### Creating several links at once
 
@@ -241,7 +241,7 @@ Removing a link often splits a track in 2 new tracks. To have them properly re-a
 
 Plus or minus the localization errors and some incorrect cell radii, you now have the full lineage in 3D of this short movie. This concludes this tutorial on manual editing in TrackMate. Here is a picture of the final results:
 
-![](/media/trackmate-smalllineage.png "TrackMate_SmallLineage.png")
+![](/media/trackmate-smalllineage.png)
 
 {% include person id='tinevez' %} ([talk](User_talk_JeanYvesTinevez)) 11:30, 1 August 2013 (CDT)
 

@@ -22,7 +22,7 @@ It works with stacks, is parallelized, has a preview mode and is able to resolve
 
 ## Examples
 
-![](/media/cnt-ridge-detection-original.png "fig:CNT_Ridge_Detection_Original.png") ![](/media/cnt-ridge-detection-example.png "fig:CNT_Ridge_Detection_Example.png")
+![](/media/cnt-ridge-detection-original.png) ![](/media/cnt-ridge-detection-example.png)
 
 This example shows the application of the plugin on images of carbon nanotubes (Sigma = 1.5, Lower Threshold = 1.3, Higher Threshold = 7).
 

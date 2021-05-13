@@ -30,7 +30,7 @@ A classic way of separating touching objects in binary images makes use of the d
 
 Distance Transform Watershed needs one 2D 8-bit binary image to run. If that's the case, a dialog like the following will pop up:
 
-![](/media/distance-transform-watershed-2d-menu.png "Distance-Transform-Watershed-2D-menu.png")
+![](/media/distance-transform-watershed-2d-menu.png)
 
 The plugin parameters are divided between the distance transform and the watershed options:
 
@@ -57,7 +57,7 @@ Finally, the result with the current plugin configuration can be visualize click
 
 Distance Transform Watershed 3D needs one 3D 8-bit binary image to run. If that's the case, a dialog like the following will pop up:
 
-![](/media/distance-transform-watershed-3d-menu.png "Distance-Transform-Watershed-3D-menu.png")
+![](/media/distance-transform-watershed-3d-menu.png)
 
 The parameters are the same as in the 2D version but some of them are adapted for 3D images:
 

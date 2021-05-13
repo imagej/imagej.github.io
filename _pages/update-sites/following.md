@@ -16,7 +16,7 @@ This tutorial will explain how to **add an update site to your install of ImageJ
 
 First, start the [updater](/plugins/updater):
 
-![](/media/how-to-setup-a-plugin-distribution-site-1.jpg "How_to_setup_a_plugin_distribution_site-1.jpg")
+![](/media/how-to-setup-a-plugin-distribution-site-1.jpg)
 
 ## Add update sites
 
@@ -50,11 +50,11 @@ Once you are happy with what will be installed, click on the *Apply Changes* but
 
 Restart ImageJ as instructed to finish the install. Check to see that the plugin was installed:
 
-![](/media/addpluginsite-7.jpg "AddPluginSite-7.jpg")
+![](/media/addpluginsite-7.jpg)
 
 ...and that it works:
 
-![](/media/addpluginsite-8.jpg "AddPluginSite-8.jpg")
+![](/media/addpluginsite-8.jpg)
 
 ...and that's all there is to it.
 

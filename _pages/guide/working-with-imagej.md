@@ -66,7 +66,7 @@ In addition, ImageJ features a find function that locates macros, scripts and pl
 <div class="PlainVisible">
 <div class="center">
 
-![figure images/CommandFinderAndSearch.png](/media/images/commandfinderandsearch.png "figure images/CommandFinderAndSearch.png")
+![figure images/CommandFinderAndSearch.png](/media/images/commandfinderandsearch.png)
 
 </div>
 </div>
@@ -222,7 +222,7 @@ Most ImageJ filters will, as an option, process all the slices in a stack. Image
 
 <div class="figure">
 
-![figure images/StacksHyperstacks.png](/media/images/stackshyperstacks.png "figure images/StacksHyperstacks.png")
+![figure images/StacksHyperstacks.png](/media/images/stackshyperstacks.png)
 
 <div class="caption">
 
@@ -264,14 +264,14 @@ float-infobox4 Opening Virtual Stacks by Drag & Drop
 
 </div>
 
-TIFF stacks with a <span class="Filename">.tif</span> extension open as virtual stacks when dragged and dropped on the ![figure images/tools/Switcher-small.png](/media/images/tools/switcher-small.png "fig:figure images/tools/Switcher-small.png") toolbar icon.
+TIFF stacks with a <span class="Filename">.tif</span> extension open as virtual stacks when dragged and dropped on the ![figure images/tools/Switcher-small.png](/media/images/tools/switcher-small.png) toolbar icon.
 
 <div class="medskip">
 </div>
 <div class="PlainVisible">
 <div class="center">
 
-![figure images/DragAndDropVirtualTiff.png](/media/images/draganddropvirtualtiff.png "figure images/DragAndDropVirtualTiff.png")
+![figure images/DragAndDropVirtualTiff.png](/media/images/draganddropvirtualtiff.png)
 
 </div>
 </div>
@@ -318,7 +318,7 @@ As described in [Image Types and Formats↑](#sec:Image-Types), true color image
 
 <div class="figure" style="max-width: 100%;">
 
-![figure images/RGB-HSBcolorModels.png](/media/images/rgb-hsbcolormodels.png "figure images/RGB-HSBcolorModels.png")
+![figure images/RGB-HSBcolorModels.png](/media/images/rgb-hsbcolormodels.png)
 
 <div class="caption">
 
@@ -348,7 +348,7 @@ People see color with significant variations. Indeed, the popular phrase "One pi
 
 <div class="figure" style="max-width: 100%;">
 
-![figure images/Dichromacy.png](/media/images/dichromacy.png "figure images/Dichromacy.png")
+![figure images/Dichromacy.png](/media/images/dichromacy.png)
 
 <div class="caption">
 
@@ -448,7 +448,7 @@ Selection Color can be changed in {% include bc path="Edit | Options | [Colors..
 
 <div class="figure" style="max-width: 88%;">
 
-![figure images/Selections.png](/media/images/selections.png "figure images/Selections.png")
+![figure images/Selections.png](/media/images/selections.png)
 
 <div class="caption">
 
@@ -479,7 +479,7 @@ Most of commands that can be useful in defining or drawing selections are availa
 </div>
 <div class="Labeling">
 
-**Moving** Selections can be moved by clicking and dragging as long as the cursor is within the selection and has changed to an ![figure images/pointers/Pointer-Arrow.png](/media/images/pointers/pointer-arrow.png "fig:figure images/pointers/Pointer-Arrow.png") . The status bar displays the coordinates of the upper left corner of the selection (or the bounding rectangle for non-rectangular selections) as it is being moved. To move the contents of a selection, rather than the selection itself, {% include bc path="Edit | \[\[\#sub:Copy%5Bc%5D\|Copy \[c\]↓\]\]" %}, {% include bc path="Edit | \[\[\#sub:Paste%5Bv%5D\|Paste \[v\]↓\]\]" %}, and then click within the selection and drag.
+**Moving** Selections can be moved by clicking and dragging as long as the cursor is within the selection and has changed to an ![figure images/pointers/Pointer-Arrow.png](/media/images/pointers/pointer-arrow.png) . The status bar displays the coordinates of the upper left corner of the selection (or the bounding rectangle for non-rectangular selections) as it is being moved. To move the contents of a selection, rather than the selection itself, {% include bc path="Edit | \[\[\#sub:Copy%5Bc%5D\|Copy \[c\]↓\]\]" %}, {% include bc path="Edit | \[\[\#sub:Paste%5Bv%5D\|Paste \[v\]↓\]\]" %}, and then click within the selection and drag.
 
 </div>
 <div class="Labeling">
@@ -502,7 +502,7 @@ Most of commands that can be useful in defining or drawing selections are availa
 <div class="wrap-l">
 <div class="figure">
 
-![figure images/compositeROI.png](/media/images/compositeroi.png "figure images/compositeROI.png")
+![figure images/compositeROI.png](/media/images/compositeroi.png)
 
 </div>
 </div>
@@ -540,7 +540,7 @@ Since ImageJ 1.46, selections can be defined with {% include wikipedia title="Su
 
 <div class="figure">
 
-![figure images/SubPixel.png](/media/images/subpixel.png "figure images/SubPixel.png")
+![figure images/SubPixel.png](/media/images/subpixel.png)
 
 <div class="caption">
 
@@ -565,7 +565,7 @@ Figure 7 **Interpolated selections.** ROIs drawn with (left) or without (middl
 
 <div class="figure" style="max-width: 75%;">
 
-![figure images/OverlayShowcase.png](/media/images/overlayshowcase.png "figure images/OverlayShowcase.png")
+![figure images/OverlayShowcase.png](/media/images/overlayshowcase.png)
 
 <div class="caption">
 
@@ -606,7 +606,7 @@ Currently, the support for [↓](#index-ThreeD-ROIs_3D-ROIs)[↓](#index-3D-ROIs
 
 <div class="figure" style="max-width: 70%;">
 
-![figure images/3Dviewer.png](/media/images/3dviewer.png "figure images/3Dviewer.png")
+![figure images/3Dviewer.png](/media/images/3dviewer.png)
 
 <div class="caption">
 

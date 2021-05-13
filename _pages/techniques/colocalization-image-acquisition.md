@@ -45,7 +45,7 @@ There are various problems that need to be understood and overcome while collect
 
 ### Blur
 
-![](/media/colocblur.gif "ColocBlur.gif")
+![](/media/colocblur.gif)
 
 *`Definition:`*` The Fourier spectrum of the `  
 `image lacks proper high frequencies. `
@@ -78,7 +78,7 @@ If the blurring of you images is too much, you might want to consider [deconvolu
 
 ### Background
 
-![](/media/colocbgnoise.gif "ColocBGnoise.gif")
+![](/media/colocbgnoise.gif)
 
 *`Definition:`*` Unspecific signal. `
 

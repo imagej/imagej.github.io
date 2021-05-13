@@ -19,7 +19,7 @@ MaMuT is not shipped with Fiji by default; you have to install it in Fiji. Thank
 
 Got to {% include bc path='Help | Update...'%} and click on the **Manage update sites** button. In the window that appear, find the **MaMuT** checkbox and tick it. Then close the window. In the files to update list, there should be a **plugins/MaMuT\_.jar** appearing. Click on **Apply changes** button, then restart Fiji.
 
-![](/media/bdv-mamut-updatesite.png "bdv-MaMuT_UpdateSite.png")
+![](/media/bdv-mamut-updatesite.png)
 
 ## Data preparation.
 
@@ -49,7 +49,7 @@ Instead of preparing your own dataset, you can also download an example dataset 
 
 Start MaMuT on this dataset by browsing to {% include bc path='Plugins | MaMuT | Launch new MaMuT annotation'%}
 
-![](/media/bdv-mamut-menuitems.png "bdv-MaMuT_MenuItems.png")
+![](/media/bdv-mamut-menuitems.png)
 
 A file explorer window opens. Browse to the `.xml` file of the BDV file pair. After a little while, the MaMuT main GUI window opens:
 
@@ -173,7 +173,7 @@ The MaMuT viewer only displays a slice of the current source(s). It fetches the 
 
 Using these commands, try to move the view around so that these cells are in sight.
 
-![](/media/bdv-mamut-desiredorientation.png "bdv-MaMuT_DesiredOrientation.png")
+![](/media/bdv-mamut-desiredorientation.png)
 
 To do so, select the first source (angle 0°) and move the view in its XY place (press {% include key keys='Shift|Z' %}). Then move in Z to the top of the embryo (around Z=1800) and finally zoom to bring about 50 cells in view. If you move in time, you can see that a lot of cell divisions are happening there. We will now build their lineage.
 
@@ -207,11 +207,11 @@ Now is a good time to talk a little bit on how we control the look of spots on t
 
 The spot colouring uses the notion of *numerical features*. In MaMuT, and as in TrackMate, each annotation object can have several numerical, scalar features associated. For instance a spot can have features like X, Y, Z for its position, etc. The drop-box menu **Set color by** lets you choose the feature you want to use for the spot color. The color range below the menu shows you the min and max value for the feature you picked over all the dataset and interpolate from blue to red with a jet color-map. If you scroll through the menu, you can see that the features available are sorted in three categories: `spot features`, `default` and `track features`. `Spot features` is the category where you can find all the numerical features that relate to single spots, like their position, radius, *etc.* In `default`, colours are not picked from a numerical feature, but either all the same (uniform color) or set manually (we will see later how). The `track feature category` is special: it gives to spots the color taken from the feature of the *track* they belong to.
 
-![](/media/bdv-mamut-configurespotdisplay.png "bdv-MaMuT_ConfigureSpotDisplay.png")
+![](/media/bdv-mamut-configurespotdisplay.png)
 
 By default, the range of the color scale is taken from the minimal to the maximal feature value. This can be changed by double-clicking on the **Set color by**, which will bring a window where you can set the min and max manually.
 
-![](/media/bdv-mamut-configurefeaturerange.png "bdv-MaMuT_ConfigureFeatureRange.png")
+![](/media/bdv-mamut-configurefeaturerange.png)
 
 ## Linking cells across time.
 
@@ -276,7 +276,7 @@ Below is an example from an actual annotation, peeking ahead the lineage visuali
 
 Notice that the look of tracks (represented by a straight line for each link) can be tuned in the same way spots are.
 
-![](/media/bdv-mamut-configuretrackdisplay.png "bdv-MaMuT_ConfigureTrackDisplay.png")
+![](/media/bdv-mamut-configuretrackdisplay.png)
 
 Track coloring uses the same feature system than for spots. There are scalar numerical features associated to tracks and they are used to generate a color from a jet colormap. However, there is two kind of features for tracks:
 
@@ -464,7 +464,7 @@ Click on the spot you just added to add it to the selection, and click on the **
 
 If you follow the case depicted above, the semi-automatic tracking does a mistake at frame 7. It captures a brighter, smaller cell further from its predecessor rather than the right one.
 
-![](/media/bdv-mamut-semiautotracking-2.png "bdv-MaMuT_SemiAutoTracking_2.png")
+![](/media/bdv-mamut-semiautotracking-2.png)
 
 This gives us an opportunity to explain how does the semi-automatic tracking works and what are its limitations.
 
@@ -492,7 +492,7 @@ The **Record Movie** command will export a PNG capture of the viewer "as is". Al
 
 Below is an example obtained on the last time-point of the demo dataset. Notice that the exported image a flattened view of the data, as RGB images.
 
-![](/media/bdv-mamutrecordmaxprojection.png "bdv-MaMuTRecordMaxProjection.png")
+![](/media/bdv-mamutrecordmaxprojection.png)
 
 ### Exporting a track sub-volume.
 
@@ -502,7 +502,7 @@ First, select exactly two cells in TrackScheme or in a MaMuT viewer. These two c
 
 Once you have them, go the third tab in the main GUI window, called **Actions**. This tab contains only actions, that are MaMuT commands requiring special interaction with the data. Select the `Export track stack` action in the menu, and click the **Execute** button. A dialog shows up that allow configuring the export.
 
-![](/media/Bdv-MaMuT ExportTrackStack.PNG "bdv-MaMuT_ExportTrackStack.PNG")
+![](/media/Bdv-MaMuT ExportTrackStack.PNG)
 
 The dialog that pops let you choose first the source that will be resliced, in the `Target source` menu. Here we picked the first one. There is an important gotcha with the source selection and viewer orientation. The capture always uses the source intrinsic orientation. It will always capture Z-planes of the chosen source, irrespective of the view orientation in the MaMuT viewer. So if you capture the same track with two different sources, you might have very different orientation. The `Image size` field determines the size of the data exported, in units of the radius of the first select spot. Finally, the `Dimensionality` radio button lets you chose between exporting a 3D volume or just a single slice centered on the spot. In the example above, we generated the 3D volume following the track 'A', and on the left image, generated its maximal intensity projection.
 
@@ -819,7 +819,7 @@ Here is a list of all available commands.
 
 Here we recapitulate the default key-bindings for the MaMuT viewer. This image is also included in the help window of the MaMuT viewer.
 
-![](/media/bdv-mamutkeyboardlayout.png "bdv-MaMuTKeyboardLayout.png")
+![](/media/bdv-mamutkeyboardlayout.png)
 
 ## TrackScheme key-bindings.
 

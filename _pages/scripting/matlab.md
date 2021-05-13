@@ -33,7 +33,7 @@ If you run MATLAB R2017b and later, you don"t need to do this, as it ships and u
 ### Memory issue
 
 -   In order to handle large images, the default Java Heap Memory size assigned won't be enough and you may get the error `java.lang.OutOfMemoryError: Java heap space`.
--   From MATLAB R2010a onward, you can increase the Jave Heap Memory size from {% include bc path="Preferences | General | Java Heap Memory" %}. ![](/media/matlab-java-heap-memory.png "fig:MATLAB_java_heap_memory.png")
+-   From MATLAB R2010a onward, you can increase the Jave Heap Memory size from {% include bc path="Preferences | General | Java Heap Memory" %}. ![](/media/matlab-java-heap-memory.png)
 -   However, the maximum value allowed in the Preferences can still be too small for your purpose. In that case, you can directly edit `matlab.prf` file in the folder specified by the <code>prefdir&lt;\\code&gt; MATLAB function (eg. `C:\Users\xxxxxxx\AppData\Roaming\MathWorks\MATLAB\R2018b`). Find the parameter `JavaMemHeapMax` in the file and increase the number that follows the capital I (in MB) to increase the maximum Java heap memory size. The change will be reflected by the Preferences as above.
 
 <!-- -->
@@ -72,7 +72,7 @@ Actually running a [MATLAB](/scripting/matlab) script from ImageJ is effectively
 
 Options for controlling the startup of [MATLAB](/scripting/matlab), or killing existing [MATLAB](/scripting/matlab) processes (e.g. if hidden) can be accessed via: {% include bc path='Edit | Options | MATLAB...'%}
 
-![](/media/matlab-options.png "MATLAB_options.png")
+![](/media/matlab-options.png)
 
 > NB: because the script is being passed from ImageJ to a remote [MATLAB](/scripting/matlab), [MATLAB](/scripting/matlab) will not have access to ImageJ's classpath. Objects can be passed as variables to [MATLAB](/scripting/matlab) (e.g. by using @ annotation) but only if they are valid [MATLAB](/scripting/matlab) classes or specially handled classes.
 >

@@ -31,7 +31,7 @@ To Begin with, we should split the three color channel images into separate wind
 
     How can you tell if there is an offset problem in an image? Simply look at the intensity histogram ("Analyze-Histogram"). In the too high offset case look for empty or very small numbers in the low end of the intensity scale. That means there are no or too few pixels with values close to zero. See the green channel of FluorescentCells.tif for an example of that, look at the image below. For the too low offset case, there is no easy way to tell if that happened. Getting the detector offset wrong makes quantitative analysis very difficult or impossible, for instance in the case of auto thresholding a 2 channel image for [Colocalization Analysis](/techniques/colocalization-analysis).
 
-    ![ 700px](/media/offsetproblem.png " 700px")
+    ![ 700px](/media/offsetproblem.png)
 
 Questions you should ask before quantifying information from images:
 

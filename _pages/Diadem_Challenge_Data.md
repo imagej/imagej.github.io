@@ -12,15 +12,15 @@ If you have any comments or suggestions relating to this page, please email <em>
 
 This data set [is described here](http://www.diademchallenge.org/olfactory_projection_fibers_readme.html). I will go through loading the example "OP\_1". Each image stack in this data set is distributed as a directory of TIFF files, one per slice. To load such a stack, go to {% include bc path='File | Import | Image Sequence'%} and select the file "1.tif". You should be shown a dialog like this:
 
-![](/media/diadem-challenge-data-1.png "Diadem_Challenge_Data-1.png")
+![](/media/diadem-challenge-data-1.png)
 
 These default options should be fine - as you can see from the dialog it will have worked out that there are 60 image slices in that directory to be imported. If you click OK you should get a normal image stack:
 
-![](/media/diadem-challenge-data-2.png "Diadem_Challenge_Data-2.png")
+![](/media/diadem-challenge-data-2.png)
 
 Unfortunately these TIFF files do not have the separation of these slices encoded correctly, so you should correct this manually. If you go to {% include bc path='Image | Properties'%} you will see that the pixel width, pixel height and voxel depth are all set to the same value (0.3296485). The [page with information about the data set](http://www.diademchallenge.org/olfactory_projection_fibers_readme.html) tells us that the z-separation should be three times the x and y separation, so correct the voxel depth to 3 times 0.3296485, like this:
 
-![](/media/diadem-challenge-data-4.png "Diadem_Challenge_Data-4.png")
+![](/media/diadem-challenge-data-4.png)
 
 ... and then press "OK". To save yourself from having to re-enter this calibration information, and to be able to open the stack from the "Recent Files" menu, etc. I think it's helpful to now save this stack as a single TIFF. So, I would go to "{% include bc path='File | Save As | Tiff ...'%}" and save this as OP\_1.tif in the directory above the one with individual slices.
 
@@ -30,7 +30,7 @@ Now start the tracing plugin by going to {% include bc path='Plugins | Segmentat
 
 To load the SWC file with the supplied traces, click on "Load Traces / SWC File" and navigate to OP\_1.swc. When you have selected this file, you will see the following options dialog:
 
-![](/media/diadem-challenge-data-7.png "Diadem_Challenge_Data-7.png")
+![](/media/diadem-challenge-data-7.png)
 
 The important setting here is that you should have the "Ignore calibration" option selected. You should not apply an offset or scale for this data set. When you click OK you should see that the traces are overlayed in the stack window and in the 3D viewer:
 
@@ -70,7 +70,7 @@ These offset values are taken from [the official page describing the data set](h
 
 Now you can stitch together the images using these offsets by going to {% include bc path='Plugins | Stitching | Stitch Collection of Images'%}, browsing to the TileConfiguration.txt file you've just created and making sure you uncheck the box "compute overlap". It should look something like this:
 
-![](/media/diadem-neocortical-layer-6-axons-1.png "Diadem_Neocortical_Layer_6_Axons-1.png")
+![](/media/diadem-neocortical-layer-6-axons-1.png)
 
 After clicking OK, this should stitch together all those stacks into one huge stack. (If there are problems, you should see details of them in the log window.)
 
@@ -78,7 +78,7 @@ After clicking OK, this should stitch together all those stacks into one huge st
 
 Next, you should correct the Z-calibration of the stitched stack. The data set page tells us that the z separation is 3.03 pixels, so open up {% include bc path='Image | Properties'%} and set the Voxel Depth to 3.03 times the Pixel Width:
 
-![](/media/diadem-neocortical-layer-6-axons-3.png "Diadem_Neocortical_Layer_6_Axons-3.png")
+![](/media/diadem-neocortical-layer-6-axons-3.png)
 
 Now you should save the stitched stack, and work from that from now on. (Since the stitched stack isn't very large (156MB) one wonders why this wasn't distributed already stitched.) Save the stack with "{% include bc path='File | Save As | Tiff...'%}".
 
@@ -88,7 +88,7 @@ To load the SWC files, start up the tracer with {% include bc path='Plugins | Se
 
 You might have noticed that the offsets used in stitching above had some negative Y and Z values. This means that when you load in the SWC files, you will need to apply an offset to compensate for this. (0,0,0) in the stitched image will be at (0,-14,-21) in the space of the tracings, so when you click on "Import traces / SWC file" and have chosen (for example) NC\_14.swc, you should expand the "Apply offset to SWC file co-ordinates" option and fill in these values:
 
-![](/media/diadem-neocortical-layer-6-axons-7.png "Diadem_Neocortical_Layer_6_Axons-7.png")
+![](/media/diadem-neocortical-layer-6-axons-7.png)
 
 Then the traces should load in the correct position with those offsets:
 
@@ -100,7 +100,7 @@ We will go through loading in the CF\_1 image stack from the [Cerebellar Climbin
 
 To load the files as a virtual stack, go to "{% include bc path='File | Import | Image Sequence ...'%}" and select the first file in the sequence, "01.tif". You will be presented with the import dialog, in which you should make sure that "Use virtual stack" is selected.
 
-![](/media/diadem-cerebellar-1.png "Diadem_Cerebellar-1.png")
+![](/media/diadem-cerebellar-1.png)
 
 (Note that the number of slices in the directory (34) was automatically set.) You should now be able to browse through the stack:
 
@@ -118,7 +118,7 @@ It is a good idea to invert this image, since the 3D Viewer will make the low va
 
 Before saving this out as a single 862MB stack, it is a good idea to correct the calibration of the image. The [data set web page](http://www.diademchallenge.org/cerebellar_climbing_fibers_readme.html) tells us that the separation between slices is 8.08 pixels. So, if you bring up the {% include bc path='Image | Properties'%} dialog, then you can correct the voxel depth to be 8.08 times the pixel width:
 
-![](/media/diadem-cerebellar-5.png "Diadem_Cerebellar-5.png")
+![](/media/diadem-cerebellar-5.png)
 
 Now save this as a single TIFF stack called CF\_1.tif by going to "{% include bc path='File | Save As | Tiff ...'%}", saving it in the directory above the one with the slices, to avoid confusion.
 
@@ -128,11 +128,11 @@ You can now start the tracer with {% include bc path='Plugins | Segmentation | S
 
 You may wish to adjust the transparency in the 3D viewer by selecting the image volume (left click on the image in the 3D viewer) and then going to "{% include bc path='Edit | Attributes | Change Transparency...'%}":
 
-![](/media/diadem-cerebellar-7.png "Diadem_Cerebellar-7.png")
+![](/media/diadem-cerebellar-7.png)
 
 Now, to load the traces click on "Load Traces / SWC File" and select CF\_1.swc. You will be presented with an options box like this:
 
-![](/media/diadem-cerebellar-7b.png "Diadem_Cerebellar-7b.png")
+![](/media/diadem-cerebellar-7b.png)
 
 Make sure that "Ignore calibration" is selected (as in that screenshot) and that there is no offset or scale set. Once loaded you should be able to see the traces as here:
 
@@ -144,7 +144,7 @@ The [Hippocampal CA3 Interneuron](http://www.diademchallenge.org/hippocampal_ca3
 
 As with the other stacks, you should load the image stack using {% include bc path='Import | Image Sequence'%} and selecting the "Use virtual stack" option:
 
-![](/media/diadem-hippocampal-ca3-interneuron-2.png "Diadem_Hippocampal_CA3_Interneuron-2.png")
+![](/media/diadem-hippocampal-ca3-interneuron-2.png)
 
 That should load in the image data:
 
@@ -160,7 +160,7 @@ Now convert it to 8-bit with {% include bc path='Image | Type | 8-bit'%}. (The s
 
 Now set the voxel depth to 1.52 times the voxel width, as specified on the [data set page](http://www.diademchallenge.org/hippocampal_ca3_Interneuron_readme.html):
 
-![](/media/diadem-hippocampal-ca3-interneuron-6.png "Diadem_Hippocampal_CA3_Interneuron-6.png")
+![](/media/diadem-hippocampal-ca3-interneuron-6.png)
 
 And then I would save this file as a TIFF stack (with {% include bc path='Save As | Tiff...'%}) so that you don't have to go through these steps again. That will need about 2GB of disk space, and will only work if your filesystem supports single files of that size.
 
@@ -170,7 +170,7 @@ If you now start {% include bc path='Plugins | Segmentation | Simple Neurite Tra
 
 Then you can load the SWC files via "Load Traces / SWC file" with these options:
 
-![](/media/diadem-hippocampal-ca3-interneuron-8.png "Diadem_Hippocampal_CA3_Interneuron-8.png")
+![](/media/diadem-hippocampal-ca3-interneuron-8.png)
 
 (I've unchecked "Replace existing paths" for this data set, since it's nice to load several SWC files into the tracer at once.) The results of loading three of the reconstructions, for example, might look like this:
 

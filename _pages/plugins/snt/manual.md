@@ -19,7 +19,7 @@ SNT registers three commands in Fiji's menu structure in the {% include bc path=
 
 # Startup Prompt
 
-![](/media/snt-startup-prompt.png "fig:SNT-Startup-Prompt.png") SNT is initialized by running {% include bc path='Plugins|NeuroAnatomy|SNT...'%}. All the options in the startup prompt can be set once SNT is opened, but the startup prompt provides the convenience of setting the most important parameters at once.
+![](/media/snt-startup-prompt.png) SNT is initialized by running {% include bc path='Plugins|NeuroAnatomy|SNT...'%}. All the options in the startup prompt can be set once SNT is opened, but the startup prompt provides the convenience of setting the most important parameters at once.
 
 -   **Image**/**Image File** The image to be traced/analyzed. The drop-down menu will list all images currently open in ImageJ. Alternatively, an image path may be specified by clicking *Browse* and choosing an image file. If no image is chosen, SNT will create an empty display canvas from the computed bounding box of the reconstruction file (if provided).
 -   **Reconstruction file** The path of the reconstruction file to be imported. SNT will automatically try to guess if there is a reconstruction file associated with the chosen image by looking at all the reconstruction files (`.traces`, `.(e)swc`, or `.json`) in the image directory, and choosing one that more {% include wikipedia title="Levenshtein distance" %} the image filename.
@@ -109,7 +109,7 @@ This home tab aggregated widgets for tracing and frequent operations.
 
 **Enable Snapping checkbox** If active (the default) the cursor snaps to the brightest voxel in its vicinity (Toggling shortcut: {% include key key='S' %}). To accomplish this, SNT takes the cuboid of the specified dimensions (in pixels) centered on the current cursor position and searches quickly for local maxima in that neighborhood, moving the cursor to that position. The Z-plane in which the maximum was found is automatically selected if the "Z" parameter is greater than 0. Noteworthy:
 
--   This feature assumes the signal is brighter than the background as typically found in fluorescent images.![](/media/cursor-snap.png "fig:cursor-snap.png")
+-   This feature assumes the signal is brighter than the background as typically found in fluorescent images.![](/media/cursor-snap.png)
 -   If multiple maxima exist (e.g., when the signal is saturated), it snaps to their centroid.
 -   To streamline the computation: XYZ dimensions are constrained to even numbers and limited range.
 -   Snapping occurs in 2D (i.e., in the active plane) if Z=0.
@@ -117,7 +117,7 @@ This home tab aggregated widgets for tracing and frequent operations.
 
 ### Auto-tracing
 
-![](/media/snt-auto-tracing.png "fig:SNT-auto-tracing.png") **Enable A\* search algorithm** By default, SNT uses the {% include wikipedia title="A* search algorithm" text="A* search" %} to automatically trace paths between two manually selected points. To manually place nodes in a path, toggle this feature off. Note that it is also possible to enable other algorithms through the installation of SNT add-ons. See [Tubular Geodesics](/plugins/snt/tubular-geodesics) for details.
+![](/media/snt-auto-tracing.png) **Enable A\* search algorithm** By default, SNT uses the {% include wikipedia title="A* search algorithm" text="A* search" %} to automatically trace paths between two manually selected points. To manually place nodes in a path, toggle this feature off. Note that it is also possible to enable other algorithms through the installation of SNT add-ons. See [Tubular Geodesics](/plugins/snt/tubular-geodesics) for details.
 
 **Hessian-based analysis** (Toggling shortcut: {% include key key='H' %}) A quick way to improve the quality and efficiency of the pathfinding is to enable this feature, in which paths are computed after filtering the image for tube-like structures. Upon such filtering, SNT will use a measure of [Tubeness](/plugins/tubeness) at each point of the image to define the best path through it, based on eigenvalues and eigenvectors of the {% include wikipedia title="Hessian matrix" %}. The later can be used to infer the likelihood that a point in the image belongs to a tube-like structure. This concept is also known as *vesselness* or *neuriteness*.
 
@@ -361,7 +361,7 @@ Right-clicking on any of the image views will bring up a menu with various editi
 
 # Path Manager
 
-![Path Manager](/media/snt-path-manager.png "fig:Path Manager") The Path Manager dialog displays all existing paths in a hierarchical structure (tree), where one path is "primary" (path 0) and all other paths (paths 1...N) are children of the primary path. The dialog also contains several menus with various editing, tagging, refinement/fitting, filling and analysis options. Paths can be searched by name and/or tags in the text filter, with more sophisticated search capabilities in the Advanced Filtering Menu.
+![Path Manager](/media/snt-path-manager.png) The Path Manager dialog displays all existing paths in a hierarchical structure (tree), where one path is "primary" (path 0) and all other paths (paths 1...N) are children of the primary path. The dialog also contains several menus with various editing, tagging, refinement/fitting, filling and analysis options. Paths can be searched by name and/or tags in the text filter, with more sophisticated search capabilities in the Advanced Filtering Menu.
 
 ## Menu Commands
 
@@ -392,7 +392,7 @@ Note that only SWC-type tags are preserved across restarts when saving traces in
 
 ### Refine/Fit
 
-![](/media/fit-manager.png "fig:Fit-manager.png") SNT can use the fluorescent signal around traced Paths to optimize curvatures and estimate the thickness of traced structures to sub-voxel accuracy. The optimization algorithm uses pixel intensities to fit circular cross-sections around each node. Once computed, fitted cross-sections can be used to: 1) Infer the radius of nodes, and/or 2) refine node positioning, by snapping their coordinates to the cross-section centroid. The {% include bc path='Refine/Fit| '%} menu contains three entries: <img src="/media/explore-fit-preview.png" title="fig:Slice in &quot;Explore/Preview Fit&quot; image stack" width="250" alt="Slice in &quot;Explore/Preview Fit&quot; image stack" />
+![](/media/fit-manager.png) SNT can use the fluorescent signal around traced Paths to optimize curvatures and estimate the thickness of traced structures to sub-voxel accuracy. The optimization algorithm uses pixel intensities to fit circular cross-sections around each node. Once computed, fitted cross-sections can be used to: 1) Infer the radius of nodes, and/or 2) refine node positioning, by snapping their coordinates to the cross-section centroid. The {% include bc path='Refine/Fit| '%} menu contains three entries: <img src="/media/explore-fit-preview.png" title="fig:Slice in &quot;Explore/Preview Fit&quot; image stack" width="250" alt="Slice in &quot;Explore/Preview Fit&quot; image stack" />
 
 -   {% include bc path='Fit Path(s).../Un-fit Path(s)/Apply Existing Fit'%} This option will change depending on which Path(s) are currently selected. You can use it to 1) Fit selected Path(s), 2) un-fit Path(s) that have already been fitted, or 3) apply a generated preview of the fit or an existing fit.
 -   {% include bc path='Explore/Preview Fit'%} Carves out a region of the image along and around each Path node, generating an animated cross-view "fly-through" with the result of the fitting operation. The generated image is annotated with details of the fit: i) Fitted radius; ii) normalized score quantifying the "circularity" of a node's cross section, and iii) the angle between node and parent tangent vectors.
@@ -525,10 +525,10 @@ This menu contains several options which provide quick ways to analyze and visua
 
 ## Filter Toolbar
 
-![](/media/snt-path-manager-text-filter.png "fig:") The filter toolbar allows paths to be searched and filtered quickly using tags (colors, annotations, SWC-type, etc.) or morphometric properties. The text field is used for text-based searches (recent searches can be recovered through its drop-down menu). The {% include key key='down' %} and {% include key key='up' %} arrow keys find the next/previous occurrence of the entered phrase, while the ![](/media/snt-text-filter-balloon-button.png "fig:SNT-Text-Filter-Balloon-Button.png") button highlights all occurrences of the entered phrase. Settings for advance text-based filtering can be accessed through the ![](/media/snt-text-filter-menu-button.png "fig:SNT-Text-Filter-Menu-Button.png") button, including wildcard support, case sensitive matching, and replace-by-pattern. In addition, the ![](/media/snt-text-filter-advanced-button.png "fig:SNT-Text-Filter-Advanced-Button.png") button restricts filtering to the selected subset of Path(s). Other means of filtering Paths include: !["Color Filters" menu](SNT-Path-Manager-Text-Filter-Color-Filters.png "fig:"Color Filters" menu")
+![](/media/snt-path-manager-text-filter.png) The filter toolbar allows paths to be searched and filtered quickly using tags (colors, annotations, SWC-type, etc.) or morphometric properties. The text field is used for text-based searches (recent searches can be recovered through its drop-down menu). The {% include key key='down' %} and {% include key key='up' %} arrow keys find the next/previous occurrence of the entered phrase, while the ![](/media/snt-text-filter-balloon-button.png) button highlights all occurrences of the entered phrase. Settings for advance text-based filtering can be accessed through the ![](/media/snt-text-filter-menu-button.png) button, including wildcard support, case sensitive matching, and replace-by-pattern. In addition, the ![](/media/snt-text-filter-advanced-button.png) button restricts filtering to the selected subset of Path(s). Other means of filtering Paths include: !["Color Filters" menu](SNT-Path-Manager-Text-Filter-Color-Filters.png "fig:"Color Filters" menu")
 
--   **Color Filters** ![](/media/snt-text-filter-color-button.png "fig:SNT-Text-Filter-Color-Button.png") Allows filtering of Paths by color tags. Custom colors may be selected by right-clicking an empty swatch, which will bring up the CMYK palette. The chosen color is temporarily saved in that swatch.
--   **Morphology Filters** ![](/media/snt-text-filter-morphology-button.png "fig:SNT-Text-Filter-Morphology-Button.png") Allows filtering of Paths by selected morphological properties (including cell identity). Note that these filters do not require Paths to be labeled using {% include bc path='Tag|Morphology| '%}.
+-   **Color Filters** ![](/media/snt-text-filter-color-button.png) Allows filtering of Paths by color tags. Custom colors may be selected by right-clicking an empty swatch, which will bring up the CMYK palette. The chosen color is temporarily saved in that swatch.
+-   **Morphology Filters** ![](/media/snt-text-filter-morphology-button.png) Allows filtering of Paths by selected morphological properties (including cell identity). Note that these filters do not require Paths to be labeled using {% include bc path='Tag|Morphology| '%}.
     -   *Path Order...* Filters for Paths of [Path order](/plugins/snt/analysis#path-order-analysis) in the inputted range. Example queries: `1-2`: selects all primary and secondary branches; `max-max`: selects all terminal branches.
     -   *Length...* Filters for Paths of length within the inputted range. Example queries: `10-20`: selects all Paths with lengths between 10 and 20μm; `max-max`: selects the longest path(s).
     -   *Mean Radius...* Filters for Paths of mean radius within the inputted range.

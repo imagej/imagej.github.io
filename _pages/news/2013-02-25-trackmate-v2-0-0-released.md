@@ -22,7 +22,7 @@ Most changes in this version are for developers and are not displayed in the tex
 -   TrackMate now computes edge features (on top of spot and track features). These features enable the immediate measure of velocity, displacement, etc...
 -   Tracks can be colored in the Hyperstack displayer, in the 3D viewer and in TrackScheme using indifferently track or edge features.
 
-![caption](/media/trackmate-edgecoloring.png "caption")
+![caption](/media/trackmate-edgecoloring.png)
 
 -   All spot, edge and track features are computed automatically and kept in sync even versus manual modifications.
 -   All spot, edge and track features are saved in the XML file.

@@ -180,7 +180,7 @@ The first imaging program that {% include person id='rasband' %} developed, star
 
 Here is a timeline of software development related to ImageJ:
 
-![](/media/timeline-history-of-imagej.png "Timeline_History_of_ImageJ.png")
+![](/media/timeline-history-of-imagej.png)
 
 ## Publications
 

@@ -85,7 +85,7 @@ Note that you need to connect with command-line ssh first, to record the finger-
 
 If the update site has not been initialized yet (i.e. if nobody else has initialized that site yet), you will see a dialog like this:
 
-![](/media/how-to-setup-a-plugin-distribution-site-6a.jpg "How_to_setup_a_plugin_distribution_site-6a.jpg")
+![](/media/how-to-setup-a-plugin-distribution-site-6a.jpg)
 
 Just click *OK* and let the updater upload an empty file index (it is stored in the file *db.xml.gz* which is also called the *database* in the documentation of the updater).
 
@@ -97,7 +97,7 @@ Note: you cannot simply copy files to your web space; the updater would miss all
 
 First, start the [updater](/plugins/updater):
 
-![](/media/how-to-setup-a-plugin-distribution-site-1.jpg "How_to_setup_a_plugin_distribution_site-1.jpg")
+![](/media/how-to-setup-a-plugin-distribution-site-1.jpg)
 
 Click on the *Manage update sites* button and verify:
 

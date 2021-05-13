@@ -130,12 +130,12 @@ Example of registration results using the shrinking constraint:
 <tr>
 <td>
 
-![input data](/media/rvs-tem-example.gif "input data")
+![input data](/media/rvs-tem-example.gif)
 
 </td>
 <td>
 
-![output data](/media/rvs-registered-tem.gif "output data")
+![output data](/media/rvs-registered-tem.gif)
 
 </td>
 </tr>
@@ -161,12 +161,12 @@ Even this sequence of rather noisy transmission electron microscopy images, with
 <tr>
 <td>
 
-![](/media/stack4.gif "Stack4.gif")
+![](/media/stack4.gif)
 
 </td>
 <td>
 
-![](/media/stack4-2.gif "Stack4-2.gif")
+![](/media/stack4-2.gif)
 
 </td>
 </tr>

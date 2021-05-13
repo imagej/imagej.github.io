@@ -18,9 +18,9 @@ Please download the following material for the Workshop "Advanced Programming wi
 
 The zip file contains an Eclipse project with all example code and images. The pdf slides of the workshop presentation are also included in the zip file.
 
-Just unzip it in your Eclipse workspace. In Eclipse choose {% include bc path="File|Import..." %} in the main menu. This brings up the following dialog. Choose "Existing Projects into Workspace" and click "Next". ![](/media/workshop-2012-import-1.png "fig:workshop-2012-import-1.png")
+Just unzip it in your Eclipse workspace. In Eclipse choose {% include bc path="File|Import..." %} in the main menu. This brings up the following dialog. Choose "Existing Projects into Workspace" and click "Next". ![](/media/workshop-2012-import-1.png)
 
-Browse to the location of the unzipped directory. ![](/media/workshop-2012-import-2.png "fig:workshop-2012-import-2.png")
+Browse to the location of the unzipped directory. ![](/media/workshop-2012-import-2.png)
 
 Click "Finish". You're done.
 

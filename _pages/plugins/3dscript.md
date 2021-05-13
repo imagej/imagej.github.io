@@ -24,7 +24,7 @@ In state-of-the-art 3D rendering and animation software the user typically creat
 
 In 3Dscript, animations are defined by a syntax based on natural English language, in sentences such as "From frame 0 to frame 100 rotate by 360 degrees horizontally ease-in".
 
-![](/media/3dscript-wiki-01.jpg "3Dscript-wiki-01.jpg")
+![](/media/3dscript-wiki-01.jpg)
 
 ## Publication
 

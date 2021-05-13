@@ -20,11 +20,11 @@ To get started, from the main plugin GUI click on the Weka button (on the bottom
 
 This will launch the Weka GUI Chooser and, if it is the first time, a warning dialog will be displayed to warn you about the package manager:
 
-![](/media/weka-gui-chooser-package-warning-ubuntu.png "Weka-GUI-Chooser-package-warning-ubuntu.png")
+![](/media/weka-gui-chooser-package-warning-ubuntu.png)
 
 We can just click OK, go the Weka GUI Chooser window and look for the package manager under the menu {% include bc path='Tools | Package manager'%}, or by pressing {% include key keys='Ctrl|U' %}:
 
-![](/media/weka-gui-chooser-package-manager.png "Weka-GUI-Chooser-package-manager.png")
+![](/media/weka-gui-chooser-package-manager.png)
 
 This will open the Weka Package Manager window:
 
@@ -40,11 +40,11 @@ In this tutorial we show how to install a new classifier, in particular the *Cla
 
 A confirmation dialog will pop up:
 
-![](/media/weka-package-manager-confirmation.png "Weka-package-manager-confirmation.png")
+![](/media/weka-package-manager-confirmation.png)
 
 We click on "Yes" and another dialog will pop up to warn us about closing any active Weka application window that we might have open:
 
-![](/media/weka-warning-install-package.png "Weka-warning-install-package.png")
+![](/media/weka-warning-install-package.png)
 
 We click OK and the package will be installed. If everything goes right, the package should be listed with a "Yes" in the "Loaded" column:
 
@@ -52,6 +52,6 @@ We click OK and the package will be installed. If everything goes right, the pac
 
 This means the *ClassificationViaClustering* classifier **is now installed** and ready to use. We can check it out by going to the settings dialog of the [Trainable Weka Segmentation](/plugins/tws) plugin and confirming the classifier is now listed:
 
-![](/media/tws-settings-new-classifier.png "TWS-settings-new-classifier.png")
+![](/media/tws-settings-new-classifier.png)
 
   

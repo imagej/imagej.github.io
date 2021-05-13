@@ -11,7 +11,7 @@ The 2015 [ImageJ User and Developer Conference](/events/Conference) complemented
 
 ## Location
 
-![ 250px \| left](/media/-wid.jpg " 250px | left")
+![ 250px \| left](/media/-wid.jpg)
 
 [H.F. DeLuca Forum](http://discovery.wisc.edu/home/town-center/apply-to-reserve-town-center-spaces/large-rooms/h-f-deluca-forum/h-f-deluca-forum.cmsx)  
 [Wisconsin Institutes for Discovery](http://discovery.wisc.edu/)  
@@ -153,22 +153,22 @@ Abstract submissions were reviewed by the conference advisory committee:
 <tr>
 <td style="padding-top: 10px">
 
-![ x100px \| top \| link=LOCI](/media/loci-logo.png " x100px | top | link=LOCI")
+![ x100px \| top \| link=LOCI](/media/loci-logo.png)
 
 </td>
 <td style="padding-left: 30px; padding-top: 0">
 
-![ x90px \| top \| link=http://wisc.edu/](/media/uw-logo.png " x90px | top | link=http://wisc.edu/")
+![ x90px \| top \| link=http://wisc.edu/](/media/uw-logo.png)
 
 </td>
 <td style="padding-left: 30px; padding-top: 0">
 
-![ x80px \| top \| link=http://www.list.lu/](/media/list-logo.jpg " x80px | top | link=http://www.list.lu/")
+![ x80px \| top \| link=http://www.list.lu/](/media/list-logo.jpg)
 
 </td>
 <td style="padding-left: 30px">
 
-![ x80px \| top \| link=http://morgridge.wisc.edu/](/media/morgridge-logo.jpg " x80px | top | link=http://morgridge.wisc.edu/")
+![ x80px \| top \| link=http://morgridge.wisc.edu/](/media/morgridge-logo.jpg)
 
 </td>
 </tr>

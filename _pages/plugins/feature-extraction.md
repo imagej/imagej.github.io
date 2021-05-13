@@ -18,7 +18,7 @@ The extracted sets of corresponding landmarks and the calculated transformations
 
 ## Parameters
 
-![SIFT parameters](/media/sift-dialog.png "SIFT parameters")
+![SIFT parameters](/media/sift-dialog.png)
 
 ### Scale Invariant Interest Point Detector
 

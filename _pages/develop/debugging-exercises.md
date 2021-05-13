@@ -66,7 +66,7 @@ Breakpoints are a fundamental tool of debugging. They provide a way to instruct 
 
 To get started in this exercise, open up the source file - `E1BasicBreakpoints` - and *run* it to get an idea of what's going on. We should see a simple stack trace:
 
-![](/media/e1stacktrace.png "E1StackTrace.png")
+![](/media/e1stacktrace.png)
 
 [Stack traces](Wikipedia_Stack_trace) are a common starting point for debugging, as they are typically automatically produced when something goes wrong that the program was not prepared to handle. Java programs are executed in [Last In, First Out](Wikipedia_Stack_(abstract_data_type)) order; that is, starting with the `main` method, as methods are called they are added to the top of the *stack*, the method at the top is what's currently running, and when a method completes it is removed from the stack, returning the program to the next method in line. When an exception occurs, a *stack trace* is printed, showing the order that methods have been queued, with the top of the stack being the location of the exception (and thus a likely place to start looking for problems!).
 
@@ -101,7 +101,7 @@ Although breakpoints allow us a chance to peek inside running code, many times w
 
 Start by opening the `E2EffectiveExpressions` source and running it. Like the previous exercise, we have a stack trace to start from:
 
-![](/media/e2stacktrace.png "E2StackTrace.png")
+![](/media/e2stacktrace.png)
 
 Try setting a breakpoint on the conditional line:
 
@@ -153,7 +153,7 @@ Breakpoints trigger *every* time the corresponding line would be executed, which
 
 Start by opening the `E3ConditionalCrisis` source and running it. This time our console output looks a bit different:
 
-![](/media/e3stacktrace.png "E3StackTrace.png")
+![](/media/e3stacktrace.png)
 
 In addition to the exception stack trace, the program itself appears to have found an invalid object, causing the processing to go unfinished. Although we could set a breakpoint on the exception, as we did in [exercise 2](#exercise-2-expressions), the exception is actually happening *after* the more interesting part of the program - the loop. As we learned in exercise 2, breakpoints in code that is called repeatedly are annoying, so let's see what we can find by attaching conditions to our breakpoint.
 
@@ -225,7 +225,7 @@ Note that the menu path of the plugin is specified in the class's annotation:
 
 So, you can now run the `E4 - Print ConsoleService` command either via the menus or the [search bar](/learn/getting-started#the-search-bar). You should get an exception:
 
-![](/media/e4stacktrace.png "E4StackTrace.png")
+![](/media/e4stacktrace.png)
 
 In order to connect Eclipse to ImageJ, we need to close our running instance and [launch ImageJ from the command line](/help/troubleshooting#launching-imagej-from-the-console), which allows us to set the [debug flag](/develop/debugging#attaching-to-imagej-instances), e.g.:
 ```

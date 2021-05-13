@@ -28,7 +28,7 @@ A picture is worth a thousand words, so here is an example. You see a 2,048×2,0
 
 |                                                                                     |                                                                                                                        |                                                                                                                     |
 |-------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| ![ImageJ interpolated scaling](/media/downsample-imagej.png "ImageJ interpolated scaling") | ![Gaussian downsampling with target sigma=0.25](/media/downsample-ts-0.25.png "Gaussian downsampling with target sigma=0.25") | ![Gaussian downsampling with target sigma=0.5](/media/downsample-ts-0.5.png "Gaussian downsampling with target sigma=0.5") |
+| ![ImageJ interpolated scaling](/media/downsample-imagej.png) | ![Gaussian downsampling with target sigma=0.25](/media/downsample-ts-0.25.png) | ![Gaussian downsampling with target sigma=0.5](/media/downsample-ts-0.5.png) |
 
 ## Code
 

@@ -6,7 +6,7 @@ categories: [Conference, community]
 
 ## ImageJ User and Developer Conferences
 
-![](/media/imagej-conference-logo.png "Imagej-conference-logo.png")
+![](/media/imagej-conference-logo.png)
 
 Approximately every two years from 2006 through 2015, there was a conference focused on [ImageJ](/about)-based software, including both the core program itself, as well as applications and [plugins](/plugins) thereof.
 

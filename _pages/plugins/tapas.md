@@ -60,7 +60,7 @@ As for stable version 0.5 the following modules are available :
 
 <!-- -->
 
--   Download ![](/media/bundle-tapas0.6.3.zip "fig:Bundle-tapas0.6.3.zip") and unzip it into the ImageJ or Fiji directory.
+-   Download ![](/media/bundle-tapas0.6.3.zip) and unzip it into the ImageJ or Fiji directory.
 
 TAPAS was tested successfully with OMERO.insight 5.5.5 and Bioformats 6.0.1.
 

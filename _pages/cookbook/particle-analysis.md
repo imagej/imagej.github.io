@@ -13,7 +13,7 @@ Automatic particle counting can be done if the image does not have too many indi
 
 [Segmentation](/techniques/segmentation), or the ability to distinguish an object from its background, can be a difficult issue to deal with. Once this has been done, however, the object can then be analyzed.
 
-**RAW Threshold Watershed "AnalyzeParticles"** ![266\*177px](/media/raw-threshold-watershed-analyzeparticles2.jpg "fig:266*177px")
+**RAW Threshold Watershed "AnalyzeParticles"** ![266\*177px](/media/raw-threshold-watershed-analyzeparticles2.jpg)
 
 ### Setting a threshold
 
@@ -46,7 +46,7 @@ There are many algorithms you can use to calculate the threshold without introdu
 
 Fiji has several plugins found in the menu {% include bc path='Image | Adjust | Threshold'%} for automatic calculation of an image threshold. These include Otsu's thresholding, maximum entropy threshold, and mixture modelling thresholding. For a complete list of the methods available with Fiji see the Plugins section located in the Documentation section under the Content tab at the top of this page.
 
-![](/media/automatic-thresholding-5.1.1.2.jpg "automatic_thresholding_5.1.1.2.jpg")
+![](/media/automatic-thresholding-5.1.1.2.jpg)
 
 ### Watershed separation
 
@@ -66,7 +66,7 @@ The particle analysis can be automated via plugins or macros once the correct th
 
 This plugin automates many of the steps discussed above.
 
-1.  Enter the size range to be counted![](/media/nucleus-counter-1.jpg "fig:nucleus_counter_1.jpg").
+1.  Enter the size range to be counted![](/media/nucleus-counter-1.jpg).
 2.  Select the automatic thresholding method. This can be either *Current*, *Otsu*, *Maximum Entropy*, *Mixture Modelling* or *k-means* clustering. *Current* uses the threshold that has been set manually, see above.
 3.  Perform a background correction.
 4.  Use a *Smooth* filter.
@@ -78,7 +78,7 @@ Other options can easily be added on request.
 
 The count, area, and average size are returned as a text window and the outlined particles are overlaid on a duplicate of the original image.
 
-![](/media/nucleus-counter-2.jpg "nucleus_counter_2.jpg")
+![](/media/nucleus-counter-2.jpg)
 
 ## Manual Counting
 

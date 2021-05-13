@@ -26,11 +26,11 @@ This plugin consists of three parts. "Saim Plot" plots theoretical predictions f
 
 "Saim Inspect" and "Saim Fit" are very similar, however, Saim Inspect will act on the average values of the ROI (for instance, the pixel under the cursor) and executes only a single fit, whereas Saim Fit will analyze all pixels of the image stack. You will likely want to play with Saim Inspect first and determine reasonable guesses for A, B, and height. Note that you can fit with multiple guesses for the height (enter these as comma values, i.e. "50.0, 200.0, 350.0"), which is needed when the heights in your image span more than \~150nm. Use Saim Inspect to establish best guesses for A, B, and height (starting with a guess that is close to the final value will decrease the computation time).
 
-![](/media/saiminspect.png "fig:SaimInspect.png") <img src="/media/saiminspectoutput.png" width="500"/>
+![](/media/saiminspect.png) <img src="/media/saiminspectoutput.png" width="500"/>
 
 Saim Fit will fit each pixel in the input stack and output a stack with 4 images, the first one is the height map (in nm), the second image has the r-squared values (an indication of the goodness of fit with values between 0 and 1, the closer to 1, the better the fit), the third image shows the values for "A", and the last image the values for "B". Saim Fit will use as many thread as you allow in {% include bc path="Edit | Options | Memory & Threads" %} and it is best to set that value to the number of cores in your computer. If there is significant movement while taking the stack, you will first need to "de-jitter" using another ImageJ plugin (such as StackReg). The output image will have the Fire LUT by default. Do note the "Thresholding" parameter. Only pixels that are higher in intensity than the threshold will be analyzed. This can greatly reduce the analysis time ("dark" pixels will be hard to fit and are usually uninteresting anyways).
 
-![](/media/saimfit.png "fig:SaimFit.png") ![](/media/saimfitoutput.jpg "fig:SaimFitOutput.jpg")
+![](/media/saimfit.png) ![](/media/saimfitoutput.jpg)
 
 ## Usage in a macro
 

@@ -29,7 +29,7 @@ In your favorite browser, log into your GitHub account. If you don't have an acc
 
 Go to the library's repository (in this case https://github.com/fiji/VIB-lib) and "fork" the repository (click on the upper-right "Fork" button):
 
-![](/media/fork-github-tutorial.png "Fork-GitHub-tutorial.png")
+![](/media/fork-github-tutorial.png)
 
 By doing this, you will be duplicating the whole repository into your own GitHub account. This way you can freely work on the library with an identical version of the existing repository's master branch. *See [GitHub: how to fork a repository](https://help.github.com/articles/fork-a-repo) for more details.*
 
@@ -85,7 +85,7 @@ First, **switch to your branch**:
 
 Then click on the **Compare & Review button**:
 
-![](/media/github-compare-and-review-tutorial.png "GitHub-compare-and-review-tutorial.png")
+![](/media/github-compare-and-review-tutorial.png)
 
 After starting the review, you're presented with a review page where you can get a high-level overview of what exactly has changed between your branch and the repository's master branch. You can review all comments made on commits, identify which files changed, and get a list of contributors to your branch.
 

@@ -42,7 +42,7 @@ Probably the fastest to learn how to use LimeSeg at a basic level. You can find 
 
 Test LimeSeg is a modular 3D segmentation plugin. It is a particle-based active contour method. It can segment objects from 3D images where 3D objects are labelled on their outline, like cells labeled on their membrane, as shown in the image below (source of the image : https://loci.wisc.edu/sample-data/dub).
 
-![](/media/dub-scaled0.5xy-tp19.png "Dub-scaled0.5XY-Tp19.png")
+![](/media/dub-scaled0.5xy-tp19.png)
 
 LimeSeg can be used with simple commands provided by the plugin (under {% include bc path="Plugins|LimeSeg" %} in ImageJ menu), or on a more advanced manner with scripting capabilities of ImageJ (macro commands of ImageJ1 or preferentially with [groovy scripts](/scripting/groovy)).
 
@@ -58,7 +58,7 @@ The command Sphere Seg ({% include bc path="Plugins|LimeSeg|Sphere Seg" %}) is t
 
 2\. Draw a circular ROI that is contained within the vesicle And save it in the ROI manager with the t key or with {% include bc path="Edit|Selection|Add To Manager" %} (only this ROI should be contained in the ROI manager).
 
-![](/media/limeseg-seed-vesicle.png "LimeSeg_Seed_Vesicle.png")
+![](/media/limeseg-seed-vesicle.png)
 
 3\. Execute the Sphere Seg command : {% include bc path="Plugins|LimeSeg|Sphere Seg" %}
 
@@ -78,15 +78,15 @@ The command Sphere Seg ({% include bc path="Plugins|LimeSeg|Sphere Seg" %}) is t
 
 To segment this demo image, please choose the parameters as in this image:
 
-![](/media/limeseg-parameters-vesicle.png "LimeSeg_Parameters_Vesicle.png")
+![](/media/limeseg-parameters-vesicle.png)
 
 After convergence, you can go through the 2D image and you should see some points along the objects, like this:
 
-![](/media/limeseg-2dview-vesicle.png "LimeSeg_2DView_Vesicle.png")
+![](/media/limeseg-2dview-vesicle.png)
 
 Also the 3D viewer should give a 3D View of the vesicle:
 
-![](/media/limeseg-3dview-vesicle.png "LimeSeg_3DView_Vesicle.png")
+![](/media/limeseg-3dview-vesicle.png)
 
 Other outputs are provided as an ImageJ table: <img src="/media/limeseg-results-vesicle.png" width="1000"/>
 
@@ -117,7 +117,7 @@ For instance, in the vesicle example: 1 - Right after the convergence is reached
 
 The shape is now more precise, as you can see in the 2D view and in 3D:
 
-![](/media/limeseg-2d3dviews-refined-vesicle.png "LimeSeg_2D3DViews_Refined_Vesicle.png")
+![](/media/limeseg-2d3dviews-refined-vesicle.png)
 
 ### Alternative ways to segment a single object: multiple spheres and skeletons
 
@@ -129,11 +129,11 @@ The sample image accessible here: https://raw.githubusercontent.com/NicoKiaru/Te
 
 For instance for three spherical seeds:
 
-![](/media/limeseg-3d-multipleseeds.png "LimeSeg_3D_MultipleSeeds.png")
+![](/media/limeseg-3d-multipleseeds.png)
 
 Final result:
 
-![](/media/limeseg-2d3d-er.png "LimeSeg_2D3D_ER.png")
+![](/media/limeseg-2d3d-er.png)
 
 *' Starting with a ROI skeleton*'
 
@@ -149,7 +149,7 @@ You need to begin and end with a single point ROI, otherwise the shape will not 
 
 3\. Launch the {% include bc path="Plugins|LimeSeg|Skeleton Seg" %} command, without anything else in the ROI manager. Using the parameters D\_0=10, F\_pressure = 0, range\_in \_d0\_units=2 and Z\_scale=3.5 should give correct results, like shown below:
 
-![](/media/limeseg-celegans-global.png "LimeSeg_CElegans_Global.png")
+![](/media/limeseg-celegans-global.png)
 
 ## Multiple objects segmentation
 
@@ -168,17 +168,17 @@ In this kind of image, you'd probably like to segment multiple cells. You can do
 
 You can define multiple seeds (one per cell) simply by storing multiple circular ROIs in the ROI manager. Like in this image:
 
-![](/media/limeseg-multiseeds-sphereseg.png "LimeSeg-MultiSeeds-SphereSeg.png")
+![](/media/limeseg-multiseeds-sphereseg.png)
 
 Of course the seeds can be located at different planes.
 
 You can then launch the {% include bc path="Plugins|LimeSeg|Sphere Seg" %} command with the previously defined parameters, but **be sure to uncheck the sameCell checkbox** (otherwise surfaces will merge):
 
-![](/media/limeseg-multiseeds-param.png "LimeSeg-MultiSeeds-Param.png")
+![](/media/limeseg-multiseeds-param.png)
 
 You should obtain an image similar to this:
 
-![](/media/limeseg-multiseeds-output.png "LimeSeg-MultiSeeds-Output.png")
+![](/media/limeseg-multiseeds-output.png)
 
 If you want to segment the whole embryo, you'll need to provide the location of the cell centers, and then launch the command. The following groovy script will segment the demo image here:
 
@@ -238,7 +238,7 @@ To help understand how LimeSeg does this, please download this sample dataset ou
 
 Open Fiji, then launch LimeSeg GUI ({% include bc path="Plugins|LimeSeg|Show GUI" %}). LimeSeg graphical user interface pops up (click ok on the warning message). The GUI consists of an upper panel that can apply different actions on LimeSeg. Tabs separate the different kinds of objects where actions can be applied. The lower part contains information about LimeSeg state.
 
-![](/media/limeseggui.png "LimeSegGUI.png")
+![](/media/limeseggui.png)
 
 To load the sample dataset onto LimeSeg, do the following actions:
 
@@ -252,7 +252,7 @@ To load the sample dataset onto LimeSeg, do the following actions:
 
 Now click **showTable** in the **STATE** tab. This creates a **Cells explorer** table which shows all the 3D objects segmented by LimeSeg and how they are organized. Each column represents a **Cell** object which name is at the top of the tab, like **cell\_2**. Rows are timepoints. A cell object may contain many **CellT** objects, which stands for **Cell** at a specific **T**imepoint. For instance, the Cell **cell\_56** contains 10 CellT objects, for timepoints 12 to 22.
 
-![](/media/limeseg-cellexplorer.png "LimeSeg-CellExplorer.png")
+![](/media/limeseg-cellexplorer.png)
 
 #### Vizualizing 3D Objects
 

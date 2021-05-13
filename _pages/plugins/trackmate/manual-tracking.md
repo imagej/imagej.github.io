@@ -115,7 +115,7 @@ Since v2.1.0, TrackMate includes a tool that can automatically find spots and au
 
 This tool is configured in the TrackMate tool option panel. It is not part of the classic GUI; to make it appear, double-click on the TrackMate tool in the ImageJ toolbar. You should see something like this:
 
-![](/media/trackmate-v2.1.0-trackmatetools.png "TrackMate_v2.1.0_TrackMateTools.png")
+![](/media/trackmate-v2.1.0-trackmatetools.png)
 
 We are interested in the **Semi-automatic tracking** panel. The bottom panel has just convenience buttons that allow you to select tracks or parts of tracks from the current selection (great to delete faulty tracks at once), and the right panel is a log. The semi-automatic tracking tool itself works as follow: It takes the single spot in the selection, and use its radius to build a neighborhood of this spot, but in the next frame. It then searches this neighborhood for a bright blob with a similar radius. If the found spot is close enough and have a quality high enough, it is linked to the first spot. The process is then repeated, until no suitable spot can be found or until there is no time-point to inspect anymore.
 

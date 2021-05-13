@@ -8,6 +8,6 @@ categories: [Tutorials]
 
 (from the previous tutorial:
 
-![](/media/hippocampal-ca3-interneuron-1.png "Hippocampal_CA3_Interneuron-1.png")
+![](/media/hippocampal-ca3-interneuron-1.png)
 
 

@@ -29,7 +29,7 @@ You can activate some advanced parameterization by selecting **Define anisotropy
 
 If the views you selected contain multiple *tiles* or *illumination directions*, you can choose to **group** the views. The same minimum and maximum intensity will be used for all views in a group (see explanation below). This will virtually fuse the views into one image for the interest point detection preview, which can be very time consuming if you are not using a multi-resolution ImgLoader (i.e. if you have not re-saved the data as HDF5).
 
-![](/media/bigstitcher-register-1.png "BigStitcher_Register_1.png")
+![](/media/bigstitcher-register-1.png)
 
 ### Advanced Parameters
 
@@ -66,13 +66,13 @@ If you are using **grouped views**, you can specify how much percentage in z of 
 
 Furthermore, if you are using **grouped views**, you can choose to **Use min/max of this fusion for all groups** (see above for details about the meaning of the min/max values).
 
-![](/media/bigstitcher-register-3.png "BigStitcher_Register_3.png")
+![](/media/bigstitcher-register-3.png)
 
 If you click OK, the (fused) image will appear in an ImageJ-window together with a window in which the values for the interest point detection parameters can be specified. You can change **Sigma 1** (Difference-of-Gaussian) or **Radius 1** (Difference-of-Mean) to specify the size of objects to look as well as the **Threshold** (intensity of objects to look for) and whether to look for minima, maxima or both. The results will be previewed in the ImageJ-window. You can interactively go through the Z-stack and preview the detected interest points. To start the detection process in all selected views, click "Done".
 
 {% include info-box content='The interest point detection can take a long time, especially if you do little or no downsampling. Have a look at the log widow for updates on the progress.' %}
 
-![](/media/bigstitcher-register-4-1.png "fig:BigStitcher_Register_4_1.png")![](/media/bigstitcher-register-4-2.png "fig:BigStitcher_Register_4_2.png")
+![](/media/bigstitcher-register-4-1.png)![](/media/bigstitcher-register-4-2.png)
 
 ### GPU-accelerated Difference-of-Gaussian
 
@@ -80,16 +80,16 @@ If you chose to use GPU-accelerated detection and compiled the library for separ
 
 First, you have to specify the **CUDA directory** in which to look for the compiled library (an .so file on Linux/Mac or a .dll on Windows).
 
-![](/media/bigstitcher-interestpoint-gpu-1.png "BigStitcher_interestpoint_gpu-1.png")
+![](/media/bigstitcher-interestpoint-gpu-1.png)
 
 Next, you have to select the actual library file to use (there might be multiple, be sure to pick the library for **separable convolution**, not the *Fourier convolution* used in [Multi-View\_Deconvolution](/plugins/multi-view-deconvolution)).
 
-![](/media/bigstitcher-interestpoint-gpu-2.png "BigStitcher_interestpoint_gpu-2.png")
+![](/media/bigstitcher-interestpoint-gpu-2.png)
 
 In the last dialog, you can choose which **Device** (GPU) to use (if you have multiple) and how many **Percent of GPU Memory to use**. We advice to stick to \~80 percent to avoid collisions with other processes that might be using the GPU.
 
 Click **OK** once more to start the interest point detection.
 
-![](/media/bigstitcher-interestpoint-gpu-3.png "BigStitcher_interestpoint_gpu-3.png")
+![](/media/bigstitcher-interestpoint-gpu-3.png)
 
 Go back to the [main page](/plugins/bigstitcher#documentation)

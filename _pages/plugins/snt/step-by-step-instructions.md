@@ -141,11 +141,11 @@ If both nodes are terminal, the paths are merged together. Otherwise, one path w
 
 ## Tracing in the Legacy 3D Viewer
 
-It remains possible to trace in the legacy 3D Viewer. ![](/media/snt-3d-dialog.png "fig:")
+It remains possible to trace in the legacy 3D Viewer. ![](/media/snt-3d-dialog.png)
 
 ### I.Starting the Viewer
 
-To open the viewer, select the *3D* menu tab in the SNT dialog and look for *Legacy 3D Viewer*. You will see 3 parameters: ![](/media/snt-image-resampling-factor.png "fig:SNT-Image-Resampling-Factor.png")
+To open the viewer, select the *3D* menu tab in the SNT dialog and look for *Legacy 3D Viewer*. You will see 3 parameters: ![](/media/snt-image-resampling-factor.png)
 
 -   Select *New with image* from the *Viewer* drop-down menu (selecting *New without image* would only allow you to look at reconstructions without the underlying signal). Note that you can recycle existing viewers you may have open by choosing their window titles from the drop-down menu.
 -   Select the preferred rendering style from the *Mode* drop-down menu.
@@ -160,7 +160,7 @@ To open the viewer, select the *3D* menu tab in the SNT dialog and look for *Leg
 -   **Translation** Hold {% include key key='Shift' %} and the scroll wheel while dragging the mouse.
 -   **Adjusting zoom depth** Scroll the mouse wheel.
 
-Once you have selected each of these tools (Wand and Hand) once, you should be able to switch between them by pressing the {% include key key='Esc' %} key. See [Key Shortcuts](/plugins/snt/key-shortcuts#legacy-3d-viewer) for the list of all supported shortcuts. ![](/media/fiji-toolbar-wand-and-hand-2.png "fig:Fiji-toolbar-wand-and-hand-2.png")
+Once you have selected each of these tools (Wand and Hand) once, you should be able to switch between them by pressing the {% include key key='Esc' %} key. See [Key Shortcuts](/plugins/snt/key-shortcuts#legacy-3d-viewer) for the list of all supported shortcuts. ![](/media/fiji-toolbar-wand-and-hand-2.png)
 
 # Filling
 
@@ -172,7 +172,7 @@ First, select the one or more paths that you want to fill out from in the Path M
 
 <figure><img src="/media/snt-initial-filling-2.png" title="A few seconds after selecting &quot;Fill Out...&quot; with 1 path selected" width="400" alt="A few seconds after selecting &quot;Fill Out...&quot; with 1 path selected" /><figcaption aria-hidden="true">A few seconds after selecting "Fill Out..." with 1 path selected</figcaption></figure>
 
-The filler continues to explore the image starting from the path until you click "Pause" or "Stop" in the dialog. However, the fill which is shown only includes those points up to a certain threshold distance from the path. (Note that in this section "distance" doesn't mean a real physical distance, but a measure which takes into account the intensity values of the pixels which must be passed through when moving away from the path.) Information about the current threshold and the progress of the search is shown in the dialog. ![The filling-related part of the dialog.](/media/snt-filling-statistics-2.png "fig:The filling-related part of the dialog.") The "Cursor position:" state under "Search Status" is updated as you move your mouse over the image. If the point under the mouse has been reached by the search then it will show you that point's distance from the path. Otherwise, it will read "Not reached by search yet". Two lines above, the "Current threshold distance:" shows your current threshold distance: so if this is set to 0.2 then that means that all points less than 0.2 from the path are included in the fill (and shown in green in the image.) The "Max. explored distance:" state under this line shows the maximum distance from the path that has been completely explored.
+The filler continues to explore the image starting from the path until you click "Pause" or "Stop" in the dialog. However, the fill which is shown only includes those points up to a certain threshold distance from the path. (Note that in this section "distance" doesn't mean a real physical distance, but a measure which takes into account the intensity values of the pixels which must be passed through when moving away from the path.) Information about the current threshold and the progress of the search is shown in the dialog. ![The filling-related part of the dialog.](/media/snt-filling-statistics-2.png) The "Cursor position:" state under "Search Status" is updated as you move your mouse over the image. If the point under the mouse has been reached by the search then it will show you that point's distance from the path. Otherwise, it will read "Not reached by search yet". Two lines above, the "Current threshold distance:" shows your current threshold distance: so if this is set to 0.2 then that means that all points less than 0.2 from the path are included in the fill (and shown in green in the image.) The "Max. explored distance:" state under this line shows the maximum distance from the path that has been completely explored.
 
 ### II.Adjusting the Fill Threshold
 
@@ -215,7 +215,7 @@ This section describes how to generate [Filtered Images](/plugins/snt/manual#tra
 
 #### A Single Image
 
-To process a single image with the Frangi Vesselness filter, pause SNT, and select {% include bc path='Process | Filters | Frangi Vesselness'%}. By way of example, let's say you need to enhance strucutres at two scales: twice the x voxel separation and five times that value. We apply a Gaussian convolution at each scale. Assuming your image has isotropic resolution with pixel width = pixel height = voxel depth = 1, the parameters would be: ![](/media/frangi-parameters.png "fig:")
+To process a single image with the Frangi Vesselness filter, pause SNT, and select {% include bc path='Process | Filters | Frangi Vesselness'%}. By way of example, let's say you need to enhance strucutres at two scales: twice the x voxel separation and five times that value. We apply a Gaussian convolution at each scale. Assuming your image has isotropic resolution with pixel width = pixel height = voxel depth = 1, the parameters would be: ![](/media/frangi-parameters.png)
 {% capture tip%}
 To get the spatial calibration for your image, go to {% include bc path='Image|Properties...'%} ({% include key keys='Ctrl|Shift|P' %}) in the main Fiji dialog.
 {% endcapture %}

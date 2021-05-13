@@ -12,7 +12,7 @@ TrackScheme displays a kind of "track map", where a track is laid on pane, arran
 
 You can do quite some things using TrackScheme, notably track analysis. This is not the focus of this tutorial, we will simply be focusing on the track editing features. However, here is a brief description of what the toolbar buttons do.
 
-![](/media/trackschemetoolbarexplanation.png "TrackSchemeToolbarExplanation.png")
+![](/media/trackschemetoolbarexplanation.png)
 
 We will be mainly using the **Redo layout** and button.
 
@@ -69,7 +69,7 @@ The newly created link is displayed in magenta. Note that the track arrangement 
 
 This can be used to create branching links, as picture below:
 
-![](/media/trackmate-branchingtrack.png "TrackMate_BranchingTrack.png")
+![](/media/trackmate-branchingtrack.png)
 
 ### Creating several links at once
 

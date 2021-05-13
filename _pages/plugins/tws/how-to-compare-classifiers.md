@@ -24,7 +24,7 @@ After loading, the main GUI of the plugin will pop up: <img src="/media/screensh
 
 First of all, we select the features (filters) that we want to use to perform the segmentation. For that, we will click on "Settings", select the corresponding features on the Settings dialog, and click "OK":
 
-![](/media/screenshot-aws-tutorial-settings-dialog.png "Screenshot-AWS-tutorial-settings-dialog.png")
+![](/media/screenshot-aws-tutorial-settings-dialog.png)
 
 After that, we use the selection tools to trace samples of both classes. By default, the "freehand" line is selected, but you can use any of the available selection tools to mark areas on the image and then add them to any of the classes by click on the "Add to class \[1/2\]" buttons. In our example, we use the two classes to differentiate between membrane areas (in red, class 1) and the rest of the image (in green, class 2):
 
@@ -32,13 +32,13 @@ After that, we use the selection tools to trace samples of both classes. By defa
 
 Once we are satisfied with the amount of samples, we save the data into an ARFF file, the format WEKA understand. For that, we click on "Save data" and select the output path and file name ("data-compare.arff" in our case):
 
-![](/media/screenshot-aws-tutorial-save-data.png "Screenshot-AWS-tutorial-save-data.png")
+![](/media/screenshot-aws-tutorial-save-data.png)
 
 ### Working with the WEKA Experimenter
 
 In order to use the data we just saved for comparing classifiers, we need to open the WEKA Experimenter. For that, we first click on the WEKA button of the plugin GUI (last button of the left panel). Then the Weka GUI Chooser will pop up:
 
-![](/media/screenshot-aws-tutorial-weka-chooser.png "Screenshot-AWS-tutorial-WEKA-Chooser.png")
+![](/media/screenshot-aws-tutorial-weka-chooser.png)
 
 We click on "Experimenter" and the Weka Experiment Environment GUI will pop up:
 
@@ -60,7 +60,7 @@ By default, an ARFF file is the destination for the results output. But you can 
 
 CSV is similar to ARFF, but it can be used to be loaded in an external spreadsheet application. If the file name is left empty a temporary file will be created in the TEMP directory of the system. If one wants to specify an explicit results file, click on *Browse* and choose a filename. In our case, we set the filename to *experiment-compare.arff*:
 
-![](/media/screnshot-aws-tutorial-save-destination-arff.png "Screnshot-AWS-tutorial-save-destination-arff.png")
+![](/media/screnshot-aws-tutorial-save-destination-arff.png)
 
 Click on *Save* and the name will appear in the edit field next to *ARFF file*.
 
@@ -83,7 +83,7 @@ Additionally, one can choose between *Classification* and *Regression*, dependin
 
 One can add dataset files either with an absolute path or with a relative one. The latter makes it often easier to run experiments on different machines, hence one should check *Use relative paths*, before clicking on *Add new...*:
 
-![](/media/screenshot-aws-tutorial-add-dataset.png "Screenshot-AWS-tutorial-add-dataset.png")
+![](/media/screenshot-aws-tutorial-add-dataset.png)
 
 In this example, we open the *albert* directory and choose the *data-compare.arff* dataset.
 
@@ -93,11 +93,11 @@ After clicking *Open* the file will be displayed in the datasets list. If one se
 
 New algorithms can be added via the *Add new...* button. Opening this dialog for the first time, *' ZeroR*' is presented, otherwise the one that was selected last:
 
-![](/media/screenshot-aws-tutorial-select-algorithm.png "Screenshot-AWS-tutorial-select-algorithm.png")
+![](/media/screenshot-aws-tutorial-select-algorithm.png)
 
 With the *Choose* button one can open the *GenericObjectEditor* and choose another classifier:
 
-![](/media/screenshot-aws-tutorial-select-naivesbayes.png "Screenshot-AWS-tutorial-select-NaivesBayes.png")
+![](/media/screenshot-aws-tutorial-select-naivesbayes.png)
 
 The *Filter...* button enables one to highlight classifiers that can handle certain attribute and class types. With the *Remove filter* button all the selected capabilities will get cleared and the highlighting removed again.
 
@@ -113,7 +113,7 @@ One can also paste classifier settings here by right-clicking (or {% include key
 
 For future re-use, one can save the current setup of the experiment to a file by clicking on *Save...* at the top of the window:
 
-![](/media/screenshot-aws-tutorial-save-setup.png "Screenshot-AWS-tutorial-save-setup.png")
+![](/media/screenshot-aws-tutorial-save-setup.png)
 
 By default, the format of the experiment files is the binary format that Java serialization offers. The drawback of this format is the possible incompatibility between different versions of Weka. A more robust alternative to the binary format is the XML format.
 
@@ -166,7 +166,7 @@ Clicking on the button for the *Output format* leads to a dialog that lets you c
 -   Plain text (default)
 -   Significance only
 
-![](/media/screenshot-aws-tutorial-analyse-precision-dialog.png "Screenshot-AWS-tutorial-analyse-precision-dialog.png")
+![](/media/screenshot-aws-tutorial-analyse-precision-dialog.png)
 
 To give one more control, the "Advanced setup" allows one to bring up all the options that a result matrix offers. This includes the options described above, plus options like the width of the row names, or whether to enumerate the columns and rows.
 
@@ -174,7 +174,7 @@ To give one more control, the "Advanced setup" allows one to bring up all the op
 
 The information displayed in the *Test output* panel is controlled by the currently selected entry in the *Result list* panel. Clicking on an entry causes the results corresponding to that entry to be displayed.
 
-![](/media/screenshot-aws-tutorial-result-list-analyse.png "Screenshot-AWS-tutorial-result-list-analyse.png")
+![](/media/screenshot-aws-tutorial-result-list-analyse.png)
 
 The results shown in the *Test output* panel can be saved to a file by clicking *Save output*. Only one set of results can be saved at a time but Weka permits the user to save all results to the same file by saving them one at a time and using the *Append* option instead of the *Overwrite* option for the second and subsequent saves.
 

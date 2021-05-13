@@ -23,11 +23,11 @@ This plugin also need the [apache common maths](https://mvnrepository.com/artifa
 
 Here is the Interface of Stack Object Combiner. The window contain several boxes, that allow you to set the different parameters and that give you an overview of the meshes.  
 
-![](/media/soc-folderselection.png "fig:SOC_folderSelection.png") Folder selection box  
+![](/media/soc-folderselection.png) Folder selection box  
 This is the Folder Box. Choose the folder containing your meshes. To work only with certain meshes inside this folder, use the "Name pattern" function. Write the characters that the file contains, and click on "Actualise". The pattern can be a {% include wikipedia title="Regular expression" %}.  
 Finally "Actualise" allow you to refresh the folder, for example if you have deleted or added files.
 
-![](/media/soc-shift.png "fig:SOC_shift.png") Shift box  
+![](/media/soc-shift.png) Shift box  
 In the shift box, set the positions and dimensions of the cubes. To shift the meshes at their coordinates in the reconstructed volume, give the values of the shift in X, Y and Z. (See the illustration bellow to see to what each value correspond). X, Y and Z correspond respectively to the width, height and depth of the stack A (don't confuse the width, height and depth of the whole volume that you also have to give here, with the width, height and depth of the volume A that match the values of Shift X, Y and Z).  
 Once these values are set, click on "Shift" to shift all the meshes listed. To shift back the mesh to their original positions, click on "Unshift".  
 The values you give here will be used later to merge the meshes. For automatic merging, you have to give the width, height and depth of the whole volume.  
@@ -35,7 +35,7 @@ The values you give here will be used later to merge the meshes. For automatic m
 
 <img src="/media/soc-meshes.png" width="250"/> Meshes listing box  
 In this box, the meshes are placed in the list corresponding to the different volumes. To be listed, the prefix of the mesh name must match the volume name. For example, a dendrite that need to be placed in the A volume can be called A\_dendrite.obj (a\_dendrite also work). Note that the "\_" after the letter is necessary for the object to be recognized by the plugin.  
-![](/media/soc-automerge.png "fig:SOC_autoMerge.png") Automatic merging box  
+![](/media/soc-automerge.png) Automatic merging box  
 This box contain the different parameters to merge the meshes automatically. The parameters correspond to constants inside the plugin, and changing them can help to resolve malfunctioning of the plugin. Here is a description of the different parameters:  
 
 -   Border min affinity: Range \[0 - 1\] It is the threshold value above which two meshes have similar properties. In automatic merging mode, the plugin compute for each border of the meshes the perimeter, the volume and the position of the barycentre. A similarity value is computed between the borders. If it's higher than the parameter, the borders are compatible for merging.
@@ -46,7 +46,7 @@ This box contain the different parameters to merge the meshes automatically. The
 
 Once that the parameters have been set, click on "Automatic merging". A trace of the merging will appear in the log.
 
-![](/media/soc-manualmerge.png "fig:SOC_manualMerge.png") Manual merging box  
+![](/media/soc-manualmerge.png) Manual merging box  
 The manual merging is the older implementation of the plugin. The automatic version should be more efficient and reliable than this version. However if the automatic version don't properly pair the meshes, using the manual merging can give you different results. The way the borders are detected and paired is different, and with this mode you choose which two objects you want to fuse together.  
 Here is the description of the parameters:  
 

@@ -12,6 +12,6 @@ Having said all that, if you are interested in scripting Fiji, just use the [Fij
 
 Speaking of shots: here is a screenshot:
 
-![](/media/script-editor-first-script.jpg "Script-Editor-first-script.jpg")
+![](/media/script-editor-first-script.jpg)
 
 

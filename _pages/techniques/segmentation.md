@@ -13,7 +13,7 @@ categories: [Tutorials,Segmentation]
 
 Image segmentation is "the process of partitioning a digital image into multiple segments." ({% include wikipedia title='Image segmentation' text='Wikipedia'%})
 
-![](/media/segmentation-overlay.jpg "fig:Segmentation-overlay.jpg") ![](/media/segmentation-boundaries.jpg "fig:Segmentation-boundaries.jpg")
+![](/media/segmentation-overlay.jpg) ![](/media/segmentation-boundaries.jpg)
 
 It is typically used to locate *objects* and *boundaries*.
 

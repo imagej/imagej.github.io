@@ -19,7 +19,7 @@ Image contrast restoration by deconvolution is an important systematic error cor
 
 Two plugins from Bob Dougherty can be used together to perform this systematic error correction in a 2D or 3D image. Other plugins are also available. The Diffraction-PSF-3D plugin generates a z-stack of the theoretical point-spread function (PSF). Alternatively, an empirical, measured PSF could be used. The Iterative Deconvolution 3D plugin uses a PSF image z-stack to correct the image contrast vs. feature size in your sample image z-stack. The image below is a single slice taken from a stack before and after deconvolution using these plugins.
 
-![](/media/deconvoluted-data.png "deconvoluted_data.png")
+![](/media/deconvoluted-data.png)
 
 *See the plugins' homepages for more details:* [Diffraction PSF 3D](http://www.optinav.info/Diffraction-PSF-3D.htm) & [Iterative Deconvolution 3D](http://www.optinav.info/Iterative-Deconvolve-3D.htm)
 

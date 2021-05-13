@@ -472,7 +472,7 @@ Landmarks can be exported and imported from plain text files using the drop down
 Export the warped moving image by clicking *File {% include arrow%}
  &gt; Export as ImagePlus* or using the {% include key keys='Ctrl|E' %} keyboard shortcut.
 
-![](/media/bigwarp-export.png "Bigwarp_export.png")
+![](/media/bigwarp-export.png)
 
 The default parameters will result in the exported image having the same dimensions as the target image. *Note: Take care when exporting very large data sets as they can cause out-of-memory exceptions.*
 

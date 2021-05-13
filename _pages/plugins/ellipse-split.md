@@ -44,7 +44,7 @@ Then the watershed approach ({% include bc path="Process | Binary | Watershed" %
 
 The ellipse splitting plugin applied to the input image will combine the watershed result and direct ellipse fitting. This leads to the following result:
 
-![](/media/ellipsesplit-result.png "Ellipsesplit_result.png")
+![](/media/ellipsesplit-result.png)
 
 Furthermore it outputs several important features:
 

@@ -431,7 +431,7 @@ ImgLib2 is not restricted to rasterized images and integer coordinates It also s
 
 The following image shows the UML diagram for the ImgLib2 accessor interface hierarchy. The real-coordinate counterparts that were missing in the simplified version [ above](/libs/imglib2/accessors#introduction) are highlighted.
 
-![UML for ImgLib2 accessor interfaces](/media/imglib2-accessors-real.png "UML for ImgLib2 accessor interfaces")
+![UML for ImgLib2 accessor interfaces](/media/imglib2-accessors-real.png)
 
 Real equivalents of the **Positionable** and **Localizable** interfaces have been added by which real-valued coordinates can be accessed.
 
@@ -516,7 +516,7 @@ Our super class [RealPoint](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/i
 
 Finally, we provide the **copy()** and **copyRealRandomAccess()** methods to complete the **RealRandomAccess** interface implementation. A copied accessor is supposed to refer to the same position and value, therefore we **setPosition** in line *051*.
 
-![UML for abstract RealRandomAccess class hierarchy](/media/imglib2-abstract-accessors-real-new-vertical.png "UML for abstract RealRandomAccess class hierarchy")
+![UML for abstract RealRandomAccess class hierarchy](/media/imglib2-abstract-accessors-real-new-vertical.png)
 
 Now let's use the **MandelbrotRealRandomAccess** to render a pixel image:
 

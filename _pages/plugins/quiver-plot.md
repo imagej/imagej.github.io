@@ -28,7 +28,7 @@ A quiver plot is a 2D array of vector arrows that can be used to visualize dynam
 
 The Quiver Plot plugin needs two 32-bit images, one representing the vector angles (direction) and one representing the vector magnitude. When you run the plugin, you will see the following window:
 
-![](/media/quiver-plot-plugin-gui.png "Quiver_Plot_Plugin_GUI.png")
+![](/media/quiver-plot-plugin-gui.png)
 
 There are two drop-down menus that list all of the currently open windows. Of these windows, select the images that correspond to the angle map and magnitude map (i.e. speed, intensity, etc.). NOTE: pixels with a value of NaN will generate erratic vectors. Make sure that there are no NaN values with your images before using the plugin.
 

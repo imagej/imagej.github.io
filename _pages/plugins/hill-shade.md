@@ -16,7 +16,7 @@ The math behind it: When 'Nonlinear Contrast' and 'Half Brightness for Flat Area
 
 ## Dialog parameters
 
-![Dialog screen shot](/media/hillshade-screenshot.jpg "Dialog screen shot")
+![Dialog screen shot](/media/hillshade-screenshot.jpg)
 
 -   **x Pixel Size** - Size of one pixel in x direction, in the same units as the height (pixel value).
 -   **y Pixel Size** - Size of one pixel in y direction, in the same units as the height (pixel value).

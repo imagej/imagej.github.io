@@ -85,7 +85,7 @@ From a segmented image of an Arabidospsi thaliana embryo of 122 cells (FigA), a 
 -   For each domain we can reconstruct the lineage and obtain a tree with TreeJ (see Fig right : a tree of an external apical domain).
 -   We tagged internal domains of the embryo and extracted the corresponding image them with **From Tag** (figC).
 
-![](/media/filiationtools.png "FiliationTools.png")
+![](/media/filiationtools.png)
 
 ## Installation
 

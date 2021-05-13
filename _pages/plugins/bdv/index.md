@@ -47,7 +47,7 @@ For example, open the sample image {% include bc path='File | Open Samples | Mit
 
 Assuming you downloaded the *drosophila melanogaster* example dataset, you should see something like this:
 
-![](/media/bdv-bdv-start.png "bdv-bdv-start.png")
+![](/media/bdv-bdv-start.png)
 
 On startup, the middle slice of the first source (angle) is shown. You can browse the stack using the keyboard or the mouse. To get started, try the following:
 
@@ -186,7 +186,7 @@ The axis-rotation commands (e.g., {% include key keys='Shift|X' %}) rotate aroun
 
 Using {% include key key='I' %} you can switch between nearest-neighbor and trilinear interpolation schemes. The difference is clearly visible when you zoom in such that individual source pixels are visible.
 
-![](/media/bdv-interpolation.png "bdv-interpolation.png")
+![](/media/bdv-interpolation.png)
 
 Trilinear interpolation results in smoother images but is a bit more expensive computationally. Nearest-neighbor is faster but looks more pixelated.
 
@@ -315,7 +315,7 @@ A dataset comprises an XML file to store meta-data and one or more HDF5 files to
 
 Each *view* has one corresponding image volume which is stored in the HDF5 file. Raw image volumes are stored as multi-resolution pyramids: In addition to the original resolution, several progressively down-scaled resolutions (mipmaps) are stored. This serves two purposes. First, using mipmaps minimizes aliasing effects when rendering a zoomed-out view of the dataset\~\\cite{Williams:1983it}. Second, and more importantly, using mipmaps reduces data access time and thus increases the perceived responsiveness for navigation. Low-resolution mipmaps take up less memory and therefore load faster from disk. New chunks of data must be loaded when the user browses to a part of the dataset that is not currently cached in memory. In this situation, BigDataViewer can rapidly load and render low-resolution data, filling in high resolution detail later as it becomes available. This multi-resolution pyramid scheme is illustrated in the following figure.
 
-![](/media/bdvtikz-pyramidblocks.png "bdvTikz-pyramidblocks.png")
+![](/media/bdvtikz-pyramidblocks.png)
 
 Each raw image volume is stored in multiple resolutions, the original resolution (left) and successively smaller, downsampled versions (right). Each resolution is stored in a chunked representation, split into small 3D blocks.
 
@@ -323,7 +323,7 @@ Each level of the multi-resolution pyramid is stored as a *chunked multi-dimensi
 
 Rendering a virtual slice requires data contained within a small subset of chunks. Only chunks that touch the slice need to be loaded, as illustrated in the following Figure.
 
-![](/media/bdvtikz-sliceblocks.png "bdvTikz-sliceblocks.png")
+![](/media/bdvtikz-sliceblocks.png)
 
 When rendering a slice (schematically illustrated by the blue line) the data of only a small subset of blocks is required. In the original resolution 5 blocks are required, while only 2, respectively 1 block is required for lower resolutions. Therefore, less data needs to be loaded to render a low-resolution slice. This allows low-resolution versions to be loaded and rendered rapidly. High-resolution detail is filled in when the user stops browsing to view a certain slice for an extended period of time.
 
@@ -331,7 +331,7 @@ Each of these chunks, however, is loaded in full, although only a subset of voxe
 
 All loaded chunks are cached in RAM. During interactive navigation, subsequent slices typically intersect with a similar set of chunks because their pose has changed only moderately, i.e.. cached data are re-used. Only chunks that are not currently in the cache need to be loaded from disk, as illustrated in the following Figure.
 
-![](/media/bdvtikz-cacheblocks.png "bdvTikz-cacheblocks.png")
+![](/media/bdvtikz-cacheblocks.png)
 
 For rendering the slice indicated by the red line, only the red blocks need to be loaded. The blue blocks are already cached from rendering the blue slice before. Combined with the multi-resolution mipmap representation, this chunking and caching scheme allows for fluid interactive browsing of very large datasets.
 

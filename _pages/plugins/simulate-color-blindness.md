@@ -14,7 +14,7 @@ It is based on http://quarkphysics.ca/phys1/light/u-light.htm .
 
 Choose one of the color blindness modes in the dialog, then press OK:
 
-![](/media/simulate-color-blindness-dialog.png "Simulate_Color_Blindness_Dialog.png")
+![](/media/simulate-color-blindness-dialog.png)
 
 Here's how the results look like when applied to the *Clown* sample image:
 

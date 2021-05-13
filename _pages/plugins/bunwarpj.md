@@ -357,7 +357,7 @@ The weights need to be chosen experimentally, test and error is the only way of 
 
 The divergence and curl weights regularize the deformation by penalizing the {% include wikipedia title="Divergence" %} and {% include wikipedia title="Curl (mathematics)" %} of the deformation vector field. In other words, we penalize vector fields with **many** points like this:
 
-![](/media/divergence-curl-2d-examples.png "Divergence-curl-2d-examples.png")
+![](/media/divergence-curl-2d-examples.png)
 
 These are attractor points that make the deformation too rough. One of them would not be a problem (it could be just a rotation), but many yes. So controlling them we make the deformation **smooth**. If you see that your transformations get too rough, it is a good idea to use them. **0.1 and 0.1 are usually good values** if there's no prior knowledge about the deformation shape.
 

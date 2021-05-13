@@ -6,7 +6,7 @@ categories: [ImageJ2,News]
 
 Today, the [ImageJ team](/about/contributors) is pleased to announce a new public release candidate for [ImageJ2](/software/imagej2): version 2.0.0-rc-24.
 
-![ 450px \| right \| rc-23 / rc-24](/media/scifio-rc23-rc24.png "fig: 450px | right | rc-23 / rc-24") ![ 450px \| right \| ImageJ1 SCIFIO](/media/imagej-scifio-rc24.png "fig: 450px | right | ImageJ1 SCIFIO")
+![ 450px \| right \| rc-23 / rc-24](/media/scifio-rc23-rc24.png) ![ 450px \| right \| ImageJ1 SCIFIO](/media/imagej-scifio-rc24.png)
 
 ## What's new
 

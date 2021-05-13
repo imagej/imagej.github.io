@@ -11,7 +11,7 @@ This plugin adds time stamps to a stack. The times are drawn in the current fore
 
 Start the plugin on a stack or hyperstack using {% include bc path='Image | Stacks | Time Stamper'%}.
 
-![](/media/time-stamper-parameters.png "Time_Stamper_Parameters.png")
+![](/media/time-stamper-parameters.png)
 
 Options:
 
@@ -32,6 +32,6 @@ The latter three values are determined from a rectangular ROI if a ROI is active
 -   **Suffix**
 -   **Anti-aliased text**
 
-![](/media/time-stamper-result.png "Time_Stamper_Result.png")
+![](/media/time-stamper-result.png)
 
  

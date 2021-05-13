@@ -87,4 +87,4 @@ Enter the URL (including port) of a BigDataServer. For example, the Drosophila t
 
 In the example, the server offers only a single dataset called *Drosophila*. Double-clicking on a dataset in the list will launch it in the BigDataViewer.
 
-![](/media/bdv-bdv-start.png "bdv-bdv-start.png")
+![](/media/bdv-bdv-start.png)

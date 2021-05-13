@@ -16,7 +16,7 @@ SNT's Reconstruction Viewer is a powerful OpenGL 3D visualization tool for both 
     -   Ability to render both local and remote files on the same scene
     -   Loading of surface meshes of several template brains (Drosophila and Allen CCF (Allen Mouse Brain Atlas))
 
-![](/media/reconstruction-viewer-animated-gif.gif "reconstruction-viewer-animated-gif.gif")
+![](/media/reconstruction-viewer-animated-gif.gif)
 
 # Starting the Viewer
 

@@ -34,41 +34,41 @@ The plugin can be found in the Fiji menu under {% include bc path='Plugins | Seg
 
 First, you have to choose the image you want to train on.
 
-![](/media/trainingimage.jpg "trainingImage.jpg")
+![](/media/trainingimage.jpg)
 
 Now open the plugin ({% include bc path='Plugins | Segmentation | deprecated | Trainable Segmentation'%}). It opens a training window that contains the training image.
 
-![](/media/playground.jpg "Playground.jpg")
+![](/media/playground.jpg)
 
 ### Make example annotations
 
 Next, we have to teach the plugin what a membrane in the image looks like. So we select pixels from a membrane using the freeline tool.
 
-![](/media/playgroundfirstannotation.jpg "PlaygroundFirstAnnotation.jpg")
+![](/media/playgroundfirstannotation.jpg)
 
 Now push the "Add to class 2" button. The selected trace will turn green, showing that it is been selected as a representative example of class 2.
 
-![](/media/firstpositiveexample.jpg "firstPositiveExample.jpg")
+![](/media/firstpositiveexample.jpg)
 
 For training it is also important what a membrane does not look like. So we select some other pixels and push the "Add to class 1" button.
 
-![](/media/firstnegativeexample.jpg "FirstNegativeExample.jpg")
+![](/media/firstnegativeexample.jpg)
 
 ### Train the classifier
 
 Now it is time to train the classifier and look at the result, so we push the "Train classifier" button on the left side. After training the plugin will automatically classify all pixels from the training image and present the result in a color overlay. This overlay can be switched on and off with the "Toggle overlay" button.
 
-![](/media/trainedclassifier.jpg "trainedClassifier.jpg")
+![](/media/trainedclassifier.jpg)
 
 ### Refine the training
 
 Looking at the classification result there are some cases that are harder to classify than others. We add more annotations to help the classifier correct these cases. This is done by adding examples and then pushing the train classifier button in between to see how the result changes. **If you want to delete an example trace**, select the trace in the right list (it turns to yellow in the training image) and then **double click on it**. Here are some examples of what the annoations can look like:
 
-![](/media/multiannotations.jpg "MultiAnnotations.jpg")
+![](/media/multiannotations.jpg)
 
 And here is the corresponding classification result:
 
-![](/media/finaloverlay.jpg "FinalOverlay.jpg")
+![](/media/finaloverlay.jpg)
 
 ### Apply the trained classifier to other images
 

@@ -57,7 +57,7 @@ Version 2.2.0 focuses mainly on extendability, tracking performance and detectio
 
 -   The user can now define a *depth of drawing* display setting, that limits the number of Z-slices on which we draw the model. This is useful on very thick samples where the drawing of all the data across all Zs can become confusing.
 
-![](/media/depthofdrawing.png "DepthOfDrawing.png")
+![](/media/depthofdrawing.png)
 
 -   Minor improvement for the track display on the main view, for large models.
 

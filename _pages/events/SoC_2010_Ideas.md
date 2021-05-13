@@ -266,7 +266,7 @@ The purpose of this project is to segment in a fully automatic way round, convex
 
 Biological images sometimes contain fiber-like structures, such as cell membranes (in 2D, they are fiber-like), the mitotic spindle, or microtubuli. Example (the green signal):
 
-![](/media/mitosis.jpg "Mitosis.jpg")
+![](/media/mitosis.jpg)
 
 A combination of edge detection, hough transform and fitting should provide a robust segmentation of such structures.
 

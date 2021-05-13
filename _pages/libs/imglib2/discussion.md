@@ -148,23 +148,23 @@ In imglib2, out-of-bounds access is handled by [`ExtendedRandomAccessibleInterva
 
 The original `img` looks like this:
 
-![](/media/imglib2views-img.png "Imglib2views_img.png")
+![](/media/imglib2views-img.png)
 
 This is extended to infinity (using mirroring strategy) resulting in the unbounded `RandomAccessible view1`. A crop of `view1` looks like this:
 
-![](/media/imglib2views-ext1.png "Imglib2views_ext1.png")
+![](/media/imglib2views-ext1.png)
 
 Then we take a subview `view2` (which is again a bounded interval)
 
-![](/media/imglib2views-extsub1.png "Imglib2views_extsub1.png")
+![](/media/imglib2views-extsub1.png)
 
 We extend that to get `view3` and take a subview `view4` which looks like this:
 
-![](/media/imglib2views-extsub1extsub2.png "Imglib2views_extsub1extsub2.png")
+![](/media/imglib2views-extsub1extsub2.png)
 
 Now assume that we want `RandomAccess` into `view4`. If we know in advance interval in which we will use the access, `view4` can possibly provide more efficient access. Consider this:
 
-![](/media/imglib2views-extsub1extsub2regions.png "Imglib2views_extsub1extsub2regions.png")
+![](/media/imglib2views-extsub1extsub2regions.png)
 
 If we want to access only the green region, the `RandomAccess` can fall through all the way to the original `img` without needing out-of-bounds values. We simply wrap a `RandomAccess` on `img` with a coordinate translation to the top-left corner of `view4`
 

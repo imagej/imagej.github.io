@@ -11,7 +11,7 @@ The **MultiView Mode** can be accessed by clicking the "MultiView" button in the
 
 -   The views can be grouped by Illuminations or Tiles (they are grouped by default, but can be ungrouped by unticking the respective option at the bottom of the main window).
 
-![](/media/bigstitcher-overview-4.png "BigStitcher_Overview_4.png")
+![](/media/bigstitcher-overview-4.png)
 
 ### The right-click menu
 
@@ -23,6 +23,6 @@ Selecting the desired views and right-clicking in the main view list brings up a
 -   **Interest Points** shows functions for visualizing and removing interest points.
 -   **Modifications** shows functions for resaving the dataset.
 
-![](/media/bigstitcher-overview-5.png "BigStitcher_Overview_5.png")
+![](/media/bigstitcher-overview-5.png)
 
 Go back to the [main page](/plugins/bigstitcher#documentation)

@@ -16,11 +16,11 @@ Enabled [ThreeDViewer](/plugins/sciview) update site
 
 ### Steps
 
-1.  Launch SciView ![](/media/launch-threedviewer.png "fig:launch_threedviewer.png")
-2.  Import a 3D mesh (at the time of this writing OBJ, STL, and Isosurfaces taken from a 3D image opened in ImageJ, all work) ![](/media/import-obj.png "fig:import_obj.png")
-3.  Convert mesh to image ![](/media/mesh-to-image.png "fig:mesh_to_image.png")
-4.  Select output dimensions ![](/media/mesh-to-image-dimensions.png "fig:mesh_to_image_dimensions.png")
-5.  Inspect the result ![](/media/voxelization-output.png "fig:voxelization_output.png")
+1.  Launch SciView ![](/media/launch-threedviewer.png)
+2.  Import a 3D mesh (at the time of this writing OBJ, STL, and Isosurfaces taken from a 3D image opened in ImageJ, all work) ![](/media/import-obj.png)
+3.  Convert mesh to image ![](/media/mesh-to-image.png)
+4.  Select output dimensions ![](/media/mesh-to-image-dimensions.png)
+5.  Inspect the result ![](/media/voxelization-output.png)
 
 ### Optional additional steps
 

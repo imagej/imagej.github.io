@@ -217,7 +217,7 @@ Right now, in our first trial, let us pick the **Simple fast LAP tracker**.
 
 ## Configuring the simple LAP tracker
 
-![TrackMate TrackerConfiguration 1.png](/media/trackmate-trackerconfiguration-1.png "TrackMate TrackerConfiguration 1.png")
+![TrackMate TrackerConfiguration 1.png](/media/trackmate-trackerconfiguration-1.png)
 
 As promised, there is only three configuration fields.
 
@@ -237,7 +237,7 @@ Press **Next** to start the tracking computation.
 
 You are now shown the log panel, where the tracking process is logged. Since our dataset is very small, it should complete very quickly. Press **Next** again to see the results. They should look like this:
 
-![TrackMate TrackingResults 1.png](/media/trackmate-trackingresults-1.png "TrackMate TrackingResults 1.png")
+![TrackMate TrackingResults 1.png](/media/trackmate-trackingresults-1.png)
 
 Basically, the tracker held its promises: there is 6 tracks (the two immobile spots at the bottom left part of the image contributed a track each). These tracks are not branching. The red track indeed contains a gap closing event, that did not generate a track break. That would have been different if we would have used the **Nearest neighbor search** tracker: as it cannot deal with gap-closing events, we would have 7 tracks.
 
@@ -247,7 +247,7 @@ Now, we would like the shape of these tracks to change. We see that the yellow t
 
 ## Configuring a not so simple tracker
 
-![](/media/trackmate-trackerconfiguration-2.png "TrackMate_TrackerConfiguration_2.png")
+![](/media/trackmate-trackerconfiguration-2.png)
 
 Look at the configuration panel. It is quite more complex than for the simple tracker, obviously, and it is the price for flexibility. Since it is quite long, the panel has to be scrolled to its bottom to venture on all fields.
 
@@ -275,19 +275,19 @@ For <u>track splitting</u>, the middle of a segment is offered to bridge to the 
 
 As an exercise, try to find the parameters the will fuse the central track segments in a single large track, with two splitting events and a merge event. You should obtain the track layout pictured below.
 
-![](/media/trackmate-trackingresults-2.png "TrackMate_TrackingResults_2.png")
+![](/media/trackmate-trackingresults-2.png)
 
 ## Filtering tracks
 
 The next panel is just the equivalent of the spot filtering step we met before, but this time we use track features,. The filter principles are the same: you simply add filters, choosing a target feature, until you are happy with the remaining tracks. As for the spots, the tracks are not really deleted; they are just hidden and you can retrieve them by switching back to this panel and delete the filters.
 
-![](/media/trackmate-trackingfiltering.png "TrackMate_TrackingFiltering.png")
+![](/media/trackmate-trackingfiltering.png)
 
 Here, we have a total of 4 tracks. The two immobile spots of the bottom left contribute one track each, that we can barely see because they do not move much. Let us say that we want to get rid of them. There are several ways to do that, but the simple is simply to add a filter on track displacement, as picture above.
 
 ## The end or so
 
-![](/media/trackmate-displaypanel.png "TrackMate_DisplayPanel.png")
+![](/media/trackmate-displaypanel.png)
 
 We are now close to the end of a typical workflow for a tracking problem. The panel you see now is the one that recapitulates display option. You can set spot color by feature, hide them, show their name, etc... Find out what they do, display options are pretty much self-explanatory.
 
