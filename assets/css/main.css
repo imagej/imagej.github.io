@@ -1380,7 +1380,7 @@ button:disabled,
   background-color: #333;
   color: rgba(255, 255, 255, 0.75);
   background-attachment: fixed, fixed;
-  background-image: url("../../images/site/overlay6.png");
+  background-image: url("../../media/site/overlay6.png");
   background-size: auto, cover;
   width: 50%;
   position: relative;
@@ -1471,7 +1471,7 @@ button:disabled,
   background-color: #333;
   color: rgba(255, 255, 255, 0.75);
   background-attachment: fixed, fixed;
-  background-image: url("../../images/site/overlay9.png");
+  background-image: url("../../media/site/overlay9.png");
   background-size: auto, cover;
   width: 50%;
   position: relative;
@@ -1569,7 +1569,7 @@ button:disabled,
 
 #header {
   padding: 9em 0 9em 0;
-  background-image: url("../../images/site/overlay7.png");
+  background-image: url("../../media/site/overlay7.png");
   color: rgba(255, 255, 255, 0.75);
   background-position: top left, center center, center center;
   background-size: auto, cover, cover;
@@ -1766,7 +1766,7 @@ body.is-preload #header:after {
 
 #footer {
   padding: 4em 0 4em 0;
-  background-image: url("../../images/site/overlay8.png"), url("../../images/header.jpg");
+  background-image: url("../../media/site/overlay8.png"), url("../../media/site/header.jpg");
   color: rgba(255, 255, 255, 0.75);
   background-attachment: fixed, fixed, fixed;
   background-position: top left, center center, center center;
