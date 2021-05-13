@@ -1,5 +1,0 @@
-<img src="{{include.image-path}}" alt="{{include.name}}" class="image-center {{include.classes}}"{% if include.image-width %} width={{include.image-width}}{% endif %}>
-
-{%- comment -%}
-# vi:syntax=liquid
-{%- endcomment -%}

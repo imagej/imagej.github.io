@@ -1,0 +1,15 @@
+{% if include.align == "left" %}
+{% assign style-class = "image-left" %}
+{% elsif include.align == "right" %}
+{% assign style-class = "image-right" %}
+{% elsif include.align == "center" %}
+{% assign style-class = "image-center" %}
+{% elsif include.align == "fit" %}
+{% assign style-class = "image-fit" %}
+{% endif %}
+
+<img src="{{include.src}}" alt="{{include.name}}" class="{{style-class}} {{include.classes}}"{% if include.width %} width={{include.width}}{% endif %}>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

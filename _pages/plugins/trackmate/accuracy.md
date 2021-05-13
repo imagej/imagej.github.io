@@ -105,13 +105,13 @@ Below are shown typical images taken from the challenge.
 
 <div class="row">
   <div class="column3">
-{% include image-fit name="Low density" image-path="/media/vesicle-snr-7-density-low-1.png" %}
+{% include img align="fit" name="Low density" src="/media/vesicle-snr-7-density-low-1.png" %}
   </div>
   <div class="column3">
-{% include image-fit name="Medium density" image-path="/media/vesicle-snr-7-density-mid-1.png" %}
+{% include img align="fit" name="Medium density" src="/media/vesicle-snr-7-density-mid-1.png" %}
   </div>
   <div class="column3">
-{% include image-fit name="High density" image-path="/media/vesicle-snr-7-density-high-1.png" %}
+{% include img align="fit" name="High density" src="/media/vesicle-snr-7-density-high-1.png" %}
   </div>
 </div>
 
@@ -121,19 +121,19 @@ Contrast stretched to the 0-150 8-bit range.
 
 <div class="row">
   <div class="column5">
-{% include image-fit name="SNR = 7" image-path="/media/receptor-snr-7-density-low-1.png" %}
+{% include img align="fit" name="SNR = 7" src="/media/receptor-snr-7-density-low-1.png" %}
   </div>
   <div class="column5">
-{% include image-fit name="SNR = 4" image-path="/media/receptor-snr-4-density-low-1.png" %}
+{% include img align="fit" name="SNR = 4" src="/media/receptor-snr-4-density-low-1.png" %}
   </div>
   <div class="column5">
-{% include image-fit name="SNR = 3" image-path="/media/receptor-snr-3-density-low-1.png" %}
+{% include img align="fit" name="SNR = 3" src="/media/receptor-snr-3-density-low-1.png" %}
   </div>
   <div class="column5">
-{% include image-fit name="SNR = 2" image-path="/media/receptor-snr-2-density-low-1.png" %}
+{% include img align="fit" name="SNR = 2" src="/media/receptor-snr-2-density-low-1.png" %}
   </div>
   <div class="column5">
-{% include image-fit name="SNR = 1" image-path="/media/receptor-snr-1-density-low-1.png" %}
+{% include img align="fit" name="SNR = 1" src="/media/receptor-snr-1-density-low-1.png" %}
   </div>
 </div>
 
@@ -141,7 +141,7 @@ Contrast stretched to the 0-50 8-bit range.
 
 #### The MICROTUBULE scenario particle shape.
 
-{% include image-fit name="SNR = 4, density = mid" image-path="/media/microtubule-snr-4-density-mid-1.png" %}
+{% include img align="fit" name="SNR = 4, density = mid" src="/media/microtubule-snr-4-density-mid-1.png" %}
 
 ### Accuracy measurements.
 
