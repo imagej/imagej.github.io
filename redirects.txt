@@ -224,7 +224,7 @@
 2017-12-29_-_ImageJ2_and_Fiji_updated_-_now_with_search_bar! :: news/2017-12-29-imagej2-and-fiji-updated-now-with-search-bar
 2018-01-11_-_Announcing_the_new_Scientific_Community_Image_Forum :: news/2018-01-11-announcing-the-new-scientific-community-image-forum
 2018-03-16_-_Classifying_microscope_image_focus_quality_with_deep_learning :: news/2018-03-16-classifying-microscope-image-focus-quality-with-deep-learning
-2018-04-04_22-_SciView_hackathon :: news/2018-04-04-22-sciview-hackathon
+2018-04-04_22-_SciView_hackathon :: news/2018-04-22-sciview-hackathon
 2018-05-14_-_SciView_Preview_Release :: news/2018-05-14-sciview-preview-release
 2018-06_-_DAIS_learnathon :: events/Learnathon_2018
 2018-12-06_-_I2K_2018_Dresden_Hackathon :: news/2018-12-06-i2k-2018-dresden-hackathon
@@ -422,7 +422,7 @@ BioDIP :: software/biodip
 BioImageXD :: software/bioimagexd
 BioVoxxel :: users/biovoxxel
 BioVoxxel_Toolbox :: plugins/biovoxxel-toolbox
-Biomat :: plugins/jiri-janacek
+Biomat :: plugins/biomat
 Bleach_Correction :: plugins/bleach-correction
 Blend_two_images :: plugins/blend-two-images
 Blind_Analysis_Tools :: plugins/blind-analysis-tools
@@ -673,7 +673,7 @@ Elastic_Alignment_and_Montage :: plugins/elastic-alignment-and-montage
 Elastix :: plugins/elastix
 Ellipse_split :: plugins/ellipse-split
 Endrov :: software/endrov
-Enhance_Local_Contrast_(CLAHE) :: plugins/enhance-local-contrast-clahe
+Enhance_Local_Contrast_(CLAHE) :: plugins/clahe
 EpiGraph :: plugins/epigraph
 Erode_(3D) :: plugins/3d-binary-filters
 Events :: events
@@ -728,7 +728,7 @@ Fiji/Contribution_requirements :: software/fiji/contribution-requirements
 Fiji/Contributors :: about/contributors
 Fiji/Download :: software/fiji/downloads
 Fiji/Downloads :: software/fiji/downloads
-Fiji/Menu :: plugins/fiji-menu
+Fiji/Menu :: software/fiji/menu
 Fiji/Publications :: software/fiji/publications
 Fiji/YouTube_Channel :: software/fiji/youtube-channel
 Fiji/Z-Spacing_Correction :: plugins/fiji-z-spacing-correction
@@ -748,7 +748,7 @@ Fiji_Download :: software/fiji/downloads
 Fiji_Downloads :: software/fiji/downloads
 Fiji_Launcher :: TODO (Launcher)
 Fiji_Logo_3D :: plugins/fiji-logo-3d
-Fiji_Menu :: plugins/fiji-menu
+Fiji_Menu :: software/fiji/menu
 Fiji_Package_Maker :: plugins/make-fiji-package
 Fiji_Plugins :: plugins/fiji-plugins
 Fiji_Publications :: software/fiji/publications
@@ -763,7 +763,7 @@ Fiji_YouTube_Channel :: software/fiji/youtube-channel
 Fiji_Z-Spacing_Correction :: plugins/fiji-z-spacing-correction
 Fiji_contribution_requirements :: software/fiji/contribution-requirements
 Fiji_scripting_tutorial :: software/fiji/scripting-tutorial
-Fijis_Menu :: plugins/fiji-menu
+Fijis_Menu :: software/fiji/menu
 Fijiyama :: plugins/fijiyama
 FilamentDetector :: plugins/filament-detector
 File_Import :: plugins/importing-image-files
@@ -792,7 +792,7 @@ Fractal_dimension :: plugins/bonej#fractal-dimension
 Frames :: plugins/frames
 Frangi :: plugins/frangi
 Frequently_Asked_Questions :: help/faq
-Frequently_Asked_Questions#How_do_I_set_up_Java_6_on_OS_X.3F :: help/faq#how-do-i-set-up-java-6-on-os-x
+Frequently_Asked_Questions#How_do_I_set_up_Java_6_on_OS_X.3F :: help/faq#how-do-i-set-up-java-6-on-macos
 Frequently_Asked_Questions#How_do_I_launch_ImageJ_with_a_different_version_of_Java.3F :: help/faq#how-do-i-launch-imagej-with-a-different-version-of-java
 Frequently_Asked_Questions#How_can_I_verify_that_my_ImageJ_is_really_100%_up_to_date? :: help/faq#how-can-i-verify-that-my-imagej-is-really-100-up-to-date
 Frequently_Asked_Questions#Installing.2FUpdating :: help/faq#installingupdating
@@ -921,11 +921,11 @@ ImageJ1 :: software/imagej1
 ImageJ1-ImageJ2_cheat_sheet :: TODO
 ImageJ2 :: software/imagej2
 ImageJ2/Documentation/Edit/Options/Compatibility :: software/imagej2/implementation-notes#edit--options--compatibility
-ImageJ2/Documentation/Edit/Options/Misc :: software/imagej2/implementation-notes#edit--options--misc
+ImageJ2/Documentation/Edit/Options/Misc :: software/imagej2/implementation-notes#edit--options--compatibility
 ImageJ2/Documentation/Image/Overlay/OverlayManager :: software/imagej2/implementation-notes#image--overlay--overlay-manager
-ImageJ2/Documentation/PointSetDemo :: software/imagej2/implementation-notes#pointsetdemo
+ImageJ2/Documentation/PointSetDemo :: software/imagej2/implementation-notes#pointset-demo
 ImageJ2/Documentation/Process/Math/Equation :: software/imagej2/implementation-notes#process--math--equation
-ImageJ2_Documentation_Edit_Options_Misc :: software/imagej2/implementation-notes#edit--options--misc
+ImageJ2_Documentation_Edit_Options_Misc :: software/imagej2/implementation-notes#edit--options--compatibility
 ImageJ2_Python_Scripts :: scripting/examples/imagej2-python
 ImageJ2_development_releases :: software/imagej2/development-releases
 ImageJ2_grant_proposal :: software/imagej2/grant-proposal
@@ -1035,11 +1035,11 @@ JRuby_Interpreter :: scripting/interpreter
 JRuby_Scripting :: scripting/jruby
 JaCoP :: plugins/jacop
 Java :: develop/plugins
-Java3D :: about/java-3d
+Java3D :: libs/java-3d
 JavaOptions :: TODO (Java_Options)
 JavaScript :: scripting/javascript
 JavaScript_Scripting :: scripting/javascript
-Java_3D :: about/java-3d
+Java_3D :: libs/java-3d
 Java_8 :: news/2016-05-10-imagej-howto-java-8-java-6-java-3d
 Java_Options :: TODO
 Java_Scripting :: develop/ij1-plugins
@@ -1313,7 +1313,7 @@ Plasma_Cloud :: scripting/examples/plasma-cloud
 PlugIn_Design_Guidelines :: develop/plugin-design-guidelines
 Plugin :: plugins
 Plugins :: plugins
-Plugins_Menu :: plugins/fiji-menu
+Plugins_Menu :: software/fiji/menu
 PointPicker :: plugins/point-picker
 Point_Analysis :: plugins/point-analysis
 Point_Picker :: plugins/point-picker
@@ -1481,7 +1481,7 @@ Scripting_the_Trainable_Segmentation :: plugins/tws/scripting
 Scripting_the_Trainable_Weka_Segmentation :: plugins/tws/scripting
 Scripting_toolbox :: scripting/toolbox
 Scripts :: scripting
-Search :: search
+Search :: /
 Segment_blob_in_3D_Viewer :: plugins/segment-blob-in-3d-viewer
 Segmentation :: techniques/segmentation
 Segmentation_Editor :: plugins/segmentation-editor
@@ -1495,7 +1495,7 @@ Semantic_Versioning :: develop/versioning
 Semantic_versioning :: develop/versioning
 Series_Labeler :: plugins/series-labeler
 Server :: plugins/server
-Services :: software/scijava-common#services
+Services :: libs/scijava-common#services
 Shape_Filter :: plugins/shape-filter
 Shape_Index_Map :: plugins/shape-index-map
 Shape_Smoothing :: plugins/shape-smoothing
@@ -1763,7 +1763,7 @@ User:Benoit :: users/benoalo
 User:Benwbooth :: users/benwbooth
 User:Bio-Formats :: formats/bio-formats
 User:BioVoxxel :: users/biovoxxel
-User:Biomat :: users/Biomat
+User:Biomat :: users/jiri-janacek
 User:Biomedgroup :: users/thorstenwagner
 User:Bnanes :: users/bnanes
 User:Bnorthan :: users/bnorthan
@@ -1780,7 +1780,7 @@ User:Carshadi :: users/carshadi
 User:CellDynamics :: users/CellDynamics
 User:Cellkai :: users/CellKai
 User:Chaubold :: users/chaubold
-User:ChristophH :: users/ChristophH
+User:ChristophH :: users/christoph-hentschel
 User:ClaudiaCarabanaGarcia :: users/claudiacarabana
 User:Cookbook :: cookbook
 User:Cordelieres :: users/fab2506
@@ -1870,7 +1870,7 @@ User:Ksmader :: users/kmader
 User:Kudryashev :: users/KudryashevLab
 User:LMCF-IMG :: users/LMCF-IMG
 User:LMEscudero :: users/luis-escudero
-User:LOCI :: users/LOCI
+User:LOCI :: sites/loci
 User:Landini :: users/landinig
 User:Leek :: users/LeeKamentsky
 User:Lentz :: users/ricklentz
@@ -1903,7 +1903,7 @@ User:Moon :: users/hkmoon
 User:Moore :: users/joshmoore
 User:Msagar :: users/aksagar
 User:Mutterer :: users/mutterer
-User:Myfriendfernando123 :: users/Myfriendfernando123
+User:Myfriendfernando123 :: <DELETED> (spam)
 User:N.condon :: users/NickCondon
 User:NIST-ISG-LineageMapper :: users/mmajurski
 User:NIST-ISG-MIST :: users/mmajurski
@@ -1925,7 +1925,6 @@ User:Pattersg :: users/pattersg
 User:Pbainar :: users/PetrBainar
 User:Pedgomgal1 :: users/Pedgomgal1
 User:PhotonImaging :: plugins/photon-imaging
-User:PhotonImaging :: users/PhotonImaging
 User:Pietzsch :: users/tpietzsch
 User:PillarTracker :: plugins/pillartracker
 User:PluginListBot :: plugin-index

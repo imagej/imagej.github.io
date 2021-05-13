@@ -15,10 +15,10 @@ echo "[Any invalid redirect destinations?]"
 tmpfile=redirects.html
 echo '<!DOCTYPE html><html><body>' > "$tmpfile"
 cat redirects.txt |
-  sed '/.* :: \/$/d' | sed '/</d' | sed '/TODO/d' |
+  sed '/.* :: https*:/d' | sed '/.* :: \/$/d' | sed '/</d' | sed '/TODO/d' |
   sed 's;.* :: \(.*\);<a href="/\1">\1</a>;' >> "$tmpfile"
 echo '</body></html>' >> "$tmpfile"
 _bin/check-page-html.sh "$tmpfile"
 success=$?
 test $success -eq 0 && rm redirects.html
-exit $?
+exit $success
