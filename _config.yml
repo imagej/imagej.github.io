@@ -18,3 +18,22 @@ defaults:
       type: pages
     values:
       layout: page
+  -
+    scope:
+      path: "_pages"
+      type: pages
+    values:
+      icon: /media/icons/40px-information-sign.png
+  -
+    scope:
+      path: "_pages/plugins"
+      type: pages
+    values:
+      icon: /media/icons/default.png
+  -
+    scope:
+      path: "_pages/plugins/trackmate"
+      type: pages
+    values:
+      icon: /media/icons/trackmate-icon120x120-color.png
+

@@ -1,8 +1,4 @@
-{% if page.icon == null %}
-<img src="/media/icons/default.png" height=25>
-{% else %}
 <img src="{{page.icon}}" height=25>
-{% endif %}
 {%- comment -%}
 # vi:syntax=liquid
 {%- endcomment -%}
