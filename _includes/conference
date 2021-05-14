@@ -2,7 +2,7 @@
 
 # {{include.title}}
 
-![{{include.title}}]({{include.image | relative_url}})
+![{{include.title}}]({{include.image}})
 
 ## {{include.section}}
 

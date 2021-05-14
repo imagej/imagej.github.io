@@ -37,7 +37,6 @@ A table with images, use the .image.table to make it align with text:
 |![Image1](/path/to/image1.png){: .image.table} | Text associated with Image1.
 | ![Image2](/path/to/image2.png){: .image.table} | Text associated with Image2 |
 ```
-**Note:** the method above assumes that your images are stored within the repository, thus uses the `relative_url` tag.
 
 ### Example
 ```
