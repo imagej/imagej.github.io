@@ -7,12 +7,12 @@
 <html>
 	<head>
 		<title>{{page.title}}</title>
-		{% include html-head %}
+		{% include layout/head %}
 		<link rel="stylesheet" href="/assets/css/home.css" />
 	</head>
 	<body class="is-preload">
 		<!-- Top bar -->
-		{% include top-bar %}
+		{% include layout/top-bar %}
 
 		<!-- Main content -->
 		<div id="content">
@@ -20,15 +20,15 @@
 		</div>
 
 		<!-- Footer -->
-		{% include footer %}
+		{% include layout/footer %}
 
 		<!-- Hamburger menu -->
-		{% include hamburger-menu %}
+		{% include layout/hamburger %}
 
 		<!-- Search results -->
-		{% include search-results %}
+		{% include layout/search-results %}
 
 		<!-- Scripts -->
-		{% include base-scripts %}
+		{% include layout/scripts %}
 	</body>
 </html>

@@ -7,7 +7,7 @@
   {%- for category in page.categories -%}
     {%- assign c = category | strip | capitalize -%}
     {%- if c == section -%}
-      <li>{%- include plugin-index-icon -%}<a href="{{page.url}}">{{page.title}}</a></li>
+      <li>{%- include plugin-index/icon -%}<a href="{{page.url}}">{{page.title}}</a></li>
     {%- endif -%}
   {%- endfor -%}
 {%- endfor -%}

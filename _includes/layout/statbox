@@ -122,41 +122,41 @@ the javascript only populates fields when they are empty.
         <summary style="text-align: center">{%- include tooltip text="Team" tooltip="The group of people who take responsibility for the project." -%}</summary>
         <table>
 {%- if artifact or team-founders -%}
-{%- include statbox-team-members title="Founders"
+{%- include statbox/team-members title="Founders"
                                  description="People who created the project. Does not imply any current participation or responsibility."
                                  members=team-founders -%}
 {%- endif -%}
 {%- if artifact or team-leads -%}
-{%- include statbox-team-members title="Leads"
+{%- include statbox/team-members title="Leads"
                                  description="People responsible for making decisions about the project: timing of releases, inclusion of features, etc."
                                  members=team-leads -%}
 {%- endif -%}
 {%- if artifact or team-developers -%}
-{%- include statbox-team-members title="Developers"
+{%- include statbox/team-members title="Developers"
                                  description="People responsible for adding new features or enhancements."
                                  members=team-developers -%}
 {%- endif -%}
 {%- if artifact or team-debuggers -%}
-{%- include statbox-team-members title="Debuggers"
+{%- include statbox/team-members title="Debuggers"
                                  description="People responsible for fixing bugs."
                                  members=team-debuggers -%}
 {%- endif -%} {%- if artifact or team-reviewers -%}
-{%- include statbox-team-members title="Reviewers"
+{%- include statbox/team-members title="Reviewers"
                                  description="People responsible for reviewing patch submissions."
                                  members=team-reviewers -%}
 {%- endif -%}
 {%- if artifact or team-support -%}
-{%- include statbox-team-members title="Support"
+{%- include statbox/team-members title="Support"
                                  description="People responsible for responding to community questions and issue reports."
                                  members=team-support -%}
 {%- endif -%}
 {%- if artifact or team-maintainers -%}
-{%- include statbox-team-members title="Maintainers"
+{%- include statbox/team-members title="Maintainers"
                                  description="People responsible for maintaining the project: e.g., merging patch submissions and cutting releases."
                                  members=team-maintainers -%}
 {%- endif -%}
 {%- if artifact or team-contributors -%}
-{%- include statbox-team-members title="Contributors"
+{%- include statbox/team-members title="Contributors"
                                  description="People who contributed code to the project. Does not imply any current participation or responsibility."
                                  members=team-contributors -%}
 {%- endif -%}
@@ -229,25 +229,25 @@ refreshComponent();
 <div class="drag-handle"></div>
 <button class="btn-refresh" onclick="refreshComponent()"><i class="fa fa-sync" style="pointer-events: none;"></i></button>
 <table>
-{%- include statbox-row id="statbox-header" value=header -%}
+{%- include statbox/row id="statbox-header" value=header -%}
 
 {%- comment -%} ============== COMPONENT INFO ============== {%- endcomment -%}
 {%- comment -%} TODO: Infer project from groupId. {%- endcomment -%}
 {%- comment -%} TODO: Add support for licenseName, projectName, copyrightOwners. {%- endcomment -%}
-{%- if project                    -%} {%- include statbox-row id="component-project"                                        value=project         -%} {%- endif -%}
-{%- if artifact or source-label   -%} {%- include statbox-row id="component-source"         label="Source"  url=source-url  value=source-label    -%} {%- endif -%}
-{%- if artifact or license-url    -%} {%- include statbox-row id="component-license"        label="License" url=license-url value=license-label   -%} {%- endif -%}
-{%- if artifact or release-url    -%} {%- include statbox-row id="component-release"        label="Release" url=release-url value=release-version -%} {%- endif -%}
-{%- if artifact or release-date   -%} {%- include statbox-row id="component-date"           label="Date"                    value=release-date    -%} {%- endif -%}
-{%- if artifact or dev-status     -%} {%- include statbox-row id="component-dev-status"     label="Development status"      value=dev-status      -%} {%- endif -%}
-{%- if artifact or support-status -%} {%- include statbox-row id="component-support-status" label="Support status"          value=support-status  -%} {%- endif -%}
-{%- if team -%}                       {%- include statbox-row id="component-team"                                           value=team            -%} {%- endif -%}
+{%- if project                    -%} {%- include statbox/row id="component-project"                                        value=project         -%} {%- endif -%}
+{%- if artifact or source-label   -%} {%- include statbox/row id="component-source"         label="Source"  url=source-url  value=source-label    -%} {%- endif -%}
+{%- if artifact or license-url    -%} {%- include statbox/row id="component-license"        label="License" url=license-url value=license-label   -%} {%- endif -%}
+{%- if artifact or release-url    -%} {%- include statbox/row id="component-release"        label="Release" url=release-url value=release-version -%} {%- endif -%}
+{%- if artifact or release-date   -%} {%- include statbox/row id="component-date"           label="Date"                    value=release-date    -%} {%- endif -%}
+{%- if artifact or dev-status     -%} {%- include statbox/row id="component-dev-status"     label="Development status"      value=dev-status      -%} {%- endif -%}
+{%- if artifact or support-status -%} {%- include statbox/row id="component-support-status" label="Support status"          value=support-status  -%} {%- endif -%}
+{%- if team -%}                       {%- include statbox/row id="component-team"                                           value=team            -%} {%- endif -%}
 
 {%- comment -%} =============== PERSON INFO ================ {%- endcomment -%}
-{%- if forum              -%} {%- include statbox-row id="person-forum"       label="Image.sc Forum" value=forum url=forum-url -%} {%- endif -%}
-{%- if person-developer   -%} {%- include statbox-row id="person-developer"   label="Developer"      value=person-developer    -%} {%- endif -%}
-{%- if person-social      -%} {%- include statbox-row id="person-social"      label="Social"         value=person-social       -%} {%- endif -%}
-{%- if person-publication -%} {%- include statbox-row id="person-publication" label="Publication"    value=person-publication  -%} {%- endif -%}
+{%- if forum              -%} {%- include statbox/row id="person-forum"       label="Image.sc Forum" value=forum url=forum-url -%} {%- endif -%}
+{%- if person-developer   -%} {%- include statbox/row id="person-developer"   label="Developer"      value=person-developer    -%} {%- endif -%}
+{%- if person-social      -%} {%- include statbox/row id="person-social"      label="Social"         value=person-social       -%} {%- endif -%}
+{%- if person-publication -%} {%- include statbox/row id="person-publication" label="Publication"    value=person-publication  -%} {%- endif -%}
 
 {%- comment -%} ================== FOOTER ================== {%- endcomment -%}
 </table>

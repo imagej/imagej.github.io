@@ -5,7 +5,7 @@
         <span></span> <!-- hamburger -->
         <span></span> <!-- bottom bun -->
         <ul id="ham-menu">
-          {% include main-menu %}
+          {% include layout/menu %}
         </ul>
       </div>
     </nav>

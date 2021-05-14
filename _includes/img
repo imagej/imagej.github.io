@@ -7,7 +7,7 @@
   {%- endcase -%}
 {%- endcapture -%}
 
-{%- capture src -%}{%- include /functions/find-media src=include.src -%}{%- endcapture -%}
+{%- capture src -%}{%- include functions/find-media src=include.src -%}{%- endcapture -%}
 
 <img src="{{src}}" alt="{{include.name}}" class="{{style-class}} {{include.classes}}"{%- if include.width %} width={{include.width}}{%- endif -%}>
 

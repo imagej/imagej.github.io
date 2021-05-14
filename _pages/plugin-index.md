@@ -22,7 +22,7 @@ title: Plugin Index
   {%- if category == "" -%} {%- continue -%} {%- endif -%}
 # {{category}}
 
-{% include plugin-index-section category=category %}
+{% include plugin-index/section category=category %}
 {% endfor -%}
 </div>
 

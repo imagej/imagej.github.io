@@ -1,6 +1,6 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		{% include onebox-info %}
+		{% include layout/onebox-info %}
 		<link rel="shortcut icon" href="/favicon.png">
 		<link rel="stylesheet" href="/assets/css/lightbox.min.css" />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7/themes/algolia-min.css"/>

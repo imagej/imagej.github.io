@@ -7,7 +7,7 @@ check_unfinished() {
   grep -q TODO "$1" && echo "$2 [UNFINISHED]" || echo "$2"
 }
 
-matches=$(git grep -ohI '{%-\? *include  *[a-z0-9-]*' | sed 's/.* //' | sort)
+matches=$(git grep -ohI '{%-\? *include  *[a-z0-9/-]*' | sed 's/.* //' | sort)
 used=$(echo "$matches" | uniq)
 
 # Check for usage of includes that don't exist.
@@ -22,11 +22,11 @@ test "$output" && echo "$output" && invalid=$(echo "$output" | wc -l)
 
 # Count how many times each include is used.
 count=$(echo "$matches" | uniq -c)
-output=$(for f in _includes/*
+output=$(find _includes -type f | while read f
 do
-  inc=${f##*/}
+  inc=${f#_includes/}
   s=$(echo "$count" | grep " $inc$")
-  test "$s" || s="      0 $inc"
+  test "$s" || s="   0 $inc"
   grep -q TODO "$f" && echo "$s [UNFINISHED]" || echo "$s"
 done | sort -nr)
 echo "$output"
