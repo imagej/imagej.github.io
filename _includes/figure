@@ -1,0 +1,19 @@
+{%- capture style-class -%}
+  {%- case include.align -%}
+    {%- when "left"  -%} left
+    {%- when "right" -%} right
+    {%- when "center" -%} center
+  {%- endcase -%}
+{%- endcapture -%}
+
+<div class="figure {{style-class}}" markdown="1">
+
+![{{include.name}}]({{include.src}})
+
+{{include.content}}
+
+</div>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}
