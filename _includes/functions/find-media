@@ -1,0 +1,18 @@
+{%- comment -%}
+prepend /media to any image file that isn't found locally
+{%- endcomment -%}
+{%- assign found = false -%}
+{%- assign src = {{include.src}} -%}
+{%- for static_file in site.static_files -%}
+  {%- if include.src == static_file.path -%}
+    {%- assign found = true -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- unless found -%}
+  {%- assign src = {{include.src}} | prepend: "/media" -%}
+{%- endunless -%}
+{%- comment -%}
+return the potentially update image path
+{%- endcomment -%}
+{{src}}
