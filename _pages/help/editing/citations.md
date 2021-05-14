@@ -1,8 +1,9 @@
 ---
-title: Demo citations
-
-description: This page demonstrates how to add a citation to your page.
+title: Editing the Wiki - Citations
+section: Help:Editing the Wiki
 ---
+
+This page demonstrates how to add a citation to your page.
 
 ## Citation Options
 

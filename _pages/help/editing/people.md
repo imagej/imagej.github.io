@@ -1,8 +1,9 @@
 ---
-title: Demo people
-
-description: this page demonstrates how to use the person include tag.
+title: Editing the Wiki - Referencing People
+section: Help:Editing the Wiki
 ---
+
+This page demonstrates how to use the `person` include tag.
 
 ## Individuals
 

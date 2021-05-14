@@ -1,11 +1,13 @@
 ---
-title: Demo math
-description: This page demonstrates how to use math equations.
+title: Editing the Wiki - Math Expressions
+section: Help:Editing the Wiki
 ---
 
-This site supports math equations using [MathJax](https://www.mathjax.org/),
-so that you can write equations with {% include wikipedia title="LaTeX" %}
-syntax, either inline or as a block.
+This page demonstrates how to include mathematical expressions.
+
+This site supports mathematical notation using
+[MathJax](https://www.mathjax.org/), so that you can write expressions with
+{% include wikipedia title="LaTeX" %} syntax, either inline or as a block.
 
 Expressions are delineated by `$$` tags before and after the expression.
 

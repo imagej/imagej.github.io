@@ -1,5 +1,6 @@
 ---
-title: Demo keys
+title: Editing the Wiki - Keyboard Shortcuts
+section: Help:Editing the Wiki
 ---
 
 The `key` include enables declaration of keyboard shortcuts in a clear way.

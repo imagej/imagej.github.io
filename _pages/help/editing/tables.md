@@ -1,10 +1,14 @@
 ---
-title: Demo Markdown Table
-description: This page explains how to insert a markdown table into your page, as well as add images to said table.
+title: Editing the Wiki - Tables
+section: Help:Editing the Wiki
 ---
+
+This page explains how to insert a table into your page.
+
 ## Usage
 
-We do not have a dedicated include to create a table. You can, however, easily create a table in markdown:
+There is no dedicated include to create a table. You can, however, easily
+create a table in Markdown:
 
 ```
 | Item 1 | Item 2 | Item 3 |

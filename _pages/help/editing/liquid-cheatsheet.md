@@ -1,5 +1,6 @@
 ---
-title: Liquid Cheatsheet
+title: Editing the Wiki - Liquid Cheatsheet
+section: Help:Editing the Wiki
 ---
 
 ## Truthy or Falsy?

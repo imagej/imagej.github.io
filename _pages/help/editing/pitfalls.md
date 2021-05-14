@@ -1,7 +1,9 @@
 ---
-title: Demo Formatting Pitfalls
-description: This page explains pitfalls to consider.
+title: Editing the Wiki - Formatting Pitfalls
+section: Help:Editing the Wiki
 ---
+
+This page covers pitfalls to be aware of when writing content for the site.
 
 This site uses Markdown for rich text formatting. It is powerful and friendly,
 but not a full replacement for raw HTML. Fortunately, you can mix HTML into

@@ -1,7 +1,9 @@
 ---
-title: Demo logos
-description: this page demonstrates how to use the logo include tag
+title: Editing the Wiki - Logos
+section: Help:Editing the Wiki
 ---
+
+This page demonstrates how to use the `logo` include tag.
 
 ## Usage
 

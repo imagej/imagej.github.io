@@ -1,8 +1,9 @@
 ---
-title: Demo conference
-
-description: This page demonstrates how to insert conference information.
+title: Editing the Wiki - Conferences
+section: Help:Editing the Wiki
 ---
+
+This page demonstrates how to insert conference information.
 
 ## Usage
 

@@ -1,5 +1,6 @@
 ---
-title: Demo Source Code
+title: Editing the Wiki - Source Code
+section: Help:Editing the Wiki
 ---
 
 This page describes nice ways of embedding source code in a page.

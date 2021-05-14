@@ -1,10 +1,11 @@
 ---
-title: Demo Whitespace
-description: This page explains ways to manage whitespace rendering.
+title: Editing the Wiki - Whitespace
+section: Help:Editing the Wiki
 ---
 
-This page demonstrates how the site treats whitespace, illustrating
-common techniques, pitfalls, and workarounds to achieve needed formatting.
+This page explains ways to manage whitespace rendering. It
+demonstrates how the site treats whitespace, illustrating common
+techniques, pitfalls, and workarounds to achieve needed formatting.
 
 ## Inserting newlines
 

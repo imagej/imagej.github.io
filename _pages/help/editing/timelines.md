@@ -1,5 +1,6 @@
 ---
-title: Demo Timeline
+title: Editing the Wiki - Timelines
+section: Help:Editing the Wiki
 
 timeline-inventions:
 - 1910 | headset               | And future Call of Duty players would thank them.

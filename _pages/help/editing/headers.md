@@ -1,5 +1,6 @@
 ---
-title: Demo Headers
+title: Editing the Wiki - Headers
+section: Help:Editing the Wiki
 ---
 
 This page showcases the look of different header levels.

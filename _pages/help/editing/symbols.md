@@ -1,13 +1,26 @@
 ---
-title: Using symbols on the wiki
-description: This page demonstrates how to add a symbol to your page from preset options.
+title: Editing the Wiki - Symbols
+section: Help:Editing the Wiki
 ---
 
-## Symbols
+This page documents includes for symbols commonly used on the site.
 
-Our site supports a predetermined list of frequently used symbols. If you would like to use a symbol not on our lists, you can add it to the page as an image file with the [include image](/help/editing/image) feature, or encode it directly with html using [UTF-8](https://www.w3schools.com/charsets/ref_html_utf8.asp).
+There are includes for a predetermined list of frequently used symbols. If you
+would like to use a symbol not on the list, you can add it as an
+image file with the [img include](/help/editing/images) feature,
+or encode it directly with HTML using Unicode.
+
 The site currently supports the following symbols as includes:
-<br>
-This text: {% raw %} `{% include yes %}` produces a green check: {% endraw %} {% include yes %}
-This text: {% raw %} `{% include no %}` {% endraw %} produces a red X: {% include no %}
-This text: {% raw %} `{% include arrow %}` {% endraw %} produces an greater than symbol: &nbsp;&nbsp; "{% include arrow %}"
+
+<table style="border: 1px solid gray">
+<tr><th>Code</th><th>Symbol</th></tr>
+<tr><td markdown=1>
+{% raw %}`{% include yes %}`{% endraw %}
+</td><td>{% include yes %}</td></tr>
+<tr><td markdown=1>
+{% raw %}`{% include no %}`{% endraw %}
+</td><td>{% include no %}</td></tr>
+<tr><td markdown=1>
+{% raw %}`{% include arrow %}`{% endraw %}
+</td><td>{% include arrow %}</td></tr>
+</table>

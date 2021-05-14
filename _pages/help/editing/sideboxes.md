@@ -1,8 +1,9 @@
 ---
-title: Demo sidebox
-author: 
-description: This page demonstrates how to insert a sidebox on the left and right side.
+title: Editing the Wiki - Sideboxes
+section: Help:Editing the Wiki
 ---
+
+This page demonstrates how to insert a sidebox on the left and right side.
 
 ## Usage
 

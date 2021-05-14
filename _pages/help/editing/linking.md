@@ -1,9 +1,13 @@
 ---
-title: Demo github links
-description: this page demonstrates how to use the github include tag
+title: Editing the Wiki - Links
+section: Help:Editing the Wiki
 ---
 
-## Examples
+This page demonstrates how to link to certain special classes of external content.
+
+## GitHub
+
+### Examples
 
 Use `path` to link to a file off the repository root:
 
@@ -108,3 +112,51 @@ Use `label` to override the label:
 {% endraw %}
 
 {% include github repo='fiji' path='plugins/Examples/Fiji_Logo_3D.js' label='Fiji...' %}  
+
+## Wikipedia
+
+TODO
+
+## Javadoc
+
+### Examples
+
+{% raw %}
+```
+See also the {% include javadoc project="SciJava" %} javadocs.
+```
+{% endraw %}
+
+See also the {% include javadoc project="SciJava" %} javadocs.
+
+{% raw %}
+```
+See also the {% include javadoc project="/software/imagej1" package="ij/process" class="ImageProcessor" %} class.
+```
+{% endraw %}
+
+See also the {% include javadoc project="/software/imagej1" package="ij/process" class="ImageProcessor" %} class.
+
+{% raw %}
+```
+See also the {% include javadoc package ="net/imagej" class="/about"%} class.
+```
+{% endraw %}
+
+See also the {% include javadoc package ="net/imagej" class="/about"%} class.
+
+{% raw %}
+```
+See also the {% include javadoc package="org/scijava/module" class="ModuleService" anchor="getModules()" %} method.
+```
+{% endraw %}
+
+See also the {% include javadoc package="org/scijava/module" class="ModuleService" anchor="getModules()" %} method.
+
+{% raw %}
+```
+See also the {% include javadoc package="net/imagej/ops" class="package-summary" label="ImageJ Ops" %} javadocs.
+```
+{% endraw %}
+
+See also the {% include javadoc package="net/imagej/ops" class="package-summary" label="ImageJ Ops" %} javadocs.
