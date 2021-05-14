@@ -1,28 +1,28 @@
-{% if include.align == "left" %}
-{% assign style-class = "image-left" %}
-{% elsif include.align == "right" %}
-{% assign style-class = "image-right" %}
-{% elsif include.align == "center" %}
-{% assign style-class = "image-center" %}
-{% elsif include.align == "fit" %}
-{% assign style-class = "image-fit" %}
-{% endif %}
+{%- capture style-class -%}
+  {%- case include.align -%}
+    {%- when "left"  -%} image-left
+    {%- when "right" -%} image-right
+    {%- when "center" -%} image-center
+    {%- when "fit" -%} image-fit
+  {%- endcase -%}
+{%- endcapture -%}
 
 {%- comment -%}
-# prepend /media to any image file that isn't found locally
+prepend /media to any image file that isn't found locally
 {%- endcomment -%}
-{% assign found = false %}
-{% assign src = {{include.src}} %}
-{% for static_file in site.static_files %}
-    {% if include.src == static_file.path %}
-        {% assign found = true %}
-    {% endif %}
-{% endfor %}
-{% unless found %}
-    {% assign src = {{include.src}} | prepend: "/media" %}
-{% endunless %}
+{%- assign found = false -%}
+{%- assign src = {{include.src}} -%}
+{%- for static_file in site.static_files -%}
+  {%- if include.src == static_file.path -%}
+    {%- assign found = true -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- unless found -%}
+  {%- assign src = {{include.src}} | prepend: "/media" -%}
+{%- endunless -%}
 
-<img src="{{src}}" alt="{{include.name}}" class="{{style-class}} {{include.classes}}"{% if include.width %} width={{include.width}}{% endif %}>
+<img src="{{src}}" alt="{{include.name}}" class="{{style-class}} {{include.classes}}"{%- if include.width %} width={{include.width}}{%- endif -%}>
 
 {%- comment -%}
 # vi:syntax=liquid
