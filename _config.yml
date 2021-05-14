@@ -32,6 +32,12 @@ defaults:
       icon: /media/icons/default.png
   -
     scope:
+      path: "_pages/formats"
+      type: pages
+    values:
+      icon: /media/icons/default.png
+  -
+    scope:
       path: "_pages/plugins/trackmate"
       type: pages
     values:

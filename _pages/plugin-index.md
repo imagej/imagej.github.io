@@ -5,7 +5,7 @@ title: Plugin Index
 {%- assign category-string = "" -%}
 {%- for page in site.pages -%}
   {%- assign tokens = page.url | split: "/" -%}
-  {%- if tokens[1] != 'plugins' -%} {%- continue -%} {%- endif -%}
+  {%- if tokens[1] != 'plugins' and tokens[1] != 'formats' -%} {%- continue -%} {%- endif -%}
   {%- if tokens[3] and tokens[3] != 'index' -%} {%- continue -%} {%- endif -%}
   {%- comment -%}
   It would be nicer to use the concat filter below, no?
