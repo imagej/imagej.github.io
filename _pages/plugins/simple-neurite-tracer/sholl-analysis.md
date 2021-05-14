@@ -16,7 +16,7 @@ When you've loaded the traces, that should look something like this: <img src="/
 
 Now you have to pick a centre point for the analysis. This might be the soma or a [relevant focal point](http://forum.imagej.net/t/sholl-analysis-validation-parameters/3065/2). The centre point must be on one of your existing paths. First, select the path on which your centre point lies: <img src="/media/simple-neurite-tracer--sholl-analysis-2.jpg" title="fig:" width="500" />
 
-Now hold down {% include key keys='Ctrl|Shift' %} (on Windows or Linux) or {% include key keys='Alt|Shift' %} (on Mac) and move the mouse along the path. A red cross-hair should track along the path: <img src="/media/simple-neurite-tracer--sholl-analysis-3.jpg" title="fig:" width="500" />
+Now hold down {% include key keys='Ctrl|Shift' %} (on Windows or Linux) or {% include key keys='option|shift' style='mac' %} (on Mac) and move the mouse along the path. A red cross-hair should track along the path: <img src="/media/simple-neurite-tracer--sholl-analysis-3.jpg" title="fig:" width="500" />
 
 ... when you've got the red cross-hairs at a suitable point, <i>still</i> holding down {% include key key='Ctrl' %} / {% include key key='Alt' %} and {% include key key='Shift' %}, press the {% include key key='A' %} key. Then you can release the other keys. You should see the Sholl analysis interface appear like this: <img src="/media/simple-neurite-tracer--sholl-analysis-4.jpg" title="fig:" width="500" />
 

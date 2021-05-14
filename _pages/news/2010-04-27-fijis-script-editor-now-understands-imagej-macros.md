@@ -10,6 +10,6 @@ Thanks to a lot of help by Robert Futrell, [Fiji's Script Editor](/scripting/scr
 
 For further convenience, the Macro Recorder opens newly created macros in the Script Editor, too.
 
-Another nice consequence is that Ctrl+Shift+N (or on Macs, Apple+Shift+N) opens up the Script Editor.
+Another nice consequence is that {% include key keys="CtlCmd|Shift|N" %} opens up the Script Editor.
 
 

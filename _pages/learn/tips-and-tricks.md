@@ -41,7 +41,7 @@ Pressing the {% include key key='Enter' %} key on any image will bring the main 
 
 ## Set the foreground color
 
-Double-click on the pipette, or press {% include key keys='Ctrl|Shift|K' %} (on Mac, {% include key keys='Cmd|Shift|K' %}), or select the menu item {% include bc path='Image | Color | Color Picker...' %}.
+Double-click on the pipette, or press {% include key keys='CtlCmd|Shift|K' %}, or select the menu item {% include bc path='Image | Color | Color Picker...' %}.
 
 ## Set the line width
 

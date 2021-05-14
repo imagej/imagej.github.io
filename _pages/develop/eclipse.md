@@ -92,204 +92,110 @@ If you're having trouble, how to import and build your Maven + Eclipse project, 
 
 ## Keyboard shortcuts
 
-On macOS, replace {% include key key='Ctrl' %} with {% include key key='Cmd' %}
-
 {::nomarkdown}
-<table>
+<table style="width: auto">
   <tbody>
-    <tr class="odd">
-      <td style="text-align: right; vertical-align: top; white-space: nowrap">
-        <p><strong>Navigation</strong></p>
-      </td>
-      <td></td>
+    <tr>
+      <td colspan=2 style="text-align: center"><strong>Navigation</strong></td>
     </tr>
-    <tr class="even">
-      <td>
-        <p>{% include key keys='Ctrl|Shift|T' %}</p>
-      </td>
-      <td style="text-align: right; vertical-align: top; white-space: nowrap">
-        <p>Open a Java class from the workspace</p>
-      </td>
+    <tr>
+      <td style="text-align: right">{% include key keys='CtlCmd|Shift|T' %}</td>
+      <td>Open a Java class from the workspace</td>
     </tr>
-    <tr class="odd">
+    <tr>
+      <td style="text-align: right">{% include key keys='CtlCmd|Shift|R' %}</td>
+      <td>Open a file from the workspace</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">{% include key key='F3' %}</td>
       <td>
-        <p>{% include key keys='Ctrl|Shift|R' %}</p>
-      </td>
-      <td style="text-align: right; vertical-align: top; white-space: nowrap">
-        <p>Open a file from the workspace</p>
+        Jump to selected class\\
+        (to edit the code, see <a href="/develop/architecture#using-snapshot-couplings-during-development">snapshot coupling</a>)
       </td>
     </tr>
-    <tr class="even">
+    <tr>
+      <td style="text-align: right; ">{% include key keys='CtlCmd|O' %}</td>
+      <td>Show superclass/subclass hierarchy</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">{% include key keys='CtlCmd|T' %}</td>
+      <td>Show implementations of interface or class</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">{% include key keys='CtlCmd|L' %}</td>
+      <td>Go to line number</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">{% include key keys='CtlCmd|Q' %}</td>
+      <td>Go to last edit location</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">{% include key keys='CtlCmd|E' %}</td>
+      <td>Go to next file in editor</td>
+    </tr>
+    <tr>
+      <td colspan=2 style="text-align: center"><strong>Editing</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: right">{% include key keys='Alt|Up' %}, {% include key keys='Alt|Down' %}</td>
+      <td>Move current line up or down</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">{% include key keys='CtlCmd|D' %}</td>
+      <td>Delete the current line</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">{% include key keys='CtlCmd|/' %}</td>
+      <td>Comment/uncomment the selected line(s)</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">{% include key keys='CtlCmd|1' %}</td>
+      <td>Quick fix selected error</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">{% include key keys='CtlCmd|Space' %}</td>
+      <td>Auto-complete current selection</td>
+    </tr>
+    <tr>
+      <td colspan=2 style="text-align: center"><strong>Code cleanup</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: right">{% include key keys='CtlCmd|Shift|O' %}</td>
+      <td>Organize imports</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">{% include key keys='CtlCmd|Shift|F' %}</td>
       <td>
-        <p>{% include key key='F3' %}</p>
-      </td>
-      <td>
-        <p>Jump to selected class<br>
-        (to edit the code, see <a href="/develop/architecture#using-snapshot-couplings-during-development">snapshot coupling</a>)</p>
+        Format code<br>
+        (BUT make sure you set the <a href="/develop/coding-style#eclipse-code-style-profiles">coding style</a>)
       </td>
     </tr>
-    <tr class="odd">
-      <td style="text-align: right; vertical-align: top; white-space: nowrap">
-        <p>{% include key keys='Ctrl|O' %}</p>
-      </td>
-      <td style="text-align: right; vertical-align: top; white-space: nowrap">
-        <p>Show superclass/subclass hierarchy</p>
-      </td>
+    <tr>
+      <td style="text-align: right; ">{% include key keys='Alt|Shift|S' %}, {% include key key='U' %}</td>
+      <td>Clean up (does format and much more)</td>
     </tr>
-    <tr class="even">
-      <td>
-        <p>{% include key keys='Ctrl|T' %}</p>
-      </td>
-      <td style="text-align: right; vertical-align: top; white-space: nowrap">
-        <p>Show implementations of interface or class</p>
-      </td>
+    <tr>
+      <td style="text-align: right">{% include key keys='Alt|Shift|R' %}</td>
+      <td>Refactor/rename selected class/variable</td>
     </tr>
-    <tr class="odd">
-      <td>
-        <p>{% include key keys='Ctrl|L' %}</p>
-      </td>
-      <td style="text-align: right; vertical-align: top; white-space: nowrap">
-        <p>Go to line number</p>
-      </td>
+    <tr>
+      <td colspan="2" style="text-align: center"><strong>Debugging</strong></td>
     </tr>
-    <tr class="even">
-      <td>
-        <p>{% include key keys='Ctrl|Q' %}</p>
-      </td>
-      <td style="text-align: right; vertical-align: top; white-space: nowrap">
-        <p>Go to last edit location</p>
-      </td>
+    <tr>
+      <td style="text-align: right">{% include key keys='CtlCmd|Shift|B' %}</td>
+      <td>Set/Remove breakpoint</td>
     </tr>
-    <tr class="odd">
-      <td>
-        <p>{% include key keys='Ctrl|E' %}</p>
-      </td>
-      <td style="text-align: right; vertical-align: top; white-space: nowrap">
-        <p>Go to next file in editor</p>
-      </td>
+    <tr>
+      <td style="text-align: right">{% include key key='F5' %}</td>
+      <td>Step into</td>
     </tr>
-    <tr class="even">
-      <td>
-        <p><strong>Editing</strong></p>
-      </td>
-      <td></td>
+    <tr>
+      <td style="text-align: right">{% include key key='F6' %}</td>
+      <td>Step over</td>
     </tr>
-    <tr class="odd">
-      <td>
-        <p>{% include key keys='Alt|Up' %}, {% include key keys='Alt|Down' %}</p>
-      </td>
-      <td style="text-align: right; vertical-align: top; white-space: nowrap">
-        <p>Move current line up or down</p>
-      </td>
-    </tr>
-    <tr class="even">
-      <td>
-        <p>{% include key keys='Ctrl|D' %}</p>
-      </td>
-      <td style="text-align: right; vertical-align: top; white-space: nowrap">
-        <p>Delete the current line</p>
-      </td>
-    </tr>
-    <tr class="odd">
-      <td>
-        <p>{% include key keys='Ctrl|/' %}</p>
-      </td>
-      <td style="text-align: right; vertical-align: top; white-space: nowrap">
-        <p>Comment/uncomment the selected line(s)</p>
-      </td>
-    </tr>
-    <tr class="even">
-      <td>
-        <p>{% include key keys='Ctrl|1' %}</p>
-      </td>
-      <td style="text-align: right; vertical-align: top; white-space: nowrap">
-        <p>Quick fix selected error</p>
-      </td>
-    </tr>
-    <tr class="odd">
-      <td>
-        <p>{% include key keys='Ctrl|Space' %}</p>
-      </td>
-      <td style="text-align: right; vertical-align: top; white-space: nowrap">
-        <p>Auto-complete current selection</p>
-      </td>
-    </tr>
-    <tr class="even">
-      <td>
-        <p><strong>Code cleanup</strong></p>
-      </td>
-      <td></td>
-    </tr>
-    <tr class="odd">
-      <td>
-        <p>{% include key keys='Ctrl|Shift|O' %}</p>
-      </td>
-      <td style="text-align: right; vertical-align: top; white-space: nowrap">
-        <p>Organize imports</p>
-      </td>
-    </tr>
-    <tr class="even">
-      <td>
-        <p>{% include key keys='Ctrl|Shift|F' %}</p>
-      </td>
-      <td>
-        <p>Format code<br>
-        (BUT make sure you set the <a href="/develop/coding-style#eclipse-code-style-profiles">coding style</a>)</p>
-      </td>
-    </tr>
-    <tr class="odd">
-      <td style="text-align: right; vertical-align: top; white-space: nowrap">
-        <p>{% include key keys='Alt|Shift|S' %}, {% include key key='U' %}</p>
-      </td>
-      <td style="text-align: right; vertical-align: top; white-space: nowrap">
-        <p>Clean up (does format and much more)</p>
-      </td>
-    </tr>
-    <tr class="even">
-      <td>
-        <p>{% include key keys='Alt|Shift|R' %}</p>
-      </td>
-      <td style="text-align: right; vertical-align: top; white-space: nowrap">
-        <p>Refactor/rename selected class/variable</p>
-      </td>
-    </tr>
-    <tr class="odd">
-      <td>
-        <p><strong>Debugging</strong></p>
-      </td>
-      <td></td>
-    </tr>
-    <tr class="even">
-      <td>
-        <p>{% include key keys='Ctrl|Shift|B' %}</p>
-      </td>
-      <td style="text-align: right; vertical-align: top; white-space: nowrap">
-        <p>Set/Remove breakpoint</p>
-      </td>
-    </tr>
-    <tr class="odd">
-      <td>
-        <p>{% include key key='F5' %}</p>
-      </td>
-      <td style="text-align: right; vertical-align: top; white-space: nowrap">
-        <p>Step into</p>
-      </td>
-    </tr>
-    <tr class="even">
-      <td>
-        <p>{% include key key='F6' %}</p>
-      </td>
-      <td style="text-align: right; vertical-align: top; white-space: nowrap">
-        <p>Step over</p>
-      </td>
-    </tr>
-    <tr class="odd">
-      <td>
-        <p>{% include key key='F7' %}</p>
-      </td>
-      <td>
-        <p>Step out</p>
-      </td>
+    <tr>
+      <td style="text-align: right">{% include key key='F7' %}</td>
+      <td>Step out</td>
     </tr>
   </tbody>
 </table>
@@ -420,7 +326,7 @@ Note that doing this only allows you to view the source code, it does **not** al
     </tr>
   </thead>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <ul>
           <li>
