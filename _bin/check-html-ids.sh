@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Scans HTML element id values for duplicates.
 

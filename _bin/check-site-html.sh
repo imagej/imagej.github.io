@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 dir=$(cd "$(dirname "$0")/.." && pwd)
 bin="$dir/_bin"
