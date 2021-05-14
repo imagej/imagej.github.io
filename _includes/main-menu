@@ -228,7 +228,6 @@
     {%- include menu-item title="Conferences" link="/help/editing/conferences" -%}
     {%- include menu-item title="Linking" link="/help/editing/linking" -%}
     {%- include menu-item title="Pitfalls" link="/help/editing/pitfalls" -%}
-    {%- include menu-item title="Liquid cheatsheet" link="/help/editing/liquid-cheatsheet" -%}
     {%- include menu-item title="Advanced editing" link="/help/editing/advanced" -%}
   {%- include menu-section-end -%} <!-- Help/Editing the Wiki -->
   {%- include menu-section title="Update Sites" link="/update-sites"  -%}
