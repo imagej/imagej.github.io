@@ -1962,6 +1962,7 @@ ul.major-icons li .icon {
 
 .tooltip {
   border-bottom: 1px dashed black;
+  position: relative;
 }
 
 .tooltip .tooltiptext {
@@ -1978,8 +1979,8 @@ ul.major-icons li .icon {
   position: absolute;
   z-index: 1;
   margin-top: 25px;
-  margin-left: -20px;
-  right: 0;
+  left: -50%;
+  white-space: nowrap;
 }
 
 .tooltip:hover .tooltiptext {
@@ -2037,6 +2038,7 @@ ul.major-icons li .icon {
   padding: 0.1em 0.3em;
   font-family: inherit;
   font-size: 0.85em;
+  color: black;
 }
 
 .key img {
@@ -2062,4 +2064,16 @@ div.column3 {
 div.column5 {
   flex: 20%;
   padding: 5px;
+}
+
+/* ctlcmd key code */
+
+.ctlcmd {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 0.5em;
+}
+
+.ctlcmd span:first-child {
+  text-align: right;
 }

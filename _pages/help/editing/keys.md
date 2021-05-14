@@ -44,6 +44,22 @@ By default, keys are rendered in a platform-agnostic way, but you can use the
 {% endcapture %}
 {% include example code=keyboard-style-code result=keyboard-style-result %}
 
+## Special code for OS-dependent Ctrl/Command
+
+Frequently, keyboard combos using {% include key key="Ctrl" %} on Windows and
+Linux will instead use {% include key key="command" style="mac" %} on macOS.
+There is a special key code, `ctlcmd`, which can be used in this circumstance
+to succinctly communicate this fact via a tooltip, to avoid needing a
+parenthetical note about macOS every time.
+
+{% capture ctlcmd-code %}
+{% raw %}{% include key keys="ctlcmd|L" %}{% endraw %}
+{% endcapture %}
+{% capture ctlcmd-result %}
+<div style="padding-left: 2em; width: 9rem; height: 4rem">{% include key keys="ctlcmd|L" %}</div>
+{% endcapture %}
+{% include example code=ctlcmd-code result=ctlcmd-result %}
+
 ## Custom chain symbols
 
 Finally, if you want to connect a key combination together with something
@@ -60,7 +76,7 @@ to do something different:
 
 ## List of key codes
 
-{% assign keys = "Menu, Hyper, Meta, Windows, Command, Super, Fn, AltGr, Ctrl, Alt, Option, Shift, Num Lock, Caps Lock, Scroll Lock, Print Screen, Eject, Enter, Enter2, Backspace, Delete, Insert, Esc, Right, Left, Up, Down, Page Up, Page Down, Home, End, Tab, Space Bar, Clear, F1, ..., F20, A, ..., Z, Bar, Backslash" | split: ", " -%}
+{% assign keys = "Menu, Hyper, Meta, Windows, Command, Super, Fn, AltGr, Ctrl, Ctlcmd, Alt, Option, Shift, Num Lock, Caps Lock, Scroll Lock, Print Screen, Eject, Enter, Enter2, Backspace, Delete, Insert, Esc, Right, Left, Up, Down, Page Up, Page Down, Home, End, Tab, Space Bar, Clear, F1, ..., F20, A, ..., Z, Bar, Backslash" | split: ", " -%}
 {::nomarkdown}
 <table>
   <tr>

@@ -10,13 +10,26 @@ Draw the Unicode symbol you want    -- https://shapecatcher.com/
 {%- for key in keys -%}
   {%- assign code = key | capitalize | remove: " " | remove: "-" | strip -%}
 
+  {%- capture tooltip -%}
+    {%- case code -%}
+      {%- when "Ctlcmd", "Ctrlcmd"              -%}
+<span class="ctlcmd" >
+  <span><kbd class="key">&#8963; Ctrl</kbd></span>
+  <span>on a PC</span>
+  <span><kbd class="key">&#8984; command</kbd></span>
+  <span>on a Mac</span>
+</span>
+    {%- endcase -%}
+  {%- endcapture -%}
+
   {%- capture label -%}
     {%- case code -%}
       {%- when "Win"                            -%} Windows
       {%- when "Cmd"                            -%} Command
       {%- when "Function"                       -%} Fn
       {%- when "Altgraph", "Altgr"              -%} AltGr
-      {%- when "Control", "Ctl"                 -%} Ctrl
+      {%- when "Control", "Ctl",                -%} Ctrl
+      {%- when "Ctrlcmd", "Ctlcmd"              -%} &#8963; &#67;trl / &#8984;
       {%- when "Opt"                            -%} Option
       {%- when "Numlock", "Numlk"               -%} Num Lock
       {%- when "Capslock", "Caps"               -%} Caps Lock
@@ -130,11 +143,19 @@ Draw the Unicode symbol you want    -- https://shapecatcher.com/
     {%- endcase -%}
   {%- endif -%}
 
-  {%- unless forloop.first -%}{{chain}}{%- endunless -%}
-  {%- if image == '' -%}
-    <kbd class="key">{{ glyph | append: " " | append: label | strip }}</kbd>
+  {%- unless forloop.first %}{{chain}}{% endunless -%}
+  {%- capture result -%}
+    {%- if image == '' -%}
+      <kbd class="key">{{ glyph | append: " " | append: label | strip }}</kbd>
+    {%- else -%}
+      <span class="key"><img src="{{image}}"> {{ label | strip }}</span>
+    {%- endif -%}
+  {%- endcapture -%}
+
+  {%- if tooltip == '' -%}
+    {{- result -}}
   {%- else -%}
-    <span class="key"><img src="{{image}}"> {{label}}</span>
+    {%- include tooltip text=result tooltip=tooltip style='padding-bottom: 4px' -%}
   {%- endif -%}
 {%- endfor -%}
 
