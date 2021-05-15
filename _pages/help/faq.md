@@ -38,9 +38,9 @@ See the [MacOS](/platforms/macos) page.
 
 See the [MacOS](/platforms/macos) page.
 
-## How do I set run ImageJ with JavaFX support on macOS?
+## How do I run ImageJ with JavaFX support on macOS?
 
-Whether JavaFx is supported on macOS depends on the version of java that is used. You can check the version of java packaged with ImageJ by right-clicking the app and viewing the contents. Then go into the java/macos folder. Versions of java from oracle typically starting with jdk1.8.0 will support JavaFX. However, if you see the default upon installation, adoptopenjdk-8.jdk, in this folder you will not have JavaFX support. In this case, you can add java support by replacing this will the Azul jdk that come with JavaFX included as described [here](https://forum.image.sc/t/feedback-needed-bundled-java-future-directions/44030/17). 
+Whether JavaFx is supported on macOS depends on the version of java that is used. You can check the version of java packaged with ImageJ or Fiji by right-clicking the app and viewing the contents. Then go into the java/macos folder. Versions of java starting with jdk1.8.0 should support JavaFX. However, if you see the default upon installation, adoptopenjdk-8.jdk, you will not have JavaFX support. In this case, you can add JavaFX support by replacing this will the Azul jdk that comes with JavaFX included as described [here](https://forum.image.sc/t/feedback-needed-bundled-java-future-directions/44030/17). 
 
 Can you check if you have JavaFX installed using the Plugins>Utilities>Find Jar for Class and searching for javafx.scene.Scene. If you can't fine this class then you don't have javafx installed.
 
