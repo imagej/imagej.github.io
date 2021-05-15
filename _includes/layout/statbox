@@ -204,7 +204,7 @@ https://forum.image.sc/u/{{forum}}
 {%- endcapture -%}
 {%- endif -%}
 
-{%- if image or name or affiliation or website or
+{%- if name or affiliation or website or
        artifact or repository or project or source-label or license-url or
        release-url or release-date or dev-status or support-status or team or
        forum or person-developer or person-social or person-publication -%}
