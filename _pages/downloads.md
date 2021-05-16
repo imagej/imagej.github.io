@@ -30,14 +30,14 @@ These downloads bundle ImageJ with a curated collection of plugins pre-installed
 
 <div style="float: left; padding: 1em; text-align:center; font-size:1.5em" markdown="1">
 
-<a href="/software/fiji/downloads"><img src="/media/fiji-icon.png" height="96px"/></a>  
+<a href="/software/fiji/downloads"><img src="/media/icons/fiji.png" height="96px"/></a>  
 [Fiji](/software/fiji/downloads)
 
 </div>
 
 <div style="float: left; padding: 1em; text-align:center; font-size:1.5em" markdown="1">
 
-<a href="/software/bio7"><img src="/media/bio7-icon.png" height="96px"/></a>  
+<a href="/software/bio7"><img src="/media/icons/bio7.png" height="96px"/></a>  
 [Bio7](/software/bio7)
 
 </div>

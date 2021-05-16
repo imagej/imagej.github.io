@@ -25,7 +25,7 @@ To diagnose problems with ImageJ, it is often helpful to launch it in debug mode
         DEBUG=1 $HOME/ImageJ.app/ImageJ-linux64
 -   <img src="/media/osx.png" height="20"/> On macOS (from Terminal):
         DEBUG=1 /Applications/ImageJ.app/Contents/MacOS/ImageJ-macosx
--   <img src="/media/win.png" height="20"/> On Windows 64-bit:
+-   <img src="/media/icons/windows.svg" height="20"/> On Windows 64-bit:
     -   Make a copy of `ImageJ-win64.exe` called `debug.exe`
     -   Run `debug.exe`
 
@@ -57,13 +57,13 @@ There are two ways to create such a snapshot, known as a "thread dump" or "stack
 If the first method does not work, and you can reproduce the hang:
 
 1.  Launch ImageJ again, this time [from the console](#launching-imagej-from-the-console) as described above.
-    -   <img src="/media/win.png" height="20"/> On Windows, you will need to download and run [this batch file](https://raw.githubusercontent.com/imagej/imagej/master/bin/ImageJ.bat), which launches ImageJ with an attached Command Prompt window.
+    -   <img src="/media/icons/windows.svg" height="20"/> On Windows, you will need to download and run [this batch file](https://raw.githubusercontent.com/imagej/imagej/master/bin/ImageJ.bat), which launches ImageJ with an attached Command Prompt window.
 2.  Generate and copy the stack trace:
     -   <img src="/media/osx.png" height="20"/> <img src="/media/tux.png" height="20"/> On non-Windows platforms:
         1.  Press {% include key keys='Ctrl|backslash' %} in the console window to print the stack trace.
         2.  Select the stack trace by dragging with the left mouse button.
         3.  Right click and select "Copy" to copy it to the clipboard.
-    -   <img src="/media/win.png" height="20"/> On Windows:
+    -   <img src="/media/icons/windows.svg" height="20"/> On Windows:
         1.  Press {% include key keys='Ctrl|Pause' %} in the Command Prompt window to print the stack trace. (**Note:** this shortcut actually uses the [Break key](Wikipedia_Break_key))
         2.  Click the Command Prompt icon in the upper left corner of the window, and choose {% include bc path='Edit|Mark'%}.
         3.  Select the stack trace by dragging with the left mouse button.
@@ -83,7 +83,7 @@ If ImageJ {% include wikipedia title='Crash (computing)' text='crashes'%}—i.e.
 
 ### On a fresh installation
 
-<img src="/media/win.png" height="20"/> On some 32-bit Windows systems, ImageJ may initially request more memory than Windows can handle. If you launch ImageJ in debug mode (see above), and receive a message like:
+<img src="/media/icons/windows.svg" height="20"/> On some 32-bit Windows systems, ImageJ may initially request more memory than Windows can handle. If you launch ImageJ in debug mode (see above), and receive a message like:
 
     Could not reserve enough space for 1253376KB object heap
 

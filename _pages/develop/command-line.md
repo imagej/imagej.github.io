@@ -9,7 +9,7 @@ This article explains how to install and configure command line tools for use wi
 
 <div style="overflow: hidden">
 
-<tabs> <tab name="/platforms/windows"> ![ x32px](/media/win.png) **Windows**
+<tabs> <tab name="/platforms/windows"> ![ x32px](/media/icons/windows.svg) **Windows**
 
 Install [Git](/develop/git), [Maven](/develop/maven), and Java SE using [Chocolatey](https://chocolatey.org/):
 

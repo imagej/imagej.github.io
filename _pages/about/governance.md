@@ -104,7 +104,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
     </tr>
     <tr class="even">
       <td>
-        <p>{% include logo content='SciJava' %}</p>
+        <p>{% include icon name='SciJava' %}</p>
       </td>
       <td>
         <p><strong><a href="SciJava">SciJava</a></strong></p>
@@ -128,7 +128,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
     </tr>
     <tr class="odd">
       <td>
-        <p>{% include logo content='ImgLib2' %}</p>
+        <p>{% include icon name='ImgLib2' %}</p>
       </td>
       <td>
         <p><strong><a href="/libs/imglib2">ImgLib2</a></strong></p>
@@ -157,7 +157,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
     </tr>
     <tr class="even">
       <td>
-        <p>{% include logo content='ImageJ1' %}</p>
+        <p>{% include icon name='ImageJ1' %}</p>
       </td>
       <td>
         <p><strong><a href="/software/imagej1">ImageJ1</a></strong></p>
@@ -181,7 +181,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
     </tr>
     <tr class="odd">
       <td>
-        <p>{% include logo content='ImageJ2' %}</p>
+        <p>{% include icon name='ImageJ2' %}</p>
       </td>
       <td>
         <p><strong><a href="/software/imagej2">ImageJ2</a></strong></p>
@@ -205,7 +205,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
     </tr>
     <tr class="even">
       <td>
-        <p>{% include logo content='SCIFIO' %}</p>
+        <p>{% include icon name='SCIFIO' %}</p>
       </td>
       <td>
         <p><strong><a href="/libs/scifio">SCIFIO</a></strong></p>
@@ -230,7 +230,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
     </tr>
     <tr class="odd">
       <td rowspan="3" style="vertical-align: middle">
-        <p>{% include logo content='Fiji' %}</p>
+        <p>{% include icon name='Fiji' %}</p>
       </td>
       <td>
         <p><strong><a href="/software/fiji">Fiji</a></strong></p>
@@ -301,7 +301,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
     </tr>
     <tr class="even">
       <td>
-        <p>{% include logo content='SLIM Curve' %}</p>
+        <p>{% include icon name='SLIM Curve' %}</p>
       </td>
       <td>
         <p><strong><a href="/plugins/slim-curve">SLIM Curve</a></strong></p>
@@ -327,7 +327,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
     </tr>
     <tr class="odd">
       <td>
-        <p>{% include logo content='Bio-Formats' %}</p>
+        <p>{% include icon name='Bio-Formats' %}</p>
       </td>
       <td>
         <p><strong><a href="/formats/bio-formats">Bio-Formats</a></strong></p>
@@ -352,7 +352,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
     </tr>
     <tr class="even">
       <td>
-        <p>{% include logo content='KNIME' %}</p>
+        <p>{% include icon name='KNIME' %}</p>
       </td>
       <td>
         <p><strong><a href="/software/knime">KNIME Image Processing</a></strong></p>
@@ -377,7 +377,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
     </tr>
     <tr class="odd">
       <td>
-        <p>{% include logo content='CellProfiler' %}</p>
+        <p>{% include icon name='CellProfiler' %}</p>
       </td>
       <td>
         <p><strong><a href="/software/cellprofiler">CellProfiler</a></strong></p>
@@ -401,7 +401,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
     </tr>
     <tr class="even">
       <td>
-        <p>{% include logo content='OMERO' %}</p>
+        <p>{% include icon name='OMERO' %}</p>
       </td>
       <td>
         <p><strong><a href="/software/omero">OMERO</a></strong></p>
@@ -429,7 +429,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
     </tr>
     <tr class="odd">
       <td>
-        <p>{% include logo content='Icy' %}</p>
+        <p>{% include icon name='Icy' %}</p>
       </td>
       <td>
         <p><strong><a href="/software/icy">Icy</a></strong></p>
@@ -456,7 +456,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
     </tr>
     <tr class="even">
       <td>
-        <p>{% include logo content='Alida' %}</p>
+        <p>{% include icon name='Alida' %}</p>
       </td>
       <td>
         <p><strong><a href="/software/alida">Alida</a></strong></p>
@@ -482,7 +482,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
     </tr>
     <tr class="odd">
       <td>
-        <p>{% include logo content='MiToBo' %}</p>
+        <p>{% include icon name='MiToBo' %}</p>
       </td>
       <td>
         <p><strong><a href="/plugins/mitobo">MiToBo</a></strong></p>

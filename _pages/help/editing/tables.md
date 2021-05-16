@@ -45,11 +45,11 @@ A table with images, use the .image.table to make it align with text:
 ### Example
 ```
 | :---: | :---: |
-|![Plugins](/media/icons/plugins_icon.png){: .image.table} | A powerful mechanism for extending ImageJ in all kinds of useful ways.
-| ![Extend](/media/icons/extend_icon.png){: .image.table} | Automated, reproducible workflows via scripts and macros, including headless on a remote server or cluster. |
+|![Plugins](/media/help/plugins.png){: .image.table} | A powerful mechanism for extending ImageJ in all kinds of useful ways.
+| ![Extend](/media/help/extend.png){: .image.table} | Automated, reproducible workflows via scripts and macros, including headless on a remote server or cluster. |
 ```
 produces:
 
 | :---: | :---: |
-|![Plugins](/media/icons/plugins_icon.png){: .image.table} | A powerful mechanism for extending ImageJ in all kinds of useful ways.
-| ![Extend](/media/icons/extend_icon.png){: .image.table} | Automated, reproducible workflows via scripts and macros, including headless on a remote server or cluster. |
+|![Plugins](/media/help/plugins.png){: .image.table} | A powerful mechanism for extending ImageJ in all kinds of useful ways.
+| ![Extend](/media/help/extend.png){: .image.table} | Automated, reproducible workflows via scripts and macros, including headless on a remote server or cluster. |

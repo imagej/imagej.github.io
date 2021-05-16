@@ -101,7 +101,7 @@ All components in these organizations use [Maven](/develop/maven) for [project m
     </tr>
     <tr class="even">
       <td>
-        <p>{% include logo content='SciJava' %}</p>
+        <p>{% include icon name='SciJava' %}</p>
       </td>
       <td>
         <p><a href="SciJava">SciJava</a></p>
@@ -115,7 +115,7 @@ All components in these organizations use [Maven](/develop/maven) for [project m
     </tr>
     <tr class="odd">
       <td>
-        <p>{% include logo content='ImageJ2' %}</p>
+        <p>{% include icon name='ImageJ2' %}</p>
       </td>
       <td>
         <p><a href="/about">ImageJ</a></p>
@@ -129,7 +129,7 @@ All components in these organizations use [Maven](/develop/maven) for [project m
     </tr>
     <tr class="even">
       <td>
-        <p>{% include logo content='ImgLib2' %}</p>
+        <p>{% include icon name='ImgLib2' %}</p>
       </td>
       <td>
         <p><a href="/libs/imglib2">ImgLib2</a></p>
@@ -143,7 +143,7 @@ All components in these organizations use [Maven](/develop/maven) for [project m
     </tr>
     <tr class="odd">
       <td>
-        <p>{% include logo content='SCIFIO' %}</p>
+        <p>{% include icon name='SCIFIO' %}</p>
       </td>
       <td>
         <p><a href="/libs/scifio">SCIFIO</a></p>
@@ -157,7 +157,7 @@ All components in these organizations use [Maven](/develop/maven) for [project m
     </tr>
     <tr class="even">
       <td rowspan="3" style="vertical-align: middle">
-        <p>{% include logo content='Fiji' %}</p>
+        <p>{% include icon name='Fiji' %}</p>
       </td>
       <td>
         <p><a href="/software/fiji">Fiji</a></p>

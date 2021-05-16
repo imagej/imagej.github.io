@@ -31,7 +31,7 @@ adjustment for other versions.
 <div style="overflow: hidden">
 
 <tabs>
-<tab name="/platforms/windows"> ![ x32px](/media/win.png) **Windows**
+<tab name="/platforms/windows"> ![ x32px](/media/icons/windows.svg) **Windows**
 
 **Avoid permissions issues.** We recommend installing Eclipse *outside* of the `Program Files` directory. E.g.: `C:\Users\frood\Programs\eclipse`, where `C:\Users\frood` is your user directory.
 

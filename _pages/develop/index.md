@@ -50,7 +50,7 @@ public void loadAndDisplay(File file) {
     </tr>
     <tr class="even">
       <td style="padding: 15px 0 30px 45px;">
-        <p><a href="SciJava"><img src="/media/scijava-logo.png" height="72px"></a></p>
+        <p><a href="SciJava"><img src="/media/logos/scijava.png" height="72px"></a></p>
       </td>
     </tr>
     <tr class="odd">
@@ -77,7 +77,7 @@ ImageJ is divided into three parts:
   <thead>
     <tr class="header">
       <th style="font-size: 56px; width: 350px">
-        <p>{% include logo content='ImageJ' size='72px' %}<a href="/about">ImageJ</a></p>
+        <p>{% include icon name='ImageJ' size='72px' %}<a href="/about">ImageJ</a></p>
       </th>
       <th></th>
     </tr>
@@ -109,10 +109,10 @@ ImageJ is divided into three parts:
     </tr>
     <tr class="even">
       <td style="font-size: 56px; bold">
-        <p>{% include logo content='ImgLib2' size='72px' %}<a href="/libs/imglib2">ImgLib2</a></p>
+        <p>{% include icon name='ImgLib2' size='72px' %}<a href="/libs/imglib2">ImgLib2</a></p>
       </td>
       <td style="width: 350px;">
-        <p><a href="SciJava"><img src="/media/scijava-logo.png" height="72px"></a></p>
+        <p><a href="SciJava"><img src="/media/logos/scijava.png" height="72px"></a></p>
       </td>
     </tr>
     <tr class="odd">
@@ -152,7 +152,7 @@ There are four indispensable software development tools on which ImageJ relies:
   <tbody>
     <tr class="odd">
       <td style="vertical-align: middle">
-        <p>{% include logo content='GitHub' %}</p>
+        <p>{% include icon name='GitHub' %}</p>
       </td>
       <td>
         <p><a href="/develop/github">GitHub</a></p>
@@ -163,7 +163,7 @@ There are four indispensable software development tools on which ImageJ relies:
     </tr>
     <tr class="even">
       <td>
-        <p>{% include logo content='Git' %}</p>
+        <p>{% include icon name='Git' %}</p>
       </td>
       <td>
         <p><a href="/develop/git">Git</a></p>
@@ -174,7 +174,7 @@ There are four indispensable software development tools on which ImageJ relies:
     </tr>
     <tr class="odd">
       <td>
-        <p>{% include logo content='Maven' %}</p>
+        <p>{% include icon name='Maven' %}</p>
       </td>
       <td>
         <p><a href="/develop/maven">Maven</a></p>
@@ -185,7 +185,7 @@ There are four indispensable software development tools on which ImageJ relies:
     </tr>
     <tr class="even">
       <td>
-        <p>{% include logo content='Eclipse' %}</p>
+        <p>{% include icon name='Eclipse' %}</p>
       </td>
       <td>
         <p><a href="/develop/eclipse">Eclipse</a></p>

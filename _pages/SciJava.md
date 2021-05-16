@@ -8,7 +8,7 @@ categories: [development]
 {% capture maintainer%}
 {% include person id='ctrueden' %}
 {% endcapture %}
-{% include info-box name='SciJava' software='SciJava' logo='<img src="/media/scijava-logo.png" width="128"/>' author=' [SciJava consortium](https://scijava.org/)' maintainer=maintainer source=' [on GitHub](https://github.com/scijava)' status='Active' website='https://scijava.org/' %}SciJava is a collaboration of projects providing software for scientific computing—an effort to cooperate and reuse code when feasible.
+{% include info-box name='SciJava' software='SciJava' logo='<img src="/media/logos/scijava.png" width="128"/>' author=' [SciJava consortium](https://scijava.org/)' maintainer=maintainer source=' [on GitHub](https://github.com/scijava)' status='Active' website='https://scijava.org/' %}SciJava is a collaboration of projects providing software for scientific computing—an effort to cooperate and reuse code when feasible.
 
 ## The SciJava component collection
 
@@ -34,44 +34,44 @@ The following projects are part of the **[SciJava pledge](Category_SciJava)** to
   <tbody>
     <tr class="odd">
       <td style="text-align: center; vertical-align: middle">
-        <p>{% include logo content='ImageJ2' %}</p>
+        <p>{% include icon name='ImageJ2' %}</p>
       </td>
       <td style="text-align: center; vertical-align: middle">
-        <p><a href="/software/cellprofiler"><img src="/media/cellprofiler-logo.png" height="64px"></a></p>
+        <p><a href="/software/cellprofiler"><img src="/media/logos/cellprofiler.png" height="64px"></a></p>
       </td>
       <td style="text-align: center; vertical-align: middle">
-        <p><a href="/software/knime"><img src="/media/knime-logo.jpg" height="54px"></a></p>
+        <p><a href="/software/knime"><img src="/media/logos/knime.jpg" height="54px"></a></p>
       </td>
       <td></td>
       <td style="text-align: center; vertical-align: middle">
-        <p><a href="/software/omero"><img src="/media/omero-logo.png" height="32px"></a></p>
+        <p><a href="/software/omero"><img src="/media/logos/omero.png" height="32px"></a></p>
       </td>
       <td style="text-align: center; vertical-align: middle">
-        <p><a href="https://github.com/scenerygraphics/scenery"><img src="/media/scenery-logo.png" height="72px"></a></p>
+        <p><a href="https://github.com/scenerygraphics/scenery"><img src="/media/logos/scenery.png" height="72px"></a></p>
       </td>
       <td></td>
     </tr>
     <tr class="even">
       <td>
-        <p>{% include logo content='Fiji' %}</p>
+        <p>{% include icon name='Fiji' %}</p>
       </td>
       <td style="text-align: center; vertical-align: middle">
-        <p><a href="/software/icy"><img src="/media/icy-logo.png" height="48px"></a></p>
+        <p><a href="/software/icy"><img src="/media/logos/icy.png" height="48px"></a></p>
       </td>
       <td style="text-align: center; vertical-align: middle">
-        <p>{% include logo content='Micro-Manager' size='48px' %}</p>
+        <p>{% include icon name='Micro-Manager' size='48px' %}</p>
       </td>
       <td style="text-align: center; vertical-align: middle">
-        <p>{% include logo content='VCell' size='48px' %}</p>
+        <p>{% include icon name='VCell' size='48px' %}</p>
       </td>
       <td style="text-align: center; vertical-align: middle">
-        <p><a href="/formats/bio-formats"><img src="/media/bio-formats-logo.png" height="28px"></a></p>
+        <p><a href="/formats/bio-formats"><img src="/media/logos/bio-formats.png" height="28px"></a></p>
       </td>
       <td style="text-align: center; vertical-align: middle">
-        <p>{% include logo content='Alida' size='48px' %}</p>
+        <p>{% include icon name='Alida' size='48px' %}</p>
       </td>
       <td style="text-align: center; vertical-align: middle">
-        <p>{% include logo content='MiToBo' size='48px' %}</p>
+        <p>{% include icon name='MiToBo' size='48px' %}</p>
       </td>
     </tr>
   </tbody>

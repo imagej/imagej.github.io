@@ -110,7 +110,7 @@ Since each project consists of many components, some may be licensed differently
     </tr>
     <tr class="even">
       <td>
-        <p><img src="/media/imagej1-icon.png" width="48"></p>
+        <p><img src="/media/icons/imagej1.png" width="48"></p>
       </td>
       <td>
         <p><strong><a href="/software/imagej1">ImageJ1</a></strong></p>
@@ -173,7 +173,7 @@ Since each project consists of many components, some may be licensed differently
     </tr>
     <tr class="even">
       <td>
-        <p><img src="/media/scijava-icon.png" width="48"></p>
+        <p><img src="/media/icons/scijava.png" width="48"></p>
       </td>
       <td>
         <p><strong><a href="SciJava">SciJava</a></strong></p>
@@ -217,7 +217,7 @@ Since each project consists of many components, some may be licensed differently
     </tr>
     <tr class="odd">
       <td>
-        <p><img src="/media/imglib2-icon.png" width="48"></p>
+        <p><img src="/media/icons/imglib2.png" width="48"></p>
       </td>
       <td>
         <p><strong><a href="/libs/imglib2">ImgLib2</a></strong></p>
@@ -231,7 +231,7 @@ Since each project consists of many components, some may be licensed differently
     </tr>
     <tr class="even">
       <td>
-        <p><img src="/media/imagej2-icon.png" width="48"></p>
+        <p><img src="/media/icons/imagej.png" width="48"></p>
       </td>
       <td>
         <p><strong><a href="/software/imagej2">ImageJ2</a></strong></p>
@@ -245,7 +245,7 @@ Since each project consists of many components, some may be licensed differently
     </tr>
     <tr class="odd">
       <td>
-        <p><img src="/media/scifio-icon.png" width="48"></p>
+        <p><img src="/media/icons/scifio.png" width="48"></p>
       </td>
       <td>
         <p><strong><a href="/libs/scifio">SCIFIO</a></strong></p>
@@ -277,7 +277,7 @@ Since each project consists of many components, some may be licensed differently
     </tr>
     <tr class="odd">
       <td>
-        <p><img src="/media/fiji-icon.png" width="48"></p>
+        <p><img src="/media/icons/fiji.png" width="48"></p>
       </td>
       <td>
         <p><strong><a href="/software/fiji">Fiji</a></strong></p>
@@ -360,7 +360,7 @@ Since each project consists of many components, some may be licensed differently
     </tr>
     <tr class="odd">
       <td>
-        <p><img src="/media/cellprofiler-icon.png" width="48"></p>
+        <p><img src="/media/icons/cellprofiler.png" width="48"></p>
       </td>
       <td>
         <p><strong><a href="/software/cellprofiler">CellProfiler</a></strong></p>
@@ -404,7 +404,7 @@ Since each project consists of many components, some may be licensed differently
     </tr>
     <tr class="even">
       <td>
-        <p><img src="/media/bio-formats-icon.png" width="48"></p>
+        <p><img src="/media/icons/bio-formats.png" width="48"></p>
       </td>
       <td>
         <p><strong><a href="/formats/bio-formats">Bio-Formats</a></strong></p>
@@ -449,7 +449,7 @@ Since each project consists of many components, some may be licensed differently
     </tr>
     <tr class="odd">
       <td>
-        <p><img src="/media/omero-icon.png" width="48"></p>
+        <p><img src="/media/icons/omero.png" width="48"></p>
       </td>
       <td>
         <p><strong><a href="/software/omero">OMERO</a></strong></p>
@@ -461,7 +461,7 @@ Since each project consists of many components, some may be licensed differently
     </tr>
     <tr class="even">
       <td>
-        <p><img src="/media/knime-icon.png" width="48"></p>
+        <p><img src="/media/icons/knime.png" width="48"></p>
       </td>
       <td>
         <p><strong><a href="/software/knime">KNIME</a></strong></p>

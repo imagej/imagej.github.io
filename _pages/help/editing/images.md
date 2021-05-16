@@ -201,7 +201,7 @@ Or centered.
 /media/site/pic02.jpg | Example 2
 /media/site/pic03.jpg | Example 3
 /media/site/pic04.jpg | Example 4
-/media/imagej2-icon.png | ImageJ!
+/media/icons/imagej.png | ImageJ!
 "
 %}
 ```
@@ -213,6 +213,6 @@ Or centered.
 /media/site/pic02.jpg | Example 2
 /media/site/pic03.jpg | Example 3
 /media/site/pic04.jpg | Example 4
-/media/imagej2-icon.png | ImageJ!
+/media/icons/imagej.png | ImageJ!
 "
 %}

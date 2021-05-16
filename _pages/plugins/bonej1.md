@@ -16,7 +16,7 @@ categories: [Plugins,Citable]
 {% capture source%}
 {% include github org='mdoube' repo='BoneJ' %}
 {% endcapture %}
-{% include info-box name='BoneJ 1.x' software='ImageJ' logo='<img src="/media/bonej-icon.png" width="96"/>' author=author maintainer=maintainer source=source status='Legacy' website='http://bonej.org/legacy' %}BoneJ is a plugin for bone image analysis in [ImageJ](/about). It provides free, open source tools for trabecular geometry and whole bone shape analysis.
+{% include info-box name='BoneJ 1.x' software='ImageJ' logo='<img src="/media/icons/bonej.png" width="96"/>' author=author maintainer=maintainer source=source status='Legacy' website='http://bonej.org/legacy' %}BoneJ is a plugin for bone image analysis in [ImageJ](/about). It provides free, open source tools for trabecular geometry and whole bone shape analysis.
 
 ## Current release ([BoneJ2](/plugins/bonej))
 
@@ -24,9 +24,9 @@ There's a new modernized version of BoneJ available through the ImageJ [updater]
 
 ## Legacy (BoneJ v1.x) Installation
 
-{% include logo content='ImageJ1' size='24px' %} BoneJ was originally designed to work with plain [ImageJ 1.x](/software/imagej1).
+{% include icon name='ImageJ1' size='24px' %} BoneJ was originally designed to work with plain [ImageJ 1.x](/software/imagej1).
 
-{% include logo content='Fiji' size='24px' %} BoneJ can be installed into [Fiji](/software/fiji), but you must **use the Java-6 version of Fiji, not the current Java-8 version**:
+{% include icon name='Fiji' size='24px' %} BoneJ can be installed into [Fiji](/software/fiji), but you must **use the Java-6 version of Fiji, not the current Java-8 version**:
 
 -   Download the final Java-6 version of Fiji labeled "2017 May 30" from [here](/software/fiji/downloads#java-6).
 -   Unpack it somewhere beneath your home folder.

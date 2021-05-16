@@ -45,7 +45,7 @@
 {% if include.logo %}
 <p markdown="1">{{include.logo}}</p>
 {% else %}
-<p><img src="/media/icons/40px-Information-sign.png"></p>
+<p><img src="/media/icons/info.png"></p>
 {% endif %}
 {% endcapture %}
 

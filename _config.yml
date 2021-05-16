@@ -29,7 +29,7 @@ defaults:
       path: "_pages/plugins"
       type: pages
     values:
-      icon: /media/icons/default.png
+      icon: /media/icons/plugin.png
   -
     scope:
       path: "_pages/formats"

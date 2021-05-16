@@ -1,5 +1,5 @@
 <section id="top-bar">
-  <a href="/"><img id="site-logo" src="/assets/images/logo.png"></a>
+  <a href="/"><img id="site-logo" src="/media/icons/imagej-flat.png"></a>
   <div id="search-panel">
     <div id="search-box"></div>
   </div>

@@ -1,7 +1,7 @@
 {% assign input = include.content |  split: "|" %}
 {% assign name = input[0] %}
 {% if name == "ImageJ" %}
-{% assign img = "Imagej2-icon.png" %}
+{% assign icon = "imagej.png" %}
 {% assign text = "This page " %}
 {% if input[1] %}
 {% assign text = text | append: input[1] %}
@@ -11,7 +11,7 @@
 {% assign text = text | append: " the core ImageJ distribution. Click the logo for details." %}
 {% endif %}
 {% if name == "ImageJ1" %}
-{% assign img = "Imagej1-icon.png" %}
+{% assign icon = "imagej1.png" %}
 {% assign text = "This page " %}
 {% if input[1] %}
 {% assign text = text | append: input[1] %}
@@ -21,7 +21,7 @@
 {% assign text = text | append: " the legacy ImageJ 1.x application. Click the logo for details." %}
 {% endif %}
 {% if name == "Fiji" %}
-{% assign img = "Fiji-icon.png" %}
+{% assign icon = "fiji.png" %}
 {% assign text = "This page " %}
 {% if input[1] %}
 {% assign text = text | append: input[1] %}
@@ -31,7 +31,7 @@
 {% assign text = text | append: " the Fiji distribution of ImageJ. Click the logo for details." %}
 {% endif %}
 {% if name == "ImgLib2" %}
-{% assign img = "Imglib2-icon.png" %}
+{% assign icon = "imglib2.png" %}
 {% assign text = "This page " %}
 {% if input[1] %}
 {% assign text = text | append: input[1] %}
@@ -41,7 +41,7 @@
 {% assign text = text | append: " the ImgLib2 multidimensional image processing library. Click the logo for details." %}
 {% endif %}
 {% if name == "SCIFIO" %}
-{% assign img = "Scifio-icon.png" %}
+{% assign icon = "scifio.png" %}
 {% assign text = "This page " %}
 {% if input[1] %}
 {% assign text = text | append: input[1] %}
@@ -51,7 +51,7 @@
 {% assign text = text | append: " the SCIFIO library for scientific image I/O. Click the logo for details." %}
 {% endif %}
 {% if name == "SciJava" %}
-{% assign img = "Scijava-icon.png" %}
+{% assign icon = "scijava.png" %}
 {% assign text = "This page " %}
 {% if input[1] %}
 {% assign text = text | append: input[1] %}
@@ -62,7 +62,7 @@
 {% endif %}
 <div class="project-info" style="float: left;">
 <span markdown="1" class="project-logo" style="border-radius: .75em; box-shadow: 4px 4px 4px #ccc; padding: 3px; border: 1px solid #ccc; background-color: white;">
-[![{{text}}](/images/pages/{{img}})]({{name}})
+[![{{text}}](/media/icons/{{icon}})]({{name}})
 </span>
 </div>
 

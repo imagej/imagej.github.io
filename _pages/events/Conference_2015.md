@@ -153,22 +153,22 @@ Abstract submissions were reviewed by the conference advisory committee:
 <tr>
 <td style="padding-top: 10px">
 
-![ x100px \| top \| link=LOCI](/media/loci-logo.png)
+![ x100px \| top \| link=LOCI](/media/logos/loci.png)
 
 </td>
 <td style="padding-left: 30px; padding-top: 0">
 
-![ x90px \| top \| link=http://wisc.edu/](/media/uw-logo.png)
+![ x90px \| top \| link=http://wisc.edu/](/media/logos/uw.png)
 
 </td>
 <td style="padding-left: 30px; padding-top: 0">
 
-![ x80px \| top \| link=http://www.list.lu/](/media/list-logo.jpg)
+![ x80px \| top \| link=http://www.list.lu/](/media/logos/list.jpg)
 
 </td>
 <td style="padding-left: 30px">
 
-![ x80px \| top \| link=http://morgridge.wisc.edu/](/media/morgridge-logo.jpg)
+![ x80px \| top \| link=http://morgridge.wisc.edu/](/media/logos/morgridge.jpg)
 
 </td>
 </tr>

@@ -30,7 +30,7 @@ categories: [community]
 </div>
 
 <div style="padding-right: 1em" markdown=1>
-### {% include logo content='ImageJ' size='32px' %}[ImageJ](/about)
+### {% include icon name='ImageJ' size='32px' %}[ImageJ](/about)
 
 -   {% include person id='rasband' %}<sup>9</sup> (lead, [ImageJ 1.x](/software/imagej1))
 -   {% include person id='ctrueden' %}<sup>1</sup> (lead, [ImageJ2](/software/imagej2))
@@ -48,7 +48,7 @@ categories: [community]
 </div>
 
 <div style="padding-right: 1em" markdown=1>
-### {% include logo content='Fiji' size='32px' %}[Fiji](/software/fiji)
+### {% include icon name='Fiji' size='32px' %}[Fiji](/software/fiji)
 
 -   {% include person id='ctrueden' %}<sup>1</sup> (lead)
 -   {% include person id='tinevez' %}<sup>12</sup>
@@ -70,13 +70,13 @@ categories: [community]
 </div>
 
 <div style="padding-right: 1em" markdown=1>
-### {% include logo content='ImgLib2' size='32px' %}[ImgLib2](/libs/imglib2)
+### {% include icon name='ImgLib2' size='32px' %}[ImgLib2](/libs/imglib2)
 
 -   {% include person id='tpietzsch' %}<sup>2,3</sup> (lead)
 -   {% include person id='StephanPreibisch' %}<sup>2,21</sup>
 -   {% include person id='axtimwalde' %}<sup>2,21</sup>
 
-### {% include logo content='SCIFIO' size='32px' %}[SCIFIO](/libs/scifio)
+### {% include icon name='SCIFIO' size='32px' %}[SCIFIO](/libs/scifio)
 
 -   {% include person id='ctrueden' %}<sup>1</sup> (co-lead)
 -   {% include person id='hinerm' %}<sup>1</sup> (co-lead)
@@ -93,7 +93,7 @@ categories: [community]
 </div>
 
 <div style="padding-right: 1em" markdown=1>
-### {% include logo content='KNIME' size='32px' %}[KNIME Image Processing](/software/knime)
+### {% include icon name='KNIME' size='32px' %}[KNIME Image Processing](/software/knime)
 
 -   {% include person id='dietzc' %}<sup>5,6</sup> (lead)
 -   {% include person id='hornm' %}<sup>6</sup>
@@ -103,12 +103,12 @@ categories: [community]
 </div>
 
 <div style="padding-right: 1em" markdown=1>
-### {% include logo content='CellProfiler' size='32px' %}[CellProfiler](/software/cellprofiler)
+### {% include icon name='CellProfiler' size='32px' %}[CellProfiler](/software/cellprofiler)
 
 -   {% include person id='0x00b1' %}<sup>4</sup> (lead)
 -   {% include person id='LeeKamentsky' %}<sup>4</sup> (former)
 
-### {% include logo content='OME' size='32px' %}[OME](/software/omero)
+### {% include icon name='OME' size='32px' %}[OME](/software/omero)
 
 -   {% include person id='joshmoore' %}<sup>7,8</sup> (co-lead)
 -   {% include person id='jburel' %}<sup>8</sup> (co-lead)

@@ -15,14 +15,13 @@ The source code of ImageJ is very modular; i.e., it is organized into [well-sepa
 -   Each organization contains multiple source code repositories.
 -   Each repository corresponds to one Java library (.jar file).
 
-|                                          |                                       |                                                                 |
-|------------------------------------------|---------------------------------------|-----------------------------------------------------------------|
-| **Logo**                                 | **Organization**                      | **Purpose**                                                     |
-| <img src="/media/scijava-icon.png" width="28"/> | [SciJava](https://github.com/scijava) | Common utilities, plugin infrastructure, scripting, the context |
-| <img src="/media/imagej2-icon.png" width="28"/> | [ImageJ](https://github.com/imagej)   | A general-purpose image processing application                  |
-| <img src="/media/imglib2-icon.png" width="28"/> | [ImgLib2](https://github.com/imglib)  | Generic multi-dimensional data processing                       |
-| <img src="/media/scifio-icon.png" width="28"/>  | [SCIFIO](https://github.com/scifio)   | Extensible image file I/O                                       |
-| <img src="/media/fiji-icon.png" width="28"/>    | [Fiji](https://github.com/fiji)       | A "batteries-included" distribution of ImageJ                   |
+| **Logo**                                         | **Organization**                      | **Purpose**                                                     |
+|--------------------------------------------------|---------------------------------------|-----------------------------------------------------------------|
+| <img src="/media/icons/scijava.png" width="28"/> | [SciJava](https://github.com/scijava) | Common utilities, plugin infrastructure, scripting, the context |
+| <img src="/media/icons/imagej.png" width="28"/>  | [ImageJ](https://github.com/imagej)   | A general-purpose image processing application                  |
+| <img src="/media/icons/imglib2.png" width="28"/> | [ImgLib2](https://github.com/imglib)  | Generic multi-dimensional data processing                       |
+| <img src="/media/icons/scifio.png" width="28"/>  | [SCIFIO](https://github.com/scifio)   | Extensible image file I/O                                       |
+| <img src="/media/icons/fiji.png" width="28"/>    | [Fiji](https://github.com/fiji)       | A "batteries-included" distribution of ImageJ                   |
 
 See the [Architecture](/develop/architecture) page for more information about the relationship between these projects.
 

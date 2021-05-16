@@ -50,7 +50,7 @@ Thank you for your support.
     </tr>
     <tr class="odd">
       <td>
-        <p>{% include logo content='ImageJ2' %}</p>
+        <p>{% include icon name='ImageJ2' %}</p>
       </td>
       <td>
         <p><a href="/software/imagej2">ImageJ2</a></p>
@@ -61,7 +61,7 @@ Thank you for your support.
     </tr>
     <tr class="even">
       <td>
-        <p>{% include logo content='ImageJ1' %}</p>
+        <p>{% include icon name='ImageJ1' %}</p>
       </td>
       <td>
         <p><a href="/software/imagej1">ImageJ 1.x</a></p>
@@ -79,7 +79,7 @@ Thank you for your support.
     </tr>
     <tr class="even">
       <td>
-        <p>{% include logo content='Fiji' %}</p>
+        <p>{% include icon name='Fiji' %}</p>
       </td>
       <td>
         <p><a href="/software/fiji">Fiji</a></p>
@@ -90,7 +90,7 @@ Thank you for your support.
     </tr>
     <tr class="odd">
       <td>
-        <p>{% include logo content='BoneJ' %}</p>
+        <p>{% include icon name='BoneJ' %}</p>
       </td>
       <td>
         <p><a href="/plugins/bonej">BoneJ</a></p>
@@ -101,7 +101,7 @@ Thank you for your support.
     </tr>
     <tr class="even">
       <td>
-        <p>{% include logo content='Bio7' %}</p>
+        <p>{% include icon name='Bio7' %}</p>
       </td>
       <td>
         <p><a href="/software/bio7">Bio7</a></p>
@@ -119,7 +119,7 @@ Thank you for your support.
     </tr>
     <tr class="even">
       <td>
-        <p>{% include logo content='ImgLib2' %}</p>
+        <p>{% include icon name='ImgLib2' %}</p>
       </td>
       <td>
         <p><a href="/libs/imglib2">ImgLib2</a></p>
@@ -130,7 +130,7 @@ Thank you for your support.
     </tr>
     <tr class="odd">
       <td>
-        <p>{% include logo content='SciJava' %}</p>
+        <p>{% include icon name='SciJava' %}</p>
       </td>
       <td>
         <p><a href="/libs/scijava-common">SciJava Common</a></p>
@@ -141,7 +141,7 @@ Thank you for your support.
     </tr>
     <tr class="even">
       <td>
-        <p>{% include logo content='SCIFIO' %}</p>
+        <p>{% include icon name='SCIFIO' %}</p>
       </td>
       <td>
         <p><a href="/libs/scifio">SCIFIO</a></p>
@@ -152,7 +152,7 @@ Thank you for your support.
     </tr>
     <tr class="odd">
       <td>
-        <p>{% include logo content='ImageJ' %}</p>
+        <p>{% include icon name='ImageJ' %}</p>
       </td>
       <td>
         <p><a href="/libs/imagej-ops">ImageJ Ops</a></p>

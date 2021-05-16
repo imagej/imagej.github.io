@@ -104,22 +104,22 @@ Here are Life-Line versions of Fiji created after the switch to Java 8.
         <p>2017 May 30</p>
       </td>
       <td style="font-size: 12px; text-align: center">
-        <p>{% include logo content='Windows' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win64-20170530.zip' %}</p>
+        <p>{% include icon name='Windows' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win64-20170530.zip' %}</p>
       </td>
       <td style="font-size: 12px; text-align: center">
-        <p>{% include logo content='Windows' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win32-20170530.zip' %}</p>
+        <p>{% include icon name='Windows' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win32-20170530.zip' %}</p>
       </td>
       <td style="font-size: 12px; text-align: center">
-        <p>{% include logo content='MacOS' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-macosx-20170530.dmg' %}</p>
+        <p>{% include icon name='MacOS' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-macosx-20170530.dmg' %}</p>
       </td>
       <td style="font-size: 12px; text-align: center">
-        <p>{% include logo content='Linux' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-linux64-20170530.zip' %}</p>
+        <p>{% include icon name='Linux' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-linux64-20170530.zip' %}</p>
       </td>
       <td style="font-size: 12px; text-align: center">
-        <p>{% include logo content='Linux' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-linux32-20170530.zip' %}</p>
+        <p>{% include icon name='Linux' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-linux32-20170530.zip' %}</p>
       </td>
       <td style="font-size: 12px; text-align: center">
-        <p>{% include logo content='Fiji' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-nojre-20170530.zip' %}</p>
+        <p>{% include icon name='Fiji' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-nojre-20170530.zip' %}</p>
       </td>
       <td>
         <p>Just prior to a sweeping update to nearly all components.</p>
@@ -181,7 +181,7 @@ Here are Life-Line versions from before Fiji switched to Java 8.
         <p>2017 May 30</p>
       </td>
       <td style="white-space: nowrap">
-        <p>{% include logo content='Fiji' size='48px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-java6-20170530.zip' %}</p>
+        <p>{% include icon name='Fiji' size='48px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-java6-20170530.zip' %}</p>
       </td>
       <td></td>
       <td></td>
@@ -197,22 +197,22 @@ Here are Life-Line versions from before Fiji switched to Java 8.
         <p>2015 December 22</p>
       </td>
       <td style="font-size: 12px; text-align: center">
-        <p>{% include logo content='Windows' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win64-20151222.zip' %}</p>
+        <p>{% include icon name='Windows' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win64-20151222.zip' %}</p>
       </td>
       <td style="font-size: 12px; text-align: center">
-        <p>{% include logo content='Windows' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win32-20151222.zip' %}</p>
+        <p>{% include icon name='Windows' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win32-20151222.zip' %}</p>
       </td>
       <td style="font-size: 12px; text-align: center">
-        <p>{% include logo content='MacOS' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-macosx-20151222.dmg' %}</p>
+        <p>{% include icon name='MacOS' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-macosx-20151222.dmg' %}</p>
       </td>
       <td style="font-size: 12px; text-align: center">
-        <p>{% include logo content='Linux' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-linux64-20151222.zip' %}</p>
+        <p>{% include icon name='Linux' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-linux64-20151222.zip' %}</p>
       </td>
       <td style="font-size: 12px; text-align: center">
-        <p>{% include logo content='Linux' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-linux32-20151222.zip' %}</p>
+        <p>{% include icon name='Linux' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-linux32-20151222.zip' %}</p>
       </td>
       <td style="font-size: 12px; text-align: center">
-        <p>{% include logo content='Fiji' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-nojre-20151222.zip' %}</p>
+        <p>{% include icon name='Fiji' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-nojre-20151222.zip' %}</p>
       </td>
       <td style="white-space: nowrap">
         <p>Just prior to <a href="/news/2015-12-22-the-road-to-java-8">starting the transition to Java 8</a>.</p>
@@ -223,22 +223,22 @@ Here are Life-Line versions from before Fiji switched to Java 8.
         <p>2014 November 25</p>
       </td>
       <td style="font-size: 12px; text-align: center">
-        <p>{% include logo content='Windows' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win64-20141125.zip' %}</p>
+        <p>{% include icon name='Windows' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win64-20141125.zip' %}</p>
       </td>
       <td style="font-size: 12px; text-align: center">
-        <p>{% include logo content='Windows' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win32-20141125.zip' %}</p>
+        <p>{% include icon name='Windows' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win32-20141125.zip' %}</p>
       </td>
       <td style="font-size: 12px; text-align: center">
-        <p>{% include logo content='MacOS' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-macosx-20141125.dmg' %}</p>
+        <p>{% include icon name='MacOS' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-macosx-20141125.dmg' %}</p>
       </td>
       <td style="font-size: 12px; text-align: center">
-        <p>{% include logo content='Linux' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-linux64-20141125.tar.gz' %}</p>
+        <p>{% include icon name='Linux' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-linux64-20141125.tar.gz' %}</p>
       </td>
       <td style="font-size: 12px; text-align: center">
-        <p>{% include logo content='Linux' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-linux32-20141125.tar.gz' %}</p>
+        <p>{% include icon name='Linux' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-linux32-20141125.tar.gz' %}</p>
       </td>
       <td style="font-size: 12px; text-align: center">
-        <p>{% include logo content='Fiji' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-nojre-20141125.zip' %}</p>
+        <p>{% include icon name='Fiji' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-nojre-20141125.zip' %}</p>
       </td>
       <td style="white-space: nowrap">
         <p>Just prior to a <a href="https://groups.google.com/d/msg/fiji-devel/49a7q7e9g44/xuhp0nQRVnAJ">big update</a> to facilitate <a href="reproducible_builds">reproducible builds</a>.</p>
@@ -249,22 +249,22 @@ Here are Life-Line versions from before Fiji switched to Java 8.
         <p>2014 June 02</p>
       </td>
       <td style="font-size: 12px; text-align: center">
-        <p>{% include logo content='Windows' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win64-20140602.zip' %}</p>
+        <p>{% include icon name='Windows' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win64-20140602.zip' %}</p>
       </td>
       <td style="font-size: 12px; text-align: center">
-        <p>{% include logo content='Windows' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win32-20140602.zip' %}</p>
+        <p>{% include icon name='Windows' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win32-20140602.zip' %}</p>
       </td>
       <td style="font-size: 12px; text-align: center">
-        <p>{% include logo content='MacOS' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-macosx-20140602.dmg' %}</p>
+        <p>{% include icon name='MacOS' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-macosx-20140602.dmg' %}</p>
       </td>
       <td style="font-size: 12px; text-align: center">
-        <p>{% include logo content='Linux' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-linux64-20140602.tar.gz' %}</p>
+        <p>{% include icon name='Linux' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-linux64-20140602.tar.gz' %}</p>
       </td>
       <td style="font-size: 12px; text-align: center">
-        <p>{% include logo content='Linux' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-linux32-20140602.tar.gz' %}</p>
+        <p>{% include icon name='Linux' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-linux32-20140602.tar.gz' %}</p>
       </td>
       <td style="font-size: 12px; text-align: center">
-        <p>{% include logo content='Fiji' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-nojre-20140602.zip' %}</p>
+        <p>{% include icon name='Fiji' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-nojre-20140602.zip' %}</p>
       </td>
       <td style="white-space: nowrap">
         <p>Just prior to <a href="/news/2014-06-04-imagej-2-0-0-release-candidate">some big changes to ImageJ2 under the hood</a>.</p>
@@ -275,22 +275,22 @@ Here are Life-Line versions from before Fiji switched to Java 8.
         <p>2013 July 15</p>
       </td>
       <td style="font-size: 12px; text-align: center">
-        <p>{% include logo content='Windows' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win64-20130715.zip' %}</p>
+        <p>{% include icon name='Windows' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win64-20130715.zip' %}</p>
       </td>
       <td style="font-size: 12px; text-align: center">
-        <p>{% include logo content='Windows' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win32-20130715.zip' %}</p>
+        <p>{% include icon name='Windows' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-win32-20130715.zip' %}</p>
       </td>
       <td style="font-size: 12px; text-align: center">
-        <p>{% include logo content='MacOS' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-macosx-20130715.dmg' %}</p>
+        <p>{% include icon name='MacOS' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-macosx-20130715.dmg' %}</p>
       </td>
       <td style="font-size: 12px; text-align: center">
-        <p>{% include logo content='Linux' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-linux64-20130715.tar.gz' %}</p>
+        <p>{% include icon name='Linux' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-linux64-20130715.tar.gz' %}</p>
       </td>
       <td style="font-size: 12px; text-align: center">
-        <p>{% include logo content='Linux' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-linux32-20130715.tar.gz' %}</p>
+        <p>{% include icon name='Linux' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-linux32-20130715.tar.gz' %}</p>
       </td>
       <td style="font-size: 12px; text-align: center">
-        <p>{% include logo content='Fiji' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-nojre-20130715.zip' %}</p>
+        <p>{% include icon name='Fiji' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-nojre-20130715.zip' %}</p>
       </td>
       <td>
         <p>Just prior to <a href="https://groups.google.com/d/msg/fiji-devel/KpuWJ6kNgbk/XX2pR8jjam8J">extensive changes reconciling Fiji with ImageJ2</a>.</p>

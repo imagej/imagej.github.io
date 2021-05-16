@@ -4,7 +4,7 @@ title: LOCI
 
 The {% include person id='eliceiri' name='Eliceiri' %} lab, also known as the [Laboratory for Optical and Computational Instrumentation](https://eliceirilab.org/), is an interdisciplinary biophotonics laboratory at the [University of Wisconsin-Madison](https://wisc.edu/).
 
-<img src="/media/loci-logo.png" width="250">
+<img src="/media/logos/loci.png" width="250">
 
 LOCI plays a very active role in the ImageJ community:
 

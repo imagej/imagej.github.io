@@ -107,7 +107,7 @@ Draw the Unicode symbol you want    -- https://shapecatcher.com/
   {%- capture image -%}
     {%- case label -%}
       {%- comment -%}
-      {%- when "Windows"          -%} https://upload.wikimedia.org/wikipedia/commons/c/c7/Windows_logo_-_2012.png
+      {%- when "Windows"          -%} /media/icons/windows.svg
       {%- endcomment -%}
       {%- when "Left Click"       -%} https://upload.wikimedia.org/wikipedia/commons/2/27/LMB_click.svg
       {%- when "Middle Click"     -%} https://upload.wikimedia.org/wikipedia/commons/b/b6/Mouse_wheel_activate.svg

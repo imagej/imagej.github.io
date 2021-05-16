@@ -6,7 +6,7 @@ categories: [Software,SciJava,Citable]
 
 
 {% capture logo%}
-{% include logo content='KNIME' size='78px' %}
+{% include icon name='KNIME' size='78px' %}
 {% endcapture %}
 
 {% capture source%}

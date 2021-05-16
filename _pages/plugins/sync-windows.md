@@ -26,6 +26,6 @@ The command {% include bc path='Analyze | Tools | Sync Windows'%} opens a dialog
 
 Clicking on **Synchronize All** starts synchronizing all windows, clicking on **Unsynchronize All** stops synchronization.
 
-<img src="/media/sync-win.png" width="750"/>
+<img src="/media/sync-icons/windows.svg" width="750"/>
 
  
