@@ -51,7 +51,7 @@ For information on the parameters, their type, whether they are optionnal or req
 
 Image analysis workflows require the user to perform stereotypic steps: enhance signal, define and characterize region, visualize and assess results. This recurring process allows to create one function per task and to organize these functions in categories with similar roles, input and output: Format, Filter, Segment, Math, Assess.
 
-<figure><img src="/media/CIP generic pipeline.PNG" title="CIP_generic_pipeline.PNG" width="700" alt="CIP_generic_pipeline.PNG" /><figcaption aria-hidden="true">CIP_generic_pipeline.PNG</figcaption></figure>
+<figure><img src="/media/cip-generic-pipeline.png" title="CIP_generic_pipeline.PNG" width="700" alt="CIP_generic_pipeline.PNG" /><figcaption aria-hidden="true">CIP_generic_pipeline.PNG</figcaption></figure>
 
 <div align="center">
 

@@ -502,7 +502,7 @@ First, select exactly two cells in TrackScheme or in a MaMuT viewer. These two c
 
 Once you have them, go the third tab in the main GUI window, called **Actions**. This tab contains only actions, that are MaMuT commands requiring special interaction with the data. Select the `Export track stack` action in the menu, and click the **Execute** button. A dialog shows up that allow configuring the export.
 
-![](/media/Bdv-MaMuT ExportTrackStack.PNG)
+![](/media/bdv-mamut-exporttrackstack.png)
 
 The dialog that pops let you choose first the source that will be resliced, in the `Target source` menu. Here we picked the first one. There is an important gotcha with the source selection and viewer orientation. The capture always uses the source intrinsic orientation. It will always capture Z-planes of the chosen source, irrespective of the view orientation in the MaMuT viewer. So if you capture the same track with two different sources, you might have very different orientation. The `Image size` field determines the size of the data exported, in units of the radius of the first select spot. Finally, the `Dimensionality` radio button lets you chose between exporting a 3D volume or just a single slice centered on the spot. In the example above, we generated the 3D volume following the track 'A', and on the left image, generated its maximal intensity projection.
 

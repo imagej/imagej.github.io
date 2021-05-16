@@ -54,7 +54,7 @@ Input image (left) and cost image (right) for the detection of fly winf with the
     -   **Max distance between surfaces**: maximum distance in pixel between the 2 detected surfaces
     -   **Min distance between the surfaces**: minimum distance in pixel between the 2 detected surfaces
 
-![](/media/MinCostSurf gui.PNG)
+![](/media/mincostsurf-gui.png)
 
 <div align="center">
 

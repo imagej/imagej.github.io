@@ -50,7 +50,7 @@ Erosion shrinks the region in an image by a certain radius. It works both with b
     **outputImage**: the processed image.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.erode( img1 , 2 )` <img src="/media/CIP erode.PNG" title="fig:CIP_erode.PNG" width="400" alt="CIP_erode.PNG" />  
+    `img2 = cip.erode( img1 , 2 )` <img src="/media/cip-erode.png" title="fig:CIP_erode.PNG" width="400" alt="CIP_erode.PNG" />  
 <span style="font-size:115%">**Implementation**</span>  
 CIP function wraps the [imglib2 Erosion class](https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Erosion.java) from the morphology package.
 
