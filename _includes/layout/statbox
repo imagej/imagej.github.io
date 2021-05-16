@@ -75,10 +75,10 @@ the javascript only populates fields when they are empty.
 
 {%- if icon or gravatar -%}
   {%- capture image -%}
-    {%- if icon -%}
-      <img src="{{icon}}">
-    {%- elsif gravatar -%}
+    {%- if gravatar -%}
       <img src="https://gravatar.com/avatar/{{gravatar}}">
+    {%- elsif icon -%}
+      <img src="{{icon}}">
     {%- endif -%}
   {%- endcapture -%}
 {%- endif -%}
