@@ -2,7 +2,7 @@
 # This is a Sass file. Jekyll will compile it to plain CSS.
 ---
 
-$sidebarWidth: 250px;
+$sidebarWidth: 270px;
 $sidebarMargin: 12px;
 $sidebarPadding: 10px;
 $sidebarShadowSize: 4px;
@@ -20,11 +20,15 @@ $sidebarShadowSize: 4px;
 
 #left-column {
   float: left;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 #right-column {
   margin-top: -70px;
   float: right;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 /* Menus */
@@ -37,7 +41,7 @@ $sidebarShadowSize: 4px;
   text-align: center;
   font-weight: bold;
   border-bottom: 1px solid darkgray;
-  margin-bottom: 0 2em 0.5em 2em;
+  margin: 0 2em 0.5em 2em;
 }
 
 .menu ul {
@@ -95,7 +99,7 @@ $sidebarShadowSize: 4px;
 }
 
 
-$leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding - 10px;
+$leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding - 30px;
 
 #left-column .menu details > summary:after {
   left: $leftColumnArrowOffset;
