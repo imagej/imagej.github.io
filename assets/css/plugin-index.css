@@ -12,13 +12,14 @@
 .plugin-index li {
   flex-grow: 0;
   width: 33%;
-  vertical-align: middle;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  display: flex;
+  padding-bottom: 0.5em;
+  align-items: center;
 }
 
 .plugin-index a {
-  vertical-align: middle;
-  padding-bottom: 1.2em;
+  padding-left: 0.3em;
 }
