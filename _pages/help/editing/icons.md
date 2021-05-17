@@ -1,13 +1,21 @@
 ---
-title: Editing the Wiki - Logos
+title: Editing the Wiki - Icons
 section: Help:Editing the Wiki
 ---
 
-This page demonstrates how to use the `logo` include tag.
+This page demonstrates how to use the `icon` include tag.
 
 ## Usage
 
-Specify a logo icon by name.
+Specify an icon by name.
+
+{% raw %}
+```
+{% include icon name='info' %}
+```
+{% endraw %}
+
+{% include icon name='info' %}
 
 {% raw %}
 ```
@@ -49,5 +57,3 @@ You can also override the horizontal alignment:
 Alpha  
 Beta  
 Gamma
-
-See also [:Category:Logos](:Category:Logos).
