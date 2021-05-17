@@ -1,5 +1,0 @@
-`{{include.content}}`
-
-{%- comment -%}
-# vi:syntax=liquid
-{%- endcomment -%}
