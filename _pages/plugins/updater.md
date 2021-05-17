@@ -120,62 +120,6 @@ This uses the **jrunscript** executable of your Java installation to run the Jav
 
 The `bootstrap.js` script was originally intended to fix broken [Fiji](/software/fiji) installations, and was subsequently enhanced to initialize the updater in an ImageJ 1.x-only directory -- or even from a complete fresh state.
 
-## Managing a mirror of ImageJ update sites
-
-This instructions only cover the setting up of the synchronization. It does not cover the details of the actual server. The mirror can be server both via HTTP or FTP. Such configuration details are outside the scope of this.
-
--   Why would you want to do this?
-
-
-
-The main reason is if you have systems with ImageJ installed that are behind a firewall with blocked internet access. Another reason is if you have multiple systems to update and a local mirror would be faster for you (and nicer for the ImageJ servers). Yet another reason is if you are not on North America, the updater runs very slow.
-
-There is no rsync daemon to support for anonymous synchronization. If you want to keep a mirror of ImageJ update sites, please make a post on the [ImageJ Forum](http://forum.imagej.net/) to obtain an ssh account.
-
-The rough idea is to have a cronjob to run rsync on ssh. Since this needs authentication, we use a ssh key with no passphrase. We also create a system user to do all of this and limit this ssh key for this function.
-
-```
-$ sudo adduser --system fiji_mirror_sync
-$ sudo fiji_mirror_sync ssh-keygen -t rsa -b 4096 -C "Your institution"
-```
-
-These instructions are valid for Ubuntu 14.04. Other distributions may handle system users differently and may not even create a home directory for them. In such case, the ssh key can be placed in `/etc/ssh`, and the config options used with `ssh -o`.
-
-{% include file content='/home/fiji_mirror_sync/.ssh/config
-
-    Host imagej
-      Hostname code.imagej.net
-      User your_account_username
-    Host fiji
-      Hostname fiji.sc
-      User your_account_username
-      ProxyCommand  ssh code.imagej.net netcat -w 120 %h %p
-
-' %}
-
-To prepare the known hosts files:
-
-```
-$ ssh-keyscan -t rsa code.imagej.net | sudo -u fiji_mirror_sync tee -a /home/fiji_mirror_sync/.ssh/known_hosts
-$ sudo -u fiji_mirror_sync ssh imagej ssh-keyscan -t rsa fiji.sc | sudo -u fiji_mirror_sync tee -a /home/fiji_mirror_sync/.ssh/known_hosts
-```
-
-Finally set up the cronjob with 'sudo crontab -u fiji\_mirror\_sync -e'
-
-{% include file content='/var/spool/cron/...\|\|
-
-    00 06 * * * rsync -azL --delete -e ssh imagej:imagej-update-site/ /var/www/fiji_update/mirrors/imagej
-    10 06 * * * rsync -azL --delete -e ssh fiji:fiji-update-site/ /var/www/fiji_update/mirrors/fiji
-
-' %}
-
-Once the mirrors get populated, you can start using them on your ImageJ installations. Editing the URL of the existing ImageJ and Fiji update sites is not a good idea because any changes to them will be undone once the system gets internet access (it reads the original URLs from the Fiji wiki). There is a command line option to remove update-sites but it will not work for the ImageJ update site. Since there is no command-line option to disable an update site, ImageJ must be started with root permissions to do that. URLs for the new mirrors can be added with:
-
-```
-$ ImageJ-linux64 --update add-update-site Fiji_mirror url_for_your_fiji_mirror
-$ ImageJ-linux64 --update add-update-site ImageJ_mirror url_for_your_imagej_mirror
-```
-
 ## History
 
 The original updater was written in a frantic week in October 2008 in preparation for the first public [Fiji](/software/fiji) release, to be able to keep Fiji up-to-date.
