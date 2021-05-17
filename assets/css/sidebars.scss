@@ -179,3 +179,16 @@ $leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding - 3
   text-indent: 0 !important;
   letter-spacing: 0 !important;
 }
+
+/* Sticky sidebar */
+
+.sidebar {
+	position: sticky;
+    top: 1%;
+    height: 100vh;
+    overflow-y: scroll;	
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
