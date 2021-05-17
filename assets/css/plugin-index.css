@@ -10,7 +10,7 @@
 }
 
 .plugin-index li {
-  flex-grow: 1;
+  flex-grow: 0;
   width: 33%;
   vertical-align: middle;
   white-space: nowrap;
