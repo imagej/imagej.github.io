@@ -63,7 +63,7 @@ macro "Macro 3 [H]"{
 }
 ```
 
-The key defined in square bracket is case sensitive ! If a capital letter is used then the shortcut is {% include key keys="shift | <key>" %}.
+The key defined in square bracket is case sensitive ! If a capital letter is used then the shortcut is {% include key keys="shift | &lt;key&gt;" %}.
 
 ### Option 2: Save the macro(s) as a toolset
 
