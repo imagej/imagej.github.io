@@ -5,34 +5,54 @@ categories: [Plugins,Visualization,Transform,Registration,Citable]
 artifact: sc.fiji:bigwarp\_fiji
 ---
 
-Bigwarp is a tool for manual, interactive, landmark-based deformable image alignment. It uses the [BigDataViewer](/plugins/bdv) for visualization and navigation, and uses a {% include wikipedia title='Thin plate spline' text='Thin Plate Spline'%} implemented {% include github org='saalfeldlab' repo='bigwarp' label='in Java' %} to build a deformation from point correspondences.
+BigWarp is a tool for manual, interactive, landmark-based deformable image
+alignment. It uses the [BigDataViewer](/plugins/bdv) for visualization and
+navigation, and uses a
+{% include wikipedia title='Thin plate spline' text='Thin Plate Spline' %}
+implemented
+{% include github org='saalfeldlab' repo='bigwarp' label='in Java' %} to
+build a deformation from point correspondences.
 
-The interface enables landmark pair placement and displays the effects of the warp on-the-fly.
+The interface enables landmark pair placement and displays the effects of
+the warp on-the-fly.
 
 ## Installation
 
-Bigwarp comes with Fiji. You can access it via *Plugins {% include arrow%}
-BigDataViewer {% include arrow%}
-Big Warp*, or by modifying {% include github org='saalfeldlab' repo='bigwarp' path='scripts/bigwarp_fiji_demo.bsh' label='this example script' %}. If this is not visible in your installation, try updating Fiji with *Help {% include arrow%}
-Update Fiji.*
+BigWarp comes with Fiji. You can access it via
+{% include bc path="Plugins | BigDataViewer Big Warp" %}, or by modifying
+{% include github org='saalfeldlab' repo='bigwarp' path='scripts/bigwarp_fiji_demo.bsh' label='this example script' %}.
+If this is not visible in your installation, try updating Fiji with
+{% include bc path="Help Update..." %}.
 
 ## Usage
 
-Open two images in ImageJ, one *moving* and the other *target* and navigate to *Plugins {% include arrow%}
- BigDataViewer {% include arrow%}
- Big Warp.* A dialog will appear prompting selection of the moving and target images.
+Open two images in ImageJ, one *moving* and the other *target* and navigate to
+{% include bc path="Plugins | BigDataViewer | Big Warp" %}. A dialog will
+appear prompting selection of the moving and target images.
 
-Once the two image windows and one table window open, press {% include key key='Spacebar' %} to enter "landmark mode". Next, click on a point in the moving image, then click on the corresponding point in the target image. After you have a few moving-target point pairs, press {% include key key='T' %} to transform the moving image (you may need to re-navigate if the two image are very far apart: see the {% include key key='Q' %} and {% include key key='W' %} hotkeys below).
+Once the two image windows and one table window open, press
+{% include key key='Spacebar' %} to enter "landmark mode". Next, click on a
+point in the moving image, then click on the corresponding point in the target
+image. After you have a few moving-target point pairs, press
+{% include key key='T' %} to transform the moving image (you may need to
+re-navigate if the two image are very far apart: see the
+{% include key key='Q' %} and {% include key key='W' %} hotkeys below).
 
 ### Getting Help
 
-Press {% include key key='F1' %} at any time to open a help page with a listing of navigation and editing commands. For detailed help, create a post on the [image.sc forum](https://forum.image.sc/) with a bigwarp tag. Report bugs [on github](https://github.com/saalfeldlab/bigwarp/issues).
+Press {% include key key='F1' %} at any time to open a help page with a listing
+of navigation and editing commands. For detailed help, create a post on the
+[image.sc forum](https://forum.image.sc/) with a bigwarp tag. Report bugs
+[on github](https://github.com/saalfeldlab/bigwarp/issues).
 
 ### Landmark point placement and display in the viewer
 
-Landmark placements is done in *Landmark mode* which you enter by pressing {% include key key='Spacebar' %}. Users place pairs of corresponding points on the moving and target images.
+Landmark placements is done in *Landmark mode* which you enter by pressing
+{% include key key='Spacebar' %}. Users place pairs of corresponding points on
+the moving and target images.
 
-The following table shows the available commands and keystrokes for landmark placement, warping.
+The following table shows the available commands and keystrokes for landmark
+placement, warping.
 
 {::nomarkdown}
 <table>
@@ -186,7 +206,7 @@ Some changes to landmarks can be done by interacting with the landmark table.
     </tr>
     <tr class="odd">
       <td style="padding: 5px;">
-        <p>{% include key key='right-click' %} {% include arrow%} Delete</p>
+        <p>{% include key key='right-click' %} &rarr; Delete</p>
       </td>
       <td style="padding: 5px;">
         <p>Deletes a landmark pair (row in the table).</p>
@@ -194,7 +214,7 @@ Some changes to landmarks can be done by interacting with the landmark table.
     </tr>
     <tr class="even">
       <td style="padding: 5px;">
-        <p>{% include key key='right-click' %} {% include arrow%} Delete all selected</p>
+        <p>{% include key key='right-click' %} &rarr; Delete all selected</p>
       </td>
       <td style="padding: 5px;">
         <p>Deletes all selected landmark pairs (row in the table).</p>
@@ -232,7 +252,7 @@ Press {% include key key='F8' %} to bring up a transformation type selection win
 
 ### Navigation and Visualization
 
-Bigwarp inherits many image [navigation](/plugins/bdv#basic-navigation), [visualization](/plugins/bdv#adjusting-brightness-and-color), and [grouping](/plugins/bdv#grouping-sources) features with BigDataViewer, the details of which can be found on the [BigDataViewer](/plugins/bdv) page or on the help page. BigWarp specific features are documented below.
+BigWarp inherits many image [navigation](/plugins/bdv#basic-navigation), [visualization](/plugins/bdv#adjusting-brightness-and-color), and [grouping](/plugins/bdv#grouping-sources) features with BigDataViewer, the details of which can be found on the [BigDataViewer](/plugins/bdv) page or on the help page. BigWarp specific features are documented below.
 
 The following table shows the available navigation commands using the mouse:
 
@@ -460,21 +480,30 @@ The following table shows the available navigation commands using the mouse:
 </table>
 {:/}
 
-For all navigation commands you can hold {% include key key='Shift' %} to rotate and browse 10x faster, or hold {% include key key='Ctrl' %} to rotate and browse 10x slower. For example, {% include key key='Left' %} rotates by 1° clockwise, while {% include key keys='Shift|Left' %} rotates by 10°, and {% include key keys='Ctrl|Left' %} rotates by 0.1°.
+For all navigation commands you can hold {% include key key='Shift' %} to
+rotate and browse 10x faster, or hold {% include key key='Ctrl' %} to rotate
+and browse 10x slower. For example, {% include key key='Left' %} rotates by 1°
+clockwise, while {% include key keys='Shift|Left' %} rotates by 10°, and
+{% include key keys='Ctrl|Left' %} rotates by 0.1°.
 
 ### Save and load landmarks
 
-Landmarks can be exported and imported from plain text files using the drop down menu in the landmark table panel ( *File {% include arrow%}
- Export (Import) landmarks.* )
+Landmarks can be exported and imported from plain text files using the drop
+down menu in the landmark table panel
+({% include bc path="File | Export (Import) landmarks" %}).
 
 ### Export warped images
 
-Export the warped moving image by clicking *File {% include arrow%}
- &gt; Export as ImagePlus* or using the {% include key keys='Ctrl|E' %} keyboard shortcut.
+Export the warped moving image by clicking
+{% include bc path="File | Export as ImagePlus" %} or using the
+{% include key keys='Ctrl|E' %} keyboard shortcut.
 
 ![](/media/bigwarp-export.png)
 
-The default parameters will result in the exported image having the same dimensions as the target image. *Note: Take care when exporting very large data sets as they can cause out-of-memory exceptions.*
+The default parameters will result in the exported image having the same
+dimensions as the target image.
+
+{% include info-box content="Take care when exporting very large data sets as they can cause out-of-memory exceptions." %}
 
 -   Resolution
     -   Target: *The output will have the same resolution as the target image*
@@ -568,15 +597,25 @@ without quotation marks, spaces, or any other characters. Csv files storing bigw
 
 ## Working with large images
 
-The "normal" BigWarp plugin accessible through *Plugins {% include arrow%}
- Big Data Viewer {% include arrow%}
- BigWarp* works well for small- and medium-sized images but not for very large volumes (that do not fit into memory). For very large volumes, we recommend first [converting the volume to bigdataviewer's xml/hdf5 format](/plugins/bdv#exporting-datasets-for-the-bigdataviewer), then using [this script](https://raw.githubusercontent.com/saalfeldlab/bigwarp/master/scripts/BigWarp_ImagePlus_or_Xml.groovy) to run BigWarp using the xml/h5 file(s). See also [this forum post.](https://forum.image.sc/t/issue-with-big-warp/31472)
+The "normal" BigWarp plugin accessible through {% include bc path="Plugins |
+Big Data Viewer | BigWarp" %} works well for small- and medium-sized images but
+not for very large volumes (that do not fit into memory). For very large
+volumes, we recommend first
+[converting the volume to bigdataviewer's xml/hdf5 format](/plugins/bdv#exporting-datasets-for-the-bigdataviewer),
+then using
+[this script](https://raw.githubusercontent.com/saalfeldlab/bigwarp/master/scripts/BigWarp_ImagePlus_or_Xml.groovy)
+to run BigWarp using the xml/h5 file(s). See also
+[this forum post.](https://forum.image.sc/t/issue-with-big-warp/31472)
 
-[This script](https://raw.githubusercontent.com/saalfeldlab/bigwarp/master/scripts/BigWarp_N5.groovy) enables you to run BigWarp using images stored using [N5](https://github.com/saalfeldlab/n5).
+[This script](https://raw.githubusercontent.com/saalfeldlab/bigwarp/master/scripts/BigWarp_N5.groovy)
+enables you to run BigWarp using images stored using
+[N5](https://github.com/saalfeldlab/n5).
 
 # Tutorials
 
--   An example of a 2d warping by [Nicolas Chiaruttini](http://kiaru.eu/cv-rapide/) in response to [this forum post.](https://forum.image.sc/t/superimpose-atlas-image-onto-microscope-picture/20593)
+-   An example of a 2d warping by
+    [Nicolas Chiaruttini](http://kiaru.eu/cv-rapide/) in response to
+    [this forum post](https://forum.image.sc/t/superimpose-atlas-image-onto-microscope-picture/20593).
 
 {% include youtube url='https://www.youtube.com/embed/zNur6mk9VXg'%}
 

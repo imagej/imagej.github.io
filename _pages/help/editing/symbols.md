@@ -20,7 +20,4 @@ The site currently supports the following symbols as includes:
 <tr><td markdown=1>
 {% raw %}`{% include no %}`{% endraw %}
 </td><td>{% include no %}</td></tr>
-<tr><td markdown=1>
-{% raw %}`{% include arrow %}`{% endraw %}
-</td><td>{% include arrow %}</td></tr>
 </table>
