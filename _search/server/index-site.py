@@ -104,10 +104,13 @@ def create(client, documents, force=False):
     return True
 
 
-def parse_document(docroot, path):
+def parse_document(docroot, path, icons):
     debug(f'Parsing {path}...')
     with open(path) as f:
         lines = f.readlines()
+
+    if path.endswith('_config.yml'):
+        info("found config")
 
     if len(lines) == 0 or not lines[0].strip() == '---':
         # missing front matter indicator -- assume it's not a Jekyll document.
@@ -129,6 +132,16 @@ def parse_document(docroot, path):
     for key in doc:
         doc[key] = str(doc[key])
 
+    if 'icon' not in doc:
+        depth = -1
+        for key in icons.keys():
+            if key in path:
+                count = key.count('/')
+
+                if count > depth:
+                    depth = count
+                    doc['icon'] = icons[key]
+
     # Set required field values.
     doc['id'] = path[len(docroot):path.rindex('.')]
     doc['score'] = 100 # a constant value, at least for now
@@ -142,8 +155,27 @@ def parse_document(docroot, path):
 
     return doc
 
+def parse_icon_defaults(config):
+    icons = {}
+    with open(config) as f:
+        lines = f.readlines()
 
-def load_jekyll_site(docroot):
+    doc = yaml.safe_load(''.join(lines))
+
+    defaults = {}
+    if 'defaults' in doc:
+        defaults = doc['defaults']
+
+    for rule in defaults:
+        scope = rule['scope']
+        values = rule['values']
+        if scope['type'] == 'pages' and 'path' in scope and 'icon' in values:
+            icons[scope['path']] = values['icon']
+
+    return icons
+
+
+def load_jekyll_site(docroot, defaults):
     """
     Loads the Jekyll content from the given docroot folder.
     """
@@ -152,7 +184,7 @@ def load_jekyll_site(docroot):
         for name in files:
             path = os.path.join(root, name)
             try:
-                doc = parse_document(docroot, path)
+                doc = parse_document(docroot, path, defaults)
                 if doc: documents.append(doc)
             except:
                 error(f'Failed to parse {path}:')
@@ -168,13 +200,18 @@ def update_index(client, documents):
 
 
 pathname = os.path.dirname(sys.argv[0])
+config = os.path.join(pathname, '..', '..', '_config.yml')
 docroot = os.path.join(pathname, '..', '..', '_pages')
 if not os.path.isdir(docroot):
     error('Cannot find the _pages directory!')
     sys.exit(1)
 
+info('Parsing config...')
+icons = parse_icon_defaults(config)
+info('Config parsed...')
+
 info('Loading content...')
-documents = load_jekyll_site(docroot)
+documents = load_jekyll_site(docroot, icons)
 info(f'Loaded {len(documents)} documents')
 
 client = connect()
