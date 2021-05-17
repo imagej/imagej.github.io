@@ -20,10 +20,88 @@ defaults:
       layout: page
   -
     scope:
-      path: "_pages/users"
+      path: "_pages"
       type: pages
     values:
-      icon: https://upload.wikimedia.org/wikipedia/commons/9/90/Ic_person_48px.svg
+      icon: /media/icons/imagej.png
+  -
+    scope:
+      path: "_pages/about"
+      type: pages
+    values:
+      icon: https://upload.wikimedia.org/wikipedia/commons/1/18/About_icon_%28The_Noun_Project%29.svg
+  -
+    scope:
+      path: "_pages/cookbook"
+      type: pages
+    values:
+      icon: https://upload.wikimedia.org/wikipedia/commons/6/6e/Book_%2821025%29_-_The_Noun_Project.svg
+  -
+    scope:
+      path: "_pages/develop"
+      type: pages
+    values:
+      icon: https://upload.wikimedia.org/wikipedia/commons/5/55/Icon_%2880027%29_-_The_Noun_Project.svg
+  -
+    scope:
+      path: "_pages/events"
+      type: pages
+    values:
+      icon: https://upload.wikimedia.org/wikipedia/commons/c/c4/Icon_%2880022%29_-_The_Noun_Project.svg
+  -
+    scope:
+      path: "_pages/formats"
+      type: pages
+    values:
+      icon: /media/icons/plugin.png
+  -
+    scope:
+      path: "_pages/guide"
+      type: pages
+    values:
+      icon: https://upload.wikimedia.org/wikipedia/commons/6/6e/Book_%2821025%29_-_The_Noun_Project.svg
+  -
+    scope:
+      path: "_pages/help"
+      type: pages
+    values:
+      icon: https://upload.wikimedia.org/wikipedia/commons/9/92/Torchlight_help_yellow.png
+  -
+    scope:
+      path: "_pages/learn"
+      type: pages
+    values:
+      icon: https://upload.wikimedia.org/wikipedia/commons/e/ee/Knowledge_Transfer_%2827472%29_-_The_Noun_Project.svg
+  -
+    scope:
+      path: "_pages/libs"
+      type: pages
+    values:
+      icon: https://upload.wikimedia.org/wikipedia/commons/4/44/Stacked_books_silhouette.svg
+  -
+    scope:
+      path: "_pages/licensing"
+      type: pages
+    values:
+      icon: https://upload.wikimedia.org/wikipedia/commons/f/f8/CopyrightImg.svg
+  -
+    scope:
+      path: "_pages/news"
+      type: pages
+    values:
+      icon: https://upload.wikimedia.org/wikipedia/commons/9/93/News_-_The_Noun_Project.svg
+  -
+    scope:
+      path: "_pages/orgs"
+      type: pages
+    values:
+      icon: /media/icons/scijava.png
+  -
+    scope:
+      path: "_pages/platforms"
+      type: pages
+    values:
+      icon: https://upload.wikimedia.org/wikipedia/commons/0/0c/Device-computer-icon.png
   -
     scope:
       path: "_pages/plugins"
@@ -32,7 +110,43 @@ defaults:
       icon: /media/icons/plugin.png
   -
     scope:
-      path: "_pages/formats"
+      path: "_pages/sites"
+      type: pages
+    values:
+      icon: https://upload.wikimedia.org/wikipedia/commons/2/2a/Cloud_Upload_-_The_Noun_Project.svg
+  -
+    scope:
+      path: "_pages/software"
+      type: pages
+    values:
+      icon: https://upload.wikimedia.org/wikipedia/commons/9/94/Laptop_-_The_Noun_Project.svg
+  -
+    scope:
+      path: "_pages/techniques"
+      type: pages
+    values:
+      icon: https://upload.wikimedia.org/wikipedia/commons/d/de/Laboratory_-_The_Noun_Project.svg
+  -
+    scope:
+      path: "_pages/tutorials"
+      type: pages
+    values:
+      icon: https://upload.wikimedia.org/wikipedia/commons/e/ee/Knowledge_Transfer_%2827472%29_-_The_Noun_Project.svg
+  -
+    scope:
+      path: "_pages/update-sites"
+      type: pages
+    values:
+      icon: https://upload.wikimedia.org/wikipedia/commons/2/2a/Cloud_Upload_-_The_Noun_Project.svg
+  -
+    scope:
+      path: "_pages/users"
+      type: pages
+    values:
+      icon: https://upload.wikimedia.org/wikipedia/commons/9/90/Ic_person_48px.svg
+  -
+    scope:
+      path: "_pages/widgets"
       type: pages
     values:
       icon: /media/icons/plugin.png
