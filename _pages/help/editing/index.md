@@ -7,7 +7,7 @@ This page explains how to write and edit wiki pages. The simplest way to create
 or modify a page is using GitHub's online file editor. Each page has an "Edit
 page" link at the top right with a direct link to this interface.
 
-{% include tech content="Advanced users can make edits via a local installation of jekyll and a local clone of the site repository; see the [advanced editing guide](/help/editing/advanced) for setup instructions." %}
+{% include tech-box content="Advanced users can make edits via a local installation of jekyll and a local clone of the site repository; see the [advanced editing guide](/help/editing/advanced) for setup instructions." %}
 
 # Creating a new page
 

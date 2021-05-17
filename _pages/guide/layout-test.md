@@ -81,9 +81,9 @@ Press the {% include key key='L' %} key to access ImageJ"s most useful feature: 
 
 {% include warning-box content='Something critical like do not put Fiji in the Programm Files folder!' %}
 
-    {% include tech content='if necessary can be used for technical details.' %}
+    {% include tech-box content='if necessary can be used for technical details.' %}
 
-{% include tech content='if necessary can be used for technical details.' %}
+{% include tech-box content='if necessary can be used for technical details.' %}
 
     {% include fiji content='To mention Fiji specific hints!' %}
 
