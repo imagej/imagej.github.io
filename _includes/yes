@@ -1,6 +1,6 @@
 {% capture yes %}
 <center>
-<img src="/media/icons/yes.png" style="width:30px;height:30px;">
+<img src="/media/icons/yes.svg" style="width:30px;height:30px;">
 </center>
 {% endcapture %}
 {{yes}}
