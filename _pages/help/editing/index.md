@@ -15,12 +15,18 @@ Let's dive in to how to create a new page on the site.
 If you are looking to edit an existing page, skip to
 [adding and editing page content](#adding-and-editing-page-content) below.
 
-1.  Navigate to the [pages section](https://github.com/imagej/imagej.github.io/tree/main/_pages) of the repository.
-Click {% include button label="Add file" %} then  {% include button label="Create new file" %} from the drop-down:
+1.  Navigate to the
+    [pages section](https://github.com/imagej/imagej.github.io/tree/main/_pages)
+    of the repository.
+    Click {% include button label="Add file" %} then
+    {% include button label="Create new file" %} from the drop-down:
 
     {% include img align="center" name="create-page" src="/media/help/create-page-etw.png" %}
 
-2.  Add a name for your file. **Note: this is not the page title;** the page title will be applied in the next section, front matter. File names should be all lower case, use the file extension `.md`, avoid symbols and spaces, and separate words using dashes (`-`):
+2.  Add a name for your file. **Note: this is not the page title;** the page
+    title will be applied in the next section, front matter. File names should
+    be all lower case, use the file extension `.md`, avoid symbols and spaces,
+    and separate words using dashes (`-`):
 
     {% include img align="center" name="name-your-file" src="/media/help/name-your-file.png" classes="grey-border" %}
 
