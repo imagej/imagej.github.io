@@ -719,7 +719,7 @@ Feature_Extraction :: plugins/feature-extraction
 Featured_Fiji_Projects :: software/fiji/featured-projects
 FigureJ :: plugins/figurej
 Fiji :: software/fiji
-Fiji's_Menu :: software/fiji/menu
+Fiji's_Menu :: plugin-index
 Fiji.sc :: about/funding
 Fiji/Build_System :: develop
 Fiji/Cite :: about/citing
@@ -2084,7 +2084,7 @@ media/bio-formats-logo.png :: media/logos/bio-formats.png
 media/bio7-icon.png :: media/icons/bio7.png
 media/bio7-logo.jpg :: media/logos/bio7.jpg
 media/bonej-icon.png :: media/icons/bonej.png
-media/broom-icon.svg :: <DELETED>
+media/broom-icon.svg :: <DELETED> (unused)
 media/cellprofiler-icon.png :: media/icons/cellprofiler.png
 media/cellprofiler-logo.png :: media/logos/cellprofiler.png
 media/clearvolume-icon.png :: media/icons/clearvolume.png
@@ -2100,7 +2100,7 @@ media/fiji-icon.png :: media/icons/fiji.png
 media/fiji-logo-1.0-256x256.png :: media/icons/fiji.png
 media/fpb-logo.png :: media/logos/fpb.png
 media/git-icon.png :: media/icons/git.png
-media/icon-orange.png :: <DELETED>
+media/icon-orange.png :: <DELETED> (unused)
 media/icons/38px-Tech.png :: media/icons/tech.png
 media/icons/40px-Information-sign.png :: media/icons/info.png
 media/icons/40px-Scifio-icon.png :: media/icons/scifio.png
@@ -2115,20 +2115,20 @@ media/icons/extend_icon.png :: media/help/extend.png
 media/icons/fiji-logo-1.0-128x128.png :: media/icons/fiji.png
 media/icons/fiji-logo-1.0-256x256.png :: media/icons/fiji.png
 media/icons/fiji-logo-1.0.svg :: media/icons/fiji.svg
-media/icons/forum_icon.png :: <DELETED>
+media/icons/forum_icon.png :: <DELETED> (unused)
 media/icons/imagej-128.png :: media/icons/imagej.png
-media/icons/imagej_icons.svg :: <DELETED>
-media/icons/imagej_icons.svg.2020_04_30_12_07_12.0.svg <DELETED>
+media/icons/imagej_icons.svg :: <DELETED> (unused)
+media/icons/imagej_icons.svg.2020_04_30_12_07_12.0.svg <DELETED> (unused)
 media/icons/no-red-x.png :: media/icons/no.png
 media/icons/plugins_icon.png :: media/help/plugins.png
-media/icons/techniques_icon.png :: <DELETED>
+media/icons/techniques_icon.png :: <DELETED> (unused)
 media/icons/yes-green-check.png :: media/icons/yes.svg
 media/icy-icon.png :: media/icons/icy.png
 media/icy-logo.png :: media/logos/icy.png
 media/imagej-conference-logo.png :: media/logos/imagej-conference.png
 media/imagej1-icon.png :: media/icons/imagej1.png
 media/imagej1-logo.png :: media/logos/imagej1.png
-media/imagej2-download-icon.png :: <DELETED>
+media/imagej2-download-icon.png :: <DELETED> (needs update)
 media/imagej2-icon.png :: media/icons/imagej.png
 media/imagepy-icon.png :: media/icons/imagepy.png
 media/imagepy-logo.png :: media/logos/imagepy.png
@@ -2136,7 +2136,7 @@ media/imagesxm-icon.png :: media/icons/imagesxm.png
 media/imagesxm-logo.jpg :: media/logos/imagesxm.jpg
 media/imglib2-icon.png :: media/icons/imglib2.png
 media/imglib2-logo.png :: media/logos/imglib2.png
-media/inilogo.png :: <DELETED>
+media/inilogo.png :: <DELETED> (unused)
 media/isbi-logo.jpg :: media/logos/isbi.jpg
 media/itk-logo.png :: media/logos/itk.png
 media/knime-icon.png :: media/icons/knime.png
@@ -2144,7 +2144,7 @@ media/knime-logo.jpg :: media/logos/knime.jpg
 media/list-logo.jpg :: media/logos/list.jpg
 media/loci-logo.png :: media/logos/loci.png
 media/logo.png :: media/logos/traj.png
-media/logoline.jpg :: <DELETED>
+media/logoline.jpg :: <DELETED> (unused)
 media/logos/Alida-logo.jpg :: media/logos/alida.jpg
 media/logos/Bio-formats-icon.png :: media/icons/bio-formats.png
 media/logos/Bio7-icon.png :: media/icons/bio7.png
@@ -2185,7 +2185,7 @@ media/mitobo-logo.png :: media/icons/mitobo.png
 media/mm-icon.jpg :: media/icons/micro-manager.jpg
 media/morgridge-logo.jpg :: media/logos/morgridge.jpg
 media/mtracker-newlogo-04.png :: media/icons/mtrack.png
-media/newlogo.png :: <DELETED>
+media/newlogo.png :: <DELETED> (unused)
 media/nih-image-logo.png :: media/icons/nih-image.png
 media/no.svg :: media/icons/no.svg
 media/noisee-logo.png :: media/logos/noisee.png
