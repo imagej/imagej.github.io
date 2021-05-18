@@ -20,7 +20,7 @@ Expressions are delineated by `$$` tags before and after the expression.
 {% capture block-equation-result %}
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
 {% endcapture %}
-{% include example code=block-equation-code result=block-equation-result %}
+{% include code-example code=block-equation-code result=block-equation-result %}
 
 ## Inline equation example
 
@@ -31,7 +31,7 @@ to $$(ax^2 + bx + c = 0)$$.{% endraw %}
 {% capture inline-equation-result %}
 When $$a \ne 0$$ , there are two solutions to $$(ax^2 + bx + c = 0)$$.
 {% endcapture %}
-{% include example code=inline-equation-code result=inline-equation-result %}
+{% include code-example code=inline-equation-code result=inline-equation-result %}
 
 ## Further reading
 

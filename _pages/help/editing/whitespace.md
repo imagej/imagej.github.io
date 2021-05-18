@@ -19,7 +19,7 @@ What's
 How
 are you?
 {% endcapture %}
-{% include example code=default-newline-behavior %}
+{% include code-example code=default-newline-behavior %}
 
 ### Two spaces at end of line
 
@@ -27,7 +27,7 @@ are you?
 Hello  
 there
 {% endcapture %}
-{% include example code=two-spaces-eol %}
+{% include code-example code=two-spaces-eol %}
 
 NB: This is a Markdown feature; note that there is no whitespace rendered after "Hello" at the end of the line.
 
@@ -37,7 +37,7 @@ NB: This is a Markdown feature; note that there is no whitespace rendered after 
 What happens \\
 if we use backslashes?
 {% endcapture %}
-{% include example code=two-backslashes-eol %}
+{% include code-example code=two-backslashes-eol %}
 
 NB: This is a Kramdown feature; note that there is a space included after "What happens" at the end of the line, because we included one before the backslashes.
 
@@ -46,7 +46,7 @@ NB: This is a Kramdown feature; note that there is a space included after "What 
 {% capture explicit-br %}
 *Lions*<br>and **tigers**
 {% endcapture %}
-{% include example code=explicit-br %}
+{% include code-example code=explicit-br %}
 
 ## Aligning text
 
@@ -57,7 +57,7 @@ Most fonts are variable width, and so you cannot rely on the characters lining u
 | -=-=- Initializing Invincibility -=-=- |\\
 +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=+
 {% endcapture %}
-{% include example code=variable-width-misalignment %}
+{% include code-example code=variable-width-misalignment %}
 
 ### Aligning via code fences
 
@@ -70,7 +70,7 @@ If you need fixed-width font, you can use code fences:
 +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=+
 ```
 {% endcapture %}
-{% include example code=fixed-width-code-fences %}
+{% include code-example code=fixed-width-code-fences %}
 
 ### Aligning via span style
 
@@ -84,7 +84,7 @@ you can use the `style` attribute on a surrounding `<span>` element:
 +-=-=-=-=-=-=-=-=-=-=-=-=-+
 </span>
 {% endcapture %}
-{% include example code=fixed-width-span-style %}
+{% include code-example code=fixed-width-span-style %}
 
 But if you do this on a block-level HTML element such as `<div>`, you won't be able to mix in Markdown anymore:
 
@@ -96,7 +96,7 @@ What are you going to do, bleed on me?
 +-=-=-=-=-=-=-=-=-=-=-=-=-+
 </div> You're a loony.
 {% endcapture %}
-{% include example code=fixed-width-div-style-fail %}
+{% include code-example code=fixed-width-div-style-fail %}
 
 ...unless you add `markdown=1` to the element in question:
 
@@ -108,7 +108,7 @@ What are you going to do, bleed on me?
 +-=-=-=-=-=-=-=-=-=-=-=-=-+
 </div> You're a loony.
 {% endcapture %}
-{% include example code=fixed-width-block-markdown %}
+{% include code-example code=fixed-width-block-markdown %}
 
 ...or [wrap the Markdowny parts in a
 `<span markdown=1>`](/help/editing/pitfalls#markdown-inside-block-elements).
@@ -120,14 +120,14 @@ Normally, multiple spaces are squashed into one:
 {% capture multiple-spaces-squashed %}
 It's a   REALLY   big deal!
 {% endcapture %}
-{% include example code=multiple-spaces-squashed %}
+{% include code-example code=multiple-spaces-squashed %}
 
 If you want the extra spaces to stay, use HTML's `&nbsp;` code:
 
 {% capture multiple-spaces-squashed %}
 It's a &nbsp;&nbsp;&nbsp;REALLY&nbsp;&nbsp;&nbsp; big deal!
 {% endcapture %}
-{% include example code=multiple-spaces-squashed %}
+{% include code-example code=multiple-spaces-squashed %}
 
 ## Preventing lines from wrapping at whitespace
 
@@ -136,7 +136,7 @@ Normally, lines can wrap wherever there is whitespace:
 {% capture line-wrapping-at-whitespace %}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 {% endcapture %}
-{% include example code=line-wrapping-at-whitespace %}
+{% include code-example code=line-wrapping-at-whitespace %}
 
 If you don't want it to wrap at a particular place, you can use `&nbsp;` instead of a regular space, but for whole paragraphs as above, it quickly becomes tiresome. Another way is to use a styled span:
 
@@ -145,7 +145,7 @@ If you don't want it to wrap at a particular place, you can use `&nbsp;` instead
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 </span>
 {% endcapture %}
-{% include example code=suppress-whitespace-wrapping %}
+{% include code-example code=suppress-whitespace-wrapping %}
 
 ## Beware of leading whitespace
 
@@ -160,4 +160,4 @@ But if you indent 4 spaces after a blank line, watch out:
     Markdown kicks in, treating it as a block of code.
 Even if a subsequent line is not indented!
 {% endcapture %}
-{% include example code=beware-leading-whitespace %}
+{% include code-example code=beware-leading-whitespace %}

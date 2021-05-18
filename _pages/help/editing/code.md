@@ -14,7 +14,7 @@ surround the code in backtick symbols (<code>`</code>).
 {% capture inline-code-snippet %}
 Type `print('Hello world!')` and save as `hello.py`.
 {% endcapture %}
-{% include example code=inline-code-snippet %}
+{% include code-example code=inline-code-snippet %}
 
 ## Code fences
 
@@ -33,7 +33,7 @@ univ.addMesh(yourImagePlus, null, "somename", 50,
   new boolean[] {true, true, true}, 2);
 ```
 {% endcapture %}
-{% include example code=code-fence-java %}
+{% include code-example code=code-fence-java %}
 
 ### Python example
 
@@ -49,7 +49,7 @@ def update_progress(progress):
     sys.stdout.flush()
 ```
 {% endcapture %}
-{% include example code=code-fence-python %}
+{% include code-example code=code-fence-python %}
 
 ## Highlight directive
 
@@ -68,7 +68,7 @@ log.info("You're a wizard, Harry!");
 log.error("I'm a what?");
 {% endhighlight %}
 {% endcapture %}
-{% include example code=liquid-highlight-code result=liquid-highlight-result %}
+{% include code-example code=liquid-highlight-code result=liquid-highlight-result %}
 
 The `highlight` directive and code fences are separate features, but
 functionally very similar. If code fences are not working as you like,
@@ -98,7 +98,7 @@ the advantage of avoiding copy-paste skew as the code evolves over time.
      path="life.c"
      label="Conway's Obfuscated Game of Life" %}
 {% endcapture %}
-{% include example code=github-embed-code result=github-embed-result %}
+{% include code-example code=github-embed-code result=github-embed-result %}
 
 Other parameters supported by the `github-embed` include are:
 

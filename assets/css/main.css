@@ -2102,3 +2102,25 @@ div.column5 {
 .ctlcmd span:first-child {
   text-align: right;
 }
+
+/* code example */
+
+.code-example {
+	display: flex;
+}
+.code-example div:first-child {
+	max-width: 100%;
+	margin-right: 1em;
+}
+
+.code-example div:last-child {
+	max-width: 100%;
+	overflow: auto;
+	padding-right: 8px;
+}
+
+.code-example div p {
+	text-align: center;
+	font-weight: bold;
+	margin: 0.2em 0 0 0;
+}

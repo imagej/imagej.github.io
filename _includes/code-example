@@ -1,0 +1,20 @@
+{%- comment -%}
+Inserts a side-by-side example of raw code and its formatted result.
+{%- endcomment -%}
+{%- assign result = include.result | default: include.code -%}
+<div class="code-example">
+<div>
+<p>Code</p>
+{% highlight liquid %}{{include.code}}{% endhighlight %}
+</div>
+<div>
+<p>Result</p>
+<div class="shadowed-box" markdown=1>
+{{result}}
+</div>
+</div>
+</div>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}
