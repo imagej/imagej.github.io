@@ -1,6 +1,7 @@
 ---
-title: Editing the Wiki - Icons
+title: Icons
 section: Help:Editing the Wiki
+nav-links: true
 ---
 
 This page demonstrates how to use the `icon` include tag.

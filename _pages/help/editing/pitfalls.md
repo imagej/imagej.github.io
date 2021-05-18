@@ -1,6 +1,7 @@
 ---
-title: Editing the Wiki - Formatting Pitfalls
+title: Formatting Pitfalls
 section: Help:Editing the Wiki
+nav-links: true
 ---
 
 This page covers pitfalls to be aware of when writing content for the site.

@@ -1,6 +1,7 @@
 ---
-title: Editing the Wiki - Conferences
+title: Conferences
 section: Help:Editing the Wiki
+nav-links: true
 ---
 
 This page demonstrates how to insert conference information.

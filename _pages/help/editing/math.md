@@ -1,6 +1,7 @@
 ---
-title: Editing the Wiki - Math Expressions
+title: Math Expressions
 section: Help:Editing the Wiki
+nav-links: true
 ---
 
 This page demonstrates how to include mathematical expressions.

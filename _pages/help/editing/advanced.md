@@ -1,6 +1,7 @@
 ---
-title: Advanced Editing Guide
+title: Advanced Editing
 section: Help:Editing the Wiki
+nav-links: true
 ---
 
 This page describes how to install [Jekyll](https://jekyllrb.com/),

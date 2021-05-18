@@ -1,6 +1,7 @@
 ---
-title: Editing the Wiki - Keyboard Shortcuts
+title: Keyboard Shortcuts
 section: Help:Editing the Wiki
+nav-links: true
 ---
 
 The `key` include enables declaration of keyboard shortcuts in a clear way.

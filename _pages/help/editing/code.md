@@ -1,6 +1,7 @@
 ---
-title: Editing the Wiki - Source Code
+title: Source Code
 section: Help:Editing the Wiki
+nav-links: true
 ---
 
 This page describes nice ways of embedding source code in a page.

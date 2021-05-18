@@ -1,6 +1,7 @@
 ---
-title: Editing the Wiki - Tables
+title: Tables
 section: Help:Editing the Wiki
+nav-links: true
 ---
 
 This page explains how to insert a table into your page.

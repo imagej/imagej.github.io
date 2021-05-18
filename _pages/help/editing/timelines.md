@@ -1,6 +1,7 @@
 ---
-title: Editing the Wiki - Timelines
+title: Timelines
 section: Help:Editing the Wiki
+nav-links: true
 
 timeline-inventions:
 - 1910 | headset               | And future Call of Duty players would thank them.

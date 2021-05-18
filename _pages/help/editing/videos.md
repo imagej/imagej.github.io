@@ -1,6 +1,7 @@
 ---
-title: Editing the Wiki - Embedding Videos 
+title: Videos 
 section: Help:Editing the Wiki
+nav-links: true
 ---
 
 This page demonstrates how to add video embeds to your page.

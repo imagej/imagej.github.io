@@ -1,6 +1,7 @@
 ---
-title: Editing the Wiki - Links
+title: Links
 section: Help:Editing the Wiki
+nav-links: true
 ---
 
 This page demonstrates how to link to certain special classes of external content.

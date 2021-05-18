@@ -1,6 +1,7 @@
 ---
-title: Editing the Wiki - Sideboxes
+title: Sideboxes
 section: Help:Editing the Wiki
+nav-links: true
 ---
 
 This page demonstrates how to insert a sidebox on the left and right side.

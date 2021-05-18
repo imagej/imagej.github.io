@@ -1,6 +1,7 @@
 ---
-title: Editing the Wiki - Symbols
+title: Symbols
 section: Help:Editing the Wiki
+nav-links: true
 ---
 
 This page documents includes for symbols commonly used on the site.

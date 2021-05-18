@@ -1,6 +1,7 @@
 ---
-title: Editing the Wiki - Citations
+title: Citations
 section: Help:Editing the Wiki
+nav-links: true
 ---
 
 This page demonstrates how to add a citation to your page.

@@ -1,6 +1,7 @@
 ---
-title: Editing the Wiki - Images
+title: Images
 section: Help:Editing the Wiki
+nav-links: true
 ---
 
 This page explains how to add images to your page.

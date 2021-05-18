@@ -1,6 +1,7 @@
 ---
-title: Editing the Wiki - Referencing People
+title: People
 section: Help:Editing the Wiki
+nav-links: true
 ---
 
 This page demonstrates how to use the `person` include tag.

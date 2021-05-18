@@ -1,6 +1,7 @@
 ---
-title: Editing the Wiki - Whitespace
+title: Whitespace
 section: Help:Editing the Wiki
+nav-links: true
 ---
 
 This page explains ways to manage whitespace rendering. It

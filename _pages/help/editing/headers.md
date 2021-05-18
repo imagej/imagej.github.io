@@ -1,6 +1,7 @@
 ---
-title: Editing the Wiki - Headers
+title: Headers
 section: Help:Editing the Wiki
+nav-links: true
 ---
 
 This page showcases the look of different header levels.
