@@ -1994,6 +1994,31 @@ ul.major-icons li .icon {
   /* font-weight: 550; */
 }
 
+/* sectional nav bar */
+
+/* Credit: https://stackoverflow.com/a/37053489/1207769 */
+
+ul.nav-bar {
+  text-align: center;
+  padding: 0;
+}
+
+ul.nav-bar li {
+  display: inline;
+  padding-left: 0;
+}
+
+ul.nav-bar li::after {
+	content: " ";
+	word-spacing: 1em;
+	background-image: linear-gradient(
+		-0.25turn,
+		transparent 0 calc(50% - 0.03em),
+		currentcolor 0 calc(50% + 0.03em),
+		transparent 0
+	);
+}
+
 /* snt-nav */
 
 .snt-nav table {
