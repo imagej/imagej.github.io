@@ -139,11 +139,11 @@ Each line represents a different task, each column represents a different comput
 
 In the "Job dashboard" there are the following five tabs:
 
--   "Macro Progress" – this tab is described in the previous section Inspecting progress (click [here](/File:Hpc-workflow-manager-macro-progress.png) );
--   "Error output" - the error output and warnings that are redirected live from the HPC Cluster (click [here](/File:Hpc-workflow-manager-error-output.png) );
--   "Other output"- the live redirected standard output from the cluster in the tab (click [here](/File:Hpc-workflow-manager-other-output.png) );
--   "Job directories" – contains a listing of the job directories (Input, Output and Working) (click [here](/File:Hpc-workflow-manager-job-directories.png) ); and
--   "Data upload" – contains a listing of the files that were uploaded (click [here](/File:Hpc-workflow-manager-data-upload.png) );
+-   "Macro Progress" – this tab is described in the previous section Inspecting progress (click [here](/media/hpc-workflow-manager-macro-progress.png) );
+-   "Error output" - the error output and warnings that are redirected live from the HPC Cluster (click [here](/media/hpc-workflow-manager-error-output.png) );
+-   "Other output"- the live redirected standard output from the cluster in the tab (click [here](/media/hpc-workflow-manager-other-output.png) );
+-   "Job directories" – contains a listing of the job directories (Input, Output and Working) (click [here](/media/hpc-workflow-manager-job-directories.png) ); and
+-   "Data upload" – contains a listing of the files that were uploaded (click [here](/media/hpc-workflow-manager-data-upload.png) );
 
 ### How to download the results
 

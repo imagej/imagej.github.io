@@ -11,7 +11,7 @@ Nivetha Govindaraju, {% include person id='mfarna' %}
 {% capture maintainer%}
 {% include person id='mfarna' %} (<mai.elfarnawany@gmail.com>)
 {% endcapture %}
-{% include info-box name='Vessel Analysis' software='Fiji' author=author maintainer=maintainer filename=' [Vessel Analysis.zip](/File:Vessel_Analysis.zip)' released='June 14<sup>th</sup>, 2016' latest-version='1.1' status='stable' category='[Plugins](/plugin-index), [Analysis](/plugin-index#analysis)' %}
+{% include info-box name='Vessel Analysis' software='Fiji' author=author maintainer=maintainer filename=' [Vessel Analysis.zip](/media/vessel-analysis.zip)' released='June 14<sup>th</sup>, 2016' latest-version='1.1' status='stable' category='[Plugins](/plugin-index), [Analysis](/plugin-index#analysis)' %}
 
 ## **Description:**
 
@@ -23,7 +23,7 @@ as well as making diameter measurements for multiple vessels in RGB images of va
 
 Vessel Analysis can be added to Fiji (version 1.47g or higher required).
 
-Download the [Vessel Analysis.zip](/File:Vessel_Analysis.zip) package and save an unzipped copy in Fiji's Plugins folder. Open a new session in Fiji and you should now see Vessel Analysis listed near the bottom of the Plugins drop down menu.
+Download the [Vessel Analysis.zip](/media/vessel-analysis.zip) package and save an unzipped copy in Fiji's Plugins folder. Open a new session in Fiji and you should now see Vessel Analysis listed near the bottom of the Plugins drop down menu.
 
 Before using the plugin, make sure your version of Fiji comes pre-downloaded with the Auto Threshold and Geometry to Distance plugins. They should be listed under:
 * {% include bc path="Image | Adjust | Auto Threshold" %}
@@ -33,7 +33,7 @@ Also make sure you install [Mexican Hat Filter](/ij/plugins/mexican-hat/index.ht
 
 ## **Usage:**
 
-Detailed Instructions [HERE](/File:Vessel_Analysis_User_Manual.pdf)
+Detailed Instructions [HERE](/media/vessel_analysis_user_manual.pdf)
 
 Open a multi-channel image in Fiji and execute the Vessel Analysis plugin via {% include bc path="Plugins | Vessel Analysis | Vessel Analysis (complete)" %}. The "complete" program will guide you through preprocessing steps to prepare the image for vascular density and diameter measurements.
 

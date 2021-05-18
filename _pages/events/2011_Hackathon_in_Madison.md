@@ -122,7 +122,7 @@ PlotData=
 
 Some locals were not present at the hackathon on weekends.
 
-![ link=<File:2011-madison-hackathon.jpg> \| frame \| Thanks to all participants!](/media/2011-madison-hackathon-small.jpg)
+{%- include figure src='/media/2011-madison-hackathon-small.jpg' content='Thanks to all participants!' -%}
 
 ## Locations
 
