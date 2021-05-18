@@ -8,19 +8,48 @@ A horizontal navigation bar with links.
   {%- comment -%}
     "nav-links: true" specified; include all pages from this page's directory.
   {%- endcomment -%}
-  {%- capture dir -%} {%- include util/dir path=page.url -%} {%- endcapture -%}
-  {%- assign all-pages = site.pages | sort: "title" -%}
-  <ul class="nav-bar">
-  {%- for p in all-pages -%}
-    {%- capture prefix -%} {%- include util/dir path=p.url -%} {%- endcapture -%}
-    {%- if prefix == dir -%}
-      {%- if p.url == page.url -%}
-        <li>{{p.title | replace: " ", "&nbsp;"}}</li>
-      {%- else -%}
+
+  {%- capture page-dir -%} {%- include util/dir path=page.url -%} {%- endcapture -%}
+
+  {%- comment -%}
+    We build up the list of links as a big string, because Jekyll 3.9
+    pukes when sorting the pages array by title using where_exp:
+      jekyll/filters.rb:304:in `sort!': Liquid error: comparison
+      of Array with Array failed included (Liquid::ArgumentError)
+  {%- endcomment -%}
+  {%- assign links = "" -%}
+  {%- for p in site.pages -%}
+    {%- capture p-dir -%} {%- include util/dir path=p.url -%} {%- endcapture -%}
+    {%- if p-dir == page-dir -%}
+      {%- capture link -%}
         <li><a href="{{p.url}}">{{p.title | replace: " ", "&nbsp;"}}</a></li>
-      {%- endif -%}
+      {%- endcapture -%}
+      {%- unless links == "" -%}
+        {%- assign links = links | append: "|" -%}
+      {%- endunless -%}
+      {%- assign links = links | append: link -%}
     {%- endif -%}
   {%- endfor -%}
+
+  {%- comment -%}
+    Doing a split+sort ends up with links sorted by URL, which is OK enough.
+  {%- endcomment -%}
+  {%- assign sorted-links = links | split: "|" | sort -%}
+
+  <ul class="nav-bar">
+    {%- capture page-ref -%} <a href="{{page.url}}"> {%- endcapture -%}
+    {%- for link in sorted-links -%}
+      {%- assign l = link -%} {%- comment -%} Loop vars are immutable! O_O {%- endcomment -%}
+      {%- if l contains page-ref -%}
+        {%- comment -%}
+          This link points at the current page; remove the <a> and </a> tags.
+          We do this post-processing here, rather than handling it above,
+          so that the sort above works as desired.
+        {%- endcomment -%}
+        {%- assign l = l | replace: page-ref, "" | replace: "</a>", "" -%}
+      {%- endif -%}
+      {{l}}
+    {%- endfor -%}
   </ul>
 {%- elsif pages -%}
   {%- comment -%}
