@@ -183,12 +183,14 @@ $leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding - 3
 /* Sticky sidebar */
 
 .sidebar {
-	position: sticky;
-    top: 1%;
-    height: 100vh;
-    overflow-y: scroll;	
+  position: sticky;
+  top: 1%;
+  height: 100vh;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
+  scrollbar-width: none;  /* Hide scrollbar for Firefox */
 }
 
 .sidebar::-webkit-scrollbar {
-    display: none;
+    display: none; /* Hide scrollbar for Chrome, Safari and Opera */
 }
