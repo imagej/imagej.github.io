@@ -14,7 +14,11 @@ A horizontal navigation bar with links.
   {%- for p in all-pages -%}
 		{%- capture prefix -%} {%- include util/dir path=p.url -%} {%- endcapture -%}
 		{%- if prefix == dir -%}
-		<li><a href="{{p.url}}">{{p.title}}</a></li>
+			{%- if p.url == page.url -%}
+				<li>{{p.title | replace: " ", "&nbsp;"}}</li>
+			{%- else -%}
+				<li><a href="{{p.url}}">{{p.title | replace: " ", "&nbsp;"}}</a></li>
+			{%- endif -%}
 		{%- endif -%}
 	{%- endfor -%}
 	</ul>
@@ -24,7 +28,11 @@ A horizontal navigation bar with links.
 	{%- endcomment -%}
 	<ul class="nav-bar">
 	{% for p in pages %}
-		<li><a href="{{p.url}}">{{p.title}}</a></li>
+		{%- if p.url == page.url -%}
+			<li>{{p.title | replace: " ", "&nbsp;"}}</li>
+		{%- else -%}
+			<li><a href="{{p.url}}">{{p.title | replace: " ", "&nbsp;"}}</a></li>
+		{%- endif -%}
 	{% endfor %}
 	</ul>
 {%- endif -%}
