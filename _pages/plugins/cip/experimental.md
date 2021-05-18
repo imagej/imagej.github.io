@@ -5,7 +5,7 @@ title: CIP Experimental
 
 This page provides user documentation for some experimental functions of the [CIP](/plugins/cip) package
 
-{% include cip content='Navigation' %}
+{% include cip/nav %}
 
 # **track**
 

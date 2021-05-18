@@ -5,7 +5,7 @@ title: CIP Format
 
 This page provides user documentation for the Format category of the [CIP](/plugins/cip) scripting package.
 
-{% include cip content='Navigation' %}
+{% include cip/nav %}
 
 # **create**
 

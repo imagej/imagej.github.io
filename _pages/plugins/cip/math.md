@@ -5,7 +5,7 @@ title: CIP Math
 
 This page provides user documentation for the Math category of the [CIP](/plugins/cip) scripting package
 
-{% include cip content='Navigation' %}
+{% include cip/nav %}
 
 # binary operator
 

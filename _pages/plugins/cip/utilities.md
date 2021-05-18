@@ -5,7 +5,7 @@ title: CIP Utilities
 
 This page provides user documentation for the utility functions of the [CIP](/plugins/cip) package
 
-{% include cip content='Navigation' %}
+{% include cip/nav %}
 
 # **measure**
 

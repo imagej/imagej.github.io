@@ -1,0 +1,7 @@
+One can found additional information on the function parameters (type, optional/required, positional/named) on the <a href ="CIP_Parameters">parameters</a> documentation page.
+
+To access another category of CIP functions: <a href ="CIP_Format" Title="CIP Format">Format</a>, <a href ="CIP_Filter" Title="CIP Filter">Filter</a>, <a href ="CIP_Math" Title="CIP Math">Math</a>, <a href ="CIP_Segmentation" Title="CIP Segmentation">Segment</a>, <a href ="CIP_Utilities" Title="CIP Utilities">Assess</a>, <a href ="CIP_Experimental" Title="CIP Experimental">Experimental</a>.
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

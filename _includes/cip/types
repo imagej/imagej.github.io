@@ -1,9 +1,3 @@
-{% if include.content == "Navigation" %}
-One can found additional information on the function parameters (type, optional/required, positional/named) on the <a href ="CIP_Parameters">parameters</a> documentation page.
-
-To access another category of CIP functions: <a href ="CIP_Format" Title="CIP Format">Format</a>, <a href ="CIP_Filter" Title="CIP Filter">Filter</a>, <a href ="CIP_Math" Title="CIP Math">Math</a>, <a href ="CIP_Segmentation" Title="CIP Segmentation">Segment</a>, <a href ="CIP_Utilities" Title="CIP Utilities">Assess</a>, <a href ="CIP_Experimental" Title="CIP Experimental">Experimental</a>.
-{% endif %}
-{% if include.content == "types" %}
 <h1><span class="mw-headline" id="Types">Types</span></h1>
 <ul><li><b>Image</b>:any image type in: IJ1 ImagePlus, IJ2 Dataset, IJ2 ImgPlus, ImgLib2 Img, ImgLib2 RandomAccessInterval (RAI), CIP image which implements RAI and adds a thin layer of metadata (units, pixel size, axes names). output image are always a CIP image. Converters allows to get back to IJ1 or IJ2 format if needed.</li>
 <li><b>Region</b>:any type in: IJ1 Roi, ImgLib2 IterableRegion, or CIP regions which implement IterableRegion and a thin layer of metadata.</li>
@@ -29,7 +23,6 @@ To access another category of CIP functions: <a href ="CIP_Format" Title="CIP Fo
 </p>
 <ul><li> by passing in the same position and order as the example signature provided in the documentation. If we take the gauss function as example it would write as follows using only the required parameters: <br /> <code> out = gauss(in , myRadius )</code></li>
 <li> by passing a string/value <br /> <code>out = gauss(in , 'radius', myRadius) </code>  or even <br /><code>out = gauss('radius', myRadius, 'inputImage', in )</code></li></ul>
-{% endif %}
 
 {%- comment -%}
 # vi:syntax=liquid

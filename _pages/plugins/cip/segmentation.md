@@ -5,7 +5,7 @@ title: CIP Segmentation
 
 This page describes the segmentation function of the [CIP scripting](/plugins/cip) package
 
-{% include cip content='Navigation' %}
+{% include cip/nav %}
 
 # **threshold**
 
