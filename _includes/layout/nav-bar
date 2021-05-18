@@ -5,36 +5,36 @@ A horizontal navigation bar with links.
 {%- assign pages = page.nav-links -%}
 
 {%- if pages == true -%}
-	{%- comment -%}
-		"nav-links: true" specified; include all pages from this page's directory.
-	{%- endcomment -%}
-	{%- capture dir -%} {%- include util/dir path=page.url -%} {%- endcapture -%}
-	{%- assign all-pages = site.pages | sort: "title" -%}
-	<ul class="nav-bar">
+  {%- comment -%}
+    "nav-links: true" specified; include all pages from this page's directory.
+  {%- endcomment -%}
+  {%- capture dir -%} {%- include util/dir path=page.url -%} {%- endcapture -%}
+  {%- assign all-pages = site.pages | sort: "title" -%}
+  <ul class="nav-bar">
   {%- for p in all-pages -%}
-		{%- capture prefix -%} {%- include util/dir path=p.url -%} {%- endcapture -%}
-		{%- if prefix == dir -%}
-			{%- if p.url == page.url -%}
-				<li>{{p.title | replace: " ", "&nbsp;"}}</li>
-			{%- else -%}
-				<li><a href="{{p.url}}">{{p.title | replace: " ", "&nbsp;"}}</a></li>
-			{%- endif -%}
-		{%- endif -%}
-	{%- endfor -%}
-	</ul>
+    {%- capture prefix -%} {%- include util/dir path=p.url -%} {%- endcapture -%}
+    {%- if prefix == dir -%}
+      {%- if p.url == page.url -%}
+        <li>{{p.title | replace: " ", "&nbsp;"}}</li>
+      {%- else -%}
+        <li><a href="{{p.url}}">{{p.title | replace: " ", "&nbsp;"}}</a></li>
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+  </ul>
 {%- elsif pages -%}
-	{%- comment -%}
-		Explicit list of nav-links given; use it as-is.
-	{%- endcomment -%}
-	<ul class="nav-bar">
-	{% for p in pages %}
-		{%- if p.url == page.url -%}
-			<li>{{p.title | replace: " ", "&nbsp;"}}</li>
-		{%- else -%}
-			<li><a href="{{p.url}}">{{p.title | replace: " ", "&nbsp;"}}</a></li>
-		{%- endif -%}
-	{% endfor %}
-	</ul>
+  {%- comment -%}
+    Explicit list of nav-links given; use it as-is.
+  {%- endcomment -%}
+  <ul class="nav-bar">
+  {% for p in pages %}
+    {%- if p.url == page.url -%}
+      <li>{{p.title | replace: " ", "&nbsp;"}}</li>
+    {%- else -%}
+      <li><a href="{{p.url}}">{{p.title | replace: " ", "&nbsp;"}}</a></li>
+    {%- endif -%}
+  {% endfor %}
+  </ul>
 {%- endif -%}
 
 {%- comment -%}

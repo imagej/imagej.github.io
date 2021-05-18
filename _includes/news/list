@@ -8,10 +8,10 @@ sorted correctly, and to generate the year headers consistently.
 {% endcomment %}
 
 {%- assign newsPages = site.pages
-	| sort:"date"
-	| reverse
-	| where_exp:"page", "page.url contains '/news/'"
-	| where_exp:"page", "page.url != '/news/index'" -%}
+  | sort:"date"
+  | reverse
+  | where_exp:"page", "page.url contains '/news/'"
+  | where_exp:"page", "page.url != '/news/index'" -%}
 
 <ul>
 {% assign headers = "" | split: ',' %}

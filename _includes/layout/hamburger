@@ -1,4 +1,4 @@
-		<nav role="navigation">
+    <nav role="navigation">
       <div id="ham-toggle">
         <input type="checkbox" />
         <span></span> <!-- top bun -->
