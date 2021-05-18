@@ -12,7 +12,7 @@ categories: [Fiji]
 
 -   Hardware-accelerated 3D volume and mesh visualization, and 3D registration of image stacks.
 
-[Transform](Category_Transform)  
+[Transform](/plugin-index#transform)  
 
 -   Interactive image transformation ([rigid](/plugins/interactive-rigid), [similarity](/plugins/interactive-similarity), [affine](/plugins/interactive-affine), [perspective](/plugins/interactive-perspective), [deform](/plugins/interactive-moving-least-squares))
 -   [Interactive Stack Rotation](/plugins/interactive-stack-rotation)
@@ -40,13 +40,13 @@ categories: [Fiji]
 -   [Trainable Segmentation](/plugins/tws)
 -   [SIOX: Simple Interactive Object Extraction](/plugins/siox)
 
-[Tracking](Category_Tracking)  
+[Tracking](/plugin-index#tracking)  
 
 -   [TrackMate](/plugins/trackmate)
 
 Analysis  
 
--   [Skeletons and tree analysis](Category_Skeleton)
+-   [Skeletons and tree analysis](/plugin-index#skeleton)
 
 [ImgLib2](/libs/imglib2)  
 

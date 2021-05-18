@@ -343,7 +343,7 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 <!-- -->
 
--   The [Script Editor](/scripting/script-editor) can build and launch [Fiji plugins](Category_Plugins) from `$FIJI_ROOT/src-plugins/`<name>`/` now.
+-   The [Script Editor](/scripting/script-editor) can build and launch [Fiji plugins](/plugin-index) from `$FIJI_ROOT/src-plugins/`<name>`/` now.
 
 <!-- -->
 
@@ -481,4 +481,4 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 -   There is a maven helper in **bin/maven.sh** now, you can call it from Fakefiles to download maven if necessary, and then run it.
 
-[Fiji plugin](Category_Plugins) 
+[Fiji plugin](/plugin-index) 

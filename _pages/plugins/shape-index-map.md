@@ -12,7 +12,7 @@ categories: [Plugins]
 {% capture source%}
 {% include github org='fiji' repo='Fiji\_Plugins' source='fiji/geom/Shape\_Index\_Map.java' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='Shape Index Map' maintainer=maintainer author='Johannes Schindelin' source=source released='18/08/2010' latest-version='18/08/2010' status='' category='[:Category:Plugins](Category_Plugins)' website='' %}
+{% include info-box software='ImageJ' name='Shape Index Map' maintainer=maintainer author='Johannes Schindelin' source=source released='18/08/2010' latest-version='18/08/2010' status='' category='[Plugins](/plugin-index)' website='' %}
 
 ## Explanation
 

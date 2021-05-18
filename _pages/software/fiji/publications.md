@@ -8,7 +8,7 @@ categories: [Fiji]
 {% include info-box content='This page lists publications relating to the [Fiji](/software/fiji) project.
 
 -   For general instructions on citing [ImageJ](/about) and [Fiji](/software/fiji), see [Citing](/about/citing).
--   For an index of citable software, see [:Category:Citable](Category_Citable).' %}
+-   For an index of citable software, see [Citable](/plugin-index#citable).' %}
 
 
 ## Publications introducing Fiji

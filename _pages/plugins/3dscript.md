@@ -16,7 +16,7 @@ categories: [Plugins,Visualization,Citable]
 {% capture source%}
 {% include github org='bene51' repo='3Dscript' %}
 {% endcapture %}
-{% include info-box software='Fiji' name='3Dscript' maintainer=maintainer author=author source=source status='active' released='January 2019' category='[Visualization](Category_Visualization), [:Category:Plugins](Category_Plugins)' %}
+{% include info-box software='Fiji' name='3Dscript' maintainer=maintainer author=author source=source status='active' released='January 2019' category='[Visualization](/plugin-index#visualization), [Plugins](/plugin-index)' %}
 
 <img src="/media/logos/3dscript.png" width="160"/> **3Dscript** - Create high-quality 3D/4D animations using a natural-language based syntax
 

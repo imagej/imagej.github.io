@@ -8,7 +8,7 @@ categories: [tutorials]
 {% capture source%}
 {% include github repo='fiji' path='plugins/Examples/Edit\_LUT\_As\_Text.py' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='Edit LUT As Text' author='Johannes Schindelin' maintainer='Johannes Schindelin' source=source status='stable' category='[Color processing](Category_Color_processing)' %}
+{% include info-box software='ImageJ' name='Edit LUT As Text' author='Johannes Schindelin' maintainer='Johannes Schindelin' source=source status='stable' category='[Color processing](/plugin-index#color-processing)' %}
 
 # Purpose
 

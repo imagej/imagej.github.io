@@ -16,7 +16,7 @@ categories: [Libraries,ImageScience,plugins]
 {% capture source%}
 {% include github org='imagescience' repo='ImageScience' %}
 {% endcapture %}
-{% include info-box software='ImageScience' name='ImageScience' maintainer=maintainer author=author source=source status='' category='[:Category:Libraries](Category_Libraries)' website='http://imagescience.org/meijering/software/imagescience/' %}The ImageScience library supports the ImageScience suite of plugins:
+{% include info-box software='ImageScience' name='ImageScience' maintainer=maintainer author=author source=source status='' category='[Libraries](/plugin-index#libraries)' website='http://imagescience.org/meijering/software/imagescience/' %}The ImageScience library supports the ImageScience suite of plugins:
 
 -   [FeatureJ](/plugins/featurej)
 -   [MTrackJ](/plugins/mtrackj)

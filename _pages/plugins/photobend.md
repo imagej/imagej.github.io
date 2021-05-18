@@ -16,7 +16,7 @@ categories: [Tracking,Tutorials,Plugins]
 {% capture source%}
 {% include github org='anotherche' repo='photobend' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='PhotoBend' maintainer=maintainer author=author source=source released='10/11/2016' latest-version='26/04/2017' status='Alpha' category='[:Category:Plugins](Category_Plugins),[Tracking](Category_Tracking)' website='' %}
+{% include info-box software='ImageJ' name='PhotoBend' maintainer=maintainer author=author source=source released='10/11/2016' latest-version='26/04/2017' status='Alpha' category='[Plugins](/plugin-index),[Tracking](/plugin-index#tracking)' website='' %}
 
 ## PhotoBend plugins collection
 

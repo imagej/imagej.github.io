@@ -6,7 +6,7 @@ categories: [Cookbook,Tutorials,Colocalization,Color processing]
 description: Learn about the numerous methods of colocalization analysis
 ---
 
-{% include biginfo-box content='See [:Category:Colocalization](Category_Colocalization) for pages about colocalization.' %}
+{% include biginfo-box content='See [Colocalization](/plugin-index#colocalization) for pages about colocalization.' %}
 
 ## What is colocalization?
 
@@ -93,7 +93,7 @@ Due to the unique nature of single-molecule localization microscopy images, as a
 
 ## Plugins for colocalization
 
-There are several plugins available for performing colocalization analysis. In addition to the options described below, see also the [index of pages related to colocalization](Category_Colocalization).
+There are several plugins available for performing colocalization analysis. In addition to the options described below, see also the [index of pages related to colocalization](/plugin-index#colocalization).
 
 ### List of plugins by method type
 

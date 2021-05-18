@@ -20,7 +20,7 @@ categories: [Skeleton,Analysis,Plugins,Neuroanatomy]
 {% capture source%}
 {% include github org='tferr' repo='hIPNAT' %}
 {% endcapture %}
-{% include info-box software='Fiji' name='Strahler Analysis' maintainer=maintainer author=author filename='hIPNAT_.jar ([Neuroanatomy update site](/users/Neuroanatomy))' source=source released='April 2016' category='[Plugins](Category_Plugins), [Neuroanatomy](Category_Neuroanatomy), [Analysis](Category_Analysis), [Skeleton](Category_Skeleton)' %}
+{% include info-box software='Fiji' name='Strahler Analysis' maintainer=maintainer author=author filename='hIPNAT_.jar ([Neuroanatomy update site](/users/Neuroanatomy))' source=source released='April 2016' category='[Plugins](/plugin-index), [Neuroanatomy](/plugin-index#neuroanatomy), [Analysis](/plugin-index#analysis), [Skeleton](/plugin-index#skeleton)' %}
 
 </div>
 

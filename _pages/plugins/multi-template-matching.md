@@ -16,7 +16,7 @@ categories: [Plugins,Citable,Feature Extraction,Jython,Object Detection]
 {% capture source%}
 {% include github org='LauLauThom' repo='MultiTemplateMatching' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='Multi-Template Matching' author=author maintainer=maintainer update-site='Multi-Template-Matching' source=source released='2019' status='active' category='[Analysis](Category_Analysis) [Feature Extraction](Category_Feature_Extraction)' %}
+{% include info-box software='ImageJ' name='Multi-Template Matching' author=author maintainer=maintainer update-site='Multi-Template-Matching' source=source released='2019' status='active' category='[Analysis](/plugin-index#analysis) [Feature Extraction](/plugin-index#feature-extraction)' %}
 
 <img src="/media/multi-template-matching-montagegui.png" width="800"/>
 

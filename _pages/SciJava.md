@@ -27,7 +27,7 @@ All components in this collection are managed by SciJava's [Bill of Materials](/
 
 ## The SciJava pledge
 
-The following projects are part of the **[SciJava pledge](Category_SciJava)** to work together, reuse code and synergize wherever possible:
+The following projects are part of the **[SciJava pledge](/plugin-index#scijava)** to work together, reuse code and synergize wherever possible:
 
 {::nomarkdown}
 <table>

@@ -4,7 +4,7 @@ title: Analyze FRAP movies with a Jython script
 categories: [Jython,Scripting]
 ---
 
-Here is a [Jython](Category_Jython) script that does the analysis of a FRAP movie. It was developed during the [Image Processing School Pilsen 2009](/events/Image_Processing_School_Pilsen_2009), and updated to modern Fiji.
+Here is a [Jython](/plugin-index#jython) script that does the analysis of a FRAP movie. It was developed during the [Image Processing School Pilsen 2009](/events/Image_Processing_School_Pilsen_2009), and updated to modern Fiji.
 
 Once the user has loaded a good FRAP movie, [well aligned with no drift](/tutorials/correcting-drift-in-frap-experiments), and has specified the ROI for the FRAP zone and another for the control zone, it should be possible to automate the analysis of the FRAP curve. This is what this script aims to do:
 

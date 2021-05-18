@@ -15,7 +15,7 @@ ImageJ allows you to write scripts in several different languages.
 -   Otherwise, choose your language from the *Language* menu.
 -   Grab code snippets for common tasks from the [Scripting toolbox](/scripting/toolbox).
 -   See [Scripting comparisons](/scripting/comparisons) for a side-by-side comparison of scripting languages.
--   See [:Category:Scripting](Category_Scripting) for a list of all scripting-related pages on this wiki.
+-   See [Scripting](/plugin-index#scripting) for a list of all scripting-related pages on this wiki.
 
 # Supported languages
 

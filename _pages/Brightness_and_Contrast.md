@@ -4,7 +4,7 @@ title: Brightness and Contrast
 categories: [Cookbook, tutorials]
 ---
 
-**Note:** This page refers to the version of [ImageJ2](/software/imagej2) currently in development. For more information on using [Fiji](/software/fiji) and [ImageJ 1.x](/software/imagej1), please reference the [Fiji tutorials](Category_Tutorials) and [ImageJ 1.x documentation](/ij/docs/).
+**Note:** This page refers to the version of [ImageJ2](/software/imagej2) currently in development. For more information on using [Fiji](/software/fiji) and [ImageJ 1.x](/software/imagej1), please reference the [Fiji tutorials](/plugin-index#tutorials) and [ImageJ 1.x documentation](/ij/docs/).
 
 This tool may be used to adjust the brightness and contrast of an active image.
 

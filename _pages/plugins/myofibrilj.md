@@ -16,7 +16,7 @@ categories: [Scripting,Analysis,Plugins]
 {% capture source%}
 {% include github org='giocard' repo='MyofibrilJ' %}
 {% endcapture %}
-{% include info-box software='ImageJ/Fiji' name='MyofribilJ' maintainer=maintainer author=author source=source released='November 2017' category='[Analysis](Category_Analysis), [Scripting](Category_Scripting), [Plugins](Category_Plugins)' %}
+{% include info-box software='ImageJ/Fiji' name='MyofribilJ' maintainer=maintainer author=author source=source released='November 2017' category='[Analysis](/plugin-index#analysis), [Scripting](/plugin-index#scripting), [Plugins](/plugin-index)' %}
 
 ## Introduction
 

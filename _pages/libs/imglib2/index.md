@@ -17,7 +17,7 @@ categories: [ImgLib,Citable]
 {% capture source%}
 {% include github org='imglib' repo='imglib2' %}
 {% endcapture %}
-{% include info-box name='ImgLib2' software='Generic Image Processing for Java' logo='![](/media/logos/imglib2.png)' author=author maintainer=maintainer source=source status='stable, active' category='[:Category:ImgLib](Category_ImgLib)' %}
+{% include info-box name='ImgLib2' software='Generic Image Processing for Java' logo='![](/media/logos/imglib2.png)' author=author maintainer=maintainer source=source status='stable, active' category='[ImgLib](/plugin-index#imglib)' %}
 ImgLib2 is a general-purpose, multidimensional image processing library.
 
 It provides an interface-driven design that supports numeric and non-numeric data types (8-bit unsigned integer, 32-bit floating point, etc.) in an extensible way. It implements several data sources and sample organizations, including one single primitive array, one array per plane, N-dimensional array "cells" cached to and from disk on demand, and planes read on demand from disk.

@@ -16,7 +16,7 @@ categories: [Plugins,Citable]
 {% capture source%}
 {% include github org='fiji' repo='MaMuT' %}
 {% endcapture %}
-{% include info-box software='Fiji' name='MaMuT' logo='<img src="/media/icons/mamut.png" title="fig:MaMuT_logo-256x256.png" width="160" alt="MaMuT_logo-256x256.png" />' maintainer=maintainer author=author source=source status='v0.27.0, active' released='06/01/2015' category='[Segmentation](Category_Segmentation), [Tracking](Category_Tracking), [:Category:Plugins](Category_Plugins)' %}
+{% include info-box software='Fiji' name='MaMuT' logo='<img src="/media/icons/mamut.png" title="fig:MaMuT_logo-256x256.png" width="160" alt="MaMuT_logo-256x256.png" />' maintainer=maintainer author=author source=source status='v0.27.0, active' released='06/01/2015' category='[Segmentation](/plugin-index#segmentation), [Tracking](/plugin-index#tracking), [Plugins](/plugin-index)' %}
 
 **A Fiji plugin for the annotation of massive, multi-view data. **
 

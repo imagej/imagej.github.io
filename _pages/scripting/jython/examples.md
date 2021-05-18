@@ -1677,7 +1677,7 @@ Here is a small example, using `Weaver.method`, that uses imports. The script su
 
     imp.updateAndDraw()
 
-Of course the Weaver is a java library, and may be used from any scripting language such as [Javascript](/scripting/javascript), [JRuby](/scripting/jruby), and [others](Category_Scripting).
+Of course the Weaver is a java library, and may be used from any scripting language such as [Javascript](/scripting/javascript), [JRuby](/scripting/jruby), and [others](/plugin-index#scripting).
 
 All the above is inspired by the [Scientific Python Weaver, or scipy Weaver](http://www.scipy.org/Cookbook/Weave), which inlines C code inside a python file.
 

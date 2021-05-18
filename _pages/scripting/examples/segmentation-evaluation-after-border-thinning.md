@@ -6,7 +6,7 @@ categories: [Segmentation,Scripting]
 
 # Introduction
 
-The following [Beanshell script](/scripting/beanshell) allows you to evaluate the performance of your [segmentation](Category_Segmentation) method after thinning the borders of the image segments to 1-pixel width.
+The following [Beanshell script](/scripting/beanshell) allows you to evaluate the performance of your [segmentation](/plugin-index#segmentation) method after thinning the borders of the image segments to 1-pixel width.
 
 Retrospective evaluation of the original [ISBI-2012 segmentation challenge](http://brainiac2.mit.edu/isbi_challenge/) scoring system revealed that it was not sufficiently robust to variations in the widths of neurite borders. After evaluating all of these metrics and associated variants, it was found that specially normalized versions of the [Rand error](/plugins/tws/rand-error) and {% include wikipedia title="Variation of information" %} best matched our qualitative judgements of segmentation quality:
 

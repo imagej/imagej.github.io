@@ -5,7 +5,7 @@ section: Learn:Techniques
 categories: [Tutorials,Segmentation]
 ---
 
-{% include biginfo-box content='See [:Category:Segmentation](Category_Segmentation) for pages about image segmentation.' %} 
+{% include biginfo-box content='See [Segmentation](/plugin-index#segmentation) for pages about image segmentation.' %} 
 
 {% include tip tip='See [this helpful workshop on Image Segmentation](/media/arganda-carreras-segmentation-bioimage-course-mdc-berlin-2016.pdf) for another great overview of Segmentation!' %}
 
@@ -86,7 +86,7 @@ One good workflow for segmentation in ImageJ is as follows:
 
 Preprocess the image using filters, to make later thresholding more effective. Which filter(s) to use is highly dependent on your data, but some commonly useful filters include:
 
--   [Deconvolution](Category_Deconvolution)
+-   [Deconvolution](/plugin-index#deconvolution)
 -   \[/docs/guide/146-29.html#sub:Subtract-Background... Subtract Background\]
 -   \[/docs/guide/146-29.html#sub:Gaussian-Blur... Gaussian Blur\]
 -   [Find Edges](/ij/docs/guide/146-29.html#sub:Find-Edges)
@@ -146,6 +146,6 @@ Do some numerical analysis on the selected data:
 
 -   The [Introduction to Image Segmentation using ImageJ/Fiji](/media/arganda-carreras-segmentation-bioimage-course-mdc-berlin-2016.pdf) workshop.
 -   The [Segmentation with Fiji workshop slides](/presentations/fiji-segmentation/).
--   [:Category:Segmentation](Category_Segmentation), a list of pages about image segmentation.
+-   [Segmentation](/plugin-index#segmentation), a list of pages about image segmentation.
 
  

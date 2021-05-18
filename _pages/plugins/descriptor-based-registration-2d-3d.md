@@ -11,7 +11,7 @@ title: Descriptor-based registration (2d/3d)
 {% capture source%}
 {% include github org='fiji' repo='Descriptor\_based\_registration' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='Descriptor-based registration' maintainer=maintainer author='Stephan Preibisch' source=source released='30/11/2011' latest-version='30/11/2011' status='' category='[:Category:Plugins](Category_Plugins)' website='' %}
+{% include info-box software='ImageJ' name='Descriptor-based registration' maintainer=maintainer author='Stephan Preibisch' source=source released='30/11/2011' latest-version='30/11/2011' status='' category='[Plugins](/plugin-index)' website='' %}
 
 I uploaded two HowTos to YouTube that illustrate the basic usage of the plugin, which makes use of the algorithms implemented in [BigStitcher](/plugins/bigstitcher).
 

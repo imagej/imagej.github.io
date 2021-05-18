@@ -11,7 +11,7 @@ title: Non Local Means Denoise
 {% capture author%}
 Pascal Behnel, {% include person id='thorstenwagner' %}
 {% endcapture %}
-{% include info-box software='ImageJ/Fiji' name='Non Local Means Denoise' maintainer=maintainer author=author filename='ij\_nl\_means.jar [\[1](https://github.com/thorstenwagner/ij-nl-means/releases/latest) \]' source='GitHub [\[2](https://github.com/jumpfunky/ij-nl-means) \]' latest-version='v1.4.6 (13 March 2016)' status='maintaining' category='[:Category:Plugins](Category_Plugins)' %}
+{% include info-box software='ImageJ/Fiji' name='Non Local Means Denoise' maintainer=maintainer author=author filename='ij\_nl\_means.jar [\[1](https://github.com/thorstenwagner/ij-nl-means/releases/latest) \]' source='GitHub [\[2](https://github.com/jumpfunky/ij-nl-means) \]' latest-version='v1.4.6 (13 March 2016)' status='maintaining' category='[Plugins](/plugin-index)' %}
 
 # Purpose
 

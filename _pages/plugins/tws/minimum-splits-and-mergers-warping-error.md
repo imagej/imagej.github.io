@@ -36,7 +36,7 @@ The minimum splits and mergers warping error metric is implemented for 2D images
     IJ.log("  Warping error = " + warpingError);
     IJ.log("  # errors (splits + mergers pixels) = " + Math.round(warpingError * originalLabels.getWidth() * originalLabels.getHeight() * originalLabels.getImageStackSize() ) );
 
-[segmentation](Category_Segmentation) 
+[segmentation](/plugin-index#segmentation) 
 
 ## References
 

@@ -15,7 +15,7 @@ section: About
 
 We ask users to cite:
 
-1.  Any [specific publications](Category_Citable) of [plugins](/plugins) used.
+1.  Any [specific publications](/plugin-index#citable) of [plugins](/plugins) used.
 2.  The general paper of ImageJ distribution(s) used—e.g., if you used [Fiji](/software/fiji), cite the [Fiji](/software/fiji) paper.
 3.  The general [ImageJ](/about) paper.
 
@@ -175,4 +175,4 @@ Thank you for your support.
 </table>
 {:/}
 
-See the [list of citable software](Category_Citable) and [publications using Fiji](/software/fiji/publications) for additional citation information.
+See the [list of citable software](/plugin-index#citable) and [publications using Fiji](/software/fiji/publications) for additional citation information.

@@ -13,4 +13,4 @@ The QuickPALM ImageJ plugin enables PALM/STORM 2D/3D/4D particle detection and i
 
 For Full Documentation, and details of how to build your own super resolution system, please visit: [QuickPALM pages at Google Code](http://code.google.com/p/quickpalm/)
 
-[ Super Resolution](Category_Superresolution)
+[ Super Resolution](/plugin-index#super-resolution)

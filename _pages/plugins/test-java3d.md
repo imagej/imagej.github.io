@@ -4,7 +4,7 @@ title: Test Java3D
 categories: [Plugins]
 ---
 
-{% include info-box software='ImageJ' name='Test Java3D' author='Benjamin Schmid' maintainer='Benjamin Schmid' filename='http://132.187.25.13/home/imagej/Test\_Java3D.jar' source='http://132.187.25.13/home/imagej/Test\_Java3D.jar' released='-' latest-version='-' status='stable' category='[Plugins](Category_Plugins)' %}
+{% include info-box software='ImageJ' name='Test Java3D' author='Benjamin Schmid' maintainer='Benjamin Schmid' filename='http://132.187.25.13/home/imagej/Test\_Java3D.jar' source='http://132.187.25.13/home/imagej/Test\_Java3D.jar' released='-' latest-version='-' status='stable' category='[Plugins](/plugin-index)' %}
 
 ## Purpose
 

@@ -18,7 +18,7 @@ categories: [Tracking,Visualization,Analysis,Filtering,Plugins]
 {% capture source%}
 {% include github org='scottreen' repo='PillarTracker' %}
 {% endcapture %}
-{% include info-box software='ImageJ/Fiji' name='PillarTracker' author=author maintainer=maintainer source=source released='June 2017' latest-version='**1.1.6 May 2018**' status='stable, active' category='[Tracking](Category_Tracking), [Visualization](Category_Visualization), [Filtering](Category_Filtering), [Analysis](Category_Analysis), [Plugins](Category_Plugins)' %}
+{% include info-box software='ImageJ/Fiji' name='PillarTracker' author=author maintainer=maintainer source=source released='June 2017' latest-version='**1.1.6 May 2018**' status='stable, active' category='[Tracking](/plugin-index#tracking), [Visualization](/plugin-index#visualization), [Filtering](/plugin-index#filtering), [Analysis](/plugin-index#analysis), [Plugins](/plugin-index)' %}
 
 </div>
 

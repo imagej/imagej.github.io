@@ -110,6 +110,6 @@ There are two more options: RGB stack and HSV stack, which can turn a 2-dimensio
 
 # Further reading
 
-Have a look at the list of [tutorials](Category_Tutorials) on this Wiki.
+Have a look at the list of [tutorials](/plugin-index#tutorials) on this Wiki.
 
 

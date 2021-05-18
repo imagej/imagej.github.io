@@ -8,7 +8,7 @@ categories: [Plugins,Segmentation]
 {% capture source%}
 {% include github org='mpicbg-scicomp' repo='Interactive-H-Watershed' %}
 {% endcapture %}
-{% include info-box software='ImageJ/Fiji' name='Interactive H\_Watershed' author='[Benoit Lombardot](/users/Benoit)' maintainer='[Benoit Lombardot](/users/Benoit)' released='08 May 2017' filename='SCF-MPI-CBG update site' source=source category='[Plugins](Category_Plugins), [Segmentation](Category_Segmentation)' %}
+{% include info-box software='ImageJ/Fiji' name='Interactive H\_Watershed' author='[Benoit Lombardot](/users/Benoit)' maintainer='[Benoit Lombardot](/users/Benoit)' released='08 May 2017' filename='SCF-MPI-CBG update site' source=source category='[Plugins](/plugin-index), [Segmentation](/plugin-index#segmentation)' %}
 
 <img src="/media/interactivewatershed-illustration.png" width="500"/>
 

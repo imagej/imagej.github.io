@@ -16,7 +16,7 @@ categories: [Plugins,Update Sites,Macro Tools,Citable]
 {% capture source%}
 {% include github org='LauLauThom' repo='Fiji-RoiClickTools' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='ROI 1-click tools' author=author maintainer=maintainer update-site='ROI 1-click tools' source=source released='2019' status='active' category='[Analysis](Category_Analysis)' %}
+{% include info-box software='ImageJ' name='ROI 1-click tools' author=author maintainer=maintainer update-site='ROI 1-click tools' source=source released='2019' status='active' category='[Analysis](/plugin-index#analysis)' %}
 
 # New versions
 

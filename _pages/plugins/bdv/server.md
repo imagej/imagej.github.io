@@ -15,7 +15,7 @@ title: BigDataServer
 {% capture source%}
 {% include github org='bigdataviewer' repo='bigdataviewer-server' %}
 {% endcapture %}
-{% include info-box name='BigDataServer' software='Fiji' author=author maintainer=maintainer source=source latest-version='1.0.2' status='experimental' category='[Visualization](Category_Visualization), [Transform](Category_Transform)' %}
+{% include info-box name='BigDataServer' software='Fiji' author=author maintainer=maintainer source=source latest-version='1.0.2' status='experimental' category='[Visualization](/plugin-index#visualization), [Transform](/plugin-index#transform)' %}
 
 ## Description
 
