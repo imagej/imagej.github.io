@@ -1,0 +1,26 @@
+{%- comment -%}
+Gets the index of the given string fragment's last occurrence
+within the specified string, or -1 if the fragment is not present.
+{%- endcomment -%}
+
+{%- assign string = include.string -%}
+{%- assign fragment = include.fragment -%}
+
+{%- assign len = fragment | size -%}
+{%- assign max = string | size | minus: len | minus: 1 -%}
+{%- assign index = -1 -%}
+
+{%- for i in (0..max) -%}
+  {%- assign offset = string | size | minus: i -%}
+  {%- assign s = string | slice: offset, len -%}
+  {%- if s == fragment -%}
+    {%- assign index = offset -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{{- index -}}
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}
