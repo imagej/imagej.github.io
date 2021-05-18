@@ -1,5 +1,5 @@
 ---
-title: Formatting Pitfalls
+title: Pitfalls
 section: Help:Editing the Wiki
 nav-links: true
 ---
