@@ -40,7 +40,9 @@ To build a Maven project:
 3.  Type `mvn` from the top-level directory.
 
 Advanced instructions for building, or modifying, the source code are available for specific development environments:
-{% include ides%}
+
+{% include develop/ide-links %}
+
  Note that these tutorials are targeted towards [ImageJ](/about), but would apply to any Maven-based project.
 
 ## Javadocs

@@ -140,7 +140,12 @@
   {%- include menu/section title="Tools" -%}
     {%- include menu/item title="GitHub" link="/develop/github" -%}
     {%- include menu/item title="Maven" link="/develop/maven" -%}
-    {%- include menu/item title="IDEs" link="/develop/ides" -%}
+    {%- include menu/section title="IDEs" link="/develop/ides" -%}
+      {%- include menu/item title="Eclipse" link="/develop/eclipse" -%}
+      {%- include menu/item title="NetBeans" link="/develop/netbeans" -%}
+      {%- include menu/item title="IntelliJ IDEA" link="/develop/intellij" -%}
+      {%- include menu/item title="Command Line" link="/develop/command-line" -%}
+    {%- include menu/section-end -%}
     {%- include menu/item title="Travis" link="/develop/travis" -%}
     {%- include menu/item title="AppVeyor" link="/develop/appveyor" -%}
     {%- include menu/item title="Dotfiles" link="/develop/dotfiles" -%}
@@ -154,7 +159,6 @@
     {%- include menu/item title="Development lifecycle" link="/develop/releasing" -%}
     {%- include menu/item title="Building a POM" link="/develop/building-a-pom" -%}
     {%- include menu/divider -%}
-    {%- include menu/item title="Developing with Eclipse" link="/develop/eclipse" -%}
     {%- include menu/item title="Hands-on debugging" link="/develop/debugging-exercises" -%}
     {%- include menu/item title="Adding new ops" link="/develop/writing-ops" -%}
     {%- include menu/item title="Adding new formats" link="/develop/formats" -%}
