@@ -110,7 +110,7 @@ def parse_document(docroot, path, icons):
         lines = f.readlines()
 
     if path.endswith('_config.yml'):
-        info("found config")
+        info("Found config")
 
     if len(lines) == 0 or not lines[0].strip() == '---':
         # missing front matter indicator -- assume it's not a Jekyll document.
@@ -208,7 +208,7 @@ if not os.path.isdir(docroot):
 
 info('Parsing config...')
 icons = parse_icon_defaults(config)
-info('Config parsed...')
+info('Config parsed')
 
 info('Loading content...')
 documents = load_jekyll_site(docroot, icons)
