@@ -40,7 +40,7 @@ Images can be added to your page by including `img` and the path to your image. 
 
 ### Classes
 
-Css classes can be expliticly specified with the `classes` parameter:
+CSS classes can be explicitly specified with the `classes` parameter:
 
 {% raw %}
 ```
