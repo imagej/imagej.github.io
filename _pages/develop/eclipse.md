@@ -28,10 +28,15 @@ adjustment for other versions.
 
 ### Configure Eclipse for your platform
 
-<div style="overflow: hidden">
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'windows')">Windows</button>
+  <button class="tablinks" onclick="openTab(event, 'macos')">MacOS</button>
+  <button class="tablinks" onclick="openTab(event, 'linux')">Linux</button>
+</div>
 
-<tabs>
-<tab name="/platforms/windows"> ![ x32px](/media/icons/windows.svg) **Windows**
+<div id="windows" class="tabcontent" markdown="1">
+{%- include img src="/icons/windows.svg" width="32px" -%}
+<br/>
 
 **Avoid permissions issues.** We recommend installing Eclipse *outside* of the `Program Files` directory. E.g.: `C:\Users\frood\Programs\eclipse`, where `C:\Users\frood` is your user directory.
 
@@ -47,13 +52,17 @@ Now update Eclipse's JRE to be JDK-aware:
 -   Click Search..., navigate to your JDK installation folder (e.g., `C:\Program Files\Java\jdk1.8.0_11`) and click OK
 -   Check the box next to the JRE that appears and click OK
 
-</tab>
-<tab name="macOS"> ![ x32px](/media/osx.png) **macOS**
+</div>
+<div id="macos" class="tabcontent" markdown="1">
+{%- include img src="/osx.png" width="32px" -%}
+<br/>
 
 **Understand Java 6 vs. Java 8.** Eclipse should work on macOS with no further configuration. However, we recommend reading the [macOS section of the FAQ](/help/faq#macos), as there are several Java-related issues on macOS.
 
-</tab>
-<tab name="/platforms/linux"> ![ x32px](/media/tux.png) **Linux**
+</div>
+<div id="linux" class="tabcontent" markdown="1">
+{%- include img src="/tux.png" width="32px" -%}
+<br/>
 
 **Avoid permissions issues.** We recommend installing to `$HOME/eclipse`.
 
@@ -67,9 +76,6 @@ Now update Eclipse's JRE to be JDK-aware:
 `class "GtkWidget" style "eclipse"`
 
 Then run eclipse using this command: `GTK2_RC_FILES=~/.gtkrc-eclipse eclipse`
-</tab>
-</tabs>
-
 </div>
 
 ## Clone the source code
