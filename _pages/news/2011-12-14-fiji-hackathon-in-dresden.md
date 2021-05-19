@@ -148,6 +148,24 @@ Some locals were not present at the hackathon on weekends.
 
 ## Photos
 
-<File:Fiji_Hackathon_Galleria5.jpg> <File:Fiji_Hackathon_Galleria4.jpg> <File:Fiji_Hackathon_Galleria3.jpg> <File:Fiji_Hackathon_Galleria2.jpg> <File:Fiji_Hackathon_Galeria.jpg> <File:Fiji_Hackathon_thinking.jpg> <File:Fiji_Hackathon_thinking2.jpg> <File:Fiji_Hackathon_hacking.jpg> <File:Fiji_Hackathon_Curtis.jpg> <File:Fiji_Hackathon_Josh2.jpg> <File:Fiji_Hackathon_Josh_Johannes.jpg> <File:Fiji_Hackathon_Melissa.jpg> <File:Fiji_Hackathon_Dan_Jurgen.jpg> <File:Fiji_Hackathon_Icy.jpg> <File:Fiji_Hackathon_Josh4.jpg> <File:Fiji_Hackathon_Josh3.jpg> <File:Fiji_Hackathon_Josh1.jpg> <File:Fiji_Hackathon_Kevin.jpg> <File:Fiji_Hackathon_Ferdi.jpg> <File:Fiji_Hackathon_Jean-Marie.jpg>
+{%- include img src='/fiji-hackathon-galleria5.jpg' -%}
+{%- include img src='/fiji-hackathon-galleria4.jpg' -%}
+{%- include img src='/fiji-hackathon-galleria3.jpg' -%}
+{%- include img src='/fiji-hackathon-galleria2.jpg' -%}
+{%- include img src='/fiji-hackathon-thinking.jpg' -%}
+{%- include img src='/fiji-hackathon-thinking2.jpg' -%}
+{%- include img src='/fiji-hackathon-hacking.jpg' -%}
+{%- include img src='/fiji-hackathon-curtis.jpg' -%}
+{%- include img src='/fiji-hackathon-josh2.jpg' -%}
+{%- include img src='/fiji-hackathon-josh-johannes.jpg' -%}
+{%- include img src='/fiji-hackathon-melissa.jpg' -%}
+{%- include img src='/fiji-hackathon-dan-jurgen.jpg' -%}
+{%- include img src='/fiji-hackathon-icy.jpg' -%}
+{%- include img src='/fiji-hackathon-josh4.jpg' -%}
+{%- include img src='/fiji-hackathon-josh3.jpg' -%}
+{%- include img src='/fiji-hackathon-josh1.jpg' -%}
+{%- include img src='/fiji-hackathon-kevin.jpg' -%}
+{%- include img src='/fiji-hackathon-ferdi.jpg' -%}
+{%- include img src='/fiji-hackathon-jean-marie.jpg' -%}
 
  
