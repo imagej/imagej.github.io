@@ -1,15 +1,19 @@
-{%- capture style-class -%}
-  {%- case include.align -%}
-    {%- when "left"  -%} image-left
-    {%- when "right" -%} image-right
-    {%- when "center" -%} image-center
-    {%- when "fit" -%} image-fit
-  {%- endcase -%}
-{%- endcapture -%}
+{%- assign alt = include.alt | default: include.name | default: include.src -%}
+{%- assign title = include.title | default: include.name | default: include.src -%}
+{%- assign width = include.width -%}
+{%- assign classes = include.classes | default: "" -%}
+{%- if include.align -%}
+  {%- assign classes = classes | append: " image-" | append: include.align | strip -%}
+{%- endif -%}
 
-{%- capture src -%}{%- include util/find-media src=include.src -%}{%- endcapture -%}
+{%- capture src %}{% include util/find-media path=include.src %}{% endcapture -%}
 
-<img src="{{src}}" alt="{{include.name}}" class="{{style-class}} {{include.classes}}"{%- if include.width %} width={{include.width}}{%- endif -%}>
+<img src="{{src}}"
+  {%- if alt           %} alt="{{alt}}"       {%- endif -%}
+  {%- if title         %} title="{{title}}"   {%- endif -%}
+  {%- if width         %} width={{width}}     {%- endif -%}
+  {%- if classes != "" %} class="{{classes}}" {%- endif -%}
+>
 
 {%- comment -%}
 # vi:syntax=liquid

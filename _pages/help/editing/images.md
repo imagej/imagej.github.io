@@ -30,11 +30,11 @@ Images can be added to your page by including `img` and the path to your image. 
 
 {% raw %}
 ```
-{% include img name="spirals" src="/help/spirals.png" %}
+{% include img name="spirals" src="help/spirals.png" %}
 ```
 {% endraw %}
 
-{% include img name="spirals" src="/help/spirals.png" %}
+{% include img name="spirals" src="help/spirals.png" %}
 
 ## Options
 

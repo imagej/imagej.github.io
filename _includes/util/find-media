@@ -1,18 +1,37 @@
-{%- comment -%}
-prepend /media to any image file that isn't found locally
-{%- endcomment -%}
-{%- assign found = false -%}
-{%- assign src = {{include.src}} -%}
-{%- for static_file in site.static_files -%}
-  {%- if include.src == static_file.path -%}
-    {%- assign found = true -%}
-    {%- break -%}
-  {%- endif -%}
+{%- assign path = include.path -%}
+{%- assign default-prefixes = "|/media/" | split: "|" -%}
+{%- assign prefixes = include.prefixes | default: include.prefix | default: default-prefixes -%}
+{%- assign default-suffixes = "|.svg|.png|.jpg" | split: "|" -%}
+{%- assign suffixes = include.suffixes | default: include.suffix | default: default-suffixes -%}
+
+{%- assign match = nil -%}
+{%- for prefix in prefixes -%}
+  {%- for suffix in suffixes -%}
+    {%- assign candidate = prefix | append: path | append: suffix -%}
+    {%- comment -%}
+      {%- assign match = site.static_files | find: "path", candidate -%}
+      {%- if match -%} {%- break -%} {%- endif -%}
+      We do not use the where filter here because we want
+      to terminate upon finding a match. The find filter
+      would be perfect, but is not available in Jekyll 3.9.
+    {%- endcomment -%}
+    {%- for static_file in site.static_files -%}
+      {%- if candidate == static_file.path -%}
+        {%- assign match = candidate -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- if match -%} {%- break -%} {%- endif -%}
+  {%- endfor -%}
+  {%- if match -%} {%- break -%} {%- endif -%}
 {%- endfor -%}
-{%- unless found -%}
-  {%- assign src = {{include.src}} | prepend: "/media" -%}
-{%- endunless -%}
+
+{%- if match -%}
+  {{- match -}}
+{%- else -%}
+  https://upload.wikimedia.org/wikipedia/commons/5/5b/Nuvola_filesystems_file_broken.png
+{%- endif -%}
+
 {%- comment -%}
-return the potentially update image path
+# vi:syntax=liquid
 {%- endcomment -%}
-{{src}}
