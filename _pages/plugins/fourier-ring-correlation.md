@@ -52,7 +52,7 @@ We recommend you use a calibrated image so that your results are in calibrated u
 
 # Installation
 
-This plugin is available from the {% include list-of-update-sites content='PTBIOP Update Site' %} This places it in a "BIOP" Folder in the plugins directory of Fiji/ImageJ
+This plugin is available from the [PTBIOP Update Site](/list-of-update-sites) This places it in a "BIOP" Folder in the plugins directory of Fiji/ImageJ
 
 # Use
 

@@ -18,7 +18,7 @@ If you run MATLAB R2017b and later, you don"t need to do this, as it ships and u
 
 ## Prerequisites
 
--   Add the {% include list-of-update-sites content='ImageJ-MATLAB' %} update site. See [Following an update site](/update-sites/following) for more detail.
+-   Add the [ImageJ-MATLAB](/list-of-update-sites) update site. See [Following an update site](/update-sites/following) for more detail.
     1.  You go to `Help > Update...`
     2.  Once checking status is done, open `Manage update sites`
     3.  Tick `ImageJ-MATLAB` and then `Close` <img src="/media/manageupdatesitesimagejmatlab.png" alt="fig:Manage_update_sites_ImageJ_MATLAB.png" width="550"/>

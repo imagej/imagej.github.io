@@ -47,7 +47,7 @@ The script is <b>always</b> read directly from the source file, so no updating o
 
 -   [Funimage](https://github.com/funimage/funimage/) provides a library for convenient Clojure coding within Fiji. Alleviating much of the need for type-hinting, and some of the burdens involved in handling more complicated data structures, such as those from ImgLib2.
 
-See the {% include list-of-update-sites%}
+See the [list of update sites](/list-of-update-sites)
  for information on setting up the Funimage update site.
 
 ### Running Clojure files from the command line

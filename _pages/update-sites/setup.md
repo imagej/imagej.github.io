@@ -157,7 +157,7 @@ For even more visibility and practicability, you can ask to have your update sit
 
 ## Publishing your update site
 
-If you want your update site to be listed in the ImageJ update manager, follow the instructions at this page : {% include list-of-update-sites%}
+If you want your update site to be listed in the ImageJ update manager, follow the instructions at this page : [list of update sites](/list-of-update-sites)
 .
 
 ## Further Reading

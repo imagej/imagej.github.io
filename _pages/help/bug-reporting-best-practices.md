@@ -93,7 +93,7 @@ The [Report a Bug](/help/report-a-bug) dialog provides several pieces of critica
 -   Activated update sites
 -   Files not up-to-date
 
-The {% include list-of-update-sites content='default update sites' %} are intended to be fairly stable, but if you have additional update sites enabled there can be a risk of skewed or out of date dependencies (due to changes in core libraries), and some update sites are intentionally experimental.
+The [default update sites](/list-of-update-sites) are intended to be fairly stable, but if you have additional update sites enabled there can be a risk of skewed or out of date dependencies (due to changes in core libraries), and some update sites are intentionally experimental.
 
 Furthermore, if you have any **LOCAL\_ONLY** or **MODIFIED** files, their behavior can not be guaranteed - as they do not match what's on the active update sites and thus can not be automatically updated in response to changes in their dependencies.
 
@@ -112,7 +112,7 @@ In cases where it is clear which class or classes are causing problems, you can 
 5.  Select `Manage Update Sites` and disable the update site identified in 4.
 6.  Repeat 1-5 until your problem is resolved.
 
-**NOTICE:** During this process it is critical to keep in mind that update sites take precedence in the {% include list-of-update-sites content='order they are declared' %} - update sites lower on the list will overwrite components in sites higher on the list.
+**NOTICE:** During this process it is critical to keep in mind that update sites take precedence in the [order they are declared](/list-of-update-sites) - update sites lower on the list will overwrite components in sites higher on the list.
 
 ### Binary search through your external plugins
 

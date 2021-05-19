@@ -140,7 +140,7 @@ The following tutorials show how to integrate a module of each kind in TrackMate
 
 ## Known problems
 
-TrackMate LoG detector will crash if you have the {% include list-of-update-sites content='Mosaic suite update site' %} activated. Apparently they ship something that interferes with the FFT code used by the LoG detector. The bug report can be read [on BugZilla](https://fiji.sc/bugzilla/show_bug.cgi?id=806).
+TrackMate LoG detector will crash if you have the [Mosaic suite update site](/list-of-update-sites) activated. Apparently they ship something that interferes with the FFT code used by the LoG detector. The bug report can be read [on BugZilla](https://fiji.sc/bugzilla/show_bug.cgi?id=806).
 
 ## Extensions
 

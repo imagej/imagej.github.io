@@ -14,7 +14,7 @@ Mutterer, J. & Zinck, E. (2013) **Quick-and-clean article figures with FigureJ**
 
 Aigouy B. & Mirouse V. (2013) **ScientiFig: a tool to build publication-ready scientific figures** *Nature Methods*, 10, 1048 <doi:10.1038/nmeth.2692>
 
-Each tool is available in Fiji through its own {% include list-of-update-sites content='**Update Site**' %}.
+Each tool is available in Fiji through its own [**Update Site**](/list-of-update-sites).
 
 Finally the OMERO team is also rolling out a Figure making plugin showcased here http://www.youtube.com/watch?v=anJPPx7uoUM.
 

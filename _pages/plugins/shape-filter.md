@@ -47,4 +47,4 @@ Wagner, T and Lipinski, H 2013. IJBlob: An ImageJ Library for Connected Componen
 
 # Installation
 
-You could simply use our update site "{% include list-of-update-sites content='Biomedgroup' %}" to install the shape filter plugin.
+You could simply use our update site "[Biomedgroup](/list-of-update-sites)" to install the shape filter plugin.

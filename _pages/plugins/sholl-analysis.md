@@ -469,7 +469,7 @@ Data analysis tools:
 
 ## Pre-processing
 
-This section discusses some aspects that should be taken into account when segmenting neuronal arbors to be processed by *Sholl Analysis*. Since *image segmentation* (i.e., the partitioning of images into analyzable parts) is vulnerable to noise and background fluorescence, it is not possible to generalize universal routines that efficiently binarize grayscale images. This means that any procedure that tries to appropriately describe the original fluorescence image with a binary mask must be tailored to the characteristics of individual datasets. As mentioned in [Complementary Tools](#complementary-tools), several routines listed here as distributed through the [BAR](/plugins/bar) {% include list-of-update-sites content='update site' %}.
+This section discusses some aspects that should be taken into account when segmenting neuronal arbors to be processed by *Sholl Analysis*. Since *image segmentation* (i.e., the partitioning of images into analyzable parts) is vulnerable to noise and background fluorescence, it is not possible to generalize universal routines that efficiently binarize grayscale images. This means that any procedure that tries to appropriately describe the original fluorescence image with a binary mask must be tailored to the characteristics of individual datasets. As mentioned in [Complementary Tools](#complementary-tools), several routines listed here as distributed through the [BAR](/plugins/bar) [update site](/list-of-update-sites).
 
 #### Noise  
 
@@ -479,7 +479,7 @@ Noise can be mitigated through the usage of processing filters, specially edge-p
 -   Median Filtering (2D/3D), e.g., {% include bc path="Process | Filters |" %}, {% include bc path="Plugins | 3D |" %}
 -   [Anisotropic Diffusion](/plugins/anisotropic-diffusion-2d), {% include bc path="Plugins | Process | Anisotropic Diffusion 2D" %}
 -   Sobel Edge Detection, e.g., {% include bc path="Process | Find Edges" %}
--   Shen-Castan Edge Detector ([BAR](/plugins/bar) {% include list-of-update-sites content='update site' %}), {% include bc path="BAR | Segmentation |" %}
+-   Shen-Castan Edge Detector ([BAR](/plugins/bar) [update site](/list-of-update-sites)), {% include bc path="BAR | Segmentation |" %}
 -   Frequency filters, e.g., {% include bc path="Process | FFT | Bandpass Filter..." %}
 
 #### Uneven Illumination  
@@ -496,19 +496,19 @@ It is possible to adopt more sophisticated [segmentation algorithms](/plugin-ind
 -   [Local Threshold](/plugins/auto-local-threshold), {% include bc path="Image | Adjust |" %}
 -   [Robust Automatic Threshold Selection](/plugins/rats), {% include bc path="Plugins | Segmentation |" %}
 -   [Level Sets](/plugins/level-sets), {% include bc path="Plugins | Segmentation |" %}
--   [Morphological Segmentation](/plugins/morphological-segmentation) (IJPB-plugins {% include list-of-update-sites content='update site' %}), {% include bc path="Plugins | Segmentation |" %}
--   [Squassh](/plugins/squassh), split-Bregman Image Segmentation (Segmentation and Quantification of Sub-cellular Shapes, MOSAIC ToolSuite {% include list-of-update-sites content='update site' %}), , {% include bc path="Plugins | Mosaic | Segmentation |" %}
+-   [Morphological Segmentation](/plugins/morphological-segmentation) (IJPB-plugins [update site](/list-of-update-sites)), {% include bc path="Plugins | Segmentation |" %}
+-   [Squassh](/plugins/squassh), split-Bregman Image Segmentation (Segmentation and Quantification of Sub-cellular Shapes, MOSAIC ToolSuite [update site](/list-of-update-sites)), , {% include bc path="Plugins | Mosaic | Segmentation |" %}
 
 #### Semi-Automated Segmentation  
 
 Object detection and image segmentation in images with poor signal-to-noise will likely require decisions taken by a human operator. This is frequently done using hand-crafted workflows using either ImageJ's built-in tools or external add ons. Examples:
 
 -   [Blow/Lasso Tool](/plugins/lasso-and-blow-tool), {% include bc path="Plugins | Segmentation |" %}
--   Scripts from the [BAR](/plugins/bar) {% include list-of-update-sites content='update site' %}, {% include bc path="BAR | [Segmentation](/plugins/bar#segmentation) |" %}
+-   Scripts from the [BAR](/plugins/bar) [update site](/list-of-update-sites), {% include bc path="BAR | [Segmentation](/plugins/bar#segmentation) |" %}
 
 
 {% capture tip%}
-For additional image processing tools have a look at the growing list of {% include list-of-update-sites content='update sites' %}. For more information on image processing have a look at \_\_\_SHADOW2\_\_\_, \_\_\_SHADOW3\_\_\_ and the [ImageJ User Guide](/ij/docs/guide/) .
+For additional image processing tools have a look at the growing list of [update sites](/list-of-update-sites). For more information on image processing have a look at \_\_\_SHADOW2\_\_\_, \_\_\_SHADOW3\_\_\_ and the [ImageJ User Guide](/ij/docs/guide/) .
 {% endcapture %}
 {% include tip tip=tip %}
 

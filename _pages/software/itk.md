@@ -14,7 +14,7 @@ categories: [Software,Citable]
 
 Although ITK is a C++ application, many ITK functions are available in ImageJ through the [SimpleITK](http://www.simpleitk.org/) Java compatibility layer.
 
-Enabling this functionality in ImageJ is simply a matter of turning on the {% include list-of-update-sites content='ImageJ-ITK update site' %}. Note that this will trigger a large download, as it requires the SimpleITK native library (up to a few hundred MB).
+Enabling this functionality in ImageJ is simply a matter of turning on the [ImageJ-ITK update site](/list-of-update-sites). Note that this will trigger a large download, as it requires the SimpleITK native library (up to a few hundred MB).
 
 ## What's on the update site?
 
