@@ -11,6 +11,25 @@ collections:
   pages:
     output: true
     permalink: /:path
+projects:
+  - name: Fiji
+    description: the Fiji distribution of ImageJ
+    link: /software/fiji
+  - name: ImageJ
+    description: the core ImageJ distribution
+    link: /about
+  - name: ImageJ 1.x
+    description: the legacy ImageJ 1.x application
+    link: /software/imagej1
+  - name: ImageJ2
+    description: the core ImageJ2 distribution
+    link: /software/imagej2
+  - name: SCIFIO
+    description: the SCIFIO library for scientific image I/O
+    link: /libs/scifio
+  - name: SciJava
+    description: the core SciJava software libraries
+    link: /libs/scijava
 defaults:
   -
     scope:
