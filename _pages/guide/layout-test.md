@@ -143,15 +143,15 @@ Press the {% include key key='L' %} key to access ImageJ"s most useful feature: 
 
 ## TODO / Task list
 
-The guidetask enables to make a tasklist with up to 10 entries. This could either be appended to the bottom of each article, or to article's discussion page. We could use the Todo
+The `guide/task` include enables to make a tasklist with up to 10 entries. This could either be appended to the bottom of each article, or to article's discussion page. We could use the Todo
 
 {% capture  content %}
 add link to wiki page|add info on shortcut {% include key keys='Shift|F' %}|mention alternative plugins
 {% endcapture %}
-{% include guidetask content=content %}
+{% include guide/task content=content %}
 
 
 {% capture  content %}
 add link to wiki page\|add info on usage of {% include key keys='Shift|F' %}\|mention alternative plugins
 {% endcapture %}
-{% include guidetask content=content %}
+{% include guide/task content=content %}
