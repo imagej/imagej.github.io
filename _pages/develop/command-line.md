@@ -8,9 +8,15 @@ This article explains how to install and configure command line tools for use wi
 
 ## Install and configure command line tools
 
-<div style="overflow: hidden">
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'windows')">Windows</button>
+  <button class="tablinks" onclick="openTab(event, 'macos')">MacOS</button>
+  <button class="tablinks" onclick="openTab(event, 'linux')">Linux</button>
+</div>
 
-<tabs> <tab name="/platforms/windows"> ![ x32px](/media/icons/windows.svg) **Windows**
+<div id="windows" class="tabcontent" markdown="1">
+{%- include img src='/icons/windows.svg' width='32px' -%}
+<br/>
 
 Install [Git](/develop/git), [Maven](/develop/maven), and Java SE using [Chocolatey](https://chocolatey.org/):
 
@@ -20,19 +26,26 @@ We also heartily recommend installing [Cygwin](https://www.cygwin.com/):
 
     choco install -y cyg-get
 
-</tab> <tab name="macOS"> ![ x32px](/media/osx.png) **macOS**
+</div>
+<div id="macos" class="tabcontent" markdown="1">
+{%- include img src='/osx.png' width='32px' -%}
+<br/>
 
 Install [Git](/develop/git) and [Maven](/develop/maven) using [Homebrew](http://brew.sh/):
 
     brew install git maven bash-completion
 
-Download and install [Java SE](http://www.oracle.com/technetwork/java/javase/downloads/) from Oracle. </tab> <tab name="/platforms/linux"> ![ x32px](/media/tux.png) **Linux**
+Download and install [Java SE](http://www.oracle.com/technetwork/java/javase/downloads/) from Oracle.
+
+</div>
+<div id="linux" class="tabcontent" markdown="1">
+{%- include img src='/tux.png' width='32px' -%}
+<br/>
 
     sudo apt-get install default-jdk git maven
 
-</tab> </tabs>
-
 </div>
+
 
 ## Download the source
 
