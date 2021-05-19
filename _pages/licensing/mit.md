@@ -27,4 +27,4 @@ the [Simplified BSD License](/licensing/bsd). A licensee of MIT-licensed softwar
 - Use, copy and distribute modified source or binary forms of the licensed
   program, provided that all distributed copies are accompanied by the license
 
-{% include license-links shortname="/licensing/mit" url='https://choosealicense.com/licenses/mit/' choosealicense='mit' osi='MIT' %}
+{% include licensing/links shortname="/licensing/mit" url='https://choosealicense.com/licenses/mit/' choosealicense='mit' osi='MIT' %}

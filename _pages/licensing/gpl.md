@@ -22,7 +22,7 @@ for more information.
 Version 3 of the GPL is the latest version, written in 2007. It is the
 recommended version of the GPL to use for new projects.
 
-{% include license-links url='https://www.gnu.org/licenses/gpl.html' choosealicense='gpl-3.0' osswatch='gplv3' osi='gpl-license' %} 
+{% include licensing/links url='https://www.gnu.org/licenses/gpl.html' choosealicense='gpl-3.0' osswatch='gplv3' osi='gpl-license' %} 
 
 ## GNU General Public License v2
 
@@ -31,4 +31,4 @@ relating to patents, as well as prevention of
 {% include wikipedia title='Tivoization' text='Tivoization' %}.
 It is recommended to use GPLv3 instead if possible.
 
-{% include license-links shortname='GPLv2' url='https://www.gnu.org/licenses/gpl-2.0.html' choosealicense='gpl-2.0' osswatch='gpl' %}
+{% include licensing/links shortname='GPLv2' url='https://www.gnu.org/licenses/gpl-2.0.html' choosealicense='gpl-2.0' osswatch='gpl' %}

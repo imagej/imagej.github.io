@@ -25,11 +25,11 @@ for more information.
 Version 3 of the LGPL is the latest version, written in 2007. It is the
 recommended version of the LGPL to use for new projects.
 
-{% include license-links shortname='LGPLv3' url='https://www.gnu.org/licenses/lgpl.html' choosealicense='lgpl-3.0' osi='LGPL-3.0' %}
+{% include licensing/links shortname='LGPLv3' url='https://www.gnu.org/licenses/lgpl.html' choosealicense='lgpl-3.0' osi='LGPL-3.0' %}
 
 ## GNU Lesser General Public License v2.1
 
 Version 2.1 of the LGPL is an older version from 1999. It is recommended to use
 LGPLv3 instead if possible.
 
-{% include license-links shortname='LGPLv2' url='https://www.gnu.org/licenses/lgpl-2.1.html' choosealicense='lgpl-2.1' osswatch='lgpl' osi='LGPL-2.1' %}
+{% include licensing/links shortname='LGPLv2' url='https://www.gnu.org/licenses/lgpl-2.1.html' choosealicense='lgpl-2.1' osswatch='lgpl' osi='LGPL-2.1' %}
