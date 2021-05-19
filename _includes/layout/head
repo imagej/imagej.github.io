@@ -5,8 +5,7 @@
     <link rel="stylesheet" href="/assets/css/lightbox.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7/themes/algolia-min.css"/>
     <link rel="stylesheet" href="/assets/css/main.css" />
-    <link rel="stylesheet" href="/assets/css/top-bar.css"/>
-    <link rel="stylesheet" href="/assets/css/sidebars.css" />
+    <link rel="stylesheet" href="/assets/css/layout.css"/>
     <link rel="stylesheet" href="/assets/css/images.css" />
     <link rel="stylesheet" href="/assets/css/infoboxes.css" />
     <link rel="stylesheet" href="/assets/css/plugin-index.css"/>

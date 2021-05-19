@@ -4,8 +4,7 @@
 
 $logoSize: 48px;
 $topBarHeight: $logoSize;
-$shadowSize: 4px;
-
+$boxShadowSize: 4px;
 $searchBarPadding: 5px;
 $hitTitleWidth: 200px;
 $hitIconSize: 36px;
@@ -13,6 +12,12 @@ $hitPadding: 5px;
 
 $hamMenuWidth: 250px;
 $hamMenuEdge: 20px;
+
+$sidebarWidth: 270px;
+$sidebarMargin: 12px;
+$sidebarPadding: 10px;
+
+/* ------------------------------ SEARCH BAR ------------------------------ */
 
 #top-bar {
   background-color: #3f454b;
@@ -23,8 +28,6 @@ $hamMenuEdge: 20px;
   height: $logoSize;
   float: left;
 }
-
-/* ------------------------------ SEARCH BAR ------------------------------ */
 
 #search-panel {
   display: inline-block;
@@ -43,11 +46,11 @@ $hamMenuEdge: 20px;
 
 #search-results {
   position: absolute;
-  width: #{'calc(100% - #{$logoSize + $shadowSize + 3})'};
-  top: $topBarHeight + $shadowSize;
+  width: #{'calc(100% - #{$logoSize + $boxShadowSize + 3})'};
+  top: $topBarHeight + $boxShadowSize;
   left: $logoSize;
   background: #eee;
-  box-shadow: $shadowSize $shadowSize $shadowSize lightgray;
+  box-shadow: $boxShadowSize $boxShadowSize $boxShadowSize lightgray;
   display: none;
   z-index: 1;
 }
@@ -59,7 +62,7 @@ $hamMenuEdge: 20px;
 }
 
 .ais-Hits-item {
-  width: #{'calc(100% - #{$shadowSize + 4*$hitPadding})'};
+  width: #{'calc(100% - #{$boxShadowSize + 4*$hitPadding})'};
   margin-top: 0;
   margin-bottom: 8px;
   padding: 0;
@@ -269,4 +272,217 @@ $hamMenuEdge: 20px;
 
 #ham-menu .menu details[open] > summary:after {
   left: $hamMenuWidth - $hamMenuEdge - 1;
+}
+
+.sidebar {
+  width: $sidebarWidth - $sidebarMargin;
+  height: 100vh;
+  position: sticky;
+  top: 1%;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
+  scrollbar-width: none;  /* Hide scrollbar for Firefox */
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+}
+
+.sidebar > div {
+  margin: 0 $sidebarMargin 10px $sidebarMargin;
+  padding: 5px $sidebarPadding 0 $sidebarPadding;
+  box-shadow: $boxShadowSize $boxShadowSize $boxShadowSize lightgray;
+  background: #eee;
+}
+
+#left-column {
+  float: left;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+#right-column {
+  margin-top: -70px;
+  float: right;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+/* Menus */
+
+.menu {
+  font-size: 0.85em;
+}
+
+.menu h3 {
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 1px solid darkgray;
+  margin: 0 2em 0.5em 2em;
+}
+
+.menu ul {
+  margin: 0;
+  border-left: 1px solid gray;
+  list-style-type: none;
+  line-height: 1em;
+  padding-left: 0.5em;
+}
+
+.menu > ul {
+  border: none;
+  padding: 0 0 1rem 0;
+}
+
+.menu a {
+  color: #444;
+}
+
+.menu ul li {
+  margin-bottom: 0px;
+  margin-right: 3px;
+}
+
+.menu li {
+  margin: 10px 0;
+}
+
+.menu summary {
+  outline: none;
+  cursor: pointer;
+}
+
+.menu summary.li {
+  padding-left: 1.4em;
+}
+
+.menu details > summary {
+  list-style: none;
+}
+
+.menu summary::-webkit-details-marker {
+  display: none;
+}
+
+.menu details > summary:after {
+  content: "▹";
+  font-size: 10px;
+  position: absolute;
+}
+
+.menu details[open] > summary:after {
+  content: "▿";
+  font-size: 11px;
+}
+
+
+$leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding - 30px;
+
+#left-column .menu details > summary:after {
+  left: $leftColumnArrowOffset;
+}
+
+#left-column .menu details[open] > summary:after {
+  left: $leftColumnArrowOffset - 1;
+}
+
+#right-column .menu details > summary:after {
+  right: $sidebarMargin;
+}
+
+#right-column .menu details[open] > summary:after {
+}
+
+/* ------------------------------- STATBOX -------------------------------- */
+
+#statbox {
+  font-size: small;
+  padding-bottom: 1.5em;
+}
+
+#statbox ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#statbox ul li {
+  font-size: smaller;
+  white-space: nowrap;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+#statbox h3 {
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid darkgray;
+  margin-bottom: 0.5em;
+}
+
+#statbox img {
+  max-width: 100%;
+}
+
+#statbox #statbox-image {
+  float: left;
+  max-width: 128px;
+  max-height: 128px;
+}
+
+#statbox #statbox-name {
+  font-size: large;
+}
+
+#statbox #statbox-header {
+  text-align: center;
+}
+
+#statbox #statbox-affiliation {
+  clear: left;
+  line-height: 1.2em;
+}
+
+#statbox .btn-refresh {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: auto;
+  margin-right: 10px;
+  margin-top: 5px;
+  padding: 0.25em 0.25em;
+  line-height: 0 !important;
+  text-indent: 0 !important;
+  letter-spacing: 0 !important;
+}
+
+/* ------------------------------- NAV BAR -------------------------------- */
+
+/* Credit: https://stackoverflow.com/a/37053489/1207769 */
+
+ul.nav-bar {
+  text-align: center;
+  padding: 0;
+  position: sticky;
+  top: 1%;
+	font-size: small;
+	margin-left: $sidebarWidth - $sidebarPadding;
+	margin-right: $sidebarWidth - $sidebarPadding;
+}
+
+ul.nav-bar li {
+  display: inline;
+  padding-left: 0;
+}
+
+ul.nav-bar li::after {
+	content: " ";
+	word-spacing: 1em;
+	background-image: linear-gradient(
+		-0.25turn,
+		transparent 0 calc(50% - 0.03em),
+		currentcolor 0 calc(50% + 0.03em),
+		transparent 0
+	);
 }

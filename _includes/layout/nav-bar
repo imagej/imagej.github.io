@@ -36,7 +36,7 @@ A horizontal navigation bar with links.
   {%- endcomment -%}
   {%- assign sorted-links = links | split: "|" | sort -%}
 
-  <ul class="nav-bar">
+  <ul class="nav-bar shadowed-box">
     {%- capture page-ref -%} <a href="{{page.url}}"> {%- endcapture -%}
     {%- for link in sorted-links -%}
       {%- assign l = link -%} {%- comment -%} Loop vars are immutable! O_O {%- endcomment -%}
@@ -55,7 +55,7 @@ A horizontal navigation bar with links.
   {%- comment -%}
     Explicit list of nav-links given; use it as-is.
   {%- endcomment -%}
-  <ul class="nav-bar">
+  <ul class="nav-bar shadowed-box">
   {% for p in pages %}
     {%- if p.url == page.url -%}
       <li>{{p.title | replace: " ", "&nbsp;"}}</li>
