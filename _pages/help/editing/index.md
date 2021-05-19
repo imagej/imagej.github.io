@@ -85,7 +85,6 @@ utilization instructions, [see below](/help/editing#available-includes).
 |:---------------------------------:|:-----------------------------:
 | [bc](menu-paths)                  | Insert menu breadcrumb       |
 | [citation](citations)             | Insert a citation            |
-| [conference](conferences)         | Insert conference info       |
 | [figure](images#figures)          | Insert a figure              |
 | [gallery](images#image-galleries) | Insert an image gallery      |
 | [github](linking#github)          | Link to a resource on GitHub |
