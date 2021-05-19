@@ -3,7 +3,7 @@
         <tbody>
             <tr>
                 <td>
-                    <img src="/media/icons/warn.png">
+                    <img src="/media/icons/warning.png">
                 </td>
                 <td>
                     <span markdown=1>{{include.content}}</span>
