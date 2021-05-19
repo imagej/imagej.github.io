@@ -10,16 +10,16 @@ sorted correctly, and to generate the year headers consistently.
 {%- assign newsPages = site.pages
   | sort:"date"
   | reverse
-  | where_exp:"page", "page.url contains '/news/'"
-  | where_exp:"page", "page.url != '/news/index'" -%}
+  | where_exp:"p", "p.url contains '/news/'"
+  | where_exp:"p", "p.url != '/news/index'" -%}
 
 <ul>
 {% assign headers = "" | split: ',' %}
 {%- for newsPg in newsPages -%}
-  {% capture page_year %} {{ newsPg.title | slice: 0, 4 }} {% endcapture %}
-  {% unless headers contains page_year %}
-    {% assign headers = headers | push: page_year %}
-    <h2>{{ page_year }}</h2>
+  {% capture year %} {{ newsPg.title | slice: 0, 4 }} {% endcapture %}
+  {% unless headers contains year %}
+    {% assign headers = headers | push: year %}
+    <h2>{{ year }}</h2>
   {% endunless %}
   <li><a href="{{newsPg.url}}">{{newsPg.title}}</a></li>
 {%- endfor -%}
