@@ -5,11 +5,11 @@ title: News
 
 <style>
 @media screen {
-	.news-grid {
-		display: grid;
-		grid-template-columns: 1.75fr 1fr;
-		grid-gap: 20px;
-	}
+  .news-grid {
+    display: grid;
+    grid-template-columns: 1.75fr 1fr;
+    grid-gap: 20px;
+  }
 }
 </style>
 

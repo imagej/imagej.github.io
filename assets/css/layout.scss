@@ -466,9 +466,9 @@ $leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding - 3
   padding: 0;
   position: sticky;
   top: 1%;
-	font-size: small;
-	margin-left: $sidebarWidth - $sidebarPadding;
-	margin-right: $sidebarWidth - $sidebarPadding;
+  font-size: small;
+  margin-left: $sidebarWidth - $sidebarPadding;
+  margin-right: $sidebarWidth - $sidebarPadding;
 }
 
 #nav-bar li {
@@ -477,12 +477,12 @@ $leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding - 3
 }
 
 #nav-bar li::after {
-	content: " ";
-	word-spacing: 1em;
-	background-image: linear-gradient(
-		-0.25turn,
-		transparent 0 calc(50% - 0.03em),
-		currentcolor 0 calc(50% + 0.03em),
-		transparent 0
-	);
+  content: " ";
+  word-spacing: 1em;
+  background-image: linear-gradient(
+    -0.25turn,
+    transparent 0 calc(50% - 0.03em),
+    currentcolor 0 calc(50% + 0.03em),
+    transparent 0
+  );
 }

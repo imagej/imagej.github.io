@@ -1,67 +1,67 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>{{page.title}}</title>
-		{% include layout/head %}
-		<link rel="stylesheet" href="/assets/css/page.css" />
-	</head>
-	<body class="is-preload">
-		<!-- Top bar -->
-		{% include layout/top-bar %}
+  <head>
+    <title>{{page.title}}</title>
+    {% include layout/head %}
+    <link rel="stylesheet" href="/assets/css/page.css" />
+  </head>
+  <body class="is-preload">
+    <!-- Top bar -->
+    {% include layout/top-bar %}
 
-		<!-- Page-info -->
-		{% include layout/page-info %}
+    <!-- Page-info -->
+    {% include layout/page-info %}
 
-		<section id="left-column" class="sidebar dock">
-			<!-- Menu -->
-			{% include layout/menu dockable=true %}
-		</section>
+    <section id="left-column" class="sidebar dock">
+      <!-- Menu -->
+      {% include layout/menu dockable=true %}
+    </section>
 
-		<!-- Page title -->
-		<div class="container">
-			<header class="major special">
-				<h1><strong>{{page.title}}</strong></h1>
-			</header>
-		</div>
+    <!-- Page title -->
+    <div class="container">
+      <header class="major special">
+        <h1><strong>{{page.title}}</strong></h1>
+      </header>
+    </div>
 
-		<section id="right-column" class="sidebar dock">
-			<!-- Vital stats -->
-			{% include layout/statbox %}
+    <section id="right-column" class="sidebar dock">
+      <!-- Vital stats -->
+      {% include layout/statbox %}
 
-			<!-- Table of contents -->
-			<div id="toc" class="toc menu dockable">
-				<div class="drag-handle"></div>
-				<h3>Page contents</h3>
-				<ul data-toc="#content" data-toc-headings="h1,h2,h3,h4,h5,h6"></ul>
-			</div>
-		</section>
+      <!-- Table of contents -->
+      <div id="toc" class="toc menu dockable">
+        <div class="drag-handle"></div>
+        <h3>Page contents</h3>
+        <ul data-toc="#content" data-toc-headings="h1,h2,h3,h4,h5,h6"></ul>
+      </div>
+    </section>
 
-		<!-- Nav bar -->
-		{% include layout/nav-bar %}
+    <!-- Nav bar -->
+    {% include layout/nav-bar %}
 
-		<!-- Main content -->
-		<section id="page" class="main style1">
-			<div class="container">
-				<div class="box alt"></div>
-				<div id="content" class="page-content">
-					{{content}}
-				</div>
-			</div>
-		</section>
+    <!-- Main content -->
+    <section id="page" class="main style1">
+      <div class="container">
+        <div class="box alt"></div>
+        <div id="content" class="page-content">
+          {{content}}
+        </div>
+      </div>
+    </section>
 
-		<!-- Footer -->
-		{% include layout/footer %}
+    <!-- Footer -->
+    {% include layout/footer %}
 
-		<!-- Hamburger menu -->
-		{% include layout/hamburger %}
+    <!-- Hamburger menu -->
+    {% include layout/hamburger %}
 
-		<div id="dock-overlay-left" class="dock-overlay" data-dock-target="left-column"></div>
-		<div id="dock-overlay-right" class="dock-overlay" data-dock-target="right-column"></div>
+    <div id="dock-overlay-left" class="dock-overlay" data-dock-target="left-column"></div>
+    <div id="dock-overlay-right" class="dock-overlay" data-dock-target="right-column"></div>
 
-		<!-- Search results -->
-		{% include layout/search-results %}
+    <!-- Search results -->
+    {% include layout/search-results %}
 
-		<!-- Scripts -->
-		{% include layout/scripts %}
-	</body>
+    <!-- Scripts -->
+    {% include layout/scripts %}
+  </body>
 </html>
