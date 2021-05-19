@@ -19,6 +19,11 @@ echo "[Checking include usage]"
 test $? -eq 0 && echo "--> Includes look good."
 
 echo
+echo "[Checking include documentation]"
+"$bin/check-include-help.sh"
+test $? -eq 0 && echo "--> Include docs look good."
+
+echo
 echo "[Checking HTML element id values]"
 "$bin/check-html-ids.sh"
 test $? -eq 0 && echo "--> HTML element ids look good."
