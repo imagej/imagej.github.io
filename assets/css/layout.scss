@@ -461,7 +461,7 @@ $leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding - 3
 
 /* Credit: https://stackoverflow.com/a/37053489/1207769 */
 
-ul.nav-bar {
+#nav-bar {
   text-align: center;
   padding: 0;
   position: sticky;
@@ -471,12 +471,12 @@ ul.nav-bar {
 	margin-right: $sidebarWidth - $sidebarPadding;
 }
 
-ul.nav-bar li {
+#nav-bar li {
   display: inline;
   padding-left: 0;
 }
 
-ul.nav-bar li::after {
+#nav-bar li::after {
 	content: " ";
 	word-spacing: 1em;
 	background-image: linear-gradient(

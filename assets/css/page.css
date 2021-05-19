@@ -19,6 +19,10 @@
     margin-top: 0;
     margin-bottom: 1rem;
     position: static;
-	  height: auto;
+    height: auto;
+  }
+
+  #nav-bar {
+    display: none;
   }
 }
