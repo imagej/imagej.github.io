@@ -80,6 +80,27 @@ defaults:
       icon: https://upload.wikimedia.org/wikipedia/commons/4/44/Stacked_books_silhouette.svg
   -
     scope:
+      path: "_pages/libs/imglib2"
+      type: pages
+    values:
+      icon: /media/icons/imglib2.png
+      project: ImgLib2
+  -
+    scope:
+      path: "_pages/libs/scifio"
+      type: pages
+    values:
+      icon: /media/icons/scifio.png
+      project: SCIFIO
+  -
+    scope:
+      path: "_pages/libs/scijava"
+      type: pages
+    values:
+      icon: /media/icons/scijava.png
+      project: SciJava
+  -
+    scope:
       path: "_pages/licensing"
       type: pages
     values:
@@ -120,6 +141,20 @@ defaults:
       type: pages
     values:
       icon: https://upload.wikimedia.org/wikipedia/commons/9/94/Laptop_-_The_Noun_Project.svg
+  -
+    scope:
+      path: "_pages/software/imagej1"
+      type: pages
+    values:
+      icon: /media/icons/imagej1.png
+      project: ImageJ1
+  -
+    scope:
+      path: "_pages/software/imagej2"
+      type: pages
+    values:
+      icon: /media/icons/imagej.png
+      project: ImageJ2
   -
     scope:
       path: "_pages/techniques"
