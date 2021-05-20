@@ -2,6 +2,7 @@
 title: Editing the Wiki
 section: Help:Editing the Wiki
 nav-links: true
+nav-title: Introduction
 ---
 
 This page explains how to write and edit wiki pages. The simplest way to create

@@ -21,8 +21,11 @@ A horizontal navigation bar with links.
   {%- for p in site.pages -%}
     {%- capture p-dir -%} {%- include util/dir path=p.url -%} {%- endcapture -%}
     {%- if p-dir == page-dir -%}
+      {%- comment -%} Sort index page before the others. {%- endcomment -%}
+      {%- assign url = p.url | replace: "/index", "/_index" -%}
+      {%- assign title = p.nav-title | default: p.title | replace: " ", "&nbsp;" -%}
       {%- capture link -%}
-        <li><a href="{{p.url}}">{{p.title | replace: " ", "&nbsp;"}}</a></li>
+        <li><a href="{{url}}">{{title}}</a></li>
       {%- endcapture -%}
       {%- unless links == "" -%}
         {%- assign links = links | append: "|" -%}
@@ -39,7 +42,8 @@ A horizontal navigation bar with links.
   <ul id="nav-bar" class="shadowed-box">
     {%- capture page-ref -%} <a href="{{page.url}}"> {%- endcapture -%}
     {%- for link in sorted-links -%}
-      {%- assign l = link -%} {%- comment -%} Loop vars are immutable! O_O {%- endcomment -%}
+      {%- comment -%} NB: Loop vars are immutable! O_O {%- endcomment -%}
+      {%- assign l = link | replace: "/_index", "/index" -%}
       {%- if l contains page-ref -%}
         {%- comment -%}
           This link points at the current page; remove the <a> and </a> tags.
@@ -57,10 +61,11 @@ A horizontal navigation bar with links.
   {%- endcomment -%}
   <ul id="nav-bar" class="shadowed-box">
   {% for p in pages %}
+    {%- assign title = p.title | replace: " ", "&nbsp;" -%}
     {%- if p.url == page.url -%}
-      <li>{{p.title | replace: " ", "&nbsp;"}}</li>
+      <li>{{title}}</li>
     {%- else -%}
-      <li><a href="{{p.url}}">{{p.title | replace: " ", "&nbsp;"}}</a></li>
+      <li><a href="{{p.url}}">{{title}}</a></li>
     {%- endif -%}
   {% endfor %}
   </ul>
