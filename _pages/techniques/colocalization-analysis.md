@@ -71,7 +71,7 @@ Another type of intensity-based colocalization analyses utilize the {% include w
 
 ##### Spatial cross-correlation
 
-{% include img align="right" name="Cross-correlation result" src="/media/colocalization-ccfcurve.jpg"%}
+{% include img align="right" name="Cross-correlation result" src="/media/colocalization-ccf-curve.jpg"%}
 
 In spatial cross-correlation, initially a measure of correlation of the two channels of a dual color image are evaluated in a manner similar to the pixel matching methods described above (though the exact function may vary). Then, one channel is shifted relative to the other (typically by one pixel) and then correlation is re-evaluated with that offset. This process is repeated across the entire image to generate a curve of correlation as a function of distance, as shown to the right. Like the scatterplot generating methods above, spatial cross-correlation methods work on single images and do not require more than one time point.
 
