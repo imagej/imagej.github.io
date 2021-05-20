@@ -4,9 +4,12 @@ title: Following an update site
 section: Help:Update Sites
 ---
 
-{% include updatesiteswarning-box%}
- 
-
+{% include notice icon="warning" content="Update sites are a fantastic way to
+get new functionality in your ImageJ app. Unfortunately, they are also one of
+the easiest ways to break an installation, by adding an update site that
+clashes with another update site, or even the ImageJ core. So, before enabling
+a new update site, it's safest to
+[back up your installation](/plugins/make-fiji-package)." %}
 
 ## Introduction
 

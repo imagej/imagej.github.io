@@ -179,7 +179,6 @@ The following tables list all of this site's general-purpose includes:
 | [wip](TODO)                          | Work-in-progress warning              |
 |======================================|=======================================|
 | [avoidprogramfiles](TODO)            | Program Files warning                 |
-| [updatesiteswarning-box](TODO)       | Update sites warning                  |
 | [imglib1-deprecation-info-box](TODO) | ImgLib1 deprecation warning           |
 | [sntdeprecation](TODO)               | SNT deprecation warning               |
 | [importing-classes](TODO)            | Script Editor class import warning    |
