@@ -27,7 +27,7 @@
       {%- when "MacOS"         -%} /platforms/macos
       {%- when "Maven"         -%} /develop/maven
       {%- when "Micro-Manager" -%} /software/micro-manager
-      {%- when "MiToBo"        -%} /software/mitobo
+      {%- when "MiToBo"        -%} /plugins/mitobo
       {%- when "OME"           -%} /software/omero
       {%- when "OMERO"         -%} /software/omero
       {%- when "Orbit"         -%} /software/orbit
