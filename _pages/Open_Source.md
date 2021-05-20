@@ -8,7 +8,7 @@ categories: [Development]
 
 Everybody is welcome to [contribute](/about/contributing) with [plugins](/plugins), patches, [bug reports](/help/report-a-bug), [tutorials](/tutorials), [documentation](/learn), and artwork.
 
-The [SciJava](SciJava) ecosystem is strongly committed to open-source software development. This software is not an open source software *product*—it is an open-source software *project* following an open-source development *process*. There are public [source code repositories](/develop/source), public [communication](Communication) channels, public [project management](/develop/project-management) resources, and of course, this [community editable website](Help_Contents). See the [Philosophy](/develop/philosophy) page for more information.
+The [SciJava](SciJava) ecosystem is strongly committed to open-source software development. This software is not an open source software *product*—it is an open-source software *project* following an open-source development *process*. There are public [source code repositories](/develop/source), public [communication](/help/communication) channels, public [project management](/develop/project-management) resources, and of course, this [community editable website](Help_Contents). See the [Philosophy](/develop/philosophy) page for more information.
 
 ## Why open source?
 
@@ -26,7 +26,7 @@ Further, we strive for ImageJ to be a community driven project. It is not merely
 
 -   Public [source code](/develop/source) repositories including complete development history.
 -   Public [issue trackers](//develop/project-management#issue-tracking).
--   Public [communication channels](Communication) for open discussion.
+-   Public [communication channels](/help/communication) for open discussion.
 -   Public [wiki](/) for community contributed content.
 -   [Travis CI](/develop/travis), ImageJ's public {% include wikipedia title='Continuous integration' text='continuous integration'%} system.
 -   Public [Maven repository](//develop/project-management#maven) for ImageJ binaries.
