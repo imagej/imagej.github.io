@@ -41,20 +41,33 @@ Backward compatibility is one of ImageJ's most important goals. It must remain p
 
 ## Release early, release often
 
-{% include box title="**What's the alternative?**" width='50%' float='right' text='Some projects opt to release their entire software stack with a single monolithic version number. This has one extremely nice ramification: it clearly communicates which versions of which software components are intended to be compatible with one another.
+{% include aside title="What's the alternative?" content="
+Some projects opt to release their entire software stack in a ***big bang***
+with a single monolithic version number. This has one extremely nice
+ramification: it clearly communicates which versions of which software
+components are intended to be compatible with one another.
 
-For example, the [OME](/software/omero) project (which includes [OMERO](/software/omero) and [Bio-Formats](/formats/bio-formats)) employs this approach to versioning and release management. Before each release, the entire OME team performs careful and thorough integration testing of all components.
+For example, the [OME](/software/omero) project (which includes
+[OMERO](/software/omero) and [Bio-Formats](/formats/bio-formats)) employs
+this approach to versioning and release management. Before each release, the
+OME team performs careful and thorough integration testing of all components.
 
-**Versioning Strategies**
+ImageJ and Fiji, in contrast, use the ***RERO*** style of releases, with
+compatible component versions declared in a
+[Bill of Materials](/develop/architecture#bill-of-materials) (BOM).
+Releases can happen more frequently, but consumers must take care to consult
+the BOM when combining various components together, or else there might be
+*version skew*." -%}
 
-| *Versioning* | BOM | Monoversioned |
-|-|-|-|
-| *Releases* | RERO | Big bang |
-| *Version compatibility* | Compatible components are declared in a [Bill of Materials](//develop/architecture#bill-of-materials) (BOM) | Compatible components have the same version number |
-| *Frequency of releases* | Faster | Slower |
-| *Stability* | Less | More |
-
-' %} ImageJ subscribes to the {% include wikipedia title='Release early, release often' text='release early, release often'%} (RERO) mantra often cited in software engineering circles. In particular—and especially because there is a small core development team—the project is driven by [Boyd's Law of Iteration](http://blog.codinghorror.com/boyds-law-of-iteration/): **speed of iteration beats quality of iteration**. That is not to say that we do not strive for quality—we do. But we have found through experience that more releases, together with guiding user feedback, push a project forward more efficiently than a slower release cycle does.
+ImageJ subscribes to the
+{% include wikipedia title='Release early, release often' text='release early, release often' %}
+(RERO) mantra often cited in software engineering circles. In particular—and
+especially because there is a small core development team—the project is driven
+by [Boyd's Law of Iteration](http://blog.codinghorror.com/boyds-law-of-iteration/):
+**speed of iteration beats quality of iteration**. That is not to say that we
+do not strive for quality—we do. But we have found through experience that more
+releases, together with guiding user feedback, push a project forward more
+efficiently than a slower release cycle does.
 
 To ensure releases can happen quickly, each SciJava component is independently released and versioned, using [reproducible builds](/develop/architecture#reproducible-builds) with a "release ready" `master` branch. This allows individual SciJava components to be released with the [push of a button](/develop/travis), in a *timespan less than five minutes*. This puts bug-fixes into the hands of users as quickly as possible.
 

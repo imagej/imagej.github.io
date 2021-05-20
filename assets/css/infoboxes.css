@@ -126,21 +126,20 @@ div.miniboxcaption {
 /* ===== SIDEBOXES ===== */
 
 .sidebox {
-  width: 40%;
+  width: 100%;
   border: 0px solid #ccc;
-  padding: 15px !important;
+  padding: 1em;
   margin-top: 1em;
   margin-bottom: 2em;
-  margin-left: 1em;
-  background-color: white;
+  background-color: lightyellow;
   border-radius: .75em;
   box-shadow: 4px 4px 4px #CCC;
 }
 
-.left {
-  float:left;
-}
-
-.right {
-  float:right;
+@media screen and (min-width: 1200px) {
+  .sidebox {
+    width: 40%;
+    float: right;
+    margin-left: 1em;
+  }
 }

@@ -23,15 +23,29 @@ On macOS, there is no problem: Aqua provides GUI-independent text rendering (map
 
 ## The `--headless` mode
 
+{% capture historical-note %}
+Headless support was originally a branch in [ImageJA](/libs/imageja); it worked
+by putting rewritten versions of three core ImageJ classes into a file called
+*headless.jar*, which was put into the class path *before* `ij.jar` so they
+would override ImageJ's versions.
 
-{% capture text%}
-Headless support was originally a branch in [ImageJA](/libs/imageja); it worked by putting rewritten versions of three core ImageJ classes into a file called *headless.jar*, which was put into the class path *before* `ij.jar` so they would override ImageJ"s versions.
-
-Nowadays, we use [Javassist](/develop/javassist) for run-time patching, through the {% include github org='imagej' repo='ij1-patcher' label='ImageJ 1.x patcher' %} project. <span style="color: red">You do not need to do anything special to take advantage of this feature, except pass the `--headless` flag when launching ImageJ from the command line.</span>
+Nowadays, we use [Javassist](/develop/javassist) for run-time patching, through
+the
+{% include github org='imagej' repo='ij1-patcher' label='ImageJ 1.x patcher' %}
+project. <span style="color: red">You do not need to do anything special to
+take advantage of this feature, except pass the `--headless` flag when
+launching ImageJ from the command line.</span>
 {% endcapture %}
-{% include box title='Historical note' float='right' text=text %} [ImageJ2](/software/imagej2) provides the capability to execute ImageJ plugins, macros and scripts in headless mode. This feature uses bytecode manipulation to patch ImageJ 1.x's behavior at runtime, making it possible to start ImageJ in batch mode without instantiating GUI components.
+{% include aside title="Historical note" content=historical-note %}
 
-**Shortcoming:** There are plugins which are even more bound to a GUI than ImageJ 1.x is. Naturally, these plugins will still try to instantiate GUI elements when being called in headless mode, failing.
+[ImageJ2](/software/imagej2) provides the capability to execute ImageJ plugins,
+macros and scripts in headless mode. This feature uses bytecode manipulation to
+patch ImageJ 1.x's behavior at runtime, making it possible to start ImageJ in
+batch mode without instantiating GUI components.
+
+**Shortcoming:** There are plugins which are even more bound to a GUI than
+ImageJ 1.x is. Naturally, these plugins will still try to instantiate GUI
+elements when being called in headless mode, failing.
 
 ### Running scripts in headless mode
 

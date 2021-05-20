@@ -1,8 +1,0 @@
-<div class="sidebox-right" width="{{include.width}}">
-    {{include.title | markdownify}}
-    {{include.text | markdownify}}
-</div>
-
-{%- comment -%}
-# vi:syntax=liquid
-{%- endcomment -%}

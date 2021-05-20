@@ -17,16 +17,18 @@ The SciJava [philosophy](/develop/philosophy) is to [release early, release ofte
 
 Whether adding new features, fixing bugs, improving performance, etc... **development** is the process of making changes, with the goal of exposing these changes to users. To accomplish this, actively developed projects cycle through five general "phases":
 
+{% capture maven-artifacts %}
+Artifacts are files, most commonly a
+**{% include wikipedia title='JAR (file format)' text='JAR' %}**
+encapsulating the compiled classes for a component.
+Other files that may be produced as artifacts include:
 
-{% capture text %}
-Artifacts are files, most commonly a **{% include wikipedia title='JAR (file format)' text='JAR' %}** encapsulating the compiled classes for a component. Other files that may be produced as artifacts include:
-
--   The project"s ** [POM](https://maven.apache.org/pom.html) **
--   A jar with the original source files
--   A jar with any generated javadoc
--   A jar with any test files
+- The project's **[POM](https://maven.apache.org/pom.html)**
+- A jar with the original source files
+- A jar with any generated javadoc
+- A jar with any test files
 {% endcapture %}
-{% include box title='What are Maven artifacts?' width='30%' float='right' text=text %}
+{% include aside title="What are Maven artifacts?" content=maven-artifacts %}
 
 1.  **In development.** The source code is modified to add new features, fix bugs, etc... these modifications are expressed as *commits* by [Git](/develop/git), whether on your local filesystem, a topic branch, or a repository fork.
 2.  **On master.** When you have a set of one or more *commits* that you are happy with (i.e. the feature is complete, or the bug is fixed) they are moved to the `master` branch of the project's repository on GitHub. This ensures the `master` branch is always *release ready*.
@@ -46,34 +48,71 @@ To provide users with an updated version of an artifact (phases 3, 4 and 5) the 
 
 # Phases in-depth
 
-{% include box float='right' title='When to use a topic branch?' text='[Core SciJava components](/develop/architecture) employ a "release ready master branch" approach:
+{% include aside title="When to use a topic branch?"
+  content="[Core SciJava components](/develop/architecture) employ a \"release
+ready main branch\" approach:
 
--   The tip of the master branch is always stable enough to be released, "as good or better" than the state of its last release.
--   Each commit on the master branch should compile with passing tests. This has several advantages—e.g., better [bisect-style debugging](https://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git#Binary-Search) .
+- The tip of the main branch is always stable enough to be released, \"as
+  good or better\" than the state of its last release.
+- Each commit on the main branch should compile with passing tests.
+  This has several advantages—e.g., better
+  [bisect-style debugging](https://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git#Binary-Search).
 
-Topic branches are great for isolating potentially disruptive and/or unfinished changes from the master branch, so that it always remains release ready. However, pushing directly to master has a huge time savings over filing a PR and awaiting review for days, weeks or months. Getting changes onto master quickly has many advantages:
+Topic branches are great for isolating potentially disruptive and/or unfinished
+changes from the main branch, so that it always remains release ready.
+However, pushing directly to main has a huge time savings over filing a PR
+and awaiting review for days, weeks or months. Getting changes onto main
+quickly has many advantages:
 
--   **Fewer conflicts.** It avoids conflicts between multiple long-running topic branches.
--   **SNAPSHOT builds.** [Travis](/develop/travis) builds the change into the latest SNAPSHOT build, making it available from the [SciJava Maven repository](//develop/project-management#maven).
--   **Faster support.** Supporting the community is less convoluted, with changes released to users more rapidly. Yes, you can link to changes on a topic branch. And yes, you can upload binary builds from that branch. But each extra manual step costs time—better to link directly to the latest SNAPSHOT build. There are even ImageJ [update sites](/update-sites) which serve the latest builds from master, to make it easier for non-technical users to test changes.
--   **Less complex.** The more topic branches you have—and in particular, the more integration branches you have—the more complex the system becomes, the more supporting tooling, CI jobs, etc. are needed. And the more developer time is needed to maintain the tooling, sort through topic branches, keep track of open PRs... leaving less time for developing new features and fixing bugs.
+- **Fewer conflicts.** It avoids conflicts between multiple long-running topic
+  branches.
+- **SNAPSHOT builds.** [Travis](/develop/travis) builds the change into the
+  latest SNAPSHOT build, making it available from the
+  [SciJava Maven repository](//develop/project-management#maven).
+- **Faster support.** Supporting the community is less convoluted, with changes
+  released to users more rapidly. Yes, you can link to changes on a topic
+  branch. And yes, you can upload binary builds from that branch. But each
+  extra manual step costs time—better to link directly to the latest SNAPSHOT
+  build. There are even ImageJ [update sites](/update-sites) which serve the
+  latest builds from main, to make it easier for non-technical users to test
+  changes.
+- **Less complex.** The more topic branches you have—and in particular, the
+  more integration branches you have—the more complex the system becomes, the
+  more supporting tooling, CI jobs, etc. are needed. And the more developer
+  time is needed to maintain the tooling, sort through topic branches, keep
+  track of open PRs... leaving less time for developing new features and fixing
+  bugs.
 
-Hence, when exactly to use a topic branch is a judgment call, but some good times to use a topic branch are:
+Hence, when exactly to use a topic branch is a judgment call, but some good
+times to use a topic branch are:
 
--   **Breaking.** The changes break [backwards compatibility](/libs/imagej-legacy).
--   **New API.** The changes introduce significant new API which will need to remain backwards compatible in the future, and review is desired before committing to that API.
--   **Unfinished.** The changes are unfinished.
--   **Regressing.** The changes leave the codebase in a "worse" state somehow.
--   **Discussion.** To solicit discussion from the [community](/help), especially if the changes might be contentious.
+- **Breaking.** The changes break
+  [backwards compatibility](/libs/imagej-legacy).
+- **New API.** The changes introduce significant new API which will need to
+  remain backwards compatible in the future, and review is desired before
+  committing to that API.
+- **Unfinished.** The changes are unfinished.
+- **Regressing.** The changes leave the codebase in a \"worse\" state somehow.
+- **Discussion.** To solicit discussion from the [community](/help),
+  especially if the changes might be contentious.
 
-Conversely, some situations to push directly to master:
+Conversely, some situations to push directly to main:
 
--   **Correct.** Bug-fixes where the developer is confident the fix is correct.
--   **No new API.** Small new additions which do not introduce significant future maintenance burden.
--   **Unstable.** Changes to unstable or experimental components still in their "incubation" period of development (i.e., versioned at 0.x), since there is no promise of backwards compatibility.
--   **Unsupported.** Changes to "unsupported" components which make no guarantee of backwards compatibility.
+- **Correct.** Bug-fixes where the developer is confident the fix is correct.
+- **No new API.** Small new additions which do not introduce significant future
+  maintenance burden.
+- **Unstable.** Changes to unstable or experimental components still in their
+  \"incubation\" period of development (i.e., versioned at 0.x), since there is
+  no promise of backwards compatibility.
+- **Unsupported.** Changes to \"unsupported\" components which make no
+  guarantee of backwards compatibility.
 
-Lastly, keep in mind that SciJava favors the [release early, release often](/develop/philosophy#release-early-release-often) style of development, to maximize iterations of community feedback. Just because a change makes it to the master branch, does not mean it is set in stone: if a problem is later found, the change can be amended or reverted as quickly as it was added—easy come, easy go.' %}
+Lastly, keep in mind that SciJava favors the
+[release early, release often](/develop/philosophy#release-early-release-often)
+style of development, to maximize iterations of community feedback. Just
+because a change makes it to the main branch, does not mean it is set in stone:
+if a problem is later found, the change can be amended or reverted as quickly
+as it was added—easy come, easy go." %}
 
 ## Phase 1: In development
 
@@ -134,7 +173,21 @@ To update the version of your component listed in the {% include github org='sci
 
 ## Phase 5: Uploaded
 
-{% include box title='What are ImageJ update sites?' width='30%' float='right' text='ImageJ [update sites](/update-sites) are what ImageJ actually queries to download updates. These update sites are versioned, but do not rely on other tools (e.g., [Git](/develop/git) or [Maven](/develop/maven)) in order to function. Rather, component developers upload new versions of their component(s) using the [ImageJ Updater](/plugins/updater), which makes them available to end users. Typically, update sites are available as web sites via HTTP, with uploads functioning via [WebDAV](https://github.com/imagej/imagej-plugins-uploader-webdav) or [SSH/SFTP/SCP](https://github.com/imagej/imagej-plugins-uploader-ssh) .' %} Deploying to the Maven repository creates a stable release artifact of a software component usable by other developers. But for ImageJ-related components, that alone does not put it into the hands of users. To do that, the component must then be *uploaded* to an ImageJ [update site](/update-sites).
+{% include aside title="What are ImageJ update sites?"
+  content="ImageJ [update sites](/update-sites) are what ImageJ actually
+queries to download updates. These update sites are versioned, but do not rely
+on other tools (e.g., [Git](/develop/git) or [Maven](/develop/maven)) in order
+to function. Rather, component developers upload new versions of their
+component(s) using the [ImageJ Updater](/plugins/updater), which makes them
+available to end users. Typically, update sites are available as web sites via
+HTTP, with uploads functioning via
+[WebDAV](https://github.com/imagej/imagej-plugins-uploader-webdav) or
+[SSH/SFTP/SCP](https://github.com/imagej/imagej-plugins-uploader-ssh)." %}
+
+Deploying to the Maven repository creates a stable release artifact of a
+software component usable by other developers. But for ImageJ-related
+components, that alone does not put it into the hands of users. To do that, the
+component must then be *uploaded* to an ImageJ [update site](/update-sites).
 
 ### ImageJ and Fiji update sites
 

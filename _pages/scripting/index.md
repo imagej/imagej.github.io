@@ -168,18 +168,20 @@ You can create, edit and run scripts using the built-in [Script Editor](/scripti
 
 For the script to appear in the ImageJ menus, the following must apply:
 
-{% include box text='".txt" is not a supported script extension' width='30%' float='right' %}
+{% include notice icon="warning" content="`.txt` is not a supported script extension" %}
 
-1.  The script file is saved in the `ImageJ.app/scripts` or the `ImageJ.app/plugins/Scripts` directory (or a subdirectory thereof).
-2.  The script name ends in a supported script extension. For example
-    -   ".groovy" for groovy,
-    -   ".js" for javascript,
-    -   ".py" for jython,
-    -   ".rb" for jruby,
-    -   ".clj" for clojure,
-    -   ".bsh" for beanshell, and
-    -   ".ijm" for ImageJ 1.x macros.
-3.  The script name contains a '\_' (underscore) character, e.g. "MyScript\_.ijm".
+1.  The script file is saved in the `ImageJ.app/scripts` or the
+    `ImageJ.app/plugins/Scripts` directory (or a subdirectory thereof).
+2.  The script name ends in a supported script extension. For example:
+    - `.groovy` for groovy,
+    - `.js` for javascript,
+    - `.py` for jython,
+    - `.rb` for jruby,
+    - `.clj` for clojure,
+    - `.bsh` for beanshell, and
+    - `.ijm` for ImageJ 1.x macros.
+3.  The script name contains a `_` (underscore) character,
+    e.g. `MyScript_.ijm`.
 
 {% include notice icon="fiji" content='Replace `ImageJ.app` with `Fiji.app`' %}
 

@@ -24,14 +24,22 @@ However, Fiji (like ImageJ) should run on any system for which a Java 8 runtime 
 
 # Installation
 
-{% include avoidprogramfiles%}
- {% include box title='Packages for Debian / Ubuntu' float='right' text='
+{% include avoidprogramfiles %}
 
-We used to offer Debian packages of Fiji. Unfortunately, for a variety of reasons, we are withdrawing support for these packages until such time as someone is able to maintain them properly, so please switch to using the Linux downloads above instead.
+{% include aside title="Packages for Debian / Ubuntu" content="
+We used to offer Debian packages of Fiji. Unfortunately, for several reasons,
+we are withdrawing support for these packages until such time as someone is
+able to maintain them properly, so please switch to using the Linux downloads
+above instead.
 
-If you are a Debian packaging expert who would like to address this situation, we would love to have your help—please join us in [chat](/about/chat) or on the [forum](http://forum.imagej.net/c/development) .
+If you are a Debian packaging expert who would like to address this situation,
+we would love to have your help—please join us in [chat](/about/chat) or on the
+[forum](http://forum.image.sc/c/development)." %}
 
-' %} Fiji is distributed as a {% include wikipedia title='Portable application' text='portable application'%}. That means that you do not have to run an installer; just download, unpack and start it.
+Fiji is distributed as a
+{% include wikipedia title='Portable application' text='portable application' %}.
+That means that you do not have to run an installer; just download, unpack and
+start it.
 
 # Troubleshooting
 

@@ -169,21 +169,22 @@ The following tables list all of this site's general-purpose includes:
 
 #### Notices
 
-| Include                              | Purpose                             |
-|--------------------------------------|-------------------------------------|
-| [notice](notices)                   | Insert an informational notice  |
-| [outdated](TODO)                     | Outdated content warning            |
-| [unmaintained](TODO)                 | Warning about unmaintained software |
-| [stub](TODO)                         | Empty content warning               |
-| [wip](TODO)                          | Work-in-progress warning            |
-|======================================|=====================================|
-| [avoidprogramfiles](TODO)            | Program Files warning               |
-| [updatesiteswarning-box](TODO)       | Update sites warning                |
-| [imglib1-deprecation-info-box](TODO) | ImgLib1 deprecation warning         |
-| [sntdeprecation](TODO)               | SNT deprecation warning             |
-| [importing-classes](TODO)            | Script Editor class import warning  |
-| [communication](TODO)                | List of ways to get ImageJ help     |
-| [recommendedcontact](TODO)           | Recommend to use the Image.sc Forum |
+| Include                              | Purpose                               |
+|--------------------------------------|---------------------------------------|
+| [notice](notices)                    | Insert an informational notice banner |
+| [aside](TODO)                        | Float a right sidebar with commentary |
+| [outdated](TODO)                     | Outdated content warning              |
+| [unmaintained](TODO)                 | Warning about unmaintained software   |
+| [stub](TODO)                         | Empty content warning                 |
+| [wip](TODO)                          | Work-in-progress warning              |
+|======================================|=======================================|
+| [avoidprogramfiles](TODO)            | Program Files warning                 |
+| [updatesiteswarning-box](TODO)       | Update sites warning                  |
+| [imglib1-deprecation-info-box](TODO) | ImgLib1 deprecation warning           |
+| [sntdeprecation](TODO)               | SNT deprecation warning               |
+| [importing-classes](TODO)            | Script Editor class import warning    |
+| [communication](TODO)                | List of ways to get ImageJ help       |
+| [recommendedcontact](TODO)           | Recommend to use the Image.sc Forum   |
 
 #### Source code
 
@@ -212,9 +213,6 @@ The following tables list all of this site's general-purpose includes:
 | [youtube-playlist](videos#youtube-playlists) | Generalize to more video platforms |
 | [info-box](notices#info-box)                 | Delete after migrating to statbox  |
 | [biginfo-box](notices#big-info-box)          | Merge with notice                  |
-| [sidebox-left](sideboxes)                    | Discontinue                        |
-| [sidebox-right](sideboxes)                   | Discontinue                        |
-| [box](TODO)                                  | Discontinue?                       |
 | [minibox](notices#min-info-box)              | Discontinue?                       |
 | [clear](TODO)                                | Delete after purging all floats    |
 | [extendingtrackmatetutorials](TODO)          | Delete after converting to nav-bar |

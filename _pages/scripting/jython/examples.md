@@ -4,9 +4,14 @@ title: Jython Scripting Examples
 categories: [Scripting,Jython]
 ---
 
-{% include info-box content='This page is a copy of [Jython Scripting](/scripting/jython). The original wiki page is in a rewrite progress. When rewriting [Jython Scripting](/scripting/jython) is finished, this wiki page will be shortened to only contain Jython code examples.' %}
+{% include notice icon='info' content='This page is a copy of
+[Jython Scripting](/scripting/jython). The original wiki page is in a rewrite
+progress. When rewriting [Jython Scripting](/scripting/jython) is finished,
+this wiki page will be shortened to only contain Jython code examples.' %}
 
-[Jython](http://www.jython.org/) is an implementation of the [Python programming language](https://www.python.org/) designed to run on the Java platform.
+[Jython](https://www.jython.org/) is an implementation of the
+[Python programming language](https://www.python.org/) designed to run on the
+Java platform.
 
 ## Quickstart
 
@@ -57,12 +62,22 @@ To create a script for the GUI, the recommended setup is the following:
 The next time Fiji is run, it will setup all your scripts in the Plugins menu.
 
 If all you need is a script to run in headless mode, simply do:
+```
+fiji --headless filepath.py
+```
 
-` fiji --headless filepath.py`
+### Some limitations of Jython
 
-### Some limitations of jython
+{% include aside title="What about NumPy and SciPy?" content="
+If you like Python, you probably want to use Python modules such as the
+excellent [NumPy](https://numpy.org/) and [SciPy](https://scipy.org/)
+libraries. Unfortunately, Jython does not support linking to Python modules
+backed by native code. If you need to use such modules, we recommend using
+[PyImageJ](https://pypi.org/project/pyimagej/) to call ImageJ functions from
+the Python side." %}
 
-{% include box float='right' title='What about NumPy and SciPy?' %} Though jython tries to be as close as possible as python, there are some differences you may experience during scripting.
+Though Jython tries to be as close as possible as Python, there are some
+differences you may experience during scripting.
 
 -   <u>Float "special numbers" such as *NaN* and *Inf* are not handled.</u>
 
@@ -922,8 +937,9 @@ The script takes a directory of images and processed them all, resulting in new 
      win.getCanvas().addMouseListener(listener)
 
 After running the script, clicking on any image will result in printing a line to the log window, like:
-
-` clicked on: imp[Untitled-1 400x200x1]`
+```
+clicked on: imp[Untitled-1 400x200x1]
+```
 
 ### Add a key listener to the canvas of every open image
 

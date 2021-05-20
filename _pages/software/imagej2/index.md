@@ -6,22 +6,17 @@ categories: [Software,ImageJ2,SciJava,Citable]
 
 {% include project content='ImageJ' %}
 
-<div style="clear: right; float: right">
-
-{% include box float='right' text='
-
+{% include aside content="
 ## Mission
 
--   **Design** the next generation of ImageJ, driven by the needs of the community.
--   **Collaborate** across organizations, fostering open development through sharing and reuse.
--   **Broaden** ImageJ"s usefulness and relevance across many disciplines of the scientific community.
--   **Maintain** backwards compatibility with existing ImageJ functionality.
--   **Unify** online resources to a central location for the ImageJ community.
--   **Lead** ImageJ development with a clear vision.
+- **Design** the next generation of ImageJ, driven by the needs of the community.
+- **Collaborate** across organizations, fostering open development through sharing and reuse.
+- **Broaden** ImageJ's usefulness and relevance across many disciplines of the scientific community.
+- **Maintain** backwards compatibility with existing ImageJ functionality.
+- **Unify** online resources to a central location for the ImageJ community.
+- **Lead** ImageJ development with a clear vision.
 
-See also [these presentation slides about ImageJ](/presentations/2015-09-03-imagej2-and-fiji/#/4) .' %}
-
-</div>
+See also [these presentation slides about ImageJ](/presentations/2015-09-03-imagej2-and-fiji/#/4)." %}
 
 ImageJ2 is a new version of [ImageJ](/about) for the next generation of multidimensional image data, with a focus on scientific imaging. Its central goal is to broaden the paradigm of ImageJ beyond the limitations of ImageJ 1.x, to support the next generation of multidimensional scientific imaging.
 

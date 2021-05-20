@@ -1,0 +1,10 @@
+{%- assign width = include.width -%}
+{%- assign title = include.title -%}
+<div class="sidebox"{% if width %} width="{{width}}"{% endif %}>
+{% if title %}<strong>{{title | markdownify}}</strong>{% endif %}
+<div>{{include.content | markdownify}}</div>
+</div>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

@@ -4,9 +4,6 @@ title: Troubleshooting
 section: Help
 ---
 
-
-
-
 # How to troubleshoot problems
 
 ## Checking the Java version
@@ -178,13 +175,46 @@ While ImageJ strives for [reproducible](/develop/architecture#reproducible-build
 
 ## OutOfMemoryError
 
-{% include box float='right' %} The error means ImageJ ran out of available {% include wikipedia title='Random-access memory' text='computer memory'%} (*not* hard drive space).
+{% capture memory-behavior %}
+This is a characteristic of the Java runtime. In many cases, Java *never*
+releases memory back to the system, so memory monitors such as Windows Task
+Manager will always report an ever-growing amount of RAM used by the Java
+process, until the JVM shuts down.
+
+The best way to monitor ImageJ's actual memory usage is to run the
+[{% include bc path="Plugins | Utilities | Monitor Memory..." %}](https://imagej.net/docs/guide/146-31.html#toc-Subsubsection-31.3.5)
+command. You can also click on the ImageJ
+[status bar](/learn/getting-started#the-status-bar) to trigger a garbage
+collection operation, which will typically decrease the memory use.
+
+That said, some articles suggest that you can cause Java to give back
+free memory to the OS under certain conditions; see:
+
+* [Java still uses system memory after deallocation of objects and garbage collection](https://stackoverflow.com/q/324499)
+* [java.exe process uses more memory and does not free it up](https://stackoverflow.com/q/16649601)
+* [JVM Memory : Why memory on task manager difference with JProbe (or JConsole tool)](https://stackoverflow.com/q/12017437)
+
+To be clear, Java does reuse memory when you close and reopen images. The
+behavior described above is not a memory *leak* per se. It should be possible
+to leave ImageJ running for days or weeks at a time doing batch processing and
+it have it work just fine.
+
+See also:
+
+* [Automatically release unused memory in ImageJ / Fiji](http://stackoverflow.com/q/22912063)
+{% endcapture %}
+{% include aside content=memory-behavior
+  title="Why does ImageJ not release any memory back to the system?" %}
+
+The error means ImageJ ran out of available
+{% include wikipedia title='Random-access memory' text='computer memory' %}
+(*not* hard drive space).
 
 The first thing to do is make sure that ImageJ has a large enough "maximum heap" size:
 
--   {% include bc path='Edit | Options | Memory & Threads'%}
--   Change "Maximum Memory" to something larger (at most, 1000 MB less than your computer's total RAM).
--   Restart ImageJ for the new memory settings to take effect.
+- {% include bc path='Edit | Options | Memory & Threads' %}
+- Change "Maximum Memory" to something larger (at most, 1000 MB less than your computer's total RAM).
+- Restart ImageJ for the new memory settings to take effect.
 
 Note that in most cases, the [ImageJ launcher](Launcher) will make an initial guess at a reasonable value: \~75% of physical RAM.
 

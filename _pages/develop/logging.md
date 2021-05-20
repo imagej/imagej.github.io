@@ -22,7 +22,12 @@ For these reasons, nearly everyone and their dog either uses a logging framework
 
 ## What about SLF4J?
 
-{% include box float='right' %}The [SLF4J](http://slf4j.org/) project is a great idea: rather than yet another logging framework, it is a facade for logging frameworks. That is: it is an interface-driven API which can be backed by any logging framework you wish, via a dedicated *binding* library. In theory, if everyone just used SLF4J, they'd simply add a compile-time dependency on org.slf4j:slf4j-api, and ship the binding of their choice at runtime so that their application would then log using, say, [Apache Log4j](http://logging.apache.org/log4j/2.x/) or [java.util logging](http://docs.oracle.com/javase/7/docs/api/java/util/logging/package-summary.html) or [Logback](http://logback.qos.ch/). Because every developer wants to decide that for themselves, right?
+{% include aside content="To be precise, the
+[Jakarta/Apache Commons Logging](https://commons.apache.org/proper/commons-logging/)
+project did the whole \"facade\" thing before SLF4J did. But the community
+seems to have largely standardized on SLF4J." %}
+
+The [SLF4J](http://slf4j.org/) project is a great idea: rather than yet another logging framework, it is a facade for logging frameworks. That is: it is an interface-driven API which can be backed by any logging framework you wish, via a dedicated *binding* library. In theory, if everyone just used SLF4J, they'd simply add a compile-time dependency on org.slf4j:slf4j-api, and ship the binding of their choice at runtime so that their application would then log using, say, [Apache Log4j](http://logging.apache.org/log4j/2.x/) or [java.util logging](http://docs.oracle.com/javase/7/docs/api/java/util/logging/package-summary.html) or [Logback](http://logback.qos.ch/). Because every developer wants to decide that for themselves, right?
 
 Unfortunately, SLF4J suffers from a couple of downsides:
 
@@ -34,7 +39,17 @@ Still, SLF4J is a nice thing, so the SciJava project does provide a {% include g
 
 ## How does logging work in ImageJ?
 
-{% include box float='right' %} [ImageJ2](/software/imagej2) uses the SciJava logging framework for all core logging. And the vanilla ImageJ2 distribution uses the `StderrLogService` which emits those messages to the standard error stream. The default log level is **`INFO`**.
+{% include aside content="
+The six standard near-universal log levels are:
+
+* `NONE` - Do not log any messages.
+* `ERROR` - Log only execution errors.
+* `WARN` - Log errors and warnings.
+* `INFO` - Log informational messages.
+* `DEBUG` - Log detailed debugging messages.
+* `TRACE` - Log everything possible, including debugging stack traces." %}
+
+[ImageJ2](/software/imagej2) uses the SciJava logging framework for all core logging. And the vanilla ImageJ2 distribution uses the `StderrLogService` which emits those messages to the standard error stream. The default log level is **`INFO`**.
 
 That said, there is a problem with using the standard output and/or error streams in a GUI-driven application: such messages are not visible by default. To work around this fact, many GUI-driven applications implement their own UI component for log messages, typically a "Log window" of some sort. This solution is how [ImageJ 1.x](/software/imagej1) addresses the logging problem on the GUI side: plugins are expected to call the static `IJ.log` and `IJ.handleException` methods to emit log messages and report exceptions to the user, respectively.
 
