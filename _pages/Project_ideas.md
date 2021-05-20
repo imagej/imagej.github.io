@@ -120,7 +120,7 @@ Implement a simple inpainting method (i.e. restore missing/unwanted parts of the
 
 ## Add JMathLib (MATLAB clone) support
 
-Quite a few algorithms are available as proof-of-concept [MATLAB](/scripting/matlab) scripts. While it is [wrong to think of pixels as little squares](Ftp___ftp.alvyray.com_Acrobat_6_Pixel.pdf), and literally all [MATLAB](/scripting/matlab) scripts to perform image processing are suffering from that assumption, it would be very nice nevertheless to be able to run the scripts without having to buy [MATLAB](/scripting/matlab) licenses just for that purpose.
+Quite a few algorithms are available as proof-of-concept [MATLAB](/scripting/matlab) scripts. While it is [wrong to think of pixels as little squares](http://alvyray.com/Memos/CG/Microsoft/6_pixel.pdf), and literally all [MATLAB](/scripting/matlab) scripts to perform image processing are suffering from that assumption, it would be very nice nevertheless to be able to run the scripts without having to buy [MATLAB](/scripting/matlab) licenses just for that purpose.
 
 MATLAB bundles a Java runtime (and in fact, all of [MATLAB](/scripting/matlab)'s GUI is implemented in Java!) and allows the user to instantiate Java classes and call methods on them:
 
