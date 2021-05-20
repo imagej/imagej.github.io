@@ -18,7 +18,7 @@ Clicking **Manually translate Views** will bring up a new window that allows you
 -   Clicking **Close** will close the transformation window - if you have moved the currently selected views, you will be asked to discard or apply the current transformation.
 -   Clicking **Apply** will apply the current translation and leave the *transformation window* open for further movement of views
 
-{% include info-box content='The range of movement is limited, if you wish to move views by a large amount, you have to repeatedly apply a translation' %}
+{% include notice icon="info" content='The range of movement is limited, if you wish to move views by a large amount, you have to repeatedly apply a translation' %}
 
 <img src="/media/bigstitcher-arrange-views002.png" width="800"/>
 

@@ -4,7 +4,7 @@ title: Git
 section: Development:Git
 ---
 
-{% include info-box content='If Git is completely new to you, read:
+{% include notice icon="info" content='If Git is completely new to you, read:
 
 -   [TryGit 15-minute interactive tutorial](https://try.github.io/)
 -   [Learn Git Branching interactive tutorial](http://pcottle.github.io/learnGitBranching/)

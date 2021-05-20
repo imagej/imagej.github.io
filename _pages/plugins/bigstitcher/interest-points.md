@@ -70,7 +70,7 @@ Furthermore, if you are using **grouped views**, you can choose to **Use min/max
 
 If you click OK, the (fused) image will appear in an ImageJ-window together with a window in which the values for the interest point detection parameters can be specified. You can change **Sigma 1** (Difference-of-Gaussian) or **Radius 1** (Difference-of-Mean) to specify the size of objects to look as well as the **Threshold** (intensity of objects to look for) and whether to look for minima, maxima or both. The results will be previewed in the ImageJ-window. You can interactively go through the Z-stack and preview the detected interest points. To start the detection process in all selected views, click "Done".
 
-{% include info-box content='The interest point detection can take a long time, especially if you do little or no downsampling. Have a look at the log widow for updates on the progress.' %}
+{% include notice icon="info" content='The interest point detection can take a long time, especially if you do little or no downsampling. Have a look at the log widow for updates on the progress.' %}
 
 ![](/media/bigstitcher-register-4-1.png)![](/media/bigstitcher-register-4-2.png)
 

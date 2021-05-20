@@ -4,7 +4,7 @@ title: Funding
 section: About
 ---
 
-{% include info-box content='This page describes *how* [SciJava](SciJava) projects are funded.
+{% include notice icon="info" content='This page describes *how* [SciJava](SciJava) projects are funded.
 
 -   For information on who *contributes* to these projects, see [Contributors](/about/contributors).
 -   For information on who *maintains* these projects, see [Governance](/about/governance).

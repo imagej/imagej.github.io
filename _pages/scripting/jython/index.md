@@ -29,7 +29,7 @@ Even with the given limitations, Jython is a powerful language for ImageJ script
 
 ## Jython basics for ImageJ
 
-{% include info-box content='For an introduction in ImageJ scripting visit the page [Scripting basics](/scripting/basics).' %}
+{% include notice icon="info" content='For an introduction in ImageJ scripting visit the page [Scripting basics](/scripting/basics).' %}
 
 ### Introduction
 

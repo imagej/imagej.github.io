@@ -5,7 +5,7 @@ section: About
 categories: [Development]
 ---
 
-{% include info-box content='This page describes the *social* structure of [SciJava](SciJava) projects.
+{% include notice icon="info" content='This page describes the *social* structure of [SciJava](SciJava) projects.
 
 -   For information on the *technical* structure, see [Architecture](/develop/architecture).
 -   For information on the *legal* structure, see [Licensing](/licensing).' %}

@@ -11,7 +11,7 @@ If you are running the **Stitching Wizard**, you will be taken to **Interactive 
 
 -   **Interactive Link Explorer ...** will open a window allowing you to preview the calculated pairwise shifts, filer them based on criteria such as cross correlation and remove individual bad links.
 
-{% include info-box content='The Interactive Link Explorer will work on the views selected in the main window, the others will be grayed out while it is open' %}
+{% include notice icon="info" content='The Interactive Link Explorer will work on the views selected in the main window, the others will be grayed out while it is open' %}
 
 -   **Filter Links by Parameters ...** offers the same functionality as the Interactive Link explorer in a simple dialog without any live preview.
 -   **Remove Links** allows you to remove the calculated shifts, either for the currently selected views or for all views.

@@ -5,7 +5,7 @@ title: BigStitcher ICP refinement
 
 The default stitching pipeline of BigStitcher will calculate a **translational alignment** of your images. In some cases, however, there might also be more complex transformations (such as rotations between tiles or scaling between channels due to **chromatic aberrations**) between the images. To account for such **affine transformations** between the images, we offer the possibility to **Refine the Alignment** using the **ICP (Iterative Closest Point)** algorithm combined with global optimization.
 
-{% include info-box content='The ICP algorithm assumes that the images are already roughly aligned. You should therefore use it as a **last step** after stitching your dataset.' %}
+{% include notice icon="info" content='The ICP algorithm assumes that the images are already roughly aligned. You should therefore use it as a **last step** after stitching your dataset.' %}
 
 ## Simple refinement
 
@@ -29,7 +29,7 @@ Finally, you can start the refinement by clicking:
 -   **Simple (chromatic aberration)**: will try to correct chromatic aberrations by transforming channels (all tiles of one channel will be transformed the same way).
 -   **Simple (all together)**: will try to both refine the tile alignment and correct chromatic aberrations in one step. If you have multiple illuminations (and have not selected one of them yet), they will also be aligned.
 
-{% include info-box content='For **chromatic aberration correction**, it is necessary to detect the same interest points in all channels, so only use that if your sample has autofluorescent structures visible in all channels or you added fiducial beads that fluoresce in all channels' %}
+{% include notice icon="info" content='For **chromatic aberration correction**, it is necessary to detect the same interest points in all channels, so only use that if your sample has autofluorescent structures visible in all channels or you added fiducial beads that fluoresce in all channels' %}
 
 ## Expert refinement
 

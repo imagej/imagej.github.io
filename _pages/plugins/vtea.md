@@ -24,7 +24,7 @@ categories: [Segmentation,Visualization,Plugins,Citable]
 
 **Original image referencing.** The power of 3DTC in VTEA enables the localization of identified cells in the analysis space in the original image, *in situ*, and in 3D with [ClearVolume](/plugins/clearvolume).
 
-{% include info-box content='VTEA is still under active development. Version 1.0 is tentatively planned for an October release..' %}
+{% include notice icon="info" content='VTEA is still under active development. Version 1.0 is tentatively planned for an October release..' %}
 
 This brief [video](/media/demostration.mov) describes VTEA's core behaviors. VTEA's utility has been demonstrated in this [paper](http://jasn.asnjournals.org/content/early/2017/02/01/ASN.2016091027.full).
 

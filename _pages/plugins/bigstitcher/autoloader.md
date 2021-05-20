@@ -122,7 +122,7 @@ If you chose to resave your dataset as HDF5 in the previous dialog, you will be 
 
 -   Finally, you can choose the **export path**, i.e. the directory the .h5 file(s) are saved to.
 
-{% include info-box content='Be aware that re-saving a multi-terabyte dataset *may take several hours*. However, since most processing steps of BigStitcher can be done on downsampled versions of the data, this will save you a lot of time down the road.' %}
+{% include notice icon="info" content='Be aware that re-saving a multi-terabyte dataset *may take several hours*. However, since most processing steps of BigStitcher can be done on downsampled versions of the data, this will save you a lot of time down the road.' %}
 
 {% include thumbnail src='/media/bigstitcherautoloader5.png' title='Options for re-saving as multi-resolution HDF5.'%}
 

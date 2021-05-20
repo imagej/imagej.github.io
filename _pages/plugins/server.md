@@ -8,7 +8,7 @@ categories: [SciJava, software]
 {% capture source%}
 {% include github org='imagej' repo='imagej-server' %}
 {% endcapture %}
-{% include info-box content='Plugin' software='ImageJ' name='ImageJ Server' author='ImageJ developers' maintainer='ImageJ developers' status='Experimental' source=source %}The ImageJ Server is an extension and [update site](/update-sites) for ImageJ that enables ImageJ to act as a {% include wikipedia title='Representational state transfer' text='RESTful'%} image server.
+{% include notice icon="info" content='Plugin' software='ImageJ' name='ImageJ Server' author='ImageJ developers' maintainer='ImageJ developers' status='Experimental' source=source %}The ImageJ Server is an extension and [update site](/update-sites) for ImageJ that enables ImageJ to act as a {% include wikipedia title='Representational state transfer' text='RESTful'%} image server.
 
 Client software can:
 

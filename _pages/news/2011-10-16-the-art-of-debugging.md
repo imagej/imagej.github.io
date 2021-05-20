@@ -8,7 +8,7 @@ categories: [News,ImageJ2]
 {% capture  content %}
 The following is a blog post from {% include person id='dscho' %} originally published on the ImageJDev web site.
 {% endcapture %}
-{% include info-box content=content %}
+{% include notice icon="info" content=content %}
 
 *This is an experiment. I will write this blog entry in a completely non-technical style, just for fun. Hope you enjoy it, if not: stop reading.*
 

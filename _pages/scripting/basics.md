@@ -11,7 +11,7 @@ categories: [Scripting]
 
 ImageJ and Fiji are able to run scripts written in [different languages](/scripting#supported-languages). Besides all the differences the approach on how to use the [API of ImageJ](http://javadoc.imagej.net/) is similar for all of them. This article will introduce the basic concepts and is valid for all scripting languages.
 
-{% include info-box content='The examples are written in Groovy, but they are easy to adapt for any other scripting language ImageJ supports. For the ImageJ1 macro language, refer to the dedicated section in Languages.' %}
+{% include notice icon="info" content='The examples are written in Groovy, but they are easy to adapt for any other scripting language ImageJ supports. For the ImageJ1 macro language, refer to the dedicated section in Languages.' %}
 
 # Importing classes, services and functions
 

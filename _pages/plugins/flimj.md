@@ -157,7 +157,7 @@ You can hover the mouse pointer on the rendered image to see the lookup table (L
 
 After dataset fitting, you can select images to export in the drop-down checklist on the **Export** pannel. Hit "Export" button to export the selected images to for further processing. If "With LUT" is checked, the exported image will be loaded with the LUT used to render the preview image on the **Preview** panel (value ranges are set for each image separately).
 
-{% include info-box content='You may follow the following steps to reproduce the composite color image after export:
+{% include notice icon="info" content='You may follow the following steps to reproduce the composite color image after export:
 
 1.  Export "Intensity" with desired fitted images;
 2.  Convert all images to RGB format by searching and executing the "RGB Color" command in FIJI;

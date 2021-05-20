@@ -8,7 +8,7 @@ categories: [News,ImageJ2]
 {% capture  content %}
 The following article was written by {% include person id='kkunzelm' %} as he researched how to write plugins for [ImageJ2](/software/imagej2). It is reproduced here as a [News](/news) post in the hope that it may help others, particularly during 2016 while the information continues to be most accurate and relevant.
 {% endcapture %}
-{% include info-box content=content %}
+{% include notice icon="info" content=content %}
 
 
 
@@ -119,7 +119,7 @@ If you want to look at the source code to study how to program image analysis al
 
 The repository {% include github org='imagej' repo='imagej1' label='imagej/imagej1' %}, for example, contains the source code of [ImageJ 1.x](/software/imagej1), but it does not use Maven. The [ImageJA](/libs/imageja) project at {% include github org='imagej' repo='ImageJA' label='imagej/ImageJA' %} is a Mavenized version of ImageJ 1.x with a clean Git history. For curious people like me: the "A" in ImageJA was originally used for "Applet" and to differentiate the project from ImageJ itself.
 
-{% include info-box content='Side note: I am not expert NetBeans user, therefore I could not figure out another way:
+{% include notice icon="info" content='Side note: I am not expert NetBeans user, therefore I could not figure out another way:
 
 To import several projects from GitHub I always had to close all open project in NetBeans before I could import another project. If somebody knows a better way, please add here.' %}
 

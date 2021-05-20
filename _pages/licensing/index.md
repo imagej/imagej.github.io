@@ -3,7 +3,7 @@ title: Licensing
 section: About:Licensing
 ---
 
-{% include info-box content='This page describes the *legal* structure of [SciJava](SciJava) projects.
+{% include notice icon="info" content='This page describes the *legal* structure of [SciJava](SciJava) projects.
 
 -   For information on their *technical* structure, see [Architecture](/develop/architecture).
 -   For information on their *social* structure, see [Governance](/about/governance).' %}

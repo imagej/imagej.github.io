@@ -4,7 +4,7 @@ title: IDEs
 section: Development:Tools:IDEs
 ---
 
-{% include info-box content='
+{% include notice icon="info" content='
 
 <center>
 

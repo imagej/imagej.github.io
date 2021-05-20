@@ -5,7 +5,7 @@ section: About:Fiji:Developing Fiji
 categories: [Fiji]
 ---
 
-{% include info-box content='There is another good way to distribute your extension: your own [update site](/update-sites). See the [Distribution](/develop/distributing) page for details.' %} 
+{% include notice icon="info" content='There is another good way to distribute your extension: your own [update site](/update-sites). See the [Distribution](/develop/distributing) page for details.' %} 
 Distributing your software component as part of [Fiji](/software/fiji) is an effective way to immediately and easily put it into the hands of many users, as well as to actively participate in the community of ImageJ software development. However, doing so comes with a few corresponding rules.
 
 The following document describes these requirements, as well as associated best practices, for shipping your component as part of the [Fiji](/software/fiji) update site.

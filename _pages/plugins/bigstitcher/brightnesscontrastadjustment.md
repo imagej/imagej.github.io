@@ -11,7 +11,7 @@ The brightness and contrast adjustment is available in **Multiview mode** under 
 
 <img src="/media/bigstitcherintensityadjustmentmenu.png" width="500"/>
 
-{% include info-box content='Calculating the intensity adjustment requires the images to be aligned, therefore use it as a last step after registration before fusing the dataset.' %}
+{% include notice icon="info" content='Calculating the intensity adjustment requires the images to be aligned, therefore use it as a last step after registration before fusing the dataset.' %}
 
 ### Usage
 
@@ -35,7 +35,7 @@ The options at the bottom of the dialog set the values for \lambda1 and \lambda2
 -   **Offset only intensity regularization** corresponds to $$\lambda1$$. Higher values give more weight to an offset-correction vs. a scale and offset correction. Note that if **Affine intensity mapping** is deselected, $$\lambda1 = 1$$ automatically, so only an offset transform will be calculated.
 -   **Unmodified intensity regularization** corresponds to $$\lambda2$$. Higher values give more weight to an identiy transformation, i.e. leaving the corrected intensity values as close to the original as possible.
 
-{% include info-box content='If $$\lambda1$$ and $$\lambda2$$ are both set to 0, the fitted transformation might converge to $$I(x) * 0 + \beta1$$, i.e. setting all intensities equal. To prevent this, please always use values $$\ge 0$$ for at least one of the regularization parameters.' %}
+{% include notice icon="info" content='If $$\lambda1$$ and $$\lambda2$$ are both set to 0, the fitted transformation might converge to $$I(x) * 0 + \beta1$$, i.e. setting all intensities equal. To prevent this, please always use values $$\ge 0$$ for at least one of the regularization parameters.' %}
 
 #### Displaying
 

@@ -6,7 +6,7 @@ section: Development:ImgLib2
 
 
 
-{% include info-box content='This page was last updated 2016 May 3.' %}
+{% include notice icon="info" content='This page was last updated 2016 May 3.' %}
 
 This page compares the time performance of image processing operations using raw byte arrays, [ImageJ 1.x](/software/imagej1) and [ImgLib2](/libs/imglib2). The benchmark tests these various methods for a "cheap" per-pixel operation (inverting an 8-bit image) as well as an "expensive" operation (some calls to `java.util.Math`) at several image resolutions.
 

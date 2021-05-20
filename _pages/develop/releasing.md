@@ -4,7 +4,7 @@ title: Development Lifecycle
 section: Development:Guides
 ---
 
-{% include info-box content='This page describes the core [SciJava](SciJava) *software release process*.
+{% include notice icon="info" content='This page describes the core [SciJava](SciJava) *software release process*.
 
 -   For an overview of *distribution methods*, see [Distribution](/develop/distributing).
 -   To *download* software releases, see [/downloads](/downloads).' %}
@@ -163,7 +163,7 @@ From your project's directory, simply run:
 
 The script will verify that your master branch is ready to go, then create and push a [tag](http://git-scm.com/book/en/v2/Git-Basics-Tagging) for the release. [Travis CI](/develop/travis) will then notice the tag and complete the release for you. You should receive an email from Travis after the release is complete indicating whether the build was successful.
 
-{% include info-box content='If your project is a [multi-module build](https://maven.apache.org/guides/mini/guide-multiple-modules.html), first make a commit commenting out any modules that should not be released. Then run the script from the aggregator pom directory.' %}
+{% include notice icon="info" content='If your project is a [multi-module build](https://maven.apache.org/guides/mini/guide-multiple-modules.html), first make a commit commenting out any modules that should not be released. Then run the script from the aggregator pom directory.' %}
 
 ## Phase 4: Managed
 

@@ -7,7 +7,7 @@ artifact: sc.fiji:Cell\_Counter
 
 This plugin will open a new cell counter GUI. On the left are the counter types and counters, on the right the action buttons.
 
-{% include info-box content='Please consider using the built-in [Multi-Point Tool](/ij/docs/guide/146-19.html#sec:Multi-point-Tool) in ImageJ, as this tool now replicates most of the functionality of Cell Counter.' %}
+{% include notice icon="info" content='Please consider using the built-in [Multi-Point Tool](/ij/docs/guide/146-19.html#sec:Multi-point-Tool) in ImageJ, as this tool now replicates most of the functionality of Cell Counter.' %}
 
 ## Bugs
 

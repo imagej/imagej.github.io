@@ -8,7 +8,7 @@ categories: [Software,Citable,SciJava]
 {% capture source%}
 {% include github org='ethier-lab' repo='AxoNet-fiji' %}
 {% endcapture %}
-{% include info-box content='Plugin' software='AxoNet' name='AxoNet' author='Matthew Ritch (mritch3)' maintainer='Matthew Ritch (mritch3)' source=source website='https://github.com/ethier-lab/AxoNet-fiji' %}
+{% include notice icon="info" content='Plugin' software='AxoNet' name='AxoNet' author='Matthew Ritch (mritch3)' maintainer='Matthew Ritch (mritch3)' source=source website='https://github.com/ethier-lab/AxoNet-fiji' %}
 
 AxoNet is an [open-source](/Open_Source) plugin for axon counting using deep learning.
 

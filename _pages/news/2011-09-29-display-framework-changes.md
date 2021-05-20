@@ -8,7 +8,7 @@ categories: [News,ImageJ2]
 {% capture  content %}
 The following is a blog post from {% include person id='ctrueden' %} originally published on the ImageJDev web site.
 {% endcapture %}
-{% include info-box content=content %}
+{% include notice icon="info" content=content %}
 
 The following is a quick technical update on some work I am doing on ImageJ2's display hierarchy. It will mostly be of interest to other IJ2 developers, but I am posting here to give the community a rough idea of where we are going with the display code.
 

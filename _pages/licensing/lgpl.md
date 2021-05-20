@@ -3,7 +3,7 @@ title: GNU Lesser General Public License
 section: About:Licensing:Open Source
 ---
 
-{% include info-box content='For a summary of [SciJava](SciJava) licensing, see the [Licensing](/licensing) page.' %} 
+{% include notice icon="info" content='For a summary of [SciJava](SciJava) licensing, see the [Licensing](/licensing) page.' %} 
 
 The **GNU Lesser General Public License** is a free, [open source](Open_source)
 license for software and other kinds of works. It is a middle ground between

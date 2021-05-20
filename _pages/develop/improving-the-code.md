@@ -4,7 +4,7 @@ title: How to contribute to an existing plugin or library
 section: Development:Guides
 ---
 
-{% include info-box content='This guide discusses how to modify an already-existing [plugin](/plugins), and contribute your changes back.  
+{% include notice icon="info" content='This guide discusses how to modify an already-existing [plugin](/plugins), and contribute your changes back.  
 \* If you are interested in developing a **new** plugin instead, see [Writing plugins](/develop/plugins).  
 \* If you have completed a plugin that you would like to **share with the community**, see [Distributing your plugins](/develop/distributing).' %}
 
@@ -105,7 +105,7 @@ Once the pull request is created, it is automatically sent to the person in char
 
 From the discussion, you might realize you need to modify a part of the changes you made on your branch. Some of the changes introduced by your commits can be fixed with new commits (that will appear in the discussion view of the pull request). But some commits may need to be modified so the history of your repository stays reasonably clean. In that case, you need to use the [git rebase command](https://help.github.com/articles/about-git-rebase/):
 
-{% include info-box content='If you prefer using a graphical interface (e.g. Atlassian SourceTree or GitHub Desktop) instead of the command line, there are also options to do an interactive rebase. To force-push your amended commits to the existing branch on github though, the best option is to use the command line, see below.' %}
+{% include notice icon="info" content='If you prefer using a graphical interface (e.g. Atlassian SourceTree or GitHub Desktop) instead of the command line, there are also options to do an interactive rebase. To force-push your amended commits to the existing branch on github though, the best option is to use the command line, see below.' %}
 
 Rebase operates over a range of commits. You provide it a starting point, and it then automatically includes all commits **after** that point, up to the current state of your branch.
 

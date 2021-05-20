@@ -216,7 +216,7 @@ We need to think carefully about the correct or adequate spatial resolution in x
 
 ### Colocalization Threshold
 
-{% include info-box content="Note: this plugin is no longer under active development and support. Use [Coloc 2](/plugins/coloc-2) instead, which does the same thing, only better." %}
+{% include notice icon="info" content="Note: this plugin is no longer under active development and support. Use [Coloc 2](/plugins/coloc-2) instead, which does the same thing, only better." %}
 
 The [Colocalization Threshold](/plugins/colocalization-threshold) plugin performs several functions for you in one go. With the "green" and "red" stacks of the [colocsample1bRGB\_BG.tif](https://fiji.sc/samples/colocsample1bRGB_BG.tif) dataset open and the channels split (see above) choose the menu item "Analyze-Colocalization-Colocalization Threshold". Next select the right stacks for the analysis in Channel1 and Channel2. You can use a region of interest (ROI) if you like, which should be defined before you run the plugin. Check on "Show Colocalized Pixels" and "Show Scatter Plot" (see also [Why scatter plots?](#why-scatter-plots)), and others off. You can explore the options in Set options. Turn ALL the options on the first time you use it, so you see what it can do.
 
@@ -242,7 +242,7 @@ The plugin finally sends a bunch of statistics and results to the results window
 
 ### Colocalization Test
 
-{% include info-box content="Note: this plugin is no longer under active development and support. Use [Coloc 2](/plugins/coloc-2) instead, which does the same thing, only more correctly, and as described in the original publication by Costes, instead of making a nasty assumption and shortcut." %}
+{% include notice icon="info" content="Note: this plugin is no longer under active development and support. Use [Coloc 2](/plugins/coloc-2) instead, which does the same thing, only more correctly, and as described in the original publication by Costes, instead of making a nasty assumption and shortcut." %}
 
 The [Colocalization Test](/plugins/colocalization-test) plugin performs the Costes test for statistical significance (which you should ALWAYS do after calculating the thresholded Manders coefficients and the scatterplot). It is in the menus at {% include bc path='Analyze | Colocalization | Colocalization Test' %}
 

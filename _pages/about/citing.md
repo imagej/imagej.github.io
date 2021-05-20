@@ -4,7 +4,7 @@ title: Citing
 section: About
 ---
 
-{% include info-box content='This page describes how to *cite* [SciJava](SciJava) projects.
+{% include notice icon="info" content='This page describes how to *cite* [SciJava](SciJava) projects.
 
 -   For information on who *contributes* to these projects, see [Contributors](/about/contributors).
 -   For information on who *maintains* these projects, see [Governance](/about/governance).

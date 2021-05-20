@@ -4,7 +4,7 @@ title: Maven
 section: Development:Tools
 ---
 
-{% include info-box content='If Maven is completely new to you, read:
+{% include notice icon="info" content='If Maven is completely new to you, read:
 
 -   [What is Maven?](https://maven.apache.org/what-is-maven.html)
 -   [Maven in 5 Minutes](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)' %}

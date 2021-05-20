@@ -15,7 +15,7 @@ title: BigStitcher
 {% capture source%}
 {% include github org='PreibischLab' repo='BigStitcher' %}
 {% endcapture %}
-{% include info-box content='Plugin' software='BigStitcher' name='BigStitcher' author=author maintainer=maintainer source=source status='beta' %}
+{% include notice icon="info" content='Plugin' software='BigStitcher' name='BigStitcher' author=author maintainer=maintainer source=source status='beta' %}
 
 ## Introduction & Overview
 

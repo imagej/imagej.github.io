@@ -20,7 +20,7 @@ By far the easiest method to provide your macros, scripts and plugins to other u
 
 A *personal update site* is hosted on https://sites.imagej.net/&lt;imagej-wiki-account&gt;. If you do not have an ImageJ Wiki account yet, no need to worry, you can register one while setting up your update site.
 
-{% include info-box content='There are some minimal *Terms of Service* for personal update sites. See the [Personal Update Site Terms of Service](/update-sites/tos) for details.' %}
+{% include notice icon="info" content='There are some minimal *Terms of Service* for personal update sites. See the [Personal Update Site Terms of Service](/update-sites/tos) for details.' %}
 
 First of all, create a wiki account on https://imagej.net.
 
@@ -129,7 +129,7 @@ Select the file to upload, click under the *Stats/Action* column, or right-click
 
 <img src="/media/upload-to-update-site.png" width="770"/>
 
-{% include info-box content='The *Upload to <update site name>* option is only available if you entered your [wiki credentials](#start-the-updater-and-check-your-update-site) and no other changes are pending. Be aware that the password for the update site [*is not* your Wiki password](/update-sites/faq#how-do-i-set-a-password-for-my-personal-update-site). This is to avoid potentially corrupting your ImageJ installation. If the Upload option is not available, select the *View changes* view and resolve any pending changes - e.g. by updating or reverting to **Keep as-is**.' %}
+{% include notice icon="info" content='The *Upload to <update site name>* option is only available if you entered your [wiki credentials](#start-the-updater-and-check-your-update-site) and no other changes are pending. Be aware that the password for the update site [*is not* your Wiki password](/update-sites/faq#how-do-i-set-a-password-for-my-personal-update-site). This is to avoid potentially corrupting your ImageJ installation. If the Upload option is not available, select the *View changes* view and resolve any pending changes - e.g. by updating or reverting to **Keep as-is**.' %}
 
 ### Modifying Dependencies
 
@@ -139,7 +139,7 @@ You can also manually enter or edit any information in the *Details* panel:
 
 <img src="/media/how-to-setup-a-plugin-distribution-site-15.jpg" width="770"/>
 
-{% include info-box content='The *Details* panel can only be edited if you have entered upload credentials for the appropriate update site. After modifying the *Details* panel you can mark the jar for upload, even though the jar contents itself has not changed.' %}
+{% include notice icon="info" content='The *Details* panel can only be edited if you have entered upload credentials for the appropriate update site. After modifying the *Details* panel you can mark the jar for upload, even though the jar contents itself has not changed.' %}
 
 {% include notice icon="warning" content='Sometimes the updater will mis-detect your dependencies. This may prevent you from uploading to your update site! If a dependency is wrong, you can manually add or delete dependencies from the *Details* tab to correct the problem. Please [let us know](/help) when this happens so we can try to improve the updater' %}
 

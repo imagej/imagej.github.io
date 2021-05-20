@@ -41,7 +41,7 @@ This will simply show the **Manually define Bounding Box**-dialog, preset to a b
 
 This method will try to automatically find a bounding box around the sample by applying a **minimum filter** and then **thresholding** a downsampled version of the fused image.
 
-{% include info-box content='This method will try to segment a bright object in front of dark background, so it cannot be used e.g. for brightfield images with dark objects in front a bright background.' %}
+{% include notice icon="info" content='This method will try to segment a bright object in front of dark background, so it cannot be used e.g. for brightfield images with dark objects in front a bright background.' %}
 
 You will be asked for the following parameters:
 

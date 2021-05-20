@@ -23,7 +23,7 @@ After starting the stitching process, you need to specify how to handle multiple
 
 -   Next, choose the the downsampling in x,y,z to be used for the calculation. Select a predefined downsampling factor or choose your own.
 
-{% include info-box content='In our experience, some downsampling (2-4x) improves results over using raw image data, as it reduces noise in the images. It also dramatically speeds up computations, so we advise using moderate downsampling in this step' %}
+{% include notice icon="info" content='In our experience, some downsampling (2-4x) improves results over using raw image data, as it reduces noise in the images. It also dramatically speeds up computations, so we advise using moderate downsampling in this step' %}
 
 <img src="/media/bigstitcher-stitch-2.png" width="600"/>
 

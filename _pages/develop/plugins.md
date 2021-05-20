@@ -4,7 +4,7 @@ title: Writing plugins
 section: Development:Guides
 ---
 
-{% include info-box content='This guide provides a technical overview of [plugins](/plugins), including how to **create new plugins**.  
+{% include notice icon="info" content='This guide provides a technical overview of [plugins](/plugins), including how to **create new plugins**.  
 \* If you are interested in developing an **existing** plugin instead, see [Contributing to a plugin](/develop/improving-the-code).  
 \* If you have completed a plugin that you would like to **share with the community**, see [Distributing your plugins](/develop/distributing).
 

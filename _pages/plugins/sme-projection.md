@@ -4,7 +4,7 @@ title: SME Projection
 categories: [Citable,Plugins,Analysis]
 ---
 
-{% include info-box content='This page is a placeholder. Please help improve its content.' %}
+{% include notice icon="info" content='This page is a placeholder. Please help improve its content.' %}
 
 
 {% capture source%}

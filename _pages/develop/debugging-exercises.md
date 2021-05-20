@@ -4,7 +4,7 @@ title: Debugging Exercises
 section: Development:Guides
 ---
 
- {% include info-box content='This page presents exercises for *software developers* to use for debugging ImageJ.  
+ {% include notice icon="info" content='This page presents exercises for *software developers* to use for debugging ImageJ.  
 If you are a *user* looking to troubleshoot issues, see the [Troubleshooting](/help/troubleshooting) page.' %}
 
 [Debugging](/develop/debugging) is the art of determining the cause and/or location of a problem. The purpose of this guide is to provide developers practical, hands-on experience using a variety of debugging techniques to identify problems in code.

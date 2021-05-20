@@ -5,7 +5,7 @@ section: About
 categories: [community]
 ---
 
-{% include info-box content='This page describes who *contributes* to [SciJava](SciJava) projects.
+{% include notice icon="info" content='This page describes who *contributes* to [SciJava](SciJava) projects.
 
 -   For information on who *maintains* these projects, see [Governance](/about/governance).
 -   For information on how ImageJ projects are *funded*, see [Funding](/about/funding).

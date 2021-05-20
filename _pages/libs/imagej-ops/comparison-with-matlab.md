@@ -4,7 +4,7 @@ title: Comparison of Matlab functions and Ops
 categories: tutorials
 ---
 
-{% include info-box content='This page is under active development.
+{% include notice icon="info" content='This page is under active development.
 
 -   The intention is to help developers switch from MATLAB to Ops by showing equivalent operations.' %}
 

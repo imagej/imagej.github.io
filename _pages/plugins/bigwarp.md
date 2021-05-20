@@ -503,7 +503,7 @@ Export the warped moving image by clicking
 The default parameters will result in the exported image having the same
 dimensions as the target image.
 
-{% include info-box content="Take care when exporting very large data sets as they can cause out-of-memory exceptions." %}
+{% include notice icon="info" content="Take care when exporting very large data sets as they can cause out-of-memory exceptions." %}
 
 -   Resolution
     -   Target: *The output will have the same resolution as the target image*

@@ -7,7 +7,7 @@ artifact: sc.fiji:Image\_5D
 
 This page supersedes the [original Image5D page](/ij/plugins/image5d.html) from the ImageJ 1.x documentation.
 
-{% include info-box content='Please consider using the built-in [hyperstacks](/ij/docs/guide/146-8.html) functionality in ImageJ, since it is newer and more well-integrated than this old Image5D plugin.' %}
+{% include notice icon="info" content='Please consider using the built-in [hyperstacks](/ij/docs/guide/146-8.html) functionality in ImageJ, since it is newer and more well-integrated than this old Image5D plugin.' %}
 
 ## Installation
 

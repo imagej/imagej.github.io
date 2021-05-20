@@ -6,7 +6,7 @@ nav-links: true
 nav-title: Automatic Uploads
 ---
 
-{% include info-box content='This guide is intended for maintaining non-core update sites by automating builds with [Travis CI](https://travis-ci.org/).  
+{% include notice icon="info" content='This guide is intended for maintaining non-core update sites by automating builds with [Travis CI](https://travis-ci.org/).  
 - The [core update sites](/update-sites/core-uploads) are updated manually or by [Travis CI](/develop/travis).
 - Travis CI is useful because it can freely build any open source project with minimal effort.' %}
 

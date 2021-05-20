@@ -6,7 +6,7 @@ categories: [Help]
 
 [ImageJ](/about) community members are often available via a couple of different chat services.
 
-{% include info-box content='If you have *image analysis* questions, it is better to use the [Image.sc Forum](https://forum.image.sc/), rather than chat rooms. Most of ImageJ community"s image analysis experts frequent the Image.sc Forum, not live chat rooms.' %}
+{% include notice icon="info" content='If you have *image analysis* questions, it is better to use the [Image.sc Forum](https://forum.image.sc/), rather than chat rooms. Most of ImageJ community"s image analysis experts frequent the Image.sc Forum, not live chat rooms.' %}
 
 ## Gitter
 
