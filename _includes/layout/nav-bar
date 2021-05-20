@@ -23,7 +23,8 @@ A horizontal navigation bar with links.
     {%- if p-dir == page-dir -%}
       {%- comment -%} Sort index page before the others. {%- endcomment -%}
       {%- assign url = p.url | replace: "/index", "/_index" -%}
-      {%- assign title = p.nav-title | default: p.title | replace: " ", "&nbsp;" -%}
+      {%- assign title = p.nav-title | default: p.title
+        | replace: " ", "&nbsp;" | replace: "-", "&#8209;" -%}
       {%- capture link -%}
         <li><a href="{{url}}">{{title}}</a></li>
       {%- endcapture -%}
@@ -61,7 +62,8 @@ A horizontal navigation bar with links.
   {%- endcomment -%}
   <ul id="nav-bar" class="shadowed-box">
   {% for p in pages %}
-    {%- assign title = p.title | replace: " ", "&nbsp;" -%}
+    {%- assign title = p.nav-title | default: p.title
+      | replace: " ", "&nbsp;" | replace: "-", "&#8209;" -%}
     {%- if p.url == page.url -%}
       <li>{{title}}</li>
     {%- else -%}
