@@ -10,7 +10,7 @@ Here you can [download](https://downloads.imagej.net/ImageJ2-20160205.zip) an
 {% include notice icon="info" content="Unfortunately, due to the ongoing
 transition from Java 6 to Java 8, this download of \"plain ImageJ2\" cannot
 currently be updated to the latest Java-8-compatible version. See the
-[Java 8](/news/2016-05-10_-_ImageJ_HOWTO_-_Java_8,_Java_6,_Java_3D) page for
+[Java 8](/news/2016-05-10-imagej-howto-java-8-java-6-java-3d) page for
 details. For the time being, we recommend
 [using the Fiji distribution of ImageJ](/software/fiji/downloads) to stay
 current with updates." %}
