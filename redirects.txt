@@ -2128,7 +2128,7 @@ media/icy-logo.png :: media/logos/icy.png
 media/imagej-conference-logo.png :: media/logos/imagej-conference.png
 media/imagej1-icon.png :: media/icons/imagej1.png
 media/imagej1-logo.png :: media/logos/imagej1.png
-media/imagej2-download-icon.png :: <DELETED> (needs update)
+media/imagej2-download-icon.png :: UPDATED <needs review>
 media/imagej2-icon.png :: media/icons/imagej.png
 media/imagepy-icon.png :: media/icons/imagepy.png
 media/imagepy-logo.png :: media/logos/imagepy.png
