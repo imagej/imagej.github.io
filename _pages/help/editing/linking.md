@@ -1,5 +1,5 @@
 ---
-title: Links
+title: Linking
 section: Help:Editing the Wiki
 nav-links: true
 ---

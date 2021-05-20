@@ -213,26 +213,23 @@
   {%- include menu/item title="How to write bug reports" link="/help/bug-reporting-best-practices" -%}
   {%- include menu/item title="Report an issue" link="/help/report-a-bug" -%}
   {%- include menu/section title="Editing the Wiki" link="/help/editing" -%}
-    {%- include menu/item title="Whitespace" link="/help/editing/whitespace" -%}
-    {%- include menu/item title="Headers" link="/help/editing/headers" -%}
-    {%- include menu/item title="Images" link="/help/editing/images" -%}
-    {%- include menu/item title="Videos" link="/help/editing/videos" -%}
-    {%- include menu/item title="Tables" link="/help/editing/tables" -%}
-    {%- include menu/item title="Math Expressions" link="/help/editing/math" -%}
-    {%- include menu/item title="Source Code" link="/help/editing/code" -%}
-    {%- include menu/item title="Notices" link="/help/editing/notices" -%}
-    {%- include menu/item title="Sideboxes" link="/help/editing/sideboxes" -%}
-    {%- include menu/item title="Keyboard Shortcuts" link="/help/editing/keys" -%}
-    {%- include menu/item title="Timelines" link="/help/editing/timelines" -%}
-    {%- include menu/item title="People" link="/help/editing/people" -%}
-    {%- include menu/item title="Symbols" link="/help/editing/symbols" -%}
-    {%- include menu/item title="Logos" link="/help/editing/logo" -%}
-
-    {%- include menu/item title="Citations" link="/help/editing/citations" -%}
-    {%- include menu/item title="Conferences" link="/help/editing/conferences" -%}
-    {%- include menu/item title="Linking" link="/help/editing/linking" -%}
-    {%- include menu/item title="Pitfalls" link="/help/editing/pitfalls" -%}
     {%- include menu/item title="Advanced editing" link="/help/editing/advanced" -%}
+    {%- include menu/item title="Citations" link="/help/editing/citations" -%}
+    {%- include menu/item title="Source Code" link="/help/editing/code" -%}
+    {%- include menu/item title="Headers" link="/help/editing/headers" -%}
+    {%- include menu/item title="Icons" link="/help/editing/icons" -%}
+    {%- include menu/item title="Images" link="/help/editing/images" -%}
+    {%- include menu/item title="Keyboard Shortcuts" link="/help/editing/keys" -%}
+    {%- include menu/item title="Linking" link="/help/editing/linking" -%}
+    {%- include menu/item title="Math Expressions" link="/help/editing/math" -%}
+    {%- include menu/item title="Notices" link="/help/editing/notices" -%}
+    {%- include menu/item title="People" link="/help/editing/people" -%}
+    {%- include menu/item title="Pitfalls" link="/help/editing/pitfalls" -%}
+    {%- include menu/item title="Symbols" link="/help/editing/symbols" -%}
+    {%- include menu/item title="Tables" link="/help/editing/tables" -%}
+    {%- include menu/item title="Timelines" link="/help/editing/timelines" -%}
+    {%- include menu/item title="Videos" link="/help/editing/videos" -%}
+    {%- include menu/item title="Whitespace" link="/help/editing/whitespace" -%}
   {%- include menu/section-end -%} <!-- Help/Editing the Wiki -->
   {%- include menu/section title="Update Sites" link="/update-sites"  -%}
     {%- include menu/item title="Following an update site" link="/update-sites/following" -%}
