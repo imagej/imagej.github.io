@@ -22,6 +22,8 @@ done
 errors=0
 while read f
 do
+  f=${f#$root}
+  f="_site$f"
   "$bin/check-page-html.sh" "$f"
   status=$?
   if [ $status -ne 0 ]
