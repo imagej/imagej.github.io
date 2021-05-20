@@ -131,7 +131,7 @@ If you have downloaded Fiji or ImageJ2 quite some time ago (before 2016), you pr
     -   **Make sure you switch your ImageJ over to Java 8 *before* enabling the Java-8 update site!**
 Alternately, you can simply download a new Fiji as described above.
 
-{% include warning-box content='If you enable the Java-8 update site while still running Java 6, your installation will become non-functional!' %}
+{% include notice icon="warning" content='If you enable the Java-8 update site while still running Java 6, your installation will become non-functional!' %}
 <br>
 <br>
 

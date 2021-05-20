@@ -114,7 +114,7 @@ Per default, variable values are persisted between runs of a script. This means 
 
     #@ Integer (label="An integer!", value=15, persist=false) someInt
 
-{% include warning-box content='Currently, "two scripts which declare the same parameter name, even with different types, will stomp each other." See [1](https://github.com/scijava/scijava-common/issues/193).' %}
+{% include notice icon="warning" content='Currently, "two scripts which declare the same parameter name, even with different types, will stomp each other." See [1](https://github.com/scijava/scijava-common/issues/193).' %}
 
 ### Visibility
 
@@ -138,7 +138,7 @@ You can [use HTML](https://forum.image.sc/t/multiline-messages-in-dialog-widgets
     #@ String (visibility=MESSAGE, value="<html>Message line 1<br/>Message line 2<p>Let's make a list<ul><li>item a</li><li>item b</li></ul></html>") docmsg
     #@ Integer anIntParam
 
-{% include warning-box content='Currently if a script containing a MESSAGE string is recorded with the macro recorder and the resulting recorded code executed, a window will show up containing only the MESSAGE string This is unexpected and will be corrected in the future.' %}
+{% include notice icon="warning" content='Currently if a script containing a MESSAGE string is recorded with the macro recorder and the resulting recorded code executed, a window will show up containing only the MESSAGE string This is unexpected and will be corrected in the future.' %}
 
 ### Multiple Choice
 

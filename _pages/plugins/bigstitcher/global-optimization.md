@@ -77,7 +77,7 @@ In the next two dialogs, you will be asked which views to include in the global 
 
 <img src="/media/bigstitcher-stitch-8.png" width="600"/>
 
-{% include warning-box content='Theoretically, you can use the second dialog to align arbitrary groupings of the data, e.g. compare Channels but group Tiles for chromatic shift correction. Note that you have to have done the *pairwise shift calculation* for the same grouping of the data, otherwise, we can find no pairwise shifts to use in the global optimization' %}
+{% include notice icon="warning" content='Theoretically, you can use the second dialog to align arbitrary groupings of the data, e.g. compare Channels but group Tiles for chromatic shift correction. Note that you have to have done the *pairwise shift calculation* for the same grouping of the data, otherwise, we can find no pairwise shifts to use in the global optimization' %}
 
 ## Fixing views
 

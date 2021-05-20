@@ -181,7 +181,7 @@ For the script to appear in the ImageJ menus, the following must apply:
     -   ".ijm" for ImageJ 1.x macros.
 3.  The script name contains a '\_' (underscore) character, e.g. "MyScript\_.ijm".
 
-{% include fiji content='Replace `ImageJ.app` with `Fiji.app`' %}
+{% include notice icon="fiji" content='Replace `ImageJ.app` with `Fiji.app`' %}
 
 The extension will be stripped and any underscores will be turned into spaces before the script is added to the menus.
 

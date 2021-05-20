@@ -10,7 +10,7 @@ title: SNT › Key Shortcuts
 {% capture text%}
 Most SNT features are triggered by keyboard shortcuts. Shortcuts are typically single keystrokes and do not require other modifier keys to be pressed. Most are highlighted in the user interface. E.g., to toggle the *<u>H</u>essian analysis* checkbox, one only needs to press its highlighted letter, i.e., {% include key key='H' %}.
 {% endcapture %}
-{% include ambox text=text %}
+{% include notice icon="info" content=text %}
 
 ### Interactive Prompt
 
@@ -158,6 +158,6 @@ There are other key and mouse combinations used in e.g., [Sholl Analysis (by Foc
 {% capture tip%}
 SNT was designed so that its shortcuts do not collide with those of ImageJ. SNT hotkeys do not require holding down {% include key key='Control' %} ({% include key key='Cmd' %} on MacOS). When such a modifier key is pressed, the hotkey will no longer be intercepted by SNT. E.g., During a tracing session pressing {% include key key='S' %} will toggle cursor snapping while Pressing {% include key keys='Control|S' %} ({% include key keys='Cmd|S' %}on MacOS) will allow you to save the traced image using IJ"s built-in command {% include bc path='File|Save'%}.
 {% endcapture %}
-{% include tip tip=tip %}
+{% include notice icon="tip" content=tip %}
 
 {% include sntnavbar%}

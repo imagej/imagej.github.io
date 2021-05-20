@@ -208,7 +208,7 @@ The `@Plugin( type = TrackAnalyzer.class )` annotation accepts extra parameters 
 
 The first one we will see is the `enabled` value. It accepts a `boolean` as value and by default it is `true`. Its usage is obvious:
 
-{% include ambox text='If you want to disable a TrackMate module, add the `enabled = false` annotation parameter.' %}
+{% include notice icon="info" content='If you want to disable a TrackMate module, add the `enabled = false` annotation parameter.' %}
 
 Like this:
 

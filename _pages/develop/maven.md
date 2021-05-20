@@ -131,7 +131,7 @@ Most popular open source libraries upon which you might want to depend are store
 
 For example, let's suppose you want to depend on the [snakeyaml](http://snakeyaml.org) library. Typing "snakeyaml" into the search box at [maven.scijava.org](https://maven.scijava.org) tells us to use a `groupId` of `org.yaml`, `artifactId` of `snakeyaml`, with available versions ranging from `1.4` to `1.10`. In the case of many results, you can click the "Drill down" link to view more details of that specific GAV combination. You can also click an entry to get a formatted `dependency` block for direct copy-pasting into your POM.
 
-{% include tip tip='If your dependencies are in Maven Central, you can use the [quickdeps](https://github.com/ingenieux/quickdeps) tool to quickly generate dependency blocks, by scanning your project"s bytecode.' %}
+{% include notice icon="tip" content='If your dependencies are in Maven Central, you can use the [quickdeps](https://github.com/ingenieux/quickdeps) tool to quickly generate dependency blocks, by scanning your project"s bytecode.' %}
 
 # Depending on libraries outside the core repositories
 

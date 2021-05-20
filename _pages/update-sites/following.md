@@ -32,7 +32,7 @@ After you have selected your desired update site(s), close the dialog. The list 
 
 <img src="/media/addpluginsite-5.jpg" width="770"/>
 
-{% include warning-box content='If an entry"s action is **Update It**, that means it is changing an existing plugin. This action is dangerous and can break other plugins, or ImageJ itself.  
+{% include notice icon="warning" content='If an entry"s action is **Update It**, that means it is changing an existing plugin. This action is dangerous and can break other plugins, or ImageJ itself.  
 Ideally the maintainers of these sites would work with the core ImageJ maintainers to centralize important plugins.  
 When you find plugin conflicts between update sites, you can greatly help the community by [starting a discussion](/help) with the maintainers!' %}
 
@@ -46,7 +46,7 @@ Once you are happy with what will be installed, click on the *Apply Changes* but
 
 ## Verify install
 
-{% include warning-box content='An update is not finalized until **restarting the application.** After initiating an update, **do not modify your ImageJ installation manually** until after restarting at least once.' %}
+{% include notice icon="warning" content='An update is not finalized until **restarting the application.** After initiating an update, **do not modify your ImageJ installation manually** until after restarting at least once.' %}
 
 Restart ImageJ as instructed to finish the install. Check to see that the plugin was installed:
 

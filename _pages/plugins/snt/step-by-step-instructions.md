@@ -21,7 +21,7 @@ These instructions assume that you have read the [Overview](/plugins/snt/manual)
 
 <img src="/media/snt-cropped-after-starting-2.png" title="fig:First point of a path selected" width="400" alt="First point of a path selected" /> <img src="/media/snt-cropped-mid-tracing-2.png" title="fig:A* search animated progress" width="400" alt="A* search animated progress" /> A small circle should appear, highlighting the start of the path. Move through the stack to find a subsequent point further along the same structure to be traced (neuron, blood vessel, etc.), and click there.
 
-If a path between the two points cannot be found immediately, you may see the animated progress of the search. You can scroll through the stack while such a search progresses: If it appears to not be making good progress, it's probably best to press the "Cancel/Esc" button (shortcut: {% include key key='C' %}/{% include key key='Esc' %}) and pick a point closer to the start point. {% include tip id='external-traces' tip='Increase *Z* in the *Cursor Auto-snapping* panel for automated Z-navigation on signal mouseover.' %}
+If a path between the two points cannot be found immediately, you may see the animated progress of the search. You can scroll through the stack while such a search progresses: If it appears to not be making good progress, it's probably best to press the "Cancel/Esc" button (shortcut: {% include key key='C' %}/{% include key key='Esc' %}) and pick a point closer to the start point. {% include notice icon="tip" content='Increase *Z* in the *Cursor Auto-snapping* panel for automated Z-navigation on signal mouseover.' %}
 
 ### III. Confirm The Temporary Segment
 
@@ -219,7 +219,7 @@ To process a single image with the Frangi Vesselness filter, pause SNT, and sele
 {% capture tip%}
 To get the spatial calibration for your image, go to {% include bc path='Image|Properties...'%} ({% include key keys='Ctrl|Shift|P' %}) in the main Fiji dialog.
 {% endcapture %}
-{% include tip id='image-spacing' tip=tip %} Save the result using {% include bc path='File | Save As|Tiff...'%} ("test-filtered.tif", for example). Then, in SNT's dialog look for the "Tracing on Secondary Image" widget in the *Main* tab. Click the file folder button to specify the secondary image. Next, toggle the "Trace on Secondary Image" checkbox (you can do so using {% include key key='I' %}. Now the pathfinding will occur on the secondary image. To view a MIP of the secondary image "over" the original image during tracing, toggle the "Render in overlay at X% opacity" checkbox.
+{% include notice icon="tip" content=tip %} Save the result using {% include bc path='File | Save As|Tiff...'%} ("test-filtered.tif", for example). Then, in SNT's dialog look for the "Tracing on Secondary Image" widget in the *Main* tab. Click the file folder button to specify the secondary image. Next, toggle the "Trace on Secondary Image" checkbox (you can do so using {% include key key='I' %}. Now the pathfinding will occur on the secondary image. To view a MIP of the secondary image "over" the original image during tracing, toggle the "Render in overlay at X% opacity" checkbox.
 
 <div align="center">
 

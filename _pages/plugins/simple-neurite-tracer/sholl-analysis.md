@@ -4,7 +4,7 @@ title: Simple Neurite Tracer › Sholl analysis
 categories: [Tutorials]
 ---
 
-{% include ambox text='This is an old tutorial on how to call the [Sholl Analysis](/plugins/sholl-analysis) plugin from [Simple Neurite Tracer](/plugins/snt). **It is rather outdated. More up-to-date information is provided in [SNT: Analysis](/plugins/snt/analysis#sholl-analysis).** For an overview of the technique refer to the [Sholl Analysis](/plugins/sholl-analysis) documentation page.' %}
+{% include notice icon="info" content='This is an old tutorial on how to call the [Sholl Analysis](/plugins/sholl-analysis) plugin from [Simple Neurite Tracer](/plugins/snt). **It is rather outdated. More up-to-date information is provided in [SNT: Analysis](/plugins/snt/analysis#sholl-analysis).** For an overview of the technique refer to the [Sholl Analysis](/plugins/sholl-analysis) documentation page.' %}
 
 # Introduction
 
@@ -45,7 +45,7 @@ You can export profiles by clicking on "Save Profile" which will prompt for a CS
 
 # Analyzing Profiles
 
-Press *Analyze Profile* to run the [Sholl Analysis](/plugins/sholl-analysis) plugin. Once [Parameters](/plugins/sholl-analysis#parameters) have been specified, the plugin will [automatically calculate](/plugins/sholl-analysis#dratio) the normalization method thought to be the most informative. Metrics will be displayed in a [detailed table](/plugins/sholl-analysis#metrics). {% include tip tip='You can perform batch analysis using [\_\_\_SHADOW1\_\_\_](/plugins/sholl-analysis#analysis-of-existing-profiles) or [\_\_\_SHADOW2\_\_\_](/plugins/sholl-analysis#analysis-of-traced-cells)' %}
+Press *Analyze Profile* to run the [Sholl Analysis](/plugins/sholl-analysis) plugin. Once [Parameters](/plugins/sholl-analysis#parameters) have been specified, the plugin will [automatically calculate](/plugins/sholl-analysis#dratio) the normalization method thought to be the most informative. Metrics will be displayed in a [detailed table](/plugins/sholl-analysis#metrics). {% include notice icon="tip" content='You can perform batch analysis using [\_\_\_SHADOW1\_\_\_](/plugins/sholl-analysis#analysis-of-existing-profiles) or [\_\_\_SHADOW2\_\_\_](/plugins/sholl-analysis#analysis-of-traced-cells)' %}
 
 # Sholl Image
 

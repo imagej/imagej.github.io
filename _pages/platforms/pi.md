@@ -12,7 +12,7 @@ section: Learn:Supported Platforms
 
 # Installation
 
-{% include imagej1 content='You might notice there is as an `imagej` package available from your package manager. Please be aware that this provides [ImageJ 1.x](/software/imagej1) only, packaged by a third party, without cooperation from the core ImageJ development team. You will not have access to any [ImageJ2](/software/imagej2)-specific features such as [parameterized scripts](/scripting/parameters), and you will likely have permissions errors because it is a system-wide ImageJ installation.' %}The following steps describe how to install ImageJ on a Raspberry Pi:
+{% include notice icon="imagej1" content='You might notice there is as an `imagej` package available from your package manager. Please be aware that this provides [ImageJ 1.x](/software/imagej1) only, packaged by a third party, without cooperation from the core ImageJ development team. You will not have access to any [ImageJ2](/software/imagej2)-specific features such as [parameterized scripts](/scripting/parameters), and you will likely have permissions errors because it is a system-wide ImageJ installation.' %}The following steps describe how to install ImageJ on a Raspberry Pi:
 
 1.  Open the terminal.
 2.  Install Java 8 on your Pi (`sudo apt-get install openjdk-8-jre`).

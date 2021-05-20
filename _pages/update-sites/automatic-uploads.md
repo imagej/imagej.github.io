@@ -110,7 +110,7 @@ This is also true if you have custom scripts, macros, etc... if these files are 
 
 # Caveats
 
-{% include warning-box content='**USE CAUTION HERE**
+{% include notice icon="warning" content='**USE CAUTION HERE**
 
 1.  You are configuring Travis CI to upload the state of an ImageJ installation to your update site. The current working directory IS the ImageJ.app that will be uploaded. If your build artifacts are not located in the `jars` or `plugins` directory, or you don"t manually copy scripts to the correct location, ImageJ will see these items as having been deleted—**effectively removing all content from your update site.** You can mitigate this danger by customizing your `.travis-deploy.sh` to download your own update site into the base ImageJ.app; only changes to the update site state will be uploaded.
 2.  By default—building the master branch of your repository—your update site will be updated with \*\*every change\*\* to the source code. Although we encourage the master branch to be "[release ready](/develop/releasing#phase-2-on-master)", a safer practice would be to configure Travis CI to [only build specific branches](https://docs.travis-ci.com/user/customizing-the-build/#Building-Specific-Branches)—and set it to build [release versions](/develop/architecture#reproducible-builds) only—e.g. with a release version integration branch.

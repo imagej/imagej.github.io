@@ -14,7 +14,7 @@ categories: [community]
 
 # Who we are
 
-{% include ambox text="This list is only irregularly updated." %}
+{% include notice icon="info" content="This list is only irregularly updated." %}
 
 <div style="display: flex; flex-wrap: wrap">
 

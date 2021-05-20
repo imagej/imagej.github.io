@@ -82,7 +82,7 @@ As with all ImageJ commands, BAR scripts can be accessed in multiple ways: 1) th
 {% capture tip%}
 You can open any BAR script by holding {% include key key='Shift' %} while selecting its name from the {% include bc path="BAR |" %} menu. For pre-compiled java plugins, the source code is available through the <span style="border-bottom:1px dotted #ccc;">About BAR...</span> command.
 {% endcapture %}
-{% include tip id='OpeningBAR' tip=tip %}
+{% include notice icon="tip" content=tip %}
 
 ### Context Menu
 
@@ -138,7 +138,7 @@ As [mentioned](#context-menu), such macros can then be pasted into the text area
 {% capture tip%}
 Two other expedite ways of retrieving commands include: 1) Pressing {% include key key='L' %}, the shortcut for the \_\_\_SHADOW3\_\_\_ and 2) Pressing {% include key key='9' %}, the default shortcut for the *Recent Commands* list.
 {% endcapture %}
-{% include tip id='ExpediteAccess' tip=tip %}== Scripting BARs == Although BARs can be used as standalone commands, the scripts and plugins in BAR become more useful when incorporated into other routines.
+{% include notice icon="tip" content=tip %}== Scripting BARs == Although BARs can be used as standalone commands, the scripts and plugins in BAR become more useful when incorporated into other routines.
 
 You can use BARs as a starting point for your own workflows. Whether you are just looking to automate a simple task or you are an advanced developer, you can use BAR to achieve your analysis goals more easily, by means of Snippets - source code templates - and libs - scripting additions to be shared across routines.
 
@@ -155,7 +155,7 @@ Search BAR: Searches the contents of BAR files.
 {% capture tip%}
 BAR provides several utility methods that simplify the creation of \_\_\_SHADOW3\_\_\_ and \_\_\_SHADOW4\_\_\_ usage. These are documented in the [BAR API](http://tferr.github.io/Scripts/apidocs/) , that can be accessed using {% include bc path='BAR|About BAR...'%}. {% include bc path='About BAR...'%} also provides links to several online resources including the [ImageJ Search Portal](http://search.imagej.net) , [ImageJ Javadocs](http://javadoc.imagej.net) , and the [GitHub documentation](https://github.com/tferr/Scripts#ij-bar) of BAR.
 {% endcapture %}
-{% include tip id='API' tip=tip %} <span id="lib"></span>
+{% include notice icon="tip" content=tip %} <span id="lib"></span>
 
 ### BAR lib
 
@@ -224,7 +224,7 @@ In this case, you only need to paste the contents of your `myRoutines()` functio
 
     (.*(\.(?i)(tif
 {% endcapture %}
-{% include tip id='BuiltinProcessor' tip=tip %}
+{% include notice icon="tip" content=tip %}
     === Example: Batch Randomization of Filenames ===
     The default task of both the Python and IJM implementation of {% include github org='tferr' repo='Scripts' path='Snippets/README.md#batch-processors' label='BAR' %} *Process Folder* scripts is filename randomization: 1) They copy images from one folder to another, 2) Rename their filenames using a random string and 3) Log changes to a CSV table (so that id of randomized filename can be traced back to the original file). This approach allows for blind analyses of datasets that are sensitive to user interpretation. Below are the descriptions of {% include github org='tferr' repo='Scripts' path='Snippets/Process_Folder_PY.py' label='Process_Folder_PY.py' %} and {% include github org='tferr' repo='Scripts' path='Snippets/Process_Folder_IJM.ijm' label='Process_Folder_IJM.ijm' %}.
 

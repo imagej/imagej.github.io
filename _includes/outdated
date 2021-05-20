@@ -1,17 +1,4 @@
-<div class="note">
-  <table class="table-warning warning-notice">
-    <tbody>
-      <tr>
-        <td>
-          <img src="/media/icons/warning.png">
-        </td>
-        <td>
-          This section is out of date, potentially misleading or invalid. Be careful with any instructions here. When in doubt, <a href="/help">ask for help from the community</a>.
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+{% include notice icon="warning" content="This section is out of date, potentially misleading or invalid. Be careful with any instructions here. When in doubt, [ask for help from the community](/help)." %}
 
 {%- comment -%}
 # vi:syntax=liquid

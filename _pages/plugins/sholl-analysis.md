@@ -41,7 +41,7 @@ In this mode (bitmap analysis), the plugin requires a [binary image or a segment
 3.  Press *More » [Cf. Segmentation](#cf-segmentation)* to visually inspect the two thresholded phases: *arbor* and *background*.
 4.  Problems? Read the [FAQs](#faq).
 
-{% include tip id='Paper' tip='This program is described in [Nature methods](http://www.nature.com/nmeth/journal/v11/n10/full/nmeth.3125.html) . The manuscript uses *Sholl Analysis* to describe and classify morphologically challenging cells and is accompanied by a [Supplementary Note](http://www.nature.com/nmeth/journal/v11/n10/extref/nmeth.3125-S1.pdf) that presents the software in greater detail. Please [cite it](#faq:citing) when acknowledging the plugin in your published research.' %}
+{% include notice icon="tip" content='This program is described in [Nature methods](http://www.nature.com/nmeth/journal/v11/n10/full/nmeth.3125.html) . The manuscript uses *Sholl Analysis* to describe and classify morphologically challenging cells and is accompanied by a [Supplementary Note](http://www.nature.com/nmeth/journal/v11/n10/extref/nmeth.3125-S1.pdf) that presents the software in greater detail. Please [cite it](#faq:citing) when acknowledging the plugin in your published research.' %}
 
 ### Startup ROI
 
@@ -91,7 +91,7 @@ Press *More» Cf. Segmentation* to visually confirm which phase of the segmented
 {%- capture binary-tip -%}
 With binary images, *Sholl Analysis* treats zero intensities as the background, independently of the image lookup table or the state of the *Black background option* in {% include bc path="Process | Binary | Options..." %}. As with any other [ImageJ routine](/ij/docs/guide/146-29.html#infobox:blackBackground) , confusing background with foreground pixels will lead to aberrant results, including: 1) overestimation of branches and 2) artifacts at distances intersecting the boundaries of the image canvas.
 {%- endcapture -%}
-{% include tip tip=binary-tip %} <span id="traces"></span>
+{% include notice icon="tip" content=binary-tip %} <span id="traces"></span>
 
 ## Analysis of Traced Cells
 
@@ -106,7 +106,7 @@ With binary images, *Sholl Analysis* treats zero intensities as the background, 
 {% capture tip%}
 You can use {% include bc path='Sholl Analysis (Tracings)...' color='white'%} to analyze reconstructed data from any software capable of [SWC](http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html) export such as [Py3DN](https://sourceforge.net/projects/py3dn/) , [Neuromantic](http://www.reading.ac.uk/neuromantic/) , [NeuronStudio](http://research.mssm.edu/cnic/tools-ns.html) , [neuTube](http://www.neutracing.com) , or [Vaa3D](http://www.vaa3d.org/) ), not just [Simple Neurite Tracer](/plugins/snt). In addition, [L-Measure](http://cng.gmu.edu:8080/Lm/) , [NLMorphologyConverter](http://neuronland.org/NL.html) or [Neuron](http://www.neuron.yale.edu/neuron/) can also be used to convert several file formats (including proprietary formats from closed-source commercial software such as Neurolucida®, MicroBrightField, Inc.) into SWC.
 {% endcapture %}
-{% include tip id='external-traces' tip=tip %} <span id="importing"></span>
+{% include notice icon="tip" content=tip %} <span id="importing"></span>
 
 ## Analysis of Existing Profiles
 
@@ -170,7 +170,7 @@ Please keep in mind that this is just a refinement feature, and you should not e
 -   **Fit profile and compute descriptors** - If checked, data is fitted according to the chosen [method](#choice-of-methods) and appropriate [metrics](#metrics) calculated automatically. If unchecked, only sampled data is plotted.
     -   **Show fitting details** - Choose this option to have all of the parameters of the simplex fitting printed to the Log window. The {% include wikipedia title='Coefficient of determination' text='coefficient of determination'%} (*R<sup>2</sup>*, a measure of goodness of fit) is always stored in the *Sholl Results* table even when this option is not selected.
 
-{% include tip tip='[Complementary Tools](#complementary-tools) describes how to extend curve fitting beyond default options.' %}
+{% include notice icon="tip" content='[Complementary Tools](#complementary-tools) describes how to extend curve fitting beyond default options.' %}
 
 #### Choice of Methods
 
@@ -191,7 +191,7 @@ Please keep in mind that this is just a refinement feature, and you should not e
 -   **Save results to** -  If checked, all the results (with the exception of the *[Sholl Table](#metrics)*) are saved to the specified directory. These include: 1) Sholl plots (saved as PNG images), 2) A table containing detailed data and 3) The Sholl mask. Files are named after the image filename and analysis method. Saving options can be specified in {% include bc path='Analysis|Sholl|Metrics & Options...' color='white'%} (*Options...* command in the *More»* drop-down menu).
     -   **Do not display saved files** If checked, saved files are directly saved to disk and are not displayed. Activate this option when [batch processing](#batch-processing) files.
 
-{% include tip tip='In the dialog prompts of *Sholl Analysis*, bold headings are clickable URLs pointing to the respective sections of this manual. In addition, relevant tooltips are displayed in the ImageJ status bar when specifying key options.' %}
+{% include notice icon="tip" content='In the dialog prompts of *Sholl Analysis*, bold headings are clickable URLs pointing to the respective sections of this manual. In addition, relevant tooltips are displayed in the ImageJ status bar when specifying key options.' %}
 
 ## Sholl Plots
 
@@ -355,7 +355,7 @@ The maximum value of sampled intersections, i.e., the maximum in a linear \[*N* 
 
 See also [Critical value](#critical-value)
 
-{% include tip tip='***Max inters.***: By default only the absolute maximum is noted. However, it is possible to apply peak detection techniques to the profile to retrieve other sites of high density branching. See [Complementary Tools](#complementary-tools) for more details.' %}
+{% include notice icon="tip" content='***Max inters.***: By default only the absolute maximum is noted. However, it is possible to apply peak detection techniques to the profile to retrieve other sites of high density branching. See [Complementary Tools](#complementary-tools) for more details.' %}
 
 <span id="max-inters-radius"></span>Radius of highest count of intersections (*Max inters. radius*)  
 The distance at which the *Highest count of intersections* occurred, reflecting sites of highest branch density. Note that if the same maximum occurs multiple times, only the first distance is considered.
@@ -418,7 +418,7 @@ The distance at which *Critical value* occurs. By default (see [Advanced Usage](
 
 See also [Max inters. radius](#max-inters-radius)
 
-{% include tip id='Nomenclature' tip='**Nomenclature**: [Previous authors](#references) have used different terms to describe the largest value taken by the Sholl profile, including *Dendrite maximum*. Since the Sholl technique is not restricted to dendritic arbors and can be applied to any tree-like structure such as axonal arbors, mammary ducts or blood vessels (cf. [List of citations](#citations)), *Sholl Analysis* introduces the term [Critical radius](#critical-radius), renaming *Dendrite maximum* (*N<sub>m</sub>*) to [Critical value](#critical-value).' %}
+{% include notice icon="tip" content='**Nomenclature**: [Previous authors](#references) have used different terms to describe the largest value taken by the Sholl profile, including *Dendrite maximum*. Since the Sholl technique is not restricted to dendritic arbors and can be applied to any tree-like structure such as axonal arbors, mammary ducts or blood vessels (cf. [List of citations](#citations)), *Sholl Analysis* introduces the term [Critical radius](#critical-radius), renaming *Dendrite maximum* (*N<sub>m</sub>*) to [Critical value](#critical-value).' %}
 
 <span id="mean-value-of-function"></span>Mean value  
 The mean value[^4] of the fitted polynomial function [(1)](#eq1), representing the average of intersections over the whole area occupied by the arbor. Abbreviation *N<sub>av</sub>*.
@@ -510,7 +510,7 @@ Object detection and image segmentation in images with poor signal-to-noise will
 {% capture tip%}
 For additional image processing tools have a look at the growing list of [update sites](/list-of-update-sites). For more information on image processing have a look at \_\_\_SHADOW2\_\_\_, \_\_\_SHADOW3\_\_\_ and the [ImageJ User Guide](/ij/docs/guide/) .
 {% endcapture %}
-{% include tip tip=tip %}
+{% include notice icon="tip" content=tip %}
 
 ## Batch Processing
 
@@ -530,7 +530,7 @@ Any macro or script must allow the Sholl Analysis plugin to access the ROI marki
 {%- capture roi-tiff-tip -%}
 When working with ROIs, it is critical that you work with .tif files because only this format keeps track of image overlays. The {% include bc path="Process | Batch | Convert..." %} command allows bulk conversion between image formats.
 {%- endcapture -%}
-{% include tip id='FileFormats' tip=roi-tiff-tip %} Now that all the images are marked, we just need to ask ImageJ to generate some lines of code. We will open the Macro Recorder ({% include bc path="Plugins | Macros | Record..." %}) and run *Sholl Analysis* on one of the images to find out how to call the plugin with suitable parameters. In this example, we will use the ImageJ macro language. The single line of code that appears in the recorder window will look something like this:
+{% include notice icon="tip" content=roi-tiff-tip %} Now that all the images are marked, we just need to ask ImageJ to generate some lines of code. We will open the Macro Recorder ({% include bc path="Plugins | Macros | Record..." %}) and run *Sholl Analysis* on one of the images to find out how to call the plugin with suitable parameters. In this example, we will use the ImageJ macro language. The single line of code that appears in the recorder window will look something like this:
 
     // Recording Sholl Analysis version 3.4.3
     // Visit https://imagej.net/plugins/sholl-analysis#batch-processing for scripting examples
@@ -566,7 +566,7 @@ Of course you can also automate any preceding steps. However, do not forget to e
     // Run the plugin
     run("Sholl Analysis...", "starting=10 ending=NaN radius_step=0 infer fit linear polynomial=[8th degree] semi-log normalizer=Volume create save do");
 
-That's it. Use the Macro Recorder to generate the customizations you will need before parsing the entire folder of images with {% include bc path="Process | Batch | Macro..." %} {% include tip tip='As you may have noticed, ImageJ plugins are controlled by a single lowercase sentence in which arguments are separated by a space. Input fields and choice lists appear as *keyword=value* pairs, active checkboxes by a single keyword. Options that are not needed can be omitted. This makes it easier to generate customizable macros:
+That's it. Use the Macro Recorder to generate the customizations you will need before parsing the entire folder of images with {% include bc path="Process | Batch | Macro..." %} {% include notice icon="tip" content='As you may have noticed, ImageJ plugins are controlled by a single lowercase sentence in which arguments are separated by a space. Input fields and choice lists appear as *keyword=value* pairs, active checkboxes by a single keyword. Options that are not needed can be omitted. This makes it easier to generate customizable macros:
 
 <div style="width:98%;">
 
@@ -980,7 +980,7 @@ While in development (2005-2014), and prior to its [publication](#publication), 
 
 -   Kroner A, Greenhalgh AD, Zarruk JG, Passos Dos Santos R, Gaestel M, David S. TNF and increased intracellular iron alter macrophage polarization to a detrimental M1 phenotype in the injured spinal cord. Neuron. 2014 Sep 3;83(5):1098-116 [PMID 25132469](http://www.ncbi.nlm.nih.gov/pubmed/25132469)
 
-{% include ambox text='Please append your work here, if the plugin has been useful to your work.' %}
+{% include notice icon="info" content='Please append your work here, if the plugin has been useful to your work.' %}
 
 ## License
 

@@ -330,7 +330,7 @@ Just add the following line before the class declaration:
 
 and that's it. Let me repeat:
 
-{% include ambox text='To make a TrackMate module discoverable in TrackMate, just annotate its class with `@Plugin( type = TheTrackMateModuleClassYouAreExtending.class )`.' %}
+{% include notice icon="info" content='To make a TrackMate module discoverable in TrackMate, just annotate its class with `@Plugin( type = TheTrackMateModuleClassYouAreExtending.class )`.' %}
 
 Just the line `@Plugin( type = EdgeAnalyzer.class )` is enough. There are also mechanisms that allow fine tuning of priority, visibility (in the GUI menus), or enabling/disabling, but we will see this later.
 

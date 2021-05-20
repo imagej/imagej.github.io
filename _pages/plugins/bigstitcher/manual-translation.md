@@ -32,7 +32,7 @@ Clicking **Read Locations From File** will bring up a new window that allows you
 -   Ticking **pixel units** will interpret the locations in the files as locations in pixels (to be exact, as **pixels along the axis with the smallest pixels**). Otherwise, locations will be interpreted in the pixel size unit from metadata (e.g. microns).
 -   Ticking **keep rotation from metadata** will rotate views according to their **Angle** after moving them to the specified locations.
 
-{% include warning-box content='Clicking **Apply** will overwrite the transformations stored in your dataset (except for the pixel calibration, the translation from the tile configuration and, optionally, a rotation)' %}
+{% include notice icon="warning" content='Clicking **Apply** will overwrite the transformations stored in your dataset (except for the pixel calibration, the translation from the tile configuration and, optionally, a rotation)' %}
 
 #### Tile Configuration file format
 
@@ -58,7 +58,7 @@ Clicking **Move Tiles To Regular Grid ...** will bring up a new window that allo
 -   With the **overlap** sliders, you can specify by how much your views overlap in each dimension. By default, changing one slider will also change the others. To specify different overlaps for each dimension, unclick the 'link' button.
 -   At the bottom, there are buttons to **cancel** the grid arrangement process or **Apply Transformation**. If your dataset contains multiple timepoints, you will be asked whether you want to apply the transformation to all timepoints or just the currently selected one.
 
-{% include warning-box content='Clicking **Apply** will overwrite the transformations stored in your dataset (except for the pixel calibration, the translation from the tile configuration and, optionally, a rotation)' %}
+{% include notice icon="warning" content='Clicking **Apply** will overwrite the transformations stored in your dataset (except for the pixel calibration, the translation from the tile configuration and, optionally, a rotation)' %}
 
 <img src="/media/bigstitcher-arrange-views004.png" width="800"/>
 

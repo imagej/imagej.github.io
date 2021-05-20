@@ -127,7 +127,7 @@ Instead, let's use expressions. If it's not already visible, open the {% include
 
 In this view, we can add any number of Java expressions to evaluate. We can call methods from, and on, any variables and classes visible from the current scope.
 
-{% include warning-box content="If you evaluate expressions that change the state of variables, for example `List.add`, then those changes **will** persist. Sometimes you do legitimately need to alter the state of variables while debugging (for example, to force the conditions in which a bug appears). Just be aware that you could also be *introducing* problematic behavior when evaluating expressions." %}
+{% include notice icon="warning" content="If you evaluate expressions that change the state of variables, for example `List.add`, then those changes **will** persist. Sometimes you do legitimately need to alter the state of variables while debugging (for example, to force the conditions in which a bug appears). Just be aware that you could also be *introducing* problematic behavior when evaluating expressions." %}
 
 To complete this exercise:
 
@@ -239,7 +239,7 @@ ImageJ.app/ImageJ-linux64 --debugger=8000 --console
 ```
 See [this issue](https://github.com/imagej/imagej-launcher/issues/29) for more information.
 {%- endcapture -%}
-{% include tip tip=windows-console-tip %}
+{% include notice icon="tip" content=windows-console-tip %}
 
 <img src="/media/e4debugconfig.png" title="fig:Remote Java Application debug configuration" width="400" alt="Remote Java Application debug configuration" /> This will start up ImageJ in a mode that's able to communicate with Eclipse. Next we need to connect Eclipse to the running ImageJ instance:
 
@@ -372,7 +372,7 @@ In this state, we can still send signals to the running application (for example
 {%- capture stacktrace-tip -%}
 When running a Java application, we can use {% include key keys='ctrl|backslash' %} ({% include key keys='ctrl|pause' %} on Windows) to print a stack trace. See the [print stack trace instructions](/help/troubleshooting#if-imagej-freezes-or-hangs) for more information.
 {%- endcapture -%}
-{% include tip tip=stacktrace-tip %}
+{% include notice icon="tip" content=stacktrace-tip %}
 
 With this knowledge:
 
@@ -441,7 +441,7 @@ There is a huge amount of information that can be browsed in the heap dump. Most
 {% include quiz q="Expand the classes in the \"merge shortest paths\" tab until you get to the first child of the `ObjectMaker` class. What is the child's variable name and class?"
                 a="It is a `java.util.HashSet` with the name **cache**. `ObjectMaker` seems to store the `Float[]` instances in a set, creating strong references that prevent the arrays from being garbage collected." %}
 
-{% include tip tip="In this exercise we acquired the heap dump manually via `jvisualvm`. When you right-click on an application you can also set heap dumps to be acquired automatically when `OutOfMemoryErrors` occur. Heap dumps can also be acquired directly through the Eclipise MAT plugin, in the `Memory Analysis` perspective." %}
+{% include notice icon="tip" content="In this exercise we acquired the heap dump manually via `jvisualvm`. When you right-click on an application you can also set heap dumps to be acquired automatically when `OutOfMemoryErrors` occur. Heap dumps can also be acquired directly through the Eclipise MAT plugin, in the `Memory Analysis` perspective." %}
 
 #### Takeaways
 

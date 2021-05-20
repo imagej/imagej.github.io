@@ -72,7 +72,7 @@ The *upload information* depends on the protocol available for uploading:
 
 In case you want to use an SFTP/SSH server, it must have an empty, public web accessible folder where you intend to publish your updates. The ImageJ updater will not create that empty folder.
 
-{% include warning-box content='**A note about SSH and known\_hosts:** For ImageJ to connect to your server over SSH, you must have configured your SSH credentials as normal—i.e.: `$HOME/.ssh/known_hosts` must contain the host key, and optionally `$HOME/.ssh/config` may contain the host configuration/credentials. We recommend that the given host be specified in `$HOME/.ssh/config` and equipped with a private key.  
+{% include notice icon="warning" content='**A note about SSH and known\_hosts:** For ImageJ to connect to your server over SSH, you must have configured your SSH credentials as normal—i.e.: `$HOME/.ssh/known_hosts` must contain the host key, and optionally `$HOME/.ssh/config` may contain the host configuration/credentials. We recommend that the given host be specified in `$HOME/.ssh/config` and equipped with a private key.  
   
 Note that you need to connect with command-line ssh first, to record the finger-print of the host. It might be necessary to call `ssh-keyscan test.imagej.net >> $HOME/.ssh/known_hosts` to ensure the correctly formatted key appears in your configuration file. There is an issue with newer SSH servers offering host keys in `ecdsa-sha2-nistp256` format, but the [JSch](http://www.jcraft.com/jsch/) library wanting them in `ssh-rsa` format instead. If you receive the error `com.jcraft.jsch.JSchException: UnknownHostKey` then you might be bitten by this discrepancy; try using the `ssh-keyscan` invocation above. If you still have trouble, please write to the [Image.sc Forum](https://forum.image.sc/) to troubleshoot further.' %}
 
@@ -142,7 +142,7 @@ You can also manually enter or edit any information in the *Details* panel:
 
 {% include info-box content='The *Details* panel can only be edited if you have entered upload credentials for the appropriate update site. After modifying the *Details* panel you can mark the jar for upload, even though the jar contents itself has not changed.' %}
 
-{% include warning-box content='Sometimes the updater will mis-detect your dependencies. This may prevent you from uploading to your update site! If a dependency is wrong, you can manually add or delete dependencies from the *Details* tab to correct the problem. Please [let us know](/help) when this happens so we can try to improve the updater' %}
+{% include notice icon="warning" content='Sometimes the updater will mis-detect your dependencies. This may prevent you from uploading to your update site! If a dependency is wrong, you can manually add or delete dependencies from the *Details* tab to correct the problem. Please [let us know](/help) when this happens so we can try to improve the updater' %}
 
 ### Upload your files
 

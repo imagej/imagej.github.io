@@ -26,7 +26,7 @@ categories: [Skeleton,Analysis,Plugins,Neuroanatomy]
 
 A plugin from the [Neuroanatomy update site](/users/Neuroanatomy) that performs Strahler analysis on topographic skeletons (2D/3D). {% include wikipedia title='Strahler number' text='Strahler numbering'%} is a numerical procedure that summarizes the branching complexity of mathematical trees.
 
-{% include ambox text='This page describes how to perform Strahler Analysis on skeletonized images. For analysis of traced structures have a look at [SNT](/plugins/snt).' %}
+{% include notice icon="info" content='This page describes how to perform Strahler Analysis on skeletonized images. For analysis of traced structures have a look at [SNT](/plugins/snt).' %}
 
 ## Description
 

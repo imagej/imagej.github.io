@@ -24,7 +24,7 @@ Call up the plugin using {% include bc path="Plugins|BIOP|Multi Stack Montage...
 
 <figure><img src="/media/hyperstacks-montage-menu.jpg" title="Interface of the plugin" width="400" alt="Interface of the plugin" /><figcaption aria-hidden="true">Interface of the plugin</figcaption></figure>
 
-{% include warning-box content='If you are going to make a montage, you need each stack to be as follows:
+{% include notice icon="warning" content='If you are going to make a montage, you need each stack to be as follows:
 
 -   Same number of Channels, Slices and Timepoints
 -   Same Data Type (8-bit, 16-bit, 32-bit or RGB)' %}

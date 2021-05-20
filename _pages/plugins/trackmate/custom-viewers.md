@@ -204,7 +204,7 @@ Our view is a good dummy examples. It is not that useful, and the info panel of 
 
 There is way to do that, just by tuning the SciJava annotation:
 
-{% include ambox text='To make a TrackMate module available in TrackMate, but not visible in the GUI menus, use the annotation parameter `visible = false`' %}
+{% include notice icon="info" content='To make a TrackMate module available in TrackMate, but not visible in the GUI menus, use the annotation parameter `visible = false`' %}
 
 So editing the header of our ViewFactory to make it look like:
 

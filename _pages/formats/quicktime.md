@@ -24,7 +24,7 @@ See the [Bio-Formats QuickTime supported codecs](https://www.openmicroscopy.org/
 
 ImageJ has built-in support for MOV files, but only via the {% include wikipedia title='QuickTime for Java' text='QuickTime for Java'%} (QTJ) library, which is Apple's library for reading and writing QuickTime files from Java. QTJ is only available on Windows and macOS platforms, and only when running a 32-bit version of Java. On macOS, this means [using Apple Java 6](/help/faq#how-do-i-set-up-java-6-on-os-x).
 
-{% include warning-box content='QuickTime for Java has been deprecated for many years, and Apple is steadily phasing it out. It is likely that it will no longer be possible to use QTJ at all in future operating system versions.
+{% include notice icon="warning" content='QuickTime for Java has been deprecated for many years, and Apple is steadily phasing it out. It is likely that it will no longer be possible to use QTJ at all in future operating system versions.
 
 Apple has also deprecated several old codecs (e.g., `mjpb`), with its QuickTime Player application no longer able to read them in current versions of macOS. In general, we strongly encourage scientists *not* to use MOV format for storing scientific image data, since Apple is not committed to maintaining backwards compatibility.' %}
 

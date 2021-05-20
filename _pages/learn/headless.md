@@ -60,7 +60,7 @@ In that case, the RunBatch.ijm file should be something like:
 
 the `getArgument()` is used to grab the parameter string itself, and it is then passed to an IJ command.
 
-{% include warning-box content='Please note that you will not be able to use [script parameters](/scripting/parameters) with `-macro`. Follow instructions in [Scripting Headless](/scripting/headless) instead.' %}
+{% include notice icon="warning" content='Please note that you will not be able to use [script parameters](/scripting/parameters) with `-macro`. Follow instructions in [Scripting Headless](/scripting/headless) instead.' %}
 
 ## Xvfb
 

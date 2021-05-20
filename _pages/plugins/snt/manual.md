@@ -252,7 +252,7 @@ The \_\_\_SHADOW3\_\_\_ offers several ways to colorize Paths: 1) Using {% inclu
 
 
 {% endcapture %}
-{% include tip id='coloring-paths' tip=tip %}
+{% include notice icon="tip" content=tip %}
 
 ## Options Tab
 

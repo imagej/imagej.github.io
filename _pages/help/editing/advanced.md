@@ -42,7 +42,7 @@ site to regenerate if you anticipate making many changes in quick succession.
 In the desired folder beneath `_pages`, create a new text
 file&mdash;e.g. `touch _pages/plugins/my-awesome-plugin.md`.
 
-{% include ambox text="Filenames should be lowercase, omit spaces, and use extension `.md`." %}
+{% include notice icon="info" content="Filenames should be lowercase, omit spaces, and use extension `.md`." %}
 
 ## Editing a page locally
 

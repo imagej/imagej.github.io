@@ -4,7 +4,7 @@ title: SPIM Registration on cluster (deprecated)
 categories: Registration|Registration, plugins
 ---
 
-{% include warning-box content='Please Note: This version of the software is outdated. We highly recommend using the new [automated workflow](/plugins/automated-workflow-for-parallel-multiview-reconstruction). It is much more user friendly, efficient and versatile using full automation of the processing.' %}
+{% include notice icon="warning" content='Please Note: This version of the software is outdated. We highly recommend using the new [automated workflow](/plugins/automated-workflow-for-parallel-multiview-reconstruction). It is much more user friendly, efficient and versatile using full automation of the processing.' %}
 
 {% include info-box name='Selective Plane Illumination Microscopy Registration on a cluster' software='Fiji' author='Stephan Saalfeld, Christopher Schmied, Pavel Tomancak' maintainer='Pavel Tomancak' filename='n.a.' released='May 2013' latest-version='May 2013' category='[Registration](/plugin-index#registration)' website=' [Pavel Tomancak"s homepage](http://www.mpi-cbg.de/research/research-groups/pavel-tomancak.html)' %}= Introduction =
 

@@ -218,7 +218,7 @@ Now to use opencv function, we use the [JavaCPP API](http://bytedeco.org/javacpp
     vconcat(Col1, Col2, TwoColumn) # output stored in TwoColumn
     print CvMat(TwoColumn)
 
-{% include warning-box content='The `org.bytedeco.javacpp.opencv_core.Mat` object is different than the `org.opencv.core.Mat` !! They don"t have exactly the same attributes and functions. In Fiji you should always use the objects from `org.bytedeco.javacpp`.' %}
+{% include notice icon="warning" content='The `org.bytedeco.javacpp.opencv_core.Mat` object is different than the `org.opencv.core.Mat` !! They don"t have exactly the same attributes and functions. In Fiji you should always use the objects from `org.bytedeco.javacpp`.' %}
 
 Similarly there is some apparent redudancy for the function in the javacpp API.
 

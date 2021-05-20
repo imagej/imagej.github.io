@@ -35,7 +35,7 @@ Using **Specify Calibration**, you can change the voxel distance and length unit
 
 <img src="/media/bigstitcher-registration-calibration.png" width="500"/>
 
-{% include warning-box content='As mentioned in the dialog, this will only change the metadata and leave computed registrations (including the scaling to isotropic x,y and z-resolution) as-is. Use **Apply Transformation(s)** and **Apply on top of Calibration** to update the isotropy scaling. This will remove other transformations however, so please make sure that the calibration is set correctly **before** starting any registration/stitching.' %}
+{% include notice icon="warning" content='As mentioned in the dialog, this will only change the metadata and leave computed registrations (including the scaling to isotropic x,y and z-resolution) as-is. Use **Apply Transformation(s)** and **Apply on top of Calibration** to update the isotropy scaling. This will remove other transformations however, so please make sure that the calibration is set correctly **before** starting any registration/stitching.' %}
 
 ## Apply Transformation(s)
 

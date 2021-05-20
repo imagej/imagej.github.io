@@ -24,7 +24,7 @@ Launch it from {% include bc path='Plugins | Scripting | Jython Interpreter'%}. 
 {% capture  content %}
 Note that ImageJ also ships a unified Script Interpreter plugin, accessible from {% include bc path='Plugins | Scripting | Script Interpreter'%}. But it is currently beta quality, and the Python language does not work properly due to bugs. Once this issue is fixed, the unified Script Interpreter will replace the language-specific interpreters such as the Jython Interpreter.
 {% endcapture %}
-{% include warning-box content=content %}
+{% include notice icon="warning" content=content %}
 
 Within the interpreter, all ImageJ, java.lang.\* and TrakEM2 classes are automatically imported. So creating new images and manipulating them is very straighforward.
 

@@ -1,9 +1,37 @@
+.notice {
+  border: 0px solid #aaa;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+.notice-icon {
+  font-size: x-large;
+  padding-right: 0.5em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.notice-icon img {
+  max-width: 32px;
+  max-height: 32px;
+}
+
+.notice-content {
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 0.1em;
+  line-height: 1.3em;
+  margin-bottom: -0.5em;
+  max-width: calc(100% - 32px - 1em);
+}
+
+/* ===== DEPRECATED NOTICE STYLES ===== */
+
 .table-info {
   border: 0px solid #aaa;
 }
 
 .table-info td {
-  padding: 2px 0px 2px 0.5em;
   margin: auto;
   vertical-align: middle;
 }
@@ -20,7 +48,6 @@
 
 table.warning-notice {
   background: #FFCCCB;
-  border-left: 10px solid #b32424;
 }
 
 table.info-notice {
@@ -89,6 +116,15 @@ div.miniboxcaption {
   text-align: left;
 }
 
+.info-box {
+  position: relative;
+  float: right;
+  width: 240px;
+  font-size: 0.75em;
+}
+
+/* ===== SIDEBOXES ===== */
+
 .sidebox {
   width: 40%;
   border: 0px solid #ccc;
@@ -107,60 +143,4 @@ div.miniboxcaption {
 
 .right {
   float:right;
-}
-
-.userbox {
-  font-size: 0.75em;
-  width: 16em;
-  overflow-wrap: break-word;
-}
-
-.userbox h3 {
-  margin: 0 0 0.5em 0 !important;
-}
-
-.userbox table {
-  background-color: #FFFFFF;
-  border-collapse: collapse;
-  table-layout: fixed;
-  width: 100%;
-  text-align: left;
-  padding-left: 5px;
-}
-
-.userbox tbody {
-  background-color: #FFFFFF;
-  text-align: left;
-}
-
-.userbox table tbody tr:nth-child(2n+1) {
-  background-color: #FFFFFF;
-}
-
-.userbox tr {
-  text-align: left;
-}
-
-.userbox td {
-  padding: 0 0 0 0;
-}
-
-.userbox th {
-  background: lightgray;
-  text-align: center;
-  font-weight: bold;
-  font-size: medium;
-  padding: 0 0.5em 0 0.5em;
-}
-
-.userbox hr {
-  border-bottom: solid 1px gray;
-  margin: 0.5em -0.1em 0 0;
-}
-
-.info-box {
-  position: relative;
-  float: right;
-  width: 240px;
-  font-size: 0.75em;
 }

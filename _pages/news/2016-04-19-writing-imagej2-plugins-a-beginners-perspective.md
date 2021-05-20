@@ -84,7 +84,7 @@ In any case you need to open a new project, assign the project name, its directo
 
 A somewhat outdated but rather detailed description how to work with an older version of NetBeans (version 6.7) including bit of customization of the `build.xml` file can be found [here](http://www.dent.med.uni-muenchen.de/~kkunzelm/htdocs/6_software-netbeans.html).
 
-{% include warning-box content='Please consider:
+{% include notice icon="warning" content='Please consider:
 
 Using JAR works for local development, but it will cause you various problems later. For example, if you share your source code, you will need to commit this JAR along with your NetBeans project files to your repository, to ensure everyone else uses the same version of ImageJ that you do.' %}
 

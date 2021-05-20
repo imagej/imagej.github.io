@@ -43,7 +43,7 @@ Because of the extensibility of Ops, there is a lot of information to process wh
 
 ## For Users
 
-{% include warning-box content='This view provides an abstract representation of available Ops e.g., one entry could be many Ops merged together. An Op call is ultimately defined by the combination of requested **Op type** + **parameters**.' %}
+{% include notice icon="warning" content='This view provides an abstract representation of available Ops e.g., one entry could be many Ops merged together. An Op call is ultimately defined by the combination of requested **Op type** + **parameters**.' %}
 
 Ops in this view are focused on answering the question "What can I do *right now* with Ops?" For example, in this example we see that we can call the `Convolve` Op with either a base image, or the base and kernel:
 

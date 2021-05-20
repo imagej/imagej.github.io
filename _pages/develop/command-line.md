@@ -64,7 +64,7 @@ See the [Source Code](/develop/source) page for further details.
 
 ### Launching alternative user interfaces
 
-{% include warning-box content='Alternative UIs are experimental and still at "proof of concept" stage. The `swing` UI is semi-functional, but the other two (`swing-mdi` and `awt`) are largely non-functional, mentioned here solely for completeness.' %}
+{% include notice icon="warning" content='Alternative UIs are experimental and still at "proof of concept" stage. The `swing` UI is semi-functional, but the other two (`swing-mdi` and `awt`) are largely non-functional, mentioned here solely for completeness.' %}
 
     mvn -Dscijava.ui=swing -Pexec
     mvn -Dscijava.ui=swing-mdi -Pexec

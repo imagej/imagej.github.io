@@ -8,7 +8,7 @@ This page explains how to write and edit wiki pages. The simplest way to create
 or modify a page is using GitHub's online file editor. Each page has an "Edit
 page" link at the top right with a direct link to this interface.
 
-{% include tech-box content="Advanced users can make edits via a local clone of the site repository; see the [advanced editing guide](/help/editing/advanced) for setup instructions." %}
+{% include notice icon="tech" content="Advanced users can make edits via a local clone of the site repository; see the [advanced editing guide](/help/editing/advanced) for setup instructions." %}
 
 # Creating a new page
 
@@ -164,39 +164,14 @@ The following tables list all of this site's general-purpose includes:
 
 | Include                                      | Purpose                    |
 |----------------------------------------------|----------------------------|
-| [figure](images#figures)                     | Insert a figure            |
-| [gallery](images#image-galleries)            | Insert an image gallery    |
 | [img](images#images)                         | Insert an image            |
-| [youtube](videos#youtube)                    | Embed a YouTube video      |
-| [youtube-playlist](videos#youtube-playlists) | Embed a playlist of videos |
-| [thumbnail](TODO)                            | TODO                       |
-| [thumbnail-link](TODO)                       | TODO                       |
-
-#### Blocks
-
-| Include                             | Purpose                         |
-|-------------------------------------|---------------------------------|
-| [sidebox-left](sideboxes)           | Insert a left-floating sidebox  |
-| [sidebox-right](sideboxes)          | Insert a right-floating sidebox |
-| [box](TODO)                         | TODO                            |
-|======================================|================================|
-| [fiji](TODO)                         | Insert a sidebox about Fiji    |
+| [gallery](images#image-galleries)            | Insert an image gallery    |
 
 #### Notices
 
 | Include                              | Purpose                             |
 |--------------------------------------|-------------------------------------|
-| [ambox](notices#ambox)               | Insert an informational notice      |
-| [info-box](notices#info-box)         | Insert an informational notice      |
-| [tech-box](notices#tech-box)         | Insert an technical notice          |
-| [warning-box](notices#warning-box)   | Insert a warning notice             |
-| [tip](notices#tip-box)               | Insert a usage tip                  |
-| [biginfo-box](notices#big-info-box)  | Insert large text box notice        |
-| [minibox](notices#min-info-box)      | Insert small text box notice        |
-| [windows](TODO)                      | Insert a Windows-specific note      |
-| [macos](TODO)                        | Insert a macOS-specific note        |
-| [linux](TODO)                        | Insert a Linux-specific note        |
-| [imagej1](TODO)                      | Insert a note about ImageJ 1.x      |
+| [notice](notices)                   | Insert an informational notice  |
 | [outdated](TODO)                     | Outdated content warning            |
 | [unmaintained](TODO)                 | Warning about unmaintained software |
 | [stub](TODO)                         | Empty content warning               |
@@ -228,10 +203,21 @@ The following tables list all of this site's general-purpose includes:
 
 #### TO CHANGE
 
-| Include                              | Purpose                            |
-|--------------------------------------|------------------------------------|
-| [downloadfiji](TODO)                 | Will become fiji/download-links    |
-| [clear](TODO)                        | Delete after purging all floats    |
-| [extendingtrackmatetutorials](TODO)  | Delete after converting to nav-bar |
-| [sntnavbar](TODO)                    | Delete after converting to nav-bar |
-| [project](TODO)                      | Delete after improving statbox     |
+| Include                                      | What needs to happen               |
+|----------------------------------------------|------------------------------------|
+| [figure](images#figures)                     | Merge with img include             |
+| [thumbnail](TODO)                            | Merge with img include             |
+| [thumbnail-link](TODO)                       | Merge with img include             |
+| [youtube](videos#youtube)                    | Generalize to more video platforms |
+| [youtube-playlist](videos#youtube-playlists) | Generalize to more video platforms |
+| [info-box](notices#info-box)                 | Delete after migrating to statbox  |
+| [biginfo-box](notices#big-info-box)          | Merge with notice                  |
+| [sidebox-left](sideboxes)                    | Discontinue                        |
+| [sidebox-right](sideboxes)                   | Discontinue                        |
+| [box](TODO)                                  | Discontinue?                       |
+| [minibox](notices#min-info-box)              | Discontinue?                       |
+| [downloadfiji](TODO)                         | Will become fiji/download-links    |
+| [clear](TODO)                                | Delete after purging all floats    |
+| [extendingtrackmatetutorials](TODO)          | Delete after converting to nav-bar |
+| [sntnavbar](TODO)                            | Delete after converting to nav-bar |
+| [project](TODO)                              | Delete after improving statbox     |

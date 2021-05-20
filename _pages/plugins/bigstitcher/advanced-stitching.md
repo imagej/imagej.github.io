@@ -73,6 +73,6 @@ In the next two dialogs, you will be asked which views to include in the calcula
 
 <img src="/media/bigstitcher-stitch-8.png" width="600"/>
 
-{% include warning-box content='Theoretically, you can use the second dialog to generate arbitrary groupings of the data, e.g. compare Channels but group Tiles for chromatic shift correction. Not all of these groupings might make sense and not all of them can be properly visualized in the UI (e.g. for *interactive link preview*). Note that you have to use for the same grouping of the data in the subsequent *global optimization* step.' %}
+{% include notice icon="warning" content='Theoretically, you can use the second dialog to generate arbitrary groupings of the data, e.g. compare Channels but group Tiles for chromatic shift correction. Not all of these groupings might make sense and not all of them can be properly visualized in the UI (e.g. for *interactive link preview*). Note that you have to use for the same grouping of the data in the subsequent *global optimization* step.' %}
 
 Go back to the [main page](/plugins/bigstitcher#documentation)
