@@ -216,7 +216,6 @@ The following tables list all of this site's general-purpose includes:
 | [sidebox-right](sideboxes)                   | Discontinue                        |
 | [box](TODO)                                  | Discontinue?                       |
 | [minibox](notices#min-info-box)              | Discontinue?                       |
-| [downloadfiji](TODO)                         | Will become fiji/download-links    |
 | [clear](TODO)                                | Delete after purging all floats    |
 | [extendingtrackmatetutorials](TODO)          | Delete after converting to nav-bar |
 | [sntnavbar](TODO)                            | Delete after converting to nav-bar |

@@ -14,7 +14,7 @@ Like the rest of this wiki, this Cookbook is a community project. Please feel we
 
 ## Installing ImageJ
 
-The Cookbook is based on the [Fiji](/software/fiji) distribution of ImageJ. {% include downloadfiji%}
+The Cookbook is based on the [Fiji](/software/fiji) distribution of ImageJ. {% include fiji/download-links %}
 
 
 ## Installing the Cookbook plugins

@@ -10,7 +10,7 @@ title: Fiji Downloads
 
 [Fiji](/software/fiji) is a distribution of ImageJ which includes many useful plugins [contributed by the community](/software/fiji/contribution-requirements).
 
-{% include downloadfiji%}
+{% include fiji/download-links %}
 
 # System requirements
 
