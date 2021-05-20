@@ -11,7 +11,7 @@ section: Development
 
 The SciJava ecosystem is strongly committed to [open source](Open_source) software development. But this software is not an [open source](Open_source) software *product*—it is an [open source](Open_source) software *project* following an [open source](Open_source) development *process*.
 
-ImageJ is funded by taxpayer money, so the project strives to be as transparent as possible. There are public [source code repositories](/develop/source), public [communication](/help/communication) channels, public [project management](/develop/project-management) resources, and of course, this [community editable website](Help_Contents). As you can see, we love [doing it in public](http://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/)!
+ImageJ is funded by taxpayer money, so the project strives to be as transparent as possible. There are public [source code repositories](/develop/source), public [communication](/help/communication) channels, public [project management](/develop/project-management) resources, and of course, this [community editable website](/help/editing). As you can see, we love [doing it in public](http://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/)!
 
 ## Independent learning
 

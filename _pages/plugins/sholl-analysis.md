@@ -734,7 +734,7 @@ Please note that from version 3.4.6 onwards, updates are available through the [
 <dl>
 <dd markdown="1">
 
-Around 20 seconds. This is the time it will take you to [create an account](Help_Contents#new-accounts) on this wiki. Once you have created one, you will be able to improve this page yourself.
+Around 20 seconds. This is the time it will take you to [create an account](/help/editing) on this wiki. Once you have created one, you will be able to improve this page yourself.
 
 </dd>
 </dl>
