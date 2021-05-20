@@ -25,7 +25,7 @@ done
 
 test "$F" || { error "No filename given." && exit 1; }
 
-output=$(bundle exec htmlproofer "$F" \
+output=$(bundle exec "htmlproofer \"$F\" \
   --allow-hash-href \
   --assume-extension \
   --check-html \
@@ -40,7 +40,7 @@ output=$(bundle exec htmlproofer "$F" \
   --report-eof-tags \
   --report-mismatched-tags \
   --url-ignore '/\/(ij|conference|list-of-update-sites|mbf|presentations|tickets|workshops|images|list-of-update-sites)($|\/.*)/' \
-  --root-dir="$root" 2>&1)
+  --root-dir=\"$root\"" 2>&1)
 status=$?
 test "$VERBOSE" && echo "$output" ||
   echo "$output" |
