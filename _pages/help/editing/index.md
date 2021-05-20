@@ -215,5 +215,4 @@ The following tables list all of this site's general-purpose includes:
 | [biginfo-box](notices#big-info-box)          | Merge with notice                  |
 | [minibox](notices#min-info-box)              | Discontinue?                       |
 | [clear](TODO)                                | Delete after purging all floats    |
-| [extendingtrackmatetutorials](TODO)          | Delete after converting to nav-bar |
 | [project](TODO)                              | Delete after improving statbox     |
