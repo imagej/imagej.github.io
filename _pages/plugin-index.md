@@ -1,5 +1,6 @@
 ---
 title: Plugin Index
+section: Plugins
 ---
 
 {%- assign category-string = "" -%}
