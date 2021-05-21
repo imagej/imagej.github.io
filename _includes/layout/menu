@@ -29,6 +29,8 @@
   {%- include menu/item title="Funding" link="/about/funding" -%}
   {%- include menu/item title="Citing" link="/about/citing" -%}
   {%- include menu/item title="Contributing" link="/about/contributing" -%}
+  {%- include menu/item title="Chat" link="/about/chat" -%}
+  {%- include menu/item title="Mailing Lists" link="/about/mailing-lists" -%}
 
   {%- include menu/section title="Fiji" link="/software/fiji" -%}
     {%- include menu/item title="Using Fiji" link="/software/fiji/using" -%}
@@ -209,6 +211,7 @@
 
 {%- include menu/section title="Help" link="/help" -%}
   {%- include menu/item title="FAQ" link="/help/faq" -%}
+  {%- include menu/item title="Communication" link="/help/communication" -%}
   {%- include menu/item title="Troubleshooting" link="/help/troubleshooting" -%}
   {%- include menu/item title="How to write bug reports" link="/help/bug-reporting-best-practices" -%}
   {%- include menu/item title="Report an issue" link="/help/report-a-bug" -%}
