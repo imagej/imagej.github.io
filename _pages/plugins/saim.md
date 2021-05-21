@@ -48,7 +48,7 @@ These datasets were obtained by imaging a phospho-lipid bilayer stained with DiO
 
 [640 data set](http://valelab.ucsf.edu/~nstuurman/SAIM/160302_bilayer2_cal2_pos3_640-crop.tif)
 
-<img src="/media/488-fit-parameters.png" title="fig:488_fit_parameters.png" width="271" alt="488_fit_parameters.png" /><img src="/media/561 fit parameters.png" title="fig:561_fit_parameters.png" width="271" alt="561_fit_parameters.png" /><img src="/media/640 fit parameters.png" title="fig:640_fit_parameters.png" width="271" alt="640_fit_parameters.png" />
+<img src="/media/488-fit-parameters.png" title="fig:488_fit_parameters.png" width="271" alt="488_fit_parameters.png" /><img src="/media/561-fit-parameters.png" title="fig:561_fit_parameters.png" width="271" alt="561_fit_parameters.png" /><img src="/media/640-fit-parameters.png" title="fig:640_fit_parameters.png" width="271" alt="640_fit_parameters.png" />
 
 Some of the single pixels fits we obtained look as follows:
 

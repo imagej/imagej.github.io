@@ -53,7 +53,7 @@ The Multi Measure plugin that comes with the installation is v3.2.
 8.  Go to the *Results* window and select the menu item {% include bc path='Edit | Select All...'%}. Then {% include bc path="Edit | Copy" %}.
 9.  Go to Excel and paste in the data. Check that everything was pasted in correctly
 
-![](/media/ roi select all.jpg)
+![](/media/roi-select-all.jpg)
 
 10\. To copy ROI coordinates into the Excel spreadsheet, there needs to be an empty row above the intensity data. Use the Multi Measure dialog and click the *Copy list* button.
 

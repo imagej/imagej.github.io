@@ -5,7 +5,7 @@ categories: [Plugins,Registration,Citable]
 artifact: sc.fiji:bUnwarpJ\_
 ---
 
-{\| \|style="vertical-align:top" \|<img src="/media/bunwarpj scheme.png" title="fig:bUnwarpJ scheme: bidirectional Unwarping in Java." width="390" alt="bUnwarpJ scheme: bidirectional Unwarping in Java." /> \|}
+{\| \|style="vertical-align:top" \|<img src="/media/bunwarpj-scheme.png" title="fig:bUnwarpJ scheme: bidirectional Unwarping in Java." width="390" alt="bUnwarpJ scheme: bidirectional Unwarping in Java." /> \|}
 
 This ImageJ/Fiji plugin performs **2D image registration based on elastic deformations** represented by B-splines. The invertibility of the deformations is enforced through a consistency restriction.
 

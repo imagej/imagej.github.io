@@ -9,7 +9,7 @@ Even after correcting for fixed-pattern noise (see [here](/plugins/bigstitcher/f
 
 The brightness and contrast adjustment is available in **Multiview mode** under {% include bc path='Processing|Intensity Adjustment'%}.
 
-<img src="/media/bigstitcherintensityadjustmentmenu.png" width="500"/>
+<img src="/media/bigstitcher-intensity-adjustment-menu.png" width="500"/>
 
 {% include notice icon="info" content='Calculating the intensity adjustment requires the images to be aligned, therefore use it as a last step after registration before fusing the dataset.' %}
 
