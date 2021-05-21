@@ -5,7 +5,7 @@ title: Labkit
 artifact: net.imglib2:imglib2-labkit
 ---
 
-<img src="/media/labkitillustration.jpg" width="700"/>
+<img src="/media/labkit-illustration.jpg" width="700"/>
 
 Labkit is a plugin for:
 

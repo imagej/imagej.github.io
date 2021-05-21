@@ -347,7 +347,7 @@ If you use [`copytoImagePlus`](https://github.com/kouichi-c-nakamura/copytoImage
     imp4 = copytoImagePlus(I16,'XYCZT') % ImagePlus, 16-bit, 171x196x2x5x51
     imp4.show();
 
-`IJM.show(name)` cannot reproduce the dimensions and the data type. Channels (C), slices (Z), and frames (T) are all treated as frames. Image type is 32 bit. <img src="/media/ijmshowimage006.png" width="150"/>
+`IJM.show(name)` cannot reproduce the dimensions and the data type. Channels (C), slices (Z), and frames (T) are all treated as frames. Image type is 32 bit. <img src="/media/ijmshow-image006.png" width="150"/>
 
 `copytoImagePlus` can keep the dimensions and the data type. <img src="/media/image003.png" width="150"/>
 
