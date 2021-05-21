@@ -5,8 +5,8 @@ categories: [Plugins,Segmentation,Machine Learning,Citable]
 artifact: sc.fiji:Trainable\_Segmentation
 ---
 
-{\| \|style="vertical-align:top" \|<img src="/media/tws-pipeline.png" title="fig:Trainable Weka Segmentation pipeline overview." width="600" alt="Trainable Weka Segmentation pipeline overview." /> \|<span>  
-</span>}
+{% include img align="center" name="fig:Trainable Weka Segmentation pipeline overview." src="/media/tws-pipeline.png" width="600px" %}
+
  **Trainable**: this plugin can be trained to learn from the user input and perform later the same task in unknown (test) data.
 
 **Weka**: it makes use of all the powerful tools and classifiers from the latest version of [Weka](http://www.cs.waikato.ac.nz/ml/weka/).
