@@ -307,7 +307,7 @@ There are two easy ways of going about this:
 
 In the case of Eclipse, you may need to "Update Maven project" in order to see the snapshot couplings go into effect; the shortcut {% include key keys='Alt|F5' %} while selecting the affected project(s) accomplishes this quickly.
 
-{% include notice icon="warning" content='**Current versions of the Eclipse Maven integration (tested with Eclipse Mars) fail to correctly resolve the `LATEST` version tag to `SNAPSHOT`s. Use the command-line client instead.**' %}
+{% include notice icon="warning" content='Current versions of the Eclipse Maven integration (tested with Eclipse Mars) fail to correctly resolve the `LATEST` version tag to `SNAPSHOT`s. Use the command-line client instead.' %}
 
 Either way, ***be sure to work on a topic branch while developing code in this fashion.*** You will need to clean up your Git history afterwards before merging things to the `master` branch, in order to achieve [reproducible builds](#reproducible-builds).
 

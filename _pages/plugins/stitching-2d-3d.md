@@ -5,7 +5,7 @@ categories: [Plugins,Registration,Stitching]
 artifact: sc.fiji:Stitching\_
 ---
 
-{% include notice icon="warning" content='**Please note that this version of the Stitching is deprecated. A new version is available here: [Image Stitching](/plugins/image-stitching)**' %}
+{% include notice icon="warning" content='Please note that this version of the Stitching is deprecated. A new version is available here: [Image Stitching](/plugins/image-stitching)' %}
 
 ## Citation
 
