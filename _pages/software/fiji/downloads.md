@@ -87,6 +87,9 @@ Here are Life-Line versions of Fiji created after the switch to Java 8.
   <tbody>
     <tr class="odd">
       <td>
+        <p>Date</p>
+      </td>
+      <td>
         <p>64-bit</p>
       </td>
       <td style="font-size: 12px; text-align: center">

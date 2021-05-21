@@ -31,7 +31,7 @@ However, at the moment, it is still possible to run a (slightly outdated now) ve
 </th>
 <th style="white-space: nowrap">
 <p><a href="/media/icons/windows.svg" class="image"><img alt="/platforms/windows" src="/media/icons/windows.svg" width="32" height="32" /></a>
-<br /><a href="/media/osx.png" class="image"><img alt="macOS" src="/media/icons/apple.png" width="26" height="32" /></a>
+<br /><a href="/media/osx.png" class="image"><img alt="macOS" src="/media/icons/macos.png" width="26" height="32" /></a>
 <br /><a href="/media/tux.png" class="image"><img alt="/platforms/linux" src="/media/tux.png" width="32" height="32" /></a>
 </p>
 </th>
@@ -58,7 +58,7 @@ However, at the moment, it is still possible to run a (slightly outdated now) ve
 <td rowspan="2"> Run <a href="/plugins/3d-viewer" title="3D Viewer"><span><em><span style="border-bottom:1px dotted #ccc;">Plugins</span>&#160;&#8250; <span style="border-bottom:1px dotted #ccc;">3D Viewer</span></em></span></a> to trigger installation of <a href="/libs/java-3d" title="Java 3D">Java 3D</a> 1.5 if you need 3D viz.
 </td></tr>
 <tr>
-<th> <a href="/media/osx.png" class="image"><img alt="macOS" src="/media/icons/apple.png" width="26" height="32" /></a>
+<th> <a href="/media/osx.png" class="image"><img alt="macOS" src="/media/icons/macos.png" width="26" height="32" /></a>
 </th>
 <td> Download the final (2017-May-30) <a href="/software/fiji/downloads#java-6" title="Fiji Downloads">Java-6 version of Fiji</a>. It is distributed <i>without</i> Java, so you must <a href="/help/faq#how-do-i-set-up-java-6-on-os-x" title="Frequently Asked Questions">install Apple Java 6</a> on your system.
 <ul><li> If you have Java 7 and/or Java 8 installed, uninstall them—or else ImageJ will not use your Java 6 installation.</li>
@@ -74,7 +74,7 @@ However, at the moment, it is still possible to run a (slightly outdated now) ve
 </th>
 <th style="white-space: nowrap">
 <p><a href="/media/icons/windows.svg" class="image"><img alt="/platforms/windows" src="/media/icons/windows.svg" width="32" height="32" /></a>
-<br /><a href="/media/osx.png" class="image"><img alt="macOS" src="/media/icons/apple.png" width="26" height="32" /></a>
+<br /><a href="/media/osx.png" class="image"><img alt="macOS" src="/media/icons/macos.png" width="26" height="32" /></a>
 <br /><a href="/media/tux.png" class="image"><img alt="/platforms/linux" src="/media/tux.png" width="32" height="32" /></a>
 </p>
 </th>
@@ -93,7 +93,7 @@ However, at the moment, it is still possible to run a (slightly outdated now) ve
 </th>
 <th style="white-space: nowrap">
 <p><a href="/media/icons/windows.svg" class="image"><img alt="/platforms/windows" src="/media/icons/windows.svg" width="32" height="32" /></a>
-<br /><a href="/media/osx.png" class="image"><img alt="macOS" src="/media/icons/apple.png" width="26" height="32" /></a>
+<br /><a href="/media/osx.png" class="image"><img alt="macOS" src="/media/icons/macos.png" width="26" height="32" /></a>
 <br /><a href="/media/tux.png" class="image"><img alt="/platforms/linux" src="/media/tux.png" width="32" height="32" /></a>
 </p>
 </th>

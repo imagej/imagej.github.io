@@ -2167,7 +2167,7 @@ media/logos/Octocat.png :: media/icons/octocat.png
 media/logos/Ome-icon.png :: media/icons/ome.png
 media/logos/Omero-icon.png :: media/icons/omero.png
 media/logos/Orbit-logo.png :: media/icons/orbit.png
-media/logos/Osx.png :: media/icons/apple.png
+media/logos/Osx.png :: media/icons/macos.png
 media/logos/Pi.svg :: media/icons/pi.svg
 media/logos/Plugin.png :: media/icons/plugin.png
 media/logos/QuPath-logo.png :: media/icons/qupath.png
