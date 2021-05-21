@@ -4,7 +4,7 @@ title: Correcting drift in FRAP experiments
 categories: [Tutorials]
 ---
 
-<i>This tutorial is brought to you by Joao Firmino, Knust lab, MPI-CBG. It relates how to correct for the drift of your biological samples during long-term timelapse imaging for subsequent analysis using Fiji. Comments on the content of this tutorial are welcome in the [disscussion page](Talk_Correcting_drift_in_FRAP_experiments&action). </i>
+<i>This tutorial is brought to you by Joao Firmino, Knust lab, MPI-CBG. It relates how to correct for the drift of your biological samples during long-term timelapse imaging for subsequent analysis using Fiji. Comments on the content of this tutorial [are welcome](/help/communication). </i>
 
 ## Fluorescence Recovery After Photobleaching in Drosophila embryos
 

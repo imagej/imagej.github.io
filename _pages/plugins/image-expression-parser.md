@@ -485,6 +485,6 @@ Here is another example in [Javascript](/scripting/javascript) contributed by Je
 
 ## Wish list for this plugin
 
-We are interested into knowing how we should extend this plugin so that it suits your need. Tell us in the [discussion page](Talk_Image_Expression_Parser).
+We are interested into knowing how we should extend this plugin so that it suits your need. Please [get in touch](/help/communication).
 
 
