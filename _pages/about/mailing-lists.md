@@ -4,8 +4,9 @@ title: Mailing Lists
 categories: [community]
 ---
 
-There are several mailing lists for community discussion and troubleshooting.{% include recommendedcontact%}
+There are several mailing lists for community discussion and troubleshooting.
 
+{% include recommendedcontact%}
 
 Please [search the list archives](http://search.imagej.net/) first to find any previous discussions regarding your problem.
 
