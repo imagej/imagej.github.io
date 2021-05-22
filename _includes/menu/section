@@ -12,11 +12,7 @@
 <details>
 {%- endif -%}
 {%- if include.link -%}
-{%- if page.url == include.link -%}
-<summary><b>{{include.title}}</b></summary>
-{%- else -%}
 <summary><a href="{{include.link}}">{{include.title}}</a></summary>
-{%- endif -%}
 {%- else -%}
 <summary>{{include.title}}</summary>
 {%- endif -%}

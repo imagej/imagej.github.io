@@ -1,251 +1,258 @@
-{%- if include.dockable -%}
-<div class="menu dockable">
-<div class="drag-handle"></div>
-{%- else -%}
-<div class="menu">
-{%- endif -%}
-<h3>ImageJ Docs</h3>
-<ul>
-{%- include menu/section title="About" link="/about" -%}
-  {%- include menu/item title="Usage" link="/about/usage" -%}
-  {%- include menu/item title="Contributors" link="/about/contributors" -%}
-  {%- include menu/item title="Governance" link="/about/governance" -%}
+{%- capture main-menu -%}
+      {%- if include.dockable -%}
+      <div class="menu dockable">
+        <div class="drag-handle"></div>
+      {%- else -%}
+      <div class="menu">
+      {%- endif -%}
+        <h3>ImageJ Docs</h3>
+        <ul>
+          {% include menu/section title="About" link="/about" %}
+            <li><a href="/about/usage">Usage</a></li>
+            <li><a href="/about/contributors">Contributors</a></li>
+            <li><a href="/about/governance">Governance</a></li>
 
-  {%- include menu/section title="Licensing" link="/licensing" -%}
-    {%- include menu/section title="Open Source" -%}
-      {%- include menu/item title="Apache" link="/licensing/apache" -%}
-      {%- include menu/item title="BSD" link="/licensing/bsd" -%}
-      {%- include menu/item title="GPL" link="/licensing/gpl" -%}
-      {%- include menu/item title="LGPL" link="/licensing/lgpl" -%}
-      {%- include menu/item title="MIT" link="/licensing/mit" -%}
-      {%- include menu/item title="Public domain" link="/licensing/public-domain" -%}
-    {%- include menu/section-end -%} <!-- About/Licensing/Open Source -->
+            {% include menu/section title="Licensing" link="/licensing" %}
+              {% include menu/section title="Open Source" %}
+                <li><a href="/licensing/apache">Apache</a></li>
+                <li><a href="/licensing/bsd">BSD</a></li>
+                <li><a href="/licensing/gpl">GPL</a></li>
+                <li><a href="/licensing/lgpl">LGPL</a></li>
+                <li><a href="/licensing/mit">MIT</a></li>
+                <li><a href="/licensing/public-domain">Public domain</a></li>
+              {% include menu/section-end %} <!-- About/Licensing/Open Source -->
 
-    {%- include menu/section title="Proprietary" -%}
-      {%- include menu/item title="BIG" link="/licensing/big" -%}
-    {%- include menu/section-end -%} <!-- About/Licensing/Proprietary -->
-  {%- include menu/section-end -%} <!-- About/Licensing -->
+              {% include menu/section title="Proprietary" %}
+                <li><a href="/licensing/big">BIG</a></li>
+              {% include menu/section-end %} <!-- About/Licensing/Proprietary -->
+            {% include menu/section-end %} <!-- About/Licensing -->
 
-  {%- include menu/item title="Funding" link="/about/funding" -%}
-  {%- include menu/item title="Citing" link="/about/citing" -%}
-  {%- include menu/item title="Contributing" link="/about/contributing" -%}
-  {%- include menu/item title="Chat" link="/about/chat" -%}
-  {%- include menu/item title="Mailing Lists" link="/about/mailing-lists" -%}
+            <li><a href="/about/funding">Funding</a></li>
+            <li><a href="/about/citing">Citing</a></li>
+            <li><a href="/about/contributing">Contributing</a></li>
+            <li><a href="/about/chat">Chat</a></li>
+            <li><a href="/about/mailing-lists">Mailing Lists</a></li>
 
-  {%- include menu/section title="Fiji" link="/software/fiji" -%}
-    {%- include menu/item title="Using Fiji" link="/software/fiji/using" -%}
-    {%- include menu/item title="Featured Fiji Projects" link="/software/fiji/featured-projects" -%}
-    {%- include menu/item title="Publications" link="/software/fiji/publications" -%}
-    {%- include menu/item title="Links" link="/software/fiji/links" -%}
+            {% include menu/section title="Fiji" link="/software/fiji" %}
+              <li><a href="/software/fiji/using">Using Fiji</a></li>
+              <li><a href="/software/fiji/featured-projects">Featured Fiji Projects</a></li>
+              <li><a href="/software/fiji/publications">Publications</a></li>
+              <li><a href="/software/fiji/links">Links</a></li>
 
-    {%- include menu/section title="Developing Fiji" link="/software/fiji/developing" -%}
-      {%- include menu/item title="Building Fiji from source" link="/software/fiji/building-from-source" -%}
-      {%- include menu/item title="Contribution requirements" link="/software/fiji/contribution-requirements" -%}
-    {%- include menu/section-end -%} <!-- About/Fiji/Developing Fiji -->
-  {%- include menu/section-end -%} <!-- About/Fiji -->
-{%- include menu/section-end -%} <!-- About -->
+              {% include menu/section title="Developing Fiji" link="/software/fiji/developing" %}
+                <li><a href="/software/fiji/building-from-source">Building Fiji from source</a></li>
+                <li><a href="/software/fiji/contribution-requirements">Contribution requirements</a></li>
+              {% include menu/section-end %} <!-- About/Fiji/Developing Fiji -->
+            {% include menu/section-end %} <!-- About/Fiji -->
+          {% include menu/section-end %} <!-- About -->
 
-{%- include menu/section title="Plugins" link="/plugins" -%}
-  {%- include menu/item title="Plugin Index" link="/plugin-index" -%}
-{%- include menu/section-end -%} <!-- Plugins -->
+          {% include menu/section title="Plugins" link="/plugins" %}
+            <li><a href="/plugin-index">Plugin Index</a></li>
+          {% include menu/section-end %} <!-- Plugins -->
 
-{%- include menu/section title="Learn" link="/learn" -%}
-  {%- include menu/item title="Getting Started" link="/learn/getting-started" -%}
-  {%- include menu/item title="User Guides" link="/learn/user-guides" -%}
-  {%- include menu/item title="Tutorials" link="/tutorials" -%}
-  {%- include menu/item title="Presentations" link="/learn/presentations" -%}
-  {%- include menu/item title="Keyboard Shortcuts" link="/learn/keyboard-shortcuts" -%}
-  {%- include menu/item title="Tips and Tricks" link="/learn/tips-and-tricks" -%}
+          {% include menu/section title="Learn" link="/learn" %}
+            <li><a href="/learn/getting-started">Getting Started</a></li>
+            <li><a href="/learn/user-guides">User Guides</a></li>
+            <li><a href="/tutorials">Tutorials</a></li>
+            <li><a href="/learn/presentations">Presentations</a></li>
+            <li><a href="/learn/keyboard-shortcuts">Keyboard Shortcuts</a></li>
+            <li><a href="/learn/tips-and-tricks">Tips and Tricks</a></li>
 
-  {%- include menu/section title="Supported Platforms" link="/platforms" -%}
-    {%- include menu/item title="Windows" link="/platforms/windows" -%}
-    {%- include menu/item title="MacOS" link="/platforms/macos" -%}
-    {%- include menu/item title="Linux" link="/platforms/linux" -%}
-    {%- include menu/item title="Raspberry Pi" link="/platforms/pi" -%}
-    {%- include menu/item title="Android" link="/platforms/android" -%}
-  {%- include menu/section-end -%} <!-- Learn/Supported Platforms -->
+            {% include menu/section title="Supported Platforms" link="/platforms" %}
+              <li><a href="/platforms/windows">Windows</a></li>
+              <li><a href="/platforms/macos">MacOS</a></li>
+              <li><a href="/platforms/linux">Linux</a></li>
+              <li><a href="/platforms/pi">Raspberry Pi</a></li>
+              <li><a href="/platforms/android">Android</a></li>
+            {% include menu/section-end %} <!-- Learn/Supported Platforms -->
 
-  {%- include menu/section title="File Formats" link="/formats" -%}
-    {%- include menu/item title="Bio-Formats" link="/formats/bio-formats" -%}
-    {%- include menu/item title="Video formats" link="/formats/video" -%}
-    {%- include menu/item title="QuickTime" link="/formats/quicktime" -%}
-    {%- include menu/item title="TIFF" link="/formats/tiff" -%}
-    {%- include menu/item title="PDF" link="/formats/pdf" -%}
-    {%- include menu/item title="DICOM" link="/formats/dicom" -%}
-    {%- include menu/item title="Zeiss LSM" link="/formats/lsm" -%}
-    {%- include menu/item title="Olympus VSI" link="/formats/olympus" -%}
-    {%- include menu/item title="Opera Flex" link="/formats/lurawave" -%}
-    {%- include menu/item title="FIB-SEM" link="/formats/fib-sem" -%}
-  {%- include menu/section-end -%} <!-- Learn/File Formats -->
+            {% include menu/section title="File Formats" link="/formats" %}
+              <li><a href="/formats/bio-formats">Bio-Formats</a></li>
+              <li><a href="/formats/video">Video formats</a></li>
+              <li><a href="/formats/quicktime">QuickTime</a></li>
+              <li><a href="/formats/tiff">TIFF</a></li>
+              <li><a href="/formats/pdf">PDF</a></li>
+              <li><a href="/formats/dicom">DICOM</a></li>
+              <li><a href="/formats/lsm">Zeiss LSM</a></li>
+              <li><a href="/formats/olympus">Olympus VSI</a></li>
+              <li><a href="/formats/lurawave">Opera Flex</a></li>
+              <li><a href="/formats/fib-sem">FIB-SEM</a></li>
+            {% include menu/section-end %} <!-- Learn/File Formats -->
 
-  {%- include menu/section title="Cookbook" link="/cookbook" -%}
-    {%- include menu/item title="Annotating Images" link="/cookbook/annotating-images" -%}
-    {%- include menu/item title="Color Image Processing" link="/cookbook/color-image-processing" -%}
-    {%- include menu/item title="Deconvolution" link="/cookbook/deconvolution" -%}
-    {%- include menu/item title="Image Intensity Processing" link="/cookbook/image-intensity-processing" -%}
-    {%- include menu/item title="Particle Analysis" link="/cookbook/particle-analysis" -%}
-    {%- include menu/item title="Saving and Exporting" link="/cookbook/saving-and-exporting" -%}
-    {%- include menu/item title="Stack-slice Manipulations" link="/cookbook/stack-slice-manipulations" -%}
-    {%- include menu/item title="T-functions" link="/cookbook/t-functions" -%}
-    {%- include menu/item title="Z-functions" link="/cookbook/z-functions" -%}
-  {%- include menu/section-end -%} <!-- Learn/Cookbook -->
+            {% include menu/section title="Cookbook" link="/cookbook" %}
+              <li><a href="/cookbook/annotating-images">Annotating Images</a></li>
+              <li><a href="/cookbook/color-image-processing">Color Image Processing</a></li>
+              <li><a href="/cookbook/deconvolution">Deconvolution</a></li>
+              <li><a href="/cookbook/image-intensity-processing">Image Intensity Processing</a></li>
+              <li><a href="/cookbook/particle-analysis">Particle Analysis</a></li>
+              <li><a href="/cookbook/saving-and-exporting">Saving and Exporting</a></li>
+              <li><a href="/cookbook/stack-slice-manipulations">Stack-slice Manipulations</a></li>
+              <li><a href="/cookbook/t-functions">T-functions</a></li>
+              <li><a href="/cookbook/z-functions">Z-functions</a></li>
+            {% include menu/section-end %} <!-- Learn/Cookbook -->
 
-  {%- include menu/section title="Techniques" link="/techniques" -%}
-    {%- include menu/item title="Colocalization" link="/techniques/colocalization-analysis" -%}
-    {%- include menu/item title="Deconvolution" link="/techniques/deconvolution" -%}
-    {%- include menu/item title="Registration" link="/techniques/registration" -%}
-    {%- include menu/item title="Segmentation" link="/techniques/segmentation" -%}
-    {%- include menu/item title="Tracking" link="/techniques/tracking" -%}
-    {%- include menu/item title="Visualization" link="/techniques/visualization" -%}
-  {%- include menu/section-end -%} <!-- Learn/Techniques -->
+            {% include menu/section title="Techniques" link="/techniques" %}
+              <li><a href="/techniques/colocalization-analysis">Colocalization</a></li>
+              <li><a href="/techniques/deconvolution">Deconvolution</a></li>
+              <li><a href="/techniques/registration">Registration</a></li>
+              <li><a href="/techniques/segmentation">Segmentation</a></li>
+              <li><a href="/techniques/tracking">Tracking</a></li>
+              <li><a href="/techniques/visualization">Visualization</a></li>
+            {% include menu/section-end %} <!-- Learn/Techniques -->
 
-  {%- include menu/section title="Scripting" link="/scripting" -%}
-    {%- include menu/item title="User Input" link="/scripting/user-input" -%}
-    {%- include menu/item title="Scripting Basics" link="/scripting/basics" -%}
-    {%- include menu/item title="Using Javadocs" link="/scripting/how-to-use-the-javadoc" -%}
-    {%- include menu/item title="Batch Processing" link="/scripting/batch" -%}
-    {%- include menu/item title="Script Editor" link="/scripting/script-editor" -%}
-    {%- include menu/item title="Auto Import" link="/scripting/auto-imports" -%}
-    {%- include menu/item title="Templates" link="/scripting/templates" -%}
-    {%- include menu/item title="Running Headlessly" link="/scripting/headless" -%}
-    {%- include menu/item title="Scripting Comparisons" link="/scripting/comparisons" -%}
-    {%- include menu/item title="Toolbox" link="/scripting/toolbox" -%}
-    {%- include menu/item title="Multithreading with Clojure" link="/scripting/multithreaded-image-processing-in-clojure" -%}
-    {%- include menu/item title="Multithreading in Javascript" link="/scripting/multithreaded-image-processing-in-javascript" -%}
-    {%- include menu/item title="Chess in Jython" link="/scripting/chess" -%}
-  {%- include menu/section-end -%} <!-- Learn/Scripting -->
+            {% include menu/section title="Scripting" link="/scripting" %}
+              <li><a href="/scripting/user-input">User Input</a></li>
+              <li><a href="/scripting/basics">Scripting Basics</a></li>
+              <li><a href="/scripting/how-to-use-the-javadoc">Using Javadocs</a></li>
+              <li><a href="/scripting/batch">Batch Processing</a></li>
+              <li><a href="/scripting/script-editor">Script Editor</a></li>
+              <li><a href="/scripting/auto-imports">Auto Import</a></li>
+              <li><a href="/scripting/templates">Templates</a></li>
+              <li><a href="/scripting/headless">Running Headlessly</a></li>
+              <li><a href="/scripting/comparisons">Scripting Comparisons</a></li>
+              <li><a href="/scripting/toolbox">Toolbox</a></li>
+              <li><a href="/scripting/multithreaded-image-processing-in-clojure">Multithreading with Clojure</a></li>
+              <li><a href="/scripting/multithreaded-image-processing-in-javascript">Multithreading in Javascript</a></li>
+              <li><a href="/scripting/chess">Chess in Jython</a></li>
+            {% include menu/section-end %} <!-- Learn/Scripting -->
 
-  {%- include menu/section title="Languages" -%}
-    {%- include menu/item title="BeanShell Scripting" link="/scripting/beanshell" -%}
-    {%- include menu/item title="Groovy Scripting" link="/scripting/groovy" -%}
-    {%- include menu/item title="ImageJ Macro" link="/scripting/macro" -%}
-    {%- include menu/item title="JavaScript" link="/scripting/javascript" -%}
-    {%- include menu/item title="Batch Processing" link="/scripting/batch" -%}
-    {%- include menu/item title="Lisp (Clojure)" link="/scripting/clojure" -%}
-    {%- include menu/item title="MATLAB" link="/scripting/matlab" -%}
-    {%- include menu/item title="Python (Jython)" link="/scripting/jython" -%}
-    {%- include menu/item title="R (Renjin)" link="/scripting/renjin" -%}
-    {%- include menu/item title="Ruby (JRuby)" link="/scripting/jruby" -%}
-    {%- include menu/item title="Scala Scripting" link="/scripting/scala" -%}
-  {%- include menu/section-end -%} <!-- Learn/Languages -->
-{%- include menu/section-end -%} <!-- Learn -->
+            {% include menu/section title="Languages" %}
+              <li><a href="/scripting/beanshell">BeanShell Scripting</a></li>
+              <li><a href="/scripting/groovy">Groovy Scripting</a></li>
+              <li><a href="/scripting/macro">ImageJ Macro</a></li>
+              <li><a href="/scripting/javascript">JavaScript</a></li>
+              <li><a href="/scripting/batch">Batch Processing</a></li>
+              <li><a href="/scripting/clojure">Lisp (Clojure)</a></li>
+              <li><a href="/scripting/matlab">MATLAB</a></li>
+              <li><a href="/scripting/jython">Python (Jython)</a></li>
+              <li><a href="/scripting/renjin">R (Renjin)</a></li>
+              <li><a href="/scripting/jruby">Ruby (JRuby)</a></li>
+              <li><a href="/scripting/scala">Scala Scripting</a></li>
+            {% include menu/section-end %} <!-- Learn/Languages -->
+          {% include menu/section-end %} <!-- Learn -->
 
-{%- include menu/section title="Development" link="/develop" -%}
-  {%- include menu/item title="Philosophy" link="/develop/philosophy" -%}
-  {%- include menu/item title="Architecture" link="/develop/architecture" -%}
-  {%- include menu/item title="Source code" link="/develop/source" -%}
-  {%- include menu/item title="Project management" link="/develop/project-management" -%}
-  {%- include menu/item title="Coding style" link="/develop/coding-style" -%}
-  {%- include menu/item title="Debugging" link="/develop/debugging" -%}
-  {%- include menu/item title="Wish list" link="/develop/wish-list" -%}
+          {% include menu/section title="Development" link="/develop" %}
+            <li><a href="/develop/philosophy">Philosophy</a></li>
+            <li><a href="/develop/architecture">Architecture</a></li>
+            <li><a href="/develop/source">Source code</a></li>
+            <li><a href="/develop/project-management">Project management</a></li>
+            <li><a href="/develop/coding-style">Coding style</a></li>
+            <li><a href="/develop/debugging">Debugging</a></li>
+            <li><a href="/develop/wish-list">Wish list</a></li>
 
-  {%- include menu/section title="Tools" -%}
-    {%- include menu/item title="GitHub" link="/develop/github" -%}
-    {%- include menu/item title="Maven" link="/develop/maven" -%}
-    {%- include menu/section title="IDEs" link="/develop/ides" -%}
-      {%- include menu/item title="Eclipse" link="/develop/eclipse" -%}
-      {%- include menu/item title="NetBeans" link="/develop/netbeans" -%}
-      {%- include menu/item title="IntelliJ IDEA" link="/develop/intellij" -%}
-      {%- include menu/item title="Command Line" link="/develop/command-line" -%}
-    {%- include menu/section-end -%}
-    {%- include menu/item title="Travis" link="/develop/travis" -%}
-    {%- include menu/item title="AppVeyor" link="/develop/appveyor" -%}
-    {%- include menu/item title="Dotfiles" link="/develop/dotfiles" -%}
-  {%- include menu/section-end -%} <!-- Development/Tools -->
+            {% include menu/section title="Tools" %}
+              <li><a href="/develop/github">GitHub</a></li>
+              <li><a href="/develop/maven">Maven</a></li>
+              {% include menu/section title="IDEs" link="/develop/ides" %}
+                <li><a href="/develop/eclipse">Eclipse</a></li>
+                <li><a href="/develop/netbeans">NetBeans</a></li>
+                <li><a href="/develop/intellij">IntelliJ IDEA</a></li>
+                <li><a href="/develop/command-line">Command Line</a></li>
+              {% include menu/section-end %}
+              <li><a href="/develop/travis">Travis</a></li>
+              <li><a href="/develop/appveyor">AppVeyor</a></li>
+              <li><a href="/develop/dotfiles">Dotfiles</a></li>
+            {% include menu/section-end %} <!-- Development/Tools -->
 
-  {%- include menu/section title="Guides" -%}
-    {%- include menu/item title="Writing plugins" link="/develop/plugins" -%}
-    {%- include menu/item title="ImageJ Ops" link="/libs/imagej-ops" -%}
-    {%- include menu/item title="Contributing to a plugin" link="/develop/improving-the-code" -%}
-    {%- include menu/item title="Distributing your plugins" link="/develop/distributing" -%}
-    {%- include menu/item title="Development lifecycle" link="/develop/releasing" -%}
-    {%- include menu/item title="Building a POM" link="/develop/building-a-pom" -%}
-    {%- include menu/divider -%}
-    {%- include menu/item title="Hands-on debugging" link="/develop/debugging-exercises" -%}
-    {%- include menu/item title="Adding new ops" link="/develop/writing-ops" -%}
-    {%- include menu/item title="Adding new formats" link="/develop/formats" -%}
-    {%- include menu/item title="Using native libraries" link="/develop/native-libraries" -%}
-    {%- include menu/item title="Tips for developers" link="/develop/tips" -%}
-    {%- include menu/item title="Tips for C++ developers" link="/develop/cpp-tips" -%}
-    {%- include menu/item title="ImageJ 1.x plugins" link="/develop/ij1-plugins" -%}
-    {%- include menu/item title="Versioning" link="/develop/versioning" -%}
-    {%- include menu/item title="Logging" link="/develop/logging" -%}
-    {%- include menu/item title="Uber-JARs" link="/develop/uber-jars" -%}
-  {%- include menu/section-end -%} <!-- Development/Guides -->
+            {% include menu/section title="Guides" %}
+              <li><a href="/develop/plugins">Writing plugins</a></li>
+              <li><a href="/libs/imagej-ops">ImageJ Ops</a></li>
+              <li><a href="/develop/improving-the-code">Contributing to a plugin</a></li>
+              <li><a href="/develop/distributing">Distributing your plugins</a></li>
+              <li><a href="/develop/releasing">Development lifecycle</a></li>
+              <li><a href="/develop/building-a-pom">Building a POM</a></li>
+              <hr>
+              <li><a href="/develop/debugging-exercises">Hands-on debugging</a></li>
+              <li><a href="/develop/writing-ops">Adding new ops</a></li>
+              <li><a href="/develop/formats">Adding new formats</a></li>
+              <li><a href="/develop/native-libraries">Using native libraries</a></li>
+              <li><a href="/develop/tips">Tips for developers</a></li>
+              <li><a href="/develop/cpp-tips">Tips for C++ developers</a></li>
+              <li><a href="/develop/ij1-plugins">ImageJ 1.x plugins</a></li>
+              <li><a href="/develop/versioning">Versioning</a></li>
+              <li><a href="/develop/logging">Logging</a></li>
+              <li><a href="/develop/uber-jars">Uber-JARs</a></li>
+            {% include menu/section-end %} <!-- Development/Guides -->
 
-  {%- include menu/section title="Git" link="/develop/git" -%}
-    {%- include menu/item title="Git in Eclipse (EGit)" link="/develop/git/eclipse" -%}
-    {%- include menu/item title="Git mini howto" link="/develop/git/mini-howto" -%}
-    {%- include menu/item title="Git workshop" link="/develop/git/workshop" -%}
-    {%- include menu/item title="Git conflicts" link="/develop/git/conflicts" -%}
-    {%- include menu/item title="Git topic branches" link="/develop/git/topic-branches" -%}
-    {%- include menu/item title="Git notes" link="/develop/git/notes" -%}
-    {%- include menu/item title="Git reflogs" link="/develop/git/reflogs" -%}
-    {%- include menu/item title="Git submodules" link="/develop/git/submodules" -%}
-    {%- include menu/item title="How to pinpoint regressions" link="/develop/git/pinpoint-regressions" -%}
-    {%- include menu/item title="How to publish a git repository" link="/develop/git/publish-a-repository" -%}
-    {%- include menu/item title="How to extract a subproject" link="/develop/git/extract-a-subproject" -%}
-  {%- include menu/section-end -%} <!-- Development/Git -->
+            {% include menu/section title="Git" link="/develop/git" %}
+              <li><a href="/develop/git/eclipse">Git in Eclipse (EGit)</a></li>
+              <li><a href="/develop/git/mini-howto">Git mini howto</a></li>
+              <li><a href="/develop/git/workshop">Git workshop</a></li>
+              <li><a href="/develop/git/conflicts">Git conflicts</a></li>
+              <li><a href="/develop/git/topic-branches">Git topic branches</a></li>
+              <li><a href="/develop/git/notes">Git notes</a></li>
+              <li><a href="/develop/git/reflogs">Git reflogs</a></li>
+              <li><a href="/develop/git/submodules">Git submodules</a></li>
+              <li><a href="/develop/git/pinpoint-regressions">How to pinpoint regressions</a></li>
+              <li><a href="/develop/git/publish-a-repository">How to publish a git repository</a></li>
+              <li><a href="/develop/git/extract-a-subproject">How to extract a subproject</a></li>
+            {% include menu/section-end %} <!-- Development/Git -->
 
-  {%- include menu/section title="ImgLib2" link="/libs/imglib2" -%}
-    {%- include menu/item title="ImgLib2 Benchmarks" link="/libs/imglib2/benchmarks" -%}
-    {%- include menu/item title="FAQ" link="/libs/imglib2/faq" -%}
+            {% include menu/section title="ImgLib2" link="/libs/imglib2" %}
+              <li><a href="/libs/imglib2/benchmarks">ImgLib2 Benchmarks</a></li>
+              <li><a href="/libs/imglib2/faq">FAQ</a></li>
 
-    {%- include menu/section title="Tutorials" -%}
-      {%- include menu/item title="Getting Started" link="/libs/imglib2/getting-started" -%}
-      {%- include menu/item title="Accessors" link="/libs/imglib2/accessors" -%}
-      {%- include menu/item title="Accessibles" link="/libs/imglib2/accessibles" -%}
-      {%- include menu/item title="Examples" link="/libs/imglib2/examples" -%}
-      {%- include menu/item title="Introductory Workshop" link="/libs/imglib2/workshop-introductory" -%}
-      {%- include menu/item title="Advanced Programming Workshop" link="/libs/imglib2/workshop-advanced" -%}
-      {%- include menu/item title="Into ImgLib - Generic Image Processing in Java" link="/libs/imglib1/workshop" -%}
-      {%- include menu/item title="Creating Imglib2 images in MATLAB" link="/libs/imglib2/matlab" -%}
-    {%- include menu/section-end -%} <!-- Development/ImgLib2/Tutorials -->
+              {% include menu/section title="Tutorials" %}
+                <li><a href="/libs/imglib2/getting-started">Getting Started</a></li>
+                <li><a href="/libs/imglib2/accessors">Accessors</a></li>
+                <li><a href="/libs/imglib2/accessibles">Accessibles</a></li>
+                <li><a href="/libs/imglib2/examples">Examples</a></li>
+                <li><a href="/libs/imglib2/workshop-introductory">Introductory Workshop</a></li>
+                <li><a href="/libs/imglib2/workshop-advanced">Advanced Programming Workshop</a></li>
+                <li><a href="/libs/imglib1/workshop">Into ImgLib - Generic Image Processing in Java</a></li>
+                <li><a href="/libs/imglib2/matlab">Creating Imglib2 images in MATLAB</a></li>
+              {% include menu/section-end %} <!-- Development/ImgLib2/Tutorials -->
 
-    {%- include menu/section title="Development" -%}
-      {%- include menu/item title="Developing ImgLib2" link="/libs/imglib2/developing" -%}
-      {%- include menu/item title="ImgLib2 Discussion" link="/libs/imglib2/discussion" -%}
-    {%- include menu/section-end -%} <!-- Development/ImgLib2/Development -->
-  {%- include menu/section-end -%} <!-- Development/ImgLib2 -->
-{%- include menu/section-end -%} <!-- Development -->
+              {% include menu/section title="Development" %}
+                <li><a href="/libs/imglib2/developing">Developing ImgLib2</a></li>
+                <li><a href="/libs/imglib2/discussion">ImgLib2 Discussion</a></li>
+              {% include menu/section-end %} <!-- Development/ImgLib2/Development -->
+            {% include menu/section-end %} <!-- Development/ImgLib2 -->
+          {% include menu/section-end %} <!-- Development -->
 
-{%- include menu/section title="Help" link="/help" -%}
-  {%- include menu/item title="FAQ" link="/help/faq" -%}
-  {%- include menu/item title="Communication" link="/help/communication" -%}
-  {%- include menu/item title="Troubleshooting" link="/help/troubleshooting" -%}
-  {%- include menu/item title="How to write bug reports" link="/help/bug-reporting-best-practices" -%}
-  {%- include menu/item title="Report an issue" link="/help/report-a-bug" -%}
-  {%- include menu/section title="Editing the Wiki" link="/help/editing" -%}
-    {%- include menu/item title="Advanced editing" link="/help/editing/advanced" -%}
-    {%- include menu/item title="Citations" link="/help/editing/citations" -%}
-    {%- include menu/item title="Source Code" link="/help/editing/code" -%}
-    {%- include menu/item title="Headers" link="/help/editing/headers" -%}
-    {%- include menu/item title="Icons" link="/help/editing/icons" -%}
-    {%- include menu/item title="Images" link="/help/editing/images" -%}
-    {%- include menu/item title="Keyboard Shortcuts" link="/help/editing/keys" -%}
-    {%- include menu/item title="Linking" link="/help/editing/linking" -%}
-    {%- include menu/item title="Math Expressions" link="/help/editing/math" -%}
-    {%- include menu/item title="Notices" link="/help/editing/notices" -%}
-    {%- include menu/item title="People" link="/help/editing/people" -%}
-    {%- include menu/item title="Pitfalls" link="/help/editing/pitfalls" -%}
-    {%- include menu/item title="Symbols" link="/help/editing/symbols" -%}
-    {%- include menu/item title="Tables" link="/help/editing/tables" -%}
-    {%- include menu/item title="Timelines" link="/help/editing/timelines" -%}
-    {%- include menu/item title="Videos" link="/help/editing/videos" -%}
-    {%- include menu/item title="Whitespace" link="/help/editing/whitespace" -%}
-  {%- include menu/section-end -%} <!-- Help/Editing the Wiki -->
-  {%- include menu/section title="Update Sites" link="/update-sites"  -%}
-    {%- include menu/item title="Following an update site" link="/update-sites/following" -%}
-    {%- include menu/item title="Creating an update site" link="/update-sites/setup" -%}
-    {%- include menu/item title="Terms of service" link="/update-sites/tos" -%}
-    {%- include menu/item title="Automatic upload" link="/update-sites/automatic-uploads" -%}
-    {%- include menu/item title="Uploading to core sites" link="/update-sites/core-uploads" -%}
-    {%- include menu/item title="List of update sites" link="/list-of-update-sites" -%}
-    {%- include menu/item title="Update site FAQ" link="/update-sites/faq" -%}
-  {%- include menu/section-end -%} <!-- Help/Update Sites -->
-{%- include menu/section-end -%} <!-- Help -->
-</ul>
-</div>
+          {% include menu/section title="Help" link="/help" %}
+            <li><a href="/help/faq">FAQ</a></li>
+            <li><a href="/help/communication">Communication</a></li>
+            <li><a href="/help/troubleshooting">Troubleshooting</a></li>
+            <li><a href="/help/bug-reporting-best-practices">How to write bug reports</a></li>
+            <li><a href="/help/report-a-bug">Report an issue</a></li>
+            {% include menu/section title="Editing the Wiki" link="/help/editing" %}
+              <li><a href="/help/editing/advanced">Advanced editing</a></li>
+              <li><a href="/help/editing/citations">Citations</a></li>
+              <li><a href="/help/editing/code">Source Code</a></li>
+              <li><a href="/help/editing/headers">Headers</a></li>
+              <li><a href="/help/editing/icons">Icons</a></li>
+              <li><a href="/help/editing/images">Images</a></li>
+              <li><a href="/help/editing/keys">Keyboard Shortcuts</a></li>
+              <li><a href="/help/editing/linking">Linking</a></li>
+              <li><a href="/help/editing/math">Math Expressions</a></li>
+              <li><a href="/help/editing/notices">Notices</a></li>
+              <li><a href="/help/editing/people">People</a></li>
+              <li><a href="/help/editing/pitfalls">Pitfalls</a></li>
+              <li><a href="/help/editing/symbols">Symbols</a></li>
+              <li><a href="/help/editing/tables">Tables</a></li>
+              <li><a href="/help/editing/timelines">Timelines</a></li>
+              <li><a href="/help/editing/videos">Videos</a></li>
+              <li><a href="/help/editing/whitespace">Whitespace</a></li>
+            {% include menu/section-end %} <!-- Help/Editing the Wiki -->
+            {% include menu/section title="Update Sites" link="/update-sites" %}
+              <li><a href="/update-sites/following">Following an update site</a></li>
+              <li><a href="/update-sites/setup">Creating an update site</a></li>
+              <li><a href="/update-sites/tos">Terms of service</a></li>
+              <li><a href="/update-sites/automatic-uploads">Automatic upload</a></li>
+              <li><a href="/update-sites/core-uploads">Uploading to core sites</a></li>
+              <li><a href="/list-of-update-sites">List of update sites</a></li>
+              <li><a href="/update-sites/faq">Update site FAQ</a></li>
+            {% include menu/section-end %} <!-- Help/Update Sites -->
+          {% include menu/section-end %} <!-- Help -->
+        </ul>
+      </div>
+{%- endcapture -%}
+
+{%- capture page-link -%} <a href="{{page.url}}"> {%- endcapture -%}
+{%- assign page-link = page-link | replace: "/index", "" -%}
+{%- capture current-page -%} <a class="current-page"> {%- endcapture -%}
+{{ main-menu | replace: page-link, current-page }}
 
 {%- comment -%}
 # vi:syntax=liquid

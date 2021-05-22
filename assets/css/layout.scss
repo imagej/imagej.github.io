@@ -308,7 +308,8 @@ $sidebarPadding: 10px;
   padding-right: 0.5em;
 }
 
-/* Menus */
+/* --------------------------------- MENU --------------------------------- */
+
 
 .menu {
   font-size: 0.85em;
@@ -375,6 +376,18 @@ $sidebarPadding: 10px;
   font-size: 11px;
 }
 
+.menu a.current-page {
+  font-weight: bold;
+  color: black;
+  -moz-transition: none;
+  -webkit-transition: none;
+  -ms-transition: none;
+  transition: none;
+}
+
+.menu a.current-page:hover {
+  border-bottom: none;
+}
 
 $leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding - 30px;
 
