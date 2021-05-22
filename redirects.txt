@@ -2188,6 +2188,16 @@ media/mtracker-newlogo-04.png :: media/icons/mtrack.png
 media/newlogo.png :: <DELETED> (unused)
 media/nih-image-logo.png :: media/icons/nih-image.png
 media/no.svg :: media/icons/no.svg
+media/noisee-beads-kymographs.png :: media/noisee/beads-kymographs.png
+media/noisee-beads-original-data.png :: media/noisee/beads-original-data.png
+media/noisee-beads-plots.png :: media/noisee/beads-plots.png
+media/noisee-beads-snr.png :: media/noisee/beads-snr.png
+media/noisee-dialog-beads.png :: media/noisee/dialog-beads.png
+media/noisee-dialog-fluorescein.png :: media/noisee/dialog-fluorescein.png
+media/noisee-fluorescein-absolute-signal.png :: media/noisee/fluorescein-absolute-signal.png
+media/noisee-fluorescein-darkfield.png :: media/noisee/fluorescein-darkfield.png
+media/noisee-fluorescein-histogram.png :: media/noisee/fluorescein-histogram.png
+media/noisee-fluorescein-original-data.png :: media/noisee/fluorescein-original-data.png
 media/noisee-logo.png :: media/logos/noisee.png
 media/ome-icon.png :: media/icons/ome.png
 media/ome-logo.jpg :: media/logos/ome.jpg
