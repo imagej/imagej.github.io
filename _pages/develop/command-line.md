@@ -15,7 +15,7 @@ This article explains how to install and configure command line tools for use wi
 </div>
 
 <div id="windows" class="tabcontent" markdown="1">
-{%- include img src='/icons/windows.svg' width='32px' -%}
+{%- include icon name='Windows' size='32px' -%}
 <br/>
 
 Install [Git](/develop/git), [Maven](/develop/maven), and Java SE using [Chocolatey](https://chocolatey.org/):
@@ -28,7 +28,7 @@ We also heartily recommend installing [Cygwin](https://www.cygwin.com/):
 
 </div>
 <div id="macos" class="tabcontent" markdown="1">
-{%- include img src='/osx.png' width='32px' -%}
+{%- include icon name='MacOS' size='32px' -%}
 <br/>
 
 Install [Git](/develop/git) and [Maven](/develop/maven) using [Homebrew](http://brew.sh/):
@@ -39,7 +39,7 @@ Download and install [Java SE](http://www.oracle.com/technetwork/java/javase/dow
 
 </div>
 <div id="linux" class="tabcontent" markdown="1">
-{%- include img src='/tux.png' width='32px' -%}
+{%- include icon name='Linux' width='32px' -%}
 <br/>
 
     sudo apt-get install default-jdk git maven

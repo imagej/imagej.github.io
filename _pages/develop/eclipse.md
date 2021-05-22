@@ -35,7 +35,7 @@ adjustment for other versions.
 </div>
 
 <div id="windows" class="tabcontent" markdown="1">
-{%- include img src="/icons/windows.svg" width="32px" -%}
+{%- include icon name="Windows" size="32px" -%}
 <br/>
 
 **Avoid permissions issues.** We recommend installing Eclipse *outside* of the `Program Files` directory. E.g.: `C:\Users\frood\Programs\eclipse`, where `C:\Users\frood` is your user directory.
@@ -54,14 +54,14 @@ Now update Eclipse's JRE to be JDK-aware:
 
 </div>
 <div id="macos" class="tabcontent" markdown="1">
-{%- include img src="/osx.png" width="32px" -%}
+{%- include icon name="MacOS" width="32px" -%}
 <br/>
 
 **Understand Java 6 vs. Java 8.** Eclipse should work on macOS with no further configuration. However, we recommend reading the [macOS section of the FAQ](/help/faq#macos), as there are several Java-related issues on macOS.
 
 </div>
 <div id="linux" class="tabcontent" markdown="1">
-{%- include img src="/tux.png" width="32px" -%}
+{%- include icon name="Linux" width="32px" -%}
 <br/>
 
 **Avoid permissions issues.** We recommend installing to `$HOME/eclipse`.

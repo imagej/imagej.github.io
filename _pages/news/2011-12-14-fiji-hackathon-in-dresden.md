@@ -148,24 +148,22 @@ Some locals were not present at the hackathon on weekends.
 
 ## Photos
 
-{%- include img src='/fiji-hackathon-galleria5.jpg' -%}
-{%- include img src='/fiji-hackathon-galleria4.jpg' -%}
-{%- include img src='/fiji-hackathon-galleria3.jpg' -%}
-{%- include img src='/fiji-hackathon-galleria2.jpg' -%}
-{%- include img src='/fiji-hackathon-thinking.jpg' -%}
-{%- include img src='/fiji-hackathon-thinking2.jpg' -%}
-{%- include img src='/fiji-hackathon-hacking.jpg' -%}
-{%- include img src='/fiji-hackathon-curtis.jpg' -%}
-{%- include img src='/fiji-hackathon-josh2.jpg' -%}
-{%- include img src='/fiji-hackathon-josh-johannes.jpg' -%}
-{%- include img src='/fiji-hackathon-melissa.jpg' -%}
-{%- include img src='/fiji-hackathon-dan-jurgen.jpg' -%}
-{%- include img src='/fiji-hackathon-icy.jpg' -%}
-{%- include img src='/fiji-hackathon-josh4.jpg' -%}
-{%- include img src='/fiji-hackathon-josh3.jpg' -%}
-{%- include img src='/fiji-hackathon-josh1.jpg' -%}
-{%- include img src='/fiji-hackathon-kevin.jpg' -%}
-{%- include img src='/fiji-hackathon-ferdi.jpg' -%}
-{%- include img src='/fiji-hackathon-jean-marie.jpg' -%}
-
- 
+{%- include img src='fiji-hackathon-galleria5' -%}
+{%- include img src='fiji-hackathon-galleria4' -%}
+{%- include img src='fiji-hackathon-galleria3' -%}
+{%- include img src='fiji-hackathon-galleria2' -%}
+{%- include img src='fiji-hackathon-thinking' -%}
+{%- include img src='fiji-hackathon-thinking2' -%}
+{%- include img src='fiji-hackathon-hacking' -%}
+{%- include img src='fiji-hackathon-curtis' -%}
+{%- include img src='fiji-hackathon-josh2' -%}
+{%- include img src='fiji-hackathon-josh-johannes' -%}
+{%- include img src='fiji-hackathon-melissa' -%}
+{%- include img src='fiji-hackathon-dan-jurgen' -%}
+{%- include img src='fiji-hackathon-icy' -%}
+{%- include img src='fiji-hackathon-josh4' -%}
+{%- include img src='fiji-hackathon-josh3' -%}
+{%- include img src='fiji-hackathon-josh1' -%}
+{%- include img src='fiji-hackathon-kevin' -%}
+{%- include img src='fiji-hackathon-ferdi' -%}
+{%- include img src='fiji-hackathon-jean-marie' -%}

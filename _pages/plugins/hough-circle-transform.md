@@ -22,7 +22,7 @@ categories: [Analysis]
 
 A {% include wikipedia title='Circle Hough Transform' text='Hough circle transform'%} is an image transform that allows for circular objects to be extracted from an image, even if the circle is incomplete. The transform is also selective for circles, and will generally ignore elongated ellipses. The transform effectively searches for objects with a high degree of radial symmetry, with each degree of symmetry receiving one "vote" in the search space. By searching a 3D Hough search space, the transform can measure the centroid and radius of each circlular object in an image.
 
-{%- include figure src='/hough-intro2.png' align='center' width='1000px' content='**Hough circle transform is specific to circular objects.** *Left Panel:* This panel shown the input data for the Hough circle transform. The data includes (clockwise from top left) a circle (radius 37 pixels), a square (length 37 pixels), an ellipse (minor axis 37 pixels), and a sectored circle (radius 37 pixels).
+{%- include figure src='hough-intro2' align='center' width='1000px' content='**Hough circle transform is specific to circular objects.** *Left Panel:* This panel shown the input data for the Hough circle transform. The data includes (clockwise from top left) a circle (radius 37 pixels), a square (length 37 pixels), an ellipse (minor axis 37 pixels), and a sectored circle (radius 37 pixels).
 
 *Right Panel:* This panel shows the output of a 24 step Hough circle transform. As you can see, the circle and the sectored circle converge to local maxima, while the square and ellipse do not, show the specificity of the transform for circular objects.' -%}
 
@@ -113,7 +113,7 @@ This option sets the number of steps in each circle transform. To reduce unneces
 
 NOTE: This option is only available in advanced mode. In easy mode, this value defaults to 1000.
 
-{%- include figure src='/resolution-figure.png' align='center' width='1000px' content='**Effect of transform resolution on distinguishing various n-gons.** *Panel 1* shows a circle and three regular polygons: a 4-gon, 8-gon, and 16-gon. *Panel 2* shows a Hough circle transform with four steps. Since all the shapes are radially symmetrical with 90° rotations, they all have an equal peak score at their centroids.
+{%- include figure src='resolution-figure' align='center' width='1000px' content='**Effect of transform resolution on distinguishing various n-gons.** *Panel 1* shows a circle and three regular polygons: a 4-gon, 8-gon, and 16-gon. *Panel 2* shows a Hough circle transform with four steps. Since all the shapes are radially symmetrical with 90° rotations, they all have an equal peak score at their centroids.
 
 *Panel 3* shows a Hough circle transform with eight steps. Since the circle, 8-gon, and 16-gon radially symmetrical with 45° rotations, they all have an equal peak score at their centroids. These shapes have a higher score at their centroids than the 4-gon, because it lacks 45° radial symmetry.
 
@@ -129,7 +129,7 @@ By default, this ratio is set to be one, meaning that a circle of the same size 
 
 NOTE: This option is only available in advanced mode. In easy mode, this value defaults to 1.0.
 
-{%- include figure src='/clear-ratio2.png' width='1000px' align='center' content='**Adjusting the clear radius ratio to find overlapping circles.**
+{%- include figure src='clear-ratio2' width='1000px' align='center' content='**Adjusting the clear radius ratio to find overlapping circles.**
 
 The left panel shows the input data with a single circle on top and a pair of overlapping circles below. The next panel shows the resulting Hough circle transform (24 steps).
 
@@ -163,7 +163,7 @@ The local search algorithm is comprised of three sub-algorithms, depending on th
 
 **Partial Local - ** If the number of circular objects in the previous frame is less than the minimum number of objects set but greater than 0, then the algorithm will use a a hybrid search. A full Hough transform will be performed such that any missing circles will now be found. However, so speed up the search, the algorithm will first search locally within the Hough space for the same circular objects found in the previous frame, and then will search the entire Hough space for any remaining circular objects.
 
-{%- include figure src='/local-search.png' width='1000px' align='center' content='**Local versus full Hough transform.**
+{%- include figure src='local-search' width='1000px' align='center' content='**Local versus full Hough transform.**
 
 The left panel shows the input data with a single circle in the center of the image with a radius of 50 pixels. The center panel shows orthogonal projections of the full 3D Hough space. The radius search range was 10-110 pixels. The left panel shows a local Hough transform of the same circle, with a search area of 20x20 pixels, and a radius search range of +/- 10 pixels of the original circle radius. NOTE: In Hough space, the Z-dimension is the radius of the transform.' -%}
 

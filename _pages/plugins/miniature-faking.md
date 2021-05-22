@@ -8,6 +8,6 @@ This is an interactive non-scientific fun plugin to {% include wikipedia title='
 
     new mpicbg.ij.integral.InteractiveTilt().run("");
 
-{%- include img src='/mpi-cbg.jpg' -%} People sitting in the MPI-CBG cafeteria. {%- include img src='/street.jpg' -%} A crossroad in NYC. {%- include img src='/dc.jpg' -%} A view over DC. {%- include img src='/car.jpg' -%} Some cars in front of a restaurant. {%- include img src='/traveler.jpg' -%} A traveler in the mountains. {%- include img src='/wood.jpg' -%} Landscape.
+{%- include img src='mpi-cbg' -%} People sitting in the MPI-CBG cafeteria. {%- include img src='street' -%} A crossroad in NYC. {%- include img src='dc' -%} A view over DC. {%- include img src='car' -%} Some cars in front of a restaurant. {%- include img src='traveler' -%} A traveler in the mountains. {%- include img src='wood' -%} Landscape.
 
     
