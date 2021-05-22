@@ -29,7 +29,8 @@
 {%- if match -%}
   {{- match -}}
 {%- else -%}
-  https://upload.wikimedia.org/wikipedia/commons/5/5b/Nuvola_filesystems_file_broken.png
+  {%- capture error-message -%} No media found for arguments: `{{include}}` {%- endcapture -%}
+  {% include notice icon="warning" content=error-message %}
 {%- endif -%}
 
 {%- comment -%}
