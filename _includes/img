@@ -1,23 +1,36 @@
 {%- assign alt = include.alt | default: include.name | default: include.src -%}
 {%- assign title = include.title | default: include.name | default: include.src -%}
 {%- assign width = include.width -%}
-{%- assign classes = include.classes | default: "" -%}
-{%- if include.align -%}
-  {%- assign classes = classes | append: " image-" | append: include.align | strip -%}
-{%- endif -%}
+{%- assign caption = include.caption -%}
+{%- assign align = include.align -%}
+{%- assign style = include.style -%}
 
 {%- capture src -%}{%- include util/find-media path=include.src -%}{%- endcapture -%}
 
 {%- if src == '' -%}
-{%- capture error-message -%} Invalid img arguments: `{{include}}` {%- endcapture -%}
-{% include notice icon="warning" content=error-message %}
+  {%- capture error-message -%}
+    Invalid img arguments: `{{include}}`
+  {%- endcapture -%}
+  {% include notice icon="warning" content=error-message %}
 {%- else -%}
-<img src="{{src}}"
-  {%- if alt           %} alt="{{alt}}"       {%- endif -%}
-  {%- if title         %} title="{{title}}"   {%- endif -%}
-  {%- if width         %} width={{width}}     {%- endif -%}
-  {%- if classes != "" %} class="{{classes}}" {%- endif -%}
->
+  {%- if caption -%}
+    <figure
+      {%- if align %} class="{{align}}" {%- endif -%}
+      {%- if style %} class="{{style}}" {%- endif -%}
+    >
+    {%- assign align = nil -%}
+    {%- assign style = nil -%}
+  {%- endif -%}
+  <img src="{{src}}"
+    {%- if alt   %} alt="{{alt}}"     {%- endif -%}
+    {%- if title %} title="{{title}}" {%- endif -%}
+    {%- if width %} width={{width}}   {%- endif -%}
+    {%- if align %} class="{{align}}" {%- endif -%}
+    {%- if style %} style="{{style}}" {%- endif -%}
+  >
+  {%- if caption -%}
+    <figcaption>{{ caption | markdownify }}</figcaption></figure>
+  {%- endif -%}
 {%- endif -%}
 
 {%- comment -%}

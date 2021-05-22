@@ -11,7 +11,7 @@ artifact: ca.mcgill:Sholl_Analysis
 
 ## Introduction
 
-{% include figure align="right" name="ca1-cell-mask" src="/media/bitmapsholl-ca1mask.png" content="[Skeletonized](/plugins/skeletonize3d) hippocampal CA1 cell[^1] (juvenile mouse) in which apical and basal dendrites have been analyzed [separately](#ca1-cell-plot) and [color coded](#output-options) according to their Sholl profile. Warmer hues indicate higher number of Intersections (*N*). [Critical radius](#critical-radius) (*r<sub>c</sub>*) and [Mean value](#mean-value-of-function) (*N<sub>av</sub>*) are indicated." %}
+{% include img align="right" name="ca1-cell-mask" src="/media/bitmapsholl-ca1mask.png" caption="[Skeletonized](/plugins/skeletonize3d) hippocampal CA1 cell[^1] (juvenile mouse) in which apical and basal dendrites have been analyzed [separately](#ca1-cell-plot) and [color coded](#output-options) according to their Sholl profile. Warmer hues indicate higher number of Intersections (*N*). [Critical radius](#critical-radius) (*r<sub>c</sub>*) and [Mean value](#mean-value-of-function) (*N<sub>av</sub>*) are indicated." %}
 
 The Sholl technique[^2] is used to describe neuronal arbors. This plugin can perform Sholl directly on 2D and 3D grayscale images of isolated neurons. Its internal algorithm to collect data is based upon how Sholl analysis is done by hand — it creates a series of concentric *shells* (circles or spheres) around the focus of a neuronal arbor, and counts how many times connected voxels defining the arbor intersect the sampling shells. The major advantages of this plugin over other implementations are:
 
@@ -110,7 +110,7 @@ You can use {% include bc path='Sholl Analysis (Tracings)...' color='white'%} to
 
 ## Analysis of Existing Profiles
 
-{% include figure align="right" name="ca1-linear-plot" src="/media/bitmapsholl-ca1compartment.png" content="Linear plot for CA1 cell [described above](/media/#ca1-cell-mask). Using the soma as center, image was sampled twice using the [Restrict analysis to hemicircle/hemisphere](#restrict) option in order to segregate apical from basal dendrites. For convenience, distances for basal branches were assigned negative values. For clarity, the binary image of the arbor was rotated, scaled and overlaid (in green) over the plot canvas. Note that it is also possible to restrict [curve fitting](#methods-table) to a sub-range of distances once [data is collected](#importing)." %}
+{% include img align="right" name="ca1-linear-plot" src="/media/bitmapsholl-ca1compartment.png" caption="Linear plot for CA1 cell [described above](/media/#ca1-cell-mask). Using the soma as center, image was sampled twice using the [Restrict analysis to hemicircle/hemisphere](#restrict) option in order to segregate apical from basal dendrites. For convenience, distances for basal branches were assigned negative values. For clarity, the binary image of the arbor was rotated, scaled and overlaid (in green) over the plot canvas. Note that it is also possible to restrict [curve fitting](#methods-table) to a sub-range of distances once [data is collected](#importing)." %}
 
 -   **Input data**: Any tab or comma delimited text file (.csv, .txt, .xls, .ods) can be used. You can drag & drop these files into the main ImageJ window, import data from the clipboard, or use data from any other table already opened by ImageJ.
 -   **Restricting input data**: To restrict measurements to a range of distances ([see related example](#ca1-cell-plot)), select the range of distances you want analyze. You can click the first row in the range, and then drag the mouse to the last row, or by holding down {% include key key='Shift' %} while selecting the last row in the range. Then, in the prompt, activate the *Restrict analysis to selected rows only* checkbox.
@@ -449,7 +449,7 @@ The coefficient of determination of the polynomial fit described in [(1)](#eq1).
 
 ## Complementary Tools
 
-{% include figure align="right" name="extended-fitting" src="/media/animatedpolyfit.gif" content="Sampled data from the ddaC cell being fitted to polynomials of varying degree using a complementary [BAR](/plugins/bar) script."%}
+{% include img align="right" name="extended-fitting" src="/media/animatedpolyfit.gif" caption="Sampled data from the ddaC cell being fitted to polynomials of varying degree using a complementary [BAR](/plugins/bar) script."%}
 
 *Sholl Analysis* tries to be as flexible as possible by providing several options for normalization and curve fitting. However, it cannot offer exhaustive curve fitting options as determining *best fit models* requires reasonable choices that are not amenable to full automation. For this reason, complementary tools for curve fitting can be installed as needed using [BAR](/plugins/bar) by subscribing to its [update site](/plugins/bar#installation). Several [BAR](/plugins/bar) commands complement *Sholl Analysis*. These include:
 

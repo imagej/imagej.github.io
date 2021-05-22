@@ -2,6 +2,14 @@
   visibility: hidden;
 }
 
+#header img {
+  display: block;
+  width: auto;
+  height: 60vh;
+  margin: auto;
+  padding-top: 5vh;
+}
+
 .text-success {
   color: #28a745!important;
 }

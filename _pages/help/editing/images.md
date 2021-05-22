@@ -138,12 +138,17 @@ Images can be added with an accompanying legend text by including `figure` follo
 
 {% raw %}
 ```
-{% include figure align="left" name="spiral left" src="/media/help/spirals.png" content="**Figure 1**: This is a left figure." %}
+{% include img align="left" name="spiral left" src="/media/help/spirals.png" caption="**Figure 1**: This is a left figure." %}
 
 ```
 {% endraw %}
 
-{% include figure align="left" name="spiral left" src="/media/help/spirals.png" content="**Figure 1**: This is a left figure." %}
+<figure style="float: left">
+{% include img name="spiral" src="help/spirals" %}
+<figcaption markdown=1>
+**Figure 1**: This is a left figure.
+</figcaption>
+</figure>
 
 Lorem ipsum dolor sit amet, qui possit aeterno denique ea, te usu affert consequuntur, vix in utinam mentitum reformidans. Sed ea vidisse eripuit aliquid, no usu ullum dictas, an epicurei maluisset vix. Ne posse virtute impedit duo. Eos homero euripidis honestatis no.
 
@@ -161,11 +166,11 @@ Or to the right of the text.
 
 {% raw %}
 ```
-{% include figure align="right" name="spiral right" src="/media/help/spirals.png" content="**Figure 2** : This is a right figure." %}
+{% include img align="right" name="spiral right" src="/media/help/spirals.png" caption="**Figure 2** : This is a right figure." %}
 ```
 {% endraw %}
 
-{% include figure align="right" name="spiral right" src="/media/help/spirals.png" content="**Figure 2** : This is a right figure." %}
+{% include img align="right" name="spiral right" src="/media/help/spirals.png" caption="**Figure 2** : This is a right figure." %}
 
 Lorem ipsum dolor sit amet, qui possit aeterno denique ea, te usu affert consequuntur, vix in utinam mentitum reformidans. Sed ea vidisse eripuit aliquid, no usu ullum dictas, an epicurei maluisset vix. Ne posse virtute impedit duo. Eos homero euripidis honestatis no.
 
@@ -183,12 +188,12 @@ Or centered.
 
 {% raw %}
 ```
-{% include figure align="center" name="spiral center" src="/media/help/spirals.png" content="**Figure 1**: This is a centered figure." %}
+{% include img align="center" name="spiral center" src="/media/help/spirals.png" caption="**Figure 1**: This is a centered figure." %}
 
 ```
 {% endraw %}
 
-{% include figure align="center" name="spiral center" src="/media/help/spirals.png" content="**Figure 1**: This is a centered figure." %}
+{% include img align="center" name="spiral center" src="/media/help/spirals.png" caption="**Figure 1**: This is a centered figure." %}
 
 # Image Galleries
 

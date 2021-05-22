@@ -80,10 +80,10 @@ We provide a small set of [sample data](https://sites.imagej.net/NoiSee/samples/
 
 Running the beads macro on the above sample data will give the following results:
 
-{% include figure src='noisee/beads-original-data' content='Beads Input Data' %}
-{% include figure src='noisee/beads-snr' content='SNR' %}
-{% include figure src='noisee/beads-kymographs' content='Kymographs' %}
-{% include figure src='noisee/beads-plots' content='SNR Plots' %}
+{% include img src='noisee/beads-original-data' %}
+{% include img src='noisee/beads-snr' %}
+{% include img src='noisee/beads-kymographs' %}
+{% include img src='noisee/beads-plots' %}
 
 ## Fluorescein Method Example Results
 
@@ -92,10 +92,10 @@ Running the beads macro on the above sample data will give the following results
 
 Running the fluorescein macro on the above sample data will give the following results:
 
-{% include figure src='noisee/fluorescein-original-data' content='Fluorescein Input Data' %}
-{% include figure src='noisee/fluorescein-darkfield' content='Dark Field Input Data' %}
-{% include figure src='noisee/fluorescein-absolute-signal' content='Absolute Signal' %}
-{% include figure src='noisee/fluorescein-histogram' content='SHistogram of the Absolute Signal' %}
+{% include img src='noisee/fluorescein-original-data' %}
+{% include img src='noisee/fluorescein-darkfield' %}
+{% include img src='noisee/fluorescein-absolute-signal' %}
+{% include img src='noisee/fluorescein-histogram' %}
 
 # Citation
 

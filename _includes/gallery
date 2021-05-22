@@ -4,7 +4,7 @@
 {% for i in (1..gallery_end_index) %}
 {% assign image-path = gallery-entries[i] | split: "|" | first | strip %}
 {% assign image-text = gallery-entries[i] | split: "|" | last | strip %}
-{%include thumbnail src=image-path title=image-text %}
+{% include thumbnail src=image-path title=image-text %}
 {% endfor %}
 {%- endcapture -%}
 
