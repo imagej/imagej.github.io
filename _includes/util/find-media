@@ -30,12 +30,7 @@
   {%- if match -%} {%- break -%} {%- endif -%}
 {%- endfor -%}
 
-{%- if match -%}
-  {{- match -}}
-{%- else -%}
-  {%- capture error-message -%} No media found for arguments: `{{include}}` {%- endcapture -%}
-  {% include notice icon="warning" content=error-message %}
-{%- endif -%}
+{{- match -}}
 
 {%- comment -%}
 # vi:syntax=liquid

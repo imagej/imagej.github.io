@@ -6,14 +6,19 @@
   {%- assign classes = classes | append: " image-" | append: include.align | strip -%}
 {%- endif -%}
 
-{%- capture src %}{% include util/find-media path=include.src %}{% endcapture -%}
+{%- capture src -%}{%- include util/find-media path=include.src -%}{%- endcapture -%}
 
+{%- if src == '' -%}
+{%- capture error-message -%} Invalid img arguments: `{{include}}` {%- endcapture -%}
+{% include notice icon="warning" content=error-message %}
+{%- else -%}
 <img src="{{src}}"
   {%- if alt           %} alt="{{alt}}"       {%- endif -%}
   {%- if title         %} title="{{title}}"   {%- endif -%}
   {%- if width         %} width={{width}}     {%- endif -%}
   {%- if classes != "" %} class="{{classes}}" {%- endif -%}
 >
+{%- endif -%}
 
 {%- comment -%}
 # vi:syntax=liquid

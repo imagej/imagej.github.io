@@ -6,15 +6,17 @@
   {%- endcase -%}
 {%- endcapture -%}
 
-{%- capture src -%}{%- include util/find-media src=include.src -%}{%- endcapture -%}
+{%- capture src -%}{%- include util/find-media path=include.src -%}{%- endcapture -%}
 
-<div class="figure {{style-class}}" markdown="1">
-
-![{{include.name}}]({{src}})
-
-{{include.content}}
-
+{%- if src == '' -%}
+{%- capture error-message -%} Invalid figure arguments: `{{include}}` {%- endcapture -%}
+{% include notice icon="warning" content=error-message %}
+{%- else -%}
+<div class="figure {{style-class}}">
+<img src="{{src}}" title="{{include.name}}" alt="{{include.name}}">
+<span markdown=1>{{include.content}}</span>
 </div>
+{%- endif -%}
 
 {%- comment -%}
 # vi:syntax=liquid
