@@ -11,6 +11,7 @@ collections:
   pages:
     output: true
     permalink: /:path
+allow-jekyll-4: false
 projects:
   - name: Fiji
     description: the Fiji distribution of ImageJ
