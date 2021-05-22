@@ -10,6 +10,7 @@ A horizontal navigation bar with links.
   {%- endcomment -%}
 
   {%- capture page-dir -%} {%- include util/dir path=page.url -%} {%- endcapture -%}
+  {%- assign candidates = site.pages | where_exp: "p", "p.url contains page-dir" -%}
 
   {%- comment -%}
     We build up the list of links as a big string, because Jekyll 3.9
@@ -18,7 +19,7 @@ A horizontal navigation bar with links.
       of Array with Array failed included (Liquid::ArgumentError)
   {%- endcomment -%}
   {%- assign links = "" -%}
-  {%- for p in site.pages -%}
+  {%- for p in candidates -%}
     {%- capture p-dir -%} {%- include util/dir path=p.url -%} {%- endcapture -%}
     {%- if p-dir == page-dir -%}
       {%- comment -%} Sort index page before the others. {%- endcomment -%}
