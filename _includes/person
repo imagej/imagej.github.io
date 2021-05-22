@@ -2,17 +2,18 @@
 {%- assign url = nil -%}
 {%- if include.id -%}
   {%- assign url = "/users/" | append: include.id -%}
-  {%- comment -%}
-  NB: The find filter would be nicer here, but it requires Jekyll 4.1.0+.
-  {%- endcomment -%}
-  {%- assign matches = site.pages | where: "url", url -%}
-  {%- if matches.size > 0 -%}
-    {%- assign name = matches[0].name -%}
+  {%- if site.allow-jekyll-4 -%}
+    {%- assign hit = site.pages | find: "url", url -%}
+    {%- if hit -%} {%- assign name = hit.name -%} {%- endif -%}
   {%- else -%}
+    {%- assign hits = site.pages | where: "url", url -%}
+    {%- if hits.size > 0 -%} {%- assign name = hits[0].name -%} {%- endif -%}
+  {%- endif -%}
+  {%- unless name -%}
     {%- comment -%} Unknown ID -- treat it as a raw name. {%- endcomment -%}
     {%- assign url = nil -%}
     {%- assign name = include.id -%}
-  {%- endif -%}
+  {%- endunless -%}
 {%- endif -%}
 
 {%- assign label = include.name | default: name -%}
