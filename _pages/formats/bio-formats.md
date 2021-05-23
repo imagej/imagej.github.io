@@ -144,11 +144,11 @@ To enable the Bio-Formats update site:
 
 1.  Launch the updater: **Update** from the **Help** menu.
 2.  Click the **Manage update sites** button.
-3.  Tick the **Bio-Formats** box: <img src="/media/bf-manage-update-sites.png" title="fig:Bf-manage-update-sites.png" width="700" alt="Bf-manage-update-sites.png" />
-4.  Click the **Close** button. The updater should want to update some files now: <img src="/media/bf-jars-to-update.png" title="fig:Bf-jars-to-update.png" width="700" alt="Bf-jars-to-update.png" />
+3.  Tick the **Bio-Formats** box: <img src="/media/formats/bf-manage-update-sites.png" title="fig:Bf-manage-update-sites.png" width="700" alt="Bf-manage-update-sites.png" />
+4.  Click the **Close** button. The updater should want to update some files now: <img src="/media/formats/bf-jars-to-update.png" title="fig:Bf-jars-to-update.png" width="700" alt="Bf-jars-to-update.png" />
 5.  Click the **Apply changes** button.
 6.  Restart Fiji when prompted.
-7.  To verify the upgrade, choose **Bio-Formats Plugins...** from **About Plugins** beneath the **Help** menu: <img src="/media/bf-about-plugins.png" title="fig:Bf-about-plugins.png" width="700" alt="Bf-about-plugins.png" />
+7.  To verify the upgrade, choose **Bio-Formats Plugins...** from **About Plugins** beneath the **Help** menu: <img src="/media/formats/bf-about-plugins.png" title="fig:Bf-about-plugins.png" width="700" alt="Bf-about-plugins.png" />
 
 ## Source code
 

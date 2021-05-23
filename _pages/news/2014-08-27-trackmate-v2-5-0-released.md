@@ -28,12 +28,12 @@ There are tiny differences with the previous version, notably in the way cost th
 
 [TrackScheme](/plugins/trackmate/trackscheme) now features a search box and proper row and column headers.
 
-<img src="/media/trachschemesearchbar.png" width="600"/>
+<img src="/media/news/trachschemesearchbar.png" width="600"/>
 
 ## Other improvement
 
 A new action, called *Branch hierarchy analysis* features a branch-based analysis of tracks. The output is an ImageJ results table that contains for each branch the number of predecessors, the number of successors and its duration. The results table is clickable and will set the selection to be the clicked branch.
 
-<img src="/media/trackmatebranchanalysis.png" width="600"/>
+<img src="/media/news/trackmatebranchanalysis.png" width="600"/>
 
 [^1]: [Jaqaman et al., "Robust single-particle tracking in live-cell time-lapse sequences", Nat Methods. 2008 Aug;5(8):695-702.](http://www.nature.com/nmeth/journal/v5/n8/full/nmeth.1237.html)

@@ -36,23 +36,23 @@ The generall approach of the ellipse fitting plugin is as follows:
 
 Suppose you have the following input image:
 
-<figure><img src="/media/ellipsesplit-input.png" title="Ellipsesplit_input.png" width="300" alt="Ellipsesplit_input.png" /><figcaption aria-hidden="true">Ellipsesplit_input.png</figcaption></figure>
+<figure><img src="/media/plugins/ellipsesplit-input.png" title="Ellipsesplit_input.png" width="300" alt="Ellipsesplit_input.png" /><figcaption aria-hidden="true">Ellipsesplit_input.png</figcaption></figure>
 
 Then the watershed approach ({% include bc path="Process | Binary | Watershed" %}) would give this result:
 
-<img src="/media/ellipsesplit-watershed.png" width="300"/>
+<img src="/media/plugins/ellipsesplit-watershed.png" width="300"/>
 
 The ellipse splitting plugin applied to the input image will combine the watershed result and direct ellipse fitting. This leads to the following result:
 
-![](/media/ellipsesplit-result.png)
+![](/media/plugins/ellipsesplit-result.png)
 
 Furthermore it outputs several important features:
 
-<img src="/media/ellipsesplit-resultstable.png" width="600"/>
+<img src="/media/plugins/ellipsesplit-resultstable.png" width="600"/>
 
 ## Parameters
 
-{% include img src="/media/ellipsesplit.png" width="350" caption="GUI of Ellipse Split Plugin" %}
+{% include img src="/media/plugins/ellipsesplit.png" width="350" caption="GUI of Ellipse Split Plugin" %}
 
 **Binary splitted image:** If set to "Use standard watershed" it will use ImageJ's watershed technique to split the binary object. If there are better techniques for splitting available, you could select here the binary image splitted by that technique.
 

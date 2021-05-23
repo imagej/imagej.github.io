@@ -12,11 +12,11 @@ In Fiji, we have a plugin whose only purpose is to write tutorials to be publish
 
 After clicking on {% include bc path='Plugins | Utilities | Fiji | New Fiji Tutorial'%}, you will be asked for the title of your tutorial:
 
-![](/media/how-to-make-a-new-tutorial-pagetitle.jpg)
+![](/media/tutorials/how-to-make-a-new-tutorial-pagetitle.jpg)
 
 You will get two new windows: the *Snapshot* winow (which is set to be always on top) and the *Editor* window:
 
-<img src="/media/how-to-make-a-new-tutorial-editor.jpg" width="640"/>
+<img src="/media/tutorials/how-to-make-a-new-tutorial-editor.jpg" width="640"/>
 
 ## Second step: take snapshots
 
@@ -31,11 +31,11 @@ To take snapshots of modal dialogs (which block events to the *Snapshot* window,
 
 In any of the two modes, the snapshot window will hide itself before taking the snapshot.
 
-<img src="/media/how-to-make-a-new-tutorial-makesnapshots.jpg" width="640"/>
+<img src="/media/tutorials/how-to-make-a-new-tutorial-makesnapshots.jpg" width="640"/>
 
 After taking some or all of the snapshots you want to include in your tutorial, you have to crop them. Just select the appropriate rectangle, and then click on ImageJ's {% include bc path='Edit | Crop'%} or press {% include key keys='Ctrl|Shift|X' %}:
 
-![](/media/how-to-make-a-new-tutorial-cropsnapshot.jpg)
+![](/media/tutorials/how-to-make-a-new-tutorial-cropsnapshot.jpg)
 
 You can also annotate the images at this stage, such as circling an important aspect of the snapshot in a bright color, or adding an arrow to shift the attention of the interested reader to a certain item.
 
@@ -43,11 +43,11 @@ If -- for whatever reason -- you want to crop (or process in another manner) the
 
 For aesthetic reasons -- and to avoid confusing yourself -- you might want to rename the snapshots. There are two options for that. The first is to call the *Rename Image* menu item in the *Wiki* menu of the *Editor*:
 
-![](/media/how-to-make-a-new-tutorial-rename1.jpg)
+![](/media/tutorials/how-to-make-a-new-tutorial-rename1.jpg)
 
 This will pop up another dialog which lets you change the name of the image:
 
-![](/media/how-to-make-a-new-tutorial-rename2.jpg)
+![](/media/tutorials/how-to-make-a-new-tutorial-rename2.jpg)
 
 The other method is to select the image and click on ImageJ's {% include bc path='Image | Rename...'%} menu item.
 
@@ -57,17 +57,17 @@ In both cases, the image references in the text will be adjusted automatically.
 
 A picture says more than a thousand words, but to be sure that it actually says what you want to tell, add a bit of surrounding text to the snapshots:
 
-<img src="/media/how-to-make-a-new-tutorial-addtext.jpg" width="640"/>
+<img src="/media/tutorials/how-to-make-a-new-tutorial-addtext.jpg" width="640"/>
 
 ## Fourth step: preview
 
 Now is the time to preview your work:
 
-<img src="/media/how-to-make-a-new-tutorial-preview.jpg" width="640"/>
+<img src="/media/tutorials/how-to-make-a-new-tutorial-preview.jpg" width="640"/>
 
 The first time you call *Preview* (or *Upload*, whichever comes first), you will be asked for your credentials:
 
-<img src="/media/how-to-make-a-new-tutorial-login.jpg" width="640"/>
+<img src="/media/tutorials/how-to-make-a-new-tutorial-login.jpg" width="640"/>
 
 This will **not** upload the images yet, but use the Wiki engine to render HTML from your text. The preview will be extracted from the result, and the image references adjusted to point to your local images. The preview will be opened in your default web browser.
 
@@ -77,7 +77,7 @@ Now is the time to proof-read. Fix whatever you do not like and make a new previ
 
 When everything is good to go, upload the tutorial:
 
-<img src="/media/how-to-make-a-new-tutorial-upload.jpg" width="640"/>
+<img src="/media/tutorials/how-to-make-a-new-tutorial-upload.jpg" width="640"/>
 
 This will upload all the images (asking you how to proceed when an image exists already in the Wiki) and upload the text. The final page will be opened in your default web browser, and the *Snapshot* and *Editor* windows will be closed.
 

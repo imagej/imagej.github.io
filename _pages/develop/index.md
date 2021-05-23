@@ -24,7 +24,7 @@ This page provides an overview of ImageJ from the perspective of software develo
     </tr>
     <tr class="even">
       <td style="border-top: 1px #aaa solid; padding: 15px 15px;">
-        <p><a href="Getting%20started"><img src="/media/imagej-app.png" width="500px"></a></p>
+        <p><a href="Getting%20started"><img src="/media/develop/imagej-app.png" width="500px"></a></p>
       </td>
     </tr>
     <tr class="odd">
@@ -60,7 +60,7 @@ public void loadAndDisplay(File file) {
     </tr>
     <tr class="even">
       <td style="padding: 15px 0 15px 25px;">
-        <p><a href="/libs/imagej-ops"><img src="/media/write-once-run-anywhere.png" width="500px"></a></p>
+        <p><a href="/libs/imagej-ops"><img src="/media/develop/write-once-run-anywhere.png" width="500px"></a></p>
       </td>
     </tr>
   </tbody>

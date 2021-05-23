@@ -468,7 +468,7 @@ This script just shows you how to use this construct to build and populate a mod
 
 Spot quality and link cost are typically useful to quantify automatic spot detection and linking. We typically use negative values for these two numbers when doing manual edits.
 
-The script below does this: ![](/media/trackmate-animatedname.gif)
+The script below does this: ![](/media/plugins/trackmate/trackmate-animatedname.gif)
 
     import ij.gui.NewImage as NewImage
     import fiji.plugin.trackmate.Settings as Settings
@@ -989,7 +989,7 @@ You have to start from a 2D+T image (nothing else) and a results table that cont
 
 So an ideal starting situation would like this:
 
-<img src="/media/trackmatescriptbeforecapture.png" width="600"/>
+<img src="/media/plugins/trackmate/trackmatescriptbeforecapture.png" width="600"/>
 
 this script will generate the following tracks:
 

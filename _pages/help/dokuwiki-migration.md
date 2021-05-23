@@ -21,10 +21,10 @@ This guide covers the process of migrating a page from the ImageJ Documentation 
 3.  <b>Grab the path to the page</b> by selecting it in the address bar and copying it to the clipboard. Here, this is `plugin/analysis/colocalizationfinder/start`.
 4.  <b>Grab the converted MediaWiki markup.</b> We have done a preliminary conversion of the wiki markup from DocuWiki format to MediaWiki format, and placed it online for you. Find your converted page at `https://raw.githubusercontent.com/imagej/imagejdocu/master/[your-page].wiki`, replacing `[your-page]` with the snippet from the previous step. For Colocalization Finder, the URL will be [`https://raw.githubusercontent.com/imagej/imagejdocu/master/plugin/analysis/colocalizationfinder/start.wiki`](https://raw.githubusercontent.com/imagej/imagejdocu/master/plugin/analysis/colocalizationfinder/start.wiki). Copy the entire markup code to your clipboard.
 5.  <b>Navigate to the destination ImageJ wiki page.</b> On the ImageJ wiki, page names are capitalized with underscores. (Underscores become spaces in the page title.) For our migrated Colocalization Finder page, we'll use [`https://imagej.net/plugins/colocalization-finder`](/plugins/colocalization-finder). You should see a message like this:  
-    <a href=""><img src="/media/creating-a-new-page.png" width="500px"/></a>  
+    <a href=""><img src="/media/help/creating-a-new-page.png" width="500px"/></a>  
     Click "edit this page" to continue.
 6.  <b>Paste the converted wiki markup into the empty text area:</b>  
-    <a href=""><img src="/media/add-wiki-markup.png" width="500px"/></a>
+    <a href=""><img src="/media/help/add-wiki-markup.png" width="500px"/></a>
 7.  <b>Preview the results.</b> Scroll down below the text field, and click the "Show preview" button (in between "Save page" and "Show changes").
 8.  <b>Migrate needed images:</b>
     1.  Right-click and "Save Image As..." the images from your page on the ImageJ Documentation Wiki. For Colocalization Finder, there are two images: `cf_images.png` and `cf_table.png`.

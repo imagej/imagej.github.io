@@ -16,7 +16,7 @@ A plugin[^1] that allows the segmentation off cell wall boundaries from microsco
 -   All previous segmentation steps are automatic, but it is possible to make manual modifications at each step;
 -   Settings are saved in properties files for different types of images to be segmented
 
-<img src="/media/plugin-screencapture.jpg" width="700"/>
+<img src="/media/plugins/plugin-screencapture.jpg" width="700"/>
 
 ### Segmentation process
 

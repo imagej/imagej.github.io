@@ -44,7 +44,7 @@ Although both plugins make use of layered context-dependent Generic Dialogs, the
 
 ## Pairwise Stitching
 
-{% include thumbnail src='/media/pairwisestitching1.png' title='Shows the selection of input images.'%} The Pairwise Stitching first queries for two input images that you intend to stitch. They can contain rectangular ROIs which limit the search to those areas, however, the full images will be stitched together. Once you selected the input images it will show the actual dialog for the Pairwise Stitching. The dialog will depend on the dimensionality of the input images. Please note that RGB input images will be converted into 8-Bit composite images.
+{% include thumbnail src='/media/plugins/pairwisestitching1.png' title='Shows the selection of input images.'%} The Pairwise Stitching first queries for two input images that you intend to stitch. They can contain rectangular ROIs which limit the search to those areas, however, the full images will be stitched together. Once you selected the input images it will show the actual dialog for the Pairwise Stitching. The dialog will depend on the dimensionality of the input images. Please note that RGB input images will be converted into 8-Bit composite images.
 
 -   **Linear blending**: In the overlapping area the intensity are smoothly adjusted between the two images.
 -   **Average**: In the overlapping area the average intensity between all images is computed ({% include github org='fiji' repo='Stitching' source='mpicbg/stitching/fusion/AveragePixelFusion.java' label='example source code' %}).
@@ -54,7 +54,7 @@ Although both plugins make use of layered context-dependent Generic Dialogs, the
 -   **Overlay into Composite**: all channels of all input images will be put into the output image as separate channels.
 -   **Do not fuse images**: no output images will be computed, just the overlap is computed.
 
-{% include thumbnail src='/media/pairwisestitching2.png' title='Shows the Pairwise Stitching dialog.'%}
+{% include thumbnail src='/media/plugins/pairwisestitching2.png' title='Shows the Pairwise Stitching dialog.'%}
 
 The *number of peaks* defines the number of maxima in the Phase Correlation Matrix which are examined. If the stitching was not correct increasing this number might help.
 
@@ -70,7 +70,7 @@ If the input stacks are time-lapse images, you will have different choices on ho
 -   **Register images adjacently over time**: The stitching will compute the shift between all images of all time-points, as well as of each image to the same image of the next time-point. A global optimization scheme will be used to minimize the global error and reject outliers. The parameters for this global optimization will be queried in an additional dialog.
 -   **Register all images over all time-points globally (expensive!)**: The stitching will compute the shift between all time-points and all images which will take a considerable amount of time. A global optimization scheme will be used to minimize the global error and reject outliers. The parameters for this global optimization will be queried in an additional dialog.
 
-{% include thumbnail src='/media/pairwisestitching3.png' title='Shows the extra option for Pairwise Stitching when aligning all timepoints to each other.'%}
+{% include thumbnail src='/media/plugins/pairwisestitching3.png' title='Shows the extra option for Pairwise Stitching when aligning all timepoints to each other.'%}
 
 If a global optimization is necessary for time-point registration another dialog will pop up to ask for more parameters:
 
@@ -82,7 +82,7 @@ If a global optimization is necessary for time-point registration another dialog
 
 This plugin is able to stitch an arbitrary collection or grid of images, it does not matter if it is 2d, 3d, 4d or 5d images as long as all images are of the same type. In contrast to the Pairwise Stitching of two images, this plugins will load (and potentially save) the images from/to harddisc.
 
-{% include thumbnail src='/media/gridstitching1.png' title='Shows the grid/collection selection dialog.'%} Please note that you should take the chance to give the Grid/Collection Stitching a clue of what the approximate layout of the tiles is if you can. This will reduce the computational effort significantly and is much more likely to succeed. If this is not possible, choose the option **Unknown positions** and the Stitching will try to figure out the correct alignment without any help.
+{% include thumbnail src='/media/plugins/gridstitching1.png' title='Shows the grid/collection selection dialog.'%} Please note that you should take the chance to give the Grid/Collection Stitching a clue of what the approximate layout of the tiles is if you can. This will reduce the computational effort significantly and is much more likely to succeed. If this is not possible, choose the option **Unknown positions** and the Stitching will try to figure out the correct alignment without any help.
 
 The first dialog queries the type image collection or image grid that you want to assemble. For each major type there are typically several subtypes you can choose from. For an easier understanding each option is supported by a small figure:
 
@@ -112,7 +112,7 @@ The first dialog queries the type image collection or image grid that you want t
     -   *Defined by TileConfiguration*: The next dialog will query for a tile configuration file that specifies the filenames as well as the approximate position of each tile in pixel coordinates. This is especially useful if the tiles are arranged in a way that is not covered by any of the other grid/snake options - or maybe also in z! You will find an example tile configuration file [ below](/plugins/image-stitching#problems-known-issues-and-solutions). If you want to manually or automatically create such a file I suggest creating one using grid stitching (even if you do not have any image data) and changing it accordingly.
     -   *Defined by meta data*: Use this option if all tiles are stored in one big file that also contains the approximate stage positions in its meta data. When importing you will have the chance to further increase the overlap and define if the stage coordinates are calibrated or in pixel coordinates.
 
-<img src="/media/gridstitching1013.png" title="fig:Shows the main dialog for the grid stitching." width="400" alt="Shows the main dialog for the grid stitching." /> Once you selected your type of acquisition a second dialog will pop up that is slightly different depending up on your first selection. Here, I will explain the dialog that is used for any grid as this is the most complex one.
+<img src="/media/plugins/gridstitching1013.png" title="fig:Shows the main dialog for the grid stitching." width="400" alt="Shows the main dialog for the grid stitching." /> Once you selected your type of acquisition a second dialog will pop up that is slightly different depending up on your first selection. Here, I will explain the dialog that is used for any grid as this is the most complex one.
 
 The user has to define the *grid size*, that means how the input tiles are arranged (e.g. 7 x 7 image tiles). The *tile overlap* is a rough estimate. Note: Smaller overlap reduces computation time, but if the correct alignment is not found try increasing this value first.
 
@@ -152,7 +152,7 @@ The *ignore Z stage position* can be useful if individual tiles for a given XY p
 
 If you check *supixel accuracy*, the plugin will compute a subpixel precise alignment between the two images (it hardly costs any computation time but some RAM). Furthermore, if subpixel localization is activated, linear interpolation will be used for the fusion. Otherwise no interpolation will be applied.
 
-<img src="/media/downsampledialog.png" title="fig:Shows the secondary dialog for downsampling during stitching." width="100" alt="Shows the secondary dialog for downsampling during stitching." /> If *downsample tiles* is selected, a dialog will pop up during the stitching process allowing you to specify a new (smaller) image size. The current image size will be displayed at first. You can enter either a new scale (from 0-1) or a direct pixel value for the new height and width. A variety of interpolation algorithms can be selected. When you are happy with the downsampler settings, click *ok* and stitching will continue. Note that downsampling will occur before matching or fusion of tiles, so using this option can significantly speed up these operations and reduce the final fused image's memory footprint.
+<img src="/media/plugins/downsampledialog.png" title="fig:Shows the secondary dialog for downsampling during stitching." width="100" alt="Shows the secondary dialog for downsampling during stitching." /> If *downsample tiles* is selected, a dialog will pop up during the stitching process allowing you to specify a new (smaller) image size. The current image size will be displayed at first. You can enter either a new scale (from 0-1) or a direct pixel value for the new height and width. A variety of interpolation algorithms can be selected. When you are happy with the downsampler settings, click *ok* and stitching will continue. Note that downsampling will occur before matching or fusion of tiles, so using this option can significantly speed up these operations and reduce the final fused image's memory footprint.
 
 Now, you can choose to open the input stacks as *virtual stacks*. This results in a significantly reduced memory consumption, however, it will consume more time to perform the computation.
 
@@ -252,7 +252,7 @@ From now on, any shift in z will be ignored for 3d acquisitions. This change is 
 
 ## Results & Computation time
 
-<img src="/media/resultsstitching.jpg" title="fig:Example of Stitching of 3D confocal stacks." width="780" alt="Example of Stitching of 3D confocal stacks." />  
+<img src="/media/plugins/resultsstitching.jpg" title="fig:Example of Stitching of 3D confocal stacks." width="780" alt="Example of Stitching of 3D confocal stacks." />  
 The figure shows stitched images of 3D confocal tiles. (A) shows a Drosophila melanogaster pupae expressing a GFP reporter under the regulation of the yellow gene, imaged few hours before eclosion using a 4× dry lens on an Optiphot confocal microscope (Nikon). It was stitched from three image stacks arranged in a 1 × 3 grid (Table 1 first row). The maximum intensity projection is shown. (B) shows the Drosophila larval nervous system stained with three dyes, stitched from a grid of 2 × 3 RGB images (see table 1 second row), the maximum intensity projection is shown. (C) shows a zone in the dorsal telencephalon of human embryonic tissue from week 17 post conception, incubated for 24 hours at 37°C in DiI. It was imaged using a 63×/1.4 objective on Zeiss LSM 510 equipped with a motorized stage. The final image was created from 24 image stacks arranged in a 4 × 6 grid (see table 1 third row), slice 18 is shown. Special thanks to Nicolas Gompel, James W. Truman, Simone Fietz and Wieland B. Huttner for providing the images.
 
 [For interactive examples of these datasets have a look here.](http://fly.mpi-cbg.de/~preibisch/stitching.html)

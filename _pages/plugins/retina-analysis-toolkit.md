@@ -18,7 +18,7 @@ Email: [Daniel Maidana](mailto:dmaida3@uic.edu)' filename=' [TUNEL Cell Counter 
 # TUNEL Cell Counter
 
 
-TUNEL Cell Counter is a customizable tool that processes digital images from retinal cryosections. It segments retinal outer nuclear (ONL) and inner nuclear layers (INL) and quantitates fluorescent-labelled cells in these layers. {% include thumbnail src='/media/retina-cell-counter-montage.png' title='**TUNEL Cell Counter**: Input a fluorescent-labeled retinal image for ONL & INL layer segmentation and cell quantitation.'%}
+TUNEL Cell Counter is a customizable tool that processes digital images from retinal cryosections. It segments retinal outer nuclear (ONL) and inner nuclear layers (INL) and quantitates fluorescent-labelled cells in these layers. {% include thumbnail src='/media/plugins/retina-cell-counter-montage.png' title='**TUNEL Cell Counter**: Input a fluorescent-labeled retinal image for ONL & INL layer segmentation and cell quantitation.'%}
 
 ## Required Components
 
@@ -35,7 +35,7 @@ The following are required to execute this tool:
 
 ## Processing Settings
 
-{% include thumbnail src='/media/retina-cell-counter-dialog.png' title='**Settings Dialog**: Input the spatial scale obtained from the image metadata or microscope.'%} After importing a TIFF image and executing the counter, the following settings should be selected:
+{% include thumbnail src='/media/plugins/retina-cell-counter-dialog.png' title='**Settings Dialog**: Input the spatial scale obtained from the image metadata or microscope.'%} After importing a TIFF image and executing the counter, the following settings should be selected:
 
 1.  <b>Microscope Magnification</b>: Displays the working 20x objective magnification.
 2.  <b>Image Native Resolution</b>: Displays the imported image resolution.
@@ -53,13 +53,13 @@ The following are required to execute this tool:
   <tbody>
     <tr class="odd">
       <td>
-        <p>style="vertical-align:top"|{% include thumbnail src='/media/retina-cell-counter-roundness.png' title='**Cell Roundness**: Select the desired morphology for cells.'%}</p>
+        <p>style="vertical-align:top"|{% include thumbnail src='/media/plugins/retina-cell-counter-roundness.png' title='**Cell Roundness**: Select the desired morphology for cells.'%}</p>
       </td>
       <td>
-        <p>style="vertical-align:top"|{% include thumbnail src='/media/retina-cell-counter-area.png' title='**Retina Area Selection**: Choose between automated or manual segmentation.'%}</p>
+        <p>style="vertical-align:top"|{% include thumbnail src='/media/plugins/retina-cell-counter-area.png' title='**Retina Area Selection**: Choose between automated or manual segmentation.'%}</p>
       </td>
       <td>
-        <p>style="vertical-align:top"|{% include thumbnail src='/media/retina-cell-counter-threshold.png' title='**Threshold Sensitivity**: Select the threshold protocol for cell counting.'%}</p>
+        <p>style="vertical-align:top"|{% include thumbnail src='/media/plugins/retina-cell-counter-threshold.png' title='**Threshold Sensitivity**: Select the threshold protocol for cell counting.'%}</p>
       </td>
     </tr>
   </tbody>

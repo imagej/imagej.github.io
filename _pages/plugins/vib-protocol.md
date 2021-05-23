@@ -22,13 +22,13 @@ The output of the VIB Protocol is written to a user-specified folder. A descript
 
 The VIB Protocol starts with the following dialog:
 
-![](/media/vib-protocol-1.png)
+![](/media/plugins/vib-protocol-1.png)
 
 A configuration file stores all the settings for running the VIB Protocol on a particular data set. It is saved in the output directory. If one wants to run the algorithm a second time, it is possible to load (and modify) the previous configuration. If you run this for the first time, just leave the text field blanc and click OK.
 
 After that, a second dialog appears, which asks the user for all the necessary input:
 
-![](/media/vib-protocol-2.png)
+![](/media/plugins/vib-protocol-2.png)
 
 The different fields have the following meaning:
 
@@ -62,10 +62,10 @@ In order to speed up execution time, it is a good idea to scale the images down.
 
 Clicking OK will finally start the VIB Protocol. At this point, the above mentioned configuration file is created and saved, which is shown by:
 
-![](/media/vib-protocol-3.png)
+![](/media/plugins/vib-protocol-3.png)
 
 Normally, the Segmentation Editor opens during the software execution and asks the user to label the brains. This step is omitted if there exists already a folder called 'labels' in the output directory and if this folder contains for each image the corresponding labels image. After that, no more user interaction is required, and the software finishes after some time. All the results can be found in the output directory. The structure of this directory is as follows:
 
-![](/media/vib-protocol-4.png)
+![](/media/plugins/vib-protocol-4.png)
 
  

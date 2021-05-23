@@ -84,7 +84,7 @@ Each of these classes contains only static methods that performs the desired ope
 
     Img< FloatType > result = Dilation.dilate( img, strel, 1 );
 
-<img src="/media/dilatedtonewimgexample.png" width="600"/>
+<img src="/media/libs/imglib2/dilatedtonewimgexample.png" width="600"/>
 
 -   You want to perform to **full** dilation or erosion on a source Img. Full version of these operations means the new image will have a size increased or shrunk as if the structuring element would actually dilate or erode the source border:
 
@@ -92,7 +92,7 @@ Each of these classes contains only static methods that performs the desired ope
 
     Img< FloatType > result = Dilation.dilateFull( img, strel, 1 );
 
-<img src="/media/dilatedtonewfullimgexample.png" width="600"/>
+<img src="/media/libs/imglib2/dilatedtonewfullimgexample.png" width="600"/>
 
 -   You want to operate on a source [RandomAccessibleInterval](https://github.com/imglib/imglib2/blob/master/src/main/java/net/imglib2/RandomAccessibleInterval.java), in place (write the results in the source):
 
@@ -100,7 +100,7 @@ Each of these classes contains only static methods that performs the desired ope
 
     Dilation.dilateInPlace( rai, interval, strel, 1 );
 
-<img src="/media/dilatedinplaceexample.png" width="600"/>
+<img src="/media/libs/imglib2/dilatedinplaceexample.png" width="600"/>
 
 -   You want to operate on a source [RandomAccessible](https://github.com/imglib/imglib2/blob/master/src/main/java/net/imglib2/RandomAccessible.java), and write the results in a provided [IterableInterval](https://github.com/imglib/imglib2/blob/master/src/main/java/net/imglib2/IterableInterval.java):
 
@@ -108,7 +108,7 @@ Each of these classes contains only static methods that performs the desired ope
 
     Dilation.dilate( source, target, strel, 1 )
 
-<img src="/media/dilatedtotargetexample.png" width="600"/>
+<img src="/media/libs/imglib2/dilatedtotargetexample.png" width="600"/>
 
 Now, each of these category are declined in 4 specifics methods:
 
@@ -158,13 +158,13 @@ If the image has `M` pixels, and that the rectangle is a square of side `R`, the
 
 The performance improvement should therefore be equal to `R / 2`. A linear fit of the actual curve rather shows that the law is `0.73 × R + 0.37`. This extra benefit - I don't why it's there.
 
-{%- include img src='/media/rectanglestrel2dperformance.png' -%} Processing time for the dilation of a 100x100 image. {%- include img src='/media/rectanglestrel2dperformancecomparison.png' -%} Processing time ratio.
+{%- include img src='/media/libs/imglib2/rectanglestrel2dperformance.png' -%} Processing time for the dilation of a 100x100 image. {%- include img src='/media/libs/imglib2/rectanglestrel2dperformancecomparison.png' -%} Processing time ratio.
 
 #### 3D case.
 
 Here the standard case takes a time proportional to `M × R³`, and the optimized case a time proportional to `3 × M × R`. Therefore the performance ratio should be `R² / 3`. A fit shows that this ratio follows `0.63 × R² + 0.57 × R + 0.48`.
 
-{%- include img src='/media/rectanglestrel3dperformance.png' -%} Processing time for the dilation of a 40x40x40 image. {%- include img src='/media/rectanglestrel3dperformancecomparison.png' -%} Processing time ratio.
+{%- include img src='/media/libs/imglib2/rectanglestrel3dperformance.png' -%} Processing time for the dilation of a 40x40x40 image. {%- include img src='/media/libs/imglib2/rectanglestrel3dperformancecomparison.png' -%} Processing time ratio.
 
 ## Square structuring element
 
@@ -174,11 +174,11 @@ The square is just a special case of the rectangle, implemented for convenience.
 
 #### 2D case.
 
-{%- include img src='/media/squarestrel2dperformance.png' -%} Processing time for the dilation of a 100x100 image. {%- include img src='/media/squarestrel2dperformancecomparison.png' -%} Performance time ratio. {%- include img src='/media/squarestrel2dperformancewmatlab.png' -%} First image zoomed to highlight [MATLAB](/scripting/matlab) performance.
+{%- include img src='/media/libs/imglib2/squarestrel2dperformance.png' -%} Processing time for the dilation of a 100x100 image. {%- include img src='/media/libs/imglib2/squarestrel2dperformancecomparison.png' -%} Performance time ratio. {%- include img src='/media/libs/imglib2/squarestrel2dperformancewmatlab.png' -%} First image zoomed to highlight [MATLAB](/scripting/matlab) performance.
 
 #### 3D case.
 
-{%- include img src='/media/squarestrel3dperformance.png' -%} Processing time for the dilation of a 49x49x49 image. {%- include img src='/media/squarestrel3dperformancecomparison.png' -%} Processing time ratio. {%- include img src='/media/squarestrel3dperformancewmatlab.png' -%} First image zoomed to highlight [MATLAB](/scripting/matlab) performance.
+{%- include img src='/media/libs/imglib2/squarestrel3dperformance.png' -%} Processing time for the dilation of a 49x49x49 image. {%- include img src='/media/libs/imglib2/squarestrel3dperformancecomparison.png' -%} Processing time ratio. {%- include img src='/media/libs/imglib2/squarestrel3dperformancewmatlab.png' -%} First image zoomed to highlight [MATLAB](/scripting/matlab) performance.
 
 ## Diamond structuring element
 
@@ -219,13 +219,13 @@ In 3D and higher dimensionalities, the logarithmic decomposition cannot be done,
 
 #### 2D performance
 
-{%- include img src='/media/diamondstrel2dperformance.png' -%} Processing time for the dilation of a 100x100 image. {%- include img src='/media/diamondstrel2dperformancecomparison.png' -%} Processing time ratio.
+{%- include img src='/media/libs/imglib2/diamondstrel2dperformance.png' -%} Processing time for the dilation of a 100x100 image. {%- include img src='/media/libs/imglib2/diamondstrel2dperformancecomparison.png' -%} Processing time ratio.
 
 It is worth using a decomposition above a radius of 4.
 
 #### 3D performance.
 
-{%- include img src='/media/diamondstrel3dperformance.png' -%} Processing time for the dilation of a 40x40x40 image. {%- include img src='/media/diamondstrel3dperformancecomparison.png' -%} Processing time ratio.
+{%- include img src='/media/libs/imglib2/diamondstrel3dperformance.png' -%} Processing time for the dilation of a 40x40x40 image. {%- include img src='/media/libs/imglib2/diamondstrel3dperformancecomparison.png' -%} Processing time ratio.
 
 It is worth using a decomposition in almost any cases.
 
@@ -233,7 +233,7 @@ It is worth using a decomposition in almost any cases.
 
 MATLAB comes with a very nice morphology package. I actually took inspiration from to it to write the Imglib2 code. It is tempting to compare the performance of [MATLAB](/scripting/matlab) vs Imglib2, even if this kind of comparison is always tricky and clumsy. Anyway, here it is. I just timed the duration required to perform the dilation of a provided source image, including the time required to generate the structuring element. Imglib2 tests above time the same process. But of course, the time required to generate the source image and to start [MATLAB](/scripting/matlab) or to launch the Java tests are not included. I took care to include a 'warm-up' run to allow the JIT compiler to kick-in in all cases.
 
-{%- include img src='/media/diamondstrel2dperformancewmatlab.png' -%} Processing time for the dilation of a 100x100 image. {%- include img src='/media/diamondstrel3dperformancewmatlab.png' -%} Processing time for the dilation of a 40x40x40 image.
+{%- include img src='/media/libs/imglib2/diamondstrel2dperformancewmatlab.png' -%} Processing time for the dilation of a 100x100 image. {%- include img src='/media/libs/imglib2/diamondstrel3dperformancewmatlab.png' -%} Processing time for the dilation of a 40x40x40 image.
 
 For the 2D case (only), [MATLAB](/scripting/matlab) offers to generate optimized structuring elements, like for this Imglib2 code. This is why there is two [MATLAB](/scripting/matlab) curves on the 2D graph. We can see that in all cases, the [MATLAB](/scripting/matlab) code is faster than the Imglib2 code (respective to optimized vs optimized and the converse). This may be explained by the fact that [MATLAB](/scripting/matlab) benefitiates on my computer (a 2012 MacPro) from the Intel Integrated Performance Primitives ([IPP](http://software.intel.com/en-us/intel-ipp)), that strongly improves block processing algorithms. Fortunately, the difference is not too taxing in the optimized case.
 
@@ -245,11 +245,11 @@ In 3D, [MATLAB](/scripting/matlab) does not offer a structuring element decompos
 
 In the 2D case, a disk structuring element can be decomposed in a succession of 4, 6 or 8 periodic lines[^3]. Doing so, the shape of the disk is only an approximate one. The first plot below indicates the percentage of pixels that are a mismatch compared to the "true" disk (by "true" I mean as best as digitizing a disk on a square matrix can be). In practice, this plot is rather uninformative. The second plot gives the effective aspect of the decomposed disks:
 
-{%- include img src='/media/diskdecomperror.png' -%} Error percentage when approximating a disk STREL with a PL decomposition. {%- include img src='/media/diskdecomperrorlook.png' -%} Aspect of the disk STREL decomposition in periodic lines, with varying radius.
+{%- include img src='/media/libs/imglib2/diskdecomperror.png' -%} Error percentage when approximating a disk STREL with a PL decomposition. {%- include img src='/media/libs/imglib2/diskdecomperrorlook.png' -%} Aspect of the disk STREL decomposition in periodic lines, with varying radius.
 
 As for performance, you can see below that it is always best to use any decomposition as soon as the radius is larger than 3. This is a lucky limit, because the periodic line decomposition gives very approximated shapes for small radii.
 
-{%- include img src='/media/diskdecompperformance.png' -%} Processing time for the dilation of a 100x100 image. {%- include img src='/media/diskdecompperformancecomparison.png' -%} Processing time ratio.
+{%- include img src='/media/libs/imglib2/diskdecompperformance.png' -%} Processing time for the dilation of a 100x100 image. {%- include img src='/media/libs/imglib2/diskdecompperformancecomparison.png' -%} Processing time ratio.
 
 ### Decomposition for other dimensionalities.
 

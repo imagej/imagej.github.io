@@ -42,7 +42,7 @@ Here we summarize some of the tracking plugins in ImageJ.
         </ul>
       </td>
       <td>
-        <p><img src="/media/trackmategui.png" width="500"></p>
+        <p><img src="/media/techniques/trackmategui.png" width="500"></p>
       </td>
     </tr>
   </tbody>

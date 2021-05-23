@@ -22,7 +22,7 @@ Example:
 
 |                            |                                            |
 |----------------------------|--------------------------------------------|
-| ![](/media/clown.jpg) | ![](/media/clown-magenta.jpg) |
+| ![](/media/clown.jpg) | ![](/media/plugins/clown-magenta.jpg) |
 
 ## Replace Red with Magenta (system clipboard)
 

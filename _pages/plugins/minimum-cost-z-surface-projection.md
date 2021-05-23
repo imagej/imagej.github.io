@@ -20,7 +20,7 @@ The detected surface can be used to remove signal close to the surface. For inst
 
 </div>
 
-![](/media/mincostsurf-ex1-removesurface.png)
+![](/media/plugins/mincostsurf-ex1-removesurface.png)
 
 <div align="center">
 
@@ -34,7 +34,7 @@ Both examples illustrated in the previous section can be reproduced with the Min
 
 -   If your surface appears with high intensity value you need to duplicate it and invert it. With this manipulatiuon you should have a volume where your surface appears with low intensity. It will be used by the plugin to measure the cost of the surface. Any kind of preprocessing that can enhance the surface can be used to favor a good detection of the surface.
 
-![](/media/mincostsurf-inputimage.png)
+![](/media/plugins/mincostsurf-inputimage.png)
 
 <div align="center">
 
@@ -54,7 +54,7 @@ Input image (left) and cost image (right) for the detection of fly winf with the
     -   **Max distance between surfaces**: maximum distance in pixel between the 2 detected surfaces
     -   **Min distance between the surfaces**: minimum distance in pixel between the 2 detected surfaces
 
-![](/media/mincostsurf-gui.png)
+![](/media/plugins/mincostsurf-gui.png)
 
 <div align="center">
 
@@ -67,7 +67,7 @@ user interface of the plugin with the parameter used for this example
     -   the altitude map of the surface with minimum cost. Altitude is in pixel between 0 and the number of slice of the original image
     -   A volume showing the intensity on the surface on the center slice. Other slice correspond to the intensity if the original image on tranlated version of the surface.
 
-![](/media/mincostsurf-output.png)
+![](/media/plugins/mincostsurf-output.png)
 
 <div align="center">
 

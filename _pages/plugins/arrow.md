@@ -5,7 +5,7 @@ categories: [Plugins,Image annotation]
 artifact: sc.fiji:Arrow\_
 ---
 
- ![](/media/arrow-example.png)
+ ![](/media/plugins/arrow-example.png)
 
 This version replaces the old `Arrow_.class` tool that was present in Fiji before. The main changes are the ability to draw the arrow as a floating selection, and to tune its shape.
 
@@ -13,7 +13,7 @@ Warning: Since `ImageJ version 1.43n`, a similar tool, made by {% include person
 
 ## Usage
 
-![](/media/arrow-example2.png)
+![](/media/plugins/arrow-example2.png)
 
 Launch the plugin from the menu. A tool appear in ImageJ toolbar: If there is no space for a spare tool in the toolbar, an error message is displayed.
 
@@ -25,11 +25,11 @@ The user can drag the arrow head, base or he whole arrow by clicking and draggin
 
 If the shift key is pressed while dragging the head, only direction multiple of 45° will be allowed.
 
-![](/media/arrow-example3.png) To customize the arrow shape and type, double click the arrow tool. A dialog is displayed that allow to select the line thickness, the arrow head length and the arrow type. Changes made to the configuration panel are reflected to the arrow immediately.
+![](/media/plugins/arrow-example3.png) To customize the arrow shape and type, double click the arrow tool. A dialog is displayed that allow to select the line thickness, the arrow head length and the arrow type. Changes made to the configuration panel are reflected to the arrow immediately.
 
 It is possible to change the arrow shape using the mouse wheel. To change its thickness or the arrow head length, press shift and rotate the mouse wheel respectively near the arrow body and head. To change the arrow style, press {% include key keys='Ctrl|Shift' %} and rotate the mouse wheel near the arrow.
 
-![](/media/arrow-example4.png) So far, 4 types of arrow head are implemented:
+![](/media/plugins/arrow-example4.png) So far, 4 types of arrow head are implemented:
 
 -   Delta
 -   Thick

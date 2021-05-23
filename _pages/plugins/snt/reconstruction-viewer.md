@@ -15,7 +15,7 @@ SNT's Reconstruction Viewer is a powerful OpenGL 3D visualization tool for both 
     -   Ability to render both local and remote files on the same scene
     -   Loading of surface meshes of several template brains (Drosophila and Allen CCF (Allen Mouse Brain Atlas))
 
-![](/media/reconstruction-viewer-animated-gif.gif)
+![](/media/plugins/snt/reconstruction-viewer-animated-gif.gif)
 
 # Starting the Viewer
 
@@ -23,22 +23,22 @@ The Reconstruction Viewer may be used as either a standalone program or from wit
 
 # Scene Interaction
 
-The display canvas supports multiple modes of interaction, including controlled rotations, panning, zoom, scaling, animation, and alternation between "dark" and "light" modes. The full list of keyboard shortcuts is found by navigating to {% include bc path='Scene Controls|Scene Shortcuts...'%} from RV Controls, or by pressing {% include key key='H' %} (notification) or {% include key key='F1' %} (separate window) in the Viewer scene. <img src="/media/reconstruction-viewer-shortcuts.png" title="fig:" width="400" /> {% include clear%}
+The display canvas supports multiple modes of interaction, including controlled rotations, panning, zoom, scaling, animation, and alternation between "dark" and "light" modes. The full list of keyboard shortcuts is found by navigating to {% include bc path='Scene Controls|Scene Shortcuts...'%} from RV Controls, or by pressing {% include key key='H' %} (notification) or {% include key key='F1' %} (separate window) in the Viewer scene. <img src="/media/plugins/snt/reconstruction-viewer-shortcuts.png" title="fig:" width="400" /> {% include clear%}
 
 
 # RV Controls
 
 ## Scene Controls
 
-<img src="/media/reconstruction-viewer-scene-controls.png" title="fig:" width="400" /> This menu provides control over the rendered scene.
+<img src="/media/plugins/snt/reconstruction-viewer-scene-controls.png" title="fig:" width="400" /> This menu provides control over the rendered scene.
 
 -   {% include bc path='Fit to Visible Objects'%} {% include key key='F' %} Computes a bounding box containing all objects of the scene and adjusts the zoom level to ensure all objects are within the camera view.
 -   {% include bc path='Stretch-to-Fill'%} Stretches the projection on the whole viewport.
 
 <div align="left">
 
--   <img src="/media/reconstruction-viewer-not-stretched.png" title="fig:Stretch-to-Fill - disabled" width="200" alt="Stretch-to-Fill - disabled" />
--   <img src="/media/reconstruction-viewer-stretched.png" title="fig:Stretch-to-Fill - enabled" width="200" alt="Stretch-to-Fill - enabled" />
+-   <img src="/media/plugins/snt/reconstruction-viewer-not-stretched.png" title="fig:Stretch-to-Fill - disabled" width="200" alt="Stretch-to-Fill - disabled" />
+-   <img src="/media/plugins/snt/reconstruction-viewer-stretched.png" title="fig:Stretch-to-Fill - enabled" width="200" alt="Stretch-to-Fill - enabled" />
 
 </div>
 
@@ -46,8 +46,8 @@ The display canvas supports multiple modes of interaction, including controlled 
 
 <div align="left">
 
--   <img src="/media/reconstruction-viewer-aspect-ratio-none.png" title="fig:Impose Isotropic Scale - None" width="200" alt="Impose Isotropic Scale - None" />
--   <img src="/media/reconstruction-viewer-aspect-ratio-zy.png" title="fig:Impose Isotropic Scale - ZY" width="200" alt="Impose Isotropic Scale - ZY" />
+-   <img src="/media/plugins/snt/reconstruction-viewer-aspect-ratio-none.png" title="fig:Impose Isotropic Scale - None" width="200" alt="Impose Isotropic Scale - None" />
+-   <img src="/media/plugins/snt/reconstruction-viewer-aspect-ratio-zy.png" title="fig:Impose Isotropic Scale - ZY" width="200" alt="Impose Isotropic Scale - ZY" />
 
 </div>
 
@@ -64,7 +64,7 @@ This menu relates to the import, customization and management of rendered recons
 
 ### Add
 
-<figure><img src="/media/reconstruction-manage-arbors-menu.png" width="400" /></figure>
+<figure><img src="/media/plugins/snt/reconstruction-manage-arbors-menu.png" width="400" /></figure>
 
 -   {% include bc path='Import File...'%} Imports and renders a single reconstruction file (".swc" or ".traces"). A color may be chosen on import or applied later using the "Customize & Adjust" sub-menu. Note that loaded files will not be listed in the Path Manager.
 -   {% include bc path='Import Directory...'%} Imports and renders all reconstruction files in a directory. A single color may be applied to all reconstructions or they may be colored uniquely. Note that loaded files will not be listed in the Path Manager.
@@ -79,7 +79,7 @@ This menu relates to the import, customization and management of rendered recons
 
 <div align="left">
 
--   <img src="/media/reconstruction-viewer-color-mapping-individual.png" title="fig:Branch Order and Ice LUT" width="200" alt="Branch Order and Ice LUT" />
+-   <img src="/media/plugins/snt/reconstruction-viewer-color-mapping-individual.png" title="fig:Branch Order and Ice LUT" width="200" alt="Branch Order and Ice LUT" />
 
 </div>
 
@@ -87,7 +87,7 @@ This menu relates to the import, customization and management of rendered recons
 
 <div align="left">
 
--   <img src="/media/reconstruction-viewer-color-mapping-group.png" title="fig:No. Branch Points and Ice LUT" width="200" alt="No. Branch Points and Ice LUT" />
+-   <img src="/media/plugins/snt/reconstruction-viewer-color-mapping-group.png" title="fig:No. Branch Points and Ice LUT" width="200" alt="No. Branch Points and Ice LUT" />
 
 </div>
 
@@ -95,7 +95,7 @@ This menu relates to the import, customization and management of rendered recons
 
 <div align="left">
 
--   <img src="/media/reconstruction-viewer-color-mapping-unique.png" title="fig:Unique Color Coding" width="200" alt="Unique Color Coding" />
+-   <img src="/media/plugins/snt/reconstruction-viewer-color-mapping-unique.png" title="fig:Unique Color Coding" width="200" alt="Unique Color Coding" />
 
 </div>
 
@@ -103,8 +103,8 @@ This menu relates to the import, customization and management of rendered recons
 
 <div align="left">
 
--   <img src="/media/reconstruction-viewer-thickness-1.png" title="fig:Thickness = 1.0" width="200" alt="Thickness = 1.0" />
--   <img src="/media/reconstruction-viewer-thickness-5.png" title="fig:Thickness = 5.0" width="200" alt="Thickness = 5.0" />
+-   <img src="/media/plugins/snt/reconstruction-viewer-thickness-1.png" title="fig:Thickness = 1.0" width="200" alt="Thickness = 1.0" />
+-   <img src="/media/plugins/snt/reconstruction-viewer-thickness-5.png" title="fig:Thickness = 5.0" width="200" alt="Thickness = 5.0" />
 
 </div>
 
@@ -117,7 +117,7 @@ This menu relates to the import, customization and management of rendered recons
 
 ## Manage and Customize 3D Meshes
 
-<img src="/media/reconstruction-viewer-mesh-controls.png" title="fig:" width="250" /> <img src="/media/reconstruction-viewer-customize-mesh-controls.png" title="fig:{% include bc path='Customize|All Parameters...'%}" width="400" alt="{% include bc path='Customize|All Parameters...'%}" />
+<img src="/media/plugins/snt/reconstruction-viewer-mesh-controls.png" title="fig:" width="250" /> <img src="/media/plugins/snt/reconstruction-viewer-customize-mesh-controls.png" title="fig:{% include bc path='Customize|All Parameters...'%}" width="400" alt="{% include bc path='Customize|All Parameters...'%}" />
 
 ### Add
 
@@ -136,8 +136,8 @@ This menu relates to the import, customization and management of rendered recons
 
 <div align="left">
 
--   <img src="/media/reconstruction-viewer-obj-transparency-5.png" title="fig:Transparency = 5%" width="300" alt="Transparency = 5%" />
--   <img src="/media/reconstruction-viewer-obj-transparency-95.png" title="fig:Transparency = 95%" width="300" alt="Transparency = 95%" />
+-   <img src="/media/plugins/snt/reconstruction-viewer-obj-transparency-5.png" title="fig:Transparency = 5%" width="300" alt="Transparency = 5%" />
+-   <img src="/media/plugins/snt/reconstruction-viewer-obj-transparency-95.png" title="fig:Transparency = 95%" width="300" alt="Transparency = 95%" />
 
 </div>
 
@@ -146,7 +146,7 @@ This menu relates to the import, customization and management of rendered recons
 
 ## Reference Brains
 
-This menu allows import of several Drosophila, Zebrafish and Mouse reference brains and anatomical compartments. <img src="/media/reconstruction-reference-brains-menu.png" title="fig:" width="300" />
+This menu allows import of several Drosophila, Zebrafish and Mouse reference brains and anatomical compartments. <img src="/media/plugins/snt/reconstruction-reference-brains-menu.png" title="fig:" width="300" />
 
 ### Mouse
 
@@ -154,8 +154,8 @@ This menu allows import of several Drosophila, Zebrafish and Mouse reference bra
 
 <div align="left">
 
--   <img src="/media/reconstruction-viewer-allen-ccf-ontology.png" title="fig:Allen CCF Navigator" width="200" alt="Allen CCF Navigator" />
--   <img src="/media/reconstruction-viewer-allen-ccf-thalamus-info.png" title="fig:Allen CCF Ontology Info" width="200" alt="Allen CCF Ontology Info" />
+-   <img src="/media/plugins/snt/reconstruction-viewer-allen-ccf-ontology.png" title="fig:Allen CCF Navigator" width="200" alt="Allen CCF Navigator" />
+-   <img src="/media/plugins/snt/reconstruction-viewer-allen-ccf-thalamus-info.png" title="fig:Allen CCF Ontology Info" width="200" alt="Allen CCF Ontology Info" />
 
 </div>
 
@@ -175,9 +175,9 @@ This menu allows import of several Drosophila, Zebrafish and Mouse reference bra
 
 <div align="center">
 
--   <img src="/media/reconstruction-flycircuit-reference.png" title="fig:FlyCircuit Drosophila (Adult)" width="300" alt="FlyCircuit Drosophila (Adult)" />
--   <img src="/media/reconstruction-viewer-whole-mouse-thalamus.png" title="fig:Allen Adult Mouse Whole Brain + Thalamus" width="300" alt="Allen Adult Mouse Whole Brain + Thalamus" />
--   <img src="/media/reconstruction-viewer-zebrafish-reference.png" title="fig:Max Planck ZBA" width="300" alt="Max Planck ZBA" />
+-   <img src="/media/plugins/snt/reconstruction-flycircuit-reference.png" title="fig:FlyCircuit Drosophila (Adult)" width="300" alt="FlyCircuit Drosophila (Adult)" />
+-   <img src="/media/plugins/snt/reconstruction-viewer-whole-mouse-thalamus.png" title="fig:Allen Adult Mouse Whole Brain + Thalamus" width="300" alt="Allen Adult Mouse Whole Brain + Thalamus" />
+-   <img src="/media/plugins/snt/reconstruction-viewer-zebrafish-reference.png" title="fig:Max Planck ZBA" width="300" alt="Max Planck ZBA" />
 
 </div>
 
@@ -186,7 +186,7 @@ This menu allows import of several Drosophila, Zebrafish and Mouse reference bra
 
 ## Analyze and Measure
 
-<img src="/media/reconstruction-viewer-measurement-menu.png" title="fig:" width="300" /> This menu houses several functions to measure and analyze loaded reconstructions.
+<img src="/media/plugins/snt/reconstruction-viewer-measurement-menu.png" title="fig:" width="300" /> This menu houses several functions to measure and analyze loaded reconstructions.
 
 ### Tabular Results
 
@@ -196,7 +196,7 @@ This menu allows import of several Drosophila, Zebrafish and Mouse reference bra
 
 <div align="left">
 
--   <img src="/media/reconstruction-viewer-measurements-aa0100.png" title="fig:AA0100 Measurements" width="900" alt="AA0100 Measurements" />
+-   <img src="/media/plugins/snt/reconstruction-viewer-measurements-aa0100.png" title="fig:AA0100 Measurements" width="900" alt="AA0100 Measurements" />
 
 </div>
 
@@ -207,14 +207,14 @@ This menu allows import of several Drosophila, Zebrafish and Mouse reference bra
 
 <div align="left">
 
--   <img src="/media/reconstruction-viewer-aa0100-distribution-analysis.png" title="fig:AA0100: Branch Order" width="200" alt="AA0100: Branch Order" />
--   <img src="/media/reconstruction-viewer-op-distribution-analysis.png" title="fig:9 OP fibers: # Branch Points" width="200" alt="9 OP fibers: # Branch Points" />
+-   <img src="/media/plugins/snt/reconstruction-viewer-aa0100-distribution-analysis.png" title="fig:AA0100: Branch Order" width="200" alt="AA0100: Branch Order" />
+-   <img src="/media/plugins/snt/reconstruction-viewer-op-distribution-analysis.png" title="fig:9 OP fibers: # Branch Points" width="200" alt="9 OP fibers: # Branch Points" />
 
 </div>
 
 ### Single-Cell Analysis
 
-{% include img src="/media/reconstruction-viewer-brain-area-analysis.png" width="300" caption="Brain Area Analysis: Cable Length" %}
+{% include img src="/media/plugins/snt/reconstruction-viewer-brain-area-analysis.png" width="300" caption="Brain Area Analysis: Cable Length" %}
 
 -   {% include bc path='Brain Area Analysis...'%} Measures the amount of cable length, number of terminal nodes, or both that occur in distinct anatomical regions of the brain, with the option to restrict the analysis up to a maximum depth in the ontology hierarchy. Note that only one reconstruction may be selected at a time with this option.
 -   {% include bc path='Create Dendrogram...'%} Runs the {% include bc path='Utilities|Create Dendrogram...'%} command found in the main SNT dialog. See [Dendrogram Viewer](/plugins/snt/analysis#dendrogram-viewer). Note only one reconstruction may be selected at a time with this option.
@@ -222,8 +222,8 @@ This menu allows import of several Drosophila, Zebrafish and Mouse reference bra
 
 <div align="left">
 
--   <img src="/media/reconstruction-viewer-aa0100-sholl-table.png" title="fig:AA0100 Sholl Table" width="200" alt="AA0100 Sholl Table" />
--   <img src="/media/reconstruction-viewer-aa0100-sholl-plot.png" title="fig:AA0100 Sholl Plot" width="221" alt="AA0100 Sholl Plot" />
+-   <img src="/media/plugins/snt/reconstruction-viewer-aa0100-sholl-table.png" title="fig:AA0100 Sholl Table" width="200" alt="AA0100 Sholl Table" />
+-   <img src="/media/plugins/snt/reconstruction-viewer-aa0100-sholl-plot.png" title="fig:AA0100 Sholl Plot" width="221" alt="AA0100 Sholl Plot" />
 
 </div>
 
@@ -231,8 +231,8 @@ This menu allows import of several Drosophila, Zebrafish and Mouse reference bra
 
 <div align="left">
 
--   <img src="/media/reconstruction-viewer-aa0100-strahler-table.png" title="fig:AA0100 Strahler Table" width="227" alt="AA0100 Strahler Table" />
--   <img src="/media/reconstruction-viewer-aa0100-strahler-plot.png" title="fig:AA0100 Strahler Plot" width="200" alt="AA0100 Strahler Plot" />
+-   <img src="/media/plugins/snt/reconstruction-viewer-aa0100-strahler-table.png" title="fig:AA0100 Strahler Table" width="227" alt="AA0100 Strahler Table" />
+-   <img src="/media/plugins/snt/reconstruction-viewer-aa0100-strahler-plot.png" title="fig:AA0100 Strahler Plot" width="200" alt="AA0100 Strahler Plot" />
 
 </div>
 
@@ -241,7 +241,7 @@ This menu allows import of several Drosophila, Zebrafish and Mouse reference bra
 
 ## Utilities
 
-<figure><img src="/media/reconstruction-viewer-tools-menu.png" title="reconstruction-viewer-tools-menu.png" width="400" alt="reconstruction-viewer-tools-menu.png" /><figcaption aria-hidden="true">reconstruction-viewer-tools-menu.png</figcaption></figure>
+<figure><img src="/media/plugins/snt/reconstruction-viewer-tools-menu.png" title="reconstruction-viewer-tools-menu.png" width="400" alt="reconstruction-viewer-tools-menu.png" /><figcaption aria-hidden="true">reconstruction-viewer-tools-menu.png</figcaption></figure>
 
 ### Actions & Utilities
 
@@ -262,7 +262,7 @@ This menu allows import of several Drosophila, Zebrafish and Mouse reference bra
 
 ## Settings
 
-<figure><img src="/media/reconstruction-viewer-settings-menu.png" title="reconstruction-viewer-settings-menu.png" width="400" alt="reconstruction-viewer-settings-menu.png" /><figcaption aria-hidden="true">reconstruction-viewer-settings-menu.png</figcaption></figure>
+<figure><img src="/media/plugins/snt/reconstruction-viewer-settings-menu.png" title="reconstruction-viewer-settings-menu.png" width="400" alt="reconstruction-viewer-settings-menu.png" /><figcaption aria-hidden="true">reconstruction-viewer-settings-menu.png</figcaption></figure>
 
 ### Keyboard & Mouse Sensitivity
 

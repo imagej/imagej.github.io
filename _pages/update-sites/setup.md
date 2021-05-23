@@ -34,7 +34,7 @@ start the updater with {% include bc path='Help | Update'%} and click on the *Ma
 
 Enter the name of that account and click *OK*:
 
-<img src="/media/personal-update-site-1.png" width="770"/>
+<img src="/media/update-sites/personal-update-site-1.png" width="770"/>
 
 If your upload password (separate from your wiki password) was not initialized, you will then be asked to provide your wiki password, which will be used to initialize your upload password. The two passwords can differ. This can be source of confusion during setting up of the update.
 
@@ -84,7 +84,7 @@ Note that you need to connect with command-line ssh first, to record the finger-
 
 If the update site has not been initialized yet (i.e. if nobody else has initialized that site yet), you will see a dialog like this:
 
-![](/media/how-to-setup-a-plugin-distribution-site-6a.jpg)
+![](/media/update-sites/how-to-setup-a-plugin-distribution-site-6a.jpg)
 
 Just click *OK* and let the updater upload an empty file index (it is stored in the file *db.xml.gz* which is also called the *database* in the documentation of the updater).
 
@@ -96,7 +96,7 @@ Note: you cannot simply copy files to your web space; the updater would miss all
 
 First, start the [updater](/plugins/updater):
 
-![](/media/how-to-setup-a-plugin-distribution-site-1.jpg)
+![](/media/update-sites/how-to-setup-a-plugin-distribution-site-1.jpg)
 
 Click on the *Manage update sites* button and verify:
 
@@ -105,7 +105,7 @@ Click on the *Manage update sites* button and verify:
 
 For example:
 
-<img src="/media/personal-update-site-7.png" width="770"/>
+<img src="/media/update-sites/personal-update-site-7.png" width="770"/>
 
 Once your login information is set you can *Close* the update site window.
 
@@ -127,7 +127,7 @@ In this case, the plugin we'll be uploading is contained in *A\_Jolly\_Useful\_P
 
 Select the file to upload, click under the *Stats/Action* column, or right-click (on macOS, {% include key keys='Ctrl|Left Click' %}) in any column, for the context menu and select *Upload to <update site name>*.
 
-<img src="/media/upload-to-update-site.png" width="770"/>
+<img src="/media/update-sites/upload-to-update-site.png" width="770"/>
 
 {% include notice icon="info" content='The *Upload to <update site name>* option is only available if you entered your [wiki credentials](#start-the-updater-and-check-your-update-site) and no other changes are pending. Be aware that the password for the update site [*is not* your Wiki password](/update-sites/faq#how-do-i-set-a-password-for-my-personal-update-site). This is to avoid potentially corrupting your ImageJ installation. If the Upload option is not available, select the *View changes* view and resolve any pending changes - e.g. by updating or reverting to **Keep as-is**.' %}
 
@@ -137,7 +137,7 @@ When a plugin is selected, a *Details* panel becomes available. The plugin's dep
 
 You can also manually enter or edit any information in the *Details* panel:
 
-<img src="/media/how-to-setup-a-plugin-distribution-site-15.jpg" width="770"/>
+<img src="/media/update-sites/how-to-setup-a-plugin-distribution-site-15.jpg" width="770"/>
 
 {% include notice icon="info" content='The *Details* panel can only be edited if you have entered upload credentials for the appropriate update site. After modifying the *Details* panel you can mark the jar for upload, even though the jar contents itself has not changed.' %}
 
@@ -149,7 +149,7 @@ Finally, click *Apply changes (upload)* to upload your plugin to the server and 
 
 Check that your plugins are now registered as ImageJ plugins by selecting the *View files of the '\[your site name here\]' site* view option:
 
-<img src="/media/updaterfinalscreen.jpg" width="770"/>
+<img src="/media/update-sites/updaterfinalscreen.jpg" width="770"/>
 
 That's it - you're done. Now, anyone who wants a copy of your plugins merely needs to [add your update site](/update-sites/following) to the Update manger via the URL you specified, and your plugins will be downloaded and updated in their ImageJ installations just like the standard ImageJ plugins.  
 For even more visibility and practicability, you can ask to have your update site listed in the Fiji Updater (see section below).

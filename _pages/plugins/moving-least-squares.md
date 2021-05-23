@@ -20,23 +20,23 @@ This plugin implements the algorithms described in [^1] to deform an image given
 
 Load the original and choose the landmarks:
 
-![](/media/mls-orig.jpg)
+![](/media/plugins/mls-orig.jpg)
 
 By clicking on the menu entry {% include bc path='Edit | Selection | Add to Manager'%} add this landmark set to the ROI Manager:
 
-![](/media/mls-roi-manager.jpg)
+![](/media/plugins/mls-roi-manager.jpg)
 
 Duplicate the image ({% include bc path='Image | Duplicate...'%}), click on the selection in the ROI manager and move the landmarks to their target location:
 
-![](/media/mls-new1.jpg)
+![](/media/plugins/mls-new1.jpg)
 
 Now, run the plugin:
 
-![](/media/mls-dialog.jpg)
+![](/media/plugins/mls-dialog.jpg)
 
 And you get the result:
 
-![](/media/mls-new2.jpg)
+![](/media/plugins/mls-new2.jpg)
 
 ## References
 

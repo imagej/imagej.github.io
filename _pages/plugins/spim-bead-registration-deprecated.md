@@ -150,7 +150,7 @@ The multi-channel SPIM Registration extends the normal registration by the abili
 
 ## Advanced SPIM Registration
 
-{% include thumbnail src='/media/advanced-spim-registration.png' title='Shows the Advanced SPIM Registration Dialog.'%}  
+{% include thumbnail src='/media/plugins/advanced-spim-registration.png' title='Shows the Advanced SPIM Registration Dialog.'%}  
 For advanced SPIM registration all available parameters can be tuned using two configuration files (configuration.txt and VariablesAssignment.txt, see below). Contact the author for further details [2](http://fly.mpi-cbg.de/preibisch/contact.html).
 
 ### configuration.txt

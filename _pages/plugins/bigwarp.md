@@ -237,7 +237,7 @@ Press {% include key key='F8' %} to bring up a transformation type selection win
 
 |                                                |                                                   |
 |------------------------------------------------|---------------------------------------------------|
-| <img src="/media/bigwarp-selecttps.png" width="400"/> | <img src="/media/bigwarp-selectaffine.png" width="400"/> |
+| <img src="/media/plugins/bigwarp-selecttps.png" width="400"/> | <img src="/media/plugins/bigwarp-selectaffine.png" width="400"/> |
 | Example of a thin plate spline transformation  | Example of an affine transformation               |
 
 #### Table of transformation types
@@ -498,7 +498,7 @@ Export the warped moving image by clicking
 {% include bc path="File | Export as ImagePlus" %} or using the
 {% include key keys='Ctrl|E' %} keyboard shortcut.
 
-![](/media/bigwarp-export.png)
+![](/media/plugins/bigwarp-export.png)
 
 The default parameters will result in the exported image having the same
 dimensions as the target image.
@@ -520,7 +520,7 @@ dimensions as the target image.
 
 The warped moving image can be exported as an in-memory or [virtual](/ij/docs/guide/146-8.html) ImagePlus. A virtual ImagePlus is generally faster to generate but slower to browse, whereas an in-memory ImagePlus will be slower to generate but faster to browse.
 
-<img src="/media/bigwarplandmarkcenteredexport.png" width="600"/>
+<img src="/media/plugins/bigwarplandmarkcenteredexport.png" width="600"/>
 
 ### Apply transforms
 
@@ -568,7 +568,7 @@ The results are shown in the "Inverse example" below.
 
 |                                                   |                                                   |
 |---------------------------------------------------|---------------------------------------------------|
-| <img src="/media/bigwarp-warp-roi-fwd.png" width="600"/> | <img src="/media/bigwarp-warp-roi-inv.png" width="600"/> |
+| <img src="/media/plugins/bigwarp-warp-roi-fwd.png" width="600"/> | <img src="/media/plugins/bigwarp-warp-roi-inv.png" width="600"/> |
 | Forward example (click to expand)                 | Inverse example (click to expand)                 |
 
 Note, at this time ImageJ ROIs are 2D objects. We recommend using another approach for 3D regions of interest.

@@ -54,16 +54,16 @@ The example below (Thanks Tony Collins for this nice figure), generally demonstr
 
 {% include gallery content=
 "
-/media/ch1coloc.gif | Channel 1
-/media/ch2coloc.jpg | Channel 2
-/media/scatterplotcoloc.jpg | Coloc Scatterplot
-/media/colocquadrants.jpg | Scatterplot with Quadrants
+/media/techniques/ch1coloc.gif | Channel 1
+/media/techniques/ch2coloc.jpg | Channel 2
+/media/techniques/scatterplotcoloc.jpg | Coloc Scatterplot
+/media/techniques/colocquadrants.jpg | Scatterplot with Quadrants
 "
 %}
 
 In the scatterplot or 2D Histogram the two intensity values for each pixel or voxel are plotted against each other, and the brighter the colour, the more pixels or voxels have those two intensity values for their two colour channels. Here we see if there is correlation immediately by eye, in the presence of a cloud of information in the middle of the 2D histogram. We can fit that cloud with a linear regression and measure correlation coefficients. After setting thresholds in both colour channels, we see the scatterplot or 2D Histogram is split into 4 areas, quadrants. The contents of each can be used to calculate different colcoalization results.
 
-Other coefficients include ranked correlations such as Spearman and Kendal's Tau, and Li's ICQ. Some others are described in the literature, but that have been refuted as insensitive, such as the overlap coefficient from the Manders paper, which [J. Adler et al.](/media/adler-et-al-2010-cytometry-part-a.pdf) showed to have large problems in interpretation compared to Pearson's r and Manders' split coefficients.
+Other coefficients include ranked correlations such as Spearman and Kendal's Tau, and Li's ICQ. Some others are described in the literature, but that have been refuted as insensitive, such as the overlap coefficient from the Manders paper, which [J. Adler et al.](/media/techniques/adler-et-al-2010-cytometry-part-a.pdf) showed to have large problems in interpretation compared to Pearson's r and Manders' split coefficients.
 
 #### Cross-correlation function
 
@@ -71,7 +71,7 @@ Another type of intensity-based colocalization analyses utilize the {% include w
 
 ##### Spatial cross-correlation
 
-{% include img align="right" name="Cross-correlation result" src="/media/colocalization-ccf-curve.jpg"%}
+{% include img align="right" name="Cross-correlation result" src="/media/techniques/colocalization-ccf-curve.jpg"%}
 
 In spatial cross-correlation, initially a measure of correlation of the two channels of a dual color image are evaluated in a manner similar to the pixel matching methods described above (though the exact function may vary). Then, one channel is shifted relative to the other (typically by one pixel) and then correlation is re-evaluated with that offset. This process is repeated across the entire image to generate a curve of correlation as a function of distance, as shown to the right. Like the scatterplot generating methods above, spatial cross-correlation methods work on single images and do not require more than one time point.
 
@@ -222,9 +222,9 @@ The [Colocalization Threshold](/plugins/colocalization-threshold) plugin perform
 
 {% include gallery content=
 "
-/media/coloc1.png | Opening the plugin
-/media/coloc1b.png | Options
-/media/coloc2.png | Output
+/media/techniques/coloc1.png | Opening the plugin
+/media/techniques/coloc1b.png | Options
+/media/techniques/coloc2.png | Output
 "
 %}
 
@@ -252,9 +252,9 @@ The results window will then display the calculated P-value, and some other deta
 
 {% include gallery content=
 "
-/media/coloctestgui1.png | Costes test configuration
-/media/coloctestgui2.png | PSF details
-/media/coloctestresult.png | Result
+/media/techniques/coloctestgui1.png | Costes test configuration
+/media/techniques/coloctestgui2.png | PSF details
+/media/techniques/coloctestresult.png | Result
 "
 %}
 

@@ -43,7 +43,7 @@ categories: [Plugins,Visualization,Citable]
 </center>
 <center>
 
-<figure><img src="/media/clearvolumenetworkclientinfiji.png" title="The ClearVolume network client can be started from Fiji/ImageJ2 and enables users to receive volumetric data from a remote source, e.g. live from a microscope in the basement of your collaborators institute." width="750" alt="The ClearVolume network client can be started from Fiji/ImageJ2 and enables users to receive volumetric data from a remote source, e.g. live from a microscope in the basement of your collaborators institute." /><figcaption aria-hidden="true">The ClearVolume network client can be started from Fiji/ImageJ2 and enables users to receive volumetric data from a remote source, e.g. live from a microscope in the basement of your collaborators institute.</figcaption></figure>
+<figure><img src="/media/plugins/clearvolumenetworkclientinfiji.png" title="The ClearVolume network client can be started from Fiji/ImageJ2 and enables users to receive volumetric data from a remote source, e.g. live from a microscope in the basement of your collaborators institute." width="750" alt="The ClearVolume network client can be started from Fiji/ImageJ2 and enables users to receive volumetric data from a remote source, e.g. live from a microscope in the basement of your collaborators institute." /><figcaption aria-hidden="true">The ClearVolume network client can be started from Fiji/ImageJ2 and enables users to receive volumetric data from a remote source, e.g. live from a microscope in the basement of your collaborators institute.</figcaption></figure>
 
 </center>
 

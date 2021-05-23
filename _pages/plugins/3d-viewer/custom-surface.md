@@ -82,7 +82,7 @@ There is also another disadvantage; adding each sphere individually means that e
 
 ### The class hierarchy of the `customnode` package
 
-{% include thumbnail src='/media/3dviewer-class-diagram-customnode.png' title='Relation between classes in the `customnode` package.'%}
+{% include thumbnail src='/media/plugins/3d-viewer/3dviewer-class-diagram-customnode.png' title='Relation between classes in the `customnode` package.'%}
 
 `CustomMeshNode` extends `ContentNode`, and therefore implements all the abstract methods in `ContentNode`. It has a reference to `CustomMesh`, which is an abstract class, implemented by `CustomPointMesh`, `CustomLineMesh`, `CustomTriangleMesh` and `CustomQuadMesh`.
 

@@ -14,7 +14,7 @@ categories: [Plugins,Registration,TrakEM2,Citable]
 {% endcapture %}
 {% include info-box name='Elastic Align and Montage' software='Fiji' author=author maintainer=maintainer source='https://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=tree;f=mpicbg/ij/plugin' released='March 11<sup>th</sup>, 2011' latest-version='October 22<sup>nd</sup>, 2011' status='experimental, active' category='[Plugins](/plugin-index), [Registration](/plugin-index#registration)' %}== Citation == Please note that the elastic alignment and montage plugin available through Fiji, is based on a publication. If you use it successfully for your research please cite our work:
 
-S. Saalfeld, R. Fetter, A. Cardona and P. Tomancak (2012) "Elastic volume reconstruction from series of ultra-thin microscopy sections, *Nature Methods*, 9(7), 717-720 [Webpage](http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.2072.htmll) [PDF](/media/saalfeld-nmeth.2072.pdf) [Supplement](/media/saalfeld-nmeth.2072-s1.pdf)
+S. Saalfeld, R. Fetter, A. Cardona and P. Tomancak (2012) "Elastic volume reconstruction from series of ultra-thin microscopy sections, *Nature Methods*, 9(7), 717-720 [Webpage](http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.2072.htmll) [PDF](/media/plugins/saalfeld-nmeth.2072.pdf) [Supplement](/media/plugins/saalfeld-nmeth.2072-s1.pdf)
 
 Supplementary videos demonstrating the performance of the method are available [here](http://fly.mpi-cbg.de/elastic).
 
@@ -24,11 +24,11 @@ Supplementary videos demonstrating the performance of the method are available [
 {% capture title%}
 Example 2: Example for elastic alignment and montaging. 7 serial TEM sections of the neuropil of a *Drosophila melanogaster* first instar larva, detail at 100% pixel resolution. Image courtesy of {% include person id='acardona' %}.
 {% endcapture %}
-{% include thumbnail src='/media/aligned-series-crop-512.gif' title=title %}
+{% include thumbnail src='/media/plugins/aligned-series-crop-512.gif' title=title %}
 {% capture title%}
 Example 1: Example for elastic alignment and montaging. 7 serial TEM sections of the neuropil of a *Drosophila melanogaster* first instar larva, downscaled by a factor of 12. Image courtesy of {% include person id='acardona' %}.
 {% endcapture %}
-{% include thumbnail src='/media/aligned-series-512.gif' title=title %} We describe here our elastic alignment method for series or groups of overlapping 2d-images. The method is accessible through the plugins **Elastic Stack Alignment** and **Elastic Montage** and incorporated in the **[TrakEM2](/plugins/trakem2)** software. Applications are:
+{% include thumbnail src='/media/plugins/aligned-series-512.gif' title=title %} We describe here our elastic alignment method for series or groups of overlapping 2d-images. The method is accessible through the plugins **Elastic Stack Alignment** and **Elastic Montage** and incorporated in the **[TrakEM2](/plugins/trakem2)** software. Applications are:
 
 Elastic Montage  
 montaging mosaics from overlapping tiles where the tiles have non-linear relative deformation
@@ -78,7 +78,7 @@ See also [Test Block Matching Parameters](/plugins/test-block-matching-parameter
 
 All parameters that specify a distance in pixels refer to the original scale of the image.
 
-{% include thumbnail src='/media/edge-filter.png' title='Fig. 3: Edge response filter. The ratio of the two principal curvatures (Hessian eigenvalues) of at a detection determines how well it is defined in both dimensions. A large ratio signalizes an edge response.'%}
+{% include thumbnail src='/media/plugins/edge-filter.png' title='Fig. 3: Edge response filter. The ratio of the two principal curvatures (Hessian eigenvalues) of at a detection determines how well it is defined in both dimensions. A large ratio signalizes an edge response.'%}
 
 Input  
 Both plugins work with stacks of images. The stacks might be virtual, which is strongly suggested for very large images.

@@ -17,7 +17,7 @@ Dynamically updates a profile plot for an image with a line, freeline, polyline 
   <tbody>
     <tr class="odd">
       <td>
-        <p>style="vertical-align:top" |{% include thumbnail src='/media/profiler-movie.gif' title='Dragging a line ROI across an image shows the pixel intensity profile across that line in a separate image window.'%}</p>
+        <p>style="vertical-align:top" |{% include thumbnail src='/media/plugins/profiler-movie.gif' title='Dragging a line ROI across an image shows the pixel intensity profile across that line in a separate image window.'%}</p>
       </td>
     </tr>
   </tbody>

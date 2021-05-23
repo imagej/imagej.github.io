@@ -115,13 +115,13 @@ Once WiscScan has run, your output will be a series of images that can be stitch
 
 ## Generate the grid
 
-{% include img src="/media/basicgrid.png" align="right" width="250" caption="BasicGrid.png" %}
+{% include img src="/media/plugins/basicgrid.png" align="right" width="250" caption="BasicGrid.png" %}
 
 ### The basic grid
 
 1.  Fill in the Dimensions of X and Y in \#X and \#Y respectively
 
-{% include img src="/media/overlappedgrid.png" align="right" width="250" caption="OverlappedGrid.png" %}
+{% include img src="/media/plugins/overlappedgrid.png" align="right" width="250" caption="OverlappedGrid.png" %}
 
 <li>
 
@@ -149,7 +149,7 @@ Select "OK"
 
 ### Calculating grid using total sample size
 
-{% include img src="/media/samplesize.png" align="right" width="250" caption="SampleSize.png" %}
+{% include img src="/media/plugins/samplesize.png" align="right" width="250" caption="SampleSize.png" %}
 
 1.  Enter the total size dimensions of your stitched image in microns into the "Total Size" boxes
 2.  Enter the step size or the overlap for you stitched images and select "Calculate total size from \# Pos"
@@ -159,7 +159,7 @@ Select "OK"
 
 1.  Determine your step size using either a pre-calculated value or the overlap slider
 
-{% include img src="/media/stagegrid.png" align="right" width="250" caption="StageGrid.png" %}
+{% include img src="/media/plugins/stagegrid.png" align="right" width="250" caption="StageGrid.png" %}
 
 <li>
 
@@ -182,11 +182,11 @@ Select "OK"
 
 {% include gallery content=
 "
-/media/frame-mover.jpg | (xyz computer controller)
-/media/lever-1.jpg     | (Internal microscope lever)
-/media/x-y-z.jpg       | (XYZ controller)
-/media/pockel-cell.jpg | (Pockel Cell machine)
-/media/ti-saph.jpg     | (Ti Sapph Shutter control)
-/media/photosensor.jpg | Detector 
+/media/plugins/frame-mover.jpg | (xyz computer controller)
+/media/plugins/lever-1.jpg     | (Internal microscope lever)
+/media/plugins/x-y-z.jpg       | (XYZ controller)
+/media/plugins/pockel-cell.jpg | (Pockel Cell machine)
+/media/plugins/ti-saph.jpg     | (Ti Sapph Shutter control)
+/media/plugins/photosensor.jpg | Detector 
 "
 %}

@@ -22,13 +22,13 @@ It works with stacks, is parallelized, has a preview mode and is able to resolve
 
 ## Examples
 
-![](/media/cnt-ridge-detection-original.png) ![](/media/cnt-ridge-detection-example.png)
+![](/media/plugins/cnt-ridge-detection-original.png) ![](/media/plugins/cnt-ridge-detection-example.png)
 
 This example shows the application of the plugin on images of carbon nanotubes (Sigma = 1.5, Lower Threshold = 1.3, Higher Threshold = 7).
 
 # Parameter Selection
 
-There are three parameters which **have to ** be specified. These are the mandatory parameters. The optional parameters can be used to estimate the mandatory parameters <img src="/media/ridge-detection-parameters.png" title="fig:Ridge_Detection_Parameters.png" width="200" alt="Ridge_Detection_Parameters.png" />
+There are three parameters which **have to ** be specified. These are the mandatory parameters. The optional parameters can be used to estimate the mandatory parameters <img src="/media/plugins/ridge-detection-parameters.png" title="fig:Ridge_Detection_Parameters.png" width="200" alt="Ridge_Detection_Parameters.png" />
 
 ## Mandatory Parameters
 
@@ -58,7 +58,7 @@ $$T_{L}=\left\lfloor 0.17\cdot\frac{2\cdot b_{low}\cdot\frac{w}{2}}{\sqrt{2\pi}\
 
 ## Further options (true/false)
 
-<img src="/media/ridgedetectionwidth.png" title="fig:Output if &quot;Estimated width&quot; is selected" width="140" alt="Output if &quot;Estimated width&quot; is selected" /> **Correct position:** Correct the line position if it has different contrast on each side of it.
+<img src="/media/plugins/ridgedetectionwidth.png" title="fig:Output if &quot;Estimated width&quot; is selected" width="140" alt="Output if &quot;Estimated width&quot; is selected" /> **Correct position:** Correct the line position if it has different contrast on each side of it.
 
 **Estimate width:** If this option is selected the width of the line is estimated.
 
@@ -86,19 +86,19 @@ This method makes the assumption that when two ridges overlap, it is more likely
 
 If you use this method of overlap resolution, it is recommended that you first tune the Ridge Detection parameters with `Preview` enabled to get a minimal starting set of junction points - so that each ridge matches reality as best as possible. For example:
 
-<img src="/media/slope-detection-low-sigma.png" width="325"/>
+<img src="/media/plugins/slope-detection-low-sigma.png" width="325"/>
 
 This detection with a sigma of 1.6 produces a set of lines and junctions not suited to slope-based overlap detection.
 
-<img src="/media/slope-detection-high-sigma.png" width="325"/>
+<img src="/media/plugins/slope-detection-high-sigma.png" width="325"/>
 
 The same image with a sigma of 3.0. These are "real" junction points that will allow reasonable overlap detection via line slope.
 
-<img src="/media/slope-detection-bad.png" width="325"/>
+<img src="/media/plugins/slope-detection-bad.png" width="325"/>
 
 In this image we see poor overlap detection. In this case due to a superfluous junction point at the bottom of one arm, leading to a misdiagnosis of what lines are overlapping.
 
-<img src="/media/slope-detection-success.png" width="325"/>
+<img src="/media/plugins/slope-detection-success.png" width="325"/>
 
 Successful ridge detection with slope-based overlap detection enabled. Line 134 is selected to illustrate the selection of a complete line despite numerous intersections.
 
@@ -124,4 +124,4 @@ We think the best way is to cite the formal method and the used implementation:
 
 **Implementation**:
 
-<a href="https://zenodo.org/badge/latestdoi/18649/thorstenwagner/ij-ridgedetection"><img src="/media/ij-ridgedetection.svg" width="174px"/></a>
+<a href="https://zenodo.org/badge/latestdoi/18649/thorstenwagner/ij-ridgedetection"><img src="/media/plugins/ij-ridgedetection.svg" width="174px"/></a>

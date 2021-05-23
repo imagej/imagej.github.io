@@ -24,7 +24,7 @@ In this approach the user has to first make a selection of the MSER parameters a
 
 The first panel for this mode is shown below.
 
-<img src="/media/advanced1.png" width="300"/>
+<img src="/media/plugins/mtrack/advanced1.png" width="300"/>
 
 The next button appears on this panel only after the user has made the choice of the object recognition method.
 
@@ -32,7 +32,7 @@ The next button appears on this panel only after the user has made the choice of
 
 After clicking the next button the user has several options to choose from before starting the tracking.
 
-<img src="/media/advanced4.png" width="300"/>
+<img src="/media/plugins/mtrack/advanced4.png" width="300"/>
 
 -   Deselect and select ends
 

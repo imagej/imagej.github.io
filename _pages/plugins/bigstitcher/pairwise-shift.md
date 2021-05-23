@@ -11,7 +11,7 @@ The first step in stitching a tiled dataset is determining the pairwise shifts b
 
 -   Aside from the default **Phase correlation** algorithm for shift determination, we also offer alignment via the Lucas-Kanade method or interest point registration, as well as expert view grouping options. For those advanced methods, refer to [BigStitcher\_Advanced\_stitching](/plugins/bigstitcher/advanced-stitching)
 
-<img src="/media/bigstitcher-stitch-0.png" width="600"/>
+<img src="/media/plugins/bigstitcher/bigstitcher-stitch-0.png" width="600"/>
 
 ### Pairwise shift calculation
 
@@ -19,13 +19,13 @@ After starting the stitching process, you need to specify how to handle multiple
 
 -   If your dataset has multiple channels, you will be asked which channel to use for the stitching. You can also average the channels for the stitching process.
 
-<img src="/media/bigstitcher-stitch-1.png" width="600"/>
+<img src="/media/plugins/bigstitcher/bigstitcher-stitch-1.png" width="600"/>
 
 -   Next, choose the the downsampling in x,y,z to be used for the calculation. Select a predefined downsampling factor or choose your own.
 
 {% include notice icon="info" content='In our experience, some downsampling (2-4x) improves results over using raw image data, as it reduces noise in the images. It also dramatically speeds up computations, so we advise using moderate downsampling in this step' %}
 
-<img src="/media/bigstitcher-stitch-2.png" width="600"/>
+<img src="/media/plugins/bigstitcher/bigstitcher-stitch-2.png" width="600"/>
 
 -   If you ran the **Stitching wizard**, you will be asked to proceed to [Link Preview Mode](/plugins/bigstitcher/preview-pairwise-shift). Otherwise, you can proceed to this step via the right-click menu.
 

@@ -19,7 +19,7 @@ MaMuT is not shipped with Fiji by default; you have to install it in Fiji. Thank
 
 Got to {% include bc path='Help | Update...'%} and click on the **Manage update sites** button. In the window that appear, find the **MaMuT** checkbox and tick it. Then close the window. In the files to update list, there should be a **plugins/MaMuT\_.jar** appearing. Click on **Apply changes** button, then restart Fiji.
 
-![](/media/bdv-mamut-updatesite.png)
+![](/media/plugins/mamut/bdv-mamut-updatesite.png)
 
 ## Data preparation.
 
@@ -49,11 +49,11 @@ Instead of preparing your own dataset, you can also download an example dataset 
 
 Start MaMuT on this dataset by browsing to {% include bc path='Plugins | MaMuT | Launch new MaMuT annotation'%}
 
-![](/media/bdv-mamut-menuitems.png)
+![](/media/plugins/mamut/bdv-mamut-menuitems.png)
 
 A file explorer window opens. Browse to the `.xml` file of the BDV file pair. After a little while, the MaMuT main GUI window opens:
 
-<img src="/media/bdv-mamut-mainguiwindow-beginning.png" width="200"/>
+<img src="/media/plugins/mamut/bdv-mamut-mainguiwindow-beginning.png" width="200"/>
 
 If you get this, so far so good. This is the main window of the GUI. It is split in 3 tabs but we will just focus on the first one for now. It controls the display of the data, both for the image and for the annotations. It also used to launch Views of the data. Right now there is no annotation data. We started by opening a BigDataViewer file, which is now loaded. The next MaMuT viewer (presented in the next section) you will open with display this image data, as in a normal BigDataViewer.
 
@@ -98,7 +98,7 @@ MaMuT offers three kind of views:
 
 Let's start with the MaMuT Viewer. Click on its button on the GUI, the one with a picture of a mammoth. A BigDataViewer window should appear.
 
-<img src="/media/bdv-mamut-viewerexample.png" width="500"/>
+<img src="/media/plugins/mamut/bdv-mamut-viewerexample.png" width="500"/>
 
 ### The BigDataViewer framework and large, multi-view images.
 
@@ -157,13 +157,13 @@ You can many bookmarks, all identified by the key you press after the bookmark c
 
 Switching from one source to another is done with the numeric keys {% include key key='1' %} ... {% include key key='0' %} for up to 10 views. Pressing {% include key key='F' %} switches to the fused mode, where all sources are overlaid. You can add and remove sources from the fused view by pressing {% include key keys='Shift|1' %} - etc. The color and brightness of each source are defined in the **brightness and color** panel, brought by pressing the {% include key key='S' %} key.
 
-<img src="/media/bdv-mamut-viewerbrightnesscolor.png" width="700"/>
+<img src="/media/plugins/mamut/bdv-mamut-viewerbrightnesscolor.png" width="700"/>
 
 On this screenshot, we used the fused mode, toggle the first and third sources off (the deconvolved source and the angle 280°), and looked at the data in a XZ plane.
 
 The MaMuT viewer also overlays some useful information:
 
-<img src="/media/bdv-mamut-vieweroverlays2.png" width="700"/>
+<img src="/media/plugins/mamut/bdv-mamut-vieweroverlays2.png" width="700"/>
 
 The MaMuT viewer only displays a slice of the current source(s). It fetches the pixel values it needs to generate a single slice through the data. By default, pixel values are interpolated using the nearest neighbor, which might generate a pixelated look for high level of zoom. By pressing {% include key key='I' %} you can toggle between nearest-neighbor interpolation, and tri-linear interpolation, which smoothes the display.
 
@@ -173,7 +173,7 @@ The MaMuT viewer only displays a slice of the current source(s). It fetches the 
 
 Using these commands, try to move the view around so that these cells are in sight.
 
-![](/media/bdv-mamut-desiredorientation.png)
+![](/media/plugins/mamut/bdv-mamut-desiredorientation.png)
 
 To do so, select the first source (angle 0°) and move the view in its XY place (press {% include key keys='Shift|Z' %}). Then move in Z to the top of the embryo (around Z=1800) and finally zoom to bring about 50 cells in view. If you move in time, you can see that a lot of cell divisions are happening there. We will now build their lineage.
 
@@ -192,7 +192,7 @@ Accurately placing a spot in 3D can be difficult. This is where using multiple v
 
 In the first view, click on the spot you added. The second view is translated so that this very spot is brought at the center of the view window. Rotate around this point so as to show the YZ plane of the source (press {% include key keys='Shift|X' %}) and zoom close to the spot, to have a view pair resembling this:
 
-<img src="/media/bdv-mamut-multipleviews.png" width="500"/>
+<img src="/media/plugins/mamut/bdv-mamut-multipleviews.png" width="500"/>
 
 Just to ensure we are looking at the same spot in the two views, we checked the **Display spots names** button in the main GUI. Use the {% include key key='Space' %} key to move the spot around in a plane until you are happy with its location. This view combination is useful to place properly spots in 3D. You can open as many views as you want. Other views can be used e.g. to have an overview of the data using a dezoomed view.
 
@@ -207,11 +207,11 @@ Now is a good time to talk a little bit on how we control the look of spots on t
 
 The spot colouring uses the notion of *numerical features*. In MaMuT, and as in TrackMate, each annotation object can have several numerical, scalar features associated. For instance a spot can have features like X, Y, Z for its position, etc. The drop-box menu **Set color by** lets you choose the feature you want to use for the spot color. The color range below the menu shows you the min and max value for the feature you picked over all the dataset and interpolate from blue to red with a jet color-map. If you scroll through the menu, you can see that the features available are sorted in three categories: `spot features`, `default` and `track features`. `Spot features` is the category where you can find all the numerical features that relate to single spots, like their position, radius, *etc.* In `default`, colours are not picked from a numerical feature, but either all the same (uniform color) or set manually (we will see later how). The `track feature category` is special: it gives to spots the color taken from the feature of the *track* they belong to.
 
-![](/media/bdv-mamut-configurespotdisplay.png)
+![](/media/plugins/mamut/bdv-mamut-configurespotdisplay.png)
 
 By default, the range of the color scale is taken from the minimal to the maximal feature value. This can be changed by double-clicking on the **Set color by**, which will bring a window where you can set the min and max manually.
 
-![](/media/bdv-mamut-configurefeaturerange.png)
+![](/media/plugins/mamut/bdv-mamut-configurefeaturerange.png)
 
 ## Linking cells across time.
 
@@ -241,7 +241,7 @@ So here are the two new useful bindings for **editing links**:
 
 Now go back to your MaMuT session, with the data oriented as aid above, and try to annotate and link the cell that divides between the first and second time-point. The mother cell can be found around X=1095, Y=1020, Z=1820 and t=0. On the image below, we tracked the daughter cell that emerges from the division on the left part of the view.
 
-<img src="/media/bdv-mamut-desiredtracking-1.png" width="500"/>
+<img src="/media/plugins/mamut/bdv-mamut-desiredtracking-1.png" width="500"/>
 
 Note that when you create a link with this method, after link creating the selection is set to be made of only the last spot added. To create the next link, you just have to add the target spot to the selection, the source spot is already in. But still, after creating links over only 10 time-points, let us admit that this is probably not the quickest way to quickly create a lineage. This method is probably best suited to edit an existing annotation.
 
@@ -251,7 +251,7 @@ Press {% include key key='Shift-L' %} with a MaMuT viewer window active. A messa
 
 Try to use the auto-linking mode to create the cell lineage of the dividing cell above, this time following the other daughter cell. Move back to the first time-point, select the mother cell, move to the second time-point {% include key key='M' %} and add a spot {% include key key='A' %} or {% include key key='Shift-Double Click' %} on the cell location. Repeat by following the right daughter cell. You should end up with an annotation that resembles the following:
 
-<img src="/media/bdv-mamut-desiredtracking-2.png" width="500"/>
+<img src="/media/plugins/mamut/bdv-mamut-desiredtracking-2.png" width="500"/>
 
 At this stage, your first track has two branches: the first cell at t=0 divides into two daughters, and each daughter makes a branch in the track. You do not have to specify to what track you want to branch from. Tracks are automatically merged and split when you add or remove links. The only editing you have to do is at the link level, and track are discovered from the spots connected by the links you created.
 
@@ -270,13 +270,13 @@ If you are on a time-point not a multiple of the time-step, the next key-press w
 
 Below is an example from an actual annotation, peeking ahead the lineage visualizer we will describe in the next section. In this view, cells are arranged by lineage, time running from top to bottom. Time-points are lines of alternating color. You can see that except when cells are dividing or when there is an ambiguity, this user only annotated time-points multiples of 5. This leads to a sparser annotation, generated faster.
 
-<img src="/media/bdv-mamut-trackschemestepwisetimebrowsing.png" width="500"/>
+<img src="/media/plugins/mamut/bdv-mamut-trackschemestepwisetimebrowsing.png" width="500"/>
 
 ### Display settings for tracks.
 
 Notice that the look of tracks (represented by a straight line for each link) can be tuned in the same way spots are.
 
-![](/media/bdv-mamut-configuretrackdisplay.png)
+![](/media/plugins/mamut/bdv-mamut-configuretrackdisplay.png)
 
 Track coloring uses the same feature system than for spots. There are scalar numerical features associated to tracks and they are used to generate a color from a jet colormap. However, there is two kind of features for tracks:
 
@@ -302,7 +302,7 @@ TrackScheme is the second view offered in MaMuT. It can be seen as a lineage vis
 
 In the main MaMuT GUI window, click on the **TrackScheme** button. A new window should appear, with the following content.
 
-<img src="/media/bdv-mamut-trackschemestart.png" width="500"/>
+<img src="/media/plugins/mamut/bdv-mamut-trackschemestart.png" width="500"/>
 
 In TrackScheme, tracks are arranged from left to right and time runs from top to bottom. At this time we just have a single track, with two branches. The cell we tracked divides immediately after the first time-point, which is represented in TrackScheme by a fork going down. Each branch below this fork represents the annotation of a daughter cell. However, all the spots and links for these two daughter cells still belong to the same track, as they are connected *via* the mother cell.
 
@@ -326,27 +326,27 @@ The keyboard can also be used:
 
 The top-left part of the TrackScheme window shows the outline of the graph. The blue square represents the current view and can be resized and moved around.
 
-<img src="/media/bdv-mamut-trackschemeoutline.png" width="500"/>
+<img src="/media/plugins/mamut/bdv-mamut-trackschemeoutline.png" width="500"/>
 
 ### Configuring TrackScheme look.
 
 Though TrackScheme is a view of the annotation data like the MaMuT viewer, it completely and purposely ignores some the display settings you can set on the main GUI window, such as the track display mode and the global visibility of spots and tracks. The color it chooses for the links and spots representation is also peculiar: The spot color by feature mode is ignored, even for the circles that represent spot. They take their color from the track color mode, and use the color of the incident link. For instance, if you pick the `Displacement` feature in the **track color mode**, you will get this:
 
-<img src="/media/bdv-mamut-trackschemetrackdisplaycolor.png" width="500"/>
+<img src="/media/plugins/mamut/bdv-mamut-trackschemetrackdisplaycolor.png" width="500"/>
 
 Tracks have a name, and are arranged in columns, separated by a vertical black line. TrackScheme arranges the annotations line by line, and each line represents a time-point. The row header tells you what time-point you are looking at. The background color of each row alternates to highlight different frames. If you find the background too crowded, you can disable the alternating color by clicking on the **Display decoration button** on the toolbar. The second mode disables track columns and rows alternating colors; the third mode re-enables track columns.
 
-<img src="/media/bdv-mamut-trackschemedecorationbutton.png" width="500"/>
+<img src="/media/plugins/mamut/bdv-mamut-trackschemedecorationbutton.png" width="500"/>
 
 Finally, there is two **Styles** for the spot schemes. The `simple` style sonly displays them as round spots. The `full` style displays them as rounded boxes, with each spot name apparent. In the `full` style, small thumbnails can be captured and displayed in TrackScheme for all spots. Just next to the menu, there is a thumbnail button. If activated, thumbnails are collected from all spots, using the image source they were created on. Thumbnails are captured around the spot location, using their radius plus a tolerance factor. Interestingly, the **Spot display radius ratio** is used to define the size of the thumbnail. For instance, with a display factor of 2, you can obtain the layout below. Notice that the spot boxes can be resized manually to better display thumbnails.
 
-<img src="/media/bdv-mamut-trackschemethumbnails.png" width="500"/>
+<img src="/media/plugins/mamut/bdv-mamut-trackschemethumbnails.png" width="500"/>
 
 ### Exporting TrackScheme display.
 
 The hierarchical layout of the lineages provided by TrackScheme can be useful for communications. It can be exported using the three export buttons in the toolbar.
 
-<img src="/media/bdv-mamut-trackschemeexportbuttons.png" width="500"/>
+<img src="/media/plugins/mamut/bdv-mamut-trackschemeexportbuttons.png" width="500"/>
 
 -   The **Capture undecorated TrackScheme** button will generate a view of [TrackScheme](/plugins/trackmate/trackscheme) and open it in Fiji. The background is set to white and the zoom level is set to the default, regardless of what the actual zoom is in TrackScheme. Once this image is in Fiji, you can modify it, save it, etc using the tools in Fiji.
 -   The **Capture TrackScheme with decorations** button does the converse. It captures a snapshot of the TrackScheme window as is, and uses the current zoom level to generate an image.
@@ -380,7 +380,7 @@ Selections are very useful for visualization within a crowded annotation. For in
 
 For instance, you can use it to only display a series of disjoint parts of a tracks:
 
-<img src="/media/bdv-mamut-trackschemeselectiononly.png" width="700"/>
+<img src="/media/plugins/mamut/bdv-mamut-trackschemeselectiononly.png" width="700"/>
 
 ### TrackScheme info-pane and feature plots.
 
@@ -392,7 +392,7 @@ The bottom left part if the spot feature plotter. The **Feature for X axis** dro
 
 To generate the plot, click the **Plot features** button. A graph should appear on which you can interact a bit. {% include key key='Left Drag' %} towards the bottom right direction will zoom the plot, and {% include key key='Left Drag' %} towards to up right direction will reset the zoom. The {% include key key='Right-click' %} menu lets you configure the plot, save it to an image file and export it as an ImageJ table.
 
-<img src="/media/bdv-mamut-trackschemesidebar.png" width="800"/>
+<img src="/media/plugins/mamut/bdv-mamut-trackschemesidebar.png" width="800"/>
 
 ## Editing annotations with TrackScheme.
 
@@ -402,7 +402,7 @@ The main application of TrackScheme is to edit annotations in conjunction with c
 
 Make sure you have a TrackScheme window open, a MaMuT viewer window open, and move the later close to the cells we tracked previously. Make sure the auto-linking mode is off {% include key keys='Shift|L' %}, and start creating spots over a cell close to the first one. Try to follow it over time. You should see spots appearing in TrackScheme, under a special column on the right called `Unlaid spots`. The TrackScheme window should resembles this:
 
-<img src="/media/bdv-mamut-trackschemeunlaidspots.png" width="700"/>
+<img src="/media/plugins/mamut/bdv-mamut-trackschemeunlaidspots.png" width="700"/>
 
 Normally, TrackScheme only displays the spots that belong in a track. Lonely spots that are not linked to anything when you launch TrackScheme are not shown. The spots you create after TrackScheme are however stacked under this special column. From there, you can attach them to an existing track or create a new one.
 
@@ -424,7 +424,7 @@ Another way to create single links is to enable the drag-and-drop linking mode. 
 
 Now move over any cell in one track. As you do, the cell gets highlighted with a green square. If you click and drag from this cell, a new link (in magenta) will emerge. Release it on any cells to create a link between the source and the target.
 
-<img src="/media/bdv-mamut-trackschemedraganddroplink.png" width="500"/>
+<img src="/media/plugins/mamut/bdv-mamut-trackschemedraganddroplink.png" width="500"/>
 
 ### Removing spots and links.
 
@@ -436,7 +436,7 @@ Tracks are ordered from left to right alphanumerically with their name. To chang
 
 Try for instance to change the track order by changing their name. Let's call the first one 'B' and the second one 'A'. Click the **Layout** button. Your TrackScheme window should look like this:
 
-<img src="/media/bdv-mamut-trackschemetracknames.png" width="500"/>
+<img src="/media/plugins/mamut/bdv-mamut-trackschemetracknames.png" width="500"/>
 
 ### Editing spot names and imposing branch order.
 
@@ -450,7 +450,7 @@ Apart from their use to mark some biological meaning to the annotations, spot na
 
 Spot names are also used to decide in what order to lay out track branches. For instance, our track 'B' as a cell division in the second time-point. You can force one branch to be the laid left or the right by setting the name of the spot just after the division. Sister cells are laid out from left to right alphanumerically, like for tracks.
 
-<img src="/media/bdv-mamut-trackschemespotnames.png" width="500"/>
+<img src="/media/plugins/mamut/bdv-mamut-trackschemespotnames.png" width="500"/>
 
 ## Semi-automated tracking in MaMuT.
 
@@ -458,13 +458,13 @@ MaMuT does not ship fully automatic detection and particle-linking algorithms. I
 
 Let us track one of the cell close to the two we just annotated. Go back to the first time-point and create a spot above a cell, with the right radius and location. In the main GUI window, click on the **Annotation** tab. You will notice that there is a **Semi-automatic tracking** panel. There are several parameters we will describe later. For now, simply change the `Max nFrames` value to 10, so that you get roughly this configuration for your TrackMate session:
 
-<img src="/media/bdv-mamut-semiautotracking-1.png" width="500"/>
+<img src="/media/plugins/mamut/bdv-mamut-semiautotracking-1.png" width="500"/>
 
 Click on the spot you just added to add it to the selection, and click on the **Semi-automatic tracking** button. The tracking initiates and processes iteratively. Cells are discovered one time-point after the other, and added to track consecutively.
 
 If you follow the case depicted above, the semi-automatic tracking does a mistake at frame 7. It captures a brighter, smaller cell further from its predecessor rather than the right one.
 
-![](/media/bdv-mamut-semiautotracking-2.png)
+![](/media/plugins/mamut/bdv-mamut-semiautotracking-2.png)
 
 This gives us an opportunity to explain how does the semi-automatic tracking works and what are its limitations.
 
@@ -492,7 +492,7 @@ The **Record Movie** command will export a PNG capture of the viewer "as is". Al
 
 Below is an example obtained on the last time-point of the demo dataset. Notice that the exported image a flattened view of the data, as RGB images.
 
-![](/media/bdv-mamutrecordmaxprojection.png)
+![](/media/plugins/mamut/bdv-mamutrecordmaxprojection.png)
 
 ### Exporting a track sub-volume.
 
@@ -502,7 +502,7 @@ First, select exactly two cells in TrackScheme or in a MaMuT viewer. These two c
 
 Once you have them, go the third tab in the main GUI window, called **Actions**. This tab contains only actions, that are MaMuT commands requiring special interaction with the data. Select the `Export track stack` action in the menu, and click the **Execute** button. A dialog shows up that allow configuring the export.
 
-![](/media/bdv-mamut-exporttrackstack.png)
+![](/media/plugins/mamut/bdv-mamut-exporttrackstack.png)
 
 The dialog that pops let you choose first the source that will be resliced, in the `Target source` menu. Here we picked the first one. There is an important gotcha with the source selection and viewer orientation. The capture always uses the source intrinsic orientation. It will always capture Z-planes of the chosen source, irrespective of the view orientation in the MaMuT viewer. So if you capture the same track with two different sources, you might have very different orientation. The `Image size` field determines the size of the data exported, in units of the radius of the first select spot. Finally, the `Dimensionality` radio button lets you chose between exporting a 3D volume or just a single slice centered on the spot. In the example above, we generated the 3D volume following the track 'A', and on the left image, generated its maximal intensity projection.
 
@@ -819,7 +819,7 @@ Here is a list of all available commands.
 
 Here we recapitulate the default key-bindings for the MaMuT viewer. This image is also included in the help window of the MaMuT viewer.
 
-![](/media/bdv-mamutkeyboardlayout.png)
+![](/media/plugins/mamut/bdv-mamutkeyboardlayout.png)
 
 ## TrackScheme key-bindings.
 

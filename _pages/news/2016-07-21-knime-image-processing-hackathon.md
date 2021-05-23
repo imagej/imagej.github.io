@@ -106,17 +106,17 @@ PlotData=
 
 
 {% capture content%}
-/media/hackathon-2016-konstanz-hackers.jpg \| Hackers!
-/media/hackathon-2016-konstanz-dinner.jpg \| Hackers at dinner
-/media/hackathon-2016-konstanz-rueden.jpg \| {% include person id='ctrueden' %}
-/media/hackathon-2016-konstanz-harrington.jpg \| {% include person id='kephale' %}
-/media/hackathon-2016-konstanz-domander.jpg \| {% include person id='rimadoma' %}
-/media/hackathon-2016-konstanz-hoerl.jpg \| {% include person id='hoerldavid' %}
-/media/hackathon-2016-konstanz-dietz-and-rueden.jpg \| {% include person id='dietzc' %} and {% include person id='ctrueden' %}
-/media/hackathon-2016-konstanz-harrington-and-gunther.jpg \| {% include person id='kephale' %} and {% include person id='skalarproduktraum' %}
-/media/hackathon-2016-konstanz-helfrich-and-pietzsch.jpg \| {% include person id='stelfrich' %} and {% include person id='tpietzsch' %}
-/media/2016-hackathon-konstanz-sushi.jpg \| KNIME 3.2: sushi edition
-/media/hackathon-2016-konstanz-amazing-salt.jpg \| The gravity-defying salt shaker!
+/media/news/hackathon-2016-konstanz-hackers.jpg \| Hackers!
+/media/news/hackathon-2016-konstanz-dinner.jpg \| Hackers at dinner
+/media/news/hackathon-2016-konstanz-rueden.jpg \| {% include person id='ctrueden' %}
+/media/news/hackathon-2016-konstanz-harrington.jpg \| {% include person id='kephale' %}
+/media/news/hackathon-2016-konstanz-domander.jpg \| {% include person id='rimadoma' %}
+/media/news/hackathon-2016-konstanz-hoerl.jpg \| {% include person id='hoerldavid' %}
+/media/news/hackathon-2016-konstanz-dietz-and-rueden.jpg \| {% include person id='dietzc' %} and {% include person id='ctrueden' %}
+/media/news/hackathon-2016-konstanz-harrington-and-gunther.jpg \| {% include person id='kephale' %} and {% include person id='skalarproduktraum' %}
+/media/news/hackathon-2016-konstanz-helfrich-and-pietzsch.jpg \| {% include person id='stelfrich' %} and {% include person id='tpietzsch' %}
+/media/news/2016-hackathon-konstanz-sushi.jpg \| KNIME 3.2: sushi edition
+/media/news/hackathon-2016-konstanz-amazing-salt.jpg \| The gravity-defying salt shaker!
 {% endcapture %}
 {% include gallery content=content%}
 

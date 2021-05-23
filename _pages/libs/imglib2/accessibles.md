@@ -17,7 +17,7 @@ to obtain an iterating accessor from the Accessible `img`.
 
 The UML diagram below shows the integer part of the *Accessible* interface hierarchy. We will look at the full diagram including Accessibles for real coordinates later. *Accessible* interfaces have been highlighted.
 
-{% include img src="/media/imglib2-accessibles-integer.png" align="center" width="775" caption="UML for ImgLib2 integer accessible interfaces" %}
+{% include img src="/media/libs/imglib2/imglib2-accessibles-integer.png" align="center" width="775" caption="UML for ImgLib2 integer accessible interfaces" %}
 
 [RandomAccessible](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccessible.html) and [RandomAccessibleInterval](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccessibleInterval.html) represent images that are random-accessible at integer coordinates. (Remember: an image is a - possibly partial - function from coordinates to values.) You can obtain a RandomAccess on the data using the `randomAccess()` or `randomAccess(Interval)` methods.
 

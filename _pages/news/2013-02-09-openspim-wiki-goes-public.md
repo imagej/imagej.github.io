@@ -4,7 +4,7 @@ title: 2013-02-09 - OpenSPIM wiki goes public
 categories: [News]
 ---
 
-![Drosophila embryo expressing HisYFP captured by OpenSPIM](/media/hisyfp-front-page.gif) The [OpenSPIM](http://openspim.org) Wiki is available for viewing and contributions.
+![Drosophila embryo expressing HisYFP captured by OpenSPIM](/media/news/hisyfp-front-page.gif) The [OpenSPIM](http://openspim.org) Wiki is available for viewing and contributions.
 
 OpenSPIM is an Open Access platform for applying and enhancing **Selective Plane Illumination Microscopy** (SPIM). SPIM is a hot and powerful microscopy technology that will in the hands of developmental and cell biologist bring novel insights into complex biological phenomena (e.g. by being very fast compared to point scanners, reducing phototoxicity dramatically, etc). Bringing the technology into those hands is the point of the OpenSPIM project.
 

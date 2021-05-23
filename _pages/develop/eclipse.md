@@ -287,7 +287,7 @@ actual user's installation. To test your plugin in an existing installation you
 can either simply copy the jar, or use Maven to install your plugin and its
 dependencies.
 
-{% include thumbnail src='/media/mavenrunconfig.png' title='Setting up a new Maven Build configuration' %}
+{% include thumbnail src='/media/develop/mavenrunconfig.png' title='Setting up a new Maven Build configuration' %}
 
 ### Option 1: Copying the jar
 

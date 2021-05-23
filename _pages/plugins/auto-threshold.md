@@ -49,7 +49,7 @@ Which method segments your data best? One can attempt to answer this question us
 
 Original image
 
-![](/media/lympm2.png)
+![](/media/plugins/lympm2.png)
 
 Try all methods.
 

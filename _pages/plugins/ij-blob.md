@@ -21,15 +21,15 @@ The IJBlob library indentifying connected components in binary images. The algor
 
 A connected component is a set of pixels which are connected by its 8-neigherhood and is often called a "blob". An Example:
 
-![](/media/ijblob-1.jpg)
+![](/media/plugins/ijblob-1.jpg)
 
 The image above contains 8 marked blobs. Also the holes (and the contours of the holes) of the two Bs and the O are identified. It is also possible to get a color labeled image:
 
-![](/media/ijbloblabeled.jpg)
+![](/media/plugins/ijbloblabeled.jpg)
 
 In addition ijblob identifies nested objects:
 
-![](/media/ijblob-nested.jpg)
+![](/media/plugins/ijblob-nested.jpg)
 
 If you are using IJBlob in a scientific publication, please cite:
 

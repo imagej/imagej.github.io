@@ -26,7 +26,7 @@ categories: [Segmentation,Visualization,Plugins,Citable]
 
 {% include notice icon="info" content='VTEA is still under active development. Version 1.0 is tentatively planned for an October release..' %}
 
-This brief [video](/media/demostration.mov) describes VTEA's core behaviors. VTEA's utility has been demonstrated in this [paper](http://jasn.asnjournals.org/content/early/2017/02/01/ASN.2016091027.full).
+This brief [video](/media/plugins/demostration.mov) describes VTEA's core behaviors. VTEA's utility has been demonstrated in this [paper](http://jasn.asnjournals.org/content/early/2017/02/01/ASN.2016091027.full).
 
 We developed VTEA out of a need to unify the various tasks involved in image processing, segmenting, exploring and analyzing large 3D fluorescence light microscopy image volumes ranging from 50-100s of microns thick. Our solution is predicated upon the idea that *image processing, segmentation and analysis of 3D image volumes is best implemented with a bidirectional interactive user interface from image processing to analysis*.
 

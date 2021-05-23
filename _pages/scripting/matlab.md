@@ -33,7 +33,7 @@ If you run MATLAB R2017b and later, you don"t need to do this, as it ships and u
 ### Memory issue
 
 -   In order to handle large images, the default Java Heap Memory size assigned won't be enough and you may get the error `java.lang.OutOfMemoryError: Java heap space`.
--   From MATLAB R2010a onward, you can increase the Jave Heap Memory size from {% include bc path="Preferences | General | Java Heap Memory" %}. ![](/media/matlab-java-heap-memory.png)
+-   From MATLAB R2010a onward, you can increase the Jave Heap Memory size from {% include bc path="Preferences | General | Java Heap Memory" %}. ![](/media/scripting/matlab-java-heap-memory.png)
 -   However, the maximum value allowed in the Preferences can still be too small for your purpose. In that case, you can directly edit `matlab.prf` file in the folder specified by the <code>prefdir&lt;\\code&gt; MATLAB function (eg. `C:\Users\xxxxxxx\AppData\Roaming\MathWorks\MATLAB\R2018b`). Find the parameter `JavaMemHeapMax` in the file and increase the number that follows the capital I (in MB) to increase the maximum Java heap memory size. The change will be reflected by the Preferences as above.
 
 <!-- -->
@@ -72,7 +72,7 @@ Actually running a [MATLAB](/scripting/matlab) script from ImageJ is effectively
 
 Options for controlling the startup of [MATLAB](/scripting/matlab), or killing existing [MATLAB](/scripting/matlab) processes (e.g. if hidden) can be accessed via: {% include bc path='Edit | Options | MATLAB...'%}
 
-![](/media/matlab-options.png)
+![](/media/scripting/matlab-options.png)
 
 > NB: because the script is being passed from ImageJ to a remote [MATLAB](/scripting/matlab), [MATLAB](/scripting/matlab) will not have access to ImageJ's classpath. Objects can be passed as variables to [MATLAB](/scripting/matlab) (e.g. by using @ annotation) but only if they are valid [MATLAB](/scripting/matlab) classes or specially handled classes.
 >
@@ -140,7 +140,7 @@ The ImageJ update site provides an `ImageJ.m` script that will start up an Image
     addpath '/Applications/Fiji.app/scripts' % Update for your ImageJ installation as appropriate
     ImageJ;
 
-Now, you should see a new ImageJ instance shows up as a window. <img src="/media/imagej-launched-from-matlab.png" width="400"/>
+Now, you should see a new ImageJ instance shows up as a window. <img src="/media/scripting/imagej-launched-from-matlab.png" width="400"/>
 
 In your MATLAB base workspace, you'll find a variable `IJM`, which is a `net.imagej.matlab.ImageJMATLABCommands` Java object. `IJM` offers a few useful methods as below:
 
@@ -271,7 +271,7 @@ The following Java commands work in MATLAB command window to open a sample image
     imp = ij.IJ.openImage("http://imagej.nih.gov/ij/images/boats.gif");
     imp.show()
 
-<img src="/media/boats-screenshot.png" width="400"/>
+<img src="/media/scripting/boats-screenshot.png" width="400"/>
 
 #### Opening a MATLAB array as an image in ImageJ
 
@@ -283,7 +283,7 @@ The following will open a MATLAB array data as an image in ImageJ. Note that the
     corn_gray_tp = corn_gray'; % transpose array
     IJM.show('corn_gray_tp'); % show in ImageJ properly
 
-<img src="/media/corn-gray-matlab.png" width="250"/> <img src="/media/corn-gray.png" width="250"/> <img src="/media/corn-gray-transposed.png" width="250"/>
+<img src="/media/scripting/corn-gray-matlab.png" width="250"/> <img src="/media/scripting/corn-gray.png" width="250"/> <img src="/media/scripting/corn-gray-transposed.png" width="250"/>
 
 A more general solution to this issue of X-Y transposition can be achieved by `permute` function of MATLAB. But please beware of [memory demands by `permute`](https://stackoverflow.com/questions/36065182/why-does-matlabs-permute-not-need-extra-memory).
 
@@ -347,9 +347,9 @@ If you use [`copytoImagePlus`](https://github.com/kouichi-c-nakamura/copytoImage
     imp4 = copytoImagePlus(I16,'XYCZT') % ImagePlus, 16-bit, 171x196x2x5x51
     imp4.show();
 
-`IJM.show(name)` cannot reproduce the dimensions and the data type. Channels (C), slices (Z), and frames (T) are all treated as frames. Image type is 32 bit. <img src="/media/ijmshow-image006.png" width="150"/>
+`IJM.show(name)` cannot reproduce the dimensions and the data type. Channels (C), slices (Z), and frames (T) are all treated as frames. Image type is 32 bit. <img src="/media/scripting/ijmshow-image006.png" width="150"/>
 
-`copytoImagePlus` can keep the dimensions and the data type. <img src="/media/image003.png" width="150"/>
+`copytoImagePlus` can keep the dimensions and the data type. <img src="/media/scripting/image003.png" width="150"/>
 
 # Source
 

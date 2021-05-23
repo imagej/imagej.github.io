@@ -13,13 +13,13 @@ The LUT called "glasbey" uses white at the first index, whereas "glasbey inverte
 
 The Glasbey LUT has numerous uses. It is ideal when coloring a "labeling" of integer-coded regions, since each region will then appear obviously distinct:
 
-![](/media/glasbey-labeling.png)
+![](/media/plugins/glasbey-labeling.png)
 
 ## JPEG artifacts
 
 Glasbey can also be used to illustrate otherwise-subtle phenomena such as JPEG compression artifacts. Here is a comparison of the Boats sample image before and after being resaved as a JPEG:
 
-![The grayscale LUT makes it very difficult (for most people) to see any visual difference.](/media/jpeg-grayscale.png) ![The Glasbey LUT makes it quite obvious where JPEG compression caused a loss of data fidelity.](/media/jpeg-glasbey.png)
+![The grayscale LUT makes it very difficult (for most people) to see any visual difference.](/media/plugins/jpeg-grayscale.png) ![The Glasbey LUT makes it quite obvious where JPEG compression caused a loss of data fidelity.](/media/plugins/jpeg-glasbey.png)
 
 ## Publication
 

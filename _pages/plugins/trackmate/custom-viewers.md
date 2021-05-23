@@ -200,7 +200,7 @@ As for the factory, nothing fancy:
 
     }
 
-<figure><img src="/media/trackmate-customview-2.png" title="TrackMate_CustomView_2.png" width="200" alt="TrackMate_CustomView_2.png" /><figcaption aria-hidden="true">TrackMate_CustomView_2.png</figcaption></figure>
+<figure><img src="/media/plugins/trackmate/trackmate-customview-2.png" title="TrackMate_CustomView_2.png" width="200" alt="TrackMate_CustomView_2.png" /><figcaption aria-hidden="true">TrackMate_CustomView_2.png</figcaption></figure>
 
 Just note that the [SciJava](SciJava) annotation mention the `ViewFactory` class. This is enough to have the view selectable in the GUI menu:
 
@@ -208,7 +208,7 @@ Note that this time, TrackMate good use of the `getName()` and `getInfoText()` m
 
 And here is what you get after a few manipulations:
 
-<figure><img src="/media/trackmate-customview-1.png" title="TrackMate_CustomView_1.png" width="500" alt="TrackMate_CustomView_1.png" /><figcaption aria-hidden="true">TrackMate_CustomView_1.png</figcaption></figure>
+<figure><img src="/media/plugins/trackmate/trackmate-customview-1.png" title="TrackMate_CustomView_1.png" width="500" alt="TrackMate_CustomView_1.png" /><figcaption aria-hidden="true">TrackMate_CustomView_1.png</figcaption></figure>
 
 ## Controlling the visibility of your view with the SciJava `visible` parameter.
 

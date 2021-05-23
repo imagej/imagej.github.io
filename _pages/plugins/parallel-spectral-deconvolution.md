@@ -32,7 +32,7 @@ Parallel Spectral Deconvolution is an ImageJ plugin for spectral image deblurrin
 
 ## How to use
 
-<figure><img src="/media/parallelspectraldeconvolutiondialog.jpg" title="ParallelSpectralDeconvolutionDialog.jpg" width="500" alt="ParallelSpectralDeconvolutionDialog.jpg" /><figcaption aria-hidden="true">ParallelSpectralDeconvolutionDialog.jpg</figcaption></figure>
+<figure><img src="/media/plugins/parallelspectraldeconvolutiondialog.jpg" title="ParallelSpectralDeconvolutionDialog.jpg" width="500" alt="ParallelSpectralDeconvolutionDialog.jpg" /><figcaption aria-hidden="true">ParallelSpectralDeconvolutionDialog.jpg</figcaption></figure>
 
 There are seven drop-down lists (combo-boxes) available in the GUI. From the Image list, you can choose a blurred image. PSF list is for selection of a point spread function image. The content of these two lists depends on what is currently open in ImageJ - if no image windows are displayed then both lists are empty. The next two lists (Method and Stencil) allow you to choose an algorithm used for deconvolution (Generalized Tikhonov, Tikhonov or TSVD) and a stencil (for Generalized Tikhonov only). The stencil is used for creating a regularization matrix (an approximation of a derivative operator). A detailed explanation of all algorithms can be found in Deblurring Images: Matrices, Spectra, and Filtering. In the Resizing combo-box you can choose whether the blurred image will be padded to the next power-of-two size before processing. This feature is available mainly for performance reasons (FFT works faster when the size of the data is a power-of-two number). Note that if the size of each dimension of a blurred image is already a power-of-two number, then the image will not be padded even if the Next power of two option is selected. To display a padded image, the Show padded image check-box needs to be selected. The Output list is used to specify the type of an output (reconstructed image). Finally, in the Precision combo-box you can choose a floating-point precision used in computations. Practice shows that a single precision is sufficient for most problems.
 
@@ -54,21 +54,21 @@ To use these tools you need to know some parameters of your microscope setup and
 
 After opening the image to deconvolve and the image of the PSF, start {% include bc path='Plugins | Deconvolution | 2D Spectral Deconvolution...'%}
 
-<figure><img src="/media/parallelspectraldeconvolution2dexample.jpg" title="ParallelSpectralDeconvolution2DExample.jpg" width="800" alt="ParallelSpectralDeconvolution2DExample.jpg" /><figcaption aria-hidden="true">ParallelSpectralDeconvolution2DExample.jpg</figcaption></figure>
+<figure><img src="/media/plugins/parallelspectraldeconvolution2dexample.jpg" title="ParallelSpectralDeconvolution2DExample.jpg" width="800" alt="ParallelSpectralDeconvolution2DExample.jpg" /><figcaption aria-hidden="true">ParallelSpectralDeconvolution2DExample.jpg</figcaption></figure>
 
 Clicking on the Deconvolve button results in this:
 
-<figure><img src="/media/parallelspectraldeconvolution2dexampleresult.jpg" title="ParallelSpectralDeconvolution2DExampleResult.jpg" width="800" alt="ParallelSpectralDeconvolution2DExampleResult.jpg" /><figcaption aria-hidden="true">ParallelSpectralDeconvolution2DExampleResult.jpg</figcaption></figure>
+<figure><img src="/media/plugins/parallelspectraldeconvolution2dexampleresult.jpg" title="ParallelSpectralDeconvolution2DExampleResult.jpg" width="800" alt="ParallelSpectralDeconvolution2DExampleResult.jpg" /><figcaption aria-hidden="true">ParallelSpectralDeconvolution2DExampleResult.jpg</figcaption></figure>
 
 ## 3D Example
 
 After opening the image to deconvolve and the image of the PSF, start {% include bc path='Plugins | Deconvolution | 3D Spectral Deconvolution...'%}
 
-<figure><img src="/media/parallelspectraldeconvolution3dexample.jpg" title="ParallelSpectralDeconvolution3DExample.jpg" width="800" alt="ParallelSpectralDeconvolution3DExample.jpg" /><figcaption aria-hidden="true">ParallelSpectralDeconvolution3DExample.jpg</figcaption></figure>
+<figure><img src="/media/plugins/parallelspectraldeconvolution3dexample.jpg" title="ParallelSpectralDeconvolution3DExample.jpg" width="800" alt="ParallelSpectralDeconvolution3DExample.jpg" /><figcaption aria-hidden="true">ParallelSpectralDeconvolution3DExample.jpg</figcaption></figure>
 
 Clicking on the Deconvolve button results in this:
 
-<figure><img src="/media/parallelspectraldeconvolution3dexampleresult.jpg" title="ParallelSpectralDeconvolution3DExampleResult.jpg" width="800" alt="ParallelSpectralDeconvolution3DExampleResult.jpg" /><figcaption aria-hidden="true">ParallelSpectralDeconvolution3DExampleResult.jpg</figcaption></figure>
+<figure><img src="/media/plugins/parallelspectraldeconvolution3dexampleresult.jpg" title="ParallelSpectralDeconvolution3DExampleResult.jpg" width="800" alt="ParallelSpectralDeconvolution3DExampleResult.jpg" /><figcaption aria-hidden="true">ParallelSpectralDeconvolution3DExampleResult.jpg</figcaption></figure>
 
 ## See also
 

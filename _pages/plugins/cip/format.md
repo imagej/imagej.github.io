@@ -48,7 +48,7 @@ The function duplicate an input image or a crop if the input image
 <span style="font-size:110%">**Output**</span>  
     **outputImage\*** : the duplicated image  
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.duplicate( img1 , 'origin', [300,200], 'size', [150,150] )` <img src="/media/cip-duplicate.png" title="fig:CIP_duplicate.PNG" width="400" alt="CIP_duplicate.PNG" />  
+    `img2 = cip.duplicate( img1 , 'origin', [300,200], 'size', [150,150] )` <img src="/media/plugins/cip/cip-duplicate.png" title="fig:CIP_duplicate.PNG" width="400" alt="CIP_duplicate.PNG" />  
 <span style="font-size:110%">**Implementation**</span>  
 the shallow copy is done with Views.offsetInterval in ImgLib2 and the deep copy is done with the ops function copy().rai().
 
@@ -69,7 +69,7 @@ This function reduce input image dimensionality by duplicating a region of the s
 <span style="font-size:110%">**Output**</span>  
     **outputImage\*** : the duplicated image. The singleton dimension(s) are dropped so the image dimensionnality is effectively smaller than the input dimensionnality.  
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.slice( img1 , 'dimension', 2, 'position', 0 )` <img src="/media/cip-slice.png" title="fig:CIP_slice.PNG" width="400" alt="CIP_slice.PNG" />  
+    `img2 = cip.slice( img1 , 'dimension', 2, 'position', 0 )` <img src="/media/plugins/cip/cip-slice.png" title="fig:CIP_slice.PNG" width="400" alt="CIP_slice.PNG" />  
 <span style="font-size:110%">**Implementation**</span>  
 The shallow copy is done with Views.offsetInterval in ImgLib2 and the deep copy also apply the ops function copy().rai().
 
@@ -91,7 +91,7 @@ This function reduce input image dimensionality by applying an operation to all 
     **valMap** : the projected image. The singleton dimension(s) are dropped so the image dimensionnality is effectively smaller than the input dimensionnality.  
     **argMap** : the argument of the projection. that is for a max projection for instance the postions at the pixel value was maximum along the projection dimension.  
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.project( img1 , 'dimension',2 )` <img src="/media/cip-project.png" title="fig:CIP_project.PNG" width="400" alt="CIP_project.PNG" />  
+    `img2 = cip.project( img1 , 'dimension',2 )` <img src="/media/plugins/cip/cip-project.png" title="fig:CIP_project.PNG" width="400" alt="CIP_project.PNG" />  
 <span style="font-size:110%">**Implementation**</span>  
 The [projection](https://github.com/benoalo/CIP/blob/master/src/main/java/invizio/cip/misc/Project2CIP.java) is implemented as part of CIP.
 

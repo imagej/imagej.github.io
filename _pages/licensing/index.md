@@ -60,34 +60,34 @@ Since each project consists of many components, some may be licensed differently
         <p><strong>Type</strong></p>
       </td>
       <td style="vertical-align: middle">
-        <p><a href="|alt=Disclose%20source"><img src="/media/licensing-disclose-source.png" width="10px"></a></p>
+        <p><a href="|alt=Disclose%20source"><img src="/media/licensing/licensing-disclose-source.png" width="10px"></a></p>
       </td>
       <td>
-        <p><a href="|alt=License%20and%20copyright%20notice"><img src="/media/licensing-license-and-copyright-notice.png" width="22px"></a></p>
+        <p><a href="|alt=License%20and%20copyright%20notice"><img src="/media/licensing/licensing-license-and-copyright-notice.png" width="22px"></a></p>
       </td>
       <td>
-        <p><a href="|alt=State%20changes"><img src="/media/licensing-state-changes.png" width="10px"></a></p>
+        <p><a href="|alt=State%20changes"><img src="/media/licensing/licensing-state-changes.png" width="10px"></a></p>
       </td>
       <td>
-        <p><a href="|alt=Commercial%20use"><img src="/media/licensing-commercial-use.png" width="10px"></a></p>
+        <p><a href="|alt=Commercial%20use"><img src="/media/licensing/licensing-commercial-use.png" width="10px"></a></p>
       </td>
       <td>
-        <p><a href="|alt=Distribution"><img src="/media/licensing-distribution.png" width="10px"></a></p>
+        <p><a href="|alt=Distribution"><img src="/media/licensing/licensing-distribution.png" width="10px"></a></p>
       </td>
       <td>
-        <p><a href="|alt=Modification"><img src="/media/licensing-modification.png" width="10px"></a></p>
+        <p><a href="|alt=Modification"><img src="/media/licensing/licensing-modification.png" width="10px"></a></p>
       </td>
       <td>
-        <p><a href="|alt=Patent%20grant"><img src="/media/licensing-patent-grant.png" width="10px"></a></p>
+        <p><a href="|alt=Patent%20grant"><img src="/media/licensing/licensing-patent-grant.png" width="10px"></a></p>
       </td>
       <td>
-        <p><a href="|alt=Private%20use"><img src="/media/licensing-private-use.png" width="10px"></a></p>
+        <p><a href="|alt=Private%20use"><img src="/media/licensing/licensing-private-use.png" width="10px"></a></p>
       </td>
       <td>
-        <p><a href="|alt=Hold%20liable"><img src="/media/licensing-hold-liable.png" width="10px"></a></p>
+        <p><a href="|alt=Hold%20liable"><img src="/media/licensing/licensing-hold-liable.png" width="10px"></a></p>
       </td>
       <td>
-        <p><a href="|alt=Sublicensing"><img src="/media/licensing-sublicensing.png" width="10px"></a></p>
+        <p><a href="|alt=Sublicensing"><img src="/media/licensing/licensing-sublicensing.png" width="10px"></a></p>
       </td>
     </tr>
     <tr class="odd">

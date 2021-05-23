@@ -56,7 +56,7 @@ As summary, the classification process is as follows:
 
 The following figure shows several cells that are gathered within the field of view (left image). While cell borders are not visible in this focal plane, nuclear envelopes stand out clearly under darkfield illumination (white arrows). A total of 246 particle trajectories was identified as either normal diffusion (red), confined diffusion (yellow), anomalous diffusion (green) or directed motion (magenta). Boxed areas (A-D) show selected cases of directed motion:
 
-<img src="/media/journal.pone.0170165.g006.png" width="800"/>
+<img src="/media/plugins/journal.pone.0170165.g006.png" width="800"/>
 
 More examples could be found in
 
@@ -64,7 +64,7 @@ More examples could be found in
 
 ## Parameters
 
-<img src="/media/trajclassifier-gui.png" title="fig:Trajclassifier_gui.png" width="300" alt="Trajclassifier_gui.png" /> **Minimal track length:** Minimal number of positions in a trajectory. It has to be greater than the window size. As the window size should be at least 30, the same is true for the minimal track length.
+<img src="/media/plugins/trajclassifier-gui.png" title="fig:Trajclassifier_gui.png" width="300" alt="Trajclassifier_gui.png" /> **Minimal track length:** Minimal number of positions in a trajectory. It has to be greater than the window size. As the window size should be at least 30, the same is true for the minimal track length.
 
 **Window size:** The parameter determines how many positions are used in the sliding window.
 

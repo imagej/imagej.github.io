@@ -19,7 +19,7 @@ title: Anomalous Diffusion Filters
 
 ## Anomalous Diffusion Filters
 
-{% include thumbnail src='/media/filters-examples.png' title='Filtering examples with the T1w MRI stack available in Fiji examples images.'%}
+{% include thumbnail src='/media/plugins/filters-examples.png' title='Filtering examples with the T1w MRI stack available in Fiji examples images.'%}
 
 A PlugInFilter for the two different methods for image filtering: Anisotropic Anomalous Diffusion and Isotropic Anomalous Diffusion. Both methods description can be found in the Physics in Medicine and Biology article [weblink](http://dx.doi.org/10.1088/0031-9155/60/6/2355) and have a discrete solution of generalized diffusion heat equation (also know as a porous media equation).
 
@@ -57,7 +57,7 @@ Where $$I_{\phi,t}$$ and $$I_{\phi,t+1}$$ are the evaluated images in $$t_i$$ it
 
 ## Filters parameters
 
-{% include thumbnail src='/media/filters-parameters.png' title='Filter\'s parameters for both isotropic and anisotropic approaches.'%}
+{% include thumbnail src='/media/plugins/filters-parameters.png' title='Filter\'s parameters for both isotropic and anisotropic approaches.'%}
 
 Basically, the common parameters that are used for both anomalous filtering methods are the number of iterations and the anomalous parameter (q value). The number of iterations is directly related to the time parameter and it must be a positive and integer number, because of the forward and discrete filter implementation. The anomalous parameter, or q value, is the general parameters to define what anomalous probability distribution that will be used for all filtering process in the image.
 

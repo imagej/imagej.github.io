@@ -30,19 +30,19 @@ Enable the [MaMuT update site](http://sites.imagej.net/MaMuT/) to get it.
 
 MaMuT is an end user plugin that combines the [BigDataViewer](/plugins/bdv) and [TrackMate](/plugins/trackmate) to provide an application that allow browsing, annotating and curating annotations for large image data.
 
-<figure><img src="/media/mamut-presentation.png" title="MaMuT_presentation.png" width="600" alt="MaMuT_presentation.png" /><figcaption aria-hidden="true">MaMuT_presentation.png</figcaption></figure>
+<figure><img src="/media/plugins/mamut/mamut-presentation.png" title="MaMuT_presentation.png" width="600" alt="MaMuT_presentation.png" /><figcaption aria-hidden="true">MaMuT_presentation.png</figcaption></figure>
 
 The main window resembles the display panel of [TrackMate](/plugins/trackmate). It controls how the annotations are displayed. Using the *MaMuT Viewer* button, several views of the data can be launched. They will all be in sync. Each of them is an instance of the [BigDataViewer](/plugins/bdv).
 
-![](/media/mamut-windowsinsync.png)
+![](/media/plugins/mamut/mamut-windowsinsync.png)
 
 We privileged annotations that are like lineages, or object followed over time (which is what [TrackMate](/plugins/trackmate) does). MaMuT ships [TrackScheme](/plugins/trackmate/trackscheme), the lineage browser taken from TrackMate.
 
-![](/media/mamut-withtrackscheme.png)
+![](/media/plugins/mamut/mamut-withtrackscheme.png)
 
 However, MaMuT itself does not ship any fully-automated or tracking algorithm. It is meant for manual or semi-automatic annotation. Still, we made the GUI comfortable enough so that you can quickly generate rather large annotations. A semi-automated segmentation can help you generating quickly lineage branches from single cells.
 
-![](/media/mamut-largeannotationsquickly.png)
+![](/media/plugins/mamut/mamut-largeannotationsquickly.png)
 
 ## User documentation.
 

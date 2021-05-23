@@ -51,7 +51,7 @@ Interface
 
 To get started, start up the script editor:
 
-<img src="/media/script-editor-new.jpg" width="500"/>
+<img src="/media/scripting/script-editor-new.jpg" width="500"/>
 
 There is also the keyboard shortcut {% include key key='[' %} (open square bracket) to open the editor.
 
@@ -59,7 +59,7 @@ There is also the keyboard shortcut {% include key key='[' %} (open square brack
 
 Then choose a language from the language menu:
 
-![](/media/script-editor-choose-language.jpg"Script-Editor-choose-language.jpg")
+![](/media/scripting/script-editor-choose-language.jpg"Script-Editor-choose-language.jpg")
 
 Now you can write your script. In this tutorial, Jython was chosen as scripting language, but the process is really the same for all scripting languages.
 
@@ -69,13 +69,13 @@ Now you can write your script. In this tutorial, Jython was chosen as scripting 
 
 Once you are satisfied with the script, run it. This does not require saving, but of course you should save your script later when it works.
 
-![](/media/script-editor-run.jpg)
+![](/media/scripting/script-editor-run.jpg)
 
 Note that while the script is running, the window title shows the tell-tale *(Running)*.
 
 You can use all of ImageJ's classes right away. Here is an example that shows a dialog where the user can input a number. For details how to write dialogs in the different scripting languages, see [Scripting comparisons](/scripting/comparisons)
 
-![](/media/script-editor-dialog.jpg)
+![](/media/scripting/script-editor-dialog.jpg)
 
 ## Further reading
 

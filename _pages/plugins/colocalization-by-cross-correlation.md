@@ -16,7 +16,7 @@ Available on the list of [ImageJ updates sites](/update-sites/following). Requir
 ### How to use Colocalization by Cross Correlation:
 
 #### Prepare a mask for the Costes randomization
-{% include img align="right" name="Randomization mask" src="/media/colocbycorrelate-mask.jpg" caption="**Randomization mask:** An example of an appropriate mask for analyzing cross-correlation of cytoplasmic proteins(right), generated from an actin stain (left)." %}
+{% include img align="right" name="Randomization mask" src="/media/plugins/colocbycorrelate-mask.jpg" caption="**Randomization mask:** An example of an appropriate mask for analyzing cross-correlation of cytoplasmic proteins(right), generated from an actin stain (left)." %}
 To get the best possible results, you will want to create and save a [segmented mask](/techniques/segmentation) for one of your images. This mask should contain all possible localizations for that stain/dye, or it should be a mask of localization for your null hypothesis (_i.e_ if you hypothesize a protein is localized to the mitochondria, you would want your mask to encompass the entire cell). As an example, say you are studying correlation between two nuclear proteins, then you would want your mask to cover the nucles, which could be created easily using a DAPI or Hoechst stain (the mask itself does not need to be generated from either image your are trying to correlate). If you were studying cytoplasmic proteins, you would want your mask to cover the entire cytoplasm. The mask is very important and not using it could easily lead to undesired correlations. This is because without a mask this plugin will find correlations at any distance, and, if say you are studying nuclear proteins, can easily correlate one nuclei to the nuclei of a neighboring cell (cells are often highly repetitive and spaced relatively evenly). However, when an appropriate mask is used, these cell to cell correlations will be subtracted out during the analysis.
 
 #### Prepare your data images
@@ -26,7 +26,7 @@ The two images should undergo appropriate background subtraction to lower the ba
 During a Costes randomization images are randomized by PSF-sized chunks, rather than individual pixels. To facilitate this, the plugin needs to know the approximate size of the image PSF in pixels (rounded to the nearest whole unit). The PSF size can be calculated using the Abbe diffraction formula for fluorescence microscopy (lateral: 0.5λ/NA, axial: 2λ/NA^2), and then simply needs to be divided by the corresponding scaled pixel size (in Image > Properties). 
 
 #### Run the plugin
-{% include img align="right" name="Colocalization by correlation options" src="/media/colocbycorrelateoptions.jpg"%}
+{% include img align="right" name="Colocalization by correlation options" src="/media/plugins/colocbycorrelateoptions.jpg"%}
 The plugin can be found in the **Analyze > Colocalization** menu after it has been installed. At the dialog menu, select the two images and the randomization mask to be used, and enter the PSF width and height in pixel units. Image 1 is the image that will be randomized and requires an appropriate mask. If the possible localizations for your dye/stain encompasses the entire image, you can check the no mask box. For the Costes' randomization cycles count, you can typically input a low number (5-8), however if you have sparse signal within a large mask volume you will probably want to do more cycles. If the "Show intermediate images" box is checked, the plugin will open images showing the correlations (before and after subtraction of random associations), and a sample randomization image. This can be useful for understanding the function of the plugin, or for visualizing the direction of the correlation if your sample has a polarized axis. More details on the intermediate images can be found below.
 
 ### Interpreting the results:
@@ -35,10 +35,10 @@ To help describe the results, we will use the simple, idealized example shown be
 
 {% include gallery content=
 "
-/media/colocbycorrelate-originalslides.jpg | Composite of images analyzed
-/media/colocbycorrelate-correlationplot.jpg | Radial profile
-/media/colocbycorrelate-gaussfit.jpg | Gaussian fit result
-/media/colocbycorrelate-contributionslide1.jpg | Composit image of gaussian fit contributions
+/media/plugins/colocbycorrelate-originalslides.jpg | Composite of images analyzed
+/media/plugins/colocbycorrelate-correlationplot.jpg | Radial profile
+/media/plugins/colocbycorrelate-gaussfit.jpg | Gaussian fit result
+/media/plugins/colocbycorrelate-contributionslide1.jpg | Composit image of gaussian fit contributions
 "
 %}
 
@@ -57,7 +57,7 @@ Two new images will be created that display the signal from each analyzed image 
 
 Working with time-series data is not that different than working with non-time-series data. Every frame of your data is analyzed individually, in the exact same manner that non-time-series data would be analyzed. Thus, all inputs (including the mask) must have the same number of frames. You may also  The output generated from the plugin has been changed to better suit time-series data:
 
-{% include img align="right" name="Heat map of gaussian fit over time" src="/media/colocbycorrelate-heatmap.jpg" caption="**Heat map of gaussian fit**: An example of the heat map generated with time-series data, shown with the Ice lookup table. Each column of pixels shows the gaussian curve fit to the cross-correlation for a single frame."%}
+{% include img align="right" name="Heat map of gaussian fit over time" src="/media/plugins/colocbycorrelate-heatmap.jpg" caption="**Heat map of gaussian fit**: An example of the heat map generated with time-series data, shown with the Ice lookup table. Each column of pixels shows the gaussian curve fit to the cross-correlation for a single frame."%}
 
 **The most noteable difference with time-series data is how the data for the correlation plot is displayed.** Instead of line-graphs, the plugin generates heat maps, where the x-axis is time, the y-axis is distance with 0 at the top, and the intensity is the average of the cross-correlation function at that distance. As we cannot simultaneously show the data for the three lines that would be shown in the correlation plot when using a heat map, we instead generate a three channel image. The first channel (defaults to red), displays the gaussian curve fit to the profile of correlation after subtraction of random associations, equivalent to the red dots from the correlation plot. The second channel (defaults to green) shows the cross-correlation function results after subtraction of random associations, equivalent to the green line from the correlation plot. And the third channel (defaults to blue) show the results of the original cross-correlation function, equivalent to the blue line from the correlation plot.
 
@@ -71,10 +71,10 @@ This plugin starts by performing an initial cross-correlation to create a cross-
 
 {% include gallery content=
 "
-/media/colocbycorrelateextra-original.jpg | Initial, unmodified cross-correlation result
-/media/colocbycorrelateextra-randomized.jpg | Example randomized image
-/media/colocbycorrelateextra-subtracted.jpg | Cross-correlation result after subtraction of random correlations and background
-/media/colocbycorrelateextra-gaussmodified.jpg | Gaussian-fit modified cross-correlation
+/media/plugins/colocbycorrelateextra-original.jpg | Initial, unmodified cross-correlation result
+/media/plugins/colocbycorrelateextra-randomized.jpg | Example randomized image
+/media/plugins/colocbycorrelateextra-subtracted.jpg | Cross-correlation result after subtraction of random correlations and background
+/media/plugins/colocbycorrelateextra-gaussmodified.jpg | Gaussian-fit modified cross-correlation
 "
 %}
 

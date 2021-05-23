@@ -4,7 +4,7 @@ title: Feature Extraction
 categories: [Plugins,Registration,Feature Extraction]
 ---
 
-{% include thumbnail src='/media/tem-42-33-f.png' title='MOPS feature correspondences (example 1)'%} {% include thumbnail src='/media/lab-404-403-f.png' title='MOPS feature correspondences (example 2)'%}
+{% include thumbnail src='/media/tem-42-33-f.png' title='MOPS feature correspondences (example 1)'%} {% include thumbnail src='/media/plugins/lab-404-403-f.png' title='MOPS feature correspondences (example 2)'%}
 
 
 {% capture source%}
@@ -18,7 +18,7 @@ The extracted sets of corresponding landmarks and the calculated transformations
 
 ## Parameters
 
-![SIFT parameters](/media/sift-dialog.png)
+![SIFT parameters](/media/plugins/sift-dialog.png)
 
 ### Scale Invariant Interest Point Detector
 

@@ -14,7 +14,7 @@ Simple ImageJ/Fiji plugin to count spots in image stacks. The plugin detects loc
 
 To install this plugin check the "ValelabUtils" update site in the Fiji updater.
 
-![](/media/spotcounter.jpg) ![](/media/spotcounterv013.png) ![](/media/spotcounterresults.gif)
+![](/media/plugins/spotcounter.jpg) ![](/media/plugins/spotcounterv013.png) ![](/media/plugins/spotcounterresults.gif)
 
 <b>History:</b>  
 2018-01-18 - Version 0.14: Updated build system. Now is compiled to Java 8 bytecode.  

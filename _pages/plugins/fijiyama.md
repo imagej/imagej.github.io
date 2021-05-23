@@ -66,8 +66,8 @@ The following video shows a tutorial for Fijiyama installation:
 
 In order to register your data, Fijiyama needs properly formatted dataset:
 
--   For two images pairwise registration : **Two 3D stacks/images** of the same object. Use your own data or the provided example datasets here: [case study 1, two-images registration](/media/test-dataset-01-vine-crops.zip)
--   For series registration : **N 3D stacks/images** of the same object. Use your own data or the provided example datasets here: [case study 4, times series registration](/media/test-dataset-04-time-series.zip).
+-   For two images pairwise registration : **Two 3D stacks/images** of the same object. Use your own data or the provided example datasets here: [case study 1, two-images registration](/media/plugins/test-dataset-01-vine-crops.zip)
+-   For series registration : **N 3D stacks/images** of the same object. Use your own data or the provided example datasets here: [case study 4, times series registration](/media/plugins/test-dataset-04-time-series.zip).
 -   **An empty "Output" directory**, that will be used to store the Fijiyama configuration file, the intermediate results (transformations) and the final results (transformations and resulting 3D images). The configuration file (\*.fjm) keep a full track of your work. When saving the current registration experiment, Fijiyama stores the successive registration steps and the associated computed files. When restarting later from this point, you can review the whole process, and "undo" one or more steps.
 
   
@@ -80,7 +80,7 @@ Once signal intensity and voxel sizes have been checked, save your modified imag
 
 ## The registration manager window
 
-<img src="/media/fijiyama-reg-manager.png" title="fig:Fijiyama_reg_manager.png" width="350" alt="Fijiyama_reg_manager.png" /> Once a registration scenario starts, you can interact with the registration manager window through (see image) :
+<img src="/media/plugins/fijiyama-reg-manager.png" title="fig:Fijiyama_reg_manager.png" width="350" alt="Fijiyama_reg_manager.png" /> Once a registration scenario starts, you can interact with the registration manager window through (see image) :
 
 -   The log window : a guide to remember last operations, and to understand what the plugin expects from you
 
@@ -100,7 +100,7 @@ Once signal intensity and voxel sizes have been checked, save your modified imag
 
 In order to achieve an efficient registration of two 3D images, we recommend the following procedure:
 
--   **Step 1 : ** Prepare your data or download the example set: [case study 1, two-images registration](/media/test-dataset-01-vine-crops.zip)
+-   **Step 1 : ** Prepare your data or download the example set: [case study 1, two-images registration](/media/plugins/test-dataset-01-vine-crops.zip)
 -   **Step 2 : ** Select **'Manual registration**' in the first menu and run it. Superimpose roughly the two volumes manually (centers should be roughly aligned, with angle &lt; 15 degrees). Press on **'Position ok**' (green button) when ready. This first step will help Fijiyama finding the correct orientation.
 -   **Step 3 : ** Select **'Automatic registration**' with default parameters (Block matching). If you want to monitor the registration during the run, select the **'Display automatic registration**' in the "Manual registration viewer" menu. Before starting this action, notice the *estimated time* required to complete the action (calculated from your computer settings).
 -   **Step 3-bis **(optional, depending on the data) : Select **'Automatic registration**' with default parameters (Block matching), and select "Vector field" in the "Transformation to estimate" menu.
@@ -114,7 +114,7 @@ Once comfortable with the "two images registration" module, try a "series regist
 
 {% include youtube url='https://www.youtube.com/embed/DVr3LBH5ayY'%}
 
--   **Step 1 : ** Prepare your data or download the example data set : [case study 4, times series registration](/media/test-dataset-04-time-series.zip)
+-   **Step 1 : ** Prepare your data or download the example data set : [case study 4, times series registration](/media/plugins/test-dataset-04-time-series.zip)
 
 Data names should respect a generic form, for example : img\_t{Time}\_mod{ModalityName}.tif , where {Time} represents the successive values for each time point, and {ModalityName} represents the name of each modality. In the example dataset, this is already done, since the image names are : MRI\_D0.tif , MRI\_D1.tif , MRI\_D2.tif , MRI\_D3.tif, which corresponds to a monomodal series with the generic expression MRI\_D{Time}.tif .
 
@@ -161,7 +161,7 @@ Major updates include new features released, or major refactoring, while minor u
 
 Major updates are symbolized with a change in the plugin version name. For minor updates, only the release time is modified.
 
-<figure><img src="/media/versioning-fijiyama.jpeg" title="Versioning_Fijiyama.jpeg" width="700" alt="Versioning_Fijiyama.jpeg" /><figcaption aria-hidden="true">Versioning_Fijiyama.jpeg</figcaption></figure>
+<figure><img src="/media/plugins/versioning-fijiyama.jpeg" title="Versioning_Fijiyama.jpeg" width="700" alt="Versioning_Fijiyama.jpeg" /><figcaption aria-hidden="true">Versioning_Fijiyama.jpeg</figcaption></figure>
 
 |                                               |                      |                     |                                                                                                                                                                                                                 |                                                                                                                                                                         |
 |-----------------------------------------------|----------------------|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -226,23 +226,23 @@ or developing new features. We are grateful to them :
 <table>
   <tbody>
     <tr>
-      <td><img src="/media/cmoisy.png" alt="" class="image table" width="250px"></td>
+      <td><img src="/media/plugins/cmoisy.png" alt="" class="image table" width="250px"></td>
       <td>Cedric Moisy, PhD - French Wine and Vine Institute, Montpellier, France. Topic: Detection of tissue degradation and time-lapse monitoring of grapevine trunk diseases</td>
     </tr>
     <tr>
-      <td><img src="/media/kvilla.png" alt="" class="image table" width="250px"></td>
+      <td><img src="/media/plugins/kvilla.png" alt="" class="image table" width="250px"></td>
       <td>Katie Villa, PhD - Massachussets Institute of Technology, Nedivi lab, Boston, USA. Topic: Neuronal plasticity</td>
     </tr>
     <tr>
-      <td><img src="/media/ewershof.png" alt="" class="image table" width="250px"></td>
+      <td><img src="/media/plugins/ewershof.png" alt="" class="image table" width="250px"></td>
       <td>Esther Wershof, PhD - Sloan Kettering Institute for Cancer Research, New York, USA. Topic: Embryonic organogenesis</td>
     </tr>
     <tr>
-      <td><img src="/media/bpadman.png" alt="" class="image table" width="250px"></td>
+      <td><img src="/media/plugins/bpadman.png" alt="" class="image table" width="250px"></td>
       <td>Benjamin Padman, PhD - Monash Biomedicine Discovery Institute, Melbourne, Australia. Topic: Cellular mechanisms of mammalian mitophagy</td>
     </tr>
     <tr>
-      <td><img src="/media/jmatsuno.png" alt="" class="image table" width="250px"></td>
+      <td><img src="/media/plugins/jmatsuno.png" alt="" class="image table" width="250px"></td>
       <td>Junya Matsuno, Division of Earth and Planetary Sciences, University of Kyoto, Japan. Topic : Extraterrestrial matter analysis from Hayabusa spatial probes.</td>
     </tr>
   </tbody>

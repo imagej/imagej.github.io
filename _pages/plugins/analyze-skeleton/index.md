@@ -12,7 +12,7 @@ Analysis of 2D and 3D skeleton images. For the ImageJ 1.x plugin, see [this page
   <tbody>
     <tr class="odd">
       <td>
-        <p style="vertical-align:top">{% include thumbnail src='/media/analyze-skeleton-09-13-2009.png' title='Example of AnalyzeSkeleton performance'%}</p>
+        <p style="vertical-align:top">{% include thumbnail src='/media/plugins/analyze-skeleton/analyze-skeleton-09-13-2009.png' title='Example of AnalyzeSkeleton performance'%}</p>
       </td>
     </tr>
   </tbody>
@@ -21,7 +21,7 @@ Analysis of 2D and 3D skeleton images. For the ImageJ 1.x plugin, see [this page
 
 ## General Description
 
-{% include thumbnail src='/media/tagging-example.png' title='Example of voxel classification'%} This plugin tags all pixel/voxels in a skeleton image and then counts all its junctions, triple and quadruple points and branches, and measures their average and maximum length. The tags are shown in a new window displaying every tag in a different color. You can find it under {% include bc path='Analyze | Skeleton | Analyze Skeleton (2D/3D)'%}. See [Skeletonize3D](/plugins/skeletonize3d) for an example of how to produce skeleton images.
+{% include thumbnail src='/media/plugins/analyze-skeleton/tagging-example.png' title='Example of voxel classification'%} This plugin tags all pixel/voxels in a skeleton image and then counts all its junctions, triple and quadruple points and branches, and measures their average and maximum length. The tags are shown in a new window displaying every tag in a different color. You can find it under {% include bc path='Analyze | Skeleton | Analyze Skeleton (2D/3D)'%}. See [Skeletonize3D](/plugins/skeletonize3d) for an example of how to produce skeleton images.
 
 The voxels are classified into three different categories depending on their 26 neighbors:
 
@@ -35,7 +35,7 @@ Notice here that, following this notation, the number of junction voxels can be 
 
 ## Main options
 
-{% include thumbnail src='/media/screenshot-analyzeskeleton-dialog.png' title='Main dialog of the AnalyzeSkeleton plugin'%} In the main dialog of the plugin the user can select some options to
+{% include thumbnail src='/media/plugins/analyze-skeleton/screenshot-analyzeskeleton-dialog.png' title='Main dialog of the AnalyzeSkeleton plugin'%} In the main dialog of the plugin the user can select some options to
 
 -   **Prune the possible loops** in the skeleton (by choosing one of the pruning cycle methods).
 -   **Prune any branch that ends in an end-point** (by checking "Prune ends"), as implemented by [Michael Doube](http://doube.org/) in [BoneJ](http://bonej.org/).
@@ -46,7 +46,7 @@ Notice here that, following this notation, the number of junction voxels can be 
 
 ## Loop detection and pruning
 
-{% include thumbnail src='/media/cycle-detection.png' title='Example of cycle detection and pruning'%} Since the 2009/09/02 version of the code, the possible cycles or loops in the skeleton can be detected and pruned previous to the analysis. In this sense, the initial plugin dialog offers 4 options:
+{% include thumbnail src='/media/plugins/analyze-skeleton/cycle-detection.png' title='Example of cycle detection and pruning'%} Since the 2009/09/02 version of the code, the possible cycles or loops in the skeleton can be detected and pruned previous to the analysis. In this sense, the initial plugin dialog offers 4 options:
 
 -   **none**: no cycle detection nor pruning is performed.
 -   **shortest branch**: the shortest branch among the loop branches will be cut in its middle point.
@@ -59,7 +59,7 @@ The only known limitation of this approach is shown in the presence of nested lo
 
 ## Table of results
 
-{% include thumbnail src='/media/analyzeskeleton-results-table.png' title='Example of AnalyzeSkeleton Results table'%} After classification, a "Results" window is displayed showing for each skeleton in the image:
+{% include thumbnail src='/media/plugins/analyze-skeleton/analyzeskeleton-results-table.png' title='Example of AnalyzeSkeleton Results table'%} After classification, a "Results" window is displayed showing for each skeleton in the image:
 
 -   The number of branches (slab segments, usually connecting end-points, end-points and junctions or junctions and junctions). The special case of a circular skeleton is also contemplated here.
 -   The number of voxels of every type: end-point, slab and junction voxels.
@@ -71,7 +71,7 @@ AnalyzeSkeleton is able to process up to **2<sup>31</sup>-1 skeletons in one sin
 
 #### Detailed information
 
-{% include thumbnail src='/media/analyzeskeleton-branch-information.png' title='Example of AnalyzeSkeleton Branch information window'%} When calling the plugin, if the "Show detailed information" checkbox is marked, a complementary results table called "Branch information" is shown.
+{% include thumbnail src='/media/plugins/analyze-skeleton/analyzeskeleton-branch-information.png' title='Example of AnalyzeSkeleton Branch information window'%} When calling the plugin, if the "Show detailed information" checkbox is marked, a complementary results table called "Branch information" is shown.
 
 In this table we display all branches information:
 
@@ -103,13 +103,13 @@ Using the [3D\_Viewer](/plugins/3d-viewer) libraries we can easily display the r
   <tbody>
     <tr class="odd">
       <td>
-        <p style="vertical-align:top">{% include thumbnail src='/media/bat-cochlea-3d.gif' title='Smooth (by 3D Gaussian filter) bat cochlea volume rendered in the viewer'%}</p>
+        <p style="vertical-align:top">{% include thumbnail src='/media/plugins/analyze-skeleton/bat-cochlea-3d.gif' title='Smooth (by 3D Gaussian filter) bat cochlea volume rendered in the viewer'%}</p>
       </td>
       <td>
-        <p style="vertical-align:top">{% include thumbnail src='/media/movie-skeleton-rendering.gif' title='3D skeleton of bat cochlea volume rendered in the viewer after voxel classification'%}</p>
+        <p style="vertical-align:top">{% include thumbnail src='/media/plugins/analyze-skeleton/movie-skeleton-rendering.gif' title='3D skeleton of bat cochlea volume rendered in the viewer after voxel classification'%}</p>
       </td>
       <td>
-        <p style="vertical-align:top">{% include thumbnail src='/media/movie-bat-skel.gif' title='Bat cochlea volume rendered in the viewer with its corresponding classified skeleton'%}</p>
+        <p style="vertical-align:top">{% include thumbnail src='/media/plugins/analyze-skeleton/movie-bat-skel.gif' title='Bat cochlea volume rendered in the viewer with its corresponding classified skeleton'%}</p>
       </td>
     </tr>
   </tbody>

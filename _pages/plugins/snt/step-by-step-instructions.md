@@ -13,11 +13,11 @@ These instructions assume that you have read the [Overview](/plugins/snt/manual)
 
 ### I. Pick The Starting Point
 
-<img src="/media/snt-cropped-before-starting-2.png" title="fig:Choosing a starting point" width="400" alt="Choosing a starting point" /> You may notice that, by default, the cursor [snaps](/plugins/snt/manual#auto-snapping) to the brightest pixel in its vicinity. If you prefer to manually control the placement of nodes, feel free to toggle feature by pressing {% include key key='S' %}. Now, to begin tracing, move through the image stack to find the start point of a path then click there with the left mouse button.
+<img src="/media/plugins/snt/snt-cropped-before-starting-2.png" title="fig:Choosing a starting point" width="400" alt="Choosing a starting point" /> You may notice that, by default, the cursor [snaps](/plugins/snt/manual#auto-snapping) to the brightest pixel in its vicinity. If you prefer to manually control the placement of nodes, feel free to toggle feature by pressing {% include key key='S' %}. Now, to begin tracing, move through the image stack to find the start point of a path then click there with the left mouse button.
 
 ### II. Pick A Subsequent Point
 
-<img src="/media/snt-cropped-after-starting-2.png" title="fig:First point of a path selected" width="400" alt="First point of a path selected" /> <img src="/media/snt-cropped-mid-tracing-2.png" title="fig:A* search animated progress" width="400" alt="A* search animated progress" /> A small circle should appear, highlighting the start of the path. Move through the stack to find a subsequent point further along the same structure to be traced (neuron, blood vessel, etc.), and click there.
+<img src="/media/plugins/snt/snt-cropped-after-starting-2.png" title="fig:First point of a path selected" width="400" alt="First point of a path selected" /> <img src="/media/plugins/snt/snt-cropped-mid-tracing-2.png" title="fig:A* search animated progress" width="400" alt="A* search animated progress" /> A small circle should appear, highlighting the start of the path. Move through the stack to find a subsequent point further along the same structure to be traced (neuron, blood vessel, etc.), and click there.
 
 If a path between the two points cannot be found immediately, you may see the animated progress of the search. You can scroll through the stack while such a search progresses: If it appears to not be making good progress, it's probably best to press the "Cancel/Esc" button (shortcut: {% include key key='C' %}/{% include key key='Esc' %}) and pick a point closer to the start point. {% include notice icon="tip" content='Increase *Z* in the *Cursor Auto-snapping* panel for automated Z-navigation on signal mouseover.' %}
 
@@ -27,9 +27,9 @@ Once the search has reached the target point, the path is shown in cyan (to indi
 
 <div align="center">
 
--   <img src="/media/snt-cropped-confirmation-2.png" title="fig:A* search completed" width="400" alt="A* search completed" />
--   <img src="/media/snt-cropped-confirmed-2.png" title="fig:A confirmed segment" width="400" alt="A confirmed segment" />
--   <img src="/media/snt-cropped-completed-path-2.png" title="fig:A completed path" width="400" alt="A completed path" />
+-   <img src="/media/plugins/snt/snt-cropped-confirmation-2.png" title="fig:A* search completed" width="400" alt="A* search completed" />
+-   <img src="/media/plugins/snt/snt-cropped-confirmed-2.png" title="fig:A confirmed segment" width="400" alt="A confirmed segment" />
+-   <img src="/media/plugins/snt/snt-cropped-completed-path-2.png" title="fig:A completed path" width="400" alt="A completed path" />
 
 </div>
 
@@ -37,11 +37,11 @@ Once the search has reached the target point, the path is shown in cyan (to indi
 
 ### I. Select The Path To Branch Off
 
-To select the path you want to branch off from, you can either select it in the Path Manager, or press {% include key key='G' %} while the mouse pointer is near the path. When the path is first selected, it will be shown in the default green color. <img src="/media/snt-sb-selecting-by-g.gif" title="fig:Holding &#39;G&#39; (Group paths around cursor) will select the closest path to the mouse pointer" width="600" alt="Holding &#39;G&#39; (Group paths around cursor) will select the closest path to the mouse pointer" />
+To select the path you want to branch off from, you can either select it in the Path Manager, or press {% include key key='G' %} while the mouse pointer is near the path. When the path is first selected, it will be shown in the default green color. <img src="/media/plugins/snt/snt-sb-selecting-by-g.gif" title="fig:Holding &#39;G&#39; (Group paths around cursor) will select the closest path to the mouse pointer" width="600" alt="Holding &#39;G&#39; (Group paths around cursor) will select the closest path to the mouse pointer" />
 
 ### II. Select The Fork Point
 
-<img src="/media/snt-sb-started-branch-2.png" title="fig:A newly created fork point" width="400" alt="A newly created fork point" /> To force the start of the new path to be a branch of the selected path, hold down the {% include key keys='Alt|Shift' %} keys while you move the mouse to find the branch point under the red cross-hairs, now decorated with a "Fork Point" annotation. With {% include key keys='Alt|Shift' %} held down, click with the left mouse button. Finally, release the keys. Note that it is also possible to zoom into the branch point, right-click on the image and choose *Fork at Nearest Node* from the contextual menu.
+<img src="/media/plugins/snt/snt-sb-started-branch-2.png" title="fig:A newly created fork point" width="400" alt="A newly created fork point" /> To force the start of the new path to be a branch of the selected path, hold down the {% include key keys='Alt|Shift' %} keys while you move the mouse to find the branch point under the red cross-hairs, now decorated with a "Fork Point" annotation. With {% include key keys='Alt|Shift' %} held down, click with the left mouse button. Finally, release the keys. Note that it is also possible to zoom into the branch point, right-click on the image and choose *Fork at Nearest Node* from the contextual menu.
 
 ### III. Extend The Path
 
@@ -49,9 +49,9 @@ From this point on, you can carry on adding nodes to the branched path as [above
 
 <div align="center">
 
--   <img src="/media/snt-sb-temporary-path-2.png" title="fig:1) Temporary path branching-off" width="400" alt="1) Temporary path branching-off" />
--   <img src="/media/snt-sb-confirmed-path-2.png" title="fig:2) Temporary path confirmed" width="400" alt="2) Temporary path confirmed" />
--   <img src="/media/snt-sb-completed-branch-2.png" title="fig:3) Branched (child) path completed" width="400" alt="3) Branched (child) path completed" />
+-   <img src="/media/plugins/snt/snt-sb-temporary-path-2.png" title="fig:1) Temporary path branching-off" width="400" alt="1) Temporary path branching-off" />
+-   <img src="/media/plugins/snt/snt-sb-confirmed-path-2.png" title="fig:2) Temporary path confirmed" width="400" alt="2) Temporary path confirmed" />
+-   <img src="/media/plugins/snt/snt-sb-completed-branch-2.png" title="fig:3) Branched (child) path completed" width="400" alt="3) Branched (child) path completed" />
 
 </div>
 
@@ -66,7 +66,7 @@ From this point on, you can carry on adding nodes to the branched path as [above
       </td>
       <td>
         <figure>
-          <img src="/media/snt-ej-cropped-half-finished-2.png" title="[1] Unfinished join segment, in red - disconnected" width="350" alt="[1] Unfinished join segment, in red - disconnected">
+          <img src="/media/plugins/snt/snt-ej-cropped-half-finished-2.png" title="[1] Unfinished join segment, in red - disconnected" width="350" alt="[1] Unfinished join segment, in red - disconnected">
           <figcaption aria-hidden="true">
             <span style="text-align:center;font-size:90%">[1] Unfinished join segment, in red - disconnected</span>
           </figcaption>
@@ -79,7 +79,7 @@ From this point on, you can carry on adding nodes to the branched path as [above
       </td>
       <td>
         <figure>
-          <img src="/media/snt-ej-cropped-selected-destination-path-2.png" title="[2] Selected path to join to, in green" width="350" alt="[2] Selected path to join to, in green">
+          <img src="/media/plugins/snt/snt-ej-cropped-selected-destination-path-2.png" title="[2] Selected path to join to, in green" width="350" alt="[2] Selected path to join to, in green">
           <figcaption aria-hidden="true">
             <span style="text-align:center;font-size:90%">[2] Selected path to join to, in green</span>
           </figcaption>
@@ -92,7 +92,7 @@ From this point on, you can carry on adding nodes to the branched path as [above
       </td>
       <td>
         <figure>
-          <img src="/media/snt-ej-cropped-end-join-created-2.png" title="[3] Connected path to join, unconfirmed" width="350" alt="[3] Connected path to join, unconfirmed">
+          <img src="/media/plugins/snt/snt-ej-cropped-end-join-created-2.png" title="[3] Connected path to join, unconfirmed" width="350" alt="[3] Connected path to join, unconfirmed">
           <figcaption aria-hidden="true">
             <span style="text-align:center;font-size:90%">[3] Connected path to join, unconfirmed</span>
           </figcaption>
@@ -105,7 +105,7 @@ From this point on, you can carry on adding nodes to the branched path as [above
       </td>
       <td>
         <figure>
-          <img src="/media/snt-ej-cropped-path-completed-2.png" title="[4] Confirmed join" width="350" alt="[4] Confirmed join">
+          <img src="/media/plugins/snt/snt-ej-cropped-path-completed-2.png" title="[4] Confirmed join" width="350" alt="[4] Confirmed join">
           <figcaption aria-hidden="true">
             <span style="text-align:center;font-size:90%">[4] Confirmed join</span>
           </figcaption>
@@ -129,27 +129,27 @@ If both nodes are terminal, the paths are merged together. Otherwise, one path w
 
 <div align="center">
 
--   {% include thumbnail src='/media/snt-edit-path-connect-to-step-1.png' title='none\|250px\|1) Select parent path and activate first join node'%}
--   {% include thumbnail src='/media/snt-edit-path-connect-to-step-2.png' title='none\|250px\|2) Select child path and activate second join node'%}
--   {% include thumbnail src='/media/snt-edit-path-connect-to-step-3.png' title='none\|250px\|3) Use contextual-menu option to connect child path to parent path'%}
--   {% include thumbnail src='/media/snt-edit-path-connect-to-result.png' title='none\|250px\|4) Joined result  
+-   {% include thumbnail src='/media/plugins/snt/snt-edit-path-connect-to-step-1.png' title='none\|250px\|1) Select parent path and activate first join node'%}
+-   {% include thumbnail src='/media/plugins/snt/snt-edit-path-connect-to-step-2.png' title='none\|250px\|2) Select child path and activate second join node'%}
+-   {% include thumbnail src='/media/plugins/snt/snt-edit-path-connect-to-step-3.png' title='none\|250px\|3) Use contextual-menu option to connect child path to parent path'%}
+-   {% include thumbnail src='/media/plugins/snt/snt-edit-path-connect-to-result.png' title='none\|250px\|4) Joined result  
      '%}
 
 </div>
 
 ## Tracing in the Legacy 3D Viewer
 
-It remains possible to trace in the legacy 3D Viewer. ![](/media/snt-3d-dialog.png)
+It remains possible to trace in the legacy 3D Viewer. ![](/media/plugins/snt/snt-3d-dialog.png)
 
 ### I.Starting the Viewer
 
-To open the viewer, select the *3D* menu tab in the SNT dialog and look for *Legacy 3D Viewer*. You will see 3 parameters: ![](/media/snt-image-resampling-factor.png)
+To open the viewer, select the *3D* menu tab in the SNT dialog and look for *Legacy 3D Viewer*. You will see 3 parameters: ![](/media/plugins/snt/snt-image-resampling-factor.png)
 
 -   Select *New with image* from the *Viewer* drop-down menu (selecting *New without image* would only allow you to look at reconstructions without the underlying signal). Note that you can recycle existing viewers you may have open by choosing their window titles from the drop-down menu.
 -   Select the preferred rendering style from the *Mode* drop-down menu.
 -   Once you *Apply* the viewer choice, a prompt will appear asking you to choose the resampling factor for the image. Then, the viewer window will appear with the currently open image.
 
-<figure><img src="/media/snt-legacy-3d-viewer.png" title="3D viewer showing OP_1.tif" width="300" alt="3D viewer showing OP_1.tif" /><figcaption aria-hidden="true">3D viewer showing OP_1.tif</figcaption></figure>
+<figure><img src="/media/plugins/snt/snt-legacy-3d-viewer.png" title="3D viewer showing OP_1.tif" width="300" alt="3D viewer showing OP_1.tif" /><figcaption aria-hidden="true">3D viewer showing OP_1.tif</figcaption></figure>
 
 ### II.Tracing and Navigation
 
@@ -158,7 +158,7 @@ To open the viewer, select the *3D* menu tab in the SNT dialog and look for *Leg
 -   **Translation** Hold {% include key key='Shift' %} and the scroll wheel while dragging the mouse.
 -   **Adjusting zoom depth** Scroll the mouse wheel.
 
-Once you have selected each of these tools (Wand and Hand) once, you should be able to switch between them by pressing the {% include key key='Esc' %} key. See [Key Shortcuts](/plugins/snt/key-shortcuts#legacy-3d-viewer) for the list of all supported shortcuts. ![](/media/fiji-toolbar-wand-and-hand-2.png)
+Once you have selected each of these tools (Wand and Hand) once, you should be able to switch between them by pressing the {% include key key='Esc' %} key. See [Key Shortcuts](/plugins/snt/key-shortcuts#legacy-3d-viewer) for the list of all supported shortcuts. ![](/media/plugins/snt/fiji-toolbar-wand-and-hand-2.png)
 
 # Filling
 
@@ -168,9 +168,9 @@ There is a simple facility in this plugin for "filling out" paths to volumes. Th
 
 First, select the one or more paths that you want to fill out from in the Path Manager and select {% include bc path="Fill | Fill Out..." %} in the Path Manager menu options. The selected paths are shown in green so that you can check that you're starting from the right ones. After a couple of seconds if you scroll through the stack you should be able to see a thick green surround the path:
 
-<figure><img src="/media/snt-initial-filling-2.png" title="A few seconds after selecting &quot;Fill Out...&quot; with 1 path selected" width="400" alt="A few seconds after selecting &quot;Fill Out...&quot; with 1 path selected" /><figcaption aria-hidden="true">A few seconds after selecting "Fill Out..." with 1 path selected</figcaption></figure>
+<figure><img src="/media/plugins/snt/snt-initial-filling-2.png" title="A few seconds after selecting &quot;Fill Out...&quot; with 1 path selected" width="400" alt="A few seconds after selecting &quot;Fill Out...&quot; with 1 path selected" /><figcaption aria-hidden="true">A few seconds after selecting "Fill Out..." with 1 path selected</figcaption></figure>
 
-The filler continues to explore the image starting from the path until you click "Pause" or "Stop" in the dialog. However, the fill which is shown only includes those points up to a certain threshold distance from the path. (Note that in this section "distance" doesn't mean a real physical distance, but a measure which takes into account the intensity values of the pixels which must be passed through when moving away from the path.) Information about the current threshold and the progress of the search is shown in the dialog. ![The filling-related part of the dialog.](/media/snt-filling-statistics-2.png) The "Cursor position:" state under "Search Status" is updated as you move your mouse over the image. If the point under the mouse has been reached by the search then it will show you that point's distance from the path. Otherwise, it will read "Not reached by search yet". Two lines above, the "Current threshold distance:" shows your current threshold distance: so if this is set to 0.2 then that means that all points less than 0.2 from the path are included in the fill (and shown in green in the image.) The "Max. explored distance:" state under this line shows the maximum distance from the path that has been completely explored.
+The filler continues to explore the image starting from the path until you click "Pause" or "Stop" in the dialog. However, the fill which is shown only includes those points up to a certain threshold distance from the path. (Note that in this section "distance" doesn't mean a real physical distance, but a measure which takes into account the intensity values of the pixels which must be passed through when moving away from the path.) Information about the current threshold and the progress of the search is shown in the dialog. ![The filling-related part of the dialog.](/media/plugins/snt/snt-filling-statistics-2.png) The "Cursor position:" state under "Search Status" is updated as you move your mouse over the image. If the point under the mouse has been reached by the search then it will show you that point's distance from the path. Otherwise, it will read "Not reached by search yet". Two lines above, the "Current threshold distance:" shows your current threshold distance: so if this is set to 0.2 then that means that all points less than 0.2 from the path are included in the fill (and shown in green in the image.) The "Max. explored distance:" state under this line shows the maximum distance from the path that has been completely explored.
 
 ### II.Adjusting the Fill Threshold
 
@@ -188,9 +188,9 @@ As you can see in the middle image, the threshold is set too far from the path, 
 
 <div align="center">
 
--   <img src="/media/snt-zoomed-filling-2.png" title="fig:Fill, opaque" width="250" alt="Fill, opaque" />
--   <img src="/media/snt-transparent-filling-2.png" title="fig:Fill, with &quot;Transparent overlay&quot; on" width="250" alt="Fill, with &quot;Transparent overlay&quot; on" />
--   <img src="/media/snt-refined-filling-2.png" title="fig:Fill, refined" width="250" alt="Fill, refined" />
+-   <img src="/media/plugins/snt/snt-zoomed-filling-2.png" title="fig:Fill, opaque" width="250" alt="Fill, opaque" />
+-   <img src="/media/plugins/snt/snt-transparent-filling-2.png" title="fig:Fill, with &quot;Transparent overlay&quot; on" width="250" alt="Fill, with &quot;Transparent overlay&quot; on" />
+-   <img src="/media/plugins/snt/snt-refined-filling-2.png" title="fig:Fill, refined" width="250" alt="Fill, refined" />
 
 </div>
 
@@ -205,7 +205,7 @@ If you are happy with this, then you might as well click "Pause" so that your co
 -   Discard the fill by either clicking "Stop" while filling is in progress or, if you stashed the fill, select it in the fill list and click "Delete Fill(s)".
 -   Use the "Image Stack..." button to view the same image stack, but with only the points in that fill preserved. You can choose either a grayscale image or a binary mask. One reason why you might want to do this is that you can then smooth that image and use the [3D Viewer](/plugins/3d-viewer) to do a surface rendering of the neuron. Perhaps then you could overlay that onto a volume rendering of the complete image (see available [tutorials](/plugins/snt#tutorials)). Or, you could save those fill stacks for each of the neurons you fill and then combine them in ImageJ using "RGB Merge".
 
-The image stack you would get from the image used in this example might look something like this: <img src="/media/snt-filling-viewed-2.png" title="fig:Having selected the &quot;Image Stack... -&gt; As Grayscale Image...&quot; option" width="500" alt="Having selected the &quot;Image Stack... -&gt; As Grayscale Image...&quot; option" />
+The image stack you would get from the image used in this example might look something like this: <img src="/media/plugins/snt/snt-filling-viewed-2.png" title="fig:Having selected the &quot;Image Stack... -&gt; As Grayscale Image...&quot; option" width="500" alt="Having selected the &quot;Image Stack... -&gt; As Grayscale Image...&quot; option" />
 
 # Generating *Filtered Images*
 
@@ -213,7 +213,7 @@ This section describes how to generate [Filtered Images](/plugins/snt/manual#tra
 
 #### A Single Image
 
-To process a single image with the Frangi Vesselness filter, pause SNT, and select {% include bc path='Process | Filters | Frangi Vesselness'%}. By way of example, let's say you need to enhance strucutres at two scales: twice the x voxel separation and five times that value. We apply a Gaussian convolution at each scale. Assuming your image has isotropic resolution with pixel width = pixel height = voxel depth = 1, the parameters would be: ![](/media/frangi-parameters.png)
+To process a single image with the Frangi Vesselness filter, pause SNT, and select {% include bc path='Process | Filters | Frangi Vesselness'%}. By way of example, let's say you need to enhance strucutres at two scales: twice the x voxel separation and five times that value. We apply a Gaussian convolution at each scale. Assuming your image has isotropic resolution with pixel width = pixel height = voxel depth = 1, the parameters would be: ![](/media/plugins/snt/frangi-parameters.png)
 {% capture tip%}
 To get the spatial calibration for your image, go to {% include bc path='Image|Properties...'%} ({% include key keys='Ctrl|Shift|P' %}) in the main Fiji dialog.
 {% endcapture %}
@@ -221,12 +221,12 @@ To get the spatial calibration for your image, go to {% include bc path='Image|P
 
 <div align="center">
 
--   <img src="/media/filtered-image-load.png" title="fig:Step 1" width="300" alt="Step 1" />
--   <img src="/media/filtered-image-toggle.png" title="fig:Step 2" width="300" alt="Step 2" />
+-   <img src="/media/plugins/snt/filtered-image-load.png" title="fig:Step 1" width="300" alt="Step 1" />
+-   <img src="/media/plugins/snt/filtered-image-toggle.png" title="fig:Step 2" width="300" alt="Step 2" />
 
 </div>
 
-To display the image in a separate window, from the SNT dialog use {% include bc path='Show Cached Image'%} from the *gear* menu or {% include bc path='View | Show Cached *Secondary Image*'%}. <img src="/media/display-filtered-image.png" title="fig:Secondary Image MIP" width="400" alt="Secondary Image MIP" />
+To display the image in a separate window, from the SNT dialog use {% include bc path='Show Cached Image'%} from the *gear* menu or {% include bc path='View | Show Cached *Secondary Image*'%}. <img src="/media/plugins/snt/display-filtered-image.png" title="fig:Secondary Image MIP" width="400" alt="Secondary Image MIP" />
 
 #### Multiple Images
 
@@ -369,7 +369,7 @@ This section describes methods to increase the accuracy of node placement.
       </td>
       <td>
         <figure>
-          <img src="/media/snt-three-pane-view-enabled-startup-prompt.png" title="SNT-Three-Pane-View-Enabled-Startup-Prompt.png" alt="SNT-Three-Pane-View-Enabled-Startup-Prompt.png">
+          <img src="/media/plugins/snt/snt-three-pane-view-enabled-startup-prompt.png" title="SNT-Three-Pane-View-Enabled-Startup-Prompt.png" alt="SNT-Three-Pane-View-Enabled-Startup-Prompt.png">
           <figcaption aria-hidden="true">
             SNT-Three-Pane-View-Enabled-Startup-Prompt.png
           </figcaption>
@@ -381,7 +381,7 @@ This section describes methods to increase the accuracy of node placement.
         <p>Find the approximate location of your start point by moving your mouse in the XY window, holding down {% include key key='Shift' %} to synchronize the view in the other panes. At this point, you should enable cursor <a href="/plugins/snt/manual#cursor-auto-snapping">auto-snapping</a> in the <a href="/plugins/snt/manual#main-tab">Main tab</a> using suitable parameters for your image.</p>
       </td>
       <td>
-        <p><img src="/media/snt-accurate-point-placement-walkthrough-updated-1.png" width="350"></p>
+        <p><img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-1.png" width="350"></p>
       </td>
     </tr>
     <tr class="odd">
@@ -390,7 +390,7 @@ This section describes methods to increase the accuracy of node placement.
         At this point, you should adjust a suitable <a href="/plugins/snt/manual#cursor-auto-snapping">snapping neighborhood</a> both in 2D (XY) and 3D (Z). Note that when Z-snapping is enabled, all views become synchronized,</p>
       </td>
       <td>
-        <p><img src="/media/snt-accurate-point-placement-walkthrough-updated-2.png" width="350"></p>
+        <p><img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-2.png" width="350"></p>
       </td>
     </tr>
     <tr class="even">
@@ -399,7 +399,7 @@ This section describes methods to increase the accuracy of node placement.
         <p>When you're happy with the point under the crosshairs, left-click to start the path:</p>
       </td>
       <td>
-        <p><img src="/media/snt-accurate-point-placement-walkthrough-updated-3.png" width="350"></p>
+        <p><img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-3.png" width="350"></p>
       </td>
     </tr>
     <tr class="odd">
@@ -407,7 +407,7 @@ This section describes methods to increase the accuracy of node placement.
         <p>Zoom out again with the {% include key key='-' %} key, and similarly zoom in on the next point you want to be on your path to place it precisely:</p>
       </td>
       <td>
-        <p><img src="/media/snt-accurate-point-placement-walkthrough-updated-4.png" width="350"></p>
+        <p><img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-4.png" width="350"></p>
       </td>
     </tr>
     <tr class="even">
@@ -415,7 +415,7 @@ This section describes methods to increase the accuracy of node placement.
         <p>The path along the neuron may not follow the center line perfectly:</p>
       </td>
       <td>
-        <p><img src="/media/snt-accurate-point-placement-walkthrough-updated-5.png" width="350"></p>
+        <p><img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-5.png" width="350"></p>
       </td>
     </tr>
     <tr class="odd">
@@ -423,7 +423,7 @@ This section describes methods to increase the accuracy of node placement.
         <p>... but you can later improve that with the {% include bc path='Refine/Fit|Fit Path...'%} option in the <a href="/plugins/snt/manual#path-manager">Path Manager</a>, which tries to align the path to the midline of the structure to sub-voxel accuracy:</p>
       </td>
       <td>
-        <p><img src="/media/snt-accurate-point-placement-walkthrough-updated-6.png" width="350"></p>
+        <p><img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-6.png" width="350"></p>
       </td>
     </tr>
     <tr class="even">

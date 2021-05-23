@@ -23,7 +23,7 @@ All the data and further information is available in the {% include github org='
 
 -   [Segmented ssTEM stack of neural tissue](http://www.ini.uzh.ch/~acardona/data.html), thanks to Albert Cardona.
 
-![](/media/trakem2-tree-datastructure.png) ![](/media/trakem2-display-s.jpg)
+![](/media/plugins/trakem2-tree-datastructure.png) ![](/media/trakem2-display-s.jpg)
 
 
 30 sections from a serial section Transmission Electron Microscopy (ssTEM) data set of the Drosophila first instar larva ventral nerve cord (VNC). The microcube measures 2 x 2 x 1.5 microns approx., with a resolution of 4x4x50 nm/pixel.
@@ -44,7 +44,7 @@ See other [manually segmented serial section TEM data sets.](http://www.incf.org
 
 <!-- -->
 
--   [Sample OME-TIFF data on openmicroscopy.org](http://www.openmicroscopy.org/site/support/file-formats/ome-tiff/ome-tiff-data), thanks to Josh Bembenek.<img src="/media/tubhiswt4d.png" title="fig:C. elegans embryo coexpressing tubulin histone GFP" width="140" alt="C. elegans embryo coexpressing tubulin histone GFP" />
+-   [Sample OME-TIFF data on openmicroscopy.org](http://www.openmicroscopy.org/site/support/file-formats/ome-tiff/ome-tiff-data), thanks to Josh Bembenek.<img src="/media/plugins/tubhiswt4d.png" title="fig:C. elegans embryo coexpressing tubulin histone GFP" width="140" alt="C. elegans embryo coexpressing tubulin histone GFP" />
 
 
 The dataset consists of tubulin histone GFP coexpressing *C. elegans* embryos. All image planes were collected at 512x512 resolution in 8-bit grayscale.
@@ -52,7 +52,7 @@ The dataset consists of tubulin histone GFP coexpressing *C. elegans* embryos. A
 -   [Migrating macrophages](https://fiji.sc/datasets/migrating-macrophages.tif.tar.bz2) in response to stimuli.
 
 
-4D data set, kindly provided by Dirk Sieger and [Francesca Peri](http://www.embl.de/research/units/dev_biology/peri/), EMBL.<img src="/media/migrating-macrophages.gif" title="fig:Macrophages in 4D" width="140" alt="Macrophages in 4D" />
+4D data set, kindly provided by Dirk Sieger and [Francesca Peri](http://www.embl.de/research/units/dev_biology/peri/), EMBL.<img src="/media/plugins/migrating-macrophages.gif" title="fig:Macrophages in 4D" width="140" alt="Macrophages in 4D" />
 
 **The challenge**: trace the macrophages in 4D, and measure their shape volumes, surfaces, positions and pixel value intensities.
 

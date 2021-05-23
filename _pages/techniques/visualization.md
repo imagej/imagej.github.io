@@ -47,7 +47,7 @@ Here's a list of recommended options to choose a LUT:
       <td>Quantitative display of positive values on a continuous scale</td>
       <td>
         <figure>
-          <img src="/media/m51-histogram-mplviridis.png" title="Histogram of the M51 Galaxy sample image with the mpl-viridis LUT applied" width="300" alt="Histogram of the M51 Galaxy sample image with the mpl-viridis LUT applied">
+          <img src="/media/techniques/m51-histogram-mplviridis.png" title="Histogram of the M51 Galaxy sample image with the mpl-viridis LUT applied" width="300" alt="Histogram of the M51 Galaxy sample image with the mpl-viridis LUT applied">
           <figcaption aria-hidden="true">
             Histogram of the M51 Galaxy sample image with the <em>mpl-viridis</em> LUT applied
           </figcaption>
@@ -66,7 +66,7 @@ Here's a list of recommended options to choose a LUT:
       <td>Assessment of over-/under-exposure in an image</td>
       <td>
         <figure>
-          <img src="/media/m51-histogram-hilo.png" title="Histogram of the M51 Galaxy sample image with the displayed range adjusted and the HiLo LUT applied" width="300" alt="Histogram of the M51 Galaxy sample image with the displayed range adjusted and the HiLo LUT applied">
+          <img src="/media/techniques/m51-histogram-hilo.png" title="Histogram of the M51 Galaxy sample image with the displayed range adjusted and the HiLo LUT applied" width="300" alt="Histogram of the M51 Galaxy sample image with the displayed range adjusted and the HiLo LUT applied">
           <figcaption aria-hidden="true">
             Histogram of the M51 Galaxy sample image with the displayed range adjusted and the <em>HiLo</em> LUT applied
           </figcaption>
@@ -84,7 +84,7 @@ Here's a list of recommended options to choose a LUT:
       <td></td>
       <td>
         <figure>
-          <img src="/media/randomized-image-histogram-phase.png" title="Histogram of a randomized calibrated 8-bit image with the phase LUT applied" width="300" alt="Histogram of a randomized calibrated 8-bit image with the phase LUT applied">
+          <img src="/media/techniques/randomized-image-histogram-phase.png" title="Histogram of a randomized calibrated 8-bit image with the phase LUT applied" width="300" alt="Histogram of a randomized calibrated 8-bit image with the phase LUT applied">
           <figcaption aria-hidden="true">
             Histogram of a randomized calibrated 8-bit image with the <em>phase</em> LUT applied
           </figcaption>
@@ -166,7 +166,7 @@ Here we summarize some of the 3D visualization plugins in ImageJ.
           </li>
         </ul>
       </td>
-      <td><img src="/media/volviewer.png" width="500"></td>
+      <td><img src="/media/techniques/volviewer.png" width="500"></td>
     </tr>
     <tr class="odd">
       <td>
@@ -183,7 +183,7 @@ Here we summarize some of the 3D visualization plugins in ImageJ.
           </li>
         </ul>
       </td>
-      <td><img src="/media/sciview-gameoflife.gif" width="500"></td>
+      <td><img src="/media/techniques/sciview-gameoflife.gif" width="500"></td>
     </tr>
   </tbody>
 </table>
@@ -257,7 +257,7 @@ Here we summarize some of the 'big data' visualization plugins in ImageJ.
           <li>Interactive viewing and annotation of the data</li>
         </ul>
       </td>
-      <td><img src="/media/spim-application.png" width="500"></td>
+      <td><img src="/media/techniques/spim-application.png" width="500"></td>
     </tr>
   </tbody>
 </table>

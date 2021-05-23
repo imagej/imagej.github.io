@@ -17,7 +17,7 @@ In ImgLib2, images are manipulated using *Accessors*. For pixel images, you can 
 
 The accessors provided by ImgLib2 typically implement `Cursor` or `RandomAccess`. `Cursor` and `RandomAccess` are aggregations of interfaces covering the above three points. A simplified UML diagram for the interface hierarchy is shown below. (The simplification is with respect to real-coordinate interfaces for continuous images that are left out for now.)
 
-{% include img src="/media/imglib2-accessors-simplified-integer.png" width="775" caption="Simplified UML for ImgLib2 accessor interfaces" %}
+{% include img src="/media/libs/imglib2/imglib2-accessors-simplified-integer.png" width="775" caption="Simplified UML for ImgLib2 accessor interfaces" %}
 
 ImgLib2 supports two basic access patterns:
 
@@ -431,7 +431,7 @@ ImgLib2 is not restricted to rasterized images and integer coordinates It also s
 
 The following image shows the UML diagram for the ImgLib2 accessor interface hierarchy. The real-coordinate counterparts that were missing in the simplified version [ above](/libs/imglib2/accessors#introduction) are highlighted.
 
-![UML for ImgLib2 accessor interfaces](/media/imglib2-accessors-real.png)
+![UML for ImgLib2 accessor interfaces](/media/libs/imglib2/imglib2-accessors-real.png)
 
 Real equivalents of the `Positionable` and `Localizable` interfaces have been added by which real-valued coordinates can be accessed.
 
@@ -516,7 +516,7 @@ Our super class [RealPoint](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/i
 
 Finally, we provide the `copy()` and `copyRealRandomAccess()` methods to complete the `RealRandomAccess` interface implementation. A copied accessor is supposed to refer to the same position and value, therefore we `setPosition` in line *051*.
 
-![UML for abstract RealRandomAccess class hierarchy](/media/imglib2-abstract-accessors-real-new-vertical.png)
+![UML for abstract RealRandomAccess class hierarchy](/media/libs/imglib2/imglib2-abstract-accessors-real-new-vertical.png)
 
 Now let's use the `MandelbrotRealRandomAccess` to render a pixel image:
 
@@ -575,14 +575,14 @@ Finally, we get a reference to the current pixel, and set it to the value comput
 
 `cursor.get()` gives the `UnsignedByteType` reference to the value under the cursor. `mb.get()` gives the `UnsignedByteType` reference to the value computed by the `MandelbrotRealRandomAccess`. Then we `set()` the value of the former to the value of the latter.
 
-When you run the code you will see this: <img src="/media/mandelbrot-1.png" title="fig:Mandelbrot fractal" width="300" alt="Mandelbrot fractal" />
+When you run the code you will see this: <img src="/media/libs/imglib2/mandelbrot-1.png" title="fig:Mandelbrot fractal" width="300" alt="Mandelbrot fractal" />
 
 Because we have a `RealRandomAccess` you can zoom in indefinitely (until you hit the `double` precision limit). If you like, you can play around with the scale and offset values. Here is another example obtained with
 
     final double scale = 0.000125;
     final double[] offset = new double[] { -1.3875, 0.045 };
 
-{% include img src="/media/mandelbrot-2.png" width="300" caption="Mandelbrot fractal" %}
+{% include img src="/media/libs/imglib2/mandelbrot-2.png" width="300" caption="Mandelbrot fractal" %}
 
 ### Notes
 

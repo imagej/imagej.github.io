@@ -89,7 +89,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
       <td>Active</td>
     </tr>
     <tr class="even">
-      <td><img src="/media/astroimagej.png" width="64"/></td>
+      <td><img src="/media/about/astroimagej.png" width="64"/></td>
       <td><a href="http://www.astro.louisville.edu/software/astroimagej/">AstroImageJ</a></td>
       <td><a href="http://www.astro.louisville.edu/john_kielkopf/">John Kielkopf</a></td>
       <td>AstroImageJ is ImageJ with astronomy plugins and macros installed.</td>
@@ -180,7 +180,7 @@ The first imaging program that {% include person id='rasband' %} developed, star
 
 Here is a timeline of software development related to ImageJ:
 
-![](/media/timeline-history-of-imagej.png)
+![](/media/about/timeline-history-of-imagej.png)
 
 ## Publications
 

@@ -38,7 +38,7 @@ This plugin operates on a point selection consisting of multiple points.
 
 The plugin shows this dialog when it is called:
 
-![](/media/delaunay-dialog.png)
+![](/media/plugins/delaunay-dialog.png)
 
 Options include:
 

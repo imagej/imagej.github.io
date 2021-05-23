@@ -17,11 +17,11 @@ categories: [Plugins,Segmentation,Mathematical morphology,Citable]
 {% include github org='ijpb' repo='MorphoLibJ' %}
 {% endcapture %}
 {% include info-box name='Morphological Segmentation' software='IJPB-plugins' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](/plugins/morpholibj) v1.4.1)' status='stable, active' category='[Segmentation](/plugin-index#segmentation), [Mathematical morphology](/plugin-index#mathematical-morphology)' %}{\| \|<span>  
-</span>style="vertical-align:top" \|{% include thumbnail src='/media/morphological-segmentation-animation-blobs.gif' title='Visual description of the different steps of the Morphological Segmentation plugin.'%} \|}
+</span>style="vertical-align:top" \|{% include thumbnail src='/media/plugins/morphological-segmentation-animation-blobs.gif' title='Visual description of the different steps of the Morphological Segmentation plugin.'%} \|}
 
 ## Introduction
 
-<img src="/media/morphological-segmentation-front.png" width="400"/>Morphological Segmentation is an ImageJ/Fiji plugin that combines morphological operations, such as extended minima and morphological gradient, with watershed flooding algorithms to segment grayscale images of any type (8, 16 and 32-bit) in 2D and 3D.
+<img src="/media/plugins/morphological-segmentation-front.png" width="400"/>Morphological Segmentation is an ImageJ/Fiji plugin that combines morphological operations, such as extended minima and morphological gradient, with watershed flooding algorithms to segment grayscale images of any type (8, 16 and 32-bit) in 2D and 3D.
 
 ## Usage
 
@@ -33,7 +33,7 @@ The user can pan, zoom in and out, or scroll between slices (if the input image 
 
 ### Input Image panel
 
-{% include thumbnail src='/media/morphological-segmentation-input-image-panel.png' title='Input Image panel'%}First, you need to indicate the nature of the input image to process. This is a **key parameter** since the watershed algorithm is expecting an image where the boundaries of objects present high intensity values (usually as a result of a gradient or edge detection filtering).
+{% include thumbnail src='/media/plugins/morphological-segmentation-input-image-panel.png' title='Input Image panel'%}First, you need to indicate the nature of the input image to process. This is a **key parameter** since the watershed algorithm is expecting an image where the boundaries of objects present high intensity values (usually as a result of a gradient or edge detection filtering).
 
 You should select:
 
@@ -44,7 +44,7 @@ When selecting "Object Image", an additional set of options is enabled to choose
 
 ### Watershed Segmentation panel
 
-<img src="/media/morphological-segmentation-watershed-segmentation-panel.png" title="fig:Watershed Segmentation panel" width="250" alt="Watershed Segmentation panel" />This panel is reserved to the parameters involved in the segmentation pipeline. By default, only the tolerance can be changed. Clicking on "Advanced options" enables the rest of options.
+<img src="/media/plugins/morphological-segmentation-watershed-segmentation-panel.png" title="fig:Watershed Segmentation panel" width="250" alt="Watershed Segmentation panel" />This panel is reserved to the parameters involved in the segmentation pipeline. By default, only the tolerance can be changed. Clicking on "Advanced options" enables the rest of options.
 
 -   **Tolerance**: dynamic of intensity for the search of regional minima (in the extended-minima transform, which is the regional minima of the H-minima transform, value of h). Increasing the tolerance value reduces the number of segments in the final result, while decreasing its value produces more object splits.
 
@@ -60,7 +60,7 @@ If your segmentation is taking too long or you want **to stop it** for any reaso
 
 ### Results panel
 
-<img src="/media/morphological-segmentation-results-panel.png" title="fig:Results panel" width="250" alt="Results panel" />Only enabled after running the segmentation.
+<img src="/media/plugins/morphological-segmentation-results-panel.png" title="fig:Results panel" width="250" alt="Results panel" />Only enabled after running the segmentation.
 
 -   **Display**: list of options to display the segmentation results.
     -   **Overlaid basins**: colored objects overlaying the input image (with or without dams depending on the selected option in the Watershed Segmentation panel).
@@ -70,11 +70,11 @@ If your segmentation is taking too long or you want **to stop it** for any reaso
 -   **Show result overlay**: toggle result overlay.
 -   **Create image button**: create a new image with the results displayed in the canvas.
 
-{% include thumbnail src='/media/morphological-segmentation-result-examples.png' title='Examples of the 4 different display options'%}
+{% include thumbnail src='/media/plugins/morphological-segmentation-result-examples.png' title='Examples of the 4 different display options'%}
 
 ### Post-processing panel
 
-<img src="/media/morphological-segmentation-post-processing-panel.png" title="fig:Post-processing panel" width="250" alt="Post-processing panel" />Similarly to the Results panel, this panel only gets enabled after running the segmentation pipeline.
+<img src="/media/plugins/morphological-segmentation-post-processing-panel.png" title="fig:Post-processing panel" width="250" alt="Post-processing panel" />Similarly to the Results panel, this panel only gets enabled after running the segmentation pipeline.
 
 -   **Merge labels**: merge together labels selected by either the **"freehand" selection too**l (on a single slice) **or the point tool** (on single or multiple slices). The zero-value label belongs to the watershed dams, therefore it will ignored in case of being selected. The first selected label value will be assigned to the rest of selected labels, which will share its color.
 
@@ -201,7 +201,7 @@ You should now find the plugin under the sub-menu {% include bc path='Plugins | 
   <tbody>
     <tr class="odd">
       <td>
-        <p>style="vertical-align:top" |{% include thumbnail src='/media/arabidopsis-embryo-3d-animation.gif' title='3d reconstruction of an *Arabidopsis thaliana* embryo using the Morphological Segmentation plugin. Image courtesy of Jean-Christophe Palauqui (INRA-Versailles)'%}</p>
+        <p>style="vertical-align:top" |{% include thumbnail src='/media/plugins/arabidopsis-embryo-3d-animation.gif' title='3d reconstruction of an *Arabidopsis thaliana* embryo using the Morphological Segmentation plugin. Image courtesy of Jean-Christophe Palauqui (INRA-Versailles)'%}</p>
       </td>
     </tr>
   </tbody>

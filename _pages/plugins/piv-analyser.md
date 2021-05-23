@@ -82,7 +82,7 @@ The plugin is part of the Fiji distribution. You can find it in the {% include b
 
 ## Usage
 
-![](/media/piv-analyser-window.png)
+![](/media/plugins/piv-analyser-window.png)
 
 Options are the following:
 

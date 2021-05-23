@@ -32,7 +32,7 @@ SNT's documentation is extensive. Please use the navigation bar on too of the pa
 -   **[Analysis](/plugins/snt/analysis)** Overview of all analysis commands, accessible in either the tracing interface or [Reconstruction Viewer](/plugins/snt/reconstruction-viewer)
 -   **[Scripting](/plugins/snt/scripting)** Details on how to use SNT as a scripting library
 
-{% include thumbnail src='/media/simpleneuritetracer2.png' title='SNT Overview. A key feature of SNT is that *every* aspect of the program can be [scripted](/plugins/snt/scripting) in any of Fiji\'s supported languages, or from Python through [pyimagej](https://github.com/imagej/pyimagej).'%}
+{% include thumbnail src='/media/plugins/snt/simpleneuritetracer2.png' title='SNT Overview. A key feature of SNT is that *every* aspect of the program can be [scripted](/plugins/snt/scripting) in any of Fiji\'s supported languages, or from Python through [pyimagej](https://github.com/imagej/pyimagej).'%}
 
 ## Features
 

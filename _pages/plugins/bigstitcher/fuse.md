@@ -19,7 +19,7 @@ The currently selected fusion mode is highlighted in red, clicking on another on
 
 Finally, selecting a bounding box will open another sub-menu in which you can select the downsampling level to fuse. Click the desired level to fuse the image(s) and display the result in a new ImageJ-window.
 
-<img src="/media/bigstitcher-fusion-quick.png" width="700"/>
+<img src="/media/plugins/bigstitcher/bigstitcher-fusion-quick.png" width="700"/>
 
 {% include notice icon="info" content='The quick fusion will fuse **all selected images**, including multiple channels/illuminations/time points, into one final image. To prevent e.g. a fusion of multiple channels, make sure to select only the images you need, ungrouping the views in the main window, if necessary.' %}
 
@@ -29,7 +29,7 @@ For advanced fusion options, select the desired views to be fused in the main wi
 
 This will bring up a new dialog showing the fusion options:
 
-![](/media/bigstitcher-fusion-1.png)
+![](/media/plugins/bigstitcher/bigstitcher-fusion-1.png)
 
 -   **Bounding Box:** Here, you can select which sub-volume ([Bounding Box](/plugins/bigstitcher/boundingbox)) of the dataset to fuse. The options **All Views** and **Currently Selected Views** are always available, even if you did not manually specify a bounding box.
 

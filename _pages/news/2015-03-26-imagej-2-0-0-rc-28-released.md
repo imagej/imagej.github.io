@@ -6,7 +6,7 @@ categories: [ImageJ2,News]
 
 Today, the [ImageJ team](/about/contributors) is pleased to announce a new public release candidate for [ImageJ2](/software/imagej2): version 2.0.0-rc-28.
 
-![ 450px \| right \| The ImageJ Console window](/media/no-more-dev-null.png)
+![ 450px \| right \| The ImageJ Console window](/media/news/no-more-dev-null.png)
 
 ## What's new
 

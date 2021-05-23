@@ -11,12 +11,12 @@ This plugin takes in an image of muscle fibers, outlines and numbers all of the
 fibers, and outputs a table of each fiber's area as well as an RGB Color image
 of the numbered fiber outlines on a black background.
 
-<img src="/media/fibers.png" title="fig:Input Image" width="300" alt="Input Image" /> <img src="/media/fiberoutlines.png" title="fig:Output Image" width="300" alt="Output Image" />
+<img src="/media/fibers.png" title="fig:Input Image" width="300" alt="Input Image" /> <img src="/media/plugins/fiberoutlines.png" title="fig:Output Image" width="300" alt="Output Image" />
 
 ## Installation
 
 1. Download
-   [Cross-sectional-analysis.zip](/media/cross-sectional-analysis.zip), unzip
+   [Cross-sectional-analysis.zip](/media/plugins/cross-sectional-analysis.zip), unzip
    it and locate `Cross_Sectional_Analyzer.jar`.
 
 2. Open the package contents of ImageJ, and navigate to `ImageJ/plugins/Filters`.

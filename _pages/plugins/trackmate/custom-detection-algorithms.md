@@ -538,7 +538,7 @@ Ouf! That was a lot of information and a lot of coding for a single piece of fun
 
 Here is what our dummy example looks. To maximize your user experience, I let it run on a 512 x 512 x 200 frames image, and tracked them.
 
-![](/media/trackmatecustomdetector-01.gif)
+![](/media/plugins/trackmate/trackmatecustomdetector-01.gif)
 
 {% include person id='tinevez' %} ([talk](User_talk_JeanYvesTinevez)) 08:28, 3 April 2014 (CDT)
 

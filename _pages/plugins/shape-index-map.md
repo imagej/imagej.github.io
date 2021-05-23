@@ -26,10 +26,10 @@ The shape index is calculated from the principal curvatures of the Hessian, whic
 
 ## Example
 
-![](/media/shape-index-orig.jpg)
+![](/media/plugins/shape-index-orig.jpg)
 
 With radius 2, this results in the following shape index map (bright spots correspond to caps, dark to cups):
 
-![](/media/shape-index-map.jpg)
+![](/media/plugins/shape-index-map.jpg)
 
 

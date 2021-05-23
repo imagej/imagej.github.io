@@ -25,7 +25,7 @@ A typical dataset consists of a single two-dimensional (2d) image of the cells w
 
 The welcome panel will open.
 
-<img src="/media/welcomeetrack.png" width="800"/>
+<img src="/media/plugins/welcomeetrack.png" width="800"/>
 
 #### Choose Mode
 

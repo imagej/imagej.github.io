@@ -110,15 +110,15 @@ PlotData=
 
 
 {% capture content%}
-/media/hackdd16-beautiful-dresden.jpg \| Beautiful Dresden
-/media/hackdd16-beer-and-code.jpg \| Beer and code
-/media/hackdd16-better-software.jpg \| Better software, better research!
-/media/hackdd16-day1.jpg \| First day
-/media/hackdd16-hackers.jpg \| Hackers at work
-/media/hackdd16-hacking.jpg \| Hacking
-/media/hackdd16-mpicbg-xmas-party.jpg \| MPI-CBG Christmas party
-/media/hackdd16-waldschlosschen.jpg \| Waldschloßchen
-/media/hackdd16-xmas.jpg \| Merry Christmas!
+/media/news/hackdd16-beautiful-dresden.jpg \| Beautiful Dresden
+/media/news/hackdd16-beer-and-code.jpg \| Beer and code
+/media/news/hackdd16-better-software.jpg \| Better software, better research!
+/media/news/hackdd16-day1.jpg \| First day
+/media/news/hackdd16-hackers.jpg \| Hackers at work
+/media/news/hackdd16-hacking.jpg \| Hacking
+/media/news/hackdd16-mpicbg-xmas-party.jpg \| MPI-CBG Christmas party
+/media/news/hackdd16-waldschlosschen.jpg \| Waldschloßchen
+/media/news/hackdd16-xmas.jpg \| Merry Christmas!
 {% endcapture %}
 {% include gallery content=content%}
 

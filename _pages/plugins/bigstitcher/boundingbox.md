@@ -13,23 +13,23 @@ In the first dialog, you can specify how to define you bounding box in the **Bou
 
 The dialog will also list the currently **Existing Bounding Boxes**
 
-<img src="/media/bigstitcher-bbox-main.png" width="600"/>
+<img src="/media/plugins/bigstitcher/bigstitcher-bbox-main.png" width="600"/>
 
 ### Modify pre-defined Bounding Box
 
 First, you will be asked for the existing bounding box that you want to modify:
 
-<img src="/media/bigstitcher-bbox-existing.png" width="400"/>
+<img src="/media/plugins/bigstitcher/bigstitcher-bbox-existing.png" width="400"/>
 
 In the next dialog, you can modify the bounding box by adjusting the sliders for the minima and maxima. The size and memory/disk space requirements of a fusion will also be previewed. Clicking **OK** will generate the new, modified Mounding Box.
 
-<img src="/media/bigstitcher-bbox-modify.png" width="600"/>
+<img src="/media/plugins/bigstitcher/bigstitcher-bbox-modify.png" width="600"/>
 
 ### Define using the BigDataViewer interactively
 
 This will open a new window allowing you to modify your bounding box by adjusting the sliders for the minima and maxima. If the BigDataViewer is open, the bounding box will be previewed there.
 
-<img src="/media/bigstitcher-bbox-interactive.png" width="700"/>
+<img src="/media/plugins/bigstitcher/bigstitcher-bbox-interactive.png" width="700"/>
 
 After clicking **OK**, another dialog will show a preview of the bounding box size and expected memory/disk space requirements for a fused image of the contents of the bounding box. Click **OK** again to complete the definition.
 
@@ -50,7 +50,7 @@ You will be asked for the following parameters:
 -   **Downsampling**: by how much to downsample the fused image. Since fusion can be a time and memory-consuming process, we recommend to use a large ($$&gt;4$$) downsampling factor, especially if your dataset is big.
 -   *' Display image used for segmentation*': selecting this will show the fused and the filtered images.
 
-<img src="/media/bigstitcher-bbox-auto.png" width="600"/>
+<img src="/media/plugins/bigstitcher/bigstitcher-bbox-auto.png" width="600"/>
 
 After clicking **OK**, the bounding box will be estimated and another dialog will show a preview of the bounding box size and expected memory/disk space requirements for a fused image of the contents of the bounding box. Click **OK** again to complete the definition.
 

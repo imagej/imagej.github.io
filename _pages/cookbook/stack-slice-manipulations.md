@@ -60,7 +60,7 @@ Stack Sorter: {% include bc path="Image|Stacks|Tools|Stack Sorter" %}.
 -   Control the position of individual slices or groups of slices.
 -   Advanced "Insert" functionality.
 
-![](/media/stack-slice-manipulations1.png)
+![](/media/cookbook/stack-slice-manipulations1.png)
 
 ## Stack dimension manipulations
 
@@ -70,7 +70,7 @@ E. H. W. Meijering, W. J. Niessen, M. A. Viergever, [Quantitative Evaluation of 
 
 An alternative method for cropping a stack is found with {% include bc path="Plugins|Stacks|Crop (3D)" %} After selecting 'OK', you will be presented with panels of the ZY and XZ planes, as well as the original stack, where you can use the mouse to crop the stack in any of the three directions.
 
-![](/media/3dcrop.png)
+![](/media/cookbook/3dcrop.png)
 
 Window for the Crop (3D) plugin.
 
@@ -82,11 +82,11 @@ To use this plugin, select an ROI which will become the final frame, but do not 
 
 Image with selected ROI
 
-<figure><img src="/media/zoomify-start.png" title="zoomify_start.png" width="359" height="270" alt="zoomify_start.png" /><figcaption aria-hidden="true">zoomify_start.png</figcaption></figure>
+<figure><img src="/media/cookbook/zoomify-start.png" title="zoomify_start.png" width="359" height="270" alt="zoomify_start.png" /><figcaption aria-hidden="true">zoomify_start.png</figcaption></figure>
 
 Series generated with zoomify
 
-<figure><img src="/media/zoomify-montage.png" title="zoomify_montage.png" width="533" height="111" alt="zoomify_montage.png" /><figcaption aria-hidden="true">zoomify_montage.png</figcaption></figure>
+<figure><img src="/media/cookbook/zoomify-montage.png" title="zoomify_montage.png" width="533" height="111" alt="zoomify_montage.png" /><figcaption aria-hidden="true">zoomify_montage.png</figcaption></figure>
 
 ## Align slices in stack
 
@@ -102,6 +102,6 @@ Time series before alignment
 
 After
 
-![](/media/after-alignment.png)
+![](/media/cookbook/after-alignment.png)
 
  

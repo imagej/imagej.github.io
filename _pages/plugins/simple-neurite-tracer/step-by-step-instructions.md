@@ -37,11 +37,11 @@ If you completed that path it will be shown in magenta: ![](/media/snt-cropped-c
 
 ## Branching: Start a path on an existing path
 
-Before you pick a start point for your first path, the tracer will look like this: (We've zoomed in on the region of interest) ![](/media/snt-sb-before-selecting.png)
+Before you pick a start point for your first path, the tracer will look like this: (We've zoomed in on the region of interest) ![](/media/plugins/simple-neurite-tracer/snt-sb-before-selecting.png)
 
 ### 1. Select the path to branch off
 
-To select the path you want to branch off from, you can either select it in the path list, or press {% include key key='G' %} while your mouse pointer is over the path. When the path is first selected, it will be shown in the default green color, as below: ![](/media/snt-sb-before-starting-path.png)
+To select the path you want to branch off from, you can either select it in the path list, or press {% include key key='G' %} while your mouse pointer is over the path. When the path is first selected, it will be shown in the default green color, as below: ![](/media/plugins/simple-neurite-tracer/snt-sb-before-starting-path.png)
 
 ### 2. Click while holding the branch modifier to start the branch
 

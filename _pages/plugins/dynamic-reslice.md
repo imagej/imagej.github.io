@@ -94,7 +94,7 @@ IJ.showStatus('Done')
 
 ## Example
 
-![](/media/dynamicresliceroi.gif) ![](/media/dynamicreslice.gif)
+![](/media/plugins/dynamicresliceroi.gif) ![](/media/plugins/dynamicreslice.gif)
 
 ## Version history
 

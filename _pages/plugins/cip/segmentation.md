@@ -27,7 +27,7 @@ this function creates a binary image from an input graylevel image
     **outputImage**: the processed image.     **threshold**: the threshold value calculated for the image and method provided as input.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.threshold( img1 , 500 )` <img src="/media/cip-threshold.png" title="fig:CIP_threshold.PNG" width="400" alt="CIP_threshold.PNG" />  
+    `img2 = cip.threshold( img1 , 500 )` <img src="/media/plugins/cip/cip-threshold.png" title="fig:CIP_threshold.PNG" width="400" alt="CIP_threshold.PNG" />  
 <span style="font-size:110%">**Implementation**</span>  
 the threshold method wraps ops threshold methods
 
@@ -46,7 +46,7 @@ This function threshold an image and label its connected component (i.e. it sets
     **outputImage**: a label map (an image with background 0 and where each identified region has a distinct integer value).
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.label( img1 )` <img src="/media/cip-label.png" title="fig:CIP_label.PNG" width="400" alt="CIP_label.PNG" />  
+    `img2 = cip.label( img1 )` <img src="/media/plugins/cip/cip-label.png" title="fig:CIP_label.PNG" width="400" alt="CIP_label.PNG" />  
 <span style="font-size:110%">**Implementation**</span>  
 The labeling is performed our custom implementation. It uses a union find approach relying pixel runs to speed up to labeling process. The source code is available on [github](https://github.com/benoalo/ImgAlgo/blob/master/src/main/java/invizio/imgalgo/label/RleCCL.java). The principle of the algorithm was described in \[1\].
 
@@ -77,7 +77,7 @@ For the multiscale maxima method it is possible to use a parameter defining the 
     **output** : a string in {'image', 'measure', 'both'}, the default value is 'image'. If the parameter value is 'image' the function return a labelMap image. If the value is 'measure' the function a [measure table](/plugins/cip/utilities#measure) indicating object position and scale. The idea is to give more flexibility in the visualisation of the detections. Eventually returning sphere regions with appropriate radii could be more convenient as they could be visualized right away with cip.show  
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.maxima( img1 , 'hmin', 200 )` <img src="/media/cip-maxima.png" title="fig:CIP_maxima.PNG" width="400" alt="CIP_maxima.PNG" /> the illustration above show the contour of the detected region on top of the original data
+    `img2 = cip.maxima( img1 , 'hmin', 200 )` <img src="/media/plugins/cip/cip-maxima.png" title="fig:CIP_maxima.PNG" width="400" alt="CIP_maxima.PNG" /> the illustration above show the contour of the detected region on top of the original data
 
 <span style="font-size:110%">**Implementation**</span>  
 Each maxima detection method rely on a custom implementation
@@ -114,7 +114,7 @@ Watershed algorithm partitions an image in regions and outputs a label image of 
     **outputImage** : a label image of the detected maxima  
 <span style="font-size:110%">**Example**</span>  
 `img2 = cip.watershed( img1 , 'threshold', 500, 'hmin', 300 )`  
-In that example the starting point of the watershed are the extended maxima of the input image. <img src="/media/cip-watershed.png" title="fig:CIP_watershed.PNG" width="400" alt="CIP_watershed.PNG" />  
+In that example the starting point of the watershed are the extended maxima of the input image. <img src="/media/plugins/cip/cip-watershed.png" title="fig:CIP_watershed.PNG" width="400" alt="CIP_watershed.PNG" />  
 <span style="font-size:110%">**Implementation**</span>  
 Both seeded watershed and H-watershed are implemented based on the image foresting transform approach \[1\]. The H-watershed adds the construction of a hierarchical tree of segment that can be used in further applications. Both implementations can be found [here](https://github.com/benoalo/ImgAlgo/blob/master/src/main/java/invizio/imgalgo/label/SeededWatershed.java) and [there](https://github.com/benoalo/ImgAlgo/blob/master/src/main/java/invizio/imgalgo/label/HWatershed.java)
 

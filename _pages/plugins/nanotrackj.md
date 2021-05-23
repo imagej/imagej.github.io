@@ -27,11 +27,11 @@ If you are using NanoTrackJ in a scientific publication, please cite:
 
 The *maxima method* utilizes the [{% include bc path="Process|Find Maxima" %}](/ij/docs/menus/process.html#find-maxima) method of ImageJ. A "Spot Assistant" helps the user to select an appropriate mean filter size and tolerance value.
 
-![](/media/spotassistant.png)
+![](/media/plugins/spotassistant.png)
 
 This is the recommended method and it is also usable with RGB image series. The found maxima are used as centroids to track the particles.
 
-![](/media/spots.png) ![](/media/spotsmax.png)
+![](/media/spots.png) ![](/media/plugins/spotsmax.png)
 
 The *maxima method & gaussian fit* also utilizes the [{% include bc path="Process|Find Maxima" %}](/ij/docs/menus/process.html#find-maxima) method of ImageJ but do an gaussian fit after that to improve the estimation qualtity. Theoretically it achieves sub-pixel accuracy. However, diffraction patterns often suffers from saturation and sometimes they do not even have a gaussian shape so that sub-pixel accuracy is not achievable.
 
@@ -43,7 +43,7 @@ There are several recommendations in the literature. Vestergaard \[2\] states th
 
 The *covariance estimator* is a good alternative to the regression estimator. It is an unbiased estimator and shows a fast convergence to Cramer-Rao lower bound \[2\]. It need no further parameters and accounting for localization errors.
 
-**Search-Radius:** One particle in a frame is matched to another particle in a successive frame only if the distance between their centroids is lower than this radius. It is recommended that the software automatically calculate the radius. This is done by using the expected diffusion coefficient D of a particle with size specified in "Min. Exp. Particle Size". The search radius estimated by ![](/media/searchradius.gif) ensures that 99% of the distances a particle moved between two frames is not greater than the search radius.\[4\]
+**Search-Radius:** One particle in a frame is matched to another particle in a successive frame only if the distance between their centroids is lower than this radius. It is recommended that the software automatically calculate the radius. This is done by using the expected diffusion coefficient D of a particle with size specified in "Min. Exp. Particle Size". The search radius estimated by ![](/media/plugins/searchradius.gif) ensures that 99% of the distances a particle moved between two frames is not greater than the search radius.\[4\]
 
 **Min. Exp. Particle Size:** The minimal expected particle size in the suspension
 
@@ -65,7 +65,7 @@ The *covariance estimator* is a good alternative to the regression estimator. It
 
 **Draw Tracks:** If this checkbox is activated all tracks are drawn on an ImageJ overlay. Yellow tracks have reached the minimum number of steps. Furthermore the size estimate followed by the track id is shown.
 
-![](/media/drawtracks.png)
+![](/media/plugins/drawtracks.png)
 
 **Size Distribution Estimation by Walker's Method:** If this checkbox is activated the size distribution is estimated by a maximum likelihood method described in \[3\]. The method exploits the fact that the mean squared displacements are gamma distributed. Please note, that the mean squared displacements used for this algorithm are measured indirectly. First, the diffusion coefficient D is estimated by the method specified in "Diffusion-Coefficient-Estimator". Multiplying this diffusion coefficient by 4 and the framerate results in the corresponding mean squared displacement. If Walker's Method is used, the result will only be a size distribution (no diffusion coefficient distribution)
 
@@ -73,7 +73,7 @@ The *covariance estimator* is a good alternative to the regression estimator. It
 
 If the plugin finishes analyzing it opens histogram plots for the size distribution and the diffusion coefficient distribution. Please note that for calculating the distribution the track length is used as weighting factor. Furthermore the plugins open result tables for the histogram data (ideal for plotting with other software). The following plot shows a size distribution (using walker's method & covariance estimator) estimated from a suspension with 100nm polystyrene beads (in water, 22C). The video used was captured with a nanosight LM10 microscope. The reported modal value is 98nm.
 
-![](/media/size100nm-walker.png)
+![](/media/plugins/size100nm-walker.png)
 
 ## Simulation
 

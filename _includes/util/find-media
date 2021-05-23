@@ -1,7 +1,10 @@
-{%- assign path = include.path -%}
-{%- assign default-prefixes = "|/media/" | split: "|" -%}
-{%- assign prefixes = include.prefixes | default: include.prefix | default: default-prefixes -%}
+{%- capture dir -%} {%- include util/dir path=page.url -%} {%- endcapture -%}
+{%- assign media-dir = "/media" | append: dir -%}
+{%- assign default-prefixes = "|" | append: media-dir | append: "|/media/" | split: "|" -%}
 {%- assign default-suffixes = "|.svg|.png|.gif|.jpg" | split: "|" -%}
+
+{%- assign path = include.path -%}
+{%- assign prefixes = include.prefixes | default: include.prefix | default: default-prefixes -%}
 {%- assign suffixes = include.suffixes | default: include.suffix | default: default-suffixes -%}
 
 {%- assign match = nil -%}

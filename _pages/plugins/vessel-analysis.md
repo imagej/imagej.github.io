@@ -11,7 +11,7 @@ Nivetha Govindaraju, {% include person id='mfarna' %}
 {% capture maintainer%}
 {% include person id='mfarna' %} (<mai.elfarnawany@gmail.com>)
 {% endcapture %}
-{% include info-box name='Vessel Analysis' software='Fiji' author=author maintainer=maintainer filename=' [Vessel Analysis.zip](/media/vessel-analysis.zip)' released='June 14<sup>th</sup>, 2016' latest-version='1.1' status='stable' category='[Plugins](/plugin-index), [Analysis](/plugin-index#analysis)' %}
+{% include info-box name='Vessel Analysis' software='Fiji' author=author maintainer=maintainer filename=' [Vessel Analysis.zip](/media/plugins/vessel-analysis.zip)' released='June 14<sup>th</sup>, 2016' latest-version='1.1' status='stable' category='[Plugins](/plugin-index), [Analysis](/plugin-index#analysis)' %}
 
 ## **Description:**
 
@@ -23,7 +23,7 @@ as well as making diameter measurements for multiple vessels in RGB images of va
 
 Vessel Analysis can be added to Fiji (version 1.47g or higher required).
 
-Download the [Vessel Analysis.zip](/media/vessel-analysis.zip) package and save an unzipped copy in Fiji's Plugins folder. Open a new session in Fiji and you should now see Vessel Analysis listed near the bottom of the Plugins drop down menu.
+Download the [Vessel Analysis.zip](/media/plugins/vessel-analysis.zip) package and save an unzipped copy in Fiji's Plugins folder. Open a new session in Fiji and you should now see Vessel Analysis listed near the bottom of the Plugins drop down menu.
 
 Before using the plugin, make sure your version of Fiji comes pre-downloaded with the Auto Threshold and Geometry to Distance plugins. They should be listed under:
 * {% include bc path="Image | Adjust | Auto Threshold" %}
@@ -49,7 +49,7 @@ As the image is processed, new images will be generated and automatically saved 
 
 You will now be prompted to perform either vascular density or diameter measurements. At the end of each individual program, you can choose to analyze the other metric as well.
 
-![](/media/vessel-analysis-rgb.png) ![](/media/vessel-analysis-binary.png) ![](/media/vessel-analysis-diameterm.png)
+![](/media/plugins/vessel-analysis-rgb.png) ![](/media/plugins/vessel-analysis-binary.png) ![](/media/plugins/vessel-analysis-diameterm.png)
 
 ## **Recommended Citation:**
 

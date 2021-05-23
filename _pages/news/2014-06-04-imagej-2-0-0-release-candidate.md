@@ -16,7 +16,7 @@ ImageJ2 provides a wealth of new features and capabilities:
 
 -   The ImageJ Updater makes it simple to keep your ImageJ up to date, and to add new plugins by enabling additional [Update Sites](/update-sites).
 -   The ImageJ Updater also makes it simple to publish your own tools based on ImageJ, via [Personal Update Sites](/update-sites/setup#add-your-personal-update-site).
--   New and enhanced file format support via the SCIFIO library. There is no need to call a special SCIFIO plugin; it works with commands like {% include bc path="File | Open" %} automatically. Additional import options are available via the {% include bc path="File | Import | Image..." %} command. See the [SCIFIO](/libs/scifio) page of the ImageJ wiki for further details.<img src="/media/imagej2-options.png" title="fig:Imagej2-options.png" width="270" alt="Imagej2-options.png" />
+-   New and enhanced file format support via the SCIFIO library. There is no need to call a special SCIFIO plugin; it works with commands like {% include bc path="File | Open" %} automatically. Additional import options are available via the {% include bc path="File | Import | Image..." %} command. See the [SCIFIO](/libs/scifio) page of the ImageJ wiki for further details.<img src="/media/news/imagej2-options.png" title="fig:Imagej2-options.png" width="270" alt="Imagej2-options.png" />
 -   New commands:
     -   {% include bc path="Plugins | Debug | Dump Stack" %} for debugging when things {% include wikipedia title='Hang (computing)' text='hang'%}.
     -   {% include bc path="Plugins | Debug | System Information" %} for reporting on versions of installed plugins and libraries.
@@ -51,7 +51,7 @@ ImageJ2 provides a wealth of new features and capabilities:
 -   Easy yet powerful plugin concept—stay tuned for a dedicated blog post soon!
 -   Use ImageJ2's N-dimensional [ImgLib2](/libs/imglib2)-based data structures (still in beta).
 
-<figure><img src="/media/parameterized-macro.png" title="Parameterized-macro.png" width="439" alt="Parameterized-macro.png" /><figcaption aria-hidden="true">Parameterized-macro.png</figcaption></figure>
+<figure><img src="/media/news/parameterized-macro.png" title="Parameterized-macro.png" width="439" alt="Parameterized-macro.png" /><figcaption aria-hidden="true">Parameterized-macro.png</figcaption></figure>
 
 ## Enhanced scripting
 

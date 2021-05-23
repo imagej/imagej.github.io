@@ -16,7 +16,7 @@ A **paper validating Adiposoft** was published by [Journal of Lipid Research](ht
 
 The accurate estimation of the number and size of adipocytes provides relevant information about the growth kinetics and the physiological status of a given tissue or organ. Adiposoft is an automated, open source software for the analysis of white adipose tissue cellularity on histological, hematoxylin and eosin (H&E) stained sections.
 
-<img src="/media/datasetim.png" width="500"/>
+<img src="/media/software/datasetim.png" width="500"/>
 
 ## Download and Installation
 

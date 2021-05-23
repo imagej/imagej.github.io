@@ -193,7 +193,7 @@ It was written to add track descriptor that would help characterize the track mo
 
 Please note that the feature values listed in this paragraph are only properly defined bor **linear tracks**, that is tracks with no fusion nor split events.
 
-![](/media/trackmate-track-features.png)
+![](/media/plugins/trackmate/trackmate-track-features.png)
 
 #### Total distance traveled.
 

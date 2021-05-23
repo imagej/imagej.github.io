@@ -31,7 +31,7 @@ A typical dataset consists of a single two-dimensional (2d) image of the non-dyn
 
 The welcome panel will open.
 
-<img src="/media/welcomea.png" width="500"/>
+<img src="/media/plugins/mtrack/welcomea.png" width="500"/>
 
 #### Choose Mode
 
@@ -67,7 +67,7 @@ The default algorithm to identify the seeds as objects is called Maximally Stabl
 
 The end-points will be displayed as green circles. A "Next" button appears on the panel, which allows the user to flip to the next panel.
 
-<img src="/media/msersimple.png" width="300"/>
+<img src="/media/plugins/mtrack/msersimple.png" width="300"/>
 
 #### Options
 
@@ -97,7 +97,7 @@ Clicking "Auto Compute Velocity and Frequencies" auto computes the polymerizatio
 
 In addition, the user can obtain microtubule length distribution for a certain time point or a time-averaged distribution. In the length distribution plot, the mean length, and the standard deviation will be displayed after fitting an exponential decay curve to the obtained distribution.
 
-<img src="/media/ransacpanel.png" width="600"/> Click here to see some examples of the [MTrack-Ransac fits](/plugins/mtrack/ransac-fits).
+<img src="/media/plugins/mtrack/ransacpanel.png" width="600"/> Click here to see some examples of the [MTrack-Ransac fits](/plugins/mtrack/ransac-fits).
 
 ## Example
 

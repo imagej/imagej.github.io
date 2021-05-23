@@ -6,11 +6,11 @@ categories: [tutorials]
 
 After making this choice of segmentation in the advanced mode the following panel appears
 
-<img src="/media/trackadvanced.png" width="300"/>
+<img src="/media/plugins/mtrack/trackadvanced.png" width="300"/>
 
 Here the user can again make a choice of increasing or decreasing the edge enhancement factor. All the MSER parameters appear here in the second panel, read more about [MSER parameters](/plugins/mser-parameters). After making suitable parameter selection the user can then go over the tracking options where they can see some advanced parameter selections for the optimizer and assignment layer of the program. This panel is shown here
 
-<img src="/media/modelchoice.png" width="800"/>
+<img src="/media/plugins/mtrack/modelchoice.png" width="800"/>
 
 Read more about [sub-pixel localization parameter selection](/plugins/mtrack/sub-pixel-localization-parameter-selection).
 

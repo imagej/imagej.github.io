@@ -19,7 +19,7 @@ Image contrast restoration by deconvolution is an important systematic error cor
 
 Two plugins from Bob Dougherty can be used together to perform this systematic error correction in a 2D or 3D image. Other plugins are also available. The Diffraction-PSF-3D plugin generates a z-stack of the theoretical point-spread function (PSF). Alternatively, an empirical, measured PSF could be used. The Iterative Deconvolution 3D plugin uses a PSF image z-stack to correct the image contrast vs. feature size in your sample image z-stack. The image below is a single slice taken from a stack before and after deconvolution using these plugins.
 
-![](/media/deconvoluted-data.png)
+![](/media/cookbook/deconvoluted-data.png)
 
 *See the plugins' homepages for more details:* [Diffraction PSF 3D](http://www.optinav.info/Diffraction-PSF-3D.htm) & [Iterative Deconvolution 3D](http://www.optinav.info/Iterative-Deconvolve-3D.htm)
 
@@ -29,7 +29,7 @@ The Diffraction PSF 3D plugin can be used to generate theoretical PSFs assuming 
 
 To use, run the "Diffraction PSF 3D" plugin. A dialog will appear; most of the fields are self explanatory. The width, height and depth values are for the PSF image, not your image stack. The desired values will need to be empirically determined. Try to match the parameters used to capture the raw image.
 
-{% include img src="/media/diffraction-psf-window1.png" width="377" height="317" %}
+{% include img src="/media/cookbook/diffraction-psf-window1.png" width="377" height="317" %}
 
 ## Constrained Iterative Deconvolution
 
@@ -37,7 +37,7 @@ Non negative constrained (non linear), iterative deconvolution algorithms greatl
 
 Run the Iterative Deconvolve 3D plugin, then select the image and PSF. For a 2D image, use a 2D (single plane) PSF. For 3D images, use a 3D PSF (z stack). Start with the default values and set iterations to 10 initially. Be careful not to run out of memory when processing large 3D images. Crop them if they are too large.
 
-{% include img src="/media/iterative-deconvolve-window.png" width="411" height="272" %}
+{% include img src="/media/cookbook/iterative-deconvolve-window.png" width="411" height="272" %}
 
 ## An interactive Convolution / Deconvolution / Contrast Restoration demo in ImageJ
 

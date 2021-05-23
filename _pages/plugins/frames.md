@@ -10,7 +10,7 @@ These are a set of plugins that are used to work with data in the frame directio
 
 ## F\_Project
 
-<img src="/media/f-project-screenshot.jpg" width="400"/>
+<img src="/media/plugins/f-project-screenshot.jpg" width="400"/>
 
 When run as a plugin from the gui the image used is identified on the top line. A subset of the slices and frames can be used as the source data; see syntax for *Make Substacks...*. When the identified frames is 'label', the frames are grouped by identical labels. When the frames are identified by 'repeats var', where var is the name of the variable in the slice label, these frames are treated as repeats of data.  
 **Transpose?** Swap frames for slices.
@@ -185,12 +185,12 @@ ImagePlus[] pimp = F_Project.compute(imp, new F_Project.Compute() {
 
 ## F\_Profilier
 
-<img src="/media/f-profiler-screenshot.jpg" width="400"/>  
+<img src="/media/plugins/f-profiler-screenshot.jpg" width="400"/>  
 Given a Hyperstack image, draw an ROI and start plugin. Manipulate the ROI and the plot changes. Check out Interactive\_Fitting plugin.
 
 ## Frame\_Slider
 
-<img src="/media/frame-slider-screenshot.jpg" width="400"/>  
+<img src="/media/plugins/frame-slider-screenshot.jpg" width="400"/>  
 When you have one or more Hyperstacks open and want to step though the images per the variables in the slice labels, start the Frame\_Slider with the dataset with the most variables, select the other datasets, and step through them using the sliders. The datasets should all be governed by the same set of variables, i.e., The two left images are the raw data with repeats and the two right images are the mean and SNR projections, to see why click the scrollbars.
 
 ## Install

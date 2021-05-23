@@ -23,7 +23,7 @@ categories: [Scripting]
 
 Start it via {% include bc path='Plugins|Scripting|Script Interpreter'%} or by typing {% include key key='Shift|[' %}.
 
-![](/media/script-interpreter.png"Script_Interpreter.png")
+![](/media/scripting/script-interpreter.png"Script_Interpreter.png")
 
 ## Usage
 

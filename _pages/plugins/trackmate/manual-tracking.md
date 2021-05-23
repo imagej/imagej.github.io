@@ -8,7 +8,7 @@ The previous TrackMate tutorial - [Manual editing of tracks using TrackMate](/pl
 
 ## Setting up
 
-![](/media/trackmate-manualtrackingentrypoint.png)
+![](/media/plugins/trackmate/trackmate-manualtrackingentrypoint.png)
 
 There is not much to do. We will use the same, simple dataset that for [Getting started with TrackMate](/plugins/trackmate/getting-started). You can find it in {% include bc path='File | Open Samples | Tracks for TrackMate (807K)'%}.
 
@@ -23,13 +23,13 @@ You should should get the layout pictured on the right. Notice that we are alrea
 
 The default view (the one that re-uses the HyperStack viewer of ImageJ) can readily edit the tracks. You just have to make sure that the TrackMate tool is selected in the ImageJ toolbar:
 
-![](/media/trackmate-toolbar.png)
+![](/media/plugins/trackmate/trackmate-toolbar.png)
 
 With this tool selected, you can now make the image window active and use the mouse of the keyboard to create spots. Here are the commands for the mouse:
 
 -   {% include key key="Double-click" %} anywhere in the image to create a spot and enter the edit mode. The edited spot is highlighted with a green, dashed circle, as pictured below:
 
-![](/media/trackmate-spoteditmode.png)
+![](/media/plugins/trackmate/trackmate-spoteditmode.png)
 
 -   To leave the edit mode, {% include key key="double-click" %} again anywhere. The spot is then added to the data model.
 -   To edit it again, {% include key key="double-click" %} inside the spot. Its outline is now dashed; you are back in the edit mode.
@@ -45,11 +45,11 @@ This is how you edit the data with the mouse. You can also use the keyboard:
 
 And that's it for spot creation.
 
-![](/media/trackmate-createspots.png)
+![](/media/plugins/trackmate/trackmate-createspots.png)
 
 ## Create and removing single links
 
-![](/media/trackmate-createsinglelink.png)
+![](/media/plugins/trackmate/trackmate-createsinglelink.png)
 
 All we have done so far was to create single spots, that are not part of any tracks. Tracks are created on the fly when you link several spots together. You can do it in [TrackScheme](/plugins/trackmate/trackscheme), as explained elsewhere. Here is how to do it directly on the image. To go on, create a few spots above the bright blob of the source image. We need at least a couple of them in consecutive frames.
 
@@ -65,7 +65,7 @@ Removing a link is done the same way: Select exactly two spots that are connecte
 
 ## The auto-linking mode
 
-![](/media/trackmate-manualtracking-1.png)
+![](/media/plugins/trackmate/trackmate-manualtracking-1.png)
 
 Creating long tracks this way would be tedious, as you would always have to select a spot before creating a link. There is way to simplify this.
 
@@ -76,7 +76,7 @@ Let's apply this to our data. First create a spot over the bright blob at the to
 {% include clear%}
 
 
-![](/media/trackmate-manualtracking-2.png)
+![](/media/plugins/trackmate/trackmate-manualtracking-2.png)
 
 Tracks created this way do not have to be linear. You can create branching segments simply by remembering that in the auto-linking mode, links are created between the last selected spot.
 
@@ -87,7 +87,7 @@ Therefore, to create the branch that goes on the right, go back on the frame 9 (
 
 ## Tracks are updated live
 
-![](/media/trackmate-manualtracking-3.png)
+![](/media/plugins/trackmate/trackmate-manualtracking-3.png)
 
 Note that you do not have to worry about what track a spot belongs to when creating a link. Tracks are automatically managed on the fly. If you now create a second link between a pair of spots that are not connected with anything, a new track will be created automatically, and the color of the first ones will change.
 
@@ -98,7 +98,7 @@ The same is valid when you delete a link or a spot. For instance, let's create 3
 
 ## Track and spot features are updated live
 
-<figure><img src="/media/trackmate-guimanualtracking.png" title="TrackMate_GUIManualTracking.png" width="200" alt="TrackMate_GUIManualTracking.png" /><figcaption aria-hidden="true">TrackMate_GUIManualTracking.png</figcaption></figure>
+<figure><img src="/media/plugins/trackmate/trackmate-guimanualtracking.png" title="TrackMate_GUIManualTracking.png" width="200" alt="TrackMate_GUIManualTracking.png" /><figcaption aria-hidden="true">TrackMate_GUIManualTracking.png</figcaption></figure>
 
 TrackMate uses computes and uses some numerical features for its spots, edges and tracks. You can use these features to color the TrackMate objects.
 

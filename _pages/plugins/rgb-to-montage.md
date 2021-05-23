@@ -14,6 +14,6 @@ From the MacBiophotonics webpage:
 
 See also [Splitting multi-channel Images](/cookbook/color-image-processing#splitting-multi-channel-images).
 
-![](/media/rgb-to-montage-example.png)
+![](/media/plugins/rgb-to-montage-example.png)
 
  

@@ -27,27 +27,27 @@ Open a maximum intensity projection of the multi-channel image to be analyzed, t
 
 ### General configuration
 
-{% include img src="/media/sproutanalyzer-configuration.png" width="400" alt="Configuration dialog" %}
+{% include img src="/media/plugins/sproutanalyzer-configuration.png" width="400" alt="Configuration dialog" %}
 
 ### Bead detection
 
-{% include img src="/media/sproutanalyzer-beaddetection.png" width="400" alt="Bead detection" %}
+{% include img src="/media/plugins/sproutanalyzer-beaddetection.png" width="400" alt="Bead detection" %}
 
 ### Sprout detection
 
-{% include img src="/media/sproutanalyzer-sproutdetection.png" width="400" alt="Sprout detection" %}
+{% include img src="/media/plugins/sproutanalyzer-sproutdetection.png" width="400" alt="Sprout detection" %}
 
 ### Nucleus segmentation
 
-{% include img src="/media/sproutanalyzer-nucleussegmentation.png" width="400" alt="Nucleus segmentation" %}
+{% include img src="/media/plugins/sproutanalyzer-nucleussegmentation.png" width="400" alt="Nucleus segmentation" %}
 
 ### Endothelial cell/Pericyte classification
 
-{% include img src="/media/sproutanalyzer-cellclassification.png" width="400" alt="Cell classification of ECs and pericytes" %}
+{% include img src="/media/plugins/sproutanalyzer-cellclassification.png" width="400" alt="Cell classification of ECs and pericytes" %}
 
 ### Pericyte coverage
 
-{% include img src="/media/sproutanalyzer-pericytecoverage.png" width="400" alt="Pericyte coverage measurement" %}
+{% include img src="/media/plugins/sproutanalyzer-pericytecoverage.png" width="400" alt="Pericyte coverage measurement" %}
 
 ## Publication
 

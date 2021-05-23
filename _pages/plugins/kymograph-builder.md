@@ -35,7 +35,7 @@ How to use :
 -   Launch KymographBuilder : {% include bc path='Plugins|Kymograph|KymographBuilder'%}
 -   You're done.
 
-<figure><img src="/media/kymograph-construction.png" width="600" /></figure>
+<figure><img src="/media/plugins/kymograph-construction.png" width="600" /></figure>
 
 ## Scripting
 

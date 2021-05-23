@@ -16,11 +16,11 @@ title: Uploading plugins
 
 You can use the [Fiji Updater](/plugins/updater) to upload new plugins (or new versions thereof). First start {% include bc path='Help | Update Fiji'%}. It will tell you that there are *locally modified files*:
 
-<figure><img src="/media/updater-locally-modified.png" title="Updater-locally-modified.png" width="600" alt="Updater-locally-modified.png" /><figcaption aria-hidden="true">Updater-locally-modified.png</figcaption></figure>
+<figure><img src="/media/develop/updater-locally-modified.png" title="Updater-locally-modified.png" width="600" alt="Updater-locally-modified.png" /><figcaption aria-hidden="true">Updater-locally-modified.png</figcaption></figure>
 
 Please make sure that there are <u>no</u> updateable files, lest you overwrite new versions with old ones. If that is the case, the *Updater* will automatically switch to the *Advanced Mode* and show you the *locally modified files*. By clicking on the *Locally modified*, you can choose to upload one or more files:
 
-<figure><img src="/media/updater-select-upload.png" title="Updater-select-upload.png" width="750" alt="Updater-select-upload.png" /><figcaption aria-hidden="true">Updater-select-upload.png</figcaption></figure>
+<figure><img src="/media/develop/updater-select-upload.png" title="Updater-select-upload.png" width="750" alt="Updater-select-upload.png" /><figcaption aria-hidden="true">Updater-select-upload.png</figcaption></figure>
 
 **Note:** if you want to upload a new file, i.e. a file Fiji does not know anything about yet, you have to switch to *Advanced Mode* yourself and select the view option *View non-Fiji plugins only*.
 

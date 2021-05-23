@@ -11,7 +11,7 @@ An example ImageJ plugin illustrating how to create and display 3D tubes and 3D 
   <tbody>
     <tr class="odd">
       <td>
-        <p>style="vertical-align:top" |{% include thumbnail src='/media/spheres-and-tubes-3d.jpg' title='Example of tubes, spheres and discs in 3D.'%}</p>
+        <p>style="vertical-align:top" |{% include thumbnail src='/media/plugins/spheres-and-tubes-3d.jpg' title='Example of tubes, spheres and discs in 3D.'%}</p>
       </td>
     </tr>
   </tbody>

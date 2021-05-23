@@ -16,7 +16,7 @@ The math behind it: When 'Nonlinear Contrast' and 'Half Brightness for Flat Area
 
 ## Dialog parameters
 
-![Dialog screen shot](/media/hillshade-screenshot.jpg)
+![Dialog screen shot](/media/plugins/hillshade-screenshot.jpg)
 
 -   **x Pixel Size** - Size of one pixel in x direction, in the same units as the height (pixel value).
 -   **y Pixel Size** - Size of one pixel in y direction, in the same units as the height (pixel value).
@@ -27,7 +27,7 @@ The math behind it: When 'Nonlinear Contrast' and 'Half Brightness for Flat Area
 
 ## Tips
 
-{% include img src="/media/hillshade-overlay-example.jpg" width="280" caption="Topographic map created by superposition, click to enlarge" %}
+{% include img src="/media/plugins/hillshade-overlay-example.jpg" width="280" caption="Topographic map created by superposition, click to enlarge" %}
 
 -   If the slopes are very gentle, you can try setting smaller values of the pixel size to enhance the contrast.
 -   To create an output like a topographic map, display the input (elevation data) with a suitable lookup table and superimpose the hill shade output:
@@ -46,7 +46,7 @@ The math behind it: When 'Nonlinear Contrast' and 'Half Brightness for Flat Area
 
 -   Copy [Hill\_Shade.java](https://imagejdocu.tudor.lu/_media/plugin/filter/hill_shade/hill_shade.java) into the ImageJ plugins folder or a subfolder thereof (make sure you name the downloaded file "Hill\_Shade.java"; uppercase/lowercase matters).
 -   Compile with "Compile and run".
--   Alternatively, directly save the compiled class file [Hill\_Shade.class](/media/hill-shade.class) into the ImageJ/plugins directory or an immediate subdirectory thereof. Again, make sure that you name the file correctly.
+-   Alternatively, directly save the compiled class file [Hill\_Shade.class](/media/plugins/hill-shade.class) into the ImageJ/plugins directory or an immediate subdirectory thereof. Again, make sure that you name the file correctly.
 
 ## Related Links
 

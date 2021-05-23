@@ -21,7 +21,7 @@ This tutorial will explain how to **add an update site to your install of ImageJ
 
 First, start the [updater](/plugins/updater):
 
-![](/media/how-to-setup-a-plugin-distribution-site-1.jpg)
+![](/media/update-sites/how-to-setup-a-plugin-distribution-site-1.jpg)
 
 ## Add update sites
 
@@ -35,7 +35,7 @@ If the update site you want to follow is listed, just click the checkbox next to
 
 After you have selected your desired update site(s), close the dialog. The list of plugins that will be installed or updated from the chosen sites will now show up:
 
-<img src="/media/addpluginsite-5.jpg" width="770"/>
+<img src="/media/update-sites/addpluginsite-5.jpg" width="770"/>
 
 {% include notice icon="warning" content='If an entry"s action is **Update It**, that means it is changing an existing plugin. This action is dangerous and can break other plugins, or ImageJ itself.  
 Ideally the maintainers of these sites would work with the core ImageJ maintainers to centralize important plugins.  
@@ -45,7 +45,7 @@ When you find plugin conflicts between update sites, you can greatly help the co
 
 You can select whether you want to install a particular plugin by clicking in the **Status/Action** column and changing the option - for example, select **Keep as-is** to avoid installing a clashing plugin.
 
-<img src="/media/addpluginsite-6.jpg" width="770"/>
+<img src="/media/update-sites/addpluginsite-6.jpg" width="770"/>
 
 Once you are happy with what will be installed, click on the *Apply Changes* button to download your updates.
 
@@ -55,11 +55,11 @@ Once you are happy with what will be installed, click on the *Apply Changes* but
 
 Restart ImageJ as instructed to finish the install. Check to see that the plugin was installed:
 
-![](/media/addpluginsite-7.jpg)
+![](/media/update-sites/addpluginsite-7.jpg)
 
 ...and that it works:
 
-![](/media/addpluginsite-8.jpg)
+![](/media/update-sites/addpluginsite-8.jpg)
 
 ...and that's all there is to it.
 

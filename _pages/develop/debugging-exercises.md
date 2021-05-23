@@ -66,7 +66,7 @@ Breakpoints are a fundamental tool of debugging. They provide a way to instruct 
 
 To get started in this exercise, open up the source file - `E1BasicBreakpoints` - and *run* it to get an idea of what's going on. We should see a simple stack trace:
 
-![](/media/e1stacktrace.png)
+![](/media/develop/e1stacktrace.png)
 
 [Stack traces](Wikipedia_Stack_trace) are a common starting point for debugging, as they are typically automatically produced when something goes wrong that the program was not prepared to handle. Java programs are executed in [Last In, First Out](Wikipedia_Stack_(abstract_data_type)) order; that is, starting with the `main` method, as methods are called they are added to the top of the *stack*, the method at the top is what's currently running, and when a method completes it is removed from the stack, returning the program to the next method in line. When an exception occurs, a *stack trace* is printed, showing the order that methods have been queued, with the top of the stack being the location of the exception (and thus a likely place to start looking for problems!).
 
@@ -101,7 +101,7 @@ Although breakpoints allow us a chance to peek inside running code, many times w
 
 Start by opening the `E2EffectiveExpressions` source and running it. Like the previous exercise, we have a stack trace to start from:
 
-![](/media/e2stacktrace.png)
+![](/media/develop/e2stacktrace.png)
 
 Try setting a breakpoint on the conditional line:
 
@@ -153,7 +153,7 @@ Breakpoints trigger *every* time the corresponding line would be executed, which
 
 Start by opening the `E3ConditionalCrisis` source and running it. This time our console output looks a bit different:
 
-![](/media/e3stacktrace.png)
+![](/media/develop/e3stacktrace.png)
 
 In addition to the exception stack trace, the program itself appears to have found an invalid object, causing the processing to go unfinished. Although we could set a breakpoint on the exception, as we did in [exercise 2](#exercise-2-expressions), the exception is actually happening *after* the more interesting part of the program - the loop. As we learned in exercise 2, breakpoints in code that is called repeatedly are annoying, so let's see what we can find by attaching conditions to our breakpoint.
 
@@ -225,7 +225,7 @@ Note that the menu path of the plugin is specified in the class's annotation:
 
 So, you can now run the `E4 - Print ConsoleService` command either via the menus or the [search bar](/learn/getting-started#the-search-bar). You should get an exception:
 
-![](/media/e4stacktrace.png)
+![](/media/develop/e4stacktrace.png)
 
 In order to connect Eclipse to ImageJ, we need to close our running instance and [launch ImageJ from the command line](/help/troubleshooting#launching-imagej-from-the-console), which allows us to set the [debug flag](/develop/debugging#attaching-to-imagej-instances), e.g.:
 ```
@@ -367,7 +367,7 @@ ImageJ.app/ImageJ-linux64
 
 We actually don't need any extra flags this time, as this technique isn't specific to ImageJ. When you run a program from the command line, your console is directly tied to the running instance:
 
-{% include img src="/media/e6console.png" width="400" title="Waiting for input after launching ImageJ" %}
+{% include img src="/media/develop/e6console.png" width="400" title="Waiting for input after launching ImageJ" %}
 
 In this state, we can still send signals to the running application (for example - {% include key keys='ctrl|c' %} to [kill the app](https://www.howtogeek.com/howto/ubuntu/keyboard-shortcuts-for-bash-command-shell-for-ubuntu-debian-suse-redhat-linux-etc/)).
 
@@ -419,7 +419,7 @@ We see that objects are being created, but we aren't storing any references to t
 
 Once the `OutOfMemoryError` is encountered our breakpoint will trigger. To acquire the heap dump:
 
-{% include img src="/media/e7heapdump.png" align="right" width="500" caption="Heap dump acquisition in jvisualvm" %}
+{% include img src="/media/develop/e7heapdump.png" align="right" width="500" caption="Heap dump acquisition in jvisualvm" %}
 
 1.  Open `jvisualvm`
 2.  From the list of local applications, right-click on `net.imagej.trouble.visible.E7InvestigateImpressions` and select the "Heap Dump" option.
@@ -490,7 +490,7 @@ Developing codes may often involve using multiple threads instead of sequential 
 
 E9 exercise on multiple threads focuses on this issue and also highlight an additional property of breakpoint that can be helpful in debugging program (Stop Virtual Machine).
 
-Even though no code changes, sometimes debugging affects code execution. The Exercise 9 creates two parallel processes which are interdependent on each other. Each process throws up an error if the other process introduces a delay more than one second. So pausing for more than one second ,while debugging the program throws up an exception. So the act of debugging introduces errors in this case. <img src="/media/e9stopvm.png" title="fig:Setting a VM-wide breakpoint" width="400" alt="Setting a VM-wide breakpoint" />
+Even though no code changes, sometimes debugging affects code execution. The Exercise 9 creates two parallel processes which are interdependent on each other. Each process throws up an error if the other process introduces a delay more than one second. So pausing for more than one second ,while debugging the program throws up an exception. So the act of debugging introduces errors in this case. <img src="/media/develop/e9stopvm.png" title="fig:Setting a VM-wide breakpoint" width="400" alt="Setting a VM-wide breakpoint" />
 
 #### Steps for the exercise
 

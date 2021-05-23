@@ -6,13 +6,13 @@ categories: [Tutorials]
 
 TrackScheme displays a kind of "track map", where a track is laid on pane, arranged vertically over time, as a Parisian subway train map. Each spot is displayed as a cell in the map. Each cell displays a thumbnail of the spot.
 
-<figure><img src="/media/trackscheme-start.png" title="TrackScheme_Start.png" width="700" alt="TrackScheme_Start.png" /><figcaption aria-hidden="true">TrackScheme_Start.png</figcaption></figure>
+<figure><img src="/media/plugins/trackmate/trackscheme-start.png" title="TrackScheme_Start.png" width="700" alt="TrackScheme_Start.png" /><figcaption aria-hidden="true">TrackScheme_Start.png</figcaption></figure>
 
 ## TrackScheme in a nutshell
 
 You can do quite some things using TrackScheme, notably track analysis. This is not the focus of this tutorial, we will simply be focusing on the track editing features. However, here is a brief description of what the toolbar buttons do.
 
-![](/media/trackschemetoolbarexplanation.png)
+![](/media/plugins/trackmate/trackschemetoolbarexplanation.png)
 
 We will be mainly using the **Redo layout** and button.
 
@@ -42,7 +42,7 @@ You can create a link between two cells in TrackScheme simply by enabling the li
 
 This is pictured below, where the first cell of the top track is attached to the track number 2, as it should. For visibility, I brought on this screenshot the target cell closer to the lane of the track 2. You can normally find it either on its own lane or on the far right of the panel.
 
-<figure><img src="/media/trackmate-createlinksintrackscheme-annotated.png" title="TrackMate_CreateLinksInTrackScheme_annotated.png" width="700" alt="TrackMate_CreateLinksInTrackScheme_annotated.png" /><figcaption aria-hidden="true">TrackMate_CreateLinksInTrackScheme_annotated.png</figcaption></figure>
+<figure><img src="/media/plugins/trackmate/trackmate-createlinksintrackscheme-annotated.png" title="TrackMate_CreateLinksInTrackScheme_annotated.png" width="700" alt="TrackMate_CreateLinksInTrackScheme_annotated.png" /><figcaption aria-hidden="true">TrackMate_CreateLinksInTrackScheme_annotated.png</figcaption></figure>
 
 Press the **Redo layout** button to see the arranged result. The first spot is now incorporated in the right track.
 
@@ -69,7 +69,7 @@ The newly created link is displayed in magenta. Note that the track arrangement 
 
 This can be used to create branching links, as picture below:
 
-![](/media/trackmate-branchingtrack.png)
+![](/media/plugins/trackmate/trackmate-branchingtrack.png)
 
 ### Creating several links at once
 

@@ -39,13 +39,13 @@ The other parameters are related to the **minimal and maximal volumes** of the o
 
 For **8-bits** images it is recommended to use the method *Step* with *value* between 1 and 5. For **16-bits** images try *Step* with values between 5 and 100 depending on the dynamic of your data. Note that the more threshold tested the more memory used. In order not to test low thresholds you can specify to start with the **mean value** of the image as the lowest threshold or specify manually the lowest threshold to start with. The image can be \*\*filtered\*\* before thresholding with a 3D median filter with radii proportional to the minimal volume. The **contrast** refers to the range of thresholds where the object exists, noise or very faint objects may have very low contrast as opposed to very contrasted object.
 
-![600](/media/iterativedotblot.png)
+![600](/media/plugins/iterativedotblot.png)
 
 Iterative thresholding using different criteria, bottom left elongation, top right volume and bottom right MSER.
 
 Testing all thresholds may lead to **objects being divided into smaller objects** for high thresholds. For instance **touching cells** may result in close nuclei, at low contrast and low threshold the two nuclei may seem like touching and form only one object, however at high threshold and contrast two separate objects are being seen.
 
-![600](/media/iterativetouching.png)
+![600](/media/plugins/iterativetouching.png)
 
 Dividing objects with thresholds, top left raw image with high brightness, top right raw image with adjusted contrast to distinguish the dividing nuclei, bottom left first channel of Iterative thresholding showing brighter and smaller objects, bottom right second channel of Iterative thresholding showing merged nuclei for lower threshold.
 
@@ -59,7 +59,7 @@ Three methods are available for computing the value of the local threshold and 3
 
 A tutorial is also available : [3d seg spot tutorial.pdf](/media/3d seg spot tutorial.pdf)
 
-![](/media/heck-orig.png) ![](/media/heck-watershed.png)![](/media/heck-seg.png)
+![](/media/plugins/heck-orig.png) ![](/media/plugins/heck-watershed.png)![](/media/plugins/heck-seg.png)
 
 Left, slice of a 3D raw image with crowded objects with different intensities. Middle, the zones around each detected local maxima, computed using watershed. Right, the final segmentation of the objects.
 

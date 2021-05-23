@@ -11,7 +11,7 @@ artifact: ca.mcgill:Sholl_Analysis
 
 ## Introduction
 
-{% include img align="right" name="ca1-cell-mask" src="/media/bitmapsholl-ca1mask.png" caption="[Skeletonized](/plugins/skeletonize3d) hippocampal CA1 cell[^1] (juvenile mouse) in which apical and basal dendrites have been analyzed [separately](#ca1-cell-plot) and [color coded](#output-options) according to their Sholl profile. Warmer hues indicate higher number of Intersections (*N*). [Critical radius](#critical-radius) (*r<sub>c</sub>*) and [Mean value](#mean-value-of-function) (*N<sub>av</sub>*) are indicated." %}
+{% include img align="right" name="ca1-cell-mask" src="/media/plugins/bitmapsholl-ca1mask.png" caption="[Skeletonized](/plugins/skeletonize3d) hippocampal CA1 cell[^1] (juvenile mouse) in which apical and basal dendrites have been analyzed [separately](#ca1-cell-plot) and [color coded](#output-options) according to their Sholl profile. Warmer hues indicate higher number of Intersections (*N*). [Critical radius](#critical-radius) (*r<sub>c</sub>*) and [Mean value](#mean-value-of-function) (*N<sub>av</sub>*) are indicated." %}
 
 The Sholl technique[^2] is used to describe neuronal arbors. This plugin can perform Sholl directly on 2D and 3D grayscale images of isolated neurons. Its internal algorithm to collect data is based upon how Sholl analysis is done by hand — it creates a series of concentric *shells* (circles or spheres) around the focus of a neuronal arbor, and counts how many times connected voxels defining the arbor intersect the sampling shells. The major advantages of this plugin over other implementations are:
 
@@ -51,7 +51,7 @@ Straight line: A Straight line from the focus of the arbor to its most distal po
 Single point: A single point marking the focus of the arbor using the Point Selection Tool. With single point selections, only the center of analysis is defined. Thus, this option is suitable for [batch processing](#batch-processing) of images with different dimensions with undefined [Ending radius](#end-radius).  
 Multi-point selection:A Multi-point selection (multi-point counter) in which the first point marks the center of analysis while the remaining points mark (count) the number of primary branches required for the calculation of [ramification indices](#schoenen-sampled)). Suitable for cases in which [inference from starting radius](#primary-branches) is not effective.  
 
-![Three types of ROIs expected by the plugin when analyzing images directly. Left: Line defining center of analysis (focal point), hemisphere restriction and ending radius. Middle: Single point defining center of analysis. Right: Multi-point selection in which the first point defines the focal point while the remaining points (2 to 5) serve as counters for primary dendrites.](/media/shollanalysisstartuprois.png)
+![Three types of ROIs expected by the plugin when analyzing images directly. Left: Line defining center of analysis (focal point), hemisphere restriction and ending radius. Middle: Single point defining center of analysis. Right: Multi-point selection in which the first point defines the focal point while the remaining points (2 to 5) serve as counters for primary dendrites.](/media/plugins/shollanalysisstartuprois.png)
 
 ### Cf. Segmentation
 
@@ -71,7 +71,7 @@ Press *More» Cf. Segmentation* to visually confirm which phase of the segmented
       <td>
         <center>
           <figure>
-            <img src="/media/cfsegmentation.png" width="700">
+            <img src="/media/plugins/cfsegmentation.png" width="700">
           </figure>
         </center>
       </td>
@@ -110,7 +110,7 @@ You can use {% include bc path='Sholl Analysis (Tracings)...' color='white'%} to
 
 ## Analysis of Existing Profiles
 
-{% include img align="right" name="ca1-linear-plot" src="/media/bitmapsholl-ca1compartment.png" caption="Linear plot for CA1 cell [described above](/media/#ca1-cell-mask). Using the soma as center, image was sampled twice using the [Restrict analysis to hemicircle/hemisphere](#restrict) option in order to segregate apical from basal dendrites. For convenience, distances for basal branches were assigned negative values. For clarity, the binary image of the arbor was rotated, scaled and overlaid (in green) over the plot canvas. Note that it is also possible to restrict [curve fitting](#methods-table) to a sub-range of distances once [data is collected](#importing)." %}
+{% include img align="right" name="ca1-linear-plot" src="/media/plugins/bitmapsholl-ca1compartment.png" caption="Linear plot for CA1 cell [described above](/media/#ca1-cell-mask). Using the soma as center, image was sampled twice using the [Restrict analysis to hemicircle/hemisphere](#restrict) option in order to segregate apical from basal dendrites. For convenience, distances for basal branches were assigned negative values. For clarity, the binary image of the arbor was rotated, scaled and overlaid (in green) over the plot canvas. Note that it is also possible to restrict [curve fitting](#methods-table) to a sub-range of distances once [data is collected](#importing)." %}
 
 -   **Input data**: Any tab or comma delimited text file (.csv, .txt, .xls, .ods) can be used. You can drag & drop these files into the main ImageJ window, import data from the clipboard, or use data from any other table already opened by ImageJ.
 -   **Restricting input data**: To restrict measurements to a range of distances ([see related example](#ca1-cell-plot)), select the range of distances you want analyze. You can click the first row in the range, and then drag the mouse to the last row, or by holding down {% include key key='Shift' %} while selecting the last row in the range. Then, in the prompt, activate the *Restrict analysis to selected rows only* checkbox.
@@ -183,7 +183,7 @@ Please keep in mind that this is just a refinement feature, and you should not e
 
 #### Output Options
 
-<figure><img src="/media/shollresultasrois.png" title="Intersection points and sampling shells can be retrieved as ROIs using {% include bc path='Image|Overlay|To ROI Manager' color='white'%}. Intersection points are placed at edges of detected clusters of foreground pixels, not their center." width="400" alt="Intersection points and sampling shells can be retrieved as ROIs using {% include bc path='Image|Overlay|To ROI Manager' color='white'%}. Intersection points are placed at edges of detected clusters of foreground pixels, not their center." /><figcaption aria-hidden="true">Intersection points and sampling shells can be retrieved as ROIs using {% include bc path='Image|Overlay|To ROI Manager' color='white'%}. Intersection points are placed at edges of detected clusters of foreground pixels, not their center.</figcaption></figure>
+<figure><img src="/media/plugins/shollresultasrois.png" title="Intersection points and sampling shells can be retrieved as ROIs using {% include bc path='Image|Overlay|To ROI Manager' color='white'%}. Intersection points are placed at edges of detected clusters of foreground pixels, not their center." width="400" alt="Intersection points and sampling shells can be retrieved as ROIs using {% include bc path='Image|Overlay|To ROI Manager' color='white'%}. Intersection points are placed at edges of detected clusters of foreground pixels, not their center." /><figcaption aria-hidden="true">Intersection points and sampling shells can be retrieved as ROIs using {% include bc path='Image|Overlay|To ROI Manager' color='white'%}. Intersection points are placed at edges of detected clusters of foreground pixels, not their center.</figcaption></figure>
 
 -   **Create intersections mask** - If checked, a 16/32–bit maximum intensity projection of the analyzed image is generated in which the measured arbor is painted according to its Sholl profile. The type of data (*Raw*, i.e., sampled or *Fitted*) is displayed in the image subtitle and can be specified in {% include bc path='Analysis|Sholl|Metrics & Options...' color='white'%} or using the *Options...* command in the *More»* drop-down menu.  
     NB: The default Lookup Table (LUT) used by the mask can be changed using {% include bc path='Image|Lookup Tables|' color='white'%}. The background color \[gray level: 0 (black) to 255 (white)\] can also be set in {% include bc path='Metrics & Options...' color='white'%}, or at any later point using {% include bc path='Image|Color|Edit Lut...' color='white'%} WYSIWYG versions (RGB images) of these masks can be otained using by pressing {% include key keys='Shift|F' %} ({% include bc path='Image|Overlay|Flatten' color='white'%}) or by running {% include bc path='Analyze|Tools|Calibration Bar...' color='white'%}
@@ -195,7 +195,7 @@ Please keep in mind that this is just a refinement feature, and you should not e
 
 ## Sholl Plots
 
-{% include img align="center" name="sholl plots" src="/media/shollplots.png" %}
+{% include img align="center" name="sholl plots" src="/media/plugins/shollplots.png" %}
 
 ***Linear*, *Linear-norm*, *Semi-log* and *Log-log* profiles for the ddaC cell ({% include bc path='File|Open Samples|ddaC Neuron' color='white'%}), version 3.0**. Most of the retrieved [metrics](#metrics-based-on-fitted-data) are automatically highlighted by the plugin. *Linear profile*: [Mean value](#mean-value-of-function) (horizontal grid line) and [Centroid](#centroid) (colored mark). Logarithmic profiles: The [Sholl regression coefficient](#sholl-decay) (also known as Sholl decay) can be retrieved by linear regression using either the full range of data (blue line) or data within percentiles 10–90 (red line). For this particular cell type, the Semi-log method is more [informative](#dratio) when compared to the Log-log method.
 
@@ -308,11 +308,11 @@ Please keep in mind that this is just a refinement feature, and you should not e
 
 Morphometric descriptors and other properties of the arbor are printed to a dedicated table named *Sholl Results*. Output is fully customizable using {% include bc path='Analysis|Sholl|Metrics & Options...' color='white'%} or using the *Options...* command in the *More»* drop-down menu. The first columns log analysis parameters: *Image Directory*, *filename* and *voxel unit*, *Channel*, *Lower* and *Upper Threshold levels*, *X,Y* (in pixels) and *Z* (slice number) coordinates of center of analysis, *Starting* and *Ending radius*, *Radius step*, *Number of Samples per Radius*, etc. Other parameters are described below.
 
-{% include img align="center" name="Descriptors and metrics are listed in the Sholl Table (v2.4)" src="/media/bitmapsholl-table.png"%}
+{% include img align="center" name="Descriptors and metrics are listed in the Sholl Table (v2.4)" src="/media/plugins/bitmapsholl-table.png"%}
 
 ### Metrics based on sampled data
 
-{% include img align="right" name="Metrics & Options prompt (version 3.6.4)" src="/media/sholloptionsprompt.png" %}
+{% include img align="right" name="Metrics & Options prompt (version 3.6.4)" src="/media/plugins/sholloptionsprompt.png" %}
 
 Intersecting radii  
 The number of sampling radii intersecting the arbor at least once.
@@ -449,7 +449,7 @@ The coefficient of determination of the polynomial fit described in [(1)](#eq1).
 
 ## Complementary Tools
 
-{% include img align="right" name="extended-fitting" src="/media/animatedpolyfit.gif" caption="Sampled data from the ddaC cell being fitted to polynomials of varying degree using a complementary [BAR](/plugins/bar) script."%}
+{% include img align="right" name="extended-fitting" src="/media/plugins/animatedpolyfit.gif" caption="Sampled data from the ddaC cell being fitted to polynomials of varying degree using a complementary [BAR](/plugins/bar) script."%}
 
 *Sholl Analysis* tries to be as flexible as possible by providing several options for normalization and curve fitting. However, it cannot offer exhaustive curve fitting options as determining *best fit models* requires reasonable choices that are not amenable to full automation. For this reason, complementary tools for curve fitting can be installed as needed using [BAR](/plugins/bar) by subscribing to its [update site](/plugins/bar#installation). Several [BAR](/plugins/bar) commands complement *Sholl Analysis*. These include:
 
@@ -619,7 +619,7 @@ Note that the IJM built-in [call("class.method")](/ij/developer/macro/functions.
 
 ## Auxiliary Commands
 
-{% include bc path='Analyze|Sholl|Combine Sholl Profiles...' color='white'%}<img src="/media/combineshollprofiles.png" title="fig:Screenshot of 15 files being processed by {% include bc path='Analyze|Sholl|Combine Sholl Profiles...' color='white'%} (v3.6.12)" width="400" alt="Screenshot of 15 files being processed by {% include bc path='Analyze|Sholl|Combine Sholl Profiles...' color='white'%} (v3.6.12)" />  
+{% include bc path='Analyze|Sholl|Combine Sholl Profiles...' color='white'%}<img src="/media/plugins/combineshollprofiles.png" title="fig:Screenshot of 15 files being processed by {% include bc path='Analyze|Sholl|Combine Sholl Profiles...' color='white'%} (v3.6.12)" width="400" alt="Screenshot of 15 files being processed by {% include bc path='Analyze|Sholl|Combine Sholl Profiles...' color='white'%} (v3.6.12)" />  
 
 Analysis tool that 1) Merges individual Sholl profiles into a single table and 2) Obtains the average profile (with standard deviation) of a group of cells.
 

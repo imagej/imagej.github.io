@@ -20,11 +20,11 @@ This tool copies randomly selected (image) files to a new subfolder (output fold
 1.  In **basic mode**, only one parameter i.e., the number of files to be copied/encrypted is required.
 
 
-{% include img align="center" name="File Name Encrypter: Basic mode." src="/media/filenameencrypterbasic.png" %}
+{% include img align="center" name="File Name Encrypter: Basic mode." src="/media/plugins/filenameencrypterbasic.png" %}
 
 1.  In **advance mode**, you can decide if files should be grouped. When grouping is set to "No", each file is treated as an independent entity. To group files, set the option to "Yes" and provide a substring.
 
-{% include img align="center" name="File Name Encrypter: Advance mode." src="/media/filenameencrypteradvance.png" %}
+{% include img align="center" name="File Name Encrypter: Advance mode." src="/media/plugins/filenameencrypteradvance.png" %}
 
 Grouping comes in handy when, for example, different channels are saved in separate files with related names and you would like to keep the relation even with encrypted names. The tool will look for the first occurrence of the substring in the names of the available files to determine groups. The groups can be of different sizes. File names not containing the substring will be treated as independent entities. In the output folder, all file names in a group will start with the same cryptic string and will have different suffixes. For example, when the following six files are available:
 
