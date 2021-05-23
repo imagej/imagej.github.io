@@ -806,7 +806,7 @@ GSoC_2011_Ideas :: events/GSoC_2011_Ideas
 GUI :: scripting/user-input
 Gabor_Filter_script :: scripting/examples/gabor-filter
 Gabriel_Graph :: plugins/gabriel-graph
-Gauss_ImgLib2 :: TODO
+Gauss_ImgLib2 :: Gauss_Package_ImgLib2
 Gauss_Package_ImgLib2 :: TODO
 Generate_and_exploit_Kmographs :: tutorials/generate-and-exploit-kymographs
 Generate_and_exploit_Kymographs :: tutorials/generate-and-exploit-kymographs
