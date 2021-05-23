@@ -6,4 +6,4 @@ name: Mangal Prakash
 github: mangalp
 ---
 
-{% include stub %}
+{% include warning/stub %}

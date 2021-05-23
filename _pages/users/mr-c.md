@@ -6,4 +6,4 @@ name: Michael Crusoe
 github: mr-c
 ---
 
-{% include stub %}
+{% include warning/stub %}

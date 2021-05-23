@@ -6,4 +6,4 @@ name: Yan Xiaolong
 github: yxdragon
 ---
 
-{% include stub %}
+{% include warning/stub %}

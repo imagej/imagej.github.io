@@ -6,4 +6,4 @@ name: Brian Long
 github: berl
 ---
 
-{% include stub %}
+{% include warning/stub %}

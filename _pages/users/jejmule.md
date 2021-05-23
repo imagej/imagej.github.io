@@ -5,5 +5,5 @@ title: Jerome Parent
 name: Jerome Parent
 github: jejmule
 ---
-{% include stub %}
+{% include warning/stub %}
 

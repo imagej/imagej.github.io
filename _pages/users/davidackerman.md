@@ -6,4 +6,4 @@ name: David Ackerman
 github: davidackerman
 ---
 
-{% include stub %}
+{% include warning/stub %}

@@ -6,4 +6,4 @@ name: reckbo
 github: reckbo
 ---
 
-{% include stub %}
+{% include warning/stub %}

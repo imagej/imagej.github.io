@@ -4,7 +4,7 @@ title: Simple Neurite Tracer › Selecting paths
 categories: [tutorials]
 ---
 
-{% include sntdeprecation%}
+{% include snt/deprecated %}
 
 
 There are three ways of selecting a particular path in [Simple Neurite Tracer](/plugins/snt).

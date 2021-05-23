@@ -6,4 +6,4 @@ name: Nicolas Stifani
 github: nstifani
 ---
 
-{% include stub %}
+{% include warning/stub %}

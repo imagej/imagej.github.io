@@ -6,4 +6,4 @@ name: Paul Barber
 github: paulbarber
 ---
 
-{% include stub %}
+{% include warning/stub %}

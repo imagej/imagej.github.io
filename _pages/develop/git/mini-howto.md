@@ -5,7 +5,7 @@ section: Development:Git
 ---
 
 
- {% include outdated%}
+ {% include warning/outdated %}
  This page is a **really** quick 'n dirty tutorial on how to work with Git. It is strongly biased to the work on Fiji; you should refer to [Git workshop](/develop/git/workshop), [Git for dummies](/develop/git) or to [Git's homepage](https://git-scm.com/) for much more information.
 
 Most of these explanations are meant for the command line users.

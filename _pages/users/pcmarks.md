@@ -5,4 +5,4 @@ name: Peter C. Marks
 github: pcmarks
 ---
 
-{% include stub %}
+{% include warning/stub %}

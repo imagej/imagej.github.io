@@ -8,5 +8,5 @@ forum: haesleinhuepf
 github: haesleinhuepf
 orcid: 0000-0001-5949-2327
 ---
-{% include stub %}
+{% include warning/stub %}
 

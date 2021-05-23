@@ -6,4 +6,4 @@ name: Roman Grothausmann
 github: romangrothausmann
 ---
 
-{% include stub %}
+{% include warning/stub %}

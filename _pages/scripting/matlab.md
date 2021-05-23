@@ -127,7 +127,7 @@ Most of the ImageJ scripting languages have implicit return values. As mentioned
 
 ### Importing classes
 
-{% include importing-classes lang='MATLAB' %} When running ImageJ externally, [MATLAB](/scripting/matlab) will not have ImageJ classes in its classpath - so they can not simply be imported. Although [MATLAB](/scripting/matlab) does support [editing its classpath](http://www.mathworks.com/help/matlab/matlab_external/bringing-java-classes-and-methods-into-matlab-workspace.html) this is NOT recommended, as the classes loaded by [MATLAB](/scripting/matlab) will not be the same as those loaded in ImageJ.
+{% include warning/importing-classes lang='MATLAB' %} When running ImageJ externally, [MATLAB](/scripting/matlab) will not have ImageJ classes in its classpath - so they can not simply be imported. Although [MATLAB](/scripting/matlab) does support [editing its classpath](http://www.mathworks.com/help/matlab/matlab_external/bringing-java-classes-and-methods-into-matlab-workspace.html) this is NOT recommended, as the classes loaded by [MATLAB](/scripting/matlab) will not be the same as those loaded in ImageJ.
 
 Instead, you can [launch ImageJ inside MATLAB](#running-imagej-within-matlab) and have it take care of managing the class loading for you. [MATLAB](/scripting/matlab) then supports the use of import statements to [simplify class names](http://www.mathworks.com/help/matlab/matlab_external/bringing-java-classes-and-methods-into-matlab-workspace.html#f46341).
 

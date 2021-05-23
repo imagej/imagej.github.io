@@ -6,4 +6,4 @@ name: Joe Hsiao
 github: JoeHsiao
 ---
 
-{% include stub %}
+{% include warning/stub %}

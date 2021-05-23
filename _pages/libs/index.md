@@ -1,4 +1,4 @@
 ---
 title: Libraries
 ---
-{% include stub %}
+{% include warning/stub %}

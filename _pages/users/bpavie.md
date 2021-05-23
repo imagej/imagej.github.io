@@ -4,4 +4,4 @@ name: Benjamin Pavie
 github: bpavie
 ---
 
-{% include stub %}
+{% include warning/stub %}

@@ -5,4 +5,4 @@ github: ScienceToolkit
 affiliation: Stuart Lab | /orgs/stuart-lab
 ---
 
-{% include stub %}
+{% include warning/stub %}

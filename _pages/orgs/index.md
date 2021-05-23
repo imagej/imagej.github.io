@@ -1,4 +1,4 @@
 ---
 title: Organizations
 ---
-{% include stub %}
+{% include warning/stub %}

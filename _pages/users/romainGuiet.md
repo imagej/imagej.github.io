@@ -6,4 +6,4 @@ name: Romain Guiet
 github: romainGuiet
 ---
 
-{% include stub %}
+{% include warning/stub %}

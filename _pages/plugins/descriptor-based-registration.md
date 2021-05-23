@@ -5,7 +5,7 @@ categories: [Plugins]
 artifact: sc.fiji:Descriptor\_based\_registration
 ---
 
-{% include stub%}
+{% include warning/stub %}
 
 
 

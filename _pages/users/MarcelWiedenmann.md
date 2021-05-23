@@ -6,4 +6,4 @@ name: Marcel Wiedenmann
 github: MarcelWiedenmann
 ---
 
-{% include stub %}
+{% include warning/stub %}

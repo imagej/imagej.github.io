@@ -9,5 +9,5 @@ researchgate: Timothy_Grocott
 scholar: SSpMxV8AAAAJ
 website: http://www.grocottlab.com/
 ---
-{% include stub %}
+{% include warning/stub %}
 

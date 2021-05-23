@@ -6,4 +6,4 @@ name: Adam Fraser
 github: afraser
 ---
 
-{% include stub %}
+{% include warning/stub %}

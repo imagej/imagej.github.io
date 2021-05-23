@@ -8,5 +8,5 @@ affiliation: EMBL Heidelberg
 forum: Kota
 github: cmci
 ---
-{% include stub %}
+{% include warning/stub %}
 

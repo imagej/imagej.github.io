@@ -8,4 +8,4 @@ affiliation:
 github: lesfoster
 ---
 
-{% include stub %}
+{% include warning/stub %}

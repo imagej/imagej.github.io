@@ -5,5 +5,5 @@ title: Petr Bainar
 name: Petr Bainar
 github: PetrBainar
 ---
-{% include stub %}
+{% include warning/stub %}
 

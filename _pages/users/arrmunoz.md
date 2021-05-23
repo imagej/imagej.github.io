@@ -6,4 +6,4 @@ name: Arrate Muñoz Barrutia
 github: arrmunoz
 ---
 
-{% include stub %}
+{% include warning/stub %}

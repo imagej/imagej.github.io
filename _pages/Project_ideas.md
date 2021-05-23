@@ -4,7 +4,7 @@ title: Project ideas
 categories: [development]
 ---
 
-{% include outdated %}
+{% include warning/outdated %}
 
 This page contains a loose list of ideas for cool/useful projects that have some relation to Fiji
 

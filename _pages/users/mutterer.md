@@ -7,5 +7,5 @@ affiliation: CNRS | http://www.cnrs.fr/index.php
 github: mutterer
 linkedin: in/jerome-mutterer-8763481a
 ---
-{% include stub %}
+{% include warning/stub %}
 

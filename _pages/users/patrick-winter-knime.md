@@ -6,4 +6,4 @@ name: Patrick Winter
 github: patrick-winter-knime
 ---
 
-{% include stub %}
+{% include warning/stub %}

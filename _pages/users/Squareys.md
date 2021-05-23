@@ -6,4 +6,4 @@ name: Jonathan Hale
 github: Squareys
 ---
 
-{% include stub %}
+{% include warning/stub %}

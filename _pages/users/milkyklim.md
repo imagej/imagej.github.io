@@ -10,5 +10,5 @@ affiliation:
   - Max Delbrück Center (MDC) | https://www.mdc-berlin.de/en
 github: milkyklim
 ---
-{% include stub %}
+{% include warning/stub %}
 

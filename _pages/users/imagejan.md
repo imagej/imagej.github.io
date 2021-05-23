@@ -18,4 +18,4 @@ orcid: 0000-0001-7234-1435
 researcherid: C-2707-2014
 scopus: 23980003300
 ---
-{% include stub %}
+{% include warning/stub %}

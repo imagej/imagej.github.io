@@ -7,5 +7,5 @@ affiliation: KNIME | https://knime.com/
 github: awalter17
 forum: awalter17
 ---
-{% include stub %}
+{% include warning/stub %}
 

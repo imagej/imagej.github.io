@@ -5,7 +5,7 @@ categories: [Plugins]
 artifact: sc.fiji:panorama\_
 ---
 
-{% include stub%}
+{% include warning/stub %}
 
 
 

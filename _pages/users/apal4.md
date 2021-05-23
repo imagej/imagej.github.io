@@ -8,5 +8,5 @@ affiliation:
   - University of Wisconsin-Madison | https://wisc.edu/
 github: apal4
 ---
-{% include stub %}
+{% include warning/stub %}
 

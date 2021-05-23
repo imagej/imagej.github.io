@@ -6,4 +6,4 @@ name: Burkhard Höckendorf
 github: bhoeckendorf
 ---
 
-{% include stub %}
+{% include warning/stub %}

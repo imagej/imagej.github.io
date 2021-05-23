@@ -1,4 +1,4 @@
 ---
 title: ImageJ User Guide
 ---
-{% include stub %}
+{% include warning/stub %}

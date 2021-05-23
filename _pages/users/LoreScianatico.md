@@ -5,4 +5,4 @@ name: Lorenzo Scianatico
 github: LoreScianatico
 ---
 
-{% include stub %}
+{% include warning/stub %}

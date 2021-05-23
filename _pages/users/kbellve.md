@@ -6,4 +6,4 @@ name: Karl Bellve
 github: kbellve
 ---
 
-{% include stub %}
+{% include warning/stub %}

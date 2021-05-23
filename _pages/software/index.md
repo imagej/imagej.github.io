@@ -1,4 +1,4 @@
 ---
 title: Software
 ---
-{% include stub %}
+{% include warning/stub %}

@@ -4,5 +4,5 @@ title: 3D Blob Segmentation
 artifact: sc.fiji:3D\_Blob\_Segmentation
 ---
 
-{% include stub%}
+{% include warning/stub %}
 

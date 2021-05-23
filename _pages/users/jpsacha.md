@@ -6,4 +6,4 @@ github: jpsacha
 linkedin: in/jarek-sacha
 ---
 
-{% include stub %}
+{% include warning/stub %}

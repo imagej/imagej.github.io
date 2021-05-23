@@ -6,4 +6,4 @@ name: Kefang Ding
 github: KFDing
 ---
 
-{% include stub %}
+{% include warning/stub %}

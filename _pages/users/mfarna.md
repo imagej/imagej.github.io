@@ -8,4 +8,4 @@ affiliation:
 - Western University, Canada
 ---
 
-{% include stub %}
+{% include warning/stub %}

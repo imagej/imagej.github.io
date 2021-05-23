@@ -8,5 +8,5 @@ github: sbesson
 forum: s.besson
 website: https://www.openmicroscopy.org/teams/
 ---
-{% include stub %}
+{% include warning/stub %}
 

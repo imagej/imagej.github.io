@@ -20,7 +20,7 @@ However, Fiji (like ImageJ) should run on any system for which a Java 8 runtime 
 
 # Installation
 
-{% include avoidprogramfiles %}
+{% include warning/avoid-program-files %}
 
 {% include aside title="Packages for Debian / Ubuntu" content="
 We used to offer Debian packages of Fiji. Unfortunately, for several reasons,

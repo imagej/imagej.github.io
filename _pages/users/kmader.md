@@ -6,5 +6,5 @@ name: Kevin Mader
 github: kmader
 linkedin: in/kevinmader
 ---
-{% include stub %}
+{% include warning/stub %}
 

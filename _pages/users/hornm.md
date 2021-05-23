@@ -6,4 +6,4 @@ name: Martin Horn
 github: hornm
 ---
 
-{% include stub %}
+{% include warning/stub %}

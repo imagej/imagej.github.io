@@ -6,4 +6,4 @@ name: Wei Ouyang
 github: oeway
 ---
 
-{% include stub %}
+{% include warning/stub %}

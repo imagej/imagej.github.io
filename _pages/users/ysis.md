@@ -6,4 +6,4 @@ name: Cornelius Sicker
 github: ysis
 ---
 
-{% include stub %}
+{% include warning/stub %}

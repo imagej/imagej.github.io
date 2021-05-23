@@ -6,5 +6,5 @@ name: Zach Petersen
 affiliation: UW-Madison LOCI (former) | /orgs/loci
 github: zjpetersen
 ---
-{% include stub %}
+{% include warning/stub %}
 

@@ -6,4 +6,4 @@ name: Martin W. Kirst
 github: nitram509
 ---
 
-{% include stub %}
+{% include warning/stub %}

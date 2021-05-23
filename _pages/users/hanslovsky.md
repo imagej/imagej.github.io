@@ -9,4 +9,4 @@ forum: hanslovsky
 github: hanslovsky
 ---
 
-{% include stub %}
+{% include warning/stub %}

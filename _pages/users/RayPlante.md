@@ -6,4 +6,4 @@ name: Ray Plante
 github: RayPlante
 ---
 
-{% include stub %}
+{% include warning/stub %}

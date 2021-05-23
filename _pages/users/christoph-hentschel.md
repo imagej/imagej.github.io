@@ -8,4 +8,4 @@ affiliation:
 linkedin: in/christoph-hentschel-786055100
 ---
 
-{% include stub %}
+{% include warning/stub %}

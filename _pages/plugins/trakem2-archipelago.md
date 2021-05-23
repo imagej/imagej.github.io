@@ -5,7 +5,7 @@ categories: [Plugins]
 artifact: sc.fiji:TrakEM2\_Archipelago
 ---
 
-{% include stub%}
+{% include warning/stub %}
 
 
 

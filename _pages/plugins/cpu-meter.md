@@ -4,4 +4,4 @@ title: CPU Meter
 artifact: sc.fiji:CPU\_Meter
 ---
 
-{% include stub%}
+{% include warning/stub %}

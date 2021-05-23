@@ -1,4 +1,4 @@
 ---
 title: Widgets
 ---
-{% include stub %}
+{% include warning/stub %}

@@ -6,4 +6,4 @@ name: Eric Perlman
 github: perlman
 ---
 
-{% include stub %}
+{% include warning/stub %}

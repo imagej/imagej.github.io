@@ -9,4 +9,4 @@ github: CellKai
 forum: CellKai
 ---
 
-{% include stub %}
+{% include warning/stub %}

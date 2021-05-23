@@ -5,7 +5,7 @@ categories: [Plugins]
 artifact: sc.fiji:Kuwahara\_Filter
 ---
 
-{% include stub%}
+{% include warning/stub %}
 
 
 

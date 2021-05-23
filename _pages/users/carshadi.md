@@ -10,4 +10,4 @@ github: carshadi
 website: https://www.janelia.org/people/cameron-arshadi
 ---
 
-{% include stub %}
+{% include warning/stub %}

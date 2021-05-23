@@ -5,5 +5,5 @@ title: Ben Tupper
 name: Ben Tupper
 github: btupper
 ---
-{% include stub %}
+{% include warning/stub %}
 

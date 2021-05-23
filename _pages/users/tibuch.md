@@ -8,5 +8,5 @@ forum: tibuch
 github: tibuch
 website: https://tibuch.github.io/
 ---
-{% include stub %}
+{% include warning/stub %}
 

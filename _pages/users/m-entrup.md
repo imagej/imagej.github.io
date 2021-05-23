@@ -6,5 +6,5 @@ name: Michael Entrup
 forum: m-entrup
 github: m-entrup
 ---
-{% include stub %}
+{% include warning/stub %}
 

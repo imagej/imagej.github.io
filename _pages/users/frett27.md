@@ -6,4 +6,4 @@ name: Patrice Freydiere
 github: frett27
 ---
 
-{% include stub %}
+{% include warning/stub %}

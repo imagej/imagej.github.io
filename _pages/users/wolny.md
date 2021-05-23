@@ -6,4 +6,4 @@ name: Adrian Wolny
 github: wolny
 ---
 
-{% include stub %}
+{% include warning/stub %}

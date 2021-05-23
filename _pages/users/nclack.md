@@ -6,4 +6,4 @@ name: Nathan Clack
 github: nclack
 ---
 
-{% include stub %}
+{% include warning/stub %}

@@ -6,4 +6,4 @@ name: Jan Kybic
 github: jkybic
 ---
 
-{% include stub %}
+{% include warning/stub %}

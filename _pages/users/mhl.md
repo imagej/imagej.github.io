@@ -7,4 +7,4 @@ scholar: wxSnkE0AAAAJ
 website: http://longair.net/mark/
 ---
 
-{% include stub %}
+{% include warning/stub %}

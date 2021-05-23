@@ -6,4 +6,4 @@ name: Peter Steinbach
 github: psteinb
 ---
 
-{% include stub %}
+{% include warning/stub %}

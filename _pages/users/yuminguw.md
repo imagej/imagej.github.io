@@ -6,4 +6,4 @@ name: Yuming Liu
 github: yuminguw
 ---
 
-{% include stub %}
+{% include warning/stub %}

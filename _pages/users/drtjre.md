@@ -6,4 +6,4 @@ name: Thomas Re
 github: drtjre
 ---
 
-{% include stub %}
+{% include warning/stub %}

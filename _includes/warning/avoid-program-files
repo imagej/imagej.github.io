@@ -1,0 +1,14 @@
+{% include notice icon="warning" content='
+<span style="font-size: large; color: red">Caution: "Program Files" not recommended!</span>
+
+If you are installing ImageJ on Windows, we strongly recommend that you store
+your ImageJ.app directory somewhere in your user space
+(e.g., `C:\Users\[your name]\ImageJ.app`) rather than in `C:\Program Files` or
+other system-wide directory. If you move ImageJ.app to such a directory, modern
+versions of Windows will deny ImageJ write permission to its own directory
+structure, preventing it from being able to update. See also
+[imagej/imagej#72](https://github.com/imagej/imagej/issues/72).' %}
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

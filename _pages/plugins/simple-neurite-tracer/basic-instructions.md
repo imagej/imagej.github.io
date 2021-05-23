@@ -4,7 +4,7 @@ title: Simple Neurite Tracer › Basic Instructions
 categories: [tutorials]
 ---
 
-{% include sntdeprecation%}
+{% include snt/deprecated %}
 
 
 #### Starting the PlugIn

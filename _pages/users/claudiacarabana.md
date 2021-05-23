@@ -6,5 +6,5 @@ name: Claudia Carabana Garcia
 affiliation: Institut Curie, Paris | https://science.curie.fr/members/claudia-carabana/
 github: claudiacarabana
 ---
-{% include stub %}
+{% include warning/stub %}
 

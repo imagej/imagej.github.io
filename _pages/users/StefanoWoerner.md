@@ -6,4 +6,4 @@ name: Stefano Woerner
 github: StefanoWoerner
 ---
 
-{% include stub %}
+{% include warning/stub %}

@@ -4,7 +4,7 @@ title: Simple Neurite Tracer › Preprocessing Data for Better Results
 categories: [tutorials]
 ---
 
-{% include sntdeprecation%}
+{% include snt/deprecated %}
 
 
 Simple Neurite Tracer's "Hessian-based analysis" option for filtering for tube-like structures is an quick way of improving the efficiency and accuracy of path-finding. However, for best results, I would recommend using a slower but more accurate method to preprocess the data.

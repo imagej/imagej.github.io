@@ -7,5 +7,5 @@ affiliation: IRI Life Sciences, Humboldt-Universitaet zu Berlin | https://www.ir
 website: http://www.thereberlab.com/
 github: ReberLabHU
 ---
-{% include stub %}
+{% include warning/stub %}
 

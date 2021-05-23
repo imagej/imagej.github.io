@@ -6,4 +6,4 @@ name: Nicolas Chiaruttini
 github: NicoKiaru
 ---
 
-{% include stub %}
+{% include warning/stub %}

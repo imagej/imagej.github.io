@@ -8,5 +8,5 @@ affiliation:
   - University of Wisconsin-Madison | https://wisc.edu/
 github: kghildebrand
 ---
-{% include stub %}
+{% include warning/stub %}
 

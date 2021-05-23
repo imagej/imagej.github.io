@@ -6,4 +6,4 @@ name: Fabrice de Chaumont
 github: Fab14
 ---
 
-{% include stub %}
+{% include warning/stub %}

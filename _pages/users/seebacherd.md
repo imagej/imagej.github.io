@@ -6,4 +6,4 @@ name: Daniel Seebacher
 github: seebacherd
 ---
 
-{% include stub %}
+{% include warning/stub %}

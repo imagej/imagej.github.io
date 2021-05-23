@@ -11,5 +11,5 @@ openhub: ehrenfeu
 orcid: 0000-0002-5376-9898
 linkedin: in/nikoehrenfeuchter
 ---
-{% include stub %}
+{% include warning/stub %}
 

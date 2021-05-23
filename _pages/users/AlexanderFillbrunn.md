@@ -6,4 +6,4 @@ name: Alexander Fillbrunn
 github: AlexanderFillbrunn
 ---
 
-{% include stub %}
+{% include warning/stub %}

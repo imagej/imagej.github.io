@@ -9,4 +9,4 @@ affiliation:
 github: bogovicj
 ---
 
-{% include stub %}
+{% include warning/stub %}

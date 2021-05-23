@@ -5,7 +5,7 @@ categories: [Plugins]
 artifact: sc.fiji:Dichromacy
 ---
 
-{% include stub%}
+{% include warning/stub %}
 
 
 

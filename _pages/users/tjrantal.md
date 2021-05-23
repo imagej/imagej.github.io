@@ -6,4 +6,4 @@ name: Timo Rantalainen
 github: tjrantal
 ---
 
-{% include stub %}
+{% include warning/stub %}

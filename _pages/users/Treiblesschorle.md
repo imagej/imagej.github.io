@@ -6,4 +6,4 @@ name: David Kolb
 github: Treiblesschorle
 ---
 
-{% include stub %}
+{% include warning/stub %}

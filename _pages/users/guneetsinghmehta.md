@@ -6,4 +6,4 @@ name: Guneet Singh Mehta
 github: guneetsinghmehta
 ---
 
-{% include stub %}
+{% include warning/stub %}

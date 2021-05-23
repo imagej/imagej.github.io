@@ -6,4 +6,4 @@ name: Christian Albrecht
 github: ChristianAlbrecht
 ---
 
-{% include stub %}
+{% include warning/stub %}

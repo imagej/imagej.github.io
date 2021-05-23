@@ -5,5 +5,5 @@ title: Pariksheet Nanda
 name: Pariksheet Nanda
 github: omsai
 ---
-{% include stub %}
+{% include warning/stub %}
 

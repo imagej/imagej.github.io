@@ -5,7 +5,7 @@ categories: [Plugins]
 artifact: sc.fiji:Thread\_Killer
 ---
 
-{% include stub%}
+{% include warning/stub %}
 
 
 

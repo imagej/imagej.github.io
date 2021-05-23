@@ -8,4 +8,4 @@ affiliation:
 forum: smgriffin2
 github: smgriffin2
 ---
-{% include stub %}
+{% include warning/stub %}

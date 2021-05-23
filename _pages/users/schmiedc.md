@@ -6,4 +6,4 @@ name: Christopher Schmied
 github: schmiedc
 ---
 
-{% include stub %}
+{% include warning/stub %}

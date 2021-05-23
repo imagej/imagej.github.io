@@ -6,4 +6,4 @@ name: Leonardo Guizzetti
 github: leonardicus
 ---
 
-{% include stub %}
+{% include warning/stub %}

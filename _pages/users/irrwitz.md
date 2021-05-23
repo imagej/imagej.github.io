@@ -6,4 +6,4 @@ name: Joshy Cyriac
 github: irrwitz
 ---
 
-{% include stub %}
+{% include warning/stub %}

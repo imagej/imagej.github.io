@@ -6,4 +6,4 @@ name: Andreas Burger
 github: AndreasBurger
 ---
 
-{% include stub %}
+{% include warning/stub %}

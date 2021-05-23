@@ -6,4 +6,4 @@ name: Tomas Vicar
 github: tomasvicar
 ---
 
-{% include stub %}
+{% include warning/stub %}

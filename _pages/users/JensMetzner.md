@@ -6,4 +6,4 @@ name: Jens Metzner
 github: JensMetzner
 ---
 
-{% include stub %}
+{% include warning/stub %}

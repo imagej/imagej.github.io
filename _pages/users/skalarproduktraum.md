@@ -7,5 +7,5 @@ affiliation: MPI-CBG Dresden
 forum: skalarproduktraum
 github: skalarproduktraum
 ---
-{% include stub %}
+{% include warning/stub %}
 

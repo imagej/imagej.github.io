@@ -6,4 +6,4 @@ name: Lars Grüter
 github: lagru
 ---
 
-{% include stub %}
+{% include warning/stub %}

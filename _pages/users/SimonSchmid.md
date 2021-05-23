@@ -6,4 +6,4 @@ name: Simon Schmid
 github: SimonSchmid
 ---
 
-{% include stub %}
+{% include warning/stub %}

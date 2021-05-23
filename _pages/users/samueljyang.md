@@ -8,5 +8,5 @@ researchgate: Samuel_J_Yang
 scholar: 93Pw8u8AAAAJ
 website: http://samueljyang.xyz/
 ---
-{% include stub %}
+{% include warning/stub %}
 

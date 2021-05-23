@@ -5,7 +5,7 @@ categories: [Plugins]
 artifact: sc.fiji:FS\_Align\_TrakEM2
 ---
 
-{% include stub%}
+{% include warning/stub %}
 
 
 

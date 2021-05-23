@@ -6,4 +6,4 @@ name: Marcel Austenfeld
 github: Bio7
 ---
 
-{% include stub %}
+{% include warning/stub %}

@@ -8,5 +8,5 @@ affiliation: University of Konstanz
 forum: gab1one
 github: gab1one
 ---
-{% include stub %}
+{% include warning/stub %}
 

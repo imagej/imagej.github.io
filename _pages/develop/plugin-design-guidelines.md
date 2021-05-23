@@ -4,7 +4,7 @@ title: PlugIn Design Guidelines
 ---
 
 
-{% include outdated%}
+{% include warning/outdated %}
 
 
 ## Key concepts

@@ -6,5 +6,5 @@ name: Dimiter Prodanov
 forum: dimiterpp
 github: dprodanov
 ---
-{% include stub %}
+{% include warning/stub %}
 

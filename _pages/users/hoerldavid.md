@@ -8,5 +8,5 @@ affiliation:
   - MDC Berlin | https://www.mdc-berlin.de/
 github: hoerldavid
 ---
-{% include stub %}
+{% include warning/stub %}
 

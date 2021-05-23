@@ -7,4 +7,4 @@ affiliation:
 github: KudryashevLab
 ---
 
-{% include stub %}
+{% include warning/stub %}

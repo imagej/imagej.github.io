@@ -6,4 +6,4 @@ name: Andrea Ballaminut
 github: ballaminut
 ---
 
-{% include stub %}
+{% include warning/stub %}

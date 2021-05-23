@@ -6,4 +6,4 @@ name: Peter Walczysko
 github: pwalczysko
 ---
 
-{% include stub %}
+{% include warning/stub %}

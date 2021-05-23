@@ -4,5 +4,5 @@ title: VIB-lib
 artifact: sc.fiji:VIB-lib
 ---
 
-{% include stub%}
+{% include warning/stub %}
 

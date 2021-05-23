@@ -6,4 +6,4 @@ name: Uwe Schmidt
 github: uschmidt83
 ---
 
-{% include stub %}
+{% include warning/stub %}

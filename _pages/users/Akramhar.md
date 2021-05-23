@@ -6,4 +6,4 @@ name: Alex Rigano
 github: Akramhar
 ---
 
-{% include stub %}
+{% include warning/stub %}

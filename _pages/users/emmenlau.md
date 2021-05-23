@@ -6,4 +6,4 @@ name: Mario Emmenlauer
 github: emmenlau
 ---
 
-{% include stub %}
+{% include warning/stub %}

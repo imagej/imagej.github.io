@@ -6,4 +6,4 @@ name: Christopher M. Bruns
 github: cmbruns
 ---
 
-{% include stub %}
+{% include warning/stub %}

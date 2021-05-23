@@ -4,4 +4,4 @@ name: Lionel Dupuy
 github: LionelDupuy
 ---
 
-{% include stub %}
+{% include warning/stub %}

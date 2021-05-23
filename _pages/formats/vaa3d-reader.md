@@ -5,7 +5,7 @@ categories: [Plugins,Import-Export]
 artifact: sc.fiji:Vaa3d\_Reader
 ---
 
-{% include stub%}
+{% include warning/stub %}
 
 
  

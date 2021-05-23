@@ -78,7 +78,7 @@ Note that this is an example of creating an object in JRuby; you use the usual `
 
 If you need to use classes that aren't in the `java.*` or `ij.*` hierarchy—or if you are developing JRuby scripts in the [Script Editor](/scripting/script-editor)—you will have to include them explicitly.
 
-{%- include importing-classes lang='JRuby' -%}
+{%- include warning/importing-classes lang='JRuby' -%}
 
 For example, in the classpath of [Fiji](/software/fiji) there is a useful class called `util.BatchOpener,` that has static methods for opening files as arrays of `ImagePlus` objects (one per channel) without showing them. To use these methods, you would have to do:
 ```ruby

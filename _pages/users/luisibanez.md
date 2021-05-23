@@ -4,4 +4,4 @@ name: Luis Ibanez
 github: luisibanez
 ---
 
-{% include stub %}
+{% include warning/stub %}

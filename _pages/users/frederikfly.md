@@ -6,5 +6,5 @@ name: Erwin Frise
 affiliation: Lawrence Berkeley National Laboratory | http://www.lbl.gov/
 github: frederikfly
 ---
-{% include stub %}
+{% include warning/stub %}
 

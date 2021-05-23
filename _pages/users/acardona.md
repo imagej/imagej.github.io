@@ -11,4 +11,4 @@ scholar: hh9mnKisJrYC
 website: https://albert.rierol.net/
 ---
 
-{% include stub %}
+{% include warning/stub %}

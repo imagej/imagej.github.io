@@ -6,4 +6,4 @@ name: Andreas Graumann
 github: angrauma
 ---
 
-{% include stub %}
+{% include warning/stub %}

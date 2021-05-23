@@ -11,5 +11,5 @@ researchgate: Hadrien_Mary
 linkedin: in/hmary
 website: http://hadim.fr/
 ---
-{% include stub %}
+{% include warning/stub %}
 

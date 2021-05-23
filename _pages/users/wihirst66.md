@@ -6,5 +6,5 @@ name: William Hirst
 affiliation: Humboldt-Universität zu Berlin | https://www.thereberlab.com
 github: wihirst66
 ---
-{% include stub %}
+{% include warning/stub %}
 

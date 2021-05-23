@@ -6,4 +6,4 @@ name: Arthur Edelstein
 github: arthuredelstein
 ---
 
-{% include stub %}
+{% include warning/stub %}

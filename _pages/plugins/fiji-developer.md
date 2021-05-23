@@ -5,7 +5,7 @@ categories: [Plugins]
 artifact: sc.fiji:Fiji\_Developer
 ---
 
-{% include stub%}
+{% include warning/stub %}
 
 
 

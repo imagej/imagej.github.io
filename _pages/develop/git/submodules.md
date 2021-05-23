@@ -6,7 +6,7 @@ section: Development:Git
 
 
 
-{% include outdated%}
+{% include warning/outdated %}
 
 
 ## Submodules in Fiji

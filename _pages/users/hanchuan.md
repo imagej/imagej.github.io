@@ -6,4 +6,4 @@ name: Hanchuan Peng
 github: hanchuan
 ---
 
-{% include stub %}
+{% include warning/stub %}

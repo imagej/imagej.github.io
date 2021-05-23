@@ -6,4 +6,4 @@ name: Michael Zinsmaier
 github: MichaelZinsmaier
 ---
 
-{% include stub %}
+{% include warning/stub %}

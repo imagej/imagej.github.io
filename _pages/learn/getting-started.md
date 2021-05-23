@@ -22,7 +22,7 @@ On macOS, the menu bar will appear on the top of the screen (as with all macOS a
 
 ## The search bar
 
-{% include stub %}
+{% include warning/stub %}
 
 ## The menu bar
 

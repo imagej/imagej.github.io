@@ -4,5 +4,5 @@ title: Archipelago Plugins
 artifact: sc.fiji:Archipelago\_Plugins
 ---
 
-{% include stub%}
+{% include warning/stub %}
 

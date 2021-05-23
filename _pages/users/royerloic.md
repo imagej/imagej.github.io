@@ -6,4 +6,4 @@ name: Loic Royer
 github: royerloic
 ---
 
-{% include stub %}
+{% include warning/stub %}

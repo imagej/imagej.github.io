@@ -6,4 +6,4 @@ name: Yang Liu
 github: kkangle
 ---
 
-{% include stub %}
+{% include warning/stub %}

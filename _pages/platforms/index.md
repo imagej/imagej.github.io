@@ -1,4 +1,4 @@
 ---
 title: Platforms
 ---
-{% include stub %}
+{% include warning/stub %}

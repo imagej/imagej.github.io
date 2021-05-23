@@ -6,4 +6,4 @@ name: Will Moore
 github: will-moore
 ---
 
-{% include stub %}
+{% include warning/stub %}

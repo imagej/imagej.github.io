@@ -17,7 +17,7 @@ ImageJ supports JavaScript via Java's built-in {% include wikipedia title='Nasho
 
 ### Importing classes
 
-{% include importing-classes lang='JavaScript' %} You can specify imports in JavaScript as follows:
+{% include warning/importing-classes lang='JavaScript' %} You can specify imports in JavaScript as follows:
 
     importClass(Packages.java.io.File)
 

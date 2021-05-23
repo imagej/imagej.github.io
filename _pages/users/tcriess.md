@@ -6,4 +6,4 @@ name: Thorsten Riess
 github: tcriess
 ---
 
-{% include stub %}
+{% include warning/stub %}

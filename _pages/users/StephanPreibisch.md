@@ -12,5 +12,5 @@ github: StephanPreibisch
 scholar: P4RXq8QAAAAJ
 website: http://www.preibisch.net/
 ---
-{% include stub %}
+{% include warning/stub %}
 

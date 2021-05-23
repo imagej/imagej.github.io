@@ -6,4 +6,4 @@ name: Chris Allan
 github: chris-allan
 ---
 
-{% include stub %}
+{% include warning/stub %}

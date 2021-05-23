@@ -174,15 +174,8 @@ The following tables list all of this site's general-purpose includes:
 |--------------------------------------|---------------------------------------|
 | [notice](notices)                    | Insert an informational notice banner |
 | [aside](TODO)                        | Float a right sidebar with commentary |
-| [outdated](TODO)                     | Outdated content warning              |
-| [unmaintained](TODO)                 | Warning about unmaintained software   |
-| [stub](TODO)                         | Empty content warning                 |
-| [wip](TODO)                          | Work-in-progress warning              |
 |======================================|=======================================|
-| [avoidprogramfiles](TODO)            | Program Files warning                 |
 | [imglib1-deprecation-info-box](TODO) | ImgLib1 deprecation warning           |
-| [sntdeprecation](TODO)               | SNT deprecation warning               |
-| [importing-classes](TODO)            | Script Editor class import warning    |
 | [communication](TODO)                | List of ways to get ImageJ help       |
 | [recommendedcontact](TODO)           | Recommend to use the Image.sc Forum   |
 

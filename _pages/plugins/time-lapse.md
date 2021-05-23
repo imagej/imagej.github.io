@@ -5,7 +5,7 @@ categories: [Plugins]
 artifact: sc.fiji:Time\_Lapse
 ---
 
-{% include stub%}
+{% include warning/stub %}
 
 
 

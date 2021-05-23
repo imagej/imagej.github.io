@@ -9,4 +9,4 @@ affiliation:
 github: aneevel
 ---
 
-{% include stub %}
+{% include warning/stub %}

@@ -6,4 +6,4 @@ name: Stefan Verhoeven
 github: sverhoeven
 ---
 
-{% include stub %}
+{% include warning/stub %}

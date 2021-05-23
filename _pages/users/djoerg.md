@@ -6,4 +6,4 @@ name: David Jörg
 github: djoerg
 ---
 
-{% include stub %}
+{% include warning/stub %}

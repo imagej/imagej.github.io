@@ -6,4 +6,4 @@ name: Gabriel Selzer
 github: gselzer
 ---
 
-{% include stub %}
+{% include warning/stub %}

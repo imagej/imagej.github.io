@@ -14,4 +14,4 @@ name: Ivo Sbalzarini
 github: ivos99
 ---
 
-{% include stub %}
+{% include warning/stub %}

@@ -6,4 +6,4 @@ name: Maksim Novikov
 github: m-novikov
 ---
 
-{% include stub %}
+{% include warning/stub %}

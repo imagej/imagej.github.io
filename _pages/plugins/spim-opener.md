@@ -5,7 +5,7 @@ categories: [Plugins]
 artifact: sc.fiji:SPIM\_Opener
 ---
 
-{% include stub%}
+{% include warning/stub %}
 
 
 

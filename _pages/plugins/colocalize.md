@@ -4,7 +4,7 @@ title: Colocalize
 categories: [Colocalization,Plugins]
 ---
 
-{% include wip%}
+{% include warning/wip %}
 
 
 # What is Colocalize?

@@ -6,4 +6,4 @@ name: Fernando Amat
 github: fernandoamat
 ---
 
-{% include stub %}
+{% include warning/stub %}

@@ -6,4 +6,4 @@ name: Mats Moskopp
 github: axon900
 ---
 
-{% include stub %}
+{% include warning/stub %}

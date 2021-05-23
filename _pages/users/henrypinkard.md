@@ -6,4 +6,4 @@ name: Henry Pinkard
 github: henrypinkard
 ---
 
-{% include stub %}
+{% include warning/stub %}

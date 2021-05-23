@@ -7,5 +7,5 @@ affiliation: Max Planck Institute of Biochemistry, Martinsried, Germany
 forum: gcardone
 github: giocard
 ---
-{% include stub %}
+{% include warning/stub %}
 

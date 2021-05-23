@@ -6,4 +6,4 @@ name: Cyril Mongis
 github: cmongis
 ---
 
-{% include stub %}
+{% include warning/stub %}

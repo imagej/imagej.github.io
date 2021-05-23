@@ -4,4 +4,4 @@ name: Joe Napoli
 github: JosephMNapoli
 ---
 
-{% include stub %}
+{% include warning/stub %}

@@ -16,7 +16,7 @@ section: Learn:Supported Platforms
 
 # Installation
 
-{% include avoidprogramfiles%}
+{% include warning/avoid-program-files %}
 
 
 # Troubleshooting

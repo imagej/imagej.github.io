@@ -6,4 +6,4 @@ name: Mark Tsuchida
 github: marktsuchida
 ---
 
-{% include stub %}
+{% include warning/stub %}

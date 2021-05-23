@@ -6,4 +6,4 @@ name: Daniel Bogenrieder
 github: DanielBogenrieder
 ---
 
-{% include stub %}
+{% include warning/stub %}

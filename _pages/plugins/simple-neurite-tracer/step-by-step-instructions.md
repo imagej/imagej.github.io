@@ -4,7 +4,7 @@ title: Simple Neurite Tracer › Step-By-Step Instructions
 categories: [tutorials]
 ---
 
-{% include sntdeprecation%}
+{% include snt/deprecated %}
 
 
 <div class="toclimit-3">

@@ -68,7 +68,7 @@ Unfortunately, El Capitan has some new java-related issues. If you upgraded to E
 
 # Additional macOS Tips
 
-{% include outdated %}
+{% include warning/outdated %}
 
 ## Running Fiji in 32-bit mode
 

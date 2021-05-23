@@ -12,5 +12,5 @@ scholar: X5XVi-QAAAAJ&hl
 orcid: 0000-0002-9129-6403
 website: https://www.mri.cnrs.fr/en/optical-imaging/our-facilities/mri-crbm.html
 ---
-{% include stub %}
+{% include warning/stub %}
 

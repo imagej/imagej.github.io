@@ -139,7 +139,7 @@ Within the jdb prompt, type "help".
 
 ### Importing classes
 
-{% include importing-classes lang='Clojure' %} You can specify imports in Clojure in a few ways:
+{% include warning/importing-classes lang='Clojure' %} You can specify imports in Clojure in a few ways:
 
     ; A single import.
     (import java.util.Date)

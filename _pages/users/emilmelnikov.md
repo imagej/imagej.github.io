@@ -6,4 +6,4 @@ name: Emil Nelnikov
 github: emilmelnikov
 ---
 
-{% include stub %}
+{% include warning/stub %}

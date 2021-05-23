@@ -6,4 +6,4 @@ name: Jay Warrick
 github: jaywarrick
 ---
 
-{% include stub %}
+{% include warning/stub %}

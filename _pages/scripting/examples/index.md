@@ -1,4 +1,4 @@
 ---
 title: Scripting Examples
 ---
-{% include stub %}
+{% include warning/stub %}

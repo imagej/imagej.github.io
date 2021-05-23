@@ -5,5 +5,5 @@ title: Jan Funke
 name: Jan Funke
 github: funkey
 ---
-{% include stub %}
+{% include warning/stub %}
 

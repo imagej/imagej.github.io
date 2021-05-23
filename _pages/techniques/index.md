@@ -1,4 +1,4 @@
 ---
 title: Techniques
 ---
-{% include stub %}
+{% include warning/stub %}

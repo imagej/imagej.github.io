@@ -6,4 +6,4 @@ name: Asim Shankar
 github: asimshankar
 ---
 
-{% include stub %}
+{% include warning/stub %}

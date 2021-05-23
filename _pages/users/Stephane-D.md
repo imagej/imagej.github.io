@@ -6,4 +6,4 @@ name: Stephane Dallongeville
 github: Stephane-D
 ---
 
-{% include stub %}
+{% include warning/stub %}

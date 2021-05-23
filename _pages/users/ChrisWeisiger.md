@@ -6,4 +6,4 @@ name: Chris Weisiger
 github: ChrisWeisiger
 ---
 
-{% include stub %}
+{% include warning/stub %}

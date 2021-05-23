@@ -6,4 +6,4 @@ name: Manan Lalit
 github: MLbyML
 ---
 
-{% include stub %}
+{% include warning/stub %}

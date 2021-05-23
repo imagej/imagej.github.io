@@ -12,5 +12,5 @@ affiliation:
 forum: krzysg
 github: krzysg
 ---
-{% include stub %}
+{% include warning/stub %}
 

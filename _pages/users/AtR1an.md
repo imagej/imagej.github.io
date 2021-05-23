@@ -6,4 +6,4 @@ name: Adrian Nembach
 github: AtR1an
 ---
 
-{% include stub %}
+{% include warning/stub %}

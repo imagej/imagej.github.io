@@ -45,7 +45,7 @@ Within the interpreter, all ImageJ, java.lang.\* and TrakEM2 classes are automat
 
 #### Importing classes
 
-{% include importing-classes lang='Jython' %} You can specify imports in Jython as follows:
+{% include warning/importing-classes lang='Jython' %} You can specify imports in Jython as follows:
 
     from java.io import File
 

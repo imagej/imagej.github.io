@@ -5,4 +5,4 @@ affiliation: UW-Madison LOCI (former) | /orgs/loci
 github: RuizhiLiao
 ---
 
-{% include stub %}
+{% include warning/stub %}

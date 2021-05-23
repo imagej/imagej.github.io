@@ -5,5 +5,5 @@ title: Samuel Inverso
 name: Samuel Inverso
 github: sinverso
 ---
-{% include stub %}
+{% include warning/stub %}
 

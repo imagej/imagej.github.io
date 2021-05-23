@@ -6,4 +6,4 @@ website: www.gatterdam.eu
 github: VolkerGatterdam
 ---
 
-{% include stub %}
+{% include warning/stub %}

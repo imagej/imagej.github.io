@@ -7,4 +7,4 @@ affiliation:
 github: quazgar
 ---
 
-{% include stub %}
+{% include warning/stub %}

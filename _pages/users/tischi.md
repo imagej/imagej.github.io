@@ -6,4 +6,4 @@ name: Christian Tischer
 github: tischi
 ---
 
-{% include stub %}
+{% include warning/stub %}

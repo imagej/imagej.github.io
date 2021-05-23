@@ -6,7 +6,7 @@ categories: [Development,Fiji]
 ---
 
 
-{% include outdated%}
+{% include warning/outdated %}
 
 
 Fiji is a community effort. So we are happy whenever we see new people developing Fiji!

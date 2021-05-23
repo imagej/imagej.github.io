@@ -5,7 +5,7 @@ categories: [Plugins]
 artifact: sc.fiji:Color\_Histogram
 ---
 
-{% include stub%}
+{% include warning/stub %}
 
 
 See also [Color Inspector 3D](/plugins/color-inspector-3d).

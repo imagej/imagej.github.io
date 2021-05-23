@@ -7,6 +7,6 @@ affiliation:
 linkedin: in/dylanson
 ---
 
-{% include stub %}
+{% include warning/stub %}
 
 See also {% include github org="ShuJiaLab" repo="" label="ShuJiaLab on GitHub" %}.

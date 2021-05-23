@@ -4,7 +4,7 @@ title: Simple Neurite Tracer › Using MIP Overlays
 categories: [tutorials]
 ---
 
-{% include sntdeprecation%}
+{% include snt/deprecated %}
 
 
 If you are tracing bright neurons with a structure that appears clear when viewed in a Maximum Intensity Projection of the stack, you can now use a couple of new features of Simple Neurite Tracer to speed up your tracing. These are:

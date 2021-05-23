@@ -6,4 +6,4 @@ name: Martin Weigert
 github: maweigert
 ---
 
-{% include stub %}
+{% include warning/stub %}
