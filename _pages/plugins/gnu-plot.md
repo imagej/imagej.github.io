@@ -10,7 +10,7 @@ The Gnu\_Plot plugin provides the glue between ImageJ and Gnuplot. The main impe
 
 ## Features
 
-<figure><img src="/media/gnu-plot.jpg" title="&quot;Gnu_Plot GUI&quot;" width="400" alt="&quot;Gnu_Plot GUI&quot;" /><figcaption aria-hidden="true">"Gnu_Plot GUI"</figcaption></figure>
+{% include img src="/media/gnu-plot.jpg" width="400" caption="Gnu_Plot GUI" %}
 
 When run as a plugin Gnu\_Plot will collect both the Gnuplot script and data and run this through the gnuplot executable as stdin, and read the image from stdout and display it in a ImagePlus window, and display any errors from stderr in the Log window.  
 **Plot Title** will be the title given to any script or image windows created.  

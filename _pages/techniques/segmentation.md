@@ -93,7 +93,7 @@ Preprocess the image using filters, to make later thresholding more effective. W
 
 ## Adjusting Threshold
 
-<figure><img src="/media/threshold-tree.png" title="Tree ring sample image with a threshold applied for a B&amp;W image" width="300" alt="Tree ring sample image with a threshold applied for a B&amp;W image" /><figcaption aria-hidden="true">Tree ring sample image with a threshold applied for a B&amp;W image</figcaption></figure>
+{% include img src="/media/threshold-tree.png" width="300" caption="Tree ring sample image with a threshold applied for a B&amp;W image" %}
 
 Ideally you want to use one of the auto-threshold methods, rather than manually tweaking, so that your result is reproducible later on the same data, and on multiple other datasets.
 
@@ -105,7 +105,7 @@ Ideally you want to use one of the auto-threshold methods, rather than manually 
 
 ## Creating Masks
 
-<figure><img src="/media/eroded-tree.png" title="Over-saturated mask is eroded around the center tree ring" width="300" alt="Over-saturated mask is eroded around the center tree ring" /><figcaption aria-hidden="true">Over-saturated mask is eroded around the center tree ring</figcaption></figure>
+{% include img src="/media/eroded-tree.png" width="300" caption="Over-saturated mask is eroded around the center tree ring" %}
 
 -   Select {% include bc path='Edit | Selection | Create Mask'%}
 -   Based on the image and set threshold, some portions of the image may be over/under saturated
@@ -116,7 +116,7 @@ Ideally you want to use one of the auto-threshold methods, rather than manually 
 
 ## Selections
 
-<figure><img src="/media/selection-tree.png" title="Selections on the mask" width="300" alt="Selections on the mask" /><figcaption aria-hidden="true">Selections on the mask</figcaption></figure>
+{% include img src="/media/selection-tree.png" width="300" caption="Selections on the mask" %}
 
 ### Creating Selections
 
@@ -124,7 +124,7 @@ Ideally you want to use one of the auto-threshold methods, rather than manually 
 -   To deselect a portion of the image, select {% include key keys='Shift|left click' %}
     -   [More information](/ij/docs/guide/146-27.html#sub:Create-Selection)
 
-<figure><img src="/media/reverted-tree.png" title="Selections on the reverted image" width="300" alt="Selections on the reverted image" /><figcaption aria-hidden="true">Selections on the reverted image</figcaption></figure>
+{% include img src="/media/reverted-tree.png" width="300" caption="Selections on the reverted image" %}
 
 ### Transferring Selections
 

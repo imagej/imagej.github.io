@@ -43,6 +43,4 @@ Now we start the Graph Cut plugin on the probability image. With the "smoothness
 
 Finally, we merge the original image and the segmentation for illustration purposes:
 
-<figure><img src="/media/mito-comp.png" title="200px" width="100" alt="200px" /><figcaption aria-hidden="true">200px</figcaption></figure>
-
-  
+{% include img src="mito-comp" width="100" %}

@@ -4,7 +4,7 @@ title: Brightness and Contrast
 categories: [Cookbook, tutorials]
 ---
 
-**Note:** This page refers to the version of [ImageJ2](/software/imagej2) currently in development. For more information on using [Fiji](/software/fiji) and [ImageJ 1.x](/software/imagej1), please reference the [Fiji tutorials](/plugin-index#tutorials) and [ImageJ 1.x documentation](/ij/docs/).
+{% include notice icon="info" content="**Note:** This page refers to the version of [ImageJ2](/software/imagej2) currently in development. For more information on using [Fiji](/software/fiji) and [ImageJ 1.x](/software/imagej1), please reference the [Fiji tutorials](/plugin-index#tutorials) and [ImageJ 1.x documentation](/ij/docs/)." %}
 
 This tool may be used to adjust the brightness and contrast of an active image.
 
@@ -12,7 +12,7 @@ This tool may be used to adjust the brightness and contrast of an active image.
 
 The Brightness and Contrast tool may be accessed through {% include bc path='Image | Adjust | Brightness/Contrast'%} or {% include key keys='Ctrl|Shift|C' %}.
 
-<figure><img src="/media/brightness-contrast-window.png" title="Brightness_Contrast_Window.png" width="266" height="177" alt="Brightness_Contrast_Window.png" /><figcaption aria-hidden="true">Brightness_Contrast_Window.png</figcaption></figure>
+{% include img src="brightness-contrast-window" width="266" height="177" align="right" %}
 
 The upper and lower limits of the display range can be adjusted by modifying the minimum and maximum settings. Image brightness and image contrast can be modified by using the brightness and contrast sliders or by using the arrows on the right of the window to adjust the range.
 
@@ -26,8 +26,8 @@ The below images show the effects of adjusting brightness and contrast settings.
 
 **Before**
 
-<figure><img src="/media/brightness-contrast-before.png" title="Brightness_Contrast_Before.png" width="350" height="404" alt="Brightness_Contrast_Before.png" /><figcaption aria-hidden="true">Brightness_Contrast_Before.png</figcaption></figure>
+{% include img src="brightness-contrast-before" width="350" height="404" %}
 
 **After**
 
-<figure><img src="/media/brightness-contrast-after.png" title="Brightness_Contrast_After.png" width="350" height="404" alt="Brightness_Contrast_After.png" /><figcaption aria-hidden="true">Brightness_Contrast_After.png</figcaption></figure>
+{% include img src="brightness-contrast-after" width="350" height="404" %}

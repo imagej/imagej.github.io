@@ -27,7 +27,7 @@ The math behind it: When 'Nonlinear Contrast' and 'Half Brightness for Flat Area
 
 ## Tips
 
-<figure><img src="/media/hillshade-overlay-example.jpg" title="Topographic map created by superposition, click to enlarge" width="280" alt="Topographic map created by superposition, click to enlarge" /><figcaption aria-hidden="true">Topographic map created by superposition, click to enlarge</figcaption></figure>
+{% include img src="/media/hillshade-overlay-example.jpg" width="280" caption="Topographic map created by superposition, click to enlarge" %}
 
 -   If the slopes are very gentle, you can try setting smaller values of the pixel size to enhance the contrast.
 -   To create an output like a topographic map, display the input (elevation data) with a suitable lookup table and superimpose the hill shade output:

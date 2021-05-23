@@ -5,13 +5,7 @@ title: CIP
 
 {% include info-box software='ImageJ/Fiji' name='CIP' update-site='CIP' author='[Benoit Lombardot](/users/Benoit)' maintainer='[Benoit Lombardot](/users/Benoit)' released='January 2018' filename='CIP update site' source='https://github.com/benoalo/CIP' category='[Scripting](/plugin-index#scripting)' %}
 
-<figure><img src="/media/cip-basic-concept.png" title="CIP: " width="600" alt="CIP: " /><figcaption aria-hidden="true">CIP: </figcaption></figure>
-
-<div align="center">
-
-**Figure 1**: CIP is a simple toolbox to learn and prototype image analysis workflow in ImageJ. It hides ImageJ complexity while making it easy to combine ImageJ packages for more specific tasks.
-
-</div>
+{% include img src="/media/cip-basic-concept.png" width="600" caption="**Figure 1**: CIP is a simple toolbox to learn and prototype image analysis workflow in ImageJ. It hides ImageJ complexity while making it easy to combine ImageJ packages for more specific tasks." %}
 
 # CIP : Classic Image Processing
 
@@ -51,13 +45,7 @@ For information on the parameters, their type, whether they are optionnal or req
 
 Image analysis workflows require the user to perform stereotypic steps: enhance signal, define and characterize region, visualize and assess results. This recurring process allows to create one function per task and to organize these functions in categories with similar roles, input and output: Format, Filter, Segment, Math, Assess.
 
-<figure><img src="/media/cip-generic-pipeline.png" title="CIP_generic_pipeline.PNG" width="700" alt="CIP_generic_pipeline.PNG" /><figcaption aria-hidden="true">CIP_generic_pipeline.PNG</figcaption></figure>
-
-<div align="center">
-
-**Figure 2**: Many analysis workflow are composed of generic tasks.
-
-</div>
+{% include img src="/media/cip-generic-pipeline.png" width="700" caption="**Figure 2**: Many analysis workflow are composed of generic tasks." %}
 
 -   **[Format](/plugins/cip/format)**: These functions are used to managed image data, combine them or reduce their dimensionnality. They take one or multiple image as input and return one image as output. These function will generally provide an ouput which size and/or dimensionality can be different from the input
 
@@ -98,25 +86,13 @@ The following script shows how to segment 2d object in an image and visualize th
 
 {% include github-embed org='benoalo' repo='CIP' branch='master' path='wiki_examples/2D_nuclei.py' %}
 
-<figure><img src="/media/cip-example-2d.png" title="CIP: " width="800" alt="CIP: " /><figcaption aria-hidden="true">CIP: </figcaption></figure>
-
-<div align="center">
-
-**Figure 3**: Example a workflow performing the cropping, filtering segmentation and visualisation of a 2D image. Raw data: Platynereis embryo, acquisition: Mette Handberg-Thorsager from Tomancak lab, MPI-CBG, Dresden in collaboration with Keller lab, HHMI - Janelia Research Campus
-
-</div>
+{% include img src="/media/cip-example-2d.png" width="800" caption="**Figure 3**: Example a workflow performing the cropping, filtering segmentation and visualisation of a 2D image. Raw data: Platynereis embryo, acquisition: Mette Handberg-Thorsager from Tomancak lab, MPI-CBG, Dresden in collaboration with Keller lab, HHMI - Janelia Research Campus" %}
 
 The following script shows a 3d nuclei segmentation and the measure and displau of nuclei size. The workflow is illustrated in the **Figure 4**.
 
 {% include github-embed org='benoalo' repo='CIP' branch='master' path='wiki_examples/3D_nuclei_segmentation.py' %}
 
-<figure><img src="/media/cip-example-3d.png" title="CIP: " width="800" alt="CIP: " /><figcaption aria-hidden="true">CIP: </figcaption></figure>
-
-<div align="center">
-
-**Figure 4**: Example a workflow performing the cropping, filtering segmentation and visualisation of a 2D image. Raw data: Platynereis embryo, acquisition: Mette Handberg-Thorsager from Tomancak lab, MPI-CBG, Dresden in collaboration with Keller lab, HHMI - Janelia Research Campus
-
-</div>
+{% include img src="/media/cip-example-3d.png" width="800" caption="**Figure 4**: Example a workflow performing the cropping, filtering segmentation and visualisation of a 2D image. Raw data: Platynereis embryo, acquisition: Mette Handberg-Thorsager from Tomancak lab, MPI-CBG, Dresden in collaboration with Keller lab, HHMI - Janelia Research Campus" %}
 
 # Development plan
 

@@ -1,7 +1,7 @@
 {%- assign path = include.path -%}
 {%- assign default-prefixes = "|/media/" | split: "|" -%}
 {%- assign prefixes = include.prefixes | default: include.prefix | default: default-prefixes -%}
-{%- assign default-suffixes = "|.svg|.png|.jpg" | split: "|" -%}
+{%- assign default-suffixes = "|.svg|.png|.gif|.jpg" | split: "|" -%}
 {%- assign suffixes = include.suffixes | default: include.suffix | default: default-suffixes -%}
 
 {%- assign match = nil -%}

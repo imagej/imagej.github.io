@@ -27,27 +27,27 @@ Open a maximum intensity projection of the multi-channel image to be analyzed, t
 
 ### General configuration
 
-<figure><img src="/media/sproutanalyzer-configuration.png" title="Configuration dialog" width="400" alt="Configuration dialog" /><figcaption aria-hidden="true">Configuration dialog</figcaption></figure>
+{% include img src="/media/sproutanalyzer-configuration.png" width="400" alt="Configuration dialog" %}
 
 ### Bead detection
 
-<figure><img src="/media/sproutanalyzer-beaddetection.png" title="Bead detection" width="400" alt="Bead detection" /><figcaption aria-hidden="true">Bead detection</figcaption></figure>
+{% include img src="/media/sproutanalyzer-beaddetection.png" width="400" alt="Bead detection" %}
 
 ### Sprout detection
 
-<figure><img src="/media/sproutanalyzer-sproutdetection.png" title="Sprout detection" width="400" alt="Sprout detection" /><figcaption aria-hidden="true">Sprout detection</figcaption></figure>
+{% include img src="/media/sproutanalyzer-sproutdetection.png" width="400" alt="Sprout detection" %}
 
 ### Nucleus segmentation
 
-<figure><img src="/media/sproutanalyzer-nucleussegmentation.png" title="Nucleus segmentation" width="400" alt="Nucleus segmentation" /><figcaption aria-hidden="true">Nucleus segmentation</figcaption></figure>
+{% include img src="/media/sproutanalyzer-nucleussegmentation.png" width="400" alt="Nucleus segmentation" %}
 
 ### Endothelial cell/Pericyte classification
 
-<figure><img src="/media/sproutanalyzer-cellclassification.png" title="Cell classification of ECs and pericytes" width="400" alt="Cell classification of ECs and pericytes" /><figcaption aria-hidden="true">Cell classification of ECs and pericytes</figcaption></figure>
+{% include img src="/media/sproutanalyzer-cellclassification.png" width="400" alt="Cell classification of ECs and pericytes" %}
 
 ### Pericyte coverage
 
-<figure><img src="/media/sproutanalyzer-pericytecoverage.png" title="Pericyte coverage measurement" width="400" alt="Pericyte coverage measurement" /><figcaption aria-hidden="true">Pericyte coverage measurement</figcaption></figure>
+{% include img src="/media/sproutanalyzer-pericytecoverage.png" width="400" alt="Pericyte coverage measurement" %}
 
 ## Publication
 

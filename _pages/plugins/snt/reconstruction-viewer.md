@@ -214,7 +214,7 @@ This menu allows import of several Drosophila, Zebrafish and Mouse reference bra
 
 ### Single-Cell Analysis
 
-<figure><img src="/media/reconstruction-viewer-brain-area-analysis.png" title="Brain Area Analyis: Cable Length" width="300" alt="Brain Area Analyis: Cable Length" /><figcaption aria-hidden="true">Brain Area Analyis: Cable Length</figcaption></figure>
+{% include img src="/media/reconstruction-viewer-brain-area-analysis.png" width="300" caption="Brain Area Analysis: Cable Length" %}
 
 -   {% include bc path='Brain Area Analysis...'%} Measures the amount of cable length, number of terminal nodes, or both that occur in distinct anatomical regions of the brain, with the option to restrict the analysis up to a maximum depth in the ontology hierarchy. Note that only one reconstruction may be selected at a time with this option.
 -   {% include bc path='Create Dendrogram...'%} Runs the {% include bc path='Utilities|Create Dendrogram...'%} command found in the main SNT dialog. See [Dendrogram Viewer](/plugins/snt/analysis#dendrogram-viewer). Note only one reconstruction may be selected at a time with this option.

@@ -11,11 +11,11 @@ categories: [Plugins,Analysis]
 
 {% include info-box software='ImageJ 1.48 or newer (including ImageJ 2.XX) and Fiji' name='DiameterJ' author=NHotaling maintainer=NHotaling filename='ImageJ 1.48a to 2.XXX [DiameterJ v1.018](/media/diameterj-1-018.zip) Fiji any version [DiameterJ v1.018](/media/diameterj-fiji---1-018.zip)' source=' [Source Code](https://github.com/NHotaling/DiameterJ)' released='February 2015' latest-version='August 5<sup>th</sup>, 2016' status='v X.003 (first version released publicly)' category='[Plugins](/plugin-index) [Analysis](/plugin-index#analysis)' %} <span style="display: none">nanofiber diameter measurement, nanofiber diameter analysis, nanofiber diameter characterization, nanofiber diameter software, nanofiber diameter plugin, nanofiber diameter program, ImageJ nanofiber diameter, Fiji nanofiber diameter, automated nanofiber diameter, free, open source, radius</span>**DiameterJ**[^1] is a free, open source plugin created for ImageJ, ImageJ 2, and Fiji developed at the National Institute of Standards and Technology. DiameterJ is a validated nanofiber diameter characterization tool. DiameterJ is able to analyze an image and find the diameter of nanofibers or microfibers at every pixel along a fibers axis and produces a histogram of these diameters. Included with this histogram are summary statistics such as mean fiber diameter and most occurring fiber diameter (mode). DiameterJ also bundles [OrientationJ](http://bigwww.epfl.ch/demo/orientation/)[^2] for a complete analysis of fiber orientation within an image as well as the "Analyze Particles" function built into ImageJ/Fiji to analyze pore space within scaffolds and produce summary statistics for pores.
 
-### <big>Overview</big>
+## Overview
 
-------------------------------------------------------------------------
+{% include img src="02b-hotaling-visual-abstract" align="right" caption="Overview of DiameterJ analysis flow - (*Top*) SEM image &rarr; segmented image &rarr; stylized Euclidean distance transform. (*Bottom*) A few of the graphs capable of being produced from data given by DiameterJ" width="500" %}
 
-<img src="/media/02b-hotaling-visual-abstract.png" title="fig:Overview of DiameterJ analysis flow - (Top) SEM image --&gt; segmented image --&gt; stylized Euclidean distance transform. (Bottom) A few of the graphs capable of being produced from data given by DiameterJ" width="500" alt="Overview of DiameterJ analysis flow - (Top) SEM image --&gt; segmented image --&gt; stylized Euclidean distance transform. (Bottom) A few of the graphs capable of being produced from data given by DiameterJ" /> DiameterJ[^1] is a two step process of image analysis:
+DiameterJ[^1] is a two step process of image analysis:
 
 1.  Image Segmentation into a binary image (black and white pixels only)
     -   Sixteen default segmentation algorithms have been included with DiameterJ in the "Segment SRM" and "Segment Mixed" plugins. However, these algorithms may not work for all SEM images.
@@ -24,16 +24,15 @@ categories: [Plugins,Analysis]
     -   All measures given by DiameterJ are in pixels by default
     -   DiameterJ has been validated with over 130 digital images created *in silico* and with scanning electron microscope images of reference wires with known diameters.
 
-        \- <b>Fibers that are smaller than 10px or greater than 10% of the smallest dimension of the image produce 10% or greater error</b>
+        - **Fibers that are smaller than 10px or greater than 10% of the smallest dimension of the image produce 10% or greater error**
 
-        \- For now DiameterJ only analyzes .tif, jpeg, png, .bmp, and .gif files
+        - For now DiameterJ only analyzes .tif, jpeg, png, .bmp, and .gif files
 
-        \- Fibers must be less than 512px in diameter to be analyzed
+        - Fibers must be less than 512px in diameter to be analyzed
 
-If you would like to cite DiameterJ in your work, citation information can be found [here](http://www.) or use the below:
+If you would like to cite DiameterJ in your work, use the below:
 
-#### Citation/Reference Information
-
+### Citation/Reference Information
 
 Hotaling NA, Bharti K, Kriel H, Simon Jr. CG. DiameterJ: A validated open source nanofiber diameter measurement tool. Biomaterials 2015;61:327–38. <doi:10.1016/j.biomaterials.2015.05.015>.
 
@@ -41,16 +40,15 @@ http://www.sciencedirect.com/science/article/pii/S0142961215004652
 
 ### Download Link
 
-
 For ImageJ 1.48 or newer: [DiameterJ v. 1.018 for ImageJ](/media/diameterj-1-018.zip)
 
 For Fiji latest release: [DiameterJ v. 1.018 for Fiji](/media/diameterj-fiji---1-018.zip)
 
-### <big>How DiameterJ Works</big>
+### How DiameterJ Works
 
-------------------------------------------------------------------------
+{% include img src="figure-1" align="right" width="400" caption="Diagram of DiameterJ code" %}
 
-<img src="/media/figure-1.png" title="fig:Diagram of DiameterJ code" width="400" alt="Diagram of DiameterJ code" /> The overall goal of the DiameterJ[^1] algorithm was to be able to analyze an 8-bit SEM image of any resolution using a desktop computer in less than 60 seconds. For a block diagram and overview of how the DiameterJ algorithm analyzes fiber diameter and other scaffold properties see below.
+The overall goal of the DiameterJ[^1] algorithm was to be able to analyze an 8-bit SEM image of any resolution using a desktop computer in less than 60 seconds. For a block diagram and overview of how the DiameterJ algorithm analyzes fiber diameter and other scaffold properties see below.
 
 #### Segmentation
 
@@ -58,7 +56,7 @@ SEM micrographs were first segmented using a variety of thresholding techniques 
 
 After segmentation all images had remaining noise and morphological features that were smoothed according to the protocols outlined by D'Amore[^9] and by Gonzalez[^10]. Briefly, successive rounds of noise removal (via ImageJ's despeckle command) were performed until no change in the image was found. Erosion (through ImageJs erode command, and dilation (through ImageJs dilate command), and a final erosion (through ImageJs erode command), operations served to refine the image, highlighting fiber edges and eliminating isolated pixel areas. The described morphological procedures were performed to improve the precision of the centerline determinations as per the method developed by Lam et. al.[^11].
 
-<figure><img src="/media/segmentation.png" title="Original image--&gt; Segmented image with no processing--&gt; Segmented image after smoothing and noise removal" width="600" alt="Original image--&gt; Segmented image with no processing--&gt; Segmented image after smoothing and noise removal" /><figcaption aria-hidden="true">Original image--&gt; Segmented image with no processing--&gt; Segmented image after smoothing and noise removal</figcaption></figure>
+{% include img src="/media/segmentation.png" width="600" caption="Original image &rarr; Segmented image with no processing &rarr; Segmented image after smoothing and noise removal" %}
 
 #### Super Pixel Diameter
 
@@ -82,11 +80,11 @@ A new diameter was then calculated using the new corrected length and the total 
 
 Fiber orientation was determined using a well-established plug-in for ImageJ called [OrientationJ](http://bigwww.epfl.ch/demo/orientation/). To determine fiber orientation an axial thinning algorithm was used and then the centerline was enlarged by 2 pixels (using the Enlarge command in ImageJ) to ensure accurate measure of the line. Within OrientationJ a Fourier gradient was used with a gaussian window of 7 pixels. The subsequent frequency histogram of fiber orientation was then saved as an image. OrientationJ limits access to the raw data for this histogram; thus, if the user desires the raw data they must use the "OrientationJ Distribution" plugin. In the Fiji version of DiameterJ the [Directionality](/plugins/directionality)[^16] plugin, written by Jean-Yves Tinevez, can also be used to obtain the raw distribution data. This approach is considerably slower and less elegant (pop-up windows remain open) than OrientationJ but for now it is the only way to obtain the raw orientation data in batch.
 
-### <big>How to Use DiameterJ</big>
+### How to Use DiameterJ
 
 ------------------------------------------------------------------------
 
-#### <big>Learn DiameterJ Training Module</big>
+#### Learn DiameterJ Training Module
 
 An in-depth training, called [Learn DiameterJ](https://sites.google.com/site/diameterj/), has been developed for users of DiameterJ. In total the training as been broken into 7 components:
 
@@ -117,7 +115,7 @@ An in-depth training, called [Learn DiameterJ](https://sites.google.com/site/dia
 
 Please go to [Learn DiameterJ](https://sites.google.com/site/diameterj/) to take the training!
 
-### <big>DiameterJ Output</big>
+### DiameterJ Output
 
 ------------------------------------------------------------------------
 
@@ -280,7 +278,7 @@ Please go to [Learn DiameterJ](https://sites.google.com/site/diameterj/) to take
 </table>
 {:/}
 
-### <big>Limitations</big>
+### Limitations
 
 ------------------------------------------------------------------------
 
@@ -312,7 +310,7 @@ Please go to [Learn DiameterJ](https://sites.google.com/site/diameterj/) to take
 
 :\#Distinguishing between fiber diameters that are closer in diameter than 3 pixels often creates resolution difficulties for peak fitting and the prevalence of each fiber diameter can be skewed. This has to do with inherent limitations due to pixel binning of diagonal lines in Euclidean Distance Transforms. This limitation can be overcome by increasing magnification of your image so that fibers with different diameters have more than 3 pixels of difference between them.
 
-### <big>Installation</big>
+### Installation
 
 ------------------------------------------------------------------------
 
@@ -420,7 +418,9 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 
 :\# Q: None of the images I am analyzing are segmenting well with your algorithms, why not?
 
-:\#:\* A: *The algorithms included by default with DiameterJ rely heavily on uniformity of fiber color and/or a dark background. Below are four good examples and four examples that work poorly for image segmentation with the default algorithms. Keep in mind there are many more segmentation algorithms than I have included with DiameterJ in both Fiji and ImageJ. See the [Complementary Tools](/plugins/diameterj#complementary-tools) or [Image Segmentation](/plugins/diameterj#image-segmentation) sections of this work for a few of the options available.* <img src="/media/good-vs-bad-seg.png" title="fig:Example images that segment well and that do not segment well with DiameterJ&#39;s default segmentation algorithms" width="750" alt="Example images that segment well and that do not segment well with DiameterJ&#39;s default segmentation algorithms" />
+:\#:\* A: *The algorithms included by default with DiameterJ rely heavily on uniformity of fiber color and/or a dark background. Below are four good examples and four examples that work poorly for image segmentation with the default algorithms. Keep in mind there are many more segmentation algorithms than I have included with DiameterJ in both Fiji and ImageJ. See the [Complementary Tools](/plugins/diameterj#complementary-tools) or [Image Segmentation](/plugins/diameterj#image-segmentation) sections of this work for a few of the options available.*
+
+{% include img src="good-vs-bad-seg" align="center" width="750" title="Example images that segment well and that do not segment well with DiameterJ's default segmentation algorithms" %}
 
 ## Complementary Tools
 
@@ -432,23 +432,23 @@ Finally, we'd like to encourage everyone to do peak fitting of the diameter hist
 
 ## Future Development
 
-:\# Reducing bias of the Histogram intersection correction by directionally subtracting fiber intersections rather than blanket subtraction within a given intersection radius
+- Reducing bias of the Histogram intersection correction by directionally subtracting fiber intersections rather than blanket subtraction within a given intersection radius
 
-:\# incorporation of Gaussian peak fitting algorithms within DiameterJ itself.
+- incorporation of Gaussian peak fitting algorithms within DiameterJ itself.
 
-:\#Currently we are working on a native JAVA application on DiameterJ. This will not fundamentally change the function of DiameterJ however, it will make it faster, look cleaner, and should solve continuity issues
+- Currently we are working on a native Java application on DiameterJ. This will not fundamentally change the function of DiameterJ however, it will make it faster, look cleaner, and should solve continuity issues
 
-:\# 16-bit Euclidean distance transform calculator
+- 16-bit Euclidean distance transform calculator
 
-:\# Enable DiameterJ to skip to the next file if an error occurs during analysis
+- Enable DiameterJ to skip to the next file if an error occurs during analysis
 
-<big>Completed Goals</big>
+## Completed Goals
 
-:\# Combine the three different releases of DiameterJ into a single release for all versions of ImageJ/Fiji
+- Combine the three different releases of DiameterJ into a single release for all versions of ImageJ/Fiji
 
-:\# Easier to use GUI (any GUI at all) with more options for what the outputs of DiameterJ are and what types of analysis it performs.
+- Easier to use GUI (any GUI at all) with more options for what the outputs of DiameterJ are and what types of analysis it performs.
 
-:\# Make DiameterJ compatible with images other than .tif files
+- Make DiameterJ compatible with images other than .tif files
 
 Help is welcome in any/all of these improvements!
 

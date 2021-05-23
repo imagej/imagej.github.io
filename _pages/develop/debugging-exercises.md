@@ -113,13 +113,13 @@ if (index < 0 || index >= list.size()) {
 
 Since we are only interested in the `processElementAtIndex` method when a problem actually occurs, let's try something different:
 
-<figure><img src="/media/e2breakonexception.png" title="Setting a breakpoint on an exception" width="600" alt="Setting a breakpoint on an exception" /><figcaption aria-hidden="true">Setting a breakpoint on an exception</figcaption></figure>
+{% include img src="e2breakonexception" align="right" width="600" caption="Setting a breakpoint on an exception" %}
 
 1.  From the *Breakpoints* window in the *Debug* perspective, delete the old breakpoint
 2.  Now use the *Add Java Exception Breakpoint* button to add a breakpoint to *IllegalArgumentException*
 3.  Debug the program. When it stops, inspect the *Variables* window.
 
-<figure><img src="/media/e2variables.png" title="Inspecting the variables window" width="600" alt="Inspecting the variables window" /><figcaption aria-hidden="true">Inspecting the variables window</figcaption></figure>
+{% include img src="e2variables" align="right" width="600" caption="Inspecting the variables window" %}
 
 At this point, we know there is a problem accessing the `99999th` element of the list, but the variables window doesn't tell us exactly what the problem is. We can manually expand and explore the `list` variable - but given its size that could be cumbersome.
 
@@ -166,7 +166,7 @@ i++;
 
 Then try the following:
 
-<figure><img src="/media/e3countbreakpoint.png" title="Setting a hit count" width="350" alt="Setting a hit count" /><figcaption aria-hidden="true">Setting a hit count</figcaption></figure>
+{% include img src="e3countbreakpoint" align="right" width="350" caption="Setting a hit count" %}
 
 1.  Open the *Breakpoints* window
 2.  Right-click our breakpoint and select *Breakpoint Properties...*
@@ -174,11 +174,11 @@ Then try the following:
 4.  Try debugging
 
 {% include quiz q="Was there a problem with the current object when/if your breakpoint is hit?"
-                a="If there was, try it again! In this exercise, the \"broken\" object index is non-deterministic - so it is unlikely to be exactly the same index two runs in a row. If the broken object appears later the second time, your breakpoint will hit but the current object will likely be fine. If the \"broken\" object appears earlier the second time, your breakpoint won't be hit at all." %}
+                a="If there was, try it again! In this exercise, the \"broken\" object index is non-deterministic&mdash;so it is unlikely to be exactly the same index two runs in a row. If the broken object appears later the second time, your breakpoint will hit but the current object will likely be fine. If the \"broken\" object appears earlier the second time, your breakpoint won't be hit at all." %}
 
 Using `count`-based conditional breakpoints can be very useful if the error is deterministic. In this case we need to try something different. We know the `everythingIsOK` flag reflects the integrity of the object at a given index - so what we really want to use here is a breakpoint that stops in the loop when the `everythingIsOK` flag is set to `false`. Fortunately, breakpoints have an optional "Conditional" flag - where we can enter any Java statement that resolves to a boolean value. Try it out:
 
-<figure><img src="/media/e3conditionalbreakpoint.png" title="Setting a conditional expression" width="350" alt="Setting a conditional expression" /><figcaption aria-hidden="true">Setting a conditional expression</figcaption></figure>
+{% include img src="e3conditionalbreakpoint" align="right" width="350" caption="Setting a conditional expression" %}
 
 1.  Open the *Breakpoints* window again
 2.  Open the properties of our breakpoint
@@ -232,16 +232,18 @@ In order to connect Eclipse to ImageJ, we need to close our running instance and
 ImageJ.app/ImageJ-linux64 --debugger=8000
 ```
 
-{%- capture windows-console-tip -%}
+{% capture windows-console-tip %}
 On Windows we need to add the `console` flag:
 ```
 ImageJ.app/ImageJ-linux64 --debugger=8000 --console
 ```
 See [this issue](https://github.com/imagej/imagej-launcher/issues/29) for more information.
-{%- endcapture -%}
+{% endcapture %}
 {% include notice icon="tip" content=windows-console-tip %}
 
-<img src="/media/e4debugconfig.png" title="fig:Remote Java Application debug configuration" width="400" alt="Remote Java Application debug configuration" /> This will start up ImageJ in a mode that's able to communicate with Eclipse. Next we need to connect Eclipse to the running ImageJ instance:
+{% include img src="e4debugconfig" align="right" width="400" caption="Remote Java Application debug configuration" %}
+
+This will start up ImageJ in a mode that's able to communicate with Eclipse. Next we need to connect Eclipse to the running ImageJ instance:
 
 1.  Right-click the `E4RemoteResearch` source file in the Package Explorer
 2.  Select {% include bc path="Debug As | Debug Configurations..." %}
@@ -365,7 +367,7 @@ ImageJ.app/ImageJ-linux64
 
 We actually don't need any extra flags this time, as this technique isn't specific to ImageJ. When you run a program from the command line, your console is directly tied to the running instance:
 
-<figure><img src="/media/e6console.png" title="Waiting for input after launching ImageJ" width="400" alt="Waiting for input after launching ImageJ" /><figcaption aria-hidden="true">Waiting for input after launching ImageJ</figcaption></figure>
+{% include img src="/media/e6console.png" width="400" title="Waiting for input after launching ImageJ" %}
 
 In this state, we can still send signals to the running application (for example - {% include key keys='ctrl|c' %} to [kill the app](https://www.howtogeek.com/howto/ubuntu/keyboard-shortcuts-for-bash-command-shell-for-ubuntu-debian-suse-redhat-linux-etc/)).
 
@@ -417,7 +419,7 @@ We see that objects are being created, but we aren't storing any references to t
 
 Once the `OutOfMemoryError` is encountered our breakpoint will trigger. To acquire the heap dump:
 
-<figure><img src="/media/e7heapdump.png" title="Heap dump acquisition in jvisualvm" width="500" alt="Heap dump acquisition in jvisualvm" /><figcaption aria-hidden="true">Heap dump acquisition in jvisualvm</figcaption></figure>
+{% include img src="/media/e7heapdump.png" align="right" width="500" caption="Heap dump acquisition in jvisualvm" %}
 
 1.  Open `jvisualvm`
 2.  From the list of local applications, right-click on `net.imagej.trouble.visible.E7InvestigateImpressions` and select the "Heap Dump" option.
@@ -461,12 +463,12 @@ Exercise 8 in pretty straightforward with the main function calling two function
 
 1.  Insert a breakpoint on the `while` statement in main method
 2.  Launch JvisualVM. All running Java applications are shown in the in Applications Tab (left margin) of JvisualVM. Double Click to select E8PerceivingPerformance. Go to the profiler tab and click the CPU option.
-3.  Click on the settings checkbox on upper right corner of Jvisualvm. In CPU settings , make sure the class being profiled is `net.imagej.trouble.**` instead of `net.imagej.trouble.visible.**`, or the profiler won't be looking in the right place <img src="/media/e8settings.png" title="fig:Adjust settings" width="400" alt="Adjust settings" />
+3.  Click on the settings checkbox on upper right corner of Jvisualvm. In CPU settings , make sure the class being profiled is `net.imagej.trouble.**` instead of `net.imagej.trouble.visible.**`, or the profiler won't be looking in the right place
+    {% include img src="e8settings" align="center" width="400" caption="Adjust settings" %}
 4.  Switch to Eclipse and resume the execution of code
 5.  Wait for the stipulated time, twiddle your thumbs. Or you can switch to JvisualVM and see how much time is taken by each of function in real time.
 6.  Example output
-
-<figure><img src="/media/e8profilingresults.png" title="Profiling Results" width="400" alt="Profiling Results" /><figcaption aria-hidden="true">Profiling Results</figcaption></figure>
+    {% include img src="e8profilingresults" align="center" width="400" caption="Profiling Results" %}
 
 {% include quiz q="Which method takes more time? `doStuff` or `doMoreStuff`?"
                 a="**doStuff**. Exact timing will vary per computer, but in our case `doStuff` took 954 ms while `doMoreStuff` took 710 ms." %}

@@ -9,7 +9,7 @@ section: Learn:Cookbook
 
 ## Brightness and Contrast
 
-{% include thumbnail src='/media/brightness-contrast-pic.png' title='right'%} Brightness is the visual perception of reflected light. Increased brightness refers to an image's increased luminance.
+{% include img src='/media/brightness-contrast-pic.png' align='right'%} Brightness is the visual perception of reflected light. Increased brightness refers to an image's increased luminance.
 
 Contrast is the separation of the lightest and darkest parts of an image. An increase in contrast will darken shadows and lighten highlights. Increasing contrast is generally used to make objects in an image more distinguishable.
 
@@ -266,29 +266,8 @@ This macro, because it also works with stacks, can be used on time-courses with 
 
 Use this technique on brightfield images. You can correct uneven illumination or dirt/dust on lenses by acquiring a "flat-field" reference image *with the same intensity illumination as the experiment*. The flat field image should be as close as possible to a field of view of the cover slip without any cells/debris. This is often not possible with the experimental cover slip, so a fresh cover slip may be used with approximately the same amount of buffer as the experiment.
 
-{::nomarkdown}
-<table>
-  <tbody>
-    <tr class="odd">
-      <td>
-        <figure>
-          <img src="/media/flat-field-correction.gif" title="flat_field_correction.gif" alt="flat_field_correction.gif">
-          <figcaption aria-hidden="true">
-            flat_field_correction.gif
-          </figcaption>
-        </figure>
-      </td>
-    </tr>
-    <tr class="even">
-      <td>
-        <center>
-          <p><strong>RAW</strong></p>
-        </center>
-      </td>
-    </tr>
-  </tbody>
-</table>
-{:/}
+{% include img src="flat-field-correction"
+  caption="| | **RAW** | | | **Flat-field** | **Processed** |" %}
 
 1.  Open both the experimental image and the flat-field image.
 2.  Click the *Select all* button on the flat-field image and measure the average intensity. This value, the k1 value, will appear in the results window.
@@ -301,30 +280,17 @@ This can also be done using the {% include bc path='Process | Image Calculator'%
 
 ### Pseudo-correction
 
-{::nomarkdown}
-<table>
-  <tbody>
-    <tr class="odd">
-      <td style="border:none;padding:0in;">
-        <figure>
-          <img src="/media/pseudocorrectionimage.gif" title="pseudoCorrectionImage.gif" alt="pseudoCorrectionImage.gif">
-          <figcaption aria-hidden="true">
-            pseudoCorrectionImage.gif
-          </figcaption>
-        </figure>
-        <p>Sometimes it is not possible to obtain a flat-field reference image. It is still possible to correct for illumination intensity, though not small defects like dust, by making a "pseudo-flat field" image by performing a large-kernel filter on the image to be corrected. For those working with DIC images, this is particularly useful because they generally have an intrinsic, and distracting, gradient in illumination.</p>
-        <p>This can be accomplished simply by subtracting the Gaussian-blurred image version of the image.</p>
-        <p>This can also be used with stacks for brightfield time-courses that vary in intensity with time. Doing this with stacks can be time consuming.</p>
-      </td>
-    </tr>
-    <tr class="even">
-      <td>
-        <p><img src="/media/pseudocorrrawcorrected.gif" title="fig:pseudoCorrRawCorrected.gif" alt="pseudoCorrRawCorrected.gif"></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-{:/}
+{% include img src="pseudocorrectionimage" %}
+
+Sometimes it is not possible to obtain a flat-field reference image. It is still possible to correct for illumination intensity, though not small defects like dust, by making a "pseudo-flat field" image by performing a large-kernel filter on the image to be corrected. For those working with DIC images, this is particularly useful because they generally have an intrinsic, and distracting, gradient in illumination.
+
+This can be accomplished simply by subtracting the Gaussian-blurred image version of the image.
+
+This can also be used with stacks for brightfield time-courses that vary in intensity with time. Doing this with stacks can be time consuming.
+
+{% include img src="pseudocorrrawcorrected" %}
+
+The first RAW image (top) is pseudo-flat field corrected. Here the pseudo-flat field corrects for the uneven illumination, but does not correct for the dust specks. Look at this compared to the result of a proper flat-field correction above.
 
 ### FFT background correction
 

@@ -15,7 +15,7 @@ AplimTools is a set of image processing tools for plants magnetic resonance anal
 -   T1/T2/M0 maps computation from spin echo sequences (multiple TR and/or TE)
 -   Time-lapse exploration of T1/T2/M0 parameters in interest areas
 
-<figure><img src="/media/full-1.jpg" title="Time-lapse exploration of parameters in a plant under drought stress" width="800" alt="Time-lapse exploration of parameters in a plant under drought stress" /><figcaption aria-hidden="true">Time-lapse exploration of parameters in a plant under drought stress</figcaption></figure>
+{% include img src="/media/full-1.jpg" width="800" caption="Time-lapse exploration of parameters in a plant under drought stress" %}
 
   
   
@@ -91,9 +91,19 @@ For time-lapse experiments, one can compute such a 4D MR hyperimage at successiv
 
 This plugin helps exploring the relaxation curves on a point, the neighbourhood of a point, or a user-defined roi, using non-linear fit (as above). The visualization of these curves (middle panels) is enriched by semi-log graphs of the T1 and T2 values (right-top panel), and a distribution of these values in the selected area (right-bottom panel). This explorer can open time-lapse 5D hyperimages, to give insight of the evolution of these parameters along the experiment. The explorer display informations through 6 panels :
 
-<figure><img src="/media/full-1.jpg" title="Application panels" width="600" alt="Application panels" /><figcaption aria-hidden="true">Application panels</figcaption></figure>
+{% include img src="/media/full-1.jpg" align="center" width="600" caption="Application panels" %}
 
-{%- include img src='panel-1-1.jpg' -%} Left panels: spin echo images from T1 (top) and T2 (bottom) sequences. The yellow square shows the interest area where the tissue parameters are estimated. Its size and position can be modified dynamically. {%- include img src='panel3-1.jpg' -%} T1 relaxation curve (red) estimated from MRI data (blue crosses), given the measured noise level (black) {%- include img src='panel4-1.jpg' -%} T2 relaxation curve (dark green=mono-exponential, light green=bi-exponential) estimated from MRI data (blue crosses). The blue crosses display the mean MR value over all the pixels in the interest area (the yellow square), and the std within these data is displayed as a vertical blue bar. The measured noise level used for noise-corrected estimation is displayed as a black line. {%- include img src='panel5-1.jpg' -%} Values of T1 (red) and T2 (green) estimated from the mean values (blue crosses on the curves panel). Marker thickness are proportional to the relative proton density. The three graphs (from bottom to top) shows the values in this area for the three successive timepoints of the 5D MR Hyperimage. {%- include img src='panel6-1.jpg' -%} Distribution of the T1 and T2 values estimated from each individual pixel of the current region of interest.
+<center><strong>Panels details</strong></center>
+
+{% include img src='panel-1-1.jpg' align="center" caption="Left panels: spin echo images from T1 (top) and T2 (bottom) sequences. The yellow square shows the interest area where the tissue parameters are estimated. Its size and position can be modified dynamically." %}
+
+{% include img src='panel3-1.jpg' align="center" caption="T1 relaxation curve (red) estimated from MRI data (blue crosses), given the measured noise level (black)" %}
+
+{% include img src='panel4-1.jpg' align="center" caption="T2 relaxation curve (dark green=mono-exponential, light green=bi-exponential) estimated from MRI data (blue crosses). The blue crosses display the mean MR value over all the pixels in the interest area (the yellow square), and the std within these data is displayed as a vertical blue bar. The measured noise level used for noise-corrected estimation is displayed as a black line." %}
+
+{% include img src='panel5-1.jpg' align="center" caption="Values of T1 (red) and T2 (green) estimated from the mean values (blue crosses on the curves panel). Marker thickness are proportional to the relative proton density. The three graphs (from bottom to top) shows the values in this area for the three successive timepoints of the 5D MR Hyperimage." %}
+
+{% include img src='panel6-1.jpg' align="center" caption="Distribution of the T1 and T2 values estimated from each individual pixel of the current region of interest." %}
 
 ### Preparing your data
 

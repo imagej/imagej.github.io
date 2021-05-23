@@ -52,7 +52,7 @@ Furthermore it outputs several important features:
 
 ## Parameters
 
-<figure><img src="/media/ellipsesplit.png" title="GUI of Ellipse Split Plugin" width="350" alt="GUI of Ellipse Split Plugin" /><figcaption aria-hidden="true">GUI of Ellipse Split Plugin</figcaption></figure>
+{% include img src="/media/ellipsesplit.png" width="350" caption="GUI of Ellipse Split Plugin" %}
 
 **Binary splitted image:** If set to "Use standard watershed" it will use ImageJ's watershed technique to split the binary object. If there are better techniques for splitting available, you could select here the binary image splitted by that technique.
 

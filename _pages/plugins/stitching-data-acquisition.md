@@ -5,7 +5,7 @@ title: Stitching data acquisition
 
 # Wiscan Data Acquisition
 
-<figure><img src="/media/ows-1.jpg" title="Microscope setup" width="300" alt="Microscope setup" /><figcaption aria-hidden="true">Microscope setup</figcaption></figure>
+{% include img src="/media/ows-1.jpg" align="right" width="300" caption="Microscope setup" %}
 
 1.  Make sure the image being used has been set up correctly:
     1.  On the computer, click and hold the shutter button until it turns yellow. The shutter is now activated
@@ -115,13 +115,13 @@ Once Wiscan has run, your output will be a series of images that can be stitched
 
 ## Generate the grid
 
-<figure><img src="/media/basicgrid.png" title="BasicGrid.png" width="250" alt="BasicGrid.png" /><figcaption aria-hidden="true">BasicGrid.png</figcaption></figure>
+{% include img src="/media/basicgrid.png" align="right" width="250" caption="BasicGrid.png" %}
 
 ### The basic grid
 
 1.  Fill in the Dimensions of X and Y in \#X and \#Y respectively
 
-<figure><img src="/media/overlappedgrid.png" title="OverlappedGrid.png" width="250" alt="OverlappedGrid.png" /><figcaption aria-hidden="true">OverlappedGrid.png</figcaption></figure>
+{% include img src="/media/overlappedgrid.png" align="right" width="250" caption="OverlappedGrid.png" %}
 
 <li>
 
@@ -149,7 +149,7 @@ Select "OK"
 
 ### Calculating grid using total sample size
 
-<figure><img src="/media/samplesize.png" title="SampleSize.png" width="250" alt="SampleSize.png" /><figcaption aria-hidden="true">SampleSize.png</figcaption></figure>
+{% include img src="/media/samplesize.png" align="right" width="250" caption="SampleSize.png" %}
 
 1.  Enter the total size dimensions of your stitched image in microns into the "Total Size" boxes
 2.  Enter the step size or the overlap for you stitched images and select "Calculate total size from \# Pos"
@@ -159,7 +159,7 @@ Select "OK"
 
 1.  Determine your step size using either a pre-calculated value or the overlap slider
 
-<figure><img src="/media/stagegrid.png" title="StageGrid.png" width="250" alt="StageGrid.png" /><figcaption aria-hidden="true">StageGrid.png</figcaption></figure>
+{% include img src="/media/stagegrid.png" align="right" width="250" caption="StageGrid.png" %}
 
 <li>
 
@@ -180,8 +180,13 @@ Select "OK"
 
 # Gallery
 
-
-{% capture content%}
-
-{% endcapture %}
-{% include gallery content=content%}
+{% include gallery content=
+"
+/media/frame-mover.jpg | (xyz computer controller)
+/media/lever-1.jpg     | (Internal microscope lever)
+/media/x-y-z.jpg       | (XYZ controller)
+/media/pockel-cell.jpg | (Pockel Cell machine)
+/media/ti-saph.jpg     | (Ti Sapph Shutter control)
+/media/photosensor.jpg | Detector 
+"
+%}

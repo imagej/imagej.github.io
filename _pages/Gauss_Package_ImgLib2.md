@@ -128,4 +128,4 @@ The second core idea is to not iterate over the output but over the input to sav
 
 For more details please refer to the source code for now, it is linked on top of this page.
 
-<figure><img src="/media/gauss.png" title="Visualizes the offsets and sizes required to perform an n-dimensional gaussian convolution" width="780" alt="Visualizes the offsets and sizes required to perform an n-dimensional gaussian convolution" /><figcaption aria-hidden="true">Visualizes the offsets and sizes required to perform an n-dimensional gaussian convolution</figcaption></figure>
+{% include img src="gauss" width="780" caption="Visualizes the offsets and sizes required to perform an n-dimensional gaussian convolution" %}
