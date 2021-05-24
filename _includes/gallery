@@ -1,3 +1,4 @@
+{%- comment -%} TODO cleanup {%- endcomment -%}
 {% capture gallery-content | strip_newlines %}
 {% assign gallery-entries = include.content | newline_to_br | split: '<br />' %}
 {% assign gallery_end_index = gallery-entries | size | minus: 2 %}

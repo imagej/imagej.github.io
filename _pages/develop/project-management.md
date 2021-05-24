@@ -55,7 +55,7 @@ SciJava software projects manage tasks and priorities using [GitHub Issues](http
 
 You can search issues using the ImageJ search portal's GitHub button here:
 
-{% include big-link url='https://search.imagej.net/' %}
+{% include link-banner url='https://search.imagej.net/' %}
 
 Previously, some projects used [Trac](https://trac.edgewall.org/) for issue tracking and roadmapping, but all Trac issues have now been migrated to GitHub. The old Trac-based issues are still available as read-only archives: see [here for ImageJ](/tickets) and [here for LOCI/Bio-Formats](https://uw-loci.github.io/tickets/).
 

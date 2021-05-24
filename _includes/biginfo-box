@@ -1,3 +1,4 @@
+{%- comment -%} TODO merge with notice {%- endcomment -%}
 {% capture info_content %}
 <div info="content" markdown="1">
 {{include.content}}

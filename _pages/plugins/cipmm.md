@@ -13,7 +13,7 @@ Currently, this repository contains a plugin called 'LRoi', which helps you crea
 
 You can install LRoi (and all future plugins) by simply adding the following update site to the ImageJ updater:
 
-{% include big-link url="https://sites.imagej.net/CIPMM-MolPhys/" %}
+{% include link-banner url="https://sites.imagej.net/CIPMM-MolPhys/" %}
 
 ## Usage
 

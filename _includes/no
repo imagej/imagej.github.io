@@ -1,6 +1,4 @@
-<center>
-<img src="/media/icons/no.svg" style="width:30px;height:30px;">
-</center>
+<center><img src="/media/icons/no.svg" style="width:30px;height:30px;"></center>
 
 {%- comment -%}
 # vi:syntax=liquid

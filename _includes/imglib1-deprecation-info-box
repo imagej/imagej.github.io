@@ -1,3 +1,4 @@
+{%- comment -%} TODO decide what to do with this {%- endcomment -%}
 <span class="imglib1-deprecation-info-box">{{include.content}}</span>
 
 {%- comment -%}

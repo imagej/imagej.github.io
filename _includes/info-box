@@ -1,3 +1,4 @@
+{%- comment -%} TODO eliminate in favor of statbox {%- endcomment -%}
 {% capture info_content %}
 <div info="content">
     {{include.content | markdownify}}

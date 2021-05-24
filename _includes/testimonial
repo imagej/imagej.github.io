@@ -1,3 +1,4 @@
+{%- comment -%} TODO cleanup {%- endcomment -%}
 {% capture info_content %}
 <div info="content" markdown="1">
 "{{include.quote}}"

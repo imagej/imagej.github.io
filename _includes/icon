@@ -1,3 +1,4 @@
+{%- comment -%} TODO generalize {%- endcomment -%}
 {%- assign name = include.name | strip -%}
 
 {%- if include.link -%}

@@ -49,7 +49,7 @@ Advanced instructions for building, or modifying, the source code are available 
 
 Javadoc for all ImageJ-related projects can be found online:
 
-{% include big-link url='https://javadoc.scijava.org/' %}
+{% include link-banner url='https://javadoc.scijava.org/' %}
 
 You can also search the javadocs at
 [https://search.imagej.net/](https://search.imagej.net/)

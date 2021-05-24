@@ -1,3 +1,4 @@
+{%- comment -%} TODO cleanup {%- endcomment -%}
 {% capture citation-content %}
 
 {% assign content = {{include content}} %}

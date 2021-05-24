@@ -1,3 +1,5 @@
+{%- comment -%} TODO redo as part of layout / front matter. {%- endcomment -%}
+
 {% assign input = include.content |  split: "|" %}
 {% assign name = input[0] %}
 {% if name == "ImageJ" %}

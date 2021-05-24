@@ -1,3 +1,5 @@
+{%- comment -%} TODO merge with img, or move to internal if
+  it really needs to be separate for gallery. {%- endcomment -%}
 {% if include.link %}
 {% assign link = {{include.link}} %}
 {% endif %}

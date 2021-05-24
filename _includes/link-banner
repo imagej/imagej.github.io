@@ -1,0 +1,7 @@
+{%- assign url = include.url | default: include.link -%}
+
+<div class="link-banner"><a href="{{url}}">{{url}}</a></div>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

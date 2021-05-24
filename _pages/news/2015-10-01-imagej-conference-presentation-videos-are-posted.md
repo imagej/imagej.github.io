@@ -10,7 +10,7 @@ In early September, the [LOCI](/orgs/loci) team in Madison, WI hosted the [2015 
 
 Today we are pleased to announce that the presentation recordings have been posted:
 
-{% include big-link link='Presentations' %}
+{% include link-banner link='Presentations' %}
 
 Many thanks to all the presenters—the conference was a huge success because of your efforts!
 

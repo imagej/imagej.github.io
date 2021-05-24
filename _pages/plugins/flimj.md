@@ -171,8 +171,8 @@ Coming soon...
 
 More documentation coming soon. For now, see the source code at:
 
-{% include big-link url='https://github.com/flimlib/flimj-ui' %}
+{% include link-banner url='https://github.com/flimlib/flimj-ui' %}
 
 And:
 
-{% include big-link url='https://github.com/flimlib/flimj-ops' %}
+{% include link-banner url='https://github.com/flimlib/flimj-ops' %}

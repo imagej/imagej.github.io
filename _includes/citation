@@ -1,3 +1,4 @@
+{%- comment -%} TODO merge with cite {%- endcomment -%}
 {% capture citation-content %}
 
 {% if include.last %}

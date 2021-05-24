@@ -1,6 +1,6 @@
 The {{include.shortname}} license text can be found at:
 
-{% include big-link url=include.url %}
+{% include link-banner url=include.url %}
 
 ### See also
 

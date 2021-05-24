@@ -1,3 +1,5 @@
+{%- comment -%} TODO merge with img, or move to internal if
+  it really needs to be separate for gallery. {%- endcomment -%}
 <div class="thumbnail" >
     <a href="{{include.src}}" data-lightbox="image-{{include.src | split: "/" | last | replace: ".", "-" }}">
         <span class="thumbnail-group"><img src="{{include.src}}" width="{{include.width | default: 380}}" /></span>

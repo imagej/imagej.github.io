@@ -1,4 +1,7 @@
-[<code>{{include.function}}</code>](https://www.mathworks.com/help/{{include.path}}/{{include.function}}.html)
+{%- assign function = include.function -%}
+{%- assign path = include.path -%}
+
+<a href="https://www.mathworks.com/help/{{path}}/{{function}}.html"><code>{{function}}</code></a>
 
 {%- comment -%}
 # vi:syntax=liquid

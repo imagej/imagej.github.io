@@ -1,7 +1,8 @@
-{%- if include.style -%}
-  {%- capture style %} style="{{include.style}}"{% endcapture -%}
-{%- endif -%}
-<span class="tooltip"{{style}}>{{include.text}}<span class="tooltiptext">{{include.tooltip}}</span></span>
+{%- assign style = include.style -%}
+
+<span class="tooltip"
+  {%- if style %} style="{{style}}" {%- endif -%}
+>{{include.text}}<span class="tooltiptext">{{include.tooltip}}</span></span>
 
 {%- comment -%}
 # vi:syntax=liquid

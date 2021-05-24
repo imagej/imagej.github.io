@@ -7,4 +7,4 @@ section: About
 
 The statistics for website visits and ImageJ updates are aggregated into a publicly viewable form at the following URL:
 
-{% include big-link url='https://juglab.mpi-cbg.de/matomo/' %}
+{% include link-banner url='https://juglab.mpi-cbg.de/matomo/' %}

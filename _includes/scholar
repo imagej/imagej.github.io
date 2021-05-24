@@ -1,16 +1,7 @@
-{% capture content %}
-{% assign url = "https://scholar.google.com/scholar?cluster=" %}
-{% if label %}
-{% assign label = include.label %}
-{% else %}
-{% assign label = "on Google Scholar" %}
-{% endif %}
-{% assign cluster = include.cluster %}
-{% assign scholar-url = url | append: {{cluster}} %}
+{%- assign cluster = include.cluster -%}
+{%- assign label = include.label | default: "on Google Scholar" -%}
 
-<a href="{{scholar-url}}">{{label}}</a>
-{% endcapture %}
-{{- content | strip_newlines -}}
+<a href="https://scholar.google.com/scholar?cluster={{cluster}}">{{label}}</a>
 
 {%- comment -%}
 # vi:syntax=liquid

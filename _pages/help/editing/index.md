@@ -140,7 +140,7 @@ The following tables list all of this site's general-purpose includes:
 
 | Include                           | Purpose                              |
 |-----------------------------------|--------------------------------------|
-| [big-link](TODO)                  | Insert a large, obvious link         |
+| [link-banner](TODO)               | Insert a large, obvious link         |
 | [github](linking#github)          | Link to a resource on GitHub         |
 | [javadoc](linking#javadoc)        | Link to a javadoc resource           |
 | [matlab](TODO)                    | Link to MATLAB documentation         |

@@ -1,15 +1,12 @@
 {%- case include.style -%}
-  {%- when "filled" -%}
-    {%- assign sep = ' ▶ ' -%}
-  {%- when "hollow" -%}
-    {%- assign sep = ' ▷ ' -%}
-  {%- else -%}
-    {%- assign sep = ' › ' -%}
+  {%- when "filled" -%} {%- assign sep = ' ▶ ' -%}
+  {%- when "hollow" -%} {%- assign sep = ' ▷ ' -%}
+  {%- else          -%} {%- assign sep = ' › ' -%}
 {%- endcase -%}
 {%- assign tokens = include.path | split: "|" -%}
 <span class="bc"><span>{{tokens[0] | strip}}</span>
 {%- for token in tokens offset:1 -%}
-{{sep}}<span>{{token | strip}}</span>
+  {{sep}}<span>{{token | strip}}</span>
 {%- endfor -%}
 </span>
 
