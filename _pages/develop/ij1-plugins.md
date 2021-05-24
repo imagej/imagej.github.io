@@ -6,7 +6,7 @@ section: Development:Guides
 
 {% include notice icon="imagej1" content='This page explains how to develop plugins with the ImageJ 1.x API. If you start developing a new plugin today, it is highly recommended to [develop for ImageJ2](/develop/plugins).' %}
 
-{% include project content='ImageJ1 \| describes content related to' %}
+{% include project content='ImageJ1' %}
 
 # Plugin, script or macro?
 
