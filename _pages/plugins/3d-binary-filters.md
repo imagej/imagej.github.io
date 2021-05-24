@@ -6,7 +6,7 @@ categories: [Binary]
 
 
 {% capture filename %}
-{% include maven g='sc.fiji' a='VIB\_' %}
+{% include maven g='sc.fiji' a='VIB_' %}
 {% endcapture %}
 
 {% capture source %}

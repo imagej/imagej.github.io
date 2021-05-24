@@ -98,11 +98,11 @@ Use `issue` or `pr` to specify an issue or PR number:
 
 {% raw %}
 ```
-{% include github issue='83' label='imagej\#83' %} {% include github pr='88' label='imagej\#88' %}  
+{% include github issue='83' label='imagej#83' %} {% include github pr='88' label='imagej#88' %}  
 ```
 {% endraw %}
 
-{% include github issue='83' label='imagej\#83' %} {% include github pr='88' label='imagej\#88' %}  
+{% include github issue='83' label='imagej#83' %} {% include github pr='88' label='imagej#88' %}  
 
 Use `label` to override the label:
 
@@ -127,6 +127,18 @@ Check out the
 article on Wikipedia!
 {% endcapture %}
 {% include code-example code=wikipedia-code result=wikipedia-result %}
+
+## Maven artifacts
+
+{% capture maven-code %}
+The Maven artifact for ImageJ as a whole is
+{% raw %}{% include maven g='net.imagej' a='imagej' v='2.0.0' %}{% endraw %}
+{% endcapture %}
+{% capture maven-result %}
+The Maven artifact for ImageJ as a whole is
+{% include maven g='net.imagej' a='imagej' v='2.0.0' %}
+{% endcapture %}
+{% include code-example code=maven-code result=maven-result %}
 
 ## Javadoc
 

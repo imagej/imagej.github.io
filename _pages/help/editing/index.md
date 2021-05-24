@@ -143,12 +143,12 @@ The following tables list all of this site's general-purpose includes:
 | [big-link](TODO)                  | Insert a large, obvious link         |
 | [github](linking#github)          | Link to a resource on GitHub         |
 | [javadoc](linking#javadoc)        | Link to a javadoc resource           |
-| [wikipedia](linking#wikipedia)    | Link to a Wikipedia page             |
+| [matlab](TODO)                    | Link to MATLAB documentation         |
+| [maven](linking#maven)            | Link to Maven artifacts              |
 | [person](people)                  | Link to a person's user page         |
 | [person-list](people#lists)       | Link to a list of user pages         |
-| [matlab](TODO)                    | Link to MATLAB documentation         |
-| [maven](TODO)                     | Link to Maven artifacts              |
 | [scholar](TODO)                   | Link to an article on Google Scholar |
+| [wikipedia](linking#wikipedia)    | Link to a Wikipedia page             |
 
 #### Symbols
 

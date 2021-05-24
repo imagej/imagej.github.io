@@ -14,11 +14,11 @@ categories: [Plugins]
 {% endcapture %}
 
 {% capture filename%}
-{% include maven g='sc.fiji' a='register\_virtual\_stack\_slices' %}
+{% include maven g='sc.fiji' a='register_virtual_stack_slices' %}
 {% endcapture %}
 
 {% capture source%}
-{% include github org='fiji' repo='register\_virtual\_stack\_slices' %}
+{% include github org='fiji' repo='register_virtual_stack_slices' %}
 {% endcapture %}
 {% include info-box name='Transform Virtual Stack Slices' software='Fiji' author=author maintainer=maintainer filename=filename source=source released='September 24<sup>th</sup>, 2009' latest-version='3.0.0, February 17<sup>th</sup>, 2016' status='stable, active' category='[Registration](/plugin-index#registration), [Transform](/plugin-index#transform)' %}{\| \|style="vertical-align:top" \| <img src="/media/plugins/transform-virtual-stack-scheme.png" title="fig:Transform Virtual Stack scheme - All images are transformed based on the XML files" width="381" alt="Transform Virtual Stack scheme - All images are transformed based on the XML files" /> \|}
 

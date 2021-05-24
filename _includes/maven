@@ -1,37 +1,26 @@
-{% capture content %}
-{% assign url = "https://maven.scijava.org/index.html#nexus-search;gav~" %}
-{% if include.g %}
-{% assign g = {{include.g}} %}
-{% endif %}
+{%- assign g = include.g -%}
+{%- assign a = include.a -%}
+{%- assign v = include.v -%}
+{%- assign p = include.p -%}
+{%- assign c = include.c -%}
+{%- assign label = include.label -%}
 
-{% if include.a %}
-{% assign a = {{include.a}} %}
-{% endif %}
+{%- capture link -%}
+  https://maven.scijava.org/#nexus-search;gav~{{g}}~{{a}}~{{v}}~{{p}}~{{c}}~kw,versionexpand
+{%- endcapture -%}
 
-{% if include.v %}
-{% assign v = {{include.v}} %}
-{% endif %}
+{%- unless label -%}
+  {%- capture label -%}
+    {%- if g -%} :{{g}} {%- endif -%}
+    {%- if a -%} :{{a}} {%- endif -%}
+    {%- if v -%} :{{v}} {%- endif -%}
+    {%- if p -%} :{{p}} {%- endif -%}
+    {%- if c -%} :{{c}} {%- endif -%}
+  {%- endcapture -%}
+  {%- assign label = label | slice: 1, label.size -%}
+{%- endunless -%}
 
-{% if include.p %}
-{% assign p = {{include.p}} %}
-{% endif %}
-
-{% if include.c %}
-{% assign c = {{include.c}} %}
-{% endif %}
-
-{% assign maven-url = url | append: {{g}} | append: "~" | append: {{a}} | append: "~" | append: {{v}} | append: "~" | append: {p}} | append: "~" | append: {{c}} | append: "~" | append: "kw,versionexpand" %}
-
-{% if include.label %}
-{% assign label = {{include.label}} %}
-{% else label = {{g}} | append: ':' | append: {{a}} | append: ':' | append: {{v}} | append: ':' | append: 'p' %}
-{% endif %}
-
-
-<a href="{{maven-url}}">{{label}}</a>
-
-{% endcapture %}
-{{content}}
+<a href="{{link}}">{{label}}</a>
 
 {%- comment -%}
 # vi:syntax=liquid
