@@ -1878,18 +1878,6 @@ body.is-preload #header:after {
   padding: 0;
 }
 
-/* Video */
-
-.video video, .video iframe {
-  max-width: 100%;
-}
-
-.video .linkback {
-  font-size: 0.7em;
-  text-align: right;
-  margin-top: -1em;
-}
-
 /* List */
 
 ul.major-icons li {

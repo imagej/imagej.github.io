@@ -113,7 +113,7 @@
   {%- include notice type="warning" content=error-message -%}
 {%- else -%}
   <div class="video">
-    {%- if caption -%} <figure> {%- endif -%}
+    {%- if caption -%} <figure class="figure"> {%- endif -%}
     {%- if direct -%}
       <video controls width="{{width}}" height="{{height}}"><source src="{{src}}">Sorry, your browser doesn't support embedded video.</video>
     {%- else -%}

@@ -9,9 +9,9 @@ The `video` include allows you to embed video onto a page.
 
 ## YouTube
 
-```liquid
-{% raw %}{% include video platform="youtube" id="GVHaSQ_O6IE" aspect="1:1" %}{% endraw %}
-```
+{% highlight liquid %}{% raw %}
+{% include video platform="youtube" id="GVHaSQ_O6IE" aspect="1:1" %}
+{% endraw %}{% endhighlight %}
 
 {% include video platform="youtube" id="GVHaSQ_O6IE" aspect="1:1" %}
 
@@ -23,17 +23,17 @@ parameter is optional though, with the default being 4:3 at 400 x 300.
 The `video` include automatically detects when you pass a YouTube playlist ID
 (they always start with `PL`), and embeds the playlist accordingly.
 
-```liquid
-{% raw %}{% include video platform="youtube" id="PLh7mLbGrvbzkQXGYPuyOpMiFT7pEUsYsf" %}{% endraw %}
-```
+{% highlight liquid %}{% raw %}
+{% include video platform="youtube" id="PLh7mLbGrvbzkQXGYPuyOpMiFT7pEUsYsf" %}
+{% endraw %}{% endhighlight %}
 
 {% include video platform="youtube" id="PLh7mLbGrvbzkQXGYPuyOpMiFT7pEUsYsf" %}
 
 ## Vimeo
 
-```liquid
-{% raw %}{% include video platform="vimeo" id="140929687" aspect="16:9" width=500 %}{% endraw %}
-```
+{% highlight liquid %}{% raw %}
+{% include video platform="vimeo" id="140929687" aspect="16:9" width=500 %}
+{% endraw %}{% endhighlight %}
 
 {% include video platform="vimeo" id="140929687" aspect="16:9" width=500 %}
 
@@ -41,9 +41,9 @@ We use the `width` parameter to make the above video from Vimeo a bit wider than
 
 ## SWITCHtube
 
-```liquid
-{% raw %}{% include video platform="switchtube" id="98578061" aspect="16:9" height=281 %}{% endraw %}
-```
+{% highlight liquid %}{% raw %}
+{% include video platform="switchtube" id="98578061" aspect="16:9" height=281 %}
+{% endraw %}{% endhighlight %}
 
 {% include video platform="switchtube" id="98578061" aspect="16:9" height=281 %}
 
@@ -52,8 +52,8 @@ This is useful if you need to align a series of videos in a row.
 
 ## Direct links
 
-```liquid
-{% raw %}{% include video src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4" %}{% endraw %}
-```
+{% highlight liquid %}{% raw %}
+{% include video src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4" %}
+{% endraw %}{% endhighlight %}
 
 {% include video src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4" %}

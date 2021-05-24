@@ -21,7 +21,7 @@
   {% include notice icon="warning" content=error-message %}
 {%- else -%}
   {%- if figure -%}
-    <figure
+    <figure class="figure"
       {%- if align %} class="{{align}}" {%- endif -%}
       {%- if style %} class="{{style}}" {%- endif -%}
     >
