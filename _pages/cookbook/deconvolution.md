@@ -45,17 +45,24 @@ For an educational interactive ImageJ javascript demo of convolution, inverse fi
 
 ## Video presentations
 
-<div style="float: left; padding-right: 1em">
+<!-- TODO: Convert to a proper (but flexible) grid of some sort. -->
 
-TODO VIMEO WIDGET by {% include person id='bnorthan' %}, ([slides](/presentations/2015-09-04-imagej2-deconvolution/))
+<div style="display: inline-block; width: 49%; min-width: 300px; vertical-align: top">
+
+{% capture bnorthan-footer -%}
+[Flexible deconvolution using ImageJ Ops](https://vimeo.com/140098821)
+by {% include person id='bnorthan' %} ([slides](/presentations/2015-09-04-imagej2-deconvolution/))
+{%- endcapture -%}
+{% include video platform='vimeo' id='140098821' aspect='16:9' footer=bnorthan-footer %}
 
 </div>
-<div style="float: left">
 
-TODO VIMEO WIDGET by {% include person id='bene51' %}
+<div style="display: inline-block; width: 49%; min-width: 300px; vertical-align: top">
+
+{% capture bene51-footer -%}
+[Real-time multi-view deconvolution of time-lapse data on the GPU](https://vimeo.com/140098826)
+by {% include person id='bene51' %}
+{%- endcapture -%}
+{% include video platform='vimeo' id='140098826' aspect='16:9' footer=bene51-footer %}
 
 </div>
-
-{% include clear content='left' %}
-
- 

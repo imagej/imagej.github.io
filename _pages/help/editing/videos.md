@@ -1,21 +1,59 @@
 ---
 title: Videos 
 section: Help:Editing the Wiki
+description: This page demonstrates how to embed videos on a page.
 nav-links: true
 ---
 
-This page demonstrates how to add video embeds to your page.
+The `video` include allows you to embed video onto a page.
 
 ## YouTube
 
-The `youtube` include allows you to embed a YouTube video into any
-page with an *embed* url using the url variable.
+```liquid
+{% raw %}{% include video platform="youtube" id="GVHaSQ_O6IE" aspect="1:1" %}{% endraw %}
+```
 
-### Example
+{% include video platform="youtube" id="GVHaSQ_O6IE" aspect="1:1" %}
 
-{% raw %}
-`{% include youtube url="https://www.youtube.com/embed/4NOM-kLfDR8" %}`
-{% endraw %}
+Above, we set the aspect ratio to 1:1 because the video is square; this
+parameter is optional though, with the default being 4:3 at 400 x 300.
 
-produces:
-{% include youtube url="https://www.youtube.com/embed/4NOM-kLfDR8" %}
+### YouTube playlists
+
+The `video` include automatically detects when you pass a YouTube playlist ID
+(they always start with `PL`), and embeds the playlist accordingly.
+
+```liquid
+{% raw %}{% include video platform="youtube" id="PLh7mLbGrvbzkQXGYPuyOpMiFT7pEUsYsf" %}{% endraw %}
+```
+
+{% include video platform="youtube" id="PLh7mLbGrvbzkQXGYPuyOpMiFT7pEUsYsf" %}
+
+## Vimeo
+
+```liquid
+{% raw %}{% include video platform="vimeo" id="140929687" aspect="16:9" width=500 %}{% endraw %}
+```
+
+{% include video platform="vimeo" id="140929687" aspect="16:9" width=500 %}
+
+We use the `width` parameter to make the above video from Vimeo a bit wider than the default of 400.
+
+## SWITCHtube
+
+```liquid
+{% raw %}{% include video platform="switchtube" id="98578061" aspect="16:9" height=281 %}{% endraw %}
+```
+
+{% include video platform="switchtube" id="98578061" aspect="16:9" height=281 %}
+
+We override this SWITCHtube video's height to be a specific value.
+This is useful if you need to align a series of videos in a row.
+
+## Direct links
+
+```liquid
+{% raw %}{% include video src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4" %}{% endraw %}
+```
+
+{% include video src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4" %}

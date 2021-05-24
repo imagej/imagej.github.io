@@ -60,7 +60,7 @@ The complete list of tools is as follows:
 
 The following screencast demonstrates Label Registration 3D in use.
 
-{% include youtube url='https://www.youtube.com/embed/paUFYucNHa4' %}
+{% include video platform='youtube' id='paUFYucNHa4' %}
 
 ## Reference
 

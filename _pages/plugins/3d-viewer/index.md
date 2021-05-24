@@ -13,7 +13,7 @@ This plugin offers hardware-accelerated visualization possibilities for image st
 
 Here you are a demo screencast separated into two different videos (\~15 min in total) showing many of the features of the 3D viewer:
 
-{% include youtube url='https://www.youtube.com/embed/cD3Hc3NYkaU'%} {% include youtube url='https://www.youtube.com/embed/GqG\_RcK3kYg'%}
+{% include video platform='youtube' id='cD3Hc3NYkaU'%} {% include video platform='youtube' id='GqG\_RcK3kYg'%}
 
 Beyond this, a lot more screencasts can be found [here](/plugins/3d-viewer/screencasts), covering the following topics:
 

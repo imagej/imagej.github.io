@@ -2055,10 +2055,10 @@ Why_Closed-Source_Is_Wrong :: TODO
 Why_Java :: develop/philosophy#why-java
 Widget:Flash :: <DELETED> (Flash was discontinued)
 Widget:Google_Spreadsheet :: TODO
-Widget:SWITCHtube :: TODO
+Widget:SWITCHtube :: help/editing/videos#switchtube
 Widget:UsageMap :: about/usage
-Widget:Vimeo :: TODO
-Widget:YouTube :: help/editing/youtube-video
+Widget:Vimeo :: help/editing/videos#vimeo
+Widget:YouTube :: help/editing/videos#youtube
 Wiki :: about/contributing#this-web-site
 Wiki_log :: <DELETED> (MediaWiki-specific changelog)
 Windows :: platforms/windows

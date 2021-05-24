@@ -167,6 +167,7 @@ The following tables list all of this site's general-purpose includes:
 |----------------------------------------------|----------------------------|
 | [img](images#images)                         | Insert an image            |
 | [gallery](images#image-galleries)            | Insert an image gallery    |
+| [video](videos)                              | Embed a video              |
 
 #### Notices
 
@@ -199,11 +200,8 @@ The following tables list all of this site's general-purpose includes:
 
 | Include                                      | What needs to happen               |
 |----------------------------------------------|------------------------------------|
-| [figure](images#figures)                     | Merge with img include             |
 | [thumbnail](TODO)                            | Merge with img include             |
 | [thumbnail-link](TODO)                       | Merge with img include             |
-| [youtube](videos#youtube)                    | Generalize to more video platforms |
-| [youtube-playlist](videos#youtube-playlists) | Generalize to more video platforms |
 | [info-box](notices#info-box)                 | Delete after migrating to statbox  |
 | [biginfo-box](notices#big-info-box)          | Merge with notice                  |
 | [minibox](notices#min-info-box)              | Discontinue?                       |

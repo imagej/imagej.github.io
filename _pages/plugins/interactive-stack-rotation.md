@@ -20,7 +20,7 @@ categories: [Plugins,Transform,Interactive]
 
 Here is a screencast how to use the Interactive Stack Rotation plugin:
 
-{% include youtube url='https://www.youtube.com/embed/7so6zkwvNeQ'%}
+{% include video platform='youtube' id='7so6zkwvNeQ'%}
 
 For a quick overview of keyboard shortcuts, please press the {% include key key='F1' %} key to be shown this usage:
 

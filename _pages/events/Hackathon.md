@@ -8,12 +8,7 @@ categories: [Hackathons, community]
 
 In the context of ImageJ, a {% include wikipedia title='Hackathon' text='hackathon'%} is a coding spree, or if you want, a one or two-week brainstorm session where scientists with programming skills sit together and work in a low-distraction, high-energy environment to advance the software side of their research. Typically, results get accomplished much faster (read: days instead of weeks or months) than without hackathons, because the setting is ideal to discuss advanced ideas with similar-thinking scientists and ideas can sprout much faster. Sometimes, results are achieved that would not have been possible without a hackathon at all.
 
-<div style="float: right">
-
-{% include youtube url='https://www.youtube.com/embed/ZDZvoJX3PDM'%}  
-**The "hackathon effect" in effect!**
-
-</div>
+{% include video platform='youtube' id='ZDZvoJX3PDM' footer='**The "hackathon effect" in effect!**' %}
 
 # Why?
 

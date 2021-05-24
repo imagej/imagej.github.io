@@ -8,7 +8,7 @@ title: Simple Neurite Tracer › 3D Interaction
 
 It is now possible to select the points for traces in the [3D Viewer](/plugins/3d-viewer) rather than the 2D view.
 
-{% include youtube url='https://www.youtube.com/embed/Vt4m55V7AjI'%}
+{% include video platform='youtube' id='Vt4m55V7AjI'%}
 
 In order to select points for tracing in the 3D Viewer, you need to use the "Wand" tool. In order to rotate the view, you need to use the "Hand" tool. Once you have selected each of these once, you should be able to switch between them by pressing the {% include key key='Esc' %} key.
 

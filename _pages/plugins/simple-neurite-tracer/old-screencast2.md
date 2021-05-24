@@ -8,4 +8,4 @@ title: Simple Neurite Tracer › Old Screencast2
 
 This next video demonstrates more of the functionality that I added at Janelia Farm, in particular the fitting of centre lines and the filling-out of neurons. I use Benjamin Schmid's \[3D Viewer\] in this demo for visualizing the results, and as an example export the mesh and load it into Blender at the end - thanks to Albert Cardona for his advice on all matters Blender.
 
-{% include youtube url='https://www.youtube.com/embed/sjSsNsr\_2YM'%}
+{% include video platform='youtube' id='sjSsNsr\_2YM'%}

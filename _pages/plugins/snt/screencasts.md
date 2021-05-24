@@ -8,27 +8,19 @@ This page contains a list of screencasts that describe SNT capabilities.
 
 ## Introduction To Tracing
 
-
-{% include youtube url='https://www.youtube.com/embed/7wC0F4RcUKw'%}  
-
+{% include video platform='youtube' id='7wC0F4RcUKw' %}
 
 ## Advanced Path Editing
 
-
-{% include youtube url='https://www.youtube.com/embed/Dh0XczTAGM0'%}  
-
+{% include video platform='youtube' id='Dh0XczTAGM0' %}
 
 ## Secondary Images
 
-
-{% include youtube url='https://www.youtube.com/embed/tQH2YSf4pns'%}  
-
+{% include video platform='youtube' id='tQH2YSf4pns' %}
 
 ## Analyzing Reconstructions
 
-
-{% include youtube url='https://www.youtube.com/embed/inZl4zS7oc4'%}  
-
+{% include video platform='youtube' id='inZl4zS7oc4' %}
 
 # Outdated Screencasts
 
@@ -36,17 +28,12 @@ These are old [Simple Neurite Tracer](/plugins/snt/faq#snt) screencasts that are
 
 ## Basic Usage of [Simple Neurite Tracer](/plugins/snt/faq#snt)
 
-
-{% include youtube url='https://www.youtube.com/embed/y6ZPdDfUOjI'%}  
-
+{% include video platform='youtube' id='y6ZPdDfUOjI' %}
 
 ## Using MIP overlays in [Simple Neurite Tracer](/plugins/snt/faq#snt)
 
-
-{% include youtube url='https://www.youtube.com/embed/pXpMRb1AC4I'%}  
-
+{% include video platform='youtube' id='pXpMRb1AC4I' %}
 
 ## Using The [Legacy 3D Viewer](/plugins/snt/step-by-step-instructions#tracing-in-the-legacy-3d-viewer)
 
-
-{% include youtube url='https://www.youtube.com/embed/SrPeSwu31Zs'%}  
+{% include video platform='youtube' id='SrPeSwu31Zs' %}

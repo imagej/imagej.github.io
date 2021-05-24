@@ -125,7 +125,7 @@ Let's put this in practice. Go to the frame 16 (or wherever you stopped annotati
 
 How far can it go really depends on the radius you set for the first spot, so results may vary. Here is how it looks on a movie:
 
-{% include youtube url='https://www.youtube.com/embed/fAOpKTenSaU'%}
+{% include video platform='youtube' id='fAOpKTenSaU'%}
 
 Great, no?
 

@@ -617,7 +617,7 @@ enables you to run BigWarp using images stored using
     [Nicolas Chiaruttini](http://kiaru.eu/cv-rapide/) in response to
     [this forum post](https://forum.image.sc/t/superimpose-atlas-image-onto-microscope-picture/20593).
 
-{% include youtube url='https://www.youtube.com/embed/zNur6mk9VXg'%}
+{% include video platform='youtube' id='zNur6mk9VXg'%}
 
 # Publication
 

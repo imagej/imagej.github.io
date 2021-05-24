@@ -358,7 +358,7 @@ If you use [`copytoImagePlus`](https://github.com/kouichi-c-nakamura/copytoImage
 
 # Video presentation
 
-TODO VIMEO WIDGET
+{% include video platform='vimeo' id='140929686' aspect='16:9' caption='ImageJ+MATLAB: Reunited' %}
 
 # Publication
 

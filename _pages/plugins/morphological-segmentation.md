@@ -89,13 +89,13 @@ If your segmentation is taking too long or you want **to stop it** for any reaso
 
 This introductory screencast (which needs audio) explains the basic use of the plugin:
 
-{% include youtube url='https://www.youtube.com/embed/gF4nhq7I2Eo'%}
+{% include video platform='youtube' id='gF4nhq7I2Eo'%}
 
 ### Segmentation of a 3D image
 
 This video tutorial (with audio as well) shows how to use the plugin segment a 3D image (confocal image of an *Arabidopsis thaliana* embryo, courtesy of Jean-Christophe Palauqui (INRA-Versailles)):
 
-{% include youtube url='https://www.youtube.com/embed/lm4hQhLlnHU'%}
+{% include video platform='youtube' id='lm4hQhLlnHU'%}
 
 ## Macro language compatibility
 

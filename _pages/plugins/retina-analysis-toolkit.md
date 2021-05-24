@@ -31,7 +31,7 @@ The following are required to execute this tool:
 
 ## How to Use: 2 Minute Tutorial
 
-{% include youtube url='https://www.youtube.com/embed/NyCXqNA-NTc'%}
+{% include video platform='youtube' id='NyCXqNA-NTc'%}
 
 ## Processing Settings
 
@@ -108,5 +108,4 @@ Yes, we know there is a lot to improve!
 
 ## How to Download and Install ImageJ Macros
 
-
-## {% include youtube url='https://www.youtube.com/embed/CvhPjZ62cik'%}  
+{% include video platform='youtube' id='CvhPjZ62cik'%}

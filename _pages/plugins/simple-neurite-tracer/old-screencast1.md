@@ -8,4 +8,4 @@ title: Simple Neurite Tracer › Old Screencast1
 
 This first screencast shows the basic operation of the plugin on a fairly indistinct confocal scan. After about a minute I turn on the option to use a Hessian-based cost function for the search, based on code written by Stephan Preibisch at the Janelia Farm Hackathon. You may notice that the searches after that point follows the neurons more closely. However, in some cases that finds erroneous paths or the naive cost function performs better, so in practice one switches back and forth. \[Note that this demo was recorded from an earlier version that didn't have support for branching.\]
 
-{% include youtube url='https://www.youtube.com/embed/SSXx3DLCJD8'%}
+{% include video platform='youtube' id='SSXx3DLCJD8'%}

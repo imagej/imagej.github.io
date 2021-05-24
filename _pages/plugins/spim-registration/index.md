@@ -24,7 +24,7 @@ For technical details about the registration method and SPIM imaging see also [S
 
 Selective Plane Illumination Microscopy (SPIM, [*Science*, **305**(5686):1007-9](http://www.sciencemag.org/content/305/5686/1007)) allows *in toto* imaging of large specimens by acquiring image stacks from multiple angles. However, to realize the full potential of these acquisitions the data needs to be reconstructed:
 
-{% include youtube url='https://www.youtube.com/embed/jkDd8SMv1eU'%}
+{% include video platform='youtube' id='jkDd8SMv1eU'%}
 
 We developed several algorithms for the registration and fusion of multi-angle SPIM acquisitions. This plugin collection allows you to reconstruct an isotropic output image from several input images, called **views**. This process can be applied to timelapse acquisitions as well. The complete reconstruction process is split into two parts, where you have several choices for each step:
 

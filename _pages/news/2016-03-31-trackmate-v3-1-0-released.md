@@ -16,7 +16,7 @@ We just release the version 3.1.0 of [TrackMate](/plugins/trackmate), a Fiji plu
 
 This track display mode only shows the content of the current selection, for spots and edges. It can be accessed in the GUI panel 'Configure views' with a special track display mode called 'Selection only'. Careful: the content of the selection model can still be edited in this mode. Of course, the track display mode is ignored by TrackScheme, which then can be used to modify the selection in this mode.
 
-{% include youtube url='https://www.youtube.com/embed/H72C1pae5-A'%}
+{% include video platform='youtube' id='H72C1pae5-A'%}
 
 -   The semi-auto tracker now detects spots in the currently selected channel, in case of a multi-C image.
 

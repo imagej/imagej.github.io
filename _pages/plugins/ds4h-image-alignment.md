@@ -38,7 +38,7 @@ To install DS4H Image Alignment follow the instructions reported on the Video Tu
 
 \- Video tutorial, to learn how to use DS4H Image Alignment.
 
-{% include youtube url='https://www.youtube.com/embed/GliVW-g34EQ'%}
+{% include video platform='youtube' id='GliVW-g34EQ'%}
 
 ## Reference
 

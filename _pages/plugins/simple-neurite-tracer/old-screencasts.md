@@ -10,10 +10,10 @@ These screencasts are from very early versions of the plugin, but may still be o
 
 This first screencast shows the basic operation of the plugin on a fairly indistinct confocal scan. After about a minute I turn on the option to use a Hessian-based cost function for the search, based on code written by Stephan Preibisch at the Janelia Farm Hackathon. You may notice that the searches after that point follows the neurons more closely. However, in some cases that finds erroneous paths or the naive cost function performs better, so in practice one switches back and forth. \[Note that this demo was recorded from an earlier version that didn't have support for branching.\]
 
-{% include youtube url='https://www.youtube.com/embed/SSXx3DLCJD8'%}
+{% include video platform='youtube' id='SSXx3DLCJD8'%}
 
 This next video demonstrates more of the functionality that I added at Janelia Farm, in particular the fitting of centre lines and the filling-out of neurons. I use Benjamin Schmid's [3D Viewer](/plugins/3d-viewer) in this demo for visualizing the results, and as an example export the mesh and load it into Blender at the end - thanks to Albert Cardona for his advice on all matters Blender.
 
-{% include youtube url='https://www.youtube.com/embed/sjSsNsr\_2YM'%}
+{% include video platform='youtube' id='sjSsNsr\_2YM'%}
 
 ...

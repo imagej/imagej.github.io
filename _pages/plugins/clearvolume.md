@@ -49,4 +49,4 @@ categories: [Plugins,Visualization,Citable]
 
 See ClearVolume in action!
 
-{% include youtube url='https://www.youtube.com/embed/IyUpkgTJJvc' %}
+{% include video platform='youtube' id='IyUpkgTJJvc' %}
