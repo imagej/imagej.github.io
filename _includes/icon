@@ -60,6 +60,7 @@
     {%- when "Pi"            -%} .svg
     {%- when "StarDist"      -%} .jpg
     {%- when "Windows"       -%} .svg
+    {%- when "info"          -%} .svg
     {%- else                 -%} .png
   {%- endcase -%}
 {%- endcapture -%}
