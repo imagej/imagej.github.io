@@ -1,5 +1,6 @@
 ---
 title: Tutorials
+section: Learn
 ---
 {% include warning/stub %}
 
