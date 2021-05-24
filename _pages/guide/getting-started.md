@@ -171,7 +171,7 @@ Several packages exist that allow ImageJ to [↓interact](#index-Interoperabilit
 
 ### ImageJ2
 
-[ImageJ2](/software/imagej2) is a [federally funded](/about/funding), [multi-institution](/about/contributors) project dedicated to the development of the next-generation version of ImageJ: "[↓ImageJ](#index-ImageJ2)2". [↓](#index-ImageJ2)[↓ImageJ](#index-ImageDev)2 is a complete rewrite of ImageJ, that includes the current, stable version ImageJ ("ImageJ1") with a compatibility layer so that old-style plugins and macros can run the same as they currently do in ImageJ1. Below is a [summary](/ImageJ2_grant_proposal) of the original ImageJ2 project aims:
+[ImageJ2](/software/imagej2) is a [federally funded](/about/funding), [multi-institution](/about/contributors) project dedicated to the development of the next-generation version of ImageJ: "[↓ImageJ](#index-ImageJ2)2". [↓](#index-ImageJ2)[↓ImageJ](#index-ImageDev)2 is a complete rewrite of ImageJ, that includes the current, stable version ImageJ ("ImageJ1") with a compatibility layer so that old-style plugins and macros can run the same as they currently do in ImageJ1. Below is a [summary](/software/imagej2/grant-proposal) of the original ImageJ2 project aims:
 
 -   To create the next generation version of ImageJ and improve its core architecture based on the needs of the community.
 -   To ensure ImageJ remains useful and relevant to the broadest possible community, maintaining backwards compatibility with ImageJ1 as close to 100% as possible.

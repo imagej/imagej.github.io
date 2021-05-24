@@ -28,7 +28,7 @@ Skeletonize3D is a Fiji and ImageJ plugin that performs the {% include wikipedia
 
 ## Video tutorial
 
-For a fast introduction to [Skeletonize3D](/plugins/skeletonize3d) and [AnalyzeSkeleton](/plugins/analyze-skeleton) and an example of a real application, you can have a look at this [ video tutorial](Skeleton_analysis_video_tutorial).
+For a fast introduction to [Skeletonize3D](/plugins/skeletonize3d) and [AnalyzeSkeleton](/plugins/analyze-skeleton) and an example of a real application, you can have a look at this [ video tutorial](/plugins/analyze-skeleton/video-tutorial).
 
 The tutorial describes step by step how to:
 

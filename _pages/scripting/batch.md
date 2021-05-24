@@ -44,4 +44,4 @@ Lines 26 and 27 can now be edited, replaced with the functional macro code you w
 -   [{% include bc path='Process | Batch'%}](/ij/docs/guide/146-29.html#toc-Subsection-29.12) submenu.
 -   [Scripting](/scripting) documentation and tutorials.
 -   [How to apply a common operation to a complete directory](/tutorials/apply-operation-to-a-complete-directory)
--   [Assign your own keyboard shortcuts](Keyboard_shortcuts#creating-your-own-keyboard-shortcuts)
+-   [Assign your own keyboard shortcuts](/learn/keyboard-shortcuts#creating-your-own-keyboard-shortcuts)

@@ -35,9 +35,7 @@ For details, please see [Downloading and Building Fiji From Source](/software/fi
 
 It is strongly recommended to write regression tests (also known as *unit tests*). It is [easy](/software/fiji/contribution-requirements#regression-tests).
 
-Furthermore, it is highly recommended to write and run unit tests in an [Integrated Development Environment](/develop/ides) for efficient debugging.
-
-You may also want to measure the code coverage of your tests - one way is described in the page [Code Coverage in Fiji](Code_Coverage_in_Fiji).
+Furthermore, it is highly recommended to write and run unit tests in an [Integrated Development Environment](/develop/ides) for efficient debugging. You may also want to measure the {% include wikipedia title="code coverage" %} of your tests.
 
 At some point, you might want to debug whatever you wrote. There's a small [Debugging intro](/develop/debugging) page.
 
@@ -62,14 +60,13 @@ If you have an account on this Wiki, you can easily create new tutorials with th
 -   [Tips for developers](/develop/tips)
 -   [ImageJ1 Javadoc ZIP](http://jenkins.imagej.net/job/ImageJ1-javadoc/lastStableBuild/artifact/target/site/apidocs/) (for offline usage)
 -   [ImageJ2 Javadoc ZIP](http://jenkins.imagej.net/job/ImageJ-daily/lastStableBuild/artifact/target/site/apidocs/) (for offline usage)
--   [Developers HowTo](Developers_HowTo)
+-   [Developers HowTo](/develop/using-weka)
 -   [ImageJ plugin writing tutorial](http://www.imagingbook.com/index.php?id=102)
 -   [ImageJ programming tutorials](http://albert.rierol.net/imagej_programming_tutorials.html)
 -   [Uploading plugins](/develop/uploading-plugins)
 -   [Developing Fiji in Eclipse](/develop/eclipse)
 -   [Git](/develop/git)
 -   [Project ideas](Project_ideas)
--   [Code Coverage in Fiji](Code_Coverage_in_Fiji)
 -   [Introduction to debugging](/develop/debugging)
 -   [Profiling Java Code](/develop/profiling)
 -   [Tips for C++ developers](/develop/cpp-tips)

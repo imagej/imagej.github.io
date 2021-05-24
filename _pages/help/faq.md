@@ -336,7 +336,7 @@ In the future, we plan to make this easier by having one single easy command for
 
 ## What are "external" plugins?
 
-As far as users are concerned, external Fiji plugins are exactly the same as internal Fiji plugins. For developers, ["external plugin"](External_plugins) simply implies that the plugin's source code is maintained in its own source code repository. For example, [TrakEM2](/plugins/trakem2) has been an external Fiji plugin since Fiji's inception.
+As far as users are concerned, external Fiji plugins are exactly the same as internal Fiji plugins. For developers, ["external plugin"](/develop/git/extract-a-subproject) simply implies that the plugin's source code is maintained in its own source code repository. For example, [TrakEM2](/plugins/trakem2) has been an external Fiji plugin since Fiji's inception.
 
 ## Where should I put the jars of my plugin?
 
