@@ -91,31 +91,6 @@ table.table-OS-info {
 }
 
 
-div.minibox {
-  border: thin solid #cccccc;
-  background-color: #f9f9f9;
-  font-size: 0.875em;
-  text-align: center;
-  overflow: hidden;
-  float: right;
-  position: relative;
-}
-
-div.miniboxcaption {
-  font-family: 'Linux Libertine',constantia,'hoefler text','palatino linotype',serif;
-  line-height: 1.4;
-  color: #333333;
-  direction: ltr;
-  margin: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-  border: none;
-  padding: 0.2em;
-  text-align: left;
-}
-
 .info-box {
   position: relative;
   float: right;

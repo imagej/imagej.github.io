@@ -4,6 +4,7 @@ title: Android
 section: Learn:Supported Platforms
 ---
 
+{% include img src='icons/android' align='right' width=150 caption='Inne cute?' %}
 
 Android is a mobile operating system developed by Google, which commonly runs on Android phones and tablets.
 

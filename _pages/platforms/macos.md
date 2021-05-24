@@ -4,12 +4,12 @@ title: MacOS
 section: Learn:Supported Platforms
 ---
 
-
-
-{% capture blurb%}
-{% include wikipedia title='Think different' text='Think different'%}.
+{% capture macos-caption %}
+{% include wikipedia title='Think different' text='Think different' %}.
 {% endcapture %}
-{% include minibox logo='Osx.png' blurb=blurb %}{% include wikipedia title='macOS' text='macOS'%} (formerly called Mac OS X, then OS X) is {% include wikipedia title='Apple Inc.' text='Apple'%}'s desktop operating system. It is [the second most common desktop computing platform](https://www.netmarketshare.com/operating-system-market-share.aspx) after [Windows](/platforms/windows). This page details issues specific to using [ImageJ](/about) on macOS systems.
+{% include img src='icons/macos' align='right' width=150 caption=macos-caption %}
+
+{% include wikipedia title='macOS' text='macOS' %} (formerly called Mac OS X, then OS X) is {% include wikipedia title='Apple Inc.' text='Apple' %}'s desktop operating system. It is [the second most common desktop computing platform](https://www.netmarketshare.com/operating-system-market-share.aspx) after [Windows](/platforms/windows). This page details issues specific to using [ImageJ](/about) on macOS systems.
 
 
 

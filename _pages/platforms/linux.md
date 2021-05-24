@@ -4,12 +4,10 @@ title: Linux
 section: Learn:Supported Platforms
 ---
 
+{% include img src='icons/linux' align='right' width=150 caption='[Talk is cheap. Show me the code.](https://en.wikiquote.org/wiki/Linus_Torvalds)\\
+&mdash;Linus Torvalds' %}
 
-{% include minibox logo='Tux.svg' blurb=' [Talk is cheap. Show me the code.](https://en.wikiquote.org/wiki/Linus_Torvalds)  
-—Linus Torvalds' %}{% include wikipedia title='Linux' text='Linux'%} (also known as {% include wikipedia title='GNU/Linux naming controversy' text='GNU/Linux'%}) is an [open source](Open_source) family of desktop operating systems. It is [the third most common desktop computing platform](https://www.netmarketshare.com/operating-system-market-share.aspx) after [Windows](/platforms/windows) and [macOS](/platforms/macos). This page details issues specific to using [ImageJ](/about) on Linux systems.
-
-
-
+{% include wikipedia title='Linux' text='Linux' %} (also known as {% include wikipedia title='GNU/Linux naming controversy' text='GNU/Linux' %}) is an [open source](Open_source) family of desktop operating systems. It is [the third most common desktop computing platform](https://www.netmarketshare.com/operating-system-market-share.aspx) after [Windows](/platforms/windows) and [macOS](/platforms/macos). This page details issues specific to using [ImageJ](/about) on Linux systems.
 
 # Installation
 

@@ -4,15 +4,15 @@ title: Raspberry Pi
 section: Learn:Supported Platforms
 ---
 
+{% include img src='icons/pi' align='right' width=150 caption='Learn programming through fun, practical projects!' %}
 
-{% include minibox logo='Pi.svg' blurb='Learn programming through fun, practical projects!' %}The {% include wikipedia title='Raspberry Pi' text='Raspberry Pi'%} is an inexpensive single-board computer system which runs the {% include wikipedia title='Raspbian' text='Raspbian'%} operating system, a flavor of Debian [Linux](/platforms/linux). This page provides advice and guidance for running [ImageJ](/about) and [Fiji](/software/fiji) on Raspberry Pi systems.
-
-
-
+The {% include wikipedia title='Raspberry Pi' text='Raspberry Pi' %} is an inexpensive single-board computer system which runs the {% include wikipedia title='Raspbian' text='Raspbian' %} operating system, a flavor of Debian [Linux](/platforms/linux). This page provides advice and guidance for running [ImageJ](/about) and [Fiji](/software/fiji) on Raspberry Pi systems.
 
 # Installation
 
-{% include notice icon="imagej1" content='You might notice there is as an `imagej` package available from your package manager. Please be aware that this provides [ImageJ 1.x](/software/imagej1) only, packaged by a third party, without cooperation from the core ImageJ development team. You will not have access to any [ImageJ2](/software/imagej2)-specific features such as [parameterized scripts](/scripting/parameters), and you will likely have permissions errors because it is a system-wide ImageJ installation.' %}The following steps describe how to install ImageJ on a Raspberry Pi:
+{% include notice icon="imagej1" content='You might notice there is as an `imagej` package available from your package manager. Please be aware that this provides [ImageJ 1.x](/software/imagej1) only, packaged by a third party, without cooperation from the core ImageJ development team. You will not have access to any [ImageJ2](/software/imagej2)-specific features such as [parameterized scripts](/scripting/parameters), and you will likely have permissions errors because it is a system-wide ImageJ installation.' %}
+
+The following steps describe how to install ImageJ on a Raspberry Pi:
 
 1.  Open the terminal.
 2.  Install Java 8 on your Pi (`sudo apt-get install openjdk-8-jre`).

@@ -4,6 +4,7 @@
 {%- assign alt = include.alt | default: include.title | default: include.src -%}
 {%- assign width = include.width -%}
 {%- assign align = include.align -%}
+{%- assign class = include.class -%}
 {%- assign style = include.style -%}
 
 {%- capture src -%}{%- include util/find-media path=include.src -%}{%- endcapture -%}
@@ -21,11 +22,15 @@
   {% include notice icon="warning" content=error-message %}
 {%- else -%}
   {%- if figure -%}
-    <figure class="figure"
-      {%- if align %} class="{{align}}" {%- endif -%}
-      {%- if style %} class="{{style}}" {%- endif -%}
+    <figure class="figure
+      {%- if align %} {{align}} {%- endif -%}
+      {%- if class %} {{class}} {%- endif -%}"
+            style="
+      {%- if width -%} width: {{width}}px; {%- endif -%}
+      {%- if style %} {{style}}" {%- endif -%}"
     >
     {%- assign align = nil -%}
+    {%- assign class = nil -%}
     {%- assign style = nil -%}
   {%- endif -%}
   {%- if heading -%} <center><strong>{{heading | markdownify}}</strong></center> {%- endif -%}

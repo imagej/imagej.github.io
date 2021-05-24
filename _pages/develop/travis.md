@@ -4,8 +4,9 @@ title: Travis
 section: Development:Tools
 ---
 
-{% include minibox logo='Travis.png' blurb='**Travis CI:** Build your code in the cloud!' %}[Travis CI](https://travis-ci.org/) is a tool for [continuous integration](/develop/project-management#continuous-integration). It has excellent integration with [GitHub](/develop/github), and is very useful for automating builds, deployment and other tasks. 
+{% include img src='logos/travis' align='right' width=150 caption='**Travis CI:** Build your code in the cloud!' %}
 
+[Travis CI](https://travis-ci.org/) is a tool for [continuous integration](/develop/project-management#continuous-integration). It has excellent integration with [GitHub](/develop/github), and is very useful for automating builds, deployment and other tasks. 
 
 # Services
 

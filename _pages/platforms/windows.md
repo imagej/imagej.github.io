@@ -4,12 +4,12 @@ title: Windows
 section: Learn:Supported Platforms
 ---
 
-
-
-{% capture blurb%}
-{% include wikipedia title='Where do you want to go today?' text='Where do you want to go today?'%}
+{% capture windows-caption %}
+{% include wikipedia title='Where do you want to go today?' text='Where do you want to go today?' %}
 {% endcapture %}
-{% include minibox logo='Win.png' blurb=blurb %}{% include wikipedia title='Microsoft Windows' text='Windows'%} is {% include wikipedia title='Microsoft' text='Microsoft'%}'s family of operating systems. It is [the most prevalent desktop computer platform](https://www.netmarketshare.com/operating-system-market-share.aspx). This page details issues specific to using [ImageJ](/about) on Windows systems.
+{% include img src='icons/windows' align='right' width=150 caption=windows-caption %}
+
+{% include wikipedia title='Microsoft Windows' text='Windows' %} is {% include wikipedia title='Microsoft' text='Microsoft' %}'s family of operating systems. It is [the most prevalent desktop computer platform](https://www.netmarketshare.com/operating-system-market-share.aspx). This page details issues specific to using [ImageJ](/about) on Windows systems.
 
 
 

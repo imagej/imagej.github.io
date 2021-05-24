@@ -10,11 +10,12 @@ section: Development:Tools
 -   [Maven in 5 Minutes](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)' %}
 
 
-{% capture blurb%}
-  
-**Apache Maven** is a {% include wikipedia title='Convention over configuration' text='convention over configuration'%} build automation tool.
+{% capture maven-caption %}
+**Apache Maven** is a {% include wikipedia title='Convention over configuration' text='convention over configuration' %} build automation tool.
 {% endcapture %}
-{% include minibox logo='Maven-icon.png' size='51px' blurb=blurb %}[ImageJ](/about), [Fiji](/software/fiji) and other [SciJava](SciJava) projects use [Maven](https://maven.apache.org/) for their project infrastructure.
+{% include img src='icons/maven' align='right' width=150 caption=maven-caption %}
+
+[ImageJ](/about), [Fiji](/software/fiji) and other [SciJava](SciJava) projects use [Maven](https://maven.apache.org/) for their project infrastructure.
 
 Maven artifacts are published to the [SciJava Maven repository](/develop/project-management#maven).
 
