@@ -1,0 +1,353 @@
+/* CSS rules used by HTML markup in _includes. */
+
+figure.figure {
+  max-width: 50%;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color: #f9f9f9;
+  text-align: center;
+  font-size: medium;
+  text-indent: 0;
+}
+
+/* aside */
+
+.sidebox {
+  width: 100%;
+  border: 0px solid #ccc;
+  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  background-color: lightyellow;
+  border-radius: .75em;
+  box-shadow: 4px 4px 4px #CCC;
+}
+
+@media screen and (min-width: 1200px) {
+  .sidebox {
+    width: 40%;
+    float: right;
+    margin-left: 1em;
+  }
+}
+
+/* bc */
+
+.bc {
+  font-style: italic;
+}
+.bc span {
+  border-bottom: 1px dotted #ccc;
+}
+
+/* biginfo-box */
+
+table.biginfo {
+  margin: 0 10%;
+  border-collapse: collapse;
+  background: #e6e6e6;
+  border: 1px solid #aaa;
+  border-left: 10px solid #1e90ff !important;
+  width: 80%;
+  float: center;
+}
+
+/* code-example */
+
+.code-example {
+  display: flex;
+}
+.code-example div:first-child {
+  max-width: 100%;
+  margin-right: 1em;
+}
+
+.code-example div:last-child {
+  max-width: 100%;
+  overflow: auto;
+  padding-right: 8px;
+}
+
+.code-example div p {
+  text-align: center;
+  font-weight: bold;
+  margin: 0.2em 0 0 0;
+}
+
+/* gallery */
+
+.gallery {
+  margin: 2px;
+  padding: 2px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery a {
+  text-decoration: none;
+}
+
+.gallery .thumbnail {
+  width: 200px;
+  float: none;
+  display: inline-block;
+}
+
+.gallery .thumbnail > a {
+  height: 200px;
+}
+
+.gallery .thumbnail-group {
+  float: none;
+  max-height: 100%;
+}
+
+.gallery .thumbnail-group img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* img */
+
+figure.figure img {
+  max-width: 100%;
+}
+
+figure.center {
+  width: 35%;
+}
+
+figure.row {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: medium;
+  text-indent: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5em;
+}
+
+img {
+  max-width: 100%;
+}
+
+.image {
+  border-radius: 4px;
+  border: 0;
+  display: inline-block;
+  position: relative;
+}
+
+.image img {
+  border-radius: 4px;
+  display: block;
+}
+
+.image-table {
+  display: inline-block;
+  margin: 0 0 0 0;
+  vertical-align: middle;
+}
+
+img.left {
+  padding: 0 0.5em 0.5em 0;
+  top: 0.25em;
+}
+
+img.right {
+  padding: 0 0 0.5em 0.5em;
+  top: 0.25em;
+}
+
+/* info-box */
+
+.table-info {
+  border: 0px solid #aaa;
+}
+
+.table-info td {
+  margin: auto;
+  vertical-align: middle;
+}
+
+.table-info p {
+  margin: 0;
+}
+
+.table-info ul {
+  list-style: disc;
+  margin: 0;
+  padding-left: 2em;
+}
+
+table.info-notice {
+  background: #ebf2f8;
+  border-left: 10px solid #36c;
+}
+
+/* key */
+
+.ctlcmd {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 0.5em;
+}
+
+.ctlcmd span:first-child {
+  text-align: right;
+}
+
+.key {
+  white-space: nowrap;
+  border: 1px solid #aaa;
+  border-radius: 0.2em;
+  box-shadow: 0.1em 0.1em 0.2em rgba(0,0,0,0.1);
+  background-color: #f9f9f9;
+  background-image: linear-gradient(to bottom, #eee, #f9f9f9, #eee);
+  padding: 0.1em 0.3em;
+  font-family: inherit;
+  font-size: 0.85em;
+  color: black;
+}
+
+.key img {
+  height: 1em;
+}
+
+/* link-banner */
+
+.link-banner {
+  font-family: monospace;
+  font-size: large;
+  background-color: khaki;
+  padding: 0.5em 0 0.5em 3em;
+}
+
+/* notice */
+
+.notice {
+  border: 0px solid #aaa;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+.notice-icon {
+  font-size: x-large;
+  padding-right: 0.5em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.notice-icon img {
+  max-width: 32px;
+  max-height: 32px;
+}
+
+.notice-content {
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 0.1em;
+  line-height: 1.3em;
+  margin-bottom: -0.5em;
+  max-width: calc(100% - 32px - 1em);
+}
+
+/* person */
+
+.person { }
+
+/* person-list */
+
+.person-list { }
+
+/* testimonial */
+
+table.table-OS-info {
+  background-color: #e9f5f8; -moz-border-radius: .75em; -webkit-border-radius: .75em;
+  border-radius: .75em; -moz-box-shadow: 4px 4px 4px #CCC; -webkit-box-shadow: 4px 4px 4px #CCC;
+  box-shadow: 4px 4px 4px #CCC;
+  vertical-align: middle;
+  width: 40%;
+  float:right;
+  border: 0px solid #ccc;
+  padding: 15px !important;
+}
+
+.testimonial {
+  position: relative;
+  float: right;
+  width: 50%;
+  font-size: 0.75em;
+  padding: 15px !important;
+}
+
+/* thumbnail */
+
+.thumbnail {
+  width: 400px;
+  float: right;
+  background-color: #f1f1f3;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px;
+}
+
+.thumbnail > a {
+  border-radius: 10px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.thumbnail > a:hover {
+  border: 0;
+  background: #e1e1e3;
+}
+
+.thumbnail-group {
+  float: right;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+/* tooltip */
+
+.tooltip {
+  border-bottom: 1px dashed black;
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  display: inline-block;
+  visibility: hidden;
+  max-width: 200px;
+  background-color: black;
+  color: #fff;
+  border-radius: 6px;
+  padding: 2px 5px;
+  line-height: 1.5em;
+  position: absolute;
+  z-index: 1;
+  margin-top: 25px;
+  left: -50%;
+  white-space: nowrap;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* video */
+
+.video video, .video iframe {
+  max-width: 100%;
+}
+
+.video .linkback {
+  font-size: 0.7em;
+  text-align: right;
+  margin-top: -1em;
+}

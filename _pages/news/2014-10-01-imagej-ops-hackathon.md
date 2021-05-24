@@ -29,7 +29,7 @@ All thresholding algorithms from [ImageJ 1.x](/software/imagej1) have been porte
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td style="vertical-align: top">
         <ul>
           <li>huang</li>

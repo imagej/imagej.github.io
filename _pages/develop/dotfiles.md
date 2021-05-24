@@ -13,7 +13,7 @@ You can find the dotfiles in the following repositories:
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td style="text-align: center; vertical-align: bottom">
         <p><a href="/users/ctrueden"><img src="http://gravatar.com/avatar/63df759e2779af56fd050a968ff98d09" width="48" height="48"></a><br>
         {% include github org='ctrueden' repo='dotfiles' label='ctrueden/dotfiles' %}</p>
@@ -31,7 +31,7 @@ You can find the dotfiles in the following repositories:
         {% include github org='uw-loci' repo='dotfiles' label='uw-loci/dotfiles' %}</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="text-align: center; vertical-align: bottom">
         <p><a href="/libs/imglib2"><img src="/media/icons/imglib2.png" width="48px"></a><br>
         {% include github org='imglib2' repo='dotfiles' label='imglib2/dotfiles' %}</p>

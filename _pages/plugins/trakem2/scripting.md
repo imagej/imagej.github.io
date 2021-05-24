@@ -501,7 +501,7 @@ Suppose for example that, using a [Ball object](http://t2.ini.uzh.ch/trakem2_man
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>style="vertical-align:top" |{% include thumbnail src='/media/plugins/trakem2/synaptic-surface-and-vesicles.jpg' title='313|3D view of a synaptic surface and its vesicles'%}</p>
       </td>

@@ -137,7 +137,7 @@ The following table provides a few examples of how various Fiji components are s
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td style="text-align: center">
         <p><strong>Basics</strong></p>
       </td>
@@ -153,7 +153,7 @@ The following table provides a few examples of how various Fiji components are s
         <p><strong><a href="/develop/maven">Maven</a></strong></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><strong>Classification</strong></p>
       </td>
@@ -179,7 +179,7 @@ The following table provides a few examples of how various Fiji components are s
         <p><strong>groupId</strong></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><strong>Standard</strong></p>
       </td>
@@ -205,7 +205,7 @@ The following table provides a few examples of how various Fiji components are s
         <p><code>sc.fiji</code></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="/plugins/coloc-2">Coloc 2</a></p>
       </td>
@@ -229,7 +229,7 @@ The following table provides a few examples of how various Fiji components are s
       </td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><a href="/plugins/snt">Simple Neurite Tracer</a></p>
       </td>
@@ -253,7 +253,7 @@ The following table provides a few examples of how various Fiji components are s
       </td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="/plugins/trackmate">TrackMate</a></p>
       </td>
@@ -277,7 +277,7 @@ The following table provides a few examples of how various Fiji components are s
       </td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><strong>External</strong></p>
       </td>
@@ -303,7 +303,7 @@ The following table provides a few examples of how various Fiji components are s
         <p><code>ca.mcgill</code></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="/formats/bio-formats">Bio-Formats</a></p>
       </td>
@@ -327,7 +327,7 @@ The following table provides a few examples of how various Fiji components are s
       </td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><strong>Subproject</strong></p>
       </td>
@@ -353,7 +353,7 @@ The following table provides a few examples of how various Fiji components are s
         <p><code>sc.fiji</code></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="/plugins/trakem2">TrakEM2</a></p>
       </td>
@@ -377,7 +377,7 @@ The following table provides a few examples of how various Fiji components are s
       </td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><strong>Third party</strong></p>
       </td>
@@ -403,7 +403,7 @@ The following table provides a few examples of how various Fiji components are s
         <p><code>sc.fiji</code></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="/plugins/mamut">MaMuT</a></p>
       </td>
@@ -427,7 +427,7 @@ The following table provides a few examples of how various Fiji components are s
       </td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><a href="/plugins/slim-curve">SLIM Curve</a></p>
       </td>

@@ -28,7 +28,7 @@ These releases include new versions of several components:
     </tr>
   </thead>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <ul>
           <li>[<a href="https://github.com/scijava/scijava-plugins-commands/compare/scijava-plugins-commands-0.1.8">https://github.com/scijava/scijava-plugins-commands/compare/scijava-plugins-commands-0.1.8</a>...scijava-plugins-commands-0.2.0 scijava-plugins-commands-0.2.0]

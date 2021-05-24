@@ -79,7 +79,7 @@ So you want to be an effective software developer? Use tools!
     </tr>
   </thead>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p><a href="/develop/eclipse">Eclipse</a></p>
       </td>
@@ -98,7 +98,7 @@ So you want to be an effective software developer? Use tools!
         <p>Vim-fu inside Eclipse – almost as good as the real thing</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="https://ecd-plugin.github.io/">Enhanced Class Decompiler</a></p>
       </td>
@@ -108,13 +108,13 @@ So you want to be an effective software developer? Use tools!
       <td></td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="https://www.vim.org/">Vim</a></p>
       </td>
@@ -128,7 +128,7 @@ So you want to be an effective software developer? Use tools!
         <p>Manage your vim plugins like a boss</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><a href="https://github.com/tpope/vim-sensible">vim-sensible</a></p>
       </td>
@@ -138,7 +138,7 @@ So you want to be an effective software developer? Use tools!
       <td></td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="https://github.com/vim-airline/vim-airline">vim-airline</a></p>
       </td>
@@ -148,7 +148,7 @@ So you want to be an effective software developer? Use tools!
       <td></td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><a href="https://github.com/tpope/vim-fugitive">vim-fugitive</a></p>
       </td>
@@ -158,7 +158,7 @@ So you want to be an effective software developer? Use tools!
       <td></td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="https://github.com/tpope/vim-repeat">vim-repeat</a></p>
       </td>
@@ -168,7 +168,7 @@ So you want to be an effective software developer? Use tools!
       <td></td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><a href="https://github.com/tpope/vim-surround">vim-surround</a></p>
       </td>
@@ -178,7 +178,7 @@ So you want to be an effective software developer? Use tools!
       <td></td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>See also <a href="https://github.com/ctrueden/dotfiles/blob/master/vimrc">my .vimrc</a></p>
       </td>
@@ -186,13 +186,13 @@ So you want to be an effective software developer? Use tools!
       <td></td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="https://www.zsh.org/">Zsh</a></p>
       </td>
@@ -206,7 +206,7 @@ So you want to be an effective software developer? Use tools!
         <p>Lightweight plugin manager</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><a href="https://ohmyz.sh/">oh-my-zsh</a></p>
       </td>
@@ -224,7 +224,7 @@ So you want to be an effective software developer? Use tools!
       <td></td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="https://github.com/zsh-users/zsh-syntax-highlighting">zsh-syntax-highlighting</a></p>
       </td>
@@ -234,7 +234,7 @@ So you want to be an effective software developer? Use tools!
       <td></td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><a href="https://github.com/zsh-users/zsh-history-substring-search">zsh-history-substring-search</a></p>
       </td>
@@ -244,7 +244,7 @@ So you want to be an effective software developer? Use tools!
       <td></td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="https://github.com/zsh-users/zsh-completions">zsh-completion</a></p>
       </td>
@@ -254,7 +254,7 @@ So you want to be an effective software developer? Use tools!
       <td></td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>See also <a href="https://github.com/ctrueden/dotfiles/blob/master/zshrc">my .zshrc</a></p>
       </td>
@@ -262,13 +262,13 @@ So you want to be an effective software developer? Use tools!
       <td></td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><a href="/develop/git">Git</a></p>
       </td>
@@ -282,7 +282,7 @@ So you want to be an effective software developer? Use tools!
         <p>Commit, push & pull across repositories <a href="https://github.com/ctrueden/dotfiles/blob/master/mrconfig">en masse</a></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>See also <a href="https://github.com/ctrueden/dotfiles/blob/master/gitconfig">my .gitconfig</a></p>
       </td>
@@ -290,13 +290,13 @@ So you want to be an effective software developer? Use tools!
       <td></td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="/develop/github">GitHub</a></p>
       </td>
@@ -306,13 +306,13 @@ So you want to be an effective software developer? Use tools!
       <td></td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="/develop/maven">Maven</a></p>
       </td>

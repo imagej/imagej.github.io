@@ -79,7 +79,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p><strong>Logo</strong></p>
       </td>
@@ -102,7 +102,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
         <p><strong>Contributors</strong></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>{% include icon name='SciJava' %}</p>
       </td>
@@ -126,7 +126,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
         <p>See <a href="/about/contributors">Contributors</a></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>{% include icon name='ImgLib2' %}</p>
       </td>
@@ -155,7 +155,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
         <p>See <a href="/about/contributors">Contributors</a></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>{% include icon name='ImageJ1' %}</p>
       </td>
@@ -179,7 +179,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
         <p>See <a href="/ij/notes.html">release notes</a></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>{% include icon name='ImageJ2' %}</p>
       </td>
@@ -203,7 +203,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
         <p>See <a href="/about/contributors">Contributors</a></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>{% include icon name='SCIFIO' %}</p>
       </td>
@@ -228,7 +228,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
         <p>See <a href="/about/contributors">Contributors</a></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td rowspan="3" style="vertical-align: middle">
         <p>{% include icon name='Fiji' %}</p>
       </td>
@@ -254,7 +254,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
         <p>See <a href="/about/contributors">Contributors</a></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><strong><a href="/plugins/bdv">BigDataViewer</a></strong></p>
       </td>
@@ -276,7 +276,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
       </td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><strong><a href="/plugins/trakem2">TrakEM2</a></strong></p>
       </td>
@@ -299,7 +299,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
       </td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>{% include icon name='SLIM Curve' %}</p>
       </td>
@@ -325,7 +325,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
         <p><a href="https://github.com/slim-curve/slim-plugin/graphs/contributors">Info on GitHub</a></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>{% include icon name='Bio-Formats' %}</p>
       </td>
@@ -350,7 +350,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
         <p>See <a href="http://www.openmicroscopy.org/site/about/ome-contributors">OME Contributors</a></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>{% include icon name='KNIME' %}</p>
       </td>
@@ -375,7 +375,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
         <p>See <a href="/about/contributors">Contributors</a></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>{% include icon name='CellProfiler' %}</p>
       </td>
@@ -399,7 +399,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
         <p>See <a href="/about/contributors">Contributors</a></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>{% include icon name='OMERO' %}</p>
       </td>
@@ -427,7 +427,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
         <p><a href="https://github.com/openmicroscopy/openmicroscopy/graphs/contributors">Info on GitHub</a></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>{% include icon name='Icy' %}</p>
       </td>
@@ -454,7 +454,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
         <p><a href="https://github.com/Icy-imaging/Icy-Kernel/graphs/contributors">Info on GitHub</a></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>{% include icon name='Alida' %}</p>
       </td>
@@ -480,7 +480,7 @@ Here is a summary of roles for projects in the [SciJava](SciJava) ecosystem.
         <p><a href="https://github.com/alida-hub/alida/graphs/contributors">Info on GitHub</a></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>{% include icon name='MiToBo' %}</p>
       </td>

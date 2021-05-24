@@ -15,7 +15,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td></td>
       <th>Name</th>
       <th>Author/Maintainer(s)</th>
@@ -23,7 +23,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
       <th>Initiated</th>
       <th>Status</th>
     </tr>
-    <tr class="even">
+    <tr>
       <td><img src="/media/icons/fiji.png" width="64"/></td>
       <td><a href="/software/fiji">Fiji</a></td>
       <td><a href="/about/contributors">Fiji contributors</a></td>
@@ -35,7 +35,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
       <td><a href="/users/dscho#a-short-story-about-fiji">Dec. 2007</a></td>
       <td>Active</td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td><img src="/media/icons/imagej.png" width="64"/></td>
       <td><a href="/software/imagej2">ImageJ2</a></td>
       <td><a href="/about/contributors">ImageJ developers</a></td>
@@ -49,7 +49,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
       <td>Dec. 2009</td>
       <td>Active</td>
     </tr>
-    <tr class="even">
+    <tr>
       <td><img src="/media/icons/imagej1.png" width="64"/></td>
       <td><a href="/software/imagej1">ImageJ1</a></td>
       <td>{% include person id='rasband' %}</td>
@@ -59,7 +59,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
       <td>1997</td>
       <td>Active</td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td><img src="/media/icons/imagej1.png" width="64"/></td>
       <td><a href="/libs/imageja">ImageJA</a></td>
       <td><a href="/about/contributors">ImageJ developers</a></td>
@@ -70,7 +70,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
       <td>Jul. 2005</td>
       <td>Active</td>
     </tr>
-    <tr class="even">
+    <tr>
       <td></td>
       <td><a href="/software/imagejfx">ImageJFX</a></td>
       <td>{% include person id='cmongis' %}</td>
@@ -79,7 +79,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
       <td>2015</td>
       <td>Abandoned</td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td><img src="/media/icons/imagesxm.png" width="64"/></td>
       <td><a href="/software/imagesxm">ImageSXM</a></td>
       <td>Steve Barrett</td>
@@ -88,7 +88,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
       <td>May 1993</td>
       <td>Active</td>
     </tr>
-    <tr class="even">
+    <tr>
       <td><img src="/media/about/astroimagej.png" width="64"/></td>
       <td><a href="http://www.astro.louisville.edu/software/astroimagej/">AstroImageJ</a></td>
       <td><a href="http://www.astro.louisville.edu/john_kielkopf/">John Kielkopf</a></td>
@@ -96,7 +96,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
       <td>Unknown</td>
       <td>Active</td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td></td>
       <td><a href="http://www.rawak.de/ij2x/imagej2x.html">ImageJ2x</a></td>
       <td><a href="http://rawak.de/">Rawak Software</a></td>
@@ -104,10 +104,10 @@ There are a few different flavors of ImageJ with very similar names, and some co
       <td>Unknown</td>
       <td>Last update:<br>May 2015</td>
     </tr>
-    <tr class="even">
+    <tr>
       <th colspan=6>Closed-source variants</th>
     </tr>
-    <tr class="odd">
+    <tr>
       <td><img src="/media/logos/eu-hou.png" width="64"/></td>
       <td><a href="http://www.euhou.net/index.php?option=com_content&amp;task=view&amp;id=7&amp;Itemid=9">SalsaJ</a></td>
       <td><a href="http://www.euhou.net/">EU-HOU</a></td>
@@ -118,10 +118,10 @@ There are a few different flavors of ImageJ with very similar names, and some co
       <td>Unknown</td>
       <td>Last update:<br>Oct. 2012</td>
     </tr>
-    <tr class="even">
+    <tr>
       <th colspan=6>Obsolete variants</th>
     </tr>
-    <tr class="odd">
+    <tr>
       <td></td>
       <td><a href="/software/mbf-imagej">MBF ImageJ</a></td>
       <td>Tony Collins</td>
@@ -140,7 +140,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
       <td>2005</td>
       <td>Defunct<br>(Last update:<br>Dec. 2009)</td>
     </tr>
-    <tr class="even">
+    <tr>
       <td></td>
       <td><a href="/software/imagejx">ImageJX</a></td>
       <td>{% include person id='tnargsirrah' %}</td>
@@ -157,7 +157,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
       <td>Mar. 2009</td>
       <td>Superseded by ImageJ2</td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td><img src="/media/icons/nih-image.png"/></td>
       <td><a href="/software/nih-image">NIH Image</a></td>
       <td>{% include person id='rasband' %}</td>

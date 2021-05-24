@@ -22,7 +22,7 @@ The Cookbook is based on the [Fiji](/software/fiji) distribution of ImageJ. {% i
 {::nomarkdown}
 <table style="font-size:17px; margin-left: 25px;">
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>From the Fiji menu, select {% include bc path='Help | Update...'%}</p>
       </td>
@@ -35,7 +35,7 @@ The Cookbook is based on the [Fiji](/software/fiji) distribution of ImageJ. {% i
         </figure>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>Click the <strong>Manage update sites</strong> button</p>
       </td>
@@ -48,7 +48,7 @@ The Cookbook is based on the [Fiji](/software/fiji) distribution of ImageJ. {% i
         </figure>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>Check the <strong>Cookbook</strong> update site</p>
       </td>
@@ -61,13 +61,13 @@ The Cookbook is based on the [Fiji](/software/fiji) distribution of ImageJ. {% i
         </figure>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>Close the <strong>Manage update sites</strong> dialog</p>
       </td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>Click <strong>Apply changes</strong> to download the Cookbook plugins</p>
       </td>
@@ -80,13 +80,13 @@ The Cookbook is based on the [Fiji](/software/fiji) distribution of ImageJ. {% i
         </figure>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>Restart Fiji to complete the plugin installation</p>
       </td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>Enjoy your new plugins from the <strong>Cookbook</strong> menu!</p>
       </td>

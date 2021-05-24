@@ -134,7 +134,7 @@ To use:
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td style="border:none;padding:0in;">
         <p>You can have more control over brightness and contrast adjustments with the {% include bc path='Process | Enhance contrast'%} menu command. With a stack, it analyzes the each slice's histogram to make the adjustment.</p>
         <p>The <em>Equalize contrast</em> command applies a non-linear stretch of the histogram based on the square root of its intensity.</p>
@@ -189,7 +189,7 @@ To fix an uneven background use the menu command {% include bc path='Process | S
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td style="border:none;padding:0.0194in;">
         <p><em>RAW</em></p>
       </td>
@@ -198,7 +198,7 @@ To fix an uneven background use the menu command {% include bc path='Process | S
         <p>{% include bc path='Process | Subtract Background...'%}</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="border:none;padding:0.0194in;">
         <p><img src="/media/cookbook/raw-rolling-ball-back-corr.jpg" title="fig:raw_rolling_ball_back_corr.jpg" alt="raw_rolling_ball_back_corr.jpg"></p>
       </td>
@@ -228,7 +228,7 @@ This macro, because it also works with stacks, can be used on time-courses with 
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td style="border:none;padding:0in;">
         <center>
           <p>Before correction</p>
@@ -245,7 +245,7 @@ This macro, because it also works with stacks, can be used on time-courses with 
         </center>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="border:none;padding:0in;">
         <p><img src="/media/cookbook/roi-back-corr-before.gif" title="fig:roi_back_corr_before.gif" alt="roi_back_corr_before.gif"></p>
       </td>

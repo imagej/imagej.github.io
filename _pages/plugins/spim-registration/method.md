@@ -147,7 +147,7 @@ To evaluate the precision and performance of the bead-based registration framewo
     </tr>
   </thead>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>Fixed <em>C.elegans</em>, 8 views<br>
         SPIM 40×/0.8NA</p>
@@ -165,7 +165,7 @@ To evaluate the precision and performance of the bead-based registration framewo
         <p>11:09</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>Live <em>Drosophila</em>, 5 views<br>
         SPIM 20×/0.5NA</p>
@@ -183,7 +183,7 @@ To evaluate the precision and performance of the bead-based registration framewo
         <p>2:31</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>Fixed <em>Drosophila</em>, 10 views<br>
         SPIM 20×/0.5NA</p>
@@ -201,7 +201,7 @@ To evaluate the precision and performance of the bead-based registration framewo
         <p>20:10</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>Fixed <em>Drosophila</em>, 11 views<br>
         Spinning Disc 20&amp;times/0.5NA</p>
@@ -219,7 +219,7 @@ To evaluate the precision and performance of the bead-based registration framewo
         <p>6:15</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>Simulated Dataset, 8 views<br>
         Isotropic Resolution</p>
@@ -237,7 +237,7 @@ To evaluate the precision and performance of the bead-based registration framewo
         <p>15:54</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>Live <em>Drosophila</em>, 7 views<br>
         SPIM 20×/0.5NA<br>
@@ -256,7 +256,7 @@ To evaluate the precision and performance of the bead-based registration framewo
         <p>2:27</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>Live <em>Drosophila</em>, 7 views<br>
         SPIM 20×/0.5NA<br>

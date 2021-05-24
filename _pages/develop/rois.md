@@ -75,7 +75,7 @@ The boundary behavior of a ROI may change as a result of the operation. The belo
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>+style="caption-side:bottom; text-align: left; font-size: 0.9em; font-weight: normal;"|<sup>1</sup> Transform is {% include wikipedia title='Continuous function' text='continuous'%} (preserves boundary behavior) and will preserve the interval bounds<br>
         <sup>2</sup> Transform is discontinuous or doesn't preserve bounds</p>
@@ -87,7 +87,7 @@ The boundary behavior of a ROI may change as a result of the operation. The belo
         <p>BoundaryType</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td></td>
       <td>
         <p>open</p>
@@ -96,7 +96,7 @@ The boundary behavior of a ROI may change as a result of the operation. The belo
         <p>closed</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>negate</p>
       </td>
@@ -107,7 +107,7 @@ The boundary behavior of a ROI may change as a result of the operation. The belo
         <p>open</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>transform<sup>1</sup></p>
       </td>
@@ -118,7 +118,7 @@ The boundary behavior of a ROI may change as a result of the operation. The belo
         <p>closed</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>transform<sup>2</sup></p>
       </td>

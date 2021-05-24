@@ -52,7 +52,7 @@ The following ImageJ and Fiji components now require a minimum Java version of J
     </tr>
   </thead>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p><a href="/software/imagej2">ImageJ2</a></p>
       </td>
@@ -61,7 +61,7 @@ The following ImageJ and Fiji components now require a minimum Java version of J
       <td></td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="/libs/imagej-ops">imagej-ops</a></p>
       </td>
@@ -78,7 +78,7 @@ The following ImageJ and Fiji components now require a minimum Java version of J
         <p>{% include github org='imagej' repo='imagej-ops' tag='imagej-ops-0.23.0' label='0.23.0' %}</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>{% include github org='imagej' repo='imagej-ui-swing' label='imagej-ui-swing' %}</p>
       </td>
@@ -95,7 +95,7 @@ The following ImageJ and Fiji components now require a minimum Java version of J
         <p>{% include github org='imagej' repo='imagej-ui-swing' tag='imagej-ui-swing-0.16.0' label='0.16.0' %}</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="/software/imagej2">imagej</a></p>
       </td>
@@ -112,7 +112,7 @@ The following ImageJ and Fiji components now require a minimum Java version of J
         <p>{% include github org='imagej' repo='imagej' tag='imagej-2.0.0-rc-43' label='2.0.0-rc-43' %}</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><a href="/software/fiji">Fiji</a></p>
       </td>
@@ -121,7 +121,7 @@ The following ImageJ and Fiji components now require a minimum Java version of J
       <td></td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="/libs/imglib1">legacy-imglib1</a></p>
       </td>
@@ -138,7 +138,7 @@ The following ImageJ and Fiji components now require a minimum Java version of J
         <p>{% include github org='fiji' repo='legacy-imglib1' tag='legacy-imglib1-1.1.4-DEPRECATED' label='1.1.4-DEPRECATED' %}</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><a href="/plugins/3d-blob-segmentation">3D_Blob_Segmentation</a></p>
       </td>
@@ -155,7 +155,7 @@ The following ImageJ and Fiji components now require a minimum Java version of J
         <p>{% include github org='fiji' repo='3D_Blob_Segmentation' tag='3D_Blob_Segmentation-2.0.2' label='2.0.2' %}</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="/plugins/3d-viewer">3D_Viewer</a></p>
       </td>
@@ -172,7 +172,7 @@ The following ImageJ and Fiji components now require a minimum Java version of J
         <p>{% include github org='fiji' repo='3D_Viewer' tag='3D_Viewer-3.1.0' label='3.1.0' %}</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><a href="/plugins/descriptor-based-registration-2d-3d">Descriptor_based_registration</a></p>
       </td>
@@ -189,7 +189,7 @@ The following ImageJ and Fiji components now require a minimum Java version of J
         <p>{% include github org='fiji' repo='Descriptor_based_registration' tag='Descriptor_based_registration-2.0.11' label='2.0.11' %}</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>Fiji_Developer</p>
       </td>
@@ -206,7 +206,7 @@ The following ImageJ and Fiji components now require a minimum Java version of J
         <p>{% include github org='fiji' repo='Fiji_Developer' tag='Fiji_Developer-2.0.3' label='2.0.3' %}</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><a href="/plugins/multiview-reconstruction">SPIM_Registration</a></p>
       </td>
@@ -223,7 +223,7 @@ The following ImageJ and Fiji components now require a minimum Java version of J
         <p>{% include github org='fiji' repo='SPIM_Registration' tag='SPIM_Registration-3.0.5' label='3.0.5' %}</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="/plugins/snt">Simple_Neurite_Tracer</a></p>
       </td>
@@ -240,7 +240,7 @@ The following ImageJ and Fiji components now require a minimum Java version of J
         <p>{% include github org='fiji' repo='Simple_Neurite_Tracer' tag='Simple_Neurite_Tracer-2.0.4' label='2.0.4' %}</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><a href="/plugins/trackmate">TrackMate_</a></p>
       </td>
@@ -257,7 +257,7 @@ The following ImageJ and Fiji components now require a minimum Java version of J
         <p>{% include github org='fiji' repo='TrackMate' tag='TrackMate_-2.8.1' label='2.8.1' %}</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="/plugins/tws">Trainable_Segmentation</a></p>
       </td>
@@ -274,7 +274,7 @@ The following ImageJ and Fiji components now require a minimum Java version of J
         <p>{% include github org='fiji' repo='Trainable_Segmentation' tag='Trainable_Segmentation-2.3.0' label='2.3.0' %}</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><a href="/plugins/fijiarchipelago#trakem2-archipelago">TrakEM2_Archipelago</a></p>
       </td>
@@ -291,7 +291,7 @@ The following ImageJ and Fiji components now require a minimum Java version of J
         <p>{% include github org='fiji' repo='TrakEM2_Archipelago' tag='TrakEM2_Archipelago-2.0.0' label='2.0.0' %}</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="/plugins/vib-protocol">VIB_</a></p>
       </td>
@@ -308,7 +308,7 @@ The following ImageJ and Fiji components now require a minimum Java version of J
         <p>{% include github org='fiji' repo='VIB' tag='VIB_-2.0.3' label='2.0.3' %}</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><a href="/plugins/volume-calculator">Volume Calculator</a></p>
       </td>

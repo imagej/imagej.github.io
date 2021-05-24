@@ -60,14 +60,14 @@ Press *More» Cf. Segmentation* to visually confirm which phase of the segmented
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <center>
           <p><span style="display:inline-block;text-align:center;width:230px">Segmented image</span> <span style="display:inline-block;text-align:center;width:230px"><em>Cf. Segmentation output</em></span> <span style="display:inline-block;text-align:center;width:230px"><em>Intersections mask</em></span></p>
         </center>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <center>
           <figure>
@@ -76,7 +76,7 @@ Press *More» Cf. Segmentation* to visually confirm which phase of the segmented
         </center>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <center>
           <p><strong>Top row:</strong> Image properly segmented: Arbor is sampled. <strong>Bottom row:</strong> Aberrant segmentation (inverted image): Background is sampled.</p>
@@ -218,7 +218,7 @@ Please keep in mind that this is just a refinement feature, and you should not e
     </tr>
   </thead>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p><span id="eq1">(1)</span></p>
       </td>
@@ -233,7 +233,7 @@ Please keep in mind that this is just a refinement feature, and you should not e
         Outputs a <em>N vs Distance</em> profile. Data is fitted to a polynomial function<a href="#fn:4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>. <a href="#critical-radius">Critical radius</a>, <a href="#critical-value">Critical value</a> and <a href="#mean-value-of-function">Mean value of function</a> are calculated<br></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><span id="eq2">(2)</span></p>
       </td>
@@ -248,7 +248,7 @@ Please keep in mind that this is just a refinement feature, and you should not e
         Outputs a <i>N/S vs Distance</i> profile. Points are fitted to a power function. It is an intermediate representation of the data that can be used to gauge the choice of <a href="#normalizer">normalizer</a>. Once plotted under a logarithmic scale the Linear-norm curve is similar to the Semi-log profile<br></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><span id="eq3">(3)</span></p>
       </td>
@@ -263,7 +263,7 @@ Please keep in mind that this is just a refinement feature, and you should not e
         Outputs a <i>log(N/S) vs Distance</i> profile. A linear regression is fitted to the sampled data. The <a href="#sholl-decay">Sholl regression coefficient</a> (<em>k</em>) is calculated<br></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><span id="eq4">(4)</span></p>
       </td>
@@ -278,7 +278,7 @@ Please keep in mind that this is just a refinement feature, and you should not e
         Outputs a <i>log(N/S) vs log(Distance)</i> profile. Data is also fitted to a straight line. This is an alternative approach<a href="#fn:5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> of obtaining a relevant <a href="#sholl-decay">regression coefficient</a>, when the Semi-log method returns a poor fit<br></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td></td>
       <td></td>
       <td></td>

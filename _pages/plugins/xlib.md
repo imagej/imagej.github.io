@@ -119,7 +119,7 @@ The corresponding partial differential equation had first been numerically appro
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>style="vertical-align:top" |{% include thumbnail src='/media/plugins/xfig6-1.jpg' title='CT slice after strong alcali aggregate reactions (top) and edge preserving / smoothing filtering with a 4x4 median (bottom left) and anisotropic diffusion (bottom right).'%}<br></p>
       </td>
@@ -145,7 +145,7 @@ In 1986, J. Canny has proposed an excellent edge detection filter \[Canny1986\] 
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>style="vertical-align:top" |{% include thumbnail src='/media/plugins/xfig6-2.jpg' title='Valve image (left) and the results from the Canny filter. Top: original image, 2nd row: magnitudes of gradient vectors, angles of gradient vectors, 3rd row: magnitudes after non-maxima suppression, and the connected regions after double thresholding the maximal magnitudes.'%}</p>
       </td>
@@ -179,7 +179,7 @@ As an example, ESEM images of a natural cement analogue (Maqarin, Jordania) is p
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>style="vertical-align:top" |{% include thumbnail src='/media/plugins/xfig6-3-2.jpg' title='Results from clustering of the 15-dimensional image data space displayed in the figure above. First row: k-means for 2 (left), 3, 5 and 16 (right) clusters. Second row: mean shift for the seeking perimeters 100 (left), 70, 60 and 50 (right). Third row: fuzzy c-means clustering for 5 clusters at fuzziness 1.1 (left) and 4.0, 16 clusters at fuzziness 2.0, and its fuzziness membership values (right).'%}</p>
       </td>
@@ -211,7 +211,7 @@ In particle analysis from imaging due to the resolution limits, the particles mi
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>style="vertical-align:top" |{% include thumbnail src='/media/plugins/xfig6-4.jpg' title='3D FIB-nanotomography of cement grains (left), subsequent thresholding (center), disconnected (k=0.7) and labeled particles (right).'%}</p>
       </td>
@@ -231,7 +231,7 @@ Fast distance transform of image masks is useful for many morphological imaging 
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>style="vertical-align:top" |{% include thumbnail src='/media/plugins/xfig6-5-1.jpg' title='Binary mask from cement particles (left) and Euclidian distance transform of it (center) and of its reversed mask (right).'%}</p>
       </td>
@@ -245,7 +245,7 @@ In the upper figure, a binary mask from cement particles (left) is processed by 
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>style="vertical-align:top" |{% include thumbnail src='/media/plugins/xfig6-5-2.jpg' title='Mask containing 3 black dots only (left) and its Euclidian, Chessboard and Citymap (right) distance transform.'%}</p>
       </td>
@@ -547,7 +547,7 @@ If an image is subject to consistent global shifts of the image values depending
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>style="vertical-align:top" |{% include thumbnail src='/media/plugins/xfig6-9-1.jpg' title='FIB-nt image with strong shadowing effects (top left), its thresholding (top centre), global polynomial of degree 1 (top right), its subtraction from the original image (bottom left), and its thresholding (bottom right).'%}</p>
       </td>
@@ -563,7 +563,7 @@ In addition to the global homogeneization of the brightness values, the plugin a
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>style="vertical-align:top" |{% include thumbnail src='/media/plugins/xfig6-9-2.jpg' title='FIB-nt image of a fuel cell and its shadowing effects (left), and the image after correction (right) by assuming three existing phases.'%}</p>
       </td>
@@ -594,7 +594,7 @@ In shape analysis, topological features can be captured from skeletons of the ma
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>style="vertical-align:top" |{% include thumbnail src='/media/plugins/xfig6-11.jpg' title='Some 3D objects (top), their skeletonization (bottom left) and their restoration by inflating the pipes up to the distance transform values of the original objects (bottom right).'%}</p>
       </td>
@@ -612,7 +612,7 @@ Striping artifacts may occur due to undesired effects during data acquisition. D
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>style="vertical-align:top" |{% include thumbnail src='/media/plugins/xfig6-12-1.jpg' title='Gray level (top) and RGB (bottom) image containing horizontal stripes (left) and the results of the stripe filtering plugin (right).'%}</p>
       </td>
@@ -626,7 +626,7 @@ In the next figure, the stripes in CT projections (top) and the resulting ring a
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>style="vertical-align:top" |{% include thumbnail src='/media/plugins/xfig6-12-2.jpg' title='Projection image in a CT slice (top) before (left) and after (right) stripe filtering. The stripes in the projections yield ring artifacts in the reconstructed image (bottom). An original (left) and its filtered version (right) is displayed.'%}</p>
       </td>
@@ -688,7 +688,7 @@ The algorithm assumes that the 2-point autocorrelation function of similar struc
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>style="vertical-align:top" |{% include thumbnail src='/media/plugins/xfig7-3-1.jpg' title='Segmented masks from cement paste (top left, OPC CEM 1, 42.5, w/c 0.35, 28 days hydration) and from the contact zone of the anode membrane of a solid oxide fuel cell (bottom left). A virtual 3D reconstrucion was applied to the original structures (center). A single slice from the 3D image stack is displayed for both cases (right), showing different structures than the original ones, with however closely resembling characteristics.'%}</p>
       </td>
@@ -702,7 +702,7 @@ Examples of the 2D-to-3D reconstruction are given in the figure above for a stru
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>style="vertical-align:top" |{% include thumbnail src='/media/plugins/xfig7-3-2.jpg' title='Shaded 3D representation of the reconstructed 3D stacks from the reconstructed volume of the cement paste (left) and the anode membrane (right).'%}</p>
       </td>
@@ -744,7 +744,7 @@ An example of a 2D particle image, of its mask and some particle evaluations is 
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>style="vertical-align:top" |{% include thumbnail src='/media/plugins/xfig8-1.jpg' title='Grainy structure (top left), segmented mask of the grains (top right), and the evaluation of its particle size distribution (center and bottom).'%}</p>
       </td>
@@ -766,7 +766,7 @@ Furthermore, the plugin supports a peeling evaluation. Peeling starts from a spe
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>style="vertical-align:top" |{% include thumbnail src='/media/plugins/xfig8-2.jpg' title='Phase image (top, left) and the parameters provided for the phase image evaluation (top, right). The resulting plots and the list of parameters are displayed below.'%}</p>
       </td>
@@ -796,7 +796,7 @@ PDS's can be defined in different ways and must be chosen according to the speci
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>style="vertical-align:top" |{% include thumbnail src='/media/plugins/xfig8-3.jpg' title='3D volume of cement paste (OPC CEM 1, 42.5, w/c 0.35, 28 days hydration) acquired by FIB-nanotomography (top) and its pore size distributions of varying definition (bottom, see referenced paper).'%}</p>
       </td>
@@ -826,7 +826,7 @@ Tip: if you add a shortcut for the "Display Volume" plugin, it is easily possibl
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>style="vertical-align:top" |{% include thumbnail src='/media/plugins/xfig9-1.jpg' title='Orthogonal slicer view of the nanotomographic 3D volume from cement paste as displayed in the section for the <a href="#pore-size-distribution">"Pore Size Distribution"</a> plugin (top).'%}</p>
       </td>

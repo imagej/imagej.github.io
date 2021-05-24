@@ -85,7 +85,7 @@ All components in these organizations use [Maven](/develop/maven) for [project m
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p><strong>Logo</strong></p>
       </td>
@@ -99,7 +99,7 @@ All components in these organizations use [Maven](/develop/maven) for [project m
         <p><strong>groupId</strong></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>{% include icon name='SciJava' %}</p>
       </td>
@@ -113,7 +113,7 @@ All components in these organizations use [Maven](/develop/maven) for [project m
         <p><a href="https://maven.scijava.org/index.html#nexus-search;gav~org.scijava">org.scijava</a></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>{% include icon name='ImageJ2' %}</p>
       </td>
@@ -127,7 +127,7 @@ All components in these organizations use [Maven](/develop/maven) for [project m
         <p><a href="https://maven.scijava.org/index.html#nexus-search;gav~net.imagej">net.imagej</a></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>{% include icon name='ImgLib2' %}</p>
       </td>
@@ -141,7 +141,7 @@ All components in these organizations use [Maven](/develop/maven) for [project m
         <p><a href="https://maven.scijava.org/index.html#nexus-search;gav~net.imglib2">net.imglib2</a></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>{% include icon name='SCIFIO' %}</p>
       </td>
@@ -155,7 +155,7 @@ All components in these organizations use [Maven](/develop/maven) for [project m
         <p><a href="https://maven.scijava.org/index.html#nexus-search;gav~io.scif">io.scif</a></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td rowspan="3" style="vertical-align: middle">
         <p>{% include icon name='Fiji' %}</p>
       </td>
@@ -169,7 +169,7 @@ All components in these organizations use [Maven](/develop/maven) for [project m
         <p><a href="https://maven.scijava.org/index.html#nexus-search;gav~sc.fiji">sc.fiji</a></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><a href="/plugins/bdv">BigDataViewer</a></p>
       </td>
@@ -181,7 +181,7 @@ All components in these organizations use [Maven](/develop/maven) for [project m
       </td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="/plugins/trakem2">TrakEM2</a></p>
       </td>

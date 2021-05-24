@@ -51,7 +51,7 @@ The following are required to execute this tool:
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>style="vertical-align:top"|{% include thumbnail src='/media/plugins/retina-cell-counter-roundness.png' title='**Cell Roundness**: Select the desired morphology for cells.'%}</p>
       </td>

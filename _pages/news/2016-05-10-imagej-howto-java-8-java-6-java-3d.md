@@ -41,7 +41,7 @@ However, at the moment, it is still possible to run a (slightly outdated now) ve
 </td>
 <td> Run <a href="/plugins/updater" title="/plugins/updater"><span><em><span style="border-bottom:1px dotted #ccc;">Help</span>&#160;&#8250; <span style="border-bottom:1px dotted #ccc;">Update...</span></em></span></a> to update to the latest version of ImageJ core and Fiji components.
 </td>
-<td> This version of Fiji comes bundled with <a href="/libs/java-3d" title="Java 3D">Java 3D</a> 1.6. The <a href="/plugins/3d-viewer" title="3D Viewer">3D Viewer</a> works out of the box, though there are <a rel="nofollow" class="external text" href="https://github.com/search?q=label%3Ajava-3d+is%3Aopen+user%3Afiji+user%3Aimagej&amp;type=Issues">still some bugs</a>.
+<td> This version of Fiji comes bundled with <a href="/libs/java-3d" title="Java 3D">Java 3D</a> 1.6. The <a href="/plugins/3d-viewer" title="3D Viewer">3D Viewer</a> works out of the box, though there are <a href="https://github.com/search?q=label%3Ajava-3d+is%3Aopen+user%3Afiji+user%3Aimagej&amp;type=Issues">still some bugs</a>.
 </td></tr>
 <tr>
 <th rowspan="2"> Java 6
@@ -81,7 +81,7 @@ However, at the moment, it is still possible to run a (slightly outdated now) ve
 <td>
 <p><a href="/downloads" title="/downloads">Download the newest ImageJ</a> for your platform. It comes bundled <i>without</i> Java, and <i>without</i> the Java-8 update site enabled.
 </p>
-<ul><li> If you have not already done so: install Java 8 from <a rel="nofollow" class="external text" href="http://java.com/">java.com</a>.</li>
+<ul><li> If you have not already done so: install Java 8 from <a href="http://java.com/">java.com</a>.</li>
 <li> Do <b>not</b> enable the Java-8 update site, because (at the moment) it contains a mixture of core ImageJ and Fiji components.</li></ul>
 </td>
 <td rowspan="2"> Run <a href="/plugins/updater" title="/plugins/updater"><span><em><span style="border-bottom:1px dotted #ccc;">Help</span>&#160;&#8250; <span style="border-bottom:1px dotted #ccc;">Update...</span></em></span></a> to update to the latest <b>Java-6-compatible</b> version. Your ImageJ will become outdated over time, stuck on the final Java-6-compatible plugin versions.
@@ -109,7 +109,7 @@ However, at the moment, it is still possible to run a (slightly outdated now) ve
 <tr>
 <td> <a href="/software/imagej1" title="/software/imagej1"><img alt="/software/imagej1" src="/media/icons/imagej1.png" width="64" height="64" /></a>
 </td>
-<td colspan="5"> See the <a rel="nofollow" class="external text" href="download.html">ImageJ 1.x downloads page</a> for instructions.
+<td colspan="5"> See the <a href="download.html">ImageJ 1.x downloads page</a> for instructions.
 </td></tr></table>
 <h2><span class="mw-headline" id="Upgrading_an_old_installation">Upgrading an old installation</span></h2>
 <p>If you have downloaded Fiji or ImageJ2 quite some time ago (before 2016), you probably have the Java 6 version (<a href="/help/troubleshooting#checking-the-java-version" title="/help/troubleshooting">how do I find out?</a>). So when you update, you will not receive the latest plugin releases anymore, as described above.

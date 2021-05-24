@@ -36,7 +36,7 @@ SNT has its own [documentation](/plugins/snt). The list of *Image Processing for
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p><strong>Name</strong></p>
       </td>
@@ -47,14 +47,14 @@ SNT has its own [documentation](/plugins/snt). The list of *Image Processing for
         <p><strong>Description</strong></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><em>Topological Skeletons</em></p>
       </td>
       <td></td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>Strahler classifier</p>
       </td>
@@ -65,7 +65,7 @@ SNT has its own [documentation](/plugins/snt). The list of *Image Processing for
         <p>Described in <a href="/plugins/strahler-analysis">Strahler Analysis</a>. Implemented as a {% include github org='tferr' repo='hIPNAT' path='src/main/java/ipnat/skel' label='Java plugin' %}.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>Summarize Skeleton</p>
       </td>
@@ -76,7 +76,7 @@ SNT has its own [documentation](/plugins/snt). The list of *Image Processing for
         <p>Bulk statistics of skeletonized images. Implemented as a {% include github org='tferr' repo='hIPNAT' path='src/main/java/ipnat/skel' label='Java plugin' %}.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>Particles classifier</p>
       </td>
@@ -87,14 +87,14 @@ SNT has its own [documentation](/plugins/snt). The list of *Image Processing for
         <p>Tags particles according to skeleton features. Detects maxima on a masked image and clusters detected maxima using features of the skeletonized mask. A maxima is considered to be associated to a skeleton feature (e.g., a junction or end-point, see <a href="/plugins/analyze-skeleton">AnalyzeSkeleton</a>) if the distance between its centroid and the feature is less than or equal to a cuttoff ("snap to") distance. Implemented as a {% include github org='tferr' repo='hIPNAT' path='src/main/resources/scripts/' label='Python script' %}.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><em>Utilities</em></p>
       </td>
       <td></td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>Fractal Trees</p>
       </td>

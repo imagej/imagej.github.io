@@ -72,7 +72,7 @@ During the registration process, the current difference images and a mapping of 
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>{% include thumbnail src='/media/plugins/bunwarpj-lena-during-registration.png' title='Example of bUnwarpJ output during the registration process: difference image and grid on top of moving image.'%}</p>
       </td>
@@ -86,7 +86,7 @@ During the registration process the toolbar will be changed to
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>{% include thumbnail src='/media/plugins/bunwarpj-toolbar-when-registering.png' title='bUnwarpJ toolbar when the registration process has started.'%}</p>
       </td>
@@ -104,7 +104,7 @@ When the plugin is called and before pressing "OK" in the main window, the toolb
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>{% include thumbnail src='/media/plugins/bunwarpj-toolbar-add-crosses.png' title='bUnwarpJ toolbar before starting registration.'%}</p>
       </td>
@@ -118,7 +118,7 @@ The depressed button indicates that you may **add a landmark** now. Landmarks ar
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>{% include thumbnail src='/media/plugins/bunwarpj-toolbar-move-crosses.png' title='bUnwarpJ toolbar with "Move crosses" button selected.'%}</p>
       </td>
@@ -132,7 +132,7 @@ Click and drag on any landmark to make it correspond to the same position in bot
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>{% include thumbnail src='/media/plugins/bunwarpj-landmarks-example.png' title='Example of landmarks on moving and fixed images.'%}</p>
       </td>
@@ -146,7 +146,7 @@ Landmarks can be removed through the "**Remove crosses**" button:
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>{% include thumbnail src='/media/plugins/bunwarpj-toolbar-remove-crosses.png' title='bUnwarpJ toolbar with "Remove crosses" button selected so the user can remove landmarks.'%}</p>
       </td>
@@ -166,12 +166,12 @@ This program allows you using masks in **two mutually exclusive ways**. In the f
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>{% include thumbnail src='/media/plugins/bunwarpj-toolbar-draw-inner-mask.png' title='bUnwarpJ toolbar with "Draw an inner mask" button selected.'%}</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>{% include thumbnail src='/media/plugins/bunwarpj-toolbar-draw-outer-mask.png' title='bUnwarpJ toolbar with "Draw an outer mask" button selected.'%}</p>
       </td>
@@ -185,7 +185,7 @@ The inner mask keeps the information in the interior of the polygon, while the o
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>{% include thumbnail src='/media/plugins/bunwarpj-inner-mask-example.png' title='bUnwarpJ example of inner mask on Lena image.'%}</p>
       </td>
@@ -203,7 +203,7 @@ When using the "**Input/Output Menu**" from the toolbar, we have the possibility
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>{% include thumbnail src='/media/plugins/bunwarpj-toolbar-io-menu.png' title='bUnwarpJ toolbar with "Input/Output menu" button selected.'%}</p>
       </td>

@@ -122,13 +122,13 @@ Please go to [Learn DiameterJ](https://sites.google.com/site/diameterj/) to take
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p><big>Summaries Folder</big></p>
       </td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><strong>"File Source Name"_Total Summary.csv</strong></p>
       </td>
@@ -136,7 +136,7 @@ Please go to [Learn DiameterJ](https://sites.google.com/site/diameterj/) to take
         <p><strong>"File Source Name"_Total Summary.csv Continued</strong></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <ol>
           <li>Super Pixel: The mean fiber diameter as calculated using a super pixel determination. A detailed explanation of how this algorithm works can be found above.</li>
@@ -165,13 +165,13 @@ Please go to [Learn DiameterJ](https://sites.google.com/site/diameterj/) to take
         </ol>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><big>Histograms Folder</big></p>
       </td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><strong>"File Source Name"_Pore Data.csv</strong></p>
       </td>
@@ -179,7 +179,7 @@ Please go to [Learn DiameterJ](https://sites.google.com/site/diameterj/) to take
         <p><strong>"File Source Name"_Histogram.csv</strong></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <ol>
           <li>Slice: Image name</li>
@@ -209,7 +209,7 @@ Please go to [Learn DiameterJ](https://sites.google.com/site/diameterj/) to take
         </ol>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><strong>"File Source Name"_Intersection Coordinates.txt</strong></p>
       </td>
@@ -217,7 +217,7 @@ Please go to [Learn DiameterJ](https://sites.google.com/site/diameterj/) to take
         <p><strong>"File Source Name"_Radius Histogram.tif</strong></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <ol>
           <li>Column 1 – Grey scale value at intersection</li>
@@ -239,13 +239,13 @@ Please go to [Learn DiameterJ](https://sites.google.com/site/diameterj/) to take
         </ol>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><big>Diameter Analysis Images Folder</big></p>
       </td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><strong>"File Source Name"_Compare.png</strong></p>
       </td>
@@ -253,7 +253,7 @@ Please go to [Learn DiameterJ](https://sites.google.com/site/diameterj/) to take
         <p><strong>"File Source Name"_Orientation.tif</strong></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>A montage image with four images in it</p>
         <ol>
@@ -323,14 +323,14 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p><big><strong>Download and install <a href="/ij/download.html">ImageJ 1.48</a> or newer or <a href="/downloads">Fiji</a> (any version)</strong></big></p>
       </td>
       <td></td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><strong>Windows</strong></p>
       </td>
@@ -341,7 +341,7 @@ If you installed imageJ before the end of 2013 you should uninstall your current
         <p><strong>Linux</strong></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <ol>
           <li>Download and unzip the DiameterJ files (Find in "/develop/source" above) and move or copy the three folders into the plugins folder of ImageJ.</li>

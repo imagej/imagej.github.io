@@ -54,7 +54,7 @@ Furthermore, SciJava projects typically accompany interfaces with a correspondin
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p><strong>Interface of interest</strong></p>
       </td>
@@ -62,7 +62,7 @@ Furthermore, SciJava projects typically accompany interfaces with a correspondin
         <p><strong>Base class to extend</strong></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>{% include javadoc package='org/scijava/plugin' class='RichPlugin' %}</p>
       </td>
@@ -70,7 +70,7 @@ Furthermore, SciJava projects typically accompany interfaces with a correspondin
         <p>{% include javadoc package='org/scijava/plugin' class='AbstractRichPlugin' %}</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>{% include javadoc package='org/scijava/command' class='Command' %}</p>
       </td>
@@ -78,7 +78,7 @@ Furthermore, SciJava projects typically accompany interfaces with a correspondin
         <p>{% include javadoc package='org/scijava/command' class='ContextCommand' %}</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>{% include javadoc package='org/scijava/tool' class='Tool' %}</p>
       </td>
@@ -86,7 +86,7 @@ Furthermore, SciJava projects typically accompany interfaces with a correspondin
         <p>{% include javadoc package='org/scijava/tool' class='AbstractTool' %}</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>{% include javadoc package='org/scijava/service' class='Service' %}</p>
       </td>
@@ -94,7 +94,7 @@ Furthermore, SciJava projects typically accompany interfaces with a correspondin
         <p>{% include javadoc package='org/scijava/service' class='AbstractService' %}</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>{% include javadoc project='SCIFIO' package='io/scif' class='Format' %}</p>
       </td>

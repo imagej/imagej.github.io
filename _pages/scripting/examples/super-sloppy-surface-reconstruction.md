@@ -24,7 +24,7 @@ See here a photograph of the [lunar crater Hohmann](http://commons.wikimedia.org
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>style="vertical-align:top" |{% include thumbnail src='/media/scripting/examples/hohmann-crater.jpg' title='Original image'%}</p>
       </td>

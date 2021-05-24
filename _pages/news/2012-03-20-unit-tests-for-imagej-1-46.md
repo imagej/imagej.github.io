@@ -23,7 +23,7 @@ Once again, an increasing number of tests are failing with each release, which i
     </tr>
   </thead>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>1.45q</p>
       </td>
@@ -31,11 +31,11 @@ Once again, an increasing number of tests are failing with each release, which i
         <p>ALL PASS</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td></td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>1.45r</p>
       </td>
@@ -46,7 +46,7 @@ Once again, an increasing number of tests are failing with each release, which i
         </ol>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>1.45s</p>
       </td>
@@ -59,7 +59,7 @@ Once again, an increasing number of tests are failing with each release, which i
         </ol>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>1.46a</p>
       </td>
@@ -82,7 +82,7 @@ Once again, an increasing number of tests are failing with each release, which i
         </ol>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>1.46b</p>
       </td>
@@ -107,7 +107,7 @@ Once again, an increasing number of tests are failing with each release, which i
         </ol>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>1.46c</p>
       </td>
@@ -115,7 +115,7 @@ Once again, an increasing number of tests are failing with each release, which i
         <p>DOES NOT COMPILE</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>1.46d</p>
       </td>
@@ -141,7 +141,7 @@ Once again, an increasing number of tests are failing with each release, which i
         </ol>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>1.46e</p>
       </td>
@@ -166,7 +166,7 @@ Once again, an increasing number of tests are failing with each release, which i
         </ol>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>1.46f</p>
       </td>
@@ -174,7 +174,7 @@ Once again, an increasing number of tests are failing with each release, which i
         <p>DOES NOT COMPILE</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>1.46g - 1.46h</p>
       </td>
@@ -216,7 +216,7 @@ Once again, an increasing number of tests are failing with each release, which i
         </ol>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>1.46i</p>
       </td>

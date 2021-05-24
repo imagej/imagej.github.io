@@ -17,22 +17,22 @@ This page provides an overview of ImageJ from the perspective of software develo
 {::nomarkdown}
 <table style="width: 60%; font-size: large; margin-left: 25px; margin-top: 5px;">
   <tbody>
-    <tr class="odd">
+    <tr>
       <td style="padding: 15px 15px;">
         <p>An end-user {% include wikipedia title='Application software' text='software application'%}</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="border-top: 1px #aaa solid; padding: 15px 15px;">
         <p><a href="Getting%20started"><img src="/media/develop/imagej-app.png" width="500px"></a></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>Reusable {% include wikipedia title='Library (computing)' text='software libraries'%}</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 0 15px 15px 35px; font-size: small;">
       {%- highlight java -%}
 public void loadAndDisplay(File file) {
@@ -43,22 +43,22 @@ public void loadAndDisplay(File file) {
       {%- endhighlight -%}
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="border-top: 1px #aaa solid; padding: 15px 15px 0 15px;">
         <p>An extensible collection of <a href="plugins">plugins</a> and <a href="services">services</a></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 15px 0 30px 45px;">
         <p><a href="SciJava"><img src="/media/logos/scijava.png" height="72px"></a></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="border-top: 1px #aaa solid; padding: 15px 15px 0 15px;">
         <p><em>"Write once, run anywhere"</em> <a href="/libs/imagej-ops">image processing routines</a></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 15px 0 15px 25px;">
         <p><a href="/libs/imagej-ops"><img src="/media/develop/write-once-run-anywhere.png" width="500px"></a></p>
       </td>
@@ -83,7 +83,7 @@ ImageJ is divided into three parts:
     </tr>
   </thead>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p><span style="font-size: large"><strong>Image-specific components</strong></span></p>
       </td>
@@ -107,7 +107,7 @@ ImageJ is divided into three parts:
         </ul>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="font-size: 56px; bold">
         <p>{% include icon name='ImgLib2' size='72px' %}<a href="/libs/imglib2">ImgLib2</a></p>
       </td>
@@ -115,7 +115,7 @@ ImageJ is divided into three parts:
         <p><a href="SciJava"><img src="/media/logos/scijava.png" height="72px"></a></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="text-align: center; vertical-align: top">
         <p><span style="font-size: large"><strong>Core image data model</strong></span><br></p>
         <ul>
@@ -150,7 +150,7 @@ There are four indispensable software development tools on which ImageJ relies:
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td style="vertical-align: middle">
         <p>{% include icon name='GitHub' %}</p>
       </td>
@@ -161,7 +161,7 @@ There are four indispensable software development tools on which ImageJ relies:
         <p>A website which hosts all of ImageJ's <a href="source_code">source code</a> and <a href="issues">issue trackers</a>. GitHub is ImageJ's nexus of online collaboration (i.e., "social coding").</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>{% include icon name='Git' %}</p>
       </td>
@@ -172,7 +172,7 @@ There are four indispensable software development tools on which ImageJ relies:
         <p>A first-class {% include wikipedia title='Distributed version control' text='distributed'%} {% include wikipedia title='Version control' text='version control'%} system. Git saves "snapshots" of the source code, keeping a history of changes.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>{% include icon name='Maven' %}</p>
       </td>
@@ -183,7 +183,7 @@ There are four indispensable software development tools on which ImageJ relies:
         <p>A {% include wikipedia title='Build automation' text='build automation'%} tool with great dependency management. Maven converts source code into program binaries, and much more.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>{% include icon name='Eclipse' %}</p>
       </td>
@@ -214,7 +214,7 @@ Start with the [ImageJ tutorial notebooks](/tutorials)!
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td style="vertical-align: top">
         <p><strong>Learning the ImageJ API</strong></p>
       </td>
@@ -225,7 +225,7 @@ Start with the [ImageJ tutorial notebooks](/tutorials)!
         <p><strong>The Fiji distribution of ImageJ</strong></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <ul>
           <li>

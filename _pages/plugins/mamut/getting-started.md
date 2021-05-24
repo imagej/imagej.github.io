@@ -586,7 +586,7 @@ Here is a list of all available commands.
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p><code>add spot</code></p>
       </td>
@@ -595,7 +595,7 @@ Here is a list of all available commands.
         <p>If the <code>auto-linking</code> mode is on, also link it with the spot previously in the selection, and set the newly added spot to be the current selection.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p><code>delete spot</code></p>
       </td>
@@ -603,7 +603,7 @@ Here is a list of all available commands.
         <p>Delete the spot at mouse location.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p><code>increase spot radius</code></p>
       </td>
@@ -611,7 +611,7 @@ Here is a list of all available commands.
         <p>Increase the spot radius at mouse location by 10%.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p><code>increase spot radius a lot</code></p>
       </td>
@@ -619,7 +619,7 @@ Here is a list of all available commands.
         <p>Increase the spot radius at mouse location by 100%.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p><code>increase spot radius a bit</code></p>
       </td>
@@ -627,7 +627,7 @@ Here is a list of all available commands.
         <p>Increase the spot radius at mouse location by 1%.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p><code>decrease spot radius</code></p>
       </td>
@@ -635,7 +635,7 @@ Here is a list of all available commands.
         <p>Decrease the spot radius at mouse location by 9.10%.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p><code>decrease spot radius a lot</code></p>
       </td>
@@ -643,7 +643,7 @@ Here is a list of all available commands.
         <p>Decrease the spot radius at mouse location by 50%.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p><code>decrease spot radius a bit</code></p>
       </td>
@@ -651,7 +651,7 @@ Here is a list of all available commands.
         <p>Decrease the spot radius at mouse location by 1%.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p><code>toggle link</code></p>
       </td>
@@ -659,7 +659,7 @@ Here is a list of all available commands.
         <p>Add / Remove a link between two spots in the selection.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p><code>toggle linking mode</code></p>
       </td>
@@ -667,7 +667,7 @@ Here is a list of all available commands.
         <p>Toggle the <code>auto-linking</code> mode.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p><code>semi-auto tracking</code></p>
       </td>
@@ -675,7 +675,7 @@ Here is a list of all available commands.
         <p>Launch semi-automatic tracking from the cells currently selected.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p><code>help</code></p>
       </td>
@@ -683,7 +683,7 @@ Here is a list of all available commands.
         <p>Display the help window.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p><code>brightness settings</code></p>
       </td>
@@ -691,7 +691,7 @@ Here is a list of all available commands.
         <p>Toggle the brightness settings dialog.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p><code>visibility and grouping</code></p>
       </td>
@@ -699,7 +699,7 @@ Here is a list of all available commands.
         <p>Toggle the visibility and grouping settings dialog.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p><code>toggle interpolation</code></p>
       </td>
@@ -707,7 +707,7 @@ Here is a list of all available commands.
         <p>Toggle interpolation method for pixel drawing between <code>Nearest neighbor</code> and <code>Tri-linear interpolation</code>.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p><code>toggle fused mode</code></p>
       </td>
@@ -715,7 +715,7 @@ Here is a list of all available commands.
         <p>Toggle fused or single-source display mode.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p><code>toggle grouping</code></p>
       </td>
@@ -723,7 +723,7 @@ Here is a list of all available commands.
         <p>Toggle grouping mode.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p><code>toggle source visibility X</code></p>
       </td>
@@ -731,7 +731,7 @@ Here is a list of all available commands.
         <p>Replace X by a digit from 0 to 9. Toggle the visibility of the source X.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p><code>align XY plane</code></p>
       </td>
@@ -739,7 +739,7 @@ Here is a list of all available commands.
         <p>Change the current view to align it with the XY planes of the source currently active.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p><code>align XZ plane</code></p>
       </td>
@@ -747,7 +747,7 @@ Here is a list of all available commands.
         <p>Change the current view to align it with the XZ planes of the source currently active.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p><code>align ZY plane</code></p>
       </td>
@@ -755,7 +755,7 @@ Here is a list of all available commands.
         <p>Change the current view to align it with the ZY planes of the source currently active.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p><code>next timepoint</code></p>
       </td>
@@ -763,7 +763,7 @@ Here is a list of all available commands.
         <p>Move to the next time-point.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p><code>previous timepoint</code></p>
       </td>
@@ -771,7 +771,7 @@ Here is a list of all available commands.
         <p>Move to the previous time-point.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p><code>step time forward</code></p>
       </td>
@@ -779,7 +779,7 @@ Here is a list of all available commands.
         <p>Jump to the next time step.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p><code>step time backward</code></p>
       </td>
@@ -787,7 +787,7 @@ Here is a list of all available commands.
         <p>Jump to the previous time step.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p><code>set bookmark</code></p>
       </td>
@@ -795,7 +795,7 @@ Here is a list of all available commands.
         <p>Store a bookmark for the current view.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p><code>go to bookmark</code></p>
       </td>
@@ -803,7 +803,7 @@ Here is a list of all available commands.
         <p>Move the view to the specified bookmark.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p><code>got to bookmark orientation</code></p>
       </td>
@@ -828,7 +828,7 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
   <table>
 {::nomarkdown}
   <tbody>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='F2' %}</p>
       </td>
@@ -836,7 +836,7 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
         <p>Edit current spot name.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='Delete' %}</p>
       </td>
@@ -844,7 +844,7 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
         <p>Delete the current selection.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='Home' %}</p>
       </td>
@@ -852,7 +852,7 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
         <p>Center view on the first spot in current selection.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='End' %}</p>
       </td>
@@ -860,7 +860,7 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
         <p>Center view on the last spot in current selection.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='+' %} & {% include key key='=' %}</p>
       </td>
@@ -868,7 +868,7 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
         <p>Zoom in.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='-' %}</p>
       </td>
@@ -876,7 +876,7 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
         <p>Zoom out.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key keys='Shift|=' %}</p>
       </td>
@@ -884,7 +884,7 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
         <p>Reset zoom.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='1' %} {% include key key='2' %} ... {% include key key='9' %} on the keypad</p>
       </td>
@@ -892,7 +892,7 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
         <p>Pan the view.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key keys='Control|A' %}</p>
       </td>
@@ -900,7 +900,7 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
         <p>Select all.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key keys='Control|Shift|A' %}</p>
       </td>
@@ -908,7 +908,7 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
         <p>Clear selection.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='up' %} / {% include key key='down' %}</p>
       </td>
@@ -916,7 +916,7 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
         <p>Move to the previous / next spot in time, within the current track.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='left' %} / {% include key key='right' %}</p>
       </td>
@@ -924,7 +924,7 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
         <p>Move to the previous / next sibling, within the current track. Sibling are spots that belong to the same track and to the same time-point. For instance the two spots of two sister daughter cells.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='Page up' %} / {% include key key='Page down' %}</p>
       </td>
@@ -932,7 +932,7 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
         <p>Jump to the the previous / next track.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key keys='Shift|Left Drag' %}</p>
       </td>
@@ -940,7 +940,7 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
         <p>Pan the view.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key keys='Shift|Mousewheel' %}</p>
       </td>
@@ -948,7 +948,7 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
         <p>Zoom in / out.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td></td>
       <td></td>
     </tr>

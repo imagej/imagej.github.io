@@ -60,7 +60,7 @@ From this point on, you can carry on adding nodes to the branched path as [above
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>Supposing you want the end of a path that you're tracing to join onto an existing path, you just use the same modifier key when selecting the end point of the last part of the path. To go into that in more detail, if you're halfway through tracing a path like [1]:</p>
       </td>
@@ -73,7 +73,7 @@ From this point on, you can carry on adding nodes to the branched path as [above
         </figure>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>... and you want the final part of that path to join up with the existing path running from the top-left to top-right of the image. First, select that path in the path list (or using the {% include key key='G' %} shortcut) as in [2]:</p>
       </td>
@@ -86,7 +86,7 @@ From this point on, you can carry on adding nodes to the branched path as [above
         </figure>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>Now hold down {% include key keys='Alt|Shift' %} to restrict the endpoint to be a "join" on that existing path. Click (while still holding down the modifier keys) to start the search for that endpoint and make it join the existing path. If the search can find a path to the end point, the result should look like [3]:</p>
       </td>
@@ -99,7 +99,7 @@ From this point on, you can carry on adding nodes to the branched path as [above
         </figure>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>If you're happy with the result, confirming the temporary path will automatically complete the whole path, since if you're creating an end join there cannot be any more to the path. Note that the path list indicates that this new <em>Path (1)</em> ends on the existing <em>Path (0)</em>. The result will look like [4]:</p>
       </td>
@@ -363,7 +363,7 @@ This section describes methods to increase the accuracy of node placement.
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>Accurate node placement requires <em>XY</em>, <em>ZY</em> and <em>XZ</em> views to be visible. You can do so at <a href="/plugins/snt/manual#startup-prompt">startup</a>, by making sure that <em>Default: XY, ZY and XZ views</em> is selected, or by clicking in <em>Display ZY/XZ Views</em> in the <a href="/plugins/snt/manual#options-tab">Options tab</a> if you have already started SNT.</p>
       </td>
@@ -376,7 +376,7 @@ This section describes methods to increase the accuracy of node placement.
         </figure>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>Find the approximate location of your start point by moving your mouse in the XY window, holding down {% include key key='Shift' %} to synchronize the view in the other panes. At this point, you should enable cursor <a href="/plugins/snt/manual#cursor-auto-snapping">auto-snapping</a> in the <a href="/plugins/snt/manual#main-tab">Main tab</a> using suitable parameters for your image.</p>
       </td>
@@ -384,7 +384,7 @@ This section describes methods to increase the accuracy of node placement.
         <p><img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-1.png" width="350"></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>When you press {% include key key='+' %} to zoom in, all the panes will zoom in on the point that the crosshair is over, so each time you press {% include key key='+' %}, make sure you move your mouse pointer so that it's still over the structure of interest. You may want to adjust in the <a href="/plugins/snt/manual#views">Views</a> widget (<a href="/plugins/snt/manual#options-tab">Options tab</a>) whether all views should zoom synchronously.<br>
         At this point, you should adjust a suitable <a href="/plugins/snt/manual#cursor-auto-snapping">snapping neighborhood</a> both in 2D (XY) and 3D (Z). Note that when Z-snapping is enabled, all views become synchronized,</p>
@@ -393,7 +393,7 @@ This section describes methods to increase the accuracy of node placement.
         <p><img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-2.png" width="350"></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>Locate the center of the structure to be clicked on. If <a href="/plugins/snt/manual#cursor-auto-snapping">cursor auto-snapping</a> is enabled, simply mouse over the structure, otherwise, try moving the mouse and scroll wheel in each of the panes (holding down {% include key key='Shift' %} so synchronize the views in all three panes). Note that you can toggle the cursor auto-snapping feature at will, by pressing the <a href="/plugins/snt/key-shortcuts">shortcut</a> {% include key key='S' %}. Also, note that you can "click" on the <a href="/plugins/snt/key-shortcuts#tracing">brightest voxel</a> of a voxel column, by pressing {% include key key='M' %}.</p>
         <p>When you're happy with the point under the crosshairs, left-click to start the path:</p>
@@ -402,7 +402,7 @@ This section describes methods to increase the accuracy of node placement.
         <p><img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-3.png" width="350"></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>Zoom out again with the {% include key key='-' %} key, and similarly zoom in on the next point you want to be on your path to place it precisely:</p>
       </td>
@@ -410,7 +410,7 @@ This section describes methods to increase the accuracy of node placement.
         <p><img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-4.png" width="350"></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>The path along the neuron may not follow the center line perfectly:</p>
       </td>
@@ -418,7 +418,7 @@ This section describes methods to increase the accuracy of node placement.
         <p><img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-5.png" width="350"></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>... but you can later improve that with the {% include bc path='Refine/Fit|Fit Path...'%} option in the <a href="/plugins/snt/manual#path-manager">Path Manager</a>, which tries to align the path to the midline of the structure to sub-voxel accuracy:</p>
       </td>
@@ -426,7 +426,7 @@ This section describes methods to increase the accuracy of node placement.
         <p><img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-6.png" width="350"></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td></td>
       <td></td>
     </tr>

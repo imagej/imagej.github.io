@@ -19,7 +19,7 @@ Here we summarize some of the Registration plugins in ImageJ.
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p><strong>Plugin Name</strong></p>
       </td>
@@ -33,7 +33,7 @@ Here we summarize some of the Registration plugins in ImageJ.
         <p><strong>Plugin Snapshot</strong></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="/plugins/feature-extraction">Feature Extraction</a></p>
       </td>
@@ -55,7 +55,7 @@ Here we summarize some of the Registration plugins in ImageJ.
         <p><img src="/media/tem-42-33-f.png" width="500"> MOPS feature correspondences (example 1)</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><a href="/plugins/linear-stack-alignment-with-sift">Linear Stack Alignment with SIFT</a></p>
       </td>
@@ -70,7 +70,7 @@ Here we summarize some of the Registration plugins in ImageJ.
       </td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="/plugins/bunwarpj">BUnwarpJ</a></p>
       </td>
@@ -89,7 +89,7 @@ Here we summarize some of the Registration plugins in ImageJ.
         <p><img src="/media/plugins/bunwarpj-scheme.png" width="500"></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><a href="/plugins/trakem2">TrakEM2</a></p>
       </td>
@@ -107,7 +107,7 @@ Here we summarize some of the Registration plugins in ImageJ.
         <p><img src="/media/trakem2-snap.jpg" width="500"></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="/plugins/register-virtual-stack-slices">Register Virtual Stack Slices</a></p>
       </td>
@@ -126,7 +126,7 @@ Here we summarize some of the Registration plugins in ImageJ.
         <p><img src="/media/rvs-scheme.png" width="500"></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><a href="/plugins/fijiyama">Fijiyama</a></p>
       </td>

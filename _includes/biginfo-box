@@ -5,7 +5,7 @@
 </div>
 {% endcapture %}
 
-<div class="note">
+<div>
     <table class="biginfo">
         <tbody>
             <tr>

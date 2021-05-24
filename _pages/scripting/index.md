@@ -24,13 +24,13 @@ ImageJ's [Script Editor](/scripting/script-editor) supports many different langu
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td style="white-space: normal !important">
         <p>Recommended options</p>
       </td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="/scripting/groovy">Groovy</a></p>
       </td>
@@ -38,7 +38,7 @@ ImageJ's [Script Editor](/scripting/script-editor) supports many different langu
         <p>{% include wikipedia title='Groovy (programming language)' text='Groovy'%} is a flexible and powerful scripting language, Java-like but less verbose and dynamically typed. Learn this, and using Java later (if needed) will become easier.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><a href="/scripting/macro">ImageJ Macro</a></p>
       </td>
@@ -46,7 +46,7 @@ ImageJ's [Script Editor](/scripting/script-editor) supports many different langu
         <p>The <a href="/software/imagej1">ImageJ 1.x</a> macro language is less powerful than the other scripting languages, but is designed to be easy to learn and use.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="white-space: nowrap">
         <p><a href="/scripting/jython">Python (Jython)</a></p>
       </td>
@@ -54,7 +54,7 @@ ImageJ's [Script Editor](/scripting/script-editor) supports many different langu
         <p>{% include wikipedia title='Python (programming language)' text='Python'%} is a popular choice among scientists.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><a href="/scripting/javascript">JavaScript</a></p>
       </td>
@@ -62,7 +62,7 @@ ImageJ's [Script Editor](/scripting/script-editor) supports many different langu
         <p>{% include wikipedia title='JavaScript' text='JavaScript'%} is a popular choice among web developers.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="/scripting/jruby">Ruby (JRuby)</a></p>
       </td>
@@ -70,7 +70,7 @@ ImageJ's [Script Editor](/scripting/script-editor) supports many different langu
         <p>{% include wikipedia title='Ruby (programming language)' text='Ruby'%} is another popular choice among web developers.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><a href="/scripting/clojure">Lisp (Clojure)</a></p>
       </td>
@@ -78,7 +78,7 @@ ImageJ's [Script Editor](/scripting/script-editor) supports many different langu
         <p>{% include wikipedia title='Lisp (programming language)' text='Lisp'%} is a popular choice among computer scientists.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="/scripting/renjin">R (Renjin)</a></p>
       </td>
@@ -86,13 +86,13 @@ ImageJ's [Script Editor](/scripting/script-editor) supports many different langu
         <p>{% include wikipedia title='R (programming language)' text='R'%} is a popular choice among scientists and statisticians.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>Other options</p>
       </td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="/develop/plugins">Java</a></p>
       </td>
@@ -100,7 +100,7 @@ ImageJ's [Script Editor](/scripting/script-editor) supports many different langu
         <p>You can code Java plugins in the Script Editor. This is the most difficult path, but also the most powerful.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><a href="/scripting/matlab">MATLAB</a></p>
       </td>
@@ -108,7 +108,7 @@ ImageJ's [Script Editor](/scripting/script-editor) supports many different langu
         <p>ImageJ can interface bidirectionally with MATLAB. See the <a href="/scripting/matlab">MATLAB Scripting</a> page for details.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="/scripting/beanshell">BeanShell</a></p>
       </td>
@@ -116,7 +116,7 @@ ImageJ's [Script Editor](/scripting/script-editor) supports many different langu
         <p>{% include wikipedia title='BeanShell' text='BeanShell'%} is an old script language, maintained mostly for backwards compatibility. It is nearly 100% compatible with Java syntax, but so is <a href="/scripting/groovy">Groovy</a>.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><a href="/scripting/scala">Scala</a></p>
       </td>

@@ -26,7 +26,7 @@ One plugin which is designed to be very powerful, yet easy to use for non-expert
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p><strong>Plugin Name</strong></p>
       </td>
@@ -40,7 +40,7 @@ One plugin which is designed to be very powerful, yet easy to use for non-expert
         <p><strong>Plugin Snapshot</strong></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="/plugins/tws">Trainable Weka Segmentation</a></p>
       </td>
@@ -60,7 +60,7 @@ One plugin which is designed to be very powerful, yet easy to use for non-expert
         <p><img src="/media/tws-gui-after-training.png" width="500"></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td></td>
       <td></td>
       <td></td>

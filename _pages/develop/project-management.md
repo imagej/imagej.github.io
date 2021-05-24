@@ -66,7 +66,7 @@ Issues and milestones are public-facing entities, yet their content can be highl
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p><strong>Who</strong></p>
       </td>
@@ -77,7 +77,7 @@ Issues and milestones are public-facing entities, yet their content can be highl
         <p><strong>How?</strong></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><strong>Users<br>
         want...</strong></p>
@@ -89,7 +89,7 @@ Issues and milestones are public-facing entities, yet their content can be highl
         <p>Browse and search <a href="https://github.com/issues?q=is%3Aopen+no%3Amilestone+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci">all open issues</a>.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>to keep track of issues of interest</p>
       </td>
@@ -98,7 +98,7 @@ Issues and milestones are public-facing entities, yet their content can be highl
       </td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>to know which issues were fixed in a release</p>
       </td>
@@ -108,7 +108,7 @@ Issues and milestones are public-facing entities, yet their content can be highl
       </td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>to ask questions and report new issues</p>
       </td>
@@ -118,7 +118,7 @@ Issues and milestones are public-facing entities, yet their content can be highl
       </td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><strong>Developers<br>
         want...</strong></p>
@@ -131,7 +131,7 @@ Issues and milestones are public-facing entities, yet their content can be highl
         (e.g., <a href="https://github.com/issues?q=is%3Aopen+assignee%3Actrueden+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci">ctrueden</a>, <a href="https://github.com/issues?q=is%3Aopen+assignee%3Ahinerm+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci">hinerm</a>).</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>to find new tasks to work on</p>
       </td>
@@ -140,7 +140,7 @@ Issues and milestones are public-facing entities, yet their content can be highl
       </td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>a place to discuss implementation details, etc.</p>
       </td>
@@ -149,7 +149,7 @@ Issues and milestones are public-facing entities, yet their content can be highl
       </td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><strong>Maintainers<br>
         want...</strong></p>
@@ -161,7 +161,7 @@ Issues and milestones are public-facing entities, yet their content can be highl
         <p>Browse <a href="https://github.com/issues?q=is%3Aopen+no%3Amilestone+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci">issues without a milestone</a>.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>to ignore inactive issues without closing them</p>
       </td>
@@ -170,7 +170,7 @@ Issues and milestones are public-facing entities, yet their content can be highl
       </td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>to plan development timelines</p>
       </td>
@@ -179,7 +179,7 @@ Issues and milestones are public-facing entities, yet their content can be highl
       </td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>to report completed features</p>
       </td>

@@ -25,7 +25,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
     </tr>
   </thead>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td style="font-size: 24px; padding: 0.3em 1em 0.3em 10px !important">
         <p><a href="/presentations/fiji-introduction/"><img src="/media/learn/fiji-intro-slide.png" width="300px"></a></p>
       </td>
@@ -36,7 +36,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         Fall 2019: <a href="https://docs.google.com/presentation/d/12TUYh2snsOAxcOBNprh70KOqV5gqdzEjGIo2UTHs-DY/edit?usp=sharing/">slides</a></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="font-size: 24px; padding: 0.3em 1em 0.3em 10px !important">
         <p>Segmentation in Fiji</p>
       </td>
@@ -47,12 +47,12 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       </td>
       <td style="font-size: 24px; padding: 0.3em 1em 0.3em 10px !important"></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td></td>
       <td></td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>Scripting with Fiji</td>
       <td style="padding: 0.3em 1em 0.3em 10px !important">
         <p>Spring 2017: <a href="/presentations/2017-05/fiji-scripting/">slides</a>, <a href="https://vimeo.com/218520432">video</a><br>
@@ -77,13 +77,13 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
     </tr>
   </thead>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td><strong><a href="https://www.embl.de/training/events/2018/IMJ18-01/">From Images to Knowledge with ImageJ & Friends</a></strong></td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>2018-Dec-06</td>
       <td>{% include person id='ctrueden' %},<br>
       {% include person id='tpietzsch' %},<br>
@@ -94,19 +94,19 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://downloads.imagej.net/presentations/i2k-2018/ImageJ-and-Friends.pptx">slides (1.6GB PPTX; with movies)</a>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td><strong><a href="http://eubias.org/NEUBIAS/neubias2020-conference/symposium2017-lisbon/">2017 NEUBIAS2020</a></strong></td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>2017-Feb-16</td>
       <td>{% include person id='ctrueden' %}</td>
       <td>What's New in ImageJ2 ?</td>
@@ -114,19 +114,19 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="/presentations/2017-02-16-imagej2-neubias/#/">slides</a>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td><strong><a href="/events/Conference_2015">2015 ImageJ Conference</a></strong></td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>Keynotes</td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>2015-Sep-03</td>
       <td>{% include person id='rasband' %}</td>
       <td>Introduction to ImageJ</td>
@@ -134,7 +134,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://vimeo.com/140929691">video</a>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>2015-Sep-03</td>
       <td>{% include person id='ctrueden' %}</td>
       <td>ImageJ2 and Fiji: The ImageJ2 platform, and the Fiji distribution of ImageJ</td>
@@ -142,7 +142,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://vimeo.com/140929687">video</a>, <a href="/presentations/2015-09-03-imagej2-and-fiji/">slides</a>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>2015-Sep-04</td>
       <td>{% include person id='marktsuchida' %}</td>
       <td>Microscope control and image acquisition with Micro-Manager</td>
@@ -150,7 +150,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://vimeo.com/140098816">video</a>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>2015-Sep-04</td>
       <td>{% include person id='fjug' %}</td>
       <td>Getting stuff done – Software synergy with ImageJ + KNIME</td>
@@ -158,13 +158,13 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://vimeo.com/140098839">video</a>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>Featured presentations</td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>2015-Sep-04</td>
       <td>{% include person id='omsai' %}</td>
       <td>Sharing the value of software freedom with non-programmers</td>
@@ -172,7 +172,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://vimeo.com/140098825">video</a>, <a href="/events/Conference_2015_Program#pariksheet-nanda---sharing-the-value-of-software-freedom-with-non-programmers">abstract</a>, <a href="http://conference.imagej.net/2015/pariksheet-nanda/transcript.pdf">transcript</a>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>2015-Sep-04</td>
       <td>{% include person id='tferr' %}</td>
       <td>Alternative approaches for neuronal morphometry</td>
@@ -180,7 +180,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://vimeo.com/140098832">video</a>, <a href="/events/Conference_2015_Program#tiago-ferreira---alternative-approaches-for-neuronal-morphometry">abstract</a>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>2015-Sep-03</td>
       <td>{% include person id='bogovicj' %}</td>
       <td>The Thin Plate Spline method for smooth non-rigid transformations</td>
@@ -188,13 +188,13 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://vimeo.com/140929688">video</a>, <a href="/events/Conference_2015_Program#john-bogovic---the-thin-plate-spline-method-for-smooth-non-rigid-transformations">abstract</a>, <a href="http://conference.imagej.net/2015/john-bogovic/2015_imagej.pptx">slides</a>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>Lightning talks</td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>2015-Sep-04</td>
       <td>Anne Alerding</td>
       <td>Quantifying soybean stem tissues using common tools in ImageJ & Fiji</td>
@@ -202,7 +202,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://vimeo.com/140098824">video</a>, <a href="/events/Conference_2015_Program#anne-alerding---quantifying-soybean-stem-tissues-using-common-tools-in-imagej--fiji">abstract</a>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>2015-Sep-03</td>
       <td>{% include person id='Fab14' %}</td>
       <td>Yet another ImageJ friend: Icy</td>
@@ -210,7 +210,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://vimeo.com/140929690">video</a>, <a href="/events/Conference_2015_Program#fabrice-de-chaumont---yet-another-imagej-friend-icy">abstract</a>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>2015-Sep-03</td>
       <td>Jesus Manuel Falagan</td>
       <td>Plugins to import, visualize, process & write astronomical FITS files</td>
@@ -218,7 +218,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://vimeo.com/140929695">video</a>, <a href="/events/Conference_2015_Program#jesus-manuel-falagan---plugins-to-import-visualize-process--write-astronomical-fits-files">abstract</a>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>2015-Sep-04</td>
       <td>Bill Heeschen</td>
       <td>Quantitative characterization of cellular irregularities in extruded polystyrene foam using digital image processing and analysis</td>
@@ -227,7 +227,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="http://conference.imagej.net/2015/bill-heeschen/Heeschen_2015ImageJConf_TalkSlides.pdf">slides (PDF)</a>, <a href="http://conference.imagej.net/2015/bill-heeschen/Heeschen_2015ImageJConf_TalkSlides.pptx">slides (PPTX)</a>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>2015-Sep-03</td>
       <td>{% include person id='hinerm' %}</td>
       <td>ImageJ+MATLAB: Reunited</td>
@@ -235,7 +235,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://vimeo.com/140929686">video</a>, <a href="/events/Conference_2015_Program#mark-hiner---imagejmatlab-reunited">abstract</a>, <a href="/presentations/2015-09-03-imagej-matlab/">slides</a>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>2015-Sep-04</td>
       <td>Irene Landrum</td>
       <td>SWAMP – a no-cost, open, high-performance computing platform for continuous software assurance</td>
@@ -243,7 +243,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://vimeo.com/140098818">video</a>, <a href="/events/Conference_2015_Program#irene-landrum---swamp--a-no-cost-open-high-performance-computing-platform-for-continuous-software-assurance">abstract</a>, <a href="http://conference.imagej.net/2015/irene-landrum/SWAMP%20%20Presentation%202015Aug25.pptx">slides</a>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>2015-Sep-03</td>
       <td>{% include person id='melissalinkert' %}</td>
       <td>OME Bio-Formats: 10 years of proprietary image data</td>
@@ -251,7 +251,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://vimeo.com/140929689">video</a>, <a href="/events/Conference_2015_Program#melissa-linkert---ome-bio-formats-10-years-of-proprietary-image-data">abstract</a>, <a href="http://ome.github.io/presentations/2015/bioformats-overview-imagej-conf/">slides</a>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>2015-Sep-03</td>
       <td>Michael Majurski</td>
       <td>Accurate and scalable Microscopy Image Stitching Tool (MIST)</td>
@@ -259,7 +259,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://vimeo.com/140929697">video</a>, <a href="/events/Conference_2015_Program#michael-majurski---accurate-and-scalable-microscopy-image-stitching-tool-mist">abstract</a>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>2015-Sep-04</td>
       <td>{% include person id='bnanes' %}</td>
       <td>Slide Set: Simplified batch processing with ImageJ2</td>
@@ -267,7 +267,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://vimeo.com/140098828">video</a>, <a href="/events/Conference_2015_Program#benjamin-nanes---slide-set-simplified-batch-processing-with-imagej2">abstract</a>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>2015-Sep-04</td>
       <td>{% include person id='bnorthan' %}</td>
       <td>Flexible Deconvolution using ImageJ Ops</td>
@@ -275,7 +275,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://vimeo.com/140098821">video</a>, <a href="/events/Conference_2015_Program#brian-northan---flexible-deconvolution-using-imagej-ops">abstract</a>, <a href="/presentations/2015-09-04-imagej2-deconvolution/">slides</a>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>2015-Sep-04</td>
       <td>{% include person id='axtimwalde' %}</td>
       <td>Seamless stitching without blending</td>
@@ -283,7 +283,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://vimeo.com/140098840">video</a>, <a href="/events/Conference_2015_Program#stephan-saalfeld---seamless-stitching-without-blending">abstract</a>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>2015-Sep-04</td>
       <td>Raghavender Sahdev</td>
       <td>TimeLapseReg – An ImageJ plugin for drift correction of video sequence in time-lapse microscopy</td>
@@ -291,7 +291,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://vimeo.com/140098822">video</a>, <a href="/events/Conference_2015_Program#raghavender-sahdev---timelapsereg--an-imagej-plugin-for-drift-correction-of-video-sequence-in-time-lapse-microscopy-1">abstract</a>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>2015-Sep-04</td>
       <td>{% include person id='bene51' %}</td>
       <td>Real-time multi-view deconvolution of time-lapse data on the GPU</td>
@@ -299,7 +299,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://vimeo.com/140098826">video</a>, <a href="/events/Conference_2015_Program#benjamin-schmid---real-time-multi-view-deconvolution-of-time-lapse-data-on-the-gpu">abstract</a>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>2015-Sep-04</td>
       <td>Amitabh Verma</td>
       <td>Acquisition, processing & re-processing using OpenPolScope plugin for Micro-Manager</td>
@@ -307,7 +307,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://vimeo.com/140098844">video</a>, <a href="/events/Conference_2015_Program#amitabh-verma---acquisition-processing--re-processing-using-openpolscope-plugin-for-micro-manager">abstract</a>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>2015-Sep-04</td>
       <td>{% include person id='thorstenwagner' %}</td>
       <td>NanoTrackJ – An open-source multi-modal size characterization tool for nanoparticle tracking analysis based on ImageJ</td>
@@ -315,7 +315,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://vimeo.com/140098848">video</a>, <a href="/events/Conference_2015_Program#thorsten-wagner---nanotrackj--an-open-source-multi-modal-size-characterization-tool-for-nanoparticle-tracking-analysis-based-on-imagej">abstract</a>, <a href="https://dl.dropboxusercontent.com/u/560426/imagej/conference2015/slides.pdf">slides</a>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>2015-Sep-04</td>
       <td>Petr Walczysko</td>
       <td>The Open Microscopy Environment (OME)</td>
@@ -323,7 +323,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://vimeo.com/140098837">video</a>, <a href="/events/Conference_2015_Program#petr-walczysko---the-open-microscopy-environment-ome">abstract</a>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>2015-Sep-04</td>
       <td>{% include person id='jaywarrick' %}</td>
       <td>JEX – a platform for data management and batch processing with standard tools</td>
@@ -331,7 +331,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://vimeo.com/140098819">video</a>, <a href="/events/Conference_2015_Program#jay-warrick---jex--a-platform-for-data-management-and-batch-processing-with-standard-tools">abstract</a>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>2015-Sep-03</td>
       <td>Aryeh Weiss</td>
       <td>Automated processing of telomeres with ImageJ and R</td>
@@ -339,13 +339,13 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://vimeo.com/140929694">video</a>, <a href="/events/Conference_2015_Program#aryeh-weiss---automated-processing-of-telomeres-with-imagej-and-r">abstract</a>, <a href="http://conference.imagej.net/2015/aryeh-weiss/ij2015telomere-A.ppt">slides</a>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td><strong><a href="/events/Conference_2012">2012 ImageJ Conference</a></strong></td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>2012-Oct-24</td>
       <td>{% include person id='ctrueden' %}</td>
       <td>ImageJ2: Current Status and Future Directions</td>
@@ -353,13 +353,13 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="http://conference.imagej.net/2012/curtis-rueden/2012-10-24-imagej-conference.odp">slides</a>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td><strong><a href="/events/ISBI_2012">Bioimage analysis workshop - ISBI 2012</a></strong></td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>2012-Apr-30</td>
       <td>{% include person id='ctrueden' %}</td>
       <td>ImageJ2 – ImageJ for the Next Generation of Biological Image Data</td>
@@ -367,13 +367,13 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="http://bigwww.epfl.ch/eurobioimaging/presentation-rueden.pdf">slides</a>, <a href="http://bigwww.epfl.ch/eurobioimaging/abstracts/rueden.pdf">abstract</a>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td><strong><a href="/events/Conference_2010">2010 ImageJ Conference</a></strong></td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>2010-Oct-27</td>
       <td>{% include person id='ctrueden' %}</td>
       <td>ImageJDev: Next Generation ImageJ</td>
@@ -381,13 +381,13 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="http://conference.imagej.net/2010/curtis-rueden/2010-10-27-ImageJDev.pdf">slides</a>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td><strong>Other presentations</strong></td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>2020-May-13</td>
       <td>Ellen Dobson</td>
       <td>ImageJ: An Open Platform for Scientific Image Analysis (Virtual AQLM 2020)</td>
@@ -395,7 +395,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://docs.google.com/presentation/d/1CCmZEWigNXcG6Yr47l5_WvSEt-pTKKTfMmwOj1YY0Mw/edit?usp=sharing">slides</a>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>2019-Mar-28</td>
       <td>{% include person id='ctrueden' %}</td>
       <td>ImageJ – Vision, Mission and Values: Challenges of a diverse community</td>
@@ -403,7 +403,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://docs.google.com/presentation/d/1mZBJpxTGzJmD3nFSSl_y2oneHmT8D9bVzTtb0gdvRH0/present">slides</a>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>2015-Jan-12</td>
       <td>{% include person id='dscho' %}</td>
       <td>The ImageJ Ops Framework: Image processing made easy</td>
@@ -411,7 +411,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="/presentations/2015-01-12-imagej-ops/">slides</a>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>2014-Mar-20</td>
       <td>{% include person id='dscho' %}</td>
       <td>SciJava Common: Plugins, Contexts, Utilities and More</td>
@@ -419,7 +419,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://scijava.org/scijava-common/scijava-common.html">slides</a>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>2010-Apr-06</td>
       <td>{% include person id='ctrueden' %}</td>
       <td>ImageJ2: Directions & Goals</td>
@@ -427,7 +427,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="/presentations/2010-04-06-loci-imagej2-plan.pdf">slides</a>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>2010-Apr-01</td>
       <td>{% include person id='ctrueden' %}</td>
       <td>LOCI, Fiji & ImageJ2</td>
@@ -452,13 +452,13 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
     </tr>
   </thead>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td><strong><a href="http://eubias.org/NEUBIAS/neubias2020-conference/symposium2017-lisbon/">2017 NEUBIAS2020</a></strong></td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>-</td>
       <td>{% include person id='ctrueden' %}</td>
       <td>Scripting in ImageJ - An introduction to ImageJ Ops</td>
@@ -466,13 +466,13 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="/presentations/2017-02-12-imagej-ops-neubias/">slides</a>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td><strong><a href="/events/Conference_2015">2015 ImageJ Conference</a></strong></td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>2015-Sep-03</td>
       <td>Aryeh Weiss</td>
       <td>An introduction to digital image processing</td>
@@ -480,7 +480,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://vimeo.com/140929692">video</a>, <a href="/events/Conference_2015_Program#aryeh-weiss12---an-introduction-to-digital-image-processing">abstract</a>, <a href="http://conference.imagej.net/2015/aryeh-weiss/IntroImageProcessingB.ppt">slides</a>, <a href="http://conference.imagej.net/2015/aryeh-weiss/stk_0001_Result%20of%20cftr-wt1.avi.zip">data</a>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>2015-Sep-03</td>
       <td>{% include person id='biovoxxel' %}</td>
       <td>Image processing, feature extraction and analysis using the BioVoxxel Toolbox</td>
@@ -488,7 +488,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://vimeo.com/140929696">video</a>, <a href="/events/Conference_2015_Program#jan-brocher---image-processing-feature-extraction-and-analysis-using-the-biovoxxel-toolbox">abstract</a>, <a href="https://www.dropbox.com/s/iurb5he4qpsqfrn/BioVoxxel%20Workshop.pdf?dl=0/">slides</a>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>2015-Sep-03</td>
       <td>{% include person id='tferr' %}</td>
       <td>Scripting with BAR</td>
@@ -496,7 +496,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://vimeo.com/140099767">video</a>, <a href="/events/Conference_2015_Program#tiago-ferreira---scripting-with-bar">abstract</a>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>2015-Sep-03</td>
       <td>Dominik Lindner<br>
       Petr Walczysko</td>
@@ -505,7 +505,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://vimeo.com/140099766">video</a>, <a href="/events/Conference_2015_Program#dominik-lindner-and-petr-walczysko---the-omero-platform-for-management-of-microscopy-data-and-beyond">abstract</a>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>2015-Sep-03</td>
       <td>{% include person id='Fab14' %}<br>
       Stephane Dallongeville</td>
@@ -514,7 +514,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://vimeo.com/140929698">video</a>, <a href="/events/Conference_2015_Program#fabrice-de-chaumont-and-stephane-dallongeville---hands-on-icy-">abstract</a>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>2015-Sep-03</td>
       <td>{% include person id='thewtex' %}</td>
       <td>SimpleITK</td>
@@ -522,7 +522,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://vimeo.com/140099763">video</a>, <a href="/events/Conference_2015_Program#matt-mccormick---simpleitk">abstract</a>, <a href="http://bit.ly/1hD5FZF">interactive</a>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>2015-Sep-04</td>
       <td>{% include person id='ctrueden' %}<br>
       {% include person id='bnorthan' %}</td>
@@ -531,7 +531,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://vimeo.com/140098817">video 1</a>, <a href="https://vimeo.com/140098835">video 2</a>, <a href="/events/Conference_2015_Program#curtis-rueden-and-brian-northan---imagej2-scripts-parameters--imagej-ops">abstract</a>, <a href="/presentations/2015-09-04-imagej2-scripting/">slides</a>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>2015-Sep-04</td>
       <td>{% include person id='Bio7' %}</td>
       <td>Statistical image analysis and reproducible reports with ImageJ and R</td>
@@ -539,13 +539,13 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="https://vimeo.com/140098838">video</a>, <a href="/events/Conference_2015_Program#marcel-austenfeld---bio7--statistical-image-analysis-and-reproducible-reports-with-imagej-and-r">abstract</a>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td><strong>Other workshops</strong></td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>-</td>
       <td>
         <a href="/software/biodip">BioDIP</a>
@@ -555,7 +555,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="http://workshops.imagej.net/Basics-of-Quantitative-image-analysis.pdf">slides (PDF)</a>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>2015-Nov-03</td>
       <td>
         <a href="/orgs/loci">LOCI</a>
@@ -565,7 +565,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="http://workshops.imagej.net/IntroToOps.pdf">slides (PDF)</a>, <a href="http://workshops.imagej.net/IntroToOps.pptx">slides (PPT)</a>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>2016-Nov-17</td>
       <td>
         <a href="/users/iarganda">Ignacio Arganda-Carreras</a>
@@ -575,7 +575,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="/media/arganda-carreras-segmentation-bioimage-course-mdc-berlin-2016.pdf">slides (PDF)</a>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>2020-April-02</td>
       <td>Robert Haase</td>
       <td>Lecture Biolmage Analysis 2020</td>
@@ -600,13 +600,13 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
     </tr>
   </thead>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td><strong><a href="/events/Conference_2015">2015 ImageJ Conference</a></strong></td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>2015-Sep-03</td>
       <td>{% include person id='iarganda' %}</td>
       <td>Trainable Weka Segmentation: a tool for machine-learning-based image segmentation</td>
@@ -614,7 +614,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="/events/Conference_2015_Program#ignacio-arganda-carreras---trainable-weka-segmentation-a-tool-for-machine-learning-based-image-segmentation">abstract</a>, <a href="http://conference.imagej.net/2015/ignacio-arganda-carreras/poster-TWS-ImageJ-Conf-2015.pdf">poster</a>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>2015-Sep-03</td>
       <td>{% include person id='biovoxxel' %}</td>
       <td>The BioVoxxel Toolbox</td>
@@ -622,7 +622,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="/events/Conference_2015_Program#jan-brocher---the-biovoxxel-toolbox">abstract</a>, <a href="https://www.dropbox.com/s/7e6bjh3iqnxv014/IJcon2015-Poster%20Brocher%20%28150dpi%29.png?dl=0">poster</a>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>2015-Sep-03</td>
       <td>Olaya Fernandez-Gayol</td>
       <td>Using the wrMTrck plugin to analyze the Morris Water maze in mice</td>
@@ -630,7 +630,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="/events/Conference_2015_Program#olaya-fernandez-gayol---using-the-wrmtrck-plugin-to-analyze-the-morris-water-maze-in-mice">abstract</a>, <a href="https://dl.dropboxusercontent.com/u/21343536/Fernandez%20Gayol%20O.pptx">poster</a>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>2015-Sep-03</td>
       <td>David Logan</td>
       <td>The ImageJ-CellProfiler Interface</td>
@@ -638,7 +638,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="/events/Conference_2015_Program#david-logan---the-imagej-cellprofiler-interface">abstract</a>, <a href="http://www.broadinstitute.org/~dlogan/posters/2015_09_03_ImageJ_Conf_DLogan_FINAL.pptx">poster</a>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>2015-Sep-03</td>
       <td>{% include person id='tpietzsch' %}</td>
       <td>BigDataViewer—Visualization and Image Processing for Terabyte Data Sets</td>
@@ -646,7 +646,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="/events/Conference_2015_Program#tobias-pietzsch---bigdataviewervisualization-and-image-processing-for-terabyte-data-sets">abstract</a>, <a href="https://www.dropbox.com/s/3st8ezbj9jmjzd8/bdv-poster-imagej2015.pdf?dl=0">poster</a>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>2015-Sep-03</td>
       <td>{% include person id='axtimwalde' %}</td>
       <td>ImgLib2 for visualization and generic image processing</td>
@@ -654,7 +654,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="/events/Conference_2015_Program#stephan-saalfeld---imglib2-for-visualization-and-generic-image-processing">abstract</a>, <a href="https://www.dropbox.com/s/f23tr3q607dxvlh/imglib2-imagej2015.pdf?dl=0">poster</a>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>2015-Sep-03</td>
       <td>Raghavender Sahdev</td>
       <td>TimeLapseReg – An ImageJ plugin for drift correction of video sequence in time-lapse microscopy</td>
@@ -662,7 +662,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         <a href="/events/Conference_2015_Program#raghavender-sahdev---timelapsereg--an-imagej-plugin-for-drift-correction-of-video-sequence-in-time-lapse-microscopy_2">abstract</a>, <a href="http://www.raghavendersahdev.com/uploads/3/9/6/2/39623741/timelapsereg.pdf">poster</a>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>2015-Sep-03</td>
       <td>{% include person id='thorstenwagner' %}</td>
       <td>Tools and methods of the Biomedical Imaging Group for ImageJ: An Overview</td>

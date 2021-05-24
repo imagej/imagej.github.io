@@ -1,23 +1,23 @@
 {% raw %}
-<div class="infobox">
-<table class="ambox">
+<div>
+<table>
 <tbody>
 <tr><th colspan="3" style="font-size: large; text-align: center">~ Download Fiji for your OS ~</th></tr>
 <tr>
-<td style="text-align: center; vertical-align: top; width: 128px"> <a href="https://downloads.imagej.net/fiji/latest/fiji-win64.zip" rel="nofollow"><img alt="Windows (64-bit)" src="/media/icons/windows.svg" width="129" height="128"></a><br><a rel="nofollow" class="external text" href="https://downloads.imagej.net/fiji/latest/fiji-win64.zip"><b>64-bit</b></a>
+<td style="text-align: center; vertical-align: top; width: 128px"> <a href="https://downloads.imagej.net/fiji/latest/fiji-win64.zip"><img alt="Windows (64-bit)" src="/media/icons/windows.svg" width="129" height="128"></a><br><a href="https://downloads.imagej.net/fiji/latest/fiji-win64.zip"><b>64-bit</b></a>
 </td>
-<td style="text-align: center; vertical-align: top; width: 128px"> <a href="https://downloads.imagej.net/fiji/latest/fiji-macosx.zip" rel="nofollow"><img alt="macOS" src="/media/icons/macos.png" width="105" height="128"></a><br><a rel="nofollow" class="external text" href="https://downloads.imagej.net/fiji/latest/fiji-macosx.zip"><b>macOS</b></a>
+<td style="text-align: center; vertical-align: top; width: 128px"> <a href="https://downloads.imagej.net/fiji/latest/fiji-macosx.zip"><img alt="macOS" src="/media/icons/macos.png" width="105" height="128"></a><br><a href="https://downloads.imagej.net/fiji/latest/fiji-macosx.zip"><b>macOS</b></a>
 </td>
-<td style="text-align: center; vertical-align: top; width: 128px"> <a href="https://downloads.imagej.net/fiji/latest/fiji-linux64.zip" rel="nofollow"><img alt="Linux (64-bit)" src="/media/icons/linux.svg" width="128" height="128"></a><br><a rel="nofollow" class="external text" href="https://downloads.imagej.net/fiji/latest/fiji-linux64.zip"><b>64-bit</b></a>
+<td style="text-align: center; vertical-align: top; width: 128px"> <a href="https://downloads.imagej.net/fiji/latest/fiji-linux64.zip"><img alt="Linux (64-bit)" src="/media/icons/linux.svg" width="128" height="128"></a><br><a href="https://downloads.imagej.net/fiji/latest/fiji-linux64.zip"><b>64-bit</b></a>
 </td>
 </tr>
 <tr><th colspan="3" style="text-align: center">Other downloads</th></tr>
 <tr>
-<td style="text-align: center"> <a href="https://downloads.imagej.net/fiji/latest/fiji-win32.zip" rel="nofollow"><img alt="Windows (32-bit)" src="/media/icons/windows.svg" width="24" height="24"></a> <a rel="nofollow" class="external text" href="https://downloads.imagej.net/fiji/latest/fiji-win32.zip">32-bit</a>
+<td style="text-align: center"> <a href="https://downloads.imagej.net/fiji/latest/fiji-win32.zip"><img alt="Windows (32-bit)" src="/media/icons/windows.svg" width="24" height="24"></a> <a href="https://downloads.imagej.net/fiji/latest/fiji-win32.zip">32-bit</a>
 </td>
-<td style="text-align: center">  <a href="https://downloads.imagej.net/fiji/latest/fiji-nojre.zip" rel="nofollow"><img alt="All platforms (no JRE)" src="/media/icons/fiji.png" width="24" height="24"></a> <a rel="nofollow" class="external text" href="https://downloads.imagej.net/fiji/latest/fiji-nojre.zip">No JRE</a>
+<td style="text-align: center">  <a href="https://downloads.imagej.net/fiji/latest/fiji-nojre.zip"><img alt="All platforms (no JRE)" src="/media/icons/fiji.png" width="24" height="24"></a> <a href="https://downloads.imagej.net/fiji/latest/fiji-nojre.zip">No JRE</a>
 </td>
-<td style="text-align: center">  <a href="https://downloads.imagej.net/fiji/latest/fiji-linux32.zip" rel="nofollow"><img alt="Linux (32-bit)" src="/media/icons/linux.svg" width="24" height="24"></a> <a rel="nofollow" class="external text" href="https://downloads.imagej.net/fiji/latest/fiji-linux32.zip">32-bit</a>
+<td style="text-align: center">  <a href="https://downloads.imagej.net/fiji/latest/fiji-linux32.zip"><img alt="Linux (32-bit)" src="/media/icons/linux.svg" width="24" height="24"></a> <a href="https://downloads.imagej.net/fiji/latest/fiji-linux32.zip">32-bit</a>
 </td></tr></tbody>
 </table>
 </div>

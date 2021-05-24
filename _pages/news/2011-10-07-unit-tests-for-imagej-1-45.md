@@ -29,7 +29,7 @@ Once all the tests pass, [Jenkins](/develop/jenkins) can run them automatically 
     </tr>
   </thead>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>1.43u</p>
       </td>
@@ -37,7 +37,7 @@ Once all the tests pass, [Jenkins](/develop/jenkins) can run them automatically 
         <p>DOES NOT COMPILE (version too old)</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>1.44o</p>
       </td>
@@ -45,7 +45,7 @@ Once all the tests pass, [Jenkins](/develop/jenkins) can run them automatically 
         <p>ALL PASS</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>1.45a</p>
       </td>
@@ -53,7 +53,7 @@ Once all the tests pass, [Jenkins](/develop/jenkins) can run them automatically 
         <p>ALL PASS</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>1.45b</p>
       </td>
@@ -66,7 +66,7 @@ Once all the tests pass, [Jenkins](/develop/jenkins) can run them automatically 
         <p>|-</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>1.45r+</p>
       </td>

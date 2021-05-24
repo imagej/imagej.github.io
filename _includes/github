@@ -45,7 +45,7 @@
 {%- if include.label -%}
   {%- assign label = include.label -%}
 {%- endif -%}
-<a class="github" href="{{url}}">{{label}}</a>
+<a href="{{url}}">{{label}}</a>
 
 {%- comment -%}
 # vi:syntax=liquid

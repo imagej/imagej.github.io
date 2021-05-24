@@ -61,7 +61,7 @@ The following table shows the available navigation commands using the mouse:
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p><span class="removeme"><br></span> {% include key keys='left-drag' %}</p>
       </td>
@@ -69,7 +69,7 @@ The following table shows the available navigation commands using the mouse:
         <p>Rotate (pan and tilt) around the point where the mouse was clicked.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key keys='right-drag' %} or {% include key keys='middle-drag' %}</p>
       </td>
@@ -77,7 +77,7 @@ The following table shows the available navigation commands using the mouse:
         <p>Translate in the XY-plane.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='mouse-wheel' %}</p>
       </td>
@@ -85,7 +85,7 @@ The following table shows the available navigation commands using the mouse:
         <p>Move along the z-axis.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key keys='Cmd|mouse-wheel' %} or {% include key keys='Shift|Ctrl|mouse-wheel' %}</p>
       </td>
@@ -102,7 +102,7 @@ The following table shows the available navigation commands using keyboard short
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='X' %}, {% include key key='Y' %}, {% include key key='Z' %}</p>
       </td>
@@ -110,7 +110,7 @@ The following table shows the available navigation commands using keyboard short
         <p>Select keyboard rotation axis.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='Left' %}, {% include key key='Right' %}</p>
       </td>
@@ -118,7 +118,7 @@ The following table shows the available navigation commands using keyboard short
         <p>Rotate clockwise or counter-clockwise around the choosen rotation axis.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='Up' %}, {% include key key='Down' %}</p>
       </td>
@@ -126,7 +126,7 @@ The following table shows the available navigation commands using keyboard short
         <p>Zoom in or out.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key=',' %}, {% include key key='.' %}</p>
       </td>
@@ -134,7 +134,7 @@ The following table shows the available navigation commands using keyboard short
         <p>Move forward or backward along the Z-axis.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key keys='Shift|X' %}</p>
       </td>
@@ -142,7 +142,7 @@ The following table shows the available navigation commands using keyboard short
         <p>Rotate to the ZY-plane of the current source. (Look along the X-axis of the current source.)</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key keys='Shift|Y' %} or {% include key keys='Shift|A' %}</p>
       </td>
@@ -150,7 +150,7 @@ The following table shows the available navigation commands using keyboard short
         <p>Rotate to the XZ-plane of the current source. (Look along the Y-axis of the current source.)</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key keys='Shift|Z' %}</p>
       </td>
@@ -158,7 +158,7 @@ The following table shows the available navigation commands using keyboard short
         <p>Rotate to the XY-plane of the current source. (Look along the Z-axis of the current source.)</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='[' %} or {% include key key='N' %}</p>
       </td>
@@ -166,7 +166,7 @@ The following table shows the available navigation commands using keyboard short
         <p>Move to previous timepoint.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key=']' %} or {% include key key='M' %}</p>
       </td>

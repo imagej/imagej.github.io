@@ -59,7 +59,7 @@ Implement a simple inpainting method (i.e. restore missing/unwanted parts of the
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>{% include thumbnail src='/media/s2.png' title='Section 1'%}</p>
       </td>

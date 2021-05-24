@@ -24,7 +24,7 @@ Automatic particle analysis requires a "binary", black and white, image. A thres
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td style="border:none;padding:0in;">
         <p>{% include thumbnail src='/media/cookbook/black-white-threshold.png' title='left'%}</p>
       </td>

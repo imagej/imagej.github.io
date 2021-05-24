@@ -34,17 +34,17 @@ The first goal is to get your extension into the hands of users.
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td style="background: #dfd">
         <p><strong>Create your own update site</strong></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><strong>Steps</strong></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="background: #dfd; vertical-align: top">
         <ul>
           <li><strong><a href="/update-sites/setup">Create your update site</a></strong>, then <strong><a href="/update-sites/setup#uploading-files-to-your-update-site">upload your extension to it</a></strong>.</li>
@@ -53,40 +53,40 @@ The first goal is to get your extension into the hands of users.
         </ul>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="background: #dfd"></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><strong>Distribute it as part of Fiji</strong></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><strong>Steps</strong></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="background: #dfd; vertical-align: top">
         <ul>
           <li>Make a post on the <strong><a href="/help">ImageJ forum</a></strong> to initiate a request.</li>
         </ul>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="vertical-align: top"></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><strong>Serve it from a website as a download</strong></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><strong>Steps</strong></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <ul>
           <li>Create an archive (TAR, ZIP, etc.).</li>
@@ -105,17 +105,17 @@ If you want to facilitate good science, please [share your source code](Open_Sou
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td style="background: #dfd">
         <p><strong>Host on GitHub in your userspace or organization</strong></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><strong>Steps</strong></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="background: #dfd; vertical-align: top">
         <ul>
           <li>Create an account on <strong><a href="https://github.com">GitHub</a></strong>.</li>
@@ -125,20 +125,20 @@ If you want to facilitate good science, please [share your source code](Open_Sou
         </ul>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="background: #dfd"></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><strong>Host on GitHub in the Fiji organization (for <a href="/software/fiji/contribution-requirements">extensions distributed with Fiji</a>)</strong></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><strong>Steps</strong></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="background: #dfd; vertical-align: top">
         <ul>
           <li>Request a <strong><a href="/about/governance">Fiji maintainer</a></strong> create a repository for you and add you as a contributor.</li>
@@ -146,20 +146,20 @@ If you want to facilitate good science, please [share your source code](Open_Sou
         </ul>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="vertical-align: top"></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><strong>Host on BitBucket</strong></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><strong>Steps</strong></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <ul>
           <li>Similar to GitHub, but using <a href="https://bitbucket.org/">BitBucket</a> instead.
@@ -167,20 +167,20 @@ If you want to facilitate good science, please [share your source code](Open_Sou
         </ul>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="vertical-align: top"></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><strong>Host on SourceForge</strong></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><strong>Steps</strong></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <ul>
           <li>Similar to GitHub, but using <a href="http://sourceforge.net/">SourceForge</a> instead.
@@ -188,20 +188,20 @@ If you want to facilitate good science, please [share your source code](Open_Sou
         </ul>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="vertical-align: top"></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><strong>Serve it from a website as a download</strong></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><strong>Steps</strong></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <ul>
           <li>Create an archive (TAR, ZIP, etc.).</li>
@@ -221,17 +221,17 @@ Useful extensions deserve corresponding documentation explaining how to use them
   <table>
 {::nomarkdown}
   <tbody>
-    <tr class="odd">
+    <tr>
       <td style="background: #dfd">
         <p><strong>Create an ImageJ wiki page</strong></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><strong>Steps</strong></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="background: #dfd; vertical-align: top">
         <ul>
           <li><strong><a href="https://github.com/join">Create a GitHub account</a></strong>.</li>
@@ -239,20 +239,20 @@ Useful extensions deserve corresponding documentation explaining how to use them
         </ul>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="vertical-align: top"></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><strong>Use the ImageJ Information and Documentation Portal (IIDP)</strong></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><strong>Steps</strong></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <ul>
           <li>Request an account from an IIDP administrator.</li>
@@ -262,20 +262,20 @@ Useful extensions deserve corresponding documentation explaining how to use them
         </ul>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="vertical-align: top"></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><strong>Add a page to the ImageJ 1.x website</strong></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><strong>Steps</strong></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <ul>
           <li>Prepare an HTML page modeled after the <a href="/ij/plugins/index.html">list of ImageJ 1.x plugins</a>.
@@ -285,20 +285,20 @@ Useful extensions deserve corresponding documentation explaining how to use them
         </ul>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="vertical-align: top"></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><strong>Create your own webpage elsewhere</strong></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><strong>Steps</strong></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>(Varies)</p>
       </td>

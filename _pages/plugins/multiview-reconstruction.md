@@ -47,7 +47,7 @@ This software package is the successor to the [SPIM Registration](/plugins/spim-
     </tr>
   </thead>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>When we speak of <strong>multiview</strong> datasets we generally mean that per timepoint there <em>n</em> image stacks, which could be different:</p>
         <ul>
@@ -76,7 +76,7 @@ The first video shows a developing *Drosophila* embryo expressing His-YFP in all
     </tr>
   </thead>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>Lightsheet fluorescence microscopy entered the world of modern biology in 2004 when <strong>Selective Plane Illumination Microscopy</strong> (<a href="http://www.sciencemag.org/content/305/5686/1007"><strong>SPIM</strong></a>) was published. It allows <em>in toto</em> imaging of large specimens by acquiring image stacks from multiple angles with high spatial and temporal resolution. Many impressive variations and extensions have been published, some of them using new variations or entirely new naming schemes:</p>
         <ul>

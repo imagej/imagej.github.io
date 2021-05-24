@@ -57,7 +57,7 @@ placement, warping.
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='T' %}</p>
       </td>
@@ -65,7 +65,7 @@ placement, warping.
         <p>Toggle between warped view and raw view or moving image.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key keys='Ctrl|O' %}</p>
       </td>
@@ -73,7 +73,7 @@ placement, warping.
         <p>Open landmarks from saved file.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key keys='Ctrl|S' %}</p>
       </td>
@@ -81,7 +81,7 @@ placement, warping.
         <p>Save current landmarks to a file.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='Spacebar' %}</p>
       </td>
@@ -89,7 +89,7 @@ placement, warping.
         <p>Toggle <em>Landmark mode</em></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>&lt;<em>Landmark mode</em>&gt;+{% include key key='left-click' %}</p>
       </td>
@@ -97,7 +97,7 @@ placement, warping.
         <p>Clicking while in landmark mode adds a landmark point or selects and existing landmark.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p>&lt;<em>Landmark mode</em>&gt;+{% include key keys='left-drag' %}</p>
       </td>
@@ -105,7 +105,7 @@ placement, warping.
         <p>Clicking an existing point and dragging changes it's position.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>&lt;<em>Landmark mode</em>&gt;+{% include key keys='Shift|left-drag' %}</p>
       </td>
@@ -113,7 +113,7 @@ placement, warping.
         <p>"Move" a point. The initial click places a landmark point for the moving image. The release places a landmark point for the target image.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p>&lt;<em>Landmark mode</em>&gt;+{% include key keys='Ctrl|left-click' %}</p>
       </td>
@@ -121,7 +121,7 @@ placement, warping.
         <p>"Pin" a point. Add a landmark at the same location for both moving and target images.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>&lt;<em>Landmark mode</em>&gt;+{% include key keys='Ctrl|Shift|left-click' %}</p>
       </td>
@@ -129,7 +129,7 @@ placement, warping.
         <p>Place a point in the "other" space. Place a moving landmark from the fixed window, and vice versa.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key keys='Ctrl|Z' %}</p>
       </td>
@@ -137,7 +137,7 @@ placement, warping.
         <p>Undo the last landmark point change.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key keys='Ctrl|Y' %}</p>
       </td>
@@ -145,7 +145,7 @@ placement, warping.
         <p>Redo the last landmark point change.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='V' %}</p>
       </td>
@@ -153,7 +153,7 @@ placement, warping.
         <p>Toggle point visibility in the viewer.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='N' %}</p>
       </td>
@@ -172,7 +172,7 @@ Some changes to landmarks can be done by interacting with the landmark table.
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='left-click' %}</p>
       </td>
@@ -180,7 +180,7 @@ Some changes to landmarks can be done by interacting with the landmark table.
         <p>Select row.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key keys='Ctrl|left-click' %}</p>
       </td>
@@ -188,7 +188,7 @@ Some changes to landmarks can be done by interacting with the landmark table.
         <p>Add row to selection.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key keys='Shift|left-click' %}</p>
       </td>
@@ -196,7 +196,7 @@ Some changes to landmarks can be done by interacting with the landmark table.
         <p>Select range of rows.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='Esc' %}</p>
       </td>
@@ -204,7 +204,7 @@ Some changes to landmarks can be done by interacting with the landmark table.
         <p>Deselect all rows.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='right-click' %} &rarr; Delete</p>
       </td>
@@ -212,7 +212,7 @@ Some changes to landmarks can be done by interacting with the landmark table.
         <p>Deletes a landmark pair (row in the table).</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='right-click' %} &rarr; Delete all selected</p>
       </td>
@@ -259,7 +259,7 @@ The following table shows the available navigation commands using the mouse:
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='Q' %}</p>
       </td>
@@ -267,7 +267,7 @@ The following table shows the available navigation commands using the mouse:
         <p>Align the non-active viewer with the active viewer.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='W' %}</p>
       </td>
@@ -275,7 +275,7 @@ The following table shows the available navigation commands using the mouse:
         <p>Align the active viewer with the non-active viewer.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='E' %}</p>
       </td>
@@ -283,7 +283,7 @@ The following table shows the available navigation commands using the mouse:
         <p>Centers the active viewer to the nearest landmark (considers 3D when applicable).</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key keys='Ctrl|D' %}</p>
       </td>
@@ -291,7 +291,7 @@ The following table shows the available navigation commands using the mouse:
         <p>Centers the active viewer to the next landmark.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key keys='Ctrl|Shift|D' %}</p>
       </td>
@@ -299,7 +299,7 @@ The following table shows the available navigation commands using the mouse:
         <p>Centers the active viewer to the previous landmark.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='R' %}</p>
       </td>
@@ -307,7 +307,7 @@ The following table shows the available navigation commands using the mouse:
         <p>Resets the active viewer.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='U' %}</p>
       </td>
@@ -315,7 +315,7 @@ The following table shows the available navigation commands using the mouse:
         <p>Show warp visualization / grid dialog.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='F6' %}</p>
       </td>
@@ -323,7 +323,7 @@ The following table shows the available navigation commands using the mouse:
         <p>Show moving image panel Visibility & and Grouping dialog.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='F7' %}</p>
       </td>
@@ -331,7 +331,7 @@ The following table shows the available navigation commands using the mouse:
         <p>Show target image panel Visibility & and Grouping dialog.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key keys='Ctrl|E' %}</p>
       </td>
@@ -339,7 +339,7 @@ The following table shows the available navigation commands using the mouse:
         <p>Export moving image as an ImagePlus.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key keys='Ctrl|Shift|E' %}</p>
       </td>
@@ -363,7 +363,7 @@ The following table shows the available navigation commands using the mouse:
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key keys='left-drag' %}</p>
       </td>
@@ -371,7 +371,7 @@ The following table shows the available navigation commands using the mouse:
         <p>Rotate (pan and tilt) around the point where the mouse was clicked.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key keys='right-drag' %} or {% include key keys='middle-drag' %}</p>
       </td>
@@ -379,7 +379,7 @@ The following table shows the available navigation commands using the mouse:
         <p>Translate in the XY-plane.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='mouse-wheel' %}</p>
       </td>
@@ -387,7 +387,7 @@ The following table shows the available navigation commands using the mouse:
         <p>Move along the z-axis.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key keys='Cmd|mouse-wheel' %} or {% include key keys='Shift|Ctrl|mouse-wheel' %}</p>
       </td>
@@ -404,7 +404,7 @@ The following table shows the available navigation commands using the mouse:
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='X' %}, {% include key key='Y' %}, {% include key key='Z' %}</p>
       </td>
@@ -412,7 +412,7 @@ The following table shows the available navigation commands using the mouse:
         <p>Select keyboard rotation axis.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='Left' %}, {% include key key='Right' %}</p>
       </td>
@@ -420,7 +420,7 @@ The following table shows the available navigation commands using the mouse:
         <p>Rotate clockwise or counter-clockwise around the choosen rotation axis.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='Up' %}, {% include key key='Down' %}</p>
       </td>
@@ -428,7 +428,7 @@ The following table shows the available navigation commands using the mouse:
         <p>Zoom in or out.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key=',' %}, {% include key key='.' %}</p>
       </td>
@@ -436,7 +436,7 @@ The following table shows the available navigation commands using the mouse:
         <p>Move forward or backward along the Z-axis.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key keys='Shift|X' %}</p>
       </td>
@@ -444,7 +444,7 @@ The following table shows the available navigation commands using the mouse:
         <p>Rotate to the ZY-plane of the current source. (Look along the X-axis of the current source.)</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key keys='Shift|Y' %} or {% include key keys='Shift|A' %}</p>
       </td>
@@ -452,7 +452,7 @@ The following table shows the available navigation commands using the mouse:
         <p>Rotate to the XZ-plane of the current source. (Look along the Y-axis of the current source.)</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key keys='Shift|Z' %}</p>
       </td>
@@ -460,7 +460,7 @@ The following table shows the available navigation commands using the mouse:
         <p>Rotate to the XY-plane of the current source. (Look along the Z-axis of the current source.)</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key='[' %} or {% include key key='N' %}</p>
       </td>
@@ -468,7 +468,7 @@ The following table shows the available navigation commands using the mouse:
         <p>Move to previous timepoint.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td style="padding: 5px;">
         <p>{% include key key=']' %} or {% include key key='M' %}</p>
       </td>

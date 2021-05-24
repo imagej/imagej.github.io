@@ -28,13 +28,13 @@ Here's a list of recommended options to choose a LUT:
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <th>LUT Name</th>
       <th>Properties</th>
       <th>Common Usage</th>
       <th>Histogram</th>
     </tr>
-    <tr class="even">
+    <tr>
       <th>mpl-viridis</th>
       <td>
         <ul>
@@ -54,7 +54,7 @@ Here's a list of recommended options to choose a LUT:
         </figure>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <th>HiLo</th>
       <td>
         <ul>
@@ -73,7 +73,7 @@ Here's a list of recommended options to choose a LUT:
         </figure>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <th>phase</th>
       <td>
         <ul>
@@ -109,13 +109,13 @@ Here we summarize some of the 3D visualization plugins in ImageJ.
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <th>Plugin Name</th>
       <th>Short Description</th>
       <th>Highlights</th>
       <th>Plugin Snapshot</th>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <a href="/plugins/3d-viewer">3D Viewer</a>
       </td>
@@ -138,7 +138,7 @@ Here we summarize some of the 3D visualization plugins in ImageJ.
         </figure>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <a href="/plugins/clearvolume">ClearVolume</a>
       </td>
@@ -153,7 +153,7 @@ Here we summarize some of the 3D visualization plugins in ImageJ.
       </td>
       <td><img src="/media/clearvolumeinfiji.png" width="500"></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <a href="/plugins/volume-viewer">Volume Viewer</a>
       </td>
@@ -168,7 +168,7 @@ Here we summarize some of the 3D visualization plugins in ImageJ.
       </td>
       <td><img src="/media/techniques/volviewer.png" width="500"></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <a href="/plugins/sciview">SciView</a>
       </td>
@@ -222,13 +222,13 @@ Here we summarize some of the 'big data' visualization plugins in ImageJ.
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <th>Plugin Name</th>
       <th>Short Description</th>
       <th>Highlights</th>
       <th>Plugin Snapshot</th>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <a href="/plugins/bdv">BigDataViewer</a>
       </td>
@@ -245,7 +245,7 @@ Here we summarize some of the 'big data' visualization plugins in ImageJ.
       </td>
       <td><img src="/media/bdv.png" width="500"></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <a href="/plugins/multiview-reconstruction">MultiView Reconstruction</a>
       </td>
@@ -270,13 +270,13 @@ Here we summarize the more advanced analysis plugins in ImageJ using the above '
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <th>Plugin Name</th>
       <th>Short Description</th>
       <th>More Details...</th>
       <th>Plugin Snapshot</th>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <a href="/plugins/mamut">MaMuT</a> (<strong>Ma</strong>ssive <strong>Mu</strong>lti-view <strong>T</strong>racker)
       </td>
@@ -292,7 +292,7 @@ Here we summarize the more advanced analysis plugins in ImageJ using the above '
       </td>
       <td><img src="/media/mamut.png" width="500"></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <a href="/plugins/bigwarp">BigWarp</a>
       </td>

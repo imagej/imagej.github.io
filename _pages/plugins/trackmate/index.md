@@ -172,7 +172,7 @@ Thanks to Travis, the extension we are aware of are built automatically and can 
     </tr>
   </thead>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>TrackMate-extras</p>
       </td>
@@ -194,7 +194,7 @@ Thanks to Travis, the extension we are aware of are built automatically and can 
         <p><a href="https://github.com/tinevez/plugins/trackmate-extras">on Github</a></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="/plugins/trackmate/find-maxima-detector">Find maxima (TrackMate module)</a></p>
       </td>
@@ -211,7 +211,7 @@ Thanks to Travis, the extension we are aware of are built automatically and can 
         <p><a href="https://github.com/thorstenwagner/ij-trackmate-findmaxima">on Github</a></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>Track analysis</p>
       </td>
@@ -236,7 +236,7 @@ Thanks to Travis, the extension we are aware of are built automatically and can 
         <p><a href="https://github.com/tinevez/plugins/trackmate-TrackAnalysis">on Github</a></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>TrackMate -&gt; Spot-On connector</p>
       </td>

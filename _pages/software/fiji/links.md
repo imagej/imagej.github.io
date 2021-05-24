@@ -30,7 +30,7 @@ Links to the contributors' personal pages can be found [here](/about/contributor
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p><img src="/media/logos/knime.jpg" width="150"></p>
       </td>
@@ -38,7 +38,7 @@ Links to the contributors' personal pages can be found [here](/about/contributor
         <p>The <a href="http://tech.knime.org/community/image-processing">Konstanz kNowledge Information Mining Environment</a>.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><img src="/media/icons/micro-manager.jpg" width="150"></p>
       </td>
@@ -46,7 +46,7 @@ Links to the contributors' personal pages can be found [here](/about/contributor
         <p>valign=center|<a href="http://micro-manager.org/">µManager</a> is an extensive software suite to interact with microscopes. It integrates nicely as an ImageJ plugin ({% include bc path='Plugins | Micro-Manager | Micro-Manager Studio'%}).</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><img src="/media/logos/openspim.png" width="150"></p>
       </td>
@@ -54,7 +54,7 @@ Links to the contributors' personal pages can be found [here](/about/contributor
         <p><a href="http://openspim.org/">OpenSPIM</a> is an Open Access and Open Source project to make Single Plane Illumination Microscopy (SPIM) accessible to researchers working with, or on, SPIM technology.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><img src="/media/logos/slideset.png" width="90"></p>
       </td>

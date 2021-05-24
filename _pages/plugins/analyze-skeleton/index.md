@@ -10,7 +10,7 @@ Analysis of 2D and 3D skeleton images. For the ImageJ 1.x plugin, see [this page
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p style="vertical-align:top">{% include thumbnail src='/media/plugins/analyze-skeleton/analyze-skeleton-09-13-2009.png' title='Example of AnalyzeSkeleton performance'%}</p>
       </td>
@@ -101,7 +101,7 @@ Using the [3D\_Viewer](/plugins/3d-viewer) libraries we can easily display the r
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p style="vertical-align:top">{% include thumbnail src='/media/plugins/analyze-skeleton/bat-cochlea-3d.gif' title='Smooth (by 3D Gaussian filter) bat cochlea volume rendered in the viewer'%}</p>
       </td>

@@ -30,7 +30,7 @@ Thank you for your support.
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td style="white-space: nowrap">
         <p><strong>Logo</strong></p>
       </td>
@@ -41,14 +41,14 @@ Thank you for your support.
         <p><strong>Citation</strong></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>Core projects</p>
       </td>
       <td></td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>{% include icon name='ImageJ2' %}</p>
       </td>
@@ -59,7 +59,7 @@ Thank you for your support.
         <p>{% include publication content='ImageJ2' %}</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>{% include icon name='ImageJ1' %}</p>
       </td>
@@ -70,14 +70,14 @@ Thank you for your support.
         <p>{% include publication content='ImageJ' %}</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>Distributions of ImageJ</p>
       </td>
       <td></td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>{% include icon name='Fiji' %}</p>
       </td>
@@ -88,7 +88,7 @@ Thank you for your support.
         <p>{% include publication content='Fiji' %}</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>{% include icon name='BoneJ' %}</p>
       </td>
@@ -99,7 +99,7 @@ Thank you for your support.
         <p>{% include publication content='BoneJ' %}</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>{% include icon name='Bio7' %}</p>
       </td>
@@ -110,14 +110,14 @@ Thank you for your support.
         <p>{% include publication content='Bio7' %}</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>Supporting libraries</p>
       </td>
       <td></td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>{% include icon name='ImgLib2' %}</p>
       </td>
@@ -128,7 +128,7 @@ Thank you for your support.
         <p>{% include publication content='ImgLib2' %}</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>{% include icon name='SciJava' %}</p>
       </td>
@@ -139,7 +139,7 @@ Thank you for your support.
         <p>{% include publication content='SciJava Common' %}</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>{% include icon name='SCIFIO' %}</p>
       </td>
@@ -150,7 +150,7 @@ Thank you for your support.
         <p>{% include publication content='SCIFIO' %}</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>{% include icon name='ImageJ' %}</p>
       </td>
@@ -161,12 +161,12 @@ Thank you for your support.
         <p>{% include publication content='ImageJ Ops' %}</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td></td>
       <td></td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td></td>
       <td></td>
       <td></td>

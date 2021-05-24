@@ -32,7 +32,7 @@ The following projects are part of the **[SciJava pledge](/plugin-index#scijava)
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td style="text-align: center; vertical-align: middle">
         <p>{% include icon name='ImageJ2' %}</p>
       </td>
@@ -51,7 +51,7 @@ The following projects are part of the **[SciJava pledge](/plugin-index#scijava)
       </td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>{% include icon name='Fiji' %}</p>
       </td>

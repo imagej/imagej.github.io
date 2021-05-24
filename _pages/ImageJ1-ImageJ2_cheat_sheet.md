@@ -22,7 +22,7 @@ This page summarizes translation of basic operations of ImageJ1 and ImageJ2 API.
     </tr>
   </thead>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>Starting ImageJ</p>
       </td>
@@ -38,7 +38,7 @@ ij.ui().showUI();
 {%- endhighlight -%}
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>Show images</p>
       </td>
@@ -56,7 +56,7 @@ ImageJFunctions.wrap(imp,"Image").show();
 {%- endhighlight -%}
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>Retrieve an active image object</p>
       </td>
@@ -81,7 +81,7 @@ Dataset image = ij.imageDisplay().getActiveDataset();
 {%- endhighlight -%}
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>Open an image file</p>
       </td>
@@ -108,7 +108,7 @@ Dataset image = ij.scifio().datasetIO().open(urlOrFilePath);
 {%- endhighlight -%}
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>Save an image file</p>
       </td>
@@ -128,7 +128,7 @@ ij.scifio().datasetIO().save(dataset, "/path/to/image.tif");
 {%- endhighlight -%}
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>Convert image types</p>
       </td>
@@ -148,7 +148,7 @@ Img<FloatType> realImg2 = ImageJFunctions.wrap(imp);
 {%- endhighlight -%}
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>Show regions</p>
       </td>
@@ -165,7 +165,7 @@ imagePlus.setRoi(roi);
 {% endhighlight %}
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>Run plugins</p>
       </td>
@@ -181,7 +181,7 @@ ij.command().run(ImageNormalizerIJ2Plugin.class, true,
 {%- endhighlight -%}
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p>Define plugins</p>
       </td>

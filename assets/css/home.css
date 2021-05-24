@@ -1,3 +1,11 @@
+#one {
+  text-align: center;
+}
+
+.resources {
+  width: 100%;
+}
+
 #site-logo {
   visibility: hidden;
 }

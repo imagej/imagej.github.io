@@ -56,7 +56,7 @@ There are three common ways to travel to Madison:
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <ul>
           <li>

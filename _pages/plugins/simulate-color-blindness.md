@@ -21,7 +21,7 @@ Here's how the results look like when applied to the *Clown* sample image:
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>style="vertical-align:top" |{% include thumbnail src='/media/plugins/simulate-color-blindness-results.png' title='Simulate Color Blindness: overview of the nine different modes.'%}</p>
       </td>

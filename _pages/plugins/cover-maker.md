@@ -61,7 +61,7 @@ Finally, for printing poster size images, the plugin will generate in the second
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>We will start by opening an image that will serve as template. For the time being it needs to be an RGB image. It can have any dimensions, however consider that larger images will require many more tiles to fill up, it will take long and the effect will be less visible. Fiji logo shown on the right is a good start. Alternatively one of the Fiji sample images such as the clown.jpg gives good results quickly.</p>
         <p><em>Note:</em> I would recommend having only one image opened before proceeding further.</p>
@@ -71,7 +71,7 @@ Finally, for printing poster size images, the plugin will generate in the second
       </td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p>Now we launch the CoverMaker python script by going to {% include bc path="Plugins | Examples | CoverMaker | Cover Maker" %}. (Or typing {% include key key="L" %} and searching with keyword `cover`).</p>
         <p>A basic dialog box will appear prompting us to select the image database by clicking on <strong>Browse</strong> and locating in the file system the <a href="#Databases">tif file</a> containing down-sampled images. The tif file is called 12_9.tif indicating that the images have been scaled to the 12x9 pixel dimension. This is the default tile size. If you use a different database with different aspect ratio please change the default <strong>tile width and height</strong> in the dialog box.</p>
@@ -94,7 +94,7 @@ Finally, for printing poster size images, the plugin will generate in the second
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>After the reconstruction finishes a second dialog box pops up. Here we have an option to <strong>Cancel</strong> the program, the finished low resolution image will remain opened and can be saved using normal Fiji procedures.</p>
         <p>If we like the result of the experiment, we can save it at high resolution using the original images. We can decide on the final <strong>resolution</strong> of the output image in dpi, specify the <strong>width or height in pixels or inches</strong>. The fields are linked and should update while we are editing the different parameters.</p>
@@ -117,7 +117,7 @@ When we zoom in on the final output image that was generated in this case at 300
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>{% include thumbnail src='/media/plugins/lowres-zoomin.png' title='Close up on the Initial low resolution image'%}</p>
       </td>

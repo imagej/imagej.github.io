@@ -46,7 +46,7 @@ Click the "Reset" button to restart the process or click on the "Create mask" bu
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>style="vertical-align:top"|{% include thumbnail src='/media/plugins/screenshot-siox-segmentation.png' title='SIOX segmentation Graphical User Interface applied to Leaf sample'%}</p>
       </td>

@@ -10,7 +10,7 @@ artifact: sc.fiji:Skeletonize3D\_
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p>style="vertical-align:top" |{% include thumbnail src='/media/plugins/smoothed-bat-cochlea-volume.gif' title='Smoothed bat cochlea volume'%}</p>
       </td>

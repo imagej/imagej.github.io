@@ -43,7 +43,7 @@ It's best to directly read the paper[^1] to know what is behind these measures, 
     </tr>
   </thead>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p><a href="#microtubule-scenario">MICROTUBULE</a></p>
       </td>
@@ -54,7 +54,7 @@ It's best to directly read the paper[^1] to know what is behind these measures, 
         <p>Roughly constant velocity motion.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="#receptor-scenario">RECEPTOR</a></p>
       </td>
@@ -65,7 +65,7 @@ It's best to directly read the paper[^1] to know what is behind these measures, 
         <p>{% include wikipedia title='Tethered particle motion' text='Tethered motion'%}: switch between Brownian and directed motion with random orientation for the later.</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><a href="#vesicle-scenario">VESICLE</a></p>
       </td>
@@ -74,7 +74,7 @@ It's best to directly read the paper[^1] to know what is behind these measures, 
       </td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="#virus-scenario">VIRUS</a></p>
       </td>

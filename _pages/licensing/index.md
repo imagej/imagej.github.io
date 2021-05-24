@@ -24,7 +24,7 @@ Since each project consists of many components, some may be licensed differently
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td style="background-color: white">
         <p><strong>Basics</strong></p>
       </td>
@@ -46,7 +46,7 @@ Since each project consists of many components, some may be licensed differently
       <td></td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><strong>Logo</strong></p>
       </td>
@@ -90,7 +90,7 @@ Since each project consists of many components, some may be licensed differently
         <p><a href="|alt=Sublicensing"><img src="/media/licensing/licensing-sublicensing.png" width="10px"></a></p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><a href="/software/imagej1">ImageJ 1.x</a></p>
       </td>
@@ -108,7 +108,7 @@ Since each project consists of many components, some may be licensed differently
       <td></td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><img src="/media/icons/imagej1.png" width="48"></p>
       </td>
@@ -153,7 +153,7 @@ Since each project consists of many components, some may be licensed differently
         <p>✅</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><a href="/develop/architecture">ImageJ software stack</a></p>
       </td>
@@ -171,7 +171,7 @@ Since each project consists of many components, some may be licensed differently
       <td></td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><img src="/media/icons/scijava.png" width="48"></p>
       </td>
@@ -215,7 +215,7 @@ Since each project consists of many components, some may be licensed differently
         <p>-</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><img src="/media/icons/imglib2.png" width="48"></p>
       </td>
@@ -229,7 +229,7 @@ Since each project consists of many components, some may be licensed differently
       <td></td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><img src="/media/icons/imagej.png" width="48"></p>
       </td>
@@ -243,7 +243,7 @@ Since each project consists of many components, some may be licensed differently
       <td></td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><img src="/media/icons/scifio.png" width="48"></p>
       </td>
@@ -257,7 +257,7 @@ Since each project consists of many components, some may be licensed differently
       <td></td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="/software/fiji">Fiji projects</a></p>
       </td>
@@ -275,7 +275,7 @@ Since each project consists of many components, some may be licensed differently
       <td></td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><img src="/media/icons/fiji.png" width="48"></p>
       </td>
@@ -319,7 +319,7 @@ Since each project consists of many components, some may be licensed differently
         <p>❌</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><strong><a href="/plugins/bdv">BigDataViewer</a></strong></p>
       </td>
@@ -330,7 +330,7 @@ Since each project consists of many components, some may be licensed differently
       <td></td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><strong><a href="/plugins/trakem2">TrakEM2</a></strong></p>
       </td>
@@ -340,7 +340,7 @@ Since each project consists of many components, some may be licensed differently
       <td></td>
       <td></td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="SciJava">SciJava consortium</a></p>
       </td>
@@ -358,7 +358,7 @@ Since each project consists of many components, some may be licensed differently
       <td></td>
       <td></td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><img src="/media/icons/cellprofiler.png" width="48"></p>
       </td>
@@ -402,7 +402,7 @@ Since each project consists of many components, some may be licensed differently
         <p>-</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><img src="/media/icons/bio-formats.png" width="48"></p>
       </td>
@@ -447,7 +447,7 @@ Since each project consists of many components, some may be licensed differently
         <p>❌</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><img src="/media/icons/omero.png" width="48"></p>
       </td>
@@ -459,7 +459,7 @@ Since each project consists of many components, some may be licensed differently
         <a href="http://openmicroscopy.org/site/about/licensing-attribution">Info</a></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><img src="/media/icons/knime.png" width="48"></p>
       </td>

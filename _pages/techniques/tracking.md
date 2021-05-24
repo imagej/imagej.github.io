@@ -13,7 +13,7 @@ Here we summarize some of the tracking plugins in ImageJ.
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p><strong>Name</strong></p>
       </td>
@@ -27,7 +27,7 @@ Here we summarize some of the tracking plugins in ImageJ.
         <p><strong>Plugin Snapshot</strong></p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><a href="/plugins/trackmate">TrackMate</a></p>
       </td>

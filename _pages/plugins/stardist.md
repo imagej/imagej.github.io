@@ -42,7 +42,7 @@ Start the plugin from `Plugins > StarDist > StarDist 2D`. The following paramete
 {::nomarkdown}
 <table>
   <tbody>
-    <tr class="odd">
+    <tr>
       <td>
         <p><img src="/media/plugins/stardist-usage-param-pred.jpg" width="400"></p>
       </td>
@@ -67,7 +67,7 @@ Start the plugin from `Plugins > StarDist > StarDist 2D`. The following paramete
         <p>If necessary, one can change/disable the percentile-based input image normalization.</p>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td>
         <p><img src="/media/plugins/stardist-usage-param-nms.jpg" width="400"></p>
       </td>
@@ -81,7 +81,7 @@ Start the plugin from `Plugins > StarDist > StarDist 2D`. The following paramete
         <p>The segmented objects can be returned as a <em>Label Image</em> or in the <em>ROI Manager</em> (or both).</p>
       </td>
     </tr>
-    <tr class="odd">
+    <tr>
       <td>
         <p><img src="/media/plugins/stardist-usage-param-advanced.jpg" width="400"></p>
       </td>
@@ -95,7 +95,7 @@ Start the plugin from `Plugins > StarDist > StarDist 2D`. The following paramete
         </ul>
       </td>
     </tr>
-    <tr class="even">
+    <tr>
       <td></td>
       <td></td>
     </tr>
