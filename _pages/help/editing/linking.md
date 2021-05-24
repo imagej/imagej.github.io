@@ -142,7 +142,7 @@ article on Wikipedia!
 {% endcapture %}
 {% include code-example code=wikipedia-code result=wikipedia-result %}
 
-## Maven artifacts
+## Maven
 
 {% capture maven-code %}
 The Maven artifact for ImageJ as a whole is
@@ -158,42 +158,66 @@ The Maven artifact for ImageJ as a whole is
 
 ### Examples
 
-{% raw %}
-```
-See also the {% include javadoc project="SciJava" %} javadocs.
-```
-{% endraw %}
+{% capture javadoc-project-code %}
+{% raw %}See also the
+{% include javadoc project="SciJava" %}
+javadocs.{% endraw %}
+{% endcapture %}
+{% capture javadoc-project-result %}
+See also the
+{% include javadoc project="SciJava" %}
+javadocs.
+{% endcapture %}
+{% include code-example code=javadoc-project-code result=javadoc-project-result %}
 
-See also the {% include javadoc project="SciJava" %} javadocs.
+{% capture javadoc-class-code %}
+See also the
+{% raw %}{% include javadoc
+  project="ImageJ1"
+  package="ij.process"
+  class="ImageProcessor" %}{% endraw %}
+class.
+{% endcapture %}
+{% capture javadoc-class-result %}
+See also the
+{% include javadoc
+  project="ImageJ1"
+  package="ij.process"
+  class="ImageProcessor" %}
+class.
+{% endcapture %}
+{% include code-example code=javadoc-class-code result=javadoc-class-result %}
 
-{% raw %}
-```
-See also the {% include javadoc project="/software/imagej1" package="ij/process" class="ImageProcessor" %} class.
-```
-{% endraw %}
+{% capture javadoc-anchor-code %}
+See also the
+{% raw %}{% include javadoc
+  project="SciJava"
+  package="org.scijava.module"
+  class="ModuleService"
+  anchor="getModules()" %}{% endraw %}
+method.
+{% endcapture %}
+{% capture javadoc-anchor-result %}
+See also the
+{% include javadoc
+  project="SciJava"
+  package="org.scijava.module"
+  class="ModuleService"
+  anchor="getModules()" %}
+method.
+{% endcapture %}
+{% include code-example code=javadoc-anchor-code result=javadoc-anchor-result %}
 
-See also the {% include javadoc project="/software/imagej1" package="ij/process" class="ImageProcessor" %} class.
-
-{% raw %}
-```
-See also the {% include javadoc package ="net/imagej" class="/about"%} class.
-```
-{% endraw %}
-
-See also the {% include javadoc package ="net/imagej" class="/about"%} class.
-
-{% raw %}
-```
-See also the {% include javadoc package="org/scijava/module" class="ModuleService" anchor="getModules()" %} method.
-```
-{% endraw %}
-
-See also the {% include javadoc package="org/scijava/module" class="ModuleService" anchor="getModules()" %} method.
-
-{% raw %}
-```
-See also the {% include javadoc package="net/imagej/ops" class="package-summary" label="ImageJ Ops" %} javadocs.
-```
-{% endraw %}
-
-See also the {% include javadoc package="net/imagej/ops" class="package-summary" label="ImageJ Ops" %} javadocs.
+{% capture javadoc-label-code %}
+See also the
+{% raw %}{% include javadoc package="net.imagej.ops"
+  class="package-summary" label="ImageJ Ops" %}{% endraw %}
+javadocs.
+{% endcapture %}
+{% capture javadoc-label-result %}
+See also the
+{% include javadoc package="net.imagej.ops"
+  class="package-summary" label="ImageJ Ops" %}
+javadocs.
+{% endcapture %}
+{% include code-example code=javadoc-label-code result=javadoc-label-result %}
