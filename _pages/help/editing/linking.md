@@ -116,7 +116,17 @@ Use `label` to override the label:
 
 ## Wikipedia
 
-TODO
+{% capture wikipedia-code %}
+Check out the
+{% raw %}{% include wikipedia title="ImageJ" %}{% endraw %}
+article on Wikipedia!
+{% endcapture %}
+{% capture wikipedia-result %}
+Check out the
+{% include wikipedia title="ImageJ" %}
+article on Wikipedia!
+{% endcapture %}
+{% include code-example code=wikipedia-code result=wikipedia-result %}
 
 ## Javadoc
 
