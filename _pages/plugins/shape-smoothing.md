@@ -31,7 +31,7 @@ Some theoretical background of FD-filtering: the result of step 1 is a series of
 
 # Parameters
 
-{% include img src="/media/plugins/shape-smoothing-gui.png" width="320" caption="Shape-Smoothing parameters" %}
+{% include img src="shape-smoothing-gui" width="320" caption="Shape-Smoothing parameters" %}
 
 At first users have to choose on how they want to define the smoothing: via relative or absolute number of FDs to be "kept".
 

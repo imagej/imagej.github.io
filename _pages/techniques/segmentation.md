@@ -93,7 +93,7 @@ Preprocess the image using filters, to make later thresholding more effective. W
 
 ## Adjusting Threshold
 
-{% include img src="/media/techniques/threshold-tree.png" width="300" caption="Tree ring sample image with a threshold applied for a B&amp;W image" %}
+{% include img src="threshold-tree" width="300" caption="Tree ring sample image with a threshold applied for a B&amp;W image" %}
 
 Ideally you want to use one of the auto-threshold methods, rather than manually tweaking, so that your result is reproducible later on the same data, and on multiple other datasets.
 
@@ -105,7 +105,7 @@ Ideally you want to use one of the auto-threshold methods, rather than manually 
 
 ## Creating Masks
 
-{% include img src="/media/techniques/eroded-tree.png" width="300" caption="Over-saturated mask is eroded around the center tree ring" %}
+{% include img src="eroded-tree" width="300" caption="Over-saturated mask is eroded around the center tree ring" %}
 
 -   Select {% include bc path='Edit | Selection | Create Mask'%}
 -   Based on the image and set threshold, some portions of the image may be over/under saturated
@@ -116,7 +116,7 @@ Ideally you want to use one of the auto-threshold methods, rather than manually 
 
 ## Selections
 
-{% include img src="/media/techniques/selection-tree.png" width="300" caption="Selections on the mask" %}
+{% include img src="selection-tree" width="300" caption="Selections on the mask" %}
 
 ### Creating Selections
 
@@ -124,7 +124,7 @@ Ideally you want to use one of the auto-threshold methods, rather than manually 
 -   To deselect a portion of the image, select {% include key keys='Shift|left click' %}
     -   [More information](/ij/docs/guide/146-27.html#sub:Create-Selection)
 
-{% include img src="/media/techniques/reverted-tree.png" width="300" caption="Selections on the reverted image" %}
+{% include img src="reverted-tree" width="300" caption="Selections on the reverted image" %}
 
 ### Transferring Selections
 

@@ -24,7 +24,7 @@ FijiRelax is a generic tool for 3D+t MRI analysis and exploration using multi-ec
 - Exploration of T1/T2 distribution in ROI over time
 - Operable through a GUI, or scriptable for batch processing of large datasets
 
-{% include img src="/media/plugins/fijirelax-snap-glob-explorer.png" width="800" caption="Time-lapse exploration of parameters in a plant under drought stress" %}
+{% include img src="fijirelax-snap-glob-explorer" width="800" caption="Time-lapse exploration of parameters in a plant under drought stress" %}
 
  
 ## Dataset for testing purpose
@@ -67,7 +67,7 @@ FijiRelax interface have four main panels :
 - The third panel contains the explorer button.
 - The fourth panel has additional helper functions.
 
-{% include img src="/media/plugins/fijirelax-snap-main-window.png" width="300" caption="FijiRelax main window" %}
+{% include img src="fijirelax-snap-main-window" width="300" caption="FijiRelax main window" %}
 
 ## Tutorials
 

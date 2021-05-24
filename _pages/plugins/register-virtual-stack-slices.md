@@ -32,7 +32,7 @@ Images may have different dimensions and be of different type.
 
 <b>Step 1</b>: launch the "Plugins - Registration - Register Virtual Stack Slices" plugin.
 
-{% include img src="/media/plugins/rvs-main-window.png" width="400" caption="Register Virtual Stack main window" %}
+{% include img src="rvs-main-window" width="400" caption="Register Virtual Stack main window" %}
 
 <b>Step 2</b>: choose the appropriate options:  
 
@@ -91,7 +91,7 @@ The transforms are saved as **.XML** files, following [TrakEM2](/plugins/trakem2
 3.  All types of images are accepted (8-bit, 16-bit, 32-bit and RGB) but only in .tif, .jpg, .png, .gif, .tiff, .jpeg, .bmp, .pgm, or .ima format. Output images are saved as TIFF.
 4.  If you selected the "Advanced setup" and "Elastic" as registration model, another window to adjust the elastic registration parameters will be shown.
 
-{% include img src="/media/plugins/rvs-elastic-options-351x446.png" width="280" caption="Elastic registration options" %}
+{% include img src="rvs-elastic-options-351x446" width="280" caption="Elastic registration options" %}
 
 This is actually a reduced version of the [ bUnwarpJ](/plugins/bunwarpj) main window.
 

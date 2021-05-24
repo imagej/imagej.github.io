@@ -1,5 +1,5 @@
 {%- capture dir -%} {%- include util/dir path=page.url -%} {%- endcapture -%}
-{%- assign media-dir = "/media" | append: dir -%}
+{%- assign media-dir = "/media" | append: dir | append: "/" -%}
 {%- assign default-prefixes = "|" | append: media-dir | append: "|/media/" | split: "|" -%}
 {%- assign default-suffixes = "|.svg|.png|.gif|.jpg" | split: "|" -%}
 

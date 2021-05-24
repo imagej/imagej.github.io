@@ -15,7 +15,7 @@ AplimTools is a set of image processing tools for plants magnetic resonance anal
 -   T1/T2/M0 maps computation from spin echo sequences (multiple TR and/or TE)
 -   Time-lapse exploration of T1/T2/M0 parameters in interest areas
 
-{% include img src="/media/plugins/full-1.jpg" width="800" caption="Time-lapse exploration of parameters in a plant under drought stress" %}
+{% include img src="full-1" width="800" caption="Time-lapse exploration of parameters in a plant under drought stress" %}
 
   
   
@@ -91,7 +91,7 @@ For time-lapse experiments, one can compute such a 4D MR hyperimage at successiv
 
 This plugin helps exploring the relaxation curves on a point, the neighbourhood of a point, or a user-defined roi, using non-linear fit (as above). The visualization of these curves (middle panels) is enriched by semi-log graphs of the T1 and T2 values (right-top panel), and a distribution of these values in the selected area (right-bottom panel). This explorer can open time-lapse 5D hyperimages, to give insight of the evolution of these parameters along the experiment. The explorer display informations through 6 panels :
 
-{% include img src="/media/plugins/full-1.jpg" align="center" width="600" caption="Application panels" %}
+{% include img src="full-1" align="center" width="600" caption="Application panels" %}
 
 <center><strong>Panels details</strong></center>
 

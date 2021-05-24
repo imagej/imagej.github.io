@@ -31,7 +31,7 @@ There are three ways to reapply spatial calibration: manually via the {% include
 3.  In the "*from*" drop-down box select the original image; in the "*to*" box, select the processed image. Click OK.
 4.  In the new dialog, enter a value by which the receiving image has been scaled.
 
-{% include img src="/media/cookbook/copy-pixel-size-values.png" width="180" height="240" %}
+{% include img src="copy-pixel-size-values" width="180" height="240" %}
 
 #### Set Scale
 

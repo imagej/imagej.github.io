@@ -40,7 +40,7 @@ Please note that :
     -   The best way is to submit a PR.
     -   You can also open an issue and post an OME-TIFF file which contains additional OME features you would like to see added to the plugin.
 
-{% include img src="/media/plugins/omevisual-screenshot.png" width="600" caption="OMEVisual Screenshot" %}
+{% include img src="omevisual-screenshot" width="600" caption="OMEVisual Screenshot" %}
 
 ## Related links
 

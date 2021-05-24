@@ -58,7 +58,7 @@ This plugin is available from the [PTBIOP Update Site](/list-of-update-sites) Th
 
 ## Direct Use
 
-{% include img src="/media/plugins/frc-dialog-std.png" width="500" caption="Plugin Dialog choices Standard Use" %}
+{% include img src="frc-dialog-std" width="500" caption="Plugin Dialog choices Standard Use" %}
 
 Call up the plugin using {% include bc path="Plugins|BIOP|Image Analysis|FRC|FRC Calculation..." %}.
 
@@ -66,7 +66,7 @@ You need two images open to perform the FRC.
 
 ## Batch Mode
 
-{% include img src="/media/plugins/frc-dialog-batch.png" width="500" caption="Plugin Dialog choices in Batch mode" %}
+{% include img src="frc-dialog-batch" width="500" caption="Plugin Dialog choices in Batch mode" %}
 
 There is also a Batch Option under {% include bc path="Plugins|BIOP|Image Analysis|FRC|FRC Calculation (Batch)..." %}
 
@@ -76,13 +76,13 @@ This dialog needs two folders. The plugin will open one folder, and perform the 
 
 The plugin writes the FIRE (Fourier Image REsolution) number on a Results Table that gets appended as the plugin gets used. The column name reflects the calibration of the image and the threshold method selected.
 
-{% include img src="/media/plugins/frc-results.png" width="500" caption="Results Table example from FRC Calculation" %}
+{% include img src="frc-results" width="500" caption="Results Table example from FRC Calculation" %}
 
 ## Plots
 
 The Plugin can display a plot of the FRC curve, along with the LOESS smoothed version of the curve. Finally it displays the threshold method used and the intersection of the FRC with the threshold, providing the FIRE number. The X dimension is in the frequency domain and represents pixels<sup>-1</sup>
 
-{% include img src="/media/plugins/frc-results-curve.png" width="500" caption="FRC Curve example using 1/7 Threshold condition" %}
+{% include img src="frc-results-curve" width="500" caption="FRC Curve example using 1/7 Threshold condition" %}
 
 In the case of batch processing, if *Save Plot* is checked, the plugin creates a new folder in the parent directory called "Graphs" and saves an over-sampled plot with the name of the image and threshold method.
 

@@ -306,7 +306,7 @@ Right-clicking on any of the image views will bring up a menu with various editi
 
 ### Edit
 
-{% include img src="/media/plugins/snt/snt-path-manager-edit.png" width="250" caption="\"Edit\" menu" %}
+{% include img src="snt-path-manager-edit" width="250" caption="\"Edit\" menu" %}
 
 -   {% include bc path='Delete...'%} Removes selected Path(s) from the Path Manager. If no Paths are selected, all Paths are deleted.
 -   {% include bc path='Rename...'%} Renames the selected Path. Only one Path may be renamed at a time.
@@ -374,7 +374,7 @@ This menu contains several options which provide quick ways to analyze and visua
         {% include img src="snt-distribution-analysis" title="Distribution Analysis prompt" width="300" caption="Distribution Analysis prompt: Choosing Branch Order for the measurement." %}
 -   {% include bc path='Measure.../Quick Measurements'%} Shows a table of summary statistics for selected paths. The former command allows for specific selections of metrics. If measuring multiple tracings, the table can be sorted by column.
 
-    {% include img src="/media/plugins/snt/snt-path-manager-measurements.png" width="1000" caption="Measurements table for OP_1" %}
+    {% include img src="snt-path-manager-measurements" width="1000" caption="Measurements table for OP_1" %}
 
 -   {% include bc path='Convert to ROIs...'%} Allows conversion of Path(s) to ImageJ [ROIs](/ij/docs/guide/146-10.html#sec:Selections-Intro) (Regions of Interest). Creates an instance of the [ROI Manager](/ij/docs/guide/146-30.html#fig:The-ROI-Manager)
     -   *Convert* Drop-down menu specifying the compartment to convert.

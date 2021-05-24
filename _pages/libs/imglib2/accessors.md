@@ -17,7 +17,7 @@ In ImgLib2, images are manipulated using *Accessors*. For pixel images, you can 
 
 The accessors provided by ImgLib2 typically implement `Cursor` or `RandomAccess`. `Cursor` and `RandomAccess` are aggregations of interfaces covering the above three points. A simplified UML diagram for the interface hierarchy is shown below. (The simplification is with respect to real-coordinate interfaces for continuous images that are left out for now.)
 
-{% include img src="/media/libs/imglib2/imglib2-accessors-simplified-integer.png" width="775" caption="Simplified UML for ImgLib2 accessor interfaces" %}
+{% include img src="imglib2-accessors-simplified-integer" width="775" caption="Simplified UML for ImgLib2 accessor interfaces" %}
 
 ImgLib2 supports two basic access patterns:
 
@@ -582,7 +582,7 @@ Because we have a `RealRandomAccess` you can zoom in indefinitely (until you hit
     final double scale = 0.000125;
     final double[] offset = new double[] { -1.3875, 0.045 };
 
-{% include img src="/media/libs/imglib2/mandelbrot-2.png" width="300" caption="Mandelbrot fractal" %}
+{% include img src="mandelbrot-2" width="300" caption="Mandelbrot fractal" %}
 
 ### Notes
 

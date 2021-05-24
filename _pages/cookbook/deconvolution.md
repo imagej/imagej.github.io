@@ -29,7 +29,7 @@ The Diffraction PSF 3D plugin can be used to generate theoretical PSFs assuming 
 
 To use, run the "Diffraction PSF 3D" plugin. A dialog will appear; most of the fields are self explanatory. The width, height and depth values are for the PSF image, not your image stack. The desired values will need to be empirically determined. Try to match the parameters used to capture the raw image.
 
-{% include img src="/media/cookbook/diffraction-psf-window1.png" width="377" height="317" %}
+{% include img src="diffraction-psf-window1" width="377" height="317" %}
 
 ## Constrained Iterative Deconvolution
 
@@ -37,7 +37,7 @@ Non negative constrained (non linear), iterative deconvolution algorithms greatl
 
 Run the Iterative Deconvolve 3D plugin, then select the image and PSF. For a 2D image, use a 2D (single plane) PSF. For 3D images, use a 3D PSF (z stack). Start with the default values and set iterations to 10 initially. Be careful not to run out of memory when processing large 3D images. Crop them if they are too large.
 
-{% include img src="/media/cookbook/iterative-deconvolve-window.png" width="411" height="272" %}
+{% include img src="iterative-deconvolve-window" width="411" height="272" %}
 
 ## An interactive Convolution / Deconvolution / Contrast Restoration demo in ImageJ
 

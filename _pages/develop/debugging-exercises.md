@@ -367,7 +367,7 @@ ImageJ.app/ImageJ-linux64
 
 We actually don't need any extra flags this time, as this technique isn't specific to ImageJ. When you run a program from the command line, your console is directly tied to the running instance:
 
-{% include img src="/media/develop/e6console.png" width="400" title="Waiting for input after launching ImageJ" %}
+{% include img src="e6console" width="400" title="Waiting for input after launching ImageJ" %}
 
 In this state, we can still send signals to the running application (for example - {% include key keys='ctrl|c' %} to [kill the app](https://www.howtogeek.com/howto/ubuntu/keyboard-shortcuts-for-bash-command-shell-for-ubuntu-debian-suse-redhat-linux-etc/)).
 
@@ -419,7 +419,7 @@ We see that objects are being created, but we aren't storing any references to t
 
 Once the `OutOfMemoryError` is encountered our breakpoint will trigger. To acquire the heap dump:
 
-{% include img src="/media/develop/e7heapdump.png" align="right" width="500" caption="Heap dump acquisition in jvisualvm" %}
+{% include img src="e7heapdump" align="right" width="500" caption="Heap dump acquisition in jvisualvm" %}
 
 1.  Open `jvisualvm`
 2.  From the list of local applications, right-click on `net.imagej.trouble.visible.E7InvestigateImpressions` and select the "Heap Dump" option.

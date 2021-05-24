@@ -21,27 +21,27 @@ Here, we propose to use 6 LUTs, which are obtained by combining Red Green and Bl
 
 ## On 3 channels image
 
-{% include img src="/media/plugins/3chs-grays-cell.jpg" width="600" title="3 channels, each in Grays levels. " %}
+{% include img src="3chs-grays-cell" width="600" title="3 channels, each in Grays levels. " %}
 
 ### RGB
 
-{% include img src="/media/plugins/3chs-rgb-cell.jpg" width="800" title="3 channels image, in Red Green Blue and Merge. " %}
+{% include img src="3chs-rgb-cell" width="800" title="3 channels image, in Red Green Blue and Merge. " %}
 
 ### CMY
 
-{% include img src="/media/plugins/3chs-cmy-cell.jpg" width="800" title="3 channels image, in Red Green Blue and Merge. " %}
+{% include img src="3chs-cmy-cell" width="800" title="3 channels image, in Red Green Blue and Merge. " %}
 
 ## On 4 (to 6) channels image
 
-{% include img src="/media/plugins/4chs-grays-cell.jpg" width="800" title="4 channels image, each in Grays levels. " %}
+{% include img src="4chs-grays-cell" width="800" title="4 channels image, each in Grays levels. " %}
 
 ### Appropriate BIOP-LUTs selection
 
-{% include img src="/media/plugins/4chs-biop-lut-cell-ok.jpg" width="1000" title="4 channels image, biop luts good choice" %}
+{% include img src="4chs-biop-lut-cell-ok" width="1000" title="4 channels image, biop luts good choice" %}
 
 ### Unappropriate BIOP-LUTs selection
 
-{% include img src="/media/plugins/4chs-biop-lut-cell-bad.jpg" width="1000" title="4 channels image, biop luts poor choice" %}
+{% include img src="4chs-biop-lut-cell-bad" width="1000" title="4 channels image, biop luts poor choice" %}
 
 Here, channels 2 and 3 are tubular structure and it's difficult to distinguish them if both are greenish.
 

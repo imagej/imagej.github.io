@@ -13,13 +13,13 @@ This short tutorial shows you how to export a connected set of paths in the [Sim
 
 To export each connected set of paths as a separate SWC file, you can now select the "Export all as SWC..." menu option - you will be prompted for the prefix of the file names:
 
-{% include img align="center" src="/media/plugins/simple-neurite-tracer/save-all-as-swc.png" %}
+{% include img align="center" src="save-all-as-swc" %}
 
 ## Export a single connected path set as an SWC file
 
 Often, you will just want to export one set of connected paths. As an example of this, suppose we have a partially traced image like this:
 
-{% include img align="center" src="/media/plugins/simple-neurite-tracer/simple-neurite-tracer-export-to-swc-tutorial-1.png" width="750" %}
+{% include img align="center" src="simple-neurite-tracer-export-to-swc-tutorial-1" width="750" %}
 
 Those are actually three disconnected groups of paths, as you can see from the path list:
 
@@ -31,7 +31,7 @@ In other words, there is one large group of neurons which are all connected, wit
 
 The SWC file format describes a single neuron's morphology (so every point is connected to another one), whereas a .traces file in Simple Neurite Tracer can describe multiple disconnected structures. This means that in this plugin you can only export a complete connected set of paths to SWC. So, in this example, you could only export three different SWC files, since there are three connected groups of paths. To do that, select all of the paths in that structure (using {% include key key='Shift' %} or {% include key key='Control' %} when selecting items in the list) - that should look like this:
 
-{% include img align="center" src="/media/plugins/simple-neurite-tracer/simple-neurite-tracer-export-to-swc-tutorial-3.png" %}
+{% include img align="center" src="simple-neurite-tracer-export-to-swc-tutorial-3" %}
 
 ... and then click the "Export to SWC" button in the bottom right of that window. If you haven't selected a completely connected set of paths, then you will get an error at this point - otherwise you will be prompted to save the SWC file.
 
@@ -39,11 +39,11 @@ The SWC file format describes a single neuron's morphology (so every point is co
 
 There is now support in Simple Neurite Tracer for setting the type of SWC points contained in each path. You can do this by selecting a set of paths and then choosing a value from the SWC Type context menu:
 
-{% include img align="center" src="/media/plugins/simple-neurite-tracer/snt-set-to-soma.png" %}
+{% include img align="center" src="snt-set-to-soma" %}
 
 You can set each path to a different type in this way, e.g.:
 
-{% include img align="center" src="/media/plugins/simple-neurite-tracer/snt-after-setting-swc-types.png" %}
+{% include img align="center" src="snt-after-setting-swc-types" %}
 
 Note: setting an SWC type for every point is **required** by some software, such as L-measure.
 

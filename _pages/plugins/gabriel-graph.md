@@ -30,7 +30,7 @@ If selected, it will create a new results table with each point, its computed ne
 
 If selected, it will overlay the Gabriel Graph onto the image.
 
-{% include img src="/media/plugins/gabriel-graph-processing-example.png" width="400" caption="Result of Plugin on image" %}
+{% include img src="gabriel-graph-processing-example" width="400" caption="Result of Plugin on image" %}
 
 ## Macro Recordable
 

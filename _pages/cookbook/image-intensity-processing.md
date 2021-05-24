@@ -9,7 +9,7 @@ section: Learn:Cookbook
 
 ## Brightness and Contrast
 
-{% include img src='/media/cookbook/brightness-contrast-pic.png' align='right'%} Brightness is the visual perception of reflected light. Increased brightness refers to an image's increased luminance.
+{% include img src='brightness-contrast-pic' align='right'%} Brightness is the visual perception of reflected light. Increased brightness refers to an image's increased luminance.
 
 Contrast is the separation of the lightest and darkest parts of an image. An increase in contrast will darken shadows and lighten highlights. Increasing contrast is generally used to make objects in an image more distinguishable.
 

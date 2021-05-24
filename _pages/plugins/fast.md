@@ -67,7 +67,7 @@ Just select the radio button option needed then click {% include button label='O
 
 <img src="/media/plugins/fast-roi-edition.png" title="fig:Dialog box to redefine area" width="200" alt="Dialog box to redefine area" /> If you selected to *redefine area manually*, a new dialog box is displayed to get access to the ImageJ toolbar and modify the selection. The user-defined threshold is then automatically applied.
 
-{% include img src="/media/plugins/fast-thr-roi.png" width="500" caption="Example of thresholded image and corrected ROI" %}
+{% include img src="fast-thr-roi" width="500" caption="Example of thresholded image and corrected ROI" %}
 
 Select the appropriate tool in ImageJ toolbar: ![](/media/freehand.png) Freehand (default) OR ![](/media/plugins/wand-tool.png) Wand tool.
 

@@ -45,7 +45,7 @@ For information on the parameters, their type, whether they are optionnal or req
 
 Image analysis workflows require the user to perform stereotypic steps: enhance signal, define and characterize region, visualize and assess results. This recurring process allows to create one function per task and to organize these functions in categories with similar roles, input and output: Format, Filter, Segment, Math, Assess.
 
-{% include img src="/media/plugins/cip/cip-generic-pipeline.png" width="700" caption="**Figure 2**: Many analysis workflow are composed of generic tasks." %}
+{% include img src="cip-generic-pipeline" width="700" caption="**Figure 2**: Many analysis workflow are composed of generic tasks." %}
 
 -   **[Format](/plugins/cip/format)**: These functions are used to managed image data, combine them or reduce their dimensionnality. They take one or multiple image as input and return one image as output. These function will generally provide an ouput which size and/or dimensionality can be different from the input
 
@@ -86,13 +86,13 @@ The following script shows how to segment 2d object in an image and visualize th
 
 {% include github-embed org='benoalo' repo='CIP' branch='master' path='wiki_examples/2D_nuclei.py' %}
 
-{% include img src="/media/plugins/cip/cip-example-2d.png" width="800" caption="**Figure 3**: Example a workflow performing the cropping, filtering segmentation and visualisation of a 2D image. Raw data: Platynereis embryo, acquisition: Mette Handberg-Thorsager from Tomancak lab, MPI-CBG, Dresden in collaboration with Keller lab, HHMI - Janelia Research Campus" %}
+{% include img src="cip-example-2d" width="800" caption="**Figure 3**: Example a workflow performing the cropping, filtering segmentation and visualisation of a 2D image. Raw data: Platynereis embryo, acquisition: Mette Handberg-Thorsager from Tomancak lab, MPI-CBG, Dresden in collaboration with Keller lab, HHMI - Janelia Research Campus" %}
 
 The following script shows a 3d nuclei segmentation and the measure and displau of nuclei size. The workflow is illustrated in the **Figure 4**.
 
 {% include github-embed org='benoalo' repo='CIP' branch='master' path='wiki_examples/3D_nuclei_segmentation.py' %}
 
-{% include img src="/media/plugins/cip/cip-example-3d.png" width="800" caption="**Figure 4**: Example a workflow performing the cropping, filtering segmentation and visualisation of a 2D image. Raw data: Platynereis embryo, acquisition: Mette Handberg-Thorsager from Tomancak lab, MPI-CBG, Dresden in collaboration with Keller lab, HHMI - Janelia Research Campus" %}
+{% include img src="cip-example-3d" width="800" caption="**Figure 4**: Example a workflow performing the cropping, filtering segmentation and visualisation of a 2D image. Raw data: Platynereis embryo, acquisition: Mette Handberg-Thorsager from Tomancak lab, MPI-CBG, Dresden in collaboration with Keller lab, HHMI - Janelia Research Campus" %}
 
 # Development plan
 
