@@ -278,7 +278,7 @@ $sidebarPadding: 10px;
   width: $sidebarWidth - $sidebarMargin;
   height: 100vh;
   position: sticky;
-  top: 1%;
+  top: 1rem;
   overflow-y: scroll;
   -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
   scrollbar-width: none;  /* Hide scrollbar for Firefox */
@@ -476,12 +476,14 @@ $leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding - 3
 
 #nav-bar {
   text-align: center;
-  padding: 0;
+  padding: 1rem 0 0 0;
   position: sticky;
-  top: 1%;
+  top: 0;
   font-size: small;
   margin-left: $sidebarWidth - $sidebarPadding;
   margin-right: $sidebarWidth - $sidebarPadding;
+  background: white;
+  z-index: 1;
 }
 
 #nav-bar li {
