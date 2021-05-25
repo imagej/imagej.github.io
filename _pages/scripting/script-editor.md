@@ -59,7 +59,7 @@ There is also the keyboard shortcut {% include key key='[' %} (open square brack
 
 Then choose a language from the language menu:
 
-![](/media/scripting/script-editor-choose-language.jpg"Script-Editor-choose-language.jpg")
+![Script-Editor-choose-language.jpg](/media/scripting/script-editor-choose-language.jpg)
 
 Now you can write your script. In this tutorial, Jython was chosen as scripting language, but the process is really the same for all scripting languages.
 
