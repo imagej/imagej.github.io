@@ -1510,17 +1510,17 @@ Sholl_Analysis... :: plugins/sholl-analysis
 Shortcuts_to_folders_inside_Fiji.app :: <DELETED> (macOS-specific folder management tips)
 Show_Color_Surfaces :: plugins/show-color-surfaces
 Sigma_Filter :: plugins/sigma-filter
-Simple_Neurite_Tracer :: plugins/snt
+Simple_Neurite_Tracer :: plugins/simple-neurite-tracer
 Simple_Neurite_Tracer:_.traces_File_Format :: plugins/snt/traces-file-format
 Simple_Neurite_Tracer:_3D_Interaction :: plugins/simple-neurite-tracer/3d-interaction
 Simple_Neurite_Tracer:_Accurate_point_placement :: plugins/snt/step-by-step-instructions#accurate-point-placement
 Simple_Neurite_Tracer:_Basic_Instructions :: plugins/simple-neurite-tracer/basic-instructions
 Simple_Neurite_Tracer:_Export_to_SWC_Tutorial :: plugins/simple-neurite-tracer/export-to-swc-tutorial
-Simple_Neurite_Tracer:_Introductory_Screencast :: plugins/snt/screencasts
+Simple_Neurite_Tracer:_Introductory_Screencast :: plugins/simple-neurite-tracer/screencasts
 Simple_Neurite_Tracer:_Key_Shortcuts :: plugins/snt/key-shortcuts
-Simple_Neurite_Tracer:_Old_Screencast1 :: plugins/simple-neurite-tracer/old-screencast1
-Simple_Neurite_Tracer:_Old_Screencast2 :: plugins/simple-neurite-tracer/old-screencast2
-Simple_Neurite_Tracer:_Old_Screencasts :: plugins/simple-neurite-tracer/old-screencasts
+Simple_Neurite_Tracer:_Old_Screencast1 :: plugins/simple-neurite-tracer/screencasts#older-screencasts
+Simple_Neurite_Tracer:_Old_Screencast2 :: plugins/simple-neurite-tracer/screencasts#older-screencasts
+Simple_Neurite_Tracer:_Old_Screencasts :: plugins/simple-neurite-tracer/screencasts#older-screencasts
 Simple_Neurite_Tracer:_Preprocessing_Data_for_Better_Results :: plugins/simple-neurite-tracer/preprocessing-data-for-better-results
 Simple_Neurite_Tracer:_Selecting_paths :: plugins/simple-neurite-tracer/selecting-paths
 Simple_Neurite_Tracer:_Sholl_analysis :: plugins/simple-neurite-tracer/sholl-analysis

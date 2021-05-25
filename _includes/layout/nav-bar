@@ -23,7 +23,7 @@ A horizontal navigation bar with links.
     {%- capture p-dir -%} {%- include util/dir path=p.url -%} {%- endcapture -%}
     {%- if p-dir == page-dir -%}
       {%- comment -%} Sort index page before the others. {%- endcomment -%}
-      {%- assign url = p.url | replace: "/index", "/_index" -%}
+      {%- assign url = p.url | replace: "/index", "/!index" -%}
       {%- assign title = p.nav-title | default: p.title
         | replace: " ", "&nbsp;" | replace: "-", "&#8209;" -%}
       {%- capture link -%}
@@ -45,7 +45,7 @@ A horizontal navigation bar with links.
     {%- capture page-ref -%} <a href="{{page.url}}"> {%- endcapture -%}
     {%- for link in sorted-links -%}
       {%- comment -%} NB: Loop vars are immutable! O_O {%- endcomment -%}
-      {%- assign l = link | replace: "/_index", "/index" -%}
+      {%- assign l = link | replace: "/!index", "/index" -%}
       {%- if l contains page-ref -%}
         {%- comment -%}
           This link points at the current page; remove the <a> and </a> tags.

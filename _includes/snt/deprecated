@@ -1,5 +1,0 @@
-{% include notice icon="warning" content="This page is outdated and and likely irrelevant. The latest SNT documentation can be found [here](/plugins/snt)" %}
-
-{%- comment -%}
-# vi:syntax=liquid
-{%- endcomment -%}
