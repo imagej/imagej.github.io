@@ -29,7 +29,7 @@ The ImageJA project is an adjusted version of ImageJ1 which addresses the above 
 
 The [ij1-builds job on Travis CI](https://travis-ci.com/imagej/ij1-builds) polls the [ImageJ1 release notes page](https://wsr.imagej.net/notes.html) for updates. When something has changed, the job performs the following actions:
 
-1.  /downloads the latest ImageJ1 source archive from the ImageJ 1.x website.
+1.  Downloads the latest ImageJ1 source archive from the ImageJ 1.x website.
 2.  Extracts the archive.
 3.  Restructures the source code into a Maven project.
     -   Sources are placed in `src/main/java`.

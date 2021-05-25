@@ -333,7 +333,7 @@ An explanation of the parameters is [ here](/plugins/feature-extraction#paramete
 
 After applying SIFT or MOPS methods, you will get two sets of corresponding points in both images. If you call then [bUnwarpJ](/plugins/bunwarpj), the corresponding points will appear as source and target landmarks.
 
-## /downloads
+## Downloads
 
 The latest stable distribution of bUnwarpJ can always be found included within Fiji and the **latest released JARs are available in the** [GitHub repository](https://github.com/fiji/bUnwarpJ/releases). If you detect any bug, please feel free to contact the maintainer. Any feedback will be very appreciated.
 

@@ -15,7 +15,7 @@ categories: [Fiji,Related Software,Citable]
 
 {% include fiji/download-links %}
 
-See the [Fiji /downloads](/software/fiji/downloads) page for Life-Line versions, etc.
+See the [Fiji downloads](/software/fiji/downloads) page for Life-Line versions, etc.
 
 ## License
 
