@@ -5,6 +5,7 @@ section: About:Fiji
 categories: [Fiji]
 ---
 
+{% include notice icon="todo" content="**TODO:** Eliminate this page, moving any useful links to the right places on the site." %}
 
 Useful information about using Fiji can be found here:
 
