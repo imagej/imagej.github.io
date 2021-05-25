@@ -4,6 +4,9 @@ title: Colocalization Threshold
 categories: [Plugins,Colocalization,Color processing]
 ---
 
+{% include warning/deprecated
+  old="the Colocalization Threshold plugin"
+  new="[Coloc 2](/plugins/coloc-2)" %}
 
 {% capture maintainer%}
 {% include person id='chalkie666' %}
@@ -19,8 +22,6 @@ categories: [Plugins,Colocalization,Color processing]
 Sets the thresholds for colocalization analysis, and also calculates Manders coefficients, 2D histogram / scatter plot, and other stats.
 
 ## Documentation
-
-<span style="color:red">Note: this plugin is now deprecated. You should use the newer [Coloc 2](/plugins/coloc-2) plugin instead.</span>
 
 See the great documentation for this plugin at [Colocalization Analysis\#Colocalization\_Threshold](/techniques/colocalization-analysis#colocalization-threshold). The method is that implemented in Costes et al. This uses a Pearson's correlation above and below the thresholds to iteratively find where the correlation between the two images is 0 and sets the thresholds there. It is pretty robust and importantly is reproducible and non subjective.
 

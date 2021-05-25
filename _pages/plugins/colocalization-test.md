@@ -4,6 +4,9 @@ title: Colocalization Test
 categories: [Plugins,Colocalization,Color processing]
 ---
 
+{% include warning/deprecated
+  old="the Colocalization Test plugin"
+  new="[Coloc 2](/plugins/coloc-2)" %}
 
 {% capture maintainer%}
 {% include person id='chalkie666' %}
@@ -20,9 +23,7 @@ Performs one of a set of three statistical tests, comparing the Persons correlat
 
 ## Documentation
 
-<span style="color: red">Note: this plugin is now deprecated. You should use the newer [Coloc 2](/plugins/coloc-2) plugin instead.</span>
-
-See the great documentation for this plugin at [Colocalization Analysis\#Colocalization\_Test](/techniques/colocalization-analysis#colocalization-test).
+See the great documentation for this plugin at [Colocalization Analysis#Colocalization_Test](/techniques/colocalization-analysis#colocalization-test).
 
 This tells you if the colocalization that you measure with other plugins, such as [Colocalization Threshold](/plugins/colocalization-threshold) is better than random chance. For a busy image with lots of signal in both chanels and very little area with no signal, there will be lots of random overlap, and this is easy to confuse with real colocalization with some biological meaning. It gives a P vaule (not a p-value) where 1 means all the randomised images had worse correlation than the real images, as you would expect for a real colocalised signel. A P value less than 0.95 is lower than the usual 95% statistical confidence limit.
 
