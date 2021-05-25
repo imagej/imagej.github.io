@@ -4,7 +4,7 @@ title: Minimum Cost Z surface Projection
 categories: [Plugins,Projection]
 ---
 
-{% include info-box software='ImageJ/Fiji' name='Min Cost Z Surface' author='[Benoit Lombardot](/users/Benoit)' maintainer='[Benoit Lombardot](/users/Benoit)' released='03 August 2016' filename='![](/media/mincostzsurface--1.1.0.jar.zip)' source=' [MPI-CBG git](https://git.mpi-cbg.de/bioimage-informatics/MinCostSurface_Projection)' category='[Plugins](/plugin-index), [Projection](/plugin-index#projection)' %}
+{% include info-box software='ImageJ/Fiji' name='Min Cost Z Surface' author='[Benoit Lombardot](/users/Benoit)' maintainer='[Benoit Lombardot](/users/Benoit)' released='03 August 2016' filename='![](/media/mincostzsurface-1.1.0.jar.zip)' source=' [MPI-CBG git](https://git.mpi-cbg.de/bioimage-informatics/MinCostSurface_Projection)' category='[Plugins](/plugin-index), [Projection](/plugin-index#projection)' %}
 
 ## Introduction
 

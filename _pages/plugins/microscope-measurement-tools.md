@@ -20,11 +20,11 @@ This set of plugins provides a quick way to save distance/length calibrations fo
 
 You can then choose any of your prior measurement calibrations to be applied to an open image (or all open images), as so:
 
-![](/media/microscope-meas-tools---choose-calibration-01.png)
+![](/media/microscope-meas-tools-choose-calibration-01.png)
 
 The "Draw Measurement" plugin then allows you to draw a line with the calibrated measurement length, as so:
 
-![](/media/microscope-meas-tools---draw-meas-line.png)
+![](/media/microscope-meas-tools-draw-meas-line.png)
 
 Three files are included:
 
