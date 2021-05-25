@@ -26,7 +26,7 @@ The first 2 hours of a *C.elegans* embryo development, followed in 3D over time 
 
 A detail of the corresponding unannotated lineage visualized in TrackScheme. The full lineage of this one hour of imaging is [there](_Image_TrackMate_Celegans_lineage.pdf).
 
-![](/media/trackmate-split-merge-gapclosing.gif)
+![](/media/plugins/trackmate/trackmate-split-merge-gapclosing.gif)
 
 TrackMate can be set to detect and deal with gap-closing events, splitting events and merging events.
 
@@ -93,7 +93,7 @@ TrackMate was developed to serve as a tool for Life-Science image analysis commu
 
 The [TrackMate paper](http://www.sciencedirect.com/science/article/pii/S1046202316303346) contains a polished, pdf version of the documentation below. But we host it here:
 
-[TrackMate-manual.pdf](/media/trackmate-manual.pdf) 14 MB
+[TrackMate-manual.pdf](/media/plugins/trackmate/trackmate-manual.pdf) 14 MB
 
 -   TrackMate version history: Please look at the gihub page for TrackMate releases:
 

@@ -23,7 +23,7 @@ We are grateful to Jan Brocher and Masanari Takamiya for comments and bug report
 
 -   The HyperStack viewer and editor has now a configuration panel that has a log window and some tools for manual annotation:
 
-![](/media/trackmate-v2.1.0-trackmatetools.png)
+![](/media/plugins/trackmate/trackmate-v2.1.0-trackmatetools.png)
 
 -   Semi-automatic tracking: Select one (or more) spot, TrackMate will find its most likely successors:
 
