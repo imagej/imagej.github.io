@@ -32,7 +32,13 @@ categories: [Plugins,Visualization,Citable]
 
 ## What is ClearVolume?
 
-{% include testimonial quote='I checked out ClearVolume. Extremely well-made plugin! Does exactly what I want :)' person='komodovaran' source='http://forum.imagej.net/t/1907/3' width='50%' float='right' %}ClearVolume is a volume renderer developed at MPI-CBG. Its sources are open and can be cloned [from GitHub](https://github.com/ClearVolume). If you use ClearVolume in your research, please cite it—see reference below.
+{% include testimonial person='komodovaran'
+  quote='I checked out ClearVolume. Extremely well-made plugin! Does exactly what I want :)'
+  source='http://forum.imagej.net/t/1907/3' %}
+
+ClearVolume is a volume renderer developed at MPI-CBG. Its sources are open and
+can be cloned [from GitHub](https://github.com/ClearVolume). If you use
+ClearVolume in your research, please cite it—see reference below.
 
 ## Screenshots
 

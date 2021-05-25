@@ -6,11 +6,11 @@ artifact: net.imagej:imagej-common
 
 The ImageJ Common library contains ImageJ's core image data model, based on the [ImgLib2](/libs/imglib2) library for multidimensional image data processing, as well as the corresponding core image display logic for user interfaces, based on the [SciJava Common](/libs/scijava-common) application framework.
 
+{% include testimonial person='hadim' description='Python developer'
+  quote='I have to admit that IJ2 API and Java 8 make the process very smooth. Much better than few years ago :-0'
+  source='https://gitter.im/imagej/imagej?at=571e431b7469496137b9059f' %}
 
-{% capture person%}
-{% include person id='hadim' %}, Python developer
-{% endcapture %}
-{% include testimonial quote='I Have to a admit that IJ2 API and Java 8 make the process very smooth Much better than few years ago :-0' person=person gravatar='bfb4b22436c24b136c722ce797d42cbe' source='https://gitter.im/imagej/imagej?at=571e431b7469496137b9059f' width='400px' float='right' %} Using [ImgLib2](/libs/imglib2) offers several benefits:
+Using [ImgLib2](/libs/imglib2) offers several benefits:
 
 -   Support for many different data types (different combinations of bit depths, signedness, and integer/real representations).
 -   Support for large datasets (many planes/cubes/etc., large planes/cubes/etc.).

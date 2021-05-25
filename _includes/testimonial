@@ -1,45 +1,38 @@
-{%- comment -%} TODO cleanup {%- endcomment -%}
-{% capture info_content %}
-<div info="content" markdown="1">
-"{{include.quote}}"
-</div>
-{% endcapture %}
+{%- assign quote = include.quote -%}
+{%- assign person = include.person -%}
+{%- assign description = include.description -%}
+{%- assign source = include.source -%}
 
-{% if include.float %}
-{% assign float = include.float %}
-{% endif %}
+{%- assign image-src = "" %}
+{%- assign person-url = "/users/" | append: include.person -%}
+{%- assign people = site.pages | where: "url", person-url -%}
+{% if people.size > 0 -%}
+  {%- assign person-name = people[0].name -%}
+  {%- if people[0].icon or people[0].gravatar -%}
+    {%- capture image-src -%}
+      {%- if people[0].gravatar -%}
+        https://gravatar.com/avatar/{{people[0].gravatar}}
+      {%- elsif people[0].icon -%}
+        {{people[0].icon}}
+      {%- endif -%}
+    {%- endcapture -%}
+  {%- endif -%}
+{%- else -%}
+  {%- assign person-name = person -%}
+{%- endif -%}
 
-{% if include.width %}
-{% assign width = include.width %}
-{% endif %}
+{%- capture content -%}
+{%- if image-src != "" -%}
+  <img src="{{image-src}}" style="float: left; margin-right: 0.5em" width=64 height=64>
+{%- endif -%}
+<span markdown=1>{{quote}}</span>
+{%- if person-name or description or source -%} <br>&mdash; {%- endif -%}
+{%- if person-name -%} <span markdown=1>{{person-name}} {%- if description -%}, {% endif -%} {%- endif -%}
+{%- if description -%} {{description}} {%- endif -%}
+{%- if source %} <span style="font-size: smaller">\[<a href="{{source}}">Source</a>\]</span> {%- endif -%}
+{%- endcapture -%}
 
-{% if include.source %}
-{% assign source-url = include.source %}
-{% endif %}
-
-{% if include.person %}
-{% assign person = include.person %}
-{% endif %}
-
-<div class="testimonial">
-    <table class="table-OS-info">
-        <tbody>
-            <tr>
-                <td style="padding-right: 1em; vertical-align: middle; padding-top: 1em">
-                    <p>
-                        <img src="http://gravatar.com/avatar/{{include.gravatar}}" width=64 height=64>
-                    </p>
-                </td>
-                <td>
-                    <p>
-                    {{info_content}}
-                    </p>
-                    &#8212;{{person}}[<a href="{{source-url}}">Source</a>]
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+{% include aside content=content %}
 
 {%- comment -%}
 # vi:syntax=liquid
