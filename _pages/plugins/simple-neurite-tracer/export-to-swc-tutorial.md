@@ -21,11 +21,11 @@ To export each connected set of paths as a separate SWC file, you can now select
 
 Often, you will just want to export one set of connected paths. As an example of this, suppose we have a partially traced image like this:
 
-{% include img align="center" src="simple-neurite-tracer-export-to-swc-tutorial-1" width="750" %}
+{% include img align="center" src="export-to-swc-tutorial-1" width="750" %}
 
 Those are actually three disconnected groups of paths, as you can see from the path list:
 
-{% include img align="center" src="/media/simpleneuritetracerexporttoswctutorial-2.png" %}
+{% include img align="center" src="export-to-swc-tutorial-2" %}
 
 In other words, there is one large group of neurons which are all connected, with "Path (0)" as the primary path, there is a single disconnected path ("Path (15)" and group of 6 paths with "Path (16)" as the primary path.
 
@@ -33,7 +33,7 @@ In other words, there is one large group of neurons which are all connected, wit
 
 The SWC file format describes a single neuron's morphology (so every point is connected to another one), whereas a .traces file in Simple Neurite Tracer can describe multiple disconnected structures. This means that in this plugin you can only export a complete connected set of paths to SWC. So, in this example, you could only export three different SWC files, since there are three connected groups of paths. To do that, select all of the paths in that structure (using {% include key key='Shift' %} or {% include key key='Control' %} when selecting items in the list) - that should look like this:
 
-{% include img align="center" src="simple-neurite-tracer-export-to-swc-tutorial-3" %}
+{% include img align="center" src="export-to-swc-tutorial-3" %}
 
 ... and then click the "Export to SWC" button in the bottom right of that window. If you haven't selected a completely connected set of paths, then you will get an error at this point - otherwise you will be prompted to save the SWC file.
 
