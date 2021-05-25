@@ -50,6 +50,23 @@
             <li><a href="/plugin-index">Plugin Index</a></li>
           {% include menu/section-end %} <!-- Plugins -->
 
+          {% include menu/section title="Imaging" link="/imaging" %}
+            <li><a href="/imaging/principles">Principles</a></li>
+            <li><a href="/imaging/annotating-images">Annotating Images</a></li>
+            <li><a href="/imaging/colocalization-analysis">Colocalization</a></li>
+            <li><a href="/imaging/color-image-processing">Color Image Processing</a></li>
+            <li><a href="/imaging/deconvolution">Deconvolution</a></li>
+            <li><a href="/imaging/image-intensity-processing">Image Intensity Processing</a></li>
+            <li><a href="/imaging/particle-analysis">Particle Analysis</a></li>
+            <li><a href="/imaging/registration">Registration</a></li>
+            <li><a href="/imaging/segmentation">Segmentation</a></li>
+            <li><a href="/imaging/stack-slice-manipulations">Stack-slice Manipulations</a></li>
+            <li><a href="/imaging/t-functions">T-functions</a></li>
+            <li><a href="/imaging/tracking">Tracking</a></li>
+            <li><a href="/imaging/visualization">Visualization</a></li>
+            <li><a href="/imaging/z-functions">Z-functions</a></li>
+          {% include menu/section-end %} <!-- Imaging -->
+
           {% include menu/section title="Learn" link="/learn" %}
             <li><a href="/learn/getting-started">Getting Started</a></li>
             <li><a href="/learn/user-guides">User Guides</a></li>
@@ -78,27 +95,6 @@
               <li><a href="/formats/lurawave">Opera Flex</a></li>
               <li><a href="/formats/fib-sem">FIB-SEM</a></li>
             {% include menu/section-end %} <!-- Learn/File Formats -->
-
-            {% include menu/section title="Cookbook" link="/cookbook" %}
-              <li><a href="/cookbook/annotating-images">Annotating Images</a></li>
-              <li><a href="/cookbook/color-image-processing">Color Image Processing</a></li>
-              <li><a href="/cookbook/deconvolution">Deconvolution</a></li>
-              <li><a href="/cookbook/image-intensity-processing">Image Intensity Processing</a></li>
-              <li><a href="/cookbook/particle-analysis">Particle Analysis</a></li>
-              <li><a href="/cookbook/saving-and-exporting">Saving and Exporting</a></li>
-              <li><a href="/cookbook/stack-slice-manipulations">Stack-slice Manipulations</a></li>
-              <li><a href="/cookbook/t-functions">T-functions</a></li>
-              <li><a href="/cookbook/z-functions">Z-functions</a></li>
-            {% include menu/section-end %} <!-- Learn/Cookbook -->
-
-            {% include menu/section title="Techniques" link="/techniques" %}
-              <li><a href="/techniques/colocalization-analysis">Colocalization</a></li>
-              <li><a href="/techniques/deconvolution">Deconvolution</a></li>
-              <li><a href="/techniques/registration">Registration</a></li>
-              <li><a href="/techniques/segmentation">Segmentation</a></li>
-              <li><a href="/techniques/tracking">Tracking</a></li>
-              <li><a href="/techniques/visualization">Visualization</a></li>
-            {% include menu/section-end %} <!-- Learn/Techniques -->
           {% include menu/section-end %} <!-- Learn -->
 
           {% include menu/section title="Scripting" link="/scripting" %}

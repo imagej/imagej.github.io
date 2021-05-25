@@ -233,7 +233,7 @@
 2019-06_-_DAIS_learnathon :: events/Learnathon_2019
 2D_Histogram :: plugins/2d-histogram
 2D_Stitching :: plugins/stitching-2d-3d
-3D :: techniques/visualization#visualization-of-volumetric-image-data
+3D :: imaging/visualization#visualization-of-volumetric-image-data
 3D_Binary_Filters :: plugins/3d-binary-filters
 3D_Blob_Segmentation :: plugins/3d-blob-segmentation
 3D_Filters :: plugins/3d-imagej-suite/filters
@@ -268,7 +268,7 @@
 3Dcyclorama :: plugins/3d-cyclorama
 3Dscript :: plugins/3dscript
 3View_import_list :: plugins/3view-import-list
-3d_rendering :: techniques/3d-rendering
+3d_rendering :: imaging/3d-rendering
 404 :: <UNCHANGED>
 A_Tutorial_for_using_OpenCL_in_ImageJ :: tutorials/opencl-in-imagej
 About :: about
@@ -314,7 +314,7 @@ Android :: platforms/android
 Animated_Gif_... :: formats/animated-gif
 Anisotropic_Diffusion_2D :: plugins/anisotropic-diffusion-2d
 Anisotropy :: plugins/bonej#anisotropy
-Annotating_Images :: cookbook/annotating-images
+Annotating_Images :: imaging/annotating-images
 AnomalousDiffusionFilters :: plugins/anomalous-diffusion-filters
 Anomalous_Diffusion_Filters :: plugins/anomalous-diffusion-filters
 Apache :: licensing/apache
@@ -471,7 +471,7 @@ Calculator_Plus :: plugins/calculator-plus
 Calibrate_SCANCO :: plugins/bonej#calibrate-scanco-wip
 Category:* :: TODO
 Category:Status :: TODO
-Category:Techniques :: techniques
+Category:Techniques :: imaging
 Category:Tutorials :: tutorials
 CellProfiler :: software/cellprofiler
 Cell_Counter :: plugins/cell-counter
@@ -481,7 +481,7 @@ Changes_from_ImgLib1_to_ImgLib2 :: libs/imglib2/changes-from-imglib1
 Chat :: about/chat
 Check_Voxel_Depth :: plugins/bonej#check-voxel-depth-wip
 Chess :: scripting/chess
-Chromatic_shift_origins_measurement_and_correction :: techniques/chromatic-shift
+Chromatic_shift_origins_measurement_and_correction :: imaging/chromatic-shift
 Citations :: about/citing
 Cite :: software/fiji/publications
 Citing :: about/citing
@@ -502,11 +502,11 @@ Coding_Style :: develop/coding-style
 Coding_style :: develop/coding-style
 Coloc2 :: plugins/coloc-2
 Coloc_2 :: plugins/coloc-2
-Colocalisation_Analysis :: techniques/colocalization-analysis
-Colocalization :: techniques/colocalization-analysis
-ColocalizationAnalysis :: techniques/colocalization-analysis
-Colocalization_-_hardware_setup_and_image_acquisition :: techniques/colocalization-image-acquisition
-Colocalization_Analysis :: techniques/colocalization-analysis
+Colocalisation_Analysis :: imaging/colocalization-analysis
+Colocalization :: imaging/colocalization-analysis
+ColocalizationAnalysis :: imaging/colocalization-analysis
+Colocalization_-_hardware_setup_and_image_acquisition :: imaging/colocalization-acquisition
+Colocalization_Analysis :: imaging/colocalization-analysis
 Colocalization_Image_Creator :: plugins/colocalization-image-creator
 Colocalization_Object_Counter :: plugins/colocalization-object-counter
 Colocalization_Test :: plugins/colocalization-test
@@ -515,7 +515,7 @@ Colocalization_by_Cross_Correlation :: plugins/colocalization-by-cross-correlati
 Colocalize :: plugins/colocalize
 Color_Deconvolution :: plugins/colour-deconvolution
 Color_Histogram :: plugins/color-histogram
-Color_Image_Processing :: cookbook/color-image-processing
+Color_Image_Processing :: imaging/color-image-processing
 Color_Inspector_3D :: plugins/color-inspector-3d
 Colorizer_Overlay :: plugins/colorizer-overlay
 Colour_Deconvolution :: plugins/colour-deconvolution
@@ -561,7 +561,7 @@ Contour_Lines :: plugins/contour-lines
 Contribute :: about/contributing
 Contributing :: about/contributing
 Contributors :: about/contributors
-Cookbook :: cookbook
+Cookbook :: imaging
 Copy_Pixel_Size :: plugins/copy-pixel-size
 Correct_3D_Drift :: plugins/correct-3d-drift
 Correct_3D_drift :: plugins/correct-3d-drift
@@ -594,8 +594,8 @@ Debug :: develop/debugging
 Debugging :: develop/debugging
 Debugging_Exercises :: develop/debugging-exercises
 Debugging_intro :: develop/debugging
-Deconvolution :: cookbook/deconvolution
-Deconvolution_tips :: techniques/deconvolution
+Deconvolution :: imaging/deconvolution
+Deconvolution_tips :: imaging/deconvolution#tips-and-how-tos
 DeepClas4Bio :: plugins/deepclas4bio
 Deep_Zoom :: plugins/deep-zoom
 DeformationTracker :: plugins/deformationtracker
@@ -609,8 +609,8 @@ Description_of_ImageJ's_plugin_architecture :: develop/plugin-architecture
 Description_of_ImageJs_plugin_architecture :: develop/plugin-architecture
 Descriptor-based_registration_(2d/3d) :: plugins/descriptor-based-registration-2d-3d
 Descriptor_based_registration :: plugins/descriptor-based-registration
-DetectInformationLoss :: techniques/detect-information-loss
-Detect_Information_Loss :: techniques/detect-information-loss
+DetectInformationLoss :: imaging/detect-information-loss
+Detect_Information_Loss :: imaging/detect-information-loss
 Detrendr :: plugins/detrendr
 Develop :: develop
 Developers_HowTo :: develop/using-weka
@@ -904,7 +904,7 @@ IJ_Robot :: plugins/ij-robot
 IMBalENce :: plugins/imbalence
 IMG :: users/LMCF-IMG
 IO :: formats
-IP_Principles :: techniques/principles
+IP_Principles :: imaging/principles
 IRC :: about/chat#irc
 ISBI_2012 :: events/ISBI_2012
 ITK :: software/itk
@@ -951,11 +951,11 @@ ImageScience :: plugins/imagescience
 ImageScience_License :: plugins/imagescience
 ImageStitching :: plugins/image-stitching
 Image_5D :: plugins/image5d
-Image_Acquisition_Principles :: techniques/principles
+Image_Acquisition_Principles :: imaging/principles
 Image_Annotation :: plugins/image-annotation
 Image_Expression_Parser :: plugins/image-expression-parser
-Image_Intensity_Processing :: cookbook/image-intensity-processing
-Image_Processing_Principles :: techniques/principles
+Image_Intensity_Processing :: imaging/image-intensity-processing
+Image_Processing_Principles :: imaging/principles
 Image_Processing_School_Pilsen_2009 :: events/Image_Processing_School_Pilsen_2009
 Image_Processing_School_Pilsen_2009_-_Segmentation :: events/Image_Processing_School_Pilsen_2009_-_Segmentation
 Image_Stabilizer :: plugins/image-stabilizer
@@ -1254,8 +1254,8 @@ NoiSee :: plugins/noisee
 NoiseGenerator :: plugins/noise-generator
 Noise_Generator :: plugins/noise-generator
 Non_Local_Means_Denoise :: plugins/non-local-means-denoise
-NucleiWatershedSegmentation :: techniques/watershed
-Nuclei_Watershed_Separation :: techniques/watershed
+NucleiWatershedSegmentation :: imaging/watershed
+Nuclei_Watershed_Separation :: imaging/watershed
 Nucleus_Counter :: plugins/nucleus-counter
 OME :: software/omero
 OMERO :: software/omero
@@ -1292,7 +1292,7 @@ Panorama :: plugins/panorama
 Parallel_Iterative_Deconvolution :: plugins/parallel-iterative-deconvolution
 Parallel_Spectral_Deconvolution :: plugins/parallel-spectral-deconvolution
 ParticleSizer :: plugins/particlesizer
-Particle_Analysis :: cookbook/particle-analysis
+Particle_Analysis :: imaging/particle-analysis
 Particle_Tracker :: plugins/particle-tracker
 Pendent_Drop :: plugins/pendent-drop
 PerfusionMRI :: plugins/perfusionmri
@@ -1307,7 +1307,7 @@ Pi :: platforms/pi
 PillarTracker :: plugins/pillartracker
 PillarTracker_GUI :: plugins/pillartracker-gui
 Pinpoint_regressions_with_Git :: develop/git/pinpoint-regressions
-Pitfalls :: techniques/principles
+Pitfalls :: imaging/principles
 PixFRET :: plugins/pixfret
 Plasma_Cloud :: scripting/examples/plasma-cloud
 PlugIn_Design_Guidelines :: develop/plugin-design-guidelines
@@ -1321,7 +1321,7 @@ Prepare_Cover_Maker_Database :: plugins/cover-maker#prepare-covermaker-database
 Preprocessing :: plugins/mtrack/preprocessing
 Preprocessing(MTrack) :: plugins/mtrack/preprocessing
 Presentations :: learn/presentations
-Principles :: techniques/principles
+Principles :: imaging/principles
 Profiling :: develop/profiling
 Profiling_Java_Code :: develop/profiling
 Project :: develop/architecture#definitions
@@ -1378,7 +1378,7 @@ Refresh_Jython_Scripts :: scripting/jython
 Region_Competition :: plugins/region-competition
 Register_Virtual_Stack_Slices :: plugins/register-virtual-stack-slices
 Register_virtual_stack_slices :: plugins/register-virtual-stack-slices
-Registration :: techniques/registration
+Registration :: imaging/registration
 Release :: develop/releasing
 Releases :: develop/releasing
 Remove_Slope :: plugins/topoj#remove-slope
@@ -1448,7 +1448,7 @@ Samples :: plugins/samples
 Sandbox:Test :: <DELETED> (MediaWiki-specific test page)
 Save_Particles_(.tif_file_-_fast) :: plugins/quickpalm
 Save_as_animated_gif :: formats/animated-gif
-Saving_and_Exporting :: cookbook/saving-and-exporting
+Saving_and_Exporting :: formats#saving-and-exporting
 Scala :: scripting/scala
 Scala_Scripting :: scripting/scala
 SciJava :: TODO
@@ -1483,7 +1483,7 @@ Scripting_toolbox :: scripting/toolbox
 Scripts :: scripting
 Search :: /
 Segment_blob_in_3D_Viewer :: plugins/segment-blob-in-3d-viewer
-Segmentation :: techniques/segmentation
+Segmentation :: imaging/segmentation
 Segmentation_Editor :: plugins/segmentation-editor
 Segmentation_evaluation_after_border_thinning_-_Script :: scripting/examples/segmentation-evaluation-after-border-thinning
 Segmentation_evaluation_metrics_-_Script :: scripting/examples/segmentation-evaluation-metrics
@@ -1558,8 +1558,8 @@ Sort_Particles_by_frame_(in_a_.tif_particle_table_file) :: plugins/quickpalm
 Source :: develop/source
 Source_Code :: develop/source
 Source_code :: develop/source
-SpatialCalibration :: techniques/spatial-calibration
-Spatial_Calibration :: techniques/spatial-calibration
+SpatialCalibration :: imaging/spatial-calibration
+Spatial_Calibration :: imaging/spatial-calibration
 Spectral_Unmixing :: plugins/lumos-spectral-unmixing
 Spheres_and_Tubes_in_3D :: plugins/spheres-and-tubes-in-3d
 Spirals :: plugins/spirals
@@ -1572,7 +1572,7 @@ Spot_Intensity_Analysis :: plugins/spot-intensity-analysis
 Spots_colocalization_(ComDet) :: plugins/spots-colocalization-comdet
 Sprout_Morphology :: plugins/sprout-morphology
 Squassh :: plugins/squassh
-Stack-slice_Manipulations :: cookbook/stack-slice-manipulations
+Stack-slice_Manipulations :: imaging/stack-slice-manipulations
 StackObjectCombiner :: plugins/stack-object-combiner
 StackReg :: plugins/stackreg
 Stack_Colorizer :: formats/bio-formats
@@ -1620,7 +1620,7 @@ Surface_fraction :: plugins/bonej#surface-fraction
 Surfaceness :: plugins/surfaceness
 Sync_Win :: plugins/sync-windows
 Sync_Windows :: plugins/sync-windows
-T-functions :: cookbook/t-functions
+T-functions :: imaging/t-functions
 TAPAS :: plugins/tapas
 TEM_suite :: plugins/tem-suite
 TIA_.ser_folder_export :: formats/tia-ser-folder-export
@@ -1629,7 +1629,7 @@ TUNEL_Cell_Counter :: plugins/retina-analysis-toolkit
 TWS :: plugins/tws
 TaskList :: TODO
 Team :: about/governance#scijava-team-roles
-Techniques :: techniques
+Techniques :: imaging
 Temporal-Color_Code :: plugins/temporal-color-code
 Temporal_Median :: plugins/temporal-median
 TensorFlow :: software/tensorflow
@@ -1644,8 +1644,8 @@ The_Hue_Game :: scripting/examples/hue-game
 Thickness :: plugins/bonej#thickness
 Thread_Killer :: plugins/thread-killer
 ThreeDViewer :: plugins/sciview
-Threshold :: techniques/thresholding
-Thresholding :: techniques/thresholding
+Threshold :: imaging/thresholding
+Thresholding :: imaging/thresholding
 Time_Lapse :: plugins/time-lapse
 Time_Stamper :: plugins/time-stamper
 Timeline :: about#history
@@ -1670,7 +1670,7 @@ TrackMate_algorithms :: plugins/trackmate/algorithms
 TrackMate_version_history :: plugins/trackmate/version-history
 TrackScheme :: plugins/trackmate/trackscheme
 Track_analysis_using_TrackMate :: plugins/trackmate
-Tracking :: techniques/tracking
+Tracking :: imaging/tracking
 Tracks :: <DELETED> (empty)
 Trainable_Segmentation :: plugins/tws
 Trainable_Segmentation_Plugin :: plugins/trainable-segmentation
@@ -1782,7 +1782,7 @@ User:Cellkai :: users/CellKai
 User:Chaubold :: users/chaubold
 User:ChristophH :: users/christoph-hentschel
 User:ClaudiaCarabanaGarcia :: users/claudiacarabana
-User:Cookbook :: cookbook
+User:Cookbook :: imaging
 User:Cordelieres :: users/fab2506
 User:CrossSectionalAnalyzer :: plugins/cross-sectional-analyzer
 User:Ctrueden :: users/ctrueden
@@ -2037,11 +2037,11 @@ VirtualCell :: software/virtual-cell
 Virtual_Cell :: software/virtual-cell
 VisBio :: software/visbio
 VisBio_Fiji_plugin :: plugins/visbio
-Visualization :: techniques/visualization
+Visualization :: imaging/visualization
 Void_Whizzard :: plugins/void-whizzard
 Volume_Calculator :: plugins/volume-calculator
 Volume_Viewer :: plugins/volume-viewer
-Voxelization :: techniques/voxelization
+Voxelization :: imaging/voxelization
 WCIF_ImageJ :: software/mbf-imagej
 Watershed_Algorithm_(ImageJ_plugin) :: plugins/watershed-algorithm
 Watershed_followed_by_MSER :: plugins/mtrack/watershed-mser
@@ -2071,6 +2071,6 @@ Xlib :: plugins/xlib
 Xvfb :: learn/headless#xvfb
 YouTube :: software/fiji/youtube-channel
 YouTube_Channel :: software/fiji/youtube-channel
-Z-functions :: cookbook/z-functions
+Z-functions :: imaging/z-functions
 ZFBONE :: plugins/zfbone
 ZedMate :: plugins/zedmate

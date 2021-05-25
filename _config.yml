@@ -52,12 +52,6 @@ defaults:
       icon: https://upload.wikimedia.org/wikipedia/commons/1/18/About_icon_%28The_Noun_Project%29.svg
   -
     scope:
-      path: "_pages/cookbook"
-      type: pages
-    values:
-      icon: https://upload.wikimedia.org/wikipedia/commons/6/6e/Book_%2821025%29_-_The_Noun_Project.svg
-  -
-    scope:
       path: "_pages/develop"
       type: pages
     values:
@@ -86,6 +80,12 @@ defaults:
       type: pages
     values:
       icon: https://upload.wikimedia.org/wikipedia/commons/9/92/Torchlight_help_yellow.png
+  -
+    scope:
+      path: "_pages/imaging"
+      type: pages
+    values:
+      icon: https://upload.wikimedia.org/wikipedia/commons/d/de/Laboratory_-_The_Noun_Project.svg
   -
     scope:
       path: "_pages/learn"
@@ -175,12 +175,6 @@ defaults:
     values:
       icon: /media/icons/imagej.png
       project: ImageJ2
-  -
-    scope:
-      path: "_pages/techniques"
-      type: pages
-    values:
-      icon: https://upload.wikimedia.org/wikipedia/commons/d/de/Laboratory_-_The_Noun_Project.svg
   -
     scope:
       path: "_pages/tutorials"

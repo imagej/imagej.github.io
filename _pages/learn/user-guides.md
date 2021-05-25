@@ -12,9 +12,10 @@ thorough description of ImageJ's built-in functions.
 </div>
 
 <div style="text-align:center;" markdown="1">
-<a href="/cookbook"><img src="/media/books/fiji-cookbook.png" width="247" height="350"></a>\\
-The [Fiji Cookbook](/cookbook) provides an analysis-oriented
-introduction and user guide to ImageJ.
+<a href="/imaging"><img src="/media/books/fiji-cookbook.png" width="247" height="350"></a>\\
+The [Imaging Tutorials](/imaging) on this wiki offer an introduction
+to scientific imaging, including both image acquisition and image analysis,
+with a focus on ImageJ.
 </div>
 
 <div style="text-align:center;" markdown="1">
