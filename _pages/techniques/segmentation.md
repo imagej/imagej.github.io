@@ -5,7 +5,7 @@ section: Learn:Techniques
 categories: [Tutorials,Segmentation]
 ---
 
-{% include biginfo-box content='See [Segmentation](/plugin-index#segmentation) for pages about image segmentation.' %} 
+{% include notice icon='info' size='large' content='See [Segmentation](/plugin-index#segmentation) for pages about image segmentation.' %} 
 
 {% include notice icon="tip" content='See [this helpful workshop on Image Segmentation](/media/arganda-carreras-segmentation-bioimage-course-mdc-berlin-2016.pdf) for another great overview of Segmentation!' %}
 

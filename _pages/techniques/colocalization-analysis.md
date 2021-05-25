@@ -6,7 +6,7 @@ categories: [Cookbook,Tutorials,Colocalization,Color processing]
 description: Learn about the numerous methods of colocalization analysis
 ---
 
-{% include biginfo-box content='See [Colocalization](/plugin-index#colocalization) for pages about colocalization.' %}
+{% include notice icon='info' size='large' content='See [Colocalization](/plugin-index#colocalization) for pages about colocalization.' %}
 
 ## What is colocalization?
 

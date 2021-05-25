@@ -41,18 +41,6 @@ figure.figure {
   border-bottom: 1px dotted #ccc;
 }
 
-/* biginfo-box */
-
-table.biginfo {
-  margin: 0 10%;
-  border-collapse: collapse;
-  background: #e6e6e6;
-  border: 1px solid #aaa;
-  border-left: 10px solid #1e90ff !important;
-  width: 80%;
-  float: center;
-}
-
 /* code-example */
 
 .code-example {

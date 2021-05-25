@@ -5,7 +5,7 @@ section: Learn:Techniques
 categories: [development]
 ---
 
-{% include biginfo-box content='See [Visualization](/plugin-index#visualization) for pages about scientific visualization.' %} {% include wikipedia title='Scientific visualization' text='Scientific visualization'%} is a set of techniques for graphically illustrating scientific data, enabling scientists to better understand, illustrate, and glean insight from their data.
+{% include notice icon='info' size='large' content='See [Visualization](/plugin-index#visualization) for pages about scientific visualization.' %} {% include wikipedia title='Scientific visualization' text='Scientific visualization'%} is a set of techniques for graphically illustrating scientific data, enabling scientists to better understand, illustrate, and glean insight from their data.
 
 ## Getting Started with Simple Visualization Options in ImageJ
 

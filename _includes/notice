@@ -3,6 +3,7 @@ Adds a stylized notice.
 {%- endcomment -%}
 
 {%- assign content = include.content | markdownify -%}
+{%- assign size = include.size | default: "normal" -%}
 {%- assign icon = include.icon -%}
 {%- assign glyph = include.glyph -%}
 {%- assign glyph-classes = include.class | default: "" -%}
@@ -50,7 +51,7 @@ Adds a stylized notice.
   {%- endcapture -%}
 {%- endunless -%}
 
-<div class="notice" style="background: {{background-color}}; border-left: 10px solid {{highlight-color}}">
+<div class="notice" style="font-size: {{size}}; background: {{background-color}}; border-left: 10px solid {{highlight-color}}">
   {%- if glyph != "" or glyph-classes != "" -%}
     <div class="notice-icon"><span class="{{glyph-classes}}">{{glyph}}</span></div>
   {%- elsif icon and icon != "" -%}

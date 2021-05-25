@@ -202,6 +202,5 @@ The following tables list all of this site's general-purpose includes:
 | [thumbnail](TODO)                            | Merge with img include             |
 | [thumbnail-link](TODO)                       | Merge with img include             |
 | [info-box](notices#info-box)                 | Delete after migrating to statbox  |
-| [biginfo-box](notices#big-info-box)          | Merge with notice                  |
 | [clear](TODO)                                | Delete after purging all floats    |
 | [project](TODO)                              | Delete after improving statbox     |

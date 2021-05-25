@@ -4,7 +4,7 @@ title: Ridge Detection
 ---
 
 {% include warning/unmaintained %}
- {% include biginfo-box content='As this plugin is no longer maintained... you can check out [ImageJ Ops](/libs/imagej-ops) for Ridge Detection algorithms.' %}
+ {% include notice icon='info' size='large' content='As this plugin is no longer maintained... you can check out [ImageJ Ops](/libs/imagej-ops) for Ridge Detection algorithms.' %}
 
 
 {% capture author%}

@@ -54,6 +54,13 @@ What do these cities have in common?
 {% include notice background-color="chartreuse" highlight-color="brown"
   content="Green background with brown stripe? How exciting!" %}
 
+## Custom font size
+
+{% highlight liquid %}{% raw %}{% include notice size="2em"
+  content="I'm huge, and therefore more important!" %}{% endraw %}{% endhighlight %}
+{% include notice size="2em"
+  content="I'm huge, and therefore more important!" %}
+
 ## Icons
 
 You can specify any icon from the
@@ -64,9 +71,9 @@ by name, sans file extension.
 ### Informational
 
 {% highlight liquid %}{% raw %}{% include notice icon="info"
-  content="This is a very important sentence." %}{% endraw %}{% endhighlight %}
+  content="Take careful note of this sentence." %}{% endraw %}{% endhighlight %}
 {% include notice icon="info"
-  content="This is a very important sentence." %}
+  content="Take careful note of this sentence." %}
 
 ### Warning
 

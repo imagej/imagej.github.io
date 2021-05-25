@@ -8,7 +8,7 @@ ImageJ has been extended with thousands of {% include wikipedia title='Plug-in (
 
 ## Available plugins
 
-{% include biginfo-box content='You can browse the [list of available plugins](/plugin-index).' %}
+{% include notice icon='info' size='large' content='You can browse the [list of available plugins](/plugin-index).' %}
 
 ## Tiers of plugins
 
