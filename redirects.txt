@@ -438,8 +438,8 @@ BoneJ_Usage_Legacy :: plugins/bonej#usage-reporting
 BoneJ_Usage_Modern :: plugins/bonej#usage-reporting
 BoneJ_experimental :: plugins/bonej
 Brightness_and_Contrast :: TODO
-Bug_reporting_best_practices :: help/bug-reporting-best-practices
-Bugs :: help/report-a-bug
+Bug_reporting_best_practices :: help/bugs#bug-reporting-best-practices
+Bugs :: help/bugs
 Build_ImageJ2_Plugin_With_JavaFX :: TODO
 Building_a_POM :: develop/building-a-pom
 Building_a_pom :: develop/building-a-pom
@@ -478,7 +478,7 @@ Cell_Counter :: plugins/cell-counter
 Cell_detector :: plugins/cell-detector
 Celsius_to_fahrenheit :: plugins/celsius-to-fahrenheit
 Changes_from_ImgLib1_to_ImgLib2 :: libs/imglib2/changes-from-imglib1
-Chat :: about/chat
+Chat :: help/chat
 Check_Voxel_Depth :: plugins/bonej#check-voxel-depth-wip
 Chess :: scripting/chess
 Chromatic_shift_origins_measurement_and_correction :: imaging/chromatic-shift
@@ -533,7 +533,7 @@ Command_Line_Debugging :: develop/debugging#command-line-debugging
 Command_Line_Tips_and_Tricks :: TODO
 Command_line :: develop/command-line
 Common :: libs/imagej-common
-Communication :: help/communication
+Communication :: help#ways-to-get-help
 Community :: help
 Comparison_of_Matlab_functions_and_Ops :: libs/imagej-ops/comparison-with-matlab
 Compatibility :: libs/imagej-legacy
@@ -905,7 +905,7 @@ IMBalENce :: plugins/imbalence
 IMG :: users/LMCF-IMG
 IO :: formats
 IP_Principles :: imaging/principles
-IRC :: about/chat#irc
+IRC :: help/chat#irc
 ISBI_2012 :: events/ISBI_2012
 ITK :: software/itk
 I_O :: formats
@@ -1129,7 +1129,7 @@ MATLAB_Scripting.TestedwithImageJ2.0.0-rc-54 :: scripting/matlab
 MBF :: software/mbf-imagej
 MBF_ImageJ :: software/mbf-imagej
 MBF_Plugin_Collection :: software/mbf-imagej
-MCVE :: help/bug-reporting-best-practices
+MCVE :: help/bugs#bug-reporting-best-practices
 MIJ :: plugins/miji
 MIT :: licensing/mit
 MOPS :: plugins/feature-extraction
@@ -1161,10 +1161,10 @@ Macro_Scripting :: scripting
 Macro_recorder :: scripting/macro#the-recorder
 Macros :: scripting/macro
 Macros_Intro :: scripting/macro
-Mailing_List :: about/mailing-lists
-Mailing_Lists :: about/mailing-lists
-Mailing_list :: about/mailing-lists
-Mailing_lists :: about/mailing-lists
+Mailing_List :: help/mailing-lists
+Mailing_Lists :: help/mailing-lists
+Mailing_list :: help/mailing-lists
+Mailing_lists :: help/mailing-lists
 Main_Page :: software/fiji
 Maintainer_page :: TODO (about/maintainers)
 Make_Fiji_Package :: plugins/make-fiji-package
@@ -1386,7 +1386,7 @@ Renjin :: scripting/renjin
 Renjin_Scripting :: scripting/renjin
 Replace_Red_with_Magenta :: plugins/replace-red-with-magenta
 Replace_Red_with_Magenta_(system_clipboard) :: plugins/replace-red-with-magenta#replace-red-with-magenta-system-clipboard
-Report_a_Bug :: help/report-a-bug
+Report_a_Bug :: help/bugs
 Reproducibility :: develop/architecture#reproducible-builds
 Reproducible :: develop/architecture#reproducible-builds
 Reproducible_builds :: develop/architecture#reproducible-builds

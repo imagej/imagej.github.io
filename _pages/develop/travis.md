@@ -26,7 +26,7 @@ Deploying your library to a [Maven](/develop/maven) repository makes it availabl
 
 -   Host your [open-source](/Open_Source) project on [GitHub](/develop/github).
 -   Log in to [Travis CI](https://travis-ci.com/auth) with your corresponding GitHub account and enable your repository.
--   Contact an ImageJ admin in [Gitter](/about/chat#gitter) or [the Image.sc Forum](http://forum.image.sc/) and request that they file a PR which adds Travis support to your repository.
+-   Contact an ImageJ admin in [Gitter](/help/chat#gitter) or [the Image.sc Forum](http://forum.image.sc/) and request that they file a PR which adds Travis support to your repository.
 
 ## Instructions
 

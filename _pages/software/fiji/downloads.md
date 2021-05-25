@@ -29,7 +29,7 @@ able to maintain them properly, so please switch to using the Linux downloads
 above instead.
 
 If you are a Debian packaging expert who would like to address this situation,
-we would love to have your help—please join us in [chat](/about/chat) or on the
+we would love to have your help—please join us in [chat](/help/chat) or on the
 [forum](http://forum.image.sc/c/development)." %}
 
 Fiji is distributed as a

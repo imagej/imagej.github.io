@@ -30,8 +30,6 @@
             <li><a href="/about/funding">Funding</a></li>
             <li><a href="/about/citing">Citing</a></li>
             <li><a href="/about/contributing">Contributing</a></li>
-            <li><a href="/about/chat">Chat</a></li>
-            <li><a href="/about/mailing-lists">Mailing Lists</a></li>
 
             {% include menu/section title="Fiji" link="/software/fiji" %}
               <li><a href="/software/fiji/using">Using Fiji</a></li>
@@ -139,12 +137,14 @@
             {% include menu/section title="Tools" %}
               <li><a href="/develop/github">GitHub</a></li>
               <li><a href="/develop/maven">Maven</a></li>
+
               {% include menu/section title="IDEs" link="/develop/ides" %}
                 <li><a href="/develop/eclipse">Eclipse</a></li>
                 <li><a href="/develop/netbeans">NetBeans</a></li>
                 <li><a href="/develop/intellij">IntelliJ IDEA</a></li>
                 <li><a href="/develop/command-line">Command Line</a></li>
               {% include menu/section-end %}
+
               <li><a href="/develop/travis">Travis</a></li>
               <li><a href="/develop/appveyor">AppVeyor</a></li>
               <li><a href="/develop/dotfiles">Dotfiles</a></li>
@@ -201,10 +201,11 @@
 
           {% include menu/section title="Help" link="/help" %}
             <li><a href="/help/faq">FAQ</a></li>
-            <li><a href="/help/communication">Communication</a></li>
             <li><a href="/help/troubleshooting">Troubleshooting</a></li>
-            <li><a href="/help/bug-reporting-best-practices">How to write bug reports</a></li>
-            <li><a href="/help/report-a-bug">Report an issue</a></li>
+            <li><a href="/help/bugs">Reporting Issues</a></li>
+            <li><a href="/help/mailing-lists">Mailing Lists</a></li>
+            <li><a href="/help/chat">Chat</a></li>
+
             {% include menu/section title="Editing the Wiki" link="/help/editing" %}
               <li><a href="/help/editing/advanced">Advanced editing</a></li>
               <li><a href="/help/editing/citations">Citations</a></li>
@@ -224,6 +225,7 @@
               <li><a href="/help/editing/videos">Videos</a></li>
               <li><a href="/help/editing/whitespace">Whitespace</a></li>
             {% include menu/section-end %} <!-- Help/Editing the Wiki -->
+
             {% include menu/section title="Update Sites" link="/update-sites" %}
               <li><a href="/update-sites/following">Following an update site</a></li>
               <li><a href="/update-sites/setup">Creating an update site</a></li>

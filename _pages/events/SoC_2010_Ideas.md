@@ -310,6 +310,6 @@ This project is about implementing a trainer for such tests, whose result is a m
 
 -   [Fiji's developer mailing list](http://groups.google.com/group/fiji-devel)
 -   [Weka project](http://www.cs.waikato.ac.nz/ml/weka/)
--   [\#fiji-devel channel](/about/chat#irc) on irc.freenode.net
+-   [\#fiji-devel channel](/help/chat#irc) on irc.freenode.net
 -   Other [Project ideas](Project_ideas)
 -   [more links](/software/fiji/links)

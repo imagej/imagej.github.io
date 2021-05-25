@@ -181,4 +181,4 @@ The project would consist of
 
 * [ImageJ's homepage](/)  
 * [Fiji's developer mailing list](http://groups.google.com/group/fiji-devel)  
-* [#fiji-devel channel](/about/chat#irc) on irc.freenode.net
+* [#fiji-devel channel](/help/chat#irc) on irc.freenode.net

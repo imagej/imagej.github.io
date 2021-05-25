@@ -11,7 +11,7 @@ section: Development
 
 The SciJava ecosystem is strongly committed to [open source](Open_source) software development. But this software is not an [open source](Open_source) software *product*—it is an [open source](Open_source) software *project* following an [open source](Open_source) development *process*.
 
-ImageJ is funded by taxpayer money, so the project strives to be as transparent as possible. There are public [source code repositories](/develop/source), public [communication](/help/communication) channels, public [project management](/develop/project-management) resources, and of course, this [community editable website](/help/editing). As you can see, we love [doing it in public](http://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/)!
+ImageJ is funded by taxpayer money, so the project strives to be as transparent as possible. There are public [source code repositories](/develop/source), public [communication](/help#ways-to-get-help) channels, public [project management](/develop/project-management) resources, and of course, this [community editable website](/help/editing). As you can see, we love [doing it in public](http://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/)!
 
 ## Independent learning
 
@@ -19,7 +19,7 @@ ImageJ is funded by taxpayer money, so the project strives to be as transparent 
 
 The ImageJ and SciJava communities intend to foster not only scientific *independent thinking*, but just as importantly, *[independent learning](http://conference.imagej.net/2015/pariksheet-nanda/transcript.pdf)*. We want to not only [teach people how to fish](https://en.wiktionary.org/wiki/give_a_man_a_fish_and_you_feed_him_for_a_day;_teach_a_man_to_fish_and_you_feed_him_for_a_lifetime), but *teach them how to learn*.
 
-As such, responses to questions on [ImageJ public channels](/help/communication) will often begin with "What have you tried?" or "Can you make a minimal, complete, verifiable example?"—see the [Bug reporting best practices](/help/bug-reporting-best-practices) for details. A good rule of thumb for questioners is to "put as much effort into your question as you expect to be put into its reply"—and for responders, to cordially encourage this behavior in questioners. Responses may give detailed macro or script solutions to image analysis questions, but they will also often include details of *how such solutions were produced*, as well as *how they might be improved or tailored to other similar scenarios*.
+As such, responses to questions on [ImageJ public channels](/help#ways-to-get-help) will often begin with "What have you tried?" or "Can you make a minimal, complete, verifiable example?"—see the [Bug reporting best practices](/help/bugs#bug-reporting-best-practices) for details. A good rule of thumb for questioners is to "put as much effort into your question as you expect to be put into its reply"—and for responders, to cordially encourage this behavior in questioners. Responses may give detailed macro or script solutions to image analysis questions, but they will also often include details of *how such solutions were produced*, as well as *how they might be improved or tailored to other similar scenarios*.
 
 We are always looking for more ways to improve the software to meet this goal of encouraging independent learning. Write to the [ImageJ forum](/help) with your ideas!
 

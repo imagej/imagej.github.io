@@ -936,7 +936,7 @@ It is likely that frequent interactions with the dialog prompt(s) (from which th
 <dl>
 <dd markdown="1">
 
-Report it in the [ImageJ Forum](http://forum.imagej.net) or file an [issue](https://github.com/tferr/ASA/issues) on GitHub. Don't forget to include the [steps needed to reproduce the problem](/help/bug-reporting-best-practices). You may also want to check the {% include github org='tferr' repo='ASA' path='Notes.md\#development-builds' label='release notes' %} for the latest [development version](http://jenkins.imagej.net/job/Sholl-Analysis/lastBuild/) to see if the issue has meanwhile been addressed.
+Report it in the [ImageJ Forum](http://forum.imagej.net) or file an [issue](https://github.com/tferr/ASA/issues) on GitHub. Don't forget to include the [steps needed to reproduce the problem](/help/bugs#bug-reporting-best-practices). You may also want to check the {% include github org='tferr' repo='ASA' path='Notes.md\#development-builds' label='release notes' %} for the latest [development version](http://jenkins.imagej.net/job/Sholl-Analysis/lastBuild/) to see if the issue has meanwhile been addressed.
 
 </dd>
 </dl>

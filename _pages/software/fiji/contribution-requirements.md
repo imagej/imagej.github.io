@@ -74,7 +74,7 @@ This requirement exists to facilitate automated tooling for dependency convergen
 
 From example, Apache Commons Math v3.x breaks backwards compatibility with Apache Commons Math v2.x. Since both versions share the same package and class names, only one of these versions can be shipped with Fiji. Therefore, all components of Fiji must rely on the same major version: either v2 or v3.
 
-In general, if the rest of the Fiji distribution upgrades to a new major version of a library on which your component depends, your component must also be upgraded to use the new version. Such decisions are typically reached after [discussion on public channels](/help/communication).
+In general, if the rest of the Fiji distribution upgrades to a new major version of a library on which your component depends, your component must also be upgraded to use the new version. Such decisions are typically reached after [discussion on public channels](/help#ways-to-get-help).
 
 ### Best practice: version constants
 
@@ -108,7 +108,7 @@ The following guidelines are less technical and more philosophical, but represen
 
 Developers of Fiji components should invite others to contribute. That entails welcoming developers, acknowledging and working on pull requests, encouraging improvements, working together, enhancing upon each others' work, share insights, etc.
 
-To leverage the power of [open source](Open_source), the default for discussions should be to use [public channels](/help/communication). In other words, the question to ask should be "Is there any good reason why this conversation should be private?" instead of the opposite.
+To leverage the power of [open source](Open_source), the default for discussions should be to use [public channels](/help#ways-to-get-help). In other words, the question to ask should be "Is there any good reason why this conversation should be private?" instead of the opposite.
 
 ## Active bug management
 
