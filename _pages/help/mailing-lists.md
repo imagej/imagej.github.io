@@ -7,7 +7,7 @@ nav-links: true
 
 There are several mailing lists for community discussion and troubleshooting.
 
-{% include recommendedcontact%}
+{% include warning/recommended-contact %}
 
 Please [search the list archives](http://search.imagej.net/) first to find any previous discussions regarding your problem.
 

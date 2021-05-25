@@ -21,7 +21,7 @@ public channels including the Image.sc Forum, GitHub, chat rooms, and more.
 
 # Getting help with ImageJ
 
-{% include recommendedcontact%}
+{% include warning/recommended-contact %}
 
 ## Ways to get help
 

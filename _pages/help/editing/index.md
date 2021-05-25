@@ -175,8 +175,6 @@ The following tables list all of this site's general-purpose includes:
 |--------------------------------------|---------------------------------------|
 | [notice](notices)                    | Insert an informational notice banner |
 | [aside](TODO)                        | Float a right sidebar with commentary |
-|======================================|=======================================|
-| [recommendedcontact](TODO)           | Recommend to use the Image.sc Forum   |
 
 #### Source code
 
