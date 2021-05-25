@@ -6,6 +6,7 @@
 {%- assign align = include.align -%}
 {%- assign class = include.class -%}
 {%- assign style = include.style -%}
+{%- assign link = include.link -%}
 
 {%- capture src -%}{%- include util/find-media path=include.src -%}{%- endcapture -%}
 
@@ -34,6 +35,7 @@
     {%- assign style = nil -%}
   {%- endif -%}
   {%- if heading -%} <center><strong>{{heading | markdownify}}</strong></center> {%- endif -%}
+  {%- if link -%} <a href="{{link}}"> {%- endif -%}
   <img src="{{src}}" class="img
     {%- if align %} {{align}} {%- endif -%}
     {%- if class %} {{class}} {%- endif -%}"
@@ -42,6 +44,7 @@
     {%- if width %} width={{width}}   {%- endif -%}
     {%- if style %} style="{{style}}" {%- endif -%}
   >
+  {%- if link -%} </a> {%- endif -%}
   {%- if caption -%} <figcaption>{{ caption | markdownify }}</figcaption> {%- endif -%}
   {%- if figure -%} </figure> {%- endif -%}
 {%- endif -%}
