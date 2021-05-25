@@ -99,22 +99,22 @@
               <li><a href="/techniques/tracking">Tracking</a></li>
               <li><a href="/techniques/visualization">Visualization</a></li>
             {% include menu/section-end %} <!-- Learn/Techniques -->
+          {% include menu/section-end %} <!-- Learn -->
 
-            {% include menu/section title="Scripting" link="/scripting" %}
-              <li><a href="/scripting/user-input">User Input</a></li>
-              <li><a href="/scripting/basics">Scripting Basics</a></li>
-              <li><a href="/scripting/how-to-use-the-javadoc">Using Javadocs</a></li>
-              <li><a href="/scripting/batch">Batch Processing</a></li>
-              <li><a href="/scripting/script-editor">Script Editor</a></li>
-              <li><a href="/scripting/auto-imports">Auto Import</a></li>
-              <li><a href="/scripting/templates">Templates</a></li>
-              <li><a href="/scripting/headless">Running Headlessly</a></li>
-              <li><a href="/scripting/comparisons">Scripting Comparisons</a></li>
-              <li><a href="/scripting/toolbox">Toolbox</a></li>
-              <li><a href="/scripting/multithreaded-image-processing-in-clojure">Multithreading with Clojure</a></li>
-              <li><a href="/scripting/multithreaded-image-processing-in-javascript">Multithreading in Javascript</a></li>
-              <li><a href="/scripting/chess">Chess in Jython</a></li>
-            {% include menu/section-end %} <!-- Learn/Scripting -->
+          {% include menu/section title="Scripting" link="/scripting" %}
+            <li><a href="/scripting/user-input">User Input</a></li>
+            <li><a href="/scripting/basics">Scripting Basics</a></li>
+            <li><a href="/scripting/how-to-use-the-javadoc">Using Javadocs</a></li>
+            <li><a href="/scripting/batch">Batch Processing</a></li>
+            <li><a href="/scripting/script-editor">Script Editor</a></li>
+            <li><a href="/scripting/auto-imports">Auto Import</a></li>
+            <li><a href="/scripting/templates">Templates</a></li>
+            <li><a href="/scripting/headless">Running Headlessly</a></li>
+            <li><a href="/scripting/comparisons">Scripting Comparisons</a></li>
+            <li><a href="/scripting/toolbox">Toolbox</a></li>
+            <li><a href="/scripting/multithreaded-image-processing-in-clojure">Multithreading with Clojure</a></li>
+            <li><a href="/scripting/multithreaded-image-processing-in-javascript">Multithreading in Javascript</a></li>
+            <li><a href="/scripting/chess">Chess in Jython</a></li>
 
             {% include menu/section title="Languages" %}
               <li><a href="/scripting/beanshell">BeanShell Scripting</a></li>
@@ -128,8 +128,8 @@
               <li><a href="/scripting/renjin">R (Renjin)</a></li>
               <li><a href="/scripting/jruby">Ruby (JRuby)</a></li>
               <li><a href="/scripting/scala">Scala Scripting</a></li>
-            {% include menu/section-end %} <!-- Learn/Languages -->
-          {% include menu/section-end %} <!-- Learn -->
+            {% include menu/section-end %} <!-- Scripting/Languages -->
+          {% include menu/section-end %} <!-- Scripting -->
 
           {% include menu/section title="Development" link="/develop" %}
             <li><a href="/develop/philosophy">Philosophy</a></li>
