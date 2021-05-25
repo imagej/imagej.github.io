@@ -189,24 +189,17 @@
             {% include menu/section-end %} <!-- Development/Git -->
 
             {% include menu/section title="ImgLib2" link="/libs/imglib2" %}
-              <li><a href="/libs/imglib2/benchmarks">ImgLib2 Benchmarks</a></li>
+              <li><a href="/libs/imglib2/getting-started">Getting Started</a></li>
+              <li><a href="/libs/imglib2/accessors">Accessors</a></li>
+              <li><a href="/libs/imglib2/accessibles">Accessibles</a></li>
+              <li><a href="/libs/imglib2/examples">Examples</a></li>
+              <li><a href="/libs/imglib2/workshop-introductory">Introductory Workshop</a></li>
+              <li><a href="/libs/imglib2/workshop-advanced">Advanced Workshop</a></li>
+              <li><a href="/libs/imglib2/matlab">ImgLib2 images in MATLAB</a></li>
+              <li><a href="/libs/imglib2/benchmarks">Benchmarks</a></li>
               <li><a href="/libs/imglib2/faq">FAQ</a></li>
-
-              {% include menu/section title="Tutorials" %}
-                <li><a href="/libs/imglib2/getting-started">Getting Started</a></li>
-                <li><a href="/libs/imglib2/accessors">Accessors</a></li>
-                <li><a href="/libs/imglib2/accessibles">Accessibles</a></li>
-                <li><a href="/libs/imglib2/examples">Examples</a></li>
-                <li><a href="/libs/imglib2/workshop-introductory">Introductory Workshop</a></li>
-                <li><a href="/libs/imglib2/workshop-advanced">Advanced Programming Workshop</a></li>
-                <li><a href="/libs/imglib1/workshop">Into ImgLib - Generic Image Processing in Java</a></li>
-                <li><a href="/libs/imglib2/matlab">Creating Imglib2 images in MATLAB</a></li>
-              {% include menu/section-end %} <!-- Development/ImgLib2/Tutorials -->
-
-              {% include menu/section title="Development" %}
-                <li><a href="/libs/imglib2/developing">Developing ImgLib2</a></li>
-                <li><a href="/libs/imglib2/discussion">ImgLib2 Discussion</a></li>
-              {% include menu/section-end %} <!-- Development/ImgLib2/Development -->
+              <li><a href="/libs/imglib2/developing">Developing ImgLib2</a></li>
+              <li><a href="/libs/imglib2/discussion">ImgLib2 Discussion</a></li>
             {% include menu/section-end %} <!-- Development/ImgLib2 -->
           {% include menu/section-end %} <!-- Development -->
 
