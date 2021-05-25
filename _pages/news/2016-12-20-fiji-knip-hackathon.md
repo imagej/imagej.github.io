@@ -145,7 +145,7 @@ PlotData=
 
 -   Participated in discussions about [Fiji](/software/fiji) release cycle and [ImageJ Ops](/libs/imagej-ops) based feature extraction
 -   Bugfixed a tool for visualising Meshes in the good old [3D Viewer](/plugins/3d-viewer) which were derived from ArrayList&lt;RandomAccessibleInterval<BoolType>&gt;s as an intermediate solution until the [ThreeDViewer](/plugins/sciview) is ready.
--   Built an ImageJ-Ops based particle analyser, which will in the future allow processing 3D images in a way like 2D images were processed using the good old [Particle Analysis](/cookbook/particle-analysis) tool
+-   Built an ImageJ-Ops based particle analyser, which will in the future allow processing 3D images in a way like 2D images were processed using the good old [Particle Analysis](/imaging/particle-analysis) tool
 -   With {% include person id='maarzt' %}, {% include person id='fjug' %}, and {% include person id='ctrueden' %} we launched the work on a `PlotService` for ImageJ2.
 
 ### Kyle Harrington

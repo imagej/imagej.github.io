@@ -12,7 +12,7 @@ nav-links: true
 
 Automatic particle counting can be done if the image does not have too many individual particles touching. Manual particle counting can be done using the [Multi-point Tool](/ij/docs/guide/146-19.html#sec:Multi-point-Tool).
 
-[Segmentation](/techniques/segmentation), or the ability to distinguish an object from its background, can be a difficult issue to deal with. Once this has been done, however, the object can then be analyzed.
+[Segmentation](/imaging/segmentation), or the ability to distinguish an object from its background, can be a difficult issue to deal with. Once this has been done, however, the object can then be analyzed.
 
 **RAW Threshold Watershed "AnalyzeParticles"** ![266\*177px](/media/imaging/raw-threshold-watershed-analyzeparticles2.jpg)
 

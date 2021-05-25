@@ -11,7 +11,7 @@ Coloc 2 is Fiji's plugin for colocalization analysis. It implements and performs
 
 Coloc 2 does NOT perform object based colocalization measurements, where objects are first segmented from the image, then their spatial relationships like overlap etc. are measured. This complementary approach is implemented in many ways elsewhere.
 
-<span style="color:red">There are many nuances and pitfalls to colocalization analysis. As such, we strongly recommend you read the [Colocalization Analysis](/techniques/colocalization-analysis) section of the [Cookbook](/cookbook) before attempting to use Coloc 2!</span>
+<span style="color:red">There are many nuances and pitfalls to colocalization analysis. As such, we strongly recommend you read the [Colocalization Analysis](/imaging/colocalization-analysis) section of the [Cookbook](/imaging) before attempting to use Coloc 2!</span>
 
 # How to use Coloc 2
 
@@ -82,7 +82,7 @@ Whether or not to consider zero - zero pixels as part of the interesting data fo
 
 ## Other pitfalls
 
-Please see the [Colocalization Analysis](/techniques/colocalization-analysis) page for further discussion of precautions.
+Please see the [Colocalization Analysis](/imaging/colocalization-analysis) page for further discussion of precautions.
 
 ## Release Notes, Newly Added Features and Squashed Bugs
 

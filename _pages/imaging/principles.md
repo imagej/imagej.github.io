@@ -23,7 +23,7 @@ Spatial resolution refers to the number (or density, if you prefer) of samples i
 
 ## Avoid lossy compression
 
-Original data should be saved in a way that preserves the exact sample values. Do not store raw image data in file formats such as JPEG which use lossy compression. See [Why (lossy) JPEGs should not be used in imaging](/techniques/principles#why-lossy-jpegs-should-not-be-used-in-imaging) below for details.
+Original data should be saved in a way that preserves the exact sample values. Do not store raw image data in file formats such as JPEG which use lossy compression. See [Why (lossy) JPEGs should not be used in imaging](/imaging/principles#why-lossy-jpegs-should-not-be-used-in-imaging) below for details.
 
 ## Illuminate as evenly as possible
 
@@ -77,7 +77,7 @@ Example: a section of the famous [Mandrill](http://sampl.ece.ohio-state.edu/data
 
 While most digital cameras save in JPEG format by default, it is very likely that they also support some non-lossy format (such as TIFF or a custom RAW format). Use those formats instead. A format called JPEG2000 supported by various slide scanners and used in "virtual slide" products was created to improve image quality and compression rates, however both lossy and non-lossy versions the JPEG2000 format exist. Use only the non-lossy formats.
 
-**Multichannel images** in particular are harmed by the JPEG format: since the multiple channels are misinterpreted as red, green and blue (while most channels integrate more than just one wavelength), JPEG will shift the colors imperceptibly to improve compression. In the worst case, this can lead to [colocalization](/techniques/colocalization-analysis) where there was none.
+**Multichannel images** in particular are harmed by the JPEG format: since the multiple channels are misinterpreted as red, green and blue (while most channels integrate more than just one wavelength), JPEG will shift the colors imperceptibly to improve compression. In the worst case, this can lead to [colocalization](/imaging/colocalization-analysis) where there was none.
 
 **TIFF** or **PNG** formats available in ImageJ/Fiji are non-lossy formats. TIFF preserves any calibrations applied to your images, but images are not compressed. PNG files are smaller as non-lossy compression is applied but they do not store calibration data.
 
@@ -148,7 +148,7 @@ Training Bias
 
 Moreover, an equally momentous problem is that segmentation methods are generally inherently biased in that they are trained in the first place against an initial human perception of what the final information extracted from an image should be. This is a reasonable basis of course, and its benefit is easily understood in the example of face recognition software trained to threshold faces based on human input on what constitutes a face. But the principle itself introduces bias. To understand negative consequences of this sort of bias, imagine a scenario in pathology, in which automated segmentation is developed to yield a certain result based on current expert pathologist experience, yet completely eliminates a cell feature that is later learned to be a critical indicator.
 
-Automated segmentation is biased in other regards. Consider, for instance, the difference between global and local thresholds in binary segmentation. During [global thresholding](/techniques/thresholding#global-thresholding), the image as a whole is taken to determine the cut-off value and this value is applied to each pixel in the image. During [local thresholding](/techniques/thresholding#local-thresholding), in contrast, as the name suggests, values are determined in a local environment (often defined by the radius of a circular neighborhood) and the local cut-off values are locally applied to the individual pixels of the image. Thus, darker areas in an image might be extractable comparably as well as very bright areas, but this would not be possible with a global threshold, where specifically very dark areas shift into the background or might be under-extracted.
+Automated segmentation is biased in other regards. Consider, for instance, the difference between global and local thresholds in binary segmentation. During [global thresholding](/imaging/thresholding#global-thresholding), the image as a whole is taken to determine the cut-off value and this value is applied to each pixel in the image. During [local thresholding](/imaging/thresholding#local-thresholding), in contrast, as the name suggests, values are determined in a local environment (often defined by the radius of a circular neighborhood) and the local cut-off values are locally applied to the individual pixels of the image. Thus, darker areas in an image might be extractable comparably as well as very bright areas, but this would not be possible with a global threshold, where specifically very dark areas shift into the background or might be under-extracted.
 
 **Benefits of Automated Segmentation**
 

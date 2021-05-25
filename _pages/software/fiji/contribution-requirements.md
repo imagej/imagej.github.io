@@ -382,7 +382,7 @@ The following table provides a few examples of how various Fiji components are s
         <p><strong>Third party</strong></p>
       </td>
       <td>
-        <p><a href="/cookbook">Cookbook</a></p>
+        <p><a href="/imaging">Cookbook</a></p>
       </td>
       <td>
         <p>{% include no%}</p>
@@ -391,7 +391,7 @@ The following table provides a few examples of how various Fiji components are s
         <p><a href="http://sites.imagej.net/Cookbook/">Cookbook</a></p>
       </td>
       <td>
-        <p><a href="/cookbook#credits">Various</a></p>
+        <p><a href="/imaging#credits">Various</a></p>
       </td>
       <td>
         <p><a href="https://github.com/fiji">fiji</a></p>

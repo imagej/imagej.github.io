@@ -36,6 +36,6 @@ At least magenta/green images help this situation. However, [the only thing huma
 
 As a demonstration, call Fiji's {% include bc path='File | Open Samples | Spirals'%} and if you see a bright green and a bright yellow in the dominant spirals, you should look closer.
 
-However, in the 21st century, one should always use proper [Colocalization](/techniques/colocalization-analysis) with scatter plots and statistics. It is [too easy not to](/plugins/coloc-2).
+However, in the 21st century, one should always use proper [Colocalization](/imaging/colocalization-analysis) with scatter plots and statistics. It is [too easy not to](/plugins/coloc-2).
 
  

@@ -8,7 +8,7 @@ The MBF "ImageJ for microscopy" manual was an online resource available from 200
 
 We have posted a [mirror](/mbf/) of the last available version of the MBF ImageJ manual. However, please be aware that the plugin collection and manual are now several years out of date, and some plugins are no longer functional with recent versions of ImageJ.
 
-Hence, rather than using the MBF ImageJ plugins, we encourage users to peruse the [Cookbook](/cookbook), which was inspired by MBF ImageJ but describes functionality available in the most recent version of Fiji, including many plugins originally distributed with MBF ImageJ.
+Hence, rather than using the MBF ImageJ plugins, we encourage users to peruse the [Cookbook](/imaging), which was inspired by MBF ImageJ but describes functionality available in the most recent version of Fiji, including many plugins originally distributed with MBF ImageJ.
 
 ## Publication
 

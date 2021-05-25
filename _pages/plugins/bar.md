@@ -58,7 +58,7 @@ Some of the scripts have a dedicated documentation page, others feature built-in
 
 <!-- -->
 
-{% include github org='tferr' repo='Scripts' path='README.md\#image-segmentation' label='Segmentation' %}<span id="/techniques/segmentation"></span>  
+{% include github org='tferr' repo='Scripts' path='README.md\#image-segmentation' label='Segmentation' %}<span id="/imaging/segmentation"></span>  
 {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#shen-castan-edge-detector' label='Shen-Castan Edge Detector' %}, {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#apply-threshold-to-roi' label='Apply Threshold To ROI' %}, {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#clear-thresholded-pixels' label='Clear Thresholded Pixels' %}, {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#remove-isolated-pixels' label='Remove Isolated Pixels' %}, {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#threshold-from-background' label='Threshold From Background' %}, {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#wipe-background' label='Wipe Background' %}
 
 <!-- -->

@@ -148,7 +148,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
         microscopists, for microscopists. Unfortunately, the manual went
         offline in late 2012. In response, the software team at
         <a href="/orgs/loci">LOCI</a> created the
-        <a href="/cookbook">Cookbook</a> user guide and
+        <a href="/imaging">Cookbook</a> user guide and
         <a href="update_site">update site</a>, which
         includes most of the same plugins.</td>
       <td>2005</td>

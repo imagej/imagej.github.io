@@ -125,7 +125,7 @@ In many cases, ImageJ performs autoscaling by default, to improve the contrast o
 
 You can override the autoscaling using the [Brightness/Contrast](/ij/docs/guide/146-28.html#sub:Adjust) dialog.
 
-It is important to understand that [your image is a collection of samples, each of which has a numerical intensity value](/techniques/principles#what-are-pixel-values). The unit of these values is rather arbitrary and unspecified, depending on the type and calibration of your detector. Your file is stored with a certain [bit depth](/ij/docs/guide/146-7.html#toc-Section-7), meaning these intensities can range from 0 (no light detected) to a particular maximum value (the most light the detector is capable of detecting). For example, 8-bit images have a maximum value of 255, whereas 16-bit images have a maximum of 65535. In practice though, especially with higher bit depths, your detector will not typically record sample intensities across that entire range of values (and if it does record a significant number of values at the maximum, you probably oversaturated your detector, which will skew your analysis!).
+It is important to understand that [your image is a collection of samples, each of which has a numerical intensity value](/imaging/principles#what-are-pixel-values). The unit of these values is rather arbitrary and unspecified, depending on the type and calibration of your detector. Your file is stored with a certain [bit depth](/ij/docs/guide/146-7.html#toc-Section-7), meaning these intensities can range from 0 (no light detected) to a particular maximum value (the most light the detector is capable of detecting). For example, 8-bit images have a maximum value of 255, whereas 16-bit images have a maximum of 65535. In practice though, especially with higher bit depths, your detector will not typically record sample intensities across that entire range of values (and if it does record a significant number of values at the maximum, you probably oversaturated your detector, which will skew your analysis!).
 
 Because the full range of values is typically much less than the maximum—e.g., in the case of a 12-bit detector the actual maximum range is 0-4095, and often even smaller in practice—ImageJ performs **autoscaling** to show you a meaningful or "pretty good" image by default, which is not just a black square (see previous question). That is: it maps the darkest actual intensity in your data to black, and the brightest actual intensity in your data to white. You can override this mapping using the [Brightness/Contrast](/ij/docs/guide/146-28.html#sub:Adjust) dialog under the {% include bc path='Image | Adjust'%} menu (shortcut: {% include key keys='shift|C' %}).
 
@@ -139,14 +139,14 @@ Alternately, to disable autoscaling during initial import, you can use the [Bio-
 
 Further reading:
 
--   [Image Intensity Processing](/cookbook/image-intensity-processing)
--   [Image Processing Principles](/techniques/principles)
+-   [Image Intensity Processing](/imaging/image-intensity-processing)
+-   [Image Processing Principles](/imaging/principles)
 
 ## Whenever I open a file in ImageJ, the file size increases by a ridiculous amount!
 
 Are you using a [compressed format](/ij/docs/guide/146-7.html#sub:Native-Formats) such as JPEG, PNG or ZIP? The file size on disk is smaller than the size of the pixels in memory. ImageJ reports this true (uncompressed) size of the image in the subtitle bar of the image window. For example: an uncompressed image of 16000 pixels x 16000 pixels x 32 bit (RGBA) will occupy 976 MB in memory.
 
-Note that [lossy compression is not suitable for quantitative image analysis](/techniques/principles#why-lossy-jpegs-should-not-be-used-in-imaging).
+Note that [lossy compression is not suitable for quantitative image analysis](/imaging/principles#why-lossy-jpegs-should-not-be-used-in-imaging).
 
 ## The same plugin gives different results on different machines!
 

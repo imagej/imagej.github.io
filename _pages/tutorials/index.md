@@ -8,13 +8,13 @@ section: Learn
 **The following tutorials are highly recommended for *new users*:**
 
 | 1. | [Getting started](/learn/getting-started)             | An introduction to the ImageJ application                                   |
-| 2. | [Image Analysis Principles](/techniques/principles)   | Must-read guidelines for effective acquisition and analysis of images       |
+| 2. | [Image Analysis Principles](/imaging/principles)   | Must-read guidelines for effective acquisition and analysis of images       |
 | 3. | [Living Workshops](/learn/workshops#living-workshops) | Workshops for ImageJ/Fiji at introductory, intermediate and advanced levels |
 | 4. | [Scripting](/scripting)                               | Become a power user by writing scripts!                                     |
 
 ## Tutorials for specific image processing techniques
 
-The [Techniques](/techniques) guides in the sidebar present common image processing workflows.
+The [Techniques](/imaging) guides in the sidebar present common image processing workflows.
 
 ## Tutorials provided by microscopy facilities
 

@@ -12,6 +12,6 @@ This plugin does basically the same things as the [Colour merge](/plugins/colour
 
 This plugin has been edited to include the option for users to pre-subtract a fraction of the fluorescence channel from the grey channel prior to merging. This can prevent a 'washed out' look to the fluorescence.
 
-See also [Color\_Image\_Processing](/cookbook/color-image-processing).
+See also [Color\_Image\_Processing](/imaging/color-image-processing).
 
  

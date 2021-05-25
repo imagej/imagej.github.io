@@ -12,7 +12,7 @@ This plugin contains three different methods for correcting the intensity decay 
 -   Simple Ratio Method:
     -   Plugin version of [Jens Rietdorf's macro](http://www.embl.de/eamnet/html/bleach_correction.html), extended further with 3D time series
 -   Exponential Fitting Method:
-    -   Similar to the [description on the T-functions page](/cookbook/t-functions#correcting-for-bleaching). Additionally, this plugin also works with 3D time series.
+    -   Similar to the [description on the T-functions page](/imaging/t-functions#correcting-for-bleaching). Additionally, this plugin also works with 3D time series.
     -   [MBF ImageJ](/software/mbf-imagej) suggests to use "Exponential" equation for fitting, whereas this plugin uses "Exponential with Offset"
 -   Histogram Matching Method:
     -   A brand-new method for bleach correction.

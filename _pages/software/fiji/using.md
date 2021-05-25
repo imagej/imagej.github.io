@@ -8,7 +8,7 @@ categories: [Fiji]
 
 Useful information about using Fiji can be found here:
 
--   [What you need to know about scientific image processing](/techniques/principles)
+-   [What you need to know about scientific image processing](/imaging/principles)
 -   [Installing Fiji](/software/fiji/downloads#installation)
 -   [Getting started with Fiji](/learn/getting-started)
 -   [Tutorials](/plugin-index#tutorials) (also [external ones](/tutorials))

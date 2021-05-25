@@ -7,7 +7,7 @@ title: BIOP Lookup Tables
 
 ## Purpose
 
-Having LUTs to handle display of images with more than 3 channels. Visit [Color Image Processing](/cookbook/color-image-processing) page to know more about LUTs.
+Having LUTs to handle display of images with more than 3 channels. Visit [Color Image Processing](/imaging/color-image-processing) page to know more about LUTs.
 
 ## Details
 

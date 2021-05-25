@@ -11,13 +11,13 @@ nav-links: true
 
 ### Pseudocolor Image Look-Up Tables (LUTs)
 
-A [pseudocolor image](/cookbook/color-image-processing#pseudo-color) is a single channel gray image (8, 16 or 32-bit) that has color assigned to it via a lookup table, i.e. a {% include wikipedia title='Lookup table#Lookup_tables_in_image_processing' text='LUT' %}. A LUT is a predefined table of gray values with matching red, green, and blue values so that shadows of gray are displayed as colorized pixels. Thus, differences in color in the pseudo-colored image reflect differences in intensity of the object rather than differences in color of the specimen that has been imaged.
+A [pseudocolor image](/imaging/color-image-processing#pseudo-color) is a single channel gray image (8, 16 or 32-bit) that has color assigned to it via a lookup table, i.e. a {% include wikipedia title='Lookup table#Lookup_tables_in_image_processing' text='LUT' %}. A LUT is a predefined table of gray values with matching red, green, and blue values so that shadows of gray are displayed as colorized pixels. Thus, differences in color in the pseudo-colored image reflect differences in intensity of the object rather than differences in color of the specimen that has been imaged.
 
 The [LUT Menu](/ij/docs/guide/146-19.html#sub:LUTMenu) of ImageJ contains a large collection of lookup tables that can be applied to a pseudocolor image.
 
 Note: in the ImageJ 1.x user interface, LUTs are always 8-bit. When working with an image of higher bit depth, its intensity values are binned into 256 levels between minimum and maximum (see section Brightness/Contrast), and the LUT is applied onto these binned levels.
 
-More information on this topic can be found on the [Color Image Processing](/cookbook/color-image-processing) page.
+More information on this topic can be found on the [Color Image Processing](/imaging/color-image-processing) page.
 
 Fluorescence images are usually acquired without color information (i.e. by monochrome cameras or with photomultipliers): each channel contains just intensity values. To display a multi-channel fluorescence image in composite mode (i.e. an overlay of all channels), each channel can be assigned a **monochrome false-color LUT**, e.g. 'Red', 'Green', 'Blue', 'Cyan', 'Magenta', 'Yellow', etc.
 

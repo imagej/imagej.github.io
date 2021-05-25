@@ -25,7 +25,7 @@ We are always looking for more ways to improve the software to meet this goal of
 
 ## Extensibility
 
-[Extensibility](/develop/architecture#extensibility) is [ImageJ](/about)'s greatest strength. ImageJ is not just a software application—it is an extensible *platform* for the development of image [visualization](/plugin-index#visualization), [segmentation](/techniques/segmentation), [registration](/plugin-index#registration), and [analysis](/plugin-index#analysis) routines.
+[Extensibility](/develop/architecture#extensibility) is [ImageJ](/about)'s greatest strength. ImageJ is not just a software application—it is an extensible *platform* for the development of image [visualization](/plugin-index#visualization), [segmentation](/imaging/segmentation), [registration](/plugin-index#registration), and [analysis](/plugin-index#analysis) routines.
 
 Isaac Newton attributed his success to {% include wikipedia title='Standing on the shoulders of giants' text='standing on the shoulders of giants'%}. The [SciJava component collection](/develop/architecture)'s powerful [plugin](/plugins) mechanism and [open source](Open_source) software process codify that metaphor into the software itself. Not only are there many different types of plugins, but it is also possible to extend the system with your own new types of plugins. See the [Extensibility](/develop/architecture#extensibility) page for details.
 
