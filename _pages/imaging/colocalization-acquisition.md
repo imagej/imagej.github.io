@@ -30,7 +30,7 @@ Estimating colocalisation by looking for yellow colour in images where the green
 4.  There are simple and quick objective methods to estimate colocalisation, so don't be lazy. You can use them to get hard objective statistics describing the colocalisation in your images, and its easy to do.
 5.  Our brains find color contrast that is not even really there. In the following illusion (Fig. 1), there are only really 3 colors. The "blue"and "green" are exactly the same color: Do not trust your eyes - measure it.
 
-{% include thumbnail src='/media/spirals.png' title='**Figure 1**: The *spirals* color illusion'%}
+{% include thumbnail src="/media/spirals.png" title="**Figure 1**: The *spirals* color illusion"%}
 
   
 What we need are objective quantitative methods to estimate/measure colocalisation in 2 colour channel images. These will output colocalisation coefficients that should be:
@@ -50,11 +50,9 @@ There are various problems that need to be understood and overcome while collect
 
 ![](/media/imaging/colocblur.gif)
 
-*`Definition:`*` The Fourier spectrum of the `  
-`image lacks proper high frequencies. `
+*`Definition:`*` The Fourier spectrum of the image lacks proper high frequencies. `
 
-*`Definition`` ``2:`*` The small features/edges of the `  
-`real object are not well represented in the image `
+*`Definition 2:`*` The small features/edges of the real object are not well represented in the image `
 
 This phenomenon will artificially enlarge the size of your objects, making them look bigger. The problem with this is that two non colocalizing objects might appear to colocalize in the image because of the blur. This gives false-positive results.
 
@@ -119,12 +117,9 @@ One must have a signal strong enough to allow a good enough signal:noise ratio, 
 
 ### Cross talk and Bleed through
 
-*`Definition`` ``1:`*` Fluorophores do not match `  
-`optical components (excitation / emission filters, `  
-`lasers, dichroics). `
+*`Definition 1:`*` Fluorophores do not match optical components (excitation / emission filters, lasers, dichroics). `
 
-*`Definition`` ``2:`*` You detect emission from the wrong `  
-`dye, and falsely believe it comes from the right dye. `
+*`Definition 2:`*` You detect emission from the wrong dye, and falsely believe it comes from the right dye.`
 
 So... this one is *the* very worst and most dangerous problem in colocalization experiments. It can be explained with the following spectra:
 
@@ -142,9 +137,9 @@ Dye choice is critical here. Avoid DAPI and GFP, since DAPI emission is very bro
 
 ### Poor Spatial Sampling
 
-*Definition:* The pixel size does not allow for a highly spatially resolved colocalisation analysis.
+*`Definition:`* `The pixel size does not allow for a highly spatially resolved colocalisation analysis.`
 
-*Definition 2:* Pixels are too big. Close but separate objects which do not colocalise, appear to colocalise.
+*`Definition 2:`* `Pixels are too big. Close but separate objects which do not colocalise, appear to colocalise.`
 
 As a general rule, you should have each object you image sampled over many pixels. When this is not the case, a colocalization statement cannot be reliable made, as the assumptions of the method no longer hold. 
 
