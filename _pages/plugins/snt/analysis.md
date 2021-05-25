@@ -78,9 +78,8 @@ To quickly measure all existing paths with a common set of statistics, choose {%
 
 To get measurements only on a select group of Paths, first select or filter for the Paths you want to measure in the Path Manager, then choose either command from the {% include bc path='Analyze'%} menu in the Path Manager.
 
-Batch measurements of reconstructions can be accomplished via scripting. See *Measure\_Multiple\_Files.py* in the SNT [Script Templates](/plugins/snt/scripting#script-templates) for a basic example. \[\[Image:Snt-Measure-Results-Table.png\|none\|thumb\|1000px\|*Measure...*
+Batch measurements of reconstructions can be accomplished via scripting. See *Measure\_Multiple\_Files.py* in the SNT [Script Templates](/plugins/snt/scripting#script-templates) for a basic example. !["SNT measure results table"](/media/snt-measure-results-table.png)
 
-`results]]`
 
 {% include clear%}
 

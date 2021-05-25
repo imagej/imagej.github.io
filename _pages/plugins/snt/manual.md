@@ -167,7 +167,7 @@ See the [Generating Filtered Images](/plugins/snt/step-by-step-instructions#gene
 
 ### Filters for Visibility of Paths
 
-By default, all the nodes of a path are projected onto the current Z-slice. This is useful to see how much has been completed and gives a sense of the overall structure of the reconstruction. However, SNT provides three additional visibility options for paths: !["Filters for visibility of paths" widget](Path-visibility-filters.png "fig:"Filters for visibility of paths" widget")
+By default, all the nodes of a path are projected onto the current Z-slice. This is useful to see how much has been completed and gives a sense of the overall structure of the reconstruction. However, SNT provides three additional visibility options for paths: !["Filters for visibility of paths" widget](/meida/path-visibility-filters.png)
 
 1.  **Only selected paths (hide deselected)** Only show paths that have been manually selected in the Path Manager or with the {% include key key='G' %} key ({% include key keys='Shift|G' %} to select multiple paths).
 2.  **Only nodes within {x} nearby Z-slices** Only highlight nodes within {x} number of Z-slices on either side of the current slice. The projected skeletons of all paths remain visible.
@@ -318,7 +318,7 @@ Right-clicking on any of the image views will bring up a menu with various editi
 
 ### Tag
 
-!["Tag" Menu](SNT-Path-Manager-Tag.png "fig:"Tag" Menu") Assigns tags to Paths. Tags are organized in the following categories:
+!["Tag" Menu](/media/snt-path-manager-tag.png) Assigns tags to Paths. Tags are organized in the following categories:
 
 -   {% include bc path='Type| '%} Type of neurite compartment (*Axon*, *(Basal) Dendrite*, *Soma*, etc.), as used by the SWC file format. It is also possible to pair each type with a color tag through the {% include bc path='Tag|Options..'%} dialog  
     These tags are considered to be essential annotations and all paths are assigned the *Undefined*-type tag when created. For this reason they are not eliminated by the *Remove All Tags* command.
@@ -354,13 +354,13 @@ Assuming you chose to fit both centroids and radii, a fitted path might look lik
 
 ### Fill
 
-!["Fill" menu](SNT-Path-Manager-Fill.png ""Fill" menu")
+!["Fill" menu](/media/snt-path-manager-fill.png)
 
 -   {% include bc path='Fill Out...'%} Begins the filling process for selected paths. For detailed instructions see [Filling: Step-By-Step Instructions](/plugins/snt/step-by-step-instructions#filling).
 
 ### Analyze
 
-This menu contains several options which provide quick ways to analyze and visualize numerical properties of paths. Note that these operations are only applied to the subset of currently selected Path(s). To apply these operations to the entire Tree, deselect all Paths first. !["Analyze" menu](SNT-Path-Manager-Analyze-Menu.png "fig:"Analyze" menu")
+This menu contains several options which provide quick ways to analyze and visualize numerical properties of paths. Note that these operations are only applied to the subset of currently selected Path(s). To apply these operations to the entire Tree, deselect all Paths first. !["Analyze" menu](/media/snt-path-manager-analyze-menu.png)
 
 -   {% include bc path='Color Coding...'%} Assigns color codes to paths based on the chosen metric.
     -   *Color by* Drop-down menu containing the metrics which inform the color mapping.
@@ -406,7 +406,7 @@ This menu contains several options which provide quick ways to analyze and visua
 
 ## Filter Toolbar
 
-![](/media/plugins/snt/snt-path-manager-text-filter.png) The filter toolbar allows paths to be searched and filtered quickly using tags (colors, annotations, SWC-type, etc.) or morphometric properties. The text field is used for text-based searches (recent searches can be recovered through its drop-down menu). The {% include key key='down' %} and {% include key key='up' %} arrow keys find the next/previous occurrence of the entered phrase, while the ![](/media/plugins/snt/snt-text-filter-balloon-button.png) button highlights all occurrences of the entered phrase. Settings for advance text-based filtering can be accessed through the ![](/media/plugins/snt/snt-text-filter-menu-button.png) button, including wildcard support, case sensitive matching, and replace-by-pattern. In addition, the ![](/media/plugins/snt/snt-text-filter-advanced-button.png) button restricts filtering to the selected subset of Path(s). Other means of filtering Paths include: !["Color Filters" menu](SNT-Path-Manager-Text-Filter-Color-Filters.png "fig:"Color Filters" menu")
+![](/media/plugins/snt/snt-path-manager-text-filter.png) The filter toolbar allows paths to be searched and filtered quickly using tags (colors, annotations, SWC-type, etc.) or morphometric properties. The text field is used for text-based searches (recent searches can be recovered through its drop-down menu). The {% include key key='down' %} and {% include key key='up' %} arrow keys find the next/previous occurrence of the entered phrase, while the ![](/media/plugins/snt/snt-text-filter-balloon-button.png) button highlights all occurrences of the entered phrase. Settings for advance text-based filtering can be accessed through the ![](/media/plugins/snt/snt-text-filter-menu-button.png) button, including wildcard support, case sensitive matching, and replace-by-pattern. In addition, the ![](/media/plugins/snt/snt-text-filter-advanced-button.png) button restricts filtering to the selected subset of Path(s). Other means of filtering Paths include: !["Color Filters" menu](/media/snt-path-manager-text-filter-color-filters.png)
 
 -   **Color Filters** ![](/media/plugins/snt/snt-text-filter-color-button.png) Allows filtering of Paths by color tags. Custom colors may be selected by right-clicking an empty swatch, which will bring up the CMYK palette. The chosen color is temporarily saved in that swatch.
 -   **Morphology Filters** ![](/media/plugins/snt/snt-text-filter-morphology-button.png) Allows filtering of Paths by selected morphological properties (including cell identity). Note that these filters do not require Paths to be labeled using {% include bc path='Tag|Morphology| '%}.
