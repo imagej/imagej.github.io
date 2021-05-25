@@ -16,7 +16,7 @@ nav-bar at the top of the page!
 Like the rest of this wiki, this guide is a community project.
 Please feel welcome to [edit and expand](/help/editing) the material here!
 
-{% include notice icon="note" content="If you are new to scientific imaging,
+{% include notice content="If you are new to scientific imaging,
   *please peruse the [Principles](/imaging/principles)* for a primer!" %}
 
 ## Installation
