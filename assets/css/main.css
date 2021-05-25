@@ -1170,6 +1170,7 @@ table tbody tr:nth-child(2n + 1) {
 
 table td {
   padding: 0.5em 0.5em;
+  vertical-align: middle;
 }
 
 table th {
@@ -1178,6 +1179,7 @@ table th {
   /* font-weight: 400; */
   padding: 0 0.75em 0.75em 0.75em;
   text-align: left;
+  vertical-align: bottom;
 }
 
 table thead {
