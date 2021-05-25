@@ -49,7 +49,7 @@ There is a simple facility in this plugin for "filling out" paths to volumes. Th
 
 First, select the one or more paths that you want to fill out from in the path list and select "Fill Out Path(s)" in the interface. The selected paths are shown in green so that you can check that you're starting from the right ones. After a couple of seconds if you scroll through the stack you should be able to see a thick green suround to the path:
 
-![A few seconds after selecting "Fill Out Path(s)" with 3 branched paths selected](Snt-initial-filling.png "A few seconds after selecting "Fill Out Path(s)" with 3 branched paths selected")
+![A few seconds after selecting "Fill Out Path(s)" with 3 branched paths selected](/media/snt-initial-filling.png)
 
 The filler continues to explore the image starting from the path until you click "Pause" in the dialog. However, the fill which is shown only includes those points up to a certain threshold distance from the path. (Note that in this section "distance" doesn't mean a real physical distance, but a measure which takes into account the intensity values of the pixels which must be passed through when moving away from the path.) Information about the current threshold and the progress of the search is shown in the dialog. ![The filling-related part of the dialog (outdated screenshot).](/media/snt-filling-statistics.png)
 
@@ -82,7 +82,7 @@ As you can see in this image, the threshold is set too far from the path, since 
 
 If you are happy with this, then you might as well click "Pause" so that your computer isn't spending all its CPU on continuing to explore the image. Then you can either save the fill (which will add it to the fill list) by clicking "Save Fill", discard the fill by clicking "Cancel Fill" or use the "Create Image Stack from Fill" button to view the same image stack, but with only the points in that fill preserved. One reason why you might want to do this is that you can then smooth that image and use the [3D Viewer](/plugins/3d-viewer) to do a surface rendering of the neuron. Perhaps then you could overlay that onto a volume rendering of the complete image (see available [tutorials](/plugins/snt#tutorials)). Or, you could save those fill stacks for each of the neurons you fill and then combine them in ImageJ using "RGB Merge".
 
-The image stack you would get from the image used in this example might look something like this: ![Having selected the "Create Image from Fill" option](Snt-filling-viewed.png "fig:Having selected the "Create Image from Fill" option")
+The image stack you would get from the image used in this example might look something like this: ![Having selected the "Create Image from Fill" option](/media/snt-filling-viewed.png)
 
 {% include clear%}
 

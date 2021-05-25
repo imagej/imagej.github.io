@@ -203,7 +203,7 @@ This tab aggregated widgets for advanced settings.
 
 ### Data Source
 
-!["Data Source" widget](SNT-data-source-widget.png "fig:"Data Source" widget") If tracing on a multi-dimensional image (i.e., one with multiple data channels and/or a time axis), a particular channel/frame can be loaded into the views by selecting each and pressing the "Reload" button.
+!["Data Source" widget](/media/snt-data-source-widget.png) If tracing on a multi-dimensional image (i.e., one with multiple data channels and/or a time axis), a particular channel/frame can be loaded into the views by selecting each and pressing the "Reload" button.
 
 ### Views
 
@@ -233,7 +233,7 @@ This tab aggregated widgets for advanced settings.
 
 ### Temporary Paths
 
-!["Temporary Paths" widget](SNT-temporary-paths-dialog.png ""Temporary Paths" widget")
+!["Temporary Paths" widget](/media/snt-temporary-paths-dialog.png)
 
 -   **Confirm temporary segments** If active, prompts for either confirmation or denial of whether or not to keep an unconfirmed path segment. If inactive, automatically confirms the path segment created on each subsequent node placement after starting a path. Applies to both auto-traced and manually traced path segments. The following two settings are only toggle-able when this setting is active.
     -   **Pressing 'Y' twice finishes path** Finish a temporary path on two successive {% include key key='Y' %} key presses.
