@@ -176,7 +176,6 @@ The following tables list all of this site's general-purpose includes:
 | [notice](notices)                    | Insert an informational notice banner |
 | [aside](TODO)                        | Float a right sidebar with commentary |
 |======================================|=======================================|
-| [imglib1-deprecation-info-box](TODO) | ImgLib1 deprecation warning           |
 | [communication](TODO)                | List of ways to get ImageJ help       |
 | [recommendedcontact](TODO)           | Recommend to use the Image.sc Forum   |
 

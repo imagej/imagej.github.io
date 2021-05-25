@@ -1,6 +1,0 @@
-{%- comment -%} TODO decide what to do with this {%- endcomment -%}
-<span>{{include.content}}</span>
-
-{%- comment -%}
-# vi:syntax=liquid
-{%- endcomment -%}
