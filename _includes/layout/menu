@@ -66,7 +66,6 @@
           {% include menu/section-end %} <!-- Imaging -->
 
           {% include menu/section title="Learn" link="/learn" %}
-            <li><a href="/learn/getting-started">Getting Started</a></li>
             <li><a href="/learn/user-guides">User Guides</a></li>
             <li><a href="/tutorials">Tutorials</a></li>
             <li><a href="/learn/presentations">Presentations</a></li>

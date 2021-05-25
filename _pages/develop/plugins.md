@@ -176,7 +176,7 @@ There are always other options for saving or restoring your work—[stashing](ht
 -   You can [compile and build](http://maven.apache.org/archives/maven-1.x/start/quick-start.html) from the command line by running `mvn` from any project's top-level directory (any directory containing a `pom.xml`).
 -   Building a project results in a `jar` output in the `$PROJECT/target/` directory.
 -   For a more "real-world" experience, you can drop the `jar` you built into the `ImageJ.app/jars/` directory of an [ImageJ installation](/downloads) to try out any of the example plugins.
--   If you're not sure how to find your plugin within ImageJ, use the [search bar](/learn/getting-started#the-search-bar)!
+-   If you're not sure how to find your plugin within ImageJ, use the [search bar](/learn#the-search-bar)!
 -   You can also import each project into [Eclipse](/develop/eclipse)/[NetBeans](/develop/netbeans)/[IntelliJ IDEA](/develop/intellij) as a [maven project](https://books.sonatype.com/m2eclipse-book/reference/creating-sect-importing-projects.html).
 
 ### First steps

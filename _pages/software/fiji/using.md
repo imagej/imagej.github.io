@@ -11,7 +11,7 @@ Useful information about using Fiji can be found here:
 
 -   [What you need to know about scientific image processing](/imaging/principles)
 -   [Installing Fiji](/software/fiji/downloads#installation)
--   [Getting started with Fiji](/learn/getting-started)
+-   [Getting started with Fiji](/learn)
 -   [Tutorials](/plugin-index#tutorials) (also [external ones](/tutorials))
 -   [Introduction into Macro Programming](/scripting/macro)
 -   Example images you'll find in the {% include bc path='File | Open Samples'%} menu or in [public data sets](/plugins/public-data-sets)

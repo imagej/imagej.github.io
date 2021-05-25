@@ -7,8 +7,8 @@ section: Learn
 
 **The following tutorials are highly recommended for *new users*:**
 
-| 1. | [Getting started](/learn/getting-started)             | An introduction to the ImageJ application                                   |
-| 2. | [Image Analysis Principles](/imaging/principles)   | Must-read guidelines for effective acquisition and analysis of images       |
+| 1. | [Getting started](/learn)                             | An introduction to the ImageJ application                                   |
+| 2. | [Image Analysis Principles](/imaging/principles)      | Must-read guidelines for effective acquisition and analysis of images       |
 | 3. | [Living Workshops](/learn/workshops#living-workshops) | Workshops for ImageJ/Fiji at introductory, intermediate and advanced levels |
 | 4. | [Scripting](/scripting)                               | Become a power user by writing scripts!                                     |
 
