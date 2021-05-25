@@ -286,7 +286,7 @@ Adding_new_ops :: develop/writing-ops
 Adelson's_Squares :: plugins/adelsons-squares
 Adelson's_Squares_(Macro) :: plugins/adelsons-squares
 Adelsons_Squares :: plugins/adelsons-squares
-Adiposoft :: software/adiposoft
+Adiposoft :: plugins/adiposoft
 Advanced_Fiji_Usage :: software/fiji
 Advanced_Registration :: plugins/spim-registration
 Advanced_Usage :: software/fiji
@@ -338,7 +338,7 @@ Automatic_Update_Site_Uploads :: update-sites/automatic-uploads
 Automatic_detection_of_neuronal_labeling_in_histological_image_series :: plugins/automatic-detection-of-neuronal-labeling-in-histological-image-series
 Automatic_optimal_filament_segmentation :: plugins/automatic-optimal-filament-segmentation
 Average_Images :: plugins/average-images
-AxoNet :: software/axonet
+AxoNet :: plugins/axonet
 BAR :: plugins/bar
 BDV :: plugins/bdv
 BIG :: licensing/big
