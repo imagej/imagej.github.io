@@ -34,11 +34,12 @@
     {%- assign style = nil -%}
   {%- endif -%}
   {%- if heading -%} <center><strong>{{heading | markdownify}}</strong></center> {%- endif -%}
-  <img src="{{src}}"
+  <img src="{{src}}" class="img
+    {%- if align %} {{align}} {%- endif -%}
+    {%- if class %} {{class}} {%- endif -%}"
     {%- if alt   %} alt="{{alt}}"     {%- endif -%}
     {%- if title %} title="{{title}}" {%- endif -%}
     {%- if width %} width={{width}}   {%- endif -%}
-    {%- if align %} class="{{align}}" {%- endif -%}
     {%- if style %} style="{{style}}" {%- endif -%}
   >
   {%- if caption -%} <figcaption>{{ caption | markdownify }}</figcaption> {%- endif -%}

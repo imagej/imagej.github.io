@@ -173,15 +173,19 @@ Major updates are symbolized with a change in the plugin version name. For minor
 
 ## Possible issues and recommendations
 
--   **Dealing with large datasets : ** biological images are sometimes very large. In the field of time-lapse microscopy, [BigStitcher](/plugins/bigstitcher) plugin handles such data, using BigDataViewer, as its registration algorithm, perfect for monomodal data of lightsheet microscopy, is well fitted to this task.
+-   **Dealing with large datasets:** biological images are sometimes very large. In the field of time-lapse microscopy, [BigStitcher](/plugins/bigstitcher) plugin handles such data, using BigDataViewer, as its registration algorithm, perfect for monomodal data of lightsheet microscopy, is well fitted to this task.
 
-Fijiyama is based on the Blockmatching registration algorithm, robust for inter-modality. This algorithm is memory consuming and computation intensive. When starting Fijiyama, the plugin analyzes your computer settings and might propose to subsample your dataset to fasten the registration process. This will not impact the appearance of the final results since the exportation procedure is performed using the initial images, at the chosen resolution.
+    Fijiyama is based on the Blockmatching registration algorithm, robust for inter-modality. This algorithm is memory consuming and computation intensive. When starting Fijiyama, the plugin analyzes your computer settings and might propose to subsample your dataset to fasten the registration process. This will not impact the appearance of the final results since the exportation procedure is performed using the initial images, at the chosen resolution.
 
--   **Translation in 3D under Windows : **under Windows, translation mode in the [3D\_Viewer](/plugins/3d-viewer) using SHIFT+drag can be hazardous. To address this, we associated surnumerous controls to the numerical keypad. Using "4" and "6" keys, you can translate the selected volume along the X axis. Using "8" and "2" along the Y axis. Using "5" and "0", along the Z axis. Rotations can be handled with "7" and "9" (X axis), "1" and "3" (Y axis), and characters "p" and "o" for the Z axis.
--   **3D view disappears : **depending on the sequence of translations / rotations applied to the scene, the 3D viewer of Fiji/ImageJ sometimes "freezes". To solve this problem, turn the objects to a 90 degrees' angle, and the viewer should come back.
--   **Other issues ? **please tell us ! Try to "repeat" your bug from the beginning, identify the context producing the bug, then send an email to corresponding author, including :
+-   **Translation in 3D under Windows:** under Windows, translation mode in the [3D\_Viewer](/plugins/3d-viewer) using SHIFT+drag can be hazardous. To address this, we associated surnumerous controls to the numerical keypad. Using "4" and "6" keys, you can translate the selected volume along the X axis. Using "8" and "2" along the Y axis. Using "5" and "0", along the Z axis. Rotations can be handled with "7" and "9" (X axis), "1" and "3" (Y axis), and characters "p" and "o" for the Z axis.
+-   **3D view disappears:** depending on the sequence of translations / rotations applied to the scene, the 3D viewer of Fiji/ImageJ sometimes "freezes". To solve this problem, turn the objects to a 90 degrees' angle, and the viewer should come back.
+-   **Other issues?** please tell us ! Try to "repeat" your bug from the beginning, identify the context producing the bug, then send an email to corresponding author, including :
 
-\- a compressed copy of your output directory - the copy of the content of the ImageJ log window (probably a hundred lines of sentences in red telling where Exceptions were encountered) - Any useful commentary - if possible, the content of the black log window - if possible, a link to the dataset used
+    - a compressed copy of your output directory
+    - the copy of the content of the ImageJ log window (probably a hundred lines of sentences in red telling where Exceptions were encountered)
+    - Any useful commentary
+    - if possible, the content of the black log window
+    - if possible, a link to the dataset used
 
 ## The maths behind
 
@@ -222,32 +226,11 @@ over the world. We are open to bug reports and feature requests. If you like Fij
 Here is a short-list of some Fijiyama users who helped us conceiving the software, fixing some bugs,
 or developing new features. We are grateful to them :
 
-{::nomarkdown}
-<table>
-  <tbody>
-    <tr>
-      <td><img src="/media/plugins/cmoisy.png" alt="" class="image table" width="250px"></td>
-      <td>Cedric Moisy, PhD - French Wine and Vine Institute, Montpellier, France. Topic: Detection of tissue degradation and time-lapse monitoring of grapevine trunk diseases</td>
-    </tr>
-    <tr>
-      <td><img src="/media/plugins/kvilla.png" alt="" class="image table" width="250px"></td>
-      <td>Katie Villa, PhD - Massachussets Institute of Technology, Nedivi lab, Boston, USA. Topic: Neuronal plasticity</td>
-    </tr>
-    <tr>
-      <td><img src="/media/plugins/ewershof.png" alt="" class="image table" width="250px"></td>
-      <td>Esther Wershof, PhD - Sloan Kettering Institute for Cancer Research, New York, USA. Topic: Embryonic organogenesis</td>
-    </tr>
-    <tr>
-      <td><img src="/media/plugins/bpadman.png" alt="" class="image table" width="250px"></td>
-      <td>Benjamin Padman, PhD - Monash Biomedicine Discovery Institute, Melbourne, Australia. Topic: Cellular mechanisms of mammalian mitophagy</td>
-    </tr>
-    <tr>
-      <td><img src="/media/plugins/jmatsuno.png" alt="" class="image table" width="250px"></td>
-      <td>Junya Matsuno, Division of Earth and Planetary Sciences, University of Kyoto, Japan. Topic : Extraterrestrial matter analysis from Hayabusa spatial probes.</td>
-    </tr>
-  </tbody>
-</table>
-{:/}
+| {% include img src="cmoisy"   width=150 %} | Cedric Moisy, PhD - French Wine and Vine Institute, Montpellier, France. Topic: Detection of tissue degradation and time-lapse monitoring of grapevine trunk diseases |
+| {% include img src="kvilla"   width=150 %} | Katie Villa, PhD - Massachussets Institute of Technology, Nedivi lab, Boston, USA. Topic: Neuronal plasticity                                                         |
+| {% include img src="ewershof" width=150 %} | Esther Wershof, PhD - Sloan Kettering Institute for Cancer Research, New York, USA. Topic: Embryonic organogenesis                                                    |
+| {% include img src="bpadman"  width=150 %} | Benjamin Padman, PhD - Monash Biomedicine Discovery Institute, Melbourne, Australia. Topic: Cellular mechanisms of mammalian mitophagy                                |
+| {% include img src="jmatsuno" width=150 %} | Junya Matsuno, Division of Earth and Planetary Sciences, University of Kyoto, Japan. Topic : Extraterrestrial matter analysis from Hayabusa spatial probes.           |
 
 ## Contact
 
