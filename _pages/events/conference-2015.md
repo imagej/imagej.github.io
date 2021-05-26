@@ -7,7 +7,7 @@ title: Conference 2015
 
 # Information
 
-The 2015 [ImageJ User and Developer Conference](/events/Conference) complemented the EU meetings in Luxembourg and offered workshops to improve software knowledge and usage covering both beginner/user and advanced/developer topics. The conference provided a community forum for ImageJ development over the past three years and also featured shorter presentations highlighting case studies, plugins, and solutions to common problems.
+The 2015 [ImageJ User and Developer Conference](/events/conferences) complemented the EU meetings in Luxembourg and offered workshops to improve software knowledge and usage covering both beginner/user and advanced/developer topics. The conference provided a community forum for ImageJ development over the past three years and also featured shorter presentations highlighting case studies, plugins, and solutions to common problems.
 
 ## Location
 
@@ -122,7 +122,7 @@ With this conference, there were no registration fees, and there was a free rece
 TODO GOOGLE SPREADSHEET WIDGET {% include clear%}
 
 
-For full details including abstracts and presentation recordings, see the [Conference 2015 Program](/events/Conference_2015_Program) page.
+For full details including abstracts and presentation recordings, see the [Conference 2015 Program](/events/conference-2015_Program) page.
 
 # Organization
 

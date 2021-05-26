@@ -126,6 +126,6 @@ The original updater was written in a frantic week in October 2008 in preparatio
 
 In the course of one of two successful Google Summer of Code projects, the updater was rewritten from scratch (but in a [backwards-compatible manner](/libs/imagej-legacy)) by Yap Chin Kiet under the mentorship of Mark Longair and Johannes Schindelin in 2009.
 
-Johannes Schindelin got stuck with the maintainership and introduced third-party update sites (a feature that many claimed to desire, though no pinky was harmed by contributing any code) in the course of a very successful [hackathon](/events/Hackathon#imagej-hackathons) at the Lawrence Berkeley National Laboratory in October 2010 and another one in February 2011 hosted by [LOCI](/orgs/loci).
+Johannes Schindelin got stuck with the maintainership and introduced third-party update sites (a feature that many claimed to desire, though no pinky was harmed by contributing any code) in the course of a very successful [hackathon](/events/hackathons#imagej-hackathons) at the Lawrence Berkeley National Laboratory in October 2010 and another one in February 2011 hosted by [LOCI](/orgs/loci).
 
 As of September 2012, the Fiji Updater has moved to [ImageJ2](/software/imagej2). Details can be found in the announcement: [2012-09-14 - The Updater moved](/news/2012-09-14-the-updater-moved).

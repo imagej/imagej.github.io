@@ -6,6 +6,6 @@ categories: [News]
 
 We got accepted into Google's Summer of Code program!
 
-Our ideas can be found [here](/events/SoC_2009_Ideas), but we are looking forward to your ideas, too!
+Our ideas can be found [here](/events/soc-2009-ideas), but we are looking forward to your ideas, too!
 
 

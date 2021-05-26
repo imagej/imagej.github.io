@@ -454,7 +454,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 It started as an extension of [UnwarpJ](/plugins/unwarpj) from [Carlos O. S. Sorzano](http://biocomp.cnb.csic.es/~coss/) and thanks to him and [Jan Kybic](http://cmp.felk.cvut.cz/~kybic/) at the [Center for Machine Perception](http://cmp.felk.cvut.cz/) in Prague, [bUnwarpJ](/plugins/bunwarpj) was born in the summer 2005 and published online in 2006.
 
-Many of the plugin updates and improvements would have never been possible without the [hackathons](/events/Hackathon) that took place in [Janelia Research Campus](/orgs/janelia) (Virginia, summer 2008) and the [Institute of Neuroinformatics](https://www.ini.uzh.ch/) (Zürich, winter 2008).
+Many of the plugin updates and improvements would have never been possible without the [hackathons](/events/hackathons) that took place in [Janelia Research Campus](/orgs/janelia) (Virginia, summer 2008) and the [Institute of Neuroinformatics](https://www.ini.uzh.ch/) (Zürich, winter 2008).
 
 [Albert Cardona](http://albert.rierol.net/) organized the hackathons and is responsible for the code parallelization and javascripting support.
 

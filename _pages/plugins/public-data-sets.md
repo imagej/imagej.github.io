@@ -28,7 +28,7 @@ All the data and further information is available in the {% include github org='
 
 30 sections from a serial section Transmission Electron Microscopy (ssTEM) data set of the Drosophila first instar larva ventral nerve cord (VNC). The microcube measures 2 x 2 x 1.5 microns approx., with a resolution of 4x4x50 nm/pixel.
 
-**The challenge**: use this data set to train machine learning software for the purpose of automatic segmentation of neural structures in ssTEM. More information in the [ 2012 open competition page](/events/Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012).
+**The challenge**: use this data set to train machine learning software for the purpose of automatic segmentation of neural structures in ssTEM. More information in the [ 2012 open competition page](/events/isbi-2012-segmentation-challenge).
 
 <!-- -->
 

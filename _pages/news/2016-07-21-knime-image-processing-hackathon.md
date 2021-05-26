@@ -4,7 +4,7 @@ title: 2016-07-21 - KNIME Image Processing hackathon
 categories: [News,Hackathons,ImageJ2,KNIME]
 ---
 
-From Tuesday, July 5, 2016 through Thursday, July 14, 2016, {% include person id='dietzc' %} of the [University of Konstanz](http://www.uni-konstanz.de/en/welcome/) hosted \~20 developers at the [KNIME Konstanz Regional Office](https://www.knime.org/contact) for a [hackathon](/events/Hackathon) to develop the [KNIME](/software/knime) Image Processing extensions along with the underlying [ImageJ Ops](/libs/imagej-ops) library, as well as other supporting technologies such as [ImgLib2](/libs/imglib2), [ClearVolume](/plugins/clearvolume) and the [BigDataViewer](/plugins/bdv).
+From Tuesday, July 5, 2016 through Thursday, July 14, 2016, {% include person id='dietzc' %} of the [University of Konstanz](http://www.uni-konstanz.de/en/welcome/) hosted \~20 developers at the [KNIME Konstanz Regional Office](https://www.knime.org/contact) for a [hackathon](/events/hackathons) to develop the [KNIME](/software/knime) Image Processing extensions along with the underlying [ImageJ Ops](/libs/imagej-ops) library, as well as other supporting technologies such as [ImgLib2](/libs/imglib2), [ClearVolume](/plugins/clearvolume) and the [BigDataViewer](/plugins/bdv).
 
 ## Timeline
 

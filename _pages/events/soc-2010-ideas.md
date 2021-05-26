@@ -27,7 +27,7 @@ If your proposal is accepted by the Fiji Development Community you will be expec
 
 If your original proposal doesn't pan out or becomes too much of a challenge, you should work with your mentor to help redefine it. We really want to see every project succeed this summer, as there is a great deal of interest in these projects from within the user community.
 
-Students can apply for the program at the [Google Summer of Code website](http://code.google.com/soc/). Please consider reviewing our [SoC 2010 Template](/events/SoC_2010_Template) and answering its questions as part of your application.
+Students can apply for the program at the [Google Summer of Code website](http://code.google.com/soc/). Please consider reviewing our [SoC 2010 Template](/events/soc-2010-template) and answering its questions as part of your application.
 
 # Project ideas
 
@@ -304,7 +304,7 @@ This project is about implementing a trainer for such tests, whose result is a m
 
 # Other Resources
 
--   [SoC 2010 Application](/events/SoC_2010_Application)
+-   [SoC 2010 Application](/events/soc-2010-application)
 
 # Other links
 

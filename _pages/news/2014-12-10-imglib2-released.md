@@ -6,7 +6,7 @@ categories: [News,ImageJ2]
 
 We are happy to announce the first stable release version of the [ImgLib2](/libs/imglib2) core library!
 
-This release was a central goal of the recent [hackathon](/events/Hackathon) at [LOCI](/orgs/loci) in Madison, during the week of October 13 - 17.
+This release was a central goal of the recent [hackathon](/events/hackathons) at [LOCI](/orgs/loci) in Madison, during the week of October 13 - 17.
 
 The ImgLib2 core library is now [available on Maven Central](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22net.imglib2%22), and the [source code](/develop/source) for all ImgLib2 projects is [accessible on GitHub](https://github.com/imglib).
 

@@ -6,7 +6,7 @@ categories: [News]
 
 There is a [new version of Fiji](/downloads)!
 
-In our beloved tradition, the current version is named after the location of a big [hackathon](/events/Hackathon): Madison. It was not strictly a Fiji hackathon, but the first ImageJ2 hackathon, made possible by Kevin Eliceiri and Curtis Rueden. Nevertheless, quite some work on Fiji and its plugins got done, so here goes *Fiji Madison*.
+In our beloved tradition, the current version is named after the location of a big [hackathon](/events/hackathons): Madison. It was not strictly a Fiji hackathon, but the first ImageJ2 hackathon, made possible by Kevin Eliceiri and Curtis Rueden. Nevertheless, quite some work on Fiji and its plugins got done, so here goes *Fiji Madison*.
 
 If you already have a Fiji installation, please just use the [Fiji Updater](/plugins/updater) to update (make sure that you update <u>only</u> the Updater first if you have not updated in quite a while) -- do not forget to switch to the *Advanced mode* and hit *Update Java*.
 

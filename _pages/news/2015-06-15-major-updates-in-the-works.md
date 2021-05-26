@@ -71,6 +71,6 @@ Fiji ships with a [Report a Bug](/help/report-a-bug) plugin that sends a bug rep
 
 For a complete list of deployment-related issues we are tackling over the summer, see [the list on GitHub issues](https://github.com/issues?q=label%3Adeployment+is%3Aopen+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Ascifio+user%3Ascijava+user%3ATrakEM2+).
 
-As you can see, it's going to be a busy summer. We will push hard to have a newer, stronger ImageJ ready to go for [this fall's ImageJ conference](/events/Conference_2015)!
+As you can see, it's going to be a busy summer. We will push hard to have a newer, stronger ImageJ ready to go for [this fall's ImageJ conference](/events/conference-2015)!
 
  

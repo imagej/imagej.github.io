@@ -4,7 +4,7 @@ title: Changes from ImgLib1 to ImgLib2
 categories: [imglib2]
 ---
 
-{% include project content='ImgLib2' %}At the [Madison hackathon](/events/2011_Hackathon_in_Madison), quite a lot has been done about design issues of the originally published ImgLib (which was already the 6th generation). Unfortunately, these improvements were not possible in a fully backwards-compatible manner.
+{% include project content='ImgLib2' %}At the [Madison hackathon](/events/2011-hackathon-in-madison), quite a lot has been done about design issues of the originally published ImgLib (which was already the 6th generation). Unfortunately, these improvements were not possible in a fully backwards-compatible manner.
 
 
 

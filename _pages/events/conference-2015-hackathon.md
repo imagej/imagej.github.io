@@ -4,7 +4,7 @@ title: Conference 2015 Hackathon
 categories: [Hackathons]
 ---
 
-There was a [hackathon](/events/Hackathon) in Madison following the ImageJ [Conference 2015](/events/Conference_2015).
+There was a [hackathon](/events/hackathons) in Madison following the ImageJ [Conference 2015](/events/conference-2015).
 
 ## Topic
 
@@ -130,7 +130,7 @@ Some people were not present at the hackathon on weekends.
 
 ### Thursday, September 3 - Friday, September 4
 
-[ImageJ 2015 conference](/events/Conference_2015) at the [H.F. DeLuca Forum](http://discovery.wisc.edu/home/town-center/apply-to-reserve-town-center-spaces/large-rooms/h-f-deluca-forum/h-f-deluca-forum.cmsx), [Wisconsin Institutes for Discovery](http://discovery.wisc.edu/), 330 N. Orchard St., Madison, WI 53715.
+[ImageJ 2015 conference](/events/conference-2015) at the [H.F. DeLuca Forum](http://discovery.wisc.edu/home/town-center/apply-to-reserve-town-center-spaces/large-rooms/h-f-deluca-forum/h-f-deluca-forum.cmsx), [Wisconsin Institutes for Discovery](http://discovery.wisc.edu/), 330 N. Orchard St., Madison, WI 53715.
 
 -   **Directions:** [Directions to the Discovery Building](http://discovery.wisc.edu/home/discovery/plan-your-visit/directions/)
 -   **Maps:** [Google map](https://www.google.com/maps/place/Wisconsin+Institutes+for+Discovery,+University+of+Wisconsin-Madison,+330+N+Orchard+St,+Madison,+WI+53715), [Campus map](http://map.wisc.edu/)

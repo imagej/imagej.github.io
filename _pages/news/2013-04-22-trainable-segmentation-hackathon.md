@@ -4,7 +4,7 @@ title: 2013-04-22 - Trainable Segmentation Hackathon
 categories: [News,ImageJ2,Hackathons]
 ---
 
-For three days last week, [LOCI](http://loci.wisc.edu/) in Madison hosted Dr Ignacio Arganda-Carreras of [Trainable Segmentation](/plugins/tws) fame for a mini-[hackathon](/events/Hackathon). Just in case you do not know what the Trainable Segmentation is: it provides an intuitive, graphical way to apply advanced Machine Learning techniques to image segmentation.
+For three days last week, [LOCI](http://loci.wisc.edu/) in Madison hosted Dr Ignacio Arganda-Carreras of [Trainable Segmentation](/plugins/tws) fame for a mini-[hackathon](/events/hackathons). Just in case you do not know what the Trainable Segmentation is: it provides an intuitive, graphical way to apply advanced Machine Learning techniques to image segmentation.
 
 During this hackathon, Ignacio held a well-received workshop introducing the underlying technique and teaching how to use it in advanced ways by using one of Fiji's scripting languages.
 
