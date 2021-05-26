@@ -11,7 +11,7 @@ categories: [Development]
 -   For information on the *legal* structure, see [Licensing](/licensing).' %}
 
 
-The [ImageJ](/about) project, and related projects in the [SciJava](SciJava) software ecosystem, are governed as [open source](Open_source) software projects. Everybody is welcome to [contribute](/about/contributing) with [plugins](/plugins), patches, [bug reports](/help/report-a-bug), [tutorials](/tutorials), [documentation](/learn), and artwork.
+The [ImageJ](/about) project, and related projects in the [SciJava](SciJava) software ecosystem, are governed as [open source](Open_source) software projects. Everybody is welcome to [contribute](/about/contributing) with [plugins](/plugins), patches, [bug reports](/help/bugs), [tutorials](/tutorials), [documentation](/learn), and artwork.
 
 That said, every project needs leaders: the ones who participate in *governance* of the project, {% include wikipedia title='Software maintenance' text='maintaining'%} the software and making key decisions.
 
@@ -63,7 +63,7 @@ Each component's page features an informational sidebar with a status report der
 
 ### Support status
 
-**Support status** indicates the level to which the team responds to questions and [issue reports](/help/report-a-bug).
+**Support status** indicates the level to which the team responds to questions and [issue reports](/help/bugs).
 
 | Status  | Meaning                                                                                                                                                                                         |
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

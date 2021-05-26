@@ -20,7 +20,7 @@ This change has important consequences for users. Previously, if a script or plu
 
 Note that messages on the standard *output* stream do not cause the Console to appear, because there are many ImageJ plugins in the wild (e.g., [Bio-Formats](/formats/bio-formats)) that emit information on that stream. The Console will only appear automatically when messages to the standard *error* stream occur. However, you can bring it up any time by choosing Console from the bottom of the Window menu.
 
-The Console feature still has some rough edges ([scijava-common\#155](https://github.com/scijava/scijava-common/issues/155), [scijava-ui-swing\#5](https://github.com/scijava/scijava-ui-swing/issues/5), [scijava-ui-swing\#6](https://github.com/scijava/scijava-ui-swing/issues/6))—as always, [bug reports](/help/report-a-bug) are welcome. But we believe this change is an important step forward to avoid confusion and improve the [quality of bug reports](/help/bugs#bug-reporting-best-practices) overall.
+The Console feature still has some rough edges ([scijava-common\#155](https://github.com/scijava/scijava-common/issues/155), [scijava-ui-swing\#5](https://github.com/scijava/scijava-ui-swing/issues/5), [scijava-ui-swing\#6](https://github.com/scijava/scijava-ui-swing/issues/6))—as always, [bug reports](/help/bugs) are welcome. But we believe this change is an important step forward to avoid confusion and improve the [quality of bug reports](/help/bugs#bug-reporting-best-practices) overall.
 
 ### Better ImageJ2 data structure syncing
 

@@ -30,7 +30,7 @@ distribution of ImageJ, as well as from the Cookbook
   .cookbook-install-table img { max-width: 400px; max-height: 200px; }
 </style>
 
-| 1. | [Download and install](/fiji/downloads) the Fiji distribution of ImageJ. |                                               |
+| 1. | [Download and install](/software/fiji/downloads) the Fiji distribution of ImageJ. |                                               |
 | 2. | From the Fiji menu, select {% include bc path='Help | Update...' %}      | {% include img src="1-update-fiji" %}         |
 | 3. | Click the **Manage update sites** button                                 | {% include img src="2-manage-update-sites" %} |
 | 4. | Check the **Cookbook** update site                                       | {% include img src="3-enable-cookbook" %}     |

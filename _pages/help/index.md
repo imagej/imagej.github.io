@@ -37,4 +37,4 @@ If you encounter problems, check the [Troubleshooting](/help/troubleshooting) pa
 
 # Reporting bugs
 
-If you have found a bug, you can help the project by [reporting it](/help/report-a-bug).
+If you have found a bug, you can help the project by [reporting it](/help/bugs).

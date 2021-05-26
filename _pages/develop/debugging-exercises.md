@@ -522,7 +522,7 @@ If a fix is unclear:
 
 -   Use any of the standard [channels for help](/help).
 
-Even if you can't contribute a fix, if you went through the effort of debugging - at the very least you should identify the problem, steps you took to debug, and potential fix(es) via a [bug report](/help/report-a-bug) so that your effort is not lost.
+Even if you can't contribute a fix, if you went through the effort of debugging - at the very least you should identify the problem, steps you took to debug, and potential fix(es) via a [bug report](/help/bugs) so that your effort is not lost.
 
 ## See Also
 

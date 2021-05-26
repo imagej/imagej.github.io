@@ -122,7 +122,7 @@ There are several plugins available for performing colocalization analysis. In a
 
 Coloc 2 implements and performs the pixel intensity correlation over space methods of {% include wikipedia title='Pearson product-moment correlation coefficient' text='Pearson'%}, [Manders](/media/manders.pdf), [Costes](/media/costes-etalcoloc.pdf), [Li](/media/lietalcoloc.pdf) and more, for scatterplots, analysis, automatic thresholding and statistical significance testing.
 
-None of this gives sensible results unless you have your imaging hardware set up appropriately and have acquired images properly, and have performed appropriate controls for bleed-through and chromatic shift etc. See [here for hardware set up guidelines](/imaging/colocalization-image-acquisition).
+None of this gives sensible results unless you have your imaging hardware set up appropriately and have acquired images properly, and have performed appropriate controls for bleed-through and chromatic shift etc. See [here for hardware set up guidelines](/imaging/colocalization-acquisition).
 
 This plugin supersedes the [Colocalization Threshold](/plugins/colocalization-threshold) and [Colocalization Test](/plugins/colocalization-test) plugins, which unfortunately were buggy and hard to maintain. So we started from scratch with a carefully planned and designed new plugin. While the old plugins are described below as well, we recommend that you use Coloc 2 instead.
 

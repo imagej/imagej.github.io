@@ -6,7 +6,7 @@ categories: [Development]
 
 ![ 64px \| left \| link=https://opensource.org/](/media/osi-symbol.png) The [ImageJ](/about) project, and related projects in the [SciJava](SciJava) software ecosystem, are open source software projects. See the [Licensing](/licensing) page for details.
 
-Everybody is welcome to [contribute](/about/contributing) with [plugins](/plugins), patches, [bug reports](/help/report-a-bug), [tutorials](/tutorials), [documentation](/learn), and artwork.
+Everybody is welcome to [contribute](/about/contributing) with [plugins](/plugins), patches, [bug reports](/help/bugs), [tutorials](/tutorials), [documentation](/learn), and artwork.
 
 The [SciJava](SciJava) ecosystem is strongly committed to open-source software development. This software is not an open source software *product*—it is an open-source software *project* following an open-source development *process*. There are public [source code repositories](/develop/source), public [communication](/help#ways-to-get-help) channels, public [project management](/develop/project-management) resources, and of course, this [community editable website](/help/editing). See the [Philosophy](/develop/philosophy) page for more information.
 

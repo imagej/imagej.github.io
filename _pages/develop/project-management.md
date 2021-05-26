@@ -114,7 +114,7 @@ Issues and milestones are public-facing entities, yet their content can be highl
       </td>
       <td>
         <p>Report new issues using the big green "New issue" button,<br>
-        or via ImageJ's <a href="/help/report-a-bug">Report a Bug</a> plugin.</p>
+        or via ImageJ's <a href="/help/bugs">Report a Bug</a> plugin.</p>
       </td>
       <td></td>
     </tr>
@@ -228,7 +228,7 @@ The preferred mechanism to contribute improvements to [ImageJ](/about) and other
 
 -   [News](/news) about ImageJ and Fiji developments, including status updates, observations and comments about ImageJ programming.
 -   [Recent changes](Special_RecentChanges) to this web site (*not* the ImageJ code itself).
--   [BugZilla](https://fiji.sc/bugzilla) database of user-reported bugs from the [Report a Bug](/help/report-a-bug) plugin.
+-   [BugZilla](https://fiji.sc/bugzilla) database of user-reported bugs from the [Report a Bug](/help/bugs) plugin.
 
 ## Citable code
 

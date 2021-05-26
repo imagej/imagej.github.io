@@ -133,7 +133,7 @@ Otherwise, you can drag 'n drop the `.jar` files onto the ImageJ window, or use 
 
 Downgrading is generally not recommended as a long-term solution, but can be handy to avoid new bugs that crop up.
 
-*If you need to downgrade to avoid a critical bug, please [report that bug](/help/report-a-bug) to the developers so that it can be fixed in a future version!*
+*If you need to downgrade to avoid a critical bug, please [report that bug](/help/bugs) to the developers so that it can be fixed in a future version!*
 
 -   You can change the version of [ImageJ 1.x](/software/imagej1) used via the {% include bc path='Help | Update ImageJ...' %} menu item. This *only* changes the version of ImageJ 1.x—not all ImageJ components, [plugins](/plugins), etc.
 -   You can [switch to a different version of Java](#how-do-i-launch-imagej-with-a-different-version-of-java).
@@ -435,7 +435,7 @@ If you have an issue that is not mentioned here, you might want to [ask on one o
 
 ## How to report issues?
 
-Use the {% include bc path='Help | [Report a Bug](/help/report-a-bug)' %} command, which adds a ticket report to the [Fiji bug tracker](https://fiji.sc/bugzilla/). While private mail might seem more desirable sometimes, but it is almost always inferior to the open process we established in ImageJ. For starters, bug reporters are unlikely to know who would be the best person to address the issue.
+Use the {% include bc path='Help | [Report a Bug](/help/bugs)' %} command, which adds a ticket report to the [Fiji bug tracker](https://fiji.sc/bugzilla/). While private mail might seem more desirable sometimes, but it is almost always inferior to the open process we established in ImageJ. For starters, bug reporters are unlikely to know who would be the best person to address the issue.
 
 ## I reported an issue, but it is still not fixed! Why not?
 
@@ -449,7 +449,7 @@ So please understand that just because we have not responded to a bug report, do
 
 If you want to increase the chances of your issue being worked on, you can:
 
--   Report the issue using the [Report a Bug](/help/report-a-bug) plugin (in the Help menu).
+-   Report the issue using the [Report a Bug](/help/bugs) plugin (in the Help menu).
 -   Provide a [minimal, complete, verifiable example](http://stackoverflow.com/help/mcve).
 -   [Describe what you already tried](http://whathaveyoutried.com/).
 -   [Put as much effort into your question](http://stackoverflow.com/help/how-to-ask) as you expect to be put into its response.

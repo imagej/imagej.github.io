@@ -67,7 +67,7 @@ If the first method does not work, and you can reproduce the hang:
         3.  Select the stack trace by dragging with the left mouse button.
         4.  Press {% include key key='Enter' %} to copy it to the clipboard.
 
-Once you have the stack trace. you can paste it into a [bug report](/help/report-a-bug)!
+Once you have the stack trace. you can paste it into a [bug report](/help/bugs)!
 
 ## If ImageJ crashes
 
@@ -75,7 +75,7 @@ If ImageJ {% include wikipedia title='Crash (computing)' text='crashes'%}—i.e.
 
 -   Launch ImageJ [from the console](#launching-imagej-from-the-console) as described above.
 -   Perform the same actions which previously resulted in the crash.
--   Take note of any error messages in the console window, which you can copy and paste it into a [bug report](/help/report-a-bug).
+-   Take note of any error messages in the console window, which you can copy and paste it into a [bug report](/help/bugs).
 
 ## If ImageJ does not start up
 
@@ -157,7 +157,7 @@ While ImageJ strives for [reproducible](/develop/architecture#reproducible-build
     -   Click the [status bar](/learn#the-status-bar) and you will see something like "ImageJ 2.0.0-rc-26/1.49p".
     -   If these two values differ between your machines, the versions are not the same.
     -   See also [How can I verify that my ImageJ is really 100% up to date?](/help/faq#how-can-i-verify-that-my-imagej-is-really-100-up-to-date).
-    -   If the two versions of ImageJ match but produce different numerical results, it is a bug—please [report it](/help/report-a-bug)!
+    -   If the two versions of ImageJ match but produce different numerical results, it is a bug—please [report it](/help/bugs)!
 -   Ensure that the *options* of ImageJ match between the machines.
     -   A fast way to ensure this is the {% include bc path='Edit | Options | Reset...'%} command, which resets everything to its default state.
     -   Alternately, you can check the settings in the following dialog boxes:
@@ -170,7 +170,7 @@ While ImageJ strives for [reproducible](/develop/architecture#reproducible-build
 -   If you are running your analysis [headless](/learn/headless), there might be a bug in the headless support.
     -   Try the analysis *headless* on both machines and see if the results match.
     -   Try the analysis *headless* vs. through the GUI on a single machine, and see if the results match.
-    -   If the results differ due to headlessness, it is a bug—please [report it](/help/report-a-bug)!
+    -   If the results differ due to headlessness, it is a bug—please [report it](/help/bugs)!
 
 # Common error messages
 

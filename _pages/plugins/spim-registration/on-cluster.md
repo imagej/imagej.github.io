@@ -62,7 +62,7 @@ Change to a directory where you have sufficient privileges to install software.
 
     cd /sw/users/tomancak/packages
 
-Download Fiji nightly build from [Fiji's download page](/fiji/downloads).
+Download Fiji nightly build from [Fiji's download page](/software/fiji/downloads).
 
     wget http://jenkins.imagej.net/job/Stable-Fiji/lastSuccessfulBuild/artifact/fiji-linux64.tar.gz
 

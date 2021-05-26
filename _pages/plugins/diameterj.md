@@ -9,7 +9,7 @@ categories: [Plugins,Analysis]
 {% include person id='NHotaling' %}
 {% endcapture %}
 
-{% include info-box software='ImageJ 1.48 or newer (including ImageJ 2.XX) and Fiji' name='DiameterJ' author=NHotaling maintainer=NHotaling filename='ImageJ 1.48a to 2.XXX [DiameterJ v1.018](/media/plugins/diameterj-1-018.zip) Fiji any version [DiameterJ v1.018](/media/diameterj-fiji---1-018.zip)' source=' [Source Code](https://github.com/NHotaling/DiameterJ)' released='February 2015' latest-version='August 5<sup>th</sup>, 2016' status='v X.003 (first version released publicly)' category='[Plugins](/plugin-index) [Analysis](/plugin-index#analysis)' %} <span style="display: none">nanofiber diameter measurement, nanofiber diameter analysis, nanofiber diameter characterization, nanofiber diameter software, nanofiber diameter plugin, nanofiber diameter program, ImageJ nanofiber diameter, Fiji nanofiber diameter, automated nanofiber diameter, free, open source, radius</span>**DiameterJ**[^1] is a free, open source plugin created for ImageJ, ImageJ 2, and Fiji developed at the National Institute of Standards and Technology. DiameterJ is a validated nanofiber diameter characterization tool. DiameterJ is able to analyze an image and find the diameter of nanofibers or microfibers at every pixel along a fibers axis and produces a histogram of these diameters. Included with this histogram are summary statistics such as mean fiber diameter and most occurring fiber diameter (mode). DiameterJ also bundles [OrientationJ](http://bigwww.epfl.ch/demo/orientation/)[^2] for a complete analysis of fiber orientation within an image as well as the "Analyze Particles" function built into ImageJ/Fiji to analyze pore space within scaffolds and produce summary statistics for pores.
+{% include info-box software='ImageJ 1.48 or newer (including ImageJ 2.XX) and Fiji' name='DiameterJ' author=NHotaling maintainer=NHotaling filename='ImageJ 1.48a to 2.XXX [DiameterJ v1.018](/media/plugins/diameterj-1-018.zip) Fiji any version [DiameterJ v1.018](/media/plugins/diameterj-fiji-1-018.zip)' source=' [Source Code](https://github.com/NHotaling/DiameterJ)' released='February 2015' latest-version='August 5<sup>th</sup>, 2016' status='v X.003 (first version released publicly)' category='[Plugins](/plugin-index) [Analysis](/plugin-index#analysis)' %} <span style="display: none">nanofiber diameter measurement, nanofiber diameter analysis, nanofiber diameter characterization, nanofiber diameter software, nanofiber diameter plugin, nanofiber diameter program, ImageJ nanofiber diameter, Fiji nanofiber diameter, automated nanofiber diameter, free, open source, radius</span>**DiameterJ**[^1] is a free, open source plugin created for ImageJ, ImageJ 2, and Fiji developed at the National Institute of Standards and Technology. DiameterJ is a validated nanofiber diameter characterization tool. DiameterJ is able to analyze an image and find the diameter of nanofibers or microfibers at every pixel along a fibers axis and produces a histogram of these diameters. Included with this histogram are summary statistics such as mean fiber diameter and most occurring fiber diameter (mode). DiameterJ also bundles [OrientationJ](http://bigwww.epfl.ch/demo/orientation/)[^2] for a complete analysis of fiber orientation within an image as well as the "Analyze Particles" function built into ImageJ/Fiji to analyze pore space within scaffolds and produce summary statistics for pores.
 
 ## Overview
 
@@ -42,7 +42,7 @@ http://www.sciencedirect.com/science/article/pii/S0142961215004652
 
 For ImageJ 1.48 or newer: [DiameterJ v. 1.018 for ImageJ](/media/plugins/diameterj-1-018.zip)
 
-For Fiji latest release: [DiameterJ v. 1.018 for Fiji](/media/diameterj-fiji---1-018.zip)
+For Fiji latest release: [DiameterJ v. 1.018 for Fiji](/media/plugins/diameterj-fiji-1-018.zip)
 
 ### How DiameterJ Works
 
@@ -386,39 +386,37 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 
 ## FAQs
 
-:\# Q: When running either segmentation algorithm an error occurs that says either "Unrecognized command: "Auto Threshold"" or "Unrecognized command: "Auto Threshold..""
+**Q: When running either segmentation algorithm an error occurs that says either "Unrecognized command: "Auto Threshold"" or "Unrecognized command: "Auto Threshold..""**
 
-:\#:\* A: *You have installed the wrong version of DiameterJ into your ImageJ/Fiji release. Fiji gives the "Auto Threshold.." error and it means you installed ImageJ's plugin into Fiji. ImageJ gives the "Auto Threshold" error and it means you've installed Fiji's software version into ImageJ0. Please download and install the correct version of DiameterJ for the piece of software you are using.*
+**A:** *You have installed the wrong version of DiameterJ into your ImageJ/Fiji release. Fiji gives the "Auto Threshold.." error and it means you installed ImageJ's plugin into Fiji. ImageJ gives the "Auto Threshold" error and it means you've installed Fiji's software version into ImageJ0. Please download and install the correct version of DiameterJ for the piece of software you are using.*
 
-:\# Q: When I start ImageJ or Fiji for the first time after installing DiameterJ I get "Plugin configuration error: C:\\... Duplicate command: "XXXX" (already in "YYYY")
+**Q: When I start ImageJ or Fiji for the first time after installing DiameterJ I get "Plugin configuration error: C:\\... Duplicate command: "XXXX" (already in "YYYY")** (where "..." is the directory where your plugin is located, "XXXX" is the name of the plugin and "YYYY" is the name of the directory where that plugin is already.)
 
-:\#: <small> Where "..." is the directory where your plugin is located, "XXXX" is the name of the plugin and "YYYY" is the name of the directory where that plugin is already.</small>
+**A:** *You have duplicate plugins! Go to the file where you unzipped DiameterJ and its other plugins open the "/plugins/diameterj", "OrientationJ", or "Analyze Skeleton 2D - 3D" folder" and delete the file named XXXX*
 
-:\#:\* A: *You have duplicate plugins! Go to the file where you unzipped DiameterJ and its other plugins open the "/plugins/diameterj", "OrientationJ", or "Analyze Skeleton 2D - 3D" folder" and delete the file named XXXX*
+**Q: When I run DiameterJ an error occurs that says "Unrecognized Command: "Skeleton Intersections"" or "Unrecognized Command: "OrientationJ"" or "Unrecognized Command: "Analyze Skeleton (2D/3D)"" or "Unrecognized Command: "Statistical Region Merging""**
 
-:\# Q: When I run DiameterJ an error occurs that says "Unrecognized Command: "Skeleton Intersections"" or "Unrecognized Command: "OrientationJ"" or "Unrecognized Command: "Analyze Skeleton (2D/3D)"" or "Unrecognized Command: "Statistical Region Merging""
+**A:** *During installation one or more of the plugins that is needed for DiameterJ was missed. Please go back to the zip file that you downloaded for DiameterJ and copy all files into the plugins folder of ImageJ/Fiji*
 
-:\#:\* A: *During installation one or more of the plugins that is needed for DiameterJ was missed. Please go back to the zip file that you downloaded for DiameterJ and copy all files into the plugins folder of ImageJ/Fiji*
+**Q: When I run DiameterJ an error occurs that says "Unrecognized Command: AAAA" where AAAA is any command not listed above.**
 
-:\# Q: When I run DiameterJ an error occurs that says "Unrecognized Command: AAAA" where AAAA is any command not listed above.
+**A:** *You are probably using a version of ImageJ that was updated to v. 1.48 or newer and did not create a fresh install of ImageJ. DiameterJ uses several plugins/scripts that ImageJ does not include in its updates, they ONLY include them in fresh installs. Thus you must uninstall ImageJ and reinstall a new version 1.48 or newer. Please remember save a copy of any plugins you added to ImageJ before uninstalling it, these will be lost during the uninstall process unless you save a copy in another location on your computer.*
 
-:\#:\* A: *You are probably using a version of ImageJ that was updated to v. 1.48 or newer and did not create a fresh install of ImageJ. DiameterJ uses several plugins/scripts that ImageJ does not include in its updates, they ONLY include them in fresh installs. Thus you must uninstall ImageJ and reinstall a new version 1.48 or newer. Please remember save a copy of any plugins you added to ImageJ before uninstalling it, these will be lost during the uninstall process unless you save a copy in another location on your computer.*
+**Q: When I run DiameterJ an error appears in the log that says "Error there are no fibers in "BBBB".tif to analyze".**
 
-:\# Q: When I run DiameterJ an error appears in the log that says "Error there are no fibers in "BBBB".tif to analyze".
+**A:** *The images that are in the folder that you have selected are not binary (black and white) images or the image is completely black. Please segment your image before trying to analyze it with DiameterJ and then move the segmented image into a separate folder with only black and white images in it.*
 
-:\#:\* A: *The images that are in the folder that you have selected are not binary (black and white) images or the image is completely black. Please segment your image before trying to analyze it with DiameterJ and then move the segmented image into a separate folder with only black and white images in it.*
+**Q: No error occurs but when I ask the Segment XXX or DiameterJ to analyze a folder that I have images in, no output is produced by Segment XXX/DiameterJ.**
 
-:\# Q: No error occurs but when I ask the Segment XXX or DiameterJ to analyze a folder that I have images in, no output is produced by Segment XXX/DiameterJ.
+**A:** *The image is probably not a .tif file. For now DiameterJ only analyzes .tif images. Please save your images as .tif files and then analyze with DiameterJ*
 
-:\#:\* A: *The image is probably not a .tif file. For now DiameterJ only analyzes .tif images. Please save your images as .tif files and then analyze with DiameterJ*
+**Q: DiameterJ keeps giving me an error on a file and won't continue on to the next file**
 
-:\# Q: DiameterJ keeps giving me an error on a file and won't continue on to the next file
+**A:** *Unfortunately DiameterJ goes serially through files and isn't capable of skipping a file with an error. Simply remove the file that is giving the error from the folder you wish to analyze and rerun DiameterJ.*
 
-:\#:\* A: *Unfortunately DiameterJ goes serially through files and isn't capable of skipping a file with an error. Simply remove the file that is giving the error from the folder you wish to analyze and rerun DiameterJ.*
+**Q: None of the images I am analyzing are segmenting well with your algorithms, why not?**
 
-:\# Q: None of the images I am analyzing are segmenting well with your algorithms, why not?
-
-:\#:\* A: *The algorithms included by default with DiameterJ rely heavily on uniformity of fiber color and/or a dark background. Below are four good examples and four examples that work poorly for image segmentation with the default algorithms. Keep in mind there are many more segmentation algorithms than I have included with DiameterJ in both Fiji and ImageJ. See the [Complementary Tools](/plugins/diameterj#complementary-tools) or [Image Segmentation](/plugins/diameterj#image-segmentation) sections of this work for a few of the options available.*
+**A:** *The algorithms included by default with DiameterJ rely heavily on uniformity of fiber color and/or a dark background. Below are four good examples and four examples that work poorly for image segmentation with the default algorithms. Keep in mind there are many more segmentation algorithms than I have included with DiameterJ in both Fiji and ImageJ. See the [Complementary Tools](/plugins/diameterj#complementary-tools) or [Image Segmentation](/plugins/diameterj#image-segmentation) sections of this work for a few of the options available.*
 
 {% include img src="good-vs-bad-seg" align="center" width="750" title="Example images that segment well and that do not segment well with DiameterJ's default segmentation algorithms" %}
 
