@@ -1,5 +1,3 @@
-Cf_images.png
-Cf_table.png
 Coordinate_variation.png
 Coordinate_vary.png
 Hippocampal_CA3_Interneuron-1.png
