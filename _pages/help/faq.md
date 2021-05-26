@@ -39,6 +39,12 @@ See the [MacOS](/platforms/macos) page.
 
 See the [MacOS](/platforms/macos) page.
 
+## How do I run ImageJ with JavaFX support on macOS?
+
+Whether JavaFx is supported on macOS depends on the version of java that is used. You can check the version of java packaged with ImageJ or Fiji by right-clicking the app and viewing the contents. Then go into the java/macos folder. Versions of java starting with jdk1.8.0 should support JavaFX. However, if you see the default upon installation, adoptopenjdk-8.jdk, you will not have JavaFX support. In this case, you can add JavaFX support by replacing this will the Azul jdk that comes with JavaFX included as described [here](https://forum.image.sc/t/feedback-needed-bundled-java-future-directions/44030/17). 
+
+Can you check if you have JavaFX installed using the Plugins>Utilities>Find Jar for Class and searching for javafx.scene.Scene. If you can't fine this class then you don't have javafx installed.
+
 # Running
 
 ## How do I launch ImageJ with a different version of Java?
@@ -51,8 +57,10 @@ Install Java 8, and delete or rename the `ImageJ.app\java` and/or `ImageJ.app\jr
 
 Use the `--java-home` command line option:
 
-`/Applications/ImageJ.app/Contents/MacOS/ImageJ-macosx --java-home \`  
-`  '/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home'`
+<!-- -->
+
+    /Applications/ImageJ.app/Contents/MacOS/ImageJ-macosx --java-home \  
+    '/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home'
 
 Note: the `--java-home` flag does not support Apple Java installations. Specifying Apple Javas with this flag will give an error message about being unable to find `lib/server/libjvm.dylib`. However, ImageJ will fall back to Apple Java if no other Java installations are available.
 
@@ -73,8 +81,10 @@ See "How do I setup a launcher app" below for instructions on turning this invoc
 
 Use the `--java-home` command line option:
 
-`$HOME/ImageJ.app/ImageJ-linux64 --java-home \`  
-`  /usr/lib/jvm/java-7-openjdk-amd64`
+<!-- -->
+
+    $HOME/ImageJ.app/ImageJ-linux64 --java-home \  
+    /usr/lib/jvm/java-7-openjdk-amd64
 
 One downside of doing this is that ImageJ will launch in a separate process, which has some unintuitive side effects. For example, Ubuntu's Unity user interface will not allow you to "Pin to Launcher" in this case...
 
@@ -82,8 +92,10 @@ One downside of doing this is that ImageJ will launch in a separate process, whi
 
 Start Automator and select to create an *Application*. Double-click *Run Shell Script* in the Library/Utilities folder and replace the text content — cat — with the following:
 
-`open -a "Fiji.app" --args --java-home \`  
-` '/Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/'`
+<!-- -->
+
+    open -a "Fiji.app" --args --java-home \  
+    /Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/
 
 Save anywhere you like.
 
