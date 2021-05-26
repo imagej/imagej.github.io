@@ -1,6 +1,6 @@
 ---
 title: Tutorials
-section: Learn
+section: Learn:ImageJ
 ---
 
 ## Tutorials for new users

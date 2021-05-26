@@ -1,5 +1,5 @@
 ---
 title: Platforms
-section: Learn:Supported Platforms
+section: Learn:ImageJ:Supported Platforms
 ---
 {% include warning/stub %}

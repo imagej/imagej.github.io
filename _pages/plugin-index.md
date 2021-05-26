@@ -1,6 +1,6 @@
 ---
 title: Plugin Index
-section: Explore
+section: Extend
 ---
 
 {%- assign category-string = "" -%}

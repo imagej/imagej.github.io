@@ -1,6 +1,6 @@
 ---
 title: Developing ImageJ in Eclipse
-section: Develop:Tools:IDEs
+section: Extend:Development:Tools:IDEs
 ---
 
 This article explains how to install, configure and use Eclipse to develop

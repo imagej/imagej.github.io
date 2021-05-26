@@ -1,6 +1,6 @@
 ---
 title: User Guides
-section: Learn
+section: Learn:ImageJ
 ---
 
 <div style="display: table">

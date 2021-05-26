@@ -1,6 +1,6 @@
 ---
 title: Licensing
-section: About:Licensing
+section: Contribute:Licensing
 ---
 
 {% include notice icon="info" content='This page describes the *legal* structure of [SciJava](SciJava) projects.

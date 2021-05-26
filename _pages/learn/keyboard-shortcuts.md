@@ -1,6 +1,6 @@
 ---
 title: Keyboard Shortcuts
-section: Learn
+section: Learn:ImageJ
 ---
 
 ImageJ has a lot of keyboard shortcuts.
