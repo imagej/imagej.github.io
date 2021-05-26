@@ -15,7 +15,7 @@ You can find the dotfiles in the following repositories:
   <tbody>
     <tr>
       <td style="text-align: center; vertical-align: bottom">
-        <p><a href="/users/ctrueden"><img src="http://gravatar.com/avatar/63df759e2779af56fd050a968ff98d09" width="48" height="48"></a><br>
+        <p><a href="/people/ctrueden"><img src="http://gravatar.com/avatar/63df759e2779af56fd050a968ff98d09" width="48" height="48"></a><br>
         {% include github org='ctrueden' repo='dotfiles' label='ctrueden/dotfiles' %}</p>
       </td>
       <td style="text-align: center; vertical-align: bottom">

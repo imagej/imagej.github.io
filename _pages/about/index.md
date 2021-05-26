@@ -42,7 +42,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
         many plugins useful for scientific image analysis in fields such as life
         sciences. It is actively maintained, with updates released
         often.<br><br>We recommend Fiji as the preferred version of ImageJ.</td>
-      <td><a href="/users/dscho#a-short-story-about-fiji">Dec. 2007</a></td>
+      <td><a href="/people/dscho#a-short-story-about-fiji">Dec. 2007</a></td>
       <td>Active</td>
     </tr>
     <tr>

@@ -20,11 +20,11 @@ categories: [Skeleton,Analysis,Plugins,Neuroanatomy]
 {% capture source%}
 {% include github org='tferr' repo='hIPNAT' %}
 {% endcapture %}
-{% include info-box software='Fiji' name='Strahler Analysis' maintainer=maintainer author=author filename='hIPNAT_.jar ([Neuroanatomy update site](/users/Neuroanatomy))' source=source released='April 2016' category='[Plugins](/plugin-index), [Neuroanatomy](/plugin-index#neuroanatomy), [Analysis](/plugin-index#analysis), [Skeleton](/plugin-index#skeleton)' %}
+{% include info-box software='Fiji' name='Strahler Analysis' maintainer=maintainer author=author filename='hIPNAT_.jar ([Neuroanatomy update site](/plugins/Neuroanatomy))' source=source released='April 2016' category='[Plugins](/plugin-index), [Neuroanatomy](/plugin-index#neuroanatomy), [Analysis](/plugin-index#analysis), [Skeleton](/plugin-index#skeleton)' %}
 
 </div>
 
-A plugin from the [Neuroanatomy update site](/users/Neuroanatomy) that performs Strahler analysis on topographic skeletons (2D/3D). {% include wikipedia title='Strahler number' text='Strahler numbering'%} is a numerical procedure that summarizes the branching complexity of mathematical trees.
+A plugin from the [Neuroanatomy update site](/plugins/Neuroanatomy) that performs Strahler analysis on topographic skeletons (2D/3D). {% include wikipedia title='Strahler number' text='Strahler numbering'%} is a numerical procedure that summarizes the branching complexity of mathematical trees.
 
 {% include notice icon="info" content='This page describes how to perform Strahler Analysis on skeletonized images. For analysis of traced structures have a look at [SNT](/plugins/snt).' %}
 
@@ -125,7 +125,7 @@ If *Show detailed information* is checked, *Average branch length*, *N. of trees
 
 ## Installation
 
-To install *Strahler Analysis* you must use Java 8 and subscribe to the [Neuroanatomy update site](/users/Neuroanatomy).
+To install *Strahler Analysis* you must use Java 8 and subscribe to the [Neuroanatomy update site](/plugins/Neuroanatomy).
 
 ## Related Links
 
@@ -148,7 +148,7 @@ Original publications by {% include wikipedia title='Robert E. Horton' text='Rob
 
 ## Citing
 
-Plugins from the [Neuroanatomy update site](/users/Neuroanatomy):
+Plugins from the [Neuroanatomy update site](/plugins/Neuroanatomy):
 
 :\* Tiago Ferreira (2016) [<img src="https://zenodo.org/badge/doi/10.5281/zenodo.49399.svg" alt="10.5281/zenodo.49399">](http://dx.doi.org/10.5281/zenodo.49399)
 

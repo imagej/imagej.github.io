@@ -4,7 +4,7 @@
 {%- assign source = include.source -%}
 
 {%- assign image-src = "" %}
-{%- assign person-url = "/users/" | append: include.person -%}
+{%- assign person-url = "/people/" | append: include.person -%}
 {%- assign people = site.pages | where: "url", person-url -%}
 {% if people.size > 0 -%}
   {%- assign person-name = people[0].name -%}

@@ -46,7 +46,7 @@ When you start a new [Maven](/develop/maven) project, one of the first things yo
             <developer>
                 <id>[MY-GITHUB-ID]</id>
                 <name>[MY-FULL-NAME]</name>
-                <url>https://imagej.net/users/[MY-GITHUB-ID]</url>
+                <url>https://imagej.net/people/[MY-GITHUB-ID]</url>
                 <roles>
                     <!-- see https://imagej.net/Team -->
                     <role>founder</role>

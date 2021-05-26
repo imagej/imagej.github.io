@@ -77,7 +77,7 @@ function fillRole(id, people) {
     var url = person.url;
     if (!name && id) name = id;
     if (!name) continue; // no name or id -- skip this person
-    if (!url && id) url = `/users/${id}`;
+    if (!url && id) url = `/people/${id}`;
     var li = document.createElement('li');
     li.innerHTML = url ?
       `<a class="person" href="${url}">${name}</a>` :

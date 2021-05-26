@@ -7,7 +7,7 @@ categories: [Software,Citable]
 {% include img align="left" name="nih-image" src="/media/icons/nih-image.png" %}
 [NIH Image](https://imagej.nih.gov/nih-image/) is the precursor to
 [ImageJ](/about). NIH Image was originally written by
-[Wayne Rasband](/users/rasband) in Pascal for the Macintosh.
+[Wayne Rasband](/people/rasband) in Pascal for the Macintosh.
 It was first released in 1987, shared on floppy disks.
 
 ## Publication

@@ -56,11 +56,11 @@ Please note that currently the Zeiss processing computer does not support data t
 
 ### Installing Fiji on the cluster
 
-*Note: in case you use the MPI-CBG cluster 'madmax' you might spare yourself some minutes and just hijack Pavel's well maintained Fiji installation. Just skipt the Fiji installation section and do not change the path to the Fiji executables (/sw/users/tomancak/packages/...) used in the example scripts shown below.)*
+*Note: in case you use the MPI-CBG cluster 'madmax' you might spare yourself some minutes and just hijack Pavel's well maintained Fiji installation. Just skipt the Fiji installation section and do not change the path to the Fiji executables (/sw/people/tomancak/packages/...) used in the example scripts shown below.)*
 
 Change to a directory where you have sufficient privileges to install software.
 
-    cd /sw/users/tomancak/packages
+    cd /sw/people/tomancak/packages
 
 Download Fiji nightly build from [Fiji's download page](/software/fiji/downloads).
 
@@ -218,7 +218,7 @@ Now we create a bash script **create-resaving-jobs** that will generate the so c
         job="$jobs/resave-$i.job"
             echo $job
             echo "#!/bin/bash" > "$job"
-            echo "xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 \
+            echo "xvfb-run -a /sw/people/tomancak/packages/Fiji.app/ImageJ-linux64 \
                  -Ddir=$dir -Dtimepoint=$i -Dangle=280 \
                  -- --no-splash ${jobs}/resaving.bsh" >> "$job"
             chmod a+x "$job"
@@ -239,7 +239,7 @@ This will generate 240 **resave-<number>.job** files in the current directory
 each one of those files looks like this
 
     #!/bin/bash
-    xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64
+    xvfb-run -a /sw/people/tomancak/packages/Fiji.app/ImageJ-linux64
     -Ddir=/projects/tomancak_lightsheet/Tassos
     -Dtimepoint=38 -Dangle=280 -- --no-splash
      /projects/tomancak_lightsheet/Tassos/jobs/resaving/resaving.bsh
@@ -362,7 +362,7 @@ In a directory jobs/registration create bash script **create-registration-jobs**
         job="$jobs/register-$i.job"
             echo $job
             echo "#!/bin/bash" > "$job"
-            echo "xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 \
+            echo "xvfb-run -a /sw/people/tomancak/packages/Fiji.app/ImageJ-linux64 \
                   -Ddir=$dir -Dtimepoint=$i -Dangles=325,280,235 \
                   -- --no-splash ${jobs}/registration.bsh$
             chmod a+x "$job"
@@ -371,7 +371,7 @@ In a directory jobs/registration create bash script **create-registration-jobs**
 Run it to create 240 **registration-<number>.job** bash scripts
 
     #!/bin/bash
-    xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64
+    xvfb-run -a /sw/people/tomancak/packages/Fiji.app/ImageJ-linux64
     -Ddir=/projects/tomancak_lightsheet/Tassos -Dtimepoint=603
     -Dangles=325,280,235,10,190 -- --no-splash
     /projects/tomancak_lightsheet/Tassos/jobs/registration_integral_img/registration.bsh
@@ -442,7 +442,7 @@ We are now on node 27 and can use the filesystem as if we were on the head node 
 We create a bash script **timelapse.interactive**
 
     #!/bin/bash
-    xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 \
+    xvfb-run -a /sw/people/tomancak/packages/Fiji.app/ImageJ-linux64 \
              -Ddir=/projects/tomancak_lightsheet/Tassos/ -Dtimepoint=1-240 \
              -Dangles=325,280,235 \
               -- --no-splash ./time-lapse.bsh
@@ -523,7 +523,7 @@ As before we create a directory jobs/fusion and in there bash script **create-fu
         job="$jobs/fusion/fusion-$i.job"
             echo $job
             echo "#!/bin/bash" > "$job"
-            echo "xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 \
+            echo "xvfb-run -a /sw/people/tomancak/packages/Fiji.app/ImageJ-linux64 \
                   -Xms100g -Xmx100g -Ddir=$dir -Dtimepoint=$i -Dangles=325,280,235 \
                   -Dreference=120 -Dx=0 -Dy=0 -Dz=0 -Dw=1936 -Dh=1860 -Dd=1868 \
                   -- --no-splash /projects/tomancak_lightsheet/Tassos/jobs/fusion/fusion.bsh" \
@@ -534,7 +534,7 @@ As before we create a directory jobs/fusion and in there bash script **create-fu
 that will generate many **fusion-<number>.job** scripts
 
     #!/bin/bash
-    xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Xms100g -Xmx100g
+    xvfb-run -a /sw/people/tomancak/packages/Fiji.app/ImageJ-linux64 -Xms100g -Xmx100g
     -Ddir=/projects/tomancak_lightsheet/Tassos/ -Dtimepoint=10 -Dangles=325,280,235
     -Dreference=120 -Dx=0 -Dy=0 -Dz=0 -Dw=1936 -Dh=1860 -Dd=1868 -- --no-splash
     /projects/tomancak_lightsheet/Tassos/jobs/fusion/fusion.bsh
@@ -657,7 +657,7 @@ Now we are ready for the cluster mediated deconvolution on the downscaled data. 
         job="$jobs/deconvolution-$i.job"
             echo $job
             echo "#!/bin/bash" > "$job"
-            echo "xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 \
+            echo "xvfb-run -a /sw/people/tomancak/packages/Fiji.app/ImageJ-linux64 \
           -Xms100g -Xmx100g -Ddir=$dir -Dtimepoint=$i -Dangles=1-6 -Dreference=714 \
           -Dx=36 -Dy=168 -Dz=282 -Dw=1824 -Dh=834 -Dd=810 -Diter=10 \
           -- --no-splash /projects/tomancak_lightsheet/Tassos/jobs/deconvolution/deconvolution.bsh" \
@@ -668,7 +668,7 @@ Now we are ready for the cluster mediated deconvolution on the downscaled data. 
 that will generate many **deconvolution-<number>.job** scripts
 
     #!/bin/bash
-    xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Xms100g -Xmx100g
+    xvfb-run -a /sw/people/tomancak/packages/Fiji.app/ImageJ-linux64 -Xms100g -Xmx100g
     -Ddir=/projects/tomancak_lightsheet/Valia/Valia -Dtimepoint=1 -Dangles=1-6 -Dreference=714
     -Dx=36 -Dy=168 -Dz=282 -Dw=1824 -Dh=834 -Dd=810 -Diter=10 -- --no-splash
     /projects/tomancak_lightsheet/Tassos/jobs/deconvolution/deconvolution.bsh
@@ -811,7 +811,7 @@ We are ready to begin the cluster processing by creating our old friend, the **c
         echo $job
         echo "#!/bin/bash" > "$job"
         echo "xvfb-run -as\"-screen 0 1280x1024x24\" \
-                 /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 \
+                 /sw/people/tomancak/packages/Fiji.app/ImageJ-linux64 \
                  -Xms20g -Xmx20g -Ddir=$dir -Dtimepoint=$i -Dangle=1  \
                  -- --no-splash $dir/jobs/3d_rendering/render.bsh" >> "$job"
         chmod a+x "$job"
@@ -820,7 +820,7 @@ We are ready to begin the cluster processing by creating our old friend, the **c
 who will create **render-<number>.job**
 
     #!/bin/bash
-    xvfb-run -as"-screen 0 1280x1024x24" /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Xms20g -Xmx20g -Ddir=/projects/tomancak_lightsheet/Tassos -Dtimepoin
+    xvfb-run -as"-screen 0 1280x1024x24" /sw/people/tomancak/packages/Fiji.app/ImageJ-linux64 -Xms20g -Xmx20g -Ddir=/projects/tomancak_lightsheet/Tassos -Dtimepoin
     t=1 -Dangle=1  -- --no-splash /projects/tomancak_lightsheet/Tassos/jobs/3d_rendering/render.bsh
 
 Each bash script is passing a *directory*, *timepoint* and rendering *angle* parameters to **render.bsh** Beanshell script. The script is little more complicated than before. It combines Saalfeld's Beanshell magic with my clumsy macro programming. It is necessary to change the parameters inside the script according to the recipe above for each individual rendering run.
@@ -1068,7 +1068,7 @@ The **creat-split-jobs** will create the jobs that will be send to the cluster. 
                 job="$jobs/split-$i-$a.job"
                     echo $job
                     echo "#!/bin/bash" > "$job"
-                    echo "xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 \
+                    echo "xvfb-run -a /sw/people/tomancak/packages/Fiji.app/ImageJ-linux64 \
                          -Ddir=$dir -Dtimepoint=$i -Dangle=$a \
                          -- --no-splash ${jobs}/split.bsh" >> "$job"
                     chmod a+x "$job"
@@ -1176,7 +1176,7 @@ In this example the beads are visible in channel 1. Therefore, we will proceed t
         echo "#!/bin/bash" > "$job"
 
     #modify -Dangles
-        echo "xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 \
+        echo "xvfb-run -a /sw/people/tomancak/packages/Fiji.app/ImageJ-linux64 \
                   -Ddir=$dir -Dtimepoint=$i -Dangles=32,104,176,248,320 \
                   -- --no-splash ${jobs}/registration.bsh" >> "$job"
         chmod a+x "$job"
@@ -1252,7 +1252,7 @@ The registration files should now be written in the directory **registration**. 
 In the script **timelapse.interactive** modify **-Ddir=**, **-Dtimepoint=**, **-Dreferencetp=** (choose a good time point as reference) and **-Dangles=**.
 
     #!/bin/bash
-    xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 \
+    xvfb-run -a /sw/people/tomancak/packages/Fiji.app/ImageJ-linux64 \
     -Ddir=/projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/split/ \
     -Dtimepoint=1-72 -Dreferencetp=1 -Dangles=32,104,176,248,320 \
     -- --no-splash ./time-lapse.bsh
@@ -1389,7 +1389,7 @@ The **create\_fusion\_jobs** for 2 channels works the same as for the single cha
         echo "#!/bin/bash" > "$job"
 
     #modify -Dangles and cropping area
-        echo "xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 \
+        echo "xvfb-run -a /sw/people/tomancak/packages/Fiji.app/ImageJ-linux64 \
                  -Xms100g -Xmx100g -Ddir=$dir -Dtimepoint=$i \
                  -Dangles=32,104,176,248,320 -Dchannels=0,1 -Dreference=0 \
                  -Dx=68 -Dy=250 -Dz=404 -Dw=1746 -Dh=846 -Dd=654 \
@@ -1721,7 +1721,7 @@ We will discuss each section of this file with the associated processing step.
     ####--------------------------------- Fiji settings ---------------------------------
 
     XVFB_RUN="/sw/bin/xvfb-run"
-    Fiji="/sw/users/tomancak/packages/Fiji.app/ImageJ-linux64"
+    Fiji="/sw/people/tomancak/packages/Fiji.app/ImageJ-linux64"
 
     ####--------------------------------- Pre-processing ---------------------------------
     ### Resaving .czi into .tif files
@@ -1810,7 +1810,7 @@ We will discuss each section of this file with the associated processing step.
 
     ####--------------------------------- Rendering ---------------------------------
     ##Fiji for rendering
-    Fiji_rendering="/sw/users/tomancak/packages/Fiji.app.render/ImageJ-linux64"
+    Fiji_rendering="/sw/people/tomancak/packages/Fiji.app.render/ImageJ-linux64"
 
     ####--------------------------------- hdf5 export ---------------------------------
 
@@ -1832,7 +1832,7 @@ Upon using the master file the first time please change the links for Fiji, the 
     ####--------------------------------- Fiji settings ---------------------------------
 
     XVFB_RUN="/sw/bin/xvfb-run"
-    Fiji="/sw/users/tomancak/packages/Fiji.app/ImageJ-linux64"
+    Fiji="/sw/people/tomancak/packages/Fiji.app/ImageJ-linux64"
 
     ####--------------------------------- Pre-processing ---------------------------------
     ### Resaving .czi into .tif files
@@ -1920,7 +1920,7 @@ Upon using the master file the first time please change the links for Fiji, the 
 
     ####--------------------------------- Rendering ---------------------------------
     ##Fiji for rendering
-    Fiji_rendering="/sw/users/tomancak/packages/Fiji.app.render/ImageJ-linux64"
+    Fiji_rendering="/sw/people/tomancak/packages/Fiji.app.render/ImageJ-linux64"
 
     ####--------------------------------- hdf5 export ---------------------------------
 
@@ -2179,7 +2179,7 @@ Each job file should contain the relevant parameters for the job, where to find 
 
     cd /projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/czi_resave/
     cat resave-1-1.job
-    /sw/bin/xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Ddir=/projects/tomancak_lightsheet/Christopher/Test_scripts/single-channel/ -Dtimepoint=1 -Dangle=1            
+    /sw/bin/xvfb-run -a /sw/people/tomancak/packages/Fiji.app/ImageJ-linux64 -Ddir=/projects/tomancak_lightsheet/Christopher/Test_scripts/single-channel/ -Dtimepoint=1 -Dangle=1            
     -Dpad=2 -- --no-splash /projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/czi_resave/resaving.bsh
 
 The necessary parameters are passed from the jobs file to the **resaving.bsh** script upon processing the job. The script **resaving.bsh** looks as follows:
@@ -4543,7 +4543,7 @@ Relevant portion of the master file looks like this:
     #-------------------------------------------------------------------------------
     # hdf5 export
     #-------------------------------------------------------------------------------
-    Fiji_export="/sw/users/tomancak/packages/fiji_tobi_for_testing/Fiji.app/ImageJ-linux64" # Fiji_tobias
+    Fiji_export="/sw/people/tomancak/packages/fiji_tobi_for_testing/Fiji.app/ImageJ-linux64" # Fiji_tobias
     jobs_export=${job_directory}"/hdf5/"                            # directory
     resave_angle="\"All angles\""
     resave_channel="\"All channels\""

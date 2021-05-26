@@ -9,7 +9,7 @@ This page demonstrates how to use the `person` include tag.
 ## Individuals
 
 Specify a person using their ID from the
-{% include github label="`/users` folder" org="imagej" repo="imagej.github.io" path="_pages/users" %},
+{% include github label="`/people` folder" org="imagej" repo="imagej.github.io" path="_pages/people" %},
 or a plain/unlinked name.
 
 ## Examples

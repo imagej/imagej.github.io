@@ -24,8 +24,8 @@ The Sholl technique[^2] is used to describe neuronal arbors. This plugin can per
 
 The plugin is distributed with Fiji. It installs several commands under {% include bc path='Analysis|Sholl| ' color='white'%}. **As part of an active effort to [modernize ImageJ](/news/2015-12-22-the-road-to-java-8) you need to [subscribe](/update-sites/following#add-update-sites) to the Java 8 update site to access the latest plugin version** (this will also allow you to access the newest [ImageJ capabilities](/news/2015-12-22-the-road-to-java-8#components-which-have-already-migrated)). To do so, you can either:
 
--   [Download the latest Fiji release](/downloads). Newer releases come pre-bundled with Java 8, and are already subscribed to the [Java-8 update site](/users/Java-8).
--   If you have downloaded Fiji while ago and want to keep your existing installation, you will have to download Java 8 and make your [Fiji installation aware of it](/help/troubleshooting#checking-the-java-version). Then subscribe to the [Java-8 update site](/users/Java-8).
+-   [Download the latest Fiji release](/downloads). Newer releases come pre-bundled with Java 8, and are already subscribed to the Java-8 update site](/list-of-update-sites).
+-   If you have downloaded Fiji while ago and want to keep your existing installation, you will have to download Java 8 and make your [Fiji installation aware of it](/help/troubleshooting#checking-the-java-version). Then subscribe to the [Java-8 update site](/list-of-update-sites).
 
 ## Direct Analysis of Images
 

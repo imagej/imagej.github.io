@@ -165,7 +165,7 @@
 
           {% include menu/section title="Contribute" link="/about/contributing" %}
             <li><a href="/about/citing">Citing</a></li>
-            <li><a href="/about/contributors">Contributors</a></li> <!-- TODO: merge /users index with this page -->
+            <li><a href="/people">Contributors</a></li>
             <li><a href="/about/governance">Governance</a></li>
             <li><a href="/about/funding">Funding</a></li>
             <li><a href="/software/fiji/contribution-requirements">Contributing to Fiji</a></li>

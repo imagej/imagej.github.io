@@ -12,7 +12,7 @@ linkedin: pub/daniel-james-white/8/8b4/8a1
 
 Hi there,
 
-I have been nicknamed *Ambassador of Fiji* by the [Mother of Fiji](/users/dscho).
+I have been nicknamed *Ambassador of Fiji* by the [Mother of Fiji](/people/dscho).
 
 ## Maintained plugins
 

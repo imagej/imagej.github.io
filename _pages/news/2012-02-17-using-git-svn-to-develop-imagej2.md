@@ -12,7 +12,7 @@ One such third-party program is called [Git](/develop/git)... While Git is usual
 
 ## The `git svn` workflow
 
-Our recommended `git svn` workflow was described in our chatroom by [Barry](/users/Bdezonia):
+Our recommended `git svn` workflow was described in our chatroom by {% include person id='bdezonia' %}:
 
 1.  `git svn fetch`
 2.  `git checkout -b NewBranch trunk`

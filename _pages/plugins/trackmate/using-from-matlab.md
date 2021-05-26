@@ -238,6 +238,6 @@ Because your just ran a [MATLAB](/scripting/matlab) script that uses and benefit
     trackmate = TrackMate(model, settings);
     trackmate.setNumThreads(3); % As many threads as you want.
 
-[JeanYvesTinevez](/users/tinevez) ([talk](User_talk_JeanYvesTinevez)) 13:44, 17 January 2017 (CST)
+[JeanYvesTinevez](/people/tinevez) ([talk](User_talk_JeanYvesTinevez)) 13:44, 17 January 2017 (CST)
 
   

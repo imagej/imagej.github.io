@@ -139,6 +139,12 @@ defaults:
       icon: /media/icons/scijava.png
   -
     scope:
+      path: "_pages/people"
+      type: pages
+    values:
+      icon: https://upload.wikimedia.org/wikipedia/commons/9/90/Ic_person_48px.svg
+  -
+    scope:
       path: "_pages/platforms"
       type: pages
     values:
@@ -187,12 +193,6 @@ defaults:
       type: pages
     values:
       icon: https://upload.wikimedia.org/wikipedia/commons/2/2a/Cloud_Upload_-_The_Noun_Project.svg
-  -
-    scope:
-      path: "_pages/users"
-      type: pages
-    values:
-      icon: https://upload.wikimedia.org/wikipedia/commons/9/90/Ic_person_48px.svg
   -
     scope:
       path: "_pages/widgets"

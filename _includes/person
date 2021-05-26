@@ -1,7 +1,7 @@
 {%- assign name = nil -%}
 {%- assign url = nil -%}
 {%- if include.id -%}
-  {%- assign url = "/users/" | append: include.id -%}
+  {%- assign url = "/people/" | append: include.id -%}
   {%- if site.allow-jekyll-4 -%}
     {%- assign hit = site.pages | find: "url", url -%}
     {%- if hit -%} {%- assign name = hit.name -%} {%- endif -%}

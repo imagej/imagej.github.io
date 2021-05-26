@@ -58,7 +58,7 @@ The ImageJ plugins source codes are available on GitHub repository: {% include g
 
 We are a computational laboratory dedicated with biomedical image and signal processing and analysis. Our group is held in the Ribeirão Preto city, São Paulo state, Brazil. Our research group works directly with several applications related to image and signal issues, namely registration, tissue segmentation, filtering, analysis and feature extraction. Also, our goal is to improve and create suitable tools for image and signal applications in medical and biological research. Please, see the reference articles cited here in this wiki to see some of our publications. If you want to know more about our group and research opportunities, be free to enter in contact with us in our [website](http://dcm.ffclrp.usp.br/csim)
 
-## Publication
+## Publications
 
 Here it will be found some publications of our research group with respect the image processing methods developed in our laboratory. If you used any of these methods, please cite the published articles bellow.
 

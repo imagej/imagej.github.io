@@ -568,7 +568,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
     <tr>
       <td>2016-Nov-17</td>
       <td>
-        <a href="/users/iarganda">Ignacio Arganda-Carreras</a>
+        <a href="/people/iarganda">Ignacio Arganda-Carreras</a>
       </td>
       <td>Introduction to Image Segmentation using ImageJ/Fiji</td>
       <td>

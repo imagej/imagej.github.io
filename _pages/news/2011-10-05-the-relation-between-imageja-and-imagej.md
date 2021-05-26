@@ -7,7 +7,7 @@ categories: [News,ImageJ2,Fiji]
 [ImageJA](/libs/imageja) started out as a two-pronged project:
 
 1.  We wanted to have a source code management system so that we could contribute and update patches to [ImageJ](/about).
-    Originally, this was CVS, now it is [Git](/develop/git), and in the meantime [Wayne Rasband](/users/rasband), the author of ImageJ, also adopted a routine involving Git. So basically, this goal was reached.
+    Originally, this was CVS, now it is [Git](/develop/git), and in the meantime [Wayne Rasband](/people/rasband), the author of ImageJ, also adopted a routine involving Git. So basically, this goal was reached.
 2.  We wanted to provide support for in-browser applets that do not "pop out".
     In other words, we wanted an applet version of ImageJ which would be embedded into the webpage without having an extra main window. This code is basically working, but there are still many places where extra windows are popping up (e.g. the results table, or error messages). Plus, it has not made it back into upstream ImageJ. So this goal was not reached.
 
@@ -22,7 +22,7 @@ The real first script is a notifier which scrapes the [News section of the Image
 3.  `upload-imageja.sh`
     This script builds the current commit, determines which ImageJ version it is based on, adds an appropriate tag and uploads -src and signed release jar to ImageJA's sourceforge download site, to ImageJA's website, to Fiji's ImageJA site, and then pushes the 'master' and 'imagej' branches as well as the new tag to all kinds of remote repositories, including repo.or.cz, fiji.sc and dev.loci.wisc.edu.
 
-These scripts have gone through a long history ([I](/users/dscho) started the stuff in October 2005, when I tried to get ahold of as many as possible previous source packages and committed them as history of ImageJ to document as much as possible how things developed).
+These scripts have gone through a long history ([I](/people/dscho) started the stuff in October 2005, when I tried to get ahold of as many as possible previous source packages and committed them as history of ImageJ to document as much as possible how things developed).
 
 Typically, the merge step ends in a merge conflict since we have quite some changes in ImageJA vs ImageJ which did not make it to the upstream for one reason or other.
 
@@ -37,6 +37,6 @@ The changes fall into three categories, with different strategies how to "make t
 
 Some cases are hybrids, where the code will be moved outside ij.jar and be available as a plugin, but I'll use javassist to make it available from the appropriate places within IJ1.
 
-In general, this should clean up a lot of unnecessary modifications in IJ1 and let us (read: [me](/users/dscho)) concentrate much more on IJ2.
+In general, this should clean up a lot of unnecessary modifications in IJ1 and let us (read: [me](/people/dscho)) concentrate much more on IJ2.
 
   
