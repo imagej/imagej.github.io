@@ -167,7 +167,7 @@ See the [Generating Filtered Images](/plugins/snt/step-by-step-instructions#gene
 
 ### Filters for Visibility of Paths
 
-By default, all the nodes of a path are projected onto the current Z-slice. This is useful to see how much has been completed and gives a sense of the overall structure of the reconstruction. However, SNT provides three additional visibility options for paths: !["Filters for visibility of paths" widget](/meida/path-visibility-filters.png)
+By default, all the nodes of a path are projected onto the current Z-slice. This is useful to see how much has been completed and gives a sense of the overall structure of the reconstruction. However, SNT provides three additional visibility options for paths: !["Filters for visibility of paths" widget](/media/path-visibility-filters.png)
 
 1.  **Only selected paths (hide deselected)** Only show paths that have been manually selected in the Path Manager or with the {% include key key='G' %} key ({% include key keys='Shift|G' %} to select multiple paths).
 2.  **Only nodes within {x} nearby Z-slices** Only highlight nodes within {x} number of Z-slices on either side of the current slice. The projected skeletons of all paths remain visible.
