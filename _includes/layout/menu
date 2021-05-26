@@ -10,55 +10,59 @@
           <li><a href="/downloads">Download</a></li>
 
           {% include menu/section title="Learn" link="/learn" %}
-            <li><a href="/about">Flavors of ImageJ</a></li>
-            <li><a href="/learn/keyboard-shortcuts">Keyboard Shortcuts</a></li>
-            <li><a href="/learn/tips-and-tricks">Tips and Tricks</a></li>
-            <li><a href="/help/troubleshooting">Troubleshooting</a></li>
-            <li><a href="/help/faq">Frequently Asked Questions</a></li>
-            <li><a href="/learn/user-guides">User Guides</a></li>
-            <li><a href="/tutorials">Tutorials</a></li>
-            <li><a href="/learn/presentations">Presentations</a></li>
+            {% include menu/section title="ImageJ" link="/about" %}
+              <li><a href="/tutorials">Tutorials</a></li>
+              <li><a href="/learn/user-guides">User Guides</a></li>
+              <li><a href="/learn/presentations">Presentations</a></li>
+              <li><a href="/learn/keyboard-shortcuts">Keyboard Shortcuts</a></li>
+              <li><a href="/learn/tips-and-tricks">Tips and Tricks</a></li>
+              <li><a href="/help/troubleshooting">Troubleshooting</a></li>
+              <li><a href="/help/faq">Frequently Asked Questions</a></li>
 
-            {% include menu/section title="Supported Platforms" link="/platforms" %}
-              <li><a href="/platforms/windows">Windows</a></li>
-              <li><a href="/platforms/macos">MacOS</a></li>
-              <li><a href="/platforms/linux">Linux</a></li>
-              <li><a href="/platforms/pi">Raspberry Pi</a></li>
-              <li><a href="/platforms/android">Android</a></li>
-            {% include menu/section-end %} <!-- Learn/Supported Platforms -->
+              {% include menu/section title="Supported Platforms" link="/platforms" %}
+                <li><a href="/platforms/windows">Windows</a></li>
+                <li><a href="/platforms/macos">MacOS</a></li>
+                <li><a href="/platforms/linux">Linux</a></li>
+                <li><a href="/platforms/pi">Raspberry Pi</a></li>
+                <li><a href="/platforms/android">Android</a></li>
+              {% include menu/section-end %} <!-- Learn/ImageJ/Supported Platforms -->
 
-            {% include menu/section title="File Formats" link="/formats" %}
-              <li><a href="/formats/bio-formats">Bio-Formats</a></li>
-              <li><a href="/formats/video">Video formats</a></li>
-              <li><a href="/formats/quicktime">QuickTime</a></li>
-              <li><a href="/formats/tiff">TIFF</a></li>
-              <li><a href="/formats/pdf">PDF</a></li>
-              <li><a href="/formats/dicom">DICOM</a></li>
-              <li><a href="/formats/lsm">Zeiss LSM</a></li>
-              <li><a href="/formats/olympus">Olympus VSI</a></li>
-              <li><a href="/formats/lurawave">Opera Flex</a></li>
-              <li><a href="/formats/fib-sem">FIB-SEM</a></li>
-            {% include menu/section-end %} <!-- Learn/File Formats -->
+              {% include menu/section title="File Formats" link="/formats" %}
+                <li><a href="/formats/bio-formats">Bio-Formats</a></li>
+                <li><a href="/formats/video">Video formats</a></li>
+                <li><a href="/formats/quicktime">QuickTime</a></li>
+                <li><a href="/formats/tiff">TIFF</a></li>
+                <li><a href="/formats/pdf">PDF</a></li>
+                <li><a href="/formats/dicom">DICOM</a></li>
+                <li><a href="/formats/lsm">Zeiss LSM</a></li>
+                <li><a href="/formats/olympus">Olympus VSI</a></li>
+                <li><a href="/formats/lurawave">Opera Flex</a></li>
+                <li><a href="/formats/fib-sem">FIB-SEM</a></li>
+              {% include menu/section-end %} <!-- Learn/ImageJ/File Formats -->
+            {% include menu/section-end %} <!-- Learn/ImageJ -->
+
+            {% include menu/section title="Scientific Imaging" link="/imaging" %}
+              <li><a href="/imaging/principles">Principles of Scientific Imaging</a></li>
+              <li><a href="/imaging/annotating-images">Annotating Images</a></li>
+              <li><a href="/imaging/colocalization-analysis">Colocalization</a></li>
+              <li><a href="/imaging/color-image-processing">Color Image Processing</a></li>
+              <li><a href="/imaging/deconvolution">Deconvolution</a></li>
+              <li><a href="/imaging/image-intensity-processing">Image Intensity Processing</a></li>
+              <li><a href="/imaging/particle-analysis">Particle Analysis</a></li>
+              <li><a href="/imaging/registration">Registration</a></li>
+              <li><a href="/imaging/segmentation">Segmentation</a></li>
+              <li><a href="/imaging/stack-slice-manipulations">Stack-slice Manipulations</a></li>
+              <li><a href="/imaging/t-functions">T-functions</a></li>
+              <li><a href="/imaging/tracking">Tracking</a></li>
+              <li><a href="/imaging/visualization">Visualization</a></li>
+              <li><a href="/imaging/z-functions">Z-functions</a></li>
+            {% include menu/section-end %} <!-- Learn/Scientific Imaging -->
           {% include menu/section-end %} <!-- Learn -->
 
-          {% include menu/section title="Understand" link="/imaging" %}
-            <li><a href="/imaging/principles">Principles of Scientific Imaging</a></li>
-            <li><a href="/imaging/annotating-images">Annotating Images</a></li>
-            <li><a href="/imaging/colocalization-analysis">Colocalization</a></li>
-            <li><a href="/imaging/color-image-processing">Color Image Processing</a></li>
-            <li><a href="/imaging/deconvolution">Deconvolution</a></li>
-            <li><a href="/imaging/image-intensity-processing">Image Intensity Processing</a></li>
-            <li><a href="/imaging/particle-analysis">Particle Analysis</a></li>
-            <li><a href="/imaging/registration">Registration</a></li>
-            <li><a href="/imaging/segmentation">Segmentation</a></li>
-            <li><a href="/imaging/stack-slice-manipulations">Stack-slice Manipulations</a></li>
-            <li><a href="/imaging/t-functions">T-functions</a></li>
-            <li><a href="/imaging/tracking">Tracking</a></li>
-            <li><a href="/imaging/visualization">Visualization</a></li>
-            <li><a href="/imaging/z-functions">Z-functions</a></li>
-          {% include menu/section-end %} <!-- Understand -->
-
           {% include menu/section title="Extend" link="/plugins" %}
+            <li><a href="/plugin-index">Plugin Index</a></li>
+            <li><a href="/list-of-update-sites">List of Update Sites</a></li>
+
             {% include menu/section title="Update Sites" link="/update-sites" %}
               <li><a href="/update-sites/following">Following an update site</a></li>
               <li><a href="/update-sites/setup">Creating an update site</a></li>
@@ -67,43 +71,104 @@
               <li><a href="/update-sites/core-uploads">Uploading to core sites</a></li>
               <li><a href="/update-sites/faq">Update site FAQ</a></li>
             {% include menu/section-end %} <!-- Extend/Update Sites -->
-          {% include menu/section-end %} <!-- Extend -->
 
-          {% include menu/section title="Automate" link="/scripting" %}
-            <li><a href="/scripting/batch">Batch Processing</a></li>
-            <li><a href="/scripting/basics">Scripting Basics</a></li>
-            <li><a href="/scripting/user-input">User Input</a></li>
-            <li><a href="/scripting/how-to-use-the-javadoc">Using Javadocs</a></li>
-            <li><a href="/scripting/script-editor">Script Editor</a></li>
-            <li><a href="/scripting/auto-imports">Auto Import</a></li>
-            <li><a href="/scripting/templates">Templates</a></li>
-            <li><a href="/scripting/headless">Running Headlessly</a></li>
-            <li><a href="/scripting/comparisons">Scripting Comparisons</a></li>
-            <li><a href="/scripting/toolbox">Toolbox</a></li>
-            <li><a href="/scripting/multithreaded-image-processing-in-clojure">Multithreading with Clojure</a></li>
-            <li><a href="/scripting/multithreaded-image-processing-in-javascript">Multithreading in Javascript</a></li>
-            <li><a href="/scripting/chess">Chess in Jython</a></li>
-
-            {% include menu/section title="Scripting Languages" %}
-              <li><a href="/scripting/beanshell">BeanShell Scripting</a></li>
-              <li><a href="/scripting/groovy">Groovy Scripting</a></li>
-              <li><a href="/scripting/macro">ImageJ Macro</a></li>
-              <li><a href="/scripting/javascript">JavaScript</a></li>
+            {% include menu/section title="Scripting" link="/scripting" %}
               <li><a href="/scripting/batch">Batch Processing</a></li>
-              <li><a href="/scripting/clojure">Lisp (Clojure)</a></li>
-              <li><a href="/scripting/matlab">MATLAB</a></li>
-              <li><a href="/scripting/jython">Python (Jython)</a></li>
-              <li><a href="/scripting/renjin">R (Renjin)</a></li>
-              <li><a href="/scripting/jruby">Ruby (JRuby)</a></li>
-              <li><a href="/scripting/scala">Scala Scripting</a></li>
-            {% include menu/section-end %} <!-- Automate/Scripting Languages -->
-          {% include menu/section-end %} <!-- Automate -->
+              <li><a href="/scripting/basics">Scripting Basics</a></li>
+              <li><a href="/scripting/user-input">User Input</a></li>
+              <li><a href="/scripting/how-to-use-the-javadoc">Using Javadocs</a></li>
+              <li><a href="/scripting/script-editor">Script Editor</a></li>
+              <li><a href="/scripting/auto-imports">Auto Import</a></li>
+              <li><a href="/scripting/templates">Templates</a></li>
+              <li><a href="/scripting/headless">Running Headlessly</a></li>
+              <li><a href="/scripting/comparisons">Scripting Comparisons</a></li>
+              <li><a href="/scripting/toolbox">Toolbox</a></li>
+              <li><a href="/scripting/multithreaded-image-processing-in-clojure">Multithreading with Clojure</a></li>
+              <li><a href="/scripting/multithreaded-image-processing-in-javascript">Multithreading in Javascript</a></li>
+              <li><a href="/scripting/chess">Chess in Jython</a></li>
+
+              {% include menu/section title="Languages" %}
+                <li><a href="/scripting/beanshell">BeanShell Scripting</a></li>
+                <li><a href="/scripting/groovy">Groovy Scripting</a></li>
+                <li><a href="/scripting/macro">ImageJ Macro</a></li>
+                <li><a href="/scripting/javascript">JavaScript</a></li>
+                <li><a href="/scripting/batch">Batch Processing</a></li>
+                <li><a href="/scripting/clojure">Lisp (Clojure)</a></li>
+                <li><a href="/scripting/matlab">MATLAB</a></li>
+                <li><a href="/scripting/jython">Python (Jython)</a></li>
+                <li><a href="/scripting/renjin">R (Renjin)</a></li>
+                <li><a href="/scripting/jruby">Ruby (JRuby)</a></li>
+                <li><a href="/scripting/scala">Scala Scripting</a></li>
+              {% include menu/section-end %} <!-- Extend/Scripting/Languages -->
+            {% include menu/section-end %} <!-- Extend/Scripting -->
+
+            {% include menu/section title="Development" link="/develop" %}
+              <li><a href="/develop/philosophy">Philosophy</a></li>
+              <li><a href="/develop/architecture">Architecture</a></li>
+              <li><a href="/develop/source">Source code</a></li>
+              <li><a href="/develop/project-management">Project management</a></li>
+              <li><a href="/develop/coding-style">Coding style</a></li>
+              <li><a href="/develop/debugging">Debugging</a></li>
+              <li><a href="/develop/wish-list">Wish list</a></li>
+
+              {% include menu/section title="Tools" %}
+                <li><a href="/develop/github">GitHub</a></li>
+                <li><a href="/develop/maven">Maven</a></li>
+
+                {% include menu/section title="IDEs" link="/develop/ides" %}
+                  <li><a href="/develop/eclipse">Eclipse</a></li>
+                  <li><a href="/develop/netbeans">NetBeans</a></li>
+                  <li><a href="/develop/intellij">IntelliJ IDEA</a></li>
+                  <li><a href="/develop/command-line">Command Line</a></li>
+                {% include menu/section-end %}
+
+                <li><a href="/develop/travis">Travis</a></li>
+                <li><a href="/develop/appveyor">AppVeyor</a></li>
+                <li><a href="/develop/dotfiles">Dotfiles</a></li>
+              {% include menu/section-end %} <!-- Extend/Development/Tools -->
+
+              {% include menu/section title="Guides" %}
+                <li><a href="/develop/plugins">Writing plugins</a></li>
+                <li><a href="/libs/imagej-ops">ImageJ Ops</a></li>
+                <li><a href="/develop/improving-the-code">Contributing to a plugin</a></li>
+                <li><a href="/develop/distributing">Distributing your plugins</a></li>
+                <li><a href="/develop/releasing">Development lifecycle</a></li>
+                <li><a href="/develop/building-a-pom">Building a POM</a></li>
+                <hr>
+                <li><a href="/develop/debugging-exercises">Hands-on debugging</a></li>
+                <li><a href="/develop/writing-ops">Adding new ops</a></li>
+                <li><a href="/develop/formats">Adding new formats</a></li>
+                <li><a href="/develop/native-libraries">Using native libraries</a></li>
+                <li><a href="/develop/tips">Tips for developers</a></li>
+                <li><a href="/develop/cpp-tips">Tips for C++ developers</a></li>
+                <li><a href="/develop/ij1-plugins">ImageJ 1.x plugins</a></li>
+                <li><a href="/develop/versioning">Versioning</a></li>
+                <li><a href="/develop/logging">Logging</a></li>
+                <li><a href="/develop/uber-jars">Uber-JARs</a></li>
+              {% include menu/section-end %} <!-- Extend/Development/Guides -->
+
+              {% include menu/section title="Git" link="/develop/git" %}
+                <li><a href="/develop/git/eclipse">Git in Eclipse (EGit)</a></li>
+                <li><a href="/develop/git/mini-howto">Git mini howto</a></li>
+                <li><a href="/develop/git/workshop">Git workshop</a></li>
+                <li><a href="/develop/git/conflicts">Git conflicts</a></li>
+                <li><a href="/develop/git/topic-branches">Git topic branches</a></li>
+                <li><a href="/develop/git/notes">Git notes</a></li>
+                <li><a href="/develop/git/reflogs">Git reflogs</a></li>
+                <li><a href="/develop/git/submodules">Git submodules</a></li>
+                <li><a href="/develop/git/pinpoint-regressions">How to pinpoint regressions</a></li>
+                <li><a href="/develop/git/publish-a-repository">How to publish a git repository</a></li>
+                <li><a href="/develop/git/extract-a-subproject">How to extract a subproject</a></li>
+              {% include menu/section-end %} <!-- Extend/Development/Git -->
+            {% include menu/section-end %} <!-- Extend/Development -->
+          {% include menu/section-end %} <!-- Extend -->
 
           {% include menu/section title="Contribute" link="/about/contributing" %}
             <li><a href="/about/citing">Citing</a></li>
-            <li><a href="/about/contributors">Contributors</a></li> <!-- TODO: merge /users index with this page? -->
+            <li><a href="/about/contributors">Contributors</a></li> <!-- TODO: merge /users index with this page -->
             <li><a href="/about/governance">Governance</a></li>
             <li><a href="/about/funding">Funding</a></li>
+            <li><a href="/software/fiji/contribution-requirements">Contributing to Fiji</a></li>
 
             {% include menu/section title="Licensing" link="/licensing" %}
               {% include menu/section title="Open Source" %}
@@ -141,66 +206,6 @@
             {% include menu/section-end %} <!-- Contribute/Editing the Wiki -->
           {% include menu/section-end %} <!-- Contribute -->
 
-          {% include menu/section title="Develop" link="/develop" %}
-            <li><a href="/develop/philosophy">Philosophy</a></li>
-            <li><a href="/develop/architecture">Architecture</a></li>
-            <li><a href="/develop/source">Source code</a></li>
-            <li><a href="/develop/project-management">Project management</a></li>
-            <li><a href="/develop/coding-style">Coding style</a></li>
-            <li><a href="/develop/debugging">Debugging</a></li>
-            <li><a href="/develop/wish-list">Wish list</a></li>
-
-            {% include menu/section title="Tools" %}
-              <li><a href="/develop/github">GitHub</a></li>
-              <li><a href="/develop/maven">Maven</a></li>
-
-              {% include menu/section title="IDEs" link="/develop/ides" %}
-                <li><a href="/develop/eclipse">Eclipse</a></li>
-                <li><a href="/develop/netbeans">NetBeans</a></li>
-                <li><a href="/develop/intellij">IntelliJ IDEA</a></li>
-                <li><a href="/develop/command-line">Command Line</a></li>
-              {% include menu/section-end %}
-
-              <li><a href="/develop/travis">Travis</a></li>
-              <li><a href="/develop/appveyor">AppVeyor</a></li>
-              <li><a href="/develop/dotfiles">Dotfiles</a></li>
-            {% include menu/section-end %} <!-- Develop/Tools -->
-
-            {% include menu/section title="Guides" %}
-              <li><a href="/develop/plugins">Writing plugins</a></li>
-              <li><a href="/libs/imagej-ops">ImageJ Ops</a></li>
-              <li><a href="/develop/improving-the-code">Contributing to a plugin</a></li>
-              <li><a href="/develop/distributing">Distributing your plugins</a></li>
-              <li><a href="/develop/releasing">Development lifecycle</a></li>
-              <li><a href="/develop/building-a-pom">Building a POM</a></li>
-              <hr>
-              <li><a href="/develop/debugging-exercises">Hands-on debugging</a></li>
-              <li><a href="/develop/writing-ops">Adding new ops</a></li>
-              <li><a href="/develop/formats">Adding new formats</a></li>
-              <li><a href="/develop/native-libraries">Using native libraries</a></li>
-              <li><a href="/develop/tips">Tips for developers</a></li>
-              <li><a href="/develop/cpp-tips">Tips for C++ developers</a></li>
-              <li><a href="/develop/ij1-plugins">ImageJ 1.x plugins</a></li>
-              <li><a href="/develop/versioning">Versioning</a></li>
-              <li><a href="/develop/logging">Logging</a></li>
-              <li><a href="/develop/uber-jars">Uber-JARs</a></li>
-            {% include menu/section-end %} <!-- Develop/Guides -->
-
-            {% include menu/section title="Git" link="/develop/git" %}
-              <li><a href="/develop/git/eclipse">Git in Eclipse (EGit)</a></li>
-              <li><a href="/develop/git/mini-howto">Git mini howto</a></li>
-              <li><a href="/develop/git/workshop">Git workshop</a></li>
-              <li><a href="/develop/git/conflicts">Git conflicts</a></li>
-              <li><a href="/develop/git/topic-branches">Git topic branches</a></li>
-              <li><a href="/develop/git/notes">Git notes</a></li>
-              <li><a href="/develop/git/reflogs">Git reflogs</a></li>
-              <li><a href="/develop/git/submodules">Git submodules</a></li>
-              <li><a href="/develop/git/pinpoint-regressions">How to pinpoint regressions</a></li>
-              <li><a href="/develop/git/publish-a-repository">How to publish a git repository</a></li>
-              <li><a href="/develop/git/extract-a-subproject">How to extract a subproject</a></li>
-            {% include menu/section-end %} <!-- Develop/Git -->
-          {% include menu/section-end %} <!-- Develop -->
-
           {% include menu/section title="Discuss" link="/help" %}
             <li><a href="/help/bugs">Reporting Issues</a></li>
             <li><a href="/help/mailing-lists">Mailing Lists</a></li>
@@ -208,9 +213,13 @@
           {% include menu/section-end %} <!-- Discuss -->
 
           {% include menu/section title="Explore" %}
-            <li><a href="/plugin-index">Plugin Index</a></li>
-            <li><a href="/list-of-update-sites">List of Update Sites</a></li>
             <li><a href="/about/usage">Usage Statistics</a></li>
+            <li><a href="/news">News</a></li>
+
+            {% include menu/section title="Events" link="/events" %}
+              <li><a href="/events/hackathons">Conferences</a></li>
+              <li><a href="/events/hackathons">Hackathons</a></li>
+            {% include menu/section-end %} <!-- Discuss/Events -->
 
             {% include menu/section title="Libraries" link="/libs" %}
               <li><a href="/libs/imagej-common">ImageJ Common</a></li>
@@ -238,16 +247,7 @@
               <li><a href="/software/nih-image">NIH Image</a>
               <li><a href="/software/imagej1">ImageJ1</a>
               <li><a href="/software/imagej2">ImageJ2</a>
-
-              {% include menu/section title="Fiji" link="/software/fiji" %}
-                <li><a href="/software/fiji/using">Using Fiji</a></li>
-                <li><a href="/software/fiji/featured-projects">Featured Fiji Projects</a></li>
-                <li><a href="/software/fiji/publications">Publications</a></li>
-                <li><a href="/software/fiji/links">Links</a></li>
-                <li><a href="/software/fiji/developing">Developing Fiji</a></li>
-                <li><a href="/software/fiji/building-from-source">Building from source</a></li>
-                <li><a href="/software/fiji/contribution-requirements">Contribution requirements</a></li>
-              {% include menu/section-end %} <!-- Explore/Software/Fiji -->
+              <li><a href="/software/fiji">Fiji</a>
             {% include menu/section-end %} <!-- Explore/Software -->
           {% include menu/section-end %} <!-- Explore -->
         </ul>
