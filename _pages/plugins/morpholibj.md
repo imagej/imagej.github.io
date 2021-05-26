@@ -689,7 +689,9 @@ Making use of MorphoLibJ's label methods and the [ImageJ 3D Viewer](/plugins/3d-
     // launch smooth control
     sc = new SmoothControl( univ );
 
-At the end of the script a dialog is shown to smooth the surfaces at will. Each label is added to the 3D scene independently with the nanme "label-X" where X is its label value. {% include thumbnail src='/media/plugins/morpholibj-visualize-labels-in-3d-viewer.png' title='From left to right: input label image, script output, smoothed label surfaces and example of individually translated surfaces in the 3D viewer.'%}
+At the end of the script a dialog is shown to smooth the surfaces at will. Each label is added to the 3D scene independently with the nanme "label-X" where X is its label value. 
+
+{% include thumbnail src='/media/plugins/morpholibj-visualize-labels-in-3d-viewer.png' title='From left to right: input label image, script output, smoothed label surfaces and example of individually translated surfaces in the 3D viewer.'%}
 
 ## Documentation
 
