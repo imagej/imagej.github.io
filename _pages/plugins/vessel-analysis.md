@@ -33,7 +33,7 @@ Also make sure you install [Mexican Hat Filter](/ij/plugins/mexican-hat/index.ht
 
 ## **Usage:**
 
-Detailed Instructions [HERE](/media/vessel_analysis_user_manual.pdf)
+Detailed Instructions [HERE](/media/plugins/vessel-analysis-user-manual.pdf)
 
 Open a multi-channel image in Fiji and execute the Vessel Analysis plugin via {% include bc path="Plugins | Vessel Analysis | Vessel Analysis (complete)" %}. The "complete" program will guide you through preprocessing steps to prepare the image for vascular density and diameter measurements.
 
