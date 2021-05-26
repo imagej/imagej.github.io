@@ -144,7 +144,7 @@ If there are no public repositories containing your dependency, you have two opt
 
 <!-- -->
 
--   If the dependency is narrower in scope, you could [contact the ImageJ & Fiji maintainers](/about/mailing-lists) to get your needed dependency added to the SciJava Maven repository. Note that you will then be responsible for distributing the dependency with your code—so ensure it is [licensed appropriately](/licensing).
+-   If the dependency is narrower in scope, you could [contact the ImageJ & Fiji maintainers](/help/mailing-lists) to get your needed dependency added to the SciJava Maven repository. Note that you will then be responsible for distributing the dependency with your code—so ensure it is [licensed appropriately](/licensing).
 
 Finally, for local testing you can [install the dependency into your local Maven repository cache yourself](https://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html). The command is `mvn install:install-file`. For example, if you have a library `foo.jar` to install, you could run:
 

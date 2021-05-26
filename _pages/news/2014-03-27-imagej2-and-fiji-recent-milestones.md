@@ -31,6 +31,6 @@ While our main focus with Fiji is to support life scientists to the point of ena
 
 Our focus on a flexible and powerful infrastructure pays off in a particularly nice way with the [OpenSPIM](http://openspim.org/) project: while the hardware had to be designed from scratch, the software is based on Fiji in form of Stephan Preibisch's [multi-angle reconstruction plugins](/plugins/spim-registration), and on [Micro-Manager](http://www.micro-manager.org/), served from—you guessed it—an update site. The OpenSPIM-specific extensions also benefit tremendously from ImgLib2, which facilitates the data processing necessary for the efficient operation of an OpenSPIM setup.
 
-Looking forward, 2014 will be a big year for ImageJ2: we are targeting a stable release of the ImageJ2 core this summer, with a focus on continued compatibility and synergy with ImageJ 1.x development. We will continue to post updates on this site as well as on the [Mailing Lists](/about/mailing-lists) keeping the community apprised of developments in ImageJ2 and Fiji.
+Looking forward, 2014 will be a big year for ImageJ2: we are targeting a stable release of the ImageJ2 core this summer, with a focus on continued compatibility and synergy with ImageJ 1.x development. We will continue to post updates on this site as well as on the [Mailing Lists](/help/mailing-lists) keeping the community apprised of developments in ImageJ2 and Fiji.
 
  

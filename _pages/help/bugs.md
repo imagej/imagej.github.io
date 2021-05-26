@@ -58,7 +58,7 @@ ImageJ is a flexible and extensible platform, so the actual "ImageJ environment"
 
 Errors can appear in any component of the software, and in some cases two plugins might work individually but have some negative interaction with each other. Thus a complete view of the ImageJ environment is imperative. Fiji currently ships with a [Report a Bug](/help/report-a-bug) command; this will automatically populate the complete environment information and include it in the [bugzilla report](https://fiji.sc/bugzilla/); this bug-reporting functionality will be migrated to core ImageJ soon.
 
-Note that if you file a bug manually or are enquiring to a [mailing list](/about/mailing-lists), you can still copy and paste the contents of the *"Useful information about your system"* text box from the [Report a Bug](/help/report-a-bug) dialog. It will be greatly appreciated.
+Note that if you file a bug manually or are enquiring to a [mailing list](/help/mailing-lists), you can still copy and paste the contents of the *"Useful information about your system"* text box from the [Report a Bug](/help/report-a-bug) dialog. It will be greatly appreciated.
 
 ### Minimal and precise steps to reproduce
 

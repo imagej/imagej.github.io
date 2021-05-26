@@ -36,6 +36,6 @@ Lastly, as usual, this release includes various small enhancements and fixes (e.
 
 ## How to update
 
-Use the {% include bc path='Help | Update...'%} command to update your [ImageJ](/about) installation. Please send any comments to the [ImageJ mailing list](/about/mailing-lists). Thanks for the continued feedback and support!
+Use the {% include bc path='Help | Update...'%} command to update your [ImageJ](/about) installation. Please send any comments to the [ImageJ mailing list](/help/mailing-lists). Thanks for the continued feedback and support!
 
  

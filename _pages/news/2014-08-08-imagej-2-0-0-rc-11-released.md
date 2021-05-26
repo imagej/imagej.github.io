@@ -32,6 +32,6 @@ Today, the [ImageJ team](/about/contributors) is pleased to announce a new publi
 
 Use the {% include bc path='Help | Update'%} command to update your [ImageJ](/about) installation.
 
-Please send any comments to the [ImageJ mailing list](/about/mailing-lists). And thank you very much for trying ImageJ2!
+Please send any comments to the [ImageJ mailing list](/help/mailing-lists). And thank you very much for trying ImageJ2!
 
  

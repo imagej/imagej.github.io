@@ -50,7 +50,7 @@ An example using `getInfo()`:
     print("Image Position: "+imagePosition);
     print("Pixel Spacing: "+ pixelSpacing);
 
-See also these past threads from the ImageJ [mailing list](/about/mailing-lists):
+See also these past threads from the ImageJ [mailing list](/help/mailing-lists):
 
 -   2015-09-23 - [Reading DICOM header without opening the image](http://imagej.1557.x6.nabble.com/Reading-DICOM-header-without-opening-the-image-tp5014426.html)
 -   2013-10-10 - [ImageJ DICOM Header](http://imagej.1557.x6.nabble.com/ImageJ-DICOM-Header-tp5005125.html)
