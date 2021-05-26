@@ -4,7 +4,7 @@
     <a href="{{include.src}}" data-lightbox="image-{{include.src | split: "/" | last | replace: ".", "-" }}">
         <span class="thumbnail-group"><img src="{{include.src}}" width="{{include.width | default: 380}}" /></span>
     </a>
-    <span>{{include.title}}</span>
+    <span markdown="1">{{include.title}}</span>
 </div>
 
 {%- comment -%}
