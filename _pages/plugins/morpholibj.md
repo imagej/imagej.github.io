@@ -46,7 +46,7 @@ Morphological filters are defined according to a **structuring element** of a gi
 
 ### Principles
 
-The original idea was to define a methodology to describe shapes by using another shape as test probe (Serra, 1982[1]{% include cite content='journal' title='An overview of morphological filtering' author='Serra, Jean and Vincent, Luc' journal='Circuits, Systems and Signal Processing' volume='11' number='1' pages='47-108' year='1992' publisher='Springer' doi='10.1007/BF01189221' %}</ref>). The most basic morphological filters are the **morphological dilation** and the **morphological erosion**. The principle of morphological dilation is to test for each point of the plane, if the structuring element centered on this point **intersects** the structure of interest (see figure below). It results in a set larger than the original set. The principle of morphological erosion is to test for each point of the plane if the structuring element centred on this point **is contained** within the original set. It results in a set smaller than original set.
+The original idea was to define a methodology to describe shapes by using another shape as test probe (Serra, 1982[^1]). The most basic morphological filters are the **morphological dilation** and the **morphological erosion**. The principle of morphological dilation is to test for each point of the plane, if the structuring element centered on this point **intersects** the structure of interest (see figure below). It results in a set larger than the original set. The principle of morphological erosion is to test for each point of the plane if the structuring element centred on this point **is contained** within the original set. It results in a set smaller than original set.
 
 {% include thumbnail src='/media/plugins/principle-of-morphological-dilation-and-erosion.png' title='Principle of morphological dilation and erosion on a binary set, using a disk-shaped structuring element.'%}
 
@@ -82,7 +82,7 @@ For images containing very thin curvilinear structures (for example blood vessel
 
 {% include thumbnail src='/media/plugins/morpholibj-directional-filtering-example.png' title='Filtering of a thin structure. (a) Original image representing apple cells observed with confocal microscopy. The application of a Gaussian filter (b) or median filter (c) results in noise reduction, but also in a loss of the signal along the cell walls. The directional filtering (d) better preserves the thickness of the structure.'%}
 
-An alternative is to apply directional filtering. The principle is to consider an oriented structuring element such as a line segment of a given length, and to perform morphological operations for various orientations of the structuring element (Soille *et al.*, 2001[2]; Heneghan *et al.*, 2002[3]; Hendriks *et al.*, 2003[4]). For example, applying a median filter or a morphological opening with horizontal direction results in the enhancement of horizontal parts of bright structures. Similarly, using a vertical structuring element results in the enhancement of the vertical portions of the structures.
+An alternative is to apply directional filtering. The principle is to consider an oriented structuring element such as a line segment of a given length, and to perform morphological operations for various orientations of the structuring element (Soille *et al.*, 2001[^2]; Heneghan *et al.*, 2002[^3]; Hendriks *et al.*, 2003[^4]). For example, applying a median filter or a morphological opening with horizontal direction results in the enhancement of horizontal parts of bright structures. Similarly, using a vertical structuring element results in the enhancement of the vertical portions of the structures.
 
 {% include thumbnail src='/media/plugins/morpholibj-directional-filtering-principle.png' title='Principle of directional filtering of a thin structure. (a) and (b): result of median filter using an horizontal and a vertical linear structuring element. (c) and (d): combination of the results obtained from two directions (horizontal and vertical) and four directions (by adding diagonal directions).'%}
 
@@ -155,7 +155,7 @@ The parameters are:
 
 The "classical" morphological filters presented in the previous section transform an input image by using the values of pixels or voxels located in a close neighborhood, defined by the structuring element. Such filters can be seen as "local", as the result in a given position does not depend on image values located at a sufficient distance.
 
-Connected components operators are more general as they propagate information within the image based on connectivity between pixels or voxels. More details can be found in the review of Breen *et al.* (1996)[5]. Connected components operators encompass powerful operators, such as **morphological reconstruction** that allows to reconstruct a marker image by constraining it to a mask. An extension of morphological reconstruction is the detection of **extended minima and maxima**, that can be useful as marker detection for segmentation. Finally, **attribute opening and filtering** algorithms can filter images based on size or range properties, with better preservation of edges than classical filtering.
+Connected components operators are more general as they propagate information within the image based on connectivity between pixels or voxels. More details can be found in the review of Breen *et al.* (1996)[^5]. Connected components operators encompass powerful operators, such as **morphological reconstruction** that allows to reconstruct a marker image by constraining it to a mask. An extension of morphological reconstruction is the detection of **extended minima and maxima**, that can be useful as marker detection for segmentation. Finally, **attribute opening and filtering** algorithms can filter images based on size or range properties, with better preservation of edges than classical filtering.
 
 ### Morphological reconstruction
 
@@ -236,8 +236,8 @@ So far, the following attribute filtering plugins are available within MorphoLib
 
 {% include thumbnail src='/media/plugins/classic-watershed-lines-blur-blobs.png' title='Overlay of watershed lines on blurred blobs.'%} The watershed algorithm assimilates the grey level image to a digital elevation model, and aims at detecting the different catchment basins. In the grey-level image, the catchment basins correspond to dark regions surrounded by bright structures (the "crests"). It is a very popular technique specially used to segment touching objects. The MorphoLibJ suite contains several implementations of the algorithm and plugins that make use of it:
 
--   [Classic Watershed](/plugins/classic-watershed), plugin implementing the original watershed algorithm by Pierre Soille and Luc M. Vincent (1990)&lt;ref name="Soille1990&gt;{% include cite content='conference' title='Determining watersheds in digital pictures via flooding simulations' author='Soille, Pierre and Vincent, Luc M' booktitle='Proc. SPIE' volume='1360' pages='240-250' year='1990' organization='International Society for Optics and Photonics' doi='10.1117/12.24211' url='http://dx.doi.org/10.1117/12.24211' %}</ref> to segment 2D/3D grayscale images.
--   [Marker-controlled Watershed](/plugins/marker-controlled-watershed), a plugin to perform watershed in 2D/3D images by flooding from specific seed points or markers by Meyer and Beucher (1990)&lt;ref name="Meyer1990&gt;{% include cite content='journal' title='Morphological segmentation' author='F. Meyer and S. Beucher' journal='Journal of Visual Communication and Image Representation' volume='1' number='1' pages='21-46' year='1990' doi='10.1016/1047-3203(90)90014-M' url='http://www.sciencedirect.com/science/article/pii/104732039090014M' %}</ref>.
+-   [Classic Watershed](/plugins/classic-watershed), plugin implementing the original watershed algorithm by Pierre Soille and Luc M. Vincent (1990)[^12] to segment 2D/3D grayscale images.
+-   [Marker-controlled Watershed](/plugins/marker-controlled-watershed), a plugin to perform watershed in 2D/3D images by flooding from specific seed points or markers by Meyer and Beucher (1990)[^13].
 -   [Interactive Marker-controlled Watershed](/plugins/interactive-marker-controlled-watershed), a plugin to perform watershed in 2D/3D images by flooding from specific seed points or markers introduced interactively by the user.
 -   [Morphological Segmentation](/plugins/morphological-segmentation), a plugin with a graphical user interface to segment 2D/3D images based on morphological operations and the watershed algorithm.
 -   [Distance Transform Watershed](/plugins/distance-transform-watershed), two plugins (2D and 3D) that work on binary images and allow to separate touching objects by combining the distance transform and watershed methods.
@@ -254,21 +254,21 @@ This section describes the methods implemented in MorphoLibJ for describing indi
 
 {% include thumbnail src='/media/plugins/morpholibj-euler-number.png' title='Illustration of Euler Number definition. Left: three particles with Euler numbers equal to 1, 0 and -1, respectively. Right: example of a 3D particle with an Euler number equal to -1, corresponding to the subtraction of 1 connected components minus two handles.'%}The intrinsic volumes are a set of features with interesting mathematical properties that are commonly used for describing individual particles as well as binary microstructrues. In the planar case, they correspond to the area, the perimeter and the Euler number. The Euler number is a topological characteristic that equals the number of connected components minus the number of holes.
 
-For 3D particles, intrinsic volumes correspond to the volume, the surface area, the mean breadth (a quantity proportional to the integral of the mean curvature over the surface) and the Euler number. In 3D the Euler number equals the number of connected components minus the number of "handles" or "tunnels" through the structure, plus the number of bubbles within the particles (Serra, 1982[6]{% include cite content='conference' booktitle='3D Images of Materials Structures: processing and analysis' title='Image Processing' author='Joachim Ohser and Katja Schladitz' publisher='Wiley-VCH Verlag GmbH & Co. KGaA' year='2009' doi='10.1002/9783527628308.ch4' url='http://dx.doi.org/10.1002/9783527628308.ch4' %}</ref>).
+For 3D particles, intrinsic volumes correspond to the volume, the surface area, the mean breadth (a quantity proportional to the integral of the mean curvature over the surface) and the Euler number. In 3D the Euler number equals the number of connected components minus the number of "handles" or "tunnels" through the structure, plus the number of bubbles within the particles (Serra, 1982[^1]).
 
 ##### Estimation from 2D or 3D images
 
 In image analysis, the **estimation of area** of 2D particles and of **volume of 3D particles** simply consists in counting the number of pixels or voxels that constitute it, weighted by the area of an individual pixel or the volume of an individual voxel.
 
-The implemented method for **perimeter measurement** aims at providing a better estimate of the perimeter than traditional boundary pixel count. The principle is to consider a set of lines with various orientations, and to count the number of intersections with the region(s) of interest (see figure on the right). The number of intersections is proportional to the perimeter (Serra, 1982&lt;ref name="Serra1982&gt;</ref>; Legland *et al.*, 2007[7]; Ohser *et al.*, 2009&lt;ref name="Osher2009&gt;</ref>). By averaging over all possible directions, the estimate is unbiased.
+The implemented method for **perimeter measurement** aims at providing a better estimate of the perimeter than traditional boundary pixel count. The principle is to consider a set of lines with various orientations, and to count the number of intersections with the region(s) of interest (see figure on the right). The number of intersections is proportional to the perimeter (Serra, 1982[^1]; Legland *et al.*, 2007[^6]; Ohser *et al.*, 2009[^8]). By averaging over all possible directions, the estimate is unbiased.
 
-Perimeter can be estimated using either two directions (horizontal and vertical), or four directions (by adding the diagonals). Restricting the number of directions introduces an estimation bias, with known theoretical bounds (Moran, 1966[8]; Legland *et al.*, 2007[9]), that is usually better than boundary pixel count (Lehmann *et al.*, 2012[10]).
+Perimeter can be estimated using either two directions (horizontal and vertical), or four directions (by adding the diagonals). Restricting the number of directions introduces an estimation bias, with known theoretical bounds (Moran, 1966[^7]; Legland *et al.*, 2007[^6]), that is usually better than boundary pixel count (Lehmann *et al.*, 2012[^9]).
 
-The **estimation of surface area** follows the same principle. The number of directions is typically chosen equal to 3 (the three main axes in image), or 13 (by considering also diagonals). As for perimeter estimation, surface area estimation in usually biased, but is usually more precise than measuring the surface area of the polygonal mesh reconstructed from binary images (Lehmann *et al.*, 2012[11]).
+The **estimation of surface area** follows the same principle. The number of directions is typically chosen equal to 3 (the three main axes in image), or 13 (by considering also diagonals). As for perimeter estimation, surface area estimation in usually biased, but is usually more precise than measuring the surface area of the polygonal mesh reconstructed from binary images (Lehmann *et al.*, 2012[^9]).
 
 ##### Euler number
 
-The measurement of Euler number depends on the choice of the connectivity. For planar images, typical choices are the 4-connectivity, corresponding to the orthogonal neighbors, and the 8-connectivity, that also considers the diagonal neighbors. In 3D, the 6-connectivity considers the neighbors in the three main directions within the image, whereas the 26 connectivity also considers the diagonals. Other connectivities have been proposed but are not implemented in MorphoLibJ (Ohser *et al.*, 2009&lt;ref name="Osher2009&gt;</ref>).
+The measurement of Euler number depends on the choice of the connectivity. For planar images, typical choices are the 4-connectivity, corresponding to the orthogonal neighbors, and the 8-connectivity, that also considers the diagonal neighbors. In 3D, the 6-connectivity considers the neighbors in the three main directions within the image, whereas the 26 connectivity also considers the diagonals. Other connectivities have been proposed but are not implemented in MorphoLibJ (Ohser *et al.*, 2009[^8]).
 
 In the current implementation in MorphoLibJ, the Euler number is not taken into account for intersection of particles with image borders. This may result in non-integer result if the particle(s) of interest touches the image border.
 
@@ -282,7 +282,7 @@ In 2D, the **isoperimetric deficit index** (or "shape factor", or "circularity")
   
 $$circularity=4\pi\frac{A}{P^{2}}$$
 
-While values of circularity range theoretically within the interval $$[0;1]$$, the measurements errors of the perimeter may produce circularity values above 1 (Lehmann *et al.*, 2012[12]). The MorphoLibJ library also considers the inverse of the circularity, referred to as "elongation index". The values of elongation range from 1 for round particles and increase for elongated particles.
+While values of circularity range theoretically within the interval $$[0;1]$$, the measurements errors of the perimeter may produce circularity values above 1 (Lehmann *et al.*, 2012[^9]). The MorphoLibJ library also considers the inverse of the circularity, referred to as "elongation index". The values of elongation range from 1 for round particles and increase for elongated particles.
 
   
   
@@ -300,7 +300,7 @@ A binary particle may be described mathematically by its moments which correspon
 
 #### Geodesic measurements
 
-{% include thumbnail src='/media/plugins/morpholibj-perimiter-geodesic-diameter-computation.png' title='Computation of perimeter and geodesic diameter. Left: principle of perimeter estimation by counting intersections with set of lines. Right: illustration of the geodesic diameter measured on a non convex particle.'%}For particles with complex shapes, the geodesic diameter may be of interest. It corresponds of the largest geodesic distance between two points within a region, the geodesic distance being the length of the shortest path joining the two points while staying inside the region (Lantuejoul *et al.*, 1981[13]).
+{% include thumbnail src='/media/plugins/morpholibj-perimiter-geodesic-diameter-computation.png' title='Computation of perimeter and geodesic diameter. Left: principle of perimeter estimation by counting intersections with set of lines. Right: illustration of the geodesic diameter measured on a non convex particle.'%}For particles with complex shapes, the geodesic diameter may be of interest. It corresponds of the largest geodesic distance between two points within a region, the geodesic distance being the length of the shortest path joining the two points while staying inside the region (Lantuejoul *et al.*, 1981[^10]).
 
 #### Plugins
 
@@ -325,7 +325,7 @@ This plugin computes for each label the largest disk that can be enclosed within
 -   **yi**: the y-coordinate of the inscribed circle.
 -   **radius**: the radius of the inscribed circle.
 
-<figure><img src="/media/plugins/longest-geodesic-path-drive.png" title="Computation of the geodesic diameter on a segmented image from the DRIVE database (Staal et al., 2004). Each connected component was associated to a label, then the longest geodesic path within each connected component was computed and displayed as red overlay." width="300" alt="Computation of the geodesic diameter on a segmented image from the DRIVE database (Staal et al., 2004). Each connected component was associated to a label, then the longest geodesic path within each connected component was computed and displayed as red overlay." /><figcaption aria-hidden="true">Computation of the geodesic diameter on a segmented image from the DRIVE database (Staal <em>et al</em>., 2004<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>). Each connected component was associated to a label, then the longest geodesic path within each connected component was computed and displayed as red overlay.</figcaption></figure><section class="footnotes" role="doc-endnotes"><hr /><ol><li id="fn1" role="doc-endnote">{% include cite content='journal' title='Ridge based vessel segmentation in color images of the retina' author='J.J. Staal and M.D. Abramoff and M. Niemeijer and M.A. Viergever and B. van Ginneken' journal='IEEE Transactions on Medical Imaging' year='2004' pages='501-509' volume='23' doi='10.1109/TMI.2004.825627' %}<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></li></ol></section>
+<figure><img src="/media/plugins/longest-geodesic-path-drive.png" title="Computation of the geodesic diameter on a segmented image from the DRIVE database (Staal et al., 2004). Each connected component was associated to a label, then the longest geodesic path within each connected component was computed and displayed as red overlay." width="300" alt="Computation of the geodesic diameter on a segmented image from the DRIVE database (Staal et al., 2004). Each connected component was associated to a label, then the longest geodesic path within each connected component was computed and displayed as red overlay." /><figcaption aria-hidden="true" markdown="1">Computation of the geodesic diameter on a segmented image from the DRIVE database (Staal <em>et al</em>., 2004[^14]). Each connected component was associated to a label, then the longest geodesic path within each connected component was computed and displayed as red overlay.</figcaption></figure>
 
 ##### Geodesic diameter
 
@@ -422,7 +422,7 @@ $$FP=\frac{\sum_{r}|S{}_{r}\setminus T{}_{r}|}{\sum_{r}|S_{r}|}$$
 
 ### Spatial organization
 
-The region adjacency graph plugin gives access to the neighborhood relationship between adjacent regions. This can be particularly informative for exploring collections of cells within cellular tissues (Florindo *et al.*, 2016[14]).
+The region adjacency graph plugin gives access to the neighborhood relationship between adjacent regions. This can be particularly informative for exploring collections of cells within cellular tissues (Florindo *et al.*, 2016[^11]).
 
 {% include thumbnail src='/media/plugins/morpholibj-region-adjacency-graph.png' title='Computation of the Region Adjacency Graph on a microscopy image of plant tissue. Left: original image. Middle: result of watershed segmentation. Right: overlay of edges representing adjacent regions.'%}
 
@@ -449,7 +449,7 @@ Several methods exist for computing distance maps. The MorphoLibJ library implem
 
 In some cases it may be useful to restrict the propagation of distances to a specific region or mask. For example, one may be interested in the distance between two points in a vasculature network, while staying within the network. The **geodesic distance transform** consists in computing the distance from a given binary marker, while constraining the propagation of the distance within a binary mask. An illustration is given in the figure below:
 
-{% include thumbnail src='/media/plugins/morpholibj-geodesic-distance-example.png' title='Computation of the geodesic distance map on a binary image from the DRIVE database (Staal *et al.*, 2004[15]). Left: original image with marker superimposed in red. Right: result of geodesic distance map, hot colors correspond to large distances, cold colors correspond to small distances.'%}
+{% include thumbnail src='/media/plugins/morpholibj-geodesic-distance-example.png' title='Computation of the geodesic distance map on a binary image from the DRIVE database (Staal *et al.*, 2004[^14]). Left: original image with marker superimposed in red. Right: result of geodesic distance map, hot colors correspond to large distances, cold colors correspond to small distances.'%}
 
 -   **Geodesic Distance Map** computes the geodesic distance between each foreground pixel of a binary mask image to the closest pixel of a marker image, while staying within the particle represented by the mask image.
 -   **Interactive Geodesic Distance Map** computes the geodesic distance between each foreground pixel of a the currently selected image (considered the mask image) to the closest pixel of a marker image defined by the user ROIs, while staying within the particle represented by the mask image.
@@ -712,13 +712,10 @@ You can browse the [javadoc](http://ijpb.github.io/MorphoLibJ/javadoc/) for more
 
 Please note that [MorphoLibJ](/plugins/morpholibj) is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
--   {% include publication content='MorphoLibJ' %}
+{% include publication content='MorphoLibJ' %}
 
 [MorphoLibJ](/plugins/morpholibj)'s code repository has its own [DOI](https://zenodo.org/badge/latestdoi/21349/ijpb/MorphoLibJ).
 
-## References
-
-<references />
 
 ## License
 
@@ -726,38 +723,34 @@ This program is **free software**; you can redistribute it and/or modify it unde
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-     
+## References
 
-[1] 
+{% include cite fn='1' content='journal' title='An overview of morphological filtering' author='Serra, Jean and Vincent, Luc' journal='Circuits, Systems and Signal Processing' volume='11' number='1' pages='47-108' year='1992' publisher='Springer' doi='10.1007/BF01189221' %}
 
-[2] {% include cite content='journal' title='Directional morphological filtering' author='Soille, Pierre and Talbot, Hugues' publisher='IEEE' year='2001' volume='23' number='11' pages='1313-1329' journal='IEEE Transactions on Pattern Analysis and Machine Intelligence' doi='10.1109/34.969120' %}
+{% include cite fn='2' content='journal' title='Directional morphological filtering' author='Soille, Pierre and Talbot, Hugues' publisher='IEEE' year='2001' volume='23' number='11' pages='1313-1329' journal='IEEE Transactions on Pattern Analysis and Machine Intelligence' doi='10.1109/34.969120' %}
 
-[3] {% include cite content='journal' title='Characterization of changes in blood vessel width and tortuosity in retinopathy of prematurity using image analysis' author='Conor Heneghan and John Flynn and Michael O Keefe and Mark Cahill' journal='Medical Image Analysis' volume='6' number='4' pages='407-429' year='2002' publisher='Elsevier' doi='10.1016/S1361-8415(02)00058-0' %}
+{% include cite fn='3' content='journal' title='Characterization of changes in blood vessel width and tortuosity in retinopathy of prematurity using image analysis' author='Conor Heneghan and John Flynn and Michael O Keefe and Mark Cahill' journal='Medical Image Analysis' volume='6' number='4' pages='407-429' year='2002' publisher='Elsevier' doi='10.1016/S1361-8415(02)00058-0' %}
 
-[4] {% include cite content='conference' title='Discrete Morphology with Line Structuring Elements' author='Hendriks, CL Luengo and van Vliet, Lucas J' booktitle='International Conference on Computer Analysis of Images and Patterns' pages='722-729' year='2003' organization='Springer' doi='10.1007/978-3-540-45179-2_88' %}
+{% include cite fn='4' content='conference' title='Discrete Morphology with Line Structuring Elements' author='Hendriks, CL Luengo and van Vliet, Lucas J' booktitle='International Conference on Computer Analysis of Images and Patterns' pages='722-729' year='2003' organization='Springer' doi='10.1007/978-3-540-45179-2_88' %}
 
-[5] {% include cite content='conference' title='Attribute Opening, Thinnings, and Granulometries' author='Edmond J. Breen and Ronald Jones' journal='Computer Vision and Image Understanding' year='1996' month='Nov.' number='3' pages='377--389' volume='64' doi='10.1006/cviu.1996.0066' url='http://www.sciencedirect.com/science/article/pii/S1077314296900661' %}
+{% include cite fn='5' content='conference' title='Attribute Opening, Thinnings, and Granulometries' author='Edmond J. Breen and Ronald Jones' journal='Computer Vision and Image Understanding' year='1996' month='Nov.' number='3' pages='377--389' volume='64' doi='10.1006/cviu.1996.0066' url='http://www.sciencedirect.com/science/article/pii/S1077314296900661' %}
 
-[6] 
+{% include cite fn='12' content='conference' title='Determining watersheds in digital pictures via flooding simulations' author='Soille, Pierre and Vincent, Luc M' booktitle='Proc. SPIE' volume='1360' pages='240-250' year='1990' organization='International Society for Optics and Photonics' doi='10.1117/12.24211' url='http://dx.doi.org/10.1117/12.24211' %}
 
-[7] {% include cite content='conference' title='Computation of Minkowski measures on 2D and 3D binary images' author='Legland, David and Kiêu, Kiên and Devaux, Marie-Françoise' journal='Image Analysis and Stereology' year='2007' month='June' number='6' pages='83-92' volume='26' doi='10.5566/ias.v26.p83-92' url='http://www.ias-iss.org/ojs/IAS/article/view/811' %}
+{% include cite fn='13' content='journal' title='Morphological segmentation' author='F. Meyer and S. Beucher' journal='Journal of Visual Communication and Image Representation' volume='1' number='1' pages='21-46' year='1990' doi='10.1016/1047-3203(90)90014-M' url='http://www.sciencedirect.com/science/article/pii/104732039090014M' %}
 
-[8] {% include cite content='conference' title='Measuring the length of a curve' author='Moran, PAP' journal='Biometrika' year='1966' volume='53' number='3-4' pages='359-364' doi='10.1093/biomet/53.3-4.359' URL='http://biomet.oxfordjournals.org/content/53/3-4/359.abstract' %}
+{% include cite fn='6' content='conference' title='Computation of Minkowski measures on 2D and 3D binary images' author='Legland, David and Kiêu, Kiên and Devaux, Marie-Françoise' journal='Image Analysis and Stereology' year='2007' month='June' number='6' pages='83-92' volume='26' doi='10.5566/ias.v26.p83-92' url='http://www.ias-iss.org/ojs/IAS/article/view/811' %}
 
-[9] 
+{% include cite fn='8' content='conference' booktitle='3D Images of Materials Structures: processing and analysis' title='Image Processing' author='Joachim Ohser and Katja Schladitz' publisher='Wiley-VCH Verlag GmbH & Co. KGaA' year='2009' doi='10.1002/9783527628308.ch4' url='http://dx.doi.org/10.1002/9783527628308.ch4' %}
 
-[10] 
-{% capture title%}
-Efficient N-Dimensional surface estimation using {% include wikipedia title='Crofton formula' text='Crofton formula'%} and run-length encoding
-{% endcapture %}
-{% include cite content='journal' title=title author='Lehmann, Gaetan and Legland, David' journal='Insight Journal' year='2012' pages='1-11' url='http://hdl.handle.net/10380/3342' %}
+{% include cite fn='7' content='conference' title='Measuring the length of a curve' author='Moran, PAP' journal='Biometrika' year='1966' volume='53' number='3-4' pages='359-364' doi='10.1093/biomet/53.3-4.359' URL='http://biomet.oxfordjournals.org/content/53/3-4/359.abstract' %}
 
-[11] 
+{% include cite fn='9' content='journal' title='Efficient N-Dimensional surface estimation using Crofton formula and run-length encoding'
+ author='Lehmann, Gaetan and Legland, David' journal='Insight Journal' year='2012' pages='1-11' url='http://hdl.handle.net/10380/3342' %}
 
-[12] 
+{% include cite fn='10' content='conference' title='On the use of geodesic metric in image analysis' author='Lantuejoul, C. and Beucher, S.' journal='Journal of Microscopy' year='1981' month='Jan.' number='1,' pages='39-40' volume='121' doi='10.1111/j.1365-2818.1981.tb01197.x' url='http://dx.doi.org/10.1111/j.1365-2818.1981.tb01197.x' %}
 
-[13] {% include cite content='conference' title='On the use of geodesic metric in image analysis' author='Lantuejoul, C. and Beucher, S.' journal='Journal of Microscopy' year='1981' month='Jan.' number='1,' pages='39-40' volume='121' doi='10.1111/j.1365-2818.1981.tb01197.x' url='http://dx.doi.org/10.1111/j.1365-2818.1981.tb01197.x' %}
+{% include cite fn='11' content='conference' title='Identifying plant species using architectural features in leaf microscopy images' author='Joao Batista Florindo and Odemir Martinez Bruno and Davi Rodrigo Rossatto and Rosana Marta Kolb and Maria Cecilia Gomez and Gabriel Landini' journal='Botany' year='2016' number='1' pages='15-21' volume='94' doi='10.1139/cjb-2015-0075' url='http://dx.doi.org/10.1139/cjb-2015-0075' %}
 
-[14] {% include cite content='conference' title='Identifying plant species using architectural features in leaf microscopy images' author='Joao Batista Florindo and Odemir Martinez Bruno and Davi Rodrigo Rossatto and Rosana Marta Kolb and Maria Cecilia Gomez and Gabriel Landini' journal='Botany' year='2016' number='1' pages='15-21' volume='94' doi='10.1139/cjb-2015-0075' url='http://dx.doi.org/10.1139/cjb-2015-0075' %}
 
-[15] 
+{% include cite fn='14' content='journal' title='Ridge based vessel segmentation in color images of the retina' author='J.J. Staal and M.D. Abramoff and M. Niemeijer and M.A. Viergever and B. van Ginneken' journal='IEEE Transactions on Medical Imaging' year='2004' pages='501-509' volume='23' doi='10.1109/TMI.2004.825627' %}
