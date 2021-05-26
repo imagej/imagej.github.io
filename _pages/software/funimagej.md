@@ -1,6 +1,6 @@
 ---
 title: FunImageJ
-
+section: Explore:Software
 artifact: fun.imagej:fun.imagej
 categories: [Lisp, Citable]
 ---

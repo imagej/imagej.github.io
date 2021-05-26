@@ -213,6 +213,12 @@
             <li><a href="/about/usage">Usage Statistics</a></li>
 
             {% include menu/section title="Libraries" link="/libs" %}
+              <li><a href="/libs/imagej-common">ImageJ Common</a></li>
+              <li><a href="/libs/imagej-legacy">ImageJ Legacy</a></li>
+              <li><a href="/libs/imageja">ImageJA</a></li>
+              <li><a href="/libs/scijava-common">SciJava</a></li>
+              <li><a href="/libs/scifio">SCIFIO</li>
+
               {% include menu/section title="ImgLib2" link="/libs/imglib2" %}
                 <li><a href="/libs/imglib2/getting-started">Getting Started</a></li>
                 <li><a href="/libs/imglib2/accessors">Accessors</a></li>
@@ -229,6 +235,8 @@
             {% include menu/section-end %} <!-- Explore/Libraries -->
 
             {% include menu/section title="Software" link="/software" %}
+              <li><a href="/software/nih-image">NIH Image</a>
+              <li><a href="/software/imagej1">ImageJ1</a>
               <li><a href="/software/imagej2">ImageJ2</a>
 
               {% include menu/section title="Fiji" link="/software/fiji" %}
