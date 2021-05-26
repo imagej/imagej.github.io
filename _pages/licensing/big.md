@@ -1,6 +1,6 @@
 ---
 title: BIG License
-section: About:Licensing:Proprietary
+section: Contribute:Licensing:Proprietary
 ---
 
 {% include notice icon="info" content='For a summary of [SciJava](SciJava) licensing, see the [Licensing](/licensing) page.' %} 

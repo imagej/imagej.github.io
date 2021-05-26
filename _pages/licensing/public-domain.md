@@ -1,6 +1,6 @@
 ---
 title: Public Domain
-section: About:Licensing:Open Source
+section: Contribute:Licensing:Open Source
 ---
 
 {% include notice icon="info" content='For a summary of [SciJava](SciJava) licensing, see the [Licensing](/licensing) page.' %} 

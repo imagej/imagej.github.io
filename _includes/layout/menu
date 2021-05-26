@@ -7,70 +7,17 @@
       {%- endif -%}
         <h3>ImageJ Docs</h3>
         <ul>
-          {% include menu/section title="About" link="/about" %}
-            <li><a href="/about/usage">Usage</a></li>
-            <li><a href="/about/contributors">Contributors</a></li>
-            <li><a href="/about/governance">Governance</a></li>
-
-            {% include menu/section title="Licensing" link="/licensing" %}
-              {% include menu/section title="Open Source" %}
-                <li><a href="/licensing/apache">Apache</a></li>
-                <li><a href="/licensing/bsd">BSD</a></li>
-                <li><a href="/licensing/gpl">GPL</a></li>
-                <li><a href="/licensing/lgpl">LGPL</a></li>
-                <li><a href="/licensing/mit">MIT</a></li>
-                <li><a href="/licensing/public-domain">Public domain</a></li>
-              {% include menu/section-end %} <!-- About/Licensing/Open Source -->
-
-              {% include menu/section title="Proprietary" %}
-                <li><a href="/licensing/big">BIG</a></li>
-              {% include menu/section-end %} <!-- About/Licensing/Proprietary -->
-            {% include menu/section-end %} <!-- About/Licensing -->
-
-            <li><a href="/about/funding">Funding</a></li>
-            <li><a href="/about/citing">Citing</a></li>
-            <li><a href="/about/contributing">Contributing</a></li>
-
-            {% include menu/section title="Fiji" link="/software/fiji" %}
-              <li><a href="/software/fiji/using">Using Fiji</a></li>
-              <li><a href="/software/fiji/featured-projects">Featured Fiji Projects</a></li>
-              <li><a href="/software/fiji/publications">Publications</a></li>
-              <li><a href="/software/fiji/links">Links</a></li>
-
-              {% include menu/section title="Developing Fiji" link="/software/fiji/developing" %}
-                <li><a href="/software/fiji/building-from-source">Building Fiji from source</a></li>
-                <li><a href="/software/fiji/contribution-requirements">Contribution requirements</a></li>
-              {% include menu/section-end %} <!-- About/Fiji/Developing Fiji -->
-            {% include menu/section-end %} <!-- About/Fiji -->
-          {% include menu/section-end %} <!-- About -->
-
-          {% include menu/section title="Plugins" link="/plugins" %}
-            <li><a href="/plugin-index">Plugin Index</a></li>
-          {% include menu/section-end %} <!-- Plugins -->
-
-          {% include menu/section title="Imaging" link="/imaging" %}
-            <li><a href="/imaging/principles">Principles</a></li>
-            <li><a href="/imaging/annotating-images">Annotating Images</a></li>
-            <li><a href="/imaging/colocalization-analysis">Colocalization</a></li>
-            <li><a href="/imaging/color-image-processing">Color Image Processing</a></li>
-            <li><a href="/imaging/deconvolution">Deconvolution</a></li>
-            <li><a href="/imaging/image-intensity-processing">Image Intensity Processing</a></li>
-            <li><a href="/imaging/particle-analysis">Particle Analysis</a></li>
-            <li><a href="/imaging/registration">Registration</a></li>
-            <li><a href="/imaging/segmentation">Segmentation</a></li>
-            <li><a href="/imaging/stack-slice-manipulations">Stack-slice Manipulations</a></li>
-            <li><a href="/imaging/t-functions">T-functions</a></li>
-            <li><a href="/imaging/tracking">Tracking</a></li>
-            <li><a href="/imaging/visualization">Visualization</a></li>
-            <li><a href="/imaging/z-functions">Z-functions</a></li>
-          {% include menu/section-end %} <!-- Imaging -->
+          <li><a href="/downloads">Download</a></li>
 
           {% include menu/section title="Learn" link="/learn" %}
+            <li><a href="/about">Flavors of ImageJ</a></li>
+            <li><a href="/learn/keyboard-shortcuts">Keyboard Shortcuts</a></li>
+            <li><a href="/learn/tips-and-tricks">Tips and Tricks</a></li>
+            <li><a href="/help/troubleshooting">Troubleshooting</a></li>
+            <li><a href="/help/faq">Frequently Asked Questions</a></li>
             <li><a href="/learn/user-guides">User Guides</a></li>
             <li><a href="/tutorials">Tutorials</a></li>
             <li><a href="/learn/presentations">Presentations</a></li>
-            <li><a href="/learn/keyboard-shortcuts">Keyboard Shortcuts</a></li>
-            <li><a href="/learn/tips-and-tricks">Tips and Tricks</a></li>
 
             {% include menu/section title="Supported Platforms" link="/platforms" %}
               <li><a href="/platforms/windows">Windows</a></li>
@@ -94,11 +41,39 @@
             {% include menu/section-end %} <!-- Learn/File Formats -->
           {% include menu/section-end %} <!-- Learn -->
 
-          {% include menu/section title="Scripting" link="/scripting" %}
-            <li><a href="/scripting/user-input">User Input</a></li>
-            <li><a href="/scripting/basics">Scripting Basics</a></li>
-            <li><a href="/scripting/how-to-use-the-javadoc">Using Javadocs</a></li>
+          {% include menu/section title="Understand" link="/imaging" %}
+            <li><a href="/imaging/principles">Principles of Scientific Imaging</a></li>
+            <li><a href="/imaging/annotating-images">Annotating Images</a></li>
+            <li><a href="/imaging/colocalization-analysis">Colocalization</a></li>
+            <li><a href="/imaging/color-image-processing">Color Image Processing</a></li>
+            <li><a href="/imaging/deconvolution">Deconvolution</a></li>
+            <li><a href="/imaging/image-intensity-processing">Image Intensity Processing</a></li>
+            <li><a href="/imaging/particle-analysis">Particle Analysis</a></li>
+            <li><a href="/imaging/registration">Registration</a></li>
+            <li><a href="/imaging/segmentation">Segmentation</a></li>
+            <li><a href="/imaging/stack-slice-manipulations">Stack-slice Manipulations</a></li>
+            <li><a href="/imaging/t-functions">T-functions</a></li>
+            <li><a href="/imaging/tracking">Tracking</a></li>
+            <li><a href="/imaging/visualization">Visualization</a></li>
+            <li><a href="/imaging/z-functions">Z-functions</a></li>
+          {% include menu/section-end %} <!-- Understand -->
+
+          {% include menu/section title="Extend" link="/plugins" %}
+            {% include menu/section title="Update Sites" link="/update-sites" %}
+              <li><a href="/update-sites/following">Following an update site</a></li>
+              <li><a href="/update-sites/setup">Creating an update site</a></li>
+              <li><a href="/update-sites/tos">Terms of service</a></li>
+              <li><a href="/update-sites/automatic-uploads">Automatic upload</a></li>
+              <li><a href="/update-sites/core-uploads">Uploading to core sites</a></li>
+              <li><a href="/update-sites/faq">Update site FAQ</a></li>
+            {% include menu/section-end %} <!-- Extend/Update Sites -->
+          {% include menu/section-end %} <!-- Extend -->
+
+          {% include menu/section title="Automate" link="/scripting" %}
             <li><a href="/scripting/batch">Batch Processing</a></li>
+            <li><a href="/scripting/basics">Scripting Basics</a></li>
+            <li><a href="/scripting/user-input">User Input</a></li>
+            <li><a href="/scripting/how-to-use-the-javadoc">Using Javadocs</a></li>
             <li><a href="/scripting/script-editor">Script Editor</a></li>
             <li><a href="/scripting/auto-imports">Auto Import</a></li>
             <li><a href="/scripting/templates">Templates</a></li>
@@ -109,7 +84,7 @@
             <li><a href="/scripting/multithreaded-image-processing-in-javascript">Multithreading in Javascript</a></li>
             <li><a href="/scripting/chess">Chess in Jython</a></li>
 
-            {% include menu/section title="Languages" %}
+            {% include menu/section title="Scripting Languages" %}
               <li><a href="/scripting/beanshell">BeanShell Scripting</a></li>
               <li><a href="/scripting/groovy">Groovy Scripting</a></li>
               <li><a href="/scripting/macro">ImageJ Macro</a></li>
@@ -121,10 +96,52 @@
               <li><a href="/scripting/renjin">R (Renjin)</a></li>
               <li><a href="/scripting/jruby">Ruby (JRuby)</a></li>
               <li><a href="/scripting/scala">Scala Scripting</a></li>
-            {% include menu/section-end %} <!-- Scripting/Languages -->
-          {% include menu/section-end %} <!-- Scripting -->
+            {% include menu/section-end %} <!-- Automate/Scripting Languages -->
+          {% include menu/section-end %} <!-- Automate -->
 
-          {% include menu/section title="Development" link="/develop" %}
+          {% include menu/section title="Contribute" link="/about/contributing" %}
+            <li><a href="/about/citing">Citing</a></li>
+            <li><a href="/about/contributors">Contributors</a></li> <!-- TODO: merge /users index with this page? -->
+            <li><a href="/about/governance">Governance</a></li>
+            <li><a href="/about/funding">Funding</a></li>
+
+            {% include menu/section title="Licensing" link="/licensing" %}
+              {% include menu/section title="Open Source" %}
+                <li><a href="/licensing/apache">Apache</a></li>
+                <li><a href="/licensing/bsd">BSD</a></li>
+                <li><a href="/licensing/gpl">GPL</a></li>
+                <li><a href="/licensing/lgpl">LGPL</a></li>
+                <li><a href="/licensing/mit">MIT</a></li>
+                <li><a href="/licensing/public-domain">Public domain</a></li>
+              {% include menu/section-end %} <!-- Contribute/Licensing/Open Source -->
+
+              {% include menu/section title="Proprietary" %}
+                <li><a href="/licensing/big">BIG</a></li>
+              {% include menu/section-end %} <!-- Contribute/Licensing/Proprietary -->
+            {% include menu/section-end %} <!-- Contribute/Licensing -->
+
+            {% include menu/section title="Editing the Wiki" link="/help/editing" %}
+              <li><a href="/help/editing/advanced">Advanced editing</a></li>
+              <li><a href="/help/editing/citations">Citations</a></li>
+              <li><a href="/help/editing/code">Source Code</a></li>
+              <li><a href="/help/editing/headers">Headers</a></li>
+              <li><a href="/help/editing/icons">Icons</a></li>
+              <li><a href="/help/editing/images">Images</a></li>
+              <li><a href="/help/editing/keys">Keyboard Shortcuts</a></li>
+              <li><a href="/help/editing/linking">Linking</a></li>
+              <li><a href="/help/editing/math">Math Expressions</a></li>
+              <li><a href="/help/editing/notices">Notices</a></li>
+              <li><a href="/help/editing/people">People</a></li>
+              <li><a href="/help/editing/pitfalls">Pitfalls</a></li>
+              <li><a href="/help/editing/symbols">Symbols</a></li>
+              <li><a href="/help/editing/tables">Tables</a></li>
+              <li><a href="/help/editing/timelines">Timelines</a></li>
+              <li><a href="/help/editing/videos">Videos</a></li>
+              <li><a href="/help/editing/whitespace">Whitespace</a></li>
+            {% include menu/section-end %} <!-- Contribute/Editing the Wiki -->
+          {% include menu/section-end %} <!-- Contribute -->
+
+          {% include menu/section title="Develop" link="/develop" %}
             <li><a href="/develop/philosophy">Philosophy</a></li>
             <li><a href="/develop/architecture">Architecture</a></li>
             <li><a href="/develop/source">Source code</a></li>
@@ -147,7 +164,7 @@
               <li><a href="/develop/travis">Travis</a></li>
               <li><a href="/develop/appveyor">AppVeyor</a></li>
               <li><a href="/develop/dotfiles">Dotfiles</a></li>
-            {% include menu/section-end %} <!-- Development/Tools -->
+            {% include menu/section-end %} <!-- Develop/Tools -->
 
             {% include menu/section title="Guides" %}
               <li><a href="/develop/plugins">Writing plugins</a></li>
@@ -167,7 +184,7 @@
               <li><a href="/develop/versioning">Versioning</a></li>
               <li><a href="/develop/logging">Logging</a></li>
               <li><a href="/develop/uber-jars">Uber-JARs</a></li>
-            {% include menu/section-end %} <!-- Development/Guides -->
+            {% include menu/section-end %} <!-- Develop/Guides -->
 
             {% include menu/section title="Git" link="/develop/git" %}
               <li><a href="/develop/git/eclipse">Git in Eclipse (EGit)</a></li>
@@ -181,60 +198,50 @@
               <li><a href="/develop/git/pinpoint-regressions">How to pinpoint regressions</a></li>
               <li><a href="/develop/git/publish-a-repository">How to publish a git repository</a></li>
               <li><a href="/develop/git/extract-a-subproject">How to extract a subproject</a></li>
-            {% include menu/section-end %} <!-- Development/Git -->
+            {% include menu/section-end %} <!-- Develop/Git -->
+          {% include menu/section-end %} <!-- Develop -->
 
-            {% include menu/section title="ImgLib2" link="/libs/imglib2" %}
-              <li><a href="/libs/imglib2/getting-started">Getting Started</a></li>
-              <li><a href="/libs/imglib2/accessors">Accessors</a></li>
-              <li><a href="/libs/imglib2/accessibles">Accessibles</a></li>
-              <li><a href="/libs/imglib2/examples">Examples</a></li>
-              <li><a href="/libs/imglib2/workshop-introductory">Introductory Workshop</a></li>
-              <li><a href="/libs/imglib2/workshop-advanced">Advanced Workshop</a></li>
-              <li><a href="/libs/imglib2/matlab">ImgLib2 images in MATLAB</a></li>
-              <li><a href="/libs/imglib2/benchmarks">Benchmarks</a></li>
-              <li><a href="/libs/imglib2/faq">FAQ</a></li>
-              <li><a href="/libs/imglib2/developing">Developing ImgLib2</a></li>
-              <li><a href="/libs/imglib2/discussion">ImgLib2 Discussion</a></li>
-            {% include menu/section-end %} <!-- Development/ImgLib2 -->
-          {% include menu/section-end %} <!-- Development -->
-
-          {% include menu/section title="Help" link="/help" %}
-            <li><a href="/help/faq">FAQ</a></li>
-            <li><a href="/help/troubleshooting">Troubleshooting</a></li>
+          {% include menu/section title="Discuss" link="/help" %}
             <li><a href="/help/bugs">Reporting Issues</a></li>
             <li><a href="/help/mailing-lists">Mailing Lists</a></li>
             <li><a href="/help/chat">Chat</a></li>
+          {% include menu/section-end %} <!-- Discuss -->
 
-            {% include menu/section title="Editing the Wiki" link="/help/editing" %}
-              <li><a href="/help/editing/advanced">Advanced editing</a></li>
-              <li><a href="/help/editing/citations">Citations</a></li>
-              <li><a href="/help/editing/code">Source Code</a></li>
-              <li><a href="/help/editing/headers">Headers</a></li>
-              <li><a href="/help/editing/icons">Icons</a></li>
-              <li><a href="/help/editing/images">Images</a></li>
-              <li><a href="/help/editing/keys">Keyboard Shortcuts</a></li>
-              <li><a href="/help/editing/linking">Linking</a></li>
-              <li><a href="/help/editing/math">Math Expressions</a></li>
-              <li><a href="/help/editing/notices">Notices</a></li>
-              <li><a href="/help/editing/people">People</a></li>
-              <li><a href="/help/editing/pitfalls">Pitfalls</a></li>
-              <li><a href="/help/editing/symbols">Symbols</a></li>
-              <li><a href="/help/editing/tables">Tables</a></li>
-              <li><a href="/help/editing/timelines">Timelines</a></li>
-              <li><a href="/help/editing/videos">Videos</a></li>
-              <li><a href="/help/editing/whitespace">Whitespace</a></li>
-            {% include menu/section-end %} <!-- Help/Editing the Wiki -->
+          {% include menu/section title="Explore" %}
+            <li><a href="/plugin-index">Plugin Index</a></li>
+            <li><a href="/list-of-update-sites">List of Update Sites</a></li>
+            <li><a href="/about/usage">Usage Statistics</a></li>
 
-            {% include menu/section title="Update Sites" link="/update-sites" %}
-              <li><a href="/update-sites/following">Following an update site</a></li>
-              <li><a href="/update-sites/setup">Creating an update site</a></li>
-              <li><a href="/update-sites/tos">Terms of service</a></li>
-              <li><a href="/update-sites/automatic-uploads">Automatic upload</a></li>
-              <li><a href="/update-sites/core-uploads">Uploading to core sites</a></li>
-              <li><a href="/list-of-update-sites">List of update sites</a></li>
-              <li><a href="/update-sites/faq">Update site FAQ</a></li>
-            {% include menu/section-end %} <!-- Help/Update Sites -->
-          {% include menu/section-end %} <!-- Help -->
+            {% include menu/section title="Libraries" link="/libs" %}
+              {% include menu/section title="ImgLib2" link="/libs/imglib2" %}
+                <li><a href="/libs/imglib2/getting-started">Getting Started</a></li>
+                <li><a href="/libs/imglib2/accessors">Accessors</a></li>
+                <li><a href="/libs/imglib2/accessibles">Accessibles</a></li>
+                <li><a href="/libs/imglib2/examples">Examples</a></li>
+                <li><a href="/libs/imglib2/workshop-introductory">Introductory Workshop</a></li>
+                <li><a href="/libs/imglib2/workshop-advanced">Advanced Workshop</a></li>
+                <li><a href="/libs/imglib2/matlab">ImgLib2 images in MATLAB</a></li>
+                <li><a href="/libs/imglib2/benchmarks">Benchmarks</a></li>
+                <li><a href="/libs/imglib2/faq">FAQ</a></li>
+                <li><a href="/libs/imglib2/developing">Developing ImgLib2</a></li>
+                <li><a href="/libs/imglib2/discussion">ImgLib2 Discussion</a></li>
+              {% include menu/section-end %} <!-- Explore/Libraries/ImgLib2 -->
+            {% include menu/section-end %} <!-- Explore/Libraries -->
+
+            {% include menu/section title="Software" link="/software" %}
+              <li><a href="/software/imagej2">ImageJ2</a>
+
+              {% include menu/section title="Fiji" link="/software/fiji" %}
+                <li><a href="/software/fiji/using">Using Fiji</a></li>
+                <li><a href="/software/fiji/featured-projects">Featured Fiji Projects</a></li>
+                <li><a href="/software/fiji/publications">Publications</a></li>
+                <li><a href="/software/fiji/links">Links</a></li>
+                <li><a href="/software/fiji/developing">Developing Fiji</a></li>
+                <li><a href="/software/fiji/building-from-source">Building from source</a></li>
+                <li><a href="/software/fiji/contribution-requirements">Contribution requirements</a></li>
+              {% include menu/section-end %} <!-- Explore/Software/Fiji -->
+            {% include menu/section-end %} <!-- Explore/Software -->
+          {% include menu/section-end %} <!-- Explore -->
         </ul>
       </div>
 {%- endcapture -%}

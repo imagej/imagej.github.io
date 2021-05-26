@@ -1,6 +1,6 @@
 ---
 title: Videos 
-section: Help:Editing the Wiki
+section: Contribute:Editing the Wiki
 description: This page demonstrates how to embed videos on a page.
 nav-links: true
 ---

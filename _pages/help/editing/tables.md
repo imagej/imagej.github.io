@@ -1,6 +1,6 @@
 ---
 title: Tables
-section: Help:Editing the Wiki
+section: Contribute:Editing the Wiki
 nav-links: true
 ---
 
