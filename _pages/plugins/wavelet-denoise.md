@@ -78,7 +78,7 @@ Below the buttons (<i>Preview 1 Slice</i>, <i>Recomputing All Data Required</i>)
 
 **<u>How to use the plugin for denoising/filtering small data:</u>**
 
-([SIM\_Lamina\_32bit\_488\_Honeycomb\_StrongBckg\_Scale-0\_25.tif - 7 MB](/media/plugins/sim-lamina-32bit-488-honeycomb-strongbckg-scale-0-25.zip))
+([SIM_Lamina_32bit_488_Honeycomb_StrongBckg_Scale-0_25.tif - 7 MB](/media/plugins/sim-lamina-32bit-488-honeycomb-strongbckg-scale-0-25.zip))
 
 1\. Open an image/stack.
 
@@ -102,7 +102,7 @@ Below the buttons (<i>Preview 1 Slice</i>, <i>Recomputing All Data Required</i>)
 
 **<u>How to use the plugin for denoising/filtering big data:</u>**
 
-([SIM\_Lamina\_32bit\_488\_Honeycomb\_StrongBckg.tif - 73 MB](/media/sim-lamina-32bit-488-honeycomb-strongbckg.zip))
+([SIM_Lamina_32bit_488_Honeycomb_StrongBckg.tif - 73 MB](https://downloads.imagej.net/plugins/wavelet-denoise/sim-lamina-32bit-488-honeycomb-strongbckg.zip))
 
 1\. Open an image/stack.
 
