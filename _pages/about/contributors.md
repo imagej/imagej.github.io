@@ -44,7 +44,7 @@ categories: [community]
 -   {% include person id='tnargsirrah' %}<sup>11</sup> (Nov 2009-Jan 2012)
 -   Adam Fraser<sup>4</sup> (Nov 2009-Aug 2011)
 -   {% include person id='ricklentz' %}<sup>1</sup> (Nov 2009-Feb 2011)
--   See also [ImageJ forum heroes](https://forum.image.sc/users)
+-   See also [Image.sc Forum heroes](https://forum.image.sc/u?period=yearly)
 </div>
 
 <div style="padding-right: 1em" markdown=1>
