@@ -155,10 +155,11 @@ As for a graphics card buy the largest you can afford, both in computing power a
 {% include thumbnail src='/media/plugins/trakem2/trakem2-arealists.png' title='Neuronal arbors from serial section electron microscopy reconstructed with TrakEM2 using the [manually segmentated data set](http://www.ini.uzh.ch/~acardona/data.html).'%} 
 {% include thumbnail src='/media/plugins/trakem2/trakem2-display-2.png' title='[TrakEM2](/plugins/trakem2) showing one section of a serial section transmission electron microscopy (ssTEM) data set, with numerous neuronal arbors reconstructed using [treelines](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#trees) and [connectors](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#connectors) (for synapses).'%} 
 {% include thumbnail src='/media/plugins/trakem2/trakem2-display-segmentations.png' title='Example TrakEM2 segmentations, including Ball, Pipe, Profile, AreaList and floating text labels.'%} 
+
 {% include clear content='left' %}
 
 ## Publication
 
--   {% include publication content='TrakEM2' %}
+{% include publication content='TrakEM2' %}
 
       

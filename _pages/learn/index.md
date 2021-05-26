@@ -14,7 +14,7 @@ section: Learn
 
 # What does ImageJ provide?
 
-| [Application](/about/flavors)              | A user interface with functions to load, display, and save images. |
+| [Application](/about#flavors)              | A user interface with functions to load, display, and save images. |
 | [Techniques](/imaging)                     | [Image processing](/ij/docs/guide/146-29.html#toc-Section-29), [colocalization](/imaging/colocalization-analysis), [deconvolution](/imaging/deconvolution), [registration](/imaging/registration), [segmentation](/imaging/segmentation), [tracking](/imaging/tracking), [visualization](/imaging/visualization) and much more. |
 | [Plugins](/plugins)                        | A powerful mechanism for extending ImageJ in all kinds of useful ways. |
 | [Scripting](/scripting)                    | Automated, reproducible workflows via [scripts](/scripting) and [macros](/scripting/macro), including [headless on a remote server or cluster](/scripting/headless). |
