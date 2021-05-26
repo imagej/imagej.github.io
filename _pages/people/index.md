@@ -11,11 +11,12 @@ section: Contribute
 
 # Who we are
 
-{% include notice icon="info" content="This list is only irregularly updated." %}
+<style>
+.contributor-block { padding: 0.5em; break-inside: avoid; }
+</style>
 
-<div style="display: flex; flex-wrap: wrap">
-
-<div style="padding-right: 1em" markdown=1>
+<div style="column-width: 18em"> <!-- Begin columnar list. -->
+<div class="contributor-block" markdown=1>
 ### Principal investigators
 
 -   {% include person id='eliceiri' %}<sup>1</sup> (ImageJ, Fiji)
@@ -25,15 +26,15 @@ section: Contribute
 -   [Michael Berthold](http://www.informatik.uni-konstanz.de/berthold/mitglieder/prof-dr-michael-berthold/)<sup>5,6</sup> (KNIME)
 -   [Jason Swedlow](http://www.lifesci.dundee.ac.uk/people/jason-swedlow)<sup>7,8</sup> (OME)
 </div>
-
-<div style="padding-right: 1em" markdown=1>
-### {% include icon name='ImageJ' size='32px' %}[ImageJ](/about)
+<div class="contributor-block" markdown=1>
+### {% include icon name='ImageJ' size='32px' %} [ImageJ](/about)
 
 -   {% include person id='rasband' %}<sup>9</sup> (lead, [ImageJ 1.x](/software/imagej1))
 -   {% include person id='ctrueden' %}<sup>1</sup> (lead, [ImageJ2](/software/imagej2))
--   {% include person id='dietzc' %}<sup>5,6</sup>
--   {% include person id='bnorthan' %}<sup>10</sup>
 -   {% include person id='hinerm' %}<sup>1</sup>
+-   {% include person id='elevans' %}<sup>1</sup>
+-   {% include person id='gselzer' %}<sup>1</sup>
+-   {% include person id='bnorthan' %}<sup>10</sup>
 -   {% include person id='LeeKamentsky' %}<sup>4</sup> (Jan 2010-Apr 2016)
 -   {% include person id='dscho' %}<sup>1,2</sup> (Sep 2011-Nov 2014)
 -   {% include person id='grislis' %}<sup>1</sup> (Jan 2010-Dec 2013)
@@ -41,11 +42,9 @@ section: Contribute
 -   {% include person id='tnargsirrah' %}<sup>11</sup> (Nov 2009-Jan 2012)
 -   Adam Fraser<sup>4</sup> (Nov 2009-Aug 2011)
 -   {% include person id='ricklentz' %}<sup>1</sup> (Nov 2009-Feb 2011)
--   See also [ImageJ forum heroes](https://forum.image.sc/u?period=yearly)
 </div>
-
-<div style="padding-right: 1em" markdown=1>
-### {% include icon name='Fiji' size='32px' %}[Fiji](/software/fiji)
+<div class="contributor-block" markdown=1>
+### {% include icon name='Fiji' size='32px' %} [Fiji](/software/fiji)
 
 -   {% include person id='ctrueden' %}<sup>1</sup> (lead)
 -   {% include person id='tinevez' %}<sup>12</sup>
@@ -65,32 +64,35 @@ section: Contribute
 -   {% include person id='dscho' %}<sup>1,2</sup> (former, founder)
 -   See also [graph of Fiji contributors](https://github.com/fiji/fiji/graphs/contributors)
 </div>
-
-<div style="padding-right: 1em" markdown=1>
-### {% include icon name='ImgLib2' size='32px' %}[ImgLib2](/libs/imglib2)
+<div class="contributor-block" markdown=1>
+### {% include icon name='ImgLib2' size='32px' %} [ImgLib2](/libs/imglib2)
 
 -   {% include person id='tpietzsch' %}<sup>2,3</sup> (lead)
 -   {% include person id='StephanPreibisch' %}<sup>2,21</sup>
 -   {% include person id='axtimwalde' %}<sup>2,21</sup>
-
-### {% include icon name='SCIFIO' size='32px' %}[SCIFIO](/libs/scifio)
+-   {% include person id='bogovicj' %}<sup>21</sup>
+-   {% include person id='hanslovsky' %}<sup>21</sup> (former)
+</div>
+<div class="contributor-block" markdown=1>
+### {% include icon name='SCIFIO' size='32px' %} [SCIFIO](/libs/scifio)
 
 -   {% include person id='ctrueden' %}<sup>1</sup> (co-lead)
 -   {% include person id='hinerm' %}<sup>1</sup> (co-lead)
-
+</div>
+<div class="contributor-block" markdown=1>
 ### [BigDataViewer](/plugins/bdv)
 
 -   {% include person id='tpietzsch' %}<sup>2,3</sup> (lead)
 -   {% include person id='StephanPreibisch' %}<sup>2,21</sup>
-
+</div>
+<div class="contributor-block" markdown=1>
 ### [TrakEM2](/plugins/trakem2)
 
 -   {% include person id='acardona' %}<sup>20,21</sup> (lead)
 -   {% include person id='axtimwalde' %}<sup>2,21</sup>
 </div>
-
-<div style="padding-right: 1em" markdown=1>
-### {% include icon name='KNIME' size='32px' %}[KNIME Image Processing](/software/knime)
+<div class="contributor-block" markdown=1>
+### {% include icon name='KNIME' size='32px' %} [KNIME Image Processing](/software/knime)
 
 -   {% include person id='dietzc' %}<sup>5,6</sup> (lead)
 -   {% include person id='hornm' %}<sup>6</sup>
@@ -98,26 +100,25 @@ section: Contribute
 -   {% include person id='Squareys' %}<sup>5,6</sup>
 -   {% include person id='gab1one' %}<sup>5,6</sup>
 </div>
-
-<div style="padding-right: 1em" markdown=1>
-### {% include icon name='CellProfiler' size='32px' %}[CellProfiler](/software/cellprofiler)
+<div class="contributor-block" markdown=1>
+### {% include icon name='CellProfiler' size='32px' %} [CellProfiler](/software/cellprofiler)
 
 -   {% include person id='0x00b1' %}<sup>4</sup> (lead)
 -   {% include person id='LeeKamentsky' %}<sup>4</sup> (former)
-
-### {% include icon name='OME' size='32px' %}[OME](/software/omero)
+</div>
+<div class="contributor-block" markdown=1>
+### {% include icon name='OME' size='32px' %} [OME](/software/omero)
 
 -   {% include person id='joshmoore' %}<sup>7,8</sup> (co-lead)
 -   {% include person id='jburel' %}<sup>8</sup> (co-lead)
 -   See also [OME Teams](http://openmicroscopy.org/site/about/who-ome)
 </div>
+</div> <!-- End columnar list. -->
 
-</div>
+See also the [Image.sc Forum heroes](https://forum.image.sc/u?period=yearly).
 
-### Plugin maintainers
-
-The specific plugin maintainers can be found at the [maintainer
-page](Maintainer_page), although the list is out of date right now.
+See [each individual plugin page](/plugin-index)
+for details on that plugin's maintainers.
 
 ### Special thanks
 
