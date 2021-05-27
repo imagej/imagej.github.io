@@ -21,7 +21,7 @@ As part of the KNIP extension, there is an [ImageJ extension for KNIME](http://t
 
 ## See also
 
--   The [ImageJ Ops](/libs/imagej-ops) framework for image-processing algorithms, which is developed as a collaboration between the [ImageJ](/about) and KNIME teams.
+-   The [ImageJ Ops](/libs/imagej-ops) framework for image-processing algorithms, which is developed as a collaboration between the [ImageJ](/software/imagej) and KNIME teams.
 
 ## Publications
 

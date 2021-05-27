@@ -27,18 +27,18 @@ Honestly, I think that one of the main good reason to extend TrackMate is that t
 
 Still, it is perfectly possible to build something useful without fulfilling all these requirements. And I still hope that someday someone will contribute a view that displays the model in the orthogonal slicer of Fiji.
 
-This tutorial introduces the <u>view interfaces</u> of TrackMate, and since they deal with user interactions, we will also review the <u>TrackMate event system</u>. As for the [SciJava](SciJava) discovery system, we will see how to make a TrackMate module available in TrackMate, but not visible to the user, using the `visible` parameter.
+This tutorial introduces the <u>view interfaces</u> of TrackMate, and since they deal with user interactions, we will also review the <u>TrackMate event system</u>. As for the [SciJava](/libs/scijava) discovery system, we will see how to make a TrackMate module available in TrackMate, but not visible to the user, using the `visible` parameter.
 
 ## A custom TrackMate view.
 
 Like for the [spot feature analyzers](/plugins/trackmate/custom-spot-feature-analyzer-algorithms), a TrackMate view is separated in two parts, that each extends a different interface:
 
 -   The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/visualization/plugins/trackmateModelView.java' label='TrackMateModelView' %}, that is the actual view of the model. All the hard work is done here.
--   The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/visualization/ViewFactory.java' label='ViewFactory' %} that is a factory in charge of instantiating the view and of the integration in TrackMate. This interface extends the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/plugins/trackmateModule.java' label='TrackMateModule' %} interface, so we expect to find there some of the methods we discussed earlier, and the [SciJava](SciJava) annotation.
+-   The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/visualization/ViewFactory.java' label='ViewFactory' %} that is a factory in charge of instantiating the view and of the integration in TrackMate. This interface extends the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/plugins/trackmateModule.java' label='TrackMateModule' %} interface, so we expect to find there some of the methods we discussed earlier, and the [SciJava](/libs/scijava) annotation.
 
 In this tutorial, we will build something simple. We will limit ourselves to develop a view that simple messages the user every time something happens in TrackMate. For instance, when the spots are detected, how many there are; if he selects spots and edges, how many of them; etc. And we will just reuse the Fiji log window for this, which will save us from the full development of a graphical view of the model.
 
-But because this is a bit limited, we will not let the user pick this view as the main one, just after the detection step. A [SciJava](SciJava) parameter will be used to make it invisible in the view selection menu. To make good use of it, we still need some way to launch this view, but this will be the subject of the next tutorial.
+But because this is a bit limited, we will not let the user pick this view as the main one, just after the detection step. A [SciJava](/libs/scijava) parameter will be used to make it invisible in the view selection menu. To make good use of it, we still need some way to launch this view, but this will be the subject of the next tutorial.
 
 Right now, we just focus on building the view.
 
@@ -202,7 +202,7 @@ As for the factory, nothing fancy:
 
 <figure><img src="/media/plugins/trackmate/trackmate-customview-2.png" title="TrackMate_CustomView_2.png" width="200" alt="TrackMate_CustomView_2.png" /><figcaption aria-hidden="true">TrackMate_CustomView_2.png</figcaption></figure>
 
-Just note that the [SciJava](SciJava) annotation mention the `ViewFactory` class. This is enough to have the view selectable in the GUI menu:
+Just note that the [SciJava](/libs/scijava) annotation mention the `ViewFactory` class. This is enough to have the view selectable in the GUI menu:
 
 Note that this time, TrackMate good use of the `getName()` and `getInfoText()` methods.
 

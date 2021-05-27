@@ -223,7 +223,7 @@ To overcome the typical problem of loading native libraries via System.loadLibra
     }
     Rengine re = new Rengine();
 
-## Teach the Fiji Updater to accept other sites in addition to [fiji.sc](/about/funding)
+## Teach the Fiji Updater to accept other sites in addition to [fiji.sc](/contribute/funding)
 
 The Fiji Updater always looks for a static file containing an XML database of Fiji plugins (both current and past versions) on our website. To put new versions or new plugins there (to *upload into the updater*), you have to be a Fiji developer with write permission for that particular directory on our server.
 

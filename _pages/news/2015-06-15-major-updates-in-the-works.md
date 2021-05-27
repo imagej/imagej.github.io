@@ -65,7 +65,7 @@ Fortunately, in recent years, the [JogAmp](http://jogamp.org/) team has updated 
 
 ## Issue reporting
 
-Fiji ships with a [Report a Bug](/help/bugs) plugin that sends a bug report to the Fiji BugZilla. Soon, we will be retiring that system in favor of GitHub Issues for all ImageJ and Fiji components. The "Report a Bug" plugin will be overhauled to send the report to the appropriate component on GitHub Issues, rather than BugZilla. (And as such, instead of the user needing to create a Fiji BugZilla account, they will need to have a GitHub account.) This will help integrate all our issue tracking, as well as seamlessly link to external issue trackers such as the Bio-Formats GH issues tracker. [https://github.com/imagej/imagej/issues/122 imagej/imagej\#122](https://github.com/imagej/imagej/issues/122_imagej/imagej#122)
+Fiji ships with a [Report a Bug](/discuss/bugs) plugin that sends a bug report to the Fiji BugZilla. Soon, we will be retiring that system in favor of GitHub Issues for all ImageJ and Fiji components. The "Report a Bug" plugin will be overhauled to send the report to the appropriate component on GitHub Issues, rather than BugZilla. (And as such, instead of the user needing to create a Fiji BugZilla account, they will need to have a GitHub account.) This will help integrate all our issue tracking, as well as seamlessly link to external issue trackers such as the Bio-Formats GH issues tracker. [https://github.com/imagej/imagej/issues/122 imagej/imagej\#122](https://github.com/imagej/imagej/issues/122_imagej/imagej#122)
 
 ## Further reading
 

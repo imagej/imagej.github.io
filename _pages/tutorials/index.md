@@ -1,6 +1,6 @@
 ---
 title: Tutorials
-section: Learn:ImageJ
+section: Learn:ImageJ Basics
 ---
 
 ## Tutorials for new users
@@ -33,7 +33,7 @@ And be sure to read over the [Development](/develop) pages.
 
 ## See also
 
-* [Presentations](/learn/presentations) about ImageJ
+* [Presentations](/events/presentations) about ImageJ
 * [Fiji YouTube channel](https://youtube.com/fijichannel)
 * [ImageJ videos](https://www.youtube.com/results?search_query=imagej) and [Fiji videos](https://www.youtube.com/results?search_query=fiji+imagej) on YouTube
 * [Lecture BioImage Analysis 2020 videos](https://www.youtube.com/playlist?list=PL5ESQNfM5lc7SAMstEu082ivW4BDMvd0U) on YouTube by Robert Haase

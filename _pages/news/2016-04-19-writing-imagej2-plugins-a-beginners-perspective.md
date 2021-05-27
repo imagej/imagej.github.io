@@ -17,7 +17,7 @@ The following article was written by {% include person id='kkunzelm' %} as he re
 
 ## Preamble
 
-Before you consider to write your own [plugin](/plugins) for [ImageJ](/about), please note that writing a [script](/scripting/script-editor) has a much lower barrier to entry than Java plugin development.
+Before you consider to write your own [plugin](/plugins) for [ImageJ](/software/imagej), please note that writing a [script](/scripting/script-editor) has a much lower barrier to entry than Java plugin development.
 
 Also you may want to have a look at [Introduction\_into\_Macro\_Programming](/scripting/macro) as an easy way to automate repetitive tasks with existing tools and plugins.
 
@@ -57,7 +57,7 @@ Both Git and Maven have build in support in current versions of the IDEs mention
 
 Earlier versions of the ImageJ wiki [mentioned another software tool](/develop/project-management), called [Jenkins](/develop/jenkins), which is according to Wikipedia "an open source continuous integration tool written in Java". This tool was later replaced by a similar working service called [Travis CI](/develop/travis). Tools like Maven and Travis CI make it more complicated for casual developers to understand the workflow of ImageJ Plugin development at the beginning. However, these tools are well maintained by the community so that you will not have to think about them too much initially and they facilitate the programming process. For example, concerning "Travis CI" it is enough to know that "Continuous Integration" means merging all developer working copies to a shared mainline several times a day. Here the work of multiple developers is compiled and tested on a single machine to ensure that the combined code produces a working project at any time. For the development of a single plugin for our personal use we can ignore "Travis CI" for the moment. It will be important if you want to share your plugin in the ImageJ updater or even contribute to the ImageJ project.
 
-All [source code](/develop/source) is on [GitHub](/develop/github). As ImageJ nowadays is a rather complex project its development is split into several [ImageJ subprojects](/develop/architecture). For a beginner it is hard to understand the interaction of the different available projects which all contribute under the label "[SciJava](SciJava)" to ImageJ2. The nice thing is, that Maven will help to pull in the necessary code from all ImageJ subprojects automatically with the help of configurations files which are supplied by the ImageJ2 developer community. The ImageJ wiki provides a very first overview of the [SciJava ecosystem](/develop/architecture) of ImageJ2.
+All [source code](/develop/source) is on [GitHub](/develop/github). As ImageJ nowadays is a rather complex project its development is split into several [ImageJ subprojects](/develop/architecture). For a beginner it is hard to understand the interaction of the different available projects which all contribute under the label "[SciJava](/libs/scijava)" to ImageJ2. The nice thing is, that Maven will help to pull in the necessary code from all ImageJ subprojects automatically with the help of configurations files which are supplied by the ImageJ2 developer community. The ImageJ wiki provides a very first overview of the [SciJava ecosystem](/develop/architecture) of ImageJ2.
 
 To make Maven work we need so called `pom.xml` files. These configuration file contains information about the project and various configuration details used by Maven to build the project(s). The `pom.xml` files help to organize everything needed to build ImageJ. You can use any Maven-based project you want with that approach, not just ImageJ. So e.g. you can import {% include github org='fiji' repo='fiji' label='fiji/fiji' %} that way, or an individual plugin such as {% include github org='fiji' repo='AnalyzeSkeleton' label='fiji/AnalyzeSkeleton' %}.
 
@@ -450,7 +450,7 @@ The current situation with respect to Java 6 vs. Java 8, as well as the ramifica
 
 Ultimately, the ImageJ/Fiji developers will push all the Java-8 stuff back to the core ImageJ and Fiji sites. But not until the ImageJ/Fiji developers add a launch check that verifies your version of Java is new enough—and if not, tells you how to upgrade it. Ihe ImageJ/Fiji developers will definitely archive the final Java-6-compatible versions of ImageJ and Fiji when they complete that transition.
 
-Note: You can check the Java version as [described here](/help/troubleshooting#checking-the-java-version).
+Note: You can check the Java version as [described here](/learn/troubleshooting#checking-the-java-version).
 
 More information can be read here: [2015-12-22 - The road to Java 8](/news/2015-12-22-the-road-to-java-8)
 
@@ -495,7 +495,7 @@ In IntelliJ IDEA you may want to make sure that the JUnit5 Plugin is activated. 
 
 ## Continuous Integration with Travis CI
 
-If you want to share your plugin in the ImageJ updater automatically [Automatic Update Site Uploads](/update-sites/automatic-uploads), contribute to the ImageJ project [Fiji/Contribution requirements](/software/fiji/contribution-requirements) or work in a team with multiple developers, you may want to build, test and deploy your Plugin with [Travis CI](/develop/travis). If you are hosting your code in a public [GitHub](/develop/github) repository this service is free for you. After signing in with your [GitHub](/develop/github) account you can activate single repositories for [Travis CI](/develop/travis). Travis then automatically clones your repository with every change and runs a build according to the `.travis.yml` configuration file in your root directory.
+If you want to share your plugin in the ImageJ updater automatically [Automatic Update Site Uploads](/update-sites/automatic-uploads), contribute to the ImageJ project [Fiji/Contribution requirements](/contribute/fiji) or work in a team with multiple developers, you may want to build, test and deploy your Plugin with [Travis CI](/develop/travis). If you are hosting your code in a public [GitHub](/develop/github) repository this service is free for you. After signing in with your [GitHub](/develop/github) account you can activate single repositories for [Travis CI](/develop/travis). Travis then automatically clones your repository with every change and runs a build according to the `.travis.yml` configuration file in your root directory.
 
         # specify compiler
         language: java

@@ -3,7 +3,7 @@ title: MIT License
 section: Contribute:Licensing:Open Source
 ---
 
-{% include notice icon="info" content='For a summary of [SciJava](SciJava) licensing, see the [Licensing](/licensing) page.' %} 
+{% include notice icon="info" content='For a summary of [SciJava](/libs/scijava) licensing, see the [Licensing](/licensing) page.' %} 
 
 The **MIT License** is a **permissive** [free software](Open_Source) license,
 imposing minimal restrictions on the redistribution of covered software.

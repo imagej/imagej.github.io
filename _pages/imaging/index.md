@@ -14,7 +14,7 @@ Cooks call them *recipes*, biologists *protocols*, and programmers call them
 nav-bar at the top of the page!
 
 Like the rest of this wiki, this guide is a community project.
-Please feel welcome to [edit and expand](/help/editing) the material here!
+Please feel welcome to [edit and expand](/editing) the material here!
 
 {% include notice content="If you are new to scientific imaging,
   *please peruse the [Principles](/imaging/principles)* for a primer!" %}

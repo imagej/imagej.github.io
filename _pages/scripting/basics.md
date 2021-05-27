@@ -68,7 +68,7 @@ This is nearly identical to the use of `IJ.getImage()` and therefore not recomme
 
 In ImageJ there are many different ways to open images (or more general datasets). We want to introduce some of them.
 
-The first example uses the [DatasetIOService](http://javadoc.imagej.net/SCIFIO/io/scif/services/DatasetIOService.html). It is part of [SCIFIO](/libs/scifio), a flexible framework for **SC**ientific **I**mage **F**ormat **I**nput and **O**utput. Two types of image files are opened. The first one is an example image, downloaded from the Internet. The second image can be chosen by the user. Both datasets are displayed using the [UIService](http://javadoc.imagej.net/SciJava/org/scijava/ui/UIService.html) that is part of the [SciJava](SciJava) project.
+The first example uses the [DatasetIOService](http://javadoc.imagej.net/SCIFIO/io/scif/services/DatasetIOService.html). It is part of [SCIFIO](/libs/scifio), a flexible framework for **SC**ientific **I**mage **F**ormat **I**nput and **O**utput. Two types of image files are opened. The first one is an example image, downloaded from the Internet. The second image can be chosen by the user. Both datasets are displayed using the [UIService](http://javadoc.imagej.net/SciJava/org/scijava/ui/UIService.html) that is part of the [SciJava](/libs/scijava) project.
 
     #@ DatasetIOService ds
     #@ UIService ui

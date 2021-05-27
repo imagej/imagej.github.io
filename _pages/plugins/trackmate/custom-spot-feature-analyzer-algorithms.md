@@ -38,7 +38,7 @@ In the two previous articles we dealt with [edge](/plugins/trackmate/custom-edge
 
 For spot analyzer, the two are separated.
 
-You must first create a {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/spot/SpotAnalyzerFactory.java' label='SpotAnalyzerFactory' %}. This factory will be in charge of the TrackMate integration. The interface extends both the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/plugins/trackmateModule.java' label='TrackMateModule' %} and the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/FeatureAnalyzer.java' label='FeatureAnalyzer' %} interfaces. It is the class you will need to annotate with a [SciJava](SciJava) annotation for automatic discovery.
+You must first create a {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/spot/SpotAnalyzerFactory.java' label='SpotAnalyzerFactory' %}. This factory will be in charge of the TrackMate integration. The interface extends both the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/plugins/trackmateModule.java' label='TrackMateModule' %} and the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/FeatureAnalyzer.java' label='FeatureAnalyzer' %} interfaces. It is the class you will need to annotate with a [SciJava](/libs/scijava) annotation for automatic discovery.
 
 But it is also in charge of instantiating {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/spot/SpotAnalyzer.java' label='SpotAnalyzer' %}s. As you can see, this interface just extends ImgLib2 {% include github repo='imglib' path='algorithms/core/src/main/java/net/imglib2/algorithm/Algorithm.java' label='Algorithm' %}, so all parameters will have to be passed in the constructor, which can be what you want thanks to the factory. We do not need a return value method, because results are stored directly inside the spot objects. But we will see this later.
 
@@ -143,7 +143,7 @@ Now it's time to discuss the delicate subject of dependency.
 
 As stated above, our new analyzer depends on some other features to compute. Therefore, the analyzers that calculate these other features need to run *before* our analyzer. Or else you will bet `NullPointerException`s randomly.
 
-TrackMate does not offer a real in-depth module dependency management. It simply offers to **determine** the order of analyzer execution thanks to the [SciJava](SciJava) plugin **priority parameter**.
+TrackMate does not offer a real in-depth module dependency management. It simply offers to **determine** the order of analyzer execution thanks to the [SciJava](/libs/scijava) plugin **priority parameter**.
 
 For instance, if you check the annotation part of the spot analyzer factory, you can see that there is an extra parameter, `priority`:
 

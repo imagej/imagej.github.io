@@ -6,10 +6,10 @@ categories: [Fiji,Related Software,Citable]
 ---
 
 
-[Fiji](https://fiji.sc/) is an image processing package—a "batteries-included" distribution of [ImageJ](/about), bundling a lot of plugins which facilitate scientific image analysis.
+[Fiji](https://fiji.sc/) is an image processing package—a "batteries-included" distribution of [ImageJ](/software/imagej), bundling a lot of plugins which facilitate scientific image analysis.
 
--   **[For users](/about/usage)** - Fiji is [easy to install](/software/fiji/downloads) and has an automatic update function, bundles a [lot of plugins](/plugin-index) and offers comprehensive [documentation](/learn).
--   **[For developers](/software/fiji/developing)** - Fiji is an open source project hosted in a [Git](/develop/git) version control {% include github repo='fiji' label='repository' %}, with access to the source code of all internals, libraries and plugins, and eases the [development](/develop) and [scripting](/scripting) of plugins.
+-   **For users** - Fiji is [easy to install](/software/fiji/downloads) and has an automatic update function, bundles a [lot of plugins](/plugin-index) and offers comprehensive [documentation](/learn).
+-   **For developers** - Fiji is an open source project hosted in a [Git](/develop/git) version control {% include github repo='fiji' label='repository' %}, with access to the source code of all internals, libraries and plugins, and eases the [development](/develop) and [scripting](/scripting) of plugins.
 
 ## Downloads
 
@@ -34,7 +34,7 @@ Fiji is supported by several laboratories and institutions:
 -   The [Eliceiri/LOCI](/orgs/loci) lab at [UW-Madison](https://wisc.edu/), home of [ImageJ2](/software/imagej2).
 -   The [Tomancak](https://www.mpi-cbg.de/research-groups/current-groups/pavel-tomancak/research-focus/) and [Jug](https://www.mpi-cbg.de/jug) labs at [MPI-CBG](/orgs/mpi-cbg) and the [CSBD](/orgs/csbd).
 -   The [Saalfeld Lab](https://www.janelia.org/lab/saalfeld-lab) at [Janelia Research Campus](/orgs/janelia).
--   Individuals at [many other institutions worldwide](/about/contributors).
+-   Individuals at [many other institutions worldwide](/people).
 
 Fiji is an [open source](Open_source) project, so everybody is welcome to contribute with plugins, patches, bug reports, tutorials, documentation, and artwork.
 

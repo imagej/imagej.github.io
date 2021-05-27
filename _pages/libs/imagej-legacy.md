@@ -6,7 +6,7 @@ categories: [development]
 artifact: net.imagej:imagej-legacy
 ---
 
-Backward compatibility is one of ImageJ's most important goals. It must remain possible to use existing plugins and macros with new versions of [ImageJ](/about).
+Backward compatibility is one of ImageJ's most important goals. It must remain possible to use existing plugins and macros with new versions of [ImageJ](/software/imagej).
 
 ## ImageJ Legacy
 
@@ -15,7 +15,7 @@ The [ImageJ2](/software/imagej2) project is a complete redesign of ImageJ, with 
 The ImageJ legacy layer provides the following extensions:
 
 -   It makes ImageJ 1.x **usable [headless](/learn/headless)** from the command line.
--   It wraps the **ImageJ 1.x UI as a [SciJava](SciJava) user interface**.
+-   It wraps the **ImageJ 1.x UI as a [SciJava](/libs/scijava) user interface**.
 -   It **translates between ImageJ1 and ImageJ2 data structures** on demand.
 
 ImageJ2 currently uses the ImageJ 1.x user interface by default, since many users need to retain access to ImageJ1 plugins.

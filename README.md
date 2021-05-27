@@ -3,7 +3,7 @@
 This repository houses the source of the [ImageJ wiki](https://imagej.net).
 
 Anyone is free to make additions, edits, and improvements; for details, see
-[Editing the Wiki](/help/editing/).
+[Editing the Wiki](/editing).
 
 ## Credit
 

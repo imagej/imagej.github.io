@@ -39,7 +39,7 @@ and the current maintainer of the [Fiji](/software/fiji) distribution of ImageJ.
 
 ### Medium-term priorities
 
-1.  **GitHub issue reporting plugin.** The Fiji BugZilla and ImageJ Trac are now static content only. The [Report a Bug](/help/bugs) plugin needs to send reports to GitHub instead. ([scijava/scijava-plugins-issues-github](https://github.com/scijava/scijava-plugins-issues-github))
+1.  **GitHub issue reporting plugin.** The Fiji BugZilla and ImageJ Trac are now static content only. The [Report a Bug](/discuss/bugs) plugin needs to send reports to GitHub instead. ([scijava/scijava-plugins-issues-github](https://github.com/scijava/scijava-plugins-issues-github))
 2.  **Integrate PyImageJ with the ImageJ launcher.**
 
 ### Longer-term priorities
@@ -56,7 +56,7 @@ I also have the following continuous priorities:
 1.  Project management tasks (e.g., managing [issues](/develop/project-management#issue-tracking))
 2.  Coordinating efforts and mentoring programmers at [LOCI](/orgs/loci)
 3.  Server maintenance and troubleshooting
-4.  User support: questions on the [Image.sc Forum](/help), [bug reports](/help/bugs), [pull requests](https://github.com/search?q=is%3Apr+is%3Aopen+user%3Afiji+user%3Aimagej+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve&type=Issues), email
+4.  User support: questions on the [Image.sc Forum](/help), [bug reports](/discuss/bugs), [pull requests](https://github.com/search?q=is%3Apr+is%3Aopen+user%3Afiji+user%3Aimagej+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve&type=Issues), email
 
 ## Recommended development tools
 

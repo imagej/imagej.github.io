@@ -195,8 +195,8 @@ Registration of two images is achieved estimating a geometrical transformation t
 
 Fijiyama handles the following transformation families :
 
--   Rigid transformations (translation + rotation), estimated using [VIB-lib](/software/vib-lib)
--   Similarities (rigid + isotropic homothetic factor) estimated using [VIB-lib](/software/vib-lib)
+-   Rigid transformations (translation + rotation), estimated using [VIB-lib](/libs/vib-lib)
+-   Similarities (rigid + isotropic homothetic factor) estimated using [VIB-lib](/libs/vib-lib)
 -   Dense vector field (a generic representation of a non-linear transformation), estimated using Gaussian interpolation
 
 For more details about transformation, check the supplementary data of the official publication (see section "Cite this work" below)
@@ -211,7 +211,7 @@ Common categories of registration optimizers, associated with different registra
 
 ## Limitations
 
-For large datasets (15 and more timepoints) or images (1GB+), specific tools should be used. Here is a non-exhaustive list of plugins for [ImageJ](/about) / [Fiji](/software/fiji), available for 3D registration of large datasets: [BigStitcher](/plugins/bigstitcher), [Atlas\_Toolkit](/plugins/atlas-toolkit), [TrakEM2](/plugins/trakem2) or [Elastix](/plugins/elastix) wrapping plugin. Outside from the ImageJ world, for people who are not afraid to script, [Elastix](http://elastix.isi.uu.nl/) is a proper tool for series, and [Slicer](https://www.slicer.org/) can also do a great job. Limited to two-images registration, [MedInria](https://med.inria.fr/) is a very powerful and popular tool for medical images, which shares a lot of algorithmic basis with Fijiyama.
+For large datasets (15 and more timepoints) or images (1GB+), specific tools should be used. Here is a non-exhaustive list of plugins for [ImageJ](/software/imagej) / [Fiji](/software/fiji), available for 3D registration of large datasets: [BigStitcher](/plugins/bigstitcher), [Atlas\_Toolkit](/plugins/atlas-toolkit), [TrakEM2](/plugins/trakem2) or [Elastix](/plugins/elastix) wrapping plugin. Outside from the ImageJ world, for people who are not afraid to script, [Elastix](http://elastix.isi.uu.nl/) is a proper tool for series, and [Slicer](https://www.slicer.org/) can also do a great job. Limited to two-images registration, [MedInria](https://med.inria.fr/) is a very powerful and popular tool for medical images, which shares a lot of algorithmic basis with Fijiyama.
 
 ## Citing this work
 
@@ -255,7 +255,7 @@ Issues, feature request ? Please contact romainfernandez06ATgmail.com
 ## Software dependencies acknowledgements
 
 -   Johannes Schindelin et al for [Fiji](/software/fiji) (Schindelin et al., 2012)
--   Johannes Schindelin et al. for the [VIB-lib](/software/vib-lib)
+-   Johannes Schindelin et al. for the [VIB-lib](/libs/vib-lib)
 -   Benjamin Schmid et al for the [3D Viewer](/plugins/3d-viewer) (Schmid et al., 2010)
 -   The [ITK](https://itk.org/about/) and [SimpleITK](http://www.simpleitk.org/) teams (Yoo et al., 2002; Lowekamp et al., 2013)
 

@@ -5,7 +5,7 @@ section: Extend:Development
 ---
 
 
-The [ImageJ](/about) and related [SciJava](SciJava) projects take advantage of several project management tools.
+The [ImageJ](/software/imagej) and related [SciJava](/libs/scijava) projects take advantage of several project management tools.
 
 ## Git
 
@@ -114,7 +114,7 @@ Issues and milestones are public-facing entities, yet their content can be highl
       </td>
       <td>
         <p>Report new issues using the big green "New issue" button,<br>
-        or via ImageJ's <a href="/help/bugs">Report a Bug</a> plugin.</p>
+        or via ImageJ's <a href="/discuss/bugs">Report a Bug</a> plugin.</p>
       </td>
       <td></td>
     </tr>
@@ -222,17 +222,17 @@ Note that the relationship between milestones and software releases can be one-t
 
 ## Patch submissions
 
-The preferred mechanism to contribute improvements to [ImageJ](/about) and other [SciJava](SciJava) components is using [GitHub pull requests](https://help.github.com/articles/using-pull-requests/)! See the [Contributing](/about/contributing) page for details.
+The preferred mechanism to contribute improvements to [ImageJ](/software/imagej) and other [SciJava](/libs/scijava) components is using [GitHub pull requests](https://help.github.com/articles/using-pull-requests/)! See the [Contributing](/contribute) page for details.
 
 ## Roadmap links
 
 -   [News](/news) about ImageJ and Fiji developments, including status updates, observations and comments about ImageJ programming.
 -   [Recent changes](Special_RecentChanges) to this web site (*not* the ImageJ code itself).
--   [BugZilla](https://fiji.sc/bugzilla) database of user-reported bugs from the [Report a Bug](/help/bugs) plugin.
+-   [BugZilla](https://fiji.sc/bugzilla) database of user-reported bugs from the [Report a Bug](/discuss/bugs) plugin.
 
 ## Citable code
 
-Many of these tools are employed to facilitate [reproducibility](/develop/architecture#reproducible-builds) from a technical perspective. From a social perspective, we are writing software for science - in which [scholarly citations](/about/citing) provide another currency for reproducibility.
+Many of these tools are employed to facilitate [reproducibility](/develop/architecture#reproducible-builds) from a technical perspective. From a social perspective, we are writing software for science - in which [scholarly citations](/contribute/citing) provide another currency for reproducibility.
 
 To this end, developers can now use [digital archives like Zenodo](https://guides.github.com/activities/citable-code/) to provide consistent methods for citation.
 

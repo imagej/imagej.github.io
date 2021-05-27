@@ -33,8 +33,8 @@ public channels including the Image.sc Forum, GitHub, chat rooms, and more.
 
 # Troubleshooting
 
-If you encounter problems, check the [Troubleshooting](/help/troubleshooting) page.
+If you encounter problems, check the [Troubleshooting](/learn/troubleshooting) page.
 
 # Reporting bugs
 
-If you have found a bug, you can help the project by [reporting it](/help/bugs).
+If you have found a bug, you can help the project by [reporting it](/discuss/bugs).

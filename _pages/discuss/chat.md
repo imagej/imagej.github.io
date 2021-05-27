@@ -5,22 +5,22 @@ section: Discuss
 nav-links: true
 ---
 
-[ImageJ](/about) community members are often available via a couple of different chat services.
+[ImageJ](/software/imagej) community members are often available via a couple of different chat services.
 
 {% include notice icon="info" content='If you have *image analysis* questions, it is better to use the [Image.sc Forum](https://forum.image.sc/), rather than chat rooms. Most of ImageJ community"s image analysis experts frequent the Image.sc Forum, not live chat rooms.' %}
 
 ## Gitter
 
-The {% include wikipedia title='Gitter' text='Gitter'%} chat service, while relatively new, is a great way to discuss *programming* issues with developers of the [SciJava](SciJava) component collection. All you need is either a [GitHub](https://github.com/) or [Twitter](https://twitter.com/) account. Advantages of Gitter include a nice "21st century" web interface, email notification when participants miss messages, and a full searchable history.
+The {% include wikipedia title='Gitter' text='Gitter'%} chat service, while relatively new, is a great way to discuss *programming* issues with developers of the [SciJava](/libs/scijava) component collection. All you need is either a [GitHub](https://github.com/) or [Twitter](https://twitter.com/) account. Advantages of Gitter include a nice "21st century" web interface, email notification when participants miss messages, and a full searchable history.
 
 | **Logo**                                         | **Organization**              | **Chat rooms**                                    |
 |--------------------------------------------------|-------------------------------|---------------------------------------------------|
-| <img src="/media/icons/imagej.png" width="48"/>  | [ImageJ](/about)              | [imagej](https://gitter.im/orgs/imagej/rooms)     |
+| <img src="/media/icons/imagej.png" width="48"/>  | [ImageJ](/software/imagej)              | [imagej](https://gitter.im/orgs/imagej/rooms)     |
 | <img src="/media/icons/fiji.png" width="48"/>    | [Fiji](/software/fiji)        | [fiji](https://gitter.im/orgs/fiji/rooms)         |
 | <img src="/media/icons/knime.png" width="48"/>   | [KNIME](/software/knime)      | [knime-ip](https://gitter.im/orgs/knime-ip/rooms) |
 | <img src="/media/icons/imglib2.png" width="48"/> | [ImgLib2](/libs/imglib2)      | [imglib](https://gitter.im/orgs/imglib/rooms)     |
 | <img src="/media/icons/scifio.png" width="48"/>  | [SCIFIO](/libs/scifio)        | [scifio](https://gitter.im/orgs/scifio/rooms)     |
-| <img src="/media/icons/scijava.png" width="48"/> | [SciJava](SciJava)            | [scijava](https://gitter.im/orgs/scijava/rooms)   |
+| <img src="/media/icons/scijava.png" width="48"/> | [SciJava](/libs/scijava)            | [scijava](https://gitter.im/orgs/scijava/rooms)   |
 
 ## IRC
 

@@ -50,7 +50,7 @@ public void loadAndDisplay(File file) {
     </tr>
     <tr>
       <td style="padding: 15px 0 30px 45px;">
-        <p><a href="SciJava"><img src="/media/logos/scijava.png" height="72px"></a></p>
+        <p><a href="/libs/scijava"><img src="/media/logos/scijava.png" height="72px"></a></p>
       </td>
     </tr>
     <tr>
@@ -77,7 +77,7 @@ ImageJ is divided into three parts:
   <thead>
     <tr class="header">
       <th style="font-size: 56px; width: 350px">
-        <p>{% include icon name='ImageJ' size='72px' %}<a href="/about">ImageJ</a></p>
+        <p>{% include icon name='ImageJ' size='72px' %}<a href="/software/imagej">ImageJ</a></p>
       </th>
       <th></th>
     </tr>
@@ -112,7 +112,7 @@ ImageJ is divided into three parts:
         <p>{% include icon name='ImgLib2' size='72px' %}<a href="/libs/imglib2">ImgLib2</a></p>
       </td>
       <td style="width: 350px;">
-        <p><a href="SciJava"><img src="/media/logos/scijava.png" height="72px"></a></p>
+        <p><a href="/libs/scijava"><img src="/media/logos/scijava.png" height="72px"></a></p>
       </td>
     </tr>
     <tr>
@@ -203,7 +203,7 @@ See the [Project management](/develop/project-management) page for further detai
 
 ## Source code
 
-[ImageJ](/about) and related [SciJava](SciJava) software projects are [open source](Open_source). The code is organized into [well-separated](/develop/architecture#modularity) projects.
+[ImageJ](/software/imagej) and related [SciJava](/libs/scijava) software projects are [open source](Open_source). The code is organized into [well-separated](/develop/architecture#modularity) projects.
 
 See the [source code](/develop/source) page for further details.
 
@@ -248,7 +248,7 @@ Start with the [ImageJ tutorial notebooks](/tutorials)!
             <a href="/develop/improving-the-code">Contributing to an existing plugin</a>
           </li>
           <li>
-            <a href="/develop/distributing">Distributing your plugin</a>
+            <a href="/contribute/distributing">Distributing your plugin</a>
           </li>
           <li>
             <a href="/develop/ij1-plugins">Writing ImageJ 1.x plugins</a>
@@ -264,7 +264,7 @@ Start with the [ImageJ tutorial notebooks](/tutorials)!
             <a href="/develop/eclipse">Fiji + Eclipse</a>
           </li>
           <li>
-            <a href="/software/fiji/contribution-requirements">Fiji contribution requirements</a>
+            <a href="/contribute/fiji">Fiji contribution requirements</a>
           </li>
           <li>
             <a href="/develop/supported-compilers">Supported Compilers</a>

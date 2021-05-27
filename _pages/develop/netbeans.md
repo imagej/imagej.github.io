@@ -4,7 +4,7 @@ section: Extend:Development:Tools:IDEs
 title: Developing ImageJ in NetBeans
 ---
 
- This article explains how to install and configure NetBeans for use with [ImageJ](/about) development. Directions correspond to NetBeans 7.1.2, which added integrated Git support, and may need adjustment for other versions.
+ This article explains how to install and configure NetBeans for use with [ImageJ](/software/imagej) development. Directions correspond to NetBeans 7.1.2, which added integrated Git support, and may need adjustment for other versions.
 
 ## Install and configure NetBeans
 

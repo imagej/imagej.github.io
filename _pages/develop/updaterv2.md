@@ -225,8 +225,8 @@ For details check out this example of a remote update site database file:
 
 A freshly downlodaed Fiji `db.xml` file additionally contains entries for the update sites which are enabled by default:
 
-    <update-site name="/about" url="http://update.imagej.net/" timestamp="20181128223928"/>
-    <update-site name="/software/fiji" url="http://update.fiji.sc/" timestamp="20171213124524"/>
+    <update-site name="ImageJ" url="http://update.imagej.net/" timestamp="20181128223928"/>
+    <update-site name="Fiji" url="http://update.fiji.sc/" timestamp="20171213124524"/>
     <update-site name="Java-8" url="http://sites.imagej.net/Java-8/" timestamp="20181204081238"/>
 
 Once the user opens the list of update sites, the updater is accessing the official list of update sites (see the [update site chapter](#list-of-update-sites)) and adding entries for the disabled but available update sites to the database.
@@ -275,19 +275,19 @@ For more details check out this example of a the `db.xml` of a local Fiji instal
     <!ATTLIST previous-version timestamp CDATA #REQUIRED>
     <!ATTLIST previous-version checksum CDATA #REQUIRED>]>
     <pluginRecords>
-      <update-site name="/about" url="http://update.imagej.net/" timestamp="20181129053928"/>
-      <update-site name="/software/fiji" url="http://update.fiji.sc/" timestamp="20171213194524"/>
+      <update-site name="ImageJ" url="http://update.imagej.net/" timestamp="20181129053928"/>
+      <update-site name="Fiji" url="http://update.fiji.sc/" timestamp="20171213194524"/>
       <disabled-update-site name="Fiji-Legacy" url="http://sites.imagej.net/Fiji-Legacy/" description="Restores old Fiji plugins which never made the transition to Maven, as well as obsolete libraries no longer used by current Fiji installations." timestamp="0"/>
       <update-site name="Java-8" url="http://sites.imagej.net/Java-8/" timestamp="20181207191837"/>
       <disabled-update-site name="2015-Conference" url="http://sites.imagej.net/2015-Conference/" description="A collection of plugins highlighting the latest features of ImageJ. As seen in Wayne Rasband's opening talk at the 2015 conference!" timestamp="0"/>
       ...
       <disabled-update-site name="XitoSBML" url="http://sites.imagej.net/XitoSBML/" description="XitoSBML is an ImageJ plugin which creates a Spatial SBML model from segmented images. XitoSBML is not just a converter, but also a spatial model editor so that users can add molecules(species), reactions and advection/diffusion coefficients to the converted Spatial SBML model." timestamp="0"/><disabled-update-site name="/plugins/xlib" url="http://sites.imagej.net/Xlib/" description="Xlib is a set of prospective ImageJ plugins: automated imaging tools for filtering, data reconstruction, quantitative data evaluation and data import, tools for interactive segmentation, visualization and management of image data." timestamp="0"/><disabled-update-site name="Zoom-in-movie" url="http://sites.imagej.net/ZOOM-in-movie/" description="Zoom-in-movie is a simple tool for creating zoom-in movies with logarithmic approach and dynamic scalebar. Simply select ROI on your image and select Plugins/Zoom-in movie to run the plugin. Thanks to Eugene Katrukha for the initial implementation." timestamp="0"/>
-        <plugin update-site="/about" filename="jars/itext-2.1.5.jar">
+        <plugin update-site="ImageJ" filename="jars/itext-2.1.5.jar">
             <previous-version timestamp="20120404210913" checksum="f90b43422e5be48eada0dc1602a9bea6caa6c592" filename="jars/itext-2.1.5.jar"/>
             <previous-version timestamp="20080423173821" checksum="a88a4b46ddcdcf0312b0fe03b1900412bdb71873" filename="jars/itext-1.3.jar"/>
             <previous-version timestamp="20080801134354" checksum="a88a4b46ddcdcf0312b0fe03b1900412bdb71873" filename="jars/itext-1.3.jar"/>
         </plugin>
-        <plugin update-site="/about" filename="jars/jai_imageio-1.0.1.jar">
+        <plugin update-site="ImageJ" filename="jars/jai_imageio-1.0.1.jar">
             <previous-version timestamp="20120404210913" checksum="a08f259a26fa457b66cd0fcd67c89f938e64c0f3" filename="jars/jai_imageio-4.4-imagej-2.0.0-beta1.jar"/>
             <previous-version timestamp="20120518211518" checksum="e47b1c0e97ecbcf813174aa0919d1e22a5d217df" filename="jars/jai_imageio-4.4-imagej-2.0.0-beta2.1.jar"/>
             <previous-version timestamp="20120713182620" checksum="87f0853fd9ea404b2ce5985609f9a6b495c3f721" filename="jars/jai_imageio-4.4.0.jar"/>
@@ -307,7 +307,7 @@ For more details check out this example of a the `db.xml` of a local Fiji instal
             <previous-version timestamp="20130620192406" checksum="9b8a1d36fe119b298cdb90c81f2c44730d1fa1d6" filename="jars/jai_imageio-4.4.8.jar"/>
             <previous-version timestamp="20130716162630" checksum="e5852db5bd833fddeec7dc72601f8b037a59375a" filename="jars/jai_imageio-1.0.1.jar"/>
         </plugin>
-        <plugin update-site="/software/fiji" filename="jars/lwf-stubs-4.4.8.jar">
+        <plugin update-site="Fiji" filename="jars/lwf-stubs-4.4.8.jar">
             <previous-version timestamp="20120404210913" checksum="79306ce7fc25148381c47a792072fa3c77c49163" filename="jars/lwf-stubs-4.4-imagej-2.0.0-beta1.jar"/>
             <previous-version timestamp="20120518211518" checksum="a21325f2fb086c10e3fbaa9521893e8e87182ece" filename="jars/lwf-stubs-4.4-imagej-2.0.0-beta2.1.jar"/>
             <previous-version timestamp="20120713182620" checksum="c32b8e83de4ccc3f0bbe26c1a39ff3710945b4e8" filename="jars/lwf-stubs-4.4.0.jar"/>
@@ -334,7 +334,7 @@ For more details check out this example of a the `db.xml` of a local Fiji instal
             <previous-version timestamp="20120802184342" checksum="55d8499ceb048f735c19c99acc2891200cc584a8" filename="jars/jfreechart-1.0.14.jar"/>
             <previous-version timestamp="20150209211029" checksum="c4eeeb8f973da71707dacc9191687020b5a2effe" filename="jars/jfreechart-1.0.19.jar"/>
         </plugin>
-        <plugin update-site="/about" filename="jars/imagej-launcher-4.0.5.jar">
+        <plugin update-site="ImageJ" filename="jars/imagej-launcher-4.0.5.jar">
             <version checksum="6691bf3087046120e3218b183681d6dcf415f629" timestamp="20160422225140" filesize="23302">
                 <description>The executable which runs ImageJ. Its purpose is also to make sure that updates downloaded by the ImageJ Updater will be put into place before starting the Java Virtual Machine. It was formerly known as the Fiji launcher.</description>
                 <author>Johannes Schindelin</author>
@@ -349,12 +349,12 @@ For more details check out this example of a the `db.xml` of a local Fiji instal
             <previous-version timestamp="20160121115531" checksum="c42c3c6afcbdeb7658a04fcef98880d6d2bcf212" filename="jars/imagej-launcher-4.0.3.jar"/>
         </plugin>
     ...
-        <plugin update-site="/software/fiji" filename="luts/blue_orange_icb.lut">
+        <plugin update-site="Fiji" filename="luts/blue_orange_icb.lut">
             <version checksum="a4cec22b96c306321ba4c7b3ff30df9fa7919616" timestamp="20090918172547" filesize="800"/>
             <previous-version timestamp="20080801134354" checksum="a4cec22b96c306321ba4c7b3ff30df9fa7919616" filename="luts/blue_orange_icb.lut"/>
             <previous-version timestamp="20090918172547" checksum="a4cec22b96c306321ba4c7b3ff30df9fa7919616" filename="luts/blue_orange_icb.lut"/>
         </plugin>
-        <plugin update-site="/software/fiji" filename="luts/brgbcmyw.lut">
+        <plugin update-site="Fiji" filename="luts/brgbcmyw.lut">
             <version checksum="c9e396a3f83ee8cebf1ed28d3e2d53296cc908e7" timestamp="20090918172547" filesize="768"/>
             <previous-version timestamp="20080801134354" checksum="c9e396a3f83ee8cebf1ed28d3e2d53296cc908e7" filename="luts/brgbcmyw.lut"/>
             <previous-version timestamp="20090918172547" checksum="c9e396a3f83ee8cebf1ed28d3e2d53296cc908e7" filename="luts/brgbcmyw.lut"/>

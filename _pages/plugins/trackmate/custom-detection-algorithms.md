@@ -255,7 +255,7 @@ Now for something completely different, we move to the factory class that instan
 
 ## The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/detection/SpotDetectorFactory.java' label='SpotDetectorFactory' %} interface.
 
-The SpotDetectorFactory concrete implementation is the class that needs to be annotated with the [SciJava](SciJava) annotation. For instance:
+The SpotDetectorFactory concrete implementation is the class that needs to be annotated with the [SciJava](/libs/scijava) annotation. For instance:
 
     @Plugin( type = SpotDetectorFactory.class )
     public class SpiralDummyDetectorFactory< T extends RealType< T > & NativeType< T >> implements SpotDetectorFactory< T >

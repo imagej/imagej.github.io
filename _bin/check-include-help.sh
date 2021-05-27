@@ -3,7 +3,7 @@
 dir=$(cd "$(dirname "$0")/.." && pwd)
 cd "$dir"
 
-documented=$(grep -A9999 '# Available includes' _pages/help/editing/index.md |
+documented=$(grep -A9999 '# Available includes' _pages/editing/index.md |
   grep '^| \[' | sed 's/^| \[\([^]]*\)\].*/\1/')
 
 for f in _includes/*

@@ -39,8 +39,8 @@ You can place `:` symbols in the table header to specify column alignment:
 You can include images within tables:
 
 {% capture table-with-images %}
-| ![Plugins](/media/help/plugins.png) | The bread and butter of ImageJ. |
-| ![Extend](/media/help/extend.png)   | You know you want to.           |
+| ![Plugins](/media/editing/plugins.png) | The bread and butter of ImageJ. |
+| ![Extend](/media/editing/extend.png)   | You know you want to.           |
 {% endcapture %}
 {% include code-example code=table-with-images %}
 

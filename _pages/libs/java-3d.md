@@ -4,7 +4,7 @@ title: Java 3D
 section: Explore:Libraries
 ---
 
-{% include wikipedia title='Java 3D' text='Java 3D'%} is a technology used for 3D visualization in Java. In [ImageJ](/about), it is used by the [3D Viewer](/plugins/3d-viewer) plugin, and hence transitively by other plugins which rely on the 3D Viewer for their visualization, such as the [Simple Neurite Tracer](/plugins/snt) and [TrakEM2](/plugins/trakem2).
+{% include wikipedia title='Java 3D' text='Java 3D'%} is a technology used for 3D visualization in Java. In [ImageJ](/software/imagej), it is used by the [3D Viewer](/plugins/3d-viewer) plugin, and hence transitively by other plugins which rely on the 3D Viewer for their visualization, such as the [Simple Neurite Tracer](/plugins/snt) and [TrakEM2](/plugins/trakem2).
 
 ## Status of Java 3D
 

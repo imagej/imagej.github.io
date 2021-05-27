@@ -23,7 +23,7 @@ For {% include github org='imagej' repo='imagej' issue='135' label='many reasons
 -   If you **still need Java 6, do nothing.**
     -   You will keep receiving updates of the latest Java-6-compatible component versions.
     -   But you will no longer receive updates for components which have migrated to Java 7 or 8.
--   If you **want the latest updates**, [update your ImageJ installation to use Java 8](/help/faq#how-do-i-launch-imagej-with-a-different-version-of-java) and then [enable the Java-8 update site](/update-sites/following).
+-   If you **want the latest updates**, [update your ImageJ installation to use Java 8](/learn/faq#how-do-i-launch-imagej-with-a-different-version-of-java) and then [enable the Java-8 update site](/update-sites/following).
     -   **Make sure you switch your ImageJ over to Java 8 *before* enabling the Java-8 update site!**
 
 ## Components which have already migrated

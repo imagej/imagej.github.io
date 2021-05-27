@@ -12,7 +12,7 @@ This version ships mainly small utilities, improvement and bugfixes. But more im
 
 Pardon the informal tone this developer announcement will take but Ah! the joy this part causes me! All of us that wrote documentation for an academic open-source project know this pain and doubt very well: Is spending an excruciating time redacting tutorials for others to use an API worth anything? Is there any good that will come of it? Will this ever reach anyone? I am doing this for naught?
 
-Picture yourself at work, leaned over the keyboard, this Wiki edit page opened, pondering the best way to make your message on [SciJava](SciJava) extension mechanism through. When your boss knock at the door and says "I hope you are not writing tutorials for TrackMate. There is still papers X and Y to write, project Z has a report coming, and N users waiting for you to train them."
+Picture yourself at work, leaned over the keyboard, this Wiki edit page opened, pondering the best way to make your message on [SciJava](/libs/scijava) extension mechanism through. When your boss knock at the door and says "I hope you are not writing tutorials for TrackMate. There is still papers X and Y to write, project Z has a report coming, and N users waiting for you to train them."
 
 Picture yourself at home. It's night. It's cold. The kids approach the desk, full of expectations.
 

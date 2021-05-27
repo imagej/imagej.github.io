@@ -18,7 +18,7 @@ projects:
     link: /software/fiji
   - name: ImageJ
     description: the core ImageJ distribution
-    link: /about
+    link: /software/imagej
   - name: ImageJ 1.x
     description: the legacy ImageJ 1.x application
     link: /software/imagej1
@@ -46,7 +46,7 @@ defaults:
       icon: /media/icons/imagej.png
   -
     scope:
-      path: "_pages/about"
+      path: "_pages/contribute"
       type: pages
     values:
       icon: https://upload.wikimedia.org/wikipedia/commons/1/18/About_icon_%28The_Noun_Project%29.svg
@@ -74,12 +74,6 @@ defaults:
       type: pages
     values:
       icon: https://upload.wikimedia.org/wikipedia/commons/6/6e/Book_%2821025%29_-_The_Noun_Project.svg
-  -
-    scope:
-      path: "_pages/help"
-      type: pages
-    values:
-      icon: https://upload.wikimedia.org/wikipedia/commons/9/92/Torchlight_help_yellow.png
   -
     scope:
       path: "_pages/imaging"
@@ -169,6 +163,12 @@ defaults:
       icon: https://upload.wikimedia.org/wikipedia/commons/9/94/Laptop_-_The_Noun_Project.svg
   -
     scope:
+      path: "_pages/software/fiji"
+      type: pages
+    values:
+      icon: /media/icons/fiji.svg
+  -
+    scope:
       path: "_pages/software/imagej1"
       type: pages
     values:
@@ -193,12 +193,6 @@ defaults:
       type: pages
     values:
       icon: https://upload.wikimedia.org/wikipedia/commons/2/2a/Cloud_Upload_-_The_Noun_Project.svg
-  -
-    scope:
-      path: "_pages/widgets"
-      type: pages
-    values:
-      icon: /media/icons/plugin.png
   -
     scope:
       path: "_pages/plugins/trackmate"

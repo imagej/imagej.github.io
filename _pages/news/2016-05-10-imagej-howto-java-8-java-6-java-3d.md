@@ -12,7 +12,7 @@ However, at the moment, it is still possible to run a (slightly outdated now) ve
 
 <table>
 <tr>
-  <th><a href="/about#flavors" title="/about">Flavor</a></th>
+  <th><a href="/software/imagej#flavors">Flavor</a></th>
   <th style="text-align: center">Java<br>version</th>
   <th>Platforms</th>
   <th style="width: 30%">Installation</th>
@@ -54,10 +54,10 @@ However, at the moment, it is still possible to run a (slightly outdated now) ve
 <tr>
   <th><a href="/media/icons/macos.png"><img alt="macOS" src="/media/icons/macos.png" width="26" height="32" /></a>
   </th>
-  <td>Download the final (2017-May-30) <a href="/software/fiji/downloads#java-6" title="Fiji Downloads">Java-6 version of Fiji</a>. It is distributed <i>without</i> Java, so you must <a href="/help/faq#how-do-i-set-up-java-6-on-os-x" title="Frequently Asked Questions">install Apple Java 6</a> on your system.
+  <td>Download the final (2017-May-30) <a href="/software/fiji/downloads#java-6" title="Fiji Downloads">Java-6 version of Fiji</a>. It is distributed <i>without</i> Java, so you must <a href="/learn/faq#how-do-i-set-up-java-6-on-os-x" title="Frequently Asked Questions">install Apple Java 6</a> on your system.
   <ul>
   <li>If you have Java 7 and/or Java 8 installed, uninstall them—or else ImageJ will not use your Java 6 installation.</li>
-  <li>Afterwards, <a href="/help/troubleshooting#checking-the-java-version" title="/help/troubleshooting">verify that Fiji is using Java 6</a>.</li>
+  <li>Afterwards, <a href="/learn/troubleshooting#checking-the-java-version" title="/learn/troubleshooting">verify that Fiji is using Java 6</a>.</li>
   </ul>
   </td>
 </tr>
@@ -107,22 +107,22 @@ However, at the moment, it is still possible to run a (slightly outdated now) ve
 <td colspan="5">See the <a href="download.html">ImageJ 1.x downloads page</a> for instructions.
 </td></tr></table>
 <h2><span class="mw-headline" id="Upgrading_an_old_installation">Upgrading an old installation</span></h2>
-<p>If you have downloaded Fiji or ImageJ2 quite some time ago (before 2016), you probably have the Java 6 version (<a href="/help/troubleshooting#checking-the-java-version" title="/help/troubleshooting">how do I find out?</a>). So when you update, you will not receive the latest plugin releases anymore, as described above.
+<p>If you have downloaded Fiji or ImageJ2 quite some time ago (before 2016), you probably have the Java 6 version (<a href="/learn/troubleshooting#checking-the-java-version" title="/learn/troubleshooting">how do I find out?</a>). So when you update, you will not receive the latest plugin releases anymore, as described above.
 </p>
 <ul><li>If you <b>still need Java 6, do nothing.</b>
 <ul><li>For now, you will keep receiving updates of <a href="/software/imagej1" class="mw-redirect" title="ImageJ 1.x">ImageJ 1.x</a>.</li>
 <li>But you will no longer receive updates for most ImageJ2 or Fiji components—they have all migrated to Java 8.</li></ul></li>
-<li>If you <b>want the latest updates</b>, <a href="/help/faq#how-do-i-launch-imagej-with-a-different-version-of-java" class="mw-redirect" title="/help/faq">update your ImageJ installation to use Java 8</a> and then <a href="/update-sites/following" class="mw-redirect" title="How to follow a 3rd party update site">enable the Java-8 update site</a>.
+<li>If you <b>want the latest updates</b>, <a href="/learn/faq#how-do-i-launch-imagej-with-a-different-version-of-java" class="mw-redirect" title="/learn/faq">update your ImageJ installation to use Java 8</a> and then <a href="/update-sites/following" class="mw-redirect" title="How to follow a 3rd party update site">enable the Java-8 update site</a>.
 <ul><li><b>Make sure you switch your ImageJ over to Java 8 <i>before</i> enabling the Java-8 update site!</b></li></ul></li></ul>
 
 ## Upgrading an old installation
 
-If you have downloaded Fiji or ImageJ2 quite some time ago (before 2016), you probably have the Java 6 version ([how do I find out?](/help/troubleshooting#checking-the-java-version)). So when you update, you will not receive the latest plugin releases anymore, as described above.
+If you have downloaded Fiji or ImageJ2 quite some time ago (before 2016), you probably have the Java 6 version ([how do I find out?](/learn/troubleshooting#checking-the-java-version)). So when you update, you will not receive the latest plugin releases anymore, as described above.
 
 -   If you **still need Java 6, do nothing.**
     -   For now, you will keep receiving updates of [ImageJ 1.x](/software/imagej1).
     -   But you will no longer receive updates for most ImageJ2 or Fiji components—they have all migrated to Java 8.
--   If you **want the latest updates**, [update your ImageJ installation to use Java 8](/help/faq#how-do-i-launch-imagej-with-a-different-version-of-java) and then [enable the Java-8 update site](/update-sites/following).
+-   If you **want the latest updates**, [update your ImageJ installation to use Java 8](/learn/faq#how-do-i-launch-imagej-with-a-different-version-of-java) and then [enable the Java-8 update site](/update-sites/following).
     -   **Make sure you switch your ImageJ over to Java 8 *before* enabling the Java-8 update site!**
 Alternately, you can simply download a new Fiji as described above.
 

@@ -1,6 +1,7 @@
 ---
 title: Keyboard Shortcuts
-section: Learn:ImageJ
+section: Learn:ImageJ Basics
+nav-links: true
 ---
 
 ImageJ has a lot of keyboard shortcuts.
@@ -13,7 +14,7 @@ For a verbose list of keyboard shortcuts, call
 ## The search bar
 
 Use {% include key key='ctrlcmd|L' %} to jump to the
-[search bar](/learn#the-search-bar),
+[search bar](/learn/basics#the-search-bar),
 to call menu entries by name.
 
 ## Recent commands

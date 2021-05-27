@@ -4,7 +4,7 @@ section: Extend:Development:Tools:IDEs
 title: Developing ImageJ on the command line
 ---
 
-This article explains how to install and configure command line tools for use with [ImageJ](/about) development.
+This article explains how to install and configure command line tools for use with [ImageJ](/software/imagej) development.
 
 ## Install and configure command line tools
 

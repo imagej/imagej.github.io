@@ -12,7 +12,7 @@ From Sunday, September 14, 2014 through Friday, September 19, 2014, LOCI in Madi
 
 ImageJ Ops is an extensible Java framework for algorithms, particularly image processing algorithms. Ops seeks to be a unifying library for scientific image processing. See the [Motivation](https://github.com/imagej/imagej-ops/wiki/Motivation) page on the Ops wiki for details.
 
-[KNIME](/software/knime) is an open source data analytics, reporting and integration platform, which integrates various components for machine learning and data mining through its modular data pipelining concept. The [**KN**IME **I**mage **P**rocessing](http://knime.imagej.net/) extension, KNIP, provides nodes for working with images, and is built on the ImageJ Ops library. Ops makes it possible to execute the image processing algorithm in many contexts, including from within [ImageJ](/about) itself, from [OMERO](/software/omero), [KNIME](/software/knime), [CellProfiler](/software/cellprofiler) and beyond.
+[KNIME](/software/knime) is an open source data analytics, reporting and integration platform, which integrates various components for machine learning and data mining through its modular data pipelining concept. The [**KN**IME **I**mage **P**rocessing](http://knime.imagej.net/) extension, KNIP, provides nodes for working with images, and is built on the ImageJ Ops library. Ops makes it possible to execute the image processing algorithm in many contexts, including from within [ImageJ](/software/imagej) itself, from [OMERO](/software/omero), [KNIME](/software/knime), [CellProfiler](/software/cellprofiler) and beyond.
 
 ## Accomplishments
 

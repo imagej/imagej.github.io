@@ -7,7 +7,7 @@ categories: [Fiji]
 
 {% include notice icon="info" content='This page lists publications relating to the [Fiji](/software/fiji) project.
 
--   For general instructions on citing [ImageJ](/about) and [Fiji](/software/fiji), see [Citing](/about/citing).
+-   For general instructions on citing [ImageJ](/software/imagej) and [Fiji](/software/fiji), see [Citing](/contribute/citing).
 -   For an index of citable software, see [Citable](/plugin-index#citable).' %}
 
 
@@ -17,7 +17,7 @@ categories: [Fiji]
 
 <!-- -->
 
--   A paper about the ImageJ software ecosystem—including [ImageJ](/about) itself, [ImageJ2](/software/imagej2), [Fiji](/software/fiji), related [SciJava](SciJava) projects, and various [plugins](/plugins)—was published in Molecular Reproduction and Development in July 2015[^2].
+-   A paper about the ImageJ software ecosystem—including [ImageJ](/software/imagej) itself, [ImageJ2](/software/imagej2), [Fiji](/software/fiji), related [SciJava](/libs/scijava) projects, and various [plugins](/plugins)—was published in Molecular Reproduction and Development in July 2015[^2].
 
 <!-- -->
 

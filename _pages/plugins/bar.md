@@ -111,7 +111,7 @@ It may be wise to allow ImageJ enough time to register all scripts before trigge
 
 <img src="/media/plugins/commanderoverview.png" title="fig:Commander overview (BAR 1.1.2)." width="400" alt="Commander overview (BAR 1.1.2)." /> Since the majority of BARs are scripts stored in dedicated files, BAR features Commander ({% include bc path='BAR|BAR Commander...'%}), a keyboard-based file browser that produces filtered lists of directory contents.
 
-It is a productivity tool that applies the principles of the [search bar](/learn#the-search-bar) to file browsing, providing instant access to files just by typing abbreviations of filenames. It serves two purposes: 1) to expedite the opening of files and 2) to produce filtered lists of directory contents. Features include: drag-and-drop support, interaction with native file manager, regex filtering, and a built-in console for common operations.
+It is a productivity tool that applies the principles of the [search bar](/learn/basics#the-search-bar) to file browsing, providing instant access to files just by typing abbreviations of filenames. It serves two purposes: 1) to expedite the opening of files and 2) to produce filtered lists of directory contents. Features include: drag-and-drop support, interaction with native file manager, regex filtering, and a built-in console for common operations.
 
 <i>Console mode</i> is triggered by typing {% include key key='!' %}, which evokes a list of searchable commands so that all file navigation can be done exclusively with the keyboard. Some of these (`cd`, `ls`, `pwd`, etc.) are reminiscent of commands found in most command-line interfaces. Here are some examples:
 
@@ -385,7 +385,7 @@ In a case of premature termination BARs tend to exit rather silently. The best w
 <!-- -->
 
 <span id="faq:ImageJ1"></span>Does BAR work outside Fiji/ImageJ2?  
-Yes, but with limitations. ImageJ1 (see [ImageJ Flavors](/about#flavors) if you have doubts about existing ImageJ distributions) will only register scripts saved in the *plugins/* folder or on one of its immediate subfolders. For this reason, some of the {% include bc path='BAR|'%} submenus will appear as empty, and it may not be possible to navigate the *BAR/* directory using menu commands ([Commander](#Commander) could still be used, nevertheless). Another important aspect is that, without access to the [built-in updater](/plugins/updater), you will have to manually update BAR (by monitoring its {% include github org='tferr' repo='Scripts/releases' label='rpository' %}), and to manually install (and update) the dependencies (i.e., third-party plugins and third-party libraries) used by BAR).
+Yes, but with limitations. ImageJ1 (see [ImageJ Flavors](/software/imagej#flavors) if you have doubts about existing ImageJ distributions) will only register scripts saved in the *plugins/* folder or on one of its immediate subfolders. For this reason, some of the {% include bc path='BAR|'%} submenus will appear as empty, and it may not be possible to navigate the *BAR/* directory using menu commands ([Commander](#Commander) could still be used, nevertheless). Another important aspect is that, without access to the [built-in updater](/plugins/updater), you will have to manually update BAR (by monitoring its {% include github org='tferr' repo='Scripts/releases' label='rpository' %}), and to manually install (and update) the dependencies (i.e., third-party plugins and third-party libraries) used by BAR).
 
 <!-- -->
 

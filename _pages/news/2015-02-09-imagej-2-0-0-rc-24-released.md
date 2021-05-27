@@ -4,7 +4,7 @@ title: 2015-02-09 - ImageJ 2.0.0-rc-24 released
 categories: [ImageJ2,News]
 ---
 
-Today, the [ImageJ team](/about/contributors) is pleased to announce a new public release candidate for [ImageJ2](/software/imagej2): version 2.0.0-rc-24.
+Today, the [ImageJ team](/people) is pleased to announce a new public release candidate for [ImageJ2](/software/imagej2): version 2.0.0-rc-24.
 
 ![ 450px \| right \| rc-23 / rc-24](/media/news/scifio-rc23-rc24.png) ![ 450px \| right \| ImageJ1 SCIFIO](/media/news/imagej-scifio-rc24.png)
 
@@ -38,6 +38,6 @@ Looking ahead at short-term goals:
 
 ## How to update
 
-Use the {% include bc path='Help | Update...'%} command to update your [ImageJ](/about) installation. Please send any comments to the [ImageJ mailing list](/help/mailing-lists). Thanks for the continued feedback and support!
+Use the {% include bc path='Help | Update...'%} command to update your [ImageJ](/software/imagej) installation. Please send any comments to the [ImageJ mailing list](/help/mailing-lists). Thanks for the continued feedback and support!
 
  

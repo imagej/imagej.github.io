@@ -149,7 +149,7 @@ PlotData=
 
 -   Bugs
     -   Fixed equals/hashCode problems with [ImgLib2](/libs/imglib2) integer types ({% include github org='imglib' repo='imglib2' pr='111' label='imglib/imglib2\#111' %})
-    -   Fixed a bug in the [SJC](/libs/scijava-common) PrefService, noticed by {% include person id='kephale' %} ({% include github org='scijava' repo='scijava-common' commit='ab2a9adae7a8e6e8785874a13bbf805c5f8e71fe' label='long-pref-keys' %})
+    -   Fixed a bug in the [SJC](/libs/scijava#scijava-common) PrefService, noticed by {% include person id='kephale' %} ({% include github org='scijava' repo='scijava-common' commit='ab2a9adae7a8e6e8785874a13bbf805c5f8e71fe' label='long-pref-keys' %})
     -   Fixed [SCIFIO](/libs/scifio) bug with DICOM format, noticed by {% include person id='kmader' %} ({% include github org='scifio' repo='scifio' pr='292' label='dicom-file-list-npe' %})
     -   Fixed bug when executing ops as commands, noticed by {% include person id='kephale' %} ({% include github org='imagej' repo='imagej-ops' commit='34b5523dfc051741a9ed69d2b5b9f97df24f2677' label='ops-as-commands' %})
     -   Investigated SJC bug in class loading, noticed by {% include person id='EikeHeinz' %}, but no solution yet ({% include github org='scijava' repo='scijava-common' issue='219' label='scijava/scijava-common\#219' %})
@@ -160,7 +160,7 @@ PlotData=
 -   Research
     -   Investigated improvements to Ops generic parameter matching. The problem is complex, but a solution is in the works.
     -   Explored possible Ops matching performance improvements ({% include github org='imagej' repo='imagej-ops' pr='332' label='fast-op-index' %})
-    -   Improved Jenkins jobs to build SNAPSHOT javadoc for all core [SciJava](SciJava) components (scijava, scifio, imglib2 and imagej). as requested by {% include person id='stelfrich' %} ({% include github org='imagej' repo='imagej-javadoc' commit='8cffdfa07c7406ebc8152cbdb84213d8a9774ff8' label='1' %}, {% include github org='scifio' repo='scifio-javadoc' commit='be25fda9f6baaaaa84f62fc6081d7e0ded8891e8' label='2' %}, {% include github org='imglib' repo='imglib2-javadoc' commit='e97cfc7a1e29dd1251297e2858245e7bfb275657' label='3' %})
+    -   Improved Jenkins jobs to build SNAPSHOT javadoc for all core [SciJava](/libs/scijava) components (scijava, scifio, imglib2 and imagej). as requested by {% include person id='stelfrich' %} ({% include github org='imagej' repo='imagej-javadoc' commit='8cffdfa07c7406ebc8152cbdb84213d8a9774ff8' label='1' %}, {% include github org='scifio' repo='scifio-javadoc' commit='be25fda9f6baaaaa84f62fc6081d7e0ded8891e8' label='2' %}, {% include github org='imglib' repo='imglib2-javadoc' commit='e97cfc7a1e29dd1251297e2858245e7bfb275657' label='3' %})
 
 <!-- -->
 

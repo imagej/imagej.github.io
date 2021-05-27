@@ -16,7 +16,7 @@ section: Explore:Software:Fiji
 -   [Fiji on OHLOH](http://www.ohloh.net/p/therealfiji)
 -   [ObjectJ](http://simon.bio.uva.nl/objectj/)
 
-Links to the contributors' personal pages can be found [here](/about/contributors).
+Links to the contributors' personal pages can be found [here](/people).
 
 ## More ImageJ plugins
 

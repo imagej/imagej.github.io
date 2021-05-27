@@ -25,7 +25,7 @@ The Sholl technique[^2] is used to describe neuronal arbors. This plugin can per
 The plugin is distributed with Fiji. It installs several commands under {% include bc path='Analysis|Sholl| ' color='white'%}. **As part of an active effort to [modernize ImageJ](/news/2015-12-22-the-road-to-java-8) you need to [subscribe](/update-sites/following#add-update-sites) to the Java 8 update site to access the latest plugin version** (this will also allow you to access the newest [ImageJ capabilities](/news/2015-12-22-the-road-to-java-8#components-which-have-already-migrated)). To do so, you can either:
 
 -   [Download the latest Fiji release](/downloads). Newer releases come pre-bundled with Java 8, and are already subscribed to the Java-8 update site](/list-of-update-sites).
--   If you have downloaded Fiji while ago and want to keep your existing installation, you will have to download Java 8 and make your [Fiji installation aware of it](/help/troubleshooting#checking-the-java-version). Then subscribe to the [Java-8 update site](/list-of-update-sites).
+-   If you have downloaded Fiji while ago and want to keep your existing installation, you will have to download Java 8 and make your [Fiji installation aware of it](/learn/troubleshooting#checking-the-java-version). Then subscribe to the [Java-8 update site](/list-of-update-sites).
 
 ## Direct Analysis of Images
 
@@ -648,7 +648,7 @@ The authoritative reference for *Sholl Analysis* is:
 
 -   Ferreira T, Blackman A, Oyrer J, Jayabal A, Chung A, Watt A, Sjöström J, van Meyel D. (**2014**), [Neuronal morphometry directly from bitmap images](http://www.nature.com/nmeth/journal/v11/n10/full/nmeth.3125.html), *Nature Methods* 11(10): 982–984.
 
-The [authoritative reference](/about/citing) for Fiji:
+The [authoritative reference](/contribute/citing) for Fiji:
 
 -   Schindelin J, Arganda-Carreras I, Frise E, Kaynig V, Longair M, Pietzsch T, Preibisch S, Rueden C, Saalfeld S, Schmid B, Tinevez JY, White DJ, Hartenstein V, Eliceiri K, Tomancak P, Cardona A. (**2012**) [Fiji: an open-source platform for biological-image analysis](http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2019.html), *Nature Methods* 9(7): 676-682.
 
@@ -722,7 +722,7 @@ As mentioned several times, the quality of the analysis relies on how the arbor 
 <dl>
 <dd markdown="1">
 
-Please note that from version 3.4.6 onwards, updates are available through the [Java-8 update site](##fiji-users). If you have manually installed/modified *Sholl\_Analysis.jar* ([Development build](#release-notes_and_Pre-releases)?). Run the [Updater](/plugins/updater), choose *Advanced Mode* then *View locally modified files* under *View Options*. Type "/plugins/sholl-analysis" in the *Search* field, selecting *Sholl\_Analysis.jar* from the list of files. If the *Details pane* indicates an available update, click on *Locally modified* under *Status/Action* and choose *Install/Update*. The latest release version will be available once you press *Apply changes*. See [Installation FAQs](/help/faq#installingupdating) for more details.
+Please note that from version 3.4.6 onwards, updates are available through the [Java-8 update site](##fiji-users). If you have manually installed/modified *Sholl\_Analysis.jar* ([Development build](#release-notes_and_Pre-releases)?). Run the [Updater](/plugins/updater), choose *Advanced Mode* then *View locally modified files* under *View Options*. Type "/plugins/sholl-analysis" in the *Search* field, selecting *Sholl\_Analysis.jar* from the list of files. If the *Details pane* indicates an available update, click on *Locally modified* under *Status/Action* and choose *Install/Update*. The latest release version will be available once you press *Apply changes*. See [Installation FAQs](/learn/faq#installingupdating) for more details.
 
 </dd>
 </dl>
@@ -734,7 +734,7 @@ Please note that from version 3.4.6 onwards, updates are available through the [
 <dl>
 <dd markdown="1">
 
-Around 20 seconds. This is the time it will take you to [create an account](/help/editing) on this wiki. Once you have created one, you will be able to improve this page yourself.
+Around 20 seconds. This is the time it will take you to [create an account](/editing) on this wiki. Once you have created one, you will be able to improve this page yourself.
 
 </dd>
 </dl>
@@ -936,7 +936,7 @@ It is likely that frequent interactions with the dialog prompt(s) (from which th
 <dl>
 <dd markdown="1">
 
-Report it in the [ImageJ Forum](http://forum.imagej.net) or file an [issue](https://github.com/tferr/ASA/issues) on GitHub. Don't forget to include the [steps needed to reproduce the problem](/help/bugs#bug-reporting-best-practices). You may also want to check the {% include github org='tferr' repo='ASA' path='Notes.md\#development-builds' label='release notes' %} for the latest [development version](http://jenkins.imagej.net/job/Sholl-Analysis/lastBuild/) to see if the issue has meanwhile been addressed.
+Report it in the [ImageJ Forum](http://forum.imagej.net) or file an [issue](https://github.com/tferr/ASA/issues) on GitHub. Don't forget to include the [steps needed to reproduce the problem](/discuss/bugs#bug-reporting-best-practices). You may also want to check the {% include github org='tferr' repo='ASA' path='Notes.md\#development-builds' label='release notes' %} for the latest [development version](http://jenkins.imagej.net/job/Sholl-Analysis/lastBuild/) to see if the issue has meanwhile been addressed.
 
 </dd>
 </dl>

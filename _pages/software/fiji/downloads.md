@@ -4,7 +4,7 @@ title: Fiji Downloads
 project: Fiji
 ---
 
-[Fiji](/software/fiji) is a distribution of ImageJ which includes many useful plugins [contributed by the community](/software/fiji/contribution-requirements).
+[Fiji](/software/fiji) is a distribution of ImageJ which includes many useful plugins [contributed by the community](/contribute/fiji).
 
 {% include fiji/download-links %}
 
@@ -39,7 +39,7 @@ start it.
 
 # Troubleshooting
 
--   Many common questions are answered on the [FAQ](/help/faq).
+-   Many common questions are answered on the [FAQ](/learn/faq).
 -   If you encounter bugs, please see the [Getting Help](/help) page.
 
 # Source code

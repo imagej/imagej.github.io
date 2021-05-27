@@ -3,11 +3,11 @@ title: Contributors
 section: Contribute
 ---
 
-{% include notice icon="info" content='This page describes who *contributes* to ImageJ and [SciJava](SciJava) projects.
+{% include notice icon="info" content='This page describes who *contributes* to ImageJ and [SciJava](/libs/scijava) projects.
 
--   For information on who *maintains* these projects, see [Governance](/about/governance).
--   For information on how ImageJ projects are *funded*, see [Funding](/about/funding).
--   For information on *citing* these projects, see [Citing](/about/citing).' %}
+-   For information on who *maintains* these projects, see [Governance](/contribute/governance).
+-   For information on how ImageJ projects are *funded*, see [Funding](/contribute/funding).
+-   For information on *citing* these projects, see [Citing](/contribute/citing).' %}
 
 # Who we are
 
@@ -27,7 +27,7 @@ section: Contribute
 -   [Jason Swedlow](http://www.lifesci.dundee.ac.uk/people/jason-swedlow)<sup>7,8</sup> (OME)
 </div>
 <div class="contributor-block" markdown=1>
-### {% include icon name='ImageJ' size='32px' %} [ImageJ](/about)
+### {% include icon name='ImageJ' size='32px' %} [ImageJ](/software/imagej)
 
 -   {% include person id='rasband' %}<sup>9</sup> (lead, [ImageJ 1.x](/software/imagej1))
 -   {% include person id='ctrueden' %}<sup>1</sup> (lead, [ImageJ2](/software/imagej2))

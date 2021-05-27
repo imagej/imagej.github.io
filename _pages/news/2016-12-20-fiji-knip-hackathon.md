@@ -157,7 +157,7 @@ PlotData=
 
 ### Florian Jug
 
--   With {% include person id='ctrueden' %}, overhauled the [SciJava Common](/libs/scijava-common) [logging](/develop/logging) mechanism ({% include github org='scijava' repo='scijava-common' pr='253' label='scijava/scijava-common\#253' %}).
+-   With {% include person id='ctrueden' %}, overhauled the [SciJava Common](/libs/scijava#scijava-common) [logging](/develop/logging) mechanism ({% include github org='scijava' repo='scijava-common' pr='253' label='scijava/scijava-common\#253' %}).
 -   With {% include person id='ctrueden' %},{% include person id='haesleinhuepf' %},{% include person id='tpietzsch' %}, and {% include person id='axtimwalde' %} split up the necessary work in order to cut stable releases of Fiji (biannually). This 'earned' me the status of 'Grand Poobah'. ;)
 -   Worked on an 'indago' parent POM for DAIS related projects and started using it for the new tracker 'Tr2d'.
 -   Worked on the new tracker 'Tr2d'. New features: improved leveraged editing; tracklet export; improved BDV overlays.
@@ -167,8 +167,8 @@ PlotData=
 ### Curtis Rueden
 
 -   With {% include person id='aneevel' %} and {% include person id='axtimwalde' %}, completed update of ImageJ web resources to support HTTPS (see [separate news post](/news/2016-12-29-imagej-web-resources-now-support-https)).
--   With {% include person id='fjug' %}, overhauled the [SciJava Common](/libs/scijava-common) [logging](/develop/logging) mechanism ({% include github org='scijava' repo='scijava-common' pr='253' label='scijava/scijava-common\#253' %}).
--   With {% include person id='rimadoma' %}, improved [SciJava Common](/libs/scijava-common) context injection to be recursive, to fix bugs with service population of commands ({% include github org='scijava' repo='scijava-common' commit='b0c981b24fc8ec845656574d95f9eddbc285728e' label='scijava/scijava-common@b0c981b2' %}, {% include github org='imagej' repo='imagej-ops' commit='4f78eca5b061881865c2a2c1702a98e634248aa5' label='imagej/imagej-ops@4f78eca5' %}).
+-   With {% include person id='fjug' %}, overhauled the [SciJava Common](/libs/scijava#scijava-common) [logging](/develop/logging) mechanism ({% include github org='scijava' repo='scijava-common' pr='253' label='scijava/scijava-common\#253' %}).
+-   With {% include person id='rimadoma' %}, improved [SciJava Common](/libs/scijava#scijava-common) context injection to be recursive, to fix bugs with service population of commands ({% include github org='scijava' repo='scijava-common' commit='b0c981b24fc8ec845656574d95f9eddbc285728e' label='scijava/scijava-common@b0c981b2' %}, {% include github org='imagej' repo='imagej-ops' commit='4f78eca5b061881865c2a2c1702a98e634248aa5' label='imagej/imagej-ops@4f78eca5' %}).
 -   With {% include person id='rimadoma' %}, add a validater callback for parameter validation ({% include github org='scijava' repo='scijava-common' commit='66ed844ee76a264ca83629f0fef50c9b726c8897' label='scijava/scijava-common@66ed844e' %}, {% include github org='scijava' repo='scijava-common' commit='70c50f48cc20cec0a747a000778f013c7380155d' label='scijava/scijava-common@70c50f48' %}).
 -   With {% include person id='maarzt' %}, began work on a `PlotService` for ImageJ2 ([maarzt/imagej-ui-swing@plot-service](https://github.com/imagej/imagej-ui-swing/compare/plot-service...maarzt:plot-service)).
 -   Participated in technical discussions with various people, including a "big-picture" status update for ImageJ2 covering my [primary priorities](User_Rueden#primary-projects); see [Technical discussions](#technical-discussions) section below.

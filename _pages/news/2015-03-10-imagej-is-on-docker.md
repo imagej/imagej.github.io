@@ -4,7 +4,7 @@ title: 2015-03-10 - ImageJ is on Docker!
 categories: [Docker,Fiji,News]
 ---
 
-Today, the [ImageJ team](/about/contributors) is pleased to announce the first official support for running ImageJ in Docker: Fiji images!
+Today, the [ImageJ team](/people) is pleased to announce the first official support for running ImageJ in Docker: Fiji images!
 
 # Motivation
 

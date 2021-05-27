@@ -111,7 +111,7 @@ What are you going to do, bleed on me?
 {% include code-example code=fixed-width-block-markdown %}
 
 ...or [wrap the Markdowny parts in a
-`<span markdown=1>`](/help/editing/pitfalls#markdown-inside-block-elements).
+`<span markdown=1>`](/editing/pitfalls#markdown-inside-block-elements).
 
 ## Multiple spaces in a row
 

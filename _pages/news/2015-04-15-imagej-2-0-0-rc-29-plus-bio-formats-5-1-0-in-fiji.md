@@ -4,9 +4,9 @@ title: 2015-04-15 - ImageJ 2.0.0-rc-29, plus Bio-Formats 5.1.0 in Fiji
 categories: [ImageJ2,Fiji,News]
 ---
 
-Today, the [ImageJ team](/about/contributors) has made a new release of [ImageJ2](/software/imagej2): version 2.0.0-rc-29. This release includes bug-fixes and improvements by several members of the ImageJ community.
+Today, the [ImageJ team](/people) has made a new release of [ImageJ2](/software/imagej2): version 2.0.0-rc-29. This release includes bug-fixes and improvements by several members of the ImageJ community.
 
-In addition, the [Fiji team](/about/contributors) has updated several components of the [Fiji](/software/fiji) distribution. Notably, Fiji was updated to the [Bio-Formats](/formats/bio-formats) 5.1.0 release, which includes many bug-fixes and improvements to several file formats.
+In addition, the [Fiji team](/people) has updated several components of the [Fiji](/software/fiji) distribution. Notably, Fiji was updated to the [Bio-Formats](/formats/bio-formats) 5.1.0 release, which includes many bug-fixes and improvements to several file formats.
 
 ## What's new
 
@@ -99,6 +99,6 @@ These releases include new versions of several components:
 
 ## How to update
 
-Use the {% include bc path='Help | Update...'%} command to update your [ImageJ](/about) installation. Please send any comments to the [ImageJ mailing list](/help/mailing-lists). Thanks for the continued feedback and support!
+Use the {% include bc path='Help | Update...'%} command to update your [ImageJ](/software/imagej) installation. Please send any comments to the [ImageJ mailing list](/help/mailing-lists). Thanks for the continued feedback and support!
 
   

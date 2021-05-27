@@ -52,7 +52,7 @@ to add content and make changes to a page when working locally. A text editor
 makes navigating between files, searching for text within your page, and making
 multiple edits more efficient and provides a more user-friendly interface.
 
-From here, the [front matter](/help/editing#add-the-pages-front-matter) and
+From here, the [front matter](/editing#add-the-pages-front-matter) and
 content of the new page can be populated with a text editor of your choosing.
 
 * Images and other media should be stored in `/path/to/imagej.github.io/media`.

@@ -4,7 +4,7 @@ title: Dotfiles
 section: Extend:Development:Tools
 ---
 
-There are several [dotfiles](https://dotfiles.github.io/) repositories filled with command line configuration goodness for the different [layers](/develop/architecture) of the [SciJava](SciJava) component collection.
+There are several [dotfiles](https://dotfiles.github.io/) repositories filled with command line configuration goodness for the different [layers](/develop/architecture) of the [SciJava](/libs/scijava) component collection.
 
 ## Repositories
 
@@ -19,11 +19,11 @@ You can find the dotfiles in the following repositories:
         {% include github org='ctrueden' repo='dotfiles' label='ctrueden/dotfiles' %}</p>
       </td>
       <td style="text-align: center; vertical-align: bottom">
-        <p><a href="SciJava"><img src="/media/icons/scijava.png" width="48px"></a><br>
+        <p><a href="/libs/scijava"><img src="/media/icons/scijava.png" width="48px"></a><br>
         {% include github org='scijava' repo='dotfiles' label='scijava/dotfiles' %}</p>
       </td>
       <td style="text-align: center; vertical-align: bottom">
-        <p><a href="/about"><img src="/media/icons/imagej.png" width="48px"></a><br>
+        <p><a href="/software/imagej"><img src="/media/icons/imagej.png" width="48px"></a><br>
         {% include github org='imagej' repo='dotfiles' label='imagej/dotfiles' %}</p>
       </td>
       <td style="text-align: center; vertical-align: bottom">

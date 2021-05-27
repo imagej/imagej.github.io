@@ -4,7 +4,7 @@ title: 2017-05-30 - Comprehensive updates
 categories: [News,Fiji]
 ---
 
-Today, a lot of work on [ImageJ](/about), [Fiji](/software/fiji) and [SciJava](SciJava) came to fruition all at once.
+Today, a lot of work on [ImageJ](/software/imagej), [Fiji](/software/fiji) and [SciJava](/libs/scijava) came to fruition all at once.
 
 ## ImageJ in Jupyter notebooks
 
@@ -14,7 +14,7 @@ Please peruse the [ImageJ Tutorial notebooks](/tutorials) for examples of this k
 
 ## Sweeping component updates
 
-Nearly all components of the [ImageJ software stack](/develop/architecture#definitions), as well nearly all [Fiji](/software/fiji) plugins, saw new releases [unifying and updating metadata](http://forum.imagej.net/t/split-boms-from-parent-configuration/2563) to better document [who is responsible for maintaining each component of the software](/about/governance#scijava-team-roles). This metadata update has been in the works for more than 18 months; the next step will be to [autogenerate the sidebars of component wiki pages](https://github.com/scijava/mediawiki-maven-info) so that plugin authors no longer need to manually keep wiki pages in sync. For technical details, see {% include github org='fiji' repo='fiji' issue='121' label='fiji/fiji\#121' %}.
+Nearly all components of the [ImageJ software stack](/develop/architecture#definitions), as well nearly all [Fiji](/software/fiji) plugins, saw new releases [unifying and updating metadata](http://forum.imagej.net/t/split-boms-from-parent-configuration/2563) to better document [who is responsible for maintaining each component of the software](/contribute/governance#scijava-team-roles). This metadata update has been in the works for more than 18 months; the next step will be to [autogenerate the sidebars of component wiki pages](https://github.com/scijava/mediawiki-maven-info) so that plugin authors no longer need to manually keep wiki pages in sync. For technical details, see {% include github org='fiji' repo='fiji' issue='121' label='fiji/fiji\#121' %}.
 
 This update also brings Fiji much closer to complete synchronization with the {% include github org='fiji' repo='fiji' label='fiji/fiji' %} source repository. Historically, there have been differences between the exact versions of components specified in the Fiji sources, versus those actually present on the Fiji update site at any given time. But we have been working very hard to reconcile those differences, such that the Fiji update site can ultimately be driven directly by what the source code specifies. For technical details, see {% include github org='fiji' repo='fiji' issue='37' label='fiji/fiji\#37' %}, {% include github org='fiji' repo='fiji' issue='38' label='fiji/fiji\#38' %} and {% include github org='fiji' repo='fiji' issue='39' label='fiji/fiji\#39' %}.
 

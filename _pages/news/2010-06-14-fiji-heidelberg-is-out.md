@@ -19,7 +19,7 @@ While it is developed actively, it is already quite powerful and easily usable b
 -   Fixed a critical bug in the [Fiji Updater](/plugins/updater) that affected MacOSX. Symptom:
 
   
-Fiji no longer starts after an update). If you have not updated between April 8, 2010 and June 3rd, 2010, this bug affects you and you have to follow [these instructions](/help/troubleshooting).
+Fiji no longer starts after an update). If you have not updated between April 8, 2010 and June 3rd, 2010, this bug affects you and you have to follow [these instructions](/learn/troubleshooting).
 
 -   Unfortunately, we had to drop support for MacOSX PPC. If you need Fiji on such a system, please contact [the Fiji developer mailing list](http://groups.google.com/group/fiji-devel), and we will try to provide a special edition.
 

@@ -4,7 +4,7 @@ title: 2014-06-04 - ImageJ 2.0.0 release candidate
 categories: [News,ImageJ2]
 ---
 
-Today, the [ImageJ team](/about/contributors) is pleased to announce a public release candidate for [ImageJ2](/software/imagej2): version 2.0.0-rc-2. We tested the first release candidate internally, but now is the time to engage the community: please test the second release candidate with your favorite workflows.
+Today, the [ImageJ team](/people) is pleased to announce a public release candidate for [ImageJ2](/software/imagej2): version 2.0.0-rc-2. We tested the first release candidate internally, but now is the time to engage the community: please test the second release candidate with your favorite workflows.
 
 Unlike the beta releases during the past two years, this version of ImageJ2 integrates fully with the legacy [ImageJ 1.x](/software/imagej1) user interface. Consequently, this version of ImageJ2 really is the same ImageJ you know and love, achieving 100% backwards compatibility with existing ImageJ 1.x plugins, scripts and macros, while still providing access to the redesigned capabilities of ImageJ2. This allows you to keep using ImageJ in familiar ways, while also enabling migration toward more powerful new features as needed.
 
@@ -63,7 +63,7 @@ Identical to thusly parameterized scripts, it is now also possible to declare in
 
 ## More than just an application
 
-ImageJ2 breaks the "one developer, one machine, one task" paradigm: it is also a modular collection of highly reusable software libraries built on [SciJava](SciJava), using a powerful plugin framework to facilitate rapid development and painless user customization.
+ImageJ2 breaks the "one developer, one machine, one task" paradigm: it is also a modular collection of highly reusable software libraries built on [SciJava](/libs/scijava), using a powerful plugin framework to facilitate rapid development and painless user customization.
 
 The following software component libraries form the core of ImageJ2:
 

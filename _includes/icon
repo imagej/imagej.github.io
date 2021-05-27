@@ -18,7 +18,7 @@
       {%- when "Git"           -%} /develop/git
       {%- when "GitHub"        -%} /develop/github
       {%- when "Icy"           -%} /software/icy
-      {%- when "ImageJ"        -%} /about
+      {%- when "ImageJ"        -%} /software/imagej
       {%- when "ImageJ1"       -%} /software/imagej1
       {%- when "ImageJ2"       -%} /software/imagej2
       {%- when "ImgLib2"       -%} /libs/imglib2

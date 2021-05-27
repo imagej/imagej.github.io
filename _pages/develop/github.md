@@ -4,7 +4,7 @@ title: GitHub
 section: Extend:Development:Tools
 ---
 
-In the [ImageJ](/about) and related [SciJava](SciJava) projects, we make extensive use of [GitHub](https://github.com/), a web site that hosts [open source](Open_source) projects for free.
+In the [ImageJ](/software/imagej) and related [SciJava](/libs/scijava) projects, we make extensive use of [GitHub](https://github.com/), a web site that hosts [open source](Open_source) projects for free.
 
 Here are a few tips how to interact via GitHub more effectively:
 

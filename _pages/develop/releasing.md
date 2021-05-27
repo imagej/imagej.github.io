@@ -4,16 +4,16 @@ title: Development Lifecycle
 section: Extend:Development:Guides
 ---
 
-{% include notice icon="info" content='This page describes the core [SciJava](SciJava) *software release process*.
+{% include notice icon="info" content='This page describes the core [SciJava](/libs/scijava) *software release process*.
 
--   For an overview of *distribution methods*, see [Distribution](/develop/distributing).
+-   For an overview of *distribution methods*, see [Distribution](/contribute/distributing).
 -   To *download* software releases, see [/downloads](/downloads).' %}
 
 The SciJava [philosophy](/develop/philosophy) is to [release early, release often](/develop/philosophy#release-early-release-often). At the same time, we always want to preserve [scientific reproducibility](/develop/architecture#reproducible-builds). To make this possible we lean on several [project management](/develop/project-management) tools. The purpose of this guide is to take you through the process of using these tools with the goal of releasing new versions of your software, and then providing those releases to users.
 
 # Phases of development
 
-[ImageJ](/about) and [Fiji](/software/fiji) are developed according to the [SciJava philosophy](/develop/philosophy), thus these applications are used throughout this tutorial to illustrate the development lifecycle.
+[ImageJ](/software/imagej) and [Fiji](/software/fiji) are developed according to the [SciJava philosophy](/develop/philosophy), thus these applications are used throughout this tutorial to illustrate the development lifecycle.
 
 Whether adding new features, fixing bugs, improving performance, etc... **development** is the process of making changes, with the goal of exposing these changes to users. To accomplish this, actively developed projects cycle through five general "phases":
 
@@ -132,7 +132,7 @@ Once a feature or fix is complete it can move to the `master` branch of the repo
 
 <!-- -->
 
--   **External developer.** First push your changes back to a branch of your forked repository (it doesn't necessarily have to be `master`). Then you can file a [pull request](https://help.github.com/articles/using-pull-requests/) (PR) on [GitHub](/develop/github) to merge your branch back to the official repository. This invites code review from other interested developers. Reviewers might ask for changes to the code to address any issues. After any needed revisions have been made, a [project maintainer](/about/governance) will accept your changes and then merge to the official `master` branch.
+-   **External developer.** First push your changes back to a branch of your forked repository (it doesn't necessarily have to be `master`). Then you can file a [pull request](https://help.github.com/articles/using-pull-requests/) (PR) on [GitHub](/develop/github) to merge your branch back to the official repository. This invites code review from other interested developers. Reviewers might ask for changes to the code to address any issues. After any needed revisions have been made, a [project maintainer](/contribute/governance) will accept your changes and then merge to the official `master` branch.
 
 ## Phase 3: Released
 
@@ -199,7 +199,7 @@ component must then be *uploaded* to an ImageJ [update site](/update-sites).
 
 An update site can be hosted anywhere, though the ImageJ web server at http://sites.imagej.net/ offers a [personal update site](/update-sites/setup#add-your-personal-update-site) service.
 
-See the **[distribution](/develop/distributing)** page for a discussion of pros and cons of distributing your plugin on a core versus a personal update site.
+See the **[distribution](/contribute/distributing)** page for a discussion of pros and cons of distributing your plugin on a core versus a personal update site.
 
 If you do manage [your own update site](/update-sites/setup), you can upload your release yourself.
 

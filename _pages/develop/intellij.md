@@ -4,7 +4,7 @@ section: Extend:Development:Tools:IDEs
 title: Developing ImageJ in IntelliJ IDEA
 ---
 
-This article explains how to install and configure IntelliJ IDEA for use with [ImageJ](/about) development. Directions correspond to IntelliJ IDEA 11.1, and may need adjustment for other versions.
+This article explains how to install and configure IntelliJ IDEA for use with [ImageJ](/software/imagej) development. Directions correspond to IntelliJ IDEA 11.1, and may need adjustment for other versions.
 
 ## Install and configure IDEA
 
@@ -30,11 +30,11 @@ On some platforms, the first time you perform this procedure, you may be prompte
 
 1.  Choose {% include bc path='Run|Edit Configurations'%} from the menu
 2.  Click the Plus icon and choose Application
-3.  In the Name field, type "/about"
+3.  In the Name field, type ImageJ
 4.  Type "net.imagej.Main" for the Main class
 5.  For "Use classpath and JDK of module" select "imagej" from the list
 6.  Click OK
-7.  Choose {% include bc path='Run|Run "/about"'%} from the menu
+7.  Choose {% include bc path='Run|Run ImageJ'%} from the menu
 
 The project automatically builds before launching, so it may take a little while the first time.
 

@@ -43,7 +43,7 @@ Advanced instructions for building, or modifying, the source code are available 
 
 {% include develop/ide-links %}
 
- Note that these tutorials are targeted towards [ImageJ](/about), but would apply to any Maven-based project.
+ Note that these tutorials are targeted towards [ImageJ](/software/imagej), but would apply to any Maven-based project.
 
 ## Javadocs
 

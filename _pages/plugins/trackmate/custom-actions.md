@@ -23,15 +23,15 @@ nav-links:
 
 Actions were my crude solution to the problem of adding random features to [TrackMate](/plugins/trackmate) without having to change the GUI too much. Adding buttons or dialogs or extra panels is cumbersome and I thought it would complexify the GUI, which is meant to be simple. A TrackMate action is a lazy workaround for this problem. You must keep in mind that is a placeholder for random feature ideas, and provided a quick and dirty way to test them.
 
-A TrackMate action takes the shape of an item in a drop-down list in the last panel of the GUI. It can do more or less anything, since we pass everything to the action, even a reference to the GUI itself. Thanks to the [SciJava](SciJava) discovery mechanism, we do not have to worry about adding it on the GUI: it will automatically be listed in the action list. The drawback of this simplicity is that you cannot use it to provide elaborated user interaction mechanisms, such as the ones you can find in a view.
+A TrackMate action takes the shape of an item in a drop-down list in the last panel of the GUI. It can do more or less anything, since we pass everything to the action, even a reference to the GUI itself. Thanks to the [SciJava](/libs/scijava) discovery mechanism, we do not have to worry about adding it on the GUI: it will automatically be listed in the action list. The drawback of this simplicity is that you cannot use it to provide elaborated user interaction mechanisms, such as the ones you can find in a view.
 
-In this tutorial, we will use it to launch the event logger we created in the [previous tutorial](/plugins/trackmate/custom-viewers) of this series. If you remember, we saw in the last paragraph how to use the `visible = false` parameter the [SciJava](SciJava) annotation to hide it from the view menu. Hereby preventing the user to access it. No problem, we will now build an action that will launch it as a supplementary view.
+In this tutorial, we will use it to launch the event logger we created in the [previous tutorial](/plugins/trackmate/custom-viewers) of this series. If you remember, we saw in the last paragraph how to use the `visible = false` parameter the [SciJava](/libs/scijava) annotation to hide it from the view menu. Hereby preventing the user to access it. No problem, we will now build an action that will launch it as a supplementary view.
 
 ## The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/action/plugins/trackmateActionFactory.java' label='TrackMateActionFactory' %} interface.
 
 Again, the action behavior and its integration in TrackMate are split in two classes. The behavior is described by the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/action/plugins/trackmateAction.java' label='TrackMateAction' %} interface. The integration mechanism is controlled by the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/action/plugins/trackmateActionFactory.java' label='TrackMateActionFactory' %} interface, which extends the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/plugins/trackmateModule.java' label='TrackMateModule' %} interface.
 
-### [SciJava](SciJava) parameters recap.
+### [SciJava](/libs/scijava) parameters recap.
 
 There is not much to say about the factory itself. Ii is the class that must be annotated with
 

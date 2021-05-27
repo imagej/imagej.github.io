@@ -6,11 +6,11 @@ section: Extend:Development
 
 
  {% include notice icon="info" content='This page has approaches for *software developers* to use for debugging ImageJ.  
-If you are a *user* looking to troubleshoot issues, see the [Troubleshooting](/help/troubleshooting) page.' %}
+If you are a *user* looking to troubleshoot issues, see the [Troubleshooting](/learn/troubleshooting) page.' %}
 
 # Launching ImageJ in debug mode
 
-To debug problems with ImageJ, it is often helpful to launch it in debug mode. See the [Troubleshooting](/help/troubleshooting#launching-imagej-from-the-console) page for instructions.
+To debug problems with ImageJ, it is often helpful to launch it in debug mode. See the [Troubleshooting](/learn/troubleshooting#launching-imagej-from-the-console) page for instructions.
 
 # Debugging plugins in an IDE (Netbeans, IntelliJ, Eclipse, etc)
 
@@ -94,7 +94,7 @@ Often, dynamic library issues are connected to a dependent .dll file missing. Do
 
 # Debugging JVM hangs
 
-When the Java VM hangs, the reason might be a dead-lock. Try taking a [stack trace](/help/troubleshooting#if-imagej-freezes-or-hangs). If you have trouble, you can try one of the following advanced techniques:
+When the Java VM hangs, the reason might be a dead-lock. Try taking a [stack trace](/learn/troubleshooting#if-imagej-freezes-or-hangs). If you have trouble, you can try one of the following advanced techniques:
 
 1.  You can use the `jstack` command (you don't need to run ImageJ from the command line in this case). This requires that you first find the PID (process ID) of ImageJ. You can do so by running:
         jps

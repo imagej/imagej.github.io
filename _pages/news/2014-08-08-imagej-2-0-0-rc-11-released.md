@@ -4,11 +4,11 @@ title: 2014-08-08 - ImageJ 2.0.0-rc-11 released
 categories: [ImageJ2,News]
 ---
 
-Today, the [ImageJ team](/about/contributors) is pleased to announce a new public release candidate for [ImageJ2](/software/imagej2): version 2.0.0-rc-11.
+Today, the [ImageJ team](/people) is pleased to announce a new public release candidate for [ImageJ2](/software/imagej2): version 2.0.0-rc-11.
 
 ## New features
 
--   Usage tracking! We can now track and upload (anonymously) use counts at the plugin level, along with information about the environment of use (country, java version, language, operating system, time zone). Although we are taking care not to expose any user data with these statistics, this feature can be disabled via a new `{% include bc path='Edit | Options | Privacy...'%}` setting. Expect great things coming to the [ usage page](/about/usage)! (note: "great things" = statistics graphs)
+-   Usage tracking! We can now track and upload (anonymously) use counts at the plugin level, along with information about the environment of use (country, java version, language, operating system, time zone). Although we are taking care not to expose any user data with these statistics, this feature can be disabled via a new `{% include bc path='Edit | Options | Privacy...'%}` setting. Expect great things coming to the usage page! (note: "great things" = statistics graphs)
 
 <!-- -->
 
@@ -30,7 +30,7 @@ Today, the [ImageJ team](/about/contributors) is pleased to announce a new publi
 
 ## How to test the release candidate?
 
-Use the {% include bc path='Help | Update'%} command to update your [ImageJ](/about) installation.
+Use the {% include bc path='Help | Update'%} command to update your [ImageJ](/software/imagej) installation.
 
 Please send any comments to the [ImageJ mailing list](/help/mailing-lists). And thank you very much for trying ImageJ2!
 

@@ -17,7 +17,7 @@ Today, ImageJ has a flexible and extensible automatic import mechanism: the [Scr
 
 # How ScriptHeaders works
 
-ScriptHeaders are [SciJava](SciJava) plugins, so they can be distributed with any part of ImageJ or Fiji and will automatically be discovered.
+ScriptHeaders are [SciJava](/libs/scijava) plugins, so they can be distributed with any part of ImageJ or Fiji and will automatically be discovered.
 
 When using the script editor to make a script for a particular language, all ScriptHeaders compatible with that language will add their contents to the beginning of the script.
 

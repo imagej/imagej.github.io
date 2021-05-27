@@ -15,7 +15,7 @@ section: Extend:Development:Tools
 {% endcapture %}
 {% include img src='icons/maven' align='right' width=150 caption=maven-caption %}
 
-[ImageJ](/about), [Fiji](/software/fiji) and other [SciJava](SciJava) projects use [Maven](https://maven.apache.org/) for their project infrastructure.
+[ImageJ](/software/imagej), [Fiji](/software/fiji) and other [SciJava](/libs/scijava) projects use [Maven](https://maven.apache.org/) for their project infrastructure.
 
 Maven artifacts are published to the [SciJava Maven repository](/develop/project-management#maven).
 
@@ -114,7 +114,7 @@ There are two different sorts of Maven artifacts (i.e., JAR files): releases and
 
 So what if you have multiple *.jar* files you want to build in the same project? Then these need to live in their own subdirectories and there needs to be a common parent POM, a so-called *aggregator* or *multi-module* POM (only this POM needs to have the SciJava POM as parent, of course). {% include github org='imagej' repo='tutorials' tag='577286474be8399eb38d30d66cf0c35ee50bd929' path='pom.xml\#L47-L62' label='Here is an example' %}. Basically, it is adding the <packaging>`pom`</packaging> entry at the top, as well as some subdirectory names to the <modules> section.
 
-Note, however, that most projects of the [SciJava component collection](/develop/architecture) (e.g., [SciJava](SciJava), [ImgLib2](/libs/imglib2), [SCIFIO](/libs/scifio), [ImageJ](/about) and [Fiji](/software/fiji)) now structure each component as its own single-module project in its own Git repository, since using multi-module projects can complicate versioning.
+Note, however, that most projects of the [SciJava component collection](/develop/architecture) (e.g., [SciJava](/libs/scijava), [ImgLib2](/libs/imglib2), [SCIFIO](/libs/scifio), [ImageJ](/software/imagej) and [Fiji](/software/fiji)) now structure each component as its own single-module project in its own Git repository, since using multi-module projects can complicate versioning.
 
 ## Convention over configuration
 
@@ -122,7 +122,7 @@ There are many more things you can do with Maven, but chances are you will not n
 
 The simplicity of the *pom.xml* you need comes from the fact that Maven defines implicit defaults. It calls that *convention over configuration*. For many reasons, it is strongly recommended to stay with the defaults as much as possible.
 
-In the context of [SciJava](SciJava), you will most likely never write a *pom.xml* from scratch. You will rather more likely edit an existing one, possibly after having copied it. We recommend using the [ImageJ "Load and Display a Dataset" tutorial](https://github.com/imagej/tutorials/tree/master/maven-projects/load-and-display-dataset) as a starting point.
+In the context of [SciJava](/libs/scijava), you will most likely never write a *pom.xml* from scratch. You will rather more likely edit an existing one, possibly after having copied it. We recommend using the [ImageJ "Load and Display a Dataset" tutorial](https://github.com/imagej/tutorials/tree/master/maven-projects/load-and-display-dataset) as a starting point.
 
 # How to find a dependency's groupId/artifactId/version (GAV)?
 
@@ -140,7 +140,7 @@ If you need to depend on a library that is not present in either Maven Central o
 
 If there are no public repositories containing your dependency, you have two options:
 
--   If the dependency is itself an ImageJ plugin, consider [contributing it to Fiji](/software/fiji/contribution-requirements). Plugins distributed with Fiji are [made available as Maven artifacts](/software/fiji/contribution-requirements#maven-artifacts), and thus will benefit both users and developers.
+-   If the dependency is itself an ImageJ plugin, consider [contributing it to Fiji](/contribute/fiji). Plugins distributed with Fiji are [made available as Maven artifacts](/contribute/fiji#maven-artifacts), and thus will benefit both users and developers.
 
 <!-- -->
 

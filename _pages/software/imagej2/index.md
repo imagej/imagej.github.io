@@ -19,7 +19,7 @@ categories: [Software,ImageJ2,SciJava,Citable]
 
 See also [these presentation slides about ImageJ](/presentations/2015-09-03-imagej2-and-fiji/#/4)." %}
 
-ImageJ2 is a new version of [ImageJ](/about) for the next generation of multidimensional image data, with a focus on scientific imaging. Its central goal is to broaden the paradigm of ImageJ beyond the limitations of ImageJ 1.x, to support the next generation of multidimensional scientific imaging.
+ImageJ2 is a new version of [ImageJ](/software/imagej) for the next generation of multidimensional image data, with a focus on scientific imaging. Its central goal is to broaden the paradigm of ImageJ beyond the limitations of ImageJ 1.x, to support the next generation of multidimensional scientific imaging.
 
 To ensure backwards compatibility, ImageJ2 has been designed to fully integrate into the existing ImageJ user interface. This allows users to keep using ImageJ in familiar ways, while providing the ability to migrate toward more powerful new features as needed.
 
@@ -61,7 +61,7 @@ For further details, see the [SCIFIO](/libs/scifio) page.
 
 ### ImageJ2 is more than just an application
 
-ImageJ2 is also a collection of reusable software libraries built on [SciJava](SciJava), using a powerful plugin framework to facilitate rapid development and painless user customization.
+ImageJ2 is also a collection of reusable software libraries built on [SciJava](/libs/scijava), using a powerful plugin framework to facilitate rapid development and painless user customization.
 
 The following software component libraries form the core of ImageJ2:
 
@@ -69,7 +69,7 @@ The following software component libraries form the core of ImageJ2:
 -   [ImageJ Ops](/libs/imagej-ops) - An extensible framework for reusable image processing algorithms.
 -   [ImageJ Updater](/plugins/updater) - A mechanism to update individual plugins and libraries within ImageJ.
 -   [ImageJ Legacy](/libs/imagej-legacy) - Provides complete backwards compatibility with ImageJ 1.x.
--   [SciJava Common](/libs/scijava-common) - The core frameworks for plugins, modules and the application itself.
+-   [SciJava Common](/libs/scijava#scijava-common) - The core frameworks for plugins, modules and the application itself.
 
 See the [Architecture](/develop/architecture) page for further details.
 
@@ -88,7 +88,7 @@ For more details, see the [presentation from the 2010 ImageJ Conference](http://
 
 ## Funding
 
-ImageJ2 is funded from a variety of sources. See the [Funding](/about/funding) page for details.
+ImageJ2 is funded from a variety of sources. See the [Funding](/contribute/funding) page for details.
 
 ## Publications
 

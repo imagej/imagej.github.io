@@ -7,7 +7,7 @@ affiliation: Kitware
 github: thewtex
 ---
 
-Matt is co-maintainer of the integration components linking [ImageJ](/about) with [ITK](/software/itk), including:
+Matt is co-maintainer of the integration components linking [ImageJ](/software/imagej) with [ITK](/software/itk), including:
 
 -   {% include github org='imagej' repo='imagej-itk' label='imagej-itk' %}
 -   {% include github org='scifio' repo='scifio-itk-bridge' label='scifio-itk-bridge' %}

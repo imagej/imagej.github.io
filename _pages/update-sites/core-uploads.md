@@ -8,7 +8,7 @@ nav-title: Core Sites
 
 ## Introduction
 
-This tutorial explains how to upload changes to core [ImageJ](/about) and [Fiji](/software/fiji) libraries.
+This tutorial explains how to upload changes to core [ImageJ](/software/imagej) and [Fiji](/software/fiji) libraries.
 
 The typical workflow is:
 

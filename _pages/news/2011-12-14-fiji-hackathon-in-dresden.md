@@ -8,9 +8,9 @@ A great [Fiji](/software/fiji) hackathon took place between Saturday, December 1
 
 ## Topic
 
-The topic was Integration, including: [Fiji](/software/fiji) + [ImageJ2](/software/imagej2), [OMERO](/software/omero) + [ImageJ](/about), [KNIME](/software/knime) + [ImageJ](/about), [Icy](/software/icy) + [ImageJ](/about), [OMERO](/software/omero) + [Icy](/software/icy), [KNIME](/software/knime) + [OMERO](/software/omero) and more.
+The topic was Integration, including: [Fiji](/software/fiji) + [ImageJ2](/software/imagej2), [OMERO](/software/omero) + [ImageJ](/software/imagej), [KNIME](/software/knime) + [ImageJ](/software/imagej), [Icy](/software/icy) + [ImageJ](/software/imagej), [OMERO](/software/omero) + [Icy](/software/icy), [KNIME](/software/knime) + [OMERO](/software/omero) and more.
 
-This is the hackathon where the [SciJava](SciJava) idea was originally born!
+This is the hackathon where the [SciJava](/libs/scijava) idea was originally born!
 
 ## Participants
 

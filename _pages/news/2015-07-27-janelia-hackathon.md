@@ -12,7 +12,7 @@ From Sunday, July 27, 2015 through Friday, July 31, 2015, {% include person id='
     -   Will integrate it better into modern, powerful software tools including ImgLib2 and [BigDataViewer](/plugins/bdv).
     -   Big step toward breaking the limitations of [ImageJ1](/software/imagej1), in particular the 2GPix plane barrier and limited image types.
     -   Will make possible things like more transparent and rapid ability to work with multi-position and multi-angle datasets (mosaics, light sheet, etc.).
--   Stability of [ImageJ](/about) and Fiji—and other applications built on [SciJava](SciJava) components—is now easier to validate.
+-   Stability of [ImageJ](/software/imagej) and Fiji—and other applications built on [SciJava](/libs/scijava) components—is now easier to validate.
 
 ## Technical discussions
 

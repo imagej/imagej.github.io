@@ -22,7 +22,7 @@ A bug report is a reproducible set of steps describing a problem. They are a com
 
 ## TL;DR Summary
 
--   Report the issue using the [Report a Bug](/help/bugs) plugin (in the Help menu).
+-   Report the issue using the [Report a Bug](/discuss/bugs) plugin (in the Help menu).
 -   Provide a [minimal, complete, verifiable example](http://stackoverflow.com/help/mcve) (MCVE).
 -   [Describe what you already tried](http://whathaveyoutried.com/).
 -   [Put as much effort into your question](http://stackoverflow.com/help/how-to-ask) as you expect to be put into its response.
@@ -56,9 +56,9 @@ There are three critical components in an ImageJ bug report. If a report is miss
 
 ImageJ is a flexible and extensible platform, so the actual "ImageJ environment" can vary from user to user. A common misunderstanding in bug reports is to just report the version of the base ImageJ component (e.g. 1.49e). This is helpful, but says nothing about what plugins, update sites, etc... are in use.
 
-Errors can appear in any component of the software, and in some cases two plugins might work individually but have some negative interaction with each other. Thus a complete view of the ImageJ environment is imperative. Fiji currently ships with a [Report a Bug](/help/bugs) command; this will automatically populate the complete environment information and include it in the [bugzilla report](https://fiji.sc/bugzilla/); this bug-reporting functionality will be migrated to core ImageJ soon.
+Errors can appear in any component of the software, and in some cases two plugins might work individually but have some negative interaction with each other. Thus a complete view of the ImageJ environment is imperative. Fiji currently ships with a [Report a Bug](/discuss/bugs) command; this will automatically populate the complete environment information and include it in the [bugzilla report](https://fiji.sc/bugzilla/); this bug-reporting functionality will be migrated to core ImageJ soon.
 
-Note that if you file a bug manually or are enquiring to a [mailing list](/help/mailing-lists), you can still copy and paste the contents of the *"Useful information about your system"* text box from the [Report a Bug](/help/bugs) dialog. It will be greatly appreciated.
+Note that if you file a bug manually or are enquiring to a [mailing list](/help/mailing-lists), you can still copy and paste the contents of the *"Useful information about your system"* text box from the [Report a Bug](/discuss/bugs) dialog. It will be greatly appreciated.
 
 ### Minimal and precise steps to reproduce
 
@@ -101,7 +101,7 @@ Note: even if disabling SCIFIO fixes the issue for you, **please** still report 
 
 ### Disable problematic update sites
 
-The [Report a Bug](/help/bugs) dialog provides several pieces of critical information. Some of the most important being:
+The [Report a Bug](/discuss/bugs) dialog provides several pieces of critical information. Some of the most important being:
 
 -   Activated update sites
 -   Files not up-to-date

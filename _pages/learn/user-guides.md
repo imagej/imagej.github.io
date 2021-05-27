@@ -1,6 +1,7 @@
 ---
 title: User Guides
-section: Learn:ImageJ
+section: Learn:ImageJ Basics
+nav-links: true
 ---
 
 <div style="display: table">

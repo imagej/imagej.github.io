@@ -4,7 +4,7 @@ section: Extend:Development:Tools:IDEs
 ---
 
 This article explains how to install, configure and use Eclipse to develop
-[ImageJ](/about) [components](/develop/architecture#definitions) and
+[ImageJ](/software/imagej) [components](/develop/architecture#definitions) and
 [plugins](/plugins). Directions correspond to Eclipse 4.4 Luna, and may need
 adjustment for other versions.
 
@@ -57,7 +57,7 @@ Now update Eclipse's JRE to be JDK-aware:
 {%- include icon name="MacOS" width="32px" -%}
 <br/>
 
-**Understand Java 6 vs. Java 8.** Eclipse should work on macOS with no further configuration. However, we recommend reading the [macOS section of the FAQ](/help/faq#macos), as there are several Java-related issues on macOS.
+**Understand Java 6 vs. Java 8.** Eclipse should work on macOS with no further configuration. However, we recommend reading the [macOS section of the FAQ](/learn/faq#macos), as there are several Java-related issues on macOS.
 
 </div>
 <div id="linux" class="tabcontent" markdown="1">

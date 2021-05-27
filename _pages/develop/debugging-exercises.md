@@ -5,7 +5,7 @@ section: Extend:Development:Guides
 ---
 
  {% include notice icon="info" content='This page presents exercises for *software developers* to use for debugging ImageJ.  
-If you are a *user* looking to troubleshoot issues, see the [Troubleshooting](/help/troubleshooting) page.' %}
+If you are a *user* looking to troubleshoot issues, see the [Troubleshooting](/learn/troubleshooting) page.' %}
 
 [Debugging](/develop/debugging) is the art of determining the cause and/or location of a problem. The purpose of this guide is to provide developers practical, hands-on experience using a variety of debugging techniques to identify problems in code.
 
@@ -39,7 +39,7 @@ Learning to use debugging tools is, understandably, a burden: it's "one more thi
 
 ## Using this guide
 
-The goal of these exercises is not to *solve* the problems, but to build up your toolbox of troubleshooting techniques and develop your intuition for *when* to apply each technique. To keep exercises simple and focused, most do not explicitly use ImageJ. But once you learn how to [debug an external Java application](#exercise-4-imagej-plugins), you will have the knowledge to apply any of these techniques to a rich, and complex, application like [ImageJ](/about).
+The goal of these exercises is not to *solve* the problems, but to build up your toolbox of troubleshooting techniques and develop your intuition for *when* to apply each technique. To keep exercises simple and focused, most do not explicitly use ImageJ. But once you learn how to [debug an external Java application](#exercise-4-imagej-plugins), you will have the knowledge to apply any of these techniques to a rich, and complex, application like [ImageJ](/software/imagej).
 
 Because this project is intended to help new developers practice troubleshooting skills, you may find these examples contrived - indeed, they are. Exercises are kept simple and focused to allow practice of targeted techniques. If you have complete knowledge and understanding of the code there isn't really a need for troubleshooting: it is trivial to see why something is behaving incorrectly. Thus the source of these exercises is divided into `hidden` and `visible` packages. Users are strongly recommended to only inspect and set breakpoints from the `visible` classes. From a development point of view, consider the `hidden` package a 3rd-party library that you may not have control over, or access to the source code.
 
@@ -223,11 +223,11 @@ Note that the menu path of the plugin is specified in the class's annotation:
 @Plugin(type = Command.class,menuPath = "Plugins>Troubleshooting>E4 - Print ConsoleService")
 ```
 
-So, you can now run the `E4 - Print ConsoleService` command either via the menus or the [search bar](/learn#the-search-bar). You should get an exception:
+So, you can now run the `E4 - Print ConsoleService` command either via the menus or the [search bar](/learn/basics#the-search-bar). You should get an exception:
 
 ![](/media/develop/e4stacktrace.png)
 
-In order to connect Eclipse to ImageJ, we need to close our running instance and [launch ImageJ from the command line](/help/troubleshooting#launching-imagej-from-the-console), which allows us to set the [debug flag](/develop/debugging#attaching-to-imagej-instances), e.g.:
+In order to connect Eclipse to ImageJ, we need to close our running instance and [launch ImageJ from the command line](/learn/troubleshooting#launching-imagej-from-the-console), which allows us to set the [debug flag](/develop/debugging#attaching-to-imagej-instances), e.g.:
 ```
 ImageJ.app/ImageJ-linux64 --debugger=8000
 ```
@@ -372,7 +372,7 @@ We actually don't need any extra flags this time, as this technique isn't specif
 In this state, we can still send signals to the running application (for example - {% include key keys='ctrl|c' %} to [kill the app](https://www.howtogeek.com/howto/ubuntu/keyboard-shortcuts-for-bash-command-shell-for-ubuntu-debian-suse-redhat-linux-etc/)).
 
 {%- capture stacktrace-tip -%}
-When running a Java application, we can use {% include key keys='ctrl|backslash' %} ({% include key keys='ctrl|pause' %} on Windows) to print a stack trace. See the [print stack trace instructions](/help/troubleshooting#if-imagej-freezes-or-hangs) for more information.
+When running a Java application, we can use {% include key keys='ctrl|backslash' %} ({% include key keys='ctrl|pause' %} on Windows) to print a stack trace. See the [print stack trace instructions](/learn/troubleshooting#if-imagej-freezes-or-hangs) for more information.
 {%- endcapture -%}
 {% include notice icon="tip" content=stacktrace-tip %}
 
@@ -522,7 +522,7 @@ If a fix is unclear:
 
 -   Use any of the standard [channels for help](/help).
 
-Even if you can't contribute a fix, if you went through the effort of debugging - at the very least you should identify the problem, steps you took to debug, and potential fix(es) via a [bug report](/help/bugs) so that your effort is not lost.
+Even if you can't contribute a fix, if you went through the effort of debugging - at the very least you should identify the problem, steps you took to debug, and potential fix(es) via a [bug report](/discuss/bugs) so that your effort is not lost.
 
 ## See Also
 

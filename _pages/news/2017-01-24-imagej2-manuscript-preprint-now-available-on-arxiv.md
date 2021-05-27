@@ -8,7 +8,7 @@ A 36-page technical manuscript describing [ImageJ2](/software/imagej2) in depth 
 
 {% include link-banner url='http://arxiv.org/abs/1701.05940' %}
 
-This manuscript provides a technical overview of [ImageJ2](/software/imagej2), including in-depth description of the [architecture](/develop/architecture), with sections on [SciJava Common](/libs/scijava-common), [ImageJ Common](/libs/imagej-common), [SCIFIO](/libs/scifio), [ImageJ Ops](/libs/imagej-ops), [ImageJ Legacy](/libs/imagej-legacy), and the [ImageJ Updater](/plugins/updater), as well as a discussion on how ImageJ2 improves upon key areas of functionality, [extensibility](/develop/architecture#extensibility), [reproducibility](/develop/architecture#reproducible-builds), usability, performance, [compatibility](/libs/imagej-legacy) and [community](/help).
+This manuscript provides a technical overview of [ImageJ2](/software/imagej2), including in-depth description of the [architecture](/develop/architecture), with sections on [SciJava Common](/libs/scijava#scijava-common), [ImageJ Common](/libs/imagej-common), [SCIFIO](/libs/scifio), [ImageJ Ops](/libs/imagej-ops), [ImageJ Legacy](/libs/imagej-legacy), and the [ImageJ Updater](/plugins/updater), as well as a discussion on how ImageJ2 improves upon key areas of functionality, [extensibility](/develop/architecture#extensibility), [reproducibility](/develop/architecture#reproducible-builds), usability, performance, [compatibility](/libs/imagej-legacy) and [community](/help).
 
 ## Abstract
 

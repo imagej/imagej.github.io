@@ -27,13 +27,13 @@ First, you have to [download and build Fiji](/software/fiji/building-from-source
 
 ## Building Fiji
 
-Fiji is organized into a set of [Maven](/develop/maven) projects. For convenience and speed, there is [SciJava](SciJava)'s minimal Maven-lookalike [MiniMaven](/develop/minimaven) to build Fiji, but it is recommended to use an [Integrated Development Environment](/develop/ides), or at least real Maven.
+Fiji is organized into a set of [Maven](/develop/maven) projects. For convenience and speed, there is [SciJava](/libs/scijava)'s minimal Maven-lookalike [MiniMaven](/develop/minimaven) to build Fiji, but it is recommended to use an [Integrated Development Environment](/develop/ides), or at least real Maven.
 
 For details, please see [Downloading and Building Fiji From Source](/software/fiji/building-from-source). See also the [Supported Compilers](/develop/supported-compilers) page for more information.
 
 ## Testing
 
-It is strongly recommended to write regression tests (also known as *unit tests*). It is [easy](/software/fiji/contribution-requirements#regression-tests).
+It is strongly recommended to write regression tests (also known as *unit tests*). It is [easy](/contribute/fiji#regression-tests).
 
 Furthermore, it is highly recommended to write and run unit tests in an [Integrated Development Environment](/develop/ides) for efficient debugging. You may also want to measure the {% include wikipedia title="code coverage" %} of your tests.
 
@@ -41,7 +41,7 @@ At some point, you might want to debug whatever you wrote. There's a small [Debu
 
 ## Discussing code
 
-When you want to propose and/or discuss changes to some source code, the preferred way is to [submit a PR on GitHub](/about/contributing).
+When you want to propose and/or discuss changes to some source code, the preferred way is to [submit a PR on GitHub](/contribute).
 
 ## Contributing
 

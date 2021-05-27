@@ -8,7 +8,7 @@ This page documents includes for symbols commonly used on the site.
 
 There are includes for a predetermined list of frequently used symbols. If you
 would like to use a symbol not on the list, you can add it as an
-image file with the [img include](/help/editing/images) feature,
+image file with the [img include](/editing/images) feature,
 or encode it directly with HTML using Unicode.
 
 The site currently supports the following symbols as includes:

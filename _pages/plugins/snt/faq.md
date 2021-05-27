@@ -56,7 +56,7 @@ In the [Script Editor](/scripting/script-editor) ({% include bc path='File|New|S
 
 ### How can I improve SNT documentation?
 
-[Create an account](/help/editing#new-accounts) on this wiki. Once you have created one, you can edit contents at will. Don't be shy. All changes are undoable\!
+[Create an account](/editing#new-accounts) on this wiki. Once you have created one, you can edit contents at will. Don't be shy. All changes are undoable\!
 
 ## Tracing
 

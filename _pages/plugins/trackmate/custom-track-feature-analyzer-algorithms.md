@@ -25,7 +25,7 @@ This article is the second in the series dedicated to extending TrackMate with y
 
 In this article, we will create a **feature analyzer for tracks** that calculate numerical values for whole tracks. To make it simple, and also to answer the request of a colleague, we will make an analyzer that reports the location of the starting and ending points of a track.
 
-Actually, we will not learn much beyond what we saw previously. The only little change is that our analyzer will generate 6 numerical values instead of 1. We will use the [SciJava](SciJava) discovery mechanism as before, but just for the sake of it, we will introduce how to **disable** modules.
+Actually, we will not learn much beyond what we saw previously. The only little change is that our analyzer will generate 6 numerical values instead of 1. We will use the [SciJava](/libs/scijava) discovery mechanism as before, but just for the sake of it, we will introduce how to **disable** modules.
 
 ## Track analyzers
 
@@ -214,7 +214,7 @@ In the next article we will build a spot analyzer and complicate things a bit, b
 
 ## How to disable a module
 
-Suppose you have in your code tree a TrackMate module you wish not to use anymore. The trivial way would be to delete its class, but here is another one what allows us to introduce [SciJava](SciJava) plugin annotation parameters.
+Suppose you have in your code tree a TrackMate module you wish not to use anymore. The trivial way would be to delete its class, but here is another one what allows us to introduce [SciJava](/libs/scijava) plugin annotation parameters.
 
 The `@Plugin( type = TrackAnalyzer.class )` annotation accepts extra parameters on top of the `type` one. They all take the shape of a `key = value` pair, and a few of them allow the fine tuning of the TrackMate module integration.
 

@@ -6,7 +6,7 @@ section: Extend:Development:Guides
 
 {% include notice icon="info" content='This guide provides a technical overview of [plugins](/plugins), including how to **create new plugins**.  
 \* If you are interested in developing an **existing** plugin instead, see [Contributing to a plugin](/develop/improving-the-code).  
-\* If you have completed a plugin that you would like to **share with the community**, see [Distributing your plugins](/develop/distributing).
+\* If you have completed a plugin that you would like to **share with the community**, see [Distributing your plugins](/contribute/distributing).
 
 -   For instructions on plugin development for [ImageJ 1.x](/software/imagej1), see [Developing Plugins for ImageJ 1.x](/develop/ij1-plugins).' %}
 
@@ -30,7 +30,7 @@ For the complete "developer experience", you can go through the [GitHub Bootcamp
 
 Conceptually, a **plugin** is a new piece of functionality added to ImageJ. Nearly all aspects of ImageJ are *pluggable*, meaning plugins can be provided *ad hoc* to perform specified functions. The ImageJ core needs only know what general operations are available; then when the program is running, the options for how to complete a requested operation will be determined by which plugins are available at that time.
 
-Technically, ImageJ is built on the [SciJava Common](/libs/scijava-common) plugin framework. Within this framework, a plugin is a Java class [annotated](https://docs.oracle.com/javase/tutorial/java/annotations/index.html) with the {% include github org='scijava' repo='scijava-common' tag='scijava-common-2.47.0' source='org/scijava/plugin/Plugin.java' label='@Plugin' %} annotation. Classes annotated in this way are then automatically discovered and indexed at {% include wikipedia title='Run time (program lifecycle phase)' text='"runtime"' %}, when the application is launched by a user (as opposed to {% include wikipedia title='Compile time' text='"compile-time"' %}).
+Technically, ImageJ is built on the [SciJava Common](/libs/scijava#scijava-common) plugin framework. Within this framework, a plugin is a Java class [annotated](https://docs.oracle.com/javase/tutorial/java/annotations/index.html) with the {% include github org='scijava' repo='scijava-common' tag='scijava-common-2.47.0' source='org/scijava/plugin/Plugin.java' label='@Plugin' %} annotation. Classes annotated in this way are then automatically discovered and indexed at {% include wikipedia title='Run time (program lifecycle phase)' text='"runtime"' %}, when the application is launched by a user (as opposed to {% include wikipedia title='Compile time' text='"compile-time"' %}).
 
 ### Plugin types
 
@@ -176,7 +176,7 @@ There are always other options for saving or restoring your work—[stashing](ht
 -   You can [compile and build](http://maven.apache.org/archives/maven-1.x/start/quick-start.html) from the command line by running `mvn` from any project's top-level directory (any directory containing a `pom.xml`).
 -   Building a project results in a `jar` output in the `$PROJECT/target/` directory.
 -   For a more "real-world" experience, you can drop the `jar` you built into the `ImageJ.app/jars/` directory of an [ImageJ installation](/downloads) to try out any of the example plugins.
--   If you're not sure how to find your plugin within ImageJ, use the [search bar](/learn#the-search-bar)!
+-   If you're not sure how to find your plugin within ImageJ, use the [search bar](/learn/basics#the-search-bar)!
 -   You can also import each project into [Eclipse](/develop/eclipse)/[NetBeans](/develop/netbeans)/[IntelliJ IDEA](/develop/intellij) as a [maven project](https://books.sonatype.com/m2eclipse-book/reference/creating-sect-importing-projects.html).
 
 ### First steps
@@ -271,9 +271,9 @@ There are further guides available dedicated to developing particular types of p
 
 Once you have completed plugins and want to get them out to users, you can familiarize yourself with the articles on:
 
--   [Plugin distribution](/develop/distributing)
+-   [Plugin distribution](/contribute/distributing)
 -   [The development lifecycle](/develop/releasing)
--   [Core contribution requirements](/software/fiji/contribution-requirements)
+-   [Core contribution requirements](/contribute/fiji)
 
 As always, if you ever need assistance, [just ask](/help)!
 

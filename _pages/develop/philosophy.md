@@ -5,13 +5,13 @@ section: Extend:Development
 ---
 
 
-[ImageJ](/about), and the [SciJava](SciJava) component collection in general, is developed according to certain biases, which we describe here. This philosophy has evolved over a very long development history, reflecting many lessons learned over a course of decades.
+[ImageJ](/software/imagej), and the [SciJava](/libs/scijava) component collection in general, is developed according to certain biases, which we describe here. This philosophy has evolved over a very long development history, reflecting many lessons learned over a course of decades.
 
 ## Open source
 
 The SciJava ecosystem is strongly committed to [open source](Open_source) software development. But this software is not an [open source](Open_source) software *product*—it is an [open source](Open_source) software *project* following an [open source](Open_source) development *process*.
 
-ImageJ is funded by taxpayer money, so the project strives to be as transparent as possible. There are public [source code repositories](/develop/source), public [communication](/help#ways-to-get-help) channels, public [project management](/develop/project-management) resources, and of course, this [community editable website](/help/editing). As you can see, we love [doing it in public](http://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/)!
+ImageJ is funded by taxpayer money, so the project strives to be as transparent as possible. There are public [source code repositories](/develop/source), public [communication](/help#ways-to-get-help) channels, public [project management](/develop/project-management) resources, and of course, this [community editable website](/editing). As you can see, we love [doing it in public](http://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/)!
 
 ## Independent learning
 
@@ -19,13 +19,13 @@ ImageJ is funded by taxpayer money, so the project strives to be as transparent 
 
 The ImageJ and SciJava communities intend to foster not only scientific *independent thinking*, but just as importantly, *[independent learning](http://conference.imagej.net/2015/pariksheet-nanda/transcript.pdf)*. We want to not only [teach people how to fish](https://en.wiktionary.org/wiki/give_a_man_a_fish_and_you_feed_him_for_a_day;_teach_a_man_to_fish_and_you_feed_him_for_a_lifetime), but *teach them how to learn*.
 
-As such, responses to questions on [ImageJ public channels](/help#ways-to-get-help) will often begin with "What have you tried?" or "Can you make a minimal, complete, verifiable example?"—see the [Bug reporting best practices](/help/bugs#bug-reporting-best-practices) for details. A good rule of thumb for questioners is to "put as much effort into your question as you expect to be put into its reply"—and for responders, to cordially encourage this behavior in questioners. Responses may give detailed macro or script solutions to image analysis questions, but they will also often include details of *how such solutions were produced*, as well as *how they might be improved or tailored to other similar scenarios*.
+As such, responses to questions on [ImageJ public channels](/help#ways-to-get-help) will often begin with "What have you tried?" or "Can you make a minimal, complete, verifiable example?"—see the [Bug reporting best practices](/discuss/bugs#bug-reporting-best-practices) for details. A good rule of thumb for questioners is to "put as much effort into your question as you expect to be put into its reply"—and for responders, to cordially encourage this behavior in questioners. Responses may give detailed macro or script solutions to image analysis questions, but they will also often include details of *how such solutions were produced*, as well as *how they might be improved or tailored to other similar scenarios*.
 
 We are always looking for more ways to improve the software to meet this goal of encouraging independent learning. Write to the [ImageJ forum](/help) with your ideas!
 
 ## Extensibility
 
-[Extensibility](/develop/architecture#extensibility) is [ImageJ](/about)'s greatest strength. ImageJ is not just a software application—it is an extensible *platform* for the development of image [visualization](/plugin-index#visualization), [segmentation](/imaging/segmentation), [registration](/plugin-index#registration), and [analysis](/plugin-index#analysis) routines.
+[Extensibility](/develop/architecture#extensibility) is [ImageJ](/software/imagej)'s greatest strength. ImageJ is not just a software application—it is an extensible *platform* for the development of image [visualization](/plugin-index#visualization), [segmentation](/imaging/segmentation), [registration](/plugin-index#registration), and [analysis](/plugin-index#analysis) routines.
 
 Isaac Newton attributed his success to {% include wikipedia title='Standing on the shoulders of giants' text='standing on the shoulders of giants'%}. The [SciJava component collection](/develop/architecture)'s powerful [plugin](/plugins) mechanism and [open source](Open_source) software process codify that metaphor into the software itself. Not only are there many different types of plugins, but it is also possible to extend the system with your own new types of plugins. See the [Extensibility](/develop/architecture#extensibility) page for details.
 
@@ -33,7 +33,7 @@ Isaac Newton attributed his success to {% include wikipedia title='Standing on t
 
 One of the central goals of the [SciJava component collection](/develop/architecture) is to extend Java's mantra of "write once, run anywhere" in new directions: [ImageJ Ops](/libs/imagej-ops) for image processing algorithms, and [SCIFIO](/libs/scifio) for scientific image I/O.
 
-[ImageJ2](/software/imagej2) commands work not only in the [ImageJ](/about) user interface, but also from many [other applications](/plugin-index#related-software) in the [SciJava ecosystem](SciJava), including [CellProfiler](/software/cellprofiler), [OMERO](/software/omero), [KNIME](/software/knime) and [Alida](/software/alida).
+[ImageJ2](/software/imagej2) commands work not only in the [ImageJ](/software/imagej) user interface, but also from many [other applications](/plugin-index#related-software) in the [SciJava ecosystem](SciJava), including [CellProfiler](/software/cellprofiler), [OMERO](/software/omero), [KNIME](/software/knime) and [Alida](/software/alida).
 
 ## Compatibility
 
@@ -83,6 +83,6 @@ Pragmatically, one should note that there is not really a big difference in perf
 
 Java programs run without trouble and without recompiling on the major platforms: Windows, macOS and Linux. And plugins compiled on one platform also execute on all other platforms without recompiling. And profiling and debugging is easier with Java than with C++. And all programs/plugins double as libraries.
 
-So the true reason why we use Java is probably: it makes [ImageJ](/about) accessible.
+So the true reason why we use Java is probably: it makes [ImageJ](/software/imagej) accessible.
 
 See also [Isn't Java too slow?](http://loci.wisc.edu/faq/isnt-java-too-slow) and [Why is your software written in Java?](http://loci.wisc.edu/faq/why-java) from the LOCI FAQ.

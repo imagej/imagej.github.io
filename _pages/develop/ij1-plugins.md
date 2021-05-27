@@ -387,7 +387,7 @@ Please see also the developers tips how to [use ImageJ's API effectively](/devel
 See guides on:
 
 -   [Developing in Eclipse](/develop/eclipse#create-the-eclipse-projects)
--   [Plugin distribution](/develop/distributing)
+-   [Plugin distribution](/contribute/distributing)
 -   [Development lifecycle](/develop/releasing)
 -   [Debugging practice](/develop/debugging-exercises)
 -   [ImageJ1-ImageJ2 cheat sheet](ImageJ1-ImageJ2_cheat_sheet)

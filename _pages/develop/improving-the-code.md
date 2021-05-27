@@ -6,7 +6,7 @@ section: Extend:Development:Guides
 
 {% include notice icon="info" content='This guide discusses how to modify an already-existing [plugin](/plugins), and contribute your changes back.  
 \* If you are interested in developing a **new** plugin instead, see [Writing plugins](/develop/plugins).  
-\* If you have completed a plugin that you would like to **share with the community**, see [Distributing your plugins](/develop/distributing).' %}
+\* If you have completed a plugin that you would like to **share with the community**, see [Distributing your plugins](/contribute/distributing).' %}
 
 <div style="float: left; padding-right: 1em">
 </div>

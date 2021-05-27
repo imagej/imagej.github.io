@@ -12,7 +12,7 @@ This tutorial explains how to **set up a website to distribute your plugins**. I
 
 ## Rationale
 
-See the [Distribution](/develop/distributing) page for a discussion of the benefits of update sites and how they fit in to plugin development.
+See the [Distribution](/contribute/distributing) page for a discussion of the benefits of update sites and how they fit in to plugin development.
 
 ## Add your personal update site
 
