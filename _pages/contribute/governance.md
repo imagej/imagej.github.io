@@ -23,7 +23,7 @@ Because [open source](Open_source) software (OSS) is highly collaborative, it is
 The most common roles in OSS are:
 
 -   **Founders** are the people who originally launched the project.
--   **Leads** are responsible for making final decisions. In the [open source](Open_source) world these people are often referred to as [benevolent dictators](http://catb.org/~esr/writings/homesteading/homesteading/ar01s16.html). Changes with a serious impact on the community are typically [discussed on open channels](/help) first.
+-   **Leads** are responsible for making final decisions. In the [open source](Open_source) world these people are often referred to as [benevolent dictators](http://catb.org/~esr/writings/homesteading/homesteading/ar01s16.html). Changes with a serious impact on the community are typically [discussed on open channels](/discuss) first.
 -   **Maintainers** keep the project functional, fix bugs and make releases. They often make day to day decisions, and are typically involved in discussion with the project lead(s) regarding major decisions, although the lead has final decision-making authority.
 -   **Developers** are people who work on the project significantly or often. Typically they have direct push access to the source code. In some cases they make day to day decisions, depending on their experience and comfort level with the project.
 -   **Contributors** are people who help with the project either currently or in the past. They may participate occasionally or sporadically, and are typically not involved in project decision making.
@@ -39,7 +39,7 @@ Projects in the [SciJava component collection](/develop/architecture) define eac
 | Developer   | Adds new features or enhancements. Can be assigned to address feature requests.                                                    |
 | Debugger    | Fixes [bugs](//develop/project-management#issue-tracking). Can be assigned open [issues](//develop/project-management#issue-tracking) to solve.                                        |
 | Reviewer    | Reviews [patch submissions](/contribute).                                                                              |
-| Support     | Responds to [community questions](/help) and [issue reports](//develop/project-management#issue-tracking). Keeps the issue tracker organized. |
+| Support     | Responds to [community questions](/discuss) and [issue reports](//develop/project-management#issue-tracking). Keeps the issue tracker organized. |
 | Maintainer  | Merges [patch submissions](/contribute). Cuts releases.                                                                |
 | Contributor | Contributed code to the project. Does not imply any current participation or responsibility.                                       |
 

@@ -7,7 +7,7 @@ title: SoC 2009 Ideas
 
 Fiji is planning on applying to the Google Summer of Code 2009 program. As mentoring organizations have not yet been accepted, there is no guarantee that Fiji will be asked to participate. This page is to help plan proposed student projects. (UPDATE: Fiji [has been accepted](http://socghop.appspot.com/program/accepted_orgs/google/gsoc2009) as a mentoring organization. See the [Fiji GSoC organization page](http://socghop.appspot.com/org/show/google/gsoc2009/fiji).)
 
-This page contains project ideas culled from the Fiji user and developer community. You can get started by reading some project descriptions, and the mailing list thread(s) that spawned them. Also consider joining the developer mailing list, or finding us on IRC. Details can be found in [Help](/help).
+This page contains project ideas culled from the Fiji user and developer community. You can get started by reading some project descriptions, and the mailing list thread(s) that spawned them. Also consider joining the developer mailing list, or finding us on IRC. Details can be found in [Help](/discuss).
 
 Don't like a project you see here? Just throw your ideas at us, on the developer mailing list!
 
@@ -181,4 +181,4 @@ The project would consist of
 
 * [ImageJ's homepage](/)  
 * [Fiji's developer mailing list](http://groups.google.com/group/fiji-devel)  
-* [#fiji-devel channel](/help/chat#irc) on irc.freenode.net
+* [#fiji-devel channel](/discuss/chat#irc) on irc.freenode.net

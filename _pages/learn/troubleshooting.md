@@ -104,7 +104,7 @@ If the ImageJ window never appears after launching the program, the installation
 
 The easiest workaround is to [download](/downloads) a fresh copy of the software.
 
-If you are feeling investigative, you can try [launching ImageJ from the console](#launching-imagej-from-the-console) to get more information about why it is failing to start up. After doing that, you will probably see some information printed to the console, which you can paste online to somewhere like [Pastebin.com](http://pastebin.com/), and write to the [Community](/help) to ask for help deciphering it.
+If you are feeling investigative, you can try [launching ImageJ from the console](#launching-imagej-from-the-console) to get more information about why it is failing to start up. After doing that, you will probably see some information printed to the console, which you can paste online to somewhere like [Pastebin.com](http://pastebin.com/), and write to the [Community](/discuss) to ask for help deciphering it.
 
 ## Advanced debugging techniques
 

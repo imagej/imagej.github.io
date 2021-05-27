@@ -152,7 +152,7 @@ A brief list of some of the more useful plugin types to extend:
 -   {% include github org='scijava' repo='scijava-common' tag='scijava-common-2.47.0' source='org/scijava/module/process/PreprocessorPlugin.java' label='Input Preprocessors' %} give you control over the population of `@Parameters`.
 -   {% include github org='scijava' repo='scijava-common' tag='scijava-common-2.47.0' source='org/scijava/display/Display.java' label='Displays' %} control how UI elements are presented to users.
 
-If you know the function you want to modify but can't determine its location in the code, please [ask other developers.](/help) You're part of the community now!
+If you know the function you want to modify but can't determine its location in the code, please [ask other developers.](/discuss) You're part of the community now!
 
 ## Example projects
 
@@ -275,6 +275,6 @@ Once you have completed plugins and want to get them out to users, you can famil
 -   [The development lifecycle](/develop/releasing)
 -   [Core contribution requirements](/contribute/fiji)
 
-As always, if you ever need assistance, [just ask](/help)!
+As always, if you ever need assistance, [just ask](/discuss)!
 
   

@@ -7,7 +7,7 @@ title: SoC 2010 Ideas
 
 Fiji applied to the Google Summer of Code 2010 program, but was not accepted.
 
-This page contains project ideas culled from the Fiji user and developer community. You can get started by reading some project descriptions, and the mailing list thread(s) that spawned them. Also consider joining the developer mailing list, or finding us on IRC. Details can be found in [Help](/help).
+This page contains project ideas culled from the Fiji user and developer community. You can get started by reading some project descriptions, and the mailing list thread(s) that spawned them. Also consider joining the developer mailing list, or finding us on IRC. Details can be found in [Help](/discuss).
 
 If none of the listed projects suit you, but you have your own project idea instead, just throw your ideas at us, on the developer mailing list! (Of course, it should be related to Fiji...)
 
@@ -310,6 +310,6 @@ This project is about implementing a trainer for such tests, whose result is a m
 
 -   [Fiji's developer mailing list](http://groups.google.com/group/fiji-devel)
 -   [Weka project](http://www.cs.waikato.ac.nz/ml/weka/)
--   [\#fiji-devel channel](/help/chat#irc) on irc.freenode.net
+-   [\#fiji-devel channel](/discuss/chat#irc) on irc.freenode.net
 -   Other [Project ideas](Project_ideas)
 -   [more links](/software/fiji/links)

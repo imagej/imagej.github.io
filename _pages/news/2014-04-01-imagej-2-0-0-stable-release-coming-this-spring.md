@@ -19,7 +19,7 @@ We are targeting the following goals for a June 1 release of ImageJ 2.0.0:
 7.  Manuscript drafts for several software components of the [ImageJ software stack](/develop/architecture).
 8.  Cleanup and reconciliation of the [Trac](http://trac.imagej.net/) and [GitHub](https://github.com/imagej/imagej/issues) ImageJ issue trackers.
 
-If you have questions or ideas relating to any of these goals, we welcome your feedback on the [Mailing Lists](/help/mailing-lists)!
+If you have questions or ideas relating to any of these goals, we welcome your feedback on the [Mailing Lists](/discuss/mailing-lists)!
 
 P.S.: Not an April Fools joke. ;-)
 

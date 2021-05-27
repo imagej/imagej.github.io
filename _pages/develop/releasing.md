@@ -93,7 +93,7 @@ times to use a topic branch are:
   committing to that API.
 - **Unfinished.** The changes are unfinished.
 - **Regressing.** The changes leave the codebase in a \"worse\" state somehow.
-- **Discussion.** To solicit discussion from the [community](/help),
+- **Discussion.** To solicit discussion from the [community](/discuss),
   especially if the changes might be contentious.
 
 Conversely, some situations to push directly to main:
@@ -151,9 +151,9 @@ The [release-version.sh](https://github.com/scijava/scijava-scripts/blob/master/
 
 -   Install the `release-version.sh` script. The best way to do this is to clone the [SciJava-scripts](https://github.com/scijava/scijava-scripts) repository. That will give you access to other useful scripts and help keep them all up to date.
 -   (**optional**) If you want to easily use these scripts from any directory, you can [add the scijava-scripts folder to your PATH](http://askubuntu.com/q/97897).
--   Verify that your project's parent is pom-scijava version 17.1.1 or newer. If the parent version is too old, or is not pom-scijava, then upgrade it. Ask on the [forum](/help) if you need assistance.
+-   Verify that your project's parent is pom-scijava version 17.1.1 or newer. If the parent version is too old, or is not pom-scijava, then upgrade it. Ask on the [forum](/discuss) if you need assistance.
 -   If your component is to be released to the SciJava Maven repository, then add the following line to the properties section of your POM: <releaseProfiles>`deploy-to-imagej`</releaseProfiles>
--   Ensure the repository for your project is linked with a [Travis CI](/develop/travis) job that automatically builds and deploys Maven artifacts in response to changes on GitHub. If you're not sure if your project has this automation, ask for help on the [forum](/help).
+-   Ensure the repository for your project is linked with a [Travis CI](/develop/travis) job that automatically builds and deploys Maven artifacts in response to changes on GitHub. If you're not sure if your project has this automation, ask for help on the [forum](/discuss).
 
 ### Steps to release
 

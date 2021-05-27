@@ -51,7 +51,7 @@ If the file is not hosted by any other active update site you need to tell the u
 
 Deleting a file from the history is strongly not recommended, but if you *must* do so (e.g., for legal or privacy reasons):
 
--   If you using a [personal update site](/update-sites/setup#add-your-personal-update-site), then [contact an ImageJ administrator](/help) to have the offending file(s) removed.
+-   If you using a [personal update site](/update-sites/setup#add-your-personal-update-site), then [contact an ImageJ administrator](/discuss) to have the offending file(s) removed.
 -   If you are hosting your own update site, then you must delete all versions of the file from the file system, *and* edit the *db.xml.gz* file to remove the *<plugin>* entry as well as any *<dependency>* elements in other entries which reference it.
 
 ## What are the Terms of Service for personal update sites?
@@ -66,7 +66,7 @@ If you want to restrict which users can *access* your update site, please note t
 
 ## How do I delete my personal update site?
 
-If you want to completely remove your update site, [contact an ImageJ administrator](/help) to have the site removed.
+If you want to completely remove your update site, [contact an ImageJ administrator](/discuss) to have the site removed.
 
 ## Can I manipulate the files on my update site directly? (E.g., via WebDAV?)
 

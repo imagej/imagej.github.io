@@ -520,7 +520,7 @@ If a fix is identified:
 
 If a fix is unclear:
 
--   Use any of the standard [channels for help](/help).
+-   Use any of the standard [channels for help](/discuss).
 
 Even if you can't contribute a fix, if you went through the effort of debugging - at the very least you should identify the problem, steps you took to debug, and potential fix(es) via a [bug report](/discuss/bugs) so that your effort is not lost.
 

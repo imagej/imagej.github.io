@@ -166,4 +166,4 @@ In these docker images, you will find Fiji installed in the `/fiji` directory, w
 If you run into any problems or have questions about ImageJ + Docker, please use:
 
 -   [GitHub](https://github.com/fiji/dockerfiles/issues)
--   The [mailing lists](/help/mailing-lists)
+-   The [mailing lists](/discuss/mailing-lists)

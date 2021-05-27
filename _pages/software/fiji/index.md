@@ -38,7 +38,7 @@ Fiji is supported by several laboratories and institutions:
 
 Fiji is an [open source](Open_source) project, so everybody is welcome to contribute with plugins, patches, bug reports, tutorials, documentation, and artwork.
 
-If you'd like to share an idea or project, please [share them with the community](/help).
+If you'd like to share an idea or project, please [share them with the community](/discuss).
 
 ## Publication
 

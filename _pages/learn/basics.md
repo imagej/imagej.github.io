@@ -19,7 +19,7 @@ nav-links: true
 | [Techniques](/imaging)                     | [Image processing](/ij/docs/guide/146-29.html#toc-Section-29), [colocalization](/imaging/colocalization-analysis), [deconvolution](/imaging/deconvolution), [registration](/imaging/registration), [segmentation](/imaging/segmentation), [tracking](/imaging/tracking), [visualization](/imaging/visualization) and much more. |
 | [Plugins](/plugins)                        | A powerful mechanism for extending ImageJ in all kinds of useful ways. |
 | [Scripting](/scripting)                    | Automated, reproducible workflows via [scripts](/scripting) and [macros](/scripting/macro), including [headless on a remote server or cluster](/scripting/headless). |
-| [Forum](https://forum.image.sc/tag/imagej) | A vibrant, diverse, and helpful user [community](/help) that gives rise to insightful scientific exchanges. |
+| [Forum](https://forum.image.sc/tag/imagej) | A vibrant, diverse, and helpful user [community](/discuss) that gives rise to insightful scientific exchanges. |
 
 ImageJ's [extensibility](/develop/architecture#extensibility) is the root of its effectiveness: many advanced image-processing methods are not provided by the core application, but rather are [plugins](/plugins) written by specialists in specific fields, made available via [update sites](/update-sites).
 

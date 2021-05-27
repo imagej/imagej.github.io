@@ -57,7 +57,7 @@ That means that you do not have to run an installer; just download, unpack and s
 # Troubleshooting
 
   - Many common questions are answered on the [FAQ](/learn/faq) and [Troubleshooting](/learn/troubleshooting) pages.
-  - If you encounter bugs, please see the [Getting Help](/help) page.
+  - If you encounter bugs, please see the [Getting Help](/discuss) page.
 
 # Source code
 

@@ -333,7 +333,7 @@ The following ImageJ and Fiji components now require a minimum Java version of J
 
 It is the responsibility of individual update site maintainers to decide if and when they follow this migration process. The following [update sites](/update-sites) are known to cause conflicts when enabled with the **Java-8** update site. If your workflow requires components from these sites, we do not recommend enabling the **Java-8** update site.
 
-*Note:* if you are a maintainer of one of these update sites and need any guidance on how to update your project to comply with the **Java-8** update site, please contact us on the [ImageJ forum](/help).
+*Note:* if you are a maintainer of one of these update sites and need any guidance on how to update your project to comply with the **Java-8** update site, please contact us on the [ImageJ forum](/discuss).
 
 |                 |                                        |                                            |                                                                  |
 |-----------------|----------------------------------------|--------------------------------------------|------------------------------------------------------------------|
@@ -342,6 +342,6 @@ It is the responsibility of individual update site maintainers to decide if and 
 
 ## Feedback
 
-Please post any comments to the [ImageJ forum](/help). Thank you for the continued feedback and support!
+Please post any comments to the [ImageJ forum](/discuss). Thank you for the continued feedback and support!
 
   

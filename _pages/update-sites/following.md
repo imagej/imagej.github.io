@@ -39,7 +39,7 @@ After you have selected your desired update site(s), close the dialog. The list 
 
 {% include notice icon="warning" content='If an entry"s action is **Update It**, that means it is changing an existing plugin. This action is dangerous and can break other plugins, or ImageJ itself.  
 Ideally the maintainers of these sites would work with the core ImageJ maintainers to centralize important plugins.  
-When you find plugin conflicts between update sites, you can greatly help the community by [starting a discussion](/help) with the maintainers!' %}
+When you find plugin conflicts between update sites, you can greatly help the community by [starting a discussion](/discuss) with the maintainers!' %}
 
 ## Choose and download plugins
 

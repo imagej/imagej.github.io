@@ -56,7 +56,7 @@ I also have the following continuous priorities:
 1.  Project management tasks (e.g., managing [issues](/develop/project-management#issue-tracking))
 2.  Coordinating efforts and mentoring programmers at [LOCI](/orgs/loci)
 3.  Server maintenance and troubleshooting
-4.  User support: questions on the [Image.sc Forum](/help), [bug reports](/discuss/bugs), [pull requests](https://github.com/search?q=is%3Apr+is%3Aopen+user%3Afiji+user%3Aimagej+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve&type=Issues), email
+4.  User support: questions on the [Image.sc Forum](/discuss), [bug reports](/discuss/bugs), [pull requests](https://github.com/search?q=is%3Apr+is%3Aopen+user%3Afiji+user%3Aimagej+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve&type=Issues), email
 
 ## Recommended development tools
 

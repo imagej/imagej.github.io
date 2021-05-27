@@ -32,6 +32,6 @@ Today, the [ImageJ team](/people) is pleased to announce a new public release ca
 
 Use the {% include bc path='Help | Update'%} command to update your [ImageJ](/software/imagej) installation.
 
-Please send any comments to the [ImageJ mailing list](/help/mailing-lists). And thank you very much for trying ImageJ2!
+Please send any comments to the [ImageJ mailing list](/discuss/mailing-lists). And thank you very much for trying ImageJ2!
 
  

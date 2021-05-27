@@ -21,7 +21,7 @@ The ImageJ and SciJava communities intend to foster not only scientific *indepen
 
 As such, responses to questions on [ImageJ public channels](/help#ways-to-get-help) will often begin with "What have you tried?" or "Can you make a minimal, complete, verifiable example?"—see the [Bug reporting best practices](/discuss/bugs#bug-reporting-best-practices) for details. A good rule of thumb for questioners is to "put as much effort into your question as you expect to be put into its reply"—and for responders, to cordially encourage this behavior in questioners. Responses may give detailed macro or script solutions to image analysis questions, but they will also often include details of *how such solutions were produced*, as well as *how they might be improved or tailored to other similar scenarios*.
 
-We are always looking for more ways to improve the software to meet this goal of encouraging independent learning. Write to the [ImageJ forum](/help) with your ideas!
+We are always looking for more ways to improve the software to meet this goal of encouraging independent learning. Write to the [ImageJ forum](/discuss) with your ideas!
 
 ## Extensibility
 

@@ -1,4 +1,4 @@
-{% include notice icon="warning" content="This page describes a [plugin](/plugins) which is **_UNMAINTAINED_**! While the plugin and documentation remain available for use, no one is pledged to fix bugs or respond to support questions about it. You can try [asking for help from the community](/help), but your mileage may vary." %}
+{% include notice icon="warning" content="This page describes a [plugin](/plugins) which is **_UNMAINTAINED_**! While the plugin and documentation remain available for use, no one is pledged to fix bugs or respond to support questions about it. You can try [asking for help from the community](/discuss), but your mileage may vary." %}
 
 {%- comment -%}
 # vi:syntax=liquid

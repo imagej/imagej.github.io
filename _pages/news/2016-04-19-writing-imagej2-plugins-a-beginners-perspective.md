@@ -27,7 +27,7 @@ Also you may want to have a look at [Introduction\_into\_Macro\_Programming](/sc
 -   The [Development](/develop) page is the best portal for aspiring ImageJ developers.
 -   [ImageJ2](/software/imagej2) is available at: {% include github org='imagej' repo='imagej' label='imagej/imagej' %}
 -   [Fiji](/software/fiji) is available at: {% include github org='fiji' repo='fiji' label='fiji/fiji' %}
--   For additional help, use the [ImageJ Forum](/help).
+-   For additional help, use the [ImageJ Forum](/discuss).
 
 The search engines will point you to both `imagej.net` and `developer.imagej.net`. Avoid using `developer.imagej.net` for anything these days. It is a legacy site, in the process of being totally phased out. If you are looking for downloads, see the [/downloads](/downloads) page.
 

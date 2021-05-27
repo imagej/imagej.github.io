@@ -11,7 +11,7 @@ There are several mailing lists for community discussion and troubleshooting.
 
 Please [search the list archives](http://search.imagej.net/) first to find any previous discussions regarding your problem.
 
-If you have a natural allergy toward subscribing to mailing lists, there are [other ways to get help, too](/help).
+If you have a natural allergy toward subscribing to mailing lists, there are [other ways to get help, too](/discuss).
 
 ## Bugs
 

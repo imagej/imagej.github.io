@@ -12,7 +12,7 @@ To that end, we have the following goals:
 -   **Update to use [SCIFIO](/libs/scifio) for image I/O.** This will improve the flexibility of Stitching, allowing new multi-image formats to be supported via plugin, while still providing full [Bio-Formats](/formats/bio-formats) support. Additionally, many planned improvements in SCIFIO, such as [caching](https://github.com/scifio/scifio/issues/125), should improve interactions with the large datasets created by Stitching.
 -   **Conversion to ImageJ2 plugins.** This will involve breaking Stitching down to its functional components (e.g. computing overlap and fusion) and turning those components into parameterized IJ2 plugins. This will facilitate automatic input harvesting, and should greatly improve the potential for scripted Stitching. Furthermore, by integrating Stitching with the I/O plugin framework for IJ2, a simple {% include bc path="File|Open" %} call on part of a multi-image dataset should just "do the right thing" and open the stitched image. With coming legacy layer improvements, this will work in ImageJ as well!
 
-You can find an in-depth writeup on the use of the Stitching plugin on the [Stitching](/plugins/image-stitching) page. Additional questions are welcome on the [ImageJ mailing list](/help/mailing-lists).
+You can find an in-depth writeup on the use of the Stitching plugin on the [Stitching](/plugins/image-stitching) page. Additional questions are welcome on the [ImageJ mailing list](/discuss/mailing-lists).
 
 We're very excited to have deeper integration with Stitching, and would love to hear your use cases, wish lists and success stories!
 

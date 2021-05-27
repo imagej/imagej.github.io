@@ -77,6 +77,6 @@ The following software component libraries form the core of ImageJ2:
 
 You can either [download the .zip file](https://maven.scijava.org/service/local/repositories/releases/content/net/imagej/imagej/2.0.0-rc-2/imagej-2.0.0-rc-2-application.zip) or just update your Fiji installation: ImageJ 2.0.0-rc-2 is already part of Fiji.
 
-Please send all bug reports to the [ImageJ mailing list](/help/mailing-lists). And thank you very much for trying ImageJ2!
+Please send all bug reports to the [ImageJ mailing list](/discuss/mailing-lists). And thank you very much for trying ImageJ2!
 
  

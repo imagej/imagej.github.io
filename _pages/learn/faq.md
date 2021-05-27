@@ -431,7 +431,7 @@ As a complete example, if you were interested in the [2D Histogram](/plugins/2d-
 
 ## I have a problem that is not covered on this page!
 
-If you have an issue that is not mentioned here, you might want to [ask on one of the mailing lists, or via IRC](/help), or [enter a bug report](https://fiji.sc/bugzilla/).
+If you have an issue that is not mentioned here, you might want to [ask on one of the mailing lists, or via IRC](/discuss), or [enter a bug report](https://fiji.sc/bugzilla/).
 
 ## How to report issues?
 

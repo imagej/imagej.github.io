@@ -61,15 +61,15 @@ Unfortunately, there is not workaround/fix for this situation yet, except to use
 
 ### Problem with Intel graphics cards
 
-There is a known problem with older Windows drivers for some Intel graphics cards. Usually, this is fixed by installing new drivers. If you would like to help make ImageJ nicer by detecting faulty driver versions, please [contact us](/help).
+There is a known problem with older Windows drivers for some Intel graphics cards. Usually, this is fixed by installing new drivers. If you would like to help make ImageJ nicer by detecting faulty driver versions, please [contact us](/discuss).
 
 ### The 3D Viewer simply crashes
 
-Unfortunately, there are quite a large number of possible reasons. Please help us by [debugging the issues](/develop/debugging#debugging-java3d-issues) and [contacting us](/help) with the information. You can also [report a bug](/discuss/bugs), which will provide a lot of additional, potentially useful information.
+Unfortunately, there are quite a large number of possible reasons. Please help us by [debugging the issues](/develop/debugging#debugging-java3d-issues) and [contacting us](/discuss) with the information. You can also [report a bug](/discuss/bugs), which will provide a lot of additional, potentially useful information.
 
 ### Only a gray rectangle is shown by the 3D Viewer
 
-As with 3D Viewer crashes, there are quite a large number of possible reasons. Please help us by [debugging the issues](/develop/debugging#debugging-java3d-issues) and [contacting us](/help) with the information. You can also [report a bug](/discuss/bugs), which will provide a lot of addidtional, potentially useful information.
+As with 3D Viewer crashes, there are quite a large number of possible reasons. Please help us by [debugging the issues](/develop/debugging#debugging-java3d-issues) and [contacting us](/discuss) with the information. You can also [report a bug](/discuss/bugs), which will provide a lot of addidtional, potentially useful information.
 
 ## Publication
 

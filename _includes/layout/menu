@@ -203,10 +203,10 @@
             {% include menu/section-end %} <!-- Contribute/Editing the Wiki -->
           {% include menu/section-end %} <!-- Contribute -->
 
-          {% include menu/section title="Discuss" link="/help" %}
+          {% include menu/section title="Discuss" link="/discuss" %}
             <li><a href="/discuss/bugs">Reporting Issues</a></li>
-            <li><a href="/help/mailing-lists">Mailing Lists</a></li>
-            <li><a href="/help/chat">Chat</a></li>
+            <li><a href="/discuss/mailing-lists">Mailing Lists</a></li>
+            <li><a href="/discuss/chat">Chat</a></li>
           {% include menu/section-end %} <!-- Discuss -->
 
           {% include menu/section title="Explore" %}
