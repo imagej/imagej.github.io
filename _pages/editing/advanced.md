@@ -1,4 +1,5 @@
 ---
+mediawiki: NONE
 title: Advanced Editing
 section: Contribute:Editing the Wiki
 nav-links: true

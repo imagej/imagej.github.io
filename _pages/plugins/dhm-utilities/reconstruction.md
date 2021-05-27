@@ -1,4 +1,5 @@
 ---
+mediawiki: DHM_Utilities/Reconstruction
 title: DHM Utilities/Reconstruction
 categories: [Plugins]
 project: DHM Utilities

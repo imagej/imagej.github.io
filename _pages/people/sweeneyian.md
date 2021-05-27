@@ -1,4 +1,5 @@
 ---
+mediawiki: User:Sweeneyian
 title: Ian Sweeney
 
 name: Ian Sweeney

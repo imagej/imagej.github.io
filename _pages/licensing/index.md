@@ -1,4 +1,5 @@
 ---
+mediawiki: Licensing
 title: Licensing
 section: Contribute:Licensing
 ---

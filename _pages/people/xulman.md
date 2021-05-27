@@ -1,4 +1,5 @@
 ---
+mediawiki: User:Ulman
 title: Vladimír Ulman
 
 name: Vladimír Ulman

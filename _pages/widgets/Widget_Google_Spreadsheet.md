@@ -1,4 +1,5 @@
 ---
+mediawiki: Widget:Google_Spreadsheet
 title: Widget ›Google Spreadsheet
 categories: Widgets
 ---

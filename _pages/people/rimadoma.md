@@ -1,4 +1,5 @@
 ---
+mediawiki: User:Rdom
 title: Richard Domander
 name: Richard Domander
 forum: rimadoma

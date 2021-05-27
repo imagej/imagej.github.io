@@ -1,4 +1,5 @@
 ---
+mediawiki: User:ImagingBook
 title: Wilhelm Burger
 
 name: Wilhelm Burger

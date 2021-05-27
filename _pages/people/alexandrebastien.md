@@ -1,4 +1,5 @@
 ---
+mediawiki: User:Abastien
 title: Alexandre Bastien
 name: Alexandre Bastien
 gravatar: 5743ed66bde505e036e87e21fa14f381

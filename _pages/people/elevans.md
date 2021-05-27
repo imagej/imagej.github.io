@@ -1,4 +1,5 @@
 ---
+mediawiki: NONE
 title: Edward Evans
 
 name: Edward Evans

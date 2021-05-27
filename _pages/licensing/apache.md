@@ -1,4 +1,5 @@
 ---
+mediawiki: Apache
 title: Apache Software License
 section: Contribute:Licensing:Open Source
 ---

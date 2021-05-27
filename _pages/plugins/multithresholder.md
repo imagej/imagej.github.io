@@ -1,4 +1,5 @@
 ---
+mediawiki: MultiThresholder
 title: MultiThresholder
 categories: [Plugins,Segmentation]
 ---

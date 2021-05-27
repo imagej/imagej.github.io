@@ -1,4 +1,5 @@
 ---
+mediawiki: DHM_Utilities/Multi-Image_Landmark_Correspondences
 title: DHM Utilities/Multi-Image Landmark Correspondences
 categories: [Plugins]
 project: DHM Utilities

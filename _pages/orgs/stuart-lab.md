@@ -1,4 +1,5 @@
 ---
+mediawiki: User:StuartLab
 title: Stuart Lab
 ---
 

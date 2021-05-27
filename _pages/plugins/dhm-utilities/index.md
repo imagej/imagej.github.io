@@ -1,4 +1,5 @@
 ---
+mediawiki: DHM_Utilities
 title: DHM Utilities
 categories: [Plugins]
 ---

@@ -1,4 +1,5 @@
 ---
+mediawiki: User:Xlib
 title: Beat Münch
 name: Beat Münch
 github: bmuench

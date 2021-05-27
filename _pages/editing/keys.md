@@ -1,4 +1,5 @@
 ---
+mediawiki: NONE
 title: Keyboard Shortcuts
 section: Contribute:Editing the Wiki
 nav-links: true

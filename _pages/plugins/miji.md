@@ -1,4 +1,5 @@
 ---
+mediawiki: Miji
 title: Miji
 categories: [Tutorials,MATLAB]
 ---

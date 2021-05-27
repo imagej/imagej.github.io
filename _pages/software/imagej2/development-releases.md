@@ -1,4 +1,5 @@
 ---
+mediawiki: ImageJ2_development_releases
 title: ImageJ2 development releases
 categories: [Software]
 ---

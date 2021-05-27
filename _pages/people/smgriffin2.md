@@ -1,4 +1,5 @@
 ---
+mediawiki: NONE
 title: Sam Griffin
 
 name: Sam Griffin

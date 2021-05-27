@@ -1,4 +1,5 @@
 ---
+mediawiki: User:Pattersg
 title: George Patterson
 name: George Patterson
 github: pattersg

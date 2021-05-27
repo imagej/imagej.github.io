@@ -1,4 +1,5 @@
 ---
+mediawiki: User:NIST-ISG-MIST
 title: Michael Majurski
 name: Michael Majurski
 affiliation: National Institute of Standards and Technology | https://www.nist.gov/

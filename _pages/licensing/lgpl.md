@@ -1,4 +1,5 @@
 ---
+mediawiki: LGPL
 title: GNU Lesser General Public License
 section: Contribute:Licensing:Open Source
 ---

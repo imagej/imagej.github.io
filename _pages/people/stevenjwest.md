@@ -1,4 +1,5 @@
 ---
+mediawiki: User:Sjwest
 title: Steven J. West
 name: Steven J. West
 github: stevenjwest

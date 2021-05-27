@@ -1,4 +1,5 @@
 ---
+mediawiki: ImageJ2_Python_Scripts
 title: ImageJ2 Python Scripts
 categories: [Scripting,ImageJ2,Ops,SciJava]
 ---

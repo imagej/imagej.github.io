@@ -1,4 +1,5 @@
 ---
+mediawiki: User:Rueden
 title: Curtis Rueden
 name: Curtis Rueden
 website: https://restlesscoder.net/

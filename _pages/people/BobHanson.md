@@ -1,4 +1,5 @@
 ---
+mediawiki: NONE
 title: Bob Hanson
 name: Bob Hanson
 github: BobHanson

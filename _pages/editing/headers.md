@@ -1,4 +1,5 @@
 ---
+mediawiki: NONE
 title: Headers
 section: Contribute:Editing the Wiki
 nav-links: true

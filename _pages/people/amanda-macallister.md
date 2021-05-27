@@ -1,4 +1,5 @@
 ---
+mediawiki: User:Amacall
 title: Amanda MacAllister
 name: Amanda MacAllister
 affiliation:

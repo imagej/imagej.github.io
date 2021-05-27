@@ -1,4 +1,10 @@
 ---
+mediawiki:
+- ImageJ2/Documentation/Edit/Options/Compatibility
+- ImageJ2/Documentation/Edit/Options/Misc
+- ImageJ2/Documentation/Image/Overlay/OverlayManager
+- ImageJ2/Documentation/PointSetDemo
+- ImageJ2/Documentation/Process/Math/Equation
 title: ImageJ2 implementation notes
 ---
 

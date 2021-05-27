@@ -1,4 +1,5 @@
 ---
+mediawiki: GPL
 title: GNU General Public License
 section: Contribute:Licensing:Open Source
 ---

@@ -1,4 +1,5 @@
 ---
+mediawiki: NONE
 title: Louise Bloch
 
 name: Louise Bloch

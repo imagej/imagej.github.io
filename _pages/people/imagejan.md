@@ -1,4 +1,5 @@
 ---
+mediawiki: User:Eglinger
 title: Jan Eglinger
 name: Jan Eglinger
 gravatar: b620e8b241e2f729450c6adcaf0e205a

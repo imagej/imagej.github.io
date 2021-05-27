@@ -1,4 +1,5 @@
 ---
+mediawiki: BSD
 title: BSD Licenses
 section: Contribute:Licensing:Open Source
 ---

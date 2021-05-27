@@ -1,4 +1,5 @@
 ---
+mediawiki: User:Lentz
 title: Rick Lentz
 
 name: Rick Lentz

@@ -1,4 +1,5 @@
 ---
+mediawiki: NIH_Image
 title: NIH Image
 section: Explore:Software
 categories: [Software,Citable]

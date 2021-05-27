@@ -1,4 +1,5 @@
 ---
+mediawiki: User:Fosterl
 title: Les Foster
 name: Les Foster
 affiliation:

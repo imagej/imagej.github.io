@@ -1,4 +1,5 @@
 ---
+mediawiki: NONE
 title: Notices
 section: Contribute:Editing the Wiki
 nav-links: true

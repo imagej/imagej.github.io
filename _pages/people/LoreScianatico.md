@@ -1,4 +1,5 @@
 ---
+mediawiki: NONE
 title: Lorenzo Scianatico
 
 name: Lorenzo Scianatico

@@ -1,4 +1,5 @@
 ---
+mediawiki: NONE
 title: Citations
 section: Contribute:Editing the Wiki
 nav-links: true

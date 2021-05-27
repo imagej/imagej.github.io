@@ -1,4 +1,5 @@
 ---
+mediawiki: User:Kai
 title: Kai Uwe Barthel
 name: Kai Uwe Barthel
 github: kaibarthel

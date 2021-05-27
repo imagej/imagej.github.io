@@ -1,4 +1,5 @@
 ---
+mediawiki: User:Lthomas
 title: Laurent Thomas
 name: Laurent Thomas
 forum: LThomas

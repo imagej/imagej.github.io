@@ -1,4 +1,5 @@
 ---
+mediawiki: User:CrossSectionalAnalyzer
 title: Cross Sectional Analyzer
 name: Cross Sectional Analyzer
 source-url: https://github.com/mattrothman/cross-sectional-analysis

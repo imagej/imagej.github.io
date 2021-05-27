@@ -1,4 +1,5 @@
 ---
+mediawiki: Plugin_Index
 title: Plugin Index
 section: Extend
 ---

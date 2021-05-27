@@ -1,4 +1,5 @@
 ---
+mediawiki: NONE
 title: Pitfalls
 section: Contribute:Editing the Wiki
 nav-links: true

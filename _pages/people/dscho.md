@@ -1,4 +1,5 @@
 ---
+mediawiki: User:Schindelin
 title: Johannes Schindelin
 name: Johannes Schindelin
 gravatar: c2938f05cefad961fec000e7734c73ac

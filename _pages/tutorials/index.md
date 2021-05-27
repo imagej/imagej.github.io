@@ -1,4 +1,5 @@
 ---
+mediawiki: Category:Tutorials
 title: Tutorials
 section: Learn:ImageJ Basics
 ---

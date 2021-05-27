@@ -1,4 +1,5 @@
 ---
+mediawiki: NONE
 title: Organizations
 section: Explore
 ---

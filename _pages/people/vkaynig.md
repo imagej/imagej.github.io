@@ -1,4 +1,5 @@
 ---
+mediawiki: User:Verena
 title: Verena Kaynig-Fittkau
 name: Verena Kaynig-Fittkau
 github: vkaynig

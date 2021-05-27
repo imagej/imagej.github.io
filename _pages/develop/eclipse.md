@@ -1,4 +1,5 @@
 ---
+mediawiki: Developing_ImageJ_in_Eclipse
 title: Developing ImageJ in Eclipse
 section: Extend:Development:Tools:IDEs
 ---

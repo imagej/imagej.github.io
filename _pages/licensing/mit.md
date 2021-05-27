@@ -1,4 +1,5 @@
 ---
+mediawiki: MIT
 title: MIT License
 section: Contribute:Licensing:Open Source
 ---
