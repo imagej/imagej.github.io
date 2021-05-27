@@ -113,7 +113,7 @@ The student will have to research if there are existing Open Source components t
 
 ## Enhance Fiji's plugin manager
 
-Beyond the built-in commands, ImageJ provides the means to add user-developed plugins by implementing the PlugIn, PlugInFilter and PlugInFrame interfaces. Fiji uses ImageJ at the core and packages around it a very large number of plugins (see the [Plugins Menu](/plugins/fiji-menu)). The ideal application menus cannot contain hundreds of plugins: any specific user has no use for more than half of them, and their mere presence get on the way to adding other, user-desired plugins.
+Beyond the built-in commands, ImageJ provides the means to add user-developed plugins by implementing the PlugIn, PlugInFilter and PlugInFrame interfaces. Fiji uses ImageJ at the core and packages around it a very large number of plugins (see the [Plugins Menu](/plugin-index)). The ideal application menus cannot contain hundreds of plugins: any specific user has no use for more than half of them, and their mere presence get on the way to adding other, user-desired plugins.
 
 The core idea of this project is to generate a plugins manager, inspired in the excellent plugin manager of [JEdit](http://www.jedit.org), to enable/disable plugins.
 

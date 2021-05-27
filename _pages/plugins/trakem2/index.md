@@ -82,7 +82,7 @@ A. Use the built-in commands from the right-click menu, such as:
 -   "Adjust images - Enhance contrast layer-wise"
 -   "Adjust images - Set min and max layer-wise"
 
-B. Create a preprocessor script and set it to all images. For example, a [beanshell](/scripting/beanshell) script to run [CLAHE](/plugins/enhance-local-contrast-clahe) on each image. In the script, the <i>patch</i> and <i>imp</i> variables exist automatically, and represent the [Patch](https://fiji.sc/javadoc/ini/trakem2/display/Patch.html) instance and the [ImagePlus](https://javadoc.scijava.org/ImageJ1/ij/ImagePlus.html) instance that the Patch wraps, respectively.
+B. Create a preprocessor script and set it to all images. For example, a [beanshell](/scripting/beanshell) script to run [CLAHE](/plugins/clahe) on each image. In the script, the <i>patch</i> and <i>imp</i> variables exist automatically, and represent the [Patch](https://fiji.sc/javadoc/ini/trakem2/display/Patch.html) instance and the [ImagePlus](https://javadoc.scijava.org/ImageJ1/ij/ImagePlus.html) instance that the Patch wraps, respectively.
 
     import ij.IJ;
     IJ.run(imp, "Enhance Local Contrast (CLAHE)", "blocksize=127"
@@ -150,7 +150,7 @@ As for a graphics card buy the largest you can afford, both in computing power a
 
 {% include thumbnail src='/media/3d-viewer.jpg' title='3D Viewer: hardware-accelerated 3D visualization of image stacks as volumes, orthoslices and meshes. Above, secondary lineages of <i>Drosophila</i> third instar larval brain segmented in TrakEM2.'%} 
 {% include thumbnail src='/media/plugins/trakem2/trakem2-trees.png' title='The three TrakEM2 trees, as an interface for editing and visualizing the three internal TrakEM2 data structures.'%} 
-{% include thumbnail src='/media/plugins/trakem2/clahe-live-filter.jpg' title='Effect of the [CLAHE](/plugins/enhance-local-contrast-clahe) live filter in TrakEM2. Data with high dynamic range is displayed with perceptually boosted local contrast. [CLAHE parameters](/plugins/enhance-local-contrast-clahe) are relative to display pixels and, therefore, will not result in an effective bandpass when zooming out largely on statically pre-processed images.'%} 
+{% include thumbnail src='/media/plugins/trakem2/clahe-live-filter.jpg' title='Effect of the [CLAHE](/plugins/clahe) live filter in TrakEM2. Data with high dynamic range is displayed with perceptually boosted local contrast. [CLAHE parameters](/plugins/clahe) are relative to display pixels and, therefore, will not result in an effective bandpass when zooming out largely on statically pre-processed images.'%} 
 {% include thumbnail src='/media/plugins/trakem2/neuronal-arbors-1.png' title='Neuronal arbors reconstructed with TrakEM2 using the [treeline](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#trees) segmentation type.'%} 
 {% include thumbnail src='/media/plugins/trakem2/trakem2-arealists.png' title='Neuronal arbors from serial section electron microscopy reconstructed with TrakEM2 using the [manually segmentated data set](http://www.ini.uzh.ch/~acardona/data.html).'%} 
 {% include thumbnail src='/media/plugins/trakem2/trakem2-display-2.png' title='[TrakEM2](/plugins/trakem2) showing one section of a serial section transmission electron microscopy (ssTEM) data set, with numerous neuronal arbors reconstructed using [treelines](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#trees) and [connectors](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#connectors) (for synapses).'%} 

@@ -1,6 +1,6 @@
 To reference Java classes from {{include.lang}} you will need to import them.
 <br>
-{% include notice icon="warning" content='Unlike [ImageJ 1.x](/software/imagej1), [ImageJ2](/software/imagej2) (and therefore [Fiji](/fiji)) does not automatically import any classes. Consequently, scripts written for ImageJ 1.x will not run in ImageJ2 without adding the proper imports. The rationale is that the auto-import feature is not safe. What if two classes of the same name live in two different packages? Or if a new class is introduced that makes formerly unique names ambiguous? All of a sudden, all of the scripts that reference the original class no longer work. In short: auto-imports are dangerously imprecise.' %}
+{% include notice icon="warning" content='Unlike [ImageJ 1.x](/software/imagej1), [ImageJ2](/software/imagej2) (and therefore [Fiji](/software/fiji)) does not automatically import any classes. Consequently, scripts written for ImageJ 1.x will not run in ImageJ2 without adding the proper imports. The rationale is that the auto-import feature is not safe. What if two classes of the same name live in two different packages? Or if a new class is introduced that makes formerly unique names ambiguous? All of a sudden, all of the scripts that reference the original class no longer work. In short: auto-imports are dangerously imprecise.' %}
 <br>
 
 {%- comment -%}

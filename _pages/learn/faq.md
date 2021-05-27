@@ -385,8 +385,8 @@ The [ImageJ](/software/imagej), [Fiji](/software/fiji) and [ImageJ2](/software/i
 
 See also:
 
--   [an ImageJ2 blog post clarifying specifically the relationship between ImageJ and the version used in Fiji](/news/2011-10-05_-_The_relation_between_ImageJA_and_ImageJ)
--   [an ImageJ2 blog post illustrating that we move code from Fiji to ImageJ2 as appropriate](/news/2012-02-01_-_The_Fiji_Updater_has_been_integrated_into_the_ImageJ2_code_base)
+-   [an ImageJ2 blog post clarifying specifically the relationship between ImageJ and the version used in Fiji](/news/2011-10-05-the-relation-between-imageja-and-imagej)
+-   [an ImageJ2 blog post illustrating that we move code from Fiji to ImageJ2 as appropriate](/news/2012-02-01-the-fiji-updater-has-been-integrated-into-the-imagej2-code-base)
 
 In short: we all collaborate, but have slightly different focus, hence the different projects and names.
 
@@ -412,7 +412,7 @@ Please feel free to enhance the Wiki! We are thankful for all contributions!
 
 ## How do I find more information about Command X?
 
-The first place to check is this wiki. The [Fiji's Menu](/plugins/fiji-menu) page is especially helpful as it includes links to all the menu commands that ship as part of Fiji.
+The first place to check is this wiki. The [Fiji's Menu](/plugin-index) page is especially helpful as it includes links to all the menu commands that ship as part of Fiji.
 
 If documentation is missing for the command you're interested in, you can always view the source directly:
 

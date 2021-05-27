@@ -61,7 +61,7 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 <!-- -->
 
--   implemented [CLAHE](/plugins/enhance-local-contrast-clahe), a filter for adaptive local contrast enhancement (thanks to Stephan Saalfeld).
+-   implemented [CLAHE](/plugins/clahe), a filter for adaptive local contrast enhancement (thanks to Stephan Saalfeld).
 
 <!-- -->
 

@@ -4,7 +4,7 @@ title: 2010-08-12 - CLAHE speed up
 categories: [News]
 ---
 
-We implemented the fast version of the [Contrast Limited Adaptive Histogram Equalization](/plugins/enhance-local-contrast-clahe).
+We implemented the fast version of the [Contrast Limited Adaptive Histogram Equalization](/plugins/clahe).
 
 From user perspective, the only difference to the old implementation is a new checkbox in the parameter dialog to toggle between fast and slow version. Default is fast. In the faster implementation, the local contrast adjustment is not calculated for each single pixel independently but for adjacent cells of the given block-size only. The transfer function for locations in between is interpolated. This is the approach as described in the original publication for close to real time video enhancement.
 
