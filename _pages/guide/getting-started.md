@@ -245,7 +245,7 @@ Below is a list of the ImageJ [↓help](#index-Help-resources) resources that co
     [here](/ij/links.html) and [here](/ij/docs/examples/).
 7.  Mailing lists and forums:[↓](#index-Mailing-lists)
     1.  [**ImageJ**](/ij/list.html)  
-        General user and developer discussion about ImageJ. Can be accessed via the {% include bc path="Help | [Mailing List...↓](#sub:List-Archives...)" %} command. This list is also mirrored at [Nabble](http://imagej.1557.n6.nabble.com/) and [Gmane](http://dir.gmane.org/gmane.comp.java.imagej). You may find it easier to search and browse the list archives on these mirrors. Specially useful are the [RSS feeds](Feed___rss.gmane.org_topics_excerpts_gmane.comp.java.imagej) and the *[frames and threads](http://news.gmane.org/gmane.comp.java.imagej)* view provided by Gmane.
+        General user and developer discussion about ImageJ. Can be accessed via the {% include bc path="Help | [Mailing List...↓](#sub:List-Archives...)" %} command. This list is also mirrored at [Nabble](http://imagej.1557.n6.nabble.com/). You may find it easier to search and browse the list archives on the mirror.
     2.  [**Image.sc Forum**](https://forum.image.sc/tag/imagej)
         Scientific Community Image Forum, the official forum of many scientific imaging software projects including ImageJ.
 
