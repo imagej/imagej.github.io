@@ -9,6 +9,11 @@ test -d "$root" || {
   exit 1
 }
 
+echo "[Checking page generation]"
+"$bin/check-page-generation.sh"
+test $? -eq 0 && echo "--> Page generation looks good."
+
+echo
 echo "[Checking user IDs]"
 "$bin/check-user-ids.sh"
 test $? -eq 0 && echo "--> User IDs look good."
