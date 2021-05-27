@@ -54,7 +54,7 @@ Tiago Ferreira et al., (2016) doi:<a href="10.5281/zenodo.28838"></a>
 Pietzsch, T.; Saalfeld, S. & Preibisch, S. et al. (2015), "<a ref="http://www.nature.com/nmeth/journal/v12/n6/full/nmeth.3392.html">BigDataViewer: visualization and processing for large image data sets</a>", *Nature Methods* **12(6)**: 481-483, PMID 26020499 (<a href="http://scholar.google.com/scholar?cluster=2149722257070741970">on Google Scholar</a>).
 {% endif %}
 {% if include.content == "BigWarp" %}
-Bogovic, J. A.; Hanslovsky, P. & Wong, A. et al. (2016), "<a href="https://ieeexplore.ieee.org/document/7493463">Robust registration of calcium images by learned contrast synthesis</a>", *ISBI*: 1123-1126, doi:<a href="10.1109/ISBI.2016.7493463"></a>
+Bogovic, J. A.; Hanslovsky, P. & Wong, A. et al. (2016), "<a href="https://ieeexplore.ieee.org/document/7493463">Robust registration of calcium images by learned contrast synthesis</a>", *ISBI*: 1123-1126, doi:<a href="http://dx.doi.org/10.1109/ISBI.2016.7493463"></a>
 {% endif %}
 {% if include.content == "Bio-Formats" %}
 Linkert, M.; Rueden, C. T. & Allan, C. et al. (2010), "<a href="http://jcb.rupress.org/content/189/5/777.short">Metadata matters: access to image data in the real world</a>", *The Journal of cell biology* **189(5)**: 777-782, PMID 20513764 (<a href="http://scholar.google.com/scholar?cluster=17774693189715989612">on Google Scholar</a>).
@@ -66,13 +66,13 @@ Kankaanpää, P., Paavolainen, L., Tiitta, S., Karjalainen, M., Päivärinne, J.
 I. Arganda-Carreras, C. O. S. Sorzano, R. Marabini, J.-M. Carazo, C. Ortiz-de Solorzano, and J. Kybic, "<a href="http://cmp.felk.cvut.cz/ftp/articles/kybic/Arganda-CVAMIA2006.pdf">Consistent and Elastic Registration of Histological Sections using Vector-Spline Regularization</a>," *Lecture Notes in Computer Science*, Springer Berlin / Heidelberg, **volume 4241/2006**, CVAMIA: Computer Vision Approaches to Medical Image Analysis, pages 85-95, 2006.
 {% endif %}
 {% if include.content == "CellProfiler" %}
-McQuin, C.; Goodman, A. & Chernyshev, V. et al. (2018 Jul 3), "<a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2005970">CellProfiler 3.0: Next-generation image processing for biology</a>", *PLOS Biology* **16(7)**: e2005970, PMID 29969450, doi:<a href="10.1371/journal.pbio.2005970"></a> (<a href="http://scholar.google.com/scholar?cluster=9343647822273300584">on Google Scholar</a>).
+McQuin, C.; Goodman, A. & Chernyshev, V. et al. (2018 Jul 3), "<a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2005970">CellProfiler 3.0: Next-generation image processing for biology</a>", *PLOS Biology* **16(7)**: e2005970, PMID 29969450, doi:<a href="http://dx.doi.org/10.1371/journal.pbio.2005970"></a> (<a href="http://scholar.google.com/scholar?cluster=9343647822273300584">on Google Scholar</a>).
 {% endif %}
 {% if include.content == "CellProfiler2" %}
-Kamentsky, L.; Jones, T. R. & Fraser, A. et al. (2011 Feb 23), "<a href="http://bioinformatics.oxfordjournals.org/content/27/8/1179.short">Improved structure, function and compatibility for CellProfiler: modular high-throughput image analysis software</a>", *Bioinformatics* **27(8)**: 1179-1180, PMID 21349861, doi:<a href="10.1093/bioinformatics/btr095"></a> (<a href="http://scholar.google.com/scholar?cluster=16024072332807687249">on Google Scholar</a>).
+Kamentsky, L.; Jones, T. R. & Fraser, A. et al. (2011 Feb 23), "<a href="http://bioinformatics.oxfordjournals.org/content/27/8/1179.short">Improved structure, function and compatibility for CellProfiler: modular high-throughput image analysis software</a>", *Bioinformatics* **27(8)**: 1179-1180, PMID 21349861, doi:<a href="http://dx.doi.org/10.1093/bioinformatics/btr095"></a> (<a href="http://scholar.google.com/scholar?cluster=16024072332807687249">on Google Scholar</a>).
 {% endif %}
 {% if include.content == "CellProfiler3" %}
-Carpenter, A. E.; Jones, T. R. & Lamprecht, M. R. et al. (2006 Oct 31), "<a href="http://www.biomedcentral.com/1465-6906/7/R100">CellProfiler: image analysis software for identifying and quantifying cell phenotypes</a>", *Genome Biology* **7(10)**: R100, PMID 17076895, doi:<a href="10.1186/gb-2006-7-10-r100"></a> (<a href="http://scholar.google.com/scholar?cluster=11680963210515374635">on Google Scholar</a>).
+Carpenter, A. E.; Jones, T. R. & Lamprecht, M. R. et al. (2006 Oct 31), "<a href="http://www.biomedcentral.com/1465-6906/7/R100">CellProfiler: image analysis software for identifying and quantifying cell phenotypes</a>", *Genome Biology* **7(10)**: R100, PMID 17076895, doi:<a href="http://dx.doi.org/10.1186/gb-2006-7-10-r100"></a> (<a href="http://scholar.google.com/scholar?cluster=11680963210515374635">on Google Scholar</a>).
 {% endif %}
 {% if include.content == "ClearVolume" %}
 Royer, L. A.; Weigert, M. & Günther, U. et al. (2015), "<a href="http://www.nature.com/nmeth/journal/v12/n6/full/nmeth.3372.html">ClearVolume: open-source live 3D visualization for light-sheet microscopy</a>", *Nature Methods* **12(6)**: 480-481, PMID 26020498 (<a href="http://scholar.google.com/scholar?cluster=11063546308697568941">on Google Scholar</a>).
@@ -90,7 +90,7 @@ S. Saalfeld, R. Fetter, A. Cardona and P. Tomancak (2012) "Elastic volume recons
 Henriksson, J.; Hench, J. & Tong, Y. G. et al. (2013), "<a href="http://www.nature.com/nmeth/journal/v10/n6/full/nmeth.2478.html">Endrov: an integrated platform for image analysis</a>", *Nature methods* **10(6)**: 454-456, PMID 23722203 (<a href="http://scholar.google.com/scholar?cluster=16199569576064702120">on Google Scholar</a>).
 {% endif %}
 {% if include.content == "FigureJ" %}
-Mutterer, J. & Zinck, E. (2013), "<a href="http://www.nature.com/nmeth/journal/v10/n6/full/nmeth.2478.html">Quick‐and‐clean article figures with FigureJ</a>", *Journal of microscopy* **252(1)**: 89-91, PMID 23906423, doi:<a href="10.1111/jmi.12069"></a> (<a href="http://scholar.google.com/scholar?cluster=17498887135093741347">on Google Scholar</a>).
+Mutterer, J. & Zinck, E. (2013), "<a href="http://www.nature.com/nmeth/journal/v10/n6/full/nmeth.2478.html">Quick‐and‐clean article figures with FigureJ</a>", *Journal of microscopy* **252(1)**: 89-91, PMID 23906423, doi:<a href="http://dx.doi.org/10.1111/jmi.12069"></a> (<a href="http://scholar.google.com/scholar?cluster=17498887135093741347">on Google Scholar</a>).
 {% endif %}
 {% if include.content == "Fiji/Z-Spacing Correction" %}
 P. Hanslovsky, J. Bogovic, S. Saalfeld (2015) Post-acquisition image based compensation for thickness variation in microscopy section series, In International Symposium on Biomedical Imaging (ISBI'15), New York <a href="http://arxiv.org/abs/1411.6970">[3]</a>.
@@ -105,13 +105,13 @@ R. Fernandez and C. Moisy, “Fijiyama: a registration tool for 3D multimodal ti
 de Chaumont, Fabrice; Dallongeville, Stéphane & Chenouard, Nicolas et al. (2012), "<a href="http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2075.html">Icy: an open bioimage informatics platform for extended reproducible research</a>", *Nature methods* **9(7)**: 690-696, PMID 22743774 (<a href="http://scholar.google.com/scholar?cluster=8170444028478407032">on Google Scholar</a>).
 {% endif %}
 {% if include.content == "IJ-OpenCV" %}
-Domínguez, C.; Heras, J. & V., Pascual (2017), "<a href="http://www.sciencedirect.com/science/article/pii/S0010482517300823">IJ-OpenCV: Combining ImageJ and OpenCV for processing images in biomedicine</a>", *Computers in Biology and Medicine* **84**: 189-194, PMID 28390286, doi:<a href="10.1016/j.compbiomed.2017.03.027"></a> (<a href="http://scholar.google.com/scholar?cluster=15559722731653097818">on Google Scholar</a>).
+Domínguez, C.; Heras, J. & V., Pascual (2017), "<a href="http://www.sciencedirect.com/science/article/pii/S0010482517300823">IJ-OpenCV: Combining ImageJ and OpenCV for processing images in biomedicine</a>", *Computers in Biology and Medicine* **84**: 189-194, PMID 28390286, doi:<a href="http://dx.doi.org/10.1016/j.compbiomed.2017.03.027"></a> (<a href="http://scholar.google.com/scholar?cluster=15559722731653097818">on Google Scholar</a>).
 {% endif %}
 {% if include.content == "Imaging Stitching" %}
 S. Preibisch, S. Saalfeld, P. Tomancak (2009) "Globally optimal stitching of tiled 3D microscopic image acquisitions", *Bioinformatics*, **25(11)**:1463-1465.
 {% endif %}
 {% if include.content == "ImagePy" %}
-Wang, A.; Yan, X. & Wei, Z. (2018), "<a href="https://academic.oup.com/bioinformatics/article/34/18/3238/4989871">ImagePy: an open-source, Python-based and platform-independent software package for bioimage analysis</a>", *Bioinformatics* **34(18)**: 3238-3240, PMID 29718132, doi:<a href="10.1093/bioinformatics/bty313"></a> (<a href="http://scholar.google.com/scholar?cluster=2736756300866278703">on Google Scholar</a>).
+Wang, A.; Yan, X. & Wei, Z. (2018), "<a href="https://academic.oup.com/bioinformatics/article/34/18/3238/4989871">ImagePy: an open-source, Python-based and platform-independent software package for bioimage analysis</a>", *Bioinformatics* **34(18)**: 3238-3240, PMID 29718132, doi:<a href="http://dx.doi.org/10.1093/bioinformatics/bty313"></a> (<a href="http://scholar.google.com/scholar?cluster=2736756300866278703">on Google Scholar</a>).
 {% endif %}
 {% if include.content == "ImgLib" %}
 S. Preibisch, P. Tomancak, S. Saalfeld (2010) "Into ImgLib – Generic Image Processing in Java", *ImageJ User and Developer Conference* 2010 (1):72-76.
@@ -120,22 +120,22 @@ S. Preibisch, P. Tomancak, S. Saalfeld (2010) "Into ImgLib – Generic Image Pro
 Yoo, T.S.; Ackerman, M. J. & Lorensen, W. E. et al. (2002), "<a href="http://www.ncbi.nlm.nih.gov/pubmed/15458157">Engineering and algorithm design for an image processing API: a technical report on ITK-the insight toolkit</a>", *Studies in health technology and informatics*: 586-592, PMID 15458157 (<a href="http://scholar.google.com/scholar?cluster=10830740755452103531">on Google Scholar</a>).
 {% endif %}
 {% if include.content == "KNIME-Bioimage" %}
-Fillbrunn, A.; Dietz, C. & Pfeuffer, J. et al. (2017), "<a href="https://www.sciencedirect.com/science/article/pii/S0168165617315651">KNIME for reproducible cross-domain analysis of life science data</a>", *Journal of Biotechnology* **261**: 149-156, PMID 28757290, doi:<a href="10.1016/j.jbiotec.2017.07.028"></a> (<a href="http://scholar.google.com/scholar?cluster=4888783905320661370">on Google Scholar</a>).
+Fillbrunn, A.; Dietz, C. & Pfeuffer, J. et al. (2017), "<a href="https://www.sciencedirect.com/science/article/pii/S0168165617315651">KNIME for reproducible cross-domain analysis of life science data</a>", *Journal of Biotechnology* **261**: 149-156, PMID 28757290, doi:<a href="http://dx.doi.org/10.1016/j.jbiotec.2017.07.028"></a> (<a href="http://scholar.google.com/scholar?cluster=4888783905320661370">on Google Scholar</a>).
 {% endif %}
 {% if include.content == "KNIP" %}
-Dietz, C. & Berthold, M. R. (2016), "<a href="http://link.springer.com/chapter/10.1007/978-3-319-28549-8_7">KNIME for Open-Source Bioimage Analysis: A Tutorial</a>", *Focus on Bio-Image Informatics*, Springer International Publishing, pp. 179-197, PMID 27207367, doi:<a href="10.1007/978-3-319-28549-8_7"></a> (<a href="http://scholar.google.com/scholar?cluster=14928574402009943115">on Google Scholar</a>).
+Dietz, C. & Berthold, M. R. (2016), "<a href="http://link.springer.com/chapter/10.1007/978-3-319-28549-8_7">KNIME for Open-Source Bioimage Analysis: A Tutorial</a>", *Focus on Bio-Image Informatics*, Springer International Publishing, pp. 179-197, PMID 27207367, doi:<a href="http://dx.doi.org/10.1007/978-3-319-28549-8_7"></a> (<a href="http://scholar.google.com/scholar?cluster=14928574402009943115">on Google Scholar</a>).
 {% endif %}
 {% if include.content == "KNIME" %}
 Berthold, M. R.; Cebron, N. & Dill, F. et al. (2007), "KNIME: The Konstanz Information Miner", *Studies in Classification, Data Analysis, and Knowledge Organization* (GfKL), Springer
 {% endif %}
 {% if include.content == "LungJ" %}
-Wollatz, Lasse; Johnston, Steven J. & Lackie, Peter M. et al. (2016), LungJ v0.5.1, University of Southampton, doi:<a href="10.5258/SOTON/401280"></a>
+Wollatz, Lasse; Johnston, Steven J. & Lackie, Peter M. et al. (2016), LungJ v0.5.1, University of Southampton, doi:<a href="http://dx.doi.org/10.5258/SOTON/401280"></a>
 {% endif %}
 {% if include.content == "MaMuT" %}
 Wolff, C.; Tinevez, JY. & Pietzsch, T. et al. (2018), "<a href="https://elifesciences.org/articles/34410">Multi-view light-sheet imaging and tracking with the MaMuT software reveals the cell lineage of a direct developing arthropod limb.</a>", eLife
 {% endif %}
 {% if include.content == "MATLAB Scripting" %}
-Hiner, M. C.; Rueden, C. R. & Eliceiri, K. W. (2016), "<a href="http://bioinformatics.oxfordjournals.org/content/early/2016/10/25/bioinformatics.btw681">ImageJ-MATLAB: a bidirectional framework for scientific image analysis interoperability</a>", *Bioinformatics*, PMID 27797782, doi:<a href="10.1093/bioinformatics/btw681"></a>.
+Hiner, M. C.; Rueden, C. R. & Eliceiri, K. W. (2016), "<a href="http://bioinformatics.oxfordjournals.org/content/early/2016/10/25/bioinformatics.btw681">ImageJ-MATLAB: a bidirectional framework for scientific image analysis interoperability</a>", *Bioinformatics*, PMID 27797782, doi:<a href="http://dx.doi.org/10.1093/bioinformatics/btw681"></a>.
 {% endif %}
 {% if include.content == "MBF Plugin Collection" %}
 Collins, T. J. (2007). "<a href="https://medicine.osu.edu/neuroscience/Documents/Biotechniques%20ImageJ%20overview%202013.pdf">ImageJ for microscopy</a>". *Biotechniques*, 43(1 Suppl), 25-30.
@@ -150,10 +150,10 @@ Yang, S. J.; Berndl, M. & Ando, D. M. et al. (2018), "<a href="https://doi.org/1
 Möller, B.; Glaß, M. & Misiak, D. et al. (2016), "<a href="http://doi.org/10.5334/jors.103">MiToBo - A Toolbox for Image Processing and Analysis</a>", J*ournal of Open Research Software* **4(1)**: e17.
 {% endif %}
 {% if include.content == "MorphoLibJ" %}
-Legland, D.; Arganda-Carreras, I. & Andrey, P. (2016), "<a href="https://doi.org/10.1093/bioinformatics/btw413">MorphoLibJ: integrated library and plugins for mathematical morphology with ImageJ</a>", *Bioinformatics* (Oxford Univ Press) **32(22)**: 3532-3534, PMID 27412086, doi:<a href="10.1093/bioinformatics/btw413"></a> (<a href="http://scholar.google.com/scholar?cluster=15755915495942198773">on Google Scholar</a>).
+Legland, D.; Arganda-Carreras, I. & Andrey, P. (2016), "<a href="https://doi.org/10.1093/bioinformatics/btw413">MorphoLibJ: integrated library and plugins for mathematical morphology with ImageJ</a>", *Bioinformatics* (Oxford Univ Press) **32(22)**: 3532-3534, PMID 27412086, doi:<a href="http://dx.doi.org/10.1093/bioinformatics/btw413"></a> (<a href="http://scholar.google.com/scholar?cluster=15755915495942198773">on Google Scholar</a>).
 {% endif %}
 {% if include.content == "Morphological Segmentation" %}
-Legland, D.; Arganda-Carreras, I. & Andrey, P. (2016), "<a href="https://doi.org/10.1093/bioinformatics/btw413">MorphoLibJ: integrated library and plugins for mathematical morphology with ImageJ</a>", *Bioinformatics* (Oxford Univ Press) **32(22)**: 3532-3534, PMID 27412086, doi:<a href="10.1093/bioinformatics/btw413"></a> (<a href="http://scholar.google.com/scholar?cluster=15755915495942198773">on Google Scholar</a>).
+Legland, D.; Arganda-Carreras, I. & Andrey, P. (2016), "<a href="https://doi.org/10.1093/bioinformatics/btw413">MorphoLibJ: integrated library and plugins for mathematical morphology with ImageJ</a>", *Bioinformatics* (Oxford Univ Press) **32(22)**: 3532-3534, PMID 27412086, doi:<a href="http://dx.doi.org/10.1093/bioinformatics/btw413"></a> (<a href="http://scholar.google.com/scholar?cluster=15755915495942198773">on Google Scholar</a>).
 {% endif %}
 {% if include.content == "Multi-Template Matching" %}
 Thomas, L.S.V., Gehrig, J. "Multi-template matching: a versatile tool for object-localization in microscopy images." *BMC Bioinformatics* **21**, 44 (2020). doi:<a href="https://doi.org/10.1186/s12859-020-3363-7"></a>
