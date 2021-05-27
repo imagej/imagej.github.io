@@ -83,9 +83,24 @@ the javascript only populates fields when they are empty.
   {%- endcapture -%}
 {%- endif -%}
 
+{%- assign name-or-loading = name -%}
+{%- unless name-or-loading -%}
+  {%- capture name-or-loading -%}
+    {%- if artifact -%}
+      Loading...
+    {%- endif -%}
+  {%- endcapture -%}
+{%- endunless -%}
+
 {%- capture header -%}
 <span id="statbox-image">{{image}}</span>
-<span id="statbox-name">{%- if website -%} <a href="{{website}}">{{name}}</a> {%- else -%} {{name}} {%- endif -%}</span>
+<span id="statbox-name">
+  {%- if website -%}
+    <a href="{{website}}">{{name-or-loading}}</a>
+  {%- else -%}
+    {{name-or-loading}}
+  {%- endif -%}
+</span>
 {%- if affiliation -%}
 <p id="statbox-affiliation">
 {%- for a in affiliation -%}
