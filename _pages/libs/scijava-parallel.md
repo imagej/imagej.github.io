@@ -40,7 +40,7 @@ The methods cause parallel execution of specified command for parameters. A size
 
 <!-- -->
 
--   [FSTRPCParadigm](FSTRPCParadigm) in the module [scijava-parallel-fst](https://github.com/fiji-hpc/scijava-parallel-fst) executes commands in different instances of running Fiji. Fiji can run in a different computer or an HPC cluster. Communication is realized through TCP/IP connection and data are serialized by fst library [fst](https://github.com/RuedigerMoeller/fast-serialization).
+-   [FSTRPCParadigm](/FSTRPCParadigm) in the module [scijava-parallel-fst](https://github.com/fiji-hpc/scijava-parallel-fst) executes commands in different instances of running Fiji. Fiji can run in a different computer or an HPC cluster. Communication is realized through TCP/IP connection and data are serialized by fst library [fst](https://github.com/RuedigerMoeller/fast-serialization).
 
 <!-- -->
 
@@ -61,7 +61,7 @@ Profiles can be:
 
 ### Profile creation and editing
 
-During the creation of a profile a user specifies the implementation of an associated paradigm - [FSTRPCParadigm](FSTRPCParadigm) is selected in the screenshot - paradigm manager. Paradigm managers are supplied by parallelization paradigm providers together with parallelization paradigm implementations. Paradigm managers manage resources used by a parallelization paradigm implementation. There are three paradigm managers available that differ in the location where they start a server handling requests:
+During the creation of a profile a user specifies the implementation of an associated paradigm - [FSTRPCParadigm](/FSTRPCParadigm) is selected in the screenshot - paradigm manager. Paradigm managers are supplied by parallelization paradigm providers together with parallelization paradigm implementations. Paradigm managers manage resources used by a parallelization paradigm implementation. There are three paradigm managers available that differ in the location where they start a server handling requests:
 
 -   *Inprocess FSTPRC* - in an actual running instance of Fiji;
 -   *Local FSTRPC* - on a local machine as an another process;

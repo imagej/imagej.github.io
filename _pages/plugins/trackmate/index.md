@@ -107,7 +107,6 @@ https://github.com/fiji/plugins/trackmate/releases
 -   [TrackScheme](/plugins/trackmate/trackscheme): the tool for the visualization, editing and analysis of tracks.
 -   [Manual tracking with TrackMate](/plugins/trackmate/manual-tracking)
 -   [Manual editing of tracks using TrackMate](/plugins/trackmate/manual-track-editing) shows how to manually curate and edit tracking results.
--   [Track analysis using TrackMate](/plugins/trackmate/track-analysis)
 -   [TrackMate Algorithms](/plugins/trackmate/algorithms) details and documents the automated segmentation algorithms, particle-linking algorithms, etc.. currently implemented in TrackMate.
 -   [Using TrackMate with MATLAB](/plugins/trackmate/analyzing-results-with-matlab) documents the [MATLAB](/scripting/matlab) functions shipped with Fiji that allows importing data generated with TrackMate into [MATLAB](/scripting/matlab).
 -   [TrackMate Performance](/plugins/trackmate/performance) reports various measures of the performance of its components. Performance reports include execution time and memory usage.

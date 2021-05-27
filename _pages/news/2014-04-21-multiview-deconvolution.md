@@ -18,7 +18,7 @@ The [**documentation**](/plugins/multi-view-deconvolution) for the Fiji plugin c
 
 Finally, a Figure from the paper showing that multi-view deconvolution matters!
 
-[700px](FIle_MV_deconv_examples.jpg)
+[700px](mv-deconv-examples.jpg)
 
 This is probably not the last answer to SPIM data deconvolution. We are looking forward to the input from the computer vision community to this hard problem.
 

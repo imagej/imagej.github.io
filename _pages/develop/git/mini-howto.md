@@ -57,7 +57,7 @@ will pick up on all changes, rebuild what needs to be rebuilt, and run Fiji.
 
 # Making changes
 
-You can [add/modify plugins](Adding_plugins_with_source), and test by running "make".
+You can [add/modify plugins](/develop/plugins), and test by running "make".
 
 Once you are happy with your changes, you should inspect your changes with
 

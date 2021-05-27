@@ -20,7 +20,7 @@ Click the links below to find more about each tool.
 5.  \[ [SEM Hitachi metadata scale](SEM_Hitachi_metadata_scale) \] Upcoming soon...
 6.  \[ [Image feature measurement annotation](/plugins/image-annotation) \] measures and mark the size of features. It annotates the length of line tool in a calibrated image and export measurement results.
 7.  \[ [Flat field correction](Flat_field_correction) \] Applies flat filed correction to a folder of images for large area mapping to mitigate chess pattern after stitching. (Page in preparation)
-8.  \[ [ TEM .ser .dm3 folder export](/plugins/tia-.ser-folder-export) \] This tool convert TIA EM image .ser files and Gatan .dm3 files in a folder to TIFF format.
+8.  \[ [ TEM .ser .dm3 folder export](/plugins/tia-ser-folder-export) \] This tool convert TIA EM image .ser files and Gatan .dm3 files in a folder to TIFF format.
 
 # **Installation**
 

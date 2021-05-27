@@ -43,11 +43,11 @@ This option can be used to open all TIFF files in a directory, and the directori
 
 This option can be used to process a stack of single photon event data (images containing single photon events), and create one high resolution output image. This output image might optionally be improved by 'Threshold Photon Count' and/or 'Reconstruct Image'. There are 3 different methods to choose from to calculate the coordinates of the exact midpoints of the light blobs in the images. The available calculations modes are:
 
-[Simple](Simple) uses the lightest pixels found as coordinates for the output image.
+**Simple** uses the lightest pixels found as coordinates for the output image.
 
-[Accurate](Accurate) improves on 'Simple' by also checking the pixels surrounding the lightest pixel to calculate a more accurate midpoint.
+**Accurate** improves on 'Simple' by also checking the pixels surrounding the lightest pixel to calculate a more accurate midpoint.
 
-[Sub-pixel resolution](Sub-pixel_resolution) uses the accurate method to calculate the midpoints but creates an output image of a higher resolution (height \* 2 and width \* 2). This requires more input images and bigger light blobs in those input images to work successfully.
+**Sub-pixel resolution** uses the accurate method to calculate the midpoints but creates an output image of a higher resolution (height \* 2 and width \* 2). This requires more input images and bigger light blobs in those input images to work successfully.
 
 **Threshold Photon Count**
 
@@ -59,12 +59,12 @@ This option can be used to reconstruct the output image created by 'Process Phot
 
 The original image is blurred and random changes are made. A check is performed to test whether the random changes have improved the image. This check includes testing for the log likelihood of the new image, and the sparsity of the new image. If there are very few possible modifications left that could improve the image, the method for changing random pixels is altered, so the modifications become less extreme and the image is fine tuned. Parameter explanation and usage:
 
-[Dark count rate](Dark_count_rate) per pixel of the camera used to record the data.
+**Dark count rate** per pixel of the camera used to record the data.
 
-[Regularization factor](Regularization_factor) indicates how important the log likelihood and image sparsity are compared to one another. A higher regularization factor results in a greater dependency of image sparsity, and a lower regularization factor makes the log likelihood more important.
+**Regularization factor** indicates how important the log likelihood and image sparsity are compared to one another. A higher regularization factor results in a greater dependency of image sparsity, and a lower regularization factor makes the log likelihood more important.
 
-[Modification threshold](Modification_threshold) is the lower boundary for percentage of modifications that improve the image. In other words, how far the algorithm is proceeded. A higher percentage makes the algorithm quit earlier and makes the output image less defined. The lower the percentage is, the more the output image will eventually look like the input image.
+**Modification threshold** is the lower boundary for percentage of modifications that improve the image. In other words, how far the algorithm is proceeded. A higher percentage makes the algorithm quit earlier and makes the output image less defined. The lower the percentage is, the more the output image will eventually look like the input image.
 
-[Multiply image colors](Multiply_image_colors) is the scaling value used to change the color of the input image, for instance when the input image is too dark to be clear.
+**Multiply image colors** is the scaling value used to change the color of the input image, for instance when the input image is too dark to be clear.
 
-[Blur radius](Blur_radius) for the Gaussian blur filter. A bigger blur radius removes more detail from the original image, but also closes more gaps between pixels.
+**Blur radius** for the Gaussian blur filter. A bigger blur radius removes more detail from the original image, but also closes more gaps between pixels.

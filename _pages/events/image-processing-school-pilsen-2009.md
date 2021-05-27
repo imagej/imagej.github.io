@@ -19,7 +19,7 @@ See also the [Image Processing School](http://www.neuroinformatics2009.org/cours
 
 ### Welcome and Introduction
 
-[Albert Cardona](Albert_Cardona)
+[Albert Cardona](/people/acardona)
 
 ### Overview of installing and using Fiji
 
@@ -31,7 +31,7 @@ Lead instructor: [Johannes Schindelin](Johannes_Schindelin)
 
 Fundamentals of image processing: anatomy of a digital image, image formats. Includes notes on image acquisition (effects of dynamic range and exposure times)
 
-Lead instructor: [Albert Cardona](Albert_Cardona)
+Lead instructor: [Albert Cardona](/people/acardona)
 
 ### Fiji scripting: Python
 
@@ -61,7 +61,7 @@ Lead instructor: [Dan White](/people/chalkie666)
 
 [TrakEM2](/plugins/trakem2): image registration and manual segmentation.
 
-Lead instructor: [Albert Cardona](Albert_Cardona)
+Lead instructor: [Albert Cardona](/people/acardona)
 
 ## Friday
 

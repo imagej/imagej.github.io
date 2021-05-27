@@ -137,10 +137,6 @@ The first improvement is to *split the images of the dataset into virtual blocks
 
 -   [Virtual image splitting](/plugins/bigstitcher/image-splitting)
 
-Additionally, we support (moving least squares) non-rigid refinement during **Image Fusion**. Since this is a time-consuming operation we implemented a quick virtual preview for inspection of the alignment in BigDataViewer.
-
--   [Non-Rigid Alignment and Preview](BigStitcher_NonRigid)
-
 ### Fusion
 
 Once the views in your dataset have been aligned, a typical last step is to create a "classical image" that can be used by other ImageJ-plugins or other programs altogether. The process of merging multiple aligned images into one resulting image is called **Image Fusion**:

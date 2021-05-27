@@ -286,7 +286,7 @@ Here we summarize the more advanced analysis plugins in ImageJ using the above '
           <li>Allows browsing, annotating, and curating annotations for large image data</li>
           <li>Combines <a href="/plugins/bdv">BigDataViewer</a> and <a href="/plugins/trackmate">TrackMate</a>
           </li>
-          <li>Ships <a href="/plugins/trackscheme">TrackScheme</a>, the lineage browser taken from <a href="/plugins/trackmate">TrackMate</a>
+          <li>Ships <a href="/plugins/trackmate/trackscheme">TrackScheme</a>, the lineage browser taken from <a href="/plugins/trackmate">TrackMate</a>
           </li>
         </ul>
       </td>
