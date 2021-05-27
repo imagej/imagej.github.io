@@ -224,7 +224,7 @@
               <li><a href="/libs/imagej-legacy">ImageJ Legacy</a></li>
               <li><a href="/libs/imageja">ImageJA</a></li>
               <li><a href="/libs/scijava">SciJava</a></li>
-              <li><a href="/libs/scifio">SCIFIO</li>
+              <li><a href="/libs/scifio">SCIFIO</a></li>
 
               {% include menu/section title="ImgLib2" link="/libs/imglib2" %}
                 <li><a href="/libs/imglib2/getting-started">Getting Started</a></li>
