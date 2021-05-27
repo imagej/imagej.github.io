@@ -4,7 +4,7 @@ title: Bigdataviewer Playground
 description: Bigdataviewer entry point
 ---
 
-As announced in the forum [here](https://forum.image.sc/t/getting-bigdataviewer-instance-in-an-imagej-command/21110/8) and [here](https://forum.image.sc/t/fiji-commands-for-bigdataviewer/25601), bigdataviewer playground aims at a better integration of BigDataViewer into Fiji by using the [SciJava Framework](/SciJava).
+As announced in the forum [here](https://forum.image.sc/t/getting-bigdataviewer-instance-in-an-imagej-command/21110/8) and [here](https://forum.image.sc/t/fiji-commands-for-bigdataviewer/25601), bigdataviewer playground aims at a better integration of BigDataViewer into Fiji by using the [SciJava Framework](/libs/scijava).
 
 ## Installation
 

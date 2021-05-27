@@ -122,7 +122,7 @@ With this conference, there were no registration fees, and there was a free rece
 TODO GOOGLE SPREADSHEET WIDGET {% include clear%}
 
 
-For full details including abstracts and presentation recordings, see the [Conference 2015 Program](/events/conference-2015_Program) page.
+For full details including abstracts and presentation recordings, see the [Conference 2015 Program](/events/conference-2015-program) page.
 
 # Organization
 

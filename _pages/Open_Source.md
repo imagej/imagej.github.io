@@ -8,7 +8,7 @@ categories: [Development]
 
 Everybody is welcome to [contribute](/contribute) with [plugins](/plugins), patches, [bug reports](/discuss/bugs), [tutorials](/tutorials), [documentation](/learn), and artwork.
 
-The [SciJava](/libs/scijava) ecosystem is strongly committed to open-source software development. This software is not an open source software *product*—it is an open-source software *project* following an open-source development *process*. There are public [source code repositories](/develop/source), public [communication](/help#ways-to-get-help) channels, public [project management](/develop/project-management) resources, and of course, this [community editable website](/editing). See the [Philosophy](/develop/philosophy) page for more information.
+The [SciJava](/libs/scijava) ecosystem is strongly committed to open-source software development. This software is not an open source software *product*—it is an open-source software *project* following an open-source development *process*. There are public [source code repositories](/develop/source), public [communication](/discuss/#ways-to-get-help) channels, public [project management](/develop/project-management) resources, and of course, this [community editable website](/editing). See the [Philosophy](/develop/philosophy) page for more information.
 
 ## Why open source?
 
@@ -26,7 +26,7 @@ Further, we strive for ImageJ to be a community driven project. It is not merely
 
 -   Public [source code](/develop/source) repositories including complete development history.
 -   Public [issue trackers](//develop/project-management#issue-tracking).
--   Public [communication channels](/help#ways-to-get-help) for open discussion.
+-   Public [communication channels](/discuss/#ways-to-get-help) for open discussion.
 -   Public [wiki](/) for community contributed content.
 -   [Travis CI](/develop/travis), ImageJ's public {% include wikipedia title='Continuous integration' text='continuous integration'%} system.
 -   Public [Maven repository](//develop/project-management#maven) for ImageJ binaries.

@@ -26,8 +26,8 @@ public channels including the Image.sc Forum, GitHub, chat rooms, and more.
 ## Ways to get help
 
 | [Image.sc Forum](https://forum.image.sc/)                           | The recommended way to get help. Very active. Rich modern interface. Public, archived discussion.    |
-| [Mailing Lists](/help/mailing-lists)                                | An established and trusted resource for help. Thousands of subscribers. Public, archived discussion. |
-| [Chat](/help/chat)                                                  | ImageJ developers and experts frequent real-time chat services including Gitter and IRC.             |
+| [Mailing Lists](/discuss/mailing-lists)                             | An established and trusted resource for help. Thousands of subscribers. Public, archived discussion. |
+| [Chat](/discuss/chat)                                               | ImageJ developers and experts frequent real-time chat services including Gitter and IRC.             |
 | [Stack Overflow](https://stackoverflow.com/questions/tagged/imagej) | Some people like to post about ImageJ on Stack Overflow, a programming Q&amp;A site.                 |
 | [Reddit](https://www.reddit.com/r/ImageJ/)                          | Some people like to post about ImageJ on Reddit, a community bulletin board.                         |
 
