@@ -56,6 +56,7 @@
 2010-05-11_-_A_new_home_for_ImageJA :: news/2010-05-11-a-new-home-for-imageja
 2010-05-22_-_3D_viewer_published_in_BMC_Bioinformatics :: news/2010-05-22-3d-viewer-published-in-bmc-bioinformatics
 2010-06-03_-_New_SPIM_registration_plugin_-_released_and_published_in_Nature_Methods :: news/2010-06-03-new-spim-registration-plugin-released-and-published-in-nature-methods
+2010-06-14_-_Fiji_"Heidelberg"_is_out :: news/2010-06-14-fiji-heidelberg-is-out
 2010-06-14_-_Fiji_Heidelberg_is_out :: news/2010-06-14-fiji-heidelberg-is-out
 2010-06-20_-_Fiji_at_Cold_Spring_Harbor_Laboratory :: news/2010-06-20-fiji-at-cold-spring-harbor-laboratory
 2010-06-29_-_Fix_for_MacOSX_Updater_issue_available :: news/2010-06-29-fix-for-macosx-updater-issue-available
@@ -469,8 +470,8 @@ CSIMLab :: orgs/csim-lab
 Calc_dSpace :: plugins/calc-dspace
 Calculator_Plus :: plugins/calculator-plus
 Calibrate_SCANCO :: plugins/bonej#calibrate-scanco-wip
-Category:* :: TODO
-Category:Status :: TODO
+Category:* :: plugin-index
+Category:Status :: events/news
 Category:Techniques :: imaging
 Category:Tutorials :: tutorials
 CellProfiler :: software/cellprofiler
@@ -792,9 +793,9 @@ Fractal_dimension :: plugins/bonej#fractal-dimension
 Frames :: plugins/frames
 Frangi :: plugins/frangi
 Frequently_Asked_Questions :: learn/faq
-Frequently_Asked_Questions#How_do_I_set_up_Java_6_on_OS_X.3F :: learn/faq#how-do-i-set-up-java-6-on-macos
-Frequently_Asked_Questions#How_do_I_launch_ImageJ_with_a_different_version_of_Java.3F :: learn/faq#how-do-i-launch-imagej-with-a-different-version-of-java
 Frequently_Asked_Questions#How_can_I_verify_that_my_ImageJ_is_really_100%_up_to_date? :: learn/faq#how-can-i-verify-that-my-imagej-is-really-100-up-to-date
+Frequently_Asked_Questions#How_do_I_launch_ImageJ_with_a_different_version_of_Java.3F :: learn/faq#how-do-i-launch-imagej-with-a-different-version-of-java
+Frequently_Asked_Questions#How_do_I_set_up_Java_6_on_OS_X.3F :: learn/faq#how-do-i-set-up-java-6-on-macos
 Frequently_Asked_Questions#Installing.2FUpdating :: learn/faq#installingupdating
 FunImageJ :: software/funimagej
 Funding :: contribute/funding
@@ -825,7 +826,7 @@ GitHub_Tricks :: develop/github
 Git_Conflicts :: develop/git/conflicts
 Git_Notes :: develop/git/notes
 Git_bisection :: develop/git/pinpoint-regressions
-Git_for_dummies :: develop/git
+Git_for_dummies :: develop/git#git-for-dummies
 Git_mini_howto :: develop/git/mini-howto
 Git_reflogs :: develop/git/reflogs
 Git_submodule_tutorial :: develop/git/submodules
@@ -1153,7 +1154,7 @@ M_I_P :: plugins/m-i-p
 MaMuT :: plugins/mamut
 MacOS :: platforms/macos
 MacOSX :: platforms/macos
-MacOSX_tips :: platforms/macos
+MacOSX_tips :: platforms/macos#additional-macos-tips
 Mac_OS_X :: platforms/macos
 Macro :: scripting/macro
 Macro_Interpreter :: scripting/interpreter
@@ -1511,6 +1512,7 @@ Shortcuts_to_folders_inside_Fiji.app :: <DELETED> (macOS-specific folder managem
 Show_Color_Surfaces :: plugins/show-color-surfaces
 Sigma_Filter :: plugins/sigma-filter
 Simple_Neurite_Tracer :: plugins/simple-neurite-tracer
+Simple_Neurite_Tracer:_"Export_to_SWC"_Tutorial :: plugins/simple-neurite-tracer/export-to-swc-tutorial
 Simple_Neurite_Tracer:_.traces_File_Format :: plugins/snt/traces-file-format
 Simple_Neurite_Tracer:_3D_Interaction :: plugins/simple-neurite-tracer/3d-interaction
 Simple_Neurite_Tracer:_Accurate_point_placement :: plugins/snt/step-by-step-instructions#accurate-point-placement
@@ -1529,6 +1531,8 @@ Simple_Neurite_Tracer:_Tubular_Geodesics :: plugins/snt/tubular-geodesics
 Simple_Neurite_Tracer:_Using_MIP_Overlays :: plugins/simple-neurite-tracer/using-mip-overlays
 Simple_Neurite_Tracer:_Using_the_three_pane_view :: plugins/snt/key-shortcuts
 Simple_Neurite_Tracer:_Wishlist :: plugins/simple-neurite-tracer/wishlist
+Simple_Neurite_Tracer_"Export_to_SWC"_Tutorial :: plugins/simple-neurite-tracer/export-to-swc-tutorial
+Simple_Neurite_Tracer_Export_to_SWC_Tutorial :: plugins/simple-neurite-tracer/export-to-swc-tutorial
 Simulate_Color_Blindness :: plugins/simulate-color-blindness
 Sintered_Alumina_(2.6MB) :: plugins/topoj
 Siox_Segmentation :: plugins/siox
@@ -1737,6 +1741,7 @@ Usage_ever :: https://usage.imagej.net/
 Usage_monthly :: https://usage.imagej.net/
 Usage_weekly :: https://usage.imagej.net/
 Useful_keyboard_shortcuts :: TODO (Keyboard_shortcuts)
+User:* :: people
 User:3Dcyclorama :: people/HarryRos
 User:A._Karperien :: people/audrey-karperien
 User:Abastien :: people/alexandrebastien
@@ -2000,7 +2005,6 @@ User:Zfmacros :: people/MarcoTarasco
 User:Zitmen :: people/zitmen
 User:Zjpetersen :: people/zjpetersen
 User:Zouin :: people/mzouink
-User:* :: people
 User_Guide :: learn/user-guides
 User_Guide/Getting_Started :: guide/getting-started
 User_Guide/Layout_Test :: guide/layout-test
