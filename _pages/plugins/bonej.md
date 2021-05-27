@@ -514,9 +514,9 @@ A 2D image.
 
 Menu path: {% include bc path="Plugins | BoneJ | Analyze | Particle Analyser" %}
 
-Particle Analyser performs connected-components labelling. It started life as an adaptation of the 3D Object Counter, for identifying particles as part of Purify. Once it became obvious that the heavily recursive algorithm was very inefficient, especially on large stacks, particle labelling was rewritten to be multithreaded and much less recursive.
+Particle Analyser performs connected-components labelling and particle analysis on binary 3D image stacks. It scales at about _O_(n) making it efficient on large images (200+ GB images have been tested by users so far) and runs at about 5-10 s/GB depending on particle number and geometry, and machine configuration. 
 
-A member of our group wished to study osteocyte lacunae in synchrotron microCT images, so the Particle Analyser was born from Purify's particle labelling algorithm. Other groups use Particle Analyser for soil analysis; it could be used for any porous media. Particle Analyser labels unique (unconnected) particles, then analyses each particle separately. Substantial use is made of other plugins in BoneJ, including Connectivity to get the Euler characteristic, Isosurface to get the surface area and Thickness to get the local thickness of individual particles.
+The original design was for a member of our group who wished to study [osteocyte lacunae in synchrotron microCT images](https://doi.org/10.1016/j.bone.2013.12.020). The labelling algorithm is used in [Purify](https://imagej.github.io/plugins/bonej#purify) to identify and remove all but the largest foreground and background particle. Other groups use Particle Analyser for soil and materials analysis; it could be used for any porous media. Particle Analyser labels unique (unconnected) particles, then analyses each particle separately. Substantial use is made of other plugins in BoneJ, including Connectivity to get the Euler characteristic, Isosurface to get the surface area and Thickness to get the local thickness of individual particles.
 
 If you use it in your published work, please cite:
 
