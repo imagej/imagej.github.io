@@ -1,7 +1,7 @@
 ---
 mediawiki: Sprout_Morphology
 title: Sprout Morphology
-artifact: angiogenesis/Sprout_Analysis
+artifact: angiogenesis:Sprout_Analysis
 ---
 
 The **Sprout Morphology** plugin measures sprout *number*, *length*, *width* and *cell density* of endothelial cell (EC) sprouts grown in a bead sprouting assay. It optionally includes measuring the coverage of these sprouts with pericytes included in the assay, as well as the endothelial cell/pericyte ratio.
