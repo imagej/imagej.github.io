@@ -4,6 +4,7 @@ title: SNT
 categories: [Citable,Plugins,Segmentation,Neuroanatomy,SNT]
 tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroanatomy
 nav-links: true
+nav-title: Overview
 ---
 
 {% capture author%}
