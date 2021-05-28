@@ -18,18 +18,21 @@ Let's dive in to how to create a new page on the site.
 If you are looking to edit an existing page, skip to
 [adding and editing page content](#adding-and-editing-page-content) below.
 
-1.  Navigate to the
+1.  Navigate to an appropriate sub-directory of the
     [pages section](https://github.com/imagej/imagej.github.io/tree/main/_pages)
-    of the repository.
-    Click {% include button label="Add file" %} then
+    of the repository. For example, if you are creating a page about a plugin, you would go to [_pages/plugins/](https://github.com/imagej/imagej.github.io/tree/main/_pages).
+
+2.  Click {% include button label="Add file" %} then
     {% include button label="Create new file" %} from the drop-down:
 
     {% include img align="center" src="editing/create-page-etw" %}
 
-2.  Add a name for your file. **Note: this is not the page title;** the page
+3.  Add a name for your file. **Note: this is not the page title;** the page
     title will be applied in the next section, front matter. File names should
-    be all lower case, use the file extension `.md`, avoid symbols and spaces,
-    and separate words using dashes (`-`):
+    be:
+    * all lower case
+    * use the file extension `.md`
+    * avoid symbols and spaces, and separate words using dashes (`-`):
 
     {% include img align="center" src="editing/name-your-file" style="border: 1px solid #aaa" %}
 
@@ -41,15 +44,15 @@ correctly. The following table lists front matter fields you can use:
 
 |       **Field** | **Purpose** |
 |----------------:|:------------|
-|       **title** | The title of your page. This is the only required field. |
+|       **title** | The title of your page. (**Required**) |
 | **description** | A short description of your page. Also used for the site's search engine. When omitted, the first sentence of the page content is used. |
-|     **section** | Main menu section that should be open when this page first loads, if any. Nested sections to expand should be separated by colons (`:`). For example, this page's section is `Help:Editing the Wiki`. |
-|  **categories** | List of categories to which the page belongs. Must be enclosed in square brackets (`[` and `]`). |
-|       *statbox* | The "Vital statistics" sidebar supports quite a few fields; see [this comment](https://github.com/imagej/imagej.github.io/blob/main/_includes/statbox#L30-L72) for a list. Including at least one of these fields will cause the statbox to appear; otherwise, there will be no statbox for the page. |
+|     **section** | Main menu section that should be open when this page first loads, if any. Nested sections to expand should be separated by colons (`:`). For example, this page's section is `Contribute:Editing the Wiki`. |
+|  **categories** | Comma-separated list of categories to which the page belongs, enclosed in square brackets (`[` and `]`). Pages in the `/plugins/` directory are browsable by category in the [Plugin index](/plugin-index). For example, `[Filtering, Help]` would put your page in the [filtering](/plugin-index#filtering) and [help](/plugin-index#help) sections. |
+|       **statbox** | The "Vital statistics" sidebar supports quite a few fields; see [this comment](https://github.com/imagej/imagej.github.io/blob/main/_includes/layout/statbox#L30-L72) for a list. Including at least one of these fields will cause the statbox to appear; otherwise, there will be no statbox for the page. |
 
-Below is a minimal example front matter block. You can copy and paste this code
-into the editor of a new page (see above). Replace `My Awesome Page` with the
-title for the new page.
+Below is a minimal example front matter block. You can copy and paste this code into the editor of a new page (see above).
+
+Replace `My Awesome Page` with the title for the new page.
 
 ```
 ---
@@ -90,7 +93,7 @@ Here are some common image uses:
 | Image                                    | Markup                                     |
 |------------------------------------------|--------------------------------------------|
 | ![Alt text](/media/icons/fiji.svg) | `![Alt text](/media/icons/fiji.svg)` |
-| ![External image](https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png){:width="64px"} | `![External image](https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png){:width="64px"}` |
+| ![External image](https://fiji.sc/site/logo.png){:width="64px"} | `![External image](https://fiji.sc/site/logo.png){:width="64px"}` |
 
 Note that the last example includes inline styling, which is Kramdown-specific.
 
@@ -200,7 +203,7 @@ The following tables list all of this site's general-purpose includes:
 | [tooltip](TODO)                      | Add a tooltip appearing on mouseover |
 | [echo](TODO)                         | For debugging                        |
 
-#### TO CHANGE
+#### MARKED FOR REMOVAL
 
 | Include                                      | What needs to happen               |
 |----------------------------------------------|------------------------------------|
