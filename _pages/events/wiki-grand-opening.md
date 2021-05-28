@@ -8,7 +8,7 @@ description: This page organizes the community effort to launch the new ImageJ w
 | **Why**   | Because there are more than 1400 pages which were mass converted from the old MediaWiki, and there are still rough edges that cannot be fixed automatically. |
 | **Who**   | ***We will all do it as a team!*** Please join us&mdash;[sign up here](https://docs.google.com/spreadsheets/d/1CdRCMFBXCg6ypDGdDaZNEN5cBY_1Ye47-kyTZQ11wBQ/edit#gid=0) |
 | **Where** | We will meet virtually in the [wiki chat room](https://gitter.im/imagej/imagej.github.io) and in a [gather.town space](https://gather.town/app/ipHMoZp6WOdATHE4/FijiHackathon) (for audio/video; still under construction). |
-| **When**  | Tuesday, June 1 through Thursday, June 3: the first of five **virtual Fiji summer hacking weeks**. Kickoff meeting (attendance optional!) will be Monday at 1300 UTC (3pm CEST / 8am CT). |
+| **When**  | Tuesday, June 1 through Friday, June 4: the first of five **virtual Fiji summer hacking weeks**. Kickoff meeting (attendance optional!) will be Tuesday at 1300 UTC (3pm CEST / 8am CT). |
 | **How**   | The [How you can help](#how-you-can-help) section below has all the details. |
 
 ## About gather.town
@@ -29,7 +29,7 @@ Alternately, you are of course also welcome to participate solely
 [via chat](https://gitter.im/imagej/imagej.github.io).
 But participating in some aspects may not be feasible via text alone; e.g.,
 {% include person id='ctrueden' %} will give a video presentation covering
-the state of the site some time on Monday after the hackathon kickoff, and
+the state of the site some time on Tuesday after the hackathon kickoff, and
 it is likely this will be on gather.town.
 
 ## How you can help
