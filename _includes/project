@@ -5,6 +5,7 @@
 {% if name == "ImageJ" %}
 {% assign icon = "imagej.png" %}
 {% assign text = "This page " %}
+{% assign link = "/software/imagej" %}
 {% if input[1] %}
 {% assign text = text | append: input[1] %}
 {% else %}
@@ -15,6 +16,7 @@
 {% if name == "ImageJ1" %}
 {% assign icon = "imagej1.png" %}
 {% assign text = "This page " %}
+{% assign link = "/software/imagej1" %}
 {% if input[1] %}
 {% assign text = text | append: input[1] %}
 {% else %}
@@ -25,6 +27,7 @@
 {% if name == "Fiji" %}
 {% assign icon = "fiji.png" %}
 {% assign text = "This page " %}
+{% assign link = "/software/fiji" %}
 {% if input[1] %}
 {% assign text = text | append: input[1] %}
 {% else %}
@@ -35,6 +38,7 @@
 {% if name == "ImgLib2" %}
 {% assign icon = "imglib2.png" %}
 {% assign text = "This page " %}
+{% assign link = "/libs/imglib2" %}
 {% if input[1] %}
 {% assign text = text | append: input[1] %}
 {% else %}
@@ -45,6 +49,7 @@
 {% if name == "SCIFIO" %}
 {% assign icon = "scifio.png" %}
 {% assign text = "This page " %}
+{% assign link = "/libs/scifio" %}
 {% if input[1] %}
 {% assign text = text | append: input[1] %}
 {% else %}
@@ -55,6 +60,7 @@
 {% if name == "SciJava" %}
 {% assign icon = "scijava.png" %}
 {% assign text = "This page " %}
+{% assign link = "/libs/scijava" %}
 {% if input[1] %}
 {% assign text = text | append: input[1] %}
 {% else %}
@@ -64,7 +70,7 @@
 {% endif %}
 <div class="project-info" style="float: left;">
 <span markdown="1" class="project-logo" style="border-radius: .75em; box-shadow: 4px 4px 4px #ccc; padding: 3px; border: 1px solid #ccc; background-color: white;">
-[![{{text}}](/media/icons/{{icon}})]({{name}})
+[![{{text}}](/media/icons/{{icon}}){:width="64px"}]({{link}})
 </span>
 </div>
 
