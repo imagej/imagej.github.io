@@ -65,10 +65,8 @@ This section covers how to populate the *content* of your page.
 
 {% include wikipedia title="Markdown" %} is plain-text syntax formatting,
 allowing you to easily and cleanly modify text with italics, bold, ordered
-or bulleted lists, etc. This wiki uses
-[GitHub Flavored Markdown](https://github.github.com/gfm/) (GFM);
-a basic GFM guide can be found
-[here](https://guides.github.com/features/mastering-markdown/).
+or bulleted lists, etc. This wiki, as a Jekyll site, uses
+[Kramdown](https://kramdown.gettalong.org/syntax.html). A quick-reference can be found [here](https://kramdown.gettalong.org/quickref.html), and a general Jekyll support reference [here](https://www.markdownguide.org/tools/jekyll/). Also helpful is GitHub Flavored Markdown (GFM) guide found [here](https://guides.github.com/features/mastering-markdown/).
 
 Here are some common kinds of text formatting:
 
