@@ -40,7 +40,7 @@ it is likely this will be on gather.town.
   [Sign up here](https://docs.google.com/spreadsheets/d/1CdRCMFBXCg6ypDGdDaZNEN5cBY_1Ye47-kyTZQ11wBQ/edit#gid=0)."
 %}
 
-More details will be posted here in the next 24 hours. PLEASE STAY TUNED!
+More details will be posted here before Tuesday. PLEASE STAY TUNED!
 
 **What's coming:**
 * A checklist of details to consider when reviewing a page.
