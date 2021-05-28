@@ -207,7 +207,7 @@ The following tables list all of this site's general-purpose includes:
 
 | Include                                      | What needs to happen               |
 |----------------------------------------------|------------------------------------|
-| [thumbnail](TODO)                            | Merge with img include             |
+| thumbnail                                    | Merge with img include             |
 | [info-box](notices#info-box)                 | Delete after migrating to statbox  |
-| [clear](TODO)                                | Delete after purging all floats    |
-| [project](TODO)                              | Delete after improving statbox     |
+| clear                                        | Delete after purging all floats    |
+| project                                      | Delete after improving statbox     |
