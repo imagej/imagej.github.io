@@ -1,5 +1,7 @@
 ---
-mediawiki: Deconvolution
+mediawiki:
+- Deconvolution
+- Deconvolution_tips
 title: Deconvolution
 categories: [Tutorials,Deconvolution]
 section: Learn:Scientific Imaging
