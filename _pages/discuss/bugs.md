@@ -1,5 +1,7 @@
 ---
-mediawiki: Report_a_Bug
+mediawiki:
+- Report_a_Bug
+- Bug_reporting_best_practices
 title: Reporting Issues
 section: Discuss
 nav-links: true
