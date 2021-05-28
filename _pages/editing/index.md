@@ -24,14 +24,14 @@ If you are looking to edit an existing page, skip to
     Click {% include button label="Add file" %} then
     {% include button label="Create new file" %} from the drop-down:
 
-    {% include img align="center" src="help/create-page-etw" %}
+    {% include img align="center" src="editing/create-page-etw" %}
 
 2.  Add a name for your file. **Note: this is not the page title;** the page
     title will be applied in the next section, front matter. File names should
     be all lower case, use the file extension `.md`, avoid symbols and spaces,
     and separate words using dashes (`-`):
 
-    {% include img align="center" src="help/name-your-file" style="border: 1px solid #aaa" %}
+    {% include img align="center" src="editing/name-your-file" style="border: 1px solid #aaa" %}
 
 ## Front matter
 
