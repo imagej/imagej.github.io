@@ -1,5 +1,5 @@
 ---
-mediawiki: Introduction
+mediawiki: NONE
 title: Learn Overview
 section: Learn
 nav-links: true

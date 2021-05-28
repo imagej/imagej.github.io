@@ -1,5 +1,5 @@
 ---
-mediawiki: NONE
+mediawiki: Introduction
 title: Introduction
 section: Learn:ImageJ Basics
 nav-links: true
