@@ -28,7 +28,7 @@ A key principle of the Fiji project is:
 
 \- *African proverb*
 
-There are many corollaries to this wisdom, the most prominent: if you write software in your endeavor to discover new insights, [Open Source](Open_Source) is the way that brings you farthest. Withholding the source code—like any other method to obstruct other researchers' work, e.g. refusing to share materials and methods—will [invariably have the opposite effect](Why_Closed-Source_Is_Wrong) in the long run. Likewise, working with interested parties to improve one's project will invariably lead to a much better and stronger result.
+There are many corollaries to this wisdom, the most prominent: if you write software in your endeavor to discover new insights, [Open Source](/licensing/open-source) is the way that brings you farthest. Withholding the source code—like any other method to obstruct other researchers' work, e.g. refusing to share materials and methods—will [invariably have the opposite effect](Why_Closed-Source_Is_Wrong) in the long run. Likewise, working with interested parties to improve one's project will invariably lead to a much better and stronger result.
 
 As such, components distributed with Fiji must be licensed in a way [compatible with the GNU General Public License](https://www.gnu.org/licenses/license-list.html).
 
@@ -111,7 +111,7 @@ The following guidelines are less technical and more philosophical, but represen
 
 Developers of Fiji components should invite others to contribute. That entails welcoming developers, acknowledging and working on pull requests, encouraging improvements, working together, enhancing upon each others' work, share insights, etc.
 
-To leverage the power of [open source](Open_source), the default for discussions should be to use [public channels](/discuss/#ways-to-get-help). In other words, the question to ask should be "Is there any good reason why this conversation should be private?" instead of the opposite.
+To leverage the power of [open source](/licensing/open-source), the default for discussions should be to use [public channels](/discuss/#ways-to-get-help). In other words, the question to ask should be "Is there any good reason why this conversation should be private?" instead of the opposite.
 
 ## Active bug management
 

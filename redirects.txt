@@ -438,10 +438,10 @@ BoneJ2-redirect :: plugins/bonej
 BoneJ_Usage_Legacy :: plugins/bonej#usage-reporting
 BoneJ_Usage_Modern :: plugins/bonej#usage-reporting
 BoneJ_experimental :: plugins/bonej
-Brightness_and_Contrast :: TODO
+Brightness_and_Contrast :: learn/brightness-and-contrast
 Bug_reporting_best_practices :: discuss/bugs#bug-reporting-best-practices
 Bugs :: discuss/bugs
-Build_ImageJ2_Plugin_With_JavaFX :: TODO
+Build_ImageJ2_Plugin_With_JavaFX :: develop/javafx
 Building_a_POM :: develop/building-a-pom
 Building_a_pom :: develop/building-a-pom
 CAMDU :: plugins/camdu
@@ -701,7 +701,7 @@ FFMPEG_Plugins :: formats/video
 FIBSEM_importer :: formats/fib-sem
 FITS_Analysis :: plugins/fits-analysis
 FLIMJ :: plugins/flimj
-FSTRPCParadigm :: TODO
+FSTRPCParadigm :: libs/scijava-parallel#fstrpcparadigm
 FS_Align_TrakEM2 :: plugins/fs-align-trakem2
 Fake :: develop
 Faq :: learn/faq
@@ -807,8 +807,8 @@ GSoC_2011_Ideas :: events/gsoc-2011-ideas
 GUI :: scripting/user-input
 Gabor_Filter_script :: scripting/examples/gabor-filter
 Gabriel_Graph :: plugins/gabriel-graph
-Gauss_ImgLib2 :: Gauss_Package_ImgLib2
-Gauss_Package_ImgLib2 :: TODO
+Gauss_ImgLib2 :: libs/imglib2/gauss-package
+Gauss_Package_ImgLib2 :: libs/imglib2/gauss-package
 Generate_and_exploit_Kmographs :: tutorials/generate-and-exploit-kymographs
 Generate_and_exploit_Kymographs :: tutorials/generate-and-exploit-kymographs
 GenericDialog :: scripting/generic-dialog
@@ -860,7 +860,7 @@ Help:Categorization :: editing
 Help:Contents :: editing
 Help:Editing :: editing
 Help:Formatting :: editing
-Help_on_Menu_Item :: TODO
+Help_on_Menu_Item :: plugins/help-on-menu-item
 Hill_Shade :: plugins/hill-shade
 Hinerm :: people/hinerm
 Hippocampal_CA3_Interneuron :: TODO
@@ -980,7 +980,7 @@ ImgLib2_Documentation :: libs/imglib2/documentation
 ImgLib2_Examples :: libs/imglib2/examples
 ImgLib2_FAQ :: libs/imglib2/faq
 ImgLib2_Tutorials :: libs/imglib2/examples
-ImgLibProcessor :: TODO
+ImgLibProcessor :: software/imagej2/imglibprocessor
 Imglib :: libs/imglib1
 Imglib2_Morphological_Operations :: libs/imglib2/morphological-operations
 Imglib:_accessing_pixel_data :: libs/imglib1/iterating-through-pixel-data
@@ -996,9 +996,9 @@ Install :: downloads
 Install_Fiji_on_Linux :: software/fiji/downloads#installation
 Install_Fiji_on_MacOSX :: software/fiji/downloads#installation
 Install_Fiji_on_Windows :: software/fiji/downloads#installation
-Install_JARs :: TODO (Installing_3rd_party_plugins)
+Install_JARs :: plugins#installing-plugins
 Installation :: software/fiji/downloads#installation
-Installing_3rd_party_plugins :: TODO
+Installing_3rd_party_plugins :: plugins#installing-plugins
 Integral_Image_Filters :: plugins/integral-image-filters
 IntelliJ :: develop/intellij
 IntelliJ_IDEA :: develop/intellij
@@ -1087,7 +1087,7 @@ Labkit :: plugins/labkit
 Landmark_Correspondences :: plugins/landmark-correspondences
 Lasso_and_Blow_Tool :: plugins/lasso-and-blow-tool
 Lasso_selection :: plugins/lasso-and-blow-tool
-Launcher :: TODO
+Launcher :: learn/launcher
 Learn :: learn
 Learnathon :: events/learnathon-2019
 Learnathon_2017 :: events/learnathon-2017
@@ -1189,7 +1189,7 @@ Maximum_(3D) :: plugins/minimum-maximum-median
 Maximum_Entropy_Threshold :: plugins/maximum-entropy-threshold
 Median_(3D) :: plugins/minimum-maximum-median
 Merge_Conflicts :: develop/git/conflicts
-Metadata :: TODO
+Metadata :: formats/metadata
 MiNA_-_Mitochondrial_Network_Analysis :: plugins/mina
 MiToBo :: plugins/mitobo
 Micro-Manager :: software/micro-manager
@@ -1267,13 +1267,13 @@ OS_X :: platforms/macos
 Object_Counter3D :: plugins/3d-objects-counter
 OlympusImageJPlugin :: formats/olympus
 Op_Finder :: plugins/op-finder
-Open-source :: TODO (Open_Source)
+Open-source :: licensing/open-source
 OpenCV :: software/opencv
 OpenMPI_Plugin_Extensions :: plugins/openmpi-plugin-extensions
 Open_Microscopy_Environment :: software/omero
-Open_Source :: TODO
-Open_an_image :: TODO
-Open_source :: TODO (Open_Source)
+Open_Source :: licensing/open-source
+Open_an_image :: tutorials/open-an-image
+Open_source :: licensing/open-source
 Ops :: libs/imagej-ops
 OpsDeconvolution :: libs/imagej-ops/deconvolution
 Ops_Browser :: plugins/op-finder
@@ -1327,7 +1327,7 @@ Profiling :: develop/profiling
 Profiling_Java_Code :: develop/profiling
 Project :: develop/architecture#definitions
 Project_Management :: develop/project-management
-Project_ideas :: TODO
+Project_ideas :: contribute/project-ideas
 Project_management :: develop/project-management
 Pub_Montage :: plugins/pub-montage
 Public_Domain :: licensing/public-domain
@@ -2055,7 +2055,7 @@ Wavelet_Denoise :: plugins/wavelet-denoise
 Wayne_Rasband :: people/rasband
 Welcome :: /
 Why :: develop/philosophy
-Why_Closed-Source_Is_Wrong :: TODO
+Why_Closed-Source_Is_Wrong :: licensing/closed-source
 Why_Java :: develop/philosophy#why-java
 Widget:Flash :: <DELETED> (Flash was discontinued)
 Widget:Google_Spreadsheet :: TODO

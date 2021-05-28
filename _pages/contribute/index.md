@@ -1,10 +1,21 @@
 ---
-mediawiki: Contributing
+mediawiki:
+- Contributing
+- Open_Source
 title: Contributing
 section: Contribute
 categories: [community]
 nav-links: true
 ---
+
+{% include notice icon="osi-symbol" content="The [ImageJ](/software/imagej)
+  project, and related projects in the [SciJava](/libs/scijava)
+  software ecosystem, are [open source](/licensing/open-source) software
+  projects. See the [Licensing](/licensing) page for details." %}
+
+Everybody is welcome to [contribute](/contribute) with [plugins](/plugins),
+[patches](/develop/github), [bug reports](/discuss/bugs),
+[tutorials](/tutorials), [documentation](/learn), and artwork.
 
 The community encourages discussion about proposed changes on ImageJ's [communication](/discuss/#ways-to-get-help) channels. Submit your ideas!
 

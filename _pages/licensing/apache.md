@@ -6,9 +6,9 @@ section: Contribute:Licensing:Open Source
 
 {% include notice icon="info" content='For a summary of [SciJava](/libs/scijava) licensing, see the [Licensing](/licensing) page.' %} 
 
-The **Apache License** is a **permissive** [free software](Open_Source)
-license, imposing minimal restrictions on the redistribution of covered
-software. This is in contrast to
+The **Apache License** is a **permissive**
+[free software](/licensing/open-source) license, imposing minimal
+restrictions on the redistribution of covered software. This is in contrast to
 {% include wikipedia title='Copyleft' text='copyleft' %}
 licenses like the [GPL](/licensing/gpl), which have reciprocity share-alike requirements.
 The Apache License is named for the

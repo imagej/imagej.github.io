@@ -19,7 +19,7 @@ Here is a quick summary of the most recommended options:
     -   A\) **[create your own update site](/update-sites/setup)**; or
     -   B\) **[bundle your plugin with Fiji](/contribute/fiji)**.
 -   **Source code.**
-    -   Make your project **[open source](Open_source)**.
+    -   Make your project **[open source](/licensing/open-source)**.
     -   Host it on **[GitHub](/develop/github)**.
     -   Use **[Maven](/develop/maven)** to build and SemVer for **[versioning](/develop/versioning)**.
     -   Use **[Travis](/develop/travis)** for continuous integration and artifact deployment to the [SciJava Maven repository](//develop/project-management#maven).
@@ -101,7 +101,7 @@ The first goal is to get your extension into the hands of users.
 
 ## Sharing your source code
 
-If you want to facilitate good science, please [share your source code](Open_Source). Otherwise, your extension is a black box and its results are not verifiable.
+If you want to facilitate good science, please [share your source code](/licensing/open-source). Otherwise, your extension is a black box and its results are not verifiable.
 
 {::nomarkdown}
 <table>

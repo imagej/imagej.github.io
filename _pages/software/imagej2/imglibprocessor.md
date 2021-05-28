@@ -6,7 +6,6 @@ categories: [ImageJ2,Development]
 
 {% include notice icon="warning" content='The following article describes a method of ImageJ1/ImageJ2 integration we explored in 2010, revolving around an `ij.process.ImageProcessor` extension called `ImgLibProcessor` which would enable additional transparent usage of [ImgLib2](/libs/imglib2) from within ImageJ1, thus greatly expanding the available pixel types and storage strategies. However, after discussion with [Wayne Rasband](/people/rasband), we settled on a different method of backwards compatibility known as [ImageJ Legacy](/libs/imagej-legacy). The text below is preserved only for historical reasons.' %} 
 
-
 ## Design
 
 As much as possible ImgLibProcessor utilizes operations to implement its functionality. Operation is not a class here but just a concept. If you imagine a processor class the operations are really the methods that act upon the processor's data and live as separate classes rather than within the processor class methods. This was done to reduce the complexity of ImgLibProcessor. Originally there was a motivation of having operations that could be chained together. (Not sure how well this motivation was realized)

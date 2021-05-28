@@ -1,6 +1,8 @@
 ---
 mediawiki: Metadata
 title: Metadata
+section: Learn:ImageJ Basics:File Formats
+nav-links: true
 ---
 
 # What is metadata?
@@ -36,8 +38,8 @@ Did you observe a problem with your metadata via a GUI? Was there no data at all
 
 ### Using the Command Line
 
-Bio-Formats has a whole host of information regarding extracting, processing, and validating OME-XML. So check out [their resources](https://docs.openmicroscopy.org/ome-model/5.6.3/ome-tiff/tools.html) for more detailed information.
+Bio-Formats has a whole host of information regarding extracting, processing, and validating OME-XML. So check out [their resources](https://docs.openmicroscopy.org/ome-model/latest/ome-tiff/tools.html) for more detailed information.
 
-In brief, there are [command line tools available via Bio-Formats](https://docs.openmicroscopy.org/bio-formats/6.2.0/users/comlinetools/) to properly inspect and validate the XML in an OME-TIFF file.
+In brief, there are [command line tools available via Bio-Formats](https://docs.openmicroscopy.org/bio-formats/latest/users/comlinetools/) to properly inspect and validate the XML in an OME-TIFF file.
 
-Both the `tiffcomment` and `xmlvalid` commands are used; `tiffcomment` extracts the XML from the file and `xmlvalid` validates the XML and prints any errors to the console. See [this page](https://docs.openmicroscopy.org/bio-formats/6.2.0/users/comlinetools/xml-validation.html) for more details.
+Both the `tiffcomment` and `xmlvalid` commands are used; `tiffcomment` extracts the XML from the file and `xmlvalid` validates the XML and prints any errors to the console. See [this page](https://docs.openmicroscopy.org/bio-formats/latest/users/comlinetools/xml-validation.html) for more details.

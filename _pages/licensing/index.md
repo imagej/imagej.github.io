@@ -1,26 +1,25 @@
 ---
 mediawiki: Licensing
 title: Licensing
+description: This page describes the legal structure of ImageJ and SciJava projects.
 section: Contribute:Licensing
 ---
 
-{% include notice icon="info" content='This page describes the *legal* structure of [SciJava](/libs/scijava) projects.
+{% include notice icon="info" content="This page describes the *legal* structure of [SciJava](/libs/scijava) projects.
 
 -   For information on their *technical* structure, see [Architecture](/develop/architecture).
--   For information on their *social* structure, see [Governance](/contribute/governance).' %}
+-   For information on their *social* structure, see [Governance](/contribute/governance)." %}
 
+The [ImageJ](/software/imagej) project, and related projects in the
+[SciJava](/libs/scijava) component collection, are licensed as
+[open source](/licensing/open-source) software (OSS) projects.
 
-The [ImageJ](/software/imagej) project, and related projects in the [SciJava](/libs/scijava) component collection, are licensed as [open source](Open_source) software (OSS) projects.
-
-For an introduction to OSS licensing, see [http://choosealicense.com/](http://choosealicense.com/).
-
-The table below summarizes the dominant license of each project's components.
-
-## Exceptions
-
-Since each project consists of many components, some may be licensed differently. You can always find the license of each project in a `LICENSE.txt` or similar file of the relevant repository on [GitHub](/develop/github). That said, in general, the table below is accurate with very few exceptions. When there *is* an exception, it is often licensed more permissively than the rest of the project—for example, the core of [Bio-Formats](/formats/bio-formats) is licensed under [BSD-2](/licensing/bsd) ([1](https://github.com/openmicroscopy/bioformats/blob/develop/components/formats-bsd/LICENSE.txt)), and the [ImageJ](/software/imagej) and [SCIFIO](/libs/scifio) tutorials are licensed under [CC0](/licensing/public-domain) ([1](https://github.com/imagej/tutorials/blob/master/README.md), [2](https://github.com/scifio/scifio-tutorials/blob/master/README.md)), waiving all copyright interest as allowed by law.
+For an introduction to OSS licensing, see
+[http://choosealicense.com/](http://choosealicense.com/).
 
 ## Project summary
+
+The following table summarizes the dominant license of each project's components.
 
 {::nomarkdown}
 <table>
@@ -477,6 +476,10 @@ Since each project consists of many components, some may be licensed differently
 
 <span>\*</span> See [choosealicense.com](http://choosealicense.com/) for details.  
 <sup>†</sup> See note below for details.
+
+## Exceptions
+
+Since each project consists of many components, some may be licensed differently. You can always find the license of each project in a `LICENSE.txt` or similar file of the relevant repository on [GitHub](/develop/github). That said, in general, the table below is accurate with very few exceptions. When there *is* an exception, it is often licensed more permissively than the rest of the project—for example, the core of [Bio-Formats](/formats/bio-formats) is licensed under [BSD-2](/licensing/bsd) ([1](https://github.com/openmicroscopy/bioformats/blob/develop/components/formats-bsd/LICENSE.txt)), and the [ImageJ](/software/imagej) and [SCIFIO](/libs/scifio) tutorials are licensed under [CC0](/licensing/public-domain) ([1](https://github.com/imagej/tutorials/blob/master/README.md), [2](https://github.com/scifio/scifio-tutorials/blob/master/README.md)), waiving all copyright interest as allowed by law.
 
 ## A note about ImageJ1
 

@@ -168,7 +168,7 @@
             <li><a href="/contribute/fiji">Contributing to Fiji</a></li>
 
             {% include menu/section title="Licensing" link="/licensing" %}
-              {% include menu/section title="Open Source" %}
+              {% include menu/section title="Open Source" link="/licensing/open-source" %}
                 <li><a href="/licensing/apache">Apache</a></li>
                 <li><a href="/licensing/bsd">BSD</a></li>
                 <li><a href="/licensing/gpl">GPL</a></li>
@@ -177,7 +177,7 @@
                 <li><a href="/licensing/public-domain">Public domain</a></li>
               {% include menu/section-end %} <!-- Contribute/Licensing/Open Source -->
 
-              {% include menu/section title="Proprietary" %}
+              {% include menu/section title="Proprietary" link="/licensing/closed-source" %}
                 <li><a href="/licensing/big">BIG</a></li>
               {% include menu/section-end %} <!-- Contribute/Licensing/Proprietary -->
             {% include menu/section-end %} <!-- Contribute/Licensing -->

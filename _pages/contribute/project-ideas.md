@@ -1,12 +1,14 @@
 ---
 mediawiki: Project_ideas
-title: Project ideas
+title: Project Ideas
 categories: [development]
+section: Contribute
+nav-links: true
 ---
 
 {% include warning/outdated %}
 
-This page contains a loose list of ideas for cool/useful projects that have some relation to Fiji
+This page is an old list of ideas for cool/useful projects that have some relation to the [Fiji](/software/fiji) distribution of ImageJ. Some of them still might make sense to pursue.
 
 # Visualization
 

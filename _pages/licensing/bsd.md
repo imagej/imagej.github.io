@@ -6,9 +6,9 @@ section: Contribute:Licensing:Open Source
 
 {% include notice icon="info" content='For a summary of [SciJava](/libs/scijava) licensing, see the [Licensing](/licensing) page.' %} 
 
-**BSD licenses** are a family of **permissive** [free software](Open_Source)
-licenses, imposing minimal restrictions on the redistribution of covered
-software. This is in contrast to
+**BSD licenses** are a family of **permissive**
+[free software](/licensing/open-source) licenses, imposing minimal
+restrictions on the redistribution of covered software. This is in contrast to
 {% include wikipedia title='Copyleft' text='copyleft'%}
 licenses like the [GPL](/licensing/gpl), which have reciprocity share-alike requirements.
 The original BSD license was used for its namesake, the Berkeley Software

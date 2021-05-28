@@ -34,8 +34,6 @@ In the meantime, to install a plugin manually, follow the plugin's installation 
 -   If the file suffix is `.jar` or `.class` then it is usually enough to simply restart ImageJ after dropping the file into `plugins`.
 -   If the file suffix is `.java` then you typically must execute the [Compile and Run](/ij/docs/guide/146-31.html#toc-Subsection-31.5) command on the file to first compile it to a `.class`. After running this command once and restarting ImageJ, the plugin will become available in ImageJ's `Plugins` menu.
 
-See also the [Installing 3rd party plugins](Installing_3rd_party_plugins) guide.
-
 ### User-specific plugins
 
 In addition to looking in the `plugins` folder of ImageJ itself, ImageJ also looks in the `.plugins` folder in the current user's home folder. This is useful if you want to install some of your own plugins without affecting the system-wide ImageJ installation.

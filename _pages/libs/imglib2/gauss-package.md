@@ -1,11 +1,13 @@
 ---
 mediawiki: Gauss_Package_ImgLib2
-title: Gauss Package ImgLib2
+title: Gauss package for ImgLib2
+artifact: net.imglib2:imglib2-algorithm
+section: Explore:Libraries:ImgLib2
+nav-links: true
+nav-title: Gauss
 ---
 
-{% include info-box software='Fiji/ImgLib2' name='Gaussian Convolution' author='Stephan Preibisch' maintainer='Stephan Preibisch' source='https://fiji.sc/git/?p=imglib.git;a=tree;f=algorithms/core/src/main/java/net/imglib2/algorithm/gauss;hb=refs/heads/master' released='20 December 2011' latest-version='20 December 2011' status='active' website='http://fly.mpi-cbg.de/preibisch' %}
-
-### Gauss Package for ImgLib2
+# Gauss Package for ImgLib2
 
 ## Purpose
 

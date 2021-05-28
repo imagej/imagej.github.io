@@ -439,7 +439,7 @@ Use the {% include bc path='Help | [Report a Bug](/discuss/bugs)' %} command, wh
 
 ## I reported an issue, but it is still not fixed! Why not?
 
-[ImageJ](/software/imagej) is an [Open Source](Open_Source) community project. The list of [contributors](/people) is large but most of the people involved are not paid to work on it. We greatly value community contributions and assistance.
+[ImageJ](/software/imagej) is an [Open Source](/licensing/open-source) community project. The list of [contributors](/people) is large but most of the people involved are not paid to work on it. We greatly value community contributions and assistance.
 
 There are not many professional developers whose formal jobs include responding to and addressing bug reports. These developers are not paid *solely* to fix bugs—rather, they are working to solve scientific problems and to advance the software's capabilities. And their attention is spread thin across many projects: [ImageJ](https://github.com/imagej), [Fiji](https://github.com/fiji), [SCIFIO](https://github.com/scifio), [SciJava](https://github.com/scijava), [LOCI](https://github.com/uw-loci), [OME](https://github.com/openmicroscopy), [ImgLib2](https://github.com/imglib), [OpenSPIM](https://github.com/openspim), [SLIM Curve](https://github.com/slim-curve), [NAR plugin for Maven](https://github.com/maven-nar), and others.
 
@@ -493,7 +493,7 @@ A shorter term pragmatic solution would be an ImageJ web client that connects to
 
 ## Why is open software vital to science?
 
-See the [Open Source](Open_Source) page!
+See the [Open Source](/licensing/open-source) page!
 
 ## Is Java still free and open source? I heard Oracle is charging for Java now!
 

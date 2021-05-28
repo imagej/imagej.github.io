@@ -3,7 +3,8 @@ mediawiki: Neuroanatomy:External_Resources
 title: Neuroanatomy ›External Resources
 ---
 
-This page lists [Open Source](Open_Source) resources that complement [SNT](/plugins/snt).
+This page lists [Open Source](/licensing/open-source)
+resources that complement [SNT](/plugins/snt).
 
 ## Online Tools
 

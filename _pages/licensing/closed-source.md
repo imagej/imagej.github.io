@@ -2,11 +2,13 @@
 mediawiki: Why_Closed-Source_Is_Wrong
 title: Why Closed-Source Is Wrong
 categories: [development]
+section: Contribute:Licensing:Proprietary
 ---
 
 This page has a few war stories about having to fight with developing software where you should not need to fight.
 
-**Note:** there are places for closed-source. Research, however, is only impeded by closed-source.
+{% include notice icon="info" content="There are places for closed-source.
+  Research, however, is only impeded by closed-source." %}
 
 ## QuickTime for Java
 

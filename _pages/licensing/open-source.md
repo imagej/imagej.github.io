@@ -1,16 +1,11 @@
 ---
 mediawiki: Open_Source
-title: Open Source
-categories: [Development]
+title: Why Open Source?
+description: This page highlights the benefits of open source software.
+section: Contribute:Licensing:Open Source
 ---
 
-![ 64px \| left \| link=https://opensource.org/](/media/osi-symbol.png) The [ImageJ](/software/imagej) project, and related projects in the [SciJava](/libs/scijava) software ecosystem, are open source software projects. See the [Licensing](/licensing) page for details.
-
-Everybody is welcome to [contribute](/contribute) with [plugins](/plugins), patches, [bug reports](/discuss/bugs), [tutorials](/tutorials), [documentation](/learn), and artwork.
-
 The [SciJava](/libs/scijava) ecosystem is strongly committed to open-source software development. This software is not an open source software *product*—it is an open-source software *project* following an open-source development *process*. There are public [source code repositories](/develop/source), public [communication](/discuss/#ways-to-get-help) channels, public [project management](/develop/project-management) resources, and of course, this [community editable website](/editing). See the [Philosophy](/develop/philosophy) page for more information.
-
-## Why open source?
 
 One core principle of the {% include wikipedia title='Scientific method' text='scientific method'%} is repeatability: the ability to continually retest and refine hypotheses. As computer software plays an increasingly large role in science, it is vital that that software be fully transparent and available to researchers: software is simply too complex to be easily [reproduced](/develop/architecture#reproducible-builds) from scratch by every research group. In contrast, closed source software presents a barrier to {% include wikipedia title='Open research computation#Reproducibility_and_open_research_computing' text='open research'%}, because the implementation details of algorithms cannot be freely modified or even necessarily verified.
 
@@ -33,4 +28,4 @@ Further, we strive for ImageJ to be a community driven project. It is not merely
 
 Using these resources, you can always observe the latest progress of the project, get an idea of where the project is heading, contribute code to the project yourself using GitHub, or write documentation, tutorials and other information on the wiki.
 
-See also LOCI's [Open Source in Science](http://loci.wisc.edu/software/oss) article.
+See also LOCI's [Open Source in Science](https://uw-loci.github.io/oss) article.
