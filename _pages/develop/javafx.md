@@ -45,4 +45,4 @@ This section aims to give some guidelines to be able to build ImageJ plugins wit
 There is a **minimal, incomplete ImageJ plugin** that
 shows how to use JavaFX for the UI of a plugin:
 
-{% include link-banner url="https://github.com/ctrueden/imagej-plugins-javafx %}
+{% include link-banner url="https://github.com/ctrueden/imagej-plugins-javafx" %}
