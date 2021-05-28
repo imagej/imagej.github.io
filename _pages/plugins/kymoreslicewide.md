@@ -6,7 +6,7 @@ categories: [Stacks,Plugins]
 
 {% include info-box software='ImageJ' name='KymoResliceWide' author=' [Eugene Katrukha](http://katpyxa.info) and Laurie Young' maintainer='[Eugene Katrukha](mailto:katpyxa_at_gmail.com)' filename=' [KymoResliceWide\_.jar](https://github.com/ekatrukha/KymoResliceWide/blob/master/KymoResliceWide_.jar?raw=true)' source=' [github](https://github.com/ekatrukha/KymoResliceWide)' released='24 September 2014' latest-version='1 April 2017' status='stable' category='[Stacks](/plugin-index#stacks)' website=' [wiki\_page](https://github.com/ekatrukha/KymoResliceWide/wiki)' %}
 
-This plugin builds [kymographs](/tutorials/generate-and-exploit-kymographs) using straight line, polyline or freehand selection of variable thickness (and using either average or maximum intensity across the line). So it is extended implementation of ImageJ's *Reslice* function. Here are some thought on "[Why another kymograph plugin?](http://katpyxa.info/feedbacks/?p=26)".
+This plugin builds [kymographs](/tutorials/generate-and-exploit-kymographs) using straight line, polyline or freehand selection of variable thickness (and using either average or maximum intensity across the line), working also on Hyper-/RGB stacks. So it is extended implementation of ImageJ's *Reslice* function. Here are some thought on "[Why another kymograph plugin?](http://katpyxa.info/feedbacks/?p=26)".
 
 ## Using plugin
 
@@ -18,19 +18,19 @@ You can use ImageJ's *native* **embedded** characteristics of the line/curve, li
 Plugin automatically picks up your choice of line selection from ImageJ and corrects for its length.  
 Just use the one you need.
 
-http://katpyxa.info/software/KymoResliceWide/line_selection2.png
+![External image](http://katpyxa.info/software/KymoResliceWide/line_selection2.png)
 
 ### Line width
 
 Define the width of line using double click on the line selection tool in ImageJ
 
-http://katpyxa.info/software/KymoResliceWide/line_width2.png
+![External image](http://katpyxa.info/software/KymoResliceWide/line_width2.png)
 
 ### Parameters
 
 After that the window showing kymograph parameters will pop-up:
 
-http://katpyxa.info/software/KymoResliceWide/choice2.png
+![External image](http://katpyxa.info/software/KymoResliceWide/choice2.png)
 
 Where following options are available (in order):
 
