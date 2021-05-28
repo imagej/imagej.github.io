@@ -9,9 +9,11 @@ This page demonstrates how to add a citation to your page.
 
 ## Citation Options
 
-There are currently two options to include citations on your page:
-`include citation`: allows you to create a single-use citation, or footnote
-`include publication`: pulls a pre-formatted citation from a [list of frequently cited publications](/contribute/citing).
+There are currently three options to include citations on your page:
+
+* `include citation`: allows you to create a single-use citation, or footnote
+* `include publication`: pulls a pre-formatted citation from a [list of frequently cited publications](/contribute/citing).
+* `include testimonial`: allows a personal quote from a [person](/people)
 
 ## Include Citations
 
@@ -60,6 +62,28 @@ This include uses the following field:<br><br>
 *produces:*
 
 {% include publication content='3D Viewer' %}
+
+## Include Testimonial
+
+### Usage
+This include is used to quote a particular individual. Available fields:
+
+* **person** can be any user from [this list](/people)
+* **quote** is the text that will be displayed
+* **source** is a link to the original quotation
+
+### Example
+*The following liquid code:*
+```
+{% raw %}
+{% include testimonial person='ctrueden' quote='ON VACATION UNTIL OCTOBER 5. For real this time!' source='https://forum.image.sc/t/coba-imagej-fiji-2020-summer-progress-report-and-fall-roadmap/42450' %}
+{% endraw %}
+```
+*produces:*
+
+{% include testimonial person='ctrueden' quote='ON VACATION UNTIL OCTOBER 5. For real this time!' source='https://forum.image.sc/t/coba-imagej-fiji-2020-summer-progress-report-and-fall-roadmap/42450' %}
+
+{% include clear %}
 
 ## Creating footnotes
 

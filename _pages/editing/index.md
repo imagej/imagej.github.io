@@ -139,10 +139,10 @@ The following tables list all of this site's general-purpose includes:
 
 | Include                              | Purpose                    |
 |--------------------------------------|----------------------------|
-| [citation](citations)                | Insert a citation          |
-| [cite](citations)                    | Insert a citation          |
-| [publication](TODO)                  | Insert a citation by name  |
-| [testimonial](TODO)                  | Insert a personal quote    |
+| [citation](citations#include-citations)                | Insert a citation          |
+| [cite](citations#include-citations)                    | Insert a citation          |
+| [publication](citations#include-publication)           | Insert a citation by name  |
+| [testimonial](citations#include-testimonial)           | Insert a personal quote    |
 
 #### Linking
 
