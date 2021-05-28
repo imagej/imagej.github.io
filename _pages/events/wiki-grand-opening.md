@@ -1,14 +1,14 @@
 ---
 mediawiki: NONE
 title: The Great Wiki Launch
-description: This page covers the ImageJ community's effort to launch the new ImageJ wiki.
+description: This page organizes the community effort to launch the new ImageJ wiki.
 ---
 
 | **What**  | In order to launch the new ImageJ website at the highest possible level of quality, we need to do a pass over all the content, [correcting broken syntax](https://github.com/imagej/imagej.github.io/issues/117), [organizing the plugin categories](https://github.com/imagej/imagej.github.io/issues/119), and making notes about any remaining issues. |
 | **Why**   | Because there are more than 1400 pages which were mass converted from the old MediaWiki, and there are still rough edges that cannot be fixed automatically. |
-| **Who**   | ***We will all do it as a team!*** Please join us! |
+| **Who**   | ***We will all do it as a team!*** Please join us&mdash;[sign up here](https://docs.google.com/spreadsheets/d/1CdRCMFBXCg6ypDGdDaZNEN5cBY_1Ye47-kyTZQ11wBQ/edit#gid=0) |
 | **Where** | We will meet virtually in the [wiki chat room](https://gitter.im/imagej/imagej.github.io) and in a [gather.town space](https://gather.town/app/ipHMoZp6WOdATHE4/FijiHackathon) (for audio/video; still under construction). |
-| **When**  | Monday, June 1 through Thursday, June 4: the first of five **virtual Fiji summer hacking weeks**. Kickoff meeting (attendance optional!) will be Monday at 1300 UTC (3pm CEST / 8am CT). |
+| **When**  | Tuesday, June 1 through Thursday, June 3: the first of five **virtual Fiji summer hacking weeks**. Kickoff meeting (attendance optional!) will be Monday at 1300 UTC (3pm CEST / 8am CT). |
 | **How**   | The [How you can help](#how-you-can-help) section below has all the details. |
 
 ## About gather.town
@@ -36,25 +36,30 @@ it is likely this will be on gather.town.
 
 {% include notice icon="tip" content="Even if you only have a little time to
   help, anything you can do to make progress will help to launch the site by
-  the target date of Friday, June 4!" %}
+  the target date of Friday, June 4!
+  [Sign up here](https://docs.google.com/spreadsheets/d/1CdRCMFBXCg6ypDGdDaZNEN5cBY_1Ye47-kyTZQ11wBQ/edit#gid=0)."
+%}
 
 More details will be posted here in the next 24 hours. PLEASE STAY TUNED!
 
 **What's coming:**
 * A checklist of details to consider when reviewing a page.
 * A guide covering how to correct common problems discovered.
-* A Google Spreadsheet link listing pages left to review, where you
-  will claim pages as you work on them, to avoid duplicating effort.
 * Instructions on how to file issues on GitHub for problems
   that are too complex for us to fix during the hackathon week.
 * Suggestions on how to choose pages you might enjoy working on.
 
 ## Important links
 
-* The [Image.sc Forum thread](https://forum.image.sc/t/53246)
+* [Organizational spreadsheet](https://docs.google.com/spreadsheets/d/1CdRCMFBXCg6ypDGdDaZNEN5cBY_1Ye47-kyTZQ11wBQ/edit)
+  with two parts: the
+  [sign-up sheet](https://docs.google.com/spreadsheets/d/1CdRCMFBXCg6ypDGdDaZNEN5cBY_1Ye47-kyTZQ11wBQ/edit#gid=0)
+  and the
+  [pages to review](https://docs.google.com/spreadsheets/d/1CdRCMFBXCg6ypDGdDaZNEN5cBY_1Ye47-kyTZQ11wBQ/edit#gid=1).
+* [Image.sc Forum thread](https://forum.image.sc/t/53246)
   where this project is being discussed.
-* The [wiki editing guide](/editing) which teaches how to edit this wiki.
-* The [Road to Production](https://github.com/imagej/imagej.github.io/projects/2)
+* [Wiki editing guide](/editing) which teaches how to edit this wiki.
+* [Road to Production](https://github.com/imagej/imagej.github.io/projects/2)
   project board on GitHub with a bird's eye view of issues
   remaining to address before the site launches. As a group,
   we will focus on issues in the "To do - crowdsource!" column,
