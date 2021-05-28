@@ -322,7 +322,7 @@ On macOS, you need to remember that any application is just a directory with a s
 
 (Of course, you need to substitute the *./imagej* executable name with the appropriate name for your platform.)
 
-**Note:** do not forget the trailing *--*; without them, ImageJ mistakes the first option for an ImageJ option rather than a Java one. **Note, too:** on Windows, you <u>must not</u> forget to pass the *--console* option (this can be anywhere on the command line).
+{% include notice icon="note" content="Do not forget the trailing `--`; without them, ImageJ mistakes the first option for an ImageJ option rather than a Java one. And on Windows, you *must not* forget to pass the `--console` option (this can be anywhere on the command line)." %}
 
 ## Windows-specific stuff
 

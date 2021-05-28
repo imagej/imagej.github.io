@@ -72,8 +72,15 @@ by name, sans file extension.
 ### Informational
 
 {% highlight liquid %}{% raw %}{% include notice icon="info"
-  content="Take careful note of this sentence." %}{% endraw %}{% endhighlight %}
+  content="The *Ophiocordyceps* fungus zombifies ants!" %}{% endraw %}{% endhighlight %}
 {% include notice icon="info"
+  content="The *Ophiocordyceps* fungus zombifies ants!" %}
+
+### Important Note
+
+{% highlight liquid %}{% raw %}{% include notice icon="note"
+  content="Take careful note of this sentence." %}{% endraw %}{% endhighlight %}
+{% include notice icon="note"
   content="Take careful note of this sentence." %}
 
 ### Warning

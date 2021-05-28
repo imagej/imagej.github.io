@@ -52,7 +52,7 @@ This example shows how to [concatenate](https://www.techopedia.com/definition/34
     name = "Bob";
     msg = "Those days are over, " + name;
 
-**Note:** a common pitfall is to include the name of a variable in a string. The following code demonstrates this:
+A common pitfall is to include the name of a variable in a string. The following code demonstrates this:
 
 (**BAD** lines are commented out to discourage copying them. If you paste this code in the [script editor](/scripting/script-editor), you can uncomment these lines to see their errors)
 
@@ -66,7 +66,7 @@ The same principle applies when using variables which reflect parameters passed 
     //run("Median...", "radius=specifiedRadius");  // BAD - will literally pass "specifiedRadius"
     run("Median...", "radius=" + specifiedRadius); // GOOD - will correctly pass the radius variable value
 
-**Note:** when concatenating strings, whitespace will not automatically be added. So care must be taken, for example when spaces are *desired*.
+When concatenating strings, whitespace will not automatically be added. So care must be taken, for example when spaces are *desired*.
 
     // We want to use the "Li white" threshold
 

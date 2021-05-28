@@ -96,7 +96,8 @@ After all individual timepoints are registered and the cropping area is defined 
 
 <!-- -->
 
--   **Display registration**: This will display an interactive window visualizing the global optimization process. **Note:** This slows down the optimization.
+-   **Display registration**: This will display an interactive window visualizing the global optimization process.
+    {% include notice icon="note" content="This slows down the optimization." %}
 
 <!-- -->
 
@@ -107,11 +108,13 @@ After all individual timepoints are registered and the cropping area is defined 
 
 <!-- -->
 
--   **Fusion use Blending**: Checked if blending at the edges of the overlapping views should be applied; this removes brightness differences at the hyperplanes where the overlapping images intersect. **Note:** If neither Blending nor Content based Weightening is selected, only averaging is performed for fusion.
+-   **Fusion use Blending**: Checked if blending at the edges of the overlapping views should be applied; this removes brightness differences at the hyperplanes where the overlapping images intersect.
+    {% include notice icon="note" content="If neither Blending nor Content based Weightening is selected, only averaging is performed for fusion." %}
 
 <!-- -->
 
--   **Fusion use Content based Weightening**: Checked if the content-based weightening should be used; this weights each pixel of each view by its local information content and thereby increases the contrast of the output image. **Note:** The content based weightening is rather fast but consumes a lot of RAM. If neither Blending nor Content based Weightening is selected, only averaging is performed for fusion.
+-   **Fusion use Content based Weightening**: Checked if the content-based weightening should be used; this weights each pixel of each view by its local information content and thereby increases the contrast of the output image.
+    {% include notice icon="note" content="The content based weightening is rather fast but consumes a lot of RAM. If neither Blending nor Content based Weightening is selected, only averaging is performed for fusion." %}
 
 <!-- -->
 
@@ -119,8 +122,10 @@ After all individual timepoints are registered and the cropping area is defined 
 
 <!-- -->
 
--   **Crop Offset Output Image X/Y/Z**: Defines the cropping offset in the x/y/z-dimension of the output image relative to the uncropped image. A value of 0 means no cropping. **Note:** All the values are relative to the downsampling factor in **Output Image Scaling**.
--   **Crop Size Output Image X/Y/Z**: Defines the cropped size in the x/y/z-dimension of the output image relative to the uncropped image. A value of 0 means no cropping. **Note:** All the values are relative to the downsampling factor in **Output Image Scaling**.
+-   **Crop Offset Output Image X/Y/Z**: Defines the cropping offset in the x/y/z-dimension of the output image relative to the uncropped image. A value of 0 means no cropping.
+    {% include notice icon="note" content="all the values are relative to the downsampling factor in **Output Image Scaling**." %}
+-   **Crop Size Output Image X/Y/Z**: Defines the cropped size in the x/y/z-dimension of the output image relative to the uncropped image. A value of 0 means no cropping.
+    {% include notice icon="note" content="all the values are relative to the downsampling factor in **Output Image Scaling**." %}
 
 ## Plugin Wishlist
 

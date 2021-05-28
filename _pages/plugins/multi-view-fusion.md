@@ -80,23 +80,27 @@ In the second dialog, you have to define the details of the multi-view fusion. I
 
 <!-- -->
 
--   **Apply blending:** Check this if you want to apply blending at the edges of the overlapping views; this removes brightness differences at the hyperplanes where the overlapping images intersect. **Note:** If neither blending nor content-based weightening is selected, only normal averaging is performed for fusion.
+-   **Apply blending:** Check this if you want to apply blending at the edges of the overlapping views; this removes brightness differences at the hyperplanes where the overlapping images intersect.
+    {% include notice icon="note" content="If neither blending nor content-based weightening is selected, only normal averaging is performed for fusion." %}
 
 <!-- -->
 
--   **Apply content-based weightening:** Check this if the content-based weightening should be used; this weights each pixel of each view by its local information content and thereby increases the contrast of the output image. **Note:** The content based weightening is rather fast but consumes a lot of RAM.
+-   **Apply content-based weightening:** Check this if the content-based weightening should be used; this weights each pixel of each view by its local information content and thereby increases the contrast of the output image.
+    {% include notice icon="note" content="The content based weightening is rather fast but consumes a lot of RAM." %}
 
-**Note:** Blending and content-based fusion can be combined!
+{% include notice icon="note" content="Blending and content-based fusion can be combined!" %}
 
 -   **Downsample image n-times:** The factor defines the downsampling of the output image, e.g. 2 means that the output image will be half as big in each dimension and therefore need 8x less RAM than the full resolution output image. This is especially useful if the bounding box around the imaged sample (defined below) is not known yet as has to be determined.
 
 <!-- -->
 
--   **Crop output image offset x/y/z:** Defines the offset of the cropping area (bounding box) in the x/y/z-dimension of the output image relative to the uncropped image. A value of 0 refers to the top-front-left corner of the bounding box surrounding all views. **Note:** All the values are relative to the downsampling factor in **downsample image n-times**.
+-   **Crop output image offset x/y/z:** Defines the offset of the cropping area (bounding box) in the x/y/z-dimension of the output image relative to the uncropped image. A value of 0 refers to the top-front-left corner of the bounding box surrounding all views.
+    {% include notice icon="note" content="All the values are relative to the downsampling factor in **downsample image n-times**." %}
 
 <!-- -->
 
--   **Crop output image size x/y/z:** Defines the size of the cropping area (bounding box) in the x/y/z-dimension of the output image relative to the uncropped image. A value of 0 means no cropping. **Note:** All the values are relative to the downsampling factor in **downsample image n-times**.
+-   **Crop output image size x/y/z:** Defines the size of the cropping area (bounding box) in the x/y/z-dimension of the output image relative to the uncropped image. A value of 0 means no cropping.
+{% include notice icon="note" content="All the values are relative to the downsampling factor in **downsample image n-times**." %}
 
 <!-- -->
 
@@ -106,4 +110,4 @@ In the second dialog, you have to define the details of the multi-view fusion. I
 
 -   **Save output image:** Write the fused image(s) to disk when finished. It will save the output image(s) as a collection of two-dimensional planes.
 
-**Note:** A suggested bounding box for the [example dataset](http://fly.mpi-cbg.de/preibisch/nm/HisYFP-SPIM.zip) is offset: \[272, 352, 360\] -- size: \[720, 380, 350\]
+{% include notice icon="note" content="A suggested bounding box for the [example dataset](http://fly.mpi-cbg.de/preibisch/nm/HisYFP-SPIM.zip) is offset: \[272, 352, 360\] -- size: \[720, 380, 350\]" %}

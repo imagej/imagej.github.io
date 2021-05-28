@@ -491,7 +491,7 @@ In IntelliJ IDEA you may want to make sure that the JUnit5 Plugin is activated. 
         </plugins>
     </build>
 
-**Note:** if you want to test GUI tests with TravisCI you have to activate a virtual display as described in the Travis CI chapter.
+{% include notice icon="note" content="If you want to test GUI tests with TravisCI you have to activate a virtual display as described in the Travis CI chapter." %}
 
 ## Continuous Integration with Travis CI
 

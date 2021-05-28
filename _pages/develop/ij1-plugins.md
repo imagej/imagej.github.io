@@ -82,7 +82,7 @@ A general plugin looks like this:
         }
     }
 
-**Note:** it is of course possible to implement a filter plugin using the *PlugIn* interface, but ImageJ will perform more convenience functions if you use the *PlugInFilter* interface, such as verifying that there is an image and that it is of the correct type, and error handling.
+{% include notice icon="note" content="It is of course possible to implement a filter plugin using the `PlugIn` interface, but ImageJ will perform more convenience functions if you use the `PlugInFilter` interface, such as verifying that there is an image and that it is of the correct type, and error handling." %}
 
 ## Limitations
 
@@ -195,7 +195,7 @@ In ImageJ, you can represent more than 3 dimensions in an image: *X, Y, Z, chann
     int index = image.getStackIndex(channel, slice, frame);
     ImageProcessor ip = stack.getProcessor(index);
 
-**Note:** for historical reasons, slice indices (and channel and frame indices as well) start at <u>1</u>. This is in contrast, e.g. to the x, y coordinates, which start at <u>0</u> (as one might be used to from other computer languages except BASIC, Pascal and [MATLAB](/scripting/matlab)).
+{% include notice icon="note" content="For historical reasons, slice indices (and channel and frame indices as well) start at *1*. This is in contrast, e.g. to the x, y coordinates, which start at *0* (as one might be used to from other computer languages except BASIC, Pascal and [MATLAB](/scripting/matlab))." %}
 
 ## Working with the pixels' values
 
@@ -219,7 +219,7 @@ Since the original data type might be 8-bit, that operation can require a *cast*
             ...
         }
 
-**Note:** The previous example assumes that your images are 8-bit (unsigned, i.e. values between 0 and 255) images. Since Java has no data type for unsigned 8-bit integers, we have to use the *& 0xff* dance (a *Boolean AND* operation) to make sure that the value is treated as unsigned integer.
+{% include notice icon="note" content="The previous example assumes that your images are 8-bit (unsigned, i.e. values between 0 and 255) images. Since Java has no data type for unsigned 8-bit integers, we have to use the `& 0xff` dance (a *Boolean AND* operation) to make sure that the value is treated as unsigned integer." %}
 
 Accessing the pixels' values gets trickier when it comes to RGB images. These use the native data type *int* (32-bit signed integer) to encode 3 color channels à 8-bit, packed into the lower 24 bits (note that ImageJ might store things in the upper 8 bits, so you cannot assume them to be 0). Therefore, the *getf()* method of the *ImageProcessor* class does not make sense on color images. You have to access the pixels like this:
 
@@ -273,7 +273,7 @@ This code snippet shows you how to update the progress bar and the status text:
     // show something in the status bar
     IJ.showStatus("Hello, world!");
 
-**Note:** Calling *IJ.showProgress(n, n);* will hide the progress bar; Therefore, it makes sense to update the progress bar at the <u>end</u> of a loop iteration, so that after the last iteration, the progress bar is hidden.
+{% include notice icon="note" content="Calling `IJ.showProgress(n, n);` will hide the progress bar; Therefore, it makes sense to update the progress bar at the *end* of a loop iteration, so that after the last iteration, the progress bar is hidden." %}
 
 ## Frequently used operators
 
@@ -358,7 +358,7 @@ You can access the ROIs in the following fashion:
             IJ.log("point " + i + ": " + (x[i] + bounds.x) + (y[i] + bounds.y));
     }
 
-**Note:** If the image has no ROI set, then *getRoi()* will return *null*, so you <u>must</u> check whether *roi != null* before accessing fields or methods on the object.
+{% include notice icon="note" content="If the image has no ROI set, then `getRoi()` will return `null`, so you *must* check whether `roi != null` before accessing fields or methods on the object." %}
 
 Of course, you can also set ROIs programmatically:
 

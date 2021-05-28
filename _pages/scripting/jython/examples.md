@@ -1312,11 +1312,12 @@ You can use the Python function *dir(<package>)* to see the contents of a packag
     import ij
     print dir(ij)
 
-**Note:** As of April 26nd, 2010, you need to start Fiji with
+{% include notice icon="note" content="As of April 26nd, 2010, you need to start Fiji with:
+```
+fiji -Dpython.cachedir.skip=false --
+```
 
-`fiji -Dpython.cachedir.skip=false --`
-
-for *dir(<package>)* to work.
+for `dir(<package>)` to work." %}
 
 ### Specifying the encoding of the source
 

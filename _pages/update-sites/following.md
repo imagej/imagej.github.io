@@ -31,7 +31,7 @@ Click on the *Manage update sites* button to bring up the site management dialog
 
 If the update site you want to follow is listed, just click the checkbox next to its name. If it is not listed, you can add Click the *Add update site* button and fill in the name of your choice for the site and the URL, which would be provided by the plugin's author or distributor.
 
-**Note:** the list of update sites shown by default is generated from a special page, which you can [view and edit here](/list-of-update-sites). Update site maintainers are encouraged to add their update site to this list, as it both helps the community and the developers.
+{% include notice icon="note" content="The list of update sites shown by default is generated from a special page, which you can [view and edit here](/list-of-update-sites). Update site maintainers are encouraged to add their update site to this list, as it both helps the community and the developers." %}
 
 After you have selected your desired update site(s), close the dialog. The list of plugins that will be installed or updated from the chosen sites will now show up:
 

@@ -87,15 +87,15 @@ Code snippets are available in the [Developer view](#for-developers). These are 
 
 1\. The first thing to do is find an Op of interest. In this case, we start from the [User view](#for-users) and see that there is a Convolve Op we want to try:
 
-
 ![](/media/plugins/1-select-op.png)
 
 2\. In the [Script Editor](/scripting/script-editor) (the keyboard shortcut {% include key key='{' %} (open curly bracket) opens the editor), we need to add a reference to the `OpService` which will be our entry point for Op usage:
 
-    # @OpService ops
+```
+#@ OpService ops
+```
 
-
-**Note:** this guide is written in [Python](/scripting/jython) but any scripting language will work
+{% include notice icon="note" content="This guide is written in [Python](/scripting/jython) but any scripting language will work." %}
 
 3\. Now we need the code call for our Convolve Op, so we switch to the [Developer view](#for-developers). The code is long, but remember we can [copy](#parts-of-the-op-finder):
 
@@ -109,7 +109,7 @@ and paste:
 
 <!-- -->
 
-    # @OpService ops
+    #@ OpService ops
 
     ops.run("filter.convolve", Img, Img, RandomAccessibleInterval, long[], OutOfBoundsFactory, OutOfBoundsFactory, RealType, ImgFactory)
 
@@ -125,21 +125,23 @@ All of the parameters with a {% include key key='?' %} are **optional**. For our
 
 <!-- -->
 
-    # @OpService ops
+    #@ OpService ops
 
     out = ops.run("filter.convolve", Img, RandomAccessibleInterval)
 
 5\. At this stage, we can not actually run our code yet. The pasted snippet serves as a guideline for what types of parameters are needed and produced. The next step is to ask the framework for instances of these parameters by adding [@Parameters](/scripting/parameters) to our script:
 
-    # @OpService ops
-    # @Dataset input
-    # @Dataset kernel
-    # @OUTPUT ImgPlus out
+    #@ OpService ops
+    #@ Dataset input
+    #@ Dataset kernel
+    #@ OUTPUT ImgPlus out
 
     out = ops.run("filter.convolve", input, kernel)
 
-
-**Note:** the types we copied and pasted (`Img` and `RandomAccessibleInterval`) represent a *minimum class requirement*. Open images can always be requested as `Datasets`, which have a type hierarchy including {% include bc path='ImgPlus|Img|RandomAccessibleInterval'%}. `Dataset` is thus a good starting point as it can satisfy any of these parameters. If you want to have multiple input image parameters, you **must** use `@Dataset`.
+{% capture minimum-class-requirement %}
+The types we copied and pasted (`Img` and `RandomAccessibleInterval`) represent a *minimum class requirement*. Open images can always be requested as `Dataset`s, which have a type hierarchy including {% include bc path='ImgPlus|Img|RandomAccessibleInterval' %}. `Dataset` is thus a good starting point as it can satisfy any of these parameters. If you want to have multiple input image parameters, you **must** use `#@ Dataset`.
+{% endcapture %}
+{% include notice icon="note" content=minimum-class-requirement %}
 
 6\. Our script is done! If we open a base image and kernel in ImageJ we can run our script. The `OpService` is populated automatically by the ImageJ framework, and an input window is automatically created to select the images:
 

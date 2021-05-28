@@ -5,12 +5,13 @@ title: Uploading plugins
 
 {% include warning/outdated %}
 
-**Note**: Please make sure that you have a clean build of the plugin you try to upload. You can ensure a clean build by calling the [Fiji Build System](/develop) with the *-clean* suffix before building the actual target. Example:
+{% include notice icon="note" content="Please make sure that you have a clean build of the plugin you try to upload. You can ensure a clean build by calling the [Fiji Build System](/develop) with the `-clean` suffix before building the actual target. Example:
 
 ```
 ./Build.sh plugins/Fiji_Plugins.jar-clean
 ./Build.sh plugins/Fiji_Plugins.jar
 ```
+" %}
 
 ## The graphical way (recommended)
 
@@ -22,7 +23,7 @@ Please make sure that there are <u>no</u> updateable files, lest you overwrite n
 
 <figure><img src="/media/develop/updater-select-upload.png" title="Updater-select-upload.png" width="750" alt="Updater-select-upload.png" /><figcaption aria-hidden="true">Updater-select-upload.png</figcaption></figure>
 
-**Note:** if you want to upload a new file, i.e. a file Fiji does not know anything about yet, you have to switch to *Advanced Mode* yourself and select the view option *View non-Fiji plugins only*.
+{% include notice icon="note" content="If you want to upload a new file, i.e. a file Fiji does not know anything about yet, you have to switch to *Advanced Mode* yourself and select the view option *View non-Fiji plugins only*." %}
 
 Please make sure that the information in the *Details* is correct; you can edit it by clicking into the text and modifying it in-place.
 
@@ -30,7 +31,7 @@ Please make sure also that the files you are about to upload are clean. You shou
 
 Once everything is ready for upload, just click the button *Upload to Server*.
 
-**Note:** you will need to have an account on [fiji.sc](/contribute/funding) which is in the group *updaters*, and you will only be offered the upload option by the Updater if you work from a working directory with source files.
+{% include notice icon="note" content="You will need to have an account on [fiji.sc](/contribute/funding) which is in the group *updaters*, and you will only be offered the upload option by the Updater if you work from a working directory with source files." %}
 
 ## Using the command line
 

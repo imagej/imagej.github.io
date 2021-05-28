@@ -57,7 +57,7 @@ It can save to the open [OME-TIFF](https://docs.openmicroscopy.org/latest/ome-mo
 -   [Vaa3d](https://github.com/Vaa3D/Vaa3D_Wiki/wiki/Vaa3D-Wiki) (\*.v3draw)
 -   [Woolz](https://www.emouseatlas.org/emap/analysis_tools_resources/software/woolz.html) (\*.wlz)
 
-**Note:** For OME-TIFF and TIFF formats, the file extensions **\*.tif** and **\*.tiff** are associated with the standard 32-bit TIFF, which has a 4GB size limit. On the other hand, the file extensions **\*.tf2**, **\*.tf8**, and **\*.btf** are automatically associated with [the 64-bit BigTIFF format](https://www.awaresystems.be/imaging/tiff/bigtiff.html), which can store much bigger data.
+{% include notice icon="note" content="For OME-TIFF and TIFF formats, the file extensions `*.tif` and `*.tiff` are associated with the standard 32-bit TIFF, which has a 4GB size limit. On the other hand, the file extensions `*.tf2`, `*.tf8`, and `*.btf` are automatically associated with [the 64-bit BigTIFF format](https://www.awaresystems.be/imaging/tiff/bigtiff.html), which can store much bigger data." %}
 
 ### Bio-Formats Remote Importer
 

@@ -42,6 +42,7 @@ Adds a stylized notice.
       {%- when "imagej2" -%} #fadd8d
       {%- when "info"    -%} #67a1fe
       {%- when "linux"   -%} black
+      {%- when "note"    -%} #901913
       {%- when "tech"    -%} #bdbdbd
       {%- when "tip"     -%} #7e7e7e
       {%- when "warning" -%} #f57900

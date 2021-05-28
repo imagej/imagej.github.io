@@ -7,7 +7,7 @@ section: Contribute:Licensing:Proprietary
 
 This page has a few war stories about having to fight with developing software where you should not need to fight.
 
-{% include notice icon="info" content="There are places for closed-source.
+{% include notice icon="note" content="There are places for closed-source.
   Research, however, is only impeded by closed-source." %}
 
 ## QuickTime for Java

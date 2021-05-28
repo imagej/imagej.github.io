@@ -13,7 +13,10 @@ For more information about Maven, see:
 
 ## Install m2eclipse
 
-**Note:** if you use Eclipse 3.7 Indigo or newer, you most likely have m2e already. If your {% include bc path='File | Import'%} offers you a *Maven* section, you have it, and can skip the rest of this section.
+{% capture newer-eclipses-ship-m2e -%}
+If you use Eclipse 3.7 Indigo or newer, you most likely have m2e already. If your {% include bc path='File | Import' %} offers you a *Maven* section, you have it, and can skip the rest of this section.
+{%- endcapture -%}
+{% include notice icon="note" content=newer-eclipses-ship-m2e %}
 
 -   From the Eclipse menu, choose {% include bc path='Help | Install New Software...'%}
 -   Click the Add button to add an update site:

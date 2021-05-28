@@ -39,9 +39,9 @@ After the images are loaded and displayed to a user, the user should verify that
 
 The last phase deals with model training. It is required to set a path where a model will be saved. Then, after pressing the `Train` button, the plugin will extract features from the images and start training the model.
 
-**Note:** When the training starts, the values of the form inputs are saved and will be used to pre-fill the form in the next training.
+{% include notice icon="note" content="When the training starts, the values of the form inputs are saved and will be used to pre-fill the form in the next training.
 
-**Note:** The training will probably take several minutes (depending on the number and size of the input images, or your computer performance). It also uses a lot of CPU and operational memory.
+The training will probably take several minutes (depending on the number and size of the input images, or your computer performance). It also uses a lot of CPU and operational memory." %}
 
 ### Training protocol
 
@@ -63,7 +63,7 @@ The selected input directory must exist and must contain at least one image. Cur
 
 The output directory must exist; and if it is not empty, the plugin will ask for a confirmation. The directory will contain a segmentation for each input image and a protocol.
 
-**Note:** The input values will be saved and pre-filled for further analyses.
+{% include notice icon="note" content="the input values will be saved and pre-filled for further analyses." %}
 
 ### Analysis protocol
 

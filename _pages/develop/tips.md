@@ -106,9 +106,9 @@ The plots can be drawn in different colors like this:
 
 You might need to adjust the bounding box if the second plot does not match the bounding box of the first one by using the `setLimits()` method before the call to `plot.draw();`
 
-## Duplicate, or convert between, *ImageProcessor* types
+## Duplicate, or convert between, `ImageProcessor` types
 
-The `ImageProcessor` class has several useful methods: [duplicate()](https://javadoc.scijava.org/ImageJ1/ij/process/ImageProcessor.html#duplicate>()), [convertToByte()](https://javadoc.scijava.org/ImageJ1/ij/process/ImageProcessor.html#convertToByte(boolean)), \[<https://javadoc.scijava.org/ImageJ1/ij/process/ImageProcessor.html#convertToFloat>() convertToFloat()\], \[<https://javadoc.scijava.org/ImageJ1/ij/process/ImageProcessor.html#convertToRGB() convertToRGB()\], and [convertToShort()](https://javadoc.scijava.org/ImageJ1/ij/process/ImageProcessor.html#convertToShort(boolean)).
+The `ImageProcessor` class has several useful methods: [`duplicate()`](https://javadoc.scijava.org/ImageJ1/ij/process/ImageProcessor.html#duplicate>()), [`convertToByte()`](https://javadoc.scijava.org/ImageJ1/ij/process/ImageProcessor.html#convertToByte(boolean)), [`convertToFloat()`](https://javadoc.scijava.org/ImageJ1/ij/process/ImageProcessor.html#convertToFloat), [`convertToRGB()`](https://javadoc.scijava.org/ImageJ1/ij/process/ImageProcessor.html#convertToRGB()), and [`convertToShort()`](https://javadoc.scijava.org/ImageJ1/ij/process/ImageProcessor.html#convertToShort(boolean)).
 
 This [class](https://javadoc.scijava.org/ImageJ1/ij/process/ImageProcessor.html) also has some other goodies, such as methods for convolution.
 
@@ -116,7 +116,7 @@ This [class](https://javadoc.scijava.org/ImageJ1/ij/process/ImageProcessor.html)
 
 ImageJ (and therefore Fiji, too) has a way to store key/value pairs persistently, i.e. they are available even after a restart. The settings are stored in a file called *IJ\_Prefs.txt* in the subdirectory called *.imagej/* in your home directory (on Windows, directly in your home directory; on Mac, in *\~/Library/Preferences*).
 
-**Note:** the settings are only saved upon <u>regular</u> exit of Fiji; If you kill the process, or if the Java Runtime crashes, they are <u>not</u> saved. You can ask for the settings to be saved explicitly, though.
+{% include notice icon="note" content="The settings are only saved upon *regular* exit of Fiji; If you kill the process, or if the Java Runtime crashes, they are *not* saved. You can ask for the settings to be saved explicitly, though." %}
 
 Example:
 
@@ -136,7 +136,7 @@ Example:
         // explicitly save the preferences _now_
         Prefs.savePreferences();
 
-**Note:** do <u>not</u> use the `getString()` or `getInt()`; These methods do not have any setter methods, and they do <u>not</u> access the same values as the `get()` method (`get()` actually prefixes the keys with a dot)!
+{% include notice icon="note" content="Do *not* use the `getString()` or `getInt()`; These methods do not have any setter methods, and they do *not* access the same values as the `get()` method (`get()` actually prefixes the keys with a dot)!" %}
 
 ## How to turn a number into a string, using a given number of decimal places
 

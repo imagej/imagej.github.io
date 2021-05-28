@@ -93,7 +93,7 @@ Either way, you will need to make sure your maximum memory limit is set below \~
 
 We offer [a special intermediate release of Fiji specific to PowerPC Macs (G4/G5)](https://downloads.imagej.net/fiji/Heidelberg/fiji-macosx-ppc-20100802.dmg).
 
-**Note:** There is no Java 1.6 for PowerPC from Apple, meaning that Java comes at a considerable performance penalty on this platform. In addition, we will not be able to support Java versions prior to Java 1.6 at some stage, since that version offers a few features we want to rely on, such as [a versatile scripting framework](http://java.sun.com/developer/technicalArticles/J2SE/Desktop/scripting/).
+{% include notice icon="note" content="There is no Java 1.6 for PowerPC from Apple, meaning that Java comes at a considerable performance penalty on this platform. In addition, we will not be able to support Java versions prior to Java 1.6 at some stage, since that version offers a few features we want to rely on, such as [a versatile scripting framework](http://java.sun.com/developer/technicalArticles/J2SE/Desktop/scripting/)." %}
 
 ### Advanced
 
@@ -139,13 +139,13 @@ Once you switched to the correct directory, start the Fiji launcher:
 
     Contents/MacOS/ImageJ-macosx
 
-**Note for Windows users**: A backslash is not the same as a slash. So: *Contents\\MacOS\\ImageJ-macosx* will **not** work.
+{% include notice icon="note" content="A backslash (`\\`) is not the same as a slash (`/`). So: `Contents\\MacOS\\ImageJ-macosx` will **not** work." %}
 
 Now you can pass, say, [Java Options](Java_Options):
 
     Contents/MacOS/ImageJ-macosx -verbose:gc --
 
-**Note**: to distinguish between options intended for Java and options intended for ImageJ, you need to separate the former from the latter with a double-dash: **--**. Since the default is to accept ImageJ options, you have to pass a trailing double-dash if you want to pass only Java options.
+{% include notice icon="note" content="To distinguish between options intended for Java and options intended for ImageJ, you need to separate the former from the latter with a double-dash: `--`. Since the default is to accept ImageJ options, you have to pass a trailing double-dash if you want to pass only Java options." %}
 
 ## macOS keyboard shortcuts
 
