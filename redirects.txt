@@ -878,7 +878,7 @@ How_to_contribute_to_an_existing_Fiji_plugin_or_library :: develop/improving-the
 How_to_contribute_to_an_existing_plugin_or_library :: develop/improving-the-code
 How_to_extract_a_subproject :: develop/git/extract-a-subproject
 How_to_follow_a_3rd_party_update_site :: update-sites/following
-How_to_make_a_new_tutorial :: tutorials/make-a-new-tutorial
+How_to_make_a_new_tutorial :: contribute
 How_to_publish_a_Git_repository :: develop/git/publish-a-repository
 How_to_set_up_and_populate_an_update_site :: update-sites/setup
 How_to_setup_a_plugin_distribution_site :: update-sites/setup
