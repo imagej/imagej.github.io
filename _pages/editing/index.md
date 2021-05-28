@@ -169,8 +169,8 @@ The following tables list all of this site's general-purpose includes:
 | [button](buttons)                 | Insert a button            |
 | [key](keys)                       | Insert a keyboard shortcut |
 | [icon](icons)                     | Insert icons               |
-| [yes](TODO)                       | Insert a checkmark icon    |
-| [no](TODO)                        | Insert an X icon           |
+| [yes](icons#built-ins)            | Insert a checkmark icon    |
+| [no](icons#built-ins)             | Insert an X icon           |
 
 #### Media
 
