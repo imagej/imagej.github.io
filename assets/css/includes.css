@@ -45,6 +45,7 @@
 
 .code-example {
   display: flex;
+  flex-wrap: wrap;
 }
 .code-example div:first-child {
   max-width: 100%;

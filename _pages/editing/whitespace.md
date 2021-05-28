@@ -132,38 +132,21 @@ It's a &nbsp;&nbsp;&nbsp;REALLY&nbsp;&nbsp;&nbsp; big deal!
 
 ## Preventing lines from wrapping at whitespace
 
-Normally, lines can wrap wherever there is whitespace; e.g.:
+Normally, lines can wrap wherever there is whitespace:
 
-{% capture line-wrapping-at-whitespace -%}
+{% capture line-wrapping-at-whitespace %}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-{%- endcapture %}
-```
-{{line-wrapping-at-whitespace}}
-```
-
-**Result:**
-<div class="shadowed-box">
-{{line-wrapping-at-whitespace}}
-</div>
+{% endcapture %}
+{% include code-example code=line-wrapping-at-whitespace %}
 
 If you don't want it to wrap at a particular place, you can use `&nbsp;` instead of a regular space, but for whole paragraphs as above, it quickly becomes tiresome. Another way is to use a styled span:
 
-{% capture suppress-whitespace-wrapping -%}
+{% capture suppress-whitespace-wrapping %}
 <span style="white-space: nowrap">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 </span>
-{%- endcapture %}
-```
-{{suppress-whitespace-wrapping}}
-```
-
-**Result:**
-<div class="shadowed-box">
-{{suppress-whitespace-wrapping}}
-</div>
-
-But of course as you can see, if your line is too long,
-doing this wrecks the page presentation.
+{% endcapture %}
+{% include code-example code=suppress-whitespace-wrapping %}
 
 ## Beware of leading whitespace
 
