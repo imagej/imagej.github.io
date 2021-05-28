@@ -1,12 +1,11 @@
 ---
 mediawiki: Help
 title: Discuss
+description: Ways to discuss ImageJ and its plugins, and get help from the community.
 section: Discuss
 nav-links: true
 nav-title: Overview
 ---
-
-This section covers ways you can get help with ImageJ and its plugins.
 
 The ImageJ community firmly believes in public discussion of the software. In
 this way, each question benefits not only the one asking, but everyone in the
@@ -16,8 +15,11 @@ topic.
 # Searching ImageJ resources
 
 Trying using the *search bar* at the top of every page on this wiki.
+It provides instant search-as-you-type access to this entire website.
+<!--
 It not only indexes content from this website, but also content from other
 public channels including the Image.sc Forum, GitHub, chat rooms, and more.
+-->
 
 # Getting help with ImageJ
 
@@ -31,10 +33,7 @@ public channels including the Image.sc Forum, GitHub, chat rooms, and more.
 | [Stack Overflow](https://stackoverflow.com/questions/tagged/imagej) | Some people like to post about ImageJ on Stack Overflow, a programming Q&amp;A site.                 |
 | [Reddit](https://www.reddit.com/r/ImageJ/)                          | Some people like to post about ImageJ on Reddit, a community bulletin board.                         |
 
-# Troubleshooting
-
-If you encounter problems, check the [Troubleshooting](/learn/troubleshooting) page.
-
 # Reporting bugs
 
 If you have found a bug, you can help the project by [reporting it](/discuss/bugs).
+But before reporting, check the [Troubleshooting](/learn/troubleshooting) page.
