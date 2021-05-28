@@ -36,7 +36,7 @@ Invoke header level 2 by writing:
 
 Invoke header level 3 by writing:
 ```markdown
-### Flotsam and Jetsum
+### Flotsam and Jetsam
 ```
 
 #### h4 headers
@@ -59,8 +59,3 @@ Invoke header level 6 by writing:
 ```markdown
 ###### Plotdevicium
 ```
-
-# Closing remarks
-
-This section here at the bottom exists merely to trigger the table of contents
-to generate on this page, so that you can see how it looks. Cheers!
