@@ -8,27 +8,29 @@ categories: [Plugins]
 
 
 {% capture source%}
-{% include github org='antinos' repo='Read\_and\_Write\_Excel\_Modified' %}
+{% include github org='antinos' repo='Read_and_Write_Excel_Modified' %}
 {% endcapture %}
-{% include info-box name='Read and Write Excel' software='ImageJ/Fiji' latest-version='1.1.6' author='Anthony Sinadinos, Brenden Kromhout' maintainer='Anthony Sinadinos [(antinos)](https://forum.image.sc/u/antinos/)' source=source category='[Plugins](/plugin-index)' website=' [Youtube tutorial](https://www.youtube.com/watch?v=dLkoB25MTIY)' %} By default, this plugin extracts data from the Results Table and adds it to a sheet-tab "A" in an .xlsx Excel file on the user's desktop. The plugin will create a file named "Rename me after writing is done" on the desktop if none-exists already, and will update this file if it has already been created. Data is added to the latest sheet (created as "A" if the file is new) or to a user specified sheet using a passed argument (see below). Within the latest sheet, data will be added adjacent to previous data, unless an argument is passed to stack data underneath pre-existing column headers and data. Results Table column headers are added automatically. A row count is added by default but the user can choose to deny this with a passed argument.
+{% include info-box name='Read and Write Excel' software='ImageJ/Fiji' latest-version='1.1.7' author='Anthony Sinadinos, Brenden Kromhout' maintainer='Anthony Sinadinos [(antinos)](https://forum.image.sc/u/antinos/)' source=source category='[Plugins](/plugin-index)' website=' [Youtube tutorial](https://www.youtube.com/watch?v=dLkoB25MTIY)' %} By default, this plugin extracts data from the Results Table and adds it to a sheet-tab "A" in an .xlsx Excel file on the user's desktop. The plugin will create a file named "Rename me after writing is done" on the desktop if none-exists already, and will update this file if it has already been created. Data is added to the latest sheet (created as "A" if the file is new) or to a user specified sheet using a passed argument (see below). Within the latest sheet, data will be added adjacent to previous data, unless an argument is passed to stack data underneath pre-existing column headers and data. Results Table column headers are added automatically. A row count is added by default but the user can choose to deny this with a passed argument.
 
 Created in Eclipse IDE. Requires jre 1.8, which is current ImageJ compatible.
+<details>
+  <summary>Version release date table</summary>
 
 | Version | Release Date                                | Notes                                                                                                                                                                    |
 |---------|---------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| v1.0.0  | 19 Nov 2015 |                                                                                                                                                                          |
-| v1.0.1  | 25 Nov 2015 |                                                                                                                                                                          |
-| v1.0.2  | 10 Apr 2017 |                                                                                                                                                                          |
-| v1.1.0  | 27 Feb 2018 | <span style="font-size:80%; line-height: 0.9em;">This version contains many new features that have been added by Brenden Kromhout https://github.com/bkromhout> </span |
-| v1.1.1  | 02 Jul 2018 |                                                                                                                                                                          |
-| v1.1.2  | 04 Nov 2018 |                                                                                                                                                                          |
-| v1.1.3  | Jan 2019    |                                                                                                                                                                          |
-| v1.1.4  | 17 Apr 2019 |                                                                                                                                                                          |
-| v1.1.5  | 30 Nov 2019 |                                                                                                                                                                          |
-| v1.1.6  | 20 May 2020 |                                                                                                                                                                          |
+| v1.0.0  | 19 Nov 2015 |      |
+| v1.0.1  | 25 Nov 2015 |      |
+| v1.0.2  | 10 Apr 2017 |      |
+| v1.1.0  | 27 Feb 2018 | <span style="font-size:80%; line-height: 0.9em;">This version contains many new features that have been added by Brenden Kromhout https://github.com/bkromhout </span> |
+| v1.1.1  | 02 Jul 2018 |      |
+| v1.1.2  | 04 Nov 2018 |      |
+| v1.1.3  | Jan 2019    |      |
+| v1.1.4  | 17 Apr 2019 |      |
+| v1.1.5  | 30 Nov 2019 |      |
+| v1.1.6  | 20 May 2020 |      |
+| v1.1.7  | 26 Sep 2020 |      |class="nowrap" | Release version dates
 
-class="nowrap" \| Release version dates
-
+</details>
 
 
 
@@ -136,14 +138,10 @@ Since Brenden modified the plugin, the code is now a lot neater. Feel free to co
 
 ## Plugin technical details
 
-<div class="mw-collapsible mw-collapsed">
-<div>
-
 ### Change log
-
-</div>
-<div class="mw-collapsible-content">
-
+<details>
+  <summary>(click to expand)</summary>
+     
 Version 1.0.1 changes:
 
 1.  package is not bloated by dependency .jar files.
@@ -187,8 +185,10 @@ Version 1.1.6 changes:
 
 1.  Bug fix. Fixed a rare 'stack\_results' issue whereby the data was exported incorrectly if the results table and the excel file both contained a single-row of data.
 
-</div>
-</div>
+Version 1.1.7 changes:
+
+1.   Feature added. 'cell_ref' argument now allows data to be imported to the specified cell. User request from Stein Rørvik (steinr). NOTE: the plugin does not check to see if data is already present at the specified location, so overwriting is possible. Column headers are also not exported with the data.
+</details>
 
 ### Dependencies
 
