@@ -1,6 +1,6 @@
 ---
 mediawiki: TaskList
-title: TaskList
+title: 2008 Hackathon in Dresden
 categories: [Hackathons, community]
 ---
 

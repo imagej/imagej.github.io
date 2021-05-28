@@ -75,7 +75,7 @@ ImageJ has benefitted from many hackathons over the years:
     </tr>
     <tr>
       <td>
-        <p><a href="TaskList">2008 Apr 21 -<br>
+        <p><a href="/events/2008-hackathon-in-dresden">2008 Apr 21 -<br>
         2008 Apr 30</a></p>
       </td>
       <td>

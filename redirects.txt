@@ -1631,7 +1631,7 @@ TIA_.ser_folder_export :: formats/tia-ser-folder-export
 TIFF :: formats/tiff
 TUNEL_Cell_Counter :: plugins/retina-analysis-toolkit
 TWS :: plugins/tws
-TaskList :: TODO
+TaskList :: events/2008-hackathon-in-dresden
 Team :: contribute/governance#scijava-team-roles
 Techniques :: imaging
 Temporal-Color_Code :: plugins/temporal-color-code
