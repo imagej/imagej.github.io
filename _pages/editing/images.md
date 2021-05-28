@@ -5,9 +5,9 @@ section: Contribute:Editing the Wiki
 nav-links: true
 ---
 
-This page explains how to add images to your page.
+This page explains how to use the `img` include tag.
 
-# Images
+We encourage the uploading of images used in your pages to assure the future integrity of the wiki. For external images (e.g. if the file is too large for GitHub) we recommend using [markdown](/editing/#markdown).
 
 ## Uploading an Image
 

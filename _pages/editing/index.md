@@ -85,12 +85,21 @@ plain {% include wikipedia title="HTML" %}. However, Markdown does not have a
 syntax for changing text color, and it supports mixing in HTML, so you can use
 the technique above if you need text in different colors.
 
-Certain kinds of content have dedicated pages of this guide:
+Here are some common image uses:
 
-* [Images](images)
+| Image                                    | Markup                                     |
+|------------------------------------------|--------------------------------------------|
+| ![Alt text](/media/icons/fiji.svg) | `![Alt text](/media/icons/fiji.svg)` |
+| ![External image](https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png){:width="64px"} | `![External image](https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png){:width="64px"}` |
+
+Note that the last example includes inline styling, which is Kramdown-specific.
+
+Certain kinds of structures have dedicated pages of this guide:
+
 * [Tables](tables)
 * [Math expressions](math)
 * [Source code and syntax highlighting](code)
+* [Images](images) ([Liquid](#liquid), not markdown, facilitating complex image needs such as galleries, figures, etc...)
 
 ## Liquid
 
