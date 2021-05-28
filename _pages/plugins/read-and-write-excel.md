@@ -16,8 +16,8 @@ Created in Eclipse IDE. Requires jre 1.8, which is current ImageJ compatible.
 <details>
   <summary>Version release date table</summary>
 
-| Version | Release Date                                | Notes                                                                                                                                                                    |
-|---------|---------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Version | Release Date | Notes |
+|---|---|---|
 | v1.0.0  | 19 Nov 2015 |      |
 | v1.0.1  | 25 Nov 2015 |      |
 | v1.0.2  | 10 Apr 2017 |      |
@@ -28,7 +28,7 @@ Created in Eclipse IDE. Requires jre 1.8, which is current ImageJ compatible.
 | v1.1.4  | 17 Apr 2019 |      |
 | v1.1.5  | 30 Nov 2019 |      |
 | v1.1.6  | 20 May 2020 |      |
-| v1.1.7  | 26 Sep 2020 |      |class="nowrap" | Release version dates
+| v1.1.7  | 26 Sep 2020 |      |
 
 </details>
 
@@ -36,8 +36,12 @@ Created in Eclipse IDE. Requires jre 1.8, which is current ImageJ compatible.
 
 ## Usage
 
-<span style="float:right; margin-left:10px;"> **Youtube tutorial:**  
-{% include video platform='youtube' id='dLkoB25MTIY'%} </span> This plugin can be called from a macro using:
+<span style="float:right; margin-left:10px;"> **Youtube tutorial:**
+
+{% include video platform='youtube' id='dLkoB25MTIY'%}
+</span>
+
+This plugin can be called from a macro using:
 
      
     run("Read and Write Excel");
