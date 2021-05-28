@@ -832,11 +832,12 @@ body.is-preload #header:after {
 .page-info {
   text-align: right;
   font-style: italic;
-  padding: 0 0.5em 1em 0;
+  font-size: small;
+  padding: 0.5em 0.5em 1em 0;
+  line-height: 1.2em;
 }
 
 .page-info a {
-  font-size: small;
   border-bottom: none;
   padding: 0 0.5em 0 0;
 }
