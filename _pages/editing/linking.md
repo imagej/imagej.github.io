@@ -7,9 +7,20 @@ nav-links: true
 
 This page demonstrates how to link to certain special classes of external content.
 
-## GitHub
+## Banner
 
-### Examples
+*The following liquid code:*
+```
+{% raw %}
+{% include link-banner url='https://forum.image.sc/' %}
+{% endraw %}
+```
+*produces:*
+
+{% include link-banner url='https://forum.image.sc/' %}
+
+
+## GitHub
 
 Use `path` to link to a file off the repository root:
 
@@ -129,35 +140,7 @@ Use `label` to override the label:
 {% endcapture %}
 {% include code-example code=github-label-code result=github-label-result %}
 
-## Wikipedia
-
-{% capture wikipedia-code %}
-Check out the
-{% raw %}{% include wikipedia title="ImageJ" %}{% endraw %}
-article on Wikipedia!
-{% endcapture %}
-{% capture wikipedia-result %}
-Check out the
-{% include wikipedia title="ImageJ" %}
-article on Wikipedia!
-{% endcapture %}
-{% include code-example code=wikipedia-code result=wikipedia-result %}
-
-## Maven
-
-{% capture maven-code %}
-The Maven artifact for ImageJ as a whole is
-{% raw %}{% include maven g='net.imagej' a='imagej' v='2.0.0' %}{% endraw %}
-{% endcapture %}
-{% capture maven-result %}
-The Maven artifact for ImageJ as a whole is
-{% include maven g='net.imagej' a='imagej' v='2.0.0' %}
-{% endcapture %}
-{% include code-example code=maven-code result=maven-result %}
-
 ## Javadoc
-
-### Examples
 
 {% capture javadoc-project-code %}
 {% raw %}See also the
@@ -222,3 +205,58 @@ See also the
 javadocs.
 {% endcapture %}
 {% include code-example code=javadoc-label-code result=javadoc-label-result %}
+
+## Matlab
+
+{% capture matlab-code %}
+Matlab has an {% raw %}{% include matlab path='ref' function='axis' %}{% endraw %} function.
+{% endcapture %}
+{% capture matlab-result %}
+Matlab has an {% include matlab path='ref' function='axis' %} function.
+{% endcapture %}
+{% include code-example code=matlab-code result=matlab-result %}
+
+## Maven
+
+{% capture maven-code %}
+The Maven artifact for ImageJ as a whole is
+{% raw %}{% include maven g='net.imagej' a='imagej' v='2.0.0' %}{% endraw %}
+{% endcapture %}
+{% capture maven-result %}
+The Maven artifact for ImageJ as a whole is
+{% include maven g='net.imagej' a='imagej' v='2.0.0' %}
+{% endcapture %}
+{% include code-example code=maven-code result=maven-result %}
+
+## Scholar
+
+{% capture scholar-code %}
+Check out {% raw %}{% include scholar cluster='8490320759898335020' label='NIH Image to ImageJ' %}{% endraw %}!
+{% endcapture %}
+{% capture scholar-result %}
+Check out {% include scholar cluster='8490320759898335020' label='NIH Image to ImageJ'%}!
+{% endcapture %}
+{% include code-example code=scholar-code result=scholar-result %}
+
+{% capture scholar-default-code %}
+Check out NIH Image to ImageJ {% raw %}{% include scholar cluster='8490320759898335020'%}{% endraw %}!
+{% endcapture %}
+{% capture scholar-default-result %}
+Check out NIH Image to ImageJ {% include scholar cluster='8490320759898335020'%}!
+{% endcapture %}
+{% include code-example code=scholar-default-code result=scholar-default-result %}
+
+
+## Wikipedia
+
+{% capture wikipedia-code %}
+Check out the
+{% raw %}{% include wikipedia title="ImageJ" %}{% endraw %}
+article on Wikipedia!
+{% endcapture %}
+{% capture wikipedia-result %}
+Check out the
+{% include wikipedia title="ImageJ" %}
+article on Wikipedia!
+{% endcapture %}
+{% include code-example code=wikipedia-code result=wikipedia-result %}
