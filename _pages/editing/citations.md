@@ -1,109 +1,120 @@
 ---
 mediawiki: NONE
 title: Citations
+description: This page demonstrates how to cite sources.
 section: Contribute:Editing the Wiki
 nav-links: true
 ---
 
-This page demonstrates how to add a citation to your page.
+There are two kinds of sources which can be cited:
 
-There are currently three options to include citations on your page:
-
-| `include citation`         | create a single-use citation, or footnote |
+| `include citation`         | cite a publication                               |
 | `include testimonial`      | insert a personal quote from a [person](/people) |
-| `include citation id="plugins/<id>`" | pulls a pre-formatted citation from the [list of registered publications](#registered-publications) |
 
-## `citation`
+# Citing publications
 
-This include creates a citation given the following inputs:
-author (all authors of the publication, this input will be presented as entered):
+The `citation` include is used to cite a publication.
 
-| **title**   | title of the publication                                        |
-| **url**     | url link to location the publication is hosted                  |
-| **year**    | year of publication                                             |
-| **journal** | name of the publishing journal                                  |
-| **volume**  | volume of the publishing journal                                |
-| **number**  | issuing number of the publishing journal                        |
-| **pages**   | page numbers that the publication appears in publishing journal |
-| **doi**     | digital object identifier                                       |
-| **fn**      | foot note number                                                |
+## Citing by DOI
 
-{% capture lowry-1951-code %}
-{% raw %}
-{% include citation
-  title="Protein measurement with the Folin phenol reagent"
-  last="Lowry" first="O. H."
-  last2="Rosebrough" first="N. J."
-  last3="Farr" first="A. L."
-  last4="Randall" first="R. J."
-  journal="Journal of biological chemistry"
-  volume=193
-  pages="265-275"
-  year=1951
-  scholar=14244920428100608083
-%}
-{% endraw %}
+{% capture top-100-papers-code %}
+{% raw %}{% include citation doi='10.1038/514550a' %}{% endraw %}
 {% endcapture %}
-{% capture lowry-1951-result %}
-{% include citation
-  title="Protein measurement with the Folin phenol reagent"
-  last="Lowry" first="O. H."
-  last2="Rosebrough" first="N. J."
-  last3="Farr" first="A. L."
-  last4="Randall" first="R. J."
-  journal="Journal of biological chemistry"
-  volume=193
-  pages="265-275"
-  year=1951
-  scholar=14244920428100608083
-%}
+{% capture top-100-papers-result %}
+{% include citation doi='10.1038/514550a' %}
 {% endcapture %}
-{% include code-example code=lowry-1951-code result=lowry-1951-result %}
+{% include code-example code=top-100-papers-code result=top-100-papers-result %}
 
-## `publication`
+### Citation styles
 
-This include is primarily used to reference ImageJ/Fiji related plugins, and pulls from a list of already created citations. The list can be found [here](/contribute/citing).
-This include uses the following field:<br><br>
-**content** the input for this field must match the plugin/tool/package name listed on the [Citations page](/contribute/citing).
+The default citation style is APA, but Harvard and Vancouver styles are also supported:
+
+{% capture harvard-style-code %}
+{% raw %}{% include citation doi='10.1038/514550a' style='harvard1' %}{% endraw %}
+{% endcapture %}
+{% capture harvard-style-result %}
+{% include citation doi='10.1038/514550a' style='harvard1' %}
+{% endcapture %}
+{% include code-example code=harvard-style-code result=harvard-style-result %}
+
+{% capture vancouver-style-code %}
+{% raw %}{% include citation doi='10.1038/514550a' style='vancouver' %}{% endraw %}
+{% endcapture %}
+{% capture vancouver-style-result %}
+{% include citation doi='10.1038/514550a' style='vancouver' %}
+{% endcapture %}
+{% include code-example code=vancouver-style-code result=vancouver-style-result %}
+
+{% include notice icon="tech" content="All of these features are driven by the
+  [citation-js](https://citation.js.org/) library,
+  which is very powerful, even supporting
+  [your own custom CSL template](https://github.com/citation-js/citation-js/blob/3f3eee0813c7d578a454c34e402fa342d0693cfa/packages/plugin-csl/README.md#templates),
+  if you having extra time burning a hole in your continuum." %}
+
+## Citing by wiki page URL 
+
+{% capture citation-by-id-code %}
+{% raw %}{% include citation id="plugins/3d-viewer" %}{% endraw %}
+{% endcapture %}
+{% capture citation-by-id-result %}
+{% include citation id="plugins/3d-viewer" %}
+{% endcapture %}
+{% include code-example code=citation-by-id-code result=citation-by-id-result %}
+
+The DOI used is pulled from the front matter of the given wiki page URL.
+
+{% capture citation-short-syntax %}
+If you want to cite the publication(s) associated with the current page, you
+can simply write `{% raw %}{% include citation %}{% endraw %}` with no
+arguments, and the DOI will be pulled from the front matter at the top.
+{% endcapture %}
+{% include notice icon="tip" content=citation-short-syntax %}
+
+### Multiple citations
+
+Some wiki pages have multiple publications associated with them.
+In that case, all citations will be shown in the list:
+
+{% capture cellprofiler-citations-code %}
+{% raw %}{% include citation id="software/cellprofiler" %}{% endraw %}
+{% endcapture %}
+{% capture cellprofiler-citations-result %}
+{% include citation id="software/cellprofiler" %}
+{% endcapture %}
+{% include code-example code=cellprofiler-citations-code result=cellprofiler-citations-result %}
+
+# Testimonials
+
+The `testimonial` include is used to quote an individual. Available fields:
+
+| **person** | any user from [this list](/people#list-of-contributors) |
+| **quote**  | the text that will be displayed                         |
+| **source** | a link to the original quotation                        |
+
+{% include testimonial person='ctrueden'
+  quote='ON VACATION UNTIL OCTOBER 5. For real this time!'
+  source='https://forum.image.sc/t/42450' %}
 
 *The following liquid code:*
 ```
-{% raw %}
-{% include citation id="plugins/3d-viewer" %}
-{% endraw %}
+{% raw %}{% include testimonial person='ctrueden'
+  quote='ON VACATION UNTIL OCTOBER 5. For real this time!'
+  source='https://forum.image.sc/t/42450' %}{% endraw %}
 ```
-*produces:*
+produces the testimonial shown here.
 
-{% include citation id="plugins/3d-viewer" %}
+# Creating footnotes
 
-## `testimonial`
+## In your document
 
-This include is used to quote a particular individual. Available fields:
+Use the
+[kramdown syntax](https://kramdown.gettalong.org/quickref.html#footnotes)
+in your document to refer to footnotes by number.
 
-* **person** can be any user from [this list](/people)
-* **quote** is the text that will be displayed
-* **source** is a link to the original quotation
+{% include notice icon="note" content="Regardless of where the liquid reference
+  appears in your document, footnote text will always be at the bottom." %}
 
-*The following liquid code:*
-```
-{% raw %}
-{% include testimonial person='ctrueden' quote='ON VACATION UNTIL OCTOBER 5. For real this time!' source='https://forum.image.sc/t/coba-imagej-fiji-2020-summer-progress-report-and-fall-roadmap/42450' %}
-{% endraw %}
-```
-*produces:*
-
-{% include testimonial person='ctrueden' quote='ON VACATION UNTIL OCTOBER 5. For real this time!' source='https://forum.image.sc/t/coba-imagej-fiji-2020-summer-progress-report-and-fall-roadmap/42450' %}
-
-{% include clear %}
-
-## Creating footnotes
-
-### In your document
-Use the [kramdown syntax](https://kramdown.gettalong.org/quickref.html#footnotes) in your document to refer to footnotes by number.
-
-**NB:** regardless of where the liquid reference appears in your document, footnote text will always be at the bottom.
-
-### In your citation
+## In your citation
 
 Specify the footnote number in the `include`.
 
@@ -112,19 +123,11 @@ Specify the footnote number in the `include`.
 ```
 This is a reference[^1].
 
-{% raw %}
-{% include citation author='Albert Cardona, Stephan Saalfeld, Johannes Schindelin, Ignacio Arganda-Carreras, Stephan Preibisch, Mark Longair, Pavel Tomancak, Volker Hartenstein and Rodney J. Douglas'
-year='2012'
-fn=1
-title='TrakEM2 software for neural circuit reconstruction' journal='PLoS ONE'
-url='http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0038011'
-doi='10.1371/journal.pone.0038011' %}
-{% endraw %}
+{% raw %}{% include citation fn=1 doi='10.1371/journal.pone.0038011' %}{% endraw %}
 ```
+
 *produces:*
 
 This is a reference[^1].
 
-{% include citation fn=1 author='Albert Cardona, Stephan Saalfeld, Johannes Schindelin, Ignacio Arganda-Carreras, Stephan Preibisch, Mark Longair, Pavel Tomancak, Volker Hartenstein and Rodney J. Douglas' year='2012' title='TrakEM2 software for neural circuit reconstruction' journal='PLoS ONE' url='http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0038011' doi='10.1371/journal.pone.0038011' %}
-
-## Registered publications
+{% include citation fn=1 doi='10.1371/journal.pone.0038011' %}
