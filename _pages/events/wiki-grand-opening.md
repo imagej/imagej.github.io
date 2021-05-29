@@ -92,6 +92,36 @@ WE CAN DO IT! 💪
 ## Pages remaining
 
 {%- assign todo-pages = site.pages | where_exp: "p", "p.mediawiki != nil" | sort: "url" -%}
+{%- assign remain = todo-pages | size -%}
+{%- assign total = site.pages | size -%}
+{%- assign done = total | minus: remain -%}
+{%- assign percent = done | times: 100 | divided_by: total -%}
+
+{%- comment -%} Progress bar! {%- endcomment %}
+<style>
+.progress-bar {
+  width: 100%;
+  border: 1px solid gray;
+  position: relative;
+  margin: 1em 0;
+  text-align: center;
+  font-weight: bold;
+}
+.progress-bar div {
+  position: absolute;
+  top: 0;
+  opacity: 0.3;
+  background-image: repeating-linear-gradient(120deg, skyblue, gold 30px, skyblue 30px, gold 60px);
+  border-right: 1px solid black;
+  height: 100%;
+}
+</style>
+<div class="progress-bar">
+  Pages complete: {{done}}/{{total}} ({{percent}}%)
+  <div style="width: {{percent}}%"></div>
+</div>
+
+{%- assign todo-pages = site.pages | where_exp: "p", "p.mediawiki != nil" | sort: "url" -%}
 {%- assign depth = 1 %}
 <div class="todo-list">
 <ul>
@@ -111,13 +141,3 @@ WE CAN DO IT! 💪
 {% endfor %}
 </ul>
 </div>
-
-## Completed pages
-
-{% assign done-pages = site.pages | where:"mediawiki", nil | sort: "url" %}
-
-<ul class="todo-list">
-{% for p in done-pages %}
-<li><a href="{{p.url}}">{{p.title}}</a></li>
-{% endfor %}
-</ul>
