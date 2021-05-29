@@ -60,7 +60,7 @@ title: My Awesome Page
 ---
 ```
 
-# Adding and editing page content
+# Adding +&nbsp;editing page content
 
 This section covers how to populate the *content* of your page.
 
