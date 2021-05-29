@@ -2,7 +2,7 @@
 mediawiki: Extract_Images_From_PDF...
 title: Extract Images From PDF...
 section: Learn:ImageJ Basics:File Formats
-categories: [Plugins,Import-Export]
+categories: [Import-Export]
 artifact: sc.fiji:IO\_
 ---
 

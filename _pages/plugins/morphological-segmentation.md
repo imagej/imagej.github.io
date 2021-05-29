@@ -1,7 +1,7 @@
 ---
 mediawiki: Morphological_Segmentation
 title: Morphological Segmentation
-categories: [Plugins,Segmentation,Mathematical morphology]
+categories: [Segmentation,Mathematical morphology]
 ---
 
 

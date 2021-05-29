@@ -1,7 +1,7 @@
 ---
 mediawiki: CSIMLab
 title: CSIMLab
-categories: [Plugins,Filtering,Noise]
+categories: [Filtering,Noise]
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 mediawiki: Rolling_Ball_Background_Subtraction
 title: Rolling Ball Background Subtraction
-categories: [Plugins,Filtering]
+categories: [Filtering]
 ---
 
 {% include info-box software='ImageJ' name='Rolling Ball Background Subtraction' author='Michael Castle and Janice Keller (Mental Health Research Institute, University of Michigan)' filename='Rolling\_Ball\_Background.class' source=' [Rolling\_Ball\_Background.java](/ij/plugins/download/Rolling_Ball_Background.java)' released='22 November 2007' status='first version' category='[Filtering](/plugin-index#filtering)' website='/ij/plugins/rolling-ball.html' %}

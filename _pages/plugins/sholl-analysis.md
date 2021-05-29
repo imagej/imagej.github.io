@@ -1,7 +1,7 @@
 ---
 mediawiki: Sholl_Analysis
 title: Sholl Analysis
-categories: [Plugins,Analysis,Neuroanatomy]
+categories: [Analysis,Neuroanatomy]
 artifact: ca.mcgill:Sholl_Analysis
 ---
 

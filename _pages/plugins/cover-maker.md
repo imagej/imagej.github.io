@@ -1,7 +1,7 @@
 ---
 mediawiki: Cover_Maker
 title: Cover Maker
-categories: [Tutorials,Plugins]
+categories: [Tutorials]
 ---
 
 

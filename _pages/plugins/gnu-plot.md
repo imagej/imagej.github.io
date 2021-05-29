@@ -1,7 +1,7 @@
 ---
 mediawiki: Gnu_Plot
 title: Gnu Plot
-categories: [Plotting,Plugins]
+categories: [Plotting]
 ---
 
 {% include info-box software='ImageJ1' name='Gnu\_Plot' author='Fred Damen' Maintainer='Fred Damen' filename='Gnu\_Plot.jar' source=' [Gnu\_Plot.zip](/media/plugins/gnu-plot.zip)' released='1 April 2020' status='stable' category='[Plotting](/plugin-index#plotting)' website='' %}

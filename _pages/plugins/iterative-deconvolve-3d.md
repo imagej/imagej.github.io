@@ -1,7 +1,7 @@
 ---
 mediawiki: Iterative_Deconvolve_3D
 title: Iterative Deconvolve 3D
-categories: [Plugins,Deconvolution]
+categories: [Deconvolution]
 doi: 10.2514/6.2005-2961
 ---
 

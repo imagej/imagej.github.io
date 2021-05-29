@@ -1,7 +1,7 @@
 ---
 mediawiki: Feature_Extraction
 title: Feature Extraction
-categories: [Plugins,Registration,Feature Extraction]
+categories: [Registration,Feature Extraction]
 ---
 
 {% include thumbnail src='/media/tem-42-33-f.png' title='MOPS feature correspondences (example 1)'%} {% include thumbnail src='/media/plugins/lab-404-403-f.png' title='MOPS feature correspondences (example 2)'%}

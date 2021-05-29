@@ -1,7 +1,7 @@
 ---
 mediawiki: Multi_Kymograph
 title: Multi Kymograph
-categories: [Plugins]
+categories: []
 artifact: sc.fiji:Multi\_Kymograph
 ---
 

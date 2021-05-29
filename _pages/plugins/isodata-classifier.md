@@ -1,7 +1,7 @@
 ---
 mediawiki: IsoData_Classifier
 title: IsoData Classifier
-categories: [Plugins,Segmentation]
+categories: [Segmentation]
 artifact: sc.fiji:IsoData\_Classifier
 ---
 

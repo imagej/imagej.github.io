@@ -1,7 +1,7 @@
 ---
 mediawiki: Level_Sets
 title: Level Sets
-categories: [Plugins]
+categories: []
 artifact: sc.fiji:level\_sets
 ---
 

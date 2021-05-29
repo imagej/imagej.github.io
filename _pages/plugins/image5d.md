@@ -1,7 +1,7 @@
 ---
 mediawiki: Image5D
 title: Image5D
-categories: [Plugins,Visualization]
+categories: [Visualization]
 artifact: sc.fiji:Image\_5D
 ---
 

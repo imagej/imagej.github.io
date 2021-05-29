@@ -1,7 +1,7 @@
 ---
 mediawiki: Temporal_Median
 title: Temporal Median
-categories: [Plugins,Tracking,Filtering]
+categories: [Tracking,Filtering]
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 mediawiki: Squassh
 title: Squassh
-categories: [Plugins,Segmentation,Colocalization,Deconvolution]
+categories: [Segmentation,Colocalization,Deconvolution]
 ---
 
 

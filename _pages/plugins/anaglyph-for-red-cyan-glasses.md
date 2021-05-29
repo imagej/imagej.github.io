@@ -1,7 +1,7 @@
 ---
 mediawiki: Anaglyph_for_Red_Cyan_glasses
 title: Anaglyph for Red Cyan glasses
-categories: [Plugins,Scripting,Unmaintained]
+categories: [Scripting,Unmaintained]
 ---
 
 ## Purpose

@@ -1,7 +1,7 @@
 ---
 mediawiki: Shepp-Logan_Phantom
 title: Shepp-Logan Phantom
-categories: [Plugins]
+categories: []
 ---
 
 

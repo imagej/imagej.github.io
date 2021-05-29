@@ -1,7 +1,7 @@
 ---
 mediawiki: Find_Peaks
 title: Find Peaks
-categories: [Scripting,Analysis,Plugins]
+categories: [Scripting,Analysis]
 ---
 
 <seo metak="local maxima,local minima,extrema,inflection point, signal processing, spectral analysis" metad="local maxima,local minima,extrema,inflection point, signal processing, spectral analysis" /> 

@@ -1,7 +1,7 @@
 ---
 mediawiki: Segment_blob_in_3D_Viewer
 title: Segment blob in 3D Viewer
-categories: [Plugins,Segmentation]
+categories: [Segmentation]
 ---
 
 Running the plugin "Plugins - Segmentation - Segment blob in 3D Viewer" will add capabilities to all existing 3D Viewer windows. A new 3D Viewer window opens if none are already open.

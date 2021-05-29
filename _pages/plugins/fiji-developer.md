@@ -1,7 +1,7 @@
 ---
 mediawiki: Fiji_Developer
 title: Fiji Developer
-categories: [Plugins]
+categories: []
 artifact: sc.fiji:Fiji\_Developer
 ---
 

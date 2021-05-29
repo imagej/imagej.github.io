@@ -1,7 +1,7 @@
 ---
 mediawiki: 3D_Objects_Counter
 title: 3D Objects Counter
-categories: [Plugins,Particle analysis]
+categories: [Particle analysis]
 artifact: sc.fiji:3D\_Objects\_Counter
 ---
 

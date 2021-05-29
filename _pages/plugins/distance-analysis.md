@@ -1,7 +1,7 @@
 ---
 mediawiki: Distance_Analysis
 title: Distance Analysis
-categories: [Plugins,Analysis,Colocalization]
+categories: [Analysis,Colocalization]
 ---
 
 ## Distance Analysis (DiAna)

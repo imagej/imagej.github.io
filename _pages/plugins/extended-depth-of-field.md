@@ -1,7 +1,7 @@
 ---
 mediawiki: Extended_Depth_of_Field
 title: Extended Depth of Field
-categories: [Tutorials,Plugins]
+categories: [Tutorials]
 ---
 
 

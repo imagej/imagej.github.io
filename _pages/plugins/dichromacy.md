@@ -1,7 +1,7 @@
 ---
 mediawiki: Dichromacy
 title: Dichromacy
-categories: [Plugins]
+categories: []
 artifact: sc.fiji:Dichromacy
 ---
 

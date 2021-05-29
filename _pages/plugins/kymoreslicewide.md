@@ -1,7 +1,7 @@
 ---
 mediawiki: KymoResliceWide
 title: KymoResliceWide
-categories: [Stacks,Plugins]
+categories: [Stacks]
 ---
 
 {% include info-box software='ImageJ' name='KymoResliceWide' author=' [Eugene Katrukha](http://katpyxa.info) and Laurie Young' maintainer='[Eugene Katrukha](mailto:katpyxa_at_gmail.com)' filename=' [KymoResliceWide\_.jar](https://github.com/ekatrukha/KymoResliceWide/blob/master/KymoResliceWide_.jar?raw=true)' source=' [github](https://github.com/ekatrukha/KymoResliceWide)' released='24 September 2014' latest-version='1 April 2017' status='stable' category='[Stacks](/plugin-index#stacks)' website=' [wiki\_page](https://github.com/ekatrukha/KymoResliceWide/wiki)' %}

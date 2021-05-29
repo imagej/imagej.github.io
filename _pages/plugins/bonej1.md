@@ -1,7 +1,7 @@
 ---
 mediawiki: BoneJ1
 title: BoneJ1
-categories: [Plugins]
+categories: []
 doi: 10.1016/j.bone.2010.08.023
 ---
 

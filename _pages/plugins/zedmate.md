@@ -1,7 +1,7 @@
 ---
 mediawiki: ZedMate
 title: ZedMate
-categories: [Plugins]
+categories: []
 ---
 
 **ZedMate** is a suite of plugins aimed multi-channel intensity quantification.

@@ -1,7 +1,7 @@
 ---
 mediawiki: Auto_Local_Threshold
 title: Auto Local Threshold
-categories: [Plugins,Segmentation]
+categories: [Segmentation]
 artifact: sc.fiji:Auto_Threshold
 ---
 

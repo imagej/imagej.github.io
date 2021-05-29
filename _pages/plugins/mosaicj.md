@@ -1,7 +1,7 @@
 ---
 mediawiki: MosaicJ
 title: MosaicJ
-categories: [Plugins]
+categories: []
 ---
 
 

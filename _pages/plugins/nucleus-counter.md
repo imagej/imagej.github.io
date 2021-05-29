@@ -1,7 +1,7 @@
 ---
 mediawiki: Nucleus_Counter
 title: Nucleus Counter
-categories: [Plugins,Particle analysis]
+categories: [Particle analysis]
 ---
 
 {% include info-box software='ImageJ' name='Nucleus Counter' author='unknown' filename='part of [MBF ImageJ](/software/mbf-imagej) bundle' source='' released='' latest-version='' status='unknown' category='[Particle analysis](/plugin-index#particle-analysis)' website='' %}

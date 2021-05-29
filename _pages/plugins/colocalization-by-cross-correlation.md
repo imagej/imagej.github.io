@@ -1,7 +1,7 @@
 ---
 mediawiki: Colocalization_by_Cross_Correlation
 title: Colocalization by Cross Correlation
-categories: [Colocalization,Plugins]
+categories: [Colocalization]
 description: How to use the Colocalization by Cross Correlation plugin
 ---
 {% include info-box software='Fiji' name='Colocalization by Cross Correlation' maintainer=' [Andrew McCall](/people/andmccall)' author=' [Andrew McCall](/people/andmccall)' source=source status='active' released='2020' category='[Plugins](/plugin-index), [Colocalization](/plugin-index#colocalization)' %}

@@ -1,7 +1,7 @@
 ---
 mediawiki: MorphoLibJ
 title: MorphoLibJ
-categories: [Plugins,Analysis,Filtering,Segmentation,Mathematical morphology]
+categories: [Analysis,Filtering,Segmentation,Mathematical morphology]
 doi: 10.1093/bioinformatics/btw413
 ---
 

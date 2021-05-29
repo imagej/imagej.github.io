@@ -1,7 +1,7 @@
 ---
 mediawiki: Spots_colocalization_(ComDet)
 title: Spots colocalization (ComDet)
-categories: [Plugins,Colocalization]
+categories: [Colocalization]
 ---
 
 {% include info-box software='ImageJ' name='ComDet' author=' [Eugene Katrukha](http://katpyxa.info)' maintainer='[Eugene Katrukha](mailto:katpyxa_at_gmail.com)' filename=' [ComDet.jar](https://github.com/ekatrukha/ComDet/blob/master/target/ComDet_-0.5.1.jar?raw=true) + for ImageJ [Jama lib](https://math.nist.gov/javanumerics/jama/Jama-1.0.3.jar)' source=' [github](https://github.com/ekatrukha/ComDet)' released='23 November 2012' latest-version='7 April 2020' status='stable' category='[Colocalization](/plugin-index#colocalization)' website=' [wiki](https://github.com/ekatrukha/ComDet/wiki)' %}

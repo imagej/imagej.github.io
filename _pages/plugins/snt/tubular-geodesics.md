@@ -1,7 +1,7 @@
 ---
 mediawiki: SNT:_Tubular_Geodesics
 title: SNT › Tubular Geodesics
-categories: [Plugins,Segmentation,Neuroanatomy,SNT]
+categories: [Segmentation,Neuroanatomy,SNT]
 nav-links: true
 nav-title: Tubular Geodesics
 ---

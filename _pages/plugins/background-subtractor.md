@@ -1,7 +1,7 @@
 ---
 mediawiki: Background_Subtractor
 title: Background Subtractor
-categories: [Plugins,Filtering]
+categories: [Filtering]
 ---
 
 

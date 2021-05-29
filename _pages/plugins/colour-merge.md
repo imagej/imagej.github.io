@@ -1,7 +1,7 @@
 ---
 mediawiki: Colour_merge
 title: Colour merge
-categories: [Plugins,Color processing]
+categories: [Color processing]
 ---
 
 {% include info-box software='ImageJ' name='Colour merge' author='unknown' filename='Colour\_merge.class' source='not found' released='unknown' latest-version='unknown' status='unknown' category='[Color processing](/plugin-index#color-processing)' %}

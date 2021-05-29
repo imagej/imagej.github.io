@@ -1,7 +1,7 @@
 ---
 mediawiki: Colour_Deconvolution
 title: Colour Deconvolution
-categories: [Plugins,Color processing]
+categories: [Color processing]
 artifact: sc.fiji:Colour_Deconvolution
 ---
 

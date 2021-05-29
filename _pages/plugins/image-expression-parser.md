@@ -1,7 +1,7 @@
 ---
 mediawiki: Image_Expression_Parser
 title: Image Expression Parser
-categories: [Plugins]
+categories: []
 artifact: sc.fiji:Image\_Expression\_Parser
 ---
 

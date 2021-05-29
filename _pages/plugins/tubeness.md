@@ -1,7 +1,7 @@
 ---
 mediawiki: Tubeness
 title: Tubeness
-categories: [Plugins]
+categories: []
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 mediawiki: 3View_import_list
 title: 3View import list
-categories: [Plugins,TrakEM2]
+categories: [TrakEM2]
 ---
 
 {% include info-box name='3View import list' software='ImageJ' author='Nuno Dias' maintainer='Nuno Dias' source=' [link](https://dl.dropboxusercontent.com/u/5200940/3view_import_list.zip)' released='March 2013' latest-version='March 2013' %}

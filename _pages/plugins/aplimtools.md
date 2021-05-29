@@ -1,7 +1,7 @@
 ---
 mediawiki: AplimTools
 title: AplimTools
-categories: [Plugins,Analysis]
+categories: [Analysis]
 ---
 
 

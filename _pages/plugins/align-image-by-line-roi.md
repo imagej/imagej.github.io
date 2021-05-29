@@ -1,7 +1,7 @@
 ---
 mediawiki: Align_Image_by_line_ROI
 title: Align Image by line ROI
-categories: [Tutorials,Plugins,Registration]
+categories: [Tutorials,Registration]
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 mediawiki: Manual_drift_correction_plugin
 title: Manual drift correction plugin
-categories: [Plugins,Registration]
+categories: [Registration]
 ---
 
 {% capture benoalo %}{% include person id='benoalo' %}{% endcapture %}

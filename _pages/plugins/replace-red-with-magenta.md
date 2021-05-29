@@ -1,7 +1,7 @@
 ---
 mediawiki: Replace_Red_with_Magenta
 title: Replace Red with Magenta
-categories: [Tutorials,Plugins]
+categories: [Tutorials]
 ---
 
 

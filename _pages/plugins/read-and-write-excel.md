@@ -1,7 +1,7 @@
 ---
 mediawiki: Read_and_Write_Excel
 title: Read and Write Excel
-categories: [Plugins]
+categories: []
 ---
 
 ## Introduction

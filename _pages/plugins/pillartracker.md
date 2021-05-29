@@ -1,7 +1,7 @@
 ---
 mediawiki: PillarTracker
 title: PillarTracker
-categories: [Tracking,Visualization,Analysis,Filtering,Plugins]
+categories: [Tracking,Visualization,Analysis,Filtering]
 ---
 
 <div style="float:right;">

@@ -1,7 +1,7 @@
 ---
 mediawiki: Hill_Shade
 title: Hill Shade
-categories: [Plugins]
+categories: []
 ---
 
 # Hill Shade

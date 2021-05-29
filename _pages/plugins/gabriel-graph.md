@@ -1,7 +1,7 @@
 ---
 mediawiki: Gabriel_Graph
 title: Gabriel Graph
-categories: [Plugins]
+categories: []
 ---
 
 

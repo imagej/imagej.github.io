@@ -2,7 +2,7 @@
 mediawiki: Multithreaded_Image_Processing_in_Clojure
 title: Multithreaded Image Processing in Clojure
 section: Extend:Scripting
-categories: [Plugins,Scripting,Unmaintained]
+categories: [Scripting,Unmaintained]
 ---
 
 ## Purpose

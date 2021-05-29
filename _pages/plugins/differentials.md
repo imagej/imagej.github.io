@@ -1,7 +1,7 @@
 ---
 mediawiki: Differentials
 title: Differentials
-categories: [Plugins]
+categories: []
 ---
 
 

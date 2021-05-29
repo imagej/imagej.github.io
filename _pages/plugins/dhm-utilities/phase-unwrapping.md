@@ -1,7 +1,7 @@
 ---
 mediawiki: DHM_Utilities/Phase_Unwrapping
 title: DHM Utilities/Phase Unwrapping
-categories: [Plugins]
+categories: []
 project: DHM Utilities
 
 name: Phase Unwrapping

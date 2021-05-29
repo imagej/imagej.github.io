@@ -1,7 +1,7 @@
 ---
 mediawiki: Multi_Otsu_Threshold
 title: Multi Otsu Threshold
-categories: [Plugins,Segmentation]
+categories: [Segmentation]
 ---
 
 {% include info-box software='ImageJ' name='Multi Otsu Threshold' author='Yasunari Tosa' filename='Multi\_OtsuThreshold.class' source=' [Multi\_OtsuThreshold.java](/ij/plugins/download/Multi_OtsuThreshold.java)' released='14 April 2006' status='stable' category='[Segmentation](/plugin-index#segmentation)' website='/ij/plugins/multi-otsu-threshold.html' %}

@@ -1,7 +1,7 @@
 ---
 mediawiki: Retinex
 title: Retinex
-categories: [Tutorials,Plugins]
+categories: [Tutorials]
 ---
 
 

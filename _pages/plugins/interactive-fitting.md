@@ -1,7 +1,7 @@
 ---
 mediawiki: Interactive_Fitting
 title: Interactive Fitting
-categories: [Plotting,Plugins]
+categories: [Plotting]
 ---
 
 {% include info-box software='ImageJ1' name='Interactive\_Fitting' author='Fred Damen' filename='Interactive\_Fitting.jar' source=' [Interactive\_Fitting.zip](/media/plugins/interactive-fitting.zip)' released='1 April 2020' status='stable' category='[Plotting](/plugin-index#plotting)' website='' %}

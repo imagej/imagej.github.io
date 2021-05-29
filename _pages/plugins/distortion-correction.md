@@ -1,7 +1,7 @@
 ---
 mediawiki: Distortion_Correction
 title: Distortion Correction
-categories: [Plugins,Transform]
+categories: [Transform]
 ---
 
 

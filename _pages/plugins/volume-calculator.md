@@ -1,7 +1,7 @@
 ---
 mediawiki: Volume_Calculator
 title: Volume Calculator
-categories: [Plugins]
+categories: []
 artifact: sc.fiji:Volume\_Calculator
 ---
 

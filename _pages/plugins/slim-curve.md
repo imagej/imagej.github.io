@@ -1,7 +1,7 @@
 ---
 mediawiki: SLIM_Curve
 title: SLIM Curve
-categories: [Plugins]
+categories: []
 ---
 
 {% include notice icon="warning" content='The SLIM Curve plugin for ImageJ has been discontinued in favor of [FLIMJ](/plugins/flimj).' %}

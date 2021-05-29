@@ -1,7 +1,7 @@
 ---
 mediawiki: Same_Slice_in_Multiple_Images
 title: Same Slice in Multiple Images
-categories: [Plugins,Scripting,Unmaintained]
+categories: [Scripting,Unmaintained]
 ---
 
 ## Purpose

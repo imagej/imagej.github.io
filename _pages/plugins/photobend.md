@@ -1,7 +1,7 @@
 ---
 mediawiki: PhotoBend
 title: PhotoBend
-categories: [Tracking,Tutorials,Plugins]
+categories: [Tracking,Tutorials]
 ---
 
 

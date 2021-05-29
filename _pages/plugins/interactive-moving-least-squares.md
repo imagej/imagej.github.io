@@ -1,7 +1,7 @@
 ---
 mediawiki: Interactive_Moving_Least_Squares
 title: Interactive Moving Least Squares
-categories: [Plugins,Transform]
+categories: [Transform]
 ---
 
 

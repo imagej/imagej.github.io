@@ -1,7 +1,7 @@
 ---
 mediawiki: MOSAICsuite
 title: MOSAICsuite
-categories: [Plugins,Particle analysis,Filtering,Colocalization,Deconvolution,Segmentation]
+categories: [Particle analysis,Filtering,Colocalization,Deconvolution,Segmentation]
 ---
 
 

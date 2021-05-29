@@ -1,7 +1,7 @@
 ---
 mediawiki: TopoJ
 title: TopoJ
-categories: [Tutorials,Plugins]
+categories: [Tutorials]
 artifact: sc.fiji:TopoJ\_
 ---
 

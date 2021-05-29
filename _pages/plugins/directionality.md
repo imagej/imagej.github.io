@@ -1,7 +1,7 @@
 ---
 mediawiki: Directionality
 title: Directionality
-categories: [Analysis,Plugins]
+categories: [Analysis]
 artifact: sc.fiji:Directionality\_
 ---
 

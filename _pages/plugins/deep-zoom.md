@@ -1,7 +1,7 @@
 ---
 mediawiki: Deep_Zoom
 title: Deep Zoom
-categories: [Plugins,Unmaintained]
+categories: [Unmaintained]
 ---
 
 

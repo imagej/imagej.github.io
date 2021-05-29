@@ -1,7 +1,7 @@
 ---
 mediawiki: Snakuscule
 title: Snakuscule
-categories: [Plugins,Segmentation]
+categories: [Segmentation]
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 mediawiki: Stochastic_Denoise
 title: Stochastic Denoise
-categories: [Tutorials,Plugins]
+categories: [Tutorials]
 name: Stochastic Denoise
 dev-status: Unreleased
 support-status: Unreleased

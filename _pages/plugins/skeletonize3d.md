@@ -1,7 +1,7 @@
 ---
 mediawiki: Skeletonize3D
 title: Skeletonize3D
-categories: [Plugins,Skeleton]
+categories: [Skeleton]
 artifact: sc.fiji:Skeletonize3D_
 doi: 10.1002/jemt.20829
 ---

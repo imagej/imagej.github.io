@@ -1,7 +1,7 @@
 ---
 mediawiki: Align_RGB_planes
 title: Align RGB planes
-categories: [Plugins, Color processing]
+categories: [Color processing]
 ---
 
 {% include info-box software='ImageJ' name='Align RGB planes' author='Gabriel Landini' maintainer='G. Landini at bham. ac. uk' filename=' [align\_rgb.zip](http://www.mecourse.com/landinig/software/align_rgb.zip)' source='in zip file' released='12 January 2004' latest-version='27 March 2007' status='active' category='[Color processing](/plugin-index#color-processing)' website='http://www.mecourse.com/landinig/software/software.html' %}

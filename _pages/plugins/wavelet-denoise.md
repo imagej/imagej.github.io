@@ -1,7 +1,7 @@
 ---
 mediawiki: Wavelet_Denoise
 title: Wavelet Denoise
-categories: [Plugins,Filtering]
+categories: [Filtering]
 ---
 
 

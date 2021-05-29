@@ -1,7 +1,7 @@
 ---
 mediawiki: DS4H_Image_Alignment
 title: DS4H Image Alignment
-categories: [Tutorials,Plugins,Registration]
+categories: [Tutorials,Registration]
 ---
 
 

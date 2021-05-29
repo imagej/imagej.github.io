@@ -1,7 +1,7 @@
 ---
 mediawiki: Saim
 title: Saim
-categories: [Techniques,Plugins]
+categories: [Techniques]
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 mediawiki: 3D_Viewer
 title: 3D Viewer
-categories: [Plugins,Visualization]
+categories: [Visualization]
 artifact: sc.fiji:3D_Viewer
 doi: 10.1186/1471-2105-11-274
 ---

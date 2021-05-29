@@ -1,7 +1,7 @@
 ---
 mediawiki: VIB_Protocol
 title: VIB Protocol
-categories: [Plugins]
+categories: []
 artifact: sc.fiji:VIB\_
 ---
 

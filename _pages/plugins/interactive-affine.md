@@ -1,7 +1,7 @@
 ---
 mediawiki: Interactive_Affine
 title: Interactive Affine
-categories: [Plugins,Transform]
+categories: [Transform]
 ---
 
 {% include info-box name='Interactive Affine' software='Fiji' author='Stephan Saalfeld' maintainer='Stephan Saalfeld' source=' [in gitweb](https://github.com/axtimwalde/mpicbg/blob/master/mpicbg_/src/main/java/Transform_Affine.java)' released='June 6<sup>th</sup>, 2008' latest-version='November 9<sup>th</sup>, 2008' status='stable' category='[Transform](/plugin-index#transform), [Plugins](/plugin-index)' %}

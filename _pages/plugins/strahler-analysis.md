@@ -1,7 +1,7 @@
 ---
 mediawiki: Strahler_Analysis
 title: Strahler Analysis
-categories: [Skeleton,Analysis,Plugins,Neuroanatomy]
+categories: [Skeleton,Analysis,Neuroanatomy]
 doi: 10.5281/zenodo.49399
 tags: strahler,plugin,arbor,neuron,morphometry,dendrite
 ---

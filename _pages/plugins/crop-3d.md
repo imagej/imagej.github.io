@@ -1,7 +1,7 @@
 ---
 mediawiki: Crop_(3D)
 title: Crop (3D)
-categories: [Plugins]
+categories: []
 ---
 
 

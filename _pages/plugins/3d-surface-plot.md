@@ -1,7 +1,7 @@
 ---
 mediawiki: 3D_Surface_Plot
 title: 3D Surface Plot
-categories: [Plugins]
+categories: []
 artifact: sc.fiji:Interactive\_3D\_Surface\_Plot
 ---
 

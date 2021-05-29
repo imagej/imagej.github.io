@@ -1,7 +1,7 @@
 ---
 mediawiki: Local_Thickness
 title: Local Thickness
-categories: [Plugins]
+categories: []
 artifact: sc.fiji:LocalThickness\_
 ---
 

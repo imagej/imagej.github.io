@@ -1,7 +1,7 @@
 ---
 mediawiki: Landmark_Correspondences
 title: Landmark Correspondences
-categories: [Plugins,Transform,Registration]
+categories: [Transform,Registration]
 ---
 
 

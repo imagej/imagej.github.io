@@ -1,7 +1,7 @@
 ---
 mediawiki: Roi_1-click_tools
 title: Roi 1-click tools
-categories: [Plugins,Update Sites,Macro Tools]
+categories: [Update Sites,Macro Tools]
 ---
 
 

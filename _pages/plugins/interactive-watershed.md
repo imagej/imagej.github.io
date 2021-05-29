@@ -1,7 +1,7 @@
 ---
 mediawiki: Interactive_Watershed
 title: Interactive Watershed
-categories: [Plugins,Segmentation]
+categories: [Segmentation]
 ---
 
 

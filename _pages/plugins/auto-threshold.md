@@ -1,7 +1,7 @@
 ---
 mediawiki: Auto_Threshold
 title: Auto Threshold
-categories: [Plugins,Segmentation]
+categories: [Segmentation]
 artifact: sc.fiji:Auto_Threshold
 ---
 

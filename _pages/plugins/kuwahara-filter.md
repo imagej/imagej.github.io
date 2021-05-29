@@ -1,7 +1,7 @@
 ---
 mediawiki: Kuwahara_Filter
 title: Kuwahara Filter
-categories: [Plugins]
+categories: []
 artifact: sc.fiji:Kuwahara\_Filter
 ---
 

@@ -1,7 +1,7 @@
 ---
 mediawiki: Dynamic_Reslice
 title: Dynamic Reslice
-categories: [Plugins]
+categories: []
 ---
 
 

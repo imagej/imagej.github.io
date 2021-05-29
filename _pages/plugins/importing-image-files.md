@@ -1,7 +1,7 @@
 ---
 mediawiki: Importing_Image_Files
 title: Importing Image Files
-categories: [Cookbook,Tutorials,Plugins,Import-Export]
+categories: [Cookbook,Tutorials,Import-Export]
 ---
 
 

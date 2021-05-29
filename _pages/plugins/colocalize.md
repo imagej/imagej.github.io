@@ -1,7 +1,7 @@
 ---
 mediawiki: Colocalize
 title: Colocalize
-categories: [Colocalization,Plugins]
+categories: [Colocalization]
 ---
 
 {% include warning/wip %}

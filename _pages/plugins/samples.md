@@ -1,7 +1,7 @@
 ---
 mediawiki: Samples
 title: Samples
-categories: [Plugins]
+categories: []
 artifact: sc.fiji:Samples\_
 ---
 

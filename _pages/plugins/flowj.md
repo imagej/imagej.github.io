@@ -1,7 +1,7 @@
 ---
 mediawiki: FlowJ
 title: FlowJ
-categories: [Plugins,Optic Flow]
+categories: [Optic Flow]
 artifact: sc.fiji:FlowJ\_
 ---
 

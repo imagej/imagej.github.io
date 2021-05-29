@@ -1,7 +1,7 @@
 ---
 mediawiki: DHM_Utilities/Reconstruction
 title: DHM Utilities/Reconstruction
-categories: [Plugins]
+categories: []
 project: DHM Utilities
 
 name: Reconstruction

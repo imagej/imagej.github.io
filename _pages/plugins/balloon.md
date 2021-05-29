@@ -1,7 +1,7 @@
 ---
 mediawiki: Balloon
 title: Balloon
-categories: [Plugins,Segmentation]
+categories: [Segmentation]
 artifact: sc.fiji:BalloonSegmentation\_
 ---
 

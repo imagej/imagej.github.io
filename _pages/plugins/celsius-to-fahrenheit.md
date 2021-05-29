@@ -1,7 +1,7 @@
 ---
 mediawiki: Celsius_to_fahrenheit
 title: Celsius to fahrenheit
-categories: [Plugins,Scripting,Unmaintained]
+categories: [Scripting,Unmaintained]
 ---
 
 ## Purpose

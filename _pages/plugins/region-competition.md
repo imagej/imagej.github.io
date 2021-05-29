@@ -1,7 +1,7 @@
 ---
 mediawiki: Region_Competition
 title: Region Competition
-categories: [Plugins,Segmentation,Deconvolution]
+categories: [Segmentation,Deconvolution]
 ---
 
 

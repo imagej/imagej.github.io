@@ -1,7 +1,7 @@
 ---
 mediawiki: Frames
 title: Frames
-categories: [Import-Export,Plugins]
+categories: [Import-Export]
 ---
 
 {% include info-box software='ImageJ1' name='Frames' author='Fred Damen' maintainer='Fred Damen' filename='Frames.jar' source=' [Frames.zip](/media/frames.zip)' released='1 April 2019' latest-version='1 April 2020' status='stable' category='[Analysis](/plugin-index#analysis)' website='' %}

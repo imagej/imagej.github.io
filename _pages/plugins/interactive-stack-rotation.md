@@ -1,7 +1,7 @@
 ---
 mediawiki: Interactive_Stack_Rotation
 title: Interactive Stack Rotation
-categories: [Plugins,Transform,Interactive]
+categories: [Transform,Interactive]
 ---
 
 

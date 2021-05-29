@@ -1,7 +1,7 @@
 ---
 mediawiki: Fiji_Plugins
 title: Fiji Plugins
-categories: [Plugins]
+categories: []
 artifact: sc.fiji:Fiji\_Plugins
 ---
 

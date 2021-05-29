@@ -1,7 +1,7 @@
 ---
 mediawiki: MRI_Perfusion
 title: MRI Perfusion
-categories: [Plugins,Perfusion]
+categories: [Perfusion]
 ---
 
 

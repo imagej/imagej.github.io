@@ -1,7 +1,7 @@
 ---
 mediawiki: Image_Stitching
 title: Image Stitching
-categories: [Plugins,Registration,Stitching,Cookbook]
+categories: [Registration,Stitching,Cookbook]
 artifact: sc.fiji:Stitching\_
 ---
 

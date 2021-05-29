@@ -1,7 +1,7 @@
 ---
 mediawiki: Mixture_Modeling_Thresholding
 title: Mixture Modeling Thresholding
-categories: [Plugins,Segmentation]
+categories: [Segmentation]
 ---
 
 {% include info-box software='ImageJ' name='Mixture Modeling' author='Christopher Mei, Maxime Dauphin' filename=' [Mixture\_Modeling.jar](/ij/plugins/download/jars/Mixture_Modeling.jar) (18,454 Bytes)' source='in .jar file' released='15 December 2003' status='unknown' category='[Segmentation](/plugin-index#segmentation)' website='/ij/plugins/mixture-modeling.html' %}

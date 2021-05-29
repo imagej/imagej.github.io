@@ -1,7 +1,7 @@
 ---
 mediawiki: AnalyzeSkeleton
 title: AnalyzeSkeleton
-categories: [Plugins,Skeleton,Analysis,Neuroanatomy]
+categories: [Skeleton,Analysis,Neuroanatomy]
 artifact: sc.fiji:AnalyzeSkeleton_
 doi: 10.1002/jemt.20829
 ---

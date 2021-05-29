@@ -1,7 +1,7 @@
 ---
 mediawiki: RandomJ
 title: RandomJ
-categories: [Plugins,ImageScience]
+categories: [ImageScience]
 ---
 
 

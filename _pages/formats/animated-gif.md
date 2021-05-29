@@ -2,7 +2,7 @@
 mediawiki: Save_as_animated_gif
 title: Save as animated gif
 section: Learn:File Formats
-categories: [Tutorials,Plugins]
+categories: [Tutorials]
 ---
 
 

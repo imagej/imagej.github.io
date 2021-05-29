@@ -1,7 +1,7 @@
 ---
 mediawiki: Dynamic_ROI_Profiler
 title: Dynamic ROI Profiler
-categories: [Plugins,Scripting,Unmaintained]
+categories: [Scripting,Unmaintained]
 ---
 
 

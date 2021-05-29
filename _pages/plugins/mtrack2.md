@@ -1,7 +1,7 @@
 ---
 mediawiki: MTrack2
 title: MTrack2
-categories: [Plugins,Tracking]
+categories: [Tracking]
 artifact: sc.fiji:MTrack2\_
 ---
 

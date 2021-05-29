@@ -1,7 +1,7 @@
 ---
 mediawiki: Spline_Deformation_Generator
 title: Spline Deformation Generator
-categories: [Plugins,Transform]
+categories: [Transform]
 artifact: sc.fiji:SplineDeformationGenerator\_
 ---
 

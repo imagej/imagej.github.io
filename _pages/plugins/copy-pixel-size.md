@@ -1,7 +1,7 @@
 ---
 mediawiki: Copy_Pixel_Size
 title: Copy Pixel Size
-categories: [Plugins,Image annotation]
+categories: [Image annotation]
 ---
 
 

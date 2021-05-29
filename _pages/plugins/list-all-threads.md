@@ -1,7 +1,7 @@
 ---
 mediawiki: List_all_threads
 title: List all threads
-categories: [Plugins,Scripting,Unmaintained]
+categories: [Scripting,Unmaintained]
 ---
 
 ## Purpose

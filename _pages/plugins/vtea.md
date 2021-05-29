@@ -1,7 +1,7 @@
 ---
 mediawiki: VTEA
 title: VTEA
-categories: [Segmentation,Visualization,Plugins]
+categories: [Segmentation,Visualization]
 ---
 
 

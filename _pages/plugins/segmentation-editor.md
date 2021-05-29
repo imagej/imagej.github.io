@@ -1,7 +1,7 @@
 ---
 mediawiki: Segmentation_Editor
 title: Segmentation Editor
-categories: [Plugins,Segmentation]
+categories: [Segmentation]
 ---
 
 

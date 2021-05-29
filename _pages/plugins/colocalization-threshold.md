@@ -1,7 +1,7 @@
 ---
 mediawiki: Colocalization_Threshold
 title: Colocalization Threshold
-categories: [Plugins,Colocalization,Color processing]
+categories: [Colocalization,Color processing]
 ---
 
 {% include warning/deprecated

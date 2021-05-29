@@ -1,7 +1,7 @@
 ---
 mediawiki: Marker-controlled_Watershed
 title: Marker-controlled Watershed
-categories: [Plugins,Segmentation,Mathematical morphology]
+categories: [Segmentation,Mathematical morphology]
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 mediawiki: Delayed_Snapshot
 title: Delayed Snapshot
-categories: [Plugins,Scripting]
+categories: [Scripting]
 ---
 
 ## Purpose

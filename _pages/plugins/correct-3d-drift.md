@@ -1,7 +1,7 @@
 ---
 mediawiki: Correct_3D_Drift
 title: Correct 3D Drift
-categories: [Plugins,Registration]
+categories: [Registration]
 artifact: sc.fiji:Correct\_3D\_Drift
 ---
 

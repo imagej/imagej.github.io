@@ -1,7 +1,7 @@
 ---
 mediawiki: Video_Editing
 title: Video Editing
-categories: [Plugins]
+categories: []
 artifact: sc.fiji:Video\_Editing
 ---
 

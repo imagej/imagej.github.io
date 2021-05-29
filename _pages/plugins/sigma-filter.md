@@ -1,7 +1,7 @@
 ---
 mediawiki: Sigma_Filter
 title: Sigma Filter
-categories: [Plugins,Filtering]
+categories: [Filtering]
 doi: 10.1016/0734-189X(83)90047-6
 ---
 

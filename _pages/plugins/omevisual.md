@@ -1,7 +1,7 @@
 ---
 mediawiki: OMEVisual
 title: OMEVisual
-categories: [Plugins,OME]
+categories: [OME]
 ---
 
 

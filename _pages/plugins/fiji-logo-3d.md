@@ -1,7 +1,7 @@
 ---
 mediawiki: Fiji_Logo_3D
 title: Fiji Logo 3D
-categories: [Plugins,Scripting]
+categories: [Scripting]
 ---
 
 ## Purpose

@@ -1,7 +1,7 @@
 ---
 mediawiki: Block_Matching
 title: Block Matching
-categories: [Plugins]
+categories: []
 artifact: sc.fiji:blockmatching\_
 ---
 

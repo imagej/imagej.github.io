@@ -1,7 +1,7 @@
 ---
 mediawiki: Enhance_Local_Contrast_(CLAHE)
 title: Enhance Local Contrast (CLAHE)
-categories: [Plugins,Filtering]
+categories: [Filtering]
 
 artifact: mpicbg:mpicbg_:1.4.1
 ---

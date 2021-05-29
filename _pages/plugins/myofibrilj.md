@@ -1,7 +1,7 @@
 ---
 mediawiki: MyofibrilJ
 title: MyofibrilJ
-categories: [Scripting,Analysis,Plugins]
+categories: [Scripting,Analysis]
 ---
 
 <seo metak="Fourier analysis, autocorrelation" metad="Fourier analysis, autocorrelation" /> 

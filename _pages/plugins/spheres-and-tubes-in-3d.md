@@ -1,7 +1,7 @@
 ---
 mediawiki: Spheres_and_Tubes_in_3D
 title: Spheres and Tubes in 3D
-categories: [Plugins,Unmaintained]
+categories: [Unmaintained]
 ---
 
 An example ImageJ plugin illustrating how to create and display 3D tubes and 3D spheres in the [3D Viewer](/plugins/3d-viewer).

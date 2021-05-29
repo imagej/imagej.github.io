@@ -1,7 +1,7 @@
 ---
 mediawiki: Biomat
 title: Biomat
-categories: [Plugins,Filtering]
+categories: [Filtering]
 ---
 
 

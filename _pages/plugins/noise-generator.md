@@ -1,7 +1,7 @@
 ---
 mediawiki: Noise_Generator
 title: Noise Generator
-categories: [Plugins,Noise]
+categories: [Noise]
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 mediawiki: Volume_Viewer
 title: Volume Viewer
-categories: [Plugins,Visualization]
+categories: [Visualization]
 artifact: sc.fiji:Volume\_Viewer
 ---
 

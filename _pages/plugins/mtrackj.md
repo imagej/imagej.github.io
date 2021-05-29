@@ -1,7 +1,7 @@
 ---
 mediawiki: MTrackJ
 title: MTrackJ
-categories: [Plugins,Tracking,ImageScience]
+categories: [Tracking,ImageScience]
 ---
 
 

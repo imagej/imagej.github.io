@@ -1,7 +1,7 @@
 ---
 mediawiki: Atlas_Toolkit
 title: Atlas Toolkit
-categories: [Plugins,Registration]
+categories: [Registration]
 doi: 10.1038/srep20732
 ---
 

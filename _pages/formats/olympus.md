@@ -2,7 +2,7 @@
 mediawiki: OlympusImageJPlugin
 title: OlympusImageJPlugin
 section: Learn:ImageJ Basics:File Formats
-categories: [Plugins,Import-Export]
+categories: [Import-Export]
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 mediawiki: Microscope_Measurement_Tools
 title: Microscope Measurement Tools
-categories: [Plugins,Registration]
+categories: [Registration]
 ---
 
 

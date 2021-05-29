@@ -1,7 +1,7 @@
 ---
 mediawiki: Straighten...
 title: Straighten...
-categories: [Plugins]
+categories: []
 ---
 
 ImageJ has a simple and effective tool for Straightening images of curved structures, which can be found in the menus as "{% include bc path='Edit | Selection | Straighten...'%}". A silly example (straightening an MPI canteen banana) is shown here.

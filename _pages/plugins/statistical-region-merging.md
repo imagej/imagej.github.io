@@ -1,7 +1,7 @@
 ---
 mediawiki: Statistical_Region_Merging
 title: Statistical Region Merging
-categories: [Tutorials,Plugins,Segmentation]
+categories: [Tutorials,Segmentation]
 artifact: sc.fiji:Statistical\_Region\_Merging
 ---
 

@@ -1,7 +1,7 @@
 ---
 mediawiki: Lasso_and_Blow_Tool
 title: Lasso and Blow Tool
-categories: [Plugins,Segmentation]
+categories: [Segmentation]
 artifact: sc.fiji:Lasso\_and\_Blow\_Tool
 ---
 

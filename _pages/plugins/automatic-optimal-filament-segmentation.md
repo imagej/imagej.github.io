@@ -1,7 +1,7 @@
 ---
 mediawiki: Automatic_optimal_filament_segmentation
 title: Automatic optimal filament segmentation
-categories: [Plugins,Segmentation]
+categories: [Segmentation]
 ---
 
 

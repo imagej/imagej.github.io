@@ -1,7 +1,7 @@
 ---
 mediawiki: DiameterJ
 title: DiameterJ
-categories: [Plugins,Analysis]
+categories: [Analysis]
 ---
 
 

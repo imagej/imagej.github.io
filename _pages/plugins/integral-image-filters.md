@@ -1,7 +1,7 @@
 ---
 mediawiki: Integral_Image_Filters
 title: Integral Image Filters
-categories: [Plugins,Filtering,Integral Image]
+categories: [Filtering,Integral Image]
 ---
 
 

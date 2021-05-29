@@ -1,7 +1,7 @@
 ---
 mediawiki: Minimum_Cost_Z_surface_Projection
 title: Minimum Cost Z surface Projection
-categories: [Plugins,Projection]
+categories: [Projection]
 ---
 
 {% capture benoalo %}{% include person id='benoalo' %}{% endcapture %}

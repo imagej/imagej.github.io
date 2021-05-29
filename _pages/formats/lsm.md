@@ -2,7 +2,7 @@
 mediawiki: LSM_Toolbox
 title: LSM Toolbox
 section: Learn:ImageJ Basics:File Formats
-categories: [Plugins,Import-Export]
+categories: [Import-Export]
 artifact: sc.fiji:LSM\_Toolbox
 ---
 

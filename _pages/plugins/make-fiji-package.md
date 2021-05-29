@@ -1,7 +1,7 @@
 ---
 mediawiki: Make_Fiji_Package
 title: Make Fiji Package
-categories: [Tutorials,Plugins]
+categories: [Tutorials]
 artifact: sc.fiji:Fiji\_Package\_Maker
 ---
 

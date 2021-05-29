@@ -1,7 +1,7 @@
 ---
 mediawiki: Distance_Transform_Watershed
 title: Distance Transform Watershed
-categories: [Plugins,Segmentation,Mathematical morphology]
+categories: [Segmentation,Mathematical morphology]
 ---
 
 

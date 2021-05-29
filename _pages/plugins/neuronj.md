@@ -1,7 +1,7 @@
 ---
 mediawiki: NeuronJ
 title: NeuronJ
-categories: [Plugins,ImageScience,Neuroanatomy]
+categories: [ImageScience,Neuroanatomy]
 ---
 
 

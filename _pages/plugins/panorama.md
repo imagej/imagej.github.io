@@ -1,7 +1,7 @@
 ---
 mediawiki: Panorama
 title: Panorama
-categories: [Plugins]
+categories: []
 artifact: sc.fiji:panorama\_
 ---
 

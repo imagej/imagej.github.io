@@ -1,7 +1,7 @@
 ---
 mediawiki: FijiRelax
 title: FijiRelax
-categories: [Plugins,Analysis]
+categories: [Analysis]
 description: Quantitative MRI analysis
 ---
 

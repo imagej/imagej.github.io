@@ -1,7 +1,7 @@
 ---
 mediawiki: SPIM_Opener
 title: SPIM Opener
-categories: [Plugins]
+categories: []
 artifact: sc.fiji:SPIM\_Opener
 ---
 

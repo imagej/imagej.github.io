@@ -1,7 +1,7 @@
 ---
 mediawiki: Automatic_detection_of_neuronal_labeling_in_histological_image_series
 title: Automatic detection of neuronal labeling in histological image series
-categories: [Analysis,Plugins]
+categories: [Analysis]
 ---
 
 # Automatic detection of neuronal labeling in histological image series

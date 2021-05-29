@@ -1,7 +1,7 @@
 ---
 mediawiki: Blend_two_images
 title: Blend two images
-categories: [Plugins,Scripting]
+categories: [Scripting]
 ---
 
 ## Purpose

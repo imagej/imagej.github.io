@@ -1,7 +1,7 @@
 ---
 mediawiki: Coloc_2
 title: Coloc 2
-categories: [Colocalization,Color processing,Plugins]
+categories: [Colocalization,Color processing]
 artifact: sc.fiji:Colocalisation\_Analysis
 ---
 

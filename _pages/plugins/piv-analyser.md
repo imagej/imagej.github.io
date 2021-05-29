@@ -1,7 +1,7 @@
 ---
 mediawiki: PIV_analyser
 title: PIV analyser
-categories: [Plugins,Optic Flow]
+categories: [Optic Flow]
 artifact: sc.fiji:PIV\_analyser
 ---
 

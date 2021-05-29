@@ -1,7 +1,7 @@
 ---
 mediawiki: Shape_Index_Map
 title: Shape Index Map
-categories: [Plugins]
+categories: []
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 mediawiki: Multi-Template_Matching
 title: Multi-Template Matching
-categories: [Plugins,Feature Extraction,Jython,Object Detection]
+categories: [Feature Extraction,Jython,Object Detection]
 ---
 
 

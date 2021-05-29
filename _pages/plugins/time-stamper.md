@@ -1,7 +1,7 @@
 ---
 mediawiki: Time_Stamper
 title: Time Stamper
-categories: [Plugins,Image annotation]
+categories: [Image annotation]
 artifact: sc.fiji:Time\_Stamper
 ---
 

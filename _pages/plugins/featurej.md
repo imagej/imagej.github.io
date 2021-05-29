@@ -1,7 +1,7 @@
 ---
 mediawiki: FeatureJ
 title: FeatureJ
-categories: [Plugins,ImageScience]
+categories: [ImageScience]
 ---
 
 

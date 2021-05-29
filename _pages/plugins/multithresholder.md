@@ -1,7 +1,7 @@
 ---
 mediawiki: MultiThresholder
 title: MultiThresholder
-categories: [Plugins,Segmentation]
+categories: [Segmentation]
 ---
 
 {%- capture removed-from-fiji -%}

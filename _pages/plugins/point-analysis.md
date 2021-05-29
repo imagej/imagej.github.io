@@ -1,7 +1,7 @@
 ---
 mediawiki: Point_Analysis
 title: Point Analysis
-categories: [Tutorials,Plugins]
+categories: [Tutorials]
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 mediawiki: Interactive_Perspective
 title: Interactive Perspective
-categories: [Plugins,Transform]
+categories: [Transform]
 ---
 
 

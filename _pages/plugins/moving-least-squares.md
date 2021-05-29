@@ -1,7 +1,7 @@
 ---
 mediawiki: Moving_Least_Squares
 title: Moving Least Squares
-categories: [Tutorials,Plugins]
+categories: [Tutorials]
 ---
 
 

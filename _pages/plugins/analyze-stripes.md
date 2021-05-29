@@ -1,7 +1,7 @@
 ---
 mediawiki: Analyze_Stripes
 title: Analyze Stripes
-categories: [Plugins,Analysis,Tutorials]
+categories: [Analysis,Tutorials]
 ---
 
 ## Analyze Stripes

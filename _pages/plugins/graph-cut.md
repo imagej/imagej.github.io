@@ -1,7 +1,7 @@
 ---
 mediawiki: Graph_Cut
 title: Graph Cut
-categories: [Segmentation,Tutorials,Plugins]
+categories: [Segmentation,Tutorials]
 artifact: sc.fiji:Graph\_Cut
 ---
 

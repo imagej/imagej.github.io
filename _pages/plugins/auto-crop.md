@@ -1,7 +1,7 @@
 ---
 mediawiki: Auto_Crop
 title: Auto Crop
-categories: [Tutorials,Plugins]
+categories: [Tutorials]
 ---
 
 

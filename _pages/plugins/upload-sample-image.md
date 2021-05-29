@@ -1,7 +1,7 @@
 ---
 mediawiki: Upload_Sample_Image
 title: Upload Sample Image
-categories: [Plugins]
+categories: []
 ---
 
 

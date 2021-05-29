@@ -1,7 +1,7 @@
 ---
 mediawiki: Classic_Watershed
 title: Classic Watershed
-categories: [Plugins,Segmentation,Mathematical morphology]
+categories: [Segmentation,Mathematical morphology]
 ---
 
 

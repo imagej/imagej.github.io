@@ -1,7 +1,7 @@
 ---
 mediawiki: Find_Dimension_of_Raw_Image
 title: Find Dimension of Raw Image
-categories: [Plugins,Scripting]
+categories: [Scripting]
 ---
 
 ## Purpose

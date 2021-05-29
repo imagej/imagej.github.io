@@ -1,7 +1,7 @@
 ---
 mediawiki: DICOM_open
 title: DICOM open
-categories: [Import-Export,Plugins]
+categories: [Import-Export]
 ---
 
 {% include info-box software='ImageJ1' name='DICOM\_open' author='Fred Damen' filename='DICOM\_open.jar' source=' [DICOM\_open.zip](/media/plugins/dicom-open.zip)' released='1 April 2019' status='stable' category='[Import-Export](/plugin-index#import-export)' website='' %}

@@ -1,7 +1,7 @@
 ---
 mediawiki: Stitching_2D/3D
 title: Stitching 2D/3D
-categories: [Plugins,Registration,Stitching]
+categories: [Registration,Stitching]
 artifact: sc.fiji:Stitching\_
 ---
 

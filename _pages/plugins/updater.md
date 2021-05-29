@@ -1,7 +1,7 @@
 ---
 mediawiki: Updater
 title: Updater
-categories: [Plugins,ImageJ2]
+categories: [ImageJ2]
 artifact: net.imagej:imagej-updater
 ---
 

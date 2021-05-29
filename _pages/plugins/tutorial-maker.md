@@ -1,7 +1,7 @@
 ---
 mediawiki: Tutorial_Maker
 title: Tutorial Maker
-categories: [Plugins]
+categories: []
 ---
 
 

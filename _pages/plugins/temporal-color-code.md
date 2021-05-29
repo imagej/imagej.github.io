@@ -1,7 +1,7 @@
 ---
 mediawiki: Temporal-Color_Code
 title: Temporal-Color Code
-categories: [Plugins,Color processing]
+categories: [Color processing]
 ---
 
 ![ 256px \| Stack of Listeria Movement ](/media/plugins/k-listeria-animated.gif)

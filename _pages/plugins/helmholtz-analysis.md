@@ -1,7 +1,7 @@
 ---
 mediawiki: Helmholtz_Analysis
 title: Helmholtz Analysis
-categories: [Plugins]
+categories: []
 artifact: sc.fiji:Helmholtz\_Analysis
 ---
 

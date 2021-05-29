@@ -1,7 +1,7 @@
 ---
 mediawiki: Interactive_Rigid
 title: Interactive Rigid
-categories: [Plugins,Transform]
+categories: [Transform]
 ---
 
 {% include info-box name='Interactive Rigid' software='Fiji' author='Stephan Saalfeld' maintainer='Stephan Saalfeld' source=' [in gitweb](https://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=Transform_Rigid.java)' released='October 10, 2008' latest-version='October 10, 2008' status='stable' category='[Transform](/plugin-index#transform), [Plugins](/plugin-index)' %}

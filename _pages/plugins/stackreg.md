@@ -1,7 +1,7 @@
 ---
 mediawiki: StackReg
 title: StackReg
-categories: [Plugins,Transform,Registration]
+categories: [Transform,Registration]
 ---
 
 

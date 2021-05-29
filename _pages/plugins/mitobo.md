@@ -1,7 +1,7 @@
 ---
 mediawiki: MiToBo
 title: MiToBo
-categories: [Plugins,Related Software,SciJava]
+categories: [Related Software,SciJava]
 doi: 10.5334/jors.103
 ---
 

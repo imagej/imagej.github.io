@@ -1,7 +1,7 @@
 ---
 mediawiki: Thread_Killer
 title: Thread Killer
-categories: [Plugins]
+categories: []
 artifact: sc.fiji:Thread\_Killer
 ---
 

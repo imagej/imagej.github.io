@@ -1,7 +1,7 @@
 ---
 mediawiki: TransformJ
 title: TransformJ
-categories: [Plugins,ImageScience]
+categories: [ImageScience]
 ---
 
 

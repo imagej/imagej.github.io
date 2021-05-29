@@ -1,7 +1,7 @@
 ---
 mediawiki: TreeJ
 title: TreeJ
-categories: [Plugins,Analysis]
+categories: [Analysis]
 ---
 
 

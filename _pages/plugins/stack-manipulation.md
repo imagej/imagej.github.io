@@ -1,7 +1,7 @@
 ---
 mediawiki: Stack_Manipulation
 title: Stack Manipulation
-categories: [Plugins]
+categories: []
 artifact: sc.fiji:Stack\_Manipulation
 ---
 
