@@ -256,7 +256,7 @@ Use the ImageJ-MATLAB [update site](/update-sites). See the [MATLAB](/scripting/
 
 # Development
 
-## Why do I get a NoSuchMethodError/NoSuchClassDefFoundError when running a rebuilt plugin?
+## Why do I get a `NoSuchMethodError` or `NoSuchClassDefFoundError` when running a rebuilt plugin?
 
 This is most likely caused by version skew, i.e. when an incompatible version of a build dependency is installed. Example: if you build against `mpicbg-1.0.0.jar` and run that plugin in a Fiji which has only installed `mpicbg-0.6.1.jar`, the latter might miss some methods or classes, or even contain incompatible class definitions.
 
