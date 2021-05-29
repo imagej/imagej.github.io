@@ -3,6 +3,7 @@ mediawiki: Endrov
 title: Endrov
 section: Explore:Software
 categories: [Software,Citable]
+doi: 10.1038/nmeth.2478
 ---
 
 
@@ -13,6 +14,4 @@ categories: [Software,Citable]
 
 ## Publication
 
--   {% include publication content='Endrov' %}
-
- 
+{% include citation %}

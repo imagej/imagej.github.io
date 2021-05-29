@@ -3,6 +3,7 @@ mediawiki: Fiji
 title: Fiji
 section: Explore:Software
 categories: [Fiji,Related Software,Citable]
+doi: 10.1038/nmeth.2019
 ---
 
 
@@ -42,4 +43,4 @@ If you'd like to share an idea or project, please [share them with the community
 
 ## Publication
 
-{% include publication content='Fiji' %}
+{% include citation %}

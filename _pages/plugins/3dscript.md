@@ -2,6 +2,7 @@
 mediawiki: 3Dscript
 title: 3Dscript
 categories: [Plugins,Visualization,Citable]
+doi: 10.1038/s41592-019-0359-1
 ---
 
 
@@ -28,7 +29,7 @@ In 3Dscript, animations are defined by a syntax based on natural English languag
 
 ## Publication
 
--   {% include publication content='3Dscript' %}
+{% include citation %}
 
 ## Installation
 

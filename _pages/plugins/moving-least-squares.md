@@ -40,4 +40,4 @@ And you get the result:
 
 ## References
 
-{% include cite fn='1' content='journal' title='Image Deformation Using Moving Least Squares' author='Schaefer S., McPhail T., Warrent J.' journal='ACM Transactions on Graphics' volume='25' issue='3' month='July' year='2006' pages='533-540' %}
+{% include citation fn='1' content='journal' title='Image Deformation Using Moving Least Squares' author='Schaefer S., McPhail T., Warrent J.' journal='ACM Transactions on Graphics' volume='25' issue='3' month='July' year='2006' pages='533-540' %}

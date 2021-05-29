@@ -3,6 +3,7 @@ mediawiki: ITK
 title: ITK
 section: Explore:Software
 categories: [Software,Citable]
+doi: 10.3233/978-1-60750-929-5-586
 ---
 
 
@@ -45,7 +46,7 @@ There are several templates in the [Script Editor](/scripting/script-editor) dem
 
 To cite ITK, please use the following publication:
 
--   {% include publication content='ITK' %}
+{% include citation %}
 
 See also:
 

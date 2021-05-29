@@ -25,4 +25,4 @@ This is a result for a low value of *Q*:
 
 ## References
 
-{% include cite fn='1' content='journal' author='R. Nock, F. Nielsen' title='Statistical Region Merging' journal='IEEE Trans. Pattern Anal. Mach. Intell.' volume='26' number='11' pages='1452-1458' year='2004' %}
+{% include citation fn='1' content='journal' author='R. Nock, F. Nielsen' title='Statistical Region Merging' journal='IEEE Trans. Pattern Anal. Mach. Intell.' volume='26' number='11' pages='1452-1458' year='2004' %}

@@ -3,6 +3,7 @@ mediawiki: Bio7
 title: Bio7
 section: Explore:Software
 categories: [Software,Citable]
+doi: 10.18637/jss.v049.i04
 ---
 
 
@@ -13,6 +14,6 @@ categories: [Software,Citable]
 
 ## Publication
 
-{% include publication content='Bio7' %}
+{% include citation %}
 
  

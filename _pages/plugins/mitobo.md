@@ -2,6 +2,7 @@
 mediawiki: MiToBo
 title: MiToBo
 categories: [Plugins,Related Software,SciJava,Citable]
+doi: 10.5334/jors.103
 ---
 
 
@@ -26,6 +27,4 @@ MiToBo is based on the [Alida](/software/alida) framework. MiToBo's operators ar
 
 ## Publication
 
--   {% include publication content='MiToBo' %}
-
-   
+{% include citation %}

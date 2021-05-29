@@ -1,6 +1,7 @@
 ---
 mediawiki: FigureJ
 title: FigureJ
+doi: 10.1111/jmi.12069
 ---
 
 
@@ -31,4 +32,4 @@ When using FigureJ for a research article, you can cite the following [article f
 
 ## Publication
 
--   {% include publication content='FigureJ' %}
+{% include citation %}

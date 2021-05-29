@@ -50,6 +50,6 @@ The [Rand error](/plugins/tws/rand-error) metric is implemented in the [Trainabl
 
 ## References
 
-{% include cite fn='1' content='journal' author='William M. Rand' title='Objective criteria for the evaluation of clustering methods' journal='Journal of the American Statistical Association' year='1971' volume='66' pages='846–850' number='36' doi='10.2307/2284239' %}
+{% include citation fn='1' content='journal' author='William M. Rand' title='Objective criteria for the evaluation of clustering methods' journal='Journal of the American Statistical Association' year='1971' volume='66' pages='846–850' number='36' doi='10.2307/2284239' %}
 
-{% include cite fn='2' content='journal' author='R. Unnikrishnan, C. Pantofaru, and M. Hebert' title='Toward objective evaluation of image segmentation algorithms' journal='IEEE Transactions on Pattern Analysis and Machine Intelligence' year='2007' volume='29' pages='929-944' issue='6' doi='10.1109/TPAMI.2007.1046' %}
+{% include citation fn='2' content='journal' author='R. Unnikrishnan, C. Pantofaru, and M. Hebert' title='Toward objective evaluation of image segmentation algorithms' journal='IEEE Transactions on Pattern Analysis and Machine Intelligence' year='2007' volume='29' pages='929-944' issue='6' doi='10.1109/TPAMI.2007.1046' %}

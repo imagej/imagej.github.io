@@ -11,6 +11,6 @@ In its path, TrakEM2 fostered the development of software libraries for image re
 [TrakEM2](/plugins/trakem2) has now reached [version 1.0](http://www.ini.uzh.ch/~acardona/trakem2.html) and is feature complete.
 
 
-{% include cite fn='1' content='journal' author='Albert Cardona, Stephan Saalfeld, Johannes Schindelin, Ignacio Arganda-Carreras, Stephan Preibisch, Mark Longair, Pavel Tomancak, Volker Hartenstein and Rodney J. Douglas' year='2012' title='TrakEM2 software for neural circuit reconstruction' journal='PLoS ONE' url='http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0038011' doi='10.1371/journal.pone.0038011' %}
+{% include citation fn='1' content='journal' author='Albert Cardona, Stephan Saalfeld, Johannes Schindelin, Ignacio Arganda-Carreras, Stephan Preibisch, Mark Longair, Pavel Tomancak, Volker Hartenstein and Rodney J. Douglas' year='2012' title='TrakEM2 software for neural circuit reconstruction' journal='PLoS ONE' url='http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0038011' doi='10.1371/journal.pone.0038011' %}
 
-{% include cite fn='2' content='journal' author='Benjamin Schmid , Johannes Schindelin , Albert Cardona , Mark Longair and Martin Heisenberg' title='A high-level 3D visualization API for Java and ImageJ' journal='BMC Bioinformatics' year='2010' volume='11' page='274' url='http://www.biomedcentral.com/1471-2105/11/274/abstract' %}
+{% include citation fn='2' content='journal' author='Benjamin Schmid , Johannes Schindelin , Albert Cardona , Mark Longair and Martin Heisenberg' title='A high-level 3D visualization API for Java and ImageJ' journal='BMC Bioinformatics' year='2010' volume='11' pages='274' url='http://www.biomedcentral.com/1471-2105/11/274/abstract' %}

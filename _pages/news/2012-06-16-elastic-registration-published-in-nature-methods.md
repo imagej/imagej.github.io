@@ -10,4 +10,4 @@ The paper is accompanied by a number of spectacular videos visualizing the metho
 
 Congratulations to everyone involved, particularly Stephan!
 
-{% include cite content='journal' fn='1' author='Stephan Saalfeld, Richard Fetter, Albert Cardona, and Pavel Tomancak' year='Epub ahead of print 10 June 2012' title='Elastic volume reconstruction from series of ultra-thin microscopy sections' journal='Nature Methods' url='http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.2072.html' doi='10.1038/nmeth.2072' %}
+{% include citation content='journal' fn='1' author='Stephan Saalfeld, Richard Fetter, Albert Cardona, and Pavel Tomancak' year='Epub ahead of print 10 June 2012' title='Elastic volume reconstruction from series of ultra-thin microscopy sections' journal='Nature Methods' url='http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.2072.html' doi='10.1038/nmeth.2072' %}

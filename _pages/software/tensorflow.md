@@ -3,6 +3,7 @@ mediawiki: TensorFlow
 title: TensorFlow
 section: Explore:Software
 categories: [Software,Citable,SciJava]
+doi: 10.5281/zenodo.4724125
 ---
 
 
@@ -19,7 +20,7 @@ The [ImageJ-TensorFlow](https://github.com/imagej/imagej-tensorflow) project ena
 
 ## Publication
 
--   {% include publication content='TensorFlow' %}
+{% include citation %}
 
 ## See also
 

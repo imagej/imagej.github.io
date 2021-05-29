@@ -2,6 +2,7 @@
 mediawiki: ActogramJ
 title: ActogramJ
 categories: [Plugins,Visualization,Citable]
+doi: 10.1177/0748730411414264
 ---
 
 
@@ -22,7 +23,7 @@ categories: [Plugins,Visualization,Citable]
 
 ## Publication
 
--   {% include publication content='ActogramJ' %}
+{% include citation %}
 
 ![](/media/plugins/actogramj.png)
 

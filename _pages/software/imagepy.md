@@ -2,6 +2,7 @@
 mediawiki: ImagePy
 title: ImagePy
 categories: [Software,Citable]
+doi: 10.1093/bioinformatics/bty313
 ---
 
 
@@ -20,6 +21,4 @@ categories: [Software,Citable]
 
 ## Publication
 
--   {% include publication content='ImagePy' %}
-
- 
+{% include citation %}

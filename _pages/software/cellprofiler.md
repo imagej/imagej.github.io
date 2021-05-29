@@ -3,8 +3,11 @@ mediawiki: CellProfiler
 title: CellProfiler
 section: Explore:Software
 categories: [Software,SciJava,Citable]
+doi:
+- 10.1186/gb-2006-7-10-r100
+- 10.1093/bioinformatics/btr095
+- 10.1371/journal.pbio.2005970
 ---
-
 
 {% capture source%}
 {% include github org='CellProfiler' repo='CellProfiler' %}
@@ -13,8 +16,4 @@ categories: [Software,SciJava,Citable]
 
 ## Publications
 
--   {% include publication content='CellProfiler3' %}
--   {% include publication content='CellProfiler2' %}
--   {% include publication content='CellProfiler' %}
-
-  
+{% include citation %}

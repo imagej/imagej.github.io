@@ -9,7 +9,7 @@ This page contains a tutorial for the [MaMuT](/plugins/mamut) plugin. It describ
 
 If you find MaMuT useful for your research, please cite it:
 
-{% include publication content='MaMuT' %}
+{% include citation id="plugins/mamut" %}
 
 ## Installation.
 

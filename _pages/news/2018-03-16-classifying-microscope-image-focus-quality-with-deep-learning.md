@@ -10,6 +10,6 @@ The Google Accelerated Science team has published an ImageJ plugin, [Microscope 
 
 For details, see the Google Research Blog post [Using Deep Learning to Facilitate Scientific Image Analysis](https://research.googleblog.com/2018/03/using-deep-learning-to-facilitate.html), as well as the publication in BMC Bioinformatics:
 
--   {% include publication content='Microscope Image Quality' %}
+-   {% include citation id="plugins/microscope-focus-quality" %}
 
  

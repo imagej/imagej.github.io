@@ -126,8 +126,8 @@ We will further investigate in automatic selection of appropriate parameters dep
 
 ## References
 
-{% include cite fn='1' content='journal' title='As-rigid-as-possible mosaicking and serial section registration of large ssTEM datasets' author='S. Saalfeld, A. Cardona, V. Hartenstein, P. Tomancak' journal='Bioinformatics' pages='i57–i63' volume='26' number='12' year='2010' doi='10.1093/bioinformatics/btq219' %}
+{% include citation fn='1' content='journal' title='As-rigid-as-possible mosaicking and serial section registration of large ssTEM datasets' author='S. Saalfeld, A. Cardona, V. Hartenstein, P. Tomancak' journal='Bioinformatics' pages='i57–i63' volume='26' number='12' year='2010' doi='10.1093/bioinformatics/btq219' %}
 
-{% include cite fn='2' content='conference' author='M. Brown and D. Lowe' title='Invariant Features from Interest Point Groups' booktitle='British Machine Vision Conference' year='2002' pages='656–665' place='Cardiff, Wales' %}
+{% include citation fn='2' content='conference' author='M. Brown and D. Lowe' title='Invariant Features from Interest Point Groups' booktitle='British Machine Vision Conference' year='2002' pages='656–665' place='Cardiff, Wales' %}
 
-{% include cite fn='3' content='journal' author='D. Lowe' title='Distinctive Image Features from Scale-Invariant Keypoints' journal='International Journal of Computer Vision' volume='60' number='2' pages='91–110' year='2004' doi='10.1109/ICCV.1999.790410' %}
+{% include citation fn='3' content='journal' author='D. Lowe' title='Distinctive Image Features from Scale-Invariant Keypoints' journal='International Journal of Computer Vision' volume='60' number='2' pages='91–110' year='2004' doi='10.1109/ICCV.1999.790410' %}

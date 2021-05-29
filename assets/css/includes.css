@@ -41,6 +41,13 @@
   border-bottom: 1px dotted #ccc;
 }
 
+/* citation */
+
+.csl-bib-body {
+    display: inline-block;
+    vertical-align: top;
+}
+
 /* code-example */
 
 .code-example {

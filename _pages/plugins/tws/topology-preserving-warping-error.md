@@ -126,5 +126,5 @@ The warping error metric is implemented for 2D images in the [Trainable Weka Seg
 
 ## References
 
-{% include cite fn='1' content='journal' author='V. Jain, B. Bollmann, M. Richardson, D.R. Berger, M.N. Helmstaedter, K.L. Briggman, W. Denk, J.B. Bowden, J.M. Mendenhall, W.C. Abraham, K.M. Harris, N. Kasthuri, K.J. Hayworth, R. Schalek, J.C. Tapia, J.W. Lichtman, S.H. Seung' title='Boundary Learning by Optimization with Topological Constraints' booktitle='2010 IEEE CONFERENCE ON COMPUTER VISION AND PATTERN RECOGNITION (CVPR)' year='2010' series='IEEE Conference on Computer Vision and Pattern Recognition' pages='2488-2495' organization='IEEE Comp Soc' doi='10.1109/CVPR.2010.5539950' %}
+{% include citation fn='1' content='journal' author='V. Jain, B. Bollmann, M. Richardson, D.R. Berger, M.N. Helmstaedter, K.L. Briggman, W. Denk, J.B. Bowden, J.M. Mendenhall, W.C. Abraham, K.M. Harris, N. Kasthuri, K.J. Hayworth, R. Schalek, J.C. Tapia, J.W. Lichtman, S.H. Seung' title='Boundary Learning by Optimization with Topological Constraints' booktitle='2010 IEEE CONFERENCE ON COMPUTER VISION AND PATTERN RECOGNITION (CVPR)' year='2010' series='IEEE Conference on Computer Vision and Pattern Recognition' pages='2488-2495' organization='IEEE Comp Soc' doi='10.1109/CVPR.2010.5539950' %}
 

@@ -4,6 +4,7 @@ title: ImageJ Ops
 section: Extend:Development:Guides
 categories: [Ops, development]
 artifact: net.imagej:imagej-ops
+ref: Rueden, C., Dietz, C., Horn, M., Schindelin, J., Northan, B., Berthold, M. &amp; Eliceiri, K. (2021). ImageJ Ops [Software]. https://imagej.net/Ops.
 ---
 
 ImageJ Ops is a framework for reusable image processing operations. Ops extends Java's mantra of "write once, run anywhere" to image processing algorithms.

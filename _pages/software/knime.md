@@ -3,6 +3,11 @@ mediawiki: KNIME
 title: KNIME
 section: Explore:Software
 categories: [Software,SciJava,Citable]
+doi:
+- 10.3389/fcomp.2020.00008
+- 10.1016/j.jbiotec.2017.07.028
+- 10.1007/978-3-319-28549-8_7
+- 10.1007/978-3-540-78246-9_38
 ---
 
 
@@ -25,8 +30,4 @@ As part of the KNIP extension, there is an [ImageJ extension for KNIME](http://t
 
 ## Publications
 
--   {% include publication content='KNIME-Bioimage' %}
--   {% include publication content='KNIP' %}
--   {% include publication content='KNIME' %}
-
-  
+{% include citation %}

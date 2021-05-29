@@ -1,6 +1,7 @@
 ---
 mediawiki: BoneJ
 title: BoneJ
+doi: 10.1016/j.bone.2010.08.023
 ---
 
 

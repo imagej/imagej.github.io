@@ -1,6 +1,7 @@
 ---
 mediawiki: IJ-OpenCV
 title: IJ-OpenCV
+doi: 10.1016/j.compbiomed.2017.03.027
 ---
 
 IJ-OpenCV is a Java library that allows the communication of ImageJ and [OpenCV](/software/opencv). The [github page of IJ-OpenCV](https://github.com/joheras/IJ-OpenCV) contains all the information to download and install this library. The [wiki section](https://github.com/joheras/IJ-OpenCV/wiki) of the repository will help you to get started, and a set of examples are also provided.
@@ -13,4 +14,4 @@ Several ImageJ plugins have been developed using this library and can be easily 
 
 ## Publication
 
--   {% include publication content='IJ-OpenCV' %}
+{% include citation %}

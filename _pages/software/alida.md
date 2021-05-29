@@ -3,6 +3,7 @@ mediawiki: Alida
 title: Alida
 section: Explore:Software
 categories: [Software,SciJava]
+doi: 10.5334/jors.124
 ---
 
 
@@ -29,6 +30,4 @@ For further details, see the [Alida website](http://www.informatik.uni-halle.de/
 
 ## Publication
 
--   {% include publication content='Alida' %}
-
- 
+{% include citation %}

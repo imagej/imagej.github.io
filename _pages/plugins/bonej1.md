@@ -2,8 +2,8 @@
 mediawiki: BoneJ1
 title: BoneJ1
 categories: [Plugins,Citable]
+doi: 10.1016/j.bone.2010.08.023
 ---
-
 
 {% capture author%}
 {% include person id='mdoube' %}
@@ -42,6 +42,4 @@ BoneJ and pQCT plug-ins are in the process of separation. The latter have their 
 
 ## Publication
 
--   {% include publication content='BoneJ' %}
-
- 
+{% include citation %}

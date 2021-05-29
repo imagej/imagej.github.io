@@ -4,6 +4,7 @@ title: SCIFIO
 section: Explore:Libraries
 categories: [Software,Citable]
 artifact: io.scif:scifio
+doi: 10.1186/s12859-016-1383-0
 ---
 
 [SCIFIO](https://scif.io/) is a flexible framework for **SC**ientific **I**mage **F**ormat **I**nput and **O**utput. In other words, it is a library for reading and writing N-dimensional image data—e.g., to and from files on disk. SCIFIO is built on the [SciJava Common](/libs/scijava#scijava-common) library.
@@ -53,4 +54,4 @@ SCIFIO is focused on robust and extensible support for reading and writing image
 
 ## Publications
 
--   {% include publication content='SCIFIO' %}
+{% include citation %}

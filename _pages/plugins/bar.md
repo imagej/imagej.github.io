@@ -2,6 +2,7 @@
 mediawiki: BAR
 title: BAR
 categories: [Analysis,Citable,Filtering,Image annotation,Plugins,Scripting,Segmentation]
+doi: 10.5281/zenodo.28838
 ---
 
 <seo metak="data analysis,annotation,segmentation,scripts" metad="data analysis,annotation,segmentation,scripts" />

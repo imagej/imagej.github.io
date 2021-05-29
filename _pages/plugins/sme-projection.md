@@ -2,6 +2,7 @@
 mediawiki: SME_Projection
 title: SME Projection
 categories: [Citable,Plugins,Analysis]
+doi: 10.1038/ncomms15554
 ---
 
 {% include notice icon="info" content='This page is a placeholder. Please help improve its content.' %}
@@ -14,6 +15,4 @@ categories: [Citable,Plugins,Analysis]
 
 ## Publication
 
--   {% include publication content='SME' %}
-
-  
+{% include citation %}

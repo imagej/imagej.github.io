@@ -3,6 +3,7 @@ mediawiki: Virtual_Cell
 title: Virtual Cell
 section: Explore:Software
 categories: [Software,SciJava,Citable]
+doi: 10.1016/S0167-7799(01)01740-1
 ---
 
 
@@ -15,6 +16,4 @@ A VCell plugin for ImageJ is currently in the works! Stay tuned!
 
 ## Publication
 
--   {% include publication content='VCell' %}
-
-  
+{% include citation %}

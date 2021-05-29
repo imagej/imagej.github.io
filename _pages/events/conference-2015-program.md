@@ -67,7 +67,7 @@ Plant organs such as stems are composed of tissues containing thick and thin-wal
 
 [Icy](/software/icy) is a free open-source bio-image analysis software. During its 3 years of life it has been continuously improved and continuously brings new features to users and developers. Today Icy is used by more than one thousands of regular users which appreciate its intuitive GUI, its ray-traced 3D visualization and its cutting-edge analysis methods. Users can also adapt and create new algorithms with script and the graphical programming protocol designer and store them on the Icy website which centralize all resources (http://icy.bioimageanalysis.org). Thus it makes available plug-ins, protocols and scripts to everybody. Centralization also allows searching directly from within the application for specific features and enables it in a one-click install. During the last months, Icy has received news exciting features: revisited 3D rendering based on latest VTK version and a new powerful Undo framework. Finally, Icy is always evolving, thanks to the feedback of all its users on http://icy.bioimageanalysis.org/support !
 
-{% include publication content='Icy' %}
+{% include citation id="software/icy" %}
 
 \[ [Presentation video](https://vimeo.com/140929690/) \]
 
@@ -202,7 +202,7 @@ The workshop will give a short introduction on the influence of contrast adjustm
 
 In this practical workshop, discover how to use [Icy](/software/icy) to watch and analyse your images ! During this session, we will see the different functionalities of Icy in action, from visualization (2D/3D) to analysis based on a real biologic case with a lot of analysis traps ! Let's investigate !
 
-{% include publication content='Icy' %}
+{% include citation id="software/icy" %}
 
 **Workshop requirements:** An installation of [Icy](http://icy.bioimageanalysis.org/download) \[ [Presentation video](https://vimeo.com/140929698/) \]
 
@@ -322,7 +322,7 @@ We have developed a standardized method for morphological staining of liver sect
 
 In this poster we present a panel of Icy's features. Live demo based on your images, and we will try to process them thanks to one of the 300 image analysis plugins available in Icy !
 
-{% include publication content='Icy' %}
+{% include citation id="software/icy" %}
 
 ### Olaya Fernandez-Gayol - Using the wrMTrck plugin to analyze the Morris Water maze in mice
 

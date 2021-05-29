@@ -3,6 +3,7 @@ mediawiki: Microscope_Focus_Quality
 title: Microscope Focus Quality
 categories: [Citable]
 artifact: sc.fiji:microscope-image-quality
+doi: 10.1186/s12859-018-2087-4
 ---
 
  
@@ -42,7 +43,7 @@ The plugin is currently limited to single (i.e., 2D) images of 16-bit integer da
 
 ## Publication
 
--   {% include publication content='Microscope Image Quality' %}
+{% include citation %}
 
 ## See also
 

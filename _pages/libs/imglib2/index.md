@@ -4,6 +4,7 @@ title: ImgLib2
 section: Explore:Libraries:ImgLib2
 categories: [ImgLib,Citable]
 artifact: net.imglib2:imglib2
+doi: 10.1093/bioinformatics/bts543
 ---
 
 ImgLib2 is a general-purpose, multidimensional image processing library.

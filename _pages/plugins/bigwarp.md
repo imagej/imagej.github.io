@@ -3,6 +3,7 @@ mediawiki: BigWarp
 title: BigWarp
 categories: [Plugins,Visualization,Transform,Registration,Citable]
 artifact: sc.fiji:bigwarp\_fiji
+doi: 10.1109/ISBI.2016.7493463
 ---
 
 BigWarp is a tool for manual, interactive, landmark-based deformable image
@@ -621,7 +622,7 @@ enables you to run BigWarp using images stored using
 
 # Publication
 
--   {% include publication content='BigWarp' %}
+{% include citation %}
 
 # Publications using BigWarp
 

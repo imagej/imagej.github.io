@@ -54,4 +54,4 @@ The plugin is still work in progress. Things to be done includes use of threadin
 
 ## Publication
 
-{% include cite fn='1' content='journal' author='Federici Fernán, Dupuy Lionel, Laplaze Laurent, Heisler Marcus, Haseloff Jim.' title='Integrated genetic and computation methods for in planta cytometry' journal='Nature Methods' year='2012' volume='advance online publication' url='http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.1940.html' %}
+{% include citation fn='1' content='journal' author='Federici Fernán, Dupuy Lionel, Laplaze Laurent, Heisler Marcus, Haseloff Jim.' title='Integrated genetic and computation methods for in planta cytometry' journal='Nature Methods' year='2012' volume='advance online publication' url='http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.1940.html' %}

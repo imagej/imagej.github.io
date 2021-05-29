@@ -156,7 +156,7 @@ Here we summarize some of the Registration plugins in ImageJ.
 </table>
 {:/}
     <ol>
-      <li id="fn1" role="doc-endnote">{% include cite content='journal' author='Lowe D' title='Distinctive Image Features from Scale-Invariant Keypoints' journal='International Journal of Computer Vision' year='2004' volume='60' number='2' pages='91-110' %}<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a>
+      <li id="fn1" role="doc-endnote">{% include citation content='journal' author='Lowe D' title='Distinctive Image Features from Scale-Invariant Keypoints' journal='International Journal of Computer Vision' year='2004' volume='60' number='2' pages='91-110' %}<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a>
       </li>
     </ol>
   </section>

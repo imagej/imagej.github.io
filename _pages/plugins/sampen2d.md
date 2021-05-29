@@ -2,8 +2,10 @@
 mediawiki: SampEn2D
 title: SampEn2D
 categories: [Pattern recognition]
+doi:
+- 10.1088/2057-1976/2/4/045002
+- 10.1109/EMBC.2014.6944339
 ---
-
 
 {% capture author%}
 {% include person id='acsenrafilho' %} ([1](mailto:acsenrafilho@gmail.com))

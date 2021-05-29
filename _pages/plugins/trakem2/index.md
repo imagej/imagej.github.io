@@ -3,6 +3,7 @@ mediawiki: TrakEM2
 title: TrakEM2
 categories: [Plugins,Registration,Segmentation,TrakEM2,Image annotation,Neuroanatomy,Citable]
 artifact: sc.fiji:TrakEM2\_
+doi: 10.1371/journal.pone.0038011
 ---
 
 TrakEM2 is an ImageJ plugin for morphological data mining, three-dimensional modeling and image stitching, registration, editing and annotation.
@@ -160,6 +161,6 @@ As for a graphics card buy the largest you can afford, both in computing power a
 
 ## Publication
 
-{% include publication content='TrakEM2' %}
+{% include citation %}
 
       

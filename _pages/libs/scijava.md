@@ -1,9 +1,10 @@
 ---
 mediawiki: SciJava
 title: SciJava
-artifact: org.scijava:scijava-common
 icon: /media/icons/scijava.svg
 logo: /media/logos/scijava.png
+artifact: org.scijava:scijava-common
+ref: Rueden, C., Schindelin, J., Hiner, M. &amp; Eliceiri, K. (2021). SciJava Common [Software]. https://scijava.org/.
 ---
 
 SciJava is a collaboration of projects providing software for scientific

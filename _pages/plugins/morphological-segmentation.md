@@ -212,7 +212,7 @@ You should now find the plugin under the sub-menu {% include bc path='Plugins | 
 
 If you need to cite the plugin, please do so by citing the following paper:
 
--   {% include publication content='MorphoLibJ' %}
+{% include citation id="plugins/morpholibj" %}
 
 To cite the implementation, [MorphoLibJ](/plugins/morpholibj)'s code repository has its own [DOI](http://dx.doi.org/10.5281/zenodo.50694).
 

@@ -2,6 +2,7 @@
 mediawiki: MaMuT
 title: MaMuT
 categories: [Plugins,Citable]
+doi: 10.7554/eLife.34410
 ---
 
 
@@ -24,7 +25,7 @@ Enable the [MaMuT update site](http://sites.imagej.net/MaMuT/) to get it.
 
 ## Publication.
 
--   {% include publication content='MaMuT' %}
+{% include citation %}
 
 ## Presentation.
 

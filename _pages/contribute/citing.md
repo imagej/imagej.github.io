@@ -28,152 +28,52 @@ Thank you for your support.
 
 ## Publications to cite
 
-{::nomarkdown}
-<table>
-  <tbody>
-    <tr>
-      <td style="white-space: nowrap">
-        <p><strong>Logo</strong></p>
-      </td>
-      <td>
-        <p><strong>Project</strong></p>
-      </td>
-      <td>
-        <p><strong>Citation</strong></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p>Core projects</p>
-      </td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>
-        <p>{% include icon name='ImageJ2' %}</p>
-      </td>
-      <td>
-        <p><a href="/software/imagej2">ImageJ2</a></p>
-      </td>
-      <td>
-        <p>{% include publication content='ImageJ2' %}</p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p>{% include icon name='ImageJ1' %}</p>
-      </td>
-      <td>
-        <p><a href="/software/imagej1">ImageJ 1.x</a></p>
-      </td>
-      <td>
-        <p>{% include publication content='ImageJ' %}</p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p>Distributions of ImageJ</p>
-      </td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>
-        <p>{% include icon name='Fiji' %}</p>
-      </td>
-      <td>
-        <p><a href="/software/fiji">Fiji</a></p>
-      </td>
-      <td>
-        <p>{% include publication content='Fiji' %}</p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p>{% include icon name='BoneJ' %}</p>
-      </td>
-      <td>
-        <p><a href="/plugins/bonej">BoneJ</a></p>
-      </td>
-      <td>
-        <p>{% include publication content='BoneJ' %}</p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p>{% include icon name='Bio7' %}</p>
-      </td>
-      <td>
-        <p><a href="/software/bio7">Bio7</a></p>
-      </td>
-      <td>
-        <p>{% include publication content='Bio7' %}</p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p>Supporting libraries</p>
-      </td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>
-        <p>{% include icon name='ImgLib2' %}</p>
-      </td>
-      <td>
-        <p><a href="/libs/imglib2">ImgLib2</a></p>
-      </td>
-      <td>
-        <p>{% include publication content='ImgLib2' %}</p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p>{% include icon name='SciJava' %}</p>
-      </td>
-      <td>
-        <p><a href="/libs/scijava#scijava-common">SciJava Common</a></p>
-      </td>
-      <td>
-        <p>{% include publication content='SciJava Common' %}</p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p>{% include icon name='SCIFIO' %}</p>
-      </td>
-      <td>
-        <p><a href="/libs/scifio">SCIFIO</a></p>
-      </td>
-      <td>
-        <p>{% include publication content='SCIFIO' %}</p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p>{% include icon name='ImageJ' %}</p>
-      </td>
-      <td>
-        <p><a href="/libs/imagej-ops">ImageJ Ops</a></p>
-      </td>
-      <td>
-        <p>{% include publication content='ImageJ Ops' %}</p>
-      </td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-{:/}
+<style>
+.publication-box { display: grid; grid-template-columns: auto auto; }
+.publication-box > div:first-child { text-align: center; }
+.publication-box ul { list-style: none; }
+</style>
 
-See the [list of citable software](/plugin-index#citable) and [publications using Fiji](/software/fiji/publications) for additional citation information.
+### Core projects
+
+<div class="publication-box">
+<div>{% include icon name='ImageJ2' %}
+  <br><a href="/software/imagej2">ImageJ2</a></div>
+  {% include citation id='software/imagej2' %}</div>
+
+
+<div class="publication-box">{% include icon name='ImageJ1' %}
+  <br><a href="/software/imagej1">ImageJ 1.x</a></div>
+  {% include citation id='software/imagej1' %}</div>
+
+### Distributions of ImageJ
+
+<div class="publication-box">{% include icon name='Fiji' %}
+  <br><a href="/software/fiji">Fiji</a>
+  {% include citation id='software/fiji' %}</div>
+
+<div class="publication-box">{% include icon name='Bio7' %}
+  <br><a href="/software/bio7">Bio7</a>
+  {% include citation id='software/bio7' %}</div>
+
+### Supporting libraries
+
+<div class="publication-box">{% include icon name='ImgLib2' %}
+  <br><a href="/libs/imglib2">ImgLib2</a>
+  {% include citation id='libs/imglib2' %}</div>
+
+<div class="publication-box">{% include icon name='SciJava' %}
+  <br><a href="/libs/scijava#scijava-common">SciJava Common</a>
+  {% include citation id='libs/scijava' %}</div>
+
+<div class="publication-box">{% include icon name='SCIFIO' %}
+  <br><a href="/libs/scifio">SCIFIO</a>
+  {% include citation id='libs/scifio' %}</div>
+
+<div class="publication-box">{% include icon name='ImageJ' %}
+  <br><a href="/libs/imagej-ops">ImageJ Ops</a>
+  {% include citation id='libs/imagej-ops' %}</div>
+
+See the [list of citable software](/plugin-index#citable) and
+[publications using Fiji](/software/fiji/publications)
+for additional citation information.

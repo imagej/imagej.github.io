@@ -86,4 +86,4 @@ We kindly ask you to cite Cizhik 2018[^1] when publishing the results obtained u
 
 ## References
 
-{% include cite fn='1' content='journal' title='Quantification of photoinduced bending of dynamic molecular crystals: from macroscopic strain to kinetic constants and activation energies' author='Stanislav Chizhik, Anatoly Sidelnikov, Boris Zakharov, Panče Naumov and Elena Boldyreva' journal='Chemical Science' volume='9' number='8' pages='2319-2335' year='2018' publisher='The Royal Society of Chemistry' doi='10.1039/C7SC04863G' %}
+{% include citation fn='1' content='journal' title='Quantification of photoinduced bending of dynamic molecular crystals: from macroscopic strain to kinetic constants and activation energies' author='Stanislav Chizhik, Anatoly Sidelnikov, Boris Zakharov, Panče Naumov and Elena Boldyreva' journal='Chemical Science' volume='9' number='8' pages='2319-2335' year='2018' publisher='The Royal Society of Chemistry' doi='10.1039/C7SC04863G' %}

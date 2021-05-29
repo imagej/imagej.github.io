@@ -3,6 +3,7 @@ mediawiki: Micro-Manager
 title: Micro-Manager
 section: Explore:Software
 categories: [Software,Citable]
+doi: 10.1002/0471142727.mb1420s92
 ---
 
 
@@ -13,6 +14,4 @@ categories: [Software,Citable]
 
 ## Publication
 
--   {% include publication content='Micro-Manager' %}
-
- 
+{% include citation %}

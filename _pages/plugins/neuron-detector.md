@@ -1,6 +1,7 @@
 ---
 mediawiki: NeuronDetector/
-title: NeuronDetector/
+title: NeuronDetector
+doi: 10.5281/zenodo.1400718
 ---
 
 ## Neuron Detector

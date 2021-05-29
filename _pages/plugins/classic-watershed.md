@@ -21,7 +21,7 @@ categories: [Plugins,Segmentation,Mathematical morphology]
 
 ## Introduction
 
-{% include thumbnail src='/media/plugins/watershed-flooding-graph.png' title='Schematic overview of watershed flooding in 1D'%}Classic Watershed is an ImageJ/Fiji plugin to perform watershed segmentation of grayscale 2D/3D images using flooding simulations as described by Pierre Soille and Luc M. Vincent (1990)&lt;ref name="Soille1990&gt;{% include cite content='conference' title='Determining watersheds in digital pictures via flooding simulations' author='Soille, Pierre and Vincent, Luc M' booktitle='Proc. SPIE' volume='1360' pages='240-250' year='1990' organization='International Society for Optics and Photonics' doi='10.1117/12.24211' url='http://dx.doi.org/10.1117/12.24211' %}</ref>.
+{% include thumbnail src='/media/plugins/watershed-flooding-graph.png' title='Schematic overview of watershed flooding in 1D'%}Classic Watershed is an ImageJ/Fiji plugin to perform watershed segmentation of grayscale 2D/3D images using flooding simulations as described by Pierre Soille and Luc M. Vincent (1990)&lt;ref name="Soille1990&gt;{% include citation content='conference' title='Determining watersheds in digital pictures via flooding simulations' author='Soille, Pierre and Vincent, Luc M' booktitle='Proc. SPIE' volume='1360' pages='240-250' year='1990' organization='International Society for Optics and Photonics' doi='10.1117/12.24211' url='http://dx.doi.org/10.1117/12.24211' %}</ref>.
 
 The basic idea consists of considering the input image as topographic surface and placing a water source in each regional minimum of its relief. Next the entire relief is flooded from the sources and dams are placed where the different water sources meet.
 

@@ -329,73 +329,73 @@ We want to thank [Carl Zeiss Microimaging](http://www.zeiss.de/micro) for access
 
  
 
-[1] {% include cite content='journal' author='J. Huisken and J. Swoger and F. D. Bene and J. Wittbrodt and E. H. K. Stelzer' title='Optical Sectioning Deep Inside Live Embryos by Selective Plane Illumination Microscopy' journal='Science' volume='305' number='5686' pages='1007 1010' year='2004' %}
+[1] {% include citation content='journal' author='J. Huisken and J. Swoger and F. D. Bene and J. Wittbrodt and E. H. K. Stelzer' title='Optical Sectioning Deep Inside Live Embryos by Selective Plane Illumination Microscopy' journal='Science' volume='305' number='5686' pages='1007 1010' year='2004' %}
 
-[2] {% include cite content='journal' author='P. Shaw, D. Agard, Y. Hiraoka, and J. Sedat' title='Tilted view reconstruction in optical microscopy. Three-dimensional reconstruction of Drosophila melanogaster embryo nuclei' journal='Biophysical Journal' volume='55' number='1' year='1989' pages='101–110' %}
+[2] {% include citation content='journal' author='P. Shaw, D. Agard, Y. Hiraoka, and J. Sedat' title='Tilted view reconstruction in optical microscopy. Three-dimensional reconstruction of Drosophila melanogaster embryo nuclei' journal='Biophysical Journal' volume='55' number='1' year='1989' pages='101–110' %}
 
 [3] 
 
-[4] {% include cite content='journal' author='H. U. Dodt, U. Leischner, A. Schierloh, N. Jährling, C. P. Mauch, K. Deininger, J. M. Deussing, M. Eder, W. Zieglgänsberger, and K. Becker' title='Ultramicroscopy: three-dimensional visualization of neuronal networks in the whole mouse brain' doi='10.1038/nmeth1036' journal='Nature Methods' number='4' pages='331–336' volume='4' year='2007' %}
+[4] {% include citation content='journal' author='H. U. Dodt, U. Leischner, A. Schierloh, N. Jährling, C. P. Mauch, K. Deininger, J. M. Deussing, M. Eder, W. Zieglgänsberger, and K. Becker' title='Ultramicroscopy: three-dimensional visualization of neuronal networks in the whole mouse brain' doi='10.1038/nmeth1036' journal='Nature Methods' number='4' pages='331–336' volume='4' year='2007' %}
 
 [5] 
 
-[6] {% include cite content='journal' author='J. Swoger, P. Verveer, K. Greger, J. Huisken, and E. H. K. Stelzer' journal='Opt. Express' number='13' pages='8029–8042' title='Multi-view image fusion improves resolution in three-dimensional microscopy' volume='15' year='2007' %}
+[6] {% include citation content='journal' author='J. Swoger, P. Verveer, K. Greger, J. Huisken, and E. H. K. Stelzer' journal='Opt. Express' number='13' pages='8029–8042' title='Multi-view image fusion improves resolution in three-dimensional microscopy' volume='15' year='2007' %}
 
 [7] {% include citation title='Three Dimensional X-Ray Opaque Foreign Body Marker Device' author='E. H. Gullekson' year='Patent number: 3836776, Filing date: 1 Mar 1973, Issue date: Sep 1974' %}
 
-[8] {% include cite content='journal' author='B.J. Erickson and Jack C.R. Jr.' title='Correlation of single photon emission CT with MR image data using fiduciary markers' journal='American Journal of Neuroradiology' volume='14' number='3' pages='713 720' year='1993' %}
+[8] {% include citation content='journal' author='B.J. Erickson and Jack C.R. Jr.' title='Correlation of single photon emission CT with MR image data using fiduciary markers' journal='American Journal of Neuroradiology' volume='14' number='3' pages='713 720' year='1993' %}
 
-[9] {% include cite content='journal' author='J. M. Fitzpatrick and J. B. West' title='The distribution of target registration error in rigid-body point-based registration' journal='IEEE Transactions on Medical Imaging' volume='20' number='9' year='2001' month='September' pages='917 927' %}
+[9] {% include citation content='journal' author='J. M. Fitzpatrick and J. B. West' title='The distribution of target registration error in rigid-body point-based registration' journal='IEEE Transactions on Medical Imaging' volume='20' number='9' year='2001' month='September' pages='917 927' %}
 
-[10] {% include cite content='journal' author='A. D. Wiles, A. Likholyot, D. D. Frantz, and T.M.Peters' title='A Statistical Model for Point-Based Target Registration Error With Anisotropic Fiducial Localizer Error' journal='IEEE Transactions on Medical Imaging' volume='27' number='3' year='2008' month='March' pages='378 390' %}
+[10] {% include citation content='journal' author='A. D. Wiles, A. Likholyot, D. D. Frantz, and T.M.Peters' title='A Statistical Model for Point-Based Target Registration Error With Anisotropic Fiducial Localizer Error' journal='IEEE Transactions on Medical Imaging' volume='27' number='3' year='2008' month='March' pages='378 390' %}
 
-[11] {% include cite content='conference' author='M. H. Moghari, B. Ma, and P. Abolmaesumi' title='A Theoretical Comparison of Different Target Registration Error Estimators' booktitle='MICCAI "08: Proceedings of the 11th International Conference on Medical Image Computing and Computer-Assisted Intervention, Part II' year='2008' isbn='978-3-540-85989-5' pages='1032 1040' doi='10.1007/978-3-540-85990-1\_124' publisher='Springer-Verlag' location='Berlin, Heidelberg' %}
+[11] {% include citation content='conference' author='M. H. Moghari, B. Ma, and P. Abolmaesumi' title='A Theoretical Comparison of Different Target Registration Error Estimators' booktitle='MICCAI "08: Proceedings of the 11th International Conference on Medical Image Computing and Computer-Assisted Intervention, Part II' year='2008' isbn='978-3-540-85989-5' pages='1032 1040' doi='10.1007/978-3-540-85990-1\_124' publisher='Springer-Verlag' location='Berlin, Heidelberg' %}
 
-[12] {% include cite content='journal' title='Towards automatic electron tomography' journal='Ultramicroscopy' volume='40' number='1' pages='71 87' year='1992' author='K. Dierksen, D. Typke, R. Hegerl, A. J. Koster, and W. Baumeister' %}
+[12] {% include citation content='journal' title='Towards automatic electron tomography' journal='Ultramicroscopy' volume='40' number='1' pages='71 87' year='1992' author='K. Dierksen, D. Typke, R. Hegerl, A. J. Koster, and W. Baumeister' %}
 
-[13] {% include cite content='journal' author='A. J. Koster, R. Grimm, D. Typke, R. Hegerl, A. Stoschek, J. Walz, and W. Baumeister' title='Perspectives of molecular and cellular electron tomography' journal='J Struct Biol' year='1997' volume='120' number='3' pages='276 308' %}
+[13] {% include citation content='journal' author='A. J. Koster, R. Grimm, D. Typke, R. Hegerl, A. Stoschek, J. Walz, and W. Baumeister' title='Perspectives of molecular and cellular electron tomography' journal='J Struct Biol' year='1997' volume='120' number='3' pages='276 308' %}
 
 [14] 
 
-[15] {% include cite content='conference' title='A Combined Corner and Edge Detector' author='C. Harris and M. Stephens' locaiton='Plessey Research Roke Manor, UK' booktitle='Proceedings of The Fourth Alvey Vision Conference' location='Manchester' year='1988' pages='147 151' %}
+[15] {% include citation content='conference' title='A Combined Corner and Edge Detector' author='C. Harris and M. Stephens' locaiton='Plessey Research Roke Manor, UK' booktitle='Proceedings of The Fourth Alvey Vision Conference' location='Manchester' year='1988' pages='147 151' %}
 
-[16] {% include cite content='journal' title='A computational approach to edge detection' author='J. Canny' journal='IEEE Transactions on Pattern Analysis Machine Intelligence' volume='8' number='6' year='1986' pages='679 698' %}
+[16] {% include citation content='journal' title='A computational approach to edge detection' author='J. Canny' journal='IEEE Transactions on Pattern Analysis Machine Intelligence' volume='8' number='6' year='1986' pages='679 698' %}
 
-[17] {% include cite content='conference' author='Y. Lamdan, J. Schwartz, and H. Wolfson' title='On recognition of 3D objects from 2D images' booktitle='Proceedings of the IEEE International Conference on Robotics and Automation' year='1988' pages='1407 1413' publisher='IEEE Computer Society' location='Los Alamitos, CA' %}
+[17] {% include citation content='conference' author='Y. Lamdan, J. Schwartz, and H. Wolfson' title='On recognition of 3D objects from 2D images' booktitle='Proceedings of the IEEE International Conference on Robotics and Automation' year='1988' pages='1407 1413' publisher='IEEE Computer Society' location='Los Alamitos, CA' %}
 
-[18] {% include cite content='conference' author='D. W. Hogg, M. Blanton, D. Lang, K. Mierle, and S. Roweis' title='Automated Astrometry' booktitle='Astronomical Data Analysis Software and Systems XVII' year='2008' series='Astronomical Society of the Pacific Conference Series' volume='394' editor='R. W. Argyle, P. S. Bunclark, and J. R. Lewis' month='August' pages='27-+' %}
+[18] {% include citation content='conference' author='D. W. Hogg, M. Blanton, D. Lang, K. Mierle, and S. Roweis' title='Automated Astrometry' booktitle='Astronomical Data Analysis Software and Systems XVII' year='2008' series='Astronomical Society of the Pacific Conference Series' volume='394' editor='R. W. Argyle, P. S. Bunclark, and J. R. Lewis' month='August' pages='27-+' %}
 
-[19] {% include cite content='journal' author='R. Nussinov and H. J. Wolfson' journal='Proc Natl Acad Sci U S A' number='23' pages='10495 10499' title='Efficient detection of three-dimensional structural motifs in biological macromolecules by computer vision techniques.' volume='88' year='1991' %}
+[19] {% include citation content='journal' author='R. Nussinov and H. J. Wolfson' journal='Proc Natl Acad Sci U S A' number='23' pages='10495 10499' title='Efficient detection of three-dimensional structural motifs in biological macromolecules by computer vision techniques.' volume='88' year='1991' %}
 
-[20] {% include cite content='journal' author='D. Fischer, H. Wolfson, S. L. Lin, and R. Nussinov' title='Three-dimensional, sequence order-independent structural comparison of a serine protease against the crystallographic database reveals active site similarities: Potential implications to evolution and to protein folding' journal='Protein Science' volume='3' number='5' pages='769 778' year='1994' %}
+[20] {% include citation content='journal' author='D. Fischer, H. Wolfson, S. L. Lin, and R. Nussinov' title='Three-dimensional, sequence order-independent structural comparison of a serine protease against the crystallographic database reveals active site similarities: Potential implications to evolution and to protein folding' journal='Protein Science' volume='3' number='5' pages='769 778' year='1994' %}
 
-[21] {% include cite content='journal' author='A.C. Wallace, N. Borkakoti, and J. M. Thornton' title='Tess: A geometric hashing algorithm for deriving 3D coordinate templates for searching structural databases. Application to enzyme active sites' journal='Protein science' year='1997' volume='6' number='11' pages='2308' %}
+[21] {% include citation content='journal' author='A.C. Wallace, N. Borkakoti, and J. M. Thornton' title='Tess: A geometric hashing algorithm for deriving 3D coordinate templates for searching structural databases. Application to enzyme active sites' journal='Protein science' year='1997' volume='6' number='11' pages='2308' %}
 
-[22] {% include cite content='journal' title='A Model for Statistical Significance of Local Similarities in Structure' journal='Journal of Molecular Biology' volume='326' number='5' pages='1307 1316' year='2003' author='A. Stark, S. Sunyaev, and R. B. Russell' %}
+[22] {% include citation content='journal' title='A Model for Statistical Significance of Local Similarities in Structure' journal='Journal of Molecular Biology' volume='326' number='5' pages='1307 1316' year='2003' author='A. Stark, S. Sunyaev, and R. B. Russell' %}
 
-[23] {% include cite content='conference' author='A. Stanski and O. Hellwich' title='Spiders as Robust Point Descriptors' booktitle='DAGM-Symposium' year='2005' pages='262 268' %}
+[23] {% include citation content='conference' author='A. Stanski and O. Hellwich' title='Spiders as Robust Point Descriptors' booktitle='DAGM-Symposium' year='2005' pages='262 268' %}
 
-[24] {% include cite content='journal' author='D. G. Lowe' title='Distinctive image features from scale-invariant keypoints' journal='Int J Comput Vis' volume='60' number='2' pages='91 110' year='2004' %}
+[24] {% include citation content='journal' author='D. G. Lowe' title='Distinctive image features from scale-invariant keypoints' journal='Int J Comput Vis' volume='60' number='2' pages='91 110' year='2004' %}
 
-[25] {% include cite content='journal' author='B. Kuipers and Yung-tai Byun' title='A Robot Exploration and Mapping Strategy Based on a Semantic Hierarchy of Spatial Representations' journal='Journal of Robotics and Autonomous Systems' year='1991' volume='8' pages='47 63' %}
+[25] {% include citation content='journal' author='B. Kuipers and Yung-tai Byun' title='A Robot Exploration and Mapping Strategy Based on a Semantic Hierarchy of Spatial Representations' journal='Journal of Robotics and Autonomous Systems' year='1991' volume='8' pages='47 63' %}
 
-[26] {% include cite content='conference' author='D. Bradley, D. Silver, and S. Thayer' title='A regional point descriptor for global localization in subterranean environments' booktitle='IEEE conference on Robotics Automation and Mechatronics (RAM 2005)' pages='440 445' month='December' year='2004' volume='1' %}
+[26] {% include citation content='conference' author='D. Bradley, D. Silver, and S. Thayer' title='A regional point descriptor for global localization in subterranean environments' booktitle='IEEE conference on Robotics Automation and Mechatronics (RAM 2005)' pages='440 445' month='December' year='2004' volume='1' %}
 
-[27] {% include cite content='conference' author='A. Frome, D. Huber, R. Kolluri, T. Bulow, and J. Malik' title='Recognizing objects in range data using regional point descriptors' booktitle='Proceedings of the European Conference on Computer Vision (ECCV)' month='May' year='2004' %}
+[27] {% include citation content='conference' author='A. Frome, D. Huber, R. Kolluri, T. Bulow, and J. Malik' title='Recognizing objects in range data using regional point descriptors' booktitle='Proceedings of the European Conference on Computer Vision (ECCV)' month='May' year='2004' %}
 
-[28] {% include cite content='journal' author='P. Matula, M. Kozubek, F. Staier, and M. Hausmann' journal='Journal of microscopy' pages='126 42' title='Precise 3D image alignment in micro-axial tomography.' volume='209' year='2003' %}
+[28] {% include citation content='journal' author='P. Matula, M. Kozubek, F. Staier, and M. Hausmann' journal='Journal of microscopy' pages='126 42' title='Precise 3D image alignment in micro-axial tomography.' volume='209' year='2003' %}
 
-[29] {% include cite content='journal' author='T. Lindeberg' title='Scale-space theory: A basic tool for analysing structures at different scales' journal='Journal of Applied Statistics' volume='21' number='2' pages='224 270' year='1994' %}
+[29] {% include citation content='journal' author='T. Lindeberg' title='Scale-space theory: A basic tool for analysing structures at different scales' journal='Journal of Applied Statistics' volume='21' number='2' pages='224 270' year='1994' %}
 
 [30] 
 
-[31] {% include cite content='conference' author='M. Brown and D. Lowe' title='Invariant Features from Interest Point Groups' booktitle='In British Machine Vision Conference' year='2002' pages='656 665' %}
+[31] {% include citation content='conference' author='M. Brown and D. Lowe' title='Invariant Features from Interest Point Groups' booktitle='In British Machine Vision Conference' year='2002' pages='656 665' %}
 
-[32] {% include cite content='book' author='I. H. Witten and E. Frank' title='Data Mining: Practical machine learning tools and techniques' publisher='Morgen Kaufmann' location='San Francisco' isbn='0-12-088407-0' edition='second' year='2005' %}
+[32] {% include citation content='book' author='I. H. Witten and E. Frank' title='Data Mining: Practical machine learning tools and techniques' publisher='Morgen Kaufmann' location='San Francisco' isbn='0-12-088407-0' edition='second' year='2005' %}
 
-[33] {% include cite content='journal' author='B. K. P. Horn' title='Closed-form solution of absolute orientation using unit quaternions' journal='Journal of the Optical Society of America A' volume='4' number='4' pages='629 642' year='1987' %}
+[33] {% include citation content='journal' author='B. K. P. Horn' title='Closed-form solution of absolute orientation using unit quaternions' journal='Journal of the Optical Society of America A' volume='4' number='4' pages='629 642' year='1987' %}
 
-[34] {% include cite content='conference' author='S. Preibisch and S. Saalfeld and T. Rohlfing and P. Tomancak' title='Bead-based mosaicing of single plane illumination microscopy images using geometric local descriptor matching' booktitle='Medical Imaging 2009: Image Processing' year='2009' editor='J. P. W. Pluim and B. M. Dawant' volume='7259' number='1' pages='72592S' location='Orlando, FL, USA' doi='10.1117/12.812612' series='Proceedings of SPIE' %}
+[34] {% include citation content='conference' author='S. Preibisch and S. Saalfeld and T. Rohlfing and P. Tomancak' title='Bead-based mosaicing of single plane illumination microscopy images using geometric local descriptor matching' booktitle='Medical Imaging 2009: Image Processing' year='2009' editor='J. P. W. Pluim and B. M. Dawant' volume='7259' number='1' pages='72592S' location='Orlando, FL, USA' doi='10.1117/12.812612' series='Proceedings of SPIE' %}
 
 [35] 
 
@@ -403,39 +403,39 @@ We want to thank [Carl Zeiss Microimaging](http://www.zeiss.de/micro) for access
 
 [37] 
 
-[38] {% include cite content='journal' author='M. A. Fischler and R. C. Bolles' title='Random sample consensus: a paradigm for model fitting with applications to image analysis and automated cartography' journal='Communications of the ACM' volume='24' number='6' pages='381 395' year='1981' %}
+[38] {% include citation content='journal' author='M. A. Fischler and R. C. Bolles' title='Random sample consensus: a paradigm for model fitting with applications to image analysis and automated cartography' journal='Communications of the ACM' volume='24' number='6' pages='381 395' year='1981' %}
 
-[39] {% include cite content='journal' title='Aberrations in Confocal Fluorescence Microscopy Induced by Mismatches in Refractive Index' journal='Journal of Microscopy' volume='169' number='3' pages='341 405' year='1993' author='S. Hell and G. Reiner and C. Cremer and E.H.K. Stelzer' %}
+[39] {% include citation content='journal' title='Aberrations in Confocal Fluorescence Microscopy Induced by Mismatches in Refractive Index' journal='Journal of Microscopy' volume='169' number='3' pages='341 405' year='1993' author='S. Hell and G. Reiner and C. Cremer and E.H.K. Stelzer' %}
 
 [40] 
 
-[41] {% include cite content='journal' author='S. Preibisch and S. Saalfeld and P. Tomancak' title='Globally Optimal Stitching of Tiled 3D Microscopic Image Acquisitions' journal='Bioinformatics' volume='25' number='11' pages='1463 1465' doi='10.1093/bioinformatics/btp184' year='2009' %}
+[41] {% include citation content='journal' author='S. Preibisch and S. Saalfeld and P. Tomancak' title='Globally Optimal Stitching of Tiled 3D Microscopic Image Acquisitions' journal='Bioinformatics' volume='25' number='11' pages='1463 1465' doi='10.1093/bioinformatics/btp184' year='2009' %}
 
 [42] 
 
-[43] {% include cite content='conference' author='S. Preibisch and T. Rohlfing and M. P. Hasak and P. Tomancak' title='Mosaicing of Single Plane Illumination Miscroscopy Images Using Groupwise Registration and Fast Content-Based Image Fusion' booktitle='Medical Imaging 2008: Image Processing' year='2008' editor='J. M. Reinhardt and J. P. W. Pluim' volume='6914' number='1' pages='69140E' location='San Diego, CA, USA' url='http://link.aip.org/link/?PSI/6914/69140E/1' doi='10.1117/12.770893' series='Proceedings of SPIE' %}
+[43] {% include citation content='conference' author='S. Preibisch and T. Rohlfing and M. P. Hasak and P. Tomancak' title='Mosaicing of Single Plane Illumination Miscroscopy Images Using Groupwise Registration and Fast Content-Based Image Fusion' booktitle='Medical Imaging 2008: Image Processing' year='2008' editor='J. M. Reinhardt and J. P. W. Pluim' volume='6914' number='1' pages='69140E' location='San Diego, CA, USA' url='http://link.aip.org/link/?PSI/6914/69140E/1' doi='10.1117/12.770893' series='Proceedings of SPIE' %}
 
 [44] 
 
 [45] 
 
-[46] {% include cite content='journal' author='C. J. Engelbrecht and E. H. K. Stelzer' title='Resolution enhancement in a light-sheet-based microscope (SPIM)' journal='Optics Letters' volume='31' number='10' pages='1477 1479' year='2006' %}
+[46] {% include citation content='journal' author='C. J. Engelbrecht and E. H. K. Stelzer' title='Resolution enhancement in a light-sheet-based microscope (SPIM)' journal='Optics Letters' volume='31' number='10' pages='1477 1479' year='2006' %}
 
-[47] {% include cite content='journal' title='High-resolution three-dimensional imaging of large specimens with light sheet-based microscopy' journal='Nature Methods' volume='4' number='4' pages='311 313' year='2007' author='P.J. Verveer and J. Swoger and F. Pampaloni and K. Greger and M. Marcello and E.H.K.Stelzer' %}
+[47] {% include citation content='journal' title='High-resolution three-dimensional imaging of large specimens with light sheet-based microscopy' journal='Nature Methods' volume='4' number='4' pages='311 313' year='2007' author='P.J. Verveer and J. Swoger and F. Pampaloni and K. Greger and M. Marcello and E.H.K.Stelzer' %}
 
-[48] {% include cite content='conference' author='B. Schmidt' title='Hardware-accelerated 3D visualization for ImageJ' booktitle='ImageJ User and Developer Conference' year='2008' volume='2' editor='Pierre Plumer' %}
+[48] {% include citation content='conference' author='B. Schmidt' title='Hardware-accelerated 3D visualization for ImageJ' booktitle='ImageJ User and Developer Conference' year='2008' volume='2' editor='Pierre Plumer' %}
 
-[49] {% include cite content='journal' author='Jim Swoger and Peter Verveer and Klaus Greger and Jan Huisken and Ernst H. K. Stelzer' journal='Opt. Express' number='13' pages='8029 8042' publisher='OSA' title='Multi-view image fusion improves resolution in three-dimensional microscopy' volume='15' year='2007' %}
+[49] {% include citation content='journal' author='Jim Swoger and Peter Verveer and Klaus Greger and Jan Huisken and Ernst H. K. Stelzer' journal='Opt. Express' number='13' pages='8029 8042' publisher='OSA' title='Multi-view image fusion improves resolution in three-dimensional microscopy' volume='15' year='2007' %}
 
-[50] {% include cite content='conference' author='S. Preibisch and T. Rohlfing and M. P. Hasak and P. Tomancak' title='Mosaicing of Single Plane Illumination Miscroscopy Images Using Groupwise Registration and Fast Content-Based Image Fusion' booktitle='Medical Imaging 2008: Image Processing' year='2008' editor='J. M. Reinhardt and J. P. W. Pluim' volume='6914' number='1' pages='69140E' location='San Diego, CA, USA' url='http://link.aip.org/link/?PSI/6914/69140E/1' doi='10.1117/12.770893' series='Proceedings of SPIE' %}
+[50] {% include citation content='conference' author='S. Preibisch and T. Rohlfing and M. P. Hasak and P. Tomancak' title='Mosaicing of Single Plane Illumination Miscroscopy Images Using Groupwise Registration and Fast Content-Based Image Fusion' booktitle='Medical Imaging 2008: Image Processing' year='2008' editor='J. M. Reinhardt and J. P. W. Pluim' volume='6914' number='1' pages='69140E' location='San Diego, CA, USA' url='http://link.aip.org/link/?PSI/6914/69140E/1' doi='10.1117/12.770893' series='Proceedings of SPIE' %}
 
-[51] {% include cite content='conference' author='S. Preibisch and R. Ejsmont and T. Rohlfing and P. Tomancak' title='Towards Digital Representation of Drosophila Embryogenesis' booktitle='Proceedings of 5th IEEE International Symposium on Biomedical Imaging' pages='324 327' year='2008' %}
+[51] {% include citation content='conference' author='S. Preibisch and R. Ejsmont and T. Rohlfing and P. Tomancak' title='Towards Digital Representation of Drosophila Embryogenesis' booktitle='Proceedings of 5th IEEE International Symposium on Biomedical Imaging' pages='324 327' year='2008' %}
 
-[52] {% include cite content='journal' author='P. J. Keller and A. D. Schmidt and J. Wittbrodt and E. H. Stelzer' title='Reconstruction of zebrafish early embryonic development by scanned light sheet microscopy' journal='Science' volume='322' number='5904' pages='1065-9' year='2008' %}
+[52] {% include citation content='journal' author='P. J. Keller and A. D. Schmidt and J. Wittbrodt and E. H. Stelzer' title='Reconstruction of zebrafish early embryonic development by scanned light sheet microscopy' journal='Science' volume='322' number='5904' pages='1065-9' year='2008' %}
 
-[53] {% include cite content='conference' author='S. Preibisch and R. Ejsmont and T. Rohlfing and P. Tomancak' title='Towards Digital Representation of Drosophila Embryogenesis' booktitle='Proceedings of 5th IEEE International Symposium on Biomedical Imaging' pages='324 327' year='2008' %}
+[53] {% include citation content='conference' author='S. Preibisch and R. Ejsmont and T. Rohlfing and P. Tomancak' title='Towards Digital Representation of Drosophila Embryogenesis' booktitle='Proceedings of 5th IEEE International Symposium on Biomedical Imaging' pages='324 327' year='2008' %}
 
-[54] {% include cite content='journal' author='J. Bradl and M. Hausmann and V. Ehemann and D. Komitowski and C. Cremer' title='A tilting device for three-dimensional microscopy: application to in situ imaging of interphase cell nuclei.' journal='Journal of Microscopy' year='1992' volume='168' pages='47 57' %}
+[54] {% include citation content='journal' author='J. Bradl and M. Hausmann and V. Ehemann and D. Komitowski and C. Cremer' title='A tilting device for three-dimensional microscopy: application to in situ imaging of interphase cell nuclei.' journal='Journal of Microscopy' year='1992' volume='168' pages='47 57' %}
 
 [55] Max Planck Institute of Molecular Cell Biology and Genetics, Dresden, Germany
 

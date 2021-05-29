@@ -4,6 +4,7 @@ title: FunImageJ
 section: Explore:Software
 artifact: fun.imagej:fun.imagej
 categories: [Lisp, Citable]
+doi: 10.1093/bioinformatics/btx710
 ---
 
 ## Purpose
@@ -12,7 +13,7 @@ FunImageJ provides a natural Lisp interface for ImageJ, written using the Clojur
 
 ## Citing
 
-{% include publication content="FunImageJ" %}
+{% include citation %}
 
 ## Usage within ImageJ
 

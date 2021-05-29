@@ -4,13 +4,14 @@ title: TrackMate
 categories: [Segmentation,Tracking,Tutorials,Plugins,Citable]
 logo: /media/logos/trackmate-300p.png
 artifact: sc.fiji:TrackMate\_
+doi: 10.1016/j.ymeth.2016.09.016
 ---
 
 ## Citation
 
 Please note that TrackMate is available through Fiji, and is based on a publication. If you use it successfully for your research **please be so kind to cite our work**:
 
-{% include publication content='TrackMate' %}
+{% include citation %}
 
 ## Presentation
 

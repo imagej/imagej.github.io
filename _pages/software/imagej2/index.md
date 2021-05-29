@@ -3,6 +3,7 @@ mediawiki: ImageJ2
 title: ImageJ2
 section: Explore:Software
 categories: [Software,ImageJ2,SciJava,Citable]
+doi: 10.1186/s12859-017-1934-z
 ---
 
 {% include project content='ImageJ' %}
@@ -92,8 +93,9 @@ ImageJ2 is funded from a variety of sources. See the [Funding](/contribute/fundi
 
 ## Publications
 
--   {% include publication content='ImageJ2' %}
--   {% include publication content='Ecosystem' %}
+{% include citation %}
+
+{% include citation id='software/imagej' %}
 
 For the moment, we suggest using "The ImageJ ecosystem" paper for citations. But we recommend both of the above for learning about ImageJ2 in depth.
 

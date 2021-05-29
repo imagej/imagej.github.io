@@ -12,4 +12,4 @@ categories: [Plugins]
 
 A review of Watershed algorithms can be found at : http://www.cs.rug.nl/~roe/publications/parwshed.pdf
 
--   {% include citation last='Roerdink' first='' link='' last2='Meijster' first2='' link='' date='' date='' year='2000' title='The Watershed Transform: Definitions, Algorithms and Parallelization Strategies' edition='' volume='41' series='FUNDINF: Fundamenta Informatica' place='' place='' publisher='IOS Press' pages='' page='' id='' isbn='' doi='' oclc='' url='' accessdate='' %}
+-   {% include citation last='Roerdink' first='' link='' last2='Meijster' first2='' link='' date='' date='' year='2000' title='The Watershed Transform: Definitions, Algorithms and Parallelization Strategies' edition='' volume='41' series='FUNDINF: Fundamenta Informatica' place='' place='' publisher='IOS Press' pages='' pages='' id='' isbn='' doi='' oclc='' url='' accessdate='' %}

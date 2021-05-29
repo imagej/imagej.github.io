@@ -2,6 +2,7 @@
 mediawiki: Atlas_Toolkit
 title: Atlas Toolkit
 categories: [Plugins,Registration,Citable]
+doi: 10.1038/srep20732
 ---
 
 
@@ -66,7 +67,7 @@ The following screencast demonstrates Label Registration 3D in use.
 
 Please cite the following original research article in which the Atlas Toolkit is described:
 
--   {% include publication content='Atlas Toolkit' %}
+{% include citation %}
 
 ## License
 

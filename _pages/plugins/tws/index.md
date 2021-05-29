@@ -2,7 +2,8 @@
 mediawiki: Trainable_Weka_Segmentation
 title: Trainable Weka Segmentation
 categories: [Plugins,Segmentation,Machine Learning,Citable]
-artifact: sc.fiji:Trainable\_Segmentation
+artifact: sc.fiji:Trainable_Segmentation
+doi: 10.1093/bioinformatics/btx180
 ---
 
 {% include img align="center" name="fig:Trainable Weka Segmentation pipeline overview." src="tws-pipeline" width="600px" %}
@@ -463,7 +464,7 @@ For all **questions, suggestions, bug reports and problems** related to the Trai
 
 Please note that [Trainable Weka Segmentation](/plugins/tws) is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
--   {% include publication content='Trainable Weka Segmentation' %}
+{% include citation %}
 
 The [Trainable Weka Segmentation](/plugins/tws) code has its own citable [DOI](http://dx.doi.org/10.5281/zenodo.59290).
 

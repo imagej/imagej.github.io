@@ -2,6 +2,7 @@
 mediawiki: MorphoLibJ
 title: MorphoLibJ
 categories: [Plugins,Analysis,Filtering,Segmentation,Mathematical morphology,Citable]
+doi: 10.1093/bioinformatics/btw413
 ---
 
 
@@ -358,7 +359,7 @@ The plugin calculates the **mean**, **standard deviation**, **maximum**, **minim
 
 ### Label Overlap Measures
 
-Given two label images, there are different measures that allow us to evaluate the overlap agreement (or error) between the labels. Following Tustison & Gee (2009)&lt;ref name="Tustison2009&gt;{% include cite content='journal' title='Introducing Dice, Jaccard, and other label overlap measures to ITK' author='Tustison, NJ and Gee, JC' journal='The Insight Journal' pages='1-4' issue='July-December' year='2009' doi='10.1007/BF01189221' %}</ref>, and given a source image $$S$$ and a target image $$T$$, this plugin (under {% include bc path='Plugins | MorphoLibJ | Analyze | Label Overlap Measures'%}) provides the following overlap measurements in two different result tables (one with the total values for all labels and one with values for individual labels):
+Given two label images, there are different measures that allow us to evaluate the overlap agreement (or error) between the labels. Following Tustison & Gee (2009)[^15], and given a source image $$S$$ and a target image $$T$$, this plugin (under {% include bc path='Plugins | MorphoLibJ | Analyze | Label Overlap Measures'%}) provides the following overlap measurements in two different result tables (one with the total values for all labels and one with values for individual labels):
 
 -   Target Overlap for each individual labeled region $$r$$:
 
@@ -714,7 +715,7 @@ You can browse the [javadoc](http://ijpb.github.io/MorphoLibJ/javadoc/) for more
 
 Please note that [MorphoLibJ](/plugins/morpholibj) is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
-{% include publication content='MorphoLibJ' %}
+{% include citation %}
 
 [MorphoLibJ](/plugins/morpholibj)'s code repository has its own [DOI](https://zenodo.org/badge/latestdoi/21349/ijpb/MorphoLibJ).
 
@@ -727,32 +728,32 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 ## References
 
-{% include cite fn='1' content='journal' title='An overview of morphological filtering' author='Serra, Jean and Vincent, Luc' journal='Circuits, Systems and Signal Processing' volume='11' number='1' pages='47-108' year='1992' publisher='Springer' doi='10.1007/BF01189221' %}
+{% include citation fn=1 doi='10.1007/BF01189221' %}
 
-{% include cite fn='2' content='journal' title='Directional morphological filtering' author='Soille, Pierre and Talbot, Hugues' publisher='IEEE' year='2001' volume='23' number='11' pages='1313-1329' journal='IEEE Transactions on Pattern Analysis and Machine Intelligence' doi='10.1109/34.969120' %}
+{% include citation fn=2 doi='10.1109/34.969120' %}
 
-{% include cite fn='3' content='journal' title='Characterization of changes in blood vessel width and tortuosity in retinopathy of prematurity using image analysis' author='Conor Heneghan and John Flynn and Michael O Keefe and Mark Cahill' journal='Medical Image Analysis' volume='6' number='4' pages='407-429' year='2002' publisher='Elsevier' doi='10.1016/S1361-8415(02)00058-0' %}
+{% include citation fn=3 doi='10.1016/S1361-8415(02)00058-0' %}
 
-{% include cite fn='4' content='conference' title='Discrete Morphology with Line Structuring Elements' author='Hendriks, CL Luengo and van Vliet, Lucas J' booktitle='International Conference on Computer Analysis of Images and Patterns' pages='722-729' year='2003' organization='Springer' doi='10.1007/978-3-540-45179-2_88' %}
+{% include citation fn=4 doi='10.1007/978-3-540-45179-2_88' %}
 
-{% include cite fn='5' content='conference' title='Attribute Opening, Thinnings, and Granulometries' author='Edmond J. Breen and Ronald Jones' journal='Computer Vision and Image Understanding' year='1996' month='Nov.' number='3' pages='377--389' volume='64' doi='10.1006/cviu.1996.0066' url='http://www.sciencedirect.com/science/article/pii/S1077314296900661' %}
+{% include citation fn=5 doi='10.1006/cviu.1996.0066' %}
 
-{% include cite fn='12' content='conference' title='Determining watersheds in digital pictures via flooding simulations' author='Soille, Pierre and Vincent, Luc M' booktitle='Proc. SPIE' volume='1360' pages='240-250' year='1990' organization='International Society for Optics and Photonics' doi='10.1117/12.24211' url='http://dx.doi.org/10.1117/12.24211' %}
+{% include citation fn=6 doi='10.5566/ias.v26.p83-92' %}
 
-{% include cite fn='13' content='journal' title='Morphological segmentation' author='F. Meyer and S. Beucher' journal='Journal of Visual Communication and Image Representation' volume='1' number='1' pages='21-46' year='1990' doi='10.1016/1047-3203(90)90014-M' url='http://www.sciencedirect.com/science/article/pii/104732039090014M' %}
+{% include citation fn=7 doi='10.1093/biomet/53.3-4.359' %}
 
-{% include cite fn='6' content='conference' title='Computation of Minkowski measures on 2D and 3D binary images' author='Legland, David and Kiêu, Kiên and Devaux, Marie-Françoise' journal='Image Analysis and Stereology' year='2007' month='June' number='6' pages='83-92' volume='26' doi='10.5566/ias.v26.p83-92' url='http://www.ias-iss.org/ojs/IAS/article/view/811' %}
+{% include citation fn=8 doi='10.1002/9783527628308.ch4' %}
 
-{% include cite fn='8' content='conference' booktitle='3D Images of Materials Structures: processing and analysis' title='Image Processing' author='Joachim Ohser and Katja Schladitz' publisher='Wiley-VCH Verlag GmbH & Co. KGaA' year='2009' doi='10.1002/9783527628308.ch4' url='http://dx.doi.org/10.1002/9783527628308.ch4' %}
+{% include citation fn=9 title='Efficient N-Dimensional surface estimation using Crofton formula and run-length encoding' author='Lehmann, Gaetan and Legland, David' journal='Insight Journal' year='2012' pages='1-11' url='https://www.insight-journal.org/browse/publication/852' %}
 
-{% include cite fn='7' content='conference' title='Measuring the length of a curve' author='Moran, PAP' journal='Biometrika' year='1966' volume='53' number='3-4' pages='359-364' doi='10.1093/biomet/53.3-4.359' URL='http://biomet.oxfordjournals.org/content/53/3-4/359.abstract' %}
+{% include citation fn=10 doi='10.1111/j.1365-2818.1981.tb01197.x' %}
 
-{% include cite fn='9' content='journal' title='Efficient N-Dimensional surface estimation using Crofton formula and run-length encoding'
- author='Lehmann, Gaetan and Legland, David' journal='Insight Journal' year='2012' pages='1-11' url='http://hdl.handle.net/10380/3342' %}
+{% include citation fn=11 doi='10.1139/cjb-2015-0075' %}
 
-{% include cite fn='10' content='conference' title='On the use of geodesic metric in image analysis' author='Lantuejoul, C. and Beucher, S.' journal='Journal of Microscopy' year='1981' month='Jan.' number='1,' pages='39-40' volume='121' doi='10.1111/j.1365-2818.1981.tb01197.x' url='http://dx.doi.org/10.1111/j.1365-2818.1981.tb01197.x' %}
+{% include citation fn=12 doi='10.1117/12.24211' %}
 
-{% include cite fn='11' content='conference' title='Identifying plant species using architectural features in leaf microscopy images' author='Joao Batista Florindo and Odemir Martinez Bruno and Davi Rodrigo Rossatto and Rosana Marta Kolb and Maria Cecilia Gomez and Gabriel Landini' journal='Botany' year='2016' number='1' pages='15-21' volume='94' doi='10.1139/cjb-2015-0075' url='http://dx.doi.org/10.1139/cjb-2015-0075' %}
+{% include citation fn=13 doi='10.1016/1047-3203(90)90014-M' %}
 
+{% include citation fn=14 doi='10.1109/TMI.2004.825627' %}
 
-{% include cite fn='14' content='journal' title='Ridge based vessel segmentation in color images of the retina' author='J.J. Staal and M.D. Abramoff and M. Niemeijer and M.A. Viergever and B. van Ginneken' journal='IEEE Transactions on Medical Imaging' year='2004' pages='501-509' volume='23' doi='10.1109/TMI.2004.825627' %}
+{% include citation fn=15 doi='10.1007/BF01189221' %}

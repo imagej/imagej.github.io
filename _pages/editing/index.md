@@ -140,12 +140,10 @@ The following tables list all of this site's general-purpose includes:
 
 #### Citations and footnotes
 
-| Include                              | Purpose                    |
-|--------------------------------------|----------------------------|
-| [citation](citations#include-citations)                | Insert a citation          |
-| [cite](citations#include-citations)                    | Insert a citation          |
-| [publication](citations#include-publication)           | Insert a citation by name  |
-| [testimonial](citations#include-testimonial)           | Insert a personal quote    |
+| Include                                      | Purpose                 |
+|----------------------------------------------|-------------------------|
+| [citation](citations#include-citations)      | Insert a citation       |
+| [testimonial](citations#include-testimonial) | Insert a personal quote |
 
 #### Linking
 

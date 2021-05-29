@@ -3,6 +3,7 @@ mediawiki: BigDataViewer
 title: BigDataViewer
 categories: [Visualization,Citable]
 artifact: sc.fiji:bigdataviewer\_fiji
+doi: 10.1038/nmeth.3392
 ---
 
 ## Description
@@ -420,6 +421,4 @@ A multi-view dataset consisting of 715 six angle time points (altogether 2.1 Ter
 
 ## Publication
 
--   {% include publication content='BigDataViewer' %}
-
- 
+{% include citation %}

@@ -2,6 +2,7 @@
 mediawiki: FijiWings
 title: FijiWings
 categories: [Citable]
+doi: 10.1534/g3.113.006676
 ---
 
 <img src="/media/file.png" title="fig:File.png" width="500" alt="File.png" />{% include clear%}
@@ -35,7 +36,7 @@ Please report any bugs that you find with Fiji's {% include bc path='Help | Repo
 
 If you would like to reference FijiWings in a publication, you can cite:
 
--   {% include publication content='FijiWings' %}
+{% include citation %}
 
 ## Tutorials
 
