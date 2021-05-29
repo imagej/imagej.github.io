@@ -1,7 +1,7 @@
 ---
 mediawiki: TrackMate
 title: TrackMate
-categories: [Segmentation,Tracking,Tutorials,Plugins,Citable]
+categories: [Segmentation,Tracking,Tutorials,Plugins]
 logo: /media/logos/trackmate-300p.png
 artifact: sc.fiji:TrackMate\_
 doi: 10.1016/j.ymeth.2016.09.016

@@ -2,7 +2,7 @@
 mediawiki: ImageJ
 title: ImageJ
 section: Learn:ImageJ Basics
-categories: [Citable,Software]
+categories: [Software]
 doi: 10.1002/mrd.22489
 
 timeline-imagej:
@@ -197,7 +197,8 @@ Here is a timeline of software development related to ImageJ:
 
 ## Publications
 
-{% include citation last='Schneider' first='C. A.' last2='Rasband' first2='W. S.' last3='Eliceiri' first3='K. W.' year='2012' journal='Nature methods' url='http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2089.html' title='NIH Image to ImageJ: 25 years of image analysis' volume='9(7)' pages='671-675' pmid='22930834' %}.
-{% include citation last='Schindelin' first='J.' last2='Rueden' first2='C. T.' last3='Hiner' first3='M. C.' last4='Eliceiri' first4='K. W.' year='2015' journal='Molecular Reproduction and Development' url='http://onlinelibrary.wiley.com/doi/10.1002/mrd.22489/full' title='The ImageJ ecosystem: An open platform for biomedical image analysis' volume='' pages='' pmid='26153368' %}.
+{% include citation %}
+
+{% include citation id='software/imagej1' %}
 
 See also [Citing](/contribute/citing).

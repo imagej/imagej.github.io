@@ -2,9 +2,10 @@
 mediawiki: Granulometric_Filtering
 title: Granulometric Filtering
 categories: [Plugins,Particle analysis]
+doi: 10.1016/j.jneumeth.2005.07.011
 ---
 
-{% include info-box software='ImageJ' name='Granulometric Filtering' author='Dimiter Prodanov' filename=' [Gran\_Filter.jar](/ij/plugins/download/jars/Gran_Filter.jar) (39,559 Bytes)' source='in .jar file' released='21 May 2005' latest-version='' status='unknown' category='' website='/ij/plugins/gran-filter.html' %}
+{% include info-box software='ImageJ' name='Granulometric Filtering' author='Dimiter Prodanov' filename=' [Gran_Filter.jar](/ij/plugins/download/jars/Gran_Filter.jar) (39,559 Bytes)' source='in .jar file' released='21 May 2005' latest-version='' status='unknown' category='' website='/ij/plugins/gran-filter.html' %}
 
 ## Purpose
 
@@ -24,15 +25,8 @@ For example, to detect all circular shapes whose radii are between 10 and 12 pix
 
 The plugin also works on grayscale images, tough it gives difficult to interpret results.
 
+## Publication
+
 This plugin and technique is described by its author (and colleagues) in the following paper, where more documentation can be found:
 
-{% include citation last='Prodanov' first='D.' last2='Heeroma' first2='J.' last3='Marani' first3='E.' title='Automatic morphometry of synaptic boutons of cultured cells using granulometric analysis of digital images' journal='Journal of Neuroscience Methods' volume='151' pages='168-177' year='2006' PMID='16157388' %}
-
-
-{% capture content%}
-
-{% endcapture %}
-{% include gallery content=content%}
-
-
- 
+{% include citation %}

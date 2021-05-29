@@ -5,8 +5,6 @@ section: Learn:Scientific Imaging
 nav-links: true
 ---
 
-
-
 ## What is Registration?
 
 {% include wikipedia title='Image registration' text='Image registration'%} is the process of transforming different sets of image data into one coordinate system. Image data may be multiple photographs, data from different sensors, times, depths, or viewpoints. It is used in computer vision, medical imaging, biological imaging and brain mapping, military automatic target recognition, and compiling and analyzing images and data from satellites. Registration is necessary in order to be able to compare or integrate the data obtained from these different measurements.
@@ -65,7 +63,7 @@ Here we summarize some of the Registration plugins in ImageJ.
       </td>
       <td>
         <ul>
-          <li>A lightweight SIFT-implementation for Java after the paper of David Lowe<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.
+          <li>A lightweight SIFT-implementation for Java after the paper of David Lowe[^1].
           </li>
         </ul>
       </td>
@@ -155,14 +153,11 @@ Here we summarize some of the Registration plugins in ImageJ.
   </tbody>
 </table>
 {:/}
-    <ol>
-      <li id="fn1" role="doc-endnote">{% include citation content='journal' author='Lowe D' title='Distinctive Image Features from Scale-Invariant Keypoints' journal='International Journal of Computer Vision' year='2004' volume='60' number='2' pages='91-110' %}<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a>
-      </li>
-    </ol>
-  </section>
-</body>
-</html>
 
 ## Other pages and tools for Registration in ImageJ
 
 See [Registration](/plugin-index#registration) for other ImageJ pages and tools about image registration.
+
+# References
+
+[^1] {% include citation doi='10.1023/B:VISI.0000029664.99615.94' %}

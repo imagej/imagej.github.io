@@ -32,7 +32,7 @@ A remark from Brian Patton, University of Strathclyde, Glasgow says that the ori
 
 # Purpose
 
-Making use of the Fourier Ring Correlation Implementation by Alex Herbert which is itself adapted from the FIRE (Fourier Image REsolution) plugin produced as part of the paper **Niewenhuizen, et al (2013). Measuring image resolution in optical nanoscopy. Nature Methods, 10, 557** [1]
+Making use of the Fourier Ring Correlation Implementation by Alex Herbert which is itself adapted from the FIRE (Fourier Image REsolution) plugin produced as part of the paper **Niewenhuizen, et al (2013). Measuring image resolution in optical nanoscopy. Nature Methods, 10, 557** [^1]
 
 # Details
 
@@ -44,7 +44,7 @@ There are three threshold methods currently implemented
 2.  **Half-bit**: Threshold method where the intersection of the threshold curve with the FRC defines the point where there is 1/2 bit of information per pixel.
 3.  **Three sigma**: The intersection of the FRC curve with this threshold defines the value where the FRC begins primarily representing high frequency noise.
 
-Please see the publication **van Hell and Schatz, Fourier shell correlation threshold criteria, Journal of Structural Biology 151, 2005**[2] for more information on the calculation of these criteria.
+Please see the publication **van Hell and Schatz, Fourier shell correlation threshold criteria, Journal of Structural Biology 151, 2005**[^2] for more information on the calculation of these criteria.
 
 ## Image Calibration
 
@@ -115,8 +115,6 @@ There are other methods to get the FRC curve, see the [FRC.java file](https://c4
 
 ## References
 
+[^1]: {% include citation doi='10.1038/nmeth.2448' %}
 
-
-[1] {% include citation content='journal' issn='1548-7091' volume='10' issue='6' pages='557–562' last1='Nieuwenhuizen' first1='Robert P J' last2='Lidke' first2='Keith A' last3='Bates' first3='Mark' last4='Puig' first4='Daniela Leyton' last5='Grunwald' first5='David' last6='Stallinga' first6='Sjoerd' last7='Rieger' first7='Bernd' title='Measuring image resolution in optical nanoscopy' journal='Nat Meth' date='2013-06' %}
-
-[2] {% include citation content='journal' doi='10.1016/j.jsb.2005.05.009' issn='1047-8477' volume='151' issue='3' pages='250–262' last1='van Heel' first1='Marin' last2='Schatz' first2='Michael' title='Fourier shell correlation threshold criteria' journal='Journal of Structural Biology' date='2005-09' %}
+[^2]: {% include citation doi='10.1016/j.jsb.2005.05.009' %}

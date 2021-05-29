@@ -1,7 +1,7 @@
 ---
 mediawiki: BigDataViewer
 title: BigDataViewer
-categories: [Visualization,Citable]
+categories: [Visualization]
 artifact: sc.fiji:bigdataviewer\_fiji
 doi: 10.1038/nmeth.3392
 ---

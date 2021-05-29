@@ -2,7 +2,7 @@
 mediawiki: MATLAB_Scripting
 title: MATLAB Scripting
 section: Extend:Scripting:Languages
-categories: [Scripting,MATLAB,Citable]
+categories: [Scripting,MATLAB]
 doi: 10.1093/bioinformatics/btw681
 ---
 

@@ -1,7 +1,7 @@
 ---
 mediawiki: Multifrac
 title: Multifrac
-categories: [Plugins,Analysis,Citable,Feature extraction,ImageJ2,Mathematical morphology,Stacks]
+categories: [Plugins,Analysis,Feature extraction,ImageJ2,Mathematical morphology,Stacks]
 ---
 
 

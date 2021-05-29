@@ -2,7 +2,7 @@
 mediawiki: Bio-Formats
 title: Bio-Formats
 section: Learn:ImageJ Basics:File Formats
-categories: [Import-Export,Related Software,Citable,SciJava,OME]
+categories: [Import-Export,Related Software,SciJava,OME]
 doi: 10.1083/jcb.201004104
 ---
 

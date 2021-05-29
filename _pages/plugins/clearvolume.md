@@ -1,7 +1,7 @@
 ---
 mediawiki: ClearVolume
 title: ClearVolume
-categories: [Plugins,Visualization,Citable]
+categories: [Plugins,Visualization]
 doi: 10.1038/nmeth.3372
 ---
 

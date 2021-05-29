@@ -1,7 +1,7 @@
 ---
 mediawiki: SME_Projection
 title: SME Projection
-categories: [Citable,Plugins,Analysis]
+categories: [Plugins,Analysis]
 doi: 10.1038/ncomms15554
 ---
 

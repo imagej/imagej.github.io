@@ -2,7 +2,7 @@
 mediawiki: BioImageXD
 title: BioImageXD
 section: Explore:Software
-categories: [Software,Citable]
+categories: [Software]
 ---
 
 

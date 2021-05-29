@@ -1,7 +1,7 @@
 ---
 mediawiki: Fijiyama
 title: Fijiyama
-categories: [Plugins,Registration,Citable]
+categories: [Plugins,Registration]
 description: Registration and alignment of 3D image series
 ---
 

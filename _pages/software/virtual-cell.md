@@ -2,7 +2,7 @@
 mediawiki: Virtual_Cell
 title: Virtual Cell
 section: Explore:Software
-categories: [Software,SciJava,Citable]
+categories: [Software,SciJava]
 doi: 10.1016/S0167-7799(01)01740-1
 ---
 

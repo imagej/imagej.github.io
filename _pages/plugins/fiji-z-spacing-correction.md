@@ -1,7 +1,7 @@
 ---
 mediawiki: Fiji/Z-Spacing_Correction
 title: Fiji/Z-Spacing Correction
-categories: [Plugins,TrakEM2,Transform,Citable]
+categories: [Plugins,TrakEM2,Transform]
 ---
 
 

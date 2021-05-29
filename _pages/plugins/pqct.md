@@ -1,7 +1,7 @@
 ---
 mediawiki: PQCT
 title: PQCT
-categories: [Plugins,Citable]
+categories: [Plugins]
 ---
 
 

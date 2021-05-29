@@ -1,7 +1,7 @@
 ---
 mediawiki: 3Dscript
 title: 3Dscript
-categories: [Plugins,Visualization,Citable]
+categories: [Plugins,Visualization]
 doi: 10.1038/s41592-019-0359-1
 ---
 

@@ -1,7 +1,7 @@
 ---
 mediawiki: BigWarp
 title: BigWarp
-categories: [Plugins,Visualization,Transform,Registration,Citable]
+categories: [Plugins,Visualization,Transform,Registration]
 artifact: sc.fiji:bigwarp\_fiji
 doi: 10.1109/ISBI.2016.7493463
 ---

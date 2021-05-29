@@ -1,7 +1,7 @@
 ---
 mediawiki: ImagePy
 title: ImagePy
-categories: [Software,Citable]
+categories: [Software]
 doi: 10.1093/bioinformatics/bty313
 ---
 

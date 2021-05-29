@@ -1,6 +1,7 @@
 ---
 mediawiki: Glasbey
 title: Glasbey
+doi: 10.1002/col.20327
 ---
 
 {% include info-box name='Glasbey' software='Discontinuous color table' maintainer='Gabriel Landini' source='https://github.com/fiji/fiji/blob/master/luts/glasbey.lut and https://github.com/fiji/fiji/blob/master/luts/glasbey_inverted.lut' category='[Color\_processing](/plugin-index#color-processing)' %}![](/media/glasbey.png)The Glasbey lookup table (LUT) is a color table structured in a maximally discontinuous manner. That is, adjacent color bins are chosen to be as distinct from one another as possible.
@@ -25,4 +26,4 @@ Glasbey can also be used to illustrate otherwise-subtle phenomena such as JPEG c
 
 The Glasbey LUT is based on the publication:
 
--   {% include citation last='Glasbey' first='Chris' last2='van der Heijden' first2='Gerie' last3='Toh' first3='Vivian F. K.' last4='Gray' first4='Alision' year='2007' journal='Color Research & Application' url='http://onlinelibrary.wiley.com/doi/10.1002/col.20327/abstract' title='Colour displays for categorical images' volume='32.4' pages='304-309' %}.
+{% include citation %}.

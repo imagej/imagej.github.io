@@ -2,7 +2,7 @@
 mediawiki: Micro-Manager
 title: Micro-Manager
 section: Explore:Software
-categories: [Software,Citable]
+categories: [Software]
 doi: 10.1002/0471142727.mb1420s92
 ---
 

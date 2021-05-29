@@ -2,7 +2,7 @@
 mediawiki: ImageJ2
 title: ImageJ2
 section: Explore:Software
-categories: [Software,ImageJ2,SciJava,Citable]
+categories: [Software,ImageJ2,SciJava]
 doi: 10.1186/s12859-017-1934-z
 ---
 

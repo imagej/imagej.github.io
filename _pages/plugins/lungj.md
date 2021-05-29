@@ -1,7 +1,8 @@
 ---
 mediawiki: LungJ
 title: LungJ
-categories: [Plugins,Citable,Segmentation,Binary,Filtering,Image annotation]
+categories: [Plugins,Segmentation,Binary,Filtering,Image annotation]
+doi: 10.5258/SOTON/401280
 ---
 
 
@@ -204,6 +205,4 @@ Allows to compare WEKA filters visually. Note that the Gabor filter is currently
 
 Please note that LungJ, as well as other plug-ins available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
--   {% include citation last1='Wollatz' first1='Lasse' last2='Johnston' first2='Steven J.' last3='Lackie' first3='Peter M.' last4='Cox' first4='Simon J.' title='LungJ v0.5.1' type='Code' year='2016' month='November' publisher='University of Southampton' doi='10.5258/SOTON/401280' url='http://eprints.soton.ac.uk/id/eprint/401280' %}
-
-     
+{% include citation %}

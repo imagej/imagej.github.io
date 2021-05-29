@@ -2,7 +2,7 @@
 mediawiki: ImgLib2
 title: ImgLib2
 section: Explore:Libraries:ImgLib2
-categories: [ImgLib,Citable]
+categories: [ImgLib]
 artifact: net.imglib2:imglib2
 doi: 10.1093/bioinformatics/bts543
 ---

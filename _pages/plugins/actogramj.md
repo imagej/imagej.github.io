@@ -1,7 +1,7 @@
 ---
 mediawiki: ActogramJ
 title: ActogramJ
-categories: [Plugins,Visualization,Citable]
+categories: [Plugins,Visualization]
 doi: 10.1177/0748730411414264
 ---
 

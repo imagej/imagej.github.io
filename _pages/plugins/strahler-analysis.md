@@ -2,12 +2,11 @@
 mediawiki: Strahler_Analysis
 title: Strahler Analysis
 categories: [Skeleton,Analysis,Plugins,Neuroanatomy]
+doi: 10.5281/zenodo.49399
+tags: strahler,plugin,arbor,neuron,morphometry,dendrite
 ---
 
-<seo metak="strahler,plugin,arbor,neuron,morphometry,dendrite" metad="strahler,plugin,arbor,neuron,morphometry,dendrite" />
-
 <div style="float:right;">
-
 
 {% capture maintainer%}
 {% include person id='tferr' %}
@@ -132,31 +131,13 @@ To install *Strahler Analysis* you must use Java 8 and subscribe to the [Neuroan
 -   [AnalyzeSkeleton](/plugins/analyze-skeleton) and [Skeletonize3D](/plugins/skeletonize3d), analysis of topographic skeletons
 -   [Sholl Analysis](/plugins/sholl-analysis), bitmap morphometry based on the Sholl technique
 
-## References
-
-Original publications by {% include wikipedia title='Robert E. Horton' text='Robert E. Horton'%} and {% include wikipedia title='Arthur Newell Strahler' text='Arthur N. Strahler'%}:
-
--   {% include citation first='R. E.' last='Horton' title='Erosional development of streams and their drainage basins: hydro-physical approach to quantitative morphology' journal='Geological Society of America Bulletin' volume='56' issue='3' year='1945' pages='275–370' doi='10.1130/0016-7606(1945)56\[275:EDOSAT\]2.0.CO;2' %}.
-
-<!-- -->
-
--   {% include citation last='Strahler' first='A. N.' year='1952' title='Hypsometric (area-altitude) analysis of erosional topology' journal='Geological Society of America Bulletin' volume='63' issue='11' pages='1117–1142' doi='10.1130/0016-7606(1952)63\[1117:HAAOET\]2.0.CO;2' %}.
-
-<!-- -->
-
--   {% include citation last='Strahler' first='A. N.' year='1957' title='Quantitative analysis of watershed geomorphology' journal='Transactions of the American Geophysical Union' volume='38' issue='6' pages='913–920' %} ([PDF](http://www.uvm.edu/~pdodds/files/papers/others/1957/strahler1957a.pdf)).
-
 ## Citing
 
-Plugins from the [Neuroanatomy update site](/plugins/Neuroanatomy):
+* Plugins from the [Neuroanatomy update site](/plugins/Neuroanatomy)[^1].
 
-:\* Tiago Ferreira (2016) [<img src="https://zenodo.org/badge/doi/10.5281/zenodo.49399.svg" alt="10.5281/zenodo.49399">](http://dx.doi.org/10.5281/zenodo.49399)
+* [Skeletonization](/plugins/skeletonize3d) and [Skeleton Analysis](/plugins/analyze-skeleton)[^2]
 
-[Skeletonization](/plugins/skeletonize3d) and [Skeleton Analysis](/plugins/analyze-skeleton):
-
-:\*Ignacio Arganda-Carreras, Rodrigo Fernandez-Gonzalez, Arrate Munoz-Barrutia, Carlos Ortiz-De-Solorzano, ["3D reconstruction of histological sections: Application to mammary gland tissue"](http://www3.interscience.wiley.com/journal/123322233/abstract), Microscopy Research and Technique, Volume 73, Issue 11, pages 1019–1029, October 2010.
-
-:\* Michael Doube, Michal M. Klosowski, Ignacio Arganda-Carreras, Fabrice P. Cordelieres, Robert P. Dougherty, Jonathan S. Jackson, Benjamin Schmid, John R. Hutchinson, Sandra J. Shefelbine, [BoneJ: Free and extensible bone image analysis in ImageJ](http://dx.doi.org/10.1016/j.bone.2010.08.023), Bone, Volume 47, Issue 6, December 2010, Pages 1076-1079.
+* [BoneJ](/plugins/bonej)[^3]
 
 ## Acknowledgments
 
@@ -166,4 +147,18 @@ To all the developers of [AnalyzeSkeleton](https://github.com/fiji/AnalyzeSkelet
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [Free Software Foundation](http://www.gnu.org/licenses/gpl.txt). This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-   
+## References
+
+Original publications by {% include wikipedia title='Robert E. Horton' text='Robert E. Horton'%} and {% include wikipedia title='Arthur Newell Strahler' text='Arthur N. Strahler'%}:
+
+{% include citation doi='10.1130/0016-7606(1945)56[275:EDOSAT]2.0.CO;2' %}
+
+{% include citation doi='10.1130/0016-7606(1952)63[1117:HAAOET]2.0.CO;2' %}
+
+{% include citation doi='10.1029/TR038i006p00913' %} ([PDF](http://www.uvm.edu/~pdodds/files/papers/others/1957/strahler1957a.pdf))
+
+[^1]: {% include citation %}
+
+[^2]: {% include citation id='plugins/analyze-skeleton' %}
+
+[^3]: {% include citation id='plugins/bonej' %}

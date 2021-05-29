@@ -14,7 +14,7 @@ Parallel Spectral Deconvolution is an ImageJ plugin for spectral deblurring. Thi
 
 The plugin code is based on the following book:
 
-{% include citation last='Hansen' first='C.' last2='Nagy' first3='J.G.' last3='O"Leary' first2='D.P.' title='Deblurring Images: Matrices, Spectra, and Filtering' editor='Society for Industrial and Applied Mathematic' date='2006' ISBN='0898716187' %}
+{% include citation doi='10.1137/1.9780898718874' %}
 
 Please refer to the [website](http://sites.google.com/site/piotrwendykier/software/deconvolution/parallelspectraldeconvolution) for detail and examples.
 

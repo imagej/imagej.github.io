@@ -2,7 +2,7 @@
 mediawiki: Bio7
 title: Bio7
 section: Explore:Software
-categories: [Software,Citable]
+categories: [Software]
 doi: 10.18637/jss.v049.i04
 ---
 

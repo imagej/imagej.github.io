@@ -1,7 +1,7 @@
 ---
 mediawiki: BUnwarpJ
 title: BUnwarpJ
-categories: [Plugins,Registration,Citable]
+categories: [Plugins,Registration]
 artifact: sc.fiji:bUnwarpJ\_
 ---
 

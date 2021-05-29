@@ -1,7 +1,7 @@
 ---
 mediawiki: MaMuT
 title: MaMuT
-categories: [Plugins,Citable]
+categories: [Plugins]
 doi: 10.7554/eLife.34410
 ---
 

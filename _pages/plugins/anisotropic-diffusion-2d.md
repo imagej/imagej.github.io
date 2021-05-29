@@ -2,7 +2,8 @@
 mediawiki: Anisotropic_Diffusion_2D
 title: Anisotropic Diffusion 2D
 categories: [Plugins,Filtering]
-artifact: sc.fiji:Anisotropic\_Diffusion\_2D
+artifact: sc.fiji:Anisotropic_Diffusion_2D
+doi: 10.1109/TPAMI.2005.87
 ---
 
 This plugin implement the anisotropic diffusion filter in 2D. Anisotropic filters are a class of filter that reduces noise in an image while trying to preserve sharp edges. See also [this page of the ImageJ 1.x web site](/ij/plugins/anisotropic-diffusion-2d.html).
@@ -26,6 +27,4 @@ This plugin implement the anisotropic diffusion filter in 2D. Anisotropic filter
 
 The algorithm used by this plugin is an implementation of Anisotropic Diffusion from:
 
--   {% include citation last='Tschumperlé' first='D.' last2='Deriche' first2='R.' title='Vector-valued image regularization with PDEs: a common framework for different applications' journal='IEEE Trans Pattern Anal Mach Intell' volume='27' issue='4' pages='506-517' date='2005' PMID='15794157' %}
-
- 
+{% include citation %}

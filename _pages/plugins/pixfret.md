@@ -1,6 +1,7 @@
 ---
 mediawiki: PixFRET
 title: PixFRET
+doi: 10.1002/jemt.20215
 ---
 
 
@@ -23,4 +24,4 @@ Please refer to the [user guide (PDF)](/media/plugins/pixfret-userguide.pdf).
 
 ## Publication
 
--   {% include citation last='Feige' first='J.' last2='Sage' first2='D.' last3='Wahli' first3='W.' last4='Desvergne' first4='B.' last5='Gelman' first5='L.' year='2005' journal='Microscopy Research and Technique' url='http://bigwww.epfl.ch/publications/feige0501.html' title='PixFRET, an ImageJ Plug-in for FRET Calculation That Can Accommodate Variations in Spectral Bleed-throughs' volume='68(1)' pmid='' doi='10.1002/jemt.20215' %}
+{% include citation %}

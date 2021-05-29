@@ -1,9 +1,9 @@
 ---
 mediawiki: 3D_Viewer
 title: 3D Viewer
-categories: [Plugins,Visualization,Citable]
-artifact: sc.fiji:3D\_Viewer
-doi: 10.1038/nmeth.3392
+categories: [Plugins,Visualization]
+artifact: sc.fiji:3D_Viewer
+doi: 10.1186/1471-2105-11-274
 ---
 
 This plugin offers hardware-accelerated visualization possibilities for image stacks, using the [Java 3D](/libs/java-3d) library. Stacks can be displayed as texture-based volume renderings, surfaces or orthoslices.

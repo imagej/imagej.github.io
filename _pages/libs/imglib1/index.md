@@ -2,7 +2,7 @@
 mediawiki: ImgLib1_(deprecated)
 title: ImgLib1
 section: Explore:Libraries
-categories: [ImgLib,Citable]
+categories: [ImgLib]
 artifact: sc.fiji:legacy-imglib1
 nav-links: true
 nav-title: Introduction

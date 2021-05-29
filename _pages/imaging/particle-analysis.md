@@ -5,9 +5,6 @@ section: Learn:Scientific Imaging
 nav-links: true
 ---
 
-
-
-
 ## Automatic Particle counting
 
 Automatic particle counting can be done if the image does not have too many individual particles touching. Manual particle counting can be done using the [Multi-point Tool](/ij/docs/guide/146-19.html#sec:Multi-point-Tool).
@@ -43,7 +40,7 @@ Automatic particle analysis requires a "binary", black and white, image. A thres
 
 There are many algorithms you can use to calculate the threshold without introducing user-bias. An evaluation of over 40 of these can be found in this paper:
 
--   {% include citation last='Sezgin' first='M.' last2='Sankur' first2='B.' title='Survey over image thresholding techniques and quantitative performance evaluation.' link='http://dx.doi.org/10.1117/1.1631315' journal='Journal of Electronic imaging' volume='13(1)' year='2004' pages='146-168' %} ({% include scholar cluster='15528858675306988745' %}).
+{% include citation doi='10.1117/1.1631315' %}
 
 Fiji has several plugins found in the menu {% include bc path='Image | Adjust | Threshold'%} for automatic calculation of an image threshold. These include Otsu's thresholding, maximum entropy threshold, and mixture modelling thresholding. For a complete list of the methods available with Fiji see the Plugins section located in the Documentation section under the Content tab at the top of this page.
 

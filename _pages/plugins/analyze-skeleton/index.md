@@ -1,8 +1,9 @@
 ---
 mediawiki: AnalyzeSkeleton
 title: AnalyzeSkeleton
-categories: [Plugins,Skeleton,Analysis,Neuroanatomy,Citable]
-artifact: sc.fiji:AnalyzeSkeleton\_
+categories: [Plugins,Skeleton,Analysis,Neuroanatomy]
+artifact: sc.fiji:AnalyzeSkeleton_
+doi: 10.1002/jemt.20829
 ---
 
 Analysis of 2D and 3D skeleton images. For the ImageJ 1.x plugin, see [this page](http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:analyzeskeleton:start).
@@ -344,7 +345,7 @@ All changes can be seen in the [GitHub source repository](https://github.com/fij
 
 If you need to **cite the plugin**, please do so by citing the following paper:
 
--   Ignacio Arganda-Carreras, Rodrigo Fernandez-Gonzalez, Arrate Munoz-Barrutia, Carlos Ortiz-De-Solorzano, ["3D reconstruction of histological sections: Application to mammary gland tissue"](http://www3.interscience.wiley.com/journal/123322233/abstract), Microscopy Research and Technique, Volume 73, Issue 11, pages 1019–1029, October 2010.
+{% include citation %}
 
 The shortest path calculation and its applications have been published as:
 

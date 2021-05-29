@@ -1,7 +1,7 @@
 ---
 mediawiki: ToAST
 title: ToAST
-categories: [Plugins,Tracking,Citable]
+categories: [Plugins,Tracking]
 artifact: sc.fiji:ToAST\_
 ---
 

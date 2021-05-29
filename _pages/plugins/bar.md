@@ -1,7 +1,7 @@
 ---
 mediawiki: BAR
 title: BAR
-categories: [Analysis,Citable,Filtering,Image annotation,Plugins,Scripting,Segmentation]
+categories: [Analysis,Filtering,Image annotation,Plugins,Scripting,Segmentation]
 doi: 10.5281/zenodo.28838
 ---
 

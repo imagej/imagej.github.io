@@ -1,7 +1,7 @@
 ---
 mediawiki: Elastic_Alignment_and_Montage
 title: Elastic Alignment and Montage
-categories: [Plugins,Registration,TrakEM2,Citable]
+categories: [Plugins,Registration,TrakEM2]
 ---
 
 

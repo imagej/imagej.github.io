@@ -1,7 +1,7 @@
 ---
 mediawiki: FijiWings
 title: FijiWings
-categories: [Citable]
+categories: []
 doi: 10.1534/g3.113.006676
 ---
 

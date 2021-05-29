@@ -2,7 +2,8 @@
 mediawiki: Skeletonize3D
 title: Skeletonize3D
 categories: [Plugins,Skeleton]
-artifact: sc.fiji:Skeletonize3D\_
+artifact: sc.fiji:Skeletonize3D_
+doi: 10.1002/jemt.20829
 ---
 
 2D and 3D skeletonization of binary images.
@@ -63,7 +64,3 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 ## See also
 
 -   [Skeletonize3D at ImageJ documentation wiki](http://imagejdocu.tudor.lu/doku.php?id=plugin:morphology:skeletonize3d:start)
-
-------------------------------------------------------------------------
-
- 
