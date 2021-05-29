@@ -13,8 +13,7 @@ categories: []
 {% include info-box name='Read and Write Excel' software='ImageJ/Fiji' latest-version='1.1.7' author='Anthony Sinadinos, Brenden Kromhout' maintainer='Anthony Sinadinos [(antinos)](https://forum.image.sc/u/antinos/)' source=source category='[Plugins](/plugin-index)' website=' [Youtube tutorial](https://www.youtube.com/watch?v=dLkoB25MTIY)' %} By default, this plugin extracts data from the Results Table and adds it to a sheet-tab "A" in an .xlsx Excel file on the user's desktop. The plugin will create a file named "Rename me after writing is done" on the desktop if none-exists already, and will update this file if it has already been created. Data is added to the latest sheet (created as "A" if the file is new) or to a user specified sheet using a passed argument (see below). Within the latest sheet, data will be added adjacent to previous data, unless an argument is passed to stack data underneath pre-existing column headers and data. Results Table column headers are added automatically. A row count is added by default but the user can choose to deny this with a passed argument.
 
 Created in Eclipse IDE. Requires jre 1.8, which is current ImageJ compatible.
-<details>
-  <summary>Version release date table</summary>
+<details><summary>Version release date table</summary>
 
 | Version | Release Date | Notes |
 |---|---|---|
@@ -29,14 +28,13 @@ Created in Eclipse IDE. Requires jre 1.8, which is current ImageJ compatible.
 | v1.1.5  | 30 Nov 2019 |      |
 | v1.1.6  | 20 May 2020 |      |
 | v1.1.7  | 26 Sep 2020 |      |
-
 </details>
 
 
 
 ## Usage
-
-<span style="float:right; margin-left:10px;"> **Youtube tutorial:**
+**Youtube tutorial:**
+<span style="float:right; margin-left:10px;">
 
 {% include video platform='youtube' id='dLkoB25MTIY'%}
 </span>
@@ -143,8 +141,7 @@ Since Brenden modified the plugin, the code is now a lot neater. Feel free to co
 ## Plugin technical details
 
 ### Change log
-<details>
-  <summary>(click to expand)</summary>
+<details><summary>(click to expand)</summary>
      
 Version 1.0.1 changes:
 
@@ -196,8 +193,8 @@ Version 1.1.7 changes:
 
 ### Dependencies
 
-| Dependency                    | Maven Repo                                                                                                       |
-|-------------------------------|------------------------------------------------------------------------------------------------------------------|
+| Dependency | Maven Repo |
+|---|---|
 | jars/commons-collections4.jar | [1](https://mvnrepository.com/artifact/org.apache.commons/commons-collections4) |
 | jars/xmlbeans.jar             | [2](https://mvnrepository.com/artifact/org.apache.xmlbeans/xmlbeans)            |
 | jars/poi-ooxml.jar            | [3](https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml)                |
