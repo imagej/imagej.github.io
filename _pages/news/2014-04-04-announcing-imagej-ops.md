@@ -10,7 +10,7 @@ Today, the [ImageJ](/software/imagej) and [KNIME](/software/knime) teams are ple
 
 ## Motivation
 
-The ImageJ2 vision is to extend Java's mantra of "write once, run anywhere" to image processing algorithms. With that goal at its heart, ImageJ2 introduces extensible {% include github org='scijava' repo='scijava-common' label='plugin' %} and {% include github org='imagej' repo='tutorials' path='maven-projects/working-with-modules/src/main/java/WorkingWithModules.java' label='module' %} frameworks which make ImageJ commands richer, more powerful and easier to share across applications. Already, these modules are accessible from [CellProfiler](/software/cellprofiler), [KNIME](/software/knime), [OMERO](/software/omero) and [Alida](/software/alida).
+The ImageJ2 vision is to extend Java's mantra of "write once, run anywhere" to image processing algorithms. With that goal at its heart, ImageJ2 introduces extensible {% include github org='scijava' repo='scijava-common' label='plugin' %} and {% include github org='imagej' repo='tutorials' branch='master' path='maven-projects/working-with-modules/src/main/java/WorkingWithModules.java' label='module' %} frameworks which make ImageJ commands richer, more powerful and easier to share across applications. Already, these modules are accessible from [CellProfiler](/software/cellprofiler), [KNIME](/software/knime), [OMERO](/software/omero) and [Alida](/software/alida).
 
 But still notably missing was the next crucial layer: a framework for *image processing* specifically. To address that, we set out to create a framework for reusable image processing algorithms, with the following characteristics:
 

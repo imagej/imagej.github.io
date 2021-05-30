@@ -5,7 +5,7 @@ title: Quantile Based Normalization
 
 
 {% capture source%}
-{% include github org='fiji' repo='VIB' source='util/Quantile\_Based\_Normalization.java' %}
+{% include github org='fiji' repo='VIB' branch='master' source='util/Quantile\_Based\_Normalization.java' %}
 {% endcapture %}
 {% include info-box software='ImageJ' name='Quantile Based Normalization' author='Mark Longair' maintainer='Mark Longair' filename='VIB\_.jar' source=source status='stable' %}
 

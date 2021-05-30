@@ -6,7 +6,7 @@ categories: [Scripting,Unmaintained]
 
 
 {% capture source%}
-{% include github repo='fiji' path='plugins/Analyze/Dynamic\_ROI\_Profiler.clj' %}
+{% include github repo='fiji' branch='master' path='plugins/Analyze/Dynamic\_ROI\_Profiler.clj' %}
 {% endcapture %}
 {% include info-box name='Dynamic ROI Profiler' software='Clojure' author='Albert Cardona' maintainer='' filename='Dynamic\_ROI\_Profiler.clj' source=source latest-version='16 November 2008' status='unknown' %}
 

@@ -13,7 +13,7 @@ categories: [Colocalization,Color processing]
 {% endcapture %}
 
 {% capture source%}
-{% include github org='fiji' repo='Colocalisation\_Analysis' source='Colocalisation\_Threshold.java' %}, modified from [MBF ImageJ](/software/mbf-imagej)
+{% include github org='fiji' repo='Colocalisation\_Analysis' branch='master' source='Colocalisation\_Threshold.java' %}, modified from [MBF ImageJ](/software/mbf-imagej)
 {% endcapture %}
 {% include info-box name='Colocalization Threshold' software='ImageJ - Fiji' author='Tony Collins (and others?)' maintainer=maintainer filename='Colocalization.jar' source=source latest-version='june 2009' website='[Colocalization Analysis\#Colocalization\_Threshold](/imaging/colocalization-analysis#colocalization-threshold)' status='no longer actively supported, unlikely to be stable enough for real use. Use [Coloc\_2](/plugins/coloc-2)' %}
 

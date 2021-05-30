@@ -38,19 +38,19 @@ In the two previous articles we dealt with [edge](/plugins/trackmate/custom-edge
 
 For spot analyzer, the two are separated.
 
-You must first create a {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/spot/SpotAnalyzerFactory.java' label='SpotAnalyzerFactory' %}. This factory will be in charge of the TrackMate integration. The interface extends both the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/plugins/trackmateModule.java' label='TrackMateModule' %} and the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/FeatureAnalyzer.java' label='FeatureAnalyzer' %} interfaces. It is the class you will need to annotate with a [SciJava](/libs/scijava) annotation for automatic discovery.
+You must first create a {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/features/spot/SpotAnalyzerFactory.java' label='SpotAnalyzerFactory' %}. This factory will be in charge of the TrackMate integration. The interface extends both the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/plugins/trackmateModule.java' label='TrackMateModule' %} and the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/features/FeatureAnalyzer.java' label='FeatureAnalyzer' %} interfaces. It is the class you will need to annotate with a [SciJava](/libs/scijava) annotation for automatic discovery.
 
-But it is also in charge of instantiating {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/spot/SpotAnalyzer.java' label='SpotAnalyzer' %}s. As you can see, this interface just extends ImgLib2 {% include github repo='imglib' path='algorithms/core/src/main/java/net/imglib2/algorithm/Algorithm.java' label='Algorithm' %}, so all parameters will have to be passed in the constructor, which can be what you want thanks to the factory. We do not need a return value method, because results are stored directly inside the spot objects. But we will see this later.
+But it is also in charge of instantiating {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/features/spot/SpotAnalyzer.java' label='SpotAnalyzer' %}s. As you can see, this interface just extends ImgLib2 {% include github repo='imglib' branch='master' path='algorithms/core/src/main/java/net/imglib2/algorithm/Algorithm.java' label='Algorithm' %}, so all parameters will have to be passed in the constructor, which can be what you want thanks to the factory. We do not need a return value method, because results are stored directly inside the spot objects. But we will see this later.
 
 Let's get started with our example.
 
 ## The spot analyzer factory
 
-We want to generate an analyzer that will compute for each spot, its intensity relative to the mean intensity of all spots in the same frame. So you get for this feature a value of 1 if its intensity is equal to the mean, etc... We could have our analyzer actually compute the pixel intensity for each spot, take the mean over a frame, then normalize, etc... But, there is an analyzer that already computes the spot intensity and we can re-use it. Check the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/spot/SpotIntensityAnalyzerFactory.java' label='SpotIntensityAnalyzerFactory' %}.
+We want to generate an analyzer that will compute for each spot, its intensity relative to the mean intensity of all spots in the same frame. So you get for this feature a value of 1 if its intensity is equal to the mean, etc... We could have our analyzer actually compute the pixel intensity for each spot, take the mean over a frame, then normalize, etc... But, there is an analyzer that already computes the spot intensity and we can re-use it. Check the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/features/spot/SpotIntensityAnalyzerFactory.java' label='SpotIntensityAnalyzerFactory' %}.
 
 It is a good idea to reuse this value in our computations, both for the quickness of development and runtime performance. But if we do so, we must ensure that the feature we depend on is available when our new analyzer runs. There is a way to do that, thanks to the notion of **priority**, which we will deal with later.
 
-Right now, let's focus on the factory class itself. There is not much to say: its content resembles all the feature analyzers we saw so far. So I am going to skip over the details and point you to the full source code {% include github org='fiji' repo='TrackMate-examples' source='plugin/trackmate/examples/spotanalyzer/RelativeIntensitySpotAnalyzerFactory.java' label='here' %}.
+Right now, let's focus on the factory class itself. There is not much to say: its content resembles all the feature analyzers we saw so far. So I am going to skip over the details and point you to the full source code {% include github org='fiji' repo='TrackMate-examples' branch='master' source='plugin/trackmate/examples/spotanalyzer/RelativeIntensitySpotAnalyzerFactory.java' label='here' %}.
 
 The one interesting part is the factory method in charge of instantiating the `SpotAnalyzer`:
 
@@ -68,9 +68,9 @@ As you noted in the above method, each analyzer is meant to operate only on one 
 
 A little word about the expected execution context: The TrackMate GUI operates in steps, as you have noted. First the detection step generates spots, then they are filtered, then they are tracked, etc... Therefore, when I said earlier that the whole model is available for calculation, this is not entirely true. When using the GUI, spot numerical features are used to filter spots after they have been detected. So that this stage, there is no tracks yet. There is not even filtered spots. A spot feature cannot depend on these objects, and this is a built-in limitation of TrackMate. So be cautious on what your numerical feature depends.
 
-Before we go into the code, here is quick recap on the TrackMate model API. After the detection step, the spots are stored in a {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/SpotCollection.java' label='SpotCollection' %} object. It gathers all the spots, and can deal with their filtering visibility, etc... Spot analyzers are meant to operate only on one frame, so we will need to require the spot of this frame. The target frame is specified at construction time, by the factory.
+Before we go into the code, here is quick recap on the TrackMate model API. After the detection step, the spots are stored in a {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/SpotCollection.java' label='SpotCollection' %} object. It gathers all the spots, and can deal with their filtering visibility, etc... Spot analyzers are meant to operate only on one frame, so we will need to require the spot of this frame. The target frame is specified at construction time, by the factory.
 
-The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/spot/SpotAnalyzer.java' label='SpotAnalyzer' %} interface is pretty naked. There is nothing specific, and all the logic has to go in the `process()` method. There is no need to have a method to return the results of the computation, for spot objects can store their own feature values, thanks to the `Spot.putFeature(feature, value)` method.
+The {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/features/spot/SpotAnalyzer.java' label='SpotAnalyzer' %} interface is pretty naked. There is nothing specific, and all the logic has to go in the `process()` method. There is no need to have a method to return the results of the computation, for spot objects can store their own feature values, thanks to the `Spot.putFeature(feature, value)` method.
 
 Here is what the `process()` method of the analyzer looks like:
 
@@ -135,7 +135,7 @@ Here is what the `process()` method of the analyzer looks like:
             return true;
         }
 
-The code for the whole class is {% include github org='fiji' repo='TrackMate-examples' source='plugin/trackmate/examples/spotanalyzer/RelativeIntensitySpotAnalyzer.java' label='here' %}.
+The code for the whole class is {% include github org='fiji' repo='TrackMate-examples' branch='master' source='plugin/trackmate/examples/spotanalyzer/RelativeIntensitySpotAnalyzer.java' label='here' %}.
 
 ## Using SciJava priority to determine order of execution
 
@@ -153,7 +153,7 @@ This priority parameter accepts a `double` as value and this value determines th
 
 {% include notice icon="info" content='Feature analyzers are executed in order according to **increasing priority**. This means that analyzers with the greatest priority are executed last.' %}
 
-By convention, if your feature analyzer depends on the features calculated by N other analyzers, you take the larger priority of these analyzers, and add 1. In our case, we depend on the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/spot/SpotIntensityAnalyzerFactory.java' label='SpotIntensityAnalyzerFactory' %}, which as a priority of 0 (the default if the parameter is unspecified). So quite logically, we set the priority of our analyzer to be 1. This ensures the proper execution order.
+By convention, if your feature analyzer depends on the features calculated by N other analyzers, you take the larger priority of these analyzers, and add 1. In our case, we depend on the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/features/spot/SpotIntensityAnalyzerFactory.java' label='SpotIntensityAnalyzerFactory' %}, which as a priority of 0 (the default if the parameter is unspecified). So quite logically, we set the priority of our analyzer to be 1. This ensures the proper execution order.
 
 ## Wrapping up
 

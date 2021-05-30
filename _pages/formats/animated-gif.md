@@ -7,7 +7,7 @@ categories: [Tutorials]
 
 
 {% capture source%}
-{% include github org='fiji' repo='IO' source='io/Gif\_Stack\_Writer.java' %}
+{% include github org='fiji' repo='IO' branch='master' source='io/Gif\_Stack\_Writer.java' %}
 {% endcapture %}
 {% include info-box software='ImageJ' name='Save as animated gif' author='Ryan Raz' maintainer='Johannes Schindelin' filename='IO\_.jar' source=source latest-version='March 2002' status='stable' category='[Import/Export](/plugin-index#import-export)' %}
 

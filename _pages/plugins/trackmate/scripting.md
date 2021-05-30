@@ -299,7 +299,7 @@ There are some gotchas: some feature analyzers require other numerical features 
 Finally, depending on their type, numerical features are not stored at the same place:
 
 -   Spot features are simply conveyed by the spot object, and you can access them through `spot.getFeature('FEATURE_NAME')`
--   Edge and track features are stored in a sub-component of the model object called the FeatureModel ({% include github repo='fiji' path='src-plugins/plugins/trackmate\_/src/main/java/fiji/plugin/trackmate/FeatureModel.java' label='FeatureModel.java' %}).
+-   Edge and track features are stored in a sub-component of the model object called the FeatureModel ({% include github repo='fiji' branch='master' path='src-plugins/plugins/trackmate\_/src/main/java/fiji/plugin/trackmate/FeatureModel.java' label='FeatureModel.java' %}).
 
 Check the script below to see a working example.
 

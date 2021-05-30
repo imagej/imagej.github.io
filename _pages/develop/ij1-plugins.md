@@ -133,7 +133,7 @@ The source of the various Fiji-related projects is spread over several source co
 
 ## The class *IJ*
 
-The class {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/IJ.java' label='ij.IJ' %} is a convenience class with many static functions. Two of them are particularly useful for debugging:
+The class {% include github org='imagej' repo='ImageJA' branch='master' path='src/main/java/ij/IJ.java' label='ij.IJ' %} is a convenience class with many static functions. Two of them are particularly useful for debugging:
 
     // output into the Log window
     IJ.log("Hello, World!");
@@ -143,7 +143,7 @@ The class {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/I
 
 ## The class *ImageJ*
 
-The class {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/ImageJ.java' label='ij.ImageJ' %} implements the main window of ImageJ / Fiji, and you can access it via *ij.IJ*'s static method *getInstance()*:
+The class {% include github org='imagej' repo='ImageJA' branch='master' path='src/main/java/ij/ImageJ.java' label='ij.ImageJ' %} implements the main window of ImageJ / Fiji, and you can access it via *ij.IJ*'s static method *getInstance()*:
 
     // check if ImageJ is used interactively
     if (IJ.getInstance() != null)
@@ -153,7 +153,7 @@ Typically, all you do with that instance is to test whether ImageJ is used as a 
 
 ## The class *WindowManager*
 
-Use the class {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/WindowManager.java' label='ij.WindowManager' %} to access the ImageJ windows / images:
+Use the class {% include github org='imagej' repo='ImageJA' branch='master' path='src/main/java/ij/WindowManager.java' label='ij.WindowManager' %} to access the ImageJ windows / images:
 
     // how many windows / images are active?
     IJ.log("There are "
@@ -166,7 +166,7 @@ When implementing a filter plugin, you usually do not need to access *WindowMana
 
 ## The hierarchy of the classes representing an image
 
-All images are represented as instances of {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/ImagePlus.java' label='ij.ImagePlus' %}. This class wraps an {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/ImageStack.java' label='ij.ImageStack' %} of slices. Slices are data-type dependent instances of {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/process/ImageProcessor.java' label='ij.process.ImageProcessor' %}: {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/process/ByteProcessor.java' label='ij.process.ByteProcessor' %}, {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/process/ShortProcessor.java' label='ij.process.ShortProcessor' %}, {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/process/FloatProcessor.java' label='ij.process.FloatProcessor' %}, and {% include github org='imagej' repo='ImageJA' path='src/main/java/ij/process/ColorProcessor.java' label='ij.process.ColorProcessor' %}. Or graphically:
+All images are represented as instances of {% include github org='imagej' repo='ImageJA' branch='master' path='src/main/java/ij/ImagePlus.java' label='ij.ImagePlus' %}. This class wraps an {% include github org='imagej' repo='ImageJA' branch='master' path='src/main/java/ij/ImageStack.java' label='ij.ImageStack' %} of slices. Slices are data-type dependent instances of {% include github org='imagej' repo='ImageJA' branch='master' path='src/main/java/ij/process/ImageProcessor.java' label='ij.process.ImageProcessor' %}: {% include github org='imagej' repo='ImageJA' branch='master' path='src/main/java/ij/process/ByteProcessor.java' label='ij.process.ByteProcessor' %}, {% include github org='imagej' repo='ImageJA' branch='master' path='src/main/java/ij/process/ShortProcessor.java' label='ij.process.ShortProcessor' %}, {% include github org='imagej' repo='ImageJA' branch='master' path='src/main/java/ij/process/FloatProcessor.java' label='ij.process.FloatProcessor' %}, and {% include github org='imagej' repo='ImageJA' branch='master' path='src/main/java/ij/process/ColorProcessor.java' label='ij.process.ColorProcessor' %}. Or graphically:
 
 <figure><img src="/media/image-class-hierarchy.png" title="Image_Class_Hierarchy.png" width="600" alt="Image_Class_Hierarchy.png" /><figcaption aria-hidden="true">Image_Class_Hierarchy.png</figcaption></figure>
 
@@ -374,9 +374,9 @@ Of course, you can also set ROIs programmatically:
 
 You can use ImageJ2-specific functionality from within an ImageJ 1.x plugin. For example, ImageJ2 provides a spreadsheet-like results table that supports string cells. You can write an ImageJ 1.x plugin that produces such a spreadsheet, displaying it onscreen.
 
-See the {% include github org='imagej' repo='tutorials' path='maven-projects/call-modern-from-legacy' label='call-modern-from-legacy' %} example of the ImageJ Tutorials:
+See the {% include github org='imagej' repo='tutorials' branch='master' path='maven-projects/call-modern-from-legacy' label='call-modern-from-legacy' %} example of the ImageJ Tutorials:
 
-> {% include github org='imagej' repo='tutorials' path='maven-projects/call-modern-from-legacy/src/main/java/DisplayATable.java' label='DisplayATable.java' %}
+> {% include github org='imagej' repo='tutorials' branch='master' path='maven-projects/call-modern-from-legacy/src/main/java/DisplayATable.java' label='DisplayATable.java' %}
 
 ## Further tips
 

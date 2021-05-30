@@ -93,7 +93,7 @@ Note: *heap* is Java speak for *memory*.
 
 ## Javassist-based
 
-A quite versatile method is to use (and possibly modify) the class {% include github org='fiji' repo='fiji-compat' source='fiji/MemoryProfiler.java' label='fiji.MemoryProfiler' %} in *fiji-compat.jar*.
+A quite versatile method is to use (and possibly modify) the class {% include github org='fiji' repo='fiji-compat' branch='master' source='fiji/MemoryProfiler.java' label='fiji.MemoryProfiler' %} in *fiji-compat.jar*.
 
 This memory profiler instruments all method entries and exists using javassist. At each exit, it reports the relative memory usage, the total memory usage, and the exit point of the current method. Call it like this:
 

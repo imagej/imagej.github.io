@@ -14,7 +14,7 @@ categories: [Transform,Interactive]
 {% endcapture %}
 
 {% capture source%}
-{% include github org='axtimwalde' repo='mpicbg' path='mpicbg\_/src/main/java/Stack\_Rotate.java' %}
+{% include github org='axtimwalde' repo='mpicbg' branch='master' path='mpicbg\_/src/main/java/Stack\_Rotate.java' %}
 {% endcapture %}
 {% include info-box name='Interactive Stack Rotation' software='Fiji' author=author maintainer=maintainer source=source released='September 29<sup>th</sup>, 2009' latest-version='February 26<sup>th</sup>, 2010' status='stable, active' category='[Plugins](/plugin-index), [Transform](/plugin-index#transform)' %}
 

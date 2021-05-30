@@ -6,7 +6,7 @@ categories: []
 
 
 {% capture source%}
-{% include github org='fiji' repo='VIB' source='stacks/Three\_Pane\_Crop.java' %}
+{% include github org='fiji' repo='VIB' branch='master' source='stacks/Three\_Pane\_Crop.java' %}
 {% endcapture %}
 {% include info-box software='ImageJ' name='Crop (3D)' author='Mark Longair' maintainer='Mark Longair' filename='VIB\_.jar' source=source status='stable' %}
 

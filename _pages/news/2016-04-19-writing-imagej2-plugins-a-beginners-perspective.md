@@ -167,7 +167,7 @@ To import several projects from GitHub I always had to close all open project in
 Start from an existing plugin as a template:
 
 -   For ImageJ 1.x plugins: {% include github org='imagej' repo='minimal-ij1-plugin' label='imagej/minimal-ij1-plugin' %}
--   For ImageJ2 plugins: {% include github org='imagej' repo='tutorials' path='maven-projects/simple-commands' label='simple-commands in imagej/tutorials' %}
+-   For ImageJ2 plugins: {% include github org='imagej' repo='tutorials' branch='master' path='maven-projects/simple-commands' label='simple-commands in imagej/tutorials' %}
 
 Import it as a sample project into your IDE and modify this project according to your needs:
 
@@ -377,7 +377,7 @@ If you write an ImageJ2 command plugin (i.e.: implement the `org.scijava.command
 
 Example, which sets the `plugins.dir` property so that the plugin appears in the menus when launched from an IDE:
 
--   {% include github org='imagej' repo='minimal-ij1-plugin' commit='780286866ee67ffdc6506217c3f25d9a0ac15f6d' source='Process\_Pixels.java\#L176-L180' label='Process\_Pixels.java' %}
+-   {% include github org='imagej' repo='minimal-ij1-plugin' commit='780286866ee67ffdc6506217c3f25d9a0ac15f6d' source='Process_Pixels.java#L176-L180' label='Process_Pixels.java' %}
 
 Setting `plugins.dir` is only necessary for ImageJ 1.x style plugins. If you write an ImageJ2 command, it should appear in the menus regardless.
 

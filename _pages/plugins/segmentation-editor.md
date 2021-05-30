@@ -6,7 +6,7 @@ categories: [Segmentation]
 
 
 {% capture source%}
-{% include github org='fiji' repo='VIB' source='Segmentation\_Editor.java' %}
+{% include github org='fiji' repo='VIB' branch='master' source='Segmentation\_Editor.java' %}
 {% endcapture %}
 {% include info-box software='ImageJ' name='Segmentation Editor' author='Johannes Schindelin, Francois Kusztos, Benjamin Schmid' maintainer='Benjamin Schmid' filename='VIB\_.jar' source=source status='stable' website='http://132.187.25.13/home/?category=Download&page=SegmentationEditor' %}
 

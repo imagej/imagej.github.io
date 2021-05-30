@@ -18,7 +18,7 @@ See also this nice article: [The State of Logging in Java](https://stackify.com/
 
 First of all, `System.out.println` is rather verbose. But more importantly, it is a bit inflexible: you cannot explicitly specify metadata such as the "severity" or "level" of the message, an associated exception stack trace, the source of the message, or other details. And you cannot customize the logging behavior based on context (e.g., log certain kinds of messages to a file, while others go to stdout).
 
-For these reasons, nearly everyone and their dog either uses a logging framework, or invents their own. The [SciJava Common](/libs/scijava#scijava-common) project has opted to do both: the SciJava application framework provides a {% include github org='scijava' repo='scijava-common' path='src/main/java/org/scijava/log/LogService.java' label='LogService' %} to abstract and encapsulate all logging. The default core implementation of this service is called {% include github org='scijava' repo='scijava-common' path='src/main/java/org/scijava/log/StderrLogService.java' label='StderrLogService' %}, and simply emits all log messages to the standard error stream. This is done to avoid dependencies on any external logging frameworks or facades, as well as to offer a sufficiently rich logging API.
+For these reasons, nearly everyone and their dog either uses a logging framework, or invents their own. The [SciJava Common](/libs/scijava#scijava-common) project has opted to do both: the SciJava application framework provides a {% include github org='scijava' repo='scijava-common' branch='master' path='src/main/java/org/scijava/log/LogService.java' label='LogService' %} to abstract and encapsulate all logging. The default core implementation of this service is called {% include github org='scijava' repo='scijava-common' branch='master' path='src/main/java/org/scijava/log/StderrLogService.java' label='StderrLogService' %}, and simply emits all log messages to the standard error stream. This is done to avoid dependencies on any external logging frameworks or facades, as well as to offer a sufficiently rich logging API.
 
 ## What about SLF4J?
 
@@ -35,7 +35,7 @@ Unfortunately, SLF4J suffers from a couple of downsides:
 -   It complicates application deployment by requiring the inclusion of a logging binding [not explicitly declared in the project's dependency tree](http://slf4j.org/faq.html#maven2).
 -   By inventing a new standard for logging, there is [now one more competing standard](http://xkcd.com/927/).
 
-Still, SLF4J is a nice thing, so the SciJava project does provide a {% include github org='scijava' repo='scijava-log-slf4j' path='src/main/java/org/scijava/log/slf4j/SLF4JLogService.java' label='LogService implementation backed by SLF4J' %}, which zealous developers can use to redirect all SciJava logging to the SLF4J framework, which they can then {% include wikipedia title='Fundamental theorem of software engineering' text='further redirect'%} using an SLF4J binding of their choosing!
+Still, SLF4J is a nice thing, so the SciJava project does provide a {% include github org='scijava' repo='scijava-log-slf4j' branch='master' path='src/main/java/org/scijava/log/slf4j/SLF4JLogService.java' label='LogService implementation backed by SLF4J' %}, which zealous developers can use to redirect all SciJava logging to the SLF4J framework, which they can then {% include wikipedia title='Fundamental theorem of software engineering' text='further redirect'%} using an SLF4J binding of their choosing!
 
 ## How does logging work in ImageJ?
 

@@ -105,7 +105,7 @@ Side note: the ASM component (which is included in JRuby, which in turn is inclu
             --main-class jruby.objectweb.asm.util.CheckClassAdapter \
             my.class.Name
 
-If you are using Fiji's {% include github org='fiji' repo='fiji-compat' source='fiji/JavassistHelper.java' label='JavassistHelper class' %}, you can use the *verify()* method which does nothing else than to hand off to the ASM component's verifier. Example:
+If you are using Fiji's {% include github org='fiji' repo='fiji-compat' branch='master' source='fiji/JavassistHelper.java' label='JavassistHelper class' %}, you can use the *verify()* method which does nothing else than to hand off to the ASM component's verifier. Example:
 
     import fiji.JavassistHelper;
     import javassist.ClassPool;

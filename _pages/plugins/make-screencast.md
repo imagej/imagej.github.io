@@ -6,7 +6,7 @@ categories: [Scripting]
 
 
 {% capture source%}
-{% include github repo='fiji' path='plugins/Scripts/File/Make\_Screencast.bsh' %}
+{% include github repo='fiji' branch='master' path='plugins/Scripts/File/Make\_Screencast.bsh' %}
 {% endcapture %}
 {% include info-box software='Fiji' name='Make\_Screencast.bsh' author='Johannes Schindelin' maintainer='Johannes Schindelin' filename='Make\_Screencast.bsh' source=source status='stable' %}
 

@@ -1299,10 +1299,10 @@ Notice that Jython lets you define the methods of event listeners as additional 
 
 All the following are included in Fiji's plugins/Examples/plugins/trakem2\_Example\_Scripts/ folder:
 
--   {% include github repo='fiji' path='plugins/Examples/plugins/trakem2\_Example\_Scripts/extract\_stack\_under\_arealist.py' label='Extract stack under AreaList' %} in TrakEM2.
--   {% include github repo='fiji' path='plugins/Examples/plugins/trakem2\_Example\_Scripts/T2\_set\_all\_transforms\_to\_identity.py' label='Set all transforms to identity' %} for TrakEM2 objects.
--   {% include github repo='fiji' path='plugins/Examples/plugins/trakem2\_Example\_Scripts/T2\_Select\_All.py' label='Select All' %} objects in TrakEM2.
--   {% include github repo='fiji' path='plugins/Examples/plugins/trakem2\_Example\_Scripts/Measure\_AreaLists.py' label='Measure AreaList' %} in TrakEM2.
+-   {% include github repo='fiji' branch='master' path='plugins/Examples/plugins/trakem2\_Example\_Scripts/extract\_stack\_under\_arealist.py' label='Extract stack under AreaList' %} in TrakEM2.
+-   {% include github repo='fiji' branch='master' path='plugins/Examples/plugins/trakem2\_Example\_Scripts/T2\_set\_all\_transforms\_to\_identity.py' label='Set all transforms to identity' %} for TrakEM2 objects.
+-   {% include github repo='fiji' branch='master' path='plugins/Examples/plugins/trakem2\_Example\_Scripts/T2\_Select\_All.py' label='Select All' %} objects in TrakEM2.
+-   {% include github repo='fiji' branch='master' path='plugins/Examples/plugins/trakem2\_Example\_Scripts/Measure\_AreaLists.py' label='Measure AreaList' %} in TrakEM2.
 -   A [collection of scripts for TrakEM2](https://github.com/acardona/Fiji-TrakEM2-scripts/tree/master/plugins/trakem2), hosted by github. Mostly related to inspecting and analyzing [Treeline](https://fiji.sc/javadoc/ini/trakem2/display/Treeline.html), [AreaTree](https://fiji.sc/javadoc/ini/trakem2/display/AreaTree.html) and [Connector](https://fiji.sc/javadoc/ini/trakem2/display/Connector.html) instances, when used for neural circuit reconstruction.
 
  

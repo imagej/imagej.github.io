@@ -50,6 +50,6 @@ A sample [16-bit RGB data set](/ij/macros/images/MyoblastCells.zip) of triple la
 
 ## History
 
-See the {% include github org='imagej' repo='image5d' path='doc/Image5D-changes.txt' label='release notes' %} for details on changes.
+See the {% include github org='imagej' repo='image5d' branch='master' path='doc/Image5D-changes.txt' label='release notes' %} for details on changes.
 
  

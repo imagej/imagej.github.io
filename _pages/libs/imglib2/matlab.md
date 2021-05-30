@@ -14,7 +14,7 @@ All snippets listed here are to be run from [MATLAB](/scripting/matlab). We rely
 
 ## Creating a new ImgLib2 image in MATLAB
 
-In [MATLAB](/scripting/matlab), we are limited to native type images (float, uint8, uint16, ...) represented as native arrays. The matching ImgLib2 container for this is the {% include github repo='imglib' path='core/src/main/java/net/imglib2/img/array/ArrayImg.java' label='ArrayImg' %}.
+In [MATLAB](/scripting/matlab), we are limited to native type images (float, uint8, uint16, ...) represented as native arrays. The matching ImgLib2 container for this is the {% include github repo='imglib' branch='master' path='core/src/main/java/net/imglib2/img/array/ArrayImg.java' label='ArrayImg' %}.
 
 Because ImgLib2 authors wrote nice static utilities, our work is relatively easy. The class `ArrayImgs` has all the methods you need, one per native type.
 
@@ -31,7 +31,7 @@ Note also that the raw data was cast from 64-bit double data to 32-bit float for
 
 ## MATLAB to ImgLib2 bridge functions
 
-The exacts method in `ArrayImgs` depend on the native type you want to use, so you would have to deal with all possible cases. But there is already some [MATLAB](/scripting/matlab) functions in Fiji that does that in the `scripts` folder of your Fiji installation: {% include github repo='fiji' path='scripts/copytoImg.m' label='copytoImg' %} and {% include github repo='fiji' path='scripts/copytoImgPlus.m' label='copytoImgPlus' %}. You need therefore to add `scripts` to your [MATLAB](/scripting/matlab) path, but this is most likely already done since it also contains `Miji` which you need to call already.
+The exacts method in `ArrayImgs` depend on the native type you want to use, so you would have to deal with all possible cases. But there is already some [MATLAB](/scripting/matlab) functions in Fiji that does that in the `scripts` folder of your Fiji installation: {% include github repo='fiji' branch='master' path='scripts/copytoImg.m' label='copytoImg' %} and {% include github repo='fiji' branch='master' path='scripts/copytoImgPlus.m' label='copytoImgPlus' %}. You need therefore to add `scripts` to your [MATLAB](/scripting/matlab) path, but this is most likely already done since it also contains `Miji` which you need to call already.
 
 The first function generates a plain `Img`. The second one generates and `ImgPlus` which allows you specifying the spatial calibration, image name and axis types. Check the help of these functions for details.
 
@@ -95,7 +95,7 @@ But when we call the `getCurrentStorageArray` method, we retrieve this internal 
     >> K = reshape(J, size(X'));
     >> imshow(K')
 
-But of course, there is a [MATLAB](/scripting/matlab) function that does all of this for you, and that you can also find in the scripts folder of your Fiji installation: {% include github repo='fiji' path='scripts/copytoMatlab.m' label='copytoMatlab' %}.
+But of course, there is a [MATLAB](/scripting/matlab) function that does all of this for you, and that you can also find in the scripts folder of your Fiji installation: {% include github repo='fiji' branch='master' path='scripts/copytoMatlab.m' label='copytoMatlab' %}.
 
 ## MATLAB arrays are not shared
 

@@ -6,7 +6,7 @@ categories: []
 
 
 {% capture source%}
-{% include github org='imagej' repo='imagej-plugins-commands' source='net/imagej/plugins/commands/upload/SampleImageUploader.java' %}
+{% include github org='imagej' repo='imagej-plugins-commands' branch='master' source='net/imagej/plugins/commands/upload/SampleImageUploader.java' %}
 {% endcapture %}
 {% include info-box software='ImageJ' name='Upload Sample Image' maintainer='Johannes Schindelin' author='Johannes Schindelin' source=source released='2009-06-11' latest-version='2014-07-01' status='stable' category='[Plugins](/plugin-index)' website='' %}== Upload Sample Image ==
 

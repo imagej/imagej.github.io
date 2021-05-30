@@ -422,7 +422,7 @@ It is important to note here that the cost functions we use is the square distan
 
 #### Implementation
 
-The code can be found on {% include github org='fiji' repo='TrackMate' path='/src/main/java/fiji/plugin/trackmate/tracking/kalman/KalmanTracker.java' %}. We now repeat the section above in pseudo-language. When you see the word <b>link</b> below, this means:
+The code can be found on {% include github org='fiji' repo='TrackMate' branch='master' path='/src/main/java/fiji/plugin/trackmate/tracking/kalman/KalmanTracker.java' %}. We now repeat the section above in pseudo-language. When you see the word <b>link</b> below, this means:
 
 1.  Take all the source detections in frame t and the target detections in frame t+1.
 2.  Compute the costs for all possible physical assignment (potential links) between source and target detections and store them in the cost matrix.

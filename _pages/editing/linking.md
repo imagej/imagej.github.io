@@ -25,10 +25,10 @@ This page demonstrates how to link to certain special classes of external conten
 Use `path` to link to a file off the repository root:
 
 {% capture github-path-code %}
-{% raw %}{% include github path='WELCOME.md' %}{% endraw %}
+{% raw %}{% include github branch='master' path='WELCOME.md' %}{% endraw %}
 {% endcapture %}
 {% capture github-path-result %}
-{% include github path='WELCOME.md' %}
+{% include github branch='master' path='WELCOME.md' %}
 {% endcapture %}
 {% include code-example code=github-path-code result=github-path-result %}
 
@@ -36,10 +36,10 @@ Use `source` to link to a source file within the repository's
 `src/main/java` subtree:
 
 {% capture github-source-code %}
-{% raw %}{% include github source='net/imagej/ImageJ.java' %}{% endraw %}
+{% raw %}{% include github branch='master' source='net/imagej/ImageJ.java' %}{% endraw %}
 {% endcapture %}
 {% capture github-source-result %}
-{% include github source='net/imagej/ImageJ.java' %}
+{% include github branch='master' source='net/imagej/ImageJ.java' %}
 {% endcapture %}
 {% include code-example code=github-source-code result=github-source-result %}
 
@@ -47,10 +47,10 @@ Use `org` and `repo` to link to a different repository than
 `imagej/imagej`:
 
 {% capture github-org-repo-code %}
-{% raw %}{% include github org='fiji' repo='TrackMate' path='README.md' %}{% endraw %}
+{% raw %}{% include github org='fiji' repo='TrackMate' branch='master' path='README.md' %}{% endraw %}
 {% endcapture %}
 {% capture github-org-repo-result %}
-{% include github org='fiji' repo='TrackMate' path='README.md' %}
+{% include github org='fiji' repo='TrackMate' branch='master' path='README.md' %}
 {% endcapture %}
 {% include code-example code=github-org-repo-code result=github-org-repo-result %}
 
@@ -58,11 +58,11 @@ You can give just a `repo` (or just an `org`), and it will be used for
 both `org` and `repo`:
 
 {% capture github-org-repo-2-code %}
-{% raw %}{% include github repo='fiji'
+{% raw %}{% include github repo='fiji' branch='master'
   path='plugins/Examples/Fiji_Cube.ijm' %}{% endraw %}
 {% endcapture %}
 {% capture github-org-repo-2-result %}
-{% include github repo='fiji'
+{% include github repo='fiji' branch='master'
   path='plugins/Examples/Fiji_Cube.ijm' %}
 {% endcapture %}
 {% include code-example code=github-org-repo-2-code result=github-org-repo-2-result %}
@@ -78,7 +78,7 @@ repository as a whole:
 {% endcapture %}
 {% include code-example code=github-whole-repo-code result=github-whole-repo-result %}
 
-Use `tag` to specify a tag (rather than `master`):
+Use `branch` or `tag` to specify a branch or tag (rather than `main`):
 
 {% capture github-tag-code %}
 {% raw %}{% include github tag='imagej-2.0.0-beta-7.9'
@@ -129,12 +129,12 @@ or {% include github pr='88' label='imagej#88' %}
 Use `label` to override the label:
 
 {% capture github-label-code %}
-{% raw %}{% include github repo='fiji'
+{% raw %}{% include github repo='fiji' branch='master'
   path='plugins/Examples/Fiji_Logo_3D.js'
   label='Fiji...in 3D!' %}{% endraw %}
 {% endcapture %}
 {% capture github-label-result %}
-{% include github repo='fiji'
+{% include github repo='fiji' branch='master'
   path='plugins/Examples/Fiji_Logo_3D.js'
   label='Fiji...in 3D!' %}
 {% endcapture %}

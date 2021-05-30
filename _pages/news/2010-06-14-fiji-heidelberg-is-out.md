@@ -359,7 +359,7 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 <!-- -->
 
--   The [WEKA library](/develop/using-weka) is now part of Fiji; the {% include github org='fiji' repo='fiji-compat' source='fiji/FijiClassLoader.java' label='FijiClassLoader' %} is now an instance of URLClassLoader just because of that (thanks for Verena Kaynig, Albert Cardona and Ignacio Arganda-Carreras for the prodding).
+-   The [WEKA library](/develop/using-weka) is now part of Fiji; the {% include github org='fiji' repo='fiji-compat' branch='master' source='fiji/FijiClassLoader.java' label='FijiClassLoader' %} is now an instance of URLClassLoader just because of that (thanks for Verena Kaynig, Albert Cardona and Ignacio Arganda-Carreras for the prodding).
 
 <!-- -->
 
@@ -403,7 +403,7 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 <!-- -->
 
--   Both *plugins/\*.jar* and *jars/\*.jar* are loaded via the {% include github org='fiji' repo='fiji-compat' source='fiji/FijiClassLoader.java' label='FijiClassLoader' %} now, which allows *.jar* files from *jars/* to call functions in *.jar* files from *plugins/* (notable exception: *jars/ij.jar* and *jars/Fiji.jar*).
+-   Both *plugins/\*.jar* and *jars/\*.jar* are loaded via the {% include github org='fiji' repo='fiji-compat' branch='master' source='fiji/FijiClassLoader.java' label='FijiClassLoader' %} now, which allows *.jar* files from *jars/* to call functions in *.jar* files from *plugins/* (notable exception: *jars/ij.jar* and *jars/Fiji.jar*).
 
 <!-- -->
 

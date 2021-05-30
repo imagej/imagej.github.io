@@ -10,7 +10,7 @@ categories: [Tutorials]
 {% endcapture %}
 
 {% capture source%}
-{% include github org='fiji' repo='VIB' source='Moving\_Least\_Squares.java' %}
+{% include github org='fiji' repo='VIB' branch='master' source='Moving\_Least\_Squares.java' %}
 {% endcapture %}
 {% include info-box name='Moving Least Squares registration' software='ImageJ' author=author maintainer='Johannes Schindelin' source=source released='2006/10/05' %}
 

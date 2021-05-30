@@ -24,7 +24,7 @@ Fiji is released as [open source](Open_source) under the [GNU General Public Lic
 
 Fiji builds on top of the [ImageJ2](/software/imagej2) core, which is licensed under the permissive [BSD 2-Clause license](/licensing/bsd).
 
-Plugins and other components have {% include github repo='fiji' path='LICENSES' label='their own licenses' %}.
+Plugins and other components have {% include github repo='fiji' branch='master' path='LICENSES' label='their own licenses' %}.
 
 See the [Licensing](/licensing) page for details.
 

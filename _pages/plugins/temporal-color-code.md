@@ -12,7 +12,7 @@ categories: [Color processing]
 {% endcapture %}
 
 {% capture source%}
-{% include github repo='fiji' path='plugins/Scripts/Image/Hyperstacks/Temporal-Color_Code.ijm' %}
+{% include github repo='fiji' branch='master' path='plugins/Scripts/Image/Hyperstacks/Temporal-Color_Code.ijm' %}
 {% endcapture %}
 {% include info-box name='Temporal-Color Code' software='Fiji' author=author maintainer=' [Kota Miura](http://cmci.embl.de) ([1](mailto:miura@embl.de))' source=source released='29 Nov 2010' latest-version='29 Nov 2010' status='beta' %}
 

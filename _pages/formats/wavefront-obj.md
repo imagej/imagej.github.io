@@ -5,7 +5,7 @@ title: Wavefront .OBJ ...
 
 
 {% capture source%}
-{% include github org='fiji' repo='VIB' source='marchingcubes/ExportMesh\_.java' %}
+{% include github org='fiji' repo='VIB' branch='master' source='marchingcubes/ExportMesh\_.java' %}
 {% endcapture %}
 {% include info-box software='ImageJ' name='ExportMesh\_' author='Benjamin Schmid, Mark Longair' maintainer='Mark Longair' filename='VIB\_.jar' source=source status='stable' %}
 

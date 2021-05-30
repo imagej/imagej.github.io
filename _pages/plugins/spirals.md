@@ -6,7 +6,7 @@ title: Spirals
 categories: Tutorials
 ---
 
-The {% include github repo='fiji' path='plugins/Scripts/File/Open\_Samples/Spirals\_.ijm' label='Spirals macro' %} shows an optical illusion demonstrating that our vision is optimized for non-quantitative measurements. It is designed to dispel the all-too-common idea that human beings are able to quantify color. The perception of colors depends highly on the context (i.e. the surrounding colors). If you ever hear a scientist say: <span style='font-size: 20px;'>"But I can see it!"</span> show them this image. It is an example of [Munker's illusion](http://engineering.utep.edu/novick/colors/).
+The {% include github repo='fiji' branch='master' path='plugins/Scripts/File/Open\_Samples/Spirals\_.ijm' label='Spirals macro' %} shows an optical illusion demonstrating that our vision is optimized for non-quantitative measurements. It is designed to dispel the all-too-common idea that human beings are able to quantify color. The perception of colors depends highly on the context (i.e. the surrounding colors). If you ever hear a scientist say: <span style='font-size: 20px;'>"But I can see it!"</span> show them this image. It is an example of [Munker's illusion](http://engineering.utep.edu/novick/colors/).
 
 ![](/media/spiralsrgy.png)
 

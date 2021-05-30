@@ -10,11 +10,11 @@ categories: [Scripting,Analysis]
 {% endcapture %}
 
 {% capture filename%}
-{% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/Find\_Peaks.bsh' %}
+{% include github org='tferr' repo='Scripts' branch='master' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/Find\_Peaks.bsh' %}
 {% endcapture %}
 
 {% capture source%}
-{% include github org='tferr' repo='Scripts' path='README.md\#data-analysis' %}
+{% include github org='tferr' repo='Scripts' branch='master' path='README.md\#data-analysis' %}
 {% endcapture %}
 {% include info-box software='ImageJ/Fiji' name='Find Peaks' maintainer='[ BAR update site](/plugins/bar)' author=author filename=filename source=source released='February 2014' category='[Analysis](/plugin-index#analysis), [Scripting](/plugin-index#scripting), [Plugins](/plugin-index)' %}
 

@@ -36,7 +36,7 @@ Run {% include bc path='Help|Update...'%} and choose *Manage update sites*. Acti
 
 ## Description
 
-BAR files are accessible through a dedicated top-level menu subdivided in task-oriented categories. All routines should be documented on {% include github org='tferr' repo='Scripts' path='README.md\#ij-bar' label='GitHub' %}.
+BAR files are accessible through a dedicated top-level menu subdivided in task-oriented categories. All routines should be documented on {% include github org='tferr' repo='Scripts' branch='master' path='README.md\#ij-bar' label='GitHub' %}.
 
 Some of the scripts have a dedicated documentation page, others feature built-in help, while a handful were deemed too simple to require dedicated instructions. Nevertheless, all files contain useful commentary at the top of the source code file. **Remember:** You can open all the scripts using the [Shift key](#OpeningBAR).
 
@@ -44,37 +44,37 @@ Some of the scripts have a dedicated documentation page, others feature built-in
 
 [right\|Overview of BAR (v1.0.0)](File_BARsnapshot.png)
 
-{% include github org='tferr' repo='Scripts' path='README.md\#analysis' label='Analysis' %}<span id="Analysis"></span>  
-{% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Analysis/README.md\#log-dog-spot-counter' label='LoG-DoG Spot Counter' %}, {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Analysis/README.md\#multi-roi-profiler' label='Multi ROI Profiler' %}, {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Analysis/README.md\#multichannel-plot-profile' label='Multichannel Plot Profile' %}, {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Analysis/README.md\#multichannel-zt-axis-profile' label='Multichannel ZT-axis Profile' %}, {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Analysis/README.md\#smoothed-plot-profile' label='Smoothed Plot Profile' %}
+{% include github org='tferr' repo='Scripts' branch='master' path='README.md\#analysis' label='Analysis' %}<span id="Analysis"></span>  
+{% include github org='tferr' repo='Scripts' branch='master' path='BAR/src/main/resources/scripts/BAR/Analysis/README.md\#log-dog-spot-counter' label='LoG-DoG Spot Counter' %}, {% include github org='tferr' repo='Scripts' branch='master' path='BAR/src/main/resources/scripts/BAR/Analysis/README.md\#multi-roi-profiler' label='Multi ROI Profiler' %}, {% include github org='tferr' repo='Scripts' branch='master' path='BAR/src/main/resources/scripts/BAR/Analysis/README.md\#multichannel-plot-profile' label='Multichannel Plot Profile' %}, {% include github org='tferr' repo='Scripts' branch='master' path='BAR/src/main/resources/scripts/BAR/Analysis/README.md\#multichannel-zt-axis-profile' label='Multichannel ZT-axis Profile' %}, {% include github org='tferr' repo='Scripts' branch='master' path='BAR/src/main/resources/scripts/BAR/Analysis/README.md\#smoothed-plot-profile' label='Smoothed Plot Profile' %}
 
 <!-- -->
 
-{% include github org='tferr' repo='Scripts' path='README.md\#image-annotation' label='Annotation' %}<span id="Annotation"></span>  
-{% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Annotation/README.md\#combine-orthogonal-views' label='Combine Orthogonal Views' %}, {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Annotation/README.md\#cumulative-z-project' label='Cumulative Z Project' %}, {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Annotation/README.md\#roi-color-coder' label='ROI Color Coder' %}
+{% include github org='tferr' repo='Scripts' branch='master' path='README.md\#image-annotation' label='Annotation' %}<span id="Annotation"></span>  
+{% include github org='tferr' repo='Scripts' branch='master' path='BAR/src/main/resources/scripts/BAR/Annotation/README.md\#combine-orthogonal-views' label='Combine Orthogonal Views' %}, {% include github org='tferr' repo='Scripts' branch='master' path='BAR/src/main/resources/scripts/BAR/Annotation/README.md\#cumulative-z-project' label='Cumulative Z Project' %}, {% include github org='tferr' repo='Scripts' branch='master' path='BAR/src/main/resources/scripts/BAR/Annotation/README.md\#roi-color-coder' label='ROI Color Coder' %}
 
 <!-- -->
 
-{% include github org='tferr' repo='Scripts' path='README.md\#data-analysis' label='Data Analysis' %}<span id="Data_Analysis"></span>  
-{% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#create-boxplot' label='Create Boxplot' %}, {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#create-polar-plot' label='Create Polar Plot' %}, {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#distribution-plotter' label='Distribution Plotter' %}, [Find Peaks](/plugins/find-peaks), [Fit Polynomial](/plugins/sholl-analysis#complementary-tools), {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#interactive-plotting' label='Interactive Plotting' %}
+{% include github org='tferr' repo='Scripts' branch='master' path='README.md\#data-analysis' label='Data Analysis' %}<span id="Data_Analysis"></span>  
+{% include github org='tferr' repo='Scripts' branch='master' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#create-boxplot' label='Create Boxplot' %}, {% include github org='tferr' repo='Scripts' branch='master' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#create-polar-plot' label='Create Polar Plot' %}, {% include github org='tferr' repo='Scripts' branch='master' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#distribution-plotter' label='Distribution Plotter' %}, [Find Peaks](/plugins/find-peaks), [Fit Polynomial](/plugins/sholl-analysis#complementary-tools), {% include github org='tferr' repo='Scripts' branch='master' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#interactive-plotting' label='Interactive Plotting' %}
 
 <!-- -->
 
-{% include github org='tferr' repo='Scripts' path='README.md\#image-segmentation' label='Segmentation' %}<span id="/imaging/segmentation"></span>  
-{% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#shen-castan-edge-detector' label='Shen-Castan Edge Detector' %}, {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#apply-threshold-to-roi' label='Apply Threshold To ROI' %}, {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#clear-thresholded-pixels' label='Clear Thresholded Pixels' %}, {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#remove-isolated-pixels' label='Remove Isolated Pixels' %}, {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#threshold-from-background' label='Threshold From Background' %}, {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#wipe-background' label='Wipe Background' %}
+{% include github org='tferr' repo='Scripts' branch='master' path='README.md\#image-segmentation' label='Segmentation' %}<span id="/imaging/segmentation"></span>  
+{% include github org='tferr' repo='Scripts' branch='master' path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#shen-castan-edge-detector' label='Shen-Castan Edge Detector' %}, {% include github org='tferr' repo='Scripts' branch='master' path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#apply-threshold-to-roi' label='Apply Threshold To ROI' %}, {% include github org='tferr' repo='Scripts' branch='master' path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#clear-thresholded-pixels' label='Clear Thresholded Pixels' %}, {% include github org='tferr' repo='Scripts' branch='master' path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#remove-isolated-pixels' label='Remove Isolated Pixels' %}, {% include github org='tferr' repo='Scripts' branch='master' path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#threshold-from-background' label='Threshold From Background' %}, {% include github org='tferr' repo='Scripts' branch='master' path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#wipe-background' label='Wipe Background' %}
 
 <!-- -->
 
-{% include github org='tferr' repo='Scripts' path='README.md\#snippets' label='Snippets' %}, {% include github org='tferr' repo='Scripts' path='/lib\#lib' label='BAR lib' %}<span id="SnippetsList"> and {% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/tutorials/' label='Tutorials' %}</span>  
+{% include github org='tferr' repo='Scripts' branch='master' path='README.md\#snippets' label='Snippets' %}, {% include github org='tferr' repo='Scripts' branch='master' path='/lib\#lib' label='BAR lib' %}<span id="SnippetsList"> and {% include github org='tferr' repo='Scripts' branch='master' path='BAR/src/main/resources/tutorials/' label='Tutorials' %}</span>  
 Described in [Scripting BARs](#scripting-bars)
 
 <!-- -->
 
-{% include github org='tferr' repo='Scripts' path='README.md\#tools-and-toolsets' label='Tools and Toolsets' %}<span id="/develop/project-management"></span>  
-{% include github org='tferr' repo='Scripts' path='Tools/README.md\#calibration-menu' label='Calibration Menu' %}, {% include github org='tferr' repo='Scripts' path='Tools/README.md\#list-folder-menu' label='List Folder Menu' %}, {% include github org='tferr' repo='Scripts' path='Tools/README.md\#segment-profile-tool' label='Segment Profile' %}, {% include github org='tferr' repo='Scripts' path='Tools/README.md\#shortcuts-menu' label='Shortcuts Menu' %}, {% include github org='tferr' repo='Scripts' path='Tools/README.md\#roi-manager-tools' label='ROI Manager Tools' %}, {% include github org='tferr' repo='Scripts' path='Tools/README.md\#toolset-creator' label='Toolset Creator' %}
+{% include github org='tferr' repo='Scripts' branch='master' path='README.md\#tools-and-toolsets' label='Tools and Toolsets' %}<span id="/develop/project-management"></span>  
+{% include github org='tferr' repo='Scripts' branch='master' path='Tools/README.md\#calibration-menu' label='Calibration Menu' %}, {% include github org='tferr' repo='Scripts' branch='master' path='Tools/README.md\#list-folder-menu' label='List Folder Menu' %}, {% include github org='tferr' repo='Scripts' branch='master' path='Tools/README.md\#segment-profile-tool' label='Segment Profile' %}, {% include github org='tferr' repo='Scripts' branch='master' path='Tools/README.md\#shortcuts-menu' label='Shortcuts Menu' %}, {% include github org='tferr' repo='Scripts' branch='master' path='Tools/README.md\#roi-manager-tools' label='ROI Manager Tools' %}, {% include github org='tferr' repo='Scripts' branch='master' path='Tools/README.md\#toolset-creator' label='Toolset Creator' %}
 
 <!-- -->
 
-{% include github org='tferr' repo='Scripts' path='README.md\#utilities' label='Utilities' %}<span id="Utilities"></span>  
+{% include github org='tferr' repo='Scripts' branch='master' path='README.md\#utilities' label='Utilities' %}<span id="Utilities"></span>  
 [Commander](#Commander)
 
 ## Accessing BARs
@@ -160,7 +160,7 @@ BAR provides several utility methods that simplify the creation of \_\_\_SHADOW3
 
 ### BAR lib
 
-{% include github org='tferr' repo='Scripts' path='/lib/README.md\#lib' label='BAR libs' %} (stored in the */BAR/lib/* directory) are centralized libraries ([BeanShell](/scripting/beanshell), [IJM](/scripting/macro) and [Python](/scripting/jython), etc.) that can be shared across files. These libraries serve as scripting additions to [Snippets](#Snippets) and other routines.
+{% include github org='tferr' repo='Scripts' branch='master' path='/lib/README.md\#lib' label='BAR libs' %} (stored in the */BAR/lib/* directory) are centralized libraries ([BeanShell](/scripting/beanshell), [IJM](/scripting/macro) and [Python](/scripting/jython), etc.) that can be shared across files. These libraries serve as scripting additions to [Snippets](#Snippets) and other routines.
 
 Do you find yourself copy and pasting functions from one file to the other? Do you keep on writing the same lines of code? Do you have some key code written across different languages? Would you like to make side-by-side comparisons of scripting languages? Then, BAR lib is for you.
 
@@ -175,7 +175,7 @@ The idea is quite simple: Reusable functions and methods are written to a lib fi
     lib = new BARlib();
     lib.confirmLoading();
 
-Run it in the [Script Editor](/scripting/script-editor) ({% include bc path='File|New|Script...'%}), and you should be greeted by a *"BAR lib successfully loaded"* message. Further details are provided on the {% include github org='tferr' repo='Scripts' path='/lib\#lib' label='GitHub lib page' %} and on the documentation of the [bar.Utils](http://tferr.github.io/Scripts/apidocs/index.html?bar/Utils.html) class.
+Run it in the [Script Editor](/scripting/script-editor) ({% include bc path='File|New|Script...'%}), and you should be greeted by a *"BAR lib successfully loaded"* message. Further details are provided on the {% include github org='tferr' repo='Scripts' branch='master' path='/lib\#lib' label='GitHub lib page' %} and on the documentation of the [bar.Utils](http://tferr.github.io/Scripts/apidocs/index.html?bar/Utils.html) class.
 
 ### Batch Processors
 
@@ -185,13 +185,13 @@ Some of the scripts included in */BAR/Snippets/* are scripts that apply a [commo
 2.  Apply a series of operations to individual files of matched extension(s)
 3.  Save processed files as TIFF to a dedicated directory, so that no files are overwritten
 
-Typically each of these tasks is handled by separated functions so only the function processing single files needs to be edited. In the {% include github org='tferr' repo='Scripts' path='Snippets/Process\_Folder\_PY.py' label='Python' %} and {% include github org='tferr' repo='Scripts' path='Snippets/Process\_Folder\_IJM.ijm' label='IJM' %} implementation, this processing function is called `myRoutines()`. Note that when editing `myRoutines()` we do not need to worry about opening, closing or saving the image without overriding the original file, because those tasks are already performed by other functions. <span id="ProcessingFunction">
+Typically each of these tasks is handled by separated functions so only the function processing single files needs to be edited. In the {% include github org='tferr' repo='Scripts' branch='master' path='Snippets/Process\_Folder\_PY.py' label='Python' %} and {% include github org='tferr' repo='Scripts' branch='master' path='Snippets/Process\_Folder\_IJM.ijm' label='IJM' %} implementation, this processing function is called `myRoutines()`. Note that when editing `myRoutines()` we do not need to worry about opening, closing or saving the image without overriding the original file, because those tasks are already performed by other functions. <span id="ProcessingFunction">
 
 #### Processing Functions
 
 The file-processing function can include your own code, code generated by the Macro Recorder ({% include bc path="Plugins | Macros | Record..." %}), pre-existing snippets or methods/functions defined in a common [BAR lib](#lib) file.
 
-IJM example, running a macro and a python script in the *Snippets/* (another [example below](#IJMlib) exemplifies how to call a macro function from {% include github org='tferr' repo='Scripts' path='lib/BARlib.ijm' label='BARlib.ijm' %}):
+IJM example, running a macro and a python script in the *Snippets/* (another [example below](#IJMlib) exemplifies how to call a macro function from {% include github org='tferr' repo='Scripts' branch='master' path='lib/BARlib.ijm' label='BARlib.ijm' %}):
 
     function myRoutines() {
         snippetsPath = call("bar.Utils.getSnippetsDir");
@@ -199,7 +199,7 @@ IJM example, running a macro and a python script in the *Snippets/* (another [ex
         eval("python", File.openAsString(snippetsPath + "Median_Filter.py"));
     }
 
-Jython example, demonstrating how to 1) load [BAR lib](#lib) (in this case {% include github org='tferr' repo='Scripts' path='lib/BARlib.py' label='BARlib.py' %}, using code generated by {% include bc path="Bar | Snippets | New Snippet..." %}) and 2) how to run a Snippet (in this case {% include github org='tferr' repo='Scripts' path='Snippets/Median\_Filter.py' label='Median\_Filter.py' %}):
+Jython example, demonstrating how to 1) load [BAR lib](#lib) (in this case {% include github org='tferr' repo='Scripts' branch='master' path='lib/BARlib.py' label='BARlib.py' %}, using code generated by {% include bc path="Bar | Snippets | New Snippet..." %}) and 2) how to run a Snippet (in this case {% include github org='tferr' repo='Scripts' branch='master' path='Snippets/Median\_Filter.py' label='Median\_Filter.py' %}):
 
     def myRoutines():
         import sys, ij, bar
@@ -221,13 +221,13 @@ Jython example, demonstrating how to 1) load [BAR lib](#lib) (in this case {% in
 {% capture tip%}
 Note also that there is an \_\_\_SHADOW3\_\_\_ (but less flexible) way to \_\_\_SHADOW4\_\_\_ a folder: The built-in {% include bc path="Process | Batch | Macro..." %} \_\_\_SHADOW5\_\_\_.
 
-In this case, you only need to paste the contents of your `myRoutines()` function into the text area of the command. However, by default, {% include bc path="Process | Batch | Macro..." %} assumes you want to process *all* the files in a directory. If that is not the case, i.e., you want to restrict the processing to certain file types, you will have to use {% include wikipedia title='Regular expression' text='regex'%} to instruct the built-in command on the file extensions to be considered (see \_\_\_SHADOW6\_\_\_"s built-in help for several regex examples). E.g., typing the following in the *File name contains* field of {% include bc path="Process | Batch | Macro..." %}, would restrict processing to `.tif`, `.stk` and `.oib` files (the default extensions specified in the `validExtension()` function of {% include github org='tferr' repo='Scripts' path='Snippets/Process\_Folder\_IJM.ijm' label='Process\_Folder\_IJM.ijm' %}):
+In this case, you only need to paste the contents of your `myRoutines()` function into the text area of the command. However, by default, {% include bc path="Process | Batch | Macro..." %} assumes you want to process *all* the files in a directory. If that is not the case, i.e., you want to restrict the processing to certain file types, you will have to use {% include wikipedia title='Regular expression' text='regex'%} to instruct the built-in command on the file extensions to be considered (see \_\_\_SHADOW6\_\_\_"s built-in help for several regex examples). E.g., typing the following in the *File name contains* field of {% include bc path="Process | Batch | Macro..." %}, would restrict processing to `.tif`, `.stk` and `.oib` files (the default extensions specified in the `validExtension()` function of {% include github org='tferr' repo='Scripts' branch='master' path='Snippets/Process\_Folder\_IJM.ijm' label='Process\_Folder\_IJM.ijm' %}):
 
     (.*(\.(?i)(tif
 {% endcapture %}
 {% include notice icon="tip" content=tip %}
     === Example: Batch Randomization of Filenames ===
-    The default task of both the Python and IJM implementation of {% include github org='tferr' repo='Scripts' path='Snippets/README.md#batch-processors' label='BAR' %} *Process Folder* scripts is filename randomization: 1) They copy images from one folder to another, 2) Rename their filenames using a random string and 3) Log changes to a CSV table (so that id of randomized filename can be traced back to the original file). This approach allows for blind analyses of datasets that are sensitive to user interpretation. Below are the descriptions of {% include github org='tferr' repo='Scripts' path='Snippets/Process_Folder_PY.py' label='Process_Folder_PY.py' %} and {% include github org='tferr' repo='Scripts' path='Snippets/Process_Folder_IJM.ijm' label='Process_Folder_IJM.ijm' %}.
+    The default task of both the Python and IJM implementation of {% include github org='tferr' repo='Scripts' branch='master' path='Snippets/README.md#batch-processors' label='BAR' %} *Process Folder* scripts is filename randomization: 1) They copy images from one folder to another, 2) Rename their filenames using a random string and 3) Log changes to a CSV table (so that id of randomized filename can be traced back to the original file). This approach allows for blind analyses of datasets that are sensitive to user interpretation. Below are the descriptions of {% include github org='tferr' repo='Scripts' branch='master' path='Snippets/Process_Folder_PY.py' label='Process_Folder_PY.py' %} and {% include github org='tferr' repo='Scripts' branch='master' path='Snippets/Process_Folder_IJM.ijm' label='Process_Folder_IJM.ijm' %}.
 
     ===== Python =====
     In Python we can use the [http://docs.python.org/library/uuid.html uuid module] to generate a random filename (rational [http://stackoverflow.com/a/10501355 here]). The result is an impressively succinct function:
@@ -238,7 +238,7 @@ In this case, you only need to paste the contents of your `myRoutines()` functio
 
 In more detail: Pass the active image - an [ImagePlus](http://javadoc.imagej.net/ImageJ1/ij/ImagePlus.htm) object - to `myRoutines()`. Retrieve a random {% include wikipedia title='Universally unique identifier' text='UUID'%} (e.g., `f7dfd6a9-f745-42c2-8874-0af67380c3f5`), convert it to a string, then use that string to rename the image using the [setTitle()](http://javadoc.imagej.net/ImageJ1/ij/ImagePlus.html#setTitle(java.lang.String)) method in `ij.ImagePlus`.
 
-But because [BAR libs](#lib) already contain such a function, we can just call the `randomString()` function in {% include github org='tferr' repo='Scripts' path='lib/BARlib.py' label='BARlib.py' %}, after loading the file:
+But because [BAR libs](#lib) already contain such a function, we can just call the `randomString()` function in {% include github org='tferr' repo='Scripts' branch='master' path='lib/BARlib.py' label='BARlib.py' %}, after loading the file:
 
     def myRoutines(image):
         import sys, bar
@@ -280,7 +280,7 @@ As such, we only need to add the following, every time a file is processed:
 
     csvWriter.writerow([old_filename, new_filename])
 
-Visit the {% include github org='tferr' repo='Scripts' label='BAR repository' %} to check how the assembled script ({% include github org='tferr' repo='Scripts' path='Snippets/Process\_Folder\_PY.py?raw=true' label='Process\_Folder\_PY.py' %}) {% include github org='tferr' repo='Scripts' path='Snippets/Process\_Folder\_PY.py' label='looks like' %}.
+Visit the {% include github org='tferr' repo='Scripts' label='BAR repository' %} to check how the assembled script ({% include github org='tferr' repo='Scripts' branch='master' path='Snippets/Process\_Folder\_PY.py?raw=true' label='Process\_Folder\_PY.py' %}) {% include github org='tferr' repo='Scripts' branch='master' path='Snippets/Process\_Folder\_PY.py' label='looks like' %}.
 
 #### IJ Macro Language
 
@@ -299,7 +299,7 @@ or even shorter:
 
 But discovering which methods can be called by the IJM language may not be trivial. Typically, it will require access to an [IDE](/develop/ides) and some Java experience. So what about writing an ad-hoc function?
 
-The approach used in {% include github org='tferr' repo='Scripts' path='Snippets/Process\_Folder\_IJM.ijm' label='Process\_Folder\_IJM.ijm' %} is the following: 1) Take a template string containing the characters A-Z and digits 0-9; 2) Pick a random position between the first and last character of the string template. Extract the character at that position; 3) Repeat the last step several times, assembling extracted characters into a concatenated string:
+The approach used in {% include github org='tferr' repo='Scripts' branch='master' path='Snippets/Process\_Folder\_IJM.ijm' label='Process\_Folder\_IJM.ijm' %} is the following: 1) Take a template string containing the characters A-Z and digits 0-9; 2) Pick a random position between the first and last character of the string template. Extract the character at that position; 3) Repeat the last step several times, assembling extracted characters into a concatenated string:
 
     function randomString() {
         // We define the template and measure the number of positions
@@ -332,7 +332,7 @@ This would create e.g., `NHH6KG30C9`. However, a lengthier filename may be requi
         return string;
     }
 
-As such, calling `randomString(50, true)` would produce e.g., `E_ZXTQO_8E9XM_45WG7_8S39`. As with the [Python](#Python) implementation, we could also use [BAR lib](#lib) (in this case {% include github org='tferr' repo='Scripts' path='lib/BARlib.ijm' label='BARlib.ijm' %}). First, we need to load the file [before running our macro](#faq:ijm-lib), using the code generated by {% include bc path="Bar | Snippets | New Snippet" %}:<span id="IJMlib"></span>
+As such, calling `randomString(50, true)` would produce e.g., `E_ZXTQO_8E9XM_45WG7_8S39`. As with the [Python](#Python) implementation, we could also use [BAR lib](#lib) (in this case {% include github org='tferr' repo='Scripts' branch='master' path='lib/BARlib.ijm' label='BARlib.ijm' %}). First, we need to load the file [before running our macro](#faq:ijm-lib), using the code generated by {% include bc path="Bar | Snippets | New Snippet" %}:<span id="IJMlib"></span>
 
     libPath = call('bar.Utils.getLibDir') + 'BARlib.ijm';
     libContents = File.openAsString(libPath);
@@ -345,7 +345,7 @@ Once *lib/BARlib.ijm* is in memory, the function can be called directly:
 
     rename( randomString(50, true) );
 
-Now that we are capable of generating a random filename, we just need to monitor filename changes. We could use the [print()](/ij/developer/macro/functions.html#print) function (that outputs to the Log window), or create a two-column table describing the changes. Here is how the final {% include github org='tferr' repo='Scripts' path='Snippets/Process\_Folder\_IJM.ijm' label='Process\_Folder\_IJM.ijm' %} looks like:
+Now that we are capable of generating a random filename, we just need to monitor filename changes. We could use the [print()](/ij/developer/macro/functions.html#print) function (that outputs to the Log window), or create a two-column table describing the changes. Here is how the final {% include github org='tferr' repo='Scripts' branch='master' path='Snippets/Process\_Folder\_IJM.ijm' label='Process\_Folder\_IJM.ijm' %} looks like:
 
     function myRoutines() {
 
@@ -371,17 +371,17 @@ The motivation behind bar is quite simple: To collect snippets of code that can 
 <!-- -->
 
 Will I find BAR useful?  
-{% include github org='tferr' repo='Scripts' path='README.md\#citations' label='Probably' %}. But it is likely that you will need to delve a bit into the [BAR philosophy](#scripting-bars).
+{% include github org='tferr' repo='Scripts' branch='master' path='README.md\#citations' label='Probably' %}. But it is likely that you will need to delve a bit into the [BAR philosophy](#scripting-bars).
 
 <!-- -->
 
 Can I contribute to BAR?  
-Yes, please do! If you have some suggestions on how to improve it, do {% include github org='tferr' repo='Scripts' path='README.md\#help' label='let us know' %}.
+Yes, please do! If you have some suggestions on how to improve it, do {% include github org='tferr' repo='Scripts' branch='master' path='README.md\#help' label='let us know' %}.
 
 <!-- -->
 
 Nothing happens when I run a BAR. What's going on?  
-In a case of premature termination BARs tend to exit rather silently. The best way to have insights on an unexpected error is to run it directly from the [Script Editor](/scripting/script-editor): Open the script by holding {% include key key='Shift' %} while selecting it from the {% include bc path="BAR |" %} menu, press *Run* and have a look at the editors' s console, where all sort of useful messages will be printed to. Do {% include github org='tferr' repo='Scripts' path='README.md\#help' label='let us know' %} if you have found a bug.
+In a case of premature termination BARs tend to exit rather silently. The best way to have insights on an unexpected error is to run it directly from the [Script Editor](/scripting/script-editor): Open the script by holding {% include key key='Shift' %} while selecting it from the {% include bc path="BAR |" %} menu, press *Run* and have a look at the editors' s console, where all sort of useful messages will be printed to. Do {% include github org='tferr' repo='Scripts' branch='master' path='README.md\#help' label='let us know' %} if you have found a bug.
 
 <!-- -->
 

@@ -461,11 +461,11 @@ Thresholding, shape-based masking and edge-detection routines (see [full BAR lis
 Data analysis tools:  
 **[Find Peaks](/plugins/find-peaks):** Retrieves local maxima under several filtering options such as peak amplitude, peak height and peak width. Can be used to retrieve secondary sites of branch density
 
-**{% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#fit-polynomial' label='Fit Polynomial' %}:** Fits a polynomial of any degree to sampled data. Features an heuristic algorithm for guessing a polynomial "best fit". Expands the built-in repertoire of polynomial fits up to 50<sup>th</sup> order functions.
+**{% include github org='tferr' repo='Scripts' branch='master' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#fit-polynomial' label='Fit Polynomial' %}:** Fits a polynomial of any degree to sampled data. Features an heuristic algorithm for guessing a polynomial "best fit". Expands the built-in repertoire of polynomial fits up to 50<sup>th</sup> order functions.
 
-**{% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#create-boxplot' label='Create Boxplot' %}:** Allows direct comparison of metrics between groups or sets of data (specially useful when tagging images with the *Comment* field in {% include bc path='Analysis|Sholl|Metrics & Options...' color='white'%})
+**{% include github org='tferr' repo='Scripts' branch='master' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#create-boxplot' label='Create Boxplot' %}:** Allows direct comparison of metrics between groups or sets of data (specially useful when tagging images with the *Comment* field in {% include bc path='Analysis|Sholl|Metrics & Options...' color='white'%})
 
-**{% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#interactive-plotting' label='Interactive Plotting' %}:** Whole-purpose routine that plots data from imported spreadsheets.
+**{% include github org='tferr' repo='Scripts' branch='master' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#interactive-plotting' label='Interactive Plotting' %}:** Whole-purpose routine that plots data from imported spreadsheets.
 
 ## Pre-processing
 
@@ -936,7 +936,7 @@ It is likely that frequent interactions with the dialog prompt(s) (from which th
 <dl>
 <dd markdown="1">
 
-Report it in the [ImageJ Forum](http://forum.imagej.net) or file an [issue](https://github.com/tferr/ASA/issues) on GitHub. Don't forget to include the [steps needed to reproduce the problem](/discuss/bugs#bug-reporting-best-practices). You may also want to check the {% include github org='tferr' repo='ASA' path='Notes.md\#development-builds' label='release notes' %} for the latest [development version](http://jenkins.imagej.net/job/Sholl-Analysis/lastBuild/) to see if the issue has meanwhile been addressed.
+Report it in the [ImageJ Forum](http://forum.imagej.net) or file an [issue](https://github.com/tferr/ASA/issues) on GitHub. Don't forget to include the [steps needed to reproduce the problem](/discuss/bugs#bug-reporting-best-practices). You may also want to check the {% include github org='tferr' repo='ASA' branch='master' path='Notes.md\#development-builds' label='release notes' %} for the latest [development version](http://jenkins.imagej.net/job/Sholl-Analysis/lastBuild/) to see if the issue has meanwhile been addressed.
 
 </dd>
 </dl>
@@ -944,7 +944,7 @@ Report it in the [ImageJ Forum](http://forum.imagej.net) or file an [issue](http
 
 ## Release Notes and Pre-releases
 
-Releases notes are available on {% include github org='tferr' repo='ASA' path='Notes.md\#release-notes-for-sholl-analysis' label='Github' %}. If you do not mind unstable software, {% include github org='tferr' repo='ASA' path='Notes.md\#development-builds' label='development builds' %} may be found [here](http://jenkins.imagej.net/job/Sholl-Analysis). Once new features mature and no major issues are found these development versions will be made available, as usual, through the [Updater](/plugins/updater).
+Releases notes are available on {% include github org='tferr' repo='ASA' branch='master' path='Notes.md\#release-notes-for-sholl-analysis' label='Github' %}. If you do not mind unstable software, {% include github org='tferr' repo='ASA' branch='master' path='Notes.md\#development-builds' label='development builds' %} may be found [here](http://jenkins.imagej.net/job/Sholl-Analysis). Once new features mature and no major issues are found these development versions will be made available, as usual, through the [Updater](/plugins/updater).
 
 ## Related Resources
 

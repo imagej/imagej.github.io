@@ -5,7 +5,7 @@ title: Mask Of Nearby Points
 
 
 {% capture source%}
-{% include github org='fiji' repo='VIB' source='util/util/Mask\_Of\_Nearby\_Points.java' %}
+{% include github org='fiji' repo='VIB' branch='master' source='util/util/Mask\_Of\_Nearby\_Points.java' %}
 {% endcapture %}
 {% include info-box software='ImageJ' name='Mask Of Nearby Points' author='Mark Longair' maintainer='Mark Longair' filename='VIB\_.jar' source=source status='stable' %}
 

@@ -1872,19 +1872,19 @@ Notice, though, that <b>you don't need to do the .jar packaging at all</b>. Just
 
 # Jython examples in Fiji
 
--   {% include github repo='fiji' path='plugins/Examples/Find\_Dimension\_of\_Raw\_Image.py' label='Find Dimension of Raw Image' %}
--   {% include github repo='fiji' path='plugins/Examples/Edit\_LUT\_As\_Text.py' label='Edit LUT As Text' %}
--   {% include github repo='fiji' path='plugins/Examples/Delayed\_Snapshot.py' label='Delayed Snapshot' %}
--   {% include github repo='fiji' path='plugins/Examples/Command\_Launchers/Command\_Launcher\_Python.py' label='Command Launcher GUI' %}
--   {% include github repo='fiji' path='plugins/Examples/list\_all\_threads.py' label='List all threads' %}
--   {% include github repo='fiji' path='plugins/Examples/chess\_.py' label='Chess' %}
+-   {% include github repo='fiji' branch='master' path='plugins/Examples/Find\_Dimension\_of\_Raw\_Image.py' label='Find Dimension of Raw Image' %}
+-   {% include github repo='fiji' branch='master' path='plugins/Examples/Edit\_LUT\_As\_Text.py' label='Edit LUT As Text' %}
+-   {% include github repo='fiji' branch='master' path='plugins/Examples/Delayed\_Snapshot.py' label='Delayed Snapshot' %}
+-   {% include github repo='fiji' branch='master' path='plugins/Examples/Command\_Launchers/Command\_Launcher\_Python.py' label='Command Launcher GUI' %}
+-   {% include github repo='fiji' branch='master' path='plugins/Examples/list\_all\_threads.py' label='List all threads' %}
+-   {% include github repo='fiji' branch='master' path='plugins/Examples/chess\_.py' label='Chess' %}
 
 <!-- -->
 
--   {% include github repo='fiji' path='plugins/Examples/plugins/trakem2\_Example\_Scripts/extract\_stack\_under\_arealist.py' label='Extract stack under AreaList' %} in TrakEM2.
--   {% include github repo='fiji' path='plugins/Examples/plugins/trakem2\_Example\_Scripts/T2\_set\_all\_transforms\_to\_identity.py' label='Set all transforms to identity' %} for TrakEM2 objects.
--   {% include github repo='fiji' path='plugins/Examples/plugins/trakem2\_Example\_Scripts/T2\_Select\_All.py' label='Select All' %} objects in TrakEM2.
--   {% include github repo='fiji' path='plugins/Examples/plugins/trakem2\_Example\_Scripts/Measure\_AreaLists.py' label='Measure AreaList' %} in TrakEM2.
+-   {% include github repo='fiji' branch='master' path='plugins/Examples/plugins/trakem2\_Example\_Scripts/extract\_stack\_under\_arealist.py' label='Extract stack under AreaList' %} in TrakEM2.
+-   {% include github repo='fiji' branch='master' path='plugins/Examples/plugins/trakem2\_Example\_Scripts/T2\_set\_all\_transforms\_to\_identity.py' label='Set all transforms to identity' %} for TrakEM2 objects.
+-   {% include github repo='fiji' branch='master' path='plugins/Examples/plugins/trakem2\_Example\_Scripts/T2\_Select\_All.py' label='Select All' %} objects in TrakEM2.
+-   {% include github repo='fiji' branch='master' path='plugins/Examples/plugins/trakem2\_Example\_Scripts/Measure\_AreaLists.py' label='Measure AreaList' %} in TrakEM2.
 
 # See also
 

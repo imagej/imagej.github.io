@@ -6,7 +6,7 @@ categories: [Image annotation]
 
 
 {% capture source%}
-{% include github org='fiji' repo='cookbook' source='Copy\_Pixel\_Size.java' %}
+{% include github org='fiji' repo='cookbook' branch='master' source='Copy\_Pixel\_Size.java' %}
 {% endcapture %}
 {% include info-box software='ImageJ' name='Copy Pixel Size' author='J. Anthony Parker' source=source released='22 November 2001' status='stable' category='[Image annotation](/plugin-index#image-annotation)' website='http://www.med.harvard.edu/JPNM/ij/plugins/CopyPixelSize.html' %}== Purpose ==
 

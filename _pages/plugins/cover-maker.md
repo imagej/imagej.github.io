@@ -14,7 +14,7 @@ categories: [Tutorials]
 {% endcapture %}
 
 {% capture source%}
-{% include github repo='fiji' path='plugins/Examples/CoverMaker/Cover\_Maker.py' %}
+{% include github repo='fiji' branch='master' path='plugins/Examples/CoverMaker/Cover\_Maker.py' %}
 {% endcapture %}
 {% include info-box software='ImageJ' name='CoverMaker' maintainer=maintainer author=author source=source released='27/05/2012' latest-version='29/06/2012' status='active' category='[Plugins](/plugin-index)' website='' %}
 

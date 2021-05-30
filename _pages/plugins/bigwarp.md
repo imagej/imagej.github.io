@@ -21,7 +21,7 @@ the warp on-the-fly.
 
 BigWarp comes with Fiji. You can access it via
 {% include bc path="Plugins | BigDataViewer Big Warp" %}, or by modifying
-{% include github org='saalfeldlab' repo='bigwarp' path='scripts/bigwarp_fiji_demo.bsh' label='this example script' %}.
+{% include github org='saalfeldlab' repo='bigwarp' branch='master' path='scripts/bigwarp_fiji_demo.bsh' label='this example script' %}.
 If this is not visible in your installation, try updating Fiji with
 {% include bc path="Help Update..." %}.
 

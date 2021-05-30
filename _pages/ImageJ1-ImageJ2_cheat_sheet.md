@@ -211,4 +211,4 @@ public class ImageNormalizerIJ2Plugin implements Command {
 
 ## See also
 
-{% include github org="mpicbg-scicomp" repo="ij2course-images" path="slides/ij_legacy_cheetsheet.pdf" %}
+{% include github org="mpicbg-scicomp" repo="ij2course-images" branch='master' path="slides/ij_legacy_cheetsheet.pdf" %}

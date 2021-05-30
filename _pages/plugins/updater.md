@@ -116,7 +116,7 @@ If you do not have ImageJ yet, you can download [bootstrap.js](http://update.ima
 
     jrunscript bootstrap.js help
 
-This uses the **jrunscript** executable of your Java installation to run the Javascript file tracked in ImageJ's {% include github org='imagej' repo='imagej-updater' path='bin/bootstrap.js' label='source code repository' %}.
+This uses the **jrunscript** executable of your Java installation to run the Javascript file tracked in ImageJ's {% include github org='imagej' repo='imagej-updater' branch='master' path='bin/bootstrap.js' label='source code repository' %}.
 
 The `bootstrap.js` script was originally intended to fix broken [Fiji](/software/fiji) installations, and was subsequently enhanced to initialize the updater in an ImageJ 1.x-only directory -- or even from a complete fresh state.
 

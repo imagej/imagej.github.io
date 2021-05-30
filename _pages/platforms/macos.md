@@ -52,7 +52,7 @@ See also the [Frequently Asked Questions](/learn/faq) page.
 
 It is unfortunately no longer feasible to install Apple Java 6 on current versions of macOS. However, ImageJ should work OK with Java 8. If you have difficulties, please post on the [Image.sc Forum](https://forum.image.sc/).
 
-At any time, you can verify which Javas are installed on your system using {% include github org='ctrueden' repo='ctr-scripts' path='java-info' label='this script' %}.
+At any time, you can verify which Javas are installed on your system using {% include github org='ctrueden' repo='ctr-scripts' branch='master' path='java-info' label='this script' %}.
 
 ## How do I run ImageJ on Yosemite?
 

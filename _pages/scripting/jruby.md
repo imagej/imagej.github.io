@@ -219,7 +219,7 @@ or:
 image = get_image
 ```
 
-The "run" method may also be particularly useful for calling existing ImageJ plugins and commands. The next section has an example of the use of this. It may be instructive to compare the ["Blobs Demo" macro](/ij/macros/ConvexHull.txt) from the ImageJ distribution with {% include github repo='fiji' path='plugins/Examples/Blobs_Demo_in_Ruby.rb' label='a version ported to JRuby' %}. The use of the analagous function in JRuby is not always the same - for example, if you compare the invocation of `getSelectionCoordinates,` you'll find that whereas the ImageJ macro version passes in the output variables:
+The "run" method may also be particularly useful for calling existing ImageJ plugins and commands. The next section has an example of the use of this. It may be instructive to compare the ["Blobs Demo" macro](/ij/macros/ConvexHull.txt) from the ImageJ distribution with {% include github repo='fiji' branch='master' path='plugins/Examples/Blobs_Demo_in_Ruby.rb' label='a version ported to JRuby' %}. The use of the analagous function in JRuby is not always the same - for example, if you compare the invocation of `getSelectionCoordinates,` you'll find that whereas the ImageJ macro version passes in the output variables:
 
 ```ruby
 getSelectionCoordinates(xCoordinates, yCoordinates);
@@ -231,7 +231,7 @@ getSelectionCoordinates(xCoordinates, yCoordinates);
 x_coordinates, y_coordinates = get_selection_coordinates
 ```
 
-A note for the interested programmer: About 15% of the macro functions have be done so far, and if anyone wanted to help out with doing the rest, that would be excellent! The source code {% include github repo='fiji' path='plugins/JRuby/imagej.rb' label='can be found here' %}.
+A note for the interested programmer: About 15% of the macro functions have be done so far, and if anyone wanted to help out with doing the rest, that would be excellent! The source code {% include github repo='fiji' branch='master' path='plugins/JRuby/imagej.rb' label='can be found here' %}.
 
 ## Example: Generating Red/Cyan Anaglyphs
 
@@ -268,7 +268,7 @@ When using [Script Parameters](/scripting/parameters), e.g., in the [Script Edit
 
 ## Library
 
-There is a library called {% include github repo='fiji' path='plugins/JRuby/imagej.rb' label='imagej.rb' %} for convenience. It contains a number of useful functions related to ImageJ. It is loaded by default when creating a new JRuby script in the [Script Editor](/scripting/script-editor).
+There is a library called {% include github repo='fiji' branch='master' path='plugins/JRuby/imagej.rb' label='imagej.rb' %} for convenience. It contains a number of useful functions related to ImageJ. It is loaded by default when creating a new JRuby script in the [Script Editor](/scripting/script-editor).
 
 ## What next?
 
