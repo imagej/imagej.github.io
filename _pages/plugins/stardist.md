@@ -8,13 +8,18 @@ categories: []
 {% capture source%}
 {% include github org='stardist' repo='stardist-imagej' %}
 {% endcapture %}
-{% include info-box name='StarDist' software='ImageJ' update-site='StarDist' author='Uwe Schmidt, Martin Weigert' maintainer='Uwe Schmidt, Martin Weigert' source=source website='https://github.com/mpicbg-csbd/stardist' %} <img src="/media/icons/stardist.jpg" width="128"/>
+{% include info-box name='StarDist' software='ImageJ' update-site='StarDist' author='Uwe Schmidt, Martin Weigert' maintainer='Uwe Schmidt, Martin Weigert' source=source website='https://github.com/stardist/stardist' %} <img src="/media/icons/stardist.jpg" width="128"/>
 
 ## Overview
 
-This is the ImageJ/Fiji plugin for [StarDist](https://github.com/mpicbg-csbd/stardist), a cell/nuclei detection method for microscopy images with star-convex shape priors. The plugin can be used to apply already trained models to new images. See the [main repository](https://github.com/mpicbg-csbd/stardist) for links to our publications and the full-featured Python package that can also be used to train new models. If you encounter problems with the plugin, please file an issue [here](https://github.com/stardist/stardist-imagej).
+This is the ImageJ/Fiji plugin for [StarDist](https://github.com/stardist/stardist), a cell/nuclei detection method for microscopy images with star-convex shape priors. The plugin can be used to apply already trained models to new images. See the [main repository](https://github.com/stardist/stardist) for links to our publications and the full-featured Python package that can also be used to train new models.
 
-*The plugin currently only supports 2D image and time lapse data. If you have 3D data, please use our [python library](https://github.com/mpicbg-csbd/stardist).*
+If you need any help, please first take a look at the StarDist [documentation](https://github.com/stardist/stardist/blob/master/README.md) and [frequently asked questions (FAQ)](https://stardist.net/docs/faq.html). 
+If that doesn't solve your issue, you can browse the existing [`stardist`-tagged forum posts](https://forum.image.sc/tag/stardist) or search the [image.sc forum](https://forum.image.sc/). If you can't find what you're looking for, please create a new topic at [the forum](https://forum.image.sc/) (and use the tag `stardist`).
+If you open a new topic, please provide a clear and concise description to understand and ideally reproduce the issue you're having.
+Please only file an issue [here](https://github.com/stardist/stardist-imagej) for bug reports or if you have technical questions regarding the plugin.
+
+*The plugin currently only supports 2D image and time lapse data. If you have 3D data, please use our [python library](https://github.com/stardist/stardist).*
 
 <img src="/media/plugins/stardist-screenshot-small.jpg" width="640"/>
 
@@ -61,7 +66,7 @@ Start the plugin from `Plugins > StarDist > StarDist 2D`. The following paramete
             </ul>
           </li>
           <li>
-            <em>A custom user-trained model</em> (<a href="https://github.com/mpicbg-csbd/stardist">via the training code</a>) that has been <a href="https://github.com/mpicbg-csbd/stardist/search?q=export_TF&amp;type=Code">exported as a zip file</a> and can be loaded from a file or URL (see <em>Advanced options</em> below).
+            <em>A custom user-trained model</em> (<a href="https://github.com/stardist/stardist">via the training code</a>) that has been <a href="https://github.com/stardist/stardist/search?q=export_TF&amp;type=Code">exported as a zip file</a> and can be loaded from a file or URL (see <em>Advanced options</em> below).
           </li>
         </ul>
         <p>If necessary, one can change/disable the percentile-based input image normalization.</p>
