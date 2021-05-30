@@ -183,7 +183,7 @@ The following table provides a few examples of how various Fiji components are s
       </td>
     </tr>
     <tr>
-      <td>
+      <td rowspan=4>
         <p><strong>Standard</strong></p>
       </td>
       <td>
@@ -281,7 +281,7 @@ The following table provides a few examples of how various Fiji components are s
       <td></td>
     </tr>
     <tr>
-      <td>
+      <td rowspan=2>
         <p><strong>External</strong></p>
       </td>
       <td>
@@ -331,7 +331,7 @@ The following table provides a few examples of how various Fiji components are s
       <td></td>
     </tr>
     <tr>
-      <td>
+      <td rowspan=2>
         <p><strong>Subproject</strong></p>
       </td>
       <td>
@@ -381,7 +381,7 @@ The following table provides a few examples of how various Fiji components are s
       <td></td>
     </tr>
     <tr>
-      <td>
+      <td rowspan=3>
         <p><strong>Third party</strong></p>
       </td>
       <td>
