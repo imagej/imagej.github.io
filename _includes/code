@@ -1,0 +1,83 @@
+{%- assign service = include.service | default: "github" | downcase -%}
+{%- assign org = include.org -%}
+{%- assign repo = include.repo -%}
+{%- assign branch = include.branch | default: "main" -%}
+{%- assign path = include.path -%}
+{%- assign line-start = include.line-start | default: "1" -%}
+{%- assign line-end = include.line-end | default: "99999" -%}
+{%- assign label = include.label -%}
+{%- assign style = include.style | default: "github" -%}
+{%- assign show-border = include.show-border | default: true -%}
+{%- assign show-line-numbers = include.show-line-numbers | default: true -%}
+{%- assign show-file-meta = include.show-file-meta | default: true -%}
+{%- assign show-copy = include.show-copy | default: true -%}
+
+{%- capture link -%}
+  {%- case service -%}
+    {%- when "github" -%}
+      https://github.com/{{org}}/{{repo}}/blob/{{branch}}/{{path}}
+    {%- when "gitlab" -%}
+      https://gitlab.com/{{org}}/{{repo}}/-/blob/{{branch}}/{{path}}#L91-112
+    {%- when "bitbucket" -%}
+      https://bitbucket.org/{{org}}/{{repo}}/src/{{branch}}/{{path}}#lines-279:297
+  {%- endcase -%}
+{%- endcapture -%}
+
+{%- capture url -%}
+  {%- case service -%}
+    {%- when "github", "gitlab" -%}
+      {{link}}#L{{line-start}}-{{line-end}}
+    {%- when "bitbucket" -%}
+      {{link}}#lines-{{line-start}}:{{line-end}}
+  {%- endcase -%}
+{%- endcapture -%}
+{%- unless line-start == "1" and line-end == "99999" -%}
+  {%- comment -%}
+    Include line numbers in the link, if they don't span the whole file.
+  {%- endcomment -%}
+  {%- assign link = url -%}
+{%- endunless -%}
+
+{%- capture content -%}
+  {%- case service -%}
+    {%- when "github" -%}
+      <script src="https://emgithub.com/embed.js?target=
+        {{- url | replace: "/", "%2F" | replace: "#", "%23" | replace: ":", "%3A" -}}
+        &style={{style}}
+        {%- if show-border -%}       &showBorder=on      {%- endif -%}
+        {%- if show-line-numbers -%} &showLineNumbers=on {%- endif -%}
+        {%- if show-file-meta -%}    &showFileMeta=on    {%- endif -%}
+        {%- if show-copy -%}         &showCopy=on        {%- endif -%}
+      "></script>
+    {%- when "gitlab" -%}
+{% include notice icon="warning" content="
+Embedding content from GitLab is not yet supported.
+Are you a JavaScript developer who can make it happen?
+[Reach out to us on the Image.sc Forum!](/discuss)" %}
+    {%- when "bitbucket" -%}
+{% include notice icon="warning" content="
+Embedding content from BitBucket is not yet supported.
+Are you a JavaScript developer who can make it happen?
+[Reach out to us on the Image.sc Forum!](/discuss)" %}
+  {%- endcase -%}
+{%- endcapture -%}
+
+{%- if content and content != '' -%}
+  {%- if label -%}
+    <b>
+    {%- if link -%} <a href="{{link}}"> {%- endif -%}
+    {{label}}
+    {%- if link -%} </a> {%- endif -%}
+    </b><br>
+  {%- endif %}
+{{ content }}
+{%- else -%}
+  {%- capture error-message -%}
+    Invalid code arguments: `{{include}}`
+  {%- endcapture -%}
+  {% include notice icon="warning" content=error-message %}
+{%- endif -%}
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

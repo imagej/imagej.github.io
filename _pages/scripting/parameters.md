@@ -23,7 +23,7 @@ The rules for `#@` parameter use are as follows:
 
 For example, if we look at the [Greeting.py](https://github.com/scijava/scripting-jython/blob/scripting-jython-0.2.0/src/main/resources/script_templates/Python/Greeting.py) [template](/scripting/templates) supplied with Fiji:
 
-{% include github-embed org='scijava' repo='scripting-jython' branch='master' path='src/main/resources/script_templates/Intro/Greeting.py' %}
+{% include code org='scijava' repo='scripting-jython' branch='master' path='src/main/resources/script_templates/Intro/Greeting.py' %}
 
 We see that an input parameter `name` of type `String` is declared. `@Parameters` are handled automatically by the framework; if we run this script when the User Interface is available (e.g. from the script editor), the `name` parameter will automatically be harvested via a pop-up dialog:
 

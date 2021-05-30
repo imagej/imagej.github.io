@@ -55,6 +55,7 @@ The site makes use of many amazing web libraries and tools, including:
 * [Font Awesome](https://fontawesome.com/)
 * [JS Lightbox](https://js-lightbox.com/) +
   [jQuery](https://jquery.com/)
+* [Embed Like Gist](https://emgithub.com/)
 * And all their dependencies! &#128150;
 
 Our deep gratitude to all the developers and maintainers for this

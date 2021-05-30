@@ -609,7 +609,7 @@ If you already have [obtained profiles](#importing) (either from previous runs o
 
 Advanced options can be set through [API calls](http://tferr.github.io/ASA/apidocs/). Here are some examples:
 
-{% include github-embed org='tferr' repo='ASA' branch='master' path='scripting-examples/3D_Analysis_ImageStack.py' label='3D analysis of an ImageStack (Python)' %}
+{% include code org='tferr' repo='ASA' branch='master' path='scripting-examples/3D_Analysis_ImageStack.py' label='3D analysis of an ImageStack (Python)' %}
 
 Reduce the number of discretization steps involved in the calculation of [Nav](#mean-value-of-function), and [Cv](#critical-value), [Cr](#critical-radius) (IJ macro (IJM) language):
 

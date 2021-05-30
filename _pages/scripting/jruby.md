@@ -264,7 +264,7 @@ Some example output:
 
 When using [Script Parameters](/scripting/parameters), e.g., in the [Script Editor](/scripting/script-editor), you need to use a `$` before `@ variables`, due to a limitation in the scoping, as in this example from [Script Templates](/scripting/templates):
 
-{% include github-embed org='scijava' repo='scripting-jruby' branch='master' path='src/main/resources/script_templates/Intro/Greeting.rb' label='Greeting.rb' %}
+{% include code org='scijava' repo='scripting-jruby' branch='master' path='src/main/resources/script_templates/Intro/Greeting.rb' label='Greeting.rb' %}
 
 ## Library
 

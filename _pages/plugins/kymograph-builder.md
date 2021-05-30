@@ -41,7 +41,7 @@ How to use :
 
 You can script the plugin. Here is an example:
 
-{% include github-embed org='fiji' repo='KymographBuilder' branch='master' path='src/main/resources/script_templates/Examples/MultiKymographBuilder.py' %}
+{% include code org='fiji' repo='KymographBuilder' branch='master' path='src/main/resources/script_templates/Examples/MultiKymographBuilder.py' %}
 
 ## Related links
 

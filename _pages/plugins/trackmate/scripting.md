@@ -906,7 +906,7 @@ TrackMate allows for the addition of jar files that contain extra TrackMate modu
 
 As any other module it can be used in a script, provided the jar file is in the plugins or jars folder of Fiji:
 
-{% include github-embed org='fiji' repo='TrackMate' branch='master' path='scripts/CallTrackMateMultiChannel.py' %}
+{% include code org='fiji' repo='TrackMate' branch='master' path='scripts/CallTrackMateMultiChannel.py' %}
 
 ## Making TrackMate macro recordable with a 64-line script
 
@@ -914,7 +914,7 @@ Contributed by {% include person id='imagejan' %} during a NEUBIAS course. Quoti
 
 > "The macro language is too limited to work with such awesome things as TrackMate, but that you can do everything with a more powerful scripting language. So when using a 64-line script to call it, it actually is macro recordable."
 
-{% include github-embed org='fiji' repo='TrackMate' branch='master' path='scripts/Run_TrackMate_Headless.groovy' %}
+{% include code org='fiji' repo='TrackMate' branch='master' path='scripts/Run_TrackMate_Headless.groovy' %}
 
 ## Add 3D maximas in the ROI Manager using TrackMate
 

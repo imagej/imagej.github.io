@@ -189,7 +189,7 @@ The following tables list all of this site's general-purpose includes:
 
 | Include                              | Purpose                          |
 |--------------------------------------|----------------------------------|
-| [github-embed](TODO)                 | Embed a code snippet from GitHub |
+| [code](TODO)                 | Embed a code snippet from GitHub |
 | [code-example](TODO)                 | Side-by-side code + result       |
 
 #### Miscellaneous
