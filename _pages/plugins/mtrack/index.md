@@ -3,7 +3,7 @@ mediawiki: MicrotubuleTracker
 title: MicrotubuleTracker
 logo: /media/logos/mtrack.png
 categories: [Tracking,Microtubules]
-artifact: net.imagej:MTrack
+artifact: net.imagej:MicrotubuleTracker
 ---
 
 <img src="/media/icons/mtrack.png" width="250"/> 
@@ -119,20 +119,7 @@ An example movie with several dynamic microtubules is available for download [he
 
 All dynamic parameters are saved in a .txt file call 'Allaverages'. For a better presentation the user can copy and paste the data from the .txt file to Excel or an equivalent software.
 
-## Low SNR Example
 
-An example movie with a single simulated microtubule at low SNR and the same microtubule without the noise is available for download [here](http://preibischlab.mdc-berlin.de/download/MTrack/LowSNRMTrack_Demo.tif.zip) To perform the analysis of such microtubules:
-
-1.  Put the demo movies **LowSNRMTrack\_Demo.tif** and **DenoisedMTrack\_Demo.tif** into an empty directory, the results will also be stored here.
-2.  To run the MicroTubule Tracker:
-3.  Select {% include bc path="Plugins | MTrack | Microtubule Detection and Tracking" %},
-4.  Select **Advanced Mode**, **Concatenated Seed Image followed by time-lapse images**, choose the LowSNR movie , the microscope parameters will be automatically loaded, finally click **Next&gt;** to continue.
-5.  In the second panel load the denoised movie and click on **Load preprocessed movie and go next**
-6.  In the panel labelled **Object recognition methods** select MSER from the drop down menu. The microtubule would be correctly identified, click *' next*' to go to the second panel where MSER parameters are displayed. Now click **Find Endpoints** to continue.
-7.  Click **next** to go to the next panel. Using the slider in the panel **Deselect and select ends** identify the non-growing end of the microtubule and deselect it from further calculations by doing a left click near it, the green circle should turn pink implying that the end has been deselected.
-8.  Select **Do MSER based segmentation** from the **Select segmentation method** as the choice of segmentation over time. Now click **Next** to go to the next panel.
-9.  To track the microtubules over all 100 time-points click on **Start tracking** from the **Tracker options** panel . The expected runtime is around 5 min.
-10. The microtubule trajectory will be saved.
 
 ## Citation
 
