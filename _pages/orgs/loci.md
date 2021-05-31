@@ -58,9 +58,19 @@ The following alumni worked on ImageJ-related projects during their time at LOCI
 -   {% include person id='awalter17' %} (programmer, Sep 2014-May 2018)
 -   {% include person id='lnyng' %} (programmer, Sep 2015-May 2017)
 -   {% include person id='aneevel' %} (sysadmin, Jul 2015-Jan 2017)
+-   {% include person id='zjpetersen' %} (programmer, SLIM Curve C library, Jun 2015-May 2016)
+-   {% include person id='aksagar' %} (maintainer, [SLIM Curve](/plugins/slim-curve), 2014-2020)
 -   {% include person id='dscho' %} (senior developer, Sep 2011-Nov 2014)
 -   {% include person id='grislis' %} (programmer, [SLIM Curve](/plugins/slim-curve), Jan 2010-Dec 2013)
 -   {% include person id='bdezonia' %} (programmer, [ImageJ2](/software/imagej2), Jan 2010-Nov 2013)
 -   {% include person id='ricklentz' %} (programmer, [ImageJ2](/software/imagej2), Dec 2009-Feb 2011)
+
+The following alumni worked on the [Cookbook](/imaging) project as students:
+
+-   {% include person id='apal4' %} (January 2014 - May 2015)
+-   {% include person id='kghildebrand' %} (June 2013 - December 2013)
+-   {% include person id='amanda-macallister' %} (June 2013 - December 2013)
+-   {% include person id='RuizhiLiao' %} (November 2013 - December 2013)
+-   {% include person id='gabby-campagnola' %} (June 2013 - August 2013)
 
 See also the [complete list of LOCI lab alumni](https://eliceirilab.org/labalumni/) on the LOCI website.

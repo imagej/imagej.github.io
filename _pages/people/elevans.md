@@ -1,7 +1,5 @@
 ---
-mediawiki: NONE
 title: Edward Evans
-
 name: Edward Evans
 affiliation:
   - Eliceiri Lab / LOCI | /orgs/loci

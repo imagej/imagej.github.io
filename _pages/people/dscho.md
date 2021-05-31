@@ -1,13 +1,11 @@
 ---
-mediawiki: User:Schindelin
 title: Johannes Schindelin
 name: Johannes Schindelin
 gravatar: c2938f05cefad961fec000e7734c73ac
 honorific: Mother of Fiji
 affiliation:
-  - MPI-CBG Dresden (former) | /orgs/mpi-cbg
-  - Eliceiri Lab / LOCI (former) | /orgs/loci
-  - University of Wisconsin-Madison | https://wisc.edu/
+- MPI-CBG Dresden (former) | /orgs/mpi-cbg
+- Eliceiri Lab / LOCI (former) | /orgs/loci
 github: dscho
 openhub: gitte
 scholar: svkf4t4AAAAJ

@@ -1,10 +1,10 @@
 ---
-mediawiki: User:Msagar
 title: Md Abdul Kader Sagar
-
 name: Md Abdul Kader Sagar
-affiliation: UW-Madison LOCI | /orgs/loci
+affiliation:
+- Eliceiri Lab / LOCI (former) | /orgs/loci
 github: aksagar
 ---
-
-Sagar develops and maintains the [SLIM Curve](/plugins/slim-curve) plugin for time-resolved lifetime image analysis.
+While Sagar was a PhD student at LOCI, among other projects, he developed novel
+time-resolved fluorescence lifetime acquisition hardware and software, and
+maintained the [SLIM Curve](/plugins/slim-curve) plugin for ImageJ.

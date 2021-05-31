@@ -1,9 +1,8 @@
 ---
-mediawiki: User:Ruizhi
 title: Ruizhi Liao
 name: Ruizhi "Ray" Liao
-affiliation: UW-Madison LOCI (former) | /orgs/loci
+affiliation:
+- Eliceiri Lab / LOCI (former) | /orgs/loci
 github: RuizhiLiao
 ---
-
-{% include warning/stub %}
+Ruizhi Liao worked at [LOCI](/orgs/loci) on the [cookbook project](/imaging).

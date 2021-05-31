@@ -1,13 +1,11 @@
 ---
-mediawiki: User:Hinerm
 title: Mark Hiner
-
 name: Mark Hiner
 honorific: Champion of ImageJ
 gravatar: 02dba515add5d5c4991f6b93520d502c
 affiliation:
-  - Eliceiri Lab / LOCI | /orgs/loci
-  - University of Wisconsin-Madison | https://wisc.edu/
+- Eliceiri Lab / LOCI | /orgs/loci
+- University of Wisconsin-Madison | https://wisc.edu/
 forum: hinerm
 github: hinerm
 stackoverflow: 1027800/hinerm

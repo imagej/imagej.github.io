@@ -1,6 +1,5 @@
 ---
 title: Sam Griffin
-
 name: Sam Griffin
 affiliation:
   - Eliceiri Lab / LOCI | /orgs/loci
@@ -8,4 +7,5 @@ affiliation:
 forum: smgriffin2
 github: smgriffin2
 ---
-{% include warning/stub %}
+Sam Griffin is the lab administrator for [LOCI](/orgs/loci).
+He wears many different hats, all of them fancy.
