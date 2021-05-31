@@ -113,7 +113,7 @@ like {% raw %}`{% ... %}` or `{{ ... }}`{% endraw %}. Many pages
 on this site use Liquid to invoke functions called *includes*,
 which enable insertion of images, figures, notices, and more.
 (Think of this as: "I would like to *include* an image".)
-Here are some examples:
+Here are a couple of examples:
 
 <table><tbody>
 <tr>
@@ -121,16 +121,12 @@ Here are some examples:
   <th>Result</th>
 </tr>
 <tr>
-  <td><code>{% raw %}{% include yes %}{% endraw %}</code></td>
-  <td>{% include yes %}</td>
+  <td><code>{% raw %}{% include icon name="imagej" %}{% endraw %}</code></td>
+  <td>{% include icon name="imagej" %}</td>
 </tr>
 <tr>
   <td><code>{% raw %}{% include person id="rasband" %}{% endraw %}</code></td>
   <td>{% include person id="rasband" %}</td>
-</tr>
-<tr>
-  <td><code>{% raw %}{% include icon name="imagej" %}{% endraw %}</code></td>
-  <td>{% include icon name="imagej" %}</td>
 </tr>
 </tbody></table>
 
@@ -166,9 +162,7 @@ The following tables list all of this site's general-purpose includes:
 | [bc](menu-paths)                  | Insert a menu breadcrumb   |
 | [button](buttons)                 | Insert a button            |
 | [key](keys)                       | Insert a keyboard shortcut |
-| [icon](icons)                     | Insert icons               |
-| [yes](icons#built-ins)            | Insert a checkmark icon    |
-| [no](icons#built-ins)             | Insert an X icon           |
+| [icon](icons)                     | Insert an icon             |
 
 #### Media
 

@@ -59,13 +59,3 @@ You can also override the horizontal alignment:
 Alpha  
 Beta  
 Gamma
-
-
-{% include clear %}
-
-## Built-ins
-
-| Code                                  | Result            |
-|---------------------------------------|-------------------|
-|{% raw %}{% include yes %}{% endraw %} | {% include yes %} |
-|{% raw %}{% include no %}{% endraw %}  | {% include no %}  |

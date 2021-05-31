@@ -190,7 +190,7 @@ The following table provides a few examples of how various Fiji components are s
         <p><a href="/plugins/3d-viewer">3D Viewer</a></p>
       </td>
       <td>
-        <p>{% include yes%}</p>
+        <p>&#9989;</p>
       </td>
       <td style="text-align: center">
         <p><a href="http://update.fiji.sc/">Fiji</a></p>
@@ -213,7 +213,7 @@ The following table provides a few examples of how various Fiji components are s
         <p><a href="/plugins/coloc-2">Coloc 2</a></p>
       </td>
       <td>
-        <p>{% include yes%}</p>
+        <p>&#9989;</p>
       </td>
       <td style="text-align: center">
         <p><a href="http://update.fiji.sc/">Fiji</a></p>
@@ -237,7 +237,7 @@ The following table provides a few examples of how various Fiji components are s
         <p><a href="/plugins/snt">Simple Neurite Tracer</a></p>
       </td>
       <td>
-        <p>{% include yes%}</p>
+        <p>&#9989;</p>
       </td>
       <td style="text-align: center">
         <p><a href="http://update.fiji.sc/">Fiji</a></p>
@@ -261,7 +261,7 @@ The following table provides a few examples of how various Fiji components are s
         <p><a href="/plugins/trackmate">TrackMate</a></p>
       </td>
       <td>
-        <p>{% include yes%}</p>
+        <p>&#9989;</p>
       </td>
       <td style="text-align: center">
         <p><a href="http://update.fiji.sc/">Fiji</a></p>
@@ -288,7 +288,7 @@ The following table provides a few examples of how various Fiji components are s
         <p><a href="/plugins/sholl-analysis">Sholl Analysis</a></p>
       </td>
       <td>
-        <p>{% include yes%}</p>
+        <p>&#9989;</p>
       </td>
       <td style="text-align: center">
         <p><a href="http://update.fiji.sc/">Fiji</a></p>
@@ -311,7 +311,7 @@ The following table provides a few examples of how various Fiji components are s
         <p><a href="/formats/bio-formats">Bio-Formats</a></p>
       </td>
       <td>
-        <p>{% include yes%}</p>
+        <p>&#9989;</p>
       </td>
       <td style="text-align: center">
         <p><a href="http://update.fiji.sc/">Fiji</a></p>
@@ -338,7 +338,7 @@ The following table provides a few examples of how various Fiji components are s
         <p><a href="/plugins/bdv">BigDataViewer</a></p>
       </td>
       <td>
-        <p>{% include yes%}</p>
+        <p>&#9989;</p>
       </td>
       <td style="text-align: center">
         <p><a href="http://update.fiji.sc/">Fiji</a></p>
@@ -361,7 +361,7 @@ The following table provides a few examples of how various Fiji components are s
         <p><a href="/plugins/trakem2">TrakEM2</a></p>
       </td>
       <td>
-        <p>{% include yes%}</p>
+        <p>&#9989;</p>
       </td>
       <td style="text-align: center">
         <p><a href="http://update.fiji.sc/">Fiji</a></p>
@@ -388,7 +388,7 @@ The following table provides a few examples of how various Fiji components are s
         <p><a href="/imaging">Cookbook</a></p>
       </td>
       <td>
-        <p>{% include no%}</p>
+        <p>&#10060;</p>
       </td>
       <td style="text-align: center">
         <p><a href="http://sites.imagej.net/Cookbook/">Cookbook</a></p>
@@ -411,7 +411,7 @@ The following table provides a few examples of how various Fiji components are s
         <p><a href="/plugins/mamut">MaMuT</a></p>
       </td>
       <td>
-        <p>{% include no%}</p>
+        <p>&#10060;</p>
       </td>
       <td style="text-align: center">
         <p><a href="http://sites.imagej.net/MaMuT/">MaMuT</a></p>
@@ -435,7 +435,7 @@ The following table provides a few examples of how various Fiji components are s
         <p><a href="/plugins/slim-curve">SLIM Curve</a></p>
       </td>
       <td>
-        <p>{% include no%}</p>
+        <p>&#10060;</p>
       </td>
       <td>
         <p><a href="http://sites.imagej.net/SLIM-Curve/">SLIM-Curve</a></p>

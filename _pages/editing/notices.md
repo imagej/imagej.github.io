@@ -178,6 +178,8 @@ by name, sans file extension.
   content="You can use Font Awesome icons.
   [More than 5,000 icons!](https://fontawesome.com/v5.9.0/icons)" %}
 
+See also [Symbols › Font Awesome](/editing/symbols#font-awesome).
+
 ### Unicode
 
 {% highlight liquid %}{% raw %}{% include notice glyph="&#127881;" highlight-color="pink"
@@ -186,3 +188,5 @@ by name, sans file extension.
 {% include notice glyph="&#127881;" highlight-color="pink"
   content="You can use Unicode symbols including emoji.
   [More than 100,000 symbols!](https://graphemica.com/)" %}
+
+See also [Symbols › Unicode](/editing/symbols#unicode).
