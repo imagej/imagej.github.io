@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Fernando Amat
 
 name: Fernando Amat

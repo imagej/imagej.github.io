@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Loic Royer
 
 name: Loic Royer

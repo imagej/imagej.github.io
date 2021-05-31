@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Karl Bellve
 
 name: Karl Bellve

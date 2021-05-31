@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Martin W. Kirst
 
 name: Martin W. Kirst

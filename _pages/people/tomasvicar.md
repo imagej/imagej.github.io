@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Tomas Vicar
 
 name: Tomas Vicar

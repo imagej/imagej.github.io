@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Andreas Graumann
 
 name: Andreas Graumann

@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Uwe Schmidt
 
 name: Uwe Schmidt

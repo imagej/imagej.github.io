@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Gabriel Selzer
 
 name: Gabriel Selzer

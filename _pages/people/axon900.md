@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Mats Moskopp
 
 name: Mats Moskopp

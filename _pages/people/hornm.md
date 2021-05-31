@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Martin Horn
 
 name: Martin Horn

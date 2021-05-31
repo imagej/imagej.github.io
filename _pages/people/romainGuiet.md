@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Romain Guiet
 
 name: Romain Guiet

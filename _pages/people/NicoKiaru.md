@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Nicolas Chiaruttini
 
 name: Nicolas Chiaruttini

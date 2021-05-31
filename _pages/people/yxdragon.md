@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Yan Xiaolong
 
 name: Yan Xiaolong

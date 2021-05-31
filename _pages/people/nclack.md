@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Nathan Clack
 
 name: Nathan Clack

@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Stefano Woerner
 
 name: Stefano Woerner

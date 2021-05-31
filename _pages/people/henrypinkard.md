@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Henry Pinkard
 
 name: Henry Pinkard

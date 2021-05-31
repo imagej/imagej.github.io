@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Thorsten Riess
 
 name: Thorsten Riess

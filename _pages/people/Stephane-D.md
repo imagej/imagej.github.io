@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Stephane Dallongeville
 
 name: Stephane Dallongeville

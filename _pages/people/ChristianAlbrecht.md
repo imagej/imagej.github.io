@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Christian Albrecht
 
 name: Christian Albrecht

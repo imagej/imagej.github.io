@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Fabrice de Chaumont
 
 name: Fabrice de Chaumont

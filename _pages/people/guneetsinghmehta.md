@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Guneet Singh Mehta
 
 name: Guneet Singh Mehta

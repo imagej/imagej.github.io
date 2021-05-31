@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Eike Heinz
 
 name: Eike Heinz

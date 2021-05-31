@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Emil Nelnikov
 
 name: Emil Nelnikov

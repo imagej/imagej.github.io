@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Patrick Winter
 
 name: Patrick Winter

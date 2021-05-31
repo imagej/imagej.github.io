@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Peter Walczysko
 
 name: Peter Walczysko

@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Eric Perlman
 
 name: Eric Perlman

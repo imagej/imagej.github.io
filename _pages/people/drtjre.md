@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Thomas Re
 
 name: Thomas Re

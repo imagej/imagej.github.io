@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Andrea Ballaminut
 
 name: Andrea Ballaminut

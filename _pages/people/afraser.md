@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Adam Fraser
 
 name: Adam Fraser

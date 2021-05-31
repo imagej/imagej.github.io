@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Lars Grüter
 
 name: Lars Grüter

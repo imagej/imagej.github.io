@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Adrian Nembach
 
 name: Adrian Nembach

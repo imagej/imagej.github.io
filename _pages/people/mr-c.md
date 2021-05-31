@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Michael Crusoe
 
 name: Michael Crusoe

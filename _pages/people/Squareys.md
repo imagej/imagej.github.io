@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Jonathan Hale
 
 name: Jonathan Hale

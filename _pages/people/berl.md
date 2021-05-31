@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Brian Long
 
 name: Brian Long

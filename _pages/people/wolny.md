@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Adrian Wolny
 
 name: Adrian Wolny

@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Hanchuan Peng
 
 name: Hanchuan Peng

@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: David Ackerman
 
 name: David Ackerman

@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Ray Plante
 
 name: Ray Plante

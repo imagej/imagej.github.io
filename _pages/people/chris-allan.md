@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Chris Allan
 
 name: Chris Allan

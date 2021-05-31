@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Maksim Novikov
 
 name: Maksim Novikov

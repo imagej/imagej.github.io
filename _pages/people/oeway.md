@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Wei Ouyang
 
 name: Wei Ouyang

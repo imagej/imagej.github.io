@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Mario Emmenlauer
 
 name: Mario Emmenlauer

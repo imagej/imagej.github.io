@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Christopher M. Bruns
 
 name: Christopher M. Bruns

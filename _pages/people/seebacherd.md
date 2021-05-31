@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Daniel Seebacher
 
 name: Daniel Seebacher

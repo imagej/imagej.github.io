@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Marcel Austenfeld
 
 name: Marcel Austenfeld

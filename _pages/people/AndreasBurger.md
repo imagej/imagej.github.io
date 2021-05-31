@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Andreas Burger
 
 name: Andreas Burger

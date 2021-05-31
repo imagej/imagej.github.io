@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Jay Warrick
 
 name: Jay Warrick

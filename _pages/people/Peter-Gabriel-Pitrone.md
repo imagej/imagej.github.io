@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Peter Gabriel Pitrone
 
 name: Peter Gabriel Pitrone

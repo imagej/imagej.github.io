@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Timo Rantalainen
 
 name: Timo Rantalainen

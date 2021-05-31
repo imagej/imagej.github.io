@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Yuming Liu
 
 name: Yuming Liu

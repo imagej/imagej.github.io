@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Martin Weigert
 
 name: Martin Weigert

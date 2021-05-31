@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Jens Metzner
 
 name: Jens Metzner

@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Chris Weisiger
 
 name: Chris Weisiger

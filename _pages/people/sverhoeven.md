@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Stefan Verhoeven
 
 name: Stefan Verhoeven

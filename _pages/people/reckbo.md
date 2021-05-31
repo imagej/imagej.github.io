@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Ryan Eckbo
 name: Ryan Eckbo
 github: reckbo

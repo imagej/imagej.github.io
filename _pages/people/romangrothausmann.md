@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Roman Grothausmann
 
 name: Roman Grothausmann

@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Mangal Prakash
 
 name: Mangal Prakash

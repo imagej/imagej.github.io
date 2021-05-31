@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Paul Barber
 
 name: Paul Barber

@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Asim Shankar
 
 name: Asim Shankar

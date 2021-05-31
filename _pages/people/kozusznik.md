@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Jan Kožusznik
 
 name: Jan Kožusznik

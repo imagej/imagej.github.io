@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Joe Hsiao
 
 name: Joe Hsiao

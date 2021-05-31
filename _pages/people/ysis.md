@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Cornelius Sicker
 
 name: Cornelius Sicker

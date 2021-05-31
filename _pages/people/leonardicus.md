@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Leonardo Guizzetti
 
 name: Leonardo Guizzetti

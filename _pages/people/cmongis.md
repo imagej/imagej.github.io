@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Cyril Mongis
 
 name: Cyril Mongis

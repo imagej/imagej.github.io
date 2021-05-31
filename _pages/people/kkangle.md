@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Yang Liu
 
 name: Yang Liu

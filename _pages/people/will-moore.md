@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Will Moore
 
 name: Will Moore

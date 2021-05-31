@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Arrate Muñoz Barrutia
 
 name: Arrate Muñoz Barrutia

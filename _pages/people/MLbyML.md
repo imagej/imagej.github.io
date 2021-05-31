@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Manan Lalit
 
 name: Manan Lalit

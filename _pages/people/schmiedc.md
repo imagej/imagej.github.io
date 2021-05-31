@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Christopher Schmied
 
 name: Christopher Schmied

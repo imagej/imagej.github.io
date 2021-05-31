@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Simon Schmid
 
 name: Simon Schmid

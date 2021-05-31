@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Arthur Edelstein
 
 name: Arthur Edelstein

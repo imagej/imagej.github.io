@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: David Kolb
 
 name: David Kolb

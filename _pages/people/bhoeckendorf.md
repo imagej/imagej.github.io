@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Burkhard Höckendorf
 
 name: Burkhard Höckendorf

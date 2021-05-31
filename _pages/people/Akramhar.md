@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Alex Rigano
 
 name: Alex Rigano

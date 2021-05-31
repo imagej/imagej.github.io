@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Jan Kybic
 
 name: Jan Kybic

@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Marcel Wiedenmann
 
 name: Marcel Wiedenmann

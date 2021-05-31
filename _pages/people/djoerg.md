@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: David Jörg
 
 name: David Jörg

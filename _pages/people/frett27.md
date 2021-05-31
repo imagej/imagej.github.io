@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Patrice Freydiere
 
 name: Patrice Freydiere
