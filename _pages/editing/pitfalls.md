@@ -56,6 +56,68 @@ Do you like *asterisks* too?</div>
 {% endcapture %}
 {% include editing/example code=targeted-markdown %}
 
+### Using `capture` and `markdownify`
+
+In some scenarios, it is easier to use Liquid's `capture` directive to store a
+block of Markdown into a variable, and then use Jekyll's `markdownify` filter
+to convert it to HTML, so that it can be more easily mixed with other HTML. One
+such case is with the `<details>` to create an expandable block of content.
+Here is an example:
+
+{% capture capture-markdownify-code %}{% raw %}
+{% capture periodic-table %}
+| 1 | H  | Hydrogen  |  1.008 |
+| 2 | He | Helium    |  4.003 |
+| 3 | Li | Lithium   |  6.938 |
+| 4 | Be | Beryllium |  9.102 |
+| 5 | B  | Boron     | 10.806 |
+| 6 | C  | Carbon    | 12.009 |
+| 7 | N  | Nitrogen  | 14.006 |
+| 8 | O  | Oxygen    | 15.999 |
+| 9 | F  | Fluorine  | 18.998 |
+{:.left}
+{% endcapture %}
+<details><summary>Check out this amazing table!</summary>
+{{ periodic-table | markdownify }}
+</details>
+{% endraw %}{% endcapture %}
+{% capture periodic-table %}
+| 1 | H  | Hydrogen  |  1.008 |
+| 2 | He | Helium    |  4.003 |
+| 3 | Li | Lithium   |  6.938 |
+| 4 | Be | Beryllium |  9.102 |
+| 5 | B  | Boron     | 10.806 |
+| 6 | C  | Carbon    | 12.009 |
+| 7 | N  | Nitrogen  | 14.006 |
+| 8 | O  | Oxygen    | 15.999 |
+| 9 | F  | Fluorine  | 18.998 |
+{:.left}
+{% endcapture %}
+{% capture capture-markdownify-result %}
+<details><summary>Check out this amazing table!</summary>
+{{ periodic-table | markdownify }}
+</details>
+{% endcapture %}
+{% include editing/example
+  code=capture-markdownify-code
+  result=capture-markdownify-result %}
+
+The `markdownify` filter can be very useful, but watch out: it does
+not work well for inline elements because it will surround your
+Markdown expression in `<p>...</p>` tags, ruining the inline effect:
+
+{% capture bad-inline-markdownify-code %}{% raw %}
+{% capture question %} Does *Monday* work? {% endcapture %}
+<div>I asked: "{{ question | markdownify }}" and she nodded.</div>
+{% endraw %}{% endcapture %}
+{% capture question %} Does *Monday* work? {% endcapture %}
+{% capture bad-inline-markdownify-result %}
+<div>I asked: "{{ question | markdownify }}" and she nodded.</div>
+{% endcapture %}
+{% include editing/example
+  code=bad-inline-markdownify-code
+  result=bad-inline-markdownify-result %}
+
 ## Suppressing Markdown rendering
 
 The `markdown` attribute can also be used the other way, to suppress
