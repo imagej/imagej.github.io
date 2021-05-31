@@ -75,6 +75,20 @@ In many ways, this new wiki is much more powerful than the old site.
    as HTML is verbose and ugly compared to the MediaWiki syntax. For now, we
    live with it; perhaps we can find a nicer solution later.
 
+4. Not a permanent downside, but be aware that there are still a few pages
+   that have not been organized into their proper places. Any page that
+   _is in the top-level `_pages` folder_ and _starts with a capital letter_
+   still needs to be renamed and moved into the right place. As of this
+   writing, there are 11 such pages.
+
+5. Another temporary issue is that we are not 100% done fixing the media
+   includes: `img`, `video`, and `gallery`. The `img` and `video` includes
+   are pretty nice already, but their handling of figures (when to wrap content
+   with `<figure>` tags, and when not, and exactly how these are styled) still
+   needs a little work. And `gallery` still needs significant cleanup.
+   You are welcome to use any of the media includes, but we may need to do some
+   additional cleanup later en masse as these includes evolve.
+
 ## Setting up
 
 1.  The only technical requirement is that you have a GitHub account.
@@ -212,7 +226,7 @@ As for which pages to work on, here are some suggestions:
 Finally, **discuss early and often** in the [chat room](https://gitter.im/)!
 Asking questions is a good way to facilitate rapid progress, especially during
 times when other knowledgeable people are online (check the sign-up sheet for
-everyone's availability).  
+everyone's availability).
 
 ## Addressing common problems
 
@@ -228,7 +242,12 @@ Once we know more, we'll document here how to fix it.
 ### Old info-box tables
 
 We are retiring the `include info-box` in favor of using the wiki's `statbox`
-feature. Unfortunately, the statbox is not documented well enough yet.
+feature. Unfortunately, the statbox is not documented well enough yet on the
+wiki&mdash;although the [include itself describes it, including all supported
+front matter fields](https://github.com/imagej/imagej.github.io/blob/main/_includes/layout/statbox).
+Do you like writing documentation? You could add the mapping from `info-box`
+ fields to `statbox` fields here in this section! It would help all of us.
+
 As a starting point for now: if the page describes a plugin corresponding to a
 particular JAR file published on maven.scijava.org, you can add the `artifact`
 front matter field with the `groupId:artifactId` of that JAR file. E.g., the
@@ -242,6 +261,17 @@ wiki that still use the old-style `info-box` include with hardcoded information,
 rather than declaring the `artifact` and letting it get filled in automatically.
 If you are working on such a page, but don't know the Maven artifact string to
 use, please ask in the chat room, and someone will help you out.
+
+Some plugins do not have Maven artifacts, because the developer did not publish
+the plugin to maven.scijava.org. In that case, you can migrate all the info-box
+fields manually into the front matter. Here is a before-and-after example:
+
+| [DHM Utilities/Reconstruction](plugins/dhm-utilities/reconstruction) | [before (info-box)](https://raw.githubusercontent.com/imagej/imagej.github.io/main/_pages/plugins/dhm-utilities/reconstruction.md) | [after (statbox)](https://raw.githubusercontent.com/imagej/imagej.github.io/44c5f5bf6d9a329f1bf6de8de30fd7c3a17a4bac/_pages/plugins/dhm-utilities/reconstruction.md)) |
+
+The [Cross Sectional Analyzer](plugins/cross-sectional-analyzer) provides
+another example of using the `statbox` fields.
+
+
 
 ### Table cells not being in the right places
 
