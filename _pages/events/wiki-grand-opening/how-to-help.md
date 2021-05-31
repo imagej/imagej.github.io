@@ -119,6 +119,7 @@ In many ways, this new wiki is much more powerful than the old site.
 
 5.  Either way, you now have a text area into which your content will be
     placed. Here is template to cut-and-paste into the body to start you off:
+
     ```
     ---
     title: Chuckles McGuffin
@@ -148,6 +149,7 @@ In many ways, this new wiki is much more powerful than the old site.
     | [CreamPie](/plugins/cream-pie)  | For when you're hungry. Delicious! |
     | [Cartwheel](/plugins/cartwheel) | For spinning round and round.      |
     ```
+
     You'll then want to change the details to match your information,
     removing any fields that you don't have or don't want to share.
 
@@ -203,7 +205,9 @@ As for which pages to work on, here are some suggestions:
 5.  For plugin pages, check the `categories:` in the front matter, to see if
     they match the standard ones.
 6.  Once you are finished making changes to the page, and you are satisfied,
-    remove the `mediawiki:` field from the front matter at the top. This is how we mark a page as complete, and what will cause it to disappear from the [
+    remove the `mediawiki:` field from the front matter at the top. This is how
+    we mark a page as complete, and what will cause it to disappear from the
+    [pages remaining list](page-list).
 
 Finally, **discuss early and often** in the [chat room](https://gitter.im/)!
 Asking questions is a good way to facilitate rapid progress, especially during
@@ -216,15 +220,12 @@ Let's grow this section as we encounter solutions to things!
 
 ### MathJax appearing inappropriately
 
-{% include warning/stub %}
-
 You can write MathJax math expressions by bracketing the text with `$$`
 symbols. But some pages have formatting that gets interpreted as MathJax,
-even though it wasn't intended. Let's document how to fix it here.
+even though it wasn't intended.
+Once we know more, we'll document here how to fix it.
 
 ### Old info-box tables
-
-{% include warning/stub %}
 
 We are retiring the `include info-box` in favor of using the wiki's `statbox`
 feature. Unfortunately, the statbox is not documented well enough yet.
@@ -250,8 +251,6 @@ old wiki, and add e.g. `colspan=5` or `rowspan=3` as appropriate to the cells
 that need it.
 
 ### Missing chunks of content
-
-{% include warning/stub %}
 
 For now, speak up in the chat if you find any. In particular, it may be that
 some content from sideboxes did not carry over from the original page. Once we
