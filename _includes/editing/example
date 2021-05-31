@@ -9,7 +9,7 @@ Inserts a side-by-side example of raw code and its formatted result.
 </div>
 <div>
 <p>Result</p>
-<div class="shadowed-box" markdown=1>
+<div markdown=1>
 {{result}}
 </div>
 </div>
