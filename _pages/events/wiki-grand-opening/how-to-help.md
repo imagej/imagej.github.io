@@ -267,12 +267,12 @@ Some plugins do not have Maven artifacts, because the developer did not publish
 the plugin to maven.scijava.org. In that case, you can migrate all the info-box
 fields manually into the front matter. Here is a before-and-after example:
 
-| [DHM Utilities/Reconstruction](plugins/dhm-utilities/reconstruction) | [before (info-box)](https://raw.githubusercontent.com/imagej/imagej.github.io/main/_pages/plugins/dhm-utilities/reconstruction.md) | [after (statbox)](https://raw.githubusercontent.com/imagej/imagej.github.io/44c5f5bf6d9a329f1bf6de8de30fd7c3a17a4bac/_pages/plugins/dhm-utilities/reconstruction.md)) |
+* [DHM Utilities/Reconstruction](plugins/dhm-utilities/reconstruction):
+  [before (info-box)](https://raw.githubusercontent.com/imagej/imagej.github.io/44c5f5bf6d9a329f1bf6de8de30fd7c3a17a4bac/_pages/plugins/dhm-utilities/reconstruction.md) /
+  [after (statbox)](https://raw.githubusercontent.com/imagej/imagej.github.io/main/_pages/plugins/dhm-utilities/reconstruction.md)
 
 The [Cross Sectional Analyzer](plugins/cross-sectional-analyzer) provides
-another example of using the `statbox` fields.
-
-
+another example of using the `statbox` fields manually.
 
 ### Table cells not being in the right places
 
