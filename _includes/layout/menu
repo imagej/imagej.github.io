@@ -163,6 +163,7 @@
           {% include menu/section title="Contribute" link="/contribute" %}
             <li><a href="/contribute/citing">Citing</a></li>
             <li><a href="/people">Contributors</a></li>
+            <li><a href="/orgs">Organizations</a></li>
             <li><a href="/contribute/governance">Governance</a></li>
             <li><a href="/contribute/funding">Funding</a></li>
             <li><a href="/contribute/fiji">Contributing to Fiji</a></li>

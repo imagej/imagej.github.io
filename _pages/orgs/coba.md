@@ -1,6 +1,7 @@
 ---
 mediawiki: COBA
 title: COBA
+section: Contribute:Organizations
 ---
 
 The [Center for Open Bioimage Analysis](https://www.openbioimageanalysis.org/) (COBA) was established in 2020 with a P41 grant from the NIH National Institute of General Medical Sciences. As a National Biomedical Technology Research Resource, our purpose is to develop and disseminate novel technologies throughout the biomedical research community.

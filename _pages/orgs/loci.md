@@ -1,6 +1,7 @@
 ---
 mediawiki: LOCI
 title: LOCI
+section: Contribute:Organizations
 ---
 
 The {% include person id='eliceiri' name='Eliceiri' %} lab, also known as the [Laboratory for Optical and Computational Instrumentation](https://eliceirilab.org/), is an interdisciplinary biophotonics laboratory at the [University of Wisconsin-Madison](https://wisc.edu/).

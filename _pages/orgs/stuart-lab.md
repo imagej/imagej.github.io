@@ -1,6 +1,7 @@
 ---
 mediawiki: User:StuartLab
 title: Stuart Lab
+section: Contribute:Organizations
 ---
 
 ## About Us

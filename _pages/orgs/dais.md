@@ -1,6 +1,7 @@
 ---
 mediawiki: DAIS
 title: DAIS
+section: Contribute:Organizations
 ---
 
 ## The Dresden Analysis-of-Images Suite
