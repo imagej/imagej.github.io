@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Software Index
 section: Explore:Software
 ---
