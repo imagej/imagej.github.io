@@ -22,7 +22,7 @@ Enjoy some
 <span style="color: green">text</span>
 <span style="color: blue">in italics</span>*!
 {% endcapture %}
-{% include code-example code=markdown-plus-html %}
+{% include editing/example code=markdown-plus-html %}
 
 ### Markdown inside block elements
 
@@ -33,7 +33,7 @@ If you use a block element, Markdown won't be rendered inside:
 Why isn't *this* in italics?
 </div>
 {% endcapture %}
-{% include code-example code=block-elements-pitfall %}
+{% include editing/example code=block-elements-pitfall %}
 
 Add `markdown=1` to force Markdown rendering inside that element:
 
@@ -42,7 +42,7 @@ Add `markdown=1` to force Markdown rendering inside that element:
 Yay, *this* is now in italics!
 </div>
 {% endcapture %}
-{% include code-example code=block-elements-with-markdown %}
+{% include editing/example code=block-elements-with-markdown %}
 
 {% include notice icon="warning" content="Be sure to ***put a newline before your `</div>`***! Otherwise you will get broken HTML. (Might be a bug in the Kramdown renderer?)" %}
 
@@ -54,7 +54,7 @@ target the parts you want Markdownified using `<span markdown=1>`:
 They are so <span markdown=1>**pretty**</span>!
 Do you like *asterisks* too?</div>
 {% endcapture %}
-{% include code-example code=targeted-markdown %}
+{% include editing/example code=targeted-markdown %}
 
 ## Suppressing Markdown rendering
 
@@ -66,7 +66,7 @@ Markdown rendering inside an HTML element:
 Here are some **asterisks**.
 </span>
 {% endcapture %}
-{% include code-example code=suppress-markdown %}
+{% include editing/example code=suppress-markdown %}
 
 ## Conditional expressions
 

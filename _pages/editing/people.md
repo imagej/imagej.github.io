@@ -21,7 +21,7 @@ or a plain/unlinked name.
 {% capture ex1-result %}
 {% include person id='rasband' %}
 {% endcapture %}
-{% include code-example code=ex1-code result=ex1-result %}
+{% include editing/example code=ex1-code result=ex1-result %}
 
 {% capture ex2-code %}
 {% raw %}{% include person id='ctrueden' name='Chuckles' %}{% endraw %}
@@ -29,7 +29,7 @@ or a plain/unlinked name.
 {% capture ex2-result %}
 {% include person id='ctrueden' name='Chuckles' %}
 {% endcapture %}
-{% include code-example code=ex2-code result=ex2-result %}
+{% include editing/example code=ex2-code result=ex2-result %}
 
 {% capture ex3-code %}
 {% raw %}{% include person name='Jane Doe' %}{% endraw %}
@@ -37,7 +37,7 @@ or a plain/unlinked name.
 {% capture ex3-result %}
 {% include person name='Jane Doe' %}
 {% endcapture %}
-{% include code-example code=ex3-code result=ex3-result %}
+{% include editing/example code=ex3-code result=ex3-result %}
 
 ## Lists of people
 
@@ -47,4 +47,4 @@ or a plain/unlinked name.
 {% capture list-ex1-result %}
 {% include person-list ids="dietzc | marktsuchida | Julius Caesar" %}
 {% endcapture %}
-{% include code-example code=list-ex1-code result=list-ex1-result %}
+{% include editing/example code=list-ex1-code result=list-ex1-result %}

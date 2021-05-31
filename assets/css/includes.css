@@ -48,29 +48,6 @@
     vertical-align: top;
 }
 
-/* code-example */
-
-.code-example {
-  display: flex;
-  flex-wrap: wrap;
-}
-.code-example div:first-child {
-  max-width: 100%;
-  margin-right: 1em;
-}
-
-.code-example div:last-child {
-  max-width: 100%;
-  overflow: auto;
-  padding-right: 8px;
-}
-
-.code-example div p {
-  text-align: center;
-  font-weight: bold;
-  margin: 0.2em 0 0 0;
-}
-
 /* gallery */
 
 .gallery {
@@ -329,4 +306,27 @@ table.table-OS-info {
   font-size: 0.7em;
   text-align: right;
   margin-top: -1em;
+}
+
+/* editing/example */
+
+.example {
+  display: flex;
+  flex-wrap: wrap;
+}
+.example div:first-child {
+  max-width: 100%;
+  margin-right: 1em;
+}
+
+.example div:last-child {
+  max-width: 100%;
+  overflow: auto;
+  padding-right: 8px;
+}
+
+.example div p {
+  text-align: center;
+  font-weight: bold;
+  margin: 0.2em 0 0 0;
 }

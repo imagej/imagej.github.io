@@ -172,25 +172,24 @@ The following tables list all of this site's general-purpose includes:
 
 #### Media
 
-| Include                                      | Purpose                    |
-|----------------------------------------------|----------------------------|
-| [img](images#images)                         | Insert an image            |
-| [gallery](images#image-galleries)            | Insert an image gallery    |
-| [video](videos)                              | Embed a video              |
+| Include                           | Purpose                    |
+|-----------------------------------|----------------------------|
+| [img](images#images)              | Insert an image            |
+| [gallery](images#image-galleries) | Insert an image gallery    |
+| [video](videos)                   | Embed a video              |
 
 #### Notices
 
-| Include                              | Purpose                               |
-|--------------------------------------|---------------------------------------|
-| [notice](notices)                    | Insert an informational notice banner |
-| [aside](TODO)                        | Float a right sidebar with commentary |
+| Include           | Purpose                               |
+|-------------------|---------------------------------------|
+| [notice](notices) | Insert an informational notice banner |
+| [aside](TODO)     | Float a right sidebar with commentary |
 
 #### Source code
 
-| Include                              | Purpose                          |
-|--------------------------------------|----------------------------------|
-| [code](TODO)                 | Embed a code snippet from GitHub |
-| [code-example](TODO)                 | Side-by-side code + result       |
+| Include      | Purpose                          |
+|--------------|----------------------------------|
+| [code](TODO) | Embed a code snippet from GitHub |
 
 #### Miscellaneous
 

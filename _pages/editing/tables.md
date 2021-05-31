@@ -18,7 +18,7 @@ You can, however, easily create one using Markdown:
 | 5    | 4   | 3     | 2      | 1      |
 | 1    | 2   | 3     | 4      | 5      |
 {% endcapture %}
-{% include code-example code=simple-table %}
+{% include editing/example code=simple-table %}
 
 ## Aligning Columns
 
@@ -33,7 +33,7 @@ You can place `:` symbols in the table header to specify column alignment:
 |  Thursday |     Thu      | Friday's Friday |
 |    Friday |     Fri      | TGIF            |
 {% endcapture %}
-{% include code-example code=aligned-columns %}
+{% include editing/example code=aligned-columns %}
 
 ## Adding Images
 
@@ -43,7 +43,7 @@ You can include images within tables:
 | ![Plugins](/media/editing/plugins.png) | The bread and butter of ImageJ. |
 | ![Extend](/media/editing/extend.png)   | You know you want to.           |
 {% endcapture %}
-{% include code-example code=table-with-images %}
+{% include editing/example code=table-with-images %}
 
 ## Custom Styling
 
@@ -58,7 +58,7 @@ You can add custom styling to a table by attaching a
 | Squirrel Girl | talks with squirrels |
 {:.box}
 {% endcapture %}
-{% include code-example code=custom-styling %}
+{% include editing/example code=custom-styling %}
 
 If there is not already a class with the styling you want,
 you can declare it inline:
@@ -80,5 +80,5 @@ you can declare it inline:
 | Silver Surfer  | absurd     |
 {:.power-levels-table}
 {% endcapture %}
-{% include code-example code=custom-styling-inline %}
+{% include editing/example code=custom-styling-inline %}
 

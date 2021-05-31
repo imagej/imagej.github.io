@@ -27,7 +27,7 @@ by separating them with `|` symbols:
 {% capture key-combos-result %}
 {% include key keys="ctrl|c" %}
 {% endcapture %}
-{% include code-example code=key-combos-code result=key-combos-result %}
+{% include editing/example code=key-combos-code result=key-combos-result %}
 
 ## Keyboard styles
 
@@ -44,7 +44,7 @@ By default, keys are rendered in a platform-agnostic way, but you can use the
 | PC style  | {% include key key="ctrl|tab" style="pc" %}  |
 | Mac style | {% include key key="ctrl|tab" style="mac" %} |
 {% endcapture %}
-{% include code-example code=keyboard-style-code result=keyboard-style-result %}
+{% include editing/example code=keyboard-style-code result=keyboard-style-result %}
 
 ## Special code for OS-dependent Ctrl/Command
 
@@ -60,7 +60,7 @@ parenthetical note about macOS every time.
 {% capture ctlcmd-result %}
 <div style="padding-left: 2em; width: 9rem; height: 4rem">{% include key keys="ctlcmd|L" %}</div>
 {% endcapture %}
-{% include code-example code=ctlcmd-code result=ctlcmd-result %}
+{% include editing/example code=ctlcmd-code result=ctlcmd-result %}
 
 ## Custom chain symbols
 
@@ -74,7 +74,7 @@ to do something different:
 {% capture custom-chain-symbols-result %}
 {% include key keys="ctrl|shift|esc" chain="&#9939;" %}
 {% endcapture %}
-{% include code-example code=custom-chain-symbols-code result=custom-chain-symbols-result %}
+{% include editing/example code=custom-chain-symbols-code result=custom-chain-symbols-result %}
 
 ## List of key codes
 

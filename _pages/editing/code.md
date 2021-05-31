@@ -15,7 +15,7 @@ surround the code in backtick symbols (<code>`</code>).
 {% capture inline-code-snippet %}
 Type `print('Hello world!')` and save as `hello.py`.
 {% endcapture %}
-{% include code-example code=inline-code-snippet %}
+{% include editing/example code=inline-code-snippet %}
 
 ## Code fences
 
@@ -34,7 +34,7 @@ univ.addMesh(yourImagePlus, null, "somename", 50,
   new boolean[] {true, true, true}, 2);
 ```
 {% endcapture %}
-{% include code-example code=code-fence-java %}
+{% include editing/example code=code-fence-java %}
 
 ### Python example
 
@@ -50,7 +50,7 @@ def update_progress(progress):
     sys.stdout.flush()
 ```
 {% endcapture %}
-{% include code-example code=code-fence-python %}
+{% include editing/example code=code-fence-python %}
 
 ## Highlight directive
 
@@ -69,7 +69,7 @@ log.info("You're a wizard, Harry!");
 log.error("I'm a what?");
 {% endhighlight %}
 {% endcapture %}
-{% include code-example code=liquid-highlight-code result=liquid-highlight-result %}
+{% include editing/example code=liquid-highlight-code result=liquid-highlight-result %}
 
 The `highlight` directive and code fences are separate features, but
 functionally very similar. If code fences are not working as you like,
@@ -115,7 +115,7 @@ Parameters supported by the `code` include are:
      path="life.c"
      label="Conway's Obfuscated Game of Life" %}
 {% endcapture %}
-{% include code-example code=github-embed-code result=github-embed-result %}
+{% include editing/example code=github-embed-code result=github-embed-result %}
 
 Additional parameters supported by embeds from GitHub specifically:
 
@@ -153,7 +153,7 @@ We want to support embedding from GitLab, but it's not implemented yet:
      line-start=91 line-end=112
      label="Spot-On export TrackMate tracks to XML" %}
 {% endcapture %}
-{% include code-example code=gitlab-embed-code result=gitlab-embed-result %}
+{% include editing/example code=gitlab-embed-code result=gitlab-embed-result %}
 
 ### Embedding from BitBucket
 
@@ -181,7 +181,7 @@ We want to support embedding from GitLab, but it's not implemented yet:
      line-start=279 line-end=297
      label="Reading KLB data as ImgLib2 image" %}
 {% endcapture %}
-{% include code-example code=bitbucket-embed-code result=bitbucket-embed-result %}
+{% include editing/example code=bitbucket-embed-code result=bitbucket-embed-result %}
 
 ## Footnotes
 

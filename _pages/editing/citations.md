@@ -23,7 +23,7 @@ The `citation` include is used to cite a publication.
 {% capture top-100-papers-result %}
 {% include citation doi='10.1038/514550a' %}
 {% endcapture %}
-{% include code-example code=top-100-papers-code result=top-100-papers-result %}
+{% include editing/example code=top-100-papers-code result=top-100-papers-result %}
 
 ### Citation styles
 
@@ -35,7 +35,7 @@ The default citation style is APA, but Harvard and Vancouver styles are also sup
 {% capture harvard-style-result %}
 {% include citation doi='10.1038/514550a' style='harvard1' %}
 {% endcapture %}
-{% include code-example code=harvard-style-code result=harvard-style-result %}
+{% include editing/example code=harvard-style-code result=harvard-style-result %}
 
 {% capture vancouver-style-code %}
 {% raw %}{% include citation doi='10.1038/514550a' style='vancouver' %}{% endraw %}
@@ -43,7 +43,7 @@ The default citation style is APA, but Harvard and Vancouver styles are also sup
 {% capture vancouver-style-result %}
 {% include citation doi='10.1038/514550a' style='vancouver' %}
 {% endcapture %}
-{% include code-example code=vancouver-style-code result=vancouver-style-result %}
+{% include editing/example code=vancouver-style-code result=vancouver-style-result %}
 
 {% include notice icon="tech" content="All of these features are driven by the
   [citation-js](https://citation.js.org/) library,
@@ -59,7 +59,7 @@ The default citation style is APA, but Harvard and Vancouver styles are also sup
 {% capture citation-by-id-result %}
 {% include citation id="plugins/3d-viewer" %}
 {% endcapture %}
-{% include code-example code=citation-by-id-code result=citation-by-id-result %}
+{% include editing/example code=citation-by-id-code result=citation-by-id-result %}
 
 The DOI used is pulled from the front matter of the given wiki page URL.
 
@@ -81,7 +81,7 @@ In that case, all citations will be shown in the list:
 {% capture cellprofiler-citations-result %}
 {% include citation id="software/cellprofiler" %}
 {% endcapture %}
-{% include code-example code=cellprofiler-citations-code result=cellprofiler-citations-result %}
+{% include editing/example code=cellprofiler-citations-code result=cellprofiler-citations-result %}
 
 # Testimonials
 

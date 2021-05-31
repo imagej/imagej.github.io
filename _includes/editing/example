@@ -2,7 +2,7 @@
 Inserts a side-by-side example of raw code and its formatted result.
 {%- endcomment -%}
 {%- assign result = include.result | default: include.code -%}
-<div class="code-example">
+<div class="example">
 <div>
 <p>Code</p>
 {% highlight liquid %}{{include.code}}{% endhighlight %}

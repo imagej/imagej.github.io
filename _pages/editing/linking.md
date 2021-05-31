@@ -30,7 +30,7 @@ Use `path` to link to a file off the repository root:
 {% capture github-path-result %}
 {% include github branch='master' path='WELCOME.md' %}
 {% endcapture %}
-{% include code-example code=github-path-code result=github-path-result %}
+{% include editing/example code=github-path-code result=github-path-result %}
 
 Use `source` to link to a source file within the repository's
 `src/main/java` subtree:
@@ -41,7 +41,7 @@ Use `source` to link to a source file within the repository's
 {% capture github-source-result %}
 {% include github branch='master' source='net/imagej/ImageJ.java' %}
 {% endcapture %}
-{% include code-example code=github-source-code result=github-source-result %}
+{% include editing/example code=github-source-code result=github-source-result %}
 
 Use `org` and `repo` to link to a different repository than
 `imagej/imagej`:
@@ -52,7 +52,7 @@ Use `org` and `repo` to link to a different repository than
 {% capture github-org-repo-result %}
 {% include github org='fiji' repo='TrackMate' branch='master' path='README.md' %}
 {% endcapture %}
-{% include code-example code=github-org-repo-code result=github-org-repo-result %}
+{% include editing/example code=github-org-repo-code result=github-org-repo-result %}
 
 You can give just a `repo` (or just an `org`), and it will be used for
 both `org` and `repo`:
@@ -65,7 +65,7 @@ both `org` and `repo`:
 {% include github repo='fiji' branch='master'
   path='plugins/Examples/Fiji_Cube.ijm' %}
 {% endcapture %}
-{% include code-example code=github-org-repo-2-code result=github-org-repo-2-result %}
+{% include editing/example code=github-org-repo-2-code result=github-org-repo-2-result %}
 
 If you give neither a `path` nor a `source` then it links to the
 repository as a whole:
@@ -76,7 +76,7 @@ repository as a whole:
 {% capture github-whole-repo-result %}
 {% include github repo='fiji' %}  
 {% endcapture %}
-{% include code-example code=github-whole-repo-code result=github-whole-repo-result %}
+{% include editing/example code=github-whole-repo-code result=github-whole-repo-result %}
 
 Use `branch` or `tag` to specify a branch or tag (rather than `main`):
 
@@ -88,7 +88,7 @@ Use `branch` or `tag` to specify a branch or tag (rather than `main`):
 {% include github tag='imagej-2.0.0-beta-7.9'
   path='app/src/test/java/imagej/debug/TypeHierarchy.java' %}  
 {% endcapture %}
-{% include code-example code=github-tag-code result=github-tag-result %}
+{% include editing/example code=github-tag-code result=github-tag-result %}
 
 Specifying `tag` alone links to the tag description:
 
@@ -98,7 +98,7 @@ Specifying `tag` alone links to the tag description:
 {% capture github-tag-alone-result %}
 {% include github tag='imagej-2.0.0-rc-44' %}  
 {% endcapture %}
-{% include code-example code=github-tag-alone-code result=github-tag-alone-result %}
+{% include editing/example code=github-tag-alone-code result=github-tag-alone-result %}
 
 Use `commit` to specify a commit hash:  
 
@@ -112,7 +112,7 @@ Use `commit` to specify a commit hash:
   commit='7a10880d485a13fc449d84c7e2eca3e1481064ee'
   label='imagej@7a10880d' %}  
 {% endcapture %}
-{% include code-example code=github-commit-code result=github-commit-result %}
+{% include editing/example code=github-commit-code result=github-commit-result %}
 
 Use `issue` or `pr` to specify an issue or PR number:
 
@@ -124,7 +124,7 @@ or {% include github pr='88' label='imagej#88' %}{% endraw %}
 {% include github issue='83' label='imagej#83' %}
 or {% include github pr='88' label='imagej#88' %}  
 {% endcapture %}
-{% include code-example code=github-issue-pr-code result=github-issue-pr-result %}
+{% include editing/example code=github-issue-pr-code result=github-issue-pr-result %}
 
 Use `label` to override the label:
 
@@ -138,7 +138,7 @@ Use `label` to override the label:
   path='plugins/Examples/Fiji_Logo_3D.js'
   label='Fiji...in 3D!' %}
 {% endcapture %}
-{% include code-example code=github-label-code result=github-label-result %}
+{% include editing/example code=github-label-code result=github-label-result %}
 
 ## Javadoc
 
@@ -152,7 +152,7 @@ See also the
 {% include javadoc project="SciJava" %}
 javadocs.
 {% endcapture %}
-{% include code-example code=javadoc-project-code result=javadoc-project-result %}
+{% include editing/example code=javadoc-project-code result=javadoc-project-result %}
 
 {% capture javadoc-class-code %}
 See also the
@@ -170,7 +170,7 @@ See also the
   class="ImageProcessor" %}
 class.
 {% endcapture %}
-{% include code-example code=javadoc-class-code result=javadoc-class-result %}
+{% include editing/example code=javadoc-class-code result=javadoc-class-result %}
 
 {% capture javadoc-anchor-code %}
 See also the
@@ -190,7 +190,7 @@ See also the
   anchor="getModules()" %}
 method.
 {% endcapture %}
-{% include code-example code=javadoc-anchor-code result=javadoc-anchor-result %}
+{% include editing/example code=javadoc-anchor-code result=javadoc-anchor-result %}
 
 {% capture javadoc-label-code %}
 See also the
@@ -204,7 +204,7 @@ See also the
   class="package-summary" label="ImageJ Ops" %}
 javadocs.
 {% endcapture %}
-{% include code-example code=javadoc-label-code result=javadoc-label-result %}
+{% include editing/example code=javadoc-label-code result=javadoc-label-result %}
 
 ## Matlab
 
@@ -214,7 +214,7 @@ Matlab has an {% raw %}{% include matlab path='ref' function='axis' %}{% endraw 
 {% capture matlab-result %}
 Matlab has an {% include matlab path='ref' function='axis' %} function.
 {% endcapture %}
-{% include code-example code=matlab-code result=matlab-result %}
+{% include editing/example code=matlab-code result=matlab-result %}
 
 ## Maven
 
@@ -226,7 +226,7 @@ The Maven artifact for ImageJ as a whole is
 The Maven artifact for ImageJ as a whole is
 {% include maven g='net.imagej' a='imagej' v='2.0.0' %}
 {% endcapture %}
-{% include code-example code=maven-code result=maven-result %}
+{% include editing/example code=maven-code result=maven-result %}
 
 ## Scholar
 
@@ -236,7 +236,7 @@ Check out {% raw %}{% include scholar cluster='8490320759898335020' label='NIH I
 {% capture scholar-result %}
 Check out {% include scholar cluster='8490320759898335020' label='NIH Image to ImageJ'%}!
 {% endcapture %}
-{% include code-example code=scholar-code result=scholar-result %}
+{% include editing/example code=scholar-code result=scholar-result %}
 
 {% capture scholar-default-code %}
 Check out NIH Image to ImageJ {% raw %}{% include scholar cluster='8490320759898335020'%}{% endraw %}!
@@ -244,7 +244,7 @@ Check out NIH Image to ImageJ {% raw %}{% include scholar cluster='8490320759898
 {% capture scholar-default-result %}
 Check out NIH Image to ImageJ {% include scholar cluster='8490320759898335020'%}!
 {% endcapture %}
-{% include code-example code=scholar-default-code result=scholar-default-result %}
+{% include editing/example code=scholar-default-code result=scholar-default-result %}
 
 
 ## Wikipedia
@@ -259,4 +259,4 @@ Check out the
 {% include wikipedia title="ImageJ" %}
 article on Wikipedia!
 {% endcapture %}
-{% include code-example code=wikipedia-code result=wikipedia-result %}
+{% include editing/example code=wikipedia-code result=wikipedia-result %}
