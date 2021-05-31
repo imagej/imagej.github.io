@@ -158,6 +158,10 @@ and the number zero (`0`) evaluate to `true`!
 |-------------------------------------|------------------------------------------------------------------------------|
 | `"have a cow"`                      | {% if "have a cow" %} true {% else %} false {% endif %}                      |
 | `""`                                | {% if "" %} true {% else %} false {% endif %}                                |
+| `0`                                 | {% if 0 %} true {% else %} false {% endif %}                                 |
+| `1`                                 | {% if 1 %} true {% else %} false {% endif %}                                 |
+| `false`                             | {% if false %} true {% else %} false {% endif %}                             |
+| `"false"`                           | {% if "false" %} true {% else %} false {% endif %}                           |
 | `nil`                               | {% if nil %} true {% else %} false {% endif %}                               |
 | `nil or ""`                         | {% if nil or "" %} true {% else %} false {% endif %}                         |
 | `nil or "" or "hello" or "goodbye"` | {% if nil or "" or "hello" or "goodbye" %} true {% else %} false {% endif %} |
