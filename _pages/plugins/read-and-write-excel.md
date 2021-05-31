@@ -215,6 +215,7 @@ Version 1.1.7 changes:
 | jars/poi-ooxml-schemas.jar    | [4](https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas)        |
 | jars/poi.jar                  | [5](https://mvnrepository.com/artifact/org.apache.poi/poi)                      |
 | jars/ij.jar                   | [6](https://mvnrepository.com/artifact/net.imagej/ij)                           |
+
 </div>
 
 ### Update site
