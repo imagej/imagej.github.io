@@ -3,7 +3,7 @@ mediawiki: MicrotubuleTracker
 title: MicrotubuleTracker
 logo: /media/logos/mtrack.png
 categories: [Tracking,Microtubules]
-artifact: net.imagej:MicrotubuleTracker
+artifact: sc.fiji:MTrackMate_
 ---
 
 <img src="/media/icons/mtrack.png" width="250"/> 
