@@ -2,7 +2,7 @@
 mediawiki: Lasso_and_Blow_Tool
 title: Lasso and Blow Tool
 categories: [Segmentation]
-artifact: sc.fiji:Lasso\_and\_Blow\_Tool
+artifact: sc.fiji:Lasso_and_Blow_Tool
 ---
 
 \[this is under construction\]

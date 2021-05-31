@@ -2,7 +2,7 @@
 mediawiki: Sync_Windows
 title: Sync Windows
 categories: [User interface]
-artifact: sc.fiji:Sync\_Win
+artifact: sc.fiji:Sync_Win
 ---
 
 The Sync Windows plugin synchronizes mouse motion and input between multiple windows. Thus, an ROI drawn in one window is replicated in all other synchronized windows in the synchronized window set. A synchronization cursor (the red box above) indicates the location of the mouse in all synchronized windows.

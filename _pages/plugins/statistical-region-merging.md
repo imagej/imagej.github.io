@@ -2,7 +2,7 @@
 mediawiki: Statistical_Region_Merging
 title: Statistical Region Merging
 categories: [Tutorials,Segmentation]
-artifact: sc.fiji:Statistical\_Region\_Merging
+artifact: sc.fiji:Statistical_Region_Merging
 ---
 
 Statistical Region Merging[^1] is a fast and robust algorithm to segment an image into regions of similar intensity or color.

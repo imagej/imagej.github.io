@@ -2,7 +2,7 @@
 mediawiki: Series_Labeler
 title: Series Labeler
 categories: [Image annotation, plugins]
-artifact: sc.fiji:Series\_Labeler
+artifact: sc.fiji:Series_Labeler
 ---
 
 This plugin is inspired by the [Time Stamper](/plugins/time-stamper) plugins from ImageJ and from Tony Collins' [MBF Plugin Collection](/software/mbf-imagej), as well as the imageJ built-in {% include bc path='Image|Stack|Label'%} command.

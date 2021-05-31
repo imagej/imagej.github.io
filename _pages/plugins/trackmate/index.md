@@ -3,7 +3,7 @@ mediawiki: TrackMate
 title: TrackMate
 categories: [Segmentation,Tracking,Tutorials]
 logo: /media/logos/trackmate-300p.png
-artifact: sc.fiji:TrackMate\_
+artifact: sc.fiji:TrackMate_
 doi: 10.1016/j.ymeth.2016.09.016
 ---
 

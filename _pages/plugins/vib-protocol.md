@@ -2,7 +2,7 @@
 mediawiki: VIB_Protocol
 title: VIB Protocol
 categories: []
-artifact: sc.fiji:VIB\_
+artifact: sc.fiji:VIB_
 ---
 
 The VIB Protocol is designed for aligning 3D image stacks. The images we used are confocal images of adult fly brains, but basically the VIB protocol can be used for any 3D images.

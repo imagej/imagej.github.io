@@ -2,7 +2,7 @@
 mediawiki: SPIM_Registration
 title: SPIM Registration
 categories: [Registration]
-artifact: sc.fiji:SPIM\_Registration
+artifact: sc.fiji:SPIM_Registration
 ---
 
  

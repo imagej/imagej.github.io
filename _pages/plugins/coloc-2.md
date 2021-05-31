@@ -2,7 +2,7 @@
 mediawiki: Coloc_2
 title: Coloc 2
 categories: [Colocalization,Color processing]
-artifact: sc.fiji:Colocalisation\_Analysis
+artifact: sc.fiji:Colocalisation_Analysis
 ---
 
 # What is Coloc 2

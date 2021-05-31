@@ -2,7 +2,7 @@
 mediawiki: Level_Sets
 title: Level Sets
 categories: []
-artifact: sc.fiji:level\_sets
+artifact: sc.fiji:level_sets
 ---
 
 <img src="/media/plugins/ls.2b.progress.png" width="300"/>

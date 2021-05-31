@@ -2,7 +2,7 @@
 mediawiki: Time_Lapse
 title: Time Lapse
 categories: []
-artifact: sc.fiji:Time\_Lapse
+artifact: sc.fiji:Time_Lapse
 ---
 
 {% include warning/stub %}

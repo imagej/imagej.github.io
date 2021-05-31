@@ -2,7 +2,7 @@
 mediawiki: Image_Expression_Parser
 title: Image Expression Parser
 categories: []
-artifact: sc.fiji:Image\_Expression\_Parser
+artifact: sc.fiji:Image_Expression_Parser
 ---
 
  

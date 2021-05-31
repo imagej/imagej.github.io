@@ -2,7 +2,7 @@
 mediawiki: MTrack2
 title: MTrack2
 categories: [Tracking]
-artifact: sc.fiji:MTrack2\_
+artifact: sc.fiji:MTrack2_
 ---
 
  This plugin is for tracking objects in 2D over time.

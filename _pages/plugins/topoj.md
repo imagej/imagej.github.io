@@ -2,7 +2,7 @@
 mediawiki: TopoJ
 title: TopoJ
 categories: [Tutorials]
-artifact: sc.fiji:TopoJ\_
+artifact: sc.fiji:TopoJ_
 ---
 
 The TopoJ plugins help you analyze surfaces of bright objects in image stacks. You can load an example via {% include bc path='File | Open Samples | SinteredAlumina (2.6MB)'%}:

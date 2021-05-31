@@ -2,7 +2,7 @@
 mediawiki: Image5D
 title: Image5D
 categories: [Visualization]
-artifact: sc.fiji:Image\_5D
+artifact: sc.fiji:Image_5D
 ---
 
 This page supersedes the [original Image5D page](/ij/plugins/image5d.html) from the ImageJ 1.x documentation.

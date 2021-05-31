@@ -2,7 +2,7 @@
 mediawiki: QuickPALM
 title: QuickPALM
 categories: [Super-resolution, Citable, Plugins]
-artifact: sc.fiji:QuickPALM\_
+artifact: sc.fiji:QuickPALM_
 doi: 10.1038/nmeth0510-339
 ---
 

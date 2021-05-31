@@ -2,7 +2,7 @@
 mediawiki: Helmholtz_Analysis
 title: Helmholtz Analysis
 categories: []
-artifact: sc.fiji:Helmholtz\_Analysis
+artifact: sc.fiji:Helmholtz_Analysis
 ---
 
 This plugin allows to analyze local direction and frequency of sinusoidal waves. The output are optionally smoothed *lambda* (inversely proportional to the frequency) and *phi* (direction in degrees).

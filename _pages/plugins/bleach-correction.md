@@ -2,7 +2,7 @@
 mediawiki: Bleach_Correction
 title: Bleach Correction
 categories: []
-artifact: sc.fiji:CorrectBleach\_
+artifact: sc.fiji:CorrectBleach_
 ---
 
 The plugin was made available by {% include person id='cmci' %} and Jens Rietdorf and the full documentation is available [at EMBL's site](http://cmci.embl.de/downloads/bleach_corrector).

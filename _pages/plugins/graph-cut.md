@@ -2,7 +2,7 @@
 mediawiki: Graph_Cut
 title: Graph Cut
 categories: [Segmentation,Tutorials]
-artifact: sc.fiji:Graph\_Cut
+artifact: sc.fiji:Graph_Cut
 ---
 
  <img src="/media/plugins/mito-sample.png" width="350"/>

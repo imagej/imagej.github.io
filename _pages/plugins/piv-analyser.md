@@ -2,7 +2,7 @@
 mediawiki: PIV_analyser
 title: PIV analyser
 categories: [Optic Flow]
-artifact: sc.fiji:PIV\_analyser
+artifact: sc.fiji:PIV_analyser
 ---
 
 This plugin calculates the optic flow for each pair of images made with the given stack.

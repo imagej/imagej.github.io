@@ -2,7 +2,7 @@
 mediawiki: Register_Virtual_Stack_Slices
 title: Register Virtual Stack Slices
 categories: [Registration,TrakEM2]
-artifact: sc.fiji:register\_virtual\_stack\_slices
+artifact: sc.fiji:register_virtual_stack_slices
 ---
 
 {\| \|style="vertical-align:top" \|<img src="/media/rvs-scheme.png" title="fig:Register Virtual Stack scheme - All images are transformed to match the reference" width="380" alt="Register Virtual Stack scheme - All images are transformed to match the reference" /> \|}

@@ -2,7 +2,7 @@
 mediawiki: Volume_Viewer
 title: Volume Viewer
 categories: [Visualization]
-artifact: sc.fiji:Volume\_Viewer
+artifact: sc.fiji:Volume_Viewer
 ---
 
 3D reslicing and threshold-enabled 3D visualization.

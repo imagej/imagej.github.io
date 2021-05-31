@@ -2,7 +2,7 @@
 mediawiki: Image_Stitching
 title: Image Stitching
 categories: [Registration,Stitching,Cookbook]
-artifact: sc.fiji:Stitching\_
+artifact: sc.fiji:Stitching_
 ---
 
  

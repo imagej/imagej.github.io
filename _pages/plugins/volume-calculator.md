@@ -2,7 +2,7 @@
 mediawiki: Volume_Calculator
 title: Volume Calculator
 categories: []
-artifact: sc.fiji:Volume\_Calculator
+artifact: sc.fiji:Volume_Calculator
 ---
 
 {\| \|style="vertical-align:top" \|<img src="/media/plugins/volcal.png" title="fig:Volume Calculator user interface." width="380" alt="Volume Calculator user interface." /> \|}

@@ -2,7 +2,7 @@
 mediawiki: RATS:_Robust_Automatic_Threshold_Selection
 title: RATS › Robust Automatic Threshold Selection
 categories: [Segmentation,Tutorials]
-artifact: sc.fiji:RATS\_
+artifact: sc.fiji:RATS_
 ---
 
 Robust Automatic Threshold Selection (RATS) computes a threshold map for a 2d image based upon the value of pixels and their gradients.

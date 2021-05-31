@@ -2,7 +2,7 @@
 mediawiki: FijiArchipelago
 title: FijiArchipelago
 categories: [TrakEM2]
-artifact: sc.fiji:Fiji\_Archipelago
+artifact: sc.fiji:Fiji_Archipelago
 ---
 
 Fiji Archipelago is a plugin that brings Cluster functionality to Fiji

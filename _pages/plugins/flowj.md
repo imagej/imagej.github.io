@@ -2,7 +2,7 @@
 mediawiki: FlowJ
 title: FlowJ
 categories: [Optic Flow]
-artifact: sc.fiji:FlowJ\_
+artifact: sc.fiji:FlowJ_
 ---
 
 FlowJ is a plugin that implements the main gradient-based optical flow techniques, such as Lucas and Kanade, Uras, Fleet and Jepson and Singh algorithms.

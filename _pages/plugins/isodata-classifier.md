@@ -2,7 +2,7 @@
 mediawiki: IsoData_Classifier
 title: IsoData Classifier
 categories: [Segmentation]
-artifact: sc.fiji:IsoData\_Classifier
+artifact: sc.fiji:IsoData_Classifier
 ---
 
  This plugin calculates a classification based on the histogram of the image by generalizing the [IsoData](IsoData) algorithm to more than two classes.

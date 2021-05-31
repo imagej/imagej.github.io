@@ -2,7 +2,7 @@
 mediawiki: Directionality
 title: Directionality
 categories: [Analysis]
-artifact: sc.fiji:Directionality\_
+artifact: sc.fiji:Directionality_
 ---
 
  

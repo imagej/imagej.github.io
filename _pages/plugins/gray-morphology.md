@@ -2,7 +2,7 @@
 mediawiki: Gray_Morphology
 title: Gray Morphology
 categories: [Segmentation,Mathematical morphology]
-artifact: sc.fiji:Gray\_Morphology
+artifact: sc.fiji:Gray_Morphology
 ---
 
 This plugin performs {% include wikipedia title='Mathematical morphology' text='mathematical morphology'%} on grayscale images. It only works on [8-bit](8-bit) grayscale images.

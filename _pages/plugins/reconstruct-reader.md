@@ -2,7 +2,7 @@
 mediawiki: Reconstruct_Reader
 title: Reconstruct Reader
 categories: [TrakEM2]
-artifact: sc.fiji:Reconstruct\_Reader
+artifact: sc.fiji:Reconstruct_Reader
 ---
 
 The Reconstruct Reader plugin is a utility to transform [Reconstruct](http://synapses.clm.utexas.edu/tools/reconstruct/reconstruct.stm) projects directly into [TrakEM2](/plugins/trakem2) projects.

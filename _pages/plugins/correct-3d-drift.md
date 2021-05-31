@@ -2,7 +2,7 @@
 mediawiki: Correct_3D_Drift
 title: Correct 3D Drift
 categories: [Registration]
-artifact: sc.fiji:Correct\_3D\_Drift
+artifact: sc.fiji:Correct_3D_Drift
 ---
 
 This Fiji menu command is implemented by the script {% include github org='fiji' repo='Correct\_3D\_Drift' branch='master' path='src/main/resources/scripts/Plugins/Registration/Correct\_3D\_drift.py' label='Correct\_3D\_Drift.py' %}.

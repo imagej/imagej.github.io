@@ -2,7 +2,7 @@
 mediawiki: Balloon
 title: Balloon
 categories: [Segmentation]
-artifact: sc.fiji:BalloonSegmentation\_
+artifact: sc.fiji:BalloonSegmentation_
 ---
 
 ## Balloon Segmentation for multicellular images

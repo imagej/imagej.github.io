@@ -2,7 +2,7 @@
 mediawiki: Linear_Kuwahara
 title: Linear Kuwahara
 categories: [Tutorials]
-artifact: sc.fiji:Linear\_Kuwahara
+artifact: sc.fiji:Linear_Kuwahara
 ---
 
 This plugin extends the idea of the [original Kuwahara](/ij/plugins/kuwahara.html) filter from rectangular kernels to (straight) linear ones.

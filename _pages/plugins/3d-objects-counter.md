@@ -2,7 +2,7 @@
 mediawiki: 3D_Objects_Counter
 title: 3D Objects Counter
 categories: [Particle analysis]
-artifact: sc.fiji:3D\_Objects\_Counter
+artifact: sc.fiji:3D_Objects_Counter
 ---
 
 ## What does it do ?

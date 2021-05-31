@@ -2,7 +2,7 @@
 mediawiki: BigWarp
 title: BigWarp
 categories: [Visualization,Transform,Registration]
-artifact: sc.fiji:bigwarp\_fiji
+artifact: sc.fiji:bigwarp_fiji
 doi: 10.1109/ISBI.2016.7493463
 ---
 

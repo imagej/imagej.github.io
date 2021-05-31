@@ -2,7 +2,7 @@
 mediawiki: BUnwarpJ
 title: BUnwarpJ
 categories: [Registration]
-artifact: sc.fiji:bUnwarpJ\_
+artifact: sc.fiji:bUnwarpJ_
 ---
 
 {\| \|style="vertical-align:top" \|<img src="/media/plugins/bunwarpj-scheme.png" title="fig:bUnwarpJ scheme: bidirectional Unwarping in Java." width="390" alt="bUnwarpJ scheme: bidirectional Unwarping in Java." /> \|}

@@ -2,7 +2,7 @@
 mediawiki: Cell_Counter
 title: Cell Counter
 categories: [Particle analysis]
-artifact: sc.fiji:Cell\_Counter
+artifact: sc.fiji:Cell_Counter
 ---
 
 This plugin will open a new cell counter GUI. On the left are the counter types and counters, on the right the action buttons.

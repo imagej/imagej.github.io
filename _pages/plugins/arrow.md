@@ -2,7 +2,7 @@
 mediawiki: Arrow
 title: Arrow
 categories: [Image annotation]
-artifact: sc.fiji:Arrow\_
+artifact: sc.fiji:Arrow_
 ---
 
  ![](/media/plugins/arrow-example.png)

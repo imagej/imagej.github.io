@@ -2,7 +2,7 @@
 mediawiki: Stitching_2D/3D
 title: Stitching 2D/3D
 categories: [Registration,Stitching]
-artifact: sc.fiji:Stitching\_
+artifact: sc.fiji:Stitching_
 ---
 
 {% include notice icon="warning" content='Please note that this version of the Stitching is deprecated. A new version is available here: [Image Stitching](/plugins/image-stitching)' %}

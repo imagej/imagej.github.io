@@ -2,7 +2,7 @@
 mediawiki: Samples
 title: Samples
 categories: []
-artifact: sc.fiji:Samples\_
+artifact: sc.fiji:Samples_
 ---
 
 This component provides hooks which register the [Fiji sample images](https://samples.fiji.sc/) into the {% include bc path='File | Open Samples'%} submenu.

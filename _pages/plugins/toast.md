@@ -2,7 +2,7 @@
 mediawiki: ToAST
 title: ToAST
 categories: [Tracking]
-artifact: sc.fiji:ToAST\_
+artifact: sc.fiji:ToAST_
 ---
 
 The **ToAST** plugin (Tool for Automated Sporozoite Tracking)

@@ -2,7 +2,7 @@
 mediawiki: Make_Fiji_Package
 title: Make Fiji Package
 categories: [Tutorials]
-artifact: sc.fiji:Fiji\_Package\_Maker
+artifact: sc.fiji:Fiji_Package_Maker
 ---
 
 The Fiji Packager allows you to bundle an existing Fiji installation so you can share all the plugins and update sites with colleagues. It makes a single archive (.zip, .tar.gz, .tar.bz2 are supported at the moment) from the files in *Fiji.app/*.

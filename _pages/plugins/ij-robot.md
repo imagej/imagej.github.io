@@ -2,7 +2,7 @@
 mediawiki: IJ_Robot
 title: IJ Robot
 categories: []
-artifact: sc.fiji:IJ\_Robot
+artifact: sc.fiji:IJ_Robot
 ---
 
 This plugin calls the Robot Java class. The purpose of the plugin is to allow the macro language to control other programs via clicking and key presses.
