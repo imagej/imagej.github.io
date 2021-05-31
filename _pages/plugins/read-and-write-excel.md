@@ -1,20 +1,24 @@
 ---
 mediawiki: Read_and_Write_Excel
 title: Read and Write Excel
-categories: []
+categories: [Import-export]
 ---
 
 ## Introduction
 
+<div align="left">
 
 {% capture source%}
 {% include github org='antinos' repo='Read_and_Write_Excel_Modified' %}
 {% endcapture %}
-{% include info-box name='Read and Write Excel' software='ImageJ/Fiji' latest-version='1.1.7' author='Anthony Sinadinos, Brenden Kromhout' maintainer='Anthony Sinadinos [(antinos)](https://forum.image.sc/u/antinos/)' source=source category='[Plugins](/plugin-index)' website=' [Youtube tutorial](https://www.youtube.com/watch?v=dLkoB25MTIY)' %} By default, this plugin extracts data from the Results Table and adds it to a sheet-tab "A" in an .xlsx Excel file on the user's desktop. The plugin will create a file named "Rename me after writing is done" on the desktop if none-exists already, and will update this file if it has already been created. Data is added to the latest sheet (created as "A" if the file is new) or to a user specified sheet using a passed argument (see below). Within the latest sheet, data will be added adjacent to previous data, unless an argument is passed to stack data underneath pre-existing column headers and data. Results Table column headers are added automatically. A row count is added by default but the user can choose to deny this with a passed argument.
+{% include info-box name='Read and Write Excel' software='ImageJ/Fiji' latest-version='1.1.7' author='Anthony Sinadinos, Brenden Kromhout' maintainer='Anthony Sinadinos [(antinos)](https://forum.image.sc/u/antinos/)' source=source category='[Plugins](/plugin-index)' website=' [Youtube tutorial](https://www.youtube.com/watch?v=dLkoB25MTIY)' %}
+</div>
+
+By default, this plugin extracts data from the Results Table and adds it to a sheet-tab "A" in an .xlsx Excel file on the user's desktop. The plugin will create a file named "Rename me after writing is done" on the desktop if none-exists already, and will update this file if it has already been created. Data is added to the latest sheet (created as "A" if the file is new) or to a user specified sheet using a passed argument (see below). Within the latest sheet, data will be added adjacent to previous data, unless an argument is passed to stack data underneath pre-existing column headers and data. Results Table column headers are added automatically. A row count is added by default but the user can choose to deny this with a passed argument.
 
 Created in Eclipse IDE. Requires jre 1.8, which is current ImageJ compatible.
-<details><summary>Version release date table</summary>
 
+{% capture version-release-table %}
 | Version | Release Date | Notes |
 |---|---|---|
 | v1.0.0  | 19 Nov 2015 |      |
@@ -28,16 +32,18 @@ Created in Eclipse IDE. Requires jre 1.8, which is current ImageJ compatible.
 | v1.1.5  | 30 Nov 2019 |      |
 | v1.1.6  | 20 May 2020 |      |
 | v1.1.7  | 26 Sep 2020 |      |
+{:.left}
+{% endcapture %}
+<details><summary>Version release date table</summary>
+{{ version-release-table | markdownify }}
 </details>
 
 
 
 ## Usage
 **Youtube tutorial:**
-<span style="float:right; margin-left:10px;">
 
-{% include video platform='youtube' id='dLkoB25MTIY'%}
-</span>
+{% include video platform='youtube' id='dLkoB25MTIY' align='left'%}
 
 This plugin can be called from a macro using:
 
@@ -141,8 +147,9 @@ Since Brenden modified the plugin, the code is now a lot neater. Feel free to co
 ## Plugin technical details
 
 ### Change log
-<details><summary>(click to expand)</summary>
-     
+
+{% capture change-log %}
+
 Version 1.0.1 changes:
 
 1.  package is not bloated by dependency .jar files.
@@ -189,18 +196,26 @@ Version 1.1.6 changes:
 Version 1.1.7 changes:
 
 1.   Feature added. 'cell_ref' argument now allows data to be imported to the specified cell. User request from Stein Rørvik (steinr). NOTE: the plugin does not check to see if data is already present at the specified location, so overwriting is possible. Column headers are also not exported with the data.
+
+{:.left}
+{% endcapture %}
+<details><summary>(click to expand)</summary>
+{{ change-log | markdownify }}
 </details>
 
 ### Dependencies
 
+<div align="left">
+     
 | Dependency | Maven Repo |
-|---|---|
+|---|:-:|
 | jars/commons-collections4.jar | [1](https://mvnrepository.com/artifact/org.apache.commons/commons-collections4) |
 | jars/xmlbeans.jar             | [2](https://mvnrepository.com/artifact/org.apache.xmlbeans/xmlbeans)            |
 | jars/poi-ooxml.jar            | [3](https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml)                |
 | jars/poi-ooxml-schemas.jar    | [4](https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas)        |
 | jars/poi.jar                  | [5](https://mvnrepository.com/artifact/org.apache.poi/poi)                      |
 | jars/ij.jar                   | [6](https://mvnrepository.com/artifact/net.imagej/ij)                           |
+</div>
 
 ### Update site
 
