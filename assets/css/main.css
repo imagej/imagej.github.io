@@ -1148,15 +1148,8 @@ ul.major-icons li .icon:before {
 
 /* Table */
 
-.table-wrapper {
-  -webkit-overflow-scrolling: touch;
-  overflow-x: auto;
-}
-
 table {
-  margin: 0 auto;
-  width: 100%;
-
+  margin: 0 auto 1rem auto;
 }
 
 table tbody tr {
