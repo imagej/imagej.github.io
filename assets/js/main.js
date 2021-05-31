@@ -58,3 +58,18 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+/*
+ * Set the anchor offset to match the nav-bar height. Otherwise, clicking
+ * an anchor link results in the header being concealed beneath the nav-bar.
+ */
+var navBar = document.getElementById('nav-bar');
+if (navBar != null) {
+  var anchorOffsetRule = document.styleSheets[0].cssRules[
+    document.styleSheets[0].insertRule(
+      `[id] { scroll-margin-top: ${navBar.offsetHeight+10}px }`, 0)
+  ];
+  document.defaultView.addEventListener('resize', function(e) {
+    anchorOffsetRule.style['scroll-margin-top'] = `${navBar.offsetHeight+10}px`;
+  }, false);
+}
