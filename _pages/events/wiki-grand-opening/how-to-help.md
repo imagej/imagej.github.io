@@ -223,7 +223,8 @@ As for which pages to work on, here are some suggestions:
     we mark a page as complete, and what will cause it to disappear from the
     [pages remaining list](page-list).
 
-Finally, **discuss early and often** in the [chat room](https://gitter.im/)!
+Finally, **discuss early and often** in the
+[chat room](https://gitter.im/imagej/imagej.github.io)!
 Asking questions is a good way to facilitate rapid progress, especially during
 times when other knowledgeable people are online (check the sign-up sheet for
 everyone's availability).
