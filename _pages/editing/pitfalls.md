@@ -44,7 +44,7 @@ Yay, *this* is now in italics!
 {% endcapture %}
 {% include editing/example code=block-elements-with-markdown %}
 
-{% include notice icon="warning" content="Be sure to ***put a newline before your `</div>`***! Otherwise you will get broken HTML. (Might be a bug in the Kramdown renderer?)" %}
+{% include notice icon="warning" content="Be sure to ***put a newline before your `</div>`***! Otherwise you will get broken HTML. (Might be a bug in the kramdown renderer?)" %}
 
 To avoid the pitfall with `</div>` and newlines, you can instead
 target the parts you want Markdownified using `<span markdown=1>`:

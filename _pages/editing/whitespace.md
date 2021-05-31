@@ -40,7 +40,7 @@ if we use backslashes?
 {% endcapture %}
 {% include editing/example code=two-backslashes-eol %}
 
-NB: This is a Kramdown feature; note that there is a space included after "What happens" at the end of the line, because we included one before the backslashes.
+NB: This is a kramdown feature; note that there is a space included after "What happens" at the end of the line, because we included one before the backslashes.
 
 ### Using an explicit &lt;br&gt;
 
