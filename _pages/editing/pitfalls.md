@@ -202,11 +202,23 @@ precedence](https://shopify.dev/docs/themes/liquid/reference/basics/operators#or
 
 Here is an example:
 
-{% highlight liquid %}{% raw %}
-{%- if nil and 'me' or 'yes' and 'OK' -%} true {%- else -%} false {%- endif -%}
-{% endraw %}{% endhighlight %}
-
-equals {% if nil and 'me' or 'yes' and 'OK' -%} true {%- else -%} false {%- endif -%}.
+{% capture operator-precedence-code %}{% raw %}
+{%- if nil and 'me' or 'yes' and 'OK' -%}
+  Oh yes I did!
+{%- else -%}
+  Oh no you didn't!
+{%- endif -%}
+{% endraw %}{% endcapture %}
+{% capture operator-precedence-result %}
+{%- if nil and 'me' or 'yes' and 'OK' -%}
+  Oh yes I did!
+{%- else -%}
+  Oh no you didn't!
+{%- endif -%}
+{% endcapture %}
+{% include editing/example
+  code=operator-precedence-code
+  result=operator-precedence-result %}
 
 Here is a breakdown of how Liquid is evaluating the above:
 
