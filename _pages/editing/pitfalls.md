@@ -140,9 +140,10 @@ truthy conditional expression and assign it to variable expecting it
 to be set as `true` or `false`. If you need that, you can write:
 
 {% highlight liquid %}{% raw %}
-{%- capture my-boolean-flag %}
-{%- if a or b or c -%} true {%- else -%} false {%- endif -%}
-{%- endcapture -%}
+{%- if a or b or c -%}
+  {%- assign my-boolean-flag = true -%}
+{%- else -%}
+  {%- assign my-boolean-flag = false -%}
 {% endraw %}{% endhighlight %}
 
 ### Truthiness and falsiness
