@@ -1,6 +1,7 @@
 ---
 mediawiki: MicrotubuleTracker
 title: MicrotubuleTracker
+categories: [Tracking,Microtubules]
 artifact: net.imagej:MTrack
 ---
 
