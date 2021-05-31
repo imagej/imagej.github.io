@@ -1,11 +1,24 @@
 ---
-mediawiki: DAIS
 title: DAIS
 section: Contribute:Organizations
 ---
 
 ## The Dresden Analysis-of-Images Suite
 
-<img src="/media/orgs/dais-csbd-color.png" title="fig:Dais_csbd_color.png" width="200" alt="Dais_csbd_color.png" /> <img src="/media/logos/denbi.png" title="fig:DeNBI_Logo_rgb.png" width="200" alt="DeNBI_Logo_rgb.png" /> The Dresden Analysis-of-Images Suite ([DAIS](http://dais.bioimagecomputing.com)) is a partner project of [CIBI](https://www.denbi.de/network/center-for-integrative-bioinformatics-cibi/21-about/508-portfolio-of-center-for-integrative-bioinformatics-cibi) in the German Network for Bioinformatics Infrastructure ([de.NBI)](https://www.denbi.de). The [Fiji](/software/fiji) community is actively working towards tight integration with the [KNIME](/software/knime) workflow engine, which is maintained and developed by the de.NBI center CIBI. DAIS has a strong focus on further strengthening interoperability and integration of Fiji and KNIME, as well as bringing together their respective developer communities.
+{% include img src="dais-csbd-color" align="center" width="200" %}
+{% include img src="logos/denbi" align="center" width="200" %}
 
-{% include info-box message='If you are a Fiji user within the de.NBI network, we kindly ask for your feedback through [this survey](https://www.surveymonkey.de/r/denbi-service?sc=cibi&tool=fiji) .' %}
+The Dresden Analysis-of-Images Suite
+([DAIS](http://dais.bioimagecomputing.com)) is a partner project of
+[CIBI](https://www.denbi.de/network/center-for-integrative-bioinformatics-cibi/21-about/508-portfolio-of-center-for-integrative-bioinformatics-cibi)
+in the German Network for Bioinformatics Infrastructure
+([de.NBI)](https://www.denbi.de). The [Fiji](/software/fiji) community is
+actively working towards tight integration with the [KNIME](/software/knime)
+workflow engine, which is maintained and developed by the de.NBI center CIBI.
+DAIS has a strong focus on further strengthening interoperability and
+integration of Fiji and KNIME, as well as bringing together their respective
+developer communities.
+
+{% include notice icon='info' content='If you are a Fiji user
+  within the de.NBI network, we kindly ask for your feedback through
+  [this survey](https://www.surveymonkey.de/r/denbi-service?sc=cibi&tool=fiji).' %}

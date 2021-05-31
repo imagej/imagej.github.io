@@ -1,5 +1,4 @@
 ---
-mediawiki: MPI-CBG
 title: MPI-CBG
 section: Contribute:Organizations
 ---

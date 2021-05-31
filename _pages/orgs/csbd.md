@@ -1,5 +1,4 @@
 ---
-mediawiki: CSBD
 title: CSBD
 section: Contribute:Organizations
 ---

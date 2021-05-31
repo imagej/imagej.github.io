@@ -1,5 +1,4 @@
 ---
-mediawiki: COBA
 title: COBA
 section: Contribute:Organizations
 ---
