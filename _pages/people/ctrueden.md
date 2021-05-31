@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Rueden
 title: Curtis Rueden
 name: Curtis Rueden
 website: https://restlesscoder.net/
@@ -64,155 +63,72 @@ I also have the following continuous priorities:
 So you want to be an effective software developer? Use tools!
 
 {::nomarkdown}
-<table>
+<style>.boxed-table td { border: 1px solid lightgray }</style>
+<table class="boxed-table left">
   <thead>
-    <tr class="header">
-      <th>
-        <p>Tool</p>
-      </th>
-      <th>
-        <p>Purpose</p>
-      </th>
-      <th>
-        <p>Plugins</p>
-      </th>
-      <th></th>
+    <tr>
+      <th>Tool</th>
+      <th>Purpose</th>
+      <th colspan=2>Plugins</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>
-        <p><a href="/develop/eclipse">Eclipse</a></p>
-      </td>
-      <td>
-        <p>Super powerful</p>
+      <td rowspan=2><a href="/develop/eclipse">Eclipse</a></td>
+      <td rowspan=2>
+        Super powerful
         <ul>
           <li><em>Essential</em> for navigation of large projects</li>
           <li>Supreme code completion</li>
           <li>Super useful debugger</li>
         </ul>
       </td>
-      <td>
-        <p><a href="http://vrapper.sourceforge.net/">Vrapper</a></p>
-      </td>
-      <td>
-        <p>Vim-fu inside Eclipse – almost as good as the real thing</p>
-      </td>
+      <td><a href="http://vrapper.sourceforge.net/">Vrapper</a></td>
+      <td>Vim-fu inside Eclipse – almost as good as the real thing</td>
     </tr>
     <tr>
-      <td>
-        <p><a href="https://ecd-plugin.github.io/">Enhanced Class Decompiler</a></p>
-      </td>
-      <td>
-        <p>Automatic decompilation when browsing classes in Eclipse</p>
-      </td>
-      <td></td>
-      <td></td>
+      <td><a href="https://ecd-plugin.github.io/">Enhanced Class Decompiler</a></td>
+      <td>Automatic decompilation when browsing classes in Eclipse</td>
     </tr>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td rowspan=7><a href="https://www.vim.org/">Vim</a></td>
+      <td rowspan=7>Great editor. Crazy fast <a href="https://vim.wikia.com/wiki/Macros">macros</a></td>
+      <td><a href="https://github.com/VundleVim/Vundle.vim">Vundle</a></td>
+      <td>Manage your vim plugins like a boss</td>
     </tr>
     <tr>
-      <td>
-        <p><a href="https://www.vim.org/">Vim</a></p>
-      </td>
-      <td>
-        <p>Great editor. Crazy fast <a href="https://vim.wikia.com/wiki/Macros">macros</a></p>
-      </td>
-      <td>
-        <p><a href="https://github.com/VundleVim/Vundle.vim">Vundle</a></p>
-      </td>
-      <td>
-        <p>Manage your vim plugins like a boss</p>
-      </td>
+      <td><a href="https://github.com/tpope/vim-sensible">vim-sensible</a></td>
+      <td>Defaults everyone can agree on</td>
     </tr>
     <tr>
-      <td>
-        <p><a href="https://github.com/tpope/vim-sensible">vim-sensible</a></p>
-      </td>
-      <td>
-        <p>Defaults everyone can agree on</p>
-      </td>
-      <td></td>
-      <td></td>
+      <td><a href="https://github.com/vim-airline/vim-airline">vim-airline</a></td>
+      <td>Lean & mean status/tabline that's light as air</td>
     </tr>
     <tr>
-      <td>
-        <p><a href="https://github.com/vim-airline/vim-airline">vim-airline</a></p>
-      </td>
-      <td>
-        <p>Lean & mean status/tabline that's light as air</p>
-      </td>
-      <td></td>
-      <td></td>
+      <td><a href="https://github.com/tpope/vim-fugitive">vim-fugitive</a></td>
+      <td>A Git wrapper so awesome, it should be illegal</td>
     </tr>
     <tr>
-      <td>
-        <p><a href="https://github.com/tpope/vim-fugitive">vim-fugitive</a></p>
-      </td>
-      <td>
-        <p>A Git wrapper so awesome, it should be illegal</p>
-      </td>
-      <td></td>
-      <td></td>
+      <td><a href="https://github.com/tpope/vim-repeat">vim-repeat</a></td>
+      <td>Repeating supported plugin maps with "."</td>
     </tr>
     <tr>
-      <td>
-        <p><a href="https://github.com/tpope/vim-repeat">vim-repeat</a></p>
-      </td>
-      <td>
-        <p>Repeating supported plugin maps with "."</p>
-      </td>
-      <td></td>
-      <td></td>
+      <td><a href="https://github.com/tpope/vim-surround">vim-surround</a></td>
+      <td>Quoting/parenthesizing made simple</td>
     </tr>
     <tr>
-      <td>
-        <p><a href="https://github.com/tpope/vim-surround">vim-surround</a></p>
-      </td>
-      <td>
-        <p>Quoting/parenthesizing made simple</p>
-      </td>
-      <td></td>
-      <td></td>
+      <td colspan=2>See also <a href="https://github.com/ctrueden/dotfiles/blob/master/vimrc">my .vimrc</a></td>
     </tr>
     <tr>
-      <td>
-        <p>See also <a href="https://github.com/ctrueden/dotfiles/blob/master/vimrc">my .vimrc</a></p>
-      </td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td rowspan=6><a href="https://www.zsh.org/">Zsh</a></td>
+      <td rowspan=6>Awesome shell – even <a href="https://www.slideshare.net/jaguardesignstudio/why-zsh-is-cooler-than-your-shell-16194692">better than bash</a></td>
+      <td><a href="https://github.com/tarjoilija/zgen">zgen</a></td>
+      <td>Lightweight plugin manager</td>
     </tr>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
+      <td><a href="https://ohmyz.sh/">oh-my-zsh</a></td>
       <td>
-        <p><a href="https://www.zsh.org/">Zsh</a></p>
-      </td>
-      <td>
-        <p>Awesome shell – even <a href="https://www.slideshare.net/jaguardesignstudio/why-zsh-is-cooler-than-your-shell-16194692">better than bash</a></p>
-      </td>
-      <td>
-        <p><a href="https://github.com/tarjoilija/zgen">zgen</a></p>
-      </td>
-      <td>
-        <p>Lightweight plugin manager</p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p><a href="https://ohmyz.sh/">oh-my-zsh</a></p>
-      </td>
-      <td>
-        <p>Your terminal never felt <em>this</em> good before:</p>
+        Your terminal never felt <em>this</em> good before:
         <ul>
           <li><strong>git</strong> - awesome git completion and aliases</li>
           <li><strong>mvn</strong> - mvn completion, highlighting, aliases</li>
@@ -222,106 +138,40 @@ So you want to be an effective software developer? Use tools!
           <li>And <em>much</em> more</li>
         </ul>
       </td>
-      <td></td>
-      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/zsh-users/zsh-syntax-highlighting">zsh-syntax-highlighting</a></td>
+      <td>Syntax highlights commands as you type them</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/zsh-users/zsh-history-substring-search">zsh-history-substring-search</a></td>
+      <td>Better command history navigation</td>
     </tr>
     <tr>
       <td>
-        <p><a href="https://github.com/zsh-users/zsh-syntax-highlighting">zsh-syntax-highlighting</a></p>
+        <a href="https://github.com/zsh-users/zsh-completions">zsh-completion</a>
       </td>
-      <td>
-        <p>Syntax highlights commands as you type them</p>
-      </td>
-      <td></td>
-      <td></td>
+      <td>Even more and better tab completions</td>
     </tr>
     <tr>
-      <td>
-        <p><a href="https://github.com/zsh-users/zsh-history-substring-search">zsh-history-substring-search</a></p>
-      </td>
-      <td>
-        <p>Better command history navigation</p>
-      </td>
-      <td></td>
-      <td></td>
+      <td colspan=2>See also <a href="https://github.com/ctrueden/dotfiles/blob/master/zshrc">my .zshrc</a></td>
     </tr>
     <tr>
-      <td>
-        <p><a href="https://github.com/zsh-users/zsh-completions">zsh-completion</a></p>
-      </td>
-      <td>
-        <p>Even more and better tab completions</p>
-      </td>
-      <td></td>
-      <td></td>
+      <td rowspan=2><a href="/develop/git">Git</a></td>
+      <td rowspan=2>It is worth the pain, I promise</td>
+      <td><a href="https://myrepos.branchable.com/">myrepos</a></td>
+      <td>Commit, push & pull across repositories <a href="https://github.com/ctrueden/dotfiles/blob/master/mrconfig">en masse</a></td>
     </tr>
     <tr>
-      <td>
-        <p>See also <a href="https://github.com/ctrueden/dotfiles/blob/master/zshrc">my .zshrc</a></p>
-      </td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td colspan=2>See also <a href="https://github.com/ctrueden/dotfiles/blob/master/gitconfig">my .gitconfig</a></td>
     </tr>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td><a href="/develop/github">GitHub</a></td>
+      <td colspan=3>If you don't have a GitHub account, <a href="https://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/">you don't exist</a></td>
     </tr>
     <tr>
-      <td>
-        <p><a href="/develop/git">Git</a></p>
-      </td>
-      <td>
-        <p>It is worth the pain, I promise</p>
-      </td>
-      <td>
-        <p><a href="https://myrepos.branchable.com/">myrepos</a></p>
-      </td>
-      <td>
-        <p>Commit, push & pull across repositories <a href="https://github.com/ctrueden/dotfiles/blob/master/mrconfig">en masse</a></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p>See also <a href="https://github.com/ctrueden/dotfiles/blob/master/gitconfig">my .gitconfig</a></p>
-      </td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>
-        <p><a href="/develop/github">GitHub</a></p>
-      </td>
-      <td>
-        <p>If you don't have a GitHub account, <a href="https://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/">you don't exist</a></p>
-      </td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>
-        <p><a href="/develop/maven">Maven</a></p>
-      </td>
-      <td>
-        <p>Build <a href="https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants">reusable software components</a></p>
-      </td>
-      <td></td>
-      <td></td>
+      <td><a href="/develop/maven">Maven</a></td>
+      <td colspan=3>Build <a href="https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants">reusable software components</a></td>
     </tr>
   </tbody>
 </table>
