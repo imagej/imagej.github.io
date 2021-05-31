@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Timelines
 section: Contribute:Editing the Wiki
 nav-links: true

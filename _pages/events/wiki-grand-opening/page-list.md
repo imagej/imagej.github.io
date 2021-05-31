@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: The Great Wiki Launch › Page List
 section: Explore:Events
 nav-links: true

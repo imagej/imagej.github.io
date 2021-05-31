@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: The Great Wiki Launch
 description: This page organizes the community effort to launch the new ImageJ wiki.
 section: Explore:Events

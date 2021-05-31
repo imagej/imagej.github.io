@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Math Expressions
 section: Contribute:Editing the Wiki
 nav-links: true

@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Software Libraries
 section: Explore:Libraries
 ---

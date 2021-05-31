@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Simple Neurite Tracer
 nav-links: true
 nav-title: Index

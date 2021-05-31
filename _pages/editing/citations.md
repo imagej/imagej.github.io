@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Citations
 description: This page demonstrates how to cite sources.
 section: Contribute:Editing the Wiki

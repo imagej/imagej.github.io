@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: People
 section: Contribute:Editing the Wiki
 nav-links: true

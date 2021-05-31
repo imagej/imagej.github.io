@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Tables
 section: Contribute:Editing the Wiki
 nav-links: true

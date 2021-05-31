@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Images
 section: Contribute:Editing the Wiki
 nav-links: true

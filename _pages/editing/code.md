@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Source Code
 section: Contribute:Editing the Wiki
 nav-links: true

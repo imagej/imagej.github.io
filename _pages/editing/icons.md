@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Icons
 section: Contribute:Editing the Wiki
 nav-links: true

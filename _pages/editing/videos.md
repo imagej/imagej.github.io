@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: Videos 
 section: Contribute:Editing the Wiki
 description: This page demonstrates how to embed videos on a page.

@@ -1,5 +1,4 @@
 ---
-mediawiki: NONE
 title: The Great Wiki Launch › How to Help
 section: Explore:Events
 nav-links: true
