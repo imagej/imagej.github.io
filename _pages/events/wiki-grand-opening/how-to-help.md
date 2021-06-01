@@ -228,7 +228,7 @@ In many ways, this new wiki is much more powerful than the old site.
 
 ## Choosing a page to work on
 
-Look over the [list of pages remaining](/events/wiki-grand-opening/page-list).
+Look over the [list of pages remaining](page-list).
 Pick one, then go to
 [page two of the sign-up sheet](https://docs.google.com/spreadsheets/d/1CdRCMFBXCg6ypDGdDaZNEN5cBY_1Ye47-kyTZQ11wBQ/edit#gid=967393198)
 and put your name next to that page before you start working on it.
@@ -304,9 +304,11 @@ front matter fields](https://github.com/imagej/imagej.github.io/blob/main/_inclu
 Do you like writing documentation? You could add the mapping from `info-box`
  fields to `statbox` fields here in this section! It would help all of us.
 
-As a starting point for now: if the page describes a plugin corresponding to a
-particular JAR file published on maven.scijava.org, you can add the `artifact`
-front matter field with the `groupId:artifactId` of that JAR file. E.g., the
+#### Automatic statbox
+
+If the page describes a plugin corresponding to a particular JAR file published
+on maven.scijava.org, you can add the `artifact` front matter field with the
+`groupId:artifactId` of that JAR file. E.g., the
 [3D Viewer](/plugins/3d-viewer) page declares:
 ```
 artifact: sc.fiji:3D_Viewer
@@ -315,18 +317,73 @@ And then the "Vital statistics" box on the right gets populated automatically
 by some JavaScript magic. However, there are many plugins documented on the
 wiki that still use the old-style `info-box` include with hardcoded information,
 rather than declaring the `artifact` and letting it get filled in automatically.
-If you are working on such a page, but don't know the Maven artifact string to
-use, please ask in the chat room, and someone will help you out.
+
+Here's how to figure out which artifact code goes with a particular plugin.
+We'll use the [MorphoLibJ plugins](/plugins/morpholibj) as an example.
+
+*   Launch [Fiji](/software/fiji).
+
+*   If the plugin you want to find is not already installed, install it.
+    -   In our example, that means
+        [enabling the IJPB-plugins update site](/plugins/morpholibj#installation),
+        and then restarting ImageJ.
+
+*   Once your Fiji has the requisite plugin installed, search for it
+    using the [search bar](/learn/basics#the-search-bar). For example:
+
+    {% include img src="locate-gav-1" width=306 %}
+
+    Above, we found the "Morphological Filters" plugin, part of MorphoLibJ.
+
+*   Select the Identifier, minus the prefix (`legacy:` or `command:`). The rest
+    of the string is a known as a "fully qualified Java class name", and we
+    will use it to find the artifact string, which is colon-separated pair of
+    `groupId:artifactId`. (As you might have guessed, `groupId` represents the
+    group that produced the plugin, and is typically a reversed domain name.
+    So, for example, core ImageJ artifacts are in the group `net.imagej`. And
+    the `artifactId` is the name of the artifact itself, typically matching the
+    `.jar` filename.)
+
+*   Navigate to the [SciJava Maven repository](https://maven.scijava.org) in
+    your browser, and into the search box there, paste the string you
+    copied&mdash;in our example, it is
+    `inra.ijpb.plugins.MorphologicalFilterPlugin`.
+    Then press {% include key key='enter' %} to search for the class.
+    You should see results like this appear:
+
+    {% include img src="locate-gav-2" width=519 %}
+
+    Notice how it says "Classname Search" in the lefthand dropdown box?
+    If it says something else, click it and change it to "Classname Search" and
+    try pasting the class string again. Above, we have found our artifact
+    string! The group is `fr.inra.ijpb`, and the artifact is `MorphoLibJ_`.
+    So the front matter we should add is:
+    ```yaml
+    artifact: fr.inra.ijpb:MorphoLibJ_
+    ```
+    Some day, we'll improve the ImageJ search bar to show each plugin's
+    artifact string directly in the results pane. But it doesn't do that yet.
+
+*   If you don't have good luck with the maven.scijava.org search, here is
+    another approach: when you find the plugin of interest via the ImageJ
+    search bar, try clicking the Source button. If the plugin is well-designed,
+    it will open up the plugin's source code on GitHub. You can then navigate
+    to the top of that repository, click on the `pom.xml` file, and read the
+    `groupId` and `artifactId` out of that XML file.
+
+If you are unable to locate the Maven artifact string for any particular
+plugin, please ask in the chat room, and someone will help you out!
+
+#### Manual statbox
 
 Some plugins do not have Maven artifacts, because the developer did not publish
 the plugin to maven.scijava.org. In that case, you can migrate all the info-box
-fields manually into the front matter. Here is a before-and-after example:
+fields manually into the front matter. Here is a before-and-after example for
+the [DHM Utilities/Reconstruction](/plugins/dhm-utilities/reconstruction) plugin:
+[before (info-box)](https://raw.githubusercontent.com/imagej/imagej.github.io/44c5f5bf6d9a329f1bf6de8de30fd7c3a17a4bac/_pages/plugins/dhm-utilities/reconstruction.md) /
+[after (statbox)](https://raw.githubusercontent.com/imagej/imagej.github.io/main/_pages/plugins/dhm-utilities/reconstruction.md).
 
-* [DHM Utilities/Reconstruction](plugins/dhm-utilities/reconstruction):
-  [before (info-box)](https://raw.githubusercontent.com/imagej/imagej.github.io/44c5f5bf6d9a329f1bf6de8de30fd7c3a17a4bac/_pages/plugins/dhm-utilities/reconstruction.md) /
-  [after (statbox)](https://raw.githubusercontent.com/imagej/imagej.github.io/main/_pages/plugins/dhm-utilities/reconstruction.md)
-
-The [Cross Sectional Analyzer](plugins/cross-sectional-analyzer) provides
+The [Cross Sectional Analyzer](/plugins/cross-sectional-analyzer) provides
 another example of using the `statbox` fields manually.
 
 ### Table cells not being in the right places
