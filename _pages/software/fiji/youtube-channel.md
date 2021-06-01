@@ -1,5 +1,4 @@
 ---
-mediawiki: Fiji/YouTube_Channel
 title: Fiji/YouTube Channel
 categories: [Tutorials]
 ---
