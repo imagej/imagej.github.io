@@ -174,10 +174,10 @@ The following tables list all of this site's general-purpose includes:
 
 #### Notices
 
-| Include           | Purpose                               |
-|-------------------|---------------------------------------|
-| [notice](notices) | Insert an informational notice banner |
-| [aside](TODO)     | Float a right sidebar with commentary |
+| Include                     | Purpose                               |
+|-----------------------------|---------------------------------------|
+| [notice](notices)           | Insert an informational notice banner |
+| [aside](notices#asides)     | Float a right sidebar with commentary |
 
 #### Source code
 

@@ -189,3 +189,21 @@ See also [Symbols › Font Awesome](/editing/symbols#font-awesome).
   [More than 100,000 symbols!](https://graphemica.com/)" %}
 
 See also [Symbols › Unicode](/editing/symbols#unicode).
+
+## Asides
+
+The `aside` include creates text boxes that float around main content text.
+
+### Basic usage
+
+{% highlight liquid %}{% raw %}{% include aside content="I'm an aside!" %}{% endraw %}{% endhighlight %}
+{% include aside content="I'm an aside!" %}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac sem id elit finibus dapibus quis eu dolor. Donec pharetra lorem vel rutrum blandit. Donec at purus in enim fermentum dignissim. Quisque congue lacus at malesuada posuere. Fusce ac turpis quis nulla iaculis convallis. Proin blandit tortor ac ligula ullamcorper, sit amet dignissim lorem auctor. Donec sit amet ligula et ligula commodo porttitor in sit amet.
+
+### Other parameters
+
+{% highlight liquid %}{% raw %}{% include aside title="Aside title" content="I have a title!" %}{% endraw %}{% endhighlight %}
+{% include aside  title="Aside title" content="I have a title!" %}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac sem id elit finibus dapibus quis eu dolor. Donec pharetra lorem vel rutrum blandit. Donec at purus in enim fermentum dignissim. Quisque congue lacus at malesuada posuere. Fusce ac turpis quis nulla iaculis convallis. Proin blandit tortor ac ligula ullamcorper, sit amet dignissim lorem auctor. Donec sit amet ligula et ligula commodo porttitor in sit amet.
