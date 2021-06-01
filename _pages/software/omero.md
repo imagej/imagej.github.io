@@ -1,5 +1,4 @@
 ---
-mediawiki: OMERO
 title: OMERO
 section: Explore:Software
 categories: [Software,SciJava,OME]
