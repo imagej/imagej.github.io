@@ -1,5 +1,4 @@
 ---
-mediawiki: Headless
 title: Running Headless
 nav-links: true
 nav-title: Headless
