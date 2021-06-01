@@ -1,5 +1,4 @@
 ---
-mediawiki: SSH_public_keys
 title: SSH public keys
 ---
 
@@ -19,16 +18,20 @@ Add the public key (the single line contained in the file *id\_dsa.fiji.pub*) to
 
 For convenience, you should now add a section like this to the file *$HOME/.ssh/config* on the **local** computer, i.e. the computer with the private key:
 
-`Host fiji.sc`  
-`    User hacker`  
-`    IdentityFile /home/hacker/.ssh/id_dsa.fiji`
+```
+Host fiji.sc  
+    User hacker  
+    IdentityFile /home/hacker/.ssh/id_dsa.fiji
+```
 
 Without this section, you would have to specify both the identity file as well as the user everytime you connect. For even further convenience, you can add a nick name:
 
-`Host fiji`  
-`    HostName fiji.sc`  
-`    User hacker`  
-`    IdentityFile /home/hacker/.ssh/id_dsa.fiji`
+```
+Host fiji  
+    HostName fiji.sc  
+    User hacker  
+    IdentityFile /home/hacker/.ssh/id_dsa.fiji
+```
 
 With this, you can connect to the remote machine with
 
