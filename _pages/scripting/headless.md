@@ -22,10 +22,9 @@ By default, when ImageJ runs headlessly it acts like a one-off program: it will 
 Let's say we have the following Python script saved in a file, `hello.py`:
 
     #@String name
-
     print('Hello ' + name)
 
-we could run this script with the command:
+we could run this script with the command on Linux:
 
     ./ImageJ-linux64 --ij2 --headless --console --run hello.py 'name="Mr Kraken"'
 
@@ -36,6 +35,11 @@ The optional `--console` argument allows to have `print`, `IJ.log` and error sta
 On Windows systems, single/double quotes might be inverted though, such that strings are enclosed in single quotes while the list of argument as well as the path to the py script are in double quotes.
 
     ImageJ-win64.exe --ij2 --headless --console --run "PathTo/hello.py" "name='Mr Kraken'"
+    
+On macOS systems, the command can run in with the same quoting as on Linux:
+
+    ./ImageJ-macosx --ij2 --headless --console --run hello.py 'name="Mr Kracken"'
+
 
 ## Multiple parameters
 
@@ -43,13 +47,13 @@ If your script has more than one parameter:
 
     #@String name1
     #@String name2
-
     print('Hello ' + name1 + " and " + name2)
 
 then these are filled by using a comma-separated list of parameter pairs—e.g.:
 
     ./ImageJ-linux64 --ij2 --headless --console --run hello.py 'name1="Mr",name2="Mrs Kraken"'
 
-Similarly for Windows (again respect single/double quotes),
+Similarly for Windows (again respect single/double quotes) or macOS,
 
     ImageJ-win64.exe --ij2 --headless --console --run "PathTo/hello.py" "name1='Mr', name2='Kraken'"
+    ./ImageJ-macosx --ij2 --headless --console --run hello.py 'name1="Mr",name2="Mrs Kraken"'
