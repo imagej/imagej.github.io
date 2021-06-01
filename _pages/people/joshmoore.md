@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Joshmoore
 title: Josh Moore
 
 name: Josh Moore
