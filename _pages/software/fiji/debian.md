@@ -1,5 +1,4 @@
 ---
-mediawiki: Debian
 title: Debian
 ---
 
