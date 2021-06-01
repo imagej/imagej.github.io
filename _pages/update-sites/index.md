@@ -8,6 +8,10 @@ nav-title: Overview
 
 An **update site** is web space used by the [Updater](/plugins/updater) which enables users to share their macros, scripts and plugins with other researchers. With update sites, you do not need to manually download and install anything; [ImageJ](/software/imagej) takes care of it for you.
 
+## Available update sites
+
+{% include notice icon='info' size='large' content='You can browse the [list of available update sites](/list-of-update-sites).' %}
+
 ## Following an update site
 
 <div style="clear: right; float: right">
