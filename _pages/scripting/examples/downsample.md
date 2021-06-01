@@ -30,7 +30,7 @@ A picture is worth a thousand words, so here is an example. You see a 2,048×2,0
     <td>{% include img width="200px" src="downsample-imagej.png" caption="ImageJ interpolated scaling" %}</td>
     <td>{% include img width="200px" src="downsample-ts-0.25.png" caption="Gaussian downsampling with target sigma=0.25" %}</td>
     <td>{% include img width="200px" src="downsample-ts-0.5.png" caption="Gaussian downsampling with target sigma=0.5" %}</td>
-</tr><table>
+</tr></table>
 
 ## Code
 
