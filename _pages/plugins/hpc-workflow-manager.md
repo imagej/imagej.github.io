@@ -54,6 +54,8 @@ After the connection to the HPC Cluster is made and the jobs are downloaded from
 
 Right-click in the empty table or an empty row of the table to display the context menu, an example of the context menu is featured in Figure 3.
 
+{% include img align="center" name="spiral center" src="/media/plugins/hpc-workflow-manager-context-menu.png" caption="**Figure 3**: Context menu press right click on an empty row or empty table to display." %}
+
 <figure><img src="/media/plugins/hpc-workflow-manager-context-menu.png" title=" Figure 3: Context menu press right click on an empty row or empty table to display." width="200" alt=" Figure 3: Context menu press right click on an empty row or empty table to display." /><figcaption aria-hidden="true"> Figure 3: Context menu press right click on an empty row or empty table to display.</figcaption></figure>
 
 Select the first option "Create a new job". The "Create job" window will appear. From the "Workflow Type" section, select the "Macro Execution" option.
@@ -243,19 +245,25 @@ The script will run correctly now, for example for three (3) nodes the following
 
 Which is correct. Now let us imagine that node number one (1) and only node number one (1) brought with it a cake. And wants to share that information by printing it. You can have code executed in only specific nodes by using an `if` statement and comparing the rank like so:
 
-     if(myRank == 1){
-       print("I brought the cake.");
-     }
+```macro
+ if(myRank == 1){
+   print("I brought the cake.");
+ }
+```
 
 Add the above snippet anywhere in the parallel region (that is between `parInit()` and `parFinalize()`) and before calling `parBarrier()`.
 
 Great, now since node one brought the cake it would like to share it with the rest of the nodes. Let's imagine that the cake is an array made out of numbers. Like the following one:
 
-      cake = newArray(1, 2, 3, 4);
+```macro
+  cake = newArray(1, 2, 3, 4);
+```
 
 There are four pieces of cake. Add the above line inside the `if` statement's body. Above the `if` statement add the following:
 
-      cake = newArray(0);
+```macro
+  cake = newArray(0);
+```
 
 Which means that the rest of the nodes do not have a cake. You will understand why this is necessary later.
 
@@ -263,31 +271,35 @@ Node number one wants to divide them equally. This is why `parScatterEqually()` 
 
 `parScatterEqually()` will at the same time send and receive the cake piece or pieces (array items). It needs three arguments, the array to split as well as send (scatter), the length of the sent array, and which node is to spit the array and send it. Thus, in this case, you must add the bellow line after the `if` statement's body:
 
-      receivedPieces = parScatterEqually(cake, 4, 1); // Do NOT use lengthOf(cake);
+```macro
+  receivedPieces = parScatterEqually(cake, 4, 1); // Do NOT use lengthOf(cake);
+```
 
 Remember the rest of the nodes do not have a cake and cannot know its size! All nodes including one (1) will receive parts of the cake. Since there are more than three pieces of cake the first node (rank == 0) will get the extra piece. (`parScatterEqually()` will always give any extra array elements to the first node, to avoid this one must use `parScatter()` and specify exactly how many elements is each node to receive).
 
 Now you may print the piece or pieces that the node received. This is the last step of the example in this section. Overall, the code should now look like this:
 
-    parInit();
-      myRank = parGetRank();
-      if(myRank == 0){
-        print("The greeting program.");
-      }
-      size = parGetSize();
-      print("Hello to all "+size+" nodes. I am node number: "+myRank);
-      cake = newArray(0);
-      if(myRank == 1){
-        print("I brought the cake.");
-        cake = newArray(1, 2, 3, 4);
-      }
-      receivedPieces = parScatterEqually(cake, 4, 1);
-      parBarrier();
-      for(i = 0; i < lengthOf(receivedPieces); i++){
-        print("I node number "+myRank+" received piece: "+receivedPieces[i]);
-      }
-      print("Bye, from node number: "+myRank);
-    parFinalize();
+```macro
+parInit();
+  myRank = parGetRank();
+  if(myRank == 0){
+    print("The greeting program.");
+  }
+  size = parGetSize();
+  print("Hello to all "+size+" nodes. I am node number: "+myRank);
+  cake = newArray(0);
+  if(myRank == 1){
+    print("I brought the cake.");
+    cake = newArray(1, 2, 3, 4);
+  }
+  receivedPieces = parScatterEqually(cake, 4, 1);
+  parBarrier();
+  for(i = 0; i < lengthOf(receivedPieces); i++){
+    print("I node number "+myRank+" received piece: "+receivedPieces[i]);
+  }
+  print("Bye, from node number: "+myRank);
+parFinalize();
+```
 
 Lastly, something important to remember is that nodes do not share memory. Each node is separate, they can only communicate through messages (sending data). Currently only by calling `parScatterEqually()` or `parScatter()`.
 
@@ -333,7 +345,7 @@ For example, the following two nodes will have different task numbers for the sa
 
 This can cause great difficulty, this is why it is suggested to always store the task id returned when adding the task in a variable and use it instead.
 
-```
+```macro
 parInit();
   introductionTask = parAddTask("Introduction to other nodes.");
 
