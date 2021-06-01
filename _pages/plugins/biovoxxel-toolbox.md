@@ -3,20 +3,7 @@ mediawiki: BioVoxxel_Toolbox
 title: BioVoxxel Toolbox
 categories: [Particle analysis, Segmentation]
 project: BioVoxxel Toolbox
-
-name: BioVoxxel Toolbox
-source-url: https://github.com/biovoxxel/BioVoxxel-Toolbox
-source-label: on GitHub
-license-url: /licensing/bsd
-license-label: BSD 3-clause
-release-date: 2012/08/12
-dev-status: Active
-support-status: Active
-team-founders: Jan Brocher | mailto:jan.brocher@biovoxxel.de
-team-developers: Jan Brocher | mailto:jan.brocher@biovoxxel.de
-team-debuggers: Jan Brocher | mailto:jan.brocher@biovoxxel.de
-team-reviewers: Jan Brocher | mailto:jan.brocher@biovoxxel.de
-team-maintainers: Jan Brocher | mailto:jan.brocher@biovoxxel.de
+pom-url: https://raw.githubusercontent.com/biovoxxel/BioVoxxel-Toolbox/master/Biovoxxel_Plugins/pom.xml
 ---
 
 

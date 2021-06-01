@@ -98,7 +98,7 @@ function catalogRoles(team, id, name, url, roles) {
   }
 }
 
-function populateFromPOM(pom) {
+function fillStatsFromPOM(pom) {
   var g = value(pom, ['groupId']) || value(pom, ['parent', 'groupId']);
   var a = value(pom, ['artifactId']);
   var v = value(pom, ['version']) || value(pom, ['parent', 'version']);
@@ -200,16 +200,20 @@ function populateFromPOM(pom) {
   }
 }
 
-function populateFromRepository(g, a, v, repository) {
-  downloadPOM(g, a, v, repository).then(pom => populateFromPOM(pom));
+function fillStatsFromURL(url) {
+  download(url).then(pom => fillStatsFromPOM(pom));
 }
 
-function populateComponent(artifact, repository) {
+function fillStatsFromGAV(g, a, v, repository) {
+  downloadPOM(g, a, v, repository).then(pom => fillStatsFromPOM(pom));
+}
+
+function fillStatsFromArtifact(artifact, repository) {
   if (!repository) repository = 'https://maven.scijava.org/content/groups/public';
   var gav = artifact.split(':');
   var g = gav.length > 0 ? gav[0] : '';
   var a = gav.length > 1 ? gav[1] : '';
   var v = gav.length > 2 ? gav[2] : '';
-  if (v) populateFromRepository(g, a, v, repository);
-  else latestVersion(g, a, repository).then(lv => populateFromRepository(g, a, lv, repository));
+  if (v) fillStatsFromGAV(g, a, v, repository);
+  else latestVersion(g, a, repository).then(lv => fillStatsFromRepository(g, a, lv, repository));
 }

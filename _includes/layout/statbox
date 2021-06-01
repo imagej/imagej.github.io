@@ -19,9 +19,10 @@ a canonical source using JavaScript:
   Maven POM file containing the information. If needed, a `repository` URL can
   be given to control which Maven repository to query -- the default is
   https://maven.scijava.org/content/groups/public, which includes Maven Central
-  and many other sources.
+  and many other sources. Alternately, giving a `pom-url` (e.g. a link to a raw
+  `pom.xml` in a GitHub repository) will fill the sidebar with that POM's info.
 
-- For users, there is no smart metadata scraping yet. But it could be added.
+- For people, there is no smart metadata scraping yet. But it could be added.
   
 The two modes can be combined, in case some fields require manual override;
 the javascript only populates fields when they are empty.
@@ -36,6 +37,7 @@ the javascript only populates fields when they are empty.
 {%- comment -%} ============= COMPONENT FIELDS ============= {%- endcomment -%}
 {%- assign artifact          = page.artifact          -%} {%- comment -%} The component's groupId:artifactId                          {%- endcomment -%}
 {%- assign repository        = page.repository        -%} {%- comment -%} Maven repository where release artifact is deployed         {%- endcomment -%}
+{%- assign pom-url           = page.pom-url           -%} {%- comment -%} URL where the component's latest POM can be found.          {%- endcomment -%}
 {%- assign project           = page.project           -%} {%- comment -%} Project umbrella to which this component belongs            {%- endcomment -%}
 {%- assign source-url        = page.source-url        -%} {%- comment -%} URL where the component's source code can be found          {%- endcomment -%}
 {%- assign source-label      = page.source-label      -%} {%- comment -%} Label to use for the source code link                       {%- endcomment -%}
@@ -73,6 +75,12 @@ the javascript only populates fields when they are empty.
 
 {%- comment -%} ============= SECONDARY VALUES ============= {%- endcomment -%}
 
+{%- if artifact or pom-url -%}
+  {%- assign autopop = true -%}
+{%- else -%}
+  {%- assign autopop = false -%}
+{%- endif -%}
+
 {%- if icon or gravatar -%}
   {%- capture image -%}
     {%- if gravatar -%}
@@ -86,7 +94,7 @@ the javascript only populates fields when they are empty.
 {%- assign name-or-loading = name -%}
 {%- unless name-or-loading -%}
   {%- capture name-or-loading -%}
-    {%- if artifact -%}
+    {%- if autopop -%}
       Loading...
     {%- endif -%}
   {%- endcapture -%}
@@ -116,7 +124,7 @@ the javascript only populates fields when they are empty.
 {%- endif -%}
 {%- endcapture -%}
 
-{%- if artifact or source-url -%}
+{%- if autopop or source-url -%}
   {%- unless source-label -%}
     {%- capture source-label -%}
       {%- if    {{source-url | truncate: 19}} == 'https://github.com/'      -%} on GitHub
@@ -131,46 +139,46 @@ the javascript only populates fields when they are empty.
   {%- endunless -%}
 {%- endif -%}
 
-{%- if artifact or team-founders or team-leads or team-developers or team-debuggers or team-reviewers or team-support or team-maintainers or team-contributors -%}
+{%- if autopop or team-founders or team-leads or team-developers or team-debuggers or team-reviewers or team-support or team-maintainers or team-contributors -%}
 {%- capture team %}
       <details>
         <summary style="text-align: center">{%- include tooltip text="Team" tooltip="The group of people who take responsibility for the project." -%}</summary>
         <table>
-{%- if artifact or team-founders -%}
+{%- if autopop or team-founders -%}
 {%- include statbox/team-members title="Founders"
                                  description="People who created the project. Does not imply any current participation or responsibility."
                                  members=team-founders -%}
 {%- endif -%}
-{%- if artifact or team-leads -%}
+{%- if autopop or team-leads -%}
 {%- include statbox/team-members title="Leads"
                                  description="People responsible for making decisions about the project: timing of releases, inclusion of features, etc."
                                  members=team-leads -%}
 {%- endif -%}
-{%- if artifact or team-developers -%}
+{%- if autopop or team-developers -%}
 {%- include statbox/team-members title="Developers"
                                  description="People responsible for adding new features or enhancements."
                                  members=team-developers -%}
 {%- endif -%}
-{%- if artifact or team-debuggers -%}
+{%- if autopop or team-debuggers -%}
 {%- include statbox/team-members title="Debuggers"
                                  description="People responsible for fixing bugs."
                                  members=team-debuggers -%}
-{%- endif -%} {%- if artifact or team-reviewers -%}
+{%- endif -%} {%- if autopop or team-reviewers -%}
 {%- include statbox/team-members title="Reviewers"
                                  description="People responsible for reviewing patch submissions."
                                  members=team-reviewers -%}
 {%- endif -%}
-{%- if artifact or team-support -%}
+{%- if autopop or team-support -%}
 {%- include statbox/team-members title="Support"
                                  description="People responsible for responding to community questions and issue reports."
                                  members=team-support -%}
 {%- endif -%}
-{%- if artifact or team-maintainers -%}
+{%- if autopop or team-maintainers -%}
 {%- include statbox/team-members title="Maintainers"
                                  description="People responsible for maintaining the project: e.g., merging patch submissions and cutting releases."
                                  members=team-maintainers -%}
 {%- endif -%}
-{%- if artifact or team-contributors -%}
+{%- if autopop or team-contributors -%}
 {%- include statbox/team-members title="Contributors"
                                  description="People who contributed code to the project. Does not imply any current participation or responsibility."
                                  members=team-contributors -%}
@@ -220,18 +228,22 @@ https://forum.image.sc/u/{{forum}}
 {%- endif -%}
 
 {%- if name or affiliation or website or
-       artifact or repository or project or source-label or license-url or
+       autopop or project or source-label or license-url or
        release-url or release-date or dev-status or support-status or team or
        forum or person-developer or person-social or person-publication -%}
 {%- assign show-statbox = true -%}
 {%- endif -%}
 
 {%- comment -%} ================ JAVASCRIPT ================ {%- endcomment -%}
-{%- if artifact -%}
+{%- if autopop -%}
 <script src="/assets/js/maven.js"></script>
 <script>
 function refreshComponent() {
-  populateComponent('{{artifact}}', '{{repository}}');
+  {% if artifact -%}
+  fillStatsFromArtifact('{{artifact}}', '{{repository}}');
+  {%- elsif pom-url -%}
+  fillStatsFromURL('{{pom-url}}');
+  {%- endif %}
 }
 refreshComponent();
 </script>
@@ -249,14 +261,14 @@ refreshComponent();
 {%- comment -%} ============== COMPONENT INFO ============== {%- endcomment -%}
 {%- comment -%} TODO: Infer project from groupId. {%- endcomment -%}
 {%- comment -%} TODO: Add support for licenseName, projectName, copyrightOwners. {%- endcomment -%}
-{%- if project                    -%} {%- include statbox/row id="component-project"                                        value=project         -%} {%- endif -%}
-{%- if artifact or source-label   -%} {%- include statbox/row id="component-source"         label="Source"  url=source-url  value=source-label    -%} {%- endif -%}
-{%- if artifact or license-url    -%} {%- include statbox/row id="component-license"        label="License" url=license-url value=license-label   -%} {%- endif -%}
-{%- if artifact or release-url    -%} {%- include statbox/row id="component-release"        label="Release" url=release-url value=release-version -%} {%- endif -%}
-{%- if artifact or release-date   -%} {%- include statbox/row id="component-date"           label="Date"                    value=release-date    -%} {%- endif -%}
-{%- if artifact or dev-status     -%} {%- include statbox/row id="component-dev-status"     label="Development status"      value=dev-status      -%} {%- endif -%}
-{%- if artifact or support-status -%} {%- include statbox/row id="component-support-status" label="Support status"          value=support-status  -%} {%- endif -%}
-{%- if team -%}                       {%- include statbox/row id="component-team"                                           value=team            -%} {%- endif -%}
+{%- if project                   -%} {%- include statbox/row id="component-project"                                        value=project         -%} {%- endif -%}
+{%- if autopop or source-label   -%} {%- include statbox/row id="component-source"         label="Source"  url=source-url  value=source-label    -%} {%- endif -%}
+{%- if autopop or license-url    -%} {%- include statbox/row id="component-license"        label="License" url=license-url value=license-label   -%} {%- endif -%}
+{%- if autopop or release-url    -%} {%- include statbox/row id="component-release"        label="Release" url=release-url value=release-version -%} {%- endif -%}
+{%- if autopop or release-date   -%} {%- include statbox/row id="component-date"           label="Date"                    value=release-date    -%} {%- endif -%}
+{%- if autopop or dev-status     -%} {%- include statbox/row id="component-dev-status"     label="Development status"      value=dev-status      -%} {%- endif -%}
+{%- if autopop or support-status -%} {%- include statbox/row id="component-support-status" label="Support status"          value=support-status  -%} {%- endif -%}
+{%- if team -%}                      {%- include statbox/row id="component-team"                                           value=team            -%} {%- endif -%}
 
 {%- comment -%} =============== PERSON INFO ================ {%- endcomment -%}
 {%- if forum              -%} {%- include statbox/row id="person-forum"       label="Image.sc Forum" value=forum url=forum-url -%} {%- endif -%}
