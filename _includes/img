@@ -16,6 +16,19 @@
   {%- assign figure = false -%}
 {%- endif -%}
 
+{%- comment -%}
+  NB: For now, 'left' alignment is treated as float-left, and 'right' is
+  treated as float-right. This is because it's consistent with how MediaWiki
+  does things. However, it is inconsistent from a CSS-centric standpoint,
+  because 'left' and 'right' don't imply float (i.e. text wrapping). We should
+  consider evolving this include to use more consistent terminology somehow.
+{%- endcomment -%}
+{%- if align == 'left' -%}
+  {%- assign align = 'float-left' -%}
+{%- elsif align == 'right' -%}
+  {%- assign align = 'float-right' -%}
+{%- endif -%}
+
 {%- if src == '' -%}
   {%- capture error-message -%}
     Invalid img arguments: `{{include}}`

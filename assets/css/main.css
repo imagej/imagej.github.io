@@ -1615,6 +1615,32 @@ ul.major-icons li .icon {
 
 /* ======= ALIGNMENTS ======= */
 
-.left { margin-left: 0; text-align: left; }
-.right { margin-right: 0; text-align: right; }
-.center { margin-left: auto; margin-right: auto; }
+.left {
+  margin-left: 0;
+  text-align: left;
+}
+.right {
+  margin-right: 0;
+  text-align: right;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fit {
+  display: block;
+  width: 100%
+}
+
+@media screen and (min-width: 880px) {
+  .float-left {
+    float: left;
+    max-width: 50%;
+  }
+
+  .float-right {
+    float: right;
+    max-width: 50%;
+  }
+}
