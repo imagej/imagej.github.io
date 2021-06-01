@@ -1,5 +1,7 @@
 ---
-mediawiki: Developing_using_native_libraries
+mediawiki:
+- Developing_using_native_libraries
+- Command_Line_Tips_and_Tricks
 title: Developing using native libraries
 section: Extend:Development:Guides
 ---
@@ -411,4 +413,11 @@ Usually, you should not need to worry about these issues, as Fiji hides them con
 
 For full information on JNI, see [Sun's/Oracle's programmer guide on JNI](http://java.sun.com/docs/books/jni/html/jniTOC.html).
 
+# Quick reference
 
+This page lists some hints on working with native libraries in the different environments supported by ImageJ.
+
+| Action                         | Linux                                   | macOS                     | Windows                                                                                            |
+|--------------------------------|-----------------------------------------|---------------------------|----------------------------------------------------------------------------------------------------|
+| List dependencies of libraries | `ldd `<library-file>                    | `otool -L `<library-file> | `objdump -p `<library-file>` | grep "DLL Name:"`                                                   |
+| Trace system calls             | `strace -Ffo syscall.log ./fiji `<args> | `dtruss ./fiji `<args>    | Use [Sysinternal's Process Monitor](http://technet.microsoft.com/en-us/sysinternals/bb896645.aspx) |

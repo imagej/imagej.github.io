@@ -531,7 +531,7 @@ Command_Launcher_Python :: scripting/jython
 Command_Launcher_Ruby :: scripting/jruby
 Command_Line :: develop/command-line
 Command_Line_Debugging :: develop/debugging#command-line-debugging
-Command_Line_Tips_and_Tricks :: TODO
+Command_Line_Tips_and_Tricks :: develop/native-libraries#quick-reference
 Command_line :: develop/command-line
 Common :: libs/imagej-common
 Communication :: discuss#ways-to-get-help
