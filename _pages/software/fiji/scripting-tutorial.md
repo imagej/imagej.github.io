@@ -1,5 +1,4 @@
 ---
-mediawiki: Fiji_scripting_tutorial
 title: Fiji scripting tutorial
 categories: [Scripting]
 ---
