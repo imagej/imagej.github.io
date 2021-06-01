@@ -3,7 +3,7 @@ title: Dynamic ROI Profiler
 name: Dynamic ROI Profiler  
 source-url: https://github.com/fiji/fiji/blob/master/plugins/Analyze/Dynamic_ROI_Profiler.clj
 release-date : 2008  
-categories: [Scripting, Unmaintained]
+categories: [Scripting, Image Annotation, Unmaintained]
 team-leads: Albert Cardona
 license-url: /licensing/gpl
 license-label: GPLv2
