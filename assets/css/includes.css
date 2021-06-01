@@ -1,6 +1,8 @@
 /* CSS rules used by HTML markup in _includes. */
 
 .figure {
+  display: inline-block;
+  margin: 0.5em;
   max-width: 50%;
   border: thin silver solid;
   padding: 0.5em;
