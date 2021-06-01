@@ -1,6 +1,6 @@
 ---
-title: MarijaMatejcic
-name: MarijaMatejcic
+title: Marija Matejcic
+name: Marija Matejcic
 affiliation:
   - Institute for Bioengineerign of Catalunya (IBEC), Barcelona | https://ibecbarcelona.eu/integrative
 forum: Marija
