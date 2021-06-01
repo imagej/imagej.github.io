@@ -1,5 +1,4 @@
 ---
-mediawiki: Git_Notes
 title: Git Notes
 section: Extend:Development:Git
 ---
