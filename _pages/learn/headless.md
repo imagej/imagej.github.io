@@ -11,7 +11,7 @@ However, it acquired [macro](/scripting/macro) capabilities, a [batch mode](/scr
 
 Naturally, users want to execute such [macros](/scripting/macro) or [scripts](/scripting) in environments such as clusters where there is no graphical user interface available.
 
-# The problem
+# Problem
 
 Java *does* support a headless mode via the `java.awt.headless` property; setting this property to `true` enables it.
 
@@ -21,7 +21,7 @@ Since ImageJ 1.x was devised as a desktop application, everything -- including m
 
 On macOS, there is no problem: Aqua provides GUI-independent text rendering (mapping to the actual display using anti-aliasing). There, running in headless mode allows instantiating GUI elements such as the menu bar.
 
-# Recommended Solution: The `--headless` mode
+# Solution: `--headless` mode
 
 [ImageJ2](/software/imagej2) provides the capability to execute ImageJ plugins,
 macros and scripts in headless mode. This feature uses bytecode manipulation to
@@ -77,8 +77,8 @@ launching ImageJ from the command line.
 {% include aside title="Historical note" content=historical-note %}
 
 
-# Other Solutions
-## Xvfb
+# Other solutions
+## Xvfb virtual desktop
 
 Another method is to have a virtual desktop, e.g. {% include wikipedia title='Xvfb' text='Xvfb'%}. This will allow ImageJ to start with a virtualised graphical desktop.
 
