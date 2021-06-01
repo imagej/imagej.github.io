@@ -1,5 +1,4 @@
 ---
-mediawiki: Python
 title: Python
 categories: [Development]
 ---
