@@ -1,5 +1,4 @@
 ---
-mediawiki: AppVeyor
 title: AppVeyor
 section: Extend:Development:Tools
 ---
