@@ -1,5 +1,4 @@
 ---
-mediawiki: Learnathon_2017
 title: Learnathon 2017
 categories: [news]
 ---
@@ -18,18 +17,20 @@ Check if you have this set up:
     -   Install [Miniconda](https://conda.io/miniconda.html) if you do not have installed it or Anaconda already. (We need the version for Python 3!)
     -   Your `.bashrc` or `.zshrc` will need a line like this: `export PATH="/Users/someforders/miniconda3/bin:$PATH"`
     -   Make a new conda environment and install `jupyter` and `scijava-jupiter-kernel`:
-                      conda create --name scijava python=3
-                      source activate scijava
-                      conda install jupyter
-                      conda config --add channels conda-forge
-                      conda install scijava-jupyter-kernel
+    
+             conda create --name scijava python=3
+             source activate scijava
+             conda install jupyter
+             conda config --add channels conda-forge
+             conda install scijava-jupyter-kernel
 
     -   Now (and in the future) you will have to activate the environment we just created: `source activate scijava`.
     -   Deactivation would work like this: `source deactivate`
     -   Get some notebook to try it out:
-                      git clone git@github.com:scijava/scijava-jupyter-kernel
-                      cd scijava-jupyter-kernel
-                      jupyter notebook
+    
+            git clone git@github.com:scijava/scijava-jupyter-kernel
+            cd scijava-jupyter-kernel
+            jupyter notebook
 
     -   Execute cells by hitting <kbd>shift</kbd>+<kbd>enter</kbd>—enjoy!
 -   Eclipse (Neon)
