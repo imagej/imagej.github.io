@@ -27,9 +27,9 @@ This script is maintained by Stephan Saalfeld.
 A picture is worth a thousand words, so here is an example. You see a 2,048×2,048px transmission electron micrograph downsampled to 100×100px. For better illustration, the examples are shown at 200%.
 
 <table><tr>
-    <td>{% include img style="width:200px" src="downsample-imagej.png" title="ImageJ interpolated scaling" %}</td>
-    <td>{% include img style="width:200px" src="downsample-ts-0.25.png" title="Gaussian downsampling with target sigma=0.25" %}</td>
-    <td>{% include img style="width:200px" src="downsample-ts-0.5.png" title="Gaussian downsampling with target sigma=0.5" %}</td>
+    <td>{% include img width="200" src="downsample-imagej.png" caption="ImageJ interpolated scaling" %}</td>
+    <td>{% include img width="200" src="downsample-ts-0.25.png" caption="Gaussian downsampling with target sigma=0.25" %}</td>
+    <td>{% include img width="200" src="downsample-ts-0.5.png" caption="Gaussian downsampling with target sigma=0.5" %}</td>
 </tr></table>
 
 ## Code
