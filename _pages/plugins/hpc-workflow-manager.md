@@ -1,5 +1,4 @@
 ---
-mediawiki: HPC_Workflow_Manager
 title: HPC Workflow Manager
 ---
 
@@ -13,7 +12,9 @@ HPC Workflow Manager is developed at IT4Innovations, Ostrava, Czech Republic.
 
 ### Why use HPC Workflow Manager
 
-*"Today, parallel processing solves some of our biggest problems in much the same way that settlers of the Old West solved their biggest problems using parallel oxen. If they were using an ox to move a tree and the ox was not big enough or strong enough, they certainly didn't try to grow a bigger ox—they used two oxen. If our computer isn't fast enough or powerful enough, instead of trying to develop a faster, more powerful computer, why not simply use multiple computers?"* -Essentials of Computer Organization and Architecture, 5th Edition by Null
+>Today, parallel processing solves some of our biggest problems in much the same way that settlers of the Old West solved their biggest problems using parallel oxen. If they were using an ox to move a tree and the ox was not big enough or strong enough, they certainly didn't try to grow a bigger ox—they used two oxen. If our computer isn't fast enough or powerful enough, instead of trying to develop a faster, more powerful computer, why not simply use multiple computers?
+
+-Essentials of Computer Organization and Architecture, 5th Edition by Null
 
 The end of major serial execution performance gains due to limitations in Moore's law means that it is no longer possible to solve problems with big datasets and/or computational requirements just by getting a newer processor and hopping that the existing serial programs will perform better. Instead, more processors in parallel must be used. Personal computers have been moving in this direction for many years by adding multiple cores, accelerating performance through the use of GPUs, bringing memory closer to the CPU, etc. Still, there are massive datasets that require even more performance. Such performance can only be found today in supercomputers.
 
@@ -425,7 +426,7 @@ Many of the functions have an MPI equivalent, this will also be listed in the ta
 | parGather         | An array to send, number of items to send, number of items to receive, receiver's rank                                               | An array.               | All ranks send an equal amount of array items to a single node of a given rank. Be careful, the receiveCount parameter should be the count of items received from each rank separately. This is the inverse operation of parScatter.                                                                           | MPI\_Gather     |
 | parGatherEqually  | An array to send, number of elements in received array, receiver's rank                                                              | An array.               | The given rank will receive an array send in parts by all ranks. This is the inverse operation of the parScatterEqually.                                                                                                                                                                                       | None            |
 
-Parallelization functions
+**Table 1: Parallelization functions**
 
 | Function name     | Input                                         | Output               | Description                                                                                            |
 |-------------------|-----------------------------------------------|----------------------|--------------------------------------------------------------------------------------------------------|
@@ -435,7 +436,7 @@ Parallelization functions
 | parReportTasks    | None                                          | None                 | Outputs all task ids with their descriptions.                                                          |
 | parEnableTiming   | None                                          | None                 | Enables timing each task in the progress logs. It measures time passed to reach 100% from 0% progress. |
 
-Progress log functions
+**Table 2: Progress log functions**
 
 If you need help remembering the functions and what they do you may use autocompletion to get help. Just type "par" and a list of options will appear. There is a link to this page in the autocomplete help. An example is provided in figure 10.
 
