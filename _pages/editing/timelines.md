@@ -18,4 +18,8 @@ timeline-inventions:
 
 This page demonstrates how to create a dynamic timeline.
 
+{% include notice icon="warning" content="This is an experimental, undocumented
+  feature! It needs additional polish in the CSS rules before it's ready for
+  use across the site." %}
+
 {% include timeline title="Notable inventions, 1910-2000" timeline=page.timeline-inventions initial='1930' %}
