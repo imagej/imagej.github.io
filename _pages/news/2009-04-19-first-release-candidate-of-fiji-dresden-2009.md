@@ -1,5 +1,4 @@
 ---
-mediawiki: 2009-04-19_-_First_release_candidate_of_Fiji_Dresden-2009
 title: 2009-04-19 - First release candidate of Fiji Dresden-2009
 categories: [News]
 ---

@@ -1,5 +1,4 @@
 ---
-mediawiki: 2009-04-03_-_Dresden_Hackathon_over
 title: 2009-04-03 - Dresden Hackathon over
 categories: [News]
 ---

@@ -1,5 +1,4 @@
 ---
-mediawiki: 2009-04-20_-_Summer_of_Code:_We_got_us_three_students
 title: 2009-04-20 - Summer of Code › We got us three students
 categories: [News]
 ---

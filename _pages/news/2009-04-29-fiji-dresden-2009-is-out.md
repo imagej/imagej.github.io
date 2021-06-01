@@ -1,5 +1,4 @@
 ---
-mediawiki: 2009-04-29_-_Fiji_Dresden-2009_is_out
 title: 2009-04-29 - Fiji Dresden-2009 is out
 categories: [News]
 ---
