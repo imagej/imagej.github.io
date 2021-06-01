@@ -9,11 +9,11 @@ nav-title: Overview
 | **What**  | In order to launch the new ImageJ website at the highest possible level of quality, we need to do a pass over all the content, [correcting broken syntax](https://github.com/imagej/imagej.github.io/issues/117), [organizing the plugin categories](https://github.com/imagej/imagej.github.io/issues/119), and making notes about any remaining issues. |
 | **Why**   | Because there are more than 1400 pages which were mass converted from the old MediaWiki, and there are still rough edges that cannot be fixed automatically. |
 | **Who**   | ***We will all do it as a team!*** Please join us&mdash;[sign up here](https://docs.google.com/spreadsheets/d/1CdRCMFBXCg6ypDGdDaZNEN5cBY_1Ye47-kyTZQ11wBQ/edit#gid=0) |
-| **Where** | We are meeting virtually in the [wiki chat room](https://gitter.im/imagej/imagej.github.io) and on the [Fiji gather.town island](https://gather.town/app/ipHMoZp6WOdATHE4/FijiHackathon) (for audio/video). |
+| **Where** | We are meeting virtually in the [wiki chat room](https://gitter.im/imagej/imagej.github.io) and on the [Fiji island](https://gather.town/app/ipHMoZp6WOdATHE4/FijiHackathon) (for audio/video). |
 | **When**  | Tuesday, June 1 through Friday, June 4: the first of five **virtual Fiji summer hacking weeks**. Kickoff meeting (attendance optional!) will be Tuesday at 1300 UTC (3pm CEST / 8am CT). |
 | **How**   | The [How to help](how-to-help) page has all the details. |
 
-## About the Fiji gather.town island
+## About the Fiji island
 
 The [I2K 2020 virtual
 conference](https://www.janelia.org/you-janelia/conferences/from-images-to-knowledge-with-imagej-friends)
@@ -29,6 +29,10 @@ But participating in some aspects may not be feasible via text alone; e.g.,
 {% include person id='ctrueden' %} will give a video presentation covering
 the state of the site on Wednesday at 1400 UTC, and it is likely this will
 be on gather.town.
+
+Find the island at:
+
+{% include link-banner url='https://gather.town/app/ipHMoZp6WOdATHE4/FijiHackathon' %}
 
 ## Important links
 

@@ -94,7 +94,8 @@ In many ways, this new wiki is much more powerful than the old site.
 1.  **What should the official categories be** for plugins? Right now, people
     can tag whatever they want for the categories, and [it shows in the plugin
     index](/plugin-index). Do you have opinions? Or know of any kind of
-    community standard we could use here?
+    community standard we could use here? Comment on {% include github
+      org='imagej' repo='imagej.github.io' issue=119 label='issue 119' %}!
 
 2.  `/update-sites` contains pages documenting what update sites are and how to
     use them, whereas `/sites` contains pages describing individual update sites
