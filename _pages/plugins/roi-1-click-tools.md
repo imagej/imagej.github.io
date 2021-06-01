@@ -1,22 +1,17 @@
 ---
-mediawiki: Roi_1-click_tools
 title: Roi 1-click tools
-categories: [Update Sites,Macro Tools]
+name: Roi 1-click tools
+description: Annotation with ROIs of predefined dimensions
+categories: [Image Annotation]
+
+source-url: https://github.com/LauLauThom/Fiji-RoiClickTools
+release-date : 2019
+
+license-url: /licensing/bsd
+license-label: BSD-2
+
+team-leads: Laurent Thomas | mailto:l.thomas@acquifer.de
 ---
-
-
-{% capture author%}
-{% include person id='LauLauThom' %}
-{% endcapture %}
-
-{% capture maintainer%}
-{% include person id='LauLauThom' %}
-{% endcapture %}
-
-{% capture source%}
-{% include github org='LauLauThom' repo='Fiji-RoiClickTools' %}
-{% endcapture %}
-{% include info-box software='ImageJ' name='ROI 1-click tools' author=author maintainer=maintainer update-site='ROI 1-click tools' source=source released='2019' status='active' category='[Analysis](/plugin-index#analysis)' %}
 
 # New versions
 
@@ -47,16 +42,10 @@ In ImageJ, copy the file *Roi 1-Click Tools.ijm* to *ImageJ\\macros\\toolsets*
 
 See the [Readme](https://github.com/LauLauThom/Fiji-RoiClickTools) of the GitHub repo.
 
+# Citation
+
+{% include citation doi='10.17912/micropub.biology.000215' %}
+
 # Video tutorial
 
-See [tuto](https://youtu.be/ZPS78T_-gUs) on youtube.
-
-# Credits
-
-The ROI 1-click tools were published in [micropublication Biology](https://www.micropublication.org/journals/biology/micropub-biology-000215/).  
-If you use these tools please cite:  
-Thomas, LS; Gehrig, J (2020)  
-ImageJ/Fiji ROI 1-click tools for rapid manual image annotations and measurements  
-microPublication Biology. 10.17912/micropub.biology.000215
-
-   
+{% include video platform="youtube" id="PLbBgXlYof3_aEXBmXkkuLyQ78aVj_xdan" %} 
