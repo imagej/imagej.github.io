@@ -18,21 +18,17 @@ Once your image has been uploaded, you can follow the usage instructions below t
 
 Images can be added to your page by including `img` and the path to your image. Optionally a name can be specified as well. For example :
 
-{% raw %}
-```
+{% highlight liquid %}{% raw %}
 {% include img name="spirals" src="/media/spirals.png" %}
-```
-{% endraw %}
+{% endraw %}{% endhighlight %}
 
 {% include img name="spirals" src="/media/spirals.png" %}
 
 **N.B.** for any file in `/media`, the prefix is optional:
 
-{% raw %}
-```
+{% highlight liquid %}{% raw %}
 {% include img name="spirals" src="spirals" %}
-```
-{% endraw %}
+{% endraw %}{% endhighlight %}
 
 {% include img name="spirals" src="spirals" %}
 
@@ -44,11 +40,9 @@ The file extension is also optional if the filename ends in .svg, .png, .gif, or
 
 CSS classes can be explicitly specified with the `classes` parameter:
 
-{% raw %}
-```
-{% include img name="spirals" src="spirals" classes="thumbnail" %}
-```
-{% endraw %}
+{% highlight liquid %}{% raw %}
+{% include img name="spirals" src="spirals" classes="box" %}
+{% endraw %}{% endhighlight %}
 
 {% include img name="spirals" src="spirals" classes="thumbnail" %}
 
@@ -64,11 +58,9 @@ Aliquam gravida maximus quam. Cras eu ornare sapien, ac tempor orci.
 
 Image width can be manually controlled with the `width` parameter:
 
-{% raw %}
-```
+{% highlight liquid %}{% raw %}
 {% include img name="spirals" src="spirals" width="50px" %}
-```
-{% endraw %}
+{% endraw %}{% endhighlight %}
 
 {% include img name="spirals" src="spirals" width="50px" %}
 
@@ -76,11 +68,9 @@ Image width can be manually controlled with the `width` parameter:
 
 Optionally, an alignment specification can be added (_i.e._ `align="left"`, `align="right"`, `align="center"` or `align="fit"`) 
 
-{% raw %}
-```
+{% highlight liquid %}{% raw %}
 {% include img align="left" name="spirals" src="spirals" %}
-```
-{% endraw %}
+{% endraw %}{% endhighlight %}
 
 {% include img align="left" name="spirals" src="spirals" %}
 
@@ -92,11 +82,9 @@ Mel tempor consetetur posidonium in, mei admodum mentitum ullamcorper cu. Ius no
 
 Aliquam gravida maximus quam. Cras eu ornare sapien, ac tempor orci.
 
-{% raw %}
-```
+{% highlight liquid %}{% raw %}
 {% include img align="right" name="spirals" src="spirals" %}
-```
-{% endraw %}
+{% endraw %}{% endhighlight %}
 
 {% include img align="right" name="spirals" src="spirals" %}
 
@@ -108,21 +96,17 @@ Mel tempor consetetur posidonium in, mei admodum mentitum ullamcorper cu. Ius no
 
 Aliquam gravida maximus quam. Cras eu ornare sapien, ac tempor orci.
 
-{% raw %}
-```
+{% highlight liquid %}{% raw %}
 {% include img align="center" name="spirals" src="spirals" %}
-```
-{% endraw %}
+{% endraw %}{% endhighlight %}
 
 {% include img align="center" name="spirals" src="spirals" %}
 
 Albucius eligendi est ei. Graeco alterum prodesset pro ad. Eum movet populo mediocrem ad, ut vix scaevola legendos tractatos. Omnes adolescens voluptatibus qui eu. Ut sea quando soluta qualisque, qui in simul reprehendunt, pro ei dico abhorreant. Ius amet munere erroribus te.
 
-{% raw %}
-```
+{% highlight liquid %}{% raw %}
 {% include img align="fit" name="spirals" src="spirals" %}
-```
-{% endraw %}
+{% endraw %}{% endhighlight %}
 
 {% include img align="fit" name="spirals" src="spirals" %}
 
@@ -138,12 +122,9 @@ Images can be added with an accompanying legend text by including `figure` follo
 
 ## Example 1
 
-{% raw %}
-```
+{% highlight liquid %}{% raw %}
 {% include img align="left" name="spiral left" src="spirals" caption="**Figure 1**: This is a left figure." %}
-
-```
-{% endraw %}
+{% endraw %}{% endhighlight %}
 
 <figure style="float: left">
 {% include img name="spiral" src="help/spirals" %}
