@@ -1,22 +1,17 @@
 ---
-mediawiki: Multi-Template_Matching
 title: Multi-Template Matching
+description: Object-detection with one or multiple template images
 categories: [Feature Extraction,Jython,Object Detection]
+
+name:  Multi-Template Matching
+source-url: https://github.com/multi-template-matching/MultiTemplateMatching-Fiji
+release-date : 2019
+
+license-url: /licensing/gpl
+license-label: GPLv3
+
+team-leads: Laurent Thomas | mailto:l.thomas@acquifer.de
 ---
-
-
-{% capture author%}
-{% include person id='LauLauThom' %}, J.Gehrig
-{% endcapture %}
-
-{% capture maintainer%}
-{% include person id='LauLauThom' %}
-{% endcapture %}
-
-{% capture source%}
-{% include github org='LauLauThom' repo='MultiTemplateMatching' %}
-{% endcapture %}
-{% include info-box software='ImageJ' name='Multi-Template Matching' author=author maintainer=maintainer update-site='Multi-Template-Matching' source=source released='2019' status='active' category='[Analysis](/plugin-index#analysis) [Feature Extraction](/plugin-index#feature-extraction)' %}
 
 <img src="/media/plugins/multi-template-matching-montagegui.png" width="800"/>
 
@@ -37,6 +32,5 @@ We also distribute a python package for Multi-Template-Matching available on [Py
 
 # Video Tutorials
 
-Check our serie of [video tutorials](https://www.youtube.com/watch?v=KlzIqSG5XBU&list=PLHZOgc1s26MJ8QjYau7NcG5k0zh9SjHpo)!
-
+{% include video platform="youtube" id="PLHZOgc1s26MJ8QjYau7NcG5k0zh9SjHpo" %}
     
