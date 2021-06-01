@@ -38,7 +38,8 @@ If you are interested in the SPIM workflow type visit [this](/plugins/spim-workf
 
 From the Fiji menu bar select {% include bc path="Plugins | Multiview Reconstruction | HPC Workflow Manager" %} and fill in the Login dialog that will appear. For example, see the filled-in dialog in Figure 1.
 
-<figure><img src="/media/plugins/hpc-workflow-manager-login.png" title="Figure 1: Example of a filled in login dialog." width="500" alt="Figure 1: Example of a filled in login dialog." /><figcaption aria-hidden="true">Figure 1: Example of a filled in login dialog.</figcaption></figure>
+
+{% include img align="center" name="spiral center" src="/media/plugins/hpc-workflow-manager-login.png" caption="**Figure 1**: Example of a filled in login dialog." %}
 
 ### How to login
 
@@ -50,13 +51,11 @@ Press "Ok" and the dialog should disappear, and a progress dialog should appear.
 
 After the connection to the HPC Cluster is made and the jobs are downloaded from the cluster you should see a window like the one in Figure 2. If it is the first time you run this plugin the table will be empty.
 
-<figure><img src="/media/plugins/hpc-workflow-manager-main-empty.png" title="Figure 2: Example of the main window of the HPC Workflow Manager, it displays all jobs ever submitted by the user, in this case, it is empty as it is the first time the plugin is used." width="500" alt="Figure 2: Example of the main window of the HPC Workflow Manager, it displays all jobs ever submitted by the user, in this case, it is empty as it is the first time the plugin is used." /><figcaption aria-hidden="true">Figure 2: Example of the main window of the HPC Workflow Manager, it displays all jobs ever submitted by the user, in this case, it is empty as it is the first time the plugin is used.</figcaption></figure>
+{% include img align="center" name="spiral center" src="/media/plugins/hpc-workflow-manager-main-empty.png" caption="**Figure 2**:  Example of the main window of the HPC Workflow Manager, it displays all jobs ever submitted by the user, in this case, it is empty as it is the first time the plugin is used." %}
 
 Right-click in the empty table or an empty row of the table to display the context menu, an example of the context menu is featured in Figure 3.
 
 {% include img align="center" name="spiral center" src="/media/plugins/hpc-workflow-manager-context-menu.png" caption="**Figure 3**: Context menu press right click on an empty row or empty table to display." %}
-
-<figure><img src="/media/plugins/hpc-workflow-manager-context-menu.png" title=" Figure 3: Context menu press right click on an empty row or empty table to display." width="200" alt=" Figure 3: Context menu press right click on an empty row or empty table to display." /><figcaption aria-hidden="true"> Figure 3: Context menu press right click on an empty row or empty table to display.</figcaption></figure>
 
 Select the first option "Create a new job". The "Create job" window will appear. From the "Workflow Type" section, select the "Macro Execution" option.
 
@@ -68,19 +67,20 @@ In the "Output data location" section leave the default option, "Job subdirector
 
 Now, the filled-in form should look like Figure 4. If you are using Linux save the "HelloWorld" example script in your home directory ("\~/HelloWorld/user.ijm") and use that path instead of "C:/Documents/HelloWorld". When you are sure that the form is filled-in correctly press the "Create" button.
 
-<figure><img src="/media/plugins/hpc-workflow-manager-create-job.png" title=" Figure 4: Example of a new Macro job configuration." width="300" alt=" Figure 4: Example of a new Macro job configuration." /><figcaption aria-hidden="true"> Figure 4: Example of a new Macro job configuration.</figcaption></figure>
+
+{% include img align="center" name="spiral center" src="/media/plugins/hpc-workflow-manager-context-menu.png" caption="**Figure 4**: Example of a new Macro job configuration." %}
 
 ### How to upload the data and the Macro script
 
 If you have created a new job, the main window should look roughly like Figure 5.
 
-<figure><img src="/media/plugins/hpc-workflow-manager-created-job.png" title=" Figure 5: A new Macro job has been created." width="300" alt=" Figure 5: A new Macro job has been created." /><figcaption aria-hidden="true"> Figure 5: A new Macro job has been created.</figcaption></figure>
+{% include img align="center" name="spiral center" src="/media/plugins/hpc-workflow-manager-created-job.png" caption="**Figure 5**: A new Macro job has been created." %}
 
 Before you can start the job, you need to upload your script ("user.ijm"). To do this you must select the "Upload data" item from the context menu. If your script also needs data, they should also be located in the same directory that the user's script is in. The data will be uploaded along with the Macro script file.
 
 A timer will appear in the download column. When it has completed uploading the data and user's script the cell that corresponds to the job should indicate that it is "Done" (Figure 6).
 
-<figure><img src="/media/plugins/hpc-workflow-manager-upload-job.png" title=" Figure 6: Uploading files (in this case just the user's script) is done." width="300" alt=" Figure 6: Uploading files (in this case just the user's script) is done." /><figcaption aria-hidden="true"> Figure 6: Uploading files (in this case just the user's script) is done.</figcaption></figure>
+{% include img align="center" name="spiral center" src="/media/plugins/hpc-workflow-manager-upload-job.png" caption="**Figure 6**: Uploading files (in this case just the user's script) is done." %}
 
 Now that the script file is uploaded the job can be started.
 
@@ -121,7 +121,7 @@ There are two ways to inspect the progress of a job.
 
 The first one is by looking at the "Status" of a job. This way you can see whether a job is running on the HPC Cluster or not. In the case of Figure 7, the job is "Queued".
 
-<figure><img src="/media/plugins/hpc-workflow-manager-queued-job.png" title=" Figure 7: Job is queued." width="300" alt=" Figure 7: Job is queued." /><figcaption aria-hidden="true"> Figure 7: Job is queued.</figcaption></figure>
+{% include img align="center" name="spiral center" src="/media/plugins/hpc-workflow-manager-queued-job.png" caption="**Figure 7**: Job is queued." %}
 
 However, this is a very coarse-grained way to see the progress of the job and when it starts running it does not provide any useful information until it has ended ("Finished", "Failed" etc.).
 
@@ -135,7 +135,7 @@ You can see a snapshot of the progress of the tasks of the running job of the ex
 
 Each line represents a different task, each column represents a different compute-node where the task is executed on, with the exception of the first column that provides task descriptions. Cells that do not have a progress indicator represent nodes that either will not execute the task at all or they have not started executing the task yet. In the second case, a progress indicator will appear when the progress is updated to zero percent (0%) or more.
 
-<figure><img src="/media/plugins/hpc-workflow-manager-progress-running.png" title=" Figure 8: The job is running and the progress indicators display the progress for each task on each compute-node." width="300" alt=" Figure 8: The job is running and the progress indicators display the progress for each task on each compute-node." /><figcaption aria-hidden="true"> Figure 8: The job is running and the progress indicators display the progress for each task on each compute-node.</figcaption></figure>
+{% include img align="center" name="spiral center" src="/media/plugins/hpc-workflow-manager-progress-running.png" caption="**Figure 8**: The job is running and the progress indicators display the progress for each task on each compute-node." %}
 
 ### Job dashboard
 
@@ -173,17 +173,21 @@ Let's write a simple "greeting" Macro script where each node will greet the rest
 
 First, we can write a serial version:
 
+```javascript
     print("The greeting program.");
     print("Hello I am a single node.");
     print("Bye, from the only node.");
+```
 
 Now let's parallelize this by adding a call to `parInit()` at the beginning in order to start the parallel execution of the program. We must also add a call to `parFinalize()` at the end of our program to stop the parallelization. The code should now look like this:
 
-    parInit();
-      print("The greeting program.");
-      print("Hello I am a single node.");
-      print("Bye, from the only node.");
-    parFinalize();
+```javascript
+parInit();
+  print("The greeting program.");
+  print("Hello I am a single node.");
+  print("Bye, from the only node.");
+parFinalize();
+```
 
 Very well, our program is now parallelized. However, the messages no longer make sense.
 
@@ -191,14 +195,16 @@ We should get the id of the node and print it instead as well as the total numbe
 
 To get the id of the node (that is its rank) we must call `parGetRank()`.
 
-    parInit();
-      myRank = parGetRank();
-      if (myRank == 0){
-        print("The greeting program.");
-      }
-      print("Hello I am node number: "+myRank);
-      print("Bye, from node number: "+myRank);
-    parFinalize();
+```javascript
+parInit();
+  myRank = parGetRank();
+  if (myRank == 0){
+    print("The greeting program.");
+  }
+  print("Hello I am node number: "+myRank);
+  print("Bye, from node number: "+myRank);
+parFinalize();
+```
 
 Notice that we also nested the first `print()` in an `if` statement comparing the rank with the first one (0), this is done in order to print this message only once.
 
@@ -206,11 +212,15 @@ You may choose any rank of the available nodes, it is not necessary to use the f
 
 To greet all of the nodes let's add the total number of nodes used to run the script (size) as well by calling get size `parGetSize()`. Add the following line after getting the rank to get the size:
 
-      size = parGetSize();
+```javascript
+  size = parGetSize();
+```
 
 And modify the first print to read:
 
-      print("Hello to all "+size+" nodes. I am node number: "+myRank);
+```javascript
+  print("Hello to all "+size+" nodes. I am node number: "+myRank);
+```
 
 Very well, our program is now parallelized. Unfortunately, it is incorrect.
 
@@ -230,9 +240,11 @@ To correct this we will put a barrier to the flow of the execution of the code.
 
 Do this by adding calling `parBarrier()` bellow the greeting and above the announcement of the departure of the node.
 
-      print("Hello I am node number: "+myRank);
-      parBarrier();
-      print("Bye, from node number: "+myRank);
+```javascript
+  print("Hello I am node number: "+myRank);
+  parBarrier();
+  print("Bye, from node number: "+myRank);
+```
 
 The script will run correctly now, for example for three (3) nodes the following output may be printed:
 
@@ -245,7 +257,7 @@ The script will run correctly now, for example for three (3) nodes the following
 
 Which is correct. Now let us imagine that node number one (1) and only node number one (1) brought with it a cake. And wants to share that information by printing it. You can have code executed in only specific nodes by using an `if` statement and comparing the rank like so:
 
-```macro
+```javascript
  if(myRank == 1){
    print("I brought the cake.");
  }
@@ -255,13 +267,13 @@ Add the above snippet anywhere in the parallel region (that is between `parInit(
 
 Great, now since node one brought the cake it would like to share it with the rest of the nodes. Let's imagine that the cake is an array made out of numbers. Like the following one:
 
-```macro
+```javascript
   cake = newArray(1, 2, 3, 4);
 ```
 
 There are four pieces of cake. Add the above line inside the `if` statement's body. Above the `if` statement add the following:
 
-```macro
+```javascript
   cake = newArray(0);
 ```
 
@@ -271,7 +283,7 @@ Node number one wants to divide them equally. This is why `parScatterEqually()` 
 
 `parScatterEqually()` will at the same time send and receive the cake piece or pieces (array items). It needs three arguments, the array to split as well as send (scatter), the length of the sent array, and which node is to spit the array and send it. Thus, in this case, you must add the bellow line after the `if` statement's body:
 
-```macro
+```javascript
   receivedPieces = parScatterEqually(cake, 4, 1); // Do NOT use lengthOf(cake);
 ```
 
@@ -279,7 +291,7 @@ Remember the rest of the nodes do not have a cake and cannot know its size! All 
 
 Now you may print the piece or pieces that the node received. This is the last step of the example in this section. Overall, the code should now look like this:
 
-```macro
+```javascript
 parInit();
   myRank = parGetRank();
   if(myRank == 0){
@@ -345,7 +357,7 @@ For example, the following two nodes will have different task numbers for the sa
 
 This can cause great difficulty, this is why it is suggested to always store the task id returned when adding the task in a variable and use it instead.
 
-```macro
+```javascript
 parInit();
   introductionTask = parAddTask("Introduction to other nodes.");
 
@@ -393,9 +405,9 @@ parInit();
 parFinalize();
 ```
 
-<figure><img src="/media/plugins/hpc-workflow-manager-progress-no-task.png" title=" Figure 9: The job has finished and all the progress indicators are present. Note that the task &quot;Get the cake&quot; has a progress indicator only on node one (1) as expected. This is because this task was added in an if statement checking that the rank is one." width="300" alt=" Figure 9: The job has finished and all the progress indicators are present. Note that the task &quot;Get the cake&quot; has a progress indicator only on node one (1) as expected. This is because this task was added in an if statement checking that the rank is one." /><figcaption aria-hidden="true"> Figure 9: The job has finished and all the progress indicators are present. Note that the task "Get the cake" has a progress indicator only on node one (1) as expected. This is because this task was added in an <code>if</code> statement checking that the rank is one.</figcaption></figure>
+{% include img align="center" name="spiral center" src="/media/plugins/hpc-workflow-manager-progress-no-task.png" caption="**Figure 9**: The job has finished and all the progress indicators are present. Note that the task \"Get the cake\" has a progress indicator only on node one (1) as expected. This is because this task was added in an <code>if</code> statement checking that the rank is one." %}
 
-<figure><img src="/media/plugins/hpc-workflow-manager-side-by-side-example.png" title=" Figure 10: The red circle labeled zero (0) is a task performed by all nodes. It is first added, and then its progress is reported twice: once when it is zero and finally when it is done. The green circle labeled three (3) is first added and then its progress is reported as well, however, notice that all its related commands are inside the body of if statements. Notice that all calls of parAddTask() are before parReportTasks()." width="800" alt=" Figure 10: The red circle labeled zero (0) is a task performed by all nodes. It is first added, and then its progress is reported twice: once when it is zero and finally when it is done. The green circle labeled three (3) is first added and then its progress is reported as well, however, notice that all its related commands are inside the body of if statements. Notice that all calls of parAddTask() are before parReportTasks()." /><figcaption aria-hidden="true"> Figure 10: The red circle labeled zero (0) is a task performed by all nodes. It is first added, and then its progress is reported twice: once when it is zero and finally when it is done. The green circle labeled three (3) is first added and then its progress is reported as well, however, notice that all its related commands are inside the body of <code>if</code> statements. Notice that all calls of <code>parAddTask()</code> are before <code>parReportTasks()</code>.</figcaption></figure>
+{% include img align="center" name="spiral center" src="/media/plugins/hpc-workflow-manager-side-by-side-example.png" caption="**Figure 10**: The red circle labeled zero (0) is a task performed by all nodes. It is first added, and then its progress is reported twice: once when it is zero and finally when it is done. The green circle labeled three (3) is first added and then its progress is reported as well, however, notice that all its related commands are inside the body of <code>if</code> statements. Notice that all calls of <code>parAddTask()</code> are before <code>parReportTasks()</code>." %}
 
 ### Available functions (list)
 
@@ -427,7 +439,7 @@ Progress log functions
 
 If you need help remembering the functions and what they do you may use autocompletion to get help. Just type "par" and a list of options will appear. There is a link to this page in the autocomplete help. An example is provided in figure 10.
 
-<figure><img src="/media/plugins/hpc-workflow-manager-autocomplete.png" title=" Figure 11: Function autocompletion example." width="300" alt=" Figure 11: Function autocompletion example." /><figcaption aria-hidden="true"> Figure 11: Function autocompletion example.</figcaption></figure>
+{% include img align="center" name="spiral center" src="/media/plugins/hpc-workflow-manager-autocomplete.png" caption="**Figure 11**: Function autocompletion example." %}
 
 ## Installation
 
