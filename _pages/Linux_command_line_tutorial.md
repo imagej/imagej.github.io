@@ -12,11 +12,11 @@ In the terminal type:
 
 `ssh madmax.mpi-cbg.de`
 
-and enter your password
+and enter your password:
 
 `tomancak@madmax.mpi-cbg.de's password: `  
 
-Now you are on the cluster
+Now you are on the cluster!
 
 `Last login: Sun May 19 09:01:24 2013 from 10.1.7.16`  
 `"Platform HPC" 3.1 (build 7211) Management Node`  
@@ -30,7 +30,7 @@ Now you are on the cluster
 `[tomancak@madmax ~]$ pwd`  
 `/home/tomancak`
 
-** cd ** - *change directory*
+**cd** - *change directory*
 
 `[tomancak@madmax ~]$ cd /projects`  
 `[tomancak@madmax projects]$ pwd`  
@@ -48,18 +48,18 @@ Now you are on the cluster
 `[tomancak@madmax /]$ pwd`  
 `/`
 
-**.** - current directory, if we want to for example execute a script in the current directory we do it like this:
+**.** - current directory, if we want to, for example, execute a script in the current directory we do it like this:
 
 `./executable_script`  
 
-This tells the interpreter to look for the file executable\_script in the current directory and not somewhere else.
+This tells the interpreter to look for the file `executable\_script` in the current directory and not somewhere else.
 
 **..** - one directory up
 
 `[tomancak@madmax projects]$ cd ..`  
 `[tomancak@madmax /]`
 
-** pressing tab ** - auto-completion, we don't need to type long names of directories, start typing the name and press **tab** and the linux system will either auto-complete or show you the options you have
+**pressing tab** - auto-completion, we don't need to type long names of directories, start typing the name and press **tab** and the linux system will either auto-complete or show you the options you have.
 
 `[tomancak@madmax ~]$ cd /projects/toman + press tab`  
 `[tomancak@madmax ~]$ cd /projects/tomancak_lightsheet`  
@@ -127,29 +127,29 @@ This tells the interpreter to look for the file executable\_script in the curren
 
 Here we put all of that goodness to work to make our life on a cluster easier.
 
-Once we submit the jobs we want to monitor the progress. For example **bjobs -r** gives us an output summarising our running jobs. If there are many its not that useful. How about counting them?
+Once we submit the jobs, we want to monitor the progress. For example **bjobs -r** gives us an output summarising our running jobs. If there are many, it's not that useful. How about counting them?
 
 `bjobs -r | wc -l`  
 `160`
 
-More useful, we have 160 jobs running. Still how about the pending ones? We can do that:
+More usefully, we have 160 jobs running. Still how about the pending ones? We can do that:
 
 `bjobs -r | grep PEND | wc -l`  
 `40`
 
-Ok 40. Now, how many jobs actually finished successfully? Lets say they create some *.tif* files a few directories down
+Ok 40. Now, how many jobs actually finished successfully? Let's say they create some *.tif* files in `../../ouput`:
 
 `ls ../../output/*.tif | wc -l`  
 `200`
 
-Good, looks like 200 are finished. Its tempting to keep pressing enter on those commands but its also tiresome. Using
+Good, looks like 200 are finished. It's tempting to keep pressing enter on those commands but it's also tiresome. Using:
 
 `watch -n5 'ls ../../output/*.tif | wc -l' `
 
-outputs continuously
+outputs continuously:
 
 `Every 5.0s: ls ../../output/*.tif | wc -l                                                                                             `  
 `Mon May 20 21:16:37 2013`  
 `180`
 
-i.e. we get the number of files automatically updated every 5 seconds (without the -n paramater every 2s by default).
+i.e. we get the number of files automatically updated every 5 seconds (without the -n paramater, every 2s by default).
