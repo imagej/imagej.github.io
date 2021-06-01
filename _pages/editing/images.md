@@ -56,9 +56,10 @@ Image width can be manually controlled with the `width` parameter:
 
 {% include img name="spirals" src="spirals" width="50px" %}
 
-### Alignment 
+### Alignment
 
-Optionally, an alignment specification can be added (_i.e._ `align="left"`, `align="right"`, `align="center"` or `align="fit"`) 
+Optionally, an alignment specification can be added with
+`align="left"`, `align="right"`, `align="center"` or `align="fit"`.
 
 {% highlight liquid %}{% raw %}
 {% include img align="left" name="spirals" src="spirals" %}
