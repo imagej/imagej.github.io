@@ -12,7 +12,7 @@ Sound downsampling of an image requires the elimination of image frequencies hig
 
 ## Download
 
-Get a snapshot from the git repository here: [downsample\_.js](https://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob_plain;f=plugins/Examples/downsample_.js).
+Get a snapshot from the git repository here: [downsample\_.js](https://github.com/fiji/fiji/blob/master/plugins/Examples/downsample_.js).
 
 ## Documentation
 
@@ -26,9 +26,11 @@ This script is maintained by Stephan Saalfeld.
 
 A picture is worth a thousand words, so here is an example. You see a 2,048×2,048px transmission electron micrograph downsampled to 100×100px. For better illustration, the examples are shown at 200%.
 
-|                                                                                     |                                                                                                                        |                                                                                                                     |
-|-------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| ![ImageJ interpolated scaling](/media/scripting/examples/downsample-imagej.png) | ![Gaussian downsampling with target sigma=0.25](/media/scripting/examples/downsample-ts-0.25.png) | ![Gaussian downsampling with target sigma=0.5](/media/scripting/examples/downsample-ts-0.5.png) |
+<table><tr>
+    <td>{% include img src="downsample-imagej.png" caption="ImageJ interpolated scaling" %}</td>
+    <td>{% include img src="downsample-ts-0.25.png" caption="Gaussian downsampling with target sigma=0.25" %}</td>
+    <td>{% include img src="downsample-ts-0.5.png" caption="Gaussian downsampling with target sigma=0.5" %}</td>
+</tr><table>
 
 ## Code
 
