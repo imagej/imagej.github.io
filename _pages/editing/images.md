@@ -119,12 +119,7 @@ Images can be added with an accompanying legend text by including `figure` follo
 {% include img align="left" name="spiral left" src="spirals" caption="**Figure 1**: This is a left figure." %}
 {% endraw %}{% endhighlight %}
 
-<figure style="float: left">
-{% include img name="spiral" src="help/spirals" %}
-<figcaption markdown=1>
-**Figure 1**: This is a left figure.
-</figcaption>
-</figure>
+{% include img align="left" name="spiral left" src="spirals" caption="**Figure 1**: This is a left figure." %}
 
 Lorem ipsum dolor sit amet, qui possit aeterno denique ea, te usu affert consequuntur, vix in utinam mentitum reformidans. Sed ea vidisse eripuit aliquid, no usu ullum dictas, an epicurei maluisset vix. Ne posse virtute impedit duo. Eos homero euripidis honestatis no.
 
