@@ -3,7 +3,6 @@
 .figure {
   max-width: 50%;
   border: thin silver solid;
-  margin: 0.5em;
   padding: 0.5em;
   background-color: #f9f9f9;
   text-align: center;
@@ -82,10 +81,6 @@
 }
 
 /* img */
-
-figure.center {
-  width: 35%;
-}
 
 figure.row {
   display: block;
