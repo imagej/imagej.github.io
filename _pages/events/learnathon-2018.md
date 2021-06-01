@@ -1,5 +1,4 @@
 ---
-mediawiki: Learnathon_2018
 title: Learnathon 2018
 categories: [news]
 ---
@@ -37,22 +36,24 @@ Git repos to clone:
 
 Notes: In case you want to switch to the legacy UI (ImageJ 1), you change the dependencies section in your POM to...
 
-    <dependencies>
-        <dependency>
-            <groupId>net.imagej</groupId>
-            <artifactId>imagej</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>net.imagej</groupId>
-            <artifactId>imagej-legacy</artifactId>
-        </dependency>
-    </dependencies>
+```xml
+<dependencies>
+    <dependency>
+        <groupId>net.imagej</groupId>
+        <artifactId>imagej</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>net.imagej</groupId>
+        <artifactId>imagej-legacy</artifactId>
+    </dependency>
+</dependencies>
+```
 
 ### Introduction to ImgLib2
 
 Git repos to clone:
 
--   [[`https://github.com/imglib/imglib2-introductory-workshop.git`](https://github.com/imglib/imglib2-introductory-workshop.git)](https://github.com/imglib/imglib2-introductory-workshop)
+-   [`https://github.com/imglib/imglib2-introductory-workshop.git`](https://github.com/imglib/imglib2-introductory-workshop.git)
 
 ([Slides](https://github.com/imglib/imglib2-introductory-workshop/blob/master/Introduction-ImgLib2.pdf) are contained in the repository.)
 
