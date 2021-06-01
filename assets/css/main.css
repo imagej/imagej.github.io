@@ -61,18 +61,6 @@ mark {
   color: inherit;
 }
 
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-input, select, textarea {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-}
-
 /* Basic */
 
 html {
