@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Axtimwalde
 title: Stephan Saalfeld
 name: Stephan Saalfeld
 honorific: Architect of ImgLib2
