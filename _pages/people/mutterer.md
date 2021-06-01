@@ -6,6 +6,7 @@ name: Jerome Mutterer
 affiliation: CNRS | http://www.cnrs.fr/index.php
 github: mutterer
 twitter: jmutterer
+orcid: 0000-0002-0722-5195
 ---
 
 I maintain the following ImageJ plugins:
