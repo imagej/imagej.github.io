@@ -192,7 +192,7 @@ The following tables list all of this site's general-purpose includes:
 | [quiz](quizzes)                      | Insert a Q&A with hidden answer      |
 | [timeline](timelines)                | Insert a horizontal timeline         |
 | [tooltip](tooltips)                  | Add a tooltip appearing on mouseover |
-| [echo](echoes)                       | For debugging                        |
+| [echo](debugging)                    | For debugging                        |
 
 #### MARKED FOR REMOVAL
 
