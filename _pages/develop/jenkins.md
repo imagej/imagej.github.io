@@ -1,5 +1,4 @@
 ---
-mediawiki: Jenkins
 title: Jenkins
 ---
 
