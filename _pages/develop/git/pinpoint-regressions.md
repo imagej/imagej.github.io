@@ -1,5 +1,4 @@
 ---
-mediawiki: Pinpoint_regressions_with_Git
 title: Pinpoint regressions with Git
 section: Extend:Development:Git
 ---
