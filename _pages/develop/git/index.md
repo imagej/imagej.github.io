@@ -1,5 +1,4 @@
 ---
-mediawiki: Git
 title: Git
 section: Extend:Develop:Git
 ---
