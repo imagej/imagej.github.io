@@ -68,7 +68,7 @@ In the "Output data location" section leave the default option, "Job subdirector
 Now, the filled-in form should look like Figure 4. If you are using Linux save the "HelloWorld" example script in your home directory ("\~/HelloWorld/user.ijm") and use that path instead of "C:/Documents/HelloWorld". When you are sure that the form is filled-in correctly press the "Create" button.
 
 
-{% include img align="center" name="figure 4" src="/media/plugins/Hpc-workflow-manager-create-job.png" caption="**Figure 4**: Example of a new Macro job configuration." %}
+{% include img align="center" name="figure 4" src="/media/plugins/hpc-workflow-manager-create-job.png" caption="**Figure 4**: Example of a new Macro job configuration." %}
 
 ### How to upload the data and the Macro script
 
