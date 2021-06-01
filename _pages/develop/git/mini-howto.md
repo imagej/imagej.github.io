@@ -71,7 +71,7 @@ which will show you which tracked files were modified, and the untracked files (
 You should stage the changed/new files for commit, and verify that all files were correctly staged, with:
 
 `$ cd fiji/`  
-`$ git add `<files>  
+`$ git add <files>`  
 `$ git status`
 
 If all files that need committing were staged correctly, you commit them:
