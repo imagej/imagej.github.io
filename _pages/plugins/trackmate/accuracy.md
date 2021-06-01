@@ -1,5 +1,4 @@
 ---
-mediawiki: TrackMate_Accuracy
 title: TrackMate Accuracy
 ---
 
@@ -58,7 +57,7 @@ It's best to directly read the paper[^1] to know what is behind these measures, 
       <td>
         <p><a href="#receptor-scenario">RECEPTOR</a></p>
       </td>
-      <td>
+      <td rowspan=3>
         <p>Spherical.</p>
       </td>
       <td>
@@ -72,7 +71,6 @@ It's best to directly read the paper[^1] to know what is behind these measures, 
       <td>
         <p>{% include wikipedia title='Brownian motion' text='Brownian motion'%}.</p>
       </td>
-      <td></td>
     </tr>
     <tr>
       <td>
@@ -81,7 +79,6 @@ It's best to directly read the paper[^1] to know what is behind these measures, 
       <td>
         <p>Switch between Brownian and directed motion with fixed orientation for the later.</p>
       </td>
-      <td></td>
     </tr>
   </tbody>
 </table>
@@ -220,7 +217,7 @@ The three spot trackers were configured as indicated in the table below. It's no
 <td> 10
 </td></tr></table>
 
-Finally, for `SNR>4`, I filtered out tracks that had less than 4 detections.
+Finally, for `SNR<4`, I filtered out tracks that had less than 4 detections.
 <br>
 <br>
 ### Results.
