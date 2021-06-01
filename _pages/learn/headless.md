@@ -21,9 +21,7 @@ Since ImageJ 1.x was devised as a desktop application, everything -- including m
 
 On macOS, there is no problem: Aqua provides GUI-independent text rendering (mapping to the actual display using anti-aliasing). There, running in headless mode allows instantiating GUI elements such as the menu bar.
 
-# Solutions
-
-## Recommended Solution: The `--headless` mode
+# Recommended Solution: The `--headless` mode
 
 [ImageJ2](/software/imagej2) provides the capability to execute ImageJ plugins,
 macros and scripts in headless mode. This feature uses bytecode manipulation to
@@ -34,11 +32,11 @@ batch mode without instantiating GUI components.
 ImageJ 1.x is. Naturally, these plugins will still try to instantiate GUI
 elements when being called in headless mode, failing.
 
-### Running scripts in headless mode
+## Running scripts in headless mode
 
 Please see the [headless scripting guide](/scripting/headless).
 
-### Running macros in headless mode
+## Running macros in headless mode
 
 To run a *macro* in headless mode, use the `-macro` command line argument along with the `--headless` option, as follows:
 
@@ -79,7 +77,8 @@ launching ImageJ from the command line.
 {% include aside title="Historical note" content=historical-note %}
 
 
-## Another Solution: Xvfb
+# Other Solutions
+## Xvfb
 
 Another method is to have a virtual desktop, e.g. {% include wikipedia title='Xvfb' text='Xvfb'%}. This will allow ImageJ to start with a virtualised graphical desktop.
 
@@ -126,7 +125,7 @@ A more complex shell script that wraps a macro for use with Xvfb (thanks to Nest
 See also [this post on the ImageJ mailing list](https://list.nih.gov/cgi-bin/wa.exe?A2=IMAGEJ;5ace1ed0.1508).
 
 
-## Another Solution: Rewriting as scripts or plugins
+## Rewriting as scripts or plugins
 
 The most robust method is to rewrite macros as scripts that do not require interaction with the GUI to begin with. Unfortunately, this is the most involved solution, too, since it usually takes some time to convert macros.
 
