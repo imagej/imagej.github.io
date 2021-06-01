@@ -41,7 +41,7 @@
       {%- if class %} {{class}} {%- endif -%}"
             style="
       {%- if width -%} width: {{width}}px; {%- endif -%}
-      {%- if style %} {{style}}" {%- endif -%}"
+      {%- if style %} {{style}} {%- endif -%}"
     >
     {%- assign align = nil -%}
     {%- assign class = nil -%}
