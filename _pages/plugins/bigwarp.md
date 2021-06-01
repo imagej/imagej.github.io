@@ -1,5 +1,4 @@
 ---
-mediawiki: BigWarp
 title: BigWarp
 categories: [Visualization,Transform,Registration]
 artifact: sc.fiji:bigwarp_fiji
@@ -589,10 +588,12 @@ Usage:
 
 Note the input csv must be formatted:
 
-` x1,y1,z1`  
-` x2,y2,z2`  
-` ...`  
-` xN,yN,zN`
+```
+x1,y1,z1
+x2,y2,z2
+...
+xN,yN,zN
+```
 
 without quotation marks, spaces, or any other characters. Csv files storing bigwarp landmarks will not work as input to this script.
 
