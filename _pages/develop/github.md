@@ -1,5 +1,4 @@
 ---
-mediawiki: GitHub
 title: GitHub
 section: Extend:Development:Tools
 ---
