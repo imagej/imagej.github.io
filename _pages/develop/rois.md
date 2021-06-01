@@ -1,5 +1,4 @@
 ---
-mediawiki: ROIs
 title: ROIs
 ---
 
@@ -14,9 +13,11 @@ ROIs are further separated into discrete and continuous space ROIs, which can be
 
 Concrete implementations of geometric ROIs (i.e. ellipsoids, polylines, etc.) can be retrieve from **GeomMasks**. The below example creates a 3D sphere centered at (12.5, 6, 93.25) with a radius of 0.5.
 
+{% highlight java %}
     final double[] center = new double[] { 12.5, 6, 93.25 };
     final double radius = 0.5;
     final Sphere sphere = GeomMasks.closedWritableSphere( center, radius );
+{% endhighlight %}
 
 ## Naming
 
@@ -44,9 +45,14 @@ The **KnownConstant** enum is used for determining if a ROI returns `false` for 
 
 ROIs can be combined via a number of operations, namely: `and`, `or`, `negate`, `minus`, and `xor`. **RealMask**s also have a `transform` operation. Combined ROIs are **CompositeMaskPredicate**s, which preserves the provenance of the composite ROI. For each **CompositeMaskPredicate** it is possible to retrieve the operator and operands. This results in a "tree" of ROIs.
 
-The below example creates a composite ROI: &lt;source lang="java&gt; final Sphere s1 = new ClosedWritableSphere( new double\[\] { 0, 0, 0 }, 3.5 ); final Sphere s2 = new ClosedWritableSphere( new double\[\] { 1, 2, 0 }, 1.5 ); final Sphere s3 = new ClosedWritableSphere( new double\[\] { 2, 2, 0 }, 1.5 ); final RealMaskRealInterval composite = s1.and( s2.minus( s3 ) ).and( s3 ).or( s1.minus( s3.negate() ) );
+The below example creates a composite ROI: 
 
-</source>
+{% highlight java %}
+    final Sphere s1 = new ClosedWritableSphere( new double\[\] { 0, 0, 0 }, 3.5 );
+    final Sphere s2 = new ClosedWritableSphere( new double\[\] { 1, 2, 0 }, 1.5 );
+    final Sphere s3 = new ClosedWritableSphere( new double\[\] { 2, 2, 0 }, 1.5 );
+    final RealMaskRealInterval composite = s1.and( s2.minus( s3 ) ).and( s3 ).or( s1.minus( s3.negate() ) );
+{% endhighlight %}
 
 The resulting composite ROI has the resulting "tree":
 
@@ -76,51 +82,65 @@ The boundary behavior of a ROI may change as a result of the operation. The belo
 <table>
   <tbody>
     <tr>
+      <caption style="caption-side:bottom; text-align: left; font-size: 0.9em; font-weight: normal;">
+      <sup>1</sup> Transform is {% include wikipedia title='Continuous function' text='continuous'%} (preserves boundary behavior) and will preserve the interval bounds<br>
+      <sup>2</sup> Transform is discontinuous or doesn't preserve bounds
+      </caption>
       <td>
-        <p>+style="caption-side:bottom; text-align: left; font-size: 0.9em; font-weight: normal;"|<sup>1</sup> Transform is {% include wikipedia title='Continuous function' text='continuous'%} (preserves boundary behavior) and will preserve the interval bounds<br>
-        <sup>2</sup> Transform is discontinuous or doesn't preserve bounds</p>
+        <p><b>Operation</b></p>
       </td>
+      <td></td>
       <td>
-        <p>Operation</p>
+        <p><b>BoundaryType</b></p>
       </td>
-      <td>
-        <p>BoundaryType</p>
-      </td>
+      <td></td>
     </tr>
     <tr>
       <td></td>
       <td>
-        <p>open</p>
+        <p><b>open</b></p>
       </td>
       <td>
-        <p>closed</p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p>negate</p>
+        <p><b>closed</b></p>
       </td>
       <td>
-        <p>closed</p>
-      </td>
-      <td>
-        <p>open</p>
+        <p><b>unspecified</b></p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>transform<sup>1</sup></p>
+        <p><b>negate</b></p>
+      </td>
+      <td>
+        <p>closed</p>
       </td>
       <td>
         <p>open</p>
       </td>
       <td>
-        <p>closed</p>
+        <p>unspecified</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>transform<sup>2</sup></p>
+        <p><b>transform<sup>1</sup></b></p>
+      </td>
+      <td>
+        <p>open</p>
+      </td>
+      <td>
+        <p>closed</p>
+      </td>
+      <td>
+        <p>unspecified</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><b>transform<sup>2</sup></b></p>
+      </td>
+      <td>
+        <p>unspecified</p>
       </td>
       <td>
         <p>unspecified</p>
@@ -135,23 +155,171 @@ The boundary behavior of a ROI may change as a result of the operation. The belo
 
 ### Binary Operators
 
-| And                  | Minus                |
-|----------------------|----------------------|
-| Operand BoundaryType | Operand BoundaryType |
-| Left                 | Right                |
-|                      | open                 |
-| open                 | open                 |
-| closed               | unspecified          |
-| unspecified          | unspecified          |
 
-| Or                   | Xor                  |
-|----------------------|----------------------|
-| Operand BoundaryType | Operand BoundaryType |
-| Left                 | Right                |
-|                      | open                 |
-| open                 | open                 |
-| closed               | unspecified          |
-| unspecified          | unspecified          |
+<table>
+<tbody>
+<tr><td>
+<table>
+  <tbody>
+    <tr>
+      <td colspan=4><p><b>And</b></p></td>
+    </tr>
+    <tr>
+      <td colspan=4><p><b>OperandBoundaryType</b></p></td>
+    </tr>
+    <tr>
+      <td><p><b>Left</b></p></td>
+      <td colspan=3><p><b>Right</b></p></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><p><b>open</b></p></td>
+      <td><p><b>closed</b></p></td>
+      <td><p><b>unspecified</b></p></td>
+    </tr>
+    <tr>
+      <td><p><b>open</b></p></td>
+      <td><p>open</p></td>
+      <td><p>unspecified</p></td>
+      <td><p>unspecified</p></td>
+    </tr>
+    <tr>
+      <td><p><b>closed</b></p></td>
+      <td><p>unspecified</p></td>
+      <td><p>closed</p></td>
+      <td><p>unspecified</p></td>
+    </tr>
+    <tr>
+      <td><p><b>unspecified</b></p></td>
+      <td><p>unspecified</p></td>
+      <td><p>unspecified</p></td>
+      <td><p>unspecified</p></td>
+    </tr>
+  </tbody>
+</table>
+</td>
+<td>
+<table>
+  <tbody>
+    <tr>
+      <td colspan=4><p><b>Minus</b></p></td>
+    </tr>
+    <tr>
+      <td colspan=4><p><b>OperandBoundaryType</b></p></td>
+    </tr>
+    <tr>
+      <td><p><b>Left</b></p></td>
+      <td colspan=3><p><b>Right</b></p></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><p><b>open</b></p></td>
+      <td><p><b>closed</b></p></td>
+      <td><p><b>unspecified</b></p></td>
+    </tr>
+    <tr>
+      <td><p><b>open</b></p></td>
+      <td><p>unspecified</p></td>
+      <td><p>open</p></td>
+      <td><p>unspecified</p></td>
+    </tr>
+    <tr>
+      <td><p><b>closed</b></p></td>
+      <td><p>closed</p></td>
+      <td><p>unspecified</p></td>
+      <td><p>unspecified</p></td>
+    </tr>
+    <tr>
+      <td><p><b>unspecified</b></p></td>
+      <td><p>unspecified</p></td>
+      <td><p>unspecified</p></td>
+      <td><p>unspecified</p></td>
+    </tr>
+  </tbody>
+</table>
+</td></tr>
+<tr><td>
+<table>
+  <tbody>
+    <tr>
+      <td colspan=4><p><b>Or</b></p></td>
+    </tr>
+    <tr>
+      <td colspan=4><p><b>OperandBoundaryType</b></p></td>
+    </tr>
+    <tr>
+      <td><p><b>Left</b></p></td>
+      <td colspan=3><p><b>Right</b></p></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><p><b>open</b></p></td>
+      <td><p><b>closed</b></p></td>
+      <td><p><b>unspecified</b></p></td>
+    </tr>
+    <tr>
+      <td><p><b>open</b></p></td>
+      <td><p>open</p></td>
+      <td><p>unspecified</p></td>
+      <td><p>unspecified</p></td>
+    </tr>
+    <tr>
+      <td><p><b>closed</b></p></td>
+      <td><p>unspecified</p></td>
+      <td><p>closed</p></td>
+      <td><p>unspecified</p></td>
+    </tr>
+    <tr>
+      <td><p><b>unspecified</b></p></td>
+      <td><p>unspecified</p></td>
+      <td><p>unspecified</p></td>
+      <td><p>unspecified</p></td>
+    </tr>
+  </tbody>
+</table>
+</td>
+<td>
+<table>
+  <tbody>
+    <tr>
+      <td colspan=4><p><b>Xor</b></p></td>
+    </tr>
+    <tr>
+      <td colspan=4><p><b>OperandBoundaryType</b></p></td>
+    </tr>
+    <tr>
+      <td><p><b>Left</b></p></td>
+      <td colspan=3><p><b>Right</b></p></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><p><b>open</b></p></td>
+      <td><p><b>closed</b></p></td>
+      <td><p><b>unspecified</b></p></td>
+    </tr>
+    <tr>
+      <td><p><b>open</b></p></td>
+      <td><p>unspecified</p></td>
+      <td><p>unspecified</p></td>
+      <td><p>unspecified</p></td>
+    </tr>
+    <tr>
+      <td><p><b>closed</b></p></td>
+      <td><p>unspecified</p></td>
+      <td><p>unspecified</p></td>
+      <td><p>unspecified</p></td>
+    </tr>
+    <tr>
+      <td><p><b>unspecified</b></p></td>
+      <td><p>unspecified</p></td>
+      <td><p>unspecified</p></td>
+      <td><p>unspecified</p></td>
+    </tr>
+  </tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
 
 ## Bounds of Composites
 
@@ -159,6 +327,7 @@ The composite logic tries very hard to preserve the bounds of ROIs whenever poss
 
 In the below example, a **CompositeMaskPredicate** is generated by and-ing a **Sphere** and a **Box**. The below example shows that the bounds are sensitive to changes in the operands' bounds. It also demonstrates ROIs ability to detect if a composite is empty.
 
+{% highlight java %}
     final WritableSphere s = GeomMasks.closedWritableSphere( new double[] { 7.5, 8 }, 5 );
     final WritableBox b = GeomMasks.closedWritableBox( new double[] { 3, 2 }, new double[] { 20, 9 } );
     final RealMaskRealInterval and = s.and( b );
@@ -182,39 +351,188 @@ In the below example, a **CompositeMaskPredicate** is generated by and-ing a **S
     System.out.println( "Is empty? " + and.isEmpty() );
     // Is empty? true
     // The two ROIs no longer intersect, so the composite is empty now
+{% endhighlight %}
 
 ### Unary Operators
 
-| Operation             | Operand has bounds? |
-|-----------------------|---------------------|
-|                       | yes                 |
-| negate                | unbounded           |
-| transform<sup>1</sup> | bounded             |
-| transform<sup>2</sup> | unbounded           |
-
-style="caption-side:bottom; text-align: left; font-size: 0.9em; font-weight: normal;"\|<sup>1</sup> Transformation is affine  
-<sup>2</sup> Transformation is not affine
+<table>
+  <tbody>
+    <tr>
+      <caption style="caption-side:bottom; text-align: left; font-size: 0.9em; font-weight: normal;">
+      <sup>1</sup> Transformation is affine<br>
+      <sup>2</sup> Transformation is not affine
+      </caption>
+      <td><p><b>Operation</b></p></td>
+      <td colspan=2><p><b>Operand has bounds?</b></p></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><p><b>yes</b></p></td>
+      <td><p><b>no</b></p></td>
+    </tr>
+    <tr>
+      <td><p><b>negate</b></p></td>
+      <td>unbounded</td>
+      <td>unbounded</td>
+    </tr>
+    <tr>
+      <td><p><b>transform<sup>1</sup></b></p></td>
+      <td>bounded</td>
+      <td>unbounded</td>
+    </tr>
+    <tr>
+      <td><p><b>transform<sup>2</sup></b></p></td>
+      <td>unbounded</td>
+      <td>unbounded</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Binary Operators
 
-| And                 | Minus               | Or                  | Xor                 |
-|---------------------|---------------------|---------------------|---------------------|
-| Operand has bounds? | Operand has bounds? | Operand has bounds? | Operand has bounds? |
-| Left                | Right               | Left                | Right               |
-|                     | yes                 | no                  |                     |
-| yes                 | bounded             | bounded             | yes                 |
-| no                  | bounded             | unbounded           | no                  |
+<table>
+<tbody>
+<tr>
+<td>
+<table>
+  <tbody>
+    <tr>
+      <td colspan=3><p><b>And</b></p></td>
+    </tr>
+    <tr>
+      <td colspan=3><p><b>Operand has bounds?</b></p></td>
+    </tr>
+    <tr>
+      <td><p><b>Left</b></p></td>
+      <td colspan=2><p><b>Right</b></p></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><p><b>yes</b></p></td>
+      <td><p><b>no</b></p></td>
+    </tr>
+    <tr>
+      <td><p><b>yes</b></p></td>
+      <td>bounded</td>
+      <td>bounded</td>
+    </tr>
+    <tr>
+      <td><p><b>no</b></p></td>
+      <td>bounded</td>
+      <td>unbounded</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+<td>
+<table>
+  <tbody>
+    <tr>
+      <td colspan=3><p><b>Minus</b></p></td>
+    </tr>
+    <tr>
+      <td colspan=3><p><b>Operand has bounds?</b></p></td>
+    </tr>
+    <tr>
+      <td><p><b>Left</b></p></td>
+      <td colspan=2><p><b>Right</b></p></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><p><b>yes</b></p></td>
+      <td><p><b>no</b></p></td>
+    </tr>
+    <tr>
+      <td><p><b>yes</b></p></td>
+      <td>bounded</td>
+      <td>bounded</td>
+    </tr>
+    <tr>
+      <td><p><b>no</b></p></td>
+      <td>unbounded</td>
+      <td>unbounded</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+<td>
+<table>
+  <tbody>
+    <tr>
+      <td colspan=3><p><b>Or</b></p></td>
+    </tr>
+    <tr>
+      <td colspan=3><p><b>Operand has bounds?</b></p></td>
+    </tr>
+    <tr>
+      <td><p><b>Left</b></p></td>
+      <td colspan=2><p><b>Right</b></p></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><p><b>yes</b></p></td>
+      <td><p><b>no</b></p></td>
+    </tr>
+    <tr>
+      <td><p><b>yes</b></p></td>
+      <td>bounded</td>
+      <td>unbounded</td>
+    </tr>
+    <tr>
+      <td><p><b>no</b></p></td>
+      <td>unbounded</td>
+      <td>unbounded</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+<td>
+<table>
+  <tbody>
+    <tr>
+      <td colspan=3><p><b>Xor</b></p></td>
+    </tr>
+    <tr>
+      <td colspan=3><p><b>Operand has bounds?</b></p></td>
+    </tr>
+    <tr>
+      <td><p><b>Left</b></p></td>
+      <td colspan=2><p><b>Right</b></p></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><p><b>yes</b></p></td>
+      <td><p><b>no</b></p></td>
+    </tr>
+    <tr>
+      <td><p><b>yes</b></p></td>
+      <td>bounded</td>
+      <td>unbounded</td>
+    </tr>
+    <tr>
+      <td><p><b>no</b></p></td>
+      <td>unbounded</td>
+      <td>unbounded</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
 
 # Converting to RandomAccessible
 
 It is also possible to convert **MaskPredicate**s to **(Real)RandomAccessible**s. The easiest way to do this is via the **Masks** class.
 
+{% highlight java %}
     final double[] center = new double[] { 10, 13, 22.25 };
     final double[] semiAxisLengths = new double[] { 4, 5, 1 };
     final double exponent = 6;
     final SuperEllipsoid se = GeomMasks.closedWritableSuperEllipsoid( center, semiAxisLengths, exponent );
 
     final RealRandomAccessibleRealInterval< BoolType > rrari = Masks.toRealRandomAccessibleRealInterval( se );
+{% endhighlight %}
 
 # Discussion
 
