@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Bogovic
 title: John Bogovic
 name: John Bogovic
 affiliation: HHMI Janelia Research Campus
@@ -10,4 +9,4 @@ affiliation:
 github: bogovicj
 ---
 
-{% include warning/stub %}
+I wrote and maintain [BigWarp](/plugins/bigwarp), and contribute to [imglib2](/libs/imglib2) and [BigDataViewer](/plugins/bdv).
