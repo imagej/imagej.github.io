@@ -187,6 +187,7 @@
               <li><a href="/editing/advanced">Advanced editing</a></li>
               <li><a href="/editing/citations">Citations</a></li>
               <li><a href="/editing/code">Source Code</a></li>
+              <li><a href="/editing/echoes">Echoes</a></li>
               <li><a href="/editing/headers">Headers</a></li>
               <li><a href="/editing/icons">Icons</a></li>
               <li><a href="/editing/images">Images</a></li>
@@ -196,9 +197,11 @@
               <li><a href="/editing/notices">Notices</a></li>
               <li><a href="/editing/people">People</a></li>
               <li><a href="/editing/pitfalls">Pitfalls</a></li>
+              <li><a href="/editing/quizzes">Quizzes</a></li>
               <li><a href="/editing/symbols">Symbols</a></li>
               <li><a href="/editing/tables">Tables</a></li>
               <li><a href="/editing/timelines">Timelines</a></li>
+              <li><a href="/editing/tooltips">Tooltips</a></li>
               <li><a href="/editing/videos">Videos</a></li>
               <li><a href="/editing/whitespace">Whitespace</a></li>
             {% include menu/section-end %} <!-- Contribute/Editing the Wiki -->

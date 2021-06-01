@@ -183,16 +183,16 @@ The following tables list all of this site's general-purpose includes:
 
 | Include      | Purpose                          |
 |--------------|----------------------------------|
-| [code](TODO) | Embed a code snippet from GitHub |
+| [code](code) | Embed a code snippet from GitHub |
 
 #### Miscellaneous
 
 | Include                              | Purpose                              |
 |--------------------------------------|--------------------------------------|
-| [quiz](TODO)                         | Insert a Q&A with hidden answer      |
-| [timeline](TODO)                     | Insert a horizontal timeline         |
-| [tooltip](TODO)                      | Add a tooltip appearing on mouseover |
-| [echo](TODO)                         | For debugging                        |
+| [quiz](quizzes)                      | Insert a Q&A with hidden answer      |
+| [timeline](timelines)                | Insert a horizontal timeline         |
+| [tooltip](tooltips)                  | Add a tooltip appearing on mouseover |
+| [echo](echoes)                       | For debugging                        |
 
 #### MARKED FOR REMOVAL
 
