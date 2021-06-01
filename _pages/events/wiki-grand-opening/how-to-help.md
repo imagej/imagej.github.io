@@ -38,8 +38,8 @@ margin or an ugly table. And don't invent your own custom navigation or other
 fancy web feature, just for one page or site section. If you feel something
 should be fixed or enhanced, let's do it for the whole site, so that all pages
 reap the benefits. When in doubt, discuss in the
-[chat room](https://gitter.im/imagej/imagej.github.io) or
-[in gather.town](https://gather.town/app/ipHMoZp6WOdATHE4/FijiHackathon).
+[chat room](https://gitter.im/imagej/imagej.github.io) or on the
+[Fiji gather.town island](https://gather.town/app/ipHMoZp6WOdATHE4/FijiHackathon).
 {% endcapture %}
 {% include notice content=primary-focus %}
 
