@@ -1,6 +1,6 @@
 ---
-mediawiki: OpenCV
 title: OpenCV
+description: Computer vision library available for multiple programing languages
 section: Explore:Software
 categories: [Software]
 ---
