@@ -1,6 +1,7 @@
 ---
 title: IJ-OpenCV
 description : Java package providing converters between ImageJ1 and OpenCV objects
+section: Explore:Libraries
 doi: 10.1016/j.compbiomed.2017.03.027
 ---
 
