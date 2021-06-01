@@ -78,8 +78,8 @@ In many ways, this new wiki is much more powerful than the old site.
 4. Not a permanent downside, but be aware that there are still a few pages
    that have not been organized into their proper places. Any page that
    _is in the top-level `_pages` folder_ and _starts with a capital letter_
-   still needs to be renamed and moved into the right place. As of this
-   writing, there are 11 such pages.
+   still needs to be renamed and moved into the right place. See question 4
+   below for more about this.
 
 5. Another temporary issue is that we are not 100% done fixing the media
    includes: `img`, `video`, and `gallery`. The `img` and `video` includes
@@ -88,6 +88,61 @@ In many ways, this new wiki is much more powerful than the old site.
    needs a little work. And `gallery` still needs significant cleanup.
    You are welcome to use any of the media includes, but we may need to do some
    additional cleanup later en masse as these includes evolve.
+
+## Questions to consider
+
+1.  **What should the official categories be** for plugins? Right now, people
+    can tag whatever they want for the categories, and [it shows in the plugin
+    index](/plugin-index). Do you have opinions? Or know of any kind of
+    community standard we could use here?
+
+2.  `/update-sites` contains pages documenting what update sites are and how to
+    use them, whereas `/sites` contains pages describing individual update sites
+    (like `/people` for people, `/orgs` for organizations, `/software` for
+    software packages, `/libs` for software libraries). **This naming is
+    confusing; do you have any better ideas?**
+
+3.  `/tutorials` contains tutorials about ImageJ, but they are not currently
+    rated by level of experience. It would be nicer if we rated each tutorial
+    something like: 1-introductory (e.g. learning the GUI), 2-intermediate (e.g.
+    recording and tweaking ImageJ macros), 3-advanced (e.g. scripting with the
+    Script Editor), 4-expert (e.g. programming plugins in Java).
+
+    *   **Would it make sense to divide the tutorials folder into subfolders** in
+        this manner? How should we name it? `/tutorials/level1/` through
+        `/tutorials/level4/`? Better ideas? Maybe the scripting tutorials in
+        `/scripting/examples` should move into `/tutorials/level3` if we do
+        this scheme? And maybe some things currently in `/learn` could move to
+        `/tutorials/level1` then?
+    *   **Or would it better to make the existing folder structure contain
+        tutorials** at each level: `/learn` for level 1, `/scripting` for
+        levels 2 and 3, and `/develop` for level 4? That's mostly how it is
+        now, except we then also have articles the `/tutorials` folder...
+        should we parcel out what's there into the other locations instead?
+
+    Now that I've written all this out, I'm liking the latter approach, but
+    please think it over and discuss!
+
+4.  The 11 not-yet-renamed pages in the root directory are:
+
+    * Command\_Line\_Tips\_and\_Tricks
+    * Diadem\_Challenge\_Data
+    * Find\_Maxima...
+    * Finer\_Grained\_Debian\_Packages
+    * First-instar\_brain\_6.3MB
+    * ImageJ1-ImageJ2\_cheat\_sheet
+    * Imprint
+    * Java\_Options
+    * Java\_Tricks\_and\_Quirks
+    * Linux\_command\_line\_tutorial
+    * Mamed
+
+    Where should each one go? Please propose locations for them in the chat.
+
+5.  Are there any cards on the [Road to Production project
+    board](https://github.com/imagej/imagej.github.io/projects/2) in the
+    "To do - crowdsource!" column that interest you?
+    If so, please feel warmly invited to work on them!
 
 ## Setting up
 
