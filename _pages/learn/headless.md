@@ -21,24 +21,9 @@ Since ImageJ 1.x was devised as a desktop application, everything -- including m
 
 On macOS, there is no problem: Aqua provides GUI-independent text rendering (mapping to the actual display using anti-aliasing). There, running in headless mode allows instantiating GUI elements such as the menu bar.
 
-# Possible solutions
+# Solutions
 
-## The `--headless` mode
-
-{% capture historical-note %}
-Headless support was originally a branch in [ImageJA](/libs/imageja); it worked
-by putting rewritten versions of three core ImageJ classes into a file called
-*headless.jar*, which was put into the class path *before* `ij.jar` so they
-would override ImageJ's versions.
-
-Nowadays, we use [Javassist](/develop/javassist) for run-time patching, through
-the
-{% include github org='imagej' repo='ij1-patcher' label='ImageJ 1.x patcher' %}
-project. <span style="color: red">You do not need to do anything special to
-take advantage of this feature, except pass the `--headless` flag when
-launching ImageJ from the command line.</span>
-{% endcapture %}
-{% include aside title="Historical note" content=historical-note %}
+## Recommended Solution: The `--headless` mode
 
 [ImageJ2](/software/imagej2) provides the capability to execute ImageJ plugins,
 macros and scripts in headless mode. This feature uses bytecode manipulation to
@@ -57,13 +42,13 @@ Please see the [headless scripting guide](/scripting/headless).
 
 To run a *macro* in headless mode, use the `-macro` command line argument along with the `--headless` option, as follows:
 
-` ImageJ --headless -macro path-to-Macro.ijm`
+`ImageJ --headless -macro path-to-Macro.ijm`
 
 If the macro resides in ImageJ's macro directory, it is possible to specify the macro name instead of the actual file path. The file extension is always very recommended but for backwards compatibility, it is not strictly required *only* when specifying the macro name instead of a path.
 
 You can even pass parameters to the macro; e.g.:
 
-` ./ImageJ-win64.exe --headless --console -macro ./RunBatch.ijm 'folder=../folder1 parameters=a.properties output=../samples/Output'`
+`./ImageJ-win64.exe --headless --console -macro ./RunBatch.ijm 'folder=../folder1 parameters=a.properties output=../samples/Output'`
 
 In that case, the RunBatch.ijm file should be something like:
 
@@ -78,7 +63,23 @@ the `getArgument()` is used to grab the parameter string itself, and it is then 
 
 {% include notice icon="warning" content='Please note that you will not be able to use [script parameters](/scripting/parameters) with `-macro`. Follow instructions in [Scripting Headless](/scripting/headless) instead.' %}
 
-## Xvfb
+{% capture historical-note %}
+Headless support was originally a branch in [ImageJA](/libs/imageja); it worked
+by putting rewritten versions of three core ImageJ classes into a file called
+*headless.jar*, which was put into the class path *before* `ij.jar` so they
+would override ImageJ's versions.
+
+Nowadays, we use [Javassist](/develop/javassist) for run-time patching, through
+the
+{% include github org='imagej' repo='ij1-patcher' label='ImageJ 1.x patcher' %}
+project. You do not need to do anything special to
+take advantage of this feature, except pass the `--headless` flag when
+launching ImageJ from the command line.
+{% endcapture %}
+{% include aside title="Historical note" content=historical-note %}
+
+
+## Another Solution: Xvfb
 
 Another method is to have a virtual desktop, e.g. {% include wikipedia title='Xvfb' text='Xvfb'%}. This will allow ImageJ to start with a virtualised graphical desktop.
 
@@ -124,6 +125,8 @@ A more complex shell script that wraps a macro for use with Xvfb (thanks to Nest
 
 See also [this post on the ImageJ mailing list](https://list.nih.gov/cgi-bin/wa.exe?A2=IMAGEJ;5ace1ed0.1508).
 
-## Rewriting as scripts or plugins
+
+## Another Solution: Rewriting as scripts or plugins
 
 The most robust method is to rewrite macros as scripts that do not require interaction with the GUI to begin with. Unfortunately, this is the most involved solution, too, since it usually takes some time to convert macros.
+
