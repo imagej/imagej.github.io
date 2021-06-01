@@ -1,5 +1,4 @@
 ---
-mediawiki: Scripting_Headless
 title: Scripting Headless
 section: Extend:Scripting
 categories: [Scripting]
