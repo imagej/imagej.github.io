@@ -58,14 +58,14 @@ In many ways, this new wiki is much more powerful than the old site.
    Furthermore, certain kinds of syntax errors will *break the build*, causing
    the entire site not to update until the error is corrected.
 
-2. The Preview tab in GitHub's online editor *cannot be fully trusted*.
-   It renders most Markdown syntax correctly, but it does not understand
-   Liquid directives (i.e. the `{% raw %}{% include ... %}{% endraw %}`
-   syntax), and there are edge cases around mixed Markdown + HTML working or
-   not in the preview versus on the actual live site. If you find yourself
-   getting frustrated with this, there is a way to
-   [build the site locally](/editing/advanced) to test your changes before
-   committing them, but it requires a bit of command line and a bit of Git.
+2. The Preview tab in GitHub's online editor is very useful for sanity checking
+   your edits, but *cannot be completely trusted*. It renders most Markdown
+   syntax correctly, but it does not understand Liquid directives (i.e. the
+   `{% raw %}{% include ... %}{% endraw %}` syntax), and there are edge cases
+   around mixed Markdown + HTML looking different in the preview versus on the
+   actual live site. If you find yourself getting frustrated by this, there is
+   a way to [build the site locally](/editing/advanced) to test your changes
+   before committing them, but it uses some command line and a bit of Git.
    If you're not comfortable with that, then just keep it simple, do your best,
    and choose pages with less complex problems. You could also focus on
    improving the content itself more than fixing syntactical issues.
