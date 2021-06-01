@@ -35,14 +35,14 @@ Initial setup:
 
 -   set up user name:
 
-    ```
+    ```bash
     git config --global user.name "Howard Carter"
     git config --global user.email howard@egyptian-antiquities-service.com
     ```
 
 -   set up editor (if you do not like *vi*)
 
-    ```
+    ```bash
     git config --global core.editor wordpad
     ```
 
@@ -50,19 +50,19 @@ First steps:
 
 -   initialize a repository
 
-    ```
+    ```bash
     git init
     ```
 
 -   add contents (caveat for Subversion users: `git add` adds the <u>contents</u>, not just the <u>file name</u>)
 
-    ```
+    ```bash
     git add hello-world.txt
     ```
 
 -   commit
 
-    ```
+    ```bash
     git commit
     ```
 
@@ -90,19 +90,19 @@ Before committing, it is a good idea to see what modifications are about to be c
 
 -   Looking at a diff:
 
-    ```
+    ```bash
     git diff
     ```
 
 -   Looking at a diff in color:
 
-    ```
+    ```bash
     git diff --color
     ```
 
 -   Changing the default to color diffs:
 
-    ```
+    ```bash
     git config --global diff.color auto
     ```
 
@@ -129,37 +129,37 @@ For ease of use, in addition to their long name (40 hex characters, quite klunky
 
 -   Inspecting the version history
 
-    ```
+    ```bash
     git log
     ```
 
 -   Inspecting the version history in a graphical way
 
-    ```
+    ```bash
     gitk
     ```
 
 -   Inspecting the version history with diffs
 
-    ```
+    ```bash
     git log -p
     ```
 
 -   Inspecting the latest 5 revisions with diffs
 
-    ```
+    ```bash
     git log -p -5
     ```
 
 -   Inspecting just one commit
 
-    ```
+    ```bash
     git show HEAD~5
     ```
 
 -   Looking at all commits touching a specific set of files/directories
 
-    ```
+    ```bash
     git log README
     ```
 
@@ -179,25 +179,25 @@ Branches can be used to organize sets of changes by topic. Compare also [Fiji's 
 
 -   Creating a branch
 
-    ```
+    ```bash
     git checkout -b my-new-branch
     ```
 
 -   Switching to another branch
 
-    ```
+    ```bash
     git checkout master
     ```
 
 -   Seeing all (local) branches (the current one is prefixed by a star)
 
-    ```
+    ```bash
     git branch
     ```
 
 -   Switching back to the previous branch
 
-    ```
+    ```bash
     git checkout @{-1}
     ```
 
@@ -213,19 +213,19 @@ A main repository usually does not need a working directory, in which case it is
 
 -   Clone a repository
 
-    ```
+    ```bash
     git clone git://github.com/git/hello-world
     ```
 
 -   Clone a repository from USB disk or file server
 
-    ```
+    ```bash
     git clone /path/to/hello-world
     ```
 
 -   Set up a main repository on the file server
 
-    ```
+    ```bash
     git init --bare --shared=group /path/to/fileserver/my.git
     ```
 
@@ -241,7 +241,7 @@ Please refer to the Fiji's page on [Git Conflicts](/develop/git/conflicts) for a
 
 -   Initialize and commit a file, say, *hello.txt*
 
-    ```
+    ```bash
     echo Hello > hello.txt
     git add hello.txt
     git commit -m initial
@@ -249,7 +249,7 @@ Please refer to the Fiji's page on [Git Conflicts](/develop/git/conflicts) for a
 
 -   Initialize a new branch and modify hello.txt
 
-    ```
+    ```bash
     git checkout -b tut-anch-amun
     echo Boooh > hello.txt
     git add hello.txt
@@ -258,7 +258,7 @@ Please refer to the Fiji's page on [Git Conflicts](/develop/git/conflicts) for a
 
 -   Switch back to old branch, modify hello.txt
 
-    ```
+    ```bash
     git checkout @{-1}
     echo Hi > hello.txt
     git add hello.txt
@@ -267,7 +267,7 @@ Please refer to the Fiji's page on [Git Conflicts](/develop/git/conflicts) for a
 
 -   Merge
 
-    ```
+    ```bash
     git merge tut-anch-amun
     ```
 
@@ -281,13 +281,13 @@ You can access the reflogs by appending `@{<number>}` or `@{<date>}` to a branch
 
 -   See what revision was current five minutes ago
 
-    ```
+    ```bash
     git show HEAD@{5.minutes.ago}
     ```
 
 -   See the reflog history
 
-    ```
+    ```bash
     git log -g
     ```
 
@@ -301,20 +301,20 @@ Note: the stash is a special pseudo-branch, living in *refs/stash*. Their histor
 
 -   Make a change and stash it
 
-    ```
+    ```bash
     echo Shalom > hello.txt
     git stash
     ```
 
 -   Get it back
 
-    ```
+    ```bash
     git stash apply
     ```
 
 -   Stashing only the changes that have not been added yet with `git add`
 
-    ```
+    ```bash
     echo Howdy > hello.txt
     git add hello.txt
     echo Hey hey > hello.txt
@@ -323,19 +323,19 @@ Note: the stash is a special pseudo-branch, living in *refs/stash*. Their histor
 
 -   Getting a list of stashed changes
 
-    ```
+    ```bash
     git stash list
     ```
 
 -   Stash with a custom message
 
-    ```
+    ```bash
     git stash save This is my description
     ```
 
 -   Remove the latest changes from the stash
 
-    ```
+    ```bash
     git stash pop
     ```
 
@@ -351,25 +351,25 @@ For more low-level access, use `git cat-file`.
 
 -   Show the raw commit message, with the diff
 
-    ```
+    ```bash
     git show --pretty=raw HEAD
     ```
 
 -   Show a commit's corresponding top-level tree
 
-    ```
+    ```bash
     git show HEAD:
     ```
 
 -   Show a blob
 
-    ```
+    ```bash
     git show HEAD:Documentation/README
     ```
 
 -   Low-level access to a commit
 
-    ```
+    ```bash
     git cat-file commit HEAD
     ```
 
@@ -387,19 +387,19 @@ The `reset` command can further be convinced to reset not only the index (stagin
 
 -   pick a file version from another branch
 
-    ```
+    ```bash
     git checkout other-branch README
     ```
 
 -   Unstage all changes, i.e. revert all files from "to-be-committed" status to "modified"
 
-    ```
+    ```bash
     git reset
     ```
 
 -   Get rid of all changes (like `git stash` but the changes are not stored)
 
-    ```
+    ```bash
     git reset --hard
     ```
 
@@ -424,43 +424,43 @@ Note: there is a shortcut for *fetch & merge*: `git pull`. If you create a new b
 
 -   Add a remote
 
-    ```
+    ```bash
     git remote add hello git://github.com/git/hello-world
     ```
 
 -   Fetch from a remote
 
-    ```
+    ```bash
     git fetch hello
     ```
 
 -   Listing all local copies of the remotes' branches
 
-    ```
+    ```bash
     git branch -r
     ```
 
 -   Push a branch
 
-    ```
+    ```bash
     git push origin master
     ```
 
 -   Push the current branch
 
-    ```
+    ```bash
     git push origin HEAD
     ```
 
 -   Push to a branch with a name differing from the local name
 
-    ```
+    ```bash
     git push origin my-new-branch:master
     ```
 
 -   Delete a branch from a remote repository
 
-    ```
+    ```bash
     git push --delete origin blabla-branch
     ```
 
