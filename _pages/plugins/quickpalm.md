@@ -1,7 +1,6 @@
 ---
-mediawiki: QuickPALM
 title: QuickPALM
-categories: [Super-resolution, Citable, Plugins]
+categories: [Super-resolution]
 artifact: sc.fiji:QuickPALM_
 doi: 10.1038/nmeth0510-339
 ---
@@ -13,5 +12,3 @@ The QuickPALM ImageJ plugin enables PALM/STORM 2D/3D/4D particle detection and i
 {% include citation %}
 
 For Full Documentation, and details of how to build your own super resolution system, please visit: [QuickPALM pages at Google Code](http://code.google.com/p/quickpalm/)
-
-[ Super Resolution](/plugin-index#super-resolution)
