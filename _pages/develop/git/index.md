@@ -80,31 +80,21 @@ If the commandline is not your favorite playground you can have a look at the Gi
 
 Except for the *clone* command, this follows the common workflow:
 
--   *git diff HEAD* will show you the changes of your working directory relative to the current commit.
+-   `git diff HEAD` will show you the changes of your working directory relative to the current commit.
 
-<!-- -->
+-   `git add <file>...` tells Git that you want the next commit to contain the current version of that file/these files.
 
--   *git add <file>...* tells Git that you want the next commit to contain the current version of that file/these files.
+-   `git commit` tells Git that you want to commit a new revision with all staged changes.
 
-<!-- -->
+-   `git fetch origin` synchronizes the local copy of the default remote repository.
 
--   *git commit* tells Git that you want to commit a new revision with all staged changes.
+-   `git merge origin/master` integrates the default remote repository's changes into your local repository and working directory (<u>never</u> do this when you have uncommitted changes!).
 
-<!-- -->
-
--   *git fetch origin* synchronizes the local copy of the default remote repository.
-
-<!-- -->
-
--   *git merge origin/master* integrates the default remote repository's changes into your local repository and working directory (<u>never</u> do this when you have uncommitted changes!).
-
-<!-- -->
-
--   *git push origin HEAD* publish your changes in the remote repository.
+-   `git push origin HEAD` publish your changes in the remote repository.
 
 Initially, you need to start from somewhere:
 
--   *git clone <URL>* will make a new local repository and initialize it from a remote one.
+-   `git clone <URL>` will make a new local repository and initialize it from a remote one.
 
 See also the more verbose [Git mini howto](/develop/git/mini-howto).
 
@@ -114,7 +104,7 @@ If you know CVS or Subversion, you are in for some surprises:
 
 -   In Git, each repository is local. To publish your changes, you need to have a remote repository, too, and *push* your work there.
 -   In Git, [branches](/develop/git/topic-branches) are easy and fast.
--   In Git, you *git add* <u>content</u>, not files. In other words, when the file *README* is already tracked, *git add README* will tell Git that you want the changes in said file to be part of the next commit.
--   In Git, you <u>never, ever</u> try to integrate remote changes into an uncommitted state. In other words, if you have uncommitted changes, you <u>always</u> commit them before calling *git fetch origin; git merge origin/master*.
+-   In Git, you `git add` <u>content</u>, not files. In other words, when the file *README* is already tracked, `git add README` will tell Git that you want the changes in said file to be part of the next commit.
+-   In Git, you <u>never, ever</u> try to integrate remote changes into an uncommitted state. In other words, if you have uncommitted changes, you <u>always</u> commit them before calling `git fetch origin; git merge origin/master`.
 
 
