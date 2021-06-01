@@ -21,14 +21,15 @@ nav-title: Page List
 
 ## Pages on the site
 
-As we review pages and mark them done, they will automatically jump from
-[Pages remaining](#pages-remaining) to [Completed pages](#completed-pages).
-Our goal is to review every page by the end of Thursday, June 4!
-WE CAN DO IT! 💪
+As we review pages and mark them done, they will automatically
+disappear from the [Pages remaining](#pages-remaining) list,
+and advance the progress bar. Our goal is to review every page
+by the end of Thursday, June 4! WE CAN DO IT! 💪
 
 ## Pages remaining
 
-{%- assign todo-pages = site.pages | where_exp: "p", "p.mediawiki != nil" | sort: "url" -%}
+{%- assign todo-pages = site.pages | where_exp: "p", "p.mediawiki != nil" -%}
+
 {%- assign remain = todo-pages | size -%}
 {%- assign total = site.pages | size -%}
 {%- assign done = total | minus: remain -%}
@@ -58,22 +59,35 @@ WE CAN DO IT! 💪
   <div style="width: {{percent}}%"></div>
 </div>
 
-{%- assign todo-pages = site.pages | where_exp: "p", "p.mediawiki != nil" | sort: "url" -%}
-{%- assign depth = 1 %}
+{%- comment -%} Sort pages by directory. {%- endcomment -%}
+{%- assign last-page = todo-pages.size | minus: 1 -%}
+{%- assign sort-pages = "" -%}
+{%- for p in todo-pages -%}
+  {%- capture dir -%} {%- include util/dir path=p.url -%} {%- endcapture -%}
+  {%- assign sort-pages = sort-pages | append: "|"
+    | append: dir | append: "#" | append: p.url
+    | append: "#" | append: forloop.index0 -%}
+{%- endfor -%}
+{%- assign sort-keys = sort-pages | split: "|" | sort -%}
+
 <div class="todo-list">
 <ul>
 <h3>/</h3>
 {%- assign bucket = '' -%}
-{% for p in todo-pages %}
-{%- capture this-bucket -%} {%- include util/dir path=p.url -%} {%- endcapture -%}
-{%- if bucket == this-bucket -%}
-  {%- comment -%} Same directory -- carry on! {%- endcomment -%}
-{%- else -%}
-  {%- assign bucket = this-bucket -%}
+{% for s in sort-keys %}
+  {%- if s == '' -%} {%- continue -%} {%- endif -%}
+  {%- assign tokens = s | split: "#" -%}
+  {%- assign dir = tokens[0] -%}
+  {%- assign index0 = tokens[2] | plus: 0 -%}
+  {%- assign p = todo-pages[index0] -%}
+  {%- if bucket == dir -%}
+    {%- comment -%} Same directory -- carry on! {%- endcomment -%}
+  {%- else -%}
+    {%- assign bucket = dir -%}
   </ul>
   <ul>
   <h3>{{bucket}}</h3>
-{%- endif -%}
+  {%- endif -%}
 <li><a href="{{p.url | replace: "/index", ""}}">{{p.title}}</a></li>
 {% endfor %}
 </ul>
