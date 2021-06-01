@@ -1,5 +1,4 @@
 ---
-mediawiki: Git_mini_howto
 title: Git mini howto
 section: Extend:Development:Git
 ---
