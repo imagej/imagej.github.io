@@ -1,10 +1,10 @@
 ---
 mediawiki: Command_Line_Tips_and_Tricks
-title: Command Line Tips and Tricks
+title: Command Line Diagnostics
 categories: [tutorials]
 ---
 
-This page lists all kinds of usable hints how to use the command line in the different environments supported by Fiji.
+This page lists hints on how to use the command line for developer diagnostics in the different environments supported by Fiji.
 
 | Action                         | Linux                                   | macOS                     | Windows                                                                                            |
 |--------------------------------|-----------------------------------------|---------------------------|----------------------------------------------------------------------------------------------------|
