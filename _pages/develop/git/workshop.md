@@ -1,5 +1,4 @@
 ---
-mediawiki: Git_workshop
 title: Git workshop
 section: Extend:Development:Git
 ---
@@ -55,7 +54,7 @@ First steps:
     git init
     ```
 
--   add contents (caveat for Subversion users: *git add* adds the <u>contents</u>, not just the <u>file name</u>)
+-   add contents (caveat for Subversion users: `git add` adds the <u>contents</u>, not just the <u>file name</u>)
 
     ```
     git add hello-world.txt
@@ -75,16 +74,16 @@ Notes:
 -   using a `.gitignore` file
 -   adding a Sign-off (AKA S-O-B)
 -   `git init` creates .git/ in which all of the repository's files live
--   `git config` accesses .git/config, \~/.gitconfig and /etc/gitconfig
+-   `git config` accesses `.git/config`, `~/.gitconfig` and `/etc/gitconfig`
 
 # What are diffs?
 
 Before committing, it is a good idea to see what modifications are about to be committed. One mode to look at them is to let Git show a *diff*. A *diff* consists of the following parts for every modified file:
 
-1.  a pseudo command line starting with *diff --git*
-2.  a line describing the *previous* revision, starting with *---*
-3.  a line describing the *next* revision, starting with *+++*
-4.  one or more *hunks* starting with *@@ -<begin line>,<line count> +<begin line>,<line count>*
+1.  a pseudo command line starting with `diff --git`
+2.  a line describing the *previous* revision, starting with `---`
+3.  a line describing the *next* revision, starting with `+++`
+4.  one or more *hunks* starting with `@@ -<begin line>,<line count> +<begin line>,<line count>`
 5.  a corresponding block of lines starting with a space for lines in both the previous and next revision, a minus for lines only in the previous one (*removed line*) and a plus for lines only in the next revision (*added line*). A modified line will show up as removed and added.
 
 ## Hands-on
@@ -123,8 +122,8 @@ See [Git for computer scientists](http://eagain.net/articles/git-for-computer-sc
 For ease of use, in addition to their long name (40 hex characters, quite klunky but precise) commits can be referred to by
 
 -   short name
--   HEAD
--   HEAD\~<n>
+-   `HEAD`
+-   `HEAD~<n>`
 
 ## Hands-on
 
@@ -276,7 +275,7 @@ Please refer to the Fiji's page on [Git Conflicts](/develop/git/conflicts) for a
 
 We looked at the commit history previously. But every repository has its own individual history; for example, yesterday at noon, a specific branch with a specific revision was the current branch. This is stored in the reflogs (for space efficiency, reflogs are not available eternally but are pruned at some stage).
 
-You can access the reflogs by appending *@{<number>}* or *@{<date>}* to a branch name or to *HEAD*.
+You can access the reflogs by appending `@{<number>}` or `@{<date>}` to a branch name or to `HEAD`.
 
 ## Hands-on
 
@@ -313,7 +312,7 @@ Note: the stash is a special pseudo-branch, living in *refs/stash*. Their histor
     git stash apply
     ```
 
--   Stashing only the changes that have not been `git add`ed yet
+-   Stashing only the changes that have not been added yet with `git add`
 
     ```
     echo Howdy > hello.txt
@@ -344,7 +343,7 @@ Note: the stash is a special pseudo-branch, living in *refs/stash*. Their histor
 
 The primary way to look at commits is by using `git show`. It can show tags, commits, trees and blobs.
 
-To access more information about commits, use the parameter *--pretty=fuller*.
+To access more information about commits, use the parameter `--pretty=fuller`.
 
 For more low-level access, use `git cat-file`.
 
@@ -376,13 +375,13 @@ For more low-level access, use `git cat-file`.
 
 # What meanings do "checkout", "reset" have in Git?
 
-We already saw that *checkout* can switch between branches and even initialize new branches.
+We already saw that `checkout` can switch between branches and even initialize new branches.
 
-Unfortunately, *checkout* is also the command to pick file versions from other branches without switching the branches. Thusly picked file versions are automatically added, i.e. staged for the next commit.
+Unfortunately, `checkout` is also the command to pick file versions from other branches without switching the branches. Thusly picked file versions are automatically added, i.e. staged for the next commit.
 
-To unstage changes, one can use the *reset* command (without arguments, it resets all files which HEAD knows about currently).
+To unstage changes, one can use the `reset` command (without arguments, it resets all files which HEAD knows about currently).
 
-The *reset* command can further be convinced to reset not only the index (staging area), but also the working directory.
+The `reset` command can further be convinced to reset not only the index (staging area), but also the working directory.
 
 ## Hands-on
 
@@ -415,11 +414,11 @@ Interaction with remote repositories is performed using
 -   `git fetch`, which local copies of the branches of the remote repository including all required objects (but being a bit clever about avoiding to get objects we have already) and
 -   `git push`, which updates remote repositories' branches to the local branches' state.
 
-The local copies of remote branches live in a specific namespace, refs/remotes/<name>. For example, the *master* branch of the remote called *origin* will be stored in *refs/remotes/origin/master*. If unambiguous, it can be referred to as *origin/master*, too.
+The local copies of remote branches live in a specific namespace, refs/remotes/\<name>. For example, the *master* branch of the remote called *origin* will be stored in *refs/remotes/origin/master*. If unambiguous, it can be referred to as *origin/master*, too.
 
 Note: you need to make sure that you do not mix two different projects in the same working directory's repository. Git will happily fetch from wherever into your local repository, even if it does not make sense.
 
-Note: there is a shortcut for *fetch & merge*: *pull*. If you create a new branch from a local copy of a remote branch, you can even set it up such that *git pull* without further parameters will fetch from the correct remote and merge the correct branch: *git checkout --track origin/cool-feature*
+Note: there is a shortcut for *fetch & merge*: `git pull`. If you create a new branch from a local copy of a remote branch, you can even set it up such that `git pull` without further parameters will fetch from the correct remote and merge the correct branch: `git checkout --track origin/cool-feature`
 
 ## Hands-on
 
@@ -467,13 +466,13 @@ Note: there is a shortcut for *fetch & merge*: *pull*. If you create a new branc
 
 # Popular public repository hosters
 
-If you need to have public repositories, you can use http://github.com/, http://code.google.com/, http://sourceforge.net/, http://repo.or.cz/ and quite a few others. Typically, you have a decent amount of storage, but the deal is that your version-controlled project must be Open Source.
+If you need to have public repositories, you can use [http://github.com/](http://github.com/), [http://code.google.com/](http://code.google.com/), [http://sourceforge.net/](http://sourceforge.net/), [http://repo.or.cz/](http://repo.or.cz/) and quite a few others. Typically, you have a decent amount of storage, but the deal is that your version-controlled project must be Open Source.
 
 As a goodie, all of said hosters support *gitweb*, a web interface to look at the history.
 
 ## Hands-on
 
-Let's surf to http://github.com/git/hello-world and inspect the history
+Let's surf to [http://github.com/git/hello-world](http://github.com/git/hello-world) and inspect the history
 
 # Advanced topics
 
@@ -493,9 +492,9 @@ Let's surf to http://github.com/git/hello-world and inspect the history
 
 -   blaming
 
--   *git apply*
+-   `git apply`
 
--   *git diff --color-words*
+-   `git diff --color-words`
 
 -   archiving
 
@@ -519,14 +518,14 @@ Let's surf to http://github.com/git/hello-world and inspect the history
 
 # Links
 
--   The homepage: http://git-scm.com/
--   Git for Windows: http://code.google.com/p/msysgit/
--   Git for MacOSX http://code.google.com/p/git-osx-installer/
--   An overview of the underlying data model: http://eagain.net/articles/git-for-computer-scientists/
--   Fiji's *topic branches* tutorial: https://fiji.sc/wiki/index.php/Git_topic_branches
--   The ProGit book: http://progit.org/
--   The most popular repository hoster: https://github.com/
--   The original repository hoster: http://repo.or.cz/
--   The Git Wiki: https://git.wiki.kernel.org/index.php/Main_Page
+-   The homepage: [http://git-scm.com/](http://git-scm.com/)
+-   Git for Windows: [http://code.google.com/p/msysgit/](http://code.google.com/p/msysgit/)
+-   Git for MacOSX [http://code.google.com/p/git-osx-installer/](http://code.google.com/p/git-osx-installer/)
+-   An overview of the underlying data model: [http://eagain.net/articles/git-for-computer-scientists/](http://eagain.net/articles/git-for-computer-scientists/)
+-   Fiji's *topic branches* tutorial: [https://fiji.sc/wiki/index.php/](https://fiji.sc/wiki/index.php/) Git_topic_branches
+-   The ProGit book: [http://progit.org/](http://progit.org/)
+-   The most popular repository hoster: [https://github.com/](https://github.com/)
+-   The original repository hoster: [http://repo.or.cz/](http://repo.or.cz/)
+-   The Git Wiki: [https://git.wiki.kernel.org/index.php/Main_Page](https://git.wiki.kernel.org/index.php/Main_Page)
 
  
