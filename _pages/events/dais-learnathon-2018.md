@@ -1,5 +1,4 @@
 ---
-mediawiki: DAIS_Learnathon_2018
 title: DAIS Learnathon 2018
 categories: [news]
 ---
