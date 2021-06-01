@@ -15,7 +15,7 @@ Using headers to delineate content sections has some advantages:
   to facilitate linking to particular sections using anchors.
 * A table of contents (in the right sidebar by default) will be automatically
   generated according to the declared headers&mdash;as long as there are at
-  least three of them.
+  least two level 1 or 2 headers.
 
 # h1 headers
 
