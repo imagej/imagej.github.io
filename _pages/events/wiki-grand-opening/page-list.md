@@ -24,7 +24,7 @@ nav-title: Page List
 As we review pages and mark them done, they will automatically
 disappear from the [Pages remaining](#pages-remaining) list,
 and advance the progress bar. Our goal is to review every page
-by the end of Thursday, June 4! WE CAN DO IT! 💪
+by the end of Friday, June 4! WE CAN DO IT! 💪
 
 ## Pages remaining
 
