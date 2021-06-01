@@ -61,7 +61,7 @@ A horizontal navigation bar with links.
   {%- comment -%}
     Explicit list of nav-links given; use it as-is.
   {%- endcomment -%}
-  <ul id="nav-bar" class="shadowed-box">
+  <div id="nav-bar"><ul class="shadowed-box">
   {% for p in pages %}
     {%- assign title = p.nav-title | default: p.title
       | replace: " ", "&nbsp;" | replace: "-", "&#8209;" -%}
@@ -71,7 +71,7 @@ A horizontal navigation bar with links.
       <li><a href="{{p.url}}">{{title}}</a></li>
     {%- endif -%}
   {% endfor %}
-  </ul>
+  </ul></div>
 {%- endif -%}
 
 {%- comment -%}
