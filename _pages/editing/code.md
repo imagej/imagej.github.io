@@ -6,7 +6,7 @@ nav-links: true
 
 This page describes nice ways of embedding source code in a page.
 
-## Inline code snippets
+# Inline code snippets
 
 If you just want to write a short snippet of code as part of a sentence,
 surround the code in backtick symbols (<code>`</code>).
@@ -74,7 +74,14 @@ The `highlight` directive and code fences are separate features, but
 functionally very similar. If code fences are not working as you like,
 give the `highlight` directive a try to see if it does any better.
 
-## Embedding external code
+## Line numbers
+
+Right now, inline code snippets cannot have line numbers; see
+{% include github org='imagej' repo='imagej.github.io' issue=128 label='issue 128' %}
+for technical details. For now, if you want to have line numbers, use the
+[Embedding external code](#embedding-external-code) approach below.
+
+# Embedding external code
 
 If you have code in a repository such as GitHub, GitLab, or BitBucket,
 you can embed code blocks dynamically into the page using the
@@ -94,7 +101,7 @@ Parameters supported by the `code` include are:
 | `line-end`   | Last line to embed                         | `>= 1`                          | `99999`  |
 | `label`      | Hyperlinked label to place before the code | any string                      | no label |
 
-### Embedding from GitHub
+## Embedding from GitHub
 
 {% capture github-embed-code %}
 {% raw %}
@@ -126,7 +133,7 @@ Additional parameters supported by embeds from GitHub specifically:
 | `show-file-meta`    | Whether to include the footer with links        | `true` or `false` | `true`   |
 | `show-copy`         | Whether to include the Copy button on mouseover | `true` or `false` | `true`   |
 
-### Embedding from GitLab
+## Embedding from GitLab
 
 We want to support embedding from GitLab, but it's not implemented yet:
 
@@ -154,7 +161,7 @@ We want to support embedding from GitLab, but it's not implemented yet:
 {% endcapture %}
 {% include editing/example code=gitlab-embed-code result=gitlab-embed-result %}
 
-### Embedding from BitBucket
+## Embedding from BitBucket
 
 We want to support embedding from GitLab, but it's not implemented yet:
 
@@ -182,7 +189,7 @@ We want to support embedding from GitLab, but it's not implemented yet:
 {% endcapture %}
 {% include editing/example code=bitbucket-embed-code result=bitbucket-embed-result %}
 
-## Footnotes
+# Footnotes
 
 [^1]: Valid style values for GitHub embeds are:
 
