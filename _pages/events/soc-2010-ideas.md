@@ -1,5 +1,4 @@
 ---
-mediawiki: SoC_2010_Ideas
 title: SoC 2010 Ideas
 ---
 
@@ -64,15 +63,9 @@ The project would consist of
 
 -   getting as many .m scripts for image processing as possible,
 
-<!-- -->
-
 -   integrating JMathLib as a script language into Fiji (using the infrastructure shared by Jython, JRuby, Clojure, Javascript and BeanShell) -- I suggest having a look at {% include github repo='fiji' branch='master' path='src-plugins/JRuby\_Interpreter/src/main/java/JRuby/JRuby\_Interpreter.java' label='the JRuby Interpreter' %} for an example,
 
-<!-- -->
-
 -   adapting (or overriding) JMathLib's image toolbox so that it integrates seamlessly with ImageJ,
-
-<!-- -->
 
 -   test (and fix what does not work) as many .m scripts as possible.
 
@@ -90,23 +83,13 @@ The project is not without complications, though:
 
 -   The XML database is saved as a file in the local Fiji directory, and it is always checked at startup whether the timestamp is newer than the timestamp of the XML database on the server. If you have multiple update sites, it should be handled in a way, where the local XML database reflects the sources of the metadata, and for uploading, a temporary XML database must be constructed for one particular upload site.
 
-<!-- -->
-
 -   There may be conflicts between plugins that are official Fiji plugins, but also available from a secondary site. This has to be coped with (it is not clear what the best strategy should be: take the official Fiji version over the secondary site? let the user choose?)
-
-<!-- -->
 
 -   With a new site, you need to be able to [upload plugins](/develop/uploading-plugins) to that site, too. There needs to be a very good way to prevent confusion, lest the plugin is uploaded to the <u>wrong</u> site.
 
-<!-- -->
-
 -   To determine whether a developer can upload new plugins (because there are new versions), the Fiji Updater scans the complete plugins directory, along with a few other places where macros, 3rd party libraries, or the Fiji launcher might hide. The Fiji Updater needs to learn <u>not</u> to offer these plugins for upload to a secondary site, but only the non-Fiji ones.
 
-<!-- -->
-
 -   It is unlikely that our current Fiji Updater can start a database from scratch. This has to be verified, and if there is no code for that yet, it has to be implemented.
-
-<!-- -->
 
 -   Cross-site dependencies should be handled by having hints in the XML database as to what other site is supposed to have the newest dependency.
 
