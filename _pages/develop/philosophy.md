@@ -1,5 +1,4 @@
 ---
-mediawiki: Philosophy
 title: Philosophy
 section: Extend:Development
 ---
@@ -40,6 +39,17 @@ One of the central goals of the [SciJava component collection](/develop/architec
 Backward compatibility is one of ImageJ's most important goals. It must remain possible to use existing [plugins](/plugins) and [macros](/scripting/macro) with new versions of ImageJ. See the [Compatibility](/libs/imagej-legacy) page for details.
 
 ## Release early, release often
+
+<table>
+  <tbody>
+  <tr><td colspan=3><b>Versioning strategies</b></td></tr>
+  <tr><td><i>Versioning</i></td><td><b>BOM</b></td><td><b>Monoversioned</b></td></tr>
+  <tr><td><i>Releases</i></td><td><b>RERO</b></td><td><b>"Big bang"</b></td></tr>
+  <tr><td><i>Version compatibility</i></td><td>Compatible components are declared in a <a href="/develop/architecture#bill-of-materials">Bill of Materials</a> (BOM)</td><td>Compatible components have the same version number</td></tr>
+  <tr><td><i>Frequency of releases</i></td><td>Faster</td><td>Slower</td></tr>
+  <tr><td><i>Stability</i></td><td>Less</td><td>More</td></tr>
+  </tbody>
+</table>
 
 {% include aside title="What's the alternative?" content="
 Some projects opt to release their entire software stack in a ***big bang***
