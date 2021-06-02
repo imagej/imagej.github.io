@@ -5,6 +5,9 @@ This include is for citing publications by DOI or page ID (URL slug).
 {%- assign doi = include.doi -%}
 {%- assign style = include.style | default: "apa" -%}
 {%- assign id = include.id | downcase | replace: " ", "-" -%}
+{%- assign fn = include.fn -%}
+
+{%- if fn -%} [^{{fn}}]: {% endif -%}
 
 {%- assign content = nil -%}
 
@@ -25,7 +28,7 @@ This include is for citing publications by DOI or page ID (URL slug).
   {%- if p-ref -%}
     {%- comment -%} Page gives a reference directly; use it. {%- endcomment -%}
     {%- capture content -%}
-      <li><span class="citation">{{p-ref}}</span></li>
+      <span class="citation">{{p-ref}}</span>
     {%- endcapture -%}
   {%- else -%}
     {%- comment -%} Extract DOI(s) from the page ID. {%- endcomment -%}
@@ -34,18 +37,23 @@ This include is for citing publications by DOI or page ID (URL slug).
 {%- endunless -%}
 
 {%- if doi -%}
-  {%- unless doi.first -%}
-    {%- assign doi = doi | split: "BOOM-I-am-an-array-now" -%}
-  {%- endunless -%}
   {%- capture content -%}
-    {%- for d in doi -%}
-      <li><span class="citation" data-citation-id="{{d}}" data-citation-style="{{style}}"><a href="https://doi.org/{{doi}}">doi:{{d}}</a></span></li>
-    {%- endfor -%}
+    {%- if doi.first -%}
+      {%- comment -%} Multiple DOIs given; return a list. {%- endcomment -%}
+      <ul>
+        {%- for d in doi -%}
+          <li><span class="citation" data-citation-id="{{d}}" data-citation-style="{{style}}"><a href="https://doi.org/{{d}}">doi:{{d}}</a></span></li>
+        {%- endfor -%}
+      </ul>
+    {%- else -%}
+      {%- comment -%} Single DOI given; don't wrap as a list. {%- endcomment -%}
+      <span class="citation" data-citation-id="{{doi}}" data-citation-style="{{style}}"><a href="https://doi.org/{{doi}}">doi:{{doi}}</a></span>
+    {%- endif -%}
   {%- endcapture -%}
 {%- endif -%}
 
 {%- if content -%}
-  <ul>{{content}}</ul>
+  {{content}}
 {%- else -%}
   {%- capture error-message -%}
     Invalid citation arguments: `{{include}}`

@@ -44,9 +44,17 @@
 
 /* citation */
 
+.citation {
+  white-space: normal;
+}
+
 .csl-bib-body {
     display: inline-block;
     vertical-align: top;
+}
+
+.footnotes > ol > li > p {
+  white-space: nowrap;
 }
 
 /* gallery */
