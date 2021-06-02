@@ -24,10 +24,10 @@ section: Contribute
 
 -   {% include person id='eliceiri' %}[^1] (ImageJ, Fiji)
 -   {% include person id='tomancak' %}[^2] (Fiji)
--   {% include person id='fjug' %}[^2]<sup>,</sup>[^3] (Fiji)
+-   {% include person id='fjug' %}[^2][^3] (Fiji)
 -   [Anne Carpenter](http://www.broadinstitute.org/~anne/)[^4] (CellProfiler)
--   [Michael Berthold](http://www.informatik.uni-konstanz.de/berthold/mitglieder/prof-dr-michael-berthold/)[^5]<sup>,</sup>[^6] (KNIME)
--   [Jason Swedlow](http://www.lifesci.dundee.ac.uk/people/jason-swedlow)[^7]<sup>,</sup>[^8] (OME)
+-   [Michael Berthold](http://www.informatik.uni-konstanz.de/berthold/mitglieder/prof-dr-michael-berthold/)[^5][^6] (KNIME)
+-   [Jason Swedlow](http://www.lifesci.dundee.ac.uk/people/jason-swedlow)[^7][^8] (OME)
 </div>
 <div class="contributor-block" markdown=1>
 ### {% include icon name='ImageJ' size='32px' %} [ImageJ](/software/imagej)
@@ -39,7 +39,7 @@ section: Contribute
 -   {% include person id='gselzer' %}[^1]
 -   {% include person id='bnorthan' %}[^10]
 -   {% include person id='LeeKamentsky' %}[^4] (Jan 2010-Apr 2016)
--   {% include person id='dscho' %}[^1]<sup>,</sup>[^2] (Sep 2011-Nov 2014)
+-   {% include person id='dscho' %}[^1][^2] (Sep 2011-Nov 2014)
 -   {% include person id='grislis' %}[^1] (Jan 2010-Dec 2013)
 -   {% include person id='bdezonia' %}[^1] (Jan 2010-Nov 2013)
 -   {% include person id='tnargsirrah' %}[^11] (Nov 2009-Jan 2012)
@@ -52,27 +52,27 @@ section: Contribute
 -   {% include person id='ctrueden' %}[^1] (lead)
 -   {% include person id='tinevez' %}[^12]
 -   {% include person id='iarganda' %}[^13]
--   {% include person id='StephanPreibisch' %}[^2]<sup>,</sup>[^21]
--   {% include person id='axtimwalde' %}[^2]<sup>,</sup>[^21]
--   {% include person id='tpietzsch' %}[^2]<sup>,</sup>[^3]
+-   {% include person id='StephanPreibisch' %}[^2][^21]
+-   {% include person id='axtimwalde' %}[^2][^21]
+-   {% include person id='tpietzsch' %}[^2][^3]
 -   {% include person id='imagejan' %}[^14]
--   {% include person id='tferr' %}[^15]<sup>,</sup>[^21]
+-   {% include person id='tferr' %}[^15][^21]
 -   {% include person id='hadim' %}[^15]
 -   {% include person id='chalkie666' %}[^16]
 -   {% include person id='landinig' %}[^17]
--   {% include person id='kephale' %}[^18]<sup>,</sup>[^22]
+-   {% include person id='kephale' %}[^18][^22]
 -   {% include person id='thorstenwagner' %}[^19]
 -   {% include person id='hinerm' %}[^1]
--   {% include person id='acardona' %}[^20]<sup>,</sup>[^21] (founder)
--   {% include person id='dscho' %}[^1]<sup>,</sup>[^2] (former, founder)
+-   {% include person id='acardona' %}[^20][^21] (founder)
+-   {% include person id='dscho' %}[^1][^2] (former, founder)
 -   See also [graph of Fiji contributors](https://github.com/fiji/fiji/graphs/contributors)
 </div>
 <div class="contributor-block" markdown=1>
 ### {% include icon name='ImgLib2' size='32px' %} [ImgLib2](/libs/imglib2)
 
--   {% include person id='tpietzsch' %}[^2]<sup>,</sup>[^3] (lead)
--   {% include person id='StephanPreibisch' %}[^2]<sup>,</sup>[^21]
--   {% include person id='axtimwalde' %}[^2]<sup>,</sup>[^21]
+-   {% include person id='tpietzsch' %}[^2][^3] (lead)
+-   {% include person id='StephanPreibisch' %}[^2][^21]
+-   {% include person id='axtimwalde' %}[^2][^21]
 -   {% include person id='bogovicj' %}[^21]
 -   {% include person id='hanslovsky' %}[^21] (former)
 </div>
@@ -85,23 +85,23 @@ section: Contribute
 <div class="contributor-block" markdown=1>
 ### [BigDataViewer](/plugins/bdv)
 
--   {% include person id='tpietzsch' %}[^2]<sup>,</sup>[^3] (lead)
--   {% include person id='StephanPreibisch' %}[^2]<sup>,</sup>[^21]
+-   {% include person id='tpietzsch' %}[^2][^3] (lead)
+-   {% include person id='StephanPreibisch' %}[^2][^21]
 </div>
 <div class="contributor-block" markdown=1>
 ### [TrakEM2](/plugins/trakem2)
 
--   {% include person id='acardona' %}[^20]<sup>,</sup>[^21] (lead)
--   {% include person id='axtimwalde' %}[^2]<sup>,</sup>[^21]
+-   {% include person id='acardona' %}[^20][^21] (lead)
+-   {% include person id='axtimwalde' %}[^2][^21]
 </div>
 <div class="contributor-block" markdown=1>
 ### {% include icon name='KNIME' size='32px' %} [KNIME Image Processing](/software/knime)
 
--   {% include person id='dietzc' %}[^5]<sup>,</sup>[^6] (lead)
+-   {% include person id='dietzc' %}[^5][^6] (lead)
 -   {% include person id='hornm' %}[^6]
--   {% include person id='tibuch' %}[^3]<sup>,</sup>[^5]
--   {% include person id='Squareys' %}[^5]<sup>,</sup>[^6]
--   {% include person id='gab1one' %}[^5]<sup>,</sup>[^6]
+-   {% include person id='tibuch' %}[^3][^5]
+-   {% include person id='Squareys' %}[^5][^6]
+-   {% include person id='gab1one' %}[^5][^6]
 </div>
 <div class="contributor-block" markdown=1>
 ### {% include icon name='CellProfiler' size='32px' %} [CellProfiler](/software/cellprofiler)
@@ -112,7 +112,7 @@ section: Contribute
 <div class="contributor-block" markdown=1>
 ### {% include icon name='OME' size='32px' %} [OME](/software/omero)
 
--   {% include person id='joshmoore' %}[^7]<sup>,</sup>[^8] (co-lead)
+-   {% include person id='joshmoore' %}[^7][^8] (co-lead)
 -   {% include person id='jburel' %}[^8] (co-lead)
 -   See also [OME Teams](http://openmicroscopy.org/site/about/who-ome)
 </div>

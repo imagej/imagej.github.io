@@ -53,6 +53,14 @@
     vertical-align: top;
 }
 
+sup + sup .footnote::before {
+    content: ",";
+    vertical-align: super;
+    font-size: 90%;
+    position: relative;
+    top: 0.4em;
+}
+
 .footnotes > ol > li > p {
   white-space: nowrap;
 }
