@@ -1,5 +1,4 @@
 ---
-mediawiki: Development_Lifecycle
 title: Development Lifecycle
 section: Extend:Development:Guides
 ---
@@ -7,7 +6,7 @@ section: Extend:Development:Guides
 {% include notice icon="info" content='This page describes the core [SciJava](/libs/scijava) *software release process*.
 
 -   For an overview of *distribution methods*, see [Distribution](/contribute/distributing).
--   To *download* software releases, see [/downloads](/downloads).' %}
+-   To *download* software releases, see [Downloads](/downloads).' %}
 
 The SciJava [philosophy](/develop/philosophy) is to [release early, release often](/develop/philosophy#release-early-release-often). At the same time, we always want to preserve [scientific reproducibility](/develop/architecture#reproducible-builds). To make this possible we lean on several [project management](/develop/project-management) tools. The purpose of this guide is to take you through the process of using these tools with the goal of releasing new versions of your software, and then providing those releases to users.
 
