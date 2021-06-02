@@ -1,5 +1,4 @@
 ---
-mediawiki: PlugIn_Design_Guidelines
 title: PlugIn Design Guidelines
 ---
 
