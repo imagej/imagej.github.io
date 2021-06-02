@@ -2,9 +2,7 @@
 title: IT4Innovations
 section: Contribute:Organizations
 ---
-## IT4Innovations
-
-IT4Innovations is the national supercomputing center located at IT4Innovations, Ostrava, Czech Republic. It is part of the VSB – Technical University of Ostrava.
+[IT4Innovations](https://www.it4i.cz/) is a national supercomputing center located in Ostrava, Czech Republic. It is part of the VSB – Technical University of Ostrava.
 
 A list of the people that are contributing or have contributed to the development of Fiji plugins at IT4Innovations that have a Fiji wiki page:
 - [Petr Bainar](/people/PetrBainar)
@@ -19,3 +17,5 @@ A list of pages related to plugins developed at IT4Innovations:
 - [Parallel Ops](/plugins/openmpi-plugin-extensions)
 - [Scijava-parallel](/libs/scijava-parallel)
 - [SPIM Workflow Manager for HPC](/plugins/spim-workflow-manager-for-hpc)
+
+![](/media/orgs/IT4I.jpg)

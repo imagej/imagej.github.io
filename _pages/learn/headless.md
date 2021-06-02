@@ -10,22 +10,9 @@ However, it acquired [macro](/scripting/macro) capabilities, a [batch mode](/scr
 
 Naturally, users want to execute such [macros](/scripting/macro) or [scripts](/scripting) in environments such as clusters where there is no graphical user interface available.
 
-# Problem
+# `--headless` mode
 
-Java *does* support a headless mode via the `java.awt.headless` property; setting this property to `true` enables it.
-
-Unfortunately, with X11-based Java (such as on Linux, which is the most prevalent platform for running clusters), headless mode does not allow to instantiate any GUI components that would want to display text. The reason is that the font-metrics on X11 are provided by the X11 server (and are indeed different between servers) and therefore the dimensions of such elements simply cannot be calculated without a graphical desktop.
-
-Since ImageJ 1.x was devised as a desktop application, everything -- including macros -- works through the GUI. For example, a simple `run("Open...");` will look for the action in the menu.
-
-On macOS, there is no problem: Aqua provides GUI-independent text rendering (mapping to the actual display using anti-aliasing). There, running in headless mode allows instantiating GUI elements such as the menu bar.
-
-# Solution: `--headless` mode
-
-[ImageJ2](/software/imagej2) provides the capability to execute ImageJ plugins,
-macros and scripts in headless mode. This feature uses bytecode manipulation to
-patch ImageJ 1.x's behavior at runtime, making it possible to start ImageJ in
-batch mode without instantiating GUI components.
+To address all of these needs, [ImageJ2](/software/imagej2) provides the capability to execute ImageJ plugins, macros and scripts in headless mode. This feature uses bytecode manipulation to patch ImageJ 1.x's behavior at runtime, making it possible to start ImageJ in batch mode without instantiating GUI components.
 
 **Shortcoming:** There are plugins which are even more bound to a GUI than
 ImageJ 1.x is. Naturally, these plugins will still try to instantiate GUI
@@ -74,6 +61,17 @@ take advantage of this feature, except pass the `--headless` flag when
 launching ImageJ from the command line.
 {% endcapture %}
 {% include aside title="Historical note" content=historical-note %}
+
+
+# Why is `--headless` needed?
+
+Java *does* support a headless mode via the `java.awt.headless` property; setting this property to `true` enables it.
+
+Unfortunately, with X11-based Java (such as on Linux, which is the most prevalent platform for running clusters), headless mode does not allow to instantiate any GUI components that would want to display text. The reason is that the font-metrics on X11 are provided by the X11 server (and are indeed different between servers) and therefore the dimensions of such elements simply cannot be calculated without a graphical desktop.
+
+Since ImageJ 1.x was devised as a desktop application, everything -- including macros -- works through the GUI. For example, a simple `run("Open...");` will look for the action in the menu.
+
+On macOS, there is no problem: Aqua provides GUI-independent text rendering (mapping to the actual display using anti-aliasing). There, running in headless mode allows instantiating GUI elements such as the menu bar.
 
 
 # Other solutions
