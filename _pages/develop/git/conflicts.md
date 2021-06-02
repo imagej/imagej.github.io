@@ -1,5 +1,4 @@
 ---
-mediawiki: Git_Conflicts
 title: Git Conflicts
 section: Extend:Development:Git
 ---
