@@ -1,5 +1,4 @@
 ---
-mediawiki: CIP_Parameters
 title: CIP Parameters
 ---
 
