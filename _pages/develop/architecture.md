@@ -1,5 +1,4 @@
 ---
-mediawiki: Architecture
 title: Architecture
 section: Extend:Development
 ---
@@ -203,21 +202,7 @@ The `pom-scijava` parent includes a [Bill of Materials](http://howtodoinjava.com
 
 ## Core libraries
 
-<graphviz border alignment="right" caption="Core library hierarchy"> digraph libs {
-
-`   label="Core library hierarchy"`  
-`   `  
-`   "scijava-common" [color=green, style=filled, URL="`[`1`](https://github.com/scijava/scijava-common)`"]`  
-`   "imagej-common" [color=yellow, style=filled, URL="`[`2`](https://github.com/imagej/imagej-common)`"]`  
-`   "imagej-ops" [color=yellow, style=filled, URL="`[`3`](https://github.com/imagej/imagej-ops)`"]`  
-`   "imglib2" [color=pink, style=filled, URL="`[`4`](https://github.com/imglib/imglib2)`"]`  
-`   "scifio" [color=lightblue, style=filled, URL="`[`5`](https://github.com/scifio/scifio)`"]`  
-`   "scijava-common" -> "imagej-common"`  
-`   "imglib2" -> "imagej-common"`  
-`   "imagej-common" -> "scifio"`  
-`   "imagej-common" -> "imagej-ops"`
-
-} </graphviz>
+{% include img src="/media/develop/graph.png" align="right" width="400px" %}
 
 The ImageJ software stack is composed of the following core libraries:
 
