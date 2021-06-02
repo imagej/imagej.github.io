@@ -1,7 +1,5 @@
 ---
-mediawiki: 2009-12-04_-_Updated_TrakEM2_to_version_0.7m
 title: 2009-12-04 - Updated TrakEM2 to version 0.7m
-categories: [News]
 ---
 
 [TrakEM2](/plugins/trakem2) has been updated to version 0.7m

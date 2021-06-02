@@ -1,10 +1,8 @@
 ---
-mediawiki: 2009-07-22_-_A_new_plugin:_Tutorial_Maker
-title: 2009-07-22 - A new plugin › Tutorial Maker
-categories: [News]
+title: "2009-07-22 - A new plugin: Tutorial Maker"
 ---
 
-A new plugin entered this world: [Tutorial Maker](/plugins/tutorial-maker). This plugin is meant to [make writing tutorials on the Wiki real fun](/tutorials/make-a-new-tutorial).
+A new plugin entered this world: [Tutorial Maker](/plugins/tutorial-maker). This plugin is meant to make writing tutorials on the Wiki real fun.
 
 Up until now, writing a [tutorial](/plugin-index#tutorials) was a hassle, mainly due to having to make snapshots in ImageJ, sometimes using the [Delayed Snapshot](/plugins/delayed-snapshot) script, saving all of them, uploading them one by one, starting a new page, repeating the image names all over again when referencing them, and then finally editing the page, touching it up previewing frequently.
 
@@ -17,3 +15,5 @@ A menu entry in the *Wiki* menu of the editor allows you to preview and upload t
 So now the flood-gates are open, and this Wiki will hopefully see a flurry of new tutorials!
 
 
+{% include notice content="This is a historic news item. See current [wiki
+editing instructions](/editing)." %}

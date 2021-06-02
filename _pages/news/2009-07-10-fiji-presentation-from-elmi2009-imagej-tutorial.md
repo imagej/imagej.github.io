@@ -1,5 +1,4 @@
 ---
-mediawiki: 2009-07-10_-_FIJI_presentation_from_ELMI2009_ImageJ_Tutorial
 title: 2009-07-10 - FIJI presentation from ELMI2009 ImageJ Tutorial
 ---
 
@@ -15,6 +14,7 @@ During those tutorials, several Fiji Wiki page tutorials were used, which were c
 
 Some other tutorial are also already present there.
 
-We encourage everyone to add more tutorials: Simply create a page, fill it with tutorial content, and make sure to add the \[\[Category:Tutorials\]\] tag to the bottom of the page, so it appears in the tutorial category, which can be found [here](/plugin-index#tutorials)
+We encourage everyone to add more tutorials: Simply create a page, fill it with tutorial content, and make sure to add the \[\[Category:Tutorials\]\] tag to the bottom of the page, so it appears in the tutorial category, which can be found [here](/plugin-index#tutorials).
 
- [F](/plugin-index#tutorials)
+{% include notice content="This is a historic news item. See current [wiki
+editing instructions](/editing)." %}

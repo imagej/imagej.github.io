@@ -1,7 +1,5 @@
 ---
-mediawiki: 2009-12-23_-_ImageJ_development_discussion
 title: 2009-12-23 - ImageJ development discussion
-categories: [News,ImageJ2]
 ---
 
 Recently there has been a large amount of discussion about ImageJ development. This dialogue has been great, but in a few cases similar points have been sprinkled across several different threads. We have filtered through the recent threads of interest (within the past 2-3 months) and have identified a few key topics. To better organize the discussion, we are creating new threads, one per topic, and sending each to the appropriate mailing list:
@@ -9,13 +7,13 @@ Recently there has been a large amount of discussion about ImageJ development. T
 -   ImageJ for discussion in which non-programmers have expressed substantial interest
 -   ImageJX for highly technical discussion regarding software engineering (technologies, source code, etc.)
 
-The threads we are sending to the [ImageJ users list](/ij/list.html) are:
+The threads we are sending to the [ImageJ users list](http://rsb.info.nih.gov/ij/list.html) are:
 
-1.  [**Backwards compatibility**](http://n2.nabble.com/Backwards-compatibility-td4211240.html) – What does "near 100% backwards compatibility" mean? And is it a reasonable, warranted goal?
-2.  [**ImageJ project structure**](http://n2.nabble.com/ImageJ-project-structure-td4211244.html) – What are ImageJ, Fiji, ImageJX and ImageJDev, and how are they related? What about project forks? How can people contribute?
-3.  [**ImageJDev.org web site**](http://n2.nabble.com/ImageJDev-org-web-site-td4211248.html) – What is the role of this web site? How can we improve it?
-4.  [**ImageJ mailing lists**](http://n2.nabble.com/ImageJ-mailing-lists-td4211243.html) – There are an increasing number of ImageJ-related mailing lists. Are they all useful and necessary? Do we need any additional lists?
-5.  [**Scripting languages and API**](http://n2.nabble.com/Scripting-languages-and-API-td4211245.html) – Some people want ImageJ to support several different scripting languages based on a common  underlying API, while others argue for a single, easy to learn macro language. What the pros and cons of each approach?
+1.  [**Backwards compatibility**](http://imagej.1557.x6.nabble.com/Backwards-compatibility-td3689930.html) – What does "near 100% backwards compatibility" mean? And is it a reasonable, warranted goal?
+2.  [**ImageJ project structure**](http://imagej.1557.x6.nabble.com/ImageJ-project-structure-td3689927.html) – What are ImageJ, Fiji, ImageJX and ImageJDev, and how are they related? What about project forks? How can people contribute?
+3.  [**ImageJDev.org web site**](http://imagej.1557.x6.nabble.com/ImageJDev-org-web-site-td3689929.html) – What is the role of this web site? How can we improve it?
+4.  [**ImageJ mailing lists**](http://imagej.1557.x6.nabble.com/ImageJ-mailing-lists-td3689928.html) – There are an increasing number of ImageJ-related mailing lists. Are they all useful and necessary? Do we need any additional lists?
+5.  [**Scripting languages and API**](http://imagej.1557.x6.nabble.com/Scripting-languages-and-API-td3689913.html) – Some people want ImageJ to support several different scripting languages based on a common  underlying API, while others argue for a single, easy to learn macro language. What the pros and cons of each approach?
 
 And the threads for [ImageJX](http://groups.google.com/group/imagejx):
 

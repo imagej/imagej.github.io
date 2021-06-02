@@ -1,7 +1,5 @@
 ---
-mediawiki: 2009-09-30_-_Upcoming_release:_Fiji_Plzen
-title: 2009-09-30 - Upcoming release › Fiji Plzen
-categories: [News]
+title: "2009-09-30 - Upcoming release: Fiji Plzen"
 ---
 
 A new release of Fiji is around the corner. If you want to test-drive it, please check out the [Release candidate](/downloads#release-candidate).

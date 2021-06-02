@@ -1,7 +1,5 @@
 ---
-mediawiki: 2009-08-20_-_We_have_a_download_mirror_at_UCSF!
 title: 2009-08-20 - We have a download mirror at UCSF!
-categories: [News]
 ---
 
 Thanks to Nico Stuurman of [Micro-Manager](http://www.micro-manager.org/) fame, we have a download mirror at [University of San Francisco](http://valelab.ucsf.edu/~schindelin/)!

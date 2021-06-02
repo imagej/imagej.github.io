@@ -1,6 +1,5 @@
 ---
 title: 2009-04-19 - First release candidate of Fiji Dresden-2009
-categories: [News]
 ---
 
 In the aftermath of our hackathon in Dresden, we have a [first release candidate](/downloads) now!

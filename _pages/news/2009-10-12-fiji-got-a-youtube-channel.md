@@ -1,7 +1,5 @@
 ---
-mediawiki: 2009-10-12_-_Fiji_got_a_YouTube_channel!
 title: 2009-10-12 - Fiji got a YouTube channel!
-categories: [News]
 ---
 
 Thanks to the effort of {% include person id='iarganda' %}, we have a [channel on YouTube](http://www.youtube.com/user/fijichannel)!

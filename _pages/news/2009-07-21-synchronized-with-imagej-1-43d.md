@@ -1,7 +1,5 @@
 ---
-mediawiki: 2009-07-21_-_Synchronized_with_ImageJ_1.43d
 title: 2009-07-21 - Synchronized with ImageJ 1.43d
-categories: [News]
 ---
 
 There was an obscure bug in the early 1.43 versions that was triggered by loading .lif files with Bio-Formats on Windows, and resulted in a crash of the Java Virtual Machine. This is fixed by 1.43c.

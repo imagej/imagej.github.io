@@ -1,6 +1,5 @@
 ---
 title: 2009-04-03 - Dresden Hackathon over
-categories: [News]
 ---
 
 The [Hackathon](/news/2009-03-12-dresden-hackathon-2009) is over. We started a lot of projects, and we fixed a lot of bugs!

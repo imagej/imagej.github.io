@@ -1,7 +1,5 @@
 ---
-mediawiki: 2009-10-14_-_Fiji_Plzen_is_out
 title: 2009-10-14 - Fiji Plzen is out
-categories: [News]
 ---
 
 It is a great pleasure to announce [a new Fiji version](/downloads) nick-named Plzen. It was named after the city in which we had a very successful image processing school, where we tested a few of the shiny new components which are the goodies of this release. The two most prominent new features are
@@ -12,7 +10,7 @@ It is a great pleasure to announce [a new Fiji version](/downloads) nick-named P
 
 -   the [Script Editor](/scripting/script-editor). Just call {% include bc path='File | New | Script'%}, select a language and start writing a script. The editor has syntax highlighting and you can run the script without even saving it.
 
-For an introduction to the power of scripting, see e.g. [our page on Javascript](https://fiji.sc/wiki/index.php/Javascript_Scripting).
+For an introduction to the power of scripting, see e.g. [our page on Javascript](/scripting/javascript).
 
 Other changes include:
 

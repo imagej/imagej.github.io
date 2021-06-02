@@ -1,6 +1,5 @@
 ---
 title: 2009-04-05 - Java as a scripting language
-categories: [News]
 ---
 
 ## Is Java a scripting language?

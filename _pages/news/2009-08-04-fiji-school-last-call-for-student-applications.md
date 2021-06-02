@@ -1,12 +1,6 @@
 ---
-mediawiki: 2009-08-04_-_Fiji_School_-_Last_Call_for_Student_Applications
 title: 2009-08-04 - Fiji School - Last Call for Student Applications
-categories: [News]
 ---
-
-### Fiji School
-
-<b>\* \* Last call for student applications \* \*</b>
 
 The [International Neuroinformatics Coordinating Facility](http://www.incf.org) is hosting an [Image Processing School](http://www.neuroinformatics2009.org/courses-and-satellite-meetings/image-processing-school/) based on Fiji, as a satellite event to the [Neuroinformatics 2009 Congress](http://www.neuroinformatics2009.org/).
 

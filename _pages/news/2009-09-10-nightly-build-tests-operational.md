@@ -1,7 +1,5 @@
 ---
-mediawiki: 2009-09-10_-_Nightly_build_tests_operational
 title: 2009-09-10 - Nightly build tests operational
-categories: [News]
 ---
 
 Long time ago, Mark Longair suggested to have nightly builds of the complete sources in [fiji.git](https://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git). Finally we have it up and running.

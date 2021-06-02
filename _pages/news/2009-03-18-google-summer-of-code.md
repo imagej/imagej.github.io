@@ -1,6 +1,5 @@
 ---
 title: 2009-03-18 - Google Summer of Code
-categories: [News]
 ---
 
 We got accepted into Google's Summer of Code program!

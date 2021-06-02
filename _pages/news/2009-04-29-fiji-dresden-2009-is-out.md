@@ -1,6 +1,5 @@
 ---
 title: 2009-04-29 - Fiji Dresden-2009 is out
-categories: [News]
 ---
 
 Finally! Fiji "dee-dee-oh-nine" is out!
