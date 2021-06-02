@@ -174,10 +174,10 @@ $$ a = n\sum_{i=1}^nx_iy_i - \sum_{i=1}^nx_i\sum_{i=1}^ny_i\quad\text{and}\quad{
 
 ## References
 
-{% include citation fn='1' content='conference' last='Crow' first='Franklin C.' title='Summed-area tables for texture mapping' booktitle='Proceedings of the 11<sup>th</sup> annual conference on Computer graphics and interactive techniques' series='SIGGRAPH "84' year='1984' pages='207–212' publisher='ACM' address='New York, NY, USA' isbn='0-89791-138-5' url='http://doi.acm.org/10.1145/800031.808600' doi='10.1145/800031.808600' %}
+{% include citation fn=1 doi='10.1145/800031.808600' %}
 
-{% include citation fn='2' content='conference' first='J. P.' last='Lewis' booktitle='Vision Interface' volume='95' pages='120–123' publisher='Canadian Image Processing and Pattern Recognition Society' title='Fast template matching' year='1995' %}
+{% include citation fn=2 content='conference' first='J. P.' last='Lewis' booktitle='Vision Interface' volume='95' pages='120–123' publisher='Canadian Image Processing and Pattern Recognition Society' title='Fast template matching' year='1995' %}
 
-{% include citation fn='3' content='journal' first1='Paul' last1='Viola' first2='Michael J.' last2='Jones' title='Robust Real-Time Face Detection' journal='International Journal of Computer Vision' pages='137–154' volume='57' number='2' year='2004' %}
+{% include citation fn=3 doi='10.1023/B:VISI.0000013087.49260.fb' %}
 
-{% include citation fn='4' content='journal' first1='Herbert' last1='Bay' first2='Andreas' last2='Ess' first3='Tinne' last3='Tuytelaars' first4='Luc' last4='Van Gool' title='SURF: Speeded Up Robust Features' journal='Computer Vision and Image Understanding (CVIU)' volume='110' number='3' pages='346–359' year='2008' %}
+{% include citation fn=4 doi='10.1016/j.cviu.2007.09.014' %}

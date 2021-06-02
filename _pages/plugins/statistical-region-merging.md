@@ -3,6 +3,7 @@ mediawiki: Statistical_Region_Merging
 title: Statistical Region Merging
 categories: [Tutorials,Segmentation]
 artifact: sc.fiji:Statistical_Region_Merging
+doi: 10.1109/TPAMI.2004.110
 ---
 
 Statistical Region Merging[^1] is a fast and robust algorithm to segment an image into regions of similar intensity or color.
@@ -25,4 +26,4 @@ This is a result for a low value of *Q*:
 
 ## References
 
-{% include citation fn='1' content='journal' author='R. Nock, F. Nielsen' title='Statistical Region Merging' journal='IEEE Trans. Pattern Anal. Mach. Intell.' volume='26' number='11' pages='1452-1458' year='2004' %}
+{% include citation fn=1 %}

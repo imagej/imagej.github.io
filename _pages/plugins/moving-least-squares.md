@@ -2,19 +2,11 @@
 mediawiki: Moving_Least_Squares
 title: Moving Least Squares
 categories: [Tutorials]
+doi: 10.1145/1179352.1141920
+artifact: sc.fiji:VIB_
 ---
 
-
-{% capture author%}
-{% include person id='dscho' %}
-{% endcapture %}
-
-{% capture source%}
-{% include github org='fiji' repo='VIB' branch='master' source='Moving\_Least\_Squares.java' %}
-{% endcapture %}
-{% include info-box name='Moving Least Squares registration' software='ImageJ' author=author maintainer='Johannes Schindelin' source=source released='2006/10/05' %}
-
-This plugin implements the algorithms described in [^1] to deform an image given a set of landmarks.
+This plugin implements the algorithms described in (Schaefer 2006)[^1] to deform an image given a set of landmarks.
 
 ## Tutorial
 
@@ -40,4 +32,4 @@ And you get the result:
 
 ## References
 
-{% include citation fn='1' content='journal' title='Image Deformation Using Moving Least Squares' author='Schaefer S., McPhail T., Warrent J.' journal='ACM Transactions on Graphics' volume='25' issue='3' month='July' year='2006' pages='533-540' %}
+{% include citation fn=1 %}

@@ -1,22 +1,15 @@
 ---
 mediawiki: PhotoBend
 title: PhotoBend
-categories: [Tracking,Tutorials]
+categories: [Tracking]
+name: PhotoBend
+source-url: https://github.com/anotherche/photobend
+release-date: 26/04/2017
+dev-status: Alpha
+team-founders: Stanislav Chizhik | /people/anotherche
+team-maintainers: Stanislav Chizhik | /people/anotherche
+doi: 10.1039/C7SC04863G
 ---
-
-
-{% capture maintainer%}
-{% include person id='anotherche' %}
-{% endcapture %}
-
-{% capture author%}
-{% include person id='anotherche' %}
-{% endcapture %}
-
-{% capture source%}
-{% include github org='anotherche' repo='photobend' %}
-{% endcapture %}
-{% include info-box software='ImageJ' name='PhotoBend' maintainer=maintainer author=author source=source released='10/11/2016' latest-version='26/04/2017' status='Alpha' category='[Plugins](/plugin-index),[Tracking](/plugin-index#tracking)' website='' %}
 
 ## PhotoBend plugins collection
 
@@ -42,7 +35,15 @@ The page is still under construction. Usage instructions will be added.
 
 The plugin is for the analysis of a stack of time lapse microscopic images of a bending crystal. User is instructed to select specific parts on the reference crystal image which includes: the point on the tip of free crystal's end, the point on the attached end of the crystal, the point in the middle of the crystal and a rectangle around a stable part of the image (a part supposed to be immobile during the whole process, a tip of holder or capillary to which the crystal is attached, for one).
 
-![400pix\|left\|Crystal shape tracking in process](/media/plugins/photobend-processing.jpg) ![](/media/plugins/photobend-deformation-plot.jpg) ![](/media/plugins/photobend-curvature-plot.jpg)
+<!-- TODO: Improve site infrastructure surrounding figures, and use it here. -->
+<figure class="figure" style="max-width: 100%">
+<div style="column-count: 3" markdown=1>
+![](/media/plugins/photobend-processing.jpg){:style='width: 100%'}
+![](/media/plugins/photobend-deformation-plot.jpg){:style='width: 100%'}
+![](/media/plugins/photobend-curvature-plot.jpg){:style='width: 100%'}
+</div>
+<figcaption style="font-weight: bold">Crystal shape tracking in progress</figcaption>
+</figure>
 
 The plugin code uses the selected regions of the image as reference templates to find them in the series of the time lapse images. Automatic picture stabilization is provided by detection of the stable part displacement. Then the free crystal's end and its middle part are detected in new positions of the image (accounting for the displacement and rotation) with the template matching technique. The coordinates of the three points (two ends and the middle part) are used to calculate the curvature and deformation (elongation or shortening) of the crystal.
 
@@ -86,4 +87,4 @@ We kindly ask you to cite Cizhik 2018[^1] when publishing the results obtained u
 
 ## References
 
-{% include citation fn='1' content='journal' title='Quantification of photoinduced bending of dynamic molecular crystals: from macroscopic strain to kinetic constants and activation energies' author='Stanislav Chizhik, Anatoly Sidelnikov, Boris Zakharov, Panče Naumov and Elena Boldyreva' journal='Chemical Science' volume='9' number='8' pages='2319-2335' year='2018' publisher='The Royal Society of Chemistry' doi='10.1039/C7SC04863G' %}
+{% include citation fn=1 %}

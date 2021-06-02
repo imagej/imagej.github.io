@@ -160,4 +160,4 @@ See [Registration](/plugin-index#registration) for other ImageJ pages and tools 
 
 # References
 
-[^1] {% include citation doi='10.1023/B:VISI.0000029664.99615.94' %}
+[^1] {% include citation id='plugins/linear-stack-alignment-with-sift' %}
