@@ -17,3 +17,5 @@ A list of pages related to plugins developed at IT4Innovations:
 - [Parallel Ops](/plugins/openmpi-plugin-extensions)
 - [Scijava-parallel](/libs/scijava-parallel)
 - [SPIM Workflow Manager for HPC](/plugins/spim-workflow-manager-for-hpc)
+
+![](/media/orgs/IT4I.jpg)
