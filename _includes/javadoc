@@ -1,8 +1,8 @@
-{% assign project = include.project | default: "ImageJ" %}
-{% assign package = include.package %}
-{% assign class = include.class %}
-{% assign anchor = include.anchor %}
-{% assign label = include.label %}
+{%- assign project = include.project | default: "ImageJ" -%}
+{%- assign package = include.package -%}
+{%- assign class = include.class -%}
+{%- assign anchor = include.anchor -%}
+{%- assign label = include.label -%}
 
 {%- unless label -%}
   {%- capture label -%}
@@ -15,9 +15,10 @@
 {%- endunless -%}
 
 <a href="https://javadoc.scijava.org/{{project}}/
-{%- if package -%} {{- package | replace: '.', '/' -}}/ {%- endif -%}
-{%- if class -%} {{class}}.html {%- endif -%}
-{%- if anchor -%} #{{anchor}} {%- endif -%}">{{label}}</a>
+{%- if package -%} {{package | replace: '.', '/'}}/ {%- endif -%}
+{%- if class   -%} {{class}}.html {%- endif -%}
+{%- if anchor  -%} #{{anchor}} {%- endif -%}
+">{{label}}</a>
 
 {%- comment -%}
 # vi:syntax=liquid
