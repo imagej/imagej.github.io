@@ -1,5 +1,4 @@
 ---
-mediawiki: Tips_for_developers
 title: Tips for developers
 section: Extend:Development:Guides
 ---
@@ -241,7 +240,7 @@ Then you can add a new row:
 
 ## How to find equivalent API commands between ImageJ1 and ImageJ2?
 
-[ImageJ1-ImageJ2 cheat sheet](ImageJ1-ImageJ2_cheat_sheet) is available.
+[ImageJ1-ImageJ2 cheat sheet](/ImageJ1-ImageJ2_cheat_sheet) is available.
 
 # Tips for Graphical User Interface (GUI) programming
 
@@ -271,3 +270,4 @@ There is a class which helps you with all this: [SwingUtilities](http://download
     } catch (Exception e) { /* ignore */ }
 
 Information extracted from the [Swing guide](http://web.archive.org/web/20120801194837/http://java.sun.com/products/jfc/tsc/articles/threads/threads1.html) (now only available from via web.archive.org as Oracle removed the original docs), additional information can be found in the [Concurrency in Swing](http://docs.oracle.com/javase/tutorial/uiswing/concurrency/index.html) lesson of *The Java Tutorials*.
+
