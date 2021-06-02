@@ -1,5 +1,4 @@
 ---
-mediawiki: SoC_2010_Application
 title: SoC 2010 Application
 ---
 
