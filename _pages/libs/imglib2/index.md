@@ -1,5 +1,4 @@
 ---
-mediawiki: ImgLib2
 title: ImgLib2
 section: Explore:Libraries:ImgLib2
 categories: [ImgLib]
@@ -37,7 +36,7 @@ See the [How To Migrate Code From ImgLib To ImgLib2](/libs/imglib2/migrate-from-
 
 ## API Version History
 
-A history of API changes is available at: https://abi-laboratory.pro/java/tracker/timeline/imglib2/
+A history of API changes is available at: [https://abi-laboratory.pro/java/tracker/timeline/imglib2/](https://abi-laboratory.pro/java/tracker/timeline/imglib2/)
 
 ## Other links
 
