@@ -239,6 +239,8 @@ https://forum.image.sc/u/{{forum}}
 <script src="/assets/js/maven.js"></script>
 <script>
 function refreshComponent() {
+  var statboxName = document.getElementById('statbox-name');
+  if (statboxName) statboxName.innerHTML = 'Reloading...';
   {% if artifact -%}
   fillStatsFromArtifact('{{artifact}}', '{{repository}}');
   {%- elsif pom-url -%}
