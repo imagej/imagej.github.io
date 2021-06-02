@@ -26,7 +26,7 @@ The following component layers are part of the **[SciJava component collection](
 -   [TrakEM2](/plugins/trakem2) - Fiji plugin suite for morphological data mining, three-dimensional modeling and image stitching, registration, editing and annotation.
 -   [Bio-Formats](/formats/bio-formats) - libraries and ImageJ plugins for life sciences image format I/O.
 
-All components in this collection are managed by SciJava's [Bill of Materials](//develop/architecture#bill-of-materials) to make it easier for downstream components to use them without version conflicts.
+All components in this collection are managed by SciJava's [Bill of Materials](/develop/architecture#bill-of-materials) to make it easier for downstream components to use them without version conflicts.
 
 # The SciJava pledge
 

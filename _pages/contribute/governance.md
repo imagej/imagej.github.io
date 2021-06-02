@@ -37,9 +37,9 @@ Projects in the [SciJava component collection](/develop/architecture) define eac
 | Founder     | Created the project. Does not imply any current participation or responsibility.                                                   |
 | Lead        | Has decision-making authority: timing of [releases](/develop/releasing), inclusion of features, etc.                              |
 | Developer   | Adds new features or enhancements. Can be assigned to address feature requests.                                                    |
-| Debugger    | Fixes [bugs](//develop/project-management#issue-tracking). Can be assigned open [issues](//develop/project-management#issue-tracking) to solve.                                        |
+| Debugger    | Fixes [bugs](/develop/project-management#issue-tracking). Can be assigned open [issues](/develop/project-management#issue-tracking) to solve.                                        |
 | Reviewer    | Reviews [patch submissions](/contribute).                                                                              |
-| Support     | Responds to [community questions](/discuss) and [issue reports](//develop/project-management#issue-tracking). Keeps the issue tracker organized. |
+| Support     | Responds to [community questions](/discuss) and [issue reports](/develop/project-management#issue-tracking). Keeps the issue tracker organized. |
 | Maintainer  | Merges [patch submissions](/contribute). Cuts releases.                                                                |
 | Contributor | Contributed code to the project. Does not imply any current participation or responsibility.                                       |
 

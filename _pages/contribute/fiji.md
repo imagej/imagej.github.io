@@ -52,7 +52,7 @@ The following criteria apply to projects hosted in the [fiji organization](https
     -   Extending the [pom-scijava parent POM](/develop/architecture#maven-component-structure)
 -   Components use the groupId `sc.fiji`.
 -   Components are [versioned according to SemVer](/develop/versioning).
--   The project uses [GitHub Issues](//develop/project-management#issue-tracking) for issue tracking.
+-   The project uses [GitHub Issues](/develop/project-management#issue-tracking) for issue tracking.
 -   The project has a dedicated page here on the ImageJ wiki.
 -   The [Fiji maintainers](/contribute/governance) may make commits and [release new versions](/develop/releasing) of the component as needed, so that Fiji as a whole continues to work as intended.
 -   The `master` branch is considered *release ready* at all times, meaning it compiles with passing tests, and is ready for downstream consumption.
