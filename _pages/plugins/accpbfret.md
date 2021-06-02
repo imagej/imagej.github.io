@@ -1,18 +1,18 @@
 ---
-mediawiki: AccPbFRET
 title: AccPbFRET
+name: AccPbFRET
+license-url: /licensing/gpl
+license-label: GPLv3
+dev-status: Active
+support-status: Active
+team-founders: János Roszik, János Szöllosi, György Vereb
+team-leads: Cameron Lloyd | /people/camlloyd
+team-developers: Cameron Lloyd | /people/camlloyd
+team-debuggers: Cameron Lloyd | /people/camlloyd
+team-reviewers: Cameron Lloyd | /people/camlloyd
+team-support: Cameron Lloyd | /people/camlloyd
+team-maintainers: Cameron Lloyd | /people/camlloyd
 ---
-
-
-{% capture maintainer%}
-{% include person id='camlloyd' %}
-{% endcapture %}
-
-{% capture source%}
-{% include github%}
-
-{% endcapture %}
-{% include info-box name='AccPbFRET' software='ImageJ' author='J. Roszik, J. Szöllosi, G. Vereb' maintainer=maintainer source=source released='2008' status='active' category='[Plugins](/plugin-index) [Citable](/plugin-index#citable)' website=' [https://biophys.med.unideb.hu/en/accpbfret](https://biophys.med.unideb.hu/en/accpbfret)' %}
 
 **An ImageJ plugin for analysis of acceptor photobleaching FRET images**
 
@@ -23,8 +23,7 @@ title: AccPbFRET
 ## Citation
 
 This software is based on a publication. If you use it in your work, please cite:
-
--   Roszik J, Szöllosi J, Vereb G. [AccPbFRET: an ImageJ plugin for semi-automatic, fully corrected analysis of acceptor photobleaching FRET images](https://bmcbioinformatics.biomedcentral.com/track/pdf/10.1186/1471-2105-9-346). *BMC Bioinformatics*. 2008;9:346. Published 2008 Aug 19. <doi:10.1186/1471-2105-9-346>
+{% include citation doi='10.1186/1471-2105-9-346' %}
 
 ## See also
 
