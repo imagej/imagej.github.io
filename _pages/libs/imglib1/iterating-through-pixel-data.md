@@ -1,6 +1,6 @@
 ---
 mediawiki: ImgLib1:_iterating_through_pixel_data
-title: ImgLib1: Iterating through pixel data
+title: "ImgLib1: Iterating through pixel data"
 categories: [ImgLib,Tutorials,Development]
 nav-links: true
 nav-title: Iterating Pixels
