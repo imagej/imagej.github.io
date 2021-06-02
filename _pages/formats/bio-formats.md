@@ -27,7 +27,7 @@ See [LOCI's Bio-Formats site](https://loci.wisc.edu/software/bio-formats) for a 
 
 ## Documentation
 
-What follows is a brief overview of the available plugins. You will find them all under the "/formats/bio-formats" submenu of {% include bc path="Plugins" %}. See the [Bio-Formats web site](https://www.openmicroscopy.org/bio-formats/) for additional information about Bio-Formats in general.
+What follows is a brief overview of the available plugins. You will find them all under the "Bio-Formats" submenu of Plugins. See the [Bio-Formats web site](https://www.openmicroscopy.org/bio-formats/) for additional information about Bio-Formats in general.
 
 See especially the [Using Bio-Formats](https://docs.openmicroscopy.org/latest/bio-formats/users/imagej/load-images.html#using-bio-formats-to-load-images-into-imagej) page for detailed instructions.
 
@@ -100,38 +100,41 @@ You can invoke Bio-Formats from the command line using the [ImageJ Launcher](Lau
 2.  Click "Create" to pop up the [Script Editor](/scripting/script-editor), edit as desired, then save the macro as a `.ijm` macro file.
 3.  Run the macro from the command line; e.g.:
 
-<!-- -->
-
-    ImageJ-win32.exe -macro myMacro.ijm -batch
+```bash
+ImageJ-win32.exe -macro myMacro.ijm -batch
+```
 
 Leave off the `-batch` flag if you want ImageJ to remain open afterward.
 
 Note that you cannot use the [--headless option](/learn/headless#running-macros-in-headless-mode) because Bio-Formats does not work in headless mode, even when running as a macro. (You will see `VerifyError` on the console if you try.)
 
 Here is an example macro created in such a fashion:
-
-    run("Bio-Formats Importer", "open=/Users/jdoe/data.ome.tif " +
-      "autoscale color_mode=Default view=Hyperstack stack_order=XYCZT");
-    saveAs("Tiff", "/Users/jdoe/Desktop/result.tif");
+```java
+run("Bio-Formats Importer", "open=/Users/jdoe/data.ome.tif " +
+  "autoscale color_mode=Default view=Hyperstack stack_order=XYCZT");
+saveAs("Tiff", "/Users/jdoe/Desktop/result.tif");
+```
 
 ## Scripting
 
 Bio-Formats has a high-level scripting interface, accessible by Java and all scripting languages supported by Fiji (but not the ImageJ macro language). Java example:
-
-    String id = "/path/to/myFile.ext";
-    ImagePlus[] imps = BF.openImagePlus(id);
+```java
+String id = "/path/to/myFile.ext";
+ImagePlus[] imps = BF.openImagePlus(id);
+```
 
 If needed, import options can be set:
-
-    String id = "/path/to/myFile.ext";
-    ImporterOptions options = new ImporterOptions();
-    options.setId(id);
-    options.setAutoscale(true);
-    options.setCrop(true);
-    options.setCropRegion(0, new Region(x, y, w, h));
-    options.setColorMode(ImporterOptions.COLOR_MODE_COMPOSITE);
-    //...etc.
-    ImagePlus[] imps = BF.openImagePlus(options);
+```java
+String id = "/path/to/myFile.ext";
+ImporterOptions options = new ImporterOptions();
+options.setId(id);
+options.setAutoscale(true);
+options.setCrop(true);
+options.setCropRegion(0, new Region(x, y, w, h));
+options.setColorMode(ImporterOptions.COLOR_MODE_COMPOSITE);
+//...etc.
+ImagePlus[] imps = BF.openImagePlus(options);
+```
 
 ## Daily builds
 
