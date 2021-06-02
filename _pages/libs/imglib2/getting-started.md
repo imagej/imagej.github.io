@@ -1,5 +1,4 @@
 ---
-mediawiki: ImgLib2_-_Getting_Started
 title: ImgLib2 - Getting Started
 section: Explore:Libraries:ImgLib2
 ---
@@ -13,52 +12,66 @@ Before you dive into ImgLib2 for real, you should know how to create and display
 
 The following piece of code creates and displays an 400x320 8bit gray-level image:
 
-    import net.imglib2.img.Img;
-    import net.imglib2.img.array.ArrayImgFactory;
-    import net.imglib2.img.display.imagej.ImageJFunctions;
-    import net.imglib2.type.numeric.integer.UnsignedByteType;
+```java
+import net.imglib2.img.Img;
+import net.imglib2.img.array.ArrayImgFactory;
+import net.imglib2.img.display.imagej.ImageJFunctions;
+import net.imglib2.type.numeric.integer.UnsignedByteType;
 
-    public class CreateAndDisplay
+public class CreateAndDisplay
+{
+    public static void main( final String[] args )
     {
-        public static void main( final String[] args )
-        {
-            final Img< UnsignedByteType > img = new ArrayImgFactory< UnsignedByteType >()
-                .create( new long[] { 400, 320 }, new UnsignedByteType() );
-            ImageJFunctions.show( img );
-        }
+        final Img< UnsignedByteType > img = new ArrayImgFactory< UnsignedByteType >()
+            .create( new long[] { 400, 320 }, new UnsignedByteType() );
+        ImageJFunctions.show( img );
     }
+}
+```
 
 When you run this example, you should get a window showing a black 400x320 image. In lines *10-11*, the image is created. In line *12* it is displayed. Now, that is one awfully long line just to create a black image. Let's break it down into smaller parts.
 
-    final ImgFactory< UnsignedByteType > factory = new ArrayImgFactory< UnsignedByteType >();
-    final long[] dimensions = new long[] { 400, 320 };
-    final UnsignedByteType type = new UnsignedByteType();
-    final Img< UnsignedByteType > img = factory.create( dimensions, type );
+```java
+final ImgFactory< UnsignedByteType > factory = new ArrayImgFactory< UnsignedByteType >();
+final long[] dimensions = new long[] { 400, 320 };
+final UnsignedByteType type = new UnsignedByteType();
+final Img< UnsignedByteType > img = factory.create( dimensions, type );
+```
 
 Pixel images in ImgLib2 are created using an [`ImgFactory`](http://javadoc.scijava.org/ImgLib2/net/imglib2/img/ImgFactory.html). There are different ImgFactories, that create pixel containers with different memory layouts. Here, we create an [`ArrayImgFactory`](http://javadoc.scijava.org/ImgLib2/net/imglib2/img/array/ArrayImgFactory.html). This factory creates in containers that map to a single flat Java array:
 
-    final ImgFactory< UnsignedByteType > factory
-            = new ArrayImgFactory< UnsignedByteType >();
+```java
+final ImgFactory< UnsignedByteType > factory
+        = new ArrayImgFactory< UnsignedByteType >();
+```
 
 The type parameter of the factory that specifies the value type of the image we want to create. We want to create a 8-bit gray-level image, thus we use [`UnsignedByteType`](http://javadoc.scijava.org/ImgLib2/net/imglib2/type/numeric/integer/UnsignedByteType.html).
 
 Next we create a `long[]` array that specifies the image size in every dimension. The length of the array specifies the number of dimensions. Here, we state that we want to create 400x320 2D image:
 
-    final long[] dimensions = new long[] { 400, 320 };
+```java
+final long[] dimensions = new long[] { 400, 320 };
+```
 
 Finally, we need to provide a type variable, that is a variable having the type that is to be stored in the image. This must match the generic type parameter of the `ImgFactory`. Thus we create an `UnsignedByteType`:
 
-    final UnsignedByteType type = new UnsignedByteType();
+```java
+final UnsignedByteType type = new UnsignedByteType();
+```
 
 Then we can create the image, using the factory, dimensions, and type variable:
 
-    final Img< UnsignedByteType > img = factory.create( dimensions, type );
+```java
+final Img< UnsignedByteType > img = factory.create( dimensions, type );
+```
 
 We store the result of the `create()` method in an [`Img`](http://javadoc.scijava.org/ImgLib2/net/imglib2/img/Img.html) variable. `Img` is a convenience interface that gathers properties of pixel image containers such as having a number of dimensions, being able to iterate it's pixels, etc.
 
 This image is then displayed using:
 
-    ImageJFunctions.show( img );
+```java
+ImageJFunctions.show( img );
+```
 
 [`ImageJFunctions`](http://javadoc.scijava.org/ImgLib2/net/imglib2/img/display/imagej/ImageJFunctions.html) provides convenience methods to wrap ImgLib2 constructs into ImageJ containers and display them. It works with 2D and 3D images and can handle most of the pixel types supported by ImgLib2. ImgLib2 provides more sophisticated ways of getting image data to your screen, but we will not go into that now. As a rule of thumb, if you have something remotely resembling a pixel grid, usually you can `ImageJFunctions.show()` it.
 
@@ -66,44 +79,52 @@ This image is then displayed using:
 
 You can open image files with [`ImgOpener`](http://javadoc.scijava.org/SCIFIO/io/scif/img/ImgOpener.html) which is using [LOCI Bio-Formats](http://loci.wisc.edu/software/bio-formats). The following opens and displays an image file:
 
-    import net.imglib2.img.Img;
-    import net.imglib2.img.array.ArrayImgFactory;
-    import net.imglib2.img.display.imagej.ImageJFunctions;
-    import io.scif.img.ImgIOException;
-    import io.scif.img.ImgOpener;
-    import net.imglib2.type.numeric.integer.UnsignedByteType;
+```java
+import net.imglib2.img.Img;
+import net.imglib2.img.array.ArrayImgFactory;
+import net.imglib2.img.display.imagej.ImageJFunctions;
+import io.scif.img.ImgIOException;
+import io.scif.img.ImgOpener;
+import net.imglib2.type.numeric.integer.UnsignedByteType;
 
-    public class OpenAndDisplay
+public class OpenAndDisplay
+{
+    public static void main( final String[] args )
     {
-        public static void main( final String[] args )
+        try
         {
-            try
-            {
-                final Img< UnsignedByteType > img = new ImgOpener().openImg( "graffiti.tif",
-                    new ArrayImgFactory< UnsignedByteType >(), new UnsignedByteType() );
-                ImageJFunctions.show( img );
-            }
-            catch ( final ImgIOException e )
-            {
-                e.printStackTrace();
-            }
+            final Img< UnsignedByteType > img = new ImgOpener().openImg( "graffiti.tif",
+                new ArrayImgFactory< UnsignedByteType >(), new UnsignedByteType() );
+            ImageJFunctions.show( img );
+        }
+        catch ( final ImgIOException e )
+        {
+            e.printStackTrace();
         }
     }
+}
+```
 
 The image is loaded in lines *14-15*. Lets look the steps in more detail. We create an [`ImgOpener`](http://javadoc.scijava.org/SCIFIO/io/scif/img/ImgOpener.html):
 
-    final ImgOpener opener = new ImgOpener();
+```java
+final ImgOpener opener = new ImgOpener();
+```
 
 When opening an image, we can specify which memory layout to use and as which value type we want to load the image. We want to use the `ArrayImg` layout again, and we want to have `UnsignedByteType` values again.
 
 Similar to the [ above example](/libs/imglib2/getting-started#creating-and-displaying-an-image) we need an `ImgFactory` and an instance of the value type:
 
-    final ImgFactory< UnsignedByteType > factory = new ArrayImgFactory< UnsignedByteType >();
-    final UnsignedByteType type = new UnsignedByteType();
+```java
+final ImgFactory< UnsignedByteType > factory = new ArrayImgFactory< UnsignedByteType >();
+final UnsignedByteType type = new UnsignedByteType();
+```
 
 Then we can use the `openImg()` method, giving a filename, `ImgFactory`, and type instance:
 
-    final Img< UnsignedByteType > img = opener.openImg( "graffiti.tif", factory, type );
+```java
+final Img< UnsignedByteType > img = opener.openImg( "graffiti.tif", factory, type );
+```
 
 If there is a problem reading the image, `openImg()` throws an [`ImgIOException`](http://javadoc.scijava.org/SCIFIO/io/scif/img/ImgIOException.html). If all goes well, we store the result in an [`Img`](http://javadoc.scijava.org/ImgLib2/net/imglib2/img/Img.html) variable for convenience. (Actually the result is an [`ImgPlus`](http://javadoc.imagej.net/ImageJ1/ij/ImagePlus.html) wrapping an `ArrayImg`.)
 
