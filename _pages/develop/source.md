@@ -1,5 +1,4 @@
 ---
-mediawiki: Source_code
 title: Source code
 section: Extend:Development
 ---
