@@ -1,5 +1,4 @@
 ---
-mediawiki: Travis
 title: Travis
 section: Extend:Development:Tools
 ---
