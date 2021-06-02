@@ -1,5 +1,4 @@
 ---
-mediawiki: Bio-Formats
 title: Bio-Formats
 section: Learn:ImageJ Basics:File Formats
 categories: [Import-Export,Related Software,SciJava,OME]
