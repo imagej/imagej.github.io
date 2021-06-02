@@ -1,5 +1,4 @@
 ---
-mediawiki: Tips_for_C++_developers
 title: Tips for C++ developers
 section: Extend:Development:Guides
 ---
@@ -23,7 +22,7 @@ In Java, the compiler only produces bytecode that will be interpreted and/or Jus
 
 Java's generics are implemented using erasure, which means that generics help catching bugs due to compile-time checks, but the compiled classes will actually have forgotten about the generic parameters. In particular, you cannot use the generic parameter to instantiate classes, i.e. this does not work:
 
-`public`<T>` T create() { return new T(); } // does _not_ work`
+`public<T> T create() { return new T(); } // does _not_ work`
 
 The upside of this limitation is that you will never get as cryptic multi-page long error messages as with C++.
 
@@ -33,12 +32,14 @@ A downside is that the Java compiler just cannot optimize generics as much as C+
 
 In C++, you often find constructs like this:
 
-`const char *string = "Hello, World!";`  
-`some_func(string + 7);`
+```c
+const char *string = "Hello, World!";  
+some_func(string + 7);
+```
 
-This is not possible in Java. Instead, you have to use String's substring() method.
+This is not possible in Java. Instead, you have to use String's *substring()* method.
 
-In the same spirit, it is not possible to realloc() memory. If you need a larger buffer, you have to allocate it, possibly copying existing data into it using the method *System.arraycopy()*.
+In the same spirit, it is not possible to *realloc()* memory. If you need a larger buffer, you have to allocate it, possibly copying existing data into it using the method *System.arraycopy()*.
 
 ## There is no need for `this->`
 
@@ -80,23 +81,29 @@ Of course, the advantage of multi-threaded programs is that multi-core systems w
 
 Many C++ programmers think of Java as a C++ dialect, forgetting that there are convenient syntax constructs. For example, you will often find code such as
 
-`for (int i = 0; i < array.length; i++) {`  
-`        String string = array[i];`  
-`        // do something`  
-`}`
+```java
+for (int i = 0; i < array.length; i++) {  
+        String string = array[i];  
+        // do something
+}
+```
 
 or even worse:
 
-`Iterator`<String>` iter = list.iterator();`  
-`while (iter.hasNext()) {`  
-`       String string = iter.next();`  
-`       // do something`  
-`}`
+```java
+Iterator<String> iter = list.iterator(); 
+while (iter.hasNext()) {  
+       String string = iter.next();  
+       // do something  
+}
+```
 
 rather than using the Java syntax (available since Java 1.5):
 
-`for (String string : array)`  
-`        // do something`
+```java
+for (String string : array)  
+        // do something
+```
 
 ## Not taking advantage of Java's standard libraries
 
