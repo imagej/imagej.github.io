@@ -299,7 +299,7 @@ Once we know more, we'll document here how to fix it.
 ### Use code fences for multiple `code` lines
 
 If the page uses multiple `code` lines, you should use fenced code blocks. This helps increase readability and 
-also allows you to potentially use syntax highlightingto futher improve readability. Checkout 
+also allows you to potentially use syntax highlighting to futher improve readability. Checkout 
 [code fences](/editing/code#code-fences) for more details.
 
 ### Old info-box tables
