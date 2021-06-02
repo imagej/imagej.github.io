@@ -1,5 +1,4 @@
 ---
-mediawiki: CIP_Experimental
 title: CIP Experimental
 ---
 
@@ -7,7 +6,7 @@ This page provides user documentation for some experimental functions of the [CI
 
 {% include cip/nav %}
 
-# **track**
+# **Track**
 
 <span style="font-size:110%">**Description**</span>  
 This function allow to track the region defined in a list of label map image and return a measures table describing the tracks.
@@ -37,4 +36,4 @@ the track function detect the position of labelmap region at each time step load
 
 \[1\] Tinevez, J. Y., Perry, N., Schindelin, J., Hoopes, G. M., Reynolds, G. D., Laplantine, E., ... & Eliceiri, K. W. (2017). TrackMate: An open and extensible platform for single-particle tracking. Methods, 115, 80-90.
 
-\[2\] https://imagej.net/plugins/trackmate
+\[2\] [https://imagej.net/plugins/trackmate](https://imagej.net/plugins/trackmate)
