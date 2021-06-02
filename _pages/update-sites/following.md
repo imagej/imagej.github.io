@@ -1,5 +1,4 @@
 ---
-mediawiki: Following_an_update_site
 title: Following an update site
 section: Extend:Update Sites
 nav-links: true
