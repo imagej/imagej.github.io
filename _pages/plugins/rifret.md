@@ -1,18 +1,18 @@
 ---
-mediawiki: RiFRET
 title: RiFRET
+name: RiFRET
+license-url: /licensing/gpl
+license-label: GPLv3
+dev-status: Active
+support-status: Active
+team-founders: János Roszik, Duarte Lisboa, János Szöllosi, György Vereb
+team-leads: Cameron Lloyd | /people/camlloyd
+team-developers: Cameron Lloyd | /people/camlloyd
+team-debuggers: Cameron Lloyd | /people/camlloyd
+team-reviewers: Cameron Lloyd | /people/camlloyd
+team-support: Cameron Lloyd | /people/camlloyd
+team-maintainers: Cameron Lloyd | /people/camlloyd
 ---
-
-
-{% capture maintainer%}
-{% include person id='camlloyd' %}
-{% endcapture %}
-
-{% capture source%}
-{% include github%}
-
-{% endcapture %}
-{% include info-box name='RiFRET' software='ImageJ' author='J. Roszik, D. Lisboa, J. Szöllosi, G. Vereb' maintainer=maintainer source=source released='2009' status='active' category='[Plugins](/plugin-index) [Citable](/plugin-index#citable)' website=' [https://biophys.med.unideb.hu/en/rifret](https://biophys.med.unideb.hu/en/rifret)' %}
 
 **An ImageJ plugin for intensity-based three filter-set FRET**
 
@@ -25,8 +25,7 @@ title: RiFRET
 ## Citation
 
 This software is based on a publication. If you use it in your work, please cite:
-
--   Roszik J, Lisboa D, Szöllosi J, Vereb G. [Evaluation of intensity-based ratiometric FRET in image cytometry--approaches and a software solution](https://onlinelibrary.wiley.com/doi/pdf/10.1002/cyto.a.20747). Cytometry A. 2009;75(9):761–767. <doi:10.1002/cyto.a.20747>
+{% include citation doi='10.1002/cyto.a.20747' %}
 
 ## See also
 
