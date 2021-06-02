@@ -1,8 +1,9 @@
 ---
-mediawiki: Video
 title: Video
+description: Details of supported video formats and how to transcode unsupported formats
 section: Learn:ImageJ Basics:File Formats
 categories: [Import-Export]
+nav-links: true
 ---
 
 
