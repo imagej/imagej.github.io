@@ -1,5 +1,4 @@
 ---
-mediawiki: Uber-JAR
 title: Uber-JAR
 section: Extend:Development:Guides
 ---
