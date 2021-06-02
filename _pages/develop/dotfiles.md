@@ -1,5 +1,4 @@
 ---
-mediawiki: Dotfiles
 title: Dotfiles
 section: Extend:Development:Tools
 ---
@@ -69,39 +68,41 @@ Where possible, configuration is driven by plugin managers:
 ## How to get started?
 
 Bootstrap:
-
-    cd
-    mkdir -p code/ctrueden
-    cd code/ctrueden
-    git clone git://github.com/ctrueden/dotfiles
-    cd dotfiles
-    sh config-links.sh
-
+```bash
+cd
+mkdir -p code/ctrueden
+cd code/ctrueden
+git clone git://github.com/ctrueden/dotfiles
+cd dotfiles
+sh config-links.sh
+```
 Clone code for organization(s) of interest—e.g., imagej:
-
-    cd
-    mkdir -p code/imagej
-    cd code/imagej
-    mr up
+```bash
+cd
+mkdir -p code/imagej
+cd code/imagej
+mr up
+```
 
 Switch to zsh:
+```bash
+# grab zgen
+cd
+mkdir -p code/zsh
+cd code/zsh
+mr up
 
-    # grab zgen
-    cd
-    mkdir -p code/zsh
-    cd code/zsh
-    mr up
+# on Linux
+sudo apt-get install zsh
+sudo chsh -s /bin/zsh
 
-    # on Linux
-    sudo apt-get install zsh
-    sudo chsh -s /bin/zsh
+# on macOS
+brew install zsh
+sudo chsh -s /usr/local/bin/zsh
 
-    # on macOS
-    brew install zsh
-    sudo chsh -s /usr/local/bin/zsh
-
-    # on Windows, use Chocolatey to install Cygwin
-    choco install cygwin cyg-get
-    # and then from Cygwin:
-    cyg-get install zsh
-    chsh -s /bin/zsh
+# on Windows, use Chocolatey to install Cygwin
+choco install cygwin cyg-get
+# and then from Cygwin:
+cyg-get install zsh
+chsh -s /bin/zsh
+```
