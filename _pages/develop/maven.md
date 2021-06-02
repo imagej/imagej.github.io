@@ -1,5 +1,4 @@
 ---
-mediawiki: Maven
 title: Maven
 section: Extend:Development:Tools
 ---
@@ -93,9 +92,9 @@ As you can see, dependencies are referenced using the same *groupId*, *artifactI
 
 Once your dependencies are declared, Maven will download them on demand from the Internet. However, for Maven to find the dependencies, it has to know where to look.
 
-Out of the box, Maven will look in the so-called [Maven Central repository](https://search.maven.org/). Some ImageJ and SciJava components are deployed there, including the [pom-scijava parent POM](/develop/architecture#maven-component-structure) which declares important metadata, such as the [Bill of Materials](//develop/architecture#bill-of-materials): current artifact versions intended to work together.
+Out of the box, Maven will look in the so-called [Maven Central repository](https://search.maven.org/). Some ImageJ and SciJava components are deployed there, including the [pom-scijava parent POM](/develop/architecture#maven-component-structure) which declares important metadata, such as the [Bill of Materials](/develop/architecture#bill-of-materials): current artifact versions intended to work together.
 
-However, many other SciJava and ImageJ components are not yet deployed to Maven Central, but instead to the [SciJava Maven repository](//develop/project-management#maven). To gain access to this repository from your project, add the following configuration block to your *pom.xml*:
+However, many other SciJava and ImageJ components are not yet deployed to Maven Central, but instead to the [SciJava Maven repository](/develop/project-management#maven). To gain access to this repository from your project, add the following configuration block to your *pom.xml*:
 
     <repositories>
       <repository>
@@ -148,8 +147,9 @@ If there are no public repositories containing your dependency, you have two opt
 
 Finally, for local testing you can [install the dependency into your local Maven repository cache yourself](https://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html). The command is `mvn install:install-file`. For example, if you have a library `foo.jar` to install, you could run:
 
-` mvn install:install-file -Dfile=/path/to/foo.jar -DgroupId=org.foo \`  
-`   -DartifactId=foo -Dversion=1.0.0 -Dpackaging=jar`
+```
+mvn install:install-file -Dfile=/path/to/foo.jar -DgroupId=org.foo -DartifactId=foo -Dversion=1.0.0 -Dpackaging=jar
+```
 
 For the `groupId`, it is typically best to use the reversed domain name of the library's web site. For libraries that are not explicitly versioned, you may want to use a datestamp such as "20120920" for the `version`, rather than inventing your own versioning scheme.
 
