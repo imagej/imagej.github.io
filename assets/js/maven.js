@@ -215,5 +215,5 @@ function fillStatsFromArtifact(artifact, repository) {
   var a = gav.length > 1 ? gav[1] : '';
   var v = gav.length > 2 ? gav[2] : '';
   if (v) fillStatsFromGAV(g, a, v, repository);
-  else latestVersion(g, a, repository).then(lv => fillStatsFromRepository(g, a, lv, repository));
+  else latestVersion(g, a, repository).then(lv => fillStatsFromGAV(g, a, lv, repository));
 }
