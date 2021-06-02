@@ -1,5 +1,4 @@
 ---
-mediawiki: User:CIPMM-MolPhys
 title: CIPMM plugins
 ---
 
