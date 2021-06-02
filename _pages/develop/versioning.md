@@ -1,10 +1,9 @@
 ---
-mediawiki: Versioning
 title: Versioning
 section: Extend:Development:Guides
 ---
 
-[SciJava](/libs/scijava) components use the [Semantic Versioning](http://semver.org/) (SemVer) system. This scheme communicates information about the [backwards compatibility](/libs/imagej-legacy) (or lack thereof) between versions of each individual software component. {% include clear content='left' %}
+[SciJava](/libs/scijava) components use the [Semantic Versioning](http://semver.org/) (SemVer) system. This scheme communicates information about the [backwards compatibility](/libs/imagej-legacy) (or lack thereof) between versions of each individual software component.
 
 ## Summary
 
