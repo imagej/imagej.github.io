@@ -1,9 +1,8 @@
 ---
-mediawiki: User:Ulman
 title: Vladimír Ulman
 
 name: Vladimír Ulman
-affiliation: MPI-CBG Dresden | /orgs/mpi-cbg
+affiliation: IT4Innovations | /orgs/it4i
 website: https://www.fi.muni.cz/~xulman/
 github: xulman
 ---
