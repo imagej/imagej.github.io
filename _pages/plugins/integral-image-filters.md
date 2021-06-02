@@ -176,7 +176,7 @@ $$ a = n\sum_{i=1}^nx_iy_i - \sum_{i=1}^nx_i\sum_{i=1}^ny_i\quad\text{and}\quad{
 
 {% include citation fn=1 doi='10.1145/800031.808600' %}
 
-{% include citation fn=2 content='conference' first='J. P.' last='Lewis' booktitle='Vision Interface' volume='95' pages='120–123' publisher='Canadian Image Processing and Pattern Recognition Society' title='Fast template matching' year='1995' %}
+{% include citation fn=2 content='conference' first='J. P.' last='Lewis' booktitle='Vision Interface' volume='95' pages='120–123' publisher='Canadian Image Processing and Pattern Recognition Society' title='Fast template matching' year='1995' %} <!-- TODO: No doi for this book. Decide whether to hardcode AMA style, or do something fancier. -->
 
 {% include citation fn=3 doi='10.1023/B:VISI.0000013087.49260.fb' %}
 
