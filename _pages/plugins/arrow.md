@@ -9,7 +9,9 @@ artifact: sc.fiji:Arrow_
 
 This version replaces the old `Arrow_.class` tool that was present in Fiji before. The main changes are the ability to draw the arrow as a floating selection, and to tune its shape.
 
-Warning: Since `ImageJ version 1.43n`, a similar tool, made by {% include person id='rasband' %}, does a similar thing from the ImageJ core, see {% include github org='imagej' repo='ImageJA' branch='master' path='ij/gui/Arrow.java' label='here' %}.
+Warning: Since `ImageJ version 1.43n`, a similar tool, made by {% include person id='rasband' %}, was integrated in the core of ImageJ. Just right-click on the line tool on the ImageJ toolbar and select the arrow tool. Double click on its icon to show configuration options. The ImageJ tool has more or less that same features than this plugin.
+
+{% include img name="ImageJ arrow tool" src="/media/arrow_tool_ImageJ.png" %}
 
 ## Usage
 
