@@ -1,5 +1,4 @@
 ---
-mediawiki: CIP
 title: CIP
 ---
 
@@ -14,15 +13,9 @@ Classic Image Processing (CIP) is an image procesing toolbox which provides func
 
 -   **Integration** to ImageJ ecosystem: CIP can be easily used in combination other ImageJ1 and ImageJ2 plugins. For instance, it can process seamlessly all usual imageJ image type (ImagePlus, Dataset, ImgPlus, Img) wihtout requiring any conversion.
 
-<!-- -->
-
 -   **Discoverability** of its functionnalities: CIP provides a complete user documentation that explain function usage, details their parameters and provides illustration. In order to allow an intuitive learning, function parameters can be named or made optionnal while similar functions will have similar signatures. For the same reason 2D and 3D images can be processed with the same functions.
 
-<!-- -->
-
 -   **Simplicity** of use: Learning programming is demanding and CIP goal is to hide unecessary difficulty when one starts scripting. For instance CIP requires no class and package import. It Also uses only 3 main data types, Image, Region Table, to simplify data representation. Finally, CIP functions never modifies functions inputs so you always know what is happening to your data.
-
-<!-- -->
 
 -   An **essential** set of tools: CIP gathers the 10% of tools that will get the job done, allowing one to go straight to the tool he needs. The function selected are also well adopted by the community to facilitate exchange and understanding. Finally, CIP provides basic visualisation and measure tools that are needed in every workflow.
 
@@ -50,19 +43,11 @@ Image analysis workflows require the user to perform stereotypic steps: enhance 
 
 -   **[Format](/plugins/cip/format)**: These functions are used to managed image data, combine them or reduce their dimensionnality. They take one or multiple image as input and return one image as output. These function will generally provide an ouput which size and/or dimensionality can be different from the input
 
-<!-- -->
-
 -   **[Filter](/plugins/cip/filter)**: filters act on image graylevel. They creates an output image the same size as the input. Filters are used to remove noise, filter out unwanted background or enhance feature of interest such as spots and lines.
-
-<!-- -->
 
 -   **[Math](/plugins/cip/math) operations and functions**: These category gathers usual mathematical operations such as addition, subtraction or trigonometric functions for instance. They can be used with scalars, images or image and scalar in combination. When use with images the operation are applied pixel wise.
 
-<!-- -->
-
 -   **[Segmentation](/plugins/cip/segmentation)**: Segmentation functions allow to define regions in an image. Applied to an input image they create so called label image that defines the pixel where the object lays. Each region is attributed a particular label, an integer value, that can be used to retrieve the object later. Watershed, thresholding spot and line detection can be found here.
-
-<!-- -->
 
 -   **[Assess](/plugins/cip/utilities)**: in that category are tools to facilitate data visualisation and measures that will be needed in every pipeline once the image processing is done.
 
@@ -112,15 +97,9 @@ This section provide the main development directions as well as a list of functi
 
 -   2017-12-20 : version 0.1.0 , first public version of CIP is made available on CIP update site. The package is still under development
 
-<!-- -->
-
 -   2018-01-29 : version 0.1.1 , add a help function
 
-<!-- -->
-
 -   2018-05-03 : version 0.1.2 , minimal backcompatible updates of a few functions signatures for consistency. cip.show( handle\*, region\*, ...) becomes cip.show(region\*, handle, ...), if no handle is provided region are shown on the current image. Update parameter name for create, slice and show function.
-
-<!-- -->
 
 -   2018-05-28 : version 0.2.0 , tracking, watershed and maxima update
     -   add an experimental cip.track function allowing to track regions in a list of labelmap. it uses trackmate LapTracker below the hood thus allowing splitting, merging and discontinous tracks. resulting track can be visualized with cip.show both in trackscheme or hyperstack viewer.
@@ -128,11 +107,7 @@ This section provide the main development directions as well as a list of functi
     -   the multiscale maxima detection was debugged and now give consistant results. It works in 2d/3d and takes into account data anisotropy. As an experiment it is possible to return multiscale maxima detection as a list of measures. multiscale maxima debugging also occured in ImgAlgo-0.1.2.jar update.
     -   corresponding documentation is on the work
 
-<!-- -->
-
 -   2018-06-11 : version 0.2.1 correct a regression that prevented the visualisation of 3d regions
-
-<!-- -->
 
 -   2018-06-19 : version 0.2.2 bug corrections
     -   correct a bug in median measure
