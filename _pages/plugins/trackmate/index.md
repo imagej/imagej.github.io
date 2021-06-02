@@ -6,50 +6,48 @@ artifact: sc.fiji:TrackMate_
 doi: 10.1016/j.ymeth.2016.09.016
 ---
 
-# TrackMate.
-
 *TrackMate is your buddy for your everyday tracking.*
 
-## Citation.
+## Citation
 
 Please note that TrackMate is available through Fiji, and is based on a publication. If you use it successfully for your research **please be so kind to cite our work**:
 
 {% include citation %}
 
-## Presentation.
+## Presentation
 
 ### Examples
 
-#### Tracking and lineaging cells in 3D.
+#### Tracking and lineaging cells in 3D
 
 ![](/media/plugins/trackmate/trackmate-celegans-devel.gif)
 
 The first 2 hours of a *C.elegans* embryo development, followed in 3D over time using TrackMate (strain: [AZ212](http://www.wormbase.org/db/gene/strain?name=AZ212;class=Strain)).
 
-#### Detail of the lineage of an early _C.elegans_ embryo development.
+#### Detail of the lineage of an early _C.elegans_ embryo development
 
 {% include img src='/media/plugins/trackmate/trackmate-celegans-lineage-detail.png' width='300px' %}
 
 A detail of the corresponding unannotated lineage visualized in TrackScheme.
 
-#### Tracks with fusion, split and bridging gap events.
+#### Tracks with fusion, split and bridging gap events
 
 ![Tracks with fusion, split and bridging gap events](/media/plugins/trackmate/trackmate-split-merge-gapclosing.gif)
 
 TrackMate can be set to detect and deal with gap-closing events, splitting events and merging events.
 
-#### Estimating cell size over time.
+#### Estimating cell size over time
 ![TrackMate Celegans cell diameter](/media/plugins/trackmate/trackmate-celegans-celldiameter.png)
 
 TrackMate can also be used for basic track analysis. Here is plotted the estimated diameter of a *C.elegans* cell as it divides over time.
 
-#### Generating movies that follow a single cell over time.
+#### Generating movies that follow a single cell over time
 ![](/media/plugins/trackmate/trackmate-celeganscellfollowed.gif)
 
 A movie following one cell of a *C.elegans* embryo tracked over 3 hours, as it divides. The track follows the lineage from cell AB to ABaraapap.
 
 
-### Single Particle Tracking.
+### Single Particle Tracking
 
 TrackMate provides the tools to perform single particle tracking (SPT). SPT is an image analysis challenge where the goal is to segment and follow over time some labelled, spot-like structures. Each spot is segmented in multiple frames and its trajectory is reconstructed by assigning it an identity over these frames, in the shape of a track. These tracks can then be either visualized or yield further analysis results such as velocity, total displacement, diffusion characteristics, division events, etc...
 
@@ -57,11 +55,11 @@ TrackMate can deal with single particles, or spot-like objects. They are bright 
 
 Though these objects are solely represented by a X,Y,Z,T coordinates array, TrackMate can compute numerical features for each spot, given its coordinates and a radius. For instance, the mean, max, min and median intensity will be computed, as well as the estimated radius and orientation for each spot, allowing to follow how these feature evolves over time for one object.
 
-### TrackMate goals.
+### TrackMate goals
 
 Its development focuses on achieving two concomitant goals:
 
-#### For users.
+#### For users
 
 TrackMate aims at offering a generic solution that works out of the box, through a simple and sensible user interface.
 
@@ -77,7 +75,7 @@ TrackMate relies on several different libraries and plugins for data manipulatio
 
 A strong emphasis is made on performance, and TrackMate will take advantage of multi-cores hardware.
 
-#### For developers.
+#### For developers
 
 Have you ever wanted to develop your own segmentation and/or particle-linking algorithm, but wanted to avoid the painful burden to also write a GUI, several visualization tools, analysis tools and exporting facilities? Then TrackMate is for you.
 
@@ -97,7 +95,7 @@ Do you want to make your new algorithms usable by the reviewers of your submitte
 
 TrackMate was developed to serve as a tool for Life-Science image analysis community, so that new tracking tools can be developed more easily and quickly, and so that end-users can use them to perform their own research. We will support you if need help to reuse it.
 
-## Documentation and tutorials.
+## Documentation and tutorials
 
 The [TrackMate paper](http://www.sciencedirect.com/science/article/pii/S1046202316303346) contains a polished, pdf version of the documentation below. But we host it here:
 
@@ -109,7 +107,7 @@ https://github.com/fiji/plugins/trackmate/releases
 
 -   [TrackMate FAQ](/plugins/trackmate/faq)
 
-### For users.
+### For users
 
 -   [Getting started with TrackMate](/plugins/trackmate/getting-started) is a basic tutorial that explains how TrackMate works on an easy image. You should start here.
 -   [TrackScheme](/plugins/trackmate/trackscheme): the tool for the visualization, editing and analysis of tracks.
@@ -122,7 +120,7 @@ https://github.com/fiji/plugins/trackmate/releases
 -   Various very useful tips and tricks contributed by users:
     -   Dave Mason on using pivot tables to get track statistics based on spot features: [1](https://forum.image.sc/t/mean-intensity-of-tracks-using-trackmate/11848/5)
 
-### For developers.
+### For developers
 
 -   [Scripting TrackMate](/plugins/trackmate/scripting) shows how to do tracking using a scripting language, *e.g.* from the Fiji [Script Editor](/scripting/script-editor). These example scripts will show you how to use TrackMate as a library and familiarize yourself with the API.
 -   [Using TrackMate from MATLAB](/plugins/trackmate/using-from-matlab) shows how to use [MATLAB](/scripting/matlab) as a scripting language for TrackMate, and benefit from [MATLAB](/scripting/matlab) facilities.
@@ -145,15 +143,15 @@ The following tutorials show how to integrate a module of each kind in TrackMate
 -   [How to write your own detection algorithm for TrackMate](/plugins/trackmate/custom-detection-algorithms)
 -   [How to write your own particle-linking algorithm for TrackMate](/plugins/trackmate/custom-particle-linking-algorithms)
 
-## Known problems.
+## Known problems
 
 TrackMate LoG detector will crash if you have the [Mosaic suite update site](/list-of-update-sites) activated. Apparently they ship something that interferes with the FFT code used by the LoG detector. The bug report can be read [on BugZilla](https://fiji.sc/bugzilla/show_bug.cgi?id=806).
 
-## Extensions.
+## Extensions
 
 Please tell us if you have one that you want to advertise here!
 
-### Downloadable jars.
+### Downloadable jars
 
 Thanks to Travis, the extension we are aware of are built automatically and can be downloaded following the links below. They point to a simple .jar file that you just have to drop in your *Fiji.app/jars* folder. TrackMate will recognise the extra modules it ships and will integrate them in the plugin.
 
@@ -164,19 +162,19 @@ Thanks to Travis, the extension we are aware of are built automatically and can 
 | Track analysis | This extension ships several track analyzers that yield more statistics on tracks. Such as:<br> -TOTAL_DISTANCE_TRAVELED<br> - MAX_DISTANCE_TRAVELED<br> - TRACK_CONFINMENT_RATIO <br> - MEAN_STRAIGHT_LINE_SPEED <br> - LINEARITY_OF_FORWARD_PROGRESSION <br> - MEAN_DIRECTIONAL_CHANGE_RATE| Jean-Yves Tinevez | <a href="https://maven.scijava.org/content/repositories/snapshots/sc/fiji/plugins/trackmate_trackanalysis/0.0.1-SNAPSHOT/plugins/trackmate_trackanalysis-0.0.1-20170614.171211-1.jar">on ImageJ maven Nexus</a> | <a href="https://github.com/tinevez/plugins/trackmate-TrackAnalysis">on Github</a> |
 | TrackMate -> Spot-On connector | This extension adds an action allowing to automatically transfer a tracking analysis performed in TrackMate to <a href="https://spoton.berkeley.edu">Spot-On</a>, without having to export the tracks and reimport them. Spot-On is a web-interface designed for the analysis of single-molecule tracking experiments. | Maxime Woringer | <a href="https://gitlab.com/tjian-darzacq-lab/Spot-On-TrackMate/tags">on Gitlab</a> | <a href="https://gitlab.com/tjian-darzacq-lab/Spot-On-TrackMate">on Gitlab</a> |
 
-### Extensions with extra source code.
+### Extensions with extra source code
 
 [Ronny Sczech TrackMate repository](https://github.com/chicoronny/RonnyTrackMate) contains the source code to various TrackMate enhancements, in Java and macros.
 
-### Extensions documentation.
+### Extensions documentation
 
 -   [Find maxima detector](/plugins/trackmate/find-maxima-detector) from Thorsten Wagner.
 
-## Who uses TrackMate.
+## Who uses TrackMate
 
 It turns out that TrackMate has a decent user base, as exemplified by a crude search on [Google Scholar](https://scholar.google.fr/scholar?q=trackmate+fiji). These citations accumulated before the TrackMate paper was out.
 
-## TrackMate components.
+## TrackMate components
 
 TrackMate actually depends on many other Fiji plugins or libraries. The [Fiji Build System](/develop) system and the [Fiji Updater](/plugins/updater) ensures that these dependencies will not bother you. We list them here, with their author when they are not obviously linked:
 
@@ -191,7 +189,7 @@ TrackMate actually depends on many other Fiji plugins or libraries. The [Fiji Bu
 -   The TrackMate file format is plain XML, and is generated or loaded using the [JDom](http://www.jdom.org/) library.
 -   For the icons, as almost every ImageJ plugin with a GUI, we used the [silk icon set](http://www.famfamfam.com/lab/icons/silk/), by Mark James. But we are also very lucky to have icons and logos designed specifically for TrackMate by [IlluScienta](http://www.illuscientia.com/).
 
-## Acknowledgements.
+## Acknowledgements
 
 We are extremely thankful for the support of [Khuloud Jaqaman](http://www.utsouthwestern.edu/labs/jaqaman/) while we were implementing in Java a stripped down version of her work on robust LAP tracker, following her seminal paper published in the Danuser group:
 
