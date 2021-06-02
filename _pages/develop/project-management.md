@@ -1,5 +1,4 @@
 ---
-mediawiki: Project_management
 title: Project management
 section: Extend:Development
 ---
@@ -90,15 +89,16 @@ Issues and milestones are public-facing entities, yet their content can be highl
       </td>
     </tr>
     <tr>
+      <td></td>
       <td>
         <p>to keep track of issues of interest</p>
       </td>
       <td>
         <p>Subscribe to desired issues using <a href="https://guides.github.com/features/issues/#notifications">notifications</a>.</p>
       </td>
-      <td></td>
     </tr>
     <tr>
+      <td></td>
       <td>
         <p>to know which issues were fixed in a release</p>
       </td>
@@ -109,6 +109,7 @@ Issues and milestones are public-facing entities, yet their content can be highl
       <td></td>
     </tr>
     <tr>
+      <td></td>
       <td>
         <p>to ask questions and report new issues</p>
       </td>
@@ -116,7 +117,6 @@ Issues and milestones are public-facing entities, yet their content can be highl
         <p>Report new issues using the big green "New issue" button,<br>
         or via ImageJ's <a href="/discuss/bugs">Report a Bug</a> plugin.</p>
       </td>
-      <td></td>
     </tr>
     <tr>
       <td>
@@ -132,6 +132,7 @@ Issues and milestones are public-facing entities, yet their content can be highl
       </td>
     </tr>
     <tr>
+      <td></td>
       <td>
         <p>to find new tasks to work on</p>
       </td>
@@ -141,13 +142,13 @@ Issues and milestones are public-facing entities, yet their content can be highl
       <td></td>
     </tr>
     <tr>
+      <td></td>
       <td>
         <p>a place to discuss implementation details, etc.</p>
       </td>
       <td>
         <p>Use <a href="https://help.github.com/articles/using-pull-requests/">pull requests</a>.</p>
       </td>
-      <td></td>
     </tr>
     <tr>
       <td>
@@ -162,31 +163,31 @@ Issues and milestones are public-facing entities, yet their content can be highl
       </td>
     </tr>
     <tr>
+      <td></td>
       <td>
         <p>to ignore inactive issues without closing them</p>
       </td>
       <td>
         <p>Use the <a href="https://github.com/issues?q=is%3Aopen+milestone%3Aunscheduled+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci">"unscheduled" milestone</a>.</p>
       </td>
-      <td></td>
     </tr>
     <tr>
+      <td></td>
       <td>
         <p>to plan development timelines</p>
       </td>
       <td>
         <p>Use future <a href="https://guides.github.com/features/issues/#filtering">milestones</a> (e.g., <a href="https://github.com/imagej/imagej/milestones">imagej</a>, <a href="https://github.com/scifio/scifio/milestones">scifio</a>).</p>
       </td>
-      <td></td>
     </tr>
     <tr>
+      <td></td>
       <td>
         <p>to report completed features</p>
       </td>
       <td>
         <p>Use completed <a href="https://guides.github.com/features/issues/#filtering">milestones</a> (e.g., <a href="https://github.com/imagej/imagej/milestones?state=closed">imagej</a>, <a href="https://github.com/scifio/scifio/milestones?state=closed">scifio</a>).</p>
       </td>
-      <td></td>
     </tr>
   </tbody>
 </table>
@@ -227,7 +228,7 @@ The preferred mechanism to contribute improvements to [ImageJ](/software/imagej)
 ## Roadmap links
 
 -   [News](/news) about ImageJ and Fiji developments, including status updates, observations and comments about ImageJ programming.
--   [Recent changes](Special_RecentChanges) to this web site (*not* the ImageJ code itself).
+-   [Recent changes](https://github.com/imagej/imagej.github.io/commits/main) to this web site (*not* the ImageJ code itself).
 -   [BugZilla](https://fiji.sc/bugzilla) database of user-reported bugs from the [Report a Bug](/discuss/bugs) plugin.
 
 ## Citable code
