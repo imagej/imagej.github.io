@@ -1,5 +1,4 @@
 ---
-mediawiki: SoC_2009_Application
 title: SoC 2009 Application
 categories: [community]
 ---
@@ -14,7 +13,7 @@ Fiji is Just ImageJ
 
 ## Home Page URL
 
-https://fiji.sc
+[https://fiji.sc](https://fiji.sc)
 
 ## Public Email
 
@@ -56,7 +55,7 @@ We have not applied in the past, but one of our mentors has experience from serv
 
 ## What is the URL for your ideas page?
 
-https://fiji.sc/SoC2009Ideas
+[https://fiji.sc/SoC2009Ideas](https://fiji.sc/SoC2009Ideas)
 
 ## What is the main development mailing list for your group?
 
