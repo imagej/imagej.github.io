@@ -1,6 +1,5 @@
 Rueden, C., Schindelin, J., Hiner, M. &amp; Eliceiri, K. (2016). SciJava Common [Software]. https://scijava.org/.
-authors="
-"
+
 {%- comment -%}
 # vi:syntax=liquid
 {%- endcomment -%}
