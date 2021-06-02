@@ -1,5 +1,4 @@
 ---
-mediawiki: SoC_2010_Template
 title: SoC 2010 Template
 ---
 
