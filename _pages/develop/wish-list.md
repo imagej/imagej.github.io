@@ -1,5 +1,4 @@
 ---
-mediawiki: Wish_list
 title: Wish list
 section: Extend:Development
 ---
