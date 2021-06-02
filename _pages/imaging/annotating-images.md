@@ -14,7 +14,7 @@ An image's spatial calibration can be edited using {% include bc path="Image|Pro
 
 Some microscope models (e.g., Biorad PIC, and Zeiss LSM confocal image files) will use the zoom and objective magnification settings for internal calibration. However, it is important to keep in mind that some file formats (e.g. Perkin Elmer) are not calibrated while some "exported" image files (e.g. Zeiss zvi's exported as TIFFs) will lose their calibration information completely.
 
-In the case that the files have no calibration, you can apply the calibration using images of a stage micrometer with the same settings as your experiment. These settings include camera binning, frame size, objective, confocal zoom, etc. Then the calibration can be applied using {% include bc path="Analyze|Set Scale" %} (see below). Spatial calibration can also be found and set in the {% include bc path="Image|Properties" %} dialog. The "*Microscope Scale*" plugin is another alternative and can be customized using a drop-down box of objectives to apply spatial calibrations.
+In the case that the files have no calibration, you can apply the calibration using images of a stage micrometer with the same settings as your experiment. These settings include camera binning, frame size, objective, confocal zoom, etc. Then the calibration can be applied using {% include bc path="Analyze|Set Scale" %} ([see below](#set-scale)). Spatial calibration can also be found and set in the {% include bc path="Image|Properties" %} dialog. The "*Microscope Scale*" plugin is another alternative and can be customized using a drop-down box of objectives to apply spatial calibrations.
 
 {% include img src="set-scale-plugin" width="179" height="200" %}
 
