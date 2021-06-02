@@ -1,5 +1,4 @@
 ---
-mediawiki: User:UniBas-IMCF
 title: UniBas-IMCF
 ---
 
