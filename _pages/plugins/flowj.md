@@ -1,6 +1,8 @@
 ---
 mediawiki: FlowJ
 title: FlowJ
+description: Core optic flow algorithms for 2D images.
+section: 
 categories: [Optic Flow]
 artifact: sc.fiji:FlowJ_
 ---
