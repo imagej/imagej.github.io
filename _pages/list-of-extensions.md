@@ -1,5 +1,5 @@
 ---
-mediawiki: Plugin_Index
+mediawiki: Category:Fundamental
 title: List of Extensions
 section: Extend
 ---
