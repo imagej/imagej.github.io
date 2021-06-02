@@ -27,7 +27,7 @@ For fluorescence images from optical microscopes, from a colocalization perspect
     3.  BUT, they will never be whole xy pixels or z slice shifts... forget that idea its too crude.
     4.  see the 2 slides titled "Check with multi-colour beads" at [Colocalization analysis course notes](https://www.biodip.de/w/images/f/fa/QuantitativeColocAnalysis-10-2011.pdf)
 12. How to measure the colour channel shift systematic error?
-    1.  [psfJ](http://www.knoplab.de/psfj/overview/) from Knop lab can make the measurement.
+    1.  [psfJ](https://github.com/cmongis/psfj) from Knop lab can make the measurement.
     2.  Use imageJ to do gaussian fits of the bead images and find the shidsts in x y and z.
 13. Now we can use software to fix this systematic error by shifting one image colour channel relative to the other.
     1.  Erik M's TransformJ Translate plugin in Fiji/ImageJ can do a sub pixel resolution shift for for each channel, as we have measured those shifts [TransformJ Translate](https://imagescience.org/meijering/software/transformj/translate/)
