@@ -1,5 +1,4 @@
 ---
-mediawiki: CIP_Segmentation
 title: CIP Segmentation
 ---
 
