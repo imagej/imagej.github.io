@@ -1,5 +1,4 @@
 ---
-mediawiki: Annotating_Images
 title: Annotating Images
 section: Learn:Scientific Imaging
 nav-links: true
