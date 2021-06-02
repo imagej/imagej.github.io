@@ -1,5 +1,4 @@
 ---
-mediawiki: SoC_2009_Ideas
 title: SoC 2009 Ideas
 ---
 
