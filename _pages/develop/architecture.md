@@ -249,7 +249,7 @@ The [SciJava Common](/libs/scijava#scijava-common) (SJC) library provides a plug
   content="Arguably **the most important thing** in science is to gain insights
 about nature **that can be verified by other researchers**. It is this
 mission for which [ImageJ](/software/imagej) and [Fiji](/software/fiji) stand, and it
-is the central reason why they are [open source](Open_source).
+is the central reason why they are [open source](/licensing/open-source).
 
 To verify results, it is absolutely necessary to be able to reproduce results
 claimed in scientific articles, and in the interest of efficiency, it should be

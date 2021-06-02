@@ -20,7 +20,7 @@ See the [Fiji downloads](/software/fiji/downloads) page for Life-Line versions, 
 
 ## License
 
-Fiji is released as [open source](Open_source) under the [GNU General Public License](/licensing/gpl).
+Fiji is released as [open source](/licensing/open-source) under the [GNU General Public License](/licensing/gpl).
 
 Fiji builds on top of the [ImageJ2](/software/imagej2) core, which is licensed under the permissive [BSD 2-Clause license](/licensing/bsd).
 
@@ -37,7 +37,7 @@ Fiji is supported by several laboratories and institutions:
 -   The [Saalfeld Lab](https://www.janelia.org/lab/saalfeld-lab) at [Janelia Research Campus](/orgs/janelia).
 -   Individuals at [many other institutions worldwide](/people).
 
-Fiji is an [open source](Open_source) project, so everybody is welcome to contribute with plugins, patches, bug reports, tutorials, documentation, and artwork.
+Fiji is an [open source](/licensing/open-source) project, so everybody is welcome to contribute with plugins, patches, bug reports, tutorials, documentation, and artwork.
 
 If you'd like to share an idea or project, please [share them with the community](/discuss).
 

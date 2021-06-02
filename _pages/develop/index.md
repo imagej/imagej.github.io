@@ -203,7 +203,7 @@ See the [Project management](/develop/project-management) page for further detai
 
 ## Source code
 
-[ImageJ](/software/imagej) and related [SciJava](/libs/scijava) software projects are [open source](Open_source). The code is organized into [well-separated](/develop/architecture#modularity) projects.
+[ImageJ](/software/imagej) and related [SciJava](/libs/scijava) software projects are [open source](/licensing/open-source). The code is organized into [well-separated](/develop/architecture#modularity) projects.
 
 See the [source code](/develop/source) page for further details.
 

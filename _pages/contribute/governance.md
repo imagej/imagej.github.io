@@ -12,18 +12,18 @@ nav-links: true
 -   For information on the *legal* structure, see [Licensing](/licensing).' %}
 
 
-The [ImageJ](/software/imagej) project, and related projects in the [SciJava](/libs/scijava) software ecosystem, are governed as [open source](Open_source) software projects. Everybody is welcome to [contribute](/contribute) with [plugins](/plugins), patches, [bug reports](/discuss/bugs), [tutorials](/tutorials), [documentation](/learn), and artwork.
+The [ImageJ](/software/imagej) project, and related projects in the [SciJava](/libs/scijava) software ecosystem, are governed as [open source](/licensing/open-source) software projects. Everybody is welcome to [contribute](/contribute) with [plugins](/plugins), patches, [bug reports](/discuss/bugs), [tutorials](/tutorials), [documentation](/learn), and artwork.
 
 That said, every project needs leaders: the ones who participate in *governance* of the project, {% include wikipedia title='Software maintenance' text='maintaining'%} the software and making key decisions.
 
 ## Project roles
 
-Because [open source](Open_source) software (OSS) is highly collaborative, it is extremely important to understand the difference between various roles on the project, to avoid misconceptions about **authority** (who makes decisions) and **responsibility** (who is pledged to do the work) concerning each project.
+Because [open source](/licensing/open-source) software (OSS) is highly collaborative, it is extremely important to understand the difference between various roles on the project, to avoid misconceptions about **authority** (who makes decisions) and **responsibility** (who is pledged to do the work) concerning each project.
 
 The most common roles in OSS are:
 
 -   **Founders** are the people who originally launched the project.
--   **Leads** are responsible for making final decisions. In the [open source](Open_source) world these people are often referred to as [benevolent dictators](http://catb.org/~esr/writings/homesteading/homesteading/ar01s16.html). Changes with a serious impact on the community are typically [discussed on open channels](/discuss) first.
+-   **Leads** are responsible for making final decisions. In the [open source](/licensing/open-source) world these people are often referred to as [benevolent dictators](http://catb.org/~esr/writings/homesteading/homesteading/ar01s16.html). Changes with a serious impact on the community are typically [discussed on open channels](/discuss) first.
 -   **Maintainers** keep the project functional, fix bugs and make releases. They often make day to day decisions, and are typically involved in discussion with the project lead(s) regarding major decisions, although the lead has final decision-making authority.
 -   **Developers** are people who work on the project significantly or often. Typically they have direct push access to the source code. In some cases they make day to day decisions, depending on their experience and comfort level with the project.
 -   **Contributors** are people who help with the project either currently or in the past. They may participate occasionally or sporadically, and are typically not involved in project decision making.

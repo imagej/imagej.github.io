@@ -8,7 +8,7 @@ section: Contribute:Licensing:Open Source
 
 The **GNU General Public License** is a free,
 **{% include wikipedia title='Copyleft' text='copyleft' %}**
-[open source](Open_source) license for software and other kinds of works. This
+[open source](/licensing/open-source) license for software and other kinds of works. This
 is in contrast to **permissive** licenses like [BSD](/licensing/bsd), which impose minimal
 restrictions on the redistribution of covered software. The GPL ensures that
 granted freedoms are preserved whenever the work is distributed, even when the

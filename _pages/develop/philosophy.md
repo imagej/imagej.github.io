@@ -9,7 +9,7 @@ section: Extend:Development
 
 ## Open source
 
-The SciJava ecosystem is strongly committed to [open source](Open_source) software development. But this software is not an [open source](Open_source) software *product*—it is an [open source](Open_source) software *project* following an [open source](Open_source) development *process*.
+The SciJava ecosystem is strongly committed to [open source](/licensing/open-source) software development. But this software is not an [open source](/licensing/open-source) software *product*—it is an [open source](/licensing/open-source) software *project* following an [open source](/licensing/open-source) development *process*.
 
 ImageJ is funded by taxpayer money, so the project strives to be as transparent as possible. There are public [source code repositories](/develop/source), public [communication](/discuss/#ways-to-get-help) channels, public [project management](/develop/project-management) resources, and of course, this [community editable website](/editing). As you can see, we love [doing it in public](http://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/)!
 
@@ -27,7 +27,7 @@ We are always looking for more ways to improve the software to meet this goal of
 
 [Extensibility](/develop/architecture#extensibility) is [ImageJ](/software/imagej)'s greatest strength. ImageJ is not just a software application—it is an extensible *platform* for the development of image [visualization](/plugin-index#visualization), [segmentation](/imaging/segmentation), [registration](/plugin-index#registration), and [analysis](/plugin-index#analysis) routines.
 
-Isaac Newton attributed his success to {% include wikipedia title='Standing on the shoulders of giants' text='standing on the shoulders of giants'%}. The [SciJava component collection](/develop/architecture)'s powerful [plugin](/plugins) mechanism and [open source](Open_source) software process codify that metaphor into the software itself. Not only are there many different types of plugins, but it is also possible to extend the system with your own new types of plugins. See the [Extensibility](/develop/architecture#extensibility) page for details.
+Isaac Newton attributed his success to {% include wikipedia title='Standing on the shoulders of giants' text='standing on the shoulders of giants'%}. The [SciJava component collection](/develop/architecture)'s powerful [plugin](/plugins) mechanism and [open source](/licensing/open-source) software process codify that metaphor into the software itself. Not only are there many different types of plugins, but it is also possible to extend the system with your own new types of plugins. See the [Extensibility](/develop/architecture#extensibility) page for details.
 
 ## Interoperability
 

@@ -21,7 +21,7 @@ LOCI plays a very active role in the ImageJ community:
 -   LOCI founded the [Bio-Formats](/formats/bio-formats) project, and led the
     project's development for several years.
 -   LOCI regularly funds and hosts [hackathons](/events/hackathons) intended to
-    foster community development of [open source](Open_source) biological
+    foster community development of [open source](/licensing/open-source) biological
     software projects.
 -   LOCI hosts the `imagej.net` web services, as well as related services
     including `fiji.sc` and `openspim.org`.

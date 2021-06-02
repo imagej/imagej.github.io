@@ -7,7 +7,7 @@ nav-links: true
 
 # What is ImageJ?
 
- <a href="/software/imagej"><img src="/media/icons/imagej.png" height="48px"/></a> [ImageJ](/software/imagej) is an [open source](Open_source) [image processing](/imaging) program for multidimensional image data with a focus on scientific imaging.
+ <a href="/software/imagej"><img src="/media/icons/imagej.png" height="48px"/></a> [ImageJ](/software/imagej) is an [open source](/licensing/open-source) [image processing](/imaging) program for multidimensional image data with a focus on scientific imaging.
 
 # What is Fiji?
 
