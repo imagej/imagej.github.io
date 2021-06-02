@@ -1,5 +1,5 @@
 ---
-title: 2009-04-20 - Summer of Code › We got us three students
+title: "2009-04-20 - Summer of Code: We got us three students"
 ---
 
 Even if we did not get the number of slots we wished for -- by far -- the summer of code is *on*!
