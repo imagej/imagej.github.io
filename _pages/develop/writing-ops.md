@@ -1,5 +1,4 @@
 ---
-mediawiki: Adding_new_ops
 title: Adding new ops
 section: Extend:Development:Guides
 ---
