@@ -20,15 +20,15 @@ Here are the plugins released I am responsible for. If you detect any problem wi
 
 ## Maintained plugins
 
--   [FlowJ](/_pages/plugins/flowj.md)
+-   [FlowJ](/plugins/flowj)
 -   [LSM Toolbox](/formats/lsm)
 -   The [Stack Manipulation](/plugins/stack-manipulation) package
 -   [View5D](/plugins/view5d)
 
 ## Authored plugins documented here
 
--   [Arrow_](/plugins/arrow)
--   [Directionality_](/plugins/directionality)
+-   The Fiji [Arrow](/plugins/arrow)
+-   [Directionality](/plugins/directionality)
 -   [Image Expression Parser](/plugins/image-expression-parser)
 -   [PIV analysis](/plugins/piv-analyser)
 -   [TrackMate](/plugins/trackmate)
