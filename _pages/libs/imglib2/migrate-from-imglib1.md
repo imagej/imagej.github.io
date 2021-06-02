@@ -1,5 +1,4 @@
 ---
-mediawiki: How_To_Migrate_Code_From_ImgLib_To_ImgLib2
 title: How To Migrate Code From ImgLib To ImgLib2
 ---
 
