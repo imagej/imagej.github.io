@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Pbainar
 title: Petr Bainar
 
 name: Petr Bainar
