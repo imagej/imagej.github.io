@@ -1,9 +1,7 @@
 ---
-mediawiki: EGit
 title: EGit
 section: Extend:Development:Git
 ---
-
 
  This page provides an introduction on how to start using the [EGit](http://www.eclipse.org/egit/) extension in the [Eclipse](/develop/eclipse) IDE for software development.
 
