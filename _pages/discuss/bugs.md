@@ -1,7 +1,4 @@
 ---
-mediawiki:
-- Report_a_Bug
-- Bug_reporting_best_practices
 title: Reporting Issues
 section: Discuss
 nav-links: true
@@ -69,13 +66,13 @@ When we're in a hurry, it's easy to provide a brief overview a bug without actua
 The actual text of your bug report should succinctly describe the fewest steps possible to reproduce your issue. For example:
 
   
-1\) Open sample image "blobs"
+  1\) Open sample image "blobs"
 
-2\) Run auto-threshold command
+  2\) Run auto-threshold command
 
-3\) Run subtract background command
+  3\) Run subtract background command
 
-At this point, an evil kraken appears and sinks my hard drive.
+  At this point, an evil kraken appears and sinks my hard drive.
 
 Additional information is typically unnecessary... if a developer can reproduce the problem, they will do their best to fix it.
 
@@ -114,18 +111,15 @@ Furthermore, if you have any **LOCAL\_ONLY** or **MODIFIED** files, their behavi
 
 In cases where it is clear which class or classes are causing problems, you can do remove the offending component as follows:
 
--   If the problem is in an external plugin, simply delete the file(s).
+- If the problem is in an external plugin, simply delete the file(s).
+- If the problem is with an update site:
 
-<!-- -->
-
--   If the problem is with an update site:
-
-1.  If necessary, identify the jar containing the problematic class(es), e.g. by using {% include bc path='Plugins | Utilities | Find Jar for Class'%} in Fiji.
-2.  Start the updater with `{% include bc path='Help | Update...'%}`
-3.  Switch to Advanced Mode
-4.  Search for the problematic components. Their associated update site will be listed here.
-5.  Select `Manage Update Sites` and disable the update site identified in 4.
-6.  Repeat 1-5 until your problem is resolved.
+  1.  If necessary, identify the jar containing the problematic class(es), e.g. by using {% include bc path='Plugins | Utilities | Find Jar for Class'%} in Fiji.
+  2.  Start the updater with {% include bc path='Help | Update...'%}
+  3.  Switch to Advanced Mode
+  4.  Search for the problematic components. Their associated update site will be listed here.
+  5.  Select `Manage Update Sites` and disable the update site identified in 4.
+  6.  Repeat 1-5 until your problem is resolved.
 
 **NOTICE:** During this process it is critical to keep in mind that update sites take precedence in the [order they are declared](/list-of-update-sites) - update sites lower on the list will overwrite components in sites higher on the list.
 
@@ -133,10 +127,10 @@ In cases where it is clear which class or classes are causing problems, you can 
 
 If it is not clear which update sites or external plugins are causing problems in your installation, a simple technique to help identify the cause of your problem is a {% include wikipedia title='Binary search algorithm' text='binary search'%}. The general procedure is such:
 
-1.  Start from your current installation
-2.  Remove half of your non-core update sites and/or local plugins.
-3.  Test to see if the erroneous behavior is resolved.
-4.  Repeat from 1) with only the "bad" pool of update sites/plugins enabled.
+  1.  Start from your current installation
+  2.  Remove half of your non-core update sites and/or local plugins.
+  3.  Test to see if the erroneous behavior is resolved.
+  4.  Repeat from 1) with only the "bad" pool of update sites/plugins enabled.
 
 With this method you will continue to reduce your list of potentially bad candidates by 1/2, until you find the culprit(s).
 
@@ -144,4 +138,4 @@ Note: if the "erroneous behavior" is [catastrophic](#catastrophic-failure) to th
 
 ### Catastrophic failure
 
-We maintain lifeline ImageJ distributions on the [/downloads page](/downloads). You can use these until any outstanding issues are resolved.
+We maintain lifeline ImageJ distributions on the [Downloads page](/downloads). You can use these until any outstanding issues are resolved.
