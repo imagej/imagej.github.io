@@ -1,5 +1,4 @@
 ---
-mediawiki: Git_submodule_tutorial
 title: Git submodule tutorial
 section: Extend:Development:Git
 ---
