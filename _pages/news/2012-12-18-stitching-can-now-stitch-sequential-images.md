@@ -1,7 +1,6 @@
 ---
 mediawiki: 2012-12-18_-_Stitching_can_now_stitch_sequential_images
 title: 2012-12-18 - Stitching can now stitch sequential images
-categories: [News]
 ---
 
 Thanks to John Lapage the Fiji Stitching is now able to stitch images sequentially.

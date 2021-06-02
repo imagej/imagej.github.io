@@ -1,7 +1,6 @@
 ---
 mediawiki: 2015-09-21_-_ImageJ_forum
 title: 2015-09-21 - ImageJ forum
-categories: [News]
 ---
 
 We have set up a web-based forum for ImageJ:

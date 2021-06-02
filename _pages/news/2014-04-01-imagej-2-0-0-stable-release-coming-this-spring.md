@@ -1,7 +1,6 @@
 ---
 mediawiki: 2014-04-01_-_ImageJ_2.0.0_stable_release_coming_this_spring
 title: 2014-04-01 - ImageJ 2.0.0 stable release coming this spring
-categories: [News,ImageJ2]
 ---
 
 In the past few months, we have carefully considered what the first stable release of ImageJ 2.0.0 should entail, as well as the timeline and plan for that release.

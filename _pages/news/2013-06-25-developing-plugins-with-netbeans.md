@@ -1,7 +1,6 @@
 ---
 mediawiki: 2013-06-25_-_Developing_plugins_with_NetBeans
 title: 2013-06-25 - Developing plugins with NetBeans
-categories: [News]
 ---
 
 If you want to develop plugins conveniently with NetBeans, have a look at our newest [screencast](https://www.youtube.com/watch?v=Ac-6gJ2eRb0).

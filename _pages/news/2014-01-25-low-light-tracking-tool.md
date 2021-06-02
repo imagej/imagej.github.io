@@ -1,7 +1,6 @@
 ---
 mediawiki: 2014-01-25_-_Low_Light_Tracking_Tool
 title: 2014-01-25 - Low Light Tracking Tool
-categories: [News]
 ---
 
 **Alexander Krull** developed a [low light tracking tool](/plugins/low-light-tracking-tool) while working in [**Iva Tolic-Norrelykke**](http://www.mpi-cbg.de/en/research/research-groups/iva-tolic-norrelykke.html) lab at MPI-CBG.

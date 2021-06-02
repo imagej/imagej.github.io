@@ -1,7 +1,6 @@
 ---
 mediawiki: 2015-10-27_-_TrackMate_v2.8.0_released
 title: 2015-10-27 - TrackMate v2.8.0 released
-categories: [News]
 ---
 
 It is our please to announce the release of the version 2.8.0 of [TrackMate](/plugins/trackmate), after a quieter pace of development.

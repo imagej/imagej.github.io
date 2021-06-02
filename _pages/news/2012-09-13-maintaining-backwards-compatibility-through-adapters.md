@@ -1,7 +1,6 @@
 ---
 mediawiki: 2012-09-13_-_Maintaining_backwards_compatibility_through_adapters
 title: 2012-09-13 - Maintaining backwards compatibility through adapters
-categories: [ImageJ2,News]
 ---
 
 In developing [SCIFIO](/libs/scifio) one of our major priorities is backwards compatibility. SCIFIO completely overhauls the [Bio-Formats](/formats/bio-formats) class structure, breaking each reader down to an atomic set of components. While nearly all the Bio-Formats API can be expressed in SCIFIO API, even if there isn't a direct analog method call, there are several new considerations (such as removing state from readers, or adding N-dimensional support) that will change how the software works.

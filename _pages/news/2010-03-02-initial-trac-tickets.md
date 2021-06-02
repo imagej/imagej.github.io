@@ -1,7 +1,6 @@
 ---
 mediawiki: 2010-03-02_-_Initial_Trac_tickets
 title: 2010-03-02 - Initial Trac tickets
-categories: [News,ImageJ2]
 ---
 
 We are done filing an initial set of Trac tickets for the [ImageJDev](/software/imagej2) project. We have defined five initial milestones:

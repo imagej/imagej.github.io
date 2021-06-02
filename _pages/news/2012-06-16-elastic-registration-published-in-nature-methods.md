@@ -1,7 +1,6 @@
 ---
 mediawiki: 2012-06-16_-_Elastic_registration_published_in_Nature_Methods
 title: 2012-06-16 - Elastic registration published in Nature Methods
-categories: [News]
 ---
 
 Stephan Saalfeld's elastic registration algorithm for serial section microscopy was published in [Nature Methods](http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.2072.html) [^1]. The programs implementing the approach have been already available for some months in Fiji both as a standalone [plugin](/plugins/elastic-alignment-and-montage) and as part of Albert Cardona's [TrakEM2](/plugins/trakem2) suite.

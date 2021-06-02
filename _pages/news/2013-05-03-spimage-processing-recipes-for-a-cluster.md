@@ -1,7 +1,6 @@
 ---
 mediawiki: 2013-05-03_-_SPIMage_processing_recipes_for_a_cluster
 title: 2013-05-03 - SPIMage processing recipes for a cluster
-categories: [News]
 ---
 
 Time-lapse SPIM imaging produces ridiculous amounts of data and the way to deal with the data deluge is to process the timepoints in parallel on a cluster.

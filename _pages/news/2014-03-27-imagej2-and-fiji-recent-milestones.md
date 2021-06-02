@@ -1,7 +1,6 @@
 ---
 mediawiki: 2014-03-27_-_ImageJ2_and_Fiji_recent_milestones
 title: 2014-03-27 - ImageJ2 and Fiji recent milestones
-categories: [News,ImageJ2]
 ---
 
 Every so often, it is good to look back at a project's progress over the past couple of years. [ImageJ2](/software/imagej2) and [Fiji](/software/fiji) have made great strides; what follows is a summary of some of the biggest achievements in recent history.

@@ -1,7 +1,6 @@
 ---
 mediawiki: 2011-07-22_-_Updates_to_the_ImageJ_extensibility_framework
 title: 2011-07-22 - Updates to the ImageJ extensibility framework
-categories: [News,ImageJ2]
 ---
 
 [ImageJ2](/software/imagej2) has a flexible "extensibility framework" for managing plugins and their cousins, modules. Lately we have been making big improvements that are too numerous to mention here. But we wanted to make note of some of the progress that we made within the past couple of days. Be warned: it is very technical and will likely only be of interest to other ImageJ2 developers.

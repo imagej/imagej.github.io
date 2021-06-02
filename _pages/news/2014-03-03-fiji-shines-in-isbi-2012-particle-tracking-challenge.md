@@ -1,7 +1,6 @@
 ---
 mediawiki: 2014-03-03_-_Fiji_shines_in_ISBI_2012_particle_tracking_challenge
 title: 2014-03-03 - Fiji shines in ISBI 2012 particle tracking challenge
-categories: [News]
 ---
 
 At the IEEE Symposium on Biomedical Imaging (ISBI) 2012, a team led by Erik Meijering and Jean-Christophe Olivo-Marin organized a grand challenge competition in particle tracking.

@@ -1,7 +1,6 @@
 ---
 mediawiki: 2015-12-22_-_The_road_to_Java_8
 title: 2015-12-22 - The road to Java 8
-categories: [ImageJ2,Fiji,News]
 ---
 
 <div style="float: right; padding-left: 1em">

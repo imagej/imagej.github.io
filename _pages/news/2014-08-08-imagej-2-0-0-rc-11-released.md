@@ -1,7 +1,6 @@
 ---
 mediawiki: 2014-08-08_-_ImageJ_2.0.0-rc-11_released
 title: 2014-08-08 - ImageJ 2.0.0-rc-11 released
-categories: [ImageJ2,News]
 ---
 
 Today, the [ImageJ team](/people) is pleased to announce a new public release candidate for [ImageJ2](/software/imagej2): version 2.0.0-rc-11.

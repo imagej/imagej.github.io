@@ -1,7 +1,6 @@
 ---
 mediawiki: 2015-06-15_-_Major_updates_in_the_works
 title: 2015-06-15 - Major updates in the works
-categories: [ImageJ2,News]
 ---
 
 In recent months, ImageJ has seen an increasing number of issues relating to application distribution, packaging and deployment.

@@ -1,7 +1,6 @@
 ---
 mediawiki: 2013-02-25_-_TrackMate_v2.0.0_released
 title: 2013-02-25 - TrackMate v2.0.0 released
-categories: [News]
 ---
 
 We just released a new major version of [TrackMate\_](/plugins/trackmate), our framework to perform automated and manual tracking of blob-like structures.

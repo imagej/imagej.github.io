@@ -1,7 +1,6 @@
 ---
 mediawiki: 2014-08-27_-_TrackMate_v2.5.0_released
 title: 2014-08-27 - TrackMate v2.5.0 released
-categories: [News]
 ---
 
 We are happy to announce [TrackMate](/plugins/trackmate) version 2.5.0, but aren't we each time?

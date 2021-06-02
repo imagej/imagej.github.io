@@ -1,7 +1,6 @@
 ---
 mediawiki: 2018-01-11_-_Announcing_the_new_Scientific_Community_Image_Forum
 title: 2018-01-11 - Announcing the new Scientific Community Image Forum
-categories: [News]
 ---
 
 [LOCI](https://loci.wisc.edu/) and the [Broad Institute Imaging Platform](https://www.broadinstitute.org/imaging) are excited to announce that very soon, the [ImageJ forum](http://forum.imagej.net) and [CellProfiler forum](http://forum.cellprofiler.org/) will combine into a new Scientific Community Image Forum!

@@ -1,7 +1,6 @@
 ---
 mediawiki: 2012-05-08_-_Presentation_at_Bioimage_Analysis_Workshop
 title: 2012-05-08 - Presentation at Bioimage Analysis Workshop
-categories: [News,ImageJ2]
 ---
 
 On April 30 through May 1 we attended a Bioimage Analysis Workshop in Barcelona entitled "[Bioimage analysis software: is there a future beyond ImageJ?](/events/isbi-2012)" We presented the current status and future directions of [ImageJ2](/software/imagej2).

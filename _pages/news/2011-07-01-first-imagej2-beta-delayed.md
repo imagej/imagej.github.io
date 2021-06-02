@@ -1,7 +1,6 @@
 ---
 mediawiki: 2011-07-01_-_First_ImageJ2_beta_delayed
 title: 2011-07-01 - First ImageJ2 beta delayed
-categories: [News,ImageJ2]
 ---
 
 According to our roadmap for ImageJ2, we should be releasing the first beta of ImageJ v2.0.0 today. Unfortunately, the program is still not ready to be released as a beta. Thus, we are pushing back the beta1 release to some time in July, with a deadline of July 31st.

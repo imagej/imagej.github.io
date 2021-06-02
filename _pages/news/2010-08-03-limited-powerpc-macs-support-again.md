@@ -1,7 +1,6 @@
 ---
 mediawiki: 2010-08-03_-_Limited_PowerPC_Macs_support_again
 title: 2010-08-03 - Limited PowerPC Macs support again
-categories: [News]
 ---
 
 Nowadays, most Apple computers contain an Intel CPU and current versions of MacOSX are no longer available for PowerPC-based Apple computers. Nevertheless, we got one (and only one) request to put back the support for PowerPC Macs.

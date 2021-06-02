@@ -1,7 +1,6 @@
 ---
 mediawiki: 2010-04-27_-_Fiji's_Script_Editor_now_understands_ImageJ_Macros
 title: 2010-04-27 - Fiji's Script Editor now understands ImageJ Macros
-categories: [News]
 ---
 
 Thanks to a lot of help by Robert Futrell, [Fiji's Script Editor](/scripting/script-editor) learnt [ImageJ's macro language](/scripting/macro). Now you can enjoy the power of full undo and of syntax highlighting when writing macros!

@@ -1,7 +1,6 @@
 ---
 mediawiki: 2014-05-12_-_Stitching_1.1_released
 title: 2014-05-12 - Stitching 1.1 released
-categories: [News,ImageJ2]
 ---
 
 Last month [we announced](/news/2014-04-07-stitching-in-fiji-ij2) that performance improvements were coming to [Stitching](/plugins/image-stitching). Last week, a new version (1.1) of the Stitching plugin was finally released and is now available in [Fiji](/software/fiji).

@@ -1,7 +1,6 @@
 ---
 mediawiki: 2014-07-11_-_Fiji_won't_quit!
 title: 2014-07-11 - Fiji won't quit!
-categories: [News]
 ---
 
 ## Introduction

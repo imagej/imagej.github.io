@@ -1,7 +1,6 @@
 ---
 mediawiki: 2016-12-20_-_Fiji_+_KNIP_hackathon
 title: 2016-12-20 - Fiji + KNIP hackathon
-categories: [News,Fiji]
 ---
 
 From Tuesday, December 6, 2016 through Friday, December 16, 2016, the [Max Planck Institute of Molecular Cell Biology and Genetics](https://mpi-cbg.de/) hosted \~20 developers at their facility in Dresden, Germany for a [hackathon](/events/hackathons) to develop [ImageJ2](/software/imagej2) and [Fiji](/software/fiji) core infrastructure and [plugins](/plugins).

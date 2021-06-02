@@ -1,7 +1,6 @@
 ---
 mediawiki: 2011-12-14_-_Fiji_Hackathon_in_Dresden
 title: 2011-12-14 - Fiji Hackathon in Dresden
-categories: [News,Hackathons]
 ---
 
 A great [Fiji](/software/fiji) hackathon took place between Saturday, December 10 and Sunday, December 18, 2011 at the [MPI-CBG](http://www.mpi-cbg.de/), which besides hosting also provided generous sponsoring of food and accommodation, and again brought together biologists and developers associated with the various bioimage analysis projects.

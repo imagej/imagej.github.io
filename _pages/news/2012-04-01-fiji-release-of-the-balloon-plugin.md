@@ -1,7 +1,6 @@
 ---
 mediawiki: 2012-04-01_-_Fiji_release_of_the_Balloon_Plugin
 title: 2012-04-01 - Fiji release of the Balloon Plugin
-categories: [News]
 ---
 
 Lionel Dupuy, the author of the [Balloon](/plugins/balloon) plugin, donated the source code to Fiji. It is a plugin that helps segmenting cells and cell boundaries.

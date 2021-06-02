@@ -1,7 +1,6 @@
 ---
 mediawiki: 2018-03-16_-_Classifying_microscope_image_focus_quality_with_deep_learning
 title: 2018-03-16 - Classifying microscope image focus quality with deep learning
-categories: [Fiji,News]
 ---
 
 The Google Accelerated Science team has published an ImageJ plugin, [Microscope Focus Quality](/plugins/microscope-focus-quality), for assessing the focus quality of microscope images using a pretrained [TensorFlow](/software/tensorflow) model.

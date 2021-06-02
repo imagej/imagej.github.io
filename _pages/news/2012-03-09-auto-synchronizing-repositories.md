@@ -1,7 +1,6 @@
 ---
 mediawiki: 2012-03-09_-_Auto-synchronizing_repositories
 title: 2012-03-09 - Auto-synchronizing repositories
-categories: [News,ImageJ2]
 ---
 
 There are plenty of good reasons why one might need to synchronize all the branches of multiple repositories:

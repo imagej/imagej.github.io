@@ -1,7 +1,6 @@
 ---
 mediawiki: 2017-12-29_-_ImageJ2_and_Fiji_updated_-_now_with_search_bar!
 title: 2017-12-29 - ImageJ2 and Fiji updated - now with search bar!
-categories: [ImageJ2,Fiji,News]
 ---
 
 Just in time for the new year, we are proud to announce a new release of [ImageJ2](/software/imagej2) version 2.0.0-rc-64.

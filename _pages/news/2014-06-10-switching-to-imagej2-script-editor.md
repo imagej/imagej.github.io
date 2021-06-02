@@ -1,7 +1,6 @@
 ---
 mediawiki: 2014-06-10_-_Switching_to_ImageJ2_script_editor
 title: 2014-06-10 - Switching to ImageJ2 script editor
-categories: [News,ImageJ2]
 ---
 
 The Fiji/ImageJ2 teams are pretty busy these days to finalize the first non-beta version of ImageJ2. Quite a few things have changed in Fiji itself as a consequence, most of them behind the scenes (our apologies when things break, and our heartfelt thanks for all your help to stabilize this project).

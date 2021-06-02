@@ -1,7 +1,6 @@
 ---
 mediawiki: 2014-08-13_-_ImageJ_2.0.0-rc-13_released
 title: 2014-08-13 - ImageJ 2.0.0-rc-13 released
-categories: [ImageJ2,News]
 ---
 
 After receiving input from the ImageJ community on the collection of anonymous plugin usage data, the [ImageJ team](/people) is happy to announce a new public release candidate for [ImageJ2](/software/imagej2): version 2.0.0-rc-13.

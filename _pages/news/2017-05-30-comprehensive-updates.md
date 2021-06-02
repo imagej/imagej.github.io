@@ -1,7 +1,6 @@
 ---
 mediawiki: 2017-05-30_-_Comprehensive_updates
 title: 2017-05-30 - Comprehensive updates
-categories: [News,Fiji]
 ---
 
 Today, a lot of work on [ImageJ](/software/imagej), [Fiji](/software/fiji) and [SciJava](/libs/scijava) came to fruition all at once.

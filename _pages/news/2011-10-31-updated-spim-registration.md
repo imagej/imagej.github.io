@@ -1,7 +1,6 @@
 ---
 mediawiki: 2011-10-31_-_Updated_SPIM_Registration
 title: 2011-10-31 - Updated SPIM Registration
-categories: [News]
 ---
 
 The [SPIM Registration](/plugins/spim-registration) plugin has been updated. The major change is a modularization into a registration and fusion part which allows different methods in the future. The other changes comprise:

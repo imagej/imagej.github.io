@@ -1,7 +1,6 @@
 ---
 mediawiki: 2015-04-24_-_A_new_way_to_search_for_ImageJ_resources
 title: 2015-04-24 - A new way to search for ImageJ resources
-categories: [News]
 ---
 
 Today, the ImageJ team has launched a unified site for searching ImageJ resources, including web, code, issues, mailing lists and more.

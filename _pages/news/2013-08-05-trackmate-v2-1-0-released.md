@@ -1,7 +1,6 @@
 ---
 mediawiki: 2013-08-05_-_TrackMate_v2.1.0_released
 title: 2013-08-05 - TrackMate v2.1.0 released
-categories: [News]
 ---
 
 A new minor version of [TrackMate\_](/plugins/trackmate) has been released. This page lists the changes that are visible to the user.

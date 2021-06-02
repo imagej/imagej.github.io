@@ -1,7 +1,6 @@
 ---
 mediawiki: 2011-10-25_-_EM_segmentation_challenge_(ISBI_-_2012)
 title: 2011-10-25 - EM segmentation challenge (ISBI - 2012)
-categories: [News]
 ---
 
 We are happy to announce [the first challenge on EM (machine-learning-based) automatic segmentation](/events/isbi-2012-segmentation-challenge), as part of a [contest-workshop](http://www.biomedicalimaging.org/index.php/programme/contestworkshops?showall=&start=2) previous to the [ISBI 2012 conference](http://www.biomedicalimaging.org/index.php), which will take place next May in Barcelona, Spain.

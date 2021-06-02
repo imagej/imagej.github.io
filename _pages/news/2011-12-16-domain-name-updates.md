@@ -1,7 +1,6 @@
 ---
 mediawiki: 2011-12-16_-_Domain_name_updates
 title: 2011-12-16 - Domain name updates
-categories: [News,ImageJ2]
 ---
 
 As [mentioned on the mailing list](/ij/pipermail/imagej-devel/2011-November/000544.html), we have updated our web resources to be more unified under the **imagej.net** domain name:

@@ -1,7 +1,6 @@
 ---
 mediawiki: 2014-07-07_-_TrackMate_v2.4.0_released
 title: 2014-07-07 - TrackMate v2.4.0 released
-categories: [News]
 ---
 
 We just released a new minor version of [TrackMate](/plugins/trackmate), that ships improvements to [TrackScheme](/plugins/trackmate/trackscheme) and bugfixes.

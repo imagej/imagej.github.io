@@ -1,7 +1,6 @@
 ---
 mediawiki: 2017-01-24_-_ImageJ2_manuscript_preprint_now_available_on_arXiv
 title: 2017-01-24 - ImageJ2 manuscript preprint now available on arXiv
-categories: [ImageJ2,News]
 ---
 
 A 36-page technical manuscript describing [ImageJ2](/software/imagej2) in depth is now available on [arXiv](https://arxiv.org/):

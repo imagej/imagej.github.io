@@ -1,7 +1,6 @@
 ---
 mediawiki: 2013-09-27_-_Personal_Update_Sites
 title: 2013-09-27 - Personal Update Sites
-categories: [News]
 ---
 
 Probably the most popular feature of Fiji is the updater which lets users and developers alike keep up-to-date without hassles. Developers upload their macros, scripts or plugins, and users are notified whenever there are new versions available that can be downloaded with a couple of mouse clicks.

@@ -1,7 +1,6 @@
 ---
 mediawiki: 2015-11-30_-_ImageJ_winter_priorities
 title: 2015-11-30 - ImageJ winter priorities
-categories: [ImageJ2,News]
 ---
 
 Here is a status update from the ImageJ team at [LOCI](/orgs/loci): where we're at, what's next, and what tasks we see as the most important to keep ImageJ moving forward.

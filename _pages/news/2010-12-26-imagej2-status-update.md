@@ -1,7 +1,6 @@
 ---
 mediawiki: 2010-12-26_-_ImageJ2_status_update
 title: 2010-12-26 - ImageJ2 status update
-categories: [News,ImageJ2]
 ---
 
 The following is a status update on the [ImageJ2](/software/imagej2) project as of 26 December 2010.

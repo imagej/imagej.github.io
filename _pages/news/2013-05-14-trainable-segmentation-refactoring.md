@@ -1,7 +1,6 @@
 ---
 mediawiki: 2013-05-14_-_Trainable_Segmentation_refactoring
 title: 2013-05-14 - Trainable Segmentation refactoring
-categories: [News]
 ---
 
 The original Trainable Segmentation library and plugins (Trainable Segmentation and Advanced Weka Segmentation) have been refactored for the sake of simplicity into a unified plugin and library called [Trainable Weka Segmentation](/plugins/tws).

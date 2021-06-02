@@ -1,7 +1,6 @@
 ---
 mediawiki: 2015-10-01_-_ImageJ_conference_presentation_videos_are_posted
 title: 2015-10-01 - ImageJ conference presentation videos are posted
-categories: [Conference,News]
 ---
 
 ![ link=Conference 2015](/media/news/imagej-conference-2015.jpg)

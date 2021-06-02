@@ -1,7 +1,6 @@
 ---
 mediawiki: 2011-06-30_-_Easier_URL:_http://fiji.sc/
 title: 2011-06-30 - Easier URL › http://fiji.sc/
-categories: [News]
 ---
 
 The Fiji Wiki now has an easy-to-remember URL: https://fiji.sc/

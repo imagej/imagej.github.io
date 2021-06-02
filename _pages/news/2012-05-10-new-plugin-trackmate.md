@@ -1,7 +1,6 @@
 ---
 mediawiki: 2012-05-10_-_New_plugin:_TrackMate
 title: 2012-05-10 - New plugin › TrackMate
-categories: [News]
 ---
 
 [TrackMate](/plugins/trackmate) was just released in a first non-beta version.

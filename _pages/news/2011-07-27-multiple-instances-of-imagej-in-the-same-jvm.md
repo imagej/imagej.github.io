@@ -1,7 +1,6 @@
 ---
 mediawiki: 2011-07-27_-_Multiple_instances_of_ImageJ_in_the_same_JVM
 title: 2011-07-27 - Multiple instances of ImageJ in the same JVM
-categories: [News,ImageJ2]
 ---
 
 With [ImageJ1](/software/imagej1), there is a singleton instance of the program, accessible via `IJ.getInstance()`. With [ImageJ2](/software/imagej2) we want to provide a mechanism for managing multiple [ImageJ](/software/imagej) "application contexts." At the moment, ImageJ2 is also still a singleton, but we recently did some work to pave the way for multiple ImageJ applications running simultaneously.

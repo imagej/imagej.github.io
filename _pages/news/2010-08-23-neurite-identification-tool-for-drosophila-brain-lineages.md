@@ -1,7 +1,6 @@
 ---
 mediawiki: 2010-08-23_-_Neurite_Identification_Tool_for_Drosophila_brain_lineages
 title: 2010-08-23 - Neurite Identification Tool for Drosophila brain lineages
-categories: [News]
 ---
 
 The paper titled "Identifying Neuronal Lineages of Drosophila by Sequence Analysis of Axon Tracts" has been published at the Journal of Neuroscience.

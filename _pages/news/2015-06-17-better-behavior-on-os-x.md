@@ -1,7 +1,6 @@
 ---
 mediawiki: 2015-06-17_-_Better_behavior_on_OS_X
 title: 2015-06-17 - Better behavior on OS X
-categories: [ImageJ2,News]
 ---
 
 Recent versions of OS X have seen a radical shift in how Java works. Apple no longer ships their own version of Java, but instead recommends users install Oracle's Java 7 or Java 8 runtime themselves. In recent years, these changes have made ImageJ deployment on OS X more difficult.

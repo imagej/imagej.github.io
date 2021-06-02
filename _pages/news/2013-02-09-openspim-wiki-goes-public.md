@@ -1,7 +1,6 @@
 ---
 mediawiki: 2013-02-09_-_OpenSPIM_wiki_goes_public
 title: 2013-02-09 - OpenSPIM wiki goes public
-categories: [News]
 ---
 
 ![Drosophila embryo expressing HisYFP captured by OpenSPIM](/media/news/hisyfp-front-page.gif) The [OpenSPIM](http://openspim.org) Wiki is available for viewing and contributions.

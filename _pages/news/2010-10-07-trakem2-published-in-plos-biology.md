@@ -1,7 +1,6 @@
 ---
 mediawiki: 2010-10-07_-_TrakEM2_published_in_PLoS_Biology
 title: 2010-10-07 - TrakEM2 published in PLoS Biology
-categories: [News]
 ---
 
 Big day for Fiji. [TrakEM2](/plugins/trakem2) which is a BIG part of Fiji played a central role in the paper published this week in [PLoS Biology](http://www.plosbiology.org/article/info:doi/10.1371/journal.pbio.1000502) titled

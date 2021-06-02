@@ -1,7 +1,6 @@
 ---
 mediawiki: 2010-10-29_-_ImageJDev_presentation_at_ImageJConf_2010
 title: 2010-10-29 - ImageJDev presentation at ImageJConf 2010
-categories: [News,ImageJ2,Conference,Presentations]
 ---
 
 ![ImageJ 2010 User & Developer Conference](/media/news/imagej-conference-2010.jpg)

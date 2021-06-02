@@ -1,7 +1,6 @@
 ---
 mediawiki: 2015-01-26_-_TrackMate_v2.7.1_released
 title: 2015-01-26 - TrackMate v2.7.1 released
-categories: [News]
 ---
 
 We just release [TrackMate](/plugins/trackmate) v2.7.1 today. The unusual jumps in version number correspond again to internal changes in the core libraries that support the Fiji project.

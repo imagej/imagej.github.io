@@ -1,7 +1,6 @@
 ---
 mediawiki: 2014-01-25_-_MosaicSuite_for_Fiji
 title: 2014-01-25 - MosaicSuite for Fiji
-categories: [News]
 ---
 
 One of the main missions of the Fiji project is to bring advanced computer vision algorithms into the hands of biologists. For that to happen it is necessary that computer vision researchers contribute their algorithms and plugins to the platform.

@@ -1,7 +1,6 @@
 ---
 mediawiki: 2013-05-03_-_ImgLib2_Hackathon_in_Madison
 title: 2013-05-03 - ImgLib2 Hackathon in Madison
-categories: [News,ImageJ2,Hackathons]
 ---
 
 From Saturday, April 27, 2013 through Friday, May 3, 2013, LOCI in Madison hosted Tobias Pietzsch and Stephan Preibisch, two [ImgLib2](/libs/imglib2) main developers, for a hackathon. Here is a brief summary of overall accomplishments and topics of discussion:

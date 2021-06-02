@@ -1,7 +1,6 @@
 ---
 mediawiki: 2012-06-29_-_Fiji_papers_at_Nature_Methods
 title: 2012-06-29 - Fiji papers at Nature Methods
-categories: [News]
 ---
 
 {% include thumbnail src='/media/news/nm-cover.jpg' title='Cover of the July 2012 issue of Nature Methods with a mosaic by Pavel Tomancak'%}

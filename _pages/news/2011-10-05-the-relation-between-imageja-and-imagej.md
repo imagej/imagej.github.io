@@ -1,7 +1,6 @@
 ---
 mediawiki: 2011-10-05_-_The_relation_between_ImageJA_and_ImageJ
 title: 2011-10-05 - The relation between ImageJA and ImageJ
-categories: [News,ImageJ2,Fiji]
 ---
 
 [ImageJA](/libs/imageja) started out as a two-pronged project:

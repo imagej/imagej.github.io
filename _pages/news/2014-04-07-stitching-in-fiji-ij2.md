@@ -1,7 +1,6 @@
 ---
 mediawiki: 2014-04-07_-_Stitching_in_Fiji/IJ2
 title: 2014-04-07 - Stitching in Fiji/IJ2
-categories: [News,ImageJ2]
 ---
 
 The [Stitching](/plugins/image-stitching) plugin for ImageJ is an extremely useful tool for combining multi-image datasets, such as high-resolution microscopy scans, into a single image for analysis. With the increasing need for operations involving high-resolution data, we are planning to update the plugin and bring it into more prominent focus in [ImageJ2](/software/imagej2).

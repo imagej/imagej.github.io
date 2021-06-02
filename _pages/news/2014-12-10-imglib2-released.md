@@ -1,7 +1,6 @@
 ---
 mediawiki: 2014-12-10_-_ImgLib2_released
 title: 2014-12-10 - ImgLib2 released
-categories: [News,ImageJ2]
 ---
 
 We are happy to announce the first stable release version of the [ImgLib2](/libs/imglib2) core library!

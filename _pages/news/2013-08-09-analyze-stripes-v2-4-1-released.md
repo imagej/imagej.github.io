@@ -1,7 +1,6 @@
 ---
 mediawiki: 2013-08-09_-_Analyze_Stripes_v2.4.1_released
 title: 2013-08-09 - Analyze Stripes v2.4.1 released
-categories: [News]
 ---
 
 Analyze\_Stripes\_v2.4.1 has just been released!

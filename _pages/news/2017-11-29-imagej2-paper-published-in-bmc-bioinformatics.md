@@ -1,7 +1,6 @@
 ---
 mediawiki: 2017-11-29_-_ImageJ2_paper_published_in_BMC_Bioinformatics
 title: 2017-11-29 - ImageJ2 paper published in BMC Bioinformatics
-categories: [News,ImageJ2]
 ---
 
 A detailed technical paper on [ImageJ2](/software/imagej2) has been published in BMC Bioinformatics:

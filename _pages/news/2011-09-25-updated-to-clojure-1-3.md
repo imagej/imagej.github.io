@@ -1,7 +1,6 @@
 ---
 mediawiki: 2011-09-25_-_Updated_to_clojure_1.3
 title: 2011-09-25 - Updated to clojure 1.3
-categories: [News]
 ---
 
 The clojure library has been upgraded to the newly released version 1.3. Among others, 1.3.x brings faster and cleaner math with numerical primitives, and the ability to define functions that specify a primitive return type such as float or int. For all new math features see the [Numerics documentation for clojure 1.3](http://dev.clojure.org/display/doc/Documentation+for+1.3+Numerics).

@@ -1,7 +1,6 @@
 ---
 mediawiki: 2012-12-11_-_Hiding_generics_in_SCIFIO
 title: 2012-12-11 - Hiding generics in SCIFIO
-categories: [News,ImageJ2]
 ---
 
 ### Generics in SCIFIO

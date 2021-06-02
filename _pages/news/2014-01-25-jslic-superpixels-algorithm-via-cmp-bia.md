@@ -1,7 +1,6 @@
 ---
 mediawiki: 2014-01-25_-_JSLIC_Superpixels_algorithm_via_CMP-BIA
 title: 2014-01-25 - JSLIC Superpixels algorithm via CMP-BIA
-categories: [News]
 ---
 
 Another contribution from professional computer vision researchers to Fiji is the [**JSLIC superpixel**](/plugins/cmp-bia-tools) algorithm recently contributed by [**Jiri Borovec**](http://cmp.felk.cvut.cz/~borovji3/).

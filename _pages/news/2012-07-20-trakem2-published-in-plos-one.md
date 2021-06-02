@@ -1,7 +1,6 @@
 ---
 mediawiki: 2012-07-20_-_TrakEM2_published_in_PLoS_ONE
 title: 2012-07-20 - TrakEM2 published in PLoS ONE
-categories: [News]
 ---
 
 The [TrakEM2](/plugins/trakem2) software has been published in [PLoS ONE](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0038011) [^1], establishing a primary reference for this program. [TrakEM2](/plugins/trakem2) started in 2005 when {% include person id='acardona' %} worked for the whole Summer with [Rodney J. Douglas](http://www.ini.uzh.ch/~rjd/) at the Institute of Neuroinformatics in Zurich, Switzerland, to establish an ImageJ-based program to aid in the reconstruction of neural circuits from large image volumes.

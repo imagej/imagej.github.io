@@ -1,7 +1,6 @@
 ---
 mediawiki: 2010-06-29_-_Fix_for_MacOSX_Updater_issue_available
 title: 2010-06-29 - Fix for MacOSX Updater issue available
-categories: [News]
 ---
 
 <span style="color:red">**Critical:**</span> If you update Fiji on MacOSX, and instead of a Fiji window nothing is opened when you try to restart Fiji, you need to follow [these instructions](/learn/troubleshooting).  

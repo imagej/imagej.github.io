@@ -1,7 +1,6 @@
 ---
 mediawiki: 2014-10-01_-_ImageJ_Ops_Hackathon
 title: 2014-10-01 - ImageJ Ops Hackathon
-categories: [News,ImageJ2,Hackathons,Ops]
 ---
 
 <figure><img src="/media/news/2014-ops-hackathon.png" title="A graph of progress during the hackathon." width="304" alt="A graph of progress during the hackathon." /><figcaption aria-hidden="true">A graph of progress during the hackathon.</figcaption></figure>

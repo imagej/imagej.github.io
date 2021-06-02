@@ -1,7 +1,6 @@
 ---
 mediawiki: 2016-03-31_-_TrackMate_v3.1.0_released
 title: 2016-03-31 - TrackMate v3.1.0 released
-categories: [News]
 ---
 
 We just release the version 3.1.0 of [TrackMate](/plugins/trackmate), a Fiji plugin for single-particle tracking. We also mention here the changes of version 3.0.1, which did not get a news item.

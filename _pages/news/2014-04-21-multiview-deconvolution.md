@@ -1,7 +1,6 @@
 ---
 mediawiki: 2014-04-21_-_Multiview_deconvolution
 title: 2014-04-21 - Multiview deconvolution
-categories: [News]
 ---
 
 **Stephan Preibisch's** multiview deconvolution algorithm and the associated Fiji plugin was published at [Nature Methods](http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.2929.html). The approach is relevant especially as a fusion strategy for SPIM data,

@@ -1,7 +1,6 @@
 ---
 mediawiki: 2014-03-03_-_Fiji_plays_Squassh
 title: 2014-03-03 - Fiji plays Squassh
-categories: [News]
 ---
 
 The Squassh protocol (Segmentation and Quantification of Sub-cellular Shapes) provides a robust and versatile workflow for detecting, segmenting, and quantifying sub-cellular markers in fluorescence microscopy images and analyzing their co-localiztion. The protocol is particularly tuned to the needs of high-content high-throughput assays and directly performs all the necessary statistical significance tests.

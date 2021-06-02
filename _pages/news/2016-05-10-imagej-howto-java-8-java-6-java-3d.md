@@ -1,7 +1,6 @@
 ---
 mediawiki: 2016-05-10_-_ImageJ_HOWTO_-_Java_8,_Java_6,_Java_3D
 title: 2016-05-10 - ImageJ HOWTO - Java 8, Java 6, Java 3D
-categories: [News,Fiji,ImageJ2]
 ---
 
 [ImageJ2](/software/imagej2) (and hence also [Fiji](/software/fiji)) is currently in the midst of a [transition to Java 8](/news/2015-12-22-the-road-to-java-8).

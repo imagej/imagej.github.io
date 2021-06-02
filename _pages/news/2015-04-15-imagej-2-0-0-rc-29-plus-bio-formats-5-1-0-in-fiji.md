@@ -1,7 +1,6 @@
 ---
 mediawiki: 2015-04-15_-_ImageJ_2.0.0-rc-29,_plus_Bio-Formats_5.1.0_in_Fiji
 title: 2015-04-15 - ImageJ 2.0.0-rc-29, plus Bio-Formats 5.1.0 in Fiji
-categories: [ImageJ2,Fiji,News]
 ---
 
 Today, the [ImageJ team](/people) has made a new release of [ImageJ2](/software/imagej2): version 2.0.0-rc-29. This release includes bug-fixes and improvements by several members of the ImageJ community.

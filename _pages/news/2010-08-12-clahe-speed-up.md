@@ -1,7 +1,6 @@
 ---
 mediawiki: 2010-08-12_-_CLAHE_speed_up
 title: 2010-08-12 - CLAHE speed up
-categories: [News]
 ---
 
 We implemented the fast version of the [Contrast Limited Adaptive Histogram Equalization](/plugins/clahe).

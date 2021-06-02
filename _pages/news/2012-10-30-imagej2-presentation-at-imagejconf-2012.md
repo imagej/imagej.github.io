@@ -1,7 +1,6 @@
 ---
 mediawiki: 2012-10-30_-_ImageJ2_presentation_at_ImageJConf_2012
 title: 2012-10-30 - ImageJ2 presentation at ImageJConf 2012
-categories: [News,ImageJ2,Conference]
 ---
 
 ![ImageJ 2012 User & Developer Conference](/media/news/imagej-conference-2012.png)

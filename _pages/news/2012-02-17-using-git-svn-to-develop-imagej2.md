@@ -1,7 +1,6 @@
 ---
 mediawiki: 2012-02-17_-_Using_git-svn_to_develop_ImageJ2
 title: 2012-02-17 - Using git-svn to develop ImageJ2
-categories: [News,ImageJ2]
 ---
 
 ## Introduction

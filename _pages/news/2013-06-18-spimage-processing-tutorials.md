@@ -1,7 +1,6 @@
 ---
 mediawiki: 2013-06-18_-_SPIMage_processing_tutorials
 title: 2013-06-18 - SPIMage processing tutorials
-categories: [News]
 ---
 
 As part of Fiji's sister project - [**OpenSPIM**](http://openspim.org)[^1] - we have assembled detailed step-by-step tutorials for [**SPIMage processing**](http://openspim.org/Operation#data-processing).

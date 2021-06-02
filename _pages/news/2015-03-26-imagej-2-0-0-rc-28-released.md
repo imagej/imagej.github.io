@@ -1,7 +1,6 @@
 ---
 mediawiki: 2015-03-26_-_ImageJ_2.0.0-rc-28_released
 title: 2015-03-26 - ImageJ 2.0.0-rc-28 released
-categories: [ImageJ2,News]
 ---
 
 Today, the [ImageJ team](/people) is pleased to announce a new public release candidate for [ImageJ2](/software/imagej2): version 2.0.0-rc-28.

@@ -1,7 +1,6 @@
 ---
 mediawiki: 2010-01-21_-_The_Fiji_Wiki_got_a_new_look
 title: 2010-01-21 - The Fiji Wiki got a new look
-categories: [News]
 ---
 
 Thanks to Alexander Wende and Tim Cross, the Fiji Wiki has a new look and feel (named {% include wikipedia title='Viti Levu' text='"Viti Levu"'%}). {% include person id='iarganda' %} also had a big hand in debugging and enhancing it.

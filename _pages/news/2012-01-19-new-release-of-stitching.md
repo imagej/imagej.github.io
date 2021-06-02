@@ -1,7 +1,6 @@
 ---
 mediawiki: 2012-01-19_-_New_Release_of_Stitching
 title: 2012-01-19 - New Release of Stitching
-categories: [News]
 ---
 
 You can now reconstruct arbitrarily sized, tiled acquisitions (which can be multi-channel, time-lapse stacks) with just very little RAM (even &lt;1GB) if you activate the options to write the result directly to disk and/or open the input stacks only virtually!!

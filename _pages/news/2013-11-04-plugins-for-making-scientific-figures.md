@@ -1,7 +1,6 @@
 ---
 mediawiki: 2013-11-04_-_Plugins_for_making_scientific_Figures
 title: 2013-11-04 - Plugins for making scientific Figures
-categories: [News]
 ---
 
 Writing papers and making figures is and always will be a big part of what scientists do. Many of us use open source software, such as Fiji, to process images however the figure is often finalised in commercial software - typically from Adobe. Needless to say neither Photoshop nor Illustrator are designed to make scientific figures.

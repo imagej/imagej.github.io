@@ -1,7 +1,6 @@
 ---
 mediawiki: 2011-08-02_-_Current_status:_ImageJ_2.0.0-alpha4
 title: 2011-08-02 - Current status › ImageJ 2.0.0-alpha4
-categories: [News,ImageJ2]
 ---
 
 The following is a status update as of 2 August 2011. Yesterday we [released ImageJ 2.0.0-alpha4](/news/2011-08-01-imagej-v2-0-0-alpha4), and we have made great progress in many areas since the last major status update in December.

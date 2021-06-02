@@ -1,7 +1,6 @@
 ---
 mediawiki: 2016-12-29_-_ImageJ_web_resources_now_support_HTTPS
 title: 2016-12-29 - ImageJ web resources now support HTTPS
-categories: [ImageJ2,News]
 ---
 
 Over the past many months, we have been incrementally working toward support for HTTPS (i.e., secure) web traffic for ImageJ's web-based resources. At the [recent hackathon at MPI-CBG](/news/2016-12-20-fiji-knip-hackathon), we largely completed these efforts. Some of the domains which now fully support HTTPS include:

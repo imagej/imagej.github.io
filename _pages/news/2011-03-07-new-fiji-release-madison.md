@@ -1,7 +1,6 @@
 ---
 mediawiki: 2011-03-07_-_New_Fiji_Release:_Madison
 title: 2011-03-07 - New Fiji Release › Madison
-categories: [News]
 ---
 
 There is a [new version of Fiji](/downloads)!

@@ -1,7 +1,6 @@
 ---
 mediawiki: 2016-06-23_-_ImgLib2_hackathon
 title: 2016-06-23 - ImgLib2 hackathon
-categories: [News,Hackathons,ImageJ2]
 ---
 
 <img src="/media/news/janelia-2016-hackathon.jpg" title="fig:ImgLib2 hackers, from left to right: {% include person id='axtimwalde' %}, {% include person id='dietzc' %}, {% include person id='ctrueden' %}, {% include person id='tpietzsch' %}." width="450" alt="ImgLib2 hackers, from left to right: {% include person id='axtimwalde' %}, {% include person id='dietzc' %}, {% include person id='ctrueden' %}, {% include person id='tpietzsch' %}." /> From Sunday, June 19, 2016 through Tuesday, June 28, 2016, {% include person id='axtimwalde' %} at HHMI Janelia in Ashburn, Virginia hosted {% include person id='tpietzsch' %}, {% include person id='ctrueden' %} and {% include person id='dietzc' %} for a [hackathon](/events/hackathons) to improve the core [ImageJ2](/software/imagej2) data model.

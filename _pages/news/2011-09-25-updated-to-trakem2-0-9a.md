@@ -1,7 +1,6 @@
 ---
 mediawiki: 2011-09-25_-_Updated_to_TrakEM2_0.9a
 title: 2011-09-25 - Updated to TrakEM2 0.9a
-categories: [News]
 ---
 
 Thanks to {% include person id='axtimwalde' %}, TrakEM2 has been upgraded to version 0.9a which includes the new [elastic spring-mesh image registration](/plugins/elastic-alignment-and-montage) for elastic montages and elastic alignment of serial sections. The new system is capable of correcting folds and tears in the sections, as well as independent section-wise deformations, by exploiting the information in the set of adjacent sections.

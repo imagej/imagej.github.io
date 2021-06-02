@@ -1,7 +1,6 @@
 ---
 mediawiki: 2012-04-09_-_First_beta_of_ImageJ2_is_out
 title: 2012-04-09 - First beta of ImageJ2 is out
-categories: [News,ImageJ2]
 ---
 
 The first beta of the [next generation of ImageJ](/software/imagej2) is out! From the announcement:

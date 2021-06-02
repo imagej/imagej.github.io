@@ -1,7 +1,6 @@
 ---
 mediawiki: 2016-05-25_-_The_ImageJ_site_has_a_new_look!
 title: 2016-05-25 - The ImageJ site has a new look!
-categories: [News]
 ---
 
 Early last week, we received a report that the ImageJ web server might be compromised. To limit the damage, we [took the machine offline](http://forum.imagej.net/t/1599) and began a thorough upgrade progress: migrating the ImageJ wiki to a new web server, upgrading to the latest version of MediaWiki, and performing a thorough security audit of all installed extensions.

@@ -1,7 +1,6 @@
 ---
 mediawiki: 2012-08-01_-_Loading_and_displaying_a_dataset_with_the_ImageJ2_API
 title: 2012-08-01 - Loading and displaying a dataset with the ImageJ2 API
-categories: [News,ImageJ2]
 ---
 
 Recently, someone [someone asked on the mailing list](/ij/pipermail/imagej-devel/2012-July/001117.html) how to load and display a dataset using the [ImageJ2](/software/imagej2) API. Here is code that does so:
