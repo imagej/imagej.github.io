@@ -1,5 +1,4 @@
 ---
-mediawiki: Profiling_Java_Code
 title: Profiling Java Code
 ---
 
