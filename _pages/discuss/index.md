@@ -1,5 +1,4 @@
 ---
-mediawiki: Help
 title: Discuss
 description: Ways to discuss ImageJ and its plugins, and get help from the community.
 section: Discuss
