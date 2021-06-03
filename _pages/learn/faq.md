@@ -415,7 +415,7 @@ The first place to check is this wiki. The [Fiji's Menu](/plugin-index) page is 
 
 If documentation is missing for the command you're interested in, you can always view the source directly:
 
-1.  Jump to the [search bar](/learn/basics#the-search-bar) (Shortcut: {% include key key='L' %})
+1.  Jump to the [search bar](/learn#the-search-bar) (Shortcut: {% include key key='L' %})
 2.  Filter to the command you're interested in.
 3.  The \`File\` column will tell you the plugin where the desired command is contained.
 4.  You can then use this information to find the source code on GitHub - for core [ImageJ](https://github.com/imagej) or [Fiji](https://github.com/fiji) plugins.
@@ -424,7 +424,7 @@ If documentation is missing for the command you're interested in, you can always
 
 As a complete example, if you were interested in the [2D Histogram](/plugins/2d-histogram) command:
 
--   The [search bar](/learn/basics#the-search-bar) indicates it's located in VIB.jar
+-   The [search bar](/learn#the-search-bar) indicates it's located in VIB.jar
 -   VIB is a Fiji plugin, so we go to [the VIB repository](https://github.com/fiji/VIB).
 -   On GitHub, press {% include key key='T' %}, search for "Histogram", and find [the Histogram 2D](https://github.com/fiji/VIB/blob/master/src/main/java/util/Histogram_2D.java) source.
 

@@ -166,7 +166,7 @@ While ImageJ strives for [reproducible](/develop/architecture#reproducible-build
     -   {% include bc path='Process | FFT | FFT Options...'%}
     -   {% include bc path='Image | Overlay | Overlay Options...'%}
     -   {% include bc path='Analyze | Gels | Gel Analyzer Options...'%}
-    -   Press L for the [search bar](/learn/basics#the-search-bar) and type "options" and double check any other options you think might be relevant.
+    -   Press L for the [search bar](/learn#the-search-bar) and type "options" and double check any other options you think might be relevant.
 -   If you are running your analysis [headless](/learn/headless), there might be a bug in the headless support.
     -   Try the analysis *headless* on both machines and see if the results match.
     -   Try the analysis *headless* vs. through the GUI on a single machine, and see if the results match.

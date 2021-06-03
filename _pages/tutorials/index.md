@@ -7,7 +7,7 @@ section: Learn:ImageJ Basics
 
 **The following tutorials are highly recommended for *new users*:**
 
-| 1. | [Getting started](/learn/basics)                                 | An introduction to the ImageJ application                                   |
+| 1. | [Getting started](/learn)                                 | An introduction to the ImageJ application                                   |
 | 2. | [Image Analysis Principles](/imaging/principles)           | Must-read guidelines for effective acquisition and analysis of images       |
 | 3. | [Living Workshops](/events/presentations#living-workshops) | Workshops for ImageJ/Fiji at introductory, intermediate and advanced levels |
 | 4. | [Scripting](/scripting)                                    | Become a power user by writing scripts!                                     |

@@ -336,7 +336,7 @@ We'll use the [MorphoLibJ plugins](/plugins/morpholibj) as an example.
         and then restarting ImageJ.
 
 *   Once your Fiji has the requisite plugin installed, search for it
-    using the [search bar](/learn/basics#the-search-bar). For example:
+    using the [search bar](/learn#the-search-bar). For example:
 
     {% include img src="locate-gav-1" width=306 %}
 

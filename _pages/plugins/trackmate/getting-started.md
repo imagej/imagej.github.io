@@ -27,7 +27,7 @@ Also, if you look carefully, you will see that there are two splitting events - 
 
 ![](/media/plugins/trackmate/trackmate-mainbuttons.png)
 
-With this image selected, launch TrackMate from the menu {% include bc path='Plugins | Tracking | TrackMate'%} or from the [search bar](/learn/basics#the-search-bar). The TrackMate GUI appears next to the image, displaying the starting dialog panel.
+With this image selected, launch TrackMate from the menu {% include bc path='Plugins | Tracking | TrackMate'%} or from the [search bar](/learn#the-search-bar). The TrackMate GUI appears next to the image, displaying the starting dialog panel.
 
 But first, just a few words about its look. The user interface is a single frame - that can be resized - divided in a main panel, that displays context-dependent dialogs, and a permanent bottom panel containing the four main buttons depicted on the right.
 
