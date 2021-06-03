@@ -1,9 +1,8 @@
 ---
-mediawiki: Introduction
 title: Introduction
 section: Learn:ImageJ Basics
 nav-links: true
-nav-title: Overview
+nav-title: Introduction
 ---
 
 # What is ImageJ?
@@ -17,7 +16,7 @@ nav-title: Overview
 # What does ImageJ provide?
 
 | [Application](/software/imagej#flavors)    | A user interface with functions to load, display, and save images. |
-| [Techniques](/imaging)                     | [Image processing](/ij/docs/guide/146-29.html#toc-Section-29), [colocalization](/imaging/colocalization-analysis), [deconvolution](/imaging/deconvolution), [registration](/imaging/registration), [segmentation](/imaging/segmentation), [tracking](/imaging/tracking), [visualization](/imaging/visualization) and much more. |
+| [Techniques](/imaging)                     | [Image processing](/imaging/image-intensity-processing), [colocalization](/imaging/colocalization-analysis), [deconvolution](/imaging/deconvolution), [registration](/imaging/registration), [segmentation](/imaging/segmentation), [tracking](/imaging/tracking), [visualization](/imaging/visualization) and much more. |
 | [Plugins](/plugins)                        | A powerful mechanism for extending ImageJ in all kinds of useful ways. |
 | [Scripting](/scripting)                    | Automated, reproducible workflows via [scripts](/scripting) and [macros](/scripting/macro), including [headless on a remote server or cluster](/scripting/headless). |
 | [Forum](https://forum.image.sc/tag/imagej) | A vibrant, diverse, and helpful user [community](/discuss) that gives rise to insightful scientific exchanges. |
@@ -34,13 +33,37 @@ First, you should to [download](/downloads) and install ImageJ!
 
 After starting ImageJ, you will see the main window:
 
-![](/media/learn/fiji-main-window.jpg)
+![fiji-main-window](/media/learn/fiji-main-window.png){:width="700px"}
 
 On macOS, the menu bar will appear on the top of the screen (as with all macOS applications).
 
 ### The search bar
 
-{% include warning/stub %}
+The search bar is the next generation of the ImageJ command finder. The search panel can be brought up by clicking and typing into the search bar, or the traditional shortcut: {% include key key="L" %}
+
+![fiji-search-window](/media/learn/fiji-search-window.png){:width="700px"}
+
+**Results**
+
+These are the plugins/commands that match your search query, sorted by type of result. Results can be navigated with the mouse or arrow keys, and the highlighted command can be executed with {% include key key="enter" %} or double-clicking.
+
+**Categories**
+
+Categories can be (de)selected as desired to expand or restrict the scope of your search, as desired.
+
+**Search Options**
+
+![fiji-search-options](/media/learn/fiji-search-options.png){:width="400px"}
+
+The `...` button opens a panel with more options for controlling your search behavior.
+
+**Details**
+
+The details panel provides more information about the selected search result.
+
+**Action Buttons**
+
+These buttons can be used to take alternative actions (beyond just running a given command) such as opening the plugin's source or wiki page.
 
 ### The menu bar
 
