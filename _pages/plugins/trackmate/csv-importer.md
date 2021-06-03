@@ -1,6 +1,19 @@
 ---
-mediawiki: TrackMateCSVImporter
-title: TrackMateCSVImporter
+title: TrackMate-CSVImporter
+logo: /media/logos/trackmate-csv-importer.png
+description: The TrackMate module to import detections saved in CSV fies into TrackMate.
+source-url: https://github.com/tinevez/TrackMate-CSVImporter
+license-url: /licensing/lgpl
+license-label: LGPLv3
+dev-status: Active
+support-status: Active
+team-founders: Jean-Yves Tinevez
+team-leads:  Jean-Yves Tinevez
+team-developers:  Jean-Yves Tinevez
+team-debuggers:  Jean-Yves Tinevez
+team-reviewers:  Jean-Yves Tinevez
+team-support:  Jean-Yves Tinevez
+team-maintainers:  Jean-Yves Tinevez
 ---
 
 # CSV to TrackMate importer.
