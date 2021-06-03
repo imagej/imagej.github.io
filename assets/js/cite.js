@@ -9,7 +9,7 @@ function doiToHTML(element) {
     format: 'html',
     template: style,
     lang: 'en-US'
-  })
+  }).replace(/(https:\/\/doi\.org\/([^<]*))/, '<a href="$1">doi:$2</a>');
 }
 
 document.querySelectorAll(".citation").forEach(function(element) {
