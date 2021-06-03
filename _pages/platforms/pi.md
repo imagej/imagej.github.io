@@ -3,7 +3,7 @@ title: Raspberry Pi
 section: Learn:ImageJ Basics:Supported Platforms
 ---
 
-{% include img src='icons/pi' align='right' class="box" width=200 caption='Learn programming through fun, practical projects!' %}
+{% include img src='icons/pi' align='right' class="box" width=150 caption='Learn programming through fun, practical projects!' %}
 
 The {% include wikipedia title='Raspberry Pi' text='Raspberry Pi' %} is an inexpensive single-board computer system which runs the {% include wikipedia title='Raspbian' text='Raspbian' %} operating system, a flavor of Debian [Linux](/platforms/linux). This page provides advice and guidance for running [ImageJ](/software/imagej) and [Fiji](/software/fiji) on Raspberry Pi systems.
 
