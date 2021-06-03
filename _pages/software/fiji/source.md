@@ -1,5 +1,4 @@
 ---
-mediawiki: Overview_of_Fiji's_source_code
 title: Overview of Fiji's source code
 categories: [Development]
 ---
@@ -8,13 +7,13 @@ This page will give you an idea how Fiji's source code is organized. Every direc
 
 ## The Fiji launcher
 
-The Fiji Launcher is now called the [ImageJ launcher](/Launcher) and lives {% include github org='imagej' repo='imagej-launcher' label='in its own repository' %}. It is [built by Travis CI](https://travis-ci.org/imagej/imagej-launcher).
+The Fiji Launcher is now called the [ImageJ launcher](/learn/launcher) and lives {% include github org='imagej' repo='imagej-launcher' label='in its own repository' %}. It is [built by Travis CI](https://travis-ci.org/imagej/imagej-launcher).
 
 ## The plugins
 
-The plugins served from Fiji's update site are all [Open Source](Why_Closed-Source_Is_Wrong). The source code lives {% include github org='fiji' repo='' label='on GitHub' %}, in repositories reflecting the name of the *.jar* file generated from the source code. Example: the source code for *Fiji\_Plugins.jar* lives in https://github.com/fiji/Fiji_Plugins.
+The plugins served from Fiji's update site are all [Open Source](/licensing/closed-source). The source code lives {% include github org='fiji' repo='' label='on GitHub' %}, in repositories reflecting the name of the *.jar* file generated from the source code. Example: the source code for *Fiji\_Plugins.jar* lives in https://github.com/fiji/Fiji_Plugins.
 
-The only special rule applies for plugins whose file names end in an underscore: that underscore will be stripped. Example: the sources of *Arrow\_.jar* are stored in https://github.com/fiji/Arrow.
+The only special rule applies for plugins whose file names end in an underscore: that underscore will be stripped. Example: the sources of *Arrow\_.jar* are stored {% include github org='fiji' repo='Arrow' %}.
 
 All of our plugins are maintained as [Maven](/develop/maven) projects; this allows developers to build the code with their integrated development environment of choice.
 
