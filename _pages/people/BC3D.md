@@ -1,5 +1,5 @@
 ---
-title: Dr
+title: Brenton Cavanagh
 name: Brenton Cavanagh
 github: BC3D
 affiliation:
