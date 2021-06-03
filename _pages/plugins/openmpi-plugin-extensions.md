@@ -1,5 +1,4 @@
 ---
-mediawiki: OpenMPI_Plugin_Extensions
 title: OpenMPI Plugin Extensions
 ---
 
@@ -23,18 +22,20 @@ TBD
 
 In order to demonstrate convenience of this approach, we prepared an example of parallelized convolution. We used Python for readers' convenience, however plugins can be invoked from any other scripting language supported by Fiji.
 
-    kernel = ops.run("create.img", [3, 3], FloatType())
-    for p in kernel:
-     p.set(1.0/kernel.size())
+```python
+kernel = ops.run("create.img", [3, 3], FloatType())
+for p in kernel:
+ p.set(1.0/kernel.size())
 
-    def fn():
-     output = ops.create().img(input)
-     ops.filter().convolve(output, Views.extendMirrorSingle(input), kernel)
-     return output
+def fn():
+ output = ops.create().img(input)
+ ops.filter().convolve(output, Views.extendMirrorSingle(input), kernel)
+ return output
 
-    input = scifio.datasetIO().open(input_path)
-    output = Measure.benchmark(fn, rounds)
-    scifio.datasetIO().save(output, output_path)
+input = scifio.datasetIO().open(input_path)
+output = Measure.benchmark(fn, rounds)
+scifio.datasetIO().save(output, output_path)
+ ```
 
 The Listing shows the OpenMPI implementation with initialization of a 3×3 blur kernel (lines 1-3), definition of a processing function with convolution (it reuses already existing implementation of a convolution filter in ImageJ2) on lines 5-8 and finally its execution in the benchmark mode to measure execution times (the variable rounds defines the number of repetitions).
 
