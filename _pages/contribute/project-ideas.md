@@ -1,5 +1,4 @@
 ---
-mediawiki: Project_ideas
 title: Project Ideas
 categories: [development]
 section: Contribute
@@ -14,7 +13,7 @@ This page is an old list of ideas for cool/useful projects that have some relati
 
 ## 3-way viewer for Block-Face EM image volumes based in ImgLib cells
 
-The [Imglib](/libs/imglib1) provides a cell container, where each cell is an arbitrary n-dimensional image block potentially paged out to a file. Consider the specific case of isotropic 3d-cells stored with lossless compression. This setup would enable efficient browsing and analysis of image volumes larger than available RAM, while observing a specific 3d ROI from XY, YZ and XZ planes. These image volumes are common in [Block-Face Serial Scanning Electron Microscopy](http://www.plosbiology.org/article/info:doi/10.1371/journal.pbio.0020329), a technique now commercialized as "Gatan 3-way view EM." See this page for [theory](http://www.gatan.com/knowhow/knowhow_15/3view.htm) and for [pictures and examples](http://www.gatan.com/resources/knowhow/kh18-3view.php).
+The [Imglib](/libs/imglib1) provides a cell container, where each cell is an arbitrary n-dimensional image block potentially paged out to a file. Consider the specific case of isotropic 3d-cells stored with lossless compression. This setup would enable efficient browsing and analysis of image volumes larger than available RAM, while observing a specific 3d ROI from XY, YZ and XZ planes. These image volumes are common in [Block-Face Serial Scanning Electron Microscopy](http://www.plosbiology.org/article/info:doi/10.1371/journal.pbio.0020329), a technique now commercialized as "Gatan 3-way view EM." See this page for [theory](https://www.gatan.com/products/sem-imaging-spectroscopy/3view-system#publications) and for [pictures and examples](http://www.gatan.com/resources/knowhow/kh18-3view.php).
 
 **Goal:** create a 3-way viewer for a 3d instance of an [Imglib](/libs/imglib1)'s cell container.\\
 **Language:** any supported by Fiji, preferably java.\\
@@ -30,11 +29,7 @@ The project would consist of
 
 -   Writing a class extending VirtualStack.java class for each type of input data file series. Currently, these exist for FileSeriesFromList and QTVirtualStack.
 
-<!-- -->
-
 -   Create a MultiVirtualHyperStack.java class that can organize multiple VirtualStack types into a single VirtualHyperStack displayed via a single ImagePlus and StackWindow. The getProcessor() method in this class must be able to sort out the file coordinates of any channel/slice/frame requested from the mixed-format virtual stack and call getProcessor() from each of the specialized VirtualStack classes for each format.
-
-<!-- -->
 
 -   Create a control panel that allows adjustments of XYZT position for any single VirtualHyperStack that is a component of the mixed overlay window.
 
@@ -84,7 +79,7 @@ The new imglib supports dimension-, storage- and data type independent image pro
 
 **Goal:** Implement generic algorithms for image processing.\\
 **Language:** Java.\\
-**Mentor:** [Stephan Preibisch](http://fly.mpi-cbg.de/preibisch), [Stephan Saalfeld](http://fly.mpi-cbg.de/saalfeld)\], [Tobias Pietzsch](http://www.wv.inf.tu-dresden.de/People/Pietzsch.html), {% include person id='acardona' %}
+**Mentor:** [Stephan Preibisch](/people/StephanPreibisch), [Stephan Saalfeld](/people/axtimwalde), [Tobias Pietzsch](/people/tpietzsch), {% include person id='acardona' %}
 
 ## Colorizing algorithms
 
@@ -130,31 +125,23 @@ MATLAB bundles a Java runtime (and in fact, all of [MATLAB](/scripting/matlab)'s
     f = File('/usr/local/Fiji.app/');
     f.exists()
 
-Happily, there is a [MATLAB](/scripting/matlab) clone written in Java: [JMathLib](http://www.jmathlib.de/). While it is apparently not a speed demon, it should be useful to add JMathLib as a new scripting language to ImageJ, and integrate it into Fiji so that [MATLAB](/scripting/matlab) scripts can be executed just like all other ImageJ scripts, too.
+Happily, there is a [MATLAB](/scripting/matlab) clone written in Java: [JMathLib](https://directory.fsf.org/wiki/JMathLib). While it is apparently not a speed demon, it should be useful to add JMathLib as a new scripting language to ImageJ, and integrate it into Fiji so that [MATLAB](/scripting/matlab) scripts can be executed just like all other ImageJ scripts, too.
 
-So far, we have [a branch which adds rudimentary JMathLib bindings to Fiji's scripting interface](https://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=shortlog;h=refs/heads/jmathlib) and [a Git-SVN mirror of the JMathLib source code repository](https://fiji.sc/JMathLib/.git) with a special *fiji* branch. The idea is to work on this branch to adjust JMathLib in certain ways to support this project, and once that is done, contribute the changes back to the JMathLib project.
-
-The proof-of-concept version of [the Refresh\_JMathLib\_Scripts class](https://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/JMathLib_Interpreter/Refresh_JMathLib_Scripts.java;hb=refs/heads/jmathlib) illustrates how the [JMathLib Interpreter](https://fiji.sc/cgi-bin/gitweb.cgi?p=JMathLib/.git;a=blob;f=src/jmathlib/core/interpreter/Interpreter.java;hb=refs/heads/fiji) needs to be instantiated and called.
+So far, we have [a branch which adds rudimentary JMathLib bindings to Fiji's scripting interface](https://github.com/fiji/JMathLib). We may also need to modify JMathLib itself to support this project - and once that is done, contribute the changes back to the JMathLib project.
 
 The following issues need to be tackled in the JMathLib source code:
 
--   In embedded (non-standalone) mode, the [FunctionManager installs](https://fiji.sc/cgi-bin/gitweb.cgi?p=JMathLib/.git;a=blob;f=src/jmathlib/core/functions/FunctionManager.java;hb=refs/heads/fiji#l45) a [WebFunctionLoader](https://fiji.sc/cgi-bin/gitweb.cgi?p=JMathLib/.git;a=blob;f=src/jmathlib/core/functions/WebFunctionLoader.java;hb=refs/heads/fiji) which disallows new functions to be added. Either the WebFunctionLoader needs to be taught to allow (maybe optionally) new functions to be added, or there needs to be another mode in which JMathLib is embedded, but still allows new functions to be defined.
+-   In embedded (non-standalone) mode, the FunctionManager installs a WebFunctionLoader which disallows new functions to be added. Either the WebFunctionLoader needs to be taught to allow (maybe optionally) new functions to be added, or there needs to be another mode in which JMathLib is embedded, but still allows new functions to be defined.
 
-<!-- -->
+-   In embedded mode, JMathLib <u>must not</u> call *System.exit()*
 
--   In embedded mode, JMathLib <u>must not</u> [call *System.exit()*](https://fiji.sc/cgi-bin/gitweb.cgi?p=JMathLib/.git;a=blob;f=src/jmathlib/toolbox/jmathlib/system/quit.java;hb=refs/heads/fiji).
+-   Only in standalone mode are the available functions discovered at runtime rather than read from an embedded file. This file should not be necessary. JMathLib should detect whether it is bundled in a .jar or not, and use [a JarInputStream](http://download-llnw.oracle.com/javase/1.5.0/docs/api/java/util/jar/JarInputStream.html) or traverse the directory hierarchy otherwise. Probably the best place to do this is to teach the FileFunctionLoader to accept a [URL](http://download-llnw.oracle.com/javase/1.5.0/docs/api/java/net/URL.html) instead of a [File](http://download-llnw.oracle.com/javase/1.5.0/docs/api/java/io/File.html), too.
 
-<!-- -->
-
--   [Only in standalone mode](https://fiji.sc/cgi-bin/gitweb.cgi?p=JMathLib/.git;a=blob;f=src/jmathlib/core/functions/FunctionManager.java;hb=refs/heads/fiji#l45) are the available functions discovered at runtime rather than [read from an embedded file](https://fiji.sc/cgi-bin/gitweb.cgi?p=JMathLib/.git;a=blob;f=src/jmathlib/core/functions/WebFunctionLoader.java;hb=refs/heads/fiji#l40). This file should not be necessary. JMathLib should detect whether it is bundled in a .jar or not, and use [a JarInputStream](http://download-llnw.oracle.com/javase/1.5.0/docs/api/java/util/jar/JarInputStream.html) or traverse the directory hierarchy otherwise. Probably the best place to do this is to teach the [FileFunctionLoader](https://fiji.sc/cgi-bin/gitweb.cgi?p=JMathLib/.git;a=blob;f=src/jmathlib/core/functions/FileFunctionLoader.java;hb=refs/heads/fiji) to accept a [URL](http://download-llnw.oracle.com/javase/1.5.0/docs/api/java/net/URL.html) instead of a [File](http://download-llnw.oracle.com/javase/1.5.0/docs/api/java/io/File.html), too.
-
-<!-- -->
-
--   JMathLib supports Java via a [non-standard mechanism](https://fiji.sc/cgi-bin/gitweb.cgi?p=JMathLib/.git;a=blob;f=src/jmathlib/plugins/dynjava/JavaPlugin.java;hb=refs/heads/fiji) based on [DynamicJava](http://old.koalateam.com/djava/). This is incompatible with [MATLAB](/scripting/matlab), so there needs to be native support using [reflection](http://download-llnw.oracle.com/javase/1.5.0/docs/api/java/lang/reflect/package-summary.html) to support the method to instantiate Java objects mentioned above.
+-   JMathLib supports Java via a non-standard mechanism based on [DynamicJava](http://old.koalateam.com/djava/). This is incompatible with [MATLAB](/scripting/matlab), so there needs to be native support using [reflection](http://download-llnw.oracle.com/javase/1.5.0/docs/api/java/lang/reflect/package-summary.html) to support the method to instantiate Java objects mentioned above.
 
 This issue needs to be tackled in Fiji's source code:
 
--   JMathLib's image toolbox does not contain much. Even the most basic functions are missing. And even if there were functions, we would have to override them, because the functions need to be done in a way so that they can use and interact with ImageJ. The best approach may be to start by implementing the functions mentioned in [[MATLAB](/scripting/matlab)'s image processing toolbox'](http://www.mathworks.com/help/toolbox/images/index.html) *Getting Started* section, by implementing *.m* files that call directly into ImagePlus (using the above-mentioned technique).
+-   JMathLib's image toolbox does not contain much. Even the most basic functions are missing. And even if there were functions, we would have to override them, because the functions need to be done in a way so that they can use and interact with ImageJ. The best approach may be to start by implementing the functions mentioned in [MATLAB](/scripting/matlab)'s [image processing toolbox'](http://www.mathworks.com/help/toolbox/images/index.html) *Getting Started* section, by implementing *.m* files that call directly into ImagePlus (using the above-mentioned technique).
 
 **Goal:** Integrate JMathLib as a new scripting language.\\
 **Language:** Java.\\
@@ -198,7 +185,7 @@ A special form of an autocorrelation (on text) should be pretty good an indicati
 
 ## GUI Testing framework
 
-We have some rudimentary GUI testing in the *tests* branch but it may be better to use an established GUI framework such as [Jemmy](https://jemmy.dev.java.net/) or [Marathon](http://www.marathontesting.com/Marathon.html).
+We have some rudimentary GUI testing in the *tests* branch but it may be better to use an established GUI framework such as [Jemmy](https://java-source.com/open-source/testing-tools/jemmy) or [Marathon](https://marathontesting.com/).
 
 The idea is, in any case, to record mouse moves and keyboard presses, optionally waiting for some GUI element (such as a window) to appear, and error out if something unexpected happens -- which most likely means that something broke and needs fixing.
 
@@ -235,27 +222,17 @@ The project is not without complications, though:
 
 -   The XML database is saved as a file in the local Fiji directory, and it is always checked at startup whether the timestamp is newer than the timestamp of the XML database on the server. If you have multiple update sites, it should be handled in a way, where the local XML database reflects the sources of the metadata, and for uploading, a temporary XML database must be constructed for one particular upload site.
 
-<!-- -->
-
 -   There may be conflicts between plugins that are official Fiji plugins, but also available from a secondary site. This has to be coped with (it is not clear what the best strategy should be: take the official Fiji version over the secondary site? let the user choose?)
-
-<!-- -->
 
 -   With a new site, you need to be able to [upload plugins](/develop/uploading-plugins) to that site, too. There needs to be a very good way to prevent confusion, lest the plugin is uploaded to the <u>wrong</u> site.
 
-<!-- -->
-
 -   To determine whether a developer can upload new plugins (because there are new versions), the Fiji Updater scans the complete plugins directory, along with a few other places where macros, 3rd party libraries, or the Fiji launcher might hide. The Fiji Updater needs to learn <u>not</u> to offer these plugins for upload to a secondary site, but only the non-Fiji ones.
-
-<!-- -->
 
 -   It is unlikely that our current Fiji Updater can start a database from scratch. This has to be verified, and if there is no code for that yet, it has to be implemented.
 
-<!-- -->
-
 -   Cross-site dependencies should be handled by having hints in the XML database as to what other site is supposed to have the newest dependency.
 
-## Integrate [JGit](http://www.jgit.org) into Fiji
+## Integrate [JGit](https://www.eclipse.org/jgit/) into Fiji
 
 An important part of Fiji's success is the ease with which developers can collaborate through the use of [Git](/develop/git).
 
@@ -299,17 +276,13 @@ Suggested by Quentin de Robillard.
 
 ImageFlow provides a graphical way to construct macros. Every action is represented by a node which the user can connect with lines to define a workflow.
 
-ImageFlow has its own {% include github org='Dahie' repo='imageflow' label='Git repository' %} ([our mirror](https://fiji.sc/cgi-bin/gitweb.cgi?p=imageflow.git;a=summary)).
+ImageFlow has its own {% include github org='Dahie' repo='imageflow' label='Git repository' %} 
 
 The following issues need to be resolved:
 
 -   At the moment, it is not a true plugin, but wants to start its own ImageJ instance
 
-<!-- -->
-
 -   it only targets the macro language, while we want to target all the scripting languages supported by Fiji
-
-<!-- -->
 
 -   it searches for its .xml files outside of the .jar file, which makes it cumbersome to ship with the Fiji updater.
 
