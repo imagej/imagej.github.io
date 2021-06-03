@@ -1,5 +1,4 @@
 ---
-mediawiki: Brightness_and_Contrast
 title: Brightness and Contrast
 categories: [Cookbook, tutorials]
 ---
