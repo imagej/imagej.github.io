@@ -1,5 +1,4 @@
 ---
-mediawiki: Funding
 title: Funding
 section: Contribute
 nav-links: true
@@ -32,7 +31,7 @@ The [ImgLib2](/libs/imglib2) project was developed by {% include person id='axti
 
 The ImgLib2 project as a whole is organized and maintained by {% include person id='tpietzsch' %} of MPI-CBG, {% include person id='axtimwalde' %} of Janelia Research Campus, and {% include person id='ctrueden' %} of the [Eliceiri/LOCI lab](/orgs/loci).
 
-[ImgLib2](/libs/imglib2) is currently funded by [Bundesministerium für Bildung und Forschung (BMBF)](https://bmbf.org/) grant 031L0102.
+[ImgLib2](/libs/imglib2) is currently funded by [Bundesministerium für Bildung und Forschung (BMBF)](https://bmbf.de/) grant 031L0102.
 
 [ImgLib2](/libs/imglib2) is also funded indirectly by the various involved software efforts, including the [Tomancak](https://www.mpi-cbg.de/tomancak), [Jug](https://www.mpi-cbg.de/jug) and [Saalfeld](https://www.janelia.org/lab/saalfeld-lab) labs as well as the [Eliceiri/LOCI lab](/orgs/loci).
 
