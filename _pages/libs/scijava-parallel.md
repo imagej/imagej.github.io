@@ -1,7 +1,4 @@
 ---
-mediawiki:
-- Scijava-parallel
-- FSTRPCParadigm
 title: Scijava-parallel
 section: Explore:Libraries
 categories: [Software]
