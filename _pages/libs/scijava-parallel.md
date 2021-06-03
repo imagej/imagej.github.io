@@ -120,13 +120,13 @@ The parallelization paradigm implementation very often also requires some specif
 
 The framework provides interface `ParadigmManager` and its implementation is used by the framework for a profile creation (method `createProfile`) and its editing (method `editProfile`). Parallelization paradigm implementation is initialized by the method`prepareParadigm`. The parallelization paradigm provider implements the interface `ParadigmManager` and annotates it as `@Plugin` with a type `ParadigmManager`.
 
-{% include img align="center" name="figure 3" src="/media/software/paradigm-manager.png" caption="**Figure 3**: Profiles Manager UML class diagram." %}
+{% include img align="center" name="figure 3" src="/media/software/paradigm-manager.png" caption="**Figure 3**: ProfilesManager UML class diagram." %}
 
 The class `ParadigmManagerUsingRunner` supports the frequently occurring scenario of how ParallelizationParadigm is initialized: external software is launched - it is always Fiji in the case of the existing implementation - and parallelization paradigm is initialized with information on how to access the software (host name, port number). It works with profile type `ParadigmProfileUsingRunner` that contains an object of a type `RunnerSettings` or its subtype (e.g. LocalImagejRunnerSettings). ParadigmManagerUsingRunner starts external software through an interface `ServerRunner`. ParadigmManagerUsingRunner edits settings with an object that implements `RunnerSettingsEditor`. Implementing class should be annotated with the annotation `@Plugin` with the type `RunnerSettingsEditor`. It enables scijava-parallel to find an editor for a given type of settings. There are registered editors for existing implementations of RunnerSettings.
 
 A developer makes a non-abstract child of the class ParadigmManagerUsingRunner. The child needs to implement only two abstract methods: `getTypeOfRunner` and `initParadigm`. It is possible to create a new implementation of `ServerRunner` or reuse one of the existing ones: LocalImagejRunner, HPCImageJRunner.
 
-{% include img align="center" name="figure 4" src="/media/software/paradigm-manager-using-runner.jpg" caption="**Figure 4**: Paradigm Manager Using Runner  UML class diagram." %}
+{% include img align="center" name="figure 4" src="/media/software/paradigm-manager-using-runner.jpg" caption="**Figure 4**: ParadigmManagerUsingRunner  UML class diagram." %}
 
 ## Installation
 
