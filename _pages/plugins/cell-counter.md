@@ -33,14 +33,16 @@ Open the Cell Counter plugin and the image/stack you want to count (if the Cell 
 
 Add the following macros to *ImageJ/macros/StartupMacros.txt*, restart ImageJ, and you will be able to change the counter type by pressing "1", "2", "3", etc.
 
-` macro "Type 1 [1]" {call("CellCounter.setType", "1");}`  
-` macro "Type 2 [2]" {call("CellCounter.setType", "2");}`  
-` macro "Type 3 [3]" {call("CellCounter.setType", "3");}`  
-` macro "Type 4 [4]" {call("CellCounter.setType", "4");}`  
-` macro "Type 5 [5]" {call("CellCounter.setType", "5");}`  
-` macro "Type 6 [6]" {call("CellCounter.setType", "6");}`  
-` macro "Type 7 [7]" {call("CellCounter.setType", "7");}`  
-` macro "Type 8 [8]" {call("CellCounter.setType", "8");}`
+```
+macro "Type 1 [1]" {call("CellCounter.setType", "1");}
+macro "Type 2 [2]" {call("CellCounter.setType", "2");}
+macro "Type 3 [3]" {call("CellCounter.setType", "3");}
+macro "Type 4 [4]" {call("CellCounter.setType", "4");}
+macro "Type 5 [5]" {call("CellCounter.setType", "5");}
+macro "Type 6 [6]" {call("CellCounter.setType", "6");}
+macro "Type 7 [7]" {call("CellCounter.setType", "7");}
+macro "Type 8 [8]" {call("CellCounter.setType", "8");}
+```
 
 ## History
 
