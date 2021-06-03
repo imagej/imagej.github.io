@@ -3,6 +3,7 @@ mediawiki: MorphoLibJ
 title: MorphoLibJ
 categories: [Analysis,Filtering,Segmentation,Mathematical morphology]
 doi: 10.1093/bioinformatics/btw413
+artifact: fr.inra.ijpb:MorphoLibJ_
 ---
 
 
