@@ -1,5 +1,4 @@
 ---
-mediawiki: How_to_write_custom_actions_for_TrackMate
 title: How to write custom actions for TrackMate
 categories: [Tutorials]
 nav-links:
@@ -27,15 +26,17 @@ A TrackMate action takes the shape of an item in a drop-down list in the last pa
 
 In this tutorial, we will use it to launch the event logger we created in the [previous tutorial](/plugins/trackmate/custom-viewers) of this series. If you remember, we saw in the last paragraph how to use the `visible = false` parameter the [SciJava](/libs/scijava) annotation to hide it from the view menu. Hereby preventing the user to access it. No problem, we will now build an action that will launch it as a supplementary view.
 
-## The {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/action/plugins/trackmateActionFactory.java' label='TrackMateActionFactory' %} interface.
+## The {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/action/TrackMateActionFactory.java' label='TrackMateActionFactory' %} interface.
 
-Again, the action behavior and its integration in TrackMate are split in two classes. The behavior is described by the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/action/plugins/trackmateAction.java' label='TrackMateAction' %} interface. The integration mechanism is controlled by the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/action/plugins/trackmateActionFactory.java' label='TrackMateActionFactory' %} interface, which extends the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/plugins/trackmateModule.java' label='TrackMateModule' %} interface.
+Again, the action behavior and its integration in TrackMate are split in two classes. The behavior is described by the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/action/TrackMateAction.java' label='TrackMateAction' %} interface. The integration mechanism is controlled by the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/action/TrackMateActionFactory.java' label='TrackMateActionFactory' %} interface, which extends the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/TrackMateModule.java' label='TrackMateModule' %} interface.
 
 ### [SciJava](/libs/scijava) parameters recap.
 
-There is not much to say about the factory itself. Ii is the class that must be annotated with
+There is not much to say about the factory itself. It is the class that must be annotated with
 
-    @Plugin( type = TrackMateActionFactory.class )
+```java
+@Plugin( type = TrackMateActionFactory.class )
+```
 
 All the SciJava annotation parameters apply, and they have the following meaning:
 
@@ -49,10 +50,12 @@ As of [TrackMate](/plugins/trackmate) version 2.2.0 (March 2014), actions are th
 
 The method specific to actions is more interesting:
 
-    @Override
-    public TrackMateAction create( final TrackMateGUIController controller )
+```java
+@Override
+public TrackMateAction create( final TrackMateGUIController controller )
+```
 
-This means that when we create our specific action, we have access to the some of GUI context through the controller. We therefore have to check its {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/gui/plugins/trackmateGUIController.java' label='API' %} to know what we can get. It gives us access to:
+This means that when we create our specific action, we have access to the some of GUI context through the controller. We therefore have to check its {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/gui/TrackMateGUIController.java' label='API' %} to know what we can get. It gives us access to:
 
 -   The GUI window itself (`public TrackMateWizard getGUI()`), that we can use as parent for dialogs, wild live GUI editing...
 -   The trackmate plugin (`public TrackMate getPlugin()`), hereby the model and settings objects.
@@ -62,67 +65,70 @@ This means that when we create our specific action, we have access to the some o
 
 So you can pretty well mess stuff with the controller, but it gives us access to mainly everything. In our case, we do not need much. Here is the code for our simple event logger launcher:
 
+```java
     package plugin.trackmate.examples.action;
-
+    
     import javax.swing.ImageIcon;
-
+    
     import org.scijava.plugin.Plugin;
-
+    
     import fiji.plugin.trackmate.action.TrackMateAction;
     import fiji.plugin.trackmate.action.TrackMateActionFactory;
     import fiji.plugin.trackmate.gui.TrackMateGUIController;
-
+    
     @Plugin( type = TrackMateActionFactory.class )
     public class LaunchEventLoggerActionFactory implements TrackMateActionFactory
     {
-
+    
         private static final String INFO_TEXT = "<html>This action will launch a new event logger, that uses the ImageJ log window to append TrackMate events.</html>";
-
+    
         private static final String KEY = "LAUNCH_EVENT_LOGGER";
-
+    
         private static final String NAME = "Launch the event logger";
-
+    
         @Override
         public String getInfoText()
         {
             return INFO_TEXT;
         }
-
+    
         @Override
         public ImageIcon getIcon()
         {
             return null; // No icon for this one.
         }
-
+    
         @Override
         public String getKey()
         {
             return KEY;
         }
-
+    
         @Override
         public String getName()
         {
             return NAME;
         }
-
+    
         @Override
         public TrackMateAction create( final TrackMateGUIController controller )
         {
             return new LaunchEventLoggerAction( controller.getPlugin().getModel(), controller.getSelectionModel() );
         }
-
+    
     }
-
+```
 Nothing complicated.
 
-## The {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/action/plugins/trackmateAction.java' label='TrackMateAction' %} interface.
+## The {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/action/TrackMateAction.java' label='TrackMateAction' %} interface.
 
 This interface is just made of two methods:
 
+```java
     public void execute(TrackMate trackmate);
-
+    
     public void setLogger(Logger logger);
+```
 
 The `execute` method is the one triggered by the user when he clicks the *Execute* button. It receives a TrackMate instance that can be of use. In our case, as you saw in the factory class, we got the model and selection model through the controller.
 
@@ -130,30 +136,31 @@ The other method is used to pass a logger instance that is specific to the actio
 
 Here is how this translates simply in a simple launcher:
 
+```java
     package plugin.trackmate.examples.action;
-
+    
     import plugin.trackmate.examples.view.EventLoggerView;
     import fiji.plugin.trackmate.Logger;
     import fiji.plugin.trackmate.Model;
     import fiji.plugin.trackmate.SelectionModel;
     import fiji.plugin.trackmate.TrackMate;
     import fiji.plugin.trackmate.action.TrackMateAction;
-
+    
     public class LaunchEventLoggerAction implements TrackMateAction
     {
-
+    
         private final SelectionModel selectionModel;
-
+    
         private final Model model;
-
+    
         private Logger logger;
-
+    
         public LaunchEventLoggerAction( final Model model, final SelectionModel selectionModel )
         {
             this.model = model;
             this.selectionModel = selectionModel;
         }
-
+    
         @Override
         public void execute( final TrackMate trackmate )
         {
@@ -162,22 +169,21 @@ Here is how this translates simply in a simple launcher:
             view.render();
             logger.log( " Done.\n" );
         }
-
+    
         @Override
         public void setLogger( final Logger logger )
         {
             this.logger = logger;
         }
     }
+```
 
-## Wrapping up
+## Wrapping up.
 
 And here are the results:
 
-<figure><img src="/media/plugins/trackmate/trackmate-customaction-1.png" title="TrackMate_CustomAction_1.png" width="400" alt="TrackMate_CustomAction_1.png" /><figcaption aria-hidden="true">TrackMate_CustomAction_1.png</figcaption></figure>
+{% include img src='/media/plugins/trackmate/trackmate-customaction-1.png' witdth='500px' %}
 
 You can imagine a lot of applications for Actions. Since they give you access to most of the plugin context, you can basically plug anything there. The one limitation is that it does not fit perfectly in the existing GUI: actions just appear as items in a drop-down list. But in most cases it does not matter much. Actions are very useful to quickly graft a piece of new functionality on TrackMate.
 
 This concludes this tutorial, which was pretty quick and simple. This is unfortunately the last time in this series that things are simple and short. The next tutorial will be about implementing a custom detector, which will turn to be quite complicated for apparently wrong reasons. See you there!
-
-
