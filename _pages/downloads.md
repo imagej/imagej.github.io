@@ -1,7 +1,5 @@
 ---
-mediawiki: Downloads
 title: Downloads
-author: test author
 ---
 
 Here you can [download](https://downloads.imagej.net/ImageJ2-20160205.zip) an
