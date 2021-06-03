@@ -1,5 +1,4 @@
 ---
-mediawiki: SPIM_Workflow_Manager_For_HPC
 title: SPIM Workflow Manager For HPC
 ---
 
@@ -23,7 +22,9 @@ SPIM ("Selective/Single Plane Illumination Microscopy") typically images living 
 
 The sheer amount of the SPIM data requires conversion from raw microscopy data to Hierarchical Data Format (HDF5) for efficient input/output access and visualization in Fiji's [BigDataViewer](/plugins/bdv#publication) (BDV). BDV uses an XML file to store experiment metadata (i.e. number of angles, time points, channels etc.). Although the conversion to HDF5 is a parallelizable procedure, further updating the XML file downstream in the pipeline is not; and per-time point XML files have to be created and then merged after completion of the registration and fusion steps. Consequently, the parallel processing of individual time points on an HPC resource (conversion to HDF5, registration, fusion and deconvolution) is interrupted by non-parallelizable steps (time-lapse registration and XML merging).
 
-Pipeline input parameters are entered by a user into a *config.yaml* configuration file. In the first step, the .czi raw data are concurrently resaved into the HDF5 container in parallel on the cluster. Similarly, the individual time points are registered in parallel using fluorescent beads as fiduciary markers on the cluster. Subsequently, a non-parallel job executed by *Snakemake* consolidate the registration XML files into a single one, followed by time-lapse registration using the beads segmented during the spatial registration step. After this, the pipeline diverge into either parallel content-based fusion or parallel multi-view deconvolution. To achieve this divergence in practice, the *Snakemake* pipeline is launched from the Fiji plugin as two separate jobs using two different *config.yaml* files set to execute content-based fusion and deconvolution respectively. In the final stage of the pipeline, the fusion/deconvolution output is saved into a new HDF5 container. Figure below shows results of registration, fusion and deconvolution in different time points. <img src="/media/drosophila.png" width="800"/>
+Pipeline input parameters are entered by a user into a *config.yaml* configuration file. In the first step, the .czi raw data are concurrently resaved into the HDF5 container in parallel on the cluster. Similarly, the individual time points are registered in parallel using fluorescent beads as fiduciary markers on the cluster. Subsequently, a non-parallel job executed by *Snakemake* consolidate the registration XML files into a single one, followed by time-lapse registration using the beads segmented during the spatial registration step. After this, the pipeline diverge into either parallel content-based fusion or parallel multi-view deconvolution. To achieve this divergence in practice, the *Snakemake* pipeline is launched from the Fiji plugin as two separate jobs using two different *config.yaml* files set to execute content-based fusion and deconvolution respectively. In the final stage of the pipeline, the fusion/deconvolution output is saved into a new HDF5 container. Figure below shows results of registration, fusion and deconvolution in different time points. 
+
+<img src="/media/drosophila.png" width="800"/>
 
 ## HEAppE middleware
 
@@ -45,7 +46,9 @@ For creating a new job, right click in the main window and choose *Create a new 
 
 The plugin provides a wizard allowing you to set up a configuration file *config.yaml*, which effectively characterizes the dataset and defines settings for individual workflow tasks. The plugin supports uploading local input image data to the remote HPC resource, providing information on the progress and estimated remaining time.
 
-Once a job execution is selected by you, the configuration file is sent to the cluster via HEAppE, which is responsible for the job life cycle from this point on. You can display a detailed progress dashboard showing current states of all individual computational tasks for the selected job as well as output logs useful for debugging. <img src="/media/plugins/ui-screens.png" width="1200"/>
+Once a job execution is selected by you, the configuration file is sent to the cluster via HEAppE, which is responsible for the job life cycle from this point on. You can display a detailed progress dashboard showing current states of all individual computational tasks for the selected job as well as output logs useful for debugging. 
+
+<img src="/media/plugins/ui-screens.png" width="1200"/>
 
 Following a successfully finished pipeline, you can interactively examine the processed SPIM image data using the [BigDataServer](/plugins/bdv/server) as well as download resultant data and a summary file containing key information about the performed job. Importantly, you can edit the corresponding local configuration file in a common text editor, and restart an interrupted, finished, or failed job.
 
