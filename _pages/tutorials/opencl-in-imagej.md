@@ -1,5 +1,4 @@
 ---
-mediawiki: A_Tutorial_for_using_OpenCL_in_ImageJ
 title: A Tutorial for using OpenCL in ImageJ
 categories: [tutorials]
 ---
@@ -18,12 +17,14 @@ We set up an Ubuntu based development machine for OpenCL development and testing
 
 -   Obtain an ISO for Ubuntu 10.04
 -   Install Ubuntu on the target machine.
--   Install g++ with: 
-        sudo apt-get install g++
+-   Install g++ with:  
+`sudo apt-get install g++`
 -   Install needed development libs with:
-        sudo apt-get install freeglut3-dev
-        sudo apt-get install libxi-dev
-        sudo apt-get install libxmu-dev
+``` 
+sudo apt-get install freeglut3-dev
+sudo apt-get install libxi-dev
+sudo apt-get install libxmu-dev 
+```
 
 ## Setting up OpenCL
 
@@ -31,7 +32,7 @@ You will need to install OpenCL for your OpenCL enabled hardware if it does not 
 
 ### Setting up OpenCL for ATI
 
-If you have ATI GPU hardware, check out [these instructions](http://developer.amd.com/gpu/AMDAPPSDK/downloads/Pages/default.aspx).
+If you have ATI GPU hardware (AMD), the SDK can be dowloaded {% include github org='GPUOpen-LibrariesAndSDKs' repo='OCL-SDK/releases'  %}.
 
 ### Setting up OpenCL for NVidia
 
@@ -39,81 +40,83 @@ For NVidia hardware, install development drivers, CUDA Toolkit, and GPU Computin
 
 Use the wget tool for downloading the three needed install files from NVidia's download site.
 
-    wget http://developer.download.nvidia.com/compute/cuda/\
-    3_2_prod/drivers/devdriver_3.2_linux_64_260.19.26.run
-    wget http://developer.download.nvidia.com/compute/cuda/\
-    3_2_prod/toolkit/cudatoolkit_3.2.16_linux_64_ubuntu10.04.run
-    wget http://developer.download.nvidia.com/compute/cuda/\
-    3_2_prod/sdk/gpucomputingsdk_3.2.16_linux.run
+```
+wget http://developer.download.nvidia.com/compute/cuda/\
+3_2_prod/drivers/devdriver_3.2_linux_64_260.19.26.run
+wget http://developer.download.nvidia.com/compute/cuda/\
+3_2_prod/toolkit/cudatoolkit_3.2.16_linux_64_ubuntu10.04.run
+wget http://developer.download.nvidia.com/compute/cuda/\
+3_2_prod/sdk/gpucomputingsdk_3.2.16_linux.run
+```
 
 Stop the graphical desktop manager by typing:
 
-    sudo gdm stop
+`sudo gdm stop`
 
 from the command line.
 
 Install the required files:
-
-    sudo sh devdriver_3.2_linux_64_260.19.26.run
-    sudo sh cudatoolkit_3.2.16_linux_64_ubuntu10.04.run
-    sh gpucomputingsdk_3.2.16_linux.run
-
+```
+sudo sh devdriver_3.2_linux_64_260.19.26.run
+sudo sh cudatoolkit_3.2.16_linux_64_ubuntu10.04.run
+sh gpucomputingsdk_3.2.16_linux.run
+```
 Per the installation instructions, we setup the environment variables (in `.bashrc`):
-
-    export LD_LIBRARY_PATH="/usr/local/cuda/lib:/usr/local/cuda/lib64"
-    export PATH="/usr/local/cuda/bin"
-
+```
+export LD_LIBRARY_PATH="/usr/local/cuda/lib:/usr/local/cuda/lib64"
+export PATH="/usr/local/cuda/bin"
+```
 Test the installation by compiling and running a few of the NVidia provided OpenCL samples by changing directories to:
 
-    /NVIDIA_GPU_COMPUTING_SDK/C
+`/NVIDIA_GPU_COMPUTING_SDK/C`
 
 and running:
 
-    make
+`make`
 
 We ran into an error and ended up editing the file
 
-    /NVIDIA_GPU_COMPUTING_SDK/C/common.mk
+`/NVIDIA_GPU_COMPUTING_SDK/C/common.mk`
 
 by replacing line 169 with:
 
-    NVCCFLAGS  += --compiler-options -fpermissive
+`NVCCFLAGS  += --compiler-options -fpermissive`
 
 and re-running:
 
-    make
+`make`
 
 Change directories to
 
-    /NVIDIA_GPU_Computing_SDK/C/bin/linux/release
+`/NVIDIA_GPU_Computing_SDK/C/bin/linux/release`
 
 and run
 
-    ./bandwidthtest
+`./bandwidthtest`
 
 to check the binary CUDA install.
 
 Build the OpenCL examples by changing directories to
 
-    /NVIDIA_GPU_COMPUTING_SDK/OpenCL
+`/NVIDIA_GPU_COMPUTING_SDK/OpenCL`
 
 and running:
 
-    make
+`make`
 
 Change directories to
 
-    /NVIDIA_GPU_Computing_SDK/OpenCL/bin/linux/release
+`/NVIDIA_GPU_Computing_SDK/OpenCL/bin/linux/release`
 
 to run the OpenCL Bandwidth sample using:
 
-    ./oclBandwidthTest
+`./oclBandwidthTest`
 
 ## Setting up Eclipse and needed plugins on Ubuntu
 
 To configure the development environment, we started by installing the JRE with:
 
-    sudo apt-get install openjdk-6-jdk
+`sudo apt-get install openjdk-6-jdk`
 
 and downloading Eclipse for J2EE Developers from:
 
@@ -179,36 +182,34 @@ The approach used to start delegating to OpenCL from an existing Java implementa
 
 ## OpenCL ImageJ plugins following enterprise java patterns
 
-Finally, some users and academic labs are building "[GPU Supercomputers](http://fastra2.ua.ac.be/)" to expose compute resources to a wide range of applications running locally. In this case, you wish to leverage to look at the `FHTEJBService` and `Iterative_Deconvolve_3D_WS` classes for an example on how to remotely serve up the your GPU accelerated resources using open source J2EE technologies.
+Finally, some users and academic labs are building "[GPU Supercomputers](https://en.wikipedia.org/wiki/Supercomputer#The_TOP500_list)" to expose compute resources to a wide range of applications running locally. In this case, you wish to leverage to look at the `FHTEJBService` and `Iterative_Deconvolve_3D_WS` classes for an example on how to remotely serve up the your GPU accelerated resources using open source J2EE technologies.
 
 In this example, Hessian Binary Web Services are used to broker data between the Java consumer and the Hessian Servlet. This approach is only recommended for those labs having sufficient throughput between the client application and the OpenCL/GPU servlet host.
 
 ## Hosting OpenCL-accelerated algorithms using Oracle's GlassfishV3
 
-Start out with the installation instructions available [here](http://www.oracle.com/technetwork/java/javaee/community/index-jsp-139692.html).
-
 To set up OpenCL support on Glassfish for deploying the ImageJ/Fiji Java based EJBs, navigate to the system's lib directory (for example: `/opt/glassfishv3/glassfish/lib`) and install the required jars/native libs.
+```
+sudo wget http://jogamp.org/deployment/webstart/jocl-natives-linux-amd64.jar
+sudo unzip jocl-natives-linux-amd64.jar
+sudo rm -rdf META-INF
+sudo rm jocl-natives-linux-amd64.jar
+sudo wget http://jogamp.org/deployment/webstart/gluegen-rt-natives-linux-amd64.jar
+sudo unzip gluegen-rt-natives-linux-amd64.jar
+sudo rm -rdf META-INF/
+sudo rm gluegen-rt-natives-linux-amd64.jar
 
-    sudo wget http://jogamp.org/deployment/webstart/jocl-natives-linux-amd64.jar
-    sudo unzip jocl-natives-linux-amd64.jar
-    sudo rm -rdf META-INF
-    sudo rm jocl-natives-linux-amd64.jar
-    sudo wget http://jogamp.org/deployment/webstart/gluegen-rt-natives-linux-amd64.jar
-    sudo unzip gluegen-rt-natives-linux-amd64.jar
-    sudo rm -rdf META-INF/
-    sudo rm gluegen-rt-natives-linux-amd64.jar
+sudo wget http://jocl.org/downloads/JOCL-0.1.4-beta1-bin-linux-x86_64.zip
+sudo unzip JOCL-0.1.4-beta1-bin-linux-x86_64.zip
+sudo mv JOCL-0.1.4-beta1-bin-linux-x86_64/*.so .
+sudo mv JOCL-0.1.4-beta1-bin-linux-x86_64/*.jar .
+sudo rm -rdf JOCL-0.1.4-beta1-bin-linux-x86_64
+sudo rm JOCL-0.1.4-beta1-bin-linux-x86_64.zip
 
-    sudo wget http://jocl.org/downloads/JOCL-0.1.4-beta1-bin-linux-x86_64.zip
-    sudo unzip JOCL-0.1.4-beta1-bin-linux-x86_64.zip
-    sudo mv JOCL-0.1.4-beta1-bin-linux-x86_64/*.so .
-    sudo mv JOCL-0.1.4-beta1-bin-linux-x86_64/*.jar .
-    sudo rm -rdf JOCL-0.1.4-beta1-bin-linux-x86_64
-    sudo rm JOCL-0.1.4-beta1-bin-linux-x86_64.zip
-
-    sudo wget http://jogamp.org/deployment/webstart/gluegen-rt.jar
-    sudo wget http://jogamp.org/deployment/webstart/gluegen.jar
-    sudo wget http://jogamp.org/deployment/webstart/jocl.jar
-
+sudo wget http://jogamp.org/deployment/webstart/gluegen-rt.jar
+sudo wget http://jogamp.org/deployment/webstart/gluegen.jar
+sudo wget http://jogamp.org/deployment/webstart/jocl.jar
+```
 The only other thing needed to get glassfish setup to support JOCL is to login to the admin console, under {% include bc path='Common Tasks | Configuration | JVM Settings | Path Settings'%}.
 
 Native Library Path Prefix: `/opt/glassfishv3/glassfish/lib`
@@ -260,22 +261,22 @@ Note: It is almost certainly possible to optimize any of the following implement
 ## Implementation
 
 The following code demonstrates a partial implementation of sobel filter within ImageJ:
+```
+public byte[] filter(int width, int height, byte[] inputImageArray)
+	{
+		byte[] pixels = new byte[width*height];
+		int p1, p2, p3, p4, p5, p6, p7, p8, p9;
+		int offset, sum1, sum2=0, sum=0;
+		int rowOffset = width;
 
-    public byte[] filter(int width, int height, byte[] inputImageArray)
-        {
-            byte[] pixels = new byte[width*height];
-            int p1, p2, p3, p4, p5, p6, p7, p8, p9;
-            int offset, sum1, sum2=0, sum=0;
-            int rowOffset = width;
+		for (int y=1; y 255) sum = 255;
 
-            for (int y=1; y 255) sum = 255;
-
-                    pixels[offset++] = (byte)sum;
-                }
-            }
-            return pixels;
-        }
-
+				pixels[offset++] = (byte)sum;
+			}
+		}
+		return pixels;
+	}
+```
 There are a few properties that make the above partial implementation ideal for GPU computation. Each resultant pixel's value is independent of those around it. The values consumed in calculating the resultant pixel share a sequential relationship can leverage performance advantages. Several computations are performed for each pixel.
 
 Here is the partial implementation of Sobel filter in OpenCL:
