@@ -1,5 +1,4 @@
 ---
-mediawiki: Tips_and_Tricks
 title: Tips and Tricks
 section: Learn:ImageJ Basics
 nav-links: true
@@ -10,7 +9,7 @@ ImageJ is easy to use, but sometimes you wish for some function that is actually
 
 ## Show the memory consumption
 
-Just click on the status bar, and you will see how much memory is used, and how much memory is available.
+Just click on the [status bar](/learn#the-main-window), and you will see how much memory is used, and how much memory is available.
 
 ## Execute external programs
 
