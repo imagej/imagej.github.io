@@ -1,9 +1,6 @@
 ---
-mediawiki: FiloQuant
 title: FiloQuant
-
 categories: [Analysis, Segmentation, Object detection]
-
 name: FiloQuant
 source-label: GitHub
 source-url: https://github.com/guijacquemet/FiloQuant
