@@ -1,5 +1,4 @@
 ---
-mediawiki: Citing
 title: Citing
 section: Contribute
 nav-links: true
@@ -17,7 +16,7 @@ nav-links: true
 We ask users to cite:
 
 1.  Any [specific publications](/plugin-index#citable) of [plugins](/plugins) used.
-2.  The general paper of ImageJ distribution(s) used—e.g., if you used [Fiji](/software/fiji), cite the [Fiji](/software/fiji) paper.
+2.  The general paper of ImageJ distribution(s) used—e.g., if you used [Fiji](/software/fiji), cite the [Fiji](/software/fiji#publication) paper.
 3.  The general [ImageJ](/software/imagej) paper.
 
 If journal reference limits interfere, the plugin-specific publications should take precedence.
