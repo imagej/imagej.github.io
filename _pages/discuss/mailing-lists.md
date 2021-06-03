@@ -1,5 +1,4 @@
 ---
-mediawiki: Mailing_Lists
 title: Mailing Lists
 section: Discuss
 nav-links: true
