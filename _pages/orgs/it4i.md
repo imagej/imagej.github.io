@@ -8,7 +8,7 @@ A list of the people that are contributing or have contributed to the developmen
 - [Petr Bainar](/people/PetrBainar)
 - [Jana Klímová](/people/janaklimova)
 - [Jan Kožusznik](/people/kozusznik)
-- [Pavel Moravec](/people/fiji-hpc)
+- [Pavel Moravec](/people/pm-cz)
 - [Pavel Tomancak](/people/tomancak)
 - [Vladimír Ulman](/people/xulman)
 
