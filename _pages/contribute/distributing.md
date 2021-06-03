@@ -1,5 +1,4 @@
 ---
-mediawiki: Distribution
 title: Distribution
 section: Contribute
 nav-links: true
@@ -36,7 +35,7 @@ The first goal is to get your extension into the hands of users.
 <table>
   <tbody>
     <tr>
-      <td style="background: #dfd">
+      <td style="background: #afa" colspan=4>
         <p><strong>Create your own update site</strong></p>
       </td>
     </tr>
@@ -44,59 +43,112 @@ The first goal is to get your extension into the hands of users.
       <td>
         <p><strong>Steps</strong></p>
       </td>
+      <td>
+        <p><strong>Installation</strong></p>
+      </td>
+      <td>
+        <p><strong>Advantages</strong></p>
+      </td>
+      <td>
+        <p><strong>Disadvantages</strong></p>
+      </td>
     </tr>
     <tr>
       <td style="background: #dfd; vertical-align: top">
         <ul>
           <li><strong><a href="/update-sites/setup">Create your update site</a></strong>, then <strong><a href="/update-sites/setup#uploading-files-to-your-update-site">upload your extension to it</a></strong>.</li>
-          <li>You may add your update site to the list of built-in sites by editing the <strong>[list of update sites](/list-of-update-sites)</strong> page.</li>
+          <li>You may add your update site to the list of built-in sites by editing the <strong><a href="/list-of-update-sites">list of update sites</a></strong> page.</li>
           <li>To release a new version, <strong><a href="/update-sites/setup#uploading-files-to-your-update-site">upload it to the update site</a></strong>.</li>
         </ul>
       </td>
-    </tr>
-    <tr>
-      <td style="background: #dfd"></td>
-    </tr>
-    <tr>
-      <td>
-        <p><strong>Distribute it as part of Fiji</strong></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p><strong>Steps</strong></p>
-      </td>
-    </tr>
-    <tr>
       <td style="background: #dfd; vertical-align: top">
         <ul>
-          <li>Make a post on the <strong><a href="/help">ImageJ forum</a></strong> to initiate a request.</li>
+	  <li> Users <b><a href="/update-sites/following">enable the update site</a></b> to receive your extension.</li>
+	  <li> ImageJ's <b><a href="/plugins/updater">Updater</a></b> automatically checks for updates from all enabled update sites.</li>
         </ul>
       </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top"></td>
-    </tr>
-    <tr>
-      <td>
-        <p><strong>Serve it from a website as a download</strong></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p><strong>Steps</strong></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
+      <td style="background: #dfd; vertical-align: top">
         <ul>
-          <li>Create an archive (TAR, ZIP, etc.).</li>
-          <li>Upload the archive to the relevant web space, and link it.</li>
+	  <li> You do not need server space to host your extensions; you can use a <b><a href="/update-sites/setup">personal update site</a></b> hosted on the ImageJ web site.</li>
+          <li> Alternately, you can retain full control by hosting your update site yourself.</li>
+          <li> Users are notified of updates without needing to check proactively.</li>
+          <li> The updater manages dependencies for you.</li>
+          <li> You can automate distribution using the <b><a href="/plugins/updater#command-line-usage">command line updater</a></b>.</li>
+        </ul>
+      </td>
+      <td style="background: #dfd; vertical-align: top">
+        <ul>
+	  <li> <b><a href="/software/imagej1">ImageJ 1.x</a></b> does not support update sites; users will need to use <b><a href="/software/imagej2">ImageJ2</a></b> (or <b><a href="/software/fiji">Fiji</a></b>: "Fiji Is Just ImageJ2"). You can <b><a href="/plugins/updater#bootstrapping-the-updater">upgrade an ImageJ 1.x installation to ImageJ2</a></b>.</li>
+          <li> You will miss out on the <b><a href="/develop/project-management">tools and tests</a></b> used to ensure compatibility and reproducibility, making undetected breakages much more likely (at the least).</li>
         </ul>
       </td>
     </tr>
-  </tbody>
-</table>
+<tr>
+<td colspan="4" style="background: white; border: none; height: 1em">
+</td></tr>
+<tr>
+<td colspan="4" style="background: #afa"> <b>Distribute it as part of Fiji</b>
+</td></tr>
+<tr>
+<td style="background: #dfd"><b>Steps</b>
+</td>
+<td style="background: #dfd"><b>Installation</b>
+</td>
+<td style="background: #dfd"><b>Advantages</b>
+</td>
+<td style="background: #dfd"><b>Disadvantages</b>
+</td></tr>
+<tr>
+<td style="background: #dfd; vertical-align: top">
+<ul><li> Make a post on the <b><a href="/discuss" title="Forum">ImageJ forum</a></b> to initiate a request.</li></ul>
+</td>
+<td style="background: #dfd; vertical-align: top">
+<ul><li> Users <b><a href="/software/fiji/downloads" title="Fiji/Downloads">install Fiji</a></b>, or <b><a href="/update-sites/following" title="How to follow a 3rd party update site">enable the Fiji update site</a></b>.</li></ul>
+</td>
+<td style="background: #dfd; vertical-align: top">
+<ul><li> Your extension is available with Fiji out of the box.</li>
+<li> A <b><a href="/contribute/governance" title="Governance">Fiji maintainer</a></b> will help you to manage your project.</li>
+<li> You can lean on existing tools and documentation to maintain <b><a href="/develop/architecture#reproducible-builds" title="Reproducible builds">reproducibility</a></b> of your project.</li>
+<li> Your project will always be compatible with the latest Fiji distribution.</li>
+<li> <a href="/develop/travis" title="Travis">Travis</a> automatically tests your project for errors, deploying successful builds to the <a href="/develop/project-management#maven" title="SciJava Maven repository">SciJava Maven repository</a>.</li></ul>
+</td>
+<td style="background: #dfd; vertical-align: top">
+<ul><li> You must abide by the <b><a href="/contribute/fiji" title="Fiji contribution requirements">Fiji contribution requirements</a></b>.</li>
+<li> You must rely on a Fiji maintainer (for now) to upload new versions for you.</li></ul>
+</td></tr>
+<tr>
+<td colspan="4" style="background: white; border: none; height: 1em">
+</td></tr>
+<tr>
+<td colspan="4" style="background: lightgray"> <b>Serve it from a website as a download</b>
+</td></tr>
+<tr>
+<td><b>Steps</b>
+</td>
+<td><b>Installation</b>
+</td>
+<td><b>Advantages</b>
+</td>
+<td><b>Disadvantages</b>
+</td></tr>
+<tr>
+<td style="vertical-align: top">
+<ul><li> Create an archive (TAR, ZIP, etc.).</li>
+<li> Upload the archive to the relevant web space, and link it.</li></ul>
+</td>
+<td style="vertical-align: top">
+<ul><li> Users download the archive, unpacking it into ImageJ's <code>plugins</code> folder.</li></ul>
+</td>
+<td style="vertical-align: top">
+<ul><li> You avoid the activation barrier of learning to use the <a href="/plugins/updater" title="Updater">Updater</a>.</li>
+<li> <a href="/software/imagej2" title="ImageJ2">ImageJ2</a> is not required to install the extension.</li></ul>
+</td>
+<td style="vertical-align: top">
+<ul><li> Users must find your plugin via a link or web search.</li>
+<li> Users must perform a manual installation procedure.</li>
+<li> Users must manually check for later updates.</li>
+<li> Users <i>will</i> report bugs found in outdated versions of the extension.</li></ul>
+</td></tr></table>
 {:/}
 
 ## Sharing your source code
@@ -105,205 +157,254 @@ If you want to facilitate good science, please [share your source code](/licensi
 
 {::nomarkdown}
 <table>
-  <tbody>
-    <tr>
-      <td style="background: #dfd">
-        <p><strong>Host on GitHub in your userspace or organization</strong></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p><strong>Steps</strong></p>
-      </td>
-    </tr>
-    <tr>
-      <td style="background: #dfd; vertical-align: top">
-        <ul>
-          <li>Create an account on <strong><a href="https://github.com">GitHub</a></strong>.</li>
-          <li><strong><a href="https://help.github.com/articles/create-a-repo">Create a new repository</a></strong> for your project.</li>
-          <li><strong><a href="https://help.github.com/articles/pushing-to-a-remote">Push your code</a></strong> there.</li>
-          <li><strong><a href="/develop/git">Learn Git</a></strong> to manage your code effectively.</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="background: #dfd"></td>
-    </tr>
-    <tr>
-      <td>
-        <p><strong>Host on GitHub in the Fiji organization (for <a href="/contribute/fiji">extensions distributed with Fiji</a>)</strong></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p><strong>Steps</strong></p>
-      </td>
-    </tr>
-    <tr>
-      <td style="background: #dfd; vertical-align: top">
-        <ul>
-          <li>Request a <strong><a href="/contribute/governance">Fiji maintainer</a></strong> create a repository for you and add you as a contributor.</li>
-          <li>Meet the <strong><a href="/contribute/fiji">Fiji contribution requirements</a></strong>.</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top"></td>
-    </tr>
-    <tr>
-      <td>
-        <p><strong>Host on BitBucket</strong></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p><strong>Steps</strong></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <ul>
-          <li>Similar to GitHub, but using <a href="https://bitbucket.org/">BitBucket</a> instead.
-          </li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top"></td>
-    </tr>
-    <tr>
-      <td>
-        <p><strong>Host on SourceForge</strong></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p><strong>Steps</strong></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <ul>
-          <li>Similar to GitHub, but using <a href="http://sourceforge.net/">SourceForge</a> instead.
-          </li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top"></td>
-    </tr>
-    <tr>
-      <td>
-        <p><strong>Serve it from a website as a download</strong></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p><strong>Steps</strong></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <ul>
-          <li>Create an archive (TAR, ZIP, etc.).</li>
-          <li>Upload the archive to the relevant web space, and link it.</li>
-          <li>Users download and unpack the archive.</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<tr>
+<td colspan="3" style="background: #afa"> <b>Host on GitHub in your userspace or organization</b>
+</td></tr>
+<tr>
+<td style="background: #dfd"> <b>Steps</b>
+</td>
+<td style="background: #dfd"> <b>Advantages</b>
+</td>
+<td style="background: #dfd"> <b>Disadvantages</b>
+</td></tr>
+<tr>
+<td style="background: #dfd; vertical-align: top">
+<ul><li> Create an account on <b><a rel="nofollow" class="external text" href="https://github.com">GitHub</a></b>.</li>
+<li> <b><a rel="nofollow" class="external text" href="https://help.github.com/articles/create-a-repo">Create a new repository</a></b> for your project.</li>
+<li> <b><a rel="nofollow" class="external text" href="https://help.github.com/articles/pushing-to-a-remote">Push your code</a></b> there.</li>
+<li> <b><a href="/develop/git" title="Git">Learn Git</a></b> to manage your code effectively.</li></ul>
+</td>
+<td style="background: #dfd; vertical-align: top">
+<ul><li> Git is an incredibly powerful way to keep track of your code.</li>
+<li> GitHub greatly facilitates collaboration: sharing ideas and patches.</li>
+<li> Seriously: Git and GitHub are amazing tools, and you will be orders of magnitude less effective without them.</li>
+<li> "Doing it in public" is a great way to <b><a rel="nofollow" class="external text" href="http://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/">stop sucking and be awesome instead</a></b>.</li>
+<li> All of <b><a href="/software/imagej" title="ImageJ">ImageJ</a></b>, <b><a href="/software/fiji" title="Fiji">Fiji</a></b> and related <b><a href="/libs/scijava" title="SciJava">SciJava</a></b> projects are <b><a href="/develop/source" title="Source code">hosted on GitHub</a></b>.</li></ul>
+</td>
+<td style="background: #dfd; vertical-align: top">
+<ul><li> Git has a steep learning curve—the <b><a rel="nofollow" class="external text" href="https://desktop.github.com/">GitHub Desktop</a></b> client makes things easier.</li></ul>
+</td></tr>
+<tr>
+<td colspan="3" style="background: white; border: none; height: 1em">
+</td></tr>
+<tr>
+<td colspan="3" style="background: #afa"> <b>Host on GitHub in the Fiji organization (for <a href="/software/fiji" title="Fiji contribution requirements">extensions distributed with Fiji</a>)</b>
+</td></tr>
+<tr>
+<td style="background: #dfd"><b>Steps</b>
+</td>
+<td style="background: #dfd"><b>Advantages</b>
+</td>
+<td style="background: #dfd"><b>Disadvantages</b>
+</td></tr>
+<tr>
+<td style="background: #dfd; vertical-align: top">
+<ul><li> Request a <b><a href="/contribute/governance" title="Governance">Fiji maintainer</a></b> create a repository for you and add you as a contributor.</li>
+<li> Meet the <b><a href="/contribute/fiji" class="mw-redirect" title="Fiji contribution requirements">Fiji contribution requirements</a></b>.</li></ul>
+</td>
+<td style="background: #dfd; vertical-align: top">
+<ul><li> All the benefits of GitHub.</li>
+<li> A <b><a href="/contribute/governance" title="Governance">Fiji maintainer</a></b> helps you to manage your project.</li></ul>
+</td>
+<td style="background: #dfd; vertical-align: top">
+<ul><li> You must abide by the <b><a href="/contribute/fiji" class="mw-redirect" title="Fiji contribution requirements">Fiji contribution requirements</a></b>.</li></ul>
+</td></tr>
+<tr>
+<td colspan="3" style="background: white; border: none; height: 1em">
+</td></tr>
+<tr>
+<td colspan="3" style="background: lightgray"> <b>Host on BitBucket</b>
+</td></tr>
+<tr>
+<td><b>Steps</b>
+</td>
+<td><b>Advantages</b>
+</td>
+<td><b>Disadvantages</b>
+</td></tr>
+<tr>
+<td style="vertical-align: top">
+<ul><li> Similar to GitHub, but using <a rel="nofollow" class="external text" href="https://bitbucket.org/">BitBucket</a> instead.</li></ul>
+</td>
+<td style="vertical-align: top">
+<ul><li> Similar to GitHub.</li></ul>
+</td>
+<td style="vertical-align: top">
+<ul><li> ImageJ and related projects are hosted on GitHub, not BitBucket.</li>
+<li> BitBucket has a smaller user base than GitHub does.</li></ul>
+</td></tr>
+<tr>
+<td colspan="3" style="background: white; border: none; height: 1em">
+</td></tr>
+<tr>
+<td colspan="3" style="background: lightgray"> <b>Host on SourceForge</b>
+</td></tr>
+<tr>
+<td><b>Steps</b>
+</td>
+<td><b>Advantages</b>
+</td>
+<td><b>Disadvantages</b>
+</td></tr>
+<tr>
+<td style="vertical-align: top">
+<ul><li> Similar to GitHub, but using <a rel="nofollow" class="external text" href="http://sourceforge.net/">SourceForge</a> instead.</li></ul>
+</td>
+<td style="vertical-align: top">
+<ul><li> SourceForge predates GitHub; some people prefer it.</li></ul>
+</td>
+<td style="vertical-align: top">
+<ul><li> The interface is not as powerful as GitHub and BitBucket: 
+<ul><li> Common workflows require many more mouse clicks.</li>
+<li> The user interfaces of GitHub and BitBucket provide much better guidance.</li>
+<li> SourceForge's servers tend to be very slow compared to GitHub and BitBucket.</li>
+<li> The collaboration features are vastly inferior.</li></ul></li>
+<li> SourceForge has a lot of downtime. (The <a rel="nofollow" class="external text" href="/develop/jenkins">ImageJ mirrors of SourceForge projects</a> hence have a lot of problems.)</li>
+<li> Using SourceForge is highly discouraged compared to other code hosting sites.</li></ul>
+</td></tr>
+<tr>
+<td colspan="3" style="background: white; border: none; height: 1em">
+</td></tr>
+<tr>
+<td colspan="3" style="background: lightgray"> <b>Serve it from a website as a download</b>
+</td></tr>
+<tr>
+<td><b>Steps</b>
+</td>
+<td><b>Advantages</b>
+</td>
+<td><b>Disadvantages</b>
+</td></tr>
+<tr>
+<td style="vertical-align: top">
+<ul><li> Create an archive (TAR, ZIP, etc.).</li>
+<li> Upload the archive to the relevant web space, and link it.</li>
+<li> Users download and unpack the archive.</li></ul>
+</td>
+<td style="vertical-align: top">
+<ul><li> You avoid the activation barrier of learning a revision control system.</li></ul>
+</td>
+<td style="vertical-align: top">
+<ul><li> No revision control system.</li>
+<li> No easy browsing of source code online.</li>
+<li> No easy submission of patches.</li>
+<li> No finding the code in web searches.</li>
+<li> No reading the change logs to understand why changes were made.</li>
+<li> No studying the history to better understand the project's activity.</li>
+<li> No bisecting the history to track down when bugs were introduced.</li>
+<li> No safety net to revert unwanted changes or avoid lost work.</li>
+<li> No branching to maintain multiple development trajectories.</li>
+<li> No easy switching between versions.</li>
+<li> No automatic credit and tracking of which authors did which work.</li>
+<li> No distribution and backup of the project's development history.</li></ul>
+</td></tr></table>
 {:/}
 
 ## Documenting your extension
 
 Useful extensions deserve corresponding documentation explaining how to use them.
 
-  <table>
 {::nomarkdown}
-  <tbody>
-    <tr>
-      <td style="background: #dfd">
-        <p><strong>Create an ImageJ wiki page</strong></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p><strong>Steps</strong></p>
-      </td>
-    </tr>
-    <tr>
-      <td style="background: #dfd; vertical-align: top">
-        <ul>
-          <li><strong><a href="https://github.com/join">Create a GitHub account</a></strong>.</li>
-          <li><strong><a href="/editing">Create a page</a></strong> for your extension.</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top"></td>
-    </tr>
-    <tr>
-      <td>
-        <p><strong>Use the ImageJ Information and Documentation Portal (IIDP)</strong></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p><strong>Steps</strong></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <ul>
-          <li>Request an account from an IIDP administrator.</li>
-          <li>
-            <a href="http://imagejdocu.tudor.lu/doku.php?id=create_new_content">Create a page</a> for your extension.
-          </li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top"></td>
-    </tr>
-    <tr>
-      <td>
-        <p><strong>Add a page to the ImageJ 1.x website</strong></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p><strong>Steps</strong></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <ul>
-          <li>Prepare an HTML page modeled after the <a href="/ij/plugins/index.html">list of ImageJ 1.x plugins</a>.
-          </li>
-          <li>Email it to {% include person id='rasband' %}, the developer of ImageJ 1.x, and sole maintainer of the <a href="/ij/index.html">ImageJ 1.x website</a>.
-          </li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top"></td>
-    </tr>
-    <tr>
-      <td>
-        <p><strong>Create your own webpage elsewhere</strong></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p><strong>Steps</strong></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p>(Varies)</p>
-      </td>
-    </tr>
-  </tbody>
+<table>
+<tr>
+<td colspan="3" style="background: #afa"> <b>Create an ImageJ wiki page</b>
+</td></tr>
+<tr>
+<td style="background: #dfd"> <b>Steps</b>
+</td>
+<td style="background: #dfd"> <b>Advantages</b>
+</td>
+<td style="background: #dfd"> <b>Disadvantages</b>
+</td></tr>
+<tr>
+<td style="background: #dfd; vertical-align: top">
+<ul><li> <b><a href="/editing#creating-a-new-page">Create a page</a></b> for your extension.</li></ul>
+</td>
+<td style="background: #dfd; vertical-align: top">
+<ul><li> The ImageJ wiki is part of imagej.net, the integrated ImageJ web site.</li>
+<li> The ImageJ wiki uses MediaWiki, the most popular wiki engine which drives Wikipedia.</li>
+<li> You can get started immediately; no human needs to approve your account or edits.</li></ul>
+</td>
+<td style="background: #dfd; vertical-align: top">
+<p>-
+</p>
+</td></tr>
+<tr>
+<td colspan="3" style="background: white; border: none; height: 1em">
+</td></tr>
+<tr>
+<td colspan="3" style="background: lightgray"> <b>Use the ImageJ Information and Documentation Portal (IIDP)</b>
+</td></tr>
+<tr>
+<td><b>Steps</b>
+</td>
+<td><b>Advantages</b>
+</td>
+<td><b>Disadvantages</b>
+</td></tr>
+<tr>
+<td style="vertical-align: top">
+<ul><li> Request an account from an IIDP administrator.</li>
+<li> <a rel="nofollow" class="external text" href="http://imagejdocu.tudor.lu/doku.php?id=create_new_content">Create a page</a> for your extension.</li></ul>
+</td>
+<td style="vertical-align: top">
+<ul><li> The <a rel="nofollow" class="external text" href="http://imagejdocu.tudor.lu/">ImageJ Information and Documentation Portal</a> predates the ImageJ wiki, and many extensions are still primarily documented there.</li>
+<li> The IIDP is a fairly <a rel="nofollow" class="external text" href="http://imagejdocu.tudor.lu/doku.php?id=start&amp;do=recent">active</a> wiki (but not <a href="https://github.com/imagej/imagej.github.io/commits/main" title="Recent changes">compared to this one</a>!).</li>
+<li> The ImageJ developers hope to unify these two wikis in the future.</li></ul>
+</td>
+<td style="vertical-align: top">
+<ul><li> The IIDP documents only <a href="/software/imagej1" title="ImageJ 1.x">ImageJ 1.x</a>, not <a href="/software/imagej2" title="ImageJ2">ImageJ2</a>.</li>
+<li> You must explicitly request an IIDP account from an administrator.</li>
+<li> The wiki uses Plone, a lesser known CMS engine.</li></ul>
+</td></tr>
+<tr>
+<td colspan="3" style="background: white; border: none; height: 1em">
+</td></tr>
+<tr>
+<td colspan="3" style="background: lightgray"> <b>Add a page to the ImageJ 1.x website</b>
+</td></tr>
+<tr>
+<td><b>Steps</b>
+</td>
+<td><b>Advantages</b>
+</td>
+<td><b>Disadvantages</b>
+</td></tr>
+<tr>
+<td style="vertical-align: top">
+<ul><li> Prepare an HTML page modeled after the <a rel="nofollow" class="external text" href="/ij/plugins/index.html">list of ImageJ 1.x plugins</a>.</li>
+<li> Email it to <a href="/people/rasband" title="Wayne Rasband">Wayne Rasband</a>, the developer of ImageJ 1.x, and sole maintainer of the <a rel="nofollow" class="external text" href="/ij">ImageJ 1.x website</a>.</li></ul>
+</td>
+<td style="vertical-align: top">
+<ul><li> Listed on the ImageJ 1.x website.</li></ul>
+</td>
+<td style="vertical-align: top">
+<ul><li> Not collaborative. No one else can edit the ImageJ 1.x website—not even you!</li>
+<li> Hence, turnaround time on updates is longer.</li>
+<li> The list of plugins there is extensive and difficult to sort through.</li></ul>
+</td></tr>
+<tr>
+<td colspan="3" style="background: white; border: none; height: 1em">
+</td></tr>
+<tr>
+<td colspan="3" style="background: lightgray"> <b>Create your own webpage elsewhere</b>
+</td></tr>
+<tr>
+<td><b>Steps</b>
+</td>
+<td><b>Advantages</b>
+</td>
+<td><b>Disadvantages</b>
+</td></tr>
+<tr>
+<td style="vertical-align: top"> (Varies)
+</td>
+<td style="vertical-align: top">
+<ul><li> Total control of the content</li></ul>
+</td>
+<td style="vertical-align: top">
+<ul><li> Nonstandard location. Users may have trouble finding your documentation.</li>
+<li> Not collaborative. No one else can improve the documentation.</li>
+<li> If your site goes down, users lose access to the information. (This happened with the <a href="/plugins/3d-viewer" title="3D Viewer">3D Viewer</a> and <a href="/plugins/vib-protocol" title="VIB Protocol">VIB Protocol</a> on multiple occasions. And the <a href="/software/mbf-imagej" title="MBF Plugin Collection">MBF Plugin Collection</a> went permanently offline!)</li></ul>
+</td></tr></table>
 {:/}
-  </table>
