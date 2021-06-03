@@ -1,5 +1,4 @@
 ---
-mediawiki: Governance
 title: Governance
 section: Contribute
 categories: [Development]
