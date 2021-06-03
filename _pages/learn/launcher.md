@@ -1,5 +1,4 @@
 ---
-mediawiki: Launcher
 title: ImageJ Launcher
 nav-links: true
 nav-title: Launcher
