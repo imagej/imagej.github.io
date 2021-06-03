@@ -1,7 +1,4 @@
 ---
-mediawiki:
-- Contributing
-- Open_Source
 title: Contributing
 section: Contribute
 categories: [community]
@@ -19,7 +16,7 @@ Everybody is welcome to [contribute](/contribute) with [plugins](/plugins),
 
 The community encourages discussion about proposed changes on ImageJ's [communication](/discuss/#ways-to-get-help) channels. Submit your ideas!
 
-Start on the [forum](/discuss), searching for discussions related to your contribution to get some context & background. It can also be helpful to [search](/help#searching-imagej-resources) for applicable issues and plans across the spectrum of ImageJ resources. The ImageJ community believes that [public discussion is important](/develop/philosophy#open-source) so that ideas are exposed to healthy alternate points of view rather than lost.
+Start on the [forum](/discuss), searching for discussions related to your contribution to get some context & background. It can also be helpful to [search](/discuss#searching-imagej-resources) for applicable issues and plans across the spectrum of ImageJ resources. The ImageJ community believes that [public discussion is important](/develop/philosophy#open-source) so that ideas are exposed to healthy alternate points of view rather than lost.
 
 If you are interested in helping to tackle open issues, see the [wish list](/develop/wish-list) page.
 
@@ -29,7 +26,7 @@ This site, imagej.net, is a wiki (similar to the {% include wikipedia title='Wik
 
 If you are an ImageJ user, contributing documentation is an easy way to give back to the community without needing to learn software development skills.
 
-If you are a plugin author, please consider [documenting your plugin on this site](/contribute/distributing#documenting-your-extension). You can have a look at the page [How\_to\_make\_a\_new\_tutorial](/tutorials/make-a-new-tutorial).
+If you are a plugin author, please consider [documenting your plugin on this site](/contribute/distributing#documenting-your-extension). You can also create your own [tutorial](/tutorials)
 
 When in doubt, discuss your ideas publicly on the Image.sc [Forum](/discuss)!
 
