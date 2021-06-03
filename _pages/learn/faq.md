@@ -127,7 +127,7 @@ If you flag any changes to be made, press the "Apply changes" to update your Ima
 
 If the plugin is published on an [ImageJ update site](/update-sites), you can run {% include bc path='Help | Update' %} then click {% include button label="Manage update sites" %} to enable it. Not only does this install the plugins for you automatically, but you will also be notified of any updates whenever they are released.
 
-Otherwise, you can drag 'n drop the `.jar` files onto the ImageJ window, or use {% include bc path='Plugins | Install Plugin...' %} with .jar, .class and .java files, or copy the plugins to `ImageJ.app/plugins/` and restart ImageJ. See the [walk-through with screenshots](Installing_3rd_party_plugins).
+Otherwise, you can drag 'n drop the `.jar` files onto the ImageJ window, or use {% include bc path='Plugins | Install Plugin...' %} with .jar, .class and .java files, or copy the plugins to `ImageJ.app/plugins/` and restart ImageJ. See the [walk-through with screenshots](/plugins#installing-plugins).
 
 ## How do I downgrade ImageJ?
 

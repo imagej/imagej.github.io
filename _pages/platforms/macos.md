@@ -111,7 +111,7 @@ Alternatively, right-click (or {% include key keys='Ctrl|Left Click' %}) the Fij
 
 ## Adding new plugins and macros
 
-For plugins, please follow the instructions about [Installing 3rd party plugins](Installing_3rd_party_plugins). Otherwise, access the plugins folder as explained above and just drag and drop any plugin into the plugins folder, like you would do for ImageJ. Same for macros.
+For plugins, please follow the instructions about [Installing 3rd party plugins](/plugins#installing-plugins). Otherwise, access the plugins folder as explained above and just drag and drop any plugin into the plugins folder, like you would do for ImageJ. Same for macros.
 
 ## Installing OpenJDK for macOS
 
