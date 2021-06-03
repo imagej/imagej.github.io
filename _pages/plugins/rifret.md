@@ -14,7 +14,7 @@ team-support: Cameron Lloyd | /people/camlloyd
 team-maintainers: Cameron Lloyd | /people/camlloyd
 ---
 
-**An ImageJ plugin for intensity-based three filter-set FRET**
+**An ImageJ plugin for intensity-based three filter-set FRET.**
 
 ## Introduction
 
