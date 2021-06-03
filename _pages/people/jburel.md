@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Jmburel
 title: Jean-Marie Burel
 
 name: Jean-Marie Burel
