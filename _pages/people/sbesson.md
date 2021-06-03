@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Sbesson
 title: Sébastien Besson
 
 name: Sébastien Besson
