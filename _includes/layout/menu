@@ -9,8 +9,8 @@
         <ul>
           <li><a href="/downloads">Download</a></li>
 
-          {% include menu/section title="Learn" link="/learn" %}
-            {% include menu/section title="ImageJ Basics" link="/learn/basics" %}
+          {% include menu/section title="Learn" %}
+            {% include menu/section title="ImageJ Basics" link="/learn" %}
               <li><a href="/tutorials">Tutorials</a></li>
               <li><a href="/learn/user-guides">User Guides</a></li>
               <li><a href="/learn/keyboard-shortcuts">Keyboard Shortcuts</a></li>
