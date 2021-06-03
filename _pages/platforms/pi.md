@@ -25,7 +25,7 @@ The following steps describe how to install ImageJ on a Raspberry Pi:
 
 You may also need to disable (comment out) `assistive_technologies=org.GNOME.Accessibility.AtkWrapper` in `/etc/java-8-openjdk/accessibility.properties`.
 
-Note that the shell script supports only a subset of the functionality of the native [ImageJ Launcher](/Launcher), but it should be able to run ImageJ successfully.
+Note that the shell script supports only a subset of the functionality of the native [ImageJ Launcher](/learn/launcher), but it should be able to run ImageJ successfully.
 
 The following steps describe how to create a desktop icon to launch Fiji on a Raspberry Pi:
 
