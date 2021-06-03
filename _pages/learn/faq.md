@@ -1,5 +1,4 @@
 ---
-mediawiki: Frequently_Asked_Questions
 title: Frequently Asked Questions
 section: Learn:ImageJ Basics
 nav-links: true
@@ -198,7 +197,7 @@ Yes, although it is not recommended. You will lose most of the advantages of Ima
 
 ## Can I call ImageJ2 API from an ImageJ1 plugin?
 
-Yes, see the [call-modern-from-legacy](https://github.com/imagej/tutorials/tree/master/maven-projects/call-modern-from-legacy) tutorial example.
+Yes, see the [call-modern-from-legacy](https://github.com/imagej/tutorials/blob/d3ff8e818bb26cb4713371878b239b36cb7d4877/howtos/src/main/java/howto/adv/ModernFromLegacy.java) tutorial example.
 
 ## How do I find equivalent commands between ImageJ1 and ImageJ2 API?
 
@@ -431,11 +430,11 @@ As a complete example, if you were interested in the [2D Histogram](/plugins/2d-
 
 ## I have a problem that is not covered on this page!
 
-If you have an issue that is not mentioned here, you might want to [ask on one of the mailing lists, or via IRC](/discuss), or [enter a bug report](https://fiji.sc/bugzilla/).
+If you have an issue that is not mentioned here, you might want to [ask on one of the mailing lists, or via IRC](/discuss), or [enter a bug report](/discuss/bugs).
 
 ## How to report issues?
 
-Use the {% include bc path='Help | [Report a Bug](/discuss/bugs)' %} command, which adds a ticket report to the [Fiji bug tracker](https://fiji.sc/bugzilla/). While private mail might seem more desirable sometimes, but it is almost always inferior to the open process we established in ImageJ. For starters, bug reporters are unlikely to know who would be the best person to address the issue.
+Please see [Report a Bug](/discuss/bugs)' %}. While private mail might seem more desirable sometimes, but it is almost always inferior to the open process we established in ImageJ. For starters, bug reporters are unlikely to know who would be the best person to address the issue.
 
 ## I reported an issue, but it is still not fixed! Why not?
 
@@ -449,7 +448,7 @@ So please understand that just because we have not responded to a bug report, do
 
 If you want to increase the chances of your issue being worked on, you can:
 
--   Report the issue using the [Report a Bug](/discuss/bugs) plugin (in the Help menu).
+-   [Report the issue](/discuss/bugs).
 -   Provide a [minimal, complete, verifiable example](http://stackoverflow.com/help/mcve).
 -   [Describe what you already tried](http://whathaveyoutried.com/).
 -   [Put as much effort into your question](http://stackoverflow.com/help/how-to-ask) as you expect to be put into its response.
