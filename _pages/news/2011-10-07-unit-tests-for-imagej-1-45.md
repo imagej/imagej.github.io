@@ -1,5 +1,4 @@
 ---
-mediawiki: 2011-10-07_-_Unit_tests_for_ImageJ_1.45
 title: 2011-10-07 - Unit tests for ImageJ 1.45
 ---
 
@@ -62,7 +61,52 @@ Once all the tests pass, [Jenkins](/develop/jenkins) can run them automatically 
           <li><strong>testFitSplineForStraightening(ij.gui.PolygonRoiTest): array lengths differed, expected.length=4 actual.length=8</strong></li>
           <li><strong>testGetUncalibratedLength(ij.gui.PolygonRoiTest): expected:&lt;1.0&gt; but was:&lt;6.324555320336759&gt;</strong></li>
         </ol>
-        <p>|-</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>1.45c - 1.45h</p>
+      </td>
+      <td>
+        <p>4 FAILURES:</p>
+        <ol>
+          <li>testFitSplineForStraightening(ij.gui.PolygonRoiTest): array lengths differed, expected.length=4 actual.length=8</li>
+          <li>testGetUncalibratedLength(ij.gui.PolygonRoiTest): expected:&lt;1.0&gt; but was:&lt;6.324555320336759&gt;</li>
+          <li><strong>testGetPixels(ij.VirtualStackTest): arrays first differed at element [2]; expected:&lt;0&gt; but was:&lt;120&gt;</strong></li>
+          <li><strong>testGetProcessor(ij.VirtualStackTest): arrays first differed at element [2]; expected:&lt;0&gt; but was:&lt;120&gt;</strong></li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>1.45i - 1.45n</p>
+      </td>
+      <td>
+        <p>5 FAILURES:</p>
+        <ol>
+          <li><strong>testDrawPixelsImageProcessor(ij.gui.ArrowTest): expected:&lt;0&gt; but was:&lt;73&gt;</strong></li>
+          <li>testFitSplineForStraightening(ij.gui.PolygonRoiTest): array lengths differed, expected.length=4 actual.length=8</li>
+          <li>testGetUncalibratedLength(ij.gui.PolygonRoiTest): expected:&lt;1.0&gt; but was:&lt;6.324555320336759&gt;</li>
+          <li>testGetPixels(ij.VirtualStackTest): arrays first differed at element [2]; expected:&lt;0&gt; but was:&lt;120&gt;</li>
+          <li>testGetProcessor(ij.VirtualStackTest): arrays first differed at element [2]; expected:&lt;0&gt; but was:&lt;120&gt;</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>1.45o - 1.45q</p>
+      </td>
+      <td>
+        <p>7 FAILURES:</p>
+        <ol>
+          <li>testDrawPixelsImageProcessor(ij.gui.ArrowTest): expected:&lt;0&gt; but was:&lt;73&gt;</li>
+          <li>testFitSplineForStraightening(ij.gui.PolygonRoiTest): array lengths differed, expected.length=4 actual.length=8</li>
+          <li>testGetUncalibratedLength(ij.gui.PolygonRoiTest): expected:&lt;1.0&gt; but was:&lt;6.324555320336759&gt;</li>
+          <li><strong>testGetConvexHull(ij.gui.ShapeRoiTest)</strong></li>
+          <li><strong>testGetFeretValues(ij.gui.ShapeRoiTest): arrays first differed at element [0]; expected:&lt;10.44016&gt; but was:&lt;10.44030650891055&gt;</strong></li>
+          <li>testGetPixels(ij.VirtualStackTest): arrays first differed at element [2]; expected:&lt;0&gt; but was:&lt;120&gt;</li>
+          <li>testGetProcessor(ij.VirtualStackTest): arrays first differed at element [2]; expected:&lt;0&gt; but was:&lt;120&gt;</li>
+        </ol>
       </td>
     </tr>
     <tr>

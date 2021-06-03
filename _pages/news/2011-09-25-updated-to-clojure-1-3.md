@@ -1,5 +1,4 @@
 ---
-mediawiki: 2011-09-25_-_Updated_to_clojure_1.3
 title: 2011-09-25 - Updated to clojure 1.3
 ---
 

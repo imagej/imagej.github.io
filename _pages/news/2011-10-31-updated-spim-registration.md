@@ -1,5 +1,4 @@
 ---
-mediawiki: 2011-10-31_-_Updated_SPIM_Registration
 title: 2011-10-31 - Updated SPIM Registration
 ---
 

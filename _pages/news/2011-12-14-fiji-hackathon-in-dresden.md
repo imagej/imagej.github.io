@@ -1,5 +1,4 @@
 ---
-mediawiki: 2011-12-14_-_Fiji_Hackathon_in_Dresden
 title: 2011-12-14 - Fiji Hackathon in Dresden
 ---
 
@@ -17,37 +16,41 @@ There were 25 people participating at various times, though only a few stayed fo
 
 Here is the list of participants together with their primary affiliation:
 
-|                        |                                                               |
-|------------------------|---------------------------------------------------------------|
+|                        |                                                              |
+|------------------------|--------------------------------------------------------------|
 | Kevin Eliceiri         | [ImageJ2](/software/imagej2)                                 |
-| Curtis Rueden          | [IJ2](IJ2)/[Fiji](/software/fiji)                 |
-| Barry DeZonia          | [IJ2](IJ2)                                         |
+| Curtis Rueden          | [IJ2](/software/imagej2)/[Fiji](/software/fiji)              |
+| Barry DeZonia          | [IJ2](/software/imagej2)                                     |
 | Johannes Schindelin    | [Fiji](/software/fiji)                                       |
 | Christian Dietz        | [KNIME](/software/knime)                                     |
 | Martin Horn            | [KNIME](/software/knime)                                     |
 | Melissa Linkert        | [OME](/software/omero) ([Bio-Formats](/formats/bio-formats)) |
-| Erwin Frise            | [Fiji](/software/fiji)/[uManager](UManager)       |
+| Erwin Frise            | [Fiji](/software/fiji)/[uManager](/software/micro-manager)   |
 | Mark Longair           | [Fiji](/software/fiji)                                       |
 | Josh Moore             | [OMERO](/software/omero)                                     |
 | Jean-Marie Burel       | [OMERO](/software/omero)                                     |
-| Jurgen Mayer           | CRG Barcelona                                                 |
-| Stephan Preibisch      | [Fiji](/software/fiji)/[ImgLib](ImgLib)           |
-| Benjamin Schmid        | [Fiji](/software/fiji)/[3D Viewer](/plugins/3d-viewer)     |
+| Jurgen Mayer           | CRG Barcelona                                                |
+| Stephan Preibisch      | [Fiji](/software/fiji)/[ImgLib](/libs/imglib1)               |
+| Benjamin Schmid        | [Fiji](/software/fiji)/[3D Viewer](/plugins/3d-viewer)       |
 | Pavel Tomancak         | [Fiji](/software/fiji)                                       |
-| Daniel James White     | [Fiji](/software/fiji)/[Coloc 2](/plugins/coloc-2)/SPIM    |
-| Michael Doube          | [Fiji](/software/fiji)/[BoneJ](/plugins/bonej)             |
-| Tobias Pietzsch        | [Fiji](/software/fiji)/[ImgLib](ImgLib)           |
-| Peter Pitrone          | SPIM                                                          |
+| Daniel James White     | [Fiji](/software/fiji)/[Coloc 2](/plugins/coloc-2)/SPIM      |
+| Michael Doube          | [Fiji](/software/fiji)/[BoneJ](/plugins/bonej)               |
+| Tobias Pietzsch        | [Fiji](/software/fiji)/[ImgLib](/libs/imglib1)               |
+| Peter Pitrone          | SPIM                                                         |
 | Fernando Carrillo      | [Fiji](/software/fiji)                                       |
 | Fabrice de Chaumont    | [Icy](/software/icy)                                         |
 | Stephane Dallongeville | [Icy](/software/icy)                                         |
 | Alex Krull             | [Fiji](/software/fiji)                                       |
-| Jiri Matas             | Computer Vision (Prague) special guest                        |
-| Boris Flach            | Computer Vision (Prague) special guest                        |
+| Jiri Matas             | Computer Vision (Prague) special guest                       |
+| Boris Flach            | Computer Vision (Prague) special guest                       |
 
 ## Timeline
 
 The following chart illustrates when everyone was present:
+
+{% include img name="timeline" src="/media/news/fiji-hackathon-timeline.png" %}
+
+<!-- The above img is the timeline rendered by MediaWiki. Original data (as converted) follows.
 
 <timeline> Preset = TimeHorizontal\_AutoPlaceBars\_UnitYear
 
@@ -132,6 +135,8 @@ PlotData=
 
 </timeline>
 
+-->
+
 \* Dresden locals include:
 
 -   Fernando Carrilo
@@ -147,22 +152,29 @@ Some locals were not present at the hackathon on weekends.
 
 ## Photos
 
-{%- include img src='fiji-hackathon-galleria5' -%}
-{%- include img src='fiji-hackathon-galleria4' -%}
-{%- include img src='fiji-hackathon-galleria3' -%}
-{%- include img src='fiji-hackathon-galleria2' -%}
-{%- include img src='fiji-hackathon-thinking' -%}
-{%- include img src='fiji-hackathon-thinking2' -%}
-{%- include img src='fiji-hackathon-hacking' -%}
-{%- include img src='fiji-hackathon-curtis' -%}
-{%- include img src='fiji-hackathon-josh2' -%}
-{%- include img src='fiji-hackathon-josh-johannes' -%}
-{%- include img src='fiji-hackathon-melissa' -%}
-{%- include img src='fiji-hackathon-dan-jurgen' -%}
-{%- include img src='fiji-hackathon-icy' -%}
-{%- include img src='fiji-hackathon-josh4' -%}
-{%- include img src='fiji-hackathon-josh3' -%}
-{%- include img src='fiji-hackathon-josh1' -%}
-{%- include img src='fiji-hackathon-kevin' -%}
-{%- include img src='fiji-hackathon-ferdi' -%}
-{%- include img src='fiji-hackathon-jean-marie' -%}
+**Dresden Hackathon 2011 Pictures by Vineeth Surendranath**
+
+{% include gallery content=
+"
+/media/news/fiji-hackathon-galleria5.jpg | Fiji Hackathon Galleria5
+/media/news/fiji-hackathon-galleria4.jpg | Fiji Hackathon Galleria4
+/media/news/fiji-hackathon-galleria3.jpg | Fiji Hackathon Galleria3
+/media/news/fiji-hackathon-galleria2.jpg | Fiji Hackathon Galleria2
+/media/news/fiji-hackathon-galeria.jpg | Fiji Hackathon Galeria
+/media/news/fiji-hackathon-thinking.jpg | Fiji Hackathon thinking
+/media/news/fiji-hackathon-thinking2.jpg | Fiji Hackathon thinking2
+/media/news/fiji-hackathon-hacking.jpg | Fiji Hackathon hacking
+/media/news/fiji-hackathon-curtis.jpg | Fiji Hackathon Curtis
+/media/news/fiji-hackathon-josh2.jpg | Fiji Hackathon Josh2
+/media/news/fiji-hackathon-josh-johannes.jpg | Fiji Hackathon Josh Johannes
+/media/news/fiji-hackathon-melissa.jpg | Fiji Hackathon Melissa
+/media/news/fiji-hackathon-dan-jurgen.jpg | Fiji Hackathon Dan Jurgen
+/media/news/fiji-hackathon-icy.jpg | Fiji Hackathon Icy
+/media/news/fiji-hackathon-josh4.jpg | Fiji Hackathon Josh4
+/media/news/fiji-hackathon-josh3.jpg | Fiji Hackathon Josh3
+/media/news/fiji-hackathon-josh1.jpg | Fiji Hackathon Josh1
+/media/news/fiji-hackathon-kevin.jpg | Fiji Hackathon Kevin
+/media/news/fiji-hackathon-ferdi.jpg | Fiji Hackathon Ferdi
+/media/news/fiji-hackathon-jean-marie.jpg | Fiji Hackathon Jean-Marie
+"
+%}

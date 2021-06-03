@@ -1,6 +1,5 @@
 ---
-mediawiki: 2011-03-07_-_New_Fiji_Release:_Madison
-title: 2011-03-07 - New Fiji Release › Madison
+title: "2011-03-07 - New Fiji Release: Madison"
 ---
 
 There is a [new version of Fiji](/downloads)!
@@ -79,9 +78,9 @@ On MacOSX, when the user specified *Open in 32-bit mode*, Fiji will no longer ig
 
 Since many parts of Fiji's source code rely on Java 1.6 or better now, the retrotranslator is activated automatically on MacOSX when only Java 1.5 or earlier is available. Thanks to Mark Longair.
 
-Fiji will be able to use native libraries put into Fiji.app/lib/<platform>/.
+Fiji will be able to use native libraries put into `Fiji.app/lib/<platform>/`.
 
-Calling **fiji-<platform> --updater** calls a command-line version of the Fiji Updater; this is useful in headless setups.
+Calling `fiji-<platform> --updater` calls a command-line version of the Fiji Updater; this is useful in headless setups.
 
 Any script or macro can now live in any menu, by putting it into Fiji.app/plugins/Scripts/. For example, if you want to have a macro in {% include bc path='File | Import'%}, you might save it to Fiji.app/plugins/Scripts/File/Import/.
 
@@ -143,7 +142,7 @@ The Compile & Run command no longer needs write access to Fiji.app/plugins/, and
 
 A bug was fixed which prevented MBF plugins from being compiled and run on the fly when a .java file was present in a subdirectoy of Fiji.app/plugins/.
 
-Register&gt;Transform Virtual Stack Slices got a checkbox to toggle interpolation. Thanks to Stephan Saalfeld.
+{% include bc path="Register | Transform Virtual Stack Slices" %} got a checkbox to toggle interpolation. Thanks to Stephan Saalfeld.
 
 The Script\_Editor can export scripts bundled in .jar files for other Fiji users to install and run.
 
@@ -195,7 +194,7 @@ Several fixes and improvements in the mpicbg submodule for feature extraction an
 
 # Developer-visible changes
 
-There have been quite a few cleanups of the project structure; the sources for plugins and libraries which are not contained in submodules are supposed to live in src-plugins/<jarname>/<package>/<classname>.java, where <jarname> is the base name of the generated .jar file.
+There have been quite a few cleanups of the project structure; the sources for plugins and libraries which are not contained in submodules are supposed to live in `src-plugins/<jarname>/<package>/<classname>.java`, where `<jarname>` is the base name of the generated .jar file.
 
 There is now a script to compile and cross-compile ITK.
 
@@ -235,7 +234,7 @@ The helper script bin/ready-for-upload.bsh can determine whether all prerequisit
 
 The commons-math library from the Apache project is now available.
 
-Fiji Build can now build JNI-backed plugins; just add .c or .cxx files to a .jar rule, and a shared library of the same name as the .jar file will be generated from the native sources. Use fiji.JNI.loadLibrary("<name>") to load the shared library.
+Fiji Build can now build JNI-backed plugins; just add .c or .cxx files to a .jar rule, and a shared library of the same name as the .jar file will be generated from the native sources. Use `fiji.JNI.loadLibrary("<name>")` to load the shared library.
 
 Upgrade jfreechart to 1.0.13 (from 1.0.9).
 
@@ -263,7 +262,7 @@ When looking at a specific file and number in a developer checkout of Fiji, the 
 
 The submodules have been moved into the modules/ directory.
 
-You can use the short-cut URL https://fiji.sc/><filename for source files in Fiji's Git-managed repositories.
+You can use the short-cut URL `https://fiji.sc/<filename>` for source files in Fiji's Git-managed repositories.
 
 Added IntegralImages as library components to the mpicbg submodule for rapid box-filter operations (mean, scale, difference of mean, ...). Thanks to Stephan Saalfeld.
 

@@ -1,5 +1,4 @@
 ---
-mediawiki: 2011-10-16_-_The_Art_of_Debugging
 title: 2011-10-16 - The Art of Debugging
 ---
 

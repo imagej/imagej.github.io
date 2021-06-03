@@ -1,5 +1,4 @@
 ---
-mediawiki: 2011-07-01_-_First_ImageJ2_beta_delayed
 title: 2011-07-01 - First ImageJ2 beta delayed
 ---
 

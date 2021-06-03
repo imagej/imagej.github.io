@@ -1,5 +1,4 @@
 ---
-mediawiki: 2011-07-15_-_Fiji_with_splash_screen
 title: 2011-07-15 - Fiji with splash screen
 ---
 

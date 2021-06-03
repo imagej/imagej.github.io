@@ -1,5 +1,4 @@
 ---
-mediawiki: 2011-05-24_-_Advanced_Weka_Segmentation_is_released
 title: 2011-05-24 - Advanced Weka Segmentation is released
 ---
 

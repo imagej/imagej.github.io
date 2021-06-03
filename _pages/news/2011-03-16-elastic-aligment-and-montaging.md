@@ -1,5 +1,4 @@
 ---
-mediawiki: 2011-03-16_-_Elastic_aligment_and_montaging
 title: 2011-03-16 - Elastic aligment and montaging
 ---
 
