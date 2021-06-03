@@ -1,6 +1,19 @@
 ---
 mediawiki: FiloQuant
 title: FiloQuant
+
+categories: [Analysis, Segmentation, Object detection]
+
+name: FiloQuant
+source-label: GitHub
+source-url: https://github.com/guijacquemet/FiloQuant
+license-url: /licensing/lgpl
+license-label: LGPLv3
+dev-status: Stable
+support-status: Active
+team-founders: Guillaume Jacquemet | https://github.com/guijacquemet
+team-developer: Guillaume Jacquemet | https://github.com/guijacquemet
+team-contributor: Alexandre Carisey | https://github.com/alexcarisey
 ---
 
 FiloQuant is a user friendly and modifiable tool for automated detection and quantification of filopodia properties such as length and density.
