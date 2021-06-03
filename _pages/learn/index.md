@@ -39,7 +39,7 @@ On macOS, the menu bar will appear on the top of the screen (as with all macOS a
 
 ### The search bar
 
-The search bar is the next generation of the ImageJ command finder. The search panel can be brought up by clicking and typing into the search bar, or the traditional shortcut: {% include key key="L" %}
+The search bar is the next generation of the ImageJ command finder. The search panel can be brought up by clicking and typing into the search bar, or the traditional shortcut: {% include key key='ctrlcmd|L' %}
 
 ![fiji-search-window](/media/learn/fiji-search-window.png){:width="700px"}
 
