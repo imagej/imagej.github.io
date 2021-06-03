@@ -1,5 +1,4 @@
 ---
-mediawiki: 2010-10-11_-_Fix_for_updater_bug
 title: 2010-10-11 - Fix for updater bug
 ---
 

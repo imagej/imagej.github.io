@@ -1,5 +1,4 @@
 ---
-mediawiki: 2010-08-04_-_The_Script_Editor's_font_and_tab_size_are_now_adjustable
 title: 2010-08-04 - The Script Editor's font and tab size are now adjustable
 ---
 

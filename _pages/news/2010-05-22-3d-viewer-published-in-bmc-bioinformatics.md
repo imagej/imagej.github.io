@@ -1,5 +1,4 @@
 ---
-mediawiki: 2010-05-22_-_3D_viewer_published_in_BMC_Bioinformatics
 title: 2010-05-22 - 3D viewer published in BMC Bioinformatics
 ---
 

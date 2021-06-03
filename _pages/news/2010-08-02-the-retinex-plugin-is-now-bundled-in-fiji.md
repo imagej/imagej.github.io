@@ -1,5 +1,4 @@
 ---
-mediawiki: 2010-08-02_-_The_Retinex_plugin_is_now_bundled_in_Fiji
 title: 2010-08-02 - The Retinex plugin is now bundled in Fiji
 ---
 

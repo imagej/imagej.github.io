@@ -1,5 +1,4 @@
 ---
-mediawiki: 2010-03-01_-_Fiji_featured_in_Nature_Methods_review_on_visualization
 title: 2010-03-01 - Fiji featured in Nature Methods review on visualization
 ---
 

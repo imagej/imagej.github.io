@@ -1,5 +1,4 @@
 ---
-mediawiki: 2010-04-27_-_Fiji's_Script_Editor_now_understands_ImageJ_Macros
 title: 2010-04-27 - Fiji's Script Editor now understands ImageJ Macros
 ---
 

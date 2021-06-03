@@ -1,5 +1,4 @@
 ---
-mediawiki: 2010-05-11_-_A_new_home_for_ImageJA
 title: 2010-05-11 - A new home for ImageJA
 ---
 

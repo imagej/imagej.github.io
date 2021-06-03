@@ -1,5 +1,4 @@
 ---
-mediawiki: 2010-10-07_-_TrakEM2_published_in_PLoS_Biology
 title: 2010-10-07 - TrakEM2 published in PLoS Biology
 ---
 
@@ -11,6 +10,6 @@ It is a culmination of a long-term collaboration between researchers from the In
 
 All papers, software and data are Open Access showing the way of how science should be done in the 21st century.
 
-Congratulations to Albert Cardona, also known as the "Father of Fiji", for this <i>tour de force</i> effort!
+Congratulations to Albert Cardona, also known as the "Father of Fiji", for this _tour de force_ effort!
 
 

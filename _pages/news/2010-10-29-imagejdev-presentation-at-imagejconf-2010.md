@@ -1,5 +1,4 @@
 ---
-mediawiki: 2010-10-29_-_ImageJDev_presentation_at_ImageJConf_2010
 title: 2010-10-29 - ImageJDev presentation at ImageJConf 2010
 ---
 
@@ -7,10 +6,5 @@ title: 2010-10-29 - ImageJDev presentation at ImageJConf 2010
 
 We attended the [ImageJ User & Developer Conference 2010](/events/conference-2010), which was really fun and informative. We gave a talk on ImageJDev describing our vision, aims, proposed design for ImageJ 2.0, current progress and future directions, which you can access below, including speaker notes:
 
-<div style="font-size: large; font-family: monospace; padding: 0 0 0.5em 3em">
-
 [2010-10-27-ImageJDev.pdf](http://conference.imagej.net/2010/curtis-rueden/2010-10-27-ImageJDev.pdf)
 
-</div>
-
-   

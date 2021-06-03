@@ -1,5 +1,4 @@
 ---
-mediawiki: 2010-03-14_-_Hackathon_at_EMBL
 title: 2010-03-14 - Hackathon at EMBL
 ---
 

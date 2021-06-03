@@ -1,5 +1,4 @@
 ---
-mediawiki: 2010-03-02_-_Initial_Trac_tickets
 title: 2010-03-02 - Initial Trac tickets
 ---
 

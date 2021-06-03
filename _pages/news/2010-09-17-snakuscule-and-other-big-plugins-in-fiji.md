@@ -1,5 +1,4 @@
 ---
-mediawiki: 2010-09-17_-_Snakuscule_(and_other_BIG_plugins)_in_Fiji!
 title: 2010-09-17 - Snakuscule (and other BIG plugins) in Fiji!
 ---
 

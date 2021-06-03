@@ -1,5 +1,4 @@
 ---
-mediawiki: 2010-08-23_-_Neurite_Identification_Tool_for_Drosophila_brain_lineages
 title: 2010-08-23 - Neurite Identification Tool for Drosophila brain lineages
 ---
 
@@ -7,7 +6,7 @@ The paper titled "Identifying Neuronal Lineages of Drosophila by Sequence Analys
 
 Cardona A, Saalfeld S, Arganda I, Pereanu W, Schindelin J, Hartenstein V. J Neurosci. 2010 Jun 2;30(22):7538-53.
 
-http://www.jneurosci.org/cgi/content/full/30/22/7538
+[http://www.jneurosci.org/cgi/content/full/30/22/7538](http://www.jneurosci.org/cgi/content/full/30/22/7538)
 
 This work uses [TrakEM2](/plugins/trakem2) to trace and identify neuronal lineages relative to a manually annotated database of lineages.
 
