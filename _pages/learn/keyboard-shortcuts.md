@@ -1,5 +1,4 @@
 ---
-mediawiki: Keyboard_shortcuts
 title: Keyboard Shortcuts
 section: Learn:ImageJ Basics
 nav-links: true
