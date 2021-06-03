@@ -216,7 +216,7 @@ The first thing to do is make sure that ImageJ has a large enough "maximum heap"
 - Change "Maximum Memory" to something larger (at most, 1000 MB less than your computer's total RAM).
 - Restart ImageJ for the new memory settings to take effect.
 
-Note that in most cases, the [ImageJ launcher](Launcher) will make an initial guess at a reasonable value: \~75% of physical RAM.
+Note that in most cases, the [ImageJ launcher](/learn/launcher) will make an initial guess at a reasonable value: \~75% of physical RAM.
 
 You can confirm how much memory is actually available by clicking on the [status bar](/learn#the-status-bar). You will see a "\[used\] of \[max\]" memory message, as pictured here:
 

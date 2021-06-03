@@ -217,7 +217,7 @@ See [here](/software/fiji/downloads#installation) for instructions.
 
 Fiji is just ImageJ. If you are running [ImageJ2](/software/imagej2), simply run {% include bc path='Help | Update' %}, click *Manage update sites*, and enable the *Fiji* update site.
 
-Or if you are running [ImageJ1](/software/imagej1), you can bootstrap the updater by drag 'n dropping [this link](http://update.imagej.net/bootstrap.js) onto your running ImageJ and run the Javascript that was opened in a text window. After that, you can run Fiji/ImageJ using the [ImageJ launcher](Launcher) that was installed into the ImageJ directory.
+Or if you are running [ImageJ1](/software/imagej1), you can bootstrap the updater by drag 'n dropping [this link](http://update.imagej.net/bootstrap.js) onto your running ImageJ and run the Javascript that was opened in a text window. After that, you can run Fiji/ImageJ using the [ImageJ launcher](/learn/launcher) that was installed into the ImageJ directory.
 
 ## How do I develop Fiji in Eclipse?
 
@@ -395,7 +395,7 @@ We are working to create an architecture where the programs work together and pr
 
 ## Would it make sense to merge the ImageJ2 and Fiji projects?
 
-[Fiji](/software/fiji) and [ImageJ2](/software/imagej2) are fundamentally the same software, using the same [launcher](Launcher). So from the standpoint of development effort, the ImageJ2 and Fiji projects have indeed merged. ImageJ2 is the core software, and several pieces of infrastructure originally developed for Fiji have now migrated to ImageJ2 (e.g., the [Updater](/plugins/updater), [Launcher](Launcher) and [Script Editor](/scripting/script-editor) components). At heart, Fiji is just a big collection of life sciences plugins (though "Fijabcolsp" doesn't have quite the same ring to it). In other words, Fiji is just an ImageJ update site ("Fijaius")—and as such, you can obtain a working Fiji installation by downloading ImageJ2, running the updater, and enabling the Fiji update site.
+[Fiji](/software/fiji) and [ImageJ2](/software/imagej2) are fundamentally the same software, using the same [launcher](/learn/launcher). So from the standpoint of development effort, the ImageJ2 and Fiji projects have indeed merged. ImageJ2 is the core software, and several pieces of infrastructure originally developed for Fiji have now migrated to ImageJ2 (e.g., the [Updater](/plugins/updater), [Launcher](/learn/launcher) and [Script Editor](/scripting/script-editor) components). At heart, Fiji is just a big collection of life sciences plugins (though "Fijabcolsp" doesn't have quite the same ring to it). In other words, Fiji is just an ImageJ update site ("Fijaius")—and as such, you can obtain a working Fiji installation by downloading ImageJ2, running the updater, and enabling the Fiji update site.
 
 All of that said, we do not want to get rid of the two distinct project names, since people are familiar with both. But we are integrating resources when feasible: e.g., the [ImageJ wiki](/) serves all ImageJ content including Fiji-specific content (which is marked with the Fiji logo). But we want to ensure it is clear that ImageJ is not a life-sciences-specific project, whereas Fiji is. Historically, because Fiji has a life sciences focus, there have been some users who refused to switch from vanilla [ImageJ1](/software/imagej1) to Fiji even though Fiji makes users' lives easier in lots of ways. With ImageJ2, we want to avoid such misconceptions.
 

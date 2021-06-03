@@ -93,7 +93,7 @@ The **Update Bio-Formats Plugins** command will check online for updates to the 
 
 ## Calling Bio-Formats from the command line
 
-You can invoke Bio-Formats from the command line using the [ImageJ Launcher](Launcher):
+You can invoke Bio-Formats from the command line using the [ImageJ Launcher](/learn/launcher):
 
 1.  Use the [Macro Recorder](/scripting/macro#the-recorder) to record the line of macro code that runs Bio-Formats that way you want.
 2.  Click "Create" to pop up the [Script Editor](/scripting/script-editor), edit as desired, then save the macro as a `.ijm` macro file.
