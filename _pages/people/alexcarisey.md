@@ -6,8 +6,8 @@ affiliation:
   - Baylor College of Medicine, Houston TX | https://www.bcm.edu/people-search/alexandre-carisey-19103
   - Texas Children's Hospital, Houston TX | https://www.texaschildrens.org/find-a-doctor/alexandre-f-carisey-phd
 github: alexcarisey
-twitter: @alexcarisey
-linkedin: https://www.linkedin.com/in/alexcarisey/
+twitter: alexcarisey
+linkedin: in/alexcarisey
 orcid: 0000-0003-1326-2205
 
 ---
