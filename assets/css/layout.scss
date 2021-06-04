@@ -601,8 +601,11 @@ $leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding - 3
 }
 
 #header p {
-  margin: 4em 0 0 0;
+  margin: 2.7em 0 0 0;
   font-size: 1.3em;
+  position: absolute;
+  width: 100%;
+  text-align: center;
   /* font-weight: 500; */
 }
 
@@ -611,7 +614,7 @@ $leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding - 3
   -webkit-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  margin-top: 2.5em;
+  margin-top: 9em;
   margin-left: 0;
   position: relative;
 }
