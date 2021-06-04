@@ -2,6 +2,7 @@
 title: JaCoP
 categories: [Analysis,Colocalization]
 doi: 10.1111/j.1365-2818.2006.01706.x
+name: JaCoP
 license-url: /licensing/lgpl
 license-label: LGPLv3
 team-developers: Fabrice P. Cordelières | mailto:Fabrice.Cordelieres@gmail.com
