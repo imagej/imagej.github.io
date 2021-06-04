@@ -659,7 +659,7 @@ Dotfiles :: develop/dotfiles
 Download :: downloads
 Downloading_and_Building_Fiji_From_Source :: software/fiji/building-from-source
 Downloads :: downloads
-Downsample :: scripting/examples/downsample
+Downsample :: tutorials/downsample
 Dynamic_Kymograph :: plugins/dynamic-kymograph
 Dynamic_ROI_Profiler :: plugins/dynamic-roi-profiler
 Dynamic_Reslice :: plugins/dynamic-reslice
@@ -805,7 +805,7 @@ GPLv2 :: licensing/gpl
 GPLv3 :: licensing/gpl
 GSoC_2011_Ideas :: events/gsoc-2011-ideas
 GUI :: scripting/user-input
-Gabor_Filter_script :: scripting/examples/gabor-filter
+Gabor_Filter_script :: tutorials/gabor-filter
 Gabriel_Graph :: plugins/gabriel-graph
 Gauss_ImgLib2 :: libs/imglib2/gauss-package
 Gauss_Package_ImgLib2 :: libs/imglib2/gauss-package
@@ -927,7 +927,7 @@ ImageJ2/Documentation/Image/Overlay/OverlayManager :: software/imagej2/implement
 ImageJ2/Documentation/PointSetDemo :: software/imagej2/implementation-notes#pointset-demo
 ImageJ2/Documentation/Process/Math/Equation :: software/imagej2/implementation-notes#process--math--equation
 ImageJ2_Documentation_Edit_Options_Misc :: software/imagej2/implementation-notes#edit--options--compatibility
-ImageJ2_Python_Scripts :: scripting/examples/imagej2-python
+ImageJ2_Python_Scripts :: tutorials/imagej2-python
 ImageJ2_development_releases :: software/imagej2/development-releases
 ImageJ2_grant_proposal :: software/imagej2/grant-proposal
 ImageJA :: libs/imageja
@@ -1310,7 +1310,7 @@ PillarTracker_GUI :: plugins/pillartracker-gui
 Pinpoint_regressions_with_Git :: develop/git/pinpoint-regressions
 Pitfalls :: imaging/principles
 PixFRET :: plugins/pixfret
-Plasma_Cloud :: scripting/examples/plasma-cloud
+Plasma_Cloud :: tutorials/plasma-cloud
 PlugIn_Design_Guidelines :: develop/plugin-design-guidelines
 Plugin :: plugins
 Plugins :: plugins
@@ -1350,7 +1350,7 @@ RETINA_Analysis_Toolkit :: plugins/retina-analysis-toolkit
 RGB-Gray_Merge :: plugins/rgb-gray-merge
 RGB_Measure_Plus :: plugins/rgb-measure-plus
 RGB_Profiler :: plugins/rgb-profiler
-RGB_to_CMYK :: scripting/examples/rgb-to-cmyk
+RGB_to_CMYK :: tutorials/rgb-to-cmyk
 RGB_to_Montage :: plugins/rgb-to-montage
 ROI_1-click_tool :: plugins/roi-1-click-tools
 ROI_Conversions :: plugins/roi-conversions
@@ -1486,8 +1486,8 @@ Search :: /
 Segment_blob_in_3D_Viewer :: plugins/segment-blob-in-3d-viewer
 Segmentation :: imaging/segmentation
 Segmentation_Editor :: plugins/segmentation-editor
-Segmentation_evaluation_after_border_thinning_-_Script :: scripting/examples/segmentation-evaluation-after-border-thinning
-Segmentation_evaluation_metrics_-_Script :: scripting/examples/segmentation-evaluation-metrics
+Segmentation_evaluation_after_border_thinning_-_Script :: tutorials/segmentation-evaluation-after-border-thinning
+Segmentation_evaluation_metrics_-_Script :: tutorials/segmentation-evaluation-metrics
 Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012 :: events/isbi-2012-segmentation-challenge
 Select_Bounding_Box :: plugins/auto-crop
 Select_Bounding_Box_(guess_background_color) :: plugins/auto-crop
@@ -1616,7 +1616,7 @@ Strahler_Analysis :: plugins/strahler-analysis
 Straighten... :: plugins/straighten
 Sub-pixel_localization_parameter_selection :: plugins/mtrack/sub-pixel-localization-parameter-selection
 Substack_Maker :: plugins/stack-manipulation
-Super_Sloppy_Surface_Reconstruction :: scripting/examples/super-sloppy-surface-reconstruction
+Super_Sloppy_Surface_Reconstruction :: tutorials/super-sloppy-surface-reconstruction
 Support_status :: contribute/governance#support-status
 Supported_Compilers :: develop/supported-compilers
 Surface_area :: plugins/bonej#surface-area
@@ -1644,7 +1644,7 @@ Test_Block_Matching_Parameters :: plugins/test-block-matching-parameters
 Test_Java3D :: plugins/test-java3d
 Test_of_PNG-screenshot_tutorial :: <DELETED> (stub page with non-existent image)
 Testing_Procedure_for_Simple_Neurite_Tracer :: plugins/simple-neurite-tracer/testing-procedure
-The_Hue_Game :: scripting/examples/hue-game
+The_Hue_Game :: tutorials/hue-game
 Thickness :: plugins/bonej#thickness
 Thread_Killer :: plugins/thread-killer
 ThreeDViewer :: plugins/sciview
