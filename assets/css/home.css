@@ -18,6 +18,14 @@
   padding-top: 5vh;
 }
 
+#user-resources, #dev-resources {
+    padding-top: 1.5em;
+}
+
+.container {
+  margin-top: 1em;
+}
+
 .text-success {
   color: #28a745!important;
 }
