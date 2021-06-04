@@ -6,13 +6,15 @@ doi:
 - 10.1038/nmeth.1896
 - 10.1016/j.ymeth.2015.10.006
 - 10.1007/s00335-015-9587-6
+name: OMERO
+logo: /media/logos/omero.png
+team-developers: Open Microscopy Environment | https://www.openmicroscopy.org/
+team-maintainers: Open Microscopy Environment | https://www.openmicroscopy.org/
+source-url: https://github.com/ome/openmicroscopy
+website: https://www.openmicroscopy.org/info/omero
 ---
 
-
-{% capture source%}
-{% include github org='openmicroscopy' repo='openmicroscopy' %}
-{% endcapture %}
-{% include notice icon="info" content='Plugin' software='OMERO' name='OMERO' logo='<img src="/media/logos/omero.png" width="128"/>' author=' [Open Microscopy Environment](http://openmicroscopy.org/)' maintainer=' [Open Microscopy Environment](http://openmicroscopy.org/)' source=source status='active' website='http://www.openmicroscopy.org/info/omero' %}OMERO is client-server software for visualization, management and analysis of biological microscope images.
+OMERO is client-server software for visualization, management and analysis of biological microscope images.
 
 ## Publications
 
