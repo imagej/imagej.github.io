@@ -1,0 +1,16 @@
+{%- assign column-width = include.column-width | default: '10em' -%}
+{%- assign directory = include.directory -%}
+
+<ul style="column-width: {{column-width}}">
+{%- for p in site.pages -%}
+  {%- assign tokens = p.url | split: "/" -%}
+  {%- if tokens[1] != directory -%} {%- continue -%} {%- endif -%}
+  {%- if tokens[2] == 'index' -%} {%- continue -%} {%- endif -%}
+  {%- if tokens[3] and tokens[3] != 'index' -%} {%- continue -%} {%- endif -%}
+  <li><a href="{{p.url}}">{{p.title}}</a></li>
+{%- endfor -%}
+</ul>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

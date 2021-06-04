@@ -35,13 +35,7 @@ And be sure to read over the [Development](/develop) pages.
 
 ## Tutorials on this site
 
-{% for p in site.pages -%}
-  {%- assign tokens = p.url | split: "/" -%}
-  {%- if tokens[1] != 'tutorials' -%} {%- continue -%} {%- endif -%}
-  {%- if tokens[2] == 'index' -%} {%- continue -%} {%- endif %}
-  {%- assign url = p.url | replace: '/index', '' -%}
-* [{{p.title}}]({{p.url}})
-{% endfor -%}
+{% include util/list-pages directory='tutorials' column-width='15em' %}
 
 To add your tutorial to this list, place the page in the `/tutorials` folder.
 
