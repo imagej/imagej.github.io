@@ -1,5 +1,4 @@
 ---
-mediawiki: DICOM
 title: DICOM
 section: Learn:ImageJ Basics:File Formats
 categories: [Import-Export]
@@ -21,16 +20,17 @@ The [Tudor Dicom Tools](http://santec.tudor.lu/project/dicom) provide basic supp
 ## How to work with DICOM headers from a script?
 
 An example of using the `DicomTools.getTag()` method from [JavaScript](/scripting/javascript):
-
-    importClass(Packages.ij.IJ)
-    importClass(Packages.ij.util.DicomTools)
-    imp = IJ.openImage("http://wsr.imagej.net/images/ct.dcm.zip");
-    studyDescription = DicomTools.getTag(imp, "0008,1030");
-    imagePosition = DicomTools.getTag(imp, "0020,0032");
-    pixelSpacing = DicomTools.getTag(imp, "0028,0030");
-    print("Study Description: "+ studyDescription);
-    print("Image Position: "+imagePosition);
-    print("Pixel Spacing: "+ pixelSpacing);
+```java
+importClass(Packages.ij.IJ)
+importClass(Packages.ij.util.DicomTools)
+imp = IJ.openImage("http://wsr.imagej.net/images/ct.dcm.zip");
+studyDescription = DicomTools.getTag(imp, "0008,1030");
+imagePosition = DicomTools.getTag(imp, "0020,0032");
+pixelSpacing = DicomTools.getTag(imp, "0028,0030");
+print("Study Description: "+ studyDescription);
+print("Image Position: "+imagePosition);
+print("Pixel Spacing: "+ pixelSpacing);
+```
 
 ## How to work with DICOM headers from a macro?
 
@@ -42,13 +42,15 @@ See these [macro](/scripting/macro) functions:
 
 An example using `getInfo()`:
 
-    open("http://wsr.imagej.net/images/ct.dcm.zip");
-    studyDescription = getInfo("0008,1030");
-    imagePosition = getInfo("0020,0032");
-    pixelSpacing = getInfo("0028,0030");
-    print("Study Description: "+ studyDescription);
-    print("Image Position: "+imagePosition);
-    print("Pixel Spacing: "+ pixelSpacing);
+```java
+open("http://wsr.imagej.net/images/ct.dcm.zip");
+studyDescription = getInfo("0008,1030");
+imagePosition = getInfo("0020,0032");
+pixelSpacing = getInfo("0028,0030");
+print("Study Description: "+ studyDescription);
+print("Image Position: "+imagePosition);
+print("Pixel Spacing: "+ pixelSpacing);
+```
 
 See also these past threads from the ImageJ [mailing list](/discuss/mailing-lists):
 
