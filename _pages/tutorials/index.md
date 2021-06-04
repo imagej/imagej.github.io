@@ -14,7 +14,7 @@ section: Learn:ImageJ Basics
 
 ## Tutorials for specific image processing techniques
 
-The [Techniques](/imaging) guides in the sidebar present common image processing workflows.
+The [Scientific Imaging Tutorials](/imaging) introduce common elements of image processing.
 
 ## Tutorials provided by microscopy facilities
 
