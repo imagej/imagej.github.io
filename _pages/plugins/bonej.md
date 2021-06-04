@@ -15,9 +15,7 @@ artifact:
 - org.bonej:bonej-legacy-util_
 ---
 
-BoneJ is a collection of skeletal biology plug-ins for ImageJ. This is the new, modernized version of the software available through the ImageJ [updater](/plugins/updater). Its update site is called [BoneJ](http://sites.imagej.net/BoneJ). For the old ImageJ1 version, see [BoneJ1](/plugins/bonej1).
-
-This version works with the latest Fiji, and complies with the modern ImageJ [architecture](/develop/architecture). Most plug-ins also now support hyperstacks, i.e. images with multiple channels or time frames.
+BoneJ is a collection of skeletal biology plug-ins for ImageJ. This documentation is for the current BoneJ version available through the ImageJ [updater](/plugins/updater). Legacy documentation is provided for old versions (1.x) at [bonej.org](https://bonej.org/).
 
 If you use BoneJ in your work please [cite it](#citation).
 
