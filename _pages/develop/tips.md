@@ -240,7 +240,7 @@ Then you can add a new row:
 
 ## How to find equivalent API commands between ImageJ1 and ImageJ2?
 
-[ImageJ1-ImageJ2 cheat sheet](/ImageJ1-ImageJ2_cheat_sheet) is available.
+[ImageJ1-ImageJ2 cheat sheet](/develop/ij1-ij2-cheat-sheet) is available.
 
 # Tips for Graphical User Interface (GUI) programming
 

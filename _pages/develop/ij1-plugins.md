@@ -367,4 +367,4 @@ See guides on:
 -   [Plugin distribution](/contribute/distributing)
 -   [Development lifecycle](/develop/releasing)
 -   [Debugging practice](/develop/debugging-exercises)
--   [ImageJ1-ImageJ2 cheat sheet](/ImageJ1-ImageJ2_cheat_sheet)
+-   [ImageJ1-ImageJ2 cheat sheet](/develop/ij1-ij2-cheat-sheet)

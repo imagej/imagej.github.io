@@ -108,6 +108,4 @@ For the moment, we suggest using "The ImageJ ecosystem" paper for citations. But
 
 ## See also
 
--   [ImageJ1-ImageJ2 cheat sheet](ImageJ1-ImageJ2_cheat_sheet)
-
-   
+-   [ImageJ1-ImageJ2 cheat sheet](/develop/ij1-ij2-cheat-sheet)

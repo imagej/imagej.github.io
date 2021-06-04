@@ -201,7 +201,7 @@ Yes, see the [call-modern-from-legacy](https://github.com/imagej/tutorials/blob/
 
 ## How do I find equivalent commands between ImageJ1 and ImageJ2 API?
 
-[ImageJ1-ImageJ2 cheat sheet](/ImageJ1-ImageJ2_cheat_sheet) is available.
+[ImageJ1-ImageJ2 cheat sheet](/develop/ij1-ij2-cheat-sheet) is available.
 
 # [Fiji](/software/fiji)
 
