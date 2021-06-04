@@ -21,14 +21,14 @@ doi: 10.5281/zenodo.28838
 {% capture latest-version%}
 **1.1.13 March 2017** ({% include github org='tferr' repo='Scripts/releases' label='Changelog' %})
 {% endcapture %}
-{% include info-box software='ImageJ/Fiji' name='BAR' maintainer=maintainer source=source released='June 2014' latest-version=latest-version category='[Analysis](/plugin-index#analysis), [Annotation](/plugin-index#image-annotation), [Filtering](/plugin-index#filtering), [Segmentation](/plugin-index#segmentation), [Scripting](/plugin-index#scripting)' %}
+{% include info-box software='ImageJ/Fiji' name='BAR' maintainer=maintainer source=source released='June 2014' latest-version=latest-version category='Analysis, Annotation, Filtering, Segmentation, Scripting' %}
 
 </div>
 
 
  **BAR**: A collection of **B**roadly **A**pplicable **R**outines.
 
-The collection contains [Macros](/scripting/macro), [Scripts](/scripting) and [Plugins](/plugins) focused on Data Analysis, Image Annotation and Image Segmentation. It is curated using {% include github org='tferr' repo='Scripts\#ij-bar' label='GitHub' %} and distributed as an optional [update site](/list-of-update-sites).
+The collection contains [Macros](/scripting/macro), [Scripts](/scripting) and Plugins focused on Data Analysis, Image Annotation and Image Segmentation. It is curated using {% include github org='tferr' repo='Scripts\#ij-bar' label='GitHub' %} and distributed as an optional [update site](/list-of-update-sites).
 
 ## Installation
 

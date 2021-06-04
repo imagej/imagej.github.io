@@ -18,7 +18,7 @@ nav-title: Overview
 {% capture source%}
 {% include github org='morphonets' repo='SNT' %}
 {% endcapture %}
-{% include info-box name='SNT' software='complete framework for quantification of neuronal anatomy' logo='<img src="/media/logos/snt.png" width="150"/>' author=author maintainer=maintainer source=source status='stable, active' category='[Neuroanatomy](/plugin-index#neuroanatomy)' %}
+{% include info-box name='SNT' software='complete framework for quantification of neuronal anatomy' logo='<img src="/media/logos/snt.png" width="150"/>' author=author maintainer=maintainer source=source status='stable, active' category='Neuroanatomy' %}
 
 ## Overview
 

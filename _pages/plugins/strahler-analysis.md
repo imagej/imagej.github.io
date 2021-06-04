@@ -19,7 +19,7 @@ tags: strahler,plugin,arbor,neuron,morphometry,dendrite
 {% capture source%}
 {% include github org='tferr' repo='hIPNAT' %}
 {% endcapture %}
-{% include info-box software='Fiji' name='Strahler Analysis' maintainer=maintainer author=author filename='hIPNAT_.jar ([Neuroanatomy update site](/plugins/Neuroanatomy))' source=source released='April 2016' category='[Plugins](/plugin-index), [Neuroanatomy](/plugin-index#neuroanatomy), [Analysis](/plugin-index#analysis), [Skeleton](/plugin-index#skeleton)' %}
+{% include info-box software='Fiji' name='Strahler Analysis' maintainer=maintainer author=author filename='hIPNAT_.jar ([Neuroanatomy update site](/plugins/Neuroanatomy))' source=source released='April 2016' category='Plugins, Neuroanatomy, Analysis, Skeleton' %}
 
 </div>
 

@@ -7,7 +7,7 @@ categories: [Import-Export]
 {% capture source%}
 {% include github org='antinos' repo='Read_and_Write_Excel_Modified' %}
 {% endcapture %}
-{% include info-box name='Read and Write Excel' software='ImageJ/Fiji' latest-version='1.1.7' author='Anthony Sinadinos, Brenden Kromhout' maintainer='Anthony Sinadinos [(antinos)](https://forum.image.sc/u/antinos/)' source=source category='[Plugins](/plugin-index)' website=' [Youtube tutorial](https://www.youtube.com/watch?v=dLkoB25MTIY)' %}
+{% include info-box name='Read and Write Excel' software='ImageJ/Fiji' latest-version='1.1.7' author='Anthony Sinadinos, Brenden Kromhout' maintainer='Anthony Sinadinos [(antinos)](https://forum.image.sc/u/antinos/)' source=source category='Plugins' website=' [Youtube tutorial](https://www.youtube.com/watch?v=dLkoB25MTIY)' %}
 
 ## Introduction
 

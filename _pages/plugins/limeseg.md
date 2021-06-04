@@ -15,7 +15,7 @@ categories: [Uncategorized]
 {% capture source%}
 {% include github org='NicoKiaru' repo='LimeSeg' %}
 {% endcapture %}
-{% include info-box software='Fiji' name='LimeSeg' update-site='LimeSeg' logo='' maintainer=maintainer author=author source=source status='' released='01/2018' category='[Segmentation](/plugin-index#segmentation), [Plugins](/plugin-index)' %}
+{% include info-box software='Fiji' name='LimeSeg' update-site='LimeSeg' logo='' maintainer=maintainer author=author source=source status='' released='01/2018' category='Segmentation, Plugins' %}
 
 **A Fiji plugin for the segmentation of 3D objects.**
 

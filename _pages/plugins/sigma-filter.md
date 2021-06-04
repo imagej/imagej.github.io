@@ -5,7 +5,7 @@ categories: [Filtering]
 doi: 10.1016/0734-189X(83)90047-6
 ---
 
-{% include info-box software='ImageJ' name='Sigma Filter' author='Michael Schmid and Tony Collins' filename=' [Sigma_Filter_Plus.class](/ij/plugins/download/Sigma_Filter_Plus.class)' source=' [Sigma_Filter_Plus.java](/ij/plugins/download/Sigma_Filter_Plus.java)' released='25 October 2007' status='1st version' category='[Filtering](/plugin-index#filtering)' website='/ij/plugins/sigma-filter.html' %}
+{% include info-box software='ImageJ' name='Sigma Filter' author='Michael Schmid and Tony Collins' filename=' [Sigma_Filter_Plus.class](/ij/plugins/download/Sigma_Filter_Plus.class)' source=' [Sigma_Filter_Plus.java](/ij/plugins/download/Sigma_Filter_Plus.java)' released='25 October 2007' status='1st version' category='Filtering' website='/ij/plugins/sigma-filter.html' %}
 
 ## Purpose
 

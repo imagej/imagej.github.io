@@ -18,7 +18,7 @@ artifact: fr.inra.ijpb:MorphoLibJ_
 {% capture source%}
 {% include github org='ijpb' repo='MorphoLibJ' %}
 {% endcapture %}
-{% include info-box name='MorphoLibJ' software='IJPB-plugins' update-site='IJPB-plugins' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](/plugins/morpholibj) v1.4.1)' status='stable, active' category='[Analysis](/plugin-index#analysis), [Filtering](/plugin-index#filtering), [Segmentation](/plugin-index#segmentation), [Mathematical morphology](/plugin-index#mathematical-morphology)' %}MorphoLibJ is a collection of {% include wikipedia title='Mathematical morphology' text='mathematical morphology'%} methods and **plugins** for ImageJ, created at [INRA-IJPB Modeling and Digital Imaging lab](http://www-ijpb.versailles.inra.fr/en/bc/equipes/modelisation-imagerie/).
+{% include info-box name='MorphoLibJ' software='IJPB-plugins' update-site='IJPB-plugins' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](/plugins/morpholibj) v1.4.1)' status='stable, active' category='Analysis, Filtering, Segmentation, Mathematical Morphology' %}MorphoLibJ is a collection of {% include wikipedia title='Mathematical morphology' text='mathematical morphology'%} methods and **plugins** for ImageJ, created at [INRA-IJPB Modeling and Digital Imaging lab](http://www-ijpb.versailles.inra.fr/en/bc/equipes/modelisation-imagerie/).
 
 The library implements several functionalities that were missing in ImageJ, and that were not or only partially covered by other plugins. Namely:
 

@@ -12,7 +12,7 @@ categories: [Automation,Analysis,Filtering,Segmentation]
 {% capture source%}
 {% include github org='mcib3d' repo='tapas-core' %}
 {% endcapture %}
-{% include info-box name='TAPAS' software='tapas' update-site='TAPAS' author=author maintainer=' [Thomas Boudier](https://github.com/mcib3d)' source=source released='14/08/2019, V0.4' latest-version='22/06/2020, V0.6.3' status='stable, active' category='[Automation](/plugin-index#automation), [Analysis](/plugin-index#analysis), [Filtering](/plugin-index#filtering), [Segmentation](/plugin-index#segmentation)' %}
+{% include info-box name='TAPAS' software='tapas' update-site='TAPAS' author=author maintainer=' [Thomas Boudier](https://github.com/mcib3d)' source=source released='14/08/2019, V0.4' latest-version='22/06/2020, V0.6.3' status='stable, active' category='Automation, Analysis, Filtering, Segmentation' %}
 
 ## TAPAS : An integrated tool for batch processing
 

@@ -14,7 +14,7 @@ support-status: Unreleased
 {% capture source%}
 {% include github org='fiji' repo='Stochastic_Denoise' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='Stochastic Denoise' maintainer=maintainer author='Jan Funke' source=source status='unreleased' category='[Plugins](/plugin-index)' %}The Stochastic Denoise plugin implements a current state of the art denoising algorithm. It is based on random walks through the image along paths of similar pixels, as proposed by Francisco Estrada et al. (http://www.cs.utoronto.ca/\~strider/Denoise/). If you intend to use this plugin in a publication, please cite:
+{% include info-box software='ImageJ' name='Stochastic Denoise' maintainer=maintainer author='Jan Funke' source=source status='unreleased' category='Plugins' %}The Stochastic Denoise plugin implements a current state of the art denoising algorithm. It is based on random walks through the image along paths of similar pixels, as proposed by Francisco Estrada et al. (http://www.cs.utoronto.ca/\~strider/Denoise/). If you intend to use this plugin in a publication, please cite:
 
 Francisco Estrada, David Fleet, Allan Jepson, <b>Stochastic Image Denoising</b>, British Mashine Vision Conference 2009
 

@@ -5,7 +5,7 @@ categories: [Projection]
 ---
 
 {% capture benoalo %}{% include person id='benoalo' %}{% endcapture %}
-{% include info-box software='ImageJ/Fiji' name='Min Cost Z Surface' author=benoalo maintainer=benoalo released='03 August 2016' filename='![](/media/mincostzsurface-1.1.0.jar.zip)' source=' [MPI-CBG git](https://git.mpi-cbg.de/bioimage-informatics/MinCostSurface_Projection)' category='[Plugins](/plugin-index), [Projection](/plugin-index#projection)' %}
+{% include info-box software='ImageJ/Fiji' name='Min Cost Z Surface' author=benoalo maintainer=benoalo released='03 August 2016' filename='![](/media/mincostzsurface-1.1.0.jar.zip)' source=' [MPI-CBG git](https://git.mpi-cbg.de/bioimage-informatics/MinCostSurface_Projection)' category='Plugins, Projection' %}
 
 ## Introduction
 

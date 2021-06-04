@@ -16,7 +16,7 @@ categories: [Uncategorized]
 {% capture source%}
 {% include github org='morphonets' %}
 {% endcapture %}
-{% include info-box software='Fiji' name='Neuroanatomy update site' author=author maintainer=maintainer source=source status='Active' category='[Plugins](/plugin-index), [Analysis](/plugin-index#analysis), [Neuroanatomy](/plugin-index#neuroanatomy)' %} The Neuroanatomy update site is used for distribution of [SNT](/plugins/snt). A few other (legacy) plugins for *Image Processing for NeuroAnatomy and Tree-like Structures* are also included. For a list of all pages in this wiki related to Neuroanatomy have a look at [Neuroanatomy](/plugin-index#neuroanatomy).
+{% include info-box software='Fiji' name='Neuroanatomy update site' author=author maintainer=maintainer source=source status='Active' category='Plugins, Analysis, Neuroanatomy' %} The Neuroanatomy update site is used for distribution of [SNT](/plugins/snt). A few other (legacy) plugins for *Image Processing for NeuroAnatomy and Tree-like Structures* are also included. For a list of all pages in this wiki related to Neuroanatomy have a look at [Neuroanatomy](/plugin-index#neuroanatomy).
 
 # Installation
 

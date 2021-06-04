@@ -5,7 +5,7 @@ categories: [Registration]
 ---
 
 {% capture benoalo %}{% include person id='benoalo' %}{% endcapture %}
-{% include info-box software='Fiji' name='Manual drift correction' author=benoalo maintainer=benoalo released='22 March 2016' filename='![](/media/plugins/manual-drift-correction-1.0.0.jar.zip)' source=' [github](https://github.com/mpicbg-scicomp/Manual_drift_correction)' category='[Plugins](/plugin-index), [Registration](/plugin-index#registration)' %}
+{% include info-box software='Fiji' name='Manual drift correction' author=benoalo maintainer=benoalo released='22 March 2016' filename='![](/media/plugins/manual-drift-correction-1.0.0.jar.zip)' source=' [github](https://github.com/mpicbg-scicomp/Manual_drift_correction)' category='Plugins, Registration' %}
 
 ## Goal of the plugin
 

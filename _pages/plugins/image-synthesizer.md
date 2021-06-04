@@ -4,7 +4,7 @@ title: Image Synthesizer
 categories: [Uncategorized]
 ---
 
-{% include info-box software='ImageJ / Fiji plugins' name='Image Synthesizer' maintainer='Maximilian Maske' author='Maximilian Maske' released='19.03.2018' latest-version='24.05.2020' category='[Plugins](/plugin-index)' website='http://wiki.imagej.net/Image\_Synthesizer' %}
+{% include info-box software='ImageJ / Fiji plugins' name='Image Synthesizer' maintainer='Maximilian Maske' author='Maximilian Maske' released='19.03.2018' latest-version='24.05.2020' category='Plugins' website='http://wiki.imagej.net/Image\_Synthesizer' %}
 
 ## Overview of 'Image Synthesizer'
 

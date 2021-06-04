@@ -17,7 +17,7 @@ doi: 10.1177/0748730411414264
 {% capture source%}
 {% include github org='bene51' repo='ActogramJ' %}
 {% endcapture %}
-{% include info-box software='Fiji' name='ActogramJ' maintainer=maintainer author=author source=source status='active' released='2010' category='[Visualization](/plugin-index#visualization), [Plugins](/plugin-index)' %}
+{% include info-box software='Fiji' name='ActogramJ' maintainer=maintainer author=author source=source status='active' released='2010' category='Visualization, Plugins' %}
 
 **ActogramJ** - Visualizing and analyzing activity diagrams in behavioral experiments
 

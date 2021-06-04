@@ -16,7 +16,7 @@ categories: [Uncategorized]
 {% capture source%}
 {% include github org='CSIM-Toolkits' repo='ImageJ/tree/master/plugins/AnomalousDiffusionFilters' label='GitHub CSIM-ImageJ AnomalousDiffusionFilters repository' %}
 {% endcapture %}
-{% include info-box name='Anomalous Diffusion Filters PlugIn' software='Fiji' author=author maintainer=maintainer source=source released='February 03<sup>rd</sup>, 2015' latest-version='February 03<sup>rd</sup>, 2015' status='experimental, active' category='[Plugins](/plugin-index), [Filtering](/plugin-index#filtering)' %}
+{% include info-box name='Anomalous Diffusion Filters PlugIn' software='Fiji' author=author maintainer=maintainer source=source released='February 03<sup>rd</sup>, 2015' latest-version='February 03<sup>rd</sup>, 2015' status='experimental, active' category='Plugins, Filtering' %}
 
 ## Anomalous Diffusion Filters
 
