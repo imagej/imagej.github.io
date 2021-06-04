@@ -634,9 +634,9 @@ makeMontage(false);
 
 Macro to mimic the merge sides command in the original BioRad MRC600 confocal.
 
-For an example raw image, see http://www.flickr.com/photos/mcammer/1618746622/
+For an example raw image, see [http://www.flickr.com/photos/mcammer/1618746622/]()
 
-For an example result, see http://www.flickr.com/photos/mcammer/8551068739/
+For an example result, see [http://www.flickr.com/photos/mcammer/8551068739/]()
 
 Splits a grayscale image and merges. Works on stacks.
 
