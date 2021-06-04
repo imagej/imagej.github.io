@@ -2,7 +2,6 @@
 mediawiki: ImageJ
 title: ImageJ
 section: Learn:ImageJ Basics
-categories: [Software]
 doi: 10.1002/mrd.22489
 
 timeline-imagej:

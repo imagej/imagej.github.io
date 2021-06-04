@@ -2,7 +2,6 @@
 mediawiki: ImageJA
 title: ImageJA
 section: Explore:Libraries
-categories: [Software]
 ---
 
 {% include project content='ImageJ1' %}

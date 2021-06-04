@@ -1,7 +1,6 @@
 ---
 mediawiki: Segmentation_evaluation_metrics_-_Script
 title: Segmentation evaluation metrics - Script
-categories: [Segmentation,Scripting]
 ---
 
 The following [Beanshell script](/scripting/beanshell) allows you to evaluate the performance of your [segmentation](/plugin-index#segmentation) method.

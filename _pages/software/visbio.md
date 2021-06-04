@@ -2,7 +2,6 @@
 mediawiki: VisBio
 title: VisBio
 section: Explore:Software
-categories: [Software]
 ---
 
 

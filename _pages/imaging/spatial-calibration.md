@@ -1,7 +1,6 @@
 ---
 mediawiki: Spatial_Calibration
 title: Spatial Calibration
-categories: [Tutorials,Techniques]
 section: Imaging
 nav-links: true
 ---

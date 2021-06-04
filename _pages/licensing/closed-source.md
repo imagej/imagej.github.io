@@ -1,7 +1,6 @@
 ---
 mediawiki: Why_Closed-Source_Is_Wrong
 title: Why Closed-Source Is Wrong
-categories: [Development]
 section: Contribute:Licensing:Proprietary
 ---
 

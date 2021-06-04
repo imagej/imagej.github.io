@@ -2,7 +2,6 @@
 mediawiki: SciJava_Jupyter_Kernel
 title: SciJava Jupyter Kernel
 section: Explore:Software
-categories: [Software]
 ---
 
 

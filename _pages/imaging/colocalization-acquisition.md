@@ -1,6 +1,5 @@
 ---
 title: Colocalization - hardware setup and image acquisition
-categories: [Colocalization,Tutorials,Color processing]
 section: Imaging
 nav-links: true
 nav-title: Colocalization Acquisition

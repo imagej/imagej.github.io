@@ -2,7 +2,6 @@
 mediawiki: Icy
 title: Icy
 section: Explore:Software
-categories: [Software,SciJava]
 doi: 10.1038/nmeth.2075
 ---
 

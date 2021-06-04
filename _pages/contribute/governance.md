@@ -1,7 +1,6 @@
 ---
 title: Governance
 section: Contribute
-categories: [Development]
 nav-links: true
 ---
 

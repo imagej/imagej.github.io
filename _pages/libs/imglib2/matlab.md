@@ -2,7 +2,6 @@
 mediawiki: Creating_Imglib2_images_in_MATLAB
 title: Creating Imglib2 images in MATLAB
 section: Explore:Libraries:ImgLib2
-categories: [ImgLib,Matlab]
 ---
 
 

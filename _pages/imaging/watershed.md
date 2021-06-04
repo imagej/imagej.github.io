@@ -1,7 +1,6 @@
 ---
 mediawiki: Nuclei_Watershed_Separation
 title: Watershed Separation
-categories: [Tutorials,Segmentation]
 section: Imaging
 nav-links: true
 ---

@@ -2,7 +2,6 @@
 mediawiki: ImgLib2_Discussion
 title: ImgLib2 Discussion
 section: Explore:Libraries:ImgLib2
-categories: [ImgLib]
 ---
 
 ## 2011-03-16

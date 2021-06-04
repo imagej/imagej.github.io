@@ -1,6 +1,5 @@
 ---
 title: Learnathon 2017
-categories: [News]
 ---
 
 The first DAIS Learnathon took place from June 18 until June 24 2017.

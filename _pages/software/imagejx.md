@@ -2,7 +2,6 @@
 mediawiki: ImageJX
 title: ImageJX
 section: Explore:Software
-categories: [Software]
 ---
 
 ImageJX was created by Grant Harris as a means to discuss and explore improvements to ImageJ. There was an [ImageJX mailing list](http://groups.google.com/group/imagejx) as well as an ImageJX software prototype.

@@ -1,7 +1,6 @@
 ---
 mediawiki: 2011_Hackathon_in_Madison
 title: 2011 Hackathon in Madison
-categories: [Hackathons]
 ---
 
 The 2011 Madison [Fiji](/software/fiji)/ImageJDev [hackathon](/events/hackathons) took place from Friday, January 28 until Friday, February 11. The topic was "Multidimensional Visualization and Analysis in Fiji."

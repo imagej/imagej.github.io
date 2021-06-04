@@ -2,7 +2,6 @@
 mediawiki: Developing_ImgLib2
 title: Developing ImgLib2
 section: Explore:Libraries:ImgLib2
-categories: [ImgLib,Tutorials,Development]
 ---
 
 

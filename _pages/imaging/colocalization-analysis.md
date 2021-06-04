@@ -2,7 +2,6 @@
 title: Colocalization Analysis
 description: Fluorescence colocalization analysis is used to determine whether two molecules associate with the same structure
 description: Learn about the numerous methods of colocalization analysis
-categories: [Cookbook,Tutorials,Colocalization,Color processing]
 section: Learn:Scientific Imaging
 nav-links: true
 ---

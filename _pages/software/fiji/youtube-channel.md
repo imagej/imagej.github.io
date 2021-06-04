@@ -1,6 +1,5 @@
 ---
 title: Fiji/YouTube Channel
-categories: [Tutorials]
 ---
 
 Fiji has a [YouTube Channel](http://www.youtube.com/user/fijichannel)

@@ -2,7 +2,6 @@
 mediawiki: Alida
 title: Alida
 section: Explore:Software
-categories: [Software,SciJava]
 doi: 10.5334/jors.124
 ---
 

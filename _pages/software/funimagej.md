@@ -3,7 +3,7 @@ mediawiki: FunImageJ
 title: FunImageJ
 section: Explore:Software
 artifact: fun.imagej:fun.imagej
-categories: [Lisp, Citable]
+categories: [Lisp]
 doi: 10.1093/bioinformatics/btx710
 ---
 

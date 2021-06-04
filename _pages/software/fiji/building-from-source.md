@@ -2,7 +2,6 @@
 mediawiki: Downloading_and_Building_Fiji_From_Source
 title: Downloading and Building Fiji From Source
 section: Explore:Software:Fiji
-categories: [Development,Fiji]
 ---
 
 

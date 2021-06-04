@@ -1,7 +1,6 @@
 ---
 title: Developing Fiji
 section: Explore:Software:Fiji
-categories: [Development,Fiji]
 ---
 
 

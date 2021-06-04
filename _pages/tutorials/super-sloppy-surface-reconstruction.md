@@ -1,7 +1,6 @@
 ---
 mediawiki: Super_Sloppy_Surface_Reconstruction
 title: Super Sloppy Surface Reconstruction
-categories: [Scripting]
 ---
 
 Super sloppy surface reconstruction from planetary surface photographs or {% include wikipedia title='Scanning electron microscope' text='Scanning Electron Micrographs (SEM)'%}.

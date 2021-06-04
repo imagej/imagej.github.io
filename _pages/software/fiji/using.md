@@ -2,7 +2,6 @@
 mediawiki: Using_Fiji
 title: Using Fiji
 section: Explore:Software:Fiji
-categories: [Fiji]
 ---
 
 {% include notice icon="todo" content="**TODO:** Eliminate this page, moving any useful links to the right places on the site." %}

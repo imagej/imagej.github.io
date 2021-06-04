@@ -2,7 +2,6 @@
 mediawiki: KNIME
 title: KNIME
 section: Explore:Software
-categories: [Software,SciJava]
 doi:
 - 10.3389/fcomp.2020.00008
 - 10.1016/j.jbiotec.2017.07.028

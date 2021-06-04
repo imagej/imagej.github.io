@@ -1,7 +1,6 @@
 ---
 title: OMERO
 section: Explore:Software
-categories: [Software,SciJava,OME]
 doi:
 - 10.1038/nmeth.1896
 - 10.1016/j.ymeth.2015.10.006

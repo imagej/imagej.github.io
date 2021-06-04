@@ -2,7 +2,6 @@
 mediawiki: Fiji
 title: Fiji
 section: Explore:Software
-categories: [Fiji,Related Software]
 doi: 10.1038/nmeth.2019
 ---
 

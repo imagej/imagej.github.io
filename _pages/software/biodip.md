@@ -2,7 +2,6 @@
 mediawiki: BioDIP
 title: BioDIP
 section: Explore:Software
-categories: [Software]
 ---
 
 See the [Biopolis Dresden Imaging Platform project](http://www.biodip.de/wiki/Biopolis_Dresden_Imaging_Platform).

@@ -1,7 +1,6 @@
 ---
 title: Detect Information Loss
 description: How to detect various forms of information loss in images
-categories: [Tutorials]
 section: Imaging
 nav-links: true
 nav-title: Information Loss

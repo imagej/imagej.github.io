@@ -2,7 +2,6 @@
 mediawiki: ImageJFX
 section: Explore:Software
 title: ImageJFX
-categories: [Software]
 ---
 
 

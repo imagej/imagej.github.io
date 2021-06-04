@@ -2,7 +2,6 @@
 mediawiki: Script_Editor_Auto_Import
 title: Script Editor Auto Import
 section: Extend:Scripting
-categories: [Scripting]
 ---
 
 

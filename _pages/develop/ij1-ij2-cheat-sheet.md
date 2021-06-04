@@ -1,7 +1,6 @@
 ---
 mediawiki: ImageJ1-ImageJ2_cheat_sheet
 title: ImageJ1-ImageJ2 cheat sheet
-categories: [Tutorials,Development]
 ---
 
 This page summarizes translation of basic operations of ImageJ1 and ImageJ2 API. Based on the work of {% include person id='haesleinhuepf' %}, Scientific Computing Facility, MPI-CBG Dresden.

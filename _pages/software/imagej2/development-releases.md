@@ -1,7 +1,6 @@
 ---
 mediawiki: ImageJ2_development_releases
 title: ImageJ2 development releases
-categories: [Software]
 ---
 
 This table lists the versions of [ImageJ2](/software/imagej2) released during its initial incubation period.

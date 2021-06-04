@@ -1,7 +1,6 @@
 ---
 mediawiki: Image_Processing_School_Pilsen_2009_-_Segmentation
 title: Image Processing School Pilsen 2009 - Segmentation
-categories: [Tutorials]
 ---
 
 ## Introduction

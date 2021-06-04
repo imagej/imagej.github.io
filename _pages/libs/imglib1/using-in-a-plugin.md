@@ -1,7 +1,6 @@
 ---
 mediawiki: Using_ImgLib1_in_a_plugin
 title: Using ImgLib1 in an ImageJ plugin
-categories: [ImgLib,Tutorials,Development]
 nav-links: true
 nav-title: ImageJ Plugins
 ---

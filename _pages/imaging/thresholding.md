@@ -1,7 +1,6 @@
 ---
 mediawiki: Thresholding
 title: Thresholding
-categories: [Techniques, Tutorials]
 section: Imaging
 nav-links: true
 ---

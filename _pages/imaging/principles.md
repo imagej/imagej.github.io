@@ -1,7 +1,6 @@
 ---
 mediawiki: Principles
 title: Principles of Scientific Imaging
-categories: [Tutorials]
 section: Learn:Scientific Imaging
 nav-links: true
 nav-title: Principles

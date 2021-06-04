@@ -2,7 +2,6 @@
 mediawiki: ImgLib2_-_Advanced_Programming_Workshop
 title: ImgLib2 - Advanced Programming Workshop
 section: Explore:Libraries:ImgLib2
-categories: [ImgLib]
 ---
 
 

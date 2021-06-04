@@ -2,7 +2,6 @@
 mediawiki: Using_the_Script_Editor
 title: Using the Script Editor
 section: Extend:Scripting
-categories: [Tutorials,Scripting]
 ---
 
 

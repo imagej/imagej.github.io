@@ -2,7 +2,6 @@
 mediawiki: ImgLib2_FAQ
 title: ImgLib2 FAQ
 section: Explore:Libraries:ImgLib2
-categories: [ImgLib]
 ---
 
 

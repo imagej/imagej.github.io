@@ -2,7 +2,6 @@
 mediawiki: Hackathon
 title: Hackathon
 section: Explore:Events
-categories: [Hackathons, Community]
 ---
 
 # What is a hackathon?
