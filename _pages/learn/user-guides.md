@@ -1,5 +1,4 @@
 ---
-mediawiki: User_Guides
 title: User Guides
 section: Learn:ImageJ Basics
 nav-links: true
