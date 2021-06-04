@@ -85,7 +85,6 @@ function toggleAllCategories(checked) {
   align-items: center;
   line-height: 0.9em;
   overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
 }
 #list-of-extensions li div {
