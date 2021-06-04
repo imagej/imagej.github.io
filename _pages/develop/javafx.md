@@ -21,10 +21,10 @@ that will in the long term probably
 
 ## Under the hood
 
-Usually a JavaFX program needs to declare a `javafx.application.Application`.
-However, only *one* `Application` instance can exist at runtime, so the 
+Usually a JavaFX program needs to declare a `javafx.application.Application` 
+and only *one* `Application` instance can exist at runtime. Therefore, the 
 `javafx.embed.swing.JFXPanel` class which makes the link/bridge between a
-`JFrame` and JavaFX is the preferred way build a JavaFX project using the
+`JFrame` and JavaFX is the preferred way to build a JavaFX project within the
 IJ1/IJ2 interface (using Swing).
 
 -   An example of how to use the `javafx.embed.swing.JFXPanel` in a Fiji project can be found
@@ -32,7 +32,7 @@ IJ1/IJ2 interface (using Swing).
     
 The ImageJ UI is written in Swing and JavaFX will run in a different thread. This adds some additional considerations
 when building JavaFX projects that will run in ImageJ. Extra care must be taken to ensure changes in the swing UI are
-done on the swing thread and changes to the JavaFX UI are done using the JavaFX thread. For example, the JXPanel is 
+done on the Swing thread and changes to the JavaFX UI are done using the JavaFX thread. For example, the JXPanel is 
 created on the JavaFX thread using the following Platform.runLater approach:
 
 ```java
@@ -48,12 +48,13 @@ To update Swing UI elements from the JavaFX thread the following approach is use
 
 ```java
 SwingUtilities.invokeLater(new Runnable() {
-	@Override
-	public void run() {
-	    //Update something on the swing thread.
+    @Override
+    public void run() {
+    	//Update something on the swing thread.
     }
 });
 ```
+
 Further explanation can be found [here](https://docs.oracle.com/javafx/2/swing/swing-fx-interoperability.htm).
 
 ## Building ImageJ plugins with JavaFX
@@ -68,3 +69,11 @@ There is a **minimal, incomplete ImageJ plugin** that
 shows how to use JavaFX for the UI of a plugin:
 
 {% include link-banner url="https://github.com/ctrueden/imagej-plugins-javafx" %}
+
+Here are some projects that use JavaFX in ImageJ:
+
+-   [OMEVisual](https://github.com/fiji/OMEVisual)
+-   [FilamentDetector](https://github.com/fiji/FilamentDetector)
+
+Another example of an large image processing application that uses IJ2 and is written 
+in JavaFX is [qupath](https://github.com/qupath/qupath)
