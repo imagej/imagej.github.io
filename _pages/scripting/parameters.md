@@ -62,13 +62,15 @@ By implementing {% include javadoc project='SciJava' package='org/scijava/widget
 
 ### Integer and Decimal input
 
-Integer and flaot can have the optional argument *min*, *max* and *stepSize* value (default 1) as well as a default value indicated by *value*.  
+Integer and float can have the optional argument *min*, *max* and *stepSize* value (default 1) as well as a default value indicated by *value*.  
 Different styles are also possible.
+
 ```javascript
 #@ Integer (label="Default integer style", min=0, max=10, value=5) myint1
 #@ Integer (label="Slider integer style", style="slider", min=0, max=10, stepSize=2) myint2
 #@ Float   (label="Slider with float", style="slider", min=0, max=1, stepSize=0.1) myfloat
 ```
+
 <img src="/media/scripting/scriptparameters-integerstyles.jpg" width="450"/>
 
 ## Parameter properties
