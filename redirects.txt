@@ -1037,7 +1037,8 @@ JRuby_Scripting :: scripting/jruby
 JaCoP :: plugins/jacop
 Java :: develop/plugins
 Java3D :: libs/java-3d
-JavaOptions :: TODO (Java_Options)
+JavaOptions :: learn/launcher
+Java_Options :: learn/launcher
 JavaScript :: scripting/javascript
 JavaScript_Scripting :: scripting/javascript
 Java_3D :: libs/java-3d
