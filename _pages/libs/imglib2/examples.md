@@ -1,5 +1,4 @@
 ---
-mediawiki: ImgLib2_Examples
 title: ImgLib2 Examples
 section: Explore:Libraries:ImgLib2
 name: ImgLib2 Examples
