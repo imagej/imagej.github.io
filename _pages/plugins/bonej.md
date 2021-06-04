@@ -1,12 +1,18 @@
 ---
 mediawiki: BoneJ
 title: BoneJ
+description: Plugins for bone image analysis in ImageJ 
 categories: [Analysis, Mathematical morphology, Particle Analysis]
+logo: /media/logos/bonej.png
 doi:
 - 10.12688/wellcomeopenres.16619.1
 - 10.5281/zenodo.1427262
-name: BoneJ
-artifact: org.bonej:bonej-utilities
+artifact:
+- org.bonej:bonej-plugins
+- org.bonej:bonej-utilities
+- org.bonej:bonej-ops
+- org.bonej:bonej-legacy-plugins_
+- org.bonej:bonej-legacy-util_
 ---
 
 BoneJ is a collection of skeletal biology plug-ins for ImageJ. This is the new, modernized version of the software available through the ImageJ [updater](/plugins/updater). Its update site is called [BoneJ](http://sites.imagej.net/BoneJ). For the old ImageJ1 version, see [BoneJ1](/plugins/bonej1).
