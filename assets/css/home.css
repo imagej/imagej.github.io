@@ -48,8 +48,6 @@
   flex-wrap: wrap;
   overflow: hidden;
   margin-top: 2.5em;
-  padding-left: 2em;
-  padding-right: 2em;
   margin-bottom: 2em;
 }
 
@@ -59,11 +57,13 @@
 }
 
 .col-4 {
-  width: 33.33%;
+  width: 30.5%;
   text-align:center;
   vertical-align:top;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 .col-4 p {
