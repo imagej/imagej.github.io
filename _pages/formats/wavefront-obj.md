@@ -1,5 +1,6 @@
 ---
 title: Wavefront .OBJ ...
+nav-links: true
 ---
 
 

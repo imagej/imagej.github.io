@@ -3,6 +3,7 @@ mediawiki: Save_as_animated_gif
 title: Save as animated gif
 section: Learn:File Formats
 categories: [Tutorials]
+nav-links: true
 ---
 
 
@@ -21,6 +22,6 @@ Done!
 
 1.  Go to menu {% include bc path='Image | Overlay | Flatten'%}
 
-or use Ctrl+Shift+F.
+or use `Ctrl+Shift+F`.
 
  

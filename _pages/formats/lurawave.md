@@ -1,8 +1,8 @@
 ---
-mediawiki: LuraWave
 title: LuraWave
 section: Learn:ImageJ Basics:File Formats
 categories: [Import-Export]
+nav-links: true
 ---
 
 If you have Flex files from an older Opera system, you may receive a message from [Bio-Formats](/formats/bio-formats) stating that you need a LuraWave LWF license code to decode these files.
@@ -22,7 +22,7 @@ Unfortunately, for legal reasons, we cannot elaborate on the technical details o
 
 ## Purchasing your own license
 
-Alternately, the LuraWave decoder is proprietary software which you can (theoretically) purchase from [LuraTech](https://www.luratech.com/en/). However, we do not know the details of who to contact, nor how much it costs to do so.
+Alternately, the LuraWave decoder is proprietary software which you can (theoretically) purchase from [LuraTech](https://www.luratech.com/en/). However, we do not know the details of who to contact, nor how much it costs to do so. In October of 2015 Foxit Corporation acquired LuraTech Imaging GmbH.
 
 ## See also
 

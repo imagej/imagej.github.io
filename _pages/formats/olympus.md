@@ -1,8 +1,8 @@
 ---
-mediawiki: OlympusImageJPlugin
 title: OlympusImageJPlugin
 section: Learn:ImageJ Basics:File Formats
 categories: [Import-Export]
+nav-links: true
 ---
 
 
@@ -66,78 +66,75 @@ Use Macro function (ver2.3.1-)
 
 -   Sample for opening an image:
 
-<!-- -->
+`run("Viewer", "open=D:/image/test/test.oir");`
 
-    run("Viewer", "open=D:/image/test/test.oir");
+- Sample for opening an image which has multiple groups or levels:
 
--   Sample for opening an image which has multiple groups or levels:
+`run("Viewer", "open=D:/image/test/test.vsi group1_level1");`
 
-<!-- -->
+- Sample for opening images in a directory:
 
-    run("Viewer", "open=D:/image/test/test.vsi group1_level1");
+````
+input = "D:/image/test/";
 
--   Sample for opening images in a directory:
+list = getFileList(input);
+for (i = 0; i < list.length; i++){
+	path = input + list[i];
+	run("Viewer", "open=[path]");
+}
+````
 
-<!-- -->
+-    Sample for batch processing:
 
-    input = "D:/image/test/";
+````
+setBatchMode(true);
 
-    list = getFileList(input);
-    for (i = 0; i < list.length; i++){
-        path = input + list[i];
-        run("Viewer", "open=[path]");
-    }
+input = "D:/image/test/";
 
--   Sample for batch processing:
-
-<!-- -->
-
-    setBatchMode(true);
-
-    input = "D:/image/test/";
-
-    list = getFileList(input);
-    for (i = 0; i < list.length; i++){
-        path = input + list[i];
-        run("Viewer", "open=[path]");
-        // process image e.g. "run("Smooth", "stack");"
-        saveAs("Tiff", "D:/image/test/out_" + i + ".tif");
-    }
-
+list = getFileList(input);
+for (i = 0; i < list.length; i++){
+	path = input + list[i];
+	run("Viewer", "open=[path]");
+	// process image e.g. "run("Smooth", "stack");"
+	saveAs("Tiff", "D:/image/test/out_" + i + ".tif");
+}
+````
+`
 ### Use programming interface
 
 You can use programming interface by using *OVMacro* command.
 
 -   Sample for opening an image:
 
-<!-- -->
-
-    run("OVMacro");
-    Ext.openFile("D:/image/test/test.oir");
+````
+run("OVMacro");
+Ext.openFile("D:/image/test/test.oir");
+````
 
 -   Sample for opening an image which has multiple groups or levels:
 
-<!-- -->
 
-    run("OVMacro");
-    Ext.openFile("D:/image/test/test.vsi", 1, 2); // Open Group 2, Level 3
+````
+run("OVMacro");
+Ext.openFile("D:/image/test/test.vsi", 1, 2); // Open Group 2, Level 3
+````
 
 -   Sample for opening images in a directory:
 
-<!-- -->
-
-    run("OVMacro");
-    Ext.openFolder("D:/image/test"); // You can specify group and level like as openFile
+````
+run("OVMacro");
+Ext.openFolder("D:/image/test"); // You can specify group and level like as openFile
+````
 
 -   Sample for getting number of groups and levels:
 
-<!-- -->
-
-    run("OVMacro");
-    path = "D:/image/test/test.vsi";
-    Ext.getGroupCount(path, groupNum); // Get total count of groups
-    Ext.getLevelCount(path, groupNum-1, levelNum); // Get total count of levels
-    Ext.openFile(path, groupNum-1, levelNum-1); // Open last level of the last group
+````
+run("OVMacro");
+path = "D:/image/test/test.vsi";
+Ext.getGroupCount(path, groupNum); // Get total count of groups
+Ext.getLevelCount(path, groupNum-1, levelNum); // Get total count of levels
+Ext.openFile(path, groupNum-1, levelNum-1); // Open last level of the last group
+````
 
 ## See Also
 
