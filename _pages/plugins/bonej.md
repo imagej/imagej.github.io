@@ -13,6 +13,8 @@ BoneJ is a collection of skeletal biology plug-ins for ImageJ. This documentatio
 
 If you use BoneJ in your work please [cite it](#citation).
 
+{% include citation %}
+
 ## Installation
 
 ![Install BoneJ](/media/plugins/install-bonej.png)
