@@ -1,7 +1,4 @@
 ---
-mediawiki:
-- Deconvolution
-- Deconvolution_tips
 title: Deconvolution
 categories: [Tutorials,Deconvolution]
 section: Learn:Scientific Imaging
@@ -121,12 +118,15 @@ The last step in generating a useful measured PSF for deconvolution is to subtra
 
 It is best to start the z-stack well above the object of interest, and to continue well below, in order to cover the PSF of every interesting point in the sample. If only the "in focus" part of the sample is imaged, the deconvolution result will not greatly improve the image since information is missing.
 
-The appropriate z-step interval can be calculated from the Abbe/Rayleigh diffraction limit equation Dz = (lambda \* RI) / (NA \* NA) where Dz = the ideal z-step interval in nanometers, lambda = the emission wavelength, RI = the refractive index of the mounting medium, and NA = the numerical aperture of the objective. For example, a z-step interval of \~ 350 nm is appropriate for imaging FITC fluorescence using a 1.4 NA objective and a mounting medium with an RI of 1.5.
+The appropriate z-step interval can be calculated from the Abbe/Rayleigh diffraction limit equation $$Dz = {(lambda \times RI) \over (NA \times NA)}$$ where Dz = the ideal z-step interval in nanometers, lambda = the emission wavelength, RI = the refractive index of the mounting medium, and NA = the numerical aperture of the objective. For example, a z-step interval of \~ 350 nm is appropriate for imaging FITC fluorescence using a 1.4 NA objective and a mounting medium with an RI of 1.5.
 
 Always use the same conditions that were used for acquisition of the measured PSF, or generate a theoretical PSF that corresponds to your exact conditions.
+
+
 
 ### How to do the deconvolution
 
 Several plugins for imageJ exist. The most sophisticated are the [DeconvolutionLab (BIG - EPFL)](http://bigwww.epfl.ch/algorithms/deconvolutionlab/) and the parallel [iterative](/plugins/parallel-iterative-deconvolution) and [spectral](/plugins/parallel-spectral-deconvolution) deconvolution plugins.
 
-For further very nicely written and informative descriptions of this topic, see http://www.svi.nl/HomePage.
+For further very nicely written and informative descriptions of this topic, see the [Huygens deconvolution guide](https://www.svi.nl/Huygens-Deconvolution).
+
