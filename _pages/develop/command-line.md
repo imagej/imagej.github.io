@@ -1,5 +1,4 @@
 ---
-mediawiki: Developing_ImageJ_on_the_command_line
 section: Extend:Development:Tools:IDEs
 title: Developing ImageJ on the command line
 ---
@@ -73,5 +72,3 @@ See the [Source Code](/develop/source) page for further details.
 ## See also
 
 -   [Dotfiles](/develop/dotfiles) if you want to twink out your shell
-
- 
