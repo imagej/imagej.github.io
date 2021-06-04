@@ -13,9 +13,10 @@
 #header img {
   display: block;
   width: auto;
-  height: 60vh;
+  height: calc(70vh - 12em);
   margin: auto;
   padding-top: 5vh;
+  min-height: 200px;
 }
 
 #user-resources, #dev-resources {
