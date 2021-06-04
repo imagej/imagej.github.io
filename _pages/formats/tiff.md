@@ -1,5 +1,4 @@
 ---
-mediawiki: TIFF
 title: TIFF
 section: Learn:ImageJ Basics:File Formats
 categories: [Import-Export, Development]
