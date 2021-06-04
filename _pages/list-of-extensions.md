@@ -130,7 +130,7 @@ function toggleAllCategories(checked) {
   <li class="{{classes}}">
     <img src="{{p.icon}}" height=25>
     <div>
-      <a href="{{url}}">{{p.title}}</a><br>
+      <a href="{{p.url | replace: '/index', ''}}">{{p.title}}</a><br>
       <span class="categories">{{ p.categories | join: ', ' }}</span>
     </div>
   </li>
