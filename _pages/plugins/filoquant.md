@@ -10,8 +10,8 @@ license-label: LGPLv3
 dev-status: Stable
 support-status: Active
 team-founders: Guillaume Jacquemet | https://github.com/guijacquemet
-team-developer: Guillaume Jacquemet | https://github.com/guijacquemet
-team-contributor: Alexandre Carisey | https://github.com/alexcarisey
+team-developers: Guillaume Jacquemet | https://github.com/guijacquemet
+team-contributors: Alexandre Carisey | https://github.com/alexcarisey
 ---
 
 ## Overview
