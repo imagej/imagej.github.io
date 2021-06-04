@@ -1,7 +1,7 @@
 ---
 title: Analyzing TrackMate results with MATLAB
 description: How to import and analyze TrackMate results in MATLAB.
-categories: [Tracking,Matlab,tutorials]
+categories: [Tracking,Matlab,Tutorials]
 ---
 
 This page documents the various ways to exchange data between [TrackMate](/plugins/trackmate) and [MATLAB](/scripting/matlab).

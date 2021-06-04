@@ -1,7 +1,7 @@
 ---
 mediawiki: Distance_Transform_3D
 title: Distance Transform 3D
-categories: [Binary,Unmaintained, plugins]
+categories: [Binary,Unmaintained]
 ---
 
 {% include info-box name='Distance Transform 3D' software='ImageJ' author='Jens Bache-Wiig, Christian Henden' filename=' [DT3D\_.class](http://www.pvv.org/~perchrh/imagej/DT3D_.class)' source=' [DT3D\_.java](http://www.pvv.org/~perchrh/imagej/DT3D_.java)' released='2005/04/20' latest-version='2005/04/20' category='[Binary](/plugin-index#binary)' website='http://www.pvv.org/\~perchrh/imagej/distance3d.html' %}

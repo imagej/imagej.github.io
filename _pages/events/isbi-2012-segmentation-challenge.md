@@ -1,7 +1,7 @@
 ---
 mediawiki: Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012
 title: Segmentation of neuronal structures in EM stacks challenge - ISBI 2012
-categories: [Segmentation, tutorials]
+categories: [Segmentation, Tutorials]
 ---
 
 <img src="/media/logos/isbi.jpg" title="fig:ISBI-logo.jpg" width="100" alt="ISBI-logo.jpg" />The [IEEE International Symposium on Biomedical Imaging (ISBI)](http://www.biomedicalimaging.org/) is the premier forum for the presentation of technological advances in theoretical and applied biomedical imaging and image computing. In the context of the [ISBI 2012](http://www.biomedicalimaging.org/2012/) conference which was held in Barcelona, Spain, from 2 to 5 May 2012, we organized a [challenge workshop](http://www.biomedicalimaging.org/2012/index.php/programme/isbi-challenges/13-challenges/49-contest-workshop-segmentation-of-neuronal) on **segmentation of neuronal structures in EM stacks**.

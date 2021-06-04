@@ -1,6 +1,6 @@
 ---
 title: Project Ideas
-categories: [development]
+categories: [Development]
 section: Contribute
 nav-links: true
 ---

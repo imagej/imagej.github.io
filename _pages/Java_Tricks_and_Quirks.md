@@ -1,7 +1,7 @@
 ---
 mediawiki: Java_Tricks_and_Quirks
 title: Java Tricks and Quirks
-categories: [development]
+categories: [Development]
 ---
 
 ## SoftReference and OutOfMemoryError

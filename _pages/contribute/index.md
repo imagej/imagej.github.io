@@ -1,7 +1,7 @@
 ---
 title: Contributing
 section: Contribute
-categories: [community]
+categories: [Community]
 nav-links: true
 ---
 

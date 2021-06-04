@@ -1,6 +1,6 @@
 ---
 title: Linux command line tutorial
-categories: [tutorials]
+categories: [Tutorials]
 ---
 
 ## Connecting to the cluster

@@ -1,6 +1,6 @@
 ---
 title: DAIS Learnathon 2018
-categories: [news]
+categories: [News]
 ---
 
 The second DAIS Learnathon is held at CSBD (MPI-CBG) in Dresden from June 4th to June 8th, 2018.

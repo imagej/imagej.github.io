@@ -1,6 +1,6 @@
 ---
 title: FiloQuant
-categories: [Analysis, Segmentation, Object detection]
+categories: [Analysis, Segmentation, Object Detection]
 doi: 10.1083/jcb.201704045
 name: FiloQuant
 source-label: GitHub

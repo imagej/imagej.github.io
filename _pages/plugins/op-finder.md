@@ -1,7 +1,7 @@
 ---
 mediawiki: Op_Finder
 title: Op Finder
-categories: [plugins, Ops]
+categories: [Ops]
 artifact: net.imagej:op-finder
 ---
 

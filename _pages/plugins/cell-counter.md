@@ -1,7 +1,7 @@
 ---
 mediawiki: Cell_Counter
 title: Cell Counter
-categories: [Particle analysis]
+categories: [Particle Analysis]
 artifact: sc.fiji:Cell_Counter
 ---
 

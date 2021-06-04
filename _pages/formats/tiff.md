@@ -2,7 +2,7 @@
 mediawiki: TIFF
 title: TIFF
 section: Learn:ImageJ Basics:File Formats
-categories: [Import-Export, development]
+categories: [Import-Export, Development]
 ---
 
 

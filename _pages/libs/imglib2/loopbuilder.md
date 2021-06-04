@@ -1,7 +1,7 @@
 ---
 mediawiki: LoopBuilder
 title: LoopBuilder
-categories: [development]
+categories: [Development]
 ---
 
 LoopBuilder is part of ImgLib2. It provides a very simple way to implement a pixel wise operation. LoopBuilder can operate on one, two, three, ... up to six images. Simplest case is an operation on one image. LoopBuilder will perform the given operation for every pixel of the image.

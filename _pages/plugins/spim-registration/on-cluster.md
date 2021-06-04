@@ -1,7 +1,7 @@
 ---
 mediawiki: SPIM_Registration_on_cluster_(deprecated)
 title: SPIM Registration on cluster (deprecated)
-categories: Registration|Registration, plugins
+categories: [Registration]
 ---
 
 {% include notice icon="warning" content='Please Note: This version of the software is outdated. We highly recommend using the new [automated workflow](/plugins/automated-workflow-for-parallel-multiview-reconstruction). It is much more user friendly, efficient and versatile using full automation of the processing.' %}

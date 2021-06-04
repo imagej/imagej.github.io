@@ -1,7 +1,7 @@
 ---
 mediawiki: Java_Options
 title: Java Options
-categories: [development]
+categories: [Development]
 ---
 
 # Introduction

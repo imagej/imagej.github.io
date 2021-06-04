@@ -1,7 +1,7 @@
 ---
 mediawiki: A_Tutorial_for_using_OpenCL_in_ImageJ
 title: A Tutorial for using OpenCL in ImageJ
-categories: [tutorials]
+categories: [Tutorials]
 ---
 
 {% include notice icon="warning" content='This tutorial was written in 2010-11, and contains out-of-date or no-longer-accurate information. A potential alternative for using OpenCL in ImageJ is [CLIJ](/plugins/clij).' %}

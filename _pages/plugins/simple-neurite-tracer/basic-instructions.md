@@ -1,7 +1,7 @@
 ---
 mediawiki: Simple_Neurite_Tracer:_Basic_Instructions
 title: Simple Neurite Tracer › Basic Instructions
-categories: [tutorials]
+categories: [Tutorials]
 nav-links: true
 nav-title: Basic Instructions
 ---

@@ -1,7 +1,7 @@
 ---
 mediawiki: Build_ImageJ2_Plugin_With_JavaFX
 title: Build ImageJ2 Plugin With JavaFX
-categories: [development]
+categories: [Development]
 section: Extend:Development:Tools
 ---
 

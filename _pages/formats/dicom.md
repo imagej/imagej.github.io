@@ -2,7 +2,7 @@
 mediawiki: DICOM
 title: DICOM
 section: Learn:ImageJ Basics:File Formats
-categories: [Import-Export, plugins]
+categories: [Import-Export]
 ---
 
 

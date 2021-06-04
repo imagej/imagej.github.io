@@ -71,7 +71,7 @@ function toggleAllCategories(checked) {
 </script>
 <style>
 #filter-checkboxes {
-  column-width: 8em;
+  column-width: 13em;
 }
 #list-of-extensions {
   column-width: 15em;

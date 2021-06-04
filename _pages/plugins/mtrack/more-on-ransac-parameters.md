@@ -1,7 +1,7 @@
 ---
 mediawiki: Read_more_about_the_RANSAC_parameters
 title: Read more about the RANSAC parameters
-categories: [tutorials]
+categories: [Tutorials]
 ---
 
 Ransac finds segments in the data using the model chosen for doing the fitting. In order to constrain the form of segments it finds there are certain parameters that user may have to choose to suit to their data. They are enumerated here.

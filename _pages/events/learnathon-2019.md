@@ -1,6 +1,6 @@
 ---
 title: Learnathon 2019
-categories: [news]
+categories: [News]
 ---
 
 The third DAIS Learnathon will take place from June 23 until June 29 2019.  

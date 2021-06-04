@@ -1,7 +1,7 @@
 ---
 mediawiki: Image_Processing_School_Pilsen_2009
 title: Image Processing School Pilsen 2009
-categories: [news]
+categories: [News]
 ---
 
 See also the [Image Processing School](http://www.neuroinformatics2009.org/courses-and-satellite-meetings/image-processing-school/) announcement webpage.

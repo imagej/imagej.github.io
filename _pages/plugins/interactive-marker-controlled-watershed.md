@@ -1,7 +1,7 @@
 ---
 mediawiki: Interactive_Marker-controlled_Watershed
 title: Interactive Marker-controlled Watershed
-categories: [Segmentation,Mathematical morphology]
+categories: [Segmentation, Mathematical Morphology]
 ---
 
 

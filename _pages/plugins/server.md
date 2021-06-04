@@ -1,7 +1,7 @@
 ---
 mediawiki: ImageJ_Server
 title: ImageJ Server
-categories: [SciJava, software]
+categories: [SciJava, Software]
 ---
 
 
