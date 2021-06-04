@@ -629,10 +629,10 @@ Development :: develop
 Development_Lifecycle :: develop/releasing
 Development_lifecycle :: develop/releasing
 Development_status :: contribute/governance#development-status
-Diadem_Cerebellar :: TODO (Diadem_Challenge_Data)
-Diadem_Challenge_Data :: TODO
-Diadem_Hippocampal_CA3_Interneuron :: TODO (Diadem_Challenge_Data)
-Diadem_Neocortical_Layer_6_Axons :: TODO (Diadem_Challenge_Data)
+Diadem_Cerebellar :: events/diadem-challenge-data
+Diadem_Challenge_Data :: events/diadem-challenge-data
+Diadem_Hippocampal_CA3_Interneuron :: events/diadem-challenge-data
+Diadem_Neocortical_Layer_6_Axons :: events/diadem-challenge-data
 Dialog :: scripting/generic-dialog
 DiameterJ :: plugins/diameterj
 Diameterj :: plugins/diameterj
@@ -1171,7 +1171,7 @@ Maintainer_page :: people
 Make_Fiji_Package :: plugins/make-fiji-package
 Make_Screencast :: plugins/make-screencast
 Malaria_Sporozoites_(9.2MB) :: plugins/malaria-sporozoites-9.2mb
-Mamed :: TODO
+Mamed :: tutorials/mamed
 Manual :: learn/user-guides
 Manual_Tracking :: plugins/manual-tracking
 Manual_drift_correction_plugin :: plugins/manual-drift-correction
