@@ -774,7 +774,7 @@ Find_Dimension_of_Raw_Image :: plugins/find-dimension-of-raw-image
 Find_Maxima... :: https://imagej.nih.gov/ij/docs/guide/146-29.html#sub:Find-Maxima
 Find_Peaks :: plugins/find-peaks
 Find_maxima_(Trackmate_module) :: plugins/trackmate/find-maxima-detector
-Finer_Grained_Debian_Packages :: TODO
+Finer_Grained_Debian_Packages :: develop/debian-notes.md
 First-instar_brain_(6.3MB) :: TODO
 Fit_Sphere :: plugins/bonej#fit-sphere-wip
 Fit_ellipsoid :: plugins/bonej#fit-ellipsoid
