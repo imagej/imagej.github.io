@@ -1,5 +1,4 @@
 ---
-mediawiki: MacOS
 title: MacOS
 section: Learn:ImageJ Basics:Supported Platforms
 ---
@@ -129,21 +128,21 @@ Since the development of OpenJDK for macOS is driven exclusively by Apple employ
 
 Often it is necessary to run Fiji in the command line, e.g. to pass some command-line options. To do so, start a Terminal (in the Finder, *Go&gt;Utilities*), and switch to the correct directory using the *cd* command. Note that the application itself is actually a directory called *Fiji.app*. For example, if you installed Fiji into */Applications* as recommended, do this:
 
-    cd /Applications/Fiji.app
+`cd /Applications/Fiji.app`
 
 If you unpacked Fiji onto your desktop, do this:
 
-    cd $HOME/Desktop/Fiji.app
+`cd $HOME/Desktop/Fiji.app`
 
 Once you switched to the correct directory, start the Fiji launcher:
 
-    Contents/MacOS/ImageJ-macosx
+`Contents/MacOS/ImageJ-macosx`
 
 {% include notice icon="note" content="A backslash (`\\`) is not the same as a slash (`/`). So: `Contents\\MacOS\\ImageJ-macosx` will **not** work." %}
 
 Now you can pass, say, [Java Options](Java_Options):
 
-    Contents/MacOS/ImageJ-macosx -verbose:gc --
+`Contents/MacOS/ImageJ-macosx -verbose:gc --`
 
 {% include notice icon="note" content="To distinguish between options intended for Java and options intended for ImageJ, you need to separate the former from the latter with a double-dash: `--`. Since the default is to accept ImageJ options, you have to pass a trailing double-dash if you want to pass only Java options." %}
 
