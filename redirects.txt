@@ -989,8 +989,8 @@ Imglib_FAQ :: libs/imglib2/faq
 Imglib__accessing_pixel_data :: libs/imglib1/iterating-through-pixel-data
 Imglib__iterating_through_pixel_data :: libs/imglib1/iterating-through-pixel-data
 Importing_Image_Files :: plugins/importing-image-files
-Impressum :: TODO (Imprint)
-Imprint :: TODO
+Impressum :: people
+Imprint :: people
 Insight_Toolkit :: software/itk
 Install :: downloads
 Install_Fiji_on_Linux :: software/fiji/downloads#installation
