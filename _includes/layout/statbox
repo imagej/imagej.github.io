@@ -73,6 +73,16 @@ the javascript only populates fields when they are empty.
 {%- assign arxiv             = page.arxiv             -%} {%- comment -%} The person's username on arXiv                              {%- endcomment -%}
 {%- assign scholar           = page.scholar           -%} {%- comment -%} The person's Google Scholar ID                              {%- endcomment -%}
 
+{%- comment -%} ============= FIELD ALIASES ============= {%- endcomment -%}
+
+{%- unless team-founders     -%} {%- assign team-founders     = page.team-founder     -%} {%- endunless -%}
+{%- unless team-leads        -%} {%- assign team-leads        = page.team-lead        -%} {%- endunless -%}
+{%- unless team-developers   -%} {%- assign team-developers   = page.team-developer   -%} {%- endunless -%}
+{%- unless team-debuggers    -%} {%- assign team-debuggers    = page.team-debugger    -%} {%- endunless -%}
+{%- unless team-maintainers  -%} {%- assign team-maintainers  = page.team-maintainer  -%} {%- endunless -%}
+{%- unless team-reviewers    -%} {%- assign team-reviewers    = page.team-reviewer    -%} {%- endunless -%}
+{%- unless team-contributors -%} {%- assign team-contributors = page.team-contributor -%} {%- endunless -%}
+
 {%- comment -%} ============= SECONDARY VALUES ============= {%- endcomment -%}
 
 {%- if artifact or pom-url -%}
