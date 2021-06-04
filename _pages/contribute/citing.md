@@ -88,7 +88,11 @@ Thank you for your support.
   <br><a href="/libs/imagej-ops">ImageJ Ops</a></div>
   {% include citation id='libs/imagej-ops' %}</div>
 
-## Plugins and related software
+## Citable software
+
+The following table lists all citable software packages, plugins, etc.,
+documented on the site. To add a tool to this list, add the `doi:` for
+its publication to the tool's wiki page.
 
 <table>
   <tr>
