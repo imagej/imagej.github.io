@@ -1,12 +1,8 @@
 ---
-mediawiki: Color_Image_Processing
 title: Color Image Processing
 section: Learn:Scientific Imaging
 nav-links: true
 ---
-
-
-
 
 ## Types of color images
 
@@ -45,13 +41,13 @@ Multi-channel experiments acquired on some systems are imported with the differe
 
 ### RGB color merging
 
-The native Fiji function {% include bc path="Image|Color|Merge Channels..." %} can be used to merge red, green and|or blue channel images or Image Stacks
+The native Fiji function {% include bc path="Image|Color|Merge Channels..." %} can be used to merge red, green and/or blue channel images or Image Stacks
 
 This reduces 16-bit images to 8-bits (based on the current Brightness and Contrast values) then generates a 24-bit RGB image.
 
 An alternative to the normal Red-Green merge is to merge the images based on Cyan and Magenta, or Cyan-Yellow or any other color combination.
 
-This can aid visualization of colocalization due to our poor perception of red and green colors. The Colour\_merge plugin gives the user the option of using the 'difference' arithmetic processing on the image stacks you select. This is not strictly a merge (when cyan and magenta merge they produce white, not yellow) but facilitates visualization of the separate channels (See Demandolx and Davoust, J. Microscopy, 1997 v185. p21). You can perform a true merge if you turn off the "Difference" option.
+This can aid visualization of colocalization due to our poor perception of red and green colors. The Colour\_merge plugin gives the user the option of using the 'difference' arithmetic processing on the image stacks you select. This is not strictly a merge (when cyan and magenta merge they produce white, not yellow) but facilitates visualization of the separate channels (See Demandolx and Davoust, J. Microscopy, 1997 v185. p21 [^1]). You can perform a true merge if you turn off the "Difference" option.
 
 Run the plugin and select the two images to be merged. Select the desired colors from the drop-down options. <Current> uses the LUT that the image currently has (this is often the desired LUT). The "Difference" option performs a "difference" arithmetic operation rather than an "addition". If the "Pre-sub 2 from 1" option is checked the second image is subtracted from the first prior to merging.
 
@@ -108,3 +104,5 @@ When using a non-standard LUT it may be useful to add a greyscale ramp so the us
 ![](/media/imaging/analyze-calibration-bar.jpg)
 
 {% include bc path="Analyze|Tools|Calibration Bar..." %}
+
+{% include citation fn=1 doi='10.1046/j.1365-2818.1997.1470704.x' %}
