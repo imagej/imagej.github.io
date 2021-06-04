@@ -7,9 +7,9 @@ doi:
 - 10.1016/j.ymeth.2015.10.006
 - 10.1007/s00335-015-9587-6
 name: OMERO
-logo: /media/logos/omero.png
-team-developers: Open Microscopy Environment | https://www.openmicroscopy.org/
-team-maintainers: Open Microscopy Environment | https://www.openmicroscopy.org/
+icon: /media/logos/omero.png
+team-developers: OME | https://www.openmicroscopy.org/
+team-maintainers: OME | https://www.openmicroscopy.org/
 source-url: https://github.com/ome/openmicroscopy
 website: https://www.openmicroscopy.org/info/omero
 ---
