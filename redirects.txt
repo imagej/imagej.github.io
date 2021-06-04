@@ -1044,7 +1044,7 @@ Java_3D :: libs/java-3d
 Java_8 :: news/2016-05-10-imagej-howto-java-8-java-6-java-3d
 Java_Options :: TODO
 Java_Scripting :: develop/ij1-plugins
-Java_Tricks_and_Quirks :: TODO
+Java_Tricks_and_Quirks :: develop/tips#arcane-quirks
 Javadoc :: develop/source#javadocs
 Javadocs :: develop/source#javadocs
 Javascript :: scripting/javascript
