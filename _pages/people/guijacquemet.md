@@ -2,6 +2,7 @@
 title: Guillaume Jacquemet
 name: Guillaume Jacquemet
 github: guijacquemet
+doi: 10.1083/jcb.201704045
 ---
 
 ## Introduction
@@ -14,6 +15,4 @@ You can find our plugin [**here**](https://imagej.github.io/plugins/filoquant).
 
 ## Reference
 
-More info can be found in our paper:
-
-[**FiloQuant reveals increased filopodia density during DCIS progression**](http://biorxiv.org/content/early/2017/04/06/125047)
+{% include citation %}
