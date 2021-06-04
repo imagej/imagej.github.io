@@ -2,7 +2,6 @@
 title: QuickTime
 section: Learn:ImageJ Basics:File Formats
 categories: [Import-Export, Development]
-nav-links: true
 ---
 
 

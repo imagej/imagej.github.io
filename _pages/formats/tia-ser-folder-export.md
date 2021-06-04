@@ -1,6 +1,5 @@
 ---
 title: TIA .ser folder export
-nav-links: true
 ---
 
 ## **Overview**

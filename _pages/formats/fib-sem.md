@@ -2,7 +2,6 @@
 title: FIBSEM importer
 section: Learn:ImageJ Basics:File Formats
 categories: [Import-Export]
-nav-links: true
 ---
 
 
