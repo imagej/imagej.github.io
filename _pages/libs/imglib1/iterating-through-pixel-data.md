@@ -70,7 +70,7 @@ Other methods are available, but these four ones are enough to build a basic loo
         public void run(String arg) {
 
             // Open the bat-cochlea example
-                    String name = "/ij/images/bat-cochlea-volume.zip";
+                    String name = "https://imagej.nih.gov/ij/images/bat-cochlea-volume.zip";
             ImagePlus imp = IJ.openImage(name);
             imp.show();
 
@@ -130,7 +130,7 @@ It does not allow to specify the position, it just reports its current position,
         public void run(String arg) {
      
             // Open the M51 galaxy example
-                    String name = "/ij/images/m51.tif";
+                    String name = "https://imagej.nih.gov/ij/images/m51.tif";
             ImagePlus imp = IJ.openImage(name);
             imp.show();
      
@@ -216,7 +216,7 @@ We can use them to create a very basic Z maximal projection plugin, that will cr
         public void run(String arg) {
      
             // Open the Confocal series example
-                    final String name = "/ij/images/mri-stack.zip";
+                    final String name = "https://imagej.nih.gov/ij/images/mri-stack.zip";
             final ImagePlus imp = IJ.openImage(name);
             imp.show();
      

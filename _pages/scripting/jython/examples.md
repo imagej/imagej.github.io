@@ -207,7 +207,7 @@ All the above can be summarized like the following:
 ### Running a watershed plugin on an image
 
     # 1 - Obtain an image
-    blobs = IJ.openImage("/ij/images/blobs.gif")
+    blobs = IJ.openImage("https://imagej.nih.gov/ij/images/blobs.gif")
     # Make a copy with the same properties as blobs image:
     imp = blobs.createImagePlus()
     ip = blobs.getProcessor().duplicate()
@@ -352,7 +352,7 @@ A data file containing rows with 4 columns:
 
 The easiest way is to grab an image and call an ImageJ command to show its histogram:
 
-    imp = IJ.openImage("/ij/images/blobs.gif")
+    imp = IJ.openImage("https://imagej.nih.gov/ij/images/blobs.gif")
     IJ.run(imp, "Histogram", "")
 
 How ImageJ does it, internally, has to do with the [ImageStatisics](/ij/developer/api/ij/process/ImageStatistics.html) class:
@@ -1590,7 +1590,7 @@ A better example that exploits the capabilities of the `Weaver.inline` is the fo
     from fiji.scripting import Weaver
 
     # The currently open image, an 8-bit stack
-    imp = IJ.openImage("/ij/images/bat-cochlea-volume.zip")
+    imp = IJ.openImage("https://imagej.nih.gov/ij/images/bat-cochlea-volume.zip")
 
     slices = [None, None]
 
@@ -1627,7 +1627,7 @@ Instead, here is the same code but using the `Weaver.method` approach, where, in
     from fiji.scripting import Weaver
 
     # The currently open image, an 8-bit stack
-    imp = IJ.openImage("/ij/images/bat-cochlea-volume.zip")
+    imp = IJ.openImage("https://imagej.nih.gov/ij/images/bat-cochlea-volume.zip")
 
     w = Weaver.method(
       """

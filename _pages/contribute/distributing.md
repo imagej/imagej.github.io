@@ -372,8 +372,8 @@ Useful extensions deserve corresponding documentation explaining how to use them
 </td></tr>
 <tr>
 <td style="vertical-align: top">
-<ul><li> Prepare an HTML page modeled after the <a rel="nofollow" class="external text" href="/ij/plugins/index.html">list of ImageJ 1.x plugins</a>.</li>
-<li> Email it to <a href="/people/rasband" title="Wayne Rasband">Wayne Rasband</a>, the developer of ImageJ 1.x, and sole maintainer of the <a rel="nofollow" class="external text" href="/ij">ImageJ 1.x website</a>.</li></ul>
+<ul><li> Prepare an HTML page modeled after the <a rel="nofollow" class="external text" href="https://imagej.nih.gov/ij/plugins/index.html">list of ImageJ 1.x plugins</a>.</li>
+<li> Email it to <a href="/people/rasband" title="Wayne Rasband">Wayne Rasband</a>, the developer of ImageJ 1.x, and sole maintainer of the <a rel="nofollow" class="external text" href="https://imagej.nih.gov/ij">ImageJ 1.x website</a>.</li></ul>
 </td>
 <td style="vertical-align: top">
 <ul><li> Listed on the ImageJ 1.x website.</li></ul>
