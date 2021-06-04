@@ -948,8 +948,8 @@ ImageJ_Updater :: plugins/updater
 ImageJ_tricks :: learn/tips-and-tricks
 ImagePy :: software/imagepy
 ImageSXM :: software/imagesxm
-ImageScience :: plugins/imagescience
-ImageScience_License :: plugins/imagescience
+ImageScience :: libs/imagescience
+ImageScience_License :: libs/imagescience
 ImageStitching :: plugins/image-stitching
 Image_5D :: plugins/image5d
 Image_Acquisition_Principles :: imaging/principles
@@ -962,7 +962,7 @@ Image_Processing_School_Pilsen_2009_-_Segmentation :: tutorials/segmentation-in-
 Image_Stabilizer :: plugins/image-stabilizer
 Image_Stitching :: plugins/image-stitching
 Image_Synthesizer :: plugins/image-synthesizer
-Imagescience :: plugins/imagescience
+Imagescience :: libs/imagescience
 ImgLib1 :: libs/imglib1
 ImgLib1:_iterating_through_pixel_data :: libs/imglib1/iterating-through-pixel-data
 ImgLib1_(deprecated) :: libs/imglib1

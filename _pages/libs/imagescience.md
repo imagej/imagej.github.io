@@ -1,5 +1,6 @@
 ---
 title: ImageScience
+section: Explore:Libraries
 pom-url: https://raw.githubusercontent.com/ImageScience/ImageScience/master/pom.xml
 website: https://imagescience.org/meijering/software/imagescience/
 ---

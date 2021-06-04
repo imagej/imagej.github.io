@@ -3,7 +3,7 @@ mediawiki: 2016-01-05_-_ImageScience_is_moving_to_an_update_site
 title: 2016-01-05 - ImageScience is moving to an update site
 ---
 
-Resulting from [a discussion](https://github.com/imagescience/ImageScience/pull/1) with {% include person id='emeijering' %}, the [ImageScience](/plugins/imagescience) plugins have moved to their own dedicated [update site](/update-sites), and will no longer be distributed as part of core [Fiji](/software/fiji).
+Resulting from [a discussion](https://github.com/imagescience/ImageScience/pull/1) with {% include person id='emeijering' %}, the [ImageScience](/libs/imagescience) plugins have moved to their own dedicated [update site](/update-sites), and will no longer be distributed as part of core [Fiji](/software/fiji).
 
 ## What moved?
 
