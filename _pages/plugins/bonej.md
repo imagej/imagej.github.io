@@ -16,7 +16,7 @@ doi: 10.1016/j.bone.2010.08.023
 {% capture source%}
 {% include github org='bonej-org' repo='BoneJ2' %}, [doi:10.5281/zenodo.1427262](https://doi.org/10.5281/zenodo.1427262) 
 {% endcapture %}
-{% include info-box name='BoneJ' software='ImageJ' logo='<img src="/media/icons/bonej.png" width="96"/>' author=author maintainer=maintainer source=source released='Dec 11<sup>th</sup>, 2017' latest-version=' [styloid-r7](https://github.com/bonej-org/BoneJ2/releases)' status='Active' %}
+{% include info-box name='BoneJ' software='ImageJ' logo='<img src="/media/icons/bonej.png" width="96"/>' author=author maintainer=maintainer source=source released='Dec 11<sup>th</sup>, 2017' latest-version=' [styloid-r7](https://github.com/bonej-org/BoneJ2/releases)' status='Active' category='[Analysis](/plugin-index#analysis), [Mathematical morphology](/plugin-index#mathematical-morphology)', [Particle Analysis](/plugin-index#particle-analysis)'%}
 
 BoneJ is a collection of skeletal biology plug-ins for ImageJ. This is the new, modernized version of the software available through the ImageJ [updater](/plugins/updater). Its update site is called [BoneJ](http://sites.imagej.net/BoneJ). For the old ImageJ1 version, see [BoneJ1](/plugins/bonej1).
 
@@ -267,8 +267,11 @@ A binary 3D image.
 -   **Weighted Flinn plot**: Flinn diagram with peaks of intensity proportional to volume occupied by each ($$a/b$$, $$b/c$$) ratio
 
 #### Related publications
+Detailed discussion of EF usage and interpretation is included in the supplementary material of Felder et al. (2021), which uses EF to demonstrate that rod-to-plate transitions in osteoporosis are inconsistent at best, and much weaker when they appear than SMI data imply. A rationale for avoiding SMI and using EF instead, along with some early EF validation work, is in Salmon et al. (2015).
 
-Salmon PL, Ohlsson C, Shefelbine SJ, Doube M (2015), *Structure model index does not measure rods and plates in trabecular bone*, Frontiers in Endocrinology, 6:162, [<doi:10.3389/fendo.2015.00162>](http://dx.doi.org/10.3389/fendo.2015.00162).
+> Felder A, Monzem S, Souza RD, Mills D, Boyde A, Doube M. (2021) *The plate-to-rod transition in trabecular bone loss is elusive*. Royal Society Open Science, 8:201401. [doi:10.1098/rsos.201401](https://doi.org/10.1098/rsos.201401).
+
+> Salmon PL, Ohlsson C, Shefelbine SJ, Doube M (2015), *Structure model index does not measure rods and plates in trabecular bone*, Frontiers in Endocrinology, 6:162, [doi:10.3389/fendo.2015.00162](https://doi.org/10.3389/fendo.2015.00162).
 
 ## Fit ellipsoid
 
