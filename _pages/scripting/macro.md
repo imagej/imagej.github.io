@@ -15,7 +15,7 @@ Macros can be used to
 -   add tools to the toolbar
 -   add keyboard shortcuts
 
-{% include notice icon="info" content="Please be aware that there are several other available [scripting](/scripting) languages that are more powerful than macros, too! See the sidebar on the right, as well as the [Overcoming limitations](#overcoming-limitations) section below." %}
+{% include notice icon="info" content="Please be aware that there are several other available [scripting](/scripting) languages that are more powerful than macros, too! See the "ImageJ Docs" navigation menu on the left, as well as the [Overcoming limitations](#overcoming-limitations) section below." %}
 
 # Variables
 
