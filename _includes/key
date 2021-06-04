@@ -8,7 +8,8 @@ Draw the Unicode symbol you want    -- https://shapecatcher.com/
 {%- assign style = include.style | downcase | strip -%}
 
 {%- for key in keys -%}
-  {%- assign code = key | capitalize | remove: " " | remove: "-" | strip -%}
+  {%- assign code = key | capitalize | remove: " " | strip -%}
+  {%- if code != '-' -%} {%- assign code = code | remove: "-" -%} {%- endif -%}
 
   {%- capture tooltip -%}
     {%- case code -%}
