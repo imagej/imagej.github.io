@@ -111,14 +111,14 @@ the javascript only populates fields when they are empty.
 {%- endunless -%}
 
 {%- capture header -%}
-<span id="statbox-image">{{image}}</span>
-<span id="statbox-name">
+<p id="statbox-image">{{image}}</p>
+<p id="statbox-name">
   {%- if website -%}
     <a href="{{website}}">{{name-or-loading}}</a>
   {%- else -%}
     {{name-or-loading}}
   {%- endif -%}
-</span>
+</p>
 {%- if affiliation -%}
 <p id="statbox-affiliation">
 {%- for a in affiliation -%}
