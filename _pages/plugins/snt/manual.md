@@ -1,7 +1,6 @@
 ---
 mediawiki: SNT:_Manual
 title: SNT › Manual
-categories: [SNT, Tutorials]
 nav-links: true
 nav-title: Manual
 ---

@@ -1,7 +1,6 @@
 ---
 mediawiki: Read_more_on_microtubule_polarity_and_(+)_end_vs._(-)_end_tracking
 title: Read more on microtubule polarity and (+) end vs. (-) end tracking
-categories: [Tutorials]
 ---
 
 ## Microtubule polarity and (+) end vs. (-) end tracking

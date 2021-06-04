@@ -1,7 +1,6 @@
 ---
 mediawiki: Getting_started_with_TrackMate
 title: Getting started with TrackMate
-categories: [Tutorials]
 ---
 
 ## Introduction

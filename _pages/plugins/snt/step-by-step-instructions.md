@@ -1,7 +1,6 @@
 ---
 mediawiki: SNT:_Step-By-Step_Instructions
 title: SNT › Step-By-Step Instructions
-categories: [SNT, Tutorials]
 nav-links: true
 nav-title: Step-By-Step Instructions
 ---

@@ -1,7 +1,6 @@
 ---
 mediawiki: Analyze_Skeleton_2D_time_series
 title: Analyze Skeleton 2D time series
-categories: [Jython,Scripting,Analysis,Skeleton]
 ---
 
 ## Introduction:

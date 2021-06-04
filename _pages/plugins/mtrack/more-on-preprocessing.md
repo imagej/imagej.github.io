@@ -1,7 +1,6 @@
 ---
 mediawiki: Read_more_about_Preprocessing
 title: Read more about Preprocessing
-categories: [Tutorials]
 ---
 
 ## Pre-Processing

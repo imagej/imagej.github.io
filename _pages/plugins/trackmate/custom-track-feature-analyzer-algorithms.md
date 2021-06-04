@@ -1,7 +1,6 @@
 ---
 mediawiki: How_to_write_your_own_track_feature_analyzer_algorithm_for_TrackMate
 title: How to write your own track feature analyzer algorithm for TrackMate
-categories: [Tutorials]
 nav-links:
 - title: Edge Feature Analyzers
   url: /plugins/trackmate/custom-edge-feature-analyzer-algorithms

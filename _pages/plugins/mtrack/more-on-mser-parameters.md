@@ -1,7 +1,6 @@
 ---
 mediawiki: Read_more_about_MSER_parameters
 title: Read more about MSER parameters
-categories: [Tutorials]
 ---
 
 ## MSER parameters

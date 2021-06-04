@@ -1,7 +1,6 @@
 ---
 mediawiki: BigDataViewer_Example_Datasets
 title: BigDataViewer Example Datasets
-categories: [Example Data]
 ---
 
 This page links to example datasets for the [BigDataViewer](/plugins/bdv) Fiji plugin. See the [BigDataViewer](/plugins/bdv) user guide.

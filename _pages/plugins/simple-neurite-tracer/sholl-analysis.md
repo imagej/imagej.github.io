@@ -1,7 +1,6 @@
 ---
 mediawiki: Simple_Neurite_Tracer:_Sholl_analysis
 title: Simple Neurite Tracer › Sholl Analysis
-categories: [Tutorials]
 nav-links: true
 nav-title: Sholl Analysis
 ---

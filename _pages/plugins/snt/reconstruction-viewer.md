@@ -1,7 +1,6 @@
 ---
 mediawiki: SNT:_Reconstruction_Viewer
 title: SNT › Reconstruction Viewer
-categories: [SNT]
 nav-links: true
 nav-title: Reconstruction Viewer
 ---

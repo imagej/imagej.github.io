@@ -1,7 +1,6 @@
 ---
 mediawiki: Simple_Neurite_Tracer:_Selecting_paths
 title: Simple Neurite Tracer › Selecting paths
-categories: [Tutorials]
 nav-links: true
 nav-title: Selecting Paths
 ---

@@ -1,7 +1,7 @@
 ---
 mediawiki: SNT
 title: SNT
-categories: [Segmentation,Neuroanatomy,SNT]
+categories: [Segmentation,Neuroanatomy]
 tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroanatomy
 nav-links: true
 nav-title: Overview

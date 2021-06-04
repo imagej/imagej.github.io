@@ -1,7 +1,6 @@
 ---
 mediawiki: Scripting_TrackMate
 title: Scripting TrackMate
-categories: [Scripting]
 ---
 
 ## TrackMate scripting principle

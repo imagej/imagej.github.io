@@ -1,7 +1,7 @@
 ---
 mediawiki: Trainable_Segmentation_Plugin_(deprecated)
 title: Trainable Segmentation Plugin (deprecated)
-categories: [Segmentation,Tutorials]
+categories: [Segmentation]
 ---
 
 <div style="background:#fdd; padding: 10px 10px 0 10px; border: 1px solid black;">

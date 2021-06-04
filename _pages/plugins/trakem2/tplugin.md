@@ -1,7 +1,6 @@
 ---
 mediawiki: TrakEM2_TPlugIn
 title: TrakEM2 TPlugIn
-categories: [TrakEM2]
 ---
 
 ## TPlugIn Implementation

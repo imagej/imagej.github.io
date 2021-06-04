@@ -1,9 +1,7 @@
 ---
 mediawiki: DHM_Utilities/Phase_Unwrapping
 title: DHM Utilities/Phase Unwrapping
-categories: [Uncategorized]
 project: DHM Utilities
-
 name: Phase Unwrapping
 source-url: https://github.com/sudgy/phase-unwrapping
 license-url: /licensing/lgpl

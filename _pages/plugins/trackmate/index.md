@@ -1,7 +1,7 @@
 ---
 title: TrackMate
 description: TrackMate is your buddy for your everyday tracking.
-categories: [Segmentation,Tracking,Tutorials]
+categories: [Segmentation,Tracking]
 logo: /media/logos/trackmate-300p.png
 artifact: sc.fiji:TrackMate_
 doi: 10.1016/j.ymeth.2016.09.016

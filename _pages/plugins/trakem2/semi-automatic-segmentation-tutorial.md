@@ -1,7 +1,6 @@
 ---
 mediawiki: TrakEM2_semi-automatic_segmentation_tutorial
 title: TrakEM2 semi-automatic segmentation tutorial
-categories: [Segmentation,TrakEM2,Tutorials]
 ---
 
 This video tutorial was made by Javier Cabrera-Chaves and edited by {% include person id='iarganda' %} using [Wink 1.5 for linux](http://www.debugmode.com/wink/). It has since been recorded via the screen capture below, as Adobe Flash is now defunct.
