@@ -12,7 +12,7 @@ section: Learn:ImageJ Basics
 | 3. | [Living Workshops](/events/presentations#living-workshops) | Workshops for ImageJ/Fiji at introductory, intermediate and advanced levels |
 | 4. | [Scripting](/scripting)                                    | Become a power user by writing scripts!                                     |
 
-## Tutorials for specific image processing techniques
+## Tutorials for image processing techniques
 
 The [Scientific Imaging Tutorials](/imaging) introduce common elements of image processing.
 
@@ -25,11 +25,24 @@ links to facilities providing tutorials and documentation:
 * [BioDIP teaching materials](https://www.biodip.de/wiki/Teaching_Material)
 * [Centre for Molecular and Cellular Imaging at the EMBL](http://wiki.cmci.info/mainpages/documents)
 
+Please feel welcome to add your organization's tutorials to this list!
+
 ## Tutorials for software developers and scripters
 
 Start with the [ImageJ Tutorial Notebooks](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/ImageJ-Tutorials-and-Demo.ipynb)!
 
 And be sure to read over the [Development](/develop) pages.
+
+## List of tutorials on this site
+
+{% for p in site.pages -%}
+  {%- assign tokens = p.url | split: "/" -%}
+  {%- if tokens[1] != 'tutorials' -%} {%- continue -%} {%- endif -%}
+  {%- if tokens[2] == 'index' -%} {%- continue -%} {%- endif %}
+  {%- assign url = p.url | replace: '/index', '' -%}
+* [{{p.title}}]({{p.url}})
+{% endfor -%}
+
 
 ## See also
 
