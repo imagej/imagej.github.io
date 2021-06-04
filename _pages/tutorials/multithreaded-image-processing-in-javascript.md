@@ -2,7 +2,6 @@
 mediawiki: Multithreaded_Image_Processing_in_JavaScript
 title: Multithreaded Image Processing in JavaScript
 section: Extend:Scripting
-categories: [Scripting,Unmaintained]
 ---
 
 ## Purpose

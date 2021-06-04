@@ -1230,10 +1230,10 @@ Multi_Stack_Montage :: plugins/multi-stack-montage
 Multi_Thresholder :: plugins/multithresholder
 Multifrac :: plugins/multifrac
 Multiple_Image_Processor :: plugins/multiple-image-processor
-Multithreaded_Image_Processing :: scripting/multithreaded-image-processing-in-clojure
-Multithreaded_Image_Processing_in_Clojure :: scripting/multithreaded-image-processing-in-clojure
-Multithreaded_Image_Processing_in_JavaScript :: scripting/multithreaded-image-processing-in-javascript
-Multithreaded_Image_Processing_in_Javascript :: scripting/multithreaded-image-processing-in-javascript
+Multithreaded_Image_Processing :: tutorials/multithreaded-image-processing-in-clojure
+Multithreaded_Image_Processing_in_Clojure :: tutorials/multithreaded-image-processing-in-clojure
+Multithreaded_Image_Processing_in_JavaScript :: tutorials/multithreaded-image-processing-in-javascript
+Multithreaded_Image_Processing_in_Javascript :: tutorials/multithreaded-image-processing-in-javascript
 Multiview-Reconstruction :: plugins/multiview-reconstruction
 Multiview_Reconstruction :: plugins/multiview-reconstruction
 MyofibrilJ :: plugins/myofibrilj
