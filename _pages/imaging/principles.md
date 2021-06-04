@@ -1,5 +1,4 @@
 ---
-mediawiki: Principles
 title: Principles of Scientific Imaging
 section: Learn:Scientific Imaging
 nav-links: true
@@ -22,7 +21,7 @@ Spatial resolution refers to the number (or density, if you prefer) of samples i
 
 ## Avoid lossy compression
 
-Original data should be saved in a way that preserves the exact sample values. Do not store raw image data in file formats such as JPEG which use lossy compression. See [Why (lossy) JPEGs should not be used in imaging](/imaging/principles#why-lossy-jpegs-should-not-be-used-in-imaging) below for details.
+Original data should be saved in a way that preserves the exact sample values. Do not store raw image data in file formats such as JPEG which use lossy compression. See [Why (lossy) JPEGs should not be used in imaging](#why-lossy-jpegs-should-not-be-used-in-imaging) below for details.
 
 ## Illuminate as evenly as possible
 
@@ -84,32 +83,34 @@ Once an image has been saved as compressed JPEG there is no way of reverting to 
 
 Below is an ImageJ macro which demonstrates the issue. It requires the [Glasbey](/plugins/glasbey) LUT, part of the [Fiji](/software/fiji) distribution of ImageJ.
 
-    // load Boats
-    run("Boats (356K)");
-    run("Out [-]");
-    rename("Original");
+```java
+// load Boats
+run("Boats (356K)");
+run("Out [-]");
+rename("Original");
 
-    // convert to JPEG
-    run("Duplicate...", " ");
-    run("Out [-]");
-    run("Save As JPEG... [j]", "jpeg=85");
-    run("Revert");
-    rename("JPEG");
+// convert to JPEG
+run("Duplicate...", " ");
+run("Out [-]");
+run("Save As JPEG... [j]", "jpeg=85");
+run("Revert");
+rename("JPEG");
 
-    // compute the difference
-    imageCalculator("Subtract create 32-bit", "Original","JPEG");
-    run("Out [-]");
-    rename("Difference");
+// compute the difference
+imageCalculator("Subtract create 32-bit", "Original","JPEG");
+run("Out [-]");
+rename("Difference");
 
-    // display windows side by side
-    run("Tile");
+// display windows side by side
+run("Tile");
 
-    // highlight artifacts using Glasbey LUT
-    selectWindow("Original");
-    run("glasbey");
-    selectWindow("JPEG");
-    run("glasbey");
-    selectWindow("Difference");
+// highlight artifacts using Glasbey LUT
+selectWindow("Original");
+run("glasbey");
+selectWindow("JPEG");
+run("glasbey");
+selectWindow("Difference");
+```
 
 ## Considerations during image segmentation (binarization)
 
