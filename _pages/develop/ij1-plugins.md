@@ -1,5 +1,4 @@
 ---
-mediawiki: Developing_Plugins_for_ImageJ_1.x
 title: Developing Plugins for ImageJ 1.x
 section: Extend:Development:Guides
 ---
