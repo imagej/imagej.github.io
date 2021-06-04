@@ -1,23 +1,20 @@
 ---
-mediawiki: MiToBo
 title: MiToBo
-categories: [Related Software,SciJava]
+categories: [SciJava]
+icon: /media/icons/mitobo.png
+name: MiToBo
+source-url: https://github.com/mitobo-hub/mitobo-plugins
 doi: 10.5334/jors.103
+team-developers:
+- Stefan Posch
+- Birgit Möller | /people/bimoelle
+team-maintainers:
+- Stefan Posch
+- Birgit Möller | /people/bimoelle
+website: https://mitobo.informatik.uni-halle.de/
 ---
 
-
-{% capture maintainer%}
-Stefan Posch, {% include person id='bimoelle' %}
-{% endcapture %}
-
-{% capture author%}
-Stefan Posch, {% include person id='bimoelle' %}
-{% endcapture %}
-
-{% capture source%}
-{% include github org='mitobo-hub' repo='mitobo-plugins' %}
-{% endcapture %}
-{% include info-box software='MiToBo' name='MiToBo' logo='<img src="/media/icons/mitobo.png" width="96"/>' maintainer=maintainer author=author source=source status='' category='[Plugins](/plugin-index)' website='http://www.informatik.uni-halle.de/mitobo/' %}The Microscope Image Analysis Toolbox MiToBo is a collection of basic and advanced image processing operators and applications mainly dedicated to biological and biomedical image data, however, not restricted to these fields. MiToBo is an extension of [ImageJ](/software/imagej), i.e. MiToBo operators are ready to be directly used as plugins in ImageJ.
+The Microscope Image Analysis Toolbox MiToBo is a collection of basic and advanced image processing operators and applications mainly dedicated to biological and biomedical image data, however, not restricted to these fields. MiToBo is an extension of [ImageJ](/software/imagej), i.e. MiToBo operators are ready to be directly used as plugins in ImageJ.
 
 To make use of MiToBo's functionality it can be enabled by [toggling the MiToBo update site](/update-sites).
 
