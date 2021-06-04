@@ -513,6 +513,7 @@ $leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding - 3
   overflow: hidden;
   position: relative;
   text-align: center;
+  min-width: 420px;
 }
 
 #header a {
