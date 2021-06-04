@@ -1,5 +1,4 @@
 ---
-mediawiki: 2012-10-30_-_ImageJ2_presentation_at_ImageJConf_2012
 title: 2012-10-30 - ImageJ2 presentation at ImageJConf 2012
 ---
 
