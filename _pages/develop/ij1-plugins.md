@@ -354,9 +354,7 @@ Of course, you can also set ROIs programmatically:
 
 You can use ImageJ2-specific functionality from within an ImageJ 1.x plugin. For example, ImageJ2 provides a spreadsheet-like results table that supports string cells. You can write an ImageJ 1.x plugin that produces such a spreadsheet, displaying it onscreen.
 
-See the {% include github org='imagej' repo='tutorials' branch='master' path='maven-projects/call-modern-from-legacy' label='call-modern-from-legacy' %} example of the ImageJ Tutorials:
-
-> {% include github org='imagej' repo='tutorials' branch='master' path='maven-projects/call-modern-from-legacy/src/main/java/DisplayATable.java' label='DisplayATable.java' %}
+See the {% include github org='imagej' repo='tutorials' branch='master' path='https://github.com/imagej/tutorials/blob/master/howtos/src/main/java/howto/adv/ModernFromLegacy.java' label='ModernFromLegacy.java' %} example from the ImageJ tutorial code.
 
 ## Further tips
 
