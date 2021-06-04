@@ -46,7 +46,7 @@ The Lightsheet Z.1 data are saved into the proprietary Zeiss file format **.czi*
 
 ### Getting familiar with Linux command line environment
 
-It is very likely that the cluster computer does not run ANY Graphical User Interface and relies exclusively on the command line. Steering a cluster from the command line is fairly easy - I use about 10 different commands to do everything I need to do. Since the Linux command line may be unfamiliar to most biologists we start a separate [Linux\_command\_line\_tutorial](Linux_command_line_tutorial) page that explains the bare essentials.
+It is very likely that the cluster computer does not run ANY Graphical User Interface and relies exclusively on the command line. Steering a cluster from the command line is fairly easy - I use about 10 different commands to do everything I need to do. Since the Linux command line may be unfamiliar to most biologists we start a separate [Linux command line tutorial](/tutorials/linux-command-line) page that explains the bare essentials.
 
 ### Transferring data
 

@@ -1112,7 +1112,7 @@ Linear_Stack_Alignment_with_SIFT :: plugins/linear-stack-alignment-with-sift
 Links :: software/fiji/links
 Links_to_tutorials :: tutorials
 Linux :: platforms/linux
-Linux_command_line_tutorial :: TODO
+Linux_command_line_tutorial :: tutorials/linux-command-line
 Lisp :: scripting/clojure
 List_all_threads :: plugins/list-all-threads
 Load_Particles_(.tif_file_-_fast) :: plugins/quickpalm
