@@ -1,6 +1,7 @@
 ---
 title: FiloQuant
 categories: [Analysis, Segmentation, Object detection]
+doi: 10.1083/jcb.201704045
 name: FiloQuant
 source-label: GitHub
 source-url: https://github.com/guijacquemet/FiloQuant
@@ -27,6 +28,4 @@ FiloQuant user guide can be accessed bellow:
 
 ## References
 
-More info can be found in our paper:
-
-[**FiloQuant reveals increased filopodia density during DCIS progression**](http://biorxiv.org/content/early/2017/04/06/125047)
+{% include citation %}
