@@ -1,5 +1,4 @@
 ---
-mediawiki: Image_Intensity_Processing
 title: Image Intensity Processing
 section: Learn:Scientific Imaging
 nav-links: true
@@ -36,11 +35,11 @@ The results are displayed in a plot-window with the ROI details in the plot wind
 
 ## Dynamic intensity vs Time analysis
 
-The plugin *Plot Z Axis Profile* (this is the *Z Profiler* from Kevin (Gali) Baler (gliblr at yahoo.com) and {% include person id='rasband' %} simply renamed) will monitor the intensity of a moving ROI using a particle tracking tool. This tool can be either manual or automatic. Use the {% include bc path='Image | Stacks | Plot Z Axis Profile'%} command.
+The plugin *Plot Z Axis Profile* (this is the *[Z Profiler](/ij/plugins/z-profiler.html)* from Kevin (Gali) Baler (gliblr at yahoo.com) and {% include person id='rasband' %} simply renamed) will monitor the intensity of a moving ROI using a particle tracking tool. This tool can be either manual or automatic. Use the {% include bc path='Image | Stacks | Plot Z Axis Profile'%} command.
 
 ## Getting intensity values from multiple ROIs
 
-You can analyze multiple ROIs at once with Bob Dougherty's *Multi Measure* plugin. The native "ROI manager" function does a similar job except doesn't generate the results in sorted columns. Check [Bob's website](http://www.optinav.com/imagej.html) for updates.
+You can analyze multiple ROIs at once with Bob Dougherty's *Multi Measure* plugin. The native "ROI manager" function does a similar job except doesn't generate the results in sorted columns. Check [Bob's website](https://www.optinav.info/) for updates.
 
 The Multi Measure plugin that comes with the installation is v3.2.
 
@@ -64,7 +63,9 @@ Oval and rectangular ROIs can be restored individually from x, y, l, h values wi
 
 ## Ratio Analysis
 
-![](/media/imaging/intensity-ratio-analysis.jpg) Ratiometric imaging compares the recordings of two different signals to see if there are any similarities between them. It is done by dividing one channel by another channel to produce a third ratiometric channel. This technique is useful because it corrects for dye leakage, unequal dye loading, and photo-bleaching. An example application would be measuring intracellular ion, pH, and voltage dynamics in real time.
+![](/media/imaging/intensity-ratio-analysis.jpg) 
+
+Ratiometric imaging compares the recordings of two different signals to see if there are any similarities between them. It is done by dividing one channel by another channel to produce a third ratiometric channel. This technique is useful because it corrects for dye leakage, unequal dye loading, and photo-bleaching. An example application would be measuring intracellular ion, pH, and voltage dynamics in real time.
 
 Background subtraction is needed before analysis of dual-channel ratio images. See also the [background correction](#background-correction) section. The *Ratio\_Profiler* plugin will perform ratiometric analysis of a single ROI on a dual-channel interleaved stack. The odd-slices are channel 1 images and the even slices are channel 2 images. If your two channels are opened as separate stacks, such as Zeiss, the two channels can be interleaved (mixed together by alternating between them) with the menu command {% include bc path='Plugins | Stacks - Shuffling | Stack Interleaver'%}.
 
@@ -132,18 +133,9 @@ To use:
 
 ### Equalization
 
-{::nomarkdown}
-<table>
-  <tbody>
-    <tr>
-      <td style="border:none;padding:0in;">
-        <p>You can have more control over brightness and contrast adjustments with the {% include bc path='Process | Enhance contrast'%} menu command. With a stack, it analyzes the each slice's histogram to make the adjustment.</p>
-        <p>The <em>Equalize contrast</em> command applies a non-linear stretch of the histogram based on the square root of its intensity.</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-{:/}
+You can have more control over brightness and contrast adjustments with the {% include bc path='Process | Enhance'%} contrast menu command. With a stack, it analyzes the each slice's histogram to make the adjustment.
+
+The *Equalize contrast* command applies a non-linear stretch of the histogram based on the square root of its intensity.
 
 ![](/media/imaging/equalize-histrogram.jpg)
 
@@ -169,11 +161,11 @@ Filters can be found using the menu command {% include bc path='Process | Filter
 
 *Median filter*: The pixel value is replaced with the median of itself and its adjacent neighbors. This removes noise and *preserves boundaries* better than simple average filtering. The menu item {% include bc path='Process | Noise | Despeckle'%} is a 3×3 median filter.
 
-"Convolve filter": This allows two arrays of numbers to be multiplied together. The arrays can be different sizes but must be of the same dimension. In image analysis this process is generally used to produce an output image where the pixel values are linear combinations of certain input values.
+*Convolve filter*: This allows two arrays of numbers to be multiplied together. The arrays can be different sizes but must be of the same dimension. In image analysis this process is generally used to produce an output image where the pixel values are linear combinations of certain input values.
 
-"Minimum": This filter, also known as an erosion filter, is a morphological filter that considers the neighborhood around each pixel and, from this list of neighbors, determines the minimum value. Each pixel in the image is then replaced with the resulting value generated by each neighborhood.
+*Minimum*: This filter, also known as an erosion filter, is a morphological filter that considers the neighborhood around each pixel and, from this list of neighbors, determines the minimum value. Each pixel in the image is then replaced with the resulting value generated by each neighborhood.
 
-"Maximum": This filter, also known as a dilation filter, is a morphological filter that considers the neighborhood around each pixel and, from this list of neighbors, determines the maximum value. Each pixel in the image is then replaced with the resulting value generated by each neighborhood.
+*Maximum*: This filter, also known as a dilation filter, is a morphological filter that considers the neighborhood around each pixel and, from this list of neighbors, determines the maximum value. Each pixel in the image is then replaced with the resulting value generated by each neighborhood.
 
 *Kalman filter*: This filter, also known as the Linear Quadratic Estimation, recursively operates on noisy inputs to compute a statistically optimal estimate of the underlying system state.
 
@@ -187,37 +179,12 @@ With a background that is relatively even across the image, remove it with the *
 
 To fix an uneven background use the menu command {% include bc path='Process | Subtract background'%}. This will use a *rolling ball* algorithm on the uneven background. The radius should be set to at least the size of the largest object that is *not* part of the background. It can also be used to remove background from gels where the background is white. Running the command several times may produce better results. The user can choose whether or not to have a light background, create a background with no subtraction, have a sliding paraboloid, disable smoothing, or preview the results. The default value for the rolling ball radius is 50 pixels.
 
-{::nomarkdown}
-<table>
-  <tbody>
-    <tr>
-      <td style="border:none;padding:0.0194in;">
-        <p><em>RAW</em></p>
-      </td>
-      <td style="border:none;padding:0.0194in;"></td>
-      <td style="border:none;padding:0.0194in;">
-        <p>{% include bc path='Process | Subtract Background...'%}</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="border:none;padding:0.0194in;">
-        <p><img src="/media/imaging/raw-rolling-ball-back-corr.jpg" title="fig:raw_rolling_ball_back_corr.jpg" alt="raw_rolling_ball_back_corr.jpg"></p>
-      </td>
-      <td style="border:none;padding:0.0194in;">
-        <p><img src="/media/imaging/rolling-ball-back-corr.jpg" title="fig:rolling_ball_back_corr.jpg" alt="rolling_ball_back_corr.jpg"></p>
-      </td>
-      <td style="border:none;padding:0.0194in;">
-        <p><img src="/media/imaging/processed-rolling-ball-back-corr.jpg" title="fig:processed_rolling_ball_back_corr.jpg" alt="processed_rolling_ball_back_corr.jpg"></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-{:/}
+| RAW |  | {% include bc path='Process | Subtract Background...'%} |
+| :----: | :----: | :----: |
+| ![](/media/imaging/raw-rolling-ball-back-corr.jpg) | ![](/media/imaging/rolling-ball-back-corr.jpg) | ![](/media/imaging/processed-rolling-ball-back-corr.jpg) |
 
 Once the background has been evened, final adjustments can be made with the *Brightness/Contrast* control.
 
-|                                                                                                                    |                                                                                                              |                                                                                                                                    |
-|--------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | ![](/media/imaging/bright-contr-roll-ball.jpg) | ![](/media/imaging/histogram-roll-ball.jpg) | ![](/media/imaging/bright-contr-control-roll-ball.jpg) |
 
 ### ROI background correction
@@ -226,40 +193,9 @@ The rolling-ball algorithm takes a lot of time. To speed up the process with an 
 
 This macro, because it also works with stacks, can be used on time-courses with varying backgrounds.
 
-{::nomarkdown}
-<table>
-  <tbody>
-    <tr>
-      <td style="border:none;padding:0in;">
-        <center>
-          <p>Before correction</p>
-        </center>
-      </td>
-      <td style="border:none;padding:0in;">
-        <center>
-          <p>Background intensity over time</p>
-        </center>
-      </td>
-      <td style="border:none;padding:0in;">
-        <center>
-          <p>After <em>ROI_BG_Correction</em></p>
-        </center>
-      </td>
-    </tr>
-    <tr>
-      <td style="border:none;padding:0in;">
-        <p><img src="/media/imaging/roi-back-corr-before.gif" title="fig:roi_back_corr_before.gif" alt="roi_back_corr_before.gif"></p>
-      </td>
-      <td style="border:none;padding:0in;">
-        <p><img src="/media/imaging/roi-back-corr-during.gif" title="fig:roi_back_corr_during.gif" alt="roi_back_corr_during.gif"></p>
-      </td>
-      <td style="border:none;padding:0in;">
-        <p><img src="/media/imaging/roi-back-corr-after.gif" title="fig:roi_back_corr_after.gif" alt="roi_back_corr_after.gif"></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-{:/}
+| Before correction | Background intensity over time | After *ROI_BG_Correction* |
+| :----: | :----: | :----: |
+| ![](/media/imaging/roi-back-corr-before.gif) | ![](/media/imaging/roi-back-corr-during.gif) | ![](/media/imaging/roi-back-corr-after.gif) |
 
 ## Flat-field correction
 
@@ -314,7 +250,7 @@ More sophisticated masking can be done by *thresholding* the image and subtracti
 1.  Duplicate the image, or, if it's a stack, generate an *average projection* of a few frames.
 2.  Threshold this image with the menu command {% include bc path='Image | Adjust | Threshold'%}.
 3.  Hit the Auto button and adjust the sliders until all the cells are highlighted red.
-4.  Click *Apply*. Check the following box: *black foreground, white background*. You should now have a white and black image with your cells black and background white. If you have white cells and black background, invert the image with {% include bc path='Edit | Invert'%}.
+4.  Click *Apply* Check the following box: *black foreground, white background*. You should now have a white and black image with your cells black and background white. If you have white cells and black background, invert the image with {% include bc path='Edit | Invert'%}.
 5.  This can be smoothed with the command {% include bc path='Process | Smooth'%} and the black area enlarged slightly with {% include bc path='Process | Binary | Dilate'%} to give a better mask.
 6.  Using the regular Image calculator {% include bc path='Process | Image calculator'%} subtract this black and white "mask" image from your original image or stack.
 
