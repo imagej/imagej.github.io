@@ -1,5 +1,4 @@
 ---
-mediawiki: Build_ImageJ2_Plugin_With_JavaFX
 title: Build ImageJ2 Plugin With JavaFX
 categories: [Development]
 section: Extend:Development:Tools
@@ -23,16 +22,39 @@ that will in the long term probably
 ## Under the hood
 
 Usually a JavaFX program needs to declare a `javafx.application.Application`.
-Because only *one* `Application` instance can exist at runtime, I think under
-IJ1/IJ2 interface (using Swing), if you want to use JavaFX you need to use the
-`javafx.embed.swing.JFXPanel` class which make the link/bridge between a
-`JFrame` and JavaFX.
+However, only *one* `Application` instance can exist at runtime, so the 
+`javafx.embed.swing.JFXPanel` class which makes the link/bridge between a
+`JFrame` and JavaFX is the preferred way build a JavaFX project using the
+IJ1/IJ2 interface (using Swing).
 
--   An example of the usual `javafx.application.Application` can be found
-    [here](https://github.com/hadim/imagej-plugin-javafx/blob/master/src/main/java/net/imagej/plugin/minimalJavaFXPlugin/gui/MainApp.java)
+-   An example of how to use the `javafx.embed.swing.JFXPanel` in a Fiji project can be found
+    [here](https://github.com/fiji/OMEVisual/blob/master/src/main/java/sc/fiji/omevisual/gui/MainAppFrame.java)
+    
+The ImageJ UI is written in Swing and JavaFX will run in a different thread. This adds some additional considerations
+when building JavaFX projects that will run in ImageJ. Extra care must be taken to ensure changes in the swing UI are
+done on the swing thread and changes to the JavaFX UI are done using the JavaFX thread. For example, the JXPanel is 
+created on the JavaFX thread using the following Platform.runLater approach:
 
--   An example of how to use `javafx.embed.swing.JFXPanel` can be found
-    [here](https://github.com/hadim/imagej-plugin-javafx/blob/master/src/main/java/net/imagej/plugin/minimalJavaFXPlugin/gui/MainAppFrame.java)
+```java
+Platform.runLater(new Runnable() {
+    @Override
+    public void run() {
+        //launch the JFXPanel placed inside a JFrame running in ImageJ.
+    }
+});
+```
+
+To update Swing UI elements from the JavaFX thread the following approach is used:
+
+```java
+SwingUtilities.invokeLater(new Runnable() {
+	@Override
+	public void run() {
+	    //Update something on the swing thread.
+    }
+});
+```
+Further explanation can be found [here](https://docs.oracle.com/javafx/2/swing/swing-fx-interoperability.htm).
 
 ## Building ImageJ plugins with JavaFX
 
