@@ -1,6 +1,7 @@
 ---
 mediawiki: Test_Block_Matching_Parameters
 title: Test Block Matching Parameters
+categories: [Uncategorized]
 ---
 
 

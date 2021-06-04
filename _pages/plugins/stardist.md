@@ -1,7 +1,7 @@
 ---
 mediawiki: StarDist
 title: StarDist
-categories: []
+categories: [Uncategorized]
 ---
 
 

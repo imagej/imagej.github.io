@@ -1,7 +1,6 @@
 ---
 mediawiki: Mamed
 title: Mamed
-categories: [Tutorials]
 ---
 
 ## Mamed

@@ -1,7 +1,7 @@
 ---
 mediawiki: Delaunay_Voronoi
 title: Delaunay Voronoi
-categories: []
+categories: [Uncategorized]
 ---
 
 

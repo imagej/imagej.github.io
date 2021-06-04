@@ -1,7 +1,6 @@
 ---
 mediawiki: Trainable_Weka_Segmentation_-_How_to_install_new_classifiers
 title: Trainable Weka Segmentation - How to install new classifiers
-categories: [Tutorials,Segmentation,Machine Learning]
 ---
 
 ### Introduction

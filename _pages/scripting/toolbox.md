@@ -2,7 +2,6 @@
 mediawiki: Scripting_toolbox
 title: Scripting toolbox
 section: Extend:Scripting
-categories: [Scripting]
 ---
 
 This page is meant to provide small code snippets as a starting point for writing scripts.

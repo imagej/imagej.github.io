@@ -1,5 +1,4 @@
 ---
-mediawiki: 2012-03-12_-_ImageJ_2.0.0-beta1_is_nigh!
 title: 2012-03-12 - ImageJ 2.0.0-beta1 is nigh!
 ---
 

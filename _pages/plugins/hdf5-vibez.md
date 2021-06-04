@@ -1,6 +1,7 @@
 ---
 mediawiki: HDF5_Vibez
 title: HDF5 Vibez
+categories: [Uncategorized]
 ---
 
 This plugin is an HDF5 reader/writer plugin for [ImageJ](/software/imagej) and [Fiji](/software/fiji). It is a continuation of the [original code](http://lmb.informatik.uni-freiburg.de/resources/opensource/imagej_plugins/hdf5.html) by Matthias Schlachter, Olaf Ronneberger and Kun Liu.

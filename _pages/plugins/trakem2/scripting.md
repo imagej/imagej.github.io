@@ -1,7 +1,6 @@
 ---
 mediawiki: TrakEM2_Scripting
 title: TrakEM2 Scripting
-categories: [Scripting,TrakEM2]
 ---
 
 Examples in [Jython](/scripting/jython).

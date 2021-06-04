@@ -1,5 +1,4 @@
 ---
-mediawiki: 2012-02-17_-_Using_git-svn_to_develop_ImageJ2
 title: 2012-02-17 - Using git-svn to develop ImageJ2
 ---
 
@@ -36,22 +35,24 @@ After everything was prepared for Subversion, use the `dcommit` command of `git 
 
 To get started with `git svn`, you need an initial `git-svn` clone. The easy way to do this would be to start
 
-`git svn clone -s `[`https://code.imagej.net/svn/imagej`](https://code.imagej.net/svn/imagej)
+`git svn clone -s https://code.imagej.net/svn/imagej`
 
 However, this is relatively slow since it uses Subversion to check out every revision in the complete history. You can instead hook up a fresh Git working tree with our pre-imported Git repository like this:
 
 1.  `git init`
 2.  add these sections to the .git/config file  
-        [remote &quot;origin&quot;]
-                url = git://code.imagej.net/imagej.git
-                pushURL = git@code.imagej.net:imagej.git
-                fetch = +refs/heads/*:refs/remotes/origin/*
-                fetch = +refs/heads/svn/*:refs/remotes/*
-        [svn-remote &quot;svn&quot;]
-                url = http://code.imagej.net/svn/imagej
-                fetch = trunk:refs/remotes/trunk
-                branches = branches/*:refs/remotes/*
-                tags = tags/*:refs/remotes/tags/*
+```
+[remote "origin"]
+url = git://code.imagej.net/imagej.git
+pushURL = git@code.imagej.net:imagej.git
+fetch = +refs/heads/*:refs/remotes/origin/*
+fetch = +refs/heads/svn/*:refs/remotes/*
+[svn-remote "svn"]
+url = http://code.imagej.net/svn/imagej
+fetch = trunk:refs/remotes/trunk
+branches = branches/*:refs/remotes/*
+tags = tags/*:refs/remotes/tags/*
+```
 3.  `git fetch`
 4.  `git svn fetch`  (this step takes some time...)
 5.  `git checkout -b master -t trunk`

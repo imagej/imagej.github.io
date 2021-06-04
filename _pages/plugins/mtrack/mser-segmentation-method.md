@@ -1,7 +1,6 @@
 ---
 mediawiki: MSER_as_the_segmentation_method
 title: MSER as the segmentation method
-categories: [Tutorials]
 ---
 
 After making this choice of segmentation in the advanced mode the following panel appears

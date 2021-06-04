@@ -1,6 +1,7 @@
 ---
 mediawiki: 2D_Histogram
 title: 2D Histogram
+categories: [Uncategorized]
 ---
 
 

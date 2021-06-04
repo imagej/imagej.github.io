@@ -1,7 +1,6 @@
 ---
 mediawiki: Downsample
 title: Downsample
-categories: [Scripting]
 ---
 
 Gaussian downsampling of an image with ImageJ on-board tools.

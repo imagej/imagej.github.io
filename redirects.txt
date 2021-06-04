@@ -466,7 +466,7 @@ COBA :: orgs/coba
 CPU_Meter :: plugins/cpu-meter
 CSBD :: orgs/csbd
 CSBDeep :: plugins/csbdeep
-CSIMLab :: orgs/csim-lab
+CSIMLab :: plugins/csim-lab
 Calc_dSpace :: plugins/calc-dspace
 Calculator_Plus :: plugins/calculator-plus
 Calibrate_SCANCO :: plugins/bonej#calibrate-scanco-wip
@@ -897,7 +897,7 @@ I2K_2018 :: events/i2k-2018
 IDE :: develop/ides
 IDEA :: develop/intellij
 IDEs :: develop/ides
-IJ-OpenCV :: plugins/ij-opencv
+IJ-OpenCV :: libs/ij-opencv
 IJ2-python-lib :: https://github.com/hadim/fiji_scripts
 IJMMD :: plugins/ijmmd
 IJ_Blob :: plugins/ij-blob
@@ -948,8 +948,8 @@ ImageJ_Updater :: plugins/updater
 ImageJ_tricks :: learn/tips-and-tricks
 ImagePy :: software/imagepy
 ImageSXM :: software/imagesxm
-ImageScience :: plugins/imagescience
-ImageScience_License :: plugins/imagescience
+ImageScience :: libs/imagescience
+ImageScience_License :: libs/imagescience
 ImageStitching :: plugins/image-stitching
 Image_5D :: plugins/image5d
 Image_Acquisition_Principles :: imaging/principles
@@ -962,7 +962,7 @@ Image_Processing_School_Pilsen_2009_-_Segmentation :: tutorials/segmentation-in-
 Image_Stabilizer :: plugins/image-stabilizer
 Image_Stitching :: plugins/image-stitching
 Image_Synthesizer :: plugins/image-synthesizer
-Imagescience :: plugins/imagescience
+Imagescience :: libs/imagescience
 ImgLib1 :: libs/imglib1
 ImgLib1:_iterating_through_pixel_data :: libs/imglib1/iterating-through-pixel-data
 ImgLib1_(deprecated) :: libs/imglib1
@@ -1230,10 +1230,10 @@ Multi_Stack_Montage :: plugins/multi-stack-montage
 Multi_Thresholder :: plugins/multithresholder
 Multifrac :: plugins/multifrac
 Multiple_Image_Processor :: plugins/multiple-image-processor
-Multithreaded_Image_Processing :: scripting/multithreaded-image-processing-in-clojure
-Multithreaded_Image_Processing_in_Clojure :: scripting/multithreaded-image-processing-in-clojure
-Multithreaded_Image_Processing_in_JavaScript :: scripting/multithreaded-image-processing-in-javascript
-Multithreaded_Image_Processing_in_Javascript :: scripting/multithreaded-image-processing-in-javascript
+Multithreaded_Image_Processing :: tutorials/multithreaded-image-processing-in-clojure
+Multithreaded_Image_Processing_in_Clojure :: tutorials/multithreaded-image-processing-in-clojure
+Multithreaded_Image_Processing_in_JavaScript :: tutorials/multithreaded-image-processing-in-javascript
+Multithreaded_Image_Processing_in_Javascript :: tutorials/multithreaded-image-processing-in-javascript
 Multiview-Reconstruction :: plugins/multiview-reconstruction
 Multiview_Reconstruction :: plugins/multiview-reconstruction
 MyofibrilJ :: plugins/myofibrilj
@@ -1876,7 +1876,7 @@ User:Ksmader :: people/kmader
 User:Kudryashev :: people/KudryashevLab
 User:LMCF-IMG :: people/LMCF-IMG
 User:LMEscudero :: people/luis-escudero
-User:LOCI :: sites/loci
+User:LOCI :: update-sites/loci
 User:Landini :: people/landinig
 User:Leek :: people/LeeKamentsky
 User:Lentz :: people/ricklentz
@@ -1984,7 +1984,7 @@ User:Tupper :: people/btupper
 User:Turek :: people/turekg
 User:Twagner :: people/thorstenwagner
 User:Ulman :: people/xulman
-User:UniBas-IMCF :: sites/imcf
+User:UniBas-IMCF :: update-sites/imcf
 User:VIB :: plugins/vib-protocol
 User:VarunKapoor :: people/kapoorlab
 User:Vcaldas :: people/vcaldas

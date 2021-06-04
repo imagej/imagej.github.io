@@ -1,5 +1,4 @@
 ---
-mediawiki: 2012-02-01_-_The_Fiji_Updater_has_been_integrated_into_the_ImageJ2_code_base
 title: 2012-02-01 - The Fiji Updater has been integrated into the ImageJ2 code base
 ---
 

@@ -1,6 +1,7 @@
 ---
 mediawiki: MSER_parameters
 title: MSER parameters
+categories: [Uncategorized]
 ---
 
 The default algorithm to identify the seeds as objects is called Maximally Stable Extremal Regions (MSER). In short, it computes all possible intensity thresholds of an image, which is called a component tree (e.g. it creates a 3d image from a 2d image). Subsequently MSER tries to identify "stable regions" in this space. Regions in the component tree are considered stable if an object has a certain size and preserves its shape over a given range of thresholds without merging with other objects.

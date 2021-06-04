@@ -1,5 +1,4 @@
 ---
-mediawiki: Linux
 title: Linux
 section: Learn:ImageJ Basics:Supported Platforms
 ---

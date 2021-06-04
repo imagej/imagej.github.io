@@ -1,5 +1,4 @@
 ---
-mediawiki: 2012-09-13_-_Maintaining_backwards_compatibility_through_adapters
 title: 2012-09-13 - Maintaining backwards compatibility through adapters
 ---
 

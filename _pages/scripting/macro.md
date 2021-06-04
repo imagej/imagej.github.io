@@ -2,7 +2,6 @@
 mediawiki: Introduction_into_Macro_Programming
 title: Introduction into Macro Programming
 section: Extend:Scripting:Languages
-categories: [Scripting]
 ---
 
 # Why Macros?

@@ -1,6 +1,7 @@
 ---
 mediawiki: Pub_Montage
 title: Pub Montage
+categories: [Uncategorized]
 ---
 
 ## **Overview**

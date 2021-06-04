@@ -2,7 +2,6 @@
 mediawiki: CellProfiler
 title: CellProfiler
 section: Explore:Software
-categories: [Software,SciJava]
 doi:
 - 10.1186/gb-2006-7-10-r100
 - 10.1093/bioinformatics/btr095

@@ -1,6 +1,5 @@
 ---
 title: How to write your own detection algorithm for TrackMate
-categories: [Tutorials]
 nav-links:
 - title: Edge Feature Analyzers
   url: /plugins/trackmate/custom-edge-feature-analyzer-algorithms

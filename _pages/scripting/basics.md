@@ -2,7 +2,6 @@
 mediawiki: Scripting_basics
 title: Scripting basics
 section: Extend:Scripting
-categories: [Scripting]
 ---
 
 

@@ -1,7 +1,6 @@
 ---
 title: ImgLib2 - Introductory Workshop
 section: Explore:Libraries:ImgLib2
-categories: [ImgLib]
 ---
 
 

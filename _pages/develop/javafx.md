@@ -1,6 +1,5 @@
 ---
 title: Build ImageJ2 Plugin With JavaFX
-categories: [Development]
 section: Extend:Development:Tools
 ---
 

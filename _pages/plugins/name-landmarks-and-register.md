@@ -1,7 +1,7 @@
 ---
 mediawiki: Name_Landmarks_and_Register
 title: Name Landmarks and Register
-categories: []
+categories: [Uncategorized]
 ---
 
 

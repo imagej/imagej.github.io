@@ -1,5 +1,6 @@
 ---
 title: CIPMM plugins
+categories: [Uncategorized]
 ---
 
 Welcome!

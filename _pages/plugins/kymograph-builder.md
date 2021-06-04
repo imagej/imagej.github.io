@@ -1,6 +1,7 @@
 ---
 mediawiki: KymographBuilder_:_Yet_Another_Kymograph_Fiji_plugin
 title: KymographBuilder  › Yet Another Kymograph Fiji plugin
+categories: [Uncategorized]
 ---
 
 

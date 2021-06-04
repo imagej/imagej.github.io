@@ -1,7 +1,6 @@
 ---
 mediawiki: Stitch_and_Align_a_sequence_of_grid_images_Tutorial
 title: Stitch and Align a sequence of grid images Tutorial
-categories: [Tutorials]
 ---
 
 ## Introduction

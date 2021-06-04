@@ -2,7 +2,6 @@
 mediawiki: TensorFlow
 title: TensorFlow
 section: Explore:Software
-categories: [Software,SciJava]
 doi: 10.5281/zenodo.4724125
 ---
 

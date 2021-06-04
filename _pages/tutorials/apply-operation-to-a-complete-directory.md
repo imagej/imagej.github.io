@@ -1,7 +1,6 @@
 ---
 mediawiki: How_to_apply_a_common_operation_to_a_complete_directory
 title: How to apply a common operation to a complete directory
-categories: [Tutorials]
 ---
 
 ## How to apply a common operation to a complete directory

@@ -1,6 +1,7 @@
 ---
 mediawiki: User:Idavidhf
 title: VHPro
+categories: [Uncategorized]
 ---
 
 VHPro is an image-based plugin for relative measurements using custom ROIs.

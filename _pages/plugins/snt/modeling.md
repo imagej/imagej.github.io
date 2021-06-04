@@ -1,7 +1,6 @@
 ---
 mediawiki: SNT:_Modeling
 title: SNT › Modeling
-categories: [Tutorials]
 nav-links: true
 nav-title: Modeling
 ---

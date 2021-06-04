@@ -1,5 +1,4 @@
 ---
-mediawiki: 2012-01-19_-_New_Release_of_Stitching
 title: 2012-01-19 - New Release of Stitching
 ---
 

@@ -1,7 +1,6 @@
 ---
 mediawiki: Gabor_Filter_script
 title: Gabor Filter script
-categories: [Scripting]
 ---
 
 {% include thumbnail src='/media/tutorials/kernel-gabor-filter.png' title='Example of a two-dimensional Gabor filter kernel (with a spectrum LUT).'%} This is an example of how to create {% include wikipedia title='Gabor filter' text='Gabor filters'%} in Fiji using Beanshell scripting. The script will create and apply a set of Gabor filters to the currently selected image.

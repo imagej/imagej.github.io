@@ -1,6 +1,7 @@
 ---
 mediawiki: Dynamic_Kymograph
 title: Dynamic Kymograph
+categories: [Uncategorized]
 ---
 
 

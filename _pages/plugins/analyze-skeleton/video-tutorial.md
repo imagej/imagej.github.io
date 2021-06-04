@@ -1,7 +1,6 @@
 ---
 mediawiki: Skeleton_analysis_video_tutorial
 title: Skeleton analysis video tutorial
-categories: [Tutorials]
 ---
 
 This video tutorial was made by Javier Cabrera-Chaves and edited by {% include person id='iarganda' %} using [Wink 1.5 for linux](http://www.debugmode.com/wink/), then converted from Adobe Flash to a plain video by {% include person id='smgriffin2' %}.

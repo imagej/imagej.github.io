@@ -1,7 +1,7 @@
 ---
 mediawiki: NoiSee
 title: NoiSee
-categories: []
+categories: [Uncategorized]
 ---
 
 

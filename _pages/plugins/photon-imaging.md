@@ -1,6 +1,7 @@
 ---
 mediawiki: User:PhotonImaging
 title: PhotonImaging
+categories: [Uncategorized]
 ---
 
 ## Photon Imaging

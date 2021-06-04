@@ -1,7 +1,6 @@
 ---
 mediawiki: Manual_editing_of_tracks_using_TrackMate
 title: Manual editing of tracks using TrackMate
-categories: [Tutorials]
 ---
 
 ## Introduction

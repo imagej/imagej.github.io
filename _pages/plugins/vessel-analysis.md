@@ -1,6 +1,7 @@
 ---
 mediawiki: Vessel_Analysis
 title: Vessel Analysis
+categories: [Uncategorized]
 ---
 
 

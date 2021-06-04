@@ -2,7 +2,6 @@
 mediawiki: Scripting
 title: Scripting
 section: Extend:Scripting
-categories: [Scripting]
 ---
 
 ImageJ allows you to write scripts in several different languages.

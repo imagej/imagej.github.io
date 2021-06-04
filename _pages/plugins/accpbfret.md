@@ -12,6 +12,7 @@ team-debuggers: Cameron Lloyd | /people/camlloyd
 team-reviewers: Cameron Lloyd | /people/camlloyd
 team-support: Cameron Lloyd | /people/camlloyd
 team-maintainers: Cameron Lloyd | /people/camlloyd
+categories: [Uncategorized]
 ---
 
 *An ImageJ plugin for analysis of acceptor photobleaching FRET images.*

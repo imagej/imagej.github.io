@@ -1,7 +1,6 @@
 ---
 title: Scripting Headless
 section: Extend:Scripting
-categories: [Scripting]
 ---
 
 [ImageJ scripts](/scripting) are designed to operate independently of user interface—including [headless](/learn/headless), with **no** user interface. This is made easy with the use of [script parameters](/scripting/parameters).

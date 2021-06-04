@@ -1,7 +1,6 @@
 ---
 mediawiki: SNT:_Analysis
 title: SNT › Analysis
-categories: [SNT]
 nav-links: true
 nav-title: Analysis
 ---

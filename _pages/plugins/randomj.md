@@ -18,6 +18,6 @@ categories: [ImageScience]
 {% endcapture %}
 {% include info-box software='ImageScience' name='RandomJ' maintainer=maintainer author=author source=source status='' category='[Plugins](/plugin-index)' website='http://imagescience.org/meijering/software/randomj/' %}The [RandomJ](http://imagescience.org/meijering/software/randomj/) suite of plugins offers sophisticated application of noise to images.
 
-RandomJ is available from the [ImageScience](/plugins/imagescience) update site.
+RandomJ is available from the [ImageScience](/libs/imagescience) update site.
 
  

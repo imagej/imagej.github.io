@@ -1,6 +1,5 @@
 ---
 title: How to write custom actions for TrackMate
-categories: [Tutorials]
 nav-links:
 - title: Edge Feature Analyzers
   url: /plugins/trackmate/custom-edge-feature-analyzer-algorithms

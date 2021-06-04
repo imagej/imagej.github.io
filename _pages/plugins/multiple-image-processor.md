@@ -1,7 +1,7 @@
 ---
 mediawiki: Multiple_Image_Processor
 title: Multiple Image Processor
-categories: []
+categories: [Uncategorized]
 ---
 
 

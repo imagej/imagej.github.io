@@ -1,7 +1,7 @@
 ---
 mediawiki: Bleach_Correction
 title: Bleach Correction
-categories: []
+categories: [Uncategorized]
 artifact: sc.fiji:CorrectBleach_
 ---
 

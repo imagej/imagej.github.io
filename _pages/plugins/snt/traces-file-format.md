@@ -1,7 +1,6 @@
 ---
 mediawiki: SNT:_.traces_File_Format
 title: SNT › .traces File Format
-categories: [SNT]
 nav-links: true
 nav-title: .traces File Format
 ---

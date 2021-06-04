@@ -1,6 +1,7 @@
 ---
 mediawiki: CMP-BIA_tools
 title: CMP-BIA tools
+categories: [Uncategorized]
 ---
 
 

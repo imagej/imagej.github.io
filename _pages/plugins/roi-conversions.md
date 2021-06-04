@@ -1,6 +1,7 @@
 ---
 mediawiki: ROI_Conversions
 title: ROI Conversions
+categories: [Uncategorized]
 ---
 
 {% include warning/wip %}

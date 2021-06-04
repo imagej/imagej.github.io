@@ -1,7 +1,6 @@
 ---
 mediawiki: Trainable_Weka_Segmentation_-_How_to_compare_classifiers
 title: Trainable Weka Segmentation - How to compare classifiers
-categories: [Tutorials,Segmentation,Machine Learning]
 ---
 
 ### Introduction

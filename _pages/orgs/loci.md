@@ -27,7 +27,7 @@ LOCI plays a very active role in the ImageJ community:
     including `fiji.sc` and `openspim.org`.
 -   LOCI currently funds core [Micro-Manager](/software/micro-manager)
     development work.
--   LOCI maintains the [LOCI update site](/sites/loci), which offers
+-   LOCI maintains the [LOCI update site](/update-sites/loci), which offers
     miscellaneous ImageJ plugins developed by its members.
 
 LOCI is a founding member of the [SciJava](/libs/scijava) collaboration,

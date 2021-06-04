@@ -1,7 +1,7 @@
 ---
 mediawiki: FS_Align_TrakEM2
 title: FS Align TrakEM2
-categories: []
+categories: [Uncategorized]
 artifact: sc.fiji:FS_Align_TrakEM2
 ---
 

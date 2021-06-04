@@ -2,7 +2,6 @@
 mediawiki: Featured_Fiji_Projects
 title: Featured Fiji Projects
 section: Explore:Software:Fiji
-categories: [Fiji]
 ---
 
 

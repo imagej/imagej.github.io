@@ -1,5 +1,6 @@
 ---
 title: SPIM Workflow Manager For HPC
+categories: [Uncategorized]
 ---
 
 {% include info-box name='SPIM Workflow Manager for HPC' software='Fiji' author='Jan Kožusznik, Petr Bainar, Jana Klímová, Michal Krumnikl, Pavel Moravec, Pavel Tomancak' maintainer='jan.kozusznik@vsb.cz' released='August 2018' latest-version='March 2019' category='[Transform](/plugin-index#transform), [Registration](/plugin-index#registration), [Deconvolution](/plugin-index#deconvolution)' source=' [on github](https://github.com/fiji-hpc/hpc-workflow-manager/)' %}

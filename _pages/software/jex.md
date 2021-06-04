@@ -2,7 +2,6 @@
 mediawiki: JEX
 title: JEX
 section: Explore:Software
-categories: [Software,SciJava]
 ---
 
 

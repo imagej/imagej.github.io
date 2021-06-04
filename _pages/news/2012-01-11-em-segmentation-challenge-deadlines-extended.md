@@ -1,9 +1,8 @@
 ---
-mediawiki: 2012-01-11_-_EM_segmentation_challenge,_deadlines_extended!
 title: 2012-01-11 - EM segmentation challenge, deadlines extended!
 ---
 
-The deadlines for the [ challenge on EM (machine-learning-based) automatic segmentation](/events/isbi-2012-segmentation-challenge) have been extended due to technical issues.
+The deadlines for the [challenge on EM (machine-learning-based) automatic segmentation](/events/isbi-2012-segmentation-challenge) have been extended due to technical issues.
 
 The new important dates are:
 

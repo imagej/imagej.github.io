@@ -21,19 +21,21 @@ A horizontal navigation bar with links.
   {%- assign links = "" -%}
   {%- for p in candidates -%}
     {%- capture p-dir -%} {%- include util/dir path=p.url -%} {%- endcapture -%}
-    {%- if p-dir == page-dir -%}
-      {%- comment -%} Sort index page before the others. {%- endcomment -%}
-      {%- assign url = p.url | replace: "/index", "/!index" -%}
-      {%- assign title = p.nav-title | default: p.title
-        | replace: " ", "&nbsp;" | replace: "-", "&#8209;" -%}
-      {%- capture link -%}
-        <li><a href="{{url}}">{{title}}</a></li>
-      {%- endcapture -%}
-      {%- unless links == "" -%}
-        {%- assign links = links | append: "|" -%}
-      {%- endunless -%}
-      {%- assign links = links | append: link -%}
-    {%- endif -%}
+    {%- if p-dir != page-dir -%} {%- continue -%} {%- endif -%}
+    {%- unless p.nav-links -%} {%- continue -%} {%- endunless -%}
+
+    {%- comment -%} Sort index page before the others. {%- endcomment -%}
+    {%- assign url = p.url | replace: "/index", "/!index" -%}
+
+    {%- assign title = p.nav-title | default: p.title
+      | replace: " ", "&nbsp;" | replace: "-", "&#8209;" -%}
+    {%- capture link -%}
+      <li><a href="{{url}}">{{title}}</a></li>
+    {%- endcapture -%}
+    {%- unless links == "" -%}
+      {%- assign links = links | append: "|" -%}
+    {%- endunless -%}
+    {%- assign links = links | append: link -%}
   {%- endfor -%}
 
   {%- comment -%}

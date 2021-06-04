@@ -1,6 +1,5 @@
 ---
-mediawiki: 2012-05-10_-_New_plugin:_TrackMate
-title: 2012-05-10 - New plugin › TrackMate
+title: "2012-05-10 - New plugin: TrackMate"
 ---
 
 [TrackMate](/plugins/trackmate) was just released in a first non-beta version.
@@ -15,6 +14,6 @@ Hope you like it!
 
 *Jean-Yves, Nick, Johannes, Ricardo & Spencer*
 
-<figure><img src="/media/plugins/trackmate/trackmate-split-merge-gapclosing.gif" title="TrackMate_Split_Merge_Gapclosing.gif" width="300" alt="TrackMate_Split_Merge_Gapclosing.gif" /><figcaption aria-hidden="true">TrackMate_Split_Merge_Gapclosing.gif</figcaption></figure>
+{% include img align="center" src="/media/plugins/trackmate/trackmate-split-merge-gapclosing.gif" width="300px" alt="TrackMate split/merge/gapclosing" %}
 
 

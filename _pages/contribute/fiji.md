@@ -1,7 +1,6 @@
 ---
 title: Contributing to Fiji
 section: Contribute
-categories: [Fiji]
 nav-links: true
 nav-title: Fiji
 ---

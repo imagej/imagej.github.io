@@ -1,7 +1,6 @@
 ---
 mediawiki: Advanced_mode(MTrack)
 title: Advanced mode(MTrack)
-categories: [Tutorials]
 ---
 
 ## Object recognition methods

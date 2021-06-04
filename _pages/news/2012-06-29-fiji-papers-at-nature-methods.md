@@ -1,5 +1,4 @@
 ---
-mediawiki: 2012-06-29_-_Fiji_papers_at_Nature_Methods
 title: 2012-06-29 - Fiji papers at Nature Methods
 ---
 

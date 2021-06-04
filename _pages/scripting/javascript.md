@@ -2,7 +2,6 @@
 mediawiki: JavaScript_Scripting
 title: JavaScript Scripting
 section: Extend:Scripting:Languages
-categories: [Scripting]
 ---
 
 {% include wikipedia title='JavaScript' text='JavaScript'%} is a high-level, dynamic, untyped programming language, supporting multiple paradigms including object-oriented, imperative and functional programming styles. Although there are similarities between JavaScript and [Java](/develop/plugins), including language name and syntax, the two are distinct languages and differ greatly in their design.

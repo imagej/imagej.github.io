@@ -1,7 +1,6 @@
 ---
 mediawiki: How_to_call_a_plugin_with_a_range_of_parameters
 title: How to call a plugin with a range of parameters
-categories: [Tutorials]
 ---
 
 If you want to call a plugin taking a single numerical parameter for a range of values, use a macro like this:

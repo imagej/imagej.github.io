@@ -1,5 +1,4 @@
 ---
-mediawiki: 2012-09-14_-_The_Updater_moved
 title: 2012-09-14 - The Updater moved
 ---
 

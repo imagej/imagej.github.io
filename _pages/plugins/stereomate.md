@@ -1,7 +1,7 @@
 ---
 mediawiki: StereoMate
 title: StereoMate
-categories: []
+categories: [Uncategorized]
 doi: 10.1101/648337
 ---
 

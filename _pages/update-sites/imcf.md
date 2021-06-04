@@ -1,5 +1,6 @@
 ---
 title: UniBas-IMCF
+section: Extend:Update Sites
 ---
 
 This is a repository (update site) containing custom plugins and scripts created at the IMCF / Uni Basel, as well as some collected ImageJ plugins we are using that are not (yet) included in Fiji.

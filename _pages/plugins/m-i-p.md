@@ -1,7 +1,7 @@
 ---
 mediawiki: M_I_P
 title: M I P
-categories: []
+categories: [Uncategorized]
 artifact: sc.fiji:M_I_P
 ---
 

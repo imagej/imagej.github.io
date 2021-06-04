@@ -1,6 +1,7 @@
 ---
 mediawiki: Contour_Lines
 title: Contour Lines
+categories: [Uncategorized]
 ---
 
 {% include info-box software='ImageJ' name='ContourLines' author=' [Eugene Katrukha](http://katpyxa.info)' maintainer='[Eugene Katrukha](mailto:katpyxa_at_gmail.com)' filename=' [ContourLines\_.jar](https://github.com/ekatrukha/ContourLines/blob/master/target/ContourLines_-0.0.4.jar?raw=true)' source=' [github](https://github.com/ekatrukha/ContourLines)' released='07 March 2019' latest-version='07 March 2019' status='stable' website='https://github.com/ekatrukha/ContourLines' %}

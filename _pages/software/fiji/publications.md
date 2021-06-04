@@ -2,7 +2,6 @@
 mediawiki: Fiji/Publications
 title: Fiji/Publications
 section: Explore:Software:Fiji
-categories: [Fiji]
 ---
 
 {% include notice icon="info" content='This page lists publications relating to the [Fiji](/software/fiji) project.

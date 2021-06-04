@@ -2,7 +2,6 @@
 mediawiki: NIH_Image
 title: NIH Image
 section: Explore:Software
-categories: [Software]
 doi: 10.1038/nmeth.2089
 ---
 

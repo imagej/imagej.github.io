@@ -1,7 +1,7 @@
 ---
 mediawiki: MaMuT
 title: MaMuT
-categories: []
+categories: [Uncategorized]
 doi: 10.7554/eLife.34410
 ---
 

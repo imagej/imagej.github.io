@@ -1,6 +1,7 @@
 ---
 mediawiki: Batch_Processor
 title: Batch Processor
+categories: [Uncategorized]
 ---
 
 {% include notice icon="warning" content='The **Batch Processor** plugin is currently in development, and its functionality is still subject to substantial changes in the near future. For an overview of current batch processing options, see the [Batch Processing](/scripting/batch) page.' %}

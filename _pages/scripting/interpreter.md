@@ -1,7 +1,6 @@
 ---
 mediawiki: Script_Interpreter
 title: Script Interpreter
-categories: [Scripting]
 ---
 
 

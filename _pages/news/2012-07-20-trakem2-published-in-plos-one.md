@@ -1,5 +1,4 @@
 ---
-mediawiki: 2012-07-20_-_TrakEM2_published_in_PLoS_ONE
 title: 2012-07-20 - TrakEM2 published in PLoS ONE
 ---
 

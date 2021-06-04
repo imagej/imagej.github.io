@@ -1,6 +1,7 @@
 ---
 mediawiki: FLIMJ
 title: FLIMJ
+categories: [Uncategorized]
 ---
 
 

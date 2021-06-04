@@ -1,6 +1,5 @@
 ---
 title: Deconvolution
-categories: [Tutorials,Deconvolution]
 section: Learn:Scientific Imaging
 nav-links: true
 ---

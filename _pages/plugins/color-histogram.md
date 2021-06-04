@@ -1,7 +1,7 @@
 ---
 mediawiki: Color_Histogram
 title: Color Histogram
-categories: []
+categories: [Uncategorized]
 artifact: sc.fiji:Color_Histogram
 ---
 

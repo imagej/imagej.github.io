@@ -2,7 +2,6 @@
 mediawiki: Chess
 title: Chess
 section: Extend:Scripting
-categories: [Scripting]
 ---
 
 ## Purpose

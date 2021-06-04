@@ -1,6 +1,7 @@
 ---
 mediawiki: BigDataProcessor
 title: BigDataProcessor
+categories: [Uncategorized]
 ---
 
 

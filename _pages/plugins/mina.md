@@ -1,6 +1,7 @@
 ---
 mediawiki: MiNA_-_Mitochondrial_Network_Analysis
 title: MiNA - Mitochondrial Network Analysis
+categories: [Uncategorized]
 ---
 
 <h1>

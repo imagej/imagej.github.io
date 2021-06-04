@@ -7,8 +7,6 @@ section: Extend
 ---
 {%- assign category-string = "" -%}
 {%- for p in site.pages -%}
-  {%- assign tokens = p.url | split: "/" -%}
-  {%- if tokens[3] and tokens[3] != 'index' -%} {%- continue -%} {%- endif -%}
   {%- comment -%}
   It would be nicer to use the concat filter below, no?
   But that filter only became available in Jekyll 4.0.
@@ -74,7 +72,7 @@ function toggleAllCategories(checked) {
   column-width: 13em;
 }
 #list-of-extensions {
-  column-width: 15em;
+  column-width: 16em;
   list-style: none;
 }
 #list-of-extensions img {
@@ -85,7 +83,6 @@ function toggleAllCategories(checked) {
   align-items: center;
   line-height: 0.9em;
   overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
 }
 #list-of-extensions li div {
@@ -122,10 +119,8 @@ function toggleAllCategories(checked) {
 
 <ul id="list-of-extensions">
 {%- for p in site.pages -%}
-  {%- assign tokens = p.url | split: "/" -%}
-  {%- if tokens[1] != 'plugins' and tokens[1] != 'formats' -%} {%- continue -%} {%- endif -%}
-  {%- if tokens[3] and tokens[3] != 'index' -%} {%- continue -%} {%- endif -%}
-  {%- assign url = p.url | replace: '/index', '' -%}
+  {%- comment -%} Only pages declaring categories are listed. {%- endcomment -%}
+  {%- unless p.categories.size > 0 -%} {%- continue -%} {%- endunless -%}
   {%- assign classes = "" -%}
   {%- for category in p.categories -%}
     {%- assign c = category | slugify -%}
@@ -135,7 +130,7 @@ function toggleAllCategories(checked) {
   <li class="{{classes}}">
     <img src="{{p.icon}}" height=25>
     <div>
-      <a href="{{url}}">{{p.title}}</a><br>
+      <a href="{{p.url | replace: '/index', ''}}">{{p.title}}</a><br>
       <span class="categories">{{ p.categories | join: ', ' }}</span>
     </div>
   </li>

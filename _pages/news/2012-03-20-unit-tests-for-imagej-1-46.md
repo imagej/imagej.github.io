@@ -1,5 +1,4 @@
 ---
-mediawiki: 2012-03-20_-_Unit_tests_for_ImageJ_1.46
 title: 2012-03-20 - Unit tests for ImageJ 1.46
 ---
 

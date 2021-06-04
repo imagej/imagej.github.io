@@ -2,7 +2,6 @@
 mediawiki: Scripting_comparisons
 title: Scripting comparisons
 section: Extend:Scripting
-categories: [Scripting]
 ---
 
  <big>**Example: a command launcher**</big>

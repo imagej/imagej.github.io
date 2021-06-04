@@ -1,6 +1,7 @@
 ---
 mediawiki: Compute_Curvatures
 title: Compute Curvatures
+categories: [Uncategorized]
 ---
 
 

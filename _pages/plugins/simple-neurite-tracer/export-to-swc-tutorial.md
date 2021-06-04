@@ -1,7 +1,6 @@
 ---
 mediawiki: Simple_Neurite_Tracer:_"Export_to_SWC"_Tutorial
 title: Simple Neurite Tracer › "Export to SWC" Tutorial
-categories: [Tutorials]
 nav-links: true
 nav-title: Exporting to SWC
 ---

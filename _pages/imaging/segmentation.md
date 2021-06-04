@@ -1,7 +1,6 @@
 ---
 mediawiki: Segmentation
 title: Segmentation
-categories: [Tutorials,Segmentation]
 section: Learn:Scientific Imaging
 nav-links: true
 ---

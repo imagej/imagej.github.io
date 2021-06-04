@@ -2,6 +2,7 @@
 mediawiki: PixFRET
 title: PixFRET
 doi: 10.1002/jemt.20215
+categories: [Uncategorized]
 ---
 
 

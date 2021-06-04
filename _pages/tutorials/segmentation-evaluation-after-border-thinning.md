@@ -1,7 +1,6 @@
 ---
 mediawiki: Segmentation_evaluation_after_border_thinning_-_Script
 title: Segmentation evaluation after border thinning - Script
-categories: [Segmentation,Scripting]
 ---
 
 # Introduction

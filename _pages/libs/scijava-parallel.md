@@ -1,7 +1,6 @@
 ---
 title: Scijava-parallel
 section: Explore:Libraries
-categories: [Software]
 ---
 
 {% include info-box name='Scijava-parallel' software='Fiji' author='Petr Bainar, Jan Kožusznik' maintainer='Jan Kožusznik' released='October 2019' latest-version='October 2019' category='[Development](/plugin-index#development)' source=' [on github](https://github.com/fiji-hpc/scijava-parallel)' %}

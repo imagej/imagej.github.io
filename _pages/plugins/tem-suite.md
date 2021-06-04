@@ -1,6 +1,7 @@
 ---
 mediawiki: TEM_suite
 title: TEM suite
+categories: [Uncategorized]
 ---
 
 This is a suite of useful imageJ plugins that are designed for analysis of images and diffraction patterns taken on a Transmission Electron Microscope (TEM). Included in the suite are:

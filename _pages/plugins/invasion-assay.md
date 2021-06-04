@@ -1,6 +1,7 @@
 ---
 mediawiki: Invasion_assay
 title: Invasion assay
+categories: [Uncategorized]
 ---
 
 {% include info-box name='Selective Plane Illumination Microscopy Invasion assay' software='Fiji' author='Svenja Rühland, David Hörl, Hartmann Harz' maintainer='David Hörl' released='Decembre 2014' latest-version='Decembre 2014' category='[Registration](/plugin-index#registration)' %}

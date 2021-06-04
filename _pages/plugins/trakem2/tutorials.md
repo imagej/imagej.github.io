@@ -1,7 +1,6 @@
 ---
 mediawiki: TrakEM2_tutorials
 title: TrakEM2 tutorials
-categories: [TrakEM2,Tutorials]
 ---
 
 ## Video tutorial on 3D reconstruction from serial section

@@ -1,6 +1,7 @@
 ---
 mediawiki: LSM_Worker
 title: LSM Worker
+categories: [Uncategorized]
 ---
 
 # LSM-W2 manual

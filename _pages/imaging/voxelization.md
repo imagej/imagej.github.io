@@ -1,7 +1,6 @@
 ---
 mediawiki: Voxelization
 title: Voxelization
-categories: [Techniques, Tutorials]
 section: Imaging
 nav-links: true
 ---

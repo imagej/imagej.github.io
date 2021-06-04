@@ -1,6 +1,7 @@
 ---
 mediawiki: StackObjectCombiner
 title: StackObjectCombiner
+categories: [Uncategorized]
 ---
 
 ## Stack Object Combiner

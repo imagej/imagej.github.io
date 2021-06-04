@@ -1,7 +1,7 @@
 ---
 mediawiki: Stack_Manipulation
 title: Stack Manipulation
-categories: []
+categories: [Uncategorized]
 artifact: sc.fiji:Stack_Manipulation
 ---
 

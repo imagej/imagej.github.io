@@ -1,7 +1,6 @@
 ---
 mediawiki: Testing_Procedure_for_Simple_Neurite_Tracer
 title: Simple Neurite Tracer › Testing Procedure
-categories: [Tutorials]
 nav-links: true
 nav-title: Testing Procedure
 ---

@@ -1,7 +1,6 @@
 ---
 mediawiki: How_to_write_your_own_viewer_for_TrackMate
 title: How to write your own viewer for TrackMate
-categories: [Tutorials]
 nav-links:
 - title: Edge Feature Analyzers
   url: /plugins/trackmate/custom-edge-feature-analyzer-algorithms

@@ -1,7 +1,6 @@
 ---
 mediawiki: Ops_Deconvolution
 title: Ops Deconvolution
-categories: [Ops,Deconvolution]
 ---
 
 

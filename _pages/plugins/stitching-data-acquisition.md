@@ -1,6 +1,7 @@
 ---
 mediawiki: Stitching_data_acquisition
 title: Stitching data acquisition
+categories: [Uncategorized]
 ---
 
 # WiscScan Data Acquisition

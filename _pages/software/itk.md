@@ -2,7 +2,6 @@
 mediawiki: ITK
 title: ITK
 section: Explore:Software
-categories: [Software]
 doi: 10.3233/978-1-60750-929-5-586
 ---
 

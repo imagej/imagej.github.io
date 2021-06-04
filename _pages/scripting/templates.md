@@ -2,7 +2,6 @@
 mediawiki: Script_Templates
 title: Script Templates
 section: Extend:Scripting
-categories: [Scripting]
 ---
 
 Templates are pre-written scripts in a particular scripting language. They can be distributed as any other plugin, and automatically discovered by the [Script Editor](/scripting/script-editor). Templates thus present an excellent way to demonstrate a particular operation to a wide audience of users.

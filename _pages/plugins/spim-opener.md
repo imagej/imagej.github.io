@@ -1,7 +1,7 @@
 ---
 mediawiki: SPIM_Opener
 title: SPIM Opener
-categories: []
+categories: [Uncategorized]
 artifact: sc.fiji:SPIM_Opener
 ---
 

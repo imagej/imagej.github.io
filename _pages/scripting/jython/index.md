@@ -2,7 +2,6 @@
 mediawiki: Jython_Scripting
 title: Jython Scripting
 section: Extend:Scripting:Languages
-categories: [Scripting]
 ---
 
 

@@ -1,7 +1,6 @@
 ---
 mediawiki: Comparison_of_Matlab_functions_and_Ops
 title: Comparison of Matlab functions and Ops
-categories: Tutorials
 ---
 
 {% include notice icon="info" content='This page is under active development.

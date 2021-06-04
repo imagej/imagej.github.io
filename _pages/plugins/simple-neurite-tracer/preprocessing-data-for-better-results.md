@@ -1,7 +1,6 @@
 ---
 mediawiki: Simple_Neurite_Tracer:_Preprocessing_Data_for_Better_Results
 title: Simple Neurite Tracer › Preprocessing Data for Better Results
-categories: [Tutorials]
 nav-links: true
 nav-title: Preprocessing Data
 ---

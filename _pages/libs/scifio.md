@@ -1,7 +1,6 @@
 ---
 title: SCIFIO
 section: Explore:Libraries
-categories: [Software]
 artifact: io.scif:scifio
 doi: 10.1186/s12859-016-1383-0
 ---

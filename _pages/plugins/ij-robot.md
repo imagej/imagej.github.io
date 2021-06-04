@@ -1,7 +1,7 @@
 ---
 mediawiki: IJ_Robot
 title: IJ Robot
-categories: []
+categories: [Uncategorized]
 artifact: sc.fiji:IJ_Robot
 ---
 

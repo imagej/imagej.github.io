@@ -1,6 +1,7 @@
 ---
 mediawiki: MVR-DefineDataset
 title: MVR-DefineDataset
+categories: [Uncategorized]
 ---
 
 ## Select Type of Dataset

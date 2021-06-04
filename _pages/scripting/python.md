@@ -1,6 +1,5 @@
 ---
 title: Python
-categories: [Development]
 ---
 
 You can use ImageJ from [Python](https://python.org/):

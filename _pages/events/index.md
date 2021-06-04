@@ -2,7 +2,6 @@
 mediawiki: Upcoming_Events
 title: Upcoming Events
 section: Explore:Events
-categories: [Community]
 ---
 
 Please see [this list on the Image.sc Forum](https://forum.image.sc/t/upcoming-image-analysis-events/19912) of upcoming conferences, courses, and other events in the scientific imaging community.

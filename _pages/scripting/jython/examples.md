@@ -1,7 +1,6 @@
 ---
 mediawiki: Jython_Scripting_Examples
 title: Jython Scripting Examples
-categories: [Scripting,Jython]
 ---
 
 {% include notice icon='info' content='This page is a copy of

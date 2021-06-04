@@ -1,6 +1,7 @@
 ---
 mediawiki: Average_Images
 title: Average Images
+categories: [Uncategorized]
 ---
 
 

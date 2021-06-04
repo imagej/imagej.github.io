@@ -1,7 +1,6 @@
 ---
 mediawiki: SPIM_Registration_Method
 title: SPIM Registration Method
-categories: Plugins,Registration
 ---
 
 ## Citation

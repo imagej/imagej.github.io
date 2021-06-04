@@ -1,5 +1,4 @@
 ---
-mediawiki: 2012-05-08_-_Presentation_at_Bioimage_Analysis_Workshop
 title: 2012-05-08 - Presentation at Bioimage Analysis Workshop
 ---
 

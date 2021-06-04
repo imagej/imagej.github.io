@@ -2,7 +2,6 @@
 mediawiki: Compatibility
 title: ImageJ Legacy Layer
 section: Explore:Libraries
-categories: [Development]
 artifact: net.imagej:imagej-legacy
 ---
 

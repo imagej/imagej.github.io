@@ -1,6 +1,7 @@
 ---
 mediawiki: Get_Meta
 title: Get Meta
+categories: [Uncategorized]
 ---
 
 ## **Overview**
