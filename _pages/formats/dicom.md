@@ -36,9 +36,9 @@ print("Pixel Spacing: "+ pixelSpacing);
 
 See these [macro](/scripting/macro) functions:
 
--   [getImageInfo()](/ij/developer/macro/functions.html#getImageInfo)
--   [getInfo(DICOM\_TAG)](/ij/developer/macro/functions.html#getInfo)
--   [getMetadata("Info")](/ij/developer/macro/functions.html#getMetadata)
+-   [getImageInfo()](https://imagej.nih.gov/ij/developer/macro/functions.html#getImageInfo)
+-   [getInfo(DICOM\_TAG)](https://imagej.nih.gov/ij/developer/macro/functions.html#getInfo)
+-   [getMetadata("Info")](https://imagej.nih.gov/ij/developer/macro/functions.html#getMetadata)
 
 An example using `getInfo()`:
 

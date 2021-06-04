@@ -45,7 +45,7 @@ As for stable version 0.5 the following modules are available :
 
 ## Installation
 
--   Install [ImageJ](/ij/) or [Fiji](http://fiji.sc/).
+-   Install [ImageJ](https://imagej.nih.gov/ij/) or [Fiji](http://fiji.sc/).
 
 <!-- -->
 

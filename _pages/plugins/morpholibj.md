@@ -306,7 +306,7 @@ A binary particle may be described mathematically by its moments which correspon
 
 #### Plugins
 
-Most MorphoLibJ plugins consider the current image as input, that must be either binary (only one region is considered), or label (typically the result of a connected components labeling, see [Utilities for binary images](/plugins/morpholibj#utilities-for-binary-images)). The output is a results table (ImageJ [Results table](/ij/docs/guide/146-22.html)) containing one row for each label actually present within the image. The spatial calibration of the image is taken into account in all measurements. All plugins can be found under the {% include bc path='Plugins | MorphoLibJ | Analyze'%} menu.
+Most MorphoLibJ plugins consider the current image as input, that must be either binary (only one region is considered), or label (typically the result of a connected components labeling, see [Utilities for binary images](/plugins/morpholibj#utilities-for-binary-images)). The output is a results table (ImageJ [Results table](https://imagej.nih.gov/ij/docs/guide/146-22.html)) containing one row for each label actually present within the image. The spatial calibration of the image is taken into account in all measurements. All plugins can be found under the {% include bc path='Plugins | MorphoLibJ | Analyze'%} menu.
 
 ##### Global geometry
 
@@ -697,15 +697,15 @@ At the end of the script a dialog is shown to smooth the surfaces at will. Each 
 
 ## Documentation
 
-Each [released version of MorphoLibJ](https://github.com/ijpb/MorphoLibJ/releases) comes with a [User Manual in PDF format](https://github.com/ijpb/MorphoLibJ/releases/download/v1.4.0/MorphoLibJ-manual-v1.4.0.pdf).
+Each [released version of MorphoLibJ](https://github.comhttps://imagej.nih.gov/ijpb/MorphoLibJ/releases) comes with a [User Manual in PDF format](https://github.comhttps://imagej.nih.gov/ijpb/MorphoLibJ/releases/download/v1.4.0/MorphoLibJ-manual-v1.4.0.pdf).
 
-The main source code directory is on GitHub under [src/main/java/inra/ijpb](http://github.com/ijpb/MorphoLibJ/tree/master/src/main/java/inra/ijpb).
+The main source code directory is on GitHub under [src/main/java/inrahttps://imagej.nih.gov/ijpb](http://github.comhttps://imagej.nih.gov/ijpb/MorphoLibJ/tree/master/src/main/java/inrahttps://imagej.nih.gov/ijpb).
 
-You can browse the [javadoc](http://ijpb.github.io/MorphoLibJ/javadoc/) for more information about its API.
+You can browse the [javadoc](http:/https://imagej.nih.gov/ijpb.github.io/MorphoLibJ/javadoc/) for more information about its API.
 
 ## Installation
 
--   In [ImageJ 1.x](/software/imagej1), download the [latest released jar](https://github.com/ijpb/MorphoLibJ/releases) into the *plugins* folder.
+-   In [ImageJ 1.x](/software/imagej1), download the [latest released jar](https://github.comhttps://imagej.nih.gov/ijpb/MorphoLibJ/releases) into the *plugins* folder.
 -   In [ImageJ2](/software/imagej2) (including [Fiji](/software/fiji)), you just need to [ add](/update-sites/following#add-update-sites) the IJPB-plugins site to your list of update sites:
     1.  Select {% include bc path='Help | Update...'%} from the menu to start the [updater](/plugins/updater).
     2.  Click on *Manage update sites*. This brings up a dialog where you can activate additional update sites.
@@ -718,7 +718,7 @@ Please note that [MorphoLibJ](/plugins/morpholibj) is based on a publication. If
 
 {% include citation %}
 
-[MorphoLibJ](/plugins/morpholibj)'s code repository has its own [DOI](https://zenodo.org/badge/latestdoi/21349/ijpb/MorphoLibJ).
+[MorphoLibJ](/plugins/morpholibj)'s code repository has its own [DOI](https://zenodo.org/badge/latestdoi/21349https://imagej.nih.gov/ijpb/MorphoLibJ).
 
 
 ## License

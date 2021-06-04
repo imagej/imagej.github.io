@@ -82,7 +82,7 @@ The 3D suite would like to thanks P. Andrey, J.-F. Gilles and the developers of 
 
 -   [Imagescience](http://www.imagescience.org/meijering/software/featurej/)
 -   [LocalThickness](http://www.optinav.com/Local_Thickness.htm)
--   [ConvexHull3D](/ij/plugins/3d-convex-hull/index.html)
+-   [ConvexHull3D](https://imagej.nih.gov/ij/plugins/3d-convex-hull/index.html)
 -   [3D Object Counter](https://imagejdocu.list.lu/plugin/analysis/3d_object_counter/start)
 -   [Droplet Counter](https://imagejdocu.list.lu/plugin/analysis/droplet_counter/start)
 

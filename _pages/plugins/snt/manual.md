@@ -376,7 +376,7 @@ This menu contains several options which provide quick ways to analyze and visua
 
     {% include img src="snt-path-manager-measurements" width="1000" caption="Measurements table for OP_1" %}
 
--   {% include bc path='Convert to ROIs...'%} Allows conversion of Path(s) to ImageJ [ROIs](/ij/docs/guide/146-10.html#sec:Selections-Intro) (Regions of Interest). Creates an instance of the [ROI Manager](/ij/docs/guide/146-30.html#fig:The-ROI-Manager)
+-   {% include bc path='Convert to ROIs...'%} Allows conversion of Path(s) to ImageJ [ROIs](https://imagej.nih.gov/ij/docs/guide/146-10.html#sec:Selections-Intro) (Regions of Interest). Creates an instance of the [ROI Manager](https://imagej.nih.gov/ij/docs/guide/146-30.html#fig:The-ROI-Manager)
     -   *Convert* Drop-down menu specifying the compartment to convert.
     -   *View* Drop-down menu specifying which view to overlay the ROIs.
     -   *Impose SWC colors*

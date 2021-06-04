@@ -37,7 +37,7 @@ If you get an error saying that some Plugin related classes cannot be found, ple
 
 ## Running ImageJ commands
 
-In ImageJ, you can [record macros](/ij/docs/guide/146-31.html#sub:Record...), one of the most powerful ways to use the program. Most of the recorded statements will look like this:
+In ImageJ, you can [record macros](https://imagej.nih.gov/ij/docs/guide/146-31.html#sub:Record...), one of the most powerful ways to use the program. Most of the recorded statements will look like this:
 
 ```javascript
 run("Command", "key1=7 key2 key3=[C:\\Documents and Settings\\Fiji\\Test.png]");
@@ -45,7 +45,7 @@ run("Command", "key1=7 key2 key3=[C:\\Documents and Settings\\Fiji\\Test.png]");
 
 The first parameter to the `run()` method is the menu item's label which identifies the plugin to run (in this example, the label would read: *Command*).
 
-The second parameter is a String containing values the user specified via an [ImageJ dialog](http://jenkins.imagej.net/job/ImageJ1-javadoc/javadoc/ij/gui/GenericDialog.html). Every value is identified by a label, and except for checkboxes (such as `key2` in the example above), they have values. If the values contain spaces, you need to enclose the value in square brackets (such as `key3` in the example above).
+The second parameter is a String containing values the user specified via an [ImageJ dialog](http://jenkins.imagej.net/job/ImageJ1-javadoc/javadochttps://imagej.nih.gov/ij/gui/GenericDialog.html). Every value is identified by a label, and except for checkboxes (such as `key2` in the example above), they have values. If the values contain spaces, you need to enclose the value in square brackets (such as `key3` in the example above).
 
 Note that the backslash is a so-called *escape character*, i.e. it can be used to insert special characters such as line breaks or tabs. To insert a plain backslash, it has to be repeated therefore (as in the `key3` value: `C:\\Documents and Settings` becomes `C:\\\\Documents and Settings`).
 

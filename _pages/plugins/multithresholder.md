@@ -10,7 +10,7 @@ plugin from {% include person id='landinig' %} does a better job.
 {%- endcapture removed-from-fiji -%}
 {% include notice icon="info" content=removed-from-fiji %}
 
-{% include info-box software='ImageJ' name='MultiThresholder' author='Kevin (Gali) Baler' filename=' [Multi_Thresholder.jar](/ij/plugins/download/jars/Multi_Thresholder.jar) (30,729 Bytes)' source='in .jar file' released='21 July 2005' latest-version='25 January 2007' status='unknown' category='Segmentation' website='/ij/plugins/multi-thresholder.html' %}
+{% include info-box software='ImageJ' name='MultiThresholder' author='Kevin (Gali) Baler' filename=' [Multi_Thresholder.jar](https://imagej.nih.gov/ij/plugins/download/jars/Multi_Thresholder.jar) (30,729 Bytes)' source='in .jar file' released='21 July 2005' latest-version='25 January 2007' status='unknown' category='Segmentation' website='https://imagej.nih.gov/ij/plugins/multi-thresholder.html' %}
 
 ## Purpose
 

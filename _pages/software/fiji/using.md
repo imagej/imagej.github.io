@@ -17,7 +17,7 @@ Useful information about using Fiji can be found here:
 -   Some [ImageJ tricks](/learn/tips-and-tricks)
 -   Descriptions of bundled [Plugins](/plugin-index)
 -   A detailed overview of the [Plugins Menu](/plugin-index)
--   The ImageJ website has a nice [ImageJ User Manual](/ij/docs/user-guide.pdf)
+-   The ImageJ website has a nice [ImageJ User Manual](https://imagej.nih.gov/ij/docs/user-guide.pdf)
 -   [Installing 3rd party plugins](/plugins#installing-plugins)
 -   [Find contact information, mailing list, IRC (chat) and help](/discuss)
 -   [Frequently Asked Questions](/learn/faq)

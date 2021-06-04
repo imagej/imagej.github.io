@@ -518,7 +518,7 @@ dimensions as the target image.
     -   Specified (pixel): *The output field of view will be that given by the Offset and Field of View parameter fields where both are in units of pixels*
     -   Specified (physical): *The output field of view will be that given by the Offset and Field of View parameter fields where both are in the physical units of the moving and target images*
 
-The warped moving image can be exported as an in-memory or [virtual](/ij/docs/guide/146-8.html) ImagePlus. A virtual ImagePlus is generally faster to generate but slower to browse, whereas an in-memory ImagePlus will be slower to generate but faster to browse.
+The warped moving image can be exported as an in-memory or [virtual](https://imagej.nih.gov/ij/docs/guide/146-8.html) ImagePlus. A virtual ImagePlus is generally faster to generate but slower to browse, whereas an in-memory ImagePlus will be slower to generate but faster to browse.
 
 <img src="/media/plugins/bigwarplandmarkcenteredexport.png" width="600"/>
 

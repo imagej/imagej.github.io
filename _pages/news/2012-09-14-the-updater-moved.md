@@ -4,7 +4,7 @@ title: 2012-09-14 - The Updater moved
 
 The Fiji Updater moved to [ImageJ2](/software/imagej2)!
 
-It has always been the goal of the Fiji project to contribute to the ImageJ community. We have been pleased to contribute many bug fixes and useful features such as the [Command Finder](/ij/docs/guide/146-5.html).
+It has always been the goal of the Fiji project to contribute to the ImageJ community. We have been pleased to contribute many bug fixes and useful features such as the [Command Finder](https://imagej.nih.gov/ij/docs/guide/146-5.html).
 
 In the same spirit, the ImageJ2 project has mimicked and enhanced this open development style. One of the enhancements in ImageJ2's development, from which Fiji can benefit, is the addition of an automated test suite which is run every night by a [dedicated server](http://jenkins.imagej.net/).
 

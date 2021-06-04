@@ -64,4 +64,4 @@ See the [source code](/develop/source) page for details on obtaining the ImageJ 
 ## See also
 
   - [ImageJ2 development releases](/software/imagej2/development-releases) for early versions of [ImageJ2](/software/imagej2).
-  - [ImageJ1 download archive](/ij/download/) for old versions of [ImageJ 1.x](/software/imagej1).
+  - [ImageJ1 download archive](https://imagej.nih.gov/ij/download/) for old versions of [ImageJ 1.x](/software/imagej1).
