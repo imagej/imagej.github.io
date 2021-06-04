@@ -11,7 +11,9 @@ that will in the long term probably
 ## Some things to know
 
 -   JavaFX is only available since **Java 8**.
--   JavaFX 8 is shipped with Oracle JDK 8, but **not with OpenJDK 8**.
+-   JavaFX 8 is shipped with Oracle JDK 8, but **not with OpenJDK 8** so 
+-   JavaFX is not currently included with some ImageJ and Fiji distributions
+    but the Azul distribution can be used. For further details see this [forum thread](https://forum.image.sc/t/feedback-needed-bundled-java-future-directions/44030/17).
 -   Starting with Java 11, JavaFX was open sourced as
     [OpenJFX](https://openjfx.io/), and was split out from OpenJDK as
     separate components, which can be depended upon like any other library.
@@ -63,17 +65,17 @@ This section aims to give some guidelines to be able to build ImageJ plugins wit
 
 *Please don't hesitate to edit this page and add your tricks and/or experience about JavaFX and ImageJ.*
 
-### A minimal ImageJ2 JavaFX plugin
-
-There is a **minimal, incomplete ImageJ plugin** that
-shows how to use JavaFX for the UI of a plugin:
-
-{% include link-banner url="https://github.com/ctrueden/imagej-plugins-javafx" %}
+### Examples of ImageJ2 JavaFX plugins
 
 Here are some projects that use JavaFX in ImageJ:
 
 -   [OMEVisual](https://github.com/fiji/OMEVisual)
 -   [FilamentDetector](https://github.com/fiji/FilamentDetector)
 
-Another example of an large image processing application that uses IJ2 and is written 
-in JavaFX is [qupath](https://github.com/qupath/qupath)
+Another example of a large JavaFX image processing application that uses several related 
+libraries is [qupath](https://github.com/qupath/qupath)
+
+And finally, there is a **minimal, incomplete ImageJ plugin** that
+shows how to use JavaFX for the UI of a plugin:
+
+{% include link-banner url="https://github.com/ctrueden/imagej-plugins-javafx" %}
