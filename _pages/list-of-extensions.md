@@ -120,7 +120,7 @@ function toggleAllCategories(checked) {
 <ul id="list-of-extensions">
 {%- for p in site.pages -%}
   {%- comment -%} Only pages declaring categories are listed. {%- endcomment -%}
-  {%- unless p.categories -%} {%- continue -%} {%- endunless -%}
+  {%- unless p.categories.size > 0 -%} {%- continue -%} {%- endunless -%}
   {%- assign classes = "" -%}
   {%- for category in p.categories -%}
     {%- assign c = category | slugify -%}
