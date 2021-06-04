@@ -1,34 +1,23 @@
 ---
 mediawiki: BoneJ
 title: BoneJ
-doi: 10.1016/j.bone.2010.08.023
+categories: [Analysis, Mathematical morphology, Particle Analysis]
+doi:
+- 10.12688/wellcomeopenres.16619.1
+- 10.5281/zenodo.1427262
+- 10.1016/j.bone.2010.08.023
+name: BoneJ
+artifact: org.bonej:bonej-utilities
 ---
-
-
-{% capture author%}
-{% include person id='mdoube' %}, {% include person id='rimadoma' %}, {% include person id='alessandrofelder' %}
-{% endcapture %}
-
-{% capture maintainer%}
-{% include person id='mdoube' %}, {% include person id='alessandrofelder' %}
-{% endcapture %}
-
-{% capture source%}
-{% include github org='bonej-org' repo='BoneJ2' %}, [doi:10.5281/zenodo.1427262](https://doi.org/10.5281/zenodo.1427262) 
-{% endcapture %}
-{% include info-box name='BoneJ' software='ImageJ' logo='<img src="/media/icons/bonej.png" width="96"/>' author=author maintainer=maintainer source=source released='Dec 11<sup>th</sup>, 2017' latest-version=' [styloid-r7](https://github.com/bonej-org/BoneJ2/releases)' status='Active' category='[Analysis](/plugin-index#analysis), [Mathematical morphology](/plugin-index#mathematical-morphology), [Particle Analysis](/plugin-index#particle-analysis)' %}
 
 BoneJ is a collection of skeletal biology plug-ins for ImageJ. This is the new, modernized version of the software available through the ImageJ [updater](/plugins/updater). Its update site is called [BoneJ](http://sites.imagej.net/BoneJ). For the old ImageJ1 version, see [BoneJ1](/plugins/bonej1).
 
 This version works with the latest Fiji, and complies with the modern ImageJ [architecture](/develop/architecture). Most plug-ins also now support hyperstacks, i.e. images with multiple channels or time frames.
 
-If you use BoneJ in your work please cite:
-
-> Domander R, Felder AA, Doube M. 2021 BoneJ2 - refactoring established research software. Wellcome Open Res. **6**. doi:[10.12688/wellcomeopenres.16619.1](https://doi.org/10.12688/wellcomeopenres.16619.1)
-
-Include the specific [release](https://github.com/bonej-org/BoneJ2/releases) used in your research, along with the primary sources linked to from the plugin descriptions below.
+If you use BoneJ in your work please [cite it](#citation).
 
 ## Installation
+
 ![Install BoneJ](/media/plugins/install-bonej.png)
 
 1.  [Download](/downloads) the latest version of Fiji for your operating system
@@ -842,9 +831,10 @@ Support for *Kontron IMG*, *Scanco ISQ* and *Stratec pQCT* file formats has been
 BoneJ2 is free, open-source software. You can redistribute it and/or modify it under the terms of the [BSD 2-clause licence](https://github.com/bonej-org/BoneJ2/blob/master/LICENCE.md). The software is provided "as is" and any warranties are disclaimed. In no event shall the copyright holder or contributors be liable.
 
 ## Citation
-> Domander R, Felder AA, Doube M. 2021 BoneJ2 - refactoring established research software. Wellcome Open Res. **6**. doi:[10.12688/wellcomeopenres.16619.1](https://doi.org/10.12688/wellcomeopenres.16619.1).
 
-We recommend you cite the specific [release](https://github.com/bonej-org/BoneJ2/releases) used in your research.
+{% include citation %}
+
+We recommend you cite the specific [release](https://github.com/bonej-org/BoneJ2/releases) used in your research, along with the primary sources linked to from the plugin descriptions above.
 
 ## Funding
 
