@@ -1,7 +1,4 @@
 ---
-mediawiki:
-- Category:Techniques
-- Cookbook
 title: Scientific Imaging Tutorials
 section: Learn:Scientific Imaging
 nav-links: true
