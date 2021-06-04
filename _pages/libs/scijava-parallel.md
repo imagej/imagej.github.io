@@ -1,9 +1,8 @@
 ---
 title: Scijava-parallel
 section: Explore:Libraries
+pom-url: https://raw.githubusercontent.com/fiji-hpc/scijava-parallel/master/pom.xml
 ---
-
-{% include info-box name='Scijava-parallel' software='Fiji' author='Petr Bainar, Jan Kožusznik' maintainer='Jan Kožusznik' released='October 2019' latest-version='October 2019' category='[Development](/plugin-index#development)' source=' [on github](https://github.com/fiji-hpc/scijava-parallel)' %}
 
 Scijava-parallel is a framework that provides an access point for using computational resources such as remote computers or HPC clusters. It hides details about configuration and initialization of such resources.
 

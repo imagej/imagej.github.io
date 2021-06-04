@@ -491,7 +491,7 @@ Uneven illumination problems, typically associated with [wide field microscopy](
 
 #### Automated Segmentation  
 
-It is possible to adopt more sophisticated [segmentation algorithms](/plugin-index#segmentation) when [global thresholding methods](/plugins/auto-threshold) do not yield satisfactory results. Examples:
+It is possible to adopt more sophisticated [segmentation algorithms](/imaging/segmentation) when [global thresholding methods](/plugins/auto-threshold) do not yield satisfactory results. Examples:
 
 -   [Local Threshold](/plugins/auto-local-threshold), {% include bc path="Image | Adjust |" %}
 -   [Robust Automatic Threshold Selection](/plugins/rats), {% include bc path="Plugins | Segmentation |" %}
@@ -956,7 +956,7 @@ Releases notes are available on {% include github org='tferr' repo='ASA' branch=
 
 <!-- -->
 
--   **[Neuroanatomy Resources](/plugin-index#neuroanatomy)** in this wiki
+-   **[List of ImageJ extensions](/list-of-extensions#neuroanatomy)**, which you can filter by the Neuroanatomy category
 
 <!-- -->
 

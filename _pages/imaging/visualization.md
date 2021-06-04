@@ -5,7 +5,7 @@ section: Learn:Scientific Imaging
 nav-links: true
 ---
 
-{% include notice icon='info' size='large' content='See [Visualization](/plugin-index#visualization) for pages about scientific visualization.' %} {% include wikipedia title='Scientific visualization' text='Scientific visualization'%} is a set of techniques for graphically illustrating scientific data, enabling scientists to better understand, illustrate, and glean insight from their data.
+{% include wikipedia title='Scientific visualization' text='Scientific visualization'%} is a set of techniques for graphically illustrating scientific data, enabling scientists to better understand, illustrate, and glean insight from their data.
 
 ## Getting Started with Simple Visualization Options in ImageJ
 
@@ -100,7 +100,7 @@ For further reading about color maps, see [1] and [2]
 
 ### Adjusting your Image in ImageJ
 
-The [Adjust submenu](https://imagej.nih.gov/ij/docs/guide/146-28.html#toc-Subsection-28.2) contains commands that adjust \[/docs/guide/146-28.html#sub:Brightness/Contrast>...%5BC%5D Brightness/Contrast\], \[</docs/guide/146-28.html#sub:Threshold>...%5BT%5D Threshold\] levels, and image \[</docs/guide/146-28.html#sub:Size... Size\].
+The [Adjust submenu](https://imagej.nih.gov/ij/docs/guide/146-28.html#toc-Subsection-28.2) contains commands that adjust [Brightness/Contrast](https://imagej.nih.gov/ij/docs/guide/146-28.html#sub:Brightness/Contrast...%5BC%5D), [Threshold](https://imagej.nih.gov/ij/docs/guide/146-28.html#sub:Threshold...%5BT%5D) levels, and image [Size](https://imagej.nih.gov/ij/docs/guide/146-28.html#sub:Size...).
 
 ### Visualization of Volumetric Image Data
 

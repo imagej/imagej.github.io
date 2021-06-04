@@ -6,8 +6,6 @@ section: Learn:Scientific Imaging
 nav-links: true
 ---
 
-{% include notice icon='info' size='large' content='See [Colocalization](/plugin-index#colocalization) for pages about colocalization.' %}
-
 ## What is colocalization?
 
 Suppose you are given some images by a colleague, or have some images of your own, and you want to measure the amount of colocalisation between two of the dyes or stains in the images. First you have to define what you mean by colocalisation, and that is not trivial. Generally speaking, when we evaluate colocalization, we are usually attempting to demonstrate that a significant, non-random spatial correlation exists between two channels of a dual color image. The specific nature of that correlation, and what it means for your research, can vary quite a bit. It could mean that one signal of one channel is contained within the bounds of another, or that your stains/dyes are typically found separated by a certain distance or are generally clustered, or simply that the signal from both channels overlap each other when imaged at a particular spatial resolution. Importantly, colocalization results cannot indicate that two proteins/molecules are bound or interacting, only that they are both localized to within a certain volume, and is mostly dependent upon your microscope and its acquisition parameters. Regardless of your microscope, this volume is many, many times greater than the volume of a single protein. For this reason, colocalization is most often used to determine if a protein is localizing to an organelle or other well defined cellular structure.

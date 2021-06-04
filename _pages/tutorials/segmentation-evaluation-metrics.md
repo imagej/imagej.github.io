@@ -3,7 +3,7 @@ mediawiki: Segmentation_evaluation_metrics_-_Script
 title: Segmentation evaluation metrics - Script
 ---
 
-The following [Beanshell script](/scripting/beanshell) allows you to evaluate the performance of your [segmentation](/plugin-index#segmentation) method.
+The following [Beanshell script](/scripting/beanshell) allows you to evaluate the performance of your [segmentation](/imaging/segmentation) method.
 
 Just copy/paste it in the [Script Editor](/scripting/script-editor) or save it into a .bsh file and run it ({% include bc path='File | Open'%}):
 
