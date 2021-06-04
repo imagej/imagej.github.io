@@ -5,8 +5,9 @@ doi: 10.1111/j.1365-2818.2006.01706.x
 name: JaCoP
 license-url: /licensing/lgpl
 license-label: LGPLv3
-team-developers: Fabrice P. Cordelières | mailto:Fabrice.Cordelieres@gmail.com
-team-developers: Susanne Bolte | mailto:Susanne.Bolte@upmc.fr
+team-developers:
+- Fabrice P. Cordelières | mailto:Fabrice.Cordelieres@gmail.com
+- Susanne Bolte | mailto:Susanne.Bolte@upmc.fr
 ---
 
 # JACoP
