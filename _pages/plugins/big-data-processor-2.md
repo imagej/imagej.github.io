@@ -1,6 +1,7 @@
 ---
 mediawiki: BigDataProcessor2
 title: BigDataProcessor2
+categories: []
 ---
 
 

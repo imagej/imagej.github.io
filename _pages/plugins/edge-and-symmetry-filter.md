@@ -1,6 +1,7 @@
 ---
 mediawiki: Edge_and_symmetry_filter
 title: Edge and symmetry filter
+categories: []
 ---
 
 ## Edge and Symmetry filter

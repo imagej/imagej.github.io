@@ -2,6 +2,7 @@
 title: Simple Neurite Tracer
 nav-links: true
 nav-title: Index
+categories: []
 ---
 
 {% include warning/deprecated new="[SNT](/plugins/snt)"

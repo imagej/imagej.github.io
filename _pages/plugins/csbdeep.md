@@ -1,6 +1,7 @@
 ---
 mediawiki: CSBDeep
 title: CSBDeep
+categories: []
 ---
 
 The CSBDeep family is growing. Here is an overview of related topics relevant to ImageJ / Fiji users:

@@ -3,6 +3,7 @@ mediawiki:
 - Linear_Distance
 - LinearDistance
 title: LinearDistance
+categories: []
 ---
 
 {% capture source%}

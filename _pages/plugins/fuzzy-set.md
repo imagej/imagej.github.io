@@ -1,6 +1,7 @@
 ---
 mediawiki: User:Rerger
 title: Fuzzy Set Intensity Transformations
+categories: []
 ---
 
 # Fuzzy Set Intensity Transformations User Guide

@@ -1,6 +1,7 @@
 ---
 mediawiki: Calc_dSpace
 title: Calc dSpace
+categories: []
 ---
 
 ## **Overview**

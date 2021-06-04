@@ -2,6 +2,7 @@
 mediawiki: RETINA_Analysis_Toolkit
 title: RETINA Analysis Toolkit
 doi: 10.1167/iovs.15-17599
+categories: []
 ---
 
 {% include info-box logo='![ 96px](/media/icons/fiji.png)' software='ImageJ' name='RETINA Analysis Toolkit' author=' [**Daniel E. Maidana**](https://www.researchgate.net/profile/Daniel_Maidana2)  

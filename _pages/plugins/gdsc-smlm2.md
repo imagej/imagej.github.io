@@ -1,6 +1,7 @@
 ---
 mediawiki: GDSC-SMLM2
 title: GDSC-SMLM2
+categories: []
 ---
 
 GDSC SMLM plugins provide various tools for single molecule localisation analysis.

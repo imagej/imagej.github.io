@@ -1,6 +1,7 @@
 ---
 mediawiki: DenoiSeg
 title: DenoiSeg
+categories: []
 ---
 
 {% include thumbnail src='/media/plugins/denoiseg-teaser.png' title='Teaser of what DenoiSeg can compute on your data.'%}

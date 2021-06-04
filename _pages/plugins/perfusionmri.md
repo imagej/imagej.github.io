@@ -1,6 +1,7 @@
 ---
 mediawiki: PerfusionMRI
 title: PerfusionMRI
+categories: []
 ---
 
 ## Perfusion in MRI

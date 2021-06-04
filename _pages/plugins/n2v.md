@@ -1,6 +1,7 @@
 ---
 mediawiki: N2V
 title: N2V
+categories: []
 ---
 
 {% include thumbnail src='/media/plugins/n2v-teaser.png' title='Examples of N2V denoised images.'%}

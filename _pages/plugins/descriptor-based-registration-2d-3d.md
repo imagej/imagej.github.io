@@ -1,6 +1,7 @@
 ---
 mediawiki: Descriptor-based_registration_(2d/3d)
 title: Descriptor-based registration (2d/3d)
+categories: []
 ---
 
 

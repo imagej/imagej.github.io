@@ -1,6 +1,7 @@
 ---
 mediawiki: Adelson's_Squares
 title: Adelson's Squares
+categories: []
 ---
 Similar to the [spirals](/plugins/spirals) sample,
 {% include github label="Adelson's squares"

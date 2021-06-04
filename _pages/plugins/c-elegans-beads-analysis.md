@@ -1,6 +1,7 @@
 ---
 mediawiki: CElegansBeadsAnalysis_plugin
 title: CElegansBeadsAnalysis plugin
+categories: []
 ---
 
 This page provides a description and pointers towards the use of the CElegansBeadsAnalysis plugin. It is made available in conjunction with the publication of the paper:

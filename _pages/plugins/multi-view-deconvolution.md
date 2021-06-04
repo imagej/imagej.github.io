@@ -1,6 +1,7 @@
 ---
 mediawiki: Multi-View_Deconvolution
 title: Multi-View Deconvolution
+categories: []
 ---
 
 {% capture source -%} {% include github org='fiji' repo='SPIM\_Registration' %} {%- endcapture %}

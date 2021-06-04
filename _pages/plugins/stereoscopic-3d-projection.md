@@ -1,6 +1,7 @@
 ---
 mediawiki: Stereoscopic_3D_Projection
 title: Stereoscopic 3D Projection
+categories: []
 ---
 
 This plugin allows the user to create 3-D anaglyph and Google Cardboard compatible projections from image stacks.

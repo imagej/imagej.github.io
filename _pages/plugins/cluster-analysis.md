@@ -1,6 +1,7 @@
 ---
 mediawiki: Cluster_Analysis
 title: Cluster Analysis
+categories: []
 ---
 
 {% include notice icon="info" content='This Wiki-Page is still under construction.' %}

@@ -1,6 +1,7 @@
 ---
 mediawiki: IsletJ2
 title: IsletJ2
+categories: []
 ---
 
 ## General

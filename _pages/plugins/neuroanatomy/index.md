@@ -1,6 +1,7 @@
 ---
 mediawiki: Neuroanatomy
 title: Neuroanatomy
+categories: []
 ---
 
 {% include project content='Fiji' %}

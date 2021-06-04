@@ -6,6 +6,7 @@ source-url: https://github.com/mattrothman/cross-sectional-analysis
 source-label: on GitHub
 release-date: 2020/05/14
 team-developers: Thalia Barr-Malec, Nalin Richardson, Matthew Rothman
+categories: []
 ---
 
 This plugin takes in an image of muscle fibers, outlines and numbers all of the

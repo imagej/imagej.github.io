@@ -1,6 +1,7 @@
 ---
 mediawiki: FilamentDetector
 title: FilamentDetector
+categories: []
 ---
 
 

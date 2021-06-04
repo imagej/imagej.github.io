@@ -3,6 +3,7 @@ mediawiki: Labkit
 title: Labkit
 
 artifact: net.imglib2:imglib2-labkit
+categories: []
 ---
 
 <img src="/media/plugins/labkit-illustration.jpg" width="700"/>

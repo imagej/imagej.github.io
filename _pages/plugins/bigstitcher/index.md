@@ -1,6 +1,7 @@
 ---
 mediawiki: BigStitcher
 title: BigStitcher
+categories: []
 ---
 
 

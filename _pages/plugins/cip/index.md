@@ -1,5 +1,6 @@
 ---
 title: CIP
+categories: []
 ---
 
 {% capture benoalo %}{% include person id='benoalo' %}{% endcapture %}

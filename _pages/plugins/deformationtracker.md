@@ -2,6 +2,7 @@
 mediawiki: DeformationTracker
 title: DeformationTracker
 artifact: net.imagej:ETrack
+categories: []
 ---
 
  ETrack is a tool, which computes the deformation of elliptically shaped deformed cells such as Embryo cells, imaged by either bright-field or fluorescent microscopy.

@@ -2,6 +2,7 @@
 mediawiki: CARE
 title: CARE
 artifact: de.csbdresden:csbdeep
+categories: []
 ---
 
 ## Install

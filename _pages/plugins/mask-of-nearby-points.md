@@ -1,6 +1,7 @@
 ---
 mediawiki: Mask_Of_Nearby_Points
 title: Mask Of Nearby Points
+categories: []
 ---
 
 
