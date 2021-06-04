@@ -182,7 +182,7 @@ where PREFIX is the installation directory. ANSI mode is necessary when compilin
 
 # Command line
 
-It is very likely that the cluster computer does not run ANY Graphical User Interface and relies exclusively on the command line. Steering a cluster from the command line is fairly easy - I use about 10 different commands to do everything I need to do. Since the Linux command line may be unfamiliar to most biologists we start a separate **[Linux\_command\_line\_tutorial](Linux_command_line_tutorial)** and **http://swcarpentry.github.io/shell-novice/** page that explains the bare essentials.
+It is very likely that the cluster computer does not run ANY Graphical User Interface and relies exclusively on the command line. Steering a cluster from the command line is fairly easy - I use about 10 different commands to do everything I need to do. Since the Linux command line may be unfamiliar to most biologists we start a separate **[Linux command line tutorial](/tutorials/linux-command-line)** and **http://swcarpentry.github.io/shell-novice/** page that explains the bare essentials.
 
 # Initial setup of the workflow
 

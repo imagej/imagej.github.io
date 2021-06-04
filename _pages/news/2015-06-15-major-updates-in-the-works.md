@@ -28,7 +28,7 @@ Furthermore, there are substantial technical challenges with packaging a Java ap
 
 ## The ImageJ launcher
 
-The ImageJ project currently maintains the ImageJ [Launcher](Launcher) component, which is a complex piece of C code with many layers of case logic intended to support many different OS and Java versions. At the dawn of Fiji in early 2008, there was no suitable cross-platform alternative for launching Java applications. But these days, the story is different: Oracle provides a standard tool called `javapackager` along with a [complete guide for Java application deployment](https://docs.oracle.com/javase/8/docs/technotes/guides/deploy/toc.html). It would greatly simplify continued ImageJ development to use the standard packaging tool, rather than continuing to maintain ImageJ's custom cross-platform launcher.
+The ImageJ project currently maintains the ImageJ [Launcher](/learn/launcher) component, which is a complex piece of C code with many layers of case logic intended to support many different OS and Java versions. At the dawn of Fiji in early 2008, there was no suitable cross-platform alternative for launching Java applications. But these days, the story is different: Oracle provides a standard tool called `javapackager` along with a [complete guide for Java application deployment](https://docs.oracle.com/javase/8/docs/technotes/guides/deploy/toc.html). It would greatly simplify continued ImageJ development to use the standard packaging tool, rather than continuing to maintain ImageJ's custom cross-platform launcher.
 
 ## Standalone stable downloads of ImageJ2
 
@@ -54,7 +54,7 @@ The **self-contained application** bundles are the most relevant to ImageJ speci
 -   Continued support for Linux
 -   Double-clickable JAR file entry point for developers and debugging
 
-With this new deployment scheme, the current ImageJ [Launcher](Launcher) will be retired. ImageJ will lose some features of that launcher, but the change will be worth it to avoid the high maintenance burden we currently incur from thousands of lines of native C code rife with platform-specific case logic. We will provide shell scripts to cover some of the most useful features, such as launching ImageJ in remote debugging mode.
+With this new deployment scheme, the current ImageJ [Launcher](/learn/launcher) will be retired. ImageJ will lose some features of that launcher, but the change will be worth it to avoid the high maintenance burden we currently incur from thousands of lines of native C code rife with platform-specific case logic. We will provide shell scripts to cover some of the most useful features, such as launching ImageJ in remote debugging mode.
 
 ## Java 3D
 

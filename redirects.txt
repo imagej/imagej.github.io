@@ -629,10 +629,10 @@ Development :: develop
 Development_Lifecycle :: develop/releasing
 Development_lifecycle :: develop/releasing
 Development_status :: contribute/governance#development-status
-Diadem_Cerebellar :: TODO (Diadem_Challenge_Data)
-Diadem_Challenge_Data :: TODO
-Diadem_Hippocampal_CA3_Interneuron :: TODO (Diadem_Challenge_Data)
-Diadem_Neocortical_Layer_6_Axons :: TODO (Diadem_Challenge_Data)
+Diadem_Cerebellar :: events/diadem-challenge-data
+Diadem_Challenge_Data :: events/diadem-challenge-data
+Diadem_Hippocampal_CA3_Interneuron :: events/diadem-challenge-data
+Diadem_Neocortical_Layer_6_Axons :: events/diadem-challenge-data
 Dialog :: scripting/generic-dialog
 DiameterJ :: plugins/diameterj
 Diameterj :: plugins/diameterj
@@ -659,7 +659,7 @@ Dotfiles :: develop/dotfiles
 Download :: downloads
 Downloading_and_Building_Fiji_From_Source :: software/fiji/building-from-source
 Downloads :: downloads
-Downsample :: scripting/examples/downsample
+Downsample :: tutorials/downsample
 Dynamic_Kymograph :: plugins/dynamic-kymograph
 Dynamic_ROI_Profiler :: plugins/dynamic-roi-profiler
 Dynamic_Reslice :: plugins/dynamic-reslice
@@ -771,11 +771,11 @@ File_Import :: plugins/importing-image-files
 FiloQuant :: plugins/filoquant
 Find_Connected_Regions :: plugins/find-connected-regions
 Find_Dimension_of_Raw_Image :: plugins/find-dimension-of-raw-image
-Find_Maxima... :: TODO
+Find_Maxima... :: https://imagej.nih.gov/ij/docs/guide/146-29.html#sub:Find-Maxima
 Find_Peaks :: plugins/find-peaks
 Find_maxima_(Trackmate_module) :: plugins/trackmate/find-maxima-detector
-Finer_Grained_Debian_Packages :: TODO
-First-instar_brain_(6.3MB) :: TODO
+Finer_Grained_Debian_Packages :: develop/debian-notes.md
+First-instar_brain_(6.3MB) :: https://samples.fiji.sc/first-instar-brain.txt
 Fit_Sphere :: plugins/bonej#fit-sphere-wip
 Fit_ellipsoid :: plugins/bonej#fit-ellipsoid
 Fix_non-functional_Fiji_after_Update :: learn/troubleshooting
@@ -805,7 +805,7 @@ GPLv2 :: licensing/gpl
 GPLv3 :: licensing/gpl
 GSoC_2011_Ideas :: events/gsoc-2011-ideas
 GUI :: scripting/user-input
-Gabor_Filter_script :: scripting/examples/gabor-filter
+Gabor_Filter_script :: tutorials/gabor-filter
 Gabriel_Graph :: plugins/gabriel-graph
 Gauss_ImgLib2 :: libs/imglib2/gauss-package
 Gauss_Package_ImgLib2 :: libs/imglib2/gauss-package
@@ -927,7 +927,7 @@ ImageJ2/Documentation/Image/Overlay/OverlayManager :: software/imagej2/implement
 ImageJ2/Documentation/PointSetDemo :: software/imagej2/implementation-notes#pointset-demo
 ImageJ2/Documentation/Process/Math/Equation :: software/imagej2/implementation-notes#process--math--equation
 ImageJ2_Documentation_Edit_Options_Misc :: software/imagej2/implementation-notes#edit--options--compatibility
-ImageJ2_Python_Scripts :: scripting/examples/imagej2-python
+ImageJ2_Python_Scripts :: tutorials/imagej2-python
 ImageJ2_development_releases :: software/imagej2/development-releases
 ImageJ2_grant_proposal :: software/imagej2/grant-proposal
 ImageJA :: libs/imageja
@@ -989,8 +989,8 @@ Imglib_FAQ :: libs/imglib2/faq
 Imglib__accessing_pixel_data :: libs/imglib1/iterating-through-pixel-data
 Imglib__iterating_through_pixel_data :: libs/imglib1/iterating-through-pixel-data
 Importing_Image_Files :: plugins/importing-image-files
-Impressum :: TODO (Imprint)
-Imprint :: TODO
+Impressum :: people
+Imprint :: people
 Insight_Toolkit :: software/itk
 Install :: downloads
 Install_Fiji_on_Linux :: software/fiji/downloads#installation
@@ -1037,14 +1037,15 @@ JRuby_Scripting :: scripting/jruby
 JaCoP :: plugins/jacop
 Java :: develop/plugins
 Java3D :: libs/java-3d
-JavaOptions :: TODO (Java_Options)
+JavaOptions :: learn/launcher
+Java_Options :: learn/launcher
 JavaScript :: scripting/javascript
 JavaScript_Scripting :: scripting/javascript
 Java_3D :: libs/java-3d
 Java_8 :: news/2016-05-10-imagej-howto-java-8-java-6-java-3d
 Java_Options :: TODO
 Java_Scripting :: develop/ij1-plugins
-Java_Tricks_and_Quirks :: TODO
+Java_Tricks_and_Quirks :: develop/tips#arcane-quirks
 Javadoc :: develop/source#javadocs
 Javadocs :: develop/source#javadocs
 Javascript :: scripting/javascript
@@ -1112,7 +1113,7 @@ Linear_Stack_Alignment_with_SIFT :: plugins/linear-stack-alignment-with-sift
 Links :: software/fiji/links
 Links_to_tutorials :: tutorials
 Linux :: platforms/linux
-Linux_command_line_tutorial :: TODO
+Linux_command_line_tutorial :: tutorials/linux-command-line
 Lisp :: scripting/clojure
 List_all_threads :: plugins/list-all-threads
 Load_Particles_(.tif_file_-_fast) :: plugins/quickpalm
@@ -1171,7 +1172,7 @@ Maintainer_page :: people
 Make_Fiji_Package :: plugins/make-fiji-package
 Make_Screencast :: plugins/make-screencast
 Malaria_Sporozoites_(9.2MB) :: plugins/malaria-sporozoites-9.2mb
-Mamed :: TODO
+Mamed :: tutorials/mamed
 Manual :: learn/user-guides
 Manual_Tracking :: plugins/manual-tracking
 Manual_drift_correction_plugin :: plugins/manual-drift-correction
@@ -1310,7 +1311,7 @@ PillarTracker_GUI :: plugins/pillartracker-gui
 Pinpoint_regressions_with_Git :: develop/git/pinpoint-regressions
 Pitfalls :: imaging/principles
 PixFRET :: plugins/pixfret
-Plasma_Cloud :: scripting/examples/plasma-cloud
+Plasma_Cloud :: tutorials/plasma-cloud
 PlugIn_Design_Guidelines :: develop/plugin-design-guidelines
 Plugin :: plugins
 Plugins :: plugins
@@ -1350,7 +1351,7 @@ RETINA_Analysis_Toolkit :: plugins/retina-analysis-toolkit
 RGB-Gray_Merge :: plugins/rgb-gray-merge
 RGB_Measure_Plus :: plugins/rgb-measure-plus
 RGB_Profiler :: plugins/rgb-profiler
-RGB_to_CMYK :: scripting/examples/rgb-to-cmyk
+RGB_to_CMYK :: tutorials/rgb-to-cmyk
 RGB_to_Montage :: plugins/rgb-to-montage
 ROI_1-click_tool :: plugins/roi-1-click-tools
 ROI_Conversions :: plugins/roi-conversions
@@ -1486,8 +1487,8 @@ Search :: /
 Segment_blob_in_3D_Viewer :: plugins/segment-blob-in-3d-viewer
 Segmentation :: imaging/segmentation
 Segmentation_Editor :: plugins/segmentation-editor
-Segmentation_evaluation_after_border_thinning_-_Script :: scripting/examples/segmentation-evaluation-after-border-thinning
-Segmentation_evaluation_metrics_-_Script :: scripting/examples/segmentation-evaluation-metrics
+Segmentation_evaluation_after_border_thinning_-_Script :: tutorials/segmentation-evaluation-after-border-thinning
+Segmentation_evaluation_metrics_-_Script :: tutorials/segmentation-evaluation-metrics
 Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012 :: events/isbi-2012-segmentation-challenge
 Select_Bounding_Box :: plugins/auto-crop
 Select_Bounding_Box_(guess_background_color) :: plugins/auto-crop
@@ -1616,7 +1617,7 @@ Strahler_Analysis :: plugins/strahler-analysis
 Straighten... :: plugins/straighten
 Sub-pixel_localization_parameter_selection :: plugins/mtrack/sub-pixel-localization-parameter-selection
 Substack_Maker :: plugins/stack-manipulation
-Super_Sloppy_Surface_Reconstruction :: scripting/examples/super-sloppy-surface-reconstruction
+Super_Sloppy_Surface_Reconstruction :: tutorials/super-sloppy-surface-reconstruction
 Support_status :: contribute/governance#support-status
 Supported_Compilers :: develop/supported-compilers
 Surface_area :: plugins/bonej#surface-area
@@ -1644,7 +1645,7 @@ Test_Block_Matching_Parameters :: plugins/test-block-matching-parameters
 Test_Java3D :: plugins/test-java3d
 Test_of_PNG-screenshot_tutorial :: <DELETED> (stub page with non-existent image)
 Testing_Procedure_for_Simple_Neurite_Tracer :: plugins/simple-neurite-tracer/testing-procedure
-The_Hue_Game :: scripting/examples/hue-game
+The_Hue_Game :: tutorials/hue-game
 Thickness :: plugins/bonej#thickness
 Thread_Killer :: plugins/thread-killer
 ThreeDViewer :: plugins/sciview

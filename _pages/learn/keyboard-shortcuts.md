@@ -1,5 +1,4 @@
 ---
-mediawiki: Keyboard_shortcuts
 title: Keyboard Shortcuts
 section: Learn:ImageJ Basics
 nav-links: true
@@ -15,7 +14,7 @@ For a verbose list of keyboard shortcuts, call
 ## The search bar
 
 Use {% include key key='ctrlcmd|L' %} to jump to the
-[search bar](/learn/basics#the-search-bar),
+[search bar](/learn#the-search-bar),
 to call menu entries by name.
 
 ## Recent commands

@@ -1,5 +1,4 @@
 ---
-mediawiki: Citing
 title: Citing
 section: Contribute
 nav-links: true
@@ -17,7 +16,7 @@ nav-links: true
 We ask users to cite:
 
 1.  Any [specific publications](/plugin-index#citable) of [plugins](/plugins) used.
-2.  The general paper of ImageJ distribution(s) used—e.g., if you used [Fiji](/software/fiji), cite the [Fiji](/software/fiji) paper.
+2.  The general paper of ImageJ distribution(s) used—e.g., if you used [Fiji](/software/fiji), cite the [Fiji](/software/fiji#publication) paper.
 3.  The general [ImageJ](/software/imagej) paper.
 
 If journal reference limits interfere, the plugin-specific publications should take precedence.
@@ -25,8 +24,6 @@ If journal reference limits interfere, the plugin-specific publications should t
 In general, please cite these projects—their long-term future depends on it!
 
 Thank you for your support.
-
-## Publications to cite
 
 <style>
 .publication-box {
@@ -44,7 +41,7 @@ Thank you for your support.
 }
 </style>
 
-### Core projects
+## Core projects
 
 <div class="publication-box">
 <div>{% include icon name='ImageJ2' %}
@@ -57,7 +54,7 @@ Thank you for your support.
 <br><a href="/software/imagej1">ImageJ 1.x</a></div>
 {% include citation id='software/imagej1' %}</div>
 
-### Distributions of ImageJ
+## Distributions of ImageJ
 
 <div class="publication-box">
 <div>{% include icon name='Fiji' %}
@@ -69,7 +66,7 @@ Thank you for your support.
 <br><a href="/software/bio7">Bio7</a></div>
 {% include citation id='software/bio7' %}</div>
 
-### Supporting libraries
+## Supporting libraries
 
 <div class="publication-box">
 <div>{% include icon name='ImgLib2' %}
@@ -91,6 +88,32 @@ Thank you for your support.
   <br><a href="/libs/imagej-ops">ImageJ Ops</a></div>
   {% include citation id='libs/imagej-ops' %}</div>
 
-See the [list of citable software](/plugin-index#citable) and
-[publications using Fiji](/software/fiji/publications)
-for additional citation information.
+## Citable software
+
+The following table lists all citable software packages, plugins, etc.,
+documented on the site. To add a tool to this list, add the `doi:` for
+its publication to the tool's wiki page.
+
+<table>
+  <tr>
+    <th>Project</th>
+    <th>Publication(s) to cite</th>
+  </tr>
+{%- for p in site.pages -%}
+  {%- if p.doi -%}
+  <tr>
+    <td><a href="{{p.url}}">{{p.title}}</a></td>
+    <td>{% include citation doi=p.doi %}</td>
+  </tr>
+  {%- elsif p.ref -%}
+  <tr>
+    <td><a href="{{p.url}}">{{p.title}}</a></td>
+    <td>{{p.ref}}</td>
+  </tr>
+  {%- endif -%}
+{%- endfor -%}
+</table>
+
+## See also
+
+* [Publications using Fiji](/software/fiji/publications)

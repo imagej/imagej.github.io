@@ -5,15 +5,15 @@ section: Extend
 ---
 
 {%- assign category-string = "" -%}
-{%- for page in site.pages -%}
-  {%- assign tokens = page.url | split: "/" -%}
+{%- for p in site.pages -%}
+  {%- assign tokens = p.url | split: "/" -%}
   {%- if tokens[1] != 'plugins' and tokens[1] != 'formats' -%} {%- continue -%} {%- endif -%}
   {%- if tokens[3] and tokens[3] != 'index' -%} {%- continue -%} {%- endif -%}
   {%- comment -%}
   It would be nicer to use the concat filter below, no?
   But that filter only became available in Jekyll 4.0.
   {%- endcomment -%}
-  {%- for category in page.categories -%}
+  {%- for category in p.categories -%}
     {%- capture c -%} {{category | strip | capitalize}} {%- endcapture -%}
     {%- assign category-string = category-string | append: "|" | append: c -%}
   {%- endfor -%}

@@ -24,7 +24,7 @@ ImageJ2 is a new version of [ImageJ](/software/imagej) for the next generation o
 
 To ensure backwards compatibility, ImageJ2 has been designed to fully integrate into the existing ImageJ user interface. This allows users to keep using ImageJ in familiar ways, while providing the ability to migrate toward more powerful new features as needed.
 
-The [Fiji](/software/fiji) distribution of ImageJ has shipped with beta versions of ImageJ2 for quite some time, so you may already be familiar with some of ImageJ2's features—some of which, such as the [Updater](/plugins/updater) and [Launcher](Launcher), were originally developed as part of Fiji. 
+The [Fiji](/software/fiji) distribution of ImageJ has shipped with beta versions of ImageJ2 for quite some time, so you may already be familiar with some of ImageJ2's features—some of which, such as the [Updater](/plugins/updater) and [Launcher](/learn/launcher), were originally developed as part of Fiji. 
 
 
 ## Features of ImageJ2
@@ -108,6 +108,4 @@ For the moment, we suggest using "The ImageJ ecosystem" paper for citations. But
 
 ## See also
 
--   [ImageJ1-ImageJ2 cheat sheet](ImageJ1-ImageJ2_cheat_sheet)
-
-   
+-   [ImageJ1-ImageJ2 cheat sheet](/develop/ij1-ij2-cheat-sheet)

@@ -1,5 +1,4 @@
 ---
-mediawiki: Tips_and_Tricks
 title: Tips and Tricks
 section: Learn:ImageJ Basics
 nav-links: true
@@ -10,7 +9,7 @@ ImageJ is easy to use, but sometimes you wish for some function that is actually
 
 ## Show the memory consumption
 
-Just click on the status bar, and you will see how much memory is used, and how much memory is available.
+Just click on the [status bar](/learn#the-main-window), and you will see how much memory is used, and how much memory is available.
 
 ## Execute external programs
 
@@ -28,7 +27,7 @@ the return value will appear in your Log window when called.
 
 ## Find out in which menu (or .jar file) a certain command is
 
-Hit {% include key keys='Ctrl|L' %} to use the [search bar](/learn/basics#the-search-bar). Type (part of) the name of the entry, then click on *Show full information*.
+Hit {% include key keys='Ctrl|L' %} to use the [search bar](/learn#the-search-bar). Type (part of) the name of the entry, then click on *Show full information*.
 
 If *{% include bc path='Edit | Options | Misc...'%}&gt;Require command key for shortcuts* is *un*checked, typing {% include key key='L' %} is sufficient.
 

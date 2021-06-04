@@ -1,7 +1,7 @@
 ---
 mediawiki: Colorizer_Overlay
 title: Colorizer Overlay
-categories: [Image annotation]
+categories: [Image Annotation]
 ---
 
 {% include info-box software='ImageJ1' name='Colorizer\_Overlay' author='Fred Damen' filename='Colorizer\_Overlay.jar' source=' [Colorizer\_Overlay.zip](/media/plugins/colorizer-overlay.zip)' released='1 April 2020' status='stable' category='[Image annotation](/plugin-index#image-annotation)' website='' %}

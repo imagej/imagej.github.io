@@ -28,7 +28,7 @@ See [Scripting Help](/scripting) for details on keybindings and how to use the i
 A minimal, complete clojure example:
 
     (import '(ij IJ))
-    (def gold (IJ/openImage "/ij/images/AuPbSn40.jpg"))
+    (def gold (IJ/openImage "https://imagej.nih.gov/ij/images/AuPbSn40.jpg"))
     (.show gold)
 
 To create scripts, just save them as .clj text files (with an underscore in the name) in any folder or subfolder of Fiji's plugins folder, and run {% include bc path='Plugins|Scripting|Refresh Clojure Scripts'%} to update the menus (it's done automatically at start up as well).

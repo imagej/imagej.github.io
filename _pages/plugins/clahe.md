@@ -2,8 +2,8 @@
 mediawiki: Enhance_Local_Contrast_(CLAHE)
 title: Enhance Local Contrast (CLAHE)
 categories: [Filtering]
+
 artifact: mpicbg:mpicbg_:1.4.1
-doi: 10.5555/180895.180940
 ---
 
 {% include thumbnail src='/media/tem.jpg' title='TEM original image'%} {% include thumbnail src='/media/tem-clahe-50-256-2.5.jpg' title='TEM CLAHE processed, (block: 50; bins: 256; max slope: 2.5)'%}
@@ -83,4 +83,4 @@ Execute the following macro from [ImageJ's macro editor](/ij/developer/macro/mac
 
 ## References
 
-{% include citation fn=1 %}
+{% include citation fn=1 last='Zuiderveld' first='Karel' contribution='Contrast limited adaptive histogram equalization' title='Graphics gems IV' pages='474–485' publisher='Academic Press Professional, Inc.' address='San Diego, CA, USA' year='1994' url='http://portal.acm.org/citation.cfm?id=180940' %} <!-- CTR TODO: This book chapter does not have a functional DOI. -->

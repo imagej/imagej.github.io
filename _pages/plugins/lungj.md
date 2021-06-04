@@ -1,7 +1,7 @@
 ---
 mediawiki: LungJ
 title: LungJ
-categories: [Segmentation,Binary,Filtering,Image annotation]
+categories: [Segmentation,Binary,Filtering,Image Annotation]
 doi: 10.5258/SOTON/401280
 ---
 

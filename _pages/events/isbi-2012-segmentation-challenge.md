@@ -1,7 +1,7 @@
 ---
 mediawiki: Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012
 title: Segmentation of neuronal structures in EM stacks challenge - ISBI 2012
-categories: [Segmentation, tutorials]
+categories: [Segmentation, Tutorials]
 ---
 
 <img src="/media/logos/isbi.jpg" title="fig:ISBI-logo.jpg" width="100" alt="ISBI-logo.jpg" />The [IEEE International Symposium on Biomedical Imaging (ISBI)](http://www.biomedicalimaging.org/) is the premier forum for the presentation of technological advances in theoretical and applied biomedical imaging and image computing. In the context of the [ISBI 2012](http://www.biomedicalimaging.org/2012/) conference which was held in Barcelona, Spain, from 2 to 5 May 2012, we organized a [challenge workshop](http://www.biomedicalimaging.org/2012/index.php/programme/isbi-challenges/13-challenges/49-contest-workshop-segmentation-of-neuronal) on **segmentation of neuronal structures in EM stacks**.
@@ -66,7 +66,7 @@ The metrics are:
 -   **Foreground-restricted Rand error**: defined as 1 - the maximal {% include wikipedia title='F1 score' text='F-score'%} of the foreground-restricted {% include wikipedia title='Rand index' text='Rand index'%}, a measure of similarity between two clusters or segmentations. On this version of the Rand index we exclude the zero component of the original labels (background pixels of the ground truth).
 -   **Pixel error**: defined as 1 - the maximal {% include wikipedia title='F1 score' text='F-score'%} of pixel similarity, or squared Euclidean distance between the original and the result labels.
 
-If you want to apply these metrics yourself to your own results, you can do it within Fiji using this [script](/scripting/examples/segmentation-evaluation-metrics).
+If you want to apply these metrics yourself to your own results, you can do it within Fiji using this [script](/tutorials/segmentation-evaluation-metrics).
 
 We understand that segmentation evaluation is an ongoing and sensitive research topic, therefore we open the metrics to discussion. Please, do not hesitate to contact the [organizers](/events/isbi-2012-segmentation-challenge#Organizers) to discuss about the metric selection.
 

@@ -1,7 +1,7 @@
 ---
 mediawiki: Grid
 title: Grid
-categories: [Image annotation,Unmaintained]
+categories: [Image Annotation,Unmaintained]
 ---
 
 

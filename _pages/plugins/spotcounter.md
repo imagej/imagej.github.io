@@ -1,7 +1,7 @@
 ---
 mediawiki: SpotCounter
 title: SpotCounter
-categories: [Particle analysis]
+categories: [Particle Analysis]
 ---
 
 

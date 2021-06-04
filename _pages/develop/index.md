@@ -235,7 +235,7 @@ Start with the [ImageJ tutorial notebooks](/tutorials)!
             <a href="/libs/imglib2/examples">ImgLib2 Examples</a>
           </li>
           <li>
-            <a href="ImageJ1-ImageJ2_cheat_sheet">ImageJ1-ImageJ2 cheat sheet</a>
+            <a href="/develop/ij1-ij2-cheat-sheet">ImageJ1-ImageJ2 cheat sheet</a>
           </li>
         </ul>
       </td>

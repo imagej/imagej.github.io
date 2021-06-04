@@ -788,7 +788,7 @@ header.major h2, header.major h3, header.major h4, header.major h5, header.major
 }
 
 header.major p {
-  margin: 0.7em 0 0 0;
+  margin: 0.7em 0 1.4em 0;
 }
 
 header.special {
@@ -1069,7 +1069,7 @@ ul.icons a:hover {
 
 ul.icons li {
   display: inline-block;
-  padding: 0 1.25em 0 0;
+  padding: 1em 1.25em 0 0;
 }
 
 ul.icons li:last-child {

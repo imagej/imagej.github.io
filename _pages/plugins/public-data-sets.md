@@ -1,7 +1,7 @@
 ---
 mediawiki: Public_data_sets
 title: Public data sets
-categories: [Data,Example Data,Segmentation,Tracking, plugins]
+categories: [Data,Example Data,Segmentation,Tracking]
 ---
 
 Do you need image data to try your algorithms on? Do you lack expert ground truth to test your methods? No problem! Here you have a list of available public data sets from the Fiji community and other sources:

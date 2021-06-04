@@ -1,7 +1,7 @@
 ---
 mediawiki: Watershedding_and_Hough_transform_parameters
 title: Watershedding and Hough transform parameters
-categories: [tutorials]
+categories: [Tutorials]
 ---
 
 In this method an intensity threshold value is used to create a binary image on which a distance transform is performed to create a distance transformed image. This distance transformed image is then segmented by watershedding. The user has one parameter to choose here which is the intensity threshold value.

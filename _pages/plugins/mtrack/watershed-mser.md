@@ -1,7 +1,7 @@
 ---
 mediawiki: Watershed_followed_by_MSER
 title: Watershed followed by MSER
-categories: [tutorials]
+categories: [Tutorials]
 ---
 
 After making this choice of segmentation in the advanced mode the following panel appears

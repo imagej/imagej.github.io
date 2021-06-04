@@ -1,7 +1,7 @@
 ---
 mediawiki: Conference
 title: Conferences
-categories: [Conference, community]
+categories: [Conference, Community]
 ---
 
 The core ImageJ development teams and greater image analysis community

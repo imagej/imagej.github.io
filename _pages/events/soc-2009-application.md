@@ -1,6 +1,6 @@
 ---
 title: SoC 2009 Application
-categories: [community]
+categories: [Community]
 ---
 
 ## Link id

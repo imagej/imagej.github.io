@@ -1,7 +1,7 @@
----
+
 mediawiki: ImageScience
 title: ImageScience
-categories: [Libraries,ImageScience,plugins]
+categories: [Libraries,ImageScience]
 ---
 
 

@@ -18,7 +18,7 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 -   Unfortunately, we had to drop support for MacOSX PPC. If you need Fiji on such a system, please contact [the Fiji developer mailing list](http://groups.google.com/group/fiji-devel), and we will try to provide a special edition.
 
--   For Debian/Ubuntu users, there will be [fine-grained packages](/Finer_Grained_Debian_Packages) of Fiji Heidelberg available soon.
+-   For Debian/Ubuntu users, there will be [fine-grained packages](/develop/debian-notes) of Fiji Heidelberg available soon.
 
 ### Other changes
 

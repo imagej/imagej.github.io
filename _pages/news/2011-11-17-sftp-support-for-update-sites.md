@@ -1,5 +1,4 @@
 ---
-mediawiki: 2011-11-17_-_SFTP_support_for_update_sites
 title: 2011-11-17 - SFTP support for update sites
 ---
 

@@ -150,7 +150,7 @@ and get a free 240 times speedup.)
 
 You would probably proceed at this stage by switching to a text editor and creating a script with the extension ".rb" and underscores in the name in the Fiji plugins directory. You should find an example `Plasma_Cloud.rb` script in `plugins/Examples` which is based on the basics we worked out above. The output of this script looks like this:
 
-![Example "Plasma Cloud" image](/media/scripting/examples/plasma-cloud.png)
+![Example "Plasma Cloud" image](/media/tutorials/plasma-cloud.png)
 
 ## Example: Batch Converting File Formats
 

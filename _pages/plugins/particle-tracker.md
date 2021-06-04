@@ -1,7 +1,7 @@
 ---
 mediawiki: Particle_Tracker
 title: Particle Tracker
-categories: [Particle analysis,Tracking]
+categories: [Particle Analysis,Tracking]
 ---
 
 

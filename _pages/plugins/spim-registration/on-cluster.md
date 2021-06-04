@@ -1,7 +1,7 @@
 ---
 mediawiki: SPIM_Registration_on_cluster_(deprecated)
 title: SPIM Registration on cluster (deprecated)
-categories: Registration|Registration, plugins
+categories: [Registration]
 ---
 
 {% include notice icon="warning" content='Please Note: This version of the software is outdated. We highly recommend using the new [automated workflow](/plugins/automated-workflow-for-parallel-multiview-reconstruction). It is much more user friendly, efficient and versatile using full automation of the processing.' %}
@@ -46,7 +46,7 @@ The Lightsheet Z.1 data are saved into the proprietary Zeiss file format **.czi*
 
 ### Getting familiar with Linux command line environment
 
-It is very likely that the cluster computer does not run ANY Graphical User Interface and relies exclusively on the command line. Steering a cluster from the command line is fairly easy - I use about 10 different commands to do everything I need to do. Since the Linux command line may be unfamiliar to most biologists we start a separate [Linux\_command\_line\_tutorial](Linux_command_line_tutorial) page that explains the bare essentials.
+It is very likely that the cluster computer does not run ANY Graphical User Interface and relies exclusively on the command line. Steering a cluster from the command line is fairly easy - I use about 10 different commands to do everything I need to do. Since the Linux command line may be unfamiliar to most biologists we start a separate [Linux command line tutorial](/tutorials/linux-command-line) page that explains the bare essentials.
 
 ### Transferring data
 

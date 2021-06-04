@@ -1,7 +1,7 @@
 ---
 mediawiki: TaskList
 title: 2008 Hackathon in Dresden
-categories: [Hackathons, community]
+categories: [Hackathons, Community]
 ---
 
 This is the summary of the final project meeting of the [Hackathon](/events/hackathons) which took place at the MPI-CBG in Dresden/Germany from 04/21/2008 till 04/30/2008.

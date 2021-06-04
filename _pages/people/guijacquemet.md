@@ -1,18 +1,18 @@
 ---
-mediawiki: User:FiloQuant
 title: Guillaume Jacquemet
 name: Guillaume Jacquemet
 github: guijacquemet
+doi: 10.1083/jcb.201704045
 ---
 
-FiloQuant is a user friendly and modifiable tool for automated detection and quantification of filopodia properties such as length and density.
+## Introduction
 
-FiloQuant was created by Guillaume Jacquemet and Alexandre Carisey. This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License
+Lead and main developer of FiloQuant, a user friendly and modifiable tool for automated detection and quantification of filopodia properties such as length and density.
 
-FiloQuant user guide can be accessed bellow:
+## FiloQuant
 
-**[FiloQuant Manual V1.pdf](/media/filoquant-manual-v1.pdf)**
+You can find our plugin [**here**](https://imagej.github.io/plugins/filoquant).
 
-More info can be found in our paper:
+## Reference
 
-[**FiloQuant reveals increased filopodia density during DCIS progression**](http://biorxiv.org/content/early/2017/04/06/125047)
+{% include citation %}

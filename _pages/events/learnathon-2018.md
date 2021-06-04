@@ -1,6 +1,6 @@
 ---
 title: Learnathon 2018
-categories: [news]
+categories: [News]
 ---
 
 The second DAIS Learnathon took place from June 3 until June 9 2018.  

@@ -1,5 +1,4 @@
 ---
-mediawiki: Governance
 title: Governance
 section: Contribute
 categories: [Development]
@@ -177,7 +176,7 @@ Here is a summary of roles for projects in the [SciJava](/libs/scijava) ecosyste
         <p>{% include person id='rasband' %}</p>
       </td>
       <td>
-        <p>See <a href="/ij/notes.html">release notes</a></p>
+        <p>See <a href="https://imagej.nih.gov/ij/notes.html">release notes</a></p>
       </td>
     </tr>
     <tr>

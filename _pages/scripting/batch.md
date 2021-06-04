@@ -2,7 +2,7 @@
 mediawiki: Batch_Processing
 title: Batch Processing
 section: Extend:Scripting:Languages
-categories: [tutorials]
+categories: [Tutorials]
 ---
 
 

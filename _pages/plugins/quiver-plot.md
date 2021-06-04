@@ -1,7 +1,7 @@
 ---
 mediawiki: Quiver_Plot
 title: Quiver Plot
-categories: [Visualization, plugins]
+categories: [Visualization]
 ---
 
 

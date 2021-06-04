@@ -1,7 +1,7 @@
 ---
 mediawiki: SampEn2D
 title: SampEn2D
-categories: [Pattern recognition]
+categories: [Pattern Recognition]
 doi:
 - 10.1088/2057-1976/2/4/045002
 - 10.1109/EMBC.2014.6944339

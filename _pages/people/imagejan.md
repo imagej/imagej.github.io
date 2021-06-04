@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Eglinger
 title: Jan Eglinger
 name: Jan Eglinger
 gravatar: b620e8b241e2f729450c6adcaf0e205a
@@ -19,4 +18,6 @@ orcid: 0000-0001-7234-1435
 researcherid: C-2707-2014
 scopus: 23980003300
 ---
-{% include warning/stub %}
+
+Hi, I'm Jan Eglinger, Bio-Image Analyst and Image Data Scientist in the Facility for Advanced Imaging and Microscopy (FAIM)
+at the Friedrich Miescher Institute for Biomedical Research (FMI) in Basel, Switzerland.

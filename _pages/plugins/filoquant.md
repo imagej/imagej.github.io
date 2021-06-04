@@ -1,6 +1,7 @@
 ---
 title: FiloQuant
-categories: [Analysis, Segmentation, Object detection]
+categories: [Analysis, Segmentation, Object Detection]
+doi: 10.1083/jcb.201704045
 name: FiloQuant
 source-label: GitHub
 source-url: https://github.com/guijacquemet/FiloQuant
@@ -9,8 +10,8 @@ license-label: LGPLv3
 dev-status: Stable
 support-status: Active
 team-founders: Guillaume Jacquemet | https://github.com/guijacquemet
-team-developer: Guillaume Jacquemet | https://github.com/guijacquemet
-team-contributor: Alexandre Carisey | https://github.com/alexcarisey
+team-developers: Guillaume Jacquemet | https://github.com/guijacquemet
+team-contributors: Alexandre Carisey | https://github.com/alexcarisey
 ---
 
 ## Overview
@@ -27,6 +28,4 @@ FiloQuant user guide can be accessed bellow:
 
 ## References
 
-More info can be found in our paper:
-
-[**FiloQuant reveals increased filopodia density during DCIS progression**](http://biorxiv.org/content/early/2017/04/06/125047)
+{% include citation %}

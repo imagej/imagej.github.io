@@ -1,5 +1,4 @@
 ---
-mediawiki: 2011-09-25_-_Updated_to_TrakEM2_0.9a
 title: 2011-09-25 - Updated to TrakEM2 0.9a
 ---
 

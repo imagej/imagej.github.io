@@ -8,7 +8,11 @@ This is a helper include used by the statbox include.
     <th>{{include.title}}</th>
 {%- endif -%}
     <td id="component-team-{{include.title | downcase}}">
-{%- assign members = include.members | split: ',' -%}
+{%- assign members = include.members -%}
+{%- unless members.first -%}
+  {%- comment -%} Convert comma-separated list to array. {%- endcomment -%}
+  {%- assign members = members | split: ',' -%}
+{%- endunless -%}
 {%- if members.size > 0 -%}
       <ul>
 {%- for member in members -%}

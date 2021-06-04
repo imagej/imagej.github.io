@@ -1,7 +1,7 @@
 ---
 mediawiki: ActionBar
 title: ActionBar
-categories: [development]
+categories: [Development]
 dev-status: Stable
 support-status: Active
 team-founders: Jerome Mutterer | https://github.com/mutterer

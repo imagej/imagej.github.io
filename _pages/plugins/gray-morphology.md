@@ -1,7 +1,7 @@
 ---
 mediawiki: Gray_Morphology
 title: Gray Morphology
-categories: [Segmentation,Mathematical morphology]
+categories: [Segmentation, Mathematical Morphology]
 artifact: sc.fiji:Gray_Morphology
 ---
 

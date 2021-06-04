@@ -1,5 +1,4 @@
 ---
-mediawiki: 2011-09-29_-_Display_framework_changes
 title: 2011-09-29 - Display framework changes
 ---
 

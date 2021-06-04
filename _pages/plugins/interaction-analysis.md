@@ -1,7 +1,7 @@
 ---
 mediawiki: Interaction_Analysis
 title: Interaction Analysis
-categories: [Particle analysis,Colocalization]
+categories: [Particle Analysis,Colocalization]
 ---
 
 

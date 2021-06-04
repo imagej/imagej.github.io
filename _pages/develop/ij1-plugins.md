@@ -1,5 +1,4 @@
 ---
-mediawiki: Developing_Plugins_for_ImageJ_1.x
 title: Developing Plugins for ImageJ 1.x
 section: Extend:Development:Guides
 ---
@@ -89,26 +88,6 @@ A general plugin looks like this:
 -   Plugins can only implement menu entries (in particular, they cannot provide tools in the toolbar)
 -   Some functions which are easy to call via macros are not available via the public Java API (e.g. {% include bc path='Image | Stacks | Plot Z-axis profile...'%})
 -   It is often quicker to write macros
-
-# Rapid prototyping with the [Script Editor](/scripting/script-editor)
-
-{% include notice icon="warning" content='Using the Script Editor for Java development is not currently recommended.  
-For Java development, proceed to the [Getting Started with Maven](#getting-started-with-maven) section.  
-If you would like to use the script editor, see the sections for the [other supported languages](/scripting#supported-languages).' %}
-
-<s>There a few good reasons why you should try the [Script Editor](/scripting/script-editor) for rapid prototyping of your plugins or scripts:
-
--   Supports Jython, JRuby, Javascript, Clojure, Java, BeanShell, and ImageJ's Macro Language
--   Syntax highlighting
--   Compile and Run without restarting Fiji (mini-IDE)
--   Export scripts/plugins as `.jar` files
--   You can compile & run Java classes in the Script Editor which implement neither a plugin nor a plugin filter, but which have a static *main()* method
--   Provides code templates
--   Convenience functions, (add import, open JavaDoc, for given class, etc)</s>
-
-## Quick Start
-
-<s>To plunge into writing plugins, make sure that there is an active image (e.g. a sample image), start the [Script Editor](/scripting/script-editor) ({% include bc path='File | New | Script'%}), and select the {% include bc path="Process Pixels" %} menu item from the {% include bc path='Templates | Java'%} menu. Then, run the plugin with {% include bc path="Run | Run" %}.</s>
 
 # Getting started with Maven
 
@@ -374,9 +353,7 @@ Of course, you can also set ROIs programmatically:
 
 You can use ImageJ2-specific functionality from within an ImageJ 1.x plugin. For example, ImageJ2 provides a spreadsheet-like results table that supports string cells. You can write an ImageJ 1.x plugin that produces such a spreadsheet, displaying it onscreen.
 
-See the {% include github org='imagej' repo='tutorials' branch='master' path='maven-projects/call-modern-from-legacy' label='call-modern-from-legacy' %} example of the ImageJ Tutorials:
-
-> {% include github org='imagej' repo='tutorials' branch='master' path='maven-projects/call-modern-from-legacy/src/main/java/DisplayATable.java' label='DisplayATable.java' %}
+See the {% include github org='imagej' repo='tutorials' branch='master' path='https://github.com/imagej/tutorials/blob/master/howtos/src/main/java/howto/adv/ModernFromLegacy.java' label='ModernFromLegacy.java' %} example from the ImageJ tutorial code.
 
 ## Further tips
 
@@ -390,4 +367,4 @@ See guides on:
 -   [Plugin distribution](/contribute/distributing)
 -   [Development lifecycle](/develop/releasing)
 -   [Debugging practice](/develop/debugging-exercises)
--   [ImageJ1-ImageJ2 cheat sheet](/ImageJ1-ImageJ2_cheat_sheet)
+-   [ImageJ1-ImageJ2 cheat sheet](/develop/ij1-ij2-cheat-sheet)

@@ -1,5 +1,4 @@
 ---
-mediawiki: Script_Parameters
 title: Script Parameters
 categories: [Scripting]
 ---
@@ -63,12 +62,14 @@ By implementing {% include javadoc project='SciJava' package='org/scijava/widget
 
 ### Integer and Decimal input
 
-Integer and flaot can have the optional argument *min*, *max* and *stepSize* value (default 1) as well as a default value indicated by *value*.  
+Integer and float can have the optional argument *min*, *max* and *stepSize* value (default 1) as well as a default value indicated by *value*.  
 Different styles are also possible.
 
-    #@ Integer (label="Default integer style", min=0, max=10, value=5) myint1
-    #@ Integer (label="Slider integer style", style="slider", min=0, max=10, stepSize=2) myint2
-    #@ Float   (label="Slider with float", style="slider", min=0, max=1, stepSize=0.1) myfloat
+```javascript
+#@ Integer (label="Default integer style", min=0, max=10, value=5) myint1
+#@ Integer (label="Slider integer style", style="slider", min=0, max=10, stepSize=2) myint2
+#@ Float   (label="Slider with float", style="slider", min=0, max=1, stepSize=0.1) myfloat
+```
 
 <img src="/media/scripting/scriptparameters-integerstyles.jpg" width="450"/>
 
@@ -86,33 +87,33 @@ Properties are your way to customize how an `#@parameter` should be handled by t
 ### Widget labels
 
 Widgets are the User Interface elements shown to users to collect input information. For example, instead of just displaying "Name" to the user, we can add a custom label to the field of our `Greeting.py` script as follows:
+```python
+#@ String (label="Please enter your name") name
+#@ output String greeting
 
-    #@ String (label="Please enter your name") name
-    #@output String greeting
-
-    greeting = "Hello, " + name + "!"
-
+greeting = "Hello, " + name + "!"
+```
 ### Widget mouseover
 
 We can add a `description` property to provide mouse-over text for our field:
+```python
+#@ String (label="Please enter your name", description="Your name") name
+#@ output String greeting
 
-    #@ String (label="Please enter your name", description="Your name") name
-    #@output String greeting
-
-    greeting = "Hello, " + name + "!"
-
+greeting = "Hello, " + name + "!"
+```
 ### Default values
 
 Default values are also supported as parameter properties:
-
-    #@ Integer (label="An integer!",value=15) someInt
-
+```javascript
+#@ Integer (label="An integer!",value=15) someInt`
+```
 ### Persistence
 
 Per default, variable values are persisted between runs of a script. This means that parameter values from a previous run are used as starting value. Please note that a persisted value will overwrite a defined [default value](#default-value).
-
-    #@ Integer (label="An integer!", value=15, persist=false) someInt
-
+```javascript
+#@ Integer (label="An integer!", value=15, persist=false) someInt`
+```
 {% include notice icon="warning" content='Currently, "two scripts which declare the same parameter name, even with different types, will stomp each other." See [1](https://github.com/scijava/scijava-common/issues/193).' %}
 
 ### Visibility
@@ -127,15 +128,21 @@ This property set if the parameter should be displayed, editable and/or recorded
 
 \- MESSAGE: parameter value is intended as a message only, not editable by the user nor included as an input or output parameter. The option `required` should be set to false.
 
-![](/media/scripting/scriptparam-messagestring.jpg)
 
-    #@ String (visibility=MESSAGE, value="This is a documentation line", required=false) msg
-    #@ Integer (label="Some integer parameter") my_int
+<img src="/media/scripting/scriptparam-messagestring.jpg" width="450"/>
 
-You can [use HTML](https://forum.image.sc/t/multiline-messages-in-dialog-widgets/183) to format the message string, for example: ![](/media/scripting/scijavamultilinemessage.png)
+```javascript
+#@ String (visibility=MESSAGE, value="This is a documentation line", required=false) msg
+#@ Integer (label="Some integer parameter") my_int
+```
 
-    #@ String (visibility=MESSAGE, value="<html>Message line 1<br/>Message line 2<p>Let's make a list<ul><li>item a</li><li>item b</li></ul></html>") docmsg
-    #@ Integer anIntParam
+You can [use HTML](https://forum.image.sc/t/multiline-messages-in-dialog-widgets/183) to format the message string, for example:
+
+```javascript
+#@ String (visibility=MESSAGE, value="<html>Message line 1<br/>Message line 2<p>Let's make a list<ul><li>item a</li><li>item b</li></ul></html>") docmsg
+#@ Integer anIntParam
+```
+ ![](/media/scripting/scijavamultilinemessage.png)
 
 {% include notice icon="warning" content='Currently if a script containing a MESSAGE string is recorded with the macro recorder and the resulting recorded code executed, a window will show up containing only the MESSAGE string This is unexpected and will be corrected in the future.' %}
 
@@ -143,67 +150,63 @@ You can [use HTML](https://forum.image.sc/t/multiline-messages-in-dialog-widgets
 
 Any parameter can be turned into a multiple-choice selector by adding a `choices={...}` property.  
 The choice widget can have different styles like dropdown list or radio buttons.
+```javascript
+#@ String (choices={"Option 1", "Option 2"}, style="listBox") myChoice123
+#@ String (choices={"Option A", "Option B"}, style="radioButtonHorizontal") myChoiceABC
 
-    #@ String (choices={"Option 1", "Option 2"}, style="listBox") myChoice123
-    #@ String (choices={"Option A", "Option B"}, style="radioButtonHorizontal") myChoiceABC
-
-    print(myChoice123)
-    print(myChoiceABC)
-
+print(myChoice123)
+print(myChoiceABC)
+```
 ![](/media/scripting/input-styles.png)
 
 ### Files and Folders
 
 By default, a `#@ File` parameter will create a chooser for a single file. Here is an example in python:
+```javascript
+#@ File (label="Select a file") myFile
 
-    #@ File (label="Select a file") myFile
-
-    print(myFile)
-
+print(myFile)
+```
 You can request for multiple files or folders as well. However multiple files/folders input are not yet macro-recordable.
 
 Example in ImageJ Macro Language:
+```javascript
+#@ File[] listOfPaths (label="select files or folders", style="both")
 
-    #@ File[] listOfPaths (label="select files or folders", style="both")
+print("There are "+listOfPaths.length+" paths selected.");
 
-    print("There are "+listOfPaths.length+" paths selected.");
-
-    for (i=0;i<listOfPaths.length;i++) {
-            myFile=listOfPaths[i];
-            if (File.exists(myFile)) {
-                    print(myFile + " exists.");
-                    if (File.isDirectory(myFile)) {
-                            print("Is a directory");
-                    } else {
-                            print("Is a file");
-                    }
-            }
-    }
-
-The exact same code works for the [ImageJ1 Macro language](/scripting/macro), too.
+for (i=0;i<listOfPaths.length;i++) {
+        myFile=listOfPaths[i];
+        if (File.exists(myFile)) {
+                print(myFile + " exists.");
+                if (File.isDirectory(myFile)) {
+                        print("Is a directory");
+                } else {
+                        print("Is a file");
+                }
+        }
+}
+```
 
 If you want to select files or folders exclusively, use a `style` property:
+```javascript
+#@ File (label="Select a file", style="file") myFile
+#@ File (label="Select a directory", style="directory") myDir
 
-    #@ File (label="Select a file", style="file") myFile
-    #@ File (label="Select a directory", style="directory") myDir
-
-    print(myFile)
-    print(myDir)
-
+print(myFile)
+print(myDir)
+```
 The single `File` parameter support the styles "*file*", "*directory*", "*open*", "*save*".
 
 For multiple file or directories, the styles are plural
+```javascript
+#@ File[] (label="Select some files", style="files") listfiles
+#@ File[] (label="Select some directories", style="directories") listdirs
 
-    #@ File[] (label="Select some files", style="files") listfiles
-    #@ File[] (label="Select some directories", style="directories")listdirs
-
-    print(listfiles)
-    print(listdirs)
-
+print(listfiles)
+print(listdirs)
+```
 The `File[]` parameter supports the styles "*files*", "*directories*", "*both*".
 
 ### Styles
-
 You can influence the visual style of some of the input widgets. See previous paragraph for widget-specific style examples.
-
-

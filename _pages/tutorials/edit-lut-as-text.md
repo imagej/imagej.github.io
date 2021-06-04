@@ -1,7 +1,7 @@
 ---
 mediawiki: Edit_LUT_As_Text
 title: Edit LUT As Text
-categories: [tutorials]
+categories: [Tutorials]
 ---
 
 

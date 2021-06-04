@@ -189,7 +189,7 @@ The extension will be stripped and any underscores will be turned into spaces be
 
 Scripts in the top-level `ImageJ.app/plugins` directory will appear at the bottom of the *Plugins* menu. Scripts can be placed in other menus by nesting subdirectories, for example placing a script in the `ImageJ.app/scripts/File` directory will add it to the *File* menu.
 
-If you aren't able to find your script, you can always use the [search bar](/learn/basics#the-search-bar) to verify its location (or absence).
+If you aren't able to find your script, you can always use the [search bar](/learn#the-search-bar) to verify its location (or absence).
 
 Commands added to the menu in the described way can be called from other scripts. Use the [macro recorder](/scripting/macro#the-recorder) to get the required code for doing so.
 

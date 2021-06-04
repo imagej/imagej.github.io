@@ -1,5 +1,4 @@
 ---
-mediawiki: How_to_write_your_own_detection_algorithm_for_TrackMate
 title: How to write your own detection algorithm for TrackMate
 categories: [Tutorials]
 nav-links:
@@ -19,7 +18,7 @@ nav-links:
   url: /plugins/trackmate/custom-particle-linking-algorithms
 ---
 
-## Introduction
+## Introduction.
 
 Welcome to the most useful and also unfortunately the hardest part in this tutorial series on how to extend [TrackMate](/plugins/trackmate) with custom modules.
 
@@ -73,21 +72,21 @@ Below is the source code for the dummy detector. You can also find it {% include
 
 #### The type parameter `< T extends RealType< T > & NativeType< T >>`
 
-Instances of SpotDetector are parametrized with a generic type `T` that must extends {% include github repo='imglib' branch='master' path='core/src/main/java/net/imglib2/type/numeric/RealType.java' label='RealType' %} and {% include github repo='imglib' branch='master' path='core/src/main/java/net/imglib2/type/NativeType.java' label='NativeType' %}. These are the bounds for all the scalar types based on native types, such us `float`, `int`, `byte`, etc...
+Instances of SpotDetector are parametrized with a generic type `T` that must extends {% include github repo='imglib' branch='master' path='src/main/java/net/imglib2/type/numeric/RealType.java' label='RealType' %} and {% include github repo='imglib' branch='master' path='src/main/java/net/imglib2/type/NativeType.java' label='NativeType' %}. These are the bounds for all the scalar types based on native types, such us `float`, `int`, `byte`, etc...
 
 This is the type of the image data we are to operate on.
 
 #### The constructor.
 
-Since the https://github.com/fiji/plugins/trackmate/blob/master/src/main/java/fiji/plugin/trackmate/detection/SpotDetector.java SpotDetector\] interface gives little constraint on inputs, all of them must be provided at construction time in the constructor. Keep in mind that we have one instance per frame, so we must know what frame we are to process.
+Since the [ SpotDetector](https://github.com/fiji/plugins/trackmate/blob/master/src/main/java/fiji/plugin/trackmate/detection/SpotDetector.java) interface gives little constraint on inputs, all of them must be provided at construction time in the constructor. Keep in mind that we have one instance per frame, so we must know what frame we are to process.
 
 Normal detectors would be fed with a reference to the image data *for this very single frame*. Here we do not care for image content, so it is not there. But we will speak of this more when discussing the factory.
 
-Because TrackMate can also be tuned to operate only on a ROI, the instance receives an {% include github repo='imglib' branch='master' path='core/src/main/java/net/imglib2/Interval.java' label='Interval' %} that represent the bounding box **in pixel coordinates** of the ROI the user selected. Here, we just use it to center the spirals.
+Because TrackMate can also be tuned to operate only on a ROI, the instance receives an {% include github repo='imglib' branch='master' path='src/main/java/net/imglib2/Interval.java' label='Interval' %} that represent the bounding box **in pixel coordinates** of the ROI the user selected. Here, we just use it to center the spirals.
 
 Because we must store the *physical coordinates*' in the spots we create, we need a calibration array to convert pixel coordinates to physical ones. That is the role of the `double[]calibration` array, and it contains the pixel sizes along X, Y and Z.
 
-#### The {% include github repo='imglib' branch='master' path='algorithms/core/src/main/java/net/imglib2/algorithm/Algorithm.java' label='Algorithm' %} methods.
+#### The {% include github repo='imglib' branch='master' path='imglib2/algorithm/Algorithm.java' label='Algorithm' %} methods.
 
 `checkInput()` checks that the parameters passed are OK prior to processing, and returns `false` if they are not. `process()` does all the hard work, and return `false` if something goes wrong.
 
@@ -103,59 +102,60 @@ Well, we just want to know how much time it took. Note that all of these are the
 
 #### The code itself.
 
+```java
     package plugin.trackmate.examples.detector;
-
+    
     import java.util.ArrayList;
     import java.util.List;
-
+    
     import net.imglib2.Interval;
     import net.imglib2.type.NativeType;
     import net.imglib2.type.numeric.RealType;
     import fiji.plugin.trackmate.Spot;
     import fiji.plugin.trackmate.detection.SpotDetector;
-
+    
     public class SpiralDummyDetector< T extends RealType< T > & NativeType< T >> implements SpotDetector< T >
     {
-
+    
         private static final double RADIAL_SPEED = 3d; // pixels per frame
-
+    
         // radians per frame
         private static final double ANGULAR_SPEED = Math.PI / 10;
-
+    
         // in image units
         private static final double SPOT_RADIUS = 1d;
-
+    
         /** The width if the ROI. */
         private final long width;
-
+    
         /** The height if the ROI. */
         private final long height;
-
+    
         /** The X coordinates of the ROI. */
         private final long xstart;
-
+    
         /** The Y coordinates of the ROI. */
         private final long ystart;
-
+    
         /** The pixel sizes in the 3 dimensions. */
         private final double[] calibration;
-
+    
         /** The frame we operate in. */
         private final int frame;
-
+    
         /** Holder for the results of detection. */
         private List< Spot > spots;
-
+    
         /** Error message holder. */
         private String errorMessage;
-
+    
         /** Holder for the processing time. */
         private long processingTime;
-
+    
         /*
          * CONSTRUCTOR
          */
-
+    
         public SpiralDummyDetector( final Interval interval, final double[] calibration, final int frame )
         {
             // Take the ROI box from the interval parameter.
@@ -168,38 +168,38 @@ Well, we just want to know how much time it took. Note that all of these are the
             // We need to know what frame we are in.
             this.frame = frame;
         }
-
+    
         /*
          * METHODS
          */
-
+    
         @Override
         public List< Spot > getResult()
         {
             return spots;
         }
-
+    
         @Override
         public boolean checkInput()
         {
             // Nothing to test, it's all good.
             return true;
         }
-
+    
         @Override
         public boolean process()
         {
             final long start = System.currentTimeMillis();
             spots = new ArrayList< Spot >();
-
+    
             /*
              * This dummy detector creates spots that spiral out from the center of
              * the specified ROI. It spits a new spiral every 10 frames.
              */
-
+    
             final int x0 = ( int ) ( width / 2 + xstart );
             final int y0 = ( int ) ( height / 2 + ystart );
-
+    
             int t = frame;
             int nspiral = 0;
             while ( t >= 0 )
@@ -207,30 +207,30 @@ Well, we just want to know how much time it took. Note that all of these are the
                 final double r = t * RADIAL_SPEED;
                 final double phi0 = nspiral * Math.PI / 4;
                 final double phi = t * ANGULAR_SPEED + phi0;
-
+    
                 // Spot in pixel coordinates.
                 final double x = x0 + r * Math.cos( phi );
                 final double y = y0 + r * Math.sin( phi );
-
+    
                 // But we want to create spots in image coordinates:
                 final double xpos = x * calibration[ 0 ];
                 final double ypos = y * calibration[ 1 ];
                 final double zpos = 0d;
-
+    
                 // Create the spot.
                 final Spot spot = new Spot( xpos, ypos, zpos, SPOT_RADIUS, 1d / ( nspiral + 1d ) );
                 spots.add( spot );
-
+    
                 // Loop to another spiral.
                 t = t - 10;
                 nspiral++;
             }
-
+    
             final long end = System.currentTimeMillis();
             this.processingTime = end - start;
             return true;
         }
-
+    
         @Override
         public String getErrorMessage()
         {
@@ -240,14 +240,15 @@ Well, we just want to know how much time it took. Note that all of these are the
              */
             return errorMessage;
         }
-
+    
         @Override
         public long getProcessingTime()
         {
             return processingTime;
         }
-
+    
     }
+```
 
 And that's about it.
 
@@ -257,8 +258,10 @@ Now for something completely different, we move to the factory class that instan
 
 The SpotDetectorFactory concrete implementation is the class that needs to be annotated with the [SciJava](/libs/scijava) annotation. For instance:
 
-    @Plugin( type = SpotDetectorFactory.class )
-    public class SpiralDummyDetectorFactory< T extends RealType< T > & NativeType< T >> implements SpotDetectorFactory< T >
+```java
+@Plugin( type = SpotDetectorFactory.class )
+public class SpiralDummyDetectorFactory< T extends RealType< T > & NativeType< T >> implements SpotDetectorFactory< T >
+```
 
 Note that we have to deal with the same type parameter than for the SpotDetector instance.
 
@@ -268,25 +271,29 @@ I will skip all the TrackMateModule methods we have seen over and over in this t
 
 Since the TrackMateModule concrete implementation must have a blank constructor, there must be another way to pass required arguments to factories. For SpotDetector factories, this role is played by the `setTarget` method:
 
-        @Override
-        public boolean setTarget( final ImgPlus< T > img, final Map< String, Object > settings )
+```java
+@Override
+public boolean setTarget( final ImgPlus< T > img, final Map< String, Object > settings )
+```
 
-The raw image data is returned as an {% include github repo='imglib' branch='master' path='meta/src/main/java/net/imglib2/meta/ImgPlus.java' label='ImgPlus' %}, that can be seen as the [ImgLib2](/libs/imglib2) equivalent of ImageJ1 {% include github org='imagej' repo='ImageJA' branch='master' source='ij/ImagePlus.java' label='ImagePlus' %}. It contains the pixel data for all available dimensions (all X, Y, Z, C, T if any), plus the spatial calibration we need to operate in physical units. The concrete factory must be able to extract from this ImgPlus the data useful for the SpotDetectors it will instantiate, keeping in mind that each SpotDetector operates on one frame.
+The raw image data is returned as an `ImgPlus`, that can be seen as the [ImgLib2](/libs/imglib2) equivalent of ImageJ1 {% include github org='imagej' repo='ImageJA' branch='master' source='ij/ImagePlus.java' label='ImagePlus' %}. It contains the pixel data for all available dimensions (all X, Y, Z, C, T if any), plus the spatial calibration we need to operate in physical units. The concrete factory must be able to extract from this ImgPlus the data useful for the SpotDetectors it will instantiate, keeping in mind that each SpotDetector operates on one frame.
 
 The second argument is the settings map for this specific detector. It takes the shape of a map with string keys and object values, that can be cast to whatever relevant class. The concrete factory must be able to check that all the required parameters are there, and have a valid class, and to feed to the SpotDetector instances. We will see below that the user provides them through a configuration panel.
 
 ### Getting detection parameters through a configuration panel.
 
-For a proper TrackMate integration, we need to provide a means for users to tune the detector they chose. And since TrackMate was built first to be used through a GUI, we need to create a GUI element for this task: a configuration panel. The class that does that in TrackMate is {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/gui/ConfigurationPanel.java' label='ConfigurationPanel' %}. It is an abstract class that extends JPanel, and that adds two methods to display a settings map and return it.
+For a proper TrackMate integration, we need to provide a means for users to tune the detector they chose. And since TrackMate was built first to be used through a GUI, we need to create a GUI element for this task: a configuration panel. The class that does that in TrackMate is {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/gui/components/ConfigurationPanel.java' label='ConfigurationPanel' %}. It is an abstract class that extends JPanel, and that adds two methods to display a settings map and return it.
 
 Each SpotDetectorFactory has its own configuration panel, which must be instantiated and returned through:
 
-    @Override
-    public ConfigurationPanel getDetectorConfigurationPanel( final Settings settings, final Model model )
+```java
+@Override
+public ConfigurationPanel getDetectorConfigurationPanel( final Settings settings, final Model model )
+```
 
 The GUI panel has access to the model and settings objects, and can therefore display some relevant information.
 
-This is a difficult part because you have to write a GUI element. GUIs are excruciating long and painfully hard to write, at least if you want to get them right. Check the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/gui/panels/detector/LogDetectorConfigurationPanel.java' label='configuration panel of the LOG detector' %} for an example.
+This is a difficult part because you have to write a GUI element. GUIs are excruciating long and painfully hard to write, at least if you want to get them right. Check the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/gui/components/detector/LogDetectorConfigurationPanel.java' label='configuration panel of the LOG detector' %} for an example.
 
 ### Checking the validity of parameters.
 
@@ -294,11 +301,13 @@ There is a layer of methods that allows checking for the parameter validity. Nor
 
 Three methods are at play:
 
-    public Map< String, Object > getDefaultSettings();
+```java
+public Map< String, Object > getDefaultSettings();
 
-    public boolean checkSettings( final Map< String, Object > settings );
+public boolean checkSettings( final Map< String, Object > settings );
 
-    public String getErrorMessage();
+public String getErrorMessage();
+```
 
 The `getDefaultSettings()` method return a new settings map initialized with default values. It must contain all the required parameter keys, and nothing more. The `checkSettings()` method does the actual parameter checking. It must check that all the required parameters are there, that they have the right class, and that there is no spurious mapping in the map. Should any of these defects be found, it returns `false`. Finally, `getErrorMessage()` should return a meaningful error message if the check failed.
 
@@ -308,9 +317,11 @@ TrackMate tries to save as much information as possible when saving to XML. The 
 
 You have to provide the means to save and load this parameters, since they are specific to the detector you write. This is done through the two methods:
 
-    public boolean marshall( final Map< String, Object > settings, final Element element );
-
-    public boolean unmarshall( final Element element, final Map< String, Object > settings );
+```java
+public boolean marshall( final Map< String, Object > settings, final Element element );
+    
+public boolean unmarshall( final Element element, final Map< String, Object > settings );
+```
 
 #### Marshalling.
 
@@ -319,13 +330,7 @@ Marshalling is the action of serializing a java object to XML. TrackMate relies 
 The settings map that the `marshall` method receives is the settings map to save. You can safely assume it has been successfully checked. The element parameter is a [JDom element](http://www.jdom.org/docs/apidocs/org/jdom2/Element.html), and it must contain eveything you want to save from the detector, as attribute or child elements. Here is what you must put in it:
 
 -   You must at the very least set an attribute that has for key {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/detection/DetectorKeys.java\#L14' label='`"DETECTOR_NAME"`' %} and value the SpotDetectorFactory key (the one you get with the `getKey()`) method[^2]. This will be used in turn when loading from XML, to retrieve the right detector you used.
-
-<!-- -->
-
 -   If something goes wrong when saving, then the `marshall` method must return `false`, and you must provide a meaningful error message for the `getErrorMessage()` method.
-
-<!-- -->
-
 -   Everything else is pretty much up to you. There is a {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/io/IOUtils.java\#L383' label='helper method in IOUtils' %} that you can use to serialize single parameters. Check the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/detection/LogDetectorFactory.java\#L161' label='LogDetectorFactory marshall method' %} for an example.
 
 #### Unmarshalling.
@@ -340,7 +345,9 @@ Check again the {% include github org='fiji' repo='TrackMate' branch='master' so
 
 And finally, the method that gives its name to this factory:
 
-    public SpotDetector< T > getDetector( final Interval interval, final int frame )
+```java
+public SpotDetector< T > getDetector( final Interval interval, final int frame )
+```
 
 This will be called repeatedly by TrackMate to generate as many SpotDetector instances as there is frames in the raw data to segment. The two parameters specify the ROI the user wants to operate on as an {% include github repo='imglib' branch='master' path='core/src/main/java/net/imglib2/Interval.java' label='Imglib2 interval' %}, and the target frame. So you need to process and bundle:
 
@@ -351,6 +358,7 @@ in the parameters required to instantiate a new SpotDetector.
 
 Because the dummy example we use in this tutorial is not such an enlightenment, I copy here the code from the LogDetectorFactory. It shows how to extract parameters from a settings map, and how to access the relevant data frame in a possibly 5D image:
 
+```java
         @Override
         public SpotDetector< T > getDetector( final Interval interval, final int frame )
         {
@@ -359,7 +367,7 @@ Because the dummy example we use in this tutorial is not such an enlightenment, 
             final boolean doMedian = ( Boolean ) settings.get( KEY_DO_MEDIAN_FILTERING );
             final boolean doSubpixel = ( Boolean ) settings.get( KEY_DO_SUBPIXEL_LOCALIZATION );
             final double[] calibration = TMUtils.getSpatialCalibration( img );
-
+    
             RandomAccessible< T > imFrame;
             final int cDim = TMUtils.findCAxisIndex( img );
             if ( cDim < 0 )
@@ -372,7 +380,7 @@ Because the dummy example we use in this tutorial is not such an enlightenment, 
                 final int channel = ( Integer ) settings.get( KEY_TARGET_CHANNEL ) - 1;
                 imFrame = Views.hyperSlice( img, cDim, channel );
             }
-
+    
             int timeDim = TMUtils.findTAxisIndex( img );
             if ( timeDim >= 0 )
             {
@@ -387,29 +395,31 @@ Because the dummy example we use in this tutorial is not such an enlightenment, 
             // per detector but multiple detectors
             return detector;
         }
+```
 
 ### The code for the dummy spiral generator factory.
 
 And here is the full code for this tutorial example. It is the ultimate simplification of a SpotDetectorFactory, and was careful to strip anything useful by first ignoring the image content, second by not using any parameter. You can also find it {% include github org='fiji' repo='TrackMate-examples' branch='master' source='plugin/trackmate/examples/detector/SpiralDummyDetectorFactory.java' label='online' %}.
 
+```java
     package plugin.trackmate.examples.detector;
-
+    
     import ij.ImageJ;
     import ij.ImagePlus;
-
+    
     import java.util.Collections;
     import java.util.Map;
-
+    
     import javax.swing.ImageIcon;
-
+    
     import net.imglib2.Interval;
     import net.imglib2.meta.ImgPlus;
     import net.imglib2.type.NativeType;
     import net.imglib2.type.numeric.RealType;
-
+    
     import org.jdom2.Element;
     import org.scijava.plugin.Plugin;
-
+    
     import fiji.plugin.trackmate.Model;
     import fiji.plugin.trackmate.Settings;
     import fiji.plugin.trackmate.TrackMatePlugIn_;
@@ -417,51 +427,51 @@ And here is the full code for this tutorial example. It is the ultimate simplifi
     import fiji.plugin.trackmate.detection.SpotDetectorFactory;
     import fiji.plugin.trackmate.gui.ConfigurationPanel;
     import fiji.plugin.trackmate.util.TMUtils;
-
+    
     @Plugin( type = SpotDetectorFactory.class )
     public class SpiralDummyDetectorFactory< T extends RealType< T > & NativeType< T >> implements SpotDetectorFactory< T >
     {
-
+    
         static final String INFO_TEXT = "<html>This is a dummy detector that creates spirals made of spots emerging from the center of the ROI. The actual image content is not used.</html>";
-
+    
         private static final String KEY = "DUMMY_DETECTOR_SPIRAL";
-
+    
         static final String NAME = "Dummy detector in spirals";
-
+    
         private double[] calibration;
-
+    
         private String errorMessage;
-
+    
         @Override
         public String getInfoText()
         {
             return INFO_TEXT;
         }
-
+    
         @Override
         public ImageIcon getIcon()
         {
             return null;
         }
-
+    
         @Override
         public String getKey()
         {
             return KEY;
         }
-
+    
         @Override
         public String getName()
         {
             return NAME;
         }
-
+    
         @Override
         public SpotDetector< T > getDetector( final Interval interval, final int frame )
         {
             return new SpiralDummyDetector< T >( interval, calibration, frame );
         }
-
+    
         @Override
         public boolean setTarget( final ImgPlus< T > img, final Map< String, Object > settings )
         {
@@ -473,7 +483,7 @@ And here is the full code for this tutorial example. It is the ultimate simplifi
             // True means that the settings map is OK.
             return true;
         }
-
+    
         @Override
         public String getErrorMessage()
         {
@@ -483,7 +493,7 @@ And here is the full code for this tutorial example. It is the ultimate simplifi
              */
             return errorMessage;
         }
-
+    
         @Override
         public boolean marshall( final Map< String, Object > settings, final Element element )
         {
@@ -493,7 +503,7 @@ And here is the full code for this tutorial example. It is the ultimate simplifi
              */
             return true;
         }
-
+    
         @Override
         public boolean unmarshall( final Element element, final Map< String, Object > settings )
         {
@@ -502,14 +512,14 @@ And here is the full code for this tutorial example. It is the ultimate simplifi
              */
             return true;
         }
-
+    
         @Override
         public ConfigurationPanel getDetectorConfigurationPanel( final Settings settings, final Model model )
         {
             // We return a simple configuration panel.
             return new DummyDetectorSpiralConfigurationPanel();
         }
-
+    
         @Override
         public Map< String, Object > getDefaultSettings()
         {
@@ -518,7 +528,7 @@ And here is the full code for this tutorial example. It is the ultimate simplifi
              */
             return Collections.emptyMap();
         }
-
+    
         @Override
         public boolean checkSettings( final Map< String, Object > settings )
         {
@@ -531,6 +541,7 @@ And here is the full code for this tutorial example. It is the ultimate simplifi
             return false;
         }
     }
+```
 
 ## Wrapping up
 
@@ -538,10 +549,9 @@ Ouf! That was a lot of information and a lot of coding for a single piece of fun
 
 Here is what our dummy example looks. To maximize your user experience, I let it run on a 512 x 512 x 200 frames image, and tracked them.
 
+_JY_
+
 ![](/media/plugins/trackmate/trackmatecustomdetector-01.gif)
-
-{% include person id='tinevez' %} ([talk](User_talk_JeanYvesTinevez)) 08:28, 3 April 2014 (CDT)
-
 
 ## References
 

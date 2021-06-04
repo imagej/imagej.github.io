@@ -1,5 +1,4 @@
 ---
-mediawiki: Chat
 title: Chat
 section: Discuss
 nav-links: true

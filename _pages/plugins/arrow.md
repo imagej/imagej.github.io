@@ -1,7 +1,7 @@
 ---
 mediawiki: Arrow
 title: Arrow
-categories: [Image annotation]
+categories: [Image Annotation]
 artifact: sc.fiji:Arrow_
 ---
 

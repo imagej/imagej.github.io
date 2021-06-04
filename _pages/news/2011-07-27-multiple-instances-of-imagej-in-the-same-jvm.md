@@ -1,5 +1,4 @@
 ---
-mediawiki: 2011-07-27_-_Multiple_instances_of_ImageJ_in_the_same_JVM
 title: 2011-07-27 - Multiple instances of ImageJ in the same JVM
 ---
 

@@ -1,5 +1,4 @@
 ---
-mediawiki: Troubleshooting
 title: Troubleshooting
 section: Learn:ImageJ Basics
 nav-links: true
@@ -62,7 +61,7 @@ If the first method does not work, and you can reproduce the hang:
         2.  Select the stack trace by dragging with the left mouse button.
         3.  Right click and select "Copy" to copy it to the clipboard.
     -   <img src="/media/icons/windows.svg" height="20"/> On Windows:
-        1.  Press {% include key keys='Ctrl|Pause' %} in the Command Prompt window to print the stack trace. (**Note:** this shortcut actually uses the [Break key](Wikipedia_Break_key))
+        1.  Press {% include key keys='Ctrl|Pause' %} in the Command Prompt window to print the stack trace. (**Note:** this shortcut actually uses the [Break key](https://en.wikipedia.org/wiki/Break_key))
         2.  Click the Command Prompt icon in the upper left corner of the window, and choose {% include bc path='Edit|Mark'%}.
         3.  Select the stack trace by dragging with the left mouse button.
         4.  Press {% include key key='Enter' %} to copy it to the clipboard.
@@ -166,7 +165,7 @@ While ImageJ strives for [reproducible](/develop/architecture#reproducible-build
     -   {% include bc path='Process | FFT | FFT Options...'%}
     -   {% include bc path='Image | Overlay | Overlay Options...'%}
     -   {% include bc path='Analyze | Gels | Gel Analyzer Options...'%}
-    -   Press L for the [search bar](/learn/basics#the-search-bar) and type "options" and double check any other options you think might be relevant.
+    -   Press {% include key key='ctrlcmd|L' %} for the [search bar](/learn#the-search-bar) and type "options" and double check any other options you think might be relevant.
 -   If you are running your analysis [headless](/learn/headless), there might be a bug in the headless support.
     -   Try the analysis *headless* on both machines and see if the results match.
     -   Try the analysis *headless* vs. through the GUI on a single machine, and see if the results match.
@@ -217,11 +216,11 @@ The first thing to do is make sure that ImageJ has a large enough "maximum heap"
 - Change "Maximum Memory" to something larger (at most, 1000 MB less than your computer's total RAM).
 - Restart ImageJ for the new memory settings to take effect.
 
-Note that in most cases, the [ImageJ launcher](Launcher) will make an initial guess at a reasonable value: \~75% of physical RAM.
+Note that in most cases, the [ImageJ launcher](/learn/launcher) will make an initial guess at a reasonable value: \~75% of physical RAM.
 
 You can confirm how much memory is actually available by clicking on the [status bar](/learn#the-status-bar). You will see a "\[used\] of \[max\]" memory message, as pictured here:
 
-![](/media/learn/memorystatus.png)
+![memory status](/media/learn/memorystatus.png){:width="400px" float="left"}
 
 If you are already at the limits of your computer's physical memory, the next step would be to add more.
 

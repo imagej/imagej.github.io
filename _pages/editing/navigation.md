@@ -21,6 +21,16 @@ nav-links: true
 ---
 ```
 
+By default, pages will appear in the navigation section using their `title`. If desired, this can be overridden using the `nav-title` front matter:
+
+```
+---
+title: Navigation
+nav-links: true
+nav-title: Navigating the Site
+---
+```
+
 For more control over the links, you can also manually specify a list of pages to link to, and the title to give each page:
 
 ```
@@ -34,6 +44,8 @@ nav-links:
   url: /develop/source
 ---
 ```
+
+
 
 ## Menu
 

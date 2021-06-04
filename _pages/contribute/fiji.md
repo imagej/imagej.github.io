@@ -1,5 +1,4 @@
 ---
-mediawiki: Fiji/Contribution_requirements
 title: Contributing to Fiji
 section: Contribute
 categories: [Fiji]
@@ -28,7 +27,7 @@ A key principle of the Fiji project is:
 
 \- *African proverb*
 
-There are many corollaries to this wisdom, the most prominent: if you write software in your endeavor to discover new insights, [Open Source](/licensing/open-source) is the way that brings you farthest. Withholding the source code—like any other method to obstruct other researchers' work, e.g. refusing to share materials and methods—will [invariably have the opposite effect](Why_Closed-Source_Is_Wrong) in the long run. Likewise, working with interested parties to improve one's project will invariably lead to a much better and stronger result.
+There are many corollaries to this wisdom, the most prominent: if you write software in your endeavor to discover new insights, [Open Source](/licensing/open-source) is the way that brings you farthest. Withholding the source code—like any other method to obstruct other researchers' work, e.g. refusing to share materials and methods—will [invariably have the opposite effect](/licensing/closed-source) in the long run. Likewise, working with interested parties to improve one's project will invariably lead to a much better and stronger result.
 
 As such, components distributed with Fiji must be licensed in a way [compatible with the GNU General Public License](https://www.gnu.org/licenses/license-list.html).
 

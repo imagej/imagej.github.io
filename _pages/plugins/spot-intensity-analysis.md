@@ -1,7 +1,7 @@
 ---
 mediawiki: Spot_Intensity_Analysis
 title: Spot Intensity Analysis
-categories: [Particle analysis]
+categories: [Particle Analysis]
 ---
 
 

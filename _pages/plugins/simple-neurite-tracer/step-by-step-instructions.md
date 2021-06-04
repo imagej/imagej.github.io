@@ -1,7 +1,7 @@
 ---
 mediawiki: Simple_Neurite_Tracer:_Step-By-Step_Instructions
 title: Simple Neurite Tracer › Step-By-Step Instructions
-categories: [tutorials]
+categories: [Tutorials]
 nav-links: true
 nav-title: Step-By-Step Instructions
 ---

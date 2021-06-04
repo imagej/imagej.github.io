@@ -1,5 +1,4 @@
 ---
-mediawiki: 2011-10-25_-_EM_segmentation_challenge_(ISBI_-_2012)
 title: 2011-10-25 - EM segmentation challenge (ISBI - 2012)
 ---
 
@@ -13,15 +12,9 @@ Important dates:
 
 -   **Deadline for submitting results**: February 1<sup>st</sup>, 2012
 
-<!-- -->
-
 -   **Notification of the evaluation**: February 21<sup>st</sup>, 2012
 
-<!-- -->
-
 -   **Deadline for submitting abstracts**: March 1<sup>st</sup>, 2012
-
-<!-- -->
 
 -   **Notification of acceptance/presentation type**: March 15<sup>th</sup>, 2012
 

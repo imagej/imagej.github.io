@@ -1,5 +1,4 @@
 ---
-mediawiki: Frequently_Asked_Questions
 title: Frequently Asked Questions
 section: Learn:ImageJ Basics
 nav-links: true
@@ -127,7 +126,7 @@ If you flag any changes to be made, press the "Apply changes" to update your Ima
 
 If the plugin is published on an [ImageJ update site](/update-sites), you can run {% include bc path='Help | Update' %} then click {% include button label="Manage update sites" %} to enable it. Not only does this install the plugins for you automatically, but you will also be notified of any updates whenever they are released.
 
-Otherwise, you can drag 'n drop the `.jar` files onto the ImageJ window, or use {% include bc path='Plugins | Install Plugin...' %} with .jar, .class and .java files, or copy the plugins to `ImageJ.app/plugins/` and restart ImageJ. See the [walk-through with screenshots](Installing_3rd_party_plugins).
+Otherwise, you can drag 'n drop the `.jar` files onto the ImageJ window, or use {% include bc path='Plugins | Install Plugin...' %} with .jar, .class and .java files, or copy the plugins to `ImageJ.app/plugins/` and restart ImageJ. See the [walk-through with screenshots](/plugins#installing-plugins).
 
 ## How do I downgrade ImageJ?
 
@@ -198,11 +197,11 @@ Yes, although it is not recommended. You will lose most of the advantages of Ima
 
 ## Can I call ImageJ2 API from an ImageJ1 plugin?
 
-Yes, see the [call-modern-from-legacy](https://github.com/imagej/tutorials/tree/master/maven-projects/call-modern-from-legacy) tutorial example.
+Yes, see the [call-modern-from-legacy](https://github.com/imagej/tutorials/blob/d3ff8e818bb26cb4713371878b239b36cb7d4877/howtos/src/main/java/howto/adv/ModernFromLegacy.java) tutorial example.
 
 ## How do I find equivalent commands between ImageJ1 and ImageJ2 API?
 
-[ImageJ1-ImageJ2 cheat sheet](/ImageJ1-ImageJ2_cheat_sheet) is available.
+[ImageJ1-ImageJ2 cheat sheet](/develop/ij1-ij2-cheat-sheet) is available.
 
 # [Fiji](/software/fiji)
 
@@ -218,7 +217,7 @@ See [here](/software/fiji/downloads#installation) for instructions.
 
 Fiji is just ImageJ. If you are running [ImageJ2](/software/imagej2), simply run {% include bc path='Help | Update' %}, click *Manage update sites*, and enable the *Fiji* update site.
 
-Or if you are running [ImageJ1](/software/imagej1), you can bootstrap the updater by drag 'n dropping [this link](http://update.imagej.net/bootstrap.js) onto your running ImageJ and run the Javascript that was opened in a text window. After that, you can run Fiji/ImageJ using the [ImageJ launcher](Launcher) that was installed into the ImageJ directory.
+Or if you are running [ImageJ1](/software/imagej1), you can bootstrap the updater by drag 'n dropping [this link](http://update.imagej.net/bootstrap.js) onto your running ImageJ and run the Javascript that was opened in a text window. After that, you can run Fiji/ImageJ using the [ImageJ launcher](/learn/launcher) that was installed into the ImageJ directory.
 
 ## How do I develop Fiji in Eclipse?
 
@@ -396,7 +395,7 @@ We are working to create an architecture where the programs work together and pr
 
 ## Would it make sense to merge the ImageJ2 and Fiji projects?
 
-[Fiji](/software/fiji) and [ImageJ2](/software/imagej2) are fundamentally the same software, using the same [launcher](Launcher). So from the standpoint of development effort, the ImageJ2 and Fiji projects have indeed merged. ImageJ2 is the core software, and several pieces of infrastructure originally developed for Fiji have now migrated to ImageJ2 (e.g., the [Updater](/plugins/updater), [Launcher](Launcher) and [Script Editor](/scripting/script-editor) components). At heart, Fiji is just a big collection of life sciences plugins (though "Fijabcolsp" doesn't have quite the same ring to it). In other words, Fiji is just an ImageJ update site ("Fijaius")—and as such, you can obtain a working Fiji installation by downloading ImageJ2, running the updater, and enabling the Fiji update site.
+[Fiji](/software/fiji) and [ImageJ2](/software/imagej2) are fundamentally the same software, using the same [launcher](/learn/launcher). So from the standpoint of development effort, the ImageJ2 and Fiji projects have indeed merged. ImageJ2 is the core software, and several pieces of infrastructure originally developed for Fiji have now migrated to ImageJ2 (e.g., the [Updater](/plugins/updater), [Launcher](/learn/launcher) and [Script Editor](/scripting/script-editor) components). At heart, Fiji is just a big collection of life sciences plugins (though "Fijabcolsp" doesn't have quite the same ring to it). In other words, Fiji is just an ImageJ update site ("Fijaius")—and as such, you can obtain a working Fiji installation by downloading ImageJ2, running the updater, and enabling the Fiji update site.
 
 All of that said, we do not want to get rid of the two distinct project names, since people are familiar with both. But we are integrating resources when feasible: e.g., the [ImageJ wiki](/) serves all ImageJ content including Fiji-specific content (which is marked with the Fiji logo). But we want to ensure it is clear that ImageJ is not a life-sciences-specific project, whereas Fiji is. Historically, because Fiji has a life sciences focus, there have been some users who refused to switch from vanilla [ImageJ1](/software/imagej1) to Fiji even though Fiji makes users' lives easier in lots of ways. With ImageJ2, we want to avoid such misconceptions.
 
@@ -416,7 +415,7 @@ The first place to check is this wiki. The [Fiji's Menu](/plugin-index) page is 
 
 If documentation is missing for the command you're interested in, you can always view the source directly:
 
-1.  Jump to the [search bar](/learn/basics#the-search-bar) (Shortcut: {% include key key='L' %})
+1.  Jump to the [search bar](/learn#the-search-bar) (Shortcut: {% include key key='L' %})
 2.  Filter to the command you're interested in.
 3.  The \`File\` column will tell you the plugin where the desired command is contained.
 4.  You can then use this information to find the source code on GitHub - for core [ImageJ](https://github.com/imagej) or [Fiji](https://github.com/fiji) plugins.
@@ -425,17 +424,17 @@ If documentation is missing for the command you're interested in, you can always
 
 As a complete example, if you were interested in the [2D Histogram](/plugins/2d-histogram) command:
 
--   The [search bar](/learn/basics#the-search-bar) indicates it's located in VIB.jar
+-   The [search bar](/learn#the-search-bar) indicates it's located in VIB.jar
 -   VIB is a Fiji plugin, so we go to [the VIB repository](https://github.com/fiji/VIB).
 -   On GitHub, press {% include key key='T' %}, search for "Histogram", and find [the Histogram 2D](https://github.com/fiji/VIB/blob/master/src/main/java/util/Histogram_2D.java) source.
 
 ## I have a problem that is not covered on this page!
 
-If you have an issue that is not mentioned here, you might want to [ask on one of the mailing lists, or via IRC](/discuss), or [enter a bug report](https://fiji.sc/bugzilla/).
+If you have an issue that is not mentioned here, you might want to [ask on one of the mailing lists, or via IRC](/discuss), or [enter a bug report](/discuss/bugs).
 
 ## How to report issues?
 
-Use the {% include bc path='Help | [Report a Bug](/discuss/bugs)' %} command, which adds a ticket report to the [Fiji bug tracker](https://fiji.sc/bugzilla/). While private mail might seem more desirable sometimes, but it is almost always inferior to the open process we established in ImageJ. For starters, bug reporters are unlikely to know who would be the best person to address the issue.
+Please see [Report a Bug](/discuss/bugs)' %}. While private mail might seem more desirable sometimes, but it is almost always inferior to the open process we established in ImageJ. For starters, bug reporters are unlikely to know who would be the best person to address the issue.
 
 ## I reported an issue, but it is still not fixed! Why not?
 
@@ -449,7 +448,7 @@ So please understand that just because we have not responded to a bug report, do
 
 If you want to increase the chances of your issue being worked on, you can:
 
--   Report the issue using the [Report a Bug](/discuss/bugs) plugin (in the Help menu).
+-   [Report the issue](/discuss/bugs).
 -   Provide a [minimal, complete, verifiable example](http://stackoverflow.com/help/mcve).
 -   [Describe what you already tried](http://whathaveyoutried.com/).
 -   [Put as much effort into your question](http://stackoverflow.com/help/how-to-ask) as you expect to be put into its response.

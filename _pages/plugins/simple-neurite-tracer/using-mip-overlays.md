@@ -1,7 +1,7 @@
 ---
 mediawiki: Simple_Neurite_Tracer:_Using_MIP_Overlays
 title: Simple Neurite Tracer › Using MIP Overlays
-categories: [tutorials]
+categories: [Tutorials]
 nav-links: true
 nav-title: Using MIP Overlays
 ---

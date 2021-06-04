@@ -1,7 +1,7 @@
 ---
 mediawiki: 3D_ImageJ_Suite
 title: 3D ImageJ Suite
-categories: [3D]
+categories: [3D, Analysis, Filtering, Segmentation, Mathematical Morphology]
 ---
 
 
@@ -12,7 +12,7 @@ categories: [3D]
 {% capture source%}
 {% include github org='mcib3d' repo='mcib3d-core' %}
 {% endcapture %}
-{% include info-box name='3D ImageJ Suite' software='3DSuite' update-site='3D ImageJ Suite' author=author maintainer=' [Thomas Boudier](https://github.com/mcib3d)' source=source released='25/09/2012, V2.0' latest-version='30/10/2019, V3.96' status='stable, active' category='[3D](/plugin-index#3d), [Analysis](/plugin-index#analysis), [Filtering](/plugin-index#filtering), [Segmentation](/plugin-index#segmentation), [Mathematical morphology](/plugin-index#mathematical-morphology)' %}
+{% include info-box name='3D ImageJ Suite' software='3DSuite' update-site='3D ImageJ Suite' author=author maintainer=' [Thomas Boudier](https://github.com/mcib3d)' source=source released='25/09/2012, V2.0' latest-version='30/10/2019, V3.96' status='stable, active' %}
 
 ## 3D ImageJ Suite
 

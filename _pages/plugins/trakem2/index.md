@@ -1,7 +1,7 @@
 ---
 mediawiki: TrakEM2
 title: TrakEM2
-categories: [Registration,Segmentation,TrakEM2,Image annotation,Neuroanatomy]
+categories: [Registration,Segmentation,TrakEM2,Image Annotation,Neuroanatomy]
 artifact: sc.fiji:TrakEM2_
 doi: 10.1371/journal.pone.0038011
 ---

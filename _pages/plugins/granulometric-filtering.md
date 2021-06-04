@@ -1,7 +1,7 @@
 ---
 mediawiki: Granulometric_Filtering
 title: Granulometric Filtering
-categories: [Particle analysis]
+categories: [Particle Analysis]
 doi: 10.1016/j.jneumeth.2005.07.011
 ---
 

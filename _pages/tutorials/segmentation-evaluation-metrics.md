@@ -105,12 +105,12 @@ Just copy/paste it in the [Script Editor](/scripting/script-editor) or save it i
 
 If you run it, the following dialog will pop up:
 
-![](/media/scripting/examples/challenge-segmentation-metrics-script.png)
+![](/media/tutorials/challenge-segmentation-metrics-script.png)
 
 Here you can select among the open images which ones are the original and the proposed labels, along with the specific metrics you want to apply to evaluate the segmentation results.
 
 After clicking OK the metrics will be applied and the results will be shown in the Log window:
 
-![](/media/scripting/examples/challenge-script-log-window.png)
+![](/media/tutorials/challenge-script-log-window.png)
 
  

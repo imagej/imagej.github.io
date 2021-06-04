@@ -42,7 +42,7 @@ Some plugins require other components to be updated. For example, the [Simple Ne
 
 ![](/media/plugins/updater-resolve-dependencies.png)
 
-A typical scenario when you can have a locally modified version of a component is when you asked the respective plugin author for a change in a certain component and got a test version that you [installed manually](Installing_3rd_party_plugins).
+A typical scenario when you can have a locally modified version of a component is when you asked the respective plugin author for a change in a certain component and got a test version that you [installed manually](/plugins#installing-plugins).
 
 You can keep the local version if you are certain that the version you have is new enough to work with the plugin noted under the text *A newer version might be required by*, otherwise you should consider to choose *Update <component>* instead.
 

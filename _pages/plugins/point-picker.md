@@ -3,7 +3,7 @@ mediawiki:
 - PointPicker
 - Point_Picker
 title: Point Picker
-categories: [Particle analysis]
+categories: [Particle Analysis]
 ---
 
 {% include info-box software='ImageJ' name='Point Picker' author=' [Philippe Thévenaz](http://bigwww.epfl.ch/thevenaz/)' filename=' [PC](http://bigwww.epfl.ch/thevenaz/pointpicker/pointpicker.zip)  

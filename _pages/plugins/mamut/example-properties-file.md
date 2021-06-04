@@ -1,7 +1,7 @@
 ---
 mediawiki: Example_mamut.properties_file
 title: Example mamut.properties file
-categories: [tutorials]
+categories: [Tutorials]
 ---
 
 The key-bindings used in the [MaMuT](/plugins/mamut) viewer can be customized through a text file, that allow you to remap any command to any key. To so, create a text file named `mamut.properties` in the `Fiji.app` folder (where the `plugins` and `jars` folders are). This file must follow this syntax example:

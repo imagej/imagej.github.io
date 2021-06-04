@@ -116,7 +116,7 @@ The following table summarizes the dominant license of each project's components
         <p><strong><a href="/software/imagej1">ImageJ1</a></strong></p>
       </td>
       <td>
-        <p><a href="/ij/disclaimer.html">Disclaimer</a></p>
+        <p><a href="https://imagej.nih.gov/ij/disclaimer.html">Disclaimer</a></p>
       </td>
       <td>
         <p><a href="/licensing/public-domain">Public</a><br>
