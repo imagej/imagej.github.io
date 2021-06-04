@@ -7,8 +7,6 @@ section: Extend
 ---
 {%- assign category-string = "" -%}
 {%- for p in site.pages -%}
-  {%- assign tokens = p.url | split: "/" -%}
-  {%- if tokens[3] and tokens[3] != 'index' -%} {%- continue -%} {%- endif -%}
   {%- comment -%}
   It would be nicer to use the concat filter below, no?
   But that filter only became available in Jekyll 4.0.
@@ -121,10 +119,8 @@ function toggleAllCategories(checked) {
 
 <ul id="list-of-extensions">
 {%- for p in site.pages -%}
-  {%- assign tokens = p.url | split: "/" -%}
-  {%- if tokens[1] != 'plugins' and tokens[1] != 'formats' -%} {%- continue -%} {%- endif -%}
-  {%- if tokens[3] and tokens[3] != 'index' -%} {%- continue -%} {%- endif -%}
-  {%- assign url = p.url | replace: '/index', '' -%}
+  {%- comment -%} Only pages declaring categories are listed. {%- endcomment -%}
+  {%- unless p.categories -%} {%- continue -%} {%- endunless -%}
   {%- assign classes = "" -%}
   {%- for category in p.categories -%}
     {%- assign c = category | slugify -%}
