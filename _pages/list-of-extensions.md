@@ -72,7 +72,7 @@ function toggleAllCategories(checked) {
   column-width: 13em;
 }
 #list-of-extensions {
-  column-width: 15em;
+  column-width: 16em;
   list-style: none;
 }
 #list-of-extensions img {
