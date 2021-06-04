@@ -897,7 +897,7 @@ I2K_2018 :: events/i2k-2018
 IDE :: develop/ides
 IDEA :: develop/intellij
 IDEs :: develop/ides
-IJ-OpenCV :: plugins/ij-opencv
+IJ-OpenCV :: libs/ij-opencv
 IJ2-python-lib :: https://github.com/hadim/fiji_scripts
 IJMMD :: plugins/ijmmd
 IJ_Blob :: plugins/ij-blob
