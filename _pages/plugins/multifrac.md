@@ -1,14 +1,15 @@
 ---
 mediawiki: Multifrac
 title: Multifrac
-categories: [Analysis,Feature extraction,ImageJ2,Mathematical morphology,Stacks]
+categories: [Analysis, Feature Extraction, ImageJ2, Mathematical Morphology, Stacks]
+doi: 10.1016/j.softx.2020.100574
 ---
 
 
 {% capture source%}
 {% include github org='ivangtorre' repo='multifrac' %}
 {% endcapture %}
-{% include info-box software='ImageJ / Fiji plugins' name='Multifrac' update-site='Multifrac' maintainer=' [Ivan G Torre](https://www.ivangtorre.com/)' author=' [Ivan G Torre](https://www.ivangtorre.com/)' released='06.05.2020' latest-version='06.05.2020' source=source category='[Plugins](/plugin-index)' website='/plugins/multifrac' category='[Analysis](/plugin-index#analysis), [Citable](/plugin-index#citable), [Feature Extraction](/plugin-index#feature-extraction), [ImageJ2](/plugin-index#imagej2), [Mathematical morphology](/plugin-index#mathematical-morphology), [Stacks](/plugin-index#stacks)' %}
+{% include info-box software='ImageJ / Fiji plugins' name='Multifrac' update-site='Multifrac' maintainer=' [Ivan G Torre](https://www.ivangtorre.com/)' author=' [Ivan G Torre](https://www.ivangtorre.com/)' released='06.05.2020' latest-version='06.05.2020' source=source website='/plugins/multifrac' %}
 
 **Multifrac** is an ImageJ plugin for fractal, multifractal and scaling analysis and characterization of 2D and 3D gray and B&W stack images. It has been particularly developed for the study of CT-scan images on soil science but it is recommended for complexity analysis in any kind of image.
 
@@ -16,7 +17,7 @@ categories: [Analysis,Feature extraction,ImageJ2,Mathematical morphology,Stacks]
 
 Please when using the plugin, cite:
 
-:\* I. G. Torre, R. J. Heck and A. M. Tarquis, **MULTIFRAC: An ImageJ plugin for multiscale characterization of 2D and 3D stack images**, *preprint*.
+{% include citation %}
 
 ## Installation
 
