@@ -26,13 +26,13 @@ See here a photograph of the [lunar crater Hohmann](http://commons.wikimedia.org
   <tbody>
     <tr>
       <td>
-        <p>style="vertical-align:top" |{% include thumbnail src='/media/scripting/examples/hohmann-crater.jpg' title='Original image'%}</p>
+        <p>style="vertical-align:top" |{% include thumbnail src='/media/tutorials/hohmann-crater.jpg' title='Original image'%}</p>
       </td>
       <td>
-        <p>style="vertical-align:top" |{% include thumbnail src='/media/scripting/examples/hohmann-crater-xintegral.jpg' title='Integral in <em>x</em>'%}</p>
+        <p>style="vertical-align:top" |{% include thumbnail src='/media/tutorials/hohmann-crater-xintegral.jpg' title='Integral in <em>x</em>'%}</p>
       </td>
       <td>
-        <p>style="vertical-align:top" |{% include thumbnail src='/media/scripting/examples/hohmann-crater-surfaceplot.jpg' title='3D Surface Plot'%}</p>
+        <p>style="vertical-align:top" |{% include thumbnail src='/media/tutorials/hohmann-crater-surfaceplot.jpg' title='3D Surface Plot'%}</p>
       </td>
     </tr>
   </tbody>

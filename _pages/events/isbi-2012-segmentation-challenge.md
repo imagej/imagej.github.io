@@ -66,7 +66,7 @@ The metrics are:
 -   **Foreground-restricted Rand error**: defined as 1 - the maximal {% include wikipedia title='F1 score' text='F-score'%} of the foreground-restricted {% include wikipedia title='Rand index' text='Rand index'%}, a measure of similarity between two clusters or segmentations. On this version of the Rand index we exclude the zero component of the original labels (background pixels of the ground truth).
 -   **Pixel error**: defined as 1 - the maximal {% include wikipedia title='F1 score' text='F-score'%} of pixel similarity, or squared Euclidean distance between the original and the result labels.
 
-If you want to apply these metrics yourself to your own results, you can do it within Fiji using this [script](/scripting/examples/segmentation-evaluation-metrics).
+If you want to apply these metrics yourself to your own results, you can do it within Fiji using this [script](/tutorials/segmentation-evaluation-metrics).
 
 We understand that segmentation evaluation is an ongoing and sensitive research topic, therefore we open the metrics to discussion. Please, do not hesitate to contact the [organizers](/events/isbi-2012-segmentation-challenge#Organizers) to discuss about the metric selection.
 
