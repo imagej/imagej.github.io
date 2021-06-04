@@ -198,10 +198,6 @@ pre code {
 /* Container */
 @media screen and (min-width: 880px) {
 
-  .container {
-    margin: 0 220px;
-  }
-
   .container.xsmall {
     width: 15em;
   }

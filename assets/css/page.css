@@ -3,6 +3,10 @@
   #ham-toggle {
     display: none;
   }
+
+  .container {
+    margin: 1em 220px;
+  }
 }
 
 @media screen and (max-width: 879px) {
