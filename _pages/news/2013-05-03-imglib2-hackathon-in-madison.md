@@ -1,5 +1,4 @@
 ---
-mediawiki: 2013-05-03_-_ImgLib2_Hackathon_in_Madison
 title: 2013-05-03 - ImgLib2 Hackathon in Madison
 ---
 
@@ -91,6 +90,6 @@ These changes don't immediately allow for opening large single planes in IJ2—j
 
 ## Tobias Pietzsch
 
-See the [thread on imagej-devel](/ij/pipermail/imagej-devel/2013-May/001488.html).
+See the [thread on imagej-devel](/pipermail/imagej-devel/2013-May/001488.html).
 
   

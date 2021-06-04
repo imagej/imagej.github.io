@@ -1,5 +1,4 @@
 ---
-mediawiki: 2013-02-25_-_TrackMate_v2.0.0_released
 title: 2013-02-25 - TrackMate v2.0.0 released
 ---
 
@@ -21,17 +20,17 @@ Most changes in this version are for developers and are not displayed in the tex
 -   TrackMate now computes edge features (on top of spot and track features). These features enable the immediate measure of velocity, displacement, etc...
 -   Tracks can be colored in the Hyperstack displayer, in the 3D viewer and in TrackScheme using indifferently track or edge features.
 
-![caption](/media/news/trackmate-edgecoloring.png)
+{% include img src="/media/news/trackmate-edgecoloring.png" align="center" %}
 
 -   All spot, edge and track features are computed automatically and kept in sync even versus manual modifications.
 -   All spot, edge and track features are saved in the XML file.
 -   All spot, edge and track features can be exported as ImageJ results tables. Then they can be exported to text files, readable by let's say Excel. (Please note that the authors of the plugin do not deem Excel as a proper solution for scientific analysis and recommend more professional solutions.)
 
-<figure><img src="/media/news/trackmate-analysisbutton.png" title="TrackMate_AnalysisButton.png" width="400" alt="TrackMate_AnalysisButton.png" /><figcaption aria-hidden="true">TrackMate_AnalysisButton.png</figcaption></figure>
+{% include img src="/media/news/trackmate-analysisbutton.png" width="400px" alt="TrackMate Analysis Button" align="center" %}
 
 -   All spot, edge and track features can be plotted as specialized graphs, thanks to a dedicated GUI panel.
 
-<figure><img src="/media/news/trackmate-grapherpanel.png" title="caption" width="200" alt="caption" /><figcaption aria-hidden="true">caption</figcaption></figure>
+{% include img src="/media/news/trackmate-grapherpanel.png" align="center" %}
 
 -   Tracks can be named in TrackScheme. These names are used to sort alphanumerically the tracks as they are laid out. To change the name of a track, just double-click its current name in the TrackScheme view.
 -   We use [semantic versioning](http://semver.org/) for release numbers from now on. The rules about backward incompatible changes - described below - required a major version change. However, we reserve the right to make a major number change only when there is backward incompatible changes to the user only. API changes might not trigger a major version change.

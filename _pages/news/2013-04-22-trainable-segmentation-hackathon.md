@@ -1,5 +1,4 @@
 ---
-mediawiki: 2013-04-22_-_Trainable_Segmentation_Hackathon
 title: 2013-04-22 - Trainable Segmentation Hackathon
 ---
 
