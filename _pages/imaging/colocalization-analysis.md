@@ -1,6 +1,6 @@
 ---
-mediawiki: Colocalization_Analysis
 title: Colocalization Analysis
+description: Fluorescence colocalization analysis is used to determine whether two molecules associate with the same structure
 description: Learn about the numerous methods of colocalization analysis
 categories: [Cookbook,Tutorials,Colocalization,Color processing]
 section: Learn:Scientific Imaging
@@ -27,7 +27,7 @@ When considering colocalization, too often composite images of red and green cha
 
 {% include img align="center" name="SpiralsRGY.png" src="/media/spiralsrgy.png" %}
 
-Most people might think that the image contains 4 distinct colours: 2 sets of thin spirals are in dark red and dark green, and 2 thick prominent spirals of yellow-green and yellow. However, the yellow and yellow-green actually have <b>exactly the same color!</b> You can verify this yourself by calling {% include bc path='File | Open Samples | [Spirals (Macro)](Spirals_Macro)'%} in Fiji.
+Most people might think that the image contains 4 distinct colours: 2 sets of thin spirals are in dark red and dark green, and 2 thick prominent spirals of yellow-green and yellow. However, the yellow and yellow-green actually have <b>exactly the same color!</b> You can verify this yourself by calling {% include bc path='File | Open Samples | ' %} {% include github repo='fiji' branch='master' path='plugins/Scripts/File/Open_Samples/Spirals_.ijm' label='Spirals Macro' %} in Fiji.
 
 So... now, how do you feel about determining colocalization by looking for yellow blobs? Doesn't make much sense does it? We notice that the shades and hues of colours look different according to what other colours they are next to! So, you need to measure something from the pixel values, not simply subjectively "look at" a red/green colour merge image.
 
@@ -204,7 +204,7 @@ The spatial resolution of the light microscope is limited by the wavelength of t
 
 Are the images spatially calibrated? If not then we need to calibrate them so we know the spatial sampling rate (think pixel or voxel size) in x, y and z. See the [SpatialCalibration](/imaging/spatial-calibration) tutorial for how to do that. We need the images to be spatially calibrated in order for the Costes statistical significance test (below) method to work properly.
 
-We need to think carefully about the correct or adequate spatial resolution in x, y and probably z. This depends on the {% include wikipedia title='Numerical aperture' text='Numerical Aperture'%} of the objective lens. You can calculate the correct pixel or voxel sizes for the objective lens you are using, to get the maximum resolution that that objective lens can really see: [Nyquist Calculator](http://support.svi.nl/wiki/NyquistCalculator)\]. Essentially the pixels / voxels should be about 3 times smaller than the resolution of the lens. On the other hand, if you are only interested in larger objects, and not the smallest details the objective can see, it makes sense to have larger pixels or voxels. Again, these should be about 3 times smaller than the smallest feature you want to resolve.
+We need to think carefully about the correct or adequate spatial resolution in x, y and probably z. This depends on the {% include wikipedia title='Numerical aperture' text='Numerical Aperture'%} of the objective lens. You can calculate the correct pixel or voxel sizes for the objective lens you are using, to get the maximum resolution that that objective lens can really see: [Nyquist Calculator](https://svi.nl/NyquistCalculator]. Essentially the pixels / voxels should be about 3 times smaller than the resolution of the lens. On the other hand, if you are only interested in larger objects, and not the smallest details the objective can see, it makes sense to have larger pixels or voxels. Again, these should be about 3 times smaller than the smallest feature you want to resolve.
 
 {% include wikipedia title='Nyquist–Shannon sampling theorem' text='Nyqvist'%} tells us the spatial sampling should be about three times smaller than the smallest object we want to resolve. Remember, spatial intensity correlation analysis, as we will perform here, cannot tell you that 2 proteins are bound together in some biophysical bonding interaction. However, it might suggest that the 2 molecules occur with the same relative amounts when they are present in the set of spatial samples (pixels or voxels) with intensities above the thresholds we will calculate below. In any case, it might be a hint that "maybe they are binding partners or in the same macromolecular complex". You should follow up by determining true binding using {% include wikipedia title='FLIM' text='FLIM'%}, {% include wikipedia title='Förster resonance energy transfer' text='FRET'%} and biochemical methods like Immuno co-Precipitation etc.
 
@@ -219,7 +219,7 @@ We need to think carefully about the correct or adequate spatial resolution in x
 
 {% include notice icon="info" content="Note: this plugin is no longer under active development and support. Use [Coloc 2](/plugins/coloc-2) instead, which does the same thing, only better." %}
 
-The [Colocalization Threshold](/plugins/colocalization-threshold) plugin performs several functions for you in one go. With the "green" and "red" stacks of the [colocsample1bRGB\_BG.tif](https://fiji.sc/samples/colocsample1bRGB_BG.tif) dataset open and the channels split (see above) choose the menu item "Analyze-Colocalization-Colocalization Threshold". Next select the right stacks for the analysis in Channel1 and Channel2. You can use a region of interest (ROI) if you like, which should be defined before you run the plugin. Check on "Show Colocalized Pixels" and "Show Scatter Plot" (see also [Why scatter plots?](#why-scatter-plots)), and others off. You can explore the options in Set options. Turn ALL the options on the first time you use it, so you see what it can do.
+The [Colocalization Threshold](/plugins/colocalization-threshold) plugin performs several functions for you in one go. With the "green" and "red" stacks of the [colocsample1bRGB\_BG.tif](https://fiji.sc/samples/colocsample1bRGB_BG.tif) dataset open and the channels split (see above) choose the menu item "Analyze-Colocalization-Colocalization Threshold". Next select the right stacks for the analysis in Channel1 and Channel2. You can use a region of interest (ROI) if you like, which should be defined before you run the plugin. Check on "Show Colocalized Pixels" and "Show Scatter Plot" (see also [Why scatter plots?](#one-to-one-pixel-matching)), and others off. You can explore the options in Set options. Turn ALL the options on the first time you use it, so you see what it can do.
 
 {% include gallery content=
 "
