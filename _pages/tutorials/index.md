@@ -33,7 +33,7 @@ Start with the [ImageJ Tutorial Notebooks](https://nbviewer.jupyter.org/github/i
 
 And be sure to read over the [Development](/develop) pages.
 
-## List of tutorials on this site
+## Tutorials on this site
 
 {% for p in site.pages -%}
   {%- assign tokens = p.url | split: "/" -%}
@@ -43,6 +43,7 @@ And be sure to read over the [Development](/develop) pages.
 * [{{p.title}}]({{p.url}})
 {% endfor -%}
 
+To add your tutorial to this list, place the page in the `/tutorials` folder.
 
 ## See also
 
