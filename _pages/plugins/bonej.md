@@ -5,7 +5,6 @@ categories: [Analysis, Mathematical morphology, Particle Analysis]
 doi:
 - 10.12688/wellcomeopenres.16619.1
 - 10.5281/zenodo.1427262
-- 10.1016/j.bone.2010.08.023
 name: BoneJ
 artifact: org.bonej:bonej-utilities
 ---
