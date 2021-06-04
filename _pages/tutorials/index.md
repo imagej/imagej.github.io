@@ -35,7 +35,7 @@ And be sure to read over the [Development](/develop) pages.
 
 ## Tutorials on this site
 
-{% include util/list-pages directory='tutorials' column-width='15em' %}
+{% include util/list-pages directory='tutorials' column-width='25em' %}
 
 To add your tutorial to this list, place the page in the `/tutorials` folder.
 
