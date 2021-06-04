@@ -1,7 +1,7 @@
 ---
 mediawiki: SEM_FEI_metadata_scale
 title: SEM FEI metadata scale
-categories: []
+categories: [Uncategorized]
 ---
 
 ## **Overview**

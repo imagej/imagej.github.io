@@ -1,7 +1,7 @@
 ---
 mediawiki: MS-ECS-2D_update_site
 title: MS-ECS-2D update site
-categories: []
+categories: [Uncategorized]
 ---
 
 This page provides a detailed explanation and pointers towards the use of the MS-ECS-2D update site. It is made available in conjunction with the publication of the paper:

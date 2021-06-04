@@ -1,7 +1,7 @@
 ---
 mediawiki: OtoRing
 title: OtoRing
-categories: []
+categories: [Uncategorized]
 ---
 
 OtoRing - An ImageJ plugin to aid otolith ring identification.  

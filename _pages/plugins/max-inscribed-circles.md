@@ -1,7 +1,7 @@
 ---
 mediawiki: Max_Inscribed_Circles
 title: Max Inscribed Circles
-categories: []
+categories: [Uncategorized]
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 mediawiki: Time_Lapse
 title: Time Lapse
-categories: []
+categories: [Uncategorized]
 artifact: sc.fiji:Time_Lapse
 ---
 

@@ -1,7 +1,7 @@
 ---
 mediawiki: EzFig
 title: EzFig
-categories: []
+categories: [Uncategorized]
 ---
 
 {% include warning/wip %}

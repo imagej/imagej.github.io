@@ -1,6 +1,6 @@
 ---
 title: HPC Workflow Manager
-categories: []
+categories: [Uncategorized]
 ---
 
 ## General information

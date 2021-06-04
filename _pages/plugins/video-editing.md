@@ -1,7 +1,7 @@
 ---
 mediawiki: Video_Editing
 title: Video Editing
-categories: []
+categories: [Uncategorized]
 artifact: sc.fiji:Video_Editing
 ---
 

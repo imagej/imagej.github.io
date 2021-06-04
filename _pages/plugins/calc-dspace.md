@@ -1,7 +1,7 @@
 ---
 mediawiki: Calc_dSpace
 title: Calc dSpace
-categories: []
+categories: [Uncategorized]
 ---
 
 ## **Overview**

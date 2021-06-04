@@ -1,7 +1,7 @@
 ---
 mediawiki: SEM_JOEL_Scale
 title: SEM JOEL Scale
-categories: []
+categories: [Uncategorized]
 ---
 
 ## **Overview**

@@ -1,7 +1,7 @@
 ---
 mediawiki: TurboReg
 title: TurboReg
-categories: []
+categories: [Uncategorized]
 ---
 
 

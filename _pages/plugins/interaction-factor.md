@@ -1,7 +1,7 @@
 ---
 mediawiki: Interaction_Factor
 title: Interaction Factor
-categories: []
+categories: [Uncategorized]
 ---
 
 ## Introduction

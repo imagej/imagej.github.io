@@ -1,7 +1,7 @@
 ---
 mediawiki: Shape_Filter
 title: Shape Filter
-categories: []
+categories: [Uncategorized]
 ---
 
 

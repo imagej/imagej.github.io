@@ -1,7 +1,7 @@
 ---
 mediawiki: Get_dSpace
 title: Get dSpace
-categories: []
+categories: [Uncategorized]
 ---
 
 ## **Overview**

@@ -1,7 +1,7 @@
 ---
 mediawiki: Adaptive_Median_Filter
 title: Adaptive Median Filter
-categories: []
+categories: [Uncategorized]
 ---
 
 

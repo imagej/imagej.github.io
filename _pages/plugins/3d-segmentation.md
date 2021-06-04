@@ -1,7 +1,7 @@
 ---
 mediawiki: 3D_Segmentation
 title: 3D Segmentation
-categories: []
+categories: [Uncategorized]
 ---
 
 ## 3D Segmentation

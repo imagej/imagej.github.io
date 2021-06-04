@@ -1,7 +1,7 @@
 ---
 mediawiki: Ridge_Detection
 title: Ridge Detection
-categories: []
+categories: [Uncategorized]
 ---
 
 {% include warning/unmaintained %}

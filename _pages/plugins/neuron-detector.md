@@ -2,7 +2,7 @@
 mediawiki: NeuronDetector/
 title: NeuronDetector
 doi: 10.5281/zenodo.1400718
-categories: []
+categories: [Uncategorized]
 ---
 
 ## Neuron Detector

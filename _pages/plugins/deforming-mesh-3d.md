@@ -1,7 +1,7 @@
 ---
 mediawiki: Deforming_Mesh_3D
 title: Deforming Mesh 3D
-categories: []
+categories: [Uncategorized]
 ---
 
 # Deforming Mesh Plugin: Interactive 3D Segmentation.

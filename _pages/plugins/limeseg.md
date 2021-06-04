@@ -1,7 +1,7 @@
 ---
 mediawiki: LimeSeg
 title: LimeSeg
-categories: []
+categories: [Uncategorized]
 ---
 
 

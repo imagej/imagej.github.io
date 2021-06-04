@@ -1,7 +1,7 @@
 ---
 mediawiki: Kappa
 title: Kappa
-categories: []
+categories: [Uncategorized]
 ---
 
 

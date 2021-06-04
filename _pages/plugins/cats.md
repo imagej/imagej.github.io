@@ -1,7 +1,7 @@
 ---
 mediawiki: CATS
 title: CATS
-categories: []
+categories: [Uncategorized]
 ---
 
 

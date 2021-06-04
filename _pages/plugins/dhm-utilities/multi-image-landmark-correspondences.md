@@ -1,7 +1,7 @@
 ---
 mediawiki: DHM_Utilities/Multi-Image_Landmark_Correspondences
 title: DHM Utilities/Multi-Image Landmark Correspondences
-categories: []
+categories: [Uncategorized]
 project: DHM Utilities
 
 name: Multi-Image Landmark Correspondences

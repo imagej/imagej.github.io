@@ -1,7 +1,7 @@
 ---
 mediawiki: Void_Whizzard
 title: Void Whizzard
-categories: []
+categories: [Uncategorized]
 ---
 
 ## PURPOSE

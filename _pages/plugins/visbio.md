@@ -1,7 +1,7 @@
 ---
 mediawiki: VisBio_Fiji_plugin
 title: VisBio Fiji plugin
-categories: []
+categories: [Uncategorized]
 ---
 
 

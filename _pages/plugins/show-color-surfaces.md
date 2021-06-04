@@ -1,7 +1,7 @@
 ---
 mediawiki: Show_Color_Surfaces
 title: Show Color Surfaces
-categories: []
+categories: [Uncategorized]
 ---
 
 

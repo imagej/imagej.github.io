@@ -1,7 +1,7 @@
 ---
 mediawiki: AxoNet
 title: AxoNet
-categories: []
+categories: [Uncategorized]
 ---
 
 

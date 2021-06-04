@@ -1,7 +1,7 @@
 ---
 mediawiki: CAMDU
 title: CAMDU
-categories: []
+categories: [Uncategorized]
 ---
 
 CAMDU ([http://www.warwick.ac.uk/camdu](http://www.warwick.ac.uk/camdu)) is a "virtual facility" at the University of Warwick. We are home to multiple advanced light microscopes, both commercial and custom-built systems, alongside computational workstations, software development and integrated petabyte data storage. This includes our Wellcome-funded lattice light sheet microscope and visitor programme.

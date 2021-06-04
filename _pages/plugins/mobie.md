@@ -1,7 +1,7 @@
 ---
 mediawiki: MoBIE
 title: MoBIE
-categories: []
+categories: [Uncategorized]
 ---
 
 <figure><img src="/media/plugins/mobie-white.jpg" title="Mobie-white.jpg" width="200" alt="Mobie-white.jpg" /><figcaption aria-hidden="true">Mobie-white.jpg</figcaption></figure>

@@ -1,6 +1,6 @@
 ---
 title: OpenMPI Plugin Extensions
-categories: []
+categories: [Uncategorized]
 ---
 
 {% include info-box name='OpenMPI Plugin Extensions' software='Fiji' author='Daniel Trnka, Michal Krumnikl' maintainer='Michal Krumnikl' released='TBD' latest-version='TBD' category='TBD' source=' [on github](https://github.com/fiji-hpc/scijava-parallel-mpi)' %}

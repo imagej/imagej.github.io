@@ -1,7 +1,7 @@
 ---
 mediawiki: Non_Local_Means_Denoise
 title: Non Local Means Denoise
-categories: []
+categories: [Uncategorized]
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 mediawiki: SlideJ
 title: SlideJ
-categories: []
+categories: [Uncategorized]
 ---
 
 **SlideJ**

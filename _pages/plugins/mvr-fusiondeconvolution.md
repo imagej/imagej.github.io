@@ -1,7 +1,7 @@
 ---
 mediawiki: MVR-FusionDeconvolution
 title: MVR-FusionDeconvolution
-categories: []
+categories: [Uncategorized]
 ---
 
 Firstly, it is not trivial to find the right bounding box for the fusion. By default (select "define manually") it will take the entire dataset, which might contain a lot of background space around your sample that you actually do not want to fuse. To make it right, you have several choices:

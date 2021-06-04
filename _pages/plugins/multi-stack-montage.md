@@ -1,7 +1,7 @@
 ---
 mediawiki: Multi_Stack_Montage
 title: Multi Stack Montage
-categories: []
+categories: [Uncategorized]
 ---
 
 

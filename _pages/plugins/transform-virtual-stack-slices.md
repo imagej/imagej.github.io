@@ -1,7 +1,7 @@
 ---
 mediawiki: Transform_Virtual_Stack_Slices
 title: Transform Virtual Stack Slices
-categories: []
+categories: [Uncategorized]
 ---
 
 

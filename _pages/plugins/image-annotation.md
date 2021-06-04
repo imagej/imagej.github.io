@@ -1,7 +1,7 @@
 ---
 mediawiki: Image_Annotation
 title: Image Annotation
-categories: []
+categories: [Uncategorized]
 ---
 
 ## **Overview**

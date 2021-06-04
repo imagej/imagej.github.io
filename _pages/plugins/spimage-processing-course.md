@@ -1,7 +1,7 @@
 ---
 mediawiki: SPIMage_processing_course
 title: SPIMage processing course
-categories: []
+categories: [Uncategorized]
 ---
 
 # Practical course on SPIM image processing

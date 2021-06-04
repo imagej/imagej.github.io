@@ -1,7 +1,7 @@
 ---
 mediawiki: Cell_detector
 title: Cell detector
-categories: []
+categories: [Uncategorized]
 ---
 
 ## **Introduction**

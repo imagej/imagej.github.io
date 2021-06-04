@@ -1,7 +1,7 @@
 ---
 mediawiki: Find_Connected_Regions
 title: Find Connected Regions
-categories: []
+categories: [Uncategorized]
 ---
 
 

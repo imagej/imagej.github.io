@@ -2,7 +2,7 @@
 mediawiki: Archipelago_Plugins
 title: Archipelago Plugins
 artifact: sc.fiji:Archipelago_Plugins
-categories: []
+categories: [Uncategorized]
 ---
 
 {% include warning/stub %}

@@ -1,7 +1,7 @@
 ---
 mediawiki: Level_Sets
 title: Level Sets
-categories: []
+categories: [Uncategorized]
 artifact: sc.fiji:level_sets
 ---
 

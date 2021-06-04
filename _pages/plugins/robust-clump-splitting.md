@@ -1,7 +1,7 @@
 ---
 mediawiki: Robust_clump_splitting
 title: Robust clump splitting
-categories: []
+categories: [Uncategorized]
 ---
 
 

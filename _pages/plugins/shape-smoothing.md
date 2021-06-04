@@ -1,7 +1,7 @@
 ---
 mediawiki: Shape_Smoothing
 title: Shape Smoothing
-categories: []
+categories: [Uncategorized]
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 mediawiki: Fpbioimage
 title: Fpbioimage
-categories: []
+categories: [Uncategorized]
 ---
 
 

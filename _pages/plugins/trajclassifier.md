@@ -1,7 +1,7 @@
 ---
 mediawiki: TraJClassifier
 title: TraJClassifier
-categories: []
+categories: [Uncategorized]
 ---
 
 

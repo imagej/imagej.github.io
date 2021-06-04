@@ -1,7 +1,7 @@
 ---
 mediawiki: MVR-ResaveDataset
 title: MVR-ResaveDataset
-categories: []
+categories: [Uncategorized]
 ---
 
 Resaving a dataset is a simple two step process:

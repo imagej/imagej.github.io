@@ -1,7 +1,7 @@
 ---
 mediawiki: Radial_Symmetry
 title: Radial Symmetry
-categories: []
+categories: [Uncategorized]
 ---
 
 ## Download

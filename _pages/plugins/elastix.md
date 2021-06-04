@@ -1,7 +1,7 @@
 ---
 mediawiki: Elastix
 title: Elastix
-categories: []
+categories: [Uncategorized]
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: CIP
-categories: []
+categories: [Uncategorized]
 ---
 
 {% capture benoalo %}{% include person id='benoalo' %}{% endcapture %}
