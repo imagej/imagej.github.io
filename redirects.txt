@@ -466,7 +466,7 @@ COBA :: orgs/coba
 CPU_Meter :: plugins/cpu-meter
 CSBD :: orgs/csbd
 CSBDeep :: plugins/csbdeep
-CSIMLab :: orgs/csim-lab
+CSIMLab :: plugins/csim-lab
 Calc_dSpace :: plugins/calc-dspace
 Calculator_Plus :: plugins/calculator-plus
 Calibrate_SCANCO :: plugins/bonej#calibrate-scanco-wip
