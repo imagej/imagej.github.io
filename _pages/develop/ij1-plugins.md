@@ -90,26 +90,6 @@ A general plugin looks like this:
 -   Some functions which are easy to call via macros are not available via the public Java API (e.g. {% include bc path='Image | Stacks | Plot Z-axis profile...'%})
 -   It is often quicker to write macros
 
-# Rapid prototyping with the [Script Editor](/scripting/script-editor)
-
-{% include notice icon="warning" content='Using the Script Editor for Java development is not currently recommended.  
-For Java development, proceed to the [Getting Started with Maven](#getting-started-with-maven) section.  
-If you would like to use the script editor, see the sections for the [other supported languages](/scripting#supported-languages).' %}
-
-<s>There a few good reasons why you should try the [Script Editor](/scripting/script-editor) for rapid prototyping of your plugins or scripts:
-
--   Supports Jython, JRuby, Javascript, Clojure, Java, BeanShell, and ImageJ's Macro Language
--   Syntax highlighting
--   Compile and Run without restarting Fiji (mini-IDE)
--   Export scripts/plugins as `.jar` files
--   You can compile & run Java classes in the Script Editor which implement neither a plugin nor a plugin filter, but which have a static *main()* method
--   Provides code templates
--   Convenience functions, (add import, open JavaDoc, for given class, etc)</s>
-
-## Quick Start
-
-<s>To plunge into writing plugins, make sure that there is an active image (e.g. a sample image), start the [Script Editor](/scripting/script-editor) ({% include bc path='File | New | Script'%}), and select the {% include bc path="Process Pixels" %} menu item from the {% include bc path='Templates | Java'%} menu. Then, run the plugin with {% include bc path="Run | Run" %}.</s>
-
 # Getting started with Maven
 
 The {% include github org='imagej' repo='example-legacy-plugin' label='example-legacy-plugin project' %} provides a working example, and documentation, illustrating how an ImageJ plugin should be structured from a "best practices in Maven" point of view.
