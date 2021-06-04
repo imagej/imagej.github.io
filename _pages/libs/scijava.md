@@ -1,5 +1,4 @@
 ---
-mediawiki: SciJava
 title: SciJava
 icon: /media/icons/scijava.svg
 logo: /media/logos/scijava.png

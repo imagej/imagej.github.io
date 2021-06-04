@@ -1,5 +1,4 @@
 ---
-mediawiki: Building_a_POM
 title: Building a POM
 section: Extend:Development:Guides
 ---
@@ -8,6 +7,7 @@ When you start a new [Maven](/develop/maven) project, one of the first things yo
 
 # Using ImageJ
 
+```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <project xmlns="http://maven.apache.org/POM/4.0.0"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -115,7 +115,7 @@ When you start a new [Maven](/develop/maven) project, one of the first things yo
             </dependency>
         </dependencies>
     </project>
-
+```
 -   Replace the `[MY-...]` blocks with appropriate information.
 -   Replace license-related blocks with your chosen project license.
 

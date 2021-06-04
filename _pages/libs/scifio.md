@@ -1,5 +1,4 @@
 ---
-mediawiki: SCIFIO
 title: SCIFIO
 section: Explore:Libraries
 categories: [Software]

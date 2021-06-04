@@ -1,5 +1,4 @@
 ---
-mediawiki: Coding_style
 title: Coding style
 section: Extend:Development
 ---
@@ -33,7 +32,7 @@ We try to follow best practices for maintaining a clean and organized Git histor
 -   We use topic branches for large feature additions and complex code changes, and purge them promptly once merged to master. We prefer to make explicit merges (i.e. with `--no-ff`) to document the purpose of each merged branch.
 -   To refine commits on topic branches, we use `git commit --fixup <commit>` extensively. Subsequent `git rebase --autosquash` will squash the fixup into the other commit.
 -   In the case of unfinished work at the conclusion of a coding session, we commit it with the subject *WIP* and push to the topic branch. (Calling `git reset HEAD^` next time makes it easy to pick up the work from there.) Doing this reduces the chance of lost work, and makes it easier for other programmers to collaborate during development.
--   We avoid monster commits (with commit messages like "Many changes to several subsystems") in favor of well-separated, modular commits with one conceptual change at a time. Git's staging area feature makes this much easier (e.g., `git add -p`). Granular commits have many advantages; e.g., [`git`` ``bisect`](/develop/git/pinpoint-regressions) becomes much more useful for understanding mysterious bugs.
+-   We avoid monster commits (with commit messages like "Many changes to several subsystems") in favor of well-separated, modular commits with one conceptual change at a time. Git's staging area feature makes this much easier (e.g., `git add -p`). Granular commits have many advantages; e.g., [`git` bisect`](/develop/git/pinpoint-regressions) becomes much more useful for understanding mysterious bugs.
 
 ## Javadoc and comments
 
@@ -93,5 +92,3 @@ All of that said, there are times when use of the `protected` modifier is approp
 ## See also
 
 [Eclipse code style profiles and IntelliJ](/develop/intellij#code-style-profiles)
-
-
