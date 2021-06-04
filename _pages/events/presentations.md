@@ -1,5 +1,4 @@
 ---
-mediawiki: Presentations
 title: Presentations
 section: Events
 ---
