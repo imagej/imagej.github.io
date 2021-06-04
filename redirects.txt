@@ -1876,7 +1876,7 @@ User:Ksmader :: people/kmader
 User:Kudryashev :: people/KudryashevLab
 User:LMCF-IMG :: people/LMCF-IMG
 User:LMEscudero :: people/luis-escudero
-User:LOCI :: sites/loci
+User:LOCI :: update-sites/loci
 User:Landini :: people/landinig
 User:Leek :: people/LeeKamentsky
 User:Lentz :: people/ricklentz
@@ -1984,7 +1984,7 @@ User:Tupper :: people/btupper
 User:Turek :: people/turekg
 User:Twagner :: people/thorstenwagner
 User:Ulman :: people/xulman
-User:UniBas-IMCF :: sites/imcf
+User:UniBas-IMCF :: update-sites/imcf
 User:VIB :: plugins/vib-protocol
 User:VarunKapoor :: people/kapoorlab
 User:Vcaldas :: people/vcaldas

@@ -1,6 +1,7 @@
 ---
 mediawiki: User:LOCI
 title: Update Site ›LOCI
+section: Extend:Update Sites
 ---
 
 This page documents the [LOCI update site](http://sites.imagej.net/LOCI/). See also [list of update sites](/list-of-update-sites).
