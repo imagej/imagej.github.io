@@ -3,10 +3,8 @@ title: BoneJ
 description: Plugins for bone image analysis in ImageJ 
 categories: [Analysis, Mathematical Morphology, Particle Analysis]
 logo: /media/logos/bonej.png
-artifact: org.bonej:bonej-utilites
-doi:
-- 10.12688/wellcomeopenres.16619.1
-- 10.5281/zenodo.1427262
+artifact: org.bonej:bonej-plugins
+doi: 10.12688/wellcomeopenres.16619.1
 ---
 
 BoneJ is a collection of skeletal biology plug-ins for ImageJ. This documentation is for the current BoneJ version available through the ImageJ [updater](/plugins/updater). Legacy documentation is provided for old versions (1.x) at [bonej.org](https://bonej.org/).
@@ -257,9 +255,8 @@ A binary 3D image.
 #### Related publications
 Detailed discussion of EF usage and interpretation is included in the supplementary material of Felder et al. (2021), which uses EF to demonstrate that rod-to-plate transitions in osteoporosis are inconsistent at best, and much weaker when they appear than SMI data imply. A rationale for avoiding SMI and using EF instead, along with some early EF validation work, is in Salmon et al. (2015).
 
-> Felder A, Monzem S, Souza RD, Mills D, Boyde A, Doube M. (2021) *The plate-to-rod transition in trabecular bone loss is elusive*. Royal Society Open Science, 8:201401. [doi:10.1098/rsos.201401](https://doi.org/10.1098/rsos.201401).
-
-> Salmon PL, Ohlsson C, Shefelbine SJ, Doube M (2015), *Structure model index does not measure rods and plates in trabecular bone*, Frontiers in Endocrinology, 6:162, [doi:10.3389/fendo.2015.00162](https://doi.org/10.3389/fendo.2015.00162).
+- Felder A, Monzem S, Souza RD, Mills D, Boyde A, Doube M. (2021) *The plate-to-rod transition in trabecular bone loss is elusive*. Royal Society Open Science, 8:201401. [doi:10.1098/rsos.201401](https://doi.org/10.1098/rsos.201401).
+- Salmon PL, Ohlsson C, Shefelbine SJ, Doube M (2015), *Structure model index does not measure rods and plates in trabecular bone*, Frontiers in Endocrinology, 6:162, [doi:10.3389/fendo.2015.00162](https://doi.org/10.3389/fendo.2015.00162).
 
 ## Fit ellipsoid
 
