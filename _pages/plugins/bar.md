@@ -13,7 +13,7 @@ The collection contains [Macros](/scripting/macro), [Scripts](/scripting) and Pl
 
 ## Installation
 
-Run {% include bc path='Help|Update...'%} and choose *Manage update sites*. Activate the *BAR* checkbox in the alphabetically-sorted list of update sites. Press *OK*, then *Apply changes*. Restart ImageJ. That's it. Enjoy BAR!
+Run {% include bc path='Help|Update...'%} and choose {% include button label="Manage update sites" %}. Activate the *BAR* checkbox in the alphabetically-sorted list of update sites. Press {% include button label="OK" %}, then {% include button label="Apply changes" %}. Restart ImageJ. That's it. Enjoy BAR!
 
 ## Description
 
