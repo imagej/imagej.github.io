@@ -116,7 +116,7 @@ ImageJ is divided into three parts:
       </td>
     </tr>
     <tr>
-      <td style="text-align: center; vertical-align: top">
+      <td style="text-align: left; vertical-align: top">
         <p><span style="font-size: large"><strong>Core image data model</strong></span><br></p>
         <ul>
           <li>Extensible pixel types – not just uint8, uint16, float32</li>
@@ -126,7 +126,7 @@ ImageJ is divided into three parts:
           <li>Interface-driven design</li>
         </ul>
       </td>
-      <td style="text-align: center; vertical-align: top">
+      <td style="text-align: left; vertical-align: top">
         <p><span style="font-size: large"><strong>More general than images</strong></span><br></p>
         <ul>
           <li>Application container</li>
