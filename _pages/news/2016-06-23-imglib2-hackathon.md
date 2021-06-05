@@ -1,13 +1,20 @@
 ---
-mediawiki: 2016-06-23_-_ImgLib2_hackathon
 title: 2016-06-23 - ImgLib2 hackathon
 ---
 
-<img src="/media/news/janelia-2016-hackathon.jpg" title="fig:ImgLib2 hackers, from left to right: {% include person id='axtimwalde' %}, {% include person id='dietzc' %}, {% include person id='ctrueden' %}, {% include person id='tpietzsch' %}." width="450" alt="ImgLib2 hackers, from left to right: {% include person id='axtimwalde' %}, {% include person id='dietzc' %}, {% include person id='ctrueden' %}, {% include person id='tpietzsch' %}." /> From Sunday, June 19, 2016 through Tuesday, June 28, 2016, {% include person id='axtimwalde' %} at HHMI Janelia in Ashburn, Virginia hosted {% include person id='tpietzsch' %}, {% include person id='ctrueden' %} and {% include person id='dietzc' %} for a [hackathon](/events/hackathons) to improve the core [ImageJ2](/software/imagej2) data model.
+{% capture photocaption %}
+[ImgLib2](/libs/imglib2) hackers, from left to right: {% include person id='axtimwalde' %}, {% include person id='dietzc' %}, {% include person id='ctrueden' %}, {% include person id='tpietzsch' %}.
+{% endcapture %}
+
+{% include img align="right" src="/media/news/janelia-2016-hackathon.jpg" caption=photocaption width="450px" %} From Sunday, June 19, 2016 through Tuesday, June 28, 2016, {% include person id='axtimwalde' %} at HHMI Janelia in Ashburn, Virginia hosted {% include person id='tpietzsch' %}, {% include person id='ctrueden' %} and {% include person id='dietzc' %} for a [hackathon](/events/hackathons) to improve the core [ImageJ2](/software/imagej2) data model.
 
 ## Timeline
 
 The following chart illustrates when everyone was present:
+
+{% include img name="timeline" src="/media/news/imglib2-hackathon-timeline.png" %}
+
+<!-- The image above was rendered by MediaWiki. Original data, as converted, follows.
 
 <timeline> Preset = TimeHorizontal\_AutoPlaceBars\_UnitYear
 
@@ -64,6 +71,8 @@ PlotData=
 
 </timeline>
 
+-->
+
 And {% include person id='kephale' %} stopped by on the afternoon of the 23rd to discuss some issues for a bit.
 
 ## Discussions and progress
@@ -108,10 +117,10 @@ For the various use cases above (e.g., registration of tiles in a larger space),
 
 Current work on these data structures can be seen at:
 
--   https://github.com/imagej/imagej-common/compare/rich
+- [https://github.com/imagej/imagej-common/compare/rich](https://github.com/imagej/imagej-common/compare/rich)
 
 There is also an experimental repository for the hackathon at:
 
--   https://github.com/imagej/janelia-hackathon-2016
+- [https://github.com/imagej/janelia-hackathon-2016](https://github.com/imagej/janelia-hackathon-2016)
 
   

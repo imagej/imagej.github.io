@@ -1,5 +1,4 @@
 ---
-mediawiki: 2016-05-10_-_ImageJ_HOWTO_-_Java_8,_Java_6,_Java_3D
 title: 2016-05-10 - ImageJ HOWTO - Java 8, Java 6, Java 3D
 ---
 
@@ -9,6 +8,7 @@ However, at the moment, it is still possible to run a (slightly outdated now) ve
 
 ## Current recommendations and possibilities
 
+{::nomarkdown}
 <table>
 <tr>
   <th><a href="/software/imagej#flavors">Flavor</a></th>
@@ -19,14 +19,14 @@ However, at the moment, it is still possible to run a (slightly outdated now) ve
   <th style="width: 30%"><a href="/libs/java-3d" title="Java 3D">Java 3D</a></th>
 </tr>
 <tr>
-  <th rowspan="3"><a href="/software/fiji" title="/software/fiji"><img alt="/software/fiji" src="/media/icons/fiji.png" width="64" height="64" /></a></th>
-  <th>Java 8</th>
-  <th style="white-space: nowrap">
+  <td rowspan="3"><a href="/software/fiji" title="/software/fiji"><img alt="/software/fiji" src="/media/icons/fiji.png" width="64" height="64" /></a></td>
+  <td>Java 8</td>
+  <td style="white-space: nowrap">
   <p><a href="/media/icons/windows.svg"><img alt="/platforms/windows" src="/media/icons/windows.svg" width="32" height="32" /></a>
   <br><a href="/media/icons/macos.png"><img alt="macOS" src="/media/icons/macos.png" width="26" height="32" /></a>
   <br><a href="/media/icons/linux.svg"><img alt="/platforms/linux" src="/media/icons/linux.svg" width="32" height="32" /></a>
   </p>
-  </th>
+  </td>
   <td><b>Recommended.</b>
   <p><a href="/software/fiji/downloads" title="Fiji Downloads">Download the newest Fiji</a> for your platform. It comes bundled with Java 8, with the Java-8 update site enabled.
   </p>
@@ -37,12 +37,12 @@ However, at the moment, it is still possible to run a (slightly outdated now) ve
   </td>
 </tr>
 <tr>
-  <th rowspan="2">Java 6</th>
-  <th style="white-space: nowrap">
+  <td rowspan="2">Java 6</td>
+  <td style="white-space: nowrap">
   <p><a href="/media/icons/windows.svg"><img alt="/platforms/windows" src="/media/icons/windows.svg" width="32" height="32" /></a>
   <br><a href="/media/icons/linux.svg"><img alt="/platforms/linux" src="/media/icons/linux.svg" width="32" height="32" /></a>
   </p>
-  </th>
+  </td>
   <td>Download the final (2017-May-30) <a href="/software/fiji/downloads#java-6" title="Fiji Downloads">Java-6 version of Fiji</a>. It comes bundled with Java 6 and all platform launchers.
   </td>
   <td rowspan="2">Run <a href="/plugins/updater" title="/plugins/updater"><span><em><span style="border-bottom:1px dotted #ccc;">Help</span>&#160;&#8250; <span style="border-bottom:1px dotted #ccc;">Update...</span></em></span></a> to update to the latest Java-6-compatible version. Your Fiji will become outdated over time, stuck on the final Java-6-compatible plugin versions.
@@ -51,25 +51,25 @@ However, at the moment, it is still possible to run a (slightly outdated now) ve
   </td>
 </tr>
 <tr>
-  <th><a href="/media/icons/macos.png"><img alt="macOS" src="/media/icons/macos.png" width="26" height="32" /></a>
-  </th>
-  <td>Download the final (2017-May-30) <a href="/software/fiji/downloads#java-6" title="Fiji Downloads">Java-6 version of Fiji</a>. It is distributed <i>without</i> Java, so you must <a href="/learn/faq#how-do-i-set-up-java-6-on-os-x" title="Frequently Asked Questions">install Apple Java 6</a> on your system.
+  <td><a href="/media/icons/macos.png"><img alt="macOS" src="/media/icons/macos.png" width="26" height="32" /></a>
+  </td>
+  <td>Download the final (2017-May-30) <a href="/software/fiji/downloads#java-6" title="Fiji Downloads">Java-6 version of Fiji</a>. It is distributed <i>without</i> Java, so you must <a href="/learn/faq#how-do-i-set-up-java-6-on-macos" title="Frequently Asked Questions">install Apple Java 6</a> on your system.
   <ul>
   <li>If you have Java 7 and/or Java 8 installed, uninstall them—or else ImageJ will not use your Java 6 installation.</li>
   <li>Afterwards, <a href="/learn/troubleshooting#checking-the-java-version" title="/learn/troubleshooting">verify that Fiji is using Java 6</a>.</li>
   </ul>
   </td>
 </tr>
-<tr><td colspan="6"><hr></td></tr>
+<tr><td colspan="6"></td></tr>
 <tr>
-  <th rowspan="2"><a href="/software/imagej2" title="/software/imagej2"><img alt="/software/imagej2" src="/media/icons/imagej.png" width="64" height="64" /></a></th>
-  <th>Java 8</th>
-  <th style="white-space: nowrap">
+  <td rowspan="2"><a href="/software/imagej2" title="/software/imagej2"><img alt="/software/imagej2" src="/media/icons/imagej.png" width="64" height="64" /></a></td>
+  <td>Java 8</td>
+  <td style="white-space: nowrap">
   <p><a href="/media/icons/windows.svg"><img alt="/platforms/windows" src="/media/icons/windows.svg" width="32" height="32" /></a>
   <br><a href="/media/icons/macos.png"><img alt="macOS" src="/media/icons/macos.png" width="26" height="32" /></a>
   <br><a href="/media/icons/linux.svg"><img alt="/platforms/linux" src="/media/icons/linux.svg" width="32" height="32" /></a>
   </p>
-  </th>
+  </td>
   <td>
   <p>
   <a href="/downloads" title="/downloads">Download the newest ImageJ</a> for your platform. It comes bundled <i>without</i> Java, and <i>without</i> the Java-8 update site enabled.
@@ -82,14 +82,14 @@ However, at the moment, it is still possible to run a (slightly outdated now) ve
   </td>
 </tr>
 <tr>
-  <th rowspan="2">Java 6</th>
-  <th style="white-space: nowrap">
+  <td rowspan="2">Java 6</td>
+  <td style="white-space: nowrap">
   <p>
   <a href="/media/icons/windows.svg"><img alt="/platforms/windows" src="/media/icons/windows.svg" width="32" height="32" /></a>
   <br><a href="/media/icons/macos.png"><img alt="macOS" src="/media/icons/macos.png" width="26" height="32" /></a>
   <br><a href="/media/icons/linux.svg"><img alt="/platforms/linux" src="/media/icons/linux.svg" width="32" height="32" /></a>
   </p>
-  </th>
+  </td>
   <td>It is possible to set up a "plain" ImageJ2 with Java 6, but <b>not recommended</b>:
   <ul>
   <li>Set up <a href="/software/fiji">Fiji</a> + Java 6 as described above.</li>
@@ -99,20 +99,13 @@ However, at the moment, it is still possible to run a (slightly outdated now) ve
   </ul>
   </td>
 </tr>
-<tr><td colspan="6"><hr></td></tr>
+<tr><td colspan="6"></td></tr>
 <tr>
 <td><a href="/software/imagej1" title="/software/imagej1"><img alt="/software/imagej1" src="/media/icons/imagej1.png" width="64" height="64" /></a>
 </td>
 <td colspan="5">See the <a href="download.html">ImageJ 1.x downloads page</a> for instructions.
 </td></tr></table>
-<h2><span class="mw-headline" id="Upgrading_an_old_installation">Upgrading an old installation</span></h2>
-<p>If you have downloaded Fiji or ImageJ2 quite some time ago (before 2016), you probably have the Java 6 version (<a href="/learn/troubleshooting#checking-the-java-version" title="/learn/troubleshooting">how do I find out?</a>). So when you update, you will not receive the latest plugin releases anymore, as described above.
-</p>
-<ul><li>If you <b>still need Java 6, do nothing.</b>
-<ul><li>For now, you will keep receiving updates of <a href="/software/imagej1" class="mw-redirect" title="ImageJ 1.x">ImageJ 1.x</a>.</li>
-<li>But you will no longer receive updates for most ImageJ2 or Fiji components—they have all migrated to Java 8.</li></ul></li>
-<li>If you <b>want the latest updates</b>, <a href="/learn/faq#how-do-i-launch-imagej-with-a-different-version-of-java" class="mw-redirect" title="/learn/faq">update your ImageJ installation to use Java 8</a> and then <a href="/update-sites/following" class="mw-redirect" title="How to follow a 3rd party update site">enable the Java-8 update site</a>.
-<ul><li><b>Make sure you switch your ImageJ over to Java 8 <i>before</i> enabling the Java-8 update site!</b></li></ul></li></ul>
+{:/}
 
 ## Upgrading an old installation
 
@@ -123,9 +116,10 @@ If you have downloaded Fiji or ImageJ2 quite some time ago (before 2016), you pr
     -   But you will no longer receive updates for most ImageJ2 or Fiji components—they have all migrated to Java 8.
 -   If you **want the latest updates**, [update your ImageJ installation to use Java 8](/learn/faq#how-do-i-launch-imagej-with-a-different-version-of-java) and then [enable the Java-8 update site](/update-sites/following).
     -   **Make sure you switch your ImageJ over to Java 8 *before* enabling the Java-8 update site!**
-Alternately, you can simply download a new Fiji as described above.
 
 {% include notice icon="warning" content='If you enable the Java-8 update site while still running Java 6, your installation will become non-functional!' %}
+
+Alternately, you can simply download a new Fiji as described above.
 
 ## About the Java-8 update site
 

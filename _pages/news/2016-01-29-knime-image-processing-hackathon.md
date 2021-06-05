@@ -1,5 +1,4 @@
 ---
-mediawiki: 2016-01-29_-_KNIME_Image_Processing_hackathon
 title: 2016-01-29 - KNIME Image Processing hackathon
 ---
 
@@ -8,6 +7,10 @@ From Monday, January 11, 2016 through Friday, January 22, 2016, {% include perso
 ## Timeline
 
 The following chart illustrates when everyone was present:
+
+{% include img name="timeline" src="/media/news/knime-hackathon-timeline.png" %}
+
+<!-- The above rendered image was copied from the old MediaWiki. Original timeline data, as converted, follows.
 
 <timeline> Preset = TimeHorizontal\_AutoPlaceBars\_UnitYear
 
@@ -116,6 +119,8 @@ PlotData=
 
 </timeline>
 
+-->
+
 ## Hackathon progress
 
 ### Mark Hiner
@@ -123,7 +128,7 @@ PlotData=
 -   Wrote a guide for developers ([Automatic Update Site Uploads](/update-sites/automatic-uploads)) on how to automatically upload to their update site via Travis
 -   Proof-of-concept'd restoring the Add Imports functionality to the script editor ({% include github org='imagej' repo='imagej-ui-swing' pr='67' label='imagej/imagej-ui-swing\#67' %})
 -   Added Renjin-flavored R scripting to ImageJ ({% include github org='scijava' repo='scripting-renjin' label='scijava/scripting-renjin' %})
--   Got the Fiji downloads migrated to Java 8 bundles (see [/downloads](/downloads))
+-   Got the Fiji downloads migrated to Java 8 bundles (see [Downloads](/downloads))
 -   Furthered development of the Ops Browser ({% include github org='imagej' repo='imagej-ui-swing' issue='60' label='imagej/imagej-ui-swing\#60' %}), including:
     -   Tailored User/Developer views
     -   Fuzzy filtering for Ops
@@ -152,7 +157,7 @@ PlotData=
     -   Fixed [SCIFIO](/libs/scifio) bug with DICOM format, noticed by {% include person id='kmader' %} ({% include github org='scifio' repo='scifio' pr='292' label='dicom-file-list-npe' %})
     -   Fixed bug when executing ops as commands, noticed by {% include person id='kephale' %} ({% include github org='imagej' repo='imagej-ops' commit='34b5523dfc051741a9ed69d2b5b9f97df24f2677' label='ops-as-commands' %})
     -   Investigated SJC bug in class loading, noticed by {% include person id='EikeHeinz' %}, but no solution yet ({% include github org='scijava' repo='scijava-common' issue='219' label='scijava/scijava-common\#219' %})
-    -   Fixed Eclipse configuration to run enforcer only upon initial configuration ({% include github org='scijava' repo='pom-scijava' commit='022a7bea5ebbc5b81ffae7386a26eea8f8677e3f scijava/pom-scijava@022a7bea' %})
+    -   Fixed Eclipse configuration to run enforcer only upon initial configuration (scijava/pom-scijava@022a7bea {% include github org='scijava' repo='pom-scijava' commit='022a7bea5ebbc5b81ffae7386a26eea8f8677e3f' %})
 
 <!-- -->
 
@@ -199,10 +204,10 @@ PlotData=
 
 -   reviewed, augmented and merged {% include person id='tinevez' %} YAML serialization for {% include github org='scijava' repo='ui-behaviour' label='ui-behaviour' %}.
 -   moved {% include github org='scijava' repo='ui-behaviour' label='ui-behaviour' %} to the scijava org and set up jenkins jobs with {% include person id='ctrueden' %}, and released 1.0.0.
--   fixed memory leak in BigDataViewer ([1](https://github.com/bigdataviewer/bigdataviewer-core/pull/17)).
+-   fixed memory leak in BigDataViewer ([\[1\]](https://github.com/bigdataviewer/bigdataviewer-core/pull/17)).
 -   worked on factor graph library for tracking/segmentation formulations with {% include person id='fjug' %}.
--   reviewed and merged imglib2 PRs [2](https://github.com/imglib/imglib2/pull/117), [3](https://github.com/imglib/imglib2/pull/116), [4](https://github.com/imglib/imglib2/pull/114), [5](https://github.com/imglib/imglib2/pull/113), [6](https://github.com/imglib/imglib2/pull/111), [7](https://github.com/imglib/imglib2-realtransform/pull/3), [8](https://github.com/imglib/imglib2-realtransform/pull/2).
--   unified naming of "source" and "target" in imglib2 Views and RealViews [9](https://github.com/imglib/imglib2-realtransform/pull/4).
+-   reviewed and merged imglib2 PRs [\[2\]](https://github.com/imglib/imglib2/pull/117), [\[3\]](https://github.com/imglib/imglib2/pull/116), [\[4\]](https://github.com/imglib/imglib2/pull/114), [\[5\]](https://github.com/imglib/imglib2/pull/113), [\[6\]](https://github.com/imglib/imglib2/pull/111), [\[7\]](https://github.com/imglib/imglib2-realtransform/pull/3), [\[8\]](https://github.com/imglib/imglib2-realtransform/pull/2).
+-   unified naming of "source" and "target" in imglib2 Views and RealViews [\[9\]](https://github.com/imglib/imglib2-realtransform/pull/4).
 -   investigated imglib2 PlanarImg bug with {% include person id='dietzc' %} and {% include person id='kephale' %}.
 
 ### Stefan Helfrich
