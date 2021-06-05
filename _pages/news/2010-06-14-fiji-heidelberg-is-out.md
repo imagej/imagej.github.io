@@ -162,7 +162,7 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 -   The [Fiji Updater](/plugins/updater) offers to update Java on Windows and Linux in the Advanced Mode, thanks to one of the rare less-exciting talks at the ELMI meeting.
 
--   The [Java WebStart](https://fiji.sc/webstart/Fiji.jnlp) generator was fixed, and is now run every night.
+-   The Java WebStart generator was fixed, and is now run every night.
 
 -   The [SPIM Registration](/plugins/spim-registration) plugin was added, offering multi-angle registration and reconstruction typically needed in Selective Plane Illumination Microscopy (thanks to Stephan Preibisch, Stephan Saalfeld and Pavel Tomancak).
 
@@ -178,7 +178,7 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 -   There are two nightly builds, one including all the submodules, and the other to make sure that Fiji builds using Java 5 (which we are stuck to, because there will not be any Java 6 for MacOSX 10.4, or for 32-bit MacOSX 10.5).
 
--   The [full javadocs](https://fiji.sc/javadoc/) are built after the nightly build.
+-   The [full javadocs](https://javadoc.scijava.org/Fiji/) are built after the nightly build.
 
 -   Developers can upload new plugins or updates from the [Fiji Updater](/plugins/updater) GUI, if they have the write permissions on the server (includes bug fixes by Mark Longair).
 
@@ -196,7 +196,7 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 -   The [Script Editor](/scripting/script-editor) recognizes exceptions thrown during the execution of a script and offers to jump to the next/previous location in the stacktrace.
 
--   You can ask the [Script Editor](/scripting/script-editor) to open the [JavaDoc](https://fiji.sc/javadoc/) for a given class using {% include bc path='Tools | Open Help on Class...'%}
+-   You can ask the [Script Editor](/scripting/script-editor) to open the [JavaDoc](https://javadoc.scijava.org/) for a given class using {% include bc path='Tools | Open Help on Class...'%}
 
 -   The [WEKA library](/develop/using-weka) is now part of Fiji; the {% include github org='fiji' repo='fiji-compat' branch='master' source='fiji/FijiClassLoader.java' label='FijiClassLoader' %} is now an instance of URLClassLoader just because of that (thanks for Verena Kaynig, Albert Cardona and Ignacio Arganda-Carreras for the prodding).
 
@@ -226,7 +226,7 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 -   You can make your own "View on Fiji Development" movie, as seen on our [YouTube channel](http://youtube.com/fijichannel), using the combined-gource-video.bsh script (requires {% include github org='dscho' repo='Gource' label='Gource' %}).
 
--   The [VIB](/plugins/vib-protocol) sources were moved from a submodule directly into [fiji.git](https://fiji.sc/fiji.git).
+-   The [VIB](/plugins/vib-protocol) sources were moved from a submodule directly into `fiji.git`.
 
 -   The sources for plugins and libraries are now expected to live either in submodules, or in `src-plugins/<name>/<package>/<class-name>.java`, where `<name>` is the base name of the resulting *.jar* file.
 
