@@ -9,7 +9,7 @@ ImageJ has been extended with thousands of {% include wikipedia title='Plug-in (
 
 ## Available plugins
 
-{% include notice icon='info' size='large' content='You can browse the [list of available plugins](/plugin-index).' %}
+{% include notice icon='info' size='large' content='You can browse the [list of available ImageJ extensions](/list-of-extensions).' %}
 
 ## Tiers of plugins
 

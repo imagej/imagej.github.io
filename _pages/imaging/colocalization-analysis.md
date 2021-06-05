@@ -91,7 +91,7 @@ Due to the unique nature of single-molecule localization microscopy images, as a
 
 ## Plugins for colocalization
 
-There are several plugins available for performing colocalization analysis. In addition to the options described below, see also the [index of pages related to colocalization](/plugin-index#colocalization).
+There are several plugins available for performing colocalization analysis. In addition to the options described below, see also the [list of extensions](/list-of-extensions) Colocalization category.
 
 ### List of plugins by method type
 

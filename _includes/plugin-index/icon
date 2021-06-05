@@ -1,4 +1,0 @@
-<img src="{{page.icon}}" height=25>
-{%- comment -%}
-# vi:syntax=liquid
-{%- endcomment -%}

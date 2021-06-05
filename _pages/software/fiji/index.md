@@ -8,7 +8,7 @@ doi: 10.1038/nmeth.2019
 
 [Fiji](https://fiji.sc/) is an image processing package—a "batteries-included" distribution of [ImageJ](/software/imagej), bundling a lot of plugins which facilitate scientific image analysis.
 
--   **For users** - Fiji is [easy to install](/software/fiji/downloads) and has an automatic update function, bundles a [lot of plugins](/plugin-index) and offers comprehensive [documentation](/learn).
+-   **For users** - Fiji is [easy to install](/software/fiji/downloads) and has an automatic update function, bundles a [lot of plugins](/list-of-extensions) and offers comprehensive [documentation](/learn).
 -   **For developers** - Fiji is an open source project hosted in a [Git](/develop/git) version control {% include github repo='fiji' label='repository' %}, with access to the source code of all internals, libraries and plugins, and eases the [development](/develop) and [scripting](/scripting) of plugins.
 
 ## Downloads

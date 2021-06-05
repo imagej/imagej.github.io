@@ -16,7 +16,7 @@ categories: [Uncategorized]
 {% capture source%}
 {% include github org='morphonets' %}
 {% endcapture %}
-{% include info-box software='Fiji' name='Neuroanatomy update site' author=author maintainer=maintainer source=source status='Active' category='Plugins, Analysis, Neuroanatomy' %} The Neuroanatomy update site is used for distribution of [SNT](/plugins/snt). A few other (legacy) plugins for *Image Processing for NeuroAnatomy and Tree-like Structures* are also included. For a list of all pages in this wiki related to Neuroanatomy have a look at [Neuroanatomy](/plugin-index#neuroanatomy).
+{% include info-box software='Fiji' name='Neuroanatomy update site' author=author maintainer=maintainer source=source status='Active' category='Plugins, Analysis, Neuroanatomy' %} The Neuroanatomy update site is used for distribution of [SNT](/plugins/snt). A few other (legacy) plugins for *Image Processing for NeuroAnatomy and Tree-like Structures* are also included.
 
 # Installation
 
@@ -112,4 +112,4 @@ SNT has its own [documentation](/plugins/snt). The list of *Image Processing for
 
 # Further information
 
--   A list of all pages in this wiki related to image processing in the neurosciences can be found [here](/plugin-index#neuroanatomy).
+-   A list of all ImageJ extensions related to the neurosciences can be found on the [list of extensions](/list-of-extensions) page, by filtering to the Neuroanatomy category.

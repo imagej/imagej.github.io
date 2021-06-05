@@ -120,7 +120,7 @@ section: Contribute
 
 See also the [Image.sc Forum heroes](https://forum.image.sc/u?period=yearly).
 
-See [each individual plugin page](/plugin-index)
+See [each individual plugin page](/list-of-extensions)
 for details on that plugin's maintainers.
 
 ### Special thanks

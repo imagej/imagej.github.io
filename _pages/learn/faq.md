@@ -411,7 +411,7 @@ Please feel free to enhance the Wiki! We are thankful for all contributions!
 
 ## How do I find more information about Command X?
 
-The first place to check is this wiki. The [Fiji's Menu](/plugin-index) page is especially helpful as it includes links to all the menu commands that ship as part of Fiji.
+Try searching for the command in [ImageJ's search bar](/learn#the-search-bar), and clicking the {% include button label="Help" %} button. Alternately, check this wiki: you can use its search bar above, or visit the [list of extensions](/list-of-extensions) page, which includes links to many documentation pages of ImageJ's various extensions.
 
 If documentation is missing for the command you're interested in, you can always view the source directly:
 

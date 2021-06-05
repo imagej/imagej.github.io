@@ -190,7 +190,7 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 -   The [Script Editor](/scripting/script-editor) can make .jar files from .java plugins now.
 
--   The [Script Editor](/scripting/script-editor) can build and launch [Fiji plugins](/plugin-index) from `$FIJI_ROOT/src-plugins/<name>/` now.
+-   The [Script Editor](/scripting/script-editor) can build and launch [plugins](/plugins) from `$FIJI_ROOT/src-plugins/<name>/` now.
 
 -   The [Script Editor](/scripting/script-editor) recognizes errors from the Java compiler and offers to jump to the location of the next/previous error.
 

@@ -470,7 +470,7 @@ CSIMLab :: plugins/csim-lab
 Calc_dSpace :: plugins/calc-dspace
 Calculator_Plus :: plugins/calculator-plus
 Calibrate_SCANCO :: plugins/bonej#calibrate-scanco-wip
-Category:* :: plugin-index
+Category:* :: list-of-extensions
 Category:Status :: events/news
 Category:Techniques :: imaging
 Category:Tutorials :: tutorials
@@ -720,7 +720,7 @@ Feature_Extraction :: plugins/feature-extraction
 Featured_Fiji_Projects :: software/fiji/featured-projects
 FigureJ :: plugins/figurej
 Fiji :: software/fiji
-Fiji's_Menu :: plugin-index
+Fiji's_Menu :: list-of-extensions
 Fiji.sc :: contribute/funding
 Fiji/Build_System :: develop
 Fiji/Cite :: contribute/citing
@@ -1933,7 +1933,7 @@ User:Pedgomgal1 :: people/Pedgomgal1
 User:PhotonImaging :: plugins/photon-imaging
 User:Pietzsch :: people/tpietzsch
 User:PillarTracker :: plugins/pillartracker
-User:PluginListBot :: plugin-index
+User:PluginListBot :: list-of-extensions
 User:Pmarks :: people/pcmarks
 User:Pmoravec :: people/fiji-hpc
 User:Rasband :: people/rasband
