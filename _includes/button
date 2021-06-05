@@ -1,4 +1,4 @@
-<button disabled>{{include.label}}</button>
+<span class="app-button">{{include.label}}</span>
 
 {%- comment -%}
 # vi:syntax=liquid
