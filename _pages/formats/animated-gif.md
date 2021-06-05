@@ -14,8 +14,6 @@ Done!
 
 **PS.** in order to include overlays in the animated gif, such as ROI or scale bar overlays, these must first be converted to pixel data by flattening the image.
 
-1.  Go to menu {% include bc path='Image | Overlay | Flatten'%}
+1.  Go to menu {% include bc path='Image | Overlay | Flatten' %}
 
-or use `Ctrl+Shift+F`.
-
- 
+or use {% include key keys='Ctlcmd|Shift|F' %}.

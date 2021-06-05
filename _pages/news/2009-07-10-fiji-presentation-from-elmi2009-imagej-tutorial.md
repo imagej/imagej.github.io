@@ -14,7 +14,4 @@ During those tutorials, several Fiji Wiki page tutorials were used, which were c
 
 Some other tutorial are also already present there.
 
-We encourage everyone to add more tutorials: Simply create a page, fill it with tutorial content, and make sure to add the \[\[Category:Tutorials\]\] tag to the bottom of the page, so it appears in the tutorial category, which can be found [here](/plugin-index#tutorials).
-
-{% include notice content="This is a historic news item. See current [wiki
-editing instructions](/editing)." %}
+We encourage everyone to add more tutorials: Simply create a page in the `/tutorials` folder, and fill it with tutorial content, so it appears in the [tutorials on this site](/tutorials#tutorials-on-this-site).

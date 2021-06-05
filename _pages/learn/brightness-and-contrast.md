@@ -2,13 +2,13 @@
 title: Brightness and Contrast
 ---
 
-{% include notice icon="info" content="This page refers to the version of [ImageJ2](/software/imagej2) currently in development. For more information on using [Fiji](/software/fiji) and [ImageJ 1.x](/software/imagej1), please reference the [Fiji tutorials](/plugin-index#tutorials) and [ImageJ 1.x documentation](https://imagej.nih.gov/ij/docs/)." %}
+{% include notice icon="info" content="This page refers to the version of [ImageJ2](/software/imagej2) currently in development. For more information on using [Fiji](/software/fiji) and [ImageJ 1.x](/software/imagej1), please reference the [tutorials](/tutorials) and [ImageJ 1.x documentation](https://imagej.nih.gov/ij/docs/)." %}
 
 This tool may be used to adjust the brightness and contrast of an active image.
 
 ## Usage
 
-The Brightness and Contrast tool may be accessed through {% include bc path='Image | Adjust | Brightness/Contrast'%} or {% include key keys='Ctrl|Shift|C' %}.
+The Brightness and Contrast tool may be accessed through {% include bc path='Image | Adjust | Brightness/Contrast'%} or {% include key keys='Ctlcmd|Shift|C' %}.
 
 {% include img src="brightness-contrast-window" width="266" height="177" align="right" %}
 
