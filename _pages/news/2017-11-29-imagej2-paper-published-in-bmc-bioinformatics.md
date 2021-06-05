@@ -1,5 +1,4 @@
 ---
-mediawiki: 2017-11-29_-_ImageJ2_paper_published_in_BMC_Bioinformatics
 title: 2017-11-29 - ImageJ2 paper published in BMC Bioinformatics
 ---
 

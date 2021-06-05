@@ -1,9 +1,8 @@
 ---
-mediawiki: 2017-05-24_-_Living_Workshops_video_recording_now_available
 title: 2017-05-24 - Living Workshops video recording now available
 ---
 
-Video recordings of our [Introduction to Fiji](/presentations/fiji-introduction/#/), [Segmentation in Fiji](/presentations/fiji-segmentation/#/), and [Scripting with Fiji](/presentations/fiji-scripting/#/) workshops are now available. You can find the links to both the slides and the videos from the [Presentations](/events/presentations) page of the wiki.
+Video recordings of our [Introduction to Fiji, Segmentation in Fiji, and Scripting with Fiji workshops](/events/presentations#living-workshops) are now available. You can find the links to both the slides and the videos from the [Presentations](/events/presentations) page of the wiki.
 
 Feel free to pass along these links to those who may find them helpful.
 

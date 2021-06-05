@@ -1,5 +1,4 @@
 ---
-mediawiki: 2017-12-29_-_ImageJ2_and_Fiji_updated_-_now_with_search_bar!
 title: 2017-12-29 - ImageJ2 and Fiji updated - now with search bar!
 ---
 
@@ -7,7 +6,7 @@ Just in time for the new year, we are proud to announce a new release of [ImageJ
 
 The most significant improvement is a new search bar integrated with the main ImageJ window:
 
-<img src="/media/search-bar.png" width="600"/>
+{% include img src="/media/search-bar.png" width="600px" %}
 
 In this initial incarnation, the search bar finds commands, and can search the ImageJ wiki as well as the [ImageJ Forum](http://forum.imagej.net/) if you check those respective checkboxes.
 

@@ -1,23 +1,22 @@
 ---
-mediawiki: 2017-12-04_-_Fiji_+_KNIP_hackathon
 title: 2017-12-04 - Fiji + KNIP hackathon
 ---
 
 From Monday, December 4, 2017 through Friday, December 15, 2017, the [Max Planck Institute of Molecular Cell Biology and Genetics](https://mpi-cbg.de/) hosts \~50 developers at the [Center for Systems Biology](http://www.csbdresden.de/) in Dresden, Germany for a [hackathon](/events/hackathons) to develop [ImageJ2](/software/imagej2) and [Fiji](/software/fiji) core infrastructure and [plugins](/plugins).
 
-https://gitter.im/fiji/hackathon_dd_2017
+[https://gitter.im/fiji/hackathon\_dd\_2017](https://gitter.im/fiji/hackathon_dd_2017)
 
 ## Voluntary hackathon calendar
 
-https://tinyurl.com/ybjcq9qw
+[https://tinyurl.com/ybjcq9qw](https://tinyurl.com/ybjcq9qw)
 
 ## Hackathon google doc
 
-https://docs.google.com/document/d/1h4uCt4PAEdeGQQwwVZC73o_Anq6-AI2KZiSzxY8kWng/edit
+[https://docs.google.com/document/d/1h4uCt4PAEdeGQQwwVZC73o\_Anq6-AI2KZiSzxY8kWng/edit](https://docs.google.com/document/d/1h4uCt4PAEdeGQQwwVZC73o_Anq6-AI2KZiSzxY8kWng/edit)
 
 ## Hackathon on Twitter (\#hackdd17)
 
-https://twitter.com/hashtag/hackdd17?vertical=default&src=hash
+[https://twitter.com/hashtag/hackdd17?vertical=default&src=hash](https://twitter.com/hashtag/hackdd17?vertical=default&src=hash)
 
 ## Technical Discussions
 
@@ -26,7 +25,7 @@ https://twitter.com/hashtag/hackdd17?vertical=default&src=hash
 For more info on N5, check out the github repository [here](https://github.com/saalfeldlab/n5/).
 
 -   feels like HDF5, but stores chunks(blocks) in separate files in the file system.
--   is a Java library, but Constantin Pape already wrote a C++/python version of it: z5 (also matches "zarr" library), https://github.com/constantinpape/z5
+-   is a Java library, but Constantin Pape already wrote a C++/python version of it: z5 (also matches "zarr" library), [https://github.com/constantinpape/z5](https://github.com/constantinpape/z5)
 -   attributes are stored in an additional JSON file
 -   Discussion: should we define standard now as to how data should be stored in there to prevent an emergence of a zoo of different flavors as there is for HDF5?
     -   how to do time series where each timestep / angle could have different image size
@@ -45,7 +44,7 @@ For more info on N5, check out the github repository [here](https://github.com/s
 
 ### BigDataViewer
 
--   There is a fork of BigDataViewer for JavaFx. [1](https://github.com/hanslovsky/bigdataviewer-core/tree/bigcat-javafx)
+-   There is a fork of BigDataViewer for JavaFx. \[[1](https://github.com/hanslovsky/bigdataviewer-core/tree/bigcat-javafx)\]
 -   BigDataViewer will be splitted into a UI independent part, and the Swing UI. This will make it possible to merge the JavaFx and Swing Version of BigDataViewer .
 
 We discussed opportunities to improvement for the Bdv design:
@@ -64,8 +63,8 @@ We discussed opportunities to improvement for the Bdv design:
 
 ### Matrix and Vector libraries
 
--   Discussion notes: https://docs.google.com/document/d/12a_9AhFMJywm7y-SfZHuWB5cXwEkpCGt03Sxq8JVfMI/edit
--   Compared different matrix and vector libaries: https://github.com/imglib/imglib2-matrix-shootout
+-   Discussion notes: [https://docs.google.com/document/d/12a_9AhFMJywm7y-SfZHuWB5cXwEkpCGt03Sxq8JVfMI/edit](https://docs.google.com/document/d/12a_9AhFMJywm7y-SfZHuWB5cXwEkpCGt03Sxq8JVfMI/edit)
+-   Compared different matrix and vector libaries: [https://github.com/imglib/imglib2-matrix-shootout](https://github.com/imglib/imglib2-matrix-shootout)
 -   Conclusion:
     -   use ojAlgo for N-D matrix operations
     -   vector3 and vector4 is a complicated conclusion. probably use mastodon and JOML
@@ -81,7 +80,7 @@ We discussed opportunities to improvement for the Bdv design:
 
 ### ilastik - (Dominik Kutra, Carsten Haubold)
 
--   developed an ImageJ2 plugin that allows to stream raw data and predictions from the *work in progress* ilastik processing backend: https://github.com/ilastik/org.ilastik.bdvsource
+-   developed an ImageJ2 plugin that allows to stream raw data and predictions from the *work in progress* ilastik processing backend: [https://github.com/ilastik/org.ilastik.bdvsource](https://github.com/ilastik/org.ilastik.bdvsource)
 -   discussed with Philipp Hanslovsky about the benefits of using the N5 format for communication
     -   the label block format together with the fact that datasets can be stored sparse could be a great foundation for label storage / communication
     -   played around with [Constantin Pape's C++/Python N5](https://github.com/constantinpape/z5) reader as available format on the [ilastik server](https://github.com/ilastik/ilastik/tree/apistar-add-n5)
@@ -223,6 +222,6 @@ We discussed opportunities to improvement for the Bdv design:
 
 ### TrackMate & MaMuT (Ulrik Günther, Kyle Harrington, Jean-Yves Tinevez)
 
--   Prototype of a 3D viewer for [TrackMate](/plugins/trackmate) and [MaMuT](/plugins/mamut) based on [SciView](/plugins/sciview) and [Scenery](Scenery).
+-   Prototype of a 3D viewer for [TrackMate](/plugins/trackmate) and [MaMuT](/plugins/mamut) based on [SciView](/plugins/sciview) and [Scenery](https://github.com/scenerygraphics/scenery).
 
 

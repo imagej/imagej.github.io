@@ -1,5 +1,4 @@
 ---
-mediawiki: 2017-09-25_-_KNIME_Image_Processing_hackathon
 title: 2017-09-25 - KNIME Image Processing hackathon
 ---
 
