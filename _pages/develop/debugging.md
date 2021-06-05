@@ -5,7 +5,7 @@ section: Extend:Development
 ---
 
 
- {% include notice icon="info" content='This page has approaches for *software developers* to use for debugging ImageJ.  
+ {% include notice icon="info" content='This page has approaches for *software developers* to use for debugging ImageJ.
 If you are a *user* looking to troubleshoot issues, see the [Troubleshooting](/learn/troubleshooting) page.' %}
 
 # Launching ImageJ in debug mode
@@ -16,13 +16,15 @@ To debug problems with ImageJ, it is often helpful to launch it in debug mode. S
 
 To debug a plugin in an IDE, you most likely need to provide a *main()* method. To make things easier, we provide helper methods in *fiji-lib* in the class *fiji.Debug* to run plugins, and to load images and run filter plugins:
 
-    import fiji.Debug;
+```java
+import fiji.Debug;
 
-    ...
+...
 
-    public void main(String[] args) {
-        Debug.runFilter("/home/clown/my-profile.jpg", "Gaussian Blur", "radius=2");
-    }
+public void main(String[] args) {
+    Debug.runFilter("/home/clown/my-profile.jpg", "Gaussian Blur", "radius=2");
+}
+```
 
 You need to replace the first argument by a valid path to a sample image and the second argument by the name of your plugin (typically the class name with underscores replaced by spaces).
 
@@ -179,17 +181,17 @@ After acquiring a heap dump, you can analyze it yourself, e.g. with a [memory an
 
 This requires two separate processes, ImageJ itself and the debugger. You can do this either in one shell, backgrounding the first process or in two shells, this is recommended. In the two shells do the following:
 
-Shell 1  
+Shell 1
 In the first shell, start ImageJ with special parameters to open a port (8000 in this case) to which jdb can connect afterwards:
 
 <!-- -->
 
     ./imagej -Xdebug -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=y --
 
-  
+
 (Tested with Java 1.5.0, ymmv)
 
-Shell 2  
+Shell 2
 In the second shell, tell jdb to attach to that port:
 
 <!-- -->
@@ -217,72 +219,74 @@ Okay, so here you go, a little demonstration:
 
 (If you attach jdb to a running ImageJ process, you have to use the line from the previous section instead.)
 
-`$ jdb -classpath ij.jar ij.ImageJ`  
-`> stop in ij.ImageJ.main`  
-`Deferring breakpoint ij.ImageJ.main.`  
-`It will be set after the class is loaded.`  
-`> run`  
-`run ij.ImageJ`  
-`Set uncaught java.lang.Throwable`  
-`Set deferred uncaught java.lang.Throwable`  
-`>`  
-`VM Started: Set deferred breakpoint ij.ImageJ.main`  
-  
-`Breakpoint hit: "thread=main", ij.ImageJ.main(), line=466 bci=0`  
-  
-`main[1] use .`  
-`main[1] list`  
-`462             //prefs.put(IJ_HEIGHT, Integer.toString(size.height));`  
-`463     }`  
-`464`  
-`465     public static void main(String args[]) {`  
-`466 =>          if (System.getProperty("java.version").substring(0,3).compareTo("1.4")<0) {`  
-`467                     javax.swing.JOptionPane.showMessageDialog(null,"ImageJ "+VERSION+" requires Java 1.4.1 or later.");`  
-`468                     System.exit(0);`  
-`469             }`  
-`470             boolean noGUI = false;`  
-`471             arguments = args;`  
-`main[1] print args[0]`  
-`java.lang.IndexOutOfBoundsException: Invalid array range: 0 to 0`  
-` args[0] = null`  
-`main[1] print args.length`  
-` args.length = 0`  
-`main[1] step`  
-`>`  
-`Step completed: "thread=main", ij.ImageJ.main(), line=470 bci=28`  
-`470             boolean noGUI = false;`  
-  
-`main[1] step`  
-`>`  
-`Step completed: "thread=main", ij.ImageJ.main(), line=471 bci=30`  
-`471             arguments = args;`  
-  
-`main[1] set noGUI = true`  
-` noGUI = true = true`  
-`main[1] cont`  
-`>`  
+`$ jdb -classpath ij.jar ij.ImageJ`
+`> stop in ij.ImageJ.main`
+`Deferring breakpoint ij.ImageJ.main.`
+`It will be set after the class is loaded.`
+`> run`
+`run ij.ImageJ`
+`Set uncaught java.lang.Throwable`
+`Set deferred uncaught java.lang.Throwable`
+`>`
+`VM Started: Set deferred breakpoint ij.ImageJ.main`
+
+`Breakpoint hit: "thread=main", ij.ImageJ.main(), line=466 bci=0`
+
+`main[1] use .`
+`main[1] list`
+`462             //prefs.put(IJ_HEIGHT, Integer.toString(size.height));`
+`463     }`
+`464`
+`465     public static void main(String args[]) {`
+`466 =>          if (System.getProperty("java.version").substring(0,3).compareTo("1.4")<0) {`
+`467                     javax.swing.JOptionPane.showMessageDialog(null,"ImageJ "+VERSION+" requires Java 1.4.1 or later.");`
+`468                     System.exit(0);`
+`469             }`
+`470             boolean noGUI = false;`
+`471             arguments = args;`
+`main[1] print args[0]`
+`java.lang.IndexOutOfBoundsException: Invalid array range: 0 to 0`
+` args[0] = null`
+`main[1] print args.length`
+` args.length = 0`
+`main[1] step`
+`>`
+`Step completed: "thread=main", ij.ImageJ.main(), line=470 bci=28`
+`470             boolean noGUI = false;`
+
+`main[1] step`
+`>`
+`Step completed: "thread=main", ij.ImageJ.main(), line=471 bci=30`
+`471             arguments = args;`
+
+`main[1] set noGUI = true`
+` noGUI = true = true`
+`main[1] cont`
+`>`
 `The application exited`
 
 # Inspecting serialized objects
 
 If you have a file with a serialized object, you can use this Beanshell in the [Script Editor](/scripting/script-editor) to open a tree view of the object (double-click to open/close the branches of the view):
 
-    import fiji.debugging.Object_Inspector;
+```java
+import fiji.debugging.Object_Inspector;
 
-    import ij.io.OpenDialog;
+import ij.io.OpenDialog;
 
-    import java.io.FileInputStream;
-    import java.io.ObjectInputStream;
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
 
-    dialog = new OpenDialog("Classifier", null);
-    if (dialog.getDirectory() != null) {
-        path = dialog.getDirectory() + "/" + dialog.getFileName();
-        in = new FileInputStream(path);
-        in = new ObjectInputStream(in);
-        object = in.readObject();
-        in.close();
-        Object_Inspector.openFrame("classifier", object);
-    }
+dialog = new OpenDialog("Classifier", null);
+if (dialog.getDirectory() != null) {
+    path = dialog.getDirectory() + "/" + dialog.getFileName();
+    in = new FileInputStream(path);
+    in = new ObjectInputStream(in);
+    object = in.readObject();
+    in.close();
+    Object_Inspector.openFrame("classifier", object);
+}
+```
 
 # Debugging Swing (Event Dispatch Thread) issues
 
