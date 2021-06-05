@@ -1,11 +1,10 @@
 ---
-mediawiki: 2015-02-09_-_ImageJ_2.0.0-rc-24_released
 title: 2015-02-09 - ImageJ 2.0.0-rc-24 released
 ---
 
 Today, the [ImageJ team](/people) is pleased to announce a new public release candidate for [ImageJ2](/software/imagej2): version 2.0.0-rc-24.
 
-![ 450px \| right \| rc-23 / rc-24](/media/news/scifio-rc23-rc24.png) ![ 450px \| right \| ImageJ1 SCIFIO](/media/news/imagej-scifio-rc24.png)
+{% include img align="right" width="450px" alt="rc-23 / rc-24" src="/media/news/scifio-rc23-rc24.png" %} {% include img align="right" width="450px" alt="ImageJ1 SCIFIO" src="/media/news/imagej-scifio-rc24.png" %}
 
 ## What's new
 

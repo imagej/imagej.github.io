@@ -1,10 +1,6 @@
 ---
-mediawiki: 2015-12-22_-_The_road_to_Java_8
 title: 2015-12-22 - The road to Java 8
 ---
-
-<div style="float: right; padding-left: 1em">
-</div>
 
 For {% include github org='imagej' repo='imagej' issue='135' label='many reasons' %}, ImageJ needs to switch to Java 8. Hence, in recent months, the ImageJ team at [LOCI](/orgs/loci) has been [taking steps toward migrating ImageJ and Fiji toward Java 8](/news/2015-06-15-major-updates-in-the-works). This week marks a significant milestone in that effort:
 
@@ -52,13 +48,9 @@ The following ImageJ and Fiji components now require a minimum Java version of J
   </thead>
   <tbody>
     <tr>
-      <td>
-        <p><a href="/software/imagej2">ImageJ2</a></p>
+      <td colspan="5" style="text-align:center">
+        <p><b><a href="/software/imagej2">ImageJ2</a></b></p>
       </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
       <td>
@@ -112,13 +104,9 @@ The following ImageJ and Fiji components now require a minimum Java version of J
       </td>
     </tr>
     <tr>
-      <td>
-        <p><a href="/software/fiji">Fiji</a></p>
+      <td colspan="5" style="text-align:center">
+        <p><b><a href="/software/fiji">Fiji</a></b></p>
       </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
       <td>
@@ -334,10 +322,9 @@ It is the responsibility of individual update site maintainers to decide if and 
 
 {% include notice icon="note" content="If you are a maintainer of one of these update sites and need any guidance on how to update your project to comply with the **Java-8** update site, please contact us on the [ImageJ forum](/discuss)." %}
 
-|                 |                                        |                                            |                                                                  |
-|-----------------|----------------------------------------|--------------------------------------------|------------------------------------------------------------------|
-| **Name**        | **Site**                               | **Maintainer**                             | **Issue**                                                        |
-| **ClearVolume** | http://sites.imagej.net/ClearVolume/ | [ClearVolume](User_ClearVolume) | [BugZilla \#1209](https://fiji.sc/bugzilla/show_bug.cgi?id=1209) |
+| **Name** | **Site** | **Maintainer** | **Issue** |
+|----------|----------|----------------|-----------|
+| **ClearVolume** | [http://sites.imagej.net/ClearVolume/](https://sites.imagej.net/ClearVolume/) | ClearVolume | [BugZilla \#1209](https://fiji.sc/bugzilla/show_bug.cgi?id=1209) |
 
 ## Feedback
 

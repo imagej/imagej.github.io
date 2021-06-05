@@ -1,11 +1,10 @@
 ---
-mediawiki: 2015-09-21_-_ImageJ_forum
 title: 2015-09-21 - ImageJ forum
 ---
 
 We have set up a web-based forum for ImageJ:
 
-[[`http://forum.imagej.net/`](http://forum.imagej.net/)](http://forum.imagej.net)
+{% include link-banner url="http://forum.imagej.net/" %}
 
 It is driven by [Discourse](http://www.discourse.org/), an awesome project designed by one of the founders of StackOverflow, and utilizing some of the same concepts.
 
