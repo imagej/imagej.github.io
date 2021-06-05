@@ -28,7 +28,7 @@ Below is a Java method howto store a list of 3D points as a Weka datastructure.
     * @return Instances containing all 3D points
     */
     public Instances insertIntoWeka(final List <Point3d> points, final String name)
-    {       
+    {
         // Create numeric attributes "x" and "y" and "z"
         Attribute x = new Attribute("x");
         Attribute y = new Attribute("y");
@@ -80,7 +80,7 @@ Setting up the {% include wikipedia title='Kd-tree' text='KDTree'%} is rather si
     // Set up the KDTree
     //
 
-    KDTree tree = new KDTree();     
+    KDTree tree = new KDTree();
 
     try
     {
@@ -89,7 +89,7 @@ Setting up the {% include wikipedia title='Kd-tree' text='KDTree'%} is rather si
         EuclideanDistance df = new EuclideanDistance(wekaPoints1);
         df.setDontNormalize(true);
 
-        tree.setDistanceFunction(df);           
+        tree.setDistanceFunction(df);
     }
     catch (Exception e) { e.printStackTrace();}
 
@@ -119,17 +119,17 @@ First we create an Instance that can be used to search the KDTree. Later on it i
         attributes.addElement(z);
 
         // Create empty instance with three attribute values
-        Instance inst = new Instance(3);                
+        Instance inst = new Instance(3);
 
         // Set instance's values for the attributes "x", "y", and "z"
         inst.setValue(x, p.x);
         inst.setValue(y, p.y);
-        inst.setValue(z, p.z);              
+        inst.setValue(z, p.z);
 
         // Set instance's dataset to be the dataset "points1"
         inst.setDataset(dataset);
 
-        return inst;    
+        return inst;
     }
 
 Now we can easily search the KDTree.
@@ -142,7 +142,7 @@ Now we can easily search the KDTree.
     {
         Instances neighbors = tree.kNearestNeighbours(p, 2);
         nn1 = neighbors.instance(0);
-        nn2 = neighbors.instance(1);                            
+        nn2 = neighbors.instance(1);
     }
     catch (Exception e) { nn1 = nn2 = null; }
 
@@ -157,4 +157,4 @@ Now we can easily search the KDTree.
 
 ### See also
 
--   How to [use Weka in your Java code](http://weka.wikispaces.com/Use+Weka+in+your+Java+code)
+-   How to [use Weka in your Java code](https://waikato.github.io/weka-wiki/use_weka_in_your_java_code/)
