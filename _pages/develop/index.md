@@ -218,15 +218,15 @@ Start with the [ImageJ tutorial notebooks](/tutorials)!
       <td style="vertical-align: top">
         <p><strong>Learning the ImageJ API</strong></p>
       </td>
-      <td>
+      <td style="vertical-align: top">
         <p><strong>ImageJ plugins</strong></p>
       </td>
-      <td>
+      <td style="vertical-align: top">
         <p><strong>The Fiji distribution of ImageJ</strong></p>
       </td>
     </tr>
     <tr>
-      <td>
+      <td style="vertical-align: top">
         <ul>
           <li>
             <a href="https://github.com/imagej/tutorials">ImageJ tutorials</a>
@@ -255,7 +255,7 @@ Start with the [ImageJ tutorial notebooks](/tutorials)!
           </li>
         </ul>
       </td>
-      <td>
+      <td style="vertical-align: top">
         <ul>
           <li>
             <a href="/software/fiji/developing">Developing Fiji</a>
