@@ -11,6 +11,7 @@ The ImageJ core artifacts are built with Maven, but can also be consumed in a Gr
 
 Contributed<sup>[1](https://github.com/imagej/tutorials/issues/24)</sup> by {% include person id='reckbo' %}
 
+```groovy
     buildscript {
         repositories {
             maven {
@@ -38,3 +39,4 @@ Contributed<sup>[1](https://github.com/imagej/tutorials/issues/24)</sup> by {% i
     dependencies {
         compile 'net.imagej:imagej'
     }
+```
