@@ -4,7 +4,7 @@ title: Development
 section: Extend:Develop
 ---
 
-{% include notice icon="info" content='If your goal is to automate the behavior of ImageJ, consider writing a [script](/scripting/script-editor) using ImageJ"s [Script Editor](/scripting/script-editor)—it is often much simpler than a plugin in Java.' %} 
+{% include notice icon="info" content='If your goal is to automate the behavior of ImageJ, consider writing a [script](/scripting/script-editor) using ImageJ\'s [Script Editor](/scripting/script-editor)—it is often much simpler than a plugin in Java.' %} 
 This page provides an overview of ImageJ from the perspective of software development: how to use it from your programs, as well as how to modify or extend its capabilities via [plugins](/plugins).
 
 ## Quick start
