@@ -70,7 +70,7 @@ public void loadAndDisplay(File file) {
 
 ## Project structure
 
-ImageJ is divided into three parts:
+ImageJ is divided into three parts -- ImageJ, ImgLib2, and SciJava -- with responsibilites as follows:
 
 {::nomarkdown}
 <table>
@@ -79,15 +79,12 @@ ImageJ is divided into three parts:
       <th style="font-size: 56px; width: 350px">
         <p>{% include icon name='ImageJ' size='72px' %}<a href="/software/imagej">ImageJ</a></p>
       </th>
-      <th></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>
-        <p><span style="font-size: large"><strong>Image-specific components</strong></span></p>
-      </td>
-      <td>
+      <td style="text-align: left; vertical-align: top">
+        <p><span style="font-size: large">ImageJ provides <strong>image-specific components</strong></span></p>
         <ul>
           <li>
             <a href="/libs/imagej-common">ImageJ Common</a>
@@ -111,13 +108,10 @@ ImageJ is divided into three parts:
       <td style="font-size: 56px; bold">
         <p>{% include icon name='ImgLib2' size='72px' %}<a href="/libs/imglib2">ImgLib2</a></p>
       </td>
-      <td style="width: 350px;">
-        <p><a href="/libs/scijava"><img src="/media/logos/scijava.png" height="72px"></a></p>
-      </td>
     </tr>
     <tr>
       <td style="text-align: left; vertical-align: top">
-        <p><span style="font-size: large"><strong>Core image data model</strong></span><br></p>
+        <p><span style="font-size: large">ImgLib2 provides the <strong>core image data model</strong></span><br></p>
         <ul>
           <li>Extensible pixel types – not just uint8, uint16, float32</li>
           <li>Extensible data sources – not just files on disk</li>
@@ -126,8 +120,13 @@ ImageJ is divided into three parts:
           <li>Interface-driven design</li>
         </ul>
       </td>
+    <tr>
+      <td style="width: 350px;">
+        <p><a href="/libs/scijava"><img src="/media/logos/scijava.png" height="72px"></a></p>
+      </td>
+    </tr>
       <td style="text-align: left; vertical-align: top">
-        <p><span style="font-size: large"><strong>More general than images</strong></span><br></p>
+        <p><span style="font-size: large">SciJava provides <strong>scientific components more general than images</strong></span><br></p>
         <ul>
           <li>Application container</li>
           <li>Plugin framework</li>
