@@ -960,7 +960,7 @@ Releases notes are available on {% include github org='tferr' repo='ASA' branch=
 
 <!-- -->
 
--   **[Neuroanatomy update site](/plugins/neuroanatomy)**, distributing e.g., the **[Strahler\_Analysis](/plugins/strahler-analysis)** plugin
+-   **[Neuroanatomy update site](/update-sites/neuroanatomy)**, distributing e.g., the **[Strahler_Analysis](/plugins/strahler-analysis)** plugin
 
 <!-- -->
 

@@ -18,7 +18,7 @@ Tiago Ferreira is the author of:
 
 -   [SNT](/plugins/snt) ({% include github org='morphonets' repo='SNT' label='GitHub' %})
 -   [Sholl Analysis](/plugins/sholl-analysis) ({% include github org='tferr' repo='ASA' label='GitHub' %})
--   [Neuroanatomy plugins](/plugins/neuroanatomy) (including [Strahler Analysis](/plugins/strahler-analysis)) ({% include github org='tferr' repo='hIPNAT' label='GitHub' %})
+-   [Neuroanatomy plugins](/update-sites/neuroanatomy) (including [Strahler Analysis](/plugins/strahler-analysis)) ({% include github org='tferr' repo='hIPNAT' label='GitHub' %})
 -   [ImageJ User Guide](https://imagej.nih.gov/ij/docs/guide/) ({% include github org='tferr' repo='IJ-guide' label='GitHub' %})
 -   [BAR toolbox](/plugins/bar) ({% include github org='tferr' repo='Scripts' label='GitHub' %}), including among others:
     -   [Find Peaks](/plugins/find-peaks)

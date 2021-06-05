@@ -1245,8 +1245,8 @@ Naming_Landmarks_for_Registration :: plugins/name-landmarks-and-register
 NanoTrackJ :: plugins/nanotrackj
 Native :: develop/native-libraries
 NetBeans :: develop/netbeans
-Neuroanatomy :: plugins/neuroanatomy
-Neuroanatomy:External_Resources :: plugins/neuroanatomy/external-resources
+Neuroanatomy :: update-sites/neuroanatomy
+Neuroanatomy:External_Resources :: update-sites/neuroanatomy/external-resources
 NeuronDetector/ :: plugins/neuron-detector
 NeuronDetector_ :: plugins/neuron-detector
 NeuronJ :: plugins/neuronj
@@ -1914,7 +1914,7 @@ User:N.condon :: people/NickCondon
 User:NIST-ISG-LineageMapper :: people/mmajurski
 User:NIST-ISG-MIST :: people/mmajurski
 User:NanoJ :: people/paxcalpt
-User:Neuroanatomy :: plugins/neuroanatomy
+User:Neuroanatomy :: update-sites/neuroanatomy
 User:NicholasPerry :: people/nickp
 User:Nico :: people/nicost
 User:Nmjmorph :: people/NMJMorph
