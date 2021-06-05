@@ -321,7 +321,7 @@ Anomalous_Diffusion_Filters :: plugins/anomalous-diffusion-filters
 Apache :: licensing/apache
 AplimTools :: plugins/aplimtools
 AppVeyor :: develop/appveyor
-Application :: learn/basics#how-do-i-get-started
+Application :: learn#how-do-i-get-started
 Apply_SIOX_segmentator :: plugins/siox#apply-siox-segmentator
 Apply_saved_SIOX_segmentator :: plugins/siox#apply-siox-segmentator
 Archipelago_Plugins :: plugins/archipelago-plugins
@@ -523,8 +523,8 @@ Colour_Deconvolution :: plugins/colour-deconvolution
 Colour_merge :: plugins/colour-merge
 Comand_Line_Debugging :: develop/debugging#command-line-debugging
 Command-Line_Debugging :: develop/debugging#command-line-debugging
-Command_Finder :: learn/basics#the-search-bar
-Command_Launcher :: learn/basics#the-search-bar
+Command_Finder :: learn#the-search-bar
+Command_Launcher :: learn#the-search-bar
 Command_Launcher_Clojure :: scripting/clojure
 Command_Launcher_Javascript :: scripting/javascript
 Command_Launcher_Python :: scripting/jython
@@ -816,8 +816,8 @@ Generic_dialog :: scripting/generic-dialog
 Geometry_to_Distance_Map :: plugins/local-thickness
 Get_Meta :: plugins/get-meta
 Get_dSpace :: plugins/get-dspace
-Getting_Started :: learn/basics#how-do-i-get-started
-Getting_started :: learn/basics#how-do-i-get-started
+Getting_Started :: learn#how-do-i-get-started
+Getting_started :: learn#how-do-i-get-started
 Getting_started_with_MaMuT :: plugins/mamut/getting-started
 Getting_started_with_TrackMate :: plugins/trackmate/getting-started
 Git :: develop/git
@@ -1594,7 +1594,7 @@ Stack_labeler :: plugins/series-labeler
 StarDist :: plugins/stardist
 Statistical_Region_Merging :: plugins/statistical-region-merging
 Status :: TODO
-Status_bar :: learn/basics#the-status-bar
+Status_bar :: learn#the-status-bar
 StereoMate :: plugins/stereomate
 Stereoscopic_3D_Projection :: plugins/stereoscopic-3d-projection
 Stitch_Collection_of_Images :: plugins/stitching-2d-3d
@@ -2021,7 +2021,7 @@ Using_Maven_with_Eclipse :: develop/maven-and-eclipse
 Using_TrackMate_from_MATLAB :: plugins/trackmate/using-from-matlab
 Using_TrackMate_with_MATLAB :: plugins/trackmate/analyzing-results-with-matlab
 Using_Weka :: develop/using-weka
-Using_the_Command_Launcher :: learn/basics#the-search-bar
+Using_the_Command_Launcher :: learn#the-search-bar
 Using_the_Script_Editor :: scripting/script-editor
 VCell :: software/virtual-cell
 VIB :: plugins/vib-protocol
