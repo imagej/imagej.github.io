@@ -45,7 +45,7 @@ public void loadAndDisplay(File file) {
     </tr>
     <tr>
       <td style="border-top: 1px #aaa solid; padding: 15px 15px 0 15px;">
-        <p>An extensible collection of <a href="plugins">plugins</a> and <a href="services">services</a></p>
+        <p>An extensible collection of <a href="plugins">plugins</a> and <a href="/libs/scijava#services">services</a></p>
       </td>
     </tr>
     <tr>
