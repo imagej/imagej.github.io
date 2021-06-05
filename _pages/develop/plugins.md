@@ -4,10 +4,12 @@ section: Extend:Development:Guides
 ---
 
 {% include notice icon="info" content='This guide provides a technical overview of [plugins](/plugins), including how to **create new plugins**.  
-\* If you are interested in developing an **existing** plugin instead, see [Contributing to a plugin](/develop/improving-the-code).  
-\* If you have completed a plugin that you would like to **share with the community**, see [Distributing your plugins](/contribute/distributing).
 
--   For instructions on plugin development for [ImageJ 1.x](/software/imagej1), see [Developing Plugins for ImageJ 1.x](/develop/ij1-plugins).' %}
+If you are interested in developing an **existing** plugin instead, see [Contributing to a plugin](/develop/improving-the-code).  
+
+If you have completed a plugin that you would like to **share with the community**, see [Distributing your plugins](/contribute/distributing).
+
+For instructions on plugin development for [ImageJ 1.x](/software/imagej1), see [Developing Plugins for ImageJ 1.x](/develop/ij1-plugins).' %}
 
  
 
