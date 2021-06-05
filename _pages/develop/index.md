@@ -83,7 +83,7 @@ ImageJ is divided into three parts -- ImageJ, ImgLib2, and SciJava -- with respo
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: left; vertical-align: top">
+      <td>
         <p><span style="font-size: large">ImageJ provides <strong>image-specific components</strong></span></p>
         <ul>
           <li>
@@ -110,7 +110,7 @@ ImageJ is divided into three parts -- ImageJ, ImgLib2, and SciJava -- with respo
       </td>
     </tr>
     <tr>
-      <td style="text-align: left; vertical-align: top">
+      <td>
         <p><span style="font-size: large">ImgLib2 provides the <strong>core image data model</strong></span><br></p>
         <ul>
           <li>Extensible pixel types – not just uint8, uint16, float32</li>
@@ -125,7 +125,7 @@ ImageJ is divided into three parts -- ImageJ, ImgLib2, and SciJava -- with respo
         <p><a href="/libs/scijava"><img src="/media/logos/scijava.png" height="72px"></a></p>
       </td>
     </tr>
-      <td style="text-align: left; vertical-align: top">
+      <td>
         <p><span style="font-size: large">SciJava provides <strong>scientific components more general than images</strong></span><br></p>
         <ul>
           <li>Application container</li>
