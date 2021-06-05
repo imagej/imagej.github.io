@@ -1,5 +1,4 @@
 ---
-mediawiki: 2014-06-02_-_TrackMate_v2.3.0_released
 title: 2014-06-02 - TrackMate v2.3.0 released
 ---
 
@@ -9,7 +8,7 @@ We just released a new minor version of [TrackMate](/plugins/trackmate), pressed
 
 -   It is possible to manually color spots and edges. The colors attributed are saved and retrieved from XML.
 
-<figure><img src="/media/news/trackmate-manualcoloring.png" title="TrackMate_ManualColoring.png" width="400" alt="TrackMate_ManualColoring.png" /><figcaption aria-hidden="true">TrackMate_ManualColoring.png</figcaption></figure>
+{% include img src="/media/news/trackmate-manualcoloring.png" width="400" %}
 
 To use it, select a few cells in TrackScheme and right-click to make the contextual menu appear:
 
@@ -37,11 +36,7 @@ We would like to express our thanks to {% include person id='Fab14' %} for his h
 
 -   The table in the InfoPane of TrackScheme displays the full spot name.
 
-<!-- -->
-
 -   Auto-linking mode allows the creation of links backward in time.
-
-<!-- -->
 
 -   Two new track feature analyzers allow filtering tracks by their spots quality or by their longest gap.
 
@@ -49,27 +44,15 @@ We would like to express our thanks to {% include person id='Fab14' %} for his h
 
 -   Fix a potential (and potentially long standing) bug with numerical input on machine using locales different from the US locale.
 
-<!-- -->
-
 -   Put back the forgotten Manual Tracker.
-
-<!-- -->
 
 -   Save and retrieve the tracker used in the XML file.
 
-<!-- -->
-
 -   Fix crash triggered when the specified ROI had points out of the source image bounds.
-
-<!-- -->
 
 -   Fix crash when saving with a source image not loaded from disk.
 
-<!-- -->
-
 -   Do not crash when saving unconfigured detector or tracker.
-
-<!-- -->
 
 -   Many other bugfixes.
 

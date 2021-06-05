@@ -1,5 +1,4 @@
 ---
-mediawiki: 2014-03-27_-_ImageJ2_and_Fiji_recent_milestones
 title: 2014-03-27 - ImageJ2 and Fiji recent milestones
 ---
 
@@ -12,7 +11,7 @@ In the wake of the transition, many latent bugs were discovered and fixed, harde
 
 The list of update sites sees [continued growth](https://github.com/imagej/list-of-update-sites/commits/master/sites.yml), and we encourage their use e.g. for macros or plugins associated with publications. It simply enhances the impact of a paper if its methods are available at the users' fingertips.
 
-Another really important component that made it from Fiji to ImageJ2 and was stabilized there is the [launcher](Launcher). Its intent is to pre-configure the Java Virtual Machine "magically"; i.e., such that users need to configure as little as possible. Typically, no configuration is required, yet the appropriate amount of RAM is allocated, native libraries are found, Java3D support on MacOSX is up-to-date, all without having the user change a thing! The launcher is indeed so useful that it was modified to be able to launch not only Fiji and ImageJ2, but bare-bones ImageJ 1.x as well.
+Another really important component that made it from Fiji to ImageJ2 and was stabilized there is the [launcher](/learn/launcher). Its intent is to pre-configure the Java Virtual Machine "magically"; i.e., such that users need to configure as little as possible. Typically, no configuration is required, yet the appropriate amount of RAM is allocated, native libraries are found, Java3D support on MacOSX is up-to-date, all without having the user change a thing! The launcher is indeed so useful that it was modified to be able to launch not only Fiji and ImageJ2, but bare-bones ImageJ 1.x as well.
 
 The ImageJ2 project focuses on robustness—particularly important if you want to collaborate between more than one developer. That entails a [continuous integration server](http://jenkins.imagej.net/) whose sole purpose is to ensure that all the automated regression tests run on the newest source code revisions. The same server also makes sure that the [ImageJ launcher is built](http://jenkins.imagej.net/job/ImageJ-launcher/) for all the supported platforms: Windows (32/64 bit), MacOSX (32/64 bit, also PPC64) and Linux (32/64 bit). The same server also [builds installers for the latest ImageJ 1.x releases](http://jenkins.imagej.net/job/ImageJ1-releases/), whenever they come out.
 

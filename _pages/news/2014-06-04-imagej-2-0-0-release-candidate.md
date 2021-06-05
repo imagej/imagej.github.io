@@ -1,5 +1,4 @@
 ---
-mediawiki: 2014-06-04_-_ImageJ_2.0.0_release_candidate
 title: 2014-06-04 - ImageJ 2.0.0 release candidate
 ---
 
@@ -15,7 +14,7 @@ ImageJ2 provides a wealth of new features and capabilities:
 
 -   The ImageJ Updater makes it simple to keep your ImageJ up to date, and to add new plugins by enabling additional [Update Sites](/update-sites).
 -   The ImageJ Updater also makes it simple to publish your own tools based on ImageJ, via [Personal Update Sites](/update-sites/setup#add-your-personal-update-site).
--   New and enhanced file format support via the SCIFIO library. There is no need to call a special SCIFIO plugin; it works with commands like {% include bc path="File | Open" %} automatically. Additional import options are available via the {% include bc path="File | Import | Image..." %} command. See the [SCIFIO](/libs/scifio) page of the ImageJ wiki for further details.<img src="/media/news/imagej2-options.png" title="fig:Imagej2-options.png" width="270" alt="Imagej2-options.png" />
+-   New and enhanced file format support via the SCIFIO library. There is no need to call a special SCIFIO plugin; it works with commands like {% include bc path="File | Open" %} automatically. Additional import options are available via the {% include bc path="File | Import | Image..." %} command. See the [SCIFIO](/libs/scifio) page of the ImageJ wiki for further details. {% include img align="right" src="/media/news/imagej2-options.png" width="270px" %}
 -   New commands:
     -   {% include bc path="Plugins | Debug | Dump Stack" %} for debugging when things {% include wikipedia title='Hang (computing)' text='hang'%}.
     -   {% include bc path="Plugins | Debug | System Information" %} for reporting on versions of installed plugins and libraries.
@@ -29,28 +28,31 @@ ImageJ2 provides a wealth of new features and capabilities:
 
     Example:
 
-        import ij.ImagePlus;
-        import org.scijava.command.Command;
-        import org.scijava.plugin.Parameter;
-        import org.scijava.plugin.Plugin;
+```java
+import ij.ImagePlus;
+import org.scijava.command.Command;
+import org.scijava.plugin.Parameter;
+import org.scijava.plugin.Plugin;
 
-        @Plugin(type = Command.class, menu = "Plugins > Set Image Title")
-        public class SetImageTitle implements Command {
-            @Parameter
-            private ImagePlus imp;
+@Plugin(type = Command.class, menu = "Plugins > Set Image Title")
+public class SetImageTitle implements Command {
+    @Parameter
+    private ImagePlus imp;
 
-            @Parameter
-            private String title;
+    @Parameter
+    private String title;
 
-            @Override
-            public void run() {
-                imp.setTitle(title);
-            }
-        }
+    @Override
+    public void run() {
+        imp.setTitle(title);
+    }
+}
+```
+
 -   Easy yet powerful plugin concept—stay tuned for a dedicated blog post soon!
 -   Use ImageJ2's N-dimensional [ImgLib2](/libs/imglib2)-based data structures (still in beta).
 
-<figure><img src="/media/news/parameterized-macro.png" title="Parameterized-macro.png" width="439" alt="Parameterized-macro.png" /><figcaption aria-hidden="true">Parameterized-macro.png</figcaption></figure>
+{% include img align="right" src="/media/news/parameterized-macro.png" width="439px" %}
 
 ## Enhanced scripting
 

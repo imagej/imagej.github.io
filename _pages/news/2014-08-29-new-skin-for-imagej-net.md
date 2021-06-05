@@ -1,5 +1,4 @@
 ---
-mediawiki: 2014-08-29_-_New_skin_for_imagej.net
 title: 2014-08-29 - New skin for imagej.net
 ---
 

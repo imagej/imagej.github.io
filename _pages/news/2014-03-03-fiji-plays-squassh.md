@@ -1,5 +1,4 @@
 ---
-mediawiki: 2014-03-03_-_Fiji_plays_Squassh
 title: 2014-03-03 - Fiji plays Squassh
 ---
 

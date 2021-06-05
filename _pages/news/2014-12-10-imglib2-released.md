@@ -1,5 +1,4 @@
 ---
-mediawiki: 2014-12-10_-_ImgLib2_released
 title: 2014-12-10 - ImgLib2 released
 ---
 

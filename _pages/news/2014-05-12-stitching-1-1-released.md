@@ -1,5 +1,4 @@
 ---
-mediawiki: 2014-05-12_-_Stitching_1.1_released
 title: 2014-05-12 - Stitching 1.1 released
 ---
 
