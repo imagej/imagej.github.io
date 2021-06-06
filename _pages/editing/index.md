@@ -99,10 +99,12 @@ Note that the last example includes inline styling, which is kramdown-specific.
 
 Certain kinds of structures have dedicated pages of this guide:
 
+* [Images](images) (using [Liquid](#liquid), not Markdown,
+  for more complex image needs such as galleries, figures, etc...)
 * [Tables](tables)
 * [Math expressions](math)
 * [Source code and syntax highlighting](code)
-* [Images](images) ([Liquid](#liquid), not markdown, facilitating complex image needs such as galleries, figures, etc...)
+* [Footnotes](citations#footnotes)
 
 ## Liquid
 
@@ -138,8 +140,8 @@ The following tables list all of this site's general-purpose includes:
 
 | Include                                      | Purpose                 |
 |----------------------------------------------|-------------------------|
-| [citation](citations#include-citations)      | Insert a citation       |
-| [testimonial](citations#include-testimonial) | Insert a personal quote |
+| [citation](citations#citing-publications)    | Insert a citation       |
+| [testimonial](citations#testimonials)        | Insert a personal quote |
 
 #### Linking
 
