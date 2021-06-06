@@ -124,7 +124,7 @@ For example, one of the main built-in ImageJ packages is called `ij`, and often 
     from ij import IJ
     # do stuff below....
 
-Doing this allows you to access the `IJ` *class* which resides in the `ij` *package*. You can find a description of the `ij` package [here](https://javadoc.scijava.org/ImageJ1/ij/package-summary.html). What can we do with the `IJ` class? Clicking on the `IJ` link brings you to the [class documentation](https://javadoc.scijava.org/ImageJ1/ij/IJ.html) page for `IJ`. This class contains "static utility methods" which means you can call them with without instantiating (calling the constructor) the `IJ` class. We will cover constructors later. Looking through the documentation for `IJ`, lets focus on the method `createImage` ([docs here](https://javadoc.scijava.org/ImageJ1/ij/IJ.html#createImage-java.lang.String-int-int-int-int-)). This method can be called just like you would call a method on a python class. The documentation shows you need to provide the following parameters (types in parenthesis):
+Doing this allows you to access the `IJ` *class* which resides in the `ij` *package*. You can find a description of the `ij` package [here](https://javadoc.scijava.org/ImageJ1https://imagej.nih.gov/ij/package-summary.html). What can we do with the `IJ` class? Clicking on the `IJ` link brings you to the [class documentation](https://javadoc.scijava.org/ImageJ1https://imagej.nih.gov/ij/IJ.html) page for `IJ`. This class contains "static utility methods" which means you can call them with without instantiating (calling the constructor) the `IJ` class. We will cover constructors later. Looking through the documentation for `IJ`, lets focus on the method `createImage` ([docs here](https://javadoc.scijava.org/ImageJ1https://imagej.nih.gov/ij/IJ.html#createImage-java.lang.String-int-int-int-int-)). This method can be called just like you would call a method on a python class. The documentation shows you need to provide the following parameters (types in parenthesis):
 
 1.  title (string)
 2.  width (int)
@@ -132,7 +132,7 @@ Doing this allows you to access the `IJ` *class* which resides in the `ij` *pack
 4.  depth (int)
 5.  bitdepth (int)
 
-and it returns an `ImagePlus` object. `ImagePlus` objects are very important in ImageJ, and you will the documentation for them [here](/ij/developer/api/ij/ImagePlus.html). Below is an example of how to import and use the static methods on the `IJ` class to create an image.
+and it returns an `ImagePlus` object. `ImagePlus` objects are very important in ImageJ, and you will the documentation for them [here](https://imagej.nih.gov/ij/developer/apihttps://imagej.nih.gov/ij/ImagePlus.html). Below is an example of how to import and use the static methods on the `IJ` class to create an image.
 
     from ij import IJ # read this as: "from the ij package import the IJ class"
     test_img = IJ.createImage("Test image", 512, 512, 1, 8)
@@ -140,7 +140,7 @@ and it returns an `ImagePlus` object. `ImagePlus` objects are very important in 
     print(type(test_img))
     # <type 'ij.ImagePlus'>
 
-This code shows that we have successfully created an `ImagePlus` object. Looking at the documentation for the [ImagePlus class](https://javadoc.scijava.org/ImageJ1/ij/ImagePlus.html), let's use a few of the methods to make sure the image was created correctly.
+This code shows that we have successfully created an `ImagePlus` object. Looking at the documentation for the [ImagePlus class](https://javadoc.scijava.org/ImageJ1https://imagej.nih.gov/ij/ImagePlus.html), let's use a few of the methods to make sure the image was created correctly.
 
     from ij import IJ
     test_img = IJ.createImage("Test image", 512, 512, 1, 8)
@@ -153,9 +153,9 @@ This code shows that we have successfully created an `ImagePlus` object. Looking
     print("{} is {} wide and {} tall.".format(title, width, height))
     test_img.show()
 
-We accessed the title using the `getTitle()` [method](https://javadoc.scijava.org/ImageJ1/ij/ImagePlus.html#getTitle--), which takes no arguments and returns the image name. We accessed the image width and height by accessing `test_img`'s **fields**. These are not methods, but contain information about the class. We could have also used the `getWidth()` and `getHeight()` methods as well. We then called the `show()` method on our test image and a (very boring) 512X512 8 bit image should have popped up.
+We accessed the title using the `getTitle()` [method](https://javadoc.scijava.org/ImageJ1https://imagej.nih.gov/ij/ImagePlus.html#getTitle--), which takes no arguments and returns the image name. We accessed the image width and height by accessing `test_img`'s **fields**. These are not methods, but contain information about the class. We could have also used the `getWidth()` and `getHeight()` methods as well. We then called the `show()` method on our test image and a (very boring) 512X512 8 bit image should have popped up.
 
-Here is another example where we use the ImageJ package and the [RoiManager](http://javadoc.scijava.org/ImageJ1/ij/plugin/frame/RoiManager.html) class. According to the javadoc, the RoiManager class resides in `ij.plugin.frame`. Therefore the code will look like :
+Here is another example where we use the ImageJ package and the [RoiManager](http://javadoc.scijava.org/ImageJ1https://imagej.nih.gov/ij/plugin/frame/RoiManager.html) class. According to the javadoc, the RoiManager class resides in `ij.plugin.frame`. Therefore the code will look like :
 
     from ij.plugin.frame import RoiManager
     RM = RoiManager()        # we create an instance of the RoiManager class
@@ -410,4 +410,4 @@ At GitHub you will find an [example project](https://github.com/m-entrup/imagej-
 
 ## References
 
-[^1]: [Wikipedia entry on Jython](/ij/plugins/index.html). Accessed: 2016-08-30
+[^1]: [Wikipedia entry on Jython](https://imagej.nih.gov/ij/plugins/index.html). Accessed: 2016-08-30

@@ -1,5 +1,4 @@
 ---
-mediawiki: 2014-04-04_-_Announcing_ImageJ_Ops
 title: 2014-04-04 - Announcing ImageJ Ops
 ---
 
@@ -37,8 +36,6 @@ Today marks the Ops project's very first beta release: [0.1.0](https://github.co
 
 We sincerely hope that the Ops project will make it much easier for various software tools (e.g.: [KNIME](/software/knime), CellProfiler, OMERO, Alida, Icy, Vaa3D and of course ImageJ itself) to provide drop-in support for ImageJ's image processing operations, allowing scientists to truly "write once, run anywhere" and share with the world!
 
-##   
-
 P.S. Here is a detailed list of accomplishments during the hackathon:
 
 -   Curtis, Martin, Christian & Johannes: Defined a framework for ops
@@ -70,51 +67,55 @@ Thank you so much to the [KNIME](/software/knime) team for making all of this po
 
 P.P.S. There is even an `ascii` op to dump an image to the console. This is surprisingly useful for unit testing, validating expectations and general debugging:
 
-    // create a new blank image
-    final long[] dims = {78, 23};
-    final Object blank = ij.op().create(dims);
+```java
+// create a new blank image
+final long[] dims = {78, 23};
+final Object blank = ij.op().create(dims);
 
-    // fill in the image with a sinusoid using a formula
-    final String formula = "10 * (Math.cos(0.3*p[0]) + Math.sin(0.3*p[1]))";
-    final Object sinusoid = ij.op().equation(blank, formula);
+// fill in the image with a sinusoid using a formula
+final String formula = "10 * (Math.cos(0.3*p[0]) + Math.sin(0.3*p[1]))";
+final Object sinusoid = ij.op().equation(blank, formula);
 
-    // add a constant value to an image
-    ij.op().add(sinusoid, 13.0);
+// add a constant value to an image
+ij.op().add(sinusoid, 13.0);
 
-    // generate a gradient image using a formula
-    final Object gradient = ij.op().equation(ij.op().create(dims), "p[0]+p[1]");
+// generate a gradient image using a formula
+final Object gradient = ij.op().equation(ij.op().create(dims), "p[0]+p[1]");
 
-    // add the two images
-    final Object composite = ij.op().add(sinusoid, gradient);
+// add the two images
+final Object composite = ij.op().add(sinusoid, gradient);
 
-    // dump the image to the console
-    final Object ascii = ij.op().ascii(composite);
-    ij.log().info("Composite sinusoidal gradient image:\n" + ascii);
+// dump the image to the console
+final Object ascii = ij.op().ascii(composite);
+ij.log().info("Composite sinusoidal gradient image:\n" + ascii);
+```
 
-    Composite sinusoidal gradient image:
-                   ...,,,,,,,,,,,...,,,,---++++++++++-----+++ooo**********ooooo***
-    .....         ...,,,-----,,,,,,,,,,---++++oooo++++++++++ooo****OOO************
-    .......      ...,,,--------,,,,,,,---+++oooooooo+++++++ooo***OOOOOOO********OO
-    ......... .....,,,-----------,,,----+++oooooooooo+++++ooo***OOOOOOOOOO*****OOO
-    ,,,,..........,,,----+++------------++ooooo*ooooooooooooo***OOOOOOOOOOOO**OOOO
-    ,,,,,.........,,,---+++++----------+++oooo****oooooooooo***OOOO###OOOOOOOOOOOO
-    ,,,,,.........,,,---++++++---------+++ooo*****oooooooooo***OOOO###OOOOOOOOOOO#
-    ,,,,,.........,,,---++++++---------+++ooo*****oooooooooo***OOOO###OOOOOOOOOOO#
-    ,,,,,.........,,,---+++++----------+++oooo****oooooooooo***OOOO###OOOOOOOOOOOO
-    ,,,,..........,,,----+++------------++ooooo*ooooooooooooo***OOOOOOOOOOO***OOOO
-    .,.............,,,------------,,----+++ooooooooooo++++ooo***OOOOOOOOOO*****OOO
-    ........    ...,,,----------,,,,,----++oooooooooo++++++ooo***OOOOOOOO*******OO
-    .......      ...,,,--------,,,,,,,---+++oooooooo+++++++ooo***OOOOOOO********OO
-    ......       ...,,,-------,,,,,,,,---++++oooooo+++++++++ooo***OOOOO**********O
-    ......       ...,,,,------,,,,,,,,,---+++ooooo++++++++++ooo***OOOOO**********O
-    ......       ...,,,,------,,,,,,,,,---+++ooooo++++++++++ooo***OOOOO**********O
-    ......       ...,,,-------,,,,,,,,---++++oooooo+++++++++ooo***OOOOO**********O
-    .......      ...,,,--------,,,,,,,---+++oooooooo+++++++ooo***OOOOOOO********OO
-    ........   ....,,,-----------,,,,---+++oooooooooo+++++oooo**OOOOOOOOO*******OO
-    ,,,,..........,,,----+++------------++ooooo*ooooooooooooo***OOOOOOOOOOOO**OOOO
-    ,,,,,,.......,,,---+++++++--------+++oooo******ooooooooo***OOO#####OOOOOOOOOO#
-    ,,,,,,,,...,,,,---+++++++++++----+++ooo**********ooooo****OO#########OOOOOOO##
-    ----,,,,,,,,,,---+++ooooo++++++++++ooo****OOO************OO###################
+```
+Composite sinusoidal gradient image:
+               ...,,,,,,,,,,,...,,,,---++++++++++-----+++ooo**********ooooo***
+.....         ...,,,-----,,,,,,,,,,---++++oooo++++++++++ooo****OOO************
+.......      ...,,,--------,,,,,,,---+++oooooooo+++++++ooo***OOOOOOO********OO
+......... .....,,,-----------,,,----+++oooooooooo+++++ooo***OOOOOOOOOO*****OOO
+,,,,..........,,,----+++------------++ooooo*ooooooooooooo***OOOOOOOOOOOO**OOOO
+,,,,,.........,,,---+++++----------+++oooo****oooooooooo***OOOO###OOOOOOOOOOOO
+,,,,,.........,,,---++++++---------+++ooo*****oooooooooo***OOOO###OOOOOOOOOOO#
+,,,,,.........,,,---++++++---------+++ooo*****oooooooooo***OOOO###OOOOOOOOOOO#
+,,,,,.........,,,---+++++----------+++oooo****oooooooooo***OOOO###OOOOOOOOOOOO
+,,,,..........,,,----+++------------++ooooo*ooooooooooooo***OOOOOOOOOOO***OOOO
+.,.............,,,------------,,----+++ooooooooooo++++ooo***OOOOOOOOOO*****OOO
+........    ...,,,----------,,,,,----++oooooooooo++++++ooo***OOOOOOOO*******OO
+.......      ...,,,--------,,,,,,,---+++oooooooo+++++++ooo***OOOOOOO********OO
+......       ...,,,-------,,,,,,,,---++++oooooo+++++++++ooo***OOOOO**********O
+......       ...,,,,------,,,,,,,,,---+++ooooo++++++++++ooo***OOOOO**********O
+......       ...,,,,------,,,,,,,,,---+++ooooo++++++++++ooo***OOOOO**********O
+......       ...,,,-------,,,,,,,,---++++oooooo+++++++++ooo***OOOOO**********O
+.......      ...,,,--------,,,,,,,---+++oooooooo+++++++ooo***OOOOOOO********OO
+........   ....,,,-----------,,,,---+++oooooooooo+++++oooo**OOOOOOOOO*******OO
+,,,,..........,,,----+++------------++ooooo*ooooooooooooo***OOOOOOOOOOOO**OOOO
+,,,,,,.......,,,---+++++++--------+++oooo******ooooooooo***OOO#####OOOOOOOOOO#
+,,,,,,,,...,,,,---+++++++++++----+++ooo**********ooooo****OO#########OOOOOOO##
+----,,,,,,,,,,---+++ooooo++++++++++ooo****OOO************OO###################
+```
 
 And it looks très cool.
 

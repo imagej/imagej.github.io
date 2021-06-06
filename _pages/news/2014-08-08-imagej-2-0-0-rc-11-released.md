@@ -1,5 +1,4 @@
 ---
-mediawiki: 2014-08-08_-_ImageJ_2.0.0-rc-11_released
 title: 2014-08-08 - ImageJ 2.0.0-rc-11 released
 ---
 
@@ -7,7 +6,7 @@ Today, the [ImageJ team](/people) is pleased to announce a new public release ca
 
 ## New features
 
--   Usage tracking! We can now track and upload (anonymously) use counts at the plugin level, along with information about the environment of use (country, java version, language, operating system, time zone). Although we are taking care not to expose any user data with these statistics, this feature can be disabled via a new `{% include bc path='Edit | Options | Privacy...'%}` setting. Expect great things coming to the usage page! (note: "great things" = statistics graphs)
+-   Usage tracking! We can now track and upload (anonymously) use counts at the plugin level, along with information about the environment of use (country, java version, language, operating system, time zone). Although we are taking care not to expose any user data with these statistics, this feature can be disabled via a new {% include bc path='Edit | Options | Privacy...'%} setting. Expect great things coming to the usage page! (note: "great things" = statistics graphs)
 
 <!-- -->
 

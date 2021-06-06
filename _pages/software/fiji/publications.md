@@ -6,8 +6,7 @@ section: Explore:Software:Fiji
 
 {% include notice icon="info" content='This page lists publications relating to the [Fiji](/software/fiji) project.
 
--   For general instructions on citing [ImageJ](/software/imagej) and [Fiji](/software/fiji), see [Citing](/contribute/citing).
--   For an index of citable software, see [Citable](/plugin-index#citable).' %}
+-   For general instructions on citing [ImageJ](/software/imagej) and [Fiji](/software/fiji), see [Citing](/contribute/citing).' %}
 
 
 ## Publications introducing Fiji

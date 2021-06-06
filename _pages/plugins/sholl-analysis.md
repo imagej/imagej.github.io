@@ -89,7 +89,7 @@ Press *More» Cf. Segmentation* to visually confirm which phase of the segmented
 {:/}
 
 {%- capture binary-tip -%}
-With binary images, *Sholl Analysis* treats zero intensities as the background, independently of the image lookup table or the state of the *Black background option* in {% include bc path="Process | Binary | Options..." %}. As with any other [ImageJ routine](/ij/docs/guide/146-29.html#infobox:blackBackground) , confusing background with foreground pixels will lead to aberrant results, including: 1) overestimation of branches and 2) artifacts at distances intersecting the boundaries of the image canvas.
+With binary images, *Sholl Analysis* treats zero intensities as the background, independently of the image lookup table or the state of the *Black background option* in {% include bc path="Process | Binary | Options..." %}. As with any other [ImageJ routine](https://imagej.nih.gov/ij/docs/guide/146-29.html#infobox:blackBackground) , confusing background with foreground pixels will lead to aberrant results, including: 1) overestimation of branches and 2) artifacts at distances intersecting the boundaries of the image canvas.
 {%- endcapture -%}
 {% include notice icon="tip" content=binary-tip %} <span id="traces"></span>
 
@@ -461,11 +461,11 @@ Thresholding, shape-based masking and edge-detection routines (see [full BAR lis
 Data analysis tools:  
 **[Find Peaks](/plugins/find-peaks):** Retrieves local maxima under several filtering options such as peak amplitude, peak height and peak width. Can be used to retrieve secondary sites of branch density
 
-**{% include github org='tferr' repo='Scripts' branch='master' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#fit-polynomial' label='Fit Polynomial' %}:** Fits a polynomial of any degree to sampled data. Features an heuristic algorithm for guessing a polynomial "best fit". Expands the built-in repertoire of polynomial fits up to 50<sup>th</sup> order functions.
+**{% include github org='tferr' repo='Scripts' branch='master' path='BAR/src/main/resources/scripts/BAR/Data_Analysis/README.md#fit-polynomial' label='Fit Polynomial' %}:** Fits a polynomial of any degree to sampled data. Features an heuristic algorithm for guessing a polynomial "best fit". Expands the built-in repertoire of polynomial fits up to 50<sup>th</sup> order functions.
 
-**{% include github org='tferr' repo='Scripts' branch='master' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#create-boxplot' label='Create Boxplot' %}:** Allows direct comparison of metrics between groups or sets of data (specially useful when tagging images with the *Comment* field in {% include bc path='Analysis|Sholl|Metrics & Options...' color='white'%})
+**{% include github org='tferr' repo='Scripts' branch='master' path='BAR/src/main/resources/scripts/BAR/Data_Analysis/README.md#create-boxplot' label='Create Boxplot' %}:** Allows direct comparison of metrics between groups or sets of data (specially useful when tagging images with the *Comment* field in {% include bc path='Analysis|Sholl|Metrics & Options...' color='white'%})
 
-**{% include github org='tferr' repo='Scripts' branch='master' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#interactive-plotting' label='Interactive Plotting' %}:** Whole-purpose routine that plots data from imported spreadsheets.
+**{% include github org='tferr' repo='Scripts' branch='master' path='BAR/src/main/resources/scripts/BAR/Data_Analysis/README.md#interactive-plotting' label='Interactive Plotting' %}:** Whole-purpose routine that plots data from imported spreadsheets.
 
 ## Pre-processing
 
@@ -491,7 +491,7 @@ Uneven illumination problems, typically associated with [wide field microscopy](
 
 #### Automated Segmentation  
 
-It is possible to adopt more sophisticated [segmentation algorithms](/plugin-index#segmentation) when [global thresholding methods](/plugins/auto-threshold) do not yield satisfactory results. Examples:
+It is possible to adopt more sophisticated [segmentation algorithms](/imaging/segmentation) when [global thresholding methods](/plugins/auto-threshold) do not yield satisfactory results. Examples:
 
 -   [Local Threshold](/plugins/auto-local-threshold), {% include bc path="Image | Adjust |" %}
 -   [Robust Automatic Threshold Selection](/plugins/rats), {% include bc path="Plugins | Segmentation |" %}
@@ -508,7 +508,7 @@ Object detection and image segmentation in images with poor signal-to-noise will
 
 
 {% capture tip%}
-For additional image processing tools have a look at the growing list of [update sites](/list-of-update-sites). For more information on image processing have a look at \_\_\_SHADOW2\_\_\_, \_\_\_SHADOW3\_\_\_ and the [ImageJ User Guide](/ij/docs/guide/) .
+For additional image processing tools have a look at the growing list of [update sites](/list-of-update-sites). For more information on image processing have a look at [tutorials](/tutorials), [segmentation](/imaging/segmentation) and the [ImageJ User Guide](https://imagej.nih.gov/ij/docs/guide/) .
 {% endcapture %}
 {% include notice icon="tip" content=tip %}
 
@@ -615,7 +615,7 @@ Reduce the number of discretization steps involved in the calculation of [Nav](#
 
     call("sholl.Sholl_Analysis.setPrecision", "100"); // Default is 1000, ie, 1/1000 of radius step size
 
-Note that the IJM built-in [call("class.method")](/ij/developer/macro/functions.html#call) function can only pass strings to Java methods. For this reason, you have to quote the passed argument. `Sholl_Analysis` will then parse the string argument and interpreter its value. Note that calls made by the IJM language need to be set before running the plugin and remain in effect while ImageJ is running.
+Note that the IJM built-in [call("class.method")](https://imagej.nih.gov/ij/developer/macro/functions.html#call) function can only pass strings to Java methods. For this reason, you have to quote the passed argument. `Sholl_Analysis` will then parse the string argument and interpreter its value. Note that calls made by the IJM language need to be set before running the plugin and remain in effect while ImageJ is running.
 
 ## Auxiliary Commands
 
@@ -751,7 +751,7 @@ Around 20 seconds. This is the time it will take you to [create an account](/edi
 <dl>
 <dd markdown="1">
 
-The plugin does not parse RGB images, but will process any grayscale image (8/16-bit), including multi-channel (composite) images. This is intentional: RGB images are inflexible and images of fluorescence-labeled cells are typically non-RGB images. As explained in the [ImageJ User Guide](/ij/docs/guide/), RGB images can be converted using {% include bc path='Image|Color|Channels Tool...' color='white'%} or {% include bc path='Image|Type|' color='white'%} commands.
+The plugin does not parse RGB images, but will process any grayscale image (8/16-bit), including multi-channel (composite) images. This is intentional: RGB images are inflexible and images of fluorescence-labeled cells are typically non-RGB images. As explained in the [ImageJ User Guide](https://imagej.nih.gov/ij/docs/guide/), RGB images can be converted using {% include bc path='Image|Color|Channels Tool...' color='white'%} or {% include bc path='Image|Type|' color='white'%} commands.
 
 </dd>
 </dl>
@@ -763,7 +763,7 @@ The plugin does not parse RGB images, but will process any grayscale image (8/16
 <dl>
 <dd markdown="1">
 
-This option is only available if an orthogonal line has been created by holding {% include key key='Shift' %} when using the <span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>. See the [ImageJ User Guide](/ij/docs/guide/) for the full list of key modifiers that can be used while creating straight line ROIs.
+This option is only available if an orthogonal line has been created by holding {% include key key='Shift' %} when using the <span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>. See the [ImageJ User Guide](https://imagej.nih.gov/ij/docs/guide/) for the full list of key modifiers that can be used while creating straight line ROIs.
 
 </dd>
 </dl>
@@ -816,7 +816,7 @@ The plugin is designed for the analysis of a wide diversity of arbors and it is 
 <dl>
 <dd markdown="1">
 
-Select the table, then choose {% include bc path="File | Save As..." %}The filename extension can be specified using the *More » Options...* command (see the [ImageJ User Guide](/ij/docs/guide/) for details). Single cells cannot be modified from within ImageJ, but custom extensions (e.g., .csv, .xls or .ods) will allow the table to be imported by other spreadsheet applications.
+Select the table, then choose {% include bc path="File | Save As..." %}The filename extension can be specified using the *More » Options...* command (see the [ImageJ User Guide](https://imagej.nih.gov/ij/docs/guide/) for details). Single cells cannot be modified from within ImageJ, but custom extensions (e.g., .csv, .xls or .ods) will allow the table to be imported by other spreadsheet applications.
 
 </dd>
 </dl>
@@ -936,7 +936,7 @@ It is likely that frequent interactions with the dialog prompt(s) (from which th
 <dl>
 <dd markdown="1">
 
-Report it in the [ImageJ Forum](http://forum.imagej.net) or file an [issue](https://github.com/tferr/ASA/issues) on GitHub. Don't forget to include the [steps needed to reproduce the problem](/discuss/bugs#bug-reporting-best-practices). You may also want to check the {% include github org='tferr' repo='ASA' branch='master' path='Notes.md\#development-builds' label='release notes' %} for the latest [development version](http://jenkins.imagej.net/job/Sholl-Analysis/lastBuild/) to see if the issue has meanwhile been addressed.
+Report it in the [ImageJ Forum](http://forum.imagej.net) or file an [issue](https://github.com/tferr/ASA/issues) on GitHub. Don't forget to include the [steps needed to reproduce the problem](/discuss/bugs#bug-reporting-best-practices). You may also want to check the {% include github org='tferr' repo='ASA' branch='master' path='Notes.md#development-builds' label='release notes' %} for the latest [development version](http://jenkins.imagej.net/job/Sholl-Analysis/lastBuild/) to see if the issue has meanwhile been addressed.
 
 </dd>
 </dl>
@@ -944,7 +944,7 @@ Report it in the [ImageJ Forum](http://forum.imagej.net) or file an [issue](http
 
 ## Release Notes and Pre-releases
 
-Releases notes are available on {% include github org='tferr' repo='ASA' branch='master' path='Notes.md\#release-notes-for-sholl-analysis' label='Github' %}. If you do not mind unstable software, {% include github org='tferr' repo='ASA' branch='master' path='Notes.md\#development-builds' label='development builds' %} may be found [here](http://jenkins.imagej.net/job/Sholl-Analysis). Once new features mature and no major issues are found these development versions will be made available, as usual, through the [Updater](/plugins/updater).
+Releases notes are available on {% include github org='tferr' repo='ASA' branch='master' path='Notes.md#release-notes-for-sholl-analysis' label='Github' %}. If you do not mind unstable software, {% include github org='tferr' repo='ASA' branch='master' path='Notes.md#development-builds' label='development builds' %} may be found [here](http://jenkins.imagej.net/job/Sholl-Analysis). Once new features mature and no major issues are found these development versions will be made available, as usual, through the [Updater](/plugins/updater).
 
 ## Related Resources
 
@@ -956,11 +956,11 @@ Releases notes are available on {% include github org='tferr' repo='ASA' branch=
 
 <!-- -->
 
--   **[Neuroanatomy Resources](/plugin-index#neuroanatomy)** in this wiki
+-   **[List of ImageJ extensions](/list-of-extensions#neuroanatomy)**, which you can filter by the Neuroanatomy category
 
 <!-- -->
 
--   **[Neuroanatomy update site](/plugins/neuroanatomy)**, distributing e.g., the **[Strahler\_Analysis](/plugins/strahler-analysis)** plugin
+-   **[Neuroanatomy update site](/update-sites/neuroanatomy)**, distributing e.g., the **[Strahler_Analysis](/plugins/strahler-analysis)** plugin
 
 <!-- -->
 

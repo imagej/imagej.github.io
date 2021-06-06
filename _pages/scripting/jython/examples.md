@@ -206,7 +206,7 @@ All the above can be summarized like the following:
 ### Running a watershed plugin on an image
 
     # 1 - Obtain an image
-    blobs = IJ.openImage("https://imagej.nih.gov/ij/images/blobs.gif")
+    blobs = IJ.openImage("https://imagej.nih.govhttps://imagej.nih.gov/ij/images/blobs.gif")
     # Make a copy with the same properties as blobs image:
     imp = blobs.createImagePlus()
     ip = blobs.getProcessor().duplicate()
@@ -247,7 +247,7 @@ Continuing from the `imp` above, that contains the now watersheded "blobs" sampl
     roim = RoiManager(True)
     # Create a ParticleAnalyzer, with arguments:
     # 1. options (could be SHOW_ROI_MASKS, SHOW_OUTLINES, SHOW_MASKS, SHOW_NONE, ADD_TO_MANAGER, and others; combined with bitwise-or)
-    # 2. measurement options (see [/ij/developer/api/ij/measure/Measurements.html Measurements])
+    # 2. measurement options (see [https://imagej.nih.gov/ij/developer/apihttps://imagej.nih.gov/ij/measure/Measurements.html Measurements])
     # 3. a ResultsTable to store the measurements
     # 4. The minimum size of a particle to consider for measurement
     # 5. The maximum size (idem)
@@ -351,10 +351,10 @@ A data file containing rows with 4 columns:
 
 The easiest way is to grab an image and call an ImageJ command to show its histogram:
 
-    imp = IJ.openImage("https://imagej.nih.gov/ij/images/blobs.gif")
+    imp = IJ.openImage("https://imagej.nih.govhttps://imagej.nih.gov/ij/images/blobs.gif")
     IJ.run(imp, "Histogram", "")
 
-How ImageJ does it, internally, has to do with the [ImageStatisics](/ij/developer/api/ij/process/ImageStatistics.html) class:
+How ImageJ does it, internally, has to do with the [ImageStatisics](https://imagej.nih.gov/ij/developer/apihttps://imagej.nih.gov/ij/process/ImageStatistics.html) class:
 
     stats = imp.getStatistics()
     print stats.histogram
@@ -379,7 +379,7 @@ array('i',[0, 0, 0, 0, 0, 0, 0, 0, 53, 0, 0, 0, 0, 0, 0, 0, 304,
 
 The histogram, area and mean are computed by default. Other values like the median need to be specified.
 
-To calculate other parameters, specify them by bitwise-or composition (see flags in [Measurements](/ij/developer/api/ij/measure/Measurements.html)):
+To calculate other parameters, specify them by bitwise-or composition (see flags in [Measurements](https://imagej.nih.gov/ij/developer/apihttps://imagej.nih.gov/ij/measure/Measurements.html)):
 
     stats = imp.getStatistics(Measurements.MEAN | Measurements.MEDIAN | Measurements.AREA)
     print "mean:", stats.mean, "median:", stats.median, "area:", stats.area
@@ -396,7 +396,7 @@ If we set a ROI to the image, then we are measuring only for the inside of the R
 
 `mean: 104.96356275303644 median: 64.0 area: 1976.0`
 
-To display the histogram window ourselves, we may use the [HistogramWindow](/ij/developer/api/ij/gui/HistogramWindow.html) class:
+To display the histogram window ourselves, we may use the [HistogramWindow](https://imagej.nih.gov/ij/developer/apihttps://imagej.nih.gov/ij/gui/HistogramWindow.html) class:
 
     hwin = HistogramWindow(imp)
 
@@ -521,7 +521,7 @@ Notice we used:
 
 Suppose you have a 4D multicolor image, and want to obtain a stack of slices corresponding to a specific color channel and time frame.
 
-The [CompositeImage](https://javadoc.scijava.org/ImageJ1/ij/CompositeImage.html) is a stack whose slices are interpreted as belonging to specific color channels, Z slices and time frames. To find out which slice corresponds to what, use the `getStackIndex` method of the [ImagePlus](https://javadoc.scijava.org/ImageJ1/ij/ImagePlus.html), which translates between color channels, z slices and time frames to the slice index in the underlying [ImageStack](https://javadoc.scijava.org/ImageJ1/ij/ImageStack.html).
+The [CompositeImage](https://javadoc.scijava.org/ImageJ1https://imagej.nih.gov/ij/CompositeImage.html) is a stack whose slices are interpreted as belonging to specific color channels, Z slices and time frames. To find out which slice corresponds to what, use the `getStackIndex` method of the [ImagePlus](https://javadoc.scijava.org/ImageJ1https://imagej.nih.gov/ij/ImagePlus.html), which translates between color channels, z slices and time frames to the slice index in the underlying [ImageStack](https://javadoc.scijava.org/ImageJ1https://imagej.nih.gov/ij/ImageStack.html).
 
     from ij import IJ, ImagePlus, ImageStack
 
@@ -1046,7 +1046,7 @@ clicked on: imp[Untitled-1 400x200x1]
 
 ### Apply a binary mask to every slice in an image stack
 
-Will work with regular stacks and with any kind of complex stack like a composite image or a 4d volume. Keep in mind that all stack types in ImageJ consists of a sequence of 2d images, each editable with an [ImageProcessor](/ij/developer/api/ij/process/ImageProcessor.html) obtained from the [ImageStack](/ij/developer/api/ij/ImageStack.html) that one can get from the [ImagePlus](/ij/developer/api/ij/ImagePlus.html). (The [ImagePlus](/ij/developer/api/ij/ImagePlus.html) being what the opener or the [WindowManager](/ij/developer/api/ij/WindowManager.html) provides.)
+Will work with regular stacks and with any kind of complex stack like a composite image or a 4d volume. Keep in mind that all stack types in ImageJ consists of a sequence of 2d images, each editable with an [ImageProcessor](https://imagej.nih.gov/ij/developer/apihttps://imagej.nih.gov/ij/process/ImageProcessor.html) obtained from the [ImageStack](https://imagej.nih.gov/ij/developer/apihttps://imagej.nih.gov/ij/ImageStack.html) that one can get from the [ImagePlus](https://imagej.nih.gov/ij/developer/apihttps://imagej.nih.gov/ij/ImagePlus.html). (The [ImagePlus](https://imagej.nih.gov/ij/developer/apihttps://imagej.nih.gov/ij/ImagePlus.html) being what the opener or the [WindowManager](https://imagej.nih.gov/ij/developer/apihttps://imagej.nih.gov/ij/WindowManager.html) provides.)
 
     # Albert Cardona 2012-10-05 for Sara Abrahamsson
     #
@@ -1589,7 +1589,7 @@ A better example that exploits the capabilities of the `Weaver.inline` is the fo
     from fiji.scripting import Weaver
 
     # The currently open image, an 8-bit stack
-    imp = IJ.openImage("https://imagej.nih.gov/ij/images/bat-cochlea-volume.zip")
+    imp = IJ.openImage("https://imagej.nih.govhttps://imagej.nih.gov/ij/images/bat-cochlea-volume.zip")
 
     slices = [None, None]
 
@@ -1626,7 +1626,7 @@ Instead, here is the same code but using the `Weaver.method` approach, where, in
     from fiji.scripting import Weaver
 
     # The currently open image, an 8-bit stack
-    imp = IJ.openImage("https://imagej.nih.gov/ij/images/bat-cochlea-volume.zip")
+    imp = IJ.openImage("https://imagej.nih.govhttps://imagej.nih.gov/ij/images/bat-cochlea-volume.zip")
 
     w = Weaver.method(
       """
@@ -1693,7 +1693,7 @@ Here is a small example, using `Weaver.method`, that uses imports. The script su
 
     imp.updateAndDraw()
 
-Of course the Weaver is a java library, and may be used from any scripting language such as [Javascript](/scripting/javascript), [JRuby](/scripting/jruby), and [others](/plugin-index#scripting).
+Of course the Weaver is a java library, and may be used from any scripting language such as [Javascript](/scripting/javascript), [JRuby](/scripting/jruby), and [others](/scripting).
 
 All the above is inspired by the [Scientific Python Weaver, or scipy Weaver](http://www.scipy.org/Cookbook/Weave), which inlines C code inside a python file.
 
@@ -1726,7 +1726,7 @@ IMPORTANT: notice that, when executing scripts from the command line, there is n
 
 ### Catching errors from a running macro
 
-ImageJ exits with zero even when it fails (see [bug report](https://github.com/imagej/imagej/issues/61)). A possible fix is to convert the macro into a plugin but a quicker fix, is to wrap the macro call into a script. For this purpose, it is enough to check the returned string of `runMacroCode`, which will return the string `[aborted]` in case of [failure](http://jenkins.imagej.net/job/ImageJ1-javadoc/javadoc/ij/plugin/Macro_Runner.html#runMacro%28java.lang.String,%20java.lang.String%29):
+ImageJ exits with zero even when it fails (see [bug report](https://github.com/imagej/imagej/issues/61)). A possible fix is to convert the macro into a plugin but a quicker fix, is to wrap the macro call into a script. For this purpose, it is enough to check the returned string of `runMacroCode`, which will return the string `[aborted]` in case of [failure](http://jenkins.imagej.net/job/ImageJ1-javadoc/javadochttps://imagej.nih.gov/ij/plugin/Macro_Runner.html#runMacro%28java.lang.String,%20java.lang.String%29):
 
     from ij import IJ
     import sys

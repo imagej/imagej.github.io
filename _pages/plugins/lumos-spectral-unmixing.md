@@ -4,7 +4,7 @@ title: LUMoS Spectral Unmixing
 categories: [Color processing,Colocalization]
 ---
 
-{% include info-box software='ImageJ/Fiji' name='LUMoS Spectral Unmixing' author='Tristan McRae' maintainer='Tristan McRae' released='June 2019' source=' [GitHub](https://github.com/tristan-mcrae-rochester/Multiphoton-Image-Analysis/blob/master/Spectral%20Unmixing/Code/ImageJ-FIJI/LUMoS_Spectral_Unmixing.java)' category='[Plugins](/plugin-index), [Color Processing](/plugin-index#color-processing), [Colocalization](/plugin-index#colocalization)' %}
+{% include info-box software='ImageJ/Fiji' name='LUMoS Spectral Unmixing' author='Tristan McRae' maintainer='Tristan McRae' released='June 2019' source=' [GitHub](https://github.com/tristan-mcrae-rochester/Multiphoton-Image-Analysis/blob/master/Spectral%20Unmixing/Code/ImageJ-FIJI/LUMoS_Spectral_Unmixing.java)' category='Plugins, Color Processing, Colocalization' %}
 
 # Introduction
 
@@ -40,9 +40,9 @@ A user guide for this plugin with step by step instructions can be found [ here]
 
 The following are alternative spectral unmixing ImageJ plugins. These plugins both use linear algebra based approaches. Linear unmixing approaches are not applicable in cases where fluorophores outnumber detection channels. Additionally, they both require manual ROI selection or single-fluorophore references which can be laborious to acquire. Apart from these constraints, both of these plugins can be very useful tools in the right settings.
 
-[Spectral Unmixing Plugins](/ij/plugins/spectral-unmixing.html) by Joachim Walter
+[Spectral Unmixing Plugins](https://imagej.nih.gov/ij/plugins/spectral-unmixing.html) by Joachim Walter
 
-[Spectral Unmixing Plugin](/ij/plugins/spectral-unmixing-plugin.html) by Seth Gammon
+[Spectral Unmixing Plugin](https://imagej.nih.gov/ij/plugins/spectral-unmixing-plugin.html) by Seth Gammon
 
 # References
 

@@ -23,7 +23,7 @@ There are two objects upon which this plugin can operate:
 
 If you have a bunch of images open in imageJ, the plugin starts by converting those images into a stack. So basically, it needs a stack to create the montage. If you don't have one it will created one for you.
 
-This means that any stack can be used. For example, the fly brain stack that comes with the FIJI distribution of imageJ \[*File =&gt; Open Samples =&gt; Fly Brian (1MB)*\] is a pre-made stack consisting of 57 images that you can access to learn how to use this plugin.
+This means that any stack can be used. For example, the fly brain stack that comes with the Fiji distribution of imageJ \[*File =&gt; Open Samples =&gt; Fly Brian (1MB)*\] is a pre-made stack consisting of 57 images that you can access to learn how to use this plugin.
 
 ### **Main Window**
 

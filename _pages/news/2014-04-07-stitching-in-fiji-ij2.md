@@ -1,5 +1,4 @@
 ---
-mediawiki: 2014-04-07_-_Stitching_in_Fiji/IJ2
 title: 2014-04-07 - Stitching in Fiji/IJ2
 ---
 

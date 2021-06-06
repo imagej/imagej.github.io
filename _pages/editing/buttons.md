@@ -8,12 +8,14 @@ This page demonstrates how to use the `button` include tag.
 
 ## Usage
 
-This tag simply creates a non-functional [button](https://www.w3schools.com/tags/tag_button.asp) with the given text.
+This tag creates a visual button with the given text. It is intended for use documenting features and workflows of software applications; these "buttons" do not perform any action when clicked on the page.
 
 {% capture button-code %}
-{% raw %}{% include button label="My Button"%}{% endraw %}
+{% raw %}Click {% include button label="OK" %} to continue,
+or {% include button label="Cancel" %} to stop.{% endraw %}
 {% endcapture %}
 {% capture button-result %}
-{% include button label="My Button"%}
+Click {% include button label="OK" %} to continue,
+or {% include button label="Cancel" %} to stop.
 {% endcapture %}
 {% include editing/example code=button-code result=button-result %}

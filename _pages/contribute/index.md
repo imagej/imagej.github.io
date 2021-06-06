@@ -37,7 +37,7 @@ Note that since ImageJ2 has a modular [architecture](/develop/architecture), it 
 
 ## ImageJ1
 
-Changes to [ImageJ1](/software/imagej1) are made by {% include person id='rasband' %}, who is the sole [ImageJ1](/software/imagej1) developer. He takes patch submissions and then reworks them to fit within the project's development model and style before merging them. Attribution for the changes is noted in the release notes (see [ImageJ1's Release Notes/News](/ij/notes.html)).
+Changes to [ImageJ1](/software/imagej1) are made by {% include person id='rasband' %}, who is the sole [ImageJ1](/software/imagej1) developer. He takes patch submissions and then reworks them to fit within the project's development model and style before merging them. Attribution for the changes is noted in the release notes (see [ImageJ1's Release Notes/News](https://imagej.nih.gov/ij/notes.html)).
 
 Methods of getting the patch to Wayne include:
 

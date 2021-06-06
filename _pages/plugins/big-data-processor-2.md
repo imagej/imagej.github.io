@@ -12,7 +12,7 @@ categories: [Uncategorized]
 
 ## Overview
 
-BigDataProcessor2 is a FIJI plugin for efficient inspection and processing of big image data. For more information, please visit the GitHub [README](https://github.com/embl-cba/bigDataProcessor2#bigdataprocessor2).
+BigDataProcessor2 is a Fiji plugin for efficient inspection and processing of big image data. For more information, please visit the GitHub [README](https://github.com/embl-cba/bigDataProcessor2#bigdataprocessor2).
 
 ## Installation
 

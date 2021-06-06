@@ -1,14 +1,14 @@
 ---
 mediawiki: Multi_Stack_Montage
 title: Multi Stack Montage
-categories: [Uncategorized]
+categories: [Stacks, Montage, Visualization]
 ---
 
 
 {% capture source%}
 {% include github org='PTBIOP' repo='ijp-multi-stack-montage' %}
 {% endcapture %}
-{% include info-box name='Multi Stack Montage' software='ImageJ' author='Olivier Burri, Romain Guiet' maintainer='Olivier Burri' filename='Multi\_Stack\_Montage.jar' released='August 2015' latest-version='August 2015' source=source status='stable' category='[Stacks\|Montage\|Visualization](/plugin-index)' website=' [BIOP Staff Page](http://biop.epfl.ch/INFO_Facility.html#staff)' %}
+{% include info-box name='Multi Stack Montage' software='ImageJ' author='Olivier Burri, Romain Guiet' maintainer='Olivier Burri' filename='Multi\_Stack\_Montage.jar' released='August 2015' latest-version='August 2015' source=source status='stable' website=' [BIOP Staff Page](http://biop.epfl.ch/INFO_Facility.html#staff)' %}
 
 ## Purpose
 

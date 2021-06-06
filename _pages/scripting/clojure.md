@@ -27,7 +27,7 @@ See [Scripting Help](/scripting) for details on keybindings and how to use the i
 A minimal, complete clojure example:
 
     (import '(ij IJ))
-    (def gold (IJ/openImage "https://imagej.nih.gov/ij/images/AuPbSn40.jpg"))
+    (def gold (IJ/openImage "https://imagej.nih.govhttps://imagej.nih.gov/ij/images/AuPbSn40.jpg"))
     (.show gold)
 
 To create scripts, just save them as .clj text files (with an underscore in the name) in any folder or subfolder of Fiji's plugins folder, and run {% include bc path='Plugins|Scripting|Refresh Clojure Scripts'%} to update the menus (it's done automatically at start up as well).
@@ -299,13 +299,13 @@ Above, note the dot '.' after Random, which indicates we are calling the constru
 
 ImageJ has three basic objects:
 
--   The <b>[ImagePlus](/ij/developer/api/ij/ImagePlus.html)</b>, which wraps the ImageProcessor and contains properties and pointers to the ROI (region of interest) and the ImageWindow that may be displaying the image.
--   The <b>[ImageProcessor](/ij/developer/api/ij/process/ImageProcessor.html)</b>, which is an abstract class enabling the high-level manipulation of and access to pixels. Its subclasses each wraps a different kind of data type:
+-   The <b>[ImagePlus](https://imagej.nih.gov/ij/developer/apihttps://imagej.nih.gov/ij/ImagePlus.html)</b>, which wraps the ImageProcessor and contains properties and pointers to the ROI (region of interest) and the ImageWindow that may be displaying the image.
+-   The <b>[ImageProcessor](https://imagej.nih.gov/ij/developer/apihttps://imagej.nih.gov/ij/process/ImageProcessor.html)</b>, which is an abstract class enabling the high-level manipulation of and access to pixels. Its subclasses each wraps a different kind of data type:
     -   ByteProcessor - byte\[\]
     -   ShortProcessor - short\[\]
     -   FloatProcessor - float\[\]
     -   ColorProcessor - int\[\] (byte-packed ARGB, but Alpha channel is ignored)
--   The <b>[ImageStack](/ij/developer/api/ij/ImageStack.html)</b> which contains unfortunately not an array of ImageProcessor, but an Object\[\] containing an homogeneous list of equal length byte\[\], or float\[\], etc.
+-   The <b>[ImageStack](https://imagej.nih.gov/ij/developer/apihttps://imagej.nih.gov/ij/ImageStack.html)</b> which contains unfortunately not an array of ImageProcessor, but an Object\[\] containing an homogeneous list of equal length byte\[\], or float\[\], etc.
 
 For extensive documentation, see the [Anatomy of an ImageJ image](http://albert.rierol.net/imagej_programming_tutorials.html#ImageJ%20programming%20basics) ImageJ programming basics tutorial.
 
@@ -362,7 +362,7 @@ An alternative way would be to simply duplicate the processor of imp-1, and then
 
 ### Resizing an ImageStack
 
-This one is harder, because an ImageStack is just a wrapper for Object\[\] list of pixel arrays. ImageJ though provides a mid-level resizing method, via the [CanvasResizer](/ij/developer/api/ij/plugin/CanvasResizer.html) class:
+This one is harder, because an ImageStack is just a wrapper for Object\[\] list of pixel arrays. ImageJ though provides a mid-level resizing method, via the [CanvasResizer](https://imagej.nih.gov/ij/developer/apihttps://imagej.nih.gov/ij/plugin/CanvasResizer.html) class:
 
     (import '(ij.plugin CanvasResizer)
             '(ij IJ ImagePlus))
@@ -1109,7 +1109,7 @@ So now any changes to the original <i>pixels</i> array will not affect the new s
 
 ## Generating java classes in .class files from clojure code
 
-Using ahead of time (AOT) compilation with [gen-class](http://clojure.org/compilation), any clojure code can be compiled to a java class. Such class can then be used from java code, or from any scripting language like [jython](/scripting/jython), [jruby](/scripting/jruby), [javascript](/scripting/javascript), and [any other](/plugin-index#scripting).
+Using ahead of time (AOT) compilation with [gen-class](http://clojure.org/compilation), any clojure code can be compiled to a java class. Such class can then be used from java code, or from any scripting language like [jython](/scripting/jython), [jruby](/scripting/jruby), [javascript](/scripting/javascript), and [any other](/scripting).
 
 One way to do so is to place a [gen-class](http://clojure.org/compilation) declaration in a namespace block.
 
@@ -1125,7 +1125,7 @@ To compile the clojure code to .class files, you need:
 For example:
 
     $ mkdir classes
-    $ java -cp .:../../ij.jar:../../jars/clojure.jar:./classes/:./fj/tests/process/ clojure.lang.Repl
+    $ java -cp .:../..https://imagej.nih.gov/ij.jar:../../jars/clojure.jar:./classes/:./fj/tests/process/ clojure.lang.Repl
 
 `user=> (compile 'fj.tests.process.FloatProcessorPlus)`  
 `fj.tests.process.FloatProcessorPlus`  
@@ -1156,7 +1156,7 @@ The example clojure code:
     ; ...
     ; $ cd ../../../
     ; $ mkdir classes
-    ; $ java -cp ../../ij.jar:../../jars/clojure.jar:./classes/:.:./fj/tests/process/ clojure.lang.Repl
+    ; $ java -cp ../..https://imagej.nih.gov/ij.jar:../../jars/clojure.jar:./classes/:.:./fj/tests/process/ clojure.lang.Repl
     ; user=> (compile 'fj.tests.process.FloatProcessorPlus)
     ; fj.tests.process.FloatProcessorPlus
     ; user=>
@@ -1165,7 +1165,7 @@ The example clojure code:
     ; structure in the ./classes/ folder.
     ;
     ; Then run like any other java class with a static public void main method:
-    ; $ java -cp .:../../ij.jar:../../jars/clojure.jar:./classes fj.tests.process.FloatProcessorPlus
+    ; $ java -cp .:../..https://imagej.nih.gov/ij.jar:../../jars/clojure.jar:./classes fj.tests.process.FloatProcessorPlus
     ;
 
     (ns fj.tests.process.FloatProcessorPlus

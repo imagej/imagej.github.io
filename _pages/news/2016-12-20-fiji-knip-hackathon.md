@@ -1,5 +1,4 @@
 ---
-mediawiki: 2016-12-20_-_Fiji_+_KNIP_hackathon
 title: 2016-12-20 - Fiji + KNIP hackathon
 ---
 
@@ -8,6 +7,10 @@ From Tuesday, December 6, 2016 through Friday, December 16, 2016, the [Max Planc
 ## Timeline
 
 The following chart illustrates when everyone was present:
+
+{% include img name="timeline" src="fiji-knip-hackathon-timeline.png" %}
+
+<!-- The above image was rendered by MediaWiki. Original timeline data, as converted, follows:
 
 <timeline> Preset = TimeHorizontal\_AutoPlaceBars\_UnitYear
 
@@ -105,21 +108,22 @@ PlotData=
 
 </timeline>
 
+-->
+
 ## Gallery
 
-
-{% capture content%}
-/media/news/hackdd16-beautiful-dresden.jpg \| Beautiful Dresden
-/media/news/hackdd16-beer-and-code.jpg \| Beer and code
-/media/news/hackdd16-better-software.jpg \| Better software, better research!
-/media/news/hackdd16-day1.jpg \| First day
-/media/news/hackdd16-hackers.jpg \| Hackers at work
-/media/news/hackdd16-hacking.jpg \| Hacking
-/media/news/hackdd16-mpicbg-xmas-party.jpg \| MPI-CBG Christmas party
-/media/news/hackdd16-waldschlosschen.jpg \| Waldschloßchen
-/media/news/hackdd16-xmas.jpg \| Merry Christmas!
+{% capture gallerycontent %}
+/media/news/hackdd16-beautiful-dresden.jpg | Beautiful Dresden
+/media/news/hackdd16-beer-and-code.jpg | Beer and code
+/media/news/hackdd16-better-software.jpg | Better software, better research!
+/media/news/hackdd16-day1.jpg | First day
+/media/news/hackdd16-hackers.jpg | Hackers at work
+/media/news/hackdd16-hacking.jpg | Hacking
+/media/news/hackdd16-mpicbg-xmas-party.jpg | MPI-CBG Christmas party
+/media/news/hackdd16-waldschlosschen.jpg | Waldschloßchen
+/media/news/hackdd16-xmas.jpg | Merry Christmas!
 {% endcapture %}
-{% include gallery content=content%}
+{% include gallery content=gallerycontent %}
 
 
 ## Hackathon progress
@@ -132,7 +136,7 @@ PlotData=
 
 ### Ulrik Günther
 
--   continued work on the [Scenery](Scenery) 3D rendering backend for [ThreeDViewer](/plugins/sciview) and [ClearVolume](/plugins/clearvolume) 2.0:
+-   continued work on the [Scenery](https://github.com/scenerygraphics/scenery) 3D rendering backend for [ThreeDViewer](/plugins/sciview) and [ClearVolume](/plugins/clearvolume) 2.0:
     -   introduced the library and its features to the community
     -   fixed native code dependencies, included CI builds
     -   worked on the Vulkan ([1](https://www.khronos.org/vulkan)) backend for higher rendering performance, which finally got merged (see {% include github org='ClearVolume' repo='scenery' pr='31' label='ClearVolume/scenery\#31' %})
@@ -143,7 +147,7 @@ PlotData=
 ### Robert Haase
 
 -   Participated in discussions about [Fiji](/software/fiji) release cycle and [ImageJ Ops](/libs/imagej-ops) based feature extraction
--   Bugfixed a tool for visualising Meshes in the good old [3D Viewer](/plugins/3d-viewer) which were derived from ArrayList&lt;RandomAccessibleInterval<BoolType>&gt;s as an intermediate solution until the [ThreeDViewer](/plugins/sciview) is ready.
+-   Bugfixed a tool for visualising Meshes in the good old [3D Viewer](/plugins/3d-viewer) which were derived from `ArrayList<RandomAccessibleInterval<BoolType>>`s as an intermediate solution until the [ThreeDViewer](/plugins/sciview) is ready.
 -   Built an ImageJ-Ops based particle analyser, which will in the future allow processing 3D images in a way like 2D images were processed using the good old [Particle Analysis](/imaging/particle-analysis) tool
 -   With {% include person id='maarzt' %}, {% include person id='fjug' %}, and {% include person id='ctrueden' %} we launched the work on a `PlotService` for ImageJ2.
 
@@ -170,7 +174,7 @@ PlotData=
 -   With {% include person id='rimadoma' %}, improved [SciJava Common](/libs/scijava#scijava-common) context injection to be recursive, to fix bugs with service population of commands ({% include github org='scijava' repo='scijava-common' commit='b0c981b24fc8ec845656574d95f9eddbc285728e' label='scijava/scijava-common@b0c981b2' %}, {% include github org='imagej' repo='imagej-ops' commit='4f78eca5b061881865c2a2c1702a98e634248aa5' label='imagej/imagej-ops@4f78eca5' %}).
 -   With {% include person id='rimadoma' %}, add a validater callback for parameter validation ({% include github org='scijava' repo='scijava-common' commit='66ed844ee76a264ca83629f0fef50c9b726c8897' label='scijava/scijava-common@66ed844e' %}, {% include github org='scijava' repo='scijava-common' commit='70c50f48cc20cec0a747a000778f013c7380155d' label='scijava/scijava-common@70c50f48' %}).
 -   With {% include person id='maarzt' %}, began work on a `PlotService` for ImageJ2 ([maarzt/imagej-ui-swing@plot-service](https://github.com/imagej/imagej-ui-swing/compare/plot-service...maarzt:plot-service)).
--   Participated in technical discussions with various people, including a "big-picture" status update for ImageJ2 covering my [primary priorities](User_Rueden#primary-projects); see [Technical discussions](#technical-discussions) section below.
+-   Participated in technical discussions with various people, including a "big-picture" status update for ImageJ2 covering my [primary priorities](/people/ctrueden#what-is-curtis-working-on); see [Technical discussions](#technical-discussions) section below.
 
 ### Tobias Pietzsch
 
@@ -217,23 +221,14 @@ PlotData=
 
 -   Separated BigDataServer into two versions. One is SimpleBigDataServer which can be launched by adding xml datasets in the command line. The other is (Advanced) BigDataServer which is running with H2 DBMS backend.
 -   ER design is completed with {% include person id='tpietzsch' %}.
-
-<!-- -->
-
 -   (Advanced) BigDataServer
     -   H2 DBMS integration is completed.
     -   User/Dataset/Tag/Annotation entity relationships are decided and made in the hackathon.
     -   DataSets are managed as either private or public according to users.
     -   Manager context is still supported as well as user management is possible there.
     -   Each user can share private datasets with other users.
-
-<!-- -->
-
 -   SimpleBigDataServer
     -   This is almost same as the previous command line based BigDataServer.
-
-<!-- -->
-
 -   Technical notes
     -   Upgraded the stringtemplate with v4(org.stringtemplate.v4.ST) which is getting powerful for templating strings for HTML tables.
     -   By using AJAX, database CRUD operations are carried in a responsive way.

@@ -4,7 +4,7 @@ title: Invasion assay
 categories: [Uncategorized]
 ---
 
-{% include info-box name='Selective Plane Illumination Microscopy Invasion assay' software='Fiji' author='Svenja Rühland, David Hörl, Hartmann Harz' maintainer='David Hörl' released='Decembre 2014' latest-version='Decembre 2014' category='[Registration](/plugin-index#registration)' %}
+{% include info-box name='Selective Plane Illumination Microscopy Invasion assay' software='Fiji' author='Svenja Rühland, David Hörl, Hartmann Harz' maintainer='David Hörl' released='Decembre 2014' latest-version='Decembre 2014' category='Registration' %}
 
 SPIM allows for three-dimensional imaging of thick specimens. Among other approaches this can be exploited to analyse invasion of different cell types deep into tissues. Due to their potential role in cancer treatment the invasion of mesenchymal stem cells (MSC) into tumors is a medically relevant issue.
 

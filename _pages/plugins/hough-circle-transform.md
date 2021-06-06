@@ -16,7 +16,7 @@ categories: [Analysis]
 {% capture source%}
 {% include github org='llamero' repo='Local\_Hough\_Circle' %}
 {% endcapture %}
-{% include info-box name='Hough Circle Transform' software='plugin' update-site='UCB Vision Sciences' author=author maintainer=maintainer source=source released='February 4<sup>th</sup>, 2017' latest-version='September 21<sup>st</sup>, 2018 (v1.0.0)' status='stable, active' category='[Analysis](/plugin-index#analysis), [Feature Extraction](/plugin-index#feature-extraction)' %}
+{% include info-box name='Hough Circle Transform' software='plugin' update-site='UCB Vision Sciences' author=author maintainer=maintainer source=source released='February 4<sup>th</sup>, 2017' latest-version='September 21<sup>st</sup>, 2018 (v1.0.0)' status='stable, active' category='Analysis, Feature Extraction' %}
 
 ## Introduction
 
@@ -237,7 +237,7 @@ NOTE: Hough Circle Transform is only one of the plugins included in the [UCB Vis
 
 ## Acknowledgements
 
-This plugin is a modified version of the Hough circle transform implemented by [Hemerson Pistori and Eduardo Rocha Costa](/ij/plugins/hough-circles.html). The transform algorithm was based off of an original implementation by [Mark Schulze](http://www.markschulze.net/).
+This plugin is a modified version of the Hough circle transform implemented by [Hemerson Pistori and Eduardo Rocha Costa](https://imagej.nih.gov/ij/plugins/hough-circles.html). The transform algorithm was based off of an original implementation by [Mark Schulze](http://www.markschulze.net/).
 
 This plugin was developed as part of the University of California, Berkeley Vision Sciences core grant NIH P30EY003176.
 

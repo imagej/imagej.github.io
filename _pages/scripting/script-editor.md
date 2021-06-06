@@ -35,7 +35,7 @@ Programming
 Language specific tools  
 
 -   Organization of `import` declarations
--   Access to online documentation ([Javadocs](http://javadoc.imagej.net), [Built-in Macro Functions](/ij/developer/macro/functions.html))
+-   Access to online documentation ([Javadocs](http://javadoc.imagej.net), [Built-in Macro Functions](https://imagej.nih.gov/ij/developer/macro/functions.html))
 -   Access to source code in `.jar` files
 
 Interface  

@@ -12,7 +12,8 @@ team-debuggers: Cameron Lloyd | /people/camlloyd
 team-reviewers: Cameron Lloyd | /people/camlloyd
 team-support: Cameron Lloyd | /people/camlloyd
 team-maintainers: Cameron Lloyd | /people/camlloyd
-categories: [Uncategorized]
+categories: [Analysis]
+doi: 10.1002/cyto.a.20747
 ---
 
 *An ImageJ plugin for intensity-based three filter-set FRET.*
@@ -26,7 +27,7 @@ categories: [Uncategorized]
 ## Citation
 
 This software is based on a publication. If you use it in your work, please cite:
-{% include citation doi='10.1002/cyto.a.20747' %}
+{% include citation %}
 
 ## See also
 

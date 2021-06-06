@@ -24,7 +24,7 @@ We are always looking for more ways to improve the software to meet this goal of
 
 ## Extensibility
 
-[Extensibility](/develop/architecture#extensibility) is [ImageJ](/software/imagej)'s greatest strength. ImageJ is not just a software application—it is an extensible *platform* for the development of image [visualization](/plugin-index#visualization), [segmentation](/imaging/segmentation), [registration](/plugin-index#registration), and [analysis](/plugin-index#analysis) routines.
+[Extensibility](/develop/architecture#extensibility) is [ImageJ](/software/imagej)'s greatest strength. ImageJ is not just a software application—it is an extensible *platform* for the development of image [visualization](/imaging/visualization), [segmentation](/imaging/segmentation), [registration](/imaging/registration), and analysis routines.
 
 Isaac Newton attributed his success to {% include wikipedia title='Standing on the shoulders of giants' text='standing on the shoulders of giants'%}. The [SciJava component collection](/develop/architecture)'s powerful [plugin](/plugins) mechanism and [open source](/licensing/open-source) software process codify that metaphor into the software itself. Not only are there many different types of plugins, but it is also possible to extend the system with your own new types of plugins. See the [Extensibility](/develop/architecture#extensibility) page for details.
 
@@ -32,7 +32,7 @@ Isaac Newton attributed his success to {% include wikipedia title='Standing on t
 
 One of the central goals of the [SciJava component collection](/develop/architecture) is to extend Java's mantra of "write once, run anywhere" in new directions: [ImageJ Ops](/libs/imagej-ops) for image processing algorithms, and [SCIFIO](/libs/scifio) for scientific image I/O.
 
-[ImageJ2](/software/imagej2) commands work not only in the [ImageJ](/software/imagej) user interface, but also from many [other applications](/plugin-index#related-software) in the [SciJava ecosystem](SciJava), including [CellProfiler](/software/cellprofiler), [OMERO](/software/omero), [KNIME](/software/knime) and [Alida](/software/alida).
+[ImageJ2](/software/imagej2) commands work not only in the [ImageJ](/software/imagej) user interface, but also from many [other applications](/software) in the [SciJava ecosystem](SciJava), including [CellProfiler](/software/cellprofiler), [OMERO](/software/omero), [KNIME](/software/knime) and [Alida](/software/alida).
 
 ## Compatibility
 

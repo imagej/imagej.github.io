@@ -1,5 +1,4 @@
 ---
-mediawiki: 2015-10-27_-_TrackMate_v2.8.0_released
 title: 2015-10-27 - TrackMate v2.8.0 released
 ---
 
@@ -60,7 +59,7 @@ TrackMate initial design always favored speed over memory consumption. This can 
 
 To deal with this TrackMate now ships a **Block LoG detector**. It is identical to the LoG detector, except that it splits the image in smaller XY blocks and processes them independently. If you process each of this block sequentially, you can drastically reduce memory usage.
 
-<figure><img src="/media/news/trackmate-blocklogdetector.png" title="TrackMate_BlockLogDetector.png" width="600" alt="TrackMate_BlockLogDetector.png" /><figcaption aria-hidden="true">TrackMate_BlockLogDetector.png</figcaption></figure>
+{% include img src="/media/news/trackmate-blocklogdetector.png" width="600px" alt="TrackMate Block LoG Detector" %}
 
 Of course there is a price to pay: Spots that are present exactly on the block borders might be detected twice on two different blocks. This will have a very detrimental effect on the subsequent tracking step. To temper this problem, this detector prunes spots that are found inside other spots.
 
@@ -74,7 +73,7 @@ To configure how many threads TrackMate can use, Go the the {% include bc path="
 
 If you need to capture spot images with a larger radius than what the spots have, set the display radius ratio. This is very useful when you need to inspect a larger spatial context around spots.
 
-<img src="/media/news/trackschemehonorsradiusratio.png" width="600"/>
+{% include img src="/media/news/trackschemehonorsradiusratio.png" width="600px" %}
 
 ### The *Extract track stack* action improved.
 
@@ -94,17 +93,12 @@ Though the absolute value does not matter, the one reported by the LoG detector 
 
 Now, the quality value returned by the LoG detector is such that:
 
--   It has a maximal value for spots that have the size this kernel is tuned
-
-to (for equal spot intensity).
+-   It has a maximal value for spots that have the size this kernel is tuned to (for equal spot intensity).
 
 -   The quality will be of the same order of magnitude than the raw spot (if it
-
 has the right size).
 
--   If the image has its calibration changed by a constant factor, one will
-
-retrieve the same quality value value than before scaling. However, I (JYT) could not derive the exact formula if the image is scaled differently across X, Y and Z.
+-   If the image has its calibration changed by a constant factor, one will retrieve the same quality value value than before scaling. However, I (JYT) could not derive the exact formula if the image is scaled differently across X, Y and Z.
 
 ## Bugfixes.
 
@@ -126,6 +120,6 @@ This bug was first reported by Anna Gilles though many may have feel the pain.
 
 Now fixed. Bug reported by Jan Eglinger.
 
-{% include person id='tinevez' %} [CCCT](User_CCCT) ([talk](User_talk_CCCT)) 10:53, 27 October 2015 (CDT)
+{% include person id='tinevez' %} 10:53, 27 October 2015 (CDT)
 
 

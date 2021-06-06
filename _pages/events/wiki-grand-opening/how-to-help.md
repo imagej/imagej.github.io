@@ -17,8 +17,8 @@ nav-title: How to Help
 2.  **Improve or expand the content** of existing pages,
     as time and interest allows.
 3.  **Standardize the categories** for plugins. (Check out the
-    [plugin index](/plugin-index). See how many categories there are?
-    We need to pare it down!)
+    [list-of-extensions](/list-of-extensions).
+    See how many categories there are? We need to pare it down!)
 4.  **Get familiar** with the new wiki, and **provide feedback**:
     what works, what doesn't, etc.
 
@@ -92,9 +92,10 @@ In many ways, this new wiki is much more powerful than the old site.
 ## Questions to consider
 
 1.  **What should the official categories be** for plugins? Right now, people
-    can tag whatever they want for the categories, and [it shows in the plugin
-    index](/plugin-index). Do you have opinions? Or know of any kind of
-    community standard we could use here? Comment on {% include github
+    can tag whatever they want for the categories, and
+    [it shows in the list of extensions](/list-of-extensions).
+    Do you have opinions? Or know of any kind of community standard we could
+    use here? Comment on {% include github
       org='imagej' repo='imagej.github.io' issue=119 label='issue 119' %}!
 
 2.  `/update-sites` contains pages documenting what update sites are and how to

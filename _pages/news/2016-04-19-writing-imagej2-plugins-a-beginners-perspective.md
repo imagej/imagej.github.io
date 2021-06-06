@@ -1,6 +1,5 @@
 ---
-mediawiki: 2016-04-19_-_Writing_ImageJ2_Plugins:_A_Beginner's_Perspective
-title: 2016-04-19 - Writing ImageJ2 Plugins › A Beginner's Perspective
+title: "2016-04-19 - Writing ImageJ2 Plugins: A Beginner's Perspective"
 ---
 
 
@@ -22,13 +21,13 @@ Also you may want to have a look at [Introduction\_into\_Macro\_Programming](/sc
 
 ## Finding information
 
--   The top-level source of information is [the ImageJ wiki](//).
+-   The top-level source of information is [the ImageJ wiki](/).
 -   The [Development](/develop) page is the best portal for aspiring ImageJ developers.
 -   [ImageJ2](/software/imagej2) is available at: {% include github org='imagej' repo='imagej' label='imagej/imagej' %}
 -   [Fiji](/software/fiji) is available at: {% include github org='fiji' repo='fiji' label='fiji/fiji' %}
 -   For additional help, use the [ImageJ Forum](/discuss).
 
-The search engines will point you to both `imagej.net` and `developer.imagej.net`. Avoid using `developer.imagej.net` for anything these days. It is a legacy site, in the process of being totally phased out. If you are looking for downloads, see the [/downloads](/downloads) page.
+The search engines will point you to both `imagej.net` and `developer.imagej.net`. Avoid using `developer.imagej.net` for anything these days. It is a legacy site, in the process of being totally phased out. If you are looking for downloads, see the [Downloads](/downloads) page.
 
 ## Configure your environment
 
@@ -183,7 +182,7 @@ The following lines are copied/cited from the `README.md` file of the `minimal-i
     -   the `dependencies` (read how to specify the correct `groupId`/`artifactId`/`version` triplet here)
     -   the `developer` information
     -   the `scm` information
--   Remove the `Process_Pixels.java` file and add your own `.java` files to `src/main/java/`<package>`/` (if you need supporting files—like icons—in the resulting `.jar` file, put them into `src/main/resources/`)
+-   Remove the `Process_Pixels.java` file and add your own `.java` files to `src/main/java/<package>/` (if you need supporting files—like icons—in the resulting `.jar` file, put them into `src/main/resources/`)
 -   Edit `src/main/resources/plugins.config`
     -   This is only needed for ImageJ 1.x plugins. For ImageJ2 commands, the information is provided by the `@Plugin` annotation at the top of the Java class.
 -   Replace the contents of `README.md` with information about your project.
@@ -196,57 +195,67 @@ The imagej/tutorials are structured as individual projects. The files can live i
 
 ## "One file to bind them all": parent `pom.xml` files
 
-As the projects get more complex, read about the [Maven component structure of ImageJ/SciJava](/develop/architecture#maven-component-structure) and something which is called "[Bill of Materials](/develop/architecture#bill-of-materials)" or just BOM. A "/develop/architecture#bill-of-materials" is a list of dependencies at particular versions which are believed to be mutually compatible. The complexity of ImageJ/SciJava's dependencies is a tribute to the different organizations which are contributing with their independent projects to ImageJ/SciJava. There are several "parent" pom.xml files which are independently maintained for example by the ImageJ, [ImgLib2](/libs/imglib2) or [SCIFIO](/libs/scifio) organizations. Each of these organizations has developed source code components which depend on components within the other two organizations. This complicated network of dependencies is managed with the help of the parent `pom.xml` files, i.e. `pom-imagej`, `pom-fiji`, `pom-imglib2` etc. (see a list of all on the [ImageJ Architecture page](/develop/architecture#maven-component-structure)).
+As the projects get more complex, read about the [Maven component structure of ImageJ/SciJava](/develop/architecture#maven-component-structure) and something which is called "[Bill of Materials](/develop/architecture#bill-of-materials)" or just BOM. A "BOM" is a list of dependencies at particular versions which are believed to be mutually compatible. The complexity of ImageJ/SciJava's dependencies is a tribute to the different organizations which are contributing with their independent projects to ImageJ/SciJava. There are several "parent" pom.xml files which are independently maintained for example by the ImageJ, [ImgLib2](/libs/imglib2) or [SCIFIO](/libs/scifio) organizations. Each of these organizations has developed source code components which depend on components within the other two organizations. This complicated network of dependencies is managed with the help of the parent `pom.xml` files, i.e. `pom-imagej`, `pom-fiji`, `pom-imglib2` etc. (see a list of all on the [ImageJ Architecture page](/develop/architecture#maven-component-structure)).
 
-Initially I could not figure out where to put one of these `pom-xxx` files to use it as parent POM. I erroneously thought it should be downloaded from GitHub and copied somewhere in my ImageJ projects folders. However, one does not have to take care of the parent POM file at all! You just have to refer to it in the local `pom.xml` file of your intended plugin project in the section <parent>.
+Initially I could not figure out where to put one of these `pom-xxx` files to use it as parent POM. I erroneously thought it should be downloaded from GitHub and copied somewhere in my ImageJ projects folders. However, one does not have to take care of the parent POM file at all! You just have to refer to it in the local `pom.xml` file of your intended plugin project in the section `<parent>`.
 
-    <parent>
-      <groupId>net.imagej</groupId>
-      <artifactId>pom-imagej</artifactId>
-      <version>15.1.0</version>
-      <relativePath />
-    </parent>
+```xml
+<parent>
+  <groupId>net.imagej</groupId>
+  <artifactId>pom-imagej</artifactId>
+  <version>15.1.0</version>
+  <relativePath />
+</parent>
+```
 
 If `pom-imagej` is the parent POM file, then the local `pom.xml` could override the following configuration sections:
 
-    <name>
-    <description>
-    <url>
-    <inceptionYear>
-    <organization>
-    <licenses>
-    <developers>
-    <contributors>
-    <scm>
-    <issueManagement>
-    <ciManagement>
+```xml
+<name>
+<description>
+<url>
+<inceptionYear>
+<organization>
+<licenses>
+<developers>
+<contributors>
+<scm>
+<issueManagement>
+<ciManagement>
+```
 
 In the local `pom.xml` at least the sections:
 
-    <groupId>
-    <artifactId>
-    <version>
+```xml
+<groupId>
+<artifactId>
+<version>
+```
 
 should be changed. Optionally also:
 
-    <name>
-    <description>
-    <url>
+```xml
+<name>
+<description>
+<url>
+```
 
 Finally add at least one of the following dependencies for ImageJ plugin support:
 
-    <dependencies>
-        // support for ImageJ2 plugins
-        <dependency>
-            <groupId>net.imagej</groupId>
-            <artifactId>imagej</artifactId>
-        </dependency>
-        // support for ImageJ 1.x plugins
-        <dependency>
-            <groupId>net.imagej</groupId>
-            <artifactId>ij</artifactId>
-        </dependency>
-    </dependencies>
+```xml
+<dependencies>
+    // support for ImageJ2 plugins
+    <dependency>
+        <groupId>net.imagej</groupId>
+        <artifactId>imagej</artifactId>
+    </dependency>
+    // support for ImageJ 1.x plugins
+    <dependency>
+        <groupId>net.imagej</groupId>
+        <artifactId>ij</artifactId>
+    </dependency>
+</dependencies>
+```
 
 ## Further readings
 
@@ -281,7 +290,9 @@ Also [mvnrepository.com](https://mvnrepository.com) is a good resource to find r
 
 On Linux several java version can be installed. Select the preferred version in a terminal window (e.g. bash):
 
-    update-alternatives --config java
+```sh
+update-alternatives --config java
+```
 
 Note: It might be necessary to use `sudo`.
 
@@ -291,7 +302,7 @@ If necessary, tell NetBeans to use JDK 1.8 as the default JRE for new projects (
 
 -   [ImageJ Tutorials](https://github.com/imagej/tutorials/)
     -   In NetBeans: {% include bc path='Team|Git|Clone'%}
-    -   Repository URL: https://github.com/imagej/tutorials
+    -   Repository URL: [https://github.com/imagej/tutorials](https://github.com/imagej/tutorials)
     -   Edit "destination" directory
     -   Next
     -   Select `master*`
@@ -304,33 +315,37 @@ This text was adapted from the [Maven](/develop/maven) page.
 
 The directory structure of a very simple demo project looks like:
 
-    DemoPlugin
-    |-- pom.xml
-    |-- src
-    |   !-- main
-    |       |-- java
-    |       |   !-- MyPlugin.java
-    |       !-- resources
-    |           !-- lena.tif
+```
+DemoPlugin
+|-- pom.xml
+|-- src
+|   !-- main
+|       |-- java
+|       |   !-- MyPlugin.java
+|       !-- resources
+|           !-- lena.tif
+```
 
 After compiling your java files, Maven automatically generates the content of the `target` folder. Therefore: never commit any files from `target` to Git! You can tell Git to ignore these files by using a [.gitignore](https://help.github.com/articles/ignoring-files/) file (usually you start by copying [an existing one](https://github.com/imagej/imagej/blob/95722503b4d2243b2818f8a7b5c2cdf863c5da69/.gitignore) from another project)
 
-    !-- target
-        |-- classes
-        |   |-- lena.tif
-        |   |-- META-INF
-        |   |   !-- json
-        |   |       !-- org.scijava.plugin.Plugin
-        |   !-- MyPlugin.class
-        |-- generated-sources
-        |   !-- annotations
-        |-- maven-status
-        |   !-- maven-compiler-plugin
-        |       !-- compile
-        |           !-- default-compile
-        |               |-- createdFiles.lst
-        |               !-- inputFiles.lst
-        !-- test-classes
+```
+!-- target
+    |-- classes
+    |   |-- lena.tif
+    |   |-- META-INF
+    |   |   !-- json
+    |   |       !-- org.scijava.plugin.Plugin
+    |   !-- MyPlugin.class
+    |-- generated-sources
+    |   !-- annotations
+    |-- maven-status
+    |   !-- maven-compiler-plugin
+    |       !-- compile
+    |           !-- default-compile
+    |               |-- createdFiles.lst
+    |               !-- inputFiles.lst
+    !-- test-classes
+```
 
 In general:
 
@@ -346,21 +361,23 @@ This text was adapted from the [Maven](/develop/maven) page.
 
 This is a very simple example:
 
-    <?xml version="1.0" encoding="UTF-8"?>
-    <project xmlns="http://maven.apache.org/POM/4.0.0"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-      http://maven.apache.org/xsd/maven-4.0.0.xsd">
-      <modelVersion>4.0.0</modelVersion>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+  http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
 
-      <groupId>org.mywebsite</groupId>
-      <artifactId>my-uber-library</artifactId>
-      <version>2.0.0-SNAPSHOT</version>
-    </project>
+  <groupId>org.mywebsite</groupId>
+  <artifactId>my-uber-library</artifactId>
+  <version>2.0.0-SNAPSHOT</version>
+</project>
+```
 
 The first 6 lines are of course just a way to say "Hi, Maven? How are you today? This is what I would like you to do...".
 
-The only relevant parts are the `groupId`, which by convention is something like the inverted domain name (similar to the Java package convention), the name of the artifact to build (it will be put into `target/`, under the name <artifactId>`-`<version>`.jar`). And of course the version.
+The only relevant parts are the `groupId`, which by convention is something like the inverted domain name (similar to the Java package convention), the name of the artifact to build (it will be put into `target/`, under the name `<artifactId>-<version>.jar`). And of course the version.
 
 While the example `pom.xml` above shows the general idea, for ImageJ more details have to be considered. Therefore it is better to start with an existing `pom.xml` file, for example the one from {% include github org='imagej' repo='minimal-ij1-plugin' label='imagej/minimal-ij1-plugin' %}. Copy it to your project and modify it as needed.
 
@@ -429,11 +446,13 @@ From [ImageJ Forum Thread 1364](http://forum.imagej.net/t/ij1-or-ij2-style-for-p
 
 Add the following dependency to your POM:
 
-    <dependency>
-      <groupId>net.imagej</groupId>
-      <artifactId>imagej-legacy</artifactId>
-      <scope>runtime</scope>
-    </dependency>
+```xml
+<dependency>
+  <groupId>net.imagej</groupId>
+  <artifactId>imagej-legacy</artifactId>
+  <scope>runtime</scope>
+</dependency>
+```
 
 That will enable the ImageJ 1.x UI, instead of the ImageJ2 Swing UI which is otherwise the default.
 
@@ -443,7 +462,7 @@ From [ImageJ Forum Thread 1151](http://forum.imagej.net/t/java3d-issue-bonej-wit
 
 The current situation with respect to Java 6 vs. Java 8, as well as the ramifications there regarding Java 3D, is basically:
 
--   If you download "vanilla" [ImageJ2](/software/imagej2) (author's note: in the context of software "vanilla" means software used as originally distributed without any customizations or updates applied to them) from the [/downloads](/downloads) page, you get a "Java 8" version from February 2016.
+-   If you download "vanilla" [ImageJ2](/software/imagej2) (author's note: in the context of software "vanilla" means software used as originally distributed without any customizations or updates applied to them) from the [Downloads](/downloads) page, you get a "Java 8" version from February 2016.
 -   If you [download the latest Fiji](/software/fiji/downloads) you get the newest "Java 8" version—i.e., with Java-8 update site. This includes the Java 3D 1.6 (SciJava fork) along with all Fiji plugins (except for [TrakEM2](/plugins/trakem2)) updated to work with it.
 -   If you [download a Life-Line version of Fiji](/software/fiji/downloads#life-line-fiji-versions) and fully update it, you'll have the newest (probably the final) "Java 6" version including the latest Java-6-compatible plugin versions. No Java 3D until you run the [3D Viewer](/plugins/3d-viewer) for the first time and it gets auto-installed. Those plugin versions are frozen: the ImageJ/Fiji developers are in the process of migrating everything to Java 8, and are only uploading new versions of everything to the Java-8 update site now, to avoid breaking the stable Java-6 versions of everything.
 
@@ -461,34 +480,36 @@ Turn your local customized Fiji into a redistributable package that can then be 
 
 In IntelliJ IDEA you may want to make sure that the JUnit5 Plugin is activated. The next step would be to append the following lines to your `pom.xml` file:
 
-    <dependency> 
-    <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter-engine</artifactId>
-        <version>5.5.1</version>
-        <scope>test</scope>
-    </dependency>
-    <dependency>
-        <groupId>org.junit.platform</groupId>
-        <artifactId>junit-platform-runner</artifactId>
-        <version>1.5.1</version>
-        <scope>test</scope>
-    </dependency>
+```xml
+<dependency>
+<groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter-engine</artifactId>
+    <version>5.5.1</version>
+    <scope>test</scope>
+</dependency>
+<dependency>
+    <groupId>org.junit.platform</groupId>
+    <artifactId>junit-platform-runner</artifactId>
+    <version>1.5.1</version>
+    <scope>test</scope>
+</dependency>
 
-    <build>
-        <plugins>
-            <plugin>
-                <!-- fix maven tests -->
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M3</version>
-                <configuration>
-                    <excludes>
-                        <exclude>some test to exclude here</exclude>
-                    </excludes>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+<build>
+    <plugins>
+        <plugin>
+            <!-- fix maven tests -->
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.0.0-M3</version>
+            <configuration>
+                <excludes>
+                    <exclude>some test to exclude here</exclude>
+                </excludes>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+```
 
 {% include notice icon="note" content="If you want to test GUI tests with TravisCI you have to activate a virtual display as described in the Travis CI chapter." %}
 
@@ -496,74 +517,79 @@ In IntelliJ IDEA you may want to make sure that the JUnit5 Plugin is activated. 
 
 If you want to share your plugin in the ImageJ updater automatically [Automatic Update Site Uploads](/update-sites/automatic-uploads), contribute to the ImageJ project [Fiji/Contribution requirements](/contribute/fiji) or work in a team with multiple developers, you may want to build, test and deploy your Plugin with [Travis CI](/develop/travis). If you are hosting your code in a public [GitHub](/develop/github) repository this service is free for you. After signing in with your [GitHub](/develop/github) account you can activate single repositories for [Travis CI](/develop/travis). Travis then automatically clones your repository with every change and runs a build according to the `.travis.yml` configuration file in your root directory.
 
-        # specify compiler
-        language: java
-        sudo: false # faster builds
-        jdk: openjdk8
-        
-        # maven build
-        install: true
-        script: mvn clean verify
-        
-        # cache maven dir for performance
-        cache:
-          directories:
-            - $HOME/.m2
+```yml
+    # specify compiler
+    language: java
+    sudo: false # faster builds
+    jdk: openjdk8
+
+    # maven build
+    install: true
+    script: mvn clean verify
+
+    # cache maven dir for performance
+    cache:
+      directories:
+        - $HOME/.m2
+```
 
 In case you are working with GUI tests, you may want to activate a virtual display as well:
 
-&lt;source lang="yml&gt;
-
-`   # virtual display variable for gui tests`  
-`       dist: xenial`  
-`       services:`  
-`         - xvfb`
-
-</source>
+```yml
+# virtual display variable for gui tests
+    dist: xenial
+    services:
+      - xvfb
+```
 
 ## JavaFX JAR not found
 
 Add this to your pom.xml:
 
-        <build>
-            <plugins>
-                <!-- Fix JavaFX support -->
-                <plugin>
-                    <groupId>com.zenjava</groupId>
-                    <artifactId>javafx-maven-plugin</artifactId>
-                    <version>8.8.3</version>
-                    <configuration>
-                        <mainClass>your.package.with.Launcher</mainClass>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </build>
+```xml
+<build>
+    <plugins>
+        <!-- Fix JavaFX support -->
+        <plugin>
+            <groupId>com.zenjava</groupId>
+            <artifactId>javafx-maven-plugin</artifactId>
+            <version>8.8.3</version>
+            <configuration>
+                <mainClass>your.package.with.Launcher</mainClass>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+```
 
 ## Log4j warning in IntelliJ IDEA
 
 Some of the tutorials seem to be missing a configuration file for Log4. IntelliJ will warn you about this as soon as you try to try to build the project:
 
-    log4j:WARN No appenders could be found for logger (org.bushe.swing.event.EventService).
-    log4j:WARN Please initialize the log4j system properly.
-    log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+```
+log4j:WARN No appenders could be found for logger (org.bushe.swing.event.EventService).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+```
 
 The missing config file is called `log4j.xml` and has to be located in `.../src/main/resources/`:
 
-    <!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
-    <log4j:configuration debug="true" xmlns:log4j='http://jakarta.apache.org/log4j/'>
+```xml
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration debug="true" xmlns:log4j='http://jakarta.apache.org/log4j/'>
 
-        <appender name="fileAppender" class="org.apache.log4j.RollingFileAppender">
-            <param name="File" value="demoApplication.log"/>
-            <layout class="org.apache.log4j.PatternLayout">
-                <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n" />
-            </layout>
-        </appender>
+    <appender name="fileAppender" class="org.apache.log4j.RollingFileAppender">
+        <param name="File" value="demoApplication.log"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n" />
+        </layout>
+    </appender>
 
-        <root>
-            <priority value ="debug"></priority>
-            <appender-ref ref="fileAppender"></appender-ref>
-        </root>
+    <root>
+        <priority value ="debug"></priority>
+        <appender-ref ref="fileAppender"></appender-ref>
+    </root>
 
-    </log4j:configuration>
+</log4j:configuration>
+```
 
- 

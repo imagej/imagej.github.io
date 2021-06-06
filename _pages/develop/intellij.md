@@ -17,7 +17,7 @@ This article explains how to install and configure IntelliJ IDEA for use with [I
 ## Import the ImageJ source
 
 1.  From the IDEA menu, choose {% include bc path='Version Control|Checkout from Version Control|Git'%}
-2.  For the Git Repository URL, enter: [`git://github.com/imagej/imagej`](Git___github.com_imagej_imagej)
+2.  For the Git Repository URL, enter: [`git://github.com/imagej/imagej`](git://github.com/imagej/imagej)
 3.  Specify a Parent Directory, click Clone, and wait
 4.  When prompted, click Yes to create an IntelliJ IDEA project from the sources
 
@@ -92,7 +92,7 @@ When renaming a classname which was annotated with SciJava's `@Plugin` annotatio
         items[2] = label='Quit', iconPath='/icons/commands/door_in.png', priority=0.0, enabled=true, pluginType=Command
         [Subscriber] org.scijava.menu.DefaultMenuService [priority = 0.0]
         [Method] protected void org.scijava.menu.DefaultMenuService.onEvent(org.scijava.module.event.ModulesUpdatedEvent)
-    java.lang.IllegalStateException: Can't overwrite cause with org.scijava.InstantiableException: Class not found: 
+    java.lang.IllegalStateException: Can't overwrite cause with org.scijava.InstantiableException: Class not found:
 
     the.plugin.you.just.Renamed
 

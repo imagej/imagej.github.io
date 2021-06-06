@@ -1,5 +1,4 @@
 ---
-mediawiki: 2016-03-31_-_TrackMate_v3.1.0_released
 title: 2016-03-31 - TrackMate v3.1.0 released
 ---
 
@@ -19,11 +18,7 @@ This track display mode only shows the content of the current selection, for spo
 
 -   The semi-auto tracker now detects spots in the currently selected channel, in case of a multi-C image.
 
-<!-- -->
-
 -   The thumbnail images in TrackScheme are taken from the currently selected channel as well.
-
-<!-- -->
 
 -   There is now a step-wise time browsing ('à la MaMuT'): press 'F' and 'G' to move in time by jumping to frames, spaced by a number set in the Spot edit tool of TrackMate (double-click on the icon in the ImageJ toolbar).
 
@@ -31,22 +26,16 @@ This track display mode only shows the content of the current selection, for spo
 
 -   The manual editing of spot radius (press 'Q' and 'E') is fully reversible (if you press 3 times 'Q' then 3 times 'E', you get back the initial radius).
 
-<!-- -->
-
 -   TrackMate is now more verbose when doing manual editing.
 
 ## Changes.
 
 -   We really do not relaunch TrackScheme automatically when loading a TrackMate file.
 
-<!-- -->
-
 -   The 3D Viewer is working again, at least (as of today) on Windows platforms. On Macs, the time slider does not work and trying to interact with it will crash Fiji.
-
-<!-- -->
 
 -   Also, to keep the 3D Viewer tidy, it is not kept in sync with the manual edits made on the model. It just shows a snapshot of the model at the time when it was launched. It was not working properly before anyway, so we officially disable this feature.
 
-[JeanYvesTinevez](/people/tinevez) ([talk](User_talk_JeanYvesTinevez)) 06:46, 31 March 2016 (CDT)
+[JeanYvesTinevez](/people/tinevez) 06:46, 31 March 2016 (CDT)
 
 

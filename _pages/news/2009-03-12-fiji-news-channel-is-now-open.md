@@ -2,6 +2,9 @@
 title: 2009-03-12 - Fiji news channel is now open
 ---
 
+{% include notice icon="warning" content="This is a historic news item.
+  See current [wiki editing instructions](/editing)." %}
+
 Fiji now has its own news channel. We will use this feed to post news related to Fiji development and relevant events. Stay tuned!
 
 If you need to post a news event, simly use the Fiji wiki to do so:
@@ -15,6 +18,3 @@ If you need to post a news event, simly use the Fiji wiki to do so:
     at the end of the page
 
 That's all! Enjoy!
-
-{% include notice content="This is a historic news item. See current [wiki
-editing instructions](/editing)." %}

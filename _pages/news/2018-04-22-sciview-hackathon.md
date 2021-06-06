@@ -1,5 +1,4 @@
 ---
-mediawiki: 2018-04-04_22-_SciView_hackathon
 title: 2018-04-22 - SciView hackathon
 ---
 

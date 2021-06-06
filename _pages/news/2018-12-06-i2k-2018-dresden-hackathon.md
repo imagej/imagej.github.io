@@ -1,17 +1,16 @@
 ---
-mediawiki: 2018-12-06_-_I2K_2018_Dresden_Hackathon
 title: 2018-12-06 - I2K 2018 Dresden Hackathon
 ---
 
 From Monday, December 3, 2018 through Friday, December 7, 2018, the [Max Planck Institute of Molecular Cell Biology and Genetics](https://mpi-cbg.de/) hosts \~10 developers at the [Center for Systems Biology](http://www.csbdresden.de/) in Dresden, Germany for a [hackathon](/events/hackathons) to develop KNIME Image Processing and [ImageJ2](/software/imagej2)/[Fiji](/software/fiji) core infrastructure and [plugins](/plugins).
 
-Gitter channel: https://gitter.im/juglab/Hack1812
+Gitter channel: [https://gitter.im/juglab/Hack1812](https://gitter.im/juglab/Hack1812)
 
 ## Topics / Technical Discussions
 
 ### TensorFlow (Debo, Curtis, Benny)
 
--   Plan for TensorFlow: ship native libs both CPU and GPU in lib/<platform> directly;
+-   Plan for TensorFlow: ship native libs both CPU and GPU in `lib/<platform>` directly;
 -   TensorFlow update sites and reconcile to new TF version -- add tests
 
 ### SCIFIO (Gabriel, Curtis)
@@ -21,7 +20,7 @@ Gitter channel: https://gitter.im/juglab/Hack1812
 
 ### Governance
 
--   Code of conduct - https://help.github.com/articles/adding-a-code-of-conduct-to-your-project/> - <http://openrespect.org/ (It's written by the author of The Art of Community)
+-   Code of conduct - [https://help.github.com/articles/adding-a-code-of-conduct-to-your-project/](https://help.github.com/articles/adding-a-code-of-conduct-to-your-project/) - [http://openrespect.org/](http://openrespect.org/) (It's written by the author of The Art of Community)
 -   Update fiji.sc, imagej.net/Fiji, etc. with revised maintainership info
 
 Google Scholar: citation count badges on wiki pages
@@ -90,7 +89,7 @@ rsync mirror to pacific.mpi-cbg.de
 ### Plot Service (Matthias, Curtis)
 
 -   Get it merged to scijava-common / scijava-ui-swing
--   https://forum.image.sc/t/error-noclassdeffounderror-net-imagej-table-table/21369/7
+-   [https://forum.image.sc/t/error-noclassdeffounderror-net-imagej-table-table/21369/7](https://forum.image.sc/t/error-noclassdeffounderror-net-imagej-table-table/21369/7)
 
 ### Curtis
 

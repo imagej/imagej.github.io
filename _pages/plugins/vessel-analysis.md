@@ -12,7 +12,7 @@ Nivetha Govindaraju, {% include person id='mfarna' %}
 {% capture maintainer%}
 {% include person id='mfarna' %} (<mai.elfarnawany@gmail.com>)
 {% endcapture %}
-{% include info-box name='Vessel Analysis' software='Fiji' author=author maintainer=maintainer filename=' [Vessel Analysis.zip](/media/plugins/vessel-analysis.zip)' released='June 14<sup>th</sup>, 2016' latest-version='1.1' status='stable' category='[Plugins](/plugin-index), [Analysis](/plugin-index#analysis)' %}
+{% include info-box name='Vessel Analysis' software='Fiji' author=author maintainer=maintainer filename=' [Vessel Analysis.zip](/media/plugins/vessel-analysis.zip)' released='June 14<sup>th</sup>, 2016' latest-version='1.1' status='stable' category='Plugins, Analysis' %}
 
 ## **Description:**
 
@@ -30,7 +30,7 @@ Before using the plugin, make sure your version of Fiji comes pre-downloaded wit
 * {% include bc path="Image | Adjust | Auto Threshold" %}
 * {% include bc path="Analyze | Local Thickness | Geometry to Distance Map" %}
 
-Also make sure you install [Mexican Hat Filter](/ij/plugins/mexican-hat/index.html) plugin
+Also make sure you install [Mexican Hat Filter](https://imagej.nih.gov/ij/plugins/mexican-hat/index.html) plugin
 
 ## **Usage:**
 

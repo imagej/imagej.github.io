@@ -323,7 +323,7 @@ As before, we modified the way costs are calculated, and re-used the feature pen
 
 #### Main differences with the Jaqaman paper.
 
-The nominal implementation of the paper remains the one developed under [MATLAB](/plugin-index#matlab) by Khuloud Jaqaman <i>et al.</i> and published in Nature Methods. The software is called u-track and can be found on [Khuloud Jaqaman homepage](http://www.utsouthwestern.edu/labs/jaqaman/software/).
+The nominal implementation of the paper remains the one developed under [MATLAB](/scripting/matlab) by Khuloud Jaqaman <i>et al.</i> and published in Nature Methods. The software is called u-track and can be found on [Khuloud Jaqaman homepage](http://www.utsouthwestern.edu/labs/jaqaman/software/).
 
 TrackMate was initially developed to simplify <i>C.elegans</i> lineaging. It therefore just bundles a stripped down version of this framework.
 

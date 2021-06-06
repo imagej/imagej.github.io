@@ -59,7 +59,7 @@
           {% include menu/section-end %} <!-- Learn -->
 
           {% include menu/section title="Extend" link="/plugins" %}
-            <li><a href="/plugin-index">Plugin Index</a></li>
+            <li><a href="/list-of-extensions">List of Extensions</a></li>
 
             {% include menu/section title="Update Sites" link="/update-sites" %}
               <li><a href="/list-of-update-sites">List of Update Sites</a></li>

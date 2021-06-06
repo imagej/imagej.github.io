@@ -4,7 +4,7 @@ title: Multi-View Fusion
 categories: [Uncategorized]
 ---
 
-{% include info-box name='Multi-view fusion plugin' software='ImageJ' author='Stephan Preibisch, Stephan Saalfeld, Johannes Schindelin, Pavel Tomancak' maintainer='Stephan Preibisch' filename='SPIM\_Registration.jar' released='February 2010' latest-version='October 2011' category='[SPIM Registration](/plugin-index#registration)' website=' [Stephan Preibisch"s homepage](http://fly.mpi-cbg.de/~preibisch)' %}
+{% include info-box name='Multi-view fusion plugin' software='ImageJ' author='Stephan Preibisch, Stephan Saalfeld, Johannes Schindelin, Pavel Tomancak' maintainer='Stephan Preibisch' filename='SPIM\_Registration.jar' released='February 2010' latest-version='October 2011' category='SPIM Registration' website=' [Stephan Preibisch"s homepage](http://fly.mpi-cbg.de/~preibisch)' %}
 
 ## Citation
 
@@ -38,7 +38,7 @@ If you want to process a timeseries you should first run the fusion only for the
 
 ## How do I view fused, saved output image(s)
 
-The fused images will be saved in the *output* directory of the dataset as a collection of two-dimensional planes. The created output images can be viewed for example with {% include bc path="Plugins|Image5D|[Virtual Image 5D Opener](/ij/plugins/image5d.html)" %} or via the {% include bc path="File|Import|Bio-Formats..." %} (check the option *Group files with similar names*).
+The fused images will be saved in the *output* directory of the dataset as a collection of two-dimensional planes. The created output images can be viewed for example with {% include bc path="Plugins|Image5D|[Virtual Image 5D Opener](https://imagej.nih.gov/ij/plugins/image5d.html)" %} or via the {% include bc path="File|Import|Bio-Formats..." %} (check the option *Group files with similar names*).
 
 ## How to use the plugin
 

@@ -91,5 +91,3 @@ These changes don't immediately allow for opening large single planes in IJ2—j
 ## Tobias Pietzsch
 
 See the [thread on imagej-devel](/pipermail/imagej-devel/2013-May/001488.html).
-
-  

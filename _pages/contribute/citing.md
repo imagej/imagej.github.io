@@ -10,12 +10,11 @@ nav-links: true
 -   For information on who *maintains* these projects, see [Governance](/contribute/governance).
 -   For information on how ImageJ projects are *funded*, see [Funding](/contribute/funding).' %}
 
-
 ## Guidelines
 
 We ask users to cite:
 
-1.  Any [specific publications](/plugin-index#citable) of [plugins](/plugins) used.
+1.  Any [specific publications](#citable-software) of [plugins](/plugins) used.
 2.  The general paper of ImageJ distribution(s) used—e.g., if you used [Fiji](/software/fiji), cite the [Fiji](/software/fiji#publication) paper.
 3.  The general [ImageJ](/software/imagej) paper.
 

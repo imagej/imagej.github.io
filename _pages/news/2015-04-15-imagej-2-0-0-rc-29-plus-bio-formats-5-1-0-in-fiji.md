@@ -1,5 +1,4 @@
 ---
-mediawiki: 2015-04-15_-_ImageJ_2.0.0-rc-29,_plus_Bio-Formats_5.1.0_in_Fiji
 title: 2015-04-15 - ImageJ 2.0.0-rc-29, plus Bio-Formats 5.1.0 in Fiji
 ---
 
@@ -11,74 +10,9 @@ In addition, the [Fiji team](/people) has updated several components of the [Fij
 
 These releases include new versions of several components:
 
-{::nomarkdown}
-<table>
-  <thead>
-    <tr class="header">
-      <th style="vertical-align: top">
-        <p><a href="https://github.com/scijava">SciJava</a></p>
-      </th>
-      <th>
-        <p><a href="https://github.com/imagej">ImageJ</a></p>
-      </th>
-      <th>
-        <p><a href="https://github.com/fiji">Fiji</a></p>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <ul>
-          <li>[<a href="https://github.com/scijava/scijava-plugins-commands/compare/scijava-plugins-commands-0.1.8">https://github.com/scijava/scijava-plugins-commands/compare/scijava-plugins-commands-0.1.8</a>...scijava-plugins-commands-0.2.0 scijava-plugins-commands-0.2.0]
-          </li>
-          <li>[<a href="https://github.com/scijava/scijava-ui-swing/compare/scijava-ui-swing-0.5.0">https://github.com/scijava/scijava-ui-swing/compare/scijava-ui-swing-0.5.0</a>...scijava-ui-swing-0.6.0 scijava-ui-swing-0.6.0]
-          </li>
-          <li>[<a href="https://github.com/scijava/scripting-java/compare/scripting-java-0.3.0">https://github.com/scijava/scripting-java/compare/scripting-java-0.3.0</a>...scripting-java-0.3.1 scripting-java-0.3.1]
-          </li>
-        </ul>
-      </td>
-      <td style="vertical-align: top">
-        <ul>
-          <li>[<a href="https://github.com/imagej/ij1-patcher/compare/ij1-patcher-0.12.0">https://github.com/imagej/ij1-patcher/compare/ij1-patcher-0.12.0</a>...ij1-patcher-0.12.1 ij1-patcher-0.12.1]
-          </li>
-          <li>[<a href="https://github.com/imagej/imagej/compare/imagej-2.0.0-rc-28">https://github.com/imagej/imagej/compare/imagej-2.0.0-rc-28</a>...imagej-2.0.0-rc-29 imagej-2.0.0-rc-29]
-          </li>
-          <li>[<a href="https://github.com/imagej/imagej-common/compare/imagej-common-0.13.0">https://github.com/imagej/imagej-common/compare/imagej-common-0.13.0</a>...imagej-common-0.14.0 imagej-common-0.14.0]
-          </li>
-          <li>[<a href="https://github.com/imagej/imagej-ops/compare/imagej-ops-0.10.0">https://github.com/imagej/imagej-ops/compare/imagej-ops-0.10.0</a>...imagej-ops-0.11.0 imagej-ops-0.11.0]
-          </li>
-          <li>[<a href="https://github.com/imagej/imagej-plugins-commands/compare/imagej-plugins-commands-0.4.1">https://github.com/imagej/imagej-plugins-commands/compare/imagej-plugins-commands-0.4.1</a>...imagej-plugins-commands-0.5.0 imagej-plugins-commands-0.5.0]
-          </li>
-          <li>[<a href="https://github.com/imagej/imagej-ui-swing/compare/imagej-ui-swing-0.11.0">https://github.com/imagej/imagej-ui-swing/compare/imagej-ui-swing-0.11.0</a>...imagej-ui-swing-0.11.1 imagej-ui-swing-0.11.1]
-          </li>
-          <li>[<a href="https://github.com/imagej/imagej-updater/compare/imagej-updater-0.7.2">https://github.com/imagej/imagej-updater/compare/imagej-updater-0.7.2</a>...imagej-updater-0.7.3 imagej-updater-0.7.3]
-          </li>
-        </ul>
-      </td>
-      <td>
-        <p>style=vertical-align: top" |</p>
-        <ul>
-          <li>[<a href="https://github.com/scifio/scifio-bf-compat/compare/scifio-bf-compat-1.11.0">https://github.com/scifio/scifio-bf-compat/compare/scifio-bf-compat-1.11.0</a>...scifio-bf-compat-2.0.0 scifio-bf-compat-2.0.0]
-          </li>
-          <li>[<a href="https://github.com/scifio/scifio-cli/compare/scifio-cli-0.3.1">https://github.com/scifio/scifio-cli/compare/scifio-cli-0.3.1</a>...scifio-cli-0.3.2 scifio-cli-0.3.2]
-          </li>
-          <li>[<a href="https://github.com/scifio/scifio-hdf5/compare/scifio-hdf5-0.1.0">https://github.com/scifio/scifio-hdf5/compare/scifio-hdf5-0.1.0</a>...scifio-hdf5-0.1.1 scifio-hdf5-0.1.1]
-          </li>
-          <li>[<a href="https://github.com/scifio/scifio-ome-xml/compare/scifio-ome-xml-0.12.0">https://github.com/scifio/scifio-ome-xml/compare/scifio-ome-xml-0.12.0</a>...scifio-ome-xml-0.13.0 scifio-ome-xml-0.13.0]
-          </li>
-          <li>[<a href="https://github.com/fiji/legacy-imglib1/compare/c475242394a7f59a4d857fe71d29068c611e3211">https://github.com/fiji/legacy-imglib1/compare/c475242394a7f59a4d857fe71d29068c611e3211</a>...legacy-imglib1-1.1.4-DEPRECATED legacy-imglib1-1.1.4-DEPRECATED]
-          </li>
-          <li>[<a href="https://github.com/fiji/Stitching/compare/64bab29dfdc4d0bdcd014df7384f18077730400d">https://github.com/fiji/Stitching/compare/64bab29dfdc4d0bdcd014df7384f18077730400d</a>...Stitching_-3.0.2 Stitching_-3.0.2]
-          </li>
-          <li>[<a href="https://github.com/bigdataviewer/SPIM_Registration/compare/SPIM_Registration-2.1.9">https://github.com/bigdataviewer/SPIM_Registration/compare/SPIM_Registration-2.1.9</a>...SPIM_Registration-2.1.10 SPIM_Registration-2.1.10]
-          </li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
-{:/}
+| [SciJava](https://github.com/scijava) | [ImageJ](https://github.com/imagej) | [Fiji](https://github.com/fiji) |
+|---|---|---|
+| [scijava-plugins-commands-0.2.0](https://github.com/scijava/scijava-plugins-commands/compare/scijava-plugins-commands-0.1.8...scijava-plugins-commands-0.2.0)<br /> [scijava-ui-swing-0.6.0](https://github.com/scijava/scijava-ui-swing/compare/scijava-ui-swing-0.5.0...scijava-ui-swing-0.6.0)<br /> [scripting-java-0.3.1](https://github.com/scijava/scripting-java/compare/scripting-java-0.3.0...scripting-java-0.3.1) | [ij1-patcher-0.12.1](https://github.com/imagej/ij1-patcher/compare/ij1-patcher-0.12.0...ij1-patcher-0.12.1)<br /> [imagej-2.0.0-rc-29](https://github.com/imagej/imagej/compare/imagej-2.0.0-rc-28...imagej-2.0.0-rc-29)<br /> [imagej-common-0.14.0](https://github.com/imagej/imagej-common/compare/imagej-common-0.13.0...imagej-common-0.14.0)<br /> [imagej-ops-0.11.0](https://github.com/imagej/imagej-ops/compare/imagej-ops-0.10.0...imagej-ops-0.11.0)<br /> [imagej-plugins-commands-0.5.0](https://github.com/imagej/imagej-plugins-commands/compare/imagej-plugins-commands-0.4.1...imagej-plugins-commands-0.5.0)<br /> [imagej-ui-swing-0.11.1](https://github.com/imagej/imagej-ui-swing/compare/imagej-ui-swing-0.11.0...imagej-ui-swing-0.11.1)<br /> [imagej-updater-0.7.3](https://github.com/imagej/imagej-updater/compare/imagej-updater-0.7.2...imagej-updater-0.7.3) | [scifio-bf-compat-2.0.0](https://github.com/scifio/scifio-bf-compat/compare/scifio-bf-compat-1.11.0...scifio-bf-compat-2.0.0)<br /> [scifio-cli-0.3.2](https://github.com/scifio/scifio-cli/compare/scifio-cli-0.3.1...scifio-cli-0.3.2)<br /> [scifio-hdf5-0.1.1](https://github.com/scifio/scifio-hdf5/compare/scifio-hdf5-0.1.0...scifio-hdf5-0.1.1)<br /> [scifio-ome-xml-0.13.0](https://github.com/scifio/scifio-ome-xml/compare/scifio-ome-xml-0.12.0...scifio-ome-xml-0.13.0)<br /> [legacy-imglib1-1.1.4-DEPRECATED](https://github.com/fiji/legacy-imglib1/compare/c475242394a7f59a4d857fe71d29068c611e3211...legacy-imglib1-1.1.4-DEPRECATED)<br /> [Stitching\_-3.0.2](https://github.com/fiji/Stitching/compare/64bab29dfdc4d0bdcd014df7384f18077730400d...Stitching_-3.0.2)<br /> [SPIM\_Registration-2.1.10](https://github.com/bigdataviewer/SPIM_Registration/compare/SPIM_Registration-2.1.9...SPIM_Registration-2.1.10) |
 
 ### What's new in ImageJ
 

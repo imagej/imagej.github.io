@@ -14,7 +14,7 @@ categories: [Uncategorized]
 {% endcapture %}
 {% include info-box software='ImageJ' name='FLIMJ plugin' logo='<img src="/media/icons/slim-curve.png" width="64"/>' author=' [CRUK/MRC at University of Oxford](http://www.rob.ox.ac.uk/)  
 [UW-Madison LOCI](http://loci.wisc.edu/)' maintainer=maintainer filename='flimlib.jar, flimlib-*arch*-*ver*.jar,  
-flimj-ops-*ver*.jar' source=source latest-version='1.0.0' website='https://flimlib.github.io/' category='[Analysis](/plugin-index#analysis)' %}
+flimj-ops-*ver*.jar' source=source latest-version='1.0.0' website='https://flimlib.github.io/' category='Analysis' %}
 
 ## Introduction
 
@@ -161,7 +161,7 @@ After dataset fitting, you can select images to export in the drop-down checklis
 {% include notice icon="info" content='You may follow the following steps to reproduce the composite color image after export:
 
 1.  Export "Intensity" with desired fitted images;
-2.  Convert all images to RGB format by searching and executing the "RGB Color" command in FIJI;
+2.  Convert all images to RGB format by searching and executing the "RGB Color" command in Fiji;
 3.  Search and execute the "compose rgb-stacks" script, make the intensity image the "source" and the fitted image the "target", and choose "Multiply" as "compose method". Hit "OK".' %}
 
 ## Advanced topics

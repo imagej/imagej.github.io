@@ -4,7 +4,7 @@ title: Spots colocalization (ComDet)
 categories: [Colocalization]
 ---
 
-{% include info-box software='ImageJ' name='ComDet' author=' [Eugene Katrukha](http://katpyxa.info)' maintainer='[Eugene Katrukha](mailto:katpyxa_at_gmail.com)' filename=' [ComDet.jar](https://github.com/ekatrukha/ComDet/blob/master/target/ComDet_-0.5.1.jar?raw=true) + for ImageJ [Jama lib](https://math.nist.gov/javanumerics/jama/Jama-1.0.3.jar)' source=' [github](https://github.com/ekatrukha/ComDet)' released='23 November 2012' latest-version='7 April 2020' status='stable' category='[Colocalization](/plugin-index#colocalization)' website=' [wiki](https://github.com/ekatrukha/ComDet/wiki)' %}
+{% include info-box software='ImageJ' name='ComDet' author=' [Eugene Katrukha](http://katpyxa.info)' maintainer='[Eugene Katrukha](mailto:katpyxa_at_gmail.com)' filename=' [ComDet.jar](https://github.com/ekatrukha/ComDet/blob/master/target/ComDet_-0.5.1.jar?raw=true) + for ImageJ [Jama lib](https://math.nist.gov/javanumerics/jama/Jama-1.0.3.jar)' source=' [github](https://github.com/ekatrukha/ComDet)' released='23 November 2012' latest-version='7 April 2020' status='stable' category='Colocalization' website=' [wiki](https://github.com/ekatrukha/ComDet/wiki)' %}
 
 Plugin for finding and/or analyzing colocalization of bright intensity spots (cells, particles, vesicles, comets, dots, etc) in images with heterogeneous background (microscopy, astronomy, engineering, etc).
 
@@ -39,7 +39,7 @@ By default, plugin looks only for particles of specified size. If you check "*In
 
 If "*Segment larger particles (slow)?*" box is checked, plugin will try to further split large particles into a smaller dots, if it is possible. As its name suggests, this procedure requires computational power and can be slow, especially on big images.
 
-If you choose *Add to ROI Manager* option ("All particles"), plugin will add detected rectangular ROIs around particles to [ROI Manager](/ij/docs/guide/146-30.html#sub:ROI-Manager...). ROIs will have names in the format of ind(detection\# in Results table)\_ch(\#channel)\_sl(\#slice)\_fr(\#frame).
+If you choose *Add to ROI Manager* option ("All particles"), plugin will add detected rectangular ROIs around particles to [ROI Manager](https://imagej.nih.gov/ij/docs/guide/146-30.html#sub:ROI-Manager...). ROIs will have names in the format of ind(detection\# in Results table)\_ch(\#channel)\_sl(\#slice)\_fr(\#frame).
 
 After pressing OK plugin runs and add ovals/rectangles in overlay on top of detected particles.
 

@@ -1,5 +1,4 @@
 ---
-mediawiki: 2016-07-21_-_KNIME_Image_Processing_hackathon
 title: 2016-07-21 - KNIME Image Processing hackathon
 ---
 
@@ -8,6 +7,10 @@ From Tuesday, July 5, 2016 through Thursday, July 14, 2016, {% include person id
 ## Timeline
 
 The following chart illustrates when everyone was present:
+
+{% include img name="timeline" src="/media/news/2016-knime-hackathon-timeline.png" %}
+
+<!-- The above image was rendered by MediaWiki. Original data, as converted, follows:
 
 <timeline> Preset = TimeHorizontal\_AutoPlaceBars\_UnitYear
 
@@ -101,24 +104,24 @@ PlotData=
 
 </timeline>
 
+-->
+
 ## Gallery
 
-
-{% capture content%}
-/media/news/hackathon-2016-konstanz-hackers.jpg \| Hackers!
-/media/news/hackathon-2016-konstanz-dinner.jpg \| Hackers at dinner
-/media/news/hackathon-2016-konstanz-rueden.jpg \| {% include person id='ctrueden' %}
-/media/news/hackathon-2016-konstanz-harrington.jpg \| {% include person id='kephale' %}
-/media/news/hackathon-2016-konstanz-domander.jpg \| {% include person id='rimadoma' %}
-/media/news/hackathon-2016-konstanz-hoerl.jpg \| {% include person id='hoerldavid' %}
-/media/news/hackathon-2016-konstanz-dietz-and-rueden.jpg \| {% include person id='dietzc' %} and {% include person id='ctrueden' %}
-/media/news/hackathon-2016-konstanz-harrington-and-gunther.jpg \| {% include person id='kephale' %} and {% include person id='skalarproduktraum' %}
-/media/news/hackathon-2016-konstanz-helfrich-and-pietzsch.jpg \| {% include person id='stelfrich' %} and {% include person id='tpietzsch' %}
-/media/news/2016-hackathon-konstanz-sushi.jpg \| KNIME 3.2: sushi edition
-/media/news/hackathon-2016-konstanz-amazing-salt.jpg \| The gravity-defying salt shaker!
+{% capture gallerycontent %}
+/media/news/hackathon-2016-konstanz-hackers.jpg | Hackers!
+/media/news/hackathon-2016-konstanz-dinner.jpg | Hackers at dinner
+/media/news/hackathon-2016-konstanz-rueden.jpg | {% include person id='ctrueden' %}
+/media/news/hackathon-2016-konstanz-harrington.jpg | {% include person id='kephale' %}
+/media/news/hackathon-2016-konstanz-domander.jpg | {% include person id='rimadoma' %}
+/media/news/hackathon-2016-konstanz-hoerl.jpg | {% include person id='hoerldavid' %}
+/media/news/hackathon-2016-konstanz-dietz-and-rueden.jpg | {% include person id='dietzc' %} and {% include person id='ctrueden' %}
+/media/news/hackathon-2016-konstanz-harrington-and-gunther.jpg | {% include person id='kephale' %} and {% include person id='skalarproduktraum' %}
+/media/news/hackathon-2016-konstanz-helfrich-and-pietzsch.jpg | {% include person id='stelfrich' %} and {% include person id='tpietzsch' %}
+/media/news/2016-hackathon-konstanz-sushi.jpg | KNIME 3.2: sushi edition
+/media/news/hackathon-2016-konstanz-amazing-salt.jpg | The gravity-defying salt shaker!
 {% endcapture %}
-{% include gallery content=content%}
-
+{% include gallery content=gallerycontent %}
 
 ## Hackathon progress
 
@@ -134,7 +137,7 @@ PlotData=
 
 -   Added 3D Mesh Voxelization to {% include github org='imagej' repo='imagej-ops' label='imagej-ops' %} ({% include github org='imagej' repo='imagej-ops' pr='419' label='imagej-ops\#419' %})
 -   Began [ThreeDViewer](/plugins/sciview) and reached a moderately usable level
--   Refactored [Funimage](Funimage) to be more Clojure idiomatic
+-   Refactored [Funimage](/software/funimagej) to be more Clojure idiomatic
 
 ### Stefan Helfrich
 

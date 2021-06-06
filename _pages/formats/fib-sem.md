@@ -2,13 +2,9 @@
 title: FIBSEM importer
 section: Learn:ImageJ Basics:File Formats
 categories: [Import-Export]
+artifact: sc.fiji:IO_
+name: FIBSEM importer
 ---
-
-
-{% capture source%}
-{% include github org='fiji' repo='IO' branch='master' source='io/FIBSEM\_Reader.java' %}
-{% endcapture %}
-{% include info-box software='ImageJ' name='FIBSEM importer' maintainer='Stephan Preibisch' author='Stephan Preibisch' source=source released='08/02/2012' latest-version='08/02/2012' status='stable' category='[Import-Export](/plugin-index#import-export)' website='' %}
 
 ## Overview
 

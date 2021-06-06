@@ -4,7 +4,7 @@ title: RGB to Montage
 categories: [Color processing]
 ---
 
-{% include info-box software='ImageJ' name='RGB to Montage' author='unknown' maintainer='None' filename='RGB\_to\_Montage.class' source='not found' released='unknown' latest-version='unknown' status='Unmaintained' category='[Color processing](/plugin-index#color-processing)' %}
+{% include info-box software='ImageJ' name='RGB to Montage' author='unknown' maintainer='None' filename='RGB\_to\_Montage.class' source='not found' released='unknown' latest-version='unknown' status='Unmaintained' category='Color Processing' %}
 
 ## Purpose
 

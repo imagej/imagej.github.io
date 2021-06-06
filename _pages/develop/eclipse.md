@@ -74,7 +74,7 @@ Now update Eclipse's JRE to be JDK-aware:
 ```
 style "eclipse" {
     font_name = "Sans Condensed 8"
-}  
+}
 class "GtkWidget" style "eclipse"
 ```
 
@@ -372,7 +372,7 @@ you can try the following steps.
 
 2.  Check that the `-sources` JAR has been downloaded locally.
     -   Navigate to
-        `<path-to-.m2-repo>/repository/`<groupId>`/`<artifactId>`/`<version>
+        `<path-to-.m2-repo>/repository/<groupId>/<artifactId>/<version>`
         and see if there is a `-sources` JAR there.
     -   If it is not, then in a terminal navigate to the folder containing your
         project's pom.xml file. And then from the command line run:
@@ -380,13 +380,13 @@ you can try the following steps.
         mvn dependency:get -Dartifact=groupId:artifactId:version:packaging:classifier
         ```
         -   For example if a project depended on imagej-common and you needed
-            to retrieve the `-sources` JAR, the command you'd type would be:  
+            to retrieve the `-sources` JAR, the command you'd type would be:
             ```
             mvn dependency:get -Dartifact=net.imagej:imagej-common:0.24.4:jar:sources
             ```
 
 3.  If the `-sources` JAR was there, you could check its contents by running
-    the following command from the terminal:  
+    the following command from the terminal:
     ```
     jar tr <path-to-.m2-repo>/repository/<groupId>/<artifactId>/<version>/<jar-name>-sources.jar
     ```

@@ -18,7 +18,7 @@ nav-title: Overview
 {% capture source%}
 {% include github org='morphonets' repo='SNT' %}
 {% endcapture %}
-{% include info-box name='SNT' software='complete framework for quantification of neuronal anatomy' logo='<img src="/media/logos/snt.png" width="150"/>' author=author maintainer=maintainer source=source status='stable, active' category='[Neuroanatomy](/plugin-index#neuroanatomy)' %}
+{% include info-box name='SNT' software='complete framework for quantification of neuronal anatomy' logo='<img src="/media/logos/snt.png" width="150"/>' author=author maintainer=maintainer source=source status='stable, active' category='Neuroanatomy' %}
 
 ## Overview
 
@@ -76,7 +76,7 @@ SNT's documentation is extensive. Please use the navigation bar on too of the pa
 
 ## Installation
 
-SNT is currently distributed through the [Neuroanatomy](/plugins/neuroanatomy) [update site](/update-sites). The first time you start SNT from Fiji's menu structure ({% include bc path='Plugins|Neuroanatomy|SNT'%}, or its backwards-compatible alias {% include bc path='Plugins|NeuroAnatomy|Legacy|Simple Neurite Tracer...'%} ) you should be prompted for automatic subscription and download of required dependencies. If not:
+SNT is currently distributed through the [Neuroanatomy](/update-sites/neuroanatomy) [update site](/update-sites). The first time you start SNT from Fiji's menu structure ({% include bc path='Plugins|Neuroanatomy|SNT'%}, or its backwards-compatible alias {% include bc path='Plugins|NeuroAnatomy|Legacy|Simple Neurite Tracer...'%} ) you should be prompted for automatic subscription and download of required dependencies. If not:
 
 1.  Run the Fiji [Updater](/plugins/updater) ({% include bc path='Help|Update..'%}, the penultimate entry in the {% include bc path='Help|'%} menu)
 2.  Click *Manage update sites*
