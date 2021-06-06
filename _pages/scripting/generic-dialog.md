@@ -73,7 +73,7 @@ Dialog.addChoice("Type:", newArray("8-bit", "16-bit", "32-bit", "RGB"));
 Dialog.addCheckbox("Ramp", true);
 
 // One can add a Help button that opens a webpage
-Dialog.addHelp("https://imagej.nethttps://imagej.nih.gov/ij/macros/DialogDemo.txt");
+Dialog.addHelp("https://imagej.nih.gov/ij/macros/DialogDemo.txt");
 
 // Finally show the GUI, once all parameters have been added
 Dialog.show();

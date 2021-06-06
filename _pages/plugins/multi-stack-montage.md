@@ -70,7 +70,7 @@ You can have a look at this minimal plugin that runs StackMontage.
         public void run(String arg) {
 
             // Make some nice images
-            ImagePlus imp = IJ.openImage("https://imagej.net/ij/images/confocal-series.zip");
+            ImagePlus imp = IJ.openImage("https://imagej.nih.gov/ij/images/confocal-series.zip");
             String imageName = imp.getTitle();
 
             // Recolor them

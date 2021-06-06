@@ -315,7 +315,7 @@ Notice here that the input and output file names must include the path, since th
 
 For instance, to see the program help we can call the program from the command line (where $IJDIR is the directory where ImageJ is installed) like this in Linux:
 
-`java -Xmx512m -cp $IJDIRhttps://imagej.nih.gov/ij.jar:$IJDIR/plugins/bUnwarpJ_.jar bunwarpj.bUnwarpJ_ -help`
+`java -Xmx512m -cp $IJDIR/ij.jar:$IJDIR/plugins/bUnwarpJ_.jar bunwarpj.bUnwarpJ_ -help`
 
 For the rest of the options, follow the help instructions.
 

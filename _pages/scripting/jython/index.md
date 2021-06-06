@@ -124,7 +124,7 @@ For example, one of the main built-in ImageJ packages is called `ij`, and often 
     from ij import IJ
     # do stuff below....
 
-Doing this allows you to access the `IJ` *class* which resides in the `ij` *package*. You can find a description of the `ij` package [here](https://javadoc.scijava.org/ImageJ1https://imagej.nih.gov/ij/package-summary.html). What can we do with the `IJ` class? Clicking on the `IJ` link brings you to the [class documentation](https://javadoc.scijava.org/ImageJ1https://imagej.nih.gov/ij/IJ.html) page for `IJ`. This class contains "static utility methods" which means you can call them with without instantiating (calling the constructor) the `IJ` class. We will cover constructors later. Looking through the documentation for `IJ`, lets focus on the method `createImage` ([docs here](https://javadoc.scijava.org/ImageJ1https://imagej.nih.gov/ij/IJ.html#createImage-java.lang.String-int-int-int-int-)). This method can be called just like you would call a method on a python class. The documentation shows you need to provide the following parameters (types in parenthesis):
+Doing this allows you to access the `IJ` *class* which resides in the `ij` *package*. You can find a description of the `ij` package [here](https://javadoc.scijava.org/ImageJ1/ij/package-summary.html). What can we do with the `IJ` class? Clicking on the `IJ` link brings you to the [class documentation](https://javadoc.scijava.org/ImageJ1/ij/IJ.html) page for `IJ`. This class contains "static utility methods" which means you can call them with without instantiating (calling the constructor) the `IJ` class. We will cover constructors later. Looking through the documentation for `IJ`, lets focus on the method `createImage` ([docs here](https://javadoc.scijava.org/ImageJ1/ij/IJ.html#createImage-java.lang.String-int-int-int-int-)). This method can be called just like you would call a method on a python class. The documentation shows you need to provide the following parameters (types in parenthesis):
 
 1.  title (string)
 2.  width (int)
@@ -132,7 +132,7 @@ Doing this allows you to access the `IJ` *class* which resides in the `ij` *pack
 4.  depth (int)
 5.  bitdepth (int)
 
-and it returns an `ImagePlus` object. `ImagePlus` objects are very important in ImageJ, and you will the documentation for them [here](https://imagej.nih.gov/ij/developer/apihttps://imagej.nih.gov/ij/ImagePlus.html). Below is an example of how to import and use the static methods on the `IJ` class to create an image.
+and it returns an `ImagePlus` object. `ImagePlus` objects are very important in ImageJ, and you will the documentation for them [here](https://imagej.nih.gov/ij/developer/api/ij/ImagePlus.html). Below is an example of how to import and use the static methods on the `IJ` class to create an image.
 
     from ij import IJ # read this as: "from the ij package import the IJ class"
     test_img = IJ.createImage("Test image", 512, 512, 1, 8)
@@ -140,7 +140,7 @@ and it returns an `ImagePlus` object. `ImagePlus` objects are very important in 
     print(type(test_img))
     # <type 'ij.ImagePlus'>
 
-This code shows that we have successfully created an `ImagePlus` object. Looking at the documentation for the [ImagePlus class](https://javadoc.scijava.org/ImageJ1https://imagej.nih.gov/ij/ImagePlus.html), let's use a few of the methods to make sure the image was created correctly.
+This code shows that we have successfully created an `ImagePlus` object. Looking at the documentation for the [ImagePlus class](https://javadoc.scijava.org/ImageJ1/ij/ImagePlus.html), let's use a few of the methods to make sure the image was created correctly.
 
     from ij import IJ
     test_img = IJ.createImage("Test image", 512, 512, 1, 8)

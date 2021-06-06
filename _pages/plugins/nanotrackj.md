@@ -12,7 +12,7 @@ categories: [Uncategorized]
 {% capture maintainer%}
 {% include person id='thorstenwagner' %},
 {% endcapture %}
-{% include info-box software='ImageJFiji' name='NanoTrackJ' author=author maintainer=maintainer filename='nanotrackj.jar [\[1](https://github.com/thorstenwagnerhttps://imagej.nih.gov/ij-nanotrackj/releases/latest) \]' source='Github [\[2](https://github.com/thorstenwagnerhttps://imagej.nih.gov/ij-nanotrackj) \]' latest-version='v1.0.3 (22 Feb 2016)' status='active' %}
+{% include info-box software='ImageJFiji' name='NanoTrackJ' author=author maintainer=maintainer filename='nanotrackj.jar [\[1](https://github.com/thorstenwagner/ij-nanotrackj/releases/latest) \]' source='Github [\[2](https://github.com/thorstenwagner/ij-nanotrackj) \]' latest-version='v1.0.3 (22 Feb 2016)' status='active' %}
 
 ## General
 
@@ -78,7 +78,7 @@ If the plugin finishes analyzing it opens histogram plots for the size distribut
 
 ## Simulation
 
-If you like to check NanoTrackJ by Monte-Carlo simulation, you may use our [simulation macros](https://github.com/thorstenwagnerhttps://imagej.nih.gov/ij-nanotrackj/tree/master/scripts/simulation).
+If you like to check NanoTrackJ by Monte-Carlo simulation, you may use our [simulation macros](https://github.com/thorstenwagner/ij-nanotrackj/tree/master/scripts/simulation).
 
 PartSimDC.ijm: This macro allows you to simulate particle by specifying their diffusion coefficient.
 

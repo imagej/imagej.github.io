@@ -102,7 +102,7 @@ Here we can load the data (in [Weka](http://www.cs.waikato.ac.nz/ml/weka/) forma
 
 #### Save data
 
-With this button we can save the current trace information into a data file that we can handle later with the plugin or the Weka Explorer itself. The plugin will save the feature vectors derived from the pixels belonging to each trace into an [ARFF](http://weka.wikispaces.com/ARFF+%28stable+version%29) file at a location chosen by the user. Notice the traces (regions of interests selected by the user) are not saved but only their corresponding feature vectors. To save the ROIs, you can simply use the \[https://imagej.nih.gov/ijhttps://imagej.nih.gov/ij/docs/guide/146-30.html#sub:ROI-Manager... ROI Manager\].
+With this button we can save the current trace information into a data file that we can handle later with the plugin or the Weka Explorer itself. The plugin will save the feature vectors derived from the pixels belonging to each trace into an [ARFF](http://weka.wikispaces.com/ARFF+%28stable+version%29) file at a location chosen by the user. Notice the traces (regions of interests selected by the user) are not saved but only their corresponding feature vectors. To save the ROIs, you can simply use the \[https://imagej.nih.gov/ij/docs/guide/146-30.html#sub:ROI-Manager... ROI Manager\].
 
 #### Create new class
 
