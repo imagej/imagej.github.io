@@ -15,11 +15,11 @@ This is a suite of useful imageJ plugins that are designed for analysis of image
 
 The following are ways of installing this suite of plugins. The first way is the easiest and fastest method, but the second way offers more freedom.
 
-### Installation via FIJI updater
+### Installation via Fiji updater
 
-The easiest way to install the TEM suite of plugins is to use the FIJI updater:
+The easiest way to install the TEM suite of plugins is to use the Fiji updater:
 
-1.  Download and install [FIJI](https://fiji.sc/)
+1.  Download and install [Fiji](https://fiji.sc/)
 2.  Start the updater with *Help* &gt; *Update*
 3.  Click the *Manage update sites* button in the *ImageJ Updater Window*
 4.  In the *Manage update sites window* scroll down to the **TEM suite** entry and check the box in the left hand column

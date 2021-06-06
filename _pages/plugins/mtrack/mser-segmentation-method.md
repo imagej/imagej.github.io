@@ -19,4 +19,4 @@ If the user does not wish to change the default settings for sub-pixel localizat
 
 -   Save parameters
 
-After successful tracking, the user has the option to save the program parameters, so that the movie can be run (again) in batch mode. This choice can also be made without doing the tracking after just making the parameter selection. Clicking on this button triggers the close of the program and saves the program parameters in IJ.log file of FIJI, this close of program is done to ensure that the log file is properly updated by FIJI.
+After successful tracking, the user has the option to save the program parameters, so that the movie can be run (again) in batch mode. This choice can also be made without doing the tracking after just making the parameter selection. Clicking on this button triggers the close of the program and saves the program parameters in IJ.log file of Fiji, this close of program is done to ensure that the log file is properly updated by Fiji.

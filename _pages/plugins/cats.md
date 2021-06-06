@@ -12,7 +12,7 @@ categories: [Uncategorized]
 
 ## Overview
 
-CATS is a FIJI plugin for context aware trainable segmentation of big image data. For more information please visit the GitHub [README](https://github.com/embl-cba/fiji-plugin-cats/blob/master/README.md#cats---context-aware-trainable-segmentation).
+CATS is a Fiji plugin for context aware trainable segmentation of big image data. For more information please visit the GitHub [README](https://github.com/embl-cba/fiji-plugin-cats/blob/master/README.md#cats---context-aware-trainable-segmentation).
 
 ## Installation
 

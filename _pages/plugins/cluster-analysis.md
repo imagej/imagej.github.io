@@ -90,7 +90,7 @@ Using the ShinyApp-library within the R-framework, we are currently working on a
 
 # Headless-mode
 
-Thanks to the headless-mode functionality of ImageJ2 and the Cluster Analysis Plugin, the program is able to run in a desktop-free environment such as an external server (preinstalled with FIJI). Load a previously tested ini.cfg-file with the right parameters using following command in a bash-shell terminal (in a Linux-server):
+Thanks to the headless-mode functionality of ImageJ2 and the Cluster Analysis Plugin, the program is able to run in a desktop-free environment such as an external server (preinstalled with Fiji). Load a previously tested ini.cfg-file with the right parameters using following command in a bash-shell terminal (in a Linux-server):
 
 `pathToFiji/Fiji.app/ImageJ-linux64 --ij2 --headless --run pathToPluginFolder/Cluster_Analysis/Load_Custom_ini_File.py 'inifile="pathToIniFile/ini.cfg"'`
 

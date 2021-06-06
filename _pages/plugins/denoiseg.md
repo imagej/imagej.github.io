@@ -8,7 +8,7 @@ categories: [Uncategorized]
 
 DenoiSeg is a neural network based algorithm for instance segmentation. The interesting thing about DenoiSeg is, that - although primarily meant for segmentation - the algorithm also learns to denoise your images. The knowledge acquired by denoising the images, improves the segmentation results. DenoiSeg can solve hard segmentation tasks, just like other neural network bases algorithms. But it requires less training data, you only need to manually generate segmentation for about 2 to 10 images. (Other methods usually require much manual segmentations for at least 50 image.)
 
-This website describes the DenoiSeg FIJI Plugin. Which makes it very easy to use DenoiSeg. All you need is your images, manually generated segmentations for a few of them, a computer with a NVIDIA graphics card and FIJI installed.
+This website describes the DenoiSeg Fiji Plugin. Which makes it very easy to use DenoiSeg. All you need is your images, manually generated segmentations for a few of them, a computer with a NVIDIA graphics card and Fiji installed.
 
 Segmenting your data with DenoiSeg requires 3 steps:
 
@@ -16,7 +16,7 @@ Segmenting your data with DenoiSeg requires 3 steps:
 2.  Train the neural network. The result is a trained neural network, which is called: model. (Training keeps your computer busy for around 12 h. This can be done over night, as you don't need do anything.)
 3.  Prediction: Use the train model to segment as much images as you want. This step is much faster, just 1 second per image.
 
-This FIJI plugin is part of CSBDeep, a collection of neural network algorithm in FIJI. For more information about our open source implementation , examples and images, click [here](https://csbdeep.bioimagecomputing.com/tools/denoiseg/).
+This Fiji plugin is part of CSBDeep, a collection of neural network algorithm in Fiji. For more information about our open source implementation , examples and images, click [here](https://csbdeep.bioimagecomputing.com/tools/denoiseg/).
 
 # Publication: DenoiSeg - Joint Denoising and Segmentation
 
@@ -28,7 +28,7 @@ Microscopy image analysis often requires the segmentation of objects, but traini
 
 # Installation
 
-The DenoiSeg FIJI Plugin is part of the CSBDeep update site. Look [here](/update-sites/following), for detailed instructions on how to install an update site. Or just follow these steps:
+The DenoiSeg Fiji Plugin is part of the CSBDeep update site. Look [here](/update-sites/following), for detailed instructions on how to install an update site. Or just follow these steps:
 
 1.  Start ImageJ / Fiji
 2.  Open the updater via `Help > Update...`
@@ -58,7 +58,7 @@ Read [this page](/develop/tensorflow) for how to get GPU support. With out a GPU
 
 ### Example data
 
-If you just want to test the FIJI plugin you may use this [data](https://cloud.mpi-cbg.de/index.php/s/Mayv4JHOlR6ykBh). It was used to create the screenshots below.
+If you just want to test the Fiji plugin you may use this [data](https://cloud.mpi-cbg.de/index.php/s/Mayv4JHOlR6ykBh). It was used to create the screenshots below.
 
 Please note: You may not use this training data to segment your images. You need to prepare your own training data to get good results for your images.
 
@@ -142,7 +142,7 @@ Alternatively, you can <b>use the DenoiSeg menu</b>: {% include thumbnail src='/
 
 # Exporting trained models from Python to ImageJ / Fiji
 
-It's possible to train a DenoiSeg neural network using Python. The required code and instructions can be found [here](https://github.com/juglab/DenoiSeg). The model that has been trained in Python, can be used in FIJI as well:
+It's possible to train a DenoiSeg neural network using Python. The required code and instructions can be found [here](https://github.com/juglab/DenoiSeg). The model that has been trained in Python, can be used in Fiji as well:
 
 1.  In Python, run this at the end of your training: `mode.export_TF()`.
 2.  Locate the exported model file

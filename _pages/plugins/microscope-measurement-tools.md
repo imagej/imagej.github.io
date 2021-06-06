@@ -131,6 +131,6 @@ This simple python (jython) plugin was created by {% include person id='demisjoh
 
 I used the following plugins as inspiration: [Correct\_3D\_drift](/plugins/correct-3d-drift) and [Microscope Scale](https://imagej.nih.gov/ij/plugins/microscope-scale.html) (which sadly is no longer easily customizable).
 
-Please see the GitHub page for issues needing coding work, and ideas for improvement. You are always welcome to contribute code to the GitHub project, it is remarkably simple due to FIJI's excellent Python API!
+Please see the GitHub page for issues needing coding work, and ideas for improvement. You are always welcome to contribute code to the GitHub project, it is remarkably simple due to Fiji's excellent Python API!
 
  

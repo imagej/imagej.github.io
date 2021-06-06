@@ -161,7 +161,7 @@ After dataset fitting, you can select images to export in the drop-down checklis
 {% include notice icon="info" content='You may follow the following steps to reproduce the composite color image after export:
 
 1.  Export "Intensity" with desired fitted images;
-2.  Convert all images to RGB format by searching and executing the "RGB Color" command in FIJI;
+2.  Convert all images to RGB format by searching and executing the "RGB Color" command in Fiji;
 3.  Search and execute the "compose rgb-stacks" script, make the intensity image the "source" and the fitted image the "target", and choose "Multiply" as "compose method". Hit "OK".' %}
 
 ## Advanced topics
