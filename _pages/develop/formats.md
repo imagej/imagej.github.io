@@ -1,5 +1,4 @@
 ---
-mediawiki: Adding_new_formats
 title: Adding new formats
 section: Extend:Development:Guides
 ---
