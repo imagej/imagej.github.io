@@ -3,6 +3,7 @@ mediawiki: Compatibility
 title: ImageJ Legacy Layer
 section: Explore:Libraries
 artifact: net.imagej:imagej-legacy
+icon: /media/icons/imagej.png
 ---
 
 Backward compatibility is one of ImageJ's most important goals. It must remain possible to use existing plugins and macros with new versions of [ImageJ](/software/imagej).

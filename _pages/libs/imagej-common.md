@@ -3,6 +3,7 @@ mediawiki: ImageJ_Common
 title: ImageJ Common
 section: Explore:Libraries
 artifact: net.imagej:imagej-common
+icon: /media/icons/imagej.png
 ---
 
 The ImageJ Common library contains ImageJ's core image data model, based on the [ImgLib2](/libs/imglib2) library for multidimensional image data processing, as well as the corresponding core image display logic for user interfaces, based on the [SciJava Common](/libs/scijava#scijava-common) application framework.

@@ -1,8 +1,9 @@
 ---
 mediawiki: ImageJ_Ops
 title: ImageJ Ops
-section: Extend:Development:Guides
+section: Explore:Libraries
 artifact: net.imagej:imagej-ops
+icon: /media/icons/imagej.png
 ref: Rueden, C., Dietz, C., Horn, M., Schindelin, J., Northan, B., Berthold, M. &amp; Eliceiri, K. (2021). ImageJ Ops [Software]. https://imagej.net/Ops.
 ---
 

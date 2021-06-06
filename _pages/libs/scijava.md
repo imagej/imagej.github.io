@@ -1,5 +1,6 @@
 ---
 title: SciJava
+section: Explore:Libraries
 icon: /media/icons/scijava.svg
 logo: /media/logos/scijava.png
 artifact: org.scijava:scijava-common
