@@ -506,7 +506,7 @@ $leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding - 3
 
 #header {
   padding: 9em 0 9em 0;
-  background-image: url("../../media/site/overlay7.png");
+  background-image: url("/media/site/overlay7.png");
   color: rgba(255, 255, 255, 0.75);
   background-position: top left, center center, center center;
   background-size: auto, cover, cover;
@@ -711,7 +711,7 @@ body.is-preload #header:after {
 
 #footer {
   padding: 4em 0 4em 0;
-  background-image: url("../../media/site/overlay8.png"), url("../../media/site/header.jpg");
+  background-image: url("/media/site/overlay8.png"), url("/media/site/header.jpg");
   color: rgba(255, 255, 255, 0.75);
   background-attachment: fixed, fixed, fixed;
   background-position: top left, center center, center center;
