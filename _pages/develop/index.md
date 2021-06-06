@@ -211,63 +211,35 @@ See the [source code](/develop/source) page for further details.
 Start with the [ImageJ tutorial notebooks](/tutorials)!
 
 {::nomarkdown}
-<table>
+<table class="top striped-columns">
   <tbody>
     <tr>
-      <td style="vertical-align: top">
-        <p><strong>Learning the ImageJ API</strong></p>
-      </td>
-      <td style="vertical-align: top">
-        <p><strong>ImageJ plugins</strong></p>
-      </td>
-      <td style="vertical-align: top">
-        <p><strong>The Fiji distribution of ImageJ</strong></p>
-      </td>
+      <th>Learning the ImageJ API</th>
+      <th>ImageJ plugins</th>
+      <th>The Fiji distribution of ImageJ</th>
     </tr>
     <tr>
-      <td style="vertical-align: top">
+      <td>
         <ul>
-          <li>
-            <a href="https://github.com/imagej/tutorials">ImageJ tutorials</a>
-          </li>
-          <li>
-            <a href="/libs/imglib2/examples">ImgLib2 Examples</a>
-          </li>
-          <li>
-            <a href="/develop/ij1-ij2-cheat-sheet">ImageJ1-ImageJ2 cheat sheet</a>
-          </li>
+          <li><a href="https://github.com/imagej/tutorials">ImageJ tutorials</a></li>
+          <li><a href="/libs/imglib2/examples">ImgLib2 Examples</a></li>
+          <li><a href="/develop/ij1-ij2-cheat-sheet">ImageJ1-ImageJ2 cheat sheet</a></li>
         </ul>
       </td>
-      <td style="vertical-align: top">
+      <td>
         <ul>
-          <li>
-            <a href="/develop/plugins">Writing ImageJ2 plugins</a>
-          </li>
-          <li>
-            <a href="/develop/improving-the-code">Contributing to an existing plugin</a>
-          </li>
-          <li>
-            <a href="/contribute/distributing">Distributing your plugin</a>
-          </li>
-          <li>
-            <a href="/develop/ij1-plugins">Writing ImageJ 1.x plugins</a>
-          </li>
+          <li><a href="/develop/plugins">Writing ImageJ2 plugins</a></li>
+          <li><a href="/develop/improving-the-code">Contributing to an existing plugin</a></li>
+          <li><a href="/contribute/distributing">Distributing your plugin</a></li>
+          <li><a href="/develop/ij1-plugins">Writing ImageJ 1.x plugins</a></li>
         </ul>
       </td>
-      <td style="vertical-align: top">
+      <td>
         <ul>
-          <li>
-            <a href="/software/fiji/developing">Developing Fiji</a>
-          </li>
-          <li>
-            <a href="/develop/eclipse">Fiji + Eclipse</a>
-          </li>
-          <li>
-            <a href="/contribute/fiji">Fiji contribution requirements</a>
-          </li>
-          <li>
-            <a href="/develop/supported-compilers">Supported Compilers</a>
-          </li>
+          <li><a href="/software/fiji/developing">Developing Fiji</a></li>
+          <li><a href="/develop/eclipse">Fiji + Eclipse</a </li>
+          <li><a href="/contribute/fiji">Fiji contribution requirements</a </li>
+          <li><a href="/develop/supported-compilers">Supported Compilers</a </li>
         </ul>
       </td>
     </tr>
