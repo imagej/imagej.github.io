@@ -353,7 +353,7 @@ table.table-OS-info {
 
 .example > div:last-child {
   max-width: 100%;
-  padding-bottom: 2em;
+  overflow: auto;
 }
 .example > div:last-child > div {
   padding: 10px;
