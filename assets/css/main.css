@@ -1251,7 +1251,7 @@ button,
   text-align: center;
   text-decoration: none;
   text-indent: 0.125em;
-  text-transform: uppercase;
+  font-variant: small-caps;
   white-space: nowrap;
 }
 
