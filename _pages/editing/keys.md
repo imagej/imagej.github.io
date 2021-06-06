@@ -13,8 +13,13 @@ The syntax for talking about a key such as {% include key key="enter" %} is:
 {% raw %}{% include key key="enter" %}{% endraw %}
 ```
 
-See the [list of key codes](#list-of-key-codes) below for a complete summary of
-available key codes.
+You can describe mouse actions such as {% include key key="right click" %}, too:
+```liquid
+{% raw %}{% include key key="right click" %}{% endraw %}
+```
+
+See the [list of input codes](#list-of-input-codes) below for a complete
+summary of available key and mouse codes.
 
 ## Key combinations
 
@@ -75,9 +80,9 @@ to do something different:
 {% endcapture %}
 {% include editing/example code=custom-chain-symbols-code result=custom-chain-symbols-result %}
 
-## List of key codes
+## List of input codes
 
-{% assign keys = "Menu, Hyper, Meta, Windows, Command, Super, Fn, AltGr, Ctrl, Ctlcmd, Alt, Option, Shift, Num Lock, Caps Lock, Scroll Lock, Print Screen, Eject, Enter, Enter2, Backspace, Delete, Insert, Esc, Right, Left, Up, Down, Page Up, Page Down, Home, End, Tab, Space Bar, Clear, F1, ..., F20, A, ..., Z, Bar, Backslash" | split: ", " -%}
+{% assign keys = "Menu, Hyper, Meta, Windows, Command, Super, Fn, AltGr, Ctrl, Ctlcmd, Alt, Option, Shift, Num Lock, Caps Lock, Scroll Lock, Print Screen, Eject, Enter, Enter2, Backspace, Delete, Insert, Esc, Right, Left, Up, Down, Page Up, Page Down, Home, End, Tab, Space Bar, Clear, F1, ..., F20, A, ..., Z, Bar, Backslash, Left Click, Middle Click, Right Click, Double Click, Left Drag, Middle Drag, Right Drag, Mouse Wheel, Mouse Wheel Up, Mouse Wheel Down" | split: ", " -%}
 {::nomarkdown}
 <table>
   <tr>
