@@ -12,10 +12,36 @@ layout: home
       <p>ImageJ is an open source image processing program designed for scientific
       multidimensional images.</p>
       <ul class="actions special">
-        <li><a href="#one" class="button scrolly">Get Started</a></li>
+        <li><a href="#resources" class="button scrolly">Get Started</a></li>
       </ul>
     </div>
   </section>
+
+  <!-- Calls to Action -->
+  <section id="resources" class="main style3 special">
+    <header class="minor">
+      <table><tbody><tr>
+        <td>Users &#9660;</td>
+        <td class="dots"></td>
+        <td>&#9660; Developers</td>
+      </tr></tbody></table>
+    </header>
+    <ul class="actions special">
+      <li><a href="/downloads" class="button solid icon"><span class="fas fa-download"></span> Download</a></li>
+      <li><a href="/learn" class="button icon solid"><span class="fas fa-graduation-cap"></span> Learn</a></li>
+      <li><a href="/extend" class="button icon solid"><span class="fas fa-wrench"></span> Extend</a></li>
+      <li><a href="/scripting" class="button icon solid"><span class="fas fa-industry"></span> Automate</a></li>
+      <li><a href="/develop" class="button icon solid"> <span class="fas fa-terminal"></span> Develop</a></li>
+    </ul>
+    <ul class="actions special" style="display: flex; flex-wrap: wrap">
+      <li><a href="/contribute/citing" class="button icon solid"><span class="fas fa-quote-left"></span> Cite</a></li>
+      <li><a href="/discuss" class="button icon solid"><img src="/media/icons/image-sc.png" width="24" style="vertical-align: middle; margin-top: -5px"> Discuss</a></li>
+      <li><a href="/contribute" class="button icon solid"><span class="fas fa-hard-hat"></span> Contribute</a></li>
+    </ul>
+    <header class="minor"> &#9650; Community &#9650; </header>
+  </section>
+
+  <div style="clear: both"></div>
 
   <!-- ImageJ Introduction -->
   <section id="one" class="main">
@@ -23,30 +49,34 @@ layout: home
       <div class="row gtr-150">
         <div class="col-12 col-12-medium">
           <header class="major">
-            <ul class = "actions special">
-              <li><a href="/downloads" class="button solid icon"><span class="fas fa-download"></span> Download</a></li>
-              <li><a href="/learn" class="button icon solid"><span class="fas fa-cogs"></span> Use</a></li>
-              <li><a href="/develop" class="button icon solid"><span class="fas fa-wrench"></span> Extend</a></li>
-            </ul>
             <h1>Why ImageJ?</h1>
             <header class="container-whyij">
               <div class="row-whyij">
                 <div class="col-4">
                   <div class="fa-5x text-success">
-                    <span class="fas fa-check-circle"></span>
+                    <span class="fas fa-bolt"></span>
                   </div>
-                  <h2>Easy to Use</h2>
+                  <h2>Powerful</h2>
                   <p>
-                  Install ImageJ in one-click, Fiji installs all of its plugins, features an automatic updater, and offers comprehensive documentation.
+                  ImageJ includes tools for
+                  <a href="/imaging/image-intensity-processing">image processing</a>,
+                  <a href="/imaging/colocalization-analysis">colocalization</a>,
+                  <a href="/imaging/deconvolution">deconvolution</a>,
+                  <a href="/imaging/registration">registration</a>,
+                  <a href="/imaging/segmentation">segmentation</a>,
+                  <a href="/imaging/tracking">tracking</a>,
+                  <a href="/imaging/visualization">visualization</a>,
+                  and much more.
                   </p>
                 </div>
                 <div class="col-4">
                   <div class=" fa-5x text-primary">
                     <span class="fas fa-cogs"></span>
                   </div>
-                  <h2>Powerful</h2>
+                  <h2>Extensible</h2>
                   <p>
-                  ImageJ offers robust extensibility, harnessing the power of hundreds of plugins to assist with any of your imaging needs.
+                  ImageJ offers robust extensibility, harnessing the power of
+                  hundreds of plugins to assist with any of your imaging needs.
                   </p>
                 </div>
                 <div class="col-4">
@@ -55,7 +85,10 @@ layout: home
                   </div>
                   <h2>Free &amp; Open Source</h2>
                   <p>
-                  ImageJ is an <a href="/Open_Source">open source</a> project hosted on <a href="https://github.com/imagej">GitHub</a>, developed and written by the community.
+                  ImageJ is an <a href="/licensing/open-source">open source</a>
+                  project hosted on
+                  <a href="https://github.com/imagej">GitHub</a>,
+                  developed by and for the scientific imaging community.
                   </p>
                 </div>
               </div>
@@ -65,70 +98,6 @@ layout: home
       </div>
     </div>
   </section>
-
-  <div class="resources">
-    <!-- User resources -->
-    <section id="user-resources" class="main style3 special">
-      <header class="major">
-        <h2>User Resources</h2>
-      </header>
-      <ul class="actions special">
-        <li>
-          <a href="/plugins" class="button icon solid">
-            <span class="fas fa-plug"></span> Plugins
-          </a>
-        </li>
-        <li>
-          <a href="/help" class="button icon solid">
-            <span class="fas fa-hands-helping"></span> Help
-          </a>
-        </li>
-      </ul>
-      <ul class="actions special">
-        <li>
-          <a href="https://forum.image.sc/tag/imagej" class="button icon solid">
-            <img src="/media/icons/image-sc.png" width="24" style="vertical-align: middle; margin-top: -5px"> Forum</a>
-        </li>
-        <li>
-          <a href="/contribute/citing" class="button icon solid">
-            <span class="fas fa-quote-left"></span> Cite
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Developer resources -->
-    <section id="dev-resources" class="main style2 special">
-      <header class="major">
-        <h2>Developer Resources</h2>
-      </header>
-      <ul class="actions special">
-        <li>
-          <a href="https://github.com/imagej/" class="button icon solid">
-            <span class="fas fa-code"></span> Source Code
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/imagej/imagej/issues" class="button icon solid">
-            <span class="fas fas fa-bullhorn"></span> Report a Bug
-          </a>
-        </li>
-      </ul>
-      <ul class="actions special">
-        <li>
-          <a href="https://javadoc.scijava.org/SciJava/" class="button icon solid">
-            <span class="fas fa-terminal"></span> SciJava API
-          </a>
-        </li>
-        <li>
-          <a href="https://javadoc.scijava.org/ImageJ/" class="button icon solid">
-            <span class="fas fa-terminal"></span>ImageJ API
-          </a>
-        </li>
-      </ul>
-
-    </section>
-  </div>
 
   <div class="col-md-8">
     <div class="card text-center">
