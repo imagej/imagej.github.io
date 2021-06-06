@@ -1,19 +1,16 @@
 ---
-mediawiki: ImageJA
 title: ImageJA
 section: Explore:Libraries
+icon: /media/icons/imagej1.png
+artifact: net.imagej:ij
 ---
 
-{% include project content='ImageJ1' %}
-{% capture author%}
-{% include person id='rasband' %}, {% include person id='dscho' %}, {% include person id='acardona' %}, et al
-{% endcapture %}
+ImageJA is a project that provides a clean [Git](/develop/git) history of the [ImageJ 1.x](/software/imagej1) project, with a proper 'pom.xml' file so that it can be used with [Maven](/develop/maven) without hassles.
 
-{% capture source%}
-{% include github org='imagej' repo='ImageJA' label='Git repository' %}
-{% endcapture %}
-{% include info-box software='ImageJA' name='ImageJA' author=author maintainer='[Travis CI](/develop/travis)' filename='Newer versions [on Maven Central](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22net.imagej%22%20AND%20a%3A%22ij%22)  
-Older versions [in SciJava Maven repository](http://maven.scijava.org/content/repositories/releases/net/imagej/ij/)' source=source released='17/03/2007' latest-version='auto-updated' status='auto-maintained' %}ImageJA is a project that provides a clean [Git](/develop/git) history of the [ImageJ 1.x](/software/imagej1) project, with a proper 'pom.xml' file so that it can be used with [Maven](/develop/maven) without hassles.
+{% include aside title="Old versions of `ij.jar`" content="
+* Versions up to 1.48q are [in the SciJava Maven repository](http://maven.scijava.org/content/repositories/releases/net/imagej/ij/).
+* Versions starting with 1.48r are [on Maven Central](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22net.imagej%22%20AND%20a%3A%22ij%22).
+" %}
 
 ## Why ImageJA?
 
@@ -55,6 +52,4 @@ ImageJA was originally [launched in 2005](https://list.nih.gov/cgi-bin/wa.exe?A2
     -   A little bug fix in StackWindow: if you have a 2D time lapse, ImageJ will still use the zSelector (rather than the tSelector).
     -   ImageJA can handle https:// URLs, too.
 
-However, these days, needed changes to ImageJ 1.x are instead patched at runtime; see the [Compatibility](/libs/imagej-legacy) page for details.
-
-
+However, these days, needed changes to ImageJ 1.x are instead patched at runtime; see the [ImageJ Legacy](/libs/imagej-legacy) page for details.
