@@ -172,10 +172,10 @@ by name, sans file extension.
 
 {% highlight liquid %}{% raw %}{% include notice class="fab fa-fort-awesome"
   content="You can use Font Awesome icons.
-  [More than 5,000 icons!](https://fontawesome.com/v5.9.0/icons)" %}{% endraw %}{% endhighlight %}
+  [More than 1,500 icons!](https://fontawesome.com/v5.9/icons?m=free)" %}{% endraw %}{% endhighlight %}
 {% include notice class="fab fa-fort-awesome"
   content="You can use Font Awesome icons.
-  [More than 5,000 icons!](https://fontawesome.com/v5.9.0/icons)" %}
+  [More than 1,500 icons!](https://fontawesome.com/v5.9/icons?m=free)" %}
 
 See also [Symbols › Font Awesome](/editing/symbols#font-awesome).
 

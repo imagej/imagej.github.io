@@ -29,7 +29,7 @@ look, you can try drawing it on [shapecatcher.com](https://shapecatcher.com/).
 ## Font Awesome
 
 This wiki supports [Font Awesome](https://fontawesome.com/), a
-collection of more than 5,000 icons for embedding on websites.
+collection of more than 1,500 free icons for embedding on websites.
 Examples:
 
 |                   Code                    |                  Icon                   |
@@ -43,4 +43,4 @@ Examples:
 | `<i class="fas fa-vial"></i>`             | <i class="fas fa-vial"></i>             |
 
 To find icons matching your criteria, use the
-[Font Awesome search](https://fontawesome.com/v5.9/icons).
+[Font Awesome search](https://fontawesome.com/v5.9/icons?m=free).
