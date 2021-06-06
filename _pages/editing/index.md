@@ -117,20 +117,21 @@ which enable insertion of images, figures, notices, and more.
 (Think of this as: "I would like to *include* an image".)
 Here are a couple of examples:
 
-<table><tbody>
-<tr>
-  <th>Markup</th>
-  <th>Result</th>
-</tr>
-<tr>
-  <td><code>{% raw %}{% include icon name="imagej" %}{% endraw %}</code></td>
-  <td>{% include icon name="imagej" %}</td>
-</tr>
-<tr>
-  <td><code>{% raw %}{% include person id="rasband" %}{% endraw %}</code></td>
-  <td>{% include person id="rasband" %}</td>
-</tr>
-</tbody></table>
+<style>
+.skinny {
+  margin-left: 0;
+  max-width: 30em;
+}
+.skinny td:first-child {
+  width: 8em;
+}
+</style>
+
+| Markup | Result |
+|--------|--------|
+| `{% raw %}{% include icon name="imagej" %}{% endraw %}`  | {% include icon name="imagej" %} |
+| `{% raw %}{% include person id="rasband" %}{% endraw %}` | {% include person id="rasband" %} |
+{:style="margin-left: 0; max-width: 30em"}
 
 ### Available includes
 
@@ -142,6 +143,7 @@ The following tables list all of this site's general-purpose includes:
 |----------------------------------------------|-------------------------|
 | [citation](citations#citing-publications)    | Insert a citation       |
 | [testimonial](citations#testimonials)        | Insert a personal quote |
+{:.skinny}
 
 #### Linking
 
@@ -156,6 +158,7 @@ The following tables list all of this site's general-purpose includes:
 | [person-list](people#lists)       | Link to a list of user pages         |
 | [scholar](linking#scholar)        | Link to an article on Google Scholar |
 | [wikipedia](linking#wikipedia)    | Link to a Wikipedia page             |
+{:.skinny}
 
 #### Symbols
 
@@ -165,6 +168,7 @@ The following tables list all of this site's general-purpose includes:
 | [button](buttons)                 | Insert a button            |
 | [key](keys)                       | Insert a keyboard shortcut |
 | [icon](icons)                     | Insert an icon             |
+{:.skinny}
 
 #### Media
 
@@ -173,6 +177,7 @@ The following tables list all of this site's general-purpose includes:
 | [img](images#images)              | Insert an image            |
 | [gallery](images#image-galleries) | Insert an image gallery    |
 | [video](videos)                   | Embed a video              |
+{:.skinny}
 
 #### Notices
 
@@ -180,12 +185,14 @@ The following tables list all of this site's general-purpose includes:
 |-----------------------------|---------------------------------------|
 | [notice](notices)           | Insert an informational notice banner |
 | [aside](notices#asides)     | Float a right sidebar with commentary |
+{:.skinny}
 
 #### Source code
 
 | Include      | Purpose                          |
 |--------------|----------------------------------|
 | [code](code) | Embed a code snippet from GitHub |
+{:.skinny}
 
 #### Miscellaneous
 
@@ -195,6 +202,7 @@ The following tables list all of this site's general-purpose includes:
 | [timeline](timelines)                | Insert a horizontal timeline         |
 | [tooltip](tooltips)                  | Add a tooltip appearing on mouseover |
 | [echo](debugging)                    | For debugging                        |
+{:.skinny}
 
 #### MARKED FOR REMOVAL
 
@@ -204,3 +212,4 @@ The following tables list all of this site's general-purpose includes:
 | [info-box](notices#info-box)                 | Delete after migrating to statbox  |
 | clear                                        | Delete after purging all floats    |
 | project                                      | Delete after improving statbox     |
+{:.skinny}
