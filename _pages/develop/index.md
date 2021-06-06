@@ -19,17 +19,17 @@ This page provides an overview of ImageJ from the perspective of software develo
   <tbody>
     <tr>
       <td style="padding: 15px 15px;">
-        <p>An end-user {% include wikipedia title='Application software' text='software application'%}</p>
+        An end-user {% include wikipedia title='Application software' text='software application'%}
       </td>
     </tr>
     <tr>
       <td style="border-top: 1px #aaa solid; padding: 15px 15px;">
-        <p><a href="Getting%20started"><img src="/media/develop/imagej-app.png" width="500px"></a></p>
+        <a href="Getting%20started"><img src="/media/develop/imagej-app.png" width="500px"></a>
       </td>
     </tr>
     <tr>
       <td>
-        <p>Reusable {% include wikipedia title='Library (computing)' text='software libraries'%}</p>
+        Reusable {% include wikipedia title='Library (computing)' text='software libraries'%}
       </td>
     </tr>
     <tr>
@@ -45,22 +45,22 @@ public void loadAndDisplay(File file) {
     </tr>
     <tr>
       <td style="border-top: 1px #aaa solid; padding: 15px 15px 0 15px;">
-        <p>An extensible collection of <a href="plugins">plugins</a> and <a href="/libs/scijava#services">services</a></p>
+        An extensible collection of <a href="plugins">plugins</a> and <a href="/libs/scijava#services">services</a>
       </td>
     </tr>
     <tr>
       <td style="padding: 15px 0 30px 45px;">
-        <p><a href="/libs/scijava"><img src="/media/logos/scijava.png" height="72px"></a></p>
+        <a href="/libs/scijava"><img src="/media/logos/scijava.png" height="72px"></a>
       </td>
     </tr>
     <tr>
       <td style="border-top: 1px #aaa solid; padding: 15px 15px 0 15px;">
-        <p><em>"Write once, run anywhere"</em> <a href="/libs/imagej-ops">image processing routines</a></p>
+        <em>"Write once, run anywhere"</em> <a href="/libs/imagej-ops">image processing routines</a>
       </td>
     </tr>
     <tr>
       <td style="padding: 15px 0 15px 25px;">
-        <p><a href="/libs/imagej-ops"><img src="/media/develop/write-once-run-anywhere.png" width="500px"></a></p>
+        <a href="/libs/imagej-ops"><img src="/media/develop/write-once-run-anywhere.png" width="500px"></a>
       </td>
     </tr>
   </tbody>
@@ -70,48 +70,38 @@ public void loadAndDisplay(File file) {
 
 ## Project structure
 
-ImageJ is divided into three parts -- ImageJ, ImgLib2, and SciJava -- with responsibilites as follows:
+ImageJ is divided into three parts---ImageJ, ImgLib2, and SciJava---with responsibilities as follows:
 
 {::nomarkdown}
 <table>
   <thead>
     <tr class="header">
       <th style="font-size: 56px; width: 350px">
-        <p>{% include icon name='ImageJ' size='72px' %}<a href="/software/imagej">ImageJ</a></p>
+        {% include icon name='ImageJ' size='72px' %}<a href="/software/imagej">ImageJ</a>
       </th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>
-        <p><span style="font-size: large">ImageJ provides <strong>image-specific components</strong></span></p>
+        <span style="font-size: large">ImageJ provides <strong>image-specific components</strong></span>
         <ul>
-          <li>
-            <a href="/libs/imagej-common">ImageJ Common</a>
-          </li>
-          <li>
-            <a href="/libs/imagej-ops">ImageJ Ops</a>
-          </li>
-          <li>
-            <a href="/plugins/updater">ImageJ Updater</a>
-          </li>
-          <li>
-            <a href="/libs/imagej-legacy">ImageJ Legacy</a>
-          </li>
-          <li>
-            <a href="/libs/scifio">SCIFIO</a>
-          </li>
+          <li><a href="/libs/imagej-common">ImageJ Common</a></li>
+          <li><a href="/libs/imagej-ops">ImageJ Ops</a></li>
+          <li><a href="/plugins/updater">ImageJ Updater</a></li>
+          <li><a href="/libs/imagej-legacy">ImageJ Legacy</a></li>
+          <li><a href="/libs/scifio">SCIFIO</a></li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td style="font-size: 56px; bold">
-        <p>{% include icon name='ImgLib2' size='72px' %}<a href="/libs/imglib2">ImgLib2</a></p>
+      <td style="font-size: 56px">
+        {% include icon name='ImgLib2' size='72px' %}<a href="/libs/imglib2">ImgLib2</a>
       </td>
     </tr>
     <tr>
       <td>
-        <p><span style="font-size: large">ImgLib2 provides the <strong>core image data model</strong></span><br></p>
+        <span style="font-size: large">ImgLib2 provides the <strong>core image data model</strong></span><br>
         <ul>
           <li>Extensible pixel types – not just uint8, uint16, float32</li>
           <li>Extensible data sources – not just files on disk</li>
@@ -122,11 +112,11 @@ ImageJ is divided into three parts -- ImageJ, ImgLib2, and SciJava -- with respo
       </td>
     <tr>
       <td style="width: 350px;">
-        <p><a href="/libs/scijava"><img src="/media/logos/scijava.png" height="72px"></a></p>
+        <a href="/libs/scijava"><img src="/media/logos/scijava.png" height="72px"></a>
       </td>
     </tr>
       <td>
-        <p><span style="font-size: large">SciJava provides <strong>scientific components more general than images</strong></span><br></p>
+        <span style="font-size: large">SciJava provides <strong>scientific components more general than images</strong></span><br>
         <ul>
           <li>Application container</li>
           <li>Plugin framework</li>
@@ -140,71 +130,24 @@ ImageJ is divided into three parts -- ImageJ, ImgLib2, and SciJava -- with respo
 </table>
 {:/}
 
-For full details on the technical structure of ImageJ, see the [Architecture](/develop/architecture) page.
+For full details on the technical structure of ImageJ, see the [Architecture](architecture) page.
 
 ## Key developer tools
 
 There are four indispensable software development tools on which ImageJ relies:
 
-{::nomarkdown}
-<table>
-  <tbody>
-    <tr>
-      <td style="vertical-align: middle">
-        <p>{% include icon name='GitHub' %}</p>
-      </td>
-      <td>
-        <p><a href="/develop/github">GitHub</a></p>
-      </td>
-      <td>
-        <p>A website which hosts all of ImageJ's <a href="source_code">source code</a> and <a href="issues">issue trackers</a>. GitHub is ImageJ's nexus of online collaboration (i.e., "social coding").</p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p>{% include icon name='Git' %}</p>
-      </td>
-      <td>
-        <p><a href="/develop/git">Git</a></p>
-      </td>
-      <td>
-        <p>A first-class {% include wikipedia title='Distributed version control' text='distributed'%} {% include wikipedia title='Version control' text='version control'%} system. Git saves "snapshots" of the source code, keeping a history of changes.</p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p>{% include icon name='Maven' %}</p>
-      </td>
-      <td>
-        <p><a href="/develop/maven">Maven</a></p>
-      </td>
-      <td>
-        <p>A {% include wikipedia title='Build automation' text='build automation'%} tool with great dependency management. Maven converts source code into program binaries, and much more.</p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p>{% include icon name='Eclipse' %}</p>
-      </td>
-      <td>
-        <p><a href="/develop/eclipse">Eclipse</a></p>
-      </td>
-      <td>
-        <p>An <a href="/develop/ides">integrated development environment</a> (IDE) used by many ImageJ developers. Eclipse makes it much easier to explore and edit the source code.<br>
-        Although: ImageJ can be developed using <a href="/develop/ides"><em>any</em> IDE</a> which supports <a href="/develop/maven">Maven</a>.</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-{:/}
+| {% include icon name='GitHub' %}  | [GitHub](github)   | A website which hosts all of ImageJ's [source code](source) and [issue trackers](project-management#issue-tracking). GitHub is ImageJ's nexus of online collaboration (i.e., "social coding"). |
+| {% include icon name='Git' %}     | [Git](git)         | A first-class {% include wikipedia title='Distributed version control' text='distributed'%} {% include wikipedia title='Version control' text='version control'%} system. Git saves "snapshots" of the source code, keeping a history of changes. |
+| {% include icon name='Maven' %}   | [Maven](maven)     | A {% include wikipedia title='Build automation' text='build automation'%} tool with great dependency management. Maven converts source code into program binaries, and much more. |
+| {% include icon name='Eclipse' %} | [Eclipse](eclipse) | An [integrated development environment](ides) (IDE) used by many ImageJ developers. Eclipse makes it much easier to explore and edit the source code.<br>Although: ImageJ can be developed using [*any* IDE](ides) which supports [Maven](maven). |
 
-See the [Project management](/develop/project-management) page for further details.
+See the [Project management](project-management) page for further details.
 
 ## Source code
 
-[ImageJ](/software/imagej) and related [SciJava](/libs/scijava) software projects are [open source](/licensing/open-source). The code is organized into [well-separated](/develop/architecture#modularity) projects.
+[ImageJ](/software/imagej) and related [SciJava](/libs/scijava) software projects are [open source](/licensing/open-source). The code is organized into [well-separated](architecture#modularity) projects.
 
-See the [source code](/develop/source) page for further details.
+See the [source code](source) page for further details.
 
 ## Tutorials
 
@@ -223,23 +166,23 @@ Start with the [ImageJ tutorial notebooks](/tutorials)!
         <ul>
           <li><a href="https://github.com/imagej/tutorials">ImageJ tutorials</a></li>
           <li><a href="/libs/imglib2/examples">ImgLib2 Examples</a></li>
-          <li><a href="/develop/ij1-ij2-cheat-sheet">ImageJ1-ImageJ2 cheat sheet</a></li>
+          <li><a href="ij1-ij2-cheat-sheet">ImageJ1-ImageJ2 cheat sheet</a></li>
         </ul>
       </td>
       <td>
         <ul>
-          <li><a href="/develop/plugins">Writing ImageJ2 plugins</a></li>
-          <li><a href="/develop/improving-the-code">Contributing to an existing plugin</a></li>
+          <li><a href="plugins">Writing ImageJ2 plugins</a></li>
+          <li><a href="improving-the-code">Contributing to an existing plugin</a></li>
           <li><a href="/contribute/distributing">Distributing your plugin</a></li>
-          <li><a href="/develop/ij1-plugins">Writing ImageJ 1.x plugins</a></li>
+          <li><a href="ij1-plugins">Writing ImageJ 1.x plugins</a></li>
         </ul>
       </td>
       <td>
         <ul>
           <li><a href="/software/fiji/developing">Developing Fiji</a></li>
-          <li><a href="/develop/eclipse">Fiji + Eclipse</a </li>
+          <li><a href="eclipse">Fiji + Eclipse</a </li>
           <li><a href="/contribute/fiji">Fiji contribution requirements</a </li>
-          <li><a href="/develop/supported-compilers">Supported Compilers</a </li>
+          <li><a href="supported-compilers">Supported Compilers</a </li>
         </ul>
       </td>
     </tr>
