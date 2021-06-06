@@ -50,6 +50,7 @@ blockquote:before, blockquote:after, q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  width: 100%;
 }
 
 body {
@@ -1616,12 +1617,10 @@ ul.major-icons li .icon {
 .left {
   margin-left: 0;
   margin-right: 1em;
-  text-align: left;
 }
 .right {
   margin-left: 1em;
   margin-right: 0;
-  text-align: right;
 }
 .center {
   display: block;
@@ -1631,6 +1630,11 @@ ul.major-icons li .icon {
 .fit {
   display: block;
   width: 100%
+}
+
+table.center, table.left, table.right {
+  width: auto;
+  display: table;
 }
 
 .float-left {

@@ -19,6 +19,55 @@ You can, however, easily create one using Markdown:
 {% endcapture %}
 {% include editing/example code=simple-table %}
 
+## Aligning Tables
+
+By default, tables are stretched to 100% width:
+
+| Blue | Red | Green | Yellow | Purple |
+|------|-----|-------|--------|--------|
+| 5    | 4   | 3     | 2      | 1      |
+| 1    | 2   | 3     | 4      | 5      |
+
+If you want the table to be its natural width instead, put `{:.left}` beneath the table:
+
+**Code**
+
+```
+| Blue | Red | Green | Yellow | Purple |
+|------|-----|-------|--------|--------|
+| 5    | 4   | 3     | 2      | 1      |
+| 1    | 2   | 3     | 4      | 5      |
+{:.left}
+```
+
+**Result**
+
+| Blue | Red | Green | Yellow | Purple |
+|------|-----|-------|--------|--------|
+| 5    | 4   | 3     | 2      | 1      |
+| 1    | 2   | 3     | 4      | 5      |
+{:.left}
+
+Or for a centered table, use `{:.center}`:
+
+**Code**
+
+```
+| Blue | Red | Green | Yellow | Purple |
+|------|-----|-------|--------|--------|
+| 5    | 4   | 3     | 2      | 1      |
+| 1    | 2   | 3     | 4      | 5      |
+{:.center}
+```
+
+**Result**
+
+| Blue | Red | Green | Yellow | Purple |
+|------|-----|-------|--------|--------|
+| 5    | 4   | 3     | 2      | 1      |
+| 1    | 2   | 3     | 4      | 5      |
+{:.center}
+
 ## Aligning Columns
 
 You can place `:` symbols in the table header to specify column alignment:
