@@ -1,4 +1,3 @@
-This file is a placeholder, reminding not to create a directory
-with this name here, because it is part of the ImageJ1 documentation.
-The URL imagej.net/images redirects to imagej.net/ij/images, which
-is a proxy for mirror.imagej.net, the mirror of imagej.nih.gov/ij.
+This file is a placeholder, reminding not to create a directory with
+this name here, because it redirects to the ImageJ1 documentation:
+  imagej.net/images -> imagej.nih.gov/ij/images

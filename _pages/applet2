@@ -1,4 +1,3 @@
-This file is a placeholder, reminding not to create a directory
-with this name here, because it is part of the ImageJ1 documentation.
-The URL imagej.net/applet2 redirects to imagej.net/ij/applet2, which
-is a proxy for mirror.imagej.net, the mirror of imagej.nih.gov/ij.
+This file is a placeholder, reminding not to create a directory with
+this name here, because it redirects to the ImageJ1 documentation:
+  imagej.net/applet2 -> imagej.nih.gov/ij/applet2
