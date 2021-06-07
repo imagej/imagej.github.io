@@ -1,7 +1,9 @@
 ---
 title: Multi-Template Matching
 description: Object-detection with one or multiple template images
-categories: [Feature Extraction,Jython,Object Detection]
+categories: [Feature Extraction, Object Detection]
+icon: /media/icons/MultiTemplateMatching.jpg
+
 
 name:  Multi-Template Matching
 source-url: https://github.com/multi-template-matching/MultiTemplateMatching-Fiji
