@@ -9,10 +9,10 @@
   {%- if mw.first -%}
     Original MediaWiki pages:&nbsp;&nbsp;
     {%- for link in mw -%}
-      <a href="https://imagej.github.io/imagej-wiki-static/{{link}}">{{forloop.index}}</a>
+      <a href="https://imagej.net/imagej-wiki-static/{{link}}">{{forloop.index}}</a>
     {%- endfor -%}
   {%- else -%}
-    <a href="https://imagej.github.io/imagej-wiki-static/{{mw}}">Original MediaWiki page</a>
+    <a href="https://imagej.net/imagej-wiki-static/{{mw}}">Original MediaWiki page</a>
   {%- else -%}
   {%- endif -%}
 {%- endif -%}

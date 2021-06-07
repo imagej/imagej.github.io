@@ -1,9 +1,9 @@
-# ImageJ.net (Experimental)
+# ImageJ.net
 
 This repository houses the source of the [ImageJ wiki](https://imagej.net).
 
 Anyone is free to make additions, edits, and improvements; for details, see
-[Editing the Wiki](https://imagej.github.io/editing).
+[Editing the Wiki](https://imagej.net/editing).
 
 ## Credit
 
