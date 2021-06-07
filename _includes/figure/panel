@@ -1,0 +1,8 @@
+{%- comment -%} This include is still a WORK IN PROGRESS! Please do not use yet. {%- endcomment -%}
+
+{%- if panel-caption -%}
+  {%- if panel-caption != '' -%} <figcaption>{{panel-caption}}</figcaption> {%- endif -%} 
+  </figure>
+{%- endif -%}
+{%- assign panel-caption = include.caption | default: "" -%}
+<figure class="inner">
