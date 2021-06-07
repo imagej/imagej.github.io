@@ -1,14 +1,13 @@
 ---
-mediawiki: VTEA
-title: VTEA
+title: VTEA › Volumetric Tissue Exploration and Analysis
 categories: [Segmentation,Visualization]
+doi: 10.1681/ASN.2016091027
+name: VTEA
+source-url: https://github.com/icbm-iupui/volumetric-tissue-exploration-analysis
+dev-status: v0.7, alpha, 1.0.a on deck.
+team-developer: Seth Winfree | mailto:winfrees@iu.edu
+team-maintainer: Seth Winfree | mailto:winfrees@iu.edu
 ---
-
-
-{% capture source%}
-{% include github org='icbm-iupui' repo='volumetric-tissue-exploration-analysis' %}
-{% endcapture %}
-{% include info-box name='VTEA' software='Fiji' author='Seth Winfree ([1](mailto:winfrees@iu.edu))' maintainer='Seth Winfree ([2](mailto:winfrees@iu.edu))' source=source status='v0.7, alpha, 1.0.a on deck.' category='Segmentation,Visualization,Plugins' %}
 
 # Volumetric Tissue Exploration and Analysis
 
@@ -34,55 +33,45 @@ Importantly, our solution is in its infancy. In fact, the tools are relatively s
 
 ## Installing
 
-`   To install the VTEA plugin use, `[`How`` ``to`` ``follow`` ``a`` ``3rd`` ``party`` ``update`` ``site`](/update-sites/following)` and check the update site:`  
-`   "Volumetric Tissue Exploration and Analysis" `**`OR`**` follow the following four steps:`
+To install the VTEA plugin use, [Following an update site](/update-sites/following) and check the update site:
+"Volumetric Tissue Exploration and Analysis" **OR** follow the following four steps:
 
 ### 1. Start updater
 
-<figure><img src="/media/step-1.jpg" title="Select &quot;Update...&quot; under &quot;Help&quot;." width="500" alt="Select &quot;Update...&quot; under &quot;Help&quot;." /><figcaption aria-hidden="true">Select "Update..." under "/help".</figcaption></figure>
-
-Select "Update..." under "/help".
+{% include img src="vtea-step-1" width=500 caption='Select "Update..." under "Help".' %}
 
 ### 2. Add update site
 
-<figure><img src="/media/step-2.jpg" title="Select &quot;Manage update sites.&quot;" width="500" alt="Select &quot;Manage update sites.&quot;" /><figcaption aria-hidden="true">Select "Manage update sites."</figcaption></figure>
-
-Select "Manage update sites."
+{% include img src="vtea-step-2" width=500 caption='Select "Manage update sites."' %}
 
 ### 3. Select update site
 
-![ 500px \|Check "Volumetric Tissue Expl..."](Step_3.jpg " 500px |Check "Volumetric Tissue Expl..."")
-
-Check "Volumetric Tissue Expl..." and select "Close"
+{% include img src="vtea-step-3" width=500 caption='Check "Volumetric Tissue Expl..." and select "Close"' %}
 
 ### 4. Apply changes
 
-![ 500px \|Check "Volumetric Tissue Expl..."](Step_4.jpg " 500px |Check "Volumetric Tissue Expl..."")
-
-Select "Apply changes". Upon restart, the plugin will be present under a new menu "IU\_Tools".
+{% include img src="vtea-step-4" width=500 caption='Select "Apply changes". Upon restart, the plugin will be present under a new menu "IU_Tools".' %}
 
 ## Tutorials
 
 ### Image Processing
 
-`      Coming soon!`
+Coming soon!
 
 ### Segmentation
 
-`      Coming soon!`
+Coming soon!
 
 ### Analysis
 
-`      Coming soon!`
+Coming soon!
 
 ### Visualization
 
-`      Coming soon!`
+Coming soon!
 
 ## VTEA reference
 
 The utility of VTEA and 3D tissue cytometry was demonstrated in the following publication:
 
-[**Quantitative Three-Dimensional Tissue Cytometry to Study Kidney Tissue and Resident Immune Cells**](http://jasn.asnjournals.org/content/early/2017/02/01/ASN.2016091027.full) Seth Winfree, Shehnaz Khan, Radmila Micanovic, Michael T. Eadon, Katherine J. Kelly, Timothy A. Sutton, Carrie L. Phillips, Kenneth W. Dunn, and Tarek M. El-Achkar JASN ASN.2016091027; published ahead of print February 2, 2017, <doi:10.1681/ASN.2016091027>
-
-   
+{% include citation %}
