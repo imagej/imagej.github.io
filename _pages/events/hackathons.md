@@ -426,7 +426,7 @@ ImageJ has benefitted from many hackathons over the years:
     </tr>
     <tr>
       <td>
-        <p><a href="/events/conference-2015-hackathon">2015 Sep 05 -<br>
+        <p><a href="/events/conference-2015/hackathon">2015 Sep 05 -<br>
         2015 Sep 15</a></p>
       </td>
       <td>

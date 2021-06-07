@@ -44,7 +44,7 @@ GPL (GNU Public License), version 2, with the exception that all plugins are fre
 
 ## What is the URL for your ideas page?
 
-[SoC_2010_Ideas](https://fiji.sc/wiki/index.php/SoC_2010_Ideas)
+[SoC_2010_Ideas](/events/gsoc-2010)
 
 ## What is the main development mailing list for your organization? This question will be shown to students who would like to get more information about applying to your organization for GSoC 2010. If your organization uses more than one list, please make sure to include a description of the list so students know which to use
 
@@ -56,7 +56,7 @@ fiji-devel@googlegroups.com
 
 ## Does your organization have an application template you would like to see students use? If so, please provide it now. Please note that it is a very good idea to ask students to provide you with their contact information as part of your template. Their contact details will not be shared with you automatically via the GSoC 2010 site
 
-[https://fiji.sc/SoC_2010_Template](https://fiji.sc/SoC_2010_Template)
+[SoC_2010_Template](template)
 
 ## Who will be your backup organization administrator?
 

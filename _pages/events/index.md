@@ -11,3 +11,7 @@ Please see [this list on the Image.sc Forum](https://forum.image.sc/t/upcoming-i
 -   [Presentations](/events/presentations) – from past conferences and workshops
 -   [Conferences](/events/conferences) – past conferences focused on ImageJ
 -   [Hackathons](/events/hackathons) – past software developer gatherings
+
+## List of past events
+
+{% include util/list-pages directory="events" column-width="16em" %}

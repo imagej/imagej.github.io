@@ -12,7 +12,7 @@ The core developers of Fiji are scientific researchers at the Max Plank Institut
 
 ## Why is your organization applying to participate in GSoC 2011? What do you hope to gain by participating?
 
-Fiji has grown enormously over the last two years. Statistics collected by our automatic updater (result of Google Summer of Code 2009) indicates that Fiji is in use in just about every major research institution around the world. Several publications in scientific journals are citing Fiji and Fiji's plugins (see [https://fiji.sc/Publications](https://fiji.sc/Publications)). The wiki that hosts Fiji's documentation got 23,169 unique visitors this past February 2011.
+Fiji has grown enormously over the last two years. Statistics collected by our automatic updater (result of Google Summer of Code 2009) indicates that Fiji is in use in just about every major research institution around the world. Several publications in scientific journals are citing Fiji and Fiji's plugins (see [Publications](/software/fiji/publications)). The wiki that hosts Fiji's documentation got 23,169 unique visitors this past February 2011.
 
 All this growth comes at a cost: there is now a lot of demand for specific enhancements and new features.
 
@@ -44,7 +44,7 @@ Name: Email: IRC nickname in irc.freenode.net: Personal website:
 
 4\. Have you downloaded and compiled the Fiji source code repositories? Answer yes/no.
 
-5\. Have you read the proposals from the ideas page at [https://fiji.sc/GSoC_2011_Ideas](https://fiji.sc/GSoC_2011_Ideas) ? Answer yes/no.
+5\. Have you read the proposals from the ideas page at [GSoC_2011_Ideas](/events/gsoc-2011) ? Answer yes/no.
 
 6\. What project do you propose to work on during the Summer of code? With which mentor? Do you know the mentor via email, IRC or personally? Please be specific and try to be concise. If necessary please include links to diagrams, cartoons and pictures, with appropriate descriptions of what are they and how are they relevant. Please give your proposal to a friend or colleage and see if he understands it before pasting it below; it will help you craft a better proposal.
 

@@ -54,7 +54,7 @@ We have not applied in the past, but one of our mentors has experience from serv
 
 ## What is the URL for your ideas page?
 
-[https://fiji.sc/SoC2009Ideas](https://fiji.sc/SoC2009Ideas)
+[SoC2009Ideas](/events/gsoc-2009)
 
 ## What is the main development mailing list for your group?
 
@@ -62,7 +62,7 @@ fiji-devel@googlegroups.com
 
 ## What is the application template you would like contributors to your organization to use
 
-[SoC2009Template](/events/soc-2009-template)
+[SoC2009Template](template)
 
 ## What is your plan for dealing with disappearing contributors?
 
