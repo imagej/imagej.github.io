@@ -14,7 +14,7 @@ For this module to work, you need three things:
 
 1. Download and Install Ilastik on your machine. Follow the instructions on [this page](https://www.ilastik.org/download.html).
 2. Subscribe to the **Ilastik** [update site](/update-sites/following).
-{% include img src='/media/plugins/trackmate/trackmate-ilastik-install-ilastik' width='500px' %}
+![](/media/plugins/trackmate/trackmate-ilastik-install-ilastik.png)
 3. And finally, subscribe to the **TrackMate-Ilastik** update site.
-{% include img src='/media/plugins/trackmate/trackmate-ilastik-install' width='600px' %}
+![](/media/plugins/trackmate/trackmate-ilastik-install.png)
 
