@@ -17,7 +17,7 @@ Macros can be used to
 {% include notice icon="info" content="Please be aware that there are
   several other available [scripting](/scripting) languages that are
   more powerful than macros, too! See the
-  [summary of supported languages](/extend/scripting#supported-languages),
+  [summary of supported languages](/scripting#supported-languages),
   as well as the [Overcoming limitations](#overcoming-limitations) section below." %}
 
 # Variables
