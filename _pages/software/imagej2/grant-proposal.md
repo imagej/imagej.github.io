@@ -3,7 +3,7 @@ mediawiki: ImageJ2_grant_proposal
 title: ImageJ2 grant proposal
 ---
 
-The following is the original text of the [ImageJDev](/software/imagej2) grant proposal circa mid-2009. {% include notice icon="warning" message='Please note that [ImageJ2](/software/imagej2)"s project directions evolved substantially as it developed, so the text below is dated, but in many ways, this document continues to represent the project"s conceptual core.' %}
+The following is the original text of the [ImageJDev](/software/imagej2) grant proposal circa mid-2009. {% include notice icon="warning" message="Please note that [ImageJ2](/software/imagej2)'s project directions evolved substantially as it developed, so the text below is dated, but in many ways, this document continues to represent the project's conceptual core." %}
 
 ## Summary
 

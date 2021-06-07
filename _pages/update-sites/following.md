@@ -36,9 +36,9 @@ After you have selected your desired update site(s), close the dialog. The list 
 
 <img src="/media/update-sites/addpluginsite-5.jpg" width="770"/>
 
-{% include notice icon="warning" content='If an entry"s action is **Update It**, that means it is changing an existing plugin. This action is dangerous and can break other plugins, or ImageJ itself.  
+{% include notice icon="warning" content="If an entry's action is **Update It**, that means it is changing an existing plugin. This action is dangerous and can break other plugins, or ImageJ itself.  
 Ideally the maintainers of these sites would work with the core ImageJ maintainers to centralize important plugins.  
-When you find plugin conflicts between update sites, you can greatly help the community by [starting a discussion](/discuss) with the maintainers!' %}
+When you find plugin conflicts between update sites, you can greatly help the community by [starting a discussion](/discuss) with the maintainers!" %}
 
 ## Choose and download plugins
 
