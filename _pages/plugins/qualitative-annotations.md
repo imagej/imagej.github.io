@@ -3,6 +3,7 @@ title: Qualitative Annotations
 name: Qualitative Annotations
 description: Annotate images or ROI with one or multiple qualitative keywords
 categories: [Image Annotation]
+icon: /media/icons/quali-annotations.svg
 
 source-url: https://github.com/LauLauThom/Fiji-QualiAnnotations
 release-date : 2020
