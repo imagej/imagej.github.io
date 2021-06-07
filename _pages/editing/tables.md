@@ -130,3 +130,14 @@ you can declare it inline:
 {% endcapture %}
 {% include editing/example code=custom-styling-inline %}
 
+## Spreadsheets
+
+You can embed an external spreadsheet.
+
+### Google Sheets
+
+{% highlight liquid %}{% raw %}
+{% include spreadsheet platform="google" id="1xl0owZ1kAJDLrA2XtNjlvKwhO5ZsS5_CMmw-dU64sFk" %}
+{% endraw %}{% endhighlight %}
+
+{% include notice class="fas fa-hard-hat" content="This include is under construction! Coming soon." %}

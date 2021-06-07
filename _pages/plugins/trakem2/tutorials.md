@@ -5,10 +5,7 @@ title: TrakEM2 tutorials
 
 ## Video tutorial on 3D reconstruction from serial section
 
-TODO GOOGLE SPREADSHEET WIDGET
-
-{% include clear%}
-
+{% include video platform='switchtube' id='c3f982f2' %}
 
 ## Video tutorial on the basic recipe for TrakEM2
 

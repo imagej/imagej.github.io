@@ -7,8 +7,7 @@ This page describes the full program for the [2015 ImageJ User & Developer Confe
 
 ## Program
 
-TODO GOOGLE SPREADSHEET WIDGET {% include clear%}
-
+{% include spreadsheet id="1xl0owZ1kAJDLrA2XtNjlvKwhO5ZsS5_CMmw-dU64sFk" width="100%" height=700 %}
 
 ## Keynote presentations
 

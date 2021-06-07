@@ -119,8 +119,7 @@ With this conference, there were no registration fees, and there was a free rece
 
 # Program
 
-TODO GOOGLE SPREADSHEET WIDGET {% include clear%}
-
+{% include spreadsheet id="1xl0owZ1kAJDLrA2XtNjlvKwhO5ZsS5_CMmw-dU64sFk" width="100%" height=700 %}
 
 For full details including abstracts and presentation recordings, see the [Conference 2015 Program](/events/conference-2015-program) page.
 
