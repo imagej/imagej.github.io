@@ -30,11 +30,11 @@ separate ones. It is often useful on blob-like structures such as cell nuclei.
 
 -   open the [sample image of touching DAPI stained cell nuclei from a confocal laser scanning microscope.](/media/nucleidapiconfocal.png)
 
-![ 250px](/media/nucleidapiconfocal.png)
+    {% include img src="nucleidapiconfocal" width=250 %}
 
 -   Run a [Gaussian Blur filter](http://imagejdocu.tudor.lu/doku.php?id=gui:process:filters) on the image to blur out the "speckle", actually Poisson distributed, statistical "photon {% include wikipedia title='Shot noise' text='shot noise'%}", and also to smooth out the inhomogeneity of the nuclear staining. We will use a large sigma value of 3 for this task. A value of sigma too small will mean that the segmentation will be disturbed by the noise and staining pattern. Too high a sigma value, and the objects will be too blurred, making it harder to find their edges precisely and separate them later. Run menu command: Process - Filters - Gaussian Blur, with a sigma value of 3 pixels. You can preview other values to see how they look also. You should get an image that looks like this:
 
-![ 250px](/media/imaging/nucleidapiconfocalgauss3pxsigma.png)
+    {% include img src="nucleidapiconfocalgauss3pxsigma" width=250 %}
 
 ### Pixel Intensity Threshold - find the foreground areas
 
@@ -44,7 +44,7 @@ separate ones. It is often useful on blob-like structures such as cell nuclei.
 
 -   Do menu command Image - Adjust - Threshold. Turn on the check box for "Dark background" . Indeed, in this case the background is dark! The default method will be previewed automatically when you launch the menu command, and a threshold will be set, something close to 100 intensity. If you are happy with the automatically calculate threshold, then click "Apply", which will give you a binary image. Black is background, and white is foreground. It should look like this:
 
-![ 250px](/media/imaging/nucleidapiconfocalautodefaultthresh.png)
+    {% include img src="nucleidapiconfocalautodefaultthresh" width=250 %}
 
 -   So far so good... But we still don't have objects... only background and foreground pixels. Also it is clear that some nuclei are connected to adjacent ones... and we want them to be separated. We will use the watershed method built into Fiji for that:
 
@@ -52,7 +52,7 @@ separate ones. It is often useful on blob-like structures such as cell nuclei.
 
 -   To run the built in [ImageJ watershed method](https://imagej.nih.gov/ij/docs/menus/process.html#watershed) choose menu item: Process - Binary - Watershed. This method finds the centre of each object (using a morphological erode operation), then calculates a distance map from the object centre points to the edges of the objects, then fills that "topological map" with imaginary water. Where 2 "Watersheds" meet, it builds a dam to separate them! One could do all these steps manually, but the watershed function automates that for you, which is nice. Your watershed image should look like this:
 
-![ 250 px](/media/imaging/nucleidapiconfocalwatershed.png)
+    {% include img src="nucleidapiconfocalwatershed" width=250 %}
 
 -   Notice how the nuclei have been split away from each other. This method only works robustly for roughly circular objects. Why?
 
@@ -60,36 +60,20 @@ separate ones. It is often useful on blob-like structures such as cell nuclei.
 
 -   Now you have a set of white foreground patches of white pixels, surrounded by black background pixel areas, and we have separated touching objects with a watershed, which put "dams" one pixel wide between the objects.
 
-<!-- -->
-
 -   Next we must run the Analyze Particles tool in Fiji to locate patches of white pixels and count them. But... that tool needs black objects on a white background or a threshold to be set on the image which contains the desired objects. To invert the image do Edit - Invert, or to threshold the binary image, again do Image - Adjust - Threshold (Since the image now contains only two intensities (0 and 255), the threshold default is of course correct, and the objects appear in thresholded red, for black background again of course).
 
-<!-- -->
+-   Now choose menu item [{% include bc path="Analyze | Analyze Particles" %}](https://imagejdocu.list.lu/doku.php?id=gui:analyze:analyze_particles), using the settings in the screen shot below.
 
--   Now choose menu item Analyze - Analyze Particles, using the settings in the screen shot below.
-
-[documentation for analyze particles.](http://imagejdocu.tudor.lu/doku.php?id=gui:analyze:analyze_particles)
-
-![ 500px](/media/imaging/nulceidapiconfocalanalyzeparticles.png)
+    {% include img src="nulceidapiconfocalanalyzeparticles" width=500 %}
 
 -   You can filter out different sizes of particles. For example, you might only be interested in large objects, like nuclei. So you can exclude small objects that you know are junk. Change the area number range in the Size field and see what happens.
 
-<!-- -->
-
 -   You can choose to count only those objects which are very circular by changing the Circularity range numbers to say 0.8-1. You could make it look for non circular objects too! How? Play with it, see what it does.
-
-<!-- -->
 
 -   Use show outlines, or test the other options there if you like. Exclude on edges is very smart. It means you don't get nonsense results from objects that are chopped off at the edges of the image, and as such are of course smaller than they really are.
 
-<!-- -->
-
 -   You can add all the objects to the ROI manager, by turning on Add to Manager. Then you could use those ROIs to measure the intensities of the signal in the objects of the original image. Can you figure out how to do that?
-
-<!-- -->
 
 -   It also spits out lots of useful statistics:
 
-![ 700px](/media/imaging/nulceidapiconfocalsegmentationresults.png)
-
- 
+    {% include img src="nulceidapiconfocalsegmentationresults" width=700 %}
