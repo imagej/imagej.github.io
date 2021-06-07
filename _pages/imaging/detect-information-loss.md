@@ -12,18 +12,18 @@ Lets open a sample image and check it out:
 
 In Fiji, do "File - Open Sample Images - FluorescentCells.tiff, to open a three colour channel "pretty" image of some fixed and stained cells grown on glass. Click the image then press "i" to see info about the image. The slider under the image is to change between the three colour channels, and you can see the colour of the border and the writing at the top of the image in the information bar change colour accordingly (the meta data of which channel is what colour was stored in the tiff file, but your images may or may not have that meta data!)
 
-{% img src="openfluocells" %}
+{% include img src="openfluocells" %}
 
 To Begin with, we should split the three color channel images into separate windows so we can inspect them and manipulate them separately: Select the FluorescentCells.tif image window and do menu item: "Image-Color-Split Channels".
 
-{% img src="splitcolourchannels" %}
+{% include img src="splitcolourchannels" %}
 
 ## 1.  **{% include wikipedia title='Lossy data compression' text='Lossy Compression'%}:** 
 
 First, we can interrogate the red or green channel, and see if there are any {% include wikipedia title='Lossy data compression' text='lossy compression'%} artifacts visible by eye: Click the magnifying glass icon in the Fiji main window and left click to zoom in to an area of interest (left click zooms in, right click zooms out again).
 You should see something like the image below. Can you see that there are square shaped artifacts in the image which are 8x8 pixels? These are lossy JPEG compression artifacts. The image intensity data is messed up... so you would not want to quantify intensity data from an image like that. Some areas have been given all the same intensity (which is unlikely to be true) and some have ugly repetitive patterns, which are clearly false. Never use lossy JPEG or other lossy compression to store scientific data. Lossy compression is good for making movies etc smaller in file size, but bad for measurements afterwards. Images in PDF files of published research articles are usually lossy compressed, so its hard or impossible to repeat the image processing they did because the image data is messed up. This is a big problem in scientific publication in biological sciences, and we need to fix it: We need an online image database where data is published for others to down load and analyse, as is required by scientific publishing in other fields, eg x-ray crystallography for protein 3D structure and DNA/genome etc. sequencing. I don't know why biological imaging thinks its so special...
 
-{% img src="lossyjpegcompressionartifacts1" %}
+{% include img src="lossyjpegcompressionartifacts1" %}
 
 ## 2.  **Intensity Saturation or Clipping or {% include wikipedia title='Overexposure' text='Over Exposure:'%}** 
 
