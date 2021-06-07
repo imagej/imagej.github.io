@@ -12,5 +12,5 @@ This page describes a detector module for [TrackMate](/plugins/trackmate/index) 
 
 For this module to work, you just need to install the TrackMate module. Subscribe to the  **TrackMate-Weka** update site.
 
-{% include img src='/media/plugins/trackmate/trackmate-weka-install' width='500px' %}
+![Subscribe to the TrackMate-Weka update site](/media/plugins/trackmate/trackmate-weka-install)
 
