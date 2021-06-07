@@ -11,7 +11,7 @@ Lead and main developer of FiloQuant, a user friendly and modifiable tool for au
 
 ## FiloQuant
 
-You can find our plugin [**here**](https://imagej.github.io/plugins/filoquant).
+You can find our plugin [**here**](/plugins/filoquant).
 
 ## Reference
 

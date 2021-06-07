@@ -15,4 +15,4 @@ twitter: HenriquesLab
 
 ## Work
 
-Dr. Henriques is the author of the [QuickPALM](https://imagej.github.io/plugins/quickpalm) plugin.
+Dr. Henriques is the author of the [QuickPALM](/plugins/quickpalm) plugin.
