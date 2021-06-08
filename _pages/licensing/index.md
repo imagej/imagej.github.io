@@ -1,5 +1,4 @@
 ---
-mediawiki: Licensing
 title: Licensing
 description: This page describes the legal structure of ImageJ and SciJava projects.
 section: Contribute:Licensing
@@ -25,88 +24,64 @@ The following table summarizes the dominant license of each project's components
 <table>
   <tbody>
     <tr>
-      <td style="background-color: white">
+      <td colspan=4 style="text-align: center;">
         <p><strong>Basics</strong></p>
       </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>
+      <td colspan=3>
         <p><strong>Required*</strong></p>
       </td>
-      <td></td>
-      <td></td>
-      <td>
+      <td colspan=7>
         <p><strong>Permitted*</strong></p>
       </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
       <td>
         <p><strong>Logo</strong></p>
       </td>
-      <td style="background-color: white">
+      <td>
         <p><strong>Project</strong></p>
       </td>
-      <td style="background-color: white">
+      <td>
         <p><strong>License</strong></p>
       </td>
-      <td style="background-color: white">
+      <td>
         <p><strong>Type</strong></p>
       </td>
       <td style="vertical-align: middle">
-        <p><a href="|alt=Disclose%20source"><img src="/media/licensing/licensing-disclose-source.png" width="10px"></a></p>
+        <p><img src="/media/licensing/licensing-disclose-source.png" width="10px"></p>
       </td>
       <td>
-        <p><a href="|alt=License%20and%20copyright%20notice"><img src="/media/licensing/licensing-license-and-copyright-notice.png" width="22px"></a></p>
+        <p><img src="/media/licensing/licensing-license-and-copyright-notice.png" width="22px"></p>
       </td>
       <td>
-        <p><a href="|alt=State%20changes"><img src="/media/licensing/licensing-state-changes.png" width="10px"></a></p>
+        <p><img src="/media/licensing/licensing-state-changes.png" width="10px"></p>
       </td>
       <td>
-        <p><a href="|alt=Commercial%20use"><img src="/media/licensing/licensing-commercial-use.png" width="10px"></a></p>
+        <p><img src="/media/licensing/licensing-commercial-use.png" width="10px"></p>
       </td>
       <td>
-        <p><a href="|alt=Distribution"><img src="/media/licensing/licensing-distribution.png" width="10px"></a></p>
+        <p><img src="/media/licensing/licensing-distribution.png" width="10px"></p>
       </td>
       <td>
-        <p><a href="|alt=Modification"><img src="/media/licensing/licensing-modification.png" width="10px"></a></p>
+        <p><img src="/media/licensing/licensing-modification.png" width="10px"></p>
       </td>
       <td>
-        <p><a href="|alt=Patent%20grant"><img src="/media/licensing/licensing-patent-grant.png" width="10px"></a></p>
+        <p><img src="/media/licensing/licensing-patent-grant.png" width="10px"></p>
       </td>
       <td>
-        <p><a href="|alt=Private%20use"><img src="/media/licensing/licensing-private-use.png" width="10px"></a></p>
+        <p><img src="/media/licensing/licensing-private-use.png" width="10px"></p>
       </td>
       <td>
-        <p><a href="|alt=Hold%20liable"><img src="/media/licensing/licensing-hold-liable.png" width="10px"></a></p>
+        <p><img src="/media/licensing/licensing-hold-liable.png" width="10px"></p>
       </td>
       <td>
-        <p><a href="|alt=Sublicensing"><img src="/media/licensing/licensing-sublicensing.png" width="10px"></a></p>
+        <p><img src="/media/licensing/licensing-sublicensing.png" width="10px"></p>
       </td>
     </tr>
     <tr>
-      <td>
-        <p><a href="/software/imagej1">ImageJ 1.x</a></p>
+      <td colspan=14 style="text-align: center;">
+        <p><strong><a href="/software/imagej1">ImageJ 1.x</a></strong></p>
       </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
       <td>
@@ -154,22 +129,9 @@ The following table summarizes the dominant license of each project's components
       </td>
     </tr>
     <tr>
-      <td>
-        <p><a href="/develop/architecture">ImageJ software stack</a></p>
+      <td colspan=14 style="text-align: center">
+        <p><strong><a href="/develop/architecture">ImageJ software stack</a></strong></p>
       </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
       <td>
@@ -181,7 +143,7 @@ The following table summarizes the dominant license of each project's components
       <td>
         <p><a href="https://github.com/scijava/scijava-common/blob/master/LICENSE.txt">License</a></p>
       </td>
-      <td>
+      <td rowspan="4">
         <p><a href="/licensing/bsd">BSD-2</a></p>
       </td>
       <td rowspan="4" class="yesno">
@@ -202,7 +164,7 @@ The following table summarizes the dominant license of each project's components
       <td rowspan="4" class="yesno">
         <p>✅</p>
       </td>
-      <td>
+      <td rowspan="4" class="yesno">
         <p>-</p>
       </td>
       <td rowspan="4" class="yesno">
@@ -211,7 +173,7 @@ The following table summarizes the dominant license of each project's components
       <td rowspan="4" class="yesno">
         <p>❌</p>
       </td>
-      <td>
+      <td rowspan="4" class="yesno">
         <p>-</p>
       </td>
     </tr>
@@ -225,9 +187,6 @@ The following table summarizes the dominant license of each project's components
       <td>
         <p><a href="https://github.com/imglib/imglib2/blob/master/LICENSE.txt">License</a></p>
       </td>
-      <td></td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
       <td>
@@ -239,9 +198,6 @@ The following table summarizes the dominant license of each project's components
       <td>
         <p><a href="https://github.com/imagej/imagej/blob/master/LICENSE.txt">License</a></p>
       </td>
-      <td></td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
       <td>
@@ -253,30 +209,15 @@ The following table summarizes the dominant license of each project's components
       <td>
         <p><a href="https://github.com/scifio/scifio/blob/master/LICENSE.txt">License</a></p>
       </td>
-      <td></td>
-      <td></td>
-      <td></td>
     </tr>
+    <tr></tr>
     <tr>
-      <td>
-        <p><a href="/software/fiji">Fiji projects</a></p>
+      <td colspan="14" style="text-align: center;">
+        <p><strong><a href="/software/fiji">Fiji projects</a></strong></p>
       </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
-      <td>
+      <td rowspan="3">
         <p><img src="/media/icons/fiji.png" width="48"></p>
       </td>
       <td>
@@ -285,7 +226,7 @@ The following table summarizes the dominant license of each project's components
       <td>
         <p><a href="https://github.com/fiji/fiji/blob/master/LICENSES">Licenses</a></p>
       </td>
-      <td>
+      <td rowspan="3">
         <p><a href="/licensing/gpl">GPL</a></p>
       </td>
       <td rowspan="3" class="yesno">
@@ -323,40 +264,22 @@ The following table summarizes the dominant license of each project's components
       <td>
         <p><strong><a href="/plugins/bdv">BigDataViewer</a></strong></p>
       </td>
-      <td></td>
       <td>
         <p><a href="https://github.com/bigdataviewer/bigdataviewer-core/blob/master/LICENSE.txt">License</a></p>
       </td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
       <td>
         <p><strong><a href="/plugins/trakem2">TrakEM2</a></strong></p>
       </td>
       <td>
-        <p><a href="https://github.com/trakem2/plugins/trakem2/blob/master/README">Readme</a></p>
+        <p><a href="https://github.com/trakem2/trakem2/blob/master/README">Readme</a></p>
       </td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
-      <td>
-        <p><a href="/libs/scijava">SciJava consortium</a></p>
+      <td colspan="14" style="text-align: center">
+        <p><strong><a href="/libs/scijava">SciJava consortium</a></strong></p>
       </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
       <td>
@@ -413,7 +336,7 @@ The following table summarizes the dominant license of each project's components
         <p><a href="https://github.com/openmicroscopy/bioformats/blob/develop/LICENSE.txt">License</a><br>
         <a href="http://openmicroscopy.org/site/about/licensing-attribution">Info</a></p>
       </td>
-      <td>
+      <td rowspan="3">
         <p><a href="/licensing/gpl">GPL</a></p>
       </td>
       <td rowspan="3" class="yesno">
