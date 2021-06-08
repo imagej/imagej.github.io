@@ -1,7 +1,7 @@
 ---
 mediawiki: Xlib
 title: Xlib
-categories: [Analysis,Data,Filtering,MATLAB,Particle Analysis,Segmentation,Skeleton]
+categories: [Analysis,Filtering,MATLAB,Particle Analysis,Segmentation,Skeleton]
 
 name: Xlib
 team-founders: Beat Münch
