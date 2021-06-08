@@ -1,5 +1,4 @@
 ---
-mediawiki: Open_Source
 title: Why Open Source?
 description: This page highlights the benefits of open source software.
 section: Contribute:Licensing:Open Source
@@ -9,7 +8,7 @@ The [SciJava](/libs/scijava) ecosystem is strongly committed to open-source soft
 
 One core principle of the {% include wikipedia title='Scientific method' text='scientific method'%} is repeatability: the ability to continually retest and refine hypotheses. As computer software plays an increasingly large role in science, it is vital that that software be fully transparent and available to researchers: software is simply too complex to be easily [reproduced](/develop/architecture#reproducible-builds) from scratch by every research group. In contrast, closed source software presents a barrier to {% include wikipedia title='Open research computation#Reproducibility_and_open_research_computing' text='open research'%}, because the implementation details of algorithms cannot be freely modified or even necessarily verified.
 
-The [Science Code Manifesto](http://sciencecodemanifesto.org/discussion) provides a clear and succinct list of five principles surrounding scientific software. There have also been a number of publications in recent years discussing these issues and ideas:
+The [Science Code Manifesto](https://web.archive.org/web/20201112032938/http://sciencecodemanifesto.org/) provides a clear and succinct list of five principles surrounding scientific software. There have also been a number of publications in recent years discussing these issues and ideas:
 
 -   [Ten Simple Rules for the Open Development of Scientific Software](http://www.ploscompbiol.org/article/info:doi/10.1371/journal.pcbi.1002802) (PLOS Computational Biology, Dec 2012)
 -   [A call for bioimaging software usability](http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2073.html) (Nature Methods, Jun 2012)
