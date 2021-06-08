@@ -1,5 +1,4 @@
 ---
-mediawiki: Help:Contents
 title: Editing the Wiki
 section: Contribute:Editing the Wiki
 nav-links: true
