@@ -1,5 +1,4 @@
 ---
-mediawiki: News
 title: News
 section: Explore
 ---
