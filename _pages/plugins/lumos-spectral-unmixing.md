@@ -1,7 +1,7 @@
 ---
 mediawiki: LUMoS_Spectral_Unmixing
 title: LUMoS Spectral Unmixing
-categories: [Color processing,Colocalization]
+categories: [Color Processing,Colocalization]
 ---
 
 {% include info-box software='ImageJ/Fiji' name='LUMoS Spectral Unmixing' author='Tristan McRae' maintainer='Tristan McRae' released='June 2019' source=' [GitHub](https://github.com/tristan-mcrae-rochester/Multiphoton-Image-Analysis/blob/master/Spectral%20Unmixing/Code/ImageJ-FIJI/LUMoS_Spectral_Unmixing.java)' category='Plugins, Color Processing, Colocalization' %}

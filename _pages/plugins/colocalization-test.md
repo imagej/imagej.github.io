@@ -1,7 +1,7 @@
 ---
 mediawiki: Colocalization_Test
 title: Colocalization Test
-categories: [Colocalization,Color processing]
+categories: [Colocalization,Color Processing]
 ---
 
 {% include warning/deprecated

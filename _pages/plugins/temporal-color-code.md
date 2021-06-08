@@ -1,6 +1,6 @@
 ---
 title: Temporal-Color Code
-categories: [Color processing]
+categories: [Color Processing]
 name: Temporal-Color Code
 project: Fiji
 icon: /media/icons/fiji.svg
