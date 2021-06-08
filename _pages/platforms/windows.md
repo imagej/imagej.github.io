@@ -1,5 +1,4 @@
 ---
-mediawiki: Windows
 title: Windows
 section: Learn:ImageJ Basics:Supported Platforms
 ---
@@ -11,13 +10,9 @@ section: Learn:ImageJ Basics:Supported Platforms
 
 {% include wikipedia title='Microsoft Windows' text='Windows' %} is {% include wikipedia title='Microsoft' text='Microsoft' %}'s family of operating systems. It is [the most prevalent desktop computer platform](https://www.netmarketshare.com/operating-system-market-share.aspx). This page details issues specific to using [ImageJ](/software/imagej) on Windows systems.
 
-
-
-
 # Installation
 
-{% include warning/avoid-program-files %}
-
+See [system requirements](/downloads#system-requirements).
 
 # Troubleshooting
 
