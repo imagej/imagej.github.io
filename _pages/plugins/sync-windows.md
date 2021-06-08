@@ -1,7 +1,7 @@
 ---
 mediawiki: Sync_Windows
 title: Sync Windows
-categories: [User interface]
+categories: [User Interface]
 artifact: sc.fiji:Sync_Win
 ---
 
