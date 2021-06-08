@@ -294,7 +294,7 @@ Here is a summary of roles for projects in the [SciJava](/libs/scijava) ecosyste
         <p><a href="https://github.com/orgs/trakem2/people">List on GitHub</a></p>
       </td>
       <td>
-        <p><a href="https://github.com/trakem2/plugins/trakem2/graphs/contributors">Info on GitHub</a></p>
+        <p><a href="https://github.com/trakem2/trakem2/graphs/contributors">Info on GitHub</a></p>
       </td>
       <td></td>
     </tr>

@@ -1076,7 +1076,7 @@ Then, we iterate all nodes of the arbor looking for nodes that have the "neck st
     # Albert Cardona 2015-07-02 for Jemima Burden at UCL.
 
     # See also the API of the Ball class:
-    # https://github.com/trakem2/plugins/trakem2/blob/master/plugins/trakem2_/src/main/java/ini/trakem2/display/Ball.java#L716
+    # https://github.com/trakem2/trakem2/blob/master/src/main/java/ini/trakem2/display/Ball.java#L716
 
 
     from ini.trakem2.display import Display, Ball
