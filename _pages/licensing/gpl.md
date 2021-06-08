@@ -1,5 +1,4 @@
 ---
-mediawiki: GPL
 title: GNU General Public License
 section: Contribute:Licensing:Open Source
 ---
@@ -23,7 +22,7 @@ for more information.
 Version 3 of the GPL is the latest version, written in 2007. It is the
 recommended version of the GPL to use for new projects.
 
-{% include licensing/links url='https://www.gnu.org/licenses/gpl.html' choosealicense='gpl-3.0' osswatch='gplv3' osi='gpl-license' %} 
+{% include licensing/links shortname='GPLv3' url='https://www.gnu.org/licenses/gpl.html' choosealicense='gpl-3.0' osswatch='gplv3' osi='gpl-license' %} 
 
 ## GNU General Public License v2
 
