@@ -30,8 +30,11 @@ and the current maintainer of the [Fiji](/software/fiji) distribution of ImageJ.
 
 *Last updated: 2021-Jun-09*
 
-1.  \[Summer 2021\] **ImageJ-OMERO** update to OMERO 5.5+. ([imagej/imagej-omero#107](https://github.com/imagej/imagej-omero/pull/107))
-2.  **Fix ImageJ1 patching.** Reconcile latest ImageJ 1.x versions with ImageJ2 patching logic ([imagej/ij1-patcher#47](https://github.com/imagej/ij1-patcher/pull/47))
+1.  \[Summer 2021\] ImageJ and Fiji component updates.
+    * **ImageJ-OMERO** update to OMERO 5.5+. ({% include github org='imagej' repo='imagej-omero' pr=107 %})
+    * **ImageJ Server** fix ({% include github org='imagej' repo='imagej-server' issue=41 %})
+    * **Fix ImageJ1 patching.** Reconcile latest ImageJ 1.x versions with ImageJ2 patching logic ({% include github org='imagej' repo='ij1-patcher' pr=47 %})
+    * New pom-scijava, imagej and fiji component releases.
 3.  \[Summer 2021\] (with {% include person id='elevans' %} and {% include person id='hinerm' %}) *PyImageJ paper.* ([roadmap](https://github.com/imagej/pyimagej/projects/1))
 4.  \[Fall 2021\] (with {% include person id='gselzer' %} and {% include person id='hinerm' %}) **SciJava Ops** + **ImageJ Ops2** ([roadmap](https://github.com/orgs/scijava/projects/1)), including [JPMS/Jigsaw](https://openjdk.java.net/projects/jigsaw/) modularization and migration of SciJava foundational libraries to Java 11.
 5.  \[Winter 2021\] **Maven-based ImageJ Launcher.** And migrate ImageJ and Fiji to ship with Java 11. Use a Java-6-compatible stub classpath that checks your Java version and tells you how to upgrade to Java 11 if needed. Retire the Java-8 update site, using Maven coordinates instead.
