@@ -43,10 +43,11 @@ and the current maintainer of the [Fiji](/software/fiji) distribution of ImageJ.
 
 ### Longer-term priorities
 
-1. **Rich Image.** Improve the [ImageJ Common](/libs/imagej-common) data model to support metadata (e.g., spatial transformations) as a first-class citizen. ([imagej/imagej-common@rich](https://github.com/imagej/imagej-common/compare/rich), [imagej/janelia-hackathon-2016](https://github.com/imagej/janelia-hackathon-2016))
-2. **SCIFIO blockization.** ([scifio/scifio#283](https://github.com/scifio/scifio/issues/283))
-3. **ImageJ Launcher.** Switch to a JavaFX-based native launcher. Retire the current ImageJ Launcher. ([imagej/imagej-launcher#33](https://github.com/imagej/imagej-launcher/issues/33))
-4. **ImageJ Electron app.** Shared memory between Java, JavaScript and Python. ([imagej/imagej-electron-app](https://github.com/imagej/imagej-electron-app))
+1.  **Rich Image.** Improve the [ImageJ Common](/libs/imagej-common) data model to support metadata (e.g., spatial transformations) as a first-class citizen. ([imagej/imagej-common@rich](https://github.com/imagej/imagej-common/compare/rich), [imagej/janelia-hackathon-2016](https://github.com/imagej/janelia-hackathon-2016))
+2.  **SCIFIO blockization.** ({% include github org='scifio' repo='scifio' issue=283 %})
+3.  **ImageJ Launcher.** Switch to a JavaFX-based native launcher. Retire the current ImageJ Launcher.
+    ({% include github org='imagej' repo='imagej-launcher' issue=33 %})
+4.  **ImageJ Electron app.** Shared memory between Java, JavaScript and Python. ([imagej/imagej-electron-app](https://github.com/imagej/imagej-electron-app))
 
 ### Constant priorities
 

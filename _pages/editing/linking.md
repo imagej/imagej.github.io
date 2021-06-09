@@ -9,11 +9,9 @@ This page demonstrates how to link to certain special classes of external conten
 ## Banner
 
 *The following liquid code:*
-```
-{% raw %}
+{% highlight liquid %}{% raw %}
 {% include link-banner url='https://forum.image.sc/' %}
-{% endraw %}
-```
+{% endraw %}{% endhighlight %}
 *produces:*
 
 {% include link-banner url='https://forum.image.sc/' %}
@@ -73,7 +71,7 @@ repository as a whole:
 {% raw %}{% include github repo='fiji' %}{% endraw %}
 {% endcapture %}
 {% capture github-whole-repo-result %}
-{% include github repo='fiji' %}  
+{% include github repo='fiji' %}
 {% endcapture %}
 {% include editing/example code=github-whole-repo-code result=github-whole-repo-result %}
 
@@ -85,7 +83,7 @@ Use `branch` or `tag` to specify a branch or tag (rather than `main`):
 {% endcapture %}
 {% capture github-tag-result %}
 {% include github tag='imagej-2.0.0-beta-7.9'
-  path='app/src/test/java/imagej/debug/TypeHierarchy.java' %}  
+  path='app/src/test/java/imagej/debug/TypeHierarchy.java' %}
 {% endcapture %}
 {% include editing/example code=github-tag-code result=github-tag-result %}
 
@@ -95,33 +93,31 @@ Specifying `tag` alone links to the tag description:
 {% raw %}{% include github tag='imagej-2.0.0-rc-44' %}{% endraw %}
 {% endcapture %}
 {% capture github-tag-alone-result %}
-{% include github tag='imagej-2.0.0-rc-44' %}  
+{% include github tag='imagej-2.0.0-rc-44' %}
 {% endcapture %}
 {% include editing/example code=github-tag-alone-code result=github-tag-alone-result %}
 
-Use `commit` to specify a commit hash:  
+Use `commit` to specify a commit hash:
 
 {% capture github-commit-code %}
 {% raw %}{% include github
-  commit='7a10880d485a13fc449d84c7e2eca3e1481064ee'
-  label='imagej@7a10880d' %}{% endraw %}
+  commit='7a10880d485a13fc449d84c7e2eca3e1481064ee' %}{% endraw %}
 {% endcapture %}
 {% capture github-commit-result %}
 {% include github
-  commit='7a10880d485a13fc449d84c7e2eca3e1481064ee'
-  label='imagej@7a10880d' %}  
+  commit='7a10880d485a13fc449d84c7e2eca3e1481064ee' %}
 {% endcapture %}
 {% include editing/example code=github-commit-code result=github-commit-result %}
 
 Use `issue` or `pr` to specify an issue or PR number:
 
 {% capture github-issue-pr-code %}
-{% raw %}{% include github issue='83' label='imagej#83' %}
-or {% include github pr='88' label='imagej#88' %}{% endraw %}
+{% raw %}{% include github issue=83 %}
+or {% include github pr=88 %}{% endraw %}
 {% endcapture %}
 {% capture github-issue-pr-result %}
-{% include github issue='83' label='imagej#83' %}
-or {% include github pr='88' label='imagej#88' %}  
+{% include github issue=83 %}
+or {% include github pr=88 %}
 {% endcapture %}
 {% include editing/example code=github-issue-pr-code result=github-issue-pr-result %}
 
