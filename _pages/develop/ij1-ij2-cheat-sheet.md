@@ -1,5 +1,4 @@
 ---
-mediawiki: ImageJ1-ImageJ2_cheat_sheet
 title: ImageJ1-ImageJ2 cheat sheet
 ---
 
@@ -9,14 +8,14 @@ This page summarizes translation of basic operations of ImageJ1 and ImageJ2 API.
 <table>
   <thead>
     <tr class="header">
-      <th style="text-align:left;">
-        <p>Task</p>
+      <th style="text-align:left; min-width: 10em;">
+        <p><strong>Task</strong></p>
       </th>
       <th>
-        <p>ImageJ1</p>
+        <p><strong>ImageJ1</strong></p>
       </th>
       <th>
-        <p>ImageJ2</p>
+        <p><strong>ImageJ2</strong></p>
       </th>
     </tr>
   </thead>
