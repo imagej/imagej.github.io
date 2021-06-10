@@ -1,10 +1,9 @@
 ---
 mediawiki: 3D_Viewer:_Custom_Surface
 title: 3D Viewer › Custom Surface
+nav-links: true
+nav-title: Custom Surface
 ---
-
-(Return to the [Developer Documentation](/plugins/3d-viewer/developer-documentation) page)  
-(Return to the main [3D\_Viewer](/plugins/3d-viewer) page)
 
 ## How to display and show custom surfaces
 

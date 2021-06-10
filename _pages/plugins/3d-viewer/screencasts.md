@@ -1,9 +1,9 @@
 ---
 mediawiki: 3D_Viewer:_Screencasts
 title: 3D Viewer › Screencasts
+nav-links: true
+nav-title: Screencasts
 ---
-
-(Return to the main [3D Viewer](/plugins/3d-viewer) page)
 
 A number of screencasts exist to help new users getting a particular job done with the 3D Viewer.
 

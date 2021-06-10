@@ -1,10 +1,9 @@
 ---
 mediawiki: 3D_Viewer:_Change_Attributes
 title: 3D Viewer › Change Attributes
+nav-links: true
+nav-title: Change Attributes
 ---
-
-(Return to the [Developer Documentation](/plugins/3d-viewer/developer-documentation) page)  
-(Return to the main [3D\_Viewer](/plugins/3d-viewer) page)
 
 ## How to change color, transparency etc of a Content
 

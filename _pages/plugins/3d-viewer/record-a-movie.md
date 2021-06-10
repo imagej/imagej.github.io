@@ -1,10 +1,9 @@
 ---
 mediawiki: 3D_Viewer:_Record_a_Movie
 title: 3D Viewer › Record a Movie
+nav-links: true
+nav-title: Record Movie
 ---
-
-(Return to the [Developer Documentation](/plugins/3d-viewer/developer-documentation) page)  
-(Return to the main [3D\_Viewer](/plugins/3d-viewer) page)
 
 ## How to animate the universe and create movies
 

@@ -1,10 +1,9 @@
 ---
 mediawiki: 3D_Viewer:_Surface_Plot
 title: 3D Viewer › Surface Plot
+nav-links: true
+nav-title: Surface Plot
 ---
-
-(Return to the [Developer Documentation](/plugins/3d-viewer/developer-documentation) page)  
-(Return to the main [3D\_Viewer](/plugins/3d-viewer) page)
 
 ## How to work with surface plots
 

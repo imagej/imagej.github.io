@@ -1,10 +1,9 @@
 ---
 mediawiki: 3D_Viewer:_4D_Viewer
 title: 3D Viewer › 4D Viewer
+nav-links: true
+nav-title: 4D Viewer
 ---
-
-(Return to the [Developer Documentation](/plugins/3d-viewer/developer-documentation) page)  
-(Return to the main [3D\_Viewer](/plugins/3d-viewer) page)
 
 ## How to visualize 4D data
 

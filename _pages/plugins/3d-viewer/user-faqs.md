@@ -1,9 +1,9 @@
 ---
 mediawiki: 3D_Viewer:_User_FAQs
 title: 3D Viewer › User FAQs
+nav-links: true
+nav-title: User FAQs
 ---
-
-(Return to the main [3D Viewer](/plugins/3d-viewer) page)
 
 ## Basic Usage
 

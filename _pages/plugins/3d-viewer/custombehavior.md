@@ -1,10 +1,9 @@
 ---
 mediawiki: 3D_Viewer:_CustomBehavior
 title: 3D Viewer › CustomBehavior
+nav-links: true
+nav-title: Custom Behavior
 ---
-
-(Return to the [Developer Documentation](/plugins/3d-viewer/developer-documentation) page)  
-(Return to the main [3D\_Viewer](/plugins/3d-viewer) page)
 
 ## How to catch and handle events on the 3D canvas
 

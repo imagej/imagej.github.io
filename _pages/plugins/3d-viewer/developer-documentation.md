@@ -1,9 +1,9 @@
 ---
 mediawiki: 3D_Viewer:_Developer_Documentation
 title: 3D Viewer › Developer Documentation
+nav-links: true
+nav-title: Developer Docs
 ---
-
-(Return to the main [3D Viewer](/plugins/3d-viewer) page)
 
 The 3D viewer is more than a 3D visualization application. It was designed to serve as a high-level programming library for 3D visualization, especially for the visualization of 3D biomedical images.
 

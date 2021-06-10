@@ -1,10 +1,9 @@
 ---
 mediawiki: 3D_Viewer:_Highlight_Points
 title: 3D Viewer › Highlight Points
+nav-links: true
+nav-title: Highlight Points
 ---
-
-(Return to the [Developer Documentation](/plugins/3d-viewer/developer-documentation) page)  
-(Return to the main [3D\_Viewer](/plugins/3d-viewer) page)
 
 ## How to highlight named points of a Content
 

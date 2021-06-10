@@ -1,10 +1,9 @@
 ---
 mediawiki: 3D_Viewer:_Apply_Transformation
 title: 3D Viewer › Apply Transformation
+nav-links: true
+nav-title: Apply Transformation
 ---
-
-(Return to the [Developer Documentation](/plugins/3d-viewer/developer-documentation) page)  
-(Return to the main [3D\_Viewer](/plugins/3d-viewer) page)
 
 ## How to apply a specific transformation to a Content
 

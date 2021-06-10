@@ -1,10 +1,9 @@
 ---
 mediawiki: 3D_Viewer:_Display_a_Stack
 title: 3D Viewer › Display a Stack
+nav-links: true
+nav-title: Display Stack
 ---
-
-(Return to the [Developer Documentation](/plugins/3d-viewer/developer-documentation) page)  
-(Return to the main [3D\_Viewer](/plugins/3d-viewer) page)
 
 ## How to create a universe and display an image stack as volume rendering, orthoslices, isosurface or surface plot
 

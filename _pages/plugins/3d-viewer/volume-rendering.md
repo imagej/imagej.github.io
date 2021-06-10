@@ -1,10 +1,9 @@
 ---
 mediawiki: 3D_Viewer:_Volume_Rendering
 title: 3D Viewer › Volume Rendering
+nav-links: true
+nav-title: Volume Rendering
 ---
-
-(Return to the [Developer Documentation](/plugins/3d-viewer/developer-documentation) page)  
-(Return to the main [3D\_Viewer](/plugins/3d-viewer) page)
 
 ## How to work with volume renderings
 
