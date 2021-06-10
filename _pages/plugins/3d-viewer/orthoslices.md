@@ -1,5 +1,4 @@
 ---
-mediawiki: 3D_Viewer:_Orthoslices
 title: 3D Viewer › Orthoslices
 nav-links: true
 nav-title: Orthoslices
@@ -13,7 +12,11 @@ Before reading this HowTo, it may be helpful to read [The relation between Conte
 
 When displaying a `Content` as orthoslices, the corresponding `ContentNode` of the `Content` is of type `OrthoGroup`.
 
-`OrthoGroup` extends `VoltexGroup`, and therefore also shares its functionality regarding volume editing. Additionally, `OrthoGroup` provides functions for adjusting the displayed slices (planes) and hiding them: &lt;source lang="java" first-line="31";&gt; // Add the image as a volume Content c = univ.addOrthoslice(imp);
+`OrthoGroup` extends `VoltexGroup`, and therefore also shares its functionality regarding volume editing. Additionally, `OrthoGroup` provides functions for adjusting the displayed slices (planes) and hiding them:
+
+```
+// Add the image as a volume
+Content c = univ.addOrthoslice(imp);
 
 // Retrieve the OrthoGroup OrthoGroup ortho = (OrthoGroup)c.getContent();
 
@@ -29,8 +32,8 @@ for(int i = 0; i &lt; 10; i++) {
 // Show it again and hide the z-axis ortho.setVisible(AxisConstants.X\_AXIS, true); ortho.setVisible(AxisConstants.Z\_AXIS, false);
 
 // Show it again ortho.setVisible(AxisConstants.Z\_AXIS, true);
+```
 
-</source>
 
 **Important methods of `OrthoGroup`**
 
