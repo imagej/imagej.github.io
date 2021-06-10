@@ -1,5 +1,4 @@
 ---
-mediawiki: ImgLib2_-_Accessors
 title: ImgLib2 - Accessors
 section: Explore:Libraries:ImgLib2
 ---
@@ -21,16 +20,16 @@ The accessors provided by ImgLib2 typically implement `Cursor` or `RandomAccess`
 
 ImgLib2 supports two basic access patterns:
 
--   [RandomAccess](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccess.html) provides n-dimensional random access through the [Positionable](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Positionable.html) interface. It can be positioned at arbitrary integer coordinates.
--   [Cursor](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Cursor.html) provides iteration through the [Iterator](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Iterator.html) interface. It can be moved forward to visit all pixels of the image once.
+-   [RandomAccess](http://javadoc.scijava.org/ImgLib2/net/imglib2/RandomAccess.html) provides n-dimensional random access through the [Positionable](http://javadoc.scijava.org/ImgLib2/net/imglib2/Positionable.html) interface. It can be positioned at arbitrary integer coordinates.
+-   [Cursor](http://javadoc.scijava.org/ImgLib2/net/imglib2/Cursor.html) provides iteration through the [Iterator](http://javadoc.scijava.org/ImgLib2/net/imglib2/Iterator.html) interface. It can be moved forward to visit all pixels of the image once.
 
-Both, `RandomAccess` and `Cursor` implement the [Sampler](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Sampler.html) interface which allows to access pixel values. Both implement the [Localizable](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Localizable.html) interface which allows to retrieve the accessors current pixel coordinates. Both inherit (through `Localizable`) the [EuclideanSpace](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/EuclideanSpace.html) interval which allows to get the number of dimensions of the image.
+Both, `RandomAccess` and `Cursor` implement the [Sampler](http://javadoc.scijava.org/ImgLib2/net/imglib2/Sampler.html) interface which allows to access pixel values. Both implement the [Localizable](http://javadoc.scijava.org/ImgLib2/net/imglib2/Localizable.html) interface which allows to retrieve the accessors current pixel coordinates. Both inherit (through `Localizable`) the [EuclideanSpace](http://javadoc.scijava.org/ImgLib2/net/imglib2/EuclideanSpace.html) interval which allows to get the number of dimensions of the image.
 
-Note, that [Sampler](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Sampler.html), [RandomAccess](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccess.html), and [Cursor](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Cursor.html) have a type paramer `<T>` that refers to the value type of the underlying image.
+Note, that [Sampler](http://javadoc.scijava.org/ImgLib2/net/imglib2/Sampler.html), [RandomAccess](http://javadoc.scijava.org/ImgLib2/net/imglib2/RandomAccess.html), and [Cursor](http://javadoc.scijava.org/ImgLib2/net/imglib2/Cursor.html) have a type paramer `<T>` that refers to the value type of the underlying image.
 
 ## RandomAccess
 
-[RandomAccess](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccess.html) provides n-dimensional random access through the [Positionable](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Positionable.html) interface. It can be used to access pixels at arbitrary integer coordinates. The following code uses a `RandomAccess` to draw some white pixels into an image.
+[RandomAccess](http://javadoc.scijava.org/ImgLib2/net/imglib2/RandomAccess.html) provides n-dimensional random access through the [Positionable](http://javadoc.scijava.org/ImgLib2/net/imglib2/Positionable.html) interface. It can be used to access pixels at arbitrary integer coordinates. The following code uses a `RandomAccess` to draw some white pixels into an image.
 
     import java.util.Random;
 
@@ -66,7 +65,7 @@ Note, that [Sampler](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.ht
 
 In lines *013-015* we create a 8-bit gray-level image, in line *029* we show the result (like in the [ previous example](/libs/imglib2/getting-started#opening-and-displaying-image-files)).
 
-In line *017* we create a `RandomAccess` to the image. `Img` implements the [RandomAccessible](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccessible.html) interface, thus we can use `randomAccess()` to obtain one. The `RandomAccess` has the same generic type, `UnsignedByteType`, as the image.
+In line *017* we create a `RandomAccess` to the image. `Img` implements the [RandomAccessible](http://javadoc.scijava.org/ImgLib2/net/imglib2/RandomAccessible.html) interface, thus we can use `randomAccess()` to obtain one. The `RandomAccess` has the same generic type, `UnsignedByteType`, as the image.
 
     final RandomAccess< UnsignedByteType > r = img.randomAccess();
 
@@ -94,7 +93,7 @@ We get an instance of the pixel value type `UnsignedByteType` that acts as a ref
 
 -   `get()` is defined in the `Sampler` interface, so you can obtain pixel references from a `Cursor` in exactly the same way.
 -   Often, the `T` obtained from `Sampler<T>.get()` is a proxy object that is re-used internally. You should assume that moving the accessor invalidates the proxy. If you want to keep a permanent reference to a pixel, use the `Sampler<T>.copy()` method. In the above example, this would return a copy of the RandomAccess refering to the same pixel.
--   The `Positionable`, `Localizable`, ... interfaces are not restricted to accessors. In fact, many ImgLib2 entities are `Localizable`. For instance, the [Point](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib/Point.html) class implements `Positionable` and `Localizable`, and simply represents a n-dimensional coordinate. In your own code, whenever you have something that can provide coordinates, you should consider implementing `Localizable`.
+-   The `Positionable`, `Localizable`, ... interfaces are not restricted to accessors. In fact, many ImgLib2 entities are `Localizable`. For instance, the [Point](http://javadoc.scijava.org/ImgLib2/net/imglib/Point.html) class implements `Positionable` and `Localizable`, and simply represents a n-dimensional coordinate. In your own code, whenever you have something that can provide coordinates, you should consider implementing `Localizable`.
 
 ## A Taste of Generic Algorithms
 
@@ -131,7 +130,7 @@ However, for a generic `T`, we no longer know what "white" is. 255 will certainl
 
 Furthermore, we need a way to set a pixel to this value. Note, that the `Sampler.get()` method provides a *reference* to the pixel. Changing that reference won't do any good, and there is no `Sampler.set()` method! We need to ensure that we can use the reference to change the pixel value.
 
-At the root of the ImgLib2 type hierarchy lies [Type](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Type.html). A type `T` extending `Type<T>` must have a `set( T )` method, which is exactly what we need. So we make our method only accept those `T`'s.
+At the root of the ImgLib2 type hierarchy lies [Type](http://javadoc.scijava.org/ImgLib2/net/imglib2/Type.html). A type `T` extending `Type<T>` must have a `set( T )` method, which is exactly what we need. So we make our method only accept those `T`'s.
 
     public static < T extends Type< T > > void draw( final Img< T > img, final T white )
     { ... }
@@ -202,7 +201,7 @@ Now the method looks like this:
         }
     }
 
-Finally, there is no need to restrict ourselves to `Img`. After all, we do not need many of the features of `Img`. We need be able to get a `RandomAccess`, so we need [RandomAccessible<T>](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccessible.html). We need to be able to get the number of dimensions and the extent in every dimension, so we need [Interval](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Interval.html). These two are conveniently gathered in [RandomAccessibleInterval<T>](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccessibleInterval.html). So lets make that
+Finally, there is no need to restrict ourselves to `Img`. After all, we do not need many of the features of `Img`. We need be able to get a `RandomAccess`, so we need [RandomAccessible\<T\>](http://javadoc.scijava.org/ImgLib2/net/imglib2/RandomAccessible.html). We need to be able to get the number of dimensions and the extent in every dimension, so we need [Interval](http://javadoc.scijava.org/job/ImgLib2/net/imglib2/Interval.html). These two are conveniently gathered in [RandomAccessibleInterval\<T\>](http://javadoc.scijava.org/ImgLib2/net/imglib2/RandomAccessibleInterval.html). So lets make that
 
     public static < T extends Type< T > >
         void draw( final RandomAccessibleInterval< T > img, final T white )
@@ -261,7 +260,7 @@ And we used it on a 3D `ARGBType` image (which means a color image with red/gree
 
 ### Notes
 
--   Besides `setPosition()` in a single or all dimensions, you can also relatively move a `RandomAccess` in one or all dimensions, or move the `RandomAccess` pixel-wise in one dimension (Have a look at the [Positionable](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Positionable.html) API doc!) Which of those is most efficient depends on the situation.
+-   Besides `setPosition()` in a single or all dimensions, you can also relatively move a `RandomAccess` in one or all dimensions, or move the `RandomAccess` pixel-wise in one dimension (Have a look at the [Positionable](http://javadoc.scijava.org/ImgLib2/net/imglib2/Positionable.html) API doc!) Which of those is most efficient depends on the situation.
 -   There is a `setPosition()` version which takes a `Localizable`. Often a situation occurs where you want to position accessor `a` to the same location as accessor `b`. In this situation you can avoid localizing `b` into an array and using that array to set the position of `a`. You can simply `a.setPosition( b )` because `b` is `Localizable`.
 -   By *image*, we do not necessarily mean *pixel image*.
 -   we use the generic parameter `< T extends Type< T > >` instead of `< Type >` throughout ImgLib2 since that allows us to be more type-safe. Imagine implementing an `add(a, b)` method for a certain type: using the simpler generic parameter would not allow us to enforce both parameters to have the same subclass of `Type`!
@@ -269,11 +268,11 @@ And we used it on a 3D `ARGBType` image (which means a color image with red/gree
 
 ## Cursor
 
-A [Cursor](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Cursor.html) can be used to visit all pixels of an image once. However, the `Cursor` concept is not limited to pixel images. A `Cursor` can be used to iterate every collection of `Localizable` samples.
+A [Cursor](http://javadoc.scijava.org/ImgLib2/net/imglib2/Cursor.html) can be used to visit all pixels of an image once. However, the `Cursor` concept is not limited to pixel images. A `Cursor` can be used to iterate every collection of `Localizable` samples.
 
-`Cursor` provides iteration through the [net.imglib2.Iterator](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Iterator.html) interface. `Iterator.fwd()` advances the cursor. `Iterator.hasNext()` returns true if the cursor can be advanced further. Initially, a `Cursor` points before the first element. You have to call `fwd()` once to move to the first element.
+`Cursor` provides iteration through the [net.imglib2.Iterator](http://javadoc.scijava.org/ImgLib2/net/imglib2/Iterator.html) interface. `Iterator.fwd()` advances the cursor. `Iterator.hasNext()` returns true if the cursor can be advanced further. Initially, a `Cursor` points before the first element. You have to call `fwd()` once to move to the first element.
 
-Note, that the ImgLib2 [net.imglib2.Iterator](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Iterator.html) interface is different from Java's [java.util.Iterator](http://docs.oracle.com/javase/6/docs/api/index.html?java/util/Iterator.html). However, for convenience, `Cursor` implements `java.util.Iterator` as well.
+Note, that the ImgLib2 [net.imglib2.Iterator](http://javadoc.scijava.org/ImgLib2/net/imglib2/Iterator.html) interface is different from Java's [java.util.Iterator](http://docs.oracle.com/javase/6/docs/api/index.html?java/util/Iterator.html). However, for convenience, `Cursor` implements `java.util.Iterator` as well.
 
 Just like RandomAccess, `Cursor` extends `Sampler`, so you can `get()` the value of the current pixel (respectively sample). It also implements `Localizable`, so you can query the coordinates of the current sample.
 
@@ -322,7 +321,7 @@ For even more syntactic sugar, every `IterableInterval` (such as `Img`) implemen
 
 However, note that in this construct the `Cursor` is hidden and you can not use it to get the current location. Therefore, you will often use the `while` form.
 
-Let's extend the previous example. Now we are also interested in the coordinates of the maximum. `Cursor` extends the `Localizable` interface which provides methods to get the current location either dimension-by-dimension or all at once. (Have a look at the [Localizable](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Localizable.html) API doc!)
+Let's extend the previous example. Now we are also interested in the coordinates of the maximum. `Cursor` extends the `Localizable` interface which provides methods to get the current location either dimension-by-dimension or all at once. (Have a look at the [Localizable](http://javadoc.scijava.org/ImgLib2/net/imglib2/Localizable.html) API doc!)
 
     import net.imglib2.Cursor;
     import net.imglib2.img.Img;
@@ -400,7 +399,7 @@ We define the method `findmax` as
     public static < T extends Comparable< T > >
             Cursor< T > findmax( final IterableInterval< T > iterable )
 
-First, note that we do not take an `Img<T>` as the parameter, because that would be too restrictive. All we need is something that is iterable. Because we can easily put interval bounds on every iterable set of Localizables, ImgLib2 does not define an `Iterable` super-interface for `IterableInterval`. So [IterableInterval<T>](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/IterableInterval.html) is the most general we can go here.
+First, note that we do not take an `Img<T>` as the parameter, because that would be too restrictive. All we need is something that is iterable. Because we can easily put interval bounds on every iterable set of Localizables, ImgLib2 does not define an `Iterable` super-interface for `IterableInterval`. So [IterableInterval<T>](http://javadoc.scijava.org/ImgLib2/net/imglib2/IterableInterval.html) is the most general we can go here.
 
 For finding the maximum, the only restriction we have to put on type `T` is that it is comparable.
 
@@ -413,12 +412,12 @@ To remember the maximum, we simply take a new copy of the iterating cursor whene
 
 Remember that `next()` is equivalent to `fwd()` followed by `get()`. So, `cursor.next()` returns the current `T`.
 
-Lines *028-031* show how to use `findmax` and get the maximum value and coordinates from the resulting `Cursor`. For a change, we used the dimension-by-dimension `getLongPosition()` of the [Localizable](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Localizable.html) interface.
+Lines *028-031* show how to use `findmax` and get the maximum value and coordinates from the resulting `Cursor`. For a change, we used the dimension-by-dimension `getLongPosition()` of the [Localizable](http://javadoc.scijava.org/ImgLib2/net/imglib2/Localizable.html) interface.
 
 ### Notes
 
--   The iteration order is subject to implementation, specialized for each memory layout to minimize access time. For example, an [ArrayImg](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/img/array/ArrayImg.html) has a different iteration order from a [CellImg](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/cell/CellImg.html). This is nicely illustrated in [ ImgLib2 Example 2b - Duplicating an Img using a different ImgFactory ](/libs/imglib2/examples#example-2b---duplicating-an-img-using-a-different-imgfactory).
--   Typically, there are two variants of Cursors available. One that calculates its location per each iteration and one that calculates it only per localization request. The former is more efficient when localization occurs frequently, the latter otherwise. In the *maximum-finding* example, we use the latter because localization is only required once after the maximum has been found. The former one could be obtained using `localizingCursor()` instead of `cursor()` (see [IterableInterval](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/IterableInterval.html) API doc.)
+-   The iteration order is subject to implementation, specialized for each memory layout to minimize access time. For example, an [ArrayImg](http://javadoc.scijava.org/ImgLib2/net/imglib2/img/array/ArrayImg.html) has a different iteration order from a [CellImg](http://javadoc.scijava.org/ImgLib2/net/imglib2/cell/CellImg.html). This is nicely illustrated in [ ImgLib2 Example 2b - Duplicating an Img using a different ImgFactory ](/libs/imglib2/examples#example-2b---duplicating-an-img-using-a-different-imgfactory).
+-   Typically, there are two variants of Cursors available. One that calculates its location per each iteration and one that calculates it only per localization request. The former is more efficient when localization occurs frequently, the latter otherwise. In the *maximum-finding* example, we use the latter because localization is only required once after the maximum has been found. The former one could be obtained using `localizingCursor()` instead of `cursor()` (see [IterableInterval](http://javadoc.scijava.org/ImgLib2/net/imglib2/IterableInterval.html) API doc.)
 -   `copyCursor()` is a work-around to circumvent a *javac* bug with covariant return type overriding (see [bug report](http://bugs.sun.com/view_bug.do?bug_id=6656332)). In the future (with JDK7) every `Sampler` can be copied using `copy()` instead of having specialised `copyCursor()`, `copyRandomAccess()`, ... methods.
 
 ## Accessors for Continuous Coordinates
@@ -437,9 +436,9 @@ Real equivalents of the `Positionable` and `Localizable` interfaces have been ad
 
 Something that is {% include javadoc project='ImgLib2' package='net/imglib2' class='RealPositionable' %}, can be positioned at real coordinates. There are methods to set absolute or relative position, for a single or all dimensions, in analogy to the integer `Positionable`. You can also set a `RealPositionable` to the location of a `RealLocalizable`. Note that {% include javadoc project='ImgLib2' package='net/imglib2' class='RealPositionable' %} extends `Positionable`, which is quite natural: Whenever something can be positioned at arbitrary real coordinates, of course it can be positioned to integer coordinates as well.
 
-[RealLocalizable](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RealLocalizable.html) allows to get a real coordinate from an accessor. Again, this is completely analogous to the integer `Localizable`. In this case, the inheritance relationship is the other way around - `Localizable` extends [RealLocalizable](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RealLocalizable.html). Something that is able to provide its integer coordinates is always able to provide them as real coordinates too.
+[RealLocalizable](http://javadoc.scijava.org/ImgLib2/net/imglib2/RealLocalizable.html) allows to get a real coordinate from an accessor. Again, this is completely analogous to the integer `Localizable`. In this case, the inheritance relationship is the other way around - `Localizable` extends [RealLocalizable](http://javadoc.scijava.org/ImgLib2/net/imglib2/RealLocalizable.html). Something that is able to provide its integer coordinates is always able to provide them as real coordinates too.
 
-In Combination with `Sampler`, we obtain random-access and iteration accessor interfaces. [RealRandomAccess](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RealRandomAccess.html) provides n-dimensional random access through the [RealPositionable](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RealPositionable.html) interface. [RealCursor](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RealCursor.html) provides iteration through the [Iterator](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Iterator.html) interface.
+In Combination with `Sampler`, we obtain random-access and iteration accessor interfaces. [RealRandomAccess](http://javadoc.scijava.org/ImgLib2/net/imglib2/RealRandomAccess.html) provides n-dimensional random access through the [RealPositionable](http://javadoc.scijava.org/ImgLib2/net/imglib2/RealPositionable.html) interface. [RealCursor](http://javadoc.scijava.org/ImgLib2/net/imglib2/RealCursor.html) provides iteration through the [Iterator](http://javadoc.scijava.org/ImgLib2/net/imglib2/Iterator.html) interface.
 
 Both, `RealRandomAccess` and `RealCursor` are `RealLocalizable`. Note that the inheritance relationship of `Localizable` and `RealLocalizable` propagates to the cursors. Every `Cursor` is also a `RealCursor` (because it can provide its current integer coordinates as real coordinates as well). There is no such relationship between `RandomAccess` and `RealRandomAccess`.
 
@@ -502,17 +501,15 @@ Let's look at an example. The following code defines a `RealRandomAccess` which 
         }
     }
 
-First of all, note that we extend [RealPoint](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RealPoint.html). Instead of implementing the interface `RealRandomAccess< UnsignedByteType >`, we make use of this class
-
-`   which has most of the required methods implemented already.`
+First of all, note that we extend [RealPoint](http://javadoc.scijava.org/ImgLib2/net/imglib2/RealPoint.html). Instead of implementing the interface `RealRandomAccess< UnsignedByteType >`, we make use of this classawhich has most of the required methods implemented already.
 
 Actually, all we are left with is to implement the `Sampler< UnsignedByteType >` interface. ImgLib2 provides several such abstract implementations to minimize development time for new accessor types. The UML diagram below shows `MandelbrotRealRandomAccess` and the derivative hierarchy of its parent classes.
 
-The value (iteration count) at a 2D position *(re0,im0)* is computer in the static method `mandelbrot()` in lines *016-032*. When calling it, we set the maximum number of iterations to 255. Thus we can use [UnsignedByteType](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib/UnsignedByteType.html) as the value type of our accessor. Therefore, we implement the interface `RealRandomAccess< UnsignedByteType >`.
+The value (iteration count) at a 2D position *(re0,im0)* is computer in the static method `mandelbrot()` in lines *016-032*. When calling it, we set the maximum number of iterations to 255. Thus we can use [UnsignedByteType](http://javadoc.scijava.org/ImgLib2/net/imglib/UnsignedByteType.html) as the value type of our accessor. Therefore, we implement the interface `RealRandomAccess< UnsignedByteType >`.
 
 In the constructor in lines *010-014*, we call the super class constructor to initialise a 2-dimensional `RealPoint`. We create the `UnsignedByteType` member `t` (declared in line *008*) which will store the value that is returned by `get()`.
 
-Our super class [RealPoint](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RealPoint.html) implements the `RealPositionable` and `RealLocalizable`. We have access to the current position through the `double[] position` field inherited from [RealLocalizable](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RealLocalizable.html). In `get()` (lines *035-038*) we use it to compute the value at the current position. The value is stored in `t` which is returned.
+Our super class [RealPoint](http://javadoc.scijava.org/ImgLib2/net/imglib2/RealPoint.html) implements the `RealPositionable` and `RealLocalizable`. We have access to the current position through the `double[] position` field inherited from [RealLocalizable](http://javadoc.scijava.org/ImgLib2/net/imglib2/RealLocalizable.html). In `get()` (lines *035-038*) we use it to compute the value at the current position. The value is stored in `t` which is returned.
 
 Finally, we provide the `copy()` and `copyRealRandomAccess()` methods to complete the `RealRandomAccess` interface implementation. A copied accessor is supposed to refer to the same position and value, therefore we `setPosition` in line *051*.
 
@@ -588,4 +585,4 @@ Because we have a `RealRandomAccess` you can zoom in indefinitely (until you hit
 
 -   In line *017* we used a `RealRandomAccess< UnsignedByteType >` variable just to emphasize again the interface implemented by `MandelbrotRealRandomAccess`. In real code, you would probably use the actual type.
 -   Sampling from a transformed `RealRandomAccess` to create a pixel image is a quite common task. ImgLib2 provides a framework for on-the-fly transformations, which will be explained later.
--   The `RealPositionable`, `RealLocalizable`, ... interfaces are not restricted to accessors. For example, the [RealPoint](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib/RealPoint.html) class implements `RealPositionable` and `RealLocalizable`, and simply represents a n-dimensional coordinate.
+-   The `RealPositionable`, `RealLocalizable`, ... interfaces are not restricted to accessors. For example, the [RealPoint](http://javadoc.scijava.org/ImgLib2/net/imglib/RealPoint.html) class implements `RealPositionable` and `RealLocalizable`, and simply represents a n-dimensional coordinate.
