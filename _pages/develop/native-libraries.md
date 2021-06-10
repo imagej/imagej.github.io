@@ -1,7 +1,4 @@
 ---
-mediawiki:
-- Developing_using_native_libraries
-- Command_Line_Tips_and_Tricks
 title: Developing using native libraries
 section: Extend:Development:Guides
 ---
@@ -305,8 +302,6 @@ Finally, the *fiji.JNI* class in *fiji-lib.jar* provides convenience methods to 
             JNI.loadLibrary("hello-world");
     }
 
-See also the [JNI Example](#jni-example) below.
-
 ## Using the Java Native Interface from C
 
 There are a couple of things one needs to keep in mind when accessing Java classes, instances and methods from C.
@@ -361,29 +356,11 @@ The *Call<return-type>Method()* family of functions take a variable number of ar
 
 -   Never assume that the reference to a method, or even the JNIEnv parameter are constant between calls to native functions. A very likely source for segmentation faults/access violations that take the complete JVM down.
 
-<!-- -->
-
 -   Always make sure that you release the memory accessed via JNI as soon as possible. This avoids not only memory leaks but also performance issues due to preventing the JVM's memory management to do its thing.
-
-<!-- -->
 
 -   For performance, you should minimize the use of *FindClass()* and *GetMethodID()*: while Java 7 promises better performance for these functions, still a lot of people work with Java 5 or Java 6 where such calls are slow.
 
-<!-- -->
-
 -   Pay attention to the compiler's warnings. They are not there just for fun.
-
-## JNI Example
-
-There is an example in Fiji's source code: {% include github org='imagej' repo='minimal-ij1-plugin' tag='native' path='src/main/c/JNI\_Example.c' %}.
-
-To compile it, simply run
-
-    sh Build.sh plugins/JNI_Example.jar
-
-That will result in the two files *plugins/JNI\_Example.jar* and *lib/<platform>/JNI\_Example.<extension>* and a new menu item {% include bc path='Plugins | JNI | JNI Example'%}.
-
-It does not do terribly useful things as its primary purpose is to show how things are done in a straight-forward manner.
 
 ## Caveats
 
@@ -393,19 +370,11 @@ Usually, you should not need to worry about these issues, as Fiji hides them con
 
 -   The C source needs to be compiled with the *\_JNI\_IMPLEMENATION\_* symbol defined. This is due to Windows which requires *.dll* files to mark explicitly which symbols are to be offered by the library and which ones need to be imported from another library.
 
-<!-- -->
-
 -   On Windows, symbols are auto-versioned by default. This interfers with constant names required by JNI. Therefore, you need to compile C sources with the GCC linker option *-kill-at*. If you ask GCC to link for you, you need to pass that option as *-Wl,-kill-at*.
-
-<!-- -->
 
 -   The java property *java.library.path* needs to be set to the path where the *.so*, *.dylib/.jnilib* or *.dll* files can be found (for Linux/BSD/Haiku/etc, macOS and Windows, respectively).
 
-<!-- -->
-
 -   Additionally to the *java.library.path* property, the environment variable *LD\_LIBRARY\_PATH*, *DYLD\_LIBRARY\_PATH* or *PATH* should be adjusted accordingly on Linux/BSD/Haiku/etc, macOS and Windows, respectively.
-
-<!-- -->
 
 -   If you need to load not only one library, but that library needs to load yet another library, you should set the search path so that the dynamic linker looks in the same directory as the original library, to avoid having to adjust the system-wide search path (which requires administrator privileges). The GCC linker option is called *-R$ORIGIN/* (note that you must prevent the command-line from expanding the *$* character).
 
@@ -417,7 +386,25 @@ For full information on JNI, see [Sun's/Oracle's programmer guide on JNI](http:/
 
 This page lists some hints on working with native libraries in the different environments supported by ImageJ.
 
-| Action                         | Linux                                   | macOS                     | Windows                                                                                            |
-|--------------------------------|-----------------------------------------|---------------------------|----------------------------------------------------------------------------------------------------|
-| List dependencies of libraries | `ldd `<library-file>                    | `otool -L `<library-file> | `objdump -p `<library-file>` | grep "DLL Name:"`                                                   |
-| Trace system calls             | `strace -Ffo syscall.log ./fiji `<args> | `dtruss ./fiji `<args>    | Use [Sysinternal's Process Monitor](http://technet.microsoft.com/en-us/sysinternals/bb896645.aspx) |
+<table>
+  <tbody>
+    <tr>
+      <th><strong>Action</strong></th>
+      <th><strong>Linux</strong></th>
+      <th><strong>macOS</strong></th>
+      <th><strong>Windows</strong></th>
+    </tr>
+    <tr>
+      <td>List dependencies of libraries</td>
+      <td><pre>ldd \<library-file\></pre></td>
+      <td><pre>otool -L \<library-file\></pre></td>
+      <td><pre>objdump -p \<library-file\> | grep "DLL Name:"</pre></td>
+    </tr>
+    <tr>
+       <td>Trace system calls</td>
+       <td><pre>strace -Ffo syscall.log ./fiji \<args\></pre></td>
+       <td><pre>dtruss ./fiji \<args\></pre></td>
+       <td>Use <a href="http://technet.microsoft.com/en-us/sysinternals/bb896645.aspx">Sysinternal's Process Monitor</a></td>
+    </tr>
+  </tbody>
+</table>
