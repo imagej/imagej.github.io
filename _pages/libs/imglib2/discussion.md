@@ -1,5 +1,4 @@
 ---
-mediawiki: ImgLib2_Discussion
 title: ImgLib2 Discussion
 section: Explore:Libraries:ImgLib2
 ---
@@ -10,7 +9,7 @@ Tobias and Saalfeld found it a great idea to create this discussion page that, i
 
 ### We discussed the View concept:
 
-Summary is that `View`<T> would be an interface that can return its target `T`, the data it is generated from:
+Summary is that `View\<T\>` would be an interface that can return its target `T`, the data it is generated from:
 
     public interface View<T> {
         public T getTarget();
@@ -30,7 +29,7 @@ In matrix notation, a transform would look like **y = Tx**. Here, it is natural 
 
 Applied to Views, we will therefore completely reverse our previous opinion and refer to the underlying data as the *Source*.
 
-The `View`<T> interface would look like
+The `View\<T\>` interface would look like
 
     public interface View<T> {
         public T getSource();
@@ -78,8 +77,8 @@ We think that it would be a great idea to be able to run both imglib and imglib2
 
 Why not just call it "org.imglib" then? Wouldn't clash with "mpicbg.imglib" of imglib1.
 
-  
-Because imglib.org is registered by somebody else already. {% include person id='axtimwalde' %} 14:38, 24 March 2011 (CET)
+Because imglib.org is registered by somebody else already.
+{% include person id='axtimwalde' %} 14:38, 24 March 2011 (CET)
 
 ## 2011-03-21
 
@@ -101,29 +100,31 @@ Coincidentally, I was playing around with an idea for ROIs that might be applica
 
 Here's the interface that I was planning on implementing:
 
-`package mpicbg.imglib.transform;`  
-`/**`  
-` * @author leek`  
-` *`  
-` * A class is transformable if it can produce a copy of`  
-` * itself in the transformed space using the supplied transform.`  
-` * `  
-` * Note that a class may require either a Transform or an InvertibleTransform`  
-` * depending on whether the strategy is to transform coordinates in the`  
-` * source space into the destination space or to generate the object in`  
-` * the destination space by sampling invert-transformed points in the`  
-` * source space.`  
-` * `  
-` */`  
-`public interface Transformable<O,T extends Transform> {`  
-`   /**`  
-`    * Generate a copy of the object in the transformed space.`  
-`    * @param t the transform that maps points in the source space to those`  
-`    *          in the destination space.`  
-`    * @return a copy built to operate similarly in the transformed space.`  
-`    */`  
-`   public O transform(final T t);`  
-`}`
+```
+package mpicbg.imglib.transform;
+/**
+ * @author leek
+ *
+ * A class is transformable if it can produce a copy of
+ * itself in the transformed space using the supplied transform.
+ * 
+ * Note that a class may require either a Transform or an InvertibleTransform
+ * depending on whether the strategy is to transform coordinates in the
+ * source space into the destination space or to generate the object in
+ * the destination space by sampling invert-transformed points in the
+ * source space.
+ * 
+ */
+public interface Transformable<O,T extends Transform> {
+   /**
+    * Generate a copy of the object in the transformed space.
+    * @param t the transform that maps points in the source space to those
+    *          in the destination space.
+    * @return a copy built to operate similarly in the transformed space.
+    */
+   public O transform(final T t);
+}
+```
 
 You'd only want to implement Transformable in cases where the object has internal state which allows the transformed object to operate more efficiently than transformation of the object's inputs, followed by application of the object's function. For ROIs, the savings are clear - cost to transform a handful of vertices in a polygon versus cost of back-transforming millions of coordinates into the original space.
 
@@ -238,23 +239,27 @@ getPosition calls: ImgLib will always iterate over the dimensionality of the Cur
 
 setPosition calls: ImgLib will always iterate over the dimensionality of the array that indicates the new location, i.e. one can pass an array or Localizable with a lower dimensionality and it will only set the new position in those lower dimensions.
 
-`For example 2d/3d:`  
+For example 2d/3d:
   
-`Localizable2d.localize( array[3] ) - OK`  
-`Localizable3d.localize( array[2] ) - NOT OK`  
+```
+Localizable2d.localize( array[3] ) - OK
+Localizable3d.localize( array[2] ) - NOT OK
   
-`Positionable2d.setPostion( array[3] ) - NOT OK`  
-`Positionable3d.setPostion( array[2] ) - OK`
+Positionable2d.setPostion( array[3] ) - NOT OK
+Positionable3d.setPostion( array[2] ) - OK
+```
 
 We discussed this topic again and found that it is always bad practice to actually work with dimension vectors of different sizes. Instead, one should use views that map into a common *n*-space by either adding or removing a set of dimensions in one or both of the RandomAccessibles. Still, the behavior needs to be specified strictly. With an eye on efficiency and consistency, we revert our previous opinion to
 
-`Localizable2d.localize( array[3] ) - OK`  
-`Localizable3d.localize( array[2] ) - NOT OK`  
+```
+Localizable2d.localize( array[3] ) - OK
+Localizable3d.localize( array[2] ) - NOT OK
   
-`Positionable2d.setPostion( array[3] ) - OK`  
-`Positionable3d.setPostion( array[2] ) - NOT OK`  
-`Positionable2d.setPostion( Localizable3d ) - OK`  
-`Positionable3d.setPostion( Localizable2d ) - NOT OK`
+Positionable2d.setPostion( array[3] ) - OK
+Positionable3d.setPostion( array[2] ) - NOT OK
+Positionable2d.setPostion( Localizable3d ) - OK
+Positionable3d.setPostion( Localizable2d ) - NOT OK
+```
 
 for the reason that in the latter case, the loop would require Localizable.numDimensions() to be called otherwise. There will be many situations where this cannot be inlined and thus be slower than using a temporary *n* in the executing class.
 
@@ -275,16 +280,16 @@ We have been discussing this several times with a two-folded answer:
 1.  Yes, because iteration order for ImgLib2 Iterators is claimed to be constant. Given that, accessing the previous element (bck()) call is always defined.
 2.  No, because it would require a substantial extension of the existing interfaces and classes. ImgLib2 Iterator could then implement ListIterator which is a lot of effort to implement.
 
-In principal, I strongly support introducing it. It makes total sense but it is a change in the core. {% include person id='axtimwalde' %} 17:03, 3 May 2011 (CEST)
+In principal, I strongly support introducing it. It makes total sense but it is a change in the core.
+{% include person id='axtimwalde' %} 17:03, 3 May 2011 (CEST)
 
-I discussed it again with Tobias yesterday in detail and we came to the conclusion that it does not make too much sense. First of all, any Sampler can be copied at a certain location now, i.e. wait there. And it is also important to consider that going back would have a different logic than going forward as Cursors might crash when moved out. This means one would not be able to access +1, but one has to start at the last pixel of the e.g. Img<T>. That means when iterating back, the test has to be different: First get value, then move.
+I discussed it again with Tobias yesterday in detail and we came to the conclusion that it does not make too much sense. First of all, any Sampler can be copied at a certain location now, i.e. wait there. And it is also important to consider that going back would have a different logic than going forward as Cursors might crash when moved out. This means one would not be able to access +1, but one has to start at the last pixel of the e.g. Img\<T\>. That means when iterating back, the test has to be different: First get value, then move.
 
 So maybe we just skip it? However, we could have an Interface that provides this functionality:
 
 bck(); hasPrevious();
 
 just for the case that somebody wants to implement it for some reason and does not has to do its own interface which would be incompatible with other people who would want to it. Could be named ReverseCursor or so...
-
 {% include person id='StephanPreibisch' %} 12:24, 4 May 2011 (CEST)
 
 ## 2011-05-04
@@ -311,7 +316,7 @@ Tobias pointed out that we should not as it is not clear if it is a getter or se
 
 Should we maybe have fast setPosition-calls for dimension 0?
 
-In many algorithms we will need 1-dimensional Img<T>, like Histograms, Gauss and many more. A fast setPositionDim0(position) could be quite some speedup for arrays as
+In many algorithms we will need 1-dimensional Img\<T\>, like Histograms, Gauss and many more. A fast setPositionDim0(position) could be quite some speedup for arrays as
 
     public void setPosition( final int pos, final int dim )
     {
@@ -334,12 +339,12 @@ The same applies for fwd(dim), bck(dim), move(dim), there a -- ++ and += can rep
 {% include person id='StephanPreibisch' %} 12:27, 12 May 2011 (CEST)
 
   
-What about having a 1D `RandomAccess` instead as we have done in `PlanarImg` for `Cursor`. That could implement the `setPosition(long p, int d)` method ignoring `d`. A 1D `RandomAccess` could, in addition, have the proposed method such that in situations where you know what you're doing (read: where you can cast), you have a shorter call available. That approach would also relieve us from the need to implement that method in situations where it does not make sense at all, e.g. `ShapeImg`, that has no 1D. {% include person id='axtimwalde' %} 15:27, 12 May 2011 (CEST)
-
-<!-- -->
+What about having a 1D `RandomAccess` instead as we have done in `PlanarImg` for `Cursor`. That could implement the `setPosition(long p, int d)` method ignoring `d`. A 1D `RandomAccess` could, in addition, have the proposed method such that in situations where you know what you're doing (read: where you can cast), you have a shorter call available. That approach would also relieve us from the need to implement that method in situations where it does not make sense at all, e.g. `ShapeImg`, that has no 1D.
+{% include person id='axtimwalde' %} 15:27, 12 May 2011 (CEST)
 
   
-I like this way of realizing it, maybe we could also implement it on ImgFactory level. If a Img implements RandomAccessible1D, the factory could also have a special create( long size ) method (in e.g. RandomAccessible1DFactory) which returns for example &lt;I extends ArrayImg&lt;T,?&gt; & RandomAccessible1D&gt;, so no unchecked casts are necessary. {% include person id='StephanPreibisch' %} 16:15, 12 May 2011 (CEST)
+I like this way of realizing it, maybe we could also implement it on ImgFactory level. If a Img implements RandomAccessible1D, the factory could also have a special create( long size ) method (in e.g. RandomAccessible1DFactory) which returns for example &lt;I extends ArrayImg&lt;T,?&gt; & RandomAccessible1D&gt;, so no unchecked casts are necessary.
+{% include person id='StephanPreibisch' %} 16:15, 12 May 2011 (CEST)
 
 ## 2011-11-28
 
@@ -411,7 +416,8 @@ We have discussed with Tobias that two additional integer views would be very he
 1.  Joining multiple images of the same size and dimensions into one or more dimensions of a single image (composition as opposed to decomposition which is implemented by hyperslice views).
 2.  Adding a new dimension considering an existing dimension as interleaved data.
 
-When done properly this has the potential to replace or at least simplify PlanarImg like containers since they could be expressed as a composition of multiple ArrayImg-s. {% include person id='axtimwalde' %} 16:11, 18 January 2012 (CET)
+When done properly this has the potential to replace or at least simplify PlanarImg like containers since they could be expressed as a composition of multiple ArrayImg-s.
+{% include person id='axtimwalde' %} 16:11, 18 January 2012 (CET)
 
 ## 2012-11-21
 
