@@ -1,8 +1,8 @@
 ---
-mediawiki: 3D_Viewer:_User_FAQs
 title: 3D Viewer › User FAQs
 nav-links: true
 nav-title: User FAQs
+usemathjax: true
 ---
 
 ## Basic Usage
@@ -234,12 +234,16 @@ To apply a transformation, select an object and click on {% include bc path="Tra
 
 Example:
 
-`        |  a11 a12 a13 a14 |`  
-`        |  a21 a22 a23 a24 |`  
-`        |  a31 a32 a33 a34 |`  
-`        |    0   0   0   1 |`
+$$
+    \begin{matrix}
+    a11 & a12 & a13 & a14 \\
+    a21 & a22 & a23 & a24 \\
+    a31 & a32 & a33 & a34 \\
+    0 & 0 & 0 & 1 \\
+    \end{matrix}
+$$
 
-should be specified as "a11 a12 a13 a14 a21 a22 a23 a24 a31 a32 a33 a34" (without the '"').
+should be specified as `a11 a12 a13 a14 a21 a22 a23 a24 a31 a32 a33 a34`.
 
 The window also allows you to load a transformation from a file. [Top](#top)
 
@@ -251,12 +255,16 @@ To set a transformation, select an object and click on {% include bc path="Trans
 
 Example:
 
-`        |  a11 a12 a13 a14 |`  
-`        |  a21 a22 a23 a24 |`  
-`        |  a31 a32 a33 a34 |`  
-`        |    0   0   0   1 |`
+$$
+    \begin{matrix}
+    a11 & a12 & a13 & a14 \\
+    a21 & a22 & a23 & a24 \\
+    a31 & a32 & a33 & a34 \\
+    0 & 0 & 0 & 1 \\
+    \end{matrix}
+$$
 
-should be specified as "a11 a12 a13 a14 a21 a22 a23 a24 a31 a32 a33 a34" (without the '"').
+should be specified as `a11 a12 a13 a14 a21 a22 a23 a24 a31 a32 a33 a34`.
 
 The window also allows you to load a transformation from a file. [Top](#top)
 
@@ -266,12 +274,16 @@ To see the current transformation matrix of a 3D object, select that object and 
 
 Example:
 
-`        |  a11 a12 a13 a14 |`  
-`        |  a21 a22 a23 a24 |`  
-`        |  a31 a32 a33 a34 |`  
-`        |    0   0   0   1 |`
+$$
+    \begin{matrix}
+    a11 & a12 & a13 & a14 \\
+    a21 & a22 & a23 & a24 \\
+    a31 & a32 & a33 & a34 \\
+    0 & 0 & 0 & 1 \\
+    \end{matrix}
+$$
 
-is shown as "a11 a12 a13 a14 a21 a22 a23 a24 a31 a32 a33 a34" (without the '"').
+is shown as `a11 a12 a13 a14 a21 a22 a23 a24 a31 a32 a33 a34`.
 
 Click 'Cancel' if you don't want to change the transformation. [Top](#top)
 
