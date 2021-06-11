@@ -50,7 +50,7 @@ Now you are on the cluster!
 
 `./executable_script`  
 
-This tells the interpreter to look for the file `executable\_script` in the current directory and not somewhere else.
+This tells the interpreter to look for the file `executable_script` in the current directory and not somewhere else.
 
 **..** - one directory up
 
