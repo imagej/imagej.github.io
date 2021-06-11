@@ -448,6 +448,15 @@ $leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding - 3
   font-size: large;
 }
 
+#statbox #statbox-honorific {
+  font-size: medium;
+  margin-top: -0.5em;
+}
+
+#statbox #statbox-honorific img {
+  vertical-align: middle;
+}
+
 #statbox #statbox-header {
   text-align: center;
 }
