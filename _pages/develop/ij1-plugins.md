@@ -256,7 +256,7 @@ This code snippet shows you how to update the progress bar and the status text:
 
 ## Frequently used operators
 
-The [ImageProcessor](http://jenkins.imagej.net/job/ImageJ1-javadoc/javadoc/ij/process/ImageProcessor.html) class has a few methods such as *smooth()*, *sharpen()*, *findEdges()*, etc
+The [ImageProcessor](http://javadoc.scijava.org/ImageJ1/ij/ij/process/ImageProcessor.html) class has a few methods such as *smooth()*, *sharpen()*, *findEdges()*, etc
 
 **Tip:** use the Script Editor's functions in the *Tools* menu:
 
@@ -266,7 +266,7 @@ The [ImageProcessor](http://jenkins.imagej.net/job/ImageJ1-javadoc/javadoc/ij/pr
 
 ## Plots
 
-You can show a plot window very easily using the [Plot](http://jenkins.imagej.net/job/ImageJ1-javadoc/javadoc/ij/gui/Plot.html) class:
+You can show a plot window very easily using the [Plot](http://javadoc.scijava.org/ImageJ1/ij/ij/gui/Plot.html) class:
 
     void plot(double[] values) {
         double[] x = new double[values.length];
@@ -289,7 +289,7 @@ It is almost as easy to put multiple plots into one window:
         plot.show();
     }
 
-To update the contents of a plot window, remember the return value of *plot.show()* which is a [PlotWindow](http://jenkins.imagej.net/job/ImageJ1-javadoc/javadoc/ij/gui/PlotWindow.html), and use its *drawPlot()* method:
+To update the contents of a plot window, remember the return value of *plot.show()* which is a [PlotWindow](http://javadoc.scijava.org/ImageJ1/ij/ij/gui/PlotWindow.html), and use its *drawPlot()* method:
 
     void plot(double[] values) {
         ...

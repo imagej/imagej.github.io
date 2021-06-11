@@ -365,7 +365,7 @@ To facilitate some use cases, we provide a script for generating a combined bund
 
 > `mvn -Pdeps package`
 
-For convenience, we provide a [build of this combined JAR file](http://jenkins.imagej.net/job/ImageJ/lastSuccessfulBuild/artifact/target/) (with suffix `-all`) from the latest DEVELOPMENT, UNSTABLE version of ImageJ. This build includes the latest changes on the {% include github repo='imagej' label='master branch of the source repository' %}. It has not been thoroughly tested and may contain new bugs.
+For convenience, we provide a build of this combined JAR file (with suffix `-all`) from the latest DEVELOPMENT, UNSTABLE version of ImageJ. This build includes the latest changes on the {% include github repo='imagej' label='master branch of the source repository' %}. It has not been thoroughly tested and may contain new bugs.
 
 In some cases, use of this JAR file is appropriate and convenient; for example, [CellProfiler](http://cellprofiler.org/) uses it to integrate with ImageJ. However, you should consider carefully what would be best for your project; see the [Uber-JAR](/develop/uber-jars) page for further information.
 
