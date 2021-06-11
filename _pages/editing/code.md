@@ -23,6 +23,10 @@ code, and another three concluding it. Optionally, you can write the name of
 the language in small case next to the leading fence to declare syntax
 highlighting is desired with the stated language.
 
+**NB:** code fence syntax highlighting is currently not working locally due to
+differences in local build configuration. However, highlighting *will* display as
+appropriate on the public wiki.
+
 ### Java example
 
 {% capture code-fence-java %}
