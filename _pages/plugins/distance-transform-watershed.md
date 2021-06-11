@@ -2,6 +2,7 @@
 mediawiki: Distance_Transform_Watershed
 title: Distance Transform Watershed
 categories: [Segmentation, Mathematical Morphology]
+usemathjax: true
 ---
 
 

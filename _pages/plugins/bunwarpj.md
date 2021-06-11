@@ -3,6 +3,7 @@ mediawiki: BUnwarpJ
 title: BUnwarpJ
 categories: [Registration]
 artifact: sc.fiji:bUnwarpJ_
+usemathjax: true
 ---
 
 {\| \|style="vertical-align:top" \|<img src="/media/plugins/bunwarpj-scheme.png" title="fig:bUnwarpJ scheme: bidirectional Unwarping in Java." width="390" alt="bUnwarpJ scheme: bidirectional Unwarping in Java." /> \|}

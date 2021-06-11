@@ -2,6 +2,7 @@
 mediawiki: PQCT
 title: PQCT
 categories: [Uncategorized]
+usemathjax: true
 ---
 
 

@@ -2,6 +2,7 @@
 mediawiki: FLIMJ
 title: FLIMJ
 categories: [Uncategorized]
+usemathjax: true
 ---
 
 

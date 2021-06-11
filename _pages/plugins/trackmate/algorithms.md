@@ -1,6 +1,7 @@
 ---
 title: TrackMate Algorithms
 description: Description of the algorithms shipped in TrackMate.
+usemathjax: true
 ---
 
 This page documents the current components of [TrackMate](/plugins/trackmate). TrackMate has a modular design, meaning that it is made of different modules that each have a specific role. Developers can build their own module and re-used the other ones and the GUI to achieve a quick development. The module types are (in the order you meet them when executing the plugin):

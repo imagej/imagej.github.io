@@ -1,6 +1,7 @@
 ---
 mediawiki: Rand_error
 title: Rand error
+usemathjax: true
 ---
 
 The {% include wikipedia title='Rand index' text='Rand index'%} is a well-known measure of the similarity between two data clusterings[^1]. Recently, it has been proposed as a **measure of segmentation performance**, since a segmentation can be regarded as a clustering of pixels[^2]. More formally, define a segmentation as an integer-valued labeling of an image. Each object in a segmentation consists of a set of pixels sharing a common label.

@@ -3,6 +3,7 @@ mediawiki: Level_Sets
 title: Level Sets
 categories: [Uncategorized]
 artifact: sc.fiji:level_sets
+usemathjax: true
 ---
 
 <img src="/media/plugins/ls.2b.progress.png" width="300"/>

@@ -2,6 +2,7 @@
 mediawiki: Clojure_Scripting
 title: Clojure Scripting
 section: Extend:Scripting:Languages
+usemathjax: true
 ---
 
 {% include wikipedia title='Clojure' text='Clojure'%} is a dialect of the {% include wikipedia title='Lisp (programming language)' text='Lisp programming language'%}. Clojure is a general-purpose programming language with an emphasis on functional programming.

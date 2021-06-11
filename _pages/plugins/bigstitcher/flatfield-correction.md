@@ -1,6 +1,7 @@
 ---
 mediawiki: BigStitcher_Flatfield_correction
 title: BigStitcher Flatfield correction
+usemathjax: true
 ---
 
 ### Overview

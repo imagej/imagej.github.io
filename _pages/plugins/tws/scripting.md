@@ -1,6 +1,7 @@
 ---
 mediawiki: Scripting_the_Trainable_Weka_Segmentation
 title: Scripting the Trainable Weka Segmentation
+usemathjax: true
 ---
 
 [Scripting](/scripting/script-editor) is one of the reasons Fiji is so powerful, and the Trainable Weka Segmentation library (that includes the [ Trainable Weka Segmentation plugin](/plugins/tws)) is one of the best examples for scriptable Fiji components.

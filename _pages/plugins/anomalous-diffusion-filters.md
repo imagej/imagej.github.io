@@ -2,6 +2,7 @@
 mediawiki: Anomalous_Diffusion_Filters
 title: Anomalous Diffusion Filters
 categories: [Uncategorized]
+usemathjax: true
 ---
 
 

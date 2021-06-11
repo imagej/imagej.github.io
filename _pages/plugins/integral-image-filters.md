@@ -2,6 +2,7 @@
 mediawiki: Integral_Image_Filters
 title: Integral Image Filters
 categories: [Filtering,Integral Image]
+usemathjax: true
 ---
 
 

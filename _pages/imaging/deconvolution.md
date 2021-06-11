@@ -2,6 +2,7 @@
 title: Deconvolution
 section: Learn:Scientific Imaging
 nav-links: true
+usemathjax: true
 ---
 
 {% include wikipedia title='Deconvolution' text='Deconvolution'%} corrects the systematic error of blur (loss of contrast in smaller features) in optical systems such as fluorescence microscopy images.

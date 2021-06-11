@@ -4,6 +4,7 @@ title: Trainable Weka Segmentation
 categories: [Segmentation,Machine Learning]
 artifact: sc.fiji:Trainable_Segmentation
 doi: 10.1093/bioinformatics/btx180
+usemathjax: true
 ---
 
 {% include img align="center" name="fig:Trainable Weka Segmentation pipeline overview." src="tws-pipeline" width="600px" %}

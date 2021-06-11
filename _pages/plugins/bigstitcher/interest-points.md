@@ -1,6 +1,7 @@
 ---
 mediawiki: BigStitcher_Interest_points
 title: BigStitcher Interest points
+usemathjax: true
 ---
 
 ## Overview

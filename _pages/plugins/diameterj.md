@@ -2,6 +2,7 @@
 mediawiki: DiameterJ
 title: DiameterJ
 categories: [Analysis]
+usemathjax: true
 ---
 
 

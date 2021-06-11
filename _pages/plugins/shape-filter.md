@@ -2,6 +2,7 @@
 mediawiki: Shape_Filter
 title: Shape Filter
 categories: [Uncategorized]
+usemathjax: true
 ---
 
 
