@@ -12,7 +12,7 @@ release-date : 2019
 license-url: /licensing/gpl
 license-label: GPLv3
 
-team-leads: Laurent Thomas | mailto:l.thomas@acquifer.de
+team-founders: Laurent Thomas, Jochen Gehrig
 ---
 
 <img src="/media/plugins/multi-template-matching-montagegui.png" width="800"/>
