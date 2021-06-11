@@ -11,7 +11,7 @@ release-date : 2019
 license-url: /licensing/bsd
 license-label: BSD-2
 
-team-leads: Laurent Thomas | mailto:l.thomas@acquifer.de
+team-founders: Laurent Thomas, Jochen Gehrig
 ---
 
 # New versions
