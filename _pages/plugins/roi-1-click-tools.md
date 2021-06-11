@@ -3,6 +3,7 @@ title: Roi 1-click tools
 name: Roi 1-click tools
 description: Annotation with ROIs of predefined dimensions
 categories: [Image Annotation]
+icon: /media/icons/roi_click_tools.svg
 
 source-url: https://github.com/LauLauThom/Fiji-RoiClickTools
 release-date : 2019
