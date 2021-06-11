@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Tomancak
 title: Pavel Tomancak
 name: Pavel Tomancak
 honorific: Godfather of Fiji
