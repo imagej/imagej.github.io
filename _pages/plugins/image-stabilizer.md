@@ -4,7 +4,7 @@ title: Image Stabilizer
 categories: [Registration]
 ---
 
-{% include info-box software='ImageJ' name='Image Stabilizer' maintainer='[Christophe Leterrier](mailto:christophe_dot_leterrier_at_gmail_dot_com)' author='[Kang Li](mailto:kangli_at_cs_dot_cmu_dot_edu) & [Steven Kang](mailto:skang_at_andrew_dot_cmu_dot_edu)' filename=' [Image\_Stabilizer.class](http://www.cs.cmu.edu/~kangli/code/Image_Stabilizer.class) and [Image\_Stabilizer\_Log\_Applier.class](http://www.cs.cmu.edu/~kangli/code/Image_Stabilizer_Log_Applier.class)' source=' [Image\_Stabilizer.java](http://www.cs.cmu.edu/~kangli/code/Image_Stabilizer.java) and [Image\_Stabilizer\_Log\_Applier.java](http://www.cs.cmu.edu/~kangli/code/Image_Stabilizer_Log_Applier.java)' released='07/02/2008' latest-version='06/12/2009' status='unknown' category='Registration' website='http://www.cs.cmu.edu/\~kangli/code/Image\_Stabilizer.html' %}
+{% include info-box software='ImageJ' name='Image Stabilizer' maintainer='[Christophe Leterrier](mailto:christophe_dot_leterrier_at_gmail_dot_com)' author='[Kang Li](mailto:kangli_at_cs_dot_cmu_dot_edu) & [Steven Kang](mailto:skang_at_andrew_dot_cmu_dot_edu)' filename=' [Image\_Stabilizer.class](http://www.cs.cmu.edu/~kangli/code/Image_Stabilizer.class) and [Image\_Stabilizer\_Log\_Applier.class](http://www.cs.cmu.edu/~kangli/code/Image_Stabilizer_Log_Applier.class)' source=' [Image\_Stabilizer.java](http://www.cs.cmu.edu/~kangli/code/Image_Stabilizer.java) and [Image\_Stabilizer\_Log\_Applier.java](http://www.cs.cmu.edu/~kangli/code/Image_Stabilizer_Log_Applier.java)' released='07/02/2008' latest-version='06/12/2009' status='unknown' category='Registration' website='http://www.cs.cmu.edu/~kangli/code/Image_Stabilizer.html' %}
 
 ## What does it do?
 
@@ -14,9 +14,9 @@ This plugin stabilizes jittery image stacks using the Lucas-Kanade algorithm. It
 
 ## How does it work?
 
-It uses the currently shown slice in an image stack as the initial reference, or "template"; It estimates the geometrical transformation needed to best align each of the other slices with the "template". The estimation and alignment are performed using the Lucas-Kanade algorithm; Once a slice is aligned, the "template" will be updated on the fly using the formula: new\_template = a \* old\_template + (1 - a) \* newly\_aligned\_slice, where "a" is the "template update coefficient" that can be adjusted when the plugin is run.
+It uses the currently shown slice in an image stack as the initial reference, or "template"; It estimates the geometrical transformation needed to best align each of the other slices with the "template". The estimation and alignment are performed using the Lucas-Kanade algorithm; Once a slice is aligned, the "template" will be updated on the fly using the formula: `new_template = a * old_template + (1 - a) * newly_aligned_slice`, where `a` is the "template update coefficient" that can be adjusted when the plugin is run.
 
-Hint: To process very large image stacks, import the stack with the "Use Virtual Stack" option enabled. The plugin will prompt you for an output directory to store the stabilized image sequence.
+{% include notice icon="tip" content="To process very large image stacks, import the stack with the "Use Virtual Stack" option enabled. The plugin will prompt you for an output directory to store the stabilized image sequence." %}
 
 ## Change log
 
@@ -36,7 +36,7 @@ Hint: To process very large image stacks, import the stack with the "Use Virtual
 
 2009/01/11: The stabilization process can be interrupted by pressing 'ESC' or by closing the image
 
-2009/01/20: Fixed a runtime error when the user does not select the Log\_Transformation\_Coefficients checkbox (thanks to Nico Stuurman at UCSF)
+2009/01/20: Fixed a runtime error when the user does not select the `Log_Transformation_Coefficients` checkbox (thanks to Nico Stuurman at UCSF)
 
 2009/06/12: Fixed a bug that affected 32-bit float input images (thanks to Derek Bailey)
 

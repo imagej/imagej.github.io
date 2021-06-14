@@ -415,7 +415,7 @@ For more information, please browse the [Javadoc of the Feature class](http://ja
 
 ## Writing out movie files with JavaCV
 
-[JavaCV](https://github.com/bytedeco/javacv) is a Java wrapper around OpenCV and FFMPEG. You will have to unpack the libraries into `ImageJ.app/lib/`<platform>`/` (or `Fiji.app/lib/`<platform>`/`) to let JavaCV find the native libraries (e.g. unpack ffmpeg-macosx-x86\_64.jar's `.dylib` files directly into `ImageJ.app/lib/macosx/`) **before** starting ImageJ/Fiji.
+[JavaCV](https://github.com/bytedeco/javacv) is a Java wrapper around OpenCV and FFMPEG. You will have to unpack the libraries into `ImageJ.app/lib/`<platform>`/` (or `Fiji.app/lib/`<platform>`/`) to let JavaCV find the native libraries (e.g. unpack `ffmpeg-macosx-x86_64.jar`'s `.dylib` files directly into `ImageJ.app/lib/macosx/`) **before** starting ImageJ/Fiji.
 
 #### Beanshell
 

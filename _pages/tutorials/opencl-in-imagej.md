@@ -331,4 +331,4 @@ Image inImg = LOCI.openLOCIFloatType( file.getPath(), arrayContainerFactory );
 
 `ArrayContainerFactory.setNIOUse(true)` ensures that NIO backed arrays are used. The reason for using NIO backed arrays rather than Java native arrays is due to optimal data sharing between Java and native code as well as for improved throughput between the host and device. Both CUDA and OpenCL benefit from the use of host arrays that are not paged to disk. This type of memory is referred to as paged-locked memory. Section 5.3.1 of "CUDA Programming Guide Version 3.0" has more specific information on this detail.
 
-Note: OpenCL may use page-locked host memory when the "CL\_MEM\_ALLOC\_HOST\_PTR" flag is set.
+Note: OpenCL may use page-locked host memory when the `CL_MEM_ALLOC_HOST_PTR` flag is set.

@@ -309,7 +309,7 @@ For extra brownie points, do not hardcode the extension/plugin mapping (like Han
 
 ## Alpha shapes / concave hull / other Graph Theory algorithms
 
-Fiji already contains a [Delaunay\_Voronoi](/plugins/delaunay-voronoi) plugin. The purpose of this project is to implement more graph algorithms. Most likely, this will involve designing a common framework for graph theory as applied to two- or higher-dimensional graphs.
+Fiji already contains a [Delaunay_Voronoi](/plugins/delaunay-voronoi) plugin. The purpose of this project is to implement more graph algorithms. Most likely, this will involve designing a common framework for graph theory as applied to two- or higher-dimensional graphs.
 
 ## Support for storing ROIs in TIFF tag fields
 
@@ -325,7 +325,7 @@ One way to achieve that would be by using the [Free Java Media Framework](http:/
 
 I have collected near 15 new histogram segmentation methods that would be better put under a single interface together with others already available.
 
-Note: this is more or less implemented in the Auto\_Threshold and Auto\_Local\_Threshold plugins.--{% include person id='landinig' %} 14:47, 29 November 2009 (CET)
+Note: this is more or less implemented in the `Auto_Threshold` and `Auto_Local_Threshold` plugins.--{% include person id='landinig' %} 14:47, 29 November 2009 (CET)
 
 ## Virtual microscope-like image viewer
 

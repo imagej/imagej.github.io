@@ -21,15 +21,9 @@ The SPIM registration is a piece of software that undergoes ongoing development.
 
 -   [Original SPIM registration pipeline](#original-spim-registration-pipeline) - contains the most detailed description of the cluster pipeline using *SPIM registration* plugins. If you do not have much HPC/Linux experience start here.
 
-<!-- -->
-
 -   [NEW PIPELINE](#new-pipeline) - also uses *SPIM registration* plugins and introduces the master file, less verbose requiring some experience with command line and HPC.
 
-<!-- -->
-
 -   [New Multiview Reconstruction pipeline](#new-multiview-reconstruction-pipeline) - builds on *Multiview Reconstruction* plugins, uses master file, written for experts
-
-<!-- -->
 
 -   **[Automated workflow for parallel Multiview Reconstruction](/plugins/automated-workflow-for-parallel-multiview-reconstruction)** - automated workflow using the workflow manager **[Snakemake](https://bitbucket.org/johanneskoester/snakemake/wiki/Home.)**
 
@@ -41,7 +35,7 @@ So, if you are new read a bit of the chapter 1 (original pipeline) to get famili
 
 ### Saving data on Lighsheet Z.1
 
-The Lightsheet Z.1 data are saved into the proprietary Zeiss file format **.czi**. Zeiss is working with [Bioformats](http://loci.wisc.edu/software/bio-formats) to make the .czi files compatible with Open Source platforms including Fiji. At the moment Fiji can only open .czi files that are saved as a single file per view where the left and right illumination images have been fused into one image inside the Zeiss ZEN software. This situation is going to change, for now, if you want to process the data with Fiji, save them in that way (TBD).
+The Lightsheet Z.1 data are saved into the proprietary Zeiss file format `*.czi`. Zeiss is working with [Bio-Formats](http://loci.wisc.edu/software/bio-formats) to make the `.czi` files compatible with Open Source platforms including Fiji. At the moment Fiji can only open `.czi` files that are saved as a single file per view where the left and right illumination images have been fused into one image inside the Zeiss ZEN software. This situation is going to change, for now, if you want to process the data with Fiji, save them in that way (TBD).
 
 ### Getting familiar with Linux command line environment
 
@@ -55,7 +49,7 @@ Please note that currently the Zeiss processing computer does not support data t
 
 ### Installing Fiji on the cluster
 
-*Note: in case you use the MPI-CBG cluster 'madmax' you might spare yourself some minutes and just hijack Pavel's well maintained Fiji installation. Just skipt the Fiji installation section and do not change the path to the Fiji executables (/sw/people/tomancak/packages/...) used in the example scripts shown below.)*
+{% include notice icon='note' content="In case you use the MPI-CBG cluster 'madmax' you might spare yourself some minutes and just hijack Pavel's well maintained Fiji installation. Just skip the Fiji installation section and do not change the path to the Fiji executables (`/sw/people/tomancak/packages/...`) used in the example scripts shown below.)" %}
 
 Change to a directory where you have sufficient privileges to install software.
 
@@ -78,7 +72,7 @@ Change to the newly created Fiji-app directory and [update](/plugins/updater#com
 
     ./ImageJ-linux64 --update update
 
-*Note: The output that follows may have some warnings and errors, but as long as it says somewhere Done: Checksummer and Done: Downloading... everything should be fine.*
+{% include notice icon="note" content="The output that follows may have some warnings and errors, but as long as it says somewhere \"Done: Checksummer\" and \"Done: Downloading...\" everything should be fine." %}
 
 Done, you are ready to use Fiji on the cluster.
 
@@ -108,7 +102,7 @@ In this example we have 5 angles. The files displayed show the first time point 
     29072013_HisRuby_Stock1(4).czi
     ...
 
-Now we can rename the files using the following shell script. Make a script with the name **rename-zeis-files.sh** Modify the **angles**, the **last index** and **source pattern**.
+Now we can rename the files using the following shell script. Make a script with the name `rename-zeis-files.sh` Modify the `angles`, the `last index` and `source pattern`.
 
     #num_angles=5
     angles=( 320 32 104 176 248 )
@@ -183,9 +177,9 @@ The script will return you the specific time points that are missing or the time
 
 ## Saving data as tif
 
-As a first step we will open the .czi files and save them as **.tif**. This is necessary because Fiji's bead based registration currently cannot open the .czi files. Opening hundreds of files several GB each sequentially and re-saving them as tif may take a long time on a single computer. We will use the cluster to speed-up that operation significantly.
+As a first step we will open the .czi files and save them as `.tif`. This is necessary because Fiji's bead based registration currently cannot open the .czi files. Opening hundreds of files several GB each sequentially and re-saving them as tif may take a long time on a single computer. We will use the cluster to speed-up that operation significantly.
 
-*Note: The Lustre filesystem on MPI-CBG cluster is made to be able to handle such situation, where hundreds of nodes are going to simultaneously read and write big files to it. If your cluster is using a Network File System (NFS) this may not be such a good idea...*
+{% include notice icon="note" content="The Lustre filesystem on MPI-CBG cluster is made to be able to handle such situation, where hundreds of nodes are going to simultaneously read and write big files to it. If your cluster is using a Network File System (NFS) this may not be such a good idea..." %}
 
 We have an 240 time-point, 3 view dataset (angles 325, 235 and 280) in a directory
 
@@ -199,12 +193,12 @@ We have an 240 time-point, 3 view dataset (angles 325, 235 and 280) in a directo
     spim_TL1_Angle325.czi
     ...
 
-we create a subdirectory **jobs/resaving** and change to it
+we create a subdirectory `jobs/resaving` and change to it
 
     mkdir -p jobs/resaving
     cd jobs/resaving
 
-Now we create a bash script **create-resaving-jobs** that will generate the so called job files that will be submitted to the cluster nodes (I use *nano* but any editor will do. Using nano type **nano create-resaving-jobs** and cut&past the script from below into that file.)
+Now we create a bash script create-resaving-jobs` that will generate the so called job files that will be submitted to the cluster nodes (I use `nano` but any editor will do. Using nano type `nano create-resaving-jobs` and cut&paste the script from below into that file.)
 
     #!/bin/bash
     dir="/projects/tomancak_lightsheet/Tassos"
@@ -223,17 +217,19 @@ Now we create a bash script **create-resaving-jobs** that will generate the so c
             chmod a+x "$job"
     done
 
-We customize the script by editing the parameters inside it. One can think of it as a template that is used as a starting point to adapt to the particular situation. For instance we can change the directory **dir** where the data are to be found, the place where the output will go **jobs**, the number of time-points to process **for i in \`seq 1 240\`** and most importantly the angle to be processed **-Dangle=280**. The strategy we follow here is to create jobs to process one angle at a time for all available time-points.
+We customize the script by editing the parameters inside it. One can think of it as a template that is used as a starting point to adapt to the particular situation. For instance we can change the directory `dir` where the data are to be found, the place where the output will go `jobs`, the number of time-points to process `for i in $(seq 1 240)` and most importantly the angle to be processed `-Dangle=280`. The strategy we follow here is to create jobs to process one angle at a time for all available time-points.
 
-In order to be able to run this (and other scripts we will create further below), you might have to execute the following command: **chmod a+x create-resaving-jobs**. Finally execute the script by calling **./create-resaving-jobs** (you will have to be in the folder containing the script).
+In order to be able to run this (and other scripts we will create further below), you might have to execute the following command: `chmod a+x create-resaving-jobs`. Finally execute the script by calling `./create-resaving-jobs` (you will have to be in the folder containing the script).
 
-This will generate 240 **resave-<number>.job** files in the current directory
+This will generate 240 `resave-<number>.job` files in the current directory
 
-`/projects/tomancak_lightsheet/Tassos/jobs/resaving/resave-1.job`  
-`/projects/tomancak_lightsheet/Tassos/jobs/resaving/resave-2.job`  
-`/projects/tomancak_lightsheet/Tassos/jobs/resaving/resave-3.job`  
-`...`  
-`/projects/tomancak_lightsheet/Tassos/jobs/resaving/resave-240.job`
+```
+/projects/tomancak_lightsheet/Tassos/jobs/resaving/resave-1.job
+/projects/tomancak_lightsheet/Tassos/jobs/resaving/resave-2.job
+/projects/tomancak_lightsheet/Tassos/jobs/resaving/resave-3.job
+...
+/projects/tomancak_lightsheet/Tassos/jobs/resaving/resave-240.job
+```
 
 each one of those files looks like this
 
@@ -243,7 +239,7 @@ each one of those files looks like this
     -Dtimepoint=38 -Dangle=280 -- --no-splash
      /projects/tomancak_lightsheet/Tassos/jobs/resaving/resaving.bsh
 
-running this job a any cluster node will launch fiji in a so-called virtual frame buffer (the nodes don't have graphics capabilities enabled but we can simulate that) and then inside Fiji it will launch a **Beanshell script** called **resaving.bsh** passing it thee parameters : the directory (/projects/tomancak\_lightsheet/Tassos), the time-point (38) and the angle (280).
+running this job a any cluster node will launch fiji in a so-called virtual frame buffer (the nodes don't have graphics capabilities enabled but we can simulate that) and then inside Fiji it will launch a **BeanShell script** called `resaving.bsh` passing it thee parameters : the directory (`/projects/tomancak_lightsheet/Tassos`), the time-point (38) and the angle (280).
 
 Lets create that script in the current directory
 
@@ -267,9 +263,9 @@ Lets create that script in the current directory
     /* shutdown */
     runtime.exit(0);
 
-*Note: The t\_begin=1000 t\_end=1000 are parameters passed to Bioformats Opener. This is a hack. The .czi files think that they are part of a long time-lapse despite the fact that they were saved as single, per angle .czi. In order to trick bioformats into opening just the timepoint which contains actual data we set the time coordinate way beyond the actual length of the time-course (in this case 240). This results in Bioformats importing the "last" timepoint in the series which contains the data. This will change!*
+{% include notice icon='note' content="The `t_begin=1000 t_end=1000` are parameters passed to Bio-Formats Importer. This is a hack. The `.czi` files think that they are part of a long time-lapse despite the fact that they were saved as single, per angle `.czi.` In order to trick bioformats into opening just the timepoint which contains actual data we set the time coordinate way beyond the actual length of the time-course (in this case 240). This results in Bio-Formats importing the \"last\" timepoint in the series which contains the data. This will change!" %}
 
-Now we need to create yet another bash script (last one) called **submit-jobs**
+Now we need to create yet another bash script (last one) called `submit-jobs`
 
     #!/bin/bash
 
@@ -278,20 +274,20 @@ Now we need to create yet another bash script (last one) called **submit-jobs**
         bsub -q short -n 1 -R span[hosts=1] -o "out.%J" -e "err.%J" ${1}/$file
     done
 
-This will look into the current directory for all files ending with **.job** (we created them before) and submit all of them to the cluster with the **bsub** command.
+This will look into the current directory for all files ending with `.job` (we created them before) and submit all of them to the cluster with the `bsub` command.
 
     bsub -q short -n 1 -R span[hosts=1] -o "out.123345" -e "err.123456" ./resave-1.job
 
--   *-q short* selects the queue to which the job will be submitted (this one allows jobs that run up to 4 hours on MPI-CBG cluster).
--   *-n 1* specifies how many processors will the job request, in this case just one (we will only open and save one file)
--   -R span\[hosts=1\] says that if we were requesting more than one processor, they would be on a single physical machine (host).
--   *-o "out.%J"* will create output file called out.<job_number> in the current directory
--   *-e "err.%J"* will send errors to the file called err.<job_number> in the current directory
--   *${1}/$file* will evaluate to ./resave-<number>.job i.e. the bash script that the cluster node will run - see above
+-   `-q short` selects the queue to which the job will be submitted (this one allows jobs that run up to 4 hours on MPI-CBG cluster).
+-   `-n 1` specifies how many processors will the job request, in this case just one (we will only open and save one file)
+-   `-R span[hosts=1]` says that if we were requesting more than one processor, they would be on a single physical machine (host).
+-   `-o "out.%J"` will create output file called `out.<job_number>` in the current directory
+-   `-e "err.%J"` will send errors to the file called `err.<job_number>` in the current directory
+-   `${1}/$file` will evaluate to `./resave-<number>.job` i.e. the bash script that the cluster node will run - see above
 
-Lets recapitulate. We have created **create-resaving-jobs** that, when executed, creates many **resave-<number>.job** files. Those are going to be submitted to the cluster using **submit-jobs** and on the cluster nodes will run **resaving.bsh** using Fiji and the specified parameters.
+Lets recapitulate. We have created `create-resaving-jobs` that, when executed, creates many `resave-<number>.job` files. Those are going to be submitted to the cluster using `submit-jobs` and on the cluster nodes will run `resaving.bsh` using Fiji and the specified parameters.
 
-So lets run it. We need to issue the following command
+So let's run it. We need to issue the following command
 
     ./submit-jobs .
 
@@ -313,15 +309,17 @@ We can monitor running jobs with
      445493  tomanca RUN   short      madmax      n18         *ave-4.job May  1 11:36
      445494  tomanca RUN   short      madmax      n21         *ave-5.job May  1 11:36
 
-or whatever your submission system offers. At the end of the run we will have a lot of **err.<job_number>** and **out.<job_number>** files in the working directory.
+or whatever your submission system offers. At the end of the run we will have a lot of `err.<job_number>` and `out.<job_number>` files in the working directory.
 
-`err.445490`  
-`out.445490`  
-`err.445491`  
-`out.445491`  
-`....`
+```
+err.445490
+out.445490
+err.445491
+out.445491
+....
+```
 
-The err.\* are hopefully empty. The out.\* contain Fiji log output if any. In this case it should look something like [this](Media_resaving_output.pdf). Most importantly in the directory /projects/tomancak\_lightsheet/Tassos we now have for each .czi file a corresponding .tif file which was the goal of the whole exercise
+The `err.*` are hopefully empty. The `out.*` contain Fiji log output if any. In this case it should look something like [this](Media_resaving_output.pdf). Most importantly in the directory `/projects/tomancak_lightsheet/Tassos` we now have for each `.czi` file a corresponding `.tif` file which was the goal of the whole exercise
 
      ls *Angle280*
      spim_TL1_Angle280.czi
@@ -332,11 +330,11 @@ The err.\* are hopefully empty. The out.\* contain Fiji log output if any. In th
      spim_TL3_Angle280.tif
      ...
 
-We can remove the .czi files (rm \*.czi) as we do not need them anymore (but check some of the tifs first!).
+We can remove the `.czi` files (`rm *.czi`) as we do not need them anymore (but check some of the tifs first!).
 
 Now we must repeat the whole procedure for the other two angles (325 and 235). Open create-resaving-jobs and change 280 to 325 and follow the recipe again. There are of course ways to automate that.
 
-On our cluster powered by the Lustre filesystem the resaving operation takes only minutes. Imagine what is happening - up to 480 processors are accessing the file system reading .czi files and immediately resaving it to that very same filesystem as tif - all at the same time. The files are 1.8GB each. Beware: this may not work at all on lesser filesystems - the Lustre is made for this.
+On our cluster powered by the Lustre filesystem the resaving operation takes only minutes. Imagine what is happening - up to 480 processors are accessing the file system reading `.czi` files and immediately resaving it to that very same filesystem as tif - all at the same time. The files are 1.8GB each. Beware: this may not work at all on lesser filesystems - the Lustre is made for this.
 
 ## Registration
 
@@ -344,11 +342,11 @@ SPIM registration consists of **within time-point** registration of the views fo
 
 ### Bead-based multi-view registration
 
-The first real step in the SPIMage processing pipeline, after re-saving as .tif, is to register the views within each timepoint. We will use for that the bead based registration plug-in in Fiji. The principle of the plug-in are described [here](/plugins/spim-registration/method) while the parameters are discussed [here](/plugins/spim-bead-registration).
+The first real step in the SPIMage processing pipeline, after re-saving as `.tif,` is to register the views within each timepoint. We will use for that the bead based registration plug-in in Fiji. The principle of the plug-in are described [here](/plugins/spim-registration/method) while the parameters are discussed [here](/plugins/spim-bead-registration).
 
 This description focuses on cluster processing and is less verbose, for details see section on [resaving](/plugins/spim-registration/on-cluster#saving-data-as-tif) as the principles are the same.
 
-In a directory jobs/registration create bash script **create-registration-jobs**
+In a directory jobs/registration create bash script `create-registration-jobs`
 
     #!/bin/bash
     dir="/projects/tomancak_lightsheet/Tassos"
@@ -367,7 +365,7 @@ In a directory jobs/registration create bash script **create-registration-jobs**
             chmod a+x "$job"
     done
 
-Run it to create 240 **registration-<number>.job** bash scripts
+Run it to create 240 `registration-<number>.job` bash scripts
 
     #!/bin/bash
     xvfb-run -a /sw/people/tomancak/packages/Fiji.app/ImageJ-linux64
@@ -375,7 +373,7 @@ Run it to create 240 **registration-<number>.job** bash scripts
     -Dangles=325,280,235,10,190 -- --no-splash
     /projects/tomancak_lightsheet/Tassos/jobs/registration_integral_img/registration.bsh
 
-which will run **registration.bsh** using Fiji
+which will run `registration.bsh` using Fiji
 
     import ij.IJ;
     import ij.ImagePlus;
@@ -408,7 +406,7 @@ which will run **registration.bsh** using Fiji
     /* shutdown */
     runtime.exit(0);
 
-on a cluster node when submitted by **submit-jobs**
+on a cluster node when submitted by `submit-jobs`
 
     #!/bin/bash
 
@@ -419,9 +417,9 @@ on a cluster node when submitted by **submit-jobs**
 
 Some tips and tricks
 
--   the bead based registration code is **NOT** multi-threaded, thus 1 processor is sufficient (bsub -n 1)
+-   the bead based registration code is **NOT** multi-threaded, thus 1 processor is sufficient (`bsub -n 1`)
 -   the registration needs at least as much memory on the node to be able to simultaneously open all views (3x1.8GB here). Since our nodes have 128GB of shared memory it is not really an issue here, we can run registration using 12 cores on one machine at the same time.
--   the crucial parameter for bead based registation is the "channel\_0\_threshold=0.0069"; determine it on a local workstation using Fiji GUI. Clusters typically do not have graphical interface.
+-   the crucial parameter for bead based registation is the `channel_0_threshold=0.0069`; determine it on a local workstation using Fiji GUI. Clusters typically do not have graphical interface.
 
 ### Time-lapse registration
 
@@ -438,7 +436,7 @@ It is a very bad idea to execute anything other then submitting jobs on a cluste
 
 We are now on node 27 and can use the filesystem as if we were on the head node (not every queuing system will enable this).
 
-We create a bash script **timelapse.interactive**
+We create a bash script `timelapse.interactive`
 
     #!/bin/bash
     xvfb-run -a /sw/people/tomancak/packages/Fiji.app/ImageJ-linux64 \
@@ -446,7 +444,7 @@ We create a bash script **timelapse.interactive**
              -Dangles=325,280,235 \
               -- --no-splash ./time-lapse.bsh
 
-It calls **time-lapse.bsh** that will run fiji with the appropriate parameters for timelapse registration plug-in
+It calls `time-lapse.bsh` that will run fiji with the appropriate parameters for timelapse registration plug-in
 
     import ij.IJ;
     import java.lang.Runtime;
@@ -480,7 +478,7 @@ It calls **time-lapse.bsh** that will run fiji with the appropriate parameters f
     /* shutdown */
     runtime.exit(0);
 
-Executing the timelapse.interactive
+Executing the `timelapse.interactive`
 
     ./timelapse.interactive
 
@@ -492,13 +490,13 @@ We can just as well run the timelapse registration from the head node by issuing
 
     bsub -q short -n 1 -R span[hosts=1] -o "out.%J" -e "err.%J" ./timelapse.interactive
 
-In this case the output will go into out.<job_number> file in the working directory.
+In this case the output will go into `out.<job_number>` file in the working directory.
 
 Tips and tricks
 
--   The crucial parameter of timelapse registration is "reference\_timepoint=709". It could be either a timepoint with low registration error or a timepoint in the middle of the time series.
--   It si important to specify the z\_resolution in timelapse.bsh ("specify\_calibration\_manually xy\_resolution=1.000 z\_resolution=3.934431791305542" ), otherwise the plugin will open every raw data file to read the metadata which can take quite long.
--   the xy\_resolution can be set to 1 since the plugin only uses the ratio between xy and z
+-   The crucial parameter of timelapse registration is `reference_timepoint=709`. It could be either a timepoint with low registration error or a timepoint in the middle of the time series.
+-   It is important to specify the `z_resolution` in `timelapse.bsh` (`specify_calibration_manually xy_resolution=1.000 z_resolution=3.934431791305542`), otherwise the plugin will open every raw data file to read the metadata which can take quite long.
+-   the `xy_resolution` can be set to 1 since the plugin only uses the ratio between xy and z
 -   For very long time-series where the sample potentially jumps in the field of view it may be necessary to register several segments of the series separately.
 
 ## Fusion
@@ -509,7 +507,7 @@ In multi-view SPIM imaging fusion means combination of registered views into a s
 
 After registration we need to combine the views into a single output image. The content based fusion algorithm in Fiji solves that problem by evaluating local image entropy and weighing differentially the information in areas where several views overlap. For details see [here](/plugins/multi-view-fusion).
 
-As before we create a directory jobs/fusion and in there bash script **create-fusion-jobs**
+As before we create a directory jobs/fusion and in there bash script `create-fusion-jobs`
 
     #!/bin/bash
     dir="/projects/tomancak_lightsheet/Tassos/"
@@ -530,7 +528,7 @@ As before we create a directory jobs/fusion and in there bash script **create-fu
             chmod a+x "$job"
     done
 
-that will generate many **fusion-<number>.job** scripts
+that will generate many `fusion-<number>.job` scripts
 
     #!/bin/bash
     xvfb-run -a /sw/people/tomancak/packages/Fiji.app/ImageJ-linux64 -Xms100g -Xmx100g
@@ -538,7 +536,7 @@ that will generate many **fusion-<number>.job** scripts
     -Dreference=120 -Dx=0 -Dy=0 -Dz=0 -Dw=1936 -Dh=1860 -Dd=1868 -- --no-splash
     /projects/tomancak_lightsheet/Tassos/jobs/fusion/fusion.bsh
 
-Each of these will run **fusion.bsh**
+Each of these will run `fusion.bsh`
 
     import ij.IJ;
     import java.lang.Runtime;
@@ -579,7 +577,7 @@ Each of these will run **fusion.bsh**
     /* shutdown */
     runtime.exit(0);
 
-on a cluster node when submitted by **submit-jobs**
+on a cluster node when submitted by `submit-jobs`
 
     #!/bin/bash
 
@@ -592,9 +590,9 @@ Tips and tricks:
 
 -   Fusion is memory intensive no matter what.
 -   The content based fusion will necessarily degrade image quality. Thus it makes only sense to fuse the image for visualization purposes such as 3D rendering.
--   It is not necessary or even possible to 3D render the full resolution data. Thus we use the "downsample\_output=4" option to make it 4 times smaller.
+-   It is not necessary or even possible to 3D render the full resolution data. Thus we use the `downsample_output=4` option to make it 4 times smaller.
 -   The downsampling also reduces the storage requirements for the fused data which can be unrealistic for full resolution data (tens of terabytes).
--   The fusion code is multi-threaded, therefore we request 12 processors on one host "bsub -n 12 -R span\[hosts=1\]" and request as much memory as possible "fiji-linux64 -Xms100g -Xmx100g". Requesting 12 hosts guarantees all the memory on a single node is available for the job (128GB). It may be difficult to get that when others are running small, single processor jobs on the cluster.
+-   The fusion code is multi-threaded, therefore we request 12 processors on one host `bsub -n 12 -R span[hosts=1]` and request as much memory as possible `fiji-linux64 -Xms100g -Xmx100g`. Requesting 12 hosts guarantees all the memory on a single node is available for the job (128GB). It may be difficult to get that when others are running small, single processor jobs on the cluster.
 -   The integral image mediated weightening is much faster than the traditional gauss method, for large images it may be the only option as one can also run out of 128GB of RAM with this data.
 
 ### Multiview deconvolution
@@ -620,18 +618,22 @@ The output of running the Apply external transformation will look like this:
 
 Pre-concatenating model:
 
-`3d-affine: (0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0)`  
-`Applying model to: spim_TL400_Angle1.tif.registration.to_400`  
-`Applying model to: spim_TL400_Angle2.tif.registration.to_400`  
-`Applying model to: spim_TL400_Angle3.tif.registration.to_400`  
-`Applying model to: spim_TL400_Angle4.tif.registration.to_400`  
-`Applying model to: spim_TL400_Angle5.tif.registration.to_400`  
-`Applying model to: spim_TL400_Angle6.tif.registration.to_400`
+```
+3d-affine: (0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0)
+Applying model to: spim_TL400_Angle1.tif.registration.to_400
+Applying model to: spim_TL400_Angle2.tif.registration.to_400
+Applying model to: spim_TL400_Angle3.tif.registration.to_400
+Applying model to: spim_TL400_Angle4.tif.registration.to_400
+Applying model to: spim_TL400_Angle5.tif.registration.to_400
+Applying model to: spim_TL400_Angle6.tif.registration.to_400
+```
 
-and the registration files *spim\_TL400\_Angle1.tif.registration.to\_400* in the *registration/* directory will now end with something like this:
+and the registration files `spim_TL400_Angle1.tif.registration.to_400` in the `registration/` directory will now end with something like this:
 
-`Previous model: (0.996656, 0.0014411004, 0.003138572, -5.4490294, -0.0019162297, 0.9955152, -8.5441023E-4, -81.664116, -5.4249633E-4, -2.910602E-4, 0.9978538, 10.278229)`  
-`Pre-concatenated model: (0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0)`
+```
+Previous model: (0.996656, 0.0014411004, 0.003138572, -5.4490294, -0.0019162297, 0.9955152, -8.5441023E-4, -81.664116, -5.4249633E-4, -2.910602E-4, 0.9978538, 10.278229)
+Pre-concatenated model: (0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0)
+```
 
 Now this looks elegant, but there are several caveats. The pre-concatenation of transformation models is not reversible (or at least not easily in the current code framework) and so before applying external transformation we recommend to archive the old, unmodified registration files. For example by packaging them to a tar archive
 
@@ -643,7 +645,7 @@ and decompressing in order to get to the original, unaltered transformation mode
 
 Second issue, AND IMPORTANT ONE. The new transformation (scaling) must be applied to every timepoint in the registered time-series INCLUDING the reference time-point. For good measure, it is also necessary to apply the transformation to the original non-time-series .registration files of the reference time-point ONLY. Don't ask me why... These two steps (pre-concatenating transformation models to reference time point just once) are really not clusterizable and so we recommend to do them manually in Fiji on a local machine and copy the modified registration files to the *registration/* directory on the cluster. Yes, it is clunky, but its better than nothing.
 
-Now we are ready for the cluster mediated deconvolution on the downscaled data. By now you should know the drill... Create a directory jobs/deconvolution and in there a bash script **create-deconvolution-jobs**
+Now we are ready for the cluster mediated deconvolution on the downscaled data. By now you should know the drill... Create a directory jobs/deconvolution and in there a bash script `create-deconvolution-jobs`
 
     #!/bin/bash
     dir="/projects/tomancak_lightsheet/Tassos"
@@ -664,7 +666,7 @@ Now we are ready for the cluster mediated deconvolution on the downscaled data. 
             chmod a+x "$job"
     done
 
-that will generate many **deconvolution-<number>.job** scripts
+that will generate many `deconvolution-<number>.job` scripts
 
     #!/bin/bash
     xvfb-run -a /sw/people/tomancak/packages/Fiji.app/ImageJ-linux64 -Xms100g -Xmx100g
@@ -672,9 +674,9 @@ that will generate many **deconvolution-<number>.job** scripts
     -Dx=36 -Dy=168 -Dz=282 -Dw=1824 -Dh=834 -Dd=810 -Diter=10 -- --no-splash
     /projects/tomancak_lightsheet/Tassos/jobs/deconvolution/deconvolution.bsh
 
-*Note the new parameter **iter** which specifies how many iterations of the multiview deconvolution we want to run. This should be determined empirically on a local GUI Fiji set-up.*
+*Note the new parameter `iter` which specifies how many iterations of the multiview deconvolution we want to run. This should be determined empirically on a local GUI Fiji set-up.*
 
-Each of the *deconvolution-<number>.job* scripts will run **deconvolution.bsh**
+Each of the *deconvolution-<number>.job* scripts will run `deconvolution.bsh`
 
     import ij.IJ;
     import java.lang.Runtime;
@@ -735,14 +737,14 @@ Each of the *deconvolution-<number>.job* scripts will run **deconvolution.bsh**
 
 Stuff that matters here are the following parameters:
 
--   **number\_of\_iterations=10** specifies the number of iterations (10 is a good guess)
--   **compute\_on=\[CPU (Java)\]** here we indicate that we want to use CPU
--   **compute=\[in 512x512x512 blocks\]** most likely we will have to compute in blocks unless we have really a lot of memory available.
--   **fiji.plugin.Multi\_View\_Deconvolution.psfSize = 31;** this parameter should be considered advanced for now, it specifies the size of the area used to extract the Point Spread Function (PSF) from the beads in the image. Default is 19.
+-   `number_of_iterations=10` specifies the number of iterations (10 is a good guess)
+-   `compute_on=[CPU (Java)]` here we indicate that we want to use CPU
+-   `compute=[in 512x512x512 blocks]` most likely we will have to compute in blocks unless we have really a lot of memory available.
+-   `fiji.plugin.Multi_View_Deconvolution.psfSize = 31;` this parameter should be considered advanced for now, it specifies the size of the area used to extract the Point Spread Function (PSF) from the beads in the image. Default is 19.
 
 otherwise the parameters are similar to content based fusion or constants.
 
-on a cluster node when submitted by **submit-jobs**
+on a cluster node when submitted by `submit-jobs`
 
     #!/bin/bash
 
@@ -758,7 +760,7 @@ Tips and tricks:
 -   The output deconvolved image will have extremely compressed dynamic range, i.e. will look pitch black upon opening. Set the min and max to 0.0 and 0.05 to see anything.
 -   The PSFs of the beads will become smaller (ideally points) but brighter.
 -   The image will appear much more noisy compared to content fused or raw data.
--   The **deconvolution.bsh** script by default downscales the images before deconvolution commences. If you want to do that do not forget to first downscale manually the reference time-point (as described - both the original and the timelapse registration versions), use it to define the crop area on a local machine and transfer the .registration and .registration.to\_<reference timepoint> files FOR THE REFERENCE TIME-POINT to the cluster.
+-   The **deconvolution.bsh** script by default downscales the images before deconvolution commences. If you want to do that do not forget to first downscale manually the reference time-point (as described - both the original and the timelapse registration versions), use it to define the crop area on a local machine and transfer the `.registration` and `.registration.to_<reference timepoint>` files FOR THE REFERENCE TIME-POINT to the cluster.
 -   In fact it is best to perform the entire deconvolution process of the reference time-point locally and transfer the results to the cluster. First of all its good to experiment with the number of iterations and to look at what the deconvolution does to the data. Second, since on the cluster we are applying the downscaling to ALL the time-points - this includes the reference to which we applied the transformation on our local machine (see tip above). Therefore the reference time-point ends up downscaled twice. If you don't get it - call me ;-).
 -   In order to deconvolve full resolution data, no need to do the previous step however the pre-concatenation macro MUST BE commented out in the deconvolution script. Otherwise things will get really weird!
 
@@ -776,13 +778,13 @@ The preparation phase of 3D rendering is a bit more complicated. We will use the
 
 2. Use the key commands to rotate the specimen into the position from which you want to 3D render it. *Note that the top slice with the lower z-index will be facing towards you when rendering in 3d Viewer.*
 
-3. Record the transform by pressing letter **E** on the keyboard. The transformation matrix will appear in the Fiji log window.
+3. Record the transform by pressing {% include key key="E" %}. The transformation matrix will appear in the Fiji log window.
 
-4. Copy the transform into the render.bsh script shown below into line 41 (read the comments if unsure).
+4. Copy the transform into the `render.bsh` script shown below into line 41 (read the comments if unsure).
 
-5. Press **enter** to apply the transformation to the stack.
+5. Press {% include key key="enter" %} to apply the transformation to the stack.
 
-6. Now use the rectangle tool to define a crop area that will include the specimen with minimal background. Write down the *x*,*y*coordinates *width* and *height* of the crop area and paste them into the render.bsh script (line 128). *Note: A more efficient way to capture the numbers is to start macro record before and simply copy and paste them from the macro recorder window.*
+6. Now use the rectangle tool to define a crop area that will include the specimen with minimal background. Write down the *x*,*y*coordinates *width* and *height* of the crop area and paste them into the `render.bsh` script (line 128). *Note: A more efficient way to capture the numbers is to start macro record before and simply copy and paste them from the macro recorder window.*
 
 7. Apply crop ({% include bc path="Image|Crop" %}).
 
@@ -796,7 +798,7 @@ The preparation phase of 3D rendering is a bit more complicated. We will use the
 
 12. Finally modify the dimensions of the Snapshot that the 3D VIewer takes to match the dimensions of the crop area (width and height) on line 161.
 
-We are ready to begin the cluster processing by creating our old friend, the **create-render-job** bash script in a directory jobs/3d\_rendering
+We are ready to begin the cluster processing by creating our old friend, the `create-render-job` bash script in a directory `jobs/3d_rendering`
 
     #!/bin/bash
     dir="/projects/tomancak_lightsheet/Tassos/"
@@ -816,13 +818,13 @@ We are ready to begin the cluster processing by creating our old friend, the **c
         chmod a+x "$job"
     done
 
-who will create **render-<number>.job**
+who will create `render-<number>.job`
 
     #!/bin/bash
-    xvfb-run -as"-screen 0 1280x1024x24" /sw/people/tomancak/packages/Fiji.app/ImageJ-linux64 -Xms20g -Xmx20g -Ddir=/projects/tomancak_lightsheet/Tassos -Dtimepoin
-    t=1 -Dangle=1  -- --no-splash /projects/tomancak_lightsheet/Tassos/jobs/3d_rendering/render.bsh
+    xvfb-run -as"-screen 0 1280x1024x24" /sw/people/tomancak/packages/Fiji.app/ImageJ-linux64 -Xms20g -Xmx20g -Ddir=/projects/tomancak_lightsheet/Tassos \
+      -Dtimepoint=1 -Dangle=1  -- --no-splash /projects/tomancak_lightsheet/Tassos/jobs/3d_rendering/render.bsh
 
-Each bash script is passing a *directory*, *timepoint* and rendering *angle* parameters to **render.bsh** Beanshell script. The script is little more complicated than before. It combines Saalfeld's Beanshell magic with my clumsy macro programming. It is necessary to change the parameters inside the script according to the recipe above for each individual rendering run.
+Each bash script is passing a *directory*, *timepoint* and rendering *angle* parameters to `render.bsh` BeanShell script. The script is little more complicated than before. It combines Saalfeld's BeanShell magic with my clumsy macro programming. It is necessary to change the parameters inside the script according to the recipe above for each individual rendering run.
 
     import java.lang.Runtime;
     import ij.ImagePlus;
@@ -992,7 +994,7 @@ Each bash script is passing a *directory*, *timepoint* and rendering *angle* par
     /* shutdown */
     runtime.exit(0);
 
-We submit is as usual using **./submit-jobs .**
+We submit is as usual using `./submit-jobs .`
 
     #!/bin/bash
 
@@ -1006,9 +1008,9 @@ Tips and tricks
 -   This approach to making 3D rendering movies is still a hack, although its better than pure macro and TransformJ. We are working on a better solution.
 -   We are using an interplay of Interactive Stack Rotation to pre-process the image by rotating it to the desired position and then calling 3dVIewer to render it at that position while zooming in a bit.
 -   You can also use the TransformJ commands to rotate your fused stack to the orientation you like, possibly crop it if its too big and then open it in 3dViewer. Recording this as a macro and making it work (ala Stephan Preibisch) is possible, but it is incredibly laborious and nerve wracking.
--   Whoever wants to rewrite the macro parts of **render.bsh** into a real script is VERY welcome.
+-   Whoever wants to rewrite the macro parts of `render.bsh` into a real script is VERY welcome.
 -   Even better would be, obviously, to pass the transformation matrix to the 3D Viewer, but it proved unreliable.
--   The key to making it work on a cluster is to provide specific parameters about screen size to the **xvfb-run** script (-as\\"-screen 0 1280x1024x24\\"). Otherwise it doesn't work. Thanks to Stephan Saalfeld for figuring it out.
+-   The key to making it work on a cluster is to provide specific parameters about screen size to the `xvfb-run` script (`-as"-screen 0 1280x1024x24"`). Otherwise it doesn't work. Thanks to Stephan Saalfeld for figuring it out.
 -   The cluster makes it fairly easy to experiment with parameters and angles of view - on a single computer the same task would take days and since we are using ImageJ macro you would not be able to touch the computer. MPI-CBG cluster renders 800+ timepoints in half an hour even under full load from other users.
 
 The 3D rendering is relatively complex (we are working on a simpler solution) but extremely rewarding. *Drosophila* embryogenesis movie coming soon here.
@@ -1017,13 +1019,13 @@ The 3D rendering is relatively complex (we are working on a simpler solution) bu
 
 This part will deal with the processing of SPIM data with 2 channels. The registration and fusion works very similar and needs only a few adjustments to the scripts above, which I will point out specifically. There are 2 main differences:
 
-1\. The Zeiss SPIM currently does not allow to export individual channels when acquiring 2 channels in fast frame mode. Thus we need to split the channels and save them as separate .tif files. When using the sequential mode you can skip this step.
+1. The Zeiss SPIM currently does not allow to export individual channels when acquiring 2 channels in fast frame mode. Thus we need to split the channels and save them as separate .tif files. When using the sequential mode you can skip this step.
 
-2\. In our case only 1 channel will have beads visible. Thus we will perform the registration only on this channel. The fusion program however, requires that registration files are present for both channels. To work around that, we will just duplicate the registration files from the channel that contains the beads.
+2. In our case only 1 channel will have beads visible. Thus we will perform the registration only on this channel. The fusion program however, requires that registration files are present for both channels. To work around that, we will just duplicate the registration files from the channel that contains the beads.
 
 #### Separating the channels
 
-Rename and save the data as **.tif** following the steps described above. The data should be present now in the following format:
+Rename and save the data as `.tif` following the steps described above. The data should be present now in the following format:
 
     cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1
     ls
@@ -1038,12 +1040,12 @@ Each file contains 2 channels, which we need to split into individual files befo
 
     mkdir split
 
-To separate the channels we create a bash script **create-split-jobs**. Save this script in a new subdirectory in the jobs directory.
+To separate the channels we create a bash script `create-split-jobs`. Save this script in a new subdirectory in the jobs directory.
 
     mkdir jobs/split_channels
     cd jobs/split_channels
 
-The **creat-split-jobs** will create the jobs that will be send to the cluster. You will need to edit the **directory**, the number of **time points** and the **angles**.
+The `creat-split-jobs` will create the jobs that will be send to the cluster. You will need to edit the **directory**, the number of **time points** and the **angles**.
 
     #!/bin/bash
 
@@ -1078,7 +1080,7 @@ Run this script:
 
     ./create-split-jobs
 
-The **creat-split-jobs** will use the **split.bsh** (written by Stephan Saalfeld). This script will split each file into individual channels and will save them into the directory **split**.
+The `creat-split-jobs` will use the **split.bsh** (written by Stephan Saalfeld). This script will split each file into individual channels and will save them into the directory `split`.
 
     import ij.IJ;
     import ij.ImagePlus;
@@ -1136,7 +1138,7 @@ Run the script by:
 
     ./submit-jobs .
 
-Finally you should find the individual channels in the directory **split**. To the information of the time point and the angle, the channel information is added.
+Finally you should find the individual channels in the directory `split`. To the information of the time point and the angle, the channel information is added.
 
     cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/split
     ls
@@ -1156,7 +1158,7 @@ You can now remove the .tif files that contain both channels. Determine which ch
 
 #### Multi-view registration for 2 channels
 
-In this example the beads are visible in channel 1. Therefore, we will proceed to register this channel. Modify in the **create-registration-jobs** script the **directory**, the **number of time points** and the **angles (-Dangles)**.
+In this example the beads are visible in channel 1. Therefore, we will proceed to register this channel. Modify in the `create-registration-jobs` script the **directory**, the **number of time points** and the **angles (`-Dangles`)**.
 
     #!/bin/bash
 
@@ -1183,9 +1185,9 @@ In this example the beads are visible in channel 1. Therefore, we will proceed t
 
     ./create-registration-jobs
 
-The **registration.bsh** stays in principle the same as in the single channel. The only thing you need to modify is **pattern\_of\_spim** otherwise the program will not recognise the files. Just add the name of the channel to the file name.
+The **registration.bsh** stays in principle the same as in the single channel. The only thing you need to modify is `pattern_of_spim` otherwise the program will not recognise the files. Just add the name of the channel to the file name.
 
-As before you would change the **z-resolution**, radius **channel\_0\_radius\_1**, **channel\_0\_radius\_2** and the **channel\_0\_threshold** according to the parameters you would have determined manually.
+As before you would change the **z-resolution**, radius `channel_0_radius_1`, `channel_0_radius_2` and the `channel_0_threshold` according to the parameters you would have determined manually.
 
     import ij.IJ;
     import ij.ImagePlus;
@@ -1222,9 +1224,9 @@ As before you would change the **z-resolution**, radius **channel\_0\_radius\_1*
 
 The **submit-jobs** script is modified for the requirements of the registration. Determine these parameters with a small set before you apply them to all files.
 
--   "-n 5" use one processor per angle.
--   "-W 00:15" Walltime of the job restricted to 15 min.
--   "-R rusage\[mem=10000\]" 10000MB of memory is required.
+-   `-n 5` use one processor per angle.
+-   `-W 00:15` Walltime of the job restricted to 15 min.
+-   `-R rusage[mem=10000]` 10000MB of memory is required.
 
 <!-- -->
 
@@ -1248,7 +1250,7 @@ The registration files should now be written in the directory **registration**. 
 
 #### Time-lapse registration for 2 channels
 
-In the script **timelapse.interactive** modify **-Ddir=**, **-Dtimepoint=**, **-Dreferencetp=** (choose a good time point as reference) and **-Dangles=**.
+In the script `timelapse.interactive` modify `-Ddir=`, `-Dtimepoint=`, `-Dreferencetp=` (choose a good time point as reference) and `-Dangles=`.
 
     #!/bin/bash
     xvfb-run -a /sw/people/tomancak/packages/Fiji.app/ImageJ-linux64 \
@@ -1256,9 +1258,9 @@ In the script **timelapse.interactive** modify **-Ddir=**, **-Dtimepoint=**, **-
     -Dtimepoint=1-72 -Dreferencetp=1 -Dangles=32,104,176,248,320 \
     -- --no-splash ./time-lapse.bsh
 
-Analog to the Multi-view registration add the channel information to the name of the file in the **pattern\_of\_spim** part of the script.
+Analog to the Multi-view registration add the channel information to the name of the file in the `pattern_of_spim` part of the script.
 
-Give the **z-resolution**, **channel\_0\_radius\_1**, **channel\_0\_radius\_2** and the **channel\_0\_threshold** as before.
+Give the **z-resolution**, `channel_0_radius_1`, `channel_0_radius_2` and the `channel_0_threshold` as before.
 
     import ij.IJ;
     import java.lang.Runtime;
@@ -1294,20 +1296,20 @@ Give the **z-resolution**, **channel\_0\_radius\_1**, **channel\_0\_radius\_2** 
     /* shutdown */
     runtime.exit(0);
 
-Again modify the **submit-jobs** script according to the need of your timelapse registration. For my example these modifications worked:
+Again modify the `submit-jobs` script according to the need of your timelapse registration. For my example these modifications worked:
 
--   "-W 0025"
--   "-R rusage\[mem=5000\]
+-   `-W 0025`
+-   `-R rusage[mem=5000]`
 
-<!-- -->
+```
+#!/bin/bash
 
-    #!/bin/bash
+bsub -q short  -n 12 -W 00:25 -R rusage[mem=5000] -R span[hosts=1] -o "out.%J" -e "err.%J" ./timelapse.interactive
 
-    bsub -q short  -n 12 -W 00:25 -R rusage[mem=5000] -R span[hosts=1] -o "out.%J" -e "err.%J" ./timelapse.interactive
+./submit-jobs .
+```
 
-    ./submit-jobs .
-
-An additional registration file will be created in the directory **registration**.
+An additional registration file will be created in the directory `registration`.
 
     cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/split/registration
     ls
@@ -1319,9 +1321,9 @@ An additional registration file will be created in the directory **registration*
 
 #### Duplicate registration files
 
-Since the fusion requires the presents of registration files for both channel, we will duplicate the existing files of channel 1 and save them as registration files for channel 0. The following script **duplicate\_rename\_registration.bsh** will do just that. Create this script in the jobs directory.
+Since the fusion requires the presents of registration files for both channel, we will duplicate the existing files of channel 1 and save them as registration files for channel 0. The following script `duplicate_rename_registration.bsh` will do just that. Create this script in the jobs directory.
 
-You will need to modify the **time points**, **angles**, the used reference time point in **registration.to\_{your reference}** and the **directory**.
+You will need to modify the **time points**, **angles**, the used reference time point in `registration.to_{your reference}` and the **directory**.
 
 The script will copy the existing files and save them under a new name with just the channel name changed.
 
@@ -1369,7 +1371,7 @@ Now for each channel of each angle and timepoint registration files should be pr
 
 #### Fusion for 2 channels
 
-The **create\_fusion\_jobs** for 2 channels works the same as for the single channel fusion. Just modify the **directory**, the **number of time points**, the angles under **-Dangles** and choose a **cropping area (-Dx, -Dy, -Dz, -Dw, -Dh, -Dd)**.
+The `create_fusion_jobs` for 2 channels works the same as for the single channel fusion. Just modify the **directory**, the **number of time points**, the angles under `-Dangles` and choose a **cropping area (`-Dx`, `-Dy`, `-Dz`, `-Dw`, `-Dh`, `-Dd`)**.
 
     #!/bin/bash
 
@@ -1400,7 +1402,7 @@ Execute script
 
     ./create-fusion-jobs
 
-The **fusion.bsh** script needs to be set for multi channel registration. Under **select\_channel** Multi-channel registration=\[Individual registration of channel 1\] registration=\[Individual registration of channel 1\] will be set. **downsample\_output** in this case is set to 4.
+The `fusion.bsh` script needs to be set for multi channel registration. Under `select_channel`, `Multi-channel registration=[Individual registration of channel 1] registration=[Individual registration of channel 1]` will be set. `downsample_output` in this case is set to 4.
 
     import ij.IJ;
     import java.lang.Runtime;
@@ -1443,10 +1445,10 @@ The **fusion.bsh** script needs to be set for multi channel registration. Under 
     /* shutdown */
     runtime.exit(0);
 
-The **submit-jobs** script is modified according to the requirements of the fusion:
+The `submit-jobs` script is modified according to the requirements of the fusion:
 
--   "-W 00:20"
--   "-R rusage\[mem=50000\]
+-   `-W 00:20`
+-   `-R rusage[mem=50000]`
 
 Worked in my example, but again I would recommend that you modify this with the information from a small set of your own data.
 
@@ -1471,28 +1473,28 @@ The new pipeline also comes with a new set of scripts that are specifically modi
 
 Currently the master file is useable for the following steps.
 
-1\. Single-channel processing:
+1. Single-channel processing:
 
--   Rename **.czi** files
--   Resave **.czi** files
--   Resave **.ome.tiff** files
--   Multi-view registration
--   Timelapse registration
--   Content based multi-view fusion
--   External transformation
--   Multi-view deconvolution
--   3D-rendering
--   Export to hdf5 format
+    -   Rename `.czi` files
+    -   Resave `.czi` files
+    -   Resave `.ome.tiff` files
+    -   Multi-view registration
+    -   Timelapse registration
+    -   Content based multi-view fusion
+    -   External transformation
+    -   Multi-view deconvolution
+    -   3D-rendering
+    -   Export to hdf5 format
 
-2\. Multi-channel processing:
+2. Multi-channel processing:
 
--   Rename **.czi** files
--   Resave **.czi** files
--   Registration
--   Timelapse registration
--   Content based multi-view fusion
--   3D-rendering for 2 channels
--   Export to hdf5 format
+    -   Rename `.czi` files
+    -   Resave `.czi` files
+    -   Registration
+    -   Timelapse registration
+    -   Content based multi-view fusion
+    -   3D-rendering for 2 channels
+    -   Export to hdf5 format
 
 All the scripts work with padded zeros.
 
@@ -1502,9 +1504,9 @@ At the moment this tutorial is written for advanced users that already used the 
 
 There are two parts in this file:
 
-1\. Processing Parameters
+1. Processing Parameters
 
-2\. Directories for scripts and advanced settings for processing
+2. Directories for scripts and advanced settings for processing
 
 The first part contains everything relevant for processing and will be modified for each dataset. It is further structured according to each processing step.
 
@@ -1932,9 +1934,9 @@ Upon using the master file the first time please change the links for Fiji, the 
     ##Working script
     export="/projects/pilot_spim/Christopher/pipeline/jobs_master_beta_2.0/hdf5/export.bsh"
 
-Then you need to change in each shell script particulary in the **create-jobs** scripts the link to the **master file**.
+Then you need to change in each shell script particulary in the `create-jobs` scripts the link to the **master file**.
 
-This link is given in the 3rd line of each shell script. For example in the **rename-zeiss-files.sh**:
+This link is given in the 3rd line of each shell script. For example in the `rename-zeiss-files.sh`:
 
     #!/bin/bash
 
@@ -1968,7 +1970,7 @@ This link is given in the 3rd line of each shell script. For example in the **re
 
     done
 
-Or the **create-resaving-jobs** file:
+Or the `create-resaving-jobs` file:
 
     #!/bin/bash
 
@@ -2050,7 +2052,7 @@ It is very important to note that the **Lightsheet Z.1** writes the first angle 
     2013-11-14_His-YFP(7).czi
     2013-11-14_His-YFP(8).czi
 
-For renaming the **.czi** files the relevant section in the master file looks like this:
+For renaming the `.czi` files the relevant section in the master file looks like this:
 
     ###---------- Renaming .czi files ----------
     first_index="0"
@@ -2065,9 +2067,9 @@ For renaming the **.czi** files the relevant section in the master file looks li
     source_pattern=/2013-11-14_His-YFP\(\{index\}\).czi
     target_pattern=/spim_TL\{timepoint\}_Angle\{angle\}.czi
 
-The first index is **0**. Since we have 3 timepoints with 3 angles, we have 9 timepoints in total. Thus the last index is **8**. Then we define how the new name will start. The first timepoint will be **1** and there are three angles, thus **(1 2 3)**. For demonstration we will use padded zeros. **pad\_rename\_czi="2"** means the output will look like this: 01. The "source pattern" states how the old .czi are named and the "target\_pattern" defines how the new files will be named. It is important that these patterns are correct.
+The first index is **0**. Since we have 3 timepoints with 3 angles, we have 9 timepoints in total. Thus the last index is **8**. Then we define how the new name will start. The first timepoint will be **1** and there are three angles, thus `(1 2 3)`. For demonstration we will use padded zeros. `pad_rename_czi="2"` means the output will look like this: 01. The "source pattern" states how the old .czi are named and the `target_pattern` defines how the new files will be named. It is important that these patterns are correct.
 
-For renaming the .czi files we use the **rename-zeiss-files.sh** script:
+For renaming the .czi files we use the `rename-zeiss-files.sh` script:
 
     #!/bin/bash
 
@@ -2107,7 +2109,7 @@ The script should now get all the necessary parameters from the **master file**.
     chmod a+x rename-zeiss_files.sh
     ./rename-zeiss_files.sh
 
-The **.czi** files are now renamed accordingly:
+The `.czi` files are now renamed accordingly:
 
     cd /projects/tomancak_lightsheet/Christopher/Test_scripts/single-channel
     ls
@@ -2123,7 +2125,7 @@ The **.czi** files are now renamed accordingly:
 
 ### Resave .czi files
 
-The next step is to resave the **.czi** files as **.tif** files. In the relevant part in the master file we just need to specify the angles and if we used padded zeros:
+The next step is to resave the `.czi` files as `.tif` files. In the relevant part in the master file we just need to specify the angles and if we used padded zeros:
 
     ###---------- Resaving .czi or ome.tiff as .tif ----------
     ##use ometiff_resave for ome.tiff and czi_resave for .czi
@@ -2132,7 +2134,7 @@ The next step is to resave the **.czi** files as **.tif** files. In the relevant
     ##For padded zero 2 = 01; 3 = 001
     pad_resave="2"
 
-For creating the jobs for resaving use the **create-resaving-jobs** scripts:
+For creating the jobs for resaving use the `create-resaving-jobs` scripts:
 
     #!/bin/bash
 
@@ -2157,7 +2159,7 @@ Execute this script:
 
     ./create-resaving-jobs
 
-This should create jobs for each **.czi** file.
+This should create jobs for each `.czi` file.
 
     cd /projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/czi_resave/
     ls
@@ -2181,7 +2183,7 @@ Each job file should contain the relevant parameters for the job, where to find 
     /sw/bin/xvfb-run -a /sw/people/tomancak/packages/Fiji.app/ImageJ-linux64 -Ddir=/projects/tomancak_lightsheet/Christopher/Test_scripts/single-channel/ -Dtimepoint=1 -Dangle=1            
     -Dpad=2 -- --no-splash /projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/czi_resave/resaving.bsh
 
-The necessary parameters are passed from the jobs file to the **resaving.bsh** script upon processing the job. The script **resaving.bsh** looks as follows:
+The necessary parameters are passed from the jobs file to the `resaving.bsh` script upon processing the job. The script `resaving.bsh` looks as follows:
 
     import ij.IJ;
     import ij.ImagePlus;
@@ -2208,7 +2210,7 @@ The necessary parameters are passed from the jobs file to the **resaving.bsh** s
     /* shutdown */
     runtime.exit(0);
 
-Submit the job by executing the submit script **submit-jobs**:
+Submit the job by executing the submit script `submit-jobs`:
 
     #!/bin/bash
 
@@ -2219,7 +2221,7 @@ Submit the job by executing the submit script **submit-jobs**:
 
     ./submit-jobs .
 
-The **.tif** files can now be found in the data directory together with the **.czi** files:
+The `.tif` files can now be found in the data directory together with the `.czi` files:
 
     cd /projects/tomancak_lightsheet/Christopher/Test_scripts/single-channel
     ls
@@ -2242,9 +2244,9 @@ The **.tif** files can now be found in the data directory together with the **.c
     spim_TL03_Angle3.czi
     spim_TL03_Angle3.tif
 
-After this step inspect the **.tif** files and check if all of them are present and that they correspond to the **.czi** files. If that is the case transfer the **.czi** files onto tape for long term storage.
+After this step inspect the `.tif` files and check if all of them are present and that they correspond to the `.czi` files. If that is the case transfer the `.czi` files onto tape for long term storage.
 
-To check if all the files are present use the **checkpoint.sh** script:
+To check if all the files are present use the `checkpoint.sh` script:
 
     #!/bin/bash
 
@@ -2273,7 +2275,7 @@ This script will return the number of the timepoint that is missing or has missi
 
 ### Resave .ome.tiff files
 
-To resave **.ome.tiff** files as **.tif** we use the same part in the master file as when you would resave **.czi** files. In the relevant part in the master file we just need to specify the angles and if there are padded zeros:
+To resave `.ome.tiff` files as `.tif` we use the same part in the master file as when you would resave `.czi` files. In the relevant part in the master file we just need to specify the angles and if there are padded zeros:
 
     ###---------- Resaving .czi or ome.tiff as .tif ----------
     ##use ometiff_resave for ome.tiff and czi_resave for .czi
@@ -2282,7 +2284,7 @@ To resave **.ome.tiff** files as **.tif** we use the same part in the master fil
     ##For padded zero 2 = 01; 3 = 001
     pad_resave="2"
 
-The create **create-ometiff-jobs** file. Create the resaving jobs by executing this script:
+The create `create-ometiff-jobs` file. Create the resaving jobs by executing this script:
 
     #!/bin/bash
 
@@ -2303,7 +2305,7 @@ The create **create-ometiff-jobs** file. Create the resaving jobs by executing t
         done
     done
 
-The **resaving-ometiff.bsh** script:
+The `resaving-ometiff.bsh` script:
 
     import ij.IJ;
     import ij.ImagePlus;
@@ -2326,7 +2328,7 @@ The **resaving-ometiff.bsh** script:
     /* shutdown */
     runtime.exit(0);
 
-Submit the job files using the **submit-jobs** script:
+Submit the job files using the `submit-jobs` script:
 
     #!/bin/bash
 
@@ -2337,7 +2339,7 @@ Submit the job files using the **submit-jobs** script:
 
 ### Multi-view registration
 
-For the registration use the relevant part in the **master file**. Change the pattern of the spim data accordingly. You can choose between Difference of mean and Difference of gaussian registration, change the parameters accordingly. It is important to comment out for example the Difference of Gaussian parts in the **registration.bsh** script when you want to use the Difference of mean registration. There will be an error otherwise.
+For the registration use the relevant part in the **master file**. Change the pattern of the spim data accordingly. You can choose between Difference of mean and Difference of gaussian registration, change the parameters accordingly. It is important to comment out for example the Difference of Gaussian parts in the `registration.bsh` script when you want to use the Difference of mean registration. There will be an error otherwise.
 
     ###---------- Multi-view registration (Difference of mean or Difference of Gaussian) ----------
     ##Specify the Pattern for Detection of the beads single channel: spim_TL{t}_Angle{a}.tif
@@ -2356,7 +2358,7 @@ For the registration use the relevant part in the **master file**. Change the pa
     #initial_sigma="1.8000"
     #threshold_gaussian="0.0080"
 
-The **create-registration-jobs** script. Execute this script for creating the registration jobs.
+The `create-registration-jobs` script. Execute this script for creating the registration jobs.
 
     #!/bin/bash
     source /projects/tomancak_lightsheet/Christopher/pipeline/master
@@ -2381,7 +2383,7 @@ The **create-registration-jobs** script. Execute this script for creating the re
         chmod a+x "$job"
     done
 
-The **registration.bsh** script. Important here is to comment out the indicated parts depending on the registration method. Otherwise the script may not work properly. For the Difference of Mean registration comment out Difference of Gaussian with Line 33-34 and 68-69. For Difference of Gaussian comment out Line 28-30 and Line 65-67.
+The `registration.bsh` script. Important here is to comment out the indicated parts depending on the registration method. Otherwise the script may not work properly. For the Difference of Mean registration comment out Difference of Gaussian with Line 33-34 and 68-69. For Difference of Gaussian comment out Line 28-30 and Line 65-67.
 
     import ij.IJ;
     import ij.ImagePlus;
@@ -2457,7 +2459,7 @@ The **registration.bsh** script. Important here is to comment out the indicated 
     /* shutdown */
     runtime.exit(0);
 
-Submit the jobs by using the **submit-jobs** script:
+Submit the jobs by using the `submit-jobs` script:
 
     #!/bin/bash
 
@@ -2473,7 +2475,7 @@ The timelapse registration is using the registration parameters specified before
     ###---------- Timelapse registration ----------
     timelapse_timepoint="1-3"
 
-For creating the timelapse registration job (only one job) execute the **create-timelapse-jobs** script:
+For creating the timelapse registration job (only one job) execute the `create-timelapse-jobs` script:
 
     #!/bin/bash
     source /projects/tomancak_lightsheet/Christopher/pipeline/master
@@ -2493,7 +2495,7 @@ For creating the timelapse registration job (only one job) execute the **create-
                 -Dreferencetp=$referencetp -- --no-splash $timelapse_registration" >> "$job"   
         chmod a+x "$job"
 
-For the **time-lapse.bsh** script comment out the same parts that you commented out for the **registration.bsh** script.
+For the `time-lapse.bsh` script comment out the same parts that you commented out for the `registration.bsh` script.
 
     import ij.IJ;
     import java.lang.Runtime;
@@ -2570,7 +2572,7 @@ For the **time-lapse.bsh** script comment out the same parts that you commented 
     /* shutdown */
     runtime.exit(0);
 
-Submit the **register-timelapse.job** to the cluster using the **submit-jobs** script:
+Submit the `register-timelapse.job` to the cluster using the `submit-jobs` script:
 
     #!/bin/bash
 
@@ -2580,7 +2582,7 @@ Submit the **register-timelapse.job** to the cluster using the **submit-jobs** s
 
 The relevant part in the **master file**:
 
-For single-channel data use **select\_channel="Single-channel"**. For using the timelapse registration select **registration\_fusion="\\"Time-point registration (reference=1) of channel 0\\""** and specifify the correct reference timepoint in **(reference=1)**. If you want to use the registration of the individual timepoints for the fusion select **registration\_fusion="\\"Individual registration of channel 0\\"** instead.
+For single-channel data use `select_channel="Single-channel"`. For using the timelapse registration select `registration_fusion="\"Time-point registration (reference=1) of channel 0\""` and specifify the correct reference timepoint in `(reference=1)`. If you want to use the registration of the individual timepoints for the fusion select `registration_fusion="\"Individual registration of channel 0\"` instead.
 
 Specify how much you want to downsample the fusion. However always use the cropping parameters for the full resolution when defining the cropping area.
 
@@ -2605,7 +2607,7 @@ Specify how much you want to downsample the fusion. However always use the cropp
     h="820"
     d="755"
 
-Execute the **create\_fusion\_jobs** script for writing the fusion jobs:
+Execute the `create_fusion_jobs` script for writing the fusion jobs:
 
     #!/bin/bash
     source /projects/tomancak_lightsheet/Christopher/pipeline/master
@@ -2628,7 +2630,7 @@ Execute the **create\_fusion\_jobs** script for writing the fusion jobs:
         chmod a+x "$job"
     done
 
-The **fusion.bsh** script, for single channel comment out the additional **"registration=\[" + registration\_fusion + "\]" + " " +** line:
+The `fusion.bsh` script, for single channel comment out the additional `"registration=[" + registration_fusion + "]" + " " +` line:
 
     import ij.IJ;
     import java.lang.Runtime;
@@ -2696,7 +2698,7 @@ The **fusion.bsh** script, for single channel comment out the additional **"regi
     /* shutdown */
     runtime.exit(0);
 
-For submitting the fusion jobs execute the **submit-jobs** script:
+For submitting the fusion jobs execute the `submit-jobs` script:
 
     #!/bin/bash
 
@@ -2727,7 +2729,7 @@ For the external transformation in the master file specify the pattern of the sp
     m11="0.5"
     m22="0.5"
 
-The **create\_external\_transformation** script:
+The `create_external_transformation` script:
 
     #!/bin/bash
     source /projects/tomancak_lightsheet/Christopher/pipeline/master
@@ -2742,7 +2744,7 @@ The **create\_external\_transformation** script:
             -Dm00=$m00 -Dm11=$m11 -Dm22=$m22 -- --no-splash $external_transformation" >> "$job"
         chmod a+x "$job"
 
-The **external\_transformation.bsh** script:
+The `external_transformation.bsh` script:
 
     import ij.IJ;
     import java.lang.Runtime;
@@ -2791,7 +2793,7 @@ The **external\_transformation.bsh** script:
     /* shutdown */
     runtime.exit(0);
 
-Submit the external transformation job to the cluster with the **submit-jobs** script:
+Submit the external transformation job to the cluster with the `submit-jobs` script:
 
     #!/bin/bash
 
@@ -2818,7 +2820,7 @@ For deconvolution specify again the spim pattern, the number of iterations and t
     decoh="410"
     decod="377"
 
-The **create\_deconvolution\_jobs** script:
+The `create_deconvolution_jobs` script:
 
     #!/bin/bash
     source /projects/tomancak_lightsheet/Christopher/pipeline/master
@@ -2842,7 +2844,7 @@ The **create\_deconvolution\_jobs** script:
         chmod a+x "$job"
     done
 
-The **deconvolution.bsh** script:
+The `deconvolution.bsh` script:
 
     import ij.IJ;
     import java.lang.Runtime;
@@ -2925,7 +2927,7 @@ The **deconvolution.bsh** script:
     /* shutdown */
     runtime.exit(0);
 
-Submit the deconvolution jobs using the **submit-jobs** script:
+Submit the deconvolution jobs using the `submit-jobs` script:
 
     #!/bin/bash
 
@@ -2936,9 +2938,9 @@ Submit the deconvolution jobs using the **submit-jobs** script:
 
 ### 3d Rendering
 
-In the **master file** specify the working directory and script for rendering single-channel data. Under **source\_rendering** give the directory where to find the fusion or deconvolution output. Under **target\_directory** give the name of a directory where to save the data within the data directory. A directory will be made for you. Specify the number of frames and the min max values for setting the brightness and contrast for the rendering.
+In the **master file** specify the working directory and script for rendering single-channel data. Under `source_rendering` give the directory where to find the fusion or deconvolution output. Under `target_directory` give the name of a directory where to save the data within the data directory. A directory will be made for you. Specify the number of frames and the min max values for setting the brightness and contrast for the rendering.
 
-At the moment it is not possible to put in the orientation or the rotation parameters from the master file. We will work on this part. Thus you need to modify the **render-mov1.bsh** accordingly.
+At the moment it is not possible to put in the orientation or the rotation parameters from the master file. We will work on this part. Thus you need to modify the `render-mov1.bsh` accordingly.
 
     ###---------- Rendering ----------
     ##Working directory
@@ -2976,7 +2978,7 @@ At the moment it is not possible to put in the orientation or the rotation param
     #still needs to be put into the script directly
     #under construction
 
-The **create\_render\_jobs** script:
+The `create_render_jobs` script:
 
     #!/bin/bash
 
@@ -3003,7 +3005,7 @@ The **create\_render\_jobs** script:
         chmod a+x "$job"
     done
 
-In the **single-render-mov.bsh** script for getting a fixed orientation modify the transformation matrics and comment out the rotation function (Line 99-103) as well as the rotation command (Line 116: **transform**) in the rendering part of the script. For rotation comment out the transformation matrics (Line 93-94) and the orientation command (Line 115: **orientation**) in the rendering part of the script.
+In the `single-render-mov.bsh` script for getting a fixed orientation modify the transformation matrics and comment out the rotation function (Line 99-103) as well as the rotation command (Line 116: `transform`) in the rendering part of the script. For rotation comment out the transformation matrics (Line 93-94) and the orientation command (Line 115: `orientation`) in the rendering part of the script.
 
     import java.lang.Runtime;
     import ij.ImagePlus;
@@ -3138,7 +3140,7 @@ In the **single-render-mov.bsh** script for getting a fixed orientation modify t
     /* shutdown */
     runtime.exit(0);
 
-Submit the rendering jobs by using the **submit-jobs** script:
+Submit the rendering jobs by using the `submit-jobs` script:
 
     #!/bin/bash
 
@@ -3191,7 +3193,7 @@ The part in the master file covering the hdf5 export:
     cropOffsetZ="355"
     scale="2"
 
-The first step is to determine the number of necessary jobs. Execute the **run\_numjobs** script. This job runs throught the **export.bsh** script and calculates the number of necessary jobs.
+The first step is to determine the number of necessary jobs. Execute the `run_numjobs` script. This job runs throught the `export.bsh` script and calculates the number of necessary jobs.
 
     #!/bin/bash
 
@@ -3215,7 +3217,7 @@ The first step is to determine the number of necessary jobs. Execute the **run\_
 
     bsub -q short -n 1 -R span[hosts=1] -o "numjobsout" -e "output/err.%J" "$job"
 
-This script will write a job file **getnumjobs** which will be send directly to the cluster.
+This script will write a job file `getnumjobs` which will be send directly to the cluster.
 
     #!/bin/bash
     /sw/bin/xvfb-run -a /sw/users/pietzsch/packages/Fiji.app/ImageJ-linux64 -Xmx10g -Dprintnumjobs=true         
@@ -3231,7 +3233,7 @@ This script will write a job file **getnumjobs** which will be send directly to 
     -DcropOffsetZ=226 -Dscale=355
     -- --no-splash /projects/pilot_spim/Christopher/pipeline/jobs_master_beta_2.0/hdf5/export.bsh
 
-The output of this job will be the **numjobsout** file:
+The output of this job will be the `numjobsout` file:
 
     cat numjobsout
 
@@ -3305,12 +3307,12 @@ The output of this job will be the **numjobsout** file:
     Fail to open stderr file output/err.861957: No such file or directory.
     The stderr output is included in this report.
 
-You can check if all parameters are correct. The important line ist the last **number of jobs: 3**. This means we need to adjust the **master file** accordingly:
+You can check if all parameters are correct. The important line is the last `number of jobs: 3`. This means we need to adjust the `master file` accordingly:
 
     ##Number of jobs
     num_export_job="`seq 0 3`"
 
-There must always be a "0" job. This job generates the **.xml** file. The other jobs will write **.h5** files that contain the actual data. The rest works analogous to the other parts of the pipline. Create the jobs with the **create\_export\_jobs** script. This script will also create a new directory within the spim data directory.
+There must always be a "0" job. This job generates the `.xml` file. The other jobs will write `.h5` files that contain the actual data. The rest works analogous to the other parts of the pipline. Create the jobs with the `create_export_jobs` script. This script will also create a new directory within the spim data directory.
 
     #!/bin/bash
 
@@ -3341,7 +3343,7 @@ There must always be a "0" job. This job generates the **.xml** file. The other 
             chmod a+x "$job"
     done
 
-Each job will use the **export.bsh** script:
+Each job will use the `export.bsh` script:
 
     import creator.Scripting;
     import creator.Scripting.PartitionedSequenceWriter;
@@ -3457,7 +3459,7 @@ Each job will use the **export.bsh** script:
     /* shutdown */
     System.exit(0);
 
-Send the jobs to the cluster using the **submit-jobs** script:
+Send the jobs to the cluster using the `submit-jobs` script:
 
     #!/bin/bash
 
@@ -3474,7 +3476,7 @@ The **master file** has all the necessary information to easily switch between s
 
 Since we already did set up the master file and the scripts properly the only things we need to manipulate this time are the processing parameters (see First time using the master file)
 
-Change the data directory **dir=**. The example dataset has 3 timepoints and 5 angles. For multi-channel processing select the option for multi-channel data: **pattern\_of\_spim="spim\_TL{tt}\_Angle{a}\_Channel{c}.tif"**. Also change the reference timepoint and the calibration settings.
+Change the data directory `dir=`. The example dataset has 3 timepoints and 5 angles. For multi-channel processing select the option for multi-channel data: `pattern_of_spim="spim_TL{tt}_Angle{a}_Channel{c}.tif"`. Also change the reference timepoint and the calibration settings.
 
     ####--------------------------------- General Parameters ---------------------------------
     ###Data directory
@@ -3519,7 +3521,7 @@ The dataset is in the specified directory:
     2014-02-14_Stock19_Stock17(13).czi
     2014-02-14_Stock19_Stock17(14).czi
 
-Add the (0) index to the first **.czi** file:
+Add the (0) index to the first `.czi` file:
 
     mv 2014-02-14_Stock19_Stock17.czi 2014-02-14_Stock19_Stock17(0).czi
     ls
@@ -3541,7 +3543,7 @@ Add the (0) index to the first **.czi** file:
 
 ### Rename .czi files
 
-The renaming in the multi-channel data follows the exact same principle as in the single-channel data. Just modify the master file accordingly and then execute the **rename-zeiss-files.sh** script.
+The renaming in the multi-channel data follows the exact same principle as in the single-channel data. Just modify the master file accordingly and then execute the `rename-zeiss-files.sh` script.
 
     ###---------- Renaming .czi files ----------
     first_index="0"
@@ -3556,7 +3558,7 @@ The renaming in the multi-channel data follows the exact same principle as in th
     source_pattern=/2014-02-14_Stock19_Stock17\(\{index\}\).czi
     target_pattern=/spim_TL\{timepoint\}_Angle\{angle\}.czi
 
-The **.czi** files should now be renamed:
+The `.czi` files should now be renamed:
 
     cd /projects/tomancak_lightsheet/Christopher/Test_scripts/multi-channel/
     ls
@@ -3587,7 +3589,7 @@ The resaving also relies on the same scripts as for the single-channel data. Spe
     ##For padded zero 2 = 01; 3 = 001
     pad_resave="2"
 
-Create the jobs by executing the **create-resaving-jobs** script and submit them by using the **submit-jobs** script.
+Create the jobs by executing the `create-resaving-jobs` script and submit them by using the `submit-jobs` script.
 
     cd /projects/tomancak_lightsheet/Christopher/Test_scripts/multi-channel/
     ls
@@ -3626,11 +3628,11 @@ Create the jobs by executing the **create-resaving-jobs** script and submit them
 
 The channels are then split into separated files. The algorithm will output the files with the following naming patterns:
 
-**spim\_TL{tt}\_Angle{a}\_Channel0**
-
-**spim\_TL{tt}\_Angle{a}\_Channel1**
-
+```
+spim_TL{tt}_Angle{a}_Channel0
+spim_TL{tt}_Angle{a}_Channel1
 etc...
+```
 
 In the **master file** Specify the number of angles and give a name for a new directory within the data directory where you want to save the resulting files. This directory will be created for you:
 
@@ -3641,7 +3643,7 @@ In the **master file** Specify the number of angles and give a name for a new di
     ##Target directory
     target_split="/channel_split/"
 
-The **create-split-jobs** script:
+The `create-split-jobs` script:
 
     #!/bin/bash
 
@@ -3669,7 +3671,7 @@ The **create-split-jobs** script:
             done
     done
 
-The **split.bsh** script:
+The `split.bsh` script:
 
     import ij.IJ;
     import ij.ImagePlus;
@@ -3715,7 +3717,7 @@ The **split.bsh** script:
     /* shutdown */
     runtime.exit(0);
 
-Submit the jobs using the **submit-jobs** script:
+Submit the jobs using the `submit-jobs` script:
 
     #!/bin/bash
 
@@ -3769,9 +3771,9 @@ We will proceed to work with the files were the channels are split. Since the da
 ### Multi-view registration
 
 In the example dataset the beads were only visible in Channel1. We will perform a single-channel bead registration only on this channel. We therefore need to specify the spim data pattern accordingly:
-
-**channel\_pattern\_beads="spim\_TL{tt}\_Angle{a}\_Channel1.tif"**
-
+```
+channel_pattern_beads="spim_TL{tt}_Angle{a}_Channel1.tif"
+```
 Change the detection parameters for the chosen detection method.
 
     ###---------- Multi-view registration (Difference of mean or Difference of Gaussian) ----------
@@ -3791,7 +3793,7 @@ Change the detection parameters for the chosen detection method.
     #initial_sigma="1.8000"
     #threshold_gaussian="0.0080"
 
-Execute the **create-registration-jobs** script to create the jobs for registration and send them to the cluster by executing the **submit-jobs** script.
+Execute the `create-registration-jobs` script to create the jobs for registration and send them to the cluster by executing the `submit-jobs` script.
 
 ### Timelapse registration
 
@@ -3800,20 +3802,20 @@ The time-lapse registration uses the already defined multi-view registration. Sp
     ###---------- Timelapse registration ----------
     timelapse_timepoint="1-3"
 
-Create the register-timelapse.job by executing the **create-timelapse-jobs** and then submit them to the cluster.
+Create the register-timelapse.job by executing the `create-timelapse-jobs` and then submit them to the cluster.
 
 ### Dublicate registration files
 
 For further processing we need registration files for both channels. Therefore we dublicate the existing registration files and rename them to the missing channel. We advise to make a backup of the registration files at this point.
 
-In the master file specify which channel was registered (**channel\_source**) and which channel still needs registration files (**channel\_target**).
+In the master file specify which channel was registered (`channel_source`) and which channel still needs registration files (`channel_target`).
 
     ###---------- Dublicate Registration files (Only for multi-channel data) ----------
     #Channel that contain the beads
     channel_source="1"
     channel_target="0"
 
-For dublicating the registration files just execute the **dublicate\_rename\_registration.sh** script.
+For dublicating the registration files just execute the `dublicate_rename_registration.sh` script.
 
     #!/bin/bash
 
@@ -3855,7 +3857,7 @@ For dublicating the registration files just execute the **dublicate\_rename\_reg
 
 ### Content based multi-view fusion
 
-For the content based multi-view fusion use **select\_channel="Multi-channel"**. Specify the registration, the downsampling and the cropping accordingly:
+For the content based multi-view fusion use `select_channel="Multi-channel"`. Specify the registration, the downsampling and the cropping accordingly:
 
     ###---------- Multi-view content based fusion ----------
     ##Change between Single-Channel or Mulit-channel fusion
@@ -3878,7 +3880,7 @@ For the content based multi-view fusion use **select\_channel="Multi-channel"**.
     h="758"
     d="740"
 
-In the **fusion.bsh** script comment in the additional registration **"registration=\[" + registration\_fusion + "\]" + " " +** line (Line 46).
+In the `fusion.bsh` script comment in the additional registration `"registration=[" + registration_fusion + "]" + " " +` line (Line 46).
 
     import ij.IJ;
     import java.lang.Runtime;
@@ -3946,7 +3948,7 @@ In the **fusion.bsh** script comment in the additional registration **"registrat
     /* shutdown */
     runtime.exit(0);
 
-Create the fusion jobs by executing the **create\_fusion\_jobs** and submit them to the cluster.
+Create the fusion jobs by executing the `create_fusion_jobs` and submit them to the cluster.
 
 ### 3D-rendering for 2 channels
 
@@ -3987,9 +3989,9 @@ The relevant part in the master file:
     #still needs to be put into the script directly
     #under construction
 
-First specify the directory of the jobs. The 2 channel rendering uses the **multi-render-mov.bsh** script, you need to select this script for rendering. Specify which output you want to process and where you want to save the results of the rendering within in the original directory. Finally give the number of frames, the min and max values and the number of slices of the output.
+First specify the directory of the jobs. The 2 channel rendering uses the `multi-render-mov.bsh` script, you need to select this script for rendering. Specify which output you want to process and where you want to save the results of the rendering within in the original directory. Finally give the number of frames, the min and max values and the number of slices of the output.
 
-The **create-render-jobs** script:
+The `create-render-jobs` script:
 
     #!/bin/bash
     source /projects/pilot_spim/Christopher/pipeline/master
@@ -4015,7 +4017,7 @@ The **create-render-jobs** script:
         chmod a+x "$job"
     done
 
-The jobs will use the **multi-render-mov.bsh** script for rendering. The postion can be set by changing the transformation matrix (line 141-143). For rotation comment in Line 147-149.
+The jobs will use the `multi-render-mov.bsh` script for rendering. The postion can be set by changing the transformation matrix (line 141-143). For rotation comment in Line 147-149.
 
     /*
      * two channels composite form two independent files
@@ -4235,7 +4237,7 @@ The jobs will use the **multi-render-mov.bsh** script for rendering. The postion
     /* shutdown */
     runtime.exit(0);
 
-Execute the **create-render-jobs** script and submit the jobs to the cluster with the **submit-jobs** script.
+Execute the `create-render-jobs` script and submit the jobs to the cluster with the `submit-jobs` script.
 
 ### Hdf5 export
 
@@ -4281,7 +4283,7 @@ Change the necessary parameters in the **master file**:
     cropOffsetZ="355"
     scale="2"
 
-The **getnumjobs** file:
+The `getnumjobs` file:
 
     #!/bin/bash
     /sw/bin/xvfb-run -a /sw/users/pietzsch/packages/Fiji.app/ImageJ-linux64
@@ -4297,7 +4299,7 @@ The **getnumjobs** file:
     -DcropOffsetX=0 -DcropOffsetY=314 -DcropOffsetZ=320 -Dscale=2       
     -- --no-splash /projects/pilot_spim/Christopher/pipeline/jobs_master_beta_2.0/hdf5/export.bsh
 
-The output of the **getnumjobs**:
+The output of the `getnumjobs`:
 
     cat numjobsout
 
@@ -4364,7 +4366,7 @@ The output of the **getnumjobs**:
 
     PS: The stderr output (if any) follows:
 
-Modify the **master file** accordingly. Create the jobs using the **create\_export\_jobs** script and submit them to the cluster.
+Modify the **master file** accordingly. Create the jobs using the `create_export_jobs` script and submit them to the cluster.
 
 # New Multiview Reconstruction pipeline
 
@@ -4403,7 +4405,7 @@ First step in [**Multiview Reconstruction**](/plugins/multiview-reconstruction) 
 
 and describes a multi timepoint time-lapse with single channel, one illumination direction and multiple angles. (*Note that the timepoints and angles are defined elsewhere in the general part of the master file*).
 
-The parameters in the *master* file are sourced by a *create-dataset-jobs* bash script
+The parameters in the *master* file are sourced by a `create-dataset-jobs` bash script
 
     #!/bin/bash
     source /projects/tomancak_lightsheet/Valia/Valia/new_pipeline/master
@@ -4430,7 +4432,7 @@ The parameters in the *master* file are sourced by a *create-dataset-jobs* bash 
             -- --no-splash $define_xml" >> "$job"
     chmod a+x "$job"
 
-which creates a *create-dataset.job* bash script that passes the parameters to Fiji by executing *define\_xml.bsh* beanshell script
+which creates a `create-dataset.job` bash script that passes the parameters to Fiji by executing `define_xml.bsh` beanshell script
 
     import ij.IJ;
     import ij.ImagePlus;
@@ -4493,49 +4495,48 @@ which creates a *create-dataset.job* bash script that passes the parameters to F
     /* shutdown */
     runtime.exit(0);
 
-Since in this case it makes no sense to parallelise, it is best to launch the *create-dataset.job* in interactive mode on one of the nodes of the cluster (ideally not the headnode). On our cluster this will look like this:
+Since in this case it makes no sense to parallelise, it is best to launch the `create-dataset.job` in interactive mode on one of the nodes of the cluster (ideally not the headnode). On our cluster this will look like this:
 
-`[tomancak@madmax define_xml]$ `<font color=red>`./create-dataset-jobs`</font>` `  
-`/projects/tomancak_lightsheet/Valia/Valia/new_pipeline/jobs_master_beta_2.0/define_xml//create- dataset.job`  
-`[tomancak@madmax define_xml]$ `<font color=red>`bsub -q interactive -Is bash`</font>  
-`Job <484001> is submitted to queue `<interactive>`.`  
-`<<Waiting for dispatch ...>>`  
-`<`<Starting on n42>`>`  
-`[tomancak@n42 define_xml]$ `<font color=red>`./create-dataset.job`</font>`  `  
-`12 cores available for multi-threading`  
-`type of dataset=Image Stacks (ImageJ Opener)`  
-`xml filename=dataset.xml`  
-`multiple_timepoints=YES (one file per time-point)`  
-`multiple_channels=NO (one channel)`  
-`multiple_illumination_directions=NO (one illumination direction)`  
-`multiple_angles=YES (one file per angle)`  
-`dir=/projects/tomancak_lightsheet/Valia/Valia/raw/`  
-`pattern_of_spim=spim_TL{t}_Angle{a}.tif`  
-`timepoint=1-715`  
-`angles=1,2,3,4,5,6`  
-`xy_resolution=1`  
-`z_resolution=3.497273`  
-`imglib_container=ArrayImg (faster)`  
-`1`  
-`Minimal resolution in all dimensions over all views is: 1.0`  
-`(The smallest resolution in any dimension; the distance between two pixels in the output image will be  that wide)`  
-<font color=red>`Saved xml '/projects/tomancak_lightsheet/Valia/Valia/raw/dataset.xml'.`</font>
+```
+[tomancak@madmax define_xml]$ ./create-dataset-jobs
+/projects/tomancak_lightsheet/Valia/Valia/new_pipeline/jobs_master_beta_2.0/define_xml//create- dataset.job
+[tomancak@madmax define_xml]$ bsub -q interactive -Is bash
+Job <484001> is submitted to queue <interactive>.
+<<Waiting for dispatch ...>>
+<<Starting on n42>>
+[tomancak@n42 define_xml]$ ./create-dataset.job
+12 cores available for multi-threading
+type of dataset=Image Stacks (ImageJ Opener)
+xml filename=dataset.xml
+multiple_timepoints=YES (one file per time-point)
+multiple_channels=NO (one channel)
+multiple_illumination_directions=NO (one illumination direction)
+multiple_angles=YES (one file per angle)
+dir=/projects/tomancak_lightsheet/Valia/Valia/raw/
+pattern_of_spim=spim_TL{t}_Angle{a}.tif
+timepoint=1-715
+angles=1,2,3,4,5,6
+xy_resolution=1
+z_resolution=3.497273
+imglib_container=ArrayImg (faster)
+1
+Minimal resolution in all dimensions over all views is: 1.0
+(The smallest resolution in any dimension; the distance between two pixels in the output image will be  that wide)
+Saved xml '/projects/tomancak_lightsheet/Valia/Valia/raw/dataset.xml'.
 
-End result should be a *dataset.xml* created in the directory where the raw data reside.
+End result should be a `dataset.xml` created in the directory where the raw data reside.
 
 Tips and tricks:
 
 -   In order to change the definition of the dataset define it locally with gui and macro recorder turned on and copy/paste the relevant macro parameters to the master file.
 
-<!-- -->
-
--   Macro commands that consist of strings are usually surrounded by square brackets "\[\]". Do NOT put the brackets into the master file, they are provided by the Beanshell script.
+-   Macro commands that consist of strings are usually surrounded by square brackets `[]`. Do NOT put the brackets into the master file, they are provided by the BeanShell script.
 
 ## Re-save as HDF5
 
-*Note: this step is optional at this point. Re-saving to HDF5 can be done also after registration or not at all*.
+{% include notice icon='note' content="This step is optional at this point. Re-saving to HDF5 can be done also after registration or not at all." %}
 
-The purpose of this step is to convert the raw light sheet data (either *.czi* or *.tif*) into the HDF5 container that is optimised for fast viewing through the BigDataViewer Fiji plugin.
+The purpose of this step is to convert the raw light sheet data (either `.czi` or `.tif`) into the HDF5 container that is optimised for fast viewing through the BigDataViewer Fiji plugin.
 
 Relevant portion of the master file looks like this:
 
@@ -4598,9 +4599,9 @@ As usual, we create cluster jobs per timepoint by sourcing the master file param
         chmod a+x "$job"
     done
 
-*Note that we first run a job with parameter **run\_only\_job\_number** set to **0**. This creates the master dataset.h5 file.*
+{% include notice icon='note' content="Note that we first run a job with parameter `run_only_job_number` set to `0`. This creates the master `dataset.h5` file." %}
 
-The rest of the *hdf5-<number>.job* bash scripts execute *export.bsh* Beanshell using Fiji
+The rest of the `hdf5-<number>.job` bash scripts execute `export.bsh` BeanShell using Fiji
 
     import ij.IJ;
     import ij.ImagePlus;
@@ -4655,7 +4656,7 @@ The rest of the *hdf5-<number>.job* bash scripts execute *export.bsh* Beanshell 
     /* shutdown */
     System.exit(0);
 
-The *hdf5-<number>.job* bash scripts will be submitted to the cluster with the following *submit-jobs* script
+The `hdf5-<number>.job` bash scripts will be submitted to the cluster with the following `submit-jobs` script
 
     #!/bin/bash
 
@@ -4664,35 +4665,37 @@ The *hdf5-<number>.job* bash scripts will be submitted to the cluster with the f
         bsub -q short -n 1 -R rusage[mem=10000] -R span[hosts=1] -o "out.%J" -e "err.%J" ${1}/$file
     done
 
-and generate in the raw data directory a series of *.h5* files. Each file contains the raw data for one time-point. At this point without any registration.
+and generate in the raw data directory a series of `.h5` files. Each file contains the raw data for one time-point. At this point without any registration.
 
-`hdf5_dataset.h5`  
-`hdf5_dataset-00-00.h5`  
-`hdf5_dataset-01-00.h5`  
-`hdf5_dataset-02-00.h5`  
-`hdf5_dataset-03-00.h5`  
-`hdf5_dataset-04-00.h5`  
-`hdf5_dataset-05-00.h5`  
-`hdf5_dataset-06-00.h5`  
-`hdf5_dataset-07-00.h5`  
-`hdf5_dataset-08-00.h5`  
-`hdf5_dataset-09-00.h5`
+```
+hdf5_dataset.h5
+hdf5_dataset-00-00.h5
+hdf5_dataset-01-00.h5
+hdf5_dataset-02-00.h5
+hdf5_dataset-03-00.h5
+hdf5_dataset-04-00.h5
+hdf5_dataset-05-00.h5
+hdf5_dataset-06-00.h5
+hdf5_dataset-07-00.h5
+hdf5_dataset-08-00.h5
+hdf5_dataset-09-00.h5
+```
 
-and new *hdf5\_dataset.xml*.
+and new `hdf5_dataset.xml`.
 
 From now on, the data are in the HDF5 container (unregistered) and can be viewed in [BigDataViewer](/plugins/bdv). In the next step we register the data by running the registration pipeline and updating the XML.
 
 ## Multiview registration
 
-We now have to .xml files. *dataset.xml* created during the define xml step and *hdf5\_dataset.xml* created after re-saving to HDF5. Lets first make a copy of the *dataset.xml*
+We now have to `.xml` files. `dataset.xml` created during the define xml step and `hdf5_dataset.xml` created after re-saving to HDF5. Lets first make a copy of the `dataset.xml`
 
     cp dataset.xml original_dataset.xml
 
-and copy the *hdf5\_dataset.xml* into *dataset.xml*
+and copy the `hdf5_dataset.xml` into `dataset.xml`
 
     cp hdf5_dataset.xml dataset.xml
 
-Like this we have a back-up of the two intermediate state XMLs and a *dataset.xml* to use as input for registration.
+Like this we have a back-up of the two intermediate state XMLs and a `dataset.xml` to use as input for registration.
 
 The parts of *master* file relevant for multiview registration look as follow:
 
@@ -4742,7 +4745,7 @@ and
     lambda="0.10"
     allowed_error_for_ransac="5"
 
-The parameters are read from *master* through the *create-registration-jobs*
+The parameters are read from *master* through the `create-registration-jobs`
 
     #!/bin/bash
     source /projects/tomancak_lightsheet/Valia/Valia/new_pipeline/master
@@ -4788,7 +4791,7 @@ The parameters are read from *master* through the *create-registration-jobs*
         chmod a+x "$job"
     done
 
-which generates `registration\_<number>.job` bash scripts that launches `registration.bsh` in Fiji on the cluster
+which generates `registration_<number>.job` bash scripts that launches `registration.bsh` in Fiji on the cluster
 
     import ij.IJ;
     import ij.ImagePlus;
@@ -4925,7 +4928,7 @@ which generates `registration\_<number>.job` bash scripts that launches `registr
 -   Detect Interest Points for Registration - detects beads or sample features used for registration
 -   Register Dataset based on Interest Points - does the actual registration using the detected interest points
 
-The *registration\_<number>.job* scripts are submitted to the cluster with *submit\_jobs* bash
+The `registration_<number>.job` scripts are submitted to the cluster with `submit_jobs` bash
 
     #!/bin/bash
 
@@ -4936,16 +4939,18 @@ The *registration\_<number>.job* scripts are submitted to the cluster with *subm
 
 The result of the registration are 10 XML files, one for each timepoint, in the raw data directory:
 
-`dataset.job_1.xml`  
-`dataset.job_10.xml`  
-`dataset.job_2.xml`  
-`dataset.job_3.xml`  
-`dataset.job_4.xml`  
-`dataset.job_5.xml`  
-`dataset.job_6.xml`  
-`dataset.job_7.xml`  
-`dataset.job_8.xml`  
-`dataset.job_9.xml`
+```
+dataset.job_1.xml
+dataset.job_10.xml
+dataset.job_2.xml
+dataset.job_3.xml
+dataset.job_4.xml
+dataset.job_5.xml
+dataset.job_6.xml
+dataset.job_7.xml
+dataset.job_8.xml
+dataset.job_9.xml
+```
 
 ## Merge XMLs
 
@@ -4955,50 +4960,54 @@ The merge step has a single specific parameter in the *master*'
 
     merge_xml=${job_directory}"define_xml/merge_xml.bsh"                    # script
 
-*create-merge-jobs* bash script
+`create-merge-jobs` bash script
 
-    #!/bin/bash
-    source /projects/tomancak_lightsheet/Valia/Valia/new_pipeline/master
+```shell
+#!/bin/bash
+source /projects/tomancak_lightsheet/Valia/Valia/new_pipeline/master
 
-    job="$jobs_xml/merge.job"
-    echo $job
-    echo "#!/bin/bash" > "$job"
-    echo "$XVFB_RUN -a $Fiji \
-        -Dxml_path=$dir \
-        -Dxml_filename=$xml_filename \
-            -- --no-splash $merge_xml" >> "$job"
-    chmod a+x "$job"
+job="$jobs_xml/merge.job"
+echo $job
+echo "#!/bin/bash" > "$job"
+echo "$XVFB_RUN -a $Fiji \
+    -Dxml_path=$dir \
+    -Dxml_filename=$xml_filename \
+        -- --no-splash $merge_xml" >> "$job"
+chmod a+x "$job"
+```
 
-creates *merge.job* that will execute *merge\_xml.bsh* on the cluster node using Fiji
+creates `merge.job` that will execute `merge_xml.bsh` on the cluster node using Fiji
 
-    import ij.IJ;
-    import ij.ImagePlus;
-    import java.lang.Runtime;
-    import java.io.File;
-    import java.io.FilenameFilter;
+```java
+import ij.IJ;
+import ij.ImagePlus;
+import java.lang.Runtime;
+import java.io.File;
+import java.io.FilenameFilter;
 
-    runtime = Runtime.getRuntime();
-    System.out.println(runtime.availableProcessors() + " cores available for multi-threading");
+runtime = Runtime.getRuntime();
+System.out.println(runtime.availableProcessors() + " cores available for multi-threading");
 
-    xml_path = System.getProperty( "xml_path" );
-    xml_filename = System.getProperty( "xml_filename" );
+xml_path = System.getProperty( "xml_path" );
+xml_filename = System.getProperty( "xml_filename" );
 
-    System.out.println( "directory=" + xml_path );
+System.out.println( "directory=" + xml_path );
 
-    IJ.run("Merge Cluster Jobs",
-        "directory=" + xml_path + " " +     
-        "filename_contains=job_ " +
-        "filename_also_contains=.xml " +
-        "display " +
-    //  "delete_xml's " +
-        "merged_xml=registered_" + xml_filename);
+IJ.run("Merge Cluster Jobs",
+    "directory=" + xml_path + " " +     
+    "filename_contains=job_ " +
+    "filename_also_contains=.xml " +
+    "display " +
+//  "delete_xml's " +
+    "merged_xml=registered_" + xml_filename);
 
-    /* shutdown */
-    runtime.exit(0);
+/* shutdown */
+runtime.exit(0);
+```
 
-*merge.job* should be executed on the cluster in interactive mode (see [SPIM\_Registration\_on\_cluster\#Define\_XML](/plugins/spim-registration/on-cluster#define-xml)).
+`merge.job` should be executed on the cluster in interactive mode (see [here](/plugins/spim-registration/on-cluster#define-xml)).
 
-The result of the merge is *registration\_dataset,xml*. This is the final product of the registration pipeline. The results of registration can be viewed using [BigDataViewer](/plugins/bdv)
+The result of the merge is `registration_dataset.xml`. This is the final product of the registration pipeline. The results of registration can be viewed using [BigDataViewer](/plugins/bdv)
 
 Tips and tricks
 

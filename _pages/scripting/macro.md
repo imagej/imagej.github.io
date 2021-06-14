@@ -311,7 +311,7 @@ macro "Title of the macro" {
 
 Then you need to *install* them:
 
-Simply save your macro in a "/plugins" subfolder of `./Fiji.app/scripts/` (e.g. `./Fiji.app/scripts/Plugins/MyScripts/My\_Macro.ijm`), and it will appear in the respective menu (e.g. {% include bc path="Plugins | MyScripts | My Macro" %}) upon restart of [Fiji](/software/fiji).
+Simply save your macro in a "/plugins" subfolder of `./Fiji.app/scripts/` (e.g. `./Fiji.app/scripts/Plugins/MyScripts/My_Macro.ijm`), and it will appear in the respective menu (e.g. {% include bc path="Plugins | MyScripts | My Macro" %}) upon restart of [Fiji](/software/fiji).
 
 Note: The {% include bc path="Plugins | Macro | Install..." %} command is an ImageJ 1.x command that does not yet support the SciJava [Script Parameters](/scripting/parameters) syntax (@) that was introduced with ImageJ2.
 
