@@ -52,30 +52,30 @@ def connect():
     })
 
 
-def summary(client, name):
+def summary(client, collection):
     summary = client.collections.retrieve()
     for item in summary:
-        if item['name'] == name:
+        if item['name'] == collection:
             return item
 
 
-def drop(client):
+def drop(client, collection):
     """
-    Delete the ImageJ wiki collection.
+    Delete the collection with the given name.
     """
-    client.collections['imagej-wiki'].delete()
+    client.collections[collection].delete()
     info('Deleted existing collection')
 
 
-def create(client, documents, force=False):
+def create(client, collection, documents, force=False):
     """
-    Create the ImageJ wiki collection, if it doesn't already exist.
+    Create the collection with the given name, if it doesn't already exist.
 
     :return: True if newly created; False if collection already exists.
     """
-    if summary(client, 'imagej-wiki'):
+    if summary(client, collection):
         # already exists
-        if force: drop(client)
+        if force: drop(client, collection)
         else: return False
 
     # Typesense allows you to index the following types of fields:
@@ -96,7 +96,7 @@ def create(client, documents, force=False):
     fields.extend({'name': key, 'type': 'string', 'optional': True} for key in fieldset)
 
     schema = {
-        'name': 'imagej-wiki',
+        'name': collection,
         'fields': fields,
         'default_sorting_field': 'score',
     }
@@ -192,14 +192,18 @@ def load_jekyll_site(docroot, defaults):
     return documents
 
 
-def update_index(client, documents):
+def update_index(client, collection, documents):
     """
-    Update the ImageJ wiki collection to match the given documents.
+    Update the collection with the given name to match the given documents.
     """
-    client.collections['imagej-wiki'].documents.import_(documents, {'action': 'upsert'})
+    client.collections[collection].documents.import_(documents, {'action': 'upsert'})
 
+if len(sys.argv) < 2:
+    print('Usage: index-site.py <collection-name> <jekyll-site-docroot>')
+    sys.exit(1)
 
-pathname = os.path.dirname(sys.argv[0])
+collection = sys.argv[0]
+pathname = os.path.dirname(sys.argv[1])
 config = os.path.join(pathname, '..', '..', '_config.yml')
 docroot = os.path.join(pathname, '..', '..', '_pages')
 if not os.path.isdir(docroot):
@@ -216,8 +220,8 @@ info(f'Loaded {len(documents)} documents')
 
 client = connect()
 info('Connected to typesense')
-created = create(client, documents, force=True)
+created = create(client, collection, documents, force=True)
 info('Created new collection' if created else 'Updating existing collection')
 info(f'Indexing {len(documents)} documents...')
-update_index(client, documents)
+update_index(client, collection, documents)
 info('Done!')
