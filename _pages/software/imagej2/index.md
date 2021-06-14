@@ -1,11 +1,9 @@
 ---
-mediawiki: ImageJ2
 title: ImageJ2
 section: Explore:Software
 doi: 10.1186/s12859-017-1934-z
+artifact: net.imagej:imagej
 ---
-
-{% include project content='ImageJ' %}
 
 {% include aside content="
 ## Mission
@@ -19,11 +17,11 @@ doi: 10.1186/s12859-017-1934-z
 
 See also [these presentation slides about ImageJ](/presentations/2015-09-03-imagej2-and-fiji/#/4)." %}
 
-ImageJ2 is a new version of [ImageJ](/software/imagej) for the next generation of multidimensional image data, with a focus on scientific imaging. Its central goal is to broaden the paradigm of ImageJ beyond the limitations of ImageJ 1.x, to support the next generation of multidimensional scientific imaging.
+ImageJ2 is a new version of [ImageJ](/software/imagej) for multidimensional image data, with a focus on scientific imaging. Its central goal is to broaden the paradigm of ImageJ beyond the limitations of ImageJ 1.x, to support the next generation of multidimensional scientific imaging.
 
 To ensure backwards compatibility, ImageJ2 has been designed to fully integrate into the existing ImageJ user interface. This allows users to keep using ImageJ in familiar ways, while providing the ability to migrate toward more powerful new features as needed.
 
-The [Fiji](/software/fiji) distribution of ImageJ has shipped with beta versions of ImageJ2 for quite some time, so you may already be familiar with some of ImageJ2's features—some of which, such as the [Updater](/plugins/updater) and [Launcher](/learn/launcher), were originally developed as part of Fiji. 
+The [Fiji](/software/fiji) distribution of ImageJ has been built on top of ImageJ2 for quite some time, so you may already be familiar with some of ImageJ2's features—some of which, such as the [Updater](/plugins/updater) and [Launcher](/learn/launcher), were originally developed as part of Fiji. 
 
 
 ## Features of ImageJ2
