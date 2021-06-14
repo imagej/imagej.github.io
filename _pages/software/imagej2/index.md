@@ -17,9 +17,9 @@ artifact: net.imagej:imagej
 
 See also [these presentation slides about ImageJ](/presentations/2015-09-03-imagej2-and-fiji/#/4)." %}
 
-ImageJ2 is a new version of [ImageJ](/software/imagej) for multidimensional image data, with a focus on scientific imaging. Its central goal is to broaden the paradigm of ImageJ beyond the limitations of ImageJ 1.x, to support the next generation of multidimensional scientific imaging.
+ImageJ2 is a new version of [ImageJ](/software/imagej) for multidimensional image data, with a focus on scientific imaging. Its central goal is to broaden the paradigm of ImageJ beyond the limitations of [ImageJ 1.x](/software/imagej1), to support the next generation of multidimensional scientific imaging.
 
-To ensure backwards compatibility, ImageJ2 has been designed to fully integrate into the existing ImageJ user interface. This allows users to keep using ImageJ in familiar ways, while providing the ability to migrate toward more powerful new features as needed.
+To ensure backwards compatibility, ImageJ2 has been designed to fully integrate into the existing ImageJ 1.x user interface. This allows users to keep using ImageJ in familiar ways, while providing the ability to migrate toward more powerful new features as needed.
 
 The [Fiji](/software/fiji) distribution of ImageJ has been built on top of ImageJ2 for quite some time, so you may already be familiar with some of ImageJ2's features—some of which, such as the [Updater](/plugins/updater) and [Launcher](/learn/launcher), were originally developed as part of Fiji. 
 
@@ -73,7 +73,7 @@ See the [Architecture](/develop/architecture) page for further details.
 
 ## Rationale
 
-In recent years a segment of the ImageJ developer community has repeatedly inquired as to ImageJ's future. The program has been successful enough that it would greatly benefit from modern open source software best practices: a publicly accessible source code repository, a suite of unit tests with a continuous build integration system, a central repository of extensions, clear guidelines on how external developers can contribute to both those extensions and to the core program when warranted, and a development roadmap addressing feature requests and tasks from the community.
+In recent years a segment of the ImageJ developer community has repeatedly inquired as to ImageJ's future. The program has been successful enough that it would greatly benefit from current open-source software best practices: a publicly accessible source code repository, a suite of unit tests with a continuous build integration system, a central repository of extensions, clear guidelines on how external developers can contribute to both those extensions and to the core program when warranted, and a development roadmap addressing feature requests and tasks from the community.
 
 Listening to the ImageJ community, it is clear that:
 
