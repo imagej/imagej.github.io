@@ -16,7 +16,7 @@ This plugin stabilizes jittery image stacks using the Lucas-Kanade algorithm. It
 
 It uses the currently shown slice in an image stack as the initial reference, or "template"; It estimates the geometrical transformation needed to best align each of the other slices with the "template". The estimation and alignment are performed using the Lucas-Kanade algorithm; Once a slice is aligned, the "template" will be updated on the fly using the formula: `new_template = a * old_template + (1 - a) * newly_aligned_slice`, where `a` is the "template update coefficient" that can be adjusted when the plugin is run.
 
-{% include notice icon="tip" content="To process very large image stacks, import the stack with the "Use Virtual Stack" option enabled. The plugin will prompt you for an output directory to store the stabilized image sequence." %}
+{% include notice icon="tip" content="To process very large image stacks, import the stack with the \"Use Virtual Stack\" option enabled. The plugin will prompt you for an output directory to store the stabilized image sequence." %}
 
 ## Change log
 
