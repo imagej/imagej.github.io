@@ -6,7 +6,7 @@ categories: [Registration,Stitching]
 
 
 {% capture source%}
-{% include github org='fiji' repo='Stitching' branch='master' source='plugin/Stitching\_Grid.java' %}
+{% include github org='fiji' repo='Stitching' branch='master' source='plugin/Stitching_Grid.java' %}
 {% endcapture %}
 {% include info-box name='Stitching' software='ImageJ' author='Stephan Preibisch' maintainer='Stephan Preibisch  
 Mark Hiner  

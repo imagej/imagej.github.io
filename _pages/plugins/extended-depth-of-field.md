@@ -6,7 +6,7 @@ categories: [Tutorials]
 
 
 {% capture source%}
-{% include github org='fiji' repo='Extended\_Depth\_Field' %}
+{% include github org='fiji' repo='Extended_Depth_Field' %}
 {% endcapture %}
 {% include info-box software='ImageJ' name='Extended Depth of Field' maintainer='Daniel Sage' author='Alex Prudencio' source=source released='24/12/2010' latest-version='24/12/2010' status='stable' category='Plugins' website=' [http://bigwww.epfl.ch/demo/edf/](http://bigwww.epfl.ch/demo/edf/)' %}
 

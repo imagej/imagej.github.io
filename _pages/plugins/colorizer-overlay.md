@@ -4,7 +4,7 @@ title: Colorizer Overlay
 categories: [Image Annotation]
 ---
 
-{% include info-box software='ImageJ1' name='Colorizer\_Overlay' author='Fred Damen' filename='Colorizer\_Overlay.jar' source=' [Colorizer\_Overlay.zip](/media/plugins/colorizer-overlay.zip)' released='1 April 2020' status='stable' category='Image annotation' website='' %}
+{% include info-box software='ImageJ1' name='Colorizer\_Overlay' author='Fred Damen' filename='Colorizer\_Overlay.jar' source=' [Colorizer_Overlay.zip](/media/plugins/colorizer-overlay.zip)' released='1 April 2020' status='stable' category='Image annotation' website='' %}
 
 The Colorizer\_Overlay plugin provides the ability to apply a LUT, colorbar, and annotation to a map, i.e., quantified image, and overlay this upon a background image. The impetus for this plugin was my inability to remember how to perform all the necessary steps and the laborious task of doing this again and again whenever my whim for the best representation of my data kicked in, usually right before an abstract deadline.
 

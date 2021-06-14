@@ -6,7 +6,7 @@ categories: [Uncategorized]
 
 
 {% capture source%}
-{% include github org='fiji' repo='VIB' branch='master' source='features/Tubeness\_.java' %}
+{% include github org='fiji' repo='VIB' branch='master' source='features/Tubeness_.java' %}
 {% endcapture %}
 {% include info-box software='ImageJ' name='Tubeness' author='Mark Longair, Stephan Preibisch' maintainer='Mark Longair' filename='VIB\_.jar' source=source status='stable' %}
 

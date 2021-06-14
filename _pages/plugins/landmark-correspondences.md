@@ -14,7 +14,7 @@ categories: [Transform,Registration]
 {% endcapture %}
 
 {% capture source%}
-{% include github org='axtimwalde' repo='mpicbg' branch='master' path='mpicbg\_/src/main/java/Transform\_Roi.java' %}
+{% include github org='axtimwalde' repo='mpicbg' branch='master' path='mpicbg_/src/main/java/Transform_Roi.java' %}
 {% endcapture %}
 {% include info-box name='(Transform by) Landmark Correspondences' software='Fiji' author=author maintainer=maintainer source=source released='August 7<sup>th</sup>, 2008' latest-version='October 19<sup>th</sup>, 2010' status='stable, active' category='Plugins, Transform,Registration' %} The plugin **Landmark Correspondences** calculates a transformation between two corresponding landmark clouds and renders a transformed image. The landmarks are read from point selections over two images. The transformation is estimated by a least squares or Moving Least Squares fit for the available models.
 

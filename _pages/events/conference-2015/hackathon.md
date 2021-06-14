@@ -21,7 +21,7 @@ As always, there were lots of other exciting collaborations going on, too!
 -   The {% include github org='imagej' repo='imagej-omero' label='ImageJ-OMERO' %} plugin (Alex + Curtis)
 -   SciJava {% include github org='scijava' repo='scijava-common' pr='167' label='robust-io redesign' %} (Curtis)
 -   SCIFIO {% include github org='scifio' repo='scifio' issue='283' label='blockization' %} (Mark)
--   {% include github org='fiji' repo='colocalisation\_analysis' label='Coloc2' %} bugs? (Ellen)
+-   {% include github org='fiji' repo='colocalisation_analysis' label='Coloc2' %} bugs? (Ellen)
 -   KNIME paper (Mark + Christian)
 
 ## Participants

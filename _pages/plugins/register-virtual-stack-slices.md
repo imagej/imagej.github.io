@@ -208,7 +208,7 @@ You can call the plugin in a non-interactive fashion from a jython script:
 
 -   [Transform Virtual Stack Slices](/plugins/transform-virtual-stack-slices), to see how to load the saved transforms.
 -   [FloatArray2DSIFT.java](https://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=mpicbg/imagefeatures/FloatArray2DSIFT.java;hb=HEAD) which contains the subclass Param which is the 'sift' member of the Register\_Virtual\_Stack\_Slices.Param subclass.
--   {% include github org='fiji' repo='register\_virtual\_stack\_slices' branch='master' source='register\_virtual\_stack/Register\_Virtual\_Stack\_MT.java' label='Register\_Virtual\_Stack\_MT.java' %}, including the Param subclass.
+-   {% include github org='fiji' repo='register_virtual_stack_slices' branch='master' source='register_virtual_stack/Register_Virtual_Stack_MT.java' label='Register\_Virtual\_Stack\_MT.java' %}, including the Param subclass.
 -   [Elastic Alignment and Montage plugin](/plugins/elastic-alignment-and-montage), for elastic registration/montage of large datasets using spring meshes (local deformations).
 
 ## References

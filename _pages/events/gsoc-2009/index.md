@@ -118,7 +118,7 @@ The core idea of this project is to generate a plugins manager, inspired in the 
 
 The lack of a plugin manager system is an enormous drag on the ability of good plugins to be widely distributed, and the ability of needy users to find them. The ability to be registered will also ensure proper compatibility with specific ImageJ versions, and the ability to track plugin versions.
 
-At the moment, there is a rudimentary {% include github repo='fiji' branch='master' path='src-plugins/Fiji\_Updater/UpdateFiji.java' label='plugin updater' %} which should be a good starting point for this project. The list of current plugins used by that plugin can be found [here](http://update.fiji.sc/current.txt).
+At the moment, there is a rudimentary {% include github repo='fiji' branch='master' path='src-plugins/Fiji_Updater/UpdateFiji.java' label='plugin updater' %} which should be a good starting point for this project. The list of current plugins used by that plugin can be found [here](http://update.fiji.sc/current.txt).
 
 **Goal:** Convert Fiji's update plugin into a proper plugin manager.  
 The GUI should have two main components: a tree with the plugins and a text pane for reading documentation.
@@ -158,7 +158,7 @@ The project would consist of
 
 <!-- -->
 
--   integrating JMathLib as a script language into Fiji (using the infrastructure shared by Jython, JRuby, Clojure, Javascript and BeanShell) -- I suggest having a look at {% include github repo='fiji' branch='master' path='src-plugins/JRuby/JRuby\_Interpreter.java' label='the JRuby Interpreter' %} for an example,
+-   integrating JMathLib as a script language into Fiji (using the infrastructure shared by Jython, JRuby, Clojure, Javascript and BeanShell) -- I suggest having a look at {% include github repo='fiji' branch='master' path='src-plugins/JRuby/JRuby_Interpreter.java' label='the JRuby Interpreter' %} for an example,
 
 <!-- -->
 

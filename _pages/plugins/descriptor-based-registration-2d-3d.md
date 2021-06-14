@@ -10,7 +10,7 @@ categories: [Uncategorized]
 {% endcapture %}
 
 {% capture source%}
-{% include github org='fiji' repo='Descriptor\_based\_registration' %}
+{% include github org='fiji' repo='Descriptor_based_registration' %}
 {% endcapture %}
 {% include info-box software='ImageJ' name='Descriptor-based registration' maintainer=maintainer author='Stephan Preibisch' source=source released='30/11/2011' latest-version='30/11/2011' status='' category='Plugins' website='' %}
 

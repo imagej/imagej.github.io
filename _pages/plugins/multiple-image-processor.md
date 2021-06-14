@@ -6,7 +6,7 @@ categories: [Uncategorized]
 
 
 {% capture source%}
-{% include github org='fiji' repo='M\_I\_P' %}
+{% include github org='fiji' repo='M_I_P' %}
 {% endcapture %}
 {% include info-box software='ImageJ' name='Multiple Image Processor' maintainer='[at rcm.upr.edu](mailto:ngonzalez)' author='Nathaniel Gonzalez Santiago' source=source released='10/10/2005' latest-version='10/10/2005' status='stable' category='Plugins' website=' [Center for Information Architecture in Research](http://ciar.rcm.upr.edu/projects/imageprocessor/multiples)' %}
 

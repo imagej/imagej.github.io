@@ -63,7 +63,7 @@ The project would consist of
 
 -   getting as many .m scripts for image processing as possible,
 
--   integrating JMathLib as a script language into Fiji (using the infrastructure shared by Jython, JRuby, Clojure, Javascript and BeanShell) -- I suggest having a look at {% include github repo='fiji' branch='master' path='src-plugins/JRuby\_Interpreter/src/main/java/JRuby/JRuby\_Interpreter.java' label='the JRuby Interpreter' %} for an example,
+-   integrating JMathLib as a script language into Fiji (using the infrastructure shared by Jython, JRuby, Clojure, Javascript and BeanShell) -- I suggest having a look at {% include github repo='fiji' branch='master' path='src-plugins/JRuby_Interpreter/src/main/java/JRuby/JRuby_Interpreter.java' label='the JRuby Interpreter' %} for an example,
 
 -   adapting (or overriding) JMathLib's image toolbox so that it integrates seamlessly with ImageJ,
 

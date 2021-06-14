@@ -6,7 +6,7 @@ categories: [Uncategorized]
 
 
 {% capture source%}
-{% include github org='fiji' repo='Differentials' branch='master' source='Differentials\_.java' %}
+{% include github org='fiji' repo='Differentials' branch='master' source='Differentials_.java' %}
 {% endcapture %}
 {% include info-box software='ImageJ' name='Differentials' maintainer='Philippe Thévenaz' author='Philippe Thévenaz' source=source released='16/09/2010' latest-version='16/09/2010' status='' category='Plugins' website='http://bigwww.epfl.ch/thevenaz/differentials/' %}
 

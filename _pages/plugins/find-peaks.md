@@ -10,7 +10,7 @@ categories: [Scripting,Analysis]
 {% endcapture %}
 
 {% capture filename%}
-{% include github org='tferr' repo='Scripts' branch='master' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/Find\_Peaks.bsh' %}
+{% include github org='tferr' repo='Scripts' branch='master' path='BAR/src/main/resources/scripts/BAR/Data_Analysis/Find_Peaks.bsh' %}
 {% endcapture %}
 
 {% capture source%}

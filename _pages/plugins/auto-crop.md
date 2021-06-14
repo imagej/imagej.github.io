@@ -10,7 +10,7 @@ categories: [Tutorials]
 {% endcapture %}
 
 {% capture source%}
-{% include github org='fiji' repo='Fiji\_Plugins' branch='master' source='fiji/selection/Select\_Bounding\_Box.java' %}
+{% include github org='fiji' repo='Fiji_Plugins' branch='master' source='fiji/selection/Select_Bounding_Box.java' %}
 {% endcapture %}
 {% include info-box software='ImageJ' name='Auto Crop' maintainer=maintainer author='Johannes Schindelin' source=source released='40/02/2010' latest-version='30/04/2011' status='stable' category='Plugins' %}
 

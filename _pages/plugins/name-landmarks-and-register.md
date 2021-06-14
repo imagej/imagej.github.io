@@ -6,7 +6,7 @@ categories: [Uncategorized]
 
 
 {% capture source%}
-{% include github org='fiji' repo='VIB' branch='master' source='landmarks/Name\_Points.java' %}
+{% include github org='fiji' repo='VIB' branch='master' source='landmarks/Name_Points.java' %}
 {% endcapture %}
 {% include info-box software='ImageJ' name='Name Landmarks and Register' author='Mark Longair and Greg Jefferis' maintainer='Mark Longair' filename='VIB\_.jar' source=source status='stable' %}
 

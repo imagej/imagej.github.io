@@ -9,7 +9,7 @@ artifact: sc.fiji:SPIM_Registration
 
 ## Download
 
-The integration of the **Multiview Reconstruction** and the [BigDataViewer](/plugins/bdv) is available through the Fiji Updater. Simply update Fiji and the Multiview-Reconstruction pipeline will be available under '{% include bc path='Plugins | Multiview Reconstruction | Multiview Reconstruction Application'%}'. The source code is available {% include github org='bigdataviewer' repo='SPIM\_Registration' %}, please also report feature requests & bugs there.
+The integration of the **Multiview Reconstruction** and the [BigDataViewer](/plugins/bdv) is available through the Fiji Updater. Simply update Fiji and the Multiview-Reconstruction pipeline will be available under '{% include bc path='Plugins | Multiview Reconstruction | Multiview Reconstruction Application'%}'. The source code is available {% include github org='bigdataviewer' repo='SPIM_Registration' %}, please also report feature requests & bugs there.
 
 To enable GPU hardware accelerated processing, you might want to download the **native CUDA code** for:
 
