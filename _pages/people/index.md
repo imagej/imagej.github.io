@@ -1,7 +1,4 @@
 ---
-mediawiki:
-- Contributors
-- Maintainer_page
 title: Contributors
 section: Contribute
 ---
