@@ -169,7 +169,7 @@ section: Explore:Software:Fiji
 
 {% include citation fn=13 doi='10.1371/journal.pbio.1000502' %}
 
-{% include citation fn=14 content='journal' author='Verena Kaynig, Thomas Fuchs, Joachim M. Buhmann' title='Neuron Geometry Extraction by Perceptual Grouping in ssTEM Images' journal='CVPR' year='2010' url='http://kaynig.de/kaynig\_cvpr2010.pdf' %}
+{% include citation fn=14 content='journal' author='Verena Kaynig, Thomas Fuchs, Joachim M. Buhmann' title='Neuron Geometry Extraction by Perceptual Grouping in ssTEM Images' journal='CVPR' year='2010' url='http://kaynig.de/kaynig_cvpr2010.pdf' %}
 
 {% include citation fn=15 content='journal' author='Longair Mark, Baker DA, Armstrong JD.' title='Simple Neurite Tracer: Open Source software for reconstruction, visualization and analysis of neuronal processes.' journal='Bioinformatics' year='2011' url='http://bioinformatics.oxfordjournals.org/content/early/2011/07/04/bioinformatics.btr390.long' %}
 

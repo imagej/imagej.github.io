@@ -21,7 +21,7 @@ Created in Eclipse IDE. Requires jre 1.8, which is current ImageJ compatible.
 | v1.0.0  | 19 Nov 2015 |      |
 | v1.0.1  | 25 Nov 2015 |      |
 | v1.0.2  | 10 Apr 2017 |      |
-| v1.1.0  | 27 Feb 2018 | <span style="font-size:80%; line-height: 0.9em;">This version contains many new features that have been added by Brenden Kromhout https://github.com/bkromhout </span> |
+| v1.1.0  | 27 Feb 2018 | <span style="font-size:80%; line-height: 0.9em;">This version contains many new features that have been added by <a href="https://github.com/bkromhout">Brenden Kromhout</a></span> |
 | v1.1.1  | 02 Jul 2018 |      |
 | v1.1.2  | 04 Nov 2018 |      |
 | v1.1.3  | Jan 2019    |      |
@@ -35,16 +35,14 @@ Created in Eclipse IDE. Requires jre 1.8, which is current ImageJ compatible.
 {{ version-release-table | markdownify }}
 </details>
 
-
-
 ## Usage
+
 **Youtube tutorial:**
 
 {% include video platform='youtube' id='dLkoB25MTIY' align='left'%}
 
 This plugin can be called from a macro using:
 
-     
     run("Read and Write Excel");
 
 and it works very well with batching. A major change for v1.1.0, is that, if called slightly differently (see below), the plugin is now much better at handling large data sets and/or excel files that become large over time.
@@ -55,55 +53,46 @@ The title of the **most recent** open image is added as a label for exported res
 
 Arguments will be parsed from the second argument string as follows.
 
-"dataset\_label=" The label to write in the cell above the data in the excel file. Strings and numbers can also be fed to the custom title modifier from a macro/loop:
+`dataset_label=` The label to write in the cell above the data in the excel file. Strings and numbers can also be fed to the custom title modifier from a macro/loop:
 
-     
     run("Read and Write Excel", "dataset_label=[My new results data label]");
     //example with passed variable 'i'
     run("Read and Write Excel", "dataset_label=Table"+i);
 
-"no\_count\_column" Prevents the plugin from adding a "Count" column automatically:
+`no_count_column` Prevents the plugin from adding a "Count" column automatically:
 
-     
     run("Read and Write Excel", "no_count_column");
 
-"stack\_results" Causes the plugin to export results data underneath pre-existing data (instead of adjacent to it). NOTE: The dataset label for the now stacked data will be that determined for the most recent import:
+`stack_results` Causes the plugin to export results data underneath pre-existing data (instead of adjacent to it). NOTE: The dataset label for the now stacked data will be that determined for the most recent import:
 
-     
     run("Read and Write Excel", "stack_results");
 
-"file=" The path to the excel file to create and/or update (uses the default desktop file otherwise):
+`file=` The path to the excel file to create and/or update (uses the default desktop file otherwise):
 
-     
     run("Read and Write Excel", "file=[C:/Users/antinos/Desktop/My_file.xlsx]");
 
-"sheet=" Which sheet in the excel file to put the results in. For example, "sheet=banana" will create and/or append a sheet named 'banana':
+`sheet=` Which sheet in the excel file to put the results in. For example, `sheet=banana` will create and/or append a sheet named `banana`:
 
-     
     run("Read and Write Excel", "sheet=banana");
 
 Join arguments as follows:
 
-     
     run("Read and Write Excel", "no_count_column file=[C:/Users/antinos/Documents/My_cool_file.xlsx] sheet=[Custom name here] dataset_label=[Custom data title here]");
 
 ### Large data import and export
 
-"file\_mode=" This requires a slightly different way of calling the plugin but **is very useful for expected large datasets**. There are three options.
+`file_mode=` This requires a slightly different way of calling the plugin but **is very useful for expected large datasets**. There are three options.
 
-"file\_mode=read\_and\_open" Will just load/open an excel file into computer memory (the one you specify with file=)...make sure you do write\_and\_close when you're done or you'll have problems:
+`file_mode=read_and_open` Will just load/open an excel file into computer memory (the one you specify with `file=`)...make sure you do `write_and_close` when you're done or you'll have problems:
 
-     
     run("Read and Write Excel", "file=[C:/Users/antinos/Documents/My_cool_file.xlsx] file_mode=read_and_open");
 
-"file\_mode=queue\_write" Will queue something to be written to the excel file you've opened previously with read\_and\_open:
+`file_mode=queue_write` Will queue something to be written to the excel file you've opened previously with `read_and_open:`
 
-     
     run("Read and Write Excel", "file_mode=queue_write");
 
-"file\_mode=write\_and\_close" Will write everything you've queued with queue\_write, then close the excel file:
+`file_mode=write_and_close` Will write everything you've queued with `queue_write,` then close the excel file:
 
-     
     run("Read and Write Excel", "file_mode=write_and_close");
 
 Example large data macro workflow:
@@ -131,7 +120,7 @@ Example large data macro workflow:
     //finally write the queued results data to the file
     run("Read and Write Excel", "file_mode=write_and_close");
 
-Also see https://github.com/bkromhout/Read_and_Write_Excel_Modified for examples. **(However please note: whilst Brenden did an amazing job updating the plugin for the version 1.1 release, the most up-to-date version is currently not represented on his github repo)**
+Also see [Read\_and\_Write\_Excel\_Modified](https://github.com/bkromhout/Read_and_Write_Excel_Modified) for examples. **(However please note: whilst Brenden did an amazing job updating the plugin for the version 1.1 release, the most up-to-date version is currently not represented on his github repo)**
 
 ## Disclaimers and Licencing stuff
 
@@ -172,11 +161,11 @@ Version 1.1.1 changes:
 
 Version 1.1.2 changes:
 
-1.  Added an argument so that results data can be exported so that it appears underneath pre-existing data in the created/amended .xlsx file. To implement this function, call the plugin with the argument "stack\_results".
+1.  Added an argument so that results data can be exported so that it appears underneath pre-existing data in the created/amended .xlsx file. To implement this function, call the plugin with the argument `stack_results`.
 
 Version 1.1.3 changes:
 
-1.  Bug fix. Results data exported with the "stack\_results" argument was being incorrectly referenced after the plugin handled empty cells (from the 'Label' column). When they arise, these empty cells are now handled better.
+1.  Bug fix. Results data exported with the `stack_results` argument was being incorrectly referenced after the plugin handled empty cells (from the 'Label' column). When they arise, these empty cells are now handled better.
 
 Version 1.1.4 changes:
 
@@ -188,11 +177,11 @@ Version 1.1.5 changes:
 
 Version 1.1.6 changes:
 
-1.  Bug fix. Fixed a rare 'stack\_results' issue whereby the data was exported incorrectly if the results table and the excel file both contained a single-row of data.
+1.  Bug fix. Fixed a rare `stack_results` issue whereby the data was exported incorrectly if the results table and the excel file both contained a single-row of data.
 
 Version 1.1.7 changes:
 
-1.   Feature added. 'cell_ref' argument now allows data to be imported to the specified cell. User request from Stein Rørvik (steinr). NOTE: the plugin does not check to see if data is already present at the specified location, so overwriting is possible. Column headers are also not exported with the data.
+1.   Feature added. `cell_ref` argument now allows data to be imported to the specified cell. User request from Stein Rørvik (steinr). NOTE: the plugin does not check to see if data is already present at the specified location, so overwriting is possible. Column headers are also not exported with the data.
 
 {:.left}
 {% endcapture %}
@@ -201,8 +190,6 @@ Version 1.1.7 changes:
 </details>
 
 ### Dependencies
-
-{% capture dependency-table %}
 
 | Dependency | Maven Repo |
 |---|:-:|
@@ -213,11 +200,6 @@ Version 1.1.7 changes:
 | jars/poi.jar                  | [5](https://mvnrepository.com/artifact/org.apache.poi/poi)                      |
 | jars/ij.jar                   | [6](https://mvnrepository.com/artifact/net.imagej/ij)                           |
 {:.left}
-{% endcapture %}
-
-<div align="left">
-{{ dependency-table | markdownify }}
-</div>
 
 ### Update site
 

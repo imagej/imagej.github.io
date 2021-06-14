@@ -710,7 +710,7 @@ To print the static fields and methods of ImagePlus class:
     s = "";
     for (a in ImagePlus) { s += " " + a; }
 
-... which prints INTEGRATED\_DENSITY AREA\_FRACTION etc.
+... which prints `INTEGRATED_DENSITY` `AREA_FRACTION` etc.
 
 To print the fields and methods of an instance of ImagePlus (i.e. an image that already exists):
 
@@ -725,8 +725,8 @@ To print the fields and methods of an instance of ImagePlus (i.e. an image that 
 
 Save your javascript script in a text file:
 
-1.  with extension .js
-2.  and with an underscore '\_' in its name: my\_first\_script.js
+1.  with extension `.js`
+2.  and with an underscore `_` in its name: `my_first_script.js`
 
 ...and just drop it in ImageJ's plugins folder or a subfolder.
 

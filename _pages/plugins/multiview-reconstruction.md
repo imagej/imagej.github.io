@@ -181,7 +181,7 @@ During the [EMBO Practical Course on Lightsheet Microscopy](http://openspim.org/
 
 ### Talk: Registration of Multiview Lightsheet Fluorescence Microscopy (LSFM) Images
 
-{% include video platform='youtube' id='IupXS\_On2rg'%}
+{% include video platform='youtube' id='IupXS_On2rg'%}
 
 This 30-minute talk by {% include person id='StephanPreibisch' %} covers the theory behind registration of multiview lightsheet microscopy data and it also quickly addresses the problem of multiview fusion & deconvolution.
 

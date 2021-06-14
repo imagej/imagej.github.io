@@ -89,7 +89,7 @@ Both sums can be generated from two Integral Images over $$I(\vec{x})$$ and $$I(
 
 <div style="float: right">
 
-{% include video platform='youtube' id='MZfnTL9e\_fA'%}
+{% include video platform='youtube' id='MZfnTL9e_fA'%}
 
 </div>
 

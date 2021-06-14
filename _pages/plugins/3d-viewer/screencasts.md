@@ -11,7 +11,7 @@ For remaining questions, there is also a detailed [User FAQs](/plugins/3d-viewer
 
 ## Display stacks
 
-{% include video platform='youtube' id='SigXijr\_nQg'%}
+{% include video platform='youtube' id='SigXijr_nQg'%}
 
 This movie demonstrates
 
