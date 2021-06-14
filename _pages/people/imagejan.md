@@ -21,3 +21,19 @@ scopus: 23980003300
 
 Hi, I'm Jan Eglinger, Bio-Image Analyst and Image Data Scientist in the Facility for Advanced Imaging and Microscopy (FAIM)
 at the Friedrich Miescher Institute for Biomedical Research (FMI) in Basel, Switzerland.
+
+Groovy:
+```groovy
+import ij.IJ
+```
+
+Python:
+```python
+from ij import IJ
+```
+
+Shell:
+{% highlight shell %}
+echo imagej.net
+{% endhighlight %}
+
