@@ -1,5 +1,4 @@
 ---
-mediawiki: ImageJ
 title: ImageJ
 section: Learn:ImageJ Basics
 doi: 10.1002/mrd.22489
