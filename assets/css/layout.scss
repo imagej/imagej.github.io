@@ -485,13 +485,11 @@ $leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding - 3
 
 #nav-bar {
   text-align: center;
-  padding: 1rem 0 0 0;
   position: sticky;
   top: 0;
   font-size: small;
   margin-left: $sidebarWidth - $sidebarPadding;
   margin-right: $sidebarWidth - $sidebarPadding;
-  background: white;
   z-index: 1;
 }
 
