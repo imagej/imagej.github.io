@@ -9,7 +9,7 @@ This include is for citing publications by DOI or page ID (URL slug).
 
 {%- if fn -%} [^{{fn}}]: {% endif -%}
 
-{%- assign content = nil -%}
+{%- assign output = nil -%}
 
 {%- unless doi -%}
   {%- comment -%} Infer citation from the given page ID. {%- endcomment -%}
@@ -27,7 +27,7 @@ This include is for citing publications by DOI or page ID (URL slug).
   {%- assign p-ref = p[0].ref -%}
   {%- if p-ref -%}
     {%- comment -%} Page gives a reference directly; use it. {%- endcomment -%}
-    {%- capture content -%}
+    {%- capture output -%}
       <span class="citation">{{p-ref}}</span>
     {%- endcapture -%}
   {%- else -%}
@@ -37,7 +37,7 @@ This include is for citing publications by DOI or page ID (URL slug).
 {%- endunless -%}
 
 {%- if doi -%}
-  {%- capture content -%}
+  {%- capture output -%}
     {%- if doi.first -%}
       {%- comment -%} Multiple DOIs given; return a list. {%- endcomment -%}
       <ul>
@@ -52,8 +52,8 @@ This include is for citing publications by DOI or page ID (URL slug).
   {%- endcapture -%}
 {%- endif -%}
 
-{%- if content -%}
-  {{content}}
+{%- if output -%}
+  {{output}}
 {%- else -%}
   {%- capture error-message -%}
     Invalid citation arguments: `{{include}}`

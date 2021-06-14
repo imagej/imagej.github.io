@@ -2,7 +2,7 @@
 Adds a stylized notice.
 {%- endcomment -%}
 
-{%- assign content = include.content | markdownify -%}
+{%- assign message = include.content | markdownify -%}
 {%- assign size = include.size | default: "normal" -%}
 {%- assign icon = include.icon -%}
 {%- assign glyph = include.glyph -%}
@@ -65,7 +65,7 @@ Adds a stylized notice.
       <div class="notice-icon"><img src="{{src}}"></div>
     {%- endif -%}
   {%- endif -%}
-  <div class="notice-content">{{content}}</div>
+  <div class="notice-content">{{message}}</div>
 </div>
 
 {%- comment -%}
