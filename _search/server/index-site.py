@@ -198,17 +198,23 @@ def update_index(client, collection, documents):
     """
     client.collections[collection].documents.import_(documents, {'action': 'upsert'})
 
-if len(sys.argv) < 2:
-    print('Usage: index-site.py <collection-name> <jekyll-site-docroot>')
+if len(sys.argv) == 1:
+    collection = 'imagej-wiki'
+    pathname = os.path.join(os.path.dirname(sys.argv[0]), '..', '..')
+elif len(sys.argv) == 3:
+    collection = sys.argv[1]
+    pathname = sys.argv[2]
+else:
+    print('Usage: index-site.py [<collection-name> <jekyll-site-docroot>]')
     sys.exit(1)
 
-collection = sys.argv[0]
-pathname = os.path.dirname(sys.argv[1])
-config = os.path.join(pathname, '..', '..', '_config.yml')
-docroot = os.path.join(pathname, '..', '..', '_pages')
-if not os.path.isdir(docroot):
-    error('Cannot find the _pages directory!')
+config = os.path.join(pathname, '_config.yml')
+docroot = os.path.join(pathname, '_pages')
+if not os.path.isfile(config) or not os.path.isdir(docroot):
+    error(f'The path ${pathname} does not appear to be a Jekyll site.')
     sys.exit(1)
+else:
+    print(f'Found _pages at ${docroot}')
 
 info('Parsing config...')
 icons = parse_icon_defaults(config)
