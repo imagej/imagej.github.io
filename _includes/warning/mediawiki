@@ -1,0 +1,5 @@
+{% include notice icon="info" content="The content of this page has not been vetted since shifting away from MediaWiki. If you'd like to help, check out the [how to help guide](/events/wiki-grand-opening/how-to-help)!" %}
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

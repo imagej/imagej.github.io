@@ -44,6 +44,9 @@
       <div class="container">
         <div class="box alt"></div>
         <div id="content" class="page-content">
+          {% if page.mediawiki %}
+            {% include warning/mediawiki %}
+          {% endif %}
           {{content}}
         </div>
       </div>
