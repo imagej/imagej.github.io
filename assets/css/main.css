@@ -1552,6 +1552,8 @@ button:disabled,
   }
 }
 
+span.avoidwrap { display:inline-block; }
+
 /* List */
 
 ul.major-icons li {

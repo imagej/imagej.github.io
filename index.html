@@ -4,12 +4,38 @@ layout: home
 ---
 
   <!-- Header -->
-  <section id="header" style="padding: 0; height: calc(100vh - 48px)">
+  <section id="header">
     <div class="inner">
-      <img src="/media/icons/imagej-shadow.png" alt="ImageJ Logo">
-      <h1>Welcome to the <strong>ImageJ</strong> ecosystem</h1>
-      <p>ImageJ is open source image processing software
-        designed for scientific multidimensional images.</p>
+      <h1>
+        <span class="avoidwrap">Welcome to the</span>
+        <span class="avoidwrap"><strong>ImageJ</strong> ecosystem</span>
+      </h1>
+      <h2>
+        <span class="avoidwrap">ImageJ is <a href="/licensing/open-source">open&#8209;source</a> image processing software</span>
+        <span class="avoidwrap">designed for scientific multidimensional images.</span>
+      </h2>
+      <div class="disambig">
+        <h2>There are two main flavors of ImageJ</h2>
+        <table class="center">
+          <tr>
+            <td class="imagej1">
+              <a href="/software/imagej1">
+                <img src="/media/icons/imagej1.png" alt="ImageJ1 Logo">
+                <br>ImageJ1</a>
+            </td>
+            <td class="imagej2">
+              <a href="/software/imagej2">
+                <img src="/media/icons/imagej-shadow.png" alt="ImageJ2 Logo">
+                <br>ImageJ2</a>
+            </td>
+          </tr>
+        </table>
+        <p class="caption">
+          This <a href="/editing">wiki</a> is a knowledge base
+          covering both <a href="/software/imagej">flavors</a>,<br>
+          their <a href="/list-of-extensions">extensions</a>,
+          and <a href="/software">related software projects</a>.</p>
+      </div>
       <ul class="actions special">
         <li><a href="#resources" class="button scrolly">Get Started</a></li>
       </ul>
@@ -25,14 +51,14 @@ layout: home
         <td>&#9660; Developers</td>
       </tr></tbody></table>
     </header>
-    <ul class="actions special">
+    <ul class="userdev actions special">
       <li><a href="/downloads" class="button solid icon"><span class="fas fa-download"></span> Download</a></li>
       <li><a href="/learn" class="button icon solid"><span class="fas fa-graduation-cap"></span> Learn</a></li>
       <li><a href="/plugins" class="button icon solid"><span class="fas fa-wrench"></span> Extend</a></li>
       <li><a href="/scripting" class="button icon solid"><span class="fas fa-industry"></span> Automate</a></li>
       <li><a href="/develop" class="button icon solid"> <span class="fas fa-terminal"></span> Develop</a></li>
     </ul>
-    <ul class="actions special" style="display: flex; flex-wrap: wrap">
+    <ul class="community actions special">
       <li><a href="/contribute/citing" class="button icon solid"><span class="fas fa-quote-left"></span> Cite</a></li>
       <li><a href="/discuss" class="button icon solid"><img src="/media/icons/image-sc.png" width="24" style="vertical-align: middle; margin-top: -5px"> Discuss</a></li>
       <li><a href="/contribute" class="button icon solid"><span class="fas fa-hard-hat"></span> Contribute</a></li>

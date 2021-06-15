@@ -512,7 +512,6 @@ $leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding - 3
 /* -------------------------------- HEADER -------------------------------- */
 
 #header {
-  padding: 9em 0 9em 0;
   background-image: url("/media/site/overlay7.png");
   color: rgba(255, 255, 255, 0.75);
   background-position: top left, center center, center center;
@@ -521,10 +520,13 @@ $leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding - 3
   position: relative;
   text-align: center;
   min-width: 420px;
+  height: calc(100vh - 48px);
+  padding: 8em 1em 8em 1em;
 }
 
 #header a {
   border-bottom-color: rgba(255, 255, 255, 0.5);
+  color: #ed8;
 }
 
 #header a:hover {
@@ -604,75 +606,7 @@ $leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding - 3
 }
 
 #header h1 {
-  margin: 0;
-}
-
-#header p {
-  margin: 1.5em 0 0 0;
-  font-size: 1.3em;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  /* font-weight: 500; */
-}
-
-#header .actions {
-  -moz-justify-content: center;
-  -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  margin-top: 9em;
-  margin-left: 0;
-  position: relative;
-}
-
-#header .actions li:first-child {
-  padding-left: 0;
-}
-
-#header .actions:after {
-  background: #ffffff;
-  content: '';
-  height: 100vh;
-  left: 50%;
-  position: absolute;
-  top: 100%;
-}
-
-#header .inner {
-  -moz-transition: -moz-transform 1.5s ease, opacity 2s ease;
-  -webkit-transition: -webkit-transform 1.5s ease, opacity 2s ease;
-  -ms-transition: -ms-transform 1.5s ease, opacity 2s ease;
-  transition: transform 1.5s ease, opacity 2s ease;
-  -moz-transition-delay: 0.25s;
-  -webkit-transition-delay: 0.25s;
-  -ms-transition-delay: 0.25s;
-  transition-delay: 0.25s;
-  -moz-transform: scale(1);
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  opacity: 1;
-  position: relative;
-  z-index: 1;
-  margin: 0 3em 0 3em;
-  height: auto;
-}
-
-#header .inner .actions {
-  -moz-transition: -moz-transform 1.25s ease;
-  -webkit-transition: -webkit-transform 1.25s ease;
-  -ms-transition: -ms-transform 1.25s ease;
-  transition: transform 1.25s ease;
-  -moz-transition-delay: 1s;
-  -webkit-transition-delay: 1s;
-  -ms-transition-delay: 1s;
-  transition-delay: 1s;
-  -moz-transform: translateY(0);
-  -webkit-transform: translateY(0);
-  -ms-transform: translateY(0);
-  transform: translateY(0);
-  opacity: 1;
+  margin: -2em 0 0 0;
 }
 
 #header:after {
@@ -708,10 +642,6 @@ body.is-preload #header .inner .actions {
 
 body.is-preload #header:after {
   opacity: 1;
-}
-
-#header {
-  padding: 8em 3em 8em 3em;
 }
 
 /* -------------------------------- FOOTER -------------------------------- */
