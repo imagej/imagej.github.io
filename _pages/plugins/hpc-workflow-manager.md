@@ -1,7 +1,14 @@
 ---
 title: HPC Workflow Manager
-categories: [Uncategorized]
+categories: [Scripting]
+name: HPC Workflow Manager
+team-developers: Dimitrios S Velissariou, Michal Krumnickl, Jan Kožusznik, Pavel Tomancak
+team-maintainers: Dimitrios S Velissariou
+source-url: https://github.com/fiji-hpc/hpc-workflow-manager-full
+source-label: on GitHub
 ---
+
+{% include notice icon="warning" content='Please Note: This version of the documentation is outdated. We recommend reading the [short guide](https://github.com/fiji-hpc/Ij1MPIWrapper/wiki/Short-Guide) instead. It contains current information on new features.' %}
 
 ## General information
 
@@ -9,7 +16,7 @@ categories: [Uncategorized]
 
 HPC Workflow Manager is a Fiji plugin, it enables users to parallelize Macro scripts, define tasks, report the progress of the tasks, upload data to the remote cluster, monitor computation progress, and examine and download the results via their local Fiji installation.
 
-HPC Workflow Manager is developed at IT4Innovations, Ostrava, Czech Republic.
+HPC Workflow Manager is developed at [IT4Innovations](/orgs/it4i), Ostrava, Czech Republic.
 
 ### Why use HPC Workflow Manager
 

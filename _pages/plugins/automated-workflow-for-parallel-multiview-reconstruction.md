@@ -1,5 +1,6 @@
 ---
 title: Automated workflow for parallel Multiview Reconstruction
+name: Automated workflow for parallel Multiview Reconstruction
 categories: [Transform,Registration,Deconvolution]
 source-url: https://github.com/mpicbg-scicomp/snakemake-workflows
 source-label: on GitHub
