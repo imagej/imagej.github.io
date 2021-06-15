@@ -1638,6 +1638,10 @@ ul.major-icons li .icon {
   width: 100%
 }
 
+.left-text { text-align: left; }
+.right-text { text-align: right; }
+.center-text { text-align: center; }
+
 table.center, table.left, table.right {
   width: auto;
   display: table;
