@@ -1,9 +1,14 @@
 ---
 title: Automated workflow for parallel Multiview Reconstruction
 categories: [Transform,Registration,Deconvolution]
+source-url: https://github.com/mpicbg-scicomp/snakemake-workflows
+source-label: on GitHub
+team-developers: Christopher Schmied, Peter Steinbach, Pavel Tomancak
+team-maintainers: Christopher Schmied
+release-date: 'July 2015'
 ---
 
-{% include info-box name='An automated workflow for parallel processing of large multiview SPIM recordings' software='Fiji' author=' [Christopher Schmied](https://de.linkedin.com/in/christopher-schmied-75882b101) , Peter Steinbach, Pavel Tomancak' maintainer=' [Christopher Schmied](https://de.linkedin.com/in/christopher-schmied-75882b101)' released='July 2015' latest-version='March 2016' category='Transform, Registration, Deconvolution' source=' [on github](https://github.com/mpicbg-scicomp/snakemake-workflows)' %}
+{% include notice icon="info" content='Latest release: March 2016' %}
 
 # Citation
 
