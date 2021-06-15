@@ -1,6 +1,12 @@
 ---
-mediawiki: BIOP_Lookup_Tables
 title: BIOP Lookup Tables
+name: BIOP Lookup Tables
+source-url: http://biop.epfl.ch/INFO_Facility.html#staff
+source-label: PTBIOP update site
+release-date: October 2016
+dev-status: Stable
+team-developers: Romain Guiet, Olivier Burri
+team-maintainers: Romain Guiet
 categories: [Uncategorized]
 ---
 
@@ -14,11 +20,11 @@ Having LUTs to handle display of images with more than 3 channels. Visit [Color 
 
 Classical color space are RGB and CMY. Expressed as RGB value, CMY are equal combination of 2 components of RGB, ie Cyan is obtained by combining Green and Blue in equal proportion.
 
-[200px ](File_RGB_hex.png) [200px ](File_CMY_hex.png)
+{% include img src="BIOP-lut_RGB_hex" width="200" title="RGB colorspace. " %} {% include img src="BIOP-lut_CMY_hex" width="200" title="CMYK colorspace. " %}
 
 Here, we propose to use 6 LUTs, which are obtained by combining Red Green and Blue, by two, in different proportion.
 
-[400px ](File_BIOP6Luts_hex.png)
+{% include img src="BIOP-lut_BIOP6Luts_hex" width="400" title="6 LUTs combination. " %}
 
 ## On 3 channels image
 
@@ -57,6 +63,4 @@ Here, channels 2 and 3 are tubular structure and it's difficult to distinguish t
 
 ## Install
 
-You can either use our PTBIOP update site or [download biop-luts.zip](/media/plugins/biop-luts.zip) and extract to the `luts` folder.
-
-## Notes
+The collection of LUTs is available from the PTBIOP update site from within Fiji's update menu.
