@@ -38,11 +38,11 @@ table.help-me-decide li {
 </tr>
 <tr>
   <td><ul>
-    <li>More lightweight (ImageJ1 is a single JAR file)</li>
-    <li>Simpler software architecture is <a href="https://imagej.nih.gov/ij/developer/">more approachable for non-programmers</a></li>
-    <li>Often faster, for the scenarios ImageJ1 supports</li>
+    <li>Lightweight (ImageJ1 is a single JAR file)</li>
+    <li>Simple software architecture is <a href="https://imagej.nih.gov/ij/developer/">approachable for non-programmers</a></li>
+    <li>Often faster than ImageJ2, for the scenarios ImageJ1 supports</li>
     <li><a href="/licensing/#a-note-about-imagej1">No copyright whatsoever</a></li>
-    <li>More stable and mature</li>
+    <li>Very stable and mature</li>
     <li><a href="/people/rasband">Responsive and experienced maintainer</a> fixes bugs quickly</li>
   </ul></td>
   <td><ul>
