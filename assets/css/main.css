@@ -1208,6 +1208,10 @@ table.striped-columns td:nth-child(even), table.striped-columns th:nth-child(eve
   background-color: rgba(144, 144, 144, 0.075);
 }
 
+table.plain tr {
+  background: none !important;
+}
+
 /* Page content */
 
 .page-content h1, .page-content h2, .page-content h3,
