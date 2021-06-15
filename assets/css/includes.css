@@ -25,6 +25,11 @@
   box-shadow: 4px 4px 4px #CCC;
 }
 
+.sidebox img.box-icon {
+  margin-left: 0;
+  margin-bottom: 0.5em;
+}
+
 @media screen and (min-width: 1200px) {
   .sidebox {
     width: 40%;
