@@ -1,7 +1,5 @@
 ---
-mediawiki: Fiji/Downloads
 title: Fiji Downloads
-project: Fiji
 ---
 
 [Fiji](/software/fiji) is a distribution of ImageJ which includes many useful plugins [contributed by the community](/contribute/fiji).
@@ -243,4 +241,3 @@ Here are Life-Line versions from before Fiji switched to Java 8.
 ## See also
 
 -   [https://downloads.imagej.net/fiji/](https://downloads.imagej.net/fiji/) for early versions of [Fiji](/software/fiji), and other miscellany.
--   The main [Downloads](/downloads) page, for a version of ImageJ without the Fiji extensions.

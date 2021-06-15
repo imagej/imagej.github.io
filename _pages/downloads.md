@@ -1,42 +1,76 @@
 ---
 title: Downloads
+description: This page provides download links for ImageJ.
 ---
 
-Here you can [download](https://downloads.imagej.net/ImageJ2-20160205.zip) an
-"all platforms" version of ImageJ, without a bundled Java or extra extensions.
+{% include aside icon="icons/imagej" title="Where is [ImageJ2](/software/imagej2)?" content="A standalone download of ImageJ2 is not yet available, due to how the core [ImageJ update sites](/update-sites) are currently structured. The ImageJ2 team is working hard to change this, but in the meantime, please use the [Fiji distribution of ImageJ](/software/fiji), which is built on ImageJ2 and bundles many additional useful plugins." %}
 
-{% include notice icon="info" content="Unfortunately, due to the ongoing
-transition from Java 6 to Java 8, this download of \"plain ImageJ2\" cannot
-currently be updated to the latest Java-8-compatible version. See the
-[Java 8](/news/2016-05-10-imagej-howto-java-8-java-6-java-3d) page for
-details. For the time being, we recommend
-[using the Fiji distribution of ImageJ](/software/fiji/downloads) to stay
-current with updates." %}
+Which distribution of ImageJ would you like to download?
 
-<center>
-<a href="https://downloads.imagej.net/ImageJ2-20160205.zip "><img src="/media/imagej2-download-icon.png" width="192px"/></a>
-</center>
+| [![](/media/icons/fiji.svg){:width="96px"}<br>Fiji](/software/fiji/downloads) | [![](/media/icons/imagej1.png){:width="96px"}<br>ImageJ1](https://imagej.nih.gov/ij/download.html) |
+{:.plain.center.center-text}
 
-# Distributions of ImageJ
+{% capture help-me-decide %}
+Here are a few highlights of the two flavors of ImageJ. It's not an exhaustive comparison, just a summary to give you an idea of their respective strengths.
 
-These downloads bundle ImageJ with a curated collection of plugins pre-installed.
+<style>
+table.help-me-decide th:first-child, table.help-me-decide td:first-child {
+  border-right: 1px solid lightgray;
+}
+table.help-me-decide tr:first-child {
+ border-bottom: 1px solid lightgray;
+}
+table.help-me-decide td {
+  font-size: 0.8em;
+  line-height: 1.3em;
+}
+table.help-me-decide ul {
+  margin-bottom: 0;
+}
+table.help-me-decide li {
+  padding-bottom: 0.3em;
+}
+</style>
+<table class="plain top help-me-decide">
+<tr>
+  <th class="center-text middle"><a href="/software/imagej1">{% include img src="icons/imagej1" width=24 %} ImageJ1</a></th>
+  <th class="center-text middle"><a href="/software/imagej2">{% include img src="icons/imagej"  width=24 %} ImageJ2</a></th>
+</tr>
+<tr>
+  <td><ul>
+    <li>More lightweight (ImageJ1 is a single JAR file)</li>
+    <li>Simpler software architecture is <a href="https://imagej.nih.gov/ij/developer/">more approachable for non-programmers</a></li>
+    <li>Often faster, for the scenarios ImageJ1 supports</li>
+    <li><a href="/licensing/#a-note-about-imagej1">No copyright whatsoever</a></li>
+    <li>More stable and mature</li>
+    <li><a href="/people/rasband">Responsive and experienced maintainer</a> fixes bugs quickly</li>
+  </ul></td>
+  <td><ul>
+    <li><a href="https://imagej.net/presentations/2017-02-16-imagej2-neubias/#/24">More powerful</a></li>
+    <li>Robust <a href="/develop/architecture">software architecture</a></li>
+    <li>Advanced <a href="/scripting">scripting</a> features</li>
+    <li><a href="/licensing">Licensed as permissive open source</a></li>
+    <li><a href="/libs/imagej-legacy">Backwards compatible with ImageJ1</a></li>
+    <li><a href="/plugins/updater">ImageJ Updater</a> lets you install plugins from <a href="/update-sites">ImageJ update sites</a></li>
+    <li>Support for <a href="/learn/headless">headless execution</a></li>
+    <li><a href="/scripting/python">Works from Python</a>, including from Jupyter Notebooks</li>
+    <li>ImageJ2 scripts are usable from <a href="/libs/scijava">various software tools</a></li>
+    <li>Integrated <a href="/learn#the-search-bar">search bar</a></li>
+  </ul></td>
+</tr>
+</table>
 
-<div style="float: left; padding: 1em; text-align:center; font-size:1.5em" markdown="1">
+For a thorough discussion of the two projects and their differences, please read these papers:
 
-<a href="/software/fiji/downloads"><img src="/media/icons/fiji.png" height="96px"/></a>  
-[Fiji](/software/fiji/downloads)
+* {% include citation id='software/imagej2' %}
+* {% include citation id='software/imagej' %}
+* {% include citation id='software/imagej1' %}
 
-</div>
-
-<div style="float: left; padding: 1em; text-align:center; font-size:1.5em" markdown="1">
-
-<a href="/software/bio7"><img src="/media/icons/bio7.png" height="96px"/></a>  
-[Bio7](/software/bio7)
-
-</div>
-
-{% include clear%}
-
+Still have questions? Ask on the [Image.sc Forum](https://forum.image.sc/tag/imagej)!
+{% endcapture %}
+<details class="shadowed-box"><summary><strong>Need help deciding? Click here.</strong></summary>
+{{help-me-decide | markdownify}}
+</details>
 
 # System requirements
 
@@ -45,12 +79,6 @@ ImageJ will run on any system that has a Java 8 (or later) runtime installed. Th
 1.  Windows XP, Vista, 7 or 8 with Java installed from [java.com](https://java.com/)
 2.  Mac OS X 10.8 "Mountain Lion" or later with Java installed from [java.com](https://java.com/)
 3.  Ubuntu Linux 12.04 LTS or later with OpenJDK 8 installed
-
-# Installation
-
-{% include warning/avoid-program-files %}
-ImageJ is distributed as a {% include wikipedia title='Portable application' text='portable application' %}.
-That means that you do not have to run an installer; just download, unpack and start it.
 
 # Troubleshooting
 
@@ -64,4 +92,3 @@ See the [source code](/develop/source) page for details on obtaining the ImageJ 
 ## See also
 
   - [ImageJ2 development releases](/software/imagej2/development-releases) for early versions of [ImageJ2](/software/imagej2).
-  - [ImageJ1 download archive](https://imagej.nih.gov/ij/download/) for old versions of [ImageJ 1.x](/software/imagej1).
