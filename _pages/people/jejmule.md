@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Jejmule
 title: Jerome Parent
 
 name: Jerome Parent

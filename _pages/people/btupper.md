@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Tupper
 title: Ben Tupper
 
 name: Ben Tupper

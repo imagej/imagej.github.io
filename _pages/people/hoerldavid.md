@@ -1,5 +1,4 @@
 ---
-mediawiki:
 - User:Davidhoerl
 - User:Hoerldavid
 title: David Hörl

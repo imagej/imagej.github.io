@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Tibuch
 title: Tim-Oliver Buchholz
 
 name: Tim-Oliver Buchholz

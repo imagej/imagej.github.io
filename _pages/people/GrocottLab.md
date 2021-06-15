@@ -1,5 +1,4 @@
 ---
-mediawiki: User:GrocottLab
 title: Timothy Grocott
 name: Timothy Grocott
 affiliation: School of Biological Sciences

@@ -1,5 +1,4 @@
 ---
-mediawiki: User:M-entrup
 title: Michael Entrup
 
 name: Michael Entrup

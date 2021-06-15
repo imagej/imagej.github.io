@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Ivos
 title: Ivo F. Sbalzarini
 
 name: Ivo F. Sbalzarini

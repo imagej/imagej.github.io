@@ -1,5 +1,4 @@
 ---
-mediawiki: User:VarunKapoor
 title: Varun Kapoor
 
 name: Varun Kapoor

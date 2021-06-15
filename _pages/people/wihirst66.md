@@ -1,5 +1,4 @@
 ---
-mediawiki: User:William_Hirst
 title: William Hirst
 
 name: William Hirst

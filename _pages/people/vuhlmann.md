@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Vuhlmann
 title: Virginie Uhlmann
 name: Virginie Uhlmann
 github: vuhlmann

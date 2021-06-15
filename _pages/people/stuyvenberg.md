@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Stuyvenberg
 title: Luke Stuyvenberg
 
 name: Luke Stuyvenberg

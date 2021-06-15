@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Harris
 title: Grant Harris
 
 name: Grant Harris

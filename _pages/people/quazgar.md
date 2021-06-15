@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Hornung
 title: Daniel Hornung
 name: Daniel Hornung
 affiliation:

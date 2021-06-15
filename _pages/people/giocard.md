@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Gcardone
 title: Giovanni Cardone
 
 name: Giovanni Cardone

@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Ehrenfeu
 title: Niko Ehrenfeuchter
 
 name: Niko Ehrenfeuchter

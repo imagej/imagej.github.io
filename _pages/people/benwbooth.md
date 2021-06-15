@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Benwbooth
 title: Ben Booth
 
 name: Ben Booth

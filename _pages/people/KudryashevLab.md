@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Kudryashev
 title: Misha Kudryashev
 name: Misha Kudryashev
 website: https://www.biophys.mpg.de/2126763/misha-kudryashev

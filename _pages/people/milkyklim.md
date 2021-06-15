@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Milkyklim
 title: Klim Kolyvanov
 
 name: Klim Kolyvanov

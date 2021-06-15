@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Skalarproduktraum
 title: Ulrik Günther
 
 name: Ulrik Günther

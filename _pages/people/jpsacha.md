@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Jpsacha
 title: Jarek Sacha
 name: Jarek Sacha
 website: https://codingonthestaircase.wordpress.com/

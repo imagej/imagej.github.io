@@ -1,5 +1,4 @@
 ---
-mediawiki:
 - User:Gonciarz
 - User:Krzysztof.Gonciarz
 title: Krzysztof Gonciarz

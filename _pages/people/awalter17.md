@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Awalter2
 title: Alison Walter
 
 name: Alison Walter

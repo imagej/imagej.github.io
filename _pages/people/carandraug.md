@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Carandraug
 title: David Pinto
 
 name: Carnë Draug

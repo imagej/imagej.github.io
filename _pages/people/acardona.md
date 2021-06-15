@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Albertcardona
 title: Albert Cardona
 name: Albert Cardona
 honorific: Father of Fiji

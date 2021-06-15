@@ -1,5 +1,4 @@
 ---
-mediawiki: User:SimoneR
 title: Simone Reber
 
 name: Simone Reber
