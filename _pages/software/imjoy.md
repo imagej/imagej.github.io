@@ -15,13 +15,13 @@ The ImJoy project was started at Institut Pasteur in 2018. It is currently activ
 ImJoy is a progressive web application which you can run directly in your browser without installation. Go to [https://imjoy.io](https://imjoy.io) and click "Start ImJoy".
 
 ImJoy can also be embedded directly into documentations, for example, if you click "Run", you will see the same ImJoy interface:
-<!-- ImJoyPlugin: { "type": "web-worker","editor_height": "200px", "hide_code_block": false } -->
+<!-- ImJoyPlugin: { "type": "web-worker","editor_height": "200px", "hide_code_block": true } -->
 ```js
 api.createWindow({src: 'https://imjoy.io/#/app', passive: true})
 ```
 
 Since ImJoy itself doesn't provide any functional plugins, for any actual application, you will need to work with the corresponding plugins. For example, if you click "Run" below, you will see a demo plugin which does image classification with lightweight deep learning model running in the browser:
-<!-- ImJoyPlugin: { "type": "web-worker","editor_height": "200px", "hide_code_block": false } -->
+<!-- ImJoyPlugin: { "type": "web-worker","editor_height": "200px", "hide_code_block": true } -->
 ```js
 api.createWindow({src: 'https://github.com/imjoy-team/imjoy-plugins/blob/master/repository/HPA-Classification.imjoy.html'})
 ```
@@ -110,8 +110,8 @@ api.alert("Hello from ImJoy!")
 You can also embed a plugin window into the page:
 <!-- ImJoyPlugin: { "type": "web-worker","editor_height": "200px"} -->
 ```js
-api.createWindow({src: "https://hms-dbmi.github.io/vizarr", name: "visualizating HCS zarr images with vizarr"}).then((viewer)=>{
-    viewer.add_image({source: "https://minio-dev.openmicroscopy.org/idr/idr0001-graml-sysgro/JL_120731_S6A/pr_45/2551.zarr", name: "Demo Image"})
+api.createWindow({src: "https://hms-dbmi.github.io/vizarr", name: "Vizarr Demo"}).then((viewer)=>{
+    viewer.add_image({source: "https://s3.embassy.ebi.ac.uk/idr/zarr/v0.1/4495402.zarr", name: "Demo Image"})
 })
 ```
 
@@ -153,6 +153,10 @@ api.getPlugin({src: 'https://github.com/imjoy-team/imjoy-plugins/blob/master/rep
 ```
 
 For more detailed usage, please refer to [ImJoy Docs](https://imjoy-team.github.io/imjoy-docs/#/).
+
+## Running ImageJ.JS in ImageJ wiki
+[ImageJ.JS](https://ij.imjoy.io) is a web version of ImageJ, and it can be used as an ImJoy plugin and embeded directly in the ImageJ wiki. For more details, please refer to the [ImageJ.JS page](/software/imagej-js).
+
 
 # Documentation
 
