@@ -4,8 +4,12 @@ name: Automated workflow for parallel Multiview Reconstruction
 categories: [Transform,Registration,Deconvolution]
 source-url: https://github.com/mpicbg-scicomp/snakemake-workflows
 source-label: on GitHub
-team-developers: Christopher Schmied, Peter Steinbach, Pavel Tomancak
-team-maintainers: Christopher Schmied
+team-developers: 
+ - Christopher Schmied | /people/schmiedc
+ - Peter Steinbach | /people/psteinb
+ - Pavel Tomancak | /people/tomancak
+team-maintainers: 
+ - Christopher Schmied | /people/schmiedc
 release-date: 'July 2015'
 ---
 

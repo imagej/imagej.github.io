@@ -3,8 +3,12 @@ title: BigDataServer
 categories: [Visualization, Transform]
 
 name: BigDataServer
-team-developers: Tobias Pietzsch, HongKee Moon, Pavel Tomancak
-team-maintainers: Tobias Pietzsch
+team-developers: 
+ - Tobias Pietzsch | /people/tpietzsch
+ - HongKee Moon | /people/hkmoon
+ - Pavel Tomancak | /people/tomancak
+team-maintainers: 
+ - Tobias Pietzsch | /people/tpietzsch
 source-url: https://github.com/bigdataviewer/bigdataviewer-server/
 source-label: on GitHub
 dev-status: experimental

@@ -2,8 +2,13 @@
 title: HPC Workflow Manager
 categories: [Scripting]
 name: HPC Workflow Manager
-team-developers: Dimitrios S Velissariou, Michal Krumnickl, Jan Kožusznik, Pavel Tomancak
-team-maintainers: Dimitrios S Velissariou
+team-developers: 
+ - Dimitrios S Velissariou
+ - Michal Krumnickl
+ - Jan Kožusznik | /people/kozusznik
+ - Pavel Tomancak | /people/tomancak
+team-maintainers: 
+ - Dimitrios S Velissariou
 source-url: https://github.com/fiji-hpc/hpc-workflow-manager-full
 source-label: on GitHub
 ---

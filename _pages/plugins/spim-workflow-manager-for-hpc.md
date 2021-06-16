@@ -5,8 +5,15 @@ categories: [Transform, Registration, Deconvolution]
 name: SPIM Workflow Manager For HPC
 source-url: https://github.com/fiji-hpc/hpc-workflow-manager/
 source-label: on GitHub
-team-developers: Jan Kožusznik, Petr Bainar, Jana Klímová, Michal Krumnikl, Pavel Moravec, Pavel Tomancak
-team-maintainers: Jan Kožusznik
+team-developers: 
+ - Jan Kožusznik | /people/kozusznik
+ - Petr Bainar | /people/PetrBainar
+ - Jana Klímová | /people/janaklimova
+ - Michal Krumnikl
+ - Pavel Moravec | /people/pm-cz
+ - Pavel Tomancak | /people/tomancak
+team-maintainers: 
+ - Jan Kožusznik | /people/kozusznik
 release-date: 'August 2018'
 ---
 

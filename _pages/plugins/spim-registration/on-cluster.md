@@ -2,8 +2,12 @@
 title: SPIM Registration on cluster (deprecated)
 categories: [Registration]
 name: Selective Plane Illumination Microscopy Registration on a cluster
-team-developers: Stephan Saalfeld, Christopher Schmied, Pavel Tomancak
-team-maintainers: Pavel Tomancak
+team-developers: 
+ - Stephan Saalfeld | /people/axtimwalde
+ - Christopher Schmied | /people/schmiedc
+ - Pavel Tomancak | /people/tomancak
+team-maintainers: 
+ - Pavel Tomancak | /people/tomancak
 release-date: 'May 2013'
 ---
 
