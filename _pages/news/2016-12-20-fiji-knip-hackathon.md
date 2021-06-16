@@ -12,39 +12,39 @@ The following chart illustrates when everyone was present:
 
 <!-- The above image was rendered by MediaWiki. Original timeline data, as converted, follows:
 
-<timeline> Preset = TimeHorizontal\_AutoPlaceBars\_UnitYear
+<timeline> Preset = TimeHorizontal_AutoPlaceBars_UnitYear
 
 ImageSize = width:600
 
 Colors =
 
-` id:c01 value:blue`  
-` id:c02 value:red`  
-` id:c03 value:green`  
-` id:c04 value:black`  
-` id:c05 value:magenta`  
-` id:c06 value:teal`  
-` id:c07 value:yelloworange`  
-` id:c08 value:skyblue`  
-` id:c09 value:claret`  
-` id:c10 value:oceanblue`  
-` id:c11 value:purple`  
-` id:c12 value:powderblue`  
-` id:c13 value:coral`  
-` id:c14 value:redorange`  
-` id:c15 value:kelleygreen`  
-` id:c16 value:orange`  
-` id:c17 value:lightpurple`  
-` id:c18 value:tan2`  
-` id:c19 value:gray(0.3)`  
-` id:c20 value:blue`  
-` id:c21 value:red`  
-` id:c22 value:green`  
-` id:c23 value:black`  
-` id:c24 value:magenta`  
-` id:c25 value:teal`  
-` id:gridLine value:gray(0.5)`  
-` id:gridCanvas value:gray(0.8)`
+ id:c01 value:blue
+ id:c02 value:red
+ id:c03 value:green
+ id:c04 value:black
+ id:c05 value:magenta
+ id:c06 value:teal
+ id:c07 value:yelloworange
+ id:c08 value:skyblue
+ id:c09 value:claret
+ id:c10 value:oceanblue
+ id:c11 value:purple
+ id:c12 value:powderblue
+ id:c13 value:coral
+ id:c14 value:redorange
+ id:c15 value:kelleygreen
+ id:c16 value:orange
+ id:c17 value:lightpurple
+ id:c18 value:tan2
+ id:c19 value:gray(0.3)
+ id:c20 value:blue
+ id:c21 value:red
+ id:c22 value:green
+ id:c23 value:black
+ id:c24 value:magenta
+ id:c25 value:teal
+ id:gridLine value:gray(0.5)
+ id:gridCanvas value:gray(0.8)
 
 BackgroundColors = canvas:gridCanvas
 
@@ -54,60 +54,59 @@ ScaleMajor = unit:year increment:1 start:6 grid:white
 
 LineData =
 
-` at:6 color:gridLine layer:back width:0.5`  
-` at:7 color:gridLine layer:back width:0.5`  
-` at:8 color:gridLine layer:back width:0.5`  
-` at:9 color:gridLine layer:back width:0.5`  
-` at:10 color:gridLine layer:back width:0.5`  
-` at:11 color:gridLine layer:back width:0.5`  
-` at:12 color:gridLine layer:back width:0.5`  
-` at:13 color:gridLine layer:back width:0.5`  
-` at:14 color:gridLine layer:back width:0.5`  
-` at:15 color:gridLine layer:back width:0.5`  
-` at:16 color:gridLine layer:back width:0.5`  
-` at:17 color:gridLine layer:back width:0.5`
+ at:6 color:gridLine layer:back width:0.5
+ at:7 color:gridLine layer:back width:0.5
+ at:8 color:gridLine layer:back width:0.5
+ at:9 color:gridLine layer:back width:0.5
+ at:10 color:gridLine layer:back width:0.5
+ at:11 color:gridLine layer:back width:0.5
+ at:12 color:gridLine layer:back width:0.5
+ at:13 color:gridLine layer:back width:0.5
+ at:14 color:gridLine layer:back width:0.5
+ at:15 color:gridLine layer:back width:0.5
+ at:16 color:gridLine layer:back width:0.5
+ at:17 color:gridLine layer:back width:0.5
 
 BarData=
 
-` barset:Hackers`
+ barset:Hackers
 
 PlotData=
 
-` width:15 `  
-` fontsize:M`  
-` textcolor:white`  
-` align:left `  
-` anchor:from `  
-` shift:(4,-4) `  
-` color:black`
+ width:15 
+ fontsize:M
+ textcolor:white
+ align:left 
+ anchor:from 
+ shift:(4,-4) 
+ color:black
 
-` barSet:Hackers`  
-` color:c01 from:12 till:17 text:"Curtis Rueden (LOCI)"`  
-` color:c02 from:11 till:17 text:"Christian Dietz (KNIME/UniKN)"`  
-` color:c03 from:11 till:16 text:"Patrick Winter (KNIME/UniKN)"`  
-` color:c04 from:9 till:17 text:"Marcel Wiedenmann (KNIME/UniKN)"`  
-` color:c05 from:9 till:16 text:"Tim-Oliver Buchholz (KNIME/UniKN)"`  
-` color:c06 from:6 till:16 text:"Matthias Arzt (MPI-CBG)"`  
-` color:c07 from:6 till:16 text:"Richard Domander (BoneJ/RVC)"`  
-` color:c08 from:6 till:16 text:"Ulrik Günther (MPI-CBG)"`  
-` color:c09 from:6 till:16 text:"Robert Haase (MPI-CBG)"`  
-` color:c10 from:6 till:16 text:"Philipp Hanslovsky (Janelia)"`  
-` color:c11 from:6 till:16 text:"Kyle Harrington (Uni-Idaho)"`  
-` color:c12 from:6 till:16 text:"Florian Jug (MPI-CBG)"`  
-` color:c13 from:6 till:16 text:"Klim Kolyvanov (MDC/BIMSB)"`  
-` color:c14 from:6 till:16 text:"HongKee Moon (MPI-CBG)"`  
-` color:c15 from:6 till:16 text:"Tobias Pietzsch (MPI-CBG)"`  
-` color:c16 from:6 till:16 text:"Loic Royer (MPI-CBG)"`  
-` color:c17 from:6 till:16 text:"Stephan Saalfeld (Janelia)"`  
-` color:c18 from:6 till:16 text:"Pavel Tomancak (MPI-CBG)"`  
-` color:c19 from:6 till:16 text:"Vladimir Ulman (MPI-CBG)"`  
-` color:c20 from:6 till:13 text:"Jean-Yves Tinevez (Pasteur)"`  
-` color:c21 from:6 till:10 text:"David Hörl (LMU, MDC)"`  
-` color:c22 from:6 till:9 text:"Carsten Haubold (HCI)"`  
-` color:c23 from:6 till:9 text:"Jonas Massa (HCI)"`
+ barSet:Hackers
+ color:c01 from:12 till:17 text:"Curtis Rueden (LOCI)"
+ color:c02 from:11 till:17 text:"Christian Dietz (KNIME/UniKN)"
+ color:c03 from:11 till:16 text:"Patrick Winter (KNIME/UniKN)"
+ color:c04 from:9 till:17 text:"Marcel Wiedenmann (KNIME/UniKN)"
+ color:c05 from:9 till:16 text:"Tim-Oliver Buchholz (KNIME/UniKN)"
+ color:c06 from:6 till:16 text:"Matthias Arzt (MPI-CBG)"
+ color:c07 from:6 till:16 text:"Richard Domander (BoneJ/RVC)"
+ color:c08 from:6 till:16 text:"Ulrik Günther (MPI-CBG)"
+ color:c09 from:6 till:16 text:"Robert Haase (MPI-CBG)"
+ color:c10 from:6 till:16 text:"Philipp Hanslovsky (Janelia)"
+ color:c11 from:6 till:16 text:"Kyle Harrington (Uni-Idaho)"
+ color:c12 from:6 till:16 text:"Florian Jug (MPI-CBG)"
+ color:c13 from:6 till:16 text:"Klim Kolyvanov (MDC/BIMSB)"
+ color:c14 from:6 till:16 text:"HongKee Moon (MPI-CBG)"
+ color:c15 from:6 till:16 text:"Tobias Pietzsch (MPI-CBG)"
+ color:c16 from:6 till:16 text:"Loic Royer (MPI-CBG)"
+ color:c17 from:6 till:16 text:"Stephan Saalfeld (Janelia)"
+ color:c18 from:6 till:16 text:"Pavel Tomancak (MPI-CBG)"
+ color:c19 from:6 till:16 text:"Vladimir Ulman (MPI-CBG)"
+ color:c20 from:6 till:13 text:"Jean-Yves Tinevez (Pasteur)"
+ color:c21 from:6 till:10 text:"David Hörl (LMU, MDC)"
+ color:c22 from:6 till:9 text:"Carsten Haubold (HCI)"
+ color:c23 from:6 till:9 text:"Jonas Massa (HCI)"
 
 </timeline>
-
 -->
 
 ## Gallery

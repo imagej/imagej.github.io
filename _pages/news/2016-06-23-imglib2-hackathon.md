@@ -22,13 +22,13 @@ ImageSize = width:550
 
 Colors =
 
-` id:c01 value:blue`  
-` id:c02 value:red`  
-` id:c03 value:green`  
-` id:c04 value:black`  
-` id:c05 value:magenta`  
-` id:gridLine value:gray(0.5)`  
-` id:gridCanvas value:gray(0.8)`
+ id:c01 value:blue
+ id:c02 value:red
+ id:c03 value:green
+ id:c04 value:black
+ id:c05 value:magenta
+ id:gridLine value:gray(0.5)
+ id:gridCanvas value:gray(0.8)
 
 BackgroundColors = canvas:gridCanvas
 
@@ -38,36 +38,36 @@ ScaleMajor = unit:year increment:1 start:19 grid:white
 
 LineData =
 
-` at:19 color:gridLine layer:back width:0.5`  
-` at:20 color:gridLine layer:back width:0.5`  
-` at:21 color:gridLine layer:back width:0.5`  
-` at:22 color:gridLine layer:back width:0.5`  
-` at:23 color:gridLine layer:back width:0.5`  
-` at:24 color:gridLine layer:back width:0.5`  
-` at:25 color:gridLine layer:back width:0.5`  
-` at:26 color:gridLine layer:back width:0.5`  
-` at:27 color:gridLine layer:back width:0.5`  
-` at:28 color:gridLine layer:back width:0.5`
+ at:19 color:gridLine layer:back width:0.5
+ at:20 color:gridLine layer:back width:0.5
+ at:21 color:gridLine layer:back width:0.5
+ at:22 color:gridLine layer:back width:0.5
+ at:23 color:gridLine layer:back width:0.5
+ at:24 color:gridLine layer:back width:0.5
+ at:25 color:gridLine layer:back width:0.5
+ at:26 color:gridLine layer:back width:0.5
+ at:27 color:gridLine layer:back width:0.5
+ at:28 color:gridLine layer:back width:0.5
 
 BarData=
 
-` barset:Hackers`
+ barset:Hackers
 
 PlotData=
 
-` width:15`  
-` fontsize:M`  
-` textcolor:white`  
-` align:left `  
-` anchor:from `  
-` shift:(4,-4) `  
-` color:black`  
-` barSet:Hackers`
+ width:15
+ fontsize:M
+ textcolor:white
+ align:left 
+ anchor:from 
+ shift:(4,-4) 
+ color:black
+ barSet:Hackers
 
-` color:c01 from:19 till:28 text:"Stephan Saalfeld (Janelia)"`  
-` color:c02 from:20 till:28 text:"Tobias Pietzsch (MPI-CBG)"`  
-` color:c03 from:20 till:27 text:"Christian Dietz (UniKN)"`  
-` color:c04 from:19 till:24 text:"Curtis Rueden (UniWisc)"`
+ color:c01 from:19 till:28 text:"Stephan Saalfeld (Janelia)"
+ color:c02 from:20 till:28 text:"Tobias Pietzsch (MPI-CBG)"
+ color:c03 from:20 till:27 text:"Christian Dietz (UniKN)"
+ color:c04 from:19 till:24 text:"Curtis Rueden (UniWisc)"
 
 </timeline>
 

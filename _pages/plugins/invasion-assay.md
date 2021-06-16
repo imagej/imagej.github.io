@@ -49,12 +49,13 @@ Scripts generating macros require two command line parameters: first the complet
 
 generates:
 
-`--- macros`  
-`| --- converter`  
-` | --- ...1.js`  
-` | --- ...2.js`  
-` | --- ...       `  
-`   `
+```
+--- macros
+| --- converter
+ | --- ...1.js
+ | --- ...2.js
+ | --- ...       
+```
 
 ### Executer shell scripts
 

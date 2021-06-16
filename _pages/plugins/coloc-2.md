@@ -111,34 +111,44 @@ The definitive list of new features and fixes is the source code history as show
 
 ## Ideas List
 
-Coloc\_2 issue tracker is found on GITHUB.com, along with the source code; bugs can be reported there: https://github.com/fiji/Colocalisation_Analysis/issues?q=is%3Aopen+is%3Aissue
+Coloc\_2 issue tracker is found on GITHUB.com, along with the source code; bugs can be reported there: 
 
-Open Bug reports and other open issues can be seen here: https://github.com/fiji/Colocalisation_Analysis/issues?q=is%3Aopen+is%3Aissue
+{% include link-banner url='https://github.com/fiji/Colocalisation_Analysis/issues?q=is%3Aopen+is%3Aissue' %}
 
-Fixed bugs and resolved issues can be seen in the above section and in more detail in the issue tracker: https://github.com/fiji/Colocalisation_Analysis/issues?q=is%3Aissue+is%3Aclosed
+Open Bug reports and other open issues can be seen here:
 
-The contents of the old 'to do' list and design notes can be found here: https://github.com/fiji/Colocalisation_Analysis/wiki/DesignNotes
+{% include link-banner url='https://github.com/fiji/Colocalisation_Analysis/issues?q=is%3Aopen+is%3Aissue' %}
+
+Fixed bugs and resolved issues can be seen in the above section and in more detail in the issue tracker:
+
+{% include link-banner url='https://github.com/fiji/Colocalisation_Analysis/issues?q=is%3Aissue+is%3Aclosed' %}
+
+The contents of the old 'to do' list and design notes can be found here:
+
+{% include link-banner url='https://github.com/fiji/Colocalisation_Analysis/wiki/DesignNotes' %}
 
 This list is for more random, vague, or uncertain ideas, which are not yet well enough thought through to be adequately defined as solvable issues in the tracker on GITHUB.com.
 
-1.  Running as macro command in a loop, need to use macro commands to save the IJ.log window results, then clear the log window before the next set of results are sent there. Add words to documentation to explain that. Should test if this kind of thing works using string concatenation tobconstruct the long string of coloc\_2 parameters. Perhaps better to do it in python or beanshell.
+1.  Running as macro command in a loop, need to use macro commands to save the IJ.log window results, then clear the log window before the next set of results are sent there. Add words to documentation to explain that. Should test if this kind of thing works using string concatenation tobconstruct the long string of Coloc\_2 parameters. Perhaps better to do it in Python or BeanShell.
 
-" This kind of macro will prompt you for a directory and get you a list of all files in that directory, stored in an array called 'files' (or whatever arbitrary name you choose):
+<blockquote>
 
-You can then refer to consecutive files using consecutive numbers in the array index, e.g.: files\[0\] and files\[1\]. Use a for loop to go through the entire list:
+This kind of macro will prompt you for a directory and get you a list of all files in that directory, stored in an array called 'files' (or whatever arbitrary name you choose):
 
-` dir = getDirectory();`  
-` files = getFileList(dir);`  
-` for(i = 0; i < files.length - 1; i++){`  
-`    open(dir + files[i]);`  
-`    open(dir + files[i+1]);`  
-`     Split channels`  
-`     run(Coloc_2, "i-ch1, i-ch2, etc....")`  
-`     Close opened images`  
-`     Save ij.log`  
-`     Clear ij.log`  
-` }`
+You can then refer to consecutive files using consecutive numbers in the array index, e.g.: `files[0]` and `files[1].` Use a for loop to go through the entire list:
 
-"
+```javascript
+dir = getDirectory();
+files = getFileList(dir);
+for(i = 0; i < files.length - 1; i++){
+   open(dir + files[i]);
+   open(dir + files[i+1]);
+    Split channels
+    run(Coloc_2, "i-ch1, i-ch2, etc....")
+    Close opened images
+    Save ij.log
+    Clear ij.log
+}
+```
 
-  
+</blockquote>

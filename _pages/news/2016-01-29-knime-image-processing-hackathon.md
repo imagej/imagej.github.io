@@ -18,37 +18,37 @@ ImageSize = width:600
 
 Colors =
 
-` id:c01 value:blue`  
-` id:c02 value:red`  
-` id:c03 value:green`  
-` id:c04 value:black`  
-` id:c05 value:magenta`  
-` id:c06 value:teal`  
-` id:c07 value:yelloworange`  
-` id:c08 value:skyblue`  
-` id:c09 value:claret`  
-` id:c10 value:oceanblue`  
-` id:c11 value:purple`  
-` id:c12 value:powderblue`  
-` id:c13 value:coral`  
-` id:c14 value:redorange`  
-` id:c15 value:kelleygreen`  
-` id:c16 value:orange`  
-` id:c17 value:lightpurple`  
-` id:c18 value:tan2`  
-` id:c19 value:gray(0.3)`  
-` id:c20 value:blue`  
-` id:c21 value:red`  
-` id:c22 value:green`  
-` id:c23 value:black`  
-` id:c24 value:magenta`  
-` id:c25 value:teal`  
-` id:c26 value:yelloworange`  
-` id:c27 value:skyblue`  
-` id:c28 value:claret`  
-` id:c29 value:oceanblue`  
-` id:gridLine value:gray(0.5)`  
-` id:gridCanvas value:gray(0.8)`
+ id:c01 value:blue
+ id:c02 value:red
+ id:c03 value:green
+ id:c04 value:black
+ id:c05 value:magenta
+ id:c06 value:teal
+ id:c07 value:yelloworange
+ id:c08 value:skyblue
+ id:c09 value:claret
+ id:c10 value:oceanblue
+ id:c11 value:purple
+ id:c12 value:powderblue
+ id:c13 value:coral
+ id:c14 value:redorange
+ id:c15 value:kelleygreen
+ id:c16 value:orange
+ id:c17 value:lightpurple
+ id:c18 value:tan2
+ id:c19 value:gray(0.3)
+ id:c20 value:blue
+ id:c21 value:red
+ id:c22 value:green
+ id:c23 value:black
+ id:c24 value:magenta
+ id:c25 value:teal
+ id:c26 value:yelloworange
+ id:c27 value:skyblue
+ id:c28 value:claret
+ id:c29 value:oceanblue
+ id:gridLine value:gray(0.5)
+ id:gridCanvas value:gray(0.8)
 
 BackgroundColors = canvas:gridCanvas
 
@@ -58,64 +58,64 @@ ScaleMajor = unit:year increment:1 start:11 grid:white
 
 LineData =
 
-` at:11 color:gridLine layer:back width:0.5`  
-` at:12 color:gridLine layer:back width:0.5`  
-` at:13 color:gridLine layer:back width:0.5`  
-` at:14 color:gridLine layer:back width:0.5`  
-` at:15 color:gridLine layer:back width:0.5`  
-` at:16 color:gridLine layer:back width:0.5`  
-` at:17 color:gridLine layer:back width:0.5`  
-` at:18 color:gridLine layer:back width:0.5`  
-` at:19 color:gridLine layer:back width:0.5`  
-` at:20 color:gridLine layer:back width:0.5`  
-` at:21 color:gridLine layer:back width:0.5`  
-` at:22 color:gridLine layer:back width:0.5`  
-` at:23 color:gridLine layer:back width:0.5`
+ at:11 color:gridLine layer:back width:0.5
+ at:12 color:gridLine layer:back width:0.5
+ at:13 color:gridLine layer:back width:0.5
+ at:14 color:gridLine layer:back width:0.5
+ at:15 color:gridLine layer:back width:0.5
+ at:16 color:gridLine layer:back width:0.5
+ at:17 color:gridLine layer:back width:0.5
+ at:18 color:gridLine layer:back width:0.5
+ at:19 color:gridLine layer:back width:0.5
+ at:20 color:gridLine layer:back width:0.5
+ at:21 color:gridLine layer:back width:0.5
+ at:22 color:gridLine layer:back width:0.5
+ at:23 color:gridLine layer:back width:0.5
 
 BarData=
 
-` barset:Hackers`
+ barset:Hackers
 
 PlotData=
 
-` width:15 `  
-` fontsize:M`  
-` textcolor:white`  
-` align:left `  
-` anchor:from `  
-` shift:(4,-4) `  
-` color:black`
+ width:15 
+ fontsize:M
+ textcolor:white
+ align:left 
+ anchor:from 
+ shift:(4,-4) 
+ color:black
 
-` barSet:Hackers`  
-` color:c01 from:18 till:21 text:"Ulrik Günther (MPI-CBG)"`  
-` color:c02 from:18 till:20 text:"Tobias Kötter (KNIME)"`  
-` color:c03 from:18 till:20 text:"Björn Lohmann (KNIME)"`  
-` color:c04 from:16 till:22 text:"Eike Heinz (UniKN)"`  
-` color:c05 from:14 till:22 text:"Kevin Mader (ETH/4Quant)"`  
-` color:c06 from:14 till:21 text:"Thomas J. Re (UniSpitalBasel)"`  
-` color:c07 from:14 till:18 text:"Julianus Pfeuffer (EKUT)"`  
-` color:c08 from:13 till:21 text:"Robert Haase (MPI-CBG)"`  
-` color:c09 from:13 till:21 text:"Florian Jug (MPI-CBG)"`  
-` color:c10 from:13 till:21 text:"Tobias Pietzsch (MPI-CBG)"`  
-` color:c11 from:13 till:21 text:"Loic Royer (MPI-CBG)"`  
-` color:c12 from:13 till:17 text:"Tim-Oliver Buchholz (UniKN)"`  
-` color:c13 from:13 till:17 text:"Temesgen H. Dadi (FU Berlin)"`  
-` color:c14 from:12 till:22 text:"Christian Dietz (UniKN)"`  
-` color:c15 from:12 till:22 text:"Alexander Fillbrunn (UniKN)"`  
-` color:c16 from:12 till:22 text:"Jonathan Hale (KNIME)"`  
-` color:c17 from:12 till:22 text:"Stefan Helfrich (UniKN)"`  
-` color:c18 from:12 till:22 text:"Mark Hiner (UniWisc)"`  
-` color:c19 from:12 till:22 text:"Martin Horn (UniKN)"`  
-` color:c20 from:12 till:22 text:"David Kolb (UniKN)"`  
-` color:c21 from:12 till:22 text:"Ole Ostergaard (UniKN)"`  
-` color:c22 from:12 till:22 text:"Curtis Rueden (UniWisc)"`  
-` color:c23 from:12 till:22 text:"Patrick Winter (UniKN)"`  
-` color:c24 from:12 till:21 text:"Nico Hoffmann (TUD)"`  
-` color:c25 from:12 till:19 text:"Jon Fuller (KNIME)"`  
-` color:c26 from:12 till:19 text:"Kyle Harrington (HMS)"`  
-` color:c27 from:12 till:17 text:"Timo Sachsenberg (EKUT)"`  
-` color:c28 from:12 till:15 text:"Luis de la Garza (EKUT)"`  
-` color:c29 from:12 till:15 text:"Jan Eglinger (FMI Basel)"`
+ barSet:Hackers
+ color:c01 from:18 till:21 text:"Ulrik Günther (MPI-CBG)"
+ color:c02 from:18 till:20 text:"Tobias Kötter (KNIME)"
+ color:c03 from:18 till:20 text:"Björn Lohmann (KNIME)"
+ color:c04 from:16 till:22 text:"Eike Heinz (UniKN)"
+ color:c05 from:14 till:22 text:"Kevin Mader (ETH/4Quant)"
+ color:c06 from:14 till:21 text:"Thomas J. Re (UniSpitalBasel)"
+ color:c07 from:14 till:18 text:"Julianus Pfeuffer (EKUT)"
+ color:c08 from:13 till:21 text:"Robert Haase (MPI-CBG)"
+ color:c09 from:13 till:21 text:"Florian Jug (MPI-CBG)"
+ color:c10 from:13 till:21 text:"Tobias Pietzsch (MPI-CBG)"
+ color:c11 from:13 till:21 text:"Loic Royer (MPI-CBG)"
+ color:c12 from:13 till:17 text:"Tim-Oliver Buchholz (UniKN)"
+ color:c13 from:13 till:17 text:"Temesgen H. Dadi (FU Berlin)"
+ color:c14 from:12 till:22 text:"Christian Dietz (UniKN)"
+ color:c15 from:12 till:22 text:"Alexander Fillbrunn (UniKN)"
+ color:c16 from:12 till:22 text:"Jonathan Hale (KNIME)"
+ color:c17 from:12 till:22 text:"Stefan Helfrich (UniKN)"
+ color:c18 from:12 till:22 text:"Mark Hiner (UniWisc)"
+ color:c19 from:12 till:22 text:"Martin Horn (UniKN)"
+ color:c20 from:12 till:22 text:"David Kolb (UniKN)"
+ color:c21 from:12 till:22 text:"Ole Ostergaard (UniKN)"
+ color:c22 from:12 till:22 text:"Curtis Rueden (UniWisc)"
+ color:c23 from:12 till:22 text:"Patrick Winter (UniKN)"
+ color:c24 from:12 till:21 text:"Nico Hoffmann (TUD)"
+ color:c25 from:12 till:19 text:"Jon Fuller (KNIME)"
+ color:c26 from:12 till:19 text:"Kyle Harrington (HMS)"
+ color:c27 from:12 till:17 text:"Timo Sachsenberg (EKUT)"
+ color:c28 from:12 till:15 text:"Luis de la Garza (EKUT)"
+ color:c29 from:12 till:15 text:"Jan Eglinger (FMI Basel)"
 
 </timeline>
 

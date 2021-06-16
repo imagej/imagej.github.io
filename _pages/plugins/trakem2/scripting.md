@@ -158,8 +158,8 @@ Then the images are montaged layer-wise, and blended together (the borders of th
 
 Notice that, for this script to work for you, you will have to edit two lines:
 
-` 1. The source `<i><b>`folder`</b></i>` where images are to be found.`  
-` 2. The `<i><b>`pattern`</b></i>` to match, which dictates which image goes to which layer.`
+1. The source `folder` where images are to be found.
+2. The `pattern` to match, which dictates which image goes to which layer.
 
 Be sure as well to create as many layers as you need. If you don't know, use the <i>getLayer</i> method on the <i>layerset</i> variable, which has the ability to create a new layer when asked to get one for a Z for which a layer doesn't exist yet.
 
@@ -1296,7 +1296,7 @@ Notice that Jython lets you define the methods of event listeners as additional 
 
 ## Jython scripts for TrakEM2
 
-All the following are included in Fiji's plugins/Examples/plugins/trakem2\_Example\_Scripts/ folder:
+All the following are included in Fiji's `plugins/Examples/plugins/trakem2_Example_Scripts/` folder:
 
 -   {% include github repo='fiji' branch='master' path='plugins/Examples/plugins/trakem2_Example_Scripts/extract_stack_under_arealist.py' label='Extract stack under AreaList' %} in TrakEM2.
 -   {% include github repo='fiji' branch='master' path='plugins/Examples/plugins/trakem2_Example_Scripts/T2_set_all_transforms_to_identity.py' label='Set all transforms to identity' %} for TrakEM2 objects.

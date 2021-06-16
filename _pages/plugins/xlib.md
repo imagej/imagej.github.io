@@ -566,8 +566,10 @@ The results of this kind of correction is displayed in the above figure. To the 
 
 The roundness value of a connected object can be defined as the ratio of the actual size of the object and the size of the virtual sphere spanned by the largest diameter of that object.
 
-`2D: rnd = 4. * size / (diameter^2 * PI)`  
-`3D: rnd = 6. * size / (diameter^3 * PI)`
+```
+2D: rnd = 4. * size / (diameter^2 * PI)
+3D: rnd = 6. * size / (diameter^3 * PI)
+```
 
 Other well-known definitions (e.g. the definition of sphericity by Wadell \[Wadell1935\]) are based on the surface area of the sphere with the same volume as the object, relative to its actual surface area. The calculation of the surface area on pixelized objects is not straight forward, whereas the calculation of the volume size is just the number of object pixels or voxels. That's the reason why we prefer the former roundness definition. Though, another useful option for pixelized objects could be the roundness definition of ISO which is based on the ratio between inscribed and circumscribed circles of an object, i.e. the minimum and maximum sizes for circles fitting inside and enclosing an object.
 
@@ -633,11 +635,15 @@ This plugin provides image transforms for 2D images and for 3D image volumes by 
 
 This can be performed by using an operations strings syntax containing translation ('t'), rotation ('r') and / or scaling ('s') operation(s). Each operation is followed by its comma separated translation, rotation or scaling values. For instance, an operation
 
-`t10,-20r30`
+```
+t10,-20r30
+```
 
 defines a translation by (10, -20) followed by a rotation by 30 in degrees in 2D around the original center point. Likewise,
 
-`s0.5,0.8,1.5p0,0,0r-10,20,30t11,-22,33`
+```
+s0.5,0.8,1.5p0,0,0r-10,20,30t11,-22,33
+```
 
 defines a scaling by (0.5, 0.8, 1.5) followed by a rotation by (-10, 20, 30) in degrees around (0, 0, 0), followd by a translation by (11, -22, 33) in 3D.
 

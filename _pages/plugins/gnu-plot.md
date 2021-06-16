@@ -51,20 +51,28 @@ Let's say you want to see the histogram of a phase image in polar format.
 
 ## Methods
 
-`public static String gnuplot()`  
-`public static String gnuplot(String gp)`  
+```java
+public static String gnuplot()
+public static String gnuplot(String gp)
+```
 Identify the gnuplot executable, if needed.
 
-`public static ImagePlus process(String gps, String title)`  
-`public static boolean processAndDisplay(String gps, String title)`  
+```java
+public static ImagePlus process(String gps, String title)
+public static boolean processAndDisplay(String gps, String title)
+```
 Generate plot from complete Gnuplot script.
 
-`public static String plotgs(String code, double[][]... arrs)`  
-`public static String plotgs(String code, float[][]... arrs)`  
+```java
+public static String plotgs(String code, double[][]... arrs)
+public static String plotgs(String code, float[][]... arrs)
+```
 Generate complete plot script. Each `arrs` pass(ed) in will generate a separate *here-document* data block.
 
-`public static ImagePlus plot(String title, String code, double[][]... arrs)`  
-`public static ImagePlus plot(String title, String code, float[][]... arrs)`  
+```java
+public static ImagePlus plot(String title, String code, double[][]... arrs)
+public static ImagePlus plot(String title, String code, float[][]... arrs)
+```
 Generate ImagePlus. Each `arrs` pass(ed) in will generate a separate *here-document* data block.
 
 ## Coding Goodies

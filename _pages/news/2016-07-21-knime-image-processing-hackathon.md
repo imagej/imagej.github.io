@@ -12,39 +12,39 @@ The following chart illustrates when everyone was present:
 
 <!-- The above image was rendered by MediaWiki. Original data, as converted, follows:
 
-<timeline> Preset = TimeHorizontal\_AutoPlaceBars\_UnitYear
+<timeline> Preset = TimeHorizontal_AutoPlaceBars_UnitYear
 
 ImageSize = width:600
 
 Colors =
 
-` id:c01 value:blue`  
-` id:c02 value:red`  
-` id:c03 value:green`  
-` id:c04 value:black`  
-` id:c05 value:magenta`  
-` id:c06 value:teal`  
-` id:c07 value:yelloworange`  
-` id:c08 value:skyblue`  
-` id:c09 value:claret`  
-` id:c10 value:oceanblue`  
-` id:c11 value:purple`  
-` id:c12 value:powderblue`  
-` id:c13 value:coral`  
-` id:c14 value:redorange`  
-` id:c15 value:kelleygreen`  
-` id:c16 value:orange`  
-` id:c17 value:lightpurple`  
-` id:c18 value:tan2`  
-` id:c19 value:gray(0.3)`  
-` id:c20 value:blue`  
-` id:c21 value:red`  
-` id:c22 value:green`  
-` id:c23 value:black`  
-` id:c24 value:magenta`  
-` id:c25 value:teal`  
-` id:gridLine value:gray(0.5)`  
-` id:gridCanvas value:gray(0.8)`
+ id:c01 value:blue
+ id:c02 value:red
+ id:c03 value:green
+ id:c04 value:black
+ id:c05 value:magenta
+ id:c06 value:teal
+ id:c07 value:yelloworange
+ id:c08 value:skyblue
+ id:c09 value:claret
+ id:c10 value:oceanblue
+ id:c11 value:purple
+ id:c12 value:powderblue
+ id:c13 value:coral
+ id:c14 value:redorange
+ id:c15 value:kelleygreen
+ id:c16 value:orange
+ id:c17 value:lightpurple
+ id:c18 value:tan2
+ id:c19 value:gray(0.3)
+ id:c20 value:blue
+ id:c21 value:red
+ id:c22 value:green
+ id:c23 value:black
+ id:c24 value:magenta
+ id:c25 value:teal
+ id:gridLine value:gray(0.5)
+ id:gridCanvas value:gray(0.8)
 
 BackgroundColors = canvas:gridCanvas
 
@@ -54,56 +54,55 @@ ScaleMajor = unit:year increment:1 start:5 grid:white
 
 LineData =
 
-` at:5 color:gridLine layer:back width:0.5`  
-` at:6 color:gridLine layer:back width:0.5`  
-` at:7 color:gridLine layer:back width:0.5`  
-` at:8 color:gridLine layer:back width:0.5`  
-` at:9 color:gridLine layer:back width:0.5`  
-` at:10 color:gridLine layer:back width:0.5`  
-` at:11 color:gridLine layer:back width:0.5`  
-` at:12 color:gridLine layer:back width:0.5`  
-` at:13 color:gridLine layer:back width:0.5`  
-` at:14 color:gridLine layer:back width:0.5`
+ at:5 color:gridLine layer:back width:0.5
+ at:6 color:gridLine layer:back width:0.5
+ at:7 color:gridLine layer:back width:0.5
+ at:8 color:gridLine layer:back width:0.5
+ at:9 color:gridLine layer:back width:0.5
+ at:10 color:gridLine layer:back width:0.5
+ at:11 color:gridLine layer:back width:0.5
+ at:12 color:gridLine layer:back width:0.5
+ at:13 color:gridLine layer:back width:0.5
+ at:14 color:gridLine layer:back width:0.5
 
 BarData=
 
-` barset:Hackers`
+ barset:Hackers
 
 PlotData=
 
-` width:15 `  
-` fontsize:M`  
-` textcolor:white`  
-` align:left `  
-` anchor:from `  
-` shift:(4,-4) `  
-` color:black`
+ width:15 
+ fontsize:M
+ textcolor:white
+ align:left 
+ anchor:from 
+ shift:(4,-4) 
+ color:black
 
-` barSet:Hackers`  
-` color:c01 from:11 till:14 text:"Tim-Oliver Buchholz (UniKN)"`  
-` color:c02 from:8 till:9 text:"Joshy Cyriac (USB, 4Quant)"`  
-` color:c03 from:7 till:13 text:"Richard Domander (RVC)"`  
-` color:c04 from:7 till:10 text:"Kevin Mader (4Quant, ETHZ)"`  
-` color:c05 from:7 till:10 text:"Simon Schmid (UniKN)"`  
-` color:c06 from:7 till:9 text:"Marcel Wiedenmann (UniKN)"`  
-` color:c07 from:7 till:8 text:"Jan Eglinger (FMI Basel)"`  
-` color:c08 from:5 till:13 text:"Kyle Harrington (HMS)"`  
-` color:c09 from:6 till:12 text:"Curtis Rueden (UW-Madison)"`  
-` color:c10 from:5 till:14 text:"Christian Dietz (UniKN)"`  
-` color:c11 from:5 till:14 text:"Patrick Winter (UniKN)"`  
-` color:c12 from:5 till:14 text:"Tobias Pietzsch (MPI-CBG)"`  
-` color:c13 from:5 till:14 text:"Ulrik Günther (MPI-CBG)"`  
-` color:c14 from:5 till:14 text:"Martin Horn (UniKN)"`  
-` color:c15 from:5 till:14 text:"Andreas Burger (UniKN)"`  
-` color:c16 from:5 till:14 text:"Alexander FIllbrunn (UniKN)"`  
-` color:c17 from:5 till:14 text:"David Hörl (LMU Munich / MDC Berlin)"`  
-` color:c18 from:5 till:13 text:"Jonathan Hale (UniKN)"`  
-` color:c19 from:5 till:12 text:"Nico Hoffmann (TUD)"`  
-` color:c20 from:5 till:9 text:"Stefan Helfrich (UniKN)"`  
-` color:c21 from:5 till:8 text:"Cyril Mongis (Uni-Heidelberg)"`
+ barSet:Hackers
+ color:c01 from:11 till:14 text:"Tim-Oliver Buchholz (UniKN)"
+ color:c02 from:8 till:9 text:"Joshy Cyriac (USB, 4Quant)"
+ color:c03 from:7 till:13 text:"Richard Domander (RVC)"
+ color:c04 from:7 till:10 text:"Kevin Mader (4Quant, ETHZ)"
+ color:c05 from:7 till:10 text:"Simon Schmid (UniKN)"
+ color:c06 from:7 till:9 text:"Marcel Wiedenmann (UniKN)"
+ color:c07 from:7 till:8 text:"Jan Eglinger (FMI Basel)"
+ color:c08 from:5 till:13 text:"Kyle Harrington (HMS)"
+ color:c09 from:6 till:12 text:"Curtis Rueden (UW-Madison)"
+ color:c10 from:5 till:14 text:"Christian Dietz (UniKN)"
+ color:c11 from:5 till:14 text:"Patrick Winter (UniKN)"
+ color:c12 from:5 till:14 text:"Tobias Pietzsch (MPI-CBG)"
+ color:c13 from:5 till:14 text:"Ulrik Günther (MPI-CBG)"
+ color:c14 from:5 till:14 text:"Martin Horn (UniKN)"
+ color:c15 from:5 till:14 text:"Andreas Burger (UniKN)"
+ color:c16 from:5 till:14 text:"Alexander FIllbrunn (UniKN)"
+ color:c17 from:5 till:14 text:"David Hörl (LMU Munich / MDC Berlin)"
+ color:c18 from:5 till:13 text:"Jonathan Hale (UniKN)"
+ color:c19 from:5 till:12 text:"Nico Hoffmann (TUD)"
+ color:c20 from:5 till:9 text:"Stefan Helfrich (UniKN)"
+ color:c21 from:5 till:8 text:"Cyril Mongis (Uni-Heidelberg)"
 
 </timeline>
-
 -->
 
 ## Gallery

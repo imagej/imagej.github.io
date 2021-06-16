@@ -38,8 +38,10 @@ TrakEM2 interacts with the [3D Viewer](/plugins/3d-viewer) for visualization of 
 
 The following configuration has been tested in a machine with 8 CPU cores and 16 Gb of RAM, running Ubuntu 8.04 "Hardy", with a 1.6.0\_16 or newer JVM:
 
-`./ImageJ-linux64 -Xms10g -Xmx10g -Xincgc -XX:MaxPermSize=256m -XX:PermSize=256m`  
-`-XX:NewRatio=5 -XX:CMSTriggerRatio=50 -XX:+UseCompressedOops --`
+```shell
+./ImageJ-linux64 -Xms10g -Xmx10g -Xincgc -XX:MaxPermSize=256m -XX:PermSize=256m \
+                 -XX:NewRatio=5 -XX:CMSTriggerRatio=50 -XX:+UseCompressedOops --
+```
 
 Put all the above in one line.
 

@@ -26,32 +26,35 @@ As always, there were lots of other exciting collaborations going on, too!
 
 ## Participants
 
-<timeline> Preset = TimeHorizontal\_AutoPlaceBars\_UnitYear
+FIXME timeline
+
+<!--  
+<timeline> Preset = TimeHorizontal_AutoPlaceBars_UnitYear
 
 ImageSize = width:550
 
 Colors =
 
-` id:c01 value:blue`  
-` id:c02 value:red`  
-` id:c03 value:green`  
-` id:c04 value:black`  
-` id:c05 value:magenta`  
-` id:c06 value:teal`  
-` id:c07 value:yelloworange`  
-` id:c08 value:skyblue`  
-` id:c09 value:claret`  
-` id:c10 value:oceanblue`  
-` id:c11 value:purple`  
-` id:c12 value:powderblue`  
-` id:c13 value:coral`  
-` id:c14 value:redorange`  
-` id:c15 value:kelleygreen`  
-` id:c16 value:orange`  
-` id:c17 value:lightpurple`  
-` id:c18 value:tan2`  
-` id:gridLine value:gray(0.5)`  
-` id:gridCanvas value:gray(0.8)`
+ id:c01 value:blue
+ id:c02 value:red
+ id:c03 value:green
+ id:c04 value:black
+ id:c05 value:magenta
+ id:c06 value:teal
+ id:c07 value:yelloworange
+ id:c08 value:skyblue
+ id:c09 value:claret
+ id:c10 value:oceanblue
+ id:c11 value:purple
+ id:c12 value:powderblue
+ id:c13 value:coral
+ id:c14 value:redorange
+ id:c15 value:kelleygreen
+ id:c16 value:orange
+ id:c17 value:lightpurple
+ id:c18 value:tan2
+ id:gridLine value:gray(0.5)
+ id:gridCanvas value:gray(0.8)
 
 BackgroundColors = canvas:gridCanvas
 
@@ -61,55 +64,56 @@ ScaleMajor = unit:year increment:1 start:1 grid:white
 
 LineData =
 
-` at:1 color:gridLine layer:back width:0.5`  
-` at:2 color:gridLine layer:back width:0.5`  
-` at:3 color:gridLine layer:back width:0.5`  
-` at:4 color:gridLine layer:back width:0.5`  
-` at:5 color:gridLine layer:back width:0.5`  
-` at:6 color:gridLine layer:back width:0.5`  
-` at:7 color:gridLine layer:back width:0.5`  
-` at:8 color:gridLine layer:back width:0.5`  
-` at:9 color:gridLine layer:back width:0.5`  
-` at:10 color:gridLine layer:back width:0.5`  
-` at:11 color:gridLine layer:back width:0.5`  
-` at:12 color:gridLine layer:back width:0.5`  
-` at:13 color:gridLine layer:back width:0.5`  
-` at:14 color:gridLine layer:back width:0.5`  
-` at:15 color:gridLine layer:back width:0.5`  
-` at:16 color:gridLine layer:back width:0.5`
+ at:1 color:gridLine layer:back width:0.5
+ at:2 color:gridLine layer:back width:0.5
+ at:3 color:gridLine layer:back width:0.5
+ at:4 color:gridLine layer:back width:0.5
+ at:5 color:gridLine layer:back width:0.5
+ at:6 color:gridLine layer:back width:0.5
+ at:7 color:gridLine layer:back width:0.5
+ at:8 color:gridLine layer:back width:0.5
+ at:9 color:gridLine layer:back width:0.5
+ at:10 color:gridLine layer:back width:0.5
+ at:11 color:gridLine layer:back width:0.5
+ at:12 color:gridLine layer:back width:0.5
+ at:13 color:gridLine layer:back width:0.5
+ at:14 color:gridLine layer:back width:0.5
+ at:15 color:gridLine layer:back width:0.5
+ at:16 color:gridLine layer:back width:0.5
 
 BarData=
 
-` barset:Hackers`
+ barset:Hackers
 
 PlotData=
 
-` width:15 `  
-` fontsize:M`  
-` textcolor:white`  
-` align:left `  
-` anchor:from `  
-` shift:(4,-4) `  
-` color:black`
+ width:15 
+ fontsize:M
+ textcolor:white
+ align:left 
+ anchor:from 
+ shift:(4,-4) 
+ color:black
 
-` barSet:Hackers`  
-` color:c01 from:7 till:14 text:"Tobias Pietzsch"`  
-` color:c02 from:5 till:14 text:"Christian Dietz"`  
-` color:c03 from:2 till:12 text:"Florian Jug"`  
-` color:c04 from:2 till:11 text:"Stephan Saalfeld"`  
-` color:c05 from:2 till:9 text:"Matt McCormick"`  
-` color:c06 from:2 till:8 text:"Jan Brocher"`  
-` color:c08 from:2 till:7 text:"Karl Bellve"`  
-` color:c09 from:2 till:7 text:"Alex Rigano"`  
-` color:c07 from:2 till:6 text:"Tiago Ferreira"`  
-` color:c10 from:2 till:5 text:"Marcel Austenfeld"`  
-` color:c11 from:2 till:5 text:"Pariksheet Nanda"`  
-` color:c12 from:2 till:5 text:"Mark Tsuchida"`  
-` color:c13 from:2 till:5 text:"Chris Weisiger"`  
-` color:c14 from:1 till:16 text:"Madison Locals*"`  
-` color:c15 from:1 till:11 text:"Brian Northan"`
+ barSet:Hackers
+ color:c01 from:7 till:14 text:"Tobias Pietzsch"
+ color:c02 from:5 till:14 text:"Christian Dietz"
+ color:c03 from:2 till:12 text:"Florian Jug"
+ color:c04 from:2 till:11 text:"Stephan Saalfeld"
+ color:c05 from:2 till:9 text:"Matt McCormick"
+ color:c06 from:2 till:8 text:"Jan Brocher"
+ color:c08 from:2 till:7 text:"Karl Bellve"
+ color:c09 from:2 till:7 text:"Alex Rigano"
+ color:c07 from:2 till:6 text:"Tiago Ferreira"
+ color:c10 from:2 till:5 text:"Marcel Austenfeld"
+ color:c11 from:2 till:5 text:"Pariksheet Nanda"
+ color:c12 from:2 till:5 text:"Mark Tsuchida"
+ color:c13 from:2 till:5 text:"Chris Weisiger"
+ color:c14 from:1 till:16 text:"Madison Locals*"
+ color:c15 from:1 till:11 text:"Brian Northan"
 
 </timeline>
+-->
 
 \* Madison locals include:
 

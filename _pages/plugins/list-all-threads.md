@@ -10,35 +10,37 @@ An example [Jython](/scripting/jython) script to illustrate how to query a Threa
 
 The output is something like the following:
 
-`Threads:`  
-`1: Reference Handler`  
-`2: Finalizer`  
-`3: Signal Dispatcher`  
-`4: Java2D Disposer`  
-`5: TimerQueue`  
-`6: AWT-XAWT`  
-`7: AWT-Shutdown`  
-`8: AWT-EventQueue-0`  
-`9: SocketListener`  
-`10: DestroyJavaVM`  
-`11: pool-3-thread-1`  
-`12: 3D-V-IMP-updater`  
-`13: pool-4-thread-1`  
-`14: list all threads`  
-`15: J3D-RenderingAttributesStructureUpdateThread`  
-`16: J3D-TimerThread`  
-`17: J3D-NotificationThread`  
-`18: J3D-MasterControl-1`  
-`19: J3D-Renderer-1`  
-`20: J3D-BehaviorStructureUpdateThread-1`  
-`21: J3D-GeometryStructureUpdateThread-1`  
-`22: J3D-SoundStructureUpdateThread-1`  
-`23: J3D-RenderingEnvironmentStructureUpdateThread-1`  
-`24: J3D-TransformStructureUpdateThread-1`  
-`25: J3D-BehaviorScheduler-1`  
-`26: J3D-RenderStructureUpdateThread-1`  
-`27: J3D-SoundSchedulerUpdateThread-1`  
-`28: J3D-InputDeviceScheduler-1`
+```
+Threads:
+1: Reference Handler
+2: Finalizer
+3: Signal Dispatcher
+4: Java2D Disposer
+5: TimerQueue
+6: AWT-XAWT
+7: AWT-Shutdown
+8: AWT-EventQueue-0
+9: SocketListener
+10: DestroyJavaVM
+11: pool-3-thread-1
+12: 3D-V-IMP-updater
+13: pool-4-thread-1
+14: list all threads
+15: J3D-RenderingAttributesStructureUpdateThread
+16: J3D-TimerThread
+17: J3D-NotificationThread
+18: J3D-MasterControl-1
+19: J3D-Renderer-1
+20: J3D-BehaviorStructureUpdateThread-1
+21: J3D-GeometryStructureUpdateThread-1
+22: J3D-SoundStructureUpdateThread-1
+23: J3D-RenderingEnvironmentStructureUpdateThread-1
+24: J3D-TransformStructureUpdateThread-1
+25: J3D-BehaviorScheduler-1
+26: J3D-RenderStructureUpdateThread-1
+27: J3D-SoundSchedulerUpdateThread-1
+28: J3D-InputDeviceScheduler-1
+```
 
 ## Code
 

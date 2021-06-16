@@ -190,15 +190,17 @@ You might notice that the Grid/Collection Stitching does not offer any options f
 
 If you still have a known arrangement of tiles that is not covered by any of the grid methods, you can create yourself a tile configuration file which roughly describes the arrangement including the overlap. You can use this as input for the Grid/Collection stitching (option **Positions from file -&gt; Defined by TileConfiguration**) to refine it and find the correct alignment. Here is an example TileConfiguration.txt:
 
-`# Define the number of dimensions we are working on`  
-`dim = 3`  
-`# Define the image coordinates (in pixels)`  
-`img_73.tif; ; (0.0, 0.0, 0.0)`  
-`img_74.tif; ; (409.0, 0.0, 0.0)`  
-`img_75.tif; ; (0.0, 409.0, 0.0)`  
-`img_76.tif; ; (409.0, 409.0, 0.0)`  
-`img_77.tif; ; (0.0, 818.0, 0.0)`  
-`img_78.tif; ; (409.0, 818.0, 0.0)`
+```
+# Define the number of dimensions we are working on
+dim = 3
+# Define the image coordinates (in pixels)
+img_73.tif; ; (0.0, 0.0, 0.0)
+img_74.tif; ; (409.0, 0.0, 0.0)
+img_75.tif; ; (0.0, 409.0, 0.0)
+img_76.tif; ; (409.0, 409.0, 0.0)
+img_77.tif; ; (0.0, 818.0, 0.0)
+img_78.tif; ; (409.0, 818.0, 0.0)
+```
 
 ### I want to define a different overlap for X and Y using a Grid-Layout
 
