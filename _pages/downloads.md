@@ -38,12 +38,16 @@ table.help-me-decide li {
 </tr>
 <tr>
   <td><ul>
-    <li>Lightweight (ImageJ1 is a single JAR file)</li>
+    <li>Lightweight (ImageJ is a single JAR file)</li>
     <li>Simple software architecture is <a href="https://imagej.nih.gov/ij/developer/">approachable for non-programmers</a></li>
-    <li>Often faster than ImageJ2, for the scenarios ImageJ1 supports</li>
+    <li>Often faster than Fiji, for the scenarios ImageJ supports</li>
     <li><a href="/licensing/#a-note-about-imagej1">No copyright whatsoever</a></li>
     <li>Very stable and mature</li>
     <li><a href="/people/rasband">Responsive and experienced maintainer</a> fixes bugs quickly</li>
+    <li>Smaller (81 MB download versus 474 MB for Fiji)</li>
+    <li>Built in Java compiler (no IDE required)</li>
+    <li>Runs in Web browsers (<a href="https://ij.imjoy.io/">ImageJ.JS</a>)</li>
+    <li>Runs natively on M1 (arm64) Macs</li>
   </ul></td>
   <td><ul>
     <li><a href="https://imagej.net/presentations/2017-02-16-imagej2-neubias/#/24">More powerful</a></li>
