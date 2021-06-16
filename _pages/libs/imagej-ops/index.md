@@ -61,9 +61,11 @@ For the core Ops available, you can go to the {% include javadoc package='?net/i
 
 You can also use the [Script Editor](/scripting/script-editor) in ImageJ and actively search using Ops itself. For example in groovy language:
 
-    // @OpService ops
-    print ops.help()
+{% highlight groovy %}
+// @OpService ops
+print ops.help()
 
+{% endhighlight %}
 in groovy will give a list of every Op signature. The `help` op can also provide information about ops or namespaces; e.g., `ops.help("add")` will return info about available `add` ops.
 
 ### Are there any Ops for image processing?
