@@ -507,7 +507,12 @@
 
         targetElms.forEach(function (elm) {
             try {
-                let tmp = elm.previousSibling.previousSibling;
+                // patch for rouge syntax highlighter
+                if(elm.parentElement && elm.parentElement.parentElement && elm.parentElement.classList.contains('highlight')){
+                    elm = elm.parentElement.parentElement
+                }
+
+                let tmp = elm.previousSibling && elm.previousSibling.previousSibling;
                 if (!tmp || tmp.nodeName !== "#comment" || !tmp.nodeValue.trim().startsWith("ImJoyPlugin")) {
                     // in case there is no empty line
                     // the comment will be nested in the previous sibling
