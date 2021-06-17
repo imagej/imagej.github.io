@@ -567,7 +567,17 @@
             }
         });
     }
-
+    const menuElem = document.createElement('div');
+    menuElem.id = "menu-container";
+    document.body.appendChild(menuElem);
+    const stylePatch = document.createElement('style');
+    stylePatch.textContent = `
+    .imjoy-dialog-control {
+        padding: 0px;
+        line-height: 10px;
+        color: white!important;
+    }`;
+    document.head.append(stylePatch);
     loadImJoyBasicApp({
         process_url_query: true,
         show_window_title: false,
