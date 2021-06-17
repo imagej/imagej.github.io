@@ -1,6 +1,5 @@
 ---
-mediawiki: Compatibility
-title: ImageJ Legacy Layer
+title: ImageJ Legacy Bridge
 section: Explore:Libraries
 artifact: net.imagej:imagej-legacy
 icon: /media/icons/imagej.png
@@ -42,4 +41,4 @@ The eventual goal is to migrate all core ImageJ1 plugins to the ImageJ2 paradigm
 
 ## See also
 
--   The [ImageJDev talk](http://conference.imagej.net/2010/curtis-rueden/2010-10-27-ImageJDev.pdf) from the ImageJ 2010 Conference, for a historical perspective on how this approach to compatibility evolved over time.
+-   The [ImageJDev talk](https://conference.imagej.net/2010/curtis-rueden/2010-10-27-ImageJDev.pdf) from the ImageJ 2010 Conference, for a historical perspective on how this approach to compatibility evolved over time.
