@@ -37,13 +37,12 @@ Note that since ImageJ2 has a modular [architecture](/develop/architecture), it 
 
 ## ImageJ 1.x
 
-Changes to [ImageJ 1.x](/software/imagej-1.x) are made by {% include person id='rasband' %}, who is the sole [ImageJ 1.x](/software/imagej-1.x) developer. He takes patch submissions and then reworks them to fit within the project's development model and style before merging them. Attribution for the changes is noted in the release notes (see [ImageJ1's Release Notes/News](https://imagej.nih.gov/ij/notes.html)).
+Changes to [ImageJ 1.x](/software/imagej-1.x) are made by {% include person id='rasband' %}, the [ImageJ 1.x](/software/imagej-1.x) developer, along with many contributers. He takes patch submissions and then reworks them to fit within the project's development model and style before merging them. Attribution for the changes is noted in the release notes (see [Release Notes/News](https://imagej.nih.gov/ij/notes.html)).
 
 Methods of getting the patch to Wayne include:
 
--   Send the modified code in a [private mail to Wayne](mailto:rasbandw@mail.nih.gov). He prefers not to discuss code on the ImageJ mailing list.
--   Send a patch to [Wayne via private mail](mailto:rasbandw@mail.nih.gov). It should apply to [the latest revision](https://github.com/imagej/imagej1/commit/master) and must not use any Git extension because Wayne uses `patch(1)` to apply the patch.
 -   Submit a pull request on GitHub against {% include github org='imagej' repo='imagej1' label='the ImageJ 1.x repository' %}. Please note, though, that none of [the past Pull Requests](https://github.com/imagej/imagej1/pulls?q=is%3Apr+is%3Aclosed) were merged using the standard Git workflow.
+-   Send the modified code in a [private mail to Wayne](mailto:rasband@gmail.com).
 
 The important part is that Wayne receive the code/patch, since he is the only one with the authority to merge it.
 
