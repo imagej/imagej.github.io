@@ -1,5 +1,4 @@
 ---
-mediawiki: Conference
 title: Conferences
 ---
 
