@@ -1,5 +1,4 @@
 ---
-mediawiki: Upcoming_Events
 title: Upcoming Events
 section: Explore:Events
 ---
