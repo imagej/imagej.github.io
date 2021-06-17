@@ -11,6 +11,7 @@ github: imjoy-team
 twitter: ImJoyTeam
 license-url: /licensing/mit
 license-label: MIT
+forum-tag: imjoy
 team-leads: Wei Ouyang | /people/oeway
 ---
 
