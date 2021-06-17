@@ -6,15 +6,10 @@
 <script src="/assets/js/util.js"></script>
 <script src="/assets/js/jquery.toc.js"></script>
 <script src="/assets/js/lightbox.min.js"></script>
-{% if page.usemathjax %}
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=default">
-</script>
-{% endif %}
-{% if page.imjoy %}
-<script src="https://lib.imjoy.io/imjoy-loader.js"></script>
-<script src="/assets/js/imjoy-app.js"></script>
-{% endif %}
+<!-- Extensions -->
+{% for extension in page.extensions %}
+{% include extensions/{{ extension }} %}
+{% endfor %}
 <!-- Site code -->
 <script src="/assets/js/main.js"></script>
 <script src="/assets/js/dock.js"></script>
