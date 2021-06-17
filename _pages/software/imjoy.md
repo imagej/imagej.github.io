@@ -21,6 +21,8 @@ ImJoy is a plugin powered hybrid computing platform for deploying deep learning 
 
 The ImJoy project was started at Institut Pasteur in 2018. It is currently actively improved and maintained by the ImJoy Team led by Wei Ouyang (SciLifeLab & KTH in Stockholm). The team consists of members from different institutions who meet weekly and continuously improving the software and expanding the plugin ecosystem.
 
+The latest documentation with full details are avaiable at [https://imjoy.io/docs](https://imjoy.io/docs).
+
 # Getting started
 ImJoy is a progressive web application which you can run directly in your browser without installation. Go to [https://imjoy.io](https://imjoy.io) and click "Start ImJoy".
 

@@ -75,6 +75,8 @@ Still have questions? Ask on the [Image.sc Forum](https://forum.image.sc/tag/ima
 <details class="shadowed-box"><summary><strong>Need help deciding? Click here.</strong></summary>
 {{help-me-decide | markdownify}}
 </details>
+<div class="shadowed-box">💡 You can also try <a href="/software/imagej-js">ImageJ.JS</a> in your web browser: <a href="https://ij.imjoy.io" target="_blank">https://ij.imjoy.io</a>
+</div>
 
 # System requirements
 

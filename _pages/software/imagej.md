@@ -12,6 +12,7 @@ timeline-imagej:
 - 2008 | Fiji                  | TODO
 - 2009 | ImageJ2               | TODO
 - 2015 | ImageJFX              | TODO
+- 2020 | ImageJ.JS             | TODO
 ---
 
 
@@ -77,6 +78,16 @@ There are a few different flavors of ImageJ with very similar names, and some co
         with Maven without hassles.<br><br>It is what ImageJ2's legacy support
         uses at its core.</td>
       <td>Jul. 2005</td>
+      <td>Active</td>
+    </tr>
+    <tr>
+      <td><img src="https://ij.imjoy.io/assets/icons/chrome/chrome-installprocess-128-128.png" width="64"/></td>
+      <td><a href="/software/imagej-js">ImageJ.JS</a></td>
+      <td>{% include person id='oeway' %}</td>
+      <td>ImageJ.JS is a web version of <a href="/libs/imageja">ImageJA</a> that runs in the browser without installation,
+      compiled from Java to Javascript using the <a href="https://leaningtech.com/cheerpj/">Cheerpj compiler</a> and integrated with the <a href="/software/imjoy">ImJoy</a> plugin system. It's accessible from <a href="https://ij.imjoy.io">https://ij.imjoy.io</a> and also support mobile devices and tablets.
+      </td>
+      <td>2020</td>
       <td>Active</td>
     </tr>
     <tr>
