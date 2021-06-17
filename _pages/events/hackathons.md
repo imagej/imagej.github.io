@@ -1,6 +1,5 @@
 ---
-mediawiki: Hackathon
-title: Hackathon
+title: Hackathons
 section: Explore:Events
 ---
 
