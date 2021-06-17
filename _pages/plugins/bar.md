@@ -166,7 +166,7 @@ Do you find yourself copy and pasting functions from one file to the other? Do y
 
 The idea is quite simple: Reusable functions and methods are written to a lib file that gets loaded at execution time so that it can be called by the running script. {% include bc path="BAR | Snippets | New Snippet..." %} exemplifies how to use these scripting add-ons. Here is a BeanShell example:
 
-```beanshell
+```java
 // Add BAR/lib to classpath
 addClassPath(bar.Utils.getBARDir()); // See https://tferr.github.io/Scripts/apidocs/index.html?bar/Utils.html for details
 importCommands("lib/");
