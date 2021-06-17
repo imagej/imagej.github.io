@@ -15,7 +15,7 @@ section: Explore
 
 This page shows the latest announcements and updates about ImageJ.
 
-[ImageJ1](/software/imagej1) release notes are listed on the [IJ1 news page](https://imagej.nih.gov/ij/notes.html).
+[ImageJ 1.x](/software/imagej-1.x) release notes are listed on the [IJ1 news page](https://imagej.nih.gov/ij/notes.html).
 
 <div class="news-grid" >
    {% include news/list %}

@@ -156,10 +156,10 @@ Here is a summary of roles for projects in the [SciJava](/libs/scijava) ecosyste
     </tr>
     <tr>
       <td>
-        <p>{% include icon name='ImageJ1' %}</p>
+        <p>{% include icon name='ImageJ 1.x' %}</p>
       </td>
       <td>
-        <p><strong><a href="/software/imagej1">ImageJ1</a></strong></p>
+        <p><strong><a href="/software/imagej-1.x">ImageJ 1.x</a></strong></p>
       </td>
       <td>
         <p>{% include person id='rasband' %}</p>

@@ -7,7 +7,7 @@ description: This page provides download links for ImageJ.
 
 Which distribution of ImageJ would you like to download?
 
-| [![](/media/icons/fiji.svg){:width="96px"}<br>Fiji](/software/fiji/downloads) | [![](/media/icons/imagej1.png){:width="96px"}<br>ImageJ1](https://imagej.nih.gov/ij/download.html) |
+| [![](/media/icons/fiji.svg){:width="96px"}<br>Fiji](/software/fiji/downloads) | [![](/media/icons/imagej-1.x.png){:width="96px"}<br>ImageJ 1.x](https://imagej.nih.gov/ij/download.html) |
 {:.plain.center.center-text}
 
 {% capture help-me-decide %}
@@ -33,7 +33,7 @@ table.help-me-decide li {
 </style>
 <table class="plain top help-me-decide">
 <tr>
-  <th class="center-text middle"><a href="/software/imagej1">{% include img src="icons/imagej1" width=24 %} ImageJ1</a></th>
+  <th class="center-text middle"><a href="/software/imagej-1.x">{% include img src="icons/imagej-1.x" width=24 %} ImageJ 1.x</a></th>
   <th class="center-text middle"><a href="/software/imagej2">{% include img src="icons/imagej"  width=24 %} ImageJ2</a></th>
 </tr>
 <tr>
@@ -41,7 +41,7 @@ table.help-me-decide li {
     <li>Lightweight (ImageJ is a single JAR file)</li>
     <li>Simple software architecture is <a href="https://imagej.nih.gov/ij/developer/">approachable for non-programmers</a></li>
     <li>Often faster than Fiji, for the scenarios ImageJ supports</li>
-    <li><a href="/licensing/#a-note-about-imagej1">No copyright whatsoever</a></li>
+    <li><a href="/licensing/#a-note-about-imagej-1.x">No copyright whatsoever</a></li>
     <li>Very stable and mature</li>
     <li><a href="/people/rasband">Responsive and experienced maintainer</a> fixes bugs quickly</li>
     <li>Smaller (81 MB download versus 474 MB for Fiji)</li>
@@ -54,7 +54,7 @@ table.help-me-decide li {
     <li>Robust <a href="/develop/architecture">software architecture</a></li>
     <li>Advanced <a href="/scripting">scripting</a> features</li>
     <li><a href="/licensing">Licensed as permissive open source</a></li>
-    <li><a href="/libs/imagej-legacy">Backwards compatible with ImageJ1</a></li>
+    <li><a href="/libs/imagej-legacy">Backwards compatible with ImageJ 1.x</a></li>
     <li><a href="/plugins/updater">ImageJ Updater</a> lets you install plugins from <a href="/update-sites">ImageJ update sites</a></li>
     <li>Support for <a href="/learn/headless">headless execution</a></li>
     <li><a href="/scripting/python">Works from Python</a>, including from Jupyter Notebooks</li>
@@ -68,7 +68,7 @@ For a thorough discussion of the two projects and their differences, please read
 
 * {% include citation id='software/imagej2' %}
 * {% include citation id='software/imagej' %}
-* {% include citation id='software/imagej1' %}
+* {% include citation id='software/imagej-1.x' %}
 
 Still have questions? Ask on the [Image.sc Forum](https://forum.image.sc/tag/imagej)!
 {% endcapture %}

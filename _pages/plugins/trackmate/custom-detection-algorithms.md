@@ -275,7 +275,7 @@ Since the TrackMateModule concrete implementation must have a blank constructor,
 public boolean setTarget( final ImgPlus< T > img, final Map< String, Object > settings )
 ```
 
-The raw image data is returned as an `ImgPlus`, that can be seen as the [ImgLib2](/libs/imglib2) equivalent of ImageJ1 {% include github org='imagej' repo='ImageJA' branch='master' source='ij/ImagePlus.java' label='ImagePlus' %}. It contains the pixel data for all available dimensions (all X, Y, Z, C, T if any), plus the spatial calibration we need to operate in physical units. The concrete factory must be able to extract from this ImgPlus the data useful for the SpotDetectors it will instantiate, keeping in mind that each SpotDetector operates on one frame.
+The raw image data is returned as an `ImgPlus`, that can be seen as the [ImgLib2](/libs/imglib2) equivalent of ImageJ 1.x {% include github org='imagej' repo='ImageJA' branch='master' source='ij/ImagePlus.java' label='ImagePlus' %}. It contains the pixel data for all available dimensions (all X, Y, Z, C, T if any), plus the spatial calibration we need to operate in physical units. The concrete factory must be able to extract from this ImgPlus the data useful for the SpotDetectors it will instantiate, keeping in mind that each SpotDetector operates on one frame.
 
 The second argument is the settings map for this specific detector. It takes the shape of a map with string keys and object values, that can be cast to whatever relevant class. The concrete factory must be able to check that all the required parameters are there, and have a valid class, and to feed to the SpotDetector instances. We will see below that the user provides them through a configuration panel.
 

@@ -12,7 +12,7 @@ The first beta of the [next generation of ImageJ](/software/imagej2) is out! Fro
 >
 > The ImageJ2 user interface is modeled after ImageJ v1.x as much as possible. However, under the hood, ImageJ2 is a complete redesign of ImageJ. It provides backward compatibility with older versions of ImageJ by bundling the latest v1.x code and translating between "legacy" and "modern" image structures.
 
-ImageJ2 is slated to become the new core of Fiji (since ImageJ2 is going to be almost 100% backwards-compatible with ImageJ1).
+ImageJ2 is slated to become the new core of Fiji (since ImageJ2 is going to be almost 100% backwards-compatible with ImageJ 1.x).
 
 Read the full announcement [here](/news/2012-04-09-imagej-v2-0-0-beta1).
 

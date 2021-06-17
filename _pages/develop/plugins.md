@@ -9,7 +9,7 @@ If you are interested in developing an **existing** plugin instead, see [Contrib
 
 If you have completed a plugin that you would like to **share with the community**, see [Distributing your plugins](/contribute/distributing).
 
-For instructions on plugin development for [ImageJ 1.x](/software/imagej1), see [Developing Plugins for ImageJ 1.x](/develop/ij1-plugins).' %}
+For instructions on plugin development for [ImageJ 1.x](/software/imagej-1.x), see [Developing Plugins for ImageJ 1.x](/develop/ij1-plugins).' %}
 
  
 

@@ -771,7 +771,7 @@ The measures are reported separately for each 3D subspace in the image, i.e. for
 
 The BoneJ plug-ins print their results into a shared result table. This is because we often need to calculate several measures for the same image, so it's handy to have them on one row. Repeated measures for the same image are reported on different rows. The results persist even if the table is closed. To clear the table run {% include bc path="Plugins | BoneJ | Table | Clear BoneJ results" %}.
 
-Note that some of the plug-ins (marked with *WIP*) still use a ImageJ1 style results table that works slightly differently. As they are modernized they'll move to use the same new table as the others.
+Note that some of the plug-ins (marked with *WIP*) still use a ImageJ 1.x style results table that works slightly differently. As they are modernized they'll move to use the same new table as the others.
 
 ## Usage reporting
 

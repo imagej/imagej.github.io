@@ -152,7 +152,7 @@ javadocs.
 {% capture javadoc-class-code %}
 See also the
 {% raw %}{% include javadoc
-  project="ImageJ1"
+  project="ImageJ 1.x"
   package="ij.process"
   class="ImageProcessor" %}{% endraw %}
 class.
@@ -160,7 +160,7 @@ class.
 {% capture javadoc-class-result %}
 See also the
 {% include javadoc
-  project="ImageJ1"
+  project="ImageJ 1.x"
   package="ij.process"
   class="ImageProcessor" %}
 class.

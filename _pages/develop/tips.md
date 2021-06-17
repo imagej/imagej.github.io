@@ -238,7 +238,7 @@ Then you can add a new row:
 
     rt.show("Results");
 
-## How to find equivalent API commands between ImageJ1 and ImageJ2?
+## How to find equivalent API commands between ImageJ 1.x and ImageJ2?
 
 [ImageJ1-ImageJ2 cheat sheet](/develop/ij1-ij2-cheat-sheet) is available.
 

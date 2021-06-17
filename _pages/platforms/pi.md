@@ -9,7 +9,7 @@ The {% include wikipedia title='Raspberry Pi' text='Raspberry Pi' %} is an inexp
 
 # Installation
 
-{% include aside content='You might notice there is as an `imagej` package available from your package manager. Please be aware that this provides [ImageJ 1.x](/software/imagej1) only, packaged by a third party, without cooperation from the core ImageJ development team. You will not have access to any [ImageJ2](/software/imagej2)-specific features such as [parameterized scripts](/scripting/parameters), and you will likely have permissions errors because it is a system-wide ImageJ installation.' %}
+{% include aside content='You might notice there is as an `imagej` package available from your package manager. Please be aware that this provides [ImageJ 1.x](/software/imagej-1.x) only, packaged by a third party, without cooperation from the core ImageJ development team. You will not have access to any [ImageJ2](/software/imagej2)-specific features such as [parameterized scripts](/scripting/parameters), and you will likely have permissions errors because it is a system-wide ImageJ installation.' %}
 
 The following steps describe how to install ImageJ on a Raspberry Pi:
 

@@ -29,7 +29,7 @@ section: Contribute
 <div class="contributor-block" markdown=1>
 ### {% include icon name='ImageJ' size='32px' %} [ImageJ](/software/imagej)
 
--   {% include person id='rasband' %}[^9] (lead, [ImageJ 1.x](/software/imagej1))
+-   {% include person id='rasband' %}[^9] (lead, [ImageJ 1.x](/software/imagej-1.x))
 -   {% include person id='ctrueden' %}[^1] (lead, [ImageJ2](/software/imagej2))
 -   {% include person id='hinerm' %}[^1]
 -   {% include person id='elevans' %}[^1]
@@ -123,7 +123,7 @@ for details on that plugin's maintainers.
 ### Special thanks
 
 Our deep thanks to {% include person id='rasband' %}, author of
-[ImageJ1](/software/imagej1), for all his support and patience!
+[ImageJ 1.x](/software/imagej-1.x), for all his support and patience!
 
 ## List of contributors
 

@@ -85,7 +85,7 @@ Flow-induced banding patterns in extrusion-based foams can lead to aesthetic iss
 
 ### Mark Hiner - ImageJ+MATLAB: Reunited
 
-ImageJ and MATLAB both provide powerful scientific development paradigms. To lower the barrier between these tools, ImageJ now offers a MATLAB script language plugin, making it possible to execute parameterized MATLAB scripts from within ImageJ's script editor. In the other direction, the ability to call ImageJ from MATLAB has been improved with an enhanced MIJ.m script, which supports the full range of installed plugins, and supports the use of both ImageJ1 and ImageJ2 data structures from the MATLAB command prompt. This bidirectional support facilitates the sharing and reuse of efforts from both communities.
+ImageJ and MATLAB both provide powerful scientific development paradigms. To lower the barrier between these tools, ImageJ now offers a MATLAB script language plugin, making it possible to execute parameterized MATLAB scripts from within ImageJ's script editor. In the other direction, the ability to call ImageJ from MATLAB has been improved with an enhanced MIJ.m script, which supports the full range of installed plugins, and supports the use of both ImageJ 1.x and ImageJ2 data structures from the MATLAB command prompt. This bidirectional support facilitates the sharing and reuse of efforts from both communities.
 
 For further details and code links, see [MATLAB Scripting](/scripting/matlab).
 
@@ -213,7 +213,7 @@ The [scripting](/scripting) capabilities of [ImageJ](/software/imagej) play a pi
 1.  An updated installation of Fiji
 2.  An internet connection, required for download of sample images and browsing of http://javadoc.imagej.net
 
-NB: If you subscribe to the ImageJ-dev update site, ensure that your Image1 version is at least 1.50a (the ImageJ-dev update site may bundle an outdated version of ImageJ1). To do so, use the ImageJ1 command {% include bc path='Help |Update ImageJ...'%}  
+NB: If you subscribe to the ImageJ-dev update site, ensure that your Image1 version is at least 1.50a (the ImageJ-dev update site may bundle an outdated version of ImageJ 1.x). To do so, use the ImageJ 1.x command {% include bc path='Help |Update ImageJ...'%}  
 
 \[ [Presentation video](https://vimeo.com/140099767/) \]
 

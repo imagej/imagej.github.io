@@ -45,7 +45,7 @@ Test LimeSeg is a modular 3D segmentation plugin. It is a particle-based active 
 
 ![](/media/plugins/dub-scaled0.5xy-tp19.png)
 
-LimeSeg can be used with simple commands provided by the plugin (under {% include bc path="Plugins|LimeSeg" %} in ImageJ menu), or on a more advanced manner with scripting capabilities of ImageJ (macro commands of ImageJ1 or preferentially with [groovy scripts](/scripting/groovy)).
+LimeSeg can be used with simple commands provided by the plugin (under {% include bc path="Plugins|LimeSeg" %} in ImageJ menu), or on a more advanced manner with scripting capabilities of ImageJ (macro commands of ImageJ 1.x or preferentially with [groovy scripts](/scripting/groovy)).
 
 # Commands : basic usage
 
@@ -224,7 +224,7 @@ So far LimeSeg provides its own 3D vizualizer. The 3D viewer looks at a specific
 
 The command {% include bc path="Plugins|LimeSeg|Show GUI" %} displays LimeSeg GUI. This graphical interface allows to do almost everything in LimeSeg. Each action (meaning button you click) is recordable if you have opened the {% include bc path="Plugins|Macro|Record" %} recorder.
 
-To execute the script in ImageJ1 macro language, just add `run("Show GUI");` as the first line of your script.
+To execute the script in ImageJ 1.x macro language, just add `run("Show GUI");` as the first line of your script.
 
 To execute the script in Groovy, replace **Ext.** by **LimeSeg.**, and put `import eu.kiaru.limeseg.LimeSeg;` at the beginning of the script.
 
@@ -260,7 +260,7 @@ Now click `showTable` in the `STATE` tab. This creates a **Cells explorer** tabl
 
 #### Vizualizing 3D Objects
 
-In LimeSeg GUI, go to 3D View, click `make3DViewVisible`, then `putAllCellsTo3DDisplay`. This displays the C Elegans embryo, but only at the first timepoint (timepoint 1 by convention in ImageJ1). However as seen in the table, many more objects exist. To be able to see the evolution of the embryo over time, LimeSeg has to be linked to an ImageJ image (ImagePlus). To link LimeSeg with the proper image, download the image sample (https://raw.githubusercontent.com/NicoKiaru/TestImages/master/CElegans/dub-0.5xy-TP1-22.tif) and open it in Fiji.
+In LimeSeg GUI, go to 3D View, click `make3DViewVisible`, then `putAllCellsTo3DDisplay`. This displays the C Elegans embryo, but only at the first timepoint (timepoint 1 by convention in ImageJ 1.x). However as seen in the table, many more objects exist. To be able to see the evolution of the embryo over time, LimeSeg has to be linked to an ImageJ image (ImagePlus). To link LimeSeg with the proper image, download the image sample (https://raw.githubusercontent.com/NicoKiaru/TestImages/master/CElegans/dub-0.5xy-TP1-22.tif) and open it in Fiji.
 
 Now you need to link the Image with LimeSeg:
 
@@ -376,8 +376,8 @@ The other parameters can be modified within the 3D View Panel. In LimeSeg GUI, t
 
 # Script examples
 
-Example scripts (ImageJ1 and groovy) are available here:
+Example scripts (ImageJ 1.x and groovy) are available here:
 
-https://github.com/NicoKiaru/LimeSeg/tree/master/src/main/resources/script-templates/LimeSeg
+{% include link-banner url='https://github.com/NicoKiaru/LimeSeg/tree/master/src/main/resources/script-templates/LimeSeg' %}
 
 They are also accessible as templates in the [ImageJ script editor](/scripting/script-editor), if the LimeSeg update site is enabled.

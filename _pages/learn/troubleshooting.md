@@ -232,11 +232,11 @@ If you are already at the limits of your computer's physical memory, the next st
 
 This error usually means that your image planes are larger than the maximum supported size.
 
-[ImageJ1](/software/imagej1) only supports image planes with **2 gigapixels** (2^31 = 2147483648 pixels; in case of a square image, the maximum allowed is 46340 x 46340 pixels) or less. If your data has extremely large image planes—e.g., 50000 x 50000 pixels—you may need to analyze region by region. One way to do this is using the "Crop on import" feature of the [Bio-Formats](/formats/bio-formats) plugin.
+[ImageJ 1.x](/software/imagej-1.x) only supports image planes with **2 gigapixels** (2^31 = 2147483648 pixels; in case of a square image, the maximum allowed is 46340 x 46340 pixels) or less. If your data has extremely large image planes—e.g., 50000 x 50000 pixels—you may need to analyze region by region. One way to do this is using the "Crop on import" feature of the [Bio-Formats](/formats/bio-formats) plugin.
 
-If you are using Bio-Formats to open a file, however, the size limit is a bit more complicated. Instead of using `short[]` as in ImageJ1, Bio-Formats store data in `byte[]` when reading planes. If the source image is in 16 bit or in 32 bit (4 bytes, eg. floating point TIFF), the maximum pixel numbers allowed per plane will be 1/2 (1 gigapixels) or 1/4 (0.5 gigapixels), respectively.
+If you are using Bio-Formats to open a file, however, the size limit is a bit more complicated. Instead of using `short[]` as in ImageJ 1.x, Bio-Formats store data in `byte[]` when reading planes. If the source image is in 16 bit or in 32 bit (4 bytes, eg. floating point TIFF), the maximum pixel numbers allowed per plane will be 1/2 (1 gigapixels) or 1/4 (0.5 gigapixels), respectively.
 
-[ImageJ2](/software/imagej2) supports larger image planes internally, but uses the [ImageJ1](/software/imagej1) user interface by default, which once again limits visualization to 2 gigapixels. The [ImageJ2 team](/people) is working to lift these size restrictions; see {% include github org='imagej' repo='imagej' issue='87' label='imagej/imagej\#87' %}.
+[ImageJ2](/software/imagej2) supports larger image planes internally, but uses the [ImageJ 1.x](/software/imagej-1.x) user interface by default, which once again limits visualization to 2 gigapixels. The [ImageJ2 team](/people) is working to lift these size restrictions; see {% include github org='imagej' repo='imagej' issue='87' label='imagej/imagej\#87' %}.
 
 ## UnsupportedClassVersionError
 

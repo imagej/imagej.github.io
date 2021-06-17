@@ -50,7 +50,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
       <td><a href="/people">ImageJ developers</a></td>
       <td>A new version of ImageJ targeting scientific multidimensional image
         data. It is a complete rewrite of ImageJ, but includes <a
-        href="/software/imagej1">ImageJ1</a> with a compatibility layer,
+        href="/software/imagej-1.x">ImageJ 1.x</a> with a compatibility layer,
         so that old-style plugins and macros can run the same as always.
         ImageJ2 provides several significant new features, such as an automatic
         <a href="updater">updater</a>, and improved <a
@@ -59,8 +59,8 @@ There are a few different flavors of ImageJ with very similar names, and some co
       <td>Active</td>
     </tr>
     <tr>
-      <td><img src="/media/icons/imagej1.png" width="64"/></td>
-      <td><a href="/software/imagej1">ImageJ1</a></td>
+      <td><img src="/media/icons/imagej-1.x.png" width="64"/></td>
+      <td><a href="/software/imagej-1.x">ImageJ 1.x</a></td>
       <td>{% include person id='rasband' %}</td>
       <td>A stable version of ImageJ which has been in development since 1997.
         It has a strong, established user base, with thousands of plugins and
@@ -69,11 +69,11 @@ There are a few different flavors of ImageJ with very similar names, and some co
       <td>Active</td>
     </tr>
     <tr>
-      <td><img src="/media/icons/imagej1.png" width="64"/></td>
+      <td><img src="/media/icons/imagej-1.x.png" width="64"/></td>
       <td><a href="/libs/imageja">ImageJA</a></td>
       <td><a href="/people">ImageJ developers</a></td>
       <td>ImageJA is a project that provides a clean <a href="/develop/git">Git</a>
-        history of ImageJ1, with a proper 'pom.xml' file so that it can be used
+        history of ImageJ 1.x, with a proper 'pom.xml' file so that it can be used
         with Maven without hassles.<br><br>It is what ImageJ2's legacy support
         uses at its core.</td>
       <td>Jul. 2005</td>
@@ -109,7 +109,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
       <td></td>
       <td><a href="http://www.rawak.de/ij2x/imagej2x.html">ImageJ2x</a></td>
       <td><a href="http://rawak.de/">Rawak Software</a></td>
-      <td>ImageJ2x is a fork of ImageJ1, modified to use a Swing interface.</td>
+      <td>ImageJ2x is a fork of ImageJ 1.x, modified to use a Swing interface.</td>
       <td>Unknown</td>
       <td>Last update:<br>May 2015</td>
     </tr>
@@ -120,7 +120,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
       <td><img src="/media/logos/eu-hou.png" width="64"/></td>
       <td><a href="http://www.euhou.net/index.php?option=com_content&amp;task=view&amp;id=7&amp;Itemid=9">SalsaJ</a></td>
       <td><a href="http://www.euhou.net/">EU-HOU</a></td>
-      <td>SalsaJ is a closed-source fork of ImageJ1 intended for use with
+      <td>SalsaJ is a closed-source fork of ImageJ 1.x intended for use with
         professional astronomy images. It was designed to be used in
         classrooms, and has been localized into over 30 different
         languages.</td>
@@ -197,6 +197,6 @@ Here is a timeline of software development related to ImageJ:
 
 {% include citation %}
 
-{% include citation id='software/imagej1' %}
+{% include citation id='software/imagej-1.x' %}
 
 See also [Citing](/contribute/citing).

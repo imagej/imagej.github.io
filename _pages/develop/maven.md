@@ -29,7 +29,7 @@ Maven artifacts are published to the [SciJava Maven repository](/develop/project
 
 Maven is a powerful tool to build Java projects and to manage their dependencies. It can build dependencies from sources, but if the sources are not available, it will look into Maven repositories from which to download the dependencies.
 
-Example: let's assume that you want to build a new plugin for [ImageJ 1.x](/software/imagej1) that builds on, say, the [3D Viewer](/plugins/3d-viewer) and commons-math. You do not want to rebuild them from scratch unless you need to debug issues that are suspect bugs in said components. This is where Maven comes in: you tell it that the dependencies are ImageJ 1.x, 3D Viewer and commons-math and what version(s) you require. It is Maven's job to find and get them, no matter whether you just built them locally or not.
+Example: let's assume that you want to build a new plugin for [ImageJ 1.x](/software/imagej-1.x) that builds on, say, the [3D Viewer](/plugins/3d-viewer) and commons-math. You do not want to rebuild them from scratch unless you need to debug issues that are suspect bugs in said components. This is where Maven comes in: you tell it that the dependencies are ImageJ 1.x, 3D Viewer and commons-math and what version(s) you require. It is Maven's job to find and get them, no matter whether you just built them locally or not.
 
 Many convenient [IDEs](/develop/ides) (integrated development environments) including [Eclipse](/develop/eclipse), [NetBeans](/develop/netbeans) and [IntelliJ](/develop/intellij) support Maven projects; therefore, using Maven is an excellent choice when trying to let every developer choose their preferred development environment.
 
@@ -76,7 +76,7 @@ The only relevant parts are the *groupId*, which by convention is something like
 
 Maven is not only a build tool, but also a dependency management tool.
 
-To depend on another library, you must declare the dependencies in your project's *pom.xml* file. For example, every [ImageJ 1.x](/software/imagej1) plugin will depend on ImageJ 1.x. So let's add that (before the final *</project>* line):
+To depend on another library, you must declare the dependencies in your project's *pom.xml* file. For example, every [ImageJ 1.x](/software/imagej-1.x) plugin will depend on ImageJ 1.x. So let's add that (before the final *</project>* line):
 
     <dependencies>
       <dependency>

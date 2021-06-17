@@ -13,16 +13,16 @@
 {% endif %}
 {% assign text = text | append: " the core ImageJ distribution. Click the logo for details." %}
 {% endif %}
-{% if name == "ImageJ1" %}
-{% assign icon = "imagej1.png" %}
+{% if name == "ImageJ 1.x" %}
+{% assign icon = "imagej-1.x.png" %}
 {% assign text = "This page " %}
-{% assign link = "/software/imagej1" %}
+{% assign link = "/software/imagej-1.x" %}
 {% if input[1] %}
 {% assign text = text | append: input[1] %}
 {% else %}
 {% assign text = text | append: "describes content which is part of" %}
 {% endif %}
-{% assign text = text | append: " the legacy ImageJ 1.x application. Click the logo for details." %}
+{% assign text = text | append: " the original version of ImageJ. Click the logo for details." %}
 {% endif %}
 {% if name == "Fiji" %}
 {% assign icon = "fiji.png" %}

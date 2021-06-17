@@ -2,7 +2,7 @@
 title: 2011-07-27 - Multiple instances of ImageJ in the same JVM
 ---
 
-With [ImageJ1](/software/imagej1), there is a singleton instance of the program, accessible via `IJ.getInstance()`. With [ImageJ2](/software/imagej2) we want to provide a mechanism for managing multiple [ImageJ](/software/imagej) "application contexts." At the moment, ImageJ2 is also still a singleton, but we recently did some work to pave the way for multiple ImageJ applications running simultaneously.
+With [ImageJ 1.x](/software/imagej-1.x), there is a singleton instance of the program, accessible via `IJ.getInstance()`. With [ImageJ2](/software/imagej2) we want to provide a mechanism for managing multiple [ImageJ](/software/imagej) "application contexts." At the moment, ImageJ2 is also still a singleton, but we recently did some work to pave the way for multiple ImageJ applications running simultaneously.
 
 In ImageJ2, functionality is divided into a set of services, which are classes implementing the `IService` interface. Each service class has a single instance associated with its `ImageJ` application context. So once you have an `ImageJ` object, you can ask it for a service of a particular class by calling the `getService(Class<? extends IService>)` method. With multiple application contexts, the tricky part can be accessing the correct `ImageJ` object in the first place.
 

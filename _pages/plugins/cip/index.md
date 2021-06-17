@@ -12,7 +12,7 @@ categories: [Uncategorized]
 
 Classic Image Processing (CIP) is an image procesing toolbox which provides functions for scripting in ImageJ. Its principal goal is to facilitate image analysis workflow construction as well as to provide an accessible entry point to learn the programming of such workflow. CIP also has a specific focus on user experience which should appear clearly in the libraries main features:
 
--   **Integration** to ImageJ ecosystem: CIP can be easily used in combination other ImageJ1 and ImageJ2 plugins. For instance, it can process seamlessly all usual imageJ image type (ImagePlus, Dataset, ImgPlus, Img) wihtout requiring any conversion.
+-   **Integration** to ImageJ ecosystem: CIP can be easily used in combination other ImageJ 1.x and ImageJ2 plugins. For instance, it can process seamlessly all usual imageJ image type (ImagePlus, Dataset, ImgPlus, Img) wihtout requiring any conversion.
 
 -   **Discoverability** of its functionnalities: CIP provides a complete user documentation that explain function usage, details their parameters and provides illustration. In order to allow an intuitive learning, function parameters can be named or made optionnal while similar functions will have similar signatures. For the same reason 2D and 3D images can be processed with the same functions.
 

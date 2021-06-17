@@ -7,7 +7,7 @@ artifact: sc.fiji:Fiji_Package_Maker
 
 The Fiji Packager allows you to bundle an existing Fiji installation so you can share all the plugins and update sites with colleagues. It makes a single archive (.zip, .tar.gz, .tar.bz2 are supported at the moment) from the files in *Fiji.app/*.
 
-After clicking on {% include bc path='Plugins | Utilities | Make Fiji Package'%} (note: there are two {% include bc path='Plugins | Utilities'%} menus because ImageJ1 enforces separate submenus for non-core plugins which makes things a little bit confusing), you will be asked for the format and the file name.
+After clicking on {% include bc path='Plugins | Utilities | Make Fiji Package'%} (note: there are two {% include bc path='Plugins | Utilities'%} menus because ImageJ 1.x enforces separate submenus for non-core plugins which makes things a little bit confusing), you will be asked for the format and the file name.
 
 After both are specified, the plugin does all the rest, reporting its progress in the status bar.
 

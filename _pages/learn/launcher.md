@@ -10,7 +10,7 @@ The ImageJ launcher is a native application for launching ImageJ.
 
 The launcher supports the following flavors of ImageJ:
 
--   [ImageJ1](/software/imagej1)
+-   [ImageJ 1.x](/software/imagej-1.x)
 -   [ImageJ2](/software/imagej2)
 -   [Fiji](/software/fiji)
 
@@ -53,7 +53,7 @@ The launcher can do all kinds of things, like:
 
 ## Download
 
-The launcher comes with ImageJ1, ImageJ2 and Fiji.
+The launcher comes with ImageJ 1.x, ImageJ2 and Fiji.
 
 If you want to test the latest UNSTABLE version, it can downloaded here:
 

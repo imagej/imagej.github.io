@@ -17,7 +17,7 @@ Jan Švihlík and {% include person id='jschier' %}
 
 ## Installation
 
-IsletJ was designed to work with plain [ImageJ 1.x](/software/imagej1). It requires Java-8.
+IsletJ was designed to work with plain [ImageJ 1.x](/software/imagej-1.x). It requires Java-8.
 
 The simplest way to install the plugin is using the Fiji installer&gt;
 

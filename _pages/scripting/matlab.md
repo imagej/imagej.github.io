@@ -198,7 +198,7 @@ The startup process automatically injects the ImageJ classpath into the [MATLAB]
 
     IJM.show('I');
 
--   using ImageJ1 `ImagePlus` ([see](https://github.com/kouichi-c-nakamura/copytoImagePlus))
+-   using ImageJ 1.x `ImagePlus` ([see](https://github.com/kouichi-c-nakamura/copytoImagePlus))
 
 <!-- -->
 

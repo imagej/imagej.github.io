@@ -17,13 +17,13 @@ projects:
     description: the Fiji distribution of ImageJ
     link: /software/fiji
   - name: ImageJ
-    description: the core ImageJ distribution
+    description: the ImageJ project
     link: /software/imagej
   - name: ImageJ 1.x
-    description: the legacy ImageJ 1.x application
-    link: /software/imagej1
+    description: ImageJ 1.x, the original version of ImageJ
+    link: /software/imagej-1.x
   - name: ImageJ2
-    description: the core ImageJ2 distribution
+    description: the ImageJ2 platform
     link: /software/imagej2
   - name: SCIFIO
     description: the SCIFIO library for scientific image I/O
@@ -169,11 +169,11 @@ defaults:
       icon: /media/icons/fiji.svg
   -
     scope:
-      path: "_pages/software/imagej1"
+      path: "_pages/software/imagej-1.x"
       type: pages
     values:
-      icon: /media/icons/imagej1.png
-      project: ImageJ1
+      icon: /media/icons/imagej-1.x.png
+      project: ImageJ 1.x
   -
     scope:
       path: "_pages/software/imagej2"

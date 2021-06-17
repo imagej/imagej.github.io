@@ -19,7 +19,7 @@
       {%- when "GitHub"        -%} /develop/github
       {%- when "Icy"           -%} /software/icy
       {%- when "ImageJ"        -%} /software/imagej
-      {%- when "ImageJ1"       -%} /software/imagej1
+      {%- when "ImageJ 1.x"    -%} /software/imagej-1.x
       {%- when "ImageJ2"       -%} /software/imagej2
       {%- when "ImgLib2"       -%} /libs/imglib2
       {%- when "KNIME"         -%} /software/knime

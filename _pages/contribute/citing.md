@@ -49,9 +49,9 @@ Thank you for your support.
 
 
 <div class="publication-box">
-<div>{% include icon name='ImageJ1' %}
-<br><a href="/software/imagej1">ImageJ 1.x</a></div>
-{% include citation id='software/imagej1' %}</div>
+<div>{% include icon name='ImageJ 1.x' %}
+<br><a href="/software/imagej-1.x">ImageJ 1.x</a></div>
+{% include citation id='software/imagej-1.x' %}</div>
 
 ## Distributions of ImageJ
 

@@ -21,6 +21,6 @@ See the [script parameters](/scripting/parameters) page for further details.
 
 <img src="/media/scripting/multi-column-dialog.png" title="fig:Multi-column-dialog.png" width="300" alt="Multi-column-dialog.png" /> 
 
-The [GenericDialog](/scripting/generic-dialog) class—part of [ImageJ1](/software/imagej1)—offers more flexibility than the [script parameters](/scripting/parameters), including custom layout and buttons, but requires more coding—e.g., successive calls to the plugin do not automatically remember previously entered values. Plugins coded using `GenericDialog` are also not automatically usable in other [SciJava](/libs/scijava) tools such as [KNIME](/software/knime) or [ImageJFX](/software/imagejfx).
+The [GenericDialog](/scripting/generic-dialog) class—part of [ImageJ 1.x](/software/imagej-1.x)—offers more flexibility than the [script parameters](/scripting/parameters), including custom layout and buttons, but requires more coding—e.g., successive calls to the plugin do not automatically remember previously entered values. Plugins coded using `GenericDialog` are also not automatically usable in other [SciJava](/libs/scijava) tools such as [KNIME](/software/knime) or [ImageJFX](/software/imagejfx).
 
 See the [generic dialog](/scripting/generic-dialog) page for further details.

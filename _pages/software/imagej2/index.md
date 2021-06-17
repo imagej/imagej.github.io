@@ -17,7 +17,7 @@ artifact: net.imagej:imagej
 
 See also [these presentation slides about ImageJ](/presentations/2015-09-03-imagej2-and-fiji/#/4)." %}
 
-ImageJ2 is a new version of [ImageJ](/software/imagej) for multidimensional image data, with a focus on scientific imaging. Its central goal is to broaden the paradigm of ImageJ beyond the limitations of [ImageJ 1.x](/software/imagej1), to support the next generation of multidimensional scientific imaging.
+ImageJ2 is a new version of [ImageJ](/software/imagej) for multidimensional image data, with a focus on scientific imaging. Its central goal is to broaden the paradigm of ImageJ beyond the limitations of [ImageJ 1.x](/software/imagej-1.x), to support the next generation of multidimensional scientific imaging.
 
 To ensure backwards compatibility, ImageJ2 has been designed to fully integrate into the existing ImageJ 1.x user interface. This allows users to keep using ImageJ in familiar ways, while providing the ability to migrate toward more powerful new features as needed.
 

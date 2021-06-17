@@ -121,9 +121,9 @@ by name, sans file extension.
 
 --------------
 
-{% highlight liquid %}{% raw %}{% include notice icon="imagej1"
+{% highlight liquid %}{% raw %}{% include notice icon="imagej-1.x"
   content="ImageJ 1.x was first released in 1997." %}{% endraw %}{% endhighlight %}
-{% include notice icon="imagej1"
+{% include notice icon="imagej-1.x"
   content="ImageJ 1.x was first released in 1997." %}
 
 --------------

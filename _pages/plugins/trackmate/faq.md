@@ -36,13 +36,13 @@ So by properties of the LoG filter, this quality value is larger for :
 -   bright spots;
 -   spots which diameter is close to the specified diameter.
 
-### Exporting TrackMate spots to ImageJ1 ROIs.
+### Exporting TrackMate spots to ImageJ 1.x ROIs.
 
 *TrackMate found my particles, and the preview function is usefeul. However I can't seem to figure out how to export all the TrackMate overlays to individual ROIs, so that I can analyse them with other plugins.*
 
 There is a ROI exporter action is in a separate package called `TrackMate-extras`. To install it, you have to download its *jar* file and drop it in the *plugins* folder of Fiji. Link and instructions are on the [TrackMate\#Downloadable\_jars](/plugins/trackmate#downloadable-jars) page.
 
-An action called **Export current spots to IJ rois** will appear in the menu of the action panel (the very last one in the GUI). It will convert each spot to a point in the Multi-Point ROI tool of ImageJ1.
+An action called **Export current spots to IJ rois** will appear in the menu of the action panel (the very last one in the GUI). It will convert each spot to a point in the Multi-Point ROI tool of ImageJ 1.x.
 
 ### Copying TrackMate tracking data to another image file.
 

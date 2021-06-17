@@ -9,7 +9,7 @@ There is a [wiki page](/plugins/updater) documenting the Updater from user persp
 
 ## Basics
 
-Fiji is an image processing software melting ImageJ1 with novel ImageJ2 functionalities based on scijava and imglib2.
+Fiji is an image processing software melting ImageJ 1.x with novel ImageJ2 functionalities based on scijava and imglib2.
 
 The core plugins written in Java, versioned via Maven and distributed via update sites. But update sites can be used to distribute any type of files (e.g. scripts or binaries).
 

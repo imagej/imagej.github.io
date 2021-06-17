@@ -33,7 +33,7 @@ and the current maintainer of the [Fiji](/software/fiji) distribution of ImageJ.
 1.  \[Summer 2021\] ImageJ and Fiji component updates.
     * **ImageJ-OMERO** update to OMERO 5.5+. ({% include github org='imagej' repo='imagej-omero' pr=107 %})
     * **ImageJ Server** fix ({% include github org='imagej' repo='imagej-server' issue=41 %})
-    * **Fix ImageJ1 patching.** Reconcile latest ImageJ 1.x versions with ImageJ2 patching logic ({% include github org='imagej' repo='ij1-patcher' pr=47 %})
+    * **Fix ImageJ 1.x patching.** Reconcile latest ImageJ 1.x versions with ImageJ2 patching logic ({% include github org='imagej' repo='ij1-patcher' pr=47 %})
     * New pom-scijava, imagej and fiji component releases.
 3.  \[Summer 2021\] (with {% include person id='elevans' %} and {% include person id='hinerm' %}) *PyImageJ paper.* ([roadmap](https://github.com/imagej/pyimagej/projects/1))
 4.  \[Fall 2021\] (with {% include person id='gselzer' %} and {% include person id='hinerm' %}) **SciJava Ops** + **ImageJ Ops2** ([roadmap](https://github.com/orgs/scijava/projects/1)), including [JPMS/Jigsaw](https://openjdk.java.net/projects/jigsaw/) modularization and migration of SciJava foundational libraries to Java 11.

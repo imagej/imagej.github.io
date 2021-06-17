@@ -9,7 +9,7 @@ The {% include wikipedia title='TIFF' text='TIFF file format'%} is one of the mo
 
 ## ImageJ 1.x support
 
-[ImageJ 1.x](/software/imagej1) (and therefore [ImageJ2](/software/imagej2) in its default legacy mode) has built-in support for TIFF files via the {% include bc path='File | Open...'%} command.
+[ImageJ 1.x](/software/imagej-1.x) (and therefore [ImageJ2](/software/imagej2) in its default legacy mode) has built-in support for TIFF files via the {% include bc path='File | Open...'%} command.
 
 You can also import TIFFs as [virtual stacks](https://imagej.nih.gov/ij/docs/guide/146-8.html#sub:Virtual-Stacks) via the {% include bc path='File | Import | TIFF Virtual Stack...'%} command.
 
@@ -21,7 +21,7 @@ You can also import TIFFs as [virtual stacks](https://imagej.nih.gov/ij/docs/gui
 The [Bio-Formats](/formats/bio-formats) plugins offer a more complete TIFF importer, accessible via the {% include bc path='File | Import | Bio-Formats'%} command.
 
 -   **Pro:** The Bio-Formats TIFF reader can handle many more varieties of TIFF.
--   **Con:** The Bio-Formats TIFF support is not as speedy as ImageJ1's TIFF reader.
+-   **Con:** The Bio-Formats TIFF support is not as speedy as ImageJ 1.x's TIFF reader.
 
 ## SCIFIO
 

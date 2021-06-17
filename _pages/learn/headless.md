@@ -4,7 +4,7 @@ nav-links: true
 nav-title: Headless
 ---
 
-[ImageJ 1.x](/software/imagej1) was never meant as anything else than a desktop application with one user in front of one screen attached to one computer.
+[ImageJ 1.x](/software/imagej-1.x) was never meant as anything else than a desktop application with one user in front of one screen attached to one computer.
 
 However, it acquired [macro](/scripting/macro) capabilities, a [batch mode](/scripting/batch) for such macros, and even [scripting](/scripting) support.
 

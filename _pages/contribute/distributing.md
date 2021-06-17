@@ -78,7 +78,7 @@ The first goal is to get your extension into the hands of users.
       </td>
       <td style="background: #dfd; vertical-align: top">
         <ul>
-	  <li> <b><a href="/software/imagej1">ImageJ 1.x</a></b> does not support update sites; users will need to use <b><a href="/software/imagej2">ImageJ2</a></b> (or <b><a href="/software/fiji">Fiji</a></b>: "Fiji Is Just ImageJ2"). You can <b><a href="/plugins/updater#bootstrapping-the-updater">upgrade an ImageJ 1.x installation to ImageJ2</a></b>.</li>
+	  <li> <b><a href="/software/imagej-1.x">ImageJ 1.x</a></b> does not support update sites; users will need to use <b><a href="/software/imagej2">ImageJ2</a></b> (or <b><a href="/software/fiji">Fiji</a></b>: "Fiji Is Just ImageJ2"). You can <b><a href="/plugins/updater#bootstrapping-the-updater">upgrade an ImageJ 1.x installation to ImageJ2</a></b>.</li>
           <li> You will miss out on the <b><a href="/develop/project-management">tools and tests</a></b> used to ensure compatibility and reproducibility, making undetected breakages much more likely (at the least).</li>
         </ul>
       </td>
@@ -353,7 +353,7 @@ Useful extensions deserve corresponding documentation explaining how to use them
 <li> The ImageJ developers hope to unify these two wikis in the future.</li></ul>
 </td>
 <td style="vertical-align: top">
-<ul><li> The IIDP documents only <a href="/software/imagej1" title="ImageJ 1.x">ImageJ 1.x</a>, not <a href="/software/imagej2" title="ImageJ2">ImageJ2</a>.</li>
+<ul><li> The IIDP documents only <a href="/software/imagej-1.x" title="ImageJ 1.x">ImageJ 1.x</a>, not <a href="/software/imagej2" title="ImageJ2">ImageJ2</a>.</li>
 <li> You must explicitly request an IIDP account from an administrator.</li>
 <li> The wiki uses Plone, a lesser known CMS engine.</li></ul>
 </td></tr>

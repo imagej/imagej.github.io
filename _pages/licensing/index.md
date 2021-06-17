@@ -80,15 +80,15 @@ The following table summarizes the dominant license of each project's components
     </tr>
     <tr>
       <td colspan=14 style="text-align: center;">
-        <p><strong><a href="/software/imagej1">ImageJ 1.x</a></strong></p>
+        <p><strong><a href="/software/imagej-1.x">ImageJ 1.x</a></strong></p>
       </td>
     </tr>
     <tr>
       <td>
-        <p><img src="/media/icons/imagej1.png" width="48"></p>
+        <p><img src="/media/icons/imagej-1.x.png" width="48"></p>
       </td>
       <td>
-        <p><strong><a href="/software/imagej1">ImageJ1</a></strong></p>
+        <p><strong><a href="/software/imagej-1.x">ImageJ 1.x</a></strong></p>
       </td>
       <td>
         <p><a href="https://imagej.nih.gov/ij/disclaimer.html">Disclaimer</a></p>
@@ -404,9 +404,9 @@ The following table summarizes the dominant license of each project's components
 
 Since each project consists of many components, some may be licensed differently. You can always find the license of each project in a `LICENSE.txt` or similar file of the relevant repository on [GitHub](/develop/github). That said, in general, the table below is accurate with very few exceptions. When there *is* an exception, it is often licensed more permissively than the rest of the project—for example, the core of [Bio-Formats](/formats/bio-formats) is licensed under [BSD-2](/licensing/bsd) ([1](https://github.com/openmicroscopy/bioformats/blob/develop/components/formats-bsd/LICENSE.txt)), and the [ImageJ](/software/imagej) and [SCIFIO](/libs/scifio) tutorials are licensed under [CC0](/licensing/public-domain) ([1](https://github.com/imagej/tutorials/blob/master/README.md), [2](https://github.com/scifio/scifio-tutorials/blob/master/README.md)), waiving all copyright interest as allowed by law.
 
-## A note about ImageJ1
+## A note about ImageJ 1.x
 
-The [ImageJ 1.x](/software/imagej1) project is developed at the National Institutes of Health, a United States government organization. Hence, pursuant to [U.S. copyright law Title 17, Section 105](http://www.copyright.gov/title17/92chap1.html#105), no copyright applies. However, that waiver of copyright applies only to U.S. law, and does not apply to other countries. Furthermore, the ImageJ1 project includes substantial effort and code from individuals who are not U.S. government employees, making the legal status of ImageJ1 as a whole decidedly unclear. For further reading, see the {% include wikipedia title='Copyright status of work by the U.S. government' text='Wikipedia article "Copyright status of work by the U.S. government"'%}.
+The [ImageJ 1.x](/software/imagej-1.x) project is developed at the National Institutes of Health, a United States government organization. Hence, pursuant to [U.S. copyright law Title 17, Section 105](http://www.copyright.gov/title17/92chap1.html#105), no copyright applies. However, that waiver of copyright applies only to U.S. law, and does not apply to other countries. Furthermore, the ImageJ 1.x project includes substantial effort and code from individuals who are not U.S. government employees, making the legal status of ImageJ 1.x as a whole decidedly unclear. For further reading, see the {% include wikipedia title='Copyright status of work by the U.S. government' text='Wikipedia article "Copyright status of work by the U.S. government"'%}.
 
 ## Developers: How to use this page
 

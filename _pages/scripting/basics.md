@@ -10,7 +10,7 @@ section: Extend:Scripting
 
 ImageJ and Fiji are able to run scripts written in [different languages](/scripting#supported-languages). Besides all the differences the approach on how to use the [API of ImageJ](http://javadoc.imagej.net/) is similar for all of them. This article will introduce the basic concepts and is valid for all scripting languages.
 
-{% include notice icon="info" content='The examples are written in Groovy, but they are easy to adapt for any other scripting language ImageJ supports. For the ImageJ1 macro language, refer to the dedicated section in Languages.' %}
+{% include notice icon="info" content='The examples are written in Groovy, but they are easy to adapt for any other scripting language ImageJ supports. For the ImageJ 1.x macro language, refer to the dedicated section in Languages.' %}
 
 # Importing classes, services and functions
 
@@ -23,11 +23,11 @@ For instance you might come across the `PrefService` responsible for the storage
     #@ PrefService pref // Importing the prefservice under the variable name pref
     #@ ImagePlus imp    // Assigning the currently opened image to variable imp
 
-    import ij.IJ // classical ImageJ1 import statement
+    import ij.IJ // classical ImageJ 1.x import statement
 
 # Get an image and perform an action
 
-First we want to learn different ways to select an image and perform an action on it. In [ImageJ1](/software/imagej1) the image is represented by an [ImagePlus](http://javadoc.imagej.net/ImageJ1/ij/ImagePlus.html) object. The recommended way to select an ImagePlus object is to use [Script Parameters](/scripting/parameters):
+First we want to learn different ways to select an image and perform an action on it. In [ImageJ 1.x](/software/imagej-1.x) the image is represented by an [ImagePlus](http://javadoc.imagej.net/ImageJ1/ij/ImagePlus.html) object. The recommended way to select an ImagePlus object is to use [Script Parameters](/scripting/parameters):
 
     #@ ImagePlus imp
     #@ Integer(label='Filter radius',description='The sigma of the gaussian filter.',value=2) sig
@@ -81,7 +81,7 @@ The first example uses the [DatasetIOService](http://javadoc.imagej.net/SCIFIO/i
     ui.show(dataset1)
     ui.show(dataset2)
 
-If a script only depends on ImageJ1 functionality, one can use the function `IJ.openImage()`. It will return an ImagePlus object.
+If a script only depends on ImageJ 1.x functionality, one can use the function `IJ.openImage()`. It will return an ImagePlus object.
 
     #@ String(label='Image URL', value='http://wsr.imagej.net/images/clown.jpg') fileUrl
     #@ File(label='local image') file
@@ -167,7 +167,7 @@ Since version 1.52v11 of ImageJ, one can directly loop over the roi in a RoiMana
 There are different ways to call a script from another script.  
 Generally, the called script is executed in the same thread than the calling script, which means that the calling script will wait that the called script terminates before going on with the rest of the execution.
 
-## Using ImageJ1 commands
+## Using ImageJ 1.x commands
 
 ImageJ offers the possibility to call a plugin, macro or script within another one.  
 If the plugin is already part of the Menu, the simple command `run(PluginName, string Arguments)` (or `IJ.run` for other scripting languages) as returned by the macro-recorder will work.
@@ -200,7 +200,7 @@ The subMacro needs to use `getArgument()` (or `IJ.imageJ.getArgs` of the ImageJ 
 The command `runMacro` works only for ijm macro.  
 To call a script written in another scripting languages, one should use the `runMacroFile(PathToScript, Arguments)` (respectively `IJ.runMacroFile` of the ImageJ API). Still using the `getArgument` to pass the variables from mainScript to subScript.
 
-This 1st option is however limited to ImageJ1 code style, meaning that one cannot use script parameters, or call any service in subScript.  
+This 1st option is however limited to ImageJ 1.x code style, meaning that one cannot use script parameters, or call any service in subScript.  
 Luckily ImageJ2 also have is own way to call a script within a script.
 
 ## Using ImageJ2 command

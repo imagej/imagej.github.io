@@ -51,7 +51,7 @@ There was a big focus this time on machine learning, particularly deep learning 
 -   Got {% include person id='chaubold' %}, {% include person id='maarzt' %}, and {% include person id='xulman' %} started on integrating their SciJava Commands as KNIME nodes
 -   Reviewed PRs of `imagej-ops` ({% include github org='imagej' repo='imagej-ops' pr='523' label='1' %}, {% include github org='imagej' repo='imagej-ops' pr='519' label='2' %}, {% include github org='imagej' repo='imagej-ops' pr='510' label='3' %}, [4](http://forum.imagej.net/t/frangi-vesselness-filter-feedback/6747))
 -   Looked into migration of algorithms from MorphoLibJ to Ops/ImgLib2
--   Worked with {% include person id='milkyklim' %} on migrating an ImageJ1 plugin to a SciJava Command (and possibly Ops for computations)
+-   Worked with {% include person id='milkyklim' %} on migrating an ImageJ 1.x plugin to a SciJava Command (and possibly Ops for computations)
 -   Fixed some bugs with respect to `@Parameters` ({% include github org='imagej' repo='imagej-common' pr='69' label='1' %}, {% include github org='imagej' repo='imagej-legacy' pr='171' label='2' %})
 -   Paired with {% include person id='ctrueden' %} to push the cloud-based build and deploy infrastructure
 

@@ -54,7 +54,7 @@ Where `java.io.File` is the class to be imported. See also section [Importing ot
 
 To create a script for the GUI, the recommended setup is the following:
 
--   Edit and save a file in your favorite text editor. If you want ImageJ1 to insert it into the Menu structure, the file must be saved somewhere under ImageJ plugins folder, have an underscore on the name, and a .py extension.
+-   Edit and save a file in your favorite text editor. If you want ImageJ 1.x to insert it into the Menu structure, the file must be saved somewhere under ImageJ plugins folder, have an underscore on the name, and a .py extension.
 -   Run {% include bc path='Plugins | Scripting | Refresh Jython scripts'%} <b>only</b> the very first time after newly creating the file under any folder or subfolder of ImageJ's plugins folder. A menu item will appear with its name, from which it can be run.
 -   Keep editing (and saving) the file from your editor. Just select the menu item to execute it over and over. Or use the {% include bc path='Plugins | Utilities | Find Commands...'%} window to launch it easily (keybinding 'l').
 

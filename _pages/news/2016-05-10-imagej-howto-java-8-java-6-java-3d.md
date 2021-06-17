@@ -101,7 +101,7 @@ However, at the moment, it is still possible to run a (slightly outdated now) ve
 </tr>
 <tr><td colspan="6"></td></tr>
 <tr>
-<td><a href="/software/imagej1" title="/software/imagej1"><img alt="/software/imagej1" src="/media/icons/imagej1.png" width="64" height="64" /></a>
+<td><a href="/software/imagej-1.x" title="/software/imagej-1.x"><img alt="/software/imagej-1.x" src="/media/icons/imagej-1.x.png" width="64" height="64" /></a>
 </td>
 <td colspan="5">See the <a href="download.html">ImageJ 1.x downloads page</a> for instructions.
 </td></tr></table>
@@ -112,7 +112,7 @@ However, at the moment, it is still possible to run a (slightly outdated now) ve
 If you have downloaded Fiji or ImageJ2 quite some time ago (before 2016), you probably have the Java 6 version ([how do I find out?](/learn/troubleshooting#checking-the-java-version)). So when you update, you will not receive the latest plugin releases anymore, as described above.
 
 -   If you **still need Java 6, do nothing.**
-    -   For now, you will keep receiving updates of [ImageJ 1.x](/software/imagej1).
+    -   For now, you will keep receiving updates of [ImageJ 1.x](/software/imagej-1.x).
     -   But you will no longer receive updates for most ImageJ2 or Fiji components—they have all migrated to Java 8.
 -   If you **want the latest updates**, [update your ImageJ installation to use Java 8](/learn/faq#how-do-i-launch-imagej-with-a-different-version-of-java) and then [enable the Java-8 update site](/update-sites/following).
     -   **Make sure you switch your ImageJ over to Java 8 *before* enabling the Java-8 update site!**

@@ -12,10 +12,10 @@ Before an image can be analyzed, it needs to be opened properly. The way scienti
 
 ## ImageJ 1.x format handling
 
-With [ImageJ 1.x](/software/imagej1), a special [HandleExtraFileTypes](https://imagej.nih.gov/ij/plugins/file-handler.html) plugin exists that can be modified to support new data formats—but it has some significant disadvantages:
+With [ImageJ 1.x](/software/imagej-1.x), a special [HandleExtraFileTypes](https://imagej.nih.gov/ij/plugins/file-handler.html) plugin exists that can be modified to support new data formats—but it has some significant disadvantages:
 
 -   It only provides limited extensibility: there can only be one `HandleExtraFileTypes` installed into ImageJ at a time, so all desired modifications to the plugin must be somehow combined. This makes it impossible to, for example, ship a different `HandleExtraFileTypes` on two different ImageJ [Update Sites](/update-sites) and have both additions be available in the same installation.
--   Data formats added in this manner cannot override or extend ImageJ1's built in support for certain file formats. In particular, ImageJ1 supports only a subset of the TIFF specification, and this issue cannot be circumvented via `HandleExtraFileTypes` modifications.
+-   Data formats added in this manner cannot override or extend ImageJ 1.x's built in support for certain file formats. In particular, ImageJ 1.x supports only a subset of the TIFF specification, and this issue cannot be circumvented via `HandleExtraFileTypes` modifications.
 
 ## See also
 

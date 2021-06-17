@@ -24,7 +24,7 @@ There's a new modernized version of BoneJ available through the ImageJ [updater]
 
 ## Legacy (BoneJ v1.x) Installation
 
-{% include icon name='ImageJ1' size='24px' %} BoneJ was originally designed to work with plain [ImageJ 1.x](/software/imagej1).
+{% include icon name='ImageJ 1.x' size='24px' %} BoneJ was originally designed to work with plain [ImageJ 1.x](/software/imagej-1.x).
 
 {% include icon name='Fiji' size='24px' %} BoneJ can be installed into [Fiji](/software/fiji), but you must **use the Java-6 version of Fiji, not the current Java-8 version**:
 
