@@ -47,7 +47,10 @@ correctly. The following table lists front matter fields you can use:
 | **description** | A short description of your page. Also used for the site's search engine. When omitted, the first sentence of the page content is used. |
 |     **section** | Main menu section that should be open when this page first loads, if any. Nested sections to expand should be separated by colons (`:`). For example, this page's section is `Contribute:Editing the Wiki`. |
 |  **categories** | For pages describing extensions (e.g. a plugin, script, or update site) of ImageJ: a comma-separated list of categories, enclosed in square brackets (`[` and `]`). Pages with categories appear in the [List of extensions](/list-of-extensions). For example, `[Segmentation, Registration]` would put your page in the Segmentation and Registration categories. |
-|       **statbox** | The "Vital statistics" sidebar supports quite a few fields; see [this comment](https://github.com/imagej/imagej.github.io/blob/main/_includes/layout/statbox#L30-L72) for a list. Including at least one of these fields will cause the statbox to appear; otherwise, there will be no statbox for the page. |
+| **statbox\*** | A collection of individual fields that are used to populate the "Vital statistics" sidebar; see [this comment](https://github.com/imagej/imagej.github.io/blob/main/_includes/layout/statbox#L30-L85) for a list. Including at least one of these fields will cause the statbox to appear; otherwise, there will be no statbox for the page.<br> (***\***note there is no field called "statbox"*) |
+|        **icon** | A link (internal or external) to an icon that will be used for the page across the wiki, e.g. in the [list of extensions](/list-of-extensions) or search bar results. |
+|     **project** | Used to identify project affiliation. See the list of {% include github org='imagej' repo='imagej.github.io' branch='master' path='_config.yml#L15-L33' label='available projects' %} |
+|   **nav-links** | Adds a top navigation bar for related pages. See the [Navigation](/editing/navigation#nav-links) guide for examples. |
 
 Below is a minimal example front matter block. You can copy and paste this code into the editor of a new page (see above).
 
