@@ -44,8 +44,10 @@ In ImageJ, copy the file *Roi 1-Click Tools.ijm* to *ImageJ\\macros\\toolsets*
 See the [Readme](https://github.com/LauLauThom/Fiji-RoiClickTools) of the GitHub repo.
 
 # Citation
-
-{% include citation doi='10.17912/micropub.biology.000215' %}
+Thomas, LS; Gehrig, J (2020). 
+*ImageJ/Fiji ROI 1-click tools for rapid manual image annotations and measurements.*
+**microPublication Biology** - 10.17912/micropub.biology.000215.
+https://doi.org/10.17912/micropub.biology.000215
 
 # Video tutorial
 
