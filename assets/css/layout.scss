@@ -310,7 +310,6 @@ $sidebarPadding: 10px;
 
 /* --------------------------------- MENU --------------------------------- */
 
-
 .menu {
   font-size: 0.85em;
 }
@@ -410,7 +409,8 @@ $leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding - 3
 
 #statbox {
   font-size: small;
-  padding-bottom: 1.5em;
+  padding-bottom: 0.5em;
+  margin-bottom: 1.5em;
 }
 
 #statbox ul {
@@ -507,6 +507,16 @@ $leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding - 3
     currentcolor 0 0.7em,
     transparent 0
   );
+}
+
+@media screen and (max-width: 879px) {
+  #nav-bar {
+    margin-left: $sidebarPadding;
+    margin-right: $sidebarPadding;
+  }
+  #toc {
+    display: none;
+  }
 }
 
 /* -------------------------------- HEADER -------------------------------- */
