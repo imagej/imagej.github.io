@@ -67,9 +67,9 @@ Assuming you are using [Maven](/develop/maven) to build the subproject:
     Where *git@github.com:my-org/my-new-project* is the remote URL for the new project's dedicated repository.
 5.  Push the resultant history to the project's new repository:
 
-```bash
-    git push -u origin master
-```
+	```bash
+	git push -u origin master
+	```
 
 ## Change any online resources
 
