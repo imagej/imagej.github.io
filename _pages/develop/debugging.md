@@ -219,7 +219,7 @@ Okay, so here you go, a little demonstration:
 
 (If you attach jdb to a running ImageJ process, you have to use the line from the previous section instead.)
 
-```jdb
+```java
 $ jdb -classpath ij.jar ij.ImageJ
 > stop in ij.ImageJ.main
 Deferring breakpoint ij.ImageJ.main.
@@ -232,9 +232,7 @@ Set deferred uncaught java.lang.Throwable
 VM Started: Set deferred breakpoint ij.ImageJ.main
 
 Breakpoint hit: "thread=main", ij.ImageJ.main(), line=466 bci=0
-```
 
-```jdb
 main[1] use .
 main[1] list
 462             //prefs.put(IJ_HEIGHT, Integer.toString(size.height));
@@ -256,16 +254,12 @@ main[1] step
 >
 Step completed: "thread=main", ij.ImageJ.main(), line=470 bci=28
 470             boolean noGUI = false;
-```
 
-```jdb
 main[1] step
 >
 Step completed: "thread=main", ij.ImageJ.main(), line=471 bci=30
 471             arguments = args;
-```
 
-```jdb
 main[1] set noGUI = true
  noGUI = true = true
 main[1] cont
