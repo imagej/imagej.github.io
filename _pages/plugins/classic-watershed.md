@@ -2,7 +2,7 @@
 mediawiki: Classic_Watershed
 title: Classic Watershed
 categories: [Segmentation, Mathematical Morphology]
-usemathjax: true
+extensions: ["mathjax"]
 ---
 
 

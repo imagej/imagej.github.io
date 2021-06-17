@@ -2,7 +2,7 @@
 mediawiki: Hough_Circle_Transform
 title: Hough Circle Transform
 categories: [Analysis]
-usemathjax: true
+extensions: ["mathjax"]
 ---
 
 

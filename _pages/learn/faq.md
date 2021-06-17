@@ -3,7 +3,7 @@ title: Frequently Asked Questions
 section: Learn:ImageJ Basics
 nav-links: true
 nav-title: FAQ
-usemathjax: true
+extensions: ["mathjax"]
 ---
 
 This page lists answers to the most frequently asked questions.

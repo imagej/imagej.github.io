@@ -1,7 +1,7 @@
 ---
 mediawiki: Trainable_Segmentation_Plugin_Implementation
 title: Trainable Segmentation Plugin Implementation
-usemathjax: true
+extensions: ["mathjax"]
 ---
 
 <div style="background:#fdd; padding: 10px 10px 0 10px; border: 1px solid black;">

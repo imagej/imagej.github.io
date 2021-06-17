@@ -1,7 +1,7 @@
 ---
 mediawiki: Topology_preserving_warping_error
 title: Topology preserving warping error
-usemathjax: true
+extensions: ["mathjax"]
 ---
 
 {% include thumbnail src='/media/plugins/tws/warping-error-comparison.png' title='Application of the topology-preserving warping error. Example A and B have almost the same amount of pixel error with respect to the ground truth, however, example B has no topological error.'%} The **warping error** is a [segmentation](/imaging/segmentation) metric that tolerates disagreements over boundary location, penalizes topological disagreements, and can be used directly as a cost function for learning boundary detection[^1].

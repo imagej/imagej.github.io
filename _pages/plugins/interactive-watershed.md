@@ -2,7 +2,7 @@
 mediawiki: Interactive_Watershed
 title: Interactive Watershed
 categories: [Segmentation]
-usemathjax: true
+extensions: ["mathjax"]
 ---
 
 

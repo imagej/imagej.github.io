@@ -2,7 +2,7 @@
 mediawiki: Noise_Generator
 title: Noise Generator
 categories: [Noise]
-usemathjax: true
+extensions: ["mathjax"]
 ---
 
 

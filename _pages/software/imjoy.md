@@ -2,7 +2,7 @@
 title: ImJoy
 section: Explore:Software
 doi: 10.1038/s41592-019-0627-0
-imjoy: true
+extensions: ["imjoy"]
 ---
 
 # ImJoy: Supercharging interactivity and scalability of data science!
@@ -90,10 +90,17 @@ Here is a list of integration examples:
 
 # Running ImJoy plugins in the ImageJ wiki
 As another example of open integration, ImJoy can be enabled in the ImageJ wiki. In any markdown page, you can easily turn a markdown code block into executable and editable code block by: 
- 1. Set `imjoy: true` to the metadata of your markdown file (a.k.a [Front Matter](https://jekyllrb.com/docs/front-matter/));
+ 1. Set add `"imjoy"` to `extensions` in the metadata of your markdown file (a.k.a [Front Matter](https://jekyllrb.com/docs/front-matter/));
  2. Add a comment `<!-- ImJoyPlugin: { ... } -->` before your code block. Inside the `{}` you can pass settings for setting up the ImJoy plugin.
-
-For example, the following code block with Run button is rendered with the above setting:
+ 
+For example, you may have the following in the begining of your page:
+```yaml
+---
+title: My Awesome Page
+extensions: ["imjoy"]
+---
+```
+Within your page, the following code block with Run button is rendered with the above setting:
 <!-- ImJoyPlugin: { "type": "web-worker","editor_height": "200px"} -->
 ```js
 api.alert("Hello from ImJoy!")

@@ -1,7 +1,7 @@
 ---
 title: ImageJ.JS
 section: Explore:Software
-imjoy: true
+extensions: ["imjoy"]
 ---
 
 ImageJ.JS is web version of ImageJ, we compiled ImageJ (version 1) from Java into Javascript with a Java compiler called [CheerpJ](https://www.leaningtech.com/pages/cheerpj.html). In addition to the modification for making it work better within the browser, importantly, we integrated it with the [ImJoy](https://imjoy.io) plugin ecosystem. The project is currently under active development within the [ImJoy Team](https://github.com/imjoy-team) led by Wei Ouyang.
@@ -64,10 +64,18 @@ run("Analyze Particles...", "size=5-Infinity add");
 
 # Run ImageJ.JS and ImJoy in ImageJ wiki
 You can easily turn a markdown code block into executable and editable code block by: 
- 1. Set `imjoy: true` to the metadata of your markdown file (a.k.a [Front Matter](https://jekyllrb.com/docs/front-matter/));
+ 1. Set add `"imjoy"` to `extensions` in the metadata of your markdown file (a.k.a [Front Matter](https://jekyllrb.com/docs/front-matter/));
  2. Add a comment `<!-- ImJoyPlugin: { ... } -->` before your code block. Inside the `{}` you can pass settings for setting up the ImJoy plugin.
  
-For example the above code block is rendered from:
+For example, you may have the following in the begining of your page:
+```yaml
+---
+title: My Awesome Page
+extensions: ["imjoy"]
+---
+```
+
+And now, whthin the page, you can use the following to add a executable and editable code block:
 ````markdown
 <!-- ImJoyPlugin: { "type": "macro"} -->
 ```javascript

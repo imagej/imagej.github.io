@@ -2,7 +2,7 @@
 title: 3D Viewer › User FAQs
 nav-links: true
 nav-title: User FAQs
-usemathjax: true
+extensions: ["mathjax"]
 ---
 
 ## Basic Usage
