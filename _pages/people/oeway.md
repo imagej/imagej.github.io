@@ -3,7 +3,11 @@ title: Wei Ouyang
 name: Wei Ouyang
 github: oeway
 email: oeway007@gmail.com
-affiliation: SciLifeLab & KTH
+affiliation:
+  - Science for Life Laboratory
+  - KTH Royal Institute of Technology
+gravatar: 2e334c1aa16952d34ebab547a38e614f
+forum: oeway
 website: http://oeway.github.io/
 github: oeway
 twitter: weioyang

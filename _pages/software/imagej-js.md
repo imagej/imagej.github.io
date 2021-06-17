@@ -6,7 +6,6 @@ icon: https://ij.imjoy.io/assets/icons/chrome/chrome-installprocess-128-128.png
 name: ImageJ.JS
 affiliation: ImJoy Team
 website: https://ij.imjoy.io
-forum: https://forum.image.sc/tag/imagej-js
 twitter: ImJoyTeam
 github: imjoy-team
 license-url: /licensing/mit

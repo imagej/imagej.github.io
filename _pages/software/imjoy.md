@@ -8,14 +8,11 @@ name: ImJoy
 affiliation: ImJoy Team
 website: https://imjoy.io
 github: imjoy-team
-forum: https://forum.image.sc/tag/imjoy
 twitter: ImJoyTeam
 license-url: /licensing/mit
 license-label: MIT
 team-leads: Wei Ouyang | /people/oeway
 ---
-<a href="https://imjoy.io" target="_blank" ><img src="https://raw.githubusercontent.com/imjoy-team/ImJoy/master/web/public/static/img/imjoy-logo-black.svg?sanitize=true" width="380"></img>
-</a>
 
 # ImJoy: Supercharging interactivity and scalability of data science!
 
