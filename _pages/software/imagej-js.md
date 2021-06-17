@@ -2,6 +2,16 @@
 title: ImageJ.JS
 section: Explore:Software
 extensions: ["imjoy"]
+icon: https://ij.imjoy.io/assets/icons/chrome/chrome-installprocess-128-128.png
+name: ImageJ.JS
+affiliation: ImJoy Team
+website: https://ij.imjoy.io
+forum: https://forum.image.sc/tag/imagej-js
+twitter: ImJoyTeam
+github: imjoy-team
+license-url: /licensing/mit
+license-label: MIT
+team-leads: Wei Ouyang | /people/oeway
 ---
 
 ImageJ.JS is web version of ImageJ, we compiled ImageJ (version 1) from Java into Javascript with a Java compiler called [CheerpJ](https://www.leaningtech.com/pages/cheerpj.html). In addition to the modification for making it work better within the browser, importantly, we integrated it with the [ImJoy](https://imjoy.io) plugin ecosystem. The project is currently under active development within the [ImJoy Team](https://github.com/imjoy-team) led by Wei Ouyang.
@@ -14,7 +24,15 @@ ImageJ.JS is web version of ImageJ, we compiled ImageJ (version 1) from Java int
 
 You can run ImageJ with all mainstream browsers with one click, no installation and no Java runtime environment needed. It also works on mobile devices.
 
-You can try ImageJ.JS here: [https://ij.imjoy.io](https://ij.imjoy.io) directly, or try our interactive introduction slides by clicking the "Run" button below:
+To see how it works, click the "Run" button below:
+<!-- ImJoyPlugin: { "type": "macro", "hide_code_block": true } -->
+```javascript
+print("You just started ImageJ.JS!")
+```
+
+To use ImageJ.JS outside the wiki, you can click this link: [https://ij.imjoy.io](https://ij.imjoy.io).
+
+Please also checkout our interactive introduction slides by clicking the "Run" button below:
 <!-- ImJoyPlugin: { "type": "web-worker", "hide_code_block": true } -->
 ```javascript
 api.createWindow({ src: 'https://slides.imjoy.io/?slides=https://gist.githubusercontent.com/oeway/3968df06b663088eca66f9bd8df94e81/raw/ImageJ.JS-slides-for-OME-Meetings-2021.md', passive: true })
@@ -50,7 +68,7 @@ Try an online demo: [![Binder](https://mybinder.org/badge_logo.svg)](https://myb
 
 ImageJ.JS is a browser application that can be easily embedded into an website including project site and documentation. 
 
-In fact, we have added the support for running ImageJ in the ImageJ wiki, so you can directly run ImageJ macro and other ImJoy plugins directly.
+In fact, we have added the support for running ImageJ in the ImageJ wiki, so you can directly run ImageJ macro and other ImJoy plugins.
 
 For example, you can click and try the `Run` button bellow to see a basic imagej macro for image segmentation (Thanks to Romain Guiet who provided this minimal example):
 <!-- ImJoyPlugin: { "type": "macro" } -->

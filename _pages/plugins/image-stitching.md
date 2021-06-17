@@ -17,7 +17,7 @@ Please note that the Stitching, as well as other plugins available through Fiji,
 
 There is an increasing demand to image large biological specimen at high resolution. Typically those specimen do not fit in the field of view of the microscope. To overcome this drawback, motorized stages moving the sample are used to create a tiled scan of the whole specimen. The physical coordinates provided by the microscope stage are not precise enough to allow reconstruction ("Stitching") of the whole image from individual image stacks.
 
-The Stitching Plugin (2d-5d) is able to reconstruct big images/stacks from an arbitrary number of tiled input images/stacks, making use of the Fourier Shift Theorem that computes all possible translations (x, y\[, z\]) between two 2d/3d images at once, yielding the best overlap in terms of the cross correlation measure. If more than two input images/stacks are used the correct placement of all tiles is determined using a global optimization. The stitching is able to align an arbitrary amount of channels and supports timelapse registration. To remove brightness differences at the tile borders, non-linear intensity blending can be applied.
+The Stitching Plugin (2d-5d) is able to reconstruct big images/stacks from an arbitrary number of tiled input images/stacks, making use of the Fourier Shift Theorem that computes all possible translations (x, y[, z]) between two 2d/3d images at once, yielding the best overlap in terms of the cross correlation measure. If more than two input images/stacks are used the correct placement of all tiles is determined using a global optimization. The stitching is able to align an arbitrary amount of channels and supports timelapse registration. To remove brightness differences at the tile borders, non-linear intensity blending can be applied.
 
 Plase note: this is the new implementation of the Stitching plugin which is finally based on [Imglib](/libs/imglib1) and supports a lot of new features:
 
@@ -120,15 +120,15 @@ The grid stitching assumes that the tiles which are arranged in any kind of grid
 
 The next entry *File name for tiles* in the dialog is used to tell the plugin how to find the images which are in the grid (e.g. 49 different file names). Let's assume the files are simply named like this:
 
-**tile\_001.lsm tile\_002.lsm .... tile\_049.lsm**
+**tile_001.lsm tile_002.lsm .... tile_049.lsm**
 
-which translates to the following entry **tile\_{iii}.lsm**. It tells the plugin where to put the increasing index number **i**, and furthermore to use leading zeros with a length of 3. If the tiles would be called **tile\_1.lsm tile\_2.lsm .... tile\_49.lsm**, it would translate to **tile\_{i}.lsm**.
+which translates to the following entry **tile_{iii}.lsm**. It tells the plugin where to put the increasing index number **i**, and furthermore to use leading zeros with a length of 3. If the tiles would be called **tile_1.lsm tile_2.lsm .... tile_49.lsm**, it would translate to **tile_{i}.lsm**.
 
 If you select *'Filename defined position / Defined by filename* as type, the approximate coordinates in the grid should be part of the filename. Assuming your files are called:
 
-**tile\_x01\_y01.lsm tile\_x02\_y01.lsm .... tile\_x10\_y10.lsm**
+**tile_x01_y01.lsm tile_x02_y01.lsm .... tile_x10_y10.lsm**
 
-it would translate to the following pattern: **tile\_x{xx}\_y{yy}.lsm**.
+it would translate to the following pattern: **tile_x{xx}_y{yy}.lsm**.
 
 The *Output textfile name* defines the text files that will contain the initial approximate grid layout and the final positions of each tile after registration.
 
@@ -190,7 +190,7 @@ You might notice that the Grid/Collection Stitching does not offer any options f
 
 If you still have a known arrangement of tiles that is not covered by any of the grid methods, you can create yourself a tile configuration file which roughly describes the arrangement including the overlap. You can use this as input for the Grid/Collection stitching (option **Positions from file -&gt; Defined by TileConfiguration**) to refine it and find the correct alignment. Here is an example TileConfiguration.txt:
 
-```
+``` ini
 # Define the number of dimensions we are working on
 dim = 3
 # Define the image coordinates (in pixels)
@@ -210,9 +210,9 @@ This option exists, but is disabled by default as it is likely only required in 
 -   {% include bc path='Language | Beanshell'%}
 -   type the following line (without the 001)
 
-<!-- -->
-
-    plugin.Stitching_Grid.seperateOverlapY = true;
+``` java
+plugin.Stitching_Grid.seperateOverlapY = true;
+```
 
 -   click Run
 
@@ -226,9 +226,9 @@ You can change the fraction of the area that is blended using the scripting lang
 -   {% include bc path='Language | Beanshell'%}
 -   type the following line (without the 001) to change it to e.g. 10%
 
-<!-- -->
-
-    mpicbg.stitching.fusion.BlendingPixelFusion.fractionBlended = 0.1;
+``` java
+mpicbg.stitching.fusion.BlendingPixelFusion.fractionBlended = 0.1;
+```
 
 -   click Run
 
@@ -244,9 +244,9 @@ You can activate the option using the **script editor**:
 -   {% include bc path='Language | Beanshell'%}
 -   type the following line (without the 001):
 
-<!-- -->
-
-    mpicbg.stitching.GlobalOptimization.ignoreZ = true;
+``` java
+mpicbg.stitching.GlobalOptimization.ignoreZ = true;
+```
 
 -   click Run
 
@@ -279,11 +279,11 @@ Although the Stitching depends on quite some Fiji-specific libraries, there is a
 
 Additionally to the Stitching plugins, it contains the following libraries. I want to thank all the authors for their support and help:
 
--   *edu\_mines\_jtk.jar*: Efficient 1-dimensional FFT implementation by [Dave Hale](http://inside.mines.edu/~dhale/jtk/).
+-   *edu_mines_jtk.jar*: Efficient 1-dimensional FFT implementation by [Dave Hale](http://inside.mines.edu/~dhale/jtk/).
 -   *mpicbg.jar*: Transformation package by {% include person id='axtimwalde' %}
 -   *[imglib](/libs/imglib1)*: N-dimensional image processing library for Java by {% include person id='tpietzsch' %}, {% include person id='StephanPreibisch' %} & {% include person id='axtimwalde' %}
--   *fiji-lib.jar & Fiji\_Plugins.jar*: Fiji libraries by {% include person id='dscho' %}
--   *loci\_tools.jar*: [Bio-Formats](/formats/bio-formats) Java library for reading and writing life sciences image file formats. I want to especially thank {% include person id='ctrueden' %} and {% include person id='melissalinkert' %}
+-   *fiji-lib.jar & Fiji_Plugins.jar*: Fiji libraries by {% include person id='dscho' %}
+-   *loci_tools.jar*: [Bio-Formats](/formats/bio-formats) Java library for reading and writing life sciences image file formats. I want to especially thank {% include person id='ctrueden' %} and {% include person id='melissalinkert' %}
 
 Additionally, I want to thank the following people for discussions, providing images and pushing me to develop and continuously improve the Stitching plugins:
 

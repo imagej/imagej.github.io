@@ -27,13 +27,15 @@ The BigDataServer is running on a remote machine which hosts the XML/HDF5 datase
 
 BigDataServer is packaged as a single "batteries-included" jar file with all required dependencies. It is run from the command line using Java 7 or higher. Copy [bigdataserver.jar](http://fly.mpi-cbg.de/~pietzsch/bigdataserver.jar) onto your webserver (probably running Linux). Run the BigDataServer using this command:
 
-```
+``` bash
 $ java -Xmx4G -jar bigdataserver.jar PARAMETERS
+```
 
 The `-Xmx4G` option gives the server 4GB of RAM. The server is built on the same caching architecture as BigDataViewer and does not require a lot of RAM to run (1GB or less should be sufficient). However, running with more RAM means that more of the data can be cached in RAM (on the server). This will improve performance, because client requests can be handled rapidly from cached data.
 
 Running the above command without parameters will print this help:
 
+``` bash
 $ java -Xmx4G -jar bigdataserver.jar
 usage: BigDataServer [OPTIONS] [NAME XML] ...
   
@@ -51,10 +53,11 @@ is the path to the XML file of the dataset.
                     (default: localhost)
 -t <DIRECTORY>      Directory to store thumbnails. (new temporary directory
                     by default.)
+```
 
 A typical command to start the server will look like this:
 
-```
+``` bash
 $ java -Xmx4G -jar bigdataserver.jar -d datasets.txt -s fly.mpi-cbg.de -p 8081
 2015-02-14 14:02:52.696:[INFO::main](INFO__main): Logging initialized @421ms
 ...
@@ -70,7 +73,7 @@ When the manager context is enabled, the keystore password and manager password 
 
 A common way to start the server with the manager context looks like below:
 
-```
+``` bash
 $ java -Xmx4G -jar bigdataserver.jar -d datasets.txt -s fly.mpi-cbg.de -p 8081 -m 8443
 2015-02-14 14:02:52.696:[INFO::main](INFO__main): Logging initialized @421ms
 ...
@@ -86,7 +89,7 @@ The web interface of /manager context looks like this: <img src="/media/plugins/
 
 The server will keep running until you cancel it with {% include key keys='Ctrl|C' %} or close the shell. To start the server in the background run it in a screen session:
 
-```
+``` bash
 $ screen
 $ java -Xmx4G -jar bigdataserver.jar -d datasets.txt
 2015-02-14 14:02:52.696:[INFO::main](INFO__main): Logging initialized @421ms

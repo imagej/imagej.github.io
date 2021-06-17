@@ -131,24 +131,20 @@ This list is for more random, vague, or uncertain ideas, which are not yet well 
 
 1.  Running as macro command in a loop, need to use macro commands to save the IJ.log window results, then clear the log window before the next set of results are sent there. Add words to documentation to explain that. Should test if this kind of thing works using string concatenation tobconstruct the long string of Coloc\_2 parameters. Perhaps better to do it in Python or BeanShell.
 
-<blockquote>
-
-This kind of macro will prompt you for a directory and get you a list of all files in that directory, stored in an array called 'files' (or whatever arbitrary name you choose):
-
-You can then refer to consecutive files using consecutive numbers in the array index, e.g.: `files[0]` and `files[1].` Use a for loop to go through the entire list:
-
-```javascript
-dir = getDirectory();
-files = getFileList(dir);
-for(i = 0; i < files.length - 1; i++){
-   open(dir + files[i]);
-   open(dir + files[i+1]);
-    Split channels
-    run(Coloc_2, "i-ch1, i-ch2, etc....")
-    Close opened images
-    Save ij.log
-    Clear ij.log
-}
-```
-
-</blockquote>
+> This kind of macro will prompt you for a directory and get you a list of all files in that directory, stored in an array called 'files' (or whatever arbitrary name you choose):
+> 
+> You can then refer to consecutive files using consecutive numbers in the array index, e.g.: `files[0]` and `files[1].` Use a for loop to go through the entire list:
+> 
+> ```javascript
+> dir = getDirectory();
+> files = getFileList(dir);
+> for(i = 0; i < files.length - 1; i++){
+>    open(dir + files[i]);
+>    open(dir + files[i+1]);
+>     Split channels
+>     run(Coloc_2, "i-ch1, i-ch2, etc....")
+>     Close opened images
+>     Save ij.log
+>     Clear ij.log
+> }
+> ```

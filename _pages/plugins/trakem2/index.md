@@ -87,9 +87,11 @@ A. Use the built-in commands from the right-click menu, such as:
 
 B. Create a preprocessor script and set it to all images. For example, a [beanshell](/scripting/beanshell) script to run [CLAHE](/plugins/clahe) on each image. In the script, the <i>patch</i> and <i>imp</i> variables exist automatically, and represent the [Patch](https://fiji.sc/javadoc/ini/trakem2/display/Patch.html) instance and the [ImagePlus](https://javadoc.scijava.org/ImageJ1/ij/ImagePlus.html) instance that the Patch wraps, respectively.
 
-    import ij.IJ;
-    IJ.run(imp, "Enhance Local Contrast (CLAHE)", "blocksize=127"
-       + " histogram=256 maximum=3 mask=*None* fast_(less_accurate)");
+``` java
+import ij.IJ;
+IJ.run(imp, "Enhance Local Contrast (CLAHE)", "blocksize=127"
+   + " histogram=256 maximum=3 mask=*None* fast_(less_accurate)");
+```
 
 To set the script to all images, save the above to a file named "whatever.bsh" (notice the filename extension ".bsh") and then right-click on the TrakEM2 canvas and choose "Script - Set preprocessor script layer-wise", and choose the whole range of layers. This will set the script to every image of every layer, and trigger mipmap regeneration for every image. When TrakEM2 loads the image, the script will run on the image before TrakEM2 ever sees its contents.
 
@@ -164,5 +166,3 @@ As for a graphics card buy the largest you can afford, both in computing power a
 ## Publication
 
 {% include citation %}
-
-      
