@@ -11,9 +11,6 @@ If you have completed a plugin that you would like to **share with the community
 
 For instructions on plugin development for [ImageJ 1.x](/software/imagej-1.x), see [Developing Plugins for ImageJ 1.x](/develop/ij1-plugins).' %}
 
- 
-
-
 ## Requirements
 
 As ImageJ is built using the [SciJava principles of project management](/develop/project-management), this guide assumes a basic familiarity with these topics and tools, especially:
@@ -39,15 +36,17 @@ There is no limit to how many plugins can be discovered at runtime. To allow eff
 
 For example, given the following plugins:
 
-    @Plugin(type=Service.class)
-    public class MyService implements Service { }
+```java
+@Plugin(type=Service.class)
+public class MyService implements Service { }
 
-    @Plugin(type=SpecialService.class)
-    public class SpecialService implements Service { }
+@Plugin(type=SpecialService.class)
+public class SpecialService implements Service { }
 
 {% include quiz q='Which of these plugins would we expect back if asking the [Context](/develop/plugins#the-context) for plugins of type `Service` plugin?' a='It would give back both the `MyService` and `SpecialService` plugins, since `SpecialService` is a subclass of `Service`.' %}
 
 {% include quiz q='What if we asked for plugins of type `SpecialService`?' a='It would just return the `SpecialService` plugin, since `MyService` is **not** a `SpecialService`.' %}
+```
 
 ### Plugin priority
 
@@ -55,18 +54,21 @@ When plugins are retrieved from a [Context](/develop/plugins#the-context) it's p
 
 For example, given the following plugins:
 
-    @Plugin(priority=Priority.HIGH)
-    public class MyService implements Service { }
+```java
+@Plugin(priority=Priority.HIGH)
+public class MyService implements Service { }
 
-    @Plugin(priority=224)
-    public class SpecialService implements Service { }
+@Plugin(priority=224)
+public class SpecialService implements Service { }
 
 {% include quiz q='Which plugin would be returned first if we asked the Context for a `Service` plugin?' a='The `SpecialService` plugin would come back first. If we look at the `Priority` class we see that `HIGH` simply [resolves to 100](https://github.com/scijava/scijava-common/blob/scijava-common-2.47.0/src/main/java/org/scijava/Priority.java#L54-L55).' %}
-
+```
 We can also use *relative priorities* when referring to particular priority constants. This is a nice way to give the best chance that sorting will remain the same even if these constants change in the future:
 
-    @Plugin(priority=Priority.HIGH+124)
-    public class SpecialService implements Service { }
+```java
+@Plugin(priority=Priority.HIGH+124)
+public class SpecialService implements Service { }
+```
 
 ## What makes up the SciJava plugin framework?
 
@@ -78,50 +80,54 @@ In ImageJ, a `Context` is automatically created when {% include github org='imag
 
 Typically, ImageJ plugin developers will be writing [Service](#Services) and/or [Command](#Commands) plugins. If you need to use another plugin - for example the {% include github org='scijava' repo='scijava-common' tag='scijava-common-2.47.0' source='org/scijava/log/LogService.java' label='LogService' %} - you **should not** manually create it as this effectively disconnects you from your `Context` (Your [Service](#Services) and/or [Command](#Commands) plugins are created by the application container and managed by the plugin framework automatically). Instead, you should ask your `Context` for an instance by adding a field of the desired type and annotating it with the {% include github org='scijava' repo='scijava-common' tag='scijava-common-2.47.0' source='org/scijava/plugin/Parameter.java' label='@Parameter annotation' %}. For example:
 
-    @Plugin
-    public class MyPlugin {
-     
-      // This @Parameter notation is 'asking' the Context
-      // for an instance of LogService.
-      @Parameter
-      private LogService logService;
-     
-      public void log(String message) {
-        // Just use the LogService!
-        // There is no need to construct it, since the Context
-        // has already provided an appropriate instance.
-        logService.info(message);
-      }
-    }
+```java
+@Plugin
+public class MyPlugin {
+ 
+  // This @Parameter notation is 'asking' the Context
+  // for an instance of LogService.
+  @Parameter
+  private LogService logService;
+ 
+  public void log(String message) {
+    // Just use the LogService!
+    // There is no need to construct it, since the Context
+    // has already provided an appropriate instance.
+    logService.info(message);
+  }
+}
+```
 
 This will allow the `Context` to provide you with the appropriate instance of your requested service.
 
 In some cases, manual plugin construction is unavoidable. Understand that if the `MyPlugin` class above is manually constructed—i.e. via `new MyPlugin()`—the `LogService` parameter will be `null`. Automatic population only occurs if the plugin instance itself is retrieved via the framework. When you must manually construct a plugin instance, you can still re-connect it to an existing `Context` via its *injection* mechanism:
 
-    public class MyService {
+```java
+public class MyService {
 
-      // This service will manually create plugin instances
-      // So, we need a reference to our containing Context
-      // Then we can use it to inject our plugins.
-      @Parameter
-      private Context context;
+  // This service will manually create plugin instances
+  // So, we need a reference to our containing Context
+  // Then we can use it to inject our plugins.
+  @Parameter
+  private Context context;
 
-      public void doStuff() {
-        // Manually create a plugin instance
-        // It is not connected to a Context yet
-        MyPlugin plugin = new MyPlugin();
+  public void doStuff() {
+    // Manually create a plugin instance
+    // It is not connected to a Context yet
+    MyPlugin plugin = new MyPlugin();
 
-        // Inject the plugin instance with our Context,
-        // so the logService field of the plugin will be
-        // populated.
-        context.inject(plugin);
+    // Inject the plugin instance with our Context,
+    // so the logService field of the plugin will be
+    // populated.
+    context.inject(plugin);
 
-        // Now that our plugin is injected, we can use
-        // it with the knowledge that its parameters
-        // have been populated
-        plugin.log("Success!");
-      }
-    }
+    // Now that our plugin is injected, we can use
+    // it with the knowledge that its parameters
+    // have been populated
+    plugin.log("Success!");
+  }
+}
+```
 
 ### Services
 
@@ -165,7 +171,9 @@ You do not need to understand every project in this repository, nor must you go 
 
 Because these tutorials use [Git](/develop/git) for source control, you have complete freedom to modify and play with the code. Worst-case scenario, you always have a big reset button via the command:
 
-    git reset --hard origin/master
+```shell
+git reset --hard origin/master
+```
 
 There are always other options for saving or restoring your work—[stashing](https://git-scm.com/book/en/v1/Git-Tools-Stashing) or [branching](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell), for example—but their use will depend on your personal comfort and knowledge of Git.
 

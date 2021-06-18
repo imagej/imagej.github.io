@@ -85,27 +85,29 @@ The plug-in is intended to analyse the "texture" of an object thus it suits samp
 
 It is helpful to run a convergence analysis to determine settings that lead to a stable result in a reasonable amount of time. We recommend running the following macro on a typical image from your experiments.
 
-     //number of directions to draw probes
-     nDirsMax = 32768; //<- edit to suit your needs
-     //number of lines per direction
-     nLinesMax = 1024; //<- edit to suit your needs
-     
-     // --- No need to edit the rest
-     row = 0;
-     setBatchMode(true);
-     for (nDirs = 16; nDirs <= nDirsMax; nDirs *= 2){
-        for (nLines = 1; nLines <= nLinesMax; nLines *= 2){
-        startTime = getTime();
-        run("Anisotropy", "inputimage=net.imagej.ImgPlus@73956688 directions="+nDirs+" lines="+nLines+" samplingincrement=1.73 recommendedmin=true printradii=true printeigens=true displaymilvectors=false instruction=\"\"");
-            endTime = getTime();
-            duration = endTime - startTime;
-            setResult("nDirs", row, nDirs);
-            setResult("nLines", row, nLines);
-            setResult("Duration", row, duration);
-            updateResults();
-            row++;
-         }
+```java
+ //number of directions to draw probes
+ nDirsMax = 32768; //<- edit to suit your needs
+ //number of lines per direction
+ nLinesMax = 1024; //<- edit to suit your needs
+ 
+ // --- No need to edit the rest
+ row = 0;
+ setBatchMode(true);
+ for (nDirs = 16; nDirs <= nDirsMax; nDirs *= 2){
+    for (nLines = 1; nLines <= nLinesMax; nLines *= 2){
+    startTime = getTime();
+    run("Anisotropy", "inputimage=net.imagej.ImgPlus@73956688 directions="+nDirs+" lines="+nLines+" samplingincrement=1.73 recommendedmin=true printradii=true printeigens=true displaymilvectors=false instruction=\"\"");
+        endTime = getTime();
+        duration = endTime - startTime;
+        setResult("nDirs", row, nDirs);
+        setResult("nLines", row, nLines);
+        setResult("Duration", row, duration);
+        updateResults();
+        row++;
      }
+ }
+```
 
 This macro will output two tables, one with anisotropy results and one logging directions, lines, and duration. To complete the convergence analysis the two tables have to be copy-pasted into a spreadsheet so that anisotropy results can be plotted alongside timings and input parameters.
 
@@ -779,8 +781,7 @@ Menu path {% include bc path="Edit | Options | BoneJ Usage" %}
 
 #### What is collected?
 
-BoneJ uses Google Analytics to report when a plugin's run() method completes successfully.
-
+BoneJ uses Google Analytics to report when a plugin's `run()` method completes successfully.
     https://www.google-analytics.com/__utm.gif?utmwv=5.2.5&utms=0&utmn=1074354874&utmhn=bonej.org&utmt=event&utme=5(Plugin%20Usage*org.bonej.wrapperPlugins.wrapperUtils.UsageReporterOptions*0.5.1)&utmcs=UTF-8&utmsr=3840x1080&utmvp=3840x1080&utmsc=24-bit&utmul=en-gb&utmje=0&utmcn=1&utmdt=bonej.org%20Usage%20Statistics&utmhid=512699200&utmr=-&utmp=%2Fstats&utmac=UA-366405-8&utmcc=__utma%3D1589599318.1327557233.1538550102.1538550102.1538550102.2%3B%2B__utmz%3D1589599318.1538550102.79.42.utmcsr%3Dgoogle%7Cutmccn%3D(organic)%7Cutmcmd%3Dorganic%7Cutmctr%3DBoneJ%20Usage%20Reporter%3B
 
 A one-pixel GIF image is requested from Google, with a rather long set of parameters. Reported details are:

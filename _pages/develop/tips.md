@@ -9,11 +9,15 @@ An unsorted list of hints that you might find useful:
 
 You do not need to call `javac` yourself with a long *classpath*:
 
-    $ ./fiji --javac YourClass.java
+```shell
+$ ./fiji --javac YourClass.java
+```
 
 and you can call its `main()` method just as easy:
 
-    $ ./fiji YourClass.class argument1 argument2
+```shell
+$ ./fiji YourClass.class argument1 argument2
+```
 
 # Rapidly Prototype a Plugin
 
@@ -27,15 +31,19 @@ Once you have working code, you can turn it into a proper plugin (this is easies
 
 Sometimes, the compiler complains about a class not having a certain method or interface, but you *know* it must contain it. More often than not, that class exists in different versions in your classpath. Find out with
 
-    $ ./fiji bin/find-jar-for-class.py the.class.youre.looking.For
+```shell
+$ ./fiji bin/find-jar-for-class.py the.class.youre.looking.For
+```
 
 If you want to do that with an installed Fiji (i.e. when bin/ is missing), you can start the [Script Editor](/scripting/script-editor) and execute a BeanShell like this:
 
-     import ij.IJ;
+```java
+ import ij.IJ;
 
-     print(IJ.getClassLoader()
-             .loadClass("the.class.youre.looking.For")
-             .getResource("For.class").toString());
+ print(IJ.getClassLoader()
+         .loadClass("the.class.youre.looking.For")
+         .getResource("For.class").toString());
+```
 
 This will output the URL to the *.class* file, including the path to the enclosing *.jar* file.
 
@@ -45,63 +53,81 @@ ImageJ has a simple API, but it is also big, so here are a few pointers to some 
 
 ## How to read a file into an ImagePlus
 
-     ImagePlus image = IJ.openImage(path);
+```java
+ ImagePlus image = IJ.openImage(path);
+```
 
 ## How to get the current image
 
-    ImagePlus img = WindowManager.getCurrentImage();  // current image
-    ImageProcessor ip = img.getProcessor();  // current slice
+```java
+ImagePlus img = WindowManager.getCurrentImage();  // current image
+ImageProcessor ip = img.getProcessor();  // current slice
+```
 
 ## Making a new image stack -- quickly!
 
-     ImagePlus image = IJ.createImage("my image", "RGB", 640, 480, 20);
+```java
+ImagePlus image = IJ.createImage("my image", "RGB", 640, 480, 20);
+```
 
 ## How to display an exception in a window
 
 This is especially useful on Windows, where you usually do not see the console:
 
-     IJ.handleException(exception);
+```java
+IJ.handleException(exception);
+```
 
 This is available since ImageJ 1.43g, as well as the option to set a different exception handler using
 
-     IJ.setExceptionHandler(new IJ.ExceptionHandler() {
-        public void handle(Throwable exception) {
-           // do something
-        }
-     });
+```java
+ IJ.setExceptionHandler(new IJ.ExceptionHandler() {
+    public void handle(Throwable exception) {
+       // do something
+    }
+ });
+```
 
 ## How to show a plot
 
 ImageJ offers the `ij.gui.Plot` class to make a window showing a plot. Use it like this:
 
-    Plot plot = new Plot("The window title", "labels on the x-axis", "labels on the y-axis",
-        float_array_of_x_values, float_array_of_y_values);
-    plot.show();
+```java
+Plot plot = new Plot("The window title", "labels on the x-axis", "labels on the y-axis",
+    float_array_of_x_values, float_array_of_y_values);
+plot.show();
+```
 
 Instead of *float* arrays, you can also use *double* arrays.
 
 If you need to update the plot at some stage, you need to save the return value of *show()*:
 
-    Plot plot = new Plot("The window title", "labels on the x-axis", "labels on the y-axis",
-        float_array_of_x_values, float_array_of_y_values);
-    PlotWindow window = plot.show();
-    // ...
-    Plot update = new Plot("Dummy", "x labels", "y labels", x_values, y_values);
-    window.drawPlot(update);
+```java
+Plot plot = new Plot("The window title", "labels on the x-axis", "labels on the y-axis",
+    float_array_of_x_values, float_array_of_y_values);
+PlotWindow window = plot.show();
+// ...
+Plot update = new Plot("Dummy", "x labels", "y labels", x_values, y_values);
+window.drawPlot(update);
+```
 
 To add another plot to the same window, use the `addPoints()` method:
 
-    plot.addPoints(float_array_of_x_values, float_array_of_y_values, Plot.LINE);
+```java
+plot.addPoints(float_array_of_x_values, float_array_of_y_values, Plot.LINE);
+```
 
 The plots can be drawn in different colors like this:
 
-    Plot plot = new Plot("The window title", "labels on the x-axis", "labels on the y-axis",
-        float_array_of_x_values, float_array_of_y_values);
-    plot.setColor(Color.RED);
-    plot.draw();
-    plot.addPoints(float_array_of_x_values, another_float_array_of_y_values, Plot.LINE);
-    plot.setColor(Color.BLUE);
-    plot.draw();
+```java
+Plot plot = new Plot("The window title", "labels on the x-axis", "labels on the y-axis",
+    float_array_of_x_values, float_array_of_y_values);
+plot.setColor(Color.RED);
+plot.draw();
+plot.addPoints(float_array_of_x_values, another_float_array_of_y_values, Plot.LINE);
+plot.setColor(Color.BLUE);
+plot.draw();
+```
 
 You might need to adjust the bounding box if the second plot does not match the bounding box of the first one by using the `setLimits()` method before the call to `plot.draw();`
 
@@ -119,35 +145,41 @@ ImageJ (and therefore Fiji, too) has a way to store key/value pairs persistently
 
 Example:
 
-    import ij.Prefs;
+```java
+import ij.Prefs;
 
-    ...
+...
 
-        // save key/value pairs
-        Prefs.set("my.persistent.name", "Grizzly Adams");
-        Prefs.set("my.persistent.number", 10);
+    // save key/value pairs
+    Prefs.set("my.persistent.name", "Grizzly Adams");
+    Prefs.set("my.persistent.number", 10);
 
-        ....
+    ....
 
-        // retrieve the values (with default values)
-        int myNumber = Prefs.get("my.persistent.number", 0);
+    // retrieve the values (with default values)
+    int myNumber = Prefs.get("my.persistent.number", 0);
 
-        // explicitly save the preferences _now_
-        Prefs.savePreferences();
+    // explicitly save the preferences _now_
+    Prefs.savePreferences();
 
 {% include notice icon="note" content="Do *not* use the `getString()` or `getInt()`; These methods do not have any setter methods, and they do *not* access the same values as the `get()` method (`get()` actually prefixes the keys with a dot)!" %}
+```
 
 ## How to turn a number into a string, using a given number of decimal places
 
 Use the `d2s()` method of the `ij.IJ` class:
 
-    String message = "The current temperature is " + IJ.d2s(degrees, 1) + "° Celsius";
+```java
+String message = "The current temperature is " + IJ.d2s(degrees, 1) + "° Celsius";
+```
 
 ## How to abort a plugin completely
 
 Sometimes, you want to abort a plugin without catching an exception at the highest level(s), without having ImageJ show an exception window. You can do that:
 
-    throw new RuntimeException(Macro.MACRO_CANCELED);
+```java
+throw new RuntimeException(Macro.MACRO_CANCELED);
+```
 
 The special message *Macro.MACRO\_CANCELED* will tell ImageJ not to show the exception message and stack trace in a text window.
 
@@ -155,88 +187,106 @@ The special message *Macro.MACRO\_CANCELED* will tell ImageJ not to show the exc
 
 To add ROIs to the ROI manager, do something like this:
 
-    RoiManager manager = RoiManager.getInstance();
-    if (manager == null)
-        manager = new RoiManager();
-    manager.addRoi(roi);
+```java
+RoiManager manager = RoiManager.getInstance();
+if (manager == null)
+    manager = new RoiManager();
+manager.addRoi(roi);
+```
 
 If you want to add the ROI with a slice label, you have to jump through a hoop:
 
-    int currentSlice = image.getCurrentSlice();
-    RoiManager manager = RoiManager.getInstance();
-    if (manager == null)
-        manager = new RoiManager();
-    // the first slice is 1 (not 0)
-    image.setSliceWithoutUpdate(slice);
-    manager.add(image, rois[i], slice);
-    image.setSlice(currentSlice);
+```java
+int currentSlice = image.getCurrentSlice();
+RoiManager manager = RoiManager.getInstance();
+if (manager == null)
+    manager = new RoiManager();
+// the first slice is 1 (not 0)
+image.setSliceWithoutUpdate(slice);
+manager.add(image, rois[i], slice);
+image.setSlice(currentSlice);
+```
 
 To retrieve all ROIs from the ROI manager, do this:
 
-    RoiManager manager = RoiManager.getInstance();
-    if (manager != null) {
-        Hashtable<String, Roi> table =
-            (Hashtable<String, Roi>)manager.getROIs();
-        for (String label : table.keySet()) {
-            int slice = manager.getSliceNumber(label);
-            Roi roi = table.get(label);
-            ... <do something with the ROI and the slice> ...
-        }
+```java
+RoiManager manager = RoiManager.getInstance();
+if (manager != null) {
+    Hashtable<String, Roi> table =
+        (Hashtable<String, Roi>)manager.getROIs();
+    for (String label : table.keySet()) {
+        int slice = manager.getSliceNumber(label);
+        Roi roi = table.get(label);
+        ... <do something with the ROI and the slice> ...
     }
+}
+```
 
 If you need to preserve the order of the ROIs in the ROI manager, unfortunately you'll have to access the AWT listbox:
 
-    import java.awt.List;
-    ...
-    RoiManager manager = RoiManager.getInstance();
-    if (manager != null) {
-        List labels = manager.getList();
-        Hashtable<String, Roi> table = (Hashtable<String, Roi>)manager.getROIs();
-        for (int i = 0; i < labels.getItemCount(); i++) {
-            String label = labels.getItem(i);
-            int slice = manager.getSliceNumber(label);
-            Roi roi = table.get(label);
-            ... <do something with the ROI and the slice> ...
-        }
+```java
+import java.awt.List;
+...
+RoiManager manager = RoiManager.getInstance();
+if (manager != null) {
+    List labels = manager.getList();
+    Hashtable<String, Roi> table = (Hashtable<String, Roi>)manager.getROIs();
+    for (int i = 0; i < labels.getItemCount(); i++) {
+        String label = labels.getItem(i);
+        int slice = manager.getSliceNumber(label);
+        Roi roi = table.get(label);
+        ... <do something with the ROI and the slice> ...
     }
+}
+```
 
 To get just the selected ROIs, use code similar to this:
 
-    import java.awt.List;
-    ...
-    RoiManager manager = RoiManager.getInstance();
-    if (manager != null) {
-        String[] labels = manager.getList().getSelectedItems();
-        Hashtable<String, Roi> table = (Hashtable<String, Roi>)manager.getROIs();
-        for (String label : labels) {
-            int slice = manager.getSliceNumber(label);
-            Roi roi = table.get(label);
-            ... <do something with the ROI and the slice> ...
-        }
+```java
+import java.awt.List;
+...
+RoiManager manager = RoiManager.getInstance();
+if (manager != null) {
+    String[] labels = manager.getList().getSelectedItems();
+    Hashtable<String, Roi> table = (Hashtable<String, Roi>)manager.getROIs();
+    for (String label : labels) {
+        int slice = manager.getSliceNumber(label);
+        Roi roi = table.get(label);
+        ... <do something with the ROI and the slice> ...
     }
+}
+```
 
 ## Show a results table
 
 First you need to get the results table instance (or create one):
 
-    ResultsTable rt = Analyzer.getResultsTable();
-    if (rt == null) {
-            rt = new ResultsTable();
-            Analyzer.setResultsTable(rt);
-    }
+```java
+ResultsTable rt = Analyzer.getResultsTable();
+if (rt == null) {
+        rt = new ResultsTable();
+        Analyzer.setResultsTable(rt);
+}
+```
 
 Then you can add a new row:
 
-    rt.incrementCounter();
+```java
+rt.incrementCounter();
+```
 
 ... and add entries by column label:
 
-    rt.addValue("slice", slice);
-    rt.addValue("bratwurst", -1);
+```java
+rt.addValue("slice", slice);
+rt.addValue("bratwurst", -1);
+```
 
 **Finally** make sure that the result table is displayed/updated:
 
-    rt.show("Results");
+```java
+rt.show("Results");
+```
 
 ## How to find equivalent API commands between ImageJ 1.x and ImageJ2?
 
@@ -255,19 +305,23 @@ When has a Swing component been realized? When it is visible inside Window or *J
 
 These are the methods that can realize a component, or rather, methods called on a *Window* or *Frame* or *JFrame* that will realize all its children components:
 
-    setVisible(true)
-    show()
-    pack() // this might surprise you
+```java
+setVisible(true)
+show()
+pack() // this might surprise you
+```
 
 There is a class which helps you with all this: [SwingUtilities](http://download.oracle.com/javase/6/docs/api/javax/swing/SwingUtilities.html). Example: to call `pack()` from within the constructor (which might or might not be called from the Event Dispatch Thread):
 
-    if (SwingUtilities.isEventDispatchThread())
+```java
+if (SwingUtilities.isEventDispatchThread())
+    pack();
+else try {
+    SwingUtilities.invokeAndWait(new Runnable() { public void run() {
         pack();
-    else try {
-        SwingUtilities.invokeAndWait(new Runnable() { public void run() {
-            pack();
-        }});
-    } catch (Exception e) { /* ignore */ }
+    }});
+} catch (Exception e) { /* ignore */ }
+```
 
 Information extracted from the [Swing guide](http://web.archive.org/web/20120801194837/http://java.sun.com/products/jfc/tsc/articles/threads/threads1.html) (now only available from via web.archive.org as Oracle removed the original docs), additional information can be found in the [Concurrency in Swing](http://docs.oracle.com/javase/tutorial/uiswing/concurrency/index.html) lesson of *The Java Tutorials*.
 

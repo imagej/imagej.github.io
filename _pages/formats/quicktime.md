@@ -33,7 +33,9 @@ OS X 10.10 (Yosemite) and 10.11 (El Capitan) do not include key files required f
 
 You can accomplish all of the above by pasting the following command into a running Terminal:
 
-    mkdir -p $HOME/Library/Java/Extensions && for f in QTJava.zip libQTJNative.jnilib; do curl -fsSL https://imagej.nih.gov/ij/download/qt/$f -o $HOME/Library/Java/Extensions/$f; done
+```shell
+mkdir -p $HOME/Library/Java/Extensions && for f in QTJava.zip libQTJNative.jnilib; do curl -fsSL https://imagej.nih.gov/ij/download/qt/$f -o $HOME/Library/Java/Extensions/$f; done
+```
 
 ## FFMPEG
 

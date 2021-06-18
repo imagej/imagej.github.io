@@ -15,60 +15,62 @@ Before reading this HowTo, it may be helpful to read [The relation between Conte
 
 One strength of the viewer is to make displaying custom meshes very straightforward. User-defined points, lines, triangle or quadrangle meshes can be displayed very easily:
 
-        // Create a set of points
-        List&lt;Point3f&gt; mesh = new ArrayList&lt;Point3f&gt;();
-        mesh.add(new Point3f(-100, -100, 50));
-        mesh.add(new Point3f(100, -100, 50));
-        mesh.add(new Point3f(0, 100, 50));
+```java
+// Create a set of points
+List&lt;Point3f&gt; mesh = new ArrayList&lt;Point3f&gt;();
+mesh.add(new Point3f(-100, -100, 50));
+mesh.add(new Point3f(100, -100, 50));
+mesh.add(new Point3f(0, 100, 50));
 
-        // Create a universe and show it
-        Image3DUniverse univ = new Image3DUniverse();
-        univ.showAttribute(
-                Image3DUniverse.ATTRIBUTE_COORD_SYSTEM, false);
-        univ.show();
+// Create a universe and show it
+Image3DUniverse univ = new Image3DUniverse();
+univ.showAttribute(
+		Image3DUniverse.ATTRIBUTE_COORD_SYSTEM, false);
+univ.show();
 
-        // Add the mesh as points
-        CustomPointMesh cm = new CustomPointMesh(mesh);
-        cm.setColor(new Color3f(0, 1, 0));
-        univ.addCustomMesh(cm, "points");
-        cm.setPointSize(10);
+// Add the mesh as points
+CustomPointMesh cm = new CustomPointMesh(mesh);
+cm.setColor(new Color3f(0, 1, 0));
+univ.addCustomMesh(cm, "points");
+cm.setPointSize(10);
 
-        // Add the mesh as a triangle
-        CustomTriangleMesh tm = new CustomTriangleMesh(mesh);
-        tm.setColor(new Color3f(0, 0, 1));
-        Content c = univ.addCustomMesh(tm, "triangle");
+// Add the mesh as a triangle
+CustomTriangleMesh tm = new CustomTriangleMesh(mesh);
+tm.setColor(new Color3f(0, 0, 1));
+Content c = univ.addCustomMesh(tm, "triangle");
 
-        // Add the mesh as a triangle
-        mesh.add(new Point3f(mesh.get(0))); // to close the path
-        CustomLineMesh lm = new CustomLineMesh(
-                mesh, CustomLineMesh.CONTINUOUS);
-        lm.setColor(new Color3f(1, 0, 0));
-        univ.addCustomMesh(lm, "lines");
-        lm.setLineWidth(5);
-        lm.setPattern(CustomLineMesh.DASH);
+// Add the mesh as a triangle
+mesh.add(new Point3f(mesh.get(0))); // to close the path
+CustomLineMesh lm = new CustomLineMesh(
+		mesh, CustomLineMesh.CONTINUOUS);
+lm.setColor(new Color3f(1, 0, 0));
+univ.addCustomMesh(lm, "lines");
+lm.setLineWidth(5);
+lm.setPattern(CustomLineMesh.DASH);
 
-        // after adding the CustomMesh to the universe, we have a
-        // reference to the Content, which can be used for further
-        // modification
-        c.setTransparency(0.5f);
-
+// after adding the CustomMesh to the universe, we have a
+// reference to the Content, which can be used for further
+// modification
+c.setTransparency(0.5f);
+```
 ### More complex meshes, like spheres, tubes, etc
 
 There exist also convenience methods in `ImageJ3DUniverse` for adding custom meshes, so that it is not necessary create the `CustomMesh` oneself. The corresponding methods can be found below.
 
 To create more complex meshes, one can use the helper methods of the class `Mesh_Maker`:
 
-        // Use Mesh_Maker to create more complex surfaces like spheres,
-        // tubes or discs:
+```java
+// Use Mesh_Maker to create more complex surfaces like spheres,
+// tubes or discs:
 
-        // define a sphere with center at the origin and radius 50
-        double x = 0, y = 0, z = 30, r = 50;
-        int meridians = 24;
-        int parallels = 24;
-        mesh = Mesh_Maker.createSphere(x, y, z, r, meridians, parallels);
-        Color3f color = null;
-        univ.addTriangleMesh(mesh, color, "sphere");
-
+// define a sphere with center at the origin and radius 50
+double x = 0, y = 0, z = 30, r = 50;
+int meridians = 24;
+int parallels = 24;
+mesh = Mesh_Maker.createSphere(x, y, z, r, meridians, parallels);
+Color3f color = null;
+univ.addTriangleMesh(mesh, color, "sphere");
+```
 ### Display many surfaces efficiently
 
 Assume for example that one would wish to display 1000 spheres together. One could of course add each sphere individually, but there is a more efficient way:

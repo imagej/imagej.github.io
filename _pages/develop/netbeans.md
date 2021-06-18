@@ -30,16 +30,20 @@ Download and install NetBeans from the [NetBeans web site](http://netbeans.org/d
 
 Install Java using the package manager—e.g., for Ubuntu 10.04:
 
-    sudo add-apt-repository "deb http://archive.canonical.com/ lucid partner"
-    sudo aptitude update
-    sudo aptitude install sun-java6-jdk sun-java6-plugin
-    sudo update-java-alternatives -s sun-java6-sun
+```shell
+sudo add-apt-repository "deb http://archive.canonical.com/ lucid partner"
+sudo aptitude update
+sudo aptitude install sun-java6-jdk sun-java6-plugin
+sudo update-java-alternatives -s sun-java6-sun
+```
 
 #### Install NetBeans
 
 Install NetBeans using the package manager—e.g., on Ubuntu:
 
-    sudo aptitude install netbeans
+```shell
+sudo aptitude install netbeans
+```
 
 ## Import the ImageJ source
 
@@ -67,5 +71,3 @@ To expand the projects you can also right click on the top-level "ImageJ Project
 -   [Developing ImageJ 1.x plugins with NetBeans](https://www.youtube.com/watch?v=Ac-6gJ2eRb0) screencast
 -   {% include github org='imagej' repo='example-legacy-plugin' label='example-legacy-plugin' %} project template
 -   [Developing Plugins for ImageJ 1.x](/develop/ij1-plugins) tutorial
-
- 

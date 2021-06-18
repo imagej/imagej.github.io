@@ -35,27 +35,34 @@ This type of history is called *reflog*, and it is purely linear (at least until
 
 To see the reflog of a ref, just call
 
-`~/fiji$ git reflog show master`
+```shell
+~/fiji$ git reflog show master
+```
 
 or
 
-`~/fiji$ git reflog show HEAD`
-
+```shell
+~/fiji$ git reflog show HEAD
+```
 As a convenience, `git reflog` without parameters shows the reflog of HEAD.
 
 As a further convenience, you can convince `git log` to show the reflog history instead of the "true" history, by calling it with the parameter `-g`:
 
-`~/fiji$ git log -g`
+```shell
+~/fiji$ git log -g
+```
 
 The reflog entries are refs, which have the form "HEAD@{0}", "HEAD@{1}", etc. where the number 0 means the current revision, 1 the previous, and so on.
 
 But reflogs know more than just the ordering: they know the date, too. Just try this:
 
-`~/fiji$ git log -g --date=relative`
+```shell
+~/fiji$ git log -g --date=relative
+```
 
 It will show you something like
 
-```
+```shell
 commit 28b4fbcc8ba45996fa2c9b660e13f309443b55bd
 Reflog: HEAD@{23 hours ago} (Johannes Schindelin <johannes.schindelin@gmx.de>)
 Reflog message: pull : Fast forward
@@ -98,8 +105,6 @@ Date:   27 hours ago
 ...
 ```
 
-So you can also refer to the reflog with something like "HEAD@{1 day ago}". For convenience, you can replace the spaces with dots so you do not have to quote the parameter.
+So you can also refer to the reflog with something like `HEAD@{1 day ago}`. For convenience, you can replace the spaces with dots so you do not have to quote the parameter.
 
 Reflogs are pretty useful to refer to commits when [bisecting](/develop/git/pinpoint-regressions): you might happen to know that something worked two weeks ago `git bisect good HEAD@{2.weeks.ago}`, but stopped working in the current revision: `git bisect bad HEAD`.
-
-

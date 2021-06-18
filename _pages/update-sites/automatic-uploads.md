@@ -32,57 +32,63 @@ Travis CI can be used to automatically build a repository in response to code ch
 
 As a starting point you can copy the following `.travis.yml` :
 
-    language: java
-    sudo: false
+```yml
+language: java
+sudo: false
 
-    cache:
-      directories:
+cache:
+  directories:
         - $HOME/.m2/
 
-    install:
+install:
       - mvn package
 
-    script:
+script:
       - ./.travis-deploy.sh
 
-    branches:
-      only:
+branches:
+  only:
         - master
+```
 
 and this script `.travis-deploy.sh` :
 
-    #!/usr/bin/env sh
-    set -e
+```shell
+#!/usr/bin/env sh
+set -e
 
-    # Define some variables
-    export USER="Username"
-    export UPDATE_SITE="/update-sites"
+# Define some variables
+export USER="Username"
+export UPDATE_SITE="/update-sites"
 
-    export IJ_PATH="$HOME/Fiji.app"
-    export URL="http://sites.imagej.net/$UPDATE_SITE/"
-    export IJ_LAUNCHER="$IJ_PATH/ImageJ-linux64"
-    export PATH="$IJ_PATH:$PATH"
+export IJ_PATH="$HOME/Fiji.app"
+export URL="http://sites.imagej.net/$UPDATE_SITE/"
+export IJ_LAUNCHER="$IJ_PATH/ImageJ-linux64"
+export PATH="$IJ_PATH:$PATH"
 
-    # Install ImageJ
-    mkdir -p $IJ_PATH/
-    cd $HOME/
-    wget --no-check-certificate https://downloads.imagej.net/fiji/latest/fiji-linux64.zip
-    unzip fiji-linux64.zip
+# Install ImageJ
+mkdir -p $IJ_PATH/
+cd $HOME/
+wget --no-check-certificate https://downloads.imagej.net/fiji/latest/fiji-linux64.zip
+unzip fiji-linux64.zip
 
-    # Install the package
-    cd $TRAVIS_BUILD_DIR/
-    mvn clean install -Dscijava.app.directory=$IJ_PATH -Ddelete.other.versions=true
+# Install the package
+cd $TRAVIS_BUILD_DIR/
+mvn clean install -Dscijava.app.directory=$IJ_PATH -Ddelete.other.versions=true
 
-    # Deploy the package
-    # Deploy the package
-    $IJ_LAUNCHER --update edit-update-site $UPDATE_SITE $URL "webdav:$USER:$WIKI_UPLOAD_PASS" .
-    $IJ_LAUNCHER --update update
-    $IJ_LAUNCHER --update upload --update-site $UPDATE_SITE --force-shadow jars/YOUR-FILE.jar
+# Deploy the package
+# Deploy the package
+$IJ_LAUNCHER --update edit-update-site $UPDATE_SITE $URL "webdav:$USER:$WIKI_UPLOAD_PASS" .
+$IJ_LAUNCHER --update update
+$IJ_LAUNCHER --update upload --update-site $UPDATE_SITE --force-shadow jars/YOUR-FILE.jar
+```
 
 Don't forget to replace
 
-    export USER="Username"
-    export UPDATE_SITE="/update-sites"
+```shell
+export USER="Username"
+export UPDATE_SITE="/update-sites"
+```
 
 by your informations.
 
@@ -92,7 +98,9 @@ To upload to your wiki update site, you will need to provide Travis CI with a `W
 
 Note that when you run:
 
-    $ travis encrypt WIKI_UPLOAD_PASS=super_secret --add env.matrix
+```shell
+$ travis encrypt WIKI_UPLOAD_PASS=super_secret --add env.matrix
+```
 
 in your repository, the `.travis.yml` will automatically be updated appropriately. You can simply commit and push the changes.
 
@@ -100,7 +108,7 @@ in your repository, the `.travis.yml` will automatically be updated appropriatel
 
 Travis CI is capable of building many languages besides Java. If you cannot use Maven with a `scijava.app.directory` then you need to replace the following line of your `.travis.yml`:
 
-      - mvn clean install -Dscijava.app.directory="$(pwd)" -Ddelete.other.versions=true
+      - `mvn clean install -Dscijava.app.directory="$(pwd)" -Ddelete.other.versions=true`
 
 with a sequence of commands that will move your build artifacts to the appropriate `/jars` or `/plugins` directory, as appropriate for your update site.
 

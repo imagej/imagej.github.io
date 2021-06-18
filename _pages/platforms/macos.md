@@ -10,9 +10,6 @@ section: Learn:ImageJ Basics:Supported Platforms
 
 {% include wikipedia title='macOS' text='macOS' %} (formerly called Mac OS X, then OS X) is {% include wikipedia title='Apple Inc.' text='Apple' %}'s desktop operating system. It is [the second most common desktop computing platform](https://www.netmarketshare.com/operating-system-market-share.aspx) after [Windows](/platforms/windows). This page details issues specific to using [ImageJ](/software/imagej) on macOS systems.
 
-
-
-
 # Installation
 
 See also the [Java 8](/news/2016-05-10-imagej-howto-java-8-java-6-java-3d) page for OS-X-specific issues.
@@ -27,7 +24,7 @@ There are several reasons ImageJ can run slowly on macOS.
 
 ### Java painting bug
 
-On macOS, older versions of Java 8 (prior to 1.8.0\_45)—as well as all versions of Java 7 (including 1.7.0\_80)—are extremely slow at displaying images. You should either upgrade to the latest version of Java 8, or revert to Java 6 (see "Frequently Asked Questions" below).
+On macOS, older versions of Java 8 (prior to 1.8.0_45)—as well as all versions of Java 7 (including 1.7.0_80)—are extremely slow at displaying images. You should either upgrade to the latest version of Java 8, or revert to Java 6 (see "Frequently Asked Questions" below).
 
 ### Window menu bar bug
 
@@ -74,19 +71,21 @@ Unfortunately, El Capitan has some new java-related issues. If you upgraded to E
 {% include notice icon="warning" content='It may no longer be possible to start Fiji in 32-bit on recent versions of macOS. See [this bug report](https://fiji.sc/bug/1018) for details.' %} Fiji on Intel Macs runs on Java 1.6 in 64-bit mode. If you need to run it in 32-bit mode, you can do so as follows:
 
 1.  Launch Fiji normally, and choose {% include bc path='Edit | Options | Memory & Threads'%}.
-2.  Reduce your Maximum Memory setting to \~1800 MB or less.
+2.  Reduce your Maximum Memory setting to ~1800 MB or less.
 3.  Quit Fiji.
 4.  {% include key keys='Ctrl|Left Click' %} the Fiji dock icon and choose {% include bc path='Options | Show in Finder'%}.
 5.  {% include key keys='Ctrl|Left Click' %} on the Fiji application icon that pops up, and choose Show Info (or press {% include key keys='Cmd|I' %}).
 6.  Check the "Open in 32-bit mode" box in the Fiji info window.
 7.  Press the red X on the Fiji info window to close it.
-8.  Launch Fiji again, and the status bar should report "\[32-bit\]" in brackets.
+8.  Launch Fiji again, and the status bar should report "[32-bit]" in brackets.
 
 Alternately, you can execute the following code from the Terminal:
 
-`arch -i386 /Applications/Fiji.app/Contents/MacOS/ImageJ-macosx`
+```shell
+arch -i386 /Applications/Fiji.app/Contents/MacOS/ImageJ-macosx
+```
 
-Either way, you will need to make sure your maximum memory limit is set below \~1800 MB. If your maximum memory is set higher than the 32-bit limit, Fiji will not be able to start up successfully in 32-bit mode.
+Either way, you will need to make sure your maximum memory limit is set below ~1800 MB. If your maximum memory is set higher than the 32-bit limit, Fiji will not be able to start up successfully in 32-bit mode.
 
 ## Limited PowerPC (G4/G5) Mac support
 
@@ -128,21 +127,21 @@ Since the development of OpenJDK for macOS is driven exclusively by Apple employ
 
 Often it is necessary to run Fiji in the command line, e.g. to pass some command-line options. To do so, start a Terminal (in the Finder, *Go&gt;Utilities*), and switch to the correct directory using the *cd* command. Note that the application itself is actually a directory called *Fiji.app*. For example, if you installed Fiji into */Applications* as recommended, do this:
 
-`cd /Applications/Fiji.app`
+cd /Applications/Fiji.app
 
 If you unpacked Fiji onto your desktop, do this:
 
-`cd $HOME/Desktop/Fiji.app`
+cd $HOME/Desktop/Fiji.app
 
 Once you switched to the correct directory, start the Fiji launcher:
 
-`Contents/MacOS/ImageJ-macosx`
+Contents/MacOS/ImageJ-macosx
 
-{% include notice icon="note" content="A backslash (`\\`) is not the same as a slash (`/`). So: `Contents\\MacOS\\ImageJ-macosx` will **not** work." %}
+{% include notice icon="note" content="A backslash (`\`) is not the same as a slash (`/`). So: `Contents\MacOS\ImageJ-macosx` will **not** work." %}
 
 Now you can pass, say, [Java Options](Java_Options):
 
-`Contents/MacOS/ImageJ-macosx -verbose:gc --`
+Contents/MacOS/ImageJ-macosx -verbose:gc --
 
 {% include notice icon="note" content="To distinguish between options intended for Java and options intended for ImageJ, you need to separate the former from the latter with a double-dash: `--`. Since the default is to accept ImageJ options, you have to pass a trailing double-dash if you want to pass only Java options." %}
 

@@ -17,13 +17,13 @@ We set up an Ubuntu based development machine for OpenCL development and testing
 -   Obtain an ISO for Ubuntu 10.04
 -   Install Ubuntu on the target machine.
 -   Install g++ with:  
-`sudo apt-get install g++`
+    `sudo apt-get install g++`
 -   Install needed development libs with:
-``` 
-sudo apt-get install freeglut3-dev
-sudo apt-get install libxi-dev
-sudo apt-get install libxmu-dev 
-```
+    ```shell
+    sudo apt-get install freeglut3-dev
+    sudo apt-get install libxi-dev
+    sudo apt-get install libxmu-dev 
+    ```
 
 ## Setting up OpenCL
 
@@ -50,72 +50,74 @@ wget http://developer.download.nvidia.com/compute/cuda/\
 
 Stop the graphical desktop manager by typing:
 
-`sudo gdm stop`
+sudo gdm stop
 
 from the command line.
 
 Install the required files:
-```
+```shell
 sudo sh devdriver_3.2_linux_64_260.19.26.run
 sudo sh cudatoolkit_3.2.16_linux_64_ubuntu10.04.run
 sh gpucomputingsdk_3.2.16_linux.run
 ```
 Per the installation instructions, we setup the environment variables (in `.bashrc`):
-```
+```shell
 export LD_LIBRARY_PATH="/usr/local/cuda/lib:/usr/local/cuda/lib64"
 export PATH="/usr/local/cuda/bin"
 ```
 Test the installation by compiling and running a few of the NVidia provided OpenCL samples by changing directories to:
 
-`/NVIDIA_GPU_COMPUTING_SDK/C`
+```shell
+/NVIDIA_GPU_COMPUTING_SDK/C
 
 and running:
 
-`make`
+make
 
 We ran into an error and ended up editing the file
 
-`/NVIDIA_GPU_COMPUTING_SDK/C/common.mk`
+/NVIDIA_GPU_COMPUTING_SDK/C/common.mk
 
 by replacing line 169 with:
 
-`NVCCFLAGS  += --compiler-options -fpermissive`
+NVCCFLAGS  += --compiler-options -fpermissive
 
 and re-running:
 
-`make`
+make
 
 Change directories to
 
-`/NVIDIA_GPU_Computing_SDK/C/bin/linux/release`
+/NVIDIA_GPU_Computing_SDK/C/bin/linux/release
 
 and run
 
-`./bandwidthtest`
+./bandwidthtest
 
 to check the binary CUDA install.
 
 Build the OpenCL examples by changing directories to
 
-`/NVIDIA_GPU_COMPUTING_SDK/OpenCL`
+/NVIDIA_GPU_COMPUTING_SDK/OpenCL
 
 and running:
 
-`make`
+make
 
 Change directories to
 
-`/NVIDIA_GPU_Computing_SDK/OpenCL/bin/linux/release`
+/NVIDIA_GPU_Computing_SDK/OpenCL/bin/linux/release
 
 to run the OpenCL Bandwidth sample using:
 
-`./oclBandwidthTest`
+./oclBandwidthTest
+```
 
 ## Setting up Eclipse and needed plugins on Ubuntu
 
 To configure the development environment, we started by installing the JRE with:
 
-`sudo apt-get install openjdk-6-jdk`
+sudo apt-get install openjdk-6-jdk
 
 and downloading Eclipse for J2EE Developers from:
 
@@ -188,7 +190,7 @@ In this example, Hessian Binary Web Services are used to broker data between the
 ## Hosting OpenCL-accelerated algorithms using Oracle's GlassfishV3
 
 To set up OpenCL support on Glassfish for deploying the ImageJ/Fiji Java based EJBs, navigate to the system's lib directory (for example: `/opt/glassfishv3/glassfish/lib`) and install the required jars/native libs.
-```
+```shell
 sudo wget http://jogamp.org/deployment/webstart/jocl-natives-linux-amd64.jar
 sudo unzip jocl-natives-linux-amd64.jar
 sudo rm -rdf META-INF
@@ -260,7 +262,7 @@ Note: It is almost certainly possible to optimize any of the following implement
 ## Implementation
 
 The following code demonstrates a partial implementation of sobel filter within ImageJ:
-```
+```java
 public byte[] filter(int width, int height, byte[] inputImageArray)
 	{
 		byte[] pixels = new byte[width*height];
@@ -318,7 +320,7 @@ The above OpenCL kernel is almost identical to the Java implementation with the 
 
 The following example demonstrates how an image is loaded using Imglib in preparation for GPU computation:
 
-```
+```java
 //Create an array container factory
 ArrayContainerFactory arrayContainerFactory = new ArrayContainerFactory();
 

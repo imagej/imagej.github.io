@@ -120,9 +120,11 @@ Quite a few algorithms are available as proof-of-concept [MATLAB](/scripting/mat
 
 MATLAB bundles a Java runtime (and in fact, all of [MATLAB](/scripting/matlab)'s GUI is implemented in Java!) and allows the user to instantiate Java classes and call methods on them:
 
-    import java.io.File;
-    f = File('/usr/local/Fiji.app/');
-    f.exists()
+```java
+import java.io.File;
+f = File('/usr/local/Fiji.app/');
+f.exists()
+```
 
 Happily, there is a [MATLAB](/scripting/matlab) clone written in Java: [JMathLib](https://directory.fsf.org/wiki/JMathLib). While it is apparently not a speed demon, it should be useful to add JMathLib as a new scripting language to ImageJ, and integrate it into Fiji so that [MATLAB](/scripting/matlab) scripts can be executed just like all other ImageJ scripts, too.
 
@@ -202,14 +204,16 @@ It would be nice to have the opposite direction working, to call R from Fiji. As
 
 To overcome the typical problem of loading native libraries via System.loadLibrary() needing special platform-dependent settings, we should do something like this:
 
-    // prohibit JRI to call System.exit(1);
-    System.setProperty("jri.ignore.ule", "yes");
-    if (!Rengine.jriLoaded) {
-            // not found on the library path
-            System.load("/absolute/path/to/the/library");
-            Rengine.jriLoaded = true;
-    }
-    Rengine re = new Rengine();
+```java
+// prohibit JRI to call System.exit(1);
+System.setProperty("jri.ignore.ule", "yes");
+if (!Rengine.jriLoaded) {
+        // not found on the library path
+        System.load("/absolute/path/to/the/library");
+        Rengine.jriLoaded = true;
+}
+Rengine re = new Rengine();
+```
 
 ## Teach the Fiji Updater to accept other sites in addition to [fiji.sc](/contribute/funding)
 

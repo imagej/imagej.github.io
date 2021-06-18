@@ -41,21 +41,23 @@ FPBioimage Helper will set the XYZ voxel ratio from the image properties {% incl
 
 Copy the following macro to the bottom of the `Fiji/macros/StartupMacros.fiji.ijm` file to add a macro button for one-click uploading to FPBioimage.
 
-    macro "FPB Upload Action Tool - C111F00ffCeeeD21D24D71D81Dc1Dd1De1CfffL3137L393eL4161L4464D49D4bD4eD59D5bD5eD6aD6cD6dL9197D99D9bD9cDa1Da4Db1Db4DbbDc2Dc3DcaDccDdb" {
-        rW = getWidth();
-        rH = getHeight();
-        t = getTitle();
-        index = indexOf(t, ' ');
-        if (index>-1){t = substring(t, 0, index);}
-        index = indexOf(t, '.');
-        if (index>-1){t = substring(t, 0, index);}
+```javascript
+macro "FPB Upload Action Tool - C111F00ffCeeeD21D24D71D81Dc1Dd1De1CfffL3137L393eL4161L4464D49D4bD4eD59D5bD5eD6aD6cD6dL9197D99D9bD9cDa1Da4Db1Db4DbbDc2Dc3DcaDccDdb" {
+    rW = getWidth();
+    rH = getHeight();
+    t = getTitle();
+    index = indexOf(t, ' ');
+    if (index>-1){t = substring(t, 0, index);}
+    index = indexOf(t, '.');
+    if (index>-1){t = substring(t, 0, index);}
 
-        if (rW>500){rW = 499;}
-        if (rH>500){rH = 499;}
-        getVoxelSize(vW, vH, vD, x);
+    if (rW>500){rW = 499;}
+    if (rH>500){rH = 499;}
+    getVoxelSize(vW, vH, vD, x);
 
-        run("FPBioimage Helper", "unique=" + t + " x-voxel=" +vW + " y-voxel=" + vH + " z-voxel=" + vD + " x-resolution=" + rW + " y-resolution=" + rH + " upload");
-    }
+    run("FPBioimage Helper", "unique=" + t + " x-voxel=" +vW + " y-voxel=" + vH + " z-voxel=" + vD + " x-resolution=" + rW + " y-resolution=" + rH + " upload");
+}
+```
 
 ## Source code
 

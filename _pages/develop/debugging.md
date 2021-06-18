@@ -14,7 +14,7 @@ To debug problems with ImageJ, it is often helpful to launch it in debug mode. S
 
 # Debugging plugins in an IDE (Netbeans, IntelliJ, Eclipse, etc)
 
-To debug a plugin in an IDE, you most likely need to provide a *main()* method. To make things easier, we provide helper methods in *fiji-lib* in the class *fiji.Debug* to run plugins, and to load images and run filter plugins:
+To debug a plugin in an IDE, you most likely need to provide a `main()` method. To make things easier, we provide helper methods in `fiji-lib` in the class `fiji.Debug` to run plugins, and to load images and run filter plugins:
 
 ```java
 import fiji.Debug;
@@ -32,23 +32,27 @@ If your plugin is not a filter plugin, i.e. if it does not require an image to r
 
 ## Attaching to ImageJ instances
 
-Sometimes, we need to debug things directly in ImageJ, for example because there might be issues with the plugin discovery (ImageJ wants to find the plugins in *<ImageJ>/plugins/*, and often we want to bundle them as *.jar* files, both of which are incompatible with Eclipse debugging). JDWP (*Java Debug Wire Protocol*) to the rescue!
+Sometimes, we need to debug things directly in ImageJ, for example because there might be issues with the plugin discovery (ImageJ wants to find the plugins in `<ImageJ>/plugins/`, and often we want to bundle them as *.jar* files, both of which are incompatible with Eclipse debugging). JDWP (*Java Debug Wire Protocol*) to the rescue!
 
-After starting the Java Virtual Machine in a special mode, debuggers (such as Eclipse's built-in one) can attach to it. To start ImageJ in said mode, you need to pass the *--debugger=<port>* option:
+After starting the Java Virtual Machine in a special mode, debuggers (such as Eclipse's built-in one) can attach to it. To start ImageJ in said mode, you need to pass the `--debugger=<port>` option:
 
-    ImageJ.app/ImageJ-linux64 --debugger=8000
+```shell
+ImageJ.app/ImageJ-linux64 --debugger=8000
+```
 
 In Eclipse (or whatever {% include wikipedia title='JDWP' text='JDWP'%}-enabled debugger) select the correct project so that the source code can be found, mark the break-points where you want execution to halt (e.g. to inspect variables' values), and after clicking on *Run&gt;Debug Configurations...* right-click on the *Remote Java Application* item in the left-hand side list and select *New*. Now you only need to make sure that the port matches the value that you specified (in the example above, *8000*, Eclipse's default port number).
 
-If you require more control over the ImageJ side -- such as picking a semi-random port if port 8000 is already in use -- you can also use the *-agentlib:jdwp=...* Java option directly (*--debugger=<port>* is just a shortcut for convenience):
+If you require more control over the ImageJ side -- such as picking a semi-random port if port 8000 is already in use -- you can also use the `-agentlib:jdwp=...` Java option directly (*--debugger=<port>* is just a shortcut for convenience):
 
-    ImageJ.app/ImageJ-linux64 -agentlib:jdwp=server=y,suspend=y,transport=dt_socket,address=localhost:8000 --
+```
+ImageJ.app/ImageJ-linux64 -agentlib:jdwp=server=y,suspend=y,transport=dt_socket,address=localhost:8000 --
 
+```
 (the *--* marker separates the Java options -- if any -- from the ImageJ options). Once started that way, ImageJ will wait for the debugger to be attached, after printing a message such as:
 
 > Listening for transport dt\_socket at address: 46317
 
-**Note**: calling *imagej -agentlib:jdwp=help --* will print nice usage information with documentation of other JDWP options.
+**Note**: calling `imagej -agentlib:jdwp=help --` will print nice usage information with documentation of other JDWP options.
 
 ## Attach ImageJ to a waiting Eclipse
 
@@ -56,7 +60,9 @@ Instead of making ImageJ [the debugging server](#attaching-to-imagej-instances),
 
 In this case you start the debugging session first, e.g. in Eclipse debug configurations you specify "Standard (Socket Listen)" as the connection type. Then, simply start ImageJ without the "server=y" flag to connect and debug:
 
-    ImageJ.app/ImageJ-linux64 -agentlib:jdwp=suspend=y,transport=dt_socket,address=localhost:8000 --
+```shell
+ImageJ.app/ImageJ-linux64 -agentlib:jdwp=suspend=y,transport=dt_socket,address=localhost:8000 --
+```
 
 # Monitoring system calls
 
@@ -64,13 +70,17 @@ In this case you start the debugging session first, e.g. in Eclipse debug config
 
 On Linux, you should call ImageJ using the [strace command](http://www.linuxmanpages.com/man1/strace.1.php):
 
-    strace -Ffo syscall.log ./imagej <args>
+```shell
+strace -Ffo syscall.log ./imagej <args>
+```
 
 ## macOS
 
 Use the *dtruss* wrapper around [dtrace](http://developer.apple.com/documentation/Darwin/Reference/ManPages/man1/dtrace.1.html) to monitor system calls:
 
-    dtruss ./imagej <args>
+```shell
+dtruss ./imagej <args>
+```
 
 ## Windows
 
@@ -82,13 +92,17 @@ To monitor all kinds of aspects of processes on Windows, use [Sysinternal's Proc
 
 Set the *LD\_DEBUG* environment variable before launching ImageJ:
 
-    LD_DEBUG=1 ./imagej <args>
+```shell
+LD_DEBUG=1 ./imagej <args>
+```
 
 ## macOS
 
 Set the *DYLD\_PRINT\_APIS* environment variable before launching ImageJ:
 
-    DYLD_PRINT_APIS=1 ./imagej <args>
+```shell
+DYLD_PRINT_APIS=1 ./imagej <args>
+```
 
 ## Windows
 
@@ -102,8 +116,9 @@ When the Java VM hangs, the reason might be a dead-lock. Try taking a [stack tra
         jps
 
     from the command line to print a list of running Java processes. If you're not sure which PID is ImageJ's, you can close ImageJ, run `jps`, open ImageJ and run `jps` again. Whichever PID is present in the second run but not the first is ImageJ's. Then, to acquire a stack trace, just run:
-
-        jstack <ImageJ's PID>
+    ```shell
+    jstack <ImageJ's PID>
+	```
 2.  For GUI-based debugging, can also attach to the ImageJ PID using the `jvisualvm` program that you can find in `java/`<platform>`/`<jdk>`/bin/`. Here you can simply press a big *Thread Dump* button to view the stack trace.
     macOS users, please note that Apple decided that the VisualVM tool should no longer be shipped with the Java Development Kit; you will have to download it [from here](http://visualvm.java.net/download.html).
 
@@ -125,7 +140,9 @@ Typically when you debug a program that crashes, you start it in a debugger, to 
 
 But there is a very easy method to use gdb to inspect serious errors such as segmentation faults or trap signals nevertheless:
 
-    ./imagej -XX:OnError="gdb - %p" --
+```shell
+./imagej -XX:OnError="gdb - %p" --
+```
 
 ## Using lldb
 
@@ -135,21 +152,23 @@ On newer macOS versions, gdb has been replaced with lldb. For those familiar wit
 
 The Java virtual machine (JVM) frequently leaves files of the format *hs\_err\_pid<number>.log* in the current working directory after a crash. Such a file starts with a preamble similar to this:
 
-    #
-    # A fatal error has been detected by the Java Runtime Environment:
-    #
-    #  SIGSEGV (0xb) at pc=0x00007f3dc887dd8b, pid=12116, tid=139899447723792
-    #
-    # JRE version: 6.0_20-b02
-    # Java VM: Java HotSpot(TM) 64-Bit Server VM (16.3-b01 mixed mode linux-amd64 )
-    # Problematic frame:
-    # C  [libc.so.6+0x86d8b]  memcpy+0x15b
-    #
-    # If you would like to submit a bug report, please visit:
-    #   http://java.sun.com/webapps/bugreport/crash.jsp
-    # The crash happened outside the Java Virtual Machine in native code.
-    # See problematic frame for where to report the bug.
-    #
+```shell
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f3dc887dd8b, pid=12116, tid=139899447723792
+#
+# JRE version: 6.0_20-b02
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (16.3-b01 mixed mode linux-amd64 )
+# Problematic frame:
+# C  [libc.so.6+0x86d8b]  memcpy+0x15b
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+```
 
 followed by thread dumps and other useful information including the command-line arguments passed to the JVM.
 
@@ -159,17 +178,23 @@ The most important part is the line after the line *\# Problematic frame:* becau
 
 If the specific exception you're receiving (or you suspect) is an OutOfMemoryError, there are JVM flags that can be enabled when running ImageJ to help pinpoint the problem:
 
-    ./imagej -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/desired/path/
+```shell
+./imagej -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/desired/path/
+```
 
 The first option:
 
-    -XX:+HeapDumpOnOutOfMemoryError
+```shell
+-XX:+HeapDumpOnOutOfMemoryError
+```
 
 tells the JVM to create a heap dump (.hprof file) if an OutOfMemoryError is thrown. This is basically a snapshot of the JVM state when memory ran out.
 
 The second option:
 
-    -XX:HeapDumpPath=/desired/path/
+```shell
+-XX:HeapDumpPath=/desired/path/
+```
 
 is not required, but convenient for controlling where the resulting .hprof file is written. Note that these heap dumps are named by PID, and thus are not easily human distinguishable.
 
@@ -184,19 +209,18 @@ This requires two separate processes, ImageJ itself and the debugger. You can do
 Shell 1
 In the first shell, start ImageJ with special parameters to open a port (8000 in this case) to which jdb can connect afterwards:
 
-<!-- -->
-
-    ./imagej -Xdebug -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=y --
-
+```shell
+./imagej -Xdebug -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=y --
+```
 
 (Tested with Java 1.5.0, ymmv)
 
 Shell 2
 In the second shell, tell jdb to attach to that port:
 
-<!-- -->
-
-    jdb -attach 8000
+```shell
+jdb -attach 8000
+```
 
 ## This is an ultra quick start to jdb, the default Java debugger
 
@@ -318,13 +342,17 @@ On Linux, the output will be written to the file *.xsession-errors* in the home 
 
 On macOS, you need to remember that any application is just a directory with a special layout. So you can call ImageJ like this from the *Terminal* (which you will find in the Finder by clicking on *Go&gt;Utilities*. Example command line:
 
-    cd /Applications/ImageJ.app/Contents/MacOS/
-    cp ImageJ-macosx debug
-    ./debug
+```shell
+cd /Applications/ImageJ.app/Contents/MacOS/
+cp ImageJ-macosx debug
+./debug
+```
 
 ## Show Java3D debug messages
 
-    ./imagej -Dj3d.debug=true --
+```shell
+./imagej -Dj3d.debug=true --
+```
 
 (Of course, you need to substitute the *./imagej* executable name with the appropriate name for your platform.)
 
@@ -340,7 +368,9 @@ Further, some setups require enough RAM to be reserved, so you might need to pas
 
 You can control quite a few things in Java 3D through setting Java properties. Remember, you can set properties using a command line like this:
 
-    ./imagej -D<property-name>=<property-value> --
+```shell
+./imagej -D<property-name>=<property-value> --
+```
 
 where you substitute *<property-name>* and *<property-values>* appropriately. You can have more than one such option, but make sure that they are appearing before the *--* on the command line, otherwise ImageJ will mistake them for ImageJ options.
 
@@ -855,17 +885,23 @@ For users running Linux and MacOSX computers (or on Windows, [Cygwin](http://www
 
 The user should execute this command:
 
-    ssh -R 2222:127.0.0.1:22 -t $ACCOUNT@$SSHSERVER screen
+```shell
+ssh -R 2222:127.0.0.1:22 -t $ACCOUNT@$SSHSERVER screen
+```
 
 Once connected, the command
 
-    ssh -p 2222 $LOCALACCOUNT@127.0.0.1
+```shell
+ssh -p 2222 $LOCALACCOUNT@127.0.0.1
+```
 
 will open a connection back to the local machine.
 
 The developer should then execute this command:
 
-    ssh -t $ACCOUNT@$SSHSERVER 'screen -x'
+```shell
+ssh -t $ACCOUNT@$SSHSERVER 'screen -x'
+```
 
 Since this provides a shared [GNU screen](http://savannah.gnu.org/projects/screen/) session, both the user and the developer can execute commands and see the output. It is even quite common to use the terminal window as sort of a private chat room by typing out what you have to say, ending the line with a {% include key keys='Ctrl|C' %} (lest it get executed as a command).
 

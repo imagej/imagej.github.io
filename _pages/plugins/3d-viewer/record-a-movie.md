@@ -13,19 +13,20 @@ It is very easy to animate the virtual universe and to record the animation, so 
 
 The following lines show an easy example:
 
-        // Add the image as a volume
-        univ.addVoltex(imp);
+```
+// Add the image as a volume
+univ.addVoltex(imp);
 
 
-        // animate the universe
-        univ.startAnimation();
+// animate the universe
+univ.startAnimation();
 
 
-        // record a 360 degree rotation around the y-axis
-        ImagePlus movie = univ.record360();
-        movie.show();
-        univ.pauseAnimation();
-
+// record a 360 degree rotation around the y-axis
+ImagePlus movie = univ.record360();
+movie.show();
+univ.pauseAnimation();
+```
 The call to the universe's `record()` method returns an `ImagePlus`, which consists of a stack of successive frames of a full 360 degree animation.
 
 ImageJ provides methods to save such a stack for example as AVI file or as animated GIF.

@@ -40,33 +40,39 @@ In Imglib2, we require a little bit more than that. The data type you can use wi
 
 Before:
 
-    Upcycle       Sexting       Unfriend      Droolworthy   Noob          Muggle        
-    Woot          Po-po         Purple State  Guyliner      Screenager    Crunk         
-    Obvs          Mankini       Locavore      Bling         Textspeak     Muffin Top    
-    Infomania     Grrrl         Truthiness    Bromance      D'oh          Twitterati    
-    La-la Land    Whatevs       Illiterati    OMG           Hater         Jeggings      
-    Jean-Yves     Mini-Me       Chillax       Frankenfood   Totes         Whovian       
+```
+Upcycle       Sexting       Unfriend      Droolworthy   Noob          Muggle        
+Woot          Po-po         Purple State  Guyliner      Screenager    Crunk         
+Obvs          Mankini       Locavore      Bling         Textspeak     Muffin Top    
+Infomania     Grrrl         Truthiness    Bromance      D'oh          Twitterati    
+La-la Land    Whatevs       Illiterati    OMG           Hater         Jeggings      
+Jean-Yves     Mini-Me       Chillax       Frankenfood   Totes         Whovian       
 
+```
 After full dilation:
 
-    Upcycle       Upcycle       Upcycle       Unfriend      Unfriend      Noob          Noob          Muggle        
-    Woot          Woot          Woot          Unfriend      Unfriend      Screenager    Screenager    Muggle        
-    Woot          Woot          Woot          Unfriend      Unfriend      Textspeak     Textspeak     Muggle        
-    Woot          Woot          Woot          Truthiness    Truthiness    Twitterati    Twitterati    Twitterati    
-    Obvs          Whatevs       Whatevs       Whatevs       Truthiness    Twitterati    Twitterati    Twitterati    
-    La-la Land    Whatevs       Whatevs       Whatevs       Truthiness    Whovian       Whovian       Whovian       
-    La-la Land    Whatevs       Whatevs       Whatevs       Totes         Whovian       Whovian       Whovian       
-    Jean-Yves     Mini-Me       Mini-Me       Mini-Me       Totes         Whovian       Whovian       Whovian       
+```
+Upcycle       Upcycle       Upcycle       Unfriend      Unfriend      Noob          Noob          Muggle        
+Woot          Woot          Woot          Unfriend      Unfriend      Screenager    Screenager    Muggle        
+Woot          Woot          Woot          Unfriend      Unfriend      Textspeak     Textspeak     Muggle        
+Woot          Woot          Woot          Truthiness    Truthiness    Twitterati    Twitterati    Twitterati    
+Obvs          Whatevs       Whatevs       Whatevs       Truthiness    Twitterati    Twitterati    Twitterati    
+La-la Land    Whatevs       Whatevs       Whatevs       Truthiness    Whovian       Whovian       Whovian       
+La-la Land    Whatevs       Whatevs       Whatevs       Totes         Whovian       Whovian       Whovian       
+Jean-Yves     Mini-Me       Mini-Me       Mini-Me       Totes         Whovian       Whovian       Whovian       
 
+```
 After standard dilation:[^1]
 
-    Woot          Woot          Unfriend      Unfriend      Screenager    Screenager    
-    Woot          Woot          Unfriend      Unfriend      Textspeak     Textspeak     
-    Woot          Woot          Truthiness    Truthiness    Twitterati    Twitterati    
-    Whatevs       Whatevs       Whatevs       Truthiness    Twitterati    Twitterati    
-    Whatevs       Whatevs       Whatevs       Truthiness    Whovian       Whovian       
-    Whatevs       Whatevs       Whatevs       Totes         Whovian       Whovian       
+```
+Woot          Woot          Unfriend      Unfriend      Screenager    Screenager    
+Woot          Woot          Unfriend      Unfriend      Textspeak     Textspeak     
+Woot          Woot          Truthiness    Truthiness    Twitterati    Twitterati    
+Whatevs       Whatevs       Whatevs       Truthiness    Twitterati    Twitterati    
+Whatevs       Whatevs       Whatevs       Truthiness    Whovian       Whovian       
+Whatevs       Whatevs       Whatevs       Totes         Whovian       Whovian       
 
+```
 # Usage.
 
 The 4 basic operations are accessed through 4 classes:

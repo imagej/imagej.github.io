@@ -71,7 +71,7 @@ Use Macro function (ver2.3.1-)
 
 - Sample for opening images in a directory:
 
-````
+```java
 input = "D:/image/test/";
 
 list = getFileList(input);
@@ -79,11 +79,11 @@ for (i = 0; i < list.length; i++){
 	path = input + list[i];
 	run("Viewer", "open=[path]");
 }
-````
+```
 
 -    Sample for batch processing:
 
-````
+```java
 setBatchMode(true);
 
 input = "D:/image/test/";
@@ -95,46 +95,44 @@ for (i = 0; i < list.length; i++){
 	// process image e.g. "run("Smooth", "stack");"
 	saveAs("Tiff", "D:/image/test/out_" + i + ".tif");
 }
-````
-`
+```
+
 ### Use programming interface
 
 You can use programming interface by using *OVMacro* command.
 
 -   Sample for opening an image:
 
-````
+```java
 run("OVMacro");
 Ext.openFile("D:/image/test/test.oir");
-````
+```
 
 -   Sample for opening an image which has multiple groups or levels:
 
 
-````
+```java
 run("OVMacro");
 Ext.openFile("D:/image/test/test.vsi", 1, 2); // Open Group 2, Level 3
-````
+```
 
 -   Sample for opening images in a directory:
 
-````
+```java
 run("OVMacro");
 Ext.openFolder("D:/image/test"); // You can specify group and level like as openFile
-````
+```
 
 -   Sample for getting number of groups and levels:
 
-````
+```java
 run("OVMacro");
 path = "D:/image/test/test.vsi";
 Ext.getGroupCount(path, groupNum); // Get total count of groups
 Ext.getLevelCount(path, groupNum-1, levelNum); // Get total count of levels
 Ext.openFile(path, groupNum-1, levelNum-1); // Open last level of the last group
-````
+```
 
 ## See Also
 
 This plugin uses jai-imageio.
-
- 

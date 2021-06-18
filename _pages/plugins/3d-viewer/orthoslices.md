@@ -35,14 +35,16 @@ for(int i = 0; i &lt; 10; i++) {
 
 **Important methods of `OrthoGroup`**
 
-    public void setSlice(int axis, int v);
+```
+public void setSlice(int axis, int v);
 
-    public int getSlice(int axis);
+public int getSlice(int axis);
 
-    public void decrease(int axis);
+public void decrease(int axis);
 
-    public void increase(int axis);
+public void increase(int axis);
 
-    public boolean isVisible(int axis);
+public boolean isVisible(int axis);
 
-    public void setVisible(int axis, boolean b);
+public void setVisible(int axis, boolean b);
+```

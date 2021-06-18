@@ -48,13 +48,11 @@ The generalized diffusion coefficient value, $$D_q$$, must be consistent with AD
 Proposed IAD and AAD filters are based on iterative numerical algorithms for ADP. The method used to solve partial differential anomalous equations uses finite differences, of first and second order, when time and space becomes discrete, i.e. digital images. Both isotropic and anisotropic approaches were implemented through numerical differential operators using explicit numeric formulation, similar to classic anisotropic diffusion filter (purposed by Perona and Malik).
 
 Numerical approaches were implemented using differential operators in one dimension, and then rotated in eight angle directions with respect to the central reference pixel. We can express this rotation in follow equation.
-
+```
 $$
-
-`I_{\phi,t+1} = I_{\phi,t} + \lambda.\overrightarrow{\nabla} \Big[ D_q. \overrightarrow{\nabla} I_{\phi,t}^{2 - q} \Big]`
-
+    I_{\phi,t+1} = I_{\phi,t} + \lambda.\overrightarrow{\nabla} \Big[ D_q. \overrightarrow{\nabla} I_{\phi,t}^{2 - q} \Big]
 $$
-
+```
 Where $$I_{\phi,t}$$ and $$I_{\phi,t+1}$$ are the evaluated images in $$t_i$$ iterations, and $$I_{\phi,0}$$ is the original image. $$D_{q}$$ is the diffusion coefficient regulated by a power law with $$\textit{q}$$, and $$\phi$$ are the possible orientations with respect to the central pixel. The equation above assumes the time step is a constant ($$\lambda \propto \Delta t/\Delta x^2$$) and it depends on the numerical discretization. A careful time step determination plays an important role for numerical stability. The time step determination have a direct influence on the numeric discretization of the diffusion equation and here it follows the same assumptions made for the classical anisotropic diffusion algorithm. More details about the time step parameters and numerical stability can be found in [references section of the CSIM page](/orgs/csim-lab#publications).
 
 ## Filters parameters

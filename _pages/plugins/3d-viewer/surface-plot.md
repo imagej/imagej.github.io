@@ -15,15 +15,16 @@ Surface plots show a 2D image as a 3D plot, where the 3rd dimension is given by 
 
 Because only one slice of an image stack can be displayed a time, `SurfacePlot2D` offers a method to set the displayed slice:
 
-        // Add the image as a volume
-        Content c = univ.addSurfacePlot(imp);
+```java
+// Add the image as a volume
+Content c = univ.addSurfacePlot(imp);
 
 
-        // Retrieve the SurfacePlotGroup
-        SurfacePlotGroup splot = (SurfacePlotGroup)c.getContent();
+// Retrieve the SurfacePlotGroup
+SurfacePlotGroup splot = (SurfacePlotGroup)c.getContent();
 
-        // Scroll through the slices
-        for(int i = 0; i &lt; 15; i++) {
-            splot.setSlice(i + 1);
-
-        }
+// Scroll through the slices
+for(int i = 0; i &lt; 15; i++) {
+	splot.setSlice(i + 1);
+}
+```

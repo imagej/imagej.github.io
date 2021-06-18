@@ -12,12 +12,14 @@ Most of the links on the site have been updated accordingly, but any old links s
 
 Those who have the code checked out from Subversion will need to run:
 
-    svn switch --relocate http://dev.imagejdev.org/svn/imagej http://code.imagej.net/svn/imagej
-
+```shell
+svn switch --relocate http://dev.imagejdev.org/svn/imagej http://code.imagej.net/svn/imagej
+```
 Or if you have cloned the Git mirror:
 
-    git remote set-url origin git://code.imagej.net/imagej.git
-
+```shell
+git remote set-url origin git://code.imagej.net/imagej.git
+```
 We hope the new domain is less confusing and easier to remember!
 
  

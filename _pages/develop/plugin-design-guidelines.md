@@ -2,9 +2,7 @@
 title: PlugIn Design Guidelines
 ---
 
-
 {% include warning/outdated %}
-
 
 ## Key concepts
 
@@ -22,82 +20,86 @@ If possible, provide a method that leaves the validation to the caller, and that
 
 If you cannot use a *GenericDialog* for input for some reason, make your code scriptable by providing *static* methods with *String* parameters (so they can be called via the *call()* macro function), and insert code like this into the <u>interactive</u> (i.e. the *run* method, not the methods that are called from macros, scripts or other plugins) parts of the code:
 
-    if (Recorder.record) {
-            String command = "call(\"Duplicate_and_Scale.duplicateAndScale\", \"Scaled\");";
-            Recorder.recordString(command);
-    }
+```java
+if (Recorder.record) {
+        String command = "call(\"Duplicate_and_Scale.duplicateAndScale\", \"Scaled\");";
+        Recorder.recordString(command);
+}
+```
 
 ## Example java plugin
 
 For example, a plugin that duplicates and scales an image:
 
-    /* Paste into the Script Editor, or save as Duplicate_and_Scale.java into the plugins folder */
-    import ij.plugin.PlugIn;
-    import ij.IJ;
-    import ij.ImagePlus;
-    import ij.gui.GenericDialog;
-    import ij.process.ImageProcessor;
+```java
+/* Paste into the Script Editor, or save as Duplicate_and_Scale.java into the plugins folder */
+import ij.plugin.PlugIn;
+import ij.IJ;
+import ij.ImagePlus;
+import ij.gui.GenericDialog;
+import ij.process.ImageProcessor;
 
-    /** Duplicate and scale the current image. */
-    public class Duplicate_and_Scale implements PlugIn {
+/** Duplicate and scale the current image. */
+public class Duplicate_and_Scale implements PlugIn {
 
-        /** Ask for parameters and then execute.*/
-        public void run(String arg) {
-            // 1 - Obtain the currently active image:
-            ImagePlus imp = IJ.getImage();
-            if (null == imp) return;
+    /** Ask for parameters and then execute.*/
+    public void run(String arg) {
+        // 1 - Obtain the currently active image:
+        ImagePlus imp = IJ.getImage();
+        if (null == imp) return;
 
-            // 2 - Ask for parameters:
-            GenericDialog gd = new GenericDialog("Scale");
-            gd.addNumericField("width:", imp.getWidth(), 0);
-            gd.addNumericField("height:", imp.getHeight(), 0);
-            gd.addStringField("name:", imp.getTitle());
-            gd.showDialog();
-            if (gd.wasCanceled()) return;
+        // 2 - Ask for parameters:
+        GenericDialog gd = new GenericDialog("Scale");
+        gd.addNumericField("width:", imp.getWidth(), 0);
+        gd.addNumericField("height:", imp.getHeight(), 0);
+        gd.addStringField("name:", imp.getTitle());
+        gd.showDialog();
+        if (gd.wasCanceled()) return;
 
-            // 3 - Retrieve parameters from the dialog
-            int width = (int)gd.getNextNumber();
-            int height = (int)gd.getNextNumber();
-            String name = gd.getNextString();
+        // 3 - Retrieve parameters from the dialog
+        int width = (int)gd.getNextNumber();
+        int height = (int)gd.getNextNumber();
+        String name = gd.getNextString();
 
-            // 4 - Execute!
-            Object[] result = exec(imp, name, width, height);
+        // 4 - Execute!
+        Object[] result = exec(imp, name, width, height);
 
-            // 5 - If all went well, show the image:
-            if (null != result) {
-                ImagePlus scaled = (ImagePlus) result[1];
-                scaled.show();
-            }
-        }
-
-        /**
-            * Execute the plugin functionality: duplicate and scale the given image.
-            * @return an Object[] array with the name and the scaled ImagePlus.
-            * Does NOT show the new, scaled image; just returns it.
-            */
-        public Object[] exec(ImagePlus imp, String newName, int width, int height) {
-            // 0 - Check validity of parameters
-            if (null == imp) return null;
-            if (width <= 0 || height <= 0) return null;
-            if (null == newName) newName = imp.getTitle();
-
-            // 1 - Perform the duplication and resizing
-            ImagePlus scaled = duplicateAndScale(imp, newName, width, height);
-
-            // 2 - Return the new name and the scaled image
-            return new Object[]{newName, scaled};
-        }
-
-        /**
-            * Execute the plugin functionality: duplicate and scale the given image, without validation.
-            * @return the scaled ImagePlus.
-            * Does NOT show the new, scaled image; just returns it.
-            */
-        public static ImagePlus duplicateAndScale(ImagePlus imp, String newName, int width, int height) {
-            ImageProcessor ip = imp.getProcessor().resize(width, height);
-            return new ImagePlus(newName, ip);
+        // 5 - If all went well, show the image:
+        if (null != result) {
+            ImagePlus scaled = (ImagePlus) result[1];
+            scaled.show();
         }
     }
+
+    /**
+        * Execute the plugin functionality: duplicate and scale the given image.
+        * @return an Object[] array with the name and the scaled ImagePlus.
+        * Does NOT show the new, scaled image; just returns it.
+        */
+    public Object[] exec(ImagePlus imp, String newName, int width, int height) {
+        // 0 - Check validity of parameters
+        if (null == imp) return null;
+        if (width <= 0 || height <= 0) return null;
+        if (null == newName) newName = imp.getTitle();
+
+        // 1 - Perform the duplication and resizing
+        ImagePlus scaled = duplicateAndScale(imp, newName, width, height);
+
+        // 2 - Return the new name and the scaled image
+        return new Object[]{newName, scaled};
+    }
+
+    /**
+        * Execute the plugin functionality: duplicate and scale the given image, without validation.
+        * @return the scaled ImagePlus.
+        * Does NOT show the new, scaled image; just returns it.
+        */
+    public static ImagePlus duplicateAndScale(ImagePlus imp, String newName, int width, int height) {
+        ImageProcessor ip = imp.getProcessor().resize(width, height);
+        return new ImagePlus(newName, ip);
+    }
+}
+```
 
 ## Compiling the plugin
 
@@ -115,9 +117,9 @@ To compile the plugin, you have several options:
 -   Call {% include bc path='Plugins | Compile and Run'%} and specify the where you saved the file.
 -   Compile it from a terminal with
 
-<!-- -->
-
-    ./fiji --javac plugins/Duplicate_and_Scale.java
+```java
+./fiji --javac plugins/Duplicate_and_Scale.java
+```
 
 For this to work, you have to save the java file into the *plugins/* directory, or you have to copy the class files into said directory after compilation. For the plugin to appear in the *Plugins* menu, you have to call {% include bc path='Help | Refresh Menus'%}, or to restart Fiji.
 
@@ -130,44 +132,48 @@ Otherwise, after {% include bc path='Help | Refresh Menus'%}, or a Fiji restart,
 ### From a macro
 
 To run the plugin from a macro, do:
-
-`IJ.run("Duplicate and Scale", "name=[scaled copy] width=500 height=700");`
+```java
+IJ.run("Duplicate and Scale", "name=[scaled copy] width=500 height=700");
+```
 
 ### From a java plugin
 
 To run the plugin from another java plugin, do:
 
-    ImagePlus source = ...; // any image
+```java
+ImagePlus source = ...; // any image
 
-    Duplicate_and_Scale das = new Duplicate_and_Scale();
-    Object[] result = das.exec(source, "Scaled Copy", 500, 700);
-    if (null != result) {
-        String name = (String) result[0];
-        ImagePlus scaled = (ImagePlus) result[1];
-    }
+Duplicate_and_Scale das = new Duplicate_and_Scale();
+Object[] result = das.exec(source, "Scaled Copy", 500, 700);
+if (null != result) {
+	String name = (String) result[0];
+	ImagePlus scaled = (ImagePlus) result[1];
+}
+```
 
 or use the static method:
-
-    ImagePlus source = ...; // any image
-    ImagePlus scaled = Duplicate_and_Scale.duplicateAndScale(source, 500, 700);
+```java
+ImagePlus source = ...; // any image
+ImagePlus scaled = Duplicate_and_Scale.duplicateAndScale(source, 500, 700);
+```
 
 ### From javascript
 
 To run the plugin from a javascript, do:
-
-    var source = ...; // any image
-    var das = new Duplicate_and_Scale();
-    var result = das.exec(source, "Scaled Copy", 500, 700);
-    if (result) {
-        var name = result[0];
-        var imp = result[1];
-    }
-
+```javascript
+var source = ...; // any image
+var das = new Duplicate_and_Scale();
+var result = das.exec(source, "Scaled Copy", 500, 700);
+if (result) {
+	var name = result[0];
+	var imp = result[1];
+}
+```
 As a special case, since the above example plugin needs only one image, we can provide such image semidirectly with the new Thread-safe current image concept. Keep in mind that then the plugin will show the new scaled image, not return it!
 
+```javascript
     var source = ...; // any image
     IJ.run(source, "Duplicate and Scale", "name=[scaled copy] width=500 height=700");
+```
 
 Above, ImageJ's macro system provides the <i>source</i> image as the return value of the IJ.getImage() call within the plugin's <i>run</i> method. Then, the macro arguments are fed directly into the GenericDialog entries of the same name, and the rest of the *run* method calls the *exec* method without ever showing the dialog.
-
-  

@@ -13,50 +13,60 @@ Each `Content` owns a list of named points, which may e.g. be used to mark speci
 
 The following example shows how to retrieve the point list of a `Content` and add a few points:
 
-        // Add the image as a volume
-        Content c = univ.addVoltex(imp);
+```java
+// Add the image as a volume
+Content c = univ.addVoltex(imp);
 
 
-        // Make the point list visible
-        c.showPointList(true);
+// Make the point list visible
+c.showPointList(true);
 
-        // Retrieve the point list
-        PointList pl = c.getPointList();
+// Retrieve the point list
+PointList pl = c.getPointList();
 
-        // Add a few points
-        pl.add(190, 450, 170);
+// Add a few points
+pl.add(190, 450, 170);
 
-        pl.add(330, 370, 300);
+pl.add(330, 370, 300);
 
-        pl.add(430, 90, 150);
+pl.add(430, 90, 150);
+```
 
 The coordinates specified to create a new point are local coordinates of the corresponding `Content`.
 
 Sometimes, it's convenient to select a point on the surface of a `Content` at a specific canvas position. This is also possible, by using the `Picker` class. A reference to a `Picker` object can be obtained from the universe:
 
-        // Add a point at a specific canvas position
-        univ.getPicker().addPoint(c, 256, 256);
-
+```java
+// Add a point at a specific canvas position
+univ.getPicker().addPoint(c, 256, 256);
+```
 The points have a default size, which can be changed:
 
-        // Change the size of the points
-        float curr = c.getLandmarkPointSize();
-        c.setLandmarkPointSize(curr * 2);
+```java
+// Change the size of the points
+float curr = c.getLandmarkPointSize();
+c.setLandmarkPointSize(curr * 2);
+```
 
 To delete the first point in the list;
 
-        // delete the first point
-        pl.remove(0);
+```java
+// delete the first point
+pl.remove(0);
+```
 
 To rename a point:
 
-        // rename the now first point
-        pl.rename(pl.get(0), "newName");
-
+```java
+// rename the now first point
+pl.rename(pl.get(0), "newName");
+```
 To change the position of a point:
 
-        // change the position of the now first point
-        pl.placePoint(pl.get(0), 190, 450, 170);
+```java
+// change the position of the now first point
+pl.placePoint(pl.get(0), 190, 450, 170);
+```
 
 ### Important methods regarding landmark points
 

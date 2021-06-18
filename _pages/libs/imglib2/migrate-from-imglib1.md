@@ -40,8 +40,10 @@ In addition, core methods for querying dimensional lengths have changed names:
 
 For dimensions(long\[\]), note that it only populates an existing array. There is no method to allocate and return a new dimensional array. Instead, use the following code:
 
-    final long[] dims = new long[img.numDimensions()];
-    img.dimensions(dims);
+```java
+final long[] dims = new long[img.numDimensions()];
+img.dimensions(dims);
+```
 
 ## Remove references to Container and ContainerFactory
 
@@ -63,11 +65,13 @@ Out of bounds access is now handled differently. Previously you could pass an ou
 
 Here is an example:
 
-    ExtendedRandomAccessibleInterval< IntType, Img< IntType> > extendedInterval =
-      new ExtendedRandomAccessibleInterval< IntType, Img< IntType > >(
-          myIntImg,
-          new OutOfBoundsMirrorFactory< IntType, Img< IntType > >( Boundary.DOUBLE ) );
-    RandomAccess< IntType > randomAccess = extendedInterval.randomAccess();
+```java
+ExtendedRandomAccessibleInterval< IntType, Img< IntType> > extendedInterval =
+  new ExtendedRandomAccessibleInterval< IntType, Img< IntType > >(
+      myIntImg,
+      new OutOfBoundsMirrorFactory< IntType, Img< IntType > >( Boundary.DOUBLE ) );
+RandomAccess< IntType > randomAccess = extendedInterval.randomAccess();
+```
 
 ## Rename RGBLegacyType to ARGBType
 

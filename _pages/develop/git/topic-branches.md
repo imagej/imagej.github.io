@@ -3,7 +3,6 @@ title: Git topic branches
 section: Extend:Development:Git
 ---
 
-
 Often you want to try some new idea, or work on some new feature, without interfering with the master branch. That is where topic branches come in. You can easily switch back and forth between branches, so that you do not need to contribute a new feature with one big "monster" commit.
 
 If you want to try something that might not work out, and you do not want anybody to know in such a case, you can keep the topic branches local.
@@ -12,11 +11,15 @@ If you want to try something that might not work out, and you do not want anybod
 
 You can create a topic branch from any starting point like this:
 
-`$ git checkout -b new-branch branch-point`
+```shell
+$ git checkout -b new-branch branch-point
+```
 
 The argument *branch-point* can be any commit, or tag. If you want to branch off from the current HEAD, you do not need to pass the argument at all:
 
-`$ git checkout -b topic1`
+```shell
+$ git checkout -b topic1
+```
 
 **Note**: if you want to start a new branch from a remote (AKA tracking) branch, this command will also set up default merge to be from that remote with that branch:
 
@@ -32,7 +35,7 @@ will pull the branch *fake2* from *origin* into the current (*fake2*) branch.
 
 To switch from the current branch to another, first make sure that you have committed (or stashed) everything, and then call
 
-`$ git checkout other-branch`
+$ git checkout other-branch
 
 This will switch to another branch (which now becomes your HEAD), and update the working directory. Note: only the tracked files will be updated; the untracked files will be untouched.
 
@@ -40,7 +43,7 @@ This will switch to another branch (which now becomes your HEAD), and update the
 
 If you have a single commit on another branch that you would like to have in the current branch, use
 
-`$ git cherry-pick other-branch~2`
+$ git cherry-pick other-branch~2
 
 In this example, the third-last commit (the 2nd order ancestor) of other-branch's tip was referenced.
 
@@ -101,7 +104,7 @@ after merge:
 
 after rebase:
 
-`- A - B - C - D - master - E' - F' - G' - topic234`
+- A - B - C - D - master - E' - F' - G' - topic234
 
 In other words, all the commits in topic234 were rewritten as if they were created on top of the current tip of the *master* branch.
 
@@ -136,11 +139,13 @@ deadbee... fixup! Add Fake, a specialized yet simple substitute for 'make'
 
 where `0470894` is the tip of the *master* branch, and *deadbee* fixes some severe issue in the commit `e0acf90`, that should not have been committed as is.
 
+```
 Note that the *fixup!* commit can be made easily by calling `git commit --fixup <commit-to-fixup>`.
 
 To reorder the commits and merge the two commits (*squash* in Git terminology, as *merge* already means to merge branches), call
 
-`$ git rebase -i --autosquash master`
+```
+$ git rebase -i --autosquash master
 
 This will fire up an editor with a list of commits to be applied on top of *master*:
 
@@ -154,30 +159,34 @@ Note that the *autosquash* mode interpreted the special commit message of the fi
 
 Save that, and exit the editor. The rebase will be started and amend the first commit with the fixup commit.
 
+```
 Note: If you want to default to the *autosquash* mode, you can tell Git so: `git config --global rebase.autosquash true` (you only need to do this once).
 
 Note: as with cherry-picking and merging, conflicts can arise. You will [have to resolve them](/develop/git/conflicts), `git add` the resolved files, but you do not need to commit; calling
 
-`$ git rebase --continue`
+```
+$ git rebase --continue
 
 will pick up the changes, apply the correct commit author and message, and fire up an editor for you to verify the contents. As before, save and exit, and the rebase will continue.
 
 ## Aborting an interactive rebase
 
+```
 Sometimes you realize by the sheer size of the list of commits that you made a mistake, and do not want to rebase after all. As with `git commit`, just delete the *complete* list, and the interactive rebase will be aborted.
 
 Even at later stages, e.g. when you have a huge conflict and would prefer to go back and merge instead of rebase, you can abort the rebase. Just call
 
-`$ git rebase --abort`
+```
 
+```shell
+$ git rebase --abort
+```
 and Git will bring you back to where you were before you started the rebase.
 
 ## Reflogs and rebases
 
 A rebase will work on a *detached* HEAD. In other words, while the rebase is in progress, no branch will be updated, but a temporary branch will grow, and only when the rebase is finished successfully, the originally current branch will be updated.
 
-This means that you can refer to the state \_before\_ the rebase by "branch-name@{1}" (see [Git\_reflogs](/develop/git/reflogs)).
+This means that you can refer to the state \_before\_ the rebase by `branch-name@{1}` (see [Git\_reflogs](/develop/git/reflogs)).
 
-Note: the same is not true for "HEAD@{1}": the reflog for "HEAD" follows every single revision that was current at some stage in the repository.
-
-
+Note: the same is not true for `HEAD@{1}`: the reflog for "HEAD" follows every single revision that was current at some stage in the repository.

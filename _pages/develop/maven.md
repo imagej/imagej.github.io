@@ -39,35 +39,37 @@ Many convenient [IDEs](/develop/ides) (integrated development environments) incl
 
 All it really takes is a *pom.xml* file and a certain directory structure:
 
-    pom.xml
-    src/
-       main/
-           java/
-               <package>/
-                        <name>.java
-                        ...
-           resources/
+```xml
+pom.xml
+src/
+   main/
+       java/
+           <package>/
+                    <name>.java
+                    ...
+       resources/
                     <other-files>
                     ...
+```
 
 Technically, you can override the default directory layout in the *pom.xml*, but why do so? It only breaks expectations and is more hassle than it is worth, really.
 
 So the directory structure is: you put your .java files under *src/main/java/* and the other files you need to be included into *src/main/resources/*. Should you want to apply the best practices called "regression tests" or even "test-driven development": your tests' *.java* files go to *src/test/java/* and the non-*.java* files you might require unsurprisingly go into *src/test/resources/*.
 
 So what does a *pom.xml* look like? This is a very simple example:
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+	http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
 
-    <?xml version="1.0" encoding="UTF-8"?>
-    <project xmlns="http://maven.apache.org/POM/4.0.0"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-        http://maven.apache.org/xsd/maven-4.0.0.xsd">
-      <modelVersion>4.0.0</modelVersion>
-
-      <groupId>org.mywebsite</groupId>
-      <artifactId>my-uber-library</artifactId>
-      <version>2.0.0-SNAPSHOT</version>
-    </project>
-
+  <groupId>org.mywebsite</groupId>
+  <artifactId>my-uber-library</artifactId>
+  <version>2.0.0-SNAPSHOT</version>
+</project>
+```
 The first 6 lines are of course just a way to say "Hi, Maven? How are you today? This is what I would like you to do...".
 
 The only relevant parts are the *groupId*, which by convention is something like the inverted domain name (similar to the Java package convention), the name of the artifact to build (it will be put into *target/*, under the name *<artifactId>-<version>.jar*). And of course the version.
@@ -77,15 +79,15 @@ The only relevant parts are the *groupId*, which by convention is something like
 Maven is not only a build tool, but also a dependency management tool.
 
 To depend on another library, you must declare the dependencies in your project's *pom.xml* file. For example, every [ImageJ 1.x](/software/imagej-1.x) plugin will depend on ImageJ 1.x. So let's add that (before the final *</project>* line):
-
-    <dependencies>
-      <dependency>
-        <groupId>net.imagej</groupId>
-        <artifactId>ij</artifactId>
-        <version>1.45b</version>
-      </dependency>
-    </dependencies>
-
+```xml
+<dependencies>
+  <dependency>
+	<groupId>net.imagej</groupId>
+	<artifactId>ij</artifactId>
+	<version>1.45b</version>
+  </dependency>
+</dependencies>
+```
 As you can see, dependencies are referenced using the same *groupId*, *artifactId* and *version* triplet (also known as *GAV parameters*) that you declared for your project itself.
 
 ## Repositories
@@ -96,12 +98,14 @@ Out of the box, Maven will look in the so-called [Maven Central repository](http
 
 However, many other SciJava and ImageJ components are not yet deployed to Maven Central, but instead to the [SciJava Maven repository](/develop/project-management#maven). To gain access to this repository from your project, add the following configuration block to your *pom.xml*:
 
-    <repositories>
-      <repository>
-        <id>scijava.public</id>
-        <url>https://maven.scijava.org/content/groups/public</url>
-      </repository>
-    </repositories>
+```xml
+<repositories>
+  <repository>
+	<id>scijava.public</id>
+	<url>https://maven.scijava.org/content/groups/public</url>
+  </repository>
+</repositories>
+```
 
 As a rule of thumb: components [versioned at 0.x](/develop/versioning) are deployed to the SciJava Maven repository, while those at 1.x or later are deployed to Maven Central.
 
@@ -111,7 +115,7 @@ There are two different sorts of Maven artifacts (i.e., JAR files): releases and
 
 ## Producing multiple JAR files
 
-So what if you have multiple *.jar* files you want to build in the same project? Then these need to live in their own subdirectories and there needs to be a common parent POM, a so-called *aggregator* or *multi-module* POM (only this POM needs to have the SciJava POM as parent, of course). {% include github org='imagej' repo='tutorials' tag='577286474be8399eb38d30d66cf0c35ee50bd929' path='pom.xml\#L47-L62' label='Here is an example' %}. Basically, it is adding the <packaging>`pom`</packaging> entry at the top, as well as some subdirectory names to the <modules> section.
+So what if you have multiple `.jar` files you want to build in the same project? Then these need to live in their own subdirectories and there needs to be a common parent POM, a so-called *aggregator* or *multi-module* POM (only this POM needs to have the SciJava POM as parent, of course). {% include github org='imagej' repo='tutorials' tag='577286474be8399eb38d30d66cf0c35ee50bd929' path='pom.xml\#L47-L62' label='Here is an example' %}. Basically, it is adding the <packaging>`pom`</packaging> entry at the top, as well as some subdirectory names to the <modules> section.
 
 Note, however, that most projects of the [SciJava component collection](/develop/architecture) (e.g., [SciJava](/libs/scijava), [ImgLib2](/libs/imglib2), [SCIFIO](/libs/scifio), [ImageJ](/software/imagej) and [Fiji](/software/fiji)) now structure each component as its own single-module project in its own Git repository, since using multi-module projects can complicate versioning.
 
@@ -119,9 +123,9 @@ Note, however, that most projects of the [SciJava component collection](/develop
 
 There are many more things you can do with Maven, but chances are you will not need them.
 
-The simplicity of the *pom.xml* you need comes from the fact that Maven defines implicit defaults. It calls that *convention over configuration*. For many reasons, it is strongly recommended to stay with the defaults as much as possible.
+The simplicity of the `pom.xml` you need comes from the fact that Maven defines implicit defaults. It calls that *convention over configuration*. For many reasons, it is strongly recommended to stay with the defaults as much as possible.
 
-In the context of [SciJava](/libs/scijava), you will most likely never write a *pom.xml* from scratch. You will rather more likely edit an existing one, possibly after having copied it. We recommend using the [ImageJ "Load and Display a Dataset" tutorial](https://github.com/imagej/tutorials/tree/master/maven-projects/load-and-display-dataset) as a starting point.
+In the context of [SciJava](/libs/scijava), you will most likely never write a `pom.xml` from scratch. You will rather more likely edit an existing one, possibly after having copied it. We recommend using the [ImageJ "Load and Display a Dataset" tutorial](https://github.com/imagej/tutorials/tree/master/maven-projects/load-and-display-dataset) as a starting point.
 
 # How to find a dependency's groupId/artifactId/version (GAV)?
 
@@ -141,13 +145,11 @@ If there are no public repositories containing your dependency, you have two opt
 
 -   If the dependency is itself an ImageJ plugin, consider [contributing it to Fiji](/contribute/fiji). Plugins distributed with Fiji are [made available as Maven artifacts](/contribute/fiji#maven-artifacts), and thus will benefit both users and developers.
 
-<!-- -->
-
 -   If the dependency is narrower in scope, you could [contact the ImageJ & Fiji maintainers](/discuss/mailing-lists) to get your needed dependency added to the SciJava Maven repository. Note that you will then be responsible for distributing the dependency with your code—so ensure it is [licensed appropriately](/licensing).
 
 Finally, for local testing you can [install the dependency into your local Maven repository cache yourself](https://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html). The command is `mvn install:install-file`. For example, if you have a library `foo.jar` to install, you could run:
 
-```
+```shell
 mvn install:install-file -Dfile=/path/to/foo.jar -DgroupId=org.foo -DartifactId=foo -Dversion=1.0.0 -Dpackaging=jar
 ```
 
@@ -163,5 +165,3 @@ When in doubt, [contact the community](/discuss) with your questions.
 -   [Maven's Getting Started](https://maven.apache.org/guides/getting-started/)
 -   [Maven: The Complete Reference](https://books.sonatype.com/mvnref-book/reference/index.html)
 -   [Maven by Example](https://books.sonatype.com/mvnex-book/reference/index.html)
-
- 

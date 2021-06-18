@@ -30,10 +30,12 @@ In Fiji, if you write macros and plugins that rely on some functionalities provi
 This uses the update site service.  
 Example in Jython.
 
-    #@ UpdateService updateService
+```python
+#@ UpdateService updateService
 
-    if not updateService.getUpdateSite("Fiji-Legacy").isActive():
-        print "Please activate the Fiji-legacy update site"
+if not updateService.getUpdateSite("Fiji-Legacy").isActive():
+    print "Please activate the Fiji-legacy update site"
+```
 
 ## Creating your own update site
 

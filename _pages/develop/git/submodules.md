@@ -3,10 +3,7 @@ title: Git submodule tutorial
 section: Extend:Development:Git
 ---
 
-
-
 {% include warning/outdated %}
-
 
 ## Submodules in Fiji
 
@@ -26,14 +23,14 @@ However, to work with a submodule you must clone that repository. See the [Submo
 
 The usual sequence of commands when working inside a submodule:
 
-```
+```shell
 ~/fiji$ cd TrakEM2
 ~/fiji/plugins/trakem2$ git status
 ```
 
 Say you observe some unstaged changes. Just add and commit them:
 
-```
+```shell
 ~/fiji/plugins/trakem2$ git add path/to/some_file.java
 ~/fiji/plugins/trakem2$ git commit
 ```
@@ -42,7 +39,7 @@ You can work as much as you like inside the submodule, and if you have something
 
 Then move up and add the current revision of the submodule inside fiji.
 
-```
+```shell
 ~/fiji/plugins/trakem2$ git push
 ~/fiji/plugins/trakem2$ cd ..
 ~/fiji$ git add TrakEM2
@@ -55,7 +52,7 @@ After the above, fiji has been updated to track the latest TrakEM2 commit.
 
 When happy with the arrangement, push the changes to the shared repository for others to see them. Remember to push both separately: the submodule and fiji's repository itself! If you push <b>only</b> fiji, then whoever pulls fiji will not see the new HEAD of the submodule branch, which will result in an error.
 
-```
+```shell
 ~/fiji$ cd TrakEM2/
 ~/fiji/plugins/trakem2$ git push
 ~/fiji/plugins/trakem2$ cd ..
@@ -189,7 +186,9 @@ Most of the time you do not want to have the newest coolest version of the submo
 
 Now
 
-`git submodule update`
+```shell
+git submodule update
+```
 
 sets the submodule to the commit that is saved with the commit of fiji. Whereas
 
@@ -201,5 +200,3 @@ git pull
 actually gives you the newest hottest version of that submodule, that is potentially not even compiling with your current status of fiji.
 
 So what happens if I do "git submodule update", but in the submodule I am on an experimental branch, that is not valid for the superproject? This will set the submodule to the status valid for your current fiji commit, if you are not on the branch specified, it will detach the HEAD you are on. This means you will be on a no-name branch in the submodule now (for this to work you must not have any uncommited changes in the submodule branch you were on before)
-
-

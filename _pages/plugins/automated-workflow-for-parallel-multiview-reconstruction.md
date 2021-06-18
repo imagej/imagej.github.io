@@ -50,25 +50,25 @@ We map and dispatch the workflow logic either on a single machine or on a HPC cl
 
 The current workflow consists of the following steps. It covers the prinicipal processing for timelapse multiview SPIM processing:
 
-1\. define czi or tif dataset.
+1. define czi or tif dataset.
 
-2\. resave into hdf5.
+2. resave into hdf5.
 
-3\. detect and register interest points.
+3. detect and register interest points.
 
-4\. merge xml, creates XML for registered dataset.
+4. merge xml, creates XML for registered dataset.
 
-5\. timelapse registration.
+5. timelapse registration.
 
-6\. optional for dual channel dataset: duplicate transformations
+6. optional for dual channel dataset: duplicate transformations
 
-7\. optional for deconvolution: external transformation
+7. optional for deconvolution: external transformation
 
-8\. average-weight fusion/deconvolution
+8. average-weight fusion/deconvolution
 
-9\. define output
+9. define output
 
-10\. resave output into hdf5, creates XML for fused dataset.
+10. resave output into hdf5, creates XML for fused dataset.
 
 # Supported datasets
 
@@ -178,8 +178,10 @@ The *master\_preprocessing.sh* file is the configuration script that contains th
 
 The cluster tools directory contains the libraries for GPU deconvolution and the virtual frame buffer (xvfb) for running Fiji headless.
 
-    libFourierConvolutionCUDALib.so
-    xvfb-run
+```shell
+libFourierConvolutionCUDALib.so
+xvfb-run
+```
 
 ## sysconfcpus
 

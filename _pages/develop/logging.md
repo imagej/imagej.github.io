@@ -69,20 +69,23 @@ If you are using the standard SciJava `LogService` implementation, you can contr
 
 E.g., in Java code:
 
-    System.setProperty("scijava.log.level", "debug");
-
+```java
+System.setProperty("scijava.log.level", "debug");
+```
 Or via the command line:
 
-    java -Dscijava.log.level=debug ... myorg.MyMainClass
+```java
+java -Dscijava.log.level=debug ... myorg.MyMainClass
+```
 
 You can even customize the logging behavior per package/class hierarchy. For example, to switch on debug level logging for classes in the `org.scijava.plugin` package and subpackages only:
 
-    System.setProperty("scijava.log.level:org.scijava.plugin", "debug");
+```java
+System.setProperty("scijava.log.level:org.scijava.plugin", "debug");
+```
 
 If you prefer environment variables, setting the `DEBUG` environment variable will cause SciJava logging to default to **`DEBUG`** level instead of the usual **`WARN`**.
 
 ## Using the LogService from your code
 
 The `LogService` is accessible from a SciJava plugin in the same way as any other [service](/libs/scijava#scijava-common#services): as a field annotated with `@Parameter`. See the [Writing plugins](/develop/plugins) guide for details.
-
-

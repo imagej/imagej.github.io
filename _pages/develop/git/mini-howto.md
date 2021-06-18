@@ -11,7 +11,7 @@ Most of these explanations are meant for the command line users.
 
 ## Nomenclature
 
-A quick note on the nomenclature: *fiji.git* refers to the "official" repository on [1](https://github.com/fiji/fiji.git). After cloning it, you will have a local repository with a working directory, which will be referred to as "fiji/" in this document (and "cd fiji/" just tells you to make sure you are in that directory).
+A quick note on the nomenclature: `fiji.git` refers to the "official" repository on [1](https://github.com/fiji/fiji.git). After cloning it, you will have a local repository with a working directory, which will be referred to as `fiji/` in this document (and `cd fiji/` just tells you to make sure you are in that directory).
 
 If you are unsure about the meaning of any Git term, just consult the [Git glossary](http://git.or.cz/gitwiki/GitGlossary).
 
@@ -19,7 +19,9 @@ If you are unsure about the meaning of any Git term, just consult the [Git gloss
 
 You need to clone *fiji.git*:
 
-`$ git clone git://fiji.sc/fiji.git/`
+```shell
+$ git clone git://fiji.sc/fiji.git/
+```
 
 # Contributing
 
@@ -29,20 +31,21 @@ All contributions should go through GitHub [pull request](https://help.github.co
 
 You need to make sure that Git knows who you are (substitute your name/email here...):
 
-```
+```shell
 $ git config --global user.name "General Failure"   
 $ git config --global user.email "general@failure.harddrive.org"
 ```  
 
 Likewise, if your preferred editor is not *vi*, you might want to do something about that (substitute your pet editor here...):
-
-`$ git config --global core.editor xemacs`
+```shell
+$ git config --global core.editor xemacs
+```
 
 # Updating
 
 To get the most recent changes, call
 
-```
+```shell
 $ cd fiji/  
 $ git pull  
 ```
@@ -53,7 +56,7 @@ Note: You should always commit your changes before pulling.
 
 A simple
 
-```
+```shell
 $ cd fiji/  
 $ sh Build.sh run
 ```
@@ -66,21 +69,21 @@ You can [add/modify plugins](/develop/plugins), and test by running "make".
 
 Once you are happy with your changes, you should inspect your changes with
 
-```
+```shell
 $ cd fiji/ 
 $ git status
 ```
 
 which will show you which tracked files were modified, and the untracked files (which might need to be added to the Git repository). You can view the diff of your changes with
 
-```
+```shell
 $ cd fiji/  
 $ git diff
 ```
 
 You should stage the changed/new files for commit, and verify that all files were correctly staged, with:
 
-```
+```shell
 $ cd fiji/
 $ git add <files>  
 $ git status
@@ -88,14 +91,14 @@ $ git status
 
 If all files that need committing were staged correctly, you commit them:
 
-```
+```shell
 $ cd fiji/  
 $ git commit
 ```
 
 Please make sure that your commit message is in a format like this:
 
-```
+```shell
 The first line is a short description  
   
 After an empty line, you can go into details what this commit does, and why.  Maybe even how.
@@ -109,7 +112,7 @@ For more advanced Git usage, see "Making changes (advanced)".
 
 All commits are purely local before you decide to publish them. You might want to check first what you are going to publish before actually doing that (assuming a branch name "contrib"):
 
-```
+```shell
 $ cd fiji/  
 $ git fetch contrib  
 $ gitk contrib/contrib..
@@ -119,14 +122,14 @@ $ gitk contrib/contrib..
 
 Now you can publish your changes with
 
-```
+```shell
 $ cd fiji/  
 $ git push contrib HEAD:contrib
 ```
 
 Note: if somebody made changes to the branch in the mean-time, you need to pull first:
 
-```
+```shell
 $ cd fiji/  
 $ git pull contrib contrib  
 $ git push contrib HEAD:contrib
@@ -152,7 +155,7 @@ Git is aware of three states:
 
 Instead of staging whole files, you can pick just a few changes to be staged:
 
-```
+```shell
 $ cd fiji/  
 $ git add -i
 ```
@@ -163,18 +166,16 @@ In *git-gui*, you can do the same by clicking on the file and then choose *Stage
 
 You can inspect what changes are in the staging area with:
 
-```
+```shell
 $ cd fiji/  
 $ git diff --cached
 ```
 
 When you are comfortable with the staged changes, just commit with
 
-```
+```shell
 $ cd fiji/  
 $ git commit
 ```
 
 Even more advanced Git usage involved [topic branches](/develop/git/topic-branches).
-
-

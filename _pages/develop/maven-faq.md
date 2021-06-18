@@ -25,7 +25,9 @@ In many `pom.xml` files which extend `pom-scijava`, you can see that the depende
 
 One way to check is using the dependency plugin like so:
 
-    mvn dependency:analyze
+```shell
+mvn dependency:analyze
+```
 
 This will tell you:
 
@@ -39,11 +41,15 @@ Note that this will only work if your project compiles successfully. In other wo
 This is part of the {% include github org='imagej' repo='imagej-maven-plugin' label='imagej-maven-plugin' %} (enabled for you by pom-scijava). For pom-scijava&gt;=24.0.0, imagej-maven-plugin was replaced by {% include github org='scijava' repo='scijava-maven-plugin' label='scijava-maven-plugin' %}.  
 As you suspected, it copies your plugin's *.jar* file together with its dependencies to your ImageJ jars or plugins folder. To do so, you have to provide the path to your ImageJ.app (or Fiji.app) as an additional argument to Maven:
 
-    mvn -Dimagej.app.directory=YourPath/ImageJ.app
+```shell
+mvn -Dimagej.app.directory=YourPath/ImageJ.app
+```
 
 or for pom-scijava&gt;=24.0.0,
 
-    mvn -Dscijava.app.directory=YourPath/ImageJ.app
+```shell
+mvn -Dscijava.app.directory=YourPath/ImageJ.app
+```
 
 You can cause this to happen automatically by creating a file `$HOME/.m2/settings.xml` where `$HOME` is your home directory, with the following contents:
 
@@ -68,9 +74,9 @@ With such user-wide settings in place, all your Maven builds will automatically 
 
 # How to use my own, custom ImageJ version?
 
-The dependencies specified in *pom.xml* are only used to compile your .jar file. If you set the *imagej.app.directory* property properly, it will copy things into the *jars/* subdirectory of the location you pointed the property to.
+The dependencies specified in `pom.xml` are only used to compile your `.jar` file. If you set the `imagej.app.directory` property properly, it will copy things into the `jars/` subdirectory of the location you pointed the property to.
 
-# My software depends on a *.jar* file that is not available via Maven!
+# My software depends on a `.jar` file that is not available via Maven!
 
 Write to the [Image.sc Forum](http://forum.image.sc/) seeking assistance. The best solution is to get your dependency deployed to the [SciJava Maven repository](/develop/project-management#maven).
 
@@ -94,11 +100,12 @@ Your About dialog box can access the information by adding a dependency on *scij
     </dependencies>
 
 and then using code like this:
+```java
+import org.scijava.util.VersionUtils;
 
-    import org.scijava.util.VersionUtils;
-
-    ...
-        String version = VersionUtils.getVersion(MyBeautifulPlugin.class);
+...
+	String version = VersionUtils.getVersion(MyBeautifulPlugin.class);
+```
 
 # How do I make my modified project available to a depending project using Maven?
 
@@ -108,10 +115,10 @@ See [Using snapshot couplings during development](/develop/architecture#using-sn
 
 As described [here](http://maven.apache.org/surefire/maven-surefire-plugin/examples/single-test.html):
 
-    mvn -Dtest='TestCircle#mytest' test
+```shell
+mvn -Dtest='TestCircle#mytest' test
+```
 
 # Where can I find more information about Maven?
 
 See the [Maven](/develop/maven) page!
-
- 

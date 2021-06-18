@@ -23,57 +23,59 @@ The Gauss package for ImgLib2 consists of several classes which abstract the con
 
 For computing a Gaussian convolution on an entire **Img<T>**, simply call one the following lines of code:
 
-    import net.imglib2.algorithm.gauss.Gauss;
+```java
+import net.imglib2.algorithm.gauss.Gauss;
 
-    // the source
-    final Img< T > img = ...
+// the source
+final Img< T > img = ...
 
-    // define the sigma for each dimension
-    final double[] sigma = new double[ img.numDimensions() ];
-    for ( int d = 0; d < sigma.length; ++d )
-        sigma[ d ] = 1 + d;
+// define the sigma for each dimension
+final double[] sigma = new double[ img.numDimensions() ];
+for ( int d = 0; d < sigma.length; ++d )
+    sigma[ d ] = 1 + d;
 
-    //
-    // float-precision
-    //
-    // compute with float precision, but on T
-    final Img< T > convolved = Gauss.inFloat( sigma, img );
+//
+// float-precision
+//
+// compute with float precision, but on T
+final Img< T > convolved = Gauss.inFloat( sigma, img );
 
-    // compute with float precision, and output a FloatType Img
-    final Img< FloatType > convolved = Gauss.toFloat( sigma, img );
+// compute with float precision, and output a FloatType Img
+final Img< FloatType > convolved = Gauss.toFloat( sigma, img );
 
-    // compute with float precision in-place
-    Gauss.inFloatInPlace( sigma, img );
+// compute with float precision in-place
+Gauss.inFloatInPlace( sigma, img );
 
-    //
-    // double-precision
-    //
-    // compute with double precision, but on T
-    final Img< T > convolved = Gauss.inDouble( sigma, img );
+//
+// double-precision
+//
+// compute with double precision, but on T
+final Img< T > convolved = Gauss.inDouble( sigma, img );
 
-    // compute with double precision, and output a FloatType Img
-    final Img< DoubleType > convolved = Gauss.toDouble( sigma, img );
+// compute with double precision, and output a FloatType Img
+final Img< DoubleType > convolved = Gauss.toDouble( sigma, img );
 
-    // compute with double precision in-place
-    Gauss.inDoubleInPlace( sigma, img );
+// compute with double precision in-place
+Gauss.inDoubleInPlace( sigma, img );
 
-    //
-    // precision defined by the type T itself (this will produce garbage if T has insufficient range 
-    // or accuracy like ByteType, IntType, etc, but will work nicely on for example ComplexFloatType)
-    //
-    // compute with precision of T
-    final Img< T > convolved = Gauss.inNumericType( sigma, img );
+//
+// precision defined by the type T itself (this will produce garbage if T has insufficient range 
+// or accuracy like ByteType, IntType, etc, but will work nicely on for example ComplexFloatType)
+//
+// compute with precision of T
+final Img< T > convolved = Gauss.inNumericType( sigma, img );
 
-    // compute with precision of T in-place
-    Gauss.inNumericTypeInPlace( sigma, img );
-
+// compute with precision of T in-place
+Gauss.inNumericTypeInPlace( sigma, img );
+```
 By default, the Gaussian convolution will use the OutOfBoundsMirrorFactory with single boundary. If another OutOfBoundsFactory is desired, it can be defined on any of those methods as follows:
 
-    // compute with float precision, but on T using an periodic (FFT-like) strategy where at the end of
-    // each dimension the image simply starts again
-    final Img< T > convolved = Gauss.inFloat( sigma, img, 
-      new OutOfBoundsPeriodicFactory<FloatType, RandomAccessibleInterval<FloatType>>() ) );
-
+```java
+// compute with float precision, but on T using an periodic (FFT-like) strategy where at the end of
+// each dimension the image simply starts again
+final Img< T > convolved = Gauss.inFloat( sigma, img, 
+  new OutOfBoundsPeriodicFactory<FloatType, RandomAccessibleInterval<FloatType>>() ) );
+```
 ### Computing gaussian convolutions on RandomAccessibles with Intervals
 
 For more advanced use of the Gaussian convolution, it accepts RandomAccessibles as input and output, too. In this way the developer has complete freedom which area to convolve and where to write the result. The input and output can be any RandomAccessible, i.e. also any kind of transformed View or Type.
@@ -91,35 +93,36 @@ An example on how to call the most generic version of the Gaussian convolution c
 
 ### Some examples
 
-    // create a new, empty 2-d image
-    final ArrayImgFactory<FloatType> factory = new ArrayImgFactory<FloatType>();
-    final Img<FloatType> img = factory.create( new int[]{ 512, 256 }, new FloatType() );
+```java
+// create a new, empty 2-d image
+final ArrayImgFactory<FloatType> factory = new ArrayImgFactory<FloatType>();
+final Img<FloatType> img = factory.create( new int[]{ 512, 256 }, new FloatType() );
 
-    // fill it with some funny content          
-    int i = 0;
-    for ( final FloatType f : img )
-        f.set( i++ );
-                
-    for ( final FloatType f : img )
-        if ( i++ % 7 == 0 || i % 8 == 0 )
-            f.set( f.get() * 1.5f );
+// fill it with some funny content          
+int i = 0;
+for ( final FloatType f : img )
+    f.set( i++ );
+            
+for ( final FloatType f : img )
+    if ( i++ % 7 == 0 || i % 8 == 0 )
+        f.set( f.get() * 1.5f );
 
-    // show the input           
-    ImageJFunctions.show( img );
+// show the input           
+ImageJFunctions.show( img );
 
-    // define the 2-d sigmas
-    final double[] sigma = new double[] { 2, 0.75 };
+// define the 2-d sigmas
+final double[] sigma = new double[] { 2, 0.75 };
 
-    // compute a gauss convolution with double precision
-    ImageJFunctions.show( Gauss.inDouble( sigma, img ) );   
+// compute a gauss convolution with double precision
+ImageJFunctions.show( Gauss.inDouble( sigma, img ) );   
 
-    // compute a Gaussian convolution in-place in a small Interval  
-    Gauss.inFloat( sigma, Views.extendMirrorSingle( img ), new FinalInterval( new long[]{300,150},
-        new long[]{ 400,200 } ), img, new Location( new long[] {300,150} ), img.factory() );
+// compute a Gaussian convolution in-place in a small Interval  
+Gauss.inFloat( sigma, Views.extendMirrorSingle( img ), new FinalInterval( new long[]{300,150},
+    new long[]{ 400,200 } ), img, new Location( new long[] {300,150} ), img.factory() );
 
-    // show the result
-    ImageJFunctions.show( img );
-
+// show the result
+ImageJFunctions.show( img );
+```
 Another nice example of the generality of the gaussian convolution is the **Game of Death 2** which uses Gaussian convolution to simulate diffusion of different species of viruses. It redefines the add() operator of our new NumericType called **LifeForm** which can then be used to start the simulation. The **Game of Death 2** is included in the imglib repository.
 
 ## Implementation

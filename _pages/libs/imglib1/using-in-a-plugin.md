@@ -17,41 +17,47 @@ We will work on a dummy plugin that takes an image and sum the pixel value over 
 
 A plugin skeleton looks like this:
 
-    import ij.IJ;
+```java
+import ij.IJ;
 
-    import ij.plugin.PlugIn;
+import ij.plugin.PlugIn;
 
-    public class Pixel_Summation implements PlugIn {
-      
-      public void run(String arg) {
-        IJ.write("Ciao, bella.");
-      }
-    } 
+public class Pixel_Summation implements PlugIn {
+  
+  public void run(String arg) {
+    IJ.write("Ciao, bella.");
+  }
+} 
+```
 
 If you work from within the [Script Editor](/scripting/script-editor), you can save it anywhere and Compile & Run it with *Run&gt;Compile & Run*.
 
 Otherwise you have to save this in a file named `Pixel_Summation.java` in the Fiji plugins folder. You can either {% include bc path='Help | Update Menus'%} and find the new plugin in the *Plugins* menu, or compile it from the command line with:
 
-    ./fiji --javac plugins/Pixel_Summation.java
+```java
+./fiji --javac plugins/Pixel_Summation.java
+```
 
 (assuming that you are in the Fiji source tree).
 
 Now we want to import the imglib library, and use its `Image` class as an internal field. We write:
 
-    import ij.IJ;
+```java
+import ij.IJ;
 
-    import ij.plugin.PlugIn;
+import ij.plugin.PlugIn;
 
-    import mpicbg.imglib.image.Image;
+import mpicbg.imglib.image.Image;
 
-    public class Pixel_Summation implements PlugIn {
-      
-      protected Image img;
+public class Pixel_Summation implements PlugIn {
+  
+  protected Image img;
 
-      public void run(String arg) {
-        IJ.write("Ciao, bella.");
-      }
-    } 
+  public void run(String arg) {
+    IJ.write("Ciao, bella.");
+  }
+} 
+```
 
 Fiji will already know where to pick up *imglib.jar*.
 
@@ -68,34 +74,40 @@ As we use this plugin from within Fiji, we will receive images in form of an `Im
 
 This is how a minimally converted class would look like:
 
-    import ij.IJ;
-    import ij.ImagePlus;
-    import ij.WindowManager;
+```java
+import ij.IJ;
+import ij.ImagePlus;
+import ij.WindowManager;
 
-    import ij.plugin.PlugIn;
+import ij.plugin.PlugIn;
 
-    import mpicbg.imglib.image.Image;
-    import mpicbg.imglib.image.ImagePlusAdapter;
+import mpicbg.imglib.image.Image;
+import mpicbg.imglib.image.ImagePlusAdapter;
 
-    import mpicbg.imglib.type.numeric.RealType;
+import mpicbg.imglib.type.numeric.RealType;
 
-    public class Pixel_Summation<T extends RealType<T>> implements PlugIn {
-      
-      protected Image<T> img;
+public class Pixel_Summation<T extends RealType<T>> implements PlugIn {
+  
+  protected Image<T> img;
 
-      public void run(String arg) {
-          ImagePlus imp = WindowManager.getCurrentImage();
-          img = ImagePlusAdapter.wrap(imp);
-      }
-    }
+  public void run(String arg) {
+      ImagePlus imp = WindowManager.getCurrentImage();
+      img = ImagePlusAdapter.wrap(imp);
+  }
+}
+```
 
 Note that we use generics that provide compile-time type-safety, we cannot leave the field `img` be an image of unknown type. We must explicitly state that it is going to be an image containing a certain generic type:
 
-    protected Image<T> img;
+```java
+protected Image<T> img;
+```
 
 We must also detail what `T` can be. This is done by modifying the class signature. We add a type variable to it, that specifies what the plugin operates on:
 
-    public class Pixel_Summation<T extends RealType<T>> implements PlugIn {
+```java
+public class Pixel_Summation<T extends RealType<T>> implements PlugIn {
+```
 
 This is like saying: "this plugin operates on `T`", whatever `T` is. In our specific case, `T` can't be anything. If you inspect the source of `Image`, you will see that we need to use a subclass of `mpicbg.imglib.type.Type` (we can't have images made of koalas, yet).
 
@@ -120,43 +132,43 @@ Now that we vanquished the semantics, we would like to wrap up this tutorial by 
 -   Since in our case `T` extends `RealType`, we can use the `getRealFloat()` or `getRealDouble()` method to convert to a basic java `float` or `double`, respectively.
 
 Which leads to:
+```java
+import ij.IJ;
+import ij.ImagePlus;
+import ij.WindowManager;
 
-    import ij.IJ;
-    import ij.ImagePlus;
-    import ij.WindowManager;
+import ij.plugin.PlugIn;
 
-    import ij.plugin.PlugIn;
+import mpicbg.imglib.cursor.Cursor;
 
-    import mpicbg.imglib.cursor.Cursor;
+import mpicbg.imglib.image.Image;
+import mpicbg.imglib.image.ImagePlusAdapter;
 
-    import mpicbg.imglib.image.Image;
-    import mpicbg.imglib.image.ImagePlusAdapter;
+import mpicbg.imglib.type.numeric.RealType;
 
-    import mpicbg.imglib.type.numeric.RealType;
+public class Pixel_Summation<T extends RealType<T>> implements PlugIn {
+  
+  protected Image<T> img;
 
-    public class Pixel_Summation<T extends RealType<T>> implements PlugIn {
-      
-      protected Image<T> img;
-
-      public void run(String arg) {
-          ImagePlus imp = WindowManager.getCurrentImage();
-          img = ImagePlusAdapter.wrap(imp);  
-          Cursor<T> cursor = img.createCursor();
-          float sum = 0f;
-          float val;
-          T type; // This is the generic type of the image. 
-              // Note we actually don't have squat idea about what it is actually at the present time,
-              // but our plugin will still work whatever it will be.
-          while (cursor.hasNext()) {
-              cursor.fwd();
-              type = cursor.getType();
-              val = type.getRealFloat();
-              sum = sum + val;
-          }
-          IJ.write("Sum on all pixels: "+sum);
-      }
-    } 
-
+  public void run(String arg) {
+	  ImagePlus imp = WindowManager.getCurrentImage();
+	  img = ImagePlusAdapter.wrap(imp);  
+	  Cursor<T> cursor = img.createCursor();
+	  float sum = 0f;
+	  float val;
+	  T type; // This is the generic type of the image. 
+		  // Note we actually don't have squat idea about what it is actually at the present time,
+		  // but our plugin will still work whatever it will be.
+	  while (cursor.hasNext()) {
+		  cursor.fwd();
+		  type = cursor.getType();
+		  val = type.getRealFloat();
+		  sum = sum + val;
+	  }
+	  IJ.write("Sum on all pixels: "+sum);
+  }
+} 
+```
 And this is it!
 
 You can test this plugin on all possible image types ImageJ supports, and it will still yield a result. <b>And you did not have to write code for each particular data type.</b>

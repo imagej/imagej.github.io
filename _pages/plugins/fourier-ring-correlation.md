@@ -90,24 +90,30 @@ In the case of batch processing, if *Save Plot* is checked, the plugin creates a
 
 Making use of the GenericDialog class, the plugin is macro-recordable. An example is shown below
 
-    run("FRC Calculation...", "image_1=[first_image.tif] image_2=[second_image.tif] resolution=[Fixed 1/7] display");
+```java
+run("FRC Calculation...", "image_1=[first_image.tif] image_2=[second_image.tif] resolution=[Fixed 1/7] display");
 
-    //Example with batch
-    run("FRC Calculation (Batch)...", "first=[D:\\FRC Tests\\A] second=[D:\\FRC Tests\\B] resolution=[Fixed 1/7] save");
+//Example with batch
+run("FRC Calculation (Batch)...", "first=[D:\\FRC Tests\\A] second=[D:\\FRC Tests\\B] resolution=[Fixed 1/7] save");
+```
 
 # Running from a Plugin
 
 If you would like to use the FRC class in your own plugin, you can either use the one from Alex Herbert on [GitHub](https://github.com/aherbert/GDSC-SMLM) if you're already using his excellent SMLM plugins. Otherwise you can use the one that was re-purposed here through the following import
 
-    import ch.epfl.biop.frc.FRC;
+```java
+import ch.epfl.biop.frc.FRC;
+```
 
 And then use the FRC Class
 
 
-    FRC frc = new FRC();
+```java
+FRC frc = new FRC();
 
-    // Get FIRE Number, assumes you have access to the two image processors.
-    double fire = frc.calculateFireNumber(ip1, ip2, FRC.FIXED_1_OVER_7);
+// Get FIRE Number, assumes you have access to the two image processors.
+double fire = frc.calculateFireNumber(ip1, ip2, FRC.FIXED_1_OVER_7);
+```
 
 There are other methods to get the FRC curve, see the [FRC.java file](https://c4science.ch/diffusion/988/browse/master/src/main/java/ch/epfl/biop/frc/FRC.java), which was very well documented.
 

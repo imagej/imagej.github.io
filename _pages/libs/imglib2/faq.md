@@ -4,9 +4,6 @@ title: ImgLib2 FAQ
 section: Explore:Libraries:ImgLib2
 ---
 
-
-
-
 ## What *is* ImgLib2 anyway?
 
 It is a library that helps you to implement algorithms for multi-dimensional data processing. The idea is that you can concentrate on the essence of your algorithm rather than syntactic sugar. It is possible to implement an algorithm without specifying what the image's data type is, how many dimensions it has, and how the image is stored.
@@ -19,7 +16,7 @@ There is some [rudimentary documentation](/libs/imglib2/migrate-from-imglib1), b
 
 ## How to create a new image from scratch?
 
-    int w = 768, h = 512, timepoints = 20;
-    Img<FloatType> img = ArrayImgs.floats(w, h, timepoints);
-
-
+```java
+int w = 768, h = 512, timepoints = 20;
+Img<FloatType> img = ArrayImgs.floats(w, h, timepoints);
+```

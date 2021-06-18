@@ -38,11 +38,12 @@ A lot of functions of the 3D Viewer are macro-recordable. However, if that is no
 
 This code snippet should get you started:
 
-    Image3DUniverse univ = new Image3DUniverse();
-    univ.show();
-    univ.addMesh(yourImagePlus, null, "somename", 50, new boolean[] {true, true, true}, 2);
-    ...
-
+```java
+Image3DUniverse univ = new Image3DUniverse();
+univ.show();
+univ.addMesh(yourImagePlus, null, "somename", 50, new boolean[] {true, true, true}, 2);
+...
+```
 Full documentation for developers with tutorials and explained code snippets can be found [here](/plugins/3d-viewer/developer-documentation).
 
 ### Javadocs
@@ -55,7 +56,9 @@ The Fiji Javadocs provide detailed information about the {% include javadoc pack
 
 If in the same window, it also says:
 
-`java.lang.NullPointerException:Canvas3D: null GraphicsConfiguration`
+```java
+java.lang.NullPointerException:Canvas3D: null GraphicsConfiguration
+```
 
 the reason is most likely that your graphics setup does not have any hardware 3D acceleration. This can happen e.g. when you run ImageJ via a remote X11 connection (3D acceleration works only when the graphics are displayed on the same machine as the program runs).
 
