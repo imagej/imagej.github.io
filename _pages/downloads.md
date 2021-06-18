@@ -73,8 +73,6 @@ Still have questions? Ask on the [Image.sc Forum](https://forum.image.sc/tag/ima
 <details class="shadowed-box"><summary><strong>Need help deciding? Click here.</strong></summary>
 {{help-me-decide | markdownify}}
 </details>
-<div class="shadowed-box">💡 You can also try <a href="/software/imagej-js">ImageJ.JS</a> in your web browser: <a href="https://ij.imjoy.io" target="_blank">https://ij.imjoy.io</a>
-</div>
 
 # System requirements
 
@@ -83,6 +81,11 @@ ImageJ will run on any system that has a Java 8 (or later) runtime installed. Th
 1.  Windows XP, Vista, 7 or 8 with Java installed from [java.com](https://java.com/)
 2.  Mac OS X 10.8 "Mountain Lion" or later with Java installed from [java.com](https://java.com/)
 3.  Ubuntu Linux 12.04 LTS or later with OpenJDK 8 installed
+
+# ImageJ as a web application
+
+In lieu of downloading and installing a desktop application, you can run
+ImageJ in your web browser; see [ImageJ.JS](/software/imagej-js) for details.
 
 # Troubleshooting
 
