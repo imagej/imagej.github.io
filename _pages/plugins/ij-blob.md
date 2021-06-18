@@ -3,7 +3,7 @@ mediawiki: IJ_Blob
 title: IJ Blob
 doi: 10.5334/jors.ae
 categories: [Uncategorized]
-usemathjax: true
+extensions: ["mathjax"]
 ---
 
 

@@ -4,7 +4,7 @@ title: MorphoLibJ
 categories: [Analysis, Filtering, Segmentation, Mathematical Morphology]
 doi: 10.1093/bioinformatics/btw413
 artifact: fr.inra.ijpb:MorphoLibJ_
-usemathjax: true
+extensions: ["mathjax"]
 ---
 
 

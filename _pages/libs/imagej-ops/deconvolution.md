@@ -1,7 +1,7 @@
 ---
 mediawiki: Ops_Deconvolution
 title: Ops Deconvolution
-usemathjax: true
+extensions: ["mathjax"]
 ---
 
 

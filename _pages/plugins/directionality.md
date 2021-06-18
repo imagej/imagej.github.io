@@ -3,7 +3,7 @@ mediawiki: Directionality
 title: Directionality
 categories: [Analysis]
 artifact: sc.fiji:Directionality_
-usemathjax: true
+extensions: ["mathjax"]
 ---
 
  

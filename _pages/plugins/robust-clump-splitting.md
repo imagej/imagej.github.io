@@ -2,7 +2,7 @@
 mediawiki: Robust_clump_splitting
 title: Robust clump splitting
 categories: [Uncategorized]
-usemathjax: true
+extensions: ["mathjax"]
 ---
 
 

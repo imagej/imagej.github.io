@@ -2,7 +2,7 @@
 title: Math Expressions
 section: Contribute:Editing the Wiki
 nav-links: true
-usemathjax: true
+extensions: ["mathjax"]
 ---
 
 This page demonstrates how to include mathematical expressions.
@@ -13,11 +13,11 @@ Individual pages can opt-in to supporting mathematical notation using
 
 Processing a page with MathJax can take a few seconds, so it is not enabled by
 default on all pages.If you want to use MathJax, you must enable it in the
-[front matter](/editing#add-the-pages-front-matter) of your page:
+[front matter](/editing#add-the-pages-front-matter) of your page (i.e. add `"mathjax"` to `extensions`:
 
 ```
 ---
-usemathjax: true
+extensions: ["mathjax"]
 ---
 ```
 

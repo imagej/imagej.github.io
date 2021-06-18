@@ -1,7 +1,7 @@
 ---
 mediawiki: SPIM_Registration_Method
 title: SPIM Registration Method
-usemathjax: true
+extensions: ["mathjax"]
 ---
 
 ## Citation

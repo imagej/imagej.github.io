@@ -1,7 +1,7 @@
 ---
 mediawiki: BigStitcher_ReorientSample
 title: BigStitcher ReorientSample
-usemathjax: true
+extensions: ["mathjax"]
 ---
 
 In addition to the manual view alignment functionality in **Stitching mode** (see [here](/plugins/bigstitcher/manual-translation) for details), which focuses on the translational alignment of tiled images, we offer offer complementary functions for **manually transforming** images and **managing transformations** in **MultiView mode**.

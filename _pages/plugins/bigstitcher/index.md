@@ -2,7 +2,7 @@
 mediawiki: BigStitcher
 title: BigStitcher
 categories: [Uncategorized]
-usemathjax: true
+extensions: ["mathjax"]
 ---
 
 

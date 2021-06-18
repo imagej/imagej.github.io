@@ -61,6 +61,20 @@ content of the new page can be populated with a text editor of your choosing.
   changes pushes your edits to the main branch of the repository hosted on
   `GitHub`. The process of commiting is described below.
 
+
+## Create an extension
+If you want to extend the features of the wiki, for example, load a custom javascript library to certain pages.
+You can add your scripts into `_includes/extensions`, and then the user can enable your extension by adding the extension name to `extensions` in the [Front Matter](https://jekyllrb.com/docs/front-matter/) of their markdown file.
+
+For example, you can find two example extensions `mathjax` and `imjoy` in the `_includes/extensions` folder.
+And in the begining of any page, you can enable them by:
+```yaml
+---
+title: My Awesome Page
+extensions: ["imjoy", "mathjax"]
+---
+```
+
 ## Pushing, pulling, and commiting with Git
 
 Once you are ready to publish your your new page you will need to add, commit,
