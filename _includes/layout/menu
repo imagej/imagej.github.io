@@ -250,7 +250,7 @@
 
             {% include menu/section title="Software" link="/software" %}
               <li><a href="/software/nih-image">NIH Image</a>
-              <li><a href="/software/imagej-1.x">ImageJ 1.x</a>
+              <li><a href="/software/imagej-1.x">ImageJ</a>
               <li><a href="/software/imagej2">ImageJ2</a>
               <li><a href="/software/fiji">Fiji</a>
             {% include menu/section-end %} <!-- Explore/Software -->
