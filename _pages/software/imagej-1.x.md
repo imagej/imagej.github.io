@@ -1,5 +1,5 @@
 ---
-title: ImageJ 1.x
+title: ImageJ
 section: Explore:Software
 doi: 10.1038/nmeth.2089
 artifact: net.imagej:ij
