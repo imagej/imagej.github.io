@@ -85,7 +85,11 @@ ImageJ will run on any system that has a Java 8 (or later) runtime installed. Th
 # ImageJ as a web application
 
 In lieu of downloading and installing a desktop application, you can run
-ImageJ in your web browser; see [ImageJ.JS](/software/imagej-js) for details.
+ImageJ in your web browser (on desktops or mobile devices).
+
+You can try it here: [https://ij.imjoy.io](https://ij.imjoy.io).
+
+And see [ImageJ.JS](/software/imagej-js) for details.
 
 # Troubleshooting
 

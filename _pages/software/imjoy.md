@@ -102,7 +102,7 @@ Here is a list of integration examples:
 
 # Running ImJoy plugins in the ImageJ wiki
 As another example of open integration, ImJoy can be enabled in the ImageJ wiki. In any markdown page, you can easily turn a markdown code block into executable and editable code block by: 
- 1. Set add `"imjoy"` to `extensions` in the metadata of your markdown file (a.k.a [Front Matter](https://jekyllrb.com/docs/front-matter/));
+ 1. Add `"imjoy"` to `extensions` in the metadata of your markdown file (a.k.a [Front Matter](https://jekyllrb.com/docs/front-matter/));
  2. Add a comment `<!-- ImJoyPlugin: { ... } -->` before your code block. Inside the `{}` you can pass settings for setting up the ImJoy plugin.
  
 For example, you may have the following in the begining of your page:

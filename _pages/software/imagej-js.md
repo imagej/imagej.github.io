@@ -81,7 +81,7 @@ run("Analyze Particles...", "size=5-Infinity add");
 
 # Run ImageJ.JS and ImJoy in ImageJ wiki
 You can easily turn a markdown code block into executable and editable code block by: 
- 1. Set add `"imjoy"` to `extensions` in the metadata of your markdown file (a.k.a [Front Matter](https://jekyllrb.com/docs/front-matter/));
+ 1. Add `"imjoy"` to `extensions` in the metadata of your markdown file (a.k.a [Front Matter](https://jekyllrb.com/docs/front-matter/));
  2. Add a comment `<!-- ImJoyPlugin: { ... } -->` before your code block. Inside the `{}` you can pass settings for setting up the ImJoy plugin.
  
 For example, you may have the following in the begining of your page:
@@ -112,7 +112,7 @@ For more detailed usage, please refer to [ImJoy Docs](https://imjoy-team.github.
 
 # Run ImageJ.JS in interactive slides
 
-Similarily to the ImageJ wiki integration, you can also create interactive slides which has ImageJ.JS directly embeded in. 
+Similar to the ImageJ wiki integration, you can also create interactive slides which has ImageJ.JS directly embeded in. 
 This features is useful for teaching purposes, it enables seamless interactive live demo during the presentation and the students can also go back to the same slides and interact with the demos.
 
 You can click [this link](https://slides.imjoy.io/?slides=https://raw.githubusercontent.com/imjoy-team/imjoy-slides/master/slides/run-imagej.js-side-by-side.md) or the "Run" button below:
