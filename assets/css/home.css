@@ -24,7 +24,7 @@
 }
 
 #header h2 {
-  margin: 1em 0 0 0;
+  margin: 0.5em 0 0 0;
   font-size: 1.3em;
   width: 100%;
   text-align: center;
@@ -65,7 +65,7 @@
   -webkit-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  margin-top: 3em;
+  margin-top: 2em;
   margin-left: 0;
   position: relative;
 }
